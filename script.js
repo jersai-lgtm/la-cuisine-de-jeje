@@ -146,11 +146,10 @@ const recettes = {
     ],
     ingredients: { "Farine (g)": 54, "Sucre (g)": 8, "Beurre (g)": 6, "Lait (cl)": 7 },
     etapes: [
-      { icone: "🥣", titre: "Mélanger les secs",       detail: "Dans un grand bol, mélanger la farine, le sucre et le sel.", badge: null },
-      { icone: "🥛", titre: "Incorporer les liquides", detail: "Ajouter l'œuf battu, le lait et le beurre fondu. Mélanger jusqu'à obtenir une pâte lisse sans grumeaux.", badge: null },
-      { icone: "⏳", titre: "Laisser reposer",         detail: "Laisser reposer la pâte pendant que le gaufrier chauffe.", badge: "⏱ Repos : 10–15 min" },
-      { icone: "🔌", titre: "Préchauffer le gaufrier", detail: "Brancher et laisser chauffer à fond. Graisser légèrement avec du beurre.", badge: null },
-      { icone: "🧇", titre: "Cuire les gaufres",       detail: "Verser la pâte au centre, fermer et cuire jusqu'à ce qu'elles soient bien dorées et croustillantes.", badge: "⏱ Cuisson : 3–5 min" }
+      { icone: "🥣", titre: "Base de la pâte",          detail: "Mettre la farine dans un saladier, y ajouter le sucre, les jaunes d'œufs et le beurre ramolli.", badge: null },
+      { icone: "🥛", titre: "Délayer avec le lait",     detail: "Ajouter le lait peu à peu en mélangeant pour éviter les grumeaux. La pâte doit être lisse et homogène.", badge: null },
+      { icone: "🌨️", titre: "Blancs en neige",          detail: "Battre les blancs en neige avec une pincée de sel. Les incorporer délicatement à la pâte en soulevant pour ne pas les casser.", badge: null },
+      { icone: "🧇", titre: "Cuire au gaufrier",        detail: "Cuire dans un gaufrier légèrement beurré jusqu'à ce que les gaufres soient bien dorées et croustillantes.", badge: "⏱ Cuisson : 3–5 min" }
     ]
   },
 
