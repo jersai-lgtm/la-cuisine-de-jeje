@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff4d88">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cuisine Jéjé">
+<link rel="apple-touch-icon" href="images/icon-192.png">
+
+<!-- Enregistrement Service Worker -->
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+      .then(() => console.log("Service Worker OK"))
+      .catch(err => console.log("SW erreur:", err));
+  }
+</script>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>La Cuisine de Jéjé</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+<h1>
+🍕 La Cuisine de Jéjé
+</h1>
+
+<p>
+
+Recettes 
+
+</p>
+
+<p>
+
+🍕 Pizza
+🥞 Crêpes
+🍪 Cookies
+🍮 Flan
+🍒 Clafoutis
+
+</p>
+</header>
+
+
+
+<section class="cartes">
+
+
+<div
+class="carte"
+onclick="choisirRecette('pizza')">
+
+<img src="images/pizza.jpg">
+
+<h2>🍕 Pizza</h2>
+
+<p>⏱ 48h • ⭐ Moyen</p>
+
+</div>
+
+
+
+<div
+class="carte"
+onclick="choisirRecette('crepes')">
+
+<img src="images/crepes.jpg">
+
+<h2>🥞 Crêpes</h2>
+
+<p>⏱ 20 min • ⭐ Facile</p>
+
+</div>
+
+
+
+<div
+class="carte"
+onclick="choisirRecette('gaufres')">
+
+<img src="images/gaufres.jpg">
+
+<h2>🧇 Gaufres</h2>
+
+<p>⏱ 25 min • ⭐ Facile</p>
+
+</div>
+
+
+
+<div
+class="carte"
+onclick="choisirRecette('brioche')">
+
+<img src="images/brioche.jpg">
+
+<h2>🍞 Brioche</h2>
+
+<p>⏱ 4h • ⭐ Moyen</p>
+
+</div>
+
+
+
+<div
+class="carte"
+onclick="choisirRecette('lasagne')">
+
+<img src="images/lasagne.jpg">
+
+<h2>🍝 Lasagnes</h2>
+
+<p>⏱ 1h30 • ⭐ Moyen</p>
+
+</div>
+
+
+
+<div
+class="carte"
+onclick="choisirRecette('cookies')">
+
+<img src="images/cookies.jpg">
+
+<h2>🍪 Cookies</h2>
+
+<p>⏱ 20 min • ⭐ Facile</p>
+
+</div>
+
+
+
+<div
+class="carte"
+onclick="choisirRecette('flan')">
+
+<img src="images/flan.jpg">
+
+<h2>🍮 Flan</h2>
+
+<p>⏱ 1h • ⭐ Facile</p>
+
+</div>
+
+<div class="carte" onclick="choisirRecette('clafoutis')">
+  <img src="images/clafoutis.jpg">
+  <h2>🍒 Clafoutis</h2>
+  <p>⏱ 50 min • ⭐ Facile</p>
+</div>
+
+
+</section>
+
+
+
+<section class="calculateur">
+
+
+<h2>
+
+Calculateur recettes
+
+</h2>
+
+
+
+<select id="recette">
+
+<option value="pizza">Pizza</option>
+
+<option value="crepes">Crêpes</option>
+
+<option value="gaufres">Gaufres</option>
+
+<option value="brioche">Brioche</option>
+
+<option value="lasagne">Lasagnes</option>
+
+<option value="cookies">Cookies</option>
+
+<option value="flan">Flan</option>
+
+<option value="clafoutis">Clafoutis</option>
+
+</select>
+
+
+
+<input
+
+type="number"
+
+id="personnes"
+
+value="4"
+
+min="1">
+
+
+
+<button
+onclick="calculer()">
+
+Calculer
+
+</button>
+
+
+
+<div id="resultat">
+<div id="ficheRecette"></div>    
+
+</div>
+
+
+</section>
+
+
+
+<script src="script.js">
+
+</script>
+
+</body>
+
+</html>

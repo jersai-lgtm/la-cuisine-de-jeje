@@ -1,0 +1,302 @@
+/* ==========================
+   FOND DU SITE
+========================== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("images/fond.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* ==========================
+   HEADER
+========================== */
+header {
+  text-align: center;
+  padding: 55px;
+  background: rgba(10,10,10,.25);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+header h1 { margin: 0; font-size: 60px; font-weight: bold; }
+header p  { color: #ddd; font-size: 18px; margin-top: 15px; }
+
+/* ==========================
+   CARTES RECETTES
+========================== */
+.cartes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  padding: 35px;
+  margin-top: -15px;
+}
+.carte {
+  width: 220px;
+  background: rgba(20,20,20,.85);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 0 20px rgba(0,0,0,.4);
+}
+.carte:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 30px rgba(255,90,130,.4);
+}
+.carte img    { width: 100%; height: 200px; object-fit: cover; display: block; }
+.carte h2     { margin: 15px 0 10px; text-align: center; font-size: 18px; }
+.carte p      { text-align: center; padding-bottom: 15px; color: #ddd; font-size: 14px; }
+
+/* ==========================
+   CALCULATEUR
+========================== */
+.calculateur {
+  max-width: 600px;
+  margin: 20px auto 60px;
+  padding: 35px;
+  background: rgba(15,15,15,.75);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  box-shadow: 0 0 40px rgba(0,0,0,.5);
+}
+.calculateur h2 { text-align: center; margin-bottom: 25px; }
+
+/* ==========================
+   INPUTS
+========================== */
+select, input, button {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  margin: 8px;
+}
+select, input { background: white; width: 160px; color: #333; }
+button { background: #ff4d88; color: white; cursor: pointer; transition: .3s; }
+button:hover { background: #ff6ba1; transform: scale(1.05); }
+
+/* ==========================
+   RÉSULTATS CALCULATEUR
+========================== */
+#resultat { margin-top: 30px; }
+#resultat h3 { text-align: center; margin-bottom: 20px; }
+
+.ingredient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(50,50,50,.55);
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 15px;
+  transition: .2s;
+}
+.ingredient:hover { background: rgba(255,80,130,.25); transform: scale(1.02); }
+
+/* ==========================
+   TABLEAU COLONNES
+   (pizza, crêpes, etc.)
+========================== */
+.tableau-colonnes {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+.tableau-colonnes thead { display: none; }
+.tableau-colonnes tr {
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  transition: background .2s;
+}
+.tableau-colonnes tr:hover { background: rgba(255,77,136,.1); }
+.tableau-colonnes th {
+  text-align: left;
+  padding: 13px 16px;
+  color: #ffb3cc;
+  font-weight: 600;
+  font-size: 15px;
+  background: none;
+  border: none;
+  white-space: nowrap;
+}
+.tableau-colonnes td {
+  text-align: right;
+  padding: 13px 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  white-space: nowrap;
+}
+
+/* ==========================
+   BOUTONS BRIOCHE
+========================== */
+.brioche-choix {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.btn-brioche {
+  background: rgba(255,255,255,.08);
+  color: #ddd;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50px;
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .25s;
+  width: auto;
+}
+.btn-brioche:hover { background: rgba(255,77,136,.2); border-color: #ff4d88; color: #fff; }
+.btn-brioche-actif { background: #ff4d88; border-color: #ff4d88; color: #fff; font-weight: bold; }
+
+/* ==========================
+   FICHE PLEINE PAGE
+========================== */
+.fiche-pleine-page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 30px 20px 80px;
+  animation: fadeIn .4s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.btn-retour {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,.12);
+  color: white;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: .25s;
+  backdrop-filter: blur(8px);
+  width: auto;
+}
+.btn-retour:hover { background: rgba(255,77,136,.35); border-color: #ff4d88; transform: translateX(-4px); }
+
+.fiche-header {
+  text-align: center;
+  background: rgba(15,15,15,.75);
+  backdrop-filter: blur(15px);
+  border-radius: 28px;
+  padding: 40px 30px;
+  margin-bottom: 28px;
+  box-shadow: 0 0 40px rgba(0,0,0,.4);
+}
+.fiche-emoji  { font-size: 72px; margin-bottom: 10px; }
+.fiche-titre  { font-size: 42px; margin: 0 0 14px; font-weight: bold; }
+.fiche-desc   { color: #ccc; font-size: 16px; line-height: 1.6; max-width: 520px; margin: 0 auto 20px; }
+.fiche-meta   { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.fiche-meta span {
+  background: rgba(255,77,136,.2);
+  border: 1px solid rgba(255,77,136,.35);
+  border-radius: 50px;
+  padding: 8px 18px;
+  font-size: 14px;
+  color: #ffb3cc;
+}
+
+.fiche-section {
+  background: rgba(15,15,15,.75);
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  padding: 30px;
+  margin-bottom: 24px;
+  box-shadow: 0 0 30px rgba(0,0,0,.3);
+}
+.fiche-section-titre {
+  font-size: 22px;
+  margin: 0 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.fiche-ingredients-liste { display: flex; flex-direction: column; gap: 10px; }
+.fiche-ingredient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(50,50,50,.5);
+  padding: 14px 18px;
+  border-radius: 14px;
+  transition: .2s;
+}
+.fiche-ingredient:hover { background: rgba(255,77,136,.2); transform: scale(1.01); }
+.fiche-ingredient b { color: #ff8fb3; font-size: 16px; }
+
+.fiche-etapes-liste { display: flex; flex-direction: column; gap: 18px; }
+.fiche-etape {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: rgba(40,40,40,.5);
+  border-radius: 18px;
+  padding: 20px;
+  transition: .2s;
+}
+.fiche-etape:hover { background: rgba(255,77,136,.12); }
+.fiche-etape-num {
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+  background: rgba(255,77,136,.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.fiche-etape-contenu h3 { margin: 0 0 8px; font-size: 17px; color: #fff; }
+.fiche-etape-contenu p  { margin: 0; color: #bbb; font-size: 15px; line-height: 1.65; }
+
+/* ==========================
+   BADGE ÉTAPE
+========================== */
+.etape-badge {
+  display: inline-block;
+  margin-top: 8px;
+  background: rgba(255,77,136,.2);
+  border: 1px solid rgba(255,77,136,.4);
+  color: #ffb3cc;
+  border-radius: 50px;
+  padding: 5px 14px;
+  font-size: 13px;
+}
+
+/* ==========================
+   RESPONSIVE MOBILE
+========================== */
+@media (max-width: 900px) {
+  header h1            { font-size: 40px; }
+  .cartes              { gap: 12px; }
+  .carte               { width: 180px; }
+  .carte img           { height: 150px; }
+  .calculateur         { width: 90%; padding: 20px; }
+  select, input        { width: 120px; }
+  .fiche-pleine-page   { padding: 20px 15px 60px; }
+  .fiche-titre         { font-size: 30px; }
+  .fiche-emoji         { font-size: 54px; }
+  .fiche-etape         { flex-direction: column; gap: 12px; }
+  .tableau-colonnes th,
+  .tableau-colonnes td { padding: 10px 12px; font-size: 14px; }
+}
