@@ -117,25 +117,40 @@ const recettes = {
   },
 
   gaufres: {
-    base: 4,
+    base: 1,
     temps: "25 min",
     niveau: "⭐ Facile",
     emoji: "🧇",
     description: "Des gaufres moelleuses à l'intérieur et croustillantes à l'extérieur.",
-    ingredients: {
-      "Farine (g)": 250,
-      "Oeufs": 2,
-      "Lait (ml)": 400,
-      "Beurre fondu (g)": 80,
-      "Sucre (g)": 30,
-      "Levure chimique (g)": 10
-    },
+    tableauGaufres: [
+      { nb:  1, farine: "14 g",  sucre: "2 g",  beurre: "2 g",  oeuf: "¼",  sel: "¼ pincée",  lait: "2 cl"  },
+      { nb:  2, farine: "27 g",  sucre: "4 g",  beurre: "3 g",  oeuf: "⅓",  sel: "¼ pincée",  lait: "4 cl"  },
+      { nb:  3, farine: "40 g",  sucre: "6 g",  beurre: "4 g",  oeuf: "⅔",  sel: "¼ pincée",  lait: "5 cl"  },
+      { nb:  4, farine: "54 g",  sucre: "8 g",  beurre: "6 g",  oeuf: "¾",  sel: "¼ pincée",  lait: "7 cl"  },
+      { nb:  5, farine: "68 g",  sucre: "10 g", beurre: "8 g",  oeuf: "1¼", sel: "½ pincée",  lait: "9 cl"  },
+      { nb:  6, farine: "81 g",  sucre: "12 g", beurre: "9 g",  oeuf: "1½", sel: "½ pincée",  lait: "10 cl" },
+      { nb:  7, farine: "94 g",  sucre: "14 g", beurre: "10 g", oeuf: "1¾", sel: "½ pincée",  lait: "12 cl" },
+      { nb:  8, farine: "108 g", sucre: "16 g", beurre: "12 g", oeuf: "2",  sel: "½ pincée",  lait: "14 cl" },
+      { nb:  9, farine: "122 g", sucre: "18 g", beurre: "14 g", oeuf: "2¼", sel: "¾ pincée",  lait: "16 cl" },
+      { nb: 10, farine: "135 g", sucre: "20 g", beurre: "15 g", oeuf: "2½", sel: "¾ pincée",  lait: "18 cl" },
+      { nb: 11, farine: "148 g", sucre: "22 g", beurre: "16 g", oeuf: "2¾", sel: "¾ pincée",  lait: "19 cl" },
+      { nb: 12, farine: "162 g", sucre: "24 g", beurre: "18 g", oeuf: "3",  sel: "¾ pincée",  lait: "21 cl" },
+      { nb: 13, farine: "176 g", sucre: "26 g", beurre: "20 g", oeuf: "3¼", sel: "1 pincée",  lait: "23 cl" },
+      { nb: 14, farine: "189 g", sucre: "28 g", beurre: "21 g", oeuf: "3½", sel: "1 pincée",  lait: "24 cl" },
+      { nb: 15, farine: "202 g", sucre: "30 g", beurre: "22 g", oeuf: "3¾", sel: "1 pincée",  lait: "26 cl" },
+      { nb: 16, farine: "216 g", sucre: "32 g", beurre: "24 g", oeuf: "4",  sel: "1 pincée",  lait: "28 cl" },
+      { nb: 17, farine: "230 g", sucre: "34 g", beurre: "26 g", oeuf: "4¼", sel: "1¼ pincée", lait: "30 cl" },
+      { nb: 18, farine: "243 g", sucre: "36 g", beurre: "27 g", oeuf: "4½", sel: "1¼ pincée", lait: "32 cl" },
+      { nb: 19, farine: "256 g", sucre: "38 g", beurre: "28 g", oeuf: "4¾", sel: "1¼ pincée", lait: "33 cl" },
+      { nb: 20, farine: "270 g", sucre: "40 g", beurre: "30 g", oeuf: "5",  sel: "1¼ pincée", lait: "35 cl" },
+    ],
+    ingredients: { "Farine (g)": 54, "Sucre (g)": 8, "Beurre (g)": 6, "Lait (cl)": 7 },
     etapes: [
-      { icone: "🥣", titre: "Mélanger les secs",       detail: "Dans un grand bol, mélanger la farine, le sucre et la levure chimique.", badge: null },
-      { icone: "🥛", titre: "Incorporer les liquides", detail: "Créer un puits, y ajouter les œufs battus, le lait et le beurre fondu refroidi. Mélanger sans trop travailler la pâte.", badge: null },
-      { icone: "⏳", titre: "Laisser reposer",         detail: "Laisser la pâte reposer pendant que le gaufrier chauffe.", badge: "⏱ Repos : 10–15 min" },
-      { icone: "🔌", titre: "Préchauffer le gaufrier", detail: "Brancher et laisser chauffer à fond. Graisser légèrement avec du beurre ou de l'huile.", badge: null },
-      { icone: "🧇", titre: "Cuire les gaufres",       detail: "Verser une louche au centre, fermer et cuire jusqu'à ce qu'elles soient bien dorées.", badge: "⏱ Cuisson : 3–5 min" }
+      { icone: "🥣", titre: "Mélanger les secs",       detail: "Dans un grand bol, mélanger la farine, le sucre et le sel.", badge: null },
+      { icone: "🥛", titre: "Incorporer les liquides", detail: "Ajouter l'œuf battu, le lait et le beurre fondu. Mélanger jusqu'à obtenir une pâte lisse sans grumeaux.", badge: null },
+      { icone: "⏳", titre: "Laisser reposer",         detail: "Laisser reposer la pâte pendant que le gaufrier chauffe.", badge: "⏱ Repos : 10–15 min" },
+      { icone: "🔌", titre: "Préchauffer le gaufrier", detail: "Brancher et laisser chauffer à fond. Graisser légèrement avec du beurre.", badge: null },
+      { icone: "🧇", titre: "Cuire les gaufres",       detail: "Verser la pâte au centre, fermer et cuire jusqu'à ce qu'elles soient bien dorées et croustillantes.", badge: "⏱ Cuisson : 3–5 min" }
     ]
   },
 
@@ -358,6 +373,17 @@ function htmlTableauCrepesColonnes(l) {
     <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
 }
 
+function htmlTableauGaufresColonnes(l) {
+  return col(`
+    <tr><th>🧇 Gaufres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
+    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`);
+}
+
 function htmlTableauCookiesColonnes(l) {
   return col(`
     <tr><th>🍪 Cookies</th><td><b>${l.nb}</b></td></tr>
@@ -410,6 +436,15 @@ function calculer() {
     document.getElementById("resultat").innerHTML = ligne
       ? `<h3>Pour ${personnes} pâton${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPizzaColonnes(ligne)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (0–20).</p>`;
+    return;
+  }
+
+  // Gaufres : tableau par nombre de gaufres
+  if (recette === "gaufres" && data.tableauGaufres) {
+    const ligne = data.tableauGaufres.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} gaufre${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaufresColonnes(ligne)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
     return;
   }
 
@@ -540,6 +575,9 @@ function choisirRecette(nom) {
   } else if (nom === "crepes" && data.tableauPersonnes) {
     const ligne = data.tableauPersonnes.find(l => l.nb === personnes);
     if (ligne) listeIngredients = htmlTableauCrepesColonnes(ligne);
+  } else if (nom === "gaufres" && data.tableauGaufres) {
+    const ligne = data.tableauGaufres.find(l => l.nb === personnes);
+    if (ligne) listeIngredients = htmlTableauGaufresColonnes(ligne);
   } else if (nom === "cookies" && data.tableauCookies) {
     const ligne = data.tableauCookies.find(l => l.nb === personnes);
     if (ligne) listeIngredients = htmlTableauCookiesColonnes(ligne);
