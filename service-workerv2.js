@@ -1,9 +1,10 @@
-const CACHE_NAME = "cuisine-jeje-v1";
+const CACHE_NAME = "cuisine-jeje-v2";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
   "/la-cuisine-de-jeje/style.css",
   "/la-cuisine-de-jeje/script.js",
+  "/la-cuisine-de-jeje/manifest.json",
   "/la-cuisine-de-jeje/images/fond.jpg",
   "/la-cuisine-de-jeje/images/pizza.jpg",
   "/la-cuisine-de-jeje/images/crepes.jpg",
@@ -12,7 +13,9 @@ const FICHIERS = [
   "/la-cuisine-de-jeje/images/lasagne.jpg",
   "/la-cuisine-de-jeje/images/cookies.jpg",
   "/la-cuisine-de-jeje/images/flan.jpg",
-  "/la-cuisine-de-jeje/images/clafoutis.jpg"
+  "/la-cuisine-de-jeje/images/clafoutis.jpg",
+  "/la-cuisine-de-jeje/images/icon-192.png",
+  "/la-cuisine-de-jeje/images/icon-512.png"
 ];
 
 // Installation : mise en cache de tous les fichiers
@@ -33,9 +36,15 @@ self.addEventListener("activate", e => {
   self.clients.claim();
 });
 
-// Fetch : répondre depuis le cache, sinon réseau
+// Fetch : réseau en priorité, cache en fallback
 self.addEventListener("fetch", e => {
   e.respondWith(
-    caches.match(e.request).then(cached => cached || fetch(e.request))
+    fetch(e.request)
+      .then(response => {
+        const clone = response.clone();
+        caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
+        return response;
+      })
+      .catch(() => caches.match(e.request))
   );
 });
