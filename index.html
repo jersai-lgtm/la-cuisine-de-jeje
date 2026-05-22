@@ -32,6 +32,13 @@
   <p>Mes recettes du quotidien</p>
 </header>
 
+<!-- BARRE DE RECHERCHE -->
+<div class="search-bar">
+  <span class="search-icon">🔍</span>
+  <input type="text" id="search-input" placeholder="Rechercher une recette..." oninput="rechercherRecette(this.value)">
+  <button class="search-clear" id="search-clear" onclick="viderRecherche()" style="display:none">✕</button>
+</div>
+
 <!-- MENU CATÉGORIES -->
 <nav class="menu-cats">
   <button class="cat-btn active" onclick="filtrerCategorie('tous')">🍽️ Tout</button>
@@ -313,6 +320,32 @@ function calculerCarteBrioche(version) {
     document.getElementById("modal-resultat").innerHTML = res;
     document.getElementById("modal-calc").classList.add("visible");
   }, 50);
+}
+
+// Recherche
+function rechercherRecette(query) {
+  const q = query.toLowerCase().trim();
+  const clear = document.getElementById("search-clear");
+  clear.style.display = q ? "flex" : "none";
+
+  document.querySelectorAll(".carte").forEach(carte => {
+    const nom = carte.querySelector("h2").textContent.toLowerCase();
+    carte.style.display = (!q || nom.includes(q)) ? "flex" : "none";
+  });
+
+  // Désactiver les filtres catégories si recherche active
+  if (q) {
+    document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  } else {
+    document.querySelectorAll(".cat-btn")[0].classList.add("active");
+  }
+}
+
+function viderRecherche() {
+  document.getElementById("search-input").value = "";
+  document.getElementById("search-clear").style.display = "none";
+  document.querySelectorAll(".carte").forEach(c => c.style.display = "flex");
+  document.querySelectorAll(".cat-btn")[0].classList.add("active");
 }
 
 // Filtre catégories
