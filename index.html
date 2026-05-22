@@ -508,6 +508,76 @@
     </div>
   </div>
 
+
+  <!-- BOULANGERIE BASES -->
+  <div class="carte" data-cat="desserts" onclick="ouvrirFiche('goumeau', 'calc-goumeau')">
+    <img src="images/goumeau.jpg" alt="Galette de Goumeau">
+    <div class="carte-info">
+      <h2>🫓 Galette de Goumeau</h2>
+      <p>⏱ 3h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="10" class="calc-input" id="calc-goumeau">
+        <button class="calc-btn" onclick="calculerCarte('goumeau', 'calc-goumeau')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" onclick="ouvrirFiche('painbaguette', null)">
+    <img src="images/painbaguette.jpg" alt="Baguette">
+    <div class="carte-info">
+      <h2>🥖 Pain — Baguette</h2>
+      <p>⏱ 3h • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <span class="calc-fixed">1 baguette (~250g)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" onclick="ouvrirFiche('paindemie', 'calc-paindemie')">
+    <img src="images/paindemie.jpg" alt="Pain de mie">
+    <div class="carte-info">
+      <h2>🍞 Pain de mie</h2>
+      <p>⏱ 2h30 • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="20" min="1" max="20" class="calc-input" id="calc-paindemie">
+        <button class="calc-btn" onclick="calculerCarte('paindemie', 'calc-paindemie')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" onclick="ouvrirFiche('patefeuilletee', null)">
+    <img src="images/patefeuilletee.jpg" alt="Pâte feuilletée">
+    <div class="carte-info">
+      <h2>🥧 Pâte feuilletée</h2>
+      <p>⏱ 2h • ⭐⭐⭐ Difficile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <span class="calc-fixed">1 pâte (~28 cm)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" onclick="ouvrirFiche('patebrisee', null)">
+    <img src="images/patebrisee.jpg" alt="Pâte brisée">
+    <div class="carte-info">
+      <h2>🥧 Pâte brisée</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <span class="calc-fixed">1 pâte (~28 cm)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" onclick="ouvrirFiche('patesablee', null)">
+    <img src="images/patesablee.jpg" alt="Pâte sablée">
+    <div class="carte-info">
+      <h2>🍪 Pâte sablée</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <span class="calc-fixed">1 pâte (~28 cm)</span>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <!-- MODAL RÉSULTAT CALCULATEUR -->
@@ -536,6 +606,12 @@
     <option value="crepes">Crêpes</option>
     <option value="gaufres">Gaufres</option>
     <option value="brioche">Brioche</option>
+    <option value="goumeau">Galette de Goumeau</option>
+    <option value="painbaguette">Pain — Baguette</option>
+    <option value="paindemie">Pain de mie</option>
+    <option value="patefeuilletee">Pâte feuilletée</option>
+    <option value="patebrisee">Pâte brisée</option>
+    <option value="patesablee">Pâte sablée</option>
     <option value="lasagne">Lasagnes</option>
     <option value="cookies">Cookies</option>
     <option value="flan">Flan</option>
