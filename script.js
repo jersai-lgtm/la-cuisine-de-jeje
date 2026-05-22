@@ -87,7 +87,7 @@ const recettes = {
     ]
   },
 
-  Crêpes: {
+  crepes: {
     base: 4,
     temps: "20 min + 1h repos",
     niveau: "⭐ Facile",
@@ -116,7 +116,7 @@ const recettes = {
     ]
   },
 
-  Gaufres: {
+  gaufres: {
     base: 1,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -153,7 +153,7 @@ const recettes = {
     ]
   },
 
-  Brioche: {
+  brioche: {
     base: 1,
     temps: "~2h + 35 min cuisson",
     niveau: "⭐ Moyen",
@@ -197,7 +197,7 @@ const recettes = {
     ]
   },
 
-  Lasagne: {
+  lasagne: {
     base: 1,
     temps: "1h30",
     niveau: "⭐ Moyen",
@@ -226,7 +226,7 @@ const recettes = {
     ]
   },
 
-  Cookies: {
+  cookies: {
     base: 1,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -257,7 +257,7 @@ const recettes = {
 
 
 
-  Salade niçoise: {
+  saladeniçoise: {
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -287,7 +287,7 @@ const recettes = {
     ]
   },
 
-  Salade césar: {
+  saladecesar: {
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -316,7 +316,7 @@ const recettes = {
     ]
   },
 
-  Salade greque: {
+  saladegreque: {
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -344,7 +344,7 @@ const recettes = {
     ]
   },
 
-  Salade pâtes thon: {
+  saladepatasthon: {
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -373,7 +373,7 @@ const recettes = {
     ]
   },
 
-  Salade riz méditerranéenne: {
+  saladerizmediterranee: {
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -402,7 +402,7 @@ const recettes = {
     ]
   },
 
-  Taboulé maison: {
+  tabulemaison: {
     base: 4,
     temps: "20 min + repos",
     niveau: "⭐ Facile",
@@ -431,7 +431,7 @@ const recettes = {
     ]
   },
 
-  Salad de lentilles: {
+  saladelentilles: {
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -460,7 +460,7 @@ const recettes = {
     ]
   },
 
-  Salade avocat crevettes: {
+  saladeavocatcrevettes: {
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -488,7 +488,7 @@ const recettes = {
       { icone: "🥗", titre: "Dresser",               detail: "Disposer la salade dans les assiettes. Ajouter l'avocat et les crevettes. Napper de sauce cocktail. Garnir d'aneth ou de ciboulette.", badge: null },
     ]
   },
-  Boeuf bourguignon: {
+  boeufbourguignon: {
     base: 6,
     temps: "3h30 + marinade",
     niveau: "⭐⭐ Intermédiaire",
@@ -515,7 +515,7 @@ const recettes = {
     ]
   },
 
-  Risotto: {
+  risotto: {
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -539,7 +539,7 @@ const recettes = {
     ]
   },
 
-  Gratin dauphinois: {
+  gratindauphinois: {
     base: 6,
     temps: "1h30",
     niveau: "⭐ Facile",
@@ -564,7 +564,7 @@ const recettes = {
     ]
   },
 
-  Crème brulée: {
+  cremebrulee: {
     base: 6,
     temps: "45 min + repos",
     niveau: "⭐ Facile",
@@ -595,7 +595,7 @@ const recettes = {
     ]
   },
 
-  Mousse au chocolat: {
+  mousseauchocolat: {
     base: 6,
     temps: "20 min + 2h repos",
     niveau: "⭐ Facile",
@@ -625,7 +625,7 @@ const recettes = {
     ]
   },
 
-  Ile flottante: {
+  ileflottante: {
     base: 6,
     temps: "40 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -656,7 +656,7 @@ const recettes = {
     ]
   },
 
-  Fondant chocolat: {
+  fondantchocolat: {
     base: 6,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -684,7 +684,7 @@ const recettes = {
     ]
   },
 
-  Madeleine: {
+  madeleine: {
     base: 12,
     temps: "30 min + repos",
     niveau: "⭐ Facile",
@@ -722,7 +722,7 @@ const recettes = {
     ]
   },
 
-  Banana bread: {
+  bananabread: {
     base: 8,
     temps: "15 min + 1h four",
     niveau: "⭐ Facile",
@@ -752,7 +752,7 @@ const recettes = {
     ]
   },
 
-  Granola: {
+  granola: {
     base: 8,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -782,7 +782,7 @@ const recettes = {
     ]
   },
 
-  Veloute legumes: {
+  veloutelegumes: {
     base: 4,
     temps: "35 min",
     niveau: "⭐ Facile",
@@ -806,7 +806,7 @@ const recettes = {
     ]
   },
 
-  Houmous: {
+  houmous: {
     base: 6,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -834,7 +834,7 @@ const recettes = {
       { icone: "🍽️", titre: "Dresser et servir",         detail: "Verser dans un bol. Creuser un puits au centre avec le dos d'une cuillère. Verser un filet d'huile d'olive, saupoudrer de paprika et de cumin. Servir avec du pain pita, des légumes crus ou des crackers.", badge: null },
     ]
   },
-  Clafoutis: {
+  clafoutis: {
     base: 6,
     temps: "~50 min",
     niveau: "⭐ Facile",
@@ -876,7 +876,7 @@ const recettes = {
     ]
   },
 
-  Pancakes: {
+  pancakes: {
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -914,7 +914,7 @@ const recettes = {
     ]
   },
 
-  Muffins: {
+  muffins: {
     base: 12,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -956,7 +956,7 @@ const recettes = {
     ]
   },
 
-  Croque-monsieur: {
+  croquemonsieur: {
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -984,7 +984,7 @@ const recettes = {
     ]
   },
 
-  Smoothie bowl: {
+  smoothiebowl: {
     base: 2,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -1007,7 +1007,7 @@ const recettes = {
     ]
   },
 
-  Salade quinoa: {
+  saladequinoa: {
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -1033,7 +1033,7 @@ const recettes = {
     ]
   },
 
-  Yaourt: {
+  yaourt: {
     base: 8,
     temps: "10 min + 8h repos",
     niveau: "⭐ Facile",
@@ -1057,7 +1057,7 @@ const recettes = {
     ]
   },
 
-  Tarte citron: {
+  tartecitron: {
     base: 6,
     temps: "1h30 + repos",
     niveau: "⭐⭐ Intermédiaire",
@@ -1086,7 +1086,7 @@ const recettes = {
     ]
   },
 
-  Tarte aux pommes: {
+  tarteaupommes: {
     base: 6,
     temps: "~1h",
     niveau: "⭐ Facile",
@@ -1119,7 +1119,7 @@ const recettes = {
     ]
   },
 
-  Tiramisu: {
+  tiramisu: {
     base: 6,
     temps: "25 min + 12h repos",
     niveau: "⭐ Facile",
@@ -1152,7 +1152,7 @@ const recettes = {
     ]
   },
 
-  Flan: {
+  flan: {
     base: 6,
     temps: "~1h + refroidissement",
     niveau: "⭐ Facile",
@@ -2198,7 +2198,30 @@ function choisirRecette(nom) {
   });
 
   // Afficher dans la modal
-  const nomPropre = nom.charAt(0).toUpperCase() + nom.slice(1).replace("aupommes", " aux pommes");
+  const nomsAffichage = {
+    "croquemonsieur":    "Croque-monsieur",
+    "cremebrulee":       "Crème brûlée",
+    "tarteaupommes":     "Tarte aux pommes",
+    "tartecitron":       "Tarte au citron",
+    "boeufbourguignon":  "Bœuf bourguignon",
+    "gratindauphinois":  "Gratin dauphinois",
+    "mousseauchocolat":  "Mousse au chocolat",
+    "fondantchocolat":   "Fondant au chocolat",
+    "ileflottante":      "Île flottante",
+    "bananabread":       "Banana bread",
+    "veloutelegumes":    "Velouté de légumes",
+    "saladeniçoise":     "Salade niçoise",
+    "saladecesar":       "Salade César",
+    "saladegreque":      "Salade grecque",
+    "saladepatasthon":   "Salade pâtes thon",
+    "saladerizmediterranee": "Salade de riz méditerranéenne",
+    "tabulemaison":      "Taboulé maison",
+    "saladelentilles":   "Salade de lentilles",
+    "saladeavocatcrevettes": "Salade avocat crevettes",
+    "smoothiebowl":      "Smoothie Bowl",
+    "saladequinoa":      "Salade de quinoa",
+  };
+  const nomPropre = nomsAffichage[nom] || (nom.charAt(0).toUpperCase() + nom.slice(1));
   document.getElementById("modal-resultat").innerHTML = `
     <div class="fiche-modal-header">
       <div class="fiche-emoji">${data.emoji}</div>
