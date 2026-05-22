@@ -153,6 +153,175 @@ const recettes = {
     ]
   },
 
+
+  painbaguette: {
+    base: 1,
+    temps: "3h",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🥖",
+    description: "Une vraie baguette maison — croûte dorée et craquante, mie alvéolée. La base de la boulangerie française.",
+    fixe: true,
+    ingredientsFixes: [
+      ["🌾 Farine T65", "250 g"],
+      ["💧 Eau tiède", "160 ml"],
+      ["🟨 Levure fraîche", "8 g"],
+      ["🧂 Sel", "5 g"],
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🟨", titre: "Diluer la levure",        detail: "Diluer la levure fraîche dans l'eau tiède (max 35°C). Laisser reposer 5 min.", badge: "⏱ 5 min" },
+      { icone: "🌾", titre: "Former la pâte",          detail: "Dans un grand bol, mélanger la farine et le sel. Ajouter le mélange eau-levure. Mélanger jusqu'à formation d'une pâte homogène.", badge: null },
+      { icone: "🤲", titre: "Pétrir",                  detail: "Pétrir énergiquement la pâte pendant 10 min jusqu'à ce qu'elle soit lisse et élastique.", badge: "⏱ 10 min" },
+      { icone: "⏳", titre: "Première levée",          detail: "Couvrir d'un torchon et laisser lever dans un endroit chaud jusqu'à ce que la pâte double de volume.", badge: "⏱ 1h30" },
+      { icone: "🥖", titre: "Façonner la baguette",    detail: "Dégazer la pâte. L'étirer en rectangle puis la rouler en forme de baguette en scellant bien les bords. Placer sur une plaque farinée.", badge: null },
+      { icone: "⏳", titre: "Deuxième levée",          detail: "Couvrir et laisser lever à nouveau.", badge: "⏱ 45 min" },
+      { icone: "✂️", titre: "Grigner et enfourner",    detail: "Préchauffer le four à 240°C avec un bol d'eau pour créer de la vapeur. Faire des entailles en diagonale sur la baguette avec une lame. Enfourner.", badge: "⏱ 20–25 min à 240°C" },
+    ]
+  },
+
+  paindemie: {
+    base: 20,
+    temps: "2h30",
+    niveau: "⭐ Facile",
+    emoji: "🍞",
+    description: "Un pain de mie maison moelleux — pour des toasts, sandwichs et croque-monsieur bien meilleurs que ceux du commerce.",
+    tableauPainDeMie: [
+      { nb:  1, farine: "18 g",  lait: "11 ml", beurre: "2 g",  sucre: "1 g",  levure: "0.5 g", sel: "0.3 g" },
+      { nb:  2, farine: "35 g",  lait: "22 ml", beurre: "4 g",  sucre: "2 g",  levure: "1 g",   sel: "0.5 g" },
+      { nb:  3, farine: "53 g",  lait: "33 ml", beurre: "6 g",  sucre: "3 g",  levure: "1.5 g", sel: "0.8 g" },
+      { nb:  4, farine: "70 g",  lait: "44 ml", beurre: "8 g",  sucre: "4 g",  levure: "2 g",   sel: "1 g"   },
+      { nb:  5, farine: "88 g",  lait: "55 ml", beurre: "10 g", sucre: "5 g",  levure: "2.5 g", sel: "1.3 g" },
+      { nb:  6, farine: "105 g", lait: "66 ml", beurre: "12 g", sucre: "6 g",  levure: "3 g",   sel: "1.5 g" },
+      { nb:  7, farine: "123 g", lait: "77 ml", beurre: "14 g", sucre: "7 g",  levure: "3.5 g", sel: "1.8 g" },
+      { nb:  8, farine: "140 g", lait: "88 ml", beurre: "16 g", sucre: "8 g",  levure: "4 g",   sel: "2 g"   },
+      { nb:  9, farine: "158 g", lait: "99 ml", beurre: "18 g", sucre: "9 g",  levure: "4.5 g", sel: "2.3 g" },
+      { nb: 10, farine: "175 g", lait: "110 ml",beurre: "20 g", sucre: "10 g", levure: "5 g",   sel: "2.5 g" },
+      { nb: 11, farine: "193 g", lait: "121 ml",beurre: "22 g", sucre: "11 g", levure: "5.5 g", sel: "2.8 g" },
+      { nb: 12, farine: "210 g", lait: "132 ml",beurre: "24 g", sucre: "12 g", levure: "6 g",   sel: "3 g"   },
+      { nb: 13, farine: "228 g", lait: "143 ml",beurre: "26 g", sucre: "13 g", levure: "6.5 g", sel: "3.3 g" },
+      { nb: 14, farine: "245 g", lait: "154 ml",beurre: "28 g", sucre: "14 g", levure: "7 g",   sel: "3.5 g" },
+      { nb: 15, farine: "263 g", lait: "165 ml",beurre: "30 g", sucre: "15 g", levure: "7.5 g", sel: "3.8 g" },
+      { nb: 16, farine: "280 g", lait: "176 ml",beurre: "32 g", sucre: "16 g", levure: "8 g",   sel: "4 g"   },
+      { nb: 17, farine: "298 g", lait: "187 ml",beurre: "34 g", sucre: "17 g", levure: "8.5 g", sel: "4.3 g" },
+      { nb: 18, farine: "315 g", lait: "198 ml",beurre: "36 g", sucre: "18 g", levure: "9 g",   sel: "4.5 g" },
+      { nb: 19, farine: "333 g", lait: "209 ml",beurre: "38 g", sucre: "19 g", levure: "9.5 g", sel: "4.8 g" },
+      { nb: 20, farine: "350 g", lait: "220 ml",beurre: "40 g", sucre: "20 g", levure: "10 g",  sel: "5 g"   },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🟨", titre: "Activer la levure",       detail: "Diluer la levure dans le lait tiède avec le sucre. Laisser reposer 5 min.", badge: "⏱ 5 min" },
+      { icone: "🌾", titre: "Former la pâte",          detail: "Mélanger farine et sel. Ajouter le mélange lait-levure. Pétrir jusqu'à obtenir une pâte homogène.", badge: "⏱ 8 min" },
+      { icone: "🧈", titre: "Incorporer le beurre",    detail: "Ajouter le beurre mou en morceaux progressivement tout en continuant de pétrir. La pâte doit être lisse et souple.", badge: "⏱ 5 min" },
+      { icone: "⏳", titre: "Première levée",          detail: "Couvrir et laisser lever dans un endroit chaud.", badge: "⏱ 1h" },
+      { icone: "🍞", titre: "Façonner et mouler",      detail: "Dégazer, façonner en rectangle et placer dans un moule à cake beurré. Égaliser la surface.", badge: null },
+      { icone: "⏳", titre: "Deuxième levée",          detail: "Couvrir et laisser lever jusqu'à ce que la pâte dépasse légèrement le moule.", badge: "⏱ 1h" },
+      { icone: "🔥", titre: "Cuire",                   detail: "Enfourner à 180°C. Le pain est cuit quand il est bien doré et sonne creux quand on tape dessous.", badge: "⏱ 25–30 min à 180°C" },
+    ]
+  },
+
+  patefeuilletee: {
+    base: 1,
+    temps: "2h + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥧",
+    description: "La vraie pâte feuilletée maison — croustillante, beurrée et feuilletée. Pour un moule de 28 cm environ.",
+    fixe: true,
+    ingredientsFixes: [
+      ["🌾 Farine T55", "250 g"],
+      ["💧 Eau froide", "125 ml"],
+      ["🧂 Sel", "5 g"],
+      ["🧈 Beurre (pour la détrempe)", "30 g"],
+      ["🧈 Beurre de tourage (sec/AOC)", "175 g"],
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "La détrempe",             detail: "Mélanger farine, sel et 30g de beurre fondu. Ajouter l'eau froide progressivement. Former une boule sans trop pétrir. Inciser en croix. Filmer et reposer au frigo.", badge: "⏱ 30 min au frigo" },
+      { icone: "🧈", titre: "Préparer le beurre",      detail: "Aplatir le beurre de tourage froid en carré de 1cm d'épaisseur entre deux feuilles de papier. Il doit avoir la même consistance que la détrempe.", badge: null },
+      { icone: "📏", titre: "Premier tourage",         detail: "Étaler la détrempe en croix. Envelopper le beurre dedans comme une enveloppe. Étaler en rectangle et faire 1 tour double. Filmer et reposer.", badge: "⏱ 30 min au frigo" },
+      { icone: "📏", titre: "Tourages suivants",       detail: "Répéter l'opération 2 fois en faisant 2 tours doubles à chaque fois, en reposant 30 min au frigo entre chaque. Au total : 3 × 2 tours doubles.", badge: "⏱ 3 × 30 min repos" },
+      { icone: "✅", titre: "Prête à utiliser",        detail: "Après le dernier repos, étaler la pâte à l'épaisseur souhaitée. Elle se conserve 3 jours au frigo ou 3 mois au congélateur.", badge: null },
+    ]
+  },
+
+  patebrisee: {
+    base: 1,
+    temps: "15 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🥧",
+    description: "La pâte brisée maison — croustillante et fondante. Pour un moule de 28 cm environ.",
+    fixe: true,
+    ingredientsFixes: [
+      ["🌾 Farine T55", "200 g"],
+      ["🧈 Beurre froid", "100 g"],
+      ["💧 Eau froide", "50 ml"],
+      ["🧂 Sel", "4 g"],
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Sabler",                  detail: "Couper le beurre froid en petits dés. L'incorporer à la farine et au sel du bout des doigts en frottant jusqu'à obtenir une texture sableuse. Ne pas trop travailler.", badge: null },
+      { icone: "💧", titre: "Hydrater",                detail: "Ajouter l'eau froide cuillère par cuillère. Mélanger jusqu'à ce que la pâte s'amalgame. S'arrêter dès qu'elle forme une boule — ne pas trop pétrir.", badge: null },
+      { icone: "❄️", titre: "Repos",                   detail: "Aplatir en disque, filmer et laisser reposer au réfrigérateur. Ce repos est indispensable pour une pâte non rétractable.", badge: "⏱ 30 min minimum" },
+      { icone: "📏", titre: "Étaler et foncer",        detail: "Étaler sur un plan fariné et foncer le moule. Piquer le fond à la fourchette. Prête à garnir et cuire.", badge: null },
+    ]
+  },
+
+  patesablee: {
+    base: 1,
+    temps: "15 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🍪",
+    description: "La pâte sablée maison — plus sucrée et friable que la brisée. Pour un moule de 28 cm environ.",
+    fixe: true,
+    ingredientsFixes: [
+      ["🌾 Farine T55", "200 g"],
+      ["🧈 Beurre mou", "100 g"],
+      ["🍬 Sucre glace", "80 g"],
+      ["🥚 Œuf", "1"],
+      ["🌰 Poudre d'amande", "20 g"],
+      ["🧂 Sel", "1 pincée"],
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Crémer beurre + sucre",   detail: "Travailler le beurre mou avec le sucre glace jusqu'à obtenir un mélange crémeux.", badge: null },
+      { icone: "🥚", titre: "Ajouter l'œuf",          detail: "Incorporer l'œuf et mélanger.", badge: null },
+      { icone: "🌾", titre: "Ajouter farine + amande", detail: "Ajouter la farine, la poudre d'amande et le sel. Mélanger sans trop travailler jusqu'à formation d'une boule.", badge: null },
+      { icone: "❄️", titre: "Repos",                   detail: "Aplatir en disque, filmer et laisser reposer au réfrigérateur.", badge: "⏱ 1h minimum" },
+      { icone: "📏", titre: "Étaler et foncer",        detail: "Étaler délicatement (pâte fragile) et foncer le moule. Cuire à blanc 15 min à 170°C avant de garnir.", badge: "⏱ 15 min à 170°C à blanc" },
+    ]
+  },
+
+  goumeau: {
+    base: 4,
+    temps: "3h (dont 2h levée)",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "La galette de goumeau franc-comtoise — une brioche moelleuse nappée d'une crème dorée. Spécialité traditionnelle de Franche-Comté.",
+    tableauGoumeau: [
+      { nb:  1, sucre: "9 g",  levure: "3 g",  farine: "34 g",  oeuf: "¼",  creme: "1 c.à.s",  lait: "¼ dl",  gCreme: "¾ c.à.s",  gSucre: "¾ c.à.s",  gJaune: "¼"  },
+      { nb:  2, sucre: "17 g", levure: "5 g",  farine: "67 g",  oeuf: "⅓",  creme: "2 c.à.s",  lait: "⅓ dl",  gCreme: "1½ c.à.s", gSucre: "1½ c.à.s", gJaune: "⅓"  },
+      { nb:  3, sucre: "25 g", levure: "8 g",  farine: "100 g", oeuf: "½",  creme: "3 c.à.s",  lait: "½ dl",  gCreme: "2½ c.à.s", gSucre: "2½ c.à.s", gJaune: "½"  },
+      { nb:  4, sucre: "34 g", levure: "10 g", farine: "134 g", oeuf: "⅔",  creme: "4 c.à.s",  lait: "⅔ dl",  gCreme: "3½ c.à.s", gSucre: "3½ c.à.s", gJaune: "⅔"  },
+      { nb:  5, sucre: "42 g", levure: "12 g", farine: "168 g", oeuf: "¾",  creme: "5 c.à.s",  lait: "¾ dl",  gCreme: "4½ c.à.s", gSucre: "4½ c.à.s", gJaune: "¾"  },
+      { nb:  6, sucre: "51 g", levure: "15 g", farine: "201 g", oeuf: "1",   creme: "6 c.à.s",  lait: "1 dl",  gCreme: "5¼ c.à.s", gSucre: "5¼ c.à.s", gJaune: "1"  },
+      { nb:  7, sucre: "60 g", levure: "18 g", farine: "234 g", oeuf: "1¼", creme: "7 c.à.s",  lait: "1¼ dl", gCreme: "6 c.à.s",  gSucre: "6 c.à.s",  gJaune: "1¼" },
+      { nb:  8, sucre: "68 g", levure: "20 g", farine: "268 g", oeuf: "1⅓", creme: "8 c.à.s",  lait: "1⅓ dl", gCreme: "7 c.à.s",  gSucre: "7 c.à.s",  gJaune: "1⅓" },
+      { nb:  9, sucre: "76 g", levure: "22 g", farine: "302 g", oeuf: "1½", creme: "9 c.à.s",  lait: "1½ dl", gCreme: "8 c.à.s",  gSucre: "8 c.à.s",  gJaune: "1½" },
+      { nb: 10, sucre: "85 g", levure: "25 g", farine: "335 g", oeuf: "1⅔", creme: "10 c.à.s", lait: "1⅔ dl", gCreme: "8¾ c.à.s", gSucre: "8¾ c.à.s", gJaune: "1⅔" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🟨", titre: "Délayer la levure",        detail: "Délayer la levure de bière dans 3 cuillères à soupe de lait à peine tiède. Laisser reposer quelques minutes.", badge: null },
+      { icone: "🥚", titre: "Mélanger les ingrédients", detail: "Dans une terrine, mélanger l'œuf entier avec le sucre. Ajouter le sel, la crème épaisse, l'eau de fleur d'oranger, le reste de lait tiède et enfin la farine pour obtenir une pâte assez molle.", badge: null },
+      { icone: "🟨", titre: "Ajouter la levure",        detail: "Ajouter en dernier lieu la levure délayée dans le lait. Bien mélanger.", badge: null },
+      { icone: "🤲", titre: "Pétrir",                   detail: "Pétrir à la main quelques minutes jusqu'à obtenir une pâte homogène et souple.", badge: "⏱ 3–5 min" },
+      { icone: "🥧", titre: "Mettre en moule",          detail: "Beurrer et fariner un moule à tarte à fond plein. Étaler la pâte à la main dans ce moule (environ 1,5 cm d'épaisseur).", badge: null },
+      { icone: "⏳", titre: "Laisser lever",            detail: "Laisser lever dans un endroit tiède jusqu'à ce que la pâte ait bien gonflé.", badge: "⏱ 2h à 3h" },
+      { icone: "🍮", titre: "Préparer le goumeau",      detail: "Juste avant la cuisson, mélanger la crème fraîche épaisse, le jaune d'œuf et le sucre. Bien mélanger.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Étendre la crème goumeau sur la pâte levée et faire cuire à four chaud jusqu'à ce que le dessus soit bien doré.", badge: "⏱ 20–25 min à 200°C" },
+      { icone: "🍬", titre: "Sucrer à la sortie",       detail: "Immédiatement à la sortie du four, saupoudrer généreusement de sucre en poudre. Déguster tiède !", badge: null },
+    ]
+  },
+
   brioche: {
     base: 1,
     temps: "~2h + 35 min cuisson",
@@ -1403,6 +1572,34 @@ function htmlTableauAvocatCrevettesColonnes(l) {
     <tr><th>🍶 Mayonnaise (sauce cocktail)</th><td>3 c.à.s / 4 pers.</td></tr>`);
 }
 
+function htmlTableauGoumeauColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🫓 Pâte</th></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🟨 Levure de bière</th><td>${l.levure}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥚 Œuf entier</th><td>${l.oeuf}</td></tr>
+    <tr><th>🍦 Crème épaisse</th><td>${l.creme}</td></tr>
+    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
+    <tr><th>🌸 Eau de fleur d'oranger</th><td>selon quantité</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🍮 Goumeau (nappage)</th></tr>
+    <tr><th>🍦 Crème fraîche épaisse</th><td>${l.gCreme}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.gSucre}</td></tr>
+    <tr><th>🥚 Jaune d'œuf</th><td>${l.gJaune}</td></tr>`);
+}
+
+function htmlTableauPainDeMieColonnes(l) {
+  return col(`
+    <tr><th>🍞 Tranches</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
+    <tr><th>🧈 Beurre mou</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
+}
+
 function htmlTableauTiramisuColonnes(l) {
   return col(`
     <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
@@ -1675,6 +1872,24 @@ function calculer() {
     document.getElementById("resultat").innerHTML = ligne
       ? `<h3>${personnes} cookie${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCookiesColonnes(ligne) + htmlPrixCalories("cookies", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
+    return;
+  }
+
+  // Goumeau
+  if (recette === "goumeau" && data.tableauGoumeau) {
+    const ligne = data.tableauGoumeau.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGoumeauColonnes(ligne) + htmlPrixCalories("goumeau", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 10.</p>`;
+    return;
+  }
+
+  // Pain de mie
+  if (recette === "paindemie" && data.tableauPainDeMie) {
+    const ligne = data.tableauPainDeMie.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} tranche${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPainDeMieColonnes(ligne) + htmlPrixCalories("paindemie", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 20.</p>`;
     return;
   }
 
@@ -1960,7 +2175,13 @@ const prixCalories = {
   pizza:    { base: 4,  baseLabel: "4 pâtons",    prixTotal: 0.64,  calTotal: 2346, unite: "pâton" },
   crepes:   { base: 4,  baseLabel: "4 personnes",  prixTotal: 2.17,  calTotal: 1898, unite: "personne" },
   gaufres:  { base: 4,  baseLabel: "4 gaufres",    prixTotal: 0.37,  calTotal: 386,  unite: "gaufre" },
-  brioche:  { base: 1,  baseLabel: "1 brioche",    prixTotal: 2.83,  calTotal: 3642, unite: "brioche" },
+  brioche:       { base: 1,  baseLabel: "1 brioche",    prixTotal: 2.83,  calTotal: 3642, unite: "brioche" },
+  goumeau:       { base: 4,  baseLabel: "4 personnes",  prixTotal: 2.50, calTotal: 1200, unite: "personne" },
+  painbaguette:  { base: 1,  baseLabel: "1 baguette (~250g)", prixTotal: 0.40, calTotal: 680, unite: "baguette" },
+  paindemie:     { base: 20, baseLabel: "20 tranches",  prixTotal: 1.20,  calTotal: 1400, unite: "tranche" },
+  patefeuilletee:{ base: 1,  baseLabel: "1 pâte (~28cm)",prixTotal: 1.80,  calTotal: 1200, unite: "pâte" },
+  patebrisee:    { base: 1,  baseLabel: "1 pâte (~28cm)",prixTotal: 0.80,  calTotal: 900,  unite: "pâte" },
+  patesablee:    { base: 1,  baseLabel: "1 pâte (~28cm)",prixTotal: 1.00,  calTotal: 1100, unite: "pâte" },
   lasagne:  { base: 4,  baseLabel: "4 personnes",  prixTotal: 1.36,  calTotal: 2020, unite: "personne" },
   cookies:  { base: 4,  baseLabel: "4 cookies",    prixTotal: 2.20,  calTotal: 2220, unite: "cookie" },
   flan:     { base: 6,  baseLabel: "6 personnes",  prixTotal: 4.00,  calTotal: 2363, unite: "personne" },
@@ -2048,7 +2269,13 @@ function choisirRecette(nom) {
 
   // Label quantité
   const briocheVersions = { 1: "1 brioche 🥛", 2: "2 brioches 🥛", 3: "1 brioche 🥛🚫", 4: "2 brioches 🥛🚫" };
-  const labelQte = nom === "pizza"
+  const labelQte = (nom === "patefeuilletee" || nom === "patebrisee")
+    ? "🥧 1 pâte (~28 cm)"
+    : nom === "patesablee"
+    ? "🍪 1 pâte (~28 cm)"
+    : nom === "painbaguette"
+    ? "🥖 1 baguette (~250g)"
+    : nom === "pizza"
     ? `🍕 ${personnes} pâton${personnes > 1 ? "s" : ""}`
     : nom === "brioche"
     ? `🍞 ${briocheVersions[personnes] || personnes}`
@@ -2104,6 +2331,12 @@ function choisirRecette(nom) {
   } else if (nom === "saladeavocatcrevettes" && data.tableauAvocatCrevettes) {
     const ligne = data.tableauAvocatCrevettes.find(l => l.nb === personnes) || data.tableauAvocatCrevettes[3];
     listeIngredients = htmlTableauAvocatCrevettesColonnes(ligne);
+  } else if (nom === "goumeau" && data.tableauGoumeau) {
+    const ligne = data.tableauGoumeau.find(l => l.nb === personnes) || data.tableauGoumeau[3];
+    listeIngredients = htmlTableauGoumeauColonnes(ligne);
+  } else if (nom === "paindemie" && data.tableauPainDeMie) {
+    const ligne = data.tableauPainDeMie.find(l => l.nb === personnes) || data.tableauPainDeMie[19];
+    listeIngredients = htmlTableauPainDeMieColonnes(ligne);
   } else if (nom === "tiramisu" && data.tableauTiramisu) {
     const ligne = data.tableauTiramisu.find(l => l.nb === personnes) || data.tableauTiramisu[5];
     listeIngredients = htmlTableauTiramisuColonnes(ligne);
@@ -2219,6 +2452,12 @@ function choisirRecette(nom) {
     "saladelentilles":   "Salade de lentilles",
     "saladeavocatcrevettes": "Salade avocat crevettes",
     "smoothiebowl":      "Smoothie Bowl",
+    "goumeau":           "Galette de Goumeau",
+    "painbaguette":      "Pain — Baguette",
+    "paindemie":         "Pain de mie",
+    "patefeuilletee":    "Pâte feuilletée",
+    "patebrisee":        "Pâte brisée",
+    "patesablee":        "Pâte sablée",
     "saladequinoa":      "Salade de quinoa",
   };
   const nomPropre = nomsAffichage[nom] || (nom.charAt(0).toUpperCase() + nom.slice(1));
