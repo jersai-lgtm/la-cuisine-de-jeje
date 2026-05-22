@@ -87,7 +87,7 @@ const recettes = {
     ]
   },
 
-  crepes: {
+  Crêpes: {
     base: 4,
     temps: "20 min + 1h repos",
     niveau: "⭐ Facile",
@@ -116,7 +116,7 @@ const recettes = {
     ]
   },
 
-  gaufres: {
+  Gaufres: {
     base: 1,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -153,7 +153,7 @@ const recettes = {
     ]
   },
 
-  brioche: {
+  Brioche: {
     base: 1,
     temps: "~2h + 35 min cuisson",
     niveau: "⭐ Moyen",
@@ -197,7 +197,7 @@ const recettes = {
     ]
   },
 
-  lasagne: {
+  Lasagne: {
     base: 1,
     temps: "1h30",
     niveau: "⭐ Moyen",
@@ -226,7 +226,7 @@ const recettes = {
     ]
   },
 
-  cookies: {
+  Cookies: {
     base: 1,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -257,7 +257,7 @@ const recettes = {
 
 
 
-  saladeniçoise: {
+  Salade niçoise: {
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -287,7 +287,7 @@ const recettes = {
     ]
   },
 
-  saladecesar: {
+  Salade césar: {
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -316,7 +316,7 @@ const recettes = {
     ]
   },
 
-  saladegreque: {
+  Salade greque: {
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -344,7 +344,7 @@ const recettes = {
     ]
   },
 
-  saladepatasthon: {
+  Salade pâtes thon: {
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -373,7 +373,7 @@ const recettes = {
     ]
   },
 
-  saladerizmediterranee: {
+  Salade riz méditerranéenne: {
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -402,7 +402,7 @@ const recettes = {
     ]
   },
 
-  tabulemaison: {
+  Taboulé maison: {
     base: 4,
     temps: "20 min + repos",
     niveau: "⭐ Facile",
@@ -431,7 +431,7 @@ const recettes = {
     ]
   },
 
-  saladelentilles: {
+  Salad de lentilles: {
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -460,7 +460,7 @@ const recettes = {
     ]
   },
 
-  saladeavocatcrevettes: {
+  Salade avocat crevettes: {
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -488,7 +488,7 @@ const recettes = {
       { icone: "🥗", titre: "Dresser",               detail: "Disposer la salade dans les assiettes. Ajouter l'avocat et les crevettes. Napper de sauce cocktail. Garnir d'aneth ou de ciboulette.", badge: null },
     ]
   },
-  boeufbourguignon: {
+  Boeuf bourguignon: {
     base: 6,
     temps: "3h30 + marinade",
     niveau: "⭐⭐ Intermédiaire",
@@ -515,7 +515,7 @@ const recettes = {
     ]
   },
 
-  risotto: {
+  Risotto: {
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -539,7 +539,7 @@ const recettes = {
     ]
   },
 
-  gratindauphinois: {
+  Gratin dauphinois: {
     base: 6,
     temps: "1h30",
     niveau: "⭐ Facile",
@@ -564,7 +564,7 @@ const recettes = {
     ]
   },
 
-  cremebrulee: {
+  Crème brulée: {
     base: 6,
     temps: "45 min + repos",
     niveau: "⭐ Facile",
@@ -595,7 +595,7 @@ const recettes = {
     ]
   },
 
-  mousseauchocolat: {
+  Mousse au chocolat: {
     base: 6,
     temps: "20 min + 2h repos",
     niveau: "⭐ Facile",
@@ -625,7 +625,7 @@ const recettes = {
     ]
   },
 
-  ileflottante: {
+  Ile flottante: {
     base: 6,
     temps: "40 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -656,7 +656,7 @@ const recettes = {
     ]
   },
 
-  fondantchocolat: {
+  Fondant chocolat: {
     base: 6,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -684,7 +684,7 @@ const recettes = {
     ]
   },
 
-  madeleine: {
+  Madeleine: {
     base: 12,
     temps: "30 min + repos",
     niveau: "⭐ Facile",
@@ -722,7 +722,7 @@ const recettes = {
     ]
   },
 
-  bananabread: {
+  Banana bread: {
     base: 8,
     temps: "15 min + 1h four",
     niveau: "⭐ Facile",
@@ -752,7 +752,7 @@ const recettes = {
     ]
   },
 
-  granola: {
+  Granola: {
     base: 8,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -782,7 +782,7 @@ const recettes = {
     ]
   },
 
-  veloutelegumes: {
+  Veloute legumes: {
     base: 4,
     temps: "35 min",
     niveau: "⭐ Facile",
@@ -806,7 +806,7 @@ const recettes = {
     ]
   },
 
-  houmous: {
+  Houmous: {
     base: 6,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -834,7 +834,7 @@ const recettes = {
       { icone: "🍽️", titre: "Dresser et servir",         detail: "Verser dans un bol. Creuser un puits au centre avec le dos d'une cuillère. Verser un filet d'huile d'olive, saupoudrer de paprika et de cumin. Servir avec du pain pita, des légumes crus ou des crackers.", badge: null },
     ]
   },
-  clafoutis: {
+  Clafoutis: {
     base: 6,
     temps: "~50 min",
     niveau: "⭐ Facile",
@@ -876,7 +876,7 @@ const recettes = {
     ]
   },
 
-  pancakes: {
+  Pancakes: {
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -914,7 +914,7 @@ const recettes = {
     ]
   },
 
-  muffins: {
+  Muffins: {
     base: 12,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -956,7 +956,7 @@ const recettes = {
     ]
   },
 
-  croquemonsieur: {
+  Croque-monsieur: {
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -984,7 +984,7 @@ const recettes = {
     ]
   },
 
-  smoothiebowl: {
+  Smoothie bowl: {
     base: 2,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -1007,7 +1007,7 @@ const recettes = {
     ]
   },
 
-  saladequinoa: {
+  Salade quinoa: {
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -1033,7 +1033,7 @@ const recettes = {
     ]
   },
 
-  yaourt: {
+  Yaourt: {
     base: 8,
     temps: "10 min + 8h repos",
     niveau: "⭐ Facile",
@@ -1057,7 +1057,7 @@ const recettes = {
     ]
   },
 
-  tartecitron: {
+  Tarte citron: {
     base: 6,
     temps: "1h30 + repos",
     niveau: "⭐⭐ Intermédiaire",
@@ -1086,7 +1086,7 @@ const recettes = {
     ]
   },
 
-  tarteaupommes: {
+  Tarte aux pommes: {
     base: 6,
     temps: "~1h",
     niveau: "⭐ Facile",
@@ -1119,7 +1119,7 @@ const recettes = {
     ]
   },
 
-  tiramisu: {
+  Tiramisu: {
     base: 6,
     temps: "25 min + 12h repos",
     niveau: "⭐ Facile",
@@ -1152,7 +1152,7 @@ const recettes = {
     ]
   },
 
-  flan: {
+  Flan: {
     base: 6,
     temps: "~1h + refroidissement",
     niveau: "⭐ Facile",
