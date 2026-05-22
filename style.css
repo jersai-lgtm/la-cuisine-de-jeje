@@ -504,3 +504,50 @@ select, input[type="number"] {
     font-size: 11px;
   }
 }
+
+/* ==========================
+   BARRE DE RECHERCHE
+========================== */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: rgba(10,10,10,.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.search-icon { font-size: 18px; flex-shrink: 0; }
+.search-bar input {
+  flex: 1;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50px;
+  color: white;
+  padding: 9px 16px;
+  font-size: 15px;
+  outline: none;
+  transition: .2s;
+  width: auto;
+}
+.search-bar input::placeholder { color: #888; }
+.search-bar input:focus {
+  border-color: #ff4d88;
+  background: rgba(255,255,255,.15);
+}
+.search-clear {
+  background: rgba(255,255,255,.1);
+  border: none;
+  color: #aaa;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: .2s;
+}
+.search-clear:hover { background: #ff4d88; color: white; }
