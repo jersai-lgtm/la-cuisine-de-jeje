@@ -476,6 +476,35 @@ const recettes = {
     ]
   },
 
+  tartecitron: {
+    base: 6,
+    temps: "1h30 + repos",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🍋",
+    description: "La tarte au citron meringuée classique — pâte sablée croustillante, crème citron onctueuse et meringue dorée.",
+    tableauTarteCitron: [
+      { nb:  1, farine: "33 g",  beurrePate: "17 g",  sucreGlace: "13 g",  poudreAmande: "5 g",  oeufPate: "⅙",  citrons: "½",  oeufCreme: "½",  sucreCreme: "25 g",  beurreCreme: "17 g",  maizena: "3 g",  blancs: "½",  sucreMeringue: "20 g"  },
+      { nb:  2, farine: "67 g",  beurrePate: "33 g",  sucreGlace: "27 g",  poudreAmande: "10 g", oeufPate: "⅓",  citrons: "1",  oeufCreme: "1",  sucreCreme: "50 g",  beurreCreme: "33 g",  maizena: "7 g",  blancs: "1",  sucreMeringue: "40 g"  },
+      { nb:  3, farine: "100 g", beurrePate: "50 g",  sucreGlace: "40 g",  poudreAmande: "15 g", oeufPate: "½",  citrons: "1½", oeufCreme: "1½", sucreCreme: "75 g",  beurreCreme: "50 g",  maizena: "10 g", blancs: "1½", sucreMeringue: "60 g"  },
+      { nb:  4, farine: "133 g", beurrePate: "67 g",  sucreGlace: "53 g",  poudreAmande: "20 g", oeufPate: "⅔",  citrons: "2",  oeufCreme: "2",  sucreCreme: "100 g", beurreCreme: "67 g",  maizena: "13 g", blancs: "2",  sucreMeringue: "80 g"  },
+      { nb:  5, farine: "167 g", beurrePate: "83 g",  sucreGlace: "67 g",  poudreAmande: "25 g", oeufPate: "¾",  citrons: "2½", oeufCreme: "2½", sucreCreme: "125 g", beurreCreme: "83 g",  maizena: "17 g", blancs: "2½", sucreMeringue: "100 g" },
+      { nb:  6, farine: "200 g", beurrePate: "100 g", sucreGlace: "80 g",  poudreAmande: "30 g", oeufPate: "1",  citrons: "3",  oeufCreme: "3",  sucreCreme: "150 g", beurreCreme: "100 g", maizena: "20 g", blancs: "3",  sucreMeringue: "120 g" },
+      { nb:  7, farine: "233 g", beurrePate: "117 g", sucreGlace: "93 g",  poudreAmande: "35 g", oeufPate: "1⅙", citrons: "3½", oeufCreme: "3½", sucreCreme: "175 g", beurreCreme: "117 g", maizena: "23 g", blancs: "3½", sucreMeringue: "140 g" },
+      { nb:  8, farine: "267 g", beurrePate: "133 g", sucreGlace: "107 g", poudreAmande: "40 g", oeufPate: "1⅓", citrons: "4",  oeufCreme: "4",  sucreCreme: "200 g", beurreCreme: "133 g", maizena: "27 g", blancs: "4",  sucreMeringue: "160 g" },
+      { nb:  9, farine: "300 g", beurrePate: "150 g", sucreGlace: "120 g", poudreAmande: "45 g", oeufPate: "1½", citrons: "4½", oeufCreme: "4½", sucreCreme: "225 g", beurreCreme: "150 g", maizena: "30 g", blancs: "4½", sucreMeringue: "180 g" },
+      { nb: 10, farine: "333 g", beurrePate: "167 g", sucreGlace: "133 g", poudreAmande: "50 g", oeufPate: "1⅔", citrons: "5",  oeufCreme: "5",  sucreCreme: "250 g", beurreCreme: "167 g", maizena: "33 g", blancs: "5",  sucreMeringue: "200 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Préparer la pâte sablée",   detail: "Mélanger farine, sucre glace, poudre d'amande et sel. Ajouter le beurre froid en morceaux et sabler du bout des doigts. Incorporer l'œuf et pétrir sans trop travailler. Former une boule, filmer et réfrigérer.", badge: "⏱ 1h au frais" },
+      { icone: "🥧", titre: "Foncer et cuire à blanc",   detail: "Étaler la pâte et foncer les moules à tartelettes. Piquer le fond avec une fourchette. Couvrir de papier cuisson et de billes de cuisson. Enfourner à 180 °C. Retirer les billes et cuire encore 5 min jusqu'à dorure.", badge: "⏱ 15–20 min à 180 °C" },
+      { icone: "🍋", titre: "Préparer la crème citron",  detail: "Zester et presser les citrons. Dans une casserole, fouetter les œufs avec le sucre et la maïzena. Ajouter le jus et les zestes. Cuire à feu moyen en remuant constamment jusqu'à épaississement.", badge: "⏱ 8–10 min" },
+      { icone: "🧈", titre: "Ajouter le beurre",         detail: "Hors du feu, incorporer le beurre froid en morceaux en fouettant. La crème doit être lisse et brillante. Verser sur les fonds de tarte cuits. Laisser refroidir.", badge: "⏱ 1h au frais minimum" },
+      { icone: "🌨️", titre: "Préparer la meringue",     detail: "Battre les blancs en neige ferme. Ajouter le sucre progressivement tout en continuant de battre jusqu'à obtenir une meringue brillante et ferme.", badge: null },
+      { icone: "🔥", titre: "Dorer la meringue",         detail: "Pocher ou étaler la meringue sur les tartelettes. Dorer au chalumeau ou 2–3 min sous le gril du four en surveillant. Servir frais.", badge: "⏱ 2–3 min gril ou chalumeau" },
+    ]
+  },
+
   tarteaupommes: {
     base: 6,
     temps: "~1h",
@@ -702,6 +731,25 @@ function htmlTableauCroquesColonnes(l) {
     <tr><th>🌿 Moutarde Dijon</th><td>${l.moutarde}</td></tr>`);
 }
 
+function htmlTableauTarteCitronColonnes(l) {
+  return col(`
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🥧 Pâte sablée</th></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🧈 Beurre froid</th><td>${l.beurrePate}</td></tr>
+    <tr><th>🍬 Sucre glace</th><td>${l.sucreGlace}</td></tr>
+    <tr><th>🌰 Poudre d'amande</th><td>${l.poudreAmande}</td></tr>
+    <tr><th>🥚 Œuf</th><td>${l.oeufPate}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🍋 Crème citron</th></tr>
+    <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufCreme}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurreCreme}</td></tr>
+    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🌨️ Meringue</th></tr>
+    <tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucreMeringue}</td></tr>`);
+}
+
 function htmlTableauQuinoaColonnes(l) {
   return col(`
     <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
@@ -815,6 +863,15 @@ function calculer() {
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
     return;
   }
+  // Tarte au citron
+  if (recette === "tartecitron" && data.tableauTarteCitron) {
+    const ligne = data.tableauTarteCitron.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} tartelette${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTarteCitronColonnes(ligne) + htmlPrixCalories("tartecitron", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
+    return;
+  }
+
   // Salade quinoa
   if (recette === "saladequinoa" && data.tableauQuinoa) {
     const ligne = data.tableauQuinoa.find(l => l.nb === personnes);
@@ -908,6 +965,7 @@ const prixCalories = {
   smoothiebowl:   { base: 2,  baseLabel: "2 bols",       prixTotal: 3.00, calTotal: 500,  unite: "bol" },
   saladequinoa:   { base: 4,  baseLabel: "4 personnes",  prixTotal: 5.00, calTotal: 1200, unite: "personne" },
   yaourt:         { base: 8,  baseLabel: "8 yaourts",    prixTotal: 1.80, calTotal: 640,  unite: "yaourt" },
+  tartecitron:    { base: 6,  baseLabel: "6 tartelettes", prixTotal: 4.20, calTotal: 2400, unite: "tartelette" },
 };
 
 function htmlPrixCalories(nom, quantite) {
@@ -994,6 +1052,9 @@ function choisirRecette(nom) {
   } else if (nom === "croquemonsieur" && data.tableauCroques) {
     const ligne = data.tableauCroques.find(l => l.nb === personnes) || data.tableauCroques[3];
     listeIngredients = htmlTableauCroquesColonnes(ligne);
+  } else if (nom === "tartecitron" && data.tableauTarteCitron) {
+    const ligne = data.tableauTarteCitron.find(l => l.nb === personnes) || data.tableauTarteCitron[5];
+    listeIngredients = htmlTableauTarteCitronColonnes(ligne);
   } else if (nom === "saladequinoa" && data.tableauQuinoa) {
     const ligne = data.tableauQuinoa.find(l => l.nb === personnes) || data.tableauQuinoa[3];
     listeIngredients = htmlTableauQuinoaColonnes(ligne);
