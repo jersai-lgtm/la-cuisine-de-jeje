@@ -464,3 +464,43 @@ select, input[type="number"] {
   .carte img      { height: 130px; }
   .calculateur    { width: 90%; padding: 20px; }
 }
+
+/* ==========================
+   CORRECTIF MOBILE CARTES
+========================== */
+@media (max-width: 480px) {
+  .cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 12px 10px 90px;
+  }
+  .carte {
+    width: 100%;
+  }
+  .carte img {
+    height: 140px;
+  }
+  .carte-calc {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .calc-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 6px;
+  }
+  .calc-btn {
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    font-size: 13px;
+  }
+  .brioche-carte-choix {
+    gap: 3px;
+  }
+  .btn-brioche-carte {
+    padding: 5px 4px;
+    font-size: 11px;
+  }
+}
