@@ -142,6 +142,18 @@
     </div>
   </div>
 
+  <div class="carte" data-cat="desserts" onclick="choisirRecette('tartecitron')">
+    <img src="images/tartecitron.jpg" alt="Tarte au citron">
+    <div class="carte-info">
+      <h2>🍋 Tarte au citron</h2>
+      <p>⏱ 1h30 • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="1" max="10" class="calc-input" id="calc-tartecitron">
+        <button class="calc-btn" onclick="calculerCarte('tartecitron', 'calc-tartecitron')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
   <div class="carte" data-cat="desserts" onclick="choisirRecette('tiramisu')">
     <img src="images/tiramisu.jpg" alt="Tiramisu">
     <div class="carte-info">
@@ -269,6 +281,7 @@
     <option value="cookies">Cookies</option>
     <option value="flan">Flan</option>
     <option value="clafoutis">Clafoutis</option>
+    <option value="tartecitron">Tarte au citron</option>
     <option value="tiramisu">Tiramisu</option>
     <option value="tarteaupommes">Tarte aux pommes</option>
     <option value="pancakes">Pancakes</option>
