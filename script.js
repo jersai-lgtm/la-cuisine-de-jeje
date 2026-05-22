@@ -161,22 +161,22 @@ const recettes = {
     description: "Une brioche filante et dorée. Recette pour 1 ou 2 brioches de 400g, avec ou sans lait.",
     tableauBrioche: [
       {
-        nb: 1, label: "1 brioche (avec lait)",
+        nb: 1, label: "1 brioche 🥛",
         oeufs: "~200 g", vanille: "7,5 g", lait: "87,5 g", sucre: "65 g",
         levure: "15 g", sel: "9 g", farine: "500 g", beurre: "150 g"
       },
       {
-        nb: 2, label: "2 brioches (avec lait)",
+        nb: 2, label: "2 brioches 🥛",
         oeufs: "~400 g", vanille: "15 g", lait: "175 g", sucre: "130 g",
         levure: "30 g", sel: "18 g", farine: "1000 g", beurre: "300 g"
       },
       {
-        nb: 3, label: "1 brioche (sans lait)",
+        nb: 3, label: "1 brioche 🥛🚫",
         oeufs: "~292 g", vanille: "7,5 g", lait: "—", sucre: "65 g",
         levure: "15 g", sel: "9 g", farine: "500 g", beurre: "150 g"
       },
       {
-        nb: 4, label: "2 brioches (sans lait)",
+        nb: 4, label: "2 brioches 🥛🚫",
         oeufs: "~585 g", vanille: "15 g", lait: "—", sucre: "130 g",
         levure: "30 g", sel: "18 g", farine: "1000 g", beurre: "300 g"
       },
@@ -295,6 +295,251 @@ const recettes = {
     ]
   },
 
+  pancakes: {
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥞",
+    description: "Des pancakes américains moelleux et gonflés — parfaits pour un petit-déj ou un brunch en famille.",
+    tableauPancakes: [
+      { nb:  1, farine: "50 g",   sucre: "8 g",   levure: "2 g",  oeufs: "½",  lait: "50 ml",   beurre: "8 g"  },
+      { nb:  2, farine: "100 g",  sucre: "15 g",  levure: "4 g",  oeufs: "1",  lait: "100 ml",  beurre: "15 g" },
+      { nb:  3, farine: "150 g",  sucre: "22 g",  levure: "6 g",  oeufs: "1½", lait: "150 ml",  beurre: "22 g" },
+      { nb:  4, farine: "200 g",  sucre: "30 g",  levure: "8 g",  oeufs: "2",  lait: "200 ml",  beurre: "30 g" },
+      { nb:  5, farine: "250 g",  sucre: "38 g",  levure: "10 g", oeufs: "2½", lait: "250 ml",  beurre: "38 g" },
+      { nb:  6, farine: "300 g",  sucre: "45 g",  levure: "12 g", oeufs: "3",  lait: "300 ml",  beurre: "45 g" },
+      { nb:  7, farine: "350 g",  sucre: "52 g",  levure: "14 g", oeufs: "3½", lait: "350 ml",  beurre: "52 g" },
+      { nb:  8, farine: "400 g",  sucre: "60 g",  levure: "16 g", oeufs: "4",  lait: "400 ml",  beurre: "60 g" },
+      { nb:  9, farine: "450 g",  sucre: "68 g",  levure: "18 g", oeufs: "4½", lait: "450 ml",  beurre: "68 g" },
+      { nb: 10, farine: "500 g",  sucre: "75 g",  levure: "20 g", oeufs: "5",  lait: "500 ml",  beurre: "75 g" },
+      { nb: 11, farine: "550 g",  sucre: "82 g",  levure: "22 g", oeufs: "5½", lait: "550 ml",  beurre: "82 g" },
+      { nb: 12, farine: "600 g",  sucre: "90 g",  levure: "24 g", oeufs: "6",  lait: "600 ml",  beurre: "90 g" },
+      { nb: 13, farine: "650 g",  sucre: "98 g",  levure: "26 g", oeufs: "6½", lait: "650 ml",  beurre: "98 g" },
+      { nb: 14, farine: "700 g",  sucre: "105 g", levure: "28 g", oeufs: "7",  lait: "700 ml",  beurre: "105 g" },
+      { nb: 15, farine: "750 g",  sucre: "112 g", levure: "30 g", oeufs: "7½", lait: "750 ml",  beurre: "112 g" },
+      { nb: 16, farine: "800 g",  sucre: "120 g", levure: "32 g", oeufs: "8",  lait: "800 ml",  beurre: "120 g" },
+      { nb: 17, farine: "850 g",  sucre: "128 g", levure: "34 g", oeufs: "8½", lait: "850 ml",  beurre: "128 g" },
+      { nb: 18, farine: "900 g",  sucre: "135 g", levure: "36 g", oeufs: "9",  lait: "900 ml",  beurre: "135 g" },
+      { nb: 19, farine: "950 g",  sucre: "142 g", levure: "38 g", oeufs: "9½", lait: "950 ml",  beurre: "142 g" },
+      { nb: 20, farine: "1000 g", sucre: "150 g", levure: "40 g", oeufs: "10", lait: "1000 ml", beurre: "150 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Mélanger les secs",     detail: "Dans un grand bol, mélanger la farine, le sucre, la levure chimique et le sel.", badge: null },
+      { icone: "🥛", titre: "Mélanger les liquides", detail: "Dans un autre bol, battre les œufs, ajouter le lait et le beurre fondu. Fouetter jusqu'à ce que ce soit homogène.", badge: null },
+      { icone: "🥣", titre: "Incorporer",            detail: "Verser les liquides dans les secs et mélanger juste assez pour incorporer. La pâte doit rester légèrement grumeleuse — ne pas trop mélanger !", badge: null },
+      { icone: "🍳", titre: "Cuire",                 detail: "Chauffer une poêle antiadhésive à feu moyen-doux, graisser légèrement. Verser une louche de pâte. Quand des bulles apparaissent en surface, retourner et cuire 1 min de l'autre côté.", badge: "⏱ 2–3 min par face" },
+      { icone: "🍁", titre: "Servir",                detail: "Servir chauds avec du sirop d'érable, des fruits frais ou de la chantilly.", badge: null },
+    ]
+  },
+
+  muffins: {
+    base: 12,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🧁",
+    description: "Des muffins au chocolat moelleux avec un cœur fondant — prêts en moins de 30 minutes.",
+    tableauMuffins: [
+      { nb:  1, farine: "21 g",  cacao: "2 g",  sucre: "11 g",  levure: "0.8 g", oeufs: "¼",  lait: "10 ml",  huile: "7 ml",   pepites: "8 g"   },
+      { nb:  2, farine: "42 g",  cacao: "5 g",  sucre: "22 g",  levure: "1.7 g", oeufs: "⅓",  lait: "20 ml",  huile: "13 ml",  pepites: "17 g"  },
+      { nb:  3, farine: "62 g",  cacao: "8 g",  sucre: "32 g",  levure: "2.5 g", oeufs: "½",  lait: "30 ml",  huile: "20 ml",  pepites: "25 g"  },
+      { nb:  4, farine: "83 g",  cacao: "10 g", sucre: "43 g",  levure: "3.3 g", oeufs: "⅔",  lait: "40 ml",  huile: "27 ml",  pepites: "33 g"  },
+      { nb:  5, farine: "104 g", cacao: "12 g", sucre: "54 g",  levure: "4.2 g", oeufs: "¾",  lait: "50 ml",  huile: "33 ml",  pepites: "42 g"  },
+      { nb:  6, farine: "125 g", cacao: "15 g", sucre: "65 g",  levure: "5 g",   oeufs: "1",  lait: "60 ml",  huile: "40 ml",  pepites: "50 g"  },
+      { nb:  7, farine: "146 g", cacao: "18 g", sucre: "76 g",  levure: "5.8 g", oeufs: "1¼", lait: "70 ml",  huile: "47 ml",  pepites: "58 g"  },
+      { nb:  8, farine: "167 g", cacao: "20 g", sucre: "87 g",  levure: "6.7 g", oeufs: "1⅓", lait: "80 ml",  huile: "53 ml",  pepites: "67 g"  },
+      { nb:  9, farine: "188 g", cacao: "22 g", sucre: "98 g",  levure: "7.5 g", oeufs: "1½", lait: "90 ml",  huile: "60 ml",  pepites: "75 g"  },
+      { nb: 10, farine: "208 g", cacao: "25 g", sucre: "108 g", levure: "8.3 g", oeufs: "1⅔", lait: "100 ml", huile: "67 ml",  pepites: "83 g"  },
+      { nb: 11, farine: "229 g", cacao: "28 g", sucre: "119 g", levure: "9.2 g", oeufs: "1¾", lait: "110 ml", huile: "73 ml",  pepites: "92 g"  },
+      { nb: 12, farine: "250 g", cacao: "30 g", sucre: "130 g", levure: "10 g",  oeufs: "2",  lait: "120 ml", huile: "80 ml",  pepites: "100 g" },
+      { nb: 13, farine: "271 g", cacao: "32 g", sucre: "141 g", levure: "10.8 g",oeufs: "2¼", lait: "130 ml", huile: "87 ml",  pepites: "108 g" },
+      { nb: 14, farine: "292 g", cacao: "35 g", sucre: "152 g", levure: "11.7 g",oeufs: "2⅓", lait: "140 ml", huile: "93 ml",  pepites: "117 g" },
+      { nb: 15, farine: "312 g", cacao: "38 g", sucre: "162 g", levure: "12.5 g",oeufs: "2½", lait: "150 ml", huile: "100 ml", pepites: "125 g" },
+      { nb: 16, farine: "333 g", cacao: "40 g", sucre: "173 g", levure: "13.3 g",oeufs: "2⅔", lait: "160 ml", huile: "107 ml", pepites: "133 g" },
+      { nb: 17, farine: "354 g", cacao: "42 g", sucre: "184 g", levure: "14.2 g",oeufs: "2¾", lait: "170 ml", huile: "113 ml", pepites: "142 g" },
+      { nb: 18, farine: "375 g", cacao: "45 g", sucre: "195 g", levure: "15 g",  oeufs: "3",  lait: "180 ml", huile: "120 ml", pepites: "150 g" },
+      { nb: 19, farine: "396 g", cacao: "48 g", sucre: "206 g", levure: "15.8 g",oeufs: "3¼", lait: "190 ml", huile: "127 ml", pepites: "158 g" },
+      { nb: 20, farine: "417 g", cacao: "50 g", sucre: "217 g", levure: "16.7 g",oeufs: "3⅓", lait: "200 ml", huile: "133 ml", pepites: "167 g" },
+      { nb: 21, farine: "438 g", cacao: "52 g", sucre: "228 g", levure: "17.5 g",oeufs: "3½", lait: "210 ml", huile: "140 ml", pepites: "175 g" },
+      { nb: 22, farine: "458 g", cacao: "55 g", sucre: "238 g", levure: "18.3 g",oeufs: "3⅔", lait: "220 ml", huile: "147 ml", pepites: "183 g" },
+      { nb: 23, farine: "479 g", cacao: "58 g", sucre: "249 g", levure: "19.2 g",oeufs: "3¾", lait: "230 ml", huile: "153 ml", pepites: "192 g" },
+      { nb: 24, farine: "500 g", cacao: "60 g", sucre: "260 g", levure: "20 g",  oeufs: "4",  lait: "240 ml", huile: "160 ml", pepites: "200 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer le four",  detail: "Préchauffer à 180 °C. Préparer un moule à 12 muffins avec des caissettes en papier.", badge: null },
+      { icone: "🌾", titre: "Mélanger les secs",   detail: "Dans un grand bol, tamiser la farine, le cacao, le sucre, la levure et le sel. Bien mélanger.", badge: null },
+      { icone: "🥚", titre: "Mélanger les liquides",detail: "Dans un autre bol, battre les œufs, ajouter le lait et l'huile. Mélanger.", badge: null },
+      { icone: "🥣", titre: "Incorporer",           detail: "Verser les liquides dans les secs. Mélanger juste assez — la pâte doit rester grumeleuse. Ajouter les pépites de chocolat et mélanger délicatement.", badge: null },
+      { icone: "🧁", titre: "Remplir et cuire",     detail: "Remplir les caissettes aux 2/3. Enfourner jusqu'à ce que les muffins soient gonflés et qu'un couteau en ressorte propre. Laisser tiédir 5 min avant de démouler.", badge: "⏱ 15–18 min à 180 °C" },
+    ]
+  },
+
+  croquemonsieur: {
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥪",
+    description: "Le classique des bistrots parisiens — pain de mie gratiné, jambon, gruyère et béchamel onctueuse.",
+    tableauCroques: [
+      { nb:  1, pain: "2 tr.",  jambon: "1 tr.",  gruyere: "38 g",  beurre: "10 g",  farine: "5 g",  lait: "62 ml",  moutarde: "½ c.à.s" },
+      { nb:  2, pain: "4 tr.",  jambon: "2 tr.",  gruyere: "75 g",  beurre: "20 g",  farine: "10 g", lait: "125 ml", moutarde: "1 c.à.s" },
+      { nb:  3, pain: "6 tr.",  jambon: "3 tr.",  gruyere: "112 g", beurre: "30 g",  farine: "15 g", lait: "188 ml", moutarde: "1.5 c.à.s" },
+      { nb:  4, pain: "8 tr.",  jambon: "4 tr.",  gruyere: "150 g", beurre: "40 g",  farine: "20 g", lait: "250 ml", moutarde: "2 c.à.s" },
+      { nb:  5, pain: "10 tr.", jambon: "5 tr.",  gruyere: "188 g", beurre: "50 g",  farine: "25 g", lait: "312 ml", moutarde: "2.5 c.à.s" },
+      { nb:  6, pain: "12 tr.", jambon: "6 tr.",  gruyere: "225 g", beurre: "60 g",  farine: "30 g", lait: "375 ml", moutarde: "3 c.à.s" },
+      { nb:  7, pain: "14 tr.", jambon: "7 tr.",  gruyere: "262 g", beurre: "70 g",  farine: "35 g", lait: "438 ml", moutarde: "3.5 c.à.s" },
+      { nb:  8, pain: "16 tr.", jambon: "8 tr.",  gruyere: "300 g", beurre: "80 g",  farine: "40 g", lait: "500 ml", moutarde: "4 c.à.s" },
+      { nb:  9, pain: "18 tr.", jambon: "9 tr.",  gruyere: "338 g", beurre: "90 g",  farine: "45 g", lait: "562 ml", moutarde: "4.5 c.à.s" },
+      { nb: 10, pain: "20 tr.", jambon: "10 tr.", gruyere: "375 g", beurre: "100 g", farine: "50 g", lait: "625 ml", moutarde: "5 c.à.s" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer le four",    detail: "Préchauffer le four à 200 °C en mode grill.", badge: null },
+      { icone: "🥛", titre: "Préparer la béchamel",  detail: "Faire fondre le beurre dans une casserole. Ajouter la farine et remuer 1 min. Verser le lait progressivement en fouettant jusqu'à épaississement. Saler, poivrer, ajouter la muscade.", badge: "⏱ 5 min" },
+      { icone: "🍞", titre: "Tartiner le pain",       detail: "Tartiner une face de chaque tranche de pain avec un peu de moutarde et une couche de béchamel.", badge: null },
+      { icone: "🥪", titre: "Monter les sandwichs",  detail: "Poser le jambon sur une tranche, ajouter du gruyère râpé, refermer avec l'autre tranche. Étaler de la béchamel sur le dessus et parsemer du gruyère restant.", badge: null },
+      { icone: "🌡️", titre: "Gratiner",              detail: "Disposer dans un plat allant au four. Gratiner jusqu'à ce que le fromage soit fondu et doré.", badge: "⏱ 10–12 min" },
+    ]
+  },
+
+  smoothiebowl: {
+    base: 2,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍓",
+    description: "Un bol coloré et énergisant pour bien démarrer la journée — fruits, yaourt et toppings croquants.",
+    tableauSmoothie: [
+      { nb: 1, fruits: "100 g", banane: "½",  yaourt: "50 g",  lait: "25 ml", miel: "½ c.à.s" },
+      { nb: 2, fruits: "200 g", banane: "1",   yaourt: "100 g", lait: "50 ml", miel: "1 c.à.s" },
+      { nb: 3, fruits: "300 g", banane: "1½",  yaourt: "150 g", lait: "75 ml", miel: "1.5 c.à.s" },
+      { nb: 4, fruits: "400 g", banane: "2",   yaourt: "200 g", lait: "100 ml",miel: "2 c.à.s" },
+      { nb: 5, fruits: "500 g", banane: "2½",  yaourt: "250 g", lait: "125 ml",miel: "2.5 c.à.s" },
+      { nb: 6, fruits: "600 g", banane: "3",   yaourt: "300 g", lait: "150 ml",miel: "3 c.à.s" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Préparer les fruits",  detail: "Utiliser des fruits rouges et une banane congelés — ils donnent une texture épaisse et crémeuse, comme une glace.", badge: null },
+      { icone: "🌀", titre: "Mixer la base",        detail: "Mixer les fruits congelés avec le yaourt grec, le lait végétal et le miel jusqu'à obtenir une texture lisse et épaisse. Ajouter le lait au fur et à mesure pour ajuster la consistance.", badge: null },
+      { icone: "🥣", titre: "Verser dans un bol",  detail: "Verser le smoothie dans un bol. Il doit être assez épais pour que les toppings ne coulent pas.", badge: null },
+      { icone: "🎨", titre: "Disposer les toppings",detail: "Disposer joliment les fruits frais, le granola, les graines de chia et la noix de coco sur le dessus. Déguster immédiatement !", badge: null },
+    ]
+  },
+
+  saladequinoa: {
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Une salade de quinoa fraîche et complète — protéines végétales, légumes croquants et vinaigrette citronnée.",
+    tableauQuinoa: [
+      { nb: 1, quinoa: "50 g",  tomates: "3",  feta: "25 g",  concombre: "¼",  poivron: "½", huile: "1 c.à.s",   citron: "½" },
+      { nb: 2, quinoa: "100 g", tomates: "6",  feta: "50 g",  concombre: "½",  poivron: "½", huile: "1.5 c.à.s", citron: "½" },
+      { nb: 3, quinoa: "150 g", tomates: "9",  feta: "75 g",  concombre: "½",  poivron: "1", huile: "2 c.à.s",   citron: "1" },
+      { nb: 4, quinoa: "200 g", tomates: "12", feta: "100 g", concombre: "½",  poivron: "1", huile: "3 c.à.s",   citron: "1" },
+      { nb: 5, quinoa: "250 g", tomates: "15", feta: "125 g", concombre: "1",  poivron: "1", huile: "4 c.à.s",   citron: "1" },
+      { nb: 6, quinoa: "300 g", tomates: "18", feta: "150 g", concombre: "1",  poivron: "2", huile: "4.5 c.à.s", citron: "2" },
+      { nb: 7, quinoa: "350 g", tomates: "21", feta: "175 g", concombre: "1",  poivron: "2", huile: "5 c.à.s",   citron: "2" },
+      { nb: 8, quinoa: "400 g", tomates: "24", feta: "200 g", concombre: "1",  poivron: "2", huile: "6 c.à.s",   citron: "2" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Cuire le quinoa",       detail: "Rincer le quinoa à l'eau froide. Le cuire dans 2 fois son volume d'eau salée à feu moyen jusqu'à absorption complète. Laisser reposer 5 min, puis égrainer à la fourchette.", badge: "⏱ 15 min" },
+      { icone: "❄️", titre: "Refroidir",             detail: "Laisser le quinoa refroidir complètement — il ne doit pas être chaud pour ne pas faire fondre la feta.", badge: "⏱ 10 min" },
+      { icone: "🔪", titre: "Préparer les légumes",  detail: "Couper les tomates cerises en deux, le concombre en dés, le poivron en petits morceaux. Ciseler la menthe et le persil.", badge: null },
+      { icone: "🍋", titre: "Préparer la vinaigrette",detail: "Mélanger le jus du citron avec l'huile d'olive, du sel et du poivre. Bien fouetter.", badge: null },
+      { icone: "🥗", titre: "Assembler",             detail: "Mélanger le quinoa refroidi avec les légumes. Verser la vinaigrette et mélanger. Émietter la feta par-dessus. Servir frais.", badge: null },
+    ]
+  },
+
+  yaourt: {
+    base: 8,
+    temps: "10 min + 8h repos",
+    niveau: "⭐ Facile",
+    emoji: "🥛",
+    description: "Des yaourts maison crémeux et naturels — seulement 2 ingrédients, sans yaourtière !",
+    tableauYaourt: [
+      { nb: 1, lait: "125 ml", ferment: "1 c. à soupe de yaourt" },
+      { nb: 2, lait: "250 ml", ferment: "1 c. à soupe de yaourt" },
+      { nb: 3, lait: "375 ml", ferment: "1 c. à soupe de yaourt" },
+      { nb: 4, lait: "500 ml", ferment: "1 c. à soupe de yaourt" },
+      { nb: 5, lait: "625 ml", ferment: "1 c. à soupe de yaourt" },
+      { nb: 6, lait: "750 ml", ferment: "1 c. à soupe de yaourt" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌡️", titre: "Chauffer le lait",       detail: "Faire chauffer le lait à 45 °C (tiède, pas bouillant — supporter le doigt dedans 10 secondes). Si vous utilisez du lait UHT il n'est pas nécessaire de le chauffer.", badge: null },
+      { icone: "🥣", titre: "Ajouter le ferment",     detail: "Délayer le yaourt (ou les ferments) dans un peu de lait tiède, puis mélanger avec le reste du lait. Fouetter doucement.", badge: null },
+      { icone: "🫙", titre: "Remplir les pots",       detail: "Verser dans des pots en verre propres. Ne pas remuer une fois les pots remplis.", badge: null },
+      { icone: "⏳", titre: "Laisser fermenter",      detail: "Placer les pots dans un four éteint avec la lumière allumée (ou dans une yaourtière) pour maintenir une température de 40–45 °C.", badge: "⏱ 8h minimum" },
+      { icone: "❄️", titre: "Réfrigérer",             detail: "Une fois la texture prise, placer au réfrigérateur au moins 2h avant de déguster. Se conservent 1 semaine.", badge: "⏱ 2h au frigo" },
+    ]
+  },
+
+  tarteaupommes: {
+    base: 6,
+    temps: "~1h",
+    niveau: "⭐ Facile",
+    emoji: "🍎",
+    description: "La tarte aux pommes classique — pâte brisée croustillante, compote maison et fines lamelles de pommes dorées.",
+    fixe: true,
+    ingredientsFixes: [
+      ["🥧 Pâte brisée", "1 (maison ou achetée)"],
+      ["🍎 Pommes (Golden ou Reine des Reinettes)", "6 (3 pour la compote + 3 pour le dessus)"],
+      ["🧈 Beurre", "50 g"],
+      ["🍬 Sucre", "50 g + 2 c. à soupe"],
+      ["🍋 Citron", "½ (jus)"],
+      ["💧 Eau", "50 ml"],
+      ["🌿 Cannelle (facultatif)", "1 pincée"],
+      ["🍑 Confiture d'abricot (nappage)", "3 c. à soupe"],
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer le four",         detail: "Préchauffer le four à 200 °C. Beurrer un moule à tarte.", badge: null },
+      { icone: "🥧", titre: "Foncer le moule",             detail: "Étaler la pâte brisée dans le moule. Piquer le fond avec une fourchette. Mettre au réfrigérateur le temps de préparer les pommes.", badge: "⏱ 20 min au frais" },
+      { icone: "🍎", titre: "Préparer la compote",         detail: "Éplucher et couper 3 pommes en morceaux. Les cuire à feu doux avec le beurre, 50 g de sucre, le jus de citron et l'eau jusqu'à obtenir une compote. Écraser grossièrement.", badge: "⏱ 10–15 min" },
+      { icone: "🔪", titre: "Préparer les pommes du dessus", detail: "Éplucher les 3 pommes restantes, les couper en fines lamelles régulières d'environ 3 mm. Arroser d'un peu de jus de citron pour éviter l'oxydation.", badge: null },
+      { icone: "🏗️", titre: "Monter la tarte",            detail: "Étaler la compote sur le fond de tarte. Disposer les lamelles de pommes en rosace ou en éventail par-dessus, en les faisant se chevaucher légèrement.", badge: null },
+      { icone: "🍬", titre: "Sucrer et enfourner",         detail: "Saupoudrer de 2 c. à soupe de sucre (et éventuellement de cannelle). Enfourner à 200 °C.", badge: "⏱ 30–35 min" },
+      { icone: "🍑", titre: "Nappage abricot",             detail: "Sortir la tarte du four. Faire chauffer la confiture d'abricot avec un peu d'eau et badigeonner la tarte encore chaude pour la faire briller.", badge: null },
+      { icone: "❄️", titre: "Servir",                      detail: "Laisser tiédir avant de servir. Délicieuse tiède avec une boule de glace vanille ou de la crème fraîche !", badge: null },
+    ]
+  },
+
+  tiramisu: {
+    base: 6,
+    temps: "25 min + 12h repos",
+    niveau: "⭐ Facile",
+    emoji: "☕",
+    description: "Le vrai tiramisu italien — mascarpone crémeux, café, biscuits. À préparer la veille pour un résultat parfait.",
+    fixe: true,
+    ingredientsFixes: [
+      ["🍪 Biscuits à la cuillère", "1 paquet (~24 biscuits)"],
+      ["🧀 Mascarpone", "500 g"],
+      ["🥚 Œufs (extra-frais)", "4"],
+      ["☕ Café expresso", "20 cl"],
+      ["🍬 Sucre en poudre", "100 g"],
+      ["🍫 Cacao en poudre amer", "2 c. à soupe"],
+      ["🧂 Sel", "1 pincée"],
+      ["🥃 Marsala ou amaretto (facultatif)", "2 c. à soupe"],
+    ],
+    ingredients: {
+      "Mascarpone (g)": 500,
+      "Oeufs": 4,
+      "Sucre (g)": 100,
+    },
+    etapes: [
+      { icone: "☕", titre: "Préparer le café",           detail: "Faire le café expresso et le laisser refroidir dans une assiette creuse. Ajouter le Marsala ou l'amaretto si souhaité.", badge: null },
+      { icone: "🥚", titre: "Séparer les oeufs",          detail: "Séparer les blancs des jaunes. Sortir le mascarpone du frigo 15 min avant pour le ramollir.", badge: null },
+      { icone: "🌟", titre: "Fouetter jaunes + sucre",    detail: "Fouetter vivement les jaunes avec le sucre au batteur pendant 5 min. Le mélange doit blanchir, mousser et doubler de volume.", badge: "⏱ 5 min au batteur" },
+      { icone: "🧀", titre: "Incorporer le mascarpone",   detail: "Ajouter le mascarpone en plusieurs fois en fouettant délicatement pour obtenir une crème lisse et homogène.", badge: null },
+      { icone: "🌨️", titre: "Monter les blancs en neige", detail: "Battre les blancs en neige ferme avec une pincée de sel. Les incorporer délicatement à la crème mascarpone en soulevant pour ne pas les casser.", badge: null },
+      { icone: "🍪", titre: "Tremper les biscuits",       detail: "Tremper rapidement les biscuits à la cuillère dans le café froid (aller-retour rapide, pas trop longtemps). Les disposer en couche au fond du plat.", badge: null },
+      { icone: "🏗️", titre: "Monter le tiramisu",        detail: "Verser la moitié de la crème mascarpone sur les biscuits. Ajouter une deuxième couche de biscuits imbibés, puis le reste de la crème. Lisser la surface.", badge: null },
+      { icone: "🍫", titre: "Cacao + repos",              detail: "Saupoudrer généreusement de cacao en poudre amer. Filmer et placer au réfrigérateur.", badge: "⏱ Minimum 6h — idéalement une nuit" },
+    ]
+  },
+
   flan: {
     base: 6,
     temps: "~1h + refroidissement",
@@ -396,6 +641,79 @@ function htmlTableauCookiesColonnes(l) {
     <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>`);
 }
 
+function htmlTableauSmoothieColonnes(l) {
+  return col(`
+    <tr><th>🍓 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍓 Fruits rouges surgelés</th><td>${l.fruits}</td></tr>
+    <tr><th>🍌 Banane congelée</th><td>${l.banane}</td></tr>
+    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
+    <tr><th>🥥 Lait végétal</th><td>${l.lait}</td></tr>
+    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;padding-top:12px">🎨 Toppings (selon goût)</th></tr>
+    <tr><th>🫐 Fruits frais</th><td>1 poignée / bol</td></tr>
+    <tr><th>🌾 Granola / flocons avoine</th><td>2 c.à.s / bol</td></tr>
+    <tr><th>🌱 Graines de chia</th><td>1 c.à.c / bol</td></tr>
+    <tr><th>🥥 Noix de coco râpée</th><td>1 c.à.s / bol</td></tr>`);
+}
+
+function htmlTableauYaourtColonnes(l) {
+  return col(`
+    <tr><th>🥛 Yaourts</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
+    <tr><th>🧫 Ferment (yaourt nature)</th><td>${l.ferment}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;padding-top:12px">🍯 Pour servir (optionnel)</th></tr>
+    <tr><th>🍯 Miel / confiture</th><td>selon goût</td></tr>
+    <tr><th>🍓 Fruits frais</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauPancakesColonnes(l) {
+  return col(`
+    <tr><th>🥞 Pancakes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
+    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>`);
+}
+
+function htmlTableauMuffinsColonnes(l) {
+  return col(`
+    <tr><th>🧁 Muffins</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🍫 Cacao</th><td>${l.cacao}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🧪 Levure</th><td>${l.levure}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
+    <tr><th>🫒 Huile</th><td>${l.huile}</td></tr>
+    <tr><th>🍫 Pépites chocolat</th><td>${l.pepites}</td></tr>`);
+}
+
+function htmlTableauCroquesColonnes(l) {
+  return col(`
+    <tr><th>🥪 Croques</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍞 Pain de mie</th><td>${l.pain}</td></tr>
+    <tr><th>🥩 Jambon blanc</th><td>${l.jambon}</td></tr>
+    <tr><th>🧀 Gruyère râpé</th><td>${l.gruyere}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🌾 Farine (béchamel)</th><td>${l.farine}</td></tr>
+    <tr><th>🥛 Lait (béchamel)</th><td>${l.lait}</td></tr>
+    <tr><th>🌿 Moutarde Dijon</th><td>${l.moutarde}</td></tr>`);
+}
+
+function htmlTableauQuinoaColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Quinoa</th><td>${l.quinoa}</td></tr>
+    <tr><th>🍅 Tomates cerises</th><td>${l.tomates}</td></tr>
+    <tr><th>🧀 Feta</th><td>${l.feta}</td></tr>
+    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
+    <tr><th>🫑 Poivron rouge</th><td>${l.poivron}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huile}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+
 function htmlTableauLasagneColonnes(l) {
   return col(`
     <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
@@ -433,7 +751,7 @@ function calculer() {
   if (recette === "pizza" && data.tableauPatons) {
     const ligne = data.tableauPatons.find(l => l.patons === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} pâton${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPizzaColonnes(ligne)
+      ? `<h3>Pour ${personnes} pâton${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPizzaColonnes(ligne) + htmlPrixCalories("pizza", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (0–20).</p>`;
     return;
   }
@@ -442,7 +760,7 @@ function calculer() {
   if (recette === "gaufres" && data.tableauGaufres) {
     const ligne = data.tableauGaufres.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} gaufre${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaufresColonnes(ligne)
+      ? `<h3>${personnes} gaufre${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaufresColonnes(ligne) + htmlPrixCalories("gaufres", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
     return;
   }
@@ -451,8 +769,58 @@ function calculer() {
   if (recette === "cookies" && data.tableauCookies) {
     const ligne = data.tableauCookies.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} cookie${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCookiesColonnes(ligne)
+      ? `<h3>${personnes} cookie${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCookiesColonnes(ligne) + htmlPrixCalories("cookies", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
+    return;
+  }
+
+  // Smoothie bowl
+  if (recette === "smoothiebowl" && data.tableauSmoothie) {
+    const ligne = data.tableauSmoothie.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSmoothieColonnes(ligne) + htmlPrixCalories("smoothiebowl", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
+    return;
+  }
+  // Yaourt maison
+  if (recette === "yaourt" && data.tableauYaourt) {
+    const ligne = data.tableauYaourt.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} yaourt${personnes > 1 ? "s" : ""}</h3>` + htmlTableauYaourtColonnes(ligne) + htmlPrixCalories("yaourt", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
+    return;
+  }
+
+  // Pancakes
+  if (recette === "pancakes" && data.tableauPancakes) {
+    const ligne = data.tableauPancakes.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} pancake${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPancakesColonnes(ligne) + htmlPrixCalories("pancakes", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
+    return;
+  }
+  // Muffins
+  if (recette === "muffins" && data.tableauMuffins) {
+    const ligne = data.tableauMuffins.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} muffin${personnes > 1 ? "s" : ""}</h3>` + htmlTableauMuffinsColonnes(ligne) + htmlPrixCalories("muffins", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–24).</p>`;
+    return;
+  }
+  // Croque-monsieur
+  if (recette === "croquemonsieur" && data.tableauCroques) {
+    const ligne = data.tableauCroques.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} croque${personnes > 1 ? "s" : ""}-monsieur</h3>` + htmlTableauCroquesColonnes(ligne) + htmlPrixCalories("croquemonsieur", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
+    return;
+  }
+  // Salade quinoa
+  if (recette === "saladequinoa" && data.tableauQuinoa) {
+    const ligne = data.tableauQuinoa.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauQuinoaColonnes(ligne) + htmlPrixCalories("saladequinoa", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–8).</p>`;
     return;
   }
 
@@ -460,7 +828,7 @@ function calculer() {
   if (recette === "lasagne" && data.tableauLasagne) {
     const ligne = data.tableauLasagne.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauLasagneColonnes(ligne)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauLasagneColonnes(ligne) + htmlPrixCalories("lasagne", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
     return;
   }
@@ -475,7 +843,7 @@ function calculer() {
       </button>`).join("");
     document.getElementById("resultat").innerHTML =
       `<div class="brioche-choix">${boutons}</div>` +
-      (ligne ? `<h3>${ligne.label}</h3>` + htmlTableauBriocheColonnes(ligne) : "");
+      (ligne ? `<h3>${ligne.label}</h3>` + htmlTableauBriocheColonnes(ligne) + htmlPrixCalories("brioche", personnes) : "");
     return;
   }
 
@@ -483,7 +851,7 @@ function calculer() {
   if (recette === "crepes" && data.tableauPersonnes) {
     const ligne = data.tableauPersonnes.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCrepesColonnes(ligne)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCrepesColonnes(ligne) + htmlPrixCalories("crepes", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
     return;
   }
@@ -494,7 +862,8 @@ function calculer() {
       `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
     document.getElementById("resultat").innerHTML =
       `<h3>Recette complète (~6 personnes)</h3>
-       <table class="tableau-patons tableau-colonnes"><tbody>${rows}</tbody></table>`;
+       <table class="tableau-patons tableau-colonnes"><tbody>${rows}</tbody></table>` +
+      htmlPrixCalories(recette, 6);
     return;
   }
 
@@ -517,6 +886,68 @@ function afficherFiche(recette) {
 }
 
 
+
+// ==============================
+// PRIX & CALORIES PAR RECETTE
+// Prix moyens supermarché France 2025
+// ==============================
+const prixCalories = {
+  pizza:    { base: 4,  baseLabel: "4 pâtons",    prixTotal: 0.64,  calTotal: 2346, unite: "pâton" },
+  crepes:   { base: 4,  baseLabel: "4 personnes",  prixTotal: 2.17,  calTotal: 1898, unite: "personne" },
+  gaufres:  { base: 4,  baseLabel: "4 gaufres",    prixTotal: 0.37,  calTotal: 386,  unite: "gaufre" },
+  brioche:  { base: 1,  baseLabel: "1 brioche",    prixTotal: 2.83,  calTotal: 3642, unite: "brioche" },
+  lasagne:  { base: 4,  baseLabel: "4 personnes",  prixTotal: 1.36,  calTotal: 2020, unite: "personne" },
+  cookies:  { base: 4,  baseLabel: "4 cookies",    prixTotal: 2.20,  calTotal: 2220, unite: "cookie" },
+  flan:     { base: 6,  baseLabel: "6 personnes",  prixTotal: 4.00,  calTotal: 2363, unite: "personne" },
+  clafoutis:{ base: 6,  baseLabel: "6 personnes",  prixTotal: 4.68,  calTotal: 2234, unite: "personne" },
+  tiramisu:      { base: 6, baseLabel: "6 personnes", prixTotal: 5.20, calTotal: 3200, unite: "personne" },
+  tarteaupommes:  { base: 6,  baseLabel: "6 personnes",  prixTotal: 3.50, calTotal: 1800, unite: "personne" },
+  pancakes:       { base: 4,  baseLabel: "4 personnes",  prixTotal: 1.20, calTotal: 1200, unite: "personne" },
+  muffins:        { base: 12, baseLabel: "12 muffins",   prixTotal: 2.80, calTotal: 2520, unite: "muffin" },
+  croquemonsieur: { base: 4,  baseLabel: "4 croques",    prixTotal: 4.50, calTotal: 2000, unite: "croque" },
+  smoothiebowl:   { base: 2,  baseLabel: "2 bols",       prixTotal: 3.00, calTotal: 500,  unite: "bol" },
+  saladequinoa:   { base: 4,  baseLabel: "4 personnes",  prixTotal: 5.00, calTotal: 1200, unite: "personne" },
+  yaourt:         { base: 8,  baseLabel: "8 yaourts",    prixTotal: 1.80, calTotal: 640,  unite: "yaourt" },
+};
+
+function htmlPrixCalories(nom, quantite) {
+  const pc = prixCalories[nom];
+  if (!pc) return "";
+  const data = recettes[nom];
+  let ratio = 1;
+  if (data && data.fixe) {
+    ratio = 1;
+  } else if (nom === "brioche") {
+    // 1=1 avec lait, 2=2 avec lait, 3=1 sans lait, 4=2 sans lait
+    ratio = (quantite === 2 || quantite === 4) ? 2 : 1;
+  } else {
+    ratio = quantite / pc.base;
+  }
+  const prix  = (pc.prixTotal * ratio).toFixed(2);
+  const cal   = Math.round(pc.calTotal * ratio);
+  const calPar = Math.round(pc.calTotal / pc.base);
+  return `
+    <div class="prix-cal-bloc">
+      <div class="prix-cal-item">
+        <span class="pc-icone">💰</span>
+        <div class="pc-valeur">${prix} €</div>
+        <div class="pc-label">Coût estimé</div>
+      </div>
+      <div class="prix-cal-item">
+        <span class="pc-icone">🔥</span>
+        <div class="pc-valeur">${cal} kcal</div>
+        <div class="pc-label">Total recette</div>
+      </div>
+      <div class="prix-cal-item">
+        <span class="pc-icone">👤</span>
+        <div class="pc-valeur">${calPar} kcal</div>
+        <div class="pc-label">Par ${pc.unite}</div>
+      </div>
+    </div>
+    <p class="prix-cal-note">* Prix moyens supermarché France 2025</p>
+  `;
+}
+
 // =============================
 // FICHE PLEINE PAGE
 // =============================
@@ -529,45 +960,16 @@ function choisirRecette(nom) {
   const personnes = inputPersonnes ? parseInt(inputPersonnes.value) || data.base : data.base;
   const ratio = personnes / data.base;
 
-  document.body.innerHTML = "";
-
-  const page = document.createElement("div");
-  page.className = "fiche-pleine-page";
-
-  // BOUTON RETOUR
-  const retour = document.createElement("button");
-  retour.className = "btn-retour";
-  retour.innerHTML = "← Retour";
-  retour.onclick = () => location.reload();
-
-  // EN-TÊTE
-  const header = document.createElement("div");
-  header.className = "fiche-header";
-
-  // Label pâtons ou personnes
-  const briocheVersions = { 1: "1 brioche (avec lait)", 2: "2 brioches (avec lait)", 3: "1 brioche (sans lait)", 4: "2 brioches (sans lait)" };
+  // Label quantité
+  const briocheVersions = { 1: "1 brioche 🥛", 2: "2 brioches 🥛", 3: "1 brioche 🥛🚫", 4: "2 brioches 🥛🚫" };
   const labelQte = nom === "pizza"
     ? `🍕 ${personnes} pâton${personnes > 1 ? "s" : ""}`
     : nom === "brioche"
     ? `🍞 ${briocheVersions[personnes] || personnes}`
     : `👥 ${personnes} personne${personnes > 1 ? "s" : ""}`;
 
-  header.innerHTML = `
-    <div class="fiche-emoji">${data.emoji}</div>
-    <h1 class="fiche-titre">${nom.charAt(0).toUpperCase() + nom.slice(1)}</h1>
-    <p class="fiche-desc">${data.description}</p>
-    <div class="fiche-meta">
-      <span>⏱ ${data.temps}</span>
-      <span>${data.niveau}</span>
-      <span>${labelQte}</span>
-    </div>`;
-
-  // INGRÉDIENTS
-  const secIngredients = document.createElement("div");
-  secIngredients.className = "fiche-section";
-
+  // Ingrédients
   let listeIngredients = "";
-
   if (nom === "pizza" && data.tableauPatons) {
     const ligne = data.tableauPatons.find(l => l.patons === personnes);
     if (ligne) listeIngredients = htmlTableauPizzaColonnes(ligne);
@@ -577,12 +979,30 @@ function choisirRecette(nom) {
   } else if (nom === "gaufres" && data.tableauGaufres) {
     const ligne = data.tableauGaufres.find(l => l.nb === personnes);
     if (ligne) listeIngredients = htmlTableauGaufresColonnes(ligne);
-  } else if (nom === "cookies" && data.tableauCookies) {
-    const ligne = data.tableauCookies.find(l => l.nb === personnes);
-    if (ligne) listeIngredients = htmlTableauCookiesColonnes(ligne);
+  } else if (nom === "smoothiebowl" && data.tableauSmoothie) {
+    const ligne = data.tableauSmoothie.find(l => l.nb === personnes) || data.tableauSmoothie[1];
+    listeIngredients = htmlTableauSmoothieColonnes(ligne);
+  } else if (nom === "yaourt" && data.tableauYaourt) {
+    const ligne = data.tableauYaourt.find(l => l.nb === personnes) || data.tableauYaourt[3];
+    listeIngredients = htmlTableauYaourtColonnes(ligne);
+  } else if (nom === "pancakes" && data.tableauPancakes) {
+    const ligne = data.tableauPancakes.find(l => l.nb === personnes) || data.tableauPancakes[3];
+    listeIngredients = htmlTableauPancakesColonnes(ligne);
+  } else if (nom === "muffins" && data.tableauMuffins) {
+    const ligne = data.tableauMuffins.find(l => l.nb === personnes) || data.tableauMuffins[11];
+    listeIngredients = htmlTableauMuffinsColonnes(ligne);
+  } else if (nom === "croquemonsieur" && data.tableauCroques) {
+    const ligne = data.tableauCroques.find(l => l.nb === personnes) || data.tableauCroques[3];
+    listeIngredients = htmlTableauCroquesColonnes(ligne);
+  } else if (nom === "saladequinoa" && data.tableauQuinoa) {
+    const ligne = data.tableauQuinoa.find(l => l.nb === personnes) || data.tableauQuinoa[3];
+    listeIngredients = htmlTableauQuinoaColonnes(ligne);
   } else if (nom === "lasagne" && data.tableauLasagne) {
     const ligne = data.tableauLasagne.find(l => l.nb === personnes);
     if (ligne) listeIngredients = htmlTableauLasagneColonnes(ligne);
+  } else if (nom === "cookies" && data.tableauCookies) {
+    const ligne = data.tableauCookies.find(l => l.nb === personnes);
+    if (ligne) listeIngredients = htmlTableauCookiesColonnes(ligne);
   } else if (nom === "brioche" && data.tableauBrioche) {
     const ligne = data.tableauBrioche.find(l => l.nb === personnes) || data.tableauBrioche[0];
     const boutons = data.tableauBrioche.map(l => `
@@ -602,11 +1022,7 @@ function choisirRecette(nom) {
     }
   }
 
-  secIngredients.innerHTML = `<h2 class="fiche-section-titre">🛒 Ingrédients</h2><div class="fiche-ingredients-liste">${listeIngredients}</div>`;
-
-  // ÉTAPES
-  const secEtapes = document.createElement("div");
-  secEtapes.className = "fiche-section";
+  // Étapes
   let listeEtapes = "";
   data.etapes.forEach((etape, i) => {
     listeEtapes += `
@@ -619,17 +1035,30 @@ function choisirRecette(nom) {
         </div>
       </div>`;
   });
-  secEtapes.innerHTML = `<h2 class="fiche-section-titre">📋 Étapes</h2><div class="fiche-etapes-liste">${listeEtapes}</div>`;
 
-  page.appendChild(retour);
-  page.appendChild(header);
-  page.appendChild(secIngredients);
-  page.appendChild(secEtapes);
-  document.body.appendChild(page);
-  window.scrollTo(0, 0);
+  // Afficher dans la modal
+  const nomPropre = nom.charAt(0).toUpperCase() + nom.slice(1).replace("aupommes", " aux pommes");
+  document.getElementById("modal-resultat").innerHTML = `
+    <div class="fiche-modal-header">
+      <div class="fiche-emoji">${data.emoji}</div>
+      <h2 class="fiche-titre">${nomPropre}</h2>
+      <p class="fiche-desc">${data.description}</p>
+      <div class="fiche-meta">
+        <span>⏱ ${data.temps}</span>
+        <span>${data.niveau}</span>
+        <span>${labelQte}</span>
+      </div>
+    </div>
+    ${htmlPrixCalories(nom, personnes)}
+    <div class="fiche-section">
+      <h2 class="fiche-section-titre">🛒 Ingrédients</h2>
+      <div class="fiche-ingredients-liste">${listeIngredients}</div>
+    </div>
+    <div class="fiche-section">
+      <h2 class="fiche-section-titre">📋 Étapes</h2>
+      <div class="fiche-etapes-liste">${listeEtapes}</div>
+    </div>`;
+
+  document.getElementById("modal-calc").classList.add("visible");
+  document.getElementById("modal-resultat").parentElement.scrollTop = 0;
 }
-
-
-// Init
-calculer();
-afficherFiche("pizza");
