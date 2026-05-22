@@ -2405,6 +2405,13 @@ function choisirRecette(nom) {
         ${l.label}
       </button>`).join("");
     listeIngredients = `<div class="brioche-choix">${boutons}</div>` + htmlTableauBriocheColonnes(ligne);
+  } else if (nom === "patefeuilletee" || nom === "patebrisee" || nom === "patesablee" || nom === "painbaguette") {
+    // Recettes fixes sans calcul — afficher ingredientsFixes directement
+    if (data.ingredientsFixes) {
+      let rows = data.ingredientsFixes.map(([k,v]) =>
+        `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
+      listeIngredients = `<table class="tableau-patons tableau-colonnes"><tbody>${rows}</tbody></table>`;
+    }
   } else if (data.fixe && data.ingredientsFixes) {
     let rows = data.ingredientsFixes.map(([k,v]) =>
       `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
