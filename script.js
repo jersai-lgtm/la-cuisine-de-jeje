@@ -1564,6 +1564,441 @@ const recettes = {
       { icone: "🍰", titre: "Monter le Paris-Brest",   detail: "Couper la couronne en deux. Garnir généreusement de crème pralinée avec une poche à douille cannelée. Refermer et saupoudrer de sucre glace.", badge: null },
     ]
   },
+
+  mojito: {
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🍹",
+    description: "Le mojito cubain classique — rhum blanc, menthe fraîche, citron vert, sucre de canne et eau gazeuse. Frais et incontournable.",
+    tableauMojito: [
+      { nb:  1, rhum: "5 cl",   citron: "½",  menthe: "8 feuilles",  sucre: "2 c.à.c",  eauGaz: "10 cl" },
+      { nb:  2, rhum: "10 cl",  citron: "1",  menthe: "16 feuilles", sucre: "4 c.à.c",  eauGaz: "20 cl" },
+      { nb:  3, rhum: "15 cl",  citron: "1½", menthe: "24 feuilles", sucre: "6 c.à.c",  eauGaz: "30 cl" },
+      { nb:  4, rhum: "20 cl",  citron: "2",  menthe: "32 feuilles", sucre: "8 c.à.c",  eauGaz: "40 cl" },
+      { nb:  5, rhum: "25 cl",  citron: "2½", menthe: "40 feuilles", sucre: "10 c.à.c", eauGaz: "50 cl" },
+      { nb:  6, rhum: "30 cl",  citron: "3",  menthe: "48 feuilles", sucre: "12 c.à.c", eauGaz: "60 cl" },
+      { nb:  7, rhum: "35 cl",  citron: "3½", menthe: "56 feuilles", sucre: "14 c.à.c", eauGaz: "70 cl" },
+      { nb:  8, rhum: "40 cl",  citron: "4",  menthe: "64 feuilles", sucre: "16 c.à.c", eauGaz: "80 cl" },
+      { nb:  9, rhum: "45 cl",  citron: "4½", menthe: "72 feuilles", sucre: "18 c.à.c", eauGaz: "90 cl" },
+      { nb: 10, rhum: "50 cl",  citron: "5",  menthe: "80 feuilles", sucre: "20 c.à.c", eauGaz: "1 L"   },
+      { nb: 11, rhum: "55 cl",  citron: "5½", menthe: "88 feuilles", sucre: "22 c.à.c", eauGaz: "1.1 L" },
+      { nb: 12, rhum: "60 cl",  citron: "6",  menthe: "96 feuilles", sucre: "24 c.à.c", eauGaz: "1.2 L" },
+      { nb: 13, rhum: "65 cl",  citron: "6½", menthe: "104 feuilles",sucre: "26 c.à.c", eauGaz: "1.3 L" },
+      { nb: 14, rhum: "70 cl",  citron: "7",  menthe: "112 feuilles",sucre: "28 c.à.c", eauGaz: "1.4 L" },
+      { nb: 15, rhum: "75 cl",  citron: "7½", menthe: "120 feuilles",sucre: "30 c.à.c", eauGaz: "1.5 L" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Préparer le verre",        detail: "Dans un grand verre, mettre les feuilles de menthe et le sucre de canne. Ajouter le jus du citron vert. Piler doucement (pas trop fort — juste pour libérer les arômes).", badge: null },
+      { icone: "🧊", titre: "Ajouter la glace",         detail: "Remplir le verre de glace pilée ou de glaçons.", badge: null },
+      { icone: "🍶", titre: "Verser le rhum",           detail: "Verser le rhum blanc sur la glace.", badge: null },
+      { icone: "💧", titre: "Compléter et servir",      detail: "Compléter avec l'eau gazeuse. Mélanger délicatement avec une cuillère longue. Garnir d'une branche de menthe et d'une rondelle de citron vert.", badge: null },
+    ]
+  },
+
+  margarita: {
+    base: 1,
+    temps: "3 min",
+    niveau: "⭐ Facile",
+    emoji: "🍸",
+    description: "La margarita mexicaine classique — tequila, triple sec et jus de citron vert. Servie avec le rebord givré de sel.",
+    tableauMargarita: [
+      { nb:  1, tequila: "5 cl",  tripleSec: "2 cl",  citron: "3 cl",  sel: "pour le rebord" },
+      { nb:  2, tequila: "10 cl", tripleSec: "4 cl",  citron: "6 cl",  sel: "pour le rebord" },
+      { nb:  3, tequila: "15 cl", tripleSec: "6 cl",  citron: "9 cl",  sel: "pour le rebord" },
+      { nb:  4, tequila: "20 cl", tripleSec: "8 cl",  citron: "12 cl", sel: "pour le rebord" },
+      { nb:  5, tequila: "25 cl", tripleSec: "10 cl", citron: "15 cl", sel: "pour le rebord" },
+      { nb:  6, tequila: "30 cl", tripleSec: "12 cl", citron: "18 cl", sel: "pour le rebord" },
+      { nb:  7, tequila: "35 cl", tripleSec: "14 cl", citron: "21 cl", sel: "pour le rebord" },
+      { nb:  8, tequila: "40 cl", tripleSec: "16 cl", citron: "24 cl", sel: "pour le rebord" },
+      { nb:  9, tequila: "45 cl", tripleSec: "18 cl", citron: "27 cl", sel: "pour le rebord" },
+      { nb: 10, tequila: "50 cl", tripleSec: "20 cl", citron: "30 cl", sel: "pour le rebord" },
+      { nb: 11, tequila: "55 cl", tripleSec: "22 cl", citron: "33 cl", sel: "pour le rebord" },
+      { nb: 12, tequila: "60 cl", tripleSec: "24 cl", citron: "36 cl", sel: "pour le rebord" },
+      { nb: 13, tequila: "65 cl", tripleSec: "26 cl", citron: "39 cl", sel: "pour le rebord" },
+      { nb: 14, tequila: "70 cl", tripleSec: "28 cl", citron: "42 cl", sel: "pour le rebord" },
+      { nb: 15, tequila: "75 cl", tripleSec: "30 cl", citron: "45 cl", sel: "pour le rebord" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧂", titre: "Givrer le verre",          detail: "Frotter le bord du verre avec un quartier de citron vert. Tremper dans du sel fin pour givrer.", badge: null },
+      { icone: "🍹", titre: "Shaker",                   detail: "Dans un shaker avec de la glace, verser tequila, triple sec et jus de citron vert. Shaker vigoureusement 10-15 secondes.", badge: "⏱ 15 sec" },
+      { icone: "🍸", titre: "Servir",                   detail: "Filtrer dans le verre givré. Garnir d'une rondelle de citron vert.", badge: null },
+    ]
+  },
+
+  cosmopolitan: {
+    base: 1,
+    temps: "3 min",
+    niveau: "⭐ Facile",
+    emoji: "🍸",
+    description: "Le Cosmopolitan — vodka citronnée, Cointreau, jus de cranberry et citron vert. Le cocktail glamour par excellence.",
+    tableauCosmopolitan: [
+      { nb:  1, vodka: "4 cl",  cointreau: "2 cl",  cranberry: "3 cl",  citron: "1 cl"  },
+      { nb:  2, vodka: "8 cl",  cointreau: "4 cl",  cranberry: "6 cl",  citron: "2 cl"  },
+      { nb:  3, vodka: "12 cl", cointreau: "6 cl",  cranberry: "9 cl",  citron: "3 cl"  },
+      { nb:  4, vodka: "16 cl", cointreau: "8 cl",  cranberry: "12 cl", citron: "4 cl"  },
+      { nb:  5, vodka: "20 cl", cointreau: "10 cl", cranberry: "15 cl", citron: "5 cl"  },
+      { nb:  6, vodka: "24 cl", cointreau: "12 cl", cranberry: "18 cl", citron: "6 cl"  },
+      { nb:  7, vodka: "28 cl", cointreau: "14 cl", cranberry: "21 cl", citron: "7 cl"  },
+      { nb:  8, vodka: "32 cl", cointreau: "16 cl", cranberry: "24 cl", citron: "8 cl"  },
+      { nb:  9, vodka: "36 cl", cointreau: "18 cl", cranberry: "27 cl", citron: "9 cl"  },
+      { nb: 10, vodka: "40 cl", cointreau: "20 cl", cranberry: "30 cl", citron: "10 cl" },
+      { nb: 11, vodka: "44 cl", cointreau: "22 cl", cranberry: "33 cl", citron: "11 cl" },
+      { nb: 12, vodka: "48 cl", cointreau: "24 cl", cranberry: "36 cl", citron: "12 cl" },
+      { nb: 13, vodka: "52 cl", cointreau: "26 cl", cranberry: "39 cl", citron: "13 cl" },
+      { nb: 14, vodka: "56 cl", cointreau: "28 cl", cranberry: "42 cl", citron: "14 cl" },
+      { nb: 15, vodka: "60 cl", cointreau: "30 cl", cranberry: "45 cl", citron: "15 cl" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍹", titre: "Shaker avec glace",        detail: "Mettre de la glace dans le shaker. Ajouter vodka citronnée, Cointreau, jus de cranberry et jus de citron vert.", badge: null },
+      { icone: "🥶", titre: "Shaker",                   detail: "Shaker vigoureusement une quinzaine de secondes.", badge: "⏱ 15 sec" },
+      { icone: "🍸", titre: "Filtrer et servir",        detail: "Filtrer dans un verre à cocktail refroidi. Garnir d'un zeste de citron vert.", badge: null },
+    ]
+  },
+
+  spritz: {
+    base: 1,
+    temps: "2 min",
+    niveau: "⭐ Facile",
+    emoji: "🥂",
+    description: "Le Spritz vénitien — Aperol, prosecco et eau gazeuse. L'apéritif italien par excellence, orange et pétillant.",
+    tableauSpritz: [
+      { nb:  1, aperol: "6 cl",  prosecco: "9 cl",  eauGaz: "3 cl",  orange: "½ rondelle" },
+      { nb:  2, aperol: "12 cl", prosecco: "18 cl", eauGaz: "6 cl",  orange: "1 rondelle" },
+      { nb:  3, aperol: "18 cl", prosecco: "27 cl", eauGaz: "9 cl",  orange: "1½ rondelle"},
+      { nb:  4, aperol: "24 cl", prosecco: "36 cl", eauGaz: "12 cl", orange: "2 rondelles" },
+      { nb:  5, aperol: "30 cl", prosecco: "45 cl", eauGaz: "15 cl", orange: "2½ rondelles"},
+      { nb:  6, aperol: "36 cl", prosecco: "54 cl", eauGaz: "18 cl", orange: "3 rondelles" },
+      { nb:  7, aperol: "42 cl", prosecco: "63 cl", eauGaz: "21 cl", orange: "3½ rondelles"},
+      { nb:  8, aperol: "48 cl", prosecco: "72 cl", eauGaz: "24 cl", orange: "4 rondelles" },
+      { nb:  9, aperol: "54 cl", prosecco: "81 cl", eauGaz: "27 cl", orange: "4½ rondelles"},
+      { nb: 10, aperol: "60 cl", prosecco: "90 cl", eauGaz: "30 cl", orange: "5 rondelles" },
+      { nb: 11, aperol: "66 cl", prosecco: "99 cl", eauGaz: "33 cl", orange: "5½ rondelles"},
+      { nb: 12, aperol: "72 cl", prosecco: "108 cl",eauGaz: "36 cl", orange: "6 rondelles" },
+      { nb: 13, aperol: "78 cl", prosecco: "117 cl",eauGaz: "39 cl", orange: "6½ rondelles"},
+      { nb: 14, aperol: "84 cl", prosecco: "126 cl",eauGaz: "42 cl", orange: "7 rondelles" },
+      { nb: 15, aperol: "90 cl", prosecco: "135 cl",eauGaz: "45 cl", orange: "7½ rondelles"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Préparer le verre",        detail: "Remplir un grand verre à vin de glaçons.", badge: null },
+      { icone: "🥂", titre: "Verser dans l'ordre",     detail: "Verser d'abord le prosecco, puis l'Aperol, puis l'eau gazeuse. Cet ordre préserve les bulles.", badge: null },
+      { icone: "🍊", titre: "Garnir et servir",         detail: "Garnir d'une rondelle d'orange et d'une olive verte. Mélanger très délicatement.", badge: null },
+    ]
+  },
+
+  sangria: {
+    base: 6,
+    temps: "15 min + 2h repos",
+    niveau: "⭐ Facile",
+    emoji: "🍷",
+    description: "La sangria espagnole — vin rouge fruité, brandy, jus d'orange et fruits frais. Parfaite pour les grandes tablées.",
+    tableauSangria: [
+      { nb:  1, vin: "125 ml", brandy: "1 cl",   orangeJus: "3 cl",  sucre: "1 c.à.c", orange: "¼",  citron: "¼",  peche: "¼" },
+      { nb:  2, vin: "250 ml", brandy: "2 cl",   orangeJus: "6 cl",  sucre: "2 c.à.c", orange: "½",  citron: "½",  peche: "½" },
+      { nb:  3, vin: "375 ml", brandy: "3 cl",   orangeJus: "9 cl",  sucre: "3 c.à.c", orange: "¾",  citron: "¾",  peche: "¾" },
+      { nb:  4, vin: "500 ml", brandy: "4 cl",   orangeJus: "12 cl", sucre: "4 c.à.c", orange: "1",  citron: "1",  peche: "1" },
+      { nb:  5, vin: "625 ml", brandy: "5 cl",   orangeJus: "15 cl", sucre: "5 c.à.c", orange: "1",  citron: "1",  peche: "1" },
+      { nb:  6, vin: "750 ml", brandy: "6 cl",   orangeJus: "18 cl", sucre: "6 c.à.c", orange: "1",  citron: "1",  peche: "2" },
+      { nb:  7, vin: "875 ml", brandy: "7 cl",   orangeJus: "21 cl", sucre: "7 c.à.c", orange: "1½", citron: "1",  peche: "2" },
+      { nb:  8, vin: "1 L",    brandy: "8 cl",   orangeJus: "24 cl", sucre: "8 c.à.c", orange: "1½", citron: "1½", peche: "2" },
+      { nb:  9, vin: "1.1 L",  brandy: "9 cl",   orangeJus: "27 cl", sucre: "9 c.à.c", orange: "2",  citron: "1½", peche: "3" },
+      { nb: 10, vin: "1.25 L", brandy: "10 cl",  orangeJus: "30 cl", sucre: "10 c.à.c",orange: "2",  citron: "2",  peche: "3" },
+      { nb: 11, vin: "1.4 L",  brandy: "11 cl",  orangeJus: "33 cl", sucre: "11 c.à.c",orange: "2",  citron: "2",  peche: "3" },
+      { nb: 12, vin: "1.5 L",  brandy: "12 cl",  orangeJus: "36 cl", sucre: "12 c.à.c",orange: "2",  citron: "2",  peche: "4" },
+      { nb: 13, vin: "1.6 L",  brandy: "13 cl",  orangeJus: "39 cl", sucre: "13 c.à.c",orange: "2½", citron: "2",  peche: "4" },
+      { nb: 14, vin: "1.75 L", brandy: "14 cl",  orangeJus: "42 cl", sucre: "14 c.à.c",orange: "2½", citron: "2½", peche: "4" },
+      { nb: 15, vin: "1.9 L",  brandy: "15 cl",  orangeJus: "45 cl", sucre: "15 c.à.c",orange: "3",  citron: "2½", peche: "5" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍊", titre: "Préparer les fruits",      detail: "Couper orange, citron et pêche en tranches ou en dés.", badge: null },
+      { icone: "🍷", titre: "Mélanger",                 detail: "Dans un grand pichet, verser le vin rouge, le brandy, le jus d'orange et le sucre. Bien mélanger pour dissoudre le sucre.", badge: null },
+      { icone: "🍑", titre: "Ajouter les fruits",       detail: "Ajouter les fruits coupés. Mélanger.", badge: null },
+      { icone: "❄️", titre: "Repos au frigo",           detail: "Réfrigérer au moins 2h pour que les saveurs se mélangent. Servir avec des glaçons et compléter avec du jus d'orange si trop fort.", badge: "⏱ 2h minimum" },
+    ]
+  },
+
+  pinacolada: {
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥥",
+    description: "La Piña Colada portoricaine — rhum blanc, crème de coco et ananas. Le cocktail tropical par excellence.",
+    tableauPinaColada: [
+      { nb:  1, rhum: "5 cl",  cremeCoco: "3 cl",  ananas: "12 cl", glace: "1 poignée" },
+      { nb:  2, rhum: "10 cl", cremeCoco: "6 cl",  ananas: "24 cl", glace: "2 poignées"},
+      { nb:  3, rhum: "15 cl", cremeCoco: "9 cl",  ananas: "36 cl", glace: "3 poignées"},
+      { nb:  4, rhum: "20 cl", cremeCoco: "12 cl", ananas: "48 cl", glace: "4 poignées"},
+      { nb:  5, rhum: "25 cl", cremeCoco: "15 cl", ananas: "60 cl", glace: "5 poignées"},
+      { nb:  6, rhum: "30 cl", cremeCoco: "18 cl", ananas: "72 cl", glace: "6 poignées"},
+      { nb:  7, rhum: "35 cl", cremeCoco: "21 cl", ananas: "84 cl", glace: "7 poignées"},
+      { nb:  8, rhum: "40 cl", cremeCoco: "24 cl", ananas: "96 cl", glace: "8 poignées"},
+      { nb:  9, rhum: "45 cl", cremeCoco: "27 cl", ananas: "108 cl",glace: "9 poignées"},
+      { nb: 10, rhum: "50 cl", cremeCoco: "30 cl", ananas: "120 cl",glace: "10 poignées"},
+      { nb: 11, rhum: "55 cl", cremeCoco: "33 cl", ananas: "132 cl",glace: "11 poignées"},
+      { nb: 12, rhum: "60 cl", cremeCoco: "36 cl", ananas: "144 cl",glace: "12 poignées"},
+      { nb: 13, rhum: "65 cl", cremeCoco: "39 cl", ananas: "156 cl",glace: "13 poignées"},
+      { nb: 14, rhum: "70 cl", cremeCoco: "42 cl", ananas: "168 cl",glace: "14 poignées"},
+      { nb: 15, rhum: "75 cl", cremeCoco: "45 cl", ananas: "180 cl",glace: "15 poignées"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌀", titre: "Mixer",                    detail: "Mettre tous les ingrédients dans un blender avec la glace pilée. Mixer jusqu'à obtenir une texture lisse et crémeuse.", badge: "⏱ 30 sec blender" },
+      { icone: "🥥", titre: "Servir",                   detail: "Verser dans un grand verre. Garnir d'une tranche d'ananas et d'une cerise. Servir avec une paille.", badge: null },
+    ]
+  },
+
+  daiquiri: {
+    base: 1,
+    temps: "3 min",
+    niveau: "⭐ Facile",
+    emoji: "🍸",
+    description: "Le Daiquiri cubain — rhum blanc, jus de citron vert et sucre de canne. Simple, élégant et parfaitement équilibré.",
+    tableauDaiquiri: [
+      { nb:  1, rhum: "5 cl",  citron: "2.5 cl", sucre: "1.5 cl" },
+      { nb:  2, rhum: "10 cl", citron: "5 cl",   sucre: "3 cl"   },
+      { nb:  3, rhum: "15 cl", citron: "7.5 cl", sucre: "4.5 cl" },
+      { nb:  4, rhum: "20 cl", citron: "10 cl",  sucre: "6 cl"   },
+      { nb:  5, rhum: "25 cl", citron: "12.5 cl",sucre: "7.5 cl" },
+      { nb:  6, rhum: "30 cl", citron: "15 cl",  sucre: "9 cl"   },
+      { nb:  7, rhum: "35 cl", citron: "17.5 cl",sucre: "10.5 cl"},
+      { nb:  8, rhum: "40 cl", citron: "20 cl",  sucre: "12 cl"  },
+      { nb:  9, rhum: "45 cl", citron: "22.5 cl",sucre: "13.5 cl"},
+      { nb: 10, rhum: "50 cl", citron: "25 cl",  sucre: "15 cl"  },
+      { nb: 11, rhum: "55 cl", citron: "27.5 cl",sucre: "16.5 cl"},
+      { nb: 12, rhum: "60 cl", citron: "30 cl",  sucre: "18 cl"  },
+      { nb: 13, rhum: "65 cl", citron: "32.5 cl",sucre: "19.5 cl"},
+      { nb: 14, rhum: "70 cl", citron: "35 cl",  sucre: "21 cl"  },
+      { nb: 15, rhum: "75 cl", citron: "37.5 cl",sucre: "22.5 cl"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍹", titre: "Shaker avec glace",        detail: "Mettre de la glace dans le shaker. Ajouter rhum blanc, jus de citron vert fraîchement pressé et sirop de sucre de canne.", badge: null },
+      { icone: "🥶", titre: "Shaker vigoureusement",    detail: "Shaker fort pendant 15 secondes pour bien refroidir et diluer légèrement.", badge: "⏱ 15 sec" },
+      { icone: "🍸", titre: "Filtrer et servir",        detail: "Filtrer dans un verre à cocktail refroidi. Garnir d'un zeste de citron vert.", badge: null },
+    ]
+  },
+
+  whiskysour: {
+    base: 1,
+    temps: "3 min",
+    niveau: "⭐ Facile",
+    emoji: "🥃",
+    description: "Le Whisky Sour — bourbon, jus de citron, sirop de sucre et blanc d'œuf pour la mousse. Un classique américain.",
+    tableauWhiskySour: [
+      { nb:  1, bourbon: "5 cl",  citron: "2.5 cl", sirop: "2 cl",  blanc: "1"  },
+      { nb:  2, bourbon: "10 cl", citron: "5 cl",   sirop: "4 cl",  blanc: "1"  },
+      { nb:  3, bourbon: "15 cl", citron: "7.5 cl", sirop: "6 cl",  blanc: "2"  },
+      { nb:  4, bourbon: "20 cl", citron: "10 cl",  sirop: "8 cl",  blanc: "2"  },
+      { nb:  5, bourbon: "25 cl", citron: "12.5 cl",sirop: "10 cl", blanc: "3"  },
+      { nb:  6, bourbon: "30 cl", citron: "15 cl",  sirop: "12 cl", blanc: "3"  },
+      { nb:  7, bourbon: "35 cl", citron: "17.5 cl",sirop: "14 cl", blanc: "4"  },
+      { nb:  8, bourbon: "40 cl", citron: "20 cl",  sirop: "16 cl", blanc: "4"  },
+      { nb:  9, bourbon: "45 cl", citron: "22.5 cl",sirop: "18 cl", blanc: "5"  },
+      { nb: 10, bourbon: "50 cl", citron: "25 cl",  sirop: "20 cl", blanc: "5"  },
+      { nb: 11, bourbon: "55 cl", citron: "27.5 cl",sirop: "22 cl", blanc: "6"  },
+      { nb: 12, bourbon: "60 cl", citron: "30 cl",  sirop: "24 cl", blanc: "6"  },
+      { nb: 13, bourbon: "65 cl", citron: "32.5 cl",sirop: "26 cl", blanc: "7"  },
+      { nb: 14, bourbon: "70 cl", citron: "35 cl",  sirop: "28 cl", blanc: "7"  },
+      { nb: 15, bourbon: "75 cl", citron: "37.5 cl",sirop: "30 cl", blanc: "8"  },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Dry shake",                detail: "Mettre tous les ingrédients dans le shaker SANS glace. Shaker fort 10 sec pour émulsionner le blanc d'œuf.", badge: "⏱ 10 sec sans glace" },
+      { icone: "🧊", titre: "Wet shake",                detail: "Ajouter de la glace et shaker à nouveau vigoureusement.", badge: "⏱ 15 sec avec glace" },
+      { icone: "🥃", titre: "Servir",                   detail: "Filtrer dans un verre avec glaçons. Garnir d'une cerise et d'une rondelle de citron. La mousse de blanc d'œuf doit être belle et onctueuse.", badge: null },
+    ]
+  },
+
+  virginmojito: {
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥤",
+    description: "Le Virgin Mojito — menthe fraîche, citron vert, sucre de canne et eau gazeuse. Toute la fraîcheur du mojito, sans alcool !",
+    tableauVirginMojito: [
+      { nb:  1, citron: "1",   menthe: "10 feuilles", sucre: "2 c.à.c",  eauGaz: "15 cl", sirop: "1 cl"  },
+      { nb:  2, citron: "2",   menthe: "20 feuilles", sucre: "4 c.à.c",  eauGaz: "30 cl", sirop: "2 cl"  },
+      { nb:  3, citron: "3",   menthe: "30 feuilles", sucre: "6 c.à.c",  eauGaz: "45 cl", sirop: "3 cl"  },
+      { nb:  4, citron: "4",   menthe: "40 feuilles", sucre: "8 c.à.c",  eauGaz: "60 cl", sirop: "4 cl"  },
+      { nb:  5, citron: "5",   menthe: "50 feuilles", sucre: "10 c.à.c", eauGaz: "75 cl", sirop: "5 cl"  },
+      { nb:  6, citron: "6",   menthe: "60 feuilles", sucre: "12 c.à.c", eauGaz: "90 cl", sirop: "6 cl"  },
+      { nb:  7, citron: "7",   menthe: "70 feuilles", sucre: "14 c.à.c", eauGaz: "1 L",   sirop: "7 cl"  },
+      { nb:  8, citron: "8",   menthe: "80 feuilles", sucre: "16 c.à.c", eauGaz: "1.2 L", sirop: "8 cl"  },
+      { nb:  9, citron: "9",   menthe: "90 feuilles", sucre: "18 c.à.c", eauGaz: "1.35 L",sirop: "9 cl"  },
+      { nb: 10, citron: "10",  menthe: "100 feuilles",sucre: "20 c.à.c", eauGaz: "1.5 L", sirop: "10 cl" },
+      { nb: 11, citron: "11",  menthe: "110 feuilles",sucre: "22 c.à.c", eauGaz: "1.65 L",sirop: "11 cl" },
+      { nb: 12, citron: "12",  menthe: "120 feuilles",sucre: "24 c.à.c", eauGaz: "1.8 L", sirop: "12 cl" },
+      { nb: 13, citron: "13",  menthe: "130 feuilles",sucre: "26 c.à.c", eauGaz: "1.95 L",sirop: "13 cl" },
+      { nb: 14, citron: "14",  menthe: "140 feuilles",sucre: "28 c.à.c", eauGaz: "2.1 L", sirop: "14 cl" },
+      { nb: 15, citron: "15",  menthe: "150 feuilles",sucre: "30 c.à.c", eauGaz: "2.25 L",sirop: "15 cl" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Piler menthe + citron",    detail: "Dans un verre, mettre les feuilles de menthe et le sucre. Presser le citron vert par-dessus. Piler doucement.", badge: null },
+      { icone: "🧊", titre: "Glace",                    detail: "Remplir de glace pilée.", badge: null },
+      { icone: "💧", titre: "Compléter",                detail: "Ajouter le sirop de menthe et l'eau gazeuse. Mélanger délicatement. Garnir de menthe fraîche.", badge: null },
+    ]
+  },
+
+  limonademaison: {
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍋",
+    description: "La limonade maison fraîche et naturelle — citrons pressés, sucre de canne et eau gazeuse. Bien meilleure que celle du commerce !",
+    tableauLimonade: [
+      { nb:  1, citrons: "1",   sucre: "2 c.à.s",  eauGaz: "20 cl", menthe: "3 feuilles"  },
+      { nb:  2, citrons: "1",   sucre: "3 c.à.s",  eauGaz: "40 cl", menthe: "6 feuilles"  },
+      { nb:  3, citrons: "2",   sucre: "5 c.à.s",  eauGaz: "60 cl", menthe: "9 feuilles"  },
+      { nb:  4, citrons: "3",   sucre: "6 c.à.s",  eauGaz: "80 cl", menthe: "12 feuilles" },
+      { nb:  5, citrons: "3",   sucre: "8 c.à.s",  eauGaz: "100 cl",menthe: "15 feuilles" },
+      { nb:  6, citrons: "4",   sucre: "9 c.à.s",  eauGaz: "120 cl",menthe: "18 feuilles" },
+      { nb:  7, citrons: "5",   sucre: "11 c.à.s", eauGaz: "140 cl",menthe: "21 feuilles" },
+      { nb:  8, citrons: "5",   sucre: "12 c.à.s", eauGaz: "160 cl",menthe: "24 feuilles" },
+      { nb:  9, citrons: "6",   sucre: "14 c.à.s", eauGaz: "180 cl",menthe: "27 feuilles" },
+      { nb: 10, citrons: "7",   sucre: "15 c.à.s", eauGaz: "200 cl",menthe: "30 feuilles" },
+      { nb: 11, citrons: "7",   sucre: "17 c.à.s", eauGaz: "220 cl",menthe: "33 feuilles" },
+      { nb: 12, citrons: "8",   sucre: "18 c.à.s", eauGaz: "240 cl",menthe: "36 feuilles" },
+      { nb: 13, citrons: "9",   sucre: "20 c.à.s", eauGaz: "260 cl",menthe: "39 feuilles" },
+      { nb: 14, citrons: "9",   sucre: "21 c.à.s", eauGaz: "280 cl",menthe: "42 feuilles" },
+      { nb: 15, citrons: "10",  sucre: "23 c.à.s", eauGaz: "300 cl",menthe: "45 feuilles" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Préparer le sirop",        detail: "Faire chauffer 100ml d'eau avec le sucre jusqu'à dissolution complète. Laisser refroidir.", badge: null },
+      { icone: "🍋", titre: "Presser les citrons",      detail: "Presser les citrons. Filtrer le jus.", badge: null },
+      { icone: "🥤", titre: "Assembler",                detail: "Mélanger jus de citron et sirop refroidi. Ajouter l'eau gazeuse froide. Mélanger délicatement.", badge: null },
+      { icone: "🌿", titre: "Servir",                   detail: "Servir dans des grands verres avec glaçons, rondelles de citron et feuilles de menthe.", badge: null },
+    ]
+  },
+
+  smoothiemangopassion: {
+    base: 2,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥭",
+    description: "Smoothie mangue passion tropical — onctueux, vitaminé et sans alcool. Un vrai voyage sous les tropiques !",
+    tableauSmoothieMango: [
+      { nb:  1, mangue: "100 g", passion: "1",   banane: "½",  lait: "80 ml",  miel: "1 c.à.c" },
+      { nb:  2, mangue: "200 g", passion: "2",   banane: "1",  lait: "160 ml", miel: "2 c.à.c" },
+      { nb:  3, mangue: "300 g", passion: "3",   banane: "1½", lait: "240 ml", miel: "3 c.à.c" },
+      { nb:  4, mangue: "400 g", passion: "4",   banane: "2",  lait: "320 ml", miel: "4 c.à.c" },
+      { nb:  5, mangue: "500 g", passion: "5",   banane: "2½", lait: "400 ml", miel: "5 c.à.c" },
+      { nb:  6, mangue: "600 g", passion: "6",   banane: "3",  lait: "480 ml", miel: "6 c.à.c" },
+      { nb:  7, mangue: "700 g", passion: "7",   banane: "3½", lait: "560 ml", miel: "7 c.à.c" },
+      { nb:  8, mangue: "800 g", passion: "8",   banane: "4",  lait: "640 ml", miel: "8 c.à.c" },
+      { nb:  9, mangue: "900 g", passion: "9",   banane: "4½", lait: "720 ml", miel: "9 c.à.c" },
+      { nb: 10, mangue: "1 kg",  passion: "10",  banane: "5",  lait: "800 ml", miel: "10 c.à.c"},
+      { nb: 11, mangue: "1.1 kg",passion: "11",  banane: "5½", lait: "880 ml", miel: "11 c.à.c"},
+      { nb: 12, mangue: "1.2 kg",passion: "12",  banane: "6",  lait: "960 ml", miel: "12 c.à.c"},
+      { nb: 13, mangue: "1.3 kg",passion: "13",  banane: "6½", lait: "1040 ml",miel: "13 c.à.c"},
+      { nb: 14, mangue: "1.4 kg",passion: "14",  banane: "7",  lait: "1120 ml",miel: "14 c.à.c"},
+      { nb: 15, mangue: "1.5 kg",passion: "15",  banane: "7½", lait: "1200 ml",miel: "15 c.à.c"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥭", titre: "Préparer les fruits",      detail: "Éplucher et couper la mangue en morceaux. Couper les fruits de la passion en deux et récupérer la pulpe. Éplucher la banane.", badge: null },
+      { icone: "🌀", titre: "Mixer",                    detail: "Mettre tous les ingrédients dans le blender avec quelques glaçons. Mixer jusqu'à texture lisse.", badge: "⏱ 30 sec" },
+      { icone: "🥤", titre: "Servir",                   detail: "Verser dans des grands verres. Décorer d'une tranche de mangue et d'une paille. Déguster immédiatement !", badge: null },
+    ]
+  },
+
+  citronadementhe: {
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "La citronnade à la menthe maison — fraîche, parfumée et naturelle. La boisson estivale incontournable sans alcool.",
+    tableauCitronade: [
+      { nb:  1, citrons: "1",  menthe: "5 feuilles",  sucre: "2 c.à.s", eau: "20 cl" },
+      { nb:  2, citrons: "1",  menthe: "8 feuilles",  sucre: "3 c.à.s", eau: "40 cl" },
+      { nb:  3, citrons: "2",  menthe: "10 feuilles", sucre: "5 c.à.s", eau: "60 cl" },
+      { nb:  4, citrons: "2",  menthe: "15 feuilles", sucre: "6 c.à.s", eau: "80 cl" },
+      { nb:  5, citrons: "3",  menthe: "18 feuilles", sucre: "8 c.à.s", eau: "100 cl"},
+      { nb:  6, citrons: "3",  menthe: "20 feuilles", sucre: "9 c.à.s", eau: "120 cl"},
+      { nb:  7, citrons: "4",  menthe: "25 feuilles", sucre: "11 c.à.s",eau: "140 cl"},
+      { nb:  8, citrons: "4",  menthe: "28 feuilles", sucre: "12 c.à.s",eau: "160 cl"},
+      { nb:  9, citrons: "5",  menthe: "30 feuilles", sucre: "14 c.à.s",eau: "180 cl"},
+      { nb: 10, citrons: "5",  menthe: "35 feuilles", sucre: "15 c.à.s",eau: "200 cl"},
+      { nb: 11, citrons: "6",  menthe: "38 feuilles", sucre: "17 c.à.s",eau: "220 cl"},
+      { nb: 12, citrons: "6",  menthe: "40 feuilles", sucre: "18 c.à.s",eau: "240 cl"},
+      { nb: 13, citrons: "7",  menthe: "45 feuilles", sucre: "20 c.à.s",eau: "260 cl"},
+      { nb: 14, citrons: "7",  menthe: "48 feuilles", sucre: "21 c.à.s",eau: "280 cl"},
+      { nb: 15, citrons: "8",  menthe: "50 feuilles", sucre: "23 c.à.s",eau: "300 cl"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Sirop menthe",             detail: "Chauffer 100ml d'eau avec le sucre et la menthe. Laisser infuser 10 min hors du feu. Filtrer et refroidir.", badge: "⏱ 10 min infusion" },
+      { icone: "🍋", titre: "Presser les citrons",      detail: "Presser les citrons et filtrer le jus.", badge: null },
+      { icone: "🥤", titre: "Assembler et servir",      detail: "Mélanger jus de citron, sirop à la menthe et eau fraîche. Servir avec glaçons et feuilles de menthe fraîches.", badge: null },
+    ]
+  },
+
+  jusPastequeMenuthe: {
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍉",
+    description: "Jus de pastèque à la menthe — ultra rafraîchissant, naturellement sucré et plein de vitamines. Le mocktail de l'été !",
+    tableauJusPasteque: [
+      { nb:  1, pasteque: "250 g", menthe: "3 feuilles", citron: "¼",  gingembre: "½ cm" },
+      { nb:  2, pasteque: "500 g", menthe: "5 feuilles", citron: "½",  gingembre: "1 cm" },
+      { nb:  3, pasteque: "750 g", menthe: "8 feuilles", citron: "¾",  gingembre: "1 cm" },
+      { nb:  4, pasteque: "1 kg",  menthe: "10 feuilles",citron: "1",  gingembre: "2 cm" },
+      { nb:  5, pasteque: "1.25 kg",menthe: "12 feuilles",citron: "1", gingembre: "2 cm" },
+      { nb:  6, pasteque: "1.5 kg", menthe: "15 feuilles",citron: "1½",gingembre: "2 cm" },
+      { nb:  7, pasteque: "1.75 kg",menthe: "18 feuilles",citron: "1½",gingembre: "3 cm" },
+      { nb:  8, pasteque: "2 kg",   menthe: "20 feuilles",citron: "2", gingembre: "3 cm" },
+      { nb:  9, pasteque: "2.25 kg",menthe: "22 feuilles",citron: "2", gingembre: "3 cm" },
+      { nb: 10, pasteque: "2.5 kg", menthe: "25 feuilles",citron: "2½",gingembre: "4 cm" },
+      { nb: 11, pasteque: "2.75 kg",menthe: "28 feuilles",citron: "2½",gingembre: "4 cm" },
+      { nb: 12, pasteque: "3 kg",   menthe: "30 feuilles",citron: "3", gingembre: "4 cm" },
+      { nb: 13, pasteque: "3.25 kg",menthe: "32 feuilles",citron: "3", gingembre: "5 cm" },
+      { nb: 14, pasteque: "3.5 kg", menthe: "35 feuilles",citron: "3½",gingembre: "5 cm" },
+      { nb: 15, pasteque: "3.75 kg",menthe: "38 feuilles",citron: "3½",gingembre: "5 cm" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍉", titre: "Préparer la pastèque",     detail: "Couper la pastèque en morceaux, retirer les pépins et enlever la peau.", badge: null },
+      { icone: "🌀", titre: "Mixer",                    detail: "Mixer la pastèque avec la menthe, le jus de citron et le gingembre râpé jusqu'à texture lisse.", badge: "⏱ 30 sec" },
+      { icone: "🥤", titre: "Filtrer et servir",        detail: "Filtrer si souhaité. Servir très frais avec glaçons et feuilles de menthe. Ne pas sucrer — la pastèque est naturellement sucrée !", badge: null },
+    ]
+  },
+
+  virginpinacolada: {
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥥",
+    description: "Virgin Piña Colada — lait de coco, jus d'ananas et glace pilée. Toute la magie tropicale, sans alcool !",
+    tableauVirginPina: [
+      { nb:  1, cremeCoco: "6 cl",  ananas: "12 cl", laitCoco: "4 cl",  glace: "1 poignée" },
+      { nb:  2, cremeCoco: "12 cl", ananas: "24 cl", laitCoco: "8 cl",  glace: "2 poignées"},
+      { nb:  3, cremeCoco: "18 cl", ananas: "36 cl", laitCoco: "12 cl", glace: "3 poignées"},
+      { nb:  4, cremeCoco: "24 cl", ananas: "48 cl", laitCoco: "16 cl", glace: "4 poignées"},
+      { nb:  5, cremeCoco: "30 cl", ananas: "60 cl", laitCoco: "20 cl", glace: "5 poignées"},
+      { nb:  6, cremeCoco: "36 cl", ananas: "72 cl", laitCoco: "24 cl", glace: "6 poignées"},
+      { nb:  7, cremeCoco: "42 cl", ananas: "84 cl", laitCoco: "28 cl", glace: "7 poignées"},
+      { nb:  8, cremeCoco: "48 cl", ananas: "96 cl", laitCoco: "32 cl", glace: "8 poignées"},
+      { nb:  9, cremeCoco: "54 cl", ananas: "108 cl",laitCoco: "36 cl", glace: "9 poignées"},
+      { nb: 10, cremeCoco: "60 cl", ananas: "120 cl",laitCoco: "40 cl", glace: "10 poignées"},
+      { nb: 11, cremeCoco: "66 cl", ananas: "132 cl",laitCoco: "44 cl", glace: "11 poignées"},
+      { nb: 12, cremeCoco: "72 cl", ananas: "144 cl",laitCoco: "48 cl", glace: "12 poignées"},
+      { nb: 13, cremeCoco: "78 cl", ananas: "156 cl",laitCoco: "52 cl", glace: "13 poignées"},
+      { nb: 14, cremeCoco: "84 cl", ananas: "168 cl",laitCoco: "56 cl", glace: "14 poignées"},
+      { nb: 15, cremeCoco: "90 cl", ananas: "180 cl",laitCoco: "60 cl", glace: "15 poignées"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌀", titre: "Mixer",                    detail: "Mettre tous les ingrédients dans le blender avec la glace pilée. Mixer jusqu'à texture crémeuse et onctueuse.", badge: "⏱ 30 sec" },
+      { icone: "🥥", titre: "Servir",                   detail: "Verser dans un grand verre. Décorer d'une tranche d'ananas, de noix de coco râpée et d'une paille. Servir immédiatement !", badge: null },
+    ]
+  },
   boeufbourguignon: {
     base: 6,
     temps: "3h30 + marinade",
@@ -3118,6 +3553,7 @@ function htmlTableauTartePommesColonnes(l) {
 // ==============================
 let mondeClassiquesTablesGlobal = null;
 let hellofreshTablesGlobal = null;
+let cocktailsTablesGlobal = null;
 
 function initTablesGlobales() {
   mondeClassiquesTablesGlobal = {
@@ -3145,6 +3581,150 @@ function initTablesGlobales() {
     "risottoprimavera":  { table: "tableauRisottoPrimavera",   fn: htmlTableauRisottoPrimaveraColonnes,label: "personne" },
     "shakshuka":         { table: "tableauShakshuka",          fn: htmlTableauShakshukaColonnes,       label: "personne" },
   };
+  cocktailsTablesGlobal = {
+    "mojito":             { table: "tableauMojito",       fn: htmlTableauMojitoColonnes,       label: "verre" },
+    "margarita":          { table: "tableauMargarita",     fn: htmlTableauMargaritaColonnes,    label: "verre" },
+    "cosmopolitan":       { table: "tableauCosmopolitan",  fn: htmlTableauCosmopolitanColonnes, label: "verre" },
+    "spritz":             { table: "tableauSpritz",        fn: htmlTableauSpritzColonnes,       label: "verre" },
+    "sangria":            { table: "tableauSangria",       fn: htmlTableauSangriaColonnes,      label: "verre" },
+    "pinacolada":         { table: "tableauPinaColada",    fn: htmlTableauPinaColadaColonnes,   label: "verre" },
+    "daiquiri":           { table: "tableauDaiquiri",      fn: htmlTableauDaiquiriColonnes,     label: "verre" },
+    "whiskysour":         { table: "tableauWhiskySour",    fn: htmlTableauWhiskySourColonnes,   label: "verre" },
+    "virginmojito":       { table: "tableauVirginMojito",  fn: htmlTableauVirginMojitoColonnes, label: "verre" },
+    "limonademaison":     { table: "tableauLimonade",      fn: htmlTableauLimonadeColonnes,     label: "verre" },
+    "smoothiemangopassion":{ table: "tableauSmoothieMango",fn: htmlTableauSmoothieMangoColonnes,label: "verre" },
+    "citronadementhe":    { table: "tableauCitronade",     fn: htmlTableauCitronadeColonnes,    label: "verre" },
+    "jusPastequeMenuthe": { table: "tableauJusPasteque",   fn: htmlTableauJusPastequeColonnes,  label: "verre" },
+    "virginpinacolada":   { table: "tableauVirginPina",    fn: htmlTableauVirginPinaColonnes,   label: "verre" },
+  };
+}
+
+function htmlTableauMojitoColonnes(l) {
+  return col(`
+    <tr><th>🍹 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍬 Sucre de canne</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauMargaritaColonnes(l) {
+  return col(`
+    <tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥃 Tequila</th><td>${l.tequila}</td></tr>
+    <tr><th>🍊 Triple sec</th><td>${l.tripleSec}</td></tr>
+    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🧂 Sel (rebord)</th><td>${l.sel}</td></tr>
+    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauCosmopolitanColonnes(l) {
+  return col(`
+    <tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Vodka citronnée</th><td>${l.vodka}</td></tr>
+    <tr><th>🍊 Cointreau</th><td>${l.cointreau}</td></tr>
+    <tr><th>🍒 Jus de cranberry</th><td>${l.cranberry}</td></tr>
+    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauSpritzColonnes(l) {
+  return col(`
+    <tr><th>🥂 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍊 Aperol</th><td>${l.aperol}</td></tr>
+    <tr><th>🍾 Prosecco</th><td>${l.prosecco}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🍊 Orange (déco)</th><td>${l.orange}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauSangriaColonnes(l) {
+  return col(`
+    <tr><th>🍷 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍷 Vin rouge</th><td>${l.vin}</td></tr>
+    <tr><th>🥃 Brandy / Cognac</th><td>${l.brandy}</td></tr>
+    <tr><th>🍊 Jus d'orange</th><td>${l.orangeJus}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🍊 Orange</th><td>${l.orange}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🍑 Pêche</th><td>${l.peche}</td></tr>`);
+}
+function htmlTableauPinaColadaColonnes(l) {
+  return col(`
+    <tr><th>🥥 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
+    <tr><th>🥥 Crème de coco</th><td>${l.cremeCoco}</td></tr>
+    <tr><th>🍍 Jus d'ananas</th><td>${l.ananas}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>${l.glace}</td></tr>`);
+}
+function htmlTableauDaiquiriColonnes(l) {
+  return col(`
+    <tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
+    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🍬 Sirop de sucre de canne</th><td>${l.sucre}</td></tr>
+    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauWhiskySourColonnes(l) {
+  return col(`
+    <tr><th>🥃 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥃 Bourbon</th><td>${l.bourbon}</td></tr>
+    <tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr>
+    <tr><th>🍬 Sirop de sucre</th><td>${l.sirop}</td></tr>
+    <tr><th>🥚 Blanc d'œuf</th><td>${l.blanc}</td></tr>
+    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauVirginMojitoColonnes(l) {
+  return col(`
+    <tr><th>🥤 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍬 Sucre de canne</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🌿 Sirop de menthe</th><td>${l.sirop}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauLimonadeColonnes(l) {
+  return col(`
+    <tr><th>🍋 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🌿 Menthe</th><td>${l.menthe}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauSmoothieMangoColonnes(l) {
+  return col(`
+    <tr><th>🥭 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥭 Mangue</th><td>${l.mangue}</td></tr>
+    <tr><th>🌺 Fruits de la passion</th><td>${l.passion}</td></tr>
+    <tr><th>🍌 Banane</th><td>${l.banane}</td></tr>
+    <tr><th>🥥 Lait de coco / végétal</th><td>${l.lait}</td></tr>
+    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
+}
+function htmlTableauCitronadeColonnes(l) {
+  return col(`
+    <tr><th>🌿 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau fraîche</th><td>${l.eau}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauJusPastequeColonnes(l) {
+  return col(`
+    <tr><th>🍉 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍉 Pastèque</th><td>${l.pasteque}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauVirginPinaColonnes(l) {
+  return col(`
+    <tr><th>🥥 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥥 Crème de coco</th><td>${l.cremeCoco}</td></tr>
+    <tr><th>🍍 Jus d'ananas</th><td>${l.ananas}</td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.laitCoco}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>${l.glace}</td></tr>`);
 }
 
 function htmlTableauParisBrestColonnes(l) {
@@ -3828,6 +4408,32 @@ function calculer() {
     return;
   }
 
+  // Cocktails
+  const cocktailsTables = {
+    "mojito":             { table: "tableauMojito",       fn: htmlTableauMojitoColonnes,       label: "verre" },
+    "margarita":          { table: "tableauMargarita",     fn: htmlTableauMargaritaColonnes,    label: "verre" },
+    "cosmopolitan":       { table: "tableauCosmopolitan",  fn: htmlTableauCosmopolitanColonnes, label: "verre" },
+    "spritz":             { table: "tableauSpritz",        fn: htmlTableauSpritzColonnes,       label: "verre" },
+    "sangria":            { table: "tableauSangria",       fn: htmlTableauSangriaColonnes,      label: "verre" },
+    "pinacolada":         { table: "tableauPinaColada",    fn: htmlTableauPinaColadaColonnes,   label: "verre" },
+    "daiquiri":           { table: "tableauDaiquiri",      fn: htmlTableauDaiquiriColonnes,     label: "verre" },
+    "whiskysour":         { table: "tableauWhiskySour",    fn: htmlTableauWhiskySourColonnes,   label: "verre" },
+    "virginmojito":       { table: "tableauVirginMojito",  fn: htmlTableauVirginMojitoColonnes, label: "verre" },
+    "limonademaison":     { table: "tableauLimonade",      fn: htmlTableauLimonadeColonnes,     label: "verre" },
+    "smoothiemangopassion":{ table: "tableauSmoothieMango",fn: htmlTableauSmoothieMangoColonnes,label: "verre" },
+    "citronadementhe":    { table: "tableauCitronade",     fn: htmlTableauCitronadeColonnes,    label: "verre" },
+    "jusPastequeMenuthe": { table: "tableauJusPasteque",   fn: htmlTableauJusPastequeColonnes,  label: "verre" },
+    "virginpinacolada":   { table: "tableauVirginPina",    fn: htmlTableauVirginPinaColonnes,   label: "verre" },
+  };
+  if (cocktailsTables[recette] && data[cocktailsTables[recette].table]) {
+    const cfg = cocktailsTables[recette];
+    const ligne = data[cfg.table].find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+
   // Paris-Brest
   if (recette === "parisbrestreinterpretation" && data.tableauParisBrest) {
     const ligne = data.tableauParisBrest.find(l => l.nb === personnes);
@@ -4116,6 +4722,20 @@ const prixCalories = {
   saladequinoa:   { base: 4,  baseLabel: "4 personnes",  prixTotal: 5.00, calTotal: 1200, unite: "personne" },
   yaourt:         { base: 8,  baseLabel: "8 yaourts",    prixTotal: 1.80, calTotal: 640,  unite: "yaourt" },
   tartecitron:      { base: 6,  baseLabel: "6 tartelettes", prixTotal: 4.20,  calTotal: 2400, unite: "tartelette" },
+  mojito:             { base: 1,  baseLabel: "1 verre",       prixTotal: 1.50, calTotal: 150,  unite: "verre" },
+  margarita:          { base: 1,  baseLabel: "1 verre",       prixTotal: 1.80, calTotal: 180,  unite: "verre" },
+  cosmopolitan:       { base: 1,  baseLabel: "1 verre",       prixTotal: 1.80, calTotal: 160,  unite: "verre" },
+  spritz:             { base: 1,  baseLabel: "1 verre",       prixTotal: 1.50, calTotal: 120,  unite: "verre" },
+  sangria:            { base: 6,  baseLabel: "6 verres",      prixTotal: 4.00, calTotal: 900,  unite: "verre" },
+  pinacolada:         { base: 1,  baseLabel: "1 verre",       prixTotal: 2.00, calTotal: 220,  unite: "verre" },
+  daiquiri:           { base: 1,  baseLabel: "1 verre",       prixTotal: 1.50, calTotal: 160,  unite: "verre" },
+  whiskysour:         { base: 1,  baseLabel: "1 verre",       prixTotal: 2.00, calTotal: 180,  unite: "verre" },
+  virginmojito:       { base: 1,  baseLabel: "1 verre",       prixTotal: 0.50, calTotal: 60,   unite: "verre" },
+  limonademaison:     { base: 4,  baseLabel: "4 verres",      prixTotal: 1.00, calTotal: 280,  unite: "verre" },
+  smoothiemangopassion:{ base: 2, baseLabel: "2 verres",      prixTotal: 2.00, calTotal: 300,  unite: "verre" },
+  citronadementhe:    { base: 4,  baseLabel: "4 verres",      prixTotal: 0.80, calTotal: 200,  unite: "verre" },
+  jusPastequeMenuthe: { base: 4,  baseLabel: "4 verres",      prixTotal: 1.50, calTotal: 160,  unite: "verre" },
+  virginpinacolada:   { base: 1,  baseLabel: "1 verre",       prixTotal: 1.00, calTotal: 150,  unite: "verre" },
   boeufbourguignon:   { base: 6, baseLabel: "6 personnes",  prixTotal: 18.00, calTotal: 3600, unite: "personne" },
   couscous:           { base: 6,  baseLabel: "6 personnes",  prixTotal: 12.00, calTotal: 2400, unite: "personne" },
   moussaka:           { base: 6,  baseLabel: "6 personnes",  prixTotal: 8.00,  calTotal: 2400, unite: "personne" },
@@ -4555,6 +5175,10 @@ function choisirRecette(nom) {
   } else if (nom === "tarteaupommes" && data.tableauTartePommes) {
     const ligne = data.tableauTartePommes.find(l => l.nb === personnes) || data.tableauTartePommes[5];
     listeIngredients = htmlTableauTartePommesColonnes(ligne);
+  } else if (cocktailsTablesGlobal && cocktailsTablesGlobal[nom] && data[cocktailsTablesGlobal[nom].table]) {
+    const cfgC = cocktailsTablesGlobal[nom];
+    const ligneC = data[cfgC.table].find(l => l.nb === personnes) || data[cfgC.table][0];
+    listeIngredients = cfgC.fn(ligneC);
   } else if (nom === "parisbrestreinterpretation" && data.tableauParisBrest) {
     const ligne = data.tableauParisBrest.find(l => l.nb === personnes) || data.tableauParisBrest[7];
     listeIngredients = htmlTableauParisBrestColonnes(ligne);
@@ -4710,6 +5334,20 @@ function choisirRecette(nom) {
     "saumongravlax":     "Saumon Gravlax",
     "shakshuka":         "Shakshuka",
     "couscous":          "Couscous Royal",
+    "mojito":            "Mojito",
+    "margarita":         "Margarita",
+    "cosmopolitan":      "Cosmopolitan",
+    "spritz":            "Spritz Aperol",
+    "sangria":           "Sangria",
+    "pinacolada":        "Piña Colada",
+    "daiquiri":          "Daiquiri",
+    "whiskysour":        "Whisky Sour",
+    "virginmojito":      "Virgin Mojito",
+    "limonademaison":    "Limonade Maison",
+    "smoothiemangopassion": "Smoothie Mangue Passion",
+    "citronadementhe":   "Citronnade à la Menthe",
+    "jusPastequeMenuthe":"Jus Pastèque Menthe",
+    "virginpinacolada":  "Virgin Piña Colada",
     "moussaka":          "Moussaka",
     "paella":            "Paella",
     "butterchicken":     "Butter Chicken",
