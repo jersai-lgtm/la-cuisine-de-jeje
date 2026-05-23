@@ -55,6 +55,8 @@
   <button class="pays-btn" onclick="filtrerCategorie('encas')">🥪 Encas</button>
   <button class="pays-btn" onclick="filtrerCategorie('healthy')">🥗 Healthy</button>
   <button class="pays-btn" onclick="filtrerCategorie('salades')">🥙 Salades</button>
+  <button class="pays-btn" onclick="filtrerCategorie('cocktails')">🍹 Cocktails (avec alcool)</button>
+  <button class="pays-btn" onclick="filtrerCategorie('mocktails')">🥤 Cocktails (sans alcool)</button>
 </div>
 
 <!-- SOUS-MENU PAYS -->
@@ -71,6 +73,7 @@
   <button class="pays-btn" onclick="filtrerPays('usa')">🇺🇸 USA</button>
   <button class="pays-btn" onclick="filtrerPays('espagne')">🇪🇸 Espagne</button>
   <button class="pays-btn" onclick="filtrerPays('maroc')">🇲🇦 Maroc</button>
+  <button class="pays-btn" onclick="filtrerPays('cuba')">🇨🇺 Cuba</button>
 </div>
 
 <!-- CARTES RECETTES -->
@@ -1066,6 +1069,176 @@
     </div>
   </div>
 
+
+  <!-- COCKTAILS -->
+  <div class="carte" data-cat="cocktails" data-pays="cuba" onclick="ouvrirFiche('mojito', 'calc-mojito')">
+    <img src="images/mojito.jpg" alt="Mojito">
+    <div class="carte-info">
+      <h2>🍹 Mojito</h2>
+      <p>⏱ 5 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-mojito">
+        <button class="calc-btn" onclick="calculerCarte('mojito', 'calc-mojito')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="cocktails" data-pays="mexique" onclick="ouvrirFiche('margarita', 'calc-margarita')">
+    <img src="images/margarita.jpg" alt="Margarita">
+    <div class="carte-info">
+      <h2>🍸 Margarita</h2>
+      <p>⏱ 3 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-margarita">
+        <button class="calc-btn" onclick="calculerCarte('margarita', 'calc-margarita')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="cocktails" data-pays="usa" onclick="ouvrirFiche('cosmopolitan', 'calc-cosmopolitan')">
+    <img src="images/cosmopolitan.jpg" alt="Cosmopolitan">
+    <div class="carte-info">
+      <h2>🍸 Cosmopolitan</h2>
+      <p>⏱ 3 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-cosmopolitan">
+        <button class="calc-btn" onclick="calculerCarte('cosmopolitan', 'calc-cosmopolitan')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="cocktails" data-pays="italie" onclick="ouvrirFiche('spritz', 'calc-spritz')">
+    <img src="images/spritz.jpg" alt="Spritz Aperol">
+    <div class="carte-info">
+      <h2>🥂 Spritz Aperol</h2>
+      <p>⏱ 2 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-spritz">
+        <button class="calc-btn" onclick="calculerCarte('spritz', 'calc-spritz')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="cocktails" data-pays="espagne" onclick="ouvrirFiche('sangria', 'calc-sangria')">
+    <img src="images/sangria.jpg" alt="Sangria">
+    <div class="carte-info">
+      <h2>🍷 Sangria</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-sangria">
+        <button class="calc-btn" onclick="calculerCarte('sangria', 'calc-sangria')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="cocktails" data-pays="usa" onclick="ouvrirFiche('pinacolada', 'calc-pinacolada')">
+    <img src="images/pinacolada.jpg" alt="Piña Colada">
+    <div class="carte-info">
+      <h2>🥥 Piña Colada</h2>
+      <p>⏱ 5 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-pinacolada">
+        <button class="calc-btn" onclick="calculerCarte('pinacolada', 'calc-pinacolada')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="cocktails" data-pays="cuba" onclick="ouvrirFiche('daiquiri', 'calc-daiquiri')">
+    <img src="images/daiquiri.jpg" alt="Daiquiri">
+    <div class="carte-info">
+      <h2>🍸 Daiquiri</h2>
+      <p>⏱ 3 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-daiquiri">
+        <button class="calc-btn" onclick="calculerCarte('daiquiri', 'calc-daiquiri')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="cocktails" data-pays="usa" onclick="ouvrirFiche('whiskysour', 'calc-whiskysour')">
+    <img src="images/whiskysour.jpg" alt="Whisky Sour">
+    <div class="carte-info">
+      <h2>🥃 Whisky Sour</h2>
+      <p>⏱ 3 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-whiskysour">
+        <button class="calc-btn" onclick="calculerCarte('whiskysour', 'calc-whiskysour')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="mocktails" data-pays="france" onclick="ouvrirFiche('virginmojito', 'calc-virginmojito')">
+    <img src="images/virginmojito.jpg" alt="Virgin Mojito">
+    <div class="carte-info">
+      <h2>🥤 Virgin Mojito</h2>
+      <p>⏱ 5 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-virginmojito">
+        <button class="calc-btn" onclick="calculerCarte('virginmojito', 'calc-virginmojito')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="mocktails" data-pays="france" onclick="ouvrirFiche('limonademaison', 'calc-limonademaison')">
+    <img src="images/limonademaison.jpg" alt="Limonade Maison">
+    <div class="carte-info">
+      <h2>🍋 Limonade Maison</h2>
+      <p>⏱ 10 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-limonademaison">
+        <button class="calc-btn" onclick="calculerCarte('limonademaison', 'calc-limonademaison')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="mocktails" data-pays="france" onclick="ouvrirFiche('smoothiemangopassion', 'calc-smoothiemangopassion')">
+    <img src="images/smoothiemangopassion.jpg" alt="Smoothie Mangue Passion">
+    <div class="carte-info">
+      <h2>🥭 Smoothie Mangue Passion</h2>
+      <p>⏱ 5 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-smoothiemangopassion">
+        <button class="calc-btn" onclick="calculerCarte('smoothiemangopassion', 'calc-smoothiemangopassion')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="mocktails" data-pays="france" onclick="ouvrirFiche('citronadementhe', 'calc-citronadementhe')">
+    <img src="images/citronadementhe.jpg" alt="Citronnade à la Menthe">
+    <div class="carte-info">
+      <h2>🌿 Citronnade à la Menthe</h2>
+      <p>⏱ 10 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-citronadementhe">
+        <button class="calc-btn" onclick="calculerCarte('citronadementhe', 'calc-citronadementhe')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="mocktails" data-pays="france" onclick="ouvrirFiche('jusPastequeMenuthe', 'calc-jusPastequeMenuthe')">
+    <img src="images/jusPastequeMenuthe.jpg" alt="Jus Pastèque Menthe">
+    <div class="carte-info">
+      <h2>🍉 Jus Pastèque Menthe</h2>
+      <p>⏱ 10 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-jusPastequeMenuthe">
+        <button class="calc-btn" onclick="calculerCarte('jusPastequeMenuthe', 'calc-jusPastequeMenuthe')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="mocktails" data-pays="france" onclick="ouvrirFiche('virginpinacolada', 'calc-virginpinacolada')">
+    <img src="images/virginpinacolada.jpg" alt="Virgin Piña Colada">
+    <div class="carte-info">
+      <h2>🥥 Virgin Piña Colada</h2>
+      <p>⏱ 5 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-virginpinacolada">
+        <button class="calc-btn" onclick="calculerCarte('virginpinacolada', 'calc-virginpinacolada')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <!-- MODAL RÉSULTAT CALCULATEUR -->
@@ -1139,6 +1312,20 @@
     <option value="saladepoischiches">Salade Pois Chiches</option>
     <option value="gaspacho">Gaspacho</option>
     <option value="curryledumes">Curry de Légumes</option>
+    <option value="mojito">Mojito</option>
+    <option value="margarita">Margarita</option>
+    <option value="cosmopolitan">Cosmopolitan</option>
+    <option value="spritz">Spritz Aperol</option>
+    <option value="sangria">Sangria</option>
+    <option value="pinacolada">Piña Colada</option>
+    <option value="daiquiri">Daiquiri</option>
+    <option value="whiskysour">Whisky Sour</option>
+    <option value="virginmojito">Virgin Mojito</option>
+    <option value="limonademaison">Limonade Maison</option>
+    <option value="smoothiemangopassion">Smoothie Mangue Passion</option>
+    <option value="citronadementhe">Citronnade à la Menthe</option>
+    <option value="jusPastequeMenuthe">Jus Pastèque Menthe</option>
+    <option value="virginpinacolada">Virgin Piña Colada</option>
     <option value="pouletcitronthym">Poulet Citron & Thym</option>
     <option value="salmonteriyaki">Saumon Teriyaki</option>
     <option value="bolognaisemaison">Bolognaise Maison</option>
