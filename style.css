@@ -578,3 +578,162 @@ select, input[type="number"] {
 }
 .pays-btn:hover  { background: rgba(255,77,136,.2); border-color: #ff4d88; color: #fff; }
 .pays-btn.active { background: #ff4d88; border-color: #ff4d88; color: #fff; font-weight: bold; }
+
+/* ==========================
+   PLANIFICATEUR DE MENUS
+========================== */
+.planificateur-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 16px 100px;
+}
+
+/* Formulaire */
+.plan-form {
+  background: rgba(15,15,15,.75);
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  padding: 28px 24px;
+  box-shadow: 0 0 40px rgba(0,0,0,.4);
+}
+.plan-form h2    { margin: 0 0 6px; font-size: 24px; }
+.plan-subtitle   { color: #aaa; font-size: 14px; margin: 0 0 24px; }
+.plan-field      { margin-bottom: 20px; }
+.plan-field label { display: block; margin-bottom: 8px; color: #ffb3cc; font-size: 14px; font-weight: 600; }
+.plan-input {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 12px;
+  color: white;
+  padding: 10px 14px;
+  font-size: 16px;
+  width: 80px;
+  text-align: center;
+}
+.plan-input-text {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 12px;
+  color: white;
+  padding: 10px 14px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.plan-input-text::placeholder { color: #666; }
+
+/* Tags préférences */
+.plan-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.plan-tag {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.15);
+  color: #ccc;
+  border-radius: 50px;
+  padding: 7px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: .2s;
+}
+.plan-tag:hover       { background: rgba(255,77,136,.2); border-color: #ff4d88; }
+.plan-tag-active      { background: #ff4d88; border-color: #ff4d88; color: #fff; font-weight: bold; }
+
+/* Bouton générer */
+.plan-btn-generer {
+  width: 100%;
+  background: linear-gradient(135deg, #ff4d88, #ff8fb3);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+  margin-top: 8px;
+  letter-spacing: .5px;
+}
+.plan-btn-generer:hover    { transform: scale(1.02); box-shadow: 0 8px 25px rgba(255,77,136,.4); }
+.plan-btn-generer:disabled { opacity: .6; transform: none; }
+
+/* Header résultat */
+.plan-result-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.plan-result-header h2 { margin: 0; flex: 1; font-size: 22px; }
+.plan-btn-courses {
+  background: #ff4d88;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: .2s;
+}
+.plan-btn-retry {
+  background: rgba(255,255,255,.1);
+  color: #ddd;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: .2s;
+}
+.plan-btn-retry:hover  { background: rgba(255,255,255,.2); }
+.plan-btn-courses:hover{ background: #ff6ba1; }
+
+/* Jours */
+.plan-jour {
+  background: rgba(15,15,15,.7);
+  border-radius: 20px;
+  padding: 18px;
+  margin-bottom: 14px;
+  backdrop-filter: blur(10px);
+}
+.plan-jour-titre {
+  font-size: 18px;
+  margin: 0 0 14px;
+  color: #ffb3cc;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.plan-repas-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.plan-repas {
+  background: rgba(40,40,40,.6);
+  border-radius: 14px;
+  padding: 14px 12px;
+  cursor: pointer;
+  transition: .2s;
+  text-align: center;
+}
+.plan-repas:hover       { background: rgba(255,77,136,.15); transform: scale(1.02); }
+.plan-repas-label       { font-size: 11px; color: #888; margin-bottom: 6px; }
+.plan-repas-emoji       { font-size: 28px; margin-bottom: 6px; }
+.plan-repas-nom         { font-size: 13px; font-weight: bold; color: #fff; margin-bottom: 4px; line-height: 1.3; }
+.plan-repas-note        { font-size: 11px; color: #aaa; font-style: italic; }
+
+/* Liste de courses */
+.courses-subtitle { color: #aaa; font-size: 13px; margin: 0 0 16px; }
+.courses-liste    { display: flex; flex-direction: column; gap: 8px; }
+.courses-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(30,30,30,.7);
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: .2s;
+}
+.courses-item:hover { background: rgba(255,77,136,.1); }
+.courses-nom  { font-size: 14px; color: #eee; }
+.courses-qte  { font-size: 14px; font-weight: bold; color: #ff8fb3; }
