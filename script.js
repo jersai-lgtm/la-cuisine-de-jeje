@@ -975,6 +975,293 @@ const recettes = {
     ]
   },
 
+
+  overnightoats: {
+    base: 1,
+    temps: "5 min + nuit repos",
+    niveau: "⭐ Facile",
+    emoji: "🌾",
+    description: "Le petit-déjeuner sain et rapide — flocons d'avoine préparés la veille, à personnaliser avec vos toppings préférés.",
+    tableauOvernightOats: [
+      { nb:  1, flocons: "45 g",  lait: "180 ml",  yaourt: "50 g",  chia: "1 c.à.c",  miel: "1 c.à.c"  },
+      { nb:  2, flocons: "90 g",  lait: "360 ml",  yaourt: "100 g", chia: "2 c.à.c",  miel: "2 c.à.c"  },
+      { nb:  3, flocons: "135 g", lait: "540 ml",  yaourt: "150 g", chia: "3 c.à.c",  miel: "3 c.à.c"  },
+      { nb:  4, flocons: "180 g", lait: "720 ml",  yaourt: "200 g", chia: "4 c.à.c",  miel: "4 c.à.c"  },
+      { nb:  5, flocons: "225 g", lait: "900 ml",  yaourt: "250 g", chia: "5 c.à.c",  miel: "5 c.à.c"  },
+      { nb:  6, flocons: "270 g", lait: "1080 ml", yaourt: "300 g", chia: "6 c.à.c",  miel: "6 c.à.c"  },
+      { nb:  7, flocons: "315 g", lait: "1260 ml", yaourt: "350 g", chia: "7 c.à.c",  miel: "7 c.à.c"  },
+      { nb:  8, flocons: "360 g", lait: "1440 ml", yaourt: "400 g", chia: "8 c.à.c",  miel: "8 c.à.c"  },
+      { nb:  9, flocons: "405 g", lait: "1620 ml", yaourt: "450 g", chia: "9 c.à.c",  miel: "9 c.à.c"  },
+      { nb: 10, flocons: "450 g", lait: "1800 ml", yaourt: "500 g", chia: "10 c.à.c", miel: "10 c.à.c" },
+      { nb: 11, flocons: "495 g", lait: "1980 ml", yaourt: "550 g", chia: "11 c.à.c", miel: "11 c.à.c" },
+      { nb: 12, flocons: "540 g", lait: "2160 ml", yaourt: "600 g", chia: "12 c.à.c", miel: "12 c.à.c" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Mélanger dans un pot",    detail: "Dans un pot ou bol, mélanger les flocons d'avoine, les graines de chia, le lait végétal (ou lait normal), le yaourt grec et le miel.", badge: null },
+      { icone: "🥄", titre: "Bien mélanger",           detail: "Mélanger jusqu'à ce que tout soit bien incorporé. Les graines de chia vont gonfler et épaissir la préparation.", badge: null },
+      { icone: "❄️", titre: "Repos au frigo",          detail: "Couvrir et placer au réfrigérateur. Le lendemain matin, les oats sont prêts !", badge: "⏱ Toute la nuit (min 6h)" },
+      { icone: "🎨", titre: "Ajouter les toppings",    detail: "Au moment de servir, ajouter les toppings : fruits frais, fruits secs, granola, beurre d'amande, cacao... Personnaliser selon l'envie !", badge: null },
+    ]
+  },
+
+  buddhaBowl: {
+    base: 2,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥙",
+    description: "Un buddha bowl coloré et équilibré — céréales, légumes rôtis, protéines et sauce tahini. Un repas complet en un bol.",
+    tableauBuddhaBowl: [
+      { nb:  1, quinoa: "75 g",  patatedouce: "½",  poischiches: "100 g", epinards: "30 g",  avocat: "½",  tahini: "1 c.à.s"  },
+      { nb:  2, quinoa: "150 g", patatedouce: "1",  poischiches: "200 g", epinards: "60 g",  avocat: "1",  tahini: "2 c.à.s"  },
+      { nb:  3, quinoa: "225 g", patatedouce: "1½", poischiches: "300 g", epinards: "90 g",  avocat: "1½", tahini: "3 c.à.s"  },
+      { nb:  4, quinoa: "300 g", patatedouce: "2",  poischiches: "400 g", epinards: "120 g", avocat: "2",  tahini: "4 c.à.s"  },
+      { nb:  5, quinoa: "375 g", patatedouce: "2½", poischiches: "500 g", epinards: "150 g", avocat: "2½", tahini: "5 c.à.s"  },
+      { nb:  6, quinoa: "450 g", patatedouce: "3",  poischiches: "600 g", epinards: "180 g", avocat: "3",  tahini: "6 c.à.s"  },
+      { nb:  7, quinoa: "525 g", patatedouce: "3½", poischiches: "700 g", epinards: "210 g", avocat: "3½", tahini: "7 c.à.s"  },
+      { nb:  8, quinoa: "600 g", patatedouce: "4",  poischiches: "800 g", epinards: "240 g", avocat: "4",  tahini: "8 c.à.s"  },
+      { nb:  9, quinoa: "675 g", patatedouce: "4½", poischiches: "900 g", epinards: "270 g", avocat: "4½", tahini: "9 c.à.s"  },
+      { nb: 10, quinoa: "750 g", patatedouce: "5",  poischiches: "1000 g",epinards: "300 g", avocat: "5",  tahini: "10 c.à.s" },
+      { nb: 11, quinoa: "825 g", patatedouce: "5½", poischiches: "1100 g",epinards: "330 g", avocat: "5½", tahini: "11 c.à.s" },
+      { nb: 12, quinoa: "900 g", patatedouce: "6",  poischiches: "1200 g",epinards: "360 g", avocat: "6",  tahini: "12 c.à.s" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Cuire le quinoa",          detail: "Rincer le quinoa. Cuire dans 2x son volume d'eau salée à feu moyen jusqu'à absorption. Égrainer à la fourchette.", badge: "⏱ 15 min" },
+      { icone: "🍠", titre: "Rôtir la patate douce",    detail: "Couper la patate douce en cubes. Assaisonner d'huile d'olive, cumin, paprika, sel. Rôtir au four.", badge: "⏱ 20 min à 200°C" },
+      { icone: "🫘", titre: "Griller les pois chiches", detail: "Égoutter et sécher les pois chiches. Les faire dorer à la poêle avec huile d'olive et épices jusqu'à ce qu'ils soient croustillants.", badge: "⏱ 8 min" },
+      { icone: "🥄", titre: "Préparer la sauce tahini", detail: "Mélanger tahini, jus de citron, ail pressé, eau froide, sel. Fouetter jusqu'à obtenir une sauce crémeuse.", badge: null },
+      { icone: "🎨", titre: "Dresser le bowl",          detail: "Disposer quinoa, patate douce, pois chiches, épinards et avocat en tranches dans le bol. Napper de sauce tahini. Ajouter graines de sésame et herbes.", badge: null },
+    ]
+  },
+
+  soupemiso: {
+    base: 2,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🍜",
+    description: "La soupe miso japonaise authentique — bouillon umami, tofu soyeux, wakamé et ciboule. Réconfortante et très légère.",
+    tableauSoupeMiso: [
+      { nb:  1, eau: "500 ml",  miso: "1 c.à.s",  tofu: "75 g",  wakame: "½ c.à.s",  ciboule: "1"  },
+      { nb:  2, eau: "1 L",     miso: "2 c.à.s",  tofu: "150 g", wakame: "1 c.à.s",  ciboule: "2"  },
+      { nb:  3, eau: "1.5 L",   miso: "3 c.à.s",  tofu: "225 g", wakame: "1½ c.à.s", ciboule: "3"  },
+      { nb:  4, eau: "2 L",     miso: "4 c.à.s",  tofu: "300 g", wakame: "2 c.à.s",  ciboule: "4"  },
+      { nb:  5, eau: "2.5 L",   miso: "5 c.à.s",  tofu: "375 g", wakame: "2½ c.à.s", ciboule: "5"  },
+      { nb:  6, eau: "3 L",     miso: "6 c.à.s",  tofu: "450 g", wakame: "3 c.à.s",  ciboule: "6"  },
+      { nb:  7, eau: "3.5 L",   miso: "7 c.à.s",  tofu: "525 g", wakame: "3½ c.à.s", ciboule: "7"  },
+      { nb:  8, eau: "4 L",     miso: "8 c.à.s",  tofu: "600 g", wakame: "4 c.à.s",  ciboule: "8"  },
+      { nb:  9, eau: "4.5 L",   miso: "9 c.à.s",  tofu: "675 g", wakame: "4½ c.à.s", ciboule: "9"  },
+      { nb: 10, eau: "5 L",     miso: "10 c.à.s", tofu: "750 g", wakame: "5 c.à.s",  ciboule: "10" },
+      { nb: 11, eau: "5.5 L",   miso: "11 c.à.s", tofu: "825 g", wakame: "5½ c.à.s", ciboule: "11" },
+      { nb: 12, eau: "6 L",     miso: "12 c.à.s", tofu: "900 g", wakame: "6 c.à.s",  ciboule: "12" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Préparer le dashi",        detail: "Porter l'eau à frémissement. Ajouter le dashi en poudre (1 c.à.c pour 500ml). Laisser infuser 2 min.", badge: null },
+      { icone: "🧊", titre: "Réhydrater le wakamé",     detail: "Plonger le wakamé séché dans un bol d'eau froide 5 min. Il va gonfler. Égoutter.", badge: "⏱ 5 min" },
+      { icone: "🧀", titre: "Ajouter le tofu",          detail: "Couper le tofu soyeux en petits cubes. L'ajouter délicatement au bouillon chaud (pas bouillant).", badge: null },
+      { icone: "🌿", titre: "Dissoudre le miso",        detail: "Hors du feu ou à feu très doux, prélever une louche de bouillon, y dissoudre la pâte miso. Reverser dans la casserole. Ne jamais faire bouillir le miso — ça détruit les probiotiques !", badge: null },
+      { icone: "🍜", titre: "Servir",                   detail: "Ajouter le wakamé et la ciboule émincée. Servir immédiatement dans des bols.", badge: null },
+    ]
+  },
+
+  wrappoulet: {
+    base: 2,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🌯",
+    description: "Un wrap au poulet grillé sain et rassasiant — légumes croquants, sauce yaourt et herbes fraîches.",
+    tableauWrapPoulet: [
+      { nb:  1, poulet: "100 g",  tortilla: "1",  laitue: "¼",  tomate: "½",  yaourt: "2 c.à.s"  },
+      { nb:  2, poulet: "200 g",  tortilla: "2",  laitue: "½",  tomate: "1",  yaourt: "4 c.à.s"  },
+      { nb:  3, poulet: "300 g",  tortilla: "3",  laitue: "¾",  tomate: "1½", yaourt: "6 c.à.s"  },
+      { nb:  4, poulet: "400 g",  tortilla: "4",  laitue: "1",  tomate: "2",  yaourt: "8 c.à.s"  },
+      { nb:  5, poulet: "500 g",  tortilla: "5",  laitue: "1",  tomate: "2½", yaourt: "10 c.à.s" },
+      { nb:  6, poulet: "600 g",  tortilla: "6",  laitue: "1½", tomate: "3",  yaourt: "12 c.à.s" },
+      { nb:  7, poulet: "700 g",  tortilla: "7",  laitue: "1½", tomate: "3½", yaourt: "14 c.à.s" },
+      { nb:  8, poulet: "800 g",  tortilla: "8",  laitue: "2",  tomate: "4",  yaourt: "16 c.à.s" },
+      { nb:  9, poulet: "900 g",  tortilla: "9",  laitue: "2",  tomate: "4½", yaourt: "18 c.à.s" },
+      { nb: 10, poulet: "1000 g", tortilla: "10", laitue: "2½", tomate: "5",  yaourt: "20 c.à.s" },
+      { nb: 11, poulet: "1100 g", tortilla: "11", laitue: "2½", tomate: "5½", yaourt: "22 c.à.s" },
+      { nb: 12, poulet: "1200 g", tortilla: "12", laitue: "3",  tomate: "6",  yaourt: "24 c.à.s" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Mariner et griller le poulet", detail: "Couper le poulet en lanières. Mariner 10 min avec huile d'olive, cumin, paprika, ail, sel. Faire griller à la poêle jusqu'à cuisson complète.", badge: "⏱ 8 min" },
+      { icone: "🥣", titre: "Préparer la sauce",        detail: "Mélanger le yaourt grec avec jus de citron, ail pressé, herbes fraîches (coriandre, menthe), sel et poivre.", badge: null },
+      { icone: "🥬", titre: "Préparer les légumes",     detail: "Laver et émincer la laitue. Couper la tomate en dés. Préparer avocat ou concombre selon envie.", badge: null },
+      { icone: "🌯", titre: "Assembler le wrap",        detail: "Étaler la sauce sur la tortilla. Ajouter laitue, tomate, poulet chaud. Rouler serré en repliant les côtés. Couper en deux en diagonale.", badge: null },
+    ]
+  },
+
+  energyballs: {
+    base: 12,
+    temps: "15 min + 30 min frigo",
+    niveau: "⭐ Facile",
+    emoji: "⚡",
+    description: "Des energy balls aux dattes et amandes — sans cuisson, riches en énergie naturelle. Parfaites pour le sport ou le goûter.",
+    tableauEnergyBalls: [
+      { nb:  1, dattes: "10 g",  amandes: "7 g",   flocons: "5 g",  cacao: "¼ c.à.c", coco: "¼ c.à.s" },
+      { nb:  2, dattes: "20 g",  amandes: "15 g",  flocons: "10 g", cacao: "½ c.à.c", coco: "½ c.à.s" },
+      { nb:  3, dattes: "30 g",  amandes: "22 g",  flocons: "15 g", cacao: "¾ c.à.c", coco: "¾ c.à.s" },
+      { nb:  4, dattes: "40 g",  amandes: "30 g",  flocons: "20 g", cacao: "1 c.à.c",  coco: "1 c.à.s" },
+      { nb:  5, dattes: "50 g",  amandes: "37 g",  flocons: "25 g", cacao: "1¼ c.à.c", coco: "1¼ c.à.s"},
+      { nb:  6, dattes: "60 g",  amandes: "45 g",  flocons: "30 g", cacao: "1½ c.à.c", coco: "1½ c.à.s"},
+      { nb:  7, dattes: "70 g",  amandes: "52 g",  flocons: "35 g", cacao: "1¾ c.à.c", coco: "1¾ c.à.s"},
+      { nb:  8, dattes: "80 g",  amandes: "60 g",  flocons: "40 g", cacao: "2 c.à.c",  coco: "2 c.à.s" },
+      { nb:  9, dattes: "90 g",  amandes: "67 g",  flocons: "45 g", cacao: "2¼ c.à.c", coco: "2¼ c.à.s"},
+      { nb: 10, dattes: "100 g", amandes: "75 g",  flocons: "50 g", cacao: "2½ c.à.c", coco: "2½ c.à.s"},
+      { nb: 11, dattes: "110 g", amandes: "82 g",  flocons: "55 g", cacao: "2¾ c.à.c", coco: "2¾ c.à.s"},
+      { nb: 12, dattes: "120 g", amandes: "90 g",  flocons: "60 g", cacao: "3 c.à.c",  coco: "3 c.à.s" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌴", titre: "Dénoyauter les dattes",    detail: "Dénoyauter les dattes Medjool. Si elles sont trop sèches, les tremper 10 min dans l'eau chaude puis bien égoutter.", badge: null },
+      { icone: "🌀", titre: "Mixer",                    detail: "Placer dattes, amandes, flocons d'avoine et cacao dans un robot. Mixer jusqu'à obtenir une pâte qui se tient. Si trop sèche, ajouter 1 c.à.s d'eau.", badge: null },
+      { icone: "⚡", titre: "Former les boules",        detail: "Prendre une petite quantité de pâte (environ 20g) et rouler entre les paumes pour former une boule. Rouler dans la noix de coco râpée, le cacao ou les graines de sésame.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer",              detail: "Placer sur une assiette et mettre au réfrigérateur. Se conservent 2 semaines au frigo ou 3 mois au congélateur.", badge: "⏱ 30 min au frigo" },
+    ]
+  },
+
+  pancakesproteine: {
+    base: 2,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "💪",
+    description: "Des pancakes protéinés à la banane et à l'œuf — sans farine, sans sucre ajouté. Riches en protéines et très moelleux.",
+    tableauPancakesProteine: [
+      { nb:  1, banane: "½",  oeufs: "1",  proteine: "10 g", lait: "15 ml" },
+      { nb:  2, banane: "1",  oeufs: "2",  proteine: "20 g", lait: "30 ml" },
+      { nb:  3, banane: "1½", oeufs: "3",  proteine: "30 g", lait: "45 ml" },
+      { nb:  4, banane: "2",  oeufs: "4",  proteine: "40 g", lait: "60 ml" },
+      { nb:  5, banane: "2½", oeufs: "5",  proteine: "50 g", lait: "75 ml" },
+      { nb:  6, banane: "3",  oeufs: "6",  proteine: "60 g", lait: "90 ml" },
+      { nb:  7, banane: "3½", oeufs: "7",  proteine: "70 g", lait: "105 ml"},
+      { nb:  8, banane: "4",  oeufs: "8",  proteine: "80 g", lait: "120 ml"},
+      { nb:  9, banane: "4½", oeufs: "9",  proteine: "90 g", lait: "135 ml"},
+      { nb: 10, banane: "5",  oeufs: "10", proteine: "100 g",lait: "150 ml"},
+      { nb: 11, banane: "5½", oeufs: "11", proteine: "110 g",lait: "165 ml"},
+      { nb: 12, banane: "6",  oeufs: "12", proteine: "120 g",lait: "180 ml"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍌", titre: "Écraser les bananes",      detail: "Écraser les bananes très mûres à la fourchette jusqu'à obtenir une purée lisse.", badge: null },
+      { icone: "🥚", titre: "Ajouter les œufs",         detail: "Ajouter les œufs battus et la poudre de protéines (optionnelle). Mélanger jusqu'à obtenir une pâte homogène. Ajouter le lait si la pâte est trop épaisse.", badge: null },
+      { icone: "🍳", titre: "Cuire",                    detail: "Faire chauffer une poêle antiadhésive à feu moyen-doux sans matière grasse. Verser une petite louche de pâte. Cuire jusqu'à ce que des bulles apparaissent, retourner et cuire 1 min.", badge: "⏱ 2–3 min par face" },
+      { icone: "🍓", titre: "Servir",                   detail: "Servir avec fruits frais, miel, beurre d'amande ou yaourt grec.", badge: null },
+    ]
+  },
+
+  bowlacai: {
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🫐",
+    description: "Un bowl açaï épais et onctueux — la base violette aux superfoods brésiliens, garnie de toppings croquants.",
+    tableauBowlAcai: [
+      { nb:  1, acai: "100 g",  banane: "1",   lait: "50 ml",  granola: "3 c.à.s",  fruits: "1 poignée"  },
+      { nb:  2, acai: "200 g",  banane: "2",   lait: "100 ml", granola: "6 c.à.s",  fruits: "2 poignées" },
+      { nb:  3, acai: "300 g",  banane: "3",   lait: "150 ml", granola: "9 c.à.s",  fruits: "3 poignées" },
+      { nb:  4, acai: "400 g",  banane: "4",   lait: "200 ml", granola: "12 c.à.s", fruits: "4 poignées" },
+      { nb:  5, acai: "500 g",  banane: "5",   lait: "250 ml", granola: "15 c.à.s", fruits: "5 poignées" },
+      { nb:  6, acai: "600 g",  banane: "6",   lait: "300 ml", granola: "18 c.à.s", fruits: "6 poignées" },
+      { nb:  7, acai: "700 g",  banane: "7",   lait: "350 ml", granola: "21 c.à.s", fruits: "7 poignées" },
+      { nb:  8, acai: "800 g",  banane: "8",   lait: "400 ml", granola: "24 c.à.s", fruits: "8 poignées" },
+      { nb:  9, acai: "900 g",  banane: "9",   lait: "450 ml", granola: "27 c.à.s", fruits: "9 poignées" },
+      { nb: 10, acai: "1000 g", banane: "10",  lait: "500 ml", granola: "30 c.à.s", fruits: "10 poignées"},
+      { nb: 11, acai: "1100 g", banane: "11",  lait: "550 ml", granola: "33 c.à.s", fruits: "11 poignées"},
+      { nb: 12, acai: "1200 g", banane: "12",  lait: "600 ml", granola: "36 c.à.s", fruits: "12 poignées"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫐", titre: "Préparer la base",         detail: "Sortir la purée d'açaï surgelée 5 min avant. La casser en morceaux et mixer avec la banane congelée et le lait végétal jusqu'à obtenir une texture épaisse comme une glace.", badge: null },
+      { icone: "🥄", titre: "Verser dans le bol",       detail: "Verser la base dans un bol. Elle doit être très épaisse — si trop liquide, remettre au congélateur 10 min.", badge: null },
+      { icone: "🎨", titre: "Ajouter les toppings",     detail: "Disposer harmonieusement : granola, fruits frais (myrtilles, fraises, banane), noix de coco râpée, graines de chia, filet de miel ou beurre d'amande.", badge: null },
+    ]
+  },
+
+  saladepoischiches: {
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🫘",
+    description: "Une salade de pois chiches fraîche et protéinée — légumes croquants, herbes et vinaigrette citronnée. Parfaite l'été.",
+    tableauSaladePoisChiches: [
+      { nb:  1, poischiches: "100 g", tomates: "1",  concombre: "¼",  oignon: "¼",  persil: "¼ botte",  citron: "¼" },
+      { nb:  2, poischiches: "200 g", tomates: "2",  concombre: "½",  oignon: "½",  persil: "½ botte",  citron: "½" },
+      { nb:  3, poischiches: "300 g", tomates: "3",  concombre: "¾",  oignon: "½",  persil: "½ botte",  citron: "1" },
+      { nb:  4, poischiches: "400 g", tomates: "4",  concombre: "1",  oignon: "1",  persil: "1 botte",  citron: "1" },
+      { nb:  5, poischiches: "500 g", tomates: "5",  concombre: "1",  oignon: "1",  persil: "1 botte",  citron: "1" },
+      { nb:  6, poischiches: "600 g", tomates: "6",  concombre: "1½", oignon: "1",  persil: "1 botte",  citron: "2" },
+      { nb:  7, poischiches: "700 g", tomates: "7",  concombre: "1½", oignon: "1",  persil: "1½ botte", citron: "2" },
+      { nb:  8, poischiches: "800 g", tomates: "8",  concombre: "2",  oignon: "2",  persil: "2 bottes", citron: "2" },
+      { nb:  9, poischiches: "900 g", tomates: "9",  concombre: "2",  oignon: "2",  persil: "2 bottes", citron: "2" },
+      { nb: 10, poischiches: "1000 g",tomates: "10", concombre: "2½", oignon: "2",  persil: "2 bottes", citron: "3" },
+      { nb: 11, poischiches: "1100 g",tomates: "11", concombre: "2½", oignon: "2",  persil: "2½ bottes",citron: "3" },
+      { nb: 12, poischiches: "1200 g",tomates: "12", concombre: "3",  oignon: "3",  persil: "3 bottes", citron: "3" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Préparer les pois chiches",detail: "Égoutter et rincer les pois chiches en boîte. Les sécher avec du papier absorbant.", badge: null },
+      { icone: "🔪", titre: "Couper les légumes",       detail: "Couper les tomates en dés, le concombre épépiné en petits cubes, émincer finement l'oignon rouge. Ciseler le persil.", badge: null },
+      { icone: "🥗", titre: "Assembler",                detail: "Mélanger pois chiches, légumes et persil dans un grand saladier.", badge: null },
+      { icone: "🍋", titre: "Assaisonner",              detail: "Arroser de jus de citron et d'huile d'olive généreuse. Saler, poivrer. Ajouter cumin et paprika selon goût. Bien mélanger et réfrigérer 15 min avant de servir.", badge: "⏱ 15 min au frais" },
+    ]
+  },
+
+  gaspacho: {
+    base: 4,
+    temps: "15 min + 2h frigo",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "Le gaspacho andalou glacé — soupe froide de tomates crue, concombre et poivron. Fraîcheur absolue en été.",
+    tableauGaspacho: [
+      { nb:  1, tomates: "150 g", concombre: "¼",  poivron: "¼",  pain: "1 tr.", ail: "¼ gousse" },
+      { nb:  2, tomates: "300 g", concombre: "½",  poivron: "½",  pain: "2 tr.", ail: "½ gousse" },
+      { nb:  3, tomates: "450 g", concombre: "¾",  poivron: "½",  pain: "3 tr.", ail: "½ gousse" },
+      { nb:  4, tomates: "600 g", concombre: "1",  poivron: "1",  pain: "4 tr.", ail: "1 gousse" },
+      { nb:  5, tomates: "750 g", concombre: "1",  poivron: "1",  pain: "5 tr.", ail: "1 gousse" },
+      { nb:  6, tomates: "900 g", concombre: "1½", poivron: "1",  pain: "6 tr.", ail: "1 gousse" },
+      { nb:  7, tomates: "1050 g",concombre: "1½", poivron: "1½", pain: "7 tr.", ail: "2 gousses" },
+      { nb:  8, tomates: "1200 g",concombre: "2",  poivron: "2",  pain: "8 tr.", ail: "2 gousses" },
+      { nb:  9, tomates: "1350 g",concombre: "2",  poivron: "2",  pain: "9 tr.", ail: "2 gousses" },
+      { nb: 10, tomates: "1500 g",concombre: "2½", poivron: "2",  pain: "10 tr.",ail: "2 gousses" },
+      { nb: 11, tomates: "1650 g",concombre: "2½", poivron: "2½", pain: "11 tr.",ail: "3 gousses" },
+      { nb: 12, tomates: "1800 g",concombre: "3",  poivron: "3",  pain: "12 tr.",ail: "3 gousses" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Préparer les légumes",     detail: "Laver les tomates et les couper en quartiers. Éplucher et épépiner le concombre. Épépiner le poivron rouge. Faire tremper le pain rassis dans l'eau 5 min, essorer.", badge: null },
+      { icone: "🌀", titre: "Mixer",                    detail: "Mixer ensemble tomates, concombre, poivron, pain, ail et un filet d'huile d'olive jusqu'à obtenir une soupe lisse.", badge: "⏱ 2 min mixer" },
+      { icone: "🧂", titre: "Assaisonner",              detail: "Ajouter vinaigre de Xérès (ou de vin), sel, poivre. Mixer encore. Goûter et ajuster l'assaisonnement.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer",              detail: "Placer au réfrigérateur jusqu'à ce que le gaspacho soit bien froid. Servir avec une garniture de dés de légumes et un filet d'huile d'olive.", badge: "⏱ 2h minimum" },
+    ]
+  },
+
+  curryledumes: {
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍛",
+    description: "Un curry de légumes crémeux au lait de coco — épicé, parfumé et 100% végétarien. Réconfortant et nourrissant.",
+    ingredients: {
+      "Lait de coco (ml)": 400,
+      "Pois chiches (g)": 400,
+      "Tomates concassées (g)": 400,
+      "Épinards (g)": 100,
+      "Oignon": 1,
+      "Ail (gousses)": 3,
+      "Gingembre frais (cm)": 3,
+      "Curry en poudre (c.à.s)": 2,
+    },
+    etapes: [
+      { icone: "🧅", titre: "Faire revenir les aromates",detail: "Faire chauffer un filet d'huile dans une grande poêle. Faire revenir l'oignon émincé 5 min. Ajouter l'ail et le gingembre râpé. Cuire 2 min.", badge: null },
+      { icone: "🌶️", titre: "Ajouter les épices",      detail: "Ajouter le curry, le cumin et le curcuma. Torréfier 1 min en remuant pour libérer les arômes.", badge: null },
+      { icone: "🍅", titre: "Ajouter les tomates",      detail: "Verser les tomates concassées. Laisser réduire 5 min.", badge: null },
+      { icone: "🥥", titre: "Ajouter lait de coco + pois chiches", detail: "Verser le lait de coco et les pois chiches égouttés. Bien mélanger. Laisser mijoter à feu moyen.", badge: "⏱ 15 min" },
+      { icone: "🌿", titre: "Ajouter les épinards",     detail: "Ajouter les épinards frais. Laisser 2 min pour les faire fondre. Rectifier l'assaisonnement. Servir avec du riz basmati ou du pain naan.", badge: null },
+    ]
+  },
   houmous: {
     base: 6,
     temps: "10 min",
@@ -1600,6 +1887,95 @@ function htmlTableauPainDeMieColonnes(l) {
     <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
 }
 
+function htmlTableauOvernightOatsColonnes(l) {
+  return col(`
+    <tr><th>🌾 Pots</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Flocons d'avoine</th><td>${l.flocons}</td></tr>
+    <tr><th>🥛 Lait végétal</th><td>${l.lait}</td></tr>
+    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
+    <tr><th>🌱 Graines de chia</th><td>${l.chia}</td></tr>
+    <tr><th>🍯 Miel / sirop d'érable</th><td>${l.miel}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🎨 Toppings (selon goût)</th></tr>
+    <tr><th>🍓 Fruits frais</th><td>1 poignée / pot</td></tr>
+    <tr><th>🌰 Noix / amandes</th><td>selon goût</td></tr>`);
+}
+function htmlTableauBuddhaBowlColonnes(l) {
+  return col(`
+    <tr><th>🥙 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Quinoa</th><td>${l.quinoa}</td></tr>
+    <tr><th>🍠 Patate douce</th><td>${l.patatedouce}</td></tr>
+    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
+    <tr><th>🥬 Épinards frais</th><td>${l.epinards}</td></tr>
+    <tr><th>🥑 Avocat</th><td>${l.avocat}</td></tr>
+    <tr><th>🫒 Tahini (sauce)</th><td>${l.tahini}</td></tr>
+    <tr><th>🍋 Citron + ail</th><td>selon goût</td></tr>`);
+}
+function htmlTableauSoupeMisoColonnes(l) {
+  return col(`
+    <tr><th>🍜 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>💧 Eau (+ dashi)</th><td>${l.eau}</td></tr>
+    <tr><th>🌿 Pâte miso</th><td>${l.miso}</td></tr>
+    <tr><th>🧀 Tofu soyeux</th><td>${l.tofu}</td></tr>
+    <tr><th>🌊 Wakamé séché</th><td>${l.wakame}</td></tr>
+    <tr><th>🌿 Ciboule</th><td>${l.ciboule} tige(s)</td></tr>`);
+}
+function htmlTableauWrapPouletColonnes(l) {
+  return col(`
+    <tr><th>🌯 Wraps</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🫓 Tortillas</th><td>${l.tortilla}</td></tr>
+    <tr><th>🥬 Laitue</th><td>${l.laitue}</td></tr>
+    <tr><th>🍅 Tomate</th><td>${l.tomate}</td></tr>
+    <tr><th>🥛 Yaourt grec (sauce)</th><td>${l.yaourt}</td></tr>
+    <tr><th>🍋 Citron + herbes</th><td>selon goût</td></tr>`);
+}
+function htmlTableauEnergyBallsColonnes(l) {
+  return col(`
+    <tr><th>⚡ Balls</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌴 Dattes Medjool</th><td>${l.dattes}</td></tr>
+    <tr><th>🌰 Amandes</th><td>${l.amandes}</td></tr>
+    <tr><th>🌾 Flocons d'avoine</th><td>${l.flocons}</td></tr>
+    <tr><th>🍫 Cacao en poudre</th><td>${l.cacao}</td></tr>
+    <tr><th>🥥 Noix de coco râpée</th><td>${l.coco}</td></tr>`);
+}
+function htmlTableauPancakesProteineColonnes(l) {
+  return col(`
+    <tr><th>💪 Pancakes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍌 Banane mûre</th><td>${l.banane}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>💪 Poudre de protéines (opt.)</th><td>${l.proteine}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`);
+}
+function htmlTableauBowlAcaiColonnes(l) {
+  return col(`
+    <tr><th>🫐 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫐 Purée açaï surgelée</th><td>${l.acai}</td></tr>
+    <tr><th>🍌 Banane congelée</th><td>${l.banane}</td></tr>
+    <tr><th>🥥 Lait végétal</th><td>${l.lait}</td></tr>
+    <tr><th>🌾 Granola</th><td>${l.granola}</td></tr>
+    <tr><th>🍓 Fruits frais</th><td>${l.fruits}</td></tr>`);
+}
+function htmlTableauSaladePoisChichesColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
+    <tr><th>🧅 Oignon rouge</th><td>${l.oignon}</td></tr>
+    <tr><th>🌿 Persil</th><td>${l.persil}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+function htmlTableauGaspachoColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
+    <tr><th>🫑 Poivron rouge</th><td>${l.poivron}</td></tr>
+    <tr><th>🍞 Pain rassis</th><td>${l.pain}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
+}
+
 function htmlTableauTiramisuColonnes(l) {
   return col(`
     <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
@@ -1890,6 +2266,79 @@ function calculer() {
     document.getElementById("resultat").innerHTML = ligne
       ? `<h3>${personnes} tranche${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPainDeMieColonnes(ligne) + htmlPrixCalories("paindemie", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 20.</p>`;
+    return;
+  }
+
+  // Overnight oats
+  if (recette === "overnightoats" && data.tableauOvernightOats) {
+    const ligne = data.tableauOvernightOats.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} pot${personnes > 1 ? "s" : ""}</h3>` + htmlTableauOvernightOatsColonnes(ligne) + htmlPrixCalories("overnightoats", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+  // Buddha bowl
+  if (recette === "buddhaBowl" && data.tableauBuddhaBowl) {
+    const ligne = data.tableauBuddhaBowl.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauBuddhaBowlColonnes(ligne) + htmlPrixCalories("buddhaBowl", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+  // Soupe miso
+  if (recette === "soupemiso" && data.tableauSoupeMiso) {
+    const ligne = data.tableauSoupeMiso.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSoupeMisoColonnes(ligne) + htmlPrixCalories("soupemiso", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+  // Wrap poulet
+  if (recette === "wrappoulet" && data.tableauWrapPoulet) {
+    const ligne = data.tableauWrapPoulet.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} wrap${personnes > 1 ? "s" : ""}</h3>` + htmlTableauWrapPouletColonnes(ligne) + htmlPrixCalories("wrappoulet", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+  // Energy balls
+  if (recette === "energyballs" && data.tableauEnergyBalls) {
+    const ligne = data.tableauEnergyBalls.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} ball${personnes > 1 ? "s" : ""}</h3>` + htmlTableauEnergyBallsColonnes(ligne) + htmlPrixCalories("energyballs", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir 4, 8, 12, 16, 20 ou 24.</p>`;
+    return;
+  }
+  // Pancakes protéinés
+  if (recette === "pancakesproteine" && data.tableauPancakesProteine) {
+    const ligne = data.tableauPancakesProteine.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} pancake${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPancakesProteineColonnes(ligne) + htmlPrixCalories("pancakesproteine", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir 2, 4, 6, 8, 10 ou 12.</p>`;
+    return;
+  }
+  // Bowl açaï
+  if (recette === "bowlacai" && data.tableauBowlAcai) {
+    const ligne = data.tableauBowlAcai.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauBowlAcaiColonnes(ligne) + htmlPrixCalories("bowlacai", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+  // Salade pois chiches
+  if (recette === "saladepoischiches" && data.tableauSaladePoisChiches) {
+    const ligne = data.tableauSaladePoisChiches.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSaladePoisChichesColonnes(ligne) + htmlPrixCalories("saladepoischiches", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
+    return;
+  }
+  // Gaspacho
+  if (recette === "gaspacho" && data.tableauGaspacho) {
+    const ligne = data.tableauGaspacho.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaspachoColonnes(ligne) + htmlPrixCalories("gaspacho", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
     return;
   }
 
@@ -2214,7 +2663,17 @@ const prixCalories = {
   bananabread:      { base: 8,  baseLabel: "8 tranches",   prixTotal: 2.80,  calTotal: 2400, unite: "tranche" },
   granola:          { base: 8,  baseLabel: "8 portions",   prixTotal: 4.00,  calTotal: 3200, unite: "portion" },
   veloutelegumes:   { base: 4,  baseLabel: "4 personnes",  prixTotal: 3.50,  calTotal: 600,  unite: "personne" },
-  houmous:          { base: 6,  baseLabel: "6 personnes",  prixTotal: 2.50,  calTotal: 900,  unite: "personne" },
+  houmous:          { base: 6,  baseLabel: "6 personnes",  prixTotal: 2.50,  calTotal: 900,   unite: "personne" },
+  overnightoats:    { base: 1,  baseLabel: "1 pot",         prixTotal: 1.20,  calTotal: 350,   unite: "pot" },
+  buddhaBowl:       { base: 2,  baseLabel: "2 bols",        prixTotal: 5.00,  calTotal: 900,   unite: "bol" },
+  soupemiso:        { base: 2,  baseLabel: "2 personnes",   prixTotal: 2.50,  calTotal: 200,   unite: "personne" },
+  wrappoulet:       { base: 2,  baseLabel: "2 wraps",       prixTotal: 4.00,  calTotal: 700,   unite: "wrap" },
+  energyballs:      { base: 12, baseLabel: "12 balls",      prixTotal: 3.00,  calTotal: 1200,  unite: "ball" },
+  pancakesproteine: { base: 2,  baseLabel: "2 pancakes",    prixTotal: 1.50,  calTotal: 300,   unite: "pancake" },
+  bowlacai:         { base: 1,  baseLabel: "1 bol",         prixTotal: 4.00,  calTotal: 400,   unite: "bol" },
+  saladepoischiches:{ base: 4,  baseLabel: "4 personnes",   prixTotal: 3.00,  calTotal: 800,   unite: "personne" },
+  gaspacho:         { base: 4,  baseLabel: "4 personnes",   prixTotal: 3.50,  calTotal: 400,   unite: "personne" },
+  curryledumes:     { base: 4,  baseLabel: "4 personnes",   prixTotal: 4.00,  calTotal: 1200,  unite: "personne" },
 };
 
 function htmlPrixCalories(nom, quantite) {
@@ -2292,6 +2751,33 @@ function choisirRecette(nom) {
   } else if (nom === "gaufres" && data.tableauGaufres) {
     const ligne = data.tableauGaufres.find(l => l.nb === personnes);
     if (ligne) listeIngredients = htmlTableauGaufresColonnes(ligne);
+  } else if (nom === "overnightoats" && data.tableauOvernightOats) {
+    const ligne = data.tableauOvernightOats.find(l => l.nb === personnes) || data.tableauOvernightOats[0];
+    listeIngredients = htmlTableauOvernightOatsColonnes(ligne);
+  } else if (nom === "buddhaBowl" && data.tableauBuddhaBowl) {
+    const ligne = data.tableauBuddhaBowl.find(l => l.nb === personnes) || data.tableauBuddhaBowl[1];
+    listeIngredients = htmlTableauBuddhaBowlColonnes(ligne);
+  } else if (nom === "soupemiso" && data.tableauSoupeMiso) {
+    const ligne = data.tableauSoupeMiso.find(l => l.nb === personnes) || data.tableauSoupeMiso[1];
+    listeIngredients = htmlTableauSoupeMisoColonnes(ligne);
+  } else if (nom === "wrappoulet" && data.tableauWrapPoulet) {
+    const ligne = data.tableauWrapPoulet.find(l => l.nb === personnes) || data.tableauWrapPoulet[1];
+    listeIngredients = htmlTableauWrapPouletColonnes(ligne);
+  } else if (nom === "energyballs" && data.tableauEnergyBalls) {
+    const ligne = data.tableauEnergyBalls.find(l => l.nb === personnes) || data.tableauEnergyBalls[2];
+    listeIngredients = htmlTableauEnergyBallsColonnes(ligne);
+  } else if (nom === "pancakesproteine" && data.tableauPancakesProteine) {
+    const ligne = data.tableauPancakesProteine.find(l => l.nb === personnes) || data.tableauPancakesProteine[1];
+    listeIngredients = htmlTableauPancakesProteineColonnes(ligne);
+  } else if (nom === "bowlacai" && data.tableauBowlAcai) {
+    const ligne = data.tableauBowlAcai.find(l => l.nb === personnes) || data.tableauBowlAcai[0];
+    listeIngredients = htmlTableauBowlAcaiColonnes(ligne);
+  } else if (nom === "saladepoischiches" && data.tableauSaladePoisChiches) {
+    const ligne = data.tableauSaladePoisChiches.find(l => l.nb === personnes) || data.tableauSaladePoisChiches[3];
+    listeIngredients = htmlTableauSaladePoisChichesColonnes(ligne);
+  } else if (nom === "gaspacho" && data.tableauGaspacho) {
+    const ligne = data.tableauGaspacho.find(l => l.nb === personnes) || data.tableauGaspacho[3];
+    listeIngredients = htmlTableauGaspachoColonnes(ligne);
   } else if (nom === "smoothiebowl" && data.tableauSmoothie) {
     const ligne = data.tableauSmoothie.find(l => l.nb === personnes) || data.tableauSmoothie[1];
     listeIngredients = htmlTableauSmoothieColonnes(ligne);
@@ -2461,6 +2947,16 @@ function choisirRecette(nom) {
     "smoothiebowl":      "Smoothie Bowl",
     "goumeau":           "Galette de Goumeau",
     "painbaguette":      "Pain — Baguette",
+    "overnightoats":     "Overnight Oats",
+    "buddhaBowl":        "Buddha Bowl",
+    "soupemiso":         "Soupe Miso",
+    "wrappoulet":        "Wrap au Poulet",
+    "energyballs":       "Energy Balls",
+    "pancakesproteine":  "Pancakes Protéinés",
+    "bowlacai":          "Bowl Açaï",
+    "saladepoischiches": "Salade de Pois Chiches",
+    "gaspacho":          "Gaspacho",
+    "curryledumes":      "Curry de Légumes",
     "paindemie":         "Pain de mie",
     "patefeuilletee":    "Pâte feuilletée",
     "patebrisee":        "Pâte brisée",
