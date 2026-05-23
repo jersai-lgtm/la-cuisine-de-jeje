@@ -746,8 +746,8 @@ function afficherSection(section, btn) {
     menuCats.style.display = "none";
   } else {
     calc.style.display = "none";
-    cartes.style.display = "flex";
-    menuCats.style.display = "flex";
+    cartes.style.display = "";  // Laisser le CSS décider (flex ou grid selon écran)
+    menuCats.style.display = "";
   }
 }
 </script>
