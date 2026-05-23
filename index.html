@@ -74,6 +74,8 @@
   <button class="pays-btn" onclick="filtrerPays('espagne')">🇪🇸 Espagne</button>
   <button class="pays-btn" onclick="filtrerPays('maroc')">🇲🇦 Maroc</button>
   <button class="pays-btn" onclick="filtrerPays('cuba')">🇨🇺 Cuba</button>
+  <button class="pays-btn" onclick="filtrerPays('vietnam')">🇻🇳 Vietnam</button>
+  <button class="pays-btn" onclick="filtrerPays('senegal')">🇸🇳 Sénégal</button>
 </div>
 
 <!-- CARTES RECETTES -->
@@ -1239,6 +1241,236 @@
     </div>
   </div>
 
+
+  <!-- 20 NOUVELLES RECETTES -->
+  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('ramenjaponais', 'calc-ramenjaponais')">
+    <img src="images/ramenjaponais.jpg" alt="Ramen Japonais">
+    <div class="carte-info">
+      <h2>🍜 Ramen Japonais</h2>
+      <p>⏱ 45 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-ramenjaponais">
+        <button class="calc-btn" onclick="calculerCarte('ramenjaponais', 'calc-ramenjaponais')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="japon" onclick="ouvrirFiche('gyoza', 'calc-gyoza')">
+    <img src="images/gyoza.jpg" alt="Gyoza">
+    <div class="carte-info">
+      <h2>🥟 Gyoza</h2>
+      <p>⏱ 45 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="20" min="5" max="30" class="calc-input" id="calc-gyoza">
+        <button class="calc-btn" onclick="calculerCarte('gyoza', 'calc-gyoza')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="inde" onclick="ouvrirFiche('tikamasala', 'calc-tikamasala')">
+    <img src="images/tikamasala.jpg" alt="Poulet Tikka Masala">
+    <div class="carte-info">
+      <h2>🍗 Poulet Tikka Masala</h2>
+      <p>⏱ 50 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-tikamasala">
+        <button class="calc-btn" onclick="calculerCarte('tikamasala', 'calc-tikamasala')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="vietnam" onclick="ouvrirFiche('phovietnambien', 'calc-phovietnambien')">
+    <img src="images/phovietnambien.jpg" alt="Pho Vietnamien">
+    <div class="carte-info">
+      <h2>🍲 Pho Vietnamien</h2>
+      <p>⏱ 4h • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-phovietnambien">
+        <button class="calc-btn" onclick="calculerCarte('phovietnambien', 'calc-phovietnambien')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="pizzas" data-pays="italie" onclick="ouvrirFiche('pizzamargherita', 'calc-pizzamargherita')">
+    <img src="images/pizzamargherita.jpg" alt="Pizza Margherita">
+    <div class="carte-info">
+      <h2>🍕 Pizza Margherita</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-pizzamargherita">
+        <button class="calc-btn" onclick="calculerCarte('pizzamargherita', 'calc-pizzamargherita')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('carbonara', 'calc-carbonara')">
+    <img src="images/carbonara.jpg" alt="Carbonara">
+    <div class="carte-info">
+      <h2>🍝 Carbonara</h2>
+      <p>⏱ 20 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-carbonara">
+        <button class="calc-btn" onclick="calculerCarte('carbonara', 'calc-carbonara')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="senegal" onclick="ouvrirFiche('ceebujen', 'calc-ceebujen')">
+    <img src="images/ceebujen.jpg" alt="Thiéboudienne">
+    <div class="carte-info">
+      <h2>🐟 Thiéboudienne</h2>
+      <p>⏱ 1h30 • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-ceebujen">
+        <button class="calc-btn" onclick="calculerCarte('ceebujen', 'calc-ceebujen')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="senegal" onclick="ouvrirFiche('mafewestafricain', 'calc-mafewestafricain')">
+    <img src="images/mafewestafricain.jpg" alt="Maafé">
+    <div class="carte-info">
+      <h2>🥜 Maafé</h2>
+      <p>⏱ 1h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-mafewestafricain">
+        <button class="calc-btn" onclick="calculerCarte('mafewestafricain', 'calc-mafewestafricain')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('gnocchismaison', 'calc-gnocchismaison')">
+    <img src="images/gnocchismaison.jpg" alt="Gnocchis Maison">
+    <div class="carte-info">
+      <h2>🥔 Gnocchis Maison</h2>
+      <p>⏱ 1h • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-gnocchismaison">
+        <button class="calc-btn" onclick="calculerCarte('gnocchismaison', 'calc-gnocchismaison')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="liban" onclick="ouvrirFiche('falafel', 'calc-falafel')">
+    <img src="images/falafel.jpg" alt="Falafel">
+    <div class="carte-info">
+      <h2>🧆 Falafel</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="4" max="24" class="calc-input" id="calc-falafel">
+        <button class="calc-btn" onclick="calculerCarte('falafel', 'calc-falafel')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="inde" onclick="ouvrirFiche('poulettandoori', 'calc-poulettandoori')">
+    <img src="images/poulettandoori.jpg" alt="Poulet Tandoori">
+    <div class="carte-info">
+      <h2>🍗 Poulet Tandoori</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-poulettandoori">
+        <button class="calc-btn" onclick="calculerCarte('poulettandoori', 'calc-poulettandoori')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="chine" onclick="ouvrirFiche('pekinduckeasy', 'calc-pekinduckeasy')">
+    <img src="images/pekinduckeasy.jpg" alt="Canard Laqué Pékinois">
+    <div class="carte-info">
+      <h2>🦆 Canard Laqué Pékinois</h2>
+      <p>⏱ 2h30 • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-pekinduckeasy">
+        <button class="calc-btn" onclick="calculerCarte('pekinduckeasy', 'calc-pekinduckeasy')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('ossobuco', 'calc-ossobuco')">
+    <img src="images/ossobuco.jpg" alt="Osso Buco">
+    <div class="carte-info">
+      <h2>🦴 Osso Buco</h2>
+      <p>⏱ 2h • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-ossobuco">
+        <button class="calc-btn" onclick="calculerCarte('ossobuco', 'calc-ossobuco')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="maroc" onclick="ouvrirFiche('tajinemouton', 'calc-tajinemouton')">
+    <img src="images/tajinemouton.jpg" alt="Tajine d'Agneau">
+    <div class="carte-info">
+      <h2>🏺 Tajine d'Agneau</h2>
+      <p>⏱ 2h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-tajinemouton">
+        <button class="calc-btn" onclick="calculerCarte('tajinemouton', 'calc-tajinemouton')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('moelleuxchocolat', 'calc-moelleuxchocolat')">
+    <img src="images/moelleuxchocolat.jpg" alt="Moelleux au Chocolat">
+    <div class="carte-info">
+      <h2>🍫 Moelleux au Chocolat</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-moelleuxchocolat">
+        <button class="calc-btn" onclick="calculerCarte('moelleuxchocolat', 'calc-moelleuxchocolat')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="usa" onclick="ouvrirFiche('cheesecake', 'calc-cheesecake')">
+    <img src="images/cheesecake.jpg" alt="Cheesecake">
+    <div class="carte-info">
+      <h2>🍰 Cheesecake</h2>
+      <p>⏱ 1h • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="8" min="2" max="14" class="calc-input" id="calc-cheesecake">
+        <button class="calc-btn" onclick="calculerCarte('cheesecake', 'calc-cheesecake')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" data-pays="france" onclick="ouvrirFiche('painauchocolat', 'calc-painauchocolat')">
+    <img src="images/painauchocolat.jpg" alt="Pain au Chocolat">
+    <div class="carte-info">
+      <h2>🍫 Pain au Chocolat</h2>
+      <p>⏱ 3h • ⭐⭐⭐ Difficile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="8" min="2" max="14" class="calc-input" id="calc-painauchocolat">
+        <button class="calc-btn" onclick="calculerCarte('painauchocolat', 'calc-painauchocolat')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('gateaubasque', 'calc-gateaubasque')">
+    <img src="images/gateaubasque.jpg" alt="Gâteau Basque">
+    <div class="carte-info">
+      <h2>🎂 Gâteau Basque</h2>
+      <p>⏱ 1h30 • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="8" min="2" max="14" class="calc-input" id="calc-gateaubasque">
+        <button class="calc-btn" onclick="calculerCarte('gateaubasque', 'calc-gateaubasque')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('canelebordelais', 'calc-canelebordelais')">
+    <img src="images/canelebordelais.jpg" alt="Cannelés Bordelais">
+    <div class="carte-info">
+      <h2>🏺 Cannelés Bordelais</h2>
+      <p>⏱ 24h+15 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="12" min="4" max="24" class="calc-input" id="calc-canelebordelais">
+        <button class="calc-btn" onclick="calculerCarte('canelebordelais', 'calc-canelebordelais')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <!-- SECTION MENU THÉMATIQUE -->
@@ -1423,6 +1655,25 @@
     <option value="verrinetiramisu">Verrines Tiramisu</option>
     <option value="churros">Churros</option>
     <option value="potaufeu">Pot-au-Feu</option>
+    <option value="ramenjaponais">Ramen Japonais</option>
+    <option value="gyoza">Gyoza</option>
+    <option value="tikamasala">Poulet Tikka Masala</option>
+    <option value="phovietnambien">Pho Vietnamien</option>
+    <option value="pizzamargherita">Pizza Margherita</option>
+    <option value="carbonara">Carbonara</option>
+    <option value="ceebujen">Thiéboudienne</option>
+    <option value="mafewestafricain">Maafé</option>
+    <option value="gnocchismaison">Gnocchis Maison</option>
+    <option value="falafel">Falafel</option>
+    <option value="poulettandoori">Poulet Tandoori</option>
+    <option value="pekinduckeasy">Canard Laqué Pékinois</option>
+    <option value="ossobuco">Osso Buco</option>
+    <option value="tajinemouton">Tajine d'Agneau</option>
+    <option value="moelleuxchocolat">Moelleux au Chocolat</option>
+    <option value="cheesecake">Cheesecake</option>
+    <option value="painauchocolat">Pain au Chocolat</option>
+    <option value="gateaubasque">Gâteau Basque</option>
+    <option value="canelebordelais">Cannelés Bordelais</option>
     <option value="parisbrestreinterpretation">Paris-Brest</option>
     <option value="tartecitron">Tarte au citron</option>
     <option value="tiramisu">Tiramisu</option>
