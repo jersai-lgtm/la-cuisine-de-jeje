@@ -1241,6 +1241,79 @@
 
 </section>
 
+<!-- SECTION MENU THÉMATIQUE -->
+<section class="planificateur-section" id="section-festif" style="display:none">
+
+  <div class="plan-tabs">
+    <button class="plan-tab" id="tab-semaine2" onclick="switchPlanTab('semaine')">📅 Semaine</button>
+    <button class="plan-tab active" id="tab-festif2" onclick="switchPlanTab('festif')">🎉 Menu Thématique</button>
+  </div>
+
+  <div class="plan-form" id="festif-form">
+    <h2>🎉 Menu Thématique</h2>
+    <p class="plan-subtitle">Génère un menu complet pour une occasion spéciale</p>
+
+    <div class="plan-field">
+      <label>🎭 Type de soirée</label>
+      <div class="plan-tags" id="festif-themes">
+        <button class="plan-tag plan-tag-active" onclick="selectTheme(this)" data-val="festif">🎉 Soirée festive</button>
+        <button class="plan-tag" onclick="selectTheme(this)" data-val="estival">🌞 Menu estival</button>
+        <button class="plan-tag" onclick="selectTheme(this)" data-val="hivernal">❄️ Menu hivernal</button>
+        <button class="plan-tag" onclick="selectTheme(this)" data-val="mexicain">🇲🇽 Soirée mexicaine</button>
+        <button class="plan-tag" onclick="selectTheme(this)" data-val="italien">🇮🇹 Soirée italienne</button>
+        <button class="plan-tag" onclick="selectTheme(this)" data-val="healthy">🥗 Menu healthy</button>
+        <button class="plan-tag" onclick="selectTheme(this)" data-val="romantique">💑 Dîner romantique</button>
+        <button class="plan-tag" onclick="selectTheme(this)" data-val="brunch">☀️ Brunch dominical</button>
+      </div>
+    </div>
+
+    <div class="plan-field">
+      <label>👥 Nombre de personnes</label>
+      <input type="number" id="festif-personnes" value="6" min="1" max="15" class="plan-input">
+    </div>
+
+    <div class="plan-field">
+      <label>🍽️ Structure du menu</label>
+      <div class="plan-tags">
+        <button class="plan-tag plan-tag-active" onclick="toggleTag(this)" data-val="apero">🥂 Apéro / Cocktail</button>
+        <button class="plan-tag plan-tag-active" onclick="toggleTag(this)" data-val="entree">🥗 Entrée</button>
+        <button class="plan-tag plan-tag-active" onclick="toggleTag(this)" data-val="plat">🍽️ Plat</button>
+        <button class="plan-tag plan-tag-active" onclick="toggleTag(this)" data-val="dessert">🍰 Dessert</button>
+      </div>
+    </div>
+
+    <div class="plan-field">
+      <label>🚫 Allergies / À éviter</label>
+      <input type="text" id="festif-allergies" placeholder="ex: noix, lactose, poisson..." class="plan-input-text">
+    </div>
+
+    <button class="plan-btn-generer" onclick="genererMenuFestif()" id="btn-generer-festif">
+      ✨ Générer mon menu
+    </button>
+  </div>
+
+  <!-- RÉSULTAT MENU FESTIF -->
+  <div id="festif-result" style="display:none">
+    <div class="plan-result-header">
+      <h2 id="festif-result-titre">🎉 Menu Festif</h2>
+      <button class="plan-btn-courses" onclick="afficherCoursesFestif()">🛒 Courses</button>
+      <button class="plan-btn-retry" onclick="document.getElementById('festif-form').style.display='block';document.getElementById('festif-result').style.display='none'">⚙️ Modifier</button>
+    </div>
+    <div id="festif-jours"></div>
+    <button class="plan-btn-regenrer" onclick="genererMenuFestif()">🔄 Nouveau menu</button>
+  </div>
+
+  <!-- LISTE DE COURSES FESTIF -->
+  <div id="festif-courses" style="display:none">
+    <div class="plan-result-header">
+      <h2>🛒 Liste de courses</h2>
+      <button class="plan-btn-retry" onclick="document.getElementById('festif-courses').style.display='none';document.getElementById('festif-result').style.display='block'">← Retour</button>
+    </div>
+    <div id="festif-courses-content"></div>
+  </div>
+
+</section>
+
 <!-- MODAL RÉSULTAT CALCULATEUR -->
 <div id="modal-calc" class="modal-calc" onclick="fermerModal()">
   <div class="modal-contenu fiche-complete" onclick="event.stopPropagation()">
@@ -1369,6 +1442,12 @@
 <!-- SECTION PLANIFICATEUR -->
 <section class="planificateur-section" id="section-planificateur" style="display:none">
 
+  <!-- ONGLETS PLANIFICATEUR -->
+  <div class="plan-tabs">
+    <button class="plan-tab active" id="tab-semaine" onclick="switchPlanTab('semaine')">📅 Semaine</button>
+    <button class="plan-tab" id="tab-festif" onclick="switchPlanTab('festif')">🎉 Menu Thématique</button>
+  </div>
+
   <!-- FORMULAIRE PRÉFÉRENCES -->
   <div class="plan-form" id="plan-form">
     <h2>📅 Planificateur de menus</h2>
@@ -1458,6 +1537,238 @@ function calculerCarteBrioche(version) {
 // ==============================
 // PLANIFICATEUR DE MENUS
 // ==============================
+
+// Switch entre onglets planificateur
+function switchPlanTab(tab) {
+  const sectionSemaine = document.getElementById("section-planificateur");
+  const sectionFestif  = document.getElementById("section-festif");
+
+  // Mettre à jour tous les onglets
+  ["tab-semaine","tab-semaine2"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle("active", tab === "semaine");
+  });
+  ["tab-festif","tab-festif2"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle("active", tab === "festif");
+  });
+
+  if (tab === "semaine") {
+    sectionSemaine.style.display = "block";
+    sectionFestif.style.display  = "none";
+  } else {
+    sectionSemaine.style.display = "none";
+    sectionFestif.style.display  = "block";
+  }
+}
+
+// Sélection thème festif (un seul à la fois)
+function selectTheme(btn) {
+  document.querySelectorAll("#festif-themes .plan-tag").forEach(b => b.classList.remove("plan-tag-active"));
+  btn.classList.add("plan-tag-active");
+}
+
+// Menus thématiques prédéfinis
+const menusFestifs = {
+  festif:    {
+    label: "🎉 Soirée Festive",
+    apero:   ["mojito","spritz","sangria","cosmopolitan"],
+    entree:  ["saladeniçoise","saladecesar","saladeavocatcrevettes","saumongravlax"],
+    plat:    ["boeufbourguignon","risotto","paella","burgermaison"],
+    dessert: ["tiramisu","mousseauchocolat","cremebrulee","fondantchocolat"],
+  },
+  estival: {
+    label: "🌞 Menu Estival",
+    apero:   ["spritz","virginmojito","limonademaison","jusPastequeMenuthe"],
+    entree:  ["gaspacho","saladeniçoise","tabulemaison","saladeavocatcrevettes"],
+    plat:    ["paella","salmonteriyaki","souvlaki","saladecesar"],
+    dessert: ["tartecitron","smoothiebowl","bowlacai","clafoutis"],
+  },
+  hivernal: {
+    label: "❄️ Menu Hivernal",
+    apero:   ["sangria","whiskysour","limonademaison"],
+    entree:  ["soupeaoignon","veloutelegumes","saladelentilles"],
+    plat:    ["boeufbourguignon","potaufeu","gratindauphinois","couscous"],
+    dessert: ["fondantchocolat","cremebrulee","ileflottante","tiramisu"],
+  },
+  mexicain: {
+    label: "🇲🇽 Soirée Mexicaine",
+    apero:   ["margarita","virginmojito","limonademaison"],
+    entree:  ["houmous","gaspacho","saladepoischiches"],
+    plat:    ["tacosmaison","currypouletcoco","bolognaisemaison"],
+    dessert: ["churros","mousse au chocolat","bananabread"],
+  },
+  italien: {
+    label: "🇮🇹 Soirée Italienne",
+    apero:   ["spritz","sangria"],
+    entree:  ["saladecesar","saladeniçoise","saladegreque"],
+    plat:    ["risotto","bolognaisemaison","risottoprimavera"],
+    dessert: ["tiramisu","pannacotta","mousseauchocolat"],
+  },
+  healthy: {
+    label: "🥗 Menu Healthy",
+    apero:   ["smoothiemangopassion","jusPastequeMenuthe","virginmojito"],
+    entree:  ["saladequinoa","houmous","gaspacho"],
+    plat:    ["buddhaBowl","wrappoulet","curryledumes","salmonteriyaki"],
+    dessert: ["smoothiebowl","bowlacai","yaourt"],
+  },
+  romantique: {
+    label: "💑 Dîner Romantique",
+    apero:   ["cosmopolitan","spritz","daiquiri"],
+    entree:  ["saumongravlax","saladeavocatcrevettes","saladeniçoise"],
+    plat:    ["salmonteriyaki","risottoprimavera","pouletcitronthym"],
+    dessert: ["cremebrulee","tiramisu","mousseauchocolat","fondantchocolat"],
+  },
+  brunch: {
+    label: "☀️ Brunch Dominical",
+    apero:   ["limonademaison","smoothiemangopassion","citronadementhe"],
+    entree:  ["smoothiebowl","bowlacai","overnightoats"],
+    plat:    ["pancakes","pancakesproteine","shakshuka","croquemonsieur"],
+    dessert: ["muffins","madeleine","bananabread","granola"],
+  },
+};
+
+let menuFestifActuel = null;
+
+async function genererMenuFestif() {
+  const btn = document.getElementById("btn-generer-festif");
+  const personnes = document.getElementById("festif-personnes").value;
+  const allergies = document.getElementById("festif-allergies").value;
+  const themeBtn = document.querySelector("#festif-themes .plan-tag-active");
+  const theme = themeBtn ? themeBtn.dataset.val : "festif";
+  const structure = [...document.querySelectorAll(".plan-form:not(#plan-form) .plan-tag-active:not(#festif-themes .plan-tag-active)")].map(b => b.dataset.val);
+
+  btn.textContent = "⏳ Génération en cours...";
+  btn.disabled = true;
+
+  const themeData = menusFestifs[theme];
+  const recettesDispos = Object.keys(recettes).join(", ");
+
+  const prompt = `Tu es un chef cuisinier. Génère un menu thématique "${themeData.label}" pour ${personnes} personne(s).
+${allergies ? "Éviter : " + allergies : ""}
+Structure souhaitée : ${structure.join(", ")}.
+
+Recettes disponibles : ${recettesDispos}
+
+Suggestions par catégorie :
+- Apéro/Cocktail : ${themeData.apero.join(", ")}
+- Entrée : ${themeData.entree.join(", ")}
+- Plat : ${themeData.plat.join(", ")}
+- Dessert : ${themeData.dessert.join(", ")}
+
+Choisis UNE recette par catégorie demandée parmi les recettes disponibles.
+Réponds UNIQUEMENT en JSON :
+{
+  "theme": "${themeData.label}",
+  "menu": [
+    {"categorie": "🥂 Apéro", "recette": "nomRecette", "note": "courte note"},
+    {"categorie": "🥗 Entrée", "recette": "nomRecette", "note": "courte note"},
+    {"categorie": "🍽️ Plat",  "recette": "nomRecette", "note": "courte note"},
+    {"categorie": "🍰 Dessert","recette": "nomRecette", "note": "courte note"}
+  ]
+}`;
+
+  try {
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-20250514",
+        max_tokens: 500,
+        messages: [{ role: "user", content: prompt }]
+      })
+    });
+    const data = await response.json();
+    const text = data.content[0].text;
+    const clean = text.replace(/```json|```/g, "").trim();
+    menuFestifActuel = JSON.parse(clean);
+  } catch(err) {
+    // Fallback aléatoire
+    const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+    menuFestifActuel = {
+      theme: themeData.label,
+      menu: [
+        { categorie: "🥂 Apéro",  recette: pick(themeData.apero),   note: "Pour bien commencer la soirée !" },
+        { categorie: "🥗 Entrée", recette: pick(themeData.entree),  note: "Légère et savoureuse." },
+        { categorie: "🍽️ Plat",   recette: pick(themeData.plat),    note: "Le plat star de la soirée !" },
+        { categorie: "🍰 Dessert",recette: pick(themeData.dessert), note: "Une touche sucrée pour finir." },
+      ].filter(c => structure.length === 0 || structure.includes(c.categorie.split(" ")[1].toLowerCase()) || structure.includes("apero") && c.categorie.includes("Apéro") || structure.includes("entree") && c.categorie.includes("Entrée") || structure.includes("plat") && c.categorie.includes("Plat") || structure.includes("dessert") && c.categorie.includes("Dessert"))
+    };
+  }
+
+  afficherMenuFestif(menuFestifActuel, parseInt(personnes));
+  btn.textContent = "✨ Générer mon menu";
+  btn.disabled = false;
+}
+
+function afficherMenuFestif(menu, personnes) {
+  document.getElementById("festif-result-titre").textContent = menu.theme;
+  const container = document.getElementById("festif-jours");
+  container.innerHTML = "";
+
+  menu.menu.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "plan-jour";
+    div.innerHTML = `
+      <div class="plan-repas-row" style="grid-template-columns:1fr">
+        <div class="plan-repas" onclick="ouvrirRecettePlan('${item.recette}', ${personnes})" style="text-align:left;display:flex;align-items:center;gap:14px">
+          <div style="font-size:32px">${getEmoji(item.recette)}</div>
+          <div>
+            <div class="plan-repas-label">${item.categorie}</div>
+            <div class="plan-repas-nom" style="font-size:16px">${getNomRecette(item.recette)}</div>
+            <div class="plan-repas-note">${item.note}</div>
+          </div>
+        </div>
+      </div>`;
+    container.appendChild(div);
+  });
+
+  // Sauvegarder
+  try { sessionStorage.setItem("cuisineJeje_festif", JSON.stringify({menu, personnes})); } catch(e) {}
+
+  document.getElementById("festif-form").style.display = "none";
+  document.getElementById("festif-result").style.display = "block";
+  document.getElementById("festif-courses").style.display = "none";
+}
+
+function afficherCoursesFestif() {
+  if (!menuFestifActuel) return;
+  const personnes = parseInt(document.getElementById("festif-personnes").value);
+  const courses = {};
+
+  menuFestifActuel.menu.forEach(item => {
+    const ingrs = getIngredientsCourses(item.recette, personnes);
+    Object.entries(ingrs).forEach(([nom, data]) => {
+      if (!courses[nom]) courses[nom] = { qte: 0, raw: null };
+      if (typeof data.qte === "number" && data.qte > 0) courses[nom].qte += data.qte;
+      else if (data.raw) courses[nom].raw = data.raw;
+    });
+  });
+
+  let html = `<p class="courses-subtitle">Pour ${personnes} personne${personnes > 1 ? "s" : ""} — ${menuFestifActuel.menu.length} plats</p>`;
+  html += '<div class="courses-liste">';
+  Object.entries(courses).sort((a,b) => a[0].localeCompare(b[0])).forEach(([nom, data]) => {
+    const qteStr = data.qte > 0 ? (data.qte % 1 === 0 ? data.qte : data.qte.toFixed(0)) : (data.raw || "");
+    html += `<div class="courses-item"><span class="courses-nom">${nom}</span><span class="courses-qte">${qteStr}</span></div>`;
+  });
+  html += "</div>";
+
+  document.getElementById("festif-courses-content").innerHTML = html;
+  document.getElementById("festif-result").style.display = "none";
+  document.getElementById("festif-courses").style.display = "block";
+}
+
+// Charger menu festif sauvegardé
+function chargerMenuFestifAuDemarrage() {
+  try {
+    const raw = sessionStorage.getItem("cuisineJeje_festif");
+    if (!raw) return;
+    const saved = JSON.parse(raw);
+    menuFestifActuel = saved.menu;
+    document.getElementById("festif-form").style.display = "none";
+    afficherMenuFestif(saved.menu, saved.personnes);
+  } catch(e) {}
+}
 
 let menusSemaine = null;
 const STORAGE_KEY = "cuisineJeje_menus";
@@ -1853,10 +2164,12 @@ function afficherSection(section, btn) {
     cartes.style.display = "none";
     menuCats.style.display = "none";
     planif.style.display = "block";
+    document.getElementById("section-festif").style.display = "none";
     searchBar.style.display = "none";
     document.getElementById("menu-categories").style.display = "none";
     document.getElementById("menu-pays").style.display = "none";
     chargerMenusAuDemarrage();
+    chargerMenuFestifAuDemarrage();
   } else {
     calc.style.display = "none";
     cartes.style.display = "";
