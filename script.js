@@ -1999,6 +1999,540 @@ const recettes = {
       { icone: "🥥", titre: "Servir",                   detail: "Verser dans un grand verre. Décorer d'une tranche d'ananas, de noix de coco râpée et d'une paille. Servir immédiatement !", badge: null },
     ]
   },
+
+  ramenjaponais: {
+    base: 2,
+    temps: "45 min",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🍜",
+    description: "Le ramen japonais maison — bouillon riche et parfumé, nouilles élastiques, œuf mollet et garnitures généreuses.",
+    tableauRamen: [
+      { nb:  1, nouilles: "80 g",  bouillon: "400 ml", porc: "80 g",  oeuf: "1",  shiitake: "30 g" },
+      { nb:  2, nouilles: "160 g", bouillon: "800 ml", porc: "160 g", oeuf: "2",  shiitake: "60 g" },
+      { nb:  3, nouilles: "240 g", bouillon: "1.2 L",  porc: "240 g", oeuf: "3",  shiitake: "90 g" },
+      { nb:  4, nouilles: "320 g", bouillon: "1.6 L",  porc: "320 g", oeuf: "4",  shiitake: "120 g"},
+      { nb:  5, nouilles: "400 g", bouillon: "2 L",    porc: "400 g", oeuf: "5",  shiitake: "150 g"},
+      { nb:  6, nouilles: "480 g", bouillon: "2.4 L",  porc: "480 g", oeuf: "6",  shiitake: "180 g"},
+      { nb:  7, nouilles: "560 g", bouillon: "2.8 L",  porc: "560 g", oeuf: "7",  shiitake: "210 g"},
+      { nb:  8, nouilles: "640 g", bouillon: "3.2 L",  porc: "640 g", oeuf: "8",  shiitake: "240 g"},
+      { nb:  9, nouilles: "720 g", bouillon: "3.6 L",  porc: "720 g", oeuf: "9",  shiitake: "270 g"},
+      { nb: 10, nouilles: "800 g", bouillon: "4 L",    porc: "800 g", oeuf: "10", shiitake: "300 g"},
+      { nb: 11, nouilles: "880 g", bouillon: "4.4 L",  porc: "880 g", oeuf: "11", shiitake: "330 g"},
+      { nb: 12, nouilles: "960 g", bouillon: "4.8 L",  porc: "960 g", oeuf: "12", shiitake: "360 g"},
+      { nb: 13, nouilles: "1040 g",bouillon: "5.2 L",  porc: "1040 g",oeuf: "13", shiitake: "390 g"},
+      { nb: 14, nouilles: "1120 g",bouillon: "5.6 L",  porc: "1120 g",oeuf: "14", shiitake: "420 g"},
+      { nb: 15, nouilles: "1200 g",bouillon: "6 L",    porc: "1200 g",oeuf: "15", shiitake: "450 g"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍖", titre: "Préparer le bouillon",     detail: "Faire bouillir os de porc 5 min, égoutter et rincer. Remettre dans l'eau froide avec gingembre, ail, ciboule. Cuire à petit feu 3h pour un bouillon riche. Assaisonner avec sauce soja, miso et mirin.", badge: "⏱ 3h bouillon" },
+      { icone: "🥚", titre: "Œufs mollets marinés",    detail: "Cuire les œufs 6 min 30 dans l'eau bouillante. Refroidir, écaler. Mariner dans sauce soja + mirin + eau (1:1:1) au moins 2h.", badge: "⏱ 2h marinade" },
+      { icone: "🥩", titre: "Chashu (porc rôti)",       detail: "Rouler le ventre de porc et le ficeler. Faire dorer dans une poêle. Braiser dans sauce soja, mirin, saké et sucre 1h30 à feu doux.", badge: "⏱ 1h30" },
+      { icone: "🍜", titre: "Cuire les nouilles",       detail: "Cuire les nouilles ramen selon le paquet. Bien les égoutter.", badge: "⏱ 2-3 min" },
+      { icone: "🥢", titre: "Dresser le bol",           detail: "Verser le bouillon chaud dans les bols. Ajouter les nouilles. Déposer tranches de chashu, œuf mollet coupé en deux, shiitake sautés, bambou, maïs. Finir avec huile de sésame et nori.", badge: null },
+    ]
+  },
+
+  gyoza: {
+    base: 20,
+    temps: "45 min",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🥟",
+    description: "Les gyoza japonais — raviolis croustillants en dessous, cuits vapeur au-dessus. Farce porc-chou et sauce ponzu.",
+    tableauGyoza: [
+      { nb:  5, pate: "5 feuilles",  porc: "75 g",  chou: "50 g",  ail: "½ gousse", gingembre: "½ cm" },
+      { nb: 10, pate: "10 feuilles", porc: "150 g", chou: "100 g", ail: "1 gousse",  gingembre: "1 cm" },
+      { nb: 15, pate: "15 feuilles", porc: "225 g", chou: "150 g", ail: "1 gousse",  gingembre: "1 cm" },
+      { nb: 20, pate: "20 feuilles", porc: "300 g", chou: "200 g", ail: "2 gousses", gingembre: "2 cm" },
+      { nb: 25, pate: "25 feuilles", porc: "375 g", chou: "250 g", ail: "2 gousses", gingembre: "2 cm" },
+      { nb: 30, pate: "30 feuilles", porc: "450 g", chou: "300 g", ail: "3 gousses", gingembre: "3 cm" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Préparer la farce",        detail: "Ciseler finement le chou. Saler et laisser dégorger 10 min. Presser pour enlever l'eau. Mélanger avec porc haché, ail et gingembre râpés, sauce soja, huile de sésame, sel.", badge: null },
+      { icone: "🥟", titre: "Plier les gyoza",          detail: "Déposer une petite cuillerée de farce au centre de chaque feuille. Humidifier le bord avec de l'eau. Plier en demi-lune en faisant des petits plis sur le côté.", badge: null },
+      { icone: "🍳", titre: "Cuire — yaki-gyoza",       detail: "Chauffer de l'huile dans une poêle. Dorer les gyoza côté plat 2-3 min. Verser 100ml d'eau, couvrir immédiatement. Cuire à la vapeur jusqu'à évaporation.", badge: "⏱ 6-8 min total" },
+      { icone: "🍶", titre: "Sauce ponzu",              detail: "Mélanger sauce soja, vinaigre de riz et huile de sésame. Ajouter piment et gingembre selon goût.", badge: null },
+    ]
+  },
+
+  tikamasala: {
+    base: 4,
+    temps: "50 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Le poulet tikka masala — poulet mariné au yaourt et épices, dans une sauce tomate crémeuse. Le curry britannique préféré !",
+    tableauTikaMasala: [
+      { nb:  1, poulet: "150 g", tomates: "100 g", creme: "50 ml",  yaourt: "50 g",  masala: "1 c.à.c" },
+      { nb:  2, poulet: "300 g", tomates: "200 g", creme: "100 ml", yaourt: "100 g", masala: "2 c.à.c" },
+      { nb:  3, poulet: "450 g", tomates: "300 g", creme: "150 ml", yaourt: "150 g", masala: "3 c.à.c" },
+      { nb:  4, poulet: "600 g", tomates: "400 g", creme: "200 ml", yaourt: "200 g", masala: "4 c.à.c" },
+      { nb:  5, poulet: "750 g", tomates: "500 g", creme: "250 ml", yaourt: "250 g", masala: "5 c.à.c" },
+      { nb:  6, poulet: "900 g", tomates: "600 g", creme: "300 ml", yaourt: "300 g", masala: "6 c.à.c" },
+      { nb:  7, poulet: "1050 g",tomates: "700 g", creme: "350 ml", yaourt: "350 g", masala: "7 c.à.c" },
+      { nb:  8, poulet: "1200 g",tomates: "800 g", creme: "400 ml", yaourt: "400 g", masala: "8 c.à.c" },
+      { nb:  9, poulet: "1350 g",tomates: "900 g", creme: "450 ml", yaourt: "450 g", masala: "9 c.à.c" },
+      { nb: 10, poulet: "1500 g",tomates: "1 kg",  creme: "500 ml", yaourt: "500 g", masala: "10 c.à.c"},
+      { nb: 11, poulet: "1650 g",tomates: "1.1 kg",creme: "550 ml", yaourt: "550 g", masala: "11 c.à.c"},
+      { nb: 12, poulet: "1800 g",tomates: "1.2 kg",creme: "600 ml", yaourt: "600 g", masala: "12 c.à.c"},
+      { nb: 13, poulet: "1950 g",tomates: "1.3 kg",creme: "650 ml", yaourt: "650 g", masala: "13 c.à.c"},
+      { nb: 14, poulet: "2100 g",tomates: "1.4 kg",creme: "700 ml", yaourt: "700 g", masala: "14 c.à.c"},
+      { nb: 15, poulet: "2250 g",tomates: "1.5 kg",creme: "750 ml", yaourt: "750 g", masala: "15 c.à.c"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Marinade tikka",           detail: "Mélanger yaourt, jus de citron, garam masala, curcuma, cumin, gingembre et ail. Y plonger le poulet en cubes. Mariner au frais.", badge: "⏱ 2h minimum" },
+      { icone: "🔥", titre: "Griller le poulet",        detail: "Égoutter le poulet. Faire dorer à la poêle ou au gril à feu vif. Réserver.", badge: "⏱ 8 min" },
+      { icone: "🍅", titre: "Sauce masala",             detail: "Faire revenir oignon, ail, gingembre dans le beurre. Ajouter épices (garam masala, paprika, cumin, coriandre). Puis tomates concassées. Mijoter 15 min.", badge: "⏱ 15 min" },
+      { icone: "🌀", titre: "Mixer la sauce",           detail: "Mixer la sauce pour la rendre onctueuse. Remettre sur feu doux.", badge: null },
+      { icone: "🍦", titre: "Finir",                    detail: "Ajouter crème fraîche et poulet grillé. Laisser mijoter 10 min. Servir avec riz basmati et naans.", badge: "⏱ 10 min" },
+    ]
+  },
+
+  phovietnambien: {
+    base: 2,
+    temps: "4h (bouillon)",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🍲",
+    description: "Le pho vietnamien authentique — bouillon de bœuf longuement mijoté aux épices, nouilles de riz et herbes fraîches.",
+    tableauPho: [
+      { nb:  1, nouilles: "80 g",  bouillon: "500 ml", boeuf: "80 g",  anis: "1",  cannelle: "½ bâton" },
+      { nb:  2, nouilles: "160 g", bouillon: "1 L",    boeuf: "160 g", anis: "2",  cannelle: "1 bâton"  },
+      { nb:  3, nouilles: "240 g", bouillon: "1.5 L",  boeuf: "240 g", anis: "3",  cannelle: "1 bâton"  },
+      { nb:  4, nouilles: "320 g", bouillon: "2 L",    boeuf: "320 g", anis: "4",  cannelle: "2 bâtons" },
+      { nb:  5, nouilles: "400 g", bouillon: "2.5 L",  boeuf: "400 g", anis: "5",  cannelle: "2 bâtons" },
+      { nb:  6, nouilles: "480 g", bouillon: "3 L",    boeuf: "480 g", anis: "6",  cannelle: "3 bâtons" },
+      { nb:  7, nouilles: "560 g", bouillon: "3.5 L",  boeuf: "560 g", anis: "7",  cannelle: "3 bâtons" },
+      { nb:  8, nouilles: "640 g", bouillon: "4 L",    boeuf: "640 g", anis: "8",  cannelle: "4 bâtons" },
+      { nb:  9, nouilles: "720 g", bouillon: "4.5 L",  boeuf: "720 g", anis: "9",  cannelle: "4 bâtons" },
+      { nb: 10, nouilles: "800 g", bouillon: "5 L",    boeuf: "800 g", anis: "10", cannelle: "5 bâtons" },
+      { nb: 11, nouilles: "880 g", bouillon: "5.5 L",  boeuf: "880 g", anis: "11", cannelle: "5 bâtons" },
+      { nb: 12, nouilles: "960 g", bouillon: "6 L",    boeuf: "960 g", anis: "12", cannelle: "6 bâtons" },
+      { nb: 13, nouilles: "1040 g",bouillon: "6.5 L",  boeuf: "1040 g",anis: "13", cannelle: "6 bâtons" },
+      { nb: 14, nouilles: "1120 g",bouillon: "7 L",    boeuf: "1120 g",anis: "14", cannelle: "7 bâtons" },
+      { nb: 15, nouilles: "1200 g",bouillon: "7.5 L",  boeuf: "1200 g",anis: "15", cannelle: "7 bâtons" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Torréfier les épices",     detail: "Faire griller à sec oignons coupés en deux et gingembre jusqu'à coloration. Ajouter anis étoilé, cannelle, clous de girofle, cardamome. Torréfier 2 min.", badge: null },
+      { icone: "🍖", titre: "Préparer le bouillon",     detail: "Blanchir les os de bœuf 5 min, égoutter. Remettre avec eau froide, épices torréfiées, sauce poisson et sucre de palme. Écumer régulièrement.", badge: "⏱ 4h minimum" },
+      { icone: "🍜", titre: "Préparer les nouilles",    detail: "Tremper les nouilles de riz dans l'eau froide 30 min. Les blanchir 1 min dans l'eau bouillante. Égoutter.", badge: null },
+      { icone: "🥢", titre: "Dresser le pho",           detail: "Disposer les nouilles dans les bols. Ajouter le bœuf cru tranché très fin (il cuira dans le bouillon bouillant). Verser le bouillon brûlant. Accompagner de germes de soja, basilic thaï, citron vert, piment.", badge: null },
+    ]
+  },
+
+  pizzamargherita: {
+    base: 2,
+    temps: "20 min + 48h pâte",
+    niveau: "⭐ Facile",
+    emoji: "🍕",
+    description: "La pizza Margherita napolitaine — la vraie, avec sauce tomate San Marzano, mozzarella di bufala et basilic frais.",
+    tableauPizzaMargherita: [
+      { nb:  1, pate: "1 pâton",  tomates: "80 g",  mozza: "100 g", basilic: "5 feuilles"  },
+      { nb:  2, pate: "2 pâtons", tomates: "160 g", mozza: "200 g", basilic: "10 feuilles" },
+      { nb:  3, pate: "3 pâtons", tomates: "240 g", mozza: "300 g", basilic: "15 feuilles" },
+      { nb:  4, pate: "4 pâtons", tomates: "320 g", mozza: "400 g", basilic: "20 feuilles" },
+      { nb:  5, pate: "5 pâtons", tomates: "400 g", mozza: "500 g", basilic: "25 feuilles" },
+      { nb:  6, pate: "6 pâtons", tomates: "480 g", mozza: "600 g", basilic: "30 feuilles" },
+      { nb:  7, pate: "7 pâtons", tomates: "560 g", mozza: "700 g", basilic: "35 feuilles" },
+      { nb:  8, pate: "8 pâtons", tomates: "640 g", mozza: "800 g", basilic: "40 feuilles" },
+      { nb:  9, pate: "9 pâtons", tomates: "720 g", mozza: "900 g", basilic: "45 feuilles" },
+      { nb: 10, pate: "10 pâtons",tomates: "800 g", mozza: "1 kg",  basilic: "50 feuilles" },
+      { nb: 11, pate: "11 pâtons",tomates: "880 g", mozza: "1.1 kg",basilic: "55 feuilles" },
+      { nb: 12, pate: "12 pâtons",tomates: "960 g", mozza: "1.2 kg",basilic: "60 feuilles" },
+      { nb: 13, pate: "13 pâtons",tomates: "1040 g",mozza: "1.3 kg",basilic: "65 feuilles" },
+      { nb: 14, pate: "14 pâtons",tomates: "1120 g",mozza: "1.4 kg",basilic: "70 feuilles" },
+      { nb: 15, pate: "15 pâtons",tomates: "1200 g",mozza: "1.5 kg",basilic: "75 feuilles" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Préparer la pâte",         detail: "Utiliser la recette de pâte à pizza de l'appli (48h de fermentation). Sortir les pâtons 1h avant.", badge: null },
+      { icone: "🍅", titre: "Sauce tomate",             detail: "Écraser les tomates San Marzano à la main avec sel, huile d'olive et basilic. Ne pas cuire — la sauce reste crue.", badge: null },
+      { icone: "📏", titre: "Étaler la pâte",           detail: "Étaler chaque pâton à la main en partant du centre vers les bords. Ne jamais utiliser de rouleau — laisser les bords épais.", badge: null },
+      { icone: "🧀", titre: "Garnir",                   detail: "Étaler la sauce en spirale. Déposer la mozzarella di bufala égouttée et déchirée. Arroser d'huile d'olive.", badge: null },
+      { icone: "🔥", titre: "Cuire à très haute température",detail: "Cuire sur une pierre à pizza ou plaque préchauffée au maximum du four. La pizza est prête quand les bords sont bien gonflés et dorés.", badge: "⏱ 7-10 min à 280°C max" },
+      { icone: "🌿", titre: "Finir",                    detail: "Sortir du four, ajouter le basilic frais et un filet d'huile d'olive extra vierge. Servir immédiatement.", badge: null },
+    ]
+  },
+
+  carbonara: {
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🍝",
+    description: "La vraie carbonara romaine — sans crème ! Seulement spaghetti, guanciale, pecorino, œufs et poivre. Un art de la simplicité.",
+    tableauCarbonara: [
+      { nb:  1, spaghetti: "80 g",  guanciale: "40 g",  oeufs: "1 jaune + ½ entier", pecorino: "30 g"  },
+      { nb:  2, spaghetti: "160 g", guanciale: "80 g",  oeufs: "2 jaunes + 1 entier",pecorino: "60 g"  },
+      { nb:  3, spaghetti: "240 g", guanciale: "120 g", oeufs: "3 jaunes + 1 entier",pecorino: "90 g"  },
+      { nb:  4, spaghetti: "320 g", guanciale: "160 g", oeufs: "4 jaunes + 2 entiers",pecorino: "120 g" },
+      { nb:  5, spaghetti: "400 g", guanciale: "200 g", oeufs: "5 jaunes + 2 entiers",pecorino: "150 g" },
+      { nb:  6, spaghetti: "480 g", guanciale: "240 g", oeufs: "6 jaunes + 3 entiers",pecorino: "180 g" },
+      { nb:  7, spaghetti: "560 g", guanciale: "280 g", oeufs: "7 jaunes + 3 entiers",pecorino: "210 g" },
+      { nb:  8, spaghetti: "640 g", guanciale: "320 g", oeufs: "8 jaunes + 4 entiers",pecorino: "240 g" },
+      { nb:  9, spaghetti: "720 g", guanciale: "360 g", oeufs: "9 jaunes + 4 entiers",pecorino: "270 g" },
+      { nb: 10, spaghetti: "800 g", guanciale: "400 g", oeufs: "10 jaunes + 5 entiers",pecorino: "300 g"},
+      { nb: 11, spaghetti: "880 g", guanciale: "440 g", oeufs: "11 jaunes + 5 entiers",pecorino: "330 g"},
+      { nb: 12, spaghetti: "960 g", guanciale: "480 g", oeufs: "12 jaunes + 6 entiers",pecorino: "360 g"},
+      { nb: 13, spaghetti: "1040 g",guanciale: "520 g", oeufs: "13 jaunes + 6 entiers",pecorino: "390 g"},
+      { nb: 14, spaghetti: "1120 g",guanciale: "560 g", oeufs: "14 jaunes + 7 entiers",pecorino: "420 g"},
+      { nb: 15, spaghetti: "1200 g",guanciale: "600 g", oeufs: "15 jaunes + 7 entiers",pecorino: "450 g"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes",          detail: "Cuire les spaghetti dans eau bouillante très salée. Les garder al dente. Garder 1 tasse d'eau de cuisson.", badge: null },
+      { icone: "🥓", titre: "Cuire le guanciale",       detail: "À sec dans une poêle froide, faire fondre le guanciale à feu moyen-doux. Il doit être croustillant à l'extérieur. Éteindre le feu.", badge: "⏱ 8 min" },
+      { icone: "🥚", titre: "Préparer la crème d'œufs",detail: "Fouetter vigoureusement jaunes + œufs entiers + pecorino râpé + poivre noir généreusement moulu. Le mélange doit être épais.", badge: null },
+      { icone: "🌡️", titre: "L'étape cruciale",       detail: "Hors du feu, ajouter les pâtes égouttées dans la poêle avec le guanciale. Verser la crème d'œufs. Mélanger vigoureusement en ajoutant l'eau de cuisson cuillère par cuillère jusqu'à sauce onctueuse. NE PAS remettre sur le feu.", badge: null },
+      { icone: "🧀", titre: "Servir immédiatement",     detail: "Dresser dans des assiettes chaudes. Finir avec pecorino et poivre noir. La carbonara ne supporte pas l'attente !", badge: null },
+    ]
+  },
+
+  ceebujen: {
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🐟",
+    description: "Le Thiéboudienne (Ceebu Jen) sénégalais — riz au poisson, le plat national du Sénégal. Riche, coloré et parfumé.",
+    tableauCeebujen: [
+      { nb:  2, poisson: "400 g", riz: "200 g", tomates: "200 g", manioc: "100 g", carottes: "1" },
+      { nb:  4, poisson: "800 g", riz: "400 g", tomates: "400 g", manioc: "200 g", carottes: "2" },
+      { nb:  6, poisson: "1.2 kg",riz: "600 g", tomates: "600 g", manioc: "300 g", carottes: "3" },
+      { nb:  8, poisson: "1.6 kg",riz: "800 g", tomates: "800 g", manioc: "400 g", carottes: "4" },
+      { nb: 10, poisson: "2 kg",  riz: "1 kg",  tomates: "1 kg",  manioc: "500 g", carottes: "5" },
+      { nb: 12, poisson: "2.4 kg",riz: "1.2 kg",tomates: "1.2 kg",manioc: "600 g", carottes: "6" },
+      { nb: 14, poisson: "2.8 kg",riz: "1.4 kg",tomates: "1.4 kg",manioc: "700 g", carottes: "7" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Farcir et mariner le poisson", detail: "Farcir le poisson d'un mélange persil, ail, piment, citron. Frire dans l'huile jusqu'à belle coloration. Réserver.", badge: "⏱ 10 min" },
+      { icone: "🍅", titre: "Préparer la sauce",        detail: "Dans la même huile, faire revenir oignon, tomates concassées, pâte de tomate, ail. Ajouter bouillon de poisson et épices (cumin, poivre, laurier).", badge: "⏱ 20 min" },
+      { icone: "🥕", titre: "Cuire les légumes",        detail: "Ajouter manioc, carottes, aubergine et choux dans la sauce. Cuire jusqu'à mi-tendreté.", badge: "⏱ 20 min" },
+      { icone: "🍚", titre: "Cuire le riz",             detail: "Retirer les légumes. Verser le riz rincé dans la sauce. Ajouter eau si nécessaire. Cuire à feu doux couvert jusqu'à absorption complète.", badge: "⏱ 20 min" },
+      { icone: "🍽️", titre: "Dresser",                 detail: "Dresser le riz sur un grand plat. Disposer les légumes et le poisson dessus. Servir avec sauce piquante.", badge: null },
+    ]
+  },
+
+  mafewestafricain: {
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🥜",
+    description: "Le maafé ouest-africain — ragoût de viande à la sauce d'arachide. Un plat réconfortant du Mali, Sénégal et Guinée.",
+    tableauMafe: [
+      { nb:  2, viande: "300 g", arachide: "100 g", tomates: "150 g", patate: "200 g", oignon: "1" },
+      { nb:  4, viande: "600 g", arachide: "200 g", tomates: "300 g", patate: "400 g", oignon: "1" },
+      { nb:  6, viande: "900 g", arachide: "300 g", tomates: "450 g", patate: "600 g", oignon: "2" },
+      { nb:  8, viande: "1.2 kg",arachide: "400 g", tomates: "600 g", patate: "800 g", oignon: "2" },
+      { nb: 10, viande: "1.5 kg",arachide: "500 g", tomates: "750 g", patate: "1 kg",  oignon: "3" },
+      { nb: 12, viande: "1.8 kg",arachide: "600 g", tomates: "900 g", patate: "1.2 kg",oignon: "3" },
+      { nb: 14, viande: "2.1 kg",arachide: "700 g", tomates: "1050 g",patate: "1.4 kg",oignon: "4" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Faire dorer la viande",    detail: "Couper l'agneau ou le bœuf en morceaux. Faire dorer à feu vif dans l'huile. Réserver.", badge: "⏱ 8 min" },
+      { icone: "🧅", titre: "Faire revenir",            detail: "Dans la même casserole, faire revenir l'oignon. Ajouter tomates concassées et pâte de tomate. Cuire 5 min.", badge: null },
+      { icone: "🥜", titre: "Ajouter la pâte d'arachide", detail: "Délayer la pâte d'arachide avec du bouillon chaud. L'ajouter à la sauce avec la viande. Bien mélanger.", badge: null },
+      { icone: "🍠", titre: "Ajouter les légumes",      detail: "Ajouter patate douce en cubes, carottes, piment. Laisser mijoter à feu doux.", badge: "⏱ 35 min" },
+      { icone: "🍚", titre: "Servir",                   detail: "Rectifier l'assaisonnement. Servir sur riz blanc. Le maafé doit être épais et onctueux.", badge: null },
+    ]
+  },
+
+  gnocchismaison: {
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🥔",
+    description: "Les gnocchis maison à la sauce gorgonzola — légers comme des nuages, fondants en bouche avec une sauce crémeuse au fromage.",
+    tableauGnocchis: [
+      { nb:  1, pdterre: "200 g", farine: "60 g",  oeuf: "¼",  gorgonzola: "40 g",  creme: "50 ml"  },
+      { nb:  2, pdterre: "400 g", farine: "120 g", oeuf: "½",  gorgonzola: "80 g",  creme: "100 ml" },
+      { nb:  3, pdterre: "600 g", farine: "180 g", oeuf: "¾",  gorgonzola: "120 g", creme: "150 ml" },
+      { nb:  4, pdterre: "800 g", farine: "240 g", oeuf: "1",  gorgonzola: "160 g", creme: "200 ml" },
+      { nb:  5, pdterre: "1 kg",  farine: "300 g", oeuf: "1¼", gorgonzola: "200 g", creme: "250 ml" },
+      { nb:  6, pdterre: "1.2 kg",farine: "360 g", oeuf: "1½", gorgonzola: "240 g", creme: "300 ml" },
+      { nb:  7, pdterre: "1.4 kg",farine: "420 g", oeuf: "1¾", gorgonzola: "280 g", creme: "350 ml" },
+      { nb:  8, pdterre: "1.6 kg",farine: "480 g", oeuf: "2",  gorgonzola: "320 g", creme: "400 ml" },
+      { nb:  9, pdterre: "1.8 kg",farine: "540 g", oeuf: "2¼", gorgonzola: "360 g", creme: "450 ml" },
+      { nb: 10, pdterre: "2 kg",  farine: "600 g", oeuf: "2½", gorgonzola: "400 g", creme: "500 ml" },
+      { nb: 11, pdterre: "2.2 kg",farine: "660 g", oeuf: "2¾", gorgonzola: "440 g", creme: "550 ml" },
+      { nb: 12, pdterre: "2.4 kg",farine: "720 g", oeuf: "3",  gorgonzola: "480 g", creme: "600 ml" },
+      { nb: 13, pdterre: "2.6 kg",farine: "780 g", oeuf: "3¼", gorgonzola: "520 g", creme: "650 ml" },
+      { nb: 14, pdterre: "2.8 kg",farine: "840 g", oeuf: "3½", gorgonzola: "560 g", creme: "700 ml" },
+      { nb: 15, pdterre: "3 kg",  farine: "900 g", oeuf: "3¾", gorgonzola: "600 g", creme: "750 ml" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Cuire les pommes de terre en robe des champs. Éplucher à chaud et écraser immédiatement en purée fine.", badge: "⏱ 30 min" },
+      { icone: "🌾", titre: "Former la pâte",           detail: "Laisser la purée tiédir. Ajouter farine, œuf et sel. Mélanger sans trop travailler jusqu'à pâte homogène. Elle doit être souple mais non collante.", badge: null },
+      { icone: "🥔", titre: "Façonner les gnocchis",    detail: "Rouler la pâte en boudins de 2cm. Couper en tronçons de 2cm. Passer chaque gnocchi sur une fourchette pour les strier.", badge: null },
+      { icone: "💧", titre: "Cuire les gnocchis",       detail: "Plonger dans eau bouillante salée. Ils sont cuits quand ils remontent à la surface. Égoutter après 30 sec de flottaison.", badge: "⏱ 2-3 min" },
+      { icone: "🧀", titre: "Sauce gorgonzola",         detail: "Faire fondre le gorgonzola dans la crème à feu doux. Ajouter les gnocchis, mélanger délicatement. Servir avec noix et roquette.", badge: null },
+    ]
+  },
+
+  falafel: {
+    base: 4,
+    temps: "30 min + trempage",
+    niveau: "⭐ Facile",
+    emoji: "🧆",
+    description: "Les falafels libanais croustillants — boulettes de pois chiches aux herbes et épices, frits et servis en pita avec tahini.",
+    tableauFalafel: [
+      { nb:  4, poischiches: "150 g", persil: "¼ botte", ail: "1 gousse",  cumin: "1 c.à.c", pita: "2"  },
+      { nb:  8, poischiches: "300 g", persil: "½ botte", ail: "2 gousses", cumin: "2 c.à.c", pita: "4"  },
+      { nb: 12, poischiches: "450 g", persil: "¾ botte", ail: "3 gousses", cumin: "3 c.à.c", pita: "6"  },
+      { nb: 16, poischiches: "600 g", persil: "1 botte",  ail: "4 gousses", cumin: "4 c.à.c", pita: "8"  },
+      { nb: 20, poischiches: "750 g", persil: "1 botte",  ail: "5 gousses", cumin: "5 c.à.c", pita: "10" },
+      { nb: 24, poischiches: "900 g", persil: "1½ botte", ail: "6 gousses", cumin: "6 c.à.c", pita: "12" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Tremper les pois chiches", detail: "Faire tremper les pois chiches CRUS (pas en boîte !) dans eau froide. Égoutter et sécher.", badge: "⏱ 12h trempage" },
+      { icone: "🌀", titre: "Mixer la farce",           detail: "Mixer pois chiches, persil, coriandre, ail, oignon, cumin, coriandre moulue, sel, poivre, bicarbonate. La texture doit être granuleuse — pas une purée.", badge: null },
+      { icone: "⚽", titre: "Former les boulettes",     detail: "Former des boules de 3cm ou utiliser une cuillère à glace. Les réfrigérer 30 min pour qu'elles tiennent.", badge: "⏱ 30 min frigo" },
+      { icone: "🔥", titre: "Frire",                    detail: "Frire dans huile chaude (180°C) jusqu'à belle couleur dorée et croustillante.", badge: "⏱ 3-4 min" },
+      { icone: "🫓", titre: "Servir",                   detail: "Servir dans pita avec houmous, tahini, tomates, concombre, oignon rouge et herbes fraîches.", badge: null },
+    ]
+  },
+
+  poulettandoori: {
+    base: 4,
+    temps: "30 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Le poulet tandoori indien — mariné au yaourt et aux épices, cuit à haute température. Rouge vif, fumé et irrésistible.",
+    tableauTandoori: [
+      { nb:  1, poulet: "200 g", yaourt: "60 g",  citron: "¼", masala: "1 c.à.c", paprika: "½ c.à.c" },
+      { nb:  2, poulet: "400 g", yaourt: "120 g", citron: "½", masala: "2 c.à.c", paprika: "1 c.à.c"  },
+      { nb:  3, poulet: "600 g", yaourt: "180 g", citron: "¾", masala: "3 c.à.c", paprika: "1½ c.à.c" },
+      { nb:  4, poulet: "800 g", yaourt: "240 g", citron: "1", masala: "4 c.à.c", paprika: "2 c.à.c"  },
+      { nb:  5, poulet: "1 kg",  yaourt: "300 g", citron: "1", masala: "5 c.à.c", paprika: "2½ c.à.c" },
+      { nb:  6, poulet: "1.2 kg",yaourt: "360 g", citron: "1½",masala: "6 c.à.c", paprika: "3 c.à.c"  },
+      { nb:  7, poulet: "1.4 kg",yaourt: "420 g", citron: "1½",masala: "7 c.à.c", paprika: "3½ c.à.c" },
+      { nb:  8, poulet: "1.6 kg",yaourt: "480 g", citron: "2", masala: "8 c.à.c", paprika: "4 c.à.c"  },
+      { nb:  9, poulet: "1.8 kg",yaourt: "540 g", citron: "2", masala: "9 c.à.c", paprika: "4½ c.à.c" },
+      { nb: 10, poulet: "2 kg",  yaourt: "600 g", citron: "2½",masala: "10 c.à.c",paprika: "5 c.à.c"  },
+      { nb: 11, poulet: "2.2 kg",yaourt: "660 g", citron: "2½",masala: "11 c.à.c",paprika: "5½ c.à.c" },
+      { nb: 12, poulet: "2.4 kg",yaourt: "720 g", citron: "3", masala: "12 c.à.c",paprika: "6 c.à.c"  },
+      { nb: 13, poulet: "2.6 kg",yaourt: "780 g", citron: "3", masala: "13 c.à.c",paprika: "6½ c.à.c" },
+      { nb: 14, poulet: "2.8 kg",yaourt: "840 g", citron: "3½",masala: "14 c.à.c",paprika: "7 c.à.c"  },
+      { nb: 15, poulet: "3 kg",  yaourt: "900 g", citron: "3½",masala: "15 c.à.c",paprika: "7½ c.à.c" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Entailler le poulet",      detail: "Faire des entailles profondes dans la chair du poulet pour que la marinade pénètre bien.", badge: null },
+      { icone: "🌶️", titre: "Marinade tandoori",       detail: "Mélanger yaourt, jus de citron, gingembre et ail râpés, garam masala, cumin, coriandre, paprika (pour la couleur rouge), curcuma et sel. Enrober généreusement. Mariner au frais.", badge: "⏱ 4h minimum, 24h idéal" },
+      { icone: "🔥", titre: "Cuire à haute température",detail: "Cuire au four préchauffé à 220°C sur grille (pour que l'air circule). Ou au barbecue pour le goût fumé authentique.", badge: "⏱ 25-30 min à 220°C" },
+      { icone: "🍋", titre: "Servir",                   detail: "Servir avec rondelles de citron, oignon rouge en lamelles, coriandre fraîche, naans et sauce raïta (yaourt concombre menthe).", badge: null },
+    ]
+  },
+
+  pekinduckeasy: {
+    base: 4,
+    temps: "2h30",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🦆",
+    description: "Le canard laqué pékinois version maison — peau croustillante et laquée, servi en crêpes avec sauce hoisin et concombre.",
+    tableauPekinDuck: [
+      { nb:  2, canard: "½",    hoisin: "3 c.à.s", crepesP: "8",   concombre: "½",  ciboule: "3" },
+      { nb:  4, canard: "1",    hoisin: "6 c.à.s", crepesP: "16",  concombre: "1",  ciboule: "6" },
+      { nb:  6, canard: "1½",   hoisin: "9 c.à.s", crepesP: "24",  concombre: "1½", ciboule: "9" },
+      { nb:  8, canard: "2",    hoisin: "12 c.à.s",crepesP: "32",  concombre: "2",  ciboule: "12"},
+      { nb: 10, canard: "2½",   hoisin: "15 c.à.s",crepesP: "40",  concombre: "2½", ciboule: "15"},
+      { nb: 12, canard: "3",    hoisin: "18 c.à.s",crepesP: "48",  concombre: "3",  ciboule: "18"},
+      { nb: 14, canard: "3½",   hoisin: "21 c.à.s",crepesP: "56",  concombre: "3½", ciboule: "21"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦆", titre: "Préparer le canard",       detail: "Sécher la peau du canard avec du papier absorbant. Mélanger miel, sauce soja, vinaigre de riz et cinq-épices. Badigeonner le canard généreusement. Laisser sécher à l'air 2h (ou 1 nuit au frigo).", badge: "⏱ 2h séchage" },
+      { icone: "🔥", titre: "Rôtir",                    detail: "Préchauffer à 200°C. Poser le canard sur une grille au-dessus d'un plat. Rôtir en retournant et badigeonnant toutes les 30 min.", badge: "⏱ 1h30 à 200°C" },
+      { icone: "🔪", titre: "Découper",                 detail: "Laisser reposer 10 min. Découper en tranches fines en séparant la peau croustillante de la chair.", badge: null },
+      { icone: "🫓", titre: "Préparer les crêpes",      detail: "Réchauffer les crêpes pékinoises (ou crêpes fines maison) dans de la vapeur 2 min.", badge: null },
+      { icone: "🥢", titre: "Dresser et servir",        detail: "Chaque convive garnit sa crêpe de sauce hoisin, concombre en julienne, ciboule émincée et tranches de canard laqué. Rouler et déguster !", badge: null },
+    ]
+  },
+
+  ossobuco: {
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🦴",
+    description: "L'osso buco milanais — jarret de veau braisé lentement, gremolata citronnée et risotto au safran. Un grand classique lombard.",
+    tableauOssobuco: [
+      { nb:  2, jarret: "2 tranches",  vin: "100 ml", bouillon: "200 ml", tomates: "150 g" },
+      { nb:  4, jarret: "4 tranches",  vin: "200 ml", bouillon: "400 ml", tomates: "300 g" },
+      { nb:  6, jarret: "6 tranches",  vin: "300 ml", bouillon: "600 ml", tomates: "450 g" },
+      { nb:  8, jarret: "8 tranches",  vin: "400 ml", bouillon: "800 ml", tomates: "600 g" },
+      { nb: 10, jarret: "10 tranches", vin: "500 ml", bouillon: "1 L",    tomates: "750 g" },
+      { nb: 12, jarret: "12 tranches", vin: "600 ml", bouillon: "1.2 L",  tomates: "900 g" },
+      { nb: 14, jarret: "14 tranches", vin: "700 ml", bouillon: "1.4 L",  tomates: "1050 g"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦴", titre: "Fariner et dorer",         detail: "Fariner les tranches de jarret. Les faire dorer à feu vif dans huile + beurre. Bien dorer toutes les faces. Réserver.", badge: "⏱ 8 min" },
+      { icone: "🧅", titre: "Soffritto",                detail: "Dans la même casserole, faire fondre oignon, carotte et céleri finement émincés.", badge: "⏱ 8 min" },
+      { icone: "🍷", titre: "Déglacer et braiser",      detail: "Déglacer au vin blanc. Ajouter tomates concassées, bouillon, zeste de citron et thym. Remettre le veau. Couvrir.", badge: "⏱ 1h30 à feu doux" },
+      { icone: "🌿", titre: "Gremolata",                detail: "Mélanger finement zeste de citron, ail et persil plat ciselés. Parsemer sur l'osso buco en fin de cuisson.", badge: null },
+      { icone: "🍚", titre: "Servir",                   detail: "Servir avec risotto milanese au safran. Ne pas oublier la moelle dans l'os — c'est le meilleur !", badge: null },
+    ]
+  },
+
+  tajinemouton: {
+    base: 4,
+    temps: "2h",
+    niveau: "⭐ Facile",
+    emoji: "🏺",
+    description: "Le tajine d'agneau aux pruneaux et amandes — viande fondante, fruits sucrés et épices orientales. La douceur du Maroc.",
+    tableauTajine: [
+      { nb:  2, agneau: "400 g", pruneaux: "80 g",  amandes: "40 g",  miel: "1 c.à.s", oignon: "1" },
+      { nb:  4, agneau: "800 g", pruneaux: "160 g", amandes: "80 g",  miel: "2 c.à.s", oignon: "2" },
+      { nb:  6, agneau: "1.2 kg",pruneaux: "240 g", amandes: "120 g", miel: "3 c.à.s", oignon: "2" },
+      { nb:  8, agneau: "1.6 kg",pruneaux: "320 g", amandes: "160 g", miel: "4 c.à.s", oignon: "3" },
+      { nb: 10, agneau: "2 kg",  pruneaux: "400 g", amandes: "200 g", miel: "5 c.à.s", oignon: "3" },
+      { nb: 12, agneau: "2.4 kg",pruneaux: "480 g", amandes: "240 g", miel: "6 c.à.s", oignon: "4" },
+      { nb: 14, agneau: "2.8 kg",pruneaux: "560 g", amandes: "280 g", miel: "7 c.à.s", oignon: "4" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Faire dorer l'agneau",    detail: "Couper l'agneau en morceaux. Faire dorer dans l'huile d'olive avec oignons émincés.", badge: "⏱ 10 min" },
+      { icone: "🌶️", titre: "Ajouter les épices",      detail: "Ajouter cannelle, gingembre, curcuma, safran, sel et poivre. Bien enrober la viande. Couvrir d'eau ou de bouillon.", badge: null },
+      { icone: "⏳", titre: "Cuisson lente",            detail: "Cuire à feu doux couvert jusqu'à ce que la viande soit très tendre.", badge: "⏱ 1h30" },
+      { icone: "🫐", titre: "Ajouter pruneaux et miel", detail: "30 min avant la fin, ajouter les pruneaux et le miel. Laisser caraméliser légèrement.", badge: "⏱ 30 min" },
+      { icone: "🌰", titre: "Finir et servir",          detail: "Faire dorer les amandes effilées au beurre. Parsemer sur le tajine. Servir avec semoule ou pain marocain.", badge: null },
+    ]
+  },
+
+  moelleuxchocolat: {
+    base: 6,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍫",
+    description: "Le moelleux au chocolat ultra fondant — plus coulant que le fondant, une texture entre gâteau et mousse. Irrésistible !",
+    tableauMoelleux: [
+      { nb:  1, chocolat: "50 g",  beurre: "40 g",  oeufs: "1",  sucre: "20 g",  farine: "15 g"  },
+      { nb:  2, chocolat: "100 g", beurre: "80 g",  oeufs: "2",  sucre: "40 g",  farine: "30 g"  },
+      { nb:  3, chocolat: "150 g", beurre: "120 g", oeufs: "3",  sucre: "60 g",  farine: "45 g"  },
+      { nb:  4, chocolat: "200 g", beurre: "160 g", oeufs: "4",  sucre: "80 g",  farine: "60 g"  },
+      { nb:  5, chocolat: "250 g", beurre: "200 g", oeufs: "5",  sucre: "100 g", farine: "75 g"  },
+      { nb:  6, chocolat: "300 g", beurre: "240 g", oeufs: "6",  sucre: "120 g", farine: "90 g"  },
+      { nb:  7, chocolat: "350 g", beurre: "280 g", oeufs: "7",  sucre: "140 g", farine: "105 g" },
+      { nb:  8, chocolat: "400 g", beurre: "320 g", oeufs: "8",  sucre: "160 g", farine: "120 g" },
+      { nb:  9, chocolat: "450 g", beurre: "360 g", oeufs: "9",  sucre: "180 g", farine: "135 g" },
+      { nb: 10, chocolat: "500 g", beurre: "400 g", oeufs: "10", sucre: "200 g", farine: "150 g" },
+      { nb: 11, chocolat: "550 g", beurre: "440 g", oeufs: "11", sucre: "220 g", farine: "165 g" },
+      { nb: 12, chocolat: "600 g", beurre: "480 g", oeufs: "12", sucre: "240 g", farine: "180 g" },
+      { nb: 13, chocolat: "650 g", beurre: "520 g", oeufs: "13", sucre: "260 g", farine: "195 g" },
+      { nb: 14, chocolat: "700 g", beurre: "560 g", oeufs: "14", sucre: "280 g", farine: "210 g" },
+      { nb: 15, chocolat: "750 g", beurre: "600 g", oeufs: "15", sucre: "300 g", farine: "225 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍫", titre: "Fondre chocolat + beurre", detail: "Faire fondre ensemble au bain-marie ou micro-ondes. Laisser tiédir.", badge: null },
+      { icone: "🥚", titre: "Fouetter œufs + sucre",   detail: "Fouetter vigoureusement jusqu'à ce que le mélange blanchisse et double de volume.", badge: "⏱ 3 min" },
+      { icone: "🌾", titre: "Incorporer farine",        detail: "Ajouter la farine tamisée. Puis le chocolat fondu tiédi. Mélanger délicatement.", badge: null },
+      { icone: "🥧", titre: "Beurrer et remplir",       detail: "Beurrer et fariner des moules individuels. Remplir aux ¾. Mettre au congélateur 20 min.", badge: "⏱ 20 min congélateur" },
+      { icone: "🔥", titre: "Cuire et servir immédiatement", detail: "Four préchauffé à 200°C. Sortir du congélateur direct. Le cœur doit rester liquide — surveiller ! Démouler et servir avec glace vanille.", badge: "⏱ 10-12 min à 200°C" },
+    ]
+  },
+
+  cheesecake: {
+    base: 8,
+    temps: "1h + repos",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🍰",
+    description: "Le cheesecake new-yorkais classique — base biscuitée croustillante, crème au Philadelphia onctueuse et coulis de fruits rouges.",
+    tableauCheesecake: [
+      { nb:  2, philadelphia: "200 g", biscuits: "80 g",  beurre: "40 g",  oeufs: "1",  sucre: "50 g",  creme: "50 ml"  },
+      { nb:  4, philadelphia: "400 g", biscuits: "160 g", beurre: "80 g",  oeufs: "2",  sucre: "100 g", creme: "100 ml" },
+      { nb:  6, philadelphia: "600 g", biscuits: "240 g", beurre: "120 g", oeufs: "3",  sucre: "150 g", creme: "150 ml" },
+      { nb:  8, philadelphia: "800 g", biscuits: "320 g", beurre: "160 g", oeufs: "4",  sucre: "200 g", creme: "200 ml" },
+      { nb: 10, philadelphia: "1 kg",  biscuits: "400 g", beurre: "200 g", oeufs: "5",  sucre: "250 g", creme: "250 ml" },
+      { nb: 12, philadelphia: "1.2 kg",biscuits: "480 g", beurre: "240 g", oeufs: "6",  sucre: "300 g", creme: "300 ml" },
+      { nb: 14, philadelphia: "1.4 kg",biscuits: "560 g", beurre: "280 g", oeufs: "7",  sucre: "350 g", creme: "350 ml" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍪", titre: "Base biscuitée",           detail: "Écraser les biscuits digestifs en miettes fines. Mélanger avec le beurre fondu. Tasser dans un moule à charnière. Réfrigérer 15 min.", badge: "⏱ 15 min frigo" },
+      { icone: "🧀", titre: "Appareil cream cheese",    detail: "Fouetter le Philadelphia ramolli avec le sucre. Ajouter les œufs un à un. Incorporer la crème fraîche et la vanille. Ne pas trop fouetter.", badge: null },
+      { icone: "🔥", titre: "Cuire au bain-marie",      detail: "Verser l'appareil sur la base. Cuire au bain-marie à 160°C. Le centre doit être encore légèrement tremblotant.", badge: "⏱ 55-65 min à 160°C" },
+      { icone: "❄️", titre: "Refroidir lentement",      detail: "Éteindre le four, entrouvrir la porte. Laisser refroidir 1h dans le four puis 4h minimum au réfrigérateur.", badge: "⏱ 4h+ au frigo" },
+      { icone: "🍓", titre: "Coulis et service",        detail: "Servir avec coulis de fruits rouges ou fraises fraîches.", badge: null },
+    ]
+  },
+
+  painauchocolat: {
+    base: 8,
+    temps: "3h + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍫",
+    description: "Les pains au chocolat maison — pâte feuilletée levée, beurre de tourage et barres de chocolat. Le vrai travail de boulanger !",
+    tableauPainAuChocolat: [
+      { nb:  2, farine: "63 g",  lait: "35 ml", beurre: "8 g",  sucre: "6 g",  levure: "2 g",  beurrage: "44 g",  chocolat: "20 g" },
+      { nb:  4, farine: "125 g", lait: "70 ml", beurre: "15 g", sucre: "12 g", levure: "4 g",  beurrage: "88 g",  chocolat: "40 g" },
+      { nb:  6, farine: "188 g", lait: "105 ml",beurre: "23 g", sucre: "18 g", levure: "6 g",  beurrage: "131 g", chocolat: "60 g" },
+      { nb:  8, farine: "250 g", lait: "140 ml",beurre: "30 g", sucre: "25 g", levure: "8 g",  beurrage: "175 g", chocolat: "80 g" },
+      { nb: 10, farine: "313 g", lait: "175 ml",beurre: "38 g", sucre: "31 g", levure: "10 g", beurrage: "219 g", chocolat: "100 g"},
+      { nb: 12, farine: "375 g", lait: "210 ml",beurre: "45 g", sucre: "37 g", levure: "12 g", beurrage: "263 g", chocolat: "120 g"},
+      { nb: 14, farine: "438 g", lait: "245 ml",beurre: "53 g", sucre: "43 g", levure: "14 g", beurrage: "306 g", chocolat: "140 g"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Détrempe",                 detail: "Mélanger farine, sel, sucre, levure et lait tiède. Pétrir 8 min. Ajouter beurre mou. Former un rectangle, filmer et réfrigérer.", badge: "⏱ 1h frigo" },
+      { icone: "🧈", titre: "Beurrage",                 detail: "Aplatir le beurre de tourage froid en carré de 1cm. Il doit avoir la même consistance que la détrempe.", badge: null },
+      { icone: "📏", titre: "Tourage (3 tours simples)", detail: "Envelopper le beurre dans la détrempe. Étaler en rectangle, plier en 3. Tourner 90°. Répéter 3 fois en laissant reposer 30 min au frigo entre chaque tour.", badge: "⏱ 3 × 30 min repos" },
+      { icone: "🔪", titre: "Découper et façonner",     detail: "Étaler la pâte en rectangle de 3mm. Découper en rectangles. Poser 2 barres de chocolat. Rouler en serrant bien.", badge: null },
+      { icone: "🔥", titre: "Lever et cuire",           detail: "Laisser lever 2h à température ambiante. Dorer au jaune d'œuf. Cuire jusqu'à belle coloration dorée.", badge: "⏱ 2h levée + 15-18 min à 180°C" },
+    ]
+  },
+
+  gateaubasque: {
+    base: 8,
+    temps: "1h30",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🎂",
+    description: "Le vrai gâteau basque — pâte sablée généreuse fourée de crème pâtissière à la vanille ou confiture de cerises noires d'Itxassou.",
+    tableauGateauBasque: [
+      { nb:  2, farine: "63 g",  beurre: "44 g",  sucre: "38 g",  oeufs: "½",  creme: "75 ml",  lait: "75 ml"  },
+      { nb:  4, farine: "125 g", beurre: "88 g",  sucre: "75 g",  oeufs: "1",  creme: "150 ml", lait: "150 ml" },
+      { nb:  6, farine: "188 g", beurre: "131 g", sucre: "113 g", oeufs: "1½", creme: "225 ml", lait: "225 ml" },
+      { nb:  8, farine: "250 g", beurre: "175 g", sucre: "150 g", oeufs: "2",  creme: "300 ml", lait: "300 ml" },
+      { nb: 10, farine: "313 g", beurre: "219 g", sucre: "188 g", oeufs: "2½", creme: "375 ml", lait: "375 ml" },
+      { nb: 12, farine: "375 g", beurre: "263 g", sucre: "225 g", oeufs: "3",  creme: "450 ml", lait: "450 ml" },
+      { nb: 14, farine: "438 g", beurre: "306 g", sucre: "263 g", oeufs: "3½", creme: "525 ml", lait: "525 ml" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Pâte sablée basque",       detail: "Travailler beurre pommade avec sucre. Ajouter œufs et vanille. Incorporer farine, levure et poudre d'amande. Former deux disques. Réfrigérer.", badge: "⏱ 1h frigo" },
+      { icone: "🥛", titre: "Crème pâtissière",         detail: "Chauffer lait + crème + vanille. Fouetter jaunes + sucre + maïzena. Verser le lait chaud dessus. Recuire jusqu'à épaississement. Refroidir.", badge: null },
+      { icone: "🏗️", titre: "Monter le gâteau",        detail: "Étaler un disque de pâte dans le moule beurré. Garnir de crème pâtissière. Couvrir du deuxième disque. Souder les bords.", badge: null },
+      { icone: "🖌️", titre: "Décorer",                 detail: "Badigeonner de jaune d'œuf. Tracer le motif traditionnel basque avec une fourchette.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Enfourner jusqu'à belle couleur dorée uniforme. Laisser refroidir avant de démouler.", badge: "⏱ 35-40 min à 180°C" },
+    ]
+  },
+
+  canelebordelais: {
+    base: 12,
+    temps: "15 min + 24h repos",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🏺",
+    description: "Les cannelés bordelais — croûte caramélisée croustillante et intérieur moelleux parfumé au rhum et vanille. La spécialité de Bordeaux.",
+    tableauCanele: [
+      { nb:  4, lait: "167 ml", beurre: "8 g",  sucre: "83 g",  farine: "42 g",  oeufs: "⅔",  rhum: "4 ml"  },
+      { nb:  8, lait: "333 ml", beurre: "17 g", sucre: "167 g", farine: "83 g",  oeufs: "1⅓", rhum: "8 ml"  },
+      { nb: 12, lait: "500 ml", beurre: "25 g", sucre: "250 g", farine: "125 g", oeufs: "2",  rhum: "12 ml" },
+      { nb: 16, lait: "667 ml", beurre: "33 g", sucre: "333 g", farine: "167 g", oeufs: "2⅔", rhum: "16 ml" },
+      { nb: 20, lait: "833 ml", beurre: "42 g", sucre: "417 g", farine: "208 g", oeufs: "3⅓", rhum: "20 ml" },
+      { nb: 24, lait: "1 L",    beurre: "50 g", sucre: "500 g", farine: "250 g", oeufs: "4",  rhum: "24 ml" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Préparer l'appareil",    detail: "Chauffer lait + beurre + vanille jusqu'à ébullition. Dans un bol, mélanger sucre + farine. Verser le lait chaud progressivement en fouettant. Ajouter œufs et rhum. Passer au chinois.", badge: null },
+      { icone: "❄️", titre: "Repos indispensable",     detail: "Filmer et réfrigérer la pâte. Ce repos développe les arômes et donne la texture caractéristique.", badge: "⏱ 24h au frigo" },
+      { icone: "🫙", titre: "Préparer les moules",     detail: "Préchauffer le four à 250°C. Badigeonner les moules en cuivre (ou silicone) de beurre d'abeille ou beurre + cire d'abeille pour une croûte parfaite.", badge: null },
+      { icone: "🔥", titre: "Cuisson en deux temps",   detail: "Remplir les moules aux ¾. Cuire 15 min à 250°C pour la croûte, puis baisser à 180°C pour le reste. Les cannelés doivent être très sombres (presque noirs) à l'extérieur.", badge: "⏱ 15 min à 250°C + 45 min à 180°C" },
+      { icone: "⏳", titre: "Démouler tiède",          detail: "Démouler après 5 min. Déguster tiède pour le contraste croustillant/moelleux maximal. Se conservent 24h.", badge: null },
+    ]
+  },
   boeufbourguignon: {
     base: 6,
     temps: "3h30 + marinade",
@@ -3581,6 +4115,31 @@ function initTablesGlobales() {
     "risottoprimavera":  { table: "tableauRisottoPrimavera",   fn: htmlTableauRisottoPrimaveraColonnes,label: "personne" },
     "shakshuka":         { table: "tableauShakshuka",          fn: htmlTableauShakshukaColonnes,       label: "personne" },
   };
+  // Nouvelles recettes monde
+  const nouvellesRecettesTables = {
+    "ramenjaponais":   { table: "tableauRamen",          fn: htmlTableauRamenColonnes,          label: "bol" },
+    "gyoza":           { table: "tableauGyoza",           fn: htmlTableauGyozaColonnes,          label: "gyoza" },
+    "tikamasala":      { table: "tableauTikaMasala",      fn: htmlTableauTikaMasalaColonnes,     label: "personne" },
+    "phovietnambien":  { table: "tableauPho",             fn: htmlTableauPhoColonnes,            label: "bol" },
+    "pizzamargherita": { table: "tableauPizzaMargherita", fn: htmlTableauPizzaMargheritaColonnes,label: "pizza" },
+    "carbonara":       { table: "tableauCarbonara",       fn: htmlTableauCarbonaraColonnes,      label: "personne" },
+    "ceebujen":        { table: "tableauCeebujen",        fn: htmlTableauCeebujennColonnes,      label: "personne" },
+    "mafewestafricain":{ table: "tableauMafe",            fn: htmlTableauMafeColonnes,           label: "personne" },
+    "gnocchismaison":  { table: "tableauGnocchis",        fn: htmlTableauGnocchisColonnes,       label: "personne" },
+    "falafel":         { table: "tableauFalafel",         fn: htmlTableauFalafelColonnes,        label: "falafel" },
+    "poulettandoori":  { table: "tableauTandoori",        fn: htmlTableauTandooriColonnes,       label: "personne" },
+    "pekinduckeasy":   { table: "tableauPekinDuck",       fn: htmlTableauPekinDuckColonnes,      label: "personne" },
+    "ossobuco":        { table: "tableauOssobuco",        fn: htmlTableauOssobucoColonnes,       label: "personne" },
+    "tajinemouton":    { table: "tableauTajine",          fn: htmlTableauTajineColonnes,         label: "personne" },
+    "moelleuxchocolat":{ table: "tableauMoelleux",        fn: htmlTableauMoelleuxColonnes,       label: "moelleux" },
+    "cheesecake":      { table: "tableauCheesecake",      fn: htmlTableauCheesecakeColonnes,     label: "personne" },
+    "painauchocolat":  { table: "tableauPainAuChocolat",  fn: htmlTableauPainAuChocolatColonnes, label: "pain" },
+    "gateaubasque":    { table: "tableauGateauBasque",    fn: htmlTableauGateauBasqueColonnes,   label: "personne" },
+    "canelebordelais": { table: "tableauCanele",          fn: htmlTableauCaneleColonnes,         label: "cannelé" },
+  };
+  // Ajouter dans la fonction calculer() accessible globalement
+  window._nouvellesRecettesTables = nouvellesRecettesTables;
+
   cocktailsTablesGlobal = {
     "mojito":             { table: "tableauMojito",       fn: htmlTableauMojitoColonnes,       label: "verre" },
     "margarita":          { table: "tableauMargarita",     fn: htmlTableauMargaritaColonnes,    label: "verre" },
@@ -3743,6 +4302,182 @@ function htmlTableauParisBrestColonnes(l) {
     <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
     <tr><th>🧈 Beurre mou</th><td>${l.beurrCreme}</td></tr>
     <tr><th>🌰 Pâte de pralin</th><td>${l.pralin}</td></tr>`);
+}
+
+function htmlTableauRamenColonnes(l) {
+  return col(`
+    <tr><th>🍜 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍜 Nouilles ramen</th><td>${l.nouilles}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🥩 Porc (chashu)</th><td>${l.porc}</td></tr>
+    <tr><th>🥚 Œufs mollets</th><td>${l.oeuf}</td></tr>
+    <tr><th>🍄 Shiitake</th><td>${l.shiitake}</td></tr>`);
+}
+function htmlTableauGyozaColonnes(l) {
+  return col(`
+    <tr><th>🥟 Gyoza</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Feuilles à gyoza</th><td>${l.pate}</td></tr>
+    <tr><th>🥩 Porc haché</th><td>${l.porc}</td></tr>
+    <tr><th>🥬 Chou chinois</th><td>${l.chou}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
+}
+function htmlTableauTikaMasalaColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🥛 Yaourt (marinade)</th><td>${l.yaourt}</td></tr>
+    <tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr>`);
+}
+function htmlTableauPhoColonnes(l) {
+  return col(`
+    <tr><th>🍲 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍜 Nouilles de riz</th><td>${l.nouilles}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🥩 Bœuf (tranché fin)</th><td>${l.boeuf}</td></tr>
+    <tr><th>⭐ Anis étoilé</th><td>${l.anis}</td></tr>
+    <tr><th>🪵 Cannelle</th><td>${l.cannelle}</td></tr>`);
+}
+function htmlTableauPizzaMargheritaColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons (recette pâte à pizza)</th><td>${l.pate}</td></tr>
+    <tr><th>🍅 Tomates San Marzano</th><td>${l.tomates}</td></tr>
+    <tr><th>🧀 Mozzarella di bufala</th><td>${l.mozza}</td></tr>
+    <tr><th>🌿 Basilic frais</th><td>${l.basilic}</td></tr>`);
+}
+function htmlTableauCarbonaraColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍝 Spaghetti</th><td>${l.spaghetti}</td></tr>
+    <tr><th>🥓 Guanciale</th><td>${l.guanciale}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🧀 Pecorino romano</th><td>${l.pecorino}</td></tr>
+    <tr><th>🌶️ Poivre noir</th><td>généreusement</td></tr>`);
+}
+function htmlTableauCeebujennColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Poisson</th><td>${l.poisson}</td></tr>
+    <tr><th>🍚 Riz</th><td>${l.riz}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🫚 Manioc</th><td>${l.manioc}</td></tr>
+    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>`);
+}
+function htmlTableauMafeColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Viande (agneau/bœuf)</th><td>${l.viande}</td></tr>
+    <tr><th>🥜 Pâte d'arachide</th><td>${l.arachide}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🍠 Patate douce</th><td>${l.patate}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+function htmlTableauGnocchisColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>
+    <tr><th>🧀 Gorgonzola</th><td>${l.gorgonzola}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
+}
+function htmlTableauFalafelColonnes(l) {
+  return col(`
+    <tr><th>🧆 Falafels</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫘 Pois chiches crus</th><td>${l.poischiches}</td></tr>
+    <tr><th>🌿 Persil / coriandre</th><td>${l.persil}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌿 Cumin</th><td>${l.cumin}</td></tr>
+    <tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr>`);
+}
+function htmlTableauTandooriColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr>
+    <tr><th>🌶️ Paprika</th><td>${l.paprika}</td></tr>`);
+}
+function htmlTableauPekinDuckColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🦆 Canard</th><td>${l.canard}</td></tr>
+    <tr><th>🍶 Sauce hoisin</th><td>${l.hoisin}</td></tr>
+    <tr><th>🫓 Crêpes pékinoises</th><td>${l.crepesP}</td></tr>
+    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
+    <tr><th>🌿 Ciboule</th><td>${l.ciboule} tiges</td></tr>`);
+}
+function htmlTableauOssobucoColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🦴 Jarret de veau</th><td>${l.jarret}</td></tr>
+    <tr><th>🍷 Vin blanc</th><td>${l.vin}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🌿 Gremolata (citron, ail, persil)</th><td>1 portion</td></tr>`);
+}
+function htmlTableauTajineColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Agneau</th><td>${l.agneau}</td></tr>
+    <tr><th>🫐 Pruneaux</th><td>${l.pruneaux}</td></tr>
+    <tr><th>🌰 Amandes effilées</th><td>${l.amandes}</td></tr>
+    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+function htmlTableauMoelleuxColonnes(l) {
+  return col(`
+    <tr><th>🍫 Moelleux</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>`);
+}
+function htmlTableauCheesecakeColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🧀 Philadelphia</th><td>${l.philadelphia}</td></tr>
+    <tr><th>🍪 Biscuits digestifs</th><td>${l.biscuits}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
+}
+function htmlTableauPainAuChocolatColonnes(l) {
+  return col(`
+    <tr><th>🍫 Pains</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine T45</th><td>${l.farine}</td></tr>
+    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
+    <tr><th>🧈 Beurre (détrempe)</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
+    <tr><th>🧈 Beurre de tourage</th><td>${l.beurrage}</td></tr>
+    <tr><th>🍫 Chocolat (barres)</th><td>${l.chocolat}</td></tr>`);
+}
+function htmlTableauGateauBasqueColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍦 Crème (crème pâtissière)</th><td>${l.creme}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`);
+}
+function htmlTableauCaneleColonnes(l) {
+  return col(`
+    <tr><th>🏺 Cannelés</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🥃 Rhum</th><td>${l.rhum}</td></tr>`);
 }
 
 function htmlTableauGravlaxColonnes(l) {
@@ -4408,6 +5143,17 @@ function calculer() {
     return;
   }
 
+  // Nouvelles recettes monde et desserts
+  const nRT = window._nouvellesRecettesTables || {};
+  if (nRT[recette] && data[nRT[recette].table]) {
+    const cfg = nRT[recette];
+    const ligne = data[cfg.table].find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+
   // Cocktails
   const cocktailsTables = {
     "mojito":             { table: "tableauMojito",       fn: htmlTableauMojitoColonnes,       label: "verre" },
@@ -4736,6 +5482,25 @@ const prixCalories = {
   citronadementhe:    { base: 4,  baseLabel: "4 verres",      prixTotal: 0.80, calTotal: 200,  unite: "verre" },
   jusPastequeMenuthe: { base: 4,  baseLabel: "4 verres",      prixTotal: 1.50, calTotal: 160,  unite: "verre" },
   virginpinacolada:   { base: 1,  baseLabel: "1 verre",       prixTotal: 1.00, calTotal: 150,  unite: "verre" },
+  ramenjaponais:      { base: 2,  baseLabel: "2 bols",        prixTotal: 8.00,  calTotal: 900,  unite: "bol" },
+  gyoza:              { base: 20, baseLabel: "20 gyoza",      prixTotal: 5.00,  calTotal: 1000, unite: "gyoza" },
+  tikamasala:         { base: 4,  baseLabel: "4 personnes",   prixTotal: 7.00,  calTotal: 1600, unite: "personne" },
+  phovietnambien:     { base: 2,  baseLabel: "2 bols",        prixTotal: 6.00,  calTotal: 700,  unite: "bol" },
+  pizzamargherita:    { base: 2,  baseLabel: "2 pizzas",      prixTotal: 4.00,  calTotal: 1400, unite: "pizza" },
+  carbonara:          { base: 4,  baseLabel: "4 personnes",   prixTotal: 5.00,  calTotal: 2000, unite: "personne" },
+  ceebujen:           { base: 4,  baseLabel: "4 personnes",   prixTotal: 10.00, calTotal: 2000, unite: "personne" },
+  mafewestafricain:   { base: 4,  baseLabel: "4 personnes",   prixTotal: 8.00,  calTotal: 1800, unite: "personne" },
+  gnocchismaison:     { base: 4,  baseLabel: "4 personnes",   prixTotal: 5.00,  calTotal: 1800, unite: "personne" },
+  falafel:            { base: 4,  baseLabel: "4 personnes",   prixTotal: 3.00,  calTotal: 800,  unite: "personne" },
+  poulettandoori:     { base: 4,  baseLabel: "4 personnes",   prixTotal: 6.00,  calTotal: 1200, unite: "personne" },
+  pekinduckeasy:      { base: 4,  baseLabel: "4 personnes",   prixTotal: 15.00, calTotal: 1600, unite: "personne" },
+  ossobuco:           { base: 4,  baseLabel: "4 personnes",   prixTotal: 14.00, calTotal: 1600, unite: "personne" },
+  tajinemouton:       { base: 4,  baseLabel: "4 personnes",   prixTotal: 12.00, calTotal: 1600, unite: "personne" },
+  moelleuxchocolat:   { base: 6,  baseLabel: "6 moelleux",    prixTotal: 4.00,  calTotal: 2400, unite: "moelleux" },
+  cheesecake:         { base: 8,  baseLabel: "8 personnes",   prixTotal: 7.00,  calTotal: 2400, unite: "personne" },
+  painauchocolat:     { base: 8,  baseLabel: "8 pains",       prixTotal: 4.00,  calTotal: 2000, unite: "pain" },
+  gateaubasque:       { base: 8,  baseLabel: "8 personnes",   prixTotal: 5.00,  calTotal: 2400, unite: "personne" },
+  canelebordelais:    { base: 12, baseLabel: "12 cannelés",   prixTotal: 3.00,  calTotal: 1200, unite: "cannelé" },
   boeufbourguignon:   { base: 6, baseLabel: "6 personnes",  prixTotal: 18.00, calTotal: 3600, unite: "personne" },
   couscous:           { base: 6,  baseLabel: "6 personnes",  prixTotal: 12.00, calTotal: 2400, unite: "personne" },
   moussaka:           { base: 6,  baseLabel: "6 personnes",  prixTotal: 8.00,  calTotal: 2400, unite: "personne" },
@@ -5175,6 +5940,10 @@ function choisirRecette(nom) {
   } else if (nom === "tarteaupommes" && data.tableauTartePommes) {
     const ligne = data.tableauTartePommes.find(l => l.nb === personnes) || data.tableauTartePommes[5];
     listeIngredients = htmlTableauTartePommesColonnes(ligne);
+  } else if (window._nouvellesRecettesTables && window._nouvellesRecettesTables[nom] && data[window._nouvellesRecettesTables[nom].table]) {
+    const cfgN = window._nouvellesRecettesTables[nom];
+    const ligneN = data[cfgN.table].find(l => l.nb === personnes) || data[cfgN.table][Math.floor(data[cfgN.table].length/2)];
+    listeIngredients = cfgN.fn(ligneN);
   } else if (cocktailsTablesGlobal && cocktailsTablesGlobal[nom] && data[cocktailsTablesGlobal[nom].table]) {
     const cfgC = cocktailsTablesGlobal[nom];
     const ligneC = data[cfgC.table].find(l => l.nb === personnes) || data[cfgC.table][0];
@@ -5362,6 +6131,25 @@ function choisirRecette(nom) {
     "churros":           "Churros",
     "potaufeu":          "Pot-au-Feu",
     "parisbrestreinterpretation": "Paris-Brest",
+    "ramenjaponais":     "Ramen Japonais",
+    "gyoza":             "Gyoza",
+    "tikamasala":        "Poulet Tikka Masala",
+    "phovietnambien":    "Pho Vietnamien",
+    "pizzamargherita":   "Pizza Margherita",
+    "carbonara":         "Carbonara",
+    "ceebujen":          "Thiéboudienne (Ceebu Jen)",
+    "mafewestafricain":  "Maafé",
+    "gnocchismaison":    "Gnocchis Maison",
+    "falafel":           "Falafel",
+    "poulettandoori":    "Poulet Tandoori",
+    "pekinduckeasy":     "Canard Laqué Pékinois",
+    "ossobuco":          "Osso Buco",
+    "tajinemouton":      "Tajine d'Agneau",
+    "moelleuxchocolat":  "Moelleux au Chocolat",
+    "cheesecake":        "Cheesecake New-Yorkais",
+    "painauchocolat":    "Pain au Chocolat",
+    "gateaubasque":      "Gâteau Basque",
+    "canelebordelais":   "Cannelés Bordelais",
     "paindemie":         "Pain de mie",
     "patefeuilletee":    "Pâte feuilletée",
     "patebrisee":        "Pâte brisée",
