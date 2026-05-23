@@ -1823,18 +1823,21 @@ async function genererMenus() {
   const eviter = allergies ? `Éviter : ${allergies}.` : "";
   const joursStr = joursSelectionnes.join(", ");
 
-  const prompt = `Tu es un chef cuisinier. Génère un plan de menus pour ces jours : ${joursStr} (midi et soir) pour ${personnes} personne(s).
+  // Ajouter un seed aléatoire pour forcer la variété
+  const seed = Math.floor(Math.random() * 1000);
+  const prompt = `Tu es un chef cuisinier créatif (seed: ${seed}). Génère un plan de menus VARIÉ et ORIGINAL pour ces jours : ${joursStr} (midi et soir) pour ${personnes} personne(s).
 ${preferences} ${eviter}
 
 Recettes disponibles : ${recettesDispos}
 
-RÈGLES :
-- Utilise UNIQUEMENT des recettes de la liste
-- Varie les recettes (pas de répétition)
+RÈGLES STRICTES :
+- Utilise UNIQUEMENT des recettes de la liste ci-dessus
+- AUCUNE répétition de recette sur la semaine
+- Varie les cuisines (française, italienne, asiatique, mexicaine...)
 - Équilibre les repas (pas que des desserts!)
-- Les desserts peuvent être en dessert mais pas en plat principal
-- Midi : salades, plats légers
-- Soir : plats consistants
+- Midi : plutôt salades, plats légers, healthy
+- Soir : plats plus consistants et chauds
+- Sois CRÉATIF et VARIÉ - évite les recettes trop classiques/attendues
 
 Réponds UNIQUEMENT en JSON valide :
 {
@@ -1877,20 +1880,59 @@ Réponds UNIQUEMENT en JSON valide :
 
 function genererMenusAleatoires(joursSelectionnes, tags, allergies) {
   const jours = joursSelectionnes;
-  const plats = ["lasagne","risotto","boeufbourguignon","gratindauphinois","curryledumes","wrappoulet","soupemiso","veloutelegumes"];
-  const salades = ["saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison","saladequinoa","saladeavocatcrevettes","saladelentilles"];
-  const desserts = ["tiramisu","cremebrulee","mousseauchocolat","fondantchocolat","tartecitron","tarteaupommes","clafoutis","flan"];
 
-  const shuffled = arr => [...arr].sort(() => Math.random() - 0.5);
-  const platsMix  = shuffled(plats);
-  const saladeMix = shuffled(salades);
-  const dessertMix = shuffled(desserts);
+  // Pools larges de recettes par catégorie
+  const tousPlats = [
+    "lasagne","risotto","boeufbourguignon","gratindauphinois","curryledumes",
+    "wrappoulet","soupemiso","veloutelegumes","pouletcitronthym","salmonteriyaki",
+    "bolognaisemaison","tacosmaison","padthai","currypouletcoco","burgermaison",
+    "risottoprimavera","shakshuka","couscous","moussaka","paella","butterchicken",
+    "souvlaki","quichelorraine","soupeaoignon","dalindien","rizcantonnais",
+    "hariramarocaine","potaufeu","saumongravlax"
+  ];
+  const toutesSalades = [
+    "saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison",
+    "saladequinoa","saladeavocatcrevettes","saladelentilles","saladepoischiches",
+    "gaspacho","buddhaBowl","overnightoats","smoothiebowl","houmous"
+  ];
+  const tousDessertsOptionnels = [
+    "tiramisu","cremebrulee","mousseauchocolat","fondantchocolat","tartecitron",
+    "tarteaupommes","clafoutis","flan","madeleine","verrinetiramisu","goumeau"
+  ];
+
+  // Filtrer selon les tags healthy
+  const filtrerHealthy = tags.includes("healthy");
+  const platsDispos = filtrerHealthy
+    ? tousPlats.filter(r => ["curryledumes","wrappoulet","soupemiso","veloutelegumes","salmonteriyaki","dalindien","padthai"].includes(r))
+    : tousPlats;
+
+  // Mélanger aléatoirement - VRAIMENT aléatoire avec timestamp
+  const shuffled = arr => {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  };
+
+  // Mélanger plusieurs fois pour plus d'aléatoire
+  const platsMix   = shuffled(shuffled(platsDispos));
+  const saladeMix  = shuffled(shuffled(toutesSalades));
+  const notesPlats = shuffled(["Parfait pour ce soir ! 🍽️","Un régal assuré ✨","Réconfortant et savoureux 😋","La recette star de la semaine 🌟","Simple et délicieux 👌","Un classique revisité 🍴","Pour se faire plaisir 🎉","Rapide et savoureux ⚡"]);
+  const notesSalades = shuffled(["Léger et frais 🌿","Parfait pour le midi ☀️","Coloré et vitaminé 🥗","Équilibré et gourmand 💚","Le midi idéal 🌸","Savoureux et léger ✨","Plein de fraîcheur 🌊","Pour bien commencer 🌿"]);
 
   return {
     semaine: jours.map((jour, i) => ({
       jour,
-      midi: { recette: saladeMix[i % saladeMix.length],  note: "Léger et savoureux 🌿" },
-      soir: { recette: platsMix[i % platsMix.length],    note: "Réconfortant et équilibré ✨" }
+      midi: {
+        recette: saladeMix[i % saladeMix.length],
+        note: notesSalades[i % notesSalades.length]
+      },
+      soir: {
+        recette: platsMix[i % platsMix.length],
+        note: notesPlats[i % notesPlats.length]
+      }
     }))
   };
 }
@@ -2058,6 +2100,7 @@ function viderRecherche() {
 
 // Afficher tout
 function afficherTout() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   fermerSousMenus();
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
   document.getElementById("btn-tout").classList.add("active");
@@ -2066,6 +2109,8 @@ function afficherTout() {
 
 // Toggle sous-menu générique
 function toggleSousMenu(menuId, btn) {
+  // Remonter en haut de page
+  window.scrollTo({ top: 0, behavior: "smooth" });
   const menu = document.getElementById(menuId);
   const autreMenu = menuId === "menu-categories" ? "menu-pays" : "menu-categories";
   const autreBtn  = menuId === "menu-categories" ? "btn-monde" : "btn-categories";
@@ -2097,6 +2142,7 @@ function fermerSousMenus() {
 
 // Filtre catégories (depuis sous-menu)
 function filtrerCategorie(cat) {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   document.querySelectorAll("#menu-categories .pays-btn").forEach(b => b.classList.remove("active"));
   event.target.classList.add("active");
   document.querySelectorAll(".carte").forEach(c => {
@@ -2106,6 +2152,7 @@ function filtrerCategorie(cat) {
 
 // Filtre par pays
 function filtrerPays(pays) {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   document.querySelectorAll("#menu-pays .pays-btn").forEach(b => b.classList.remove("active"));
   event.target.classList.add("active");
   document.querySelectorAll(".carte").forEach(c => {
