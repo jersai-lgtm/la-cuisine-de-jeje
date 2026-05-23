@@ -1054,13 +1054,14 @@
     </div>
   </div>
 
-  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('parisbrestreinterpretation', null)">
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('parisbrestreinterpretation', 'calc-parisbrest')">
     <img src="images/parisbrestreinterpretation.jpg" alt="Paris-Brest">
     <div class="carte-info">
       <h2>🍰 Paris-Brest</h2>
       <p>⏱ 1h30 • ⭐⭐⭐ Difficile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <span class="calc-fixed">~8 pers.</span>
+        <input type="number" value="8" min="1" max="15" class="calc-input" id="calc-parisbrest">
+        <button class="calc-btn" onclick="calculerCarte('parisbrestreinterpretation', 'calc-parisbrest')">Calculer</button>
       </div>
     </div>
   </div>
