@@ -814,7 +814,7 @@
   <!-- FORMULAIRE PRÉFÉRENCES -->
   <div class="plan-form" id="plan-form">
     <h2>📅 Planificateur de menus</h2>
-    <p class="plan-subtitle">Génère 7 jours de menus équilibrés avec liste de courses</p>
+    <p class="plan-subtitle">Génère tes menus équilibrés avec liste de courses</p>
 
     <div class="plan-field">
       <label>👥 Nombre de personnes</label>
@@ -822,19 +822,32 @@
     </div>
 
     <div class="plan-field">
-      <label>🎯 Préférences alimentaires</label>
-      <div class="plan-tags">
-        <button class="plan-tag" onclick="toggleTag(this)" data-val="végétarien">🌱 Végétarien</button>
-        <button class="plan-tag" onclick="toggleTag(this)" data-val="rapide">⚡ Rapide (&lt;30 min)</button>
-        <button class="plan-tag" onclick="toggleTag(this)" data-val="healthy">💚 Healthy</button>
-        <button class="plan-tag" onclick="toggleTag(this)" data-val="économique">💰 Économique</button>
-        <button class="plan-tag" onclick="toggleTag(this)" data-val="sans gluten">🌾 Sans gluten</button>
-        <button class="plan-tag" onclick="toggleTag(this)" data-val="monde">🌍 Cuisine du monde</button>
+      <label>📆 Jours à planifier</label>
+      <div class="plan-tags" id="plan-jours-choix">
+        <button class="plan-tag plan-tag-active" onclick="toggleTag(this)" data-val="Lundi">Lun</button>
+        <button class="plan-tag plan-tag-active" onclick="toggleTag(this)" data-val="Mardi">Mar</button>
+        <button class="plan-tag plan-tag-active" onclick="toggleTag(this)" data-val="Mercredi">Mer</button>
+        <button class="plan-tag plan-tag-active" onclick="toggleTag(this)" data-val="Jeudi">Jeu</button>
+        <button class="plan-tag plan-tag-active" onclick="toggleTag(this)" data-val="Vendredi">Ven</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="Samedi">Sam</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="Dimanche">Dim</button>
       </div>
     </div>
 
     <div class="plan-field">
-      <label>🚫 Allergies / Ingrédients à éviter</label>
+      <label>🎯 Préférences alimentaires</label>
+      <div class="plan-tags">
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="végétarien">🌱 Végétarien</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="rapide">⚡ Rapide</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="healthy">💚 Healthy</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="économique">💰 Économique</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="sans gluten">🌾 Sans gluten</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="monde">🌍 Monde</button>
+      </div>
+    </div>
+
+    <div class="plan-field">
+      <label>🚫 Allergies / À éviter</label>
       <input type="text" id="plan-allergies" placeholder="ex: noix, lactose, poisson..." class="plan-input-text">
     </div>
 
@@ -846,11 +859,12 @@
   <!-- RÉSULTAT MENUS -->
   <div id="plan-result" style="display:none">
     <div class="plan-result-header">
-      <h2>🗓️ Votre semaine</h2>
-      <button class="plan-btn-courses" onclick="afficherCourses()">🛒 Liste de courses</button>
-      <button class="plan-btn-retry" onclick="genererMenus()">🔄 Regénérer</button>
+      <h2>🗓️ Mes menus</h2>
+      <button class="plan-btn-courses" onclick="afficherCourses()">🛒 Courses</button>
+      <button class="plan-btn-retry" onclick="voirFormulaire()">⚙️ Modifier</button>
     </div>
     <div id="plan-jours"></div>
+    <button class="plan-btn-regenrer" onclick="genererMenus()">🔄 Nouveau menu</button>
   </div>
 
   <!-- LISTE DE COURSES -->
@@ -888,18 +902,48 @@ function calculerCarteBrioche(version) {
 // ==============================
 
 let menusSemaine = null;
+const STORAGE_KEY = "cuisineJeje_menus";
 
 function toggleTag(btn) {
   btn.classList.toggle("plan-tag-active");
+}
+
+// Sauvegarde locale
+function sauvegarderMenus(menus, personnes, jours) {
+  try {
+    const data = { menus, personnes, jours, date: new Date().toLocaleDateString("fr-FR") };
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  } catch(e) {}
+}
+
+function chargerMenusSauvegardes() {
+  try {
+    const raw = sessionStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch(e) { return null; }
+}
+
+function voirFormulaire() {
+  document.getElementById("plan-form").style.display = "block";
+  document.getElementById("plan-result").style.display = "none";
+  document.getElementById("plan-courses").style.display = "none";
 }
 
 async function genererMenus() {
   const btn = document.getElementById("btn-generer");
   const personnes = document.getElementById("plan-personnes").value;
   const allergies = document.getElementById("plan-allergies").value;
-  const tags = [...document.querySelectorAll(".plan-tag-active")].map(b => b.dataset.val);
 
-  // Construire la liste des recettes disponibles
+  // Récupérer jours sélectionnés (dans #plan-jours-choix) ET préférences (autres tags)
+  const joursSelectionnes = [...document.querySelectorAll("#plan-jours-choix .plan-tag-active")].map(b => b.dataset.val);
+  const tags = [...document.querySelectorAll(".plan-tags:not(#plan-jours-choix) .plan-tag-active")].map(b => b.dataset.val);
+
+  if (joursSelectionnes.length === 0) {
+    alert("Sélectionne au moins un jour !");
+    return;
+  }
+
   const recettesDispos = Object.keys(recettes).join(", ");
 
   btn.textContent = "⏳ Génération en cours...";
@@ -908,21 +952,22 @@ async function genererMenus() {
 
   const preferences = tags.length ? `Préférences : ${tags.join(", ")}.` : "";
   const eviter = allergies ? `Éviter : ${allergies}.` : "";
+  const joursStr = joursSelectionnes.join(", ");
 
-  const prompt = `Tu es un chef cuisinier. Génère un plan de menus pour 7 jours (midi et soir) pour ${personnes} personne(s).
+  const prompt = `Tu es un chef cuisinier. Génère un plan de menus pour ces jours : ${joursStr} (midi et soir) pour ${personnes} personne(s).
 ${preferences} ${eviter}
 
-Recettes disponibles dans l'application : ${recettesDispos}
+Recettes disponibles : ${recettesDispos}
 
-RÈGLES IMPORTANTES :
-- Utilise UNIQUEMENT des recettes de la liste ci-dessus
-- Varie les recettes (pas de répétition sur la semaine)
-- Équilibre les repas (pas que des desserts au dîner!)
-- Les recettes "desserts" peuvent être en dessert mais pas en plat principal
-- Pour le midi : plutôt salades, plats légers
-- Pour le soir : plats plus consistants
+RÈGLES :
+- Utilise UNIQUEMENT des recettes de la liste
+- Varie les recettes (pas de répétition)
+- Équilibre les repas (pas que des desserts!)
+- Les desserts peuvent être en dessert mais pas en plat principal
+- Midi : salades, plats légers
+- Soir : plats consistants
 
-Réponds UNIQUEMENT en JSON valide, sans texte avant ou après :
+Réponds UNIQUEMENT en JSON valide :
 {
   "semaine": [
     {
@@ -948,12 +993,12 @@ Réponds UNIQUEMENT en JSON valide, sans texte avant ou après :
     const text = data.content[0].text;
     const clean = text.replace(/```json|```/g, "").trim();
     menusSemaine = JSON.parse(clean);
-
+    sauvegarderMenus(menusSemaine, personnes, joursSelectionnes);
     afficherMenusSemaine(menusSemaine, parseInt(personnes));
   } catch(err) {
-    // Fallback aléatoire si l'IA échoue
     console.log("IA indispo, génération aléatoire", err);
-    menusSemaine = genererMenusAleatoires(tags, allergies);
+    menusSemaine = genererMenusAleatoires(joursSelectionnes, tags, allergies);
+    sauvegarderMenus(menusSemaine, personnes, joursSelectionnes);
     afficherMenusSemaine(menusSemaine, parseInt(personnes));
   }
 
@@ -961,8 +1006,8 @@ Réponds UNIQUEMENT en JSON valide, sans texte avant ou après :
   btn.disabled = false;
 }
 
-function genererMenusAleatoires(tags, allergies) {
-  const jours = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"];
+function genererMenusAleatoires(joursSelectionnes, tags, allergies) {
+  const jours = joursSelectionnes;
   const plats = ["lasagne","risotto","boeufbourguignon","gratindauphinois","curryledumes","wrappoulet","soupemiso","veloutelegumes"];
   const salades = ["saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison","saladequinoa","saladeavocatcrevettes","saladelentilles"];
   const desserts = ["tiramisu","cremebrulee","mousseauchocolat","fondantchocolat","tartecitron","tarteaupommes","clafoutis","flan"];
@@ -1101,12 +1146,26 @@ function afficherCourses() {
   document.getElementById("plan-courses").style.display = "block";
 }
 
+// Charger menus sauvegardés
+function chargerMenusAuDemarrage() {
+  const saved = chargerMenusSauvegardes();
+  if (saved && saved.menus) {
+    menusSemaine = saved.menus;
+    // Afficher directement les menus sauvegardés
+    document.getElementById("plan-form").style.display = "none";
+    afficherMenusSemaine(saved.menus, saved.personnes || 4);
+    // Mettre à jour le champ personnes
+    document.getElementById("plan-personnes").value = saved.personnes || 4;
+  }
+}
+
 // Retour au formulaire depuis les menus
 function resetPlanificateur() {
   document.getElementById("plan-form").style.display = "block";
   document.getElementById("plan-result").style.display = "none";
   document.getElementById("plan-courses").style.display = "none";
   menusSemaine = null;
+  sessionStorage.removeItem(STORAGE_KEY);
 }
 
 // Recherche
@@ -1246,6 +1305,7 @@ function afficherSection(section, btn) {
     searchBar.style.display = "none";
     document.getElementById("menu-categories").style.display = "none";
     document.getElementById("menu-pays").style.display = "none";
+    chargerMenusAuDemarrage();
   } else {
     calc.style.display = "none";
     cartes.style.display = "";
