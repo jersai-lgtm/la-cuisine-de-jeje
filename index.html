@@ -740,6 +740,9 @@
   <button class="nav-btn" onclick="afficherSection('calculateur', this)">
     <span>🧮</span><small>Calculateur</small>
   </button>
+  <button class="nav-btn" onclick="afficherSection('planificateur', this)">
+    <span>📅</span><small>Menus</small>
+  </button>
 </nav>
 
 <!-- SECTION CALCULATEUR CLASSIQUE (cachée par défaut) -->
@@ -805,6 +808,62 @@
   <div id="resultat"><div id="ficheRecette"></div></div>
 </section>
 
+<!-- SECTION PLANIFICATEUR -->
+<section class="planificateur-section" id="section-planificateur" style="display:none">
+
+  <!-- FORMULAIRE PRÉFÉRENCES -->
+  <div class="plan-form" id="plan-form">
+    <h2>📅 Planificateur de menus</h2>
+    <p class="plan-subtitle">Génère 7 jours de menus équilibrés avec liste de courses</p>
+
+    <div class="plan-field">
+      <label>👥 Nombre de personnes</label>
+      <input type="number" id="plan-personnes" value="4" min="1" max="12" class="plan-input">
+    </div>
+
+    <div class="plan-field">
+      <label>🎯 Préférences alimentaires</label>
+      <div class="plan-tags">
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="végétarien">🌱 Végétarien</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="rapide">⚡ Rapide (&lt;30 min)</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="healthy">💚 Healthy</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="économique">💰 Économique</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="sans gluten">🌾 Sans gluten</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="monde">🌍 Cuisine du monde</button>
+      </div>
+    </div>
+
+    <div class="plan-field">
+      <label>🚫 Allergies / Ingrédients à éviter</label>
+      <input type="text" id="plan-allergies" placeholder="ex: noix, lactose, poisson..." class="plan-input-text">
+    </div>
+
+    <button class="plan-btn-generer" onclick="genererMenus()" id="btn-generer">
+      ✨ Générer mes menus
+    </button>
+  </div>
+
+  <!-- RÉSULTAT MENUS -->
+  <div id="plan-result" style="display:none">
+    <div class="plan-result-header">
+      <h2>🗓️ Votre semaine</h2>
+      <button class="plan-btn-courses" onclick="afficherCourses()">🛒 Liste de courses</button>
+      <button class="plan-btn-retry" onclick="genererMenus()">🔄 Regénérer</button>
+    </div>
+    <div id="plan-jours"></div>
+  </div>
+
+  <!-- LISTE DE COURSES -->
+  <div id="plan-courses" style="display:none">
+    <div class="plan-result-header">
+      <h2>🛒 Liste de courses</h2>
+      <button class="plan-btn-retry" onclick="document.getElementById('plan-courses').style.display='none';document.getElementById('plan-result').style.display='block'">← Retour</button>
+    </div>
+    <div id="plan-courses-content"></div>
+  </div>
+
+</section>
+
 <script src="script.js"></script>
 
 <script>
@@ -822,6 +881,232 @@ function calculerCarteBrioche(version) {
     document.getElementById("modal-resultat").innerHTML = res;
     document.getElementById("modal-calc").classList.add("visible");
   }, 50);
+}
+
+// ==============================
+// PLANIFICATEUR DE MENUS
+// ==============================
+
+let menusSemaine = null;
+
+function toggleTag(btn) {
+  btn.classList.toggle("plan-tag-active");
+}
+
+async function genererMenus() {
+  const btn = document.getElementById("btn-generer");
+  const personnes = document.getElementById("plan-personnes").value;
+  const allergies = document.getElementById("plan-allergies").value;
+  const tags = [...document.querySelectorAll(".plan-tag-active")].map(b => b.dataset.val);
+
+  // Construire la liste des recettes disponibles
+  const recettesDispos = Object.keys(recettes).join(", ");
+
+  btn.textContent = "⏳ Génération en cours...";
+  btn.disabled = true;
+  document.getElementById("plan-result").style.display = "none";
+
+  const preferences = tags.length ? `Préférences : ${tags.join(", ")}.` : "";
+  const eviter = allergies ? `Éviter : ${allergies}.` : "";
+
+  const prompt = `Tu es un chef cuisinier. Génère un plan de menus pour 7 jours (midi et soir) pour ${personnes} personne(s).
+${preferences} ${eviter}
+
+Recettes disponibles dans l'application : ${recettesDispos}
+
+RÈGLES IMPORTANTES :
+- Utilise UNIQUEMENT des recettes de la liste ci-dessus
+- Varie les recettes (pas de répétition sur la semaine)
+- Équilibre les repas (pas que des desserts au dîner!)
+- Les recettes "desserts" peuvent être en dessert mais pas en plat principal
+- Pour le midi : plutôt salades, plats légers
+- Pour le soir : plats plus consistants
+
+Réponds UNIQUEMENT en JSON valide, sans texte avant ou après :
+{
+  "semaine": [
+    {
+      "jour": "Lundi",
+      "midi": {"recette": "nomRecette", "note": "courte note sympa"},
+      "soir": {"recette": "nomRecette", "note": "courte note sympa"}
+    }
+  ]
+}`;
+
+  try {
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-20250514",
+        max_tokens: 1000,
+        messages: [{ role: "user", content: prompt }]
+      })
+    });
+
+    const data = await response.json();
+    const text = data.content[0].text;
+    const clean = text.replace(/```json|```/g, "").trim();
+    menusSemaine = JSON.parse(clean);
+
+    afficherMenusSemaine(menusSemaine, parseInt(personnes));
+  } catch(err) {
+    // Fallback aléatoire si l'IA échoue
+    console.log("IA indispo, génération aléatoire", err);
+    menusSemaine = genererMenusAleatoires(tags, allergies);
+    afficherMenusSemaine(menusSemaine, parseInt(personnes));
+  }
+
+  btn.textContent = "✨ Générer mes menus";
+  btn.disabled = false;
+}
+
+function genererMenusAleatoires(tags, allergies) {
+  const jours = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"];
+  const plats = ["lasagne","risotto","boeufbourguignon","gratindauphinois","curryledumes","wrappoulet","soupemiso","veloutelegumes"];
+  const salades = ["saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison","saladequinoa","saladeavocatcrevettes","saladelentilles"];
+  const desserts = ["tiramisu","cremebrulee","mousseauchocolat","fondantchocolat","tartecitron","tarteaupommes","clafoutis","flan"];
+
+  const shuffled = arr => [...arr].sort(() => Math.random() - 0.5);
+  const platsMix  = shuffled(plats);
+  const saladeMix = shuffled(salades);
+  const dessertMix = shuffled(desserts);
+
+  return {
+    semaine: jours.map((jour, i) => ({
+      jour,
+      midi: { recette: saladeMix[i % saladeMix.length],  note: "Léger et savoureux 🌿" },
+      soir: { recette: platsMix[i % platsMix.length],    note: "Réconfortant et équilibré ✨" }
+    }))
+  };
+}
+
+function getNomRecette(key) {
+  const nomsAffichage = {
+    "croquemonsieur":"Croque-monsieur","cremebrulee":"Crème brûlée",
+    "tarteaupommes":"Tarte aux pommes","tartecitron":"Tarte au citron",
+    "boeufbourguignon":"Bœuf bourguignon","gratindauphinois":"Gratin dauphinois",
+    "mousseauchocolat":"Mousse au chocolat","fondantchocolat":"Fondant au chocolat",
+    "ileflottante":"Île flottante","bananabread":"Banana bread",
+    "veloutelegumes":"Velouté de légumes","saladeniçoise":"Salade niçoise",
+    "saladecesar":"Salade César","saladegreque":"Salade grecque",
+    "saladepatasthon":"Salade pâtes thon","saladerizmediterranee":"Salade riz méditerranéenne",
+    "tabulemaison":"Taboulé maison","saladelentilles":"Salade de lentilles",
+    "saladeavocatcrevettes":"Salade avocat crevettes","smoothiebowl":"Smoothie Bowl",
+    "saladequinoa":"Salade de quinoa","overnightoats":"Overnight Oats",
+    "buddhaBowl":"Buddha Bowl","soupemiso":"Soupe Miso","wrappoulet":"Wrap au Poulet",
+    "energyballs":"Energy Balls","pancakesproteine":"Pancakes Protéinés",
+    "bowlacai":"Bowl Açaï","saladepoischiches":"Salade de Pois Chiches",
+    "gaspacho":"Gaspacho","curryledumes":"Curry de Légumes",
+    "painbaguette":"Pain — Baguette","paindemie":"Pain de mie",
+    "patefeuilletee":"Pâte feuilletée","patebrisee":"Pâte brisée","patesablee":"Pâte sablée",
+    "goumeau":"Galette de Goumeau",
+  };
+  if (nomsAffichage[key]) return nomsAffichage[key];
+  return key.charAt(0).toUpperCase() + key.slice(1);
+}
+
+function getEmoji(key) {
+  const data = recettes[key];
+  return data ? data.emoji : "🍽️";
+}
+
+function afficherMenusSemaine(menus, personnes) {
+  const container = document.getElementById("plan-jours");
+  container.innerHTML = "";
+
+  menus.semaine.forEach(jour => {
+    const div = document.createElement("div");
+    div.className = "plan-jour";
+    div.innerHTML = `
+      <h3 class="plan-jour-titre">${jour.jour}</h3>
+      <div class="plan-repas-row">
+        <div class="plan-repas" onclick="ouvrirRecettePlan('${jour.midi.recette}', ${personnes})">
+          <div class="plan-repas-label">☀️ Midi</div>
+          <div class="plan-repas-emoji">${getEmoji(jour.midi.recette)}</div>
+          <div class="plan-repas-nom">${getNomRecette(jour.midi.recette)}</div>
+          <div class="plan-repas-note">${jour.midi.note}</div>
+        </div>
+        <div class="plan-repas" onclick="ouvrirRecettePlan('${jour.soir.recette}', ${personnes})">
+          <div class="plan-repas-label">🌙 Soir</div>
+          <div class="plan-repas-emoji">${getEmoji(jour.soir.recette)}</div>
+          <div class="plan-repas-nom">${getNomRecette(jour.soir.recette)}</div>
+          <div class="plan-repas-note">${jour.soir.note}</div>
+        </div>
+      </div>`;
+    container.appendChild(div);
+  });
+
+  document.getElementById("plan-form").style.display = "none";
+  document.getElementById("plan-result").style.display = "block";
+  document.getElementById("plan-courses").style.display = "none";
+}
+
+function ouvrirRecettePlan(recetteKey, personnes) {
+  document.getElementById("personnes").value = personnes;
+  // Aller sur l'onglet accueil et ouvrir la fiche
+  document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
+  document.querySelectorAll(".nav-btn")[0].classList.add("active");
+  afficherSection("accueil", document.querySelectorAll(".nav-btn")[0]);
+  setTimeout(() => choisirRecette(recetteKey), 100);
+}
+
+function afficherCourses() {
+  if (!menusSemaine) return;
+  const personnes = parseInt(document.getElementById("plan-personnes").value);
+
+  // Collecter tous les ingrédients de la semaine
+  const courses = {};
+
+  menusSemaine.semaine.forEach(jour => {
+    [jour.midi.recette, jour.soir.recette].forEach(key => {
+      const data = recettes[key];
+      if (!data) return;
+
+      // Récupérer les ingrédients selon le type de recette
+      let ingredients = {};
+      const ratio = personnes / (data.base || 4);
+
+      if (data.ingredients && Object.keys(data.ingredients).length > 0) {
+        Object.entries(data.ingredients).forEach(([nom, qte]) => {
+          const qteCalc = typeof qte === "number" ? Math.round(qte * ratio * 10) / 10 : qte;
+          if (!courses[nom]) courses[nom] = { qte: 0, unite: "" };
+          if (typeof qte === "number") courses[nom].qte += qteCalc;
+          else courses[nom].qte = qte;
+        });
+      } else if (data.ingredientsFixes) {
+        data.ingredientsFixes.forEach(([nom, qte]) => {
+          if (nom.startsWith("---")) return;
+          if (!courses[nom]) courses[nom] = { qte: qte, unite: "" };
+        });
+      }
+    });
+  });
+
+  // Afficher la liste
+  const container = document.getElementById("plan-courses-content");
+  let html = `<p class="courses-subtitle">Pour ${personnes} personne${personnes > 1 ? "s" : ""} — ${menusSemaine.semaine.length * 2} repas</p>`;
+
+  html += '<div class="courses-liste">';
+  Object.entries(courses).forEach(([nom, data]) => {
+    const qteStr = typeof data.qte === "number" && data.qte > 0
+      ? `<span class="courses-qte">${data.qte % 1 === 0 ? data.qte : data.qte.toFixed(1)}</span>`
+      : `<span class="courses-qte">${data.qte}</span>`;
+    html += `<div class="courses-item"><span class="courses-nom">${nom}</span>${qteStr}</div>`;
+  });
+  html += "</div>";
+
+  container.innerHTML = html;
+  document.getElementById("plan-result").style.display = "none";
+  document.getElementById("plan-courses").style.display = "block";
+}
+
+// Retour au formulaire depuis les menus
+function resetPlanificateur() {
+  document.getElementById("plan-form").style.display = "block";
+  document.getElementById("plan-result").style.display = "none";
+  document.getElementById("plan-courses").style.display = "none";
+  menusSemaine = null;
 }
 
 // Recherche
@@ -942,16 +1227,31 @@ function afficherSection(section, btn) {
   const calc = document.getElementById("section-calculateur");
   const cartes = document.querySelector(".cartes");
   const menuCats = document.querySelector(".menu-cats");
+  const planif = document.getElementById("section-planificateur");
+  const searchBar = document.querySelector(".search-bar");
+
   if (section === "calculateur") {
     calc.style.display = "block";
     cartes.style.display = "none";
     menuCats.style.display = "none";
+    planif.style.display = "none";
+    searchBar.style.display = "none";
+    document.getElementById("menu-categories").style.display = "none";
+    document.getElementById("menu-pays").style.display = "none";
+  } else if (section === "planificateur") {
+    calc.style.display = "none";
+    cartes.style.display = "none";
+    menuCats.style.display = "none";
+    planif.style.display = "block";
+    searchBar.style.display = "none";
     document.getElementById("menu-categories").style.display = "none";
     document.getElementById("menu-pays").style.display = "none";
   } else {
     calc.style.display = "none";
     cartes.style.display = "";
     menuCats.style.display = "";
+    planif.style.display = "none";
+    searchBar.style.display = "flex";
     afficherTout();
   }
 }
