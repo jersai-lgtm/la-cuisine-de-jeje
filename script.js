@@ -2533,6 +2533,321 @@ const recettes = {
       { icone: "⏳", titre: "Démouler tiède",          detail: "Démouler après 5 min. Déguster tiède pour le contraste croustillant/moelleux maximal. Se conservent 24h.", badge: null },
     ]
   },
+
+  mojitorose: {
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🌹",
+    description: "Le Mojito Rosé — rhum blanc, fraises fraîches, menthe, citron vert et eau gazeuse. Une version fruitée et colorée du classique.",
+    tableauMojitoRose: [
+      { nb:  1, rhum: "5 cl",  fraises: "4",  menthe: "6 feuilles",  citron: "½",  sucre: "2 c.à.c", eauGaz: "10 cl" },
+      { nb:  2, rhum: "10 cl", fraises: "8",  menthe: "12 feuilles", citron: "1",  sucre: "4 c.à.c", eauGaz: "20 cl" },
+      { nb:  3, rhum: "15 cl", fraises: "12", menthe: "18 feuilles", citron: "1½", sucre: "6 c.à.c", eauGaz: "30 cl" },
+      { nb:  4, rhum: "20 cl", fraises: "16", menthe: "24 feuilles", citron: "2",  sucre: "8 c.à.c", eauGaz: "40 cl" },
+      { nb:  5, rhum: "25 cl", fraises: "20", menthe: "30 feuilles", citron: "2½", sucre: "10 c.à.c",eauGaz: "50 cl" },
+      { nb:  6, rhum: "30 cl", fraises: "24", menthe: "36 feuilles", citron: "3",  sucre: "12 c.à.c",eauGaz: "60 cl" },
+      { nb:  7, rhum: "35 cl", fraises: "28", menthe: "42 feuilles", citron: "3½", sucre: "14 c.à.c",eauGaz: "70 cl" },
+      { nb:  8, rhum: "40 cl", fraises: "32", menthe: "48 feuilles", citron: "4",  sucre: "16 c.à.c",eauGaz: "80 cl" },
+      { nb:  9, rhum: "45 cl", fraises: "36", menthe: "54 feuilles", citron: "4½", sucre: "18 c.à.c",eauGaz: "90 cl" },
+      { nb: 10, rhum: "50 cl", fraises: "40", menthe: "60 feuilles", citron: "5",  sucre: "20 c.à.c",eauGaz: "1 L"   },
+      { nb: 11, rhum: "55 cl", fraises: "44", menthe: "66 feuilles", citron: "5½", sucre: "22 c.à.c",eauGaz: "1.1 L" },
+      { nb: 12, rhum: "60 cl", fraises: "48", menthe: "72 feuilles", citron: "6",  sucre: "24 c.à.c",eauGaz: "1.2 L" },
+      { nb: 13, rhum: "65 cl", fraises: "52", menthe: "78 feuilles", citron: "6½", sucre: "26 c.à.c",eauGaz: "1.3 L" },
+      { nb: 14, rhum: "70 cl", fraises: "56", menthe: "84 feuilles", citron: "7",  sucre: "28 c.à.c",eauGaz: "1.4 L" },
+      { nb: 15, rhum: "75 cl", fraises: "60", menthe: "90 feuilles", citron: "7½", sucre: "30 c.à.c",eauGaz: "1.5 L" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍓", titre: "Écraser les fraises",      detail: "Couper les fraises en deux et les placer dans le verre avec le sucre. Écraser doucement pour libérer le jus.", badge: null },
+      { icone: "🌿", titre: "Ajouter menthe et citron", detail: "Ajouter les feuilles de menthe et le jus de citron vert. Piler légèrement.", badge: null },
+      { icone: "🧊", titre: "Glace et rhum",            detail: "Remplir de glace pilée. Verser le rhum blanc.", badge: null },
+      { icone: "💧", titre: "Compléter",                detail: "Compléter avec l'eau gazeuse. Mélanger délicatement. Décorer d'une fraise et de menthe fraîche.", badge: null },
+    ]
+  },
+
+  negroni: {
+    base: 1,
+    temps: "2 min",
+    niveau: "⭐ Facile",
+    emoji: "🍊",
+    description: "Le Negroni — gin, Campari et vermouth rouge en proportions égales. L'apéritif italien au goût amer et complexe.",
+    tableauNegroni: [
+      { nb:  1, gin: "3 cl",  campari: "3 cl",  vermouth: "3 cl",  orange: "1 zeste" },
+      { nb:  2, gin: "6 cl",  campari: "6 cl",  vermouth: "6 cl",  orange: "2 zestes"},
+      { nb:  3, gin: "9 cl",  campari: "9 cl",  vermouth: "9 cl",  orange: "3 zestes"},
+      { nb:  4, gin: "12 cl", campari: "12 cl", vermouth: "12 cl", orange: "4 zestes"},
+      { nb:  5, gin: "15 cl", campari: "15 cl", vermouth: "15 cl", orange: "5 zestes"},
+      { nb:  6, gin: "18 cl", campari: "18 cl", vermouth: "18 cl", orange: "6 zestes"},
+      { nb:  7, gin: "21 cl", campari: "21 cl", vermouth: "21 cl", orange: "7 zestes"},
+      { nb:  8, gin: "24 cl", campari: "24 cl", vermouth: "24 cl", orange: "8 zestes"},
+      { nb:  9, gin: "27 cl", campari: "27 cl", vermouth: "27 cl", orange: "9 zestes"},
+      { nb: 10, gin: "30 cl", campari: "30 cl", vermouth: "30 cl", orange: "10 zestes"},
+      { nb: 11, gin: "33 cl", campari: "33 cl", vermouth: "33 cl", orange: "11 zestes"},
+      { nb: 12, gin: "36 cl", campari: "36 cl", vermouth: "36 cl", orange: "12 zestes"},
+      { nb: 13, gin: "39 cl", campari: "39 cl", vermouth: "39 cl", orange: "13 zestes"},
+      { nb: 14, gin: "42 cl", campari: "42 cl", vermouth: "42 cl", orange: "14 zestes"},
+      { nb: 15, gin: "45 cl", campari: "45 cl", vermouth: "45 cl", orange: "15 zestes"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Verre plein de glace",     detail: "Remplir un verre old-fashioned ou à vin de glaçons.", badge: null },
+      { icone: "🍶", titre: "Verser les 3 spiritueux",  detail: "Verser gin, Campari et vermouth rouge en proportions égales. Mélanger doucement avec une cuillère longue pendant 30 secondes.", badge: "⏱ 30 sec mélange" },
+      { icone: "🍊", titre: "Zeste d'orange",          detail: "Presser un zeste d'orange au-dessus du verre pour libérer les huiles essentielles. Frotter le rebord avec le zeste et déposer dans le verre.", badge: null },
+    ]
+  },
+
+  moscowmule: {
+    base: 1,
+    temps: "3 min",
+    niveau: "⭐ Facile",
+    emoji: "🫙",
+    description: "Le Moscow Mule — vodka, ginger beer et citron vert. Servi dans sa célèbre tasse en cuivre, pétillant et rafraîchissant.",
+    tableauMoscowMule: [
+      { nb:  1, vodka: "5 cl",  gingerBeer: "12 cl", citron: "½",  menthe: "3 feuilles" },
+      { nb:  2, vodka: "10 cl", gingerBeer: "24 cl", citron: "1",  menthe: "6 feuilles" },
+      { nb:  3, vodka: "15 cl", gingerBeer: "36 cl", citron: "1½", menthe: "9 feuilles" },
+      { nb:  4, vodka: "20 cl", gingerBeer: "48 cl", citron: "2",  menthe: "12 feuilles"},
+      { nb:  5, vodka: "25 cl", gingerBeer: "60 cl", citron: "2½", menthe: "15 feuilles"},
+      { nb:  6, vodka: "30 cl", gingerBeer: "72 cl", citron: "3",  menthe: "18 feuilles"},
+      { nb:  7, vodka: "35 cl", gingerBeer: "84 cl", citron: "3½", menthe: "21 feuilles"},
+      { nb:  8, vodka: "40 cl", gingerBeer: "96 cl", citron: "4",  menthe: "24 feuilles"},
+      { nb:  9, vodka: "45 cl", gingerBeer: "108 cl",citron: "4½", menthe: "27 feuilles"},
+      { nb: 10, vodka: "50 cl", gingerBeer: "120 cl",citron: "5",  menthe: "30 feuilles"},
+      { nb: 11, vodka: "55 cl", gingerBeer: "132 cl",citron: "5½", menthe: "33 feuilles"},
+      { nb: 12, vodka: "60 cl", gingerBeer: "144 cl",citron: "6",  menthe: "36 feuilles"},
+      { nb: 13, vodka: "65 cl", gingerBeer: "156 cl",citron: "6½", menthe: "39 feuilles"},
+      { nb: 14, vodka: "70 cl", gingerBeer: "168 cl",citron: "7",  menthe: "42 feuilles"},
+      { nb: 15, vodka: "75 cl", gingerBeer: "180 cl",citron: "7½", menthe: "45 feuilles"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Tasse en cuivre et glace", detail: "Remplir une tasse en cuivre (ou grand verre) de glace pilée.", badge: null },
+      { icone: "🍶", titre: "Vodka et citron",          detail: "Verser la vodka. Presser le jus du citron vert par-dessus.", badge: null },
+      { icone: "💧", titre: "Ginger beer",              detail: "Compléter avec la ginger beer bien froide. Mélanger délicatement.", badge: null },
+      { icone: "🌿", titre: "Garnir",                   detail: "Garnir de feuilles de menthe fraîche et d'une rondelle de citron vert.", badge: null },
+    ]
+  },
+
+  pornstarmartini: {
+    base: 1,
+    temps: "3 min",
+    niveau: "⭐ Facile",
+    emoji: "🍍",
+    description: "Le Porn Star Martini — vodka à la vanille, Passoa, jus de passion et prosecco à part. Le cocktail le plus populaire d'Angleterre !",
+    tableauPornstar: [
+      { nb:  1, vodka: "4 cl",  passoa: "2 cl",  passion: "4 cl",  prosecco: "5 cl",  vanille: "½ c.à.c" },
+      { nb:  2, vodka: "8 cl",  passoa: "4 cl",  passion: "8 cl",  prosecco: "10 cl", vanille: "1 c.à.c"  },
+      { nb:  3, vodka: "12 cl", passoa: "6 cl",  passion: "12 cl", prosecco: "15 cl", vanille: "1½ c.à.c" },
+      { nb:  4, vodka: "16 cl", passoa: "8 cl",  passion: "16 cl", prosecco: "20 cl", vanille: "2 c.à.c"  },
+      { nb:  5, vodka: "20 cl", passoa: "10 cl", passion: "20 cl", prosecco: "25 cl", vanille: "2½ c.à.c" },
+      { nb:  6, vodka: "24 cl", passoa: "12 cl", passion: "24 cl", prosecco: "30 cl", vanille: "3 c.à.c"  },
+      { nb:  7, vodka: "28 cl", passoa: "14 cl", passion: "28 cl", prosecco: "35 cl", vanille: "3½ c.à.c" },
+      { nb:  8, vodka: "32 cl", passoa: "16 cl", passion: "32 cl", prosecco: "40 cl", vanille: "4 c.à.c"  },
+      { nb:  9, vodka: "36 cl", passoa: "18 cl", passion: "36 cl", prosecco: "45 cl", vanille: "4½ c.à.c" },
+      { nb: 10, vodka: "40 cl", passoa: "20 cl", passion: "40 cl", prosecco: "50 cl", vanille: "5 c.à.c"  },
+      { nb: 11, vodka: "44 cl", passoa: "22 cl", passion: "44 cl", prosecco: "55 cl", vanille: "5½ c.à.c" },
+      { nb: 12, vodka: "48 cl", passoa: "24 cl", passion: "48 cl", prosecco: "60 cl", vanille: "6 c.à.c"  },
+      { nb: 13, vodka: "52 cl", passoa: "26 cl", passion: "52 cl", prosecco: "65 cl", vanille: "6½ c.à.c" },
+      { nb: 14, vodka: "56 cl", passoa: "28 cl", passion: "56 cl", prosecco: "70 cl", vanille: "7 c.à.c"  },
+      { nb: 15, vodka: "60 cl", passoa: "30 cl", passion: "60 cl", prosecco: "75 cl", vanille: "7½ c.à.c" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍹", titre: "Shaker avec glace",        detail: "Mettre de la glace dans le shaker. Ajouter vodka vanille, Passoa, jus de fruit de la passion et sirop de vanille.", badge: null },
+      { icone: "🥶", titre: "Shaker",                   detail: "Shaker vigoureusement 15 secondes.", badge: "⏱ 15 sec" },
+      { icone: "🍸", titre: "Filtrer",                  detail: "Filtrer dans un verre à martini. Déposer une demi-passion flottante sur le dessus.", badge: null },
+      { icone: "🥂", titre: "Prosecco à part",          detail: "Servir le prosecco dans un shot verre à côté — on l'ajoute au cocktail ou on le boit en une gorgée entre deux sips !", badge: null },
+    ]
+  },
+
+  hugospritz: {
+    base: 1,
+    temps: "2 min",
+    niveau: "⭐ Facile",
+    emoji: "🌸",
+    description: "Le Hugo Spritz — prosecco, sirop de sureau, menthe fraîche et eau gazeuse. Plus doux et floral que le Spritz classique.",
+    tableauHugoSpritz: [
+      { nb:  1, prosecco: "9 cl",  sureau: "2 cl",  eauGaz: "3 cl",  menthe: "4 feuilles", citron: "1 rondelle" },
+      { nb:  2, prosecco: "18 cl", sureau: "4 cl",  eauGaz: "6 cl",  menthe: "8 feuilles", citron: "2 rondelles"},
+      { nb:  3, prosecco: "27 cl", sureau: "6 cl",  eauGaz: "9 cl",  menthe: "12 feuilles",citron: "3 rondelles"},
+      { nb:  4, prosecco: "36 cl", sureau: "8 cl",  eauGaz: "12 cl", menthe: "16 feuilles",citron: "4 rondelles"},
+      { nb:  5, prosecco: "45 cl", sureau: "10 cl", eauGaz: "15 cl", menthe: "20 feuilles",citron: "5 rondelles"},
+      { nb:  6, prosecco: "54 cl", sureau: "12 cl", eauGaz: "18 cl", menthe: "24 feuilles",citron: "6 rondelles"},
+      { nb:  7, prosecco: "63 cl", sureau: "14 cl", eauGaz: "21 cl", menthe: "28 feuilles",citron: "7 rondelles"},
+      { nb:  8, prosecco: "72 cl", sureau: "16 cl", eauGaz: "24 cl", menthe: "32 feuilles",citron: "8 rondelles"},
+      { nb:  9, prosecco: "81 cl", sureau: "18 cl", eauGaz: "27 cl", menthe: "36 feuilles",citron: "9 rondelles"},
+      { nb: 10, prosecco: "90 cl", sureau: "20 cl", eauGaz: "30 cl", menthe: "40 feuilles",citron: "10 rondelles"},
+      { nb: 11, prosecco: "99 cl", sureau: "22 cl", eauGaz: "33 cl", menthe: "44 feuilles",citron: "11 rondelles"},
+      { nb: 12, prosecco: "108 cl",sureau: "24 cl", eauGaz: "36 cl", menthe: "48 feuilles",citron: "12 rondelles"},
+      { nb: 13, prosecco: "117 cl",sureau: "26 cl", eauGaz: "39 cl", menthe: "52 feuilles",citron: "13 rondelles"},
+      { nb: 14, prosecco: "126 cl",sureau: "28 cl", eauGaz: "42 cl", menthe: "56 feuilles",citron: "14 rondelles"},
+      { nb: 15, prosecco: "135 cl",sureau: "30 cl", eauGaz: "45 cl", menthe: "60 feuilles",citron: "15 rondelles"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Verre et glace",           detail: "Remplir un grand verre à vin de glaçons.", badge: null },
+      { icone: "🌸", titre: "Sirop de sureau",          detail: "Verser le sirop de fleur de sureau (St. Germain ou autre).", badge: null },
+      { icone: "🍾", titre: "Prosecco et eau gazeuse",  detail: "Verser le prosecco puis l'eau gazeuse. Mélanger très délicatement.", badge: null },
+      { icone: "🌿", titre: "Garnir",                   detail: "Ajouter menthe fraîche et rondelle de citron vert. Servir immédiatement.", badge: null },
+    ]
+  },
+
+  cherryblossommocktail: {
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🌸",
+    description: "Le Cherry Blossom Mocktail — jus de cerise, eau de rose, citron et eau gazeuse. Un mocktail floral et élégant, sans alcool.",
+    tableauCherryBlossom: [
+      { nb:  1, cerise: "8 cl",  eauRose: "1 cl",  citron: "1 cl",  sirop: "1 cl",  eauGaz: "8 cl"  },
+      { nb:  2, cerise: "16 cl", eauRose: "2 cl",  citron: "2 cl",  sirop: "2 cl",  eauGaz: "16 cl" },
+      { nb:  3, cerise: "24 cl", eauRose: "3 cl",  citron: "3 cl",  sirop: "3 cl",  eauGaz: "24 cl" },
+      { nb:  4, cerise: "32 cl", eauRose: "4 cl",  citron: "4 cl",  sirop: "4 cl",  eauGaz: "32 cl" },
+      { nb:  5, cerise: "40 cl", eauRose: "5 cl",  citron: "5 cl",  sirop: "5 cl",  eauGaz: "40 cl" },
+      { nb:  6, cerise: "48 cl", eauRose: "6 cl",  citron: "6 cl",  sirop: "6 cl",  eauGaz: "48 cl" },
+      { nb:  7, cerise: "56 cl", eauRose: "7 cl",  citron: "7 cl",  sirop: "7 cl",  eauGaz: "56 cl" },
+      { nb:  8, cerise: "64 cl", eauRose: "8 cl",  citron: "8 cl",  sirop: "8 cl",  eauGaz: "64 cl" },
+      { nb:  9, cerise: "72 cl", eauRose: "9 cl",  citron: "9 cl",  sirop: "9 cl",  eauGaz: "72 cl" },
+      { nb: 10, cerise: "80 cl", eauRose: "10 cl", citron: "10 cl", sirop: "10 cl", eauGaz: "80 cl" },
+      { nb: 11, cerise: "88 cl", eauRose: "11 cl", citron: "11 cl", sirop: "11 cl", eauGaz: "88 cl" },
+      { nb: 12, cerise: "96 cl", eauRose: "12 cl", citron: "12 cl", sirop: "12 cl", eauGaz: "96 cl" },
+      { nb: 13, cerise: "104 cl",eauRose: "13 cl", citron: "13 cl", sirop: "13 cl", eauGaz: "104 cl"},
+      { nb: 14, cerise: "112 cl",eauRose: "14 cl", citron: "14 cl", sirop: "14 cl", eauGaz: "112 cl"},
+      { nb: 15, cerise: "120 cl",eauRose: "15 cl", citron: "15 cl", sirop: "15 cl", eauGaz: "120 cl"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍒", titre: "Mélanger",                 detail: "Dans un shaker avec glace, mélanger jus de cerise, eau de rose, jus de citron et sirop de sucre.", badge: null },
+      { icone: "🥶", titre: "Shaker",                   detail: "Shaker 10 secondes.", badge: "⏱ 10 sec" },
+      { icone: "🌸", titre: "Filtrer et servir",        detail: "Filtrer dans un verre à champagne ou coupe. Compléter avec l'eau gazeuse. Décorer d'une fleur comestible ou cerise.", badge: null },
+    ]
+  },
+
+  oldFashioned: {
+    base: 1,
+    temps: "3 min",
+    niveau: "⭐ Facile",
+    emoji: "🥃",
+    description: "L'Old Fashioned — bourbon ou rye, sucre, Angostura bitters et zeste d'orange. Le cocktail classique par excellence depuis 1806.",
+    tableauOldFashioned: [
+      { nb:  1, bourbon: "6 cl",  sucre: "1 morceau", bitters: "2 traits", orange: "1 zeste" },
+      { nb:  2, bourbon: "12 cl", sucre: "2 morceaux",bitters: "4 traits", orange: "2 zestes"},
+      { nb:  3, bourbon: "18 cl", sucre: "3 morceaux",bitters: "6 traits", orange: "3 zestes"},
+      { nb:  4, bourbon: "24 cl", sucre: "4 morceaux",bitters: "8 traits", orange: "4 zestes"},
+      { nb:  5, bourbon: "30 cl", sucre: "5 morceaux",bitters: "10 traits",orange: "5 zestes"},
+      { nb:  6, bourbon: "36 cl", sucre: "6 morceaux",bitters: "12 traits",orange: "6 zestes"},
+      { nb:  7, bourbon: "42 cl", sucre: "7 morceaux",bitters: "14 traits",orange: "7 zestes"},
+      { nb:  8, bourbon: "48 cl", sucre: "8 morceaux",bitters: "16 traits",orange: "8 zestes"},
+      { nb:  9, bourbon: "54 cl", sucre: "9 morceaux",bitters: "18 traits",orange: "9 zestes"},
+      { nb: 10, bourbon: "60 cl", sucre: "10 morceaux",bitters: "20 traits",orange: "10 zestes"},
+      { nb: 11, bourbon: "66 cl", sucre: "11 morceaux",bitters: "22 traits",orange: "11 zestes"},
+      { nb: 12, bourbon: "72 cl", sucre: "12 morceaux",bitters: "24 traits",orange: "12 zestes"},
+      { nb: 13, bourbon: "78 cl", sucre: "13 morceaux",bitters: "26 traits",orange: "13 zestes"},
+      { nb: 14, bourbon: "84 cl", sucre: "14 morceaux",bitters: "28 traits",orange: "14 zestes"},
+      { nb: 15, bourbon: "90 cl", sucre: "15 morceaux",bitters: "30 traits",orange: "15 zestes"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍬", titre: "Dissoudre le sucre",       detail: "Placer le morceau de sucre dans le verre. Ajouter les Angostura bitters et une cuillère à café d'eau. Écraser et dissoudre complètement.", badge: null },
+      { icone: "🧊", titre: "Grande glace",             detail: "Ajouter un gros glaçon ou plusieurs glaçons. Le format gros glaçon est important — il fond moins vite.", badge: null },
+      { icone: "🥃", titre: "Verser le bourbon",        detail: "Verser le bourbon. Mélanger lentement avec une cuillère longue pendant 30 secondes.", badge: "⏱ 30 sec mélange" },
+      { icone: "🍊", titre: "Zeste d'orange",          detail: "Exprimer le zeste d'orange au-dessus du verre pour libérer les huiles. Frotter le bord et déposer ou suspendre sur le verre.", badge: null },
+    ]
+  },
+
+  gintoniqmaison: {
+    base: 1,
+    temps: "2 min",
+    niveau: "⭐ Facile",
+    emoji: "🫧",
+    description: "Le Gin Tonic maison — gin de qualité, tonic premium et garnitures soignées. Simple mais tellement bon quand c'est bien fait.",
+    tableauGinTonic: [
+      { nb:  1, gin: "5 cl",  tonic: "15 cl", citron: "1 rondelle", poivre: "3 grains" },
+      { nb:  2, gin: "10 cl", tonic: "30 cl", citron: "2 rondelles",poivre: "6 grains" },
+      { nb:  3, gin: "15 cl", tonic: "45 cl", citron: "3 rondelles",poivre: "9 grains" },
+      { nb:  4, gin: "20 cl", tonic: "60 cl", citron: "4 rondelles",poivre: "12 grains"},
+      { nb:  5, gin: "25 cl", tonic: "75 cl", citron: "5 rondelles",poivre: "15 grains"},
+      { nb:  6, gin: "30 cl", tonic: "90 cl", citron: "6 rondelles",poivre: "18 grains"},
+      { nb:  7, gin: "35 cl", tonic: "105 cl",citron: "7 rondelles",poivre: "21 grains"},
+      { nb:  8, gin: "40 cl", tonic: "120 cl",citron: "8 rondelles",poivre: "24 grains"},
+      { nb:  9, gin: "45 cl", tonic: "135 cl",citron: "9 rondelles",poivre: "27 grains"},
+      { nb: 10, gin: "50 cl", tonic: "150 cl",citron: "10 rondelles",poivre: "30 grains"},
+      { nb: 11, gin: "55 cl", tonic: "165 cl",citron: "11 rondelles",poivre: "33 grains"},
+      { nb: 12, gin: "60 cl", tonic: "180 cl",citron: "12 rondelles",poivre: "36 grains"},
+      { nb: 13, gin: "65 cl", tonic: "195 cl",citron: "13 rondelles",poivre: "39 grains"},
+      { nb: 14, gin: "70 cl", tonic: "210 cl",citron: "14 rondelles",poivre: "42 grains"},
+      { nb: 15, gin: "75 cl", tonic: "225 cl",citron: "15 rondelles",poivre: "45 grains"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫙", titre: "Verre ballon et glace",    detail: "Utiliser un grand verre ballon (Copa glass). Remplir de glaçons jusqu'en haut.", badge: null },
+      { icone: "🌿", titre: "Aromates d'abord",        detail: "Déposer les garnitures choisies sur la glace : rondelle de citron vert, grains de poivre rose, romarin, concombre... selon le style de gin.", badge: null },
+      { icone: "🍶", titre: "Verser le gin",            detail: "Verser le gin sur la glace.", badge: null },
+      { icone: "💧", titre: "Tonic premium",            detail: "Verser le tonic froid en filet contre le bord du verre pour préserver les bulles. Ne jamais remuer !", badge: null },
+    ]
+  },
+
+  shrubframboisebasilic: {
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🫐",
+    description: "Shrub Framboise Basilic — sirop vinaigré aux framboises et basilic, allongé d'eau gazeuse. Un mocktail sophistiqué et acidulé.",
+    tableauShrub: [
+      { nb:  1, framboises: "50 g",  basilic: "3 feuilles", vinaigre: "2 cl",  sucre: "2 c.à.s", eauGaz: "15 cl" },
+      { nb:  2, framboises: "100 g", basilic: "6 feuilles", vinaigre: "4 cl",  sucre: "4 c.à.s", eauGaz: "30 cl" },
+      { nb:  3, framboises: "150 g", basilic: "9 feuilles", vinaigre: "6 cl",  sucre: "6 c.à.s", eauGaz: "45 cl" },
+      { nb:  4, framboises: "200 g", basilic: "12 feuilles",vinaigre: "8 cl",  sucre: "8 c.à.s", eauGaz: "60 cl" },
+      { nb:  5, framboises: "250 g", basilic: "15 feuilles",vinaigre: "10 cl", sucre: "10 c.à.s",eauGaz: "75 cl" },
+      { nb:  6, framboises: "300 g", basilic: "18 feuilles",vinaigre: "12 cl", sucre: "12 c.à.s",eauGaz: "90 cl" },
+      { nb:  7, framboises: "350 g", basilic: "21 feuilles",vinaigre: "14 cl", sucre: "14 c.à.s",eauGaz: "105 cl"},
+      { nb:  8, framboises: "400 g", basilic: "24 feuilles",vinaigre: "16 cl", sucre: "16 c.à.s",eauGaz: "120 cl"},
+      { nb:  9, framboises: "450 g", basilic: "27 feuilles",vinaigre: "18 cl", sucre: "18 c.à.s",eauGaz: "135 cl"},
+      { nb: 10, framboises: "500 g", basilic: "30 feuilles",vinaigre: "20 cl", sucre: "20 c.à.s",eauGaz: "150 cl"},
+      { nb: 11, framboises: "550 g", basilic: "33 feuilles",vinaigre: "22 cl", sucre: "22 c.à.s",eauGaz: "165 cl"},
+      { nb: 12, framboises: "600 g", basilic: "36 feuilles",vinaigre: "24 cl", sucre: "24 c.à.s",eauGaz: "180 cl"},
+      { nb: 13, framboises: "650 g", basilic: "39 feuilles",vinaigre: "26 cl", sucre: "26 c.à.s",eauGaz: "195 cl"},
+      { nb: 14, framboises: "700 g", basilic: "42 feuilles",vinaigre: "28 cl", sucre: "28 c.à.s",eauGaz: "210 cl"},
+      { nb: 15, framboises: "750 g", basilic: "45 feuilles",vinaigre: "30 cl", sucre: "30 c.à.s",eauGaz: "225 cl"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫐", titre: "Préparer le shrub",        detail: "Écraser les framboises avec le sucre et le vinaigre de cidre dans un bol. Ajouter le basilic froissé. Laisser macérer au frigo.", badge: "⏱ 2h macération" },
+      { icone: "🌀", titre: "Filtrer",                  detail: "Filtrer le sirop obtenu en pressant bien les framboises. Conserver en bocal au frigo (se garde 2 semaines).", badge: null },
+      { icone: "🥤", titre: "Assembler",                detail: "Dans un verre avec glace, verser le shrub. Compléter avec eau gazeuse. Décorer d'une framboise et feuille de basilic.", badge: null },
+    ]
+  },
+
+  mocktailcoconananas: {
+    base: 2,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥥",
+    description: "Mocktail Coco Ananas — lait de coco, jus d'ananas, citron vert et gingembre. Tropical, frais et sans alcool pour toute la famille.",
+    tableauCocoAnanas: [
+      { nb:  1, coco: "8 cl",   ananas: "10 cl", citron: "1 cl",  gingembre: "½ cm", miel: "1 c.à.c" },
+      { nb:  2, coco: "16 cl",  ananas: "20 cl", citron: "2 cl",  gingembre: "1 cm",  miel: "2 c.à.c" },
+      { nb:  3, coco: "24 cl",  ananas: "30 cl", citron: "3 cl",  gingembre: "1 cm",  miel: "3 c.à.c" },
+      { nb:  4, coco: "32 cl",  ananas: "40 cl", citron: "4 cl",  gingembre: "2 cm",  miel: "4 c.à.c" },
+      { nb:  5, coco: "40 cl",  ananas: "50 cl", citron: "5 cl",  gingembre: "2 cm",  miel: "5 c.à.c" },
+      { nb:  6, coco: "48 cl",  ananas: "60 cl", citron: "6 cl",  gingembre: "2 cm",  miel: "6 c.à.c" },
+      { nb:  7, coco: "56 cl",  ananas: "70 cl", citron: "7 cl",  gingembre: "3 cm",  miel: "7 c.à.c" },
+      { nb:  8, coco: "64 cl",  ananas: "80 cl", citron: "8 cl",  gingembre: "3 cm",  miel: "8 c.à.c" },
+      { nb:  9, coco: "72 cl",  ananas: "90 cl", citron: "9 cl",  gingembre: "3 cm",  miel: "9 c.à.c" },
+      { nb: 10, coco: "80 cl",  ananas: "100 cl",citron: "10 cl", gingembre: "4 cm",  miel: "10 c.à.c"},
+      { nb: 11, coco: "88 cl",  ananas: "110 cl",citron: "11 cl", gingembre: "4 cm",  miel: "11 c.à.c"},
+      { nb: 12, coco: "96 cl",  ananas: "120 cl",citron: "12 cl", gingembre: "4 cm",  miel: "12 c.à.c"},
+      { nb: 13, coco: "104 cl", ananas: "130 cl",citron: "13 cl", gingembre: "5 cm",  miel: "13 c.à.c"},
+      { nb: 14, coco: "112 cl", ananas: "140 cl",citron: "14 cl", gingembre: "5 cm",  miel: "14 c.à.c"},
+      { nb: 15, coco: "120 cl", ananas: "150 cl",citron: "15 cl", gingembre: "5 cm",  miel: "15 c.à.c"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌀", titre: "Mixer",                    detail: "Mixer lait de coco, jus d'ananas, jus de citron vert, gingembre râpé et miel avec quelques glaçons jusqu'à texture lisse.", badge: "⏱ 30 sec" },
+      { icone: "🥥", titre: "Servir",                   detail: "Verser dans des grands verres avec glaçons. Décorer d'une tranche d'ananas, noix de coco râpée et paille. Servir immédiatement !", badge: null },
+    ]
+  },
   boeufbourguignon: {
     base: 6,
     temps: "3h30 + marinade",
@@ -3214,16 +3529,24 @@ const recettes = {
     niveau: "⭐ Facile",
     emoji: "🍛",
     description: "Un curry de légumes crémeux au lait de coco — épicé, parfumé et 100% végétarien. Réconfortant et nourrissant.",
-    ingredients: {
-      "Lait de coco (ml)": 400,
-      "Pois chiches (g)": 400,
-      "Tomates concassées (g)": 400,
-      "Épinards (g)": 100,
-      "Oignon": 1,
-      "Ail (gousses)": 3,
-      "Gingembre frais (cm)": 3,
-      "Curry en poudre (c.à.s)": 2,
-    },
+    tableauCurryLegumes: [
+      { nb:  1, coco: "100 ml", poischiches: "100 g", tomates: "100 g", epinards: "25 g",  oignon: "¼", ail: "1 gousse",  gingembre: "1 cm", curry: "½ c.à.s" },
+      { nb:  2, coco: "200 ml", poischiches: "200 g", tomates: "200 g", epinards: "50 g",  oignon: "½", ail: "1 gousse",  gingembre: "1 cm", curry: "1 c.à.s" },
+      { nb:  3, coco: "300 ml", poischiches: "300 g", tomates: "300 g", epinards: "75 g",  oignon: "¾", ail: "2 gousses", gingembre: "2 cm", curry: "1½ c.à.s"},
+      { nb:  4, coco: "400 ml", poischiches: "400 g", tomates: "400 g", epinards: "100 g", oignon: "1", ail: "3 gousses", gingembre: "3 cm", curry: "2 c.à.s" },
+      { nb:  5, coco: "500 ml", poischiches: "500 g", tomates: "500 g", epinards: "125 g", oignon: "1", ail: "3 gousses", gingembre: "3 cm", curry: "2½ c.à.s"},
+      { nb:  6, coco: "600 ml", poischiches: "600 g", tomates: "600 g", epinards: "150 g", oignon: "1", ail: "4 gousses", gingembre: "4 cm", curry: "3 c.à.s" },
+      { nb:  7, coco: "700 ml", poischiches: "700 g", tomates: "700 g", epinards: "175 g", oignon: "2", ail: "4 gousses", gingembre: "4 cm", curry: "3½ c.à.s"},
+      { nb:  8, coco: "800 ml", poischiches: "800 g", tomates: "800 g", epinards: "200 g", oignon: "2", ail: "5 gousses", gingembre: "5 cm", curry: "4 c.à.s" },
+      { nb:  9, coco: "900 ml", poischiches: "900 g", tomates: "900 g", epinards: "225 g", oignon: "2", ail: "5 gousses", gingembre: "5 cm", curry: "4½ c.à.s"},
+      { nb: 10, coco: "1 L",    poischiches: "1 kg",  tomates: "1 kg",  epinards: "250 g", oignon: "2", ail: "6 gousses", gingembre: "6 cm", curry: "5 c.à.s" },
+      { nb: 11, coco: "1.1 L",  poischiches: "1.1 kg",tomates: "1.1 kg",epinards: "275 g", oignon: "3", ail: "6 gousses", gingembre: "6 cm", curry: "5½ c.à.s"},
+      { nb: 12, coco: "1.2 L",  poischiches: "1.2 kg",tomates: "1.2 kg",epinards: "300 g", oignon: "3", ail: "7 gousses", gingembre: "7 cm", curry: "6 c.à.s" },
+      { nb: 13, coco: "1.3 L",  poischiches: "1.3 kg",tomates: "1.3 kg",epinards: "325 g", oignon: "3", ail: "7 gousses", gingembre: "7 cm", curry: "6½ c.à.s"},
+      { nb: 14, coco: "1.4 L",  poischiches: "1.4 kg",tomates: "1.4 kg",epinards: "350 g", oignon: "3", ail: "8 gousses", gingembre: "8 cm", curry: "7 c.à.s" },
+      { nb: 15, coco: "1.5 L",  poischiches: "1.5 kg",tomates: "1.5 kg",epinards: "375 g", oignon: "4", ail: "8 gousses", gingembre: "8 cm", curry: "7½ c.à.s"},
+    ],
+    ingredients: {},
     etapes: [
       { icone: "🧅", titre: "Faire revenir les aromates",detail: "Faire chauffer un filet d'huile dans une grande poêle. Faire revenir l'oignon émincé 5 min. Ajouter l'ail et le gingembre râpé. Cuire 2 min.", badge: null },
       { icone: "🌶️", titre: "Ajouter les épices",      detail: "Ajouter le curry, le cumin et le curcuma. Torréfier 1 min en remuant pour libérer les arômes.", badge: null },
@@ -4155,7 +4478,110 @@ function initTablesGlobales() {
     "citronadementhe":    { table: "tableauCitronade",     fn: htmlTableauCitronadeColonnes,    label: "verre" },
     "jusPastequeMenuthe": { table: "tableauJusPasteque",   fn: htmlTableauJusPastequeColonnes,  label: "verre" },
     "virginpinacolada":   { table: "tableauVirginPina",    fn: htmlTableauVirginPinaColonnes,   label: "verre" },
+    "mojitorose":         { table: "tableauMojitoRose",    fn: htmlTableauMojitoRoseColonnes,   label: "verre" },
+    "negroni":            { table: "tableauNegroni",        fn: htmlTableauNegroniColonnes,      label: "verre" },
+    "moscowmule":         { table: "tableauMoscowMule",     fn: htmlTableauMoscowMuleColonnes,   label: "verre" },
+    "pornstarmartini":    { table: "tableauPornstar",       fn: htmlTableauPornstarColonnes,     label: "verre" },
+    "hugospritz":         { table: "tableauHugoSpritz",     fn: htmlTableauHugoSpritzColonnes,   label: "verre" },
+    "cherryblossommocktail":{ table: "tableauCherryBlossom",fn: htmlTableauCherryBlossomColonnes,label: "verre" },
+    "oldFashioned":       { table: "tableauOldFashioned",   fn: htmlTableauOldFashionedColonnes, label: "verre" },
+    "gintoniqmaison":     { table: "tableauGinTonic",       fn: htmlTableauGinTonicColonnes,     label: "verre" },
+    "shrubframboisebasilic":{ table: "tableauShrub",        fn: htmlTableauShrubColonnes,        label: "verre" },
+    "mocktailcoconananas":{ table: "tableauCocoAnanas",     fn: htmlTableauCocoAnanasColonnes,   label: "verre" },
   };
+}
+
+function htmlTableauMojitoRoseColonnes(l) {
+  return col(`
+    <tr><th>🌹 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
+    <tr><th>🍓 Fraises fraîches</th><td>${l.fraises}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🍬 Sucre de canne</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauNegroniColonnes(l) {
+  return col(`
+    <tr><th>🍊 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Gin</th><td>${l.gin}</td></tr>
+    <tr><th>🍊 Campari</th><td>${l.campari}</td></tr>
+    <tr><th>🍷 Vermouth rouge</th><td>${l.vermouth}</td></tr>
+    <tr><th>🍊 Zeste d'orange</th><td>${l.orange}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauMoscowMuleColonnes(l) {
+  return col(`
+    <tr><th>🫙 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr>
+    <tr><th>💧 Ginger beer</th><td>${l.gingerBeer}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauPornstarColonnes(l) {
+  return col(`
+    <tr><th>🍍 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Vodka vanille</th><td>${l.vodka}</td></tr>
+    <tr><th>🌺 Passoa</th><td>${l.passoa}</td></tr>
+    <tr><th>🌺 Jus de passion</th><td>${l.passion}</td></tr>
+    <tr><th>🍾 Prosecco (à part)</th><td>${l.prosecco}</td></tr>
+    <tr><th>🍦 Sirop vanille</th><td>${l.vanille}</td></tr>`);
+}
+function htmlTableauHugoSpritzColonnes(l) {
+  return col(`
+    <tr><th>🌸 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍾 Prosecco</th><td>${l.prosecco}</td></tr>
+    <tr><th>🌸 Sirop de sureau</th><td>${l.sureau}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>`);
+}
+function htmlTableauCherryBlossomColonnes(l) {
+  return col(`
+    <tr><th>🌸 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍒 Jus de cerise</th><td>${l.cerise}</td></tr>
+    <tr><th>🌹 Eau de rose</th><td>${l.eauRose}</td></tr>
+    <tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr>
+    <tr><th>🍬 Sirop de sucre</th><td>${l.sirop}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
+}
+function htmlTableauOldFashionedColonnes(l) {
+  return col(`
+    <tr><th>🥃 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥃 Bourbon / Rye whisky</th><td>${l.bourbon}</td></tr>
+    <tr><th>🍬 Sucre (morceau)</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Angostura bitters</th><td>${l.bitters}</td></tr>
+    <tr><th>🍊 Zeste d'orange</th><td>${l.orange}</td></tr>
+    <tr><th>🧊 Gros glaçon</th><td>1 par verre</td></tr>`);
+}
+function htmlTableauGinTonicColonnes(l) {
+  return col(`
+    <tr><th>🫧 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Gin</th><td>${l.gin}</td></tr>
+    <tr><th>💧 Tonic premium</th><td>${l.tonic}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🌶️ Poivre rose</th><td>${l.poivre}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+function htmlTableauShrubColonnes(l) {
+  return col(`
+    <tr><th>🫐 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍓 Framboises</th><td>${l.framboises}</td></tr>
+    <tr><th>🌿 Basilic frais</th><td>${l.basilic}</td></tr>
+    <tr><th>🍶 Vinaigre de cidre</th><td>${l.vinaigre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
+}
+function htmlTableauCocoAnanasColonnes(l) {
+  return col(`
+    <tr><th>🥥 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
+    <tr><th>🍍 Jus d'ananas</th><td>${l.ananas}</td></tr>
+    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>
+    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
 }
 
 function htmlTableauMojitoColonnes(l) {
@@ -4837,6 +5263,19 @@ function htmlTableauMadeleineColonnes(l) {
     <tr><th>🍋 Zeste citron</th><td>1 / 12</td></tr>`);
 }
 
+function htmlTableauCurryLegumesColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
+    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>
+    <tr><th>🌶️ Curry en poudre</th><td>${l.curry}</td></tr>`);
+}
+
 function htmlTableauVelouteLegumesColonnes(l) {
   return col(`
     <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
@@ -5048,6 +5487,15 @@ function calculer() {
     return;
   }
 
+  // Curry de légumes
+  if (recette === "curryledumes" && data.tableauCurryLegumes) {
+    const ligne = data.tableauCurryLegumes.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCurryLegumesColonnes(ligne) + htmlPrixCalories("curryledumes", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+
   // Smoothie bowl
   if (recette === "smoothiebowl" && data.tableauSmoothie) {
     const ligne = data.tableauSmoothie.find(l => l.nb === personnes);
@@ -5170,6 +5618,16 @@ function calculer() {
     "citronadementhe":    { table: "tableauCitronade",     fn: htmlTableauCitronadeColonnes,    label: "verre" },
     "jusPastequeMenuthe": { table: "tableauJusPasteque",   fn: htmlTableauJusPastequeColonnes,  label: "verre" },
     "virginpinacolada":   { table: "tableauVirginPina",    fn: htmlTableauVirginPinaColonnes,   label: "verre" },
+    "mojitorose":         { table: "tableauMojitoRose",    fn: htmlTableauMojitoRoseColonnes,   label: "verre" },
+    "negroni":            { table: "tableauNegroni",        fn: htmlTableauNegroniColonnes,      label: "verre" },
+    "moscowmule":         { table: "tableauMoscowMule",     fn: htmlTableauMoscowMuleColonnes,   label: "verre" },
+    "pornstarmartini":    { table: "tableauPornstar",       fn: htmlTableauPornstarColonnes,     label: "verre" },
+    "hugospritz":         { table: "tableauHugoSpritz",     fn: htmlTableauHugoSpritzColonnes,   label: "verre" },
+    "cherryblossommocktail":{ table: "tableauCherryBlossom",fn: htmlTableauCherryBlossomColonnes,label: "verre" },
+    "oldFashioned":       { table: "tableauOldFashioned",   fn: htmlTableauOldFashionedColonnes, label: "verre" },
+    "gintoniqmaison":     { table: "tableauGinTonic",       fn: htmlTableauGinTonicColonnes,     label: "verre" },
+    "shrubframboisebasilic":{ table: "tableauShrub",        fn: htmlTableauShrubColonnes,        label: "verre" },
+    "mocktailcoconananas":{ table: "tableauCocoAnanas",     fn: htmlTableauCocoAnanasColonnes,   label: "verre" },
   };
   if (cocktailsTables[recette] && data[cocktailsTables[recette].table]) {
     const cfg = cocktailsTables[recette];
@@ -5468,6 +5926,16 @@ const prixCalories = {
   saladequinoa:   { base: 4,  baseLabel: "4 personnes",  prixTotal: 5.00, calTotal: 1200, unite: "personne" },
   yaourt:         { base: 8,  baseLabel: "8 yaourts",    prixTotal: 1.80, calTotal: 640,  unite: "yaourt" },
   tartecitron:      { base: 6,  baseLabel: "6 tartelettes", prixTotal: 4.20,  calTotal: 2400, unite: "tartelette" },
+  mojitorose:         { base: 1,  baseLabel: "1 verre", prixTotal: 1.80, calTotal: 140, unite: "verre" },
+  negroni:            { base: 1,  baseLabel: "1 verre", prixTotal: 2.00, calTotal: 200, unite: "verre" },
+  moscowmule:         { base: 1,  baseLabel: "1 verre", prixTotal: 1.80, calTotal: 140, unite: "verre" },
+  pornstarmartini:    { base: 1,  baseLabel: "1 verre", prixTotal: 2.50, calTotal: 180, unite: "verre" },
+  hugospritz:         { base: 1,  baseLabel: "1 verre", prixTotal: 1.50, calTotal: 120, unite: "verre" },
+  cherryblossommocktail:{ base: 1,baseLabel: "1 verre", prixTotal: 0.80, calTotal: 80,  unite: "verre" },
+  oldFashioned:       { base: 1,  baseLabel: "1 verre", prixTotal: 2.00, calTotal: 180, unite: "verre" },
+  gintoniqmaison:     { base: 1,  baseLabel: "1 verre", prixTotal: 1.80, calTotal: 140, unite: "verre" },
+  shrubframboisebasilic:{ base: 4,baseLabel: "4 verres",prixTotal: 2.00, calTotal: 240, unite: "verre" },
+  mocktailcoconananas:{ base: 2,  baseLabel: "2 verres",prixTotal: 1.20, calTotal: 160, unite: "verre" },
   mojito:             { base: 1,  baseLabel: "1 verre",       prixTotal: 1.50, calTotal: 150,  unite: "verre" },
   margarita:          { base: 1,  baseLabel: "1 verre",       prixTotal: 1.80, calTotal: 180,  unite: "verre" },
   cosmopolitan:       { base: 1,  baseLabel: "1 verre",       prixTotal: 1.80, calTotal: 160,  unite: "verre" },
@@ -5877,6 +6345,9 @@ function choisirRecette(nom) {
   } else if (nom === "gaspacho" && data.tableauGaspacho) {
     const ligne = data.tableauGaspacho.find(l => l.nb === personnes) || data.tableauGaspacho[3];
     listeIngredients = htmlTableauGaspachoColonnes(ligne);
+  } else if (nom === "curryledumes" && data.tableauCurryLegumes) {
+    const ligne = data.tableauCurryLegumes.find(l => l.nb === personnes) || data.tableauCurryLegumes[3];
+    listeIngredients = htmlTableauCurryLegumesColonnes(ligne);
   } else if (nom === "smoothiebowl" && data.tableauSmoothie) {
     const ligne = data.tableauSmoothie.find(l => l.nb === personnes) || data.tableauSmoothie[1];
     listeIngredients = htmlTableauSmoothieColonnes(ligne);
@@ -6104,6 +6575,16 @@ function choisirRecette(nom) {
     "shakshuka":         "Shakshuka",
     "couscous":          "Couscous Royal",
     "mojito":            "Mojito",
+    "mojitorose":        "Mojito Rosé",
+    "negroni":           "Negroni",
+    "moscowmule":        "Moscow Mule",
+    "pornstarmartini":   "Porn Star Martini",
+    "hugospritz":        "Hugo Spritz",
+    "cherryblossommocktail": "Cherry Blossom",
+    "oldFashioned":      "Old Fashioned",
+    "gintoniqmaison":    "Gin Tonic Maison",
+    "shrubframboisebasilic": "Shrub Framboise Basilic",
+    "mocktailcoconananas":   "Mocktail Coco Ananas",
     "margarita":         "Margarita",
     "cosmopolitan":      "Cosmopolitan",
     "spritz":            "Spritz Aperol",
