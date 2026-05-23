@@ -76,13 +76,13 @@
 <!-- CARTES RECETTES -->
 <section class="cartes">
 
-  <div class="carte" data-pays="italie" data-cat="pizzas" onclick="ouvrirFiche('pizza', 'calc-pizza')">
-    <img src="images/pizza.jpg" alt="Pizza">
+  <div class="carte" data-pays="italie" data-cat="boulangerie" onclick="ouvrirFiche('pizza', 'calc-pizza')">
+    <img src="images/pizza.jpg" alt="Pâte à pizza">
     <div class="carte-info">
-      <h2>🍕 Pizza</h2>
+      <h2>🫓 Pâte à pizza</h2>
       <p>⏱ 48h • ⭐ Moyen</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="0" max="20" class="calc-input" id="calc-pizza">
+        <input type="number" value="4" min="0" max="15" class="calc-input" id="calc-pizza">
         <button class="calc-btn" onclick="calculerCarte('pizza', 'calc-pizza')">Calculer</button>
       </div>
     </div>
@@ -94,7 +94,7 @@
       <h2>🥞 Crêpes</h2>
       <p>⏱ 20 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="10" class="calc-input" id="calc-crepes">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-crepes">
         <button class="calc-btn" onclick="calculerCarte('crepes', 'calc-crepes')">Calculer</button>
       </div>
     </div>
@@ -106,7 +106,7 @@
       <h2>🧇 Gaufres</h2>
       <p>⏱ 25 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="20" class="calc-input" id="calc-gaufres">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-gaufres">
         <button class="calc-btn" onclick="calculerCarte('gaufres', 'calc-gaufres')">Calculer</button>
       </div>
     </div>
@@ -132,7 +132,7 @@
       <h2>🍝 Lasagnes</h2>
       <p>⏱ 1h30 • ⭐ Moyen</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="10" class="calc-input" id="calc-lasagne">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-lasagne">
         <button class="calc-btn" onclick="calculerCarte('lasagne', 'calc-lasagne')">Calculer</button>
       </div>
     </div>
@@ -144,7 +144,7 @@
       <h2>🍪 Cookies</h2>
       <p>⏱ 20 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="10" class="calc-input" id="calc-cookies">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-cookies">
         <button class="calc-btn" onclick="calculerCarte('cookies', 'calc-cookies')">Calculer</button>
       </div>
     </div>
@@ -156,7 +156,7 @@
       <h2>🍮 Flan</h2>
       <p>⏱ 1h • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="12" class="calc-input" id="calc-flan">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-flan">
         <button class="calc-btn" onclick="calculerCarte('flan', 'calc-flan')">Calculer</button>
       </div>
     </div>
@@ -168,7 +168,7 @@
       <h2>🍒 Clafoutis</h2>
       <p>⏱ 50 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="12" class="calc-input" id="calc-clafoutis">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-clafoutis">
         <button class="calc-btn" onclick="calculerCarte('clafoutis', 'calc-clafoutis')">Calculer</button>
       </div>
     </div>
@@ -180,7 +180,7 @@
       <h2>🍋 Tarte au citron</h2>
       <p>⏱ 1h30 • ⭐⭐ Intermédiaire</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="10" class="calc-input" id="calc-tartecitron">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-tartecitron">
         <button class="calc-btn" onclick="calculerCarte('tartecitron', 'calc-tartecitron')">Calculer</button>
       </div>
     </div>
@@ -192,7 +192,7 @@
       <h2>☕ Tiramisu</h2>
       <p>⏱ 25 min + 12h • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="12" class="calc-input" id="calc-tiramisu">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-tiramisu">
         <button class="calc-btn" onclick="calculerCarte('tiramisu', 'calc-tiramisu')">Calculer</button>
       </div>
     </div>
@@ -204,7 +204,7 @@
       <h2>🍎 Tarte aux pommes</h2>
       <p>⏱ 1h • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="12" class="calc-input" id="calc-tarteaupommes">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-tarteaupommes">
         <button class="calc-btn" onclick="calculerCarte('tarteaupommes', 'calc-tarteaupommes')">Calculer</button>
       </div>
     </div>
@@ -217,7 +217,7 @@
       <h2>🥞 Pancakes</h2>
       <p>⏱ 20 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-pancakes">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pancakes">
         <button class="calc-btn" onclick="calculerCarte('pancakes', 'calc-pancakes')">Calculer</button>
       </div>
     </div>
@@ -229,7 +229,7 @@
       <h2>🧁 Muffins</h2>
       <p>⏱ 25 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="12" min="1" max="24" class="calc-input" id="calc-muffins">
+        <input type="number" value="12" min="1" max="15" class="calc-input" id="calc-muffins">
         <button class="calc-btn" onclick="calculerCarte('muffins', 'calc-muffins')">Calculer</button>
       </div>
     </div>
@@ -241,7 +241,7 @@
       <h2>🥪 Croque-monsieur</h2>
       <p>⏱ 20 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="10" class="calc-input" id="calc-croquemonsieur">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-croquemonsieur">
         <button class="calc-btn" onclick="calculerCarte('croquemonsieur', 'calc-croquemonsieur')">Calculer</button>
       </div>
     </div>
@@ -253,7 +253,7 @@
       <h2>🍓 Smoothie Bowl</h2>
       <p>⏱ 10 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="2" min="1" max="6" class="calc-input" id="calc-smoothiebowl">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-smoothiebowl">
         <button class="calc-btn" onclick="calculerCarte('smoothiebowl', 'calc-smoothiebowl')">Calculer</button>
       </div>
     </div>
@@ -265,7 +265,7 @@
       <h2>🥗 Salade de quinoa</h2>
       <p>⏱ 25 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="8" class="calc-input" id="calc-saladequinoa">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladequinoa">
         <button class="calc-btn" onclick="calculerCarte('saladequinoa', 'calc-saladequinoa')">Calculer</button>
       </div>
     </div>
@@ -277,7 +277,7 @@
       <h2>🥛 Yaourt maison</h2>
       <p>⏱ 10 min + 8h • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="6" class="calc-input" id="calc-yaourt">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-yaourt">
         <button class="calc-btn" onclick="calculerCarte('yaourt', 'calc-yaourt')">Calculer</button>
       </div>
     </div>
@@ -291,7 +291,7 @@
       <h2>🥩 Bœuf bourguignon</h2>
       <p>⏱ 3h30 • ⭐⭐ Intermédiaire</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="4" max="10" class="calc-input" id="calc-boeufbourguignon">
+        <input type="number" value="6" min="4" max="15" class="calc-input" id="calc-boeufbourguignon">
         <button class="calc-btn" onclick="calculerCarte('boeufbourguignon', 'calc-boeufbourguignon')">Calculer</button>
       </div>
     </div>
@@ -303,7 +303,7 @@
       <h2>🍚 Risotto</h2>
       <p>⏱ 30 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="6" class="calc-input" id="calc-risotto">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-risotto">
         <button class="calc-btn" onclick="calculerCarte('risotto', 'calc-risotto')">Calculer</button>
       </div>
     </div>
@@ -315,7 +315,7 @@
       <h2>🥔 Gratin dauphinois</h2>
       <p>⏱ 1h30 • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="4" max="10" class="calc-input" id="calc-gratindauphinois">
+        <input type="number" value="6" min="4" max="15" class="calc-input" id="calc-gratindauphinois">
         <button class="calc-btn" onclick="calculerCarte('gratindauphinois', 'calc-gratindauphinois')">Calculer</button>
       </div>
     </div>
@@ -328,7 +328,7 @@
       <h2>🍮 Crème brûlée</h2>
       <p>⏱ 45 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="12" class="calc-input" id="calc-cremebrulee">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-cremebrulee">
         <button class="calc-btn" onclick="calculerCarte('cremebrulee', 'calc-cremebrulee')">Calculer</button>
       </div>
     </div>
@@ -340,7 +340,7 @@
       <h2>🍫 Mousse au chocolat</h2>
       <p>⏱ 20 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="12" class="calc-input" id="calc-mousseauchocolat">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-mousseauchocolat">
         <button class="calc-btn" onclick="calculerCarte('mousseauchocolat', 'calc-mousseauchocolat')">Calculer</button>
       </div>
     </div>
@@ -352,7 +352,7 @@
       <h2>🏝️ Île flottante</h2>
       <p>⏱ 40 min • ⭐⭐ Intermédiaire</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="12" class="calc-input" id="calc-ileflottante">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-ileflottante">
         <button class="calc-btn" onclick="calculerCarte('ileflottante', 'calc-ileflottante')">Calculer</button>
       </div>
     </div>
@@ -364,7 +364,7 @@
       <h2>🍫 Fondant au chocolat</h2>
       <p>⏱ 25 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="10" class="calc-input" id="calc-fondantchocolat">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-fondantchocolat">
         <button class="calc-btn" onclick="calculerCarte('fondantchocolat', 'calc-fondantchocolat')">Calculer</button>
       </div>
     </div>
@@ -377,7 +377,7 @@
       <h2>🫐 Madeleines</h2>
       <p>⏱ 30 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="12" min="1" max="20" class="calc-input" id="calc-madeleine">
+        <input type="number" value="12" min="1" max="15" class="calc-input" id="calc-madeleine">
         <button class="calc-btn" onclick="calculerCarte('madeleine', 'calc-madeleine')">Calculer</button>
       </div>
     </div>
@@ -389,7 +389,7 @@
       <h2>🍌 Banana bread</h2>
       <p>⏱ 1h15 • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="8" min="1" max="12" class="calc-input" id="calc-bananabread">
+        <input type="number" value="8" min="1" max="15" class="calc-input" id="calc-bananabread">
         <button class="calc-btn" onclick="calculerCarte('bananabread', 'calc-bananabread')">Calculer</button>
       </div>
     </div>
@@ -402,7 +402,7 @@
       <h2>🌾 Granola maison</h2>
       <p>⏱ 30 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="8" min="1" max="12" class="calc-input" id="calc-granola">
+        <input type="number" value="8" min="1" max="15" class="calc-input" id="calc-granola">
         <button class="calc-btn" onclick="calculerCarte('granola', 'calc-granola')">Calculer</button>
       </div>
     </div>
@@ -414,7 +414,7 @@
       <h2>🥕 Velouté de légumes</h2>
       <p>⏱ 35 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="6" class="calc-input" id="calc-veloutelegumes">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-veloutelegumes">
         <button class="calc-btn" onclick="calculerCarte('veloutelegumes', 'calc-veloutelegumes')">Calculer</button>
       </div>
     </div>
@@ -426,7 +426,7 @@
       <h2>🫘 Houmous maison</h2>
       <p>⏱ 10 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="12" class="calc-input" id="calc-houmous">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-houmous">
         <button class="calc-btn" onclick="calculerCarte('houmous', 'calc-houmous')">Calculer</button>
       </div>
     </div>
@@ -440,7 +440,7 @@
       <h2>🥗 Salade niçoise</h2>
       <p>⏱ 25 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-saladeniçoise">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladeniçoise">
         <button class="calc-btn" onclick="calculerCarte('saladeniçoise', 'calc-saladeniçoise')">Calculer</button>
       </div>
     </div>
@@ -452,7 +452,7 @@
       <h2>🥬 Salade César</h2>
       <p>⏱ 20 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-saladecesar">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladecesar">
         <button class="calc-btn" onclick="calculerCarte('saladecesar', 'calc-saladecesar')">Calculer</button>
       </div>
     </div>
@@ -464,7 +464,7 @@
       <h2>🫒 Salade grecque</h2>
       <p>⏱ 15 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-saladegreque">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladegreque">
         <button class="calc-btn" onclick="calculerCarte('saladegreque', 'calc-saladegreque')">Calculer</button>
       </div>
     </div>
@@ -476,7 +476,7 @@
       <h2>🍝 Salade pâtes thon</h2>
       <p>⏱ 20 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-saladepatasthon">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladepatasthon">
         <button class="calc-btn" onclick="calculerCarte('saladepatasthon', 'calc-saladepatasthon')">Calculer</button>
       </div>
     </div>
@@ -488,7 +488,7 @@
       <h2>🍚 Salade de riz médit.</h2>
       <p>⏱ 25 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-saladerizmediterranee">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladerizmediterranee">
         <button class="calc-btn" onclick="calculerCarte('saladerizmediterranee', 'calc-saladerizmediterranee')">Calculer</button>
       </div>
     </div>
@@ -500,7 +500,7 @@
       <h2>🌿 Taboulé maison</h2>
       <p>⏱ 20 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-tabulemaison">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-tabulemaison">
         <button class="calc-btn" onclick="calculerCarte('tabulemaison', 'calc-tabulemaison')">Calculer</button>
       </div>
     </div>
@@ -512,7 +512,7 @@
       <h2>🫘 Salade de lentilles</h2>
       <p>⏱ 30 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-saladelentilles">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladelentilles">
         <button class="calc-btn" onclick="calculerCarte('saladelentilles', 'calc-saladelentilles')">Calculer</button>
       </div>
     </div>
@@ -524,7 +524,7 @@
       <h2>🥑 Avocat crevettes</h2>
       <p>⏱ 15 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-saladeavocatcrevettes">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladeavocatcrevettes">
         <button class="calc-btn" onclick="calculerCarte('saladeavocatcrevettes', 'calc-saladeavocatcrevettes')">Calculer</button>
       </div>
     </div>
@@ -532,13 +532,53 @@
 
 
   <!-- BOULANGERIE BASES -->
+  <div class="carte" data-cat="boulangerie" data-pays="mexique" onclick="ouvrirFiche('galettetacos', 'calc-galettetacos')">
+    <img src="images/galettetacos.jpg" alt="Galette à Tacos">
+    <div class="carte-info">
+      <h2>🌮 Galette à Tacos</h2>
+      <p>⏱ 45 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <select class="calc-input" id="calc-galettetacos">
+          <option value="2">2 galettes</option>
+          <option value="4">4 galettes</option>
+          <option value="6">6 galettes</option>
+          <option value="8" selected>8 galettes</option>
+          <option value="10">10 galettes</option>
+          <option value="12">12 galettes</option>
+          <option value="14">14 galettes</option>
+          <option value="15">16 galettes</option>
+        </select>
+        <button class="calc-btn" onclick="calculerCarte('galettetacos', 'calc-galettetacos')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" data-pays="usa" onclick="ouvrirFiche('painburger', 'calc-painburger')">
+    <img src="images/painburger.jpg" alt="Pain Burger Buns">
+    <div class="carte-info">
+      <h2>🍔 Pain Burger (Buns)</h2>
+      <p>⏱ 2h30 • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <select class="calc-input" id="calc-painburger">
+          <option value="2">2 buns</option>
+          <option value="4">4 buns</option>
+          <option value="6" selected>6 buns</option>
+          <option value="8">8 buns</option>
+          <option value="10">10 buns</option>
+          <option value="12">12 buns</option>
+        </select>
+        <button class="calc-btn" onclick="calculerCarte('painburger', 'calc-painburger')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
   <div class="carte" data-pays="france" data-cat="desserts" onclick="ouvrirFiche('goumeau', 'calc-goumeau')">
     <img src="images/goumeau.jpg" alt="Galette de Goumeau">
     <div class="carte-info">
       <h2>🫓 Galette de Goumeau</h2>
       <p>⏱ 3h • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="10" class="calc-input" id="calc-goumeau">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-goumeau">
         <button class="calc-btn" onclick="calculerCarte('goumeau', 'calc-goumeau')">Calculer</button>
       </div>
     </div>
@@ -561,7 +601,7 @@
       <h2>🍞 Pain de mie</h2>
       <p>⏱ 2h30 • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="20" min="1" max="20" class="calc-input" id="calc-paindemie">
+        <input type="number" value="15" min="1" max="15" class="calc-input" id="calc-paindemie">
         <button class="calc-btn" onclick="calculerCarte('paindemie', 'calc-paindemie')">Calculer</button>
       </div>
     </div>
@@ -608,7 +648,7 @@
       <h2>🌾 Overnight Oats</h2>
       <p>⏱ 5 min + nuit • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="1" min="1" max="12" class="calc-input" id="calc-overnightoats">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-overnightoats">
         <button class="calc-btn" onclick="calculerCarte('overnightoats', 'calc-overnightoats')">Calculer</button>
       </div>
     </div>
@@ -620,7 +660,7 @@
       <h2>🥙 Buddha Bowl</h2>
       <p>⏱ 30 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="2" min="1" max="12" class="calc-input" id="calc-buddhaBowl">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-buddhaBowl">
         <button class="calc-btn" onclick="calculerCarte('buddhaBowl', 'calc-buddhaBowl')">Calculer</button>
       </div>
     </div>
@@ -632,7 +672,7 @@
       <h2>🍜 Soupe Miso</h2>
       <p>⏱ 15 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="2" min="1" max="12" class="calc-input" id="calc-soupemiso">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-soupemiso">
         <button class="calc-btn" onclick="calculerCarte('soupemiso', 'calc-soupemiso')">Calculer</button>
       </div>
     </div>
@@ -644,7 +684,7 @@
       <h2>🌯 Wrap au Poulet</h2>
       <p>⏱ 20 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="2" min="1" max="12" class="calc-input" id="calc-wrappoulet">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-wrappoulet">
         <button class="calc-btn" onclick="calculerCarte('wrappoulet', 'calc-wrappoulet')">Calculer</button>
       </div>
     </div>
@@ -656,7 +696,7 @@
       <h2>⚡ Energy Balls</h2>
       <p>⏱ 15 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="12" min="1" max="12" class="calc-input" id="calc-energyballs">
+        <input type="number" value="12" min="1" max="15" class="calc-input" id="calc-energyballs">
         <button class="calc-btn" onclick="calculerCarte('energyballs', 'calc-energyballs')">Calculer</button>
       </div>
     </div>
@@ -668,7 +708,7 @@
       <h2>💪 Pancakes Protéinés</h2>
       <p>⏱ 15 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-pancakesproteine">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pancakesproteine">
         <button class="calc-btn" onclick="calculerCarte('pancakesproteine', 'calc-pancakesproteine')">Calculer</button>
       </div>
     </div>
@@ -680,7 +720,7 @@
       <h2>🫐 Bowl Açaï</h2>
       <p>⏱ 10 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="1" min="1" max="12" class="calc-input" id="calc-bowlacai">
+        <input type="number" value="1" min="1" max="15" class="calc-input" id="calc-bowlacai">
         <button class="calc-btn" onclick="calculerCarte('bowlacai', 'calc-bowlacai')">Calculer</button>
       </div>
     </div>
@@ -692,7 +732,7 @@
       <h2>🫘 Salade Pois Chiches</h2>
       <p>⏱ 15 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-saladepoischiches">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladepoischiches">
         <button class="calc-btn" onclick="calculerCarte('saladepoischiches', 'calc-saladepoischiches')">Calculer</button>
       </div>
     </div>
@@ -704,7 +744,7 @@
       <h2>🍅 Gaspacho</h2>
       <p>⏱ 15 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="12" class="calc-input" id="calc-gaspacho">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-gaspacho">
         <button class="calc-btn" onclick="calculerCarte('gaspacho', 'calc-gaspacho')">Calculer</button>
       </div>
     </div>
@@ -716,8 +756,308 @@
       <h2>🍛 Curry de Légumes</h2>
       <p>⏱ 35 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="8" class="calc-input" id="calc-curryledumes">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-curryledumes">
         <button class="calc-btn" onclick="calculerCarte('curryledumes', 'calc-curryledumes')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- RECETTES STYLE HELLOFRESH -->
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('pouletcitronthym', 'calc-pouletcitronthym')">
+    <img src="images/pouletcitronthym.jpg" alt="Poulet Citron & Thym">
+    <div class="carte-info">
+      <h2>🍋 Poulet Citron & Thym</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-pouletcitronthym">
+        <button class="calc-btn" onclick="calculerCarte('pouletcitronthym', 'calc-pouletcitronthym')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('salmonteriyaki', 'calc-salmonteriyaki')">
+    <img src="images/salmonteriyaki.jpg" alt="Saumon Teriyaki">
+    <div class="carte-info">
+      <h2>🐟 Saumon Teriyaki</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-salmonteriyaki">
+        <button class="calc-btn" onclick="calculerCarte('salmonteriyaki', 'calc-salmonteriyaki')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('bolognaisemaison', 'calc-bolognaisemaison')">
+    <img src="images/bolognaisemaison.jpg" alt="Bolognaise Maison">
+    <div class="carte-info">
+      <h2>🍝 Bolognaise Maison</h2>
+      <p>⏱ 45 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-bolognaisemaison">
+        <button class="calc-btn" onclick="calculerCarte('bolognaisemaison', 'calc-bolognaisemaison')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="mexique" onclick="ouvrirFiche('tacosmaison', 'calc-tacosmaison')">
+    <img src="images/tacosmaison.jpg" alt="Tacos Maison">
+    <div class="carte-info">
+      <h2>🌮 Tacos Maison</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-tacosmaison">
+        <button class="calc-btn" onclick="calculerCarte('tacosmaison', 'calc-tacosmaison')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="thailande" onclick="ouvrirFiche('padthai', 'calc-padthai')">
+    <img src="images/padthai.jpg" alt="Pad Thaï">
+    <div class="carte-info">
+      <h2>🍜 Pad Thaï</h2>
+      <p>⏱ 20 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-padthai">
+        <button class="calc-btn" onclick="calculerCarte('padthai', 'calc-padthai')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="thailande" onclick="ouvrirFiche('currypouletcoco', 'calc-currypouletcoco')">
+    <img src="images/currypouletcoco.jpg" alt="Curry Poulet Coco">
+    <div class="carte-info">
+      <h2>🍛 Curry Poulet Coco</h2>
+      <p>⏱ 35 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-currypouletcoco">
+        <button class="calc-btn" onclick="calculerCarte('currypouletcoco', 'calc-currypouletcoco')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="usa" onclick="ouvrirFiche('burgermaison', 'calc-burgermaison')">
+    <img src="images/burgermaison.jpg" alt="Burger Maison">
+    <div class="carte-info">
+      <h2>🍔 Burger Maison</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-burgermaison">
+        <button class="calc-btn" onclick="calculerCarte('burgermaison', 'calc-burgermaison')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('risottoprimavera', 'calc-risottoprimavera')">
+    <img src="images/risottoprimavera.jpg" alt="Risotto Primavera">
+    <div class="carte-info">
+      <h2>🍚 Risotto Primavera</h2>
+      <p>⏱ 35 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-risottoprimavera">
+        <button class="calc-btn" onclick="calculerCarte('risottoprimavera', 'calc-risottoprimavera')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('saumongravlax', '')">
+    <img src="images/saumongravlax.jpg" alt="Saumon Gravlax">
+    <div class="carte-info">
+      <h2>🐟 Saumon Gravlax</h2>
+      <p>⏱ 24h marinade • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <span class="calc-fixed">~4 pers.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="liban" onclick="ouvrirFiche('shakshuka', 'calc-shakshuka')">
+    <img src="images/shakshuka.jpg" alt="Shakshuka">
+    <div class="carte-info">
+      <h2>🍳 Shakshuka</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-shakshuka">
+        <button class="calc-btn" onclick="calculerCarte('shakshuka', 'calc-shakshuka')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- RECETTES MONDE ET CLASSIQUES -->
+  <div class="carte" data-cat="plats" data-pays="maroc" onclick="ouvrirFiche('couscous', 'calc-couscous')">
+    <img src="images/couscous.jpg" alt="Couscous Royal">
+    <div class="carte-info">
+      <h2>🥘 Couscous Royal</h2>
+      <p>⏱ 1h30 • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="2" max="15" class="calc-input" id="calc-couscous">
+        <button class="calc-btn" onclick="calculerCarte('couscous', 'calc-couscous')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="grece" onclick="ouvrirFiche('moussaka', 'calc-moussaka')">
+    <img src="images/moussaka.jpg" alt="Moussaka">
+    <div class="carte-info">
+      <h2>🍆 Moussaka</h2>
+      <p>⏱ 1h30 • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="2" max="15" class="calc-input" id="calc-moussaka">
+        <button class="calc-btn" onclick="calculerCarte('moussaka', 'calc-moussaka')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="espagne" onclick="ouvrirFiche('paella', 'calc-paella')">
+    <img src="images/paella.jpg" alt="Paella">
+    <div class="carte-info">
+      <h2>🥘 Paella</h2>
+      <p>⏱ 50 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="15" class="calc-input" id="calc-paella">
+        <button class="calc-btn" onclick="calculerCarte('paella', 'calc-paella')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="inde" onclick="ouvrirFiche('butterchicken', 'calc-butterchicken')">
+    <img src="images/butterchicken.jpg" alt="Butter Chicken">
+    <div class="carte-info">
+      <h2>🍗 Butter Chicken</h2>
+      <p>⏱ 40 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-butterchicken">
+        <button class="calc-btn" onclick="calculerCarte('butterchicken', 'calc-butterchicken')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="grece" onclick="ouvrirFiche('souvlaki', 'calc-souvlaki')">
+    <img src="images/souvlaki.jpg" alt="Souvlaki">
+    <div class="carte-info">
+      <h2>🍢 Souvlaki</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="15" class="calc-input" id="calc-souvlaki">
+        <button class="calc-btn" onclick="calculerCarte('souvlaki', 'calc-souvlaki')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('quichelorraine', 'calc-quichelorraine')">
+    <img src="images/quichelorraine.jpg" alt="Quiche Lorraine">
+    <div class="carte-info">
+      <h2>🥧 Quiche Lorraine</h2>
+      <p>⏱ 1h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="2" max="15" class="calc-input" id="calc-quichelorraine">
+        <button class="calc-btn" onclick="calculerCarte('quichelorraine', 'calc-quichelorraine')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('soupeaoignon', 'calc-soupeaoignon')">
+    <img src="images/soupeaoignon.jpg" alt="Soupe à l'Oignon">
+    <div class="carte-info">
+      <h2>🧅 Soupe à l'Oignon</h2>
+      <p>⏱ 1h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-soupeaoignon">
+        <button class="calc-btn" onclick="calculerCarte('soupeaoignon', 'calc-soupeaoignon')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="inde" onclick="ouvrirFiche('dalindien', 'calc-dalindien')">
+    <img src="images/dalindien.jpg" alt="Dal Indien">
+    <div class="carte-info">
+      <h2>🫘 Dal Indien</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-dalindien">
+        <button class="calc-btn" onclick="calculerCarte('dalindien', 'calc-dalindien')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="chine" onclick="ouvrirFiche('rizcantonnais', 'calc-rizcantonnais')">
+    <img src="images/rizcantonnais.jpg" alt="Riz Cantonnais">
+    <div class="carte-info">
+      <h2>🍳 Riz Cantonnais</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-rizcantonnais">
+        <button class="calc-btn" onclick="calculerCarte('rizcantonnais', 'calc-rizcantonnais')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="maroc" onclick="ouvrirFiche('hariramarocaine', 'calc-hariramarocaine')">
+    <img src="images/hariramarocaine.jpg" alt="Harira Marocaine">
+    <div class="carte-info">
+      <h2>🍲 Harira Marocaine</h2>
+      <p>⏱ 1h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="2" max="15" class="calc-input" id="calc-hariramarocaine">
+        <button class="calc-btn" onclick="calculerCarte('hariramarocaine', 'calc-hariramarocaine')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" data-pays="inde" onclick="ouvrirFiche('naan', 'calc-naan')">
+    <img src="images/naan.jpg" alt="Naans">
+    <div class="carte-info">
+      <h2>🫓 Naans</h2>
+      <p>⏱ 1h30 • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="15" class="calc-input" id="calc-naan">
+        <button class="calc-btn" onclick="calculerCarte('naan', 'calc-naan')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('verrinetiramisu', null)">
+    <img src="images/verrinetiramisu.jpg" alt="Verrines Tiramisu">
+    <div class="carte-info">
+      <h2>🥂 Verrines Tiramisu</h2>
+      <p>⏱ 20 min + 4h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <span class="calc-fixed">~6 pers.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="espagne" onclick="ouvrirFiche('churros', 'calc-churros')">
+    <img src="images/churros.jpg" alt="Churros">
+    <div class="carte-info">
+      <h2>🍩 Churros</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="15" class="calc-input" id="calc-churros">
+        <button class="calc-btn" onclick="calculerCarte('churros', 'calc-churros')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('potaufeu', null)">
+    <img src="images/potaufeu.jpg" alt="Pot-au-Feu">
+    <div class="carte-info">
+      <h2>🍖 Pot-au-Feu</h2>
+      <p>⏱ 3h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <span class="calc-fixed">~6 pers.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('parisbrestreinterpretation', null)">
+    <img src="images/parisbrestreinterpretation.jpg" alt="Paris-Brest">
+    <div class="carte-info">
+      <h2>🍰 Paris-Brest</h2>
+      <p>⏱ 1h30 • ⭐⭐⭐ Difficile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <span class="calc-fixed">~8 pers.</span>
       </div>
     </div>
   </div>
@@ -754,6 +1094,8 @@
     <option value="gaufres">Gaufres</option>
     <option value="brioche">Brioche</option>
     <option value="goumeau">Galette de Goumeau</option>
+    <option value="galettetacos">Galette à Tacos</option>
+    <option value="painburger">Pain Burger (Buns)</option>
     <option value="painbaguette">Pain — Baguette</option>
     <option value="paindemie">Pain de mie</option>
     <option value="patefeuilletee">Pâte feuilletée</option>
@@ -793,6 +1135,31 @@
     <option value="saladepoischiches">Salade Pois Chiches</option>
     <option value="gaspacho">Gaspacho</option>
     <option value="curryledumes">Curry de Légumes</option>
+    <option value="pouletcitronthym">Poulet Citron & Thym</option>
+    <option value="salmonteriyaki">Saumon Teriyaki</option>
+    <option value="bolognaisemaison">Bolognaise Maison</option>
+    <option value="tacosmaison">Tacos Maison</option>
+    <option value="padthai">Pad Thaï</option>
+    <option value="currypouletcoco">Curry Poulet Coco</option>
+    <option value="burgermaison">Burger Maison</option>
+    <option value="risottoprimavera">Risotto Primavera</option>
+    <option value="saumongravlax">Saumon Gravlax</option>
+    <option value="shakshuka">Shakshuka</option>
+    <option value="couscous">Couscous Royal</option>
+    <option value="moussaka">Moussaka</option>
+    <option value="paella">Paella</option>
+    <option value="butterchicken">Butter Chicken</option>
+    <option value="souvlaki">Souvlaki</option>
+    <option value="quichelorraine">Quiche Lorraine</option>
+    <option value="soupeaoignon">Soupe à l'Oignon</option>
+    <option value="dalindien">Dal Indien</option>
+    <option value="rizcantonnais">Riz Cantonnais</option>
+    <option value="hariramarocaine">Harira Marocaine</option>
+    <option value="naan">Naans</option>
+    <option value="verrinetiramisu">Verrines Tiramisu</option>
+    <option value="churros">Churros</option>
+    <option value="potaufeu">Pot-au-Feu</option>
+    <option value="parisbrestreinterpretation">Paris-Brest</option>
     <option value="tartecitron">Tarte au citron</option>
     <option value="tiramisu">Tiramisu</option>
     <option value="tarteaupommes">Tarte aux pommes</option>
@@ -818,7 +1185,7 @@
 
     <div class="plan-field">
       <label>👥 Nombre de personnes</label>
-      <input type="number" id="plan-personnes" value="4" min="1" max="12" class="plan-input">
+      <input type="number" id="plan-personnes" value="4" min="1" max="15" class="plan-input">
     </div>
 
     <div class="plan-field">
@@ -1099,48 +1466,41 @@ function ouvrirRecettePlan(recetteKey, personnes) {
 function afficherCourses() {
   if (!menusSemaine) return;
   const personnes = parseInt(document.getElementById("plan-personnes").value);
-
-  // Collecter tous les ingrédients de la semaine
   const courses = {};
 
   menusSemaine.semaine.forEach(jour => {
     [jour.midi.recette, jour.soir.recette].forEach(key => {
-      const data = recettes[key];
-      if (!data) return;
-
-      // Récupérer les ingrédients selon le type de recette
-      let ingredients = {};
-      const ratio = personnes / (data.base || 4);
-
-      if (data.ingredients && Object.keys(data.ingredients).length > 0) {
-        Object.entries(data.ingredients).forEach(([nom, qte]) => {
-          const qteCalc = typeof qte === "number" ? Math.round(qte * ratio * 10) / 10 : qte;
-          if (!courses[nom]) courses[nom] = { qte: 0, unite: "" };
-          if (typeof qte === "number") courses[nom].qte += qteCalc;
-          else courses[nom].qte = qte;
-        });
-      } else if (data.ingredientsFixes) {
-        data.ingredientsFixes.forEach(([nom, qte]) => {
-          if (nom.startsWith("---")) return;
-          if (!courses[nom]) courses[nom] = { qte: qte, unite: "" };
-        });
-      }
+      const ingrs = getIngredientsCourses(key, personnes);
+      Object.entries(ingrs).forEach(([nom, data]) => {
+        if (!courses[nom]) courses[nom] = { qte: 0, raw: null };
+        if (typeof data.qte === "number" && data.qte > 0) {
+          courses[nom].qte += data.qte;
+        } else if (data.raw) {
+          courses[nom].raw = data.raw;
+        }
+      });
     });
   });
 
-  // Afficher la liste
   const container = document.getElementById("plan-courses-content");
   let html = `<p class="courses-subtitle">Pour ${personnes} personne${personnes > 1 ? "s" : ""} — ${menusSemaine.semaine.length * 2} repas</p>`;
-
   html += '<div class="courses-liste">';
-  Object.entries(courses).forEach(([nom, data]) => {
-    const qteStr = typeof data.qte === "number" && data.qte > 0
-      ? `<span class="courses-qte">${data.qte % 1 === 0 ? data.qte : data.qte.toFixed(1)}</span>`
-      : `<span class="courses-qte">${data.qte}</span>`;
-    html += `<div class="courses-item"><span class="courses-nom">${nom}</span>${qteStr}</div>`;
-  });
-  html += "</div>";
 
+  Object.entries(courses).sort((a,b) => a[0].localeCompare(b[0])).forEach(([nom, data]) => {
+    let qteStr = "";
+    if (data.qte > 0) {
+      const v = data.qte;
+      qteStr = v % 1 === 0 ? `${v}` : `${v.toFixed(0)}`;
+    } else if (data.raw) {
+      qteStr = data.raw;
+    }
+    html += `<div class="courses-item">
+      <span class="courses-nom">${nom}</span>
+      <span class="courses-qte">${qteStr}</span>
+    </div>`;
+  });
+
+  html += "</div>";
   container.innerHTML = html;
   document.getElementById("plan-result").style.display = "none";
   document.getElementById("plan-courses").style.display = "block";
