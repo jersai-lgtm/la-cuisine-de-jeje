@@ -1631,6 +1631,8 @@ const menusFestifs = {
 let menuFestifActuel = null;
 
 async function genererMenuFestif() {
+  // Vider le cache festif pour forcer un nouveau menu
+  try { sessionStorage.removeItem("cuisineJeje_festif"); } catch(e) {}
   const btn = document.getElementById("btn-generer-festif");
   const personnes = document.getElementById("festif-personnes").value;
   const allergies = document.getElementById("festif-allergies").value;
@@ -1683,16 +1685,29 @@ Réponds UNIQUEMENT en JSON :
     const clean = text.replace(/```json|```/g, "").trim();
     menuFestifActuel = JSON.parse(clean);
   } catch(err) {
-    // Fallback aléatoire
-    const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+    // Fallback aléatoire avec pickUnique pour éviter les répétitions
+    const pickOne = arr => shuffleArray(arr)[0];
+    const notesMap = {
+      apero:   ["Pour bien commencer la soirée ! 🥂","L'apéro qui met en appétit ✨","Parfait pour briser la glace 🎉","Le coup d'envoi de la soirée 🍹"],
+      entree:  ["Légère et savoureuse 🌿","Une entrée qui met en appétit 😋","Fraîche et colorée 🥗","Le parfait début de repas ✨"],
+      plat:    ["Le plat star de la soirée ! 🌟","Un régal assuré 🍽️","Tout le monde va adorer ! 👌","La recette qui impressionne 🏆"],
+      dessert: ["Une touche sucrée pour finir 🍰","Le point final parfait ✨","On termine en beauté ! 😋","Le dessert qui fait l'unanimité 🎉"],
+    };
+    const catMap = [
+      { key: "apero",   emoji: "🥂", label: "🥂 Apéro",  pool: themeData.apero   },
+      { key: "entree",  emoji: "🥗", label: "🥗 Entrée", pool: themeData.entree  },
+      { key: "plat",    emoji: "🍽️", label: "🍽️ Plat",   pool: themeData.plat    },
+      { key: "dessert", emoji: "🍰", label: "🍰 Dessert", pool: themeData.dessert },
+    ];
     menuFestifActuel = {
       theme: themeData.label,
-      menu: [
-        { categorie: "🥂 Apéro",  recette: pick(themeData.apero),   note: "Pour bien commencer la soirée !" },
-        { categorie: "🥗 Entrée", recette: pick(themeData.entree),  note: "Légère et savoureuse." },
-        { categorie: "🍽️ Plat",   recette: pick(themeData.plat),    note: "Le plat star de la soirée !" },
-        { categorie: "🍰 Dessert",recette: pick(themeData.dessert), note: "Une touche sucrée pour finir." },
-      ].filter(c => structure.length === 0 || structure.includes(c.categorie.split(" ")[1].toLowerCase()) || structure.includes("apero") && c.categorie.includes("Apéro") || structure.includes("entree") && c.categorie.includes("Entrée") || structure.includes("plat") && c.categorie.includes("Plat") || structure.includes("dessert") && c.categorie.includes("Dessert"))
+      menu: catMap
+        .filter(c => structure.length === 0 || structure.some(s => c.key.includes(s) || s.includes(c.key)))
+        .map(c => ({
+          categorie: c.label,
+          recette:   pickOne(c.pool),
+          note:      pickOne(notesMap[c.key])
+        }))
     };
   }
 
@@ -1800,6 +1815,8 @@ function voirFormulaire() {
 }
 
 async function genererMenus() {
+  // Vider le cache pour forcer un nouveau menu
+  try { sessionStorage.removeItem(STORAGE_KEY); } catch(e) {}
   const btn = document.getElementById("btn-generer");
   const personnes = document.getElementById("plan-personnes").value;
   const allergies = document.getElementById("plan-allergies").value;
@@ -1878,61 +1895,66 @@ Réponds UNIQUEMENT en JSON valide :
   btn.disabled = false;
 }
 
+function shuffleArray(arr) {
+  const a = [...arr];
+  // Mélange Fisher-Yates avec Date.now() pour garantir un vrai aléatoire
+  let seed = Date.now() + Math.random() * 99999;
+  for (let i = a.length - 1; i > 0; i--) {
+    seed = (seed * 9301 + 49297) % 233280;
+    const j = Math.floor((seed / 233280) * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function pickUnique(pool, n) {
+  // Pioche n éléments uniques dans pool
+  const shuffled = shuffleArray(pool);
+  const result = [];
+  for (let i = 0; result.length < n && i < shuffled.length; i++) {
+    result.push(shuffled[i]);
+  }
+  return result;
+}
+
 function genererMenusAleatoires(joursSelectionnes, tags, allergies) {
   const jours = joursSelectionnes;
+  const n = jours.length;
 
-  // Pools larges de recettes par catégorie
   const tousPlats = [
     "lasagne","risotto","boeufbourguignon","gratindauphinois","curryledumes",
     "wrappoulet","soupemiso","veloutelegumes","pouletcitronthym","salmonteriyaki",
     "bolognaisemaison","tacosmaison","padthai","currypouletcoco","burgermaison",
     "risottoprimavera","shakshuka","couscous","moussaka","paella","butterchicken",
     "souvlaki","quichelorraine","soupeaoignon","dalindien","rizcantonnais",
-    "hariramarocaine","potaufeu","saumongravlax"
+    "hariramarocaine","potaufeu","saumongravlax","naan","dalindien"
   ];
   const toutesSalades = [
     "saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison",
     "saladequinoa","saladeavocatcrevettes","saladelentilles","saladepoischiches",
-    "gaspacho","buddhaBowl","overnightoats","smoothiebowl","houmous"
-  ];
-  const tousDessertsOptionnels = [
-    "tiramisu","cremebrulee","mousseauchocolat","fondantchocolat","tartecitron",
-    "tarteaupommes","clafoutis","flan","madeleine","verrinetiramisu","goumeau"
+    "gaspacho","buddhaBowl","smoothiebowl","houmous","overnightoats",
+    "wrappoulet","croquemonsieur","pancakes","shakshuka","veloutelegumes","soupemiso"
   ];
 
-  // Filtrer selon les tags healthy
-  const filtrerHealthy = tags.includes("healthy");
-  const platsDispos = filtrerHealthy
-    ? tousPlats.filter(r => ["curryledumes","wrappoulet","soupemiso","veloutelegumes","salmonteriyaki","dalindien","padthai"].includes(r))
+  // Filtrer healthy si tag actif
+  const platsDispos = tags.includes("healthy")
+    ? tousPlats.filter(r => ["curryledumes","wrappoulet","soupemiso","veloutelegumes","salmonteriyaki","dalindien","padthai","buddhaBowl"].includes(r))
     : tousPlats;
 
-  // Mélanger aléatoirement - VRAIMENT aléatoire avec timestamp
-  const shuffled = arr => {
-    const a = [...arr];
-    for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  };
+  // Piocher n plats ET n salades UNIQUES — garantit 0 répétition
+  const platsChoisis   = pickUnique(platsDispos, n);
+  const saladesChoisies = pickUnique(toutesSalades, n);
 
-  // Mélanger plusieurs fois pour plus d'aléatoire
-  const platsMix   = shuffled(shuffled(platsDispos));
-  const saladeMix  = shuffled(shuffled(toutesSalades));
-  const notesPlats = shuffled(["Parfait pour ce soir ! 🍽️","Un régal assuré ✨","Réconfortant et savoureux 😋","La recette star de la semaine 🌟","Simple et délicieux 👌","Un classique revisité 🍴","Pour se faire plaisir 🎉","Rapide et savoureux ⚡"]);
-  const notesSalades = shuffled(["Léger et frais 🌿","Parfait pour le midi ☀️","Coloré et vitaminé 🥗","Équilibré et gourmand 💚","Le midi idéal 🌸","Savoureux et léger ✨","Plein de fraîcheur 🌊","Pour bien commencer 🌿"]);
+  const notesPlats = ["Parfait pour ce soir ! 🍽️","Un régal assuré ✨","Réconfortant et savoureux 😋","La recette star de la semaine 🌟","Simple et délicieux 👌","Un classique revisité 🍴","Pour se faire plaisir 🎉","Rapide et savoureux ⚡","Dépaysement garanti 🌍","Un incontournable ! 🏆"];
+  const notesSalades = ["Léger et frais 🌿","Parfait pour le midi ☀️","Coloré et vitaminé 🥗","Équilibré et gourmand 💚","Le midi idéal 🌸","Savoureux et léger ✨","Plein de fraîcheur 🌊","Pour bien commencer 🌿","Rapide et délicieux ⚡","Vitaminé et gourmand 🌈"];
+  const notesShuffled = shuffleArray(notesPlats);
+  const saladesNotesShuffled = shuffleArray(notesSalades);
 
   return {
     semaine: jours.map((jour, i) => ({
       jour,
-      midi: {
-        recette: saladeMix[i % saladeMix.length],
-        note: notesSalades[i % notesSalades.length]
-      },
-      soir: {
-        recette: platsMix[i % platsMix.length],
-        note: notesPlats[i % notesPlats.length]
-      }
+      midi: { recette: saladesChoisies[i], note: saladesNotesShuffled[i % saladesNotesShuffled.length] },
+      soir: { recette: platsChoisis[i],    note: notesShuffled[i % notesShuffled.length] }
     }))
   };
 }
