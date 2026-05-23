@@ -860,13 +860,14 @@
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('saumongravlax', '')">
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('saumongravlax', 'calc-saumongravlax')">
     <img src="images/saumongravlax.jpg" alt="Saumon Gravlax">
     <div class="carte-info">
       <h2>🐟 Saumon Gravlax</h2>
       <p>⏱ 24h marinade • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <span class="calc-fixed">~4 pers.</span>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saumongravlax">
+        <button class="calc-btn" onclick="calculerCarte('saumongravlax', 'calc-saumongravlax')">Calculer</button>
       </div>
     </div>
   </div>
@@ -1017,13 +1018,14 @@
     </div>
   </div>
 
-  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('verrinetiramisu', null)">
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('verrinetiramisu', 'calc-verrinetiramisu')">
     <img src="images/verrinetiramisu.jpg" alt="Verrines Tiramisu">
     <div class="carte-info">
       <h2>🥂 Verrines Tiramisu</h2>
       <p>⏱ 20 min + 4h • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <span class="calc-fixed">~6 pers.</span>
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-verrinetiramisu">
+        <button class="calc-btn" onclick="calculerCarte('verrinetiramisu', 'calc-verrinetiramisu')">Calculer</button></span>
       </div>
     </div>
   </div>
@@ -1040,13 +1042,14 @@
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('potaufeu', null)">
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('potaufeu', 'calc-potaufeu')">
     <img src="images/potaufeu.jpg" alt="Pot-au-Feu">
     <div class="carte-info">
       <h2>🍖 Pot-au-Feu</h2>
       <p>⏱ 3h • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <span class="calc-fixed">~6 pers.</span>
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-potaufeu">
+        <button class="calc-btn" onclick="calculerCarte('potaufeu', 'calc-potaufeu')">Calculer</button>
       </div>
     </div>
   </div>
