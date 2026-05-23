@@ -756,3 +756,28 @@ select, input[type="number"] {
   border-color: #ff4d88;
   color: #fff;
 }
+
+/* ==========================
+   ONGLETS PLANIFICATEUR
+========================== */
+.plan-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 16px 16px 0;
+  margin-bottom: 16px;
+}
+.plan-tab {
+  flex: 1;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  color: #aaa;
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+  text-align: center;
+}
+.plan-tab:hover  { background: rgba(255,77,136,.2); color: #fff; }
+.plan-tab.active { background: #ff4d88; border-color: #ff4d88; color: #fff; }
