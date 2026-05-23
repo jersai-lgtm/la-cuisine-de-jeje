@@ -1538,25 +1538,22 @@ const recettes = {
     niveau: "⭐⭐⭐ Difficile",
     emoji: "🍰",
     description: "Le Paris-Brest — pâte à choux en couronne, crème mousseline pralinée et éclats de pralin. Le grand dessert classique français.",
-    fixe: true,
-    ingredientsFixes: [
-      ["--- Pâte à choux ---", "---"],
-      ["💧 Eau", "125 ml"],
-      ["🥛 Lait", "125 ml"],
-      ["🧈 Beurre", "100 g"],
-      ["🌾 Farine", "150 g"],
-      ["🥚 Œufs", "4"],
-      ["🧂 Sel + sucre", "1 pincée chacun"],
-      ["--- Crème mousseline pralinée ---", "---"],
-      ["🥛 Lait entier", "500 ml"],
-      ["🥚 Jaunes d'œufs", "4"],
-      ["🍬 Sucre", "100 g"],
-      ["🌾 Maïzena", "40 g"],
-      ["🧈 Beurre mou", "200 g"],
-      ["🌰 Pâte de pralin", "150 g"],
-      ["--- Finition ---", "---"],
-      ["🌰 Amandes effilées", "50 g"],
-      ["🍬 Sucre glace", "pour saupoudrer"],
+    tableauParisBrest: [
+      { nb:  1, eauChoux: "16 ml",  laitChoux: "16 ml",  beurrChoux: "12 g",  farine: "19 g",  oeufChoux: "½",  laitCreme: "62 ml",  jaunesCreme: "½",  sucreCreme: "12 g",  maizena: "5 g",  beurrCreme: "25 g",  pralin: "19 g"  },
+      { nb:  2, eauChoux: "31 ml",  laitChoux: "31 ml",  beurrChoux: "25 g",  farine: "38 g",  oeufChoux: "1",   laitCreme: "125 ml", jaunesCreme: "1",   sucreCreme: "25 g",  maizena: "10 g", beurrCreme: "50 g",  pralin: "38 g"  },
+      { nb:  3, eauChoux: "47 ml",  laitChoux: "47 ml",  beurrChoux: "37 g",  farine: "56 g",  oeufChoux: "1½",  laitCreme: "187 ml", jaunesCreme: "1½",  sucreCreme: "37 g",  maizena: "15 g", beurrCreme: "75 g",  pralin: "56 g"  },
+      { nb:  4, eauChoux: "62 ml",  laitChoux: "62 ml",  beurrChoux: "50 g",  farine: "75 g",  oeufChoux: "2",   laitCreme: "250 ml", jaunesCreme: "2",   sucreCreme: "50 g",  maizena: "20 g", beurrCreme: "100 g", pralin: "75 g"  },
+      { nb:  5, eauChoux: "78 ml",  laitChoux: "78 ml",  beurrChoux: "62 g",  farine: "94 g",  oeufChoux: "2½",  laitCreme: "312 ml", jaunesCreme: "2½",  sucreCreme: "62 g",  maizena: "25 g", beurrCreme: "125 g", pralin: "94 g"  },
+      { nb:  6, eauChoux: "94 ml",  laitChoux: "94 ml",  beurrChoux: "75 g",  farine: "112 g", oeufChoux: "3",   laitCreme: "375 ml", jaunesCreme: "3",   sucreCreme: "75 g",  maizena: "30 g", beurrCreme: "150 g", pralin: "112 g" },
+      { nb:  7, eauChoux: "109 ml", laitChoux: "109 ml", beurrChoux: "87 g",  farine: "131 g", oeufChoux: "3½",  laitCreme: "437 ml", jaunesCreme: "3½",  sucreCreme: "87 g",  maizena: "35 g", beurrCreme: "175 g", pralin: "131 g" },
+      { nb:  8, eauChoux: "125 ml", laitChoux: "125 ml", beurrChoux: "100 g", farine: "150 g", oeufChoux: "4",   laitCreme: "500 ml", jaunesCreme: "4",   sucreCreme: "100 g", maizena: "40 g", beurrCreme: "200 g", pralin: "150 g" },
+      { nb:  9, eauChoux: "141 ml", laitChoux: "141 ml", beurrChoux: "112 g", farine: "169 g", oeufChoux: "4½",  laitCreme: "562 ml", jaunesCreme: "4½",  sucreCreme: "112 g", maizena: "45 g", beurrCreme: "225 g", pralin: "169 g" },
+      { nb: 10, eauChoux: "156 ml", laitChoux: "156 ml", beurrChoux: "125 g", farine: "188 g", oeufChoux: "5",   laitCreme: "625 ml", jaunesCreme: "5",   sucreCreme: "125 g", maizena: "50 g", beurrCreme: "250 g", pralin: "188 g" },
+      { nb: 11, eauChoux: "172 ml", laitChoux: "172 ml", beurrChoux: "137 g", farine: "206 g", oeufChoux: "5½",  laitCreme: "687 ml", jaunesCreme: "5½",  sucreCreme: "137 g", maizena: "55 g", beurrCreme: "275 g", pralin: "206 g" },
+      { nb: 12, eauChoux: "187 ml", laitChoux: "187 ml", beurrChoux: "150 g", farine: "225 g", oeufChoux: "6",   laitCreme: "750 ml", jaunesCreme: "6",   sucreCreme: "150 g", maizena: "60 g", beurrCreme: "300 g", pralin: "225 g" },
+      { nb: 13, eauChoux: "203 ml", laitChoux: "203 ml", beurrChoux: "162 g", farine: "244 g", oeufChoux: "6½",  laitCreme: "812 ml", jaunesCreme: "6½",  sucreCreme: "162 g", maizena: "65 g", beurrCreme: "325 g", pralin: "244 g" },
+      { nb: 14, eauChoux: "219 ml", laitChoux: "219 ml", beurrChoux: "175 g", farine: "262 g", oeufChoux: "7",   laitCreme: "875 ml", jaunesCreme: "7",   sucreCreme: "175 g", maizena: "70 g", beurrCreme: "350 g", pralin: "262 g" },
+      { nb: 15, eauChoux: "234 ml", laitChoux: "234 ml", beurrChoux: "187 g", farine: "281 g", oeufChoux: "7½",  laitCreme: "937 ml", jaunesCreme: "7½",  sucreCreme: "187 g", maizena: "75 g", beurrCreme: "375 g", pralin: "281 g" },
     ],
     ingredients: {},
     etapes: [
@@ -3150,6 +3147,24 @@ function initTablesGlobales() {
   };
 }
 
+function htmlTableauParisBrestColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🥧 Pâte à choux</th></tr>
+    <tr><th>💧 Eau</th><td>${l.eauChoux}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.laitChoux}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurrChoux}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufChoux}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌰 Crème mousseline pralinée</th></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.laitCreme}</td></tr>
+    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunesCreme}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
+    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
+    <tr><th>🧈 Beurre mou</th><td>${l.beurrCreme}</td></tr>
+    <tr><th>🌰 Pâte de pralin</th><td>${l.pralin}</td></tr>`);
+}
+
 function htmlTableauGravlaxColonnes(l) {
   return col(`
     <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
@@ -3810,6 +3825,15 @@ function calculer() {
     document.getElementById("resultat").innerHTML = ligne
       ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTartePommesColonnes(ligne) + htmlPrixCalories("tarteaupommes", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
+    return;
+  }
+
+  // Paris-Brest
+  if (recette === "parisbrestreinterpretation" && data.tableauParisBrest) {
+    const ligne = data.tableauParisBrest.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauParisBrestColonnes(ligne) + htmlPrixCalories("parisbrestreinterpretation", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
     return;
   }
 
@@ -4531,6 +4555,9 @@ function choisirRecette(nom) {
   } else if (nom === "tarteaupommes" && data.tableauTartePommes) {
     const ligne = data.tableauTartePommes.find(l => l.nb === personnes) || data.tableauTartePommes[5];
     listeIngredients = htmlTableauTartePommesColonnes(ligne);
+  } else if (nom === "parisbrestreinterpretation" && data.tableauParisBrest) {
+    const ligne = data.tableauParisBrest.find(l => l.nb === personnes) || data.tableauParisBrest[7];
+    listeIngredients = htmlTableauParisBrestColonnes(ligne);
   } else if (nom === "saumongravlax" && data.tableauGravlax) {
     const ligne = data.tableauGravlax.find(l => l.nb === personnes) || data.tableauGravlax[3];
     listeIngredients = htmlTableauGravlaxColonnes(ligne);
