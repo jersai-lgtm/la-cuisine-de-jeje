@@ -737,3 +737,22 @@ select, input[type="number"] {
 .courses-item:hover { background: rgba(255,77,136,.1); }
 .courses-nom  { font-size: 14px; color: #eee; }
 .courses-qte  { font-size: 14px; font-weight: bold; color: #ff8fb3; }
+
+/* Bouton regénérer en bas */
+.plan-btn-regenrer {
+  width: 100%;
+  background: rgba(255,255,255,.08);
+  color: #ddd;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: .2s;
+  margin-top: 16px;
+}
+.plan-btn-regenrer:hover {
+  background: rgba(255,77,136,.2);
+  border-color: #ff4d88;
+  color: #fff;
+}
