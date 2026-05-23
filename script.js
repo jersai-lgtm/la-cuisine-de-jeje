@@ -1054,19 +1054,22 @@ const recettes = {
     niveau: "⭐ Facile",
     emoji: "🐟",
     description: "Gravlax de saumon maison — saumon mariné au sel, sucre et aneth. Une entrée scandinave élégante et sans cuisson.",
-    fixe: true,
-    ingredientsFixes: [
-      ["🐟 Saumon frais (filet avec peau)", "600 g"],
-      ["🧂 Gros sel", "60 g"],
-      ["🍬 Sucre en poudre", "40 g"],
-      ["🌿 Aneth frais", "1 botte"],
-      ["🫚 Vodka ou aquavit (optionnel)", "2 c.à.s"],
-      ["🌶️ Poivre blanc concassé", "1 c.à.c"],
-      ["--- Sauce moutarde aneth ---", "---"],
-      ["🌿 Moutarde douce", "3 c.à.s"],
-      ["🍬 Sucre", "1 c.à.s"],
-      ["🫒 Huile neutre", "3 c.à.s"],
-      ["🌿 Aneth ciselé", "2 c.à.s"],
+    tableauGravlax: [
+      { nb:  1, saumon: "150 g", sel: "15 g",  sucre: "10 g", aneth: "¼ botte", vodka: "½ c.à.s" },
+      { nb:  2, saumon: "300 g", sel: "30 g",  sucre: "20 g", aneth: "½ botte", vodka: "1 c.à.s" },
+      { nb:  3, saumon: "450 g", sel: "45 g",  sucre: "30 g", aneth: "¾ botte", vodka: "1½ c.à.s"},
+      { nb:  4, saumon: "600 g", sel: "60 g",  sucre: "40 g", aneth: "1 botte",  vodka: "2 c.à.s" },
+      { nb:  5, saumon: "750 g", sel: "75 g",  sucre: "50 g", aneth: "1 botte",  vodka: "2½ c.à.s"},
+      { nb:  6, saumon: "900 g", sel: "90 g",  sucre: "60 g", aneth: "1½ botte", vodka: "3 c.à.s" },
+      { nb:  7, saumon: "1050 g",sel: "105 g", sucre: "70 g", aneth: "1½ botte", vodka: "3½ c.à.s"},
+      { nb:  8, saumon: "1200 g",sel: "120 g", sucre: "80 g", aneth: "2 bottes", vodka: "4 c.à.s" },
+      { nb:  9, saumon: "1350 g",sel: "135 g", sucre: "90 g", aneth: "2 bottes", vodka: "4½ c.à.s"},
+      { nb: 10, saumon: "1500 g",sel: "150 g", sucre: "100 g",aneth: "2 bottes", vodka: "5 c.à.s" },
+      { nb: 11, saumon: "1650 g",sel: "165 g", sucre: "110 g",aneth: "2½ bottes",vodka: "5½ c.à.s"},
+      { nb: 12, saumon: "1800 g",sel: "180 g", sucre: "120 g",aneth: "2½ bottes",vodka: "6 c.à.s" },
+      { nb: 13, saumon: "1950 g",sel: "195 g", sucre: "130 g",aneth: "3 bottes", vodka: "6½ c.à.s"},
+      { nb: 14, saumon: "2100 g",sel: "210 g", sucre: "140 g",aneth: "3 bottes", vodka: "7 c.à.s" },
+      { nb: 15, saumon: "2250 g",sel: "225 g", sucre: "150 g",aneth: "3 bottes", vodka: "7½ c.à.s"},
     ],
     ingredients: {},
     etapes: [
@@ -1441,16 +1444,22 @@ const recettes = {
     niveau: "⭐ Facile",
     emoji: "🥂",
     description: "Les verrines tiramisu individuelles — élégantes, faciles à préparer et à servir. Parfaites pour les repas.",
-    fixe: true,
-    ingredientsFixes: [
-      ["🍪 Biscuits roses de Reims", "200 g"],
-      ["🧀 Mascarpone", "500 g"],
-      ["🥚 Œufs extra-frais", "4"],
-      ["🍬 Sucre en poudre", "100 g"],
-      ["🍓 Coulis de fraises", "150 ml"],
-      ["🌸 Sirop de fraise", "100 ml"],
-      ["🍫 Cacao amer", "pour la finition"],
-      ["🍓 Fraises fraîches", "pour la déco"],
+    tableauVerrineTiramisu: [
+      { nb:  1, biscuits: "33 g",  mascarpone: "83 g",  oeufs: "⅔",  sucre: "17 g",  coulis: "25 ml", sirop: "17 ml" },
+      { nb:  2, biscuits: "67 g",  mascarpone: "167 g", oeufs: "1⅓", sucre: "33 g",  coulis: "50 ml", sirop: "33 ml" },
+      { nb:  3, biscuits: "100 g", mascarpone: "250 g", oeufs: "2",   sucre: "50 g",  coulis: "75 ml", sirop: "50 ml" },
+      { nb:  4, biscuits: "133 g", mascarpone: "333 g", oeufs: "2⅔", sucre: "67 g",  coulis: "100 ml",sirop: "67 ml" },
+      { nb:  5, biscuits: "167 g", mascarpone: "417 g", oeufs: "3⅓", sucre: "83 g",  coulis: "125 ml",sirop: "83 ml" },
+      { nb:  6, biscuits: "200 g", mascarpone: "500 g", oeufs: "4",   sucre: "100 g", coulis: "150 ml",sirop: "100 ml"},
+      { nb:  7, biscuits: "233 g", mascarpone: "583 g", oeufs: "4⅔", sucre: "117 g", coulis: "175 ml",sirop: "117 ml"},
+      { nb:  8, biscuits: "267 g", mascarpone: "667 g", oeufs: "5⅓", sucre: "133 g", coulis: "200 ml",sirop: "133 ml"},
+      { nb:  9, biscuits: "300 g", mascarpone: "750 g", oeufs: "6",   sucre: "150 g", coulis: "225 ml",sirop: "150 ml"},
+      { nb: 10, biscuits: "333 g", mascarpone: "833 g", oeufs: "6⅔", sucre: "167 g", coulis: "250 ml",sirop: "167 ml"},
+      { nb: 11, biscuits: "367 g", mascarpone: "917 g", oeufs: "7⅓", sucre: "183 g", coulis: "275 ml",sirop: "183 ml"},
+      { nb: 12, biscuits: "400 g", mascarpone: "1000 g",oeufs: "8",   sucre: "200 g", coulis: "300 ml",sirop: "200 ml"},
+      { nb: 13, biscuits: "433 g", mascarpone: "1083 g",oeufs: "8⅔", sucre: "217 g", coulis: "325 ml",sirop: "217 ml"},
+      { nb: 14, biscuits: "467 g", mascarpone: "1167 g",oeufs: "9⅓", sucre: "233 g", coulis: "350 ml",sirop: "233 ml"},
+      { nb: 15, biscuits: "500 g", mascarpone: "1250 g",oeufs: "10",  sucre: "250 g", coulis: "375 ml",sirop: "250 ml"},
     ],
     ingredients: {},
     etapes: [
@@ -1496,21 +1505,22 @@ const recettes = {
     niveau: "⭐ Facile",
     emoji: "🍖",
     description: "Le pot-au-feu traditionnel français — viande de bœuf mijotée lentement avec légumes d'hiver dans un bouillon parfumé.",
-    fixe: true,
-    ingredientsFixes: [
-      ["🥩 Viande de bœuf (paleron, plat-de-côtes, gîte)", "1.5 kg"],
-      ["🦴 Os à moelle", "4"],
-      ["🥕 Carottes", "6"],
-      ["🥔 Pommes de terre", "6"],
-      ["🧅 Poireaux", "3"],
-      ["🫚 Navets", "3"],
-      ["🧄 Ail", "4 gousses"],
-      ["🌿 Bouquet garni (thym, laurier, persil)", "1"],
-      ["🧂 Gros sel & poivre en grains", "selon goût"],
-      ["--- Pour servir ---", "---"],
-      ["🥒 Cornichons", "selon goût"],
-      ["🌿 Moutarde forte", "selon goût"],
-      ["🧂 Fleur de sel", "selon goût"],
+    tableauPotAuFeu: [
+      { nb:  1, viande: "250 g",  os: "1",  carottes: "1",  pdterre: "1",  poireaux: "½",  navets: "½",  ail: "1 gousse"  },
+      { nb:  2, viande: "500 g",  os: "1",  carottes: "2",  pdterre: "2",  poireaux: "1",   navets: "1",   ail: "1 gousse"  },
+      { nb:  3, viande: "750 g",  os: "2",  carottes: "3",  pdterre: "3",  poireaux: "1½",  navets: "1½",  ail: "2 gousses" },
+      { nb:  4, viande: "1 kg",   os: "2",  carottes: "4",  pdterre: "4",  poireaux: "2",   navets: "2",   ail: "3 gousses" },
+      { nb:  5, viande: "1.25 kg",os: "3",  carottes: "5",  pdterre: "5",  poireaux: "2½",  navets: "2½",  ail: "3 gousses" },
+      { nb:  6, viande: "1.5 kg", os: "4",  carottes: "6",  pdterre: "6",  poireaux: "3",   navets: "3",   ail: "4 gousses" },
+      { nb:  7, viande: "1.75 kg",os: "4",  carottes: "7",  pdterre: "7",  poireaux: "3½",  navets: "3½",  ail: "4 gousses" },
+      { nb:  8, viande: "2 kg",   os: "5",  carottes: "8",  pdterre: "8",  poireaux: "4",   navets: "4",   ail: "5 gousses" },
+      { nb:  9, viande: "2.25 kg",os: "6",  carottes: "9",  pdterre: "9",  poireaux: "4½",  navets: "4½",  ail: "6 gousses" },
+      { nb: 10, viande: "2.5 kg", os: "6",  carottes: "10", pdterre: "10", poireaux: "5",   navets: "5",   ail: "6 gousses" },
+      { nb: 11, viande: "2.75 kg",os: "7",  carottes: "11", pdterre: "11", poireaux: "5½",  navets: "5½",  ail: "7 gousses" },
+      { nb: 12, viande: "3 kg",   os: "8",  carottes: "12", pdterre: "12", poireaux: "6",   navets: "6",   ail: "8 gousses" },
+      { nb: 13, viande: "3.25 kg",os: "9",  carottes: "13", pdterre: "13", poireaux: "6½",  navets: "6½",  ail: "9 gousses" },
+      { nb: 14, viande: "3.5 kg", os: "9",  carottes: "14", pdterre: "14", poireaux: "7",   navets: "7",   ail: "9 gousses" },
+      { nb: 15, viande: "3.75 kg",os: "10", carottes: "15", pdterre: "15", poireaux: "7½",  navets: "7½",  ail: "10 gousses"},
     ],
     ingredients: {},
     etapes: [
@@ -3140,6 +3150,44 @@ function initTablesGlobales() {
   };
 }
 
+function htmlTableauGravlaxColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Saumon (filet)</th><td>${l.saumon}</td></tr>
+    <tr><th>🧂 Gros sel</th><td>${l.sel}</td></tr>
+    <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌿 Aneth frais</th><td>${l.aneth}</td></tr>
+    <tr><th>🥃 Vodka (optionnel)</th><td>${l.vodka}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌿 Sauce moutarde aneth</th></tr>
+    <tr><th>🌿 Moutarde douce</th><td>3 c.à.s / 4 pers.</td></tr>
+    <tr><th>🫒 Huile neutre</th><td>3 c.à.s / 4 pers.</td></tr>`);
+}
+
+function htmlTableauVerrineTiramisuColonnes(l) {
+  return col(`
+    <tr><th>🥂 Verrines</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍪 Biscuits roses de Reims</th><td>${l.biscuits}</td></tr>
+    <tr><th>🧀 Mascarpone</th><td>${l.mascarpone}</td></tr>
+    <tr><th>🥚 Œufs extra-frais</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
+    <tr><th>🍓 Coulis de fraises</th><td>${l.coulis}</td></tr>
+    <tr><th>🌸 Sirop de fraise</th><td>${l.sirop}</td></tr>
+    <tr><th>🍫 Cacao amer</th><td>pour la finition</td></tr>`);
+}
+
+function htmlTableauPotAuFeuColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Viande de bœuf</th><td>${l.viande}</td></tr>
+    <tr><th>🦴 Os à moelle</th><td>${l.os}</td></tr>
+    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>
+    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
+    <tr><th>🧅 Poireaux</th><td>${l.poireaux}</td></tr>
+    <tr><th>🫚 Navets</th><td>${l.navets}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌿 Bouquet garni</th><td>1</td></tr>`);
+}
+
 function htmlTableauCouscousColonnes(l) {
   return col(`
     <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
@@ -3762,6 +3810,31 @@ function calculer() {
     document.getElementById("resultat").innerHTML = ligne
       ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTartePommesColonnes(ligne) + htmlPrixCalories("tarteaupommes", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
+    return;
+  }
+
+  // Saumon gravlax
+  if (recette === "saumongravlax" && data.tableauGravlax) {
+    const ligne = data.tableauGravlax.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGravlaxColonnes(ligne) + htmlPrixCalories("saumongravlax", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+  // Verrines tiramisu
+  if (recette === "verrinetiramisu" && data.tableauVerrineTiramisu) {
+    const ligne = data.tableauVerrineTiramisu.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} verrine${personnes > 1 ? "s" : ""}</h3>` + htmlTableauVerrineTiramisuColonnes(ligne) + htmlPrixCalories("verrinetiramisu", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+  // Pot-au-feu
+  if (recette === "potaufeu" && data.tableauPotAuFeu) {
+    const ligne = data.tableauPotAuFeu.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPotAuFeuColonnes(ligne) + htmlPrixCalories("potaufeu", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
     return;
   }
 
@@ -4458,6 +4531,15 @@ function choisirRecette(nom) {
   } else if (nom === "tarteaupommes" && data.tableauTartePommes) {
     const ligne = data.tableauTartePommes.find(l => l.nb === personnes) || data.tableauTartePommes[5];
     listeIngredients = htmlTableauTartePommesColonnes(ligne);
+  } else if (nom === "saumongravlax" && data.tableauGravlax) {
+    const ligne = data.tableauGravlax.find(l => l.nb === personnes) || data.tableauGravlax[3];
+    listeIngredients = htmlTableauGravlaxColonnes(ligne);
+  } else if (nom === "verrinetiramisu" && data.tableauVerrineTiramisu) {
+    const ligne = data.tableauVerrineTiramisu.find(l => l.nb === personnes) || data.tableauVerrineTiramisu[5];
+    listeIngredients = htmlTableauVerrineTiramisuColonnes(ligne);
+  } else if (nom === "potaufeu" && data.tableauPotAuFeu) {
+    const ligne = data.tableauPotAuFeu.find(l => l.nb === personnes) || data.tableauPotAuFeu[5];
+    listeIngredients = htmlTableauPotAuFeuColonnes(ligne);
   } else if (mondeClassiquesTablesGlobal && mondeClassiquesTablesGlobal[nom] && data[mondeClassiquesTablesGlobal[nom].table]) {
     const cfg2 = mondeClassiquesTablesGlobal[nom];
     const ligne2 = data[cfg2.table].find(l => l.nb === personnes) || data[cfg2.table][1];
