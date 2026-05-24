@@ -1,3 +1,96 @@
+// Mapping des clés de colonnes vers labels affichables
+const INGREDIENTS_LABELS = {
+  // Génériques
+  nb: null, // ignoré
+  // Farine et céréales
+  farine: "🌾 Farine", riz: "🍚 Riz", semoule: "🌾 Semoule", nouilles: "🍜 Nouilles",
+  flocons: "🌾 Flocons d'avoine", quinoa: "🌾 Quinoa", pate: "🫓 Pâton(s)",
+  spaghetti: "🍝 Spaghetti", lasagne: "🍝 Feuilles de lasagne",
+  // Produits laitiers
+  lait: "🥛 Lait", creme: "🍦 Crème fraîche", yaourt: "🥛 Yaourt grec",
+  mascarpone: "🧀 Mascarpone", parmesan: "🧀 Parmesan", feta: "🧀 Feta",
+  fromage: "🧀 Fromage", gorgonzola: "🧀 Gorgonzola", ricotta: "🧀 Ricotta",
+  pecorino: "🧀 Pecorino", philadelphia: "🧀 Philadelphia", cheddar: "🧀 Cheddar",
+  laitCoco: "🥥 Lait de coco", cremeCoco: "🥥 Crème de coco",
+  beurre: "🧈 Beurre", beurrChoux: "🧈 Beurre (choux)", beurrCreme: "🧈 Beurre (crème)",
+  beurrage: "🧈 Beurre de tourage", huile: "🫒 Huile", huileOlive: "🫒 Huile d'olive",
+  // Œufs et sucre
+  oeufs: "🥚 Œufs", oeuf: "🥚 Œuf", jaunes: "🥚 Jaunes d'œufs", jaunesCreme: "🥚 Jaunes d'œufs",
+  sucre: "🍬 Sucre", sucreGlace: "🍬 Sucre glace", cassonade: "🍬 Cassonade",
+  miel: "🍯 Miel", sirop: "🍬 Sirop de sucre",
+  // Levure et poudres
+  levure: "🟨 Levure fraîche", maizena: "🌾 Maïzena", cacao: "🍫 Cacao",
+  // Viandes
+  poulet: "🍗 Poulet", porc: "🐷 Porc", boeuf: "🥩 Bœuf", agneau: "🐑 Agneau",
+  viande: "🥩 Viande", joues: "🥩 Joues de bœuf", canard: "🦆 Canard",
+  lardons: "🥓 Lardons", jambon: "🍖 Jambon", guanciale: "🥓 Guanciale",
+  prosciutto: "🍖 Prosciutto", salami: "🌭 Salami", chorizo: "🌭 Chorizo",
+  merguez: "🥩 Merguez", ananas: "🍍 Ananas", nduja: "🌶️ Nduja", foie: "🫀 Foies",
+  // Poissons et fruits de mer
+  saumon: "🐟 Saumon", thon: "🐟 Thon", poisson: "🐟 Poisson", dorade: "🐟 Dorade",
+  crevettes: "🦐 Crevettes", moules: "🦪 Moules", poulpe: "🐙 Poulpe", 
+  saumonFume: "🐟 Saumon fumé",
+  // Légumes
+  tomates: "🍅 Tomates", tomateCerise: "🍅 Tomates cerises",
+  oignon: "🧅 Oignon", echalote: "🧅 Échalote", ail: "🧄 Ail",
+  carotte: "🥕 Carotte", carottes: "🥕 Carottes", courgette: "🥒 Courgette",
+  aubergine: "🍆 Aubergine", poivron: "🫑 Poivron", champignons: "🍄 Champignons",
+  epinards: "🌿 Épinards", salade: "🥬 Salade", laitue: "🥬 Laitue",
+  pdterre: "🥔 Pommes de terre", patate: "🍠 Patate douce", patatedouce: "🍠 Patate douce",
+  manioc: "🫚 Manioc", chou: "🥬 Chou", poireaux: "🥬 Poireaux", asperges: "🌿 Asperges",
+  mais: "🌽 Maïs", petitspois: "🫛 Petits pois", haricots: "🫛 Haricots verts",
+  concombre: "🥒 Concombre", celeri: "🌿 Céleri", artichaut: "🌿 Artichaut",
+  // Légumineuses
+  poischiches: "🫘 Pois chiches", lentilles: "🫘 Lentilles", falafel: "🧆 Falafel",
+  // Fruits
+  citron: "🍋 Citron vert/jaune", orange: "🍊 Orange", pomme: "🍎 Pomme",
+  banane: "🍌 Banane", fraises: "🍓 Fraises", framboises: "🫐 Framboises",
+  myrtilles: "🫐 Myrtilles", peche: "🍑 Pêche", pruneaux: "🫐 Pruneaux",
+  fruits: "🍎 Fruits", passion: "🌺 Fruits de la passion", mangue: "🥭 Mangue",
+  pasteque: "🍉 Pastèque", cerises: "🍒 Cerises", cerise: "🍒 Jus de cerise",
+  avocat: "🥑 Avocat", palmier: "🌴 Cœurs de palmier",
+  // Condiments et épices
+  sel: "🧂 Sel", poivre: "🌶️ Poivre", piment: "🌶️ Piment", masala: "🌶️ Garam masala",
+  curry: "🌶️ Curry", cumin: "🌿 Cumin", cannelle: "🪵 Cannelle", safran: "🌼 Safran",
+  paprika: "🌶️ Paprika", gingembre: "🫚 Gingembre", galanga: "🫚 Galanga",
+  citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille",
+  // Liquides et sauces
+  bouillon: "🍲 Bouillon", sojaS: "🍶 Sauce soja", mirin: "🍶 Mirin",
+  vin: "🍷 Vin rouge", brandy: "🥃 Brandy", saké: "🍶 Saké",
+  eauGaz: "💧 Eau gazeuse", eau: "💧 Eau", cafe: "☕ Café expresso",
+  coco: "🥥 Lait de coco", tahini: "🫒 Tahini",
+  // Alcools
+  rhum: "🍶 Rhum blanc", tequila: "🥃 Tequila", vodka: "🍶 Vodka",
+  gin: "🍶 Gin", bourbon: "🥃 Bourbon", cognac: "🥃 Cognac",
+  aperol: "🍊 Aperol", campari: "🍊 Campari", vermouth: "🍷 Vermouth",
+  prosecco: "🍾 Prosecco", champagne: "🍾 Champagne", tripleSec: "🍊 Triple sec",
+  cointreau: "🍊 Cointreau", passoa: "🌺 Passoa", curacao: "🫐 Curaçao",
+  kahluaC: "☕ Kahlúa", gingerBeer: "💧 Ginger beer", limonade: "💧 Limonade",
+  grenadine: "🍒 Grenadine", rose: "🍷 Rosé pétillant", sureau: "🌸 Sirop de sureau",
+  espresso: "☕ Espresso", orangeJus: "🍊 Jus d'orange", jusMixte: "🍹 Jus de fruits",
+  cranberry: "🍒 Jus de cranberry", bitters: "💧 Angostura bitters",
+  fleurOranger: "🌸 Eau de fleur d'oranger",
+  // Boulangerie
+  biscuits: "🍪 Biscuits", chocolat: "🍫 Chocolat noir", pepites: "🍫 Pépites de chocolat",
+  pralin: "🌰 Pâte de pralin", amandes: "🌰 Amandes", noix: "🌰 Noix",
+  pignons: "🌰 Pignons de pin", cacahetes: "🌰 Cacahuètes", coco2: "🥥 Noix de coco râpée",
+  // Divers
+  tortilla: "🌮 Tortillas", tortillas: "🌮 Tortillas", pita: "🫓 Pains pita",
+  nori: "🌿 Nori", tofu: "🧀 Tofu", wakame: "🌊 Wakamé", shiitake: "🍄 Shiitake",
+  dashi: "💧 Dashi", miso: "🌿 Miso", gochujang: "🌶️ Gochujang",
+  arachide: "🥜 Pâte d'arachide", dattes: "🌴 Dattes Medjool",
+  ciboule: "🌿 Ciboule", persil: "🌿 Persil", coriandre: "🌿 Coriandre",
+  menthe: "🌿 Menthe fraîche", basilic: "🌿 Basilic", thym: "🌿 Thym",
+  romarin: "🌿 Romarin", aneth: "🌿 Aneth",
+  pate: "🫓 Pâton(s)", feuilletee: "🥐 Pâte feuilletée",
+  bechamel: "🥛 Béchamel", hoisin: "🍶 Sauce hoisin", bbqSauce: "🍖 Sauce BBQ",
+  rub: "🌶️ Rub BBQ", chapelure: "🍞 Chapelure",
+  cremeTruffe: "🍄 Crème de truffe", huileTruffe: "🍄 Huile de truffe",
+  pateC: "🌶️ Pâte de curry", gochujang: "🌶️ Gochujang",
+  tteok: "🍱 Tteok (gâteaux de riz)",
+  citronnelle: "🌿 Citronnelle",
+};
+
 const recettes = {
 
   pizza: {
@@ -8546,8 +8639,19 @@ function getIngredientsCourses(nom, personnes) {
   const ajout = (label, qte) => {
     if (!label || label.startsWith("---")) return;
     if (!result[label]) result[label] = { qte: 0, raw: null };
-    if (typeof qte === "number") result[label].qte += qte;
-    else result[label].raw = qte;
+    if (typeof qte === "number" && !isNaN(qte) && qte > 0) {
+      result[label].qte += qte;
+    } else if (qte && typeof qte === "string" && qte.trim() !== "") {
+      result[label].raw = qte;
+    }
+  };
+
+  // Extraire le label propre depuis le mapping
+  const getLabel = (key) => {
+    if (!key || key === "nb") return null;
+    if (INGREDIENTS_LABELS[key] !== undefined) return INGREDIENTS_LABELS[key];
+    // Fallback : camelCase → lisible
+    return key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, " $1");
   };
 
   // Recettes avec ingredientsFixes
@@ -8558,217 +8662,7 @@ function getIngredientsCourses(nom, personnes) {
     return result;
   }
 
-  // Recettes avec tableau (trouver le bon tableau et la bonne ligne)
-  const tableaux = {
-    pizza:            { tbl: "tableauPatons",        key: "patons",   ingredients: (l) => [
-      ["🌾 Farine", parseFloat(l.farine)], ["💧 Eau", parseFloat(l.eau)],
-      ["🧂 Sel", parseFloat(l.sel)], ["🟨 Levure fraîche", parseFloat(l.levure)]
-    ]},
-    crepes:           { tbl: "tableauPersonnes",     key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", parseFloat(l.farine)], ["🥚 Œufs", parseFloat(l.oeufs)],
-      ["🥛 Lait", parseFloat(l.lait)], ["🧈 Beurre", parseFloat(l.beurre)]
-    ]},
-    gaufres:          { tbl: "tableauGaufres",       key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", parseFloat(l.farine)], ["🍬 Sucre", parseFloat(l.sucre)],
-      ["🧈 Beurre", parseFloat(l.beurre)], ["🥛 Lait", parseFloat(l.lait.replace(" cl",""))]
-    ]},
-    brioche:          { tbl: "tableauBrioche",       key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", parseFloat(l.farine)], ["🧈 Beurre froid", parseFloat(l.beurre)],
-      ["🍬 Sucre", parseFloat(l.sucre)], ["🟨 Levure fraîche", parseFloat(l.levure)],
-      ["🥛 Lait", l.lait !== "—" ? parseFloat(l.lait) : 0]
-    ]},
-    lasagne:          { tbl: "tableauLasagne",       key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", parseFloat(l.farine)], ["🥚 Œufs", parseFloat(l.oeufs)]
-    ]},
-    cookies:          { tbl: "tableauCookies",       key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", parseFloat(l.farine)], ["🧈 Beurre", parseFloat(l.beurre)],
-      ["🍬 Sucre", parseFloat(l.sucre)], ["🍫 Chocolat noir", parseFloat(l.choco)], ["🥚 Œufs", l.oeuf]
-    ]},
-    muffins:          { tbl: "tableauMuffins",       key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", parseFloat(l.farine)], ["🍫 Cacao", parseFloat(l.cacao)],
-      ["🍬 Sucre", parseFloat(l.sucre)], ["🥛 Lait", parseFloat(l.lait)],
-      ["🫒 Huile", parseFloat(l.huile)], ["🍫 Pépites chocolat", parseFloat(l.pepites)]
-    ]},
-    pancakes:         { tbl: "tableauPancakes",      key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", parseFloat(l.farine)], ["🍬 Sucre", parseFloat(l.sucre)],
-      ["🥛 Lait", parseFloat(l.lait)], ["🧈 Beurre", parseFloat(l.beurre)]
-    ]},
-    croquemonsieur:   { tbl: "tableauCroques",       key: "nb",       ingredients: (l) => [
-      ["🍞 Pain de mie", l.pain], ["🥩 Jambon", l.jambon],
-      ["🧀 Gruyère", parseFloat(l.gruyere)], ["🧈 Beurre", parseFloat(l.beurre)],
-      ["🥛 Lait", parseFloat(l.lait)]
-    ]},
-    saladequinoa:     { tbl: "tableauQuinoa",        key: "nb",       ingredients: (l) => [
-      ["🌾 Quinoa", parseFloat(l.quinoa)], ["🧀 Feta", parseFloat(l.feta)],
-      ["🍅 Tomates cerises", l.tomates]
-    ]},
-    tartecitron:      { tbl: "tableauTarteCitron",   key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", parseFloat(l.farine)], ["🧈 Beurre", parseFloat(l.beurrePate) + parseFloat(l.beurreCreme)],
-      ["🍬 Sucre", parseFloat(l.sucreGlace) + parseFloat(l.sucreCreme)],
-      ["🍋 Citrons", l.citrons]
-    ]},
-    tiramisu:         { tbl: "tableauTiramisu",      key: "nb",       ingredients: (l) => [
-      ["🍪 Biscuits à la cuillère", l.biscuits],
-      ["🧀 Mascarpone", parseFloat(l.mascarpone)], ["☕ Café expresso", l.cafe]
-    ]},
-    flan:             { tbl: "tableauFlan",          key: "nb",       ingredients: (l) => [
-      ["🥛 Lait entier", parseFloat(l.lait)], ["🍬 Sucre", parseFloat(l.sucre)],
-      ["🌾 Maïzena", parseFloat(l.maizena)], ["🍦 Crème liquide", parseFloat(l.creme)]
-    ]},
-    clafoutis:        { tbl: "tableauClafoutis",     key: "nb",       ingredients: (l) => [
-      ["🍒 Cerises", parseFloat(l.cerises)], ["🍬 Sucre", parseFloat(l.sucre)],
-      ["🌾 Farine", parseFloat(l.farine)], ["🥛 Lait", parseFloat(l.lait)]
-    ]},
-    tarteaupommes:    { tbl: "tableauTartePommes",   key: "nb",       ingredients: (l) => [
-      ["🍎 Pommes", l.pommes], ["🧈 Beurre", parseFloat(l.beurre)], ["🍬 Sucre", parseFloat(l.sucre)]
-    ]},
-    cremebrulee:      { tbl: "tableauCremebrulee",   key: "nb",       ingredients: (l) => [
-      ["🍦 Crème liquide", l.creme], ["🍬 Sucre", parseFloat(l.sucre)]
-    ]},
-    mousseauchocolat: { tbl: "tableauMousse",        key: "nb",       ingredients: (l) => [
-      ["🍫 Chocolat noir", parseFloat(l.chocolat)], ["🍬 Sucre", parseFloat(l.sucre)]
-    ]},
-    fondantchocolat:  { tbl: "tableauFondant",       key: "nb",       ingredients: (l) => [
-      ["🍫 Chocolat noir", parseFloat(l.chocolat)], ["🧈 Beurre", parseFloat(l.beurre)],
-      ["🍬 Sucre", parseFloat(l.sucre)], ["🌾 Farine", parseFloat(l.farine)]
-    ]},
-    madeleine:        { tbl: "tableauMadeleine",     key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", parseFloat(l.farine)], ["🍬 Sucre", parseFloat(l.sucre)], ["🧈 Beurre", parseFloat(l.beurre)]
-    ]},
-    boeufbourguignon: { tbl: "tableauBoeuf",         key: "nb",       ingredients: (l) => [
-      ["🥩 Bœuf", l.boeuf], ["🥕 Carottes", l.carottes],
-      ["🥓 Lardons", l.lardons], ["🍄 Champignons", l.champignons]
-    ]},
-    gratindauphinois: { tbl: "tableauGratin",        key: "nb",       ingredients: (l) => [
-      ["🥔 Pommes de terre", l.pdterre], ["🍦 Crème", l.creme], ["🥛 Lait", l.lait]
-    ]},
-    ileflottante:     { tbl: "tableauIleFlottante",  key: "nb",       ingredients: (l) => [
-      ["🥛 Lait", l.lait], ["🍬 Sucre crème", l.sucreCreme], ["🍬 Sucre îles", l.sucreIles]
-    ]},
-    veloutelegumes:   { tbl: "tableauVeloute",       key: "nb",       ingredients: (l) => [
-      ["🥕 Carottes", l.carottes], ["🎃 Courge butternut", l.courge], ["🍲 Bouillon", l.bouillon]
-    ]},
-    saladeniçoise:    { tbl: "tableauSaladeNicoise", key: "nb",       ingredients: (l) => [
-      ["🐟 Thon", l.thon], ["🥚 Œufs durs", l.oeufs], ["🍅 Tomates", l.tomates], ["🫒 Olives", l.olives]
-    ]},
-    saladecesar:      { tbl: "tableauSaladeCesar",   key: "nb",       ingredients: (l) => [
-      ["🍗 Poulet", l.poulet], ["🧀 Parmesan", l.parmesan]
-    ]},
-    saladegreque:     { tbl: "tableauSaladeGreque",  key: "nb",       ingredients: (l) => [
-      ["🍅 Tomates", l.tomates], ["🥒 Concombre", l.concombre], ["🧀 Feta", l.feta], ["🫒 Olives", l.olives]
-    ]},
-    saladepatasthon:  { tbl: "tableauSaladePatas",   key: "nb",       ingredients: (l) => [
-      ["🍝 Pâtes", l.pates], ["🐟 Thon", l.thon], ["🌽 Maïs", l.mais]
-    ]},
-    tabulemaison:     { tbl: "tableauTabule",         key: "nb",       ingredients: (l) => [
-      ["🌾 Semoule", l.semoule], ["🍅 Tomates", l.tomates], ["🥒 Concombre", l.concombre]
-    ]},
-    saladelentilles:  { tbl: "tableauSaladeLentilles",key: "nb",       ingredients: (l) => [
-      ["🫘 Lentilles", l.lentilles], ["🥕 Carottes", l.carottes], ["🥓 Lardons", l.lardons]
-    ]},
-    saladeavocatcrevettes:{ tbl: "tableauAvocatCrevettes", key: "nb", ingredients: (l) => [
-      ["🥑 Avocats", l.avocats], ["🦐 Crevettes", l.crevettes]
-    ]},
-    gaspacho:         { tbl: "tableauGaspacho",      key: "nb",       ingredients: (l) => [
-      ["🍅 Tomates", l.tomates], ["🥒 Concombre", l.concombre], ["🫑 Poivron rouge", l.poivron]
-    ]},
-    overnightoats:    { tbl: "tableauOvernightOats", key: "nb",       ingredients: (l) => [
-      ["🌾 Flocons d'avoine", l.flocons], ["🥛 Lait végétal", l.lait], ["🥛 Yaourt grec", l.yaourt]
-    ]},
-    buddhaBowl:       { tbl: "tableauBuddhaBowl",    key: "nb",       ingredients: (l) => [
-      ["🌾 Quinoa", l.quinoa], ["🍠 Patate douce", l.patatedouce],
-      ["🫘 Pois chiches", l.poischiches], ["🥑 Avocat", l.avocat]
-    ]},
-    soupemiso:        { tbl: "tableauSoupeMiso",     key: "nb",       ingredients: (l) => [
-      ["🧀 Tofu soyeux", l.tofu], ["🌿 Pâte miso", l.miso]
-    ]},
-    wrappoulet:       { tbl: "tableauWrapPoulet",    key: "nb",       ingredients: (l) => [
-      ["🍗 Poulet", l.poulet], ["🫓 Tortillas", l.tortilla], ["🍅 Tomate", l.tomate]
-    ]},
-    pancakesproteine: { tbl: "tableauPancakesProteine", key: "nb",    ingredients: (l) => [
-      ["🍌 Banane", l.banane], ["🥚 Œufs", l.oeufs]
-    ]},
-    bowlacai:         { tbl: "tableauBowlAcai",      key: "nb",       ingredients: (l) => [
-      ["🫐 Purée açaï", l.acai], ["🍌 Banane", l.banane], ["🌾 Granola", l.granola]
-    ]},
-    saladepoischiches:{ tbl: "tableauSaladePoisChiches", key: "nb",   ingredients: (l) => [
-      ["🫘 Pois chiches", l.poischiches], ["🍅 Tomates", l.tomates]
-    ]},
-    risotto:          { tbl: "tableauRisotto",       key: "nb",       ingredients: (l) => [
-      ["🍚 Riz arborio", l.riz], ["🍷 Vin blanc", l.vin], ["🧀 Parmesan", l.parmesan]
-    ]},
-    goumeau:          { tbl: "tableauGoumeau",       key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", l.farine], ["🍬 Sucre", l.sucre], ["🟨 Levure", l.levure],
-      ["🍦 Crème", l.creme]
-    ]},
-    paindemie:        { tbl: "tableauPainDeMie",     key: "nb",       ingredients: (l) => [
-      ["🌾 Farine", l.farine], ["🥛 Lait", l.lait], ["🧈 Beurre", l.beurre]
-    ]},
-    bananabread:      { tbl: "tableauBananaBread",   key: "nb",       ingredients: (l) => [
-      ["🍌 Bananes", l.bananes], ["🌾 Farine", l.farine], ["🍬 Sucre", l.sucre], ["🧈 Beurre", l.beurre]
-    ]},
-    granola:          { tbl: "tableauGranola",       key: "nb",       ingredients: (l) => [
-      ["🌾 Flocons d'avoine", l.flocons], ["🍯 Miel", l.miel], ["🌰 Noix", l.noix]
-    ]},
-    houmous:          { tbl: "tableauHoumous",       key: "nb",       ingredients: (l) => [
-      ["🫘 Pois chiches", l.poischiches], ["🫒 Tahini", l.tahini]
-    ]},
-    smoothiebowl:     { tbl: "tableauSmoothie",      key: "nb",       ingredients: (l) => [
-      ["🍓 Fruits rouges", l.fruits], ["🍌 Banane", l.banane], ["🥛 Yaourt grec", l.yaourt]
-    ]},
-    yaourt:           { tbl: "tableauYaourt",        key: "nb",       ingredients: (l) => [
-      ["🥛 Lait entier", l.lait]
-    ]},
-    energyballs:      { tbl: "tableauEnergyBalls",   key: "nb",       ingredients: (l) => [
-      ["🌴 Dattes", l.dattes], ["🌰 Amandes", l.amandes], ["🌾 Flocons d'avoine", l.flocons]
-    ]},
-    saladequinoa:     { tbl: "tableauQuinoa",        key: "nb",       ingredients: (l) => [
-      ["🌾 Quinoa", l.quinoa], ["🧀 Feta", l.feta]
-    ]},
-    saladerizmediterranee: { tbl: "tableauSaladeRiz", key: "nb",      ingredients: (l) => [
-      ["🍚 Riz", l.riz], ["🫑 Poivron", l.poivron], ["🫒 Olives", l.olives]
-    ]},
-  };
-
-  // Chercher aussi dans les recettes avec tableauXxx en cherchant dynamiquement
-  if (!tableaux[nom]) {
-    // Chercher le premier tableau disponible dans la recette
-    const cleTbl = Object.keys(data).find(k => k.startsWith("tableau") && Array.isArray(data[k]));
-    if (cleTbl && data[cleTbl].length > 0) {
-      const ligne = data[cleTbl].find(l => l.nb === personnes) || data[cleTbl][Math.floor(data[cleTbl].length/2)];
-      if (ligne) {
-        Object.entries(ligne).forEach(([k, v]) => {
-          if (k === "nb") return;
-          // Convertir camelCase en label lisible
-          const label = k.replace(/([A-Z])/g, " $1").replace(/^./, s => s.toUpperCase()).trim();
-          ajout(label, v);
-        });
-        return result;
-      }
-    }
-  }
-
-  const cfg = tableaux[nom];
-  if (cfg && data[cfg.tbl]) {
-    const ligne = data[cfg.tbl].find(l => l[cfg.key] === personnes)
-      || data[cfg.tbl][Math.min(3, data[cfg.tbl].length-1)];
-    if (ligne) {
-      cfg.ingredients(ligne).forEach(([k, v]) => ajout(k, v));
-    }
-    return result;
-  }
-
-  // Fallback : ingredients standard
-  if (data.ingredients && Object.keys(data.ingredients).length > 0) {
-    const ratio = personnes / (data.base || 4);
-    Object.entries(data.ingredients).forEach(([k, v]) => {
-      ajout(k, typeof v === "number" ? Math.round(v * ratio * 10) / 10 : v);
-    });
-    return result;
-  }
-
-  // Fallback universel : chercher dans toutes les tables globales
-  // et extraire les ingrédients depuis le tableau de la recette
+  // Chercher le tableau de la recette (dans toutes les tables globales ET dynamiquement)
   const toutesLesTables = [
     window._nouvellesRecettesTables,
     window.mondeClassiquesTablesGlobal,
@@ -8781,26 +8675,44 @@ function getIngredientsCourses(nom, personnes) {
       const tbl = data[tables[nom].table];
       const ligne = tbl.find(l => l.nb === personnes) || tbl[Math.floor(tbl.length / 2)];
       if (ligne) {
-        // Extraire toutes les clés non-nb comme ingrédients
         Object.entries(ligne).forEach(([k, v]) => {
-          if (k === "nb") return;
-          const label = k.charAt(0).toUpperCase() + k.slice(1);
-          ajout(label, v);
+          const label = getLabel(k);
+          if (!label) return;
+          const num = parseFloat(String(v).replace(/[^\d.]/g, ""));
+          ajout(label, !isNaN(num) && num > 0 ? num : v);
         });
       }
       return result;
     }
   }
 
-  // Dernier recours : ingredientsFixes
-  if (data.ingredientsFixes) {
-    data.ingredientsFixes.forEach(([k, v]) => {
-      if (!k.startsWith("---")) ajout(k, v);
+  // Chercher dynamiquement le premier tableau disponible
+  const cleTbl = Object.keys(data).find(k => k.startsWith("tableau") && Array.isArray(data[k]));
+  if (cleTbl) {
+    const tbl = data[cleTbl];
+    const ligne = tbl.find(l => l.nb === personnes) || tbl[Math.floor(tbl.length / 2)];
+    if (ligne) {
+      Object.entries(ligne).forEach(([k, v]) => {
+        const label = getLabel(k);
+        if (!label) return;
+        const num = parseFloat(String(v).replace(/[^\d.]/g, ""));
+        ajout(label, !isNaN(num) && num > 0 ? num : v);
+      });
+      return result;
+    }
+  }
+
+  // Fallback : ingredients standard
+  if (data.ingredients && Object.keys(data.ingredients).length > 0) {
+    const ratio = personnes / (data.base || 4);
+    Object.entries(data.ingredients).forEach(([k, v]) => {
+      ajout(k, typeof v === "number" ? Math.round(v * ratio * 10) / 10 : v);
     });
   }
 
   return result;
 }
+
 
 function afficherCoursesRecette(nom, personnes) {
   const id = "courses-recette-" + nom;
