@@ -1,94 +1,111 @@
 // Mapping des clés de colonnes vers labels affichables
 const INGREDIENTS_LABELS = {
-  // Génériques
-  nb: null, // ignoré
-  // Farine et céréales
-  farine: "🌾 Farine", riz: "🍚 Riz", semoule: "🌾 Semoule", nouilles: "🍜 Nouilles",
-  flocons: "🌾 Flocons d'avoine", quinoa: "🌾 Quinoa", pate: "🫓 Pâton(s)",
-  spaghetti: "🍝 Spaghetti", lasagne: "🍝 Feuilles de lasagne",
-  // Produits laitiers
-  lait: "🥛 Lait", creme: "🍦 Crème fraîche", yaourt: "🥛 Yaourt grec",
-  mascarpone: "🧀 Mascarpone", parmesan: "🧀 Parmesan", feta: "🧀 Feta",
-  fromage: "🧀 Fromage", gorgonzola: "🧀 Gorgonzola", ricotta: "🧀 Ricotta",
-  pecorino: "🧀 Pecorino", philadelphia: "🧀 Philadelphia", cheddar: "🧀 Cheddar",
-  laitCoco: "🥥 Lait de coco", cremeCoco: "🥥 Crème de coco",
-  beurre: "🧈 Beurre", beurrChoux: "🧈 Beurre (choux)", beurrCreme: "🧈 Beurre (crème)",
-  beurrage: "🧈 Beurre de tourage", huile: "🫒 Huile", huileOlive: "🫒 Huile d'olive",
-  // Œufs et sucre
-  oeufs: "🥚 Œufs", oeuf: "🥚 Œuf", jaunes: "🥚 Jaunes d'œufs", jaunesCreme: "🥚 Jaunes d'œufs",
+  // == Ignorés ==
+  nb: null, label: null, total: null,
+  // == Céréales & pâtes ==
+  farine: "🌾 Farine", riz: "🍚 Riz", rizS: "🍚 Riz", semoule: "🌾 Semoule",
+  nouilles: "🍜 Nouilles", spaghetti: "🍝 Spaghetti", pates: "🍝 Pâtes",
+  lasagne: "🍝 Feuilles de lasagne", flocons: "🌾 Flocons d'avoine",
+  quinoa: "🌾 Quinoa", maizena: "🌾 Maïzena", cacao: "🍫 Cacao en poudre",
+  graines: "🌱 Graines", chia: "🌱 Graines de chia", granola: "🌾 Granola",
+  chapelure: "🍞 Chapelure", pain: "🍞 Pain", buns: "🍞 Buns",
+  pita: "🫓 Pains pita", crepesP: "🫓 Crêpes pékinoises",
+  feuilletee: "🥐 Pâte feuilletée", pate: "🫓 Pâton(s)", patons: "🫓 Pâton(s)",
+  // == Produits laitiers ==
+  lait: "🥛 Lait", laitChoux: "🥛 Lait", laitCreme: "🥛 Lait",
+  creme: "🍦 Crème fraîche", gCreme: "🍦 Crème fraîche", beurreCreme: "🍦 Crème fraîche",
+  yaourt: "🥛 Yaourt grec",
+  beurre: "🧈 Beurre", beurrChoux: "🧈 Beurre", beurrCreme: "🧈 Beurre", beurrePate: "🧈 Beurre",
+  huile: "🫒 Huile", huileOlive: "🫒 Huile d'olive", huileTruffe: "🍄 Huile de truffe",
+  mascarpone: "🧀 Mascarpone", parmesan: "🧀 Parmesan", gruyere: "🧀 Gruyère",
+  feta: "🧀 Feta", fetaOpt: "🧀 Feta (optionnel)", gorgonzola: "🧀 Gorgonzola",
+  ricotta: "🧀 Ricotta", pecorino: "🧀 Pecorino", philadelphia: "🧀 Philadelphia",
+  cheddar: "🧀 Cheddar", mozza: "🧀 Mozzarella", fromage: "🧀 Fromage",
+  laitCoco: "🥥 Lait de coco", cremeCoco: "🥥 Crème de coco", coco: "🥥 Lait de coco",
+  confiture: "🍓 Confiture", moutarde: "🟡 Moutarde",
+  // == Œufs ==
+  oeufs: "🥚 Œufs", oeuf: "🥚 Œuf", oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs",
+  oeufPate: "🥚 Œufs", jaunes: "🥚 Jaunes d'œufs", jaunesCreme: "🥚 Jaunes d'œufs",
+  blancs: "🥚 Blancs d'œufs", blanc: "🥚 Blancs d'œufs",
+  // == Sucre & levure ==
   sucre: "🍬 Sucre", sucreGlace: "🍬 Sucre glace", cassonade: "🍬 Cassonade",
-  miel: "🍯 Miel", sirop: "🍬 Sirop de sucre",
-  // Levure et poudres
-  levure: "🟨 Levure fraîche", maizena: "🌾 Maïzena", cacao: "🍫 Cacao",
-  // Viandes
+  gSucre: "🍬 Sucre", sucreCreme: "🍬 Sucre", sucreCaramel: "🍬 Sucre",
+  sucreMeringue: "🍬 Sucre", sucreIles: "🍬 Sucre de coco",
+  miel: "🍯 Miel", sirop: "🍬 Sirop de sucre", selRebord: "🧂 Sucre/sel (rebord)",
+  levure: "🟨 Levure fraîche", ferment: "🟨 Ferments lactiques",
+  poudreAmande: "🌰 Poudre d'amande", glace: "🍦 Glace vanille",
+  // == Viandes ==
   poulet: "🍗 Poulet", porc: "🐷 Porc", boeuf: "🥩 Bœuf", agneau: "🐑 Agneau",
-  viande: "🥩 Viande", joues: "🥩 Joues de bœuf", canard: "🦆 Canard",
+  viande: "🥩 Viande", joues: "🥩 Joues de bœuf", jarret: "🦴 Jarret de veau",
+  canard: "🦆 Canard", cotelets: "🐑 Côtelettes d'agneau", os: "🦴 Os",
   lardons: "🥓 Lardons", jambon: "🍖 Jambon", guanciale: "🥓 Guanciale",
-  prosciutto: "🍖 Prosciutto", salami: "🌭 Salami", chorizo: "🌭 Chorizo",
-  merguez: "🥩 Merguez", ananas: "🍍 Ananas", nduja: "🌶️ Nduja", foie: "🫀 Foies",
-  // Poissons et fruits de mer
-  saumon: "🐟 Saumon", thon: "🐟 Thon", poisson: "🐟 Poisson", dorade: "🐟 Dorade",
-  crevettes: "🦐 Crevettes", moules: "🦪 Moules", poulpe: "🐙 Poulpe", 
-  saumonFume: "🐟 Saumon fumé",
-  // Légumes
-  tomates: "🍅 Tomates", tomateCerise: "🍅 Tomates cerises",
-  oignon: "🧅 Oignon", echalote: "🧅 Échalote", ail: "🧄 Ail",
-  carotte: "🥕 Carotte", carottes: "🥕 Carottes", courgette: "🥒 Courgette",
-  aubergine: "🍆 Aubergine", poivron: "🫑 Poivron", champignons: "🍄 Champignons",
+  salami: "🌭 Salami", chorizo: "🌭 Chorizo", nduja: "🌶️ Nduja",
+  prosciutto: "🍖 Prosciutto di Parma", foie: "🫀 Foies de volaille",
+  proteine: "💪 Protéine en poudre",
+  // == Poissons & fruits de mer ==
+  saumon: "🐟 Saumon fumé", thon: "🐟 Thon", poisson: "🐟 Poisson",
+  dorade: "🐟 Dorade", poulpe: "🐙 Poulpe", crevettes: "🦐 Crevettes",
+  moules: "🦪 Moules", anchois: "🐟 Anchois", anchoix: "🐟 Anchois",
+  // == Légumes ==
+  tomates: "🍅 Tomates", tomate: "🍅 Tomates", tomateCerise: "🍅 Tomates cerises",
+  oignon: "🧅 Oignon", oignons: "🧅 Oignons", echalote: "🧅 Échalote",
+  ail: "🧄 Ail", carotte: "🥕 Carotte", carottes: "🥕 Carottes",
+  courgette: "🥒 Courgette", aubergine: "🍆 Aubergine", aubergines: "🍆 Aubergines",
+  poivron: "🫑 Poivron", champignons: "🍄 Champignons", shiitake: "🍄 Shiitake",
   epinards: "🌿 Épinards", salade: "🥬 Salade", laitue: "🥬 Laitue",
   pdterre: "🥔 Pommes de terre", patate: "🍠 Patate douce", patatedouce: "🍠 Patate douce",
-  manioc: "🫚 Manioc", chou: "🥬 Chou", poireaux: "🥬 Poireaux", asperges: "🌿 Asperges",
-  mais: "🌽 Maïs", petitspois: "🫛 Petits pois", haricots: "🫛 Haricots verts",
-  concombre: "🥒 Concombre", celeri: "🌿 Céleri", artichaut: "🌿 Artichaut",
-  // Légumineuses
-  poischiches: "🫘 Pois chiches", lentilles: "🫘 Lentilles", falafel: "🧆 Falafel",
-  // Fruits
-  citron: "🍋 Citron vert/jaune", orange: "🍊 Orange", pomme: "🍎 Pomme",
-  banane: "🍌 Banane", fraises: "🍓 Fraises", framboises: "🫐 Framboises",
-  myrtilles: "🫐 Myrtilles", peche: "🍑 Pêche", pruneaux: "🫐 Pruneaux",
-  fruits: "🍎 Fruits", passion: "🌺 Fruits de la passion", mangue: "🥭 Mangue",
-  pasteque: "🍉 Pastèque", cerises: "🍒 Cerises", cerise: "🍒 Jus de cerise",
-  avocat: "🥑 Avocat", palmier: "🌴 Cœurs de palmier",
-  // Condiments et épices
-  sel: "🧂 Sel", poivre: "🌶️ Poivre", piment: "🌶️ Piment", masala: "🌶️ Garam masala",
-  curry: "🌶️ Curry", cumin: "🌿 Cumin", cannelle: "🪵 Cannelle", safran: "🌼 Safran",
-  paprika: "🌶️ Paprika", gingembre: "🫚 Gingembre", galanga: "🫚 Galanga",
-  citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille",
-  // Liquides et sauces
-  bouillon: "🍲 Bouillon", sojaS: "🍶 Sauce soja", mirin: "🍶 Mirin",
-  vin: "🍷 Vin rouge", brandy: "🥃 Brandy", saké: "🍶 Saké",
-  eauGaz: "💧 Eau gazeuse", eau: "💧 Eau", cafe: "☕ Café expresso",
-  coco: "🥥 Lait de coco", tahini: "🫒 Tahini",
-  // Alcools
+  courge: "🎃 Courge butternut", manioc: "🫚 Manioc", navets: "🪨 Navets",
+  chou: "🥬 Chou", poireaux: "🥬 Poireaux", asperges: "🌿 Asperges",
+  mais: "🌽 Maïs", maïs: "🌽 Maïs", petitspois: "🫛 Petits pois",
+  haricots: "🫛 Haricots verts", concombre: "🥒 Concombre", celeri: "🌿 Céleri",
+  edamame: "🫛 Edamame", pois: "🫘 Pois",
+  // == Légumineuses ==
+  poischiches: "🫘 Pois chiches", lentilles: "🫘 Lentilles",
+  // == Fruits ==
+  citron: "🍋 Citron", citrons: "🍋 Citrons", orange: "🍊 Orange", orangeJus: "🍊 Jus d'orange",
+  pommes: "🍎 Pommes", bananes: "🍌 Bananes", fraise: "🍓 Fraise", fraises: "🍓 Fraises",
+  framboises: "🫐 Framboises", myrtilles: "🫐 Myrtilles", peche: "🍑 Pêche",
+  pruneaux: "🫐 Pruneaux", fruits: "🍎 Fruits", passion: "🌺 Fruits de la passion",
+  mangue: "🥭 Mangue", pasteque: "🍉 Pastèque", cerises: "🍒 Cerises", cerise: "🍒 Cerise",
+  fraise: "🍓 Fraise", avocats: "🥑 Avocats", ananas: "🍍 Ananas",
+  acai: "🫐 Açaï", coulis: "🍓 Coulis", sambar: "🍲 Sambar",
+  // == Aromates & épices ==
+  sel: "🧂 Sel", poivre: "🌶️ Poivre noir", piment: "🌶️ Piment",
+  masala: "🌶️ Garam masala", curry: "🌶️ Curry", cumin: "🌿 Cumin",
+  cannelle: "🪵 Cannelle", safran: "🌼 Safran", paprika: "🌶️ Paprika",
+  gingembre: "🫚 Gingembre", galanga: "🫚 Galanga", anis: "⭐ Anis étoilé",
+  citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille", fumee: "💨 Paprika fumé",
+  chermoula: "🌿 Chermoula", pesto: "🌿 Pesto",
+  persil: "🌿 Persil", coriandre: "🌿 Coriandre", menthe: "🌿 Menthe fraîche",
+  basilic: "🌿 Basilic", thym: "🌿 Thym", romarin: "🌿 Romarin", aneth: "🌿 Aneth",
+  // == Condiments & sauces ==
+  sojaS: "🍶 Sauce soja", mirin: "🍶 Mirin", saké: "🍶 Saké", hoisin: "🍶 Sauce hoisin",
+  bbqSauce: "🍖 Sauce BBQ", rub: "🌶️ Rub BBQ", tahini: "🫒 Tahini",
+  miso: "🌿 Miso", gochujang: "🌶️ Gochujang", vinaigre: "🍶 Vinaigre",
+  // == Divers cuisine ==
+  bouillon: "🍲 Bouillon", dashi: "💧 Dashi", cafe: "☕ Café expresso",
+  nori: "🌿 Nori", tofu: "🧀 Tofu", wakame: "🌊 Wakamé",
+  tortilla: "🌮 Tortillas", tortillas: "🌮 Tortillas", noix: "🌰 Noix",
+  amandes: "🌰 Amandes", pignons: "🌰 Pignons de pin", olives: "🫒 Olives",
+  palmier: "🌴 Cœurs de palmier", tahini: "🫒 Tahini",
+  // == Alcools ==
   rhum: "🍶 Rhum blanc", tequila: "🥃 Tequila", vodka: "🍶 Vodka",
-  gin: "🍶 Gin", bourbon: "🥃 Bourbon", cognac: "🥃 Cognac",
+  gin: "🍶 Gin", bourbon: "🥃 Bourbon", cognac: "🥃 Cognac", brandy: "🥃 Brandy",
   aperol: "🍊 Aperol", campari: "🍊 Campari", vermouth: "🍷 Vermouth",
   prosecco: "🍾 Prosecco", champagne: "🍾 Champagne", tripleSec: "🍊 Triple sec",
-  cointreau: "🍊 Cointreau", passoa: "🌺 Passoa", curacao: "🫐 Curaçao",
+  cointreau: "🍊 Cointreau", passoa: "🌺 Passoa", curacao: "🫐 Curaçao bleu",
   kahluaC: "☕ Kahlúa", gingerBeer: "💧 Ginger beer", limonade: "💧 Limonade",
   grenadine: "🍒 Grenadine", rose: "🍷 Rosé pétillant", sureau: "🌸 Sirop de sureau",
-  espresso: "☕ Espresso", orangeJus: "🍊 Jus d'orange", jusMixte: "🍹 Jus de fruits",
+  espresso: "☕ Espresso", jusMixte: "🍹 Jus de fruits rouges",
   cranberry: "🍒 Jus de cranberry", bitters: "💧 Angostura bitters",
-  fleurOranger: "🌸 Eau de fleur d'oranger",
-  // Boulangerie
-  biscuits: "🍪 Biscuits", chocolat: "🍫 Chocolat noir", pepites: "🍫 Pépites de chocolat",
-  pralin: "🌰 Pâte de pralin", amandes: "🌰 Amandes", noix: "🌰 Noix",
-  pignons: "🌰 Pignons de pin", cacahetes: "🌰 Cacahuètes", coco2: "🥥 Noix de coco râpée",
-  // Divers
-  tortilla: "🌮 Tortillas", tortillas: "🌮 Tortillas", pita: "🫓 Pains pita",
-  nori: "🌿 Nori", tofu: "🧀 Tofu", wakame: "🌊 Wakamé", shiitake: "🍄 Shiitake",
-  dashi: "💧 Dashi", miso: "🌿 Miso", gochujang: "🌶️ Gochujang",
-  arachide: "🥜 Pâte d'arachide", dattes: "🌴 Dattes Medjool",
-  ciboule: "🌿 Ciboule", persil: "🌿 Persil", coriandre: "🌿 Coriandre",
-  menthe: "🌿 Menthe fraîche", basilic: "🌿 Basilic", thym: "🌿 Thym",
-  romarin: "🌿 Romarin", aneth: "🌿 Aneth",
-  pate: "🫓 Pâton(s)", feuilletee: "🥐 Pâte feuilletée",
-  bechamel: "🥛 Béchamel", hoisin: "🍶 Sauce hoisin", bbqSauce: "🍖 Sauce BBQ",
-  rub: "🌶️ Rub BBQ", chapelure: "🍞 Chapelure",
-  cremeTruffe: "🍄 Crème de truffe", huileTruffe: "🍄 Huile de truffe",
-  pateC: "🌶️ Pâte de curry", gochujang: "🌶️ Gochujang",
-  tteok: "🍱 Tteok (gâteaux de riz)",
-  citronnelle: "🌿 Citronnelle",
+  fleurOranger: "🌸 Eau de fleur d'oranger", tonic: "💧 Tonic premium",
+  eauGaz: "💧 Eau gazeuse", eau: "💧 Eau", eauChoux: "💧 Eau", eauRose: "🌹 Eau de rose",
+  // == Chocolat & pâtisserie ==
+  chocolat: "🍫 Chocolat noir", pepites: "🍫 Pépites de chocolat",
+  cremeTruffe: "🍄 Crème de truffe", roquette: "🥬 Roquette",
+  // == Ingrédients spéciaux ==
+  pralin: "🌰 Pâte de pralin", proteine: "💪 Protéine", dattes: "🌴 Dattes",
+  vermicelles: "🍜 Vermicelles", edamame: "🫛 Edamame",
 };
 
 const recettes = {
