@@ -6300,39 +6300,6 @@ const recettes = {
     ]
   },
 
-  granola: {
-    base: 8,
-    temps: "30 min",
-    niveau: "⭐ Facile",
-    emoji: "🌾",
-    description: "Un granola maison croustillant et doré — bien meilleur que celui du commerce et personnalisable à l'infini !",
-    tableauGranola: [
-      { nb:  1, flocons: "38 g",  miel: "8 ml",   huile: "5 ml",  noix: "13 g",  graines: "6 g"  },
-      { nb:  2, flocons: "75 g",  miel: "15 ml",  huile: "10 ml", noix: "25 g",  graines: "13 g" },
-      { nb:  3, flocons: "113 g", miel: "23 ml",  huile: "15 ml", noix: "38 g",  graines: "19 g" },
-      { nb:  4, flocons: "150 g", miel: "30 ml",  huile: "20 ml", noix: "50 g",  graines: "25 g" },
-      { nb:  5, flocons: "188 g", miel: "38 ml",  huile: "25 ml", noix: "63 g",  graines: "31 g" },
-      { nb:  6, flocons: "225 g", miel: "45 ml",  huile: "30 ml", noix: "75 g",  graines: "38 g" },
-      { nb:  7, flocons: "263 g", miel: "53 ml",  huile: "35 ml", noix: "88 g",  graines: "44 g" },
-      { nb:  8, flocons: "300 g", miel: "60 ml",  huile: "40 ml", noix: "100 g", graines: "50 g" },
-      { nb:  9, flocons: "338 g", miel: "68 ml",  huile: "45 ml", noix: "113 g", graines: "56 g" },
-      { nb: 10, flocons: "375 g", miel: "75 ml",  huile: "50 ml", noix: "125 g", graines: "63 g" },
-      { nb: 11, flocons: "413 g", miel: "83 ml",  huile: "55 ml", noix: "138 g", graines: "69 g" },
-      { nb: 12, flocons: "450 g", miel: "90 ml",  huile: "60 ml", noix: "150 g", graines: "75 g" },
-      { nb: 13, flocons: "488 g", miel: "98 ml", huile: "65 ml", noix: "162 g", graines: "81 g" },
-      { nb: 14, flocons: "525 g", miel: "105 ml", huile: "70 ml", noix: "175 g", graines: "88 g" },
-      { nb: 15, flocons: "562 g", miel: "112 ml", huile: "75 ml", noix: "188 g", graines: "94 g" },
-    
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🔥", titre: "Préchauffer le four",        detail: "Préchauffer à 160 °C. Recouvrir une plaque de cuisson de papier sulfurisé.", badge: null },
-      { icone: "🥣", titre: "Mélanger le tout",           detail: "Dans un grand bol, mélanger les flocons d'avoine, les noix concassées, les graines, la cannelle et le sel. Verser le miel et l'huile de coco fondue. Bien mélanger pour enrober uniformément.", badge: null },
-      { icone: "📏", titre: "Étaler sur la plaque",       detail: "Étaler en couche uniforme sur la plaque. Ne pas trop éparpiller pour avoir de beaux clusters.", badge: null },
-      { icone: "🌡️", titre: "Cuire en surveillant",      detail: "Enfourner et remuer toutes les 10 min pour une cuisson homogène. Le granola est prêt quand il est doré. Attention, il croquille en refroidissant !", badge: "⏱ 25–30 min à 160 °C" },
-      { icone: "🍇", titre: "Ajouter les fruits secs",    detail: "Laisser refroidir complètement sur la plaque SANS remuer (pour former les clusters). Ajouter ensuite les fruits secs et les pépites de chocolat. Conserver dans un bocal hermétique.", badge: "⏱ Conserve 3 semaines" },
-    ]
-  },
 
   veloutelegumes: {
     base: 4,
@@ -9895,7 +9862,6 @@ const prixCalories = {
   fondantchocolat:  { base: 6,  baseLabel: "6 fondants",   prixTotal: 3.80,  calTotal: 3000, unite: "fondant" },
   madeleine:        { base: 12, baseLabel: "12 madeleines",prixTotal: 2.50,  calTotal: 1800, unite: "madeleine" },
   bananabread:      { base: 8,  baseLabel: "8 tranches",   prixTotal: 2.80,  calTotal: 2400, unite: "tranche" },
-  granola:          { base: 8,  baseLabel: "8 portions",   prixTotal: 4.00,  calTotal: 3200, unite: "portion" },
   veloutelegumes:   { base: 4,  baseLabel: "4 personnes",  prixTotal: 3.50,  calTotal: 600,  unite: "personne" },
   houmous:          { base: 6,  baseLabel: "6 personnes",  prixTotal: 2.50,  calTotal: 900,   unite: "personne" },
   overnightoats:    { base: 1,  baseLabel: "1 pot",         prixTotal: 1.20,  calTotal: 350,   unite: "pot" },
@@ -10334,7 +10300,6 @@ function choisirRecette(nom) {
     "cookies":           "Cookies",
     "risotto":           "Risotto",
     "madeleine":         "Madeleines",
-    "granola":           "Granola",
     "houmous":           "Houmous",
     "clafoutis":         "Clafoutis",
     "pancakes":          "Pancakes",
