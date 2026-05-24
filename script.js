@@ -552,7 +552,7 @@ const recettes = {
     temps: "1h30",
     niveau: "⭐ Moyen",
     emoji: "🍝",
-    description: "Pâte à lasagnes maison : 1 œuf pour 100 g de farine, 1 pincée de sel.",
+    description: "Pâte à Lasagne maison : 1 œuf pour 100 g de farine, 1 pincée de sel.",
     tableauLasagne: [
       { nb:  1, farine: "100 g",  oeufs: 1,  sel: "1 pincée" },
       { nb:  2, farine: "200 g",  oeufs: 2,  sel: "1 pincée" },
@@ -9043,6 +9043,7 @@ function choisirRecette(nom) {
 
   // Afficher dans la modal
   const nomsAffichage = {
+    "lasagne":           "Pâte à Lasagne",
     "croquemonsieur":    "Croque-monsieur",
     "cremebrulee":       "Crème brûlée",
     "tarteaupommes":     "Tarte aux pommes",
