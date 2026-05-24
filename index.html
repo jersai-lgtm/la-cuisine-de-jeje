@@ -2732,18 +2732,9 @@ function afficherMenusSemaine(menus, personnes) {
 }
 
 function ouvrirRecettePlan(recetteKey, personnes) {
-  // Mémoriser l'onglet actif (planificateur ou festif)
-  const tabActif = document.getElementById("section-festif") &&
-    document.getElementById("section-festif").style.display !== "none" ? "festif" : "semaine";
-  window._planTabActif = tabActif;
-
-  // Aller sur accueil
+  // Ouvrir directement la modale sans changer d'onglet
   document.getElementById("personnes").value = personnes;
-  document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
-  document.querySelectorAll(".nav-btn")[0].classList.add("active");
-  afficherSection("accueil", document.querySelectorAll(".nav-btn")[0]);
-  // Ouvrir la fiche après que la section est affichée
-  setTimeout(() => choisirRecette(recetteKey), 150);
+  choisirRecette(recetteKey);
 }
 
 function afficherCourses() {
