@@ -4340,6 +4340,487 @@ const recettes = {
       { icone: "🍋", titre: "Servir",                  detail: "Accompagner de riz pilaf, d'écrasé de pommes de terre ou de légumes vapeur. Arroser de jus de citron.", badge: null },
     ]
   },
+
+  tequilasunrise: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🌅",
+    description: "Le Tequila Sunrise — tequila, jus d'orange et grenadine qui forme un magnifique dégradé. Le cocktail coucher de soleil !",
+    tableauTequilaSunrise: [
+      { nb:  1, tequila: "5 cl",  orange: "10 cl", grenadine: "1 cl"  },
+      { nb:  2, tequila: "10 cl", orange: "20 cl", grenadine: "2 cl"  },
+      { nb:  3, tequila: "15 cl", orange: "30 cl", grenadine: "3 cl"  },
+      { nb:  4, tequila: "20 cl", orange: "40 cl", grenadine: "4 cl"  },
+      { nb:  5, tequila: "25 cl", orange: "50 cl", grenadine: "5 cl"  },
+      { nb:  6, tequila: "30 cl", orange: "60 cl", grenadine: "6 cl"  },
+      { nb:  7, tequila: "35 cl", orange: "70 cl", grenadine: "7 cl"  },
+      { nb:  8, tequila: "40 cl", orange: "80 cl", grenadine: "8 cl"  },
+      { nb:  9, tequila: "45 cl", orange: "90 cl", grenadine: "9 cl"  },
+      { nb: 10, tequila: "50 cl", orange: "100 cl",grenadine: "10 cl" },
+      { nb: 11, tequila: "55 cl", orange: "110 cl",grenadine: "11 cl" },
+      { nb: 12, tequila: "60 cl", orange: "120 cl",grenadine: "12 cl" },
+      { nb: 13, tequila: "65 cl", orange: "130 cl",grenadine: "13 cl" },
+      { nb: 14, tequila: "70 cl", orange: "140 cl",grenadine: "14 cl" },
+      { nb: 15, tequila: "75 cl", orange: "150 cl",grenadine: "15 cl" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Verre et glace",           detail: "Remplir un grand verre de glaçons.", badge: null },
+      { icone: "🍊", titre: "Verser tequila et orange", detail: "Verser la tequila puis le jus d'orange. Mélanger légèrement.", badge: null },
+      { icone: "🌅", titre: "Grenadine",                detail: "Verser doucement la grenadine le long du verre — elle va couler au fond et créer le dégradé. NE PAS mélanger ! Garnir d'une tranche d'orange.", badge: null },
+    ]
+  },
+
+  aperolspritzrosa: {
+    base: 1, temps: "2 min", niveau: "⭐ Facile", emoji: "🌸",
+    description: "Spritz Rosé — Aperol, rosé pétillant et eau gazeuse. La version plus douce et fruitée du Spritz classique.",
+    tableauAperolRosa: [
+      { nb:  1, aperol: "6 cl",  rose: "9 cl",  eauGaz: "3 cl",  fraise: "1"  },
+      { nb:  2, aperol: "12 cl", rose: "18 cl", eauGaz: "6 cl",  fraise: "2"  },
+      { nb:  3, aperol: "18 cl", rose: "27 cl", eauGaz: "9 cl",  fraise: "3"  },
+      { nb:  4, aperol: "24 cl", rose: "36 cl", eauGaz: "12 cl", fraise: "4"  },
+      { nb:  5, aperol: "30 cl", rose: "45 cl", eauGaz: "15 cl", fraise: "5"  },
+      { nb:  6, aperol: "36 cl", rose: "54 cl", eauGaz: "18 cl", fraise: "6"  },
+      { nb:  7, aperol: "42 cl", rose: "63 cl", eauGaz: "21 cl", fraise: "7"  },
+      { nb:  8, aperol: "48 cl", rose: "72 cl", eauGaz: "24 cl", fraise: "8"  },
+      { nb:  9, aperol: "54 cl", rose: "81 cl", eauGaz: "27 cl", fraise: "9"  },
+      { nb: 10, aperol: "60 cl", rose: "90 cl", eauGaz: "30 cl", fraise: "10" },
+      { nb: 11, aperol: "66 cl", rose: "99 cl", eauGaz: "33 cl", fraise: "11" },
+      { nb: 12, aperol: "72 cl", rose: "108 cl",eauGaz: "36 cl", fraise: "12" },
+      { nb: 13, aperol: "78 cl", rose: "117 cl",eauGaz: "39 cl", fraise: "13" },
+      { nb: 14, aperol: "84 cl", rose: "126 cl",eauGaz: "42 cl", fraise: "14" },
+      { nb: 15, aperol: "90 cl", rose: "135 cl",eauGaz: "45 cl", fraise: "15" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Verre et glace",           detail: "Remplir un grand verre à vin de glaçons.", badge: null },
+      { icone: "🌸", titre: "Aperol et rosé",           detail: "Verser l'Aperol puis le rosé pétillant. Compléter avec l'eau gazeuse.", badge: null },
+      { icone: "🍓", titre: "Garnir",                   detail: "Garnir d'une fraise et mélanger très délicatement.", badge: null },
+    ]
+  },
+
+  espressoMartini: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "☕",
+    description: "L'Espresso Martini — vodka, liqueur de café et espresso frais. Le cocktail après-dîner qui réveille et plaît à tout le monde.",
+    tableauEspressoMartini: [
+      { nb:  1, vodka: "4 cl",  kahluaC: "2 cl",  espresso: "3 cl",  sucre: "1 c.à.c" },
+      { nb:  2, vodka: "8 cl",  kahluaC: "4 cl",  espresso: "6 cl",  sucre: "2 c.à.c" },
+      { nb:  3, vodka: "12 cl", kahluaC: "6 cl",  espresso: "9 cl",  sucre: "3 c.à.c" },
+      { nb:  4, vodka: "16 cl", kahluaC: "8 cl",  espresso: "12 cl", sucre: "4 c.à.c" },
+      { nb:  5, vodka: "20 cl", kahluaC: "10 cl", espresso: "15 cl", sucre: "5 c.à.c" },
+      { nb:  6, vodka: "24 cl", kahluaC: "12 cl", espresso: "18 cl", sucre: "6 c.à.c" },
+      { nb:  7, vodka: "28 cl", kahluaC: "14 cl", espresso: "21 cl", sucre: "7 c.à.c" },
+      { nb:  8, vodka: "32 cl", kahluaC: "16 cl", espresso: "24 cl", sucre: "8 c.à.c" },
+      { nb:  9, vodka: "36 cl", kahluaC: "18 cl", espresso: "27 cl", sucre: "9 c.à.c" },
+      { nb: 10, vodka: "40 cl", kahluaC: "20 cl", espresso: "30 cl", sucre: "10 c.à.c"},
+      { nb: 11, vodka: "44 cl", kahluaC: "22 cl", espresso: "33 cl", sucre: "11 c.à.c"},
+      { nb: 12, vodka: "48 cl", kahluaC: "24 cl", espresso: "36 cl", sucre: "12 c.à.c"},
+      { nb: 13, vodka: "52 cl", kahluaC: "26 cl", espresso: "39 cl", sucre: "13 c.à.c"},
+      { nb: 14, vodka: "56 cl", kahluaC: "28 cl", espresso: "42 cl", sucre: "14 c.à.c"},
+      { nb: 15, vodka: "60 cl", kahluaC: "30 cl", espresso: "45 cl", sucre: "15 c.à.c"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "☕", titre: "Préparer l'espresso",     detail: "Faire un espresso serré et le laisser refroidir légèrement.", badge: null },
+      { icone: "🍹", titre: "Shaker avec glace",        detail: "Dans un shaker avec beaucoup de glace, verser vodka, Kahlúa, espresso et sirop de sucre.", badge: null },
+      { icone: "🥶", titre: "Shaker fort",              detail: "Shaker très vigoureusement 15-20 secondes — plus c'est fort, plus la mousse est belle.", badge: "⏱ 20 sec" },
+      { icone: "☕", titre: "Filtrer",                  detail: "Filtrer dans un verre à martini. La belle mousse crémeuse doit se former en surface. Décorer de 3 grains de café.", badge: null },
+    ]
+  },
+
+  punchfruitsrouges: {
+    base: 8, temps: "10 min", niveau: "⭐ Facile", emoji: "🍓",
+    description: "Punch aux fruits rouges — rhum, fruits frais, jus de fruits et ginger beer. Le cocktail de fête qui régale tout le monde.",
+    tableauPunchRouge: [
+      { nb:  2, rhum: "10 cl",  fraises: "100 g", framboises: "50 g", jusMixte: "20 cl", gingerBeer: "10 cl" },
+      { nb:  4, rhum: "20 cl",  fraises: "200 g", framboises: "100 g",jusMixte: "40 cl", gingerBeer: "20 cl" },
+      { nb:  6, rhum: "30 cl",  fraises: "300 g", framboises: "150 g",jusMixte: "60 cl", gingerBeer: "30 cl" },
+      { nb:  8, rhum: "40 cl",  fraises: "400 g", framboises: "200 g",jusMixte: "80 cl", gingerBeer: "40 cl" },
+      { nb: 10, rhum: "50 cl",  fraises: "500 g", framboises: "250 g",jusMixte: "100 cl",gingerBeer: "50 cl" },
+      { nb: 12, rhum: "60 cl",  fraises: "600 g", framboises: "300 g",jusMixte: "120 cl",gingerBeer: "60 cl" },
+      { nb: 14, rhum: "70 cl",  fraises: "700 g", framboises: "350 g",jusMixte: "140 cl",gingerBeer: "70 cl" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍓", titre: "Écraser les fruits",       detail: "Écraser légèrement fraises et framboises dans le pichet. Ajouter sucre et jus de citron vert.", badge: null },
+      { icone: "🍶", titre: "Ajouter les liquides",     detail: "Verser rhum, jus de fruits rouges et jus d'orange. Mélanger.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer",              detail: "Mettre au frigo 1h pour que les saveurs se mélangent.", badge: "⏱ 1h frigo" },
+      { icone: "🥂", titre: "Servir",                   detail: "Au moment de servir, ajouter ginger beer et glaçons. Garnir de fruits frais.", badge: null },
+    ]
+  },
+
+  blueLagoon: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🫐",
+    description: "Le Blue Lagoon — vodka, curaçao bleu et limonade. Un cocktail visuellement spectaculaire et légèrement sucré.",
+    tableauBlueLagoon: [
+      { nb:  1, vodka: "4 cl",  curacao: "2 cl",  limonade: "12 cl", citron: "1 cl"  },
+      { nb:  2, vodka: "8 cl",  curacao: "4 cl",  limonade: "24 cl", citron: "2 cl"  },
+      { nb:  3, vodka: "12 cl", curacao: "6 cl",  limonade: "36 cl", citron: "3 cl"  },
+      { nb:  4, vodka: "16 cl", curacao: "8 cl",  limonade: "48 cl", citron: "4 cl"  },
+      { nb:  5, vodka: "20 cl", curacao: "10 cl", limonade: "60 cl", citron: "5 cl"  },
+      { nb:  6, vodka: "24 cl", curacao: "12 cl", limonade: "72 cl", citron: "6 cl"  },
+      { nb:  7, vodka: "28 cl", curacao: "14 cl", limonade: "84 cl", citron: "7 cl"  },
+      { nb:  8, vodka: "32 cl", curacao: "16 cl", limonade: "96 cl", citron: "8 cl"  },
+      { nb:  9, vodka: "36 cl", curacao: "18 cl", limonade: "108 cl",citron: "9 cl"  },
+      { nb: 10, vodka: "40 cl", curacao: "20 cl", limonade: "120 cl",citron: "10 cl" },
+      { nb: 11, vodka: "44 cl", curacao: "22 cl", limonade: "132 cl",citron: "11 cl" },
+      { nb: 12, vodka: "48 cl", curacao: "24 cl", limonade: "144 cl",citron: "12 cl" },
+      { nb: 13, vodka: "52 cl", curacao: "26 cl", limonade: "156 cl",citron: "13 cl" },
+      { nb: 14, vodka: "56 cl", curacao: "28 cl", limonade: "168 cl",citron: "14 cl" },
+      { nb: 15, vodka: "60 cl", curacao: "30 cl", limonade: "180 cl",citron: "15 cl" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Verre et glace",           detail: "Remplir un grand verre de glaçons.", badge: null },
+      { icone: "🫐", titre: "Vodka et curaçao",         detail: "Verser la vodka et le curaçao bleu.", badge: null },
+      { icone: "💧", titre: "Limonade",                 detail: "Compléter avec la limonade et le jus de citron. Mélanger délicatement. Garnir d'une rondelle de citron.", badge: null },
+    ]
+  },
+
+  mimosa: {
+    base: 1, temps: "2 min", niveau: "⭐ Facile", emoji: "🍾",
+    description: "Le Mimosa — champagne et jus d'orange frais en parts égales. Le cocktail du brunch par excellence, élégant et léger.",
+    tableauMimosa: [
+      { nb:  1, champagne: "7.5 cl", orangeJus: "7.5 cl" },
+      { nb:  2, champagne: "15 cl",  orangeJus: "15 cl"  },
+      { nb:  3, champagne: "22 cl",  orangeJus: "22 cl"  },
+      { nb:  4, champagne: "30 cl",  orangeJus: "30 cl"  },
+      { nb:  5, champagne: "37 cl",  orangeJus: "37 cl"  },
+      { nb:  6, champagne: "45 cl",  orangeJus: "45 cl"  },
+      { nb:  7, champagne: "52 cl",  orangeJus: "52 cl"  },
+      { nb:  8, champagne: "60 cl",  orangeJus: "60 cl"  },
+      { nb:  9, champagne: "67 cl",  orangeJus: "67 cl"  },
+      { nb: 10, champagne: "75 cl",  orangeJus: "75 cl"  },
+      { nb: 11, champagne: "82 cl",  orangeJus: "82 cl"  },
+      { nb: 12, champagne: "90 cl",  orangeJus: "90 cl"  },
+      { nb: 13, champagne: "97 cl",  orangeJus: "97 cl"  },
+      { nb: 14, champagne: "105 cl", orangeJus: "105 cl" },
+      { nb: 15, champagne: "112 cl", orangeJus: "112 cl" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍊", titre: "Presser les oranges",      detail: "Presser des oranges fraîches. Filtrer le jus.", badge: null },
+      { icone: "🍾", titre: "Champagne d'abord",       detail: "Verser d'abord le champagne bien froid dans la flûte.", badge: null },
+      { icone: "🍊", titre: "Jus d'orange",            detail: "Compléter doucement avec le jus d'orange. Ne pas mélanger — laisser les couches naturelles. Garnir d'un zeste d'orange.", badge: null },
+    ]
+  },
+
+  sidecarvintage: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🥃",
+    description: "Le Sidecar — cognac, Cointreau et jus de citron. Un cocktail des années 1920, sec et élégant, avec le rebord sucré.",
+    tableauSidecar: [
+      { nb:  1, cognac: "5 cl",  cointreau: "2 cl",  citron: "2 cl",  sucre: "rebord" },
+      { nb:  2, cognac: "10 cl", cointreau: "4 cl",  citron: "4 cl",  sucre: "rebord" },
+      { nb:  3, cognac: "15 cl", cointreau: "6 cl",  citron: "6 cl",  sucre: "rebord" },
+      { nb:  4, cognac: "20 cl", cointreau: "8 cl",  citron: "8 cl",  sucre: "rebord" },
+      { nb:  5, cognac: "25 cl", cointreau: "10 cl", citron: "10 cl", sucre: "rebord" },
+      { nb:  6, cognac: "30 cl", cointreau: "12 cl", citron: "12 cl", sucre: "rebord" },
+      { nb:  7, cognac: "35 cl", cointreau: "14 cl", citron: "14 cl", sucre: "rebord" },
+      { nb:  8, cognac: "40 cl", cointreau: "16 cl", citron: "16 cl", sucre: "rebord" },
+      { nb:  9, cognac: "45 cl", cointreau: "18 cl", citron: "18 cl", sucre: "rebord" },
+      { nb: 10, cognac: "50 cl", cointreau: "20 cl", citron: "20 cl", sucre: "rebord" },
+      { nb: 11, cognac: "55 cl", cointreau: "22 cl", citron: "22 cl", sucre: "rebord" },
+      { nb: 12, cognac: "60 cl", cointreau: "24 cl", citron: "24 cl", sucre: "rebord" },
+      { nb: 13, cognac: "65 cl", cointreau: "26 cl", citron: "26 cl", sucre: "rebord" },
+      { nb: 14, cognac: "70 cl", cointreau: "28 cl", citron: "28 cl", sucre: "rebord" },
+      { nb: 15, cognac: "75 cl", cointreau: "30 cl", citron: "30 cl", sucre: "rebord" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍬", titre: "Givrer au sucre",          detail: "Frotter le rebord du verre avec un quartier de citron. Tremper dans le sucre fin.", badge: null },
+      { icone: "🍹", titre: "Shaker avec glace",        detail: "Dans un shaker avec glace, verser cognac, Cointreau et jus de citron frais.", badge: null },
+      { icone: "🥶", titre: "Shaker",                   detail: "Shaker vigoureusement 15 secondes.", badge: "⏱ 15 sec" },
+      { icone: "🥃", titre: "Filtrer et servir",        detail: "Filtrer dans le verre givré. Garnir d'un zeste de citron.", badge: null },
+    ]
+  },
+
+  mocktailberrybliss: {
+    base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🫐",
+    description: "Berry Bliss Mocktail — myrtilles, framboises, jus de cranberry et eau gazeuse. Un mocktail antioxydant et spectaculaire sans alcool.",
+    tableauBerryBliss: [
+      { nb:  1, myrtilles: "30 g", framboises: "20 g", cranberry: "8 cl",  citron: "1 cl",  eauGaz: "8 cl"  },
+      { nb:  2, myrtilles: "60 g", framboises: "40 g", cranberry: "16 cl", citron: "2 cl",  eauGaz: "16 cl" },
+      { nb:  3, myrtilles: "90 g", framboises: "60 g", cranberry: "24 cl", citron: "3 cl",  eauGaz: "24 cl" },
+      { nb:  4, myrtilles: "120 g",framboises: "80 g", cranberry: "32 cl", citron: "4 cl",  eauGaz: "32 cl" },
+      { nb:  5, myrtilles: "150 g",framboises: "100 g",cranberry: "40 cl", citron: "5 cl",  eauGaz: "40 cl" },
+      { nb:  6, myrtilles: "180 g",framboises: "120 g",cranberry: "48 cl", citron: "6 cl",  eauGaz: "48 cl" },
+      { nb:  7, myrtilles: "210 g",framboises: "140 g",cranberry: "56 cl", citron: "7 cl",  eauGaz: "56 cl" },
+      { nb:  8, myrtilles: "240 g",framboises: "160 g",cranberry: "64 cl", citron: "8 cl",  eauGaz: "64 cl" },
+      { nb:  9, myrtilles: "270 g",framboises: "180 g",cranberry: "72 cl", citron: "9 cl",  eauGaz: "72 cl" },
+      { nb: 10, myrtilles: "300 g",framboises: "200 g",cranberry: "80 cl", citron: "10 cl", eauGaz: "80 cl" },
+      { nb: 11, myrtilles: "330 g",framboises: "220 g",cranberry: "88 cl", citron: "11 cl", eauGaz: "88 cl" },
+      { nb: 12, myrtilles: "360 g",framboises: "240 g",cranberry: "96 cl", citron: "12 cl", eauGaz: "96 cl" },
+      { nb: 13, myrtilles: "390 g",framboises: "260 g",cranberry: "104 cl",citron: "13 cl", eauGaz: "104 cl"},
+      { nb: 14, myrtilles: "420 g",framboises: "280 g",cranberry: "112 cl",citron: "14 cl", eauGaz: "112 cl"},
+      { nb: 15, myrtilles: "450 g",framboises: "300 g",cranberry: "120 cl",citron: "15 cl", eauGaz: "120 cl"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫐", titre: "Mixer les fruits",         detail: "Mixer myrtilles et framboises avec le jus de citron et 1 c.à.s de miel. Filtrer.", badge: null },
+      { icone: "🍒", titre: "Assembler",                detail: "Verser le coulis de fruits dans un verre avec glace. Ajouter le jus de cranberry.", badge: null },
+      { icone: "💧", titre: "Eau gazeuse et déco",      detail: "Compléter avec l'eau gazeuse. Garnir de quelques fruits frais et feuille de menthe.", badge: null },
+    ]
+  },
+
+  gingerlemondrop: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍋",
+    description: "Lemon Drop Gingembre — vodka citronnée, jus de citron frais et gingembre. Sec, pétillant et revigorant !",
+    tableauLemonDrop: [
+      { nb:  1, vodka: "5 cl",  citron: "3 cl",  gingembre: "1 cl",  sucre: "1 c.à.c", selRebord: "pour le rebord" },
+      { nb:  2, vodka: "10 cl", citron: "6 cl",  gingembre: "2 cl",  sucre: "2 c.à.c", selRebord: "pour le rebord" },
+      { nb:  3, vodka: "15 cl", citron: "9 cl",  gingembre: "3 cl",  sucre: "3 c.à.c", selRebord: "pour le rebord" },
+      { nb:  4, vodka: "20 cl", citron: "12 cl", gingembre: "4 cl",  sucre: "4 c.à.c", selRebord: "pour le rebord" },
+      { nb:  5, vodka: "25 cl", citron: "15 cl", gingembre: "5 cl",  sucre: "5 c.à.c", selRebord: "pour le rebord" },
+      { nb:  6, vodka: "30 cl", citron: "18 cl", gingembre: "6 cl",  sucre: "6 c.à.c", selRebord: "pour le rebord" },
+      { nb:  7, vodka: "35 cl", citron: "21 cl", gingembre: "7 cl",  sucre: "7 c.à.c", selRebord: "pour le rebord" },
+      { nb:  8, vodka: "40 cl", citron: "24 cl", gingembre: "8 cl",  sucre: "8 c.à.c", selRebord: "pour le rebord" },
+      { nb:  9, vodka: "45 cl", citron: "27 cl", gingembre: "9 cl",  sucre: "9 c.à.c", selRebord: "pour le rebord" },
+      { nb: 10, vodka: "50 cl", citron: "30 cl", gingembre: "10 cl", sucre: "10 c.à.c",selRebord: "pour le rebord" },
+      { nb: 11, vodka: "55 cl", citron: "33 cl", gingembre: "11 cl", sucre: "11 c.à.c",selRebord: "pour le rebord" },
+      { nb: 12, vodka: "60 cl", citron: "36 cl", gingembre: "12 cl", sucre: "12 c.à.c",selRebord: "pour le rebord" },
+      { nb: 13, vodka: "65 cl", citron: "39 cl", gingembre: "13 cl", sucre: "13 c.à.c",selRebord: "pour le rebord" },
+      { nb: 14, vodka: "70 cl", citron: "42 cl", gingembre: "14 cl", sucre: "14 c.à.c",selRebord: "pour le rebord" },
+      { nb: 15, vodka: "75 cl", citron: "45 cl", gingembre: "15 cl", sucre: "15 c.à.c",selRebord: "pour le rebord" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Givrer au sucre",          detail: "Frotter le rebord d'un verre avec citron. Tremper dans le sucre fin.", badge: null },
+      { icone: "🍹", titre: "Shaker",                   detail: "Dans un shaker avec glace, verser vodka citronnée, jus de citron frais, sirop de gingembre et sirop de sucre.", badge: null },
+      { icone: "🥶", titre: "Shaker fort",              detail: "Shaker 15 secondes.", badge: "⏱ 15 sec" },
+      { icone: "🍋", titre: "Filtrer et servir",        detail: "Filtrer dans le verre givré. Garnir d'un zeste de citron et d'une tranche de gingembre confit.", badge: null },
+    ]
+  },
+
+  mocktailcoconorchidee: {
+    base: 2, temps: "5 min", niveau: "⭐ Facile", emoji: "🌺",
+    description: "Mocktail Coco Orchidée — lait de coco, sirop de fleur d'oranger, citron vert et eau gazeuse. Exotique, floral et sans alcool.",
+    tableauCocoOrchidee: [
+      { nb:  1, laitCoco: "8 cl",  fleurOranger: "1 cl",  citron: "1 cl",  eauGaz: "8 cl",  miel: "1 c.à.c" },
+      { nb:  2, laitCoco: "16 cl", fleurOranger: "2 cl",  citron: "2 cl",  eauGaz: "16 cl", miel: "2 c.à.c" },
+      { nb:  3, laitCoco: "24 cl", fleurOranger: "3 cl",  citron: "3 cl",  eauGaz: "24 cl", miel: "3 c.à.c" },
+      { nb:  4, laitCoco: "32 cl", fleurOranger: "4 cl",  citron: "4 cl",  eauGaz: "32 cl", miel: "4 c.à.c" },
+      { nb:  5, laitCoco: "40 cl", fleurOranger: "5 cl",  citron: "5 cl",  eauGaz: "40 cl", miel: "5 c.à.c" },
+      { nb:  6, laitCoco: "48 cl", fleurOranger: "6 cl",  citron: "6 cl",  eauGaz: "48 cl", miel: "6 c.à.c" },
+      { nb:  7, laitCoco: "56 cl", fleurOranger: "7 cl",  citron: "7 cl",  eauGaz: "56 cl", miel: "7 c.à.c" },
+      { nb:  8, laitCoco: "64 cl", fleurOranger: "8 cl",  citron: "8 cl",  eauGaz: "64 cl", miel: "8 c.à.c" },
+      { nb:  9, laitCoco: "72 cl", fleurOranger: "9 cl",  citron: "9 cl",  eauGaz: "72 cl", miel: "9 c.à.c" },
+      { nb: 10, laitCoco: "80 cl", fleurOranger: "10 cl", citron: "10 cl", eauGaz: "80 cl", miel: "10 c.à.c"},
+      { nb: 11, laitCoco: "88 cl", fleurOranger: "11 cl", citron: "11 cl", eauGaz: "88 cl", miel: "11 c.à.c"},
+      { nb: 12, laitCoco: "96 cl", fleurOranger: "12 cl", citron: "12 cl", eauGaz: "96 cl", miel: "12 c.à.c"},
+      { nb: 13, laitCoco: "104 cl",fleurOranger: "13 cl", citron: "13 cl", eauGaz: "104 cl",miel: "13 c.à.c"},
+      { nb: 14, laitCoco: "112 cl",fleurOranger: "14 cl", citron: "14 cl", eauGaz: "112 cl",miel: "14 c.à.c"},
+      { nb: 15, laitCoco: "120 cl",fleurOranger: "15 cl", citron: "15 cl", eauGaz: "120 cl",miel: "15 c.à.c"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥥", titre: "Mélanger",                 detail: "Dans un shaker avec glace, mélanger lait de coco, eau de fleur d'oranger, jus de citron vert et miel.", badge: null },
+      { icone: "💧", titre: "Eau gazeuse",              detail: "Filtrer dans un verre avec glace. Compléter d'eau gazeuse.", badge: null },
+      { icone: "🌺", titre: "Décorer",                  detail: "Garnir d'une fleur comestible ou zeste de citron vert. Servir très frais.", badge: null },
+    ]
+  },
+
+  pizzaprosciuttoroquette: {
+    base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🍕",
+    description: "Pizza Prosciutto Roquette — jambon de Parme posé après cuisson sur mozzarella fondante, roquette fraîche et parmesan. L'élégance italienne.",
+    tableauPizzaProsciutto: [
+      { nb:  1, pate: "1 pâton",  mozza: "80 g",  prosciutto: "40 g", roquette: "20 g", parmesan: "15 g" },
+      { nb:  2, pate: "2 pâtons", mozza: "160 g", prosciutto: "80 g", roquette: "40 g", parmesan: "30 g" },
+      { nb:  3, pate: "3 pâtons", mozza: "240 g", prosciutto: "120 g",roquette: "60 g", parmesan: "45 g" },
+      { nb:  4, pate: "4 pâtons", mozza: "320 g", prosciutto: "160 g",roquette: "80 g", parmesan: "60 g" },
+      { nb:  5, pate: "5 pâtons", mozza: "400 g", prosciutto: "200 g",roquette: "100 g",parmesan: "75 g" },
+      { nb:  6, pate: "6 pâtons", mozza: "480 g", prosciutto: "240 g",roquette: "120 g",parmesan: "90 g" },
+      { nb:  7, pate: "7 pâtons", mozza: "560 g", prosciutto: "280 g",roquette: "140 g",parmesan: "105 g"},
+      { nb:  8, pate: "8 pâtons", mozza: "640 g", prosciutto: "320 g",roquette: "160 g",parmesan: "120 g"},
+      { nb:  9, pate: "9 pâtons", mozza: "720 g", prosciutto: "360 g",roquette: "180 g",parmesan: "135 g"},
+      { nb: 10, pate: "10 pâtons",mozza: "800 g", prosciutto: "400 g",roquette: "200 g",parmesan: "150 g"},
+      { nb: 11, pate: "11 pâtons",mozza: "880 g", prosciutto: "440 g",roquette: "220 g",parmesan: "165 g"},
+      { nb: 12, pate: "12 pâtons",mozza: "960 g", prosciutto: "480 g",roquette: "240 g",parmesan: "180 g"},
+      { nb: 13, pate: "13 pâtons",mozza: "1040 g",prosciutto: "520 g",roquette: "260 g",parmesan: "195 g"},
+      { nb: 14, pate: "14 pâtons",mozza: "1120 g",prosciutto: "560 g",roquette: "280 g",parmesan: "210 g"},
+      { nb: 15, pate: "15 pâtons",mozza: "1200 g",prosciutto: "600 g",roquette: "300 g",parmesan: "225 g"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Pâte et base",             detail: "Étaler la pâte. Napper de sauce tomate légère ou huile d'olive et ail.", badge: null },
+      { icone: "🧀", titre: "Mozzarella",               detail: "Répartir la mozzarella. Filet d'huile d'olive. Enfourner.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Cuire au four maximum jusqu'à bords dorés.", badge: "⏱ 7-10 min à 280°C" },
+      { icone: "🍖", titre: "Garnir après cuisson",     detail: "Sortir du four, disposer immédiatement le prosciutto di Parma en rosace. Ajouter la roquette fraîche et copeaux de parmesan. Filet d'huile d'olive et poivre.", badge: null },
+    ]
+  },
+
+  pizzatruffe: {
+    base: 2, temps: "20 min + 48h pâte", niveau: "⭐⭐ Intermédiaire", emoji: "🍄",
+    description: "Pizza à la Truffe — crème de truffe, mozzarella, champignons et huile de truffe. Une pizza gastronomique pour les grandes occasions.",
+    tableauPizzaTruffe: [
+      { nb:  1, pate: "1 pâton",  cremeTruffe: "2 c.à.s", mozza: "80 g",  champignons: "60 g",  huileTruffe: "1 c.à.c" },
+      { nb:  2, pate: "2 pâtons", cremeTruffe: "4 c.à.s", mozza: "160 g", champignons: "120 g", huileTruffe: "2 c.à.c" },
+      { nb:  3, pate: "3 pâtons", cremeTruffe: "6 c.à.s", mozza: "240 g", champignons: "180 g", huileTruffe: "3 c.à.c" },
+      { nb:  4, pate: "4 pâtons", cremeTruffe: "8 c.à.s", mozza: "320 g", champignons: "240 g", huileTruffe: "4 c.à.c" },
+      { nb:  5, pate: "5 pâtons", cremeTruffe: "10 c.à.s",mozza: "400 g", champignons: "300 g", huileTruffe: "5 c.à.c" },
+      { nb:  6, pate: "6 pâtons", cremeTruffe: "12 c.à.s",mozza: "480 g", champignons: "360 g", huileTruffe: "6 c.à.c" },
+      { nb:  7, pate: "7 pâtons", cremeTruffe: "14 c.à.s",mozza: "560 g", champignons: "420 g", huileTruffe: "7 c.à.c" },
+      { nb:  8, pate: "8 pâtons", cremeTruffe: "16 c.à.s",mozza: "640 g", champignons: "480 g", huileTruffe: "8 c.à.c" },
+      { nb:  9, pate: "9 pâtons", cremeTruffe: "18 c.à.s",mozza: "720 g", champignons: "540 g", huileTruffe: "9 c.à.c" },
+      { nb: 10, pate: "10 pâtons",cremeTruffe: "20 c.à.s",mozza: "800 g", champignons: "600 g", huileTruffe: "10 c.à.c"},
+      { nb: 11, pate: "11 pâtons",cremeTruffe: "22 c.à.s",mozza: "880 g", champignons: "660 g", huileTruffe: "11 c.à.c"},
+      { nb: 12, pate: "12 pâtons",cremeTruffe: "24 c.à.s",mozza: "960 g", champignons: "720 g", huileTruffe: "12 c.à.c"},
+      { nb: 13, pate: "13 pâtons",cremeTruffe: "26 c.à.s",mozza: "1040 g",champignons: "780 g", huileTruffe: "13 c.à.c"},
+      { nb: 14, pate: "14 pâtons",cremeTruffe: "28 c.à.s",mozza: "1120 g",champignons: "840 g", huileTruffe: "14 c.à.c"},
+      { nb: 15, pate: "15 pâtons",cremeTruffe: "30 c.à.s",mozza: "1200 g",champignons: "900 g", huileTruffe: "15 c.à.c"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Base crème de truffe",     detail: "Étaler la pâte. Napper généreusement de crème de truffe (tartare de truffe ou crème fraîche + truffe râpée).", badge: null },
+      { icone: "🍄", titre: "Champignons et mozza",     detail: "Disposer les champignons émincés (cèpes ou champignons Paris) et la mozzarella.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" },
+      { icone: "🍄", titre: "Finition truffe",          detail: "À la sortie du four, arroser d'huile de truffe et ajouter des copeaux de truffe fraîche ou séchée. Quelques feuilles de roquette. Servir immédiatement.", badge: null },
+    ]
+  },
+
+  pizzabiancoverdure: {
+    base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🤍",
+    description: "Pizza Bianca aux Légumes — base ricotta sans tomate, courgette fine, asperges et parmesan. Légère, printanière et raffinée.",
+    tableauPizzaBianca: [
+      { nb:  1, pate: "1 pâton",  ricotta: "60 g",  courgette: "½",  asperges: "3",  parmesan: "20 g" },
+      { nb:  2, pate: "2 pâtons", ricotta: "120 g", courgette: "1",  asperges: "6",  parmesan: "40 g" },
+      { nb:  3, pate: "3 pâtons", ricotta: "180 g", courgette: "1½", asperges: "9",  parmesan: "60 g" },
+      { nb:  4, pate: "4 pâtons", ricotta: "240 g", courgette: "2",  asperges: "12", parmesan: "80 g" },
+      { nb:  5, pate: "5 pâtons", ricotta: "300 g", courgette: "2½", asperges: "15", parmesan: "100 g"},
+      { nb:  6, pate: "6 pâtons", ricotta: "360 g", courgette: "3",  asperges: "18", parmesan: "120 g"},
+      { nb:  7, pate: "7 pâtons", ricotta: "420 g", courgette: "3½", asperges: "21", parmesan: "140 g"},
+      { nb:  8, pate: "8 pâtons", ricotta: "480 g", courgette: "4",  asperges: "24", parmesan: "160 g"},
+      { nb:  9, pate: "9 pâtons", ricotta: "540 g", courgette: "4½", asperges: "27", parmesan: "180 g"},
+      { nb: 10, pate: "10 pâtons",ricotta: "600 g", courgette: "5",  asperges: "30", parmesan: "200 g"},
+      { nb: 11, pate: "11 pâtons",ricotta: "660 g", courgette: "5½", asperges: "33", parmesan: "220 g"},
+      { nb: 12, pate: "12 pâtons",ricotta: "720 g", courgette: "6",  asperges: "36", parmesan: "240 g"},
+      { nb: 13, pate: "13 pâtons",ricotta: "780 g", courgette: "6½", asperges: "39", parmesan: "260 g"},
+      { nb: 14, pate: "14 pâtons",ricotta: "840 g", courgette: "7",  asperges: "42", parmesan: "280 g"},
+      { nb: 15, pate: "15 pâtons",ricotta: "900 g", courgette: "7½", asperges: "45", parmesan: "300 g"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Base ricotta",             detail: "Étaler la pâte. Mélanger la ricotta avec ail, sel, poivre et zeste de citron. Napper la pâte.", badge: null },
+      { icone: "🥒", titre: "Légumes",                 detail: "Couper la courgette en rubans fins (économe). Disposer courgette et asperges sur la pizza. Râper le parmesan.", badge: null },
+      { icone: "🔥", titre: "Cuire",                   detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" },
+      { icone: "🌿", titre: "Finir",                   detail: "Sortir du four, arroser d'huile d'olive et de quelques feuilles de basilic frais.", badge: null },
+    ]
+  },
+
+  pizzacalzone: {
+    base: 2, temps: "25 min + 48h pâte", niveau: "⭐⭐ Intermédiaire", emoji: "🌙",
+    description: "Le Calzone — pizza fermée farcie de ricotta, jambon, mozzarella et sauce tomate. La pizza-chausson napolitaine croustillante.",
+    tableauCalzone: [
+      { nb:  1, pate: "1 pâton",  ricotta: "80 g",  mozza: "60 g",  jambon: "40 g",  tomates: "50 g"  },
+      { nb:  2, pate: "2 pâtons", ricotta: "160 g", mozza: "120 g", jambon: "80 g",  tomates: "100 g" },
+      { nb:  3, pate: "3 pâtons", ricotta: "240 g", mozza: "180 g", jambon: "120 g", tomates: "150 g" },
+      { nb:  4, pate: "4 pâtons", ricotta: "320 g", mozza: "240 g", jambon: "160 g", tomates: "200 g" },
+      { nb:  5, pate: "5 pâtons", ricotta: "400 g", mozza: "300 g", jambon: "200 g", tomates: "250 g" },
+      { nb:  6, pate: "6 pâtons", ricotta: "480 g", mozza: "360 g", jambon: "240 g", tomates: "300 g" },
+      { nb:  7, pate: "7 pâtons", ricotta: "560 g", mozza: "420 g", jambon: "280 g", tomates: "350 g" },
+      { nb:  8, pate: "8 pâtons", ricotta: "640 g", mozza: "480 g", jambon: "320 g", tomates: "400 g" },
+      { nb:  9, pate: "9 pâtons", ricotta: "720 g", mozza: "540 g", jambon: "360 g", tomates: "450 g" },
+      { nb: 10, pate: "10 pâtons",ricotta: "800 g", mozza: "600 g", jambon: "400 g", tomates: "500 g" },
+      { nb: 11, pate: "11 pâtons",ricotta: "880 g", mozza: "660 g", jambon: "440 g", tomates: "550 g" },
+      { nb: 12, pate: "12 pâtons",ricotta: "960 g", mozza: "720 g", jambon: "480 g", tomates: "600 g" },
+      { nb: 13, pate: "13 pâtons",ricotta: "1040 g",mozza: "780 g", jambon: "520 g", tomates: "650 g" },
+      { nb: 14, pate: "14 pâtons",ricotta: "1120 g",mozza: "840 g", jambon: "560 g", tomates: "700 g" },
+      { nb: 15, pate: "15 pâtons",ricotta: "1200 g",mozza: "900 g", jambon: "600 g", tomates: "750 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Étaler la pâte",           detail: "Étaler chaque pâton en disque. La moitié seulement sera garnie.", badge: null },
+      { icone: "🧀", titre: "Farcir",                   detail: "Sur une moitié : étaler sauce tomate, ricotta, mozza, jambon et une pincée d'origan. Laisser 2cm de bord libre.", badge: null },
+      { icone: "🌙", titre: "Plier et souder",          detail: "Rabattre l'autre moitié. Souder les bords en appuyant et en roulant. Percer 2-3 trous sur le dessus.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Badigeonner d'huile d'olive. Cuire sur pierre chaude.", badge: "⏱ 10-12 min à 250°C" },
+      { icone: "🍅", titre: "Servir",                   detail: "Servir avec sauce tomate chaude à part pour tremper.", badge: null },
+    ]
+  },
+
+  pizzapoivrons: {
+    base: 2, temps: "30 min + 48h pâte", niveau: "⭐ Facile", emoji: "🫑",
+    description: "Pizza aux Poivrons Rôtis — poivrons confits au four, anchois, câpres et olives noires. Généreuse et méditerranéenne.",
+    tableauPizzaPoivrons: [
+      { nb:  1, pate: "1 pâton",  tomates: "80 g",  mozza: "80 g",  poivron: "½",  anchois: "3",  olives: "8"   },
+      { nb:  2, pate: "2 pâtons", tomates: "160 g", mozza: "160 g", poivron: "1",  anchois: "6",  olives: "16"  },
+      { nb:  3, pate: "3 pâtons", tomates: "240 g", mozza: "240 g", poivron: "1½", anchois: "9",  olives: "24"  },
+      { nb:  4, pate: "4 pâtons", tomates: "320 g", mozza: "320 g", poivron: "2",  anchois: "12", olives: "32"  },
+      { nb:  5, pate: "5 pâtons", tomates: "400 g", mozza: "400 g", poivron: "2½", anchois: "15", olives: "40"  },
+      { nb:  6, pate: "6 pâtons", tomates: "480 g", mozza: "480 g", poivron: "3",  anchois: "18", olives: "48"  },
+      { nb:  7, pate: "7 pâtons", tomates: "560 g", mozza: "560 g", poivron: "3½", anchois: "21", olives: "56"  },
+      { nb:  8, pate: "8 pâtons", tomates: "640 g", mozza: "640 g", poivron: "4",  anchois: "24", olives: "64"  },
+      { nb:  9, pate: "9 pâtons", tomates: "720 g", mozza: "720 g", poivron: "4½", anchois: "27", olives: "72"  },
+      { nb: 10, pate: "10 pâtons",tomates: "800 g", mozza: "800 g", poivron: "5",  anchois: "30", olives: "80"  },
+      { nb: 11, pate: "11 pâtons",tomates: "880 g", mozza: "880 g", poivron: "5½", anchois: "33", olives: "88"  },
+      { nb: 12, pate: "12 pâtons",tomates: "960 g", mozza: "960 g", poivron: "6",  anchois: "36", olives: "96"  },
+      { nb: 13, pate: "13 pâtons",tomates: "1040 g",mozza: "1040 g",poivron: "6½", anchois: "39", olives: "104" },
+      { nb: 14, pate: "14 pâtons",tomates: "1120 g",mozza: "1120 g",poivron: "7",  anchois: "42", olives: "112" },
+      { nb: 15, pate: "15 pâtons",tomates: "1200 g",mozza: "1200 g",poivron: "7½", anchois: "45", olives: "120" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫑", titre: "Rôtir les poivrons",      detail: "Couper les poivrons en lamelles. Rôtir à la poêle ou au four avec huile d'olive jusqu'à tendreté et légère coloration.", badge: "⏱ 15 min" },
+      { icone: "🫓", titre: "Sauce tomate",             detail: "Étaler la sauce tomate sur la pâte.", badge: null },
+      { icone: "🧀", titre: "Garnir",                   detail: "Répartir la mozzarella, les poivrons rôtis, les filets d'anchois, les olives noires et câpres.", badge: null },
+      { icone: "🔥", titre: "Cuire et finir",           detail: "Cuire au four maximum. Finir avec origan et filet d'huile d'olive.", badge: "⏱ 7-10 min à 280°C" },
+    ]
+  },
+
+  pizzapatate: {
+    base: 2, temps: "30 min + 48h pâte", niveau: "⭐ Facile", emoji: "🥔",
+    description: "Pizza Patate — base ricotta, pommes de terre ultra-fines, romarin et pecorino. La pizza romaine blanche et croustillante au format pala.",
+    tableauPizzaPatate: [
+      { nb:  1, pate: "1 pâton",  ricotta: "50 g",  pdterre: "100 g", pecorino: "20 g", romarin: "1 branche" },
+      { nb:  2, pate: "2 pâtons", ricotta: "100 g", pdterre: "200 g", pecorino: "40 g", romarin: "2 branches"},
+      { nb:  3, pate: "3 pâtons", ricotta: "150 g", pdterre: "300 g", pecorino: "60 g", romarin: "3 branches"},
+      { nb:  4, pate: "4 pâtons", ricotta: "200 g", pdterre: "400 g", pecorino: "80 g", romarin: "4 branches"},
+      { nb:  5, pate: "5 pâtons", ricotta: "250 g", pdterre: "500 g", pecorino: "100 g",romarin: "5 branches"},
+      { nb:  6, pate: "6 pâtons", ricotta: "300 g", pdterre: "600 g", pecorino: "120 g",romarin: "6 branches"},
+      { nb:  7, pate: "7 pâtons", ricotta: "350 g", pdterre: "700 g", pecorino: "140 g",romarin: "7 branches"},
+      { nb:  8, pate: "8 pâtons", ricotta: "400 g", pdterre: "800 g", pecorino: "160 g",romarin: "8 branches"},
+      { nb:  9, pate: "9 pâtons", ricotta: "450 g", pdterre: "900 g", pecorino: "180 g",romarin: "9 branches"},
+      { nb: 10, pate: "10 pâtons",ricotta: "500 g", pdterre: "1 kg",  pecorino: "200 g",romarin: "10 branches"},
+      { nb: 11, pate: "11 pâtons",ricotta: "550 g", pdterre: "1.1 kg",pecorino: "220 g",romarin: "11 branches"},
+      { nb: 12, pate: "12 pâtons",ricotta: "600 g", pdterre: "1.2 kg",pecorino: "240 g",romarin: "12 branches"},
+      { nb: 13, pate: "13 pâtons",ricotta: "650 g", pdterre: "1.3 kg",pecorino: "260 g",romarin: "13 branches"},
+      { nb: 14, pate: "14 pâtons",ricotta: "700 g", pdterre: "1.4 kg",pecorino: "280 g",romarin: "14 branches"},
+      { nb: 15, pate: "15 pâtons",ricotta: "750 g", pdterre: "1.5 kg",pecorino: "300 g",romarin: "15 branches"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Tranches ultra-fines",     detail: "Éplucher les pommes de terre et les couper en tranches de 1-2 mm à la mandoline. Les faire tremper dans l'eau froide 10 min pour ôter l'amidon.", badge: null },
+      { icone: "🫓", titre: "Base ricotta",             detail: "Étaler la pâte. Napper de ricotta assaisonnée d'ail, sel, poivre.", badge: null },
+      { icone: "🥔", titre: "Disposer les pommes de terre",detail: "Égoutter et sécher les tranches. Les disposer en rosace sur la ricotta. Arroser d'huile d'olive et saler.", badge: null },
+      { icone: "🌿", titre: "Romarin et pecorino",      detail: "Parsemer de feuilles de romarin et de pecorino râpé.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Four au maximum — les pommes de terre cuisent très vite à haute température.", badge: "⏱ 8-12 min à 280°C" },
+    ]
+  },
+
+  pizzabresilienne: {
+    base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🇧🇷",
+    description: "Pizza Brésilienne — tomates, mozzarella, cœurs de palmier, maïs et olives. La pizza São Paulo, version fusion tropicale !",
+    tableauPizzaBresil: [
+      { nb:  1, pate: "1 pâton",  tomates: "80 g",  mozza: "80 g",  palmier: "50 g", mais: "30 g",  olives: "6"   },
+      { nb:  2, pate: "2 pâtons", tomates: "160 g", mozza: "160 g", palmier: "100 g",mais: "60 g",  olives: "12"  },
+      { nb:  3, pate: "3 pâtons", tomates: "240 g", mozza: "240 g", palmier: "150 g",mais: "90 g",  olives: "18"  },
+      { nb:  4, pate: "4 pâtons", tomates: "320 g", mozza: "320 g", palmier: "200 g",mais: "120 g", olives: "24"  },
+      { nb:  5, pate: "5 pâtons", tomates: "400 g", mozza: "400 g", palmier: "250 g",mais: "150 g", olives: "30"  },
+      { nb:  6, pate: "6 pâtons", tomates: "480 g", mozza: "480 g", palmier: "300 g",mais: "180 g", olives: "36"  },
+      { nb:  7, pate: "7 pâtons", tomates: "560 g", mozza: "560 g", palmier: "350 g",mais: "210 g", olives: "42"  },
+      { nb:  8, pate: "8 pâtons", tomates: "640 g", mozza: "640 g", palmier: "400 g",mais: "240 g", olives: "48"  },
+      { nb:  9, pate: "9 pâtons", tomates: "720 g", mozza: "720 g", palmier: "450 g",mais: "270 g", olives: "54"  },
+      { nb: 10, pate: "10 pâtons",tomates: "800 g", mozza: "800 g", palmier: "500 g",mais: "300 g", olives: "60"  },
+      { nb: 11, pate: "11 pâtons",tomates: "880 g", mozza: "880 g", palmier: "550 g",mais: "330 g", olives: "66"  },
+      { nb: 12, pate: "12 pâtons",tomates: "960 g", mozza: "960 g", palmier: "600 g",mais: "360 g", olives: "72"  },
+      { nb: 13, pate: "13 pâtons",tomates: "1040 g",mozza: "1040 g",palmier: "650 g",mais: "390 g", olives: "78"  },
+      { nb: 14, pate: "14 pâtons",tomates: "1120 g",mozza: "1120 g",palmier: "700 g",mais: "420 g", olives: "84"  },
+      { nb: 15, pate: "15 pâtons",tomates: "1200 g",mozza: "1200 g",palmier: "750 g",mais: "450 g", olives: "90"  },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Sauce et fromage",         detail: "Étaler la sauce tomate et la mozzarella râpée.", badge: null },
+      { icone: "🌴", titre: "Garnitures brésiliennes",  detail: "Disposer les cœurs de palmier en rondelles, le maïs et les olives vertes.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" },
+      { icone: "🌿", titre: "Finir",                    detail: "Parsemer d'origan frais. Au Brésil on ajoute souvent de la catupiry (fromage crémeux) — remplaçable par crème fraîche épaisse.", badge: null },
+    ]
+  },
   boeufbourguignon: {
     base: 6,
     temps: "3h30 + marinade",
@@ -5997,6 +6478,13 @@ function initTablesGlobales() {
     "pouletrotiperfect":{ table: "tableauPouletRoti",      fn: htmlTableauPouletRotiColonnes,     label: "personne" },
     "millefeuille":    { table: "tableauMillefeuille",     fn: htmlTableauMillefeuilleColonnes,   label: "personne" },
     "saumoncrouteherbes":{ table: "tableauSaumonCroute",   fn: htmlTableauSaumonCrouteColonnes,   label: "personne" },
+    "pizzaprosciuttoroquette":{ table: "tableauPizzaProsciutto", fn: htmlTableauPizzaProsciuttoColonnes, label: "pizza" },
+    "pizzatruffe":     { table: "tableauPizzaTruffe",     fn: htmlTableauPizzaTruffeColonnes,    label: "pizza" },
+    "pizzabiancoverdure":{ table: "tableauPizzaBianca",   fn: htmlTableauPizzaBiancaColonnes,    label: "pizza" },
+    "pizzacalzone":    { table: "tableauCalzone",         fn: htmlTableauCalzoneColonnes,        label: "calzone" },
+    "pizzapoivrons":   { table: "tableauPizzaPoivrons",   fn: htmlTableauPizzaPoivronsColonnes,  label: "pizza" },
+    "pizzapatate":     { table: "tableauPizzaPatate",     fn: htmlTableauPizzaPatateColonnes,    label: "pizza" },
+    "pizzabresilienne":{ table: "tableauPizzaBresil",     fn: htmlTableauPizzaBresilieneColonnes,label: "pizza" },
   };
   // Ajouter dans la fonction calculer() accessible globalement
   window._nouvellesRecettesTables = nouvellesRecettesTables;
@@ -6026,6 +6514,16 @@ function initTablesGlobales() {
     "gintoniqmaison":     { table: "tableauGinTonic",       fn: htmlTableauGinTonicColonnes,     label: "verre" },
     "shrubframboisebasilic":{ table: "tableauShrub",        fn: htmlTableauShrubColonnes,        label: "verre" },
     "mocktailcoconananas":{ table: "tableauCocoAnanas",     fn: htmlTableauCocoAnanasColonnes,   label: "verre" },
+    "tequilasunrise":  { table: "tableauTequilaSunrise",  fn: htmlTableauTequilaSunriseColonnes, label: "verre" },
+    "aperolspritzrosa":{ table: "tableauAperolRosa",      fn: htmlTableauAperolRosaColonnes,     label: "verre" },
+    "espressoMartini": { table: "tableauEspressoMartini", fn: htmlTableauEspressoMartiniColonnes,label: "verre" },
+    "punchfruitsrouges":{ table: "tableauPunchRouge",     fn: htmlTableauPunchRougeColonnes,     label: "verre" },
+    "blueLagoon":      { table: "tableauBlueLagoon",      fn: htmlTableauBlueLagoonColonnes,     label: "verre" },
+    "mimosa":          { table: "tableauMimosa",          fn: htmlTableauMimosaColonnes,         label: "verre" },
+    "sidecarvintage":  { table: "tableauSidecar",         fn: htmlTableauSidecarColonnes,        label: "verre" },
+    "mocktailberrybliss":{ table: "tableauBerryBliss",    fn: htmlTableauBerryBlissColonnes,     label: "verre" },
+    "gingerlemondrop": { table: "tableauLemonDrop",       fn: htmlTableauLemonDropColonnes,      label: "verre" },
+    "mocktailcoconorchidee":{ table: "tableauCocoOrchidee",fn: htmlTableauCocoOrchideeColonnes, label: "verre" },
   };
 }
 
@@ -6454,6 +6952,58 @@ function htmlTableauSaumonCrouteColonnes(l) {
     <tr><th>🌿 Persil / herbes</th><td>${l.persil}</td></tr>
     <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
     <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+
+function htmlTableauTequilaSunriseColonnes(l) {
+  return col(`<tr><th>🌅 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥃 Tequila</th><td>${l.tequila}</td></tr><tr><th>🍊 Jus d'orange</th><td>${l.orange}</td></tr><tr><th>🍒 Grenadine</th><td>${l.grenadine}</td></tr>`);
+}
+function htmlTableauAperolRosaColonnes(l) {
+  return col(`<tr><th>🌸 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍊 Aperol</th><td>${l.aperol}</td></tr><tr><th>🍷 Rosé pétillant</th><td>${l.rose}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr><tr><th>🍓 Fraise</th><td>${l.fraise}</td></tr>`);
+}
+function htmlTableauEspressoMartiniColonnes(l) {
+  return col(`<tr><th>☕ Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr><tr><th>☕ Kahlúa / Tia Maria</th><td>${l.kahluaC}</td></tr><tr><th>☕ Espresso serré</th><td>${l.espresso}</td></tr><tr><th>🍬 Sirop de sucre</th><td>${l.sucre}</td></tr>`);
+}
+function htmlTableauPunchRougeColonnes(l) {
+  return col(`<tr><th>🍓 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr><tr><th>🍓 Fraises</th><td>${l.fraises}</td></tr><tr><th>🫐 Framboises</th><td>${l.framboises}</td></tr><tr><th>🍹 Jus fruits rouges</th><td>${l.jusMixte}</td></tr><tr><th>💧 Ginger beer</th><td>${l.gingerBeer}</td></tr>`);
+}
+function htmlTableauBlueLagoonColonnes(l) {
+  return col(`<tr><th>🫐 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr><tr><th>🫐 Curaçao bleu</th><td>${l.curacao}</td></tr><tr><th>💧 Limonade</th><td>${l.limonade}</td></tr><tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr>`);
+}
+function htmlTableauMimosaColonnes(l) {
+  return col(`<tr><th>🍾 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍾 Champagne / Prosecco</th><td>${l.champagne}</td></tr><tr><th>🍊 Jus d'orange frais</th><td>${l.orangeJus}</td></tr>`);
+}
+function htmlTableauSidecarColonnes(l) {
+  return col(`<tr><th>🥃 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥃 Cognac</th><td>${l.cognac}</td></tr><tr><th>🍊 Cointreau</th><td>${l.cointreau}</td></tr><tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr><tr><th>🍬 Sucre (rebord)</th><td>${l.sucre}</td></tr>`);
+}
+function htmlTableauBerryBlissColonnes(l) {
+  return col(`<tr><th>🫐 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🫐 Myrtilles</th><td>${l.myrtilles}</td></tr><tr><th>🍓 Framboises</th><td>${l.framboises}</td></tr><tr><th>🍒 Jus de cranberry</th><td>${l.cranberry}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
+}
+function htmlTableauLemonDropColonnes(l) {
+  return col(`<tr><th>🍋 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka citronnée</th><td>${l.vodka}</td></tr><tr><th>🍋 Jus de citron frais</th><td>${l.citron}</td></tr><tr><th>🫚 Sirop de gingembre</th><td>${l.gingembre}</td></tr><tr><th>🍬 Sucre (rebord)</th><td>${l.sucre}</td></tr>`);
+}
+function htmlTableauCocoOrchideeColonnes(l) {
+  return col(`<tr><th>🌺 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥥 Lait de coco</th><td>${l.laitCoco}</td></tr><tr><th>🌸 Eau de fleur d'oranger</th><td>${l.fleurOranger}</td></tr><tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
+}
+function htmlTableauPizzaProsciuttoColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍖 Prosciutto di Parma</th><td>${l.prosciutto}</td></tr><tr><th>🥬 Roquette</th><td>${l.roquette}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
+}
+function htmlTableauPizzaTruffeColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍄 Crème de truffe</th><td>${l.cremeTruffe}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr><tr><th>🍄 Huile de truffe</th><td>${l.huileTruffe}</td></tr>`);
+}
+function htmlTableauPizzaBiancaColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🌿 Asperges</th><td>${l.asperges}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
+}
+function htmlTableauCalzoneColonnes(l) {
+  return col(`<tr><th>🌙 Calzones</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍖 Jambon</th><td>${l.jambon}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>`);
+}
+function htmlTableauPizzaPoivronsColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🫑 Poivrons</th><td>${l.poivron}</td></tr><tr><th>🐟 Anchois</th><td>${l.anchois}</td></tr><tr><th>🫒 Olives noires</th><td>${l.olives}</td></tr>`);
+}
+function htmlTableauPizzaPatateColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr><tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr><tr><th>🧀 Pecorino</th><td>${l.pecorino}</td></tr><tr><th>🌿 Romarin</th><td>${l.romarin}</td></tr>`);
+}
+function htmlTableauPizzaBresilieneColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🌴 Cœurs de palmier</th><td>${l.palmier}</td></tr><tr><th>🌽 Maïs</th><td>${l.mais}</td></tr><tr><th>🫒 Olives</th><td>${l.olives}</td></tr>`);
 }
 
 function htmlTableauPizzaReineColonnes(l) {
@@ -7521,6 +8071,16 @@ function calculer() {
     "gintoniqmaison":     { table: "tableauGinTonic",       fn: htmlTableauGinTonicColonnes,     label: "verre" },
     "shrubframboisebasilic":{ table: "tableauShrub",        fn: htmlTableauShrubColonnes,        label: "verre" },
     "mocktailcoconananas":{ table: "tableauCocoAnanas",     fn: htmlTableauCocoAnanasColonnes,   label: "verre" },
+    "tequilasunrise":  { table: "tableauTequilaSunrise",  fn: htmlTableauTequilaSunriseColonnes, label: "verre" },
+    "aperolspritzrosa":{ table: "tableauAperolRosa",      fn: htmlTableauAperolRosaColonnes,     label: "verre" },
+    "espressoMartini": { table: "tableauEspressoMartini", fn: htmlTableauEspressoMartiniColonnes,label: "verre" },
+    "punchfruitsrouges":{ table: "tableauPunchRouge",     fn: htmlTableauPunchRougeColonnes,     label: "verre" },
+    "blueLagoon":      { table: "tableauBlueLagoon",      fn: htmlTableauBlueLagoonColonnes,     label: "verre" },
+    "mimosa":          { table: "tableauMimosa",          fn: htmlTableauMimosaColonnes,         label: "verre" },
+    "sidecarvintage":  { table: "tableauSidecar",         fn: htmlTableauSidecarColonnes,        label: "verre" },
+    "mocktailberrybliss":{ table: "tableauBerryBliss",    fn: htmlTableauBerryBlissColonnes,     label: "verre" },
+    "gingerlemondrop": { table: "tableauLemonDrop",       fn: htmlTableauLemonDropColonnes,      label: "verre" },
+    "mocktailcoconorchidee":{ table: "tableauCocoOrchidee",fn: htmlTableauCocoOrchideeColonnes, label: "verre" },
   };
   if (cocktailsTables[recette] && data[cocktailsTables[recette].table]) {
     const cfg = cocktailsTables[recette];
@@ -7861,6 +8421,23 @@ const prixCalories = {
   dosakerdosai:       { base: 4, baseLabel: "4 dosas",     prixTotal: 2.00,  calTotal: 800,  unite: "dosa"     },
   braiseboeuf_asiatique:{ base: 4,baseLabel: "4 personnes",prixTotal: 12.00, calTotal: 1600, unite: "personne" },
   paprikashpoulet:    { base: 4, baseLabel: "4 personnes", prixTotal: 7.00,  calTotal: 1600, unite: "personne" },
+  tequilasunrise:     { base: 1,  baseLabel: "1 verre",  prixTotal: 1.80, calTotal: 160,  unite: "verre"  },
+  aperolspritzrosa:   { base: 1,  baseLabel: "1 verre",  prixTotal: 1.50, calTotal: 110,  unite: "verre"  },
+  espressoMartini:    { base: 1,  baseLabel: "1 verre",  prixTotal: 2.00, calTotal: 160,  unite: "verre"  },
+  punchfruitsrouges:  { base: 8,  baseLabel: "8 verres", prixTotal: 6.00, calTotal: 1200, unite: "verre"  },
+  blueLagoon:         { base: 1,  baseLabel: "1 verre",  prixTotal: 1.50, calTotal: 140,  unite: "verre"  },
+  mimosa:             { base: 1,  baseLabel: "1 verre",  prixTotal: 2.00, calTotal: 100,  unite: "verre"  },
+  sidecarvintage:     { base: 1,  baseLabel: "1 verre",  prixTotal: 2.50, calTotal: 180,  unite: "verre"  },
+  mocktailberrybliss: { base: 1,  baseLabel: "1 verre",  prixTotal: 1.20, calTotal: 80,   unite: "verre"  },
+  gingerlemondrop:    { base: 1,  baseLabel: "1 verre",  prixTotal: 1.80, calTotal: 140,  unite: "verre"  },
+  mocktailcoconorchidee:{ base: 2,baseLabel: "2 verres", prixTotal: 1.00, calTotal: 140,  unite: "verre"  },
+  pizzaprosciuttoroquette:{ base: 2,baseLabel: "2 pizzas",prixTotal: 6.00,calTotal: 1200, unite: "pizza"  },
+  pizzatruffe:        { base: 2,  baseLabel: "2 pizzas", prixTotal: 8.00, calTotal: 1200, unite: "pizza"  },
+  pizzabiancoverdure: { base: 2,  baseLabel: "2 pizzas", prixTotal: 4.50, calTotal: 900,  unite: "pizza"  },
+  pizzacalzone:       { base: 2,  baseLabel: "2 calzones",prixTotal: 4.50,calTotal: 1400, unite: "calzone"},
+  pizzapoivrons:      { base: 2,  baseLabel: "2 pizzas", prixTotal: 4.00, calTotal: 1100, unite: "pizza"  },
+  pizzapatate:        { base: 2,  baseLabel: "2 pizzas", prixTotal: 3.50, calTotal: 1000, unite: "pizza"  },
+  pizzabresilienne:   { base: 2,  baseLabel: "2 pizzas", prixTotal: 4.50, calTotal: 1100, unite: "pizza"  },
   bibimbap:           { base: 2,  baseLabel: "2 bols",        prixTotal: 7.00,  calTotal: 1000, unite: "bol"      },
   moquecabresil:      { base: 4,  baseLabel: "4 personnes",   prixTotal: 9.00,  calTotal: 1200, unite: "personne" },
   rendangboeuf:       { base: 4,  baseLabel: "4 personnes",   prixTotal: 12.00, calTotal: 2000, unite: "personne" },
@@ -8639,6 +9216,23 @@ function choisirRecette(nom) {
     "parisbrestreinterpretation": "Paris-Brest",
     "ramenjaponais":     "Ramen Japonais",
     "bibimbap":          "Bibimbap",
+    "tequilasunrise":    "Tequila Sunrise",
+    "aperolspritzrosa":  "Spritz Rosé",
+    "espressoMartini":   "Espresso Martini",
+    "punchfruitsrouges": "Punch Fruits Rouges",
+    "blueLagoon":        "Blue Lagoon",
+    "mimosa":            "Mimosa",
+    "sidecarvintage":    "Sidecar",
+    "mocktailberrybliss":"Berry Bliss Mocktail",
+    "gingerlemondrop":   "Lemon Drop Gingembre",
+    "mocktailcoconorchidee":"Mocktail Coco Orchidée",
+    "pizzaprosciuttoroquette":"Pizza Prosciutto Roquette",
+    "pizzatruffe":       "Pizza à la Truffe",
+    "pizzabiancoverdure":"Pizza Bianca Verdure",
+    "pizzacalzone":      "Calzone",
+    "pizzapoivrons":     "Pizza Poivrons Anchois",
+    "pizzapatate":       "Pizza Patate Romarin",
+    "pizzabresilienne":  "Pizza Brésilienne",
     "moquecabresil":     "Moqueca Brésilienne",
     "rendangboeuf":      "Rendang de Bœuf",
     "tacoshijosepastor": "Tacos Al Pastor",
