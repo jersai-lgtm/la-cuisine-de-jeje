@@ -1139,40 +1139,6 @@ const recettes = {
     ]
   },
 
-  risottoprimavera: {
-    base: 4,
-    temps: "35 min",
-    niveau: "⭐⭐ Intermédiaire",
-    emoji: "🍚",
-    description: "Risotto primavera printanier — riz crémeux aux légumes de saison, parmesan et basilic frais. Un classique italien végétarien.",
-    tableauRisottoPrimavera: [
-      { nb:  1, riz: "80 g",  bouillon: "300 ml", courgette: "½",  petitspois: "50 g",  parmesan: "20 g" },
-      { nb:  2, riz: "160 g", bouillon: "500 ml", courgette: "1",  petitspois: "100 g", parmesan: "40 g" },
-      { nb:  3, riz: "240 g", bouillon: "750 ml", courgette: "1½", petitspois: "150 g", parmesan: "60 g" },
-      { nb:  4, riz: "320 g", bouillon: "1000 ml",courgette: "2",  petitspois: "200 g", parmesan: "80 g" },
-      { nb:  5, riz: "400 g", bouillon: "1250 ml",courgette: "2½", petitspois: "250 g", parmesan: "100 g"},
-      { nb:  6, riz: "480 g", bouillon: "1500 ml",courgette: "3",  petitspois: "300 g", parmesan: "120 g"},
-      { nb:  7, riz: "560 g", bouillon: "1750 ml", courgette: "3.5", petitspois: "350 g", parmesan: "140 g" },
-      { nb:  8, riz: "640 g", bouillon: "2000 ml", courgette: "4", petitspois: "400 g", parmesan: "160 g" },
-      { nb:  9, riz: "720 g", bouillon: "2250 ml", courgette: "4.5", petitspois: "450 g", parmesan: "180 g" },
-      { nb: 10, riz: "800 g", bouillon: "2500 ml", courgette: "5", petitspois: "500 g", parmesan: "200 g" },
-      { nb: 11, riz: "880 g", bouillon: "2750 ml", courgette: "5.5", petitspois: "550 g", parmesan: "220 g" },
-      { nb: 12, riz: "960 g", bouillon: "3000 ml", courgette: "6", petitspois: "600 g", parmesan: "240 g" },
-      { nb: 13, riz: "1040 g", bouillon: "3250 ml", courgette: "6.5", petitspois: "650 g", parmesan: "260 g" },
-      { nb: 14, riz: "1120 g", bouillon: "3500 ml", courgette: "7", petitspois: "700 g", parmesan: "280 g" },
-      { nb: 15, riz: "1200 g", bouillon: "3750 ml", courgette: "7.5", petitspois: "750 g", parmesan: "300 g" },
-    
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧅", titre: "Faire suer l'oignon",      detail: "Émincer finement l'oignon. Le faire suer dans beurre + huile d'olive 4 min sans coloration.", badge: null },
-      { icone: "🍚", titre: "Nacrer le riz",             detail: "Ajouter le riz arborio et remuer 2 min jusqu'à ce qu'il devienne translucide.", badge: null },
-      { icone: "🍷", titre: "Déglacer",                  detail: "Verser un verre de vin blanc sec. Remuer jusqu'à absorption.", badge: null },
-      { icone: "🥄", titre: "Ajouter le bouillon",       detail: "Ajouter le bouillon chaud louche par louche en remuant. Attendre l'absorption avant d'en rajouter.", badge: "⏱ 18 min" },
-      { icone: "🥒", titre: "Ajouter les légumes",       detail: "À mi-cuisson, ajouter la courgette en dés et les petits pois. Continuer à mouiller.", badge: null },
-      { icone: "🧀", titre: "Mantecatura",               detail: "Hors du feu, ajouter beurre froid et parmesan. Mélanger vigoureusement. Couvrir 2 min. Servir avec basilic frais.", badge: null },
-    ]
-  },
 
   saumongravlax: {
     base: 4,
