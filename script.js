@@ -6922,6 +6922,24 @@ function getIngredientsCourses(nom, personnes) {
     ]},
   };
 
+  // Chercher aussi dans les recettes avec tableauXxx en cherchant dynamiquement
+  if (!tableaux[nom]) {
+    // Chercher le premier tableau disponible dans la recette
+    const cleTbl = Object.keys(data).find(k => k.startsWith("tableau") && Array.isArray(data[k]));
+    if (cleTbl && data[cleTbl].length > 0) {
+      const ligne = data[cleTbl].find(l => l.nb === personnes) || data[cleTbl][Math.floor(data[cleTbl].length/2)];
+      if (ligne) {
+        Object.entries(ligne).forEach(([k, v]) => {
+          if (k === "nb") return;
+          // Convertir camelCase en label lisible
+          const label = k.replace(/([A-Z])/g, " $1").replace(/^./, s => s.toUpperCase()).trim();
+          ajout(label, v);
+        });
+        return result;
+      }
+    }
+  }
+
   const cfg = tableaux[nom];
   if (cfg && data[cfg.tbl]) {
     const ligne = data[cfg.tbl].find(l => l[cfg.key] === personnes)
@@ -6933,14 +6951,86 @@ function getIngredientsCourses(nom, personnes) {
   }
 
   // Fallback : ingredients standard
-  if (data.ingredients) {
+  if (data.ingredients && Object.keys(data.ingredients).length > 0) {
     const ratio = personnes / (data.base || 4);
     Object.entries(data.ingredients).forEach(([k, v]) => {
       ajout(k, typeof v === "number" ? Math.round(v * ratio * 10) / 10 : v);
     });
+    return result;
+  }
+
+  // Fallback universel : chercher dans toutes les tables globales
+  // et extraire les ingrédients depuis le tableau de la recette
+  const toutesLesTables = [
+    window._nouvellesRecettesTables,
+    window.mondeClassiquesTablesGlobal,
+    window.hellofreshTablesGlobal,
+    window.cocktailsTablesGlobal,
+  ].filter(Boolean);
+
+  for (const tables of toutesLesTables) {
+    if (tables[nom] && data[tables[nom].table]) {
+      const tbl = data[tables[nom].table];
+      const ligne = tbl.find(l => l.nb === personnes) || tbl[Math.floor(tbl.length / 2)];
+      if (ligne) {
+        // Extraire toutes les clés non-nb comme ingrédients
+        Object.entries(ligne).forEach(([k, v]) => {
+          if (k === "nb") return;
+          const label = k.charAt(0).toUpperCase() + k.slice(1);
+          ajout(label, v);
+        });
+      }
+      return result;
+    }
+  }
+
+  // Dernier recours : ingredientsFixes
+  if (data.ingredientsFixes) {
+    data.ingredientsFixes.forEach(([k, v]) => {
+      if (!k.startsWith("---")) ajout(k, v);
+    });
   }
 
   return result;
+}
+
+function afficherCoursesRecette(nom, personnes) {
+  const id = "courses-recette-" + nom;
+  const bloc = document.getElementById(id);
+  if (!bloc) return;
+
+  // Toggle
+  if (bloc.style.display !== "none") {
+    bloc.style.display = "none";
+    return;
+  }
+
+  const ingrs = getIngredientsCourses(nom, personnes);
+  const entries = Object.entries(ingrs).filter(([k]) => !k.startsWith("---"));
+
+  if (entries.length === 0) {
+    bloc.innerHTML = '<p style="color:#aaa;font-size:13px;text-align:center;padding:10px">Liste non disponible pour cette recette.</p>';
+    bloc.style.display = "block";
+    return;
+  }
+
+  let html = `<div class="courses-recette-liste">`;
+  entries.sort((a,b) => a[0].localeCompare(b[0])).forEach(([nom, data]) => {
+    let qteStr = "";
+    if (typeof data.qte === "number" && data.qte > 0) {
+      qteStr = data.qte % 1 === 0 ? `${data.qte}` : `${data.qte.toFixed(1)}`;
+    } else if (data.raw) {
+      qteStr = data.raw;
+    }
+    html += `<div class="courses-recette-item">
+      <span class="courses-recette-nom">${nom}</span>
+      <span class="courses-recette-qte">${qteStr}</span>
+    </div>`;
+  });
+  html += "</div>";
+
+  bloc.innerHTML = html;
+  bloc.style.display = "block";
 }
 
 function htmlPrixCalories(nom, quantite) {
@@ -6978,6 +7068,10 @@ function htmlPrixCalories(nom, quantite) {
       </div>
     </div>
     <p class="prix-cal-note">* Prix moyens supermarché France 2025</p>
+    <button class="btn-courses-recette" onclick="afficherCoursesRecette('${nom}', ${quantite})">
+      🛒 Liste de courses
+    </button>
+    <div class="courses-recette-bloc" id="courses-recette-${nom}" style="display:none"></div>
   `;
 }
 
