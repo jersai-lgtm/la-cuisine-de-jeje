@@ -29,7 +29,7 @@
 <!-- HEADER -->
 <header>
   <h1>👨‍🍳 La Cuisine de Jéjé</h1>
-  <p>Mes recettes du quotidien</p>
+  <p id="nb-recettes">🍽️ 214 recettes</p>
 </header>
 
 <!-- BARRE DE RECHERCHE -->
@@ -2295,6 +2295,418 @@
     </div>
   </div>
 
+
+  <!-- 20 NOUVELLES RECETTES -->
+  <div class="carte" data-cat="pizzas" data-pays="italie" onclick="ouvrirFiche('pizzachorizo', 'calc-pizzachorizo')">
+    <img src="images/pizzachorizo.webp" alt="Pizza Chorizo">
+    <div class="carte-info">
+      <h2>🌶️ Pizza Chorizo</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-pizzachorizo">
+        <button class="calc-btn" onclick="calculerCarte('pizzachorizo', 'calc-pizzachorizo')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('pouletteriyaki', 'calc-pouletteriyaki')">
+    <img src="images/pouletteriyaki.webp" alt="Poulet Teriyaki">
+    <div class="carte-info">
+      <h2>🍗 Poulet Teriyaki</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pouletteriyaki">
+        <button class="calc-btn" onclick="calculerCarte('pouletteriyaki', 'calc-pouletteriyaki')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="thailande" onclick="ouvrirFiche('curryverthai', 'calc-curryverthai')">
+    <img src="images/curryverthai.webp" alt="Curry Vert Thaï">
+    <div class="carte-info">
+      <h2>🍛 Curry Vert Thaï</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-curryverthai">
+        <button class="calc-btn" onclick="calculerCarte('curryverthai', 'calc-curryverthai')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="usa" onclick="ouvrirFiche('chiliconcarneV', 'calc-chiliconcarneV')">
+    <img src="images/chiliconcarneV.webp" alt="Chili Con Carne">
+    <div class="carte-info">
+      <h2>🌶️ Chili Con Carne</h2>
+      <p>⏱ 1h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-chiliconcarneV">
+        <button class="calc-btn" onclick="calculerCarte('chiliconcarneV', 'calc-chiliconcarneV')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="coree" onclick="ouvrirFiche('koreanfriedchicken', 'calc-koreanfriedchicken')">
+    <img src="images/koreanfriedchicken.webp" alt="Korean Fried Chicken">
+    <div class="carte-info">
+      <h2>🍗 Korean Fried Chicken</h2>
+      <p>⏱ 35 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-koreanfriedchicken">
+        <button class="calc-btn" onclick="calculerCarte('koreanfriedchicken', 'calc-koreanfriedchicken')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('risottoMilanese', 'calc-risottoMilanese')">
+    <img src="images/risottoMilanese.webp" alt="Risotto Milanese">
+    <div class="carte-info">
+      <h2>🌼 Risotto Milanese</h2>
+      <p>⏱ 35 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-risottoMilanese">
+        <button class="calc-btn" onclick="calculerCarte('risottoMilanese', 'calc-risottoMilanese')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('soupeAziatique', 'calc-soupeAziatique')">
+    <img src="images/soupeAziatique.webp" alt="Soupe Asiatique">
+    <div class="carte-info">
+      <h2>🍲 Soupe Asiatique</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-soupeAziatique">
+        <button class="calc-btn" onclick="calculerCarte('soupeAziatique', 'calc-soupeAziatique')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="salades" data-pays="france" onclick="ouvrirFiche('tartareSaumon', 'calc-tartareSaumon')">
+    <img src="images/tartareSaumon.webp" alt="Tartare de Saumon">
+    <div class="carte-info">
+      <h2>🐟 Tartare de Saumon</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-tartareSaumon">
+        <button class="calc-btn" onclick="calculerCarte('tartareSaumon', 'calc-tartareSaumon')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="italie" onclick="ouvrirFiche('tiramisufraise', 'calc-tiramisufraise')">
+    <img src="images/tiramisufraise.webp" alt="Tiramisu aux Fraises">
+    <div class="carte-info">
+      <h2>🍓 Tiramisu aux Fraises</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-tiramisufraise">
+        <button class="calc-btn" onclick="calculerCarte('tiramisufraise', 'calc-tiramisufraise')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('pouletCocoLemon', 'calc-pouletCocoLemon')">
+    <img src="images/pouletCocoLemon.webp" alt="Poulet Coco Citron">
+    <div class="carte-info">
+      <h2>🍋 Poulet Coco Citron</h2>
+      <p>⏱ 40 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pouletCocoLemon">
+        <button class="calc-btn" onclick="calculerCarte('pouletCocoLemon', 'calc-pouletCocoLemon')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" data-pays="france" onclick="ouvrirFiche('crepesSucrées', 'calc-crepesSucrées')">
+    <img src="images/crepesSucrées.webp" alt="Crêpes Sucrées">
+    <div class="carte-info">
+      <h2>🍮 Crêpes Sucrées</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-crepesSucrées">
+        <button class="calc-btn" onclick="calculerCarte('crepesSucrées', 'calc-crepesSucrées')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="salades" data-pays="france" onclick="ouvrirFiche('poireauVinaigrette', 'calc-poireauVinaigrette')">
+    <img src="images/poireauVinaigrette.webp" alt="Poireaux Vinaigrette">
+    <div class="carte-info">
+      <h2>🥬 Poireaux Vinaigrette</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-poireauVinaigrette">
+        <button class="calc-btn" onclick="calculerCarte('poireauVinaigrette', 'calc-poireauVinaigrette')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('spaetzle', 'calc-spaetzle')">
+    <img src="images/spaetzle.webp" alt="Spätzle">
+    <div class="carte-info">
+      <h2>🍜 Spätzle</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-spaetzle">
+        <button class="calc-btn" onclick="calculerCarte('spaetzle', 'calc-spaetzle')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="usa" onclick="ouvrirFiche('wagyuBurger', 'calc-wagyuBurger')">
+    <img src="images/wagyuBurger.webp" alt="Burger Wagyu">
+    <div class="carte-info">
+      <h2>🍔 Burger Wagyu</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-wagyuBurger">
+        <button class="calc-btn" onclick="calculerCarte('wagyuBurger', 'calc-wagyuBurger')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('lemonPasta', 'calc-lemonPasta')">
+    <img src="images/lemonPasta.webp" alt="Lemon Pasta">
+    <div class="carte-info">
+      <h2>🍋 Lemon Pasta</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-lemonPasta">
+        <button class="calc-btn" onclick="calculerCarte('lemonPasta', 'calc-lemonPasta')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('soupeMinestrone', 'calc-soupeMinestrone')">
+    <img src="images/soupeMinestrone.webp" alt="Minestrone">
+    <div class="carte-info">
+      <h2>🥣 Minestrone</h2>
+      <p>⏱ 45 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-soupeMinestrone">
+        <button class="calc-btn" onclick="calculerCarte('soupeMinestrone', 'calc-soupeMinestrone')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 20 NOUVELLES RECETTES -->
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('blanquetteveau', 'calc-blanquetteveau')">
+    <img src="images/blanquetteveau.webp" alt="Blanquette de Veau">
+    <div class="carte-info">
+      <h2>🥩 Blanquette de Veau</h2>
+      <p>⏱ 1h30 • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-blanquetteveau">
+        <button class="calc-btn" onclick="calculerCarte('blanquetteveau', 'calc-blanquetteveau')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('navarin', 'calc-navarin')">
+    <img src="images/navarin.webp" alt="Navarin d'Agneau">
+    <div class="carte-info">
+      <h2>🐑 Navarin d'Agneau</h2>
+      <p>⏱ 1h30 • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-navarin">
+        <button class="calc-btn" onclick="calculerCarte('navarin', 'calc-navarin')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="france" onclick="ouvrirFiche('camembertRoti', 'calc-camembertRoti')">
+    <img src="images/camembertRoti.webp" alt="Camembert Rôti">
+    <div class="carte-info">
+      <h2>🧀 Camembert Rôti</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-camembertRoti">
+        <button class="calc-btn" onclick="calculerCarte('camembertRoti', 'calc-camembertRoti')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('tarteFlambee', 'calc-tarteFlambee')">
+    <img src="images/tarteFlambee.webp" alt="Tarte Flambée">
+    <div class="carte-info">
+      <h2>🥧 Tarte Flambée</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-tarteFlambee">
+        <button class="calc-btn" onclick="calculerCarte('tarteFlambee', 'calc-tarteFlambee')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('pouletMisoGingembre', 'calc-pouletMisoGingembre')">
+    <img src="images/pouletMisoGingembre.webp" alt="Poulet Miso Gingembre">
+    <div class="carte-info">
+      <h2>🍗 Poulet Miso Gingembre</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pouletMisoGingembre">
+        <button class="calc-btn" onclick="calculerCarte('pouletMisoGingembre', 'calc-pouletMisoGingembre')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="chine" onclick="ouvrirFiche('noodlesWok', 'calc-noodlesWok')">
+    <img src="images/noodlesWok.webp" alt="Noodles Sautés Wok">
+    <div class="carte-info">
+      <h2>🥢 Noodles Sautés Wok</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-noodlesWok">
+        <button class="calc-btn" onclick="calculerCarte('noodlesWok', 'calc-noodlesWok')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="senegal" onclick="ouvrirFiche('maffeSenegal', 'calc-maffeSenegal')">
+    <img src="images/maffeSenegal.webp" alt="Maafé Poulet">
+    <div class="carte-info">
+      <h2>🥜 Maafé Poulet</h2>
+      <p>⏱ 1h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-maffeSenegal">
+        <button class="calc-btn" onclick="calculerCarte('maffeSenegal', 'calc-maffeSenegal')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="salades" data-pays="espagne" onclick="ouvrirFiche('gazpachoMelon', 'calc-gazpachoMelon')">
+    <img src="images/gazpachoMelon.webp" alt="Gaspacho de Melon">
+    <div class="carte-info">
+      <h2>🍈 Gaspacho de Melon</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-gazpachoMelon">
+        <button class="calc-btn" onclick="calculerCarte('gazpachoMelon', 'calc-gazpachoMelon')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="france" onclick="ouvrirFiche('wafflesSales', 'calc-wafflesSales')">
+    <img src="images/wafflesSales.webp" alt="Gaufres Salées">
+    <div class="carte-info">
+      <h2>🧇 Gaufres Salées</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-wafflesSales">
+        <button class="calc-btn" onclick="calculerCarte('wafflesSales', 'calc-wafflesSales')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('choucroute', 'calc-choucroute')">
+    <img src="images/choucroute.webp" alt="Choucroute Garnie">
+    <div class="carte-info">
+      <h2>🥬 Choucroute Garnie</h2>
+      <p>⏱ 2h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-choucroute">
+        <button class="calc-btn" onclick="calculerCarte('choucroute', 'calc-choucroute')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" data-pays="france" onclick="ouvrirFiche('sconeBritish', 'calc-sconeBritish')">
+    <img src="images/sconeBritish.webp" alt="Scones">
+    <div class="carte-info">
+      <h2>🫖 Scones</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="8" min="1" max="15" class="calc-input" id="calc-sconeBritish">
+        <button class="calc-btn" onclick="calculerCarte('sconeBritish', 'calc-sconeBritish')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="espagne" onclick="ouvrirFiche('calamarsRomaine', 'calc-calamarsRomaine')">
+    <img src="images/calamarsRomaine.webp" alt="Calamars à la Romaine">
+    <div class="carte-info">
+      <h2>🦑 Calamars à la Romaine</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-calamarsRomaine">
+        <button class="calc-btn" onclick="calculerCarte('calamarsRomaine', 'calc-calamarsRomaine')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="liban" onclick="ouvrirFiche('baklava', 'calc-baklava')">
+    <img src="images/baklava.webp" alt="Baklava">
+    <div class="carte-info">
+      <h2>🍯 Baklava</h2>
+      <p>⏱ 1h30 • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="12" min="1" max="15" class="calc-input" id="calc-baklava">
+        <button class="calc-btn" onclick="calculerCarte('baklava', 'calc-baklava')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="usa" onclick="ouvrirFiche('eggsBenedict', 'calc-eggsBenedict')">
+    <img src="images/eggsBenedict.webp" alt="Eggs Benedict">
+    <div class="carte-info">
+      <h2>🥚 Eggs Benedict</h2>
+      <p>⏱ 30 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-eggsBenedict">
+        <button class="calc-btn" onclick="calculerCarte('eggsBenedict', 'calc-eggsBenedict')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="chine" onclick="ouvrirFiche('porkBelly', 'calc-porkBelly')">
+    <img src="images/porkBelly.webp" alt="Pork Belly Caramélisé">
+    <div class="carte-info">
+      <h2>🐷 Pork Belly Caramélisé</h2>
+      <p>⏱ 3h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-porkBelly">
+        <button class="calc-btn" onclick="calculerCarte('porkBelly', 'calc-porkBelly')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('veloutePoiron', 'calc-veloutePoiron')">
+    <img src="images/veloutePoiron.webp" alt="Velouté de Potiron">
+    <div class="carte-info">
+      <h2>🎃 Velouté de Potiron</h2>
+      <p>⏱ 40 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-veloutePoiron">
+        <button class="calc-btn" onclick="calculerCarte('veloutePoiron', 'calc-veloutePoiron')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('chocolatChaud', 'calc-chocolatChaud')">
+    <img src="images/chocolatChaud.webp" alt="Chocolat Chaud">
+    <div class="carte-info">
+      <h2>☕ Chocolat Chaud</h2>
+      <p>⏱ 10 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-chocolatChaud">
+        <button class="calc-btn" onclick="calculerCarte('chocolatChaud', 'calc-chocolatChaud')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="healthy" data-pays="france" onclick="ouvrirFiche('granolaMaison', 'calc-granolaMaison')">
+    <img src="images/granolaMaison.webp" alt="Granola Maison">
+    <div class="carte-info">
+      <h2>🌾 Granola Maison</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-granolaMaison">
+        <button class="calc-btn" onclick="calculerCarte('granolaMaison', 'calc-granolaMaison')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <!-- SECTION MENU THÉMATIQUE -->
@@ -2565,6 +2977,42 @@
     <option value="pizzapatate">Pizza Patate Romarin</option>
     <option value="pizzabresilienne">Pizza Brésilienne</option>
     <option value="lasagneviande">Lasagnes Bolognaise</option>
+  
+    <option value="pizzachorizo">Pizza Chorizo</option>
+    <option value="pouletteriyaki">Poulet Teriyaki</option>
+    <option value="curryverthai">Curry Vert Thaï</option>
+    <option value="chiliconcarneV">Chili Con Carne</option>
+    <option value="koreanfriedchicken">Korean Fried Chicken</option>
+    <option value="risottoMilanese">Risotto Milanese</option>
+    <option value="soupeAziatique">Soupe Asiatique</option>
+    <option value="tartareSaumon">Tartare de Saumon</option>
+    <option value="tiramisufraise">Tiramisu aux Fraises</option>
+    <option value="pouletCocoLemon">Poulet Coco Citron</option>
+    <option value="crepesSucrées">Crêpes Sucrées</option>
+    <option value="poireauVinaigrette">Poireaux Vinaigrette</option>
+    <option value="spaetzle">Spätzle</option>
+    <option value="wagyuBurger">Burger Wagyu</option>
+    <option value="lemonPasta">Lemon Pasta</option>
+    <option value="soupeMinestrone">Minestrone</option>
+  
+    <option value="blanquetteveau">Blanquette de Veau</option>
+    <option value="navarin">Navarin d'Agneau</option>
+    <option value="camembertRoti">Camembert Rôti</option>
+    <option value="tarteFlambee">Tarte Flambée</option>
+    <option value="pouletMisoGingembre">Poulet Miso Gingembre</option>
+    <option value="noodlesWok">Noodles Sautés Wok</option>
+    <option value="maffeSenegal">Maafé Poulet</option>
+    <option value="gazpachoMelon">Gaspacho de Melon</option>
+    <option value="wafflesSales">Gaufres Salées</option>
+    <option value="choucroute">Choucroute Garnie</option>
+    <option value="sconeBritish">Scones</option>
+    <option value="calamarsRomaine">Calamars à la Romaine</option>
+    <option value="baklava">Baklava</option>
+    <option value="eggsBenedict">Eggs Benedict</option>
+    <option value="porkBelly">Pork Belly Caramélisé</option>
+    <option value="veloutePoiron">Velouté de Potiron</option>
+    <option value="chocolatChaud">Chocolat Chaud</option>
+    <option value="granolaMaison">Granola Maison</option>
   </select>
   <input type="number" id="personnes" value="4" min="1">
   <button onclick="calculer()">Calculer</button>
@@ -3264,6 +3712,40 @@ function getNomRecette(key) {
     "mocktailcoconananas":   "Mocktail Coco Ananas",
     "painburger":        "Pain Burger (Buns)",
     "galettetacos":      "Galette à Tacos",
+    "blanquetteveau": "Blanquette de Veau",
+    "navarin": "Navarin d'Agneau",
+    "camembertRoti": "Camembert Rôti",
+    "tarteFlambee": "Tarte Flambée",
+    "pouletMisoGingembre": "Poulet Miso Gingembre",
+    "noodlesWok": "Noodles Sautés Wok",
+    "maffeSenegal": "Maafé Poulet",
+    "gazpachoMelon": "Gaspacho de Melon",
+    "wafflesSales": "Gaufres Salées",
+    "choucroute": "Choucroute Garnie",
+    "sconeBritish": "Scones",
+    "calamarsRomaine": "Calamars à la Romaine",
+    "baklava": "Baklava",
+    "eggsBenedict": "Eggs Benedict",
+    "porkBelly": "Pork Belly Caramélisé",
+    "veloutePoiron": "Velouté de Potiron",
+    "chocolatChaud": "Chocolat Chaud",
+    "granolaMaison": "Granola Maison",
+    "pizzachorizo": "Pizza Chorizo",
+    "pouletteriyaki": "Poulet Teriyaki",
+    "curryverthai": "Curry Vert Thaï",
+    "chiliconcarneV": "Chili Con Carne",
+    "koreanfriedchicken": "Korean Fried Chicken",
+    "risottoMilanese": "Risotto Milanese",
+    "soupeAziatique": "Soupe Asiatique",
+    "tartareSaumon": "Tartare de Saumon",
+    "tiramisufraise": "Tiramisu aux Fraises",
+    "pouletCocoLemon": "Poulet Coco Citron",
+    "crepesSucrées": "Crêpes Sucrées",
+    "poireauVinaigrette": "Poireaux Vinaigrette",
+    "spaetzle": "Spätzle",
+    "wagyuBurger": "Burger Wagyu",
+    "lemonPasta": "Lemon Pasta",
+    "soupeMinestrone": "Minestrone",
     "lasagneviande":     "Lasagnes Bolognaise",
     "souvlaki":          "Souvlaki",
     "butterchicken":     "Butter Chicken",
@@ -3560,5 +4042,12 @@ function afficherSection(section, btn) {
 }
 </script>
 
+<script>
+  window.addEventListener('load', function() {
+    const nb = typeof recettes !== 'undefined' ? Object.keys(recettes).length : 0;
+    const el = document.getElementById('nb-recettes');
+    if (el && nb > 0) el.textContent = '🍽️ ' + nb + ' recettes';
+  });
+</script>
 </body>
 </html>
