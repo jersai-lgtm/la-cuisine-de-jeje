@@ -2142,9 +2142,12 @@ function calculerCarteBrioche(version) {
 // ==============================
 // PLANIFICATEUR DE MENUS
 // ==============================
+// Mémorisation de l'onglet actif
+window._planTabActif = "semaine";
 
 // Switch entre onglets planificateur
 function switchPlanTab(tab) {
+  window._planTabActif = tab;
   const sectionSemaine = document.getElementById("section-planificateur");
   const sectionFestif  = document.getElementById("section-festif");
 
@@ -2421,12 +2424,19 @@ function afficherCoursesFestif() {
 function chargerMenuFestifAuDemarrage() {
   try {
     const raw = sessionStorage.getItem("cuisineJeje_festif");
-    if (!raw) return;
+    if (!raw) {
+      document.getElementById("festif-form").style.display = "block";
+      document.getElementById("festif-result").style.display = "none";
+      document.getElementById("festif-courses").style.display = "none";
+      return;
+    }
     const saved = JSON.parse(raw);
     menuFestifActuel = saved.menu;
     document.getElementById("festif-form").style.display = "none";
     afficherMenuFestif(saved.menu, saved.personnes);
-  } catch(e) {}
+  } catch(e) {
+    document.getElementById("festif-form").style.display = "block";
+  }
 }
 
 let menusSemaine = null;
@@ -2722,12 +2732,18 @@ function afficherMenusSemaine(menus, personnes) {
 }
 
 function ouvrirRecettePlan(recetteKey, personnes) {
+  // Mémoriser l'onglet actif (planificateur ou festif)
+  const tabActif = document.getElementById("section-festif") &&
+    document.getElementById("section-festif").style.display !== "none" ? "festif" : "semaine";
+  window._planTabActif = tabActif;
+
+  // Aller sur accueil
   document.getElementById("personnes").value = personnes;
-  // Aller sur l'onglet accueil et ouvrir la fiche
   document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
   document.querySelectorAll(".nav-btn")[0].classList.add("active");
   afficherSection("accueil", document.querySelectorAll(".nav-btn")[0]);
-  setTimeout(() => choisirRecette(recetteKey), 100);
+  // Ouvrir la fiche après que la section est affichée
+  setTimeout(() => choisirRecette(recetteKey), 150);
 }
 
 function afficherCourses() {
@@ -2933,13 +2949,27 @@ function afficherSection(section, btn) {
     calc.style.display = "none";
     cartes.style.display = "none";
     menuCats.style.display = "none";
-    planif.style.display = "block";
-    document.getElementById("section-festif").style.display = "none";
     searchBar.style.display = "none";
     document.getElementById("menu-categories").style.display = "none";
     document.getElementById("menu-pays").style.display = "none";
-    chargerMenusAuDemarrage();
-    chargerMenuFestifAuDemarrage();
+
+    // Restaurer l'onglet qui était actif avant de quitter
+    const tabActif = window._planTabActif || "semaine";
+    if (tabActif === "festif") {
+      planif.style.display = "none";
+      document.getElementById("section-festif").style.display = "block";
+      chargerMenuFestifAuDemarrage();
+      // Mettre à jour les onglets
+      document.getElementById("tab-semaine") && document.getElementById("tab-semaine").classList.remove("active");
+      document.getElementById("tab-semaine2") && document.getElementById("tab-semaine2").classList.remove("active");
+      document.getElementById("tab-festif") && document.getElementById("tab-festif").classList.add("active");
+      document.getElementById("tab-festif2") && document.getElementById("tab-festif2").classList.add("active");
+    } else {
+      planif.style.display = "block";
+      document.getElementById("section-festif").style.display = "none";
+      chargerMenusAuDemarrage();
+      chargerMenuFestifAuDemarrage();
+    }
   } else {
     calc.style.display = "none";
     cartes.style.display = "";
