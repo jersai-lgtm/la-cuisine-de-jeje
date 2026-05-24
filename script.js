@@ -2848,6 +2848,503 @@ const recettes = {
       { icone: "🥥", titre: "Servir",                   detail: "Verser dans des grands verres avec glaçons. Décorer d'une tranche d'ananas, noix de coco râpée et paille. Servir immédiatement !", badge: null },
     ]
   },
+
+  pizzareine: {
+    base: 2,
+    temps: "20 min + 48h pâte",
+    niveau: "⭐ Facile",
+    emoji: "🍕",
+    description: "La Pizza Reine — jambon, champignons, mozzarella et sauce tomate. La classique des pizzerias françaises, simple et gourmande.",
+    tableauPizzaReine: [
+      { nb:  1, pate: "1 pâton",  tomates: "80 g",  mozza: "80 g",  jambon: "50 g",  champignons: "60 g"  },
+      { nb:  2, pate: "2 pâtons", tomates: "160 g", mozza: "160 g", jambon: "100 g", champignons: "120 g" },
+      { nb:  3, pate: "3 pâtons", tomates: "240 g", mozza: "240 g", jambon: "150 g", champignons: "180 g" },
+      { nb:  4, pate: "4 pâtons", tomates: "320 g", mozza: "320 g", jambon: "200 g", champignons: "240 g" },
+      { nb:  5, pate: "5 pâtons", tomates: "400 g", mozza: "400 g", jambon: "250 g", champignons: "300 g" },
+      { nb:  6, pate: "6 pâtons", tomates: "480 g", mozza: "480 g", jambon: "300 g", champignons: "360 g" },
+      { nb:  7, pate: "7 pâtons", tomates: "560 g", mozza: "560 g", jambon: "350 g", champignons: "420 g" },
+      { nb:  8, pate: "8 pâtons", tomates: "640 g", mozza: "640 g", jambon: "400 g", champignons: "480 g" },
+      { nb:  9, pate: "9 pâtons", tomates: "720 g", mozza: "720 g", jambon: "450 g", champignons: "540 g" },
+      { nb: 10, pate: "10 pâtons",tomates: "800 g", mozza: "800 g", jambon: "500 g", champignons: "600 g" },
+      { nb: 11, pate: "11 pâtons",tomates: "880 g", mozza: "880 g", jambon: "550 g", champignons: "660 g" },
+      { nb: 12, pate: "12 pâtons",tomates: "960 g", mozza: "960 g", jambon: "600 g", champignons: "720 g" },
+      { nb: 13, pate: "13 pâtons",tomates: "1040 g",mozza: "1040 g",jambon: "650 g", champignons: "780 g" },
+      { nb: 14, pate: "14 pâtons",tomates: "1120 g",mozza: "1120 g",jambon: "700 g", champignons: "840 g" },
+      { nb: 15, pate: "15 pâtons",tomates: "1200 g",mozza: "1200 g",jambon: "750 g", champignons: "900 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Préparer la pâte",         detail: "Utiliser la recette de pâte à pizza de l'appli. Sortir les pâtons 1h avant. Étaler à la main.", badge: null },
+      { icone: "🍅", titre: "Sauce tomate",             detail: "Étaler la sauce tomate assaisonnée en spirale sur la pâte.", badge: null },
+      { icone: "🧀", titre: "Mozzarella",               detail: "Répartir la mozzarella déchirée ou râpée.", badge: null },
+      { icone: "🍖", titre: "Garnitures",               detail: "Disposer le jambon en morceaux et les champignons émincés (crus ou poêlés).", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Four préchauffé au maximum sur pierre ou plaque. Cuire jusqu'à bords dorés et fromage bouillonnant.", badge: "⏱ 7-10 min à 280°C" },
+    ]
+  },
+
+  pizzaquattroformaggi: {
+    base: 2,
+    temps: "20 min + 48h pâte",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "La Pizza Quattro Formaggi — quatre fromages italiens fondus sur une base crème. Pour les amoureux du fromage !",
+    tableauPizzaFormaggi: [
+      { nb:  1, pate: "1 pâton",  mozza: "50 g",  gorgonzola: "30 g", parmesan: "20 g", ricotta: "40 g",  creme: "30 ml" },
+      { nb:  2, pate: "2 pâtons", mozza: "100 g", gorgonzola: "60 g", parmesan: "40 g", ricotta: "80 g",  creme: "60 ml" },
+      { nb:  3, pate: "3 pâtons", mozza: "150 g", gorgonzola: "90 g", parmesan: "60 g", ricotta: "120 g", creme: "90 ml" },
+      { nb:  4, pate: "4 pâtons", mozza: "200 g", gorgonzola: "120 g",parmesan: "80 g", ricotta: "160 g", creme: "120 ml"},
+      { nb:  5, pate: "5 pâtons", mozza: "250 g", gorgonzola: "150 g",parmesan: "100 g",ricotta: "200 g", creme: "150 ml"},
+      { nb:  6, pate: "6 pâtons", mozza: "300 g", gorgonzola: "180 g",parmesan: "120 g",ricotta: "240 g", creme: "180 ml"},
+      { nb:  7, pate: "7 pâtons", mozza: "350 g", gorgonzola: "210 g",parmesan: "140 g",ricotta: "280 g", creme: "210 ml"},
+      { nb:  8, pate: "8 pâtons", mozza: "400 g", gorgonzola: "240 g",parmesan: "160 g",ricotta: "320 g", creme: "240 ml"},
+      { nb:  9, pate: "9 pâtons", mozza: "450 g", gorgonzola: "270 g",parmesan: "180 g",ricotta: "360 g", creme: "270 ml"},
+      { nb: 10, pate: "10 pâtons",mozza: "500 g", gorgonzola: "300 g",parmesan: "200 g",ricotta: "400 g", creme: "300 ml"},
+      { nb: 11, pate: "11 pâtons",mozza: "550 g", gorgonzola: "330 g",parmesan: "220 g",ricotta: "440 g", creme: "330 ml"},
+      { nb: 12, pate: "12 pâtons",mozza: "600 g", gorgonzola: "360 g",parmesan: "240 g",ricotta: "480 g", creme: "360 ml"},
+      { nb: 13, pate: "13 pâtons",mozza: "650 g", gorgonzola: "390 g",parmesan: "260 g",ricotta: "520 g", creme: "390 ml"},
+      { nb: 14, pate: "14 pâtons",mozza: "700 g", gorgonzola: "420 g",parmesan: "280 g",ricotta: "560 g", creme: "420 ml"},
+      { nb: 15, pate: "15 pâtons",mozza: "750 g", gorgonzola: "450 g",parmesan: "300 g",ricotta: "600 g", creme: "450 ml"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Pâte et base crème",       detail: "Étaler la pâte. Napper d'une fine couche de crème fraîche à la place de la tomate.", badge: null },
+      { icone: "🧀", titre: "Quatre fromages",          detail: "Disposer par zones mozzarella, gorgonzola en morceaux, ricotta en petites cuillerées et parmesan râpé. Un généreux filet d'huile d'olive.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Four à maximum. Cuire jusqu'à ce que les fromages soient fondus et dorés. Finir avec un filet de miel si souhaité.", badge: "⏱ 7-10 min à 280°C" },
+    ]
+  },
+
+  pizzadiavola: {
+    base: 2,
+    temps: "20 min + 48h pâte",
+    niveau: "⭐ Facile",
+    emoji: "🌶️",
+    description: "La Pizza Diavola — salami piquant, nduja, mozzarella et piment. Pour les amateurs de sensations fortes !",
+    tableauPizzaDiavola: [
+      { nb:  1, pate: "1 pâton",  tomates: "80 g",  mozza: "80 g",  salami: "50 g",  nduja: "20 g",  piment: "½" },
+      { nb:  2, pate: "2 pâtons", tomates: "160 g", mozza: "160 g", salami: "100 g", nduja: "40 g",  piment: "1" },
+      { nb:  3, pate: "3 pâtons", tomates: "240 g", mozza: "240 g", salami: "150 g", nduja: "60 g",  piment: "1" },
+      { nb:  4, pate: "4 pâtons", tomates: "320 g", mozza: "320 g", salami: "200 g", nduja: "80 g",  piment: "2" },
+      { nb:  5, pate: "5 pâtons", tomates: "400 g", mozza: "400 g", salami: "250 g", nduja: "100 g", piment: "2" },
+      { nb:  6, pate: "6 pâtons", tomates: "480 g", mozza: "480 g", salami: "300 g", nduja: "120 g", piment: "3" },
+      { nb:  7, pate: "7 pâtons", tomates: "560 g", mozza: "560 g", salami: "350 g", nduja: "140 g", piment: "3" },
+      { nb:  8, pate: "8 pâtons", tomates: "640 g", mozza: "640 g", salami: "400 g", nduja: "160 g", piment: "4" },
+      { nb:  9, pate: "9 pâtons", tomates: "720 g", mozza: "720 g", salami: "450 g", nduja: "180 g", piment: "4" },
+      { nb: 10, pate: "10 pâtons",tomates: "800 g", mozza: "800 g", salami: "500 g", nduja: "200 g", piment: "5" },
+      { nb: 11, pate: "11 pâtons",tomates: "880 g", mozza: "880 g", salami: "550 g", nduja: "220 g", piment: "5" },
+      { nb: 12, pate: "12 pâtons",tomates: "960 g", mozza: "960 g", salami: "600 g", nduja: "240 g", piment: "6" },
+      { nb: 13, pate: "13 pâtons",tomates: "1040 g",mozza: "1040 g",salami: "650 g", nduja: "260 g", piment: "6" },
+      { nb: 14, pate: "14 pâtons",tomates: "1120 g",mozza: "1120 g",salami: "700 g", nduja: "280 g", piment: "7" },
+      { nb: 15, pate: "15 pâtons",tomates: "1200 g",mozza: "1200 g",salami: "750 g", nduja: "300 g", piment: "7" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Pâte et sauce",            detail: "Étaler la pâte. Napper de sauce tomate assaisonnée à l'ail et à l'origan.", badge: null },
+      { icone: "🧀", titre: "Mozzarella",               detail: "Répartir la mozzarella déchirée.", badge: null },
+      { icone: "🌶️", titre: "Garnitures piquantes",    detail: "Disposer les tranches de salami épicé, des petites cuillerées de nduja (saucisse calabraise) et les rondelles de piment frais.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Four à maximum. Finir avec un filet d'huile d'olive pimentée à la sortie du four.", badge: "⏱ 7-10 min à 280°C" },
+    ]
+  },
+
+  pizzasaumonepinards: {
+    base: 2,
+    temps: "20 min + 48h pâte",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Pizza saumon, épinards et crème fraîche — base blanche onctueuse, saumon fumé et épinards. Une pizza raffinée.",
+    tableauPizzaSaumon: [
+      { nb:  1, pate: "1 pâton",  creme: "50 ml", saumon: "60 g",  epinards: "40 g",  mozza: "60 g",  citron: "¼" },
+      { nb:  2, pate: "2 pâtons", creme: "100 ml",saumon: "120 g", epinards: "80 g",  mozza: "120 g", citron: "½" },
+      { nb:  3, pate: "3 pâtons", creme: "150 ml",saumon: "180 g", epinards: "120 g", mozza: "180 g", citron: "¾" },
+      { nb:  4, pate: "4 pâtons", creme: "200 ml",saumon: "240 g", epinards: "160 g", mozza: "240 g", citron: "1" },
+      { nb:  5, pate: "5 pâtons", creme: "250 ml",saumon: "300 g", epinards: "200 g", mozza: "300 g", citron: "1" },
+      { nb:  6, pate: "6 pâtons", creme: "300 ml",saumon: "360 g", epinards: "240 g", mozza: "360 g", citron: "1½"},
+      { nb:  7, pate: "7 pâtons", creme: "350 ml",saumon: "420 g", epinards: "280 g", mozza: "420 g", citron: "1½"},
+      { nb:  8, pate: "8 pâtons", creme: "400 ml",saumon: "480 g", epinards: "320 g", mozza: "480 g", citron: "2" },
+      { nb:  9, pate: "9 pâtons", creme: "450 ml",saumon: "540 g", epinards: "360 g", mozza: "540 g", citron: "2" },
+      { nb: 10, pate: "10 pâtons",creme: "500 ml",saumon: "600 g", epinards: "400 g", mozza: "600 g", citron: "2½"},
+      { nb: 11, pate: "11 pâtons",creme: "550 ml",saumon: "660 g", epinards: "440 g", mozza: "660 g", citron: "2½"},
+      { nb: 12, pate: "12 pâtons",creme: "600 ml",saumon: "720 g", epinards: "480 g", mozza: "720 g", citron: "3" },
+      { nb: 13, pate: "13 pâtons",creme: "650 ml",saumon: "780 g", epinards: "520 g", mozza: "780 g", citron: "3" },
+      { nb: 14, pate: "14 pâtons",creme: "700 ml",saumon: "840 g", epinards: "560 g", mozza: "840 g", citron: "3½"},
+      { nb: 15, pate: "15 pâtons",creme: "750 ml",saumon: "900 g", epinards: "600 g", mozza: "900 g", citron: "3½"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Base crème",               detail: "Étaler la pâte. Napper de crème fraîche assaisonnée sel, poivre et aneth.", badge: null },
+      { icone: "🧀", titre: "Mozzarella + épinards",    detail: "Répartir la mozzarella. Parsemer les épinards frais (ils vont cuire sur la pizza).", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Cuire la pizza sans le saumon.", badge: "⏱ 7-10 min à 280°C" },
+      { icone: "🐟", titre: "Saumon fumé à la sortie",  detail: "Sortir la pizza, disposer le saumon fumé en tranches. Presser le citron. Quelques câpres et aneth frais. Le saumon fumé ne se cuit jamais !", badge: null },
+    ]
+  },
+
+  pizzavegetarienne: {
+    base: 2,
+    temps: "20 min + 48h pâte",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Pizza végétarienne colorée — poivrons, courgette, aubergine grillée, mozzarella et pesto. Pleine de saveurs méditerranéennes.",
+    tableauPizzaVege: [
+      { nb:  1, pate: "1 pâton",  tomates: "80 g",  mozza: "80 g",  poivron: "¼",  courgette: "¼",  aubergine: "¼",  pesto: "1 c.à.s" },
+      { nb:  2, pate: "2 pâtons", tomates: "160 g", mozza: "160 g", poivron: "½",  courgette: "½",  aubergine: "½",  pesto: "2 c.à.s" },
+      { nb:  3, pate: "3 pâtons", tomates: "240 g", mozza: "240 g", poivron: "¾",  courgette: "¾",  aubergine: "¾",  pesto: "3 c.à.s" },
+      { nb:  4, pate: "4 pâtons", tomates: "320 g", mozza: "320 g", poivron: "1",  courgette: "1",  aubergine: "1",  pesto: "4 c.à.s" },
+      { nb:  5, pate: "5 pâtons", tomates: "400 g", mozza: "400 g", poivron: "1",  courgette: "1",  aubergine: "1",  pesto: "5 c.à.s" },
+      { nb:  6, pate: "6 pâtons", tomates: "480 g", mozza: "480 g", poivron: "1½", courgette: "1½", aubergine: "1½", pesto: "6 c.à.s" },
+      { nb:  7, pate: "7 pâtons", tomates: "560 g", mozza: "560 g", poivron: "2",  courgette: "2",  aubergine: "2",  pesto: "7 c.à.s" },
+      { nb:  8, pate: "8 pâtons", tomates: "640 g", mozza: "640 g", poivron: "2",  courgette: "2",  aubergine: "2",  pesto: "8 c.à.s" },
+      { nb:  9, pate: "9 pâtons", tomates: "720 g", mozza: "720 g", poivron: "2½", courgette: "2½", aubergine: "2½", pesto: "9 c.à.s" },
+      { nb: 10, pate: "10 pâtons",tomates: "800 g", mozza: "800 g", poivron: "3",  courgette: "3",  aubergine: "3",  pesto: "10 c.à.s"},
+      { nb: 11, pate: "11 pâtons",tomates: "880 g", mozza: "880 g", poivron: "3",  courgette: "3",  aubergine: "3",  pesto: "11 c.à.s"},
+      { nb: 12, pate: "12 pâtons",tomates: "960 g", mozza: "960 g", poivron: "3½", courgette: "3½", aubergine: "3½", pesto: "12 c.à.s"},
+      { nb: 13, pate: "13 pâtons",tomates: "1040 g",mozza: "1040 g",poivron: "4",  courgette: "4",  aubergine: "4",  pesto: "13 c.à.s"},
+      { nb: 14, pate: "14 pâtons",tomates: "1120 g",mozza: "1120 g",poivron: "4",  courgette: "4",  aubergine: "4",  pesto: "14 c.à.s"},
+      { nb: 15, pate: "15 pâtons",tomates: "1200 g",mozza: "1200 g",poivron: "4½", courgette: "4½", aubergine: "4½", pesto: "15 c.à.s"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥒", titre: "Griller les légumes",      detail: "Couper poivrons, courgette et aubergine en lamelles. Griller à la poêle ou au four avec huile d'olive. Saler.", badge: "⏱ 10 min" },
+      { icone: "🫓", titre: "Pâte et sauce",            detail: "Étaler la pâte. Napper de sauce tomate et de pesto en alternance.", badge: null },
+      { icone: "🧀", titre: "Mozzarella et légumes",    detail: "Répartir mozzarella puis les légumes grillés. Olives noires en option.", badge: null },
+      { icone: "🔥", titre: "Cuire et finir",           detail: "Cuire au four à maximum. Finir avec roquette fraîche et copeaux de parmesan à la sortie.", badge: "⏱ 7-10 min à 280°C" },
+    ]
+  },
+
+  souvlakiagneau: {
+    base: 4,
+    temps: "25 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🍢",
+    description: "Souvlaki d'agneau grec — brochettes tendres marinées au citron et origan, servies avec pain pita et tzatziki.",
+    tableauSouvlakiAgneau: [
+      { nb:  2, agneau: "300 g", pita: "2",  yaourt: "100 g", citron: "½", huileOlive: "2 c.à.s" },
+      { nb:  4, agneau: "600 g", pita: "4",  yaourt: "200 g", citron: "1", huileOlive: "4 c.à.s" },
+      { nb:  6, agneau: "900 g", pita: "6",  yaourt: "300 g", citron: "1", huileOlive: "6 c.à.s" },
+      { nb:  8, agneau: "1.2 kg",pita: "8",  yaourt: "400 g", citron: "2", huileOlive: "8 c.à.s" },
+      { nb: 10, agneau: "1.5 kg",pita: "10", yaourt: "500 g", citron: "2", huileOlive: "10 c.à.s"},
+      { nb: 12, agneau: "1.8 kg",pita: "12", yaourt: "600 g", citron: "3", huileOlive: "12 c.à.s"},
+      { nb: 14, agneau: "2.1 kg",pita: "14", yaourt: "700 g", citron: "3", huileOlive: "14 c.à.s"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Marinade",                 detail: "Couper l'agneau en cubes. Mariner avec huile d'olive, jus de citron, origan, ail, sel et poivre.", badge: "⏱ 2h minimum" },
+      { icone: "🍢", titre: "Brochettes",               detail: "Enfiler sur brochettes. Cuire au grill ou barbecue en tournant.", badge: "⏱ 10-12 min" },
+      { icone: "🥒", titre: "Tzatziki",                 detail: "Mélanger yaourt grec, concombre râpé essoré, ail, aneth, jus de citron.", badge: null },
+      { icone: "🫓", titre: "Servir",                   detail: "Réchauffer les pitas. Garnir de tzatziki, tomate, oignon rouge et la viande. Arroser d'huile d'olive.", badge: null },
+    ]
+  },
+
+  tom_yam: {
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "La soupe Tom Yam thaïlandaise — bouillon piquant au citron vert, galanga, citronnelle et crevettes. Un feu d'artifice d'arômes.",
+    tableauTomYam: [
+      { nb:  1, bouillon: "300 ml", crevettes: "80 g",  citron: "1",  citronnelle: "1 tige",  galanga: "3 tranches" },
+      { nb:  2, bouillon: "600 ml", crevettes: "160 g", citron: "2",  citronnelle: "2 tiges", galanga: "6 tranches" },
+      { nb:  3, bouillon: "900 ml", crevettes: "240 g", citron: "3",  citronnelle: "3 tiges", galanga: "9 tranches" },
+      { nb:  4, bouillon: "1.2 L",  crevettes: "320 g", citron: "4",  citronnelle: "4 tiges", galanga: "12 tranches"},
+      { nb:  5, bouillon: "1.5 L",  crevettes: "400 g", citron: "5",  citronnelle: "5 tiges", galanga: "15 tranches"},
+      { nb:  6, bouillon: "1.8 L",  crevettes: "480 g", citron: "6",  citronnelle: "6 tiges", galanga: "18 tranches"},
+      { nb:  7, bouillon: "2.1 L",  crevettes: "560 g", citron: "7",  citronnelle: "7 tiges", galanga: "21 tranches"},
+      { nb:  8, bouillon: "2.4 L",  crevettes: "640 g", citron: "8",  citronnelle: "8 tiges", galanga: "24 tranches"},
+      { nb:  9, bouillon: "2.7 L",  crevettes: "720 g", citron: "9",  citronnelle: "9 tiges", galanga: "27 tranches"},
+      { nb: 10, bouillon: "3 L",    crevettes: "800 g", citron: "10", citronnelle: "10 tiges",galanga: "30 tranches"},
+      { nb: 11, bouillon: "3.3 L",  crevettes: "880 g", citron: "11", citronnelle: "11 tiges",galanga: "33 tranches"},
+      { nb: 12, bouillon: "3.6 L",  crevettes: "960 g", citron: "12", citronnelle: "12 tiges",galanga: "36 tranches"},
+      { nb: 13, bouillon: "3.9 L",  crevettes: "1040 g",citron: "13", citronnelle: "13 tiges",galanga: "39 tranches"},
+      { nb: 14, bouillon: "4.2 L",  crevettes: "1120 g",citron: "14", citronnelle: "14 tiges",galanga: "42 tranches"},
+      { nb: 15, bouillon: "4.5 L",  crevettes: "1200 g",citron: "15", citronnelle: "15 tiges",galanga: "45 tranches"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Préparer le bouillon",     detail: "Porter le bouillon de poulet à ébullition. Ajouter citronnelle coupée, galanga, feuilles de kaffir lime, piment. Laisser infuser 10 min.", badge: "⏱ 10 min" },
+      { icone: "🍄", titre: "Ajouter champignons",      detail: "Ajouter les champignons de paille ou shiitake. Cuire 3 min.", badge: null },
+      { icone: "🦐", titre: "Ajouter les crevettes",    detail: "Ajouter les crevettes. Cuire jusqu'à ce qu'elles deviennent roses.", badge: "⏱ 3 min" },
+      { icone: "🍋", titre: "Assaisonner",              detail: "Hors du feu, ajouter jus de citron vert, sauce poisson et pâte de piment (nam prik pao). Goûter et ajuster. Servir avec coriandre fraîche.", badge: null },
+    ]
+  },
+
+  dorade_chermoula: {
+    base: 4,
+    temps: "40 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Dorade royale à la chermoula marocaine — marinade aux herbes et épices, cuite au four. Simple, parfumée et délicate.",
+    tableauDorade: [
+      { nb:  2, dorade: "1 (500g)",  chermoula: "3 c.à.s", citron: "1",  olives: "50 g"  },
+      { nb:  4, dorade: "2 (500g)",  chermoula: "6 c.à.s", citron: "2",  olives: "100 g" },
+      { nb:  6, dorade: "3 (500g)",  chermoula: "9 c.à.s", citron: "3",  olives: "150 g" },
+      { nb:  8, dorade: "4 (500g)",  chermoula: "12 c.à.s",citron: "4",  olives: "200 g" },
+      { nb: 10, dorade: "5 (500g)",  chermoula: "15 c.à.s",citron: "5",  olives: "250 g" },
+      { nb: 12, dorade: "6 (500g)",  chermoula: "18 c.à.s",citron: "6",  olives: "300 g" },
+      { nb: 14, dorade: "7 (500g)",  chermoula: "21 c.à.s",citron: "7",  olives: "350 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Préparer la chermoula",    detail: "Mixer coriandre, persil, ail, cumin, paprika, curcuma, jus de citron et huile d'olive. La chermoula doit être une pâte verte et parfumée.", badge: null },
+      { icone: "🐟", titre: "Mariner la dorade",        detail: "Entailler le poisson. L'enduire généreusement de chermoula dedans et dehors. Mariner au frigo.", badge: "⏱ 1h minimum" },
+      { icone: "🔥", titre: "Cuire au four",            detail: "Disposer dans un plat avec rondelles de citron, tomates, olives et poivrons. Couvrir de papier alu les 20 premières minutes.", badge: "⏱ 35 min à 190°C" },
+      { icone: "🍋", titre: "Servir",                   detail: "Servir avec couscous ou pain marocain. Arroser du jus de cuisson.", badge: null },
+    ]
+  },
+
+  pouletchicken65: {
+    base: 4,
+    temps: "30 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🌶️",
+    description: "Le Chicken 65 indien — poulet frit ultra épicé et croustillant, spécialité de Chennai. Un apéro indien explosif !",
+    tableauChicken65: [
+      { nb:  2, poulet: "250 g", yaourt: "50 g",  farine: "30 g",  piment: "1 c.à.c",  curry: "½ c.à.c" },
+      { nb:  4, poulet: "500 g", yaourt: "100 g", farine: "60 g",  piment: "2 c.à.c",  curry: "1 c.à.c"  },
+      { nb:  6, poulet: "750 g", yaourt: "150 g", farine: "90 g",  piment: "3 c.à.c",  curry: "1½ c.à.c" },
+      { nb:  8, poulet: "1 kg",  yaourt: "200 g", farine: "120 g", piment: "4 c.à.c",  curry: "2 c.à.c"  },
+      { nb: 10, poulet: "1.25 kg",yaourt: "250 g",farine: "150 g", piment: "5 c.à.c",  curry: "2½ c.à.c" },
+      { nb: 12, poulet: "1.5 kg",yaourt: "300 g", farine: "180 g", piment: "6 c.à.c",  curry: "3 c.à.c"  },
+      { nb: 14, poulet: "1.75 kg",yaourt: "350 g",farine: "210 g", piment: "7 c.à.c",  curry: "3½ c.à.c" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "Marinade épicée",         detail: "Mélanger yaourt, farine de riz, fécule, gingembre-ail râpé, piment rouge, curry, curcuma, sel et colorant rouge (optionnel). Mariner le poulet en morceaux.", badge: "⏱ 2h minimum" },
+      { icone: "🔥", titre: "Frire en deux fois",       detail: "Première friture à 160°C pour cuire. Deuxième friture à 190°C pour croustiller.", badge: "⏱ 5 min + 2 min" },
+      { icone: "🌿", titre: "Finir à la poêle",         detail: "Sauter rapidement avec feuilles de curry, piment vert, ail et gingembre. Arroser de jus de citron.", badge: null },
+      { icone: "🍋", titre: "Servir",                   detail: "Servir avec rondelles d'oignon et citron vert. Parsemer de coriandre fraîche.", badge: null },
+    ]
+  },
+
+  pierogi: {
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🥟",
+    description: "Les Pierogi polonais — raviolis farcis pommes de terre-fromage, bouillis puis poêlés avec oignons caramélisés et crème sure.",
+    tableauPierogi: [
+      { nb:  2, farine: "150 g", pdterre: "200 g", fromage: "80 g",  oignon: "1",  creme: "50 ml"  },
+      { nb:  4, farine: "300 g", pdterre: "400 g", fromage: "160 g", oignon: "2",  creme: "100 ml" },
+      { nb:  6, farine: "450 g", pdterre: "600 g", fromage: "240 g", oignon: "3",  creme: "150 ml" },
+      { nb:  8, farine: "600 g", pdterre: "800 g", fromage: "320 g", oignon: "4",  creme: "200 ml" },
+      { nb: 10, farine: "750 g", pdterre: "1 kg",  fromage: "400 g", oignon: "5",  creme: "250 ml" },
+      { nb: 12, farine: "900 g", pdterre: "1.2 kg",fromage: "480 g", oignon: "6",  creme: "300 ml" },
+      { nb: 14, farine: "1050 g",pdterre: "1.4 kg",fromage: "560 g", oignon: "7",  creme: "350 ml" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Pâte à pierogi",           detail: "Mélanger farine, œuf, sel et eau tiède jusqu'à pâte souple. Laisser reposer 30 min sous film.", badge: "⏱ 30 min repos" },
+      { icone: "🥔", titre: "Farce pomme de terre",     detail: "Cuire les pommes de terre, écraser. Mélanger avec fromage blanc ou fromage frais, oignon sauté, sel, poivre.", badge: null },
+      { icone: "🥟", titre: "Former les pierogi",       detail: "Étaler la pâte finement. Découper en cercles de 8cm. Déposer une cuillerée de farce. Plier en demi-lune et souder les bords.", badge: null },
+      { icone: "💧", titre: "Bouillir",                 detail: "Plonger dans eau bouillante salée jusqu'à ce qu'ils remontent. Égoutter.", badge: "⏱ 4-5 min" },
+      { icone: "🍳", titre: "Poêler et servir",         detail: "Faire dorer au beurre avec oignons caramélisés. Servir avec crème sure et ciboulette.", badge: "⏱ 3 min" },
+    ]
+  },
+
+  momos: {
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🥟",
+    description: "Les Momos tibétains — raviolis vapeur à la viande et légumes, spécialité himalayenne servie avec sauce pimentée. Cousin du gyoza !",
+    tableauMomos: [
+      { nb:  4, farine: "100 g", viande: "150 g", chou: "80 g",  oignon: "½", gingembre: "1 cm" },
+      { nb:  8, farine: "200 g", viande: "300 g", chou: "160 g", oignon: "1", gingembre: "2 cm" },
+      { nb: 12, farine: "300 g", viande: "450 g", chou: "240 g", oignon: "1", gingembre: "3 cm" },
+      { nb: 16, farine: "400 g", viande: "600 g", chou: "320 g", oignon: "2", gingembre: "4 cm" },
+      { nb: 20, farine: "500 g", viande: "750 g", chou: "400 g", oignon: "2", gingembre: "5 cm" },
+      { nb: 24, farine: "600 g", viande: "900 g", chou: "480 g", oignon: "3", gingembre: "6 cm" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Pâte simple",              detail: "Mélanger farine et eau chaude progressivement. Pétrir jusqu'à pâte souple et non collante. Reposer 20 min.", badge: "⏱ 20 min repos" },
+      { icone: "🥩", titre: "Farce",                    detail: "Mélanger viande hachée, chou finement cisélé, oignon, gingembre et ail râpés, sauce soja, huile de sésame, sel.", badge: null },
+      { icone: "🥟", titre: "Former les momos",         detail: "Étaler des petits disques de pâte fine. Déposer la farce au centre. Plier et plisser en une belle rosette.", badge: null },
+      { icone: "♨️", titre: "Cuire vapeur",             detail: "Huiler le panier vapeur. Cuire à vapeur vive.", badge: "⏱ 15-18 min" },
+      { icone: "🌶️", titre: "Sauce pimentée",          detail: "Servir avec sauce tomate-piment maison : tomates rôties, piment, ail et gingembre mixés.", badge: null },
+    ]
+  },
+
+  shakshukaverte: {
+    base: 2,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥬",
+    description: "Shakshuka verte — œufs pochés dans une sauce aux épinards, herbes fraîches et piment vert. La version printanière de la shakshuka.",
+    tableauShakshukaVerte: [
+      { nb:  1, oeufs: "2",  epinards: "100 g", poivron: "½",  oignon: "¼", fetaOpt: "30 g"  },
+      { nb:  2, oeufs: "4",  epinards: "200 g", poivron: "1",  oignon: "½", fetaOpt: "60 g"  },
+      { nb:  3, oeufs: "6",  epinards: "300 g", poivron: "1½", oignon: "1", fetaOpt: "90 g"  },
+      { nb:  4, oeufs: "8",  epinards: "400 g", poivron: "2",  oignon: "1", fetaOpt: "120 g" },
+      { nb:  5, oeufs: "10", epinards: "500 g", poivron: "2½", oignon: "1", fetaOpt: "150 g" },
+      { nb:  6, oeufs: "12", epinards: "600 g", poivron: "3",  oignon: "2", fetaOpt: "180 g" },
+      { nb:  7, oeufs: "14", epinards: "700 g", poivron: "3½", oignon: "2", fetaOpt: "210 g" },
+      { nb:  8, oeufs: "16", epinards: "800 g", poivron: "4",  oignon: "2", fetaOpt: "240 g" },
+      { nb:  9, oeufs: "18", epinards: "900 g", poivron: "4½", oignon: "2", fetaOpt: "270 g" },
+      { nb: 10, oeufs: "20", epinards: "1 kg",  poivron: "5",  oignon: "3", fetaOpt: "300 g" },
+      { nb: 11, oeufs: "22", epinards: "1.1 kg",poivron: "5½", oignon: "3", fetaOpt: "330 g" },
+      { nb: 12, oeufs: "24", epinards: "1.2 kg",poivron: "6",  oignon: "3", fetaOpt: "360 g" },
+      { nb: 13, oeufs: "26", epinards: "1.3 kg",poivron: "6½", oignon: "3", fetaOpt: "390 g" },
+      { nb: 14, oeufs: "28", epinards: "1.4 kg",poivron: "7",  oignon: "4", fetaOpt: "420 g" },
+      { nb: 15, oeufs: "30", epinards: "1.5 kg",poivron: "7½", oignon: "4", fetaOpt: "450 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Faire revenir",            detail: "Faire revenir oignon et poivron vert dans l'huile d'olive 5 min. Ajouter ail, cumin et piment.", badge: null },
+      { icone: "🥬", titre: "Ajouter les épinards",     detail: "Ajouter les épinards frais, coriandre et persil. Cuire jusqu'à ce qu'ils réduisent. Assaisonner.", badge: "⏱ 5 min" },
+      { icone: "🥚", titre: "Pocher les œufs",          detail: "Faire des puits dans la sauce verte. Casser les œufs délicatement. Couvrir et cuire selon la préférence.", badge: "⏱ 5 min (mollet)" },
+      { icone: "🧀", titre: "Servir",                   detail: "Parsemer de feta émiettée, herbes fraîches et graines de sésame. Servir avec pain pita.", badge: null },
+    ]
+  },
+
+  kebbeh: {
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🥩",
+    description: "Le Kebbeh libanais — boulettes de viande à la semoule de blé et épices, frites ou au four. La recette emblématique du Liban.",
+    tableauKebbeh: [
+      { nb:  4, agneau: "200 g", semoule: "100 g", oignon: "1",  pignons: "30 g",  cannelle: "½ c.à.c" },
+      { nb:  8, agneau: "400 g", semoule: "200 g", oignon: "2",  pignons: "60 g",  cannelle: "1 c.à.c"  },
+      { nb: 12, agneau: "600 g", semoule: "300 g", oignon: "3",  pignons: "90 g",  cannelle: "1½ c.à.c" },
+      { nb: 16, agneau: "800 g", semoule: "400 g", oignon: "4",  pignons: "120 g", cannelle: "2 c.à.c"  },
+      { nb: 20, agneau: "1 kg",  semoule: "500 g", oignon: "5",  pignons: "150 g", cannelle: "2½ c.à.c" },
+      { nb: 24, agneau: "1.2 kg",semoule: "600 g", oignon: "6",  pignons: "180 g", cannelle: "3 c.à.c"  },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Tremper la semoule",       detail: "Tremper la semoule fine dans eau froide 20 min. Bien égoutter et essorer.", badge: "⏱ 20 min" },
+      { icone: "🥩", titre: "Pâte de base",             detail: "Mixer agneau haché très fin + semoule + oignon + épices (cannelle, cumin, allspice) + sel. La pâte doit être homogène.", badge: null },
+      { icone: "🥜", titre: "Farce",                    detail: "Faire revenir oignon, viande hachée, pignons, raisins secs et épices. Refroidir.", badge: null },
+      { icone: "⚽", titre: "Former les kebbeh",        detail: "Former des boules avec la pâte, creuser pour farcir. Refermer en forme de football américain.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Frire dans huile chaude ou cuire au four à 180°C. Servir avec labneh (yaourt égoutté) et salade.", badge: "⏱ 20 min à 180°C" },
+    ]
+  },
+
+  tteokbokki: {
+    base: 2,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🌶️",
+    description: "Le Tteokbokki coréen — gâteaux de riz dans une sauce gochujang épicée et sucrée. Le street food coréen incontournable !",
+    tableauTteokbokki: [
+      { nb:  1, tteok: "150 g", gochujang: "1 c.à.s", sucre: "1 c.à.c",  sojaS: "1 c.à.c",  bouillon: "200 ml" },
+      { nb:  2, tteok: "300 g", gochujang: "2 c.à.s", sucre: "2 c.à.c",  sojaS: "2 c.à.c",  bouillon: "400 ml" },
+      { nb:  3, tteok: "450 g", gochujang: "3 c.à.s", sucre: "3 c.à.c",  sojaS: "3 c.à.c",  bouillon: "600 ml" },
+      { nb:  4, tteok: "600 g", gochujang: "4 c.à.s", sucre: "4 c.à.c",  sojaS: "4 c.à.c",  bouillon: "800 ml" },
+      { nb:  5, tteok: "750 g", gochujang: "5 c.à.s", sucre: "5 c.à.c",  sojaS: "5 c.à.c",  bouillon: "1 L"    },
+      { nb:  6, tteok: "900 g", gochujang: "6 c.à.s", sucre: "6 c.à.c",  sojaS: "6 c.à.c",  bouillon: "1.2 L"  },
+      { nb:  7, tteok: "1050 g",gochujang: "7 c.à.s", sucre: "7 c.à.c",  sojaS: "7 c.à.c",  bouillon: "1.4 L"  },
+      { nb:  8, tteok: "1200 g",gochujang: "8 c.à.s", sucre: "8 c.à.c",  sojaS: "8 c.à.c",  bouillon: "1.6 L"  },
+      { nb:  9, tteok: "1350 g",gochujang: "9 c.à.s", sucre: "9 c.à.c",  sojaS: "9 c.à.c",  bouillon: "1.8 L"  },
+      { nb: 10, tteok: "1500 g",gochujang: "10 c.à.s",sucre: "10 c.à.c", sojaS: "10 c.à.c", bouillon: "2 L"    },
+      { nb: 11, tteok: "1650 g",gochujang: "11 c.à.s",sucre: "11 c.à.c", sojaS: "11 c.à.c", bouillon: "2.2 L"  },
+      { nb: 12, tteok: "1800 g",gochujang: "12 c.à.s",sucre: "12 c.à.c", sojaS: "12 c.à.c", bouillon: "2.4 L"  },
+      { nb: 13, tteok: "1950 g",gochujang: "13 c.à.s",sucre: "13 c.à.c", sojaS: "13 c.à.c", bouillon: "2.6 L"  },
+      { nb: 14, tteok: "2100 g",gochujang: "14 c.à.s",sucre: "14 c.à.c", sojaS: "14 c.à.c", bouillon: "2.8 L"  },
+      { nb: 15, tteok: "2250 g",gochujang: "15 c.à.s",sucre: "15 c.à.c", sojaS: "15 c.à.c", bouillon: "3 L"    },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Faire tremper les tteok",  detail: "Si les gâteaux de riz sont congelés ou secs, les faire tremper 20 min dans l'eau froide.", badge: null },
+      { icone: "🌶️", titre: "Sauce gochujang",         detail: "Mélanger gochujang, sauce soja, sucre et ail dans le bouillon (anchois ou légumes). Porter à ébullition.", badge: null },
+      { icone: "🍱", titre: "Cuire les tteok",          detail: "Ajouter les gâteaux de riz dans la sauce. Cuire en remuant jusqu'à sauce épaissie et tteok tendres.", badge: "⏱ 10-12 min" },
+      { icone: "🥚", titre: "Garnitures",               detail: "Ajouter galettes de poisson (eomuk) si disponibles, oignons verts et un œuf dur. Servir chaud et bien pimenté !", badge: null },
+    ]
+  },
+
+  porc_pulled: {
+    base: 6,
+    temps: "6h",
+    niveau: "⭐ Facile",
+    emoji: "🐷",
+    description: "Le Pulled Pork américain — épaule de porc fumée et effilochée, marinée au rub BBQ et cuite lentement. La recette du Sud américain.",
+    tableauPulledPork: [
+      { nb:  2, porc: "500 g",  rub: "2 c.à.s",  bbqSauce: "50 ml",  fumee: "1 pincée" },
+      { nb:  4, porc: "1 kg",   rub: "3 c.à.s",  bbqSauce: "100 ml", fumee: "1 c.à.c"  },
+      { nb:  6, porc: "1.5 kg", rub: "4 c.à.s",  bbqSauce: "150 ml", fumee: "1½ c.à.c" },
+      { nb:  8, porc: "2 kg",   rub: "5 c.à.s",  bbqSauce: "200 ml", fumee: "2 c.à.c"  },
+      { nb: 10, porc: "2.5 kg", rub: "7 c.à.s",  bbqSauce: "250 ml", fumee: "2½ c.à.c" },
+      { nb: 12, porc: "3 kg",   rub: "8 c.à.s",  bbqSauce: "300 ml", fumee: "3 c.à.c"  },
+      { nb: 14, porc: "3.5 kg", rub: "9 c.à.s",  bbqSauce: "350 ml", fumee: "3½ c.à.c" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "Préparer le rub",         detail: "Mélanger paprika fumé, cassonade, ail en poudre, oignon, cumin, sel, poivre, piment. Enrober généreusement le porc. Filmer.", badge: "⏱ 12h frigo idéal" },
+      { icone: "🔥", titre: "Cuisson basse température",detail: "Cuire au four à 120°C couvert, ou dans une cocotte en fonte. La viande doit atteindre 90°C à cœur.", badge: "⏱ 5-6h à 120°C" },
+      { icone: "🐷", titre: "Effilocher",               detail: "Sortir la viande, laisser reposer 30 min. Effilocher avec deux fourchettes. Arroser du jus de cuisson.", badge: "⏱ 30 min repos" },
+      { icone: "🍖", titre: "Sauce BBQ",                detail: "Mélanger la viande avec la sauce BBQ. Servir dans des buns burger avec coleslaw.", badge: null },
+    ]
+  },
+
+  dosakerdosai: {
+    base: 4,
+    temps: "30 min + 12h fermentation",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🥞",
+    description: "Les Dosa indiens — crêpes fermentées au riz et lentilles, croustillantes, servies avec sambar et chutneys. Le petit-déjeuner du Tamil Nadu.",
+    tableauDosa: [
+      { nb:  2, rizS: "75 g",   lentilles: "25 g", sel: "½ c.à.c", sambar: "100 ml", chutney: "2 c.à.s" },
+      { nb:  4, rizS: "150 g",  lentilles: "50 g", sel: "1 c.à.c",  sambar: "200 ml", chutney: "4 c.à.s" },
+      { nb:  6, rizS: "225 g",  lentilles: "75 g", sel: "1½ c.à.c", sambar: "300 ml", chutney: "6 c.à.s" },
+      { nb:  8, rizS: "300 g",  lentilles: "100 g",sel: "2 c.à.c",  sambar: "400 ml", chutney: "8 c.à.s" },
+      { nb: 10, rizS: "375 g",  lentilles: "125 g",sel: "2½ c.à.c", sambar: "500 ml", chutney: "10 c.à.s"},
+      { nb: 12, rizS: "450 g",  lentilles: "150 g",sel: "3 c.à.c",  sambar: "600 ml", chutney: "12 c.à.s"},
+      { nb: 14, rizS: "525 g",  lentilles: "175 g",sel: "3½ c.à.c", sambar: "700 ml", chutney: "14 c.à.s"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Tremper riz et lentilles", detail: "Faire tremper séparément riz et lentilles urad dal 8h. Égoutter.", badge: "⏱ 8h trempage" },
+      { icone: "🌀", titre: "Mixer et fermenter",       detail: "Mixer séparément puis mélanger. Ajouter sel. Laisser fermenter à température ambiante. La pâte doit légèrement gonfler.", badge: "⏱ 8-12h fermentation" },
+      { icone: "🍳", titre: "Cuire les dosa",           detail: "Chauffer une poêle antiadhésive à feu moyen. Verser une louche de pâte au centre et étaler en spirale très fine. Huiler les bords.", badge: "⏱ 2-3 min" },
+      { icone: "🌿", titre: "Servir",                   detail: "Servir chaud avec sambar (soupe lentilles épicée), chutney de coco et chutney tomate.", badge: null },
+    ]
+  },
+
+  braiseboeuf_asiatique: {
+    base: 4,
+    temps: "3h",
+    niveau: "⭐ Facile",
+    emoji: "🥢",
+    description: "Joues de bœuf braisées à l'asiatique — sauce soja, gingembre, étoile de badiane et sucre de palme. Fondant absolu.",
+    tableauBraiseBoeuf: [
+      { nb:  2, joues: "400 g", sojaS: "3 c.à.s", mirin: "2 c.à.s", saké: "2 c.à.s", gingembre: "2 cm", anis: "1" },
+      { nb:  4, joues: "800 g", sojaS: "6 c.à.s", mirin: "4 c.à.s", saké: "4 c.à.s", gingembre: "4 cm", anis: "2" },
+      { nb:  6, joues: "1.2 kg",sojaS: "9 c.à.s", mirin: "6 c.à.s", saké: "6 c.à.s", gingembre: "5 cm", anis: "3" },
+      { nb:  8, joues: "1.6 kg",sojaS: "12 c.à.s",mirin: "8 c.à.s", saké: "8 c.à.s", gingembre: "7 cm", anis: "4" },
+      { nb: 10, joues: "2 kg",  sojaS: "15 c.à.s",mirin: "10 c.à.s",saké: "10 c.à.s",gingembre: "8 cm", anis: "5" },
+      { nb: 12, joues: "2.4 kg",sojaS: "18 c.à.s",mirin: "12 c.à.s",saké: "12 c.à.s",gingembre: "10 cm",anis: "6" },
+      { nb: 14, joues: "2.8 kg",sojaS: "21 c.à.s",mirin: "14 c.à.s",saké: "14 c.à.s",gingembre: "12 cm",anis: "7" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Saisir les joues",         detail: "Faire dorer les joues de bœuf sur toutes les faces dans huile à feu vif. Réserver.", badge: "⏱ 8 min" },
+      { icone: "🫙", titre: "Préparer la braise",       detail: "Dans la même cocotte, faire revenir ail et gingembre. Ajouter sauce soja, mirin, saké, sucre de palme, anis étoilé et bouillon. Porter à ébullition.", badge: null },
+      { icone: "⏳", titre: "Braiser longuement",       detail: "Remettre les joues. Couvrir et cuire à feu très doux. La viande doit se défaire à la fourchette.", badge: "⏱ 2h30 à feu doux" },
+      { icone: "🍚", titre: "Réduire et servir",        detail: "Retirer la viande, réduire la sauce à feu vif 5 min. Napper les joues. Servir avec riz vapeur et bok choy sauté.", badge: null },
+    ]
+  },
+
+  paprikashpoulet: {
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🇭🇺",
+    description: "Le Paprikash de poulet hongrois — poulet mijoté dans une sauce crémeuse au paprika fumé. Un plat réconfortant d'Europe centrale.",
+    tableauPaprikash: [
+      { nb:  2, poulet: "400 g", paprika: "1 c.à.s", creme: "100 ml", oignon: "1",  bouillon: "150 ml" },
+      { nb:  4, poulet: "800 g", paprika: "2 c.à.s", creme: "200 ml", oignon: "2",  bouillon: "300 ml" },
+      { nb:  6, poulet: "1.2 kg",paprika: "3 c.à.s", creme: "300 ml", oignon: "3",  bouillon: "450 ml" },
+      { nb:  8, poulet: "1.6 kg",paprika: "4 c.à.s", creme: "400 ml", oignon: "4",  bouillon: "600 ml" },
+      { nb: 10, poulet: "2 kg",  paprika: "5 c.à.s", creme: "500 ml", oignon: "5",  bouillon: "750 ml" },
+      { nb: 12, poulet: "2.4 kg",paprika: "6 c.à.s", creme: "600 ml", oignon: "6",  bouillon: "900 ml" },
+      { nb: 14, poulet: "2.8 kg",paprika: "7 c.à.s", creme: "700 ml", oignon: "7",  bouillon: "1050 ml"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Faire revenir l'oignon",  detail: "Faire fondre les oignons émincés dans le saindoux (ou beurre) jusqu'à dorure.", badge: "⏱ 8 min" },
+      { icone: "🌶️", titre: "Paprika",                 detail: "Hors du feu, ajouter le paprika doux hongrois en grande quantité. Mélanger. Remettre sur feu doux (le paprika brûle facilement).", badge: null },
+      { icone: "🍗", titre: "Ajouter le poulet",        detail: "Ajouter les morceaux de poulet. Couvrir de bouillon. Saler. Laisser mijoter couvert.", badge: "⏱ 30 min" },
+      { icone: "🍦", titre: "Sauce à la crème",         detail: "Retirer le poulet. Mélanger crème fraîche + 1 c.à.s de farine. Incorporer dans la sauce chaude en fouettant. Remettre le poulet. Servir avec nouilles hongroises (csipetke) ou gnocchis.", badge: null },
+    ]
+  },
   boeufbourguignon: {
     base: 6,
     temps: "3h30 + marinade",
@@ -4459,6 +4956,24 @@ function initTablesGlobales() {
     "painauchocolat":  { table: "tableauPainAuChocolat",  fn: htmlTableauPainAuChocolatColonnes, label: "pain" },
     "gateaubasque":    { table: "tableauGateauBasque",    fn: htmlTableauGateauBasqueColonnes,   label: "personne" },
     "canelebordelais": { table: "tableauCanele",          fn: htmlTableauCaneleColonnes,         label: "cannelé" },
+    "pizzareine":      { table: "tableauPizzaReine",      fn: htmlTableauPizzaReineColonnes,     label: "pizza" },
+    "pizzaquattroformaggi":{ table: "tableauPizzaFormaggi",fn: htmlTableauPizzaFormaggiColonnes, label: "pizza" },
+    "pizzadiavola":    { table: "tableauPizzaDiavola",    fn: htmlTableauPizzaDiavolaColonnes,   label: "pizza" },
+    "pizzasaumonepinards":{ table: "tableauPizzaSaumon",  fn: htmlTableauPizzaSaumonColonnes,    label: "pizza" },
+    "pizzavegetarienne":{ table: "tableauPizzaVege",      fn: htmlTableauPizzaVegeColonnes,      label: "pizza" },
+    "souvlakiagneau":  { table: "tableauSouvlakiAgneau",  fn: htmlTableauSouvlakiAgneauColonnes, label: "personne" },
+    "tom_yam":         { table: "tableauTomYam",          fn: htmlTableauTomYamColonnes,         label: "personne" },
+    "dorade_chermoula":{ table: "tableauDorade",          fn: htmlTableauDoradeColonnes,         label: "personne" },
+    "pouletchicken65": { table: "tableauChicken65",       fn: htmlTableauChicken65Colonnes,      label: "personne" },
+    "pierogi":         { table: "tableauPierogi",         fn: htmlTableauPierogiColonnes,        label: "personne" },
+    "momos":           { table: "tableauMomos",           fn: htmlTableauMomosColonnes,          label: "momo" },
+    "shakshukaverte":  { table: "tableauShakshukaVerte",  fn: htmlTableauShakshukaVerteColonnes, label: "personne" },
+    "kebbeh":          { table: "tableauKebbeh",          fn: htmlTableauKebbehColonnes,         label: "kebbeh" },
+    "tteokbokki":      { table: "tableauTteokbokki",      fn: htmlTableauTteokbokkiColonnes,     label: "personne" },
+    "porc_pulled":     { table: "tableauPulledPork",      fn: htmlTableauPulledPorkColonnes,     label: "personne" },
+    "dosakerdosai":    { table: "tableauDosa",            fn: htmlTableauDosaColonnes,           label: "dosa" },
+    "braiseboeuf_asiatique":{ table: "tableauBraiseBoeuf",fn: htmlTableauBraiseBoeufColonnes,   label: "personne" },
+    "paprikashpoulet": { table: "tableauPaprikash",       fn: htmlTableauPaprikashColonnes,      label: "personne" },
   };
   // Ajouter dans la fonction calculer() accessible globalement
   window._nouvellesRecettesTables = nouvellesRecettesTables;
@@ -4728,6 +5243,173 @@ function htmlTableauParisBrestColonnes(l) {
     <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
     <tr><th>🧈 Beurre mou</th><td>${l.beurrCreme}</td></tr>
     <tr><th>🌰 Pâte de pralin</th><td>${l.pralin}</td></tr>`);
+}
+
+function htmlTableauPizzaReineColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
+    <tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>
+    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
+    <tr><th>🍖 Jambon</th><td>${l.jambon}</td></tr>
+    <tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr>`);
+}
+function htmlTableauPizzaFormaggiColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
+    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
+    <tr><th>🧀 Gorgonzola</th><td>${l.gorgonzola}</td></tr>
+    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>
+    <tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
+}
+function htmlTableauPizzaDiavolaColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
+    <tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>
+    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
+    <tr><th>🌭 Salami épicé</th><td>${l.salami}</td></tr>
+    <tr><th>🌶️ Nduja</th><td>${l.nduja}</td></tr>
+    <tr><th>🌶️ Piment frais</th><td>${l.piment}</td></tr>`);
+}
+function htmlTableauPizzaSaumonColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🐟 Saumon fumé</th><td>${l.saumon}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
+    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+function htmlTableauPizzaVegeColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
+    <tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>
+    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
+    <tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr>
+    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
+    <tr><th>🍆 Aubergine</th><td>${l.aubergine}</td></tr>
+    <tr><th>🌿 Pesto</th><td>${l.pesto}</td></tr>`);
+}
+function htmlTableauSouvlakiAgneauColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Agneau</th><td>${l.agneau}</td></tr>
+    <tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr>
+    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
+}
+function htmlTableauTomYamColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr>
+    <tr><th>🍋 Citrons verts</th><td>${l.citron}</td></tr>
+    <tr><th>🌿 Citronnelle</th><td>${l.citronnelle}</td></tr>
+    <tr><th>🫚 Galanga</th><td>${l.galanga}</td></tr>`);
+}
+function htmlTableauDoradeColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Dorade royale</th><td>${l.dorade}</td></tr>
+    <tr><th>🌿 Chermoula</th><td>${l.chermoula}</td></tr>
+    <tr><th>🍋 Citrons</th><td>${l.citron}</td></tr>
+    <tr><th>🫒 Olives</th><td>${l.olives}</td></tr>`);
+}
+function htmlTableauChicken65Colonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🥛 Yaourt</th><td>${l.yaourt}</td></tr>
+    <tr><th>🌾 Farine de riz</th><td>${l.farine}</td></tr>
+    <tr><th>🌶️ Piment rouge</th><td>${l.piment}</td></tr>
+    <tr><th>🌶️ Feuilles de curry</th><td>${l.curry}</td></tr>`);
+}
+function htmlTableauPierogiColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
+    <tr><th>🧀 Fromage frais</th><td>${l.fromage}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🍦 Crème sure</th><td>${l.creme}</td></tr>`);
+}
+function htmlTableauMomosColonnes(l) {
+  return col(`
+    <tr><th>🥟 Momos</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr>
+    <tr><th>🥬 Chou</th><td>${l.chou}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
+}
+function htmlTableauShakshukaVerteColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
+    <tr><th>🫑 Poivron vert</th><td>${l.poivron}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🧀 Feta (optionnel)</th><td>${l.fetaOpt}</td></tr>`);
+}
+function htmlTableauKebbehColonnes(l) {
+  return col(`
+    <tr><th>🥩 Kebbeh</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Agneau haché</th><td>${l.agneau}</td></tr>
+    <tr><th>🌾 Semoule fine</th><td>${l.semoule}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🌰 Pignons de pin</th><td>${l.pignons}</td></tr>
+    <tr><th>🪵 Cannelle</th><td>${l.cannelle}</td></tr>`);
+}
+function htmlTableauTteokbokkiColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍱 Tteok (gâteaux de riz)</th><td>${l.tteok}</td></tr>
+    <tr><th>🌶️ Gochujang</th><td>${l.gochujang}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
+}
+function htmlTableauPulledPorkColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐷 Épaule de porc</th><td>${l.porc}</td></tr>
+    <tr><th>🌶️ Rub BBQ</th><td>${l.rub}</td></tr>
+    <tr><th>🍖 Sauce BBQ</th><td>${l.bbqSauce}</td></tr>
+    <tr><th>💨 Paprika fumé</th><td>${l.fumee}</td></tr>`);
+}
+function htmlTableauDosaColonnes(l) {
+  return col(`
+    <tr><th>🥞 Dosas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz</th><td>${l.rizS}</td></tr>
+    <tr><th>🫘 Lentilles urad dal</th><td>${l.lentilles}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
+    <tr><th>🍲 Sambar</th><td>${l.sambar}</td></tr>
+    <tr><th>🌿 Chutney</th><td>${l.chutney}</td></tr>`);
+}
+function htmlTableauBraiseBoeufColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Joues de bœuf</th><td>${l.joues}</td></tr>
+    <tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>
+    <tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr>
+    <tr><th>🍶 Saké</th><td>${l.saké}</td></tr>
+    <tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>
+    <tr><th>⭐ Anis étoilé</th><td>${l.anis}</td></tr>`);
+}
+function htmlTableauPaprikashColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🌶️ Paprika hongrois</th><td>${l.paprika}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
 }
 
 function htmlTableauRamenColonnes(l) {
@@ -5950,6 +6632,24 @@ const prixCalories = {
   citronadementhe:    { base: 4,  baseLabel: "4 verres",      prixTotal: 0.80, calTotal: 200,  unite: "verre" },
   jusPastequeMenuthe: { base: 4,  baseLabel: "4 verres",      prixTotal: 1.50, calTotal: 160,  unite: "verre" },
   virginpinacolada:   { base: 1,  baseLabel: "1 verre",       prixTotal: 1.00, calTotal: 150,  unite: "verre" },
+  pizzareine:         { base: 2, baseLabel: "2 pizzas",    prixTotal: 4.50,  calTotal: 1400, unite: "pizza"    },
+  pizzaquattroformaggi:{ base: 2,baseLabel: "2 pizzas",    prixTotal: 5.00,  calTotal: 1600, unite: "pizza"    },
+  pizzadiavola:       { base: 2, baseLabel: "2 pizzas",    prixTotal: 4.50,  calTotal: 1400, unite: "pizza"    },
+  pizzasaumonepinards:{ base: 2, baseLabel: "2 pizzas",    prixTotal: 6.00,  calTotal: 1200, unite: "pizza"    },
+  pizzavegetarienne:  { base: 2, baseLabel: "2 pizzas",    prixTotal: 4.00,  calTotal: 1200, unite: "pizza"    },
+  souvlakiagneau:     { base: 4, baseLabel: "4 personnes", prixTotal: 8.00,  calTotal: 1200, unite: "personne" },
+  tom_yam:            { base: 4, baseLabel: "4 personnes", prixTotal: 6.00,  calTotal: 600,  unite: "personne" },
+  dorade_chermoula:   { base: 4, baseLabel: "4 personnes", prixTotal: 10.00, calTotal: 800,  unite: "personne" },
+  pouletchicken65:    { base: 4, baseLabel: "4 personnes", prixTotal: 6.00,  calTotal: 1000, unite: "personne" },
+  pierogi:            { base: 4, baseLabel: "4 personnes", prixTotal: 4.00,  calTotal: 1600, unite: "personne" },
+  momos:              { base: 4, baseLabel: "4 personnes", prixTotal: 4.00,  calTotal: 800,  unite: "personne" },
+  shakshukaverte:     { base: 2, baseLabel: "2 personnes", prixTotal: 3.00,  calTotal: 400,  unite: "personne" },
+  kebbeh:             { base: 4, baseLabel: "4 personnes", prixTotal: 6.00,  calTotal: 1200, unite: "personne" },
+  tteokbokki:         { base: 2, baseLabel: "2 personnes", prixTotal: 4.00,  calTotal: 800,  unite: "personne" },
+  porc_pulled:        { base: 6, baseLabel: "6 personnes", prixTotal: 12.00, calTotal: 2400, unite: "personne" },
+  dosakerdosai:       { base: 4, baseLabel: "4 dosas",     prixTotal: 2.00,  calTotal: 800,  unite: "dosa"     },
+  braiseboeuf_asiatique:{ base: 4,baseLabel: "4 personnes",prixTotal: 12.00, calTotal: 1600, unite: "personne" },
+  paprikashpoulet:    { base: 4, baseLabel: "4 personnes", prixTotal: 7.00,  calTotal: 1600, unite: "personne" },
   ramenjaponais:      { base: 2,  baseLabel: "2 bols",        prixTotal: 8.00,  calTotal: 900,  unite: "bol" },
   gyoza:              { base: 20, baseLabel: "20 gyoza",      prixTotal: 5.00,  calTotal: 1000, unite: "gyoza" },
   tikamasala:         { base: 4,  baseLabel: "4 personnes",   prixTotal: 7.00,  calTotal: 1600, unite: "personne" },
@@ -6613,6 +7313,24 @@ function choisirRecette(nom) {
     "potaufeu":          "Pot-au-Feu",
     "parisbrestreinterpretation": "Paris-Brest",
     "ramenjaponais":     "Ramen Japonais",
+    "pizzareine":        "Pizza Reine",
+    "pizzaquattroformaggi": "Pizza Quattro Formaggi",
+    "pizzadiavola":      "Pizza Diavola",
+    "pizzasaumonepinards":"Pizza Saumon Épinards",
+    "pizzavegetarienne": "Pizza Végétarienne",
+    "souvlakiagneau":    "Souvlaki d'Agneau",
+    "tom_yam":           "Soupe Tom Yam",
+    "dorade_chermoula":  "Dorade à la Chermoula",
+    "pouletchicken65":   "Chicken 65",
+    "pierogi":           "Pierogi",
+    "momos":             "Momos Tibétains",
+    "shakshukaverte":    "Shakshuka Verte",
+    "kebbeh":            "Kebbeh Libanais",
+    "tteokbokki":        "Tteokbokki",
+    "porc_pulled":       "Pulled Pork",
+    "dosakerdosai":      "Dosa",
+    "braiseboeuf_asiatique": "Joues de Bœuf Braisées",
+    "paprikashpoulet":   "Paprikash de Poulet",
     "gyoza":             "Gyoza",
     "tikamasala":        "Poulet Tikka Masala",
     "phovietnambien":    "Pho Vietnamien",
@@ -6663,5 +7381,7 @@ function choisirRecette(nom) {
   document.getElementById("modal-resultat").parentElement.scrollTop = 0;
 }
 
-// Initialiser les tables globales
+// initTablesGlobales() déplacé en fin de fichier
+
+// Initialiser les tables globales — après toutes les définitions de fonctions
 initTablesGlobales();
