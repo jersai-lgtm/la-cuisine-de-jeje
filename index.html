@@ -80,6 +80,9 @@
   <button class="pays-btn" onclick="filtrerPays('coree')">🇰🇷 Corée</button>
   <button class="pays-btn" onclick="filtrerPays('hongrie')">🇭🇺 Hongrie</button>
   <button class="pays-btn" onclick="filtrerPays('tibet')">🏔️ Tibet</button>
+  <button class="pays-btn" onclick="filtrerPays('bresil')">🇧🇷 Brésil</button>
+  <button class="pays-btn" onclick="filtrerPays('indonesie')">🇮🇩 Indonésie</button>
+  <button class="pays-btn" onclick="filtrerPays('haiti')">🇭🇹 Haïti</button>
 </div>
 
 <!-- CARTES RECETTES -->
@@ -556,7 +559,28 @@
           <option value="12">12 galettes</option>
           <option value="14">14 galettes</option>
           <option value="15">16 galettes</option>
-        </select>
+        
+    <option value="bibimbap">Bibimbap</option>
+    <option value="moquecabresil">Moqueca Brésilienne</option>
+    <option value="rendangboeuf">Rendang de Bœuf</option>
+    <option value="tacoshijosepastor">Tacos Al Pastor</option>
+    <option value="grilladelamnocciole">Côtelettes d'Agneau</option>
+    <option value="sushimaison">Sushis Maison</option>
+    <option value="carigrioantillais">Cari Griot</option>
+    <option value="semoulecourgette">Semoule aux Légumes Grillés</option>
+    <option value="pouletbasquaise">Poulet Basquaise</option>
+    <option value="crevettespilpil">Crevettes Pil Pil</option>
+    <option value="lasagneverdure">Lasagne Verdure</option>
+    <option value="crumblefruits">Crumble aux Fruits</option>
+    <option value="pintxosbasques">Pintxos Basques</option>
+    <option value="misoramenleger">Ramen Miso Léger</option>
+    <option value="veloutepatatepoireaux">Velouté Patate & Poireaux</option>
+    <option value="terrinecampagne">Terrine de Campagne</option>
+    <option value="poulpegrillebresil">Poulpe Grillé</option>
+    <option value="pouletrotiperfect">Poulet Rôti Parfait</option>
+    <option value="millefeuille">Mille-feuille</option>
+    <option value="saumoncrouteherbes">Saumon Croûte d'Herbes</option>
+  </select>
         <button class="calc-btn" onclick="calculerCarte('galettetacos', 'calc-galettetacos')">Calculer</button>
       </div>
     </div>
@@ -1611,14 +1635,14 @@
     </div>
   </div>
 
-  <div class="carte" data-cat="pizzas" data-pays="italie" onclick="ouvrirFiche('pizzaquattroformaggi', 'calc-pizzaquattroformaggi')">
-    <img src="images/pizzaquattroformaggi.webp" alt="Pizza 4 Fromages">
+  <div class="carte" data-cat="pizzas" data-pays="italie" onclick="ouvrirFiche('pizza4fromages', 'calc-pizza4fromages')">
+    <img src="images/pizza4fromages.webp" alt="Pizza 4 Fromages">
     <div class="carte-info">
       <h2>🧀 Pizza 4 Fromages</h2>
       <p>⏱ 20 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-pizzaquattroformaggi">
-        <button class="calc-btn" onclick="calculerCarte('pizzaquattroformaggi', 'calc-pizzaquattroformaggi')">Calculer</button>
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-pizza4fromages">
+        <button class="calc-btn" onclick="calculerCarte('pizza4fromages', 'calc-pizza4fromages')">Calculer</button>
       </div>
     </div>
   </div>
@@ -1811,6 +1835,248 @@
       <div class="carte-calc" onclick="event.stopPropagation()">
         <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-paprikashpoulet">
         <button class="calc-btn" onclick="calculerCarte('paprikashpoulet', 'calc-paprikashpoulet')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 20 NOUVELLES RECETTES -->
+  <div class="carte" data-cat="plats" data-pays="coree" onclick="ouvrirFiche('bibimbap', 'calc-bibimbap')">
+    <img src="images/bibimbap.webp" alt="Bibimbap">
+    <div class="carte-info">
+      <h2>🍚 Bibimbap</h2>
+      <p>⏱ 40 min • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-bibimbap">
+        <button class="calc-btn" onclick="calculerCarte('bibimbap', 'calc-bibimbap')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="bresil" onclick="ouvrirFiche('moquecabresil', 'calc-moquecabresil')">
+    <img src="images/moquecabresil.webp" alt="Moqueca Brésilienne">
+    <div class="carte-info">
+      <h2>🐟 Moqueca Brésilienne</h2>
+      <p>⏱ 40 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-moquecabresil">
+        <button class="calc-btn" onclick="calculerCarte('moquecabresil', 'calc-moquecabresil')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="indonesie" onclick="ouvrirFiche('rendangboeuf', 'calc-rendangboeuf')">
+    <img src="images/rendangboeuf.webp" alt="Rendang de Bœuf">
+    <div class="carte-info">
+      <h2>🥘 Rendang de Bœuf</h2>
+      <p>⏱ 3h • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-rendangboeuf">
+        <button class="calc-btn" onclick="calculerCarte('rendangboeuf', 'calc-rendangboeuf')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="mexique" onclick="ouvrirFiche('tacoshijosepastor', 'calc-tacoshijosepastor')">
+    <img src="images/tacoshijosepastor.webp" alt="Tacos Al Pastor">
+    <div class="carte-info">
+      <h2>🌮 Tacos Al Pastor</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="2" max="14" class="calc-input" id="calc-tacoshijosepastor">
+        <button class="calc-btn" onclick="calculerCarte('tacoshijosepastor', 'calc-tacoshijosepastor')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('grilladelamnocciole', 'calc-grilladelamnocciole')">
+    <img src="images/grilladelamnocciole.webp" alt="Côtelettes d'Agneau">
+    <div class="carte-info">
+      <h2>🐑 Côtelettes d'Agneau</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-grilladelamnocciole">
+        <button class="calc-btn" onclick="calculerCarte('grilladelamnocciole', 'calc-grilladelamnocciole')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('sushimaison', 'calc-sushimaison')">
+    <img src="images/sushimaison.webp" alt="Sushis Maison">
+    <div class="carte-info">
+      <h2>🍣 Sushis Maison</h2>
+      <p>⏱ 1h • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="8" min="4" max="28" class="calc-input" id="calc-sushimaison">
+        <button class="calc-btn" onclick="calculerCarte('sushimaison', 'calc-sushimaison')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="haiti" onclick="ouvrirFiche('carigrioantillais', 'calc-carigrioantillais')">
+    <img src="images/carigrioantillais.webp" alt="Cari Griot">
+    <div class="carte-info">
+      <h2>🦞 Cari Griot</h2>
+      <p>⏱ 1h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-carigrioantillais">
+        <button class="calc-btn" onclick="calculerCarte('carigrioantillais', 'calc-carigrioantillais')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="healthy" data-pays="france" onclick="ouvrirFiche('semoulecourgette', 'calc-semoulecourgette')">
+    <img src="images/semoulecourgette.webp" alt="Semoule aux Légumes Grillés">
+    <div class="carte-info">
+      <h2>🌾 Semoule aux Légumes Grillés</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-semoulecourgette">
+        <button class="calc-btn" onclick="calculerCarte('semoulecourgette', 'calc-semoulecourgette')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('pouletbasquaise', 'calc-pouletbasquaise')">
+    <img src="images/pouletbasquaise.webp" alt="Poulet Basquaise">
+    <div class="carte-info">
+      <h2>🐓 Poulet Basquaise</h2>
+      <p>⏱ 1h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-pouletbasquaise">
+        <button class="calc-btn" onclick="calculerCarte('pouletbasquaise', 'calc-pouletbasquaise')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="espagne" onclick="ouvrirFiche('crevettespilpil', 'calc-crevettespilpil')">
+    <img src="images/crevettespilpil.webp" alt="Crevettes Pil Pil">
+    <div class="carte-info">
+      <h2>🦐 Crevettes Pil Pil</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-crevettespilpil">
+        <button class="calc-btn" onclick="calculerCarte('crevettespilpil', 'calc-crevettespilpil')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('lasagneverdure', 'calc-lasagneverdure')">
+    <img src="images/lasagneverdure.webp" alt="Lasagne Verdure">
+    <div class="carte-info">
+      <h2>🥬 Lasagne Verdure</h2>
+      <p>⏱ 1h30 • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="2" max="14" class="calc-input" id="calc-lasagneverdure">
+        <button class="calc-btn" onclick="calculerCarte('lasagneverdure', 'calc-lasagneverdure')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('crumblefruits', 'calc-crumblefruits')">
+    <img src="images/crumblefruits.webp" alt="Crumble aux Fruits">
+    <div class="carte-info">
+      <h2>🍑 Crumble aux Fruits</h2>
+      <p>⏱ 45 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="6" min="2" max="14" class="calc-input" id="calc-crumblefruits">
+        <button class="calc-btn" onclick="calculerCarte('crumblefruits', 'calc-crumblefruits')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="espagne" onclick="ouvrirFiche('pintxosbasques', 'calc-pintxosbasques')">
+    <img src="images/pintxosbasques.webp" alt="Pintxos Basques">
+    <div class="carte-info">
+      <h2>🥖 Pintxos Basques</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="4" max="28" class="calc-input" id="calc-pintxosbasques">
+        <button class="calc-btn" onclick="calculerCarte('pintxosbasques', 'calc-pintxosbasques')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('misoramenleger', 'calc-misoramenleger')">
+    <img src="images/misoramenleger.webp" alt="Ramen Miso Léger">
+    <div class="carte-info">
+      <h2>🍜 Ramen Miso Léger</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-misoramenleger">
+        <button class="calc-btn" onclick="calculerCarte('misoramenleger', 'calc-misoramenleger')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('veloutepatatepoireaux', 'calc-veloutepatatepoireaux')">
+    <img src="images/veloutepatatepoireaux.webp" alt="Velouté Patate & Poireaux">
+    <div class="carte-info">
+      <h2>🥔 Velouté Patate & Poireaux</h2>
+      <p>⏱ 35 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-veloutepatatepoireaux">
+        <button class="calc-btn" onclick="calculerCarte('veloutepatatepoireaux', 'calc-veloutepatatepoireaux')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('terrinecampagne', 'calc-terrinecampagne')">
+    <img src="images/terrinecampagne.webp" alt="Terrine de Campagne">
+    <div class="carte-info">
+      <h2>🥩 Terrine de Campagne</h2>
+      <p>⏱ 1h30 • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="8" min="4" max="14" class="calc-input" id="calc-terrinecampagne">
+        <button class="calc-btn" onclick="calculerCarte('terrinecampagne', 'calc-terrinecampagne')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="espagne" onclick="ouvrirFiche('poulpegrillebresil', 'calc-poulpegrillebresil')">
+    <img src="images/poulpegrillebresil.webp" alt="Poulpe Grillé">
+    <div class="carte-info">
+      <h2>🐙 Poulpe Grillé</h2>
+      <p>⏱ 1h • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-poulpegrillebresil">
+        <button class="calc-btn" onclick="calculerCarte('poulpegrillebresil', 'calc-poulpegrillebresil')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('pouletrotiperfect', 'calc-pouletrotiperfect')">
+    <img src="images/pouletrotiperfect.webp" alt="Poulet Rôti Parfait">
+    <div class="carte-info">
+      <h2>🍗 Poulet Rôti Parfait</h2>
+      <p>⏱ 1h30 • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="2" max="14" class="calc-input" id="calc-pouletrotiperfect">
+        <button class="calc-btn" onclick="calculerCarte('pouletrotiperfect', 'calc-pouletrotiperfect')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('millefeuille', 'calc-millefeuille')">
+    <img src="images/millefeuille.webp" alt="Mille-feuille">
+    <div class="carte-info">
+      <h2>🍰 Mille-feuille</h2>
+      <p>⏱ 1h • ⭐⭐ Intermédiaire</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="8" min="2" max="14" class="calc-input" id="calc-millefeuille">
+        <button class="calc-btn" onclick="calculerCarte('millefeuille', 'calc-millefeuille')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('saumoncrouteherbes', 'calc-saumoncrouteherbes')">
+    <img src="images/saumoncrouteherbes.webp" alt="Saumon Croûte d'Herbes">
+    <div class="carte-info">
+      <h2>🌿 Saumon Croûte d'Herbes</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saumoncrouteherbes">
+        <button class="calc-btn" onclick="calculerCarte('saumoncrouteherbes', 'calc-saumoncrouteherbes')">Calculer</button>
       </div>
     </div>
   </div>
@@ -2040,7 +2306,7 @@
     <option value="yaourt">Yaourt maison</option>
   
     <option value="pizzareine">Pizza Reine</option>
-    <option value="pizzaquattroformaggi">Pizza 4 Fromages</option>
+    <option value="pizza4fromages">Pizza 4 Fromages</option>
     <option value="pizzadiavola">Pizza Diavola</option>
     <option value="pizzasaumonepinards">Pizza Saumon Épinards</option>
     <option value="pizzavegetarienne">Pizza Végétarienne</option>
@@ -2210,7 +2476,7 @@ const TOUS_LES_PLATS = [
   "pekinduckeasy","ceebujen","mafewestafricain","dosakerdosai","tteokbokki"
 ];
 const TOUTES_LES_PIZZAS = [
-  "pizzamargherita","pizzareine","pizzaquattroformaggi","pizzadiavola",
+  "pizzamargherita","pizzareine","pizza4fromages","pizzadiavola",
   "pizzasaumonepinards","pizzavegetarienne"
 ];
 const TOUTES_LES_ENTREES = [
