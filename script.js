@@ -2427,8 +2427,8 @@ const recettes = {
       { nb: 11, poisson: "2.2 kg", riz: "1.1 kg", tomates: "1.1 kg", manioc: "550 g", carottes: "5.5" },
       { nb: 12, poisson: "2.4 kg",riz: "1.2 kg",tomates: "1.2 kg",manioc: "600 g", carottes: "6" },
       { nb: 13, poisson: "2.6 kg", riz: "1.3 kg", tomates: "1.3 kg", manioc: "650 g", carottes: "6.5" },
-      { nb: 14, poisson: "2.8 kg",riz: "1.4 kg",tomates: "1.4 kg",manioc: "700 g", carottes: "7" }
-    
+      { nb: 14, poisson: "2.8 kg",riz: "1.4 kg",tomates: "1.4 kg",manioc: "700 g", carottes: "7" },
+      { nb: 15, poisson: "3 kg",riz: "1.5 kg",tomates: "1.5 kg",manioc: "750 g", carottes: "7.5" }
     ],
     ingredients: {},
     etapes: [
@@ -2460,8 +2460,8 @@ const recettes = {
       { nb: 11, viande: "1.7 kg", arachide: "550 g", tomates: "825 g", patate: "1.1 kg", oignon: "3.3" },
       { nb: 12, viande: "1.8 kg",arachide: "600 g", tomates: "900 g", patate: "1.2 kg",oignon: "3" },
       { nb: 13, viande: "1.9 kg", arachide: "650 g", tomates: "975 g", patate: "1.3 kg", oignon: "3.2" },
-      { nb: 14, viande: "2.1 kg",arachide: "700 g", tomates: "1050 g",patate: "1.4 kg",oignon: "4" }
-    
+      { nb: 14, viande: "2.1 kg",arachide: "700 g", tomates: "1050 g",patate: "1.4 kg",oignon: "4" },
+      { nb: 15, viande: "2.2 kg",arachide: "750 g", tomates: "1125 g",patate: "1.5 kg",oignon: "4.3" }
     ],
     ingredients: {},
     etapes: [
@@ -2601,8 +2601,8 @@ const recettes = {
       { nb: 11, canard: "2.2 ½", hoisin: "16 c.à.s", crepesP: "44", concombre: "2.2 ½", ciboule: "16" },
       { nb: 12, canard: "3",    hoisin: "18 c.à.s",crepesP: "48",  concombre: "3",  ciboule: "18"},
       { nb: 13, canard: "3.2", hoisin: "20 c.à.s", crepesP: "52", concombre: "3.2", ciboule: "20" },
-      { nb: 14, canard: "3½",   hoisin: "21 c.à.s",crepesP: "56",  concombre: "3½", ciboule: "21"}
-    
+      { nb: 14, canard: "3½",   hoisin: "21 c.à.s",crepesP: "56",  concombre: "3½", ciboule: "21"},
+      { nb: 15, canard: "3.2½",   hoisin: "22.5 c.à.s",crepesP: "60",  concombre: "3.2½", ciboule: "22.5"}
     ],
     ingredients: {},
     etapes: [
@@ -2634,8 +2634,8 @@ const recettes = {
       { nb: 11, jarret: "11 tranches", vin: "550 ml", bouillon: "1.1 L", tomates: "825 g" },
       { nb: 12, jarret: "12 tranches", vin: "600 ml", bouillon: "1.2 L",  tomates: "900 g" },
       { nb: 13, jarret: "13 tranches", vin: "650 ml", bouillon: "1.3 L", tomates: "975 g" },
-      { nb: 14, jarret: "14 tranches", vin: "700 ml", bouillon: "1.4 L",  tomates: "1050 g"}
-    
+      { nb: 14, jarret: "14 tranches", vin: "700 ml", bouillon: "1.4 L",  tomates: "1050 g"},
+      { nb: 15, jarret: "15 tranches", vin: "750 ml", bouillon: "1.5 L",  tomates: "1125 g"}
     ],
     ingredients: {},
     etapes: [
@@ -2667,8 +2667,8 @@ const recettes = {
       { nb: 11, agneau: "2.2 kg", pruneaux: "440 g", amandes: "220 g", miel: "5.5 c.à.s", oignon: "3.3" },
       { nb: 12, agneau: "2.4 kg",pruneaux: "480 g", amandes: "240 g", miel: "6 c.à.s", oignon: "4" },
       { nb: 13, agneau: "2.6 kg", pruneaux: "520 g", amandes: "260 g", miel: "6.5 c.à.s", oignon: "4.3" },
-      { nb: 14, agneau: "2.8 kg",pruneaux: "560 g", amandes: "280 g", miel: "7 c.à.s", oignon: "4" }
-    
+      { nb: 14, agneau: "2.8 kg",pruneaux: "560 g", amandes: "280 g", miel: "7 c.à.s", oignon: "4" },
+      { nb: 15, agneau: "3 kg",pruneaux: "600 g", amandes: "300 g", miel: "7.5 c.à.s", oignon: "4.3" }
     ],
     ingredients: {},
     etapes: [
@@ -2733,8 +2733,8 @@ const recettes = {
       { nb: 11, philadelphia: "1.1 kg", biscuits: "440 g", beurre: "220 g", oeufs: "5.5", sucre: "275 g", creme: "275 ml" },
       { nb: 12, philadelphia: "1.2 kg",biscuits: "480 g", beurre: "240 g", oeufs: "6",  sucre: "300 g", creme: "300 ml" },
       { nb: 13, philadelphia: "1.3 kg", biscuits: "520 g", beurre: "260 g", oeufs: "6.5", sucre: "325 g", creme: "325 ml" },
-      { nb: 14, philadelphia: "1.4 kg",biscuits: "560 g", beurre: "280 g", oeufs: "7",  sucre: "350 g", creme: "350 ml" }
-    
+      { nb: 14, philadelphia: "1.4 kg",biscuits: "560 g", beurre: "280 g", oeufs: "7",  sucre: "350 g", creme: "350 ml" },
+      { nb: 15, philadelphia: "1.5 kg",biscuits: "600 g", beurre: "300 g", oeufs: "7.5",  sucre: "375 g", creme: "375 ml" }
     ],
     ingredients: {},
     etapes: [
@@ -2766,8 +2766,8 @@ const recettes = {
       { nb: 11, farine: "344 g", lait: "193 ml", beurre: "42 g", sucre: "34 g", levure: "11 g", beurrage: "241 g", chocolat: "110 g" },
       { nb: 12, farine: "375 g", lait: "210 ml",beurre: "45 g", sucre: "37 g", levure: "12 g", beurrage: "263 g", chocolat: "120 g"},
       { nb: 13, farine: "406 g", lait: "227 ml", beurre: "49 g", sucre: "40 g", levure: "13 g", beurrage: "285 g", chocolat: "130 g" },
-      { nb: 14, farine: "438 g", lait: "245 ml",beurre: "53 g", sucre: "43 g", levure: "14 g", beurrage: "306 g", chocolat: "140 g"}
-    
+      { nb: 14, farine: "438 g", lait: "245 ml",beurre: "53 g", sucre: "43 g", levure: "14 g", beurrage: "306 g", chocolat: "140 g"},
+      { nb: 15, farine: "469.3 g", lait: "262.5 ml",beurre: "56.8 g", sucre: "46.1 g", levure: "15 g", beurrage: "327.9 g", chocolat: "150 g"}
     ],
     ingredients: {},
     etapes: [
@@ -2799,8 +2799,8 @@ const recettes = {
       { nb: 11, farine: "344 g", beurre: "241 g", sucre: "207 g", oeufs: "2.2 ½", creme: "413 ml", lait: "413 ml" },
       { nb: 12, farine: "375 g", beurre: "263 g", sucre: "225 g", oeufs: "3",  creme: "450 ml", lait: "450 ml" },
       { nb: 13, farine: "406 g", beurre: "285 g", sucre: "244 g", oeufs: "3.2", creme: "487 ml", lait: "487 ml" },
-      { nb: 14, farine: "438 g", beurre: "306 g", sucre: "263 g", oeufs: "3½", creme: "525 ml", lait: "525 ml" }
-    
+      { nb: 14, farine: "438 g", beurre: "306 g", sucre: "263 g", oeufs: "3½", creme: "525 ml", lait: "525 ml" },
+      { nb: 15, farine: "469.3 g", beurre: "327.9 g", sucre: "281.8 g", oeufs: "3.2½", creme: "562.5 ml", lait: "562.5 ml" }
     ],
     ingredients: {},
     etapes: [
@@ -3350,8 +3350,8 @@ const recettes = {
       { nb: 11, agneau: "1.7 kg", pita: "11", yaourt: "550 g", citron: "2.2", huileOlive: "11 c.à.s" },
       { nb: 12, agneau: "1.8 kg",pita: "12", yaourt: "600 g", citron: "3", huileOlive: "12 c.à.s"},
       { nb: 13, agneau: "1.9 kg", pita: "13", yaourt: "650 g", citron: "3.2", huileOlive: "13 c.à.s" },
-      { nb: 14, agneau: "2.1 kg",pita: "14", yaourt: "700 g", citron: "3", huileOlive: "14 c.à.s"}
-    
+      { nb: 14, agneau: "2.1 kg",pita: "14", yaourt: "700 g", citron: "3", huileOlive: "14 c.à.s"},
+      { nb: 15, agneau: "2.2 kg",pita: "15", yaourt: "750 g", citron: "3.2", huileOlive: "15 c.à.s"}
     ],
     ingredients: {},
     etapes: [
@@ -3414,8 +3414,8 @@ const recettes = {
       { nb: 11, dorade: "5.5 (500g)", chermoula: "16 c.à.s", citron: "5.5", olives: "275 g" },
       { nb: 12, dorade: "6 (500g)",  chermoula: "18 c.à.s",citron: "6",  olives: "300 g" },
       { nb: 13, dorade: "6.5 (500g)", chermoula: "20 c.à.s", citron: "6.5", olives: "325 g" },
-      { nb: 14, dorade: "7 (500g)",  chermoula: "21 c.à.s",citron: "7",  olives: "350 g" }
-    
+      { nb: 14, dorade: "7 (500g)",  chermoula: "21 c.à.s",citron: "7",  olives: "350 g" },
+      { nb: 15, dorade: "7.5 (500g)",  chermoula: "22.5 c.à.s",citron: "7.5",  olives: "375 g" }
     ],
     ingredients: {},
     etapes: [
@@ -3446,8 +3446,8 @@ const recettes = {
       { nb: 11, poulet: "1.4 kg", yaourt: "275 g", farine: "165 g", piment: "5.5 c.à.c", curry: "2.2 ½ c.à.c" },
       { nb: 12, poulet: "1.5 kg",yaourt: "300 g", farine: "180 g", piment: "6 c.à.c",  curry: "3 c.à.c"  },
       { nb: 13, poulet: "1.6 kg", yaourt: "325 g", farine: "195 g", piment: "6.5 c.à.c", curry: "3.2 c.à.c" },
-      { nb: 14, poulet: "1.75 kg",yaourt: "350 g",farine: "210 g", piment: "7 c.à.c",  curry: "3½ c.à.c" }
-    
+      { nb: 14, poulet: "1.75 kg",yaourt: "350 g",farine: "210 g", piment: "7 c.à.c",  curry: "3½ c.à.c" },
+      { nb: 15, poulet: "1.9 kg",yaourt: "375 g",farine: "225 g", piment: "7.5 c.à.c",  curry: "3.2½ c.à.c" }
     ],
     ingredients: {},
     etapes: [
@@ -3478,8 +3478,8 @@ const recettes = {
       { nb: 11, farine: "825 g", pdterre: "1.1 kg", fromage: "440 g", oignon: "5.5", creme: "275 ml" },
       { nb: 12, farine: "900 g", pdterre: "1.2 kg",fromage: "480 g", oignon: "6",  creme: "300 ml" },
       { nb: 13, farine: "975 g", pdterre: "1.3 kg", fromage: "520 g", oignon: "6.5", creme: "325 ml" },
-      { nb: 14, farine: "1050 g",pdterre: "1.4 kg",fromage: "560 g", oignon: "7",  creme: "350 ml" }
-    
+      { nb: 14, farine: "1050 g",pdterre: "1.4 kg",fromage: "560 g", oignon: "7",  creme: "350 ml" },
+      { nb: 15, farine: "1125 g",pdterre: "1.5 kg",fromage: "600 g", oignon: "7.5",  creme: "375 ml" }
     ],
     ingredients: {},
     etapes: [
@@ -3661,8 +3661,8 @@ const recettes = {
       { nb: 11, porc: "2.8 kg", rub: "7.7 c.à.s", bbqSauce: "275 ml", fumee: "2.2 ½ c.à.c" },
       { nb: 12, porc: "3 kg",   rub: "8 c.à.s",  bbqSauce: "300 ml", fumee: "3 c.à.c"  },
       { nb: 13, porc: "3.2 kg", rub: "8.7 c.à.s", bbqSauce: "325 ml", fumee: "3.2 c.à.c" },
-      { nb: 14, porc: "3.5 kg", rub: "9 c.à.s",  bbqSauce: "350 ml", fumee: "3½ c.à.c" }
-    
+      { nb: 14, porc: "3.5 kg", rub: "9 c.à.s",  bbqSauce: "350 ml", fumee: "3½ c.à.c" },
+      { nb: 15, porc: "3.8 kg", rub: "9.6 c.à.s",  bbqSauce: "375 ml", fumee: "3.2½ c.à.c" }
     ],
     ingredients: {},
     etapes: [
@@ -3693,8 +3693,8 @@ const recettes = {
       { nb: 11, rizS: "413 g", lentilles: "138 g", sel: "2.2 ½ c.à.c", sambar: "550 ml", chutney: "11 c.à.s" },
       { nb: 12, rizS: "450 g",  lentilles: "150 g",sel: "3 c.à.c",  sambar: "600 ml", chutney: "12 c.à.s"},
       { nb: 13, rizS: "487 g", lentilles: "162 g", sel: "3.2 c.à.c", sambar: "650 ml", chutney: "13 c.à.s" },
-      { nb: 14, rizS: "525 g",  lentilles: "175 g",sel: "3½ c.à.c", sambar: "700 ml", chutney: "14 c.à.s"}
-    
+      { nb: 14, rizS: "525 g",  lentilles: "175 g",sel: "3½ c.à.c", sambar: "700 ml", chutney: "14 c.à.s"},
+      { nb: 15, rizS: "562.5 g",  lentilles: "187.5 g",sel: "3.2½ c.à.c", sambar: "750 ml", chutney: "15 c.à.s"}
     ],
     ingredients: {},
     etapes: [
@@ -3725,8 +3725,8 @@ const recettes = {
       { nb: 11, joues: "2.2 kg", sojaS: "16 c.à.s", mirin: "11 c.à.s", saké: "11 c.à.s", gingembre: "8.8 cm", anis: "5.5" },
       { nb: 12, joues: "2.4 kg",sojaS: "18 c.à.s",mirin: "12 c.à.s",saké: "12 c.à.s",gingembre: "10 cm",anis: "6" },
       { nb: 13, joues: "2.6 kg", sojaS: "20 c.à.s", mirin: "13 c.à.s", saké: "13 c.à.s", gingembre: "11 cm", anis: "6.5" },
-      { nb: 14, joues: "2.8 kg",sojaS: "21 c.à.s",mirin: "14 c.à.s",saké: "14 c.à.s",gingembre: "12 cm",anis: "7" }
-    
+      { nb: 14, joues: "2.8 kg",sojaS: "21 c.à.s",mirin: "14 c.à.s",saké: "14 c.à.s",gingembre: "12 cm",anis: "7" },
+      { nb: 15, joues: "3 kg",sojaS: "22.5 c.à.s",mirin: "15 c.à.s",saké: "15 c.à.s",gingembre: "12.9 cm",anis: "7.5" }
     ],
     ingredients: {},
     etapes: [
@@ -3757,8 +3757,8 @@ const recettes = {
       { nb: 11, poulet: "2.2 kg", paprika: "5.5 c.à.s", creme: "550 ml", oignon: "5.5", bouillon: "825 ml" },
       { nb: 12, poulet: "2.4 kg",paprika: "6 c.à.s", creme: "600 ml", oignon: "6",  bouillon: "900 ml" },
       { nb: 13, poulet: "2.6 kg", paprika: "6.5 c.à.s", creme: "650 ml", oignon: "6.5", bouillon: "975 ml" },
-      { nb: 14, poulet: "2.8 kg",paprika: "7 c.à.s", creme: "700 ml", oignon: "7",  bouillon: "1050 ml"}
-    
+      { nb: 14, poulet: "2.8 kg",paprika: "7 c.à.s", creme: "700 ml", oignon: "7",  bouillon: "1050 ml"},
+      { nb: 15, poulet: "3 kg",paprika: "7.5 c.à.s", creme: "750 ml", oignon: "7.5",  bouillon: "1125 ml"}
     ],
     ingredients: {},
     etapes: [
@@ -3822,8 +3822,8 @@ const recettes = {
       { nb: 11, poisson: "1.7 kg", coco: "1.1 L", tomates: "1.1 kg", oignon: "5.5", coriandre: "2.2 bottes" },
       { nb: 12, poisson: "1.8 kg",coco: "1.2 L",  tomates: "1.2 kg",oignon: "6",  coriandre: "2 bottes" },
       { nb: 13, poisson: "1.9 kg", coco: "1.3 L", tomates: "1.3 kg", oignon: "6.5", coriandre: "2.2 bottes" },
-      { nb: 14, poisson: "2.1 kg",coco: "1.4 L",  tomates: "1.4 kg",oignon: "7",  coriandre: "3 bottes" }
-    
+      { nb: 14, poisson: "2.1 kg",coco: "1.4 L",  tomates: "1.4 kg",oignon: "7",  coriandre: "3 bottes" },
+      { nb: 15, poisson: "2.2 kg",coco: "1.5 L",  tomates: "1.5 kg",oignon: "7.5",  coriandre: "3.2 bottes" }
     ],
     ingredients: {},
     etapes: [
@@ -3855,8 +3855,8 @@ const recettes = {
       { nb: 11, boeuf: "2.2 kg", coco: "1.1 L", citronnelle: "5.5 tiges", galanga: "6.6 cm", piment: "12" },
       { nb: 12, boeuf: "2.4 kg",coco: "1.2 L",  citronnelle: "6 tiges",galanga: "7 cm",  piment: "13"},
       { nb: 13, boeuf: "2.6 kg", coco: "1.3 L", citronnelle: "6.5 tiges", galanga: "7.6 cm", piment: "14" },
-      { nb: 14, boeuf: "2.8 kg",coco: "1.4 L",  citronnelle: "7 tiges",galanga: "8 cm",  piment: "15"}
-    
+      { nb: 14, boeuf: "2.8 kg",coco: "1.4 L",  citronnelle: "7 tiges",galanga: "8 cm",  piment: "15"},
+      { nb: 15, boeuf: "3 kg",coco: "1.5 L",  citronnelle: "7.5 tiges",galanga: "8.6 cm",  piment: "16.1"}
     ],
     ingredients: {},
     etapes: [
@@ -3888,8 +3888,8 @@ const recettes = {
       { nb: 11, porc: "1.1 kg", ananas: "440 g", tortillas: "22", oignon: "2.2", coriandre: "1.1 botte", citron: "5.5" },
       { nb: 12, porc: "1.2 kg",ananas: "480 g", tortillas: "24", oignon: "3",  coriandre: "2 bottes", citron: "6" },
       { nb: 13, porc: "1.3 kg", ananas: "520 g", tortillas: "26", oignon: "3.2", coriandre: "2.2 bottes", citron: "6.5" },
-      { nb: 14, porc: "1.4 kg",ananas: "560 g", tortillas: "28", oignon: "3",  coriandre: "2 bottes", citron: "7" }
-    
+      { nb: 14, porc: "1.4 kg",ananas: "560 g", tortillas: "28", oignon: "3",  coriandre: "2 bottes", citron: "7" },
+      { nb: 15, porc: "1.5 kg",ananas: "600 g", tortillas: "30", oignon: "3.2",  coriandre: "2.1 bottes", citron: "7.5" }
     ],
     ingredients: {},
     etapes: [
@@ -3920,8 +3920,8 @@ const recettes = {
       { nb: 11, cotelets: "22", huileOlive: "13 c.à.s", romarin: "6.6 branches", ail: "11 gousses", citron: "2.2" },
       { nb: 12, cotelets: "24", huileOlive: "15 c.à.s",romarin: "7 branches", ail: "12 gousses",citron: "3" },
       { nb: 13, cotelets: "26", huileOlive: "16 c.à.s", romarin: "7.6 branches", ail: "13 gousses", citron: "3.2" },
-      { nb: 14, cotelets: "28", huileOlive: "18 c.à.s",romarin: "8 branches", ail: "14 gousses",citron: "3" }
-    
+      { nb: 14, cotelets: "28", huileOlive: "18 c.à.s",romarin: "8 branches", ail: "14 gousses",citron: "3" },
+      { nb: 15, cotelets: "30", huileOlive: "19.3 c.à.s",romarin: "8.6 branches", ail: "15 gousses",citron: "3.2" }
     ],
     ingredients: {},
     etapes: [
@@ -3999,8 +3999,8 @@ const recettes = {
       { nb: 11, porc: "2.2 kg", citron: "5.5", thym: "11 branches", ail: "11 gousses", piment: "2.2" },
       { nb: 12, porc: "2.4 kg",citron: "6",  thym: "12 branches",ail: "12 gousses",piment: "3" },
       { nb: 13, porc: "2.6 kg", citron: "6.5", thym: "13 branches", ail: "13 gousses", piment: "3.2" },
-      { nb: 14, porc: "2.8 kg",citron: "7",  thym: "14 branches",ail: "14 gousses",piment: "3" }
-    
+      { nb: 14, porc: "2.8 kg",citron: "7",  thym: "14 branches",ail: "14 gousses",piment: "3" },
+      { nb: 15, porc: "3 kg",citron: "7.5",  thym: "15 branches",ail: "15 gousses",piment: "3.2" }
     ],
     ingredients: {},
     etapes: [
@@ -4031,8 +4031,8 @@ const recettes = {
       { nb: 11, semoule: "660 g", courgette: "5.5", tomateCerise: "550 g", bouillon: "825 ml", menthe: "28 feuilles" },
       { nb: 12, semoule: "720 g", courgette: "6",  tomateCerise: "600 g", bouillon: "900 ml", menthe: "30 feuilles"},
       { nb: 13, semoule: "780 g", courgette: "6.5", tomateCerise: "650 g", bouillon: "975 ml", menthe: "32 feuilles" },
-      { nb: 14, semoule: "840 g", courgette: "7",  tomateCerise: "700 g", bouillon: "1050 ml",menthe: "35 feuilles"}
-    
+      { nb: 14, semoule: "840 g", courgette: "7",  tomateCerise: "700 g", bouillon: "1050 ml",menthe: "35 feuilles"},
+      { nb: 15, semoule: "900 g", courgette: "7.5",  tomateCerise: "750 g", bouillon: "1125 ml",menthe: "37.5 feuilles"}
     ],
     ingredients: {},
     etapes: [
@@ -4063,8 +4063,8 @@ const recettes = {
       { nb: 11, poulet: "2.2 kg", poivron: "5.5", tomates: "1.1 kg", jambon: "275 g", oignon: "5.5" },
       { nb: 12, poulet: "2.4 kg",poivron: "6",  tomates: "1.2 kg",jambon: "300 g", oignon: "6"  },
       { nb: 13, poulet: "2.6 kg", poivron: "6.5", tomates: "1.3 kg", jambon: "325 g", oignon: "6.5" },
-      { nb: 14, poulet: "2.8 kg",poivron: "7",  tomates: "1.4 kg",jambon: "350 g", oignon: "7"  }
-    
+      { nb: 14, poulet: "2.8 kg",poivron: "7",  tomates: "1.4 kg",jambon: "350 g", oignon: "7"  },
+      { nb: 15, poulet: "3 kg",poivron: "7.5",  tomates: "1.5 kg",jambon: "375 g", oignon: "7.5"  }
     ],
     ingredients: {},
     etapes: [
@@ -4096,8 +4096,8 @@ const recettes = {
       { nb: 11, crevettes: "1.1 kg", ail: "11 gousses", piment: "5.5", huileOlive: "13 c.à.s", persil: "1.1 botte" },
       { nb: 12, crevettes: "1.2 kg",ail: "12 gousses",piment: "6",  huileOlive: "15 c.à.s",persil: "2 bottes" },
       { nb: 13, crevettes: "1.3 kg", ail: "13 gousses", piment: "6.5", huileOlive: "16 c.à.s", persil: "2.2 bottes" },
-      { nb: 14, crevettes: "1.4 kg",ail: "14 gousses",piment: "7",  huileOlive: "18 c.à.s",persil: "2 bottes" }
-    
+      { nb: 14, crevettes: "1.4 kg",ail: "14 gousses",piment: "7",  huileOlive: "18 c.à.s",persil: "2 bottes" },
+      { nb: 15, crevettes: "1.5 kg",ail: "15 gousses",piment: "7.5",  huileOlive: "19.3 c.à.s",persil: "2.1 bottes" }
     ],
     ingredients: {},
     etapes: [
@@ -4128,8 +4128,8 @@ const recettes = {
       { nb: 11, lasagne: "22 feuilles", ricotta: "688 g", epinards: "825 g", tomates: "825 g", bechamel: "1.1 L", parmesan: "165 g" },
       { nb: 12, lasagne: "24 feuilles",ricotta: "750 g", epinards: "900 g", tomates: "900 g", bechamel: "1.2 L",  parmesan: "180 g" },
       { nb: 13, lasagne: "26 feuilles", ricotta: "812 g", epinards: "975 g", tomates: "975 g", bechamel: "1.3 L", parmesan: "195 g" },
-      { nb: 14, lasagne: "28 feuilles",ricotta: "875 g", epinards: "1050 g",tomates: "1050 g",bechamel: "1.4 L",  parmesan: "210 g" }
-    
+      { nb: 14, lasagne: "28 feuilles",ricotta: "875 g", epinards: "1050 g",tomates: "1050 g",bechamel: "1.4 L",  parmesan: "210 g" },
+      { nb: 15, lasagne: "30 feuilles",ricotta: "937.5 g", epinards: "1125 g",tomates: "1125 g",bechamel: "1.5 L",  parmesan: "225 g" }
     ],
     ingredients: {},
     etapes: [
@@ -4161,8 +4161,8 @@ const recettes = {
       { nb: 11, fruits: "1.7 kg", farine: "330 g", beurre: "248 g", sucre: "248 g", amandes: "110 g" },
       { nb: 12, fruits: "1.8 kg",farine: "360 g", beurre: "270 g", sucre: "270 g", amandes: "120 g" },
       { nb: 13, fruits: "1.9 kg", farine: "390 g", beurre: "292 g", sucre: "292 g", amandes: "130 g" },
-      { nb: 14, fruits: "2.1 kg",farine: "420 g", beurre: "315 g", sucre: "315 g", amandes: "140 g" }
-    
+      { nb: 14, fruits: "2.1 kg",farine: "420 g", beurre: "315 g", sucre: "315 g", amandes: "140 g" },
+      { nb: 15, fruits: "2.2 kg",farine: "450 g", beurre: "337.5 g", sucre: "337.5 g", amandes: "150 g" }
     ],
     ingredients: {},
     etapes: [
@@ -4273,8 +4273,8 @@ const recettes = {
       { nb: 11, pdterre: "1.7 kg", poireaux: "11", bouillon: "2.8 L", creme: "275 ml", beurre: "82 g" },
       { nb: 12, pdterre: "1.8 kg",poireaux: "12", bouillon: "3 L",    creme: "300 ml", beurre: "90 g"  },
       { nb: 13, pdterre: "1.9 kg", poireaux: "13", bouillon: "3.2 L", creme: "325 ml", beurre: "98 g" },
-      { nb: 14, pdterre: "2.1 kg",poireaux: "14", bouillon: "3.5 L",  creme: "350 ml", beurre: "105 g" }
-    
+      { nb: 14, pdterre: "2.1 kg",poireaux: "14", bouillon: "3.5 L",  creme: "350 ml", beurre: "105 g" },
+      { nb: 15, pdterre: "2.2 kg",poireaux: "15", bouillon: "3.8 L",  creme: "375 ml", beurre: "112.5 g" }
     ],
     ingredients: {},
     etapes: [
@@ -4306,8 +4306,8 @@ const recettes = {
       { nb: 11, porc: "550 g", foie: "275 g", lardons: "220 g", cognac: "5.5 c.à.s", oeuf: "2.2", creme: "138 ml" },
       { nb: 12, porc: "600 g",  foie: "300 g", lardons: "240 g", cognac: "6 c.à.s", oeuf: "3",  creme: "150 ml" },
       { nb: 13, porc: "650 g", foie: "325 g", lardons: "260 g", cognac: "6.5 c.à.s", oeuf: "3.2", creme: "162 ml" },
-      { nb: 14, porc: "700 g",  foie: "350 g", lardons: "280 g", cognac: "7 c.à.s", oeuf: "3",  creme: "175 ml" }
-    
+      { nb: 14, porc: "700 g",  foie: "350 g", lardons: "280 g", cognac: "7 c.à.s", oeuf: "3",  creme: "175 ml" },
+      { nb: 15, porc: "750 g",  foie: "375 g", lardons: "300 g", cognac: "7.5 c.à.s", oeuf: "3.2",  creme: "187.5 ml" }
     ],
     ingredients: {},
     etapes: [
@@ -4339,8 +4339,8 @@ const recettes = {
       { nb: 11, poulpe: "2.8 kg", huileOlive: "12 c.à.s", citron: "5.5", ail: "11 gousses", persil: "2.2 bottes" },
       { nb: 12, poulpe: "3 kg",  huileOlive: "13 c.à.s",citron: "6",  ail: "12 gousses",persil: "2 bottes" },
       { nb: 13, poulpe: "3.2 kg", huileOlive: "14 c.à.s", citron: "6.5", ail: "13 gousses", persil: "2.2 bottes" },
-      { nb: 14, poulpe: "3.5 kg",huileOlive: "15 c.à.s",citron: "7",  ail: "14 gousses",persil: "2 bottes" }
-    
+      { nb: 14, poulpe: "3.5 kg",huileOlive: "15 c.à.s",citron: "7",  ail: "14 gousses",persil: "2 bottes" },
+      { nb: 15, poulpe: "3.8 kg",huileOlive: "16.1 c.à.s",citron: "7.5",  ail: "15 gousses",persil: "2.1 bottes" }
     ],
     ingredients: {},
     etapes: [
@@ -4372,8 +4372,8 @@ const recettes = {
       { nb: 11, poulet: "2.2 (1.8 kg)", beurre: "110 g", ail: "11 gousses", thym: "11 branches", citron: "2.2" },
       { nb: 12, poulet: "3 (1.5 kg)",beurre: "120 g", ail: "12 gousses",thym: "12 branches",citron: "3" },
       { nb: 13, poulet: "3.2 (1.5 kg)", beurre: "130 g", ail: "13 gousses", thym: "13 branches", citron: "3.2" },
-      { nb: 14, poulet: "3 (1.8 kg)",beurre: "140 g", ail: "14 gousses",thym: "14 branches",citron: "3" }
-    
+      { nb: 14, poulet: "3 (1.8 kg)",beurre: "140 g", ail: "14 gousses",thym: "14 branches",citron: "3" },
+      { nb: 15, poulet: "3.2 (1.8 kg)",beurre: "150 g", ail: "15 gousses",thym: "15 branches",citron: "3.2" }
     ],
     ingredients: {},
     etapes: [
@@ -4405,8 +4405,8 @@ const recettes = {
       { nb: 11, feuilletee: "2.2 ½", lait: "688 ml", jaunes: "5.5", sucre: "138 g", maizena: "55 g", beurre: "55 g" },
       { nb: 12, feuilletee: "3",   lait: "750 ml", jaunes: "6",  sucre: "150 g", maizena: "60 g", beurre: "60 g"  },
       { nb: 13, feuilletee: "3.2", lait: "812 ml", jaunes: "6.5", sucre: "162 g", maizena: "65 g", beurre: "65 g" },
-      { nb: 14, feuilletee: "3½",  lait: "875 ml", jaunes: "7",  sucre: "175 g", maizena: "70 g", beurre: "70 g"  }
-    
+      { nb: 14, feuilletee: "3½",  lait: "875 ml", jaunes: "7",  sucre: "175 g", maizena: "70 g", beurre: "70 g"  },
+      { nb: 15, feuilletee: "3.2½",  lait: "937.5 ml", jaunes: "7.5",  sucre: "187.5 g", maizena: "75 g", beurre: "75 g"  }
     ],
     ingredients: {},
     etapes: [
@@ -4540,13 +4540,21 @@ const recettes = {
     base: 8, temps: "10 min", niveau: "⭐ Facile", emoji: "🍓",
     description: "Punch aux fruits rouges — rhum, fruits frais, jus de fruits et ginger beer. Le cocktail de fête qui régale tout le monde.",
     tableauPunchRouge: [
+      { nb:  1, rhum: "5 cl",   fraises: "50 g",  framboises: "25 g", jusMixte: "10 cl", gingerBeer: "5 cl"  },
       { nb:  2, rhum: "10 cl",  fraises: "100 g", framboises: "50 g", jusMixte: "20 cl", gingerBeer: "10 cl" },
+      { nb:  3, rhum: "15 cl",  fraises: "150 g", framboises: "75 g", jusMixte: "30 cl", gingerBeer: "15 cl" },
       { nb:  4, rhum: "20 cl",  fraises: "200 g", framboises: "100 g",jusMixte: "40 cl", gingerBeer: "20 cl" },
+      { nb:  5, rhum: "25 cl",  fraises: "250 g", framboises: "125 g",jusMixte: "50 cl", gingerBeer: "25 cl" },
       { nb:  6, rhum: "30 cl",  fraises: "300 g", framboises: "150 g",jusMixte: "60 cl", gingerBeer: "30 cl" },
+      { nb:  7, rhum: "35 cl",  fraises: "350 g", framboises: "175 g",jusMixte: "70 cl", gingerBeer: "35 cl" },
       { nb:  8, rhum: "40 cl",  fraises: "400 g", framboises: "200 g",jusMixte: "80 cl", gingerBeer: "40 cl" },
+      { nb:  9, rhum: "45 cl",  fraises: "450 g", framboises: "225 g",jusMixte: "90 cl", gingerBeer: "45 cl" },
       { nb: 10, rhum: "50 cl",  fraises: "500 g", framboises: "250 g",jusMixte: "100 cl",gingerBeer: "50 cl" },
+      { nb: 11, rhum: "55 cl",  fraises: "550 g", framboises: "275 g",jusMixte: "110 cl",gingerBeer: "55 cl" },
       { nb: 12, rhum: "60 cl",  fraises: "600 g", framboises: "300 g",jusMixte: "120 cl",gingerBeer: "60 cl" },
+      { nb: 13, rhum: "65 cl",  fraises: "650 g", framboises: "325 g",jusMixte: "130 cl",gingerBeer: "65 cl" },
       { nb: 14, rhum: "70 cl",  fraises: "700 g", framboises: "350 g",jusMixte: "140 cl",gingerBeer: "70 cl" },
+      { nb: 15, rhum: "75 cl",  fraises: "750 g", framboises: "375 g",jusMixte: "150 cl",gingerBeer: "75 cl" },
     ],
     ingredients: {},
     etapes: [
@@ -4931,6 +4939,77 @@ const recettes = {
       { icone: "🌿", titre: "Finir",                    detail: "Parsemer d'origan frais. Au Brésil on ajoute souvent de la catupiry (fromage crémeux) — remplaçable par crème fraîche épaisse.", badge: null },
     ]
   },
+
+  lasagneviande: {
+    base: 6,
+    temps: "1h30",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🍝",
+    description: "Les lasagnes à la bolognaise maison — ragu de viande mijotée, béchamel crémeuse et parmesan. Le grand classique italien qui réchauffe les cœurs.",
+    tableauLasagneViande: [
+      { nb:  1, viande: "100 g", lasagne: "2 feuilles",  tomates: "75 g", bechamel: "100 ml", parmesan: "15 g",  oignon: "½" },
+      { nb:  2, viande: "200 g", lasagne: "4 feuilles",  tomates: "150 g", bechamel: "200 ml", parmesan: "30 g",  oignon: "½" },
+      { nb:  3, viande: "300 g", lasagne: "6 feuilles",  tomates: "225 g", bechamel: "300 ml", parmesan: "45 g",  oignon: "¾" },
+      { nb:  4, viande: "400 g", lasagne: "8 feuilles",  tomates: "300 g", bechamel: "400 ml", parmesan: "60 g",  oignon: "1" },
+      { nb:  5, viande: "500 g", lasagne: "10 feuilles", tomates: "375 g", bechamel: "500 ml", parmesan: "75 g",  oignon: "1" },
+      { nb:  6, viande: "600 g", lasagne: "12 feuilles", tomates: "450 g", bechamel: "600 ml", parmesan: "90 g",  oignon: "1" },
+      { nb:  7, viande: "700 g", lasagne: "14 feuilles", tomates: "525 g", bechamel: "700 ml", parmesan: "105 g", oignon: "1½"},
+      { nb:  8, viande: "800 g", lasagne: "16 feuilles", tomates: "600 g", bechamel: "800 ml", parmesan: "120 g", oignon: "2" },
+      { nb:  9, viande: "900 g", lasagne: "18 feuilles", tomates: "675 g", bechamel: "900 ml", parmesan: "135 g", oignon: "2" },
+      { nb: 10, viande: "1 kg",  lasagne: "20 feuilles", tomates: "750 g", bechamel: "1 L",    parmesan: "150 g", oignon: "2" },
+      { nb: 11, viande: "1.1 kg",lasagne: "22 feuilles", tomates: "825 g", bechamel: "1.1 L",  parmesan: "165 g", oignon: "2½"},
+      { nb: 12, viande: "1.2 kg",lasagne: "24 feuilles", tomates: "900 g", bechamel: "1.2 L",  parmesan: "180 g", oignon: "3" },
+      { nb: 13, viande: "1.3 kg",lasagne: "26 feuilles", tomates: "975 g", bechamel: "1.3 L",  parmesan: "195 g", oignon: "3" },
+      { nb: 14, viande: "1.4 kg",lasagne: "28 feuilles", tomates: "1050 g",bechamel: "1.4 L",  parmesan: "210 g", oignon: "3" },
+      { nb: 15, viande: "1.5 kg",lasagne: "30 feuilles", tomates: "1125 g",bechamel: "1.5 L",  parmesan: "225 g", oignon: "4" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Ragu bolognaise",          detail: "Faire revenir oignon et ail. Ajouter la viande hachée et dorer. Ajouter tomates concassées, concentré de tomate, herbes. Mijoter à feu doux.", badge: "⏱ 45 min" },
+      { icone: "🥛", titre: "Béchamel",                 detail: "Faire fondre beurre, ajouter farine, fouetter. Verser le lait chaud progressivement. Assaisonner de sel, poivre et muscade.", badge: "⏱ 10 min" },
+      { icone: "🏗️", titre: "Monter les lasagnes",     detail: "Alterner : béchamel, feuilles, ragu, béchamel. Répéter 3-4 couches. Finir par béchamel et parmesan râpé.", badge: null },
+      { icone: "🔥", titre: "Cuire",                    detail: "Couvrir d'alu 30 min, puis 15 min à découvert pour gratiner.", badge: "⏱ 45 min à 180°C" },
+      { icone: "⏳", titre: "Laisser reposer",          detail: "Laisser reposer 10 min avant de couper — les lasagnes tiennent mieux.", badge: "⏱ 10 min" },
+    ]
+  },
+
+
+
+  risottoprimavera: {
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🌸",
+    description: "Risotto Primavera — crémeux avec petits pois, asperges et parmesan. La version printanière du risotto, légère et colorée.",
+    tableauRisottoPrimavera: [
+      { nb:  1, riz: "70 g",  bouillon: "300 ml", petitspois: "40 g", asperges: "2",  parmesan: "20 g", vin: "2 c.à.s" },
+      { nb:  2, riz: "140 g", bouillon: "600 ml", petitspois: "80 g", asperges: "4",  parmesan: "40 g", vin: "4 c.à.s" },
+      { nb:  3, riz: "210 g", bouillon: "900 ml", petitspois: "120 g",asperges: "6",  parmesan: "60 g", vin: "6 c.à.s" },
+      { nb:  4, riz: "280 g", bouillon: "1.2 L",  petitspois: "160 g",asperges: "8",  parmesan: "80 g", vin: "8 c.à.s" },
+      { nb:  5, riz: "350 g", bouillon: "1.5 L",  petitspois: "200 g",asperges: "10", parmesan: "100 g",vin: "10 c.à.s"},
+      { nb:  6, riz: "420 g", bouillon: "1.8 L",  petitspois: "240 g",asperges: "12", parmesan: "120 g",vin: "12 c.à.s"},
+      { nb:  7, riz: "490 g", bouillon: "2.1 L",  petitspois: "280 g",asperges: "14", parmesan: "140 g",vin: "14 c.à.s"},
+      { nb:  8, riz: "560 g", bouillon: "2.4 L",  petitspois: "320 g",asperges: "16", parmesan: "160 g",vin: "16 c.à.s"},
+      { nb:  9, riz: "630 g", bouillon: "2.7 L",  petitspois: "360 g",asperges: "18", parmesan: "180 g",vin: "18 c.à.s"},
+      { nb: 10, riz: "700 g", bouillon: "3 L",    petitspois: "400 g",asperges: "20", parmesan: "200 g",vin: "20 c.à.s"},
+      { nb: 11, riz: "770 g", bouillon: "3.3 L",  petitspois: "440 g",asperges: "22", parmesan: "220 g",vin: "22 c.à.s"},
+      { nb: 12, riz: "840 g", bouillon: "3.6 L",  petitspois: "480 g",asperges: "24", parmesan: "240 g",vin: "24 c.à.s"},
+      { nb: 13, riz: "910 g", bouillon: "3.9 L",  petitspois: "520 g",asperges: "26", parmesan: "260 g",vin: "26 c.à.s"},
+      { nb: 14, riz: "980 g", bouillon: "4.2 L",  petitspois: "560 g",asperges: "28", parmesan: "280 g",vin: "28 c.à.s"},
+      { nb: 15, riz: "1050 g",bouillon: "4.5 L",  petitspois: "600 g",asperges: "30", parmesan: "300 g",vin: "30 c.à.s"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Préparer les légumes",     detail: "Blanchir les asperges 3 min. Couper en tronçons. Blanchir les petits pois 2 min.", badge: null },
+      { icone: "🧅", titre: "Base",                     detail: "Faire revenir échalote dans huile d'olive et beurre. Ajouter le riz arborio et nacrer 2 min.", badge: null },
+      { icone: "🍷", titre: "Vin blanc",                detail: "Ajouter le vin blanc, remuer jusqu'à absorption.", badge: null },
+      { icone: "🍲", titre: "Cuire louche par louche",  detail: "Ajouter le bouillon chaud louche par louche en remuant constamment. Le riz doit être al dente.", badge: "⏱ 18-20 min" },
+      { icone: "🧀", titre: "Mantecatura",              detail: "Hors du feu, ajouter beurre froid et parmesan. Remuer énergiquement. Incorporer légumes. Servir immédiatement.", badge: null },
+    ]
+  },
+
+
+
   boeufbourguignon: {
     base: 6,
     temps: "3h30 + marinade",
@@ -6587,6 +6666,9 @@ function initTablesGlobales() {
     "poulpegrillebresil":{ table: "tableauPoulpe",         fn: htmlTableauPoulpeColonnes,         label: "personne" },
     "pouletrotiperfect":{ table: "tableauPouletRoti",      fn: htmlTableauPouletRotiColonnes,     label: "personne" },
     "millefeuille":    { table: "tableauMillefeuille",     fn: htmlTableauMillefeuilleColonnes,   label: "personne" },
+    "lasagneviande":   { table: "tableauLasagneViande",    fn: htmlTableauLasagneViandeColonnes,  label: "personne" },
+    "risottoprimavera":{ table: "tableauRisottoPrimavera", fn: htmlTableauRisottoPrimaveraColonnes,label: "personne" },
+    "bolognaisemaison":{ table: "tableauBolognaise",       fn: htmlTableauBolognaiseColonnes,     label: "personne" },
     "saumoncrouteherbes":{ table: "tableauSaumonCroute",   fn: htmlTableauSaumonCrouteColonnes,   label: "personne" },
     "pizzaprosciuttoroquette":{ table: "tableauPizzaProsciutto", fn: htmlTableauPizzaProsciuttoColonnes, label: "pizza" },
     "pizzatruffe":     { table: "tableauPizzaTruffe",     fn: htmlTableauPizzaTruffeColonnes,    label: "pizza" },
@@ -6874,6 +6956,40 @@ function htmlTableauParisBrestColonnes(l) {
     <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
     <tr><th>🧈 Beurre mou</th><td>${l.beurrCreme}</td></tr>
     <tr><th>🌰 Pâte de pralin</th><td>${l.pralin}</td></tr>`);
+}
+
+function htmlTableauLasagneViandeColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr><tr><th>🍝 Feuilles de lasagne</th><td>${l.lasagne}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+function htmlTableauSouvlakiPouletColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr><tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr><tr><th>🌿 Origan</th><td>${l.origan}</td></tr>`);
+}
+function htmlTableauButterChickenColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr><tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>`);
+}
+function htmlTableauRisottoPrimaveraColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍚 Riz arborio</th><td>${l.riz}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🫛 Petits pois</th><td>${l.petitspois}</td></tr><tr><th>🌿 Asperges</th><td>${l.asperges}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🍷 Vin blanc</th><td>${l.vin}</td></tr>`);
+}
+function htmlTableauBolognaiseColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée mixte</th><td>${l.viande}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🍷 Vin rouge</th><td>${l.vin}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>`);
+}
+function htmlTableauTacosViandeColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr><tr><th>🌮 Tortillas</th><td>${l.tortillas}</td></tr><tr><th>🥑 Avocats</th><td>${l.avocat}</td></tr><tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr><tr><th>🧀 Fromage râpé</th><td>${l.fromage}</td></tr><tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>`);
+}
+function htmlTableauCouscousRoyalColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Semoule</th><td>${l.semoule}</td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌭 Merguez</th><td>${l.merguez}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🥕 Carotte</th><td>${l.carotte}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
+}
+function htmlTableauMoussakaColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐑 Agneau haché</th><td>${l.agneau}</td></tr><tr><th>🍆 Aubergines</th><td>${l.aubergines}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+function htmlTableauPaellaColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍚 Riz à paella</th><td>${l.riz}</td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌭 Chorizo</th><td>${l.chorizo}</td></tr><tr><th>🦪 Moules</th><td>${l.moules}</td></tr><tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr><tr><th>🌼 Safran</th><td>${l.safran}</td></tr>`);
+}
+function htmlTableauQuicheLorraineColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥐 Pâte brisée</th><td>${l.pate}</td></tr><tr><th>🥓 Lardons fumés</th><td>${l.lardons}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🧀 Gruyère</th><td>${l.gruyere}</td></tr>`);
+}
+function htmlTableauDalIndienColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🫘 Lentilles corail</th><td>${l.lentilles}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr><tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
 }
 
 function htmlTableauBibimbapColonnes(l) {
@@ -8263,7 +8379,6 @@ function calculer() {
   const hellofreshTables = {
     "pouletcitronthym":  { table: "tableauPouletCitron",      fn: htmlTableauPouletCitronColonnes,    label: "personne" },
     "salmonteriyaki":    { table: "tableauSalmonTeriyaki",     fn: htmlTableauSalmonTeriyakiColonnes,  label: "personne" },
-    "bolognaisemaison":  { table: "tableauBolognaise",         fn: htmlTableauBolognaiseColonnes,      label: "personne" },
     "tacosmaison":       { table: "tableauTacos",              fn: htmlTableauTacosColonnes,           label: "taco" },
     "padthai":           { table: "tableauPadThai",            fn: htmlTableauPadThaiColonnes,         label: "personne" },
     "currypouletcoco":   { table: "tableauCurryPoulet",        fn: htmlTableauCurryPouletColonnes,     label: "personne" },
@@ -8548,6 +8663,8 @@ const prixCalories = {
   pizzapoivrons:      { base: 2,  baseLabel: "2 pizzas", prixTotal: 4.00, calTotal: 1100, unite: "pizza"  },
   pizzapatate:        { base: 2,  baseLabel: "2 pizzas", prixTotal: 3.50, calTotal: 1000, unite: "pizza"  },
   pizzabresilienne:   { base: 2,  baseLabel: "2 pizzas", prixTotal: 4.50, calTotal: 1100, unite: "pizza"  },
+  lasagneviande:      { base: 6,  baseLabel: "6 personnes",   prixTotal: 7.00,  calTotal: 2400, unite: "personne" },
+  risottoprimavera:   { base: 4,  baseLabel: "4 personnes",   prixTotal: 5.00,  calTotal: 1400, unite: "personne" },
   bibimbap:           { base: 2,  baseLabel: "2 bols",        prixTotal: 7.00,  calTotal: 1000, unite: "bol"      },
   moquecabresil:      { base: 4,  baseLabel: "4 personnes",   prixTotal: 9.00,  calTotal: 1200, unite: "personne" },
   rendangboeuf:       { base: 4,  baseLabel: "4 personnes",   prixTotal: 12.00, calTotal: 2000, unite: "personne" },
@@ -9146,6 +9263,8 @@ function choisirRecette(nom) {
     "parisbrestreinterpretation": "Paris-Brest",
     "ramenjaponais":     "Ramen Japonais",
     "bibimbap":          "Bibimbap",
+    "lasagneviande":     "Lasagnes Bolognaise",
+    "risottoprimavera":  "Risotto Primavera",
     "tequilasunrise":    "Tequila Sunrise",
     "aperolspritzrosa":  "Spritz Rosé",
     "espressoMartini":   "Espresso Martini",
