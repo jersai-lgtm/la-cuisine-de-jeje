@@ -342,15 +342,22 @@ const recettes = {
     emoji: "🍔",
     description: "Des buns briochés ultra moelleux à la mie aérienne — croûte fine et légèrement dorée. Une fois faits maison, impossible de revenir aux buns du commerce !",
     tableauPainBurger: [
+      { nb:  1, farine: "65 g", lait: "35 ml", beurre: "10 g", huile: "3.5 ml", oeufs: "⅓", levure: "1.5 g", sucre: "4 g", miel: "1.5 g", sel: "1 g" },
       { nb:  2, farine: "130 g", lait: "70 ml",  beurre: "20 g", huile: "7 ml",  oeufs: "⅓", levure: "3 g",  sucre: "8 g",  miel: "3 g",  sel: "2 g"  },
+      { nb:  3, farine: "195 g", lait: "105 ml", beurre: "30 g", huile: "10 ml", oeufs: "⅓", levure: "4.5 g", sucre: "12 g", miel: "4.5 g", sel: "3 g" },
       { nb:  4, farine: "260 g", lait: "140 ml", beurre: "40 g", huile: "14 ml", oeufs: "⅔", levure: "5 g",  sucre: "15 g", miel: "5 g",  sel: "4 g"  },
+      { nb:  5, farine: "325 g", lait: "175 ml", beurre: "50 g", huile: "18 ml", oeufs: "⅔", levure: "6.2 g", sucre: "19 g", miel: "6.2 g", sel: "5 g" },
       { nb:  6, farine: "400 g", lait: "210 ml", beurre: "60 g", huile: "20 ml", oeufs: "1",  levure: "8 g",  sucre: "22 g", miel: "8 g",  sel: "6 g"  },
+      { nb:  7, farine: "467 g", lait: "245 ml", beurre: "70 g", huile: "23 ml", oeufs: "1.2", levure: "9.3 g", sucre: "26 g", miel: "9.3 g", sel: "7 g" },
       { nb:  8, farine: "530 g", lait: "280 ml", beurre: "80 g", huile: "27 ml", oeufs: "1⅓", levure: "10 g", sucre: "30 g", miel: "10 g", sel: "8 g"  },
+      { nb:  9, farine: "596 g", lait: "315 ml", beurre: "90 g", huile: "30 ml", oeufs: "1.1 ⅓", levure: "11 g", sucre: "34 g", miel: "11 g", sel: "9 g" },
       { nb: 10, farine: "660 g", lait: "350 ml", beurre: "100 g",huile: "34 ml", oeufs: "1⅔", levure: "13 g", sucre: "37 g", miel: "13 g", sel: "10 g" },
+      { nb: 11, farine: "726 g", lait: "385 ml", beurre: "110 g", huile: "37 ml", oeufs: "1.1 ⅔", levure: "14 g", sucre: "41 g", miel: "14 g", sel: "11 g" },
       { nb: 12, farine: "800 g", lait: "420 ml", beurre: "120 g",huile: "40 ml", oeufs: "2",  levure: "16 g", sucre: "44 g", miel: "16 g", sel: "12 g" },
       { nb: 13, farine: "867 g", lait: "455 ml", beurre: "130 g", huile: "43 ml", oeufs: "2.2", levure: "17 g", sucre: "48 g", miel: "17 g", sel: "13 g" },
       { nb: 14, farine: "933 g", lait: "490 ml", beurre: "140 g", huile: "47 ml", oeufs: "2.3", levure: "19 g", sucre: "51 g", miel: "19 g", sel: "14 g" },
-      { nb: 15, farine: "1000 g", lait: "525 ml", beurre: "150 g", huile: "50 ml", oeufs: "2.5", levure: "20 g", sucre: "55 g", miel: "20 g", sel: "15 g" },
+      { nb: 15, farine: "1000 g", lait: "525 ml", beurre: "150 g", huile: "50 ml", oeufs: "2.5", levure: "20 g", sucre: "55 g", miel: "20 g", sel: "15 g" }
+    
     
     ],
     ingredients: {},
@@ -374,14 +381,23 @@ const recettes = {
     emoji: "🌮",
     description: "Les galettes à tacos maison souples et moelleuses — bien meilleures que celles du commerce et ultra simples à faire. Parfaites pour tacos, wraps et fajitas !",
     tableauGaletteTacos: [
+      { nb:  1, farine: "30 g", eau: "18 ml", huile: "2.5 ml", sel: "0.5 g" },
       { nb:  2, farine: "60 g",  eau: "35 ml", huile: "5 ml",  sel: "1 g"  },
+      { nb:  3, farine: "90 g", eau: "52 ml", huile: "7.5 ml", sel: "1.5 g" },
       { nb:  4, farine: "120 g", eau: "70 ml", huile: "10 ml", sel: "2 g"  },
+      { nb:  5, farine: "150 g", eau: "88 ml", huile: "12 ml", sel: "2.5 g" },
       { nb:  6, farine: "180 g", eau: "105 ml",huile: "15 ml", sel: "3 g"  },
+      { nb:  7, farine: "210 g", eau: "123 ml", huile: "18 ml", sel: "3.5 g" },
       { nb:  8, farine: "240 g", eau: "140 ml",huile: "20 ml", sel: "4 g"  },
+      { nb:  9, farine: "270 g", eau: "158 ml", huile: "22 ml", sel: "4.5 g" },
       { nb: 10, farine: "300 g", eau: "175 ml",huile: "25 ml", sel: "5 g"  },
+      { nb: 11, farine: "330 g", eau: "193 ml", huile: "28 ml", sel: "5.5 g" },
       { nb: 12, farine: "360 g", eau: "210 ml",huile: "30 ml", sel: "6 g"  },
+      { nb: 13, farine: "390 g", eau: "227 ml", huile: "32 ml", sel: "6.5 g" },
       { nb: 14, farine: "420 g", eau: "245 ml",huile: "35 ml", sel: "7 g"  },
-      { nb: 16, farine: "480 g", eau: "280 ml",huile: "40 ml", sel: "8 g"  },
+      { nb: 15, farine: "450 g", eau: "262 ml", huile: "38 ml", sel: "7.5 g" },
+      { nb: 16, farine: "480 g", eau: "280 ml",huile: "40 ml", sel: "8 g"  }
+    
     ],
     ingredients: {},
     etapes: [
@@ -1121,15 +1137,22 @@ const recettes = {
     emoji: "🥘",
     description: "Le couscous royal marocain — semoule parfumée, légumes mijotés, merguez et poulet dans un bouillon épicé.",
     tableauCouscous: [
+      { nb:  1, semoule: "100 g", poulet: "150 g", merguez: "1", courgette: "0.5", carotte: "1", pois: "50 g" },
       { nb:  2, semoule: "200 g", poulet: "300 g", merguez: "2",   courgette: "1",  carotte: "2",  pois: "100 g" },
+      { nb:  3, semoule: "300 g", poulet: "450 g", merguez: "3", courgette: "1.5", carotte: "3", pois: "150 g" },
       { nb:  4, semoule: "400 g", poulet: "600 g", merguez: "4",   courgette: "2",  carotte: "4",  pois: "200 g" },
+      { nb:  5, semoule: "500 g", poulet: "750 g", merguez: "5", courgette: "2.5", carotte: "5", pois: "250 g" },
       { nb:  6, semoule: "600 g", poulet: "900 g", merguez: "6",   courgette: "3",  carotte: "6",  pois: "300 g" },
+      { nb:  7, semoule: "700 g", poulet: "1050 g", merguez: "7", courgette: "3.5", carotte: "7", pois: "350 g" },
       { nb:  8, semoule: "800 g", poulet: "1.2 kg",merguez: "8",   courgette: "4",  carotte: "8",  pois: "400 g" },
+      { nb:  9, semoule: "900 g", poulet: "1.3 kg", merguez: "9", courgette: "4.5", carotte: "9", pois: "450 g" },
       { nb: 10, semoule: "1 kg",  poulet: "1.5 kg",merguez: "10",  courgette: "5",  carotte: "10", pois: "500 g" },
+      { nb: 11, semoule: "1.1 kg", poulet: "1.7 kg", merguez: "11", courgette: "5.5", carotte: "11", pois: "550 g" },
       { nb: 12, semoule: "1.2 kg",poulet: "1.8 kg",merguez: "12",  courgette: "6",  carotte: "12", pois: "600 g" },
       { nb: 13, semoule: "1300 g", poulet: "1950 g", merguez: "13", courgette: "6.5", carotte: "13", pois: "650 g" },
       { nb: 14, semoule: "1400 g", poulet: "2100 g", merguez: "14", courgette: "7", carotte: "14", pois: "700 g" },
-      { nb: 15, semoule: "1500 g", poulet: "2250 g", merguez: "15", courgette: "7.5", carotte: "15", pois: "750 g" },
+      { nb: 15, semoule: "1500 g", poulet: "2250 g", merguez: "15", courgette: "7.5", carotte: "15", pois: "750 g" }
+    
     
     ],
     ingredients: {},
@@ -1149,15 +1172,22 @@ const recettes = {
     emoji: "🍆",
     description: "La moussaka grecque authentique — aubergines dorées, viande hachée épicée à la cannelle et béchamel crémeuse gratinée.",
     tableauMoussaka: [
+      { nb:  1, aubergines: "0.5", viande: "100 g", tomates: "100 g", bechamel: "100 ml", parmesan: "15 g" },
       { nb:  2, aubergines: "1",   viande: "200 g", tomates: "200 g", bechamel: "200 ml", parmesan: "30 g"  },
+      { nb:  3, aubergines: "1.5", viande: "300 g", tomates: "300 g", bechamel: "300 ml", parmesan: "45 g" },
       { nb:  4, aubergines: "2",   viande: "400 g", tomates: "400 g", bechamel: "400 ml", parmesan: "60 g"  },
+      { nb:  5, aubergines: "2.5", viande: "500 g", tomates: "500 g", bechamel: "500 ml", parmesan: "75 g" },
       { nb:  6, aubergines: "3",   viande: "600 g", tomates: "600 g", bechamel: "600 ml", parmesan: "90 g"  },
+      { nb:  7, aubergines: "3.5", viande: "700 g", tomates: "700 g", bechamel: "700 ml", parmesan: "105 g" },
       { nb:  8, aubergines: "4",   viande: "800 g", tomates: "800 g", bechamel: "800 ml", parmesan: "120 g" },
+      { nb:  9, aubergines: "4.5", viande: "900 g", tomates: "900 g", bechamel: "900 ml", parmesan: "135 g" },
       { nb: 10, aubergines: "5",   viande: "1 kg",  tomates: "1 kg",  bechamel: "1 L",    parmesan: "150 g" },
+      { nb: 11, aubergines: "5.5", viande: "1.1 kg", tomates: "1.1 kg", bechamel: "1.1 L", parmesan: "165 g" },
       { nb: 12, aubergines: "6",   viande: "1.2 kg",tomates: "1.2 kg",bechamel: "1.2 L",  parmesan: "180 g" },
       { nb: 13, aubergines: "6.5", viande: "1300 g", tomates: "1300 g", bechamel: "1300 ml", parmesan: "195 g" },
       { nb: 14, aubergines: "7", viande: "1400 g", tomates: "1400 g", bechamel: "1400 ml", parmesan: "210 g" },
-      { nb: 15, aubergines: "7.5", viande: "1500 g", tomates: "1500 g", bechamel: "1500 ml", parmesan: "225 g" },
+      { nb: 15, aubergines: "7.5", viande: "1500 g", tomates: "1500 g", bechamel: "1500 ml", parmesan: "225 g" }
+    
     
     ],
     ingredients: {},
@@ -1177,15 +1207,22 @@ const recettes = {
     emoji: "🥘",
     description: "La paella valenciana — riz safrané aux fruits de mer, poulet et chorizo. Le plat festif espagnol par excellence.",
     tableauPaella: [
+      { nb:  1, riz: "75 g", poulet: "100 g", crevettes: "50 g", moules: "100 g", chorizo: "25 g", safran: "0.5 pincée" },
       { nb:  2, riz: "150 g", poulet: "200 g", crevettes: "100 g", moules: "200 g", chorizo: "50 g",  safran: "1 pincée" },
+      { nb:  3, riz: "225 g", poulet: "300 g", crevettes: "150 g", moules: "300 g", chorizo: "75 g", safran: "1.5 pincée" },
       { nb:  4, riz: "300 g", poulet: "400 g", crevettes: "200 g", moules: "400 g", chorizo: "100 g", safran: "1 pincée" },
+      { nb:  5, riz: "375 g", poulet: "500 g", crevettes: "250 g", moules: "500 g", chorizo: "125 g", safran: "1.2 pincée" },
       { nb:  6, riz: "450 g", poulet: "600 g", crevettes: "300 g", moules: "600 g", chorizo: "150 g", safran: "2 pincées"},
+      { nb:  7, riz: "525 g", poulet: "700 g", crevettes: "350 g", moules: "700 g", chorizo: "175 g", safran: "2.3 pincées" },
       { nb:  8, riz: "600 g", poulet: "800 g", crevettes: "400 g", moules: "800 g", chorizo: "200 g", safran: "2 pincées"},
+      { nb:  9, riz: "675 g", poulet: "900 g", crevettes: "450 g", moules: "900 g", chorizo: "225 g", safran: "2.2 pincées" },
       { nb: 10, riz: "750 g", poulet: "1 kg",  crevettes: "500 g", moules: "1 kg",  chorizo: "250 g", safran: "3 pincées"},
+      { nb: 11, riz: "825 g", poulet: "1.1 kg", crevettes: "550 g", moules: "1.1 kg", chorizo: "275 g", safran: "3.3 pincées" },
       { nb: 12, riz: "900 g", poulet: "1.2 kg",crevettes: "600 g", moules: "1.2 kg",chorizo: "300 g", safran: "3 pincées"},
       { nb: 13, riz: "975 g", poulet: "1300 g", crevettes: "650 g", moules: "1300 g", chorizo: "325 g", safran: "4.3 pincées" },
       { nb: 14, riz: "1050 g", poulet: "1400 g", crevettes: "700 g", moules: "1400 g", chorizo: "350 g", safran: "4.7 pincées" },
-      { nb: 15, riz: "1125 g", poulet: "1500 g", crevettes: "750 g", moules: "1500 g", chorizo: "375 g", safran: "5 pincées" },
+      { nb: 15, riz: "1125 g", poulet: "1500 g", crevettes: "750 g", moules: "1500 g", chorizo: "375 g", safran: "5 pincées" }
+    
     
     ],
     ingredients: {},
@@ -1209,7 +1246,9 @@ const recettes = {
       { nb:  2, poulet: "300 g", tomates: "200 g", creme: "100 ml", beurre: "30 g", masala: "2 c.à.c" },
       { nb:  3, poulet: "450 g", tomates: "300 g", creme: "150 ml", beurre: "45 g", masala: "3 c.à.c" },
       { nb:  4, poulet: "600 g", tomates: "400 g", creme: "200 ml", beurre: "60 g", masala: "4 c.à.c" },
+      { nb:  5, poulet: "750 g", tomates: "500 g", creme: "250 ml", beurre: "75 g", masala: "5 c.à.c" },
       { nb:  6, poulet: "900 g", tomates: "600 g", creme: "300 ml", beurre: "90 g", masala: "6 c.à.c" },
+      { nb:  7, poulet: "1050 g", tomates: "700 g", creme: "350 ml", beurre: "105 g", masala: "7 c.à.c" },
       { nb:  8, poulet: "1.2 kg",tomates: "800 g", creme: "400 ml", beurre: "120 g",masala: "8 c.à.c" },
       { nb:  9, poulet: "1350 g", tomates: "900 g", creme: "450 ml", beurre: "135 g", masala: "9 c.à.c" },
       { nb: 10, poulet: "1500 g", tomates: "1000 g", creme: "500 ml", beurre: "150 g", masala: "10 c.à.c" },
@@ -1217,7 +1256,8 @@ const recettes = {
       { nb: 12, poulet: "1800 g", tomates: "1200 g", creme: "600 ml", beurre: "180 g", masala: "12 c.à.c" },
       { nb: 13, poulet: "1950 g", tomates: "1300 g", creme: "650 ml", beurre: "195 g", masala: "13 c.à.c" },
       { nb: 14, poulet: "2100 g", tomates: "1400 g", creme: "700 ml", beurre: "210 g", masala: "14 c.à.c" },
-      { nb: 15, poulet: "2250 g", tomates: "1500 g", creme: "750 ml", beurre: "225 g", masala: "15 c.à.c" },
+      { nb: 15, poulet: "2250 g", tomates: "1500 g", creme: "750 ml", beurre: "225 g", masala: "15 c.à.c" }
+    
     
     ],
     ingredients: {},
@@ -1237,15 +1277,22 @@ const recettes = {
     emoji: "🍢",
     description: "Les souvlaki grecs — brochettes de porc marinées à l'origan et citron, servies avec tzatziki et pain pita.",
     tableauSouvlaki: [
+      { nb:  1, porc: "150 g", pita: "1", concombre: "¼", yaourt: "50 g", citron: "½" },
       { nb:  2, porc: "300 g", pita: "2",  concombre: "¼",  yaourt: "100 g", citron: "½" },
+      { nb:  3, porc: "450 g", pita: "3", concombre: "¼", yaourt: "150 g", citron: "½" },
       { nb:  4, porc: "600 g", pita: "4",  concombre: "½",  yaourt: "200 g", citron: "1" },
+      { nb:  5, porc: "750 g", pita: "5", concombre: "½", yaourt: "250 g", citron: "1.2" },
       { nb:  6, porc: "900 g", pita: "6",  concombre: "¾",  yaourt: "300 g", citron: "1" },
+      { nb:  7, porc: "1050 g", pita: "7", concombre: "¾", yaourt: "350 g", citron: "1.2" },
       { nb:  8, porc: "1.2 kg",pita: "8",  concombre: "1",  yaourt: "400 g", citron: "2" },
+      { nb:  9, porc: "1.3 kg", pita: "9", concombre: "1.1", yaourt: "450 g", citron: "2.2" },
       { nb: 10, porc: "1.5 kg",pita: "10", concombre: "1½", yaourt: "500 g", citron: "2" },
+      { nb: 11, porc: "1.7 kg", pita: "11", concombre: "1.1 ½", yaourt: "550 g", citron: "2.2" },
       { nb: 12, porc: "1.8 kg",pita: "12", concombre: "2",  yaourt: "600 g", citron: "3" },
       { nb: 13, porc: "1950 g", pita: "13", concombre: "¾", yaourt: "650 g", citron: "2.2" },
       { nb: 14, porc: "2100 g", pita: "14", concombre: "¾", yaourt: "700 g", citron: "2.3" },
-      { nb: 15, porc: "2250 g", pita: "15", concombre: "¾", yaourt: "750 g", citron: "2.5" },
+      { nb: 15, porc: "2250 g", pita: "15", concombre: "¾", yaourt: "750 g", citron: "2.5" }
+    
     
     ],
     ingredients: {},
@@ -1265,15 +1312,22 @@ const recettes = {
     emoji: "🥧",
     description: "La vraie quiche lorraine — pâte brisée croustillante, lardons fumés et appareil œufs-crème. La recette traditionnelle.",
     tableauQuiche: [
+      { nb:  1, lardons: "38 g", oeufs: "1", creme: "50 ml", lait: "25 ml" },
       { nb:  2, lardons: "75 g",  oeufs: "2",  creme: "100 ml", lait: "50 ml"  },
+      { nb:  3, lardons: "112 g", oeufs: "3", creme: "150 ml", lait: "75 ml" },
       { nb:  4, lardons: "150 g", oeufs: "3",  creme: "200 ml", lait: "100 ml" },
+      { nb:  5, lardons: "188 g", oeufs: "3.8", creme: "250 ml", lait: "125 ml" },
       { nb:  6, lardons: "200 g", oeufs: "4",  creme: "300 ml", lait: "150 ml" },
+      { nb:  7, lardons: "233 g", oeufs: "4.7", creme: "350 ml", lait: "175 ml" },
       { nb:  8, lardons: "275 g", oeufs: "5",  creme: "400 ml", lait: "200 ml" },
+      { nb:  9, lardons: "309 g", oeufs: "5.6", creme: "450 ml", lait: "225 ml" },
       { nb: 10, lardons: "350 g", oeufs: "6",  creme: "500 ml", lait: "250 ml" },
+      { nb: 11, lardons: "385 g", oeufs: "6.6", creme: "550 ml", lait: "275 ml" },
       { nb: 12, lardons: "400 g", oeufs: "7",  creme: "600 ml", lait: "300 ml" },
       { nb: 13, lardons: "433 g", oeufs: "8.7", creme: "650 ml", lait: "325 ml" },
       { nb: 14, lardons: "467 g", oeufs: "9.3", creme: "700 ml", lait: "350 ml" },
-      { nb: 15, lardons: "500 g", oeufs: "10", creme: "750 ml", lait: "375 ml" },
+      { nb: 15, lardons: "500 g", oeufs: "10", creme: "750 ml", lait: "375 ml" }
+    
     
     ],
     ingredients: {},
@@ -1297,7 +1351,9 @@ const recettes = {
       { nb:  2, oignons: "400 g", bouillon: "500 ml", pain: "2 tr.", gruyere: "60 g",  beurre: "20 g" },
       { nb:  3, oignons: "600 g", bouillon: "750 ml", pain: "3 tr.", gruyere: "90 g",  beurre: "30 g" },
       { nb:  4, oignons: "800 g", bouillon: "1 L",    pain: "4 tr.", gruyere: "120 g", beurre: "40 g" },
+      { nb:  5, oignons: "1000 g", bouillon: "1.2 L", pain: "5 tr.", gruyere: "150 g", beurre: "50 g" },
       { nb:  6, oignons: "1.2 kg",bouillon: "1.5 L",  pain: "6 tr.", gruyere: "180 g", beurre: "60 g" },
+      { nb:  7, oignons: "1.4 kg", bouillon: "1.8 L", pain: "7 tr.", gruyere: "210 g", beurre: "70 g" },
       { nb:  8, oignons: "1.6 kg",bouillon: "2 L",    pain: "8 tr.", gruyere: "240 g", beurre: "80 g" },
       { nb:  9, oignons: "1800 g", bouillon: "2.2 L", pain: "9 tr.", gruyere: "270 g", beurre: "90 g" },
       { nb: 10, oignons: "2000 g", bouillon: "2.5 L", pain: "10 tr.", gruyere: "300 g", beurre: "100 g" },
@@ -1305,7 +1361,8 @@ const recettes = {
       { nb: 12, oignons: "2400 g", bouillon: "3 L", pain: "12 tr.", gruyere: "360 g", beurre: "120 g" },
       { nb: 13, oignons: "2600 g", bouillon: "3.2 L", pain: "13 tr.", gruyere: "390 g", beurre: "130 g" },
       { nb: 14, oignons: "2800 g", bouillon: "3.5 L", pain: "14 tr.", gruyere: "420 g", beurre: "140 g" },
-      { nb: 15, oignons: "3000 g", bouillon: "3.8 L", pain: "15 tr.", gruyere: "450 g", beurre: "150 g" },
+      { nb: 15, oignons: "3000 g", bouillon: "3.8 L", pain: "15 tr.", gruyere: "450 g", beurre: "150 g" }
+    
     
     ],
     ingredients: {},
@@ -1329,7 +1386,9 @@ const recettes = {
       { nb:  2, lentilles: "120 g", coco: "200 ml", tomates: "200 g", oignon: "½", masala: "1 c.à.c"  },
       { nb:  3, lentilles: "180 g", coco: "300 ml", tomates: "300 g", oignon: "¾", masala: "1½ c.à.c" },
       { nb:  4, lentilles: "250 g", coco: "400 ml", tomates: "400 g", oignon: "1", masala: "2 c.à.c"  },
+      { nb:  5, lentilles: "312 g", coco: "500 ml", tomates: "500 g", oignon: "1.2", masala: "2.5 c.à.c" },
       { nb:  6, lentilles: "370 g", coco: "600 ml", tomates: "600 g", oignon: "1", masala: "3 c.à.c"  },
+      { nb:  7, lentilles: "432 g", coco: "700 ml", tomates: "700 g", oignon: "1.2", masala: "3.5 c.à.c" },
       { nb:  8, lentilles: "500 g", coco: "800 ml", tomates: "800 g", oignon: "2", masala: "4 c.à.c"  },
       { nb:  9, lentilles: "562 g", coco: "900 ml", tomates: "900 g", oignon: "2.2", masala: "4.5 c.à.c" },
       { nb: 10, lentilles: "625 g", coco: "1000 ml", tomates: "1000 g", oignon: "2.5", masala: "5 c.à.c" },
@@ -1337,7 +1396,8 @@ const recettes = {
       { nb: 12, lentilles: "750 g", coco: "1200 ml", tomates: "1200 g", oignon: "3", masala: "6 c.à.c" },
       { nb: 13, lentilles: "812 g", coco: "1300 ml", tomates: "1300 g", oignon: "3.2", masala: "6.5 c.à.c" },
       { nb: 14, lentilles: "875 g", coco: "1400 ml", tomates: "1400 g", oignon: "3.5", masala: "7 c.à.c" },
-      { nb: 15, lentilles: "938 g", coco: "1500 ml", tomates: "1500 g", oignon: "3.8", masala: "7.5 c.à.c" },
+      { nb: 15, lentilles: "938 g", coco: "1500 ml", tomates: "1500 g", oignon: "3.8", masala: "7.5 c.à.c" }
+    
     
     ],
     ingredients: {},
@@ -1361,7 +1421,9 @@ const recettes = {
       { nb:  2, riz: "160 g", oeufs: "2",  jambon: "60 g",  petitspois: "60 g",  sojaS: "2 c.à.s" },
       { nb:  3, riz: "240 g", oeufs: "3",  jambon: "90 g",  petitspois: "90 g",  sojaS: "3 c.à.s" },
       { nb:  4, riz: "320 g", oeufs: "4",  jambon: "120 g", petitspois: "120 g", sojaS: "4 c.à.s" },
+      { nb:  5, riz: "400 g", oeufs: "5", jambon: "150 g", petitspois: "150 g", sojaS: "5 c.à.s" },
       { nb:  6, riz: "480 g", oeufs: "6",  jambon: "180 g", petitspois: "180 g", sojaS: "6 c.à.s" },
+      { nb:  7, riz: "560 g", oeufs: "7", jambon: "210 g", petitspois: "210 g", sojaS: "7 c.à.s" },
       { nb:  8, riz: "640 g", oeufs: "8",  jambon: "240 g", petitspois: "240 g", sojaS: "8 c.à.s" },
       { nb:  9, riz: "720 g", oeufs: "9", jambon: "270 g", petitspois: "270 g", sojaS: "9 c.à.s" },
       { nb: 10, riz: "800 g", oeufs: "10", jambon: "300 g", petitspois: "300 g", sojaS: "10 c.à.s" },
@@ -1369,7 +1431,8 @@ const recettes = {
       { nb: 12, riz: "960 g", oeufs: "12", jambon: "360 g", petitspois: "360 g", sojaS: "12 c.à.s" },
       { nb: 13, riz: "1040 g", oeufs: "13", jambon: "390 g", petitspois: "390 g", sojaS: "13 c.à.s" },
       { nb: 14, riz: "1120 g", oeufs: "14", jambon: "420 g", petitspois: "420 g", sojaS: "14 c.à.s" },
-      { nb: 15, riz: "1200 g", oeufs: "15", jambon: "450 g", petitspois: "450 g", sojaS: "15 c.à.s" },
+      { nb: 15, riz: "1200 g", oeufs: "15", jambon: "450 g", petitspois: "450 g", sojaS: "15 c.à.s" }
+    
     
     ],
     ingredients: {},
@@ -1389,15 +1452,22 @@ const recettes = {
     emoji: "🍲",
     description: "La harira marocaine — soupe traditionnelle aux lentilles, pois chiches, tomates et épices. La soupe du Ramadan.",
     tableauHarira: [
+      { nb:  1, lentilles: "25 g", poischiches: "50 g", tomates: "100 g", viande: "50 g", vermicelles: "10 g" },
       { nb:  2, lentilles: "50 g",  poischiches: "100 g", tomates: "200 g", viande: "100 g", vermicelles: "20 g"  },
+      { nb:  3, lentilles: "75 g", poischiches: "150 g", tomates: "300 g", viande: "150 g", vermicelles: "30 g" },
       { nb:  4, lentilles: "100 g", poischiches: "200 g", tomates: "400 g", viande: "200 g", vermicelles: "40 g"  },
+      { nb:  5, lentilles: "125 g", poischiches: "250 g", tomates: "500 g", viande: "250 g", vermicelles: "50 g" },
       { nb:  6, lentilles: "150 g", poischiches: "300 g", tomates: "600 g", viande: "300 g", vermicelles: "60 g"  },
+      { nb:  7, lentilles: "175 g", poischiches: "350 g", tomates: "700 g", viande: "350 g", vermicelles: "70 g" },
       { nb:  8, lentilles: "200 g", poischiches: "400 g", tomates: "800 g", viande: "400 g", vermicelles: "80 g"  },
+      { nb:  9, lentilles: "225 g", poischiches: "450 g", tomates: "900 g", viande: "450 g", vermicelles: "90 g" },
       { nb: 10, lentilles: "250 g", poischiches: "500 g", tomates: "1 kg",  viande: "500 g", vermicelles: "100 g" },
+      { nb: 11, lentilles: "275 g", poischiches: "550 g", tomates: "1.1 kg", viande: "550 g", vermicelles: "110 g" },
       { nb: 12, lentilles: "300 g", poischiches: "600 g", tomates: "1.2 kg",viande: "600 g", vermicelles: "120 g" },
       { nb: 13, lentilles: "325 g", poischiches: "650 g", tomates: "1300 g", viande: "650 g", vermicelles: "130 g" },
       { nb: 14, lentilles: "350 g", poischiches: "700 g", tomates: "1400 g", viande: "700 g", vermicelles: "140 g" },
-      { nb: 15, lentilles: "375 g", poischiches: "750 g", tomates: "1500 g", viande: "750 g", vermicelles: "150 g" },
+      { nb: 15, lentilles: "375 g", poischiches: "750 g", tomates: "1500 g", viande: "750 g", vermicelles: "150 g" }
+    
     
     ],
     ingredients: {},
@@ -1417,15 +1487,22 @@ const recettes = {
     emoji: "🫓",
     description: "Les naans indiens moelleux — pains plats au yaourt cuits à la poêle. Parfaits avec tous les currys.",
     tableauNaan: [
+      { nb:  1, farine: "75 g", yaourt: "38 g", levure: "1.5 g", beurre: "7.5 g", lait: "15 ml" },
       { nb:  2, farine: "150 g", yaourt: "75 g",  levure: "3 g",  beurre: "15 g", lait: "30 ml" },
+      { nb:  3, farine: "225 g", yaourt: "112 g", levure: "4.5 g", beurre: "22 g", lait: "45 ml" },
       { nb:  4, farine: "300 g", yaourt: "150 g", levure: "6 g",  beurre: "30 g", lait: "60 ml" },
+      { nb:  5, farine: "375 g", yaourt: "188 g", levure: "7.5 g", beurre: "38 g", lait: "75 ml" },
       { nb:  6, farine: "450 g", yaourt: "225 g", levure: "9 g",  beurre: "45 g", lait: "90 ml" },
+      { nb:  7, farine: "525 g", yaourt: "262 g", levure: "10 g", beurre: "52 g", lait: "105 ml" },
       { nb:  8, farine: "600 g", yaourt: "300 g", levure: "12 g", beurre: "60 g", lait: "120 ml"},
+      { nb:  9, farine: "675 g", yaourt: "338 g", levure: "14 g", beurre: "68 g", lait: "135 ml" },
       { nb: 10, farine: "750 g", yaourt: "375 g", levure: "15 g", beurre: "75 g", lait: "150 ml"},
+      { nb: 11, farine: "825 g", yaourt: "413 g", levure: "16 g", beurre: "82 g", lait: "165 ml" },
       { nb: 12, farine: "900 g", yaourt: "450 g", levure: "18 g", beurre: "90 g", lait: "180 ml"},
       { nb: 13, farine: "975 g", yaourt: "487 g", levure: "20 g", beurre: "98 g", lait: "195 ml" },
       { nb: 14, farine: "1050 g", yaourt: "525 g", levure: "21 g", beurre: "105 g", lait: "210 ml" },
-      { nb: 15, farine: "1125 g", yaourt: "562 g", levure: "22 g", beurre: "112 g", lait: "225 ml" },
+      { nb: 15, farine: "1125 g", yaourt: "562 g", levure: "22 g", beurre: "112 g", lait: "225 ml" }
+    
     
     ],
     ingredients: {},
@@ -1478,15 +1555,22 @@ const recettes = {
     emoji: "🍩",
     description: "Les churros espagnols croustillants — pâte à choux frite, roulée dans le sucre cannelle et trempée dans du chocolat chaud.",
     tableauChurros: [
+      { nb:  1, farine: "50 g", eau: "75 ml", sucre: "10 g", huile: "250 ml", chocolat: "40 g" },
       { nb:  2, farine: "100 g", eau: "150 ml", sucre: "20 g", huile: "500 ml", chocolat: "80 g"  },
+      { nb:  3, farine: "150 g", eau: "225 ml", sucre: "30 g", huile: "750 ml", chocolat: "120 g" },
       { nb:  4, farine: "200 g", eau: "300 ml", sucre: "40 g", huile: "500 ml", chocolat: "160 g" },
+      { nb:  5, farine: "250 g", eau: "375 ml", sucre: "50 g", huile: "625 ml", chocolat: "200 g" },
       { nb:  6, farine: "300 g", eau: "450 ml", sucre: "60 g", huile: "500 ml", chocolat: "240 g" },
+      { nb:  7, farine: "350 g", eau: "525 ml", sucre: "70 g", huile: "583 ml", chocolat: "280 g" },
       { nb:  8, farine: "400 g", eau: "600 ml", sucre: "80 g", huile: "1 L",    chocolat: "320 g" },
+      { nb:  9, farine: "450 g", eau: "675 ml", sucre: "90 g", huile: "1.1 L", chocolat: "360 g" },
       { nb: 10, farine: "500 g", eau: "750 ml", sucre: "100 g",huile: "1 L",    chocolat: "400 g" },
+      { nb: 11, farine: "550 g", eau: "825 ml", sucre: "110 g", huile: "1.1 L", chocolat: "440 g" },
       { nb: 12, farine: "600 g", eau: "900 ml", sucre: "120 g",huile: "1 L",    chocolat: "480 g" },
       { nb: 13, farine: "650 g", eau: "975 ml", sucre: "130 g", huile: "1083 ml", chocolat: "520 g" },
       { nb: 14, farine: "700 g", eau: "1050 ml", sucre: "140 g", huile: "1167 ml", chocolat: "560 g" },
-      { nb: 15, farine: "750 g", eau: "1125 ml", sucre: "150 g", huile: "1250 ml", chocolat: "600 g" },
+      { nb: 15, farine: "750 g", eau: "1125 ml", sucre: "150 g", huile: "1250 ml", chocolat: "600 g" }
+    
     
     ],
     ingredients: {},
@@ -2040,12 +2124,37 @@ const recettes = {
     emoji: "🥟",
     description: "Les gyoza japonais — raviolis croustillants en dessous, cuits vapeur au-dessus. Farce porc-chou et sauce ponzu.",
     tableauGyoza: [
+      { nb:  1, pate: "1 feuilles", porc: "15 g", chou: "10 g", ail: "½ gousse", gingembre: "½ cm" },
+      { nb:  2, pate: "2 feuilles", porc: "30 g", chou: "20 g", ail: "½ gousse", gingembre: "½ cm" },
+      { nb:  3, pate: "3 feuilles", porc: "45 g", chou: "30 g", ail: "½ gousse", gingembre: "½ cm" },
+      { nb:  4, pate: "4 feuilles", porc: "60 g", chou: "40 g", ail: "½ gousse", gingembre: "½ cm" },
       { nb:  5, pate: "5 feuilles",  porc: "75 g",  chou: "50 g",  ail: "½ gousse", gingembre: "½ cm" },
+      { nb:  6, pate: "6 feuilles", porc: "90 g", chou: "60 g", ail: "½ gousse", gingembre: "½ cm" },
+      { nb:  7, pate: "7 feuilles", porc: "105 g", chou: "70 g", ail: "½ gousse", gingembre: "½ cm" },
+      { nb:  8, pate: "8 feuilles", porc: "120 g", chou: "80 g", ail: "0.8 gousse", gingembre: "0.8 cm" },
+      { nb:  9, pate: "9 feuilles", porc: "135 g", chou: "90 g", ail: "0.9 gousse", gingembre: "0.9 cm" },
       { nb: 10, pate: "10 feuilles", porc: "150 g", chou: "100 g", ail: "1 gousse",  gingembre: "1 cm" },
+      { nb: 11, pate: "11 feuilles", porc: "165 g", chou: "110 g", ail: "1.1 gousse", gingembre: "1.1 cm" },
+      { nb: 12, pate: "12 feuilles", porc: "180 g", chou: "120 g", ail: "1.2 gousse", gingembre: "1.2 cm" },
+      { nb: 13, pate: "13 feuilles", porc: "195 g", chou: "130 g", ail: "0.9 gousse", gingembre: "0.9 cm" },
+      { nb: 14, pate: "14 feuilles", porc: "210 g", chou: "140 g", ail: "0.9 gousse", gingembre: "0.9 cm" },
       { nb: 15, pate: "15 feuilles", porc: "225 g", chou: "150 g", ail: "1 gousse",  gingembre: "1 cm" },
+      { nb: 16, pate: "16 feuilles", porc: "240 g", chou: "160 g", ail: "1.1 gousse", gingembre: "1.1 cm" },
+      { nb: 17, pate: "17 feuilles", porc: "255 g", chou: "170 g", ail: "1.1 gousse", gingembre: "1.1 cm" },
+      { nb: 18, pate: "18 feuilles", porc: "270 g", chou: "180 g", ail: "1.8 gousses", gingembre: "1.8 cm" },
+      { nb: 19, pate: "19 feuilles", porc: "285 g", chou: "190 g", ail: "1.9 gousses", gingembre: "1.9 cm" },
       { nb: 20, pate: "20 feuilles", porc: "300 g", chou: "200 g", ail: "2 gousses", gingembre: "2 cm" },
+      { nb: 21, pate: "21 feuilles", porc: "315 g", chou: "210 g", ail: "2.1 gousses", gingembre: "2.1 cm" },
+      { nb: 22, pate: "22 feuilles", porc: "330 g", chou: "220 g", ail: "2.2 gousses", gingembre: "2.2 cm" },
+      { nb: 23, pate: "23 feuilles", porc: "345 g", chou: "230 g", ail: "1.8 gousses", gingembre: "1.8 cm" },
+      { nb: 24, pate: "24 feuilles", porc: "360 g", chou: "240 g", ail: "1.9 gousses", gingembre: "1.9 cm" },
       { nb: 25, pate: "25 feuilles", porc: "375 g", chou: "250 g", ail: "2 gousses", gingembre: "2 cm" },
-      { nb: 30, pate: "30 feuilles", porc: "450 g", chou: "300 g", ail: "3 gousses", gingembre: "3 cm" },
+      { nb: 26, pate: "26 feuilles", porc: "390 g", chou: "260 g", ail: "2.1 gousses", gingembre: "2.1 cm" },
+      { nb: 27, pate: "27 feuilles", porc: "405 g", chou: "270 g", ail: "2.2 gousses", gingembre: "2.2 cm" },
+      { nb: 28, pate: "28 feuilles", porc: "420 g", chou: "280 g", ail: "2.8 gousses", gingembre: "2.8 cm" },
+      { nb: 29, pate: "29 feuilles", porc: "435 g", chou: "290 g", ail: "2.9 gousses", gingembre: "2.9 cm" },
+      { nb: 30, pate: "30 feuilles", porc: "450 g", chou: "300 g", ail: "3 gousses", gingembre: "3 cm" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -2195,13 +2304,21 @@ const recettes = {
     emoji: "🐟",
     description: "Le Thiéboudienne (Ceebu Jen) sénégalais — riz au poisson, le plat national du Sénégal. Riche, coloré et parfumé.",
     tableauCeebujen: [
+      { nb:  1, poisson: "200 g", riz: "100 g", tomates: "100 g", manioc: "50 g", carottes: "0.5" },
       { nb:  2, poisson: "400 g", riz: "200 g", tomates: "200 g", manioc: "100 g", carottes: "1" },
+      { nb:  3, poisson: "600 g", riz: "300 g", tomates: "300 g", manioc: "150 g", carottes: "1.5" },
       { nb:  4, poisson: "800 g", riz: "400 g", tomates: "400 g", manioc: "200 g", carottes: "2" },
+      { nb:  5, poisson: "1000 g", riz: "500 g", tomates: "500 g", manioc: "250 g", carottes: "2.5" },
       { nb:  6, poisson: "1.2 kg",riz: "600 g", tomates: "600 g", manioc: "300 g", carottes: "3" },
+      { nb:  7, poisson: "1.4 kg", riz: "700 g", tomates: "700 g", manioc: "350 g", carottes: "3.5" },
       { nb:  8, poisson: "1.6 kg",riz: "800 g", tomates: "800 g", manioc: "400 g", carottes: "4" },
+      { nb:  9, poisson: "1.8 kg", riz: "900 g", tomates: "900 g", manioc: "450 g", carottes: "4.5" },
       { nb: 10, poisson: "2 kg",  riz: "1 kg",  tomates: "1 kg",  manioc: "500 g", carottes: "5" },
+      { nb: 11, poisson: "2.2 kg", riz: "1.1 kg", tomates: "1.1 kg", manioc: "550 g", carottes: "5.5" },
       { nb: 12, poisson: "2.4 kg",riz: "1.2 kg",tomates: "1.2 kg",manioc: "600 g", carottes: "6" },
-      { nb: 14, poisson: "2.8 kg",riz: "1.4 kg",tomates: "1.4 kg",manioc: "700 g", carottes: "7" },
+      { nb: 13, poisson: "2.6 kg", riz: "1.3 kg", tomates: "1.3 kg", manioc: "650 g", carottes: "6.5" },
+      { nb: 14, poisson: "2.8 kg",riz: "1.4 kg",tomates: "1.4 kg",manioc: "700 g", carottes: "7" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -2220,13 +2337,21 @@ const recettes = {
     emoji: "🥜",
     description: "Le maafé ouest-africain — ragoût de viande à la sauce d'arachide. Un plat réconfortant du Mali, Sénégal et Guinée.",
     tableauMafe: [
+      { nb:  1, viande: "150 g", arachide: "50 g", tomates: "75 g", patate: "100 g", oignon: "0.5" },
       { nb:  2, viande: "300 g", arachide: "100 g", tomates: "150 g", patate: "200 g", oignon: "1" },
+      { nb:  3, viande: "450 g", arachide: "150 g", tomates: "225 g", patate: "300 g", oignon: "1.5" },
       { nb:  4, viande: "600 g", arachide: "200 g", tomates: "300 g", patate: "400 g", oignon: "1" },
+      { nb:  5, viande: "750 g", arachide: "250 g", tomates: "375 g", patate: "500 g", oignon: "1.2" },
       { nb:  6, viande: "900 g", arachide: "300 g", tomates: "450 g", patate: "600 g", oignon: "2" },
+      { nb:  7, viande: "1050 g", arachide: "350 g", tomates: "525 g", patate: "700 g", oignon: "2.3" },
       { nb:  8, viande: "1.2 kg",arachide: "400 g", tomates: "600 g", patate: "800 g", oignon: "2" },
+      { nb:  9, viande: "1.3 kg", arachide: "450 g", tomates: "675 g", patate: "900 g", oignon: "2.2" },
       { nb: 10, viande: "1.5 kg",arachide: "500 g", tomates: "750 g", patate: "1 kg",  oignon: "3" },
+      { nb: 11, viande: "1.7 kg", arachide: "550 g", tomates: "825 g", patate: "1.1 kg", oignon: "3.3" },
       { nb: 12, viande: "1.8 kg",arachide: "600 g", tomates: "900 g", patate: "1.2 kg",oignon: "3" },
-      { nb: 14, viande: "2.1 kg",arachide: "700 g", tomates: "1050 g",patate: "1.4 kg",oignon: "4" },
+      { nb: 13, viande: "1.9 kg", arachide: "650 g", tomates: "975 g", patate: "1.3 kg", oignon: "3.2" },
+      { nb: 14, viande: "2.1 kg",arachide: "700 g", tomates: "1050 g",patate: "1.4 kg",oignon: "4" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -2278,12 +2403,31 @@ const recettes = {
     emoji: "🧆",
     description: "Les falafels libanais croustillants — boulettes de pois chiches aux herbes et épices, frits et servis en pita avec tahini.",
     tableauFalafel: [
+      { nb:  1, poischiches: "38 g", persil: "¼ botte", ail: "0.2 gousse", cumin: "0.2 c.à.c", pita: "0.5" },
+      { nb:  2, poischiches: "75 g", persil: "¼ botte", ail: "0.5 gousse", cumin: "0.5 c.à.c", pita: "1" },
+      { nb:  3, poischiches: "112 g", persil: "¼ botte", ail: "0.8 gousse", cumin: "0.8 c.à.c", pita: "1.5" },
       { nb:  4, poischiches: "150 g", persil: "¼ botte", ail: "1 gousse",  cumin: "1 c.à.c", pita: "2"  },
+      { nb:  5, poischiches: "188 g", persil: "¼ botte", ail: "1.2 gousse", cumin: "1.2 c.à.c", pita: "2.5" },
+      { nb:  6, poischiches: "225 g", persil: "¼ botte", ail: "1.5 gousse", cumin: "1.5 c.à.c", pita: "3" },
+      { nb:  7, poischiches: "262 g", persil: "½ botte", ail: "1.8 gousses", cumin: "1.8 c.à.c", pita: "3.5" },
       { nb:  8, poischiches: "300 g", persil: "½ botte", ail: "2 gousses", cumin: "2 c.à.c", pita: "4"  },
+      { nb:  9, poischiches: "338 g", persil: "½ botte", ail: "2.2 gousses", cumin: "2.2 c.à.c", pita: "4.5" },
+      { nb: 10, poischiches: "375 g", persil: "½ botte", ail: "2.5 gousses", cumin: "2.5 c.à.c", pita: "5" },
+      { nb: 11, poischiches: "412 g", persil: "¾ botte", ail: "2.8 gousses", cumin: "2.8 c.à.c", pita: "5.5" },
       { nb: 12, poischiches: "450 g", persil: "¾ botte", ail: "3 gousses", cumin: "3 c.à.c", pita: "6"  },
+      { nb: 13, poischiches: "487 g", persil: "¾ botte", ail: "3.2 gousses", cumin: "3.2 c.à.c", pita: "6.5" },
+      { nb: 14, poischiches: "525 g", persil: "¾ botte", ail: "3.5 gousses", cumin: "3.5 c.à.c", pita: "7" },
+      { nb: 15, poischiches: "562 g", persil: "0.9 botte", ail: "3.8 gousses", cumin: "3.8 c.à.c", pita: "7.5" },
       { nb: 16, poischiches: "600 g", persil: "1 botte",  ail: "4 gousses", cumin: "4 c.à.c", pita: "8"  },
+      { nb: 17, poischiches: "638 g", persil: "1.1 botte", ail: "4.2 gousses", cumin: "4.2 c.à.c", pita: "8.5" },
+      { nb: 18, poischiches: "675 g", persil: "1.1 botte", ail: "4.5 gousses", cumin: "4.5 c.à.c", pita: "9" },
+      { nb: 19, poischiches: "712 g", persil: "0.9 botte", ail: "4.8 gousses", cumin: "4.8 c.à.c", pita: "9.5" },
       { nb: 20, poischiches: "750 g", persil: "1 botte",  ail: "5 gousses", cumin: "5 c.à.c", pita: "10" },
-      { nb: 24, poischiches: "900 g", persil: "1½ botte", ail: "6 gousses", cumin: "6 c.à.c", pita: "12" },
+      { nb: 21, poischiches: "788 g", persil: "1.1 botte", ail: "5.2 gousses", cumin: "5.2 c.à.c", pita: "10" },
+      { nb: 22, poischiches: "825 g", persil: "1.1 botte", ail: "5.5 gousses", cumin: "5.5 c.à.c", pita: "11" },
+      { nb: 23, poischiches: "862 g", persil: "1.0 ½ botte", ail: "5.8 gousses", cumin: "5.8 c.à.c", pita: "12" },
+      { nb: 24, poischiches: "900 g", persil: "1½ botte", ail: "6 gousses", cumin: "6 c.à.c", pita: "12" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -2334,13 +2478,21 @@ const recettes = {
     emoji: "🦆",
     description: "Le canard laqué pékinois version maison — peau croustillante et laquée, servi en crêpes avec sauce hoisin et concombre.",
     tableauPekinDuck: [
+      { nb:  1, canard: "½", hoisin: "1.5 c.à.s", crepesP: "4", concombre: "½", ciboule: "1.5" },
       { nb:  2, canard: "½",    hoisin: "3 c.à.s", crepesP: "8",   concombre: "½",  ciboule: "3" },
+      { nb:  3, canard: "½", hoisin: "4.5 c.à.s", crepesP: "12", concombre: "½", ciboule: "4.5" },
       { nb:  4, canard: "1",    hoisin: "6 c.à.s", crepesP: "16",  concombre: "1",  ciboule: "6" },
+      { nb:  5, canard: "1.2", hoisin: "7.5 c.à.s", crepesP: "20", concombre: "1.2", ciboule: "7.5" },
       { nb:  6, canard: "1½",   hoisin: "9 c.à.s", crepesP: "24",  concombre: "1½", ciboule: "9" },
+      { nb:  7, canard: "1.2 ½", hoisin: "10 c.à.s", crepesP: "28", concombre: "1.2 ½", ciboule: "10" },
       { nb:  8, canard: "2",    hoisin: "12 c.à.s",crepesP: "32",  concombre: "2",  ciboule: "12"},
+      { nb:  9, canard: "2.2", hoisin: "14 c.à.s", crepesP: "36", concombre: "2.2", ciboule: "14" },
       { nb: 10, canard: "2½",   hoisin: "15 c.à.s",crepesP: "40",  concombre: "2½", ciboule: "15"},
+      { nb: 11, canard: "2.2 ½", hoisin: "16 c.à.s", crepesP: "44", concombre: "2.2 ½", ciboule: "16" },
       { nb: 12, canard: "3",    hoisin: "18 c.à.s",crepesP: "48",  concombre: "3",  ciboule: "18"},
-      { nb: 14, canard: "3½",   hoisin: "21 c.à.s",crepesP: "56",  concombre: "3½", ciboule: "21"},
+      { nb: 13, canard: "3.2", hoisin: "20 c.à.s", crepesP: "52", concombre: "3.2", ciboule: "20" },
+      { nb: 14, canard: "3½",   hoisin: "21 c.à.s",crepesP: "56",  concombre: "3½", ciboule: "21"}
+    
     ],
     ingredients: {},
     etapes: [
@@ -2359,13 +2511,21 @@ const recettes = {
     emoji: "🦴",
     description: "L'osso buco milanais — jarret de veau braisé lentement, gremolata citronnée et risotto au safran. Un grand classique lombard.",
     tableauOssobuco: [
+      { nb:  1, jarret: "1 tranches", vin: "50 ml", bouillon: "100 ml", tomates: "75 g" },
       { nb:  2, jarret: "2 tranches",  vin: "100 ml", bouillon: "200 ml", tomates: "150 g" },
+      { nb:  3, jarret: "3 tranches", vin: "150 ml", bouillon: "300 ml", tomates: "225 g" },
       { nb:  4, jarret: "4 tranches",  vin: "200 ml", bouillon: "400 ml", tomates: "300 g" },
+      { nb:  5, jarret: "5 tranches", vin: "250 ml", bouillon: "500 ml", tomates: "375 g" },
       { nb:  6, jarret: "6 tranches",  vin: "300 ml", bouillon: "600 ml", tomates: "450 g" },
+      { nb:  7, jarret: "7 tranches", vin: "350 ml", bouillon: "700 ml", tomates: "525 g" },
       { nb:  8, jarret: "8 tranches",  vin: "400 ml", bouillon: "800 ml", tomates: "600 g" },
+      { nb:  9, jarret: "9 tranches", vin: "450 ml", bouillon: "900 ml", tomates: "675 g" },
       { nb: 10, jarret: "10 tranches", vin: "500 ml", bouillon: "1 L",    tomates: "750 g" },
+      { nb: 11, jarret: "11 tranches", vin: "550 ml", bouillon: "1.1 L", tomates: "825 g" },
       { nb: 12, jarret: "12 tranches", vin: "600 ml", bouillon: "1.2 L",  tomates: "900 g" },
-      { nb: 14, jarret: "14 tranches", vin: "700 ml", bouillon: "1.4 L",  tomates: "1050 g"},
+      { nb: 13, jarret: "13 tranches", vin: "650 ml", bouillon: "1.3 L", tomates: "975 g" },
+      { nb: 14, jarret: "14 tranches", vin: "700 ml", bouillon: "1.4 L",  tomates: "1050 g"}
+    
     ],
     ingredients: {},
     etapes: [
@@ -2384,13 +2544,21 @@ const recettes = {
     emoji: "🏺",
     description: "Le tajine d'agneau aux pruneaux et amandes — viande fondante, fruits sucrés et épices orientales. La douceur du Maroc.",
     tableauTajine: [
+      { nb:  1, agneau: "200 g", pruneaux: "40 g", amandes: "20 g", miel: "0.5 c.à.s", oignon: "0.5" },
       { nb:  2, agneau: "400 g", pruneaux: "80 g",  amandes: "40 g",  miel: "1 c.à.s", oignon: "1" },
+      { nb:  3, agneau: "600 g", pruneaux: "120 g", amandes: "60 g", miel: "1.5 c.à.s", oignon: "1.5" },
       { nb:  4, agneau: "800 g", pruneaux: "160 g", amandes: "80 g",  miel: "2 c.à.s", oignon: "2" },
+      { nb:  5, agneau: "1000 g", pruneaux: "200 g", amandes: "100 g", miel: "2.5 c.à.s", oignon: "2.5" },
       { nb:  6, agneau: "1.2 kg",pruneaux: "240 g", amandes: "120 g", miel: "3 c.à.s", oignon: "2" },
+      { nb:  7, agneau: "1.4 kg", pruneaux: "280 g", amandes: "140 g", miel: "3.5 c.à.s", oignon: "2.3" },
       { nb:  8, agneau: "1.6 kg",pruneaux: "320 g", amandes: "160 g", miel: "4 c.à.s", oignon: "3" },
+      { nb:  9, agneau: "1.8 kg", pruneaux: "360 g", amandes: "180 g", miel: "4.5 c.à.s", oignon: "3.4" },
       { nb: 10, agneau: "2 kg",  pruneaux: "400 g", amandes: "200 g", miel: "5 c.à.s", oignon: "3" },
+      { nb: 11, agneau: "2.2 kg", pruneaux: "440 g", amandes: "220 g", miel: "5.5 c.à.s", oignon: "3.3" },
       { nb: 12, agneau: "2.4 kg",pruneaux: "480 g", amandes: "240 g", miel: "6 c.à.s", oignon: "4" },
-      { nb: 14, agneau: "2.8 kg",pruneaux: "560 g", amandes: "280 g", miel: "7 c.à.s", oignon: "4" },
+      { nb: 13, agneau: "2.6 kg", pruneaux: "520 g", amandes: "260 g", miel: "6.5 c.à.s", oignon: "4.3" },
+      { nb: 14, agneau: "2.8 kg",pruneaux: "560 g", amandes: "280 g", miel: "7 c.à.s", oignon: "4" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -2442,13 +2610,21 @@ const recettes = {
     emoji: "🍰",
     description: "Le cheesecake new-yorkais classique — base biscuitée croustillante, crème au Philadelphia onctueuse et coulis de fruits rouges.",
     tableauCheesecake: [
+      { nb:  1, philadelphia: "100 g", biscuits: "40 g", beurre: "20 g", oeufs: "0.5", sucre: "25 g", creme: "25 ml" },
       { nb:  2, philadelphia: "200 g", biscuits: "80 g",  beurre: "40 g",  oeufs: "1",  sucre: "50 g",  creme: "50 ml"  },
+      { nb:  3, philadelphia: "300 g", biscuits: "120 g", beurre: "60 g", oeufs: "1.5", sucre: "75 g", creme: "75 ml" },
       { nb:  4, philadelphia: "400 g", biscuits: "160 g", beurre: "80 g",  oeufs: "2",  sucre: "100 g", creme: "100 ml" },
+      { nb:  5, philadelphia: "500 g", biscuits: "200 g", beurre: "100 g", oeufs: "2.5", sucre: "125 g", creme: "125 ml" },
       { nb:  6, philadelphia: "600 g", biscuits: "240 g", beurre: "120 g", oeufs: "3",  sucre: "150 g", creme: "150 ml" },
+      { nb:  7, philadelphia: "700 g", biscuits: "280 g", beurre: "140 g", oeufs: "3.5", sucre: "175 g", creme: "175 ml" },
       { nb:  8, philadelphia: "800 g", biscuits: "320 g", beurre: "160 g", oeufs: "4",  sucre: "200 g", creme: "200 ml" },
+      { nb:  9, philadelphia: "900 g", biscuits: "360 g", beurre: "180 g", oeufs: "4.5", sucre: "225 g", creme: "225 ml" },
       { nb: 10, philadelphia: "1 kg",  biscuits: "400 g", beurre: "200 g", oeufs: "5",  sucre: "250 g", creme: "250 ml" },
+      { nb: 11, philadelphia: "1.1 kg", biscuits: "440 g", beurre: "220 g", oeufs: "5.5", sucre: "275 g", creme: "275 ml" },
       { nb: 12, philadelphia: "1.2 kg",biscuits: "480 g", beurre: "240 g", oeufs: "6",  sucre: "300 g", creme: "300 ml" },
-      { nb: 14, philadelphia: "1.4 kg",biscuits: "560 g", beurre: "280 g", oeufs: "7",  sucre: "350 g", creme: "350 ml" },
+      { nb: 13, philadelphia: "1.3 kg", biscuits: "520 g", beurre: "260 g", oeufs: "6.5", sucre: "325 g", creme: "325 ml" },
+      { nb: 14, philadelphia: "1.4 kg",biscuits: "560 g", beurre: "280 g", oeufs: "7",  sucre: "350 g", creme: "350 ml" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -2467,13 +2643,21 @@ const recettes = {
     emoji: "🍫",
     description: "Les pains au chocolat maison — pâte feuilletée levée, beurre de tourage et barres de chocolat. Le vrai travail de boulanger !",
     tableauPainAuChocolat: [
+      { nb:  1, farine: "32 g", lait: "18 ml", beurre: "4 g", sucre: "3 g", levure: "1 g", beurrage: "22 g", chocolat: "10 g" },
       { nb:  2, farine: "63 g",  lait: "35 ml", beurre: "8 g",  sucre: "6 g",  levure: "2 g",  beurrage: "44 g",  chocolat: "20 g" },
+      { nb:  3, farine: "94 g", lait: "52 ml", beurre: "12 g", sucre: "9 g", levure: "3 g", beurrage: "66 g", chocolat: "30 g" },
       { nb:  4, farine: "125 g", lait: "70 ml", beurre: "15 g", sucre: "12 g", levure: "4 g",  beurrage: "88 g",  chocolat: "40 g" },
+      { nb:  5, farine: "156 g", lait: "88 ml", beurre: "19 g", sucre: "15 g", levure: "5 g", beurrage: "110 g", chocolat: "50 g" },
       { nb:  6, farine: "188 g", lait: "105 ml",beurre: "23 g", sucre: "18 g", levure: "6 g",  beurrage: "131 g", chocolat: "60 g" },
+      { nb:  7, farine: "219 g", lait: "123 ml", beurre: "27 g", sucre: "21 g", levure: "7 g", beurrage: "153 g", chocolat: "70 g" },
       { nb:  8, farine: "250 g", lait: "140 ml",beurre: "30 g", sucre: "25 g", levure: "8 g",  beurrage: "175 g", chocolat: "80 g" },
+      { nb:  9, farine: "281 g", lait: "158 ml", beurre: "34 g", sucre: "28 g", levure: "9 g", beurrage: "197 g", chocolat: "90 g" },
       { nb: 10, farine: "313 g", lait: "175 ml",beurre: "38 g", sucre: "31 g", levure: "10 g", beurrage: "219 g", chocolat: "100 g"},
+      { nb: 11, farine: "344 g", lait: "193 ml", beurre: "42 g", sucre: "34 g", levure: "11 g", beurrage: "241 g", chocolat: "110 g" },
       { nb: 12, farine: "375 g", lait: "210 ml",beurre: "45 g", sucre: "37 g", levure: "12 g", beurrage: "263 g", chocolat: "120 g"},
-      { nb: 14, farine: "438 g", lait: "245 ml",beurre: "53 g", sucre: "43 g", levure: "14 g", beurrage: "306 g", chocolat: "140 g"},
+      { nb: 13, farine: "406 g", lait: "227 ml", beurre: "49 g", sucre: "40 g", levure: "13 g", beurrage: "285 g", chocolat: "130 g" },
+      { nb: 14, farine: "438 g", lait: "245 ml",beurre: "53 g", sucre: "43 g", levure: "14 g", beurrage: "306 g", chocolat: "140 g"}
+    
     ],
     ingredients: {},
     etapes: [
@@ -2492,13 +2676,21 @@ const recettes = {
     emoji: "🎂",
     description: "Le vrai gâteau basque — pâte sablée généreuse fourée de crème pâtissière à la vanille ou confiture de cerises noires d'Itxassou.",
     tableauGateauBasque: [
+      { nb:  1, farine: "32 g", beurre: "22 g", sucre: "19 g", oeufs: "½", creme: "38 ml", lait: "38 ml" },
       { nb:  2, farine: "63 g",  beurre: "44 g",  sucre: "38 g",  oeufs: "½",  creme: "75 ml",  lait: "75 ml"  },
+      { nb:  3, farine: "94 g", beurre: "66 g", sucre: "57 g", oeufs: "½", creme: "112 ml", lait: "112 ml" },
       { nb:  4, farine: "125 g", beurre: "88 g",  sucre: "75 g",  oeufs: "1",  creme: "150 ml", lait: "150 ml" },
+      { nb:  5, farine: "156 g", beurre: "110 g", sucre: "94 g", oeufs: "1.2", creme: "188 ml", lait: "188 ml" },
       { nb:  6, farine: "188 g", beurre: "131 g", sucre: "113 g", oeufs: "1½", creme: "225 ml", lait: "225 ml" },
+      { nb:  7, farine: "219 g", beurre: "153 g", sucre: "132 g", oeufs: "1.2 ½", creme: "262 ml", lait: "262 ml" },
       { nb:  8, farine: "250 g", beurre: "175 g", sucre: "150 g", oeufs: "2",  creme: "300 ml", lait: "300 ml" },
+      { nb:  9, farine: "281 g", beurre: "197 g", sucre: "169 g", oeufs: "2.2", creme: "338 ml", lait: "338 ml" },
       { nb: 10, farine: "313 g", beurre: "219 g", sucre: "188 g", oeufs: "2½", creme: "375 ml", lait: "375 ml" },
+      { nb: 11, farine: "344 g", beurre: "241 g", sucre: "207 g", oeufs: "2.2 ½", creme: "413 ml", lait: "413 ml" },
       { nb: 12, farine: "375 g", beurre: "263 g", sucre: "225 g", oeufs: "3",  creme: "450 ml", lait: "450 ml" },
-      { nb: 14, farine: "438 g", beurre: "306 g", sucre: "263 g", oeufs: "3½", creme: "525 ml", lait: "525 ml" },
+      { nb: 13, farine: "406 g", beurre: "285 g", sucre: "244 g", oeufs: "3.2", creme: "487 ml", lait: "487 ml" },
+      { nb: 14, farine: "438 g", beurre: "306 g", sucre: "263 g", oeufs: "3½", creme: "525 ml", lait: "525 ml" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -2517,12 +2709,31 @@ const recettes = {
     emoji: "🏺",
     description: "Les cannelés bordelais — croûte caramélisée croustillante et intérieur moelleux parfumé au rhum et vanille. La spécialité de Bordeaux.",
     tableauCanele: [
+      { nb:  1, lait: "42 ml", beurre: "2 g", sucre: "21 g", farine: "10 g", oeufs: "⅔", rhum: "1 ml" },
+      { nb:  2, lait: "84 ml", beurre: "4 g", sucre: "42 g", farine: "21 g", oeufs: "⅔", rhum: "2 ml" },
+      { nb:  3, lait: "125 ml", beurre: "6 g", sucre: "62 g", farine: "32 g", oeufs: "⅔", rhum: "3 ml" },
       { nb:  4, lait: "167 ml", beurre: "8 g",  sucre: "83 g",  farine: "42 g",  oeufs: "⅔",  rhum: "4 ml"  },
+      { nb:  5, lait: "209 ml", beurre: "10 g", sucre: "104 g", farine: "52 g", oeufs: "⅔", rhum: "5 ml" },
+      { nb:  6, lait: "250 ml", beurre: "12 g", sucre: "124 g", farine: "63 g", oeufs: "⅔", rhum: "6 ml" },
+      { nb:  7, lait: "291 ml", beurre: "15 g", sucre: "146 g", farine: "73 g", oeufs: "0.9 ⅓", rhum: "7 ml" },
       { nb:  8, lait: "333 ml", beurre: "17 g", sucre: "167 g", farine: "83 g",  oeufs: "1⅓", rhum: "8 ml"  },
+      { nb:  9, lait: "375 ml", beurre: "19 g", sucre: "188 g", farine: "93 g", oeufs: "1.1 ⅓", rhum: "9 ml" },
+      { nb: 10, lait: "416 ml", beurre: "21 g", sucre: "209 g", farine: "104 g", oeufs: "1.2 ⅓", rhum: "10 ml" },
+      { nb: 11, lait: "458 ml", beurre: "23 g", sucre: "229 g", farine: "115 g", oeufs: "1.8", rhum: "11 ml" },
       { nb: 12, lait: "500 ml", beurre: "25 g", sucre: "250 g", farine: "125 g", oeufs: "2",  rhum: "12 ml" },
+      { nb: 13, lait: "542 ml", beurre: "27 g", sucre: "271 g", farine: "135 g", oeufs: "2.2", rhum: "13 ml" },
+      { nb: 14, lait: "583 ml", beurre: "29 g", sucre: "292 g", farine: "146 g", oeufs: "2.3", rhum: "14 ml" },
+      { nb: 15, lait: "625 ml", beurre: "31 g", sucre: "312 g", farine: "157 g", oeufs: "1.9 ⅔", rhum: "15 ml" },
       { nb: 16, lait: "667 ml", beurre: "33 g", sucre: "333 g", farine: "167 g", oeufs: "2⅔", rhum: "16 ml" },
+      { nb: 17, lait: "709 ml", beurre: "35 g", sucre: "354 g", farine: "177 g", oeufs: "2.1 ⅔", rhum: "17 ml" },
+      { nb: 18, lait: "750 ml", beurre: "37 g", sucre: "375 g", farine: "188 g", oeufs: "2.2 ⅔", rhum: "18 ml" },
+      { nb: 19, lait: "791 ml", beurre: "40 g", sucre: "396 g", farine: "198 g", oeufs: "2.8 ⅓", rhum: "19 ml" },
       { nb: 20, lait: "833 ml", beurre: "42 g", sucre: "417 g", farine: "208 g", oeufs: "3⅓", rhum: "20 ml" },
-      { nb: 24, lait: "1 L",    beurre: "50 g", sucre: "500 g", farine: "250 g", oeufs: "4",  rhum: "24 ml" },
+      { nb: 21, lait: "875 ml", beurre: "44 g", sucre: "438 g", farine: "218 g", oeufs: "3.2 ⅓", rhum: "21 ml" },
+      { nb: 22, lait: "916 ml", beurre: "46 g", sucre: "459 g", farine: "229 g", oeufs: "3.3 ⅓", rhum: "22 ml" },
+      { nb: 23, lait: "1.0 L", beurre: "48 g", sucre: "479 g", farine: "240 g", oeufs: "3.8", rhum: "23 ml" },
+      { nb: 24, lait: "1 L",    beurre: "50 g", sucre: "500 g", farine: "250 g", oeufs: "4",  rhum: "24 ml" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -2882,7 +3093,7 @@ const recettes = {
     ]
   },
 
-  pizzaquattroformaggi: {
+  pizza4fromages: {
     base: 2,
     temps: "20 min + 48h pâte",
     niveau: "⭐ Facile",
@@ -3016,13 +3227,21 @@ const recettes = {
     emoji: "🍢",
     description: "Souvlaki d'agneau grec — brochettes tendres marinées au citron et origan, servies avec pain pita et tzatziki.",
     tableauSouvlakiAgneau: [
+      { nb:  1, agneau: "150 g", pita: "1", yaourt: "50 g", citron: "½", huileOlive: "1 c.à.s" },
       { nb:  2, agneau: "300 g", pita: "2",  yaourt: "100 g", citron: "½", huileOlive: "2 c.à.s" },
+      { nb:  3, agneau: "450 g", pita: "3", yaourt: "150 g", citron: "½", huileOlive: "3 c.à.s" },
       { nb:  4, agneau: "600 g", pita: "4",  yaourt: "200 g", citron: "1", huileOlive: "4 c.à.s" },
+      { nb:  5, agneau: "750 g", pita: "5", yaourt: "250 g", citron: "1.2", huileOlive: "5 c.à.s" },
       { nb:  6, agneau: "900 g", pita: "6",  yaourt: "300 g", citron: "1", huileOlive: "6 c.à.s" },
+      { nb:  7, agneau: "1050 g", pita: "7", yaourt: "350 g", citron: "1.2", huileOlive: "7 c.à.s" },
       { nb:  8, agneau: "1.2 kg",pita: "8",  yaourt: "400 g", citron: "2", huileOlive: "8 c.à.s" },
+      { nb:  9, agneau: "1.3 kg", pita: "9", yaourt: "450 g", citron: "2.2", huileOlive: "9 c.à.s" },
       { nb: 10, agneau: "1.5 kg",pita: "10", yaourt: "500 g", citron: "2", huileOlive: "10 c.à.s"},
+      { nb: 11, agneau: "1.7 kg", pita: "11", yaourt: "550 g", citron: "2.2", huileOlive: "11 c.à.s" },
       { nb: 12, agneau: "1.8 kg",pita: "12", yaourt: "600 g", citron: "3", huileOlive: "12 c.à.s"},
-      { nb: 14, agneau: "2.1 kg",pita: "14", yaourt: "700 g", citron: "3", huileOlive: "14 c.à.s"},
+      { nb: 13, agneau: "1.9 kg", pita: "13", yaourt: "650 g", citron: "3.2", huileOlive: "13 c.à.s" },
+      { nb: 14, agneau: "2.1 kg",pita: "14", yaourt: "700 g", citron: "3", huileOlive: "14 c.à.s"}
+    
     ],
     ingredients: {},
     etapes: [
@@ -3072,13 +3291,21 @@ const recettes = {
     emoji: "🐟",
     description: "Dorade royale à la chermoula marocaine — marinade aux herbes et épices, cuite au four. Simple, parfumée et délicate.",
     tableauDorade: [
+      { nb:  1, dorade: "0.5 (500g)", chermoula: "1.5 c.à.s", citron: "0.5", olives: "25 g" },
       { nb:  2, dorade: "1 (500g)",  chermoula: "3 c.à.s", citron: "1",  olives: "50 g"  },
+      { nb:  3, dorade: "1.5 (500g)", chermoula: "4.5 c.à.s", citron: "1.5", olives: "75 g" },
       { nb:  4, dorade: "2 (500g)",  chermoula: "6 c.à.s", citron: "2",  olives: "100 g" },
+      { nb:  5, dorade: "2.5 (500g)", chermoula: "7.5 c.à.s", citron: "2.5", olives: "125 g" },
       { nb:  6, dorade: "3 (500g)",  chermoula: "9 c.à.s", citron: "3",  olives: "150 g" },
+      { nb:  7, dorade: "3.5 (500g)", chermoula: "10 c.à.s", citron: "3.5", olives: "175 g" },
       { nb:  8, dorade: "4 (500g)",  chermoula: "12 c.à.s",citron: "4",  olives: "200 g" },
+      { nb:  9, dorade: "4.5 (500g)", chermoula: "14 c.à.s", citron: "4.5", olives: "225 g" },
       { nb: 10, dorade: "5 (500g)",  chermoula: "15 c.à.s",citron: "5",  olives: "250 g" },
+      { nb: 11, dorade: "5.5 (500g)", chermoula: "16 c.à.s", citron: "5.5", olives: "275 g" },
       { nb: 12, dorade: "6 (500g)",  chermoula: "18 c.à.s",citron: "6",  olives: "300 g" },
-      { nb: 14, dorade: "7 (500g)",  chermoula: "21 c.à.s",citron: "7",  olives: "350 g" },
+      { nb: 13, dorade: "6.5 (500g)", chermoula: "20 c.à.s", citron: "6.5", olives: "325 g" },
+      { nb: 14, dorade: "7 (500g)",  chermoula: "21 c.à.s",citron: "7",  olives: "350 g" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -3096,13 +3323,21 @@ const recettes = {
     emoji: "🌶️",
     description: "Le Chicken 65 indien — poulet frit ultra épicé et croustillant, spécialité de Chennai. Un apéro indien explosif !",
     tableauChicken65: [
+      { nb:  1, poulet: "125 g", yaourt: "25 g", farine: "15 g", piment: "0.5 c.à.c", curry: "½ c.à.c" },
       { nb:  2, poulet: "250 g", yaourt: "50 g",  farine: "30 g",  piment: "1 c.à.c",  curry: "½ c.à.c" },
+      { nb:  3, poulet: "375 g", yaourt: "75 g", farine: "45 g", piment: "1.5 c.à.c", curry: "½ c.à.c" },
       { nb:  4, poulet: "500 g", yaourt: "100 g", farine: "60 g",  piment: "2 c.à.c",  curry: "1 c.à.c"  },
+      { nb:  5, poulet: "625 g", yaourt: "125 g", farine: "75 g", piment: "2.5 c.à.c", curry: "1.2 c.à.c" },
       { nb:  6, poulet: "750 g", yaourt: "150 g", farine: "90 g",  piment: "3 c.à.c",  curry: "1½ c.à.c" },
+      { nb:  7, poulet: "875 g", yaourt: "175 g", farine: "105 g", piment: "3.5 c.à.c", curry: "1.2 ½ c.à.c" },
       { nb:  8, poulet: "1 kg",  yaourt: "200 g", farine: "120 g", piment: "4 c.à.c",  curry: "2 c.à.c"  },
+      { nb:  9, poulet: "1.1 kg", yaourt: "225 g", farine: "135 g", piment: "4.5 c.à.c", curry: "2.2 c.à.c" },
       { nb: 10, poulet: "1.25 kg",yaourt: "250 g",farine: "150 g", piment: "5 c.à.c",  curry: "2½ c.à.c" },
+      { nb: 11, poulet: "1.4 kg", yaourt: "275 g", farine: "165 g", piment: "5.5 c.à.c", curry: "2.2 ½ c.à.c" },
       { nb: 12, poulet: "1.5 kg",yaourt: "300 g", farine: "180 g", piment: "6 c.à.c",  curry: "3 c.à.c"  },
-      { nb: 14, poulet: "1.75 kg",yaourt: "350 g",farine: "210 g", piment: "7 c.à.c",  curry: "3½ c.à.c" },
+      { nb: 13, poulet: "1.6 kg", yaourt: "325 g", farine: "195 g", piment: "6.5 c.à.c", curry: "3.2 c.à.c" },
+      { nb: 14, poulet: "1.75 kg",yaourt: "350 g",farine: "210 g", piment: "7 c.à.c",  curry: "3½ c.à.c" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -3120,13 +3355,21 @@ const recettes = {
     emoji: "🥟",
     description: "Les Pierogi polonais — raviolis farcis pommes de terre-fromage, bouillis puis poêlés avec oignons caramélisés et crème sure.",
     tableauPierogi: [
+      { nb:  1, farine: "75 g", pdterre: "100 g", fromage: "40 g", oignon: "0.5", creme: "25 ml" },
       { nb:  2, farine: "150 g", pdterre: "200 g", fromage: "80 g",  oignon: "1",  creme: "50 ml"  },
+      { nb:  3, farine: "225 g", pdterre: "300 g", fromage: "120 g", oignon: "1.5", creme: "75 ml" },
       { nb:  4, farine: "300 g", pdterre: "400 g", fromage: "160 g", oignon: "2",  creme: "100 ml" },
+      { nb:  5, farine: "375 g", pdterre: "500 g", fromage: "200 g", oignon: "2.5", creme: "125 ml" },
       { nb:  6, farine: "450 g", pdterre: "600 g", fromage: "240 g", oignon: "3",  creme: "150 ml" },
+      { nb:  7, farine: "525 g", pdterre: "700 g", fromage: "280 g", oignon: "3.5", creme: "175 ml" },
       { nb:  8, farine: "600 g", pdterre: "800 g", fromage: "320 g", oignon: "4",  creme: "200 ml" },
+      { nb:  9, farine: "675 g", pdterre: "900 g", fromage: "360 g", oignon: "4.5", creme: "225 ml" },
       { nb: 10, farine: "750 g", pdterre: "1 kg",  fromage: "400 g", oignon: "5",  creme: "250 ml" },
+      { nb: 11, farine: "825 g", pdterre: "1.1 kg", fromage: "440 g", oignon: "5.5", creme: "275 ml" },
       { nb: 12, farine: "900 g", pdterre: "1.2 kg",fromage: "480 g", oignon: "6",  creme: "300 ml" },
-      { nb: 14, farine: "1050 g",pdterre: "1.4 kg",fromage: "560 g", oignon: "7",  creme: "350 ml" },
+      { nb: 13, farine: "975 g", pdterre: "1.3 kg", fromage: "520 g", oignon: "6.5", creme: "325 ml" },
+      { nb: 14, farine: "1050 g",pdterre: "1.4 kg",fromage: "560 g", oignon: "7",  creme: "350 ml" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -3145,12 +3388,31 @@ const recettes = {
     emoji: "🥟",
     description: "Les Momos tibétains — raviolis vapeur à la viande et légumes, spécialité himalayenne servie avec sauce pimentée. Cousin du gyoza !",
     tableauMomos: [
+      { nb:  1, farine: "25 g", viande: "38 g", chou: "20 g", oignon: "½", gingembre: "0.2 cm" },
+      { nb:  2, farine: "50 g", viande: "75 g", chou: "40 g", oignon: "½", gingembre: "0.5 cm" },
+      { nb:  3, farine: "75 g", viande: "112 g", chou: "60 g", oignon: "½", gingembre: "0.8 cm" },
       { nb:  4, farine: "100 g", viande: "150 g", chou: "80 g",  oignon: "½", gingembre: "1 cm" },
+      { nb:  5, farine: "125 g", viande: "188 g", chou: "100 g", oignon: "½", gingembre: "1.2 cm" },
+      { nb:  6, farine: "150 g", viande: "225 g", chou: "120 g", oignon: "½", gingembre: "1.5 cm" },
+      { nb:  7, farine: "175 g", viande: "262 g", chou: "140 g", oignon: "0.9", gingembre: "1.8 cm" },
       { nb:  8, farine: "200 g", viande: "300 g", chou: "160 g", oignon: "1", gingembre: "2 cm" },
+      { nb:  9, farine: "225 g", viande: "338 g", chou: "180 g", oignon: "1.1", gingembre: "2.2 cm" },
+      { nb: 10, farine: "250 g", viande: "375 g", chou: "200 g", oignon: "1.2", gingembre: "2.5 cm" },
+      { nb: 11, farine: "275 g", viande: "412 g", chou: "220 g", oignon: "0.9", gingembre: "2.8 cm" },
       { nb: 12, farine: "300 g", viande: "450 g", chou: "240 g", oignon: "1", gingembre: "3 cm" },
+      { nb: 13, farine: "325 g", viande: "487 g", chou: "260 g", oignon: "1.1", gingembre: "3.2 cm" },
+      { nb: 14, farine: "350 g", viande: "525 g", chou: "280 g", oignon: "1.2", gingembre: "3.5 cm" },
+      { nb: 15, farine: "375 g", viande: "562 g", chou: "300 g", oignon: "1.9", gingembre: "3.8 cm" },
       { nb: 16, farine: "400 g", viande: "600 g", chou: "320 g", oignon: "2", gingembre: "4 cm" },
+      { nb: 17, farine: "425 g", viande: "638 g", chou: "340 g", oignon: "2.1", gingembre: "4.2 cm" },
+      { nb: 18, farine: "450 g", viande: "675 g", chou: "360 g", oignon: "2.2", gingembre: "4.5 cm" },
+      { nb: 19, farine: "475 g", viande: "712 g", chou: "380 g", oignon: "1.9", gingembre: "4.8 cm" },
       { nb: 20, farine: "500 g", viande: "750 g", chou: "400 g", oignon: "2", gingembre: "5 cm" },
-      { nb: 24, farine: "600 g", viande: "900 g", chou: "480 g", oignon: "3", gingembre: "6 cm" },
+      { nb: 21, farine: "525 g", viande: "788 g", chou: "420 g", oignon: "2.1", gingembre: "5.2 cm" },
+      { nb: 22, farine: "550 g", viande: "825 g", chou: "440 g", oignon: "2.2", gingembre: "5.5 cm" },
+      { nb: 23, farine: "575 g", viande: "862 g", chou: "460 g", oignon: "2.9", gingembre: "5.8 cm" },
+      { nb: 24, farine: "600 g", viande: "900 g", chou: "480 g", oignon: "3", gingembre: "6 cm" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -3201,12 +3463,31 @@ const recettes = {
     emoji: "🥩",
     description: "Le Kebbeh libanais — boulettes de viande à la semoule de blé et épices, frites ou au four. La recette emblématique du Liban.",
     tableauKebbeh: [
+      { nb:  1, agneau: "50 g", semoule: "25 g", oignon: "0.2", pignons: "7.5 g", cannelle: "½ c.à.c" },
+      { nb:  2, agneau: "100 g", semoule: "50 g", oignon: "0.5", pignons: "15 g", cannelle: "½ c.à.c" },
+      { nb:  3, agneau: "150 g", semoule: "75 g", oignon: "0.8", pignons: "22 g", cannelle: "½ c.à.c" },
       { nb:  4, agneau: "200 g", semoule: "100 g", oignon: "1",  pignons: "30 g",  cannelle: "½ c.à.c" },
+      { nb:  5, agneau: "250 g", semoule: "125 g", oignon: "1.2", pignons: "38 g", cannelle: "½ c.à.c" },
+      { nb:  6, agneau: "300 g", semoule: "150 g", oignon: "1.5", pignons: "45 g", cannelle: "½ c.à.c" },
+      { nb:  7, agneau: "350 g", semoule: "175 g", oignon: "1.8", pignons: "52 g", cannelle: "0.9 c.à.c" },
       { nb:  8, agneau: "400 g", semoule: "200 g", oignon: "2",  pignons: "60 g",  cannelle: "1 c.à.c"  },
+      { nb:  9, agneau: "450 g", semoule: "225 g", oignon: "2.2", pignons: "68 g", cannelle: "1.1 c.à.c" },
+      { nb: 10, agneau: "500 g", semoule: "250 g", oignon: "2.5", pignons: "75 g", cannelle: "1.2 c.à.c" },
+      { nb: 11, agneau: "550 g", semoule: "275 g", oignon: "2.8", pignons: "82 g", cannelle: "0.9 ½ c.à.c" },
       { nb: 12, agneau: "600 g", semoule: "300 g", oignon: "3",  pignons: "90 g",  cannelle: "1½ c.à.c" },
+      { nb: 13, agneau: "650 g", semoule: "325 g", oignon: "3.2", pignons: "98 g", cannelle: "1.1 ½ c.à.c" },
+      { nb: 14, agneau: "700 g", semoule: "350 g", oignon: "3.5", pignons: "105 g", cannelle: "1.2 ½ c.à.c" },
+      { nb: 15, agneau: "750 g", semoule: "375 g", oignon: "3.8", pignons: "112 g", cannelle: "1.9 c.à.c" },
       { nb: 16, agneau: "800 g", semoule: "400 g", oignon: "4",  pignons: "120 g", cannelle: "2 c.à.c"  },
+      { nb: 17, agneau: "850 g", semoule: "425 g", oignon: "4.2", pignons: "128 g", cannelle: "2.1 c.à.c" },
+      { nb: 18, agneau: "900 g", semoule: "450 g", oignon: "4.5", pignons: "135 g", cannelle: "2.2 c.à.c" },
+      { nb: 19, agneau: "0.9 kg", semoule: "475 g", oignon: "4.8", pignons: "142 g", cannelle: "1.9 ½ c.à.c" },
       { nb: 20, agneau: "1 kg",  semoule: "500 g", oignon: "5",  pignons: "150 g", cannelle: "2½ c.à.c" },
-      { nb: 24, agneau: "1.2 kg",semoule: "600 g", oignon: "6",  pignons: "180 g", cannelle: "3 c.à.c"  },
+      { nb: 21, agneau: "1.1 kg", semoule: "525 g", oignon: "5.2", pignons: "158 g", cannelle: "2.1 ½ c.à.c" },
+      { nb: 22, agneau: "1.1 kg", semoule: "550 g", oignon: "5.5", pignons: "165 g", cannelle: "2.2 ½ c.à.c" },
+      { nb: 23, agneau: "1.1 kg", semoule: "575 g", oignon: "5.8", pignons: "172 g", cannelle: "2.9 c.à.c" },
+      { nb: 24, agneau: "1.2 kg",semoule: "600 g", oignon: "6",  pignons: "180 g", cannelle: "3 c.à.c"  }
+    
     ],
     ingredients: {},
     etapes: [
@@ -3257,13 +3538,21 @@ const recettes = {
     emoji: "🐷",
     description: "Le Pulled Pork américain — épaule de porc fumée et effilochée, marinée au rub BBQ et cuite lentement. La recette du Sud américain.",
     tableauPulledPork: [
+      { nb:  1, porc: "250 g", rub: "1 c.à.s", bbqSauce: "25 ml", fumee: "0.5 pincée" },
       { nb:  2, porc: "500 g",  rub: "2 c.à.s",  bbqSauce: "50 ml",  fumee: "1 pincée" },
+      { nb:  3, porc: "750 g", rub: "3 c.à.s", bbqSauce: "75 ml", fumee: "1.5 pincée" },
       { nb:  4, porc: "1 kg",   rub: "3 c.à.s",  bbqSauce: "100 ml", fumee: "1 c.à.c"  },
+      { nb:  5, porc: "1.2 kg", rub: "3.8 c.à.s", bbqSauce: "125 ml", fumee: "1.2 c.à.c" },
       { nb:  6, porc: "1.5 kg", rub: "4 c.à.s",  bbqSauce: "150 ml", fumee: "1½ c.à.c" },
+      { nb:  7, porc: "1.8 kg", rub: "4.7 c.à.s", bbqSauce: "175 ml", fumee: "1.2 ½ c.à.c" },
       { nb:  8, porc: "2 kg",   rub: "5 c.à.s",  bbqSauce: "200 ml", fumee: "2 c.à.c"  },
+      { nb:  9, porc: "2.2 kg", rub: "5.6 c.à.s", bbqSauce: "225 ml", fumee: "2.2 c.à.c" },
       { nb: 10, porc: "2.5 kg", rub: "7 c.à.s",  bbqSauce: "250 ml", fumee: "2½ c.à.c" },
+      { nb: 11, porc: "2.8 kg", rub: "7.7 c.à.s", bbqSauce: "275 ml", fumee: "2.2 ½ c.à.c" },
       { nb: 12, porc: "3 kg",   rub: "8 c.à.s",  bbqSauce: "300 ml", fumee: "3 c.à.c"  },
-      { nb: 14, porc: "3.5 kg", rub: "9 c.à.s",  bbqSauce: "350 ml", fumee: "3½ c.à.c" },
+      { nb: 13, porc: "3.2 kg", rub: "8.7 c.à.s", bbqSauce: "325 ml", fumee: "3.2 c.à.c" },
+      { nb: 14, porc: "3.5 kg", rub: "9 c.à.s",  bbqSauce: "350 ml", fumee: "3½ c.à.c" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -3281,13 +3570,21 @@ const recettes = {
     emoji: "🥞",
     description: "Les Dosa indiens — crêpes fermentées au riz et lentilles, croustillantes, servies avec sambar et chutneys. Le petit-déjeuner du Tamil Nadu.",
     tableauDosa: [
+      { nb:  1, rizS: "38 g", lentilles: "12 g", sel: "½ c.à.c", sambar: "50 ml", chutney: "1 c.à.s" },
       { nb:  2, rizS: "75 g",   lentilles: "25 g", sel: "½ c.à.c", sambar: "100 ml", chutney: "2 c.à.s" },
+      { nb:  3, rizS: "112 g", lentilles: "38 g", sel: "½ c.à.c", sambar: "150 ml", chutney: "3 c.à.s" },
       { nb:  4, rizS: "150 g",  lentilles: "50 g", sel: "1 c.à.c",  sambar: "200 ml", chutney: "4 c.à.s" },
+      { nb:  5, rizS: "188 g", lentilles: "62 g", sel: "1.2 c.à.c", sambar: "250 ml", chutney: "5 c.à.s" },
       { nb:  6, rizS: "225 g",  lentilles: "75 g", sel: "1½ c.à.c", sambar: "300 ml", chutney: "6 c.à.s" },
+      { nb:  7, rizS: "262 g", lentilles: "88 g", sel: "1.2 ½ c.à.c", sambar: "350 ml", chutney: "7 c.à.s" },
       { nb:  8, rizS: "300 g",  lentilles: "100 g",sel: "2 c.à.c",  sambar: "400 ml", chutney: "8 c.à.s" },
+      { nb:  9, rizS: "338 g", lentilles: "112 g", sel: "2.2 c.à.c", sambar: "450 ml", chutney: "9 c.à.s" },
       { nb: 10, rizS: "375 g",  lentilles: "125 g",sel: "2½ c.à.c", sambar: "500 ml", chutney: "10 c.à.s"},
+      { nb: 11, rizS: "413 g", lentilles: "138 g", sel: "2.2 ½ c.à.c", sambar: "550 ml", chutney: "11 c.à.s" },
       { nb: 12, rizS: "450 g",  lentilles: "150 g",sel: "3 c.à.c",  sambar: "600 ml", chutney: "12 c.à.s"},
-      { nb: 14, rizS: "525 g",  lentilles: "175 g",sel: "3½ c.à.c", sambar: "700 ml", chutney: "14 c.à.s"},
+      { nb: 13, rizS: "487 g", lentilles: "162 g", sel: "3.2 c.à.c", sambar: "650 ml", chutney: "13 c.à.s" },
+      { nb: 14, rizS: "525 g",  lentilles: "175 g",sel: "3½ c.à.c", sambar: "700 ml", chutney: "14 c.à.s"}
+    
     ],
     ingredients: {},
     etapes: [
@@ -3305,13 +3602,21 @@ const recettes = {
     emoji: "🥢",
     description: "Joues de bœuf braisées à l'asiatique — sauce soja, gingembre, étoile de badiane et sucre de palme. Fondant absolu.",
     tableauBraiseBoeuf: [
+      { nb:  1, joues: "200 g", sojaS: "1.5 c.à.s", mirin: "1 c.à.s", saké: "1 c.à.s", gingembre: "1 cm", anis: "0.5" },
       { nb:  2, joues: "400 g", sojaS: "3 c.à.s", mirin: "2 c.à.s", saké: "2 c.à.s", gingembre: "2 cm", anis: "1" },
+      { nb:  3, joues: "600 g", sojaS: "4.5 c.à.s", mirin: "3 c.à.s", saké: "3 c.à.s", gingembre: "3 cm", anis: "1.5" },
       { nb:  4, joues: "800 g", sojaS: "6 c.à.s", mirin: "4 c.à.s", saké: "4 c.à.s", gingembre: "4 cm", anis: "2" },
+      { nb:  5, joues: "1000 g", sojaS: "7.5 c.à.s", mirin: "5 c.à.s", saké: "5 c.à.s", gingembre: "5 cm", anis: "2.5" },
       { nb:  6, joues: "1.2 kg",sojaS: "9 c.à.s", mirin: "6 c.à.s", saké: "6 c.à.s", gingembre: "5 cm", anis: "3" },
+      { nb:  7, joues: "1.4 kg", sojaS: "10 c.à.s", mirin: "7 c.à.s", saké: "7 c.à.s", gingembre: "5.8 cm", anis: "3.5" },
       { nb:  8, joues: "1.6 kg",sojaS: "12 c.à.s",mirin: "8 c.à.s", saké: "8 c.à.s", gingembre: "7 cm", anis: "4" },
+      { nb:  9, joues: "1.8 kg", sojaS: "14 c.à.s", mirin: "9 c.à.s", saké: "9 c.à.s", gingembre: "7.9 cm", anis: "4.5" },
       { nb: 10, joues: "2 kg",  sojaS: "15 c.à.s",mirin: "10 c.à.s",saké: "10 c.à.s",gingembre: "8 cm", anis: "5" },
+      { nb: 11, joues: "2.2 kg", sojaS: "16 c.à.s", mirin: "11 c.à.s", saké: "11 c.à.s", gingembre: "8.8 cm", anis: "5.5" },
       { nb: 12, joues: "2.4 kg",sojaS: "18 c.à.s",mirin: "12 c.à.s",saké: "12 c.à.s",gingembre: "10 cm",anis: "6" },
-      { nb: 14, joues: "2.8 kg",sojaS: "21 c.à.s",mirin: "14 c.à.s",saké: "14 c.à.s",gingembre: "12 cm",anis: "7" },
+      { nb: 13, joues: "2.6 kg", sojaS: "20 c.à.s", mirin: "13 c.à.s", saké: "13 c.à.s", gingembre: "11 cm", anis: "6.5" },
+      { nb: 14, joues: "2.8 kg",sojaS: "21 c.à.s",mirin: "14 c.à.s",saké: "14 c.à.s",gingembre: "12 cm",anis: "7" }
+    
     ],
     ingredients: {},
     etapes: [
@@ -3329,13 +3634,21 @@ const recettes = {
     emoji: "🇭🇺",
     description: "Le Paprikash de poulet hongrois — poulet mijoté dans une sauce crémeuse au paprika fumé. Un plat réconfortant d'Europe centrale.",
     tableauPaprikash: [
+      { nb:  1, poulet: "200 g", paprika: "0.5 c.à.s", creme: "50 ml", oignon: "0.5", bouillon: "75 ml" },
       { nb:  2, poulet: "400 g", paprika: "1 c.à.s", creme: "100 ml", oignon: "1",  bouillon: "150 ml" },
+      { nb:  3, poulet: "600 g", paprika: "1.5 c.à.s", creme: "150 ml", oignon: "1.5", bouillon: "225 ml" },
       { nb:  4, poulet: "800 g", paprika: "2 c.à.s", creme: "200 ml", oignon: "2",  bouillon: "300 ml" },
+      { nb:  5, poulet: "1000 g", paprika: "2.5 c.à.s", creme: "250 ml", oignon: "2.5", bouillon: "375 ml" },
       { nb:  6, poulet: "1.2 kg",paprika: "3 c.à.s", creme: "300 ml", oignon: "3",  bouillon: "450 ml" },
+      { nb:  7, poulet: "1.4 kg", paprika: "3.5 c.à.s", creme: "350 ml", oignon: "3.5", bouillon: "525 ml" },
       { nb:  8, poulet: "1.6 kg",paprika: "4 c.à.s", creme: "400 ml", oignon: "4",  bouillon: "600 ml" },
+      { nb:  9, poulet: "1.8 kg", paprika: "4.5 c.à.s", creme: "450 ml", oignon: "4.5", bouillon: "675 ml" },
       { nb: 10, poulet: "2 kg",  paprika: "5 c.à.s", creme: "500 ml", oignon: "5",  bouillon: "750 ml" },
+      { nb: 11, poulet: "2.2 kg", paprika: "5.5 c.à.s", creme: "550 ml", oignon: "5.5", bouillon: "825 ml" },
       { nb: 12, poulet: "2.4 kg",paprika: "6 c.à.s", creme: "600 ml", oignon: "6",  bouillon: "900 ml" },
-      { nb: 14, poulet: "2.8 kg",paprika: "7 c.à.s", creme: "700 ml", oignon: "7",  bouillon: "1050 ml"},
+      { nb: 13, poulet: "2.6 kg", paprika: "6.5 c.à.s", creme: "650 ml", oignon: "6.5", bouillon: "975 ml" },
+      { nb: 14, poulet: "2.8 kg",paprika: "7 c.à.s", creme: "700 ml", oignon: "7",  bouillon: "1050 ml"}
+    
     ],
     ingredients: {},
     etapes: [
@@ -3345,6 +3658,688 @@ const recettes = {
       { icone: "🍦", titre: "Sauce à la crème",         detail: "Retirer le poulet. Mélanger crème fraîche + 1 c.à.s de farine. Incorporer dans la sauce chaude en fouettant. Remettre le poulet. Servir avec nouilles hongroises (csipetke) ou gnocchis.", badge: null },
     ]
   },
+
+  bibimbap: {
+    base: 2,
+    temps: "40 min",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🍚",
+    description: "Le Bibimbap coréen — bol de riz garni de légumes sautés, bœuf mariné, œuf et sauce gochujang. Mélanger et déguster !",
+    tableauBibimbap: [
+      { nb:  1, riz: "80 g",  boeuf: "80 g",  courgette: "½",  carotte: "½",  epinards: "40 g",  oeuf: "1",  gochujang: "1 c.à.s" },
+      { nb:  2, riz: "160 g", boeuf: "160 g", courgette: "1",   carotte: "1",  epinards: "80 g",  oeuf: "2",  gochujang: "2 c.à.s" },
+      { nb:  3, riz: "240 g", boeuf: "240 g", courgette: "1½",  carotte: "1½", epinards: "120 g", oeuf: "3",  gochujang: "3 c.à.s" },
+      { nb:  4, riz: "320 g", boeuf: "320 g", courgette: "2",   carotte: "2",  epinards: "160 g", oeuf: "4",  gochujang: "4 c.à.s" },
+      { nb:  5, riz: "400 g", boeuf: "400 g", courgette: "2½",  carotte: "2½", epinards: "200 g", oeuf: "5",  gochujang: "5 c.à.s" },
+      { nb:  6, riz: "480 g", boeuf: "480 g", courgette: "3",   carotte: "3",  epinards: "240 g", oeuf: "6",  gochujang: "6 c.à.s" },
+      { nb:  7, riz: "560 g", boeuf: "560 g", courgette: "3½",  carotte: "3½", epinards: "280 g", oeuf: "7",  gochujang: "7 c.à.s" },
+      { nb:  8, riz: "640 g", boeuf: "640 g", courgette: "4",   carotte: "4",  epinards: "320 g", oeuf: "8",  gochujang: "8 c.à.s" },
+      { nb:  9, riz: "720 g", boeuf: "720 g", courgette: "4½",  carotte: "4½", epinards: "360 g", oeuf: "9",  gochujang: "9 c.à.s" },
+      { nb: 10, riz: "800 g", boeuf: "800 g", courgette: "5",   carotte: "5",  epinards: "400 g", oeuf: "10", gochujang: "10 c.à.s"},
+      { nb: 11, riz: "880 g", boeuf: "880 g", courgette: "5½",  carotte: "5½", epinards: "440 g", oeuf: "11", gochujang: "11 c.à.s"},
+      { nb: 12, riz: "960 g", boeuf: "960 g", courgette: "6",   carotte: "6",  epinards: "480 g", oeuf: "12", gochujang: "12 c.à.s"},
+      { nb: 13, riz: "1040 g",boeuf: "1040 g",courgette: "6½",  carotte: "6½", epinards: "520 g", oeuf: "13", gochujang: "13 c.à.s"},
+      { nb: 14, riz: "1120 g",boeuf: "1120 g",courgette: "7",   carotte: "7",  epinards: "560 g", oeuf: "14", gochujang: "14 c.à.s"},
+      { nb: 15, riz: "1200 g",boeuf: "1200 g",courgette: "7½",  carotte: "7½", epinards: "600 g", oeuf: "15", gochujang: "15 c.à.s"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Mariner le bœuf",         detail: "Émincer le bœuf finement. Mariner avec sauce soja, sucre, ail, huile de sésame et poivre 20 min.", badge: "⏱ 20 min" },
+      { icone: "🥕", titre: "Préparer les légumes",     detail: "Sauter séparément courgette, carotte et épinards à l'huile de sésame. Assaisonner chacun avec sel et ail.", badge: null },
+      { icone: "🥩", titre: "Cuire le bœuf",           detail: "Faire sauter le bœuf à feu vif jusqu'à cuisson.", badge: "⏱ 3 min" },
+      { icone: "🍳", titre: "Œuf sur le plat",         detail: "Cuire un œuf au plat avec jaune coulant par personne.", badge: null },
+      { icone: "🥢", titre: "Dresser et mélanger",     detail: "Disposer riz au fond du bol. Placer chaque garniture en secteurs colorés. Poser l'œuf au centre. Ajouter gochujang. Tout mélanger avant de manger !", badge: null },
+    ]
+  },
+
+  moquecabresil: {
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "La Moqueca brésilienne — ragoût de poisson au lait de coco, tomates et huile de dendê. Le plat emblématique de Bahia.",
+    tableauMoqueca: [
+      { nb:  1, poisson: "150 g", coco: "100 ml", tomates: "100 g", oignon: "0.5", coriandre: "½ botte" },
+      { nb:  2, poisson: "300 g", coco: "200 ml", tomates: "200 g", oignon: "1",  coriandre: "½ botte" },
+      { nb:  3, poisson: "450 g", coco: "300 ml", tomates: "300 g", oignon: "1.5", coriandre: "½ botte" },
+      { nb:  4, poisson: "600 g", coco: "400 ml", tomates: "400 g", oignon: "2",  coriandre: "1 botte"  },
+      { nb:  5, poisson: "750 g", coco: "500 ml", tomates: "500 g", oignon: "2.5", coriandre: "1.2 botte" },
+      { nb:  6, poisson: "900 g", coco: "600 ml", tomates: "600 g", oignon: "3",  coriandre: "1 botte"  },
+      { nb:  7, poisson: "1050 g", coco: "700 ml", tomates: "700 g", oignon: "3.5", coriandre: "1.2 botte" },
+      { nb:  8, poisson: "1.2 kg",coco: "800 ml", tomates: "800 g", oignon: "4",  coriandre: "2 bottes" },
+      { nb:  9, poisson: "1.3 kg", coco: "900 ml", tomates: "900 g", oignon: "4.5", coriandre: "2.2 bottes" },
+      { nb: 10, poisson: "1.5 kg",coco: "1 L",    tomates: "1 kg",  oignon: "5",  coriandre: "2 bottes" },
+      { nb: 11, poisson: "1.7 kg", coco: "1.1 L", tomates: "1.1 kg", oignon: "5.5", coriandre: "2.2 bottes" },
+      { nb: 12, poisson: "1.8 kg",coco: "1.2 L",  tomates: "1.2 kg",oignon: "6",  coriandre: "2 bottes" },
+      { nb: 13, poisson: "1.9 kg", coco: "1.3 L", tomates: "1.3 kg", oignon: "6.5", coriandre: "2.2 bottes" },
+      { nb: 14, poisson: "2.1 kg",coco: "1.4 L",  tomates: "1.4 kg",oignon: "7",  coriandre: "3 bottes" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Mariner le poisson",      detail: "Couper le poisson en morceaux. Mariner avec jus de citron vert, ail, sel et coriandre 30 min.", badge: "⏱ 30 min" },
+      { icone: "🧅", titre: "Base aromatique",         detail: "Dans une casserole, faire revenir oignon et poivron. Ajouter tomates concassées et laisser réduire 5 min.", badge: null },
+      { icone: "🥥", titre: "Lait de coco",            detail: "Verser le lait de coco et l'huile de dendê (ou huile de palme). Assaisonner.", badge: null },
+      { icone: "🐟", titre: "Cuire le poisson",        detail: "Ajouter le poisson mariné. Cuire doucement sans toucher pour ne pas l'émietter.", badge: "⏱ 10-12 min" },
+      { icone: "🌿", titre: "Servir",                  detail: "Parsemer de coriandre fraîche. Servir avec riz blanc et farofa (farine de manioc torréfiée).", badge: null },
+    ]
+  },
+
+  rendangboeuf: {
+    base: 4,
+    temps: "3h",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🥘",
+    description: "Le Rendang indonésien — bœuf mijoté longuement dans le lait de coco et épices jusqu'à caramélisation. Le curry le plus savoureux du monde.",
+    tableauRendang: [
+      { nb:  1, boeuf: "200 g", coco: "100 ml", citronnelle: "0.5 tige", galanga: "1 cm", piment: "1.5" },
+      { nb:  2, boeuf: "400 g", coco: "200 ml", citronnelle: "1 tige", galanga: "2 cm",  piment: "3" },
+      { nb:  3, boeuf: "600 g", coco: "300 ml", citronnelle: "1.5 tige", galanga: "3 cm", piment: "4.5" },
+      { nb:  4, boeuf: "800 g", coco: "400 ml", citronnelle: "2 tiges",galanga: "3 cm",  piment: "5" },
+      { nb:  5, boeuf: "1000 g", coco: "500 ml", citronnelle: "2.5 tiges", galanga: "3.8 cm", piment: "6.2" },
+      { nb:  6, boeuf: "1.2 kg",coco: "600 ml", citronnelle: "3 tiges",galanga: "4 cm",  piment: "7" },
+      { nb:  7, boeuf: "1.4 kg", coco: "700 ml", citronnelle: "3.5 tiges", galanga: "4.7 cm", piment: "8.2" },
+      { nb:  8, boeuf: "1.6 kg",coco: "800 ml", citronnelle: "4 tiges",galanga: "5 cm",  piment: "9" },
+      { nb:  9, boeuf: "1.8 kg", coco: "900 ml", citronnelle: "4.5 tiges", galanga: "5.6 cm", piment: "10" },
+      { nb: 10, boeuf: "2 kg",  coco: "1 L",    citronnelle: "5 tiges",galanga: "6 cm",  piment: "11"},
+      { nb: 11, boeuf: "2.2 kg", coco: "1.1 L", citronnelle: "5.5 tiges", galanga: "6.6 cm", piment: "12" },
+      { nb: 12, boeuf: "2.4 kg",coco: "1.2 L",  citronnelle: "6 tiges",galanga: "7 cm",  piment: "13"},
+      { nb: 13, boeuf: "2.6 kg", coco: "1.3 L", citronnelle: "6.5 tiges", galanga: "7.6 cm", piment: "14" },
+      { nb: 14, boeuf: "2.8 kg",coco: "1.4 L",  citronnelle: "7 tiges",galanga: "8 cm",  piment: "15"}
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "Pâte de piment",         detail: "Mixer piments, échalotes, ail, galanga, curcuma, citronnelle et gingembre pour obtenir une pâte fine.", badge: null },
+      { icone: "🥘", titre: "Faire revenir la pâte",   detail: "Dans une cocotte, faire revenir la pâte à feu moyen jusqu'à ce qu'elle sèche et soit très parfumée.", badge: "⏱ 5 min" },
+      { icone: "🥥", titre: "Ajouter bœuf et coco",   detail: "Ajouter le bœuf en cubes et le lait de coco. Ajouter feuilles de kaffir lime et tamarin. Porter à ébullition.", badge: null },
+      { icone: "⏳", titre: "Mijoter longuement",      detail: "Baisser le feu et cuire à découvert en remuant régulièrement. Le liquide doit s'évaporer complètement. Le bœuf finit par frire dans sa propre graisse et caraméliser.", badge: "⏱ 2h30-3h" },
+      { icone: "🍚", titre: "Servir",                  detail: "Servir avec riz vapeur et sambals. Le rendang doit être brun foncé et sec. Se bonifie le lendemain.", badge: null },
+    ]
+  },
+
+  tacoshijosepastor: {
+    base: 2,
+    temps: "30 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🌮",
+    description: "Tacos Al Pastor mexicains — porc mariné aux épices et ananas, cuit à la broche ou poêle. La vraie street food de Mexico City.",
+    tableauTacoPastor: [
+      { nb:  1, porc: "100 g", ananas: "40 g", tortillas: "2", oignon: "½", coriandre: "¼ botte", citron: "0.5" },
+      { nb:  2, porc: "200 g", ananas: "80 g",  tortillas: "4",  oignon: "½",  coriandre: "¼ botte",  citron: "1" },
+      { nb:  3, porc: "300 g", ananas: "120 g", tortillas: "6", oignon: "½", coriandre: "¼ botte", citron: "1.5" },
+      { nb:  4, porc: "400 g", ananas: "160 g", tortillas: "8",  oignon: "1",  coriandre: "½ botte",  citron: "2" },
+      { nb:  5, porc: "500 g", ananas: "200 g", tortillas: "10", oignon: "1.2", coriandre: "½ botte", citron: "2.5" },
+      { nb:  6, porc: "600 g", ananas: "240 g", tortillas: "12", oignon: "1",  coriandre: "1 botte",  citron: "3" },
+      { nb:  7, porc: "700 g", ananas: "280 g", tortillas: "14", oignon: "1.2", coriandre: "1.2 botte", citron: "3.5" },
+      { nb:  8, porc: "800 g", ananas: "320 g", tortillas: "16", oignon: "2",  coriandre: "1 botte",  citron: "4" },
+      { nb:  9, porc: "900 g", ananas: "360 g", tortillas: "18", oignon: "2.2", coriandre: "1.1 botte", citron: "4.5" },
+      { nb: 10, porc: "1 kg",  ananas: "400 g", tortillas: "20", oignon: "2",  coriandre: "1 botte",  citron: "5" },
+      { nb: 11, porc: "1.1 kg", ananas: "440 g", tortillas: "22", oignon: "2.2", coriandre: "1.1 botte", citron: "5.5" },
+      { nb: 12, porc: "1.2 kg",ananas: "480 g", tortillas: "24", oignon: "3",  coriandre: "2 bottes", citron: "6" },
+      { nb: 13, porc: "1.3 kg", ananas: "520 g", tortillas: "26", oignon: "3.2", coriandre: "2.2 bottes", citron: "6.5" },
+      { nb: 14, porc: "1.4 kg",ananas: "560 g", tortillas: "28", oignon: "3",  coriandre: "2 bottes", citron: "7" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "Marinade achiote",        detail: "Mélanger pâte d'achiote, jus d'orange, vinaigre, ail, cumin, origan, sel. Couper le porc en tranches fines et mariner.", badge: "⏱ 2h minimum" },
+      { icone: "🍍", titre: "Cuire porc et ananas",    detail: "Cuire le porc dans une poêle très chaude par petites quantités pour bien dorer. Griller les tranches d'ananas.", badge: "⏱ 8 min" },
+      { icone: "🔪", titre: "Hacher",                  detail: "Couper porc et ananas en petits dés.", badge: null },
+      { icone: "🌮", titre: "Assembler",               detail: "Chauffer les tortillas. Garnir de porc, ananas, oignon blanc émincé, coriandre fraîche. Arroser de jus de citron vert et salsa verde.", badge: null },
+    ]
+  },
+
+  grilladelamnocciole: {
+    base: 4,
+    temps: "25 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🐑",
+    description: "Côtelettes d'agneau grillées aux herbes — marinade provençale, cuisson au grill. Simple, méditerranéen et savoureux.",
+    tableauCotelets: [
+      { nb:  1, cotelets: "2", huileOlive: "1.5 c.à.s", romarin: "1 branches", ail: "1 gousses", citron: "½" },
+      { nb:  2, cotelets: "4",  huileOlive: "3 c.à.s", romarin: "2 branches", ail: "2 gousses", citron: "½" },
+      { nb:  3, cotelets: "6", huileOlive: "4.5 c.à.s", romarin: "3 branches", ail: "3 gousses", citron: "½" },
+      { nb:  4, cotelets: "8",  huileOlive: "5 c.à.s", romarin: "3 branches", ail: "4 gousses", citron: "1" },
+      { nb:  5, cotelets: "10", huileOlive: "6.2 c.à.s", romarin: "3.8 branches", ail: "5 gousses", citron: "1.2" },
+      { nb:  6, cotelets: "12", huileOlive: "8 c.à.s", romarin: "4 branches", ail: "6 gousses", citron: "1" },
+      { nb:  7, cotelets: "14", huileOlive: "9.3 c.à.s", romarin: "4.7 branches", ail: "7 gousses", citron: "1.2" },
+      { nb:  8, cotelets: "16", huileOlive: "10 c.à.s",romarin: "5 branches", ail: "8 gousses", citron: "2" },
+      { nb:  9, cotelets: "18", huileOlive: "11 c.à.s", romarin: "5.6 branches", ail: "9 gousses", citron: "2.2" },
+      { nb: 10, cotelets: "20", huileOlive: "12 c.à.s",romarin: "6 branches", ail: "10 gousses",citron: "2" },
+      { nb: 11, cotelets: "22", huileOlive: "13 c.à.s", romarin: "6.6 branches", ail: "11 gousses", citron: "2.2" },
+      { nb: 12, cotelets: "24", huileOlive: "15 c.à.s",romarin: "7 branches", ail: "12 gousses",citron: "3" },
+      { nb: 13, cotelets: "26", huileOlive: "16 c.à.s", romarin: "7.6 branches", ail: "13 gousses", citron: "3.2" },
+      { nb: 14, cotelets: "28", huileOlive: "18 c.à.s",romarin: "8 branches", ail: "14 gousses",citron: "3" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Marinade provençale",     detail: "Mélanger huile d'olive, romarin haché, ail écrasé, thym, jus de citron, sel et poivre. Enrober les côtelettes.", badge: "⏱ 1h minimum" },
+      { icone: "🔥", titre: "Grill très chaud",        detail: "Préchauffer le grill ou barbecue au maximum. Les barreaux doivent être brûlants.", badge: null },
+      { icone: "🐑", titre: "Cuire",                   detail: "Griller les côtelettes 2-3 min par face pour une cuisson rosée. Ne pas trop cuire l'agneau.", badge: "⏱ 4-6 min total" },
+      { icone: "⏳", titre: "Repos",                   detail: "Laisser reposer 5 min sous alu avant de servir. Accompagner de ratatouille ou tabboulé.", badge: "⏱ 5 min repos" },
+    ]
+  },
+
+  sushimaison: {
+    base: 2,
+    temps: "1h",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🍣",
+    description: "Sushis maison — makis et nigiris avec riz vinaigré, saumon et thon frais. Plus simple qu'on ne le croit !",
+    tableauSushi: [
+      { nb:  1, riz: "25 g", saumon: "15 g", thon: "15 g", nori: "0.2 feuille", vinaigre: "3.8 ml" },
+      { nb:  2, riz: "50 g", saumon: "30 g", thon: "30 g", nori: "0.5 feuille", vinaigre: "7.5 ml" },
+      { nb:  3, riz: "75 g", saumon: "45 g", thon: "45 g", nori: "0.8 feuille", vinaigre: "11 ml" },
+      { nb:  4, riz: "100 g",  saumon: "60 g",  thon: "60 g",   nori: "1 feuille",  vinaigre: "15 ml" },
+      { nb:  5, riz: "125 g", saumon: "75 g", thon: "75 g", nori: "1.2 feuille", vinaigre: "19 ml" },
+      { nb:  6, riz: "150 g", saumon: "90 g", thon: "90 g", nori: "1.5 feuille", vinaigre: "22 ml" },
+      { nb:  7, riz: "175 g", saumon: "105 g", thon: "105 g", nori: "1.8 feuilles", vinaigre: "26 ml" },
+      { nb:  8, riz: "200 g",  saumon: "120 g", thon: "120 g",  nori: "2 feuilles", vinaigre: "30 ml" },
+      { nb:  9, riz: "225 g", saumon: "135 g", thon: "135 g", nori: "2.2 feuilles", vinaigre: "34 ml" },
+      { nb: 10, riz: "250 g", saumon: "150 g", thon: "150 g", nori: "2.5 feuilles", vinaigre: "38 ml" },
+      { nb: 11, riz: "275 g", saumon: "165 g", thon: "165 g", nori: "2.8 feuilles", vinaigre: "41 ml" },
+      { nb: 12, riz: "300 g",  saumon: "180 g", thon: "180 g",  nori: "3 feuilles", vinaigre: "45 ml" },
+      { nb: 13, riz: "325 g", saumon: "195 g", thon: "195 g", nori: "3.2 feuilles", vinaigre: "49 ml" },
+      { nb: 14, riz: "350 g", saumon: "210 g", thon: "210 g", nori: "3.5 feuilles", vinaigre: "52 ml" },
+      { nb: 15, riz: "375 g", saumon: "225 g", thon: "225 g", nori: "3.8 feuilles", vinaigre: "56 ml" },
+      { nb: 16, riz: "400 g",  saumon: "240 g", thon: "240 g",  nori: "4 feuilles", vinaigre: "60 ml" },
+      { nb: 17, riz: "425 g", saumon: "255 g", thon: "255 g", nori: "4.2 feuilles", vinaigre: "64 ml" },
+      { nb: 18, riz: "450 g", saumon: "270 g", thon: "270 g", nori: "4.5 feuilles", vinaigre: "68 ml" },
+      { nb: 19, riz: "475 g", saumon: "285 g", thon: "285 g", nori: "4.8 feuilles", vinaigre: "71 ml" },
+      { nb: 20, riz: "500 g",  saumon: "300 g", thon: "300 g",  nori: "5 feuilles", vinaigre: "75 ml" },
+      { nb: 21, riz: "525 g", saumon: "315 g", thon: "315 g", nori: "5.2 feuilles", vinaigre: "79 ml" },
+      { nb: 22, riz: "550 g", saumon: "330 g", thon: "330 g", nori: "5.5 feuilles", vinaigre: "82 ml" },
+      { nb: 23, riz: "575 g", saumon: "345 g", thon: "345 g", nori: "5.8 feuilles", vinaigre: "86 ml" },
+      { nb: 24, riz: "600 g",  saumon: "360 g", thon: "360 g",  nori: "6 feuilles", vinaigre: "90 ml" },
+      { nb: 25, riz: "625 g", saumon: "375 g", thon: "375 g", nori: "6.2 feuilles", vinaigre: "94 ml" },
+      { nb: 26, riz: "650 g", saumon: "390 g", thon: "390 g", nori: "6.5 feuilles", vinaigre: "98 ml" },
+      { nb: 27, riz: "675 g", saumon: "405 g", thon: "405 g", nori: "6.8 feuilles", vinaigre: "101 ml" },
+      { nb: 28, riz: "700 g",  saumon: "420 g", thon: "420 g",  nori: "7 feuilles", vinaigre: "105 ml"}
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz à sushi",             detail: "Rincer le riz japonais. Cuire avec légèrement moins d'eau. Assaisonner chaud avec vinaigre de riz, sucre et sel. Éventrer pour refroidir.", badge: "⏱ 15 min" },
+      { icone: "🐟", titre: "Préparer le poisson",     detail: "Utiliser du poisson sashimi-grade. Couper en tranches fines pour les nigiris, en bâtonnets pour les makis.", badge: null },
+      { icone: "🌿", titre: "Makis",                   detail: "Poser une feuille de nori sur le tapis bambou. Étaler 80g de riz en laissant 2cm en haut. Poser la garniture. Rouler en serrant. Couper en 6.", badge: null },
+      { icone: "🍣", titre: "Nigiris",                 detail: "Humidifier les mains. Former une boulette de riz allongée. Poser une tranche de poisson dessus. Presser légèrement.", badge: null },
+      { icone: "🥢", titre: "Servir",                  detail: "Servir avec sauce soja, wasabi et gingembre mariné. Consommer rapidement.", badge: null },
+    ]
+  },
+
+  carigrioantillais: {
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🦞",
+    description: "Le Cari Griot antillais — porc frit et mariné aux épices créoles. Le plat fête par excellence de la cuisine haïtienne.",
+    tableauCariGriot: [
+      { nb:  1, porc: "200 g", citron: "0.5", thym: "1.5 branches", ail: "1.5 gousses", piment: "½" },
+      { nb:  2, porc: "400 g", citron: "1",  thym: "3 branches", ail: "3 gousses", piment: "½" },
+      { nb:  3, porc: "600 g", citron: "1.5", thym: "4.5 branches", ail: "4.5 gousses", piment: "½" },
+      { nb:  4, porc: "800 g", citron: "2",  thym: "5 branches", ail: "5 gousses", piment: "1" },
+      { nb:  5, porc: "1000 g", citron: "2.5", thym: "6.2 branches", ail: "6.2 gousses", piment: "1.2" },
+      { nb:  6, porc: "1.2 kg",citron: "3",  thym: "7 branches", ail: "7 gousses", piment: "1" },
+      { nb:  7, porc: "1.4 kg", citron: "3.5", thym: "8.2 branches", ail: "8.2 gousses", piment: "1.2" },
+      { nb:  8, porc: "1.6 kg",citron: "4",  thym: "9 branches", ail: "9 gousses", piment: "2" },
+      { nb:  9, porc: "1.8 kg", citron: "4.5", thym: "10 branches", ail: "10 gousses", piment: "2.2" },
+      { nb: 10, porc: "2 kg",  citron: "5",  thym: "10 branches",ail: "10 gousses",piment: "2" },
+      { nb: 11, porc: "2.2 kg", citron: "5.5", thym: "11 branches", ail: "11 gousses", piment: "2.2" },
+      { nb: 12, porc: "2.4 kg",citron: "6",  thym: "12 branches",ail: "12 gousses",piment: "3" },
+      { nb: 13, porc: "2.6 kg", citron: "6.5", thym: "13 branches", ail: "13 gousses", piment: "3.2" },
+      { nb: 14, porc: "2.8 kg",citron: "7",  thym: "14 branches",ail: "14 gousses",piment: "3" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "Marinade créole",         detail: "Mélanger jus de citron, ail écrasé, thym, oignon émincé, piment, sel et poivre. Mariner le porc en cubes au frigo.", badge: "⏱ 4h minimum" },
+      { icone: "⏳", titre: "Cuire à l'étouffée",     detail: "Transférer porc et marinade dans une casserole. Couvrir et cuire à feu moyen-doux jusqu'à ce que l'eau s'évapore.", badge: "⏱ 35-40 min" },
+      { icone: "🔥", titre: "Frire dans la graisse",   detail: "Quand l'eau est évaporée, le porc cuit dans sa propre graisse. Frire jusqu'à belle coloration dorée et croustillante.", badge: "⏱ 10 min" },
+      { icone: "🍚", titre: "Servir",                  detail: "Servir avec riz et pois (riz collé), bananes plantains frits et pikliz (chou pimenté mariné).", badge: null },
+    ]
+  },
+
+  semoulecourgette: {
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🌾",
+    description: "Semoule aux légumes grillés — taboulé chaud avec courgettes, tomates cerises et herbes fraîches. Un accompagnement ensoleillé.",
+    tableauSemoule: [
+      { nb:  1, semoule: "60 g", courgette: "0.5", tomateCerise: "50 g", bouillon: "75 ml", menthe: "2.5 feuilles" },
+      { nb:  2, semoule: "120 g", courgette: "1",  tomateCerise: "100 g", bouillon: "150 ml", menthe: "5 feuilles" },
+      { nb:  3, semoule: "180 g", courgette: "1.5", tomateCerise: "150 g", bouillon: "225 ml", menthe: "7.5 feuilles" },
+      { nb:  4, semoule: "240 g", courgette: "2",  tomateCerise: "200 g", bouillon: "300 ml", menthe: "10 feuilles"},
+      { nb:  5, semoule: "300 g", courgette: "2.5", tomateCerise: "250 g", bouillon: "375 ml", menthe: "12 feuilles" },
+      { nb:  6, semoule: "360 g", courgette: "3",  tomateCerise: "300 g", bouillon: "450 ml", menthe: "15 feuilles"},
+      { nb:  7, semoule: "420 g", courgette: "3.5", tomateCerise: "350 g", bouillon: "525 ml", menthe: "18 feuilles" },
+      { nb:  8, semoule: "480 g", courgette: "4",  tomateCerise: "400 g", bouillon: "600 ml", menthe: "20 feuilles"},
+      { nb:  9, semoule: "540 g", courgette: "4.5", tomateCerise: "450 g", bouillon: "675 ml", menthe: "22 feuilles" },
+      { nb: 10, semoule: "600 g", courgette: "5",  tomateCerise: "500 g", bouillon: "750 ml", menthe: "25 feuilles"},
+      { nb: 11, semoule: "660 g", courgette: "5.5", tomateCerise: "550 g", bouillon: "825 ml", menthe: "28 feuilles" },
+      { nb: 12, semoule: "720 g", courgette: "6",  tomateCerise: "600 g", bouillon: "900 ml", menthe: "30 feuilles"},
+      { nb: 13, semoule: "780 g", courgette: "6.5", tomateCerise: "650 g", bouillon: "975 ml", menthe: "32 feuilles" },
+      { nb: 14, semoule: "840 g", courgette: "7",  tomateCerise: "700 g", bouillon: "1050 ml",menthe: "35 feuilles"}
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥒", titre: "Griller les courgettes",  detail: "Couper les courgettes en rondelles. Griller à la poêle avec huile d'olive jusqu'à coloration.", badge: "⏱ 8 min" },
+      { icone: "🌾", titre: "Préparer la semoule",     detail: "Verser la semoule dans un saladier. Ajouter le bouillon bouillant, couvrir 5 min. Égrainer à la fourchette avec huile d'olive et sel.", badge: "⏱ 5 min" },
+      { icone: "🍅", titre: "Ajouter les garnitures",  detail: "Mélanger courgettes grillées, tomates cerises coupées, feuilles de menthe et coriandre.", badge: null },
+      { icone: "🍋", titre: "Assaisonner et servir",   detail: "Arroser de jus de citron et huile d'olive généreuse. Servir chaud ou tiède.", badge: null },
+    ]
+  },
+
+  pouletbasquaise: {
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🐓",
+    description: "Le Poulet basquaise — morceaux de poulet mijotés avec poivrons, tomates et jambon de Bayonne. Le grand classique du Pays Basque.",
+    tableauBasquaise: [
+      { nb:  1, poulet: "200 g", poivron: "0.5", tomates: "100 g", jambon: "25 g", oignon: "0.5" },
+      { nb:  2, poulet: "400 g", poivron: "1",  tomates: "200 g", jambon: "50 g",  oignon: "1"  },
+      { nb:  3, poulet: "600 g", poivron: "1.5", tomates: "300 g", jambon: "75 g", oignon: "1.5" },
+      { nb:  4, poulet: "800 g", poivron: "2",  tomates: "400 g", jambon: "100 g", oignon: "2"  },
+      { nb:  5, poulet: "1000 g", poivron: "2.5", tomates: "500 g", jambon: "125 g", oignon: "2.5" },
+      { nb:  6, poulet: "1.2 kg",poivron: "3",  tomates: "600 g", jambon: "150 g", oignon: "3"  },
+      { nb:  7, poulet: "1.4 kg", poivron: "3.5", tomates: "700 g", jambon: "175 g", oignon: "3.5" },
+      { nb:  8, poulet: "1.6 kg",poivron: "4",  tomates: "800 g", jambon: "200 g", oignon: "4"  },
+      { nb:  9, poulet: "1.8 kg", poivron: "4.5", tomates: "900 g", jambon: "225 g", oignon: "4.5" },
+      { nb: 10, poulet: "2 kg",  poivron: "5",  tomates: "1 kg",  jambon: "250 g", oignon: "5"  },
+      { nb: 11, poulet: "2.2 kg", poivron: "5.5", tomates: "1.1 kg", jambon: "275 g", oignon: "5.5" },
+      { nb: 12, poulet: "2.4 kg",poivron: "6",  tomates: "1.2 kg",jambon: "300 g", oignon: "6"  },
+      { nb: 13, poulet: "2.6 kg", poivron: "6.5", tomates: "1.3 kg", jambon: "325 g", oignon: "6.5" },
+      { nb: 14, poulet: "2.8 kg",poivron: "7",  tomates: "1.4 kg",jambon: "350 g", oignon: "7"  }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐓", titre: "Dorer le poulet",         detail: "Assaisonner et faire dorer les morceaux de poulet à feu vif dans l'huile d'olive. Réserver.", badge: "⏱ 8 min" },
+      { icone: "🫑", titre: "Piperade",                detail: "Dans la même poêle, faire revenir oignon, poivrons rouges et verts en lanières. Ajouter ail et jambon de Bayonne.", badge: "⏱ 10 min" },
+      { icone: "🍅", titre: "Ajouter tomates",         detail: "Ajouter tomates concassées, piment d'Espelette, thym et laurier. Laisser réduire 10 min.", badge: null },
+      { icone: "⏳", titre: "Mijoter ensemble",        detail: "Remettre le poulet dans la sauce. Couvrir et mijoter à feu doux.", badge: "⏱ 30 min" },
+      { icone: "🍚", titre: "Servir",                  detail: "Accompagner de riz blanc ou de polenta. Parsemer de persil plat.", badge: null },
+    ]
+  },
+
+  crevettespilpil: {
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🦐",
+    description: "Les Crevettes al Pil Pil espagnoles — crevettes sautées à l'ail, piment et huile d'olive. L'apéritif tapas qui disparaît en 2 minutes !",
+    tableauCrevPilPil: [
+      { nb:  1, crevettes: "100 g", ail: "1.5 gousses", piment: "0.5", huileOlive: "2 c.à.s", persil: "¼ botte" },
+      { nb:  2, crevettes: "200 g", ail: "3 gousses", piment: "1",  huileOlive: "4 c.à.s", persil: "¼ botte" },
+      { nb:  3, crevettes: "300 g", ail: "4.5 gousses", piment: "1.5", huileOlive: "6 c.à.s", persil: "¼ botte" },
+      { nb:  4, crevettes: "400 g", ail: "5 gousses", piment: "2",  huileOlive: "6 c.à.s", persil: "½ botte" },
+      { nb:  5, crevettes: "500 g", ail: "6.2 gousses", piment: "2.5", huileOlive: "7.5 c.à.s", persil: "½ botte" },
+      { nb:  6, crevettes: "600 g", ail: "7 gousses", piment: "3",  huileOlive: "8 c.à.s", persil: "1 botte"  },
+      { nb:  7, crevettes: "700 g", ail: "8.2 gousses", piment: "3.5", huileOlive: "9.3 c.à.s", persil: "1.2 botte" },
+      { nb:  8, crevettes: "800 g", ail: "9 gousses", piment: "4",  huileOlive: "10 c.à.s",persil: "1 botte"  },
+      { nb:  9, crevettes: "900 g", ail: "10 gousses", piment: "4.5", huileOlive: "11 c.à.s", persil: "1.1 botte" },
+      { nb: 10, crevettes: "1 kg",  ail: "10 gousses",piment: "5",  huileOlive: "12 c.à.s",persil: "1 botte"  },
+      { nb: 11, crevettes: "1.1 kg", ail: "11 gousses", piment: "5.5", huileOlive: "13 c.à.s", persil: "1.1 botte" },
+      { nb: 12, crevettes: "1.2 kg",ail: "12 gousses",piment: "6",  huileOlive: "15 c.à.s",persil: "2 bottes" },
+      { nb: 13, crevettes: "1.3 kg", ail: "13 gousses", piment: "6.5", huileOlive: "16 c.à.s", persil: "2.2 bottes" },
+      { nb: 14, crevettes: "1.4 kg",ail: "14 gousses",piment: "7",  huileOlive: "18 c.à.s",persil: "2 bottes" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫙", titre: "Poêle en terre cuite",    detail: "Idéalement utiliser une cazuela (poêle en terre cuite). Verser l'huile d'olive généreusement.", badge: null },
+      { icone: "🧄", titre: "Infuser ail et piment",   detail: "À feu moyen, faire revenir l'ail tranché et le piment séché jusqu'à légère dorure. Ne pas brûler !", badge: "⏱ 2 min" },
+      { icone: "🦐", titre: "Sauter les crevettes",    detail: "Augmenter le feu. Ajouter les crevettes. Cuire 1-2 min de chaque côté — elles cuisent très vite !", badge: "⏱ 2-3 min" },
+      { icone: "🌿", titre: "Servir immédiatement",    detail: "Parsemer de persil haché. Servir bouillant dans la poêle avec pain croustillant pour saucer. Le Pil Pil c'est l'huile qui grésille !", badge: null },
+    ]
+  },
+
+  lasagneverdure: {
+    base: 6,
+    temps: "1h30",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🥬",
+    description: "Lasagne verdure — lasagnes végétariennes aux épinards, ricotta, sauce tomate maison et béchamel. Généreuses et savoureuses.",
+    tableauLasagneVerdure: [
+      { nb:  1, lasagne: "2 feuilles", ricotta: "62 g", epinards: "75 g", tomates: "75 g", bechamel: "100 ml", parmesan: "15 g" },
+      { nb:  2, lasagne: "4 feuilles", ricotta: "125 g", epinards: "150 g", tomates: "150 g", bechamel: "200 ml", parmesan: "30 g"  },
+      { nb:  3, lasagne: "6 feuilles", ricotta: "188 g", epinards: "225 g", tomates: "225 g", bechamel: "300 ml", parmesan: "45 g" },
+      { nb:  4, lasagne: "8 feuilles", ricotta: "250 g", epinards: "300 g", tomates: "300 g", bechamel: "400 ml", parmesan: "60 g"  },
+      { nb:  5, lasagne: "10 feuilles", ricotta: "312 g", epinards: "375 g", tomates: "375 g", bechamel: "500 ml", parmesan: "75 g" },
+      { nb:  6, lasagne: "12 feuilles",ricotta: "375 g", epinards: "450 g", tomates: "450 g", bechamel: "600 ml", parmesan: "90 g"  },
+      { nb:  7, lasagne: "14 feuilles", ricotta: "438 g", epinards: "525 g", tomates: "525 g", bechamel: "700 ml", parmesan: "105 g" },
+      { nb:  8, lasagne: "16 feuilles",ricotta: "500 g", epinards: "600 g", tomates: "600 g", bechamel: "800 ml", parmesan: "120 g" },
+      { nb:  9, lasagne: "18 feuilles", ricotta: "562 g", epinards: "675 g", tomates: "675 g", bechamel: "900 ml", parmesan: "135 g" },
+      { nb: 10, lasagne: "20 feuilles",ricotta: "625 g", epinards: "750 g", tomates: "750 g", bechamel: "1 L",    parmesan: "150 g" },
+      { nb: 11, lasagne: "22 feuilles", ricotta: "688 g", epinards: "825 g", tomates: "825 g", bechamel: "1.1 L", parmesan: "165 g" },
+      { nb: 12, lasagne: "24 feuilles",ricotta: "750 g", epinards: "900 g", tomates: "900 g", bechamel: "1.2 L",  parmesan: "180 g" },
+      { nb: 13, lasagne: "26 feuilles", ricotta: "812 g", epinards: "975 g", tomates: "975 g", bechamel: "1.3 L", parmesan: "195 g" },
+      { nb: 14, lasagne: "28 feuilles",ricotta: "875 g", epinards: "1050 g",tomates: "1050 g",bechamel: "1.4 L",  parmesan: "210 g" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Préparer les épinards",   detail: "Faire sauter les épinards frais à l'ail dans l'huile d'olive jusqu'à réduction. Égoutter et mélanger avec ricotta, sel, poivre et noix de muscade.", badge: null },
+      { icone: "🍅", titre: "Sauce tomate",            detail: "Préparer une sauce tomate maison avec ail, tomates concassées, basilic. Laisser réduire 20 min.", badge: "⏱ 20 min" },
+      { icone: "🥛", titre: "Béchamel",                detail: "Préparer une béchamel crémeuse. Ajouter parmesan râpé.", badge: null },
+      { icone: "🏗️", titre: "Monter les lasagnes",    detail: "Alterner : sauce tomate, feuilles, mélange ricotta-épinards, béchamel. Finir par béchamel et parmesan.", badge: null },
+      { icone: "🔥", titre: "Cuire",                   detail: "Couvrir de papier alu les 30 premières minutes. Ôter le papier pour gratiner.", badge: "⏱ 45 min à 180°C" },
+    ]
+  },
+
+  crumblefruits: {
+    base: 6,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🍑",
+    description: "Le Crumble aux fruits — pommes, poires ou pêches sous une croûte de crumble beurré et croustillant. Le dessert réconfort par excellence.",
+    tableauCrumble: [
+      { nb:  1, fruits: "150 g", farine: "30 g", beurre: "22 g", sucre: "22 g", amandes: "10 g" },
+      { nb:  2, fruits: "300 g", farine: "60 g",  beurre: "45 g",  sucre: "45 g",  amandes: "20 g"  },
+      { nb:  3, fruits: "450 g", farine: "90 g", beurre: "68 g", sucre: "68 g", amandes: "30 g" },
+      { nb:  4, fruits: "600 g", farine: "120 g", beurre: "90 g",  sucre: "90 g",  amandes: "40 g"  },
+      { nb:  5, fruits: "750 g", farine: "150 g", beurre: "112 g", sucre: "112 g", amandes: "50 g" },
+      { nb:  6, fruits: "900 g", farine: "180 g", beurre: "135 g", sucre: "135 g", amandes: "60 g"  },
+      { nb:  7, fruits: "1050 g", farine: "210 g", beurre: "158 g", sucre: "158 g", amandes: "70 g" },
+      { nb:  8, fruits: "1.2 kg",farine: "240 g", beurre: "180 g", sucre: "180 g", amandes: "80 g"  },
+      { nb:  9, fruits: "1.3 kg", farine: "270 g", beurre: "202 g", sucre: "202 g", amandes: "90 g" },
+      { nb: 10, fruits: "1.5 kg",farine: "300 g", beurre: "225 g", sucre: "225 g", amandes: "100 g" },
+      { nb: 11, fruits: "1.7 kg", farine: "330 g", beurre: "248 g", sucre: "248 g", amandes: "110 g" },
+      { nb: 12, fruits: "1.8 kg",farine: "360 g", beurre: "270 g", sucre: "270 g", amandes: "120 g" },
+      { nb: 13, fruits: "1.9 kg", farine: "390 g", beurre: "292 g", sucre: "292 g", amandes: "130 g" },
+      { nb: 14, fruits: "2.1 kg",farine: "420 g", beurre: "315 g", sucre: "315 g", amandes: "140 g" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍎", titre: "Préparer les fruits",     detail: "Éplucher et couper les fruits en morceaux. Mélanger avec sucre, cannelle et vanille. Disposer dans un plat beurré.", badge: null },
+      { icone: "🌾", titre: "Pâte à crumble",          detail: "Mélanger farine, sucre, amandes effilées et une pincée de sel. Ajouter le beurre froid en dés. Sabler entre les doigts jusqu'à miettes grossières. Ne pas trop travailler !", badge: null },
+      { icone: "🏗️", titre: "Recouvrir",              detail: "Étaler le crumble uniformément sur les fruits.", badge: null },
+      { icone: "🔥", titre: "Cuire",                   detail: "Enfourner jusqu'à ce que le crumble soit doré et les fruits bouillonnent sur les bords.", badge: "⏱ 30-35 min à 180°C" },
+      { icone: "🍦", titre: "Servir",                  detail: "Servir tiède avec une boule de glace vanille ou crème fraîche épaisse.", badge: null },
+    ]
+  },
+
+  pintxosbasques: {
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥖",
+    description: "Les Pintxos basques — petites tartines garnies façon bar de Saint-Sébastien : anchois, jambon, fromage et piperade. L'apéro parfait !",
+    tableauPintxos: [
+      { nb:  1, pain: "2 tranches", anchoix: "1", jambon: "10 g", fromage: "10 g", poivron: "¼" },
+      { nb:  2, pain: "4 tranches", anchoix: "2", jambon: "20 g", fromage: "20 g", poivron: "¼" },
+      { nb:  3, pain: "6 tranches", anchoix: "3", jambon: "30 g", fromage: "30 g", poivron: "¼" },
+      { nb:  4, pain: "8 tranches",  anchoix: "4",   jambon: "40 g",  fromage: "40 g",  poivron: "¼" },
+      { nb:  5, pain: "10 tranches", anchoix: "5", jambon: "50 g", fromage: "50 g", poivron: "¼" },
+      { nb:  6, pain: "12 tranches", anchoix: "6", jambon: "60 g", fromage: "60 g", poivron: "¼" },
+      { nb:  7, pain: "14 tranches", anchoix: "7", jambon: "70 g", fromage: "70 g", poivron: "½" },
+      { nb:  8, pain: "16 tranches", anchoix: "8",   jambon: "80 g",  fromage: "80 g",  poivron: "½" },
+      { nb:  9, pain: "18 tranches", anchoix: "9", jambon: "90 g", fromage: "90 g", poivron: "½" },
+      { nb: 10, pain: "20 tranches", anchoix: "10", jambon: "100 g", fromage: "100 g", poivron: "½" },
+      { nb: 11, pain: "22 tranches", anchoix: "11", jambon: "110 g", fromage: "110 g", poivron: "¾" },
+      { nb: 12, pain: "24 tranches", anchoix: "12",  jambon: "120 g", fromage: "120 g", poivron: "¾" },
+      { nb: 13, pain: "26 tranches", anchoix: "13", jambon: "130 g", fromage: "130 g", poivron: "¾" },
+      { nb: 14, pain: "28 tranches", anchoix: "14", jambon: "140 g", fromage: "140 g", poivron: "¾" },
+      { nb: 15, pain: "30 tranches", anchoix: "15", jambon: "150 g", fromage: "150 g", poivron: "0.9" },
+      { nb: 16, pain: "32 tranches", anchoix: "16",  jambon: "160 g", fromage: "160 g", poivron: "1" },
+      { nb: 17, pain: "34 tranches", anchoix: "17", jambon: "170 g", fromage: "170 g", poivron: "1.1" },
+      { nb: 18, pain: "36 tranches", anchoix: "18", jambon: "180 g", fromage: "180 g", poivron: "1.1" },
+      { nb: 19, pain: "38 tranches", anchoix: "19", jambon: "190 g", fromage: "190 g", poivron: "0.9" },
+      { nb: 20, pain: "40 tranches", anchoix: "20",  jambon: "200 g", fromage: "200 g", poivron: "1" },
+      { nb: 21, pain: "42 tranches", anchoix: "21", jambon: "210 g", fromage: "210 g", poivron: "1.1" },
+      { nb: 22, pain: "44 tranches", anchoix: "22", jambon: "220 g", fromage: "220 g", poivron: "1.1" },
+      { nb: 23, pain: "46 tranches", anchoix: "23", jambon: "230 g", fromage: "230 g", poivron: "1.0 ½" },
+      { nb: 24, pain: "48 tranches", anchoix: "24",  jambon: "240 g", fromage: "240 g", poivron: "1½"},
+      { nb: 25, pain: "50 tranches", anchoix: "25", jambon: "250 g", fromage: "250 g", poivron: "1.0 ½" },
+      { nb: 26, pain: "52 tranches", anchoix: "26", jambon: "260 g", fromage: "260 g", poivron: "1.1 ½" },
+      { nb: 27, pain: "54 tranches", anchoix: "27", jambon: "270 g", fromage: "270 g", poivron: "1.9" },
+      { nb: 28, pain: "56 tranches", anchoix: "28",  jambon: "280 g", fromage: "280 g", poivron: "2" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥖", titre: "Préparer le pain",        detail: "Couper une baguette en tranches de 1cm. Toaster légèrement au four ou à la poêle.", badge: null },
+      { icone: "🫑", titre: "Piperade rapide",         detail: "Faire sauter poivrons en brunoise avec ail et huile d'olive 5 min.", badge: "⏱ 5 min" },
+      { icone: "🏗️", titre: "Garnir les pintxos",     detail: "Variante 1 : jambon de Bayonne + manchego. Variante 2 : piperade + anchois. Variante 3 : tortilla espagnole + olive. Piquer avec un cure-dent.", badge: null },
+      { icone: "🥂", titre: "Servir",                  detail: "Disposer sur un plateau. Servir avec txakoli (vin blanc basque) ou cidre basque.", badge: null },
+    ]
+  },
+
+  misoramenleger: {
+    base: 2,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍜",
+    description: "Ramen léger au miso blanc — version rapide sans viande, bouillon dashi-miso, nouilles et légumes de saison. Réconfortant et sain.",
+    tableauMisoRamen: [
+      { nb:  1, nouilles: "80 g",  dashi: "400 ml", miso: "1½ c.à.s", tofu: "80 g",  maïs: "30 g",  nori: "1 carré"  },
+      { nb:  2, nouilles: "160 g", dashi: "800 ml", miso: "3 c.à.s",  tofu: "160 g", maïs: "60 g",  nori: "2 carrés" },
+      { nb:  3, nouilles: "240 g", dashi: "1.2 L",  miso: "4½ c.à.s", tofu: "240 g", maïs: "90 g",  nori: "3 carrés" },
+      { nb:  4, nouilles: "320 g", dashi: "1.6 L",  miso: "6 c.à.s",  tofu: "320 g", maïs: "120 g", nori: "4 carrés" },
+      { nb:  5, nouilles: "400 g", dashi: "2 L",    miso: "7½ c.à.s", tofu: "400 g", maïs: "150 g", nori: "5 carrés" },
+      { nb:  6, nouilles: "480 g", dashi: "2.4 L",  miso: "9 c.à.s",  tofu: "480 g", maïs: "180 g", nori: "6 carrés" },
+      { nb:  7, nouilles: "560 g", dashi: "2.8 L",  miso: "10½ c.à.s",tofu: "560 g", maïs: "210 g", nori: "7 carrés" },
+      { nb:  8, nouilles: "640 g", dashi: "3.2 L",  miso: "12 c.à.s", tofu: "640 g", maïs: "240 g", nori: "8 carrés" },
+      { nb:  9, nouilles: "720 g", dashi: "3.6 L",  miso: "13½ c.à.s",tofu: "720 g", maïs: "270 g", nori: "9 carrés" },
+      { nb: 10, nouilles: "800 g", dashi: "4 L",    miso: "15 c.à.s", tofu: "800 g", maïs: "300 g", nori: "10 carrés"},
+      { nb: 11, nouilles: "880 g", dashi: "4.4 L",  miso: "16½ c.à.s",tofu: "880 g", maïs: "330 g", nori: "11 carrés"},
+      { nb: 12, nouilles: "960 g", dashi: "4.8 L",  miso: "18 c.à.s", tofu: "960 g", maïs: "360 g", nori: "12 carrés"},
+      { nb: 13, nouilles: "1040 g",dashi: "5.2 L",  miso: "19½ c.à.s",tofu: "1040 g",maïs: "390 g", nori: "13 carrés"},
+      { nb: 14, nouilles: "1120 g",dashi: "5.6 L",  miso: "21 c.à.s", tofu: "1120 g",maïs: "420 g", nori: "14 carrés"},
+      { nb: 15, nouilles: "1200 g",dashi: "6 L",    miso: "22½ c.à.s",tofu: "1200 g",maïs: "450 g", nori: "15 carrés"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Bouillon dashi",          detail: "Porter le dashi (poudre ou sachet dans l'eau) à frémissement. Ne pas bouillir.", badge: null },
+      { icone: "🌿", titre: "Dissoudre le miso",       detail: "Hors du feu, prélever une louche et y dissoudre le miso blanc. Reverser dans la casserole.", badge: null },
+      { icone: "🍜", titre: "Cuire les nouilles",      detail: "Cuire les nouilles ramen séparément. Égoutter.", badge: "⏱ 3 min" },
+      { icone: "🧀", titre: "Préparer les garnitures", detail: "Poêler le tofu coupé en cubes avec huile de sésame. Chauffer le maïs.", badge: null },
+      { icone: "🥢", titre: "Dresser",                 detail: "Nouilles dans le bol, verser le bouillon chaud. Ajouter tofu, maïs, nori, ciboule et graines de sésame.", badge: null },
+    ]
+  },
+
+  veloutepatatepoireaux: {
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Velouté de pommes de terre et poireaux — crémeux, réconfortant et économique. La soupe hivernale française par excellence.",
+    tableauVeloutePP: [
+      { nb:  1, pdterre: "150 g", poireaux: "1", bouillon: "250 ml", creme: "25 ml", beurre: "7.5 g" },
+      { nb:  2, pdterre: "300 g", poireaux: "2",  bouillon: "500 ml", creme: "50 ml",  beurre: "15 g"  },
+      { nb:  3, pdterre: "450 g", poireaux: "3", bouillon: "750 ml", creme: "75 ml", beurre: "22 g" },
+      { nb:  4, pdterre: "600 g", poireaux: "4",  bouillon: "1 L",    creme: "100 ml", beurre: "30 g"  },
+      { nb:  5, pdterre: "750 g", poireaux: "5", bouillon: "1.2 L", creme: "125 ml", beurre: "38 g" },
+      { nb:  6, pdterre: "900 g", poireaux: "6",  bouillon: "1.5 L",  creme: "150 ml", beurre: "45 g"  },
+      { nb:  7, pdterre: "1050 g", poireaux: "7", bouillon: "1.8 L", creme: "175 ml", beurre: "52 g" },
+      { nb:  8, pdterre: "1.2 kg",poireaux: "8",  bouillon: "2 L",    creme: "200 ml", beurre: "60 g"  },
+      { nb:  9, pdterre: "1.3 kg", poireaux: "9", bouillon: "2.2 L", creme: "225 ml", beurre: "68 g" },
+      { nb: 10, pdterre: "1.5 kg",poireaux: "10", bouillon: "2.5 L",  creme: "250 ml", beurre: "75 g"  },
+      { nb: 11, pdterre: "1.7 kg", poireaux: "11", bouillon: "2.8 L", creme: "275 ml", beurre: "82 g" },
+      { nb: 12, pdterre: "1.8 kg",poireaux: "12", bouillon: "3 L",    creme: "300 ml", beurre: "90 g"  },
+      { nb: 13, pdterre: "1.9 kg", poireaux: "13", bouillon: "3.2 L", creme: "325 ml", beurre: "98 g" },
+      { nb: 14, pdterre: "2.1 kg",poireaux: "14", bouillon: "3.5 L",  creme: "350 ml", beurre: "105 g" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Faire fondre les poireaux",detail: "Émincer les poireaux (blanc et vert tendre). Faire fondre dans le beurre à feu doux sans coloration.", badge: "⏱ 10 min" },
+      { icone: "🥔", titre: "Ajouter les pommes de terre",detail: "Éplucher et couper en cubes. Ajouter aux poireaux. Couvrir de bouillon. Saler.", badge: null },
+      { icone: "⏳", titre: "Cuire",                   detail: "Cuire jusqu'à ce que les pommes de terre soient très tendres.", badge: "⏱ 20 min" },
+      { icone: "🌀", titre: "Mixer",                   detail: "Mixer finement. Incorporer la crème fraîche. Rectifier l'assaisonnement. Ajuster la consistance avec du bouillon.", badge: null },
+      { icone: "🫙", titre: "Servir",                  detail: "Servir chaud avec croûtons dorés au beurre, lardons grillés ou ciboulette fraîche.", badge: null },
+    ]
+  },
+
+  terrinecampagne: {
+    base: 8,
+    temps: "1h30 + repos",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🥩",
+    description: "Terrine de campagne maison — foies de volaille, porc haché, herbes et cognac. L'entrée festive française traditionnelle.",
+    tableauTerrine: [
+      { nb:  1, porc: "50 g", foie: "25 g", lardons: "20 g", cognac: "0.5 c.à.s", oeuf: "0.2", creme: "12 ml" },
+      { nb:  2, porc: "100 g", foie: "50 g", lardons: "40 g", cognac: "1 c.à.s", oeuf: "0.5", creme: "25 ml" },
+      { nb:  3, porc: "150 g", foie: "75 g", lardons: "60 g", cognac: "1.5 c.à.s", oeuf: "0.8", creme: "38 ml" },
+      { nb:  4, porc: "200 g",  foie: "100 g", lardons: "80 g",  cognac: "2 c.à.s", oeuf: "1",  creme: "50 ml"  },
+      { nb:  5, porc: "250 g", foie: "125 g", lardons: "100 g", cognac: "2.5 c.à.s", oeuf: "1.2", creme: "62 ml" },
+      { nb:  6, porc: "300 g",  foie: "150 g", lardons: "120 g", cognac: "3 c.à.s", oeuf: "1",  creme: "75 ml"  },
+      { nb:  7, porc: "350 g", foie: "175 g", lardons: "140 g", cognac: "3.5 c.à.s", oeuf: "1.2", creme: "88 ml" },
+      { nb:  8, porc: "400 g",  foie: "200 g", lardons: "160 g", cognac: "4 c.à.s", oeuf: "2",  creme: "100 ml" },
+      { nb:  9, porc: "450 g", foie: "225 g", lardons: "180 g", cognac: "4.5 c.à.s", oeuf: "2.2", creme: "112 ml" },
+      { nb: 10, porc: "500 g",  foie: "250 g", lardons: "200 g", cognac: "5 c.à.s", oeuf: "2",  creme: "125 ml" },
+      { nb: 11, porc: "550 g", foie: "275 g", lardons: "220 g", cognac: "5.5 c.à.s", oeuf: "2.2", creme: "138 ml" },
+      { nb: 12, porc: "600 g",  foie: "300 g", lardons: "240 g", cognac: "6 c.à.s", oeuf: "3",  creme: "150 ml" },
+      { nb: 13, porc: "650 g", foie: "325 g", lardons: "260 g", cognac: "6.5 c.à.s", oeuf: "3.2", creme: "162 ml" },
+      { nb: 14, porc: "700 g",  foie: "350 g", lardons: "280 g", cognac: "7 c.à.s", oeuf: "3",  creme: "175 ml" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Préparer les viandes",    detail: "Hacher grossièrement le porc et les foies de volaille. Faire mariner avec cognac, thym, laurier, sel, poivre et 4 épices une nuit.", badge: "⏱ 1 nuit marinade" },
+      { icone: "🥚", titre: "Lier l'appareil",        detail: "Ajouter œufs, crème fraîche, ail et échalotes aux viandes. Bien mélanger.", badge: null },
+      { icone: "🥓", titre: "Tapisser la terrine",     detail: "Tapisser le moule de bardes de lard ou de film alimentaire. Verser l'appareil. Tasser.", badge: null },
+      { icone: "🔥", titre: "Cuire au bain-marie",     detail: "Couvrir d'alu. Cuire au bain-marie au four. La terrine est cuite quand elle atteint 70°C à cœur.", badge: "⏱ 1h15 à 160°C" },
+      { icone: "❄️", titre: "Repos au frigo",          detail: "Laisser refroidir avec un poids dessus. Réfrigérer. Servir avec cornichons, pain de campagne et beurre.", badge: "⏱ 24h minimum" },
+    ]
+  },
+
+  poulpegrillebresil: {
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🐙",
+    description: "Poulpe grillé à la méditerranéenne — tendre dedans, croustillant dehors. Le secret : cuire d'abord à l'eau, puis griller.",
+    tableauPoulpe: [
+      { nb:  1, poulpe: "250 g", huileOlive: "1.5 c.à.s", citron: "0.5", ail: "1.5 gousses", persil: "¼ botte" },
+      { nb:  2, poulpe: "500 g", huileOlive: "3 c.à.s", citron: "1",  ail: "3 gousses", persil: "¼ botte" },
+      { nb:  3, poulpe: "750 g", huileOlive: "4.5 c.à.s", citron: "1.5", ail: "4.5 gousses", persil: "¼ botte" },
+      { nb:  4, poulpe: "1 kg",  huileOlive: "5 c.à.s", citron: "2",  ail: "5 gousses", persil: "½ botte" },
+      { nb:  5, poulpe: "1.2 kg", huileOlive: "6.2 c.à.s", citron: "2.5", ail: "6.2 gousses", persil: "½ botte" },
+      { nb:  6, poulpe: "1.5 kg",huileOlive: "7 c.à.s", citron: "3",  ail: "7 gousses", persil: "1 botte"  },
+      { nb:  7, poulpe: "1.8 kg", huileOlive: "8.2 c.à.s", citron: "3.5", ail: "8.2 gousses", persil: "1.2 botte" },
+      { nb:  8, poulpe: "2 kg",  huileOlive: "9 c.à.s", citron: "4",  ail: "9 gousses", persil: "1 botte"  },
+      { nb:  9, poulpe: "2.2 kg", huileOlive: "10 c.à.s", citron: "4.5", ail: "10 gousses", persil: "1.1 botte" },
+      { nb: 10, poulpe: "2.5 kg",huileOlive: "11 c.à.s",citron: "5",  ail: "10 gousses",persil: "2 bottes" },
+      { nb: 11, poulpe: "2.8 kg", huileOlive: "12 c.à.s", citron: "5.5", ail: "11 gousses", persil: "2.2 bottes" },
+      { nb: 12, poulpe: "3 kg",  huileOlive: "13 c.à.s",citron: "6",  ail: "12 gousses",persil: "2 bottes" },
+      { nb: 13, poulpe: "3.2 kg", huileOlive: "14 c.à.s", citron: "6.5", ail: "13 gousses", persil: "2.2 bottes" },
+      { nb: 14, poulpe: "3.5 kg",huileOlive: "15 c.à.s",citron: "7",  ail: "14 gousses",persil: "2 bottes" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐙", titre: "Attendrir le poulpe",     detail: "Plonger le poulpe dans l'eau bouillante avec bouchon de liège, laurier et sel. Cuire à frémissement.", badge: "⏱ 40-45 min" },
+      { icone: "❄️", titre: "Refroidir",               detail: "Laisser refroidir dans l'eau de cuisson 20 min. Égoutter et sécher.", badge: "⏱ 20 min" },
+      { icone: "🌿", titre: "Mariner",                 detail: "Mélanger huile d'olive, jus de citron, ail haché et persil. Badigeonner le poulpe.", badge: null },
+      { icone: "🔥", titre: "Griller",                 detail: "Griller au barbecue ou poêle grill à feu très vif pour bien marquer et croustiller.", badge: "⏱ 3-4 min par face" },
+      { icone: "🍋", titre: "Servir",                  detail: "Couper en tronçons. Arroser de jus de citron et huile d'olive. Accompagner de pommes de terre vapeur ou salade de pois chiches.", badge: null },
+    ]
+  },
+
+  pouletrotiperfect: {
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Le poulet rôti parfait — technique française pour une peau croustillante, une chair juteuse et des sucs dorés pour la sauce.",
+    tableauPouletRoti: [
+      { nb:  1, poulet: "0.5 (1.2 kg)", beurre: "15 g", ail: "1.5 gousses", thym: "1.5 branches", citron: "½" },
+      { nb:  2, poulet: "1 (1.2 kg)",beurre: "30 g",  ail: "3 gousses", thym: "3 branches", citron: "½" },
+      { nb:  3, poulet: "1.5 (1.2 kg)", beurre: "45 g", ail: "4.5 gousses", thym: "4.5 branches", citron: "½" },
+      { nb:  4, poulet: "1 (1.5 kg)",beurre: "40 g",  ail: "4 gousses", thym: "4 branches", citron: "1" },
+      { nb:  5, poulet: "1.2 (1.5 kg)", beurre: "50 g", ail: "5 gousses", thym: "5 branches", citron: "1.2" },
+      { nb:  6, poulet: "2 (1.2 kg)",beurre: "60 g",  ail: "6 gousses", thym: "6 branches", citron: "1" },
+      { nb:  7, poulet: "2.3 (1.2 kg)", beurre: "70 g", ail: "7 gousses", thym: "7 branches", citron: "1.2" },
+      { nb:  8, poulet: "2 (1.5 kg)",beurre: "80 g",  ail: "8 gousses", thym: "8 branches", citron: "2" },
+      { nb:  9, poulet: "2.2 (1.5 kg)", beurre: "90 g", ail: "9 gousses", thym: "9 branches", citron: "2.2" },
+      { nb: 10, poulet: "2 (1.8 kg)",beurre: "100 g", ail: "10 gousses",thym: "10 branches",citron: "2" },
+      { nb: 11, poulet: "2.2 (1.8 kg)", beurre: "110 g", ail: "11 gousses", thym: "11 branches", citron: "2.2" },
+      { nb: 12, poulet: "3 (1.5 kg)",beurre: "120 g", ail: "12 gousses",thym: "12 branches",citron: "3" },
+      { nb: 13, poulet: "3.2 (1.5 kg)", beurre: "130 g", ail: "13 gousses", thym: "13 branches", citron: "3.2" },
+      { nb: 14, poulet: "3 (1.8 kg)",beurre: "140 g", ail: "14 gousses",thym: "14 branches",citron: "3" }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Préparer le beurre aromatique", detail: "Mélanger beurre mou, ail écrasé, thym, sel et poivre. Glisser ce beurre sous la peau du poulet en décollant doucement avec les doigts.", badge: null },
+      { icone: "🐓", titre: "Assaisonner",             detail: "Saler et poivrer l'extérieur. Mettre dans la cavité : demi-citron, gousses d'ail entières et thym. Ficeler le poulet.", badge: null },
+      { icone: "🔥", titre: "Saisir à four chaud",     detail: "Démarrer à 220°C pendant 20 min pour dorer la peau.", badge: "⏱ 20 min à 220°C" },
+      { icone: "⏳", titre: "Finir à four moyen",      detail: "Baisser à 180°C. Arroser toutes les 15 min avec les sucs de cuisson.", badge: "⏱ 50-60 min à 180°C" },
+      { icone: "🫙", titre: "Sauce et repos",          detail: "Sortir le poulet, laisser reposer 10 min. Déglacer le plat au vin blanc ou bouillon. Servir avec la sauce et des pommes de terre rôties.", badge: "⏱ 10 min repos" },
+    ]
+  },
+
+  millefeuille: {
+    base: 8,
+    temps: "1h",
+    niveau: "⭐⭐ Intermédiaire",
+    emoji: "🍰",
+    description: "Le Mille-feuille classique — couches de pâte feuilletée croustillante, crème pâtissière vanille et glaçage fondant rayé. Le classique des pâtisseries.",
+    tableauMillefeuille: [
+      { nb:  1, feuilletee: "½", lait: "62 ml", jaunes: "0.5", sucre: "12 g", maizena: "5 g", beurre: "5 g" },
+      { nb:  2, feuilletee: "½",  lait: "125 ml", jaunes: "1",  sucre: "25 g",  maizena: "10 g", beurre: "10 g"  },
+      { nb:  3, feuilletee: "½", lait: "188 ml", jaunes: "1.5", sucre: "38 g", maizena: "15 g", beurre: "15 g" },
+      { nb:  4, feuilletee: "1",   lait: "250 ml", jaunes: "2",  sucre: "50 g",  maizena: "20 g", beurre: "20 g"  },
+      { nb:  5, feuilletee: "1.2", lait: "312 ml", jaunes: "2.5", sucre: "62 g", maizena: "25 g", beurre: "25 g" },
+      { nb:  6, feuilletee: "1½",  lait: "375 ml", jaunes: "3",  sucre: "75 g",  maizena: "30 g", beurre: "30 g"  },
+      { nb:  7, feuilletee: "1.2 ½", lait: "438 ml", jaunes: "3.5", sucre: "88 g", maizena: "35 g", beurre: "35 g" },
+      { nb:  8, feuilletee: "2",   lait: "500 ml", jaunes: "4",  sucre: "100 g", maizena: "40 g", beurre: "40 g"  },
+      { nb:  9, feuilletee: "2.2", lait: "562 ml", jaunes: "4.5", sucre: "112 g", maizena: "45 g", beurre: "45 g" },
+      { nb: 10, feuilletee: "2½",  lait: "625 ml", jaunes: "5",  sucre: "125 g", maizena: "50 g", beurre: "50 g"  },
+      { nb: 11, feuilletee: "2.2 ½", lait: "688 ml", jaunes: "5.5", sucre: "138 g", maizena: "55 g", beurre: "55 g" },
+      { nb: 12, feuilletee: "3",   lait: "750 ml", jaunes: "6",  sucre: "150 g", maizena: "60 g", beurre: "60 g"  },
+      { nb: 13, feuilletee: "3.2", lait: "812 ml", jaunes: "6.5", sucre: "162 g", maizena: "65 g", beurre: "65 g" },
+      { nb: 14, feuilletee: "3½",  lait: "875 ml", jaunes: "7",  sucre: "175 g", maizena: "70 g", beurre: "70 g"  }
+    
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥐", titre: "Cuire la pâte feuilletée", detail: "Découper la pâte feuilletée en 3 rectangles égaux. Piquer, couvrir d'une plaque pour l'empêcher de trop gonfler. Cuire jusqu'à dorure.", badge: "⏱ 20 min à 180°C" },
+      { icone: "🥛", titre: "Crème pâtissière",        detail: "Chauffer le lait. Fouetter jaunes + sucre + maïzena. Verser le lait chaud en filet. Recuire en fouettant jusqu'à épaississement. Incorporer le beurre et vanille.", badge: null },
+      { icone: "❄️", titre: "Refroidir la crème",      detail: "Filmer au contact. Réfrigérer 1h. Fouetter avant utilisation pour la rendre lisse.", badge: "⏱ 1h" },
+      { icone: "🏗️", titre: "Monter le mille-feuille", detail: "Couche de feuilletage, crème pâtissière en poche, feuilletage, crème, feuilletage.", badge: null },
+      { icone: "🎨", titre: "Glaçage",                 detail: "Glacer le dessus au fondant blanc. Tracer des traits de chocolat fondu. Passer un cure-dent pour créer le motif marbré.", badge: null },
+    ]
+  },
+
+  saumoncrouteherbes: {
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "Saumon en croûte d'herbes — pavés de saumon enrobés d'une chapelure aux herbes fraîches et citron. Élégant, rapide et savoureux.",
+    tableauSaumonCroute: [
+      { nb:  1, saumon: "150 g", chapelure: "30 g",  persil: "5 feuilles",  citron: "¼", beurre: "10 g"  },
+      { nb:  2, saumon: "300 g", chapelure: "60 g",  persil: "10 feuilles", citron: "½", beurre: "20 g"  },
+      { nb:  3, saumon: "450 g", chapelure: "90 g",  persil: "15 feuilles", citron: "¾", beurre: "30 g"  },
+      { nb:  4, saumon: "600 g", chapelure: "120 g", persil: "20 feuilles", citron: "1", beurre: "40 g"  },
+      { nb:  5, saumon: "750 g", chapelure: "150 g", persil: "25 feuilles", citron: "1", beurre: "50 g"  },
+      { nb:  6, saumon: "900 g", chapelure: "180 g", persil: "30 feuilles", citron: "1½",beurre: "60 g"  },
+      { nb:  7, saumon: "1050 g",chapelure: "210 g", persil: "35 feuilles", citron: "2", beurre: "70 g"  },
+      { nb:  8, saumon: "1200 g",chapelure: "240 g", persil: "40 feuilles", citron: "2", beurre: "80 g"  },
+      { nb:  9, saumon: "1350 g",chapelure: "270 g", persil: "45 feuilles", citron: "2½",beurre: "90 g"  },
+      { nb: 10, saumon: "1500 g",chapelure: "300 g", persil: "50 feuilles", citron: "2½",beurre: "100 g" },
+      { nb: 11, saumon: "1650 g",chapelure: "330 g", persil: "55 feuilles", citron: "3", beurre: "110 g" },
+      { nb: 12, saumon: "1800 g",chapelure: "360 g", persil: "60 feuilles", citron: "3", beurre: "120 g" },
+      { nb: 13, saumon: "1950 g",chapelure: "390 g", persil: "65 feuilles", citron: "3½",beurre: "130 g" },
+      { nb: 14, saumon: "2100 g",chapelure: "420 g", persil: "70 feuilles", citron: "3½",beurre: "140 g" },
+      { nb: 15, saumon: "2250 g",chapelure: "450 g", persil: "75 feuilles", citron: "4", beurre: "150 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Croûte d'herbes",        detail: "Mixer chapelure, persil, ciboulette, aneth, zeste de citron, parmesan et beurre fondu jusqu'à mélange homogène.", badge: null },
+      { icone: "🐟", titre: "Préparer les pavés",      detail: "Sécher les pavés avec du papier absorbant. Saler et poivrer. Badigeonner de moutarde de Dijon.", badge: null },
+      { icone: "🌿", titre: "Appliquer la croûte",     detail: "Presser la croûte d'herbes sur le dessus des pavés. Elle doit adhérer grâce à la moutarde.", badge: null },
+      { icone: "🔥", titre: "Cuire",                   detail: "Four préchauffé à 200°C. Poser les pavés sur une plaque. La croûte doit être dorée et le saumon rosé à cœur.", badge: "⏱ 12-15 min à 200°C" },
+      { icone: "🍋", titre: "Servir",                  detail: "Accompagner de riz pilaf, d'écrasé de pommes de terre ou de légumes vapeur. Arroser de jus de citron.", badge: null },
+    ]
+  },
   boeufbourguignon: {
     base: 6,
     temps: "3h30 + marinade",
@@ -3352,6 +4347,9 @@ const recettes = {
     emoji: "🥩",
     description: "Le grand classique français — bœuf mijoté au vin de Bourgogne, lardons, carottes et champignons. Meilleur préparé la veille.",
     tableauBoeuf: [
+      { nb:  1, boeuf: "0.2 kg", vin: "12 cl", carottes: "0.5", oignons: "0.2", lardons: "32 g", champignons: "32 g", farine: "0.2 ,5 c.à.s" },
+      { nb:  2, boeuf: "0.5 kg", vin: "25 cl", carottes: "1", oignons: "0.5", lardons: "65 g", champignons: "65 g", farine: "0.5 ,5 c.à.s" },
+      { nb:  3, boeuf: "0.8 kg", vin: "38 cl", carottes: "1.5", oignons: "0.8", lardons: "98 g", champignons: "98 g", farine: "0.8 ,5 c.à.s" },
       { nb:  4, boeuf: "1 kg",    vin: "50 cl",  carottes: "2",  oignons: "1",  lardons: "130 g", champignons: "130 g", farine: "1,5 c.à.s" },
       { nb:  5, boeuf: "1,25 kg", vin: "60 cl",  carottes: "2",  oignons: "2",  lardons: "165 g", champignons: "165 g", farine: "2 c.à.s"   },
       { nb:  6, boeuf: "1,5 kg",  vin: "75 cl",  carottes: "3",  oignons: "2",  lardons: "200 g", champignons: "200 g", farine: "2 c.à.s"   },
@@ -3363,7 +4361,8 @@ const recettes = {
       { nb: 12, boeuf: "2 ,5 kg", vin: "150 cl", carottes: "6", oignons: "4", lardons: "400 g", champignons: "400 g", farine: "4 c.à.s" },
       { nb: 13, boeuf: "2.2 ,5 kg", vin: "162 cl", carottes: "6.5", oignons: "4.3", lardons: "433 g", champignons: "433 g", farine: "4.3 c.à.s" },
       { nb: 14, boeuf: "2.3 ,5 kg", vin: "175 cl", carottes: "7", oignons: "4.7", lardons: "467 g", champignons: "467 g", farine: "4.7 c.à.s" },
-      { nb: 15, boeuf: "2.5 ,5 kg", vin: "188 cl", carottes: "7.5", oignons: "5", lardons: "500 g", champignons: "500 g", farine: "5 c.à.s" },
+      { nb: 15, boeuf: "2.5 ,5 kg", vin: "188 cl", carottes: "7.5", oignons: "5", lardons: "500 g", champignons: "500 g", farine: "5 c.à.s" }
+    
     
     ],
     ingredients: {},
@@ -3419,6 +4418,9 @@ const recettes = {
     emoji: "🥔",
     description: "Le vrai gratin dauphinois — pommes de terre fondantes dans une crème onctueuse à l'ail. Simple et irrésistible.",
     tableauGratin: [
+      { nb:  1, pdterre: "0.2 kg", creme: "6.8 cl", lait: "3.2 cl", ail: "0.2 gousse" },
+      { nb:  2, pdterre: "0.5 kg", creme: "14 cl", lait: "6.5 cl", ail: "0.5 gousse" },
+      { nb:  3, pdterre: "0.8 kg", creme: "20 cl", lait: "9.8 cl", ail: "0.8 gousse" },
       { nb:  4, pdterre: "1 kg",    creme: "27 cl", lait: "13 cl", ail: "1 gousse"  },
       { nb:  5, pdterre: "1,25 kg", creme: "33 cl", lait: "17 cl", ail: "2 gousses" },
       { nb:  6, pdterre: "1,5 kg",  creme: "40 cl", lait: "20 cl", ail: "2 gousses" },
@@ -3430,7 +4432,8 @@ const recettes = {
       { nb: 12, pdterre: "2 ,5 kg", creme: "80 cl", lait: "40 cl", ail: "4 gousses" },
       { nb: 13, pdterre: "2.2 ,5 kg", creme: "87 cl", lait: "43 cl", ail: "4.3 gousses" },
       { nb: 14, pdterre: "2.3 ,5 kg", creme: "93 cl", lait: "47 cl", ail: "4.7 gousses" },
-      { nb: 15, pdterre: "2.5 ,5 kg", creme: "100 cl", lait: "50 cl", ail: "5 gousses" },
+      { nb: 15, pdterre: "2.5 ,5 kg", creme: "100 cl", lait: "50 cl", ail: "5 gousses" }
+    
     
     ],
     ingredients: {},
@@ -4957,7 +5960,7 @@ function initTablesGlobales() {
     "gateaubasque":    { table: "tableauGateauBasque",    fn: htmlTableauGateauBasqueColonnes,   label: "personne" },
     "canelebordelais": { table: "tableauCanele",          fn: htmlTableauCaneleColonnes,         label: "cannelé" },
     "pizzareine":      { table: "tableauPizzaReine",      fn: htmlTableauPizzaReineColonnes,     label: "pizza" },
-    "pizzaquattroformaggi":{ table: "tableauPizzaFormaggi",fn: htmlTableauPizzaFormaggiColonnes, label: "pizza" },
+    "pizza4fromages":{ table: "tableauPizzaFormaggi",fn: htmlTableauPizzaFormaggiColonnes, label: "pizza" },
     "pizzadiavola":    { table: "tableauPizzaDiavola",    fn: htmlTableauPizzaDiavolaColonnes,   label: "pizza" },
     "pizzasaumonepinards":{ table: "tableauPizzaSaumon",  fn: htmlTableauPizzaSaumonColonnes,    label: "pizza" },
     "pizzavegetarienne":{ table: "tableauPizzaVege",      fn: htmlTableauPizzaVegeColonnes,      label: "pizza" },
@@ -4974,6 +5977,26 @@ function initTablesGlobales() {
     "dosakerdosai":    { table: "tableauDosa",            fn: htmlTableauDosaColonnes,           label: "dosa" },
     "braiseboeuf_asiatique":{ table: "tableauBraiseBoeuf",fn: htmlTableauBraiseBoeufColonnes,   label: "personne" },
     "paprikashpoulet": { table: "tableauPaprikash",       fn: htmlTableauPaprikashColonnes,      label: "personne" },
+    "bibimbap":        { table: "tableauBibimbap",         fn: htmlTableauBibimbapColonnes,       label: "bol" },
+    "moquecabresil":   { table: "tableauMoqueca",          fn: htmlTableauMoquecaColonnes,        label: "personne" },
+    "rendangboeuf":    { table: "tableauRendang",          fn: htmlTableauRendangColonnes,        label: "personne" },
+    "tacoshijosepastor":{ table: "tableauTacoPastor",      fn: htmlTableauTacoPastorColonnes,     label: "personne" },
+    "grilladelamnocciole":{ table: "tableauCotelets",      fn: htmlTableauCoteletsColonnes,       label: "personne" },
+    "sushimaison":     { table: "tableauSushi",            fn: htmlTableauSushiColonnes,          label: "pièce" },
+    "carigrioantillais":{ table: "tableauCariGriot",       fn: htmlTableauCariGriotColonnes,      label: "personne" },
+    "semoulecourgette":{ table: "tableauSemoule",          fn: htmlTableauSemouleColonnes,        label: "personne" },
+    "pouletbasquaise": { table: "tableauBasquaise",        fn: htmlTableauBasquaiseColonnes,      label: "personne" },
+    "crevettespilpil": { table: "tableauCrevPilPil",       fn: htmlTableauCrevPilPilColonnes,     label: "personne" },
+    "lasagneverdure":  { table: "tableauLasagneVerdure",   fn: htmlTableauLasagneVerdureColonnes, label: "personne" },
+    "crumblefruits":   { table: "tableauCrumble",          fn: htmlTableauCrumbleColonnes,        label: "personne" },
+    "pintxosbasques":  { table: "tableauPintxos",          fn: htmlTableauPintxosColonnes,        label: "pintxo" },
+    "misoramenleger":  { table: "tableauMisoRamen",        fn: htmlTableauMisoRamenColonnes,      label: "bol" },
+    "veloutepatatepoireaux":{ table: "tableauVeloutePP",   fn: htmlTableauVeloutePPColonnes,      label: "personne" },
+    "terrinecampagne": { table: "tableauTerrine",          fn: htmlTableauTerrineColonnes,        label: "personne" },
+    "poulpegrillebresil":{ table: "tableauPoulpe",         fn: htmlTableauPoulpeColonnes,         label: "personne" },
+    "pouletrotiperfect":{ table: "tableauPouletRoti",      fn: htmlTableauPouletRotiColonnes,     label: "personne" },
+    "millefeuille":    { table: "tableauMillefeuille",     fn: htmlTableauMillefeuilleColonnes,   label: "personne" },
+    "saumoncrouteherbes":{ table: "tableauSaumonCroute",   fn: htmlTableauSaumonCrouteColonnes,   label: "personne" },
   };
   // Ajouter dans la fonction calculer() accessible globalement
   window._nouvellesRecettesTables = nouvellesRecettesTables;
@@ -5243,6 +6266,194 @@ function htmlTableauParisBrestColonnes(l) {
     <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
     <tr><th>🧈 Beurre mou</th><td>${l.beurrCreme}</td></tr>
     <tr><th>🌰 Pâte de pralin</th><td>${l.pralin}</td></tr>`);
+}
+
+function htmlTableauBibimbapColonnes(l) {
+  return col(`
+    <tr><th>🍚 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz</th><td>${l.riz}</td></tr>
+    <tr><th>🥩 Bœuf mariné</th><td>${l.boeuf}</td></tr>
+    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
+    <tr><th>🥕 Carotte</th><td>${l.carotte}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
+    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>
+    <tr><th>🌶️ Gochujang</th><td>${l.gochujang}</td></tr>`);
+}
+function htmlTableauMoquecaColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Poisson</th><td>${l.poisson}</td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🌿 Coriandre</th><td>${l.coriandre}</td></tr>`);
+}
+function htmlTableauRendangColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Bœuf</th><td>${l.boeuf}</td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
+    <tr><th>🌿 Citronnelle</th><td>${l.citronnelle}</td></tr>
+    <tr><th>🫚 Galanga</th><td>${l.galanga}</td></tr>
+    <tr><th>🌶️ Piments</th><td>${l.piment}</td></tr>`);
+}
+function htmlTableauTacoPastorColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐷 Porc (épaule)</th><td>${l.porc}</td></tr>
+    <tr><th>🍍 Ananas</th><td>${l.ananas}</td></tr>
+    <tr><th>🌮 Tortillas</th><td>${l.tortillas}</td></tr>
+    <tr><th>🧅 Oignon blanc</th><td>${l.oignon}</td></tr>
+    <tr><th>🌿 Coriandre</th><td>${l.coriandre}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>`);
+}
+function htmlTableauCoteletsColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐑 Côtelettes d'agneau</th><td>${l.cotelets}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>
+    <tr><th>🌿 Romarin</th><td>${l.romarin}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+function htmlTableauSushiColonnes(l) {
+  return col(`
+    <tr><th>🍣 Pièces</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz à sushi</th><td>${l.riz}</td></tr>
+    <tr><th>🐟 Saumon sashimi</th><td>${l.saumon}</td></tr>
+    <tr><th>🐟 Thon sashimi</th><td>${l.thon}</td></tr>
+    <tr><th>🌿 Feuilles de nori</th><td>${l.nori}</td></tr>
+    <tr><th>🍶 Vinaigre de riz</th><td>${l.vinaigre}</td></tr>`);
+}
+function htmlTableauCariGriotColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐷 Porc (épaule)</th><td>${l.porc}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🌿 Thym frais</th><td>${l.thym}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌶️ Piment</th><td>${l.piment}</td></tr>`);
+}
+function htmlTableauSemouleColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Semoule fine</th><td>${l.semoule}</td></tr>
+    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
+    <tr><th>🍅 Tomates cerises</th><td>${l.tomateCerise}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>`);
+}
+function htmlTableauBasquaiseColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐓 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🫑 Poivrons</th><td>${l.poivron}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🥓 Jambon de Bayonne</th><td>${l.jambon}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+function htmlTableauCrevPilPilColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌶️ Piment séché</th><td>${l.piment}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>
+    <tr><th>🌿 Persil</th><td>${l.persil}</td></tr>`);
+}
+function htmlTableauLasagneVerdureColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Feuilles de lasagne</th><td>${l.lasagne}</td></tr>
+    <tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr>
+    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
+}
+function htmlTableauCrumbleColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍎 Fruits</th><td>${l.fruits}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🧈 Beurre froid</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌰 Amandes effilées</th><td>${l.amandes}</td></tr>`);
+}
+function htmlTableauPintxosColonnes(l) {
+  return col(`
+    <tr><th>🥖 Pintxos</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍞 Tranches de pain</th><td>${l.pain}</td></tr>
+    <tr><th>🐟 Anchois</th><td>${l.anchoix}</td></tr>
+    <tr><th>🥓 Jambon de Bayonne</th><td>${l.jambon}</td></tr>
+    <tr><th>🧀 Fromage</th><td>${l.fromage}</td></tr>
+    <tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr>`);
+}
+function htmlTableauMisoRamenColonnes(l) {
+  return col(`
+    <tr><th>🍜 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍜 Nouilles ramen</th><td>${l.nouilles}</td></tr>
+    <tr><th>💧 Dashi</th><td>${l.dashi}</td></tr>
+    <tr><th>🌿 Miso blanc</th><td>${l.miso}</td></tr>
+    <tr><th>🧀 Tofu</th><td>${l.tofu}</td></tr>
+    <tr><th>🌽 Maïs</th><td>${l.maïs}</td></tr>
+    <tr><th>🌿 Nori</th><td>${l.nori}</td></tr>`);
+}
+function htmlTableauVeloutePPColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
+    <tr><th>🥬 Poireaux</th><td>${l.poireaux}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+function htmlTableauTerrineColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Porc haché</th><td>${l.porc}</td></tr>
+    <tr><th>🫀 Foies de volaille</th><td>${l.foie}</td></tr>
+    <tr><th>🥓 Lardons</th><td>${l.lardons}</td></tr>
+    <tr><th>🥃 Cognac</th><td>${l.cognac}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeuf}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
+}
+function htmlTableauPoulpeColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐙 Poulpe frais</th><td>${l.poulpe}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌿 Persil</th><td>${l.persil}</td></tr>`);
+}
+function htmlTableauPouletRotiColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐓 Poulet entier</th><td>${l.poulet}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌿 Thym</th><td>${l.thym}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+function htmlTableauMillefeuilleColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥐 Pâte feuilletée</th><td>${l.feuilletee}</td></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
+    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunes}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+function htmlTableauSaumonCrouteColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Pavés de saumon</th><td>${l.saumon}</td></tr>
+    <tr><th>🍞 Chapelure</th><td>${l.chapelure}</td></tr>
+    <tr><th>🌿 Persil / herbes</th><td>${l.persil}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
 }
 
 function htmlTableauPizzaReineColonnes(l) {
@@ -6633,7 +7844,7 @@ const prixCalories = {
   jusPastequeMenuthe: { base: 4,  baseLabel: "4 verres",      prixTotal: 1.50, calTotal: 160,  unite: "verre" },
   virginpinacolada:   { base: 1,  baseLabel: "1 verre",       prixTotal: 1.00, calTotal: 150,  unite: "verre" },
   pizzareine:         { base: 2, baseLabel: "2 pizzas",    prixTotal: 4.50,  calTotal: 1400, unite: "pizza"    },
-  pizzaquattroformaggi:{ base: 2,baseLabel: "2 pizzas",    prixTotal: 5.00,  calTotal: 1600, unite: "pizza"    },
+  pizza4fromages:{ base: 2,baseLabel: "2 pizzas",    prixTotal: 5.00,  calTotal: 1600, unite: "pizza"    },
   pizzadiavola:       { base: 2, baseLabel: "2 pizzas",    prixTotal: 4.50,  calTotal: 1400, unite: "pizza"    },
   pizzasaumonepinards:{ base: 2, baseLabel: "2 pizzas",    prixTotal: 6.00,  calTotal: 1200, unite: "pizza"    },
   pizzavegetarienne:  { base: 2, baseLabel: "2 pizzas",    prixTotal: 4.00,  calTotal: 1200, unite: "pizza"    },
@@ -6650,6 +7861,26 @@ const prixCalories = {
   dosakerdosai:       { base: 4, baseLabel: "4 dosas",     prixTotal: 2.00,  calTotal: 800,  unite: "dosa"     },
   braiseboeuf_asiatique:{ base: 4,baseLabel: "4 personnes",prixTotal: 12.00, calTotal: 1600, unite: "personne" },
   paprikashpoulet:    { base: 4, baseLabel: "4 personnes", prixTotal: 7.00,  calTotal: 1600, unite: "personne" },
+  bibimbap:           { base: 2,  baseLabel: "2 bols",        prixTotal: 7.00,  calTotal: 1000, unite: "bol"      },
+  moquecabresil:      { base: 4,  baseLabel: "4 personnes",   prixTotal: 9.00,  calTotal: 1200, unite: "personne" },
+  rendangboeuf:       { base: 4,  baseLabel: "4 personnes",   prixTotal: 12.00, calTotal: 2000, unite: "personne" },
+  tacoshijosepastor:  { base: 2,  baseLabel: "2 personnes",   prixTotal: 5.00,  calTotal: 800,  unite: "personne" },
+  grilladelamnocciole:{ base: 4,  baseLabel: "4 personnes",   prixTotal: 10.00, calTotal: 1200, unite: "personne" },
+  sushimaison:        { base: 2,  baseLabel: "8 pièces",      prixTotal: 6.00,  calTotal: 600,  unite: "pièce"    },
+  carigrioantillais:  { base: 4,  baseLabel: "4 personnes",   prixTotal: 8.00,  calTotal: 1600, unite: "personne" },
+  semoulecourgette:   { base: 4,  baseLabel: "4 personnes",   prixTotal: 3.00,  calTotal: 800,  unite: "personne" },
+  pouletbasquaise:    { base: 4,  baseLabel: "4 personnes",   prixTotal: 7.00,  calTotal: 1200, unite: "personne" },
+  crevettespilpil:    { base: 4,  baseLabel: "4 personnes",   prixTotal: 9.00,  calTotal: 600,  unite: "personne" },
+  lasagneverdure:     { base: 6,  baseLabel: "6 personnes",   prixTotal: 6.00,  calTotal: 2400, unite: "personne" },
+  crumblefruits:      { base: 6,  baseLabel: "6 personnes",   prixTotal: 4.00,  calTotal: 1800, unite: "personne" },
+  pintxosbasques:     { base: 4,  baseLabel: "4 personnes",   prixTotal: 5.00,  calTotal: 800,  unite: "personne" },
+  misoramenleger:     { base: 2,  baseLabel: "2 bols",        prixTotal: 4.00,  calTotal: 600,  unite: "bol"      },
+  veloutepatatepoireaux:{ base: 4,baseLabel: "4 personnes",   prixTotal: 2.50,  calTotal: 800,  unite: "personne" },
+  terrinecampagne:    { base: 8,  baseLabel: "8 personnes",   prixTotal: 8.00,  calTotal: 2400, unite: "personne" },
+  poulpegrillebresil: { base: 4,  baseLabel: "4 personnes",   prixTotal: 12.00, calTotal: 600,  unite: "personne" },
+  pouletrotiperfect:  { base: 4,  baseLabel: "4 personnes",   prixTotal: 7.00,  calTotal: 1200, unite: "personne" },
+  millefeuille:       { base: 8,  baseLabel: "8 personnes",   prixTotal: 6.00,  calTotal: 2400, unite: "personne" },
+  saumoncrouteherbes: { base: 4,  baseLabel: "4 personnes",   prixTotal: 8.00,  calTotal: 1000, unite: "personne" },
   ramenjaponais:      { base: 2,  baseLabel: "2 bols",        prixTotal: 8.00,  calTotal: 900,  unite: "bol" },
   gyoza:              { base: 20, baseLabel: "20 gyoza",      prixTotal: 5.00,  calTotal: 1000, unite: "gyoza" },
   tikamasala:         { base: 4,  baseLabel: "4 personnes",   prixTotal: 7.00,  calTotal: 1600, unite: "personne" },
@@ -7407,8 +8638,28 @@ function choisirRecette(nom) {
     "potaufeu":          "Pot-au-Feu",
     "parisbrestreinterpretation": "Paris-Brest",
     "ramenjaponais":     "Ramen Japonais",
+    "bibimbap":          "Bibimbap",
+    "moquecabresil":     "Moqueca Brésilienne",
+    "rendangboeuf":      "Rendang de Bœuf",
+    "tacoshijosepastor": "Tacos Al Pastor",
+    "grilladelamnocciole":"Côtelettes d'Agneau Grillées",
+    "sushimaison":       "Sushis Maison",
+    "carigrioantillais": "Cari Griot Antillais",
+    "semoulecourgette":  "Semoule aux Légumes Grillés",
+    "pouletbasquaise":   "Poulet Basquaise",
+    "crevettespilpil":   "Crevettes Pil Pil",
+    "lasagneverdure":    "Lasagne Verdure",
+    "crumblefruits":     "Crumble aux Fruits",
+    "pintxosbasques":    "Pintxos Basques",
+    "misoramenleger":    "Ramen Miso Léger",
+    "veloutepatatepoireaux":"Velouté Patate & Poireaux",
+    "terrinecampagne":   "Terrine de Campagne",
+    "poulpegrillebresil":"Poulpe Grillé",
+    "pouletrotiperfect": "Poulet Rôti Parfait",
+    "millefeuille":      "Mille-feuille",
+    "saumoncrouteherbes":"Saumon en Croûte d'Herbes",
     "pizzareine":        "Pizza Reine",
-    "pizzaquattroformaggi": "Pizza Quattro Formaggi",
+    "pizza4fromages": "Pizza Quattro Formaggi",
     "pizzadiavola":      "Pizza Diavola",
     "pizzasaumonepinards":"Pizza Saumon Épinards",
     "pizzavegetarienne": "Pizza Végétarienne",
