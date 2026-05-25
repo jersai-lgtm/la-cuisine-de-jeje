@@ -59,8 +59,10 @@ gtag('config', 'G-390C5MY2SS');
 
 <!-- MENU PRINCIPAL -->
 <nav class="menu-cats">
-  <button class="cat-btn active" id="btn-tout" onclick="afficherTout()">🍽️ Tout</button>
-  <button class="cat-btn cat-btn-favoris" id="btn-favoris" onclick="filtrerFavoris()">❤️ Favoris</button>
+  <button class="cat-btn active" id="btn-accueil" onclick="afficherAccueil()">🏠 Accueil</button>
+  <button class="cat-btn" id="btn-favoris" onclick="filtrerFavoris()">❤️ Favoris</button>
+  <button class="cat-btn" id="btn-historique" onclick="afficherHistorique()">🕐 Récents</button>
+  <button class="cat-btn" id="btn-tout" onclick="afficherTout()">🍽️ Tout</button>
   <button class="cat-btn" id="btn-categories" onclick="toggleSousMenu('menu-categories', this)">🗂️ Catégories ▾</button>
   <button class="cat-btn" id="btn-monde" onclick="toggleSousMenu('menu-pays', this)">🌍 Monde ▾</button>
 </nav>
@@ -104,8 +106,55 @@ gtag('config', 'G-390C5MY2SS');
   <button class="pays-btn" onclick="filtrerPays('haiti')">🇭🇹 Haïti</button>
 </div>
 
+<!-- SECTION ACCUEIL PERSONNALISÉ -->
+<section id="section-accueil" class="section-accueil">
+  <!-- Bloc Favoris rapides -->
+  <div class="accueil-bloc" id="accueil-favoris-bloc">
+    <div class="accueil-bloc-header">
+      <h2>❤️ Mes Favoris</h2>
+      <button class="accueil-voir-plus" onclick="filtrerFavoris()">Voir tout →</button>
+    </div>
+    <div class="accueil-scroll-row" id="accueil-favoris-row">
+      <div class="accueil-empty">Connecte-toi pour voir tes favoris</div>
+    </div>
+  </div>
+
+  <!-- Bloc Derniers menus générés -->
+  <div class="accueil-bloc" id="accueil-menus-bloc">
+    <div class="accueil-bloc-header">
+      <h2>📅 Derniers menus générés</h2>
+      <button class="accueil-voir-plus" onclick="afficherSection('menus', document.querySelector('.nav-btn[onclick*=menus]'))">Voir menus →</button>
+    </div>
+    <div id="accueil-menus-row" class="accueil-menus-list">
+      <div class="accueil-empty">Génère un menu pour le voir ici</div>
+    </div>
+  </div>
+
+  <!-- Bloc Dernières recettes vues -->
+  <div class="accueil-bloc" id="accueil-recents-bloc">
+    <div class="accueil-bloc-header">
+      <h2>🕐 Dernières recettes vues</h2>
+      <button class="accueil-voir-plus" onclick="afficherTout()">Tout voir →</button>
+    </div>
+    <div class="accueil-scroll-row" id="accueil-recents-row">
+      <div class="accueil-empty">Aucune recette vue récemment</div>
+    </div>
+  </div>
+
+  <!-- Bloc suggestions selon profil -->
+  <div class="accueil-bloc" id="accueil-suggestions-bloc">
+    <div class="accueil-bloc-header">
+      <h2>✨ Suggestions du jour</h2>
+      <button class="accueil-voir-plus" onclick="afficherTout()">Voir tout →</button>
+    </div>
+    <div class="accueil-scroll-row" id="accueil-suggestions-row">
+      <div class="accueil-empty">Chargement...</div>
+    </div>
+  </div>
+</section>
+
 <!-- CARTES RECETTES -->
-<section class="cartes">
+<section class="cartes" id="section-cartes" style="display:none">
 
   <div class="carte" data-pays="italie" data-cat="boulangerie" onclick="ouvrirFiche('pizza', 'calc-pizza')">
     <img src="images/patepizza.webp" alt="Pâte à pizza">
@@ -2716,6 +2765,8 @@ gtag('config', 'G-390C5MY2SS');
 
 </section>
 
+<!-- FIN SECTION CARTES -->
+
 <!-- SECTION MENU THÉMATIQUE -->
 <section class="planificateur-section" id="section-festif" style="display:none">
 
@@ -3273,10 +3324,29 @@ async function genererMenuFestif() {
   btn.disabled = true;
 
   const themeData = menusFestifs[theme];
-  const recettesDispos = Object.keys(recettes).join(", ");
+  // Enrichir avec allergènes du profil
+  let allergiesFinalesFestif = allergies ? allergies.split(",").map(a => a.trim()) : [];
+  if (window.userProfile?.preferences) {
+    const prefs = window.userProfile.preferences;
+    if (prefs.allergies?.length) allergiesFinalesFestif = [...new Set([...allergiesFinalesFestif, ...prefs.allergies])];
+    if (prefs.allergiesCustom?.length) allergiesFinalesFestif = [...new Set([...allergiesFinalesFestif, ...prefs.allergiesCustom])];
+  }
+  const motsExclusionFestif = new Set();
+  allergiesFinalesFestif.forEach(a => {
+    const mots = (typeof ALLERGENES_MOTS !== "undefined" ? ALLERGENES_MOTS[a] : null) || [a];
+    mots.forEach(m => motsExclusionFestif.add(m.toLowerCase()));
+  });
+  const recettesDispos = Object.keys(recettes).filter(key => {
+    if (motsExclusionFestif.size === 0) return true;
+    const r = recettes[key];
+    const texte = [key, r?.description || ""].join(" ").toLowerCase();
+    return ![...motsExclusionFestif].some(mot => texte.includes(mot));
+  }).join(", ");
+
+  const eviterFestif = allergiesFinalesFestif.length ? `ALLERGIES - NE JAMAIS PROPOSER : ${allergiesFinalesFestif.join(", ")}.` : "";
 
   const prompt = `Tu es un chef cuisinier. Génère un menu thématique "${themeData.label}" pour ${personnes} personne(s).
-${allergies ? "Éviter : " + allergies : ""}
+${eviterFestif}
 Structure souhaitée : ${structure.join(", ")}.
 
 Recettes disponibles : ${recettesDispos}
@@ -3466,14 +3536,47 @@ async function genererMenus() {
     return;
   }
 
-  const recettesDispos = Object.keys(recettes).join(", ");
+  // Enrichir avec les allergènes et préférences du profil connecté
+  let allergiesFinales = allergies ? allergies.split(",").map(a => a.trim()) : [];
+  let tagsFinaux = [...tags];
+
+  if (window.userProfile?.preferences) {
+    const prefs = window.userProfile.preferences;
+    // Ajouter régimes comme préférences
+    if (prefs.regimes?.length)
+      tagsFinaux = [...new Set([...tagsFinaux, ...prefs.regimes])];
+    // Ajouter allergènes du profil
+    if (prefs.allergies?.length)
+      allergiesFinales = [...new Set([...allergiesFinales, ...prefs.allergies])];
+    if (prefs.allergiesCustom?.length)
+      allergiesFinales = [...new Set([...allergiesFinales, ...prefs.allergiesCustom])];
+  }
+
+  // Filtrer recettesDispos : exclure les recettes incompatibles avec les allergènes
+  const motsExclusion = new Set();
+  allergiesFinales.forEach(a => {
+    const mots = (typeof ALLERGENES_MOTS !== "undefined" ? ALLERGENES_MOTS[a] : null) || [a];
+    mots.forEach(m => motsExclusion.add(m.toLowerCase()));
+  });
+  tagsFinaux.forEach(tag => {
+    const mots = (typeof ALLERGENES_MOTS !== "undefined" ? ALLERGENES_MOTS[tag] : null) || [];
+    mots.forEach(m => motsExclusion.add(m.toLowerCase()));
+  });
+
+  const recettesFiltrees = Object.keys(recettes).filter(key => {
+    if (motsExclusion.size === 0) return true;
+    const r = recettes[key];
+    const texte = [key, r?.description || ""].join(" ").toLowerCase();
+    return ![...motsExclusion].some(mot => texte.includes(mot));
+  });
+  const recettesDispos = recettesFiltrees.join(", ");
 
   btn.textContent = "⏳ Génération en cours...";
   btn.disabled = true;
   document.getElementById("plan-result").style.display = "none";
 
-  const preferences = tags.length ? `Préférences : ${tags.join(", ")}.` : "";
-  const eviter = allergies ? `Éviter : ${allergies}.` : "";
+  const preferences = tagsFinaux.length ? `Préférences : ${tagsFinaux.join(", ")}.` : "";
+  const eviter = allergiesFinales.length ? `ALLERGIES ET INTOLÉRANCES - NE JAMAIS PROPOSER ces ingrédients : ${allergiesFinales.join(", ")}.` : "";
   const joursStr = joursSelectionnes.join(", ");
 
   // Ajouter un seed aléatoire pour forcer la variété
@@ -3484,9 +3587,10 @@ ${preferences} ${eviter}
 Recettes disponibles : ${recettesDispos}
 
 RÈGLES STRICTES :
-- Utilise UNIQUEMENT des recettes de la liste ci-dessus
+- Utilise UNIQUEMENT des recettes de la liste ci-dessus (ce sont déjà les recettes filtrées selon les allergènes)
 - AUCUNE répétition de recette sur toute la semaine (ni midi-soir du même jour, ni d'un jour à l'autre)
 - Une recette ne peut apparaître QU'UNE SEULE FOIS sur les 14 repas
+- RESPECTE ABSOLUMENT les allergies et intolérances listées — c'est une question de santé
 - Varie les cuisines (française, italienne, asiatique, mexicaine...)
 - Équilibre les repas (pas que des desserts!)
 - Midi : plutôt salades, plats légers, healthy
@@ -4058,6 +4162,10 @@ function afficherSection(section, btn) {
     const nb = typeof recettes !== 'undefined' ? Object.keys(recettes).length : 0;
     const el = document.getElementById('nb-recettes');
     if (el && nb > 0) el.textContent = '🍽️ ' + nb + ' recettes';
+    // Afficher accueil par défaut
+    setTimeout(() => {
+      if (typeof afficherAccueil === 'function') afficherAccueil();
+    }, 100);
   });
 </script>
 
