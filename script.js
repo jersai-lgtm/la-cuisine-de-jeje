@@ -1,3 +1,111 @@
+const ALLERGENES_MOTS = {
+  "arachides":      ["arachide","cacahuète","cacahuete","peanut"],
+  "fruits-à-coque": ["noix","amande","noisette","cajou","pistache","pécan","macadamia","noix de coco"],
+  "lait":           ["lait","fromage","beurre","crème","yaourt","mascarpone","mozzarella","parmesan","gruyère","cheddar","ricotta","feta","gorgonzola","pecorino","camembert","béchamel"],
+  "œufs":           ["œuf","oeuf","oeufs"],
+  "gluten":         ["farine","blé","orge","seigle","avoine","semoule","pâte","pain","biscuit","gaufre","crêpe","pizza","lasagne","spätzle","couscous"],
+  "poisson":        ["poisson","saumon","thon","dorade","anchois","cabillaud","truite","hareng"],
+  "crustacés":      ["crevette","homard","langouste","crabe","écrevisse","langoustine"],
+  "soja":           ["soja","tofu","edamame","miso"],
+  "céleri":         ["céleri","celeri"],
+  "moutarde":       ["moutarde"],
+  "sésame":         ["sésame","sesame","tahini"],
+  "sulfites":       ["vin","vinaigre","champagne","prosecco","riesling"],
+  "végétarien":     ["bœuf","veau","porc","poulet","agneau","canard","jambon","lardons","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami","nduja","jarret","pork belly"],
+  "pesco-végétarien": ["bœuf","veau","porc","poulet","agneau","canard","jambon","lardons","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami"],
+  "vegan":          ["lait","fromage","beurre","crème","œuf","oeuf","oeufs","miel","mozzarella","parmesan","mascarpone","yaourt","bœuf","veau","porc","poulet","agneau","canard","jambon","lardons","saumon","thon","crevette","anchois"],
+  "sans-gluten":    ["farine","blé","semoule","pâte","pain","biscuit","gaufre","crêpe","lasagne","spätzle","couscous"],
+  "sans-lactose":   ["lait","fromage","beurre","crème","yaourt","mascarpone","mozzarella","parmesan","gruyère","cheddar","ricotta"],
+  "protéiné":       [],
+  "moins-viande":   ["bœuf","veau","porc","poulet","agneau","canard","jambon","lardons","chorizo","saucisse","merguez"],
+};
+
+
+// ==============================
+// PRÉFÉRENCES VISUELLES
+// ==============================
+
+function appliquerPreferencesVisuelles() {
+  const prefs = window.userProfile?.preferences;
+  if (!prefs) {
+    // Pas connecté : enlever tous les badges
+    document.querySelectorAll('.carte').forEach(c => {
+      c.classList.remove('carte-grisee');
+      const badge = c.querySelector('.carte-badge-allergie');
+      if (badge) badge.remove();
+    });
+    return;
+  }
+
+  const allergies     = prefs.allergies        || [];
+  const allergiesCustom = prefs.allergiesCustom  || [];
+  const regimes       = prefs.regimes          || [];
+  const objectifs     = prefs.objectifs        || [];
+
+  // Construire la liste de tous les mots à exclure
+  const motsExclus = new Set();
+  [...allergies, ...regimes].forEach(pref => {
+    (ALLERGENES_MOTS[pref] || []).forEach(m => motsExclus.add(m.toLowerCase()));
+  });
+  allergiesCustom.forEach(m => motsExclus.add(m.toLowerCase()));
+
+  if (motsExclus.size === 0) {
+    // Rien à exclure - enlever badges
+    document.querySelectorAll('.carte').forEach(c => {
+      c.classList.remove('carte-grisee');
+      const badge = c.querySelector('.carte-badge-allergie');
+      if (badge) badge.remove();
+    });
+    return;
+  }
+
+  document.querySelectorAll('.carte').forEach(carte => {
+    const onclick = carte.getAttribute('onclick') || '';
+    const match   = onclick.match(/ouvrirFiche\('([^']+)'/);
+    const key     = match ? match[1] : null;
+    if (!key) return;
+
+    const recette = typeof recettes !== 'undefined' ? recettes[key] : null;
+    const texte   = [
+      key,
+      recette?.description || '',
+      carte.querySelector('h2')?.textContent || '',
+    ].join(' ').toLowerCase();
+
+    // Trouver les mots problématiques
+    const trouvés = [...motsExclus].filter(mot => texte.includes(mot));
+
+    // Supprimer l'ancien badge
+    const oldBadge = carte.querySelector('.carte-badge-allergie');
+    if (oldBadge) oldBadge.remove();
+
+    if (trouvés.length > 0) {
+      carte.classList.add('carte-grisee');
+      // Badge avec le premier allergène trouvé
+      const badge = document.createElement('div');
+      badge.className = 'carte-badge-allergie';
+      const regime = [...regimes].find(r => (ALLERGENES_MOTS[r] || []).some(m => trouvés.includes(m)));
+      const allergie = [...allergies, ...allergiesCustom].find(a => 
+        trouvés.some(t => t.includes(a.toLowerCase()) || a.toLowerCase().includes(t))
+      );
+      if (regime) {
+        const labels = { 'végétarien':'🥦 Végétarien', 'vegan':'🌱 Vegan', 'sans-gluten':'🌾 Sans gluten', 'sans-lactose':'🥛 Sans lactose', 'pesco-végétarien':'🐟 Pesco-végé', 'moins-viande':'🌱 Moins viande' };
+        badge.textContent = labels[regime] || regime;
+      } else if (allergie) {
+        badge.textContent = '⚠️ ' + allergie;
+      } else {
+        badge.textContent = '⚠️ Exclut';
+      }
+      carte.appendChild(badge);
+    } else {
+      carte.classList.remove('carte-grisee');
+    }
+  });
+}
+
+// Appeler quand le profil change
+window.addEventListener('profilMisAJour', appliquerPreferencesVisuelles);
+
 // ==============================
 // FAVORIS
 // ==============================
