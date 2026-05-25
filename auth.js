@@ -169,18 +169,25 @@ function initFirebase() {
   };
 
   window.sauvegarderProfilComplet = async function() {
+    // Détecter quelle modale est ouverte (onboarding ou profil)
+    const isOnboarding = document.getElementById('modal-onboarding')?.classList.contains('visible');
+    const prefix = isOnboarding ? 'p' : 'pp';
+    const scope = isOnboarding
+      ? document.getElementById('modal-onboarding')
+      : document.getElementById('modal-profil');
+
     const foyer = {
-      adultes:  parseInt(document.getElementById('p-adultes')?.value) || 2,
-      ados:     parseInt(document.getElementById('p-ados')?.value) || 0,
-      enfants:  parseInt(document.getElementById('p-enfants')?.value) || 0,
-      bebes:    parseInt(document.getElementById('p-bebe')?.value) || 0,
+      adultes: parseInt(document.getElementById(prefix + '-adultes')?.value) || 2,
+      ados:    parseInt(document.getElementById(prefix + '-ados')?.value)    || 0,
+      enfants: parseInt(document.getElementById(prefix + '-enfants')?.value) || 0,
+      bebes:   parseInt(document.getElementById(prefix + '-bebe')?.value)    || 0,
     };
-    const regimes          = [...document.querySelectorAll('.pref-regime:checked')].map(c => c.value);
-    const allergies        = [...document.querySelectorAll('.pref-allergie:checked')].map(c => c.value);
-    const allergiesCustom  = window._allergiesCustom || [];
-    const objectifs        = [...document.querySelectorAll('.pref-objectif:checked')].map(c => c.value);
-    const cuisinesFav      = [...document.querySelectorAll('.pref-cuisine:checked')].map(c => c.value);
-    const niveauCuisine    = document.getElementById('p-niveau')?.value || 'débutant';
+    const regimes       = scope ? [...scope.querySelectorAll('.pref-regime:checked')].map(c => c.value)   : [];
+    const allergies     = scope ? [...scope.querySelectorAll('.pref-allergie:checked')].map(c => c.value) : [];
+    const allergiesCustom = isOnboarding ? (window._allergiesCustom || []) : (window._allergiesCustomProfil || []);
+    const objectifs     = scope ? [...scope.querySelectorAll('.pref-objectif:checked')].map(c => c.value) : [];
+    const cuisinesFav   = scope ? [...scope.querySelectorAll('.pref-cuisine:checked')].map(c => c.value)  : [];
+    const niveauCuisine = document.getElementById(prefix + '-niveau')?.value || 'débutant';
     await window.sauvegarderProfil({ foyer, preferences: { regimes, allergies, allergiesCustom, objectifs, cuisinesFavorites: cuisinesFav, niveauCuisine } });
     const btn = document.getElementById('btn-sauvegarder-profil');
     if (btn) { btn.textContent = '✅ Sauvegardé !'; setTimeout(() => btn.textContent = '💾 Sauvegarder', 2000); }
@@ -254,19 +261,23 @@ window.ouvrirModalProfil = function() {
   document.getElementById('profil-email').textContent  = p.email || '';
   const f = p.foyer || {};
   const setVal = (id, v) => { const el = document.getElementById(id); if (el) el.value = v; };
-  setVal('p-adultes', f.adultes || 2);
-  setVal('p-ados',    f.ados    || 0);
-  setVal('p-enfants', f.enfants || 0);
-  setVal('p-bebe',    f.bebes   || 0);
+  setVal('pp-adultes', f.adultes || 2);
+  setVal('pp-ados',    f.ados    || 0);
+  setVal('pp-enfants', f.enfants || 0);
+  setVal('pp-bebe',    f.bebes   || 0);
   const prefs = p.preferences || {};
-  document.querySelectorAll('.pref-regime').forEach(cb    => cb.checked = (prefs.regimes          || []).includes(cb.value));
-  document.querySelectorAll('.pref-allergie').forEach(cb   => cb.checked = (prefs.allergies         || []).includes(cb.value));
-  document.querySelectorAll('.pref-objectif').forEach(cb   => cb.checked = (prefs.objectifs          || []).includes(cb.value));
-  document.querySelectorAll('.pref-cuisine').forEach(cb    => cb.checked = (prefs.cuisinesFavorites  || []).includes(cb.value));
-  // Restaurer allergies custom
-  window._allergiesCustom = prefs.allergiesCustom || [];
-  if (typeof renderAllergiesCustom === 'function') renderAllergiesCustom();
-  const niv = document.getElementById('p-niveau');
+  // Dans le profil : sélectionner uniquement les checkboxes dans modal-profil
+  const modalProfil = document.getElementById('modal-profil');
+  if (modalProfil) {
+    modalProfil.querySelectorAll('.pref-regime').forEach(cb   => cb.checked = (prefs.regimes           || []).includes(cb.value));
+    modalProfil.querySelectorAll('.pref-allergie').forEach(cb  => cb.checked = (prefs.allergies          || []).includes(cb.value));
+    modalProfil.querySelectorAll('.pref-objectif').forEach(cb  => cb.checked = (prefs.objectifs           || []).includes(cb.value));
+    modalProfil.querySelectorAll('.pref-cuisine').forEach(cb   => cb.checked = (prefs.cuisinesFavorites   || []).includes(cb.value));
+  }
+  // Restaurer allergies custom dans profil
+  window._allergiesCustomProfil = prefs.allergiesCustom || [];
+  if (typeof renderAllergiesCustom === 'function') renderAllergiesCustom('pp');
+  const niv = document.getElementById('pp-niveau');
   if (niv) niv.value = prefs.niveauCuisine || 'débutant';
 };
 window.fermerModalProfil = function() {
