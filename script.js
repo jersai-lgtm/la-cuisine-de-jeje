@@ -1,3 +1,133 @@
+// ==============================
+// FAVORIS
+// ==============================
+function filtrerFavoris() {
+  // Activer le bouton
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  const btn = document.getElementById('btn-favoris');
+  if (btn) btn.classList.add('active');
+
+  // Si non connecté
+  if (!window.currentUser) {
+    ouvrirModalAuth();
+    return;
+  }
+
+  const favs = window.userProfile?.favoris || [];
+  const cartes = document.querySelectorAll('.carte');
+  let count = 0;
+  cartes.forEach(c => {
+    const onclick = c.getAttribute('onclick') || '';
+    const match = onclick.match(/ouvrirFiche\('([^']+)'/);
+    const key = match ? match[1] : null;
+    if (key && favs.includes(key)) {
+      c.style.display = 'flex';
+      count++;
+    } else {
+      c.style.display = 'none';
+    }
+  });
+
+  // Message si aucun favori
+  let msg = document.getElementById('msg-no-favoris');
+  if (count === 0) {
+    if (!msg) {
+      msg = document.createElement('p');
+      msg.id = 'msg-no-favoris';
+      msg.style.cssText = 'text-align:center;color:#888;padding:40px;grid-column:1/-1;font-size:15px';
+      msg.innerHTML = `❤️ Aucun favori pour l'instant.<br><small>Appuie sur 🤍 dans une recette pour l'ajouter !</small>`;
+      document.getElementById('recettes-grid')?.appendChild(msg);
+    }
+  } else {
+    if (msg) msg.remove();
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ==============================
+// ALLERGIES CUSTOM
+// ==============================
+window._allergiesCustom = [];
+
+function ajouterAllergieCustom(prefix) {
+  prefix = prefix || 'p';
+  const inputId = prefix === 'pp' ? 'pp-allergie-input' : 'allergie-custom-input';
+  const input = document.getElementById(inputId);
+  if (!input) return;
+  const val = input.value.trim().toLowerCase();
+  if (!val) return;
+  const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
+  if (!window[store]) window[store] = [];
+  if (window[store].includes(val)) { input.value = ''; return; }
+  window[store].push(val);
+  input.value = '';
+  renderAllergiesCustom(prefix);
+}
+
+function renderAllergiesCustom(prefix) {
+  prefix = prefix || 'p';
+  const listeId = prefix === 'pp' ? 'pp-allergies-liste' : 'allergies-custom-liste';
+  const liste = document.getElementById(listeId);
+  if (!liste) return;
+  const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
+  const items = window[store] || [];
+  liste.innerHTML = items.map(a =>
+    `<span class="allergie-tag">${a} <button onclick="retirerAC('${a}','${prefix}')">✕</button></span>`
+  ).join('');
+}
+
+function retirerAC(val, prefix) {
+  prefix = prefix || 'p';
+  const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
+  if (window[store]) window[store] = window[store].filter(a => a !== val);
+  renderAllergiesCustom(prefix);
+}
+
+// ==============================
+// Compteur +/-
+// ==============================
+function changerCompteur(id, delta) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const val = parseInt(el.value) + delta;
+  const min = parseInt(el.min) || 0;
+  const max = parseInt(el.max) || 99;
+  el.value = Math.min(max, Math.max(min, val));
+}
+
+// Tabs profil
+function switchProfilTab(tab, btn) {
+  document.querySelectorAll('.profil-tab-content').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.profil-tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('profil-tab-' + tab).style.display = 'block';
+  btn.classList.add('active');
+  if (tab === 'favoris') afficherFavoris();
+}
+
+// Afficher favoris
+function afficherFavoris() {
+  const liste = document.getElementById('liste-favoris');
+  if (!liste) return;
+  const favs = window.userProfile?.favoris || [];
+  if (favs.length === 0) {
+    liste.innerHTML = `<p style="text-align:center;color:#888;padding:20px">Aucun favori pour l'instant.<br>Appuie sur 🤍 dans une recette pour l'ajouter !</p>`;
+    return;
+  }
+  liste.innerHTML = favs.map(key => {
+    const nom = (typeof getNomRecette === 'function' ? getNomRecette(key) : key);
+    const data = typeof recettes !== 'undefined' ? recettes[key] : null;
+    const emoji = data?.emoji || '🍽️';
+    return `<div class="favori-item" onclick="fermerModalProfil();choisirRecette('${key}')">
+      <span>${emoji} ${nom}</span>
+      <button onclick="event.stopPropagation();toggleFavori('${key}');afficherFavoris()" class="btn-retirer-favori">✕</button>
+    </div>`;
+  }).join('');
+}
+
+// Ajouter bouton favori dans la modale recette
+const _origChoisirRecette = typeof choisirRecette !== 'undefined' ? choisirRecette : null;
+
+
 // Mapping des clés de colonnes vers labels affichables
 const INGREDIENTS_LABELS = {
   // == Ignorés ==
