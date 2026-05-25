@@ -10533,6 +10533,14 @@ function choisirRecette(nom) {
 
   document.getElementById("modal-calc").classList.add("visible");
   document.getElementById("modal-resultat").parentElement.scrollTop = 0;
+
+  // Bouton favori
+  const btnFav = document.getElementById("btn-favori-modal");
+  if (btnFav) {
+    btnFav.id = "btn-favori-" + nom;
+    btnFav.setAttribute("onclick", `toggleFavori('${nom}')`);
+    btnFav.textContent = (typeof estFavori === 'function' && estFavori(nom)) ? '❤️' : '🤍';
+  }
 }
 
 // initTablesGlobales() déplacé en fin de fichier
