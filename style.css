@@ -61,12 +61,24 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 /* ==========================
    CARTES RECETTES
 ========================== */
-.cartes, #section-cartes {
+.cartes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
   padding: 20px 16px 100px;
+}
+
+#section-cartes {
+  display: none; /* caché par défaut - affiché par JS */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 16px 100px;
+}
+
+#section-cartes.visible {
+  display: flex;
 }
 .carte {
   width: 200px;
@@ -459,7 +471,8 @@ select, input[type="number"] {
 ========================== */
 @media (max-width: 600px) {
   header h1       { font-size: 28px; }
-  .cartes, #section-cartes { gap: 10px; padding: 14px 10px 90px; }
+  .cartes { gap: 10px; padding: 14px 10px 90px; }
+  #section-cartes { gap: 10px; padding: 14px 10px 90px; }
   .carte          { width: 160px; }
   .carte img      { height: 130px; }
   .calculateur    { width: 90%; padding: 20px; }
@@ -469,7 +482,7 @@ select, input[type="number"] {
    CORRECTIF MOBILE CARTES
 ========================== */
 @media (max-width: 480px) {
-  .cartes, #section-cartes {
+  .cartes, #section-cartes, #section-cartes[style*="block"] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -497,10 +510,9 @@ select, input[type="number"] {
     font-size: 13px;
   }
   #section-cartes {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 12px 10px 90px;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    padding: 12px 10px 90px !important;
   }
   .brioche-carte-choix {
     gap: 3px;
