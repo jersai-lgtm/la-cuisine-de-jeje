@@ -25,8 +25,9 @@ _auth.onAuthStateChanged(async function(user) {
   if (user) {
     await chargerProfil(user);
     afficherUtilisateurConnecte(user);
-    // Appliquer les préférences visuelles sur les cartes
+    // Charger l'accueil personnalisé et appliquer les préférences
     setTimeout(() => {
+      if (typeof chargerAccueil === 'function') chargerAccueil();
       if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
     }, 500);
     if (!window.userProfile || !window.userProfile.foyer) {
