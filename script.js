@@ -140,7 +140,7 @@ function afficherAccueil() {
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   if (secAccueil) secAccueil.style.display = "block";
-  if (secCartes) { secCartes.style.display = ""; secCartes.classList.remove("visible"); }
+  if (secCartes) { secCartes.classList.remove("visible"); secCartes.style.display = ""; }
 
   chargerAccueil();
 }
