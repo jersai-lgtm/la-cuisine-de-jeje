@@ -1039,16 +1039,9 @@ select, input[type="number"] {
 ============================== */
 
 /* Bouton favoris dans la nav — mis en évidence */
+/* Favoris : même style que les autres boutons cat */
 .cat-btn-favoris {
-  background: linear-gradient(135deg, rgba(255,77,136,.25), rgba(255,143,179,.15)) !important;
-  color: #ff4d88 !important;
-  border-color: rgba(255,77,136,.5) !important;
-  font-weight: 700;
-}
-.cat-btn-favoris.active,
-.cat-btn-favoris:hover {
-  background: linear-gradient(135deg, #ff4d88, #ff8fb3) !important;
-  color: #fff !important;
+  font-weight: 600;
 }
 
 /* Barre recherche allergie */
@@ -1151,3 +1144,138 @@ select, input[type="number"] {
   pointer-events: none;
   z-index: 2;
 }
+
+/* ==============================
+   PAGE ACCUEIL PERSONNALISÉ
+============================== */
+.section-accueil {
+  padding: 16px 12px 100px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accueil-bloc {
+  margin-bottom: 28px;
+}
+
+.accueil-bloc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.accueil-bloc-header h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.accueil-voir-plus {
+  background: none;
+  border: none;
+  color: #ff8fb3;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: .2s;
+}
+.accueil-voir-plus:hover { background: rgba(255,77,136,.15); }
+
+/* Scroll horizontal */
+.accueil-scroll-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+.accueil-scroll-row::-webkit-scrollbar { display: none; }
+
+.accueil-empty {
+  color: #666;
+  font-size: 13px;
+  padding: 20px 0;
+  font-style: italic;
+}
+
+/* Mini carte */
+.mini-carte {
+  flex: 0 0 130px;
+  background: rgba(255,255,255,.06);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,.08);
+  transition: transform .2s, border-color .2s;
+}
+.mini-carte:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255,77,136,.4);
+}
+.mini-carte img {
+  width: 100%;
+  height: 85px;
+  object-fit: cover;
+  display: block;
+}
+.mini-carte-info {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.mini-carte-emoji { font-size: 14px; }
+.mini-carte-nom {
+  font-size: 11px;
+  font-weight: 600;
+  color: #eee;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.mini-carte-temps {
+  font-size: 10px;
+  color: #888;
+}
+
+/* Derniers menus */
+.accueil-menus-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+.accueil-menus-list::-webkit-scrollbar { display: none; }
+
+.accueil-menu-jour {
+  flex: 0 0 140px;
+  background: rgba(255,255,255,.06);
+  border-radius: 14px;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.accueil-menu-jour-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff8fb3;
+  margin-bottom: 8px;
+}
+.accueil-menu-repas {
+  font-size: 11px;
+  color: #ccc;
+  margin-bottom: 6px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 8px;
+  transition: .15s;
+  line-height: 1.3;
+}
+.accueil-menu-repas:hover { background: rgba(255,77,136,.15); color: #fff; }
+.accueil-menu-repas span { font-size: 12px; margin-right: 4px; }
