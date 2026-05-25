@@ -3992,7 +3992,7 @@ function rechercherRecette(query) {
     const secAccueil = document.getElementById("section-accueil");
     const secCartes  = document.getElementById("section-cartes");
     if (secAccueil) secAccueil.style.display = "none";
-    if (secCartes)  secCartes.style.display  = "flex";
+    if (secCartes)  secCartes.style.display  = "";
     document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
   } else {
     // Si on efface la recherche → retour accueil
@@ -4058,7 +4058,7 @@ function toggleSousMenu(menuId, btn) {
     const secAccueil = document.getElementById("section-accueil");
     const secCartes  = document.getElementById("section-cartes");
     if (secAccueil) secAccueil.style.display = "none";
-    if (secCartes)  { secCartes.style.display = "flex"; }
+    if (secCartes)  { secCartes.style.display = ""; }
     // Tout afficher dans la grille
     document.querySelectorAll(".carte").forEach(c => c.style.display = "");
     if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
