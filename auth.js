@@ -175,11 +175,13 @@ function initFirebase() {
       enfants:  parseInt(document.getElementById('p-enfants')?.value) || 0,
       bebes:    parseInt(document.getElementById('p-bebe')?.value) || 0,
     };
-    const regimes         = [...document.querySelectorAll('.pref-regime:checked')].map(c => c.value);
-    const allergies       = [...document.querySelectorAll('.pref-allergie:checked')].map(c => c.value);
-    const cuisinesFav     = [...document.querySelectorAll('.pref-cuisine:checked')].map(c => c.value);
-    const niveauCuisine   = document.getElementById('p-niveau')?.value || 'débutant';
-    await window.sauvegarderProfil({ foyer, preferences: { regimes, allergies, cuisinesFavorites: cuisinesFav, niveauCuisine } });
+    const regimes          = [...document.querySelectorAll('.pref-regime:checked')].map(c => c.value);
+    const allergies        = [...document.querySelectorAll('.pref-allergie:checked')].map(c => c.value);
+    const allergiesCustom  = window._allergiesCustom || [];
+    const objectifs        = [...document.querySelectorAll('.pref-objectif:checked')].map(c => c.value);
+    const cuisinesFav      = [...document.querySelectorAll('.pref-cuisine:checked')].map(c => c.value);
+    const niveauCuisine    = document.getElementById('p-niveau')?.value || 'débutant';
+    await window.sauvegarderProfil({ foyer, preferences: { regimes, allergies, allergiesCustom, objectifs, cuisinesFavorites: cuisinesFav, niveauCuisine } });
     const btn = document.getElementById('btn-sauvegarder-profil');
     if (btn) { btn.textContent = '✅ Sauvegardé !'; setTimeout(() => btn.textContent = '💾 Sauvegarder', 2000); }
   };
@@ -257,9 +259,13 @@ window.ouvrirModalProfil = function() {
   setVal('p-enfants', f.enfants || 0);
   setVal('p-bebe',    f.bebes   || 0);
   const prefs = p.preferences || {};
-  document.querySelectorAll('.pref-regime').forEach(cb   => cb.checked = (prefs.regimes         || []).includes(cb.value));
-  document.querySelectorAll('.pref-allergie').forEach(cb  => cb.checked = (prefs.allergies        || []).includes(cb.value));
-  document.querySelectorAll('.pref-cuisine').forEach(cb   => cb.checked = (prefs.cuisinesFavorites|| []).includes(cb.value));
+  document.querySelectorAll('.pref-regime').forEach(cb    => cb.checked = (prefs.regimes          || []).includes(cb.value));
+  document.querySelectorAll('.pref-allergie').forEach(cb   => cb.checked = (prefs.allergies         || []).includes(cb.value));
+  document.querySelectorAll('.pref-objectif').forEach(cb   => cb.checked = (prefs.objectifs          || []).includes(cb.value));
+  document.querySelectorAll('.pref-cuisine').forEach(cb    => cb.checked = (prefs.cuisinesFavorites  || []).includes(cb.value));
+  // Restaurer allergies custom
+  window._allergiesCustom = prefs.allergiesCustom || [];
+  if (typeof renderAllergiesCustom === 'function') renderAllergiesCustom();
   const niv = document.getElementById('p-niveau');
   if (niv) niv.value = prefs.niveauCuisine || 'débutant';
 };
