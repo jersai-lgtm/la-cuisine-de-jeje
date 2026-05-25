@@ -154,7 +154,7 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- CARTES RECETTES -->
-<section class="cartes" id="section-cartes" style="display:none">
+<section class="cartes" id="section-cartes" class="cartes" style="display:none">
 
   <div class="carte" data-pays="italie" data-cat="boulangerie" onclick="ouvrirFiche('pizza', 'calc-pizza')">
     <img src="images/patepizza.webp" alt="Pâte à pizza">
@@ -3987,6 +3987,19 @@ function rechercherRecette(query) {
   const clear = document.getElementById("search-clear");
   clear.style.display = q ? "flex" : "none";
 
+  // Si recherche active, basculer vers la grille
+  if (q) {
+    const secAccueil = document.getElementById("section-accueil");
+    const secCartes  = document.getElementById("section-cartes");
+    if (secAccueil) secAccueil.style.display = "none";
+    if (secCartes)  secCartes.style.display  = "flex";
+    document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  } else {
+    // Si on efface la recherche → retour accueil
+    if (typeof afficherAccueil === "function") afficherAccueil();
+    return;
+  }
+
   document.querySelectorAll(".carte").forEach(carte => {
     const nom = carte.querySelector("h2").textContent.toLowerCase();
     carte.style.display = (!q || nom.includes(q)) ? "flex" : "none";
@@ -4005,7 +4018,9 @@ function viderRecherche() {
   document.getElementById("search-input").value = "";
   document.getElementById("search-clear").style.display = "none";
   document.querySelectorAll(".carte").forEach(c => c.style.display = "");
-  afficherTout();
+  // Retour à l'accueil plutôt que tout afficher
+  if (typeof afficherAccueil === "function") afficherAccueil();
+  else afficherTout();
 }
 
 // Afficher tout
@@ -4038,8 +4053,15 @@ function toggleSousMenu(menuId, btn) {
     menu.style.display = "flex";
     btn.classList.add("active");
     document.getElementById("btn-tout").classList.remove("active");
-    // Réinitialiser les boutons du sous-menu
     document.querySelectorAll(`#${menuId} .pays-btn`).forEach(b => b.classList.remove("active"));
+    // Basculer vers la grille si on est sur l'accueil
+    const secAccueil = document.getElementById("section-accueil");
+    const secCartes  = document.getElementById("section-cartes");
+    if (secAccueil) secAccueil.style.display = "none";
+    if (secCartes)  { secCartes.style.display = "flex"; }
+    // Tout afficher dans la grille
+    document.querySelectorAll(".carte").forEach(c => c.style.display = "");
+    if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
   }
 }
 
@@ -4107,15 +4129,17 @@ function afficherSection(section, btn) {
   btn.classList.add("active");
   // Fermer les sous-menus catégories/monde
   fermerSousMenus();
-  const calc = document.getElementById("section-calculateur");
-  const cartes = document.querySelector(".cartes");
-  const menuCats = document.querySelector(".menu-cats");
-  const planif = document.getElementById("section-planificateur");
-  const searchBar = document.querySelector(".search-bar");
+  const calc       = document.getElementById("section-calculateur");
+  const cartes     = document.getElementById("section-cartes");   // grille complète
+  const accueilSec = document.getElementById("section-accueil"); // page accueil
+  const menuCats   = document.querySelector(".menu-cats");
+  const planif     = document.getElementById("section-planificateur");
+  const searchBar  = document.querySelector(".search-bar");
 
   if (section === "calculateur") {
     calc.style.display = "block";
-    cartes.style.display = "none";
+    if (cartes)     cartes.style.display     = "none";
+    if (accueilSec) accueilSec.style.display = "none";
     menuCats.style.display = "none";
     planif.style.display = "none";
     searchBar.style.display = "none";
@@ -4123,7 +4147,8 @@ function afficherSection(section, btn) {
     document.getElementById("menu-pays").style.display = "none";
   } else if (section === "planificateur") {
     calc.style.display = "none";
-    cartes.style.display = "none";
+    if (cartes)     cartes.style.display     = "none";
+    if (accueilSec) accueilSec.style.display = "none";
     menuCats.style.display = "none";
     searchBar.style.display = "none";
     document.getElementById("menu-categories").style.display = "none";
@@ -4148,11 +4173,16 @@ function afficherSection(section, btn) {
     }
   } else {
     calc.style.display = "none";
-    cartes.style.display = "";
-    menuCats.style.display = "";
     planif.style.display = "none";
+    menuCats.style.display = "flex";
     searchBar.style.display = "flex";
-    afficherTout();
+    // Retour vers l'accueil personnalisé
+    if (accueilSec) accueilSec.style.display = "block";
+    if (cartes)     cartes.style.display     = "none";
+    if (typeof chargerAccueil === "function") chargerAccueil();
+    document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+    const btnA = document.getElementById("btn-accueil");
+    if (btnA) btnA.classList.add("active");
   }
 }
 </script>
