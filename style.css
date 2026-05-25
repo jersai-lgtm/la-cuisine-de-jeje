@@ -459,7 +459,7 @@ select, input[type="number"] {
 ========================== */
 @media (max-width: 600px) {
   header h1       { font-size: 28px; }
-  .cartes         { gap: 10px; padding: 14px 10px 90px; }
+  .cartes, #section-cartes { gap: 10px; padding: 14px 10px 90px; }
   .carte          { width: 160px; }
   .carte img      { height: 130px; }
   .calculateur    { width: 90%; padding: 20px; }
@@ -469,7 +469,7 @@ select, input[type="number"] {
    CORRECTIF MOBILE CARTES
 ========================== */
 @media (max-width: 480px) {
-  .cartes {
+  .cartes, #section-cartes {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -495,6 +495,12 @@ select, input[type="number"] {
     text-align: center;
     padding: 6px;
     font-size: 13px;
+  }
+  #section-cartes {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 12px 10px 90px;
   }
   .brioche-carte-choix {
     gap: 3px;
