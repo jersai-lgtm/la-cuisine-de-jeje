@@ -214,12 +214,27 @@ function chargerAccueilSuggestions() {
   const row = document.getElementById("accueil-suggestions-row");
   if (!row) return;
 
+  const today = new Date().toLocaleDateString("fr-FR");
+  const storageKey = "suggestions_" + today + "_" + (window.currentUser?.uid || "anon");
+
+  // Réutiliser les suggestions du jour si déjà générées
+  try {
+    const cached = localStorage.getItem(storageKey);
+    if (cached) {
+      const pool = JSON.parse(cached);
+      if (pool.length > 0) {
+        row.innerHTML = pool.map(key => miniCarte(key)).join("");
+        return;
+      }
+    }
+  } catch(e) {}
+
+  // Générer de nouvelles suggestions
   const toutes = Object.keys(recettes);
   const favs   = window.userProfile?.favoris || [];
   const vus    = window._recentsVus || [];
   const exclus = new Set([...favs, ...vus]);
 
-  // Filtrer selon allergènes
   const prefs = window.userProfile?.preferences;
   const motsExclus = new Set();
   if (prefs) {
@@ -236,12 +251,21 @@ function chargerAccueilSuggestions() {
     return ![...motsExclus].some(m => texte.includes(m));
   });
 
-  // Mélanger et prendre 10
-  pool = pool.sort(() => Math.random() - 0.5).slice(0, 10);
+  // Seed basé sur la date pour stabiliser le mélange du jour
+  const seed = today.split("/").reduce((a, b) => parseInt(a) + parseInt(b), 0);
+  pool = pool.sort((a, b) => {
+    const ha = (a.charCodeAt(0) * seed) % 997;
+    const hb = (b.charCodeAt(0) * seed) % 997;
+    return ha - hb;
+  }).slice(0, 10);
+
   if (pool.length === 0) {
     row.innerHTML = `<div class="accueil-empty">Aucune suggestion disponible</div>`;
     return;
   }
+
+  // Sauvegarder pour la journée
+  try { localStorage.setItem(storageKey, JSON.stringify(pool)); } catch(e) {}
   row.innerHTML = pool.map(key => miniCarte(key)).join("");
 }
 
