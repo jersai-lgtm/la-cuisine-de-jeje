@@ -1,167 +1,198 @@
 // ==============================
 // FIREBASE AUTH - La Cuisine de Jéjé
+// Chargé via CDN compat (non-module)
 // ==============================
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getAuth, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, updateProfile } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-import { getFirestore, doc, setDoc, getDoc, updateDoc, arrayUnion, arrayRemove } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBB8TPxDGdP-D2WGDOs6yIyVV0dFY0M9oM",
-  authDomain: "cuisine-jeje.firebaseapp.com",
-  projectId: "cuisine-jeje",
-  storageBucket: "cuisine-jeje.firebasestorage.app",
-  messagingSenderId: "23537454599",
-  appId: "1:23537454599:web:1a4c9101a6bc47b93a64a2"
-};
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
-const googleProvider = new GoogleAuthProvider();
-
-// ==============================
-// ÉTAT GLOBAL
-// ==============================
-window.currentUser = null;
-window.userProfile = null;
-
-// ==============================
-// ÉCOUTE AUTH
-// ==============================
-onAuthStateChanged(auth, async (user) => {
-  window.currentUser = user;
-  if (user) {
-    await chargerProfil(user);
-    afficherUtilisateurConnecte(user);
-    // Si profil incomplet → afficher onboarding
-    if (!window.userProfile?.foyer) {
-      afficherOnboarding();
-    }
-  } else {
-    afficherBoutonConnexion();
-  }
+// Attendre que Firebase soit prêt
+window.addEventListener('load', function() {
+  initFirebase();
 });
 
-// ==============================
-// CONNEXION GOOGLE
-// ==============================
-window.connexionGoogle = async function() {
-  try {
-    const result = await signInWithPopup(auth, googleProvider);
-    fermerModalAuth();
-  } catch (e) {
-    afficherErreurAuth("Erreur de connexion Google : " + e.message);
+function initFirebase() {
+  const firebaseConfig = {
+    apiKey: "AIzaSyBB8TPxDGdP-D2WGDOs6yIyVV0dFY0M9oM",
+    authDomain: "cuisine-jeje.firebaseapp.com",
+    projectId: "cuisine-jeje",
+    storageBucket: "cuisine-jeje.firebasestorage.app",
+    messagingSenderId: "23537454599",
+    appId: "1:23537454599:web:1a4c9101a6bc47b93a64a2"
+  };
+
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
   }
-};
 
-// ==============================
-// INSCRIPTION EMAIL
-// ==============================
-window.inscrireEmail = async function() {
-  const prenom = document.getElementById('auth-prenom')?.value.trim();
-  const email = document.getElementById('auth-email')?.value.trim();
-  const mdp = document.getElementById('auth-mdp')?.value;
-  if (!prenom || !email || !mdp) { afficherErreurAuth("Remplis tous les champs."); return; }
-  if (mdp.length < 6) { afficherErreurAuth("Mot de passe : 6 caractères minimum."); return; }
-  try {
-    const cred = await createUserWithEmailAndPassword(auth, email, mdp);
-    await updateProfile(cred.user, { displayName: prenom });
-    fermerModalAuth();
-  } catch (e) {
-    const msgs = { 'auth/email-already-in-use': 'Email déjà utilisé.', 'auth/invalid-email': 'Email invalide.' };
-    afficherErreurAuth(msgs[e.code] || e.message);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  // ==============================
+  // ÉCOUTE AUTH
+  // ==============================
+  auth.onAuthStateChanged(async function(user) {
+    window.currentUser = user;
+    if (user) {
+      await chargerProfil(user, db);
+      afficherUtilisateurConnecte(user);
+      if (!window.userProfile || !window.userProfile.foyer) {
+        afficherOnboarding();
+      }
+    } else {
+      window.userProfile = null;
+      afficherBoutonConnexion();
+    }
+  });
+
+  // ==============================
+  // CONNEXION GOOGLE
+  // ==============================
+  window.connexionGoogle = async function() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    try {
+      await auth.signInWithPopup(provider);
+      fermerModalAuth();
+    } catch(e) {
+      afficherErreurAuth(e.message);
+    }
+  };
+
+  // ==============================
+  // INSCRIPTION EMAIL
+  // ==============================
+  window.inscrireEmail = async function() {
+    const prenom = document.getElementById('auth-prenom')?.value.trim();
+    const email  = document.getElementById('auth-email')?.value.trim();
+    const mdp    = document.getElementById('auth-mdp')?.value;
+    if (!prenom || !email || !mdp) { afficherErreurAuth("Remplis tous les champs."); return; }
+    if (mdp.length < 6) { afficherErreurAuth("Mot de passe : 6 caractères minimum."); return; }
+    try {
+      const cred = await auth.createUserWithEmailAndPassword(email, mdp);
+      await cred.user.updateProfile({ displayName: prenom });
+      fermerModalAuth();
+    } catch(e) {
+      const msgs = {
+        'auth/email-already-in-use': 'Email déjà utilisé.',
+        'auth/invalid-email': 'Email invalide.',
+        'auth/weak-password': 'Mot de passe trop faible.'
+      };
+      afficherErreurAuth(msgs[e.code] || e.message);
+    }
+  };
+
+  // ==============================
+  // CONNEXION EMAIL
+  // ==============================
+  window.connecterEmail = async function() {
+    const email = document.getElementById('auth-email-login')?.value.trim();
+    const mdp   = document.getElementById('auth-mdp-login')?.value;
+    if (!email || !mdp) { afficherErreurAuth("Remplis tous les champs."); return; }
+    try {
+      await auth.signInWithEmailAndPassword(email, mdp);
+      fermerModalAuth();
+    } catch(e) {
+      const msgs = {
+        'auth/user-not-found': 'Compte introuvable.',
+        'auth/wrong-password': 'Mot de passe incorrect.',
+        'auth/invalid-credential': 'Email ou mot de passe incorrect.',
+        'auth/invalid-email': 'Email invalide.'
+      };
+      afficherErreurAuth(msgs[e.code] || e.message);
+    }
+  };
+
+  // ==============================
+  // DÉCONNEXION
+  // ==============================
+  window.deconnexion = async function() {
+    await auth.signOut();
+    window.userProfile = null;
+    fermerModalProfil();
+    afficherBoutonConnexion();
+  };
+
+  // ==============================
+  // PROFIL FIRESTORE
+  // ==============================
+  async function chargerProfil(user, db) {
+    const ref = db.collection('utilisateurs').doc(user.uid);
+    const snap = await ref.get();
+    if (snap.exists) {
+      window.userProfile = snap.data();
+    } else {
+      const profil = {
+        uid: user.uid,
+        prenom: user.displayName || '',
+        email: user.email || '',
+        photoURL: user.photoURL || '',
+        dateCreation: new Date().toISOString(),
+        foyer: null,
+        preferences: { regimes: [], allergies: [], cuisinesFavorites: [], niveauCuisine: 'débutant' },
+        favoris: [],
+        historiqueMenus: []
+      };
+      await ref.set(profil);
+      window.userProfile = profil;
+    }
   }
-};
 
-// ==============================
-// CONNEXION EMAIL
-// ==============================
-window.connecterEmail = async function() {
-  const email = document.getElementById('auth-email-login')?.value.trim();
-  const mdp = document.getElementById('auth-mdp-login')?.value;
-  if (!email || !mdp) { afficherErreurAuth("Remplis tous les champs."); return; }
-  try {
-    await signInWithEmailAndPassword(auth, email, mdp);
-    fermerModalAuth();
-  } catch (e) {
-    const msgs = { 'auth/user-not-found': 'Compte introuvable.', 'auth/wrong-password': 'Mot de passe incorrect.', 'auth/invalid-credential': 'Email ou mot de passe incorrect.' };
-    afficherErreurAuth(msgs[e.code] || e.message);
-  }
-};
+  window.sauvegarderProfil = async function(data) {
+    if (!window.currentUser) return;
+    const ref = db.collection('utilisateurs').doc(window.currentUser.uid);
+    await ref.update(data);
+    window.userProfile = Object.assign({}, window.userProfile, data);
+  };
 
-// ==============================
-// DÉCONNEXION
-// ==============================
-window.deconnexion = async function() {
-  await signOut(auth);
-  window.userProfile = null;
-  afficherBoutonConnexion();
-};
+  window.toggleFavori = async function(recetteKey) {
+    if (!window.currentUser) { ouvrirModalAuth(); return; }
+    const ref = db.collection('utilisateurs').doc(window.currentUser.uid);
+    const favs = window.userProfile?.favoris || [];
+    const isFav = favs.includes(recetteKey);
+    const newFavs = isFav ? favs.filter(f => f !== recetteKey) : [...favs, recetteKey];
+    await ref.update({ favoris: newFavs });
+    window.userProfile.favoris = newFavs;
+    const btn = document.getElementById('btn-favori-' + recetteKey);
+    if (btn) btn.textContent = newFavs.includes(recetteKey) ? '❤️' : '🤍';
+    const btnModal = document.getElementById('btn-favori-modal');
+    if (btnModal) btnModal.textContent = newFavs.includes(recetteKey) ? '❤️' : '🤍';
+  };
 
-// ==============================
-// PROFIL FIRESTORE
-// ==============================
-async function chargerProfil(user) {
-  const ref = doc(db, "utilisateurs", user.uid);
-  const snap = await getDoc(ref);
-  if (snap.exists()) {
-    window.userProfile = snap.data();
-  } else {
-    // Créer profil vide
-    const profil = {
-      uid: user.uid,
-      prenom: user.displayName || "",
-      email: user.email,
-      photoURL: user.photoURL || "",
-      dateCreation: new Date().toISOString(),
-      foyer: null,
-      preferences: { regimes: [], allergies: [], cuisinesFavorites: [], niveauCuisine: "débutant" },
-      favoris: [],
-      historiqueMenus: []
+  window.estFavori = function(key) {
+    return (window.userProfile?.favoris || []).includes(key);
+  };
+
+  window.sauvegarderHistoriqueMenu = async function(menu, type) {
+    if (!window.currentUser) return;
+    const ref = db.collection('utilisateurs').doc(window.currentUser.uid);
+    const entree = { date: new Date().toISOString(), type, menu };
+    const hist = [...(window.userProfile?.historiqueMenus || []), entree].slice(-20);
+    await ref.update({ historiqueMenus: hist });
+    window.userProfile.historiqueMenus = hist;
+  };
+
+  window.sauvegarderProfilComplet = async function() {
+    const foyer = {
+      adultes:  parseInt(document.getElementById('p-adultes')?.value) || 2,
+      ados:     parseInt(document.getElementById('p-ados')?.value) || 0,
+      enfants:  parseInt(document.getElementById('p-enfants')?.value) || 0,
+      bebes:    parseInt(document.getElementById('p-bebe')?.value) || 0,
     };
-    await setDoc(ref, profil);
-    window.userProfile = profil;
-  }
+    const regimes         = [...document.querySelectorAll('.pref-regime:checked')].map(c => c.value);
+    const allergies       = [...document.querySelectorAll('.pref-allergie:checked')].map(c => c.value);
+    const cuisinesFav     = [...document.querySelectorAll('.pref-cuisine:checked')].map(c => c.value);
+    const niveauCuisine   = document.getElementById('p-niveau')?.value || 'débutant';
+    await window.sauvegarderProfil({ foyer, preferences: { regimes, allergies, cuisinesFavorites: cuisinesFav, niveauCuisine } });
+    const btn = document.getElementById('btn-sauvegarder-profil');
+    if (btn) { btn.textContent = '✅ Sauvegardé !'; setTimeout(() => btn.textContent = '💾 Sauvegarder', 2000); }
+  };
+
+  window.getPersonnesFoyer = function() {
+    const f = window.userProfile?.foyer;
+    if (!f) return 4;
+    return (f.adultes || 0) + (f.ados || 0) + (f.enfants || 0);
+  };
 }
 
-window.sauvegarderProfil = async function(data) {
-  if (!window.currentUser) return;
-  const ref = doc(db, "utilisateurs", window.currentUser.uid);
-  await updateDoc(ref, data);
-  window.userProfile = { ...window.userProfile, ...data };
-};
-
-// Favoris
-window.toggleFavori = async function(recetteKey) {
-  if (!window.currentUser) { ouvrirModalAuth(); return; }
-  const ref = doc(db, "utilisateurs", window.currentUser.uid);
-  const isFavori = window.userProfile?.favoris?.includes(recetteKey);
-  if (isFavori) {
-    await updateDoc(ref, { favoris: arrayRemove(recetteKey) });
-    window.userProfile.favoris = window.userProfile.favoris.filter(f => f !== recetteKey);
-  } else {
-    await updateDoc(ref, { favoris: arrayUnion(recetteKey) });
-    window.userProfile.favoris = [...(window.userProfile.favoris || []), recetteKey];
-  }
-  // Mettre à jour l'icône cœur si visible
-  const btn = document.getElementById('btn-favori-' + recetteKey);
-  if (btn) btn.textContent = window.userProfile.favoris.includes(recetteKey) ? '❤️' : '🤍';
-};
-
-window.estFavori = function(recetteKey) {
-  return window.userProfile?.favoris?.includes(recetteKey) || false;
-};
-
-// Historique menus
-window.sauvegarderHistoriqueMenu = async function(menu, type) {
-  if (!window.currentUser) return;
-  const ref = doc(db, "utilisateurs", window.currentUser.uid);
-  const entree = { date: new Date().toISOString(), type, menu };
-  await updateDoc(ref, { historiqueMenus: arrayUnion(entree) });
-};
-
 // ==============================
-// UI - BOUTON AVATAR / CONNEXION
+// UI
 // ==============================
 function afficherBoutonConnexion() {
   const zone = document.getElementById('zone-utilisateur');
@@ -178,26 +209,14 @@ function afficherUtilisateurConnecte(user) {
   zone.innerHTML = `
     <div class="avatar-btn" onclick="ouvrirModalProfil()">
       ${photo}
-      <span class="avatar-prenom">${user.displayName?.split(' ')[0] || 'Mon compte'}</span>
+      <span class="avatar-prenom">${(user.displayName || 'Mon compte').split(' ')[0]}</span>
     </div>`;
 }
 
-// ==============================
-// MODAL AUTH (connexion/inscription)
-// ==============================
-window.ouvrirModalAuth = function(onglet = 'connexion') {
-  document.getElementById('modal-auth').classList.add('visible');
-  switchAuthTab(onglet);
-};
-window.fermerModalAuth = function() {
-  document.getElementById('modal-auth').classList.remove('visible');
-};
-window.switchAuthTab = function(onglet) {
-  document.getElementById('auth-tab-connexion').style.display = onglet === 'connexion' ? 'block' : 'none';
-  document.getElementById('auth-tab-inscription').style.display = onglet === 'inscription' ? 'block' : 'none';
-  document.querySelectorAll('.auth-tab-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('tab-btn-' + onglet)?.classList.add('active');
-};
+function afficherOnboarding() {
+  const m = document.getElementById('modal-onboarding');
+  if (m) m.classList.add('visible');
+}
 
 function afficherErreurAuth(msg) {
   const el = document.getElementById('auth-erreur');
@@ -206,79 +225,53 @@ function afficherErreurAuth(msg) {
 }
 
 // ==============================
-// MODAL PROFIL
+// MODALES
 // ==============================
+window.ouvrirModalAuth = function(onglet) {
+  document.getElementById('modal-auth').classList.add('visible');
+  switchAuthTab(onglet || 'connexion');
+};
+window.fermerModalAuth = function() {
+  document.getElementById('modal-auth').classList.remove('visible');
+};
+window.switchAuthTab = function(onglet) {
+  document.getElementById('auth-tab-connexion').style.display  = onglet === 'connexion'   ? 'block' : 'none';
+  document.getElementById('auth-tab-inscription').style.display = onglet === 'inscription' ? 'block' : 'none';
+  document.querySelectorAll('.auth-tab-btn').forEach(b => b.classList.remove('active'));
+  const btn = document.getElementById('tab-btn-' + onglet);
+  if (btn) btn.classList.add('active');
+};
+
 window.ouvrirModalProfil = function() {
   const p = window.userProfile;
   if (!p) return;
   const modal = document.getElementById('modal-profil');
+  if (!modal) return;
   modal.classList.add('visible');
-
-  const foyer = p.foyer || {};
-  document.getElementById('profil-prenom').textContent = window.currentUser?.displayName || p.email;
-  document.getElementById('profil-email').textContent = p.email;
-
-  // Charger valeurs foyer
-  document.getElementById('p-adultes').value = foyer.adultes || 2;
-  document.getElementById('p-ados').value = foyer.ados || 0;
-  document.getElementById('p-enfants').value = foyer.enfants || 0;
-  document.getElementById('p-bebe').value = foyer.bebes || 0;
-
-  // Préférences
+  document.getElementById('profil-prenom').textContent = window.currentUser?.displayName || p.email || '';
+  document.getElementById('profil-email').textContent  = p.email || '';
+  const f = p.foyer || {};
+  const setVal = (id, v) => { const el = document.getElementById(id); if (el) el.value = v; };
+  setVal('p-adultes', f.adultes || 2);
+  setVal('p-ados',    f.ados    || 0);
+  setVal('p-enfants', f.enfants || 0);
+  setVal('p-bebe',    f.bebes   || 0);
   const prefs = p.preferences || {};
-  document.querySelectorAll('.pref-regime').forEach(cb => {
-    cb.checked = (prefs.regimes || []).includes(cb.value);
-  });
-  document.querySelectorAll('.pref-allergie').forEach(cb => {
-    cb.checked = (prefs.allergies || []).includes(cb.value);
-  });
-  document.querySelectorAll('.pref-cuisine').forEach(cb => {
-    cb.checked = (prefs.cuisinesFavorites || []).includes(cb.value);
-  });
+  document.querySelectorAll('.pref-regime').forEach(cb   => cb.checked = (prefs.regimes         || []).includes(cb.value));
+  document.querySelectorAll('.pref-allergie').forEach(cb  => cb.checked = (prefs.allergies        || []).includes(cb.value));
+  document.querySelectorAll('.pref-cuisine').forEach(cb   => cb.checked = (prefs.cuisinesFavorites|| []).includes(cb.value));
   const niv = document.getElementById('p-niveau');
   if (niv) niv.value = prefs.niveauCuisine || 'débutant';
 };
-
 window.fermerModalProfil = function() {
-  document.getElementById('modal-profil').classList.remove('visible');
+  const m = document.getElementById('modal-profil');
+  if (m) m.classList.remove('visible');
 };
-
-window.sauvegarderProfilComplet = async function() {
-  const foyer = {
-    adultes: parseInt(document.getElementById('p-adultes').value) || 2,
-    ados: parseInt(document.getElementById('p-ados').value) || 0,
-    enfants: parseInt(document.getElementById('p-enfants').value) || 0,
-    bebes: parseInt(document.getElementById('p-bebe').value) || 0,
-  };
-  const regimes = [...document.querySelectorAll('.pref-regime:checked')].map(c => c.value);
-  const allergies = [...document.querySelectorAll('.pref-allergie:checked')].map(c => c.value);
-  const cuisinesFavorites = [...document.querySelectorAll('.pref-cuisine:checked')].map(c => c.value);
-  const niveauCuisine = document.getElementById('p-niveau')?.value || 'débutant';
-
-  await window.sauvegarderProfil({ foyer, preferences: { regimes, allergies, cuisinesFavorites, niveauCuisine } });
-
-  // Feedback
-  const btn = document.getElementById('btn-sauvegarder-profil');
-  if (btn) { btn.textContent = '✅ Sauvegardé !'; setTimeout(() => btn.textContent = '💾 Sauvegarder', 2000); }
-};
-
-// ==============================
-// ONBOARDING (premier accès)
-// ==============================
-function afficherOnboarding() {
-  document.getElementById('modal-onboarding').classList.add('visible');
-}
 window.fermerOnboarding = function() {
-  document.getElementById('modal-onboarding').classList.remove('visible');
+  const m = document.getElementById('modal-onboarding');
+  if (m) m.classList.remove('visible');
 };
 window.terminerOnboarding = async function() {
   await window.sauvegarderProfilComplet();
-  fermerOnboarding();
-};
-
-// Pré-remplir personnes dans le planificateur depuis le profil
-window.getPersonnesFoyer = function() {
-  const f = window.userProfile?.foyer;
-  if (!f) return 4;
-  return (f.adultes || 0) + (f.ados || 0) + (f.enfants || 0);
+  window.fermerOnboarding();
 };
