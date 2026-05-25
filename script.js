@@ -292,10 +292,7 @@ function afficherHistorique() {
   const btn = document.getElementById("btn-historique");
   if (btn) btn.classList.add("active");
 
-  const secAccueil = document.getElementById("section-accueil");
-  const secCartes  = document.getElementById("section-cartes");
-  if (secAccueil) secAccueil.style.display = "none";
-  if (secCartes) { secCartes.style.display = ""; secCartes.classList.add("visible"); }
+  if (typeof basculeVersGrille === "function") basculeVersGrille();
 
   const recents = window._recentsVus || [];
   const cartes  = document.querySelectorAll(".carte");
@@ -315,10 +312,7 @@ function filtrerFavoris() {
   if (!window.currentUser) { ouvrirModalAuth(); return; }
 
   // Basculer vers la grille
-  const secAccueil = document.getElementById("section-accueil");
-  const secCartes  = document.getElementById("section-cartes");
-  if (secAccueil) secAccueil.style.display = "none";
-  if (secCartes) { secCartes.style.display = ""; secCartes.classList.add("visible"); }
+  if (typeof basculeVersGrille === "function") basculeVersGrille();
 
   const favs = window.userProfile?.favoris || [];
   const cartes = document.querySelectorAll('.carte');
