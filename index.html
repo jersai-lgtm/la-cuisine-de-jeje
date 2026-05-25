@@ -3887,6 +3887,7 @@ function rechercherRecette(query) {
     const nom = carte.querySelector("h2").textContent.toLowerCase();
     carte.style.display = (!q || nom.includes(q)) ? "flex" : "none";
   });
+  if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
 
   // Désactiver les filtres catégories si recherche active
   if (q) {
@@ -3910,6 +3911,7 @@ function afficherTout() {
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
   document.getElementById("btn-tout").classList.add("active");
   document.querySelectorAll(".carte").forEach(c => c.style.display = "");
+  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
 }
 
 // Toggle sous-menu générique
@@ -3953,6 +3955,7 @@ function filtrerCategorie(cat) {
   document.querySelectorAll(".carte").forEach(c => {
     c.style.display = (c.dataset.cat === cat) ? "" : "none";
   });
+  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
 }
 
 // Filtre par pays
@@ -3963,6 +3966,7 @@ function filtrerPays(pays) {
   document.querySelectorAll(".carte").forEach(c => {
     c.style.display = (c.dataset.pays === pays) ? "" : "none";
   });
+  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
 }
 
 // Calculer depuis une carte et afficher en modal
