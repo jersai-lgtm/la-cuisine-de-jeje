@@ -39,8 +39,15 @@ gtag('config', 'G-390C5MY2SS');
 
 <!-- HEADER -->
 <header>
-  <h1>👨‍🍳 La Cuisine de Jéjé</h1>
-  <p id="nb-recettes">🍽️ 212 recettes</p>
+  <div class="header-top">
+    <div>
+      <h1>👨‍🍳 La Cuisine de Jéjé</h1>
+      <p id="nb-recettes">🍽️ 212 recettes</p>
+    </div>
+    <div id="zone-utilisateur">
+      <button class="btn-connexion" onclick="ouvrirModalAuth()">👤 Connexion</button>
+    </div>
+  </div>
 </header>
 
 <!-- BARRE DE RECHERCHE -->
@@ -4352,6 +4359,29 @@ function afficherFavoris() {
 // Ajouter bouton favori dans la modale recette
 const _origChoisirRecette = typeof choisirRecette !== 'undefined' ? choisirRecette : null;
 </script>
-<script type="module" src="auth.js"></script>
+<!-- Firebase SDK compat -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script src="auth.js"></script>
+<script>
+// Fallback si module pas encore chargé
+function ouvrirModalAuthFallback() {
+  const m = document.getElementById('modal-auth');
+  if (m) m.classList.add('visible');
+}
+// Remplacer le bouton connexion par un qui marche même avant le module
+document.addEventListener('DOMContentLoaded', function() {
+  const zone = document.getElementById('zone-utilisateur');
+  if (zone && !zone.dataset.authLoaded) {
+    // Le bouton est déjà là, juste s'assurer que onclick marche
+    const btn = zone.querySelector('.btn-connexion');
+    if (btn) btn.onclick = function() {
+      if (typeof ouvrirModalAuth === 'function') ouvrirModalAuth();
+      else ouvrirModalAuthFallback();
+    };
+  }
+});
+</script>
 </body>
 </html>
