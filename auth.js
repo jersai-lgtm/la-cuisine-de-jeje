@@ -25,6 +25,10 @@ _auth.onAuthStateChanged(async function(user) {
   if (user) {
     await chargerProfil(user);
     afficherUtilisateurConnecte(user);
+    // Appliquer les préférences visuelles sur les cartes
+    setTimeout(() => {
+      if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
+    }, 500);
     if (!window.userProfile || !window.userProfile.foyer) {
       afficherOnboarding();
     }
@@ -168,6 +172,8 @@ window.sauvegarderProfilComplet = async function() {
 
   await window.sauvegarderProfil({ foyer, preferences });
 
+  // Rafraîchir les badges sur les cartes
+  if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
   const btn = document.getElementById("btn-sauvegarder-profil");
   if (btn) { btn.textContent = "✅ Sauvegardé !"; setTimeout(() => btn.textContent = "💾 Sauvegarder", 2000); }
 };
