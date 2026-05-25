@@ -61,6 +61,11 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 /* ==========================
    CARTES RECETTES
 ========================== */
+
+
+/* ==============================
+   GRILLE DES RECETTES
+============================== */
 .cartes {
   display: flex;
   flex-wrap: wrap;
@@ -69,17 +74,39 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
   padding: 20px 16px 100px;
 }
 
+/* section-cartes = même grille mais cachée par défaut */
 #section-cartes {
-  display: none; /* caché par défaut - affiché par JS */
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
   padding: 20px 16px 100px;
 }
-
 #section-cartes.visible {
   display: flex;
 }
+
+/* Tablette */
+@media (max-width: 600px) {
+  .cartes, #section-cartes.visible { gap: 10px; padding: 14px 10px 90px; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 12px 10px 90px;
+  }
+  #section-cartes.visible {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 12px 10px 90px;
+  }
+}
+
 .carte {
   width: 200px;
   background: rgba(20,20,20,.85);
@@ -471,8 +498,8 @@ select, input[type="number"] {
 ========================== */
 @media (max-width: 600px) {
   header h1       { font-size: 28px; }
-  .cartes { gap: 10px; padding: 14px 10px 90px; }
-  #section-cartes { gap: 10px; padding: 14px 10px 90px; }
+  
+  
   .carte          { width: 160px; }
   .carte img      { height: 130px; }
   .calculateur    { width: 90%; padding: 20px; }
@@ -482,12 +509,7 @@ select, input[type="number"] {
    CORRECTIF MOBILE CARTES
 ========================== */
 @media (max-width: 480px) {
-  .cartes, #section-cartes, #section-cartes[style*="block"] {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 12px 10px 90px;
-  }
+  
   .carte {
     width: 100%;
   }
@@ -509,11 +531,7 @@ select, input[type="number"] {
     padding: 6px;
     font-size: 13px;
   }
-  #section-cartes {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 10px !important;
-    padding: 12px 10px 90px !important;
-  }
+  
   .brioche-carte-choix {
     gap: 3px;
   }
