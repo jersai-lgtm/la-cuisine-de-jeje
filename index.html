@@ -60,6 +60,7 @@ gtag('config', 'G-390C5MY2SS');
 <!-- MENU PRINCIPAL -->
 <nav class="menu-cats">
   <button class="cat-btn active" id="btn-tout" onclick="afficherTout()">🍽️ Tout</button>
+  <button class="cat-btn cat-btn-favoris" id="btn-favoris" onclick="filtrerFavoris()">❤️ Favoris</button>
   <button class="cat-btn" id="btn-categories" onclick="toggleSousMenu('menu-categories', this)">🗂️ Catégories ▾</button>
   <button class="cat-btn" id="btn-monde" onclick="toggleSousMenu('menu-pays', this)">🌍 Monde ▾</button>
 </nav>
@@ -4147,20 +4148,20 @@ function afficherSection(section, btn) {
       </div>
     </div>
 
-    <div class="onboarding-section">
+        <div class="onboarding-section">
       <h3>🥗 Régimes alimentaires</h3>
       <div class="prefs-grid">
         <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="végétarien"> 🥦 Végétarien</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="pesco-végétarien"> 🐟 Pesco-végétarien</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="vegan"> 🌱 Vegan</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="protéiné"> 💪 Protéiné</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="sans-gluten"> 🌾 Sans gluten</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="sans-lactose"> 🥛 Sans lactose</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="halal"> ☪️ Halal</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="casher"> ✡️ Casher</label>
       </div>
     </div>
 
     <div class="onboarding-section">
-      <h3>⚠️ Allergies</h3>
+      <h3>⚠️ Allergies & Intolérances</h3>
       <div class="prefs-grid">
         <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="arachides"> 🥜 Arachides</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="fruits-à-coque"> 🌰 Fruits à coque</label>
@@ -4170,6 +4171,28 @@ function afficherSection(section, btn) {
         <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="poisson"> 🐟 Poisson</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="crustacés"> 🦐 Crustacés</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="soja"> 🫘 Soja</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="céleri"> 🌿 Céleri</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="moutarde"> 🟡 Moutarde</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="sésame"> 🌾 Sésame</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="sulfites"> 🍷 Sulfites</label>
+      </div>
+      <div class="allergie-search-wrapper">
+        <p class="allergie-search-label">🔍 Autre ingrédient à exclure</p>
+        <div class="allergie-search-row">
+          <input type="text" id="allergie-custom-input" class="auth-input allergie-input" placeholder="ex: avocat, noix de coco..." onkeydown="if(event.key==='Enter')ajouterAllergieCustom()">
+          <button class="btn-allergie-add" onclick="ajouterAllergieCustom()">+ Ajouter</button>
+        </div>
+        <div id="allergies-custom-liste" class="allergies-custom-tags"></div>
+      </div>
+    </div>
+
+    <div class="onboarding-section">
+      <h3>🎯 Vos objectifs</h3>
+      <div class="prefs-grid objectifs-grid">
+        <label class="pref-checkbox pref-objectif-label"><input type="checkbox" class="pref-objectif" value="découvrir"> 🌍 Découvrir de nouvelles recettes</label>
+        <label class="pref-checkbox pref-objectif-label"><input type="checkbox" class="pref-objectif" value="équilibré"> 🥗 Manger équilibré et de saison</label>
+        <label class="pref-checkbox pref-objectif-label"><input type="checkbox" class="pref-objectif" value="économique"> 💰 Payer moins cher</label>
+        <label class="pref-checkbox pref-objectif-label"><input type="checkbox" class="pref-objectif" value="moins-viande"> 🌱 Manger moins de viande</label>
       </div>
     </div>
 
@@ -4265,16 +4288,16 @@ function afficherSection(section, btn) {
 
     <!-- Préférences -->
     <div id="profil-tab-prefs" class="profil-tab-content" style="display:none">
-      <h4>🥗 Régimes</h4>
+            <h4>🥗 Régimes alimentaires</h4>
       <div class="prefs-grid">
         <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="végétarien"> 🥦 Végétarien</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="pesco-végétarien"> 🐟 Pesco-végétarien</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="vegan"> 🌱 Vegan</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="protéiné"> 💪 Protéiné</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="sans-gluten"> 🌾 Sans gluten</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="sans-lactose"> 🥛 Sans lactose</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="halal"> ☪️ Halal</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="casher"> ✡️ Casher</label>
       </div>
-      <h4 style="margin-top:16px">⚠️ Allergies</h4>
+      <h4 style="margin-top:16px">⚠️ Allergies & Intolérances</h4>
       <div class="prefs-grid">
         <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="arachides"> 🥜 Arachides</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="fruits-à-coque"> 🌰 Fruits à coque</label>
@@ -4284,6 +4307,25 @@ function afficherSection(section, btn) {
         <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="poisson"> 🐟 Poisson</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="crustacés"> 🦐 Crustacés</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="soja"> 🫘 Soja</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="céleri"> 🌿 Céleri</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="moutarde"> 🟡 Moutarde</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="sésame"> 🌾 Sésame</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="sulfites"> 🍷 Sulfites</label>
+      </div>
+      <div class="allergie-search-wrapper">
+        <p class="allergie-search-label">🔍 Autre ingrédient à exclure</p>
+        <div class="allergie-search-row">
+          <input type="text" id="allergie-custom-input" class="auth-input allergie-input" placeholder="ex: avocat, noix de coco..." onkeydown="if(event.key==='Enter')ajouterAllergieCustom()">
+          <button class="btn-allergie-add" onclick="ajouterAllergieCustom()">+ Ajouter</button>
+        </div>
+        <div id="allergies-custom-liste" class="allergies-custom-tags"></div>
+      </div>
+      <h4 style="margin-top:16px">🎯 Vos objectifs</h4>
+      <div class="prefs-grid objectifs-grid">
+        <label class="pref-checkbox pref-objectif-label"><input type="checkbox" class="pref-objectif" value="découvrir"> 🌍 Découvrir de nouvelles recettes</label>
+        <label class="pref-checkbox pref-objectif-label"><input type="checkbox" class="pref-objectif" value="équilibré"> 🥗 Manger équilibré et de saison</label>
+        <label class="pref-checkbox pref-objectif-label"><input type="checkbox" class="pref-objectif" value="économique"> 💰 Payer moins cher</label>
+        <label class="pref-checkbox pref-objectif-label"><input type="checkbox" class="pref-objectif" value="moins-viande"> 🌱 Manger moins de viande</label>
       </div>
       <h4 style="margin-top:16px">🌍 Cuisines préférées</h4>
       <div class="prefs-grid">
@@ -4296,11 +4338,11 @@ function afficherSection(section, btn) {
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="africaine"> 🌍 Africaine</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="américaine"> 🇺🇸 Américaine</label>
       </div>
-      <h4 style="margin-top:16px">👨‍🍳 Niveau</h4>
+      <h4 style="margin-top:16px">👨‍🍳 Niveau en cuisine</h4>
       <select id="p-niveau" class="auth-input">
-        <option value="débutant">🌱 Débutant</option>
-        <option value="intermédiaire">⭐ Intermédiaire</option>
-        <option value="confirmé">🔥 Confirmé</option>
+        <option value="débutant">🌱 Débutant — recettes simples</option>
+        <option value="intermédiaire">⭐ Intermédiaire — j'aime cuisiner</option>
+        <option value="confirmé">🔥 Confirmé — aucun défi ne me fait peur</option>
       </select>
     </div>
 
@@ -4317,7 +4359,84 @@ function afficherSection(section, btn) {
 </div>
 
 <script>
+// ==============================
+// FAVORIS
+// ==============================
+function filtrerFavoris() {
+  // Activer le bouton
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  const btn = document.getElementById('btn-favoris');
+  if (btn) btn.classList.add('active');
+
+  // Si non connecté
+  if (!window.currentUser) {
+    ouvrirModalAuth();
+    return;
+  }
+
+  const favs = window.userProfile?.favoris || [];
+  const cartes = document.querySelectorAll('.carte');
+  let count = 0;
+  cartes.forEach(c => {
+    const onclick = c.getAttribute('onclick') || '';
+    const match = onclick.match(/ouvrirFiche\('([^']+)'/);
+    const key = match ? match[1] : null;
+    if (key && favs.includes(key)) {
+      c.style.display = 'flex';
+      count++;
+    } else {
+      c.style.display = 'none';
+    }
+  });
+
+  // Message si aucun favori
+  let msg = document.getElementById('msg-no-favoris');
+  if (count === 0) {
+    if (!msg) {
+      msg = document.createElement('p');
+      msg.id = 'msg-no-favoris';
+      msg.style.cssText = 'text-align:center;color:#888;padding:40px;grid-column:1/-1;font-size:15px';
+      msg.innerHTML = '❤️ Aucun favori pour l'instant.<br><small>Appuie sur 🤍 dans une recette pour l'ajouter !</small>';
+      document.getElementById('recettes-grid')?.appendChild(msg);
+    }
+  } else {
+    if (msg) msg.remove();
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ==============================
+// ALLERGIES CUSTOM
+// ==============================
+window._allergiesCustom = [];
+
+function ajouterAllergieCustom() {
+  const input = document.getElementById('allergie-custom-input');
+  if (!input) return;
+  const val = input.value.trim().toLowerCase();
+  if (!val) return;
+  if (window._allergiesCustom.includes(val)) { input.value = ''; return; }
+  window._allergiesCustom.push(val);
+  input.value = '';
+  renderAllergiesCustom();
+}
+
+function renderAllergiesCustom() {
+  const liste = document.getElementById('allergies-custom-liste');
+  if (!liste) return;
+  liste.innerHTML = window._allergiesCustom.map(a =>
+    `<span class="allergie-tag">${a} <button onclick="retirerAllergieCustom('${a}')">✕</button></span>`
+  ).join('');
+}
+
+function retirerAllergieCustom(val) {
+  window._allergiesCustom = window._allergiesCustom.filter(a => a !== val);
+  renderAllergiesCustom();
+}
+
+// ==============================
 // Compteur +/-
+// ==============================
 function changerCompteur(id, delta) {
   const el = document.getElementById(id);
   if (!el) return;
