@@ -1033,3 +1033,89 @@ select, input[type="number"] {
   transition: transform .2s;
 }
 .btn-favori-recette:hover { transform: scale(1.2); }
+
+/* ==============================
+   FAVORIS & ALLERGIES CUSTOM
+============================== */
+
+/* Bouton favoris dans la nav — mis en évidence */
+.cat-btn-favoris {
+  background: linear-gradient(135deg, rgba(255,77,136,.25), rgba(255,143,179,.15)) !important;
+  color: #ff4d88 !important;
+  border-color: rgba(255,77,136,.5) !important;
+  font-weight: 700;
+}
+.cat-btn-favoris.active,
+.cat-btn-favoris:hover {
+  background: linear-gradient(135deg, #ff4d88, #ff8fb3) !important;
+  color: #fff !important;
+}
+
+/* Barre recherche allergie */
+.allergie-search-wrapper {
+  margin-top: 14px;
+}
+.allergie-search-label {
+  color: #aaa;
+  font-size: 12px;
+  margin: 0 0 8px;
+}
+.allergie-search-row {
+  display: flex;
+  gap: 8px;
+}
+.allergie-input {
+  flex: 1;
+  margin-bottom: 0 !important;
+  padding: 10px 14px !important;
+  font-size: 13px !important;
+}
+.btn-allergie-add {
+  background: linear-gradient(135deg, #ff4d88, #ff8fb3);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: .2s;
+}
+.btn-allergie-add:hover { opacity: .85; }
+
+/* Tags allergies custom */
+.allergies-custom-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.allergie-tag {
+  background: rgba(255,77,136,.15);
+  border: 1px solid rgba(255,77,136,.4);
+  color: #ff8fb3;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.allergie-tag button {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Objectifs — pleine largeur */
+.objectifs-grid {
+  grid-template-columns: 1fr !important;
+}
+.pref-objectif-label {
+  padding: 10px 14px !important;
+}
