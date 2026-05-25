@@ -61,7 +61,7 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 /* ==========================
    CARTES RECETTES
 ========================== */
-.cartes {
+.cartes, #section-cartes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
