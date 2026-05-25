@@ -4114,7 +4114,11 @@ function basculeVersGrille() {
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   if (secAccueil) secAccueil.style.display = "none";
-  if (secCartes)  secCartes.classList.add("visible");
+  if (secCartes) {
+    secCartes.classList.add("visible");
+    // S'assurer que le style inline ne bloque pas
+    secCartes.style.display = "";
+  }
 }
 function filtrerCategorie(cat) {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -4182,7 +4186,7 @@ function afficherSection(section, btn) {
 
   if (section === "calculateur") {
     calc.style.display = "block";
-    if (cartes)     cartes.style.display     = "none";
+    if (cartes)     { cartes.classList.remove("visible"); }
     if (accueilSec) accueilSec.style.display = "none";
     menuCats.style.display = "none";
     planif.style.display = "none";
@@ -4191,7 +4195,7 @@ function afficherSection(section, btn) {
     document.getElementById("menu-pays").style.display = "none";
   } else if (section === "planificateur") {
     calc.style.display = "none";
-    if (cartes)     cartes.style.display     = "none";
+    if (cartes)     { cartes.classList.remove("visible"); }
     if (accueilSec) accueilSec.style.display = "none";
     menuCats.style.display = "none";
     searchBar.style.display = "none";
@@ -4222,7 +4226,7 @@ function afficherSection(section, btn) {
     searchBar.style.display = "flex";
     // Retour vers l'accueil personnalisé
     if (accueilSec) accueilSec.style.display = "block";
-    if (cartes)     cartes.style.display     = "none";
+    if (cartes) { cartes.classList.remove("visible"); } // ← retirer visible !
     if (typeof chargerAccueil === "function") chargerAccueil();
     document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
     const btnA = document.getElementById("btn-accueil");
