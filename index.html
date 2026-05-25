@@ -2785,6 +2785,7 @@ gtag('config', 'G-390C5MY2SS');
 <div id="modal-calc" class="modal-calc" onclick="fermerModal()">
   <div class="modal-contenu fiche-complete" onclick="event.stopPropagation()">
     <button class="modal-fermer" onclick="fermerModal()">✕</button>
+    <button id="btn-favori-modal" class="btn-favori-recette" onclick="ouvrirModalAuth()">🤍</button>
     <div id="modal-resultat"></div>
   </div>
 </div>
@@ -4047,5 +4048,310 @@ function afficherSection(section, btn) {
     if (el && nb > 0) el.textContent = '🍽️ ' + nb + ' recettes';
   });
 </script>
+
+<!-- ==============================
+     MODAL AUTH (Connexion/Inscription)
+================================ -->
+<div id="modal-auth" class="modal-auth-overlay" onclick="if(event.target===this)fermerModalAuth()">
+  <div class="modal-auth-box">
+    <button class="modal-fermer" onclick="fermerModalAuth()">✕</button>
+    <div class="auth-logo">🍳</div>
+    <h2 class="auth-titre">La Cuisine de Jéjé</h2>
+
+    <!-- Tabs -->
+    <div class="auth-tabs">
+      <button id="tab-btn-connexion" class="auth-tab-btn active" onclick="switchAuthTab('connexion')">Connexion</button>
+      <button id="tab-btn-inscription" class="auth-tab-btn" onclick="switchAuthTab('inscription')">Créer un compte</button>
+    </div>
+
+    <div id="auth-erreur" class="auth-erreur" style="display:none"></div>
+
+    <!-- Bouton Google (commun) -->
+    <button class="btn-google" onclick="connexionGoogle()">
+      <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z"/><path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/><path fill="#FBBC05" d="M3.964 10.706c-.18-.54-.282-1.117-.282-1.706s.102-1.166.282-1.706V4.962H.957C.347 6.175 0 7.55 0 9s.348 2.825.957 4.038l3.007-2.332z"/><path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.962L3.964 7.294C4.672 5.167 6.656 3.58 9 3.58z"/></svg>
+      Continuer avec Google
+    </button>
+
+    <div class="auth-separateur"><span>ou</span></div>
+
+    <!-- Connexion Email -->
+    <div id="auth-tab-connexion">
+      <input id="auth-email-login" class="auth-input" type="email" placeholder="Email">
+      <input id="auth-mdp-login" class="auth-input" type="password" placeholder="Mot de passe" onkeydown="if(event.key==='Enter')connecterEmail()">
+      <button class="btn-auth-submit" onclick="connecterEmail()">Se connecter</button>
+      <p class="auth-switch">Pas encore de compte ? <a onclick="switchAuthTab('inscription')">Créer un compte</a></p>
+    </div>
+
+    <!-- Inscription Email -->
+    <div id="auth-tab-inscription" style="display:none">
+      <input id="auth-prenom" class="auth-input" type="text" placeholder="Ton prénom">
+      <input id="auth-email" class="auth-input" type="email" placeholder="Email">
+      <input id="auth-mdp" class="auth-input" type="password" placeholder="Mot de passe (6 car. min)" onkeydown="if(event.key==='Enter')inscrireEmail()">
+      <button class="btn-auth-submit" onclick="inscrireEmail()">Créer mon compte</button>
+      <p class="auth-switch">Déjà un compte ? <a onclick="switchAuthTab('connexion')">Se connecter</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ==============================
+     MODAL ONBOARDING (premier accès)
+================================ -->
+<div id="modal-onboarding" class="modal-auth-overlay">
+  <div class="modal-auth-box modal-onboarding-box">
+    <div class="auth-logo">👨‍👩‍👧‍👦</div>
+    <h2 class="auth-titre">Bienvenue ! Dis-moi qui tu es</h2>
+    <p class="onboarding-sous-titre">Ces infos personnalisent tes menus et portions</p>
+
+    <div class="onboarding-section">
+      <h3>🏠 Ton foyer</h3>
+      <div class="foyer-grid">
+        <div class="foyer-item">
+          <label>👨‍🦳 Adultes</label>
+          <div class="counter-row">
+            <button onclick="changerCompteur('p-adultes',-1)">−</button>
+            <input id="p-adultes" type="number" value="2" min="1" max="10" readonly>
+            <button onclick="changerCompteur('p-adultes',1)">+</button>
+          </div>
+        </div>
+        <div class="foyer-item">
+          <label>🧑‍🦱 Ados (13-17 ans)</label>
+          <div class="counter-row">
+            <button onclick="changerCompteur('p-ados',-1)">−</button>
+            <input id="p-ados" type="number" value="0" min="0" max="10" readonly>
+            <button onclick="changerCompteur('p-ados',1)">+</button>
+          </div>
+        </div>
+        <div class="foyer-item">
+          <label>🧒 Enfants (3-12 ans)</label>
+          <div class="counter-row">
+            <button onclick="changerCompteur('p-enfants',-1)">−</button>
+            <input id="p-enfants" type="number" value="0" min="0" max="10" readonly>
+            <button onclick="changerCompteur('p-enfants',1)">+</button>
+          </div>
+        </div>
+        <div class="foyer-item">
+          <label>👶 Bébés (0-2 ans)</label>
+          <div class="counter-row">
+            <button onclick="changerCompteur('p-bebe',-1)">−</button>
+            <input id="p-bebe" type="number" value="0" min="0" max="5" readonly>
+            <button onclick="changerCompteur('p-bebe',1)">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="onboarding-section">
+      <h3>🥗 Régimes alimentaires</h3>
+      <div class="prefs-grid">
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="végétarien"> 🥦 Végétarien</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="vegan"> 🌱 Vegan</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="sans-gluten"> 🌾 Sans gluten</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="sans-lactose"> 🥛 Sans lactose</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="halal"> ☪️ Halal</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="casher"> ✡️ Casher</label>
+      </div>
+    </div>
+
+    <div class="onboarding-section">
+      <h3>⚠️ Allergies</h3>
+      <div class="prefs-grid">
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="arachides"> 🥜 Arachides</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="fruits-à-coque"> 🌰 Fruits à coque</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="lait"> 🥛 Lait</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="œufs"> 🥚 Œufs</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="gluten"> 🌾 Gluten</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="poisson"> 🐟 Poisson</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="crustacés"> 🦐 Crustacés</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="soja"> 🫘 Soja</label>
+      </div>
+    </div>
+
+    <div class="onboarding-section">
+      <h3>🌍 Cuisines préférées</h3>
+      <div class="prefs-grid">
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="française"> 🇫🇷 Française</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="italienne"> 🇮🇹 Italienne</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="asiatique"> 🥢 Asiatique</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="mexicaine"> 🇲🇽 Mexicaine</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="indienne"> 🇮🇳 Indienne</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="méditerranéenne"> 🫒 Méditerranéenne</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="africaine"> 🌍 Africaine</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="américaine"> 🇺🇸 Américaine</label>
+      </div>
+    </div>
+
+    <div class="onboarding-section">
+      <h3>👨‍🍳 Niveau en cuisine</h3>
+      <select id="p-niveau" class="auth-input">
+        <option value="débutant">🌱 Débutant — recettes simples</option>
+        <option value="intermédiaire">⭐ Intermédiaire — j'aime cuisiner</option>
+        <option value="confirmé">🔥 Confirmé — aucun défi ne me fait peur</option>
+      </select>
+    </div>
+
+    <button class="btn-auth-submit btn-onboarding-valider" onclick="terminerOnboarding()">
+      🍽️ Commencer à cuisiner !
+    </button>
+    <p style="text-align:center;margin-top:10px;font-size:12px;color:#888">
+      <a onclick="fermerOnboarding()" style="cursor:pointer;color:#ff8fb3">Passer pour l'instant</a>
+    </p>
+  </div>
+</div>
+
+<!-- ==============================
+     MODAL PROFIL (modifier)
+================================ -->
+<div id="modal-profil" class="modal-auth-overlay" onclick="if(event.target===this)fermerModalProfil()">
+  <div class="modal-auth-box modal-profil-box">
+    <button class="modal-fermer" onclick="fermerModalProfil()">✕</button>
+    <div class="profil-header">
+      <div class="auth-logo">👤</div>
+      <div>
+        <div id="profil-prenom" class="profil-nom"></div>
+        <div id="profil-email" class="profil-email-txt"></div>
+      </div>
+    </div>
+
+    <div class="profil-tabs">
+      <button class="profil-tab-btn active" onclick="switchProfilTab('foyer',this)">🏠 Foyer</button>
+      <button class="profil-tab-btn" onclick="switchProfilTab('prefs',this)">🥗 Préférences</button>
+      <button class="profil-tab-btn" onclick="switchProfilTab('favoris',this)">❤️ Favoris</button>
+    </div>
+
+    <!-- Foyer -->
+    <div id="profil-tab-foyer" class="profil-tab-content">
+      <div class="foyer-grid">
+        <div class="foyer-item">
+          <label>👨‍🦳 Adultes</label>
+          <div class="counter-row">
+            <button onclick="changerCompteur('p-adultes',-1)">−</button>
+            <input id="p-adultes" type="number" value="2" min="1" max="10" readonly>
+            <button onclick="changerCompteur('p-adultes',1)">+</button>
+          </div>
+        </div>
+        <div class="foyer-item">
+          <label>🧑‍🦱 Ados (13-17 ans)</label>
+          <div class="counter-row">
+            <button onclick="changerCompteur('p-ados',-1)">−</button>
+            <input id="p-ados" type="number" value="0" min="0" max="10" readonly>
+            <button onclick="changerCompteur('p-ados',1)">+</button>
+          </div>
+        </div>
+        <div class="foyer-item">
+          <label>🧒 Enfants (3-12 ans)</label>
+          <div class="counter-row">
+            <button onclick="changerCompteur('p-enfants',-1)">−</button>
+            <input id="p-enfants" type="number" value="0" min="0" max="10" readonly>
+            <button onclick="changerCompteur('p-enfants',1)">+</button>
+          </div>
+        </div>
+        <div class="foyer-item">
+          <label>👶 Bébés (0-2 ans)</label>
+          <div class="counter-row">
+            <button onclick="changerCompteur('p-bebe',-1)">−</button>
+            <input id="p-bebe" type="number" value="0" min="0" max="5" readonly>
+            <button onclick="changerCompteur('p-bebe',1)">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Préférences -->
+    <div id="profil-tab-prefs" class="profil-tab-content" style="display:none">
+      <h4>🥗 Régimes</h4>
+      <div class="prefs-grid">
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="végétarien"> 🥦 Végétarien</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="vegan"> 🌱 Vegan</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="sans-gluten"> 🌾 Sans gluten</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="sans-lactose"> 🥛 Sans lactose</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="halal"> ☪️ Halal</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-regime" value="casher"> ✡️ Casher</label>
+      </div>
+      <h4 style="margin-top:16px">⚠️ Allergies</h4>
+      <div class="prefs-grid">
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="arachides"> 🥜 Arachides</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="fruits-à-coque"> 🌰 Fruits à coque</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="lait"> 🥛 Lait</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="œufs"> 🥚 Œufs</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="gluten"> 🌾 Gluten</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="poisson"> 🐟 Poisson</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="crustacés"> 🦐 Crustacés</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-allergie" value="soja"> 🫘 Soja</label>
+      </div>
+      <h4 style="margin-top:16px">🌍 Cuisines préférées</h4>
+      <div class="prefs-grid">
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="française"> 🇫🇷 Française</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="italienne"> 🇮🇹 Italienne</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="asiatique"> 🥢 Asiatique</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="mexicaine"> 🇲🇽 Mexicaine</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="indienne"> 🇮🇳 Indienne</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="méditerranéenne"> 🫒 Méditerranéenne</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="africaine"> 🌍 Africaine</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="américaine"> 🇺🇸 Américaine</label>
+      </div>
+      <h4 style="margin-top:16px">👨‍🍳 Niveau</h4>
+      <select id="p-niveau" class="auth-input">
+        <option value="débutant">🌱 Débutant</option>
+        <option value="intermédiaire">⭐ Intermédiaire</option>
+        <option value="confirmé">🔥 Confirmé</option>
+      </select>
+    </div>
+
+    <!-- Favoris -->
+    <div id="profil-tab-favoris" class="profil-tab-content" style="display:none">
+      <div id="liste-favoris" class="favoris-liste"></div>
+    </div>
+
+    <div class="profil-footer">
+      <button id="btn-sauvegarder-profil" class="btn-auth-submit" onclick="sauvegarderProfilComplet()">💾 Sauvegarder</button>
+      <button class="btn-deconnexion" onclick="deconnexion()">🚪 Déconnexion</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Compteur +/-
+function changerCompteur(id, delta) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const val = parseInt(el.value) + delta;
+  const min = parseInt(el.min) || 0;
+  const max = parseInt(el.max) || 99;
+  el.value = Math.min(max, Math.max(min, val));
+}
+
+// Tabs profil
+function switchProfilTab(tab, btn) {
+  document.querySelectorAll('.profil-tab-content').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.profil-tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('profil-tab-' + tab).style.display = 'block';
+  btn.classList.add('active');
+  if (tab === 'favoris') afficherFavoris();
+}
+
+// Afficher favoris
+function afficherFavoris() {
+  const liste = document.getElementById('liste-favoris');
+  if (!liste) return;
+  const favs = window.userProfile?.favoris || [];
+  if (favs.length === 0) {
+    liste.innerHTML = '<p style="text-align:center;color:#888;padding:20px">Aucun favori pour l'instant.<br>Appuie sur 🤍 dans une recette pour l'ajouter !</p>';
+    return;
+  }
+  liste.innerHTML = favs.map(key => {
+    const nom = (typeof getNomRecette === 'function' ? getNomRecette(key) : key);
+    const data = typeof recettes !== 'undefined' ? recettes[key] : null;
+    const emoji = data?.emoji || '🍽️';
+    return `<div class="favori-item" onclick="fermerModalProfil();choisirRecette('${key}')">
+      <span>${emoji} ${nom}</span>
+      <button onclick="event.stopPropagation();toggleFavori('${key}');afficherFavoris()" class="btn-retirer-favori">✕</button>
+    </div>`;
+  }).join('');
+}
+
+// Ajouter bouton favori dans la modale recette
+const _origChoisirRecette = typeof choisirRecette !== 'undefined' ? choisirRecette : null;
+</script>
+<script type="module" src="auth.js"></script>
 </body>
 </html>
