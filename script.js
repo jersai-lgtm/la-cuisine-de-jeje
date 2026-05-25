@@ -140,7 +140,7 @@ function afficherAccueil() {
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   if (secAccueil) secAccueil.style.display = "block";
-  if (secCartes)  secCartes.style.display  = "none";
+  if (secCartes)  secCartes.style.display = "none"; secCartes.classList.remove("visible");
 
   chargerAccueil();
 }
@@ -271,7 +271,7 @@ function afficherHistorique() {
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   if (secAccueil) secAccueil.style.display = "none";
-  if (secCartes)  secCartes.style.display  = "";
+  if (secCartes) { secCartes.style.display = "flex"; secCartes.classList.add("visible"); };
 
   const recents = window._recentsVus || [];
   const cartes  = document.querySelectorAll(".carte");
@@ -294,7 +294,7 @@ function filtrerFavoris() {
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   if (secAccueil) secAccueil.style.display = "none";
-  if (secCartes)  secCartes.style.display  = "";
+  if (secCartes) { secCartes.style.display = "flex"; secCartes.classList.add("visible"); };
 
   const favs = window.userProfile?.favoris || [];
   const cartes = document.querySelectorAll('.carte');
