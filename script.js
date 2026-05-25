@@ -271,7 +271,7 @@ function afficherHistorique() {
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   if (secAccueil) secAccueil.style.display = "none";
-  if (secCartes)  secCartes.style.display  = "flex";
+  if (secCartes)  secCartes.style.display  = "";
 
   const recents = window._recentsVus || [];
   const cartes  = document.querySelectorAll(".carte");
@@ -294,7 +294,7 @@ function filtrerFavoris() {
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   if (secAccueil) secAccueil.style.display = "none";
-  if (secCartes)  secCartes.style.display  = "flex";
+  if (secCartes)  secCartes.style.display  = "";
 
   const favs = window.userProfile?.favoris || [];
   const cartes = document.querySelectorAll('.carte');
