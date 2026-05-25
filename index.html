@@ -42,7 +42,7 @@ gtag('config', 'G-390C5MY2SS');
   <div class="header-top">
     <div>
       <h1>👨‍🍳 La Cuisine de Jéjé</h1>
-      <p id="nb-recettes">🍽️ 236 recettes</p>
+      <p id="nb-recettes">🍽️ 235 recettes</p>
     </div>
     <div id="zone-utilisateur">
       <button class="btn-connexion" onclick="ouvrirModalAuth()">👤 Connexion</button>
@@ -134,7 +134,10 @@ gtag('config', 'G-390C5MY2SS');
   <div class="accueil-bloc" id="accueil-recents-bloc">
     <div class="accueil-bloc-header">
       <h2>🕐 Dernières recettes vues</h2>
-      <button class="accueil-voir-plus" onclick="afficherTout()">Tout voir →</button>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="accueil-voir-plus" onclick="effacerRecents()" style="color:#ff6b6b;">🗑️ Effacer</button>
+        <button class="accueil-voir-plus" onclick="afficherHistorique()">Tout voir →</button>
+      </div>
     </div>
     <div class="accueil-scroll-row" id="accueil-recents-row">
       <div class="accueil-empty">Aucune recette vue récemment</div>
@@ -2837,18 +2840,6 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('pouletcurrynoixdecoco', 'calc-pouletcurrynoixdecoco')">
-    <img src="images/pouletcurrynoixdecoco.webp" alt="Poulet Curry Noix de Coco">
-    <div class="carte-info">
-      <h2>🥥 Poulet Curry Noix de Coco</h2>
-      <p>⏱ 40 min • ⭐ Facile</p>
-      <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pouletcurrynoixdecoco">
-        <button class="calc-btn" onclick="calculerCarte('pouletcurrynoixdecoco', 'calc-pouletcurrynoixdecoco')">Calculer</button>
-      </div>
-    </div>
-  </div>
-
   <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('financiers', 'calc-financiers')">
     <img src="images/financiers.webp" alt="Financiers aux Amandes">
     <div class="carte-info">
@@ -3368,7 +3359,6 @@ gtag('config', 'G-390C5MY2SS');
     <option value="sauteporc">Sauté de Porc aux Légumes</option>
     <option value="veloutecourgette">Velouté de Courgettes</option>
     <option value="ratatouille">Ratatouille Provençale</option>
-    <option value="pouletcurrynoixdecoco">Poulet Curry Noix de Coco</option>
     <option value="financiers">Financiers aux Amandes</option>
     <option value="choufleurgratin">Gratin de Chou-fleur</option>
     <option value="salmongrillee">Saumon Grillé au Citron</option>
@@ -4172,7 +4162,6 @@ function getNomRecette(key) {
     "sauteporc": "Sauté de Porc aux Légumes",
     "veloutecourgette": "Velouté de Courgettes",
     "ratatouille": "Ratatouille Provençale",
-    "pouletcurrynoixdecoco": "Poulet Curry Noix de Coco",
     "financiers": "Financiers aux Amandes",
     "choufleurgratin": "Gratin de Chou-fleur",
     "salmongrillee": "Saumon Grillé au Citron",
