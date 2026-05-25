@@ -4056,7 +4056,13 @@ function afficherTout() {
   window.scrollTo({ top: 0, behavior: "smooth" });
   fermerSousMenus();
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
-  document.getElementById("btn-tout").classList.add("active");
+  const btnTout = document.getElementById("btn-tout");
+  if (btnTout) btnTout.classList.add("active");
+  // Basculer vers la grille
+  const secAccueil = document.getElementById("section-accueil");
+  const secCartes  = document.getElementById("section-cartes");
+  if (secAccueil) secAccueil.style.display = "none";
+  if (secCartes)  secCartes.classList.add("visible");
   document.querySelectorAll(".carte").forEach(c => c.style.display = "");
   if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
 }
@@ -4102,8 +4108,17 @@ function fermerSousMenus() {
 }
 
 // Filtre catégories (depuis sous-menu)
+
+// Utilitaire : basculer vers la grille des recettes
+function basculeVersGrille() {
+  const secAccueil = document.getElementById("section-accueil");
+  const secCartes  = document.getElementById("section-cartes");
+  if (secAccueil) secAccueil.style.display = "none";
+  if (secCartes)  secCartes.classList.add("visible");
+}
 function filtrerCategorie(cat) {
   window.scrollTo({ top: 0, behavior: "smooth" });
+  basculeVersGrille();
   document.querySelectorAll("#menu-categories .pays-btn").forEach(b => b.classList.remove("active"));
   event.target.classList.add("active");
   document.querySelectorAll(".carte").forEach(c => {
@@ -4115,6 +4130,7 @@ function filtrerCategorie(cat) {
 // Filtre par pays
 function filtrerPays(pays) {
   window.scrollTo({ top: 0, behavior: "smooth" });
+  basculeVersGrille();
   document.querySelectorAll("#menu-pays .pays-btn").forEach(b => b.classList.remove("active"));
   event.target.classList.add("active");
   document.querySelectorAll(".carte").forEach(c => {
