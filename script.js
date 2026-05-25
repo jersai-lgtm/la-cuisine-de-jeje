@@ -206,7 +206,13 @@ function chargerAccueilRecents() {
     row.innerHTML = `<div class="accueil-empty">Aucune recette vue récemment</div>`;
     return;
   }
-  row.innerHTML = recents.slice(0, 10).map(key => miniCarte(key)).join("");
+  row.innerHTML = recents.slice(0, 20).map(key => miniCarte(key)).join("");
+}
+
+function effacerRecents() {
+  window._recentsVus = [];
+  try { localStorage.removeItem("recentsVus"); } catch(e) {}
+  chargerAccueilRecents();
 }
 
 // Suggestions selon profil
@@ -6584,34 +6590,6 @@ const recettes = {
     ]
   },
 
-  pouletcurrynoixdecoco: {
-    base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🥥",
-    description: "Poulet au Curry et Noix de Coco — filets de poulet dans une sauce crémeuse curry-coco avec poivrons et coriandre. Doux et parfumé.",
-    tableauPouletCurryNoix: [
-      { nb:  1, poulet: "150 g", coco: "100 ml", curry: "1 c.à.c",  poivron: "¼", coriandre: "¼ botte" },
-      { nb:  2, poulet: "300 g", coco: "200 ml", curry: "2 c.à.c",  poivron: "½", coriandre: "½ botte" },
-      { nb:  3, poulet: "450 g", coco: "300 ml", curry: "3 c.à.c",  poivron: "¾", coriandre: "½ botte" },
-      { nb:  4, poulet: "600 g", coco: "400 ml", curry: "4 c.à.c",  poivron: "1", coriandre: "1 botte"  },
-      { nb:  5, poulet: "750 g", coco: "500 ml", curry: "5 c.à.c",  poivron: "1", coriandre: "1 botte"  },
-      { nb:  6, poulet: "900 g", coco: "600 ml", curry: "6 c.à.c",  poivron: "2", coriandre: "1 botte"  },
-      { nb:  7, poulet: "1050 g",coco: "700 ml", curry: "7 c.à.c",  poivron: "2", coriandre: "1½ botte" },
-      { nb:  8, poulet: "1200 g",coco: "800 ml", curry: "8 c.à.c",  poivron: "2", coriandre: "1½ botte" },
-      { nb:  9, poulet: "1350 g",coco: "900 ml", curry: "9 c.à.c",  poivron: "3", coriandre: "2 bottes" },
-      { nb: 10, poulet: "1500 g",coco: "1 L",    curry: "10 c.à.c", poivron: "3", coriandre: "2 bottes" },
-      { nb: 11, poulet: "1650 g",coco: "1.1 L",  curry: "11 c.à.c", poivron: "3", coriandre: "2 bottes" },
-      { nb: 12, poulet: "1800 g",coco: "1.2 L",  curry: "12 c.à.c", poivron: "4", coriandre: "2 bottes" },
-      { nb: 13, poulet: "1950 g",coco: "1.3 L",  curry: "13 c.à.c", poivron: "4", coriandre: "3 bottes" },
-      { nb: 14, poulet: "2100 g",coco: "1.4 L",  curry: "14 c.à.c", poivron: "4", coriandre: "3 bottes" },
-      { nb: 15, poulet: "2250 g",coco: "1.5 L",  curry: "15 c.à.c", poivron: "5", coriandre: "3 bottes" },
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍗", titre: "Dorer le poulet",        detail: "Faire dorer les filets en morceaux dans huile d'olive. Réserver.", badge: "⏱ 6 min" },
-      { icone: "🌶️", titre: "Base curry",            detail: "Faire revenir oignon, ail, gingembre. Ajouter poudre de curry, curcuma et cumin.", badge: null },
-      { icone: "🥥", titre: "Sauce coco",             detail: "Ajouter lait de coco, poivrons et le poulet. Mijoter à feu doux.", badge: "⏱ 25 min" },
-      { icone: "🌿", titre: "Finir",                  detail: "Garnir de coriandre fraîche. Servir avec riz basmati.", badge: null },
-    ]
-  },
 
   financiers: {
     base: 12, temps: "25 min", niveau: "⭐ Facile", emoji: "🟡",
@@ -8734,7 +8712,6 @@ function initTablesGlobales() {
     "sauteporc": { table: "tableauSautePorc", fn: htmlTableauSautePorcColonnes, label: "personne" },
     "veloutecourgette": { table: "tableauVelouteCourgette", fn: htmlTableauVelouteCorgetteColonnes, label: "personne" },
     "ratatouille": { table: "tableauRatatouille", fn: htmlTableauRatatouilleColonnes, label: "personne" },
-    "pouletcurrynoixdecoco": { table: "tableauPouletCurryNoix", fn: htmlTableauPouletCurryNoixColonnes, label: "personne" },
     "financiers": { table: "tableauFinanciers", fn: htmlTableauFinanciersColonnes, label: "financier" },
     "choufleurgratin": { table: "tableauChoufleurGratin", fn: htmlTableauChoufleurGratinColonnes, label: "personne" },
     "salmongrillee": { table: "tableauSalmonGrillee", fn: htmlTableauSalmonGrilleeColonnes, label: "personne" },
@@ -11604,7 +11581,6 @@ function choisirRecette(nom) {
     "sauteporc": "Sauté de Porc aux Légumes",
     "veloutecourgette": "Velouté de Courgettes",
     "ratatouille": "Ratatouille Provençale",
-    "pouletcurrynoixdecoco": "Poulet Curry Noix de Coco",
     "financiers": "Financiers aux Amandes",
     "choufleurgratin": "Gratin de Chou-fleur",
     "salmongrillee": "Saumon Grillé au Citron",
