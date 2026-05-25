@@ -154,7 +154,7 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- CARTES RECETTES -->
-<section class="cartes" id="section-cartes" class="cartes" style="display:none">
+<section class="cartes" id="section-cartes" style="display:none">
 
   <div class="carte" data-pays="italie" data-cat="boulangerie" onclick="ouvrirFiche('pizza', 'calc-pizza')">
     <img src="images/patepizza.webp" alt="Pâte à pizza">
@@ -3992,7 +3992,7 @@ function rechercherRecette(query) {
     const secAccueil = document.getElementById("section-accueil");
     const secCartes  = document.getElementById("section-cartes");
     if (secAccueil) secAccueil.style.display = "none";
-    if (secCartes)  secCartes.style.display  = "";
+    if (secCartes) { secCartes.style.display = "flex"; secCartes.classList.add("visible"); };
     document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
   } else {
     // Si on efface la recherche → retour accueil
@@ -4058,7 +4058,7 @@ function toggleSousMenu(menuId, btn) {
     const secAccueil = document.getElementById("section-accueil");
     const secCartes  = document.getElementById("section-cartes");
     if (secAccueil) secAccueil.style.display = "none";
-    if (secCartes)  { secCartes.style.display = ""; }
+    if (secCartes) { secCartes.style.display = "flex"; secCartes.classList.add("visible"); }
     // Tout afficher dans la grille
     document.querySelectorAll(".carte").forEach(c => c.style.display = "");
     if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
