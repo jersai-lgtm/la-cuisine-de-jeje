@@ -1,18 +1,19 @@
-const CACHE_NAME = "cuisine-jeje-v27";
+const CACHE_NAME = "cuisine-jeje-v28";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
   "/la-cuisine-de-jeje/style.css",
   "/la-cuisine-de-jeje/script.js",
+  "/la-cuisine-de-jeje/auth.js",
   "/la-cuisine-de-jeje/manifest.json",
-  "/la-cuisine-de-jeje/images/icon-192.png",
-  "/la-cuisine-de-jeje/images/icon-512.png",
+  "/la-cuisine-de-jeje/images/icon-192.webp",
+  "/la-cuisine-de-jeje/images/icon-512.webp",
   "/la-cuisine-de-jeje/images/fond.webp",
   "/la-cuisine-de-jeje/images/pizza.webp",
   "/la-cuisine-de-jeje/images/crepes.webp",
   "/la-cuisine-de-jeje/images/gaufres.webp",
   "/la-cuisine-de-jeje/images/brioche.webp",
-  "/la-cuisine-de-jeje/images/lasagne.webp",
+  "/la-cuisine-de-jeje/images/patelasagne.webp",
   "/la-cuisine-de-jeje/images/cookies.webp",
   "/la-cuisine-de-jeje/images/flan.webp",
   "/la-cuisine-de-jeje/images/clafoutis.webp",
