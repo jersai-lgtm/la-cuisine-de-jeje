@@ -1119,3 +1119,35 @@ select, input[type="number"] {
 .pref-objectif-label {
   padding: 10px 14px !important;
 }
+
+/* ==============================
+   CARTES GRISÉES (préférences)
+============================== */
+.carte-grisee {
+  opacity: 0.45;
+  filter: grayscale(60%);
+  position: relative;
+  transition: opacity .2s, filter .2s;
+}
+.carte-grisee:hover {
+  opacity: 0.75;
+  filter: grayscale(30%);
+}
+
+/* Badge allergène */
+.carte-badge-allergie {
+  position: absolute;
+  bottom: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20,20,30,.88);
+  color: #ffb347;
+  border: 1px solid rgba(255,179,71,.5);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 2;
+}
