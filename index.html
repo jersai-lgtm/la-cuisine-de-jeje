@@ -3501,17 +3501,45 @@ function toggleTag(btn) {
 // Sauvegarde locale
 function sauvegarderMenus(menus, personnes, jours) {
   try {
-    const data = { menus, personnes, jours, date: new Date().toLocaleDateString("fr-FR") };
+    const today = new Date().toLocaleDateString("fr-FR");
+    const data  = { menus, personnes, jours, date: today };
+    // localStorage = persiste entre rechargements, clé avec date du jour
+    localStorage.setItem(STORAGE_KEY + "_" + today, JSON.stringify(data));
+    // Garder aussi sessionStorage pour compatibilité
     sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data));
   } catch(e) {}
 }
 
 function chargerMenusSauvegardes() {
   try {
+    const today = new Date().toLocaleDateString("fr-FR");
+    // Chercher d'abord le menu du jour dans localStorage
+    const rawLocal = localStorage.getItem(STORAGE_KEY + "_" + today);
+    if (rawLocal) return JSON.parse(rawLocal);
+    // Sinon sessionStorage
     const raw = sessionStorage.getItem(STORAGE_KEY);
     if (!raw) return null;
-    return JSON.parse(raw);
+    const data = JSON.parse(raw);
+    // Vérifier que c'est bien le menu d'aujourd'hui
+    if (data.date === today) return data;
+    return null; // Menu périmé
   } catch(e) { return null; }
+}
+
+function nettoyerVieuxMenus() {
+  // Supprimer les menus de plus de 7 jours
+  try {
+    const today = new Date();
+    Object.keys(localStorage).forEach(key => {
+      if (!key.startsWith(STORAGE_KEY + "_")) return;
+      const dateStr = key.replace(STORAGE_KEY + "_", "");
+      const parts = dateStr.split("/");
+      if (parts.length === 3) {
+        const d = new Date(parts[2], parts[1]-1, parts[0]);
+        if ((today - d) > 7 * 24 * 60 * 60 * 1000) localStorage.removeItem(key);
+      }
+    });
+  } catch(e) {}
 }
 
 function voirFormulaire() {
@@ -4192,6 +4220,8 @@ function afficherSection(section, btn) {
     const nb = typeof recettes !== 'undefined' ? Object.keys(recettes).length : 0;
     const el = document.getElementById('nb-recettes');
     if (el && nb > 0) el.textContent = '🍽️ ' + nb + ' recettes';
+    // Nettoyer vieux menus
+    if (typeof nettoyerVieuxMenus === 'function') nettoyerVieuxMenus();
     // Afficher accueil par défaut
     setTimeout(() => {
       if (typeof afficherAccueil === 'function') afficherAccueil();
