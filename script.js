@@ -6415,6 +6415,659 @@ const recettes = {
       { icone: "🍓", titre: "Ajouter les fruits secs", detail: "Laisser refroidir complètement avant d'ajouter raisins secs, cranberries ou abricots. Se conserve 3 semaines.", badge: null },
     ]
   },
+
+  tartetatinpommes: {
+    base: 6, temps: "1h", niveau: "⭐⭐ Intermédiaire", emoji: "🍎",
+    description: "La Tarte Tatin — pommes caramélisées renversées sur une pâte croustillante. Le dessert français emblématique, né d'un accident heureux !",
+    tableauTarteTatin: [
+      { nb:  1, pommes: "150 g", sucre: "25 g",  beurre: "15 g",  pate: "⅙",  cannelle: "1 pincée" },
+      { nb:  2, pommes: "300 g", sucre: "50 g",  beurre: "30 g",  pate: "⅓",  cannelle: "1 pincée" },
+      { nb:  3, pommes: "450 g", sucre: "75 g",  beurre: "45 g",  pate: "½",  cannelle: "2 pincées" },
+      { nb:  4, pommes: "600 g", sucre: "100 g", beurre: "60 g",  pate: "⅔",  cannelle: "2 pincées" },
+      { nb:  5, pommes: "750 g", sucre: "125 g", beurre: "75 g",  pate: "¾",  cannelle: "3 pincées" },
+      { nb:  6, pommes: "900 g", sucre: "150 g", beurre: "90 g",  pate: "1",   cannelle: "3 pincées" },
+      { nb:  7, pommes: "1050 g",sucre: "175 g", beurre: "105 g", pate: "1",   cannelle: "4 pincées" },
+      { nb:  8, pommes: "1200 g",sucre: "200 g", beurre: "120 g", pate: "1½",  cannelle: "4 pincées" },
+      { nb:  9, pommes: "1350 g",sucre: "225 g", beurre: "135 g", pate: "1½",  cannelle: "5 pincées" },
+      { nb: 10, pommes: "1500 g",sucre: "250 g", beurre: "150 g", pate: "2",   cannelle: "5 pincées" },
+      { nb: 11, pommes: "1650 g",sucre: "275 g", beurre: "165 g", pate: "2",   cannelle: "6 pincées" },
+      { nb: 12, pommes: "1800 g",sucre: "300 g", beurre: "180 g", pate: "2",   cannelle: "6 pincées" },
+      { nb: 13, pommes: "1950 g",sucre: "325 g", beurre: "195 g", pate: "2½",  cannelle: "7 pincées" },
+      { nb: 14, pommes: "2100 g",sucre: "350 g", beurre: "210 g", pate: "2½",  cannelle: "7 pincées" },
+      { nb: 15, pommes: "2250 g",sucre: "375 g", beurre: "225 g", pate: "3",   cannelle: "8 pincées" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍎", titre: "Préparer les pommes",     detail: "Éplucher et couper les pommes en quartiers épais. Utiliser des pommes fermes (Granny Smith ou Reinettes).", badge: null },
+      { icone: "🍯", titre: "Caramel",                 detail: "Dans une poêle allant au four, fondre beurre + sucre jusqu'à caramel doré ambré. Attention à ne pas brûler.", badge: "⏱ 8 min" },
+      { icone: "🍎", titre: "Disposer les pommes",     detail: "Disposer les quartiers debout dans le caramel, très serrés. Cuire à feu moyen pour compoter.", badge: "⏱ 15 min" },
+      { icone: "🫓", titre: "Couvrir de pâte",         detail: "Recouvrir les pommes de pâte feuilletée. Rentrer les bords. Piquer.", badge: null },
+      { icone: "🔥", titre: "Cuire et retourner",      detail: "Enfourner. Laisser reposer 5 min hors du four puis retourner sur un plat d'un coup sec. Servir tiède avec crème fraîche.", badge: "⏱ 25 min à 200°C" },
+    ]
+  },
+
+  croissant: {
+    base: 8, temps: "3h + 12h repos", niveau: "⭐⭐⭐ Expert", emoji: "🥐",
+    description: "Croissants au Beurre — la recette classique de la boulangerie française. Feuilletage beurré, croustillant dehors et filant dedans.",
+    tableauCroissant: [
+      { nb:  1, farine: "62 g",  beurre: "44 g",  lait: "35 ml", sucre: "8 g",  levure: "2 g"  },
+      { nb:  2, farine: "125 g", beurre: "88 g",  lait: "70 ml", sucre: "16 g", levure: "4 g"  },
+      { nb:  4, farine: "250 g", beurre: "175 g", lait: "140 ml",sucre: "32 g", levure: "8 g"  },
+      { nb:  6, farine: "375 g", beurre: "263 g", lait: "210 ml",sucre: "48 g", levure: "12 g" },
+      { nb:  8, farine: "500 g", beurre: "350 g", lait: "280 ml",sucre: "64 g", levure: "16 g" },
+      { nb: 10, farine: "625 g", beurre: "438 g", lait: "350 ml",sucre: "80 g", levure: "20 g" },
+      { nb: 12, farine: "750 g", beurre: "525 g", lait: "420 ml",sucre: "96 g", levure: "24 g" },
+      { nb: 14, farine: "875 g", beurre: "613 g", lait: "490 ml",sucre: "112 g",levure: "28 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Détrempe",               detail: "Mélanger farine, sucre, sel, levure, lait tiède et beurre fondu (40g). Pétrir 5 min. Laisser pousser 1h à température ambiante puis 12h au frigo.", badge: "⏱ 13h repos" },
+      { icone: "🧈", titre: "Beurrage",               detail: "Former un carré de beurre froid (beurre de tourage). Incorporer dans la détrempe froide.", badge: null },
+      { icone: "📏", titre: "Tourage (3 fois)",        detail: "3 tours simples avec 30 min de repos au frigo entre chaque. Ne jamais laisser le beurre fondre.", badge: "⏱ 2h" },
+      { icone: "✂️", titre: "Façonnage",              detail: "Étaler en rectangle. Découper des triangles. Rouler de la base vers la pointe. Courber les extrémités.", badge: null },
+      { icone: "🔥", titre: "Pousse et cuisson",      detail: "Pousser 2h à température ambiante. Dorer à l'œuf. Cuire jusqu'à belle couleur dorée.", badge: "⏱ 2h pousse + 15 min à 200°C" },
+    ]
+  },
+
+  verrineframboisechocolat: {
+    base: 4, temps: "30 min + 2h frigo", niveau: "⭐ Facile", emoji: "🍫",
+    description: "Verrines Framboise Chocolat — mousse au chocolat noir, coulis de framboise et crème chantilly. Élégant, rapide et sans cuisson.",
+    tableauVerrineFramboise: [
+      { nb:  1, chocolat: "30 g",  framboises: "50 g",  creme: "80 ml",  sucre: "10 g", oeufs: "1" },
+      { nb:  2, chocolat: "60 g",  framboises: "100 g", creme: "160 ml", sucre: "20 g", oeufs: "2" },
+      { nb:  3, chocolat: "90 g",  framboises: "150 g", creme: "240 ml", sucre: "30 g", oeufs: "3" },
+      { nb:  4, chocolat: "120 g", framboises: "200 g", creme: "320 ml", sucre: "40 g", oeufs: "4" },
+      { nb:  5, chocolat: "150 g", framboises: "250 g", creme: "400 ml", sucre: "50 g", oeufs: "5" },
+      { nb:  6, chocolat: "180 g", framboises: "300 g", creme: "480 ml", sucre: "60 g", oeufs: "6" },
+      { nb:  7, chocolat: "210 g", framboises: "350 g", creme: "560 ml", sucre: "70 g", oeufs: "7" },
+      { nb:  8, chocolat: "240 g", framboises: "400 g", creme: "640 ml", sucre: "80 g", oeufs: "8" },
+      { nb:  9, chocolat: "270 g", framboises: "450 g", creme: "720 ml", sucre: "90 g", oeufs: "9" },
+      { nb: 10, chocolat: "300 g", framboises: "500 g", creme: "800 ml", sucre: "100 g",oeufs: "10"},
+      { nb: 11, chocolat: "330 g", framboises: "550 g", creme: "880 ml", sucre: "110 g",oeufs: "11"},
+      { nb: 12, chocolat: "360 g", framboises: "600 g", creme: "960 ml", sucre: "120 g",oeufs: "12"},
+      { nb: 13, chocolat: "390 g", framboises: "650 g", creme: "1040 ml",sucre: "130 g",oeufs: "13"},
+      { nb: 14, chocolat: "420 g", framboises: "700 g", creme: "1120 ml",sucre: "140 g",oeufs: "14"},
+      { nb: 15, chocolat: "450 g", framboises: "750 g", creme: "1200 ml",sucre: "150 g",oeufs: "15"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍫", titre: "Mousse chocolat",        detail: "Fondre le chocolat au bain-marie. Séparer les œufs. Incorporer les jaunes au chocolat tiède. Monter les blancs en neige ferme. Incorporer délicatement.", badge: null },
+      { icone: "🍓", titre: "Coulis framboise",       detail: "Mixer les framboises avec le sucre et un jus de citron. Filtrer les pépins. Réserver.", badge: null },
+      { icone: "🥛", titre: "Montage",                detail: "Dans chaque verrine : coulis de framboise → mousse chocolat → repos au frigo.", badge: "⏱ 2h frigo" },
+      { icone: "🍦", titre: "Finir",                  detail: "Au moment de servir, fouetter la crème en chantilly. Déposer sur la mousse. Décorer de framboises fraîches.", badge: null },
+    ]
+  },
+
+  sauteporc: {
+    base: 4, temps: "45 min", niveau: "⭐ Facile", emoji: "🐷",
+    description: "Sauté de Porc aux Légumes — porc tendre sauté avec carottes, courgettes et sauce aux herbes. Le plat du quotidien rapide et savoureux.",
+    tableauSautePorc: [
+      { nb:  1, porc: "150 g", carottes: "60 g",  courgette: "½",  oignon: "¼", bouillon: "100 ml", thym: "1 branche" },
+      { nb:  2, porc: "300 g", carottes: "120 g", courgette: "1",   oignon: "½", bouillon: "200 ml", thym: "2 branches"},
+      { nb:  3, porc: "450 g", carottes: "180 g", courgette: "1",   oignon: "¾", bouillon: "300 ml", thym: "2 branches"},
+      { nb:  4, porc: "600 g", carottes: "240 g", courgette: "2",   oignon: "1", bouillon: "400 ml", thym: "3 branches"},
+      { nb:  5, porc: "750 g", carottes: "300 g", courgette: "2",   oignon: "1", bouillon: "500 ml", thym: "3 branches"},
+      { nb:  6, porc: "900 g", carottes: "360 g", courgette: "3",   oignon: "1", bouillon: "600 ml", thym: "4 branches"},
+      { nb:  7, porc: "1050 g",carottes: "420 g", courgette: "3",   oignon: "2", bouillon: "700 ml", thym: "4 branches"},
+      { nb:  8, porc: "1200 g",carottes: "480 g", courgette: "4",   oignon: "2", bouillon: "800 ml", thym: "5 branches"},
+      { nb:  9, porc: "1350 g",carottes: "540 g", courgette: "4",   oignon: "2", bouillon: "900 ml", thym: "5 branches"},
+      { nb: 10, porc: "1500 g",carottes: "600 g", courgette: "5",   oignon: "2", bouillon: "1 L",    thym: "6 branches"},
+      { nb: 11, porc: "1650 g",carottes: "660 g", courgette: "5",   oignon: "3", bouillon: "1.1 L",  thym: "6 branches"},
+      { nb: 12, porc: "1800 g",carottes: "720 g", courgette: "6",   oignon: "3", bouillon: "1.2 L",  thym: "7 branches"},
+      { nb: 13, porc: "1950 g",carottes: "780 g", courgette: "6",   oignon: "3", bouillon: "1.3 L",  thym: "7 branches"},
+      { nb: 14, porc: "2100 g",carottes: "840 g", courgette: "7",   oignon: "4", bouillon: "1.4 L",  thym: "8 branches"},
+      { nb: 15, porc: "2250 g",carottes: "900 g", courgette: "7",   oignon: "4", bouillon: "1.5 L",  thym: "8 branches"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐷", titre: "Dorer le porc",          detail: "Couper le filet ou l'échine en cubes. Faire dorer à feu vif dans huile d'olive. Saler, poivrer. Réserver.", badge: "⏱ 6 min" },
+      { icone: "🥕", titre: "Légumes",                detail: "Dans la même poêle, faire revenir oignon, puis carottes et courgettes. 5 min.", badge: "⏱ 5 min" },
+      { icone: "🌿", titre: "Déglacer et mijoter",    detail: "Remettre le porc. Déglacer avec le bouillon. Ajouter thym, laurier et moutarde. Mijoter à couvert.", badge: "⏱ 25 min" },
+      { icone: "🍽️", titre: "Servir",                detail: "Rectifier l'assaisonnement. Servir avec purée, riz ou pâtes.", badge: null },
+    ]
+  },
+
+  veloutecourgette: {
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🥒",
+    description: "Velouté de Courgettes au Chèvre — soupe crémeuse de courgettes fondantes avec fromage de chèvre et basilic. Légère et estivale.",
+    tableauVelouteCourgette: [
+      { nb:  1, courgette: "200 g", chevre: "20 g",  bouillon: "300 ml", oignon: "¼", basilic: "3 feuilles" },
+      { nb:  2, courgette: "400 g", chevre: "40 g",  bouillon: "600 ml", oignon: "½", basilic: "6 feuilles" },
+      { nb:  3, courgette: "600 g", chevre: "60 g",  bouillon: "900 ml", oignon: "¾", basilic: "9 feuilles" },
+      { nb:  4, courgette: "800 g", chevre: "80 g",  bouillon: "1.2 L",  oignon: "1", basilic: "12 feuilles"},
+      { nb:  5, courgette: "1 kg",  chevre: "100 g", bouillon: "1.5 L",  oignon: "1", basilic: "15 feuilles"},
+      { nb:  6, courgette: "1.2 kg",chevre: "120 g", bouillon: "1.8 L",  oignon: "1", basilic: "18 feuilles"},
+      { nb:  7, courgette: "1.4 kg",chevre: "140 g", bouillon: "2.1 L",  oignon: "2", basilic: "21 feuilles"},
+      { nb:  8, courgette: "1.6 kg",chevre: "160 g", bouillon: "2.4 L",  oignon: "2", basilic: "24 feuilles"},
+      { nb:  9, courgette: "1.8 kg",chevre: "180 g", bouillon: "2.7 L",  oignon: "2", basilic: "27 feuilles"},
+      { nb: 10, courgette: "2 kg",  chevre: "200 g", bouillon: "3 L",    oignon: "2", basilic: "30 feuilles"},
+      { nb: 11, courgette: "2.2 kg",chevre: "220 g", bouillon: "3.3 L",  oignon: "3", basilic: "33 feuilles"},
+      { nb: 12, courgette: "2.4 kg",chevre: "240 g", bouillon: "3.6 L",  oignon: "3", basilic: "36 feuilles"},
+      { nb: 13, courgette: "2.6 kg",chevre: "260 g", bouillon: "3.9 L",  oignon: "3", basilic: "39 feuilles"},
+      { nb: 14, courgette: "2.8 kg",chevre: "280 g", bouillon: "4.2 L",  oignon: "3", basilic: "42 feuilles"},
+      { nb: 15, courgette: "3 kg",  chevre: "300 g", bouillon: "4.5 L",  oignon: "4", basilic: "45 feuilles"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥒", titre: "Cuire les courgettes",   detail: "Faire revenir oignon dans beurre. Ajouter courgettes coupées en rondelles et bouillon. Cuire 15 min.", badge: "⏱ 15 min" },
+      { icone: "🌀", titre: "Mixer",                  detail: "Mixer finement avec le fromage de chèvre, sel et poivre.", badge: null },
+      { icone: "🌿", titre: "Servir",                 detail: "Verser dans des bols. Ajouter feuilles de basilic, filet d'huile d'olive et poivre du moulin.", badge: null },
+    ]
+  },
+
+  ratatouille: {
+    base: 4, temps: "1h", niveau: "⭐ Facile", emoji: "🫑",
+    description: "La Ratatouille Provençale — aubergines, courgettes, poivrons et tomates mijotés aux herbes de Provence. Le plat d'été méditerranéen.",
+    tableauRatatouille: [
+      { nb:  1, aubergine: "½",  courgette: "½",  poivron: "¼", tomates: "150 g", oignon: "¼", herbes: "1 c.à.c" },
+      { nb:  2, aubergine: "1",  courgette: "1",  poivron: "½", tomates: "300 g", oignon: "½", herbes: "2 c.à.c" },
+      { nb:  3, aubergine: "1",  courgette: "1",  poivron: "¾", tomates: "450 g", oignon: "¾", herbes: "3 c.à.c" },
+      { nb:  4, aubergine: "2",  courgette: "2",  poivron: "1", tomates: "600 g", oignon: "1", herbes: "4 c.à.c" },
+      { nb:  5, aubergine: "2",  courgette: "2",  poivron: "1", tomates: "750 g", oignon: "1", herbes: "5 c.à.c" },
+      { nb:  6, aubergine: "3",  courgette: "3",  poivron: "2", tomates: "900 g", oignon: "1", herbes: "6 c.à.c" },
+      { nb:  7, aubergine: "3",  courgette: "3",  poivron: "2", tomates: "1050 g",oignon: "2", herbes: "7 c.à.c" },
+      { nb:  8, aubergine: "4",  courgette: "4",  poivron: "2", tomates: "1200 g",oignon: "2", herbes: "8 c.à.c" },
+      { nb:  9, aubergine: "4",  courgette: "4",  poivron: "3", tomates: "1350 g",oignon: "2", herbes: "9 c.à.c" },
+      { nb: 10, aubergine: "5",  courgette: "5",  poivron: "3", tomates: "1500 g",oignon: "2", herbes: "10 c.à.c"},
+      { nb: 11, aubergine: "5",  courgette: "5",  poivron: "3", tomates: "1650 g",oignon: "3", herbes: "11 c.à.c"},
+      { nb: 12, aubergine: "6",  courgette: "6",  poivron: "4", tomates: "1800 g",oignon: "3", herbes: "12 c.à.c"},
+      { nb: 13, aubergine: "6",  courgette: "6",  poivron: "4", tomates: "1950 g",oignon: "3", herbes: "13 c.à.c"},
+      { nb: 14, aubergine: "7",  courgette: "7",  poivron: "4", tomates: "2100 g",oignon: "4", herbes: "14 c.à.c"},
+      { nb: 15, aubergine: "7",  courgette: "7",  poivron: "5", tomates: "2250 g",oignon: "4", herbes: "15 c.à.c"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍆", titre: "Préparer les légumes",   detail: "Couper tous les légumes en dés de 2cm. Saler les aubergines 20 min pour dégorger.", badge: "⏱ 20 min" },
+      { icone: "🔥", titre: "Faire revenir séparément",detail: "Faire dorer chaque légume séparément à feu vif dans l'huile d'olive. C'est le secret d'une bonne ratatouille !", badge: "⏱ 20 min" },
+      { icone: "🍅", titre: "Assembler",              detail: "Réunir tous les légumes avec tomates, ail, herbes de Provence. Mijoter à couvert.", badge: "⏱ 30 min" },
+      { icone: "🌿", titre: "Servir",                 detail: "Rectifier l'assaisonnement. Servir chaud en accompagnement, ou froid le lendemain (encore meilleur !).", badge: null },
+    ]
+  },
+
+  pouletcurrynoixdecoco: {
+    base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🥥",
+    description: "Poulet au Curry et Noix de Coco — filets de poulet dans une sauce crémeuse curry-coco avec poivrons et coriandre. Doux et parfumé.",
+    tableauPouletCurryNoix: [
+      { nb:  1, poulet: "150 g", coco: "100 ml", curry: "1 c.à.c",  poivron: "¼", coriandre: "¼ botte" },
+      { nb:  2, poulet: "300 g", coco: "200 ml", curry: "2 c.à.c",  poivron: "½", coriandre: "½ botte" },
+      { nb:  3, poulet: "450 g", coco: "300 ml", curry: "3 c.à.c",  poivron: "¾", coriandre: "½ botte" },
+      { nb:  4, poulet: "600 g", coco: "400 ml", curry: "4 c.à.c",  poivron: "1", coriandre: "1 botte"  },
+      { nb:  5, poulet: "750 g", coco: "500 ml", curry: "5 c.à.c",  poivron: "1", coriandre: "1 botte"  },
+      { nb:  6, poulet: "900 g", coco: "600 ml", curry: "6 c.à.c",  poivron: "2", coriandre: "1 botte"  },
+      { nb:  7, poulet: "1050 g",coco: "700 ml", curry: "7 c.à.c",  poivron: "2", coriandre: "1½ botte" },
+      { nb:  8, poulet: "1200 g",coco: "800 ml", curry: "8 c.à.c",  poivron: "2", coriandre: "1½ botte" },
+      { nb:  9, poulet: "1350 g",coco: "900 ml", curry: "9 c.à.c",  poivron: "3", coriandre: "2 bottes" },
+      { nb: 10, poulet: "1500 g",coco: "1 L",    curry: "10 c.à.c", poivron: "3", coriandre: "2 bottes" },
+      { nb: 11, poulet: "1650 g",coco: "1.1 L",  curry: "11 c.à.c", poivron: "3", coriandre: "2 bottes" },
+      { nb: 12, poulet: "1800 g",coco: "1.2 L",  curry: "12 c.à.c", poivron: "4", coriandre: "2 bottes" },
+      { nb: 13, poulet: "1950 g",coco: "1.3 L",  curry: "13 c.à.c", poivron: "4", coriandre: "3 bottes" },
+      { nb: 14, poulet: "2100 g",coco: "1.4 L",  curry: "14 c.à.c", poivron: "4", coriandre: "3 bottes" },
+      { nb: 15, poulet: "2250 g",coco: "1.5 L",  curry: "15 c.à.c", poivron: "5", coriandre: "3 bottes" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Dorer le poulet",        detail: "Faire dorer les filets en morceaux dans huile d'olive. Réserver.", badge: "⏱ 6 min" },
+      { icone: "🌶️", titre: "Base curry",            detail: "Faire revenir oignon, ail, gingembre. Ajouter poudre de curry, curcuma et cumin.", badge: null },
+      { icone: "🥥", titre: "Sauce coco",             detail: "Ajouter lait de coco, poivrons et le poulet. Mijoter à feu doux.", badge: "⏱ 25 min" },
+      { icone: "🌿", titre: "Finir",                  detail: "Garnir de coriandre fraîche. Servir avec riz basmati.", badge: null },
+    ]
+  },
+
+  financiers: {
+    base: 12, temps: "25 min", niveau: "⭐ Facile", emoji: "🟡",
+    description: "Financiers aux Amandes — petits gâteaux moelleux au beurre noisette et poudre d'amande. La mignardise de pâtisserie française.",
+    tableauFinanciers: [
+      { nb:  4, blancs: "2",  beurre: "60 g",  poudreAmande: "40 g", sucreGlace: "60 g",  farine: "20 g" },
+      { nb:  6, blancs: "3",  beurre: "90 g",  poudreAmande: "60 g", sucreGlace: "90 g",  farine: "30 g" },
+      { nb:  8, blancs: "4",  beurre: "120 g", poudreAmande: "80 g", sucreGlace: "120 g", farine: "40 g" },
+      { nb: 10, blancs: "5",  beurre: "150 g", poudreAmande: "100 g",sucreGlace: "150 g", farine: "50 g" },
+      { nb: 12, blancs: "6",  beurre: "180 g", poudreAmande: "120 g",sucreGlace: "180 g", farine: "60 g" },
+      { nb: 14, blancs: "7",  beurre: "210 g", poudreAmande: "140 g",sucreGlace: "210 g", farine: "70 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Beurre noisette",        detail: "Faire fondre le beurre jusqu'à couleur noisette et odeur de noix. Filtrer et laisser tiédir.", badge: "⏱ 5 min" },
+      { icone: "🌾", titre: "Appareil",               detail: "Mélanger poudre d'amande, sucre glace et farine. Ajouter les blancs d'œufs (non montés). Incorporer le beurre noisette tiède.", badge: null },
+      { icone: "🟡", titre: "Mouler et garnir",       detail: "Remplir les moules à financiers aux ¾. Optionnel : poser une framboise ou amande effilée.", badge: null },
+      { icone: "🔥", titre: "Cuire",                  detail: "Cuire jusqu'à bords dorés et centre légèrement bombé. Démouler chaud.", badge: "⏱ 12-15 min à 200°C" },
+    ]
+  },
+
+  choufleurgratin: {
+    base: 4, temps: "45 min", niveau: "⭐ Facile", emoji: "🥦",
+    description: "Gratin de Chou-fleur Béchamel — chou-fleur fondant nappé de béchamel crémeuse et gratiné au gruyère. Le gratin végétarien réconfortant.",
+    tableauChoufleurGratin: [
+      { nb:  1, choufleur: "200 g", bechamel: "100 ml", gruyere: "30 g",  beurre: "10 g"  },
+      { nb:  2, choufleur: "400 g", bechamel: "200 ml", gruyere: "60 g",  beurre: "20 g"  },
+      { nb:  3, choufleur: "600 g", bechamel: "300 ml", gruyere: "90 g",  beurre: "30 g"  },
+      { nb:  4, choufleur: "800 g", bechamel: "400 ml", gruyere: "120 g", beurre: "40 g"  },
+      { nb:  5, choufleur: "1 kg",  bechamel: "500 ml", gruyere: "150 g", beurre: "50 g"  },
+      { nb:  6, choufleur: "1.2 kg",bechamel: "600 ml", gruyere: "180 g", beurre: "60 g"  },
+      { nb:  7, choufleur: "1.4 kg",bechamel: "700 ml", gruyere: "210 g", beurre: "70 g"  },
+      { nb:  8, choufleur: "1.6 kg",bechamel: "800 ml", gruyere: "240 g", beurre: "80 g"  },
+      { nb:  9, choufleur: "1.8 kg",bechamel: "900 ml", gruyere: "270 g", beurre: "90 g"  },
+      { nb: 10, choufleur: "2 kg",  bechamel: "1 L",    gruyere: "300 g", beurre: "100 g" },
+      { nb: 11, choufleur: "2.2 kg",bechamel: "1.1 L",  gruyere: "330 g", beurre: "110 g" },
+      { nb: 12, choufleur: "2.4 kg",bechamel: "1.2 L",  gruyere: "360 g", beurre: "120 g" },
+      { nb: 13, choufleur: "2.6 kg",bechamel: "1.3 L",  gruyere: "390 g", beurre: "130 g" },
+      { nb: 14, choufleur: "2.8 kg",bechamel: "1.4 L",  gruyere: "420 g", beurre: "140 g" },
+      { nb: 15, choufleur: "3 kg",  bechamel: "1.5 L",  gruyere: "450 g", beurre: "150 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥦", titre: "Blanchir",               detail: "Couper le chou-fleur en fleurettes. Cuire 8 min dans eau bouillante salée. Égoutter soigneusement.", badge: "⏱ 8 min" },
+      { icone: "🥛", titre: "Béchamel",               detail: "Préparer une béchamel : roux blanc + lait chaud. Assaisonner de noix de muscade.", badge: null },
+      { icone: "🏗️", titre: "Monter le gratin",       detail: "Disposer le chou-fleur dans un plat beurré. Napper de béchamel. Couvrir de gruyère râpé.", badge: null },
+      { icone: "🔥", titre: "Gratiner",               detail: "Cuire jusqu'à surface bien dorée.", badge: "⏱ 20-25 min à 200°C" },
+    ]
+  },
+
+  salmongrillee: {
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🐟",
+    description: "Pavé de Saumon Grillé au Citron — saumon grillé à la poêle, sauce au beurre citronné et câpres. Simple, rapide et élégant.",
+    tableauSalmonGrillee: [
+      { nb:  1, saumon: "130 g", beurre: "15 g",  citron: "¼", capres: "1 c.à.c", aneth: "¼ botte" },
+      { nb:  2, saumon: "260 g", beurre: "30 g",  citron: "½", capres: "2 c.à.c", aneth: "½ botte" },
+      { nb:  3, saumon: "390 g", beurre: "45 g",  citron: "¾", capres: "3 c.à.c", aneth: "½ botte" },
+      { nb:  4, saumon: "520 g", beurre: "60 g",  citron: "1", capres: "4 c.à.c", aneth: "1 botte"  },
+      { nb:  5, saumon: "650 g", beurre: "75 g",  citron: "1", capres: "5 c.à.c", aneth: "1 botte"  },
+      { nb:  6, saumon: "780 g", beurre: "90 g",  citron: "1½",capres: "6 c.à.c", aneth: "1 botte"  },
+      { nb:  7, saumon: "910 g", beurre: "105 g", citron: "1½",capres: "7 c.à.c", aneth: "1½ botte" },
+      { nb:  8, saumon: "1040 g",beurre: "120 g", citron: "2", capres: "8 c.à.c", aneth: "1½ botte" },
+      { nb:  9, saumon: "1170 g",beurre: "135 g", citron: "2", capres: "9 c.à.c", aneth: "2 bottes" },
+      { nb: 10, saumon: "1300 g",beurre: "150 g", citron: "2½",capres: "10 c.à.c",aneth: "2 bottes" },
+      { nb: 11, saumon: "1430 g",beurre: "165 g", citron: "2½",capres: "11 c.à.c",aneth: "2 bottes" },
+      { nb: 12, saumon: "1560 g",beurre: "180 g", citron: "3", capres: "12 c.à.c",aneth: "2 bottes" },
+      { nb: 13, saumon: "1690 g",beurre: "195 g", citron: "3", capres: "13 c.à.c",aneth: "3 bottes" },
+      { nb: 14, saumon: "1820 g",beurre: "210 g", citron: "3½",capres: "14 c.à.c",aneth: "3 bottes" },
+      { nb: 15, saumon: "1950 g",beurre: "225 g", citron: "3½",capres: "15 c.à.c",aneth: "3 bottes" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Assaisonner",            detail: "Sécher les pavés. Saler, poivrer côté peau.", badge: null },
+      { icone: "🔥", titre: "Griller côté peau",      detail: "Poêle très chaude avec huile. Déposer côté peau. Appuyer 30 sec. Cuire 3-4 min sans toucher.", badge: "⏱ 4 min" },
+      { icone: "🔄", titre: "Retourner",              detail: "Retourner et cuire 2 min côté chair. Le centre doit rester légèrement nacré.", badge: "⏱ 2 min" },
+      { icone: "🧈", titre: "Sauce beurre citron",    detail: "Dans la même poêle, fondre beurre + jus citron + câpres + aneth. Napper le saumon.", badge: null },
+    ]
+  },
+
+  sobejaponais: {
+    base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🍜",
+    description: "Soba Japonais Froids — nouilles de sarrasin servies froides avec sauce tsuyu, dashi et garnitures. Le repas estival japonais par excellence.",
+    tableauSoba: [
+      { nb:  1, soba: "80 g",   dashi: "100 ml", sojaS: "1 c.à.s", mirin: "1 c.à.s", ciboule: "2 tiges" },
+      { nb:  2, soba: "160 g",  dashi: "200 ml", sojaS: "2 c.à.s", mirin: "2 c.à.s", ciboule: "4 tiges" },
+      { nb:  3, soba: "240 g",  dashi: "300 ml", sojaS: "3 c.à.s", mirin: "3 c.à.s", ciboule: "6 tiges" },
+      { nb:  4, soba: "320 g",  dashi: "400 ml", sojaS: "4 c.à.s", mirin: "4 c.à.s", ciboule: "8 tiges" },
+      { nb:  5, soba: "400 g",  dashi: "500 ml", sojaS: "5 c.à.s", mirin: "5 c.à.s", ciboule: "10 tiges"},
+      { nb:  6, soba: "480 g",  dashi: "600 ml", sojaS: "6 c.à.s", mirin: "6 c.à.s", ciboule: "12 tiges"},
+      { nb:  7, soba: "560 g",  dashi: "700 ml", sojaS: "7 c.à.s", mirin: "7 c.à.s", ciboule: "14 tiges"},
+      { nb:  8, soba: "640 g",  dashi: "800 ml", sojaS: "8 c.à.s", mirin: "8 c.à.s", ciboule: "16 tiges"},
+      { nb:  9, soba: "720 g",  dashi: "900 ml", sojaS: "9 c.à.s", mirin: "9 c.à.s", ciboule: "18 tiges"},
+      { nb: 10, soba: "800 g",  dashi: "1 L",    sojaS: "10 c.à.s",mirin: "10 c.à.s",ciboule: "20 tiges"},
+      { nb: 11, soba: "880 g",  dashi: "1.1 L",  sojaS: "11 c.à.s",mirin: "11 c.à.s",ciboule: "22 tiges"},
+      { nb: 12, soba: "960 g",  dashi: "1.2 L",  sojaS: "12 c.à.s",mirin: "12 c.à.s",ciboule: "24 tiges"},
+      { nb: 13, soba: "1040 g", dashi: "1.3 L",  sojaS: "13 c.à.s",mirin: "13 c.à.s",ciboule: "26 tiges"},
+      { nb: 14, soba: "1120 g", dashi: "1.4 L",  sojaS: "14 c.à.s",mirin: "14 c.à.s",ciboule: "28 tiges"},
+      { nb: 15, soba: "1200 g", dashi: "1.5 L",  sojaS: "15 c.à.s",mirin: "15 c.à.s",ciboule: "30 tiges"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍜", titre: "Cuire les soba",         detail: "Cuire dans eau bouillante non salée. Rincer abondamment à l'eau froide pour arrêter la cuisson et enlever l'amidon.", badge: "⏱ 4-5 min" },
+      { icone: "🍶", titre: "Sauce tsuyu",            detail: "Mélanger dashi, sauce soja et mirin. Faire chauffer 2 min. Laisser refroidir au frigo.", badge: "⏱ 30 min frigo" },
+      { icone: "🥢", titre: "Servir",                 detail: "Disposer les soba sur plateau ou assiette froide. Verser la sauce froide. Garnir de ciboule, wasabi, nori et graines de sésame.", badge: null },
+    ]
+  },
+
+  tartepistache: {
+    base: 8, temps: "1h + 3h frigo", niveau: "⭐⭐ Intermédiaire", emoji: "🟢",
+    description: "Tarte à la Pistache — crème de pistache sur pâte sablée dorée, avec framboises fraîches. La tarte de pâtisserie qui fait sensation.",
+    tableauTartePistache: [
+      { nb:  2, pateSablee: "150 g", pistaches: "40 g",  beurre: "30 g",  oeufs: "1",  sucre: "30 g",  framboises: "50 g"  },
+      { nb:  4, pateSablee: "300 g", pistaches: "80 g",  beurre: "60 g",  oeufs: "2",  sucre: "60 g",  framboises: "100 g" },
+      { nb:  6, pateSablee: "450 g", pistaches: "120 g", beurre: "90 g",  oeufs: "3",  sucre: "90 g",  framboises: "150 g" },
+      { nb:  8, pateSablee: "600 g", pistaches: "160 g", beurre: "120 g", oeufs: "4",  sucre: "120 g", framboises: "200 g" },
+      { nb: 10, pateSablee: "750 g", pistaches: "200 g", beurre: "150 g", oeufs: "5",  sucre: "150 g", framboises: "250 g" },
+      { nb: 12, pateSablee: "900 g", pistaches: "240 g", beurre: "180 g", oeufs: "6",  sucre: "180 g", framboises: "300 g" },
+      { nb: 14, pateSablee: "1050 g",pistaches: "280 g", beurre: "210 g", oeufs: "7",  sucre: "210 g", framboises: "350 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Foncer et cuire à blanc", detail: "Étaler la pâte sablée dans le moule. Piquer. Papier + billes. Cuire à blanc puis 5 min sans billes.", badge: "⏱ 20 min à 180°C" },
+      { icone: "🟢", titre: "Crème pistache",         detail: "Mixer pistaches non salées en pâte. Crémer beurre + sucre. Ajouter les œufs, puis la pâte de pistache et la farine.", badge: null },
+      { icone: "🔥", titre: "Cuire la tarte",         detail: "Verser la crème pistache dans le fond cuit. Recuire jusqu'à crème prise et légèrement dorée.", badge: "⏱ 25 min à 170°C" },
+      { icone: "❄️", titre: "Refroidir et décorer",   detail: "Laisser refroidir complètement puis réfrigérer. Décorer de framboises et sucre glace au moment de servir.", badge: "⏱ 3h frigo" },
+    ]
+  },
+
+  agneluroti: {
+    base: 6, temps: "2h", niveau: "⭐ Facile", emoji: "🐑",
+    description: "Gigot d'Agneau Rôti — le grand classique du dimanche français. Agneau parfumé à l'ail et au romarin, jus de cuisson corsé.",
+    tableauAgnelRoti: [
+      { nb:  1, agneau: "200 g", ail: "1.5 gousses", romarin: "1 branches", huileOlive: "1 c.à.s", bouillon: "50 ml" },
+      { nb:  2, agneau: "400 g", ail: "3 gousses", romarin: "2 branches", huileOlive: "2 c.à.s", bouillon: "100 ml" },
+      { nb:  3, agneau: "600 g", ail: "4 gousses", romarin: "3 branches", huileOlive: "3 c.à.s", bouillon: "150 ml" },
+      { nb:  4, agneau: "800 g", ail: "5 gousses", romarin: "3 branches", huileOlive: "3 c.à.s", bouillon: "200 ml" },
+      { nb:  5, agneau: "1 kg",  ail: "6 gousses", romarin: "4 branches", huileOlive: "4 c.à.s", bouillon: "250 ml" },
+      { nb:  6, agneau: "1.2 kg",ail: "7 gousses", romarin: "4 branches", huileOlive: "4 c.à.s", bouillon: "300 ml" },
+      { nb:  7, agneau: "1.4 kg",ail: "8 gousses", romarin: "5 branches", huileOlive: "5 c.à.s", bouillon: "350 ml" },
+      { nb:  8, agneau: "1.6 kg",ail: "9 gousses", romarin: "5 branches", huileOlive: "5 c.à.s", bouillon: "400 ml" },
+      { nb:  9, agneau: "1.8 kg",ail: "10 gousses",romarin: "6 branches", huileOlive: "6 c.à.s", bouillon: "450 ml" },
+      { nb: 10, agneau: "2 kg",  ail: "11 gousses",romarin: "6 branches", huileOlive: "6 c.à.s", bouillon: "500 ml" },
+      { nb: 11, agneau: "2.2 kg",ail: "12 gousses",romarin: "7 branches", huileOlive: "7 c.à.s", bouillon: "550 ml" },
+      { nb: 12, agneau: "2.4 kg",ail: "13 gousses",romarin: "7 branches", huileOlive: "7 c.à.s", bouillon: "600 ml" },
+      { nb: 13, agneau: "2.6 kg",ail: "14 gousses",romarin: "8 branches", huileOlive: "8 c.à.s", bouillon: "650 ml" },
+      { nb: 14, agneau: "2.8 kg",ail: "15 gousses",romarin: "8 branches", huileOlive: "8 c.à.s", bouillon: "700 ml" },
+      { nb: 15, agneau: "3 kg",  ail: "16 gousses",romarin: "9 branches", huileOlive: "9 c.à.s", bouillon: "750 ml" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧄", titre: "Piquer et assaisonner",  detail: "Piquer le gigot de gousses d'ail. Frotter d'huile d'olive, sel, poivre et romarin. Sortir du frigo 1h avant.", badge: "⏱ 1h temp. ambiante" },
+      { icone: "🔥", titre: "Saisir",                 detail: "Faire dorer sur toutes les faces dans un plat à rôtir à feu vif.", badge: "⏱ 5 min" },
+      { icone: "🍖", titre: "Rôtir",                  detail: "Enfourner à 200°C d'abord, puis baisser à 180°C. Arroser toutes les 20 min avec le jus.", badge: "⏱ 20 min/500g" },
+      { icone: "⏳", titre: "Reposer",                detail: "Laisser reposer 15 min sous alu avant de découper. Le jus se redistribue.", badge: "⏱ 15 min repos" },
+    ]
+  },
+
+  crepesbretonnes: {
+    base: 4, temps: "30 min + 1h repos", niveau: "⭐ Facile", emoji: "🫓",
+    description: "Galettes Bretonnes — crêpes de blé noir (sarrasin) garnies jambon-fromage-œuf. La vraie galette complete bretonne !",
+    tableauCrepesBretonnes: [
+      { nb:  2, farine: "62 g",  oeuf: "1",  lait: "125 ml", beurre: "10 g",  jambon: "2 tranches", fromage: "40 g" },
+      { nb:  4, farine: "125 g", oeuf: "2",  lait: "250 ml", beurre: "20 g",  jambon: "4 tranches", fromage: "80 g" },
+      { nb:  6, farine: "187 g", oeuf: "3",  lait: "375 ml", beurre: "30 g",  jambon: "6 tranches", fromage: "120 g"},
+      { nb:  8, farine: "250 g", oeuf: "4",  lait: "500 ml", beurre: "40 g",  jambon: "8 tranches", fromage: "160 g"},
+      { nb: 10, farine: "312 g", oeuf: "5",  lait: "625 ml", beurre: "50 g",  jambon: "10 tranches",fromage: "200 g"},
+      { nb: 12, farine: "375 g", oeuf: "6",  lait: "750 ml", beurre: "60 g",  jambon: "12 tranches",fromage: "240 g"},
+      { nb: 14, farine: "437 g", oeuf: "7",  lait: "875 ml", beurre: "70 g",  jambon: "14 tranches",fromage: "280 g"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Pâte sarrasin",          detail: "Mélanger farine de sarrasin, œuf, sel et lait progressivement. Ajouter beurre fondu. Reposer 1h minimum.", badge: "⏱ 1h repos" },
+      { icone: "🍳", titre: "Cuire les galettes",     detail: "Poêle à crêpes bien chaude et beurrée. Pâte fine et croustillante. Cuire 2 min par face.", badge: "⏱ 2 min/galette" },
+      { icone: "🧀", titre: "Garnir la complète",     detail: "Déposer fromage râpé sur la galette chaude. Ajouter jambon. Casser un œuf au centre. Replier les 4 côtés.", badge: "⏱ 3 min" },
+      { icone: "🍽️", titre: "Servir",                detail: "Servir immédiatement très chaud avec cidre breton.", badge: null },
+    ]
+  },
+
+  stroganov: {
+    base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🥩",
+    description: "Bœuf Stroganoff — lanières de bœuf dans une sauce crémeuse aux champignons et moutarde. Le grand classique russe, servi sur riz ou pâtes.",
+    tableauStroganov: [
+      { nb:  1, boeuf: "150 g", champignons: "60 g",  creme: "60 ml",  oignon: "¼", moutarde: "1 c.à.c" },
+      { nb:  2, boeuf: "300 g", champignons: "120 g", creme: "120 ml", oignon: "½", moutarde: "2 c.à.c" },
+      { nb:  3, boeuf: "450 g", champignons: "180 g", creme: "180 ml", oignon: "¾", moutarde: "3 c.à.c" },
+      { nb:  4, boeuf: "600 g", champignons: "240 g", creme: "240 ml", oignon: "1", moutarde: "4 c.à.c" },
+      { nb:  5, boeuf: "750 g", champignons: "300 g", creme: "300 ml", oignon: "1", moutarde: "5 c.à.c" },
+      { nb:  6, boeuf: "900 g", champignons: "360 g", creme: "360 ml", oignon: "1", moutarde: "6 c.à.c" },
+      { nb:  7, boeuf: "1050 g",champignons: "420 g", creme: "420 ml", oignon: "2", moutarde: "7 c.à.c" },
+      { nb:  8, boeuf: "1200 g",champignons: "480 g", creme: "480 ml", oignon: "2", moutarde: "8 c.à.c" },
+      { nb:  9, boeuf: "1350 g",champignons: "540 g", creme: "540 ml", oignon: "2", moutarde: "9 c.à.c" },
+      { nb: 10, boeuf: "1500 g",champignons: "600 g", creme: "600 ml", oignon: "2", moutarde: "10 c.à.c"},
+      { nb: 11, boeuf: "1650 g",champignons: "660 g", creme: "660 ml", oignon: "3", moutarde: "11 c.à.c"},
+      { nb: 12, boeuf: "1800 g",champignons: "720 g", creme: "720 ml", oignon: "3", moutarde: "12 c.à.c"},
+      { nb: 13, boeuf: "1950 g",champignons: "780 g", creme: "780 ml", oignon: "3", moutarde: "13 c.à.c"},
+      { nb: 14, boeuf: "2100 g",champignons: "840 g", creme: "840 ml", oignon: "4", moutarde: "14 c.à.c"},
+      { nb: 15, boeuf: "2250 g",champignons: "900 g", creme: "900 ml", oignon: "4", moutarde: "15 c.à.c"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Couper le bœuf",         detail: "Couper le filet ou rumsteck en lanières fines. Saler et poivrer. Saisir à feu très vif par petites quantités. Réserver.", badge: "⏱ 4 min" },
+      { icone: "🍄", titre: "Champignons et oignon",  detail: "Dans la même poêle, faire revenir oignon émincé puis champignons jusqu'à évaporation.", badge: "⏱ 8 min" },
+      { icone: "🍦", titre: "Sauce crème-moutarde",   detail: "Ajouter moutarde, crème fraîche et un peu de bouillon. Remuer. Ne pas faire bouillir.", badge: null },
+      { icone: "🥩", titre: "Réunir et servir",       detail: "Remettre le bœuf 2 min dans la sauce. Parsemer de persil. Servir sur riz, pâtes ou pommes de terre.", badge: null },
+    ]
+  },
+
+  pizzahawaienne: {
+    base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🍍",
+    description: "Pizza Hawaïenne — sauce tomate, mozzarella, jambon et ananas. La pizza sucrée-salée qui divise... mais qui plaît !",
+    tableauPizzaHawaiene: [
+      { nb:  1, pate: "1 pâton",  tomates: "80 g",  mozza: "80 g",  jambon: "40 g",  ananas: "60 g"  },
+      { nb:  2, pate: "2 pâtons", tomates: "160 g", mozza: "160 g", jambon: "80 g",  ananas: "120 g" },
+      { nb:  3, pate: "3 pâtons", tomates: "240 g", mozza: "240 g", jambon: "120 g", ananas: "180 g" },
+      { nb:  4, pate: "4 pâtons", tomates: "320 g", mozza: "320 g", jambon: "160 g", ananas: "240 g" },
+      { nb:  5, pate: "5 pâtons", tomates: "400 g", mozza: "400 g", jambon: "200 g", ananas: "300 g" },
+      { nb:  6, pate: "6 pâtons", tomates: "480 g", mozza: "480 g", jambon: "240 g", ananas: "360 g" },
+      { nb:  7, pate: "7 pâtons", tomates: "560 g", mozza: "560 g", jambon: "280 g", ananas: "420 g" },
+      { nb:  8, pate: "8 pâtons", tomates: "640 g", mozza: "640 g", jambon: "320 g", ananas: "480 g" },
+      { nb:  9, pate: "9 pâtons", tomates: "720 g", mozza: "720 g", jambon: "360 g", ananas: "540 g" },
+      { nb: 10, pate: "10 pâtons",tomates: "800 g", mozza: "800 g", jambon: "400 g", ananas: "600 g" },
+      { nb: 11, pate: "11 pâtons",tomates: "880 g", mozza: "880 g", jambon: "440 g", ananas: "660 g" },
+      { nb: 12, pate: "12 pâtons",tomates: "960 g", mozza: "960 g", jambon: "480 g", ananas: "720 g" },
+      { nb: 13, pate: "13 pâtons",tomates: "1040 g",mozza: "1040 g",jambon: "520 g", ananas: "780 g" },
+      { nb: 14, pate: "14 pâtons",tomates: "1120 g",mozza: "1120 g",jambon: "560 g", ananas: "840 g" },
+      { nb: 15, pate: "15 pâtons",tomates: "1200 g",mozza: "1200 g",jambon: "600 g", ananas: "900 g" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Sauce tomate",           detail: "Étaler la sauce tomate assaisonnée à l'ail et l'origan.", badge: null },
+      { icone: "🧀", titre: "Mozzarella",             detail: "Répartir la mozzarella.", badge: null },
+      { icone: "🍍", titre: "Jambon et ananas",       detail: "Disposer les tranches de jambon et les morceaux d'ananas (frais de préférence, en conserve sinon).", badge: null },
+      { icone: "🔥", titre: "Cuire",                  detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" },
+    ]
+  },
+
+  pouletescalopes: {
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🍗",
+    description: "Escalopes de Poulet Panées — panure croustillante maison, citron et salade. Le classique rapide des familles qui plaît à tous.",
+    tableauPouletEscalopes: [
+      { nb:  1, poulet: "130 g", farine: "20 g",  oeufs: "1",  chapelure: "30 g", citron: "¼" },
+      { nb:  2, poulet: "260 g", farine: "40 g",  oeufs: "1",  chapelure: "60 g", citron: "½" },
+      { nb:  3, poulet: "390 g", farine: "60 g",  oeufs: "2",  chapelure: "90 g", citron: "¾" },
+      { nb:  4, poulet: "520 g", farine: "80 g",  oeufs: "2",  chapelure: "120 g",citron: "1" },
+      { nb:  5, poulet: "650 g", farine: "100 g", oeufs: "3",  chapelure: "150 g",citron: "1" },
+      { nb:  6, poulet: "780 g", farine: "120 g", oeufs: "3",  chapelure: "180 g",citron: "1½"},
+      { nb:  7, poulet: "910 g", farine: "140 g", oeufs: "4",  chapelure: "210 g",citron: "1½"},
+      { nb:  8, poulet: "1040 g",farine: "160 g", oeufs: "4",  chapelure: "240 g",citron: "2" },
+      { nb:  9, poulet: "1170 g",farine: "180 g", oeufs: "5",  chapelure: "270 g",citron: "2" },
+      { nb: 10, poulet: "1300 g",farine: "200 g", oeufs: "5",  chapelure: "300 g",citron: "2½"},
+      { nb: 11, poulet: "1430 g",farine: "220 g", oeufs: "6",  chapelure: "330 g",citron: "2½"},
+      { nb: 12, poulet: "1560 g",farine: "240 g", oeufs: "6",  chapelure: "360 g",citron: "3" },
+      { nb: 13, poulet: "1690 g",farine: "260 g", oeufs: "7",  chapelure: "390 g",citron: "3" },
+      { nb: 14, poulet: "1820 g",farine: "280 g", oeufs: "7",  chapelure: "420 g",citron: "3½"},
+      { nb: 15, poulet: "1950 g",farine: "300 g", oeufs: "8",  chapelure: "450 g",citron: "3½"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔨", titre: "Aplatir les escalopes",  detail: "Placer les escalopes entre deux feuilles de film. Aplatir au rouleau à 1cm d'épaisseur. Saler, poivrer.", badge: null },
+      { icone: "🌾", titre: "Paner",                  detail: "Passer dans farine → œuf battu → chapelure. Appuyer pour faire adhérer.", badge: null },
+      { icone: "🔥", titre: "Cuire",                  detail: "Poêle avec huile + beurre à feu moyen-vif. Cuire 3-4 min par face jusqu'à dorure.", badge: "⏱ 6-8 min" },
+      { icone: "🍋", titre: "Servir",                 detail: "Servir avec quartiers de citron, salade verte et frites maison.", badge: null },
+    ]
+  },
+
+  tofusaute: {
+    base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "🧀",
+    description: "Tofu Sauté Sauce Teriyaki — cubes de tofu ferme caramélisés à la sauce teriyaki, riz et légumes. Un plat vegan savoureux et protéiné.",
+    tableauTofuSaute: [
+      { nb:  1, tofu: "125 g", sojaS: "1 c.à.s", mirin: "1 c.à.s", sesame: "½ c.à.c", bok_choy: "½" },
+      { nb:  2, tofu: "250 g", sojaS: "2 c.à.s", mirin: "2 c.à.s", sesame: "1 c.à.c",  bok_choy: "1"  },
+      { nb:  3, tofu: "375 g", sojaS: "3 c.à.s", mirin: "3 c.à.s", sesame: "1½ c.à.c", bok_choy: "1"  },
+      { nb:  4, tofu: "500 g", sojaS: "4 c.à.s", mirin: "4 c.à.s", sesame: "2 c.à.c",  bok_choy: "2"  },
+      { nb:  5, tofu: "625 g", sojaS: "5 c.à.s", mirin: "5 c.à.s", sesame: "2½ c.à.c", bok_choy: "2"  },
+      { nb:  6, tofu: "750 g", sojaS: "6 c.à.s", mirin: "6 c.à.s", sesame: "3 c.à.c",  bok_choy: "3"  },
+      { nb:  7, tofu: "875 g", sojaS: "7 c.à.s", mirin: "7 c.à.s", sesame: "3½ c.à.c", bok_choy: "3"  },
+      { nb:  8, tofu: "1 kg",  sojaS: "8 c.à.s", mirin: "8 c.à.s", sesame: "4 c.à.c",  bok_choy: "4"  },
+      { nb:  9, tofu: "1.125 kg",sojaS: "9 c.à.s",mirin: "9 c.à.s",sesame: "4½ c.à.c", bok_choy: "4"  },
+      { nb: 10, tofu: "1.25 kg",sojaS: "10 c.à.s",mirin: "10 c.à.s",sesame: "5 c.à.c", bok_choy: "5"  },
+      { nb: 11, tofu: "1.375 kg",sojaS: "11 c.à.s",mirin: "11 c.à.s",sesame: "5½ c.à.c",bok_choy: "5" },
+      { nb: 12, tofu: "1.5 kg",sojaS: "12 c.à.s",mirin: "12 c.à.s",sesame: "6 c.à.c",  bok_choy: "6"  },
+      { nb: 13, tofu: "1.625 kg",sojaS: "13 c.à.s",mirin: "13 c.à.s",sesame: "6½ c.à.c",bok_choy: "6" },
+      { nb: 14, tofu: "1.75 kg",sojaS: "14 c.à.s",mirin: "14 c.à.s",sesame: "7 c.à.c",  bok_choy: "7" },
+      { nb: 15, tofu: "1.875 kg",sojaS: "15 c.à.s",mirin: "15 c.à.s",sesame: "7½ c.à.c",bok_choy: "7" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Préparer le tofu",       detail: "Presser le tofu ferme 30 min dans un torchon pour éliminer l'eau. Couper en cubes.", badge: "⏱ 30 min" },
+      { icone: "🔥", titre: "Frire le tofu",          detail: "Faire dorer les cubes dans huile à feu vif sur toutes les faces. Ils doivent être bien croustillants.", badge: "⏱ 8 min" },
+      { icone: "🍶", titre: "Sauce teriyaki",         detail: "Verser sauce soja + mirin + sucre sur le tofu. Cuire 2 min en remuant jusqu'à caramélisation.", badge: "⏱ 2 min" },
+      { icone: "🥢", titre: "Servir",                 detail: "Servir sur riz avec bok choy sauté, graines de sésame et ciboule.", badge: null },
+    ]
+  },
+
+  saladecaprese: {
+    base: 4, temps: "10 min", niveau: "⭐ Facile", emoji: "🍅",
+    description: "Salade Caprese — tomates mûres, mozzarella di bufala et basilic frais. La salade italienne la plus simple et la plus belle.",
+    tableauCaprese: [
+      { nb:  1, tomates: "150 g", mozza: "80 g",  basilic: "5 feuilles",  huileOlive: "1 c.à.s" },
+      { nb:  2, tomates: "300 g", mozza: "160 g", basilic: "10 feuilles", huileOlive: "2 c.à.s" },
+      { nb:  3, tomates: "450 g", mozza: "240 g", basilic: "15 feuilles", huileOlive: "3 c.à.s" },
+      { nb:  4, tomates: "600 g", mozza: "320 g", basilic: "20 feuilles", huileOlive: "4 c.à.s" },
+      { nb:  5, tomates: "750 g", mozza: "400 g", basilic: "25 feuilles", huileOlive: "5 c.à.s" },
+      { nb:  6, tomates: "900 g", mozza: "480 g", basilic: "30 feuilles", huileOlive: "6 c.à.s" },
+      { nb:  7, tomates: "1050 g",mozza: "560 g", basilic: "35 feuilles", huileOlive: "7 c.à.s" },
+      { nb:  8, tomates: "1200 g",mozza: "640 g", basilic: "40 feuilles", huileOlive: "8 c.à.s" },
+      { nb:  9, tomates: "1350 g",mozza: "720 g", basilic: "45 feuilles", huileOlive: "9 c.à.s" },
+      { nb: 10, tomates: "1500 g",mozza: "800 g", basilic: "50 feuilles", huileOlive: "10 c.à.s"},
+      { nb: 11, tomates: "1650 g",mozza: "880 g", basilic: "55 feuilles", huileOlive: "11 c.à.s"},
+      { nb: 12, tomates: "1800 g",mozza: "960 g", basilic: "60 feuilles", huileOlive: "12 c.à.s"},
+      { nb: 13, tomates: "1950 g",mozza: "1040 g",basilic: "65 feuilles", huileOlive: "13 c.à.s"},
+      { nb: 14, tomates: "2100 g",mozza: "1120 g",basilic: "70 feuilles", huileOlive: "14 c.à.s"},
+      { nb: 15, tomates: "2250 g",mozza: "1200 g",basilic: "75 feuilles", huileOlive: "15 c.à.s"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Trancher",               detail: "Couper les tomates et la mozzarella en tranches de même épaisseur.", badge: null },
+      { icone: "🏗️", titre: "Dresser",               detail: "Alterner une tranche de tomate, une de mozzarella. Disposer en rosace ou en ligne.", badge: null },
+      { icone: "🌿", titre: "Assaisonner",            detail: "Déposer les feuilles de basilic. Arroser généreusement d'huile d'olive. Sel, poivre. Optionnel : vinaigre balsamique.", badge: null },
+    ]
+  },
+
+  moulesmarinieres: {
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🦪",
+    description: "Moules Marinières — moules fraîches ouvertes au vin blanc avec échalotes et persil. Le grand classique du bord de mer français.",
+    tableauMoulesMarinieres: [
+      { nb:  1, moules: "400 g", vin: "50 ml",  echalote: "1",  persil: "¼ botte", beurre: "15 g" },
+      { nb:  2, moules: "800 g", vin: "100 ml", echalote: "2",  persil: "½ botte", beurre: "30 g" },
+      { nb:  3, moules: "1.2 kg",vin: "150 ml", echalote: "3",  persil: "½ botte", beurre: "45 g" },
+      { nb:  4, moules: "1.6 kg",vin: "200 ml", echalote: "4",  persil: "1 botte",  beurre: "60 g" },
+      { nb:  5, moules: "2 kg",  vin: "250 ml", echalote: "5",  persil: "1 botte",  beurre: "75 g" },
+      { nb:  6, moules: "2.4 kg",vin: "300 ml", echalote: "6",  persil: "1 botte",  beurre: "90 g" },
+      { nb:  7, moules: "2.8 kg",vin: "350 ml", echalote: "7",  persil: "1½ botte", beurre: "105 g"},
+      { nb:  8, moules: "3.2 kg",vin: "400 ml", echalote: "8",  persil: "1½ botte", beurre: "120 g"},
+      { nb:  9, moules: "3.6 kg",vin: "450 ml", echalote: "9",  persil: "2 bottes", beurre: "135 g"},
+      { nb: 10, moules: "4 kg",  vin: "500 ml", echalote: "10", persil: "2 bottes", beurre: "150 g"},
+      { nb: 11, moules: "4.4 kg",vin: "550 ml", echalote: "11", persil: "2 bottes", beurre: "165 g"},
+      { nb: 12, moules: "4.8 kg",vin: "600 ml", echalote: "12", persil: "2 bottes", beurre: "180 g"},
+      { nb: 13, moules: "5.2 kg",vin: "650 ml", echalote: "13", persil: "3 bottes", beurre: "195 g"},
+      { nb: 14, moules: "5.6 kg",vin: "700 ml", echalote: "14", persil: "3 bottes", beurre: "210 g"},
+      { nb: 15, moules: "6 kg",  vin: "750 ml", echalote: "15", persil: "3 bottes", beurre: "225 g"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦪", titre: "Nettoyer les moules",    detail: "Gratter et rincer les moules. Enlever les filaments. Jeter les moules ouvertes ou cassées.", badge: null },
+      { icone: "🧅", titre: "Faire revenir",          detail: "Faire revenir échalotes et ail émincés dans le beurre 2 min.", badge: null },
+      { icone: "🍷", titre: "Cuire les moules",       detail: "Ajouter le vin blanc et les moules. Couvrir à feu vif. Secouer régulièrement.", badge: "⏱ 5-7 min" },
+      { icone: "🌿", titre: "Servir",                 detail: "Jeter les moules fermées. Parsemer de persil haché. Servir avec frites et pain de campagne.", badge: null },
+    ]
+  },
+
+  coktailcosmopolitan: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍸",
+    description: "Sex on the Beach — vodka, pêche, jus d'orange et cranberry. Le cocktail tropical fruité et coloré des soirées d'été.",
+    tableauSexBeach: [
+      { nb:  1, vodka: "4 cl",  peche: "2 cl",   orange: "6 cl",  cranberry: "4 cl"  },
+      { nb:  2, vodka: "8 cl",  peche: "4 cl",   orange: "12 cl", cranberry: "8 cl"  },
+      { nb:  3, vodka: "12 cl", peche: "6 cl",   orange: "18 cl", cranberry: "12 cl" },
+      { nb:  4, vodka: "16 cl", peche: "8 cl",   orange: "24 cl", cranberry: "16 cl" },
+      { nb:  5, vodka: "20 cl", peche: "10 cl",  orange: "30 cl", cranberry: "20 cl" },
+      { nb:  6, vodka: "24 cl", peche: "12 cl",  orange: "36 cl", cranberry: "24 cl" },
+      { nb:  7, vodka: "28 cl", peche: "14 cl",  orange: "42 cl", cranberry: "28 cl" },
+      { nb:  8, vodka: "32 cl", peche: "16 cl",  orange: "48 cl", cranberry: "32 cl" },
+      { nb:  9, vodka: "36 cl", peche: "18 cl",  orange: "54 cl", cranberry: "36 cl" },
+      { nb: 10, vodka: "40 cl", peche: "20 cl",  orange: "60 cl", cranberry: "40 cl" },
+      { nb: 11, vodka: "44 cl", peche: "22 cl",  orange: "66 cl", cranberry: "44 cl" },
+      { nb: 12, vodka: "48 cl", peche: "24 cl",  orange: "72 cl", cranberry: "48 cl" },
+      { nb: 13, vodka: "52 cl", peche: "26 cl",  orange: "78 cl", cranberry: "52 cl" },
+      { nb: 14, vodka: "56 cl", peche: "28 cl",  orange: "84 cl", cranberry: "56 cl" },
+      { nb: 15, vodka: "60 cl", peche: "30 cl",  orange: "90 cl", cranberry: "60 cl" },
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Verre et glace",         detail: "Remplir un grand verre de glaçons.", badge: null },
+      { icone: "🍸", titre: "Verser",                 detail: "Verser vodka, liqueur de pêche et jus d'orange. Mélanger.", badge: null },
+      { icone: "🍒", titre: "Cranberry",              detail: "Verser doucement le jus de cranberry. Il va couler au fond. Garnir d'une tranche d'orange.", badge: null },
+    ]
+  },
+
+  mocktailmentheagume: {
+    base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🌿",
+    description: "Mocktail Menthe Concombre — concombre frais, menthe, citron vert et eau gazeuse. Le mocktail ultra-frais et detox de l'été.",
+    tableauMocktailMenthe: [
+      { nb:  1, concombre: "¼", menthe: "6 feuilles", citron: "½", miel: "1 c.à.c", eauGaz: "150 ml" },
+      { nb:  2, concombre: "½", menthe: "12 feuilles",citron: "1", miel: "2 c.à.c", eauGaz: "300 ml" },
+      { nb:  3, concombre: "¾", menthe: "18 feuilles",citron: "1½",miel: "3 c.à.c", eauGaz: "450 ml" },
+      { nb:  4, concombre: "1", menthe: "24 feuilles",citron: "2", miel: "4 c.à.c", eauGaz: "600 ml" },
+      { nb:  5, concombre: "1", menthe: "30 feuilles",citron: "2", miel: "5 c.à.c", eauGaz: "750 ml" },
+      { nb:  6, concombre: "1½",menthe: "36 feuilles",citron: "3", miel: "6 c.à.c", eauGaz: "900 ml" },
+      { nb:  7, concombre: "1½",menthe: "42 feuilles",citron: "3", miel: "7 c.à.c", eauGaz: "1050 ml"},
+      { nb:  8, concombre: "2", menthe: "48 feuilles",citron: "4", miel: "8 c.à.c", eauGaz: "1200 ml"},
+      { nb:  9, concombre: "2", menthe: "54 feuilles",citron: "4", miel: "9 c.à.c", eauGaz: "1350 ml"},
+      { nb: 10, concombre: "2½",menthe: "60 feuilles",citron: "5", miel: "10 c.à.c",eauGaz: "1500 ml"},
+      { nb: 11, concombre: "2½",menthe: "66 feuilles",citron: "5", miel: "11 c.à.c",eauGaz: "1650 ml"},
+      { nb: 12, concombre: "3", menthe: "72 feuilles",citron: "6", miel: "12 c.à.c",eauGaz: "1800 ml"},
+      { nb: 13, concombre: "3", menthe: "78 feuilles",citron: "6", miel: "13 c.à.c",eauGaz: "1950 ml"},
+      { nb: 14, concombre: "3½",menthe: "84 feuilles",citron: "7", miel: "14 c.à.c",eauGaz: "2100 ml"},
+      { nb: 15, concombre: "3½",menthe: "90 feuilles",citron: "7", miel: "15 c.à.c",eauGaz: "2250 ml"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥒", titre: "Mixer concombre",        detail: "Mixer le concombre épluché avec les feuilles de menthe, jus de citron et miel.", badge: null },
+      { icone: "🧊", titre: "Filtrer et glacer",      detail: "Filtrer le mélange. Verser sur glaçons.", badge: null },
+      { icone: "💧", titre: "Compléter",              detail: "Compléter d'eau gazeuse. Décorer de rondelles de concombre et feuilles de menthe fraîche.", badge: null },
+    ]
+  },
+
+  tartechocolatcaramel: {
+    base: 8, temps: "1h + 2h frigo", niveau: "⭐⭐ Intermédiaire", emoji: "🍫",
+    description: "Tarte Chocolat Caramel Beurre Salé — ganache chocolat noir sur caramel au beurre salé dans une pâte sablée. La tarte indulgente !",
+    tableauTarteChocoCaramel: [
+      { nb:  2, pateSablee: "150 g", chocolat: "60 g",  creme: "60 ml",  sucre: "60 g",  beurre: "45 g",  sel: "1 pincée" },
+      { nb:  4, pateSablee: "300 g", chocolat: "120 g", creme: "120 ml", sucre: "120 g", beurre: "90 g",  sel: "2 pincées"},
+      { nb:  6, pateSablee: "450 g", chocolat: "180 g", creme: "180 ml", sucre: "180 g", beurre: "135 g", sel: "3 pincées"},
+      { nb:  8, pateSablee: "600 g", chocolat: "240 g", creme: "240 ml", sucre: "240 g", beurre: "180 g", sel: "4 pincées"},
+      { nb: 10, pateSablee: "750 g", chocolat: "300 g", creme: "300 ml", sucre: "300 g", beurre: "225 g", sel: "5 pincées"},
+      { nb: 12, pateSablee: "900 g", chocolat: "360 g", creme: "360 ml", sucre: "360 g", beurre: "270 g", sel: "6 pincées"},
+      { nb: 14, pateSablee: "1050 g",chocolat: "420 g", creme: "420 ml", sucre: "420 g", beurre: "315 g", sel: "7 pincées"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Foncer et cuire à blanc", detail: "Foncer la pâte sablée dans le moule. Cuire à blanc.", badge: "⏱ 20 min à 180°C" },
+      { icone: "🍯", titre: "Caramel beurre salé",    detail: "Faire un caramel à sec avec le sucre. Décuire avec la crème chaude. Incorporer le beurre et le sel. Verser dans le fond de tarte. Réfrigérer.", badge: "⏱ 1h frigo" },
+      { icone: "🍫", titre: "Ganache chocolat",       detail: "Chauffer la crème restante. Verser sur le chocolat haché. Mélanger jusqu'à brillant. Verser sur le caramel refroidi.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer",            detail: "Laisser prendre au frigo. Décorer de fleur de sel et d'éclats de caramel.", badge: "⏱ 2h frigo" },
+    ]
+  },
+
+  soupeharira: {
+    base: 6, temps: "1h", niveau: "⭐ Facile", emoji: "🫘",
+    description: "Harira Marocaine — soupe de lentilles, pois chiches, tomates et épices. La soupe du Ramadan, nourrissante et parfumée.",
+    tableauSoupeHarira: [
+      { nb:  1, lentilles: "40 g",  poischiches: "40 g",  tomates: "100 g", bouillon: "300 ml", ail: "1 gousse" },
+      { nb:  2, lentilles: "80 g",  poischiches: "80 g",  tomates: "200 g", bouillon: "600 ml", ail: "2 gousses"},
+      { nb:  3, lentilles: "120 g", poischiches: "120 g", tomates: "300 g", bouillon: "900 ml", ail: "3 gousses"},
+      { nb:  4, lentilles: "160 g", poischiches: "160 g", tomates: "400 g", bouillon: "1.2 L",  ail: "4 gousses"},
+      { nb:  5, lentilles: "200 g", poischiches: "200 g", tomates: "500 g", bouillon: "1.5 L",  ail: "5 gousses"},
+      { nb:  6, lentilles: "240 g", poischiches: "240 g", tomates: "600 g", bouillon: "1.8 L",  ail: "6 gousses"},
+      { nb:  7, lentilles: "280 g", poischiches: "280 g", tomates: "700 g", bouillon: "2.1 L",  ail: "7 gousses"},
+      { nb:  8, lentilles: "320 g", poischiches: "320 g", tomates: "800 g", bouillon: "2.4 L",  ail: "8 gousses"},
+      { nb:  9, lentilles: "360 g", poischiches: "360 g", tomates: "900 g", bouillon: "2.7 L",  ail: "9 gousses"},
+      { nb: 10, lentilles: "400 g", poischiches: "400 g", tomates: "1 kg",  bouillon: "3 L",    ail: "10 gousses"},
+      { nb: 11, lentilles: "440 g", poischiches: "440 g", tomates: "1.1 kg",bouillon: "3.3 L",  ail: "11 gousses"},
+      { nb: 12, lentilles: "480 g", poischiches: "480 g", tomates: "1.2 kg",bouillon: "3.6 L",  ail: "12 gousses"},
+      { nb: 13, lentilles: "520 g", poischiches: "520 g", tomates: "1.3 kg",bouillon: "3.9 L",  ail: "13 gousses"},
+      { nb: 14, lentilles: "560 g", poischiches: "560 g", tomates: "1.4 kg",bouillon: "4.2 L",  ail: "14 gousses"},
+      { nb: 15, lentilles: "600 g", poischiches: "600 g", tomates: "1.5 kg",bouillon: "4.5 L",  ail: "15 gousses"},
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Base aromatique",        detail: "Faire revenir oignon, ail, gingembre, curcuma, cumin et cannelle dans l'huile d'olive.", badge: null },
+      { icone: "🍅", titre: "Tomates et légumineuses",detail: "Ajouter tomates concassées, lentilles rouges, pois chiches égouttés et bouillon.", badge: null },
+      { icone: "⏳", titre: "Mijoter",                detail: "Cuire à feu moyen jusqu'à lentilles fondantes.", badge: "⏱ 40 min" },
+      { icone: "🌿", titre: "Finir",                  detail: "Ajouter coriandre et persil hachés, jus de citron. Servir avec des dattes et des crêpes msemen.", badge: null },
+    ]
+  },
   boeufbourguignon: {
     base: 6,
     temps: "3h30 + marinade",
@@ -8075,6 +8728,30 @@ function initTablesGlobales() {
     "veloutePoiron": { table: "tableauVeloutePotiron", fn: htmlTableauVeloutePotironColonnes, label: "personne" },
     "chocolatChaud": { table: "tableauChocolatChaud", fn: htmlTableauChocolatChaudColonnes, label: "tasse" },
     "granolaMaison": { table: "tableauGranolaMaison", fn: htmlTableauGranolaMaisonColonnes, label: "personne" },
+    "tartetatinpommes": { table: "tableauTarteTatin", fn: htmlTableauTarteTatinColonnes, label: "personne" },
+    "croissant": { table: "tableauCroissant", fn: htmlTableauCroissantColonnes, label: "croissant" },
+    "verrineframboisechocolat": { table: "tableauVerrineFramboise", fn: htmlTableauVerrineFramboiseColonnes, label: "verrine" },
+    "sauteporc": { table: "tableauSautePorc", fn: htmlTableauSautePorcColonnes, label: "personne" },
+    "veloutecourgette": { table: "tableauVelouteCourgette", fn: htmlTableauVelouteCorgetteColonnes, label: "personne" },
+    "ratatouille": { table: "tableauRatatouille", fn: htmlTableauRatatouilleColonnes, label: "personne" },
+    "pouletcurrynoixdecoco": { table: "tableauPouletCurryNoix", fn: htmlTableauPouletCurryNoixColonnes, label: "personne" },
+    "financiers": { table: "tableauFinanciers", fn: htmlTableauFinanciersColonnes, label: "financier" },
+    "choufleurgratin": { table: "tableauChoufleurGratin", fn: htmlTableauChoufleurGratinColonnes, label: "personne" },
+    "salmongrillee": { table: "tableauSalmonGrillee", fn: htmlTableauSalmonGrilleeColonnes, label: "personne" },
+    "sobejaponais": { table: "tableauSoba", fn: htmlTableauSobaColonnes, label: "personne" },
+    "tartepistache": { table: "tableauTartePistache", fn: htmlTableauTartePistacheColonnes, label: "personne" },
+    "agneluroti": { table: "tableauAgnelRoti", fn: htmlTableauAgnelRotiColonnes, label: "personne" },
+    "crepesbretonnes": { table: "tableauCrepesBretonnes", fn: htmlTableauCrepesBretonnesColonnes, label: "galette" },
+    "stroganov": { table: "tableauStroganov", fn: htmlTableauStroganovColonnes, label: "personne" },
+    "pizzahawaienne": { table: "tableauPizzaHawaiene", fn: htmlTableauPizzaHawaienneColonnes, label: "pizza" },
+    "pouletescalopes": { table: "tableauPouletEscalopes", fn: htmlTableauPouletEscalopesColonnes, label: "personne" },
+    "tofusaute": { table: "tableauTofuSaute", fn: htmlTableauTofuSauteColonnes, label: "personne" },
+    "saladecaprese": { table: "tableauCaprese", fn: htmlTableauCapreseColonnes, label: "personne" },
+    "moulesmarinieres": { table: "tableauMoulesMarinieres", fn: htmlTableauMoulesMarinnieresColonnes, label: "personne" },
+    "coktailcosmopolitan": { table: "tableauSexBeach", fn: htmlTableauSexBeachColonnes, label: "verre" },
+    "mocktailmentheagume": { table: "tableauMocktailMenthe", fn: htmlTableauMocktailMentheColonnes, label: "verre" },
+    "tartechocolatcaramel": { table: "tableauTarteChocoCaramel", fn: htmlTableauTarteChocoCaramelColonnes, label: "personne" },
+    "soupeharira": { table: "tableauSoupeHarira", fn: htmlTableauSoupeHariraColonnes, label: "personne" },
     "saumoncrouteherbes":{ table: "tableauSaumonCroute",   fn: htmlTableauSaumonCrouteColonnes,   label: "personne" },
     "pizzaprosciuttoroquette":{ table: "tableauPizzaProsciutto", fn: htmlTableauPizzaProsciuttoColonnes, label: "pizza" },
     "pizzatruffe":     { table: "tableauPizzaTruffe",     fn: htmlTableauPizzaTruffeColonnes,    label: "pizza" },
@@ -8636,6 +9313,79 @@ function htmlTableauPizzaPatateColonnes(l) {
 }
 function htmlTableauPizzaBresilieneColonnes(l) {
   return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🌴 Cœurs de palmier</th><td>${l.palmier}</td></tr><tr><th>🌽 Maïs</th><td>${l.mais}</td></tr><tr><th>🫒 Olives</th><td>${l.olives}</td></tr>`);
+}
+
+function htmlTableauTarteTatinColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍎 Pommes</th><td>${l.pommes}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🫓 Pâte feuilletée</th><td>${l.pate}</td></tr><tr><th>🪵 Cannelle</th><td>${l.cannelle}</td></tr>`);
+}
+function htmlTableauCroissantColonnes(l) {
+  return col(`<tr><th>🥐 Croissants</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🧈 Beurre de tourage</th><td>${l.beurre}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🟨 Levure</th><td>${l.levure}</td></tr>`);
+}
+function htmlTableauVerrineFramboiseColonnes(l) {
+  return col(`<tr><th>🍫 Verrines</th><td><b>${l.nb}</b></td></tr><tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr><tr><th>🫐 Framboises</th><td>${l.framboises}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>`);
+}
+function htmlTableauSautePorcColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐷 Porc</th><td>${l.porc}</td></tr><tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
+}
+function htmlTableauVelouteCorgetteColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥒 Courgettes</th><td>${l.courgette}</td></tr><tr><th>🧀 Fromage de chèvre</th><td>${l.chevre}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🌿 Basilic</th><td>${l.basilic}</td></tr>`);
+}
+function htmlTableauRatatouilleColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍆 Aubergine</th><td>${l.aubergine}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr><tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+function htmlTableauPouletCurryNoixColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🌶️ Curry</th><td>${l.curry}</td></tr><tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr><tr><th>🌿 Coriandre</th><td>${l.coriandre}</td></tr>`);
+}
+function htmlTableauFinanciersColonnes(l) {
+  return col(`<tr><th>🟡 Financiers</th><td><b>${l.nb}</b></td></tr><tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr><tr><th>🧈 Beurre noisette</th><td>${l.beurre}</td></tr><tr><th>🌰 Poudre d'amande</th><td>${l.poudreAmande}</td></tr><tr><th>🍬 Sucre glace</th><td>${l.sucreGlace}</td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr>`);
+}
+function htmlTableauChoufleurGratinColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥦 Chou-fleur</th><td>${l.choufleur}</td></tr><tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr><tr><th>🧀 Gruyère</th><td>${l.gruyere}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+function htmlTableauSalmonGrilleeColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐟 Saumon</th><td>${l.saumon}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🌿 Câpres</th><td>${l.capres}</td></tr><tr><th>🌿 Aneth</th><td>${l.aneth}</td></tr>`);
+}
+function htmlTableauSobaColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍜 Soba (sarrasin)</th><td>${l.soba}</td></tr><tr><th>💧 Dashi</th><td>${l.dashi}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr><tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr><tr><th>🌿 Ciboule</th><td>${l.ciboule}</td></tr>`);
+}
+function htmlTableauTartePistacheColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâte sablée</th><td>${l.pateSablee}</td></tr><tr><th>🟢 Pistaches</th><td>${l.pistaches}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍓 Framboises</th><td>${l.framboises}</td></tr>`);
+}
+function htmlTableauAgnelRotiColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐑 Gigot d'agneau</th><td>${l.agneau}</td></tr><tr><th>🧄 Ail</th><td>${l.ail}</td></tr><tr><th>🌿 Romarin</th><td>${l.romarin}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
+}
+function htmlTableauCrepesBretonnesColonnes(l) {
+  return col(`<tr><th>🫓 Galettes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine sarrasin</th><td>${l.farine}</td></tr><tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🍖 Jambon</th><td>${l.jambon}</td></tr><tr><th>🧀 Fromage</th><td>${l.fromage}</td></tr>`);
+}
+function htmlTableauStroganovColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Bœuf</th><td>${l.boeuf}</td></tr><tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🟡 Moutarde</th><td>${l.moutarde}</td></tr>`);
+}
+function htmlTableauPizzaHawaienneColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍖 Jambon</th><td>${l.jambon}</td></tr><tr><th>🍍 Ananas</th><td>${l.ananas}</td></tr>`);
+}
+function htmlTableauPouletEscalopesColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍞 Chapelure</th><td>${l.chapelure}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+function htmlTableauTofuSauteColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🧀 Tofu ferme</th><td>${l.tofu}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr><tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr><tr><th>🌾 Graines de sésame</th><td>${l.sesame}</td></tr><tr><th>🥬 Bok choy</th><td>${l.bok_choy}</td></tr>`);
+}
+function htmlTableauCapreseColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella di bufala</th><td>${l.mozza}</td></tr><tr><th>🌿 Basilic frais</th><td>${l.basilic}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
+}
+function htmlTableauMoulesMarinnieresColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🦪 Moules fraîches</th><td>${l.moules}</td></tr><tr><th>🍷 Vin blanc sec</th><td>${l.vin}</td></tr><tr><th>🧅 Échalotes</th><td>${l.echalote}</td></tr><tr><th>🌿 Persil</th><td>${l.persil}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+function htmlTableauSexBeachColonnes(l) {
+  return col(`<tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr><tr><th>🍑 Liqueur de pêche</th><td>${l.peche}</td></tr><tr><th>🍊 Jus d'orange</th><td>${l.orange}</td></tr><tr><th>🍒 Jus de cranberry</th><td>${l.cranberry}</td></tr>`);
+}
+function htmlTableauMocktailMentheColonnes(l) {
+  return col(`<tr><th>🌿 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr><tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr><tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
+}
+function htmlTableauTarteChocoCaramelColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâte sablée</th><td>${l.pateSablee}</td></tr><tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+function htmlTableauSoupeHariraColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🫘 Lentilles corail</th><td>${l.lentilles}</td></tr><tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🧄 Ail</th><td>${l.ail}</td></tr>`);
 }
 
 function htmlTableauBlanquetteColonnes(l) {
@@ -10212,6 +10962,30 @@ const prixCalories = {
   veloutePoiron: { base: 4, baseLabel: "4 personnes", prixTotal: 2.5, calTotal: 600, unite: "personne" },
   chocolatChaud: { base: 2, baseLabel: "2 personnes", prixTotal: 2.0, calTotal: 400, unite: "personne" },
   granolaMaison: { base: 6, baseLabel: "6 personnes", prixTotal: 3.0, calTotal: 1800, unite: "personne" },
+  tartetatinpommes: { base: 6, baseLabel: "6 personnes", prixTotal: 4.0, calTotal: 1800, unite: "personne" },
+  croissant: { base: 8, baseLabel: "8 personnes", prixTotal: 3.0, calTotal: 2400, unite: "personne" },
+  verrineframboisechocolat: { base: 4, baseLabel: "4 personnes", prixTotal: 4.0, calTotal: 1200, unite: "personne" },
+  sauteporc: { base: 4, baseLabel: "4 personnes", prixTotal: 6.0, calTotal: 1200, unite: "personne" },
+  veloutecourgette: { base: 4, baseLabel: "4 personnes", prixTotal: 2.5, calTotal: 600, unite: "personne" },
+  ratatouille: { base: 4, baseLabel: "4 personnes", prixTotal: 3.5, calTotal: 800, unite: "personne" },
+
+  financiers: { base: 12, baseLabel: "12 personnes", prixTotal: 2.5, calTotal: 2400, unite: "personne" },
+  choufleurgratin: { base: 4, baseLabel: "4 personnes", prixTotal: 3.5, calTotal: 800, unite: "personne" },
+  salmongrillee: { base: 4, baseLabel: "4 personnes", prixTotal: 8.0, calTotal: 800, unite: "personne" },
+  sobejaponais: { base: 2, baseLabel: "2 personnes", prixTotal: 3.0, calTotal: 600, unite: "personne" },
+  tartepistache: { base: 8, baseLabel: "8 personnes", prixTotal: 6.0, calTotal: 2400, unite: "personne" },
+  agneluroti: { base: 6, baseLabel: "6 personnes", prixTotal: 12.0, calTotal: 1800, unite: "personne" },
+  crepesbretonnes: { base: 4, baseLabel: "4 personnes", prixTotal: 4.0, calTotal: 1200, unite: "personne" },
+  stroganov: { base: 4, baseLabel: "4 personnes", prixTotal: 8.0, calTotal: 1400, unite: "personne" },
+  pizzahawaienne: { base: 2, baseLabel: "2 personnes", prixTotal: 4.0, calTotal: 1200, unite: "personne" },
+  pouletescalopes: { base: 4, baseLabel: "4 personnes", prixTotal: 5.0, calTotal: 1200, unite: "personne" },
+  tofusaute: { base: 4, baseLabel: "4 personnes", prixTotal: 4.0, calTotal: 800, unite: "personne" },
+  saladecaprese: { base: 4, baseLabel: "4 personnes", prixTotal: 4.0, calTotal: 600, unite: "personne" },
+  moulesmarinieres: { base: 4, baseLabel: "4 personnes", prixTotal: 8.0, calTotal: 800, unite: "personne" },
+  coktailcosmopolitan: { base: 1, baseLabel: "1 personnes", prixTotal: 1.5, calTotal: 140, unite: "personne" },
+  mocktailmentheagume: { base: 1, baseLabel: "1 personnes", prixTotal: 0.8, calTotal: 60, unite: "personne" },
+  tartechocolatcaramel: { base: 8, baseLabel: "8 personnes", prixTotal: 5.0, calTotal: 3200, unite: "personne" },
+  soupeharira: { base: 6, baseLabel: "6 personnes", prixTotal: 3.0, calTotal: 1200, unite: "personne" },
   bibimbap:           { base: 2,  baseLabel: "2 bols",        prixTotal: 7.00,  calTotal: 1000, unite: "bol"      },
   moquecabresil:      { base: 4,  baseLabel: "4 personnes",   prixTotal: 9.00,  calTotal: 1200, unite: "personne" },
   rendangboeuf:       { base: 4,  baseLabel: "4 personnes",   prixTotal: 12.00, calTotal: 2000, unite: "personne" },
@@ -10824,6 +11598,31 @@ function choisirRecette(nom) {
     "parisbrestreinterpretation": "Paris-Brest",
     "ramenjaponais":     "Ramen Japonais",
     "bibimbap":          "Bibimbap",
+    "tartetatinpommes": "Tarte Tatin aux Pommes",
+    "croissant": "Croissants au Beurre",
+    "verrineframboisechocolat": "Verrines Framboise Chocolat",
+    "sauteporc": "Sauté de Porc aux Légumes",
+    "veloutecourgette": "Velouté de Courgettes",
+    "ratatouille": "Ratatouille Provençale",
+    "pouletcurrynoixdecoco": "Poulet Curry Noix de Coco",
+    "financiers": "Financiers aux Amandes",
+    "choufleurgratin": "Gratin de Chou-fleur",
+    "salmongrillee": "Saumon Grillé au Citron",
+    "sobejaponais": "Soba Japonais Froids",
+    "tartepistache": "Tarte à la Pistache",
+    "agneluroti": "Gigot d'Agneau Rôti",
+    "crepesbretonnes": "Galettes Bretonnes",
+    "stroganov": "Bœuf Stroganoff",
+    "pizzahawaienne": "Pizza Hawaïenne",
+    "pouletescalopes": "Escalopes de Poulet Panées",
+    "tofusaute": "Tofu Sauté Teriyaki",
+    "saladecaprese": "Salade Caprese",
+    "moulesmarinieres": "Moules Marinières",
+    "coktailcosmopolitan": "Sex on the Beach",
+    "mocktailmentheagume": "Mocktail Menthe Concombre",
+    "tartechocolatcaramel": "Tarte Chocolat Caramel",
+    "soupeharira": "Harira Marocaine",
+
     "blanquetteveau": "Blanquette de Veau",
     "navarin": "Navarin d'Agneau",
     "camembertRoti": "Camembert Rôti au Four",
