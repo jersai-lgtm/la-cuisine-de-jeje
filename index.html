@@ -4179,8 +4179,8 @@ function afficherSection(section, btn) {
       <div class="allergie-search-wrapper">
         <p class="allergie-search-label">🔍 Autre ingrédient à exclure</p>
         <div class="allergie-search-row">
-          <input type="text" id="allergie-custom-input" class="auth-input allergie-input" placeholder="ex: avocat, noix de coco..." onkeydown="if(event.key==='Enter')ajouterAllergieCustom()">
-          <button class="btn-allergie-add" onclick="ajouterAllergieCustom()">+ Ajouter</button>
+          <input type="text" id="allergie-custom-input" class="auth-input allergie-input" placeholder="ex: avocat, noix de coco..." onkeydown="if(event.key==='Enter')ajouterAllergieCustom('p')">
+          <button class="btn-allergie-add" onclick="ajouterAllergieCustom('p')">+ Ajouter</button>
         </div>
         <div id="allergies-custom-liste" class="allergies-custom-tags"></div>
       </div>
@@ -4254,33 +4254,33 @@ function afficherSection(section, btn) {
         <div class="foyer-item">
           <label>👨‍🦳 Adultes</label>
           <div class="counter-row">
-            <button onclick="changerCompteur('p-adultes',-1)">−</button>
-            <input id="p-adultes" type="number" value="2" min="1" max="10" readonly>
-            <button onclick="changerCompteur('p-adultes',1)">+</button>
+            <button onclick="changerCompteur('pp-adultes',-1)">−</button>
+            <input id="pp-adultes" type="number" value="2" min="1" max="10" readonly>
+            <button onclick="changerCompteur('pp-adultes',1)">+</button>
           </div>
         </div>
         <div class="foyer-item">
           <label>🧑‍🦱 Ados (13-17 ans)</label>
           <div class="counter-row">
-            <button onclick="changerCompteur('p-ados',-1)">−</button>
-            <input id="p-ados" type="number" value="0" min="0" max="10" readonly>
-            <button onclick="changerCompteur('p-ados',1)">+</button>
+            <button onclick="changerCompteur('pp-ados',-1)">−</button>
+            <input id="pp-ados" type="number" value="0" min="0" max="10" readonly>
+            <button onclick="changerCompteur('pp-ados',1)">+</button>
           </div>
         </div>
         <div class="foyer-item">
           <label>🧒 Enfants (3-12 ans)</label>
           <div class="counter-row">
-            <button onclick="changerCompteur('p-enfants',-1)">−</button>
-            <input id="p-enfants" type="number" value="0" min="0" max="10" readonly>
-            <button onclick="changerCompteur('p-enfants',1)">+</button>
+            <button onclick="changerCompteur('pp-enfants',-1)">−</button>
+            <input id="pp-enfants" type="number" value="0" min="0" max="10" readonly>
+            <button onclick="changerCompteur('pp-enfants',1)">+</button>
           </div>
         </div>
         <div class="foyer-item">
           <label>👶 Bébés (0-2 ans)</label>
           <div class="counter-row">
-            <button onclick="changerCompteur('p-bebe',-1)">−</button>
-            <input id="p-bebe" type="number" value="0" min="0" max="5" readonly>
-            <button onclick="changerCompteur('p-bebe',1)">+</button>
+            <button onclick="changerCompteur('pp-bebe',-1)">−</button>
+            <input id="pp-bebe" type="number" value="0" min="0" max="5" readonly>
+            <button onclick="changerCompteur('pp-bebe',1)">+</button>
           </div>
         </div>
       </div>
@@ -4315,10 +4315,10 @@ function afficherSection(section, btn) {
       <div class="allergie-search-wrapper">
         <p class="allergie-search-label">🔍 Autre ingrédient à exclure</p>
         <div class="allergie-search-row">
-          <input type="text" id="allergie-custom-input" class="auth-input allergie-input" placeholder="ex: avocat, noix de coco..." onkeydown="if(event.key==='Enter')ajouterAllergieCustom()">
-          <button class="btn-allergie-add" onclick="ajouterAllergieCustom()">+ Ajouter</button>
+          <input type="text" id="pp-allergie-input" class="auth-input allergie-input" placeholder="ex: avocat, noix de coco..." onkeydown="if(event.key==='Enter')ajouterAllergieCustom('pp')">
+          <button class="btn-allergie-add" onclick="ajouterAllergieCustom('pp')">+ Ajouter</button>
         </div>
-        <div id="allergies-custom-liste" class="allergies-custom-tags"></div>
+        <div id="pp-allergies-liste" class="allergies-custom-tags"></div>
       </div>
       <h4 style="margin-top:16px">🎯 Vos objectifs</h4>
       <div class="prefs-grid objectifs-grid">
@@ -4339,7 +4339,7 @@ function afficherSection(section, btn) {
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="américaine"> 🇺🇸 Américaine</label>
       </div>
       <h4 style="margin-top:16px">👨‍🍳 Niveau en cuisine</h4>
-      <select id="p-niveau" class="auth-input">
+      <select id="pp-niveau" class="auth-input">
         <option value="débutant">🌱 Débutant — recettes simples</option>
         <option value="intermédiaire">⭐ Intermédiaire — j'aime cuisiner</option>
         <option value="confirmé">🔥 Confirmé — aucun défi ne me fait peur</option>
@@ -4410,28 +4410,38 @@ function filtrerFavoris() {
 // ==============================
 window._allergiesCustom = [];
 
-function ajouterAllergieCustom() {
-  const input = document.getElementById('allergie-custom-input');
+function ajouterAllergieCustom(prefix) {
+  prefix = prefix || 'p';
+  const inputId = prefix === 'pp' ? 'pp-allergie-input' : 'allergie-custom-input';
+  const input = document.getElementById(inputId);
   if (!input) return;
   const val = input.value.trim().toLowerCase();
   if (!val) return;
-  if (window._allergiesCustom.includes(val)) { input.value = ''; return; }
-  window._allergiesCustom.push(val);
+  const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
+  if (!window[store]) window[store] = [];
+  if (window[store].includes(val)) { input.value = ''; return; }
+  window[store].push(val);
   input.value = '';
-  renderAllergiesCustom();
+  renderAllergiesCustom(prefix);
 }
 
-function renderAllergiesCustom() {
-  const liste = document.getElementById('allergies-custom-liste');
+function renderAllergiesCustom(prefix) {
+  prefix = prefix || 'p';
+  const listeId = prefix === 'pp' ? 'pp-allergies-liste' : 'allergies-custom-liste';
+  const liste = document.getElementById(listeId);
   if (!liste) return;
-  liste.innerHTML = window._allergiesCustom.map(a =>
-    `<span class="allergie-tag">${a} <button onclick="retirerAllergieCustom('${a}')">✕</button></span>`
+  const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
+  const items = window[store] || [];
+  liste.innerHTML = items.map(a =>
+    `<span class="allergie-tag">${a} <button onclick="retirerAllergieCustom('${a}','${prefix}')">✕</button></span>`
   ).join('');
 }
 
-function retirerAllergieCustom(val) {
-  window._allergiesCustom = window._allergiesCustom.filter(a => a !== val);
-  renderAllergiesCustom();
+function retirerAllergieCustom(val, prefix) {
+  prefix = prefix || 'p';
+  const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
+  if (window[store]) window[store] = window[store].filter(a => a !== val);
+  renderAllergiesCustom(prefix);
 }
 
 // ==============================
