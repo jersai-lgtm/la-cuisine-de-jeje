@@ -4433,11 +4433,11 @@ function renderAllergiesCustom(prefix) {
   const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
   const items = window[store] || [];
   liste.innerHTML = items.map(a =>
-    `<span class="allergie-tag">${a} <button onclick="retirerAllergieCustom('${a}','${prefix}')">✕</button></span>`
+    `<span class="allergie-tag">${a} <button onclick="retirerAC('${a}','${prefix}')">✕</button></span>`
   ).join('');
 }
 
-function retirerAllergieCustom(val, prefix) {
+function retirerAC(val, prefix) {
   prefix = prefix || 'p';
   const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
   if (window[store]) window[store] = window[store].filter(a => a !== val);
