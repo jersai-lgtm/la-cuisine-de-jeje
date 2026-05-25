@@ -4,14 +4,14 @@ const ALLERGENES_MOTS = {
   "lait":           ["lait","fromage","beurre","crème","yaourt","mascarpone","mozzarella","parmesan","gruyère","cheddar","ricotta","feta","gorgonzola","pecorino","camembert","béchamel"],
   "œufs":           ["œuf","oeuf","oeufs"],
   "gluten":         ["farine","blé","orge","seigle","avoine","semoule","pâte","pain","biscuit","gaufre","crêpe","pizza","lasagne","spätzle","couscous"],
-  "poisson":        ["poisson","saumon","thon","dorade","anchois","cabillaud","truite","hareng"],
-  "crustacés":      ["crevette","homard","langouste","crabe","écrevisse","langoustine"],
+  "poisson":        ["poisson","saumon","thon","dorade","anchois","cabillaud","truite","hareng","crevette","fruits de mer","tartare"],
+  "crustacés":      ["crevette","crevettes","homard","langouste","crabe","écrevisse","langoustine","fruits de mer"],
   "soja":           ["soja","tofu","edamame","miso"],
   "céleri":         ["céleri","celeri"],
   "moutarde":       ["moutarde"],
   "sésame":         ["sésame","sesame","tahini"],
   "sulfites":       ["vin","vinaigre","champagne","prosecco","riesling"],
-  "végétarien":     ["bœuf","veau","porc","poulet","agneau","canard","jambon","lardons","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami","nduja","jarret","pork belly"],
+  "végétarien":     ["bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami","nduja","jarret","pork","bacon","pancetta"],
   "pesco-végétarien": ["bœuf","veau","porc","poulet","agneau","canard","jambon","lardons","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami"],
   "vegan":          ["lait","fromage","beurre","crème","œuf","oeuf","oeufs","miel","mozzarella","parmesan","mascarpone","yaourt","bœuf","veau","porc","poulet","agneau","canard","jambon","lardons","saumon","thon","crevette","anchois"],
   "sans-gluten":    ["farine","blé","semoule","pâte","pain","biscuit","gaufre","crêpe","lasagne","spätzle","couscous"],
@@ -109,17 +109,192 @@ window.addEventListener('profilMisAJour', appliquerPreferencesVisuelles);
 // ==============================
 // FAVORIS
 // ==============================
+
+// ==============================
+// HISTORIQUE RECETTES VUES
+// ==============================
+window._recentsVus = JSON.parse(localStorage.getItem("recentsVus") || "[]");
+
+function ajouterRecent(key) {
+  window._recentsVus = [key, ...window._recentsVus.filter(k => k !== key)].slice(0, 20);
+  try { localStorage.setItem("recentsVus", JSON.stringify(window._recentsVus)); } catch(e) {}
+  // Mettre à jour l'accueil si visible
+  if (document.getElementById("section-accueil")?.style.display !== "none") {
+    chargerAccueilRecents();
+  }
+}
+
+// ==============================
+// ACCUEIL PERSONNALISÉ
+// ==============================
+function afficherAccueil() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  fermerSousMenus();
+
+  // Activer bouton
+  document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  const btn = document.getElementById("btn-accueil");
+  if (btn) btn.classList.add("active");
+
+  // Afficher section accueil, masquer grille
+  const secAccueil = document.getElementById("section-accueil");
+  const secCartes  = document.getElementById("section-cartes");
+  if (secAccueil) secAccueil.style.display = "block";
+  if (secCartes)  secCartes.style.display  = "none";
+
+  chargerAccueil();
+}
+
+function chargerAccueil() {
+  chargerAccueilFavoris();
+  chargerAccueilMenus();
+  chargerAccueilRecents();
+  chargerAccueilSuggestions();
+}
+
+// Favoris
+function chargerAccueilFavoris() {
+  const row = document.getElementById("accueil-favoris-row");
+  if (!row) return;
+  const favs = window.userProfile?.favoris || [];
+  if (!window.currentUser) {
+    row.innerHTML = `<div class="accueil-empty">👤 <a onclick="ouvrirModalAuth()" style="color:#ff8fb3;cursor:pointer">Connecte-toi</a> pour voir tes favoris</div>`;
+    return;
+  }
+  if (favs.length === 0) {
+    row.innerHTML = `<div class="accueil-empty">Aucun favori — appuie sur 🤍 dans une recette !</div>`;
+    return;
+  }
+  row.innerHTML = favs.slice(0, 10).map(key => miniCarte(key)).join("");
+}
+
+// Derniers menus générés
+function chargerAccueilMenus() {
+  const row = document.getElementById("accueil-menus-row");
+  if (!row) return;
+  const hist = window.userProfile?.historiqueMenus || [];
+  if (hist.length === 0) {
+    row.innerHTML = `<div class="accueil-empty">Génère ton premier menu dans l'onglet Menus !</div>`;
+    return;
+  }
+  // Prendre le dernier menu
+  const dernier = hist[hist.length - 1];
+  const semaine = dernier?.menu?.semaine || [];
+  if (semaine.length === 0) {
+    row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`;
+    return;
+  }
+  row.innerHTML = semaine.slice(0, 5).map(j => `
+    <div class="accueil-menu-jour">
+      <div class="accueil-menu-jour-label">${j.jour}</div>
+      <div class="accueil-menu-repas" onclick="ouvrirFiche('${j.midi?.recette}','')">
+        <span>🌞</span> ${getNomRecette(j.midi?.recette) || j.midi?.recette || "—"}
+      </div>
+      <div class="accueil-menu-repas" onclick="ouvrirFiche('${j.soir?.recette}','')">
+        <span>🌙</span> ${getNomRecette(j.soir?.recette) || j.soir?.recette || "—"}
+      </div>
+    </div>
+  `).join("");
+}
+
+// Dernières recettes vues
+function chargerAccueilRecents() {
+  const row = document.getElementById("accueil-recents-row");
+  if (!row) return;
+  const recents = window._recentsVus || [];
+  if (recents.length === 0) {
+    row.innerHTML = `<div class="accueil-empty">Aucune recette vue récemment</div>`;
+    return;
+  }
+  row.innerHTML = recents.slice(0, 10).map(key => miniCarte(key)).join("");
+}
+
+// Suggestions selon profil
+function chargerAccueilSuggestions() {
+  const row = document.getElementById("accueil-suggestions-row");
+  if (!row) return;
+
+  const toutes = Object.keys(recettes);
+  const favs   = window.userProfile?.favoris || [];
+  const vus    = window._recentsVus || [];
+  const exclus = new Set([...favs, ...vus]);
+
+  // Filtrer selon allergènes
+  const prefs = window.userProfile?.preferences;
+  const motsExclus = new Set();
+  if (prefs) {
+    [...(prefs.allergies||[]), ...(prefs.regimes||[]), ...(prefs.allergiesCustom||[])].forEach(a => {
+      (ALLERGENES_MOTS[a] || [a]).forEach(m => motsExclus.add(m.toLowerCase()));
+    });
+  }
+
+  let pool = toutes.filter(key => {
+    if (exclus.has(key)) return false;
+    if (motsExclus.size === 0) return true;
+    const r = recettes[key];
+    const texte = [key, r?.description || ""].join(" ").toLowerCase();
+    return ![...motsExclus].some(m => texte.includes(m));
+  });
+
+  // Mélanger et prendre 10
+  pool = pool.sort(() => Math.random() - 0.5).slice(0, 10);
+  if (pool.length === 0) {
+    row.innerHTML = `<div class="accueil-empty">Aucune suggestion disponible</div>`;
+    return;
+  }
+  row.innerHTML = pool.map(key => miniCarte(key)).join("");
+}
+
+// Mini carte pour les scrolls horizontaux
+function miniCarte(key) {
+  if (!key || !recettes[key]) return "";
+  const r    = recettes[key];
+  const nom  = getNomRecette(key);
+  const img  = key.toLowerCase().replace(/[^a-z0-9]/g, "");
+  return `<div class="mini-carte" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
+    <img src="images/${key}.webp" alt="${nom}" onerror="this.style.display='none'">
+    <div class="mini-carte-info">
+      <span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>
+      <span class="mini-carte-nom">${nom}</span>
+      <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
+    </div>
+  </div>`;
+}
+
+function afficherHistorique() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  fermerSousMenus();
+  document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  const btn = document.getElementById("btn-historique");
+  if (btn) btn.classList.add("active");
+
+  const secAccueil = document.getElementById("section-accueil");
+  const secCartes  = document.getElementById("section-cartes");
+  if (secAccueil) secAccueil.style.display = "none";
+  if (secCartes)  secCartes.style.display  = "flex";
+
+  const recents = window._recentsVus || [];
+  const cartes  = document.querySelectorAll(".carte");
+  cartes.forEach(c => {
+    const m   = (c.getAttribute("onclick") || "").match(/ouvrirFiche\('([^']+)'/);
+    const key = m ? m[1] : null;
+    c.style.display = key && recents.includes(key) ? "" : "none";
+  });
+  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+}
+
 function filtrerFavoris() {
-  // Activer le bouton
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   const btn = document.getElementById('btn-favoris');
   if (btn) btn.classList.add('active');
 
-  // Si non connecté
-  if (!window.currentUser) {
-    ouvrirModalAuth();
-    return;
-  }
+  if (!window.currentUser) { ouvrirModalAuth(); return; }
+
+  // Basculer vers la grille
+  const secAccueil = document.getElementById("section-accueil");
+  const secCartes  = document.getElementById("section-cartes");
+  if (secAccueil) secAccueil.style.display = "none";
+  if (secCartes)  secCartes.style.display  = "flex";
 
   const favs = window.userProfile?.favoris || [];
   const cartes = document.querySelectorAll('.carte');
