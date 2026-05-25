@@ -20,7 +20,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Cuisine Jéjé">
-<link rel="apple-touch-icon" href="images/icon-192.png">
+<link rel="apple-touch-icon" href="images/icon-192.webp">
 <script>
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("service-worker.js")
@@ -4335,7 +4335,7 @@ function afficherFavoris() {
   if (!liste) return;
   const favs = window.userProfile?.favoris || [];
   if (favs.length === 0) {
-    liste.innerHTML = '<p style="text-align:center;color:#888;padding:20px">Aucun favori pour l'instant.<br>Appuie sur 🤍 dans une recette pour l'ajouter !</p>';
+    liste.innerHTML = `<p style="text-align:center;color:#888;padding:20px">Aucun favori pour l'instant.<br>Appuie sur 🤍 dans une recette pour l'ajouter !</p>`;
     return;
   }
   liste.innerHTML = favs.map(key => {
