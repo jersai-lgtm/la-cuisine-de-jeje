@@ -3417,7 +3417,10 @@ gtag('config', 'G-390C5MY2SS');
     <div class="plan-field">
       <label>🎯 Préférences alimentaires</label>
       <div class="plan-tags">
-        <button class="plan-tag" onclick="toggleTag(this)" data-val="végétarien">🌱 Végétarien</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="végétarien">🥦 Végétarien</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="vegan">🌱 Vegan</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="protéiné">💪 Protéiné</button>
+        <button class="plan-tag" onclick="toggleTag(this)" data-val="moins-viande">🌿 Moins de viande</button>
         <button class="plan-tag" onclick="toggleTag(this)" data-val="rapide">⚡ Rapide</button>
         <button class="plan-tag" onclick="toggleTag(this)" data-val="healthy">💚 Healthy</button>
         <button class="plan-tag" onclick="toggleTag(this)" data-val="économique">💰 Économique</button>
@@ -3936,21 +3939,23 @@ async function genererMenus() {
   let instructionsRegime = "";
   if (regimesActifs.includes("vegan")) {
     instructionsRegime = "RÉGIME VEGAN STRICT : ZÉRO viande, ZÉRO poisson, ZÉRO produit animal (lait, œufs, fromage, beurre, miel). Uniquement recettes 100% végétales.";
+    if (regimesActifs.includes("protéiné")) instructionsRegime += " PROTÉINÉ VEGAN : privilégier légumineuses (lentilles, pois chiches), tofu, tempeh, seitan, noix.";
   } else if (regimesActifs.includes("végétarien")) {
-    instructionsRegime = "RÉGIME VÉGÉTARIEN STRICT : ZÉRO viande (bœuf, porc, poulet, agneau, canard, jambon, lardons...), ZÉRO poisson. Uniquement recettes sans viande ni poisson.";
+    instructionsRegime = "RÉGIME VÉGÉTARIEN STRICT : ZÉRO viande (bœuf, porc, poulet, agneau, canard, jambon, lardons, bacon, saucisse...), ZÉRO poisson, ZÉRO fruits de mer. Uniquement recettes sans viande ni poisson.";
+    if (regimesActifs.includes("protéiné")) instructionsRegime += " PROTÉINÉ VÉGÉTARIEN : privilégier œufs, fromage, légumineuses (lentilles, pois chiches, haricots), tofu, tempeh — SANS viande ni poisson.";
   } else if (regimesActifs.includes("pesco-végétarien")) {
-    instructionsRegime = "RÉGIME PESCO-VÉGÉTARIEN : ZÉRO viande (bœuf, porc, poulet, agneau, canard...). Le poisson et les fruits de mer sont autorisés.";
+    instructionsRegime = "RÉGIME PESCO-VÉGÉTARIEN : ZÉRO viande (bœuf, porc, poulet, agneau, canard, jambon...). Poisson et fruits de mer autorisés.";
+    if (regimesActifs.includes("protéiné")) instructionsRegime += " PROTÉINÉ : privilégier poissons, œufs, légumineuses.";
+  } else if (regimesActifs.includes("protéiné")) {
+    instructionsRegime = "RÉGIME PROTÉINÉ : privilégier viandes maigres (poulet, dinde, veau), poissons, œufs, légumineuses, tofu. Éviter les plats trop glucidiques.";
   } else if (regimesActifs.includes("moins-viande")) {
     instructionsRegime = "OBJECTIF MOINS DE VIANDE : maximum 2 repas avec viande sur toute la semaine. Privilégier légumes, légumineuses, poisson, œufs.";
   }
   if (regimesActifs.includes("sans-gluten")) {
-    instructionsRegime += " SANS GLUTEN : aucun blé, farine, pâtes, pain, semoule.";
+    instructionsRegime += " SANS GLUTEN STRICT : aucun blé, farine de blé, pâtes, pain, semoule, couscous.";
   }
   if (regimesActifs.includes("sans-lactose")) {
-    instructionsRegime += " SANS LACTOSE : aucun lait, fromage, beurre, crème.";
-  }
-  if (regimesActifs.includes("protéiné")) {
-    instructionsRegime += " RÉGIME PROTÉINÉ : privilégier viandes maigres, poissons, œufs, légumineuses, tofu.";
+    instructionsRegime += " SANS LACTOSE : aucun lait, fromage, beurre, crème fraîche, yaourt.";
   }
 
   const preferences = tagsFinaux.length ? `Préférences : ${tagsFinaux.join(", ")}.` : "";
