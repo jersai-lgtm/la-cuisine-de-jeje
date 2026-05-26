@@ -62,25 +62,33 @@ function chargerAccueilMenus() {
     row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`;
     return;
   }
-  // Afficher comme des mini-cartes par jour
+
+  // Afficher comme des mini-cartes de type recette — une par jour
+  // Cliquer sur une carte ouvre la section menus
+  const navBtn = document.querySelector(".nav-btn[onclick*=menus]") || document.querySelector("[data-section=menus]");
   row.innerHTML = semaine.map(j => {
     const midiKey = j.midi?.recette || j.midi || "";
     const soirKey = j.soir?.recette || j.soir || "";
     const midiNom = getNomRecette(midiKey) || midiKey || "—";
     const soirNom = getNomRecette(soirKey) || soirKey || "—";
-    const midiEmoji = midiKey && typeof getEmoji === "function" ? getEmoji(midiKey) : "🍽️";
-    const soirEmoji = soirKey && typeof getEmoji === "function" ? getEmoji(soirKey) : "🍽️";
-    return `<div class="accueil-menu-card">
+    const emoji1 = midiKey ? (getEmoji(midiKey) || "🍽️") : "🍽️";
+    const emoji2 = soirKey ? (getEmoji(soirKey) || "🍽️") : "🍽️";
+    return `
+    <div class="accueil-menu-card" onclick="afficherSection('menus', document.querySelector('.nav-btn[onclick*=menus]'))">
       <div class="accueil-menu-day">${j.jour}</div>
-      <div class="accueil-menu-item" onclick="afficherSection('menus',document.querySelector('[data-section=menus]'))">
-        <span class="menu-item-emoji">${midiEmoji}</span>
-        <span class="menu-item-label">☀️</span>
-        <span class="menu-item-nom">${midiNom}</span>
+      <div class="accueil-menu-item">
+        <span>${emoji1}</span>
+        <div>
+          <div class="menu-moment">☀️ Midi</div>
+          <div class="menu-item-nom">${midiNom}</div>
+        </div>
       </div>
-      <div class="accueil-menu-item" onclick="afficherSection('menus',document.querySelector('[data-section=menus]'))">
-        <span class="menu-item-emoji">${soirEmoji}</span>
-        <span class="menu-item-label">🌙</span>
-        <span class="menu-item-nom">${soirNom}</span>
+      <div class="accueil-menu-item">
+        <span>${emoji2}</span>
+        <div>
+          <div class="menu-moment">🌙 Soir</div>
+          <div class="menu-item-nom">${soirNom}</div>
+        </div>
       </div>
     </div>`;
   }).join("");
