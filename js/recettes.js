@@ -7629,2645 +7629,890 @@ const recettes = {
       { icone: "🔥", titre: "Cuire au four",                detail: "Enfourner à 200 °C jusqu'à ce que le dessus soit bien doré.", badge: "⏱ 30–40 min" },
       { icone: "❄️", titre: "Laisser refroidir",            detail: "Sortir du four et laisser refroidir complètement avant de démouler et déguster.", badge: null }
     ]
-  }
+  },
+
+  // ============================================================
+  // NOUVELLES RECETTES — BATCH 3 (30 recettes)
+  // ============================================================
+
+  cassoulet: {
+    base: 4, temps: "2h30", niveau: "⭐⭐ Moyen", emoji: "🫘",
+    description: "Le cassoulet toulousain — haricots blancs mijotés avec saucisses, confit de canard et couenne. Un plat du Sud-Ouest généreux et savoureux.",
+    tableauCassoulet: [
+      { nb:  1, haricots: "100 g", saucisses: "75 g",  canard: "1 cuisse", lardons: "30 g",  tomates: "50 g",  oignons: "¼" },
+      { nb:  2, haricots: "200 g", saucisses: "150 g", canard: "1 cuisse", lardons: "60 g",  tomates: "100 g", oignons: "½" },
+      { nb:  3, haricots: "300 g", saucisses: "225 g", canard: "2 cuisses", lardons: "90 g", tomates: "150 g", oignons: "¾" },
+      { nb:  4, haricots: "400 g", saucisses: "300 g", canard: "2 cuisses", lardons: "120 g",tomates: "200 g", oignons: "1" },
+      { nb:  5, haricots: "500 g", saucisses: "375 g", canard: "3 cuisses", lardons: "150 g",tomates: "250 g", oignons: "1.2" },
+      { nb:  6, haricots: "600 g", saucisses: "450 g", canard: "3 cuisses", lardons: "180 g",tomates: "300 g", oignons: "1.5" },
+      { nb:  7, haricots: "700 g", saucisses: "525 g", canard: "4 cuisses", lardons: "210 g",tomates: "350 g", oignons: "1.75" },
+      { nb:  8, haricots: "800 g", saucisses: "600 g", canard: "4 cuisses", lardons: "240 g",tomates: "400 g", oignons: "2" },
+      { nb:  9, haricots: "900 g", saucisses: "675 g", canard: "5 cuisses", lardons: "270 g",tomates: "450 g", oignons: "2.25" },
+      { nb: 10, haricots: "1000 g",saucisses: "750 g", canard: "5 cuisses", lardons: "300 g",tomates: "500 g", oignons: "2.5" },
+      { nb: 11, haricots: "1100 g",saucisses: "825 g", canard: "6 cuisses", lardons: "330 g",tomates: "550 g", oignons: "2.75" },
+      { nb: 12, haricots: "1200 g",saucisses: "900 g", canard: "6 cuisses", lardons: "360 g",tomates: "600 g", oignons: "3" },
+      { nb: 13, haricots: "1300 g",saucisses: "975 g", canard: "7 cuisses", lardons: "390 g",tomates: "650 g", oignons: "3.25" },
+      { nb: 14, haricots: "1400 g",saucisses: "1050 g",canard: "7 cuisses", lardons: "420 g",tomates: "700 g", oignons: "3.5" },
+      { nb: 15, haricots: "1500 g",saucisses: "1125 g",canard: "8 cuisses", lardons: "450 g",tomates: "750 g", oignons: "3.75" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Tremper les haricots", detail: "La veille, faire tremper les haricots blancs secs dans l'eau froide pendant 12h. Égoutter et rincer.", badge: "⏱ 12h" },
+      { icone: "🧅", titre: "Préparer la base", detail: "Faire revenir oignons et ail dans une grande cocotte. Ajouter les lardons et faire dorer.", badge: null },
+      { icone: "🍅", titre: "Ajouter les haricots", detail: "Ajouter les haricots, tomates concassées, bouquet garni, sel, poivre. Couvrir d'eau et laisser mijoter.", badge: "⏱ 1h" },
+      { icone: "🌭", titre: "Ajouter les viandes", detail: "Faire dorer les saucisses. Les ajouter avec le confit de canard dans la cocotte. Mélanger délicatement.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Verser dans un plat en terre. Saupoudrer de chapelure. Passer au four à 180°C pour gratiner.", badge: "⏱ 30 min" }
+    ]
+  },
+
+  hachisparmentier: {
+    base: 4, temps: "50 min", niveau: "⭐ Facile", emoji: "🥔",
+    description: "Le hachis parmentier — viande hachée mijotée sous une généreuse purée de pommes de terre gratinée. Le classique réconfortant de nos grands-mères.",
+    tableauHachis: [
+      { nb:  1, boeuf: "125 g",   pommes: "200 g", oignons: "¼", beurre: "10 g",  lait: "30 ml" },
+      { nb:  2, boeuf: "250 g",   pommes: "400 g", oignons: "½", beurre: "20 g",  lait: "60 ml" },
+      { nb:  3, boeuf: "375 g",   pommes: "600 g", oignons: "¾", beurre: "30 g",  lait: "90 ml" },
+      { nb:  4, boeuf: "500 g",   pommes: "800 g", oignons: "1", beurre: "40 g",  lait: "120 ml" },
+      { nb:  5, boeuf: "625 g",   pommes: "1000 g",oignons: "1.25",beurre: "50 g",lait: "150 ml" },
+      { nb:  6, boeuf: "750 g",   pommes: "1200 g",oignons: "1.5",beurre: "60 g", lait: "180 ml" },
+      { nb:  7, boeuf: "875 g",   pommes: "1400 g",oignons: "1.75",beurre: "70 g",lait: "210 ml" },
+      { nb:  8, boeuf: "1000 g",  pommes: "1600 g",oignons: "2", beurre: "80 g",  lait: "240 ml" },
+      { nb:  9, boeuf: "1125 g",  pommes: "1800 g",oignons: "2.25",beurre: "90 g",lait: "270 ml" },
+      { nb: 10, boeuf: "1250 g",  pommes: "2000 g",oignons: "2.5",beurre: "100 g",lait: "300 ml" },
+      { nb: 11, boeuf: "1375 g",  pommes: "2200 g",oignons: "2.75",beurre: "110 g",lait: "330 ml" },
+      { nb: 12, boeuf: "1500 g",  pommes: "2400 g",oignons: "3", beurre: "120 g", lait: "360 ml" },
+      { nb: 13, boeuf: "1625 g",  pommes: "2600 g",oignons: "3.25",beurre: "130 g",lait: "390 ml" },
+      { nb: 14, boeuf: "1750 g",  pommes: "2800 g",oignons: "3.5",beurre: "140 g",lait: "420 ml" },
+      { nb: 15, boeuf: "1875 g",  pommes: "3000 g",oignons: "3.75",beurre: "150 g",lait: "450 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Préparer la purée", detail: "Cuire les pommes de terre à l'eau bouillante salée 20 min. Écraser avec beurre et lait chaud. Assaisonner.", badge: "⏱ 20 min" },
+      { icone: "🧅", titre: "Faire la farce", detail: "Faire revenir les oignons émincés dans l'huile. Ajouter la viande hachée. Cuire en émiettant. Ajouter tomates, sel, poivre, herbes.", badge: "⏱ 15 min" },
+      { icone: "🥘", titre: "Monter le plat", detail: "Dans un plat à gratin, étaler la viande. Recouvrir avec la purée. Lisser à la fourchette pour créer des stries.", badge: null },
+      { icone: "🧀", titre: "Gratiner", detail: "Parsemer de gruyère râpé. Enfourner à 200°C jusqu'à ce que le dessus soit bien doré.", badge: "⏱ 20 min" }
+    ]
+  },
+
+  daubeProvencale: {
+    base: 4, temps: "3h", niveau: "⭐⭐ Moyen", emoji: "🥩",
+    description: "La daube provençale — bœuf mijoté au vin rouge avec olives, herbes de Provence et orange. Un plat du soleil qui embaume toute la maison.",
+    tableauDaube: [
+      { nb:  1, boeuf: "200 g",  vin: "125 ml", olives: "25 g", carottes: "0.5", oignons: "0.5", orange: "¼" },
+      { nb:  2, boeuf: "400 g",  vin: "250 ml", olives: "50 g", carottes: "1",   oignons: "1",   orange: "½" },
+      { nb:  3, boeuf: "600 g",  vin: "375 ml", olives: "75 g", carottes: "1.5", oignons: "1.5", orange: "¾" },
+      { nb:  4, boeuf: "800 g",  vin: "500 ml", olives: "100 g",carottes: "2",   oignons: "2",   orange: "1" },
+      { nb:  5, boeuf: "1000 g", vin: "625 ml", olives: "125 g",carottes: "2.5", oignons: "2.5", orange: "1.25" },
+      { nb:  6, boeuf: "1200 g", vin: "750 ml", olives: "150 g",carottes: "3",   oignons: "3",   orange: "1.5" },
+      { nb:  7, boeuf: "1400 g", vin: "875 ml", olives: "175 g",carottes: "3.5", oignons: "3.5", orange: "1.75" },
+      { nb:  8, boeuf: "1600 g", vin: "1000 ml",olives: "200 g",carottes: "4",   oignons: "4",   orange: "2" },
+      { nb:  9, boeuf: "1800 g", vin: "1125 ml",olives: "225 g",carottes: "4.5", oignons: "4.5", orange: "2.25" },
+      { nb: 10, boeuf: "2000 g", vin: "1250 ml",olives: "250 g",carottes: "5",   oignons: "5",   orange: "2.5" },
+      { nb: 11, boeuf: "2200 g", vin: "1375 ml",olives: "275 g",carottes: "5.5", oignons: "5.5", orange: "2.75" },
+      { nb: 12, boeuf: "2400 g", vin: "1500 ml",olives: "300 g",carottes: "6",   oignons: "6",   orange: "3" },
+      { nb: 13, boeuf: "2600 g", vin: "1625 ml",olives: "325 g",carottes: "6.5", oignons: "6.5", orange: "3.25" },
+      { nb: 14, boeuf: "2800 g", vin: "1750 ml",olives: "350 g",carottes: "7",   oignons: "7",   orange: "3.5" },
+      { nb: 15, boeuf: "3000 g", vin: "1875 ml",olives: "375 g",carottes: "7.5", oignons: "7.5", orange: "3.75" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍷", titre: "Mariner la viande", detail: "Couper le bœuf en gros cubes. Mariner une nuit avec vin rouge, aromates, orange en zestes, herbes de Provence.", badge: "⏱ 12h" },
+      { icone: "🥩", titre: "Saisir la viande", detail: "Égoutter et sécher la viande. La faire dorer en plusieurs fois dans l'huile d'olive. Réserver.", badge: null },
+      { icone: "🧅", titre: "Préparer la base", detail: "Faire revenir oignons et carottes. Ajouter ail, lardons. Déglacer avec la marinade filtrée.", badge: null },
+      { icone: "⏳", titre: "Mijoter longuement", detail: "Remettre la viande, ajouter olives, bouquet garni. Couvrir et laisser mijoter à feu très doux.", badge: "⏱ 2h30" },
+      { icone: "🌿", titre: "Servir", detail: "Servir avec des pâtes fraîches, des gnocchis ou de la polenta. Parsemer de persil frais.", badge: null }
+    ]
+  },
+
+  pouletNormande: {
+    base: 4, temps: "45 min", niveau: "⭐ Facile", emoji: "🍗",
+    description: "Poulet à la normande — suprêmes de poulet mijotés au cidre avec crème fraîche et pommes. La douceur de la Normandie dans votre assiette.",
+    tableauPNormande: [
+      { nb:  1, poulet: "150 g",  cidre: "75 ml",  creme: "50 ml",  pommes: "0.5", beurre: "10 g" },
+      { nb:  2, poulet: "300 g",  cidre: "150 ml", creme: "100 ml", pommes: "1",   beurre: "20 g" },
+      { nb:  3, poulet: "450 g",  cidre: "225 ml", creme: "150 ml", pommes: "1.5", beurre: "30 g" },
+      { nb:  4, poulet: "600 g",  cidre: "300 ml", creme: "200 ml", pommes: "2",   beurre: "40 g" },
+      { nb:  5, poulet: "750 g",  cidre: "375 ml", creme: "250 ml", pommes: "2.5", beurre: "50 g" },
+      { nb:  6, poulet: "900 g",  cidre: "450 ml", creme: "300 ml", pommes: "3",   beurre: "60 g" },
+      { nb:  7, poulet: "1050 g", cidre: "525 ml", creme: "350 ml", pommes: "3.5", beurre: "70 g" },
+      { nb:  8, poulet: "1200 g", cidre: "600 ml", creme: "400 ml", pommes: "4",   beurre: "80 g" },
+      { nb:  9, poulet: "1350 g", cidre: "675 ml", creme: "450 ml", pommes: "4.5", beurre: "90 g" },
+      { nb: 10, poulet: "1500 g", cidre: "750 ml", creme: "500 ml", pommes: "5",   beurre: "100 g" },
+      { nb: 11, poulet: "1650 g", cidre: "825 ml", creme: "550 ml", pommes: "5.5", beurre: "110 g" },
+      { nb: 12, poulet: "1800 g", cidre: "900 ml", creme: "600 ml", pommes: "6",   beurre: "120 g" },
+      { nb: 13, poulet: "1950 g", cidre: "975 ml", creme: "650 ml", pommes: "6.5", beurre: "130 g" },
+      { nb: 14, poulet: "2100 g", cidre: "1050 ml",creme: "700 ml", pommes: "7",   beurre: "140 g" },
+      { nb: 15, poulet: "2250 g", cidre: "1125 ml",creme: "750 ml", pommes: "7.5", beurre: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Dorer le poulet", detail: "Assaisonner les suprêmes de poulet. Les faire dorer dans le beurre sur les deux faces. Réserver.", badge: null },
+      { icone: "🍎", titre: "Faire sauter les pommes", detail: "Dans la même poêle, faire sauter les quartiers de pommes dans le beurre jusqu'à légère coloration. Réserver.", badge: null },
+      { icone: "🍺", titre: "Déglacer au cidre", detail: "Déglacer avec le cidre brut. Laisser réduire de moitié. Remettre le poulet.", badge: "⏱ 20 min" },
+      { icone: "🍦", titre: "Finir à la crème", detail: "Ajouter la crème fraîche épaisse. Laisser mijoter 5 min. Rectifier l'assaisonnement.", badge: "⏱ 5 min" },
+      { icone: "🍎", titre: "Servir", detail: "Disposer le poulet, napper de sauce. Garnir avec les pommes sautées. Servir avec du riz ou des tagliatelles.", badge: null }
+    ]
+  },
+
+  tajinepoulet: {
+    base: 4, temps: "1h", niveau: "⭐ Facile", emoji: "🍋",
+    description: "Tajine de poulet au citron confit et olives — les saveurs du Maroc en un plat parfumé aux épices douces, citrons confits et olives vertes.",
+    tableauTajinePoulet: [
+      { nb:  1, poulet: "200 g",  citronC: "0.5",olives: "20 g", oignons: "0.5", curry: "½ c.à.c" },
+      { nb:  2, poulet: "400 g",  citronC: "1",  olives: "40 g", oignons: "1",   curry: "1 c.à.c" },
+      { nb:  3, poulet: "600 g",  citronC: "1.5",olives: "60 g", oignons: "1.5", curry: "1½ c.à.c" },
+      { nb:  4, poulet: "800 g",  citronC: "2",  olives: "80 g", oignons: "2",   curry: "2 c.à.c" },
+      { nb:  5, poulet: "1000 g", citronC: "2.5",olives: "100 g",oignons: "2.5", curry: "2½ c.à.c" },
+      { nb:  6, poulet: "1200 g", citronC: "3",  olives: "120 g",oignons: "3",   curry: "3 c.à.c" },
+      { nb:  7, poulet: "1400 g", citronC: "3.5",olives: "140 g",oignons: "3.5", curry: "3½ c.à.c" },
+      { nb:  8, poulet: "1600 g", citronC: "4",  olives: "160 g",oignons: "4",   curry: "4 c.à.c" },
+      { nb:  9, poulet: "1800 g", citronC: "4.5",olives: "180 g",oignons: "4.5", curry: "4½ c.à.c" },
+      { nb: 10, poulet: "2000 g", citronC: "5",  olives: "200 g",oignons: "5",   curry: "5 c.à.c" },
+      { nb: 11, poulet: "2200 g", citronC: "5.5",olives: "220 g",oignons: "5.5", curry: "5½ c.à.c" },
+      { nb: 12, poulet: "2400 g", citronC: "6",  olives: "240 g",oignons: "6",   curry: "6 c.à.c" },
+      { nb: 13, poulet: "2600 g", citronC: "6.5",olives: "260 g",oignons: "6.5", curry: "6½ c.à.c" },
+      { nb: 14, poulet: "2800 g", citronC: "7",  olives: "280 g",oignons: "7",   curry: "7 c.à.c" },
+      { nb: 15, poulet: "3000 g", citronC: "7.5",olives: "300 g",oignons: "7.5", curry: "7½ c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Faire revenir les oignons", detail: "Faire fondre les oignons émincés dans l'huile d'olive avec ail, gingembre, curcuma, cumin et paprika.", badge: null },
+      { icone: "🍗", titre: "Dorer le poulet", detail: "Ajouter les morceaux de poulet et les dorer sur toutes les faces. Saler, poivrer.", badge: null },
+      { icone: "🍋", titre: "Ajouter citrons et olives", detail: "Ajouter les citrons confits coupés en quartiers, les olives, un verre d'eau. Couvrir.", badge: "⏱ 40 min" },
+      { icone: "🌿", titre: "Finir et servir", detail: "Parsemer de coriandre et de persil frais. Servir avec du couscous ou du pain arabe.", badge: null }
+    ]
+  },
+
+  saltimbocca: {
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥩",
+    description: "Saltimbocca alla romana — escalopes de veau garnies de jambon cru et sauge, sautées au beurre et déglacées au vin blanc. Un classique romain en 20 minutes.",
+    tableauSaltimbocca: [
+      { nb:  1, veau: "100 g",   jambon: "1 tr.",  beurre: "10 g",  vin: "30 ml",  sauge: "1 feuille" },
+      { nb:  2, veau: "200 g",   jambon: "2 tr.",  beurre: "20 g",  vin: "60 ml",  sauge: "2 feuilles" },
+      { nb:  3, veau: "300 g",   jambon: "3 tr.",  beurre: "30 g",  vin: "90 ml",  sauge: "3 feuilles" },
+      { nb:  4, veau: "400 g",   jambon: "4 tr.",  beurre: "40 g",  vin: "120 ml", sauge: "4 feuilles" },
+      { nb:  5, veau: "500 g",   jambon: "5 tr.",  beurre: "50 g",  vin: "150 ml", sauge: "5 feuilles" },
+      { nb:  6, veau: "600 g",   jambon: "6 tr.",  beurre: "60 g",  vin: "180 ml", sauge: "6 feuilles" },
+      { nb:  7, veau: "700 g",   jambon: "7 tr.",  beurre: "70 g",  vin: "210 ml", sauge: "7 feuilles" },
+      { nb:  8, veau: "800 g",   jambon: "8 tr.",  beurre: "80 g",  vin: "240 ml", sauge: "8 feuilles" },
+      { nb:  9, veau: "900 g",   jambon: "9 tr.",  beurre: "90 g",  vin: "270 ml", sauge: "9 feuilles" },
+      { nb: 10, veau: "1000 g",  jambon: "10 tr.", beurre: "100 g", vin: "300 ml", sauge: "10 feuilles" },
+      { nb: 11, veau: "1100 g",  jambon: "11 tr.", beurre: "110 g", vin: "330 ml", sauge: "11 feuilles" },
+      { nb: 12, veau: "1200 g",  jambon: "12 tr.", beurre: "120 g", vin: "360 ml", sauge: "12 feuilles" },
+      { nb: 13, veau: "1300 g",  jambon: "13 tr.", beurre: "130 g", vin: "390 ml", sauge: "13 feuilles" },
+      { nb: 14, veau: "1400 g",  jambon: "14 tr.", beurre: "140 g", vin: "420 ml", sauge: "14 feuilles" },
+      { nb: 15, veau: "1500 g",  jambon: "15 tr.", beurre: "150 g", vin: "450 ml", sauge: "15 feuilles" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Préparer les escalopes", detail: "Aplatir les escalopes finement. Poser une feuille de sauge et une tranche de jambon cru. Fixer avec un cure-dent.", badge: null },
+      { icone: "🧈", titre: "Faire sauter", detail: "Dans une poêle, faire fondre le beurre à feu vif. Faire sauter les escalopes côté jambon en premier, 2 min par côté.", badge: "⏱ 4 min" },
+      { icone: "🍷", titre: "Déglacer", detail: "Retirer la viande. Déglacer la poêle avec le vin blanc. Laisser réduire de moitié à feu vif.", badge: "⏱ 2 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Napper les escalopes de sauce. Servir immédiatement avec des pâtes fraîches ou des légumes sautés.", badge: null }
+    ]
+  },
+
+  bouillabaisse: {
+    base: 4, temps: "1h30", niveau: "⭐⭐⭐ Expert", emoji: "🐟",
+    description: "La vraie bouillabaisse marseillaise — soupe de poissons rocailleux, safran, rouille et croûtons. Un monument de la cuisine provençale.",
+    tableauBouillabaisse: [
+      { nb:  1, poisson: "250 g",  crevettes: "50 g", tomates: "150 g", safran: "1 pincée", oignons: "0.5" },
+      { nb:  2, poisson: "500 g",  crevettes: "100 g",tomates: "300 g", safran: "2 pincées",oignons: "1" },
+      { nb:  3, poisson: "750 g",  crevettes: "150 g",tomates: "450 g", safran: "3 pincées",oignons: "1.5" },
+      { nb:  4, poisson: "1000 g", crevettes: "200 g",tomates: "600 g", safran: "4 pincées",oignons: "2" },
+      { nb:  5, poisson: "1250 g", crevettes: "250 g",tomates: "750 g", safran: "5 pincées",oignons: "2.5" },
+      { nb:  6, poisson: "1500 g", crevettes: "300 g",tomates: "900 g", safran: "6 pincées",oignons: "3" },
+      { nb:  7, poisson: "1750 g", crevettes: "350 g",tomates: "1050 g",safran: "7 pincées",oignons: "3.5" },
+      { nb:  8, poisson: "2000 g", crevettes: "400 g",tomates: "1200 g",safran: "8 pincées",oignons: "4" },
+      { nb:  9, poisson: "2250 g", crevettes: "450 g",tomates: "1350 g",safran: "9 pincées",oignons: "4.5" },
+      { nb: 10, poisson: "2500 g", crevettes: "500 g",tomates: "1500 g",safran: "10 pincées",oignons: "5" },
+      { nb: 11, poisson: "2750 g", crevettes: "550 g",tomates: "1650 g",safran: "11 pincées",oignons: "5.5" },
+      { nb: 12, poisson: "3000 g", crevettes: "600 g",tomates: "1800 g",safran: "12 pincées",oignons: "6" },
+      { nb: 13, poisson: "3250 g", crevettes: "650 g",tomates: "1950 g",safran: "13 pincées",oignons: "6.5" },
+      { nb: 14, poisson: "3500 g", crevettes: "700 g",tomates: "2100 g",safran: "14 pincées",oignons: "7" },
+      { nb: 15, poisson: "3750 g", crevettes: "750 g",tomates: "2250 g",safran: "15 pincées",oignons: "7.5" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Préparer les poissons", detail: "Nettoyer et couper les poissons (rascasse, grondin, saint-pierre). Préparer les crustacés.", badge: null },
+      { icone: "🧅", titre: "Faire le fumet", detail: "Faire revenir oignons, fenouil, tomates, ail dans l'huile d'olive. Ajouter les arêtes et têtes de poisson, safran, bouquet garni. Couvrir d'eau.", badge: "⏱ 30 min" },
+      { icone: "🫙", titre: "Préparer la rouille", detail: "Mixer ail, safran, jaune d'œuf, huile d'olive pour faire la rouille. Saler.", badge: null },
+      { icone: "🐠", titre: "Cuire les poissons", detail: "Filtrer le bouillon. Porter à ébullition. Ajouter les poissons selon leur temps de cuisson. Servir immédiatement.", badge: "⏱ 15 min" },
+      { icone: "🍞", titre: "Servir", detail: "Servir avec des croûtons frottés à l'ail et la rouille à part.", badge: null }
+    ]
+  },
+
+  gratinPates: {
+    base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🍝",
+    description: "Gratin de pâtes — macaronis nappés de béchamel crémeuse, jambon et fromage fondu gratinés au four. Simple, gourmand et inratable.",
+    tableauGratinPates: [
+      { nb:  1, pates: "75 g",   jambon: "1 tr.", beurre: "10 g",  farine: "10 g",  lait: "150 ml", gruyere: "25 g" },
+      { nb:  2, pates: "150 g",  jambon: "2 tr.", beurre: "20 g",  farine: "20 g",  lait: "300 ml", gruyere: "50 g" },
+      { nb:  3, pates: "225 g",  jambon: "3 tr.", beurre: "30 g",  farine: "30 g",  lait: "450 ml", gruyere: "75 g" },
+      { nb:  4, pates: "300 g",  jambon: "4 tr.", beurre: "40 g",  farine: "40 g",  lait: "600 ml", gruyere: "100 g" },
+      { nb:  5, pates: "375 g",  jambon: "5 tr.", beurre: "50 g",  farine: "50 g",  lait: "750 ml", gruyere: "125 g" },
+      { nb:  6, pates: "450 g",  jambon: "6 tr.", beurre: "60 g",  farine: "60 g",  lait: "900 ml", gruyere: "150 g" },
+      { nb:  7, pates: "525 g",  jambon: "7 tr.", beurre: "70 g",  farine: "70 g",  lait: "1050 ml",gruyere: "175 g" },
+      { nb:  8, pates: "600 g",  jambon: "8 tr.", beurre: "80 g",  farine: "80 g",  lait: "1200 ml",gruyere: "200 g" },
+      { nb:  9, pates: "675 g",  jambon: "9 tr.", beurre: "90 g",  farine: "90 g",  lait: "1350 ml",gruyere: "225 g" },
+      { nb: 10, pates: "750 g",  jambon: "10 tr.",beurre: "100 g", farine: "100 g", lait: "1500 ml",gruyere: "250 g" },
+      { nb: 11, pates: "825 g",  jambon: "11 tr.",beurre: "110 g", farine: "110 g", lait: "1650 ml",gruyere: "275 g" },
+      { nb: 12, pates: "900 g",  jambon: "12 tr.",beurre: "120 g", farine: "120 g", lait: "1800 ml",gruyere: "300 g" },
+      { nb: 13, pates: "975 g",  jambon: "13 tr.",beurre: "130 g", farine: "130 g", lait: "1950 ml",gruyere: "325 g" },
+      { nb: 14, pates: "1050 g", jambon: "14 tr.",beurre: "140 g", farine: "140 g", lait: "2100 ml",gruyere: "350 g" },
+      { nb: 15, pates: "1125 g", jambon: "15 tr.",beurre: "150 g", farine: "150 g", lait: "2250 ml",gruyere: "375 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les macaronis al dente dans l'eau bouillante salée. Égoutter et réserver.", badge: "⏱ 8 min" },
+      { icone: "🧈", titre: "Faire la béchamel", detail: "Faire fondre le beurre, ajouter la farine et mélanger. Verser le lait progressivement en remuant jusqu'à épaississement. Saler, poivrer, muscade.", badge: "⏱ 8 min" },
+      { icone: "🥘", titre: "Assembler", detail: "Mélanger pâtes, jambon coupé en dés et béchamel. Verser dans un plat à gratin beurré.", badge: null },
+      { icone: "🧀", titre: "Gratiner", detail: "Recouvrir de gruyère râpé. Cuire au four à 200°C jusqu'à gratinage doré.", badge: "⏱ 20 min" }
+    ]
+  },
+
+  volauVent: {
+    base: 4, temps: "45 min", niveau: "⭐⭐ Moyen", emoji: "🥐",
+    description: "Vol-au-vent aux fruits de mer — croustillants feuilletés garnis d'une onctueuse fricassée de crevettes et noix de Saint-Jacques en sauce veloutée.",
+    tableauVolauVent: [
+      { nb:  1, crevettes: "75 g",  feuilletee: "1 vol",  beurre: "10 g",  farine: "10 g",  lait: "100 ml" },
+      { nb:  2, crevettes: "150 g", feuilletee: "2 vols", beurre: "20 g",  farine: "20 g",  lait: "200 ml" },
+      { nb:  3, crevettes: "225 g", feuilletee: "3 vols", beurre: "30 g",  farine: "30 g",  lait: "300 ml" },
+      { nb:  4, crevettes: "300 g", feuilletee: "4 vols", beurre: "40 g",  farine: "40 g",  lait: "400 ml" },
+      { nb:  5, crevettes: "375 g", feuilletee: "5 vols", beurre: "50 g",  farine: "50 g",  lait: "500 ml" },
+      { nb:  6, crevettes: "450 g", feuilletee: "6 vols", beurre: "60 g",  farine: "60 g",  lait: "600 ml" },
+      { nb:  7, crevettes: "525 g", feuilletee: "7 vols", beurre: "70 g",  farine: "70 g",  lait: "700 ml" },
+      { nb:  8, crevettes: "600 g", feuilletee: "8 vols", beurre: "80 g",  farine: "80 g",  lait: "800 ml" },
+      { nb:  9, crevettes: "675 g", feuilletee: "9 vols", beurre: "90 g",  farine: "90 g",  lait: "900 ml" },
+      { nb: 10, crevettes: "750 g", feuilletee: "10 vols",beurre: "100 g", farine: "100 g", lait: "1000 ml" },
+      { nb: 11, crevettes: "825 g", feuilletee: "11 vols",beurre: "110 g", farine: "110 g", lait: "1100 ml" },
+      { nb: 12, crevettes: "900 g", feuilletee: "12 vols",beurre: "120 g", farine: "120 g", lait: "1200 ml" },
+      { nb: 13, crevettes: "975 g", feuilletee: "13 vols",beurre: "130 g", farine: "130 g", lait: "1300 ml" },
+      { nb: 14, crevettes: "1050 g",feuilletee: "14 vols",beurre: "140 g", farine: "140 g", lait: "1400 ml" },
+      { nb: 15, crevettes: "1125 g",feuilletee: "15 vols",beurre: "150 g", farine: "150 g", lait: "1500 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥐", titre: "Cuire les croûtes", detail: "Cuire les vol-au-vent selon les instructions. Tenir au chaud.", badge: "⏱ 15 min" },
+      { icone: "🦐", titre: "Préparer les fruits de mer", detail: "Faire sauter les crevettes et noix de Saint-Jacques dans le beurre 3 min. Réserver.", badge: "⏱ 3 min" },
+      { icone: "🧈", titre: "Faire la sauce velouté", detail: "Faire un roux beurre/farine. Mouiller avec fumet de poisson et crème. Cuire jusqu'à consistance veloutée.", badge: "⏱ 8 min" },
+      { icone: "🍽️", titre: "Garnir et servir", detail: "Mélanger fruits de mer et sauce. Garnir les croûtes chaudes. Servir immédiatement avec salade verte.", badge: null }
+    ]
+  },
+
+  jambonneauLentilles: {
+    base: 4, temps: "2h", niveau: "⭐ Facile", emoji: "🫘",
+    description: "Jarret de porc aux lentilles vertes du Puy — plat rustique et réconfortant mijoté longuement avec carottes et herbes aromatiques.",
+    tableauJarretLentilles: [
+      { nb:  1, jarret: "200 g",  lentilles: "75 g",  carottes: "0.5", oignons: "0.5", thym: "1 brin" },
+      { nb:  2, jarret: "400 g",  lentilles: "150 g", carottes: "1",   oignons: "1",   thym: "2 brins" },
+      { nb:  3, jarret: "600 g",  lentilles: "225 g", carottes: "1.5", oignons: "1.5", thym: "2 brins" },
+      { nb:  4, jarret: "800 g",  lentilles: "300 g", carottes: "2",   oignons: "2",   thym: "3 brins" },
+      { nb:  5, jarret: "1000 g", lentilles: "375 g", carottes: "2.5", oignons: "2.5", thym: "3 brins" },
+      { nb:  6, jarret: "1200 g", lentilles: "450 g", carottes: "3",   oignons: "3",   thym: "4 brins" },
+      { nb:  7, jarret: "1400 g", lentilles: "525 g", carottes: "3.5", oignons: "3.5", thym: "4 brins" },
+      { nb:  8, jarret: "1600 g", lentilles: "600 g", carottes: "4",   oignons: "4",   thym: "5 brins" },
+      { nb:  9, jarret: "1800 g", lentilles: "675 g", carottes: "4.5", oignons: "4.5", thym: "5 brins" },
+      { nb: 10, jarret: "2000 g", lentilles: "750 g", carottes: "5",   oignons: "5",   thym: "6 brins" },
+      { nb: 11, jarret: "2200 g", lentilles: "825 g", carottes: "5.5", oignons: "5.5", thym: "6 brins" },
+      { nb: 12, jarret: "2400 g", lentilles: "900 g", carottes: "6",   oignons: "6",   thym: "7 brins" },
+      { nb: 13, jarret: "2600 g", lentilles: "975 g", carottes: "6.5", oignons: "6.5", thym: "7 brins" },
+      { nb: 14, jarret: "2800 g", lentilles: "1050 g",carottes: "7",   oignons: "7",   thym: "8 brins" },
+      { nb: 15, jarret: "3000 g", lentilles: "1125 g",carottes: "7.5", oignons: "7.5", thym: "8 brins" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Cuire le jarret", detail: "Placer le jarret dans une cocotte avec eau froide, oignons, carottes, bouquet garni. Porter à ébullition, écumer.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Baisser le feu et laisser mijoter à couvert. La viande doit être très tendre.", badge: "⏱ 1h30" },
+      { icone: "🫘", titre: "Cuire les lentilles", detail: "Rincer les lentilles. Les plonger dans le bouillon de cuisson. Laisser cuire jusqu'à tendreté.", badge: "⏱ 25 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Trancher le jarret. Servir sur le lit de lentilles avec la moutarde de Dijon.", badge: null }
+    ]
+  },
+
+  boulettesViande: {
+    base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🍝",
+    description: "Boulettes de viande à la sauce tomate — moelleuses et parfumées, mijotées dans une sauce tomate maison avec basilic. Le comfort food par excellence.",
+    tableauBoulettes: [
+      { nb:  1, boeuf: "125 g",  tomates: "200 g", oignons: "0.25", farine: "10 g",  oeuf: "0.5" },
+      { nb:  2, boeuf: "250 g",  tomates: "400 g", oignons: "0.5",  farine: "20 g",  oeuf: "1" },
+      { nb:  3, boeuf: "375 g",  tomates: "600 g", oignons: "0.75", farine: "30 g",  oeuf: "1" },
+      { nb:  4, boeuf: "500 g",  tomates: "800 g", oignons: "1",    farine: "40 g",  oeuf: "2" },
+      { nb:  5, boeuf: "625 g",  tomates: "1000 g",oignons: "1.25", farine: "50 g",  oeuf: "2" },
+      { nb:  6, boeuf: "750 g",  tomates: "1200 g",oignons: "1.5",  farine: "60 g",  oeuf: "3" },
+      { nb:  7, boeuf: "875 g",  tomates: "1400 g",oignons: "1.75", farine: "70 g",  oeuf: "3" },
+      { nb:  8, boeuf: "1000 g", tomates: "1600 g",oignons: "2",    farine: "80 g",  oeuf: "4" },
+      { nb:  9, boeuf: "1125 g", tomates: "1800 g",oignons: "2.25", farine: "90 g",  oeuf: "4" },
+      { nb: 10, boeuf: "1250 g", tomates: "2000 g",oignons: "2.5",  farine: "100 g", oeuf: "5" },
+      { nb: 11, boeuf: "1375 g", tomates: "2200 g",oignons: "2.75", farine: "110 g", oeuf: "5" },
+      { nb: 12, boeuf: "1500 g", tomates: "2400 g",oignons: "3",    farine: "120 g", oeuf: "6" },
+      { nb: 13, boeuf: "1625 g", tomates: "2600 g",oignons: "3.25", farine: "130 g", oeuf: "6" },
+      { nb: 14, boeuf: "1750 g", tomates: "2800 g",oignons: "3.5",  farine: "140 g", oeuf: "7" },
+      { nb: 15, boeuf: "1875 g", tomates: "3000 g",oignons: "3.75", farine: "150 g", oeuf: "7" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Former les boulettes", detail: "Mélanger viande hachée, oeuf, chapelure, ail, persil, sel, poivre. Former des boulettes de 3 cm.", badge: null },
+      { icone: "🔥", titre: "Faire dorer", detail: "Faire dorer les boulettes dans l'huile d'olive sur toutes les faces. Réserver.", badge: "⏱ 8 min" },
+      { icone: "🍅", titre: "Faire la sauce", detail: "Faire revenir oignons et ail. Ajouter tomates concassées, basilic, sel, sucre. Mijoter 10 min.", badge: "⏱ 10 min" },
+      { icone: "⏳", titre: "Mijoter ensemble", detail: "Remettre les boulettes dans la sauce. Laisser mijoter à couvert.", badge: "⏱ 15 min" },
+      { icone: "🍝", titre: "Servir", detail: "Servir sur des spaghettis ou avec du pain. Parsemer de parmesan râpé.", badge: null }
+    ]
+  },
+
+  // SALADES
+  saladeThai: {
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥗",
+    description: "Salade thaï — vermicelles de riz, légumes croquants, coriandre fraîche et vinaigrette au citron vert et sauce nuoc-mâm. Fraîche et explosive en saveurs.",
+    tableauSaladeThai: [
+      { nb:  1, pates: "50 g",   carottes: "0.5", concombre: "0.25", coriandre: "5 g",  citrons: "0.5" },
+      { nb:  2, pates: "100 g",  carottes: "1",   concombre: "0.5",  coriandre: "10 g", citrons: "1" },
+      { nb:  3, pates: "150 g",  carottes: "1.5", concombre: "0.75", coriandre: "15 g", citrons: "1.5" },
+      { nb:  4, pates: "200 g",  carottes: "2",   concombre: "1",    coriandre: "20 g", citrons: "2" },
+      { nb:  5, pates: "250 g",  carottes: "2.5", concombre: "1.25", coriandre: "25 g", citrons: "2.5" },
+      { nb:  6, pates: "300 g",  carottes: "3",   concombre: "1.5",  coriandre: "30 g", citrons: "3" },
+      { nb:  7, pates: "350 g",  carottes: "3.5", concombre: "1.75", coriandre: "35 g", citrons: "3.5" },
+      { nb:  8, pates: "400 g",  carottes: "4",   concombre: "2",    coriandre: "40 g", citrons: "4" },
+      { nb:  9, pates: "450 g",  carottes: "4.5", concombre: "2.25", coriandre: "45 g", citrons: "4.5" },
+      { nb: 10, pates: "500 g",  carottes: "5",   concombre: "2.5",  coriandre: "50 g", citrons: "5" },
+      { nb: 11, pates: "550 g",  carottes: "5.5", concombre: "2.75", coriandre: "55 g", citrons: "5.5" },
+      { nb: 12, pates: "600 g",  carottes: "6",   concombre: "3",    coriandre: "60 g", citrons: "6" },
+      { nb: 13, pates: "650 g",  carottes: "6.5", concombre: "3.25", coriandre: "65 g", citrons: "6.5" },
+      { nb: 14, pates: "700 g",  carottes: "7",   concombre: "3.5",  coriandre: "70 g", citrons: "7" },
+      { nb: 15, pates: "750 g",  carottes: "7.5", concombre: "3.75", coriandre: "75 g", citrons: "7.5" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍜", titre: "Tremper les vermicelles", detail: "Faire tremper les vermicelles de riz dans l'eau chaude 5 min. Égoutter et rincer à l'eau froide.", badge: "⏱ 5 min" },
+      { icone: "🥕", titre: "Préparer les légumes", detail: "Râper les carottes. Trancher finement le concombre. Ciseler la coriandre, la menthe et les oignons verts.", badge: null },
+      { icone: "🍋", titre: "Faire la vinaigrette", detail: "Mélanger jus de citron vert, sauce nuoc-mâm, sucre, ail, piment. Goûter et ajuster.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mélanger vermicelles, légumes, cacahuètes concassées. Arroser de vinaigrette. Garnir de coriandre.", badge: null }
+    ]
+  },
+
+  saladeHaricotsVerts: {
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🫛",
+    description: "Salade de haricots verts croquants aux amandes grillées — vinaigrette moutardée et œufs durs. Simple et délicieuse en entrée ou accompagnement.",
+    tableauSaladeHV: [
+      { nb:  1, haricots: "100 g", oeuf: "0.5",  amandes: "10 g", moutarde: "½ c.à.c", vinaigre: "5 ml" },
+      { nb:  2, haricots: "200 g", oeuf: "1",    amandes: "20 g", moutarde: "1 c.à.c",  vinaigre: "10 ml" },
+      { nb:  3, haricots: "300 g", oeuf: "1.5",  amandes: "30 g", moutarde: "1½ c.à.c", vinaigre: "15 ml" },
+      { nb:  4, haricots: "400 g", oeuf: "2",    amandes: "40 g", moutarde: "2 c.à.c",  vinaigre: "20 ml" },
+      { nb:  5, haricots: "500 g", oeuf: "2.5",  amandes: "50 g", moutarde: "2½ c.à.c", vinaigre: "25 ml" },
+      { nb:  6, haricots: "600 g", oeuf: "3",    amandes: "60 g", moutarde: "3 c.à.c",  vinaigre: "30 ml" },
+      { nb:  7, haricots: "700 g", oeuf: "3.5",  amandes: "70 g", moutarde: "3½ c.à.c", vinaigre: "35 ml" },
+      { nb:  8, haricots: "800 g", oeuf: "4",    amandes: "80 g", moutarde: "4 c.à.c",  vinaigre: "40 ml" },
+      { nb:  9, haricots: "900 g", oeuf: "4.5",  amandes: "90 g", moutarde: "4½ c.à.c", vinaigre: "45 ml" },
+      { nb: 10, haricots: "1000 g",oeuf: "5",    amandes: "100 g",moutarde: "5 c.à.c",  vinaigre: "50 ml" },
+      { nb: 11, haricots: "1100 g",oeuf: "5.5",  amandes: "110 g",moutarde: "5½ c.à.c", vinaigre: "55 ml" },
+      { nb: 12, haricots: "1200 g",oeuf: "6",    amandes: "120 g",moutarde: "6 c.à.c",  vinaigre: "60 ml" },
+      { nb: 13, haricots: "1300 g",oeuf: "6.5",  amandes: "130 g",moutarde: "6½ c.à.c", vinaigre: "65 ml" },
+      { nb: 14, haricots: "1400 g",oeuf: "7",    amandes: "140 g",moutarde: "7 c.à.c",  vinaigre: "70 ml" },
+      { nb: 15, haricots: "1500 g",oeuf: "7.5",  amandes: "150 g",moutarde: "7½ c.à.c", vinaigre: "75 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫛", titre: "Cuire les haricots", detail: "Cuire les haricots verts al dente dans l'eau bouillante salée. Refroidir immédiatement dans l'eau glacée pour garder la couleur.", badge: "⏱ 5 min" },
+      { icone: "🥚", titre: "Cuire les œufs durs", detail: "Cuire les œufs 9 min dans l'eau bouillante. Refroidir et écaler.", badge: "⏱ 9 min" },
+      { icone: "🌰", titre: "Griller les amandes", detail: "Faire griller les amandes effilées à sec dans une poêle jusqu'à coloration dorée.", badge: "⏱ 3 min" },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer les haricots. Ajouter les œufs coupés en quartiers, les amandes. Arroser de vinaigrette moutardée.", badge: null }
+    ]
+  },
+
+  saladeFruitsMer: {
+    base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "🦐",
+    description: "Salade de fruits de mer — crevettes, moules et calamars marinés à l'huile d'olive citronnée avec ail et persil. Fraîcheur marine garantie.",
+    tableauSaladeFM: [
+      { nb:  1, crevettes: "75 g",  moule: "75 g",  calamars: "50 g", citrons: "0.5", persil: "5 g" },
+      { nb:  2, crevettes: "150 g", moule: "150 g", calamars: "100 g",citrons: "1",   persil: "10 g" },
+      { nb:  3, crevettes: "225 g", moule: "225 g", calamars: "150 g",citrons: "1.5", persil: "15 g" },
+      { nb:  4, crevettes: "300 g", moule: "300 g", calamars: "200 g",citrons: "2",   persil: "20 g" },
+      { nb:  5, crevettes: "375 g", moule: "375 g", calamars: "250 g",citrons: "2.5", persil: "25 g" },
+      { nb:  6, crevettes: "450 g", moule: "450 g", calamars: "300 g",citrons: "3",   persil: "30 g" },
+      { nb:  7, crevettes: "525 g", moule: "525 g", calamars: "350 g",citrons: "3.5", persil: "35 g" },
+      { nb:  8, crevettes: "600 g", moule: "600 g", calamars: "400 g",citrons: "4",   persil: "40 g" },
+      { nb:  9, crevettes: "675 g", moule: "675 g", calamars: "450 g",citrons: "4.5", persil: "45 g" },
+      { nb: 10, crevettes: "750 g", moule: "750 g", calamars: "500 g",citrons: "5",   persil: "50 g" },
+      { nb: 11, crevettes: "825 g", moule: "825 g", calamars: "550 g",citrons: "5.5", persil: "55 g" },
+      { nb: 12, crevettes: "900 g", moule: "900 g", calamars: "600 g",citrons: "6",   persil: "60 g" },
+      { nb: 13, crevettes: "975 g", moule: "975 g", calamars: "650 g",citrons: "6.5", persil: "65 g" },
+      { nb: 14, crevettes: "1050 g",moule: "1050 g",calamars: "700 g",citrons: "7",   persil: "70 g" },
+      { nb: 15, crevettes: "1125 g",moule: "1125 g",calamars: "750 g",citrons: "7.5", persil: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦐", titre: "Cuire les fruits de mer", detail: "Cuire les moules à la marinière. Poêler les calamars et les crevettes 2 min. Laisser refroidir.", badge: "⏱ 10 min" },
+      { icone: "🍋", titre: "Préparer la marinade", detail: "Mélanger huile d'olive, jus de citron, ail haché, persil, sel, poivre, piment d'Espelette.", badge: null },
+      { icone: "⏳", titre: "Mariner", detail: "Mélanger tous les fruits de mer avec la marinade. Laisser mariner au frais.", badge: "⏱ 15 min" },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer sur un lit de roquette ou salade verte. Garnir de quartiers de citron.", badge: null }
+    ]
+  },
+
+  saladePoulpe: {
+    base: 4, temps: "1h30", niveau: "⭐⭐ Moyen", emoji: "🐙",
+    description: "Salade de poulpe à la grecque — poulpe tendre cuit longuement, mariné à l'huile d'olive, citron, câpres et olives. Méditerranéen et savoureux.",
+    tableauSaladePoulpe: [
+      { nb:  1, poulpe: "200 g",  olives: "20 g",  capres: "10 g", citrons: "0.5", huile: "15 ml" },
+      { nb:  2, poulpe: "400 g",  olives: "40 g",  capres: "20 g", citrons: "1",   huile: "30 ml" },
+      { nb:  3, poulpe: "600 g",  olives: "60 g",  capres: "30 g", citrons: "1.5", huile: "45 ml" },
+      { nb:  4, poulpe: "800 g",  olives: "80 g",  capres: "40 g", citrons: "2",   huile: "60 ml" },
+      { nb:  5, poulpe: "1000 g", olives: "100 g", capres: "50 g", citrons: "2.5", huile: "75 ml" },
+      { nb:  6, poulpe: "1200 g", olives: "120 g", capres: "60 g", citrons: "3",   huile: "90 ml" },
+      { nb:  7, poulpe: "1400 g", olives: "140 g", capres: "70 g", citrons: "3.5", huile: "105 ml" },
+      { nb:  8, poulpe: "1600 g", olives: "160 g", capres: "80 g", citrons: "4",   huile: "120 ml" },
+      { nb:  9, poulpe: "1800 g", olives: "180 g", capres: "90 g", citrons: "4.5", huile: "135 ml" },
+      { nb: 10, poulpe: "2000 g", olives: "200 g", capres: "100 g",citrons: "5",   huile: "150 ml" },
+      { nb: 11, poulpe: "2200 g", olives: "220 g", capres: "110 g",citrons: "5.5", huile: "165 ml" },
+      { nb: 12, poulpe: "2400 g", olives: "240 g", capres: "120 g",citrons: "6",   huile: "180 ml" },
+      { nb: 13, poulpe: "2600 g", olives: "260 g", capres: "130 g",citrons: "6.5", huile: "195 ml" },
+      { nb: 14, poulpe: "2800 g", olives: "280 g", capres: "140 g",citrons: "7",   huile: "210 ml" },
+      { nb: 15, poulpe: "3000 g", olives: "300 g", capres: "150 g",citrons: "7.5", huile: "225 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐙", titre: "Cuire le poulpe", detail: "Plonger le poulpe dans l'eau bouillante avec laurier, sel, grains de poivre. Laisser mijoter.", badge: "⏱ 1h" },
+      { icone: "✂️", titre: "Découper", detail: "Laisser refroidir. Couper les tentacules en rondelles. Réserver les plus belles pour la présentation.", badge: null },
+      { icone: "🫙", titre: "Préparer la marinade", detail: "Mélanger huile d'olive, jus de citron, ail, persil, câpres, olives, origan. Assaisonner.", badge: null },
+      { icone: "⏳", titre: "Mariner et servir", detail: "Mélanger poulpe et marinade. Laisser reposer 30 min. Servir sur lit de roquette.", badge: "⏱ 30 min" }
+    ]
+  },
+
+  // HEALTHY
+  soupeLentillesCorail: {
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🧡",
+    description: "Soupe de lentilles corail au cumin et citron — onctueuse, dorée et parfumée. Végétarienne, riche en protéines et prête en 30 minutes.",
+    tableauSoupeLentilles: [
+      { nb:  1, lentilles: "60 g",  tomates: "100 g", oignons: "0.25",cumin: "½ c.à.c", citrons: "0.25" },
+      { nb:  2, lentilles: "120 g", tomates: "200 g", oignons: "0.5", cumin: "1 c.à.c",  citrons: "0.5" },
+      { nb:  3, lentilles: "180 g", tomates: "300 g", oignons: "0.75",cumin: "1½ c.à.c", citrons: "0.75" },
+      { nb:  4, lentilles: "240 g", tomates: "400 g", oignons: "1",   cumin: "2 c.à.c",  citrons: "1" },
+      { nb:  5, lentilles: "300 g", tomates: "500 g", oignons: "1.25",cumin: "2½ c.à.c", citrons: "1.25" },
+      { nb:  6, lentilles: "360 g", tomates: "600 g", oignons: "1.5", cumin: "3 c.à.c",  citrons: "1.5" },
+      { nb:  7, lentilles: "420 g", tomates: "700 g", oignons: "1.75",cumin: "3½ c.à.c", citrons: "1.75" },
+      { nb:  8, lentilles: "480 g", tomates: "800 g", oignons: "2",   cumin: "4 c.à.c",  citrons: "2" },
+      { nb:  9, lentilles: "540 g", tomates: "900 g", oignons: "2.25",cumin: "4½ c.à.c", citrons: "2.25" },
+      { nb: 10, lentilles: "600 g", tomates: "1000 g",oignons: "2.5", cumin: "5 c.à.c",  citrons: "2.5" },
+      { nb: 11, lentilles: "660 g", tomates: "1100 g",oignons: "2.75",cumin: "5½ c.à.c", citrons: "2.75" },
+      { nb: 12, lentilles: "720 g", tomates: "1200 g",oignons: "3",   cumin: "6 c.à.c",  citrons: "3" },
+      { nb: 13, lentilles: "780 g", tomates: "1300 g",oignons: "3.25",cumin: "6½ c.à.c", citrons: "3.25" },
+      { nb: 14, lentilles: "840 g", tomates: "1400 g",oignons: "3.5", cumin: "7 c.à.c",  citrons: "3.5" },
+      { nb: 15, lentilles: "900 g", tomates: "1500 g",oignons: "3.75",cumin: "7½ c.à.c", citrons: "3.75" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Faire revenir les aromates", detail: "Faire suer l'oignon avec l'ail dans l'huile d'olive. Ajouter cumin, curcuma, paprika. Torréfier 1 min.", badge: null },
+      { icone: "🍅", titre: "Ajouter tomates et lentilles", detail: "Ajouter tomates, lentilles rincées et bouillon de légumes. Porter à ébullition.", badge: null },
+      { icone: "⏳", titre: "Cuire", detail: "Laisser mijoter à feu doux en remuant régulièrement jusqu'à ce que les lentilles fondent.", badge: "⏱ 20 min" },
+      { icone: "🍋", titre: "Mixer et finir", detail: "Mixer partiellement pour une texture onctueuse. Ajouter jus de citron. Garnir d'huile d'olive et cumin grillé.", badge: null }
+    ]
+  },
+
+  bowlProteineVege: {
+    base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "💪",
+    description: "Bowl protéiné végétarien — quinoa, pois chiches rôtis, avocat, œuf mollet et tahini. Complet, équilibré et rassasiant sans viande.",
+    tableauBowlVege: [
+      { nb:  1, quinoa: "50 g",   pois: "75 g",   avocat: "0.25", oeuf: "0.5",  tahini: "10 g" },
+      { nb:  2, quinoa: "100 g",  pois: "150 g",  avocat: "0.5",  oeuf: "1",    tahini: "20 g" },
+      { nb:  3, quinoa: "150 g",  pois: "225 g",  avocat: "0.75", oeuf: "1.5",  tahini: "30 g" },
+      { nb:  4, quinoa: "200 g",  pois: "300 g",  avocat: "1",    oeuf: "2",    tahini: "40 g" },
+      { nb:  5, quinoa: "250 g",  pois: "375 g",  avocat: "1.25", oeuf: "2.5",  tahini: "50 g" },
+      { nb:  6, quinoa: "300 g",  pois: "450 g",  avocat: "1.5",  oeuf: "3",    tahini: "60 g" },
+      { nb:  7, quinoa: "350 g",  pois: "525 g",  avocat: "1.75", oeuf: "3.5",  tahini: "70 g" },
+      { nb:  8, quinoa: "400 g",  pois: "600 g",  avocat: "2",    oeuf: "4",    tahini: "80 g" },
+      { nb:  9, quinoa: "450 g",  pois: "675 g",  avocat: "2.25", oeuf: "4.5",  tahini: "90 g" },
+      { nb: 10, quinoa: "500 g",  pois: "750 g",  avocat: "2.5",  oeuf: "5",    tahini: "100 g" },
+      { nb: 11, quinoa: "550 g",  pois: "825 g",  avocat: "2.75", oeuf: "5.5",  tahini: "110 g" },
+      { nb: 12, quinoa: "600 g",  pois: "900 g",  avocat: "3",    oeuf: "6",    tahini: "120 g" },
+      { nb: 13, quinoa: "650 g",  pois: "975 g",  avocat: "3.25", oeuf: "6.5",  tahini: "130 g" },
+      { nb: 14, quinoa: "700 g",  pois: "1050 g", avocat: "3.5",  oeuf: "7",    tahini: "140 g" },
+      { nb: 15, quinoa: "750 g",  pois: "1125 g", avocat: "3.75", oeuf: "7.5",  tahini: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Cuire le quinoa", detail: "Rincer le quinoa. Cuire dans 2x son volume d'eau salée. Laisser gonfler 15 min à couvert.", badge: "⏱ 15 min" },
+      { icone: "🫘", titre: "Rôtir les pois chiches", detail: "Égoutter les pois chiches. Les enrober d'huile, cumin, paprika. Rôtir au four 20 min à 200°C.", badge: "⏱ 20 min" },
+      { icone: "🥚", titre: "Cuire les œufs mollets", detail: "Cuire les œufs 6 min dans l'eau bouillante. Refroidir et écaler délicatement.", badge: "⏱ 6 min" },
+      { icone: "🥑", titre: "Assembler le bowl", detail: "Disposer quinoa, pois chiches, avocat tranché, œuf coupé. Napper de sauce tahini citron-ail.", badge: null }
+    ]
+  },
+
+  soupeDetox: {
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🥬",
+    description: "Soupe détox verte — épinards, courgette, gingembre et citron vert. Légère, vitaminée et revitalisante. Parfaite après les excès.",
+    tableauSoupeDetox: [
+      { nb:  1, epinards: "50 g",  courgette: "0.5", gingembre: "5 g",  citrons: "0.25",bouillon: "300 ml" },
+      { nb:  2, epinards: "100 g", courgette: "1",   gingembre: "10 g", citrons: "0.5", bouillon: "600 ml" },
+      { nb:  3, epinards: "150 g", courgette: "1.5", gingembre: "15 g", citrons: "0.75",bouillon: "900 ml" },
+      { nb:  4, epinards: "200 g", courgette: "2",   gingembre: "20 g", citrons: "1",   bouillon: "1200 ml" },
+      { nb:  5, epinards: "250 g", courgette: "2.5", gingembre: "25 g", citrons: "1.25",bouillon: "1500 ml" },
+      { nb:  6, epinards: "300 g", courgette: "3",   gingembre: "30 g", citrons: "1.5", bouillon: "1800 ml" },
+      { nb:  7, epinards: "350 g", courgette: "3.5", gingembre: "35 g", citrons: "1.75",bouillon: "2100 ml" },
+      { nb:  8, epinards: "400 g", courgette: "4",   gingembre: "40 g", citrons: "2",   bouillon: "2400 ml" },
+      { nb:  9, epinards: "450 g", courgette: "4.5", gingembre: "45 g", citrons: "2.25",bouillon: "2700 ml" },
+      { nb: 10, epinards: "500 g", courgette: "5",   gingembre: "50 g", citrons: "2.5", bouillon: "3000 ml" },
+      { nb: 11, epinards: "550 g", courgette: "5.5", gingembre: "55 g", citrons: "2.75",bouillon: "3300 ml" },
+      { nb: 12, epinards: "600 g", courgette: "6",   gingembre: "60 g", citrons: "3",   bouillon: "3600 ml" },
+      { nb: 13, epinards: "650 g", courgette: "6.5", gingembre: "65 g", citrons: "3.25",bouillon: "3900 ml" },
+      { nb: 14, epinards: "700 g", courgette: "7",   gingembre: "70 g", citrons: "3.5", bouillon: "4200 ml" },
+      { nb: 15, epinards: "750 g", courgette: "7.5", gingembre: "75 g", citrons: "3.75",bouillon: "4500 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Faire revenir les légumes", detail: "Faire suer oignon et ail dans l'huile d'olive. Ajouter courgette coupée en dés, gingembre râpé.", badge: "⏱ 5 min" },
+      { icone: "💧", titre: "Ajouter le bouillon", detail: "Verser le bouillon de légumes chaud. Porter à ébullition puis baisser le feu.", badge: "⏱ 10 min" },
+      { icone: "🌿", titre: "Ajouter les épinards", detail: "Hors du feu, ajouter les épinards frais. Laisser fondre 2 min.", badge: "⏱ 2 min" },
+      { icone: "🍋", titre: "Mixer et finir", detail: "Mixer finement. Ajouter jus de citron vert, sel, poivre. Servir avec graines de courge.", badge: null }
+    ]
+  },
+
+  saladeKale: {
+    base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🥬",
+    description: "Salade de kale massée — chou kale tendre, parmesan, noix, cranberries et vinaigrette au citron. Croquante, nutritive et pleine de saveurs.",
+    tableauSaladeKale: [
+      { nb:  1, salade: "50 g",  parmesan: "10 g", noix: "15 g",  citrons: "0.25",huile: "10 ml" },
+      { nb:  2, salade: "100 g", parmesan: "20 g", noix: "30 g",  citrons: "0.5", huile: "20 ml" },
+      { nb:  3, salade: "150 g", parmesan: "30 g", noix: "45 g",  citrons: "0.75",huile: "30 ml" },
+      { nb:  4, salade: "200 g", parmesan: "40 g", noix: "60 g",  citrons: "1",   huile: "40 ml" },
+      { nb:  5, salade: "250 g", parmesan: "50 g", noix: "75 g",  citrons: "1.25",huile: "50 ml" },
+      { nb:  6, salade: "300 g", parmesan: "60 g", noix: "90 g",  citrons: "1.5", huile: "60 ml" },
+      { nb:  7, salade: "350 g", parmesan: "70 g", noix: "105 g", citrons: "1.75",huile: "70 ml" },
+      { nb:  8, salade: "400 g", parmesan: "80 g", noix: "120 g", citrons: "2",   huile: "80 ml" },
+      { nb:  9, salade: "450 g", parmesan: "90 g", noix: "135 g", citrons: "2.25",huile: "90 ml" },
+      { nb: 10, salade: "500 g", parmesan: "100 g",noix: "150 g", citrons: "2.5", huile: "100 ml" },
+      { nb: 11, salade: "550 g", parmesan: "110 g",noix: "165 g", citrons: "2.75",huile: "110 ml" },
+      { nb: 12, salade: "600 g", parmesan: "120 g",noix: "180 g", citrons: "3",   huile: "120 ml" },
+      { nb: 13, salade: "650 g", parmesan: "130 g",noix: "195 g", citrons: "3.25",huile: "130 ml" },
+      { nb: 14, salade: "700 g", parmesan: "140 g",noix: "210 g", citrons: "3.5", huile: "140 ml" },
+      { nb: 15, salade: "750 g", parmesan: "150 g",noix: "225 g", citrons: "3.75",huile: "150 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Masser le kale", detail: "Enlever les tiges du kale. Déchirer en petits morceaux. Masser vigoureusement avec sel et huile d'olive 2 min pour l'attendrir.", badge: "⏱ 2 min" },
+      { icone: "🌰", titre: "Griller les noix", detail: "Faire griller les noix concassées à sec dans une poêle. Réserver.", badge: "⏱ 3 min" },
+      { icone: "🍋", titre: "Vinaigrette", detail: "Mélanger jus de citron, huile d'olive, moutarde, miel, sel, poivre.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mélanger kale, parmesan copeaux, noix, cranberries. Arroser de vinaigrette. Mélanger et servir.", badge: null }
+    ]
+  },
+
+  // ENCAS
+  bruschetta: {
+    base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🍅",
+    description: "Bruschetta classique à la tomate et basilic — pain grillé frotté à l'ail, garni de tomates fraîches marinées à l'huile d'olive. L'entrée italienne par excellence.",
+    tableauBruschetta: [
+      { nb:  1, pain: "2 tr.",  tomates: "100 g", basilic: "5 g",  huile: "10 ml" },
+      { nb:  2, pain: "4 tr.",  tomates: "200 g", basilic: "10 g", huile: "20 ml" },
+      { nb:  3, pain: "6 tr.",  tomates: "300 g", basilic: "15 g", huile: "30 ml" },
+      { nb:  4, pain: "8 tr.",  tomates: "400 g", basilic: "20 g", huile: "40 ml" },
+      { nb:  5, pain: "10 tr.", tomates: "500 g", basilic: "25 g", huile: "50 ml" },
+      { nb:  6, pain: "12 tr.", tomates: "600 g", basilic: "30 g", huile: "60 ml" },
+      { nb:  7, pain: "14 tr.", tomates: "700 g", basilic: "35 g", huile: "70 ml" },
+      { nb:  8, pain: "16 tr.", tomates: "800 g", basilic: "40 g", huile: "80 ml" },
+      { nb:  9, pain: "18 tr.", tomates: "900 g", basilic: "45 g", huile: "90 ml" },
+      { nb: 10, pain: "20 tr.", tomates: "1000 g",basilic: "50 g", huile: "100 ml" },
+      { nb: 11, pain: "22 tr.", tomates: "1100 g",basilic: "55 g", huile: "110 ml" },
+      { nb: 12, pain: "24 tr.", tomates: "1200 g",basilic: "60 g", huile: "120 ml" },
+      { nb: 13, pain: "26 tr.", tomates: "1300 g",basilic: "65 g", huile: "130 ml" },
+      { nb: 14, pain: "28 tr.", tomates: "1400 g",basilic: "70 g", huile: "140 ml" },
+      { nb: 15, pain: "30 tr.", tomates: "1500 g",basilic: "75 g", huile: "150 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Préparer les tomates", detail: "Épépiner et couper les tomates en dés. Mélanger avec basilic ciselé, huile d'olive, sel, poivre. Laisser mariner.", badge: "⏱ 10 min" },
+      { icone: "🔥", titre: "Griller le pain", detail: "Griller les tranches de pain au gril ou au four jusqu'à dorure.", badge: "⏱ 3 min" },
+      { icone: "🧄", titre: "Frotter à l'ail", detail: "Frotter immédiatement chaque tranche avec une gousse d'ail coupée. Arroser d'huile d'olive.", badge: null },
+      { icone: "🍽️", titre: "Garnir et servir", detail: "Répartir les tomates marinées sur le pain. Servir immédiatement.", badge: null }
+    ]
+  },
+
+  samosas: {
+    base: 4, temps: "45 min", niveau: "⭐⭐ Moyen", emoji: "🥟",
+    description: "Samosas aux légumes épicés — triangles dorés et croustillants farcis de pommes de terre et petits pois parfumés aux épices indiennes.",
+    tableauSamosas: [
+      { nb:  1, farine: "50 g",  patate: "100 g", petitspois: "30 g", curry: "½ c.à.c", huile: "200 ml" },
+      { nb:  2, farine: "100 g", patate: "200 g", petitspois: "60 g", curry: "1 c.à.c",  huile: "200 ml" },
+      { nb:  3, farine: "150 g", patate: "300 g", petitspois: "90 g", curry: "1½ c.à.c", huile: "300 ml" },
+      { nb:  4, farine: "200 g", patate: "400 g", petitspois: "120 g",curry: "2 c.à.c",  huile: "300 ml" },
+      { nb:  5, farine: "250 g", patate: "500 g", petitspois: "150 g",curry: "2½ c.à.c", huile: "400 ml" },
+      { nb:  6, farine: "300 g", patate: "600 g", petitspois: "180 g",curry: "3 c.à.c",  huile: "400 ml" },
+      { nb:  7, farine: "350 g", patate: "700 g", petitspois: "210 g",curry: "3½ c.à.c", huile: "500 ml" },
+      { nb:  8, farine: "400 g", patate: "800 g", petitspois: "240 g",curry: "4 c.à.c",  huile: "500 ml" },
+      { nb:  9, farine: "450 g", patate: "900 g", petitspois: "270 g",curry: "4½ c.à.c", huile: "600 ml" },
+      { nb: 10, farine: "500 g", patate: "1000 g",petitspois: "300 g",curry: "5 c.à.c",  huile: "600 ml" },
+      { nb: 11, farine: "550 g", patate: "1100 g",petitspois: "330 g",curry: "5½ c.à.c", huile: "700 ml" },
+      { nb: 12, farine: "600 g", patate: "1200 g",petitspois: "360 g",curry: "6 c.à.c",  huile: "700 ml" },
+      { nb: 13, farine: "650 g", patate: "1300 g",petitspois: "390 g",curry: "6½ c.à.c", huile: "800 ml" },
+      { nb: 14, farine: "700 g", patate: "1400 g",petitspois: "420 g",curry: "7 c.à.c",  huile: "800 ml" },
+      { nb: 15, farine: "750 g", patate: "1500 g",petitspois: "450 g",curry: "7½ c.à.c", huile: "900 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Préparer la farce", detail: "Cuire pommes de terre et petits pois. Écraser grossièrement. Ajouter oignons revenus, épices (curry, cumin, coriandre, piment). Mélanger.", badge: null },
+      { icone: "🫓", titre: "Faire la pâte", detail: "Mélanger farine, sel, huile et eau tiède pour former une pâte souple. Pétrir 5 min. Laisser reposer 20 min.", badge: "⏱ 20 min" },
+      { icone: "🥟", titre: "Former les samosas", detail: "Abaisser la pâte finement. Découper en cercles. Garnir de farce et plier en triangle. Sceller les bords.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Frire dans l'huile chaude (175°C) jusqu'à dorure. Égoutter sur papier absorbant.", badge: "⏱ 4 min" }
+    ]
+  },
+
+  springRolls: {
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🌿",
+    description: "Spring rolls frais vietnamiens — galettes de riz garnies de crevettes, vermicelles, crudités et herbes fraîches. Légers, frais et servis avec sauce nuoc-mâm.",
+    tableauSpringRolls: [
+      { nb:  1, crevettes: "50 g",  pates: "30 g",   carottes: "0.5", salade: "20 g", coriandre: "5 g" },
+      { nb:  2, crevettes: "100 g", pates: "60 g",   carottes: "1",   salade: "40 g", coriandre: "10 g" },
+      { nb:  3, crevettes: "150 g", pates: "90 g",   carottes: "1.5", salade: "60 g", coriandre: "15 g" },
+      { nb:  4, crevettes: "200 g", pates: "120 g",  carottes: "2",   salade: "80 g", coriandre: "20 g" },
+      { nb:  5, crevettes: "250 g", pates: "150 g",  carottes: "2.5", salade: "100 g",coriandre: "25 g" },
+      { nb:  6, crevettes: "300 g", pates: "180 g",  carottes: "3",   salade: "120 g",coriandre: "30 g" },
+      { nb:  7, crevettes: "350 g", pates: "210 g",  carottes: "3.5", salade: "140 g",coriandre: "35 g" },
+      { nb:  8, crevettes: "400 g", pates: "240 g",  carottes: "4",   salade: "160 g",coriandre: "40 g" },
+      { nb:  9, crevettes: "450 g", pates: "270 g",  carottes: "4.5", salade: "180 g",coriandre: "45 g" },
+      { nb: 10, crevettes: "500 g", pates: "300 g",  carottes: "5",   salade: "200 g",coriandre: "50 g" },
+      { nb: 11, crevettes: "550 g", pates: "330 g",  carottes: "5.5", salade: "220 g",coriandre: "55 g" },
+      { nb: 12, crevettes: "600 g", pates: "360 g",  carottes: "6",   salade: "240 g",coriandre: "60 g" },
+      { nb: 13, crevettes: "650 g", pates: "390 g",  carottes: "6.5", salade: "260 g",coriandre: "65 g" },
+      { nb: 14, crevettes: "700 g", pates: "420 g",  carottes: "7",   salade: "280 g",coriandre: "70 g" },
+      { nb: 15, crevettes: "750 g", pates: "450 g",  carottes: "7.5", salade: "300 g",coriandre: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍜", titre: "Préparer les ingrédients", detail: "Tremper les vermicelles 5 min. Cuire les crevettes. Râper les carottes. Ciseler herbes et salade.", badge: "⏱ 5 min" },
+      { icone: "💧", titre: "Tremper les galettes", detail: "Tremper une galette de riz dans l'eau tiède 20 secondes jusqu'à souplesse.", badge: "⏱ 20 sec" },
+      { icone: "🌿", titre: "Garnir et rouler", detail: "Disposer crevettes, vermicelles, crudités, herbes au centre. Replier les côtés et rouler serré.", badge: null },
+      { icone: "🫙", titre: "Servir avec la sauce", detail: "Servir avec sauce nuoc-mâm citronnée ou sauce cacahuète. Consommer rapidement.", badge: null }
+    ]
+  },
+
+  oeufsCocotte: {
+    base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "🥚",
+    description: "Œufs cocotte à la crème et aux herbes — cuits au bain-marie dans leur petite cocotte avec crème, gruyère et ciboulette. Élégant et rapide.",
+    tableauOeufsCocotte: [
+      { nb:  1, oeuf: "1",   creme: "30 ml",  gruyere: "10 g", ciboulette: "3 g" },
+      { nb:  2, oeuf: "2",   creme: "60 ml",  gruyere: "20 g", ciboulette: "6 g" },
+      { nb:  3, oeuf: "3",   creme: "90 ml",  gruyere: "30 g", ciboulette: "9 g" },
+      { nb:  4, oeuf: "4",   creme: "120 ml", gruyere: "40 g", ciboulette: "12 g" },
+      { nb:  5, oeuf: "5",   creme: "150 ml", gruyere: "50 g", ciboulette: "15 g" },
+      { nb:  6, oeuf: "6",   creme: "180 ml", gruyere: "60 g", ciboulette: "18 g" },
+      { nb:  7, oeuf: "7",   creme: "210 ml", gruyere: "70 g", ciboulette: "21 g" },
+      { nb:  8, oeuf: "8",   creme: "240 ml", gruyere: "80 g", ciboulette: "24 g" },
+      { nb:  9, oeuf: "9",   creme: "270 ml", gruyere: "90 g", ciboulette: "27 g" },
+      { nb: 10, oeuf: "10",  creme: "300 ml", gruyere: "100 g",ciboulette: "30 g" },
+      { nb: 11, oeuf: "11",  creme: "330 ml", gruyere: "110 g",ciboulette: "33 g" },
+      { nb: 12, oeuf: "12",  creme: "360 ml", gruyere: "120 g",ciboulette: "36 g" },
+      { nb: 13, oeuf: "13",  creme: "390 ml", gruyere: "130 g",ciboulette: "39 g" },
+      { nb: 14, oeuf: "14",  creme: "420 ml", gruyere: "140 g",ciboulette: "42 g" },
+      { nb: 15, oeuf: "15",  creme: "450 ml", gruyere: "150 g",ciboulette: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer le four", detail: "Préchauffer le four à 180°C. Beurrer les petites cocottes ou ramequins.", badge: null },
+      { icone: "🍦", titre: "Garnir les cocottes", detail: "Verser la crème fraîche dans chaque cocotte. Casser délicatement l'œuf par-dessus. Saler, poivrer.", badge: null },
+      { icone: "🧀", titre: "Parsemer", detail: "Ajouter gruyère râpé et ciboulette ciselée. Optionnel : quelques lardons ou saumon fumé.", badge: null },
+      { icone: "💧", titre: "Cuire au bain-marie", detail: "Placer les cocottes dans un plat rempli d'eau chaude. Cuire au four. Le blanc doit être pris, le jaune coulant.", badge: "⏱ 12 min" }
+    ]
+  },
+
+  // DESSERTS
+  tarteFragoles: {
+    base: 6, temps: "1h + repos", niveau: "⭐⭐ Moyen", emoji: "🍓",
+    description: "Tarte aux fraises sur crème pâtissière — fond sablé croustillant, crème pâtissière vanillée et fraises fraîches brillantes. La grande classique de la pâtisserie française.",
+    tableauTarteFragoles: [
+      { nb:  1, farine: "55 g",  beurre: "35 g",  sucre: "20 g",  oeuf: "0.25", fraises: "100 g", lait: "100 ml" },
+      { nb:  2, farine: "110 g", beurre: "70 g",  sucre: "40 g",  oeuf: "0.5",  fraises: "200 g", lait: "200 ml" },
+      { nb:  3, farine: "165 g", beurre: "105 g", sucre: "60 g",  oeuf: "0.75", fraises: "300 g", lait: "300 ml" },
+      { nb:  4, farine: "220 g", beurre: "140 g", sucre: "80 g",  oeuf: "1",    fraises: "400 g", lait: "400 ml" },
+      { nb:  5, farine: "275 g", beurre: "175 g", sucre: "100 g", oeuf: "1.25", fraises: "500 g", lait: "500 ml" },
+      { nb:  6, farine: "330 g", beurre: "210 g", sucre: "120 g", oeuf: "1.5",  fraises: "600 g", lait: "600 ml" },
+      { nb:  7, farine: "385 g", beurre: "245 g", sucre: "140 g", oeuf: "1.75", fraises: "700 g", lait: "700 ml" },
+      { nb:  8, farine: "440 g", beurre: "280 g", sucre: "160 g", oeuf: "2",    fraises: "800 g", lait: "800 ml" },
+      { nb:  9, farine: "495 g", beurre: "315 g", sucre: "180 g", oeuf: "2.25", fraises: "900 g", lait: "900 ml" },
+      { nb: 10, farine: "550 g", beurre: "350 g", sucre: "200 g", oeuf: "2.5",  fraises: "1000 g",lait: "1000 ml" },
+      { nb: 11, farine: "605 g", beurre: "385 g", sucre: "220 g", oeuf: "2.75", fraises: "1100 g",lait: "1100 ml" },
+      { nb: 12, farine: "660 g", beurre: "420 g", sucre: "240 g", oeuf: "3",    fraises: "1200 g",lait: "1200 ml" },
+      { nb: 13, farine: "715 g", beurre: "455 g", sucre: "260 g", oeuf: "3.25", fraises: "1300 g",lait: "1300 ml" },
+      { nb: 14, farine: "770 g", beurre: "490 g", sucre: "280 g", oeuf: "3.5",  fraises: "1400 g",lait: "1400 ml" },
+      { nb: 15, farine: "825 g", beurre: "525 g", sucre: "300 g", oeuf: "3.75", fraises: "1500 g",lait: "1500 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥐", titre: "Faire la pâte sablée", detail: "Sabler farine, beurre froid, sucre glace. Ajouter œuf et former une boule. Réfrigérer 30 min.", badge: "⏱ 30 min" },
+      { icone: "🔥", titre: "Cuire à blanc", detail: "Foncer le moule avec la pâte. Piquer et cuire à blanc avec billes de cuisson à 180°C.", badge: "⏱ 20 min" },
+      { icone: "🥛", titre: "Faire la crème pâtissière", detail: "Chauffer lait et vanille. Mélanger jaunes, sucre, maïzena. Verser le lait chaud en fouettant. Cuire jusqu'à épaississement.", badge: "⏱ 10 min" },
+      { icone: "🍓", titre: "Garnir et dresser", detail: "Garnir le fond refroidi de crème pâtissière froide. Disposer les fraises équeutées. Badigeonner de nappage.", badge: null }
+    ]
+  },
+
+  pannaCotta: {
+    base: 4, temps: "20 min + 4h", niveau: "⭐ Facile", emoji: "🍮",
+    description: "Panna cotta vanille au coulis de fruits rouges — dessert italien soyeux et délicat, tremblant à souhait. Simple à préparer, impressionnant à présenter.",
+    tableauPannaCotta: [
+      { nb:  1, creme: "150 ml", sucre: "20 g",  vanille: "0.25 gousse", gelatine: "1 feuille",  fraises: "50 g" },
+      { nb:  2, creme: "300 ml", sucre: "40 g",  vanille: "0.5 gousse",  gelatine: "2 feuilles", fraises: "100 g" },
+      { nb:  3, creme: "450 ml", sucre: "60 g",  vanille: "0.75 gousse", gelatine: "3 feuilles", fraises: "150 g" },
+      { nb:  4, creme: "600 ml", sucre: "80 g",  vanille: "1 gousse",    gelatine: "4 feuilles", fraises: "200 g" },
+      { nb:  5, creme: "750 ml", sucre: "100 g", vanille: "1.25 gousse", gelatine: "5 feuilles", fraises: "250 g" },
+      { nb:  6, creme: "900 ml", sucre: "120 g", vanille: "1.5 gousse",  gelatine: "6 feuilles", fraises: "300 g" },
+      { nb:  7, creme: "1050 ml",sucre: "140 g", vanille: "1.75 gousse", gelatine: "7 feuilles", fraises: "350 g" },
+      { nb:  8, creme: "1200 ml",sucre: "160 g", vanille: "2 gousses",   gelatine: "8 feuilles", fraises: "400 g" },
+      { nb:  9, creme: "1350 ml",sucre: "180 g", vanille: "2.25 gousses",gelatine: "9 feuilles", fraises: "450 g" },
+      { nb: 10, creme: "1500 ml",sucre: "200 g", vanille: "2.5 gousses", gelatine: "10 feuilles",fraises: "500 g" },
+      { nb: 11, creme: "1650 ml",sucre: "220 g", vanille: "2.75 gousses",gelatine: "11 feuilles",fraises: "550 g" },
+      { nb: 12, creme: "1800 ml",sucre: "240 g", vanille: "3 gousses",   gelatine: "12 feuilles",fraises: "600 g" },
+      { nb: 13, creme: "1950 ml",sucre: "260 g", vanille: "3.25 gousses",gelatine: "13 feuilles",fraises: "650 g" },
+      { nb: 14, creme: "2100 ml",sucre: "280 g", vanille: "3.5 gousses", gelatine: "14 feuilles",fraises: "700 g" },
+      { nb: 15, creme: "2250 ml",sucre: "300 g", vanille: "3.75 gousses",gelatine: "15 feuilles",fraises: "750 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌸", titre: "Faire tremper la gélatine", detail: "Faire tremper les feuilles de gélatine dans l'eau froide 5 min.", badge: "⏱ 5 min" },
+      { icone: "🫙", titre: "Chauffer la crème", detail: "Chauffer crème, sucre et gousse de vanille fendue jusqu'à frémissement. Ne pas bouillir.", badge: "⏱ 5 min" },
+      { icone: "🍮", titre: "Incorporer la gélatine", detail: "Hors du feu, incorporer la gélatine essorée. Mélanger. Filtrer. Verser dans les moules.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Réfrigérer au moins 4h. Démouler sur les assiettes. Napper de coulis de fruits rouges.", badge: "⏱ 4h" }
+    ]
+  },
+
+  eclair: {
+    base: 4, temps: "1h", niveau: "⭐⭐⭐ Expert", emoji: "⚡",
+    description: "Éclairs au chocolat — choux croustillants garnis de crème pâtissière au chocolat et nappés de fondant brillant. La pâtisserie française dans toute sa splendeur.",
+    tableauEclair: [
+      { nb:  1, farine: "30 g",  beurre: "25 g",  oeuf: "1",    lait: "100 ml", choco: "20 g",  sucre: "15 g" },
+      { nb:  2, farine: "60 g",  beurre: "50 g",  oeuf: "2",    lait: "200 ml", choco: "40 g",  sucre: "30 g" },
+      { nb:  3, farine: "90 g",  beurre: "75 g",  oeuf: "3",    lait: "300 ml", choco: "60 g",  sucre: "45 g" },
+      { nb:  4, farine: "120 g", beurre: "100 g", oeuf: "4",    lait: "400 ml", choco: "80 g",  sucre: "60 g" },
+      { nb:  5, farine: "150 g", beurre: "125 g", oeuf: "5",    lait: "500 ml", choco: "100 g", sucre: "75 g" },
+      { nb:  6, farine: "180 g", beurre: "150 g", oeuf: "6",    lait: "600 ml", choco: "120 g", sucre: "90 g" },
+      { nb:  7, farine: "210 g", beurre: "175 g", oeuf: "7",    lait: "700 ml", choco: "140 g", sucre: "105 g" },
+      { nb:  8, farine: "240 g", beurre: "200 g", oeuf: "8",    lait: "800 ml", choco: "160 g", sucre: "120 g" },
+      { nb:  9, farine: "270 g", beurre: "225 g", oeuf: "9",    lait: "900 ml", choco: "180 g", sucre: "135 g" },
+      { nb: 10, farine: "300 g", beurre: "250 g", oeuf: "10",   lait: "1000 ml",choco: "200 g", sucre: "150 g" },
+      { nb: 11, farine: "330 g", beurre: "275 g", oeuf: "11",   lait: "1100 ml",choco: "220 g", sucre: "165 g" },
+      { nb: 12, farine: "360 g", beurre: "300 g", oeuf: "12",   lait: "1200 ml",choco: "240 g", sucre: "180 g" },
+      { nb: 13, farine: "390 g", beurre: "325 g", oeuf: "13",   lait: "1300 ml",choco: "260 g", sucre: "195 g" },
+      { nb: 14, farine: "420 g", beurre: "350 g", oeuf: "14",   lait: "1400 ml",choco: "280 g", sucre: "210 g" },
+      { nb: 15, farine: "450 g", beurre: "375 g", oeuf: "15",   lait: "1500 ml",choco: "300 g", sucre: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Faire la pâte à choux", detail: "Bouillir eau, beurre, sel. Hors du feu, ajouter farine d'un coup. Dessécher 2 min. Incorporer les œufs un à un.", badge: null },
+      { icone: "🔥", titre: "Cuire les éclairs", detail: "Dresser des bâtons de 12 cm à la poche à douille. Cuire à 200°C sans ouvrir le four.", badge: "⏱ 25 min" },
+      { icone: "🍫", titre: "Faire la crème", detail: "Faire une crème pâtissière. Y ajouter le chocolat fondu hors du feu. Refroidir.", badge: null },
+      { icone: "⚡", titre: "Garnir et glacer", detail: "Garnir les éclairs de crème chocolat à la poche. Tremper dans le fondant au chocolat chaud.", badge: null }
+    ]
+  },
+
+  pavlova: {
+    base: 6, temps: "1h30", niveau: "⭐⭐ Moyen", emoji: "🍰",
+    description: "Pavlova aux fruits frais — meringue croustillante dehors et fondante dedans, surmontée de crème chantilly et de fruits exotiques colorés. Un nuage de légèreté.",
+    tableauPavlova: [
+      { nb:  1, blanc: "2",    sucre: "60 g",  creme: "100 ml", fraises: "50 g",  kiwi: "0.5" },
+      { nb:  2, blanc: "3",    sucre: "90 g",  creme: "150 ml", fraises: "75 g",  kiwi: "0.75" },
+      { nb:  3, blanc: "4",    sucre: "120 g", creme: "200 ml", fraises: "100 g", kiwi: "1" },
+      { nb:  4, blanc: "5",    sucre: "150 g", creme: "250 ml", fraises: "125 g", kiwi: "1.25" },
+      { nb:  5, blanc: "6",    sucre: "180 g", creme: "300 ml", fraises: "150 g", kiwi: "1.5" },
+      { nb:  6, blanc: "8",    sucre: "240 g", creme: "400 ml", fraises: "200 g", kiwi: "2" },
+      { nb:  7, blanc: "9",    sucre: "270 g", creme: "450 ml", fraises: "225 g", kiwi: "2.25" },
+      { nb:  8, blanc: "10",   sucre: "300 g", creme: "500 ml", fraises: "250 g", kiwi: "2.5" },
+      { nb:  9, blanc: "12",   sucre: "360 g", creme: "600 ml", fraises: "300 g", kiwi: "3" },
+      { nb: 10, blanc: "13",   sucre: "390 g", creme: "650 ml", fraises: "325 g", kiwi: "3.25" },
+      { nb: 11, blanc: "14",   sucre: "420 g", creme: "700 ml", fraises: "350 g", kiwi: "3.5" },
+      { nb: 12, blanc: "16",   sucre: "480 g", creme: "800 ml", fraises: "400 g", kiwi: "4" },
+      { nb: 13, blanc: "17",   sucre: "510 g", creme: "850 ml", fraises: "425 g", kiwi: "4.25" },
+      { nb: 14, blanc: "18",   sucre: "540 g", creme: "900 ml", fraises: "450 g", kiwi: "4.5" },
+      { nb: 15, blanc: "20",   sucre: "600 g", creme: "1000 ml",fraises: "500 g", kiwi: "5" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Monter les blancs", detail: "Monter les blancs en neige ferme. Incorporer le sucre progressivement. Ajouter vinaigre blanc et maïzena.", badge: null },
+      { icone: "🔥", titre: "Cuire la meringue", detail: "Dresser un disque de meringue sur papier cuisson. Creuser le centre. Cuire au four très doux.", badge: "⏱ 1h15" },
+      { icone: "🍦", titre: "Monter la chantilly", detail: "Fouetter la crème très froide avec sucre glace et vanille jusqu'à tenue ferme.", badge: null },
+      { icone: "🍓", titre: "Garnir", detail: "Laisser refroidir la meringue. Garnir de chantilly. Disposer les fruits frais colorés. Servir immédiatement.", badge: null }
+    ]
+  },
+
+  profiteroles: {
+    base: 4, temps: "50 min", niveau: "⭐⭐ Moyen", emoji: "🍨",
+    description: "Profiteroles — petits choux légers garnis de glace vanille, nappés de sauce au chocolat chaud. Le dessert emblématique des bistrots parisiens.",
+    tableauProfiteroles: [
+      { nb:  1, farine: "30 g",  beurre: "25 g",  oeuf: "1",   choco: "30 g",  creme: "30 ml",  sucre: "10 g" },
+      { nb:  2, farine: "60 g",  beurre: "50 g",  oeuf: "2",   choco: "60 g",  creme: "60 ml",  sucre: "20 g" },
+      { nb:  3, farine: "90 g",  beurre: "75 g",  oeuf: "3",   choco: "90 g",  creme: "90 ml",  sucre: "30 g" },
+      { nb:  4, farine: "120 g", beurre: "100 g", oeuf: "4",   choco: "120 g", creme: "120 ml", sucre: "40 g" },
+      { nb:  5, farine: "150 g", beurre: "125 g", oeuf: "5",   choco: "150 g", creme: "150 ml", sucre: "50 g" },
+      { nb:  6, farine: "180 g", beurre: "150 g", oeuf: "6",   choco: "180 g", creme: "180 ml", sucre: "60 g" },
+      { nb:  7, farine: "210 g", beurre: "175 g", oeuf: "7",   choco: "210 g", creme: "210 ml", sucre: "70 g" },
+      { nb:  8, farine: "240 g", beurre: "200 g", oeuf: "8",   choco: "240 g", creme: "240 ml", sucre: "80 g" },
+      { nb:  9, farine: "270 g", beurre: "225 g", oeuf: "9",   choco: "270 g", creme: "270 ml", sucre: "90 g" },
+      { nb: 10, farine: "300 g", beurre: "250 g", oeuf: "10",  choco: "300 g", creme: "300 ml", sucre: "100 g" },
+      { nb: 11, farine: "330 g", beurre: "275 g", oeuf: "11",  choco: "330 g", creme: "330 ml", sucre: "110 g" },
+      { nb: 12, farine: "360 g", beurre: "300 g", oeuf: "12",  choco: "360 g", creme: "360 ml", sucre: "120 g" },
+      { nb: 13, farine: "390 g", beurre: "325 g", oeuf: "13",  choco: "390 g", creme: "390 ml", sucre: "130 g" },
+      { nb: 14, farine: "420 g", beurre: "350 g", oeuf: "14",  choco: "420 g", creme: "420 ml", sucre: "140 g" },
+      { nb: 15, farine: "450 g", beurre: "375 g", oeuf: "15",  choco: "450 g", creme: "450 ml", sucre: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Faire les choux", detail: "Bouillir eau, beurre, sel, sucre. Incorporer farine, dessécher. Ajouter œufs un à un. Pocher des petites boules.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire à 200°C. Ne pas ouvrir le four pendant la cuisson.", badge: "⏱ 25 min" },
+      { icone: "🍫", titre: "Sauce chocolat", detail: "Faire fondre chocolat noir avec crème chaude et sucre. Mélanger jusqu'à consistance lisse.", badge: null },
+      { icone: "🍨", titre: "Garnir et servir", detail: "Couper les choux refroidis. Garnir d'une boule de glace vanille. Napper de sauce chocolat chaude au moment de servir.", badge: null }
+    ]
+  },
+
+  tarteNormande: {
+    base: 6, temps: "55 min", niveau: "⭐ Facile", emoji: "🍎",
+    description: "Tarte normande aux pommes — fond de pâte brisée, pommes fondantes et appareil à la crème, œufs et calvados. La tarte emblématique de la Normandie.",
+    tableauTarteNormande: [
+      { nb:  1, farine: "55 g",  beurre: "35 g",  pommes: "100 g", oeuf: "0.5",  creme: "50 ml",  sucre: "25 g" },
+      { nb:  2, farine: "110 g", beurre: "70 g",  pommes: "200 g", oeuf: "1",    creme: "100 ml", sucre: "50 g" },
+      { nb:  3, farine: "165 g", beurre: "105 g", pommes: "300 g", oeuf: "1.5",  creme: "150 ml", sucre: "75 g" },
+      { nb:  4, farine: "220 g", beurre: "140 g", pommes: "400 g", oeuf: "2",    creme: "200 ml", sucre: "100 g" },
+      { nb:  5, farine: "275 g", beurre: "175 g", pommes: "500 g", oeuf: "2.5",  creme: "250 ml", sucre: "125 g" },
+      { nb:  6, farine: "330 g", beurre: "210 g", pommes: "600 g", oeuf: "3",    creme: "300 ml", sucre: "150 g" },
+      { nb:  7, farine: "385 g", beurre: "245 g", pommes: "700 g", oeuf: "3.5",  creme: "350 ml", sucre: "175 g" },
+      { nb:  8, farine: "440 g", beurre: "280 g", pommes: "800 g", oeuf: "4",    creme: "400 ml", sucre: "200 g" },
+      { nb:  9, farine: "495 g", beurre: "315 g", pommes: "900 g", oeuf: "4.5",  creme: "450 ml", sucre: "225 g" },
+      { nb: 10, farine: "550 g", beurre: "350 g", pommes: "1000 g",oeuf: "5",    creme: "500 ml", sucre: "250 g" },
+      { nb: 11, farine: "605 g", beurre: "385 g", pommes: "1100 g",oeuf: "5.5",  creme: "550 ml", sucre: "275 g" },
+      { nb: 12, farine: "660 g", beurre: "420 g", pommes: "1200 g",oeuf: "6",    creme: "600 ml", sucre: "300 g" },
+      { nb: 13, farine: "715 g", beurre: "455 g", pommes: "1300 g",oeuf: "6.5",  creme: "650 ml", sucre: "325 g" },
+      { nb: 14, farine: "770 g", beurre: "490 g", pommes: "1400 g",oeuf: "7",    creme: "700 ml", sucre: "350 g" },
+      { nb: 15, farine: "825 g", beurre: "525 g", pommes: "1500 g",oeuf: "7.5",  creme: "750 ml", sucre: "375 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥐", titre: "Faire la pâte brisée", detail: "Sabler farine et beurre froid. Ajouter œuf et eau froide. Former une boule sans trop travailler. Réfrigérer 30 min.", badge: "⏱ 30 min" },
+      { icone: "🍎", titre: "Préparer les pommes", detail: "Éplucher et couper les pommes en fines tranches. Les faire revenir dans le beurre avec le sucre et la cannelle.", badge: "⏱ 5 min" },
+      { icone: "🥛", titre: "Faire l'appareil", detail: "Mélanger crème, œufs, sucre, calvados (facultatif). Fouetter.", badge: null },
+      { icone: "🔥", titre: "Cuire la tarte", detail: "Foncer le moule. Disposer les pommes. Verser l'appareil. Cuire à 180°C.", badge: "⏱ 35 min" }
+    ]
+  },
+
+  brandadeMorue: {
+    base: 4, temps: "1h", niveau: "⭐⭐ Moyen", emoji: "🐟",
+    description: "La brandade de morue nimoise — morue dessalée montée à l'huile d'olive et à la crème, onctueuse et parfumée à l'ail. Un grand classique du Midi.",
+    tableauBrandade: [
+      { nb:  1, poisson: "125 g",  patate: "100 g", creme: "50 ml",  huile: "30 ml" },
+      { nb:  2, poisson: "250 g",  patate: "200 g", creme: "100 ml", huile: "60 ml" },
+      { nb:  3, poisson: "375 g",  patate: "300 g", creme: "150 ml", huile: "90 ml" },
+      { nb:  4, poisson: "500 g",  patate: "400 g", creme: "200 ml", huile: "120 ml" },
+      { nb:  5, poisson: "625 g",  patate: "500 g", creme: "250 ml", huile: "150 ml" },
+      { nb:  6, poisson: "750 g",  patate: "600 g", creme: "300 ml", huile: "180 ml" },
+      { nb:  7, poisson: "875 g",  patate: "700 g", creme: "350 ml", huile: "210 ml" },
+      { nb:  8, poisson: "1000 g", patate: "800 g", creme: "400 ml", huile: "240 ml" },
+      { nb:  9, poisson: "1125 g", patate: "900 g", creme: "450 ml", huile: "270 ml" },
+      { nb: 10, poisson: "1250 g", patate: "1000 g",creme: "500 ml", huile: "300 ml" },
+      { nb: 11, poisson: "1375 g", patate: "1100 g",creme: "550 ml", huile: "330 ml" },
+      { nb: 12, poisson: "1500 g", patate: "1200 g",creme: "600 ml", huile: "360 ml" },
+      { nb: 13, poisson: "1625 g", patate: "1300 g",creme: "650 ml", huile: "390 ml" },
+      { nb: 14, poisson: "1750 g", patate: "1400 g",creme: "700 ml", huile: "420 ml" },
+      { nb: 15, poisson: "1875 g", patate: "1500 g",creme: "750 ml", huile: "450 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Dessaler la morue", detail: "Placer la morue dans un grand récipient d'eau froide. Changer l'eau toutes les 6h pendant 24-48h selon l'épaisseur.", badge: "⏱ 24-48h" },
+      { icone: "🐟", titre: "Pocher la morue", detail: "Cuire la morue dans l'eau frémissante (jamais bouillante) 10 min. Égoutter, effeuiller en retirant peaux et arêtes.", badge: "⏱ 10 min" },
+      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Cuire les pommes de terre à la vapeur. Écraser en purée lisse.", badge: "⏱ 20 min" },
+      { icone: "🫒", titre: "Monter la brandade", detail: "Dans une casserole à feu doux, écraser la morue. Incorporer alternativement huile d'olive tiède et crème chaude en mélangeant vigoureusement. Ajouter la purée, l'ail haché.", badge: null },
+      { icone: "🔥", titre: "Gratiner (optionnel)", detail: "Verser dans un plat. Saupoudrer de chapelure. Passer au four 10 min pour gratiner. Servir avec des croûtons.", badge: "⏱ 10 min" }
+    ]
+  },
 
 };
-
-
-// =============================
-// CALCULATEUR
-// =============================
-
-// ==============================
-// HELPER : tableau en colonnes
-// ==============================
-
-function col(lignes) {
-  return `<table class="tableau-patons tableau-colonnes"><tbody>${lignes}</tbody></table>`;
-}
-
-function htmlTableauPizzaColonnes(l) {
-  return col(`
-    <tr><th>🍕 Pâtons</th><td><b>${l.patons}</b></td></tr>
-    <tr><th>⚖️ Poids total pâte</th><td><b style="color:#ff8fb3">${l.total}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>💧 Eau (65% hydratation)</th><td>${l.eau}</td></tr>
-    <tr><th>🧂 Sel (~3%)</th><td>${l.sel}</td></tr>
-    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>`);
-}
-
-function htmlTableauCrepesColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
-    <tr><th>💧 Eau</th><td>${l.eau}</td></tr>
-    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
-}
-
-function htmlTableauGaufresColonnes(l) {
-  return col(`
-    <tr><th>🧇 Gaufres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
-    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>
-    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
-    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`);
-}
-
-function htmlTableauCookiesColonnes(l) {
-  return col(`
-    <tr><th>🍪 Cookies</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🧈 Beurre tendre</th><td>${l.beurre}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🌿 Vanille</th><td>${l.vanille}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🍫 Chocolat noir</th><td>${l.choco}</td></tr>
-    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
-    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>
-    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>`);
-}
-
-function htmlTableauSmoothieColonnes(l) {
-  return col(`
-    <tr><th>🍓 Bols</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍓 Fruits rouges surgelés</th><td>${l.fruits}</td></tr>
-    <tr><th>🍌 Banane congelée</th><td>${l.banane}</td></tr>
-    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
-    <tr><th>🥥 Lait végétal</th><td>${l.lait}</td></tr>
-    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;padding-top:12px">🎨 Toppings (selon goût)</th></tr>
-    <tr><th>🫐 Fruits frais</th><td>1 poignée / bol</td></tr>
-    <tr><th>🌾 Granola / flocons avoine</th><td>2 c.à.s / bol</td></tr>
-    <tr><th>🌱 Graines de chia</th><td>1 c.à.c / bol</td></tr>
-    <tr><th>🥥 Noix de coco râpée</th><td>1 c.à.s / bol</td></tr>`);
-}
-
-function htmlTableauYaourtColonnes(l) {
-  return col(`
-    <tr><th>🥛 Yaourts</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
-    <tr><th>🧫 Ferment (yaourt nature)</th><td>${l.ferment}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;padding-top:12px">🍯 Pour servir (optionnel)</th></tr>
-    <tr><th>🍯 Miel / confiture</th><td>selon goût</td></tr>
-    <tr><th>🍓 Fruits frais</th><td>selon goût</td></tr>`);
-}
-
-function htmlTableauPancakesColonnes(l) {
-  return col(`
-    <tr><th>🥞 Pancakes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
-    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>`);
-}
-
-function htmlTableauMuffinsColonnes(l) {
-  return col(`
-    <tr><th>🧁 Muffins</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🍫 Cacao</th><td>${l.cacao}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🧪 Levure</th><td>${l.levure}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
-    <tr><th>🫒 Huile</th><td>${l.huile}</td></tr>
-    <tr><th>🍫 Pépites chocolat</th><td>${l.pepites}</td></tr>`);
-}
-
-function htmlTableauCroquesColonnes(l) {
-  return col(`
-    <tr><th>🥪 Croques</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍞 Pain de mie</th><td>${l.pain}</td></tr>
-    <tr><th>🥩 Jambon blanc</th><td>${l.jambon}</td></tr>
-    <tr><th>🧀 Gruyère râpé</th><td>${l.gruyere}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🌾 Farine (béchamel)</th><td>${l.farine}</td></tr>
-    <tr><th>🥛 Lait (béchamel)</th><td>${l.lait}</td></tr>
-    <tr><th>🌿 Moutarde Dijon</th><td>${l.moutarde}</td></tr>`);
-}
-
-function htmlTableauSaladeNicoiseColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
-    <tr><th>🐟 Thon (boîte)</th><td>${l.thon}</td></tr>
-    <tr><th>🥚 Œufs durs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🫒 Olives noires</th><td>${l.olives}</td></tr>
-    <tr><th>🐟 Anchois</th><td>${l.anchois} filets</td></tr>
-    <tr><th>🥬 Salade (batavia)</th><td>${l.salade}</td></tr>
-    <tr><th>🧅 Oignon rouge</th><td>${l.oignon}</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
-}
-function htmlTableauSaladeCesarColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥬 Laitue romaine</th><td>${l.laitue}</td></tr>
-    <tr><th>🍗 Poulet grillé</th><td>${l.poulet}</td></tr>
-    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>
-    <tr><th>🍞 Pain (croûtons)</th><td>${l.pain}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
-    <tr><th>🥚 Jaunes d'œufs (sauce)</th><td>1 / 4 pers.</td></tr>`);
-}
-function htmlTableauSaladeGrequeColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
-    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
-    <tr><th>🧀 Feta</th><td>${l.feta}</td></tr>
-    <tr><th>🫒 Olives Kalamata</th><td>${l.olives}</td></tr>
-    <tr><th>🧅 Oignon rouge</th><td>${l.oignon}</td></tr>
-    <tr><th>🌿 Origan séché</th><td>selon goût</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
-}
-function htmlTableauSaladePatasColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍝 Pâtes courtes</th><td>${l.pates}</td></tr>
-    <tr><th>🐟 Thon (boîte)</th><td>${l.thon}</td></tr>
-    <tr><th>🍅 Tomates cerises</th><td>${l.tomates}</td></tr>
-    <tr><th>🌽 Maïs</th><td>${l.mais}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
-}
-function htmlTableauSaladeRizColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍚 Riz</th><td>${l.riz}</td></tr>
-    <tr><th>🫑 Poivron rouge</th><td>${l.poivron}</td></tr>
-    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
-    <tr><th>🍅 Tomates cerises</th><td>${l.tomates}</td></tr>
-    <tr><th>🫒 Olives</th><td>${l.olives}</td></tr>
-    <tr><th>🌿 Basilic / persil</th><td>1 bouquet</td></tr>`);
-}
-function htmlTableauTabuleColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Semoule fine</th><td>${l.semoule}</td></tr>
-    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
-    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
-    <tr><th>🌿 Persil plat</th><td>${l.persil}</td></tr>
-    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
-}
-function htmlTableauSaladeLentillesColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫘 Lentilles vertes</th><td>${l.lentilles}</td></tr>
-    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🥓 Lardons (optionnel)</th><td>${l.lardons}</td></tr>
-    <tr><th>🌿 Bouquet garni</th><td>1</td></tr>
-    <tr><th>🥣 Moutarde (vinaigrette)</th><td>1 c.à.s / 4 pers.</td></tr>`);
-}
-function htmlTableauAvocatCrevettesColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥑 Avocats</th><td>${l.avocats}</td></tr>
-    <tr><th>🦐 Crevettes roses cuites</th><td>${l.crevettes}</td></tr>
-    <tr><th>🥬 Salade verte</th><td>${l.salade}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
-    <tr><th>🍶 Mayonnaise (sauce cocktail)</th><td>3 c.à.s / 4 pers.</td></tr>`);
-}
-
-function htmlTableauGoumeauColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🫓 Pâte</th></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🟨 Levure de bière</th><td>${l.levure}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥚 Œuf entier</th><td>${l.oeuf}</td></tr>
-    <tr><th>🍦 Crème épaisse</th><td>${l.creme}</td></tr>
-    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
-    <tr><th>🌸 Eau de fleur d'oranger</th><td>selon quantité</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🍮 Goumeau (nappage)</th></tr>
-    <tr><th>🍦 Crème fraîche épaisse</th><td>${l.gCreme}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.gSucre}</td></tr>
-    <tr><th>🥚 Jaune d'œuf</th><td>${l.gJaune}</td></tr>`);
-}
-
-function htmlTableauGaletteTacosColonnes(l) {
-  return col(`
-    <tr><th>🌮 Galettes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine T55</th><td>${l.farine}</td></tr>
-    <tr><th>💧 Eau tiède</th><td>${l.eau}</td></tr>
-    <tr><th>🫒 Huile neutre</th><td>${l.huile}</td></tr>
-    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
-}
-
-function htmlTableauPainBurgerColonnes(l) {
-  return col(`
-    <tr><th>🍔 Buns</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine T55</th><td>${l.farine}</td></tr>
-    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
-    <tr><th>🧈 Beurre mou</th><td>${l.beurre}</td></tr>
-    <tr><th>🫒 Huile neutre</th><td>${l.huile}</td></tr>
-    <tr><th>🥚 Œuf</th><td>${l.oeufs}</td></tr>
-    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
-    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">✨ Finition</th></tr>
-    <tr><th>🥛 Lait (dorure)</th><td>pour badigeonner</td></tr>
-    <tr><th>⚪ Graines de sésame</th><td>selon goût</td></tr>`);
-}
-
-function htmlTableauPainDeMieColonnes(l) {
-  return col(`
-    <tr><th>🍞 Tranches</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
-    <tr><th>🧈 Beurre mou</th><td>${l.beurre}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
-    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
-}
-
-function htmlTableauOvernightOatsColonnes(l) {
-  return col(`
-    <tr><th>🌾 Pots</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Flocons d'avoine</th><td>${l.flocons}</td></tr>
-    <tr><th>🥛 Lait végétal</th><td>${l.lait}</td></tr>
-    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
-    <tr><th>🌱 Graines de chia</th><td>${l.chia}</td></tr>
-    <tr><th>🍯 Miel / sirop d'érable</th><td>${l.miel}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🎨 Toppings (selon goût)</th></tr>
-    <tr><th>🍓 Fruits frais</th><td>1 poignée / pot</td></tr>
-    <tr><th>🌰 Noix / amandes</th><td>selon goût</td></tr>`);
-}
-function htmlTableauBuddhaBowlColonnes(l) {
-  return col(`
-    <tr><th>🥙 Bols</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Quinoa</th><td>${l.quinoa}</td></tr>
-    <tr><th>🍠 Patate douce</th><td>${l.patatedouce}</td></tr>
-    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
-    <tr><th>🥬 Épinards frais</th><td>${l.epinards}</td></tr>
-    <tr><th>🥑 Avocat</th><td>${l.avocat}</td></tr>
-    <tr><th>🫒 Tahini (sauce)</th><td>${l.tahini}</td></tr>
-    <tr><th>🍋 Citron + ail</th><td>selon goût</td></tr>`);
-}
-function htmlTableauSoupeMisoColonnes(l) {
-  return col(`
-    <tr><th>🍜 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>💧 Eau (+ dashi)</th><td>${l.eau}</td></tr>
-    <tr><th>🌿 Pâte miso</th><td>${l.miso}</td></tr>
-    <tr><th>🧀 Tofu soyeux</th><td>${l.tofu}</td></tr>
-    <tr><th>🌊 Wakamé séché</th><td>${l.wakame}</td></tr>
-    <tr><th>🌿 Ciboule</th><td>${l.ciboule} tige(s)</td></tr>`);
-}
-function htmlTableauWrapPouletColonnes(l) {
-  return col(`
-    <tr><th>🌯 Wraps</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
-    <tr><th>🫓 Tortillas</th><td>${l.tortilla}</td></tr>
-    <tr><th>🥬 Laitue</th><td>${l.laitue}</td></tr>
-    <tr><th>🍅 Tomate</th><td>${l.tomate}</td></tr>
-    <tr><th>🥛 Yaourt grec (sauce)</th><td>${l.yaourt}</td></tr>
-    <tr><th>🍋 Citron + herbes</th><td>selon goût</td></tr>`);
-}
-function htmlTableauEnergyBallsColonnes(l) {
-  return col(`
-    <tr><th>⚡ Balls</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌴 Dattes Medjool</th><td>${l.dattes}</td></tr>
-    <tr><th>🌰 Amandes</th><td>${l.amandes}</td></tr>
-    <tr><th>🌾 Flocons d'avoine</th><td>${l.flocons}</td></tr>
-    <tr><th>🍫 Cacao en poudre</th><td>${l.cacao}</td></tr>
-    <tr><th>🥥 Noix de coco râpée</th><td>${l.coco}</td></tr>`);
-}
-function htmlTableauPancakesProteineColonnes(l) {
-  return col(`
-    <tr><th>💪 Pancakes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍌 Banane mûre</th><td>${l.banane}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>💪 Poudre de protéines (opt.)</th><td>${l.proteine}</td></tr>
-    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`);
-}
-function htmlTableauBowlAcaiColonnes(l) {
-  return col(`
-    <tr><th>🫐 Bols</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫐 Purée açaï surgelée</th><td>${l.acai}</td></tr>
-    <tr><th>🍌 Banane congelée</th><td>${l.banane}</td></tr>
-    <tr><th>🥥 Lait végétal</th><td>${l.lait}</td></tr>
-    <tr><th>🌾 Granola</th><td>${l.granola}</td></tr>
-    <tr><th>🍓 Fruits frais</th><td>${l.fruits}</td></tr>`);
-}
-function htmlTableauSaladePoisChichesColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
-    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
-    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
-    <tr><th>🧅 Oignon rouge</th><td>${l.oignon}</td></tr>
-    <tr><th>🌿 Persil</th><td>${l.persil}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauGaspachoColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
-    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
-    <tr><th>🫑 Poivron rouge</th><td>${l.poivron}</td></tr>
-    <tr><th>🍞 Pain rassis</th><td>${l.pain}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
-}
-
-function htmlTableauTiramisuColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍪 Biscuits à la cuillère</th><td>${l.biscuits}</td></tr>
-    <tr><th>🧀 Mascarpone</th><td>${l.mascarpone}</td></tr>
-    <tr><th>🥚 Œufs (extra-frais)</th><td>${l.oeufs}</td></tr>
-    <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
-    <tr><th>☕ Café expresso</th><td>${l.cafe}</td></tr>
-    <tr><th>🍫 Cacao amer</th><td>selon goût</td></tr>
-    <tr><th>🥃 Marsala (facultatif)</th><td>selon goût</td></tr>`);
-}
-
-function htmlTableauFlanColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥧 Pâte feuilletée</th><td>1</td></tr>
-    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
-    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunes}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
-    <tr><th>🍦 Crème liquide</th><td>${l.creme}</td></tr>
-    <tr><th>🌿 Gousse de vanille</th><td>1</td></tr>`);
-}
-
-function htmlTableauClafoutisColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍒 Cerises</th><td>${l.cerises}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
-    <tr><th>🌿 Sucre vanillé</th><td>1 sachet</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
-    <tr><th>🧈 Beurre</th><td>pour le moule</td></tr>`);
-}
-
-function htmlTableauTartePommesColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥧 Pâte brisée</th><td>1</td></tr>
-    <tr><th>🍎 Pommes</th><td>${l.pommes}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>💧 Eau</th><td>${l.eau}</td></tr>
-    <tr><th>🍋 Citron (jus)</th><td>½</td></tr>
-    <tr><th>🍑 Confiture abricot</th><td>${l.confiture}</td></tr>`);
-}
-
-
-// ==============================
-// TABLES GLOBALES DE RECETTES
-// ==============================
-let mondeClassiquesTablesGlobal = null;
-let hellofreshTablesGlobal = null;
-let cocktailsTablesGlobal = null;
-
-function initTablesGlobales() {
-  mondeClassiquesTablesGlobal = {
-    "couscous":       { table: "tableauCouscous",        fn: htmlTableauCouscousColonnes,       label: "personne" },
-    "moussaka":       { table: "tableauMoussaka",         fn: htmlTableauMoussakaColonnes,       label: "personne" },
-    "paella":         { table: "tableauPaella",           fn: htmlTableauPaellaColonnes,         label: "personne" },
-    "butterchicken":  { table: "tableauButterChicken",    fn: htmlTableauButterChickenColonnes,  label: "personne" },
-    "souvlaki":       { table: "tableauSouvlaki",         fn: htmlTableauSouvlakiColonnes,       label: "personne" },
-    "quichelorraine": { table: "tableauQuiche",           fn: htmlTableauQuicheColonnes,         label: "personne" },
-    "soupeaoignon":   { table: "tableauSoupeOignon",      fn: htmlTableauSoupeOignonColonnes,    label: "personne" },
-    "dalindien":      { table: "tableauDal",              fn: htmlTableauDalColonnes,            label: "personne" },
-    "rizcantonnais":  { table: "tableauRizCantonnais",    fn: htmlTableauRizCantonnaisColonnes,  label: "personne" },
-    "hariramarocaine":{ table: "tableauHarira",           fn: htmlTableauHariraColonnes,         label: "personne" },
-    "naan":           { table: "tableauNaan",             fn: htmlTableauNaanColonnes,           label: "naan" },
-    "churros":        { table: "tableauChurros",          fn: htmlTableauChurrosColonnes,        label: "personne" },
-  };
-  hellofreshTablesGlobal = {
-    "pouletcitronthym":  { table: "tableauPouletCitron",      fn: htmlTableauPouletCitronColonnes,    label: "personne" },
-    "salmonteriyaki":    { table: "tableauSalmonTeriyaki",     fn: htmlTableauSalmonTeriyakiColonnes,  label: "personne" },
-    "bolognaisemaison":  { table: "tableauBolognaise",         fn: htmlTableauBolognaiseColonnes,      label: "personne" },
-    "tacosmaison":       { table: "tableauTacos",              fn: htmlTableauTacosColonnes,           label: "taco" },
-    "padthai":           { table: "tableauPadThai",            fn: htmlTableauPadThaiColonnes,         label: "personne" },
-    "currypouletcoco":   { table: "tableauCurryPoulet",        fn: htmlTableauCurryPouletColonnes,     label: "personne" },
-    "burgermaison":      { table: "tableauBurger",             fn: htmlTableauBurgerColonnes,          label: "burger" },
-    "risottoprimavera":  { table: "tableauRisottoPrimavera",   fn: htmlTableauRisottoPrimaveraColonnes,label: "personne" },
-    "shakshuka":         { table: "tableauShakshuka",          fn: htmlTableauShakshukaColonnes,       label: "personne" },
-  };
-  // Nouvelles recettes monde
-  const nouvellesRecettesTables = {
-    "ramenjaponais":   { table: "tableauRamen",          fn: htmlTableauRamenColonnes,          label: "bol" },
-    "gyoza":           { table: "tableauGyoza",           fn: htmlTableauGyozaColonnes,          label: "gyoza" },
-    "tikamasala":      { table: "tableauTikaMasala",      fn: htmlTableauTikaMasalaColonnes,     label: "personne" },
-    "phovietnambien":  { table: "tableauPho",             fn: htmlTableauPhoColonnes,            label: "bol" },
-    "pizzamargherita": { table: "tableauPizzaMargherita", fn: htmlTableauPizzaMargheritaColonnes,label: "pizza" },
-    "carbonara":       { table: "tableauCarbonara",       fn: htmlTableauCarbonaraColonnes,      label: "personne" },
-    "ceebujen":        { table: "tableauCeebujen",        fn: htmlTableauCeebujennColonnes,      label: "personne" },
-    "mafewestafricain":{ table: "tableauMafe",            fn: htmlTableauMafeColonnes,           label: "personne" },
-    "gnocchismaison":  { table: "tableauGnocchis",        fn: htmlTableauGnocchisColonnes,       label: "personne" },
-    "falafel":         { table: "tableauFalafel",         fn: htmlTableauFalafelColonnes,        label: "falafel" },
-    "poulettandoori":  { table: "tableauTandoori",        fn: htmlTableauTandooriColonnes,       label: "personne" },
-    "pekinduckeasy":   { table: "tableauPekinDuck",       fn: htmlTableauPekinDuckColonnes,      label: "personne" },
-    "ossobuco":        { table: "tableauOssobuco",        fn: htmlTableauOssobucoColonnes,       label: "personne" },
-    "tajinemouton":    { table: "tableauTajine",          fn: htmlTableauTajineColonnes,         label: "personne" },
-    "moelleuxchocolat":{ table: "tableauMoelleux",        fn: htmlTableauMoelleuxColonnes,       label: "moelleux" },
-    "cheesecake":      { table: "tableauCheesecake",      fn: htmlTableauCheesecakeColonnes,     label: "personne" },
-    "painauchocolat":  { table: "tableauPainAuChocolat",  fn: htmlTableauPainAuChocolatColonnes, label: "pain" },
-    "gateaubasque":    { table: "tableauGateauBasque",    fn: htmlTableauGateauBasqueColonnes,   label: "personne" },
-    "canelebordelais": { table: "tableauCanele",          fn: htmlTableauCaneleColonnes,         label: "cannelé" },
-    "pizzareine":      { table: "tableauPizzaReine",      fn: htmlTableauPizzaReineColonnes,     label: "pizza" },
-    "pizza4fromages":{ table: "tableauPizzaFormaggi",fn: htmlTableauPizzaFormaggiColonnes, label: "pizza" },
-    "pizzadiavola":    { table: "tableauPizzaDiavola",    fn: htmlTableauPizzaDiavolaColonnes,   label: "pizza" },
-    "pizzasaumonepinards":{ table: "tableauPizzaSaumon",  fn: htmlTableauPizzaSaumonColonnes,    label: "pizza" },
-    "pizzavegetarienne":{ table: "tableauPizzaVege",      fn: htmlTableauPizzaVegeColonnes,      label: "pizza" },
-    "souvlakiagneau":  { table: "tableauSouvlakiAgneau",  fn: htmlTableauSouvlakiAgneauColonnes, label: "personne" },
-    "tom_yam":         { table: "tableauTomYam",          fn: htmlTableauTomYamColonnes,         label: "personne" },
-    "dorade_chermoula":{ table: "tableauDorade",          fn: htmlTableauDoradeColonnes,         label: "personne" },
-    "pouletchicken65": { table: "tableauChicken65",       fn: htmlTableauChicken65Colonnes,      label: "personne" },
-    "pierogi":         { table: "tableauPierogi",         fn: htmlTableauPierogiColonnes,        label: "personne" },
-    "momos":           { table: "tableauMomos",           fn: htmlTableauMomosColonnes,          label: "momo" },
-    "shakshukaverte":  { table: "tableauShakshukaVerte",  fn: htmlTableauShakshukaVerteColonnes, label: "personne" },
-    "kebbeh":          { table: "tableauKebbeh",          fn: htmlTableauKebbehColonnes,         label: "kebbeh" },
-    "tteokbokki":      { table: "tableauTteokbokki",      fn: htmlTableauTteokbokkiColonnes,     label: "personne" },
-    "porc_pulled":     { table: "tableauPulledPork",      fn: htmlTableauPulledPorkColonnes,     label: "personne" },
-    "dosakerdosai":    { table: "tableauDosa",            fn: htmlTableauDosaColonnes,           label: "dosa" },
-    "braiseboeuf_asiatique":{ table: "tableauBraiseBoeuf",fn: htmlTableauBraiseBoeufColonnes,   label: "personne" },
-    "paprikashpoulet": { table: "tableauPaprikash",       fn: htmlTableauPaprikashColonnes,      label: "personne" },
-    "bibimbap":        { table: "tableauBibimbap",         fn: htmlTableauBibimbapColonnes,       label: "bol" },
-    "moquecabresil":   { table: "tableauMoqueca",          fn: htmlTableauMoquecaColonnes,        label: "personne" },
-    "rendangboeuf":    { table: "tableauRendang",          fn: htmlTableauRendangColonnes,        label: "personne" },
-    "tacoshijosepastor":{ table: "tableauTacoPastor",      fn: htmlTableauTacoPastorColonnes,     label: "personne" },
-    "grilladelamnocciole":{ table: "tableauCotelets",      fn: htmlTableauCoteletsColonnes,       label: "personne" },
-    "sushimaison":     { table: "tableauSushi",            fn: htmlTableauSushiColonnes,          label: "pièce" },
-    "carigrioantillais":{ table: "tableauCariGriot",       fn: htmlTableauCariGriotColonnes,      label: "personne" },
-    "semoulecourgette":{ table: "tableauSemoule",          fn: htmlTableauSemouleColonnes,        label: "personne" },
-    "pouletbasquaise": { table: "tableauBasquaise",        fn: htmlTableauBasquaiseColonnes,      label: "personne" },
-    "crevettespilpil": { table: "tableauCrevPilPil",       fn: htmlTableauCrevPilPilColonnes,     label: "personne" },
-    "lasagneverdure":  { table: "tableauLasagneVerdure",   fn: htmlTableauLasagneVerdureColonnes, label: "personne" },
-    "crumblefruits":   { table: "tableauCrumble",          fn: htmlTableauCrumbleColonnes,        label: "personne" },
-    "pintxosbasques":  { table: "tableauPintxos",          fn: htmlTableauPintxosColonnes,        label: "pintxo" },
-    "misoramenleger":  { table: "tableauMisoRamen",        fn: htmlTableauMisoRamenColonnes,      label: "bol" },
-    "veloutepatatepoireaux":{ table: "tableauVeloutePP",   fn: htmlTableauVeloutePPColonnes,      label: "personne" },
-    "terrinecampagne": { table: "tableauTerrine",          fn: htmlTableauTerrineColonnes,        label: "personne" },
-    "poulpegrillebresil":{ table: "tableauPoulpe",         fn: htmlTableauPoulpeColonnes,         label: "personne" },
-    "pouletrotiperfect":{ table: "tableauPouletRoti",      fn: htmlTableauPouletRotiColonnes,     label: "personne" },
-    "millefeuille":    { table: "tableauMillefeuille",     fn: htmlTableauMillefeuilleColonnes,   label: "personne" },
-    "lasagneviande":   { table: "tableauLasagneViande",    fn: htmlTableauLasagneViandeColonnes,  label: "personne" },
-    "risottoprimavera":{ table: "tableauRisottoPrimavera", fn: htmlTableauRisottoPrimaveraColonnes,label: "personne" },
-    "bolognaisemaison":{ table: "tableauBolognaise",       fn: htmlTableauBolognaiseColonnes,     label: "personne" },
-    "pizzachorizo": { table: "tableauPizzaChorizo", fn: htmlTableauPizzaChorizoColonnes, label: "pizza" },
-    "pouletteriyaki": { table: "tableauPouletTeriyaki", fn: htmlTableauPouletTeriyakiColonnes, label: "personne" },
-    "curryverthai": { table: "tableauCurryVerthai", fn: htmlTableauCurryVerthaiColonnes, label: "personne" },
-    "chiliconcarneV": { table: "tableauChiliCarne", fn: htmlTableauChiliCarneColonnes, label: "personne" },
-    "koreanfriedchicken": { table: "tableauKFC", fn: htmlTableauKFCColonnes, label: "personne" },
-    "risottoMilanese": { table: "tableauRisottoMilanese", fn: htmlTableauRisottoMilaneseColonnes, label: "personne" },
-    "soupeAziatique": { table: "tableauSoupeAziat", fn: htmlTableauSoupeAziatColonnes, label: "personne" },
-    "tartareSaumon": { table: "tableauTartareSaumon", fn: htmlTableauTartareSaumonColonnes, label: "personne" },
-    "tiramisufraise": { table: "tableauTiramisuFraise", fn: htmlTableauTiramisuFraiseColonnes, label: "personne" },
-    "pouletCocoLemon": { table: "tableauPouletCocoL", fn: htmlTableauPouletCocoLColonnes, label: "personne" },
-    "crepesSucrées": { table: "tableauCrepesSucrees", fn: htmlTableauCrepesSucreesColonnes, label: "crêpe" },
-    "poireauVinaigrette": { table: "tableauPoireauVinaigrette", fn: htmlTableauPoireauVinaigretteColonnes, label: "personne" },
-    "spaetzle": { table: "tableauSpaetzle", fn: htmlTableauSpaetzleColonnes, label: "personne" },
-    "wagyuBurger": { table: "tableauWagyuBurger", fn: htmlTableauWagyuBurgerColonnes, label: "burger" },
-    "lemonPasta": { table: "tableauLemonPasta", fn: htmlTableauLemonPastaColonnes, label: "personne" },
-    "soupeMinestrone": { table: "tableauMinestrone", fn: htmlTableauMinestroneColonnes, label: "personne" },
-    "blanquetteveau": { table: "tableauBlanquette", fn: htmlTableauBlanquetteColonnes, label: "personne" },
-    "navarin": { table: "tableauNavarin", fn: htmlTableauNavarinColonnes, label: "personne" },
-    "camembertRoti": { table: "tableauCamembertRoti", fn: htmlTableauCamembertRotiColonnes, label: "camembert" },
-    "tarteFlambee": { table: "tableauTarteFlambee", fn: htmlTableauTarteFlambeeColonnes, label: "personne" },
-    "pouletMisoGingembre": { table: "tableauPouletMiso", fn: htmlTableauPouletMisoColonnes, label: "personne" },
-    "noodlesWok": { table: "tableauNoodlesWok", fn: htmlTableauNoodlesWokColonnes, label: "personne" },
-    "maffeSenegal": { table: "tableauMaffeSenegal", fn: htmlTableauMaffeSenegalColonnes, label: "personne" },
-    "gazpachoMelon": { table: "tableauGazpachoMelon", fn: htmlTableauGazpachoMelonColonnes, label: "personne" },
-    "wafflesSales": { table: "tableauWafflesSales", fn: htmlTableauWafflesSalesColonnes, label: "personne" },
-    "choucroute": { table: "tableauChoucroute", fn: htmlTableauChoucrouteColonnes, label: "personne" },
-    "sconeBritish": { table: "tableauScone", fn: htmlTableauSconeColonnes, label: "scone" },
-    "calamarsRomaine": { table: "tableauCalamars", fn: htmlTableauCalamarsColonnes, label: "personne" },
-    "baklava": { table: "tableauBaklava", fn: htmlTableauBaklavaColonnes, label: "pièce" },
-    "eggsBenedict": { table: "tableauEggsBenedict", fn: htmlTableauEggsBenedictColonnes, label: "personne" },
-    "porkBelly": { table: "tableauPorkBelly", fn: htmlTableauPorkBellyColonnes, label: "personne" },
-    "veloutePoiron": { table: "tableauVeloutePotiron", fn: htmlTableauVeloutePotironColonnes, label: "personne" },
-    "chocolatChaud": { table: "tableauChocolatChaud", fn: htmlTableauChocolatChaudColonnes, label: "tasse" },
-    "granolaMaison": { table: "tableauGranolaMaison", fn: htmlTableauGranolaMaisonColonnes, label: "personne" },
-    "tartetatinpommes": { table: "tableauTarteTatin", fn: htmlTableauTarteTatinColonnes, label: "personne" },
-    "croissant": { table: "tableauCroissant", fn: htmlTableauCroissantColonnes, label: "croissant" },
-    "verrineframboisechocolat": { table: "tableauVerrineFramboise", fn: htmlTableauVerrineFramboiseColonnes, label: "verrine" },
-    "sauteporc": { table: "tableauSautePorc", fn: htmlTableauSautePorcColonnes, label: "personne" },
-    "veloutecourgette": { table: "tableauVelouteCourgette", fn: htmlTableauVelouteCorgetteColonnes, label: "personne" },
-    "ratatouille": { table: "tableauRatatouille", fn: htmlTableauRatatouilleColonnes, label: "personne" },
-    "financiers": { table: "tableauFinanciers", fn: htmlTableauFinanciersColonnes, label: "financier" },
-    "choufleurgratin": { table: "tableauChoufleurGratin", fn: htmlTableauChoufleurGratinColonnes, label: "personne" },
-    "salmongrillee": { table: "tableauSalmonGrillee", fn: htmlTableauSalmonGrilleeColonnes, label: "personne" },
-    "sobejaponais": { table: "tableauSoba", fn: htmlTableauSobaColonnes, label: "personne" },
-    "tartepistache": { table: "tableauTartePistache", fn: htmlTableauTartePistacheColonnes, label: "personne" },
-    "agneluroti": { table: "tableauAgnelRoti", fn: htmlTableauAgnelRotiColonnes, label: "personne" },
-    "crepesbretonnes": { table: "tableauCrepesBretonnes", fn: htmlTableauCrepesBretonnesColonnes, label: "galette" },
-    "stroganov": { table: "tableauStroganov", fn: htmlTableauStroganovColonnes, label: "personne" },
-    "pizzahawaienne": { table: "tableauPizzaHawaiene", fn: htmlTableauPizzaHawaienneColonnes, label: "pizza" },
-    "pouletescalopes": { table: "tableauPouletEscalopes", fn: htmlTableauPouletEscalopesColonnes, label: "personne" },
-    "tofusaute": { table: "tableauTofuSaute", fn: htmlTableauTofuSauteColonnes, label: "personne" },
-    "saladecaprese": { table: "tableauCaprese", fn: htmlTableauCapreseColonnes, label: "personne" },
-    "moulesmarinieres": { table: "tableauMoulesMarinieres", fn: htmlTableauMoulesMarinnieresColonnes, label: "personne" },
-    "coktailcosmopolitan": { table: "tableauSexBeach", fn: htmlTableauSexBeachColonnes, label: "verre" },
-    "mocktailmentheagume": { table: "tableauMocktailMenthe", fn: htmlTableauMocktailMentheColonnes, label: "verre" },
-    "tartechocolatcaramel": { table: "tableauTarteChocoCaramel", fn: htmlTableauTarteChocoCaramelColonnes, label: "personne" },
-    "soupeharira": { table: "tableauSoupeHarira", fn: htmlTableauSoupeHariraColonnes, label: "personne" },
-    "saumoncrouteherbes":{ table: "tableauSaumonCroute",   fn: htmlTableauSaumonCrouteColonnes,   label: "personne" },
-    "pizzaprosciuttoroquette":{ table: "tableauPizzaProsciutto", fn: htmlTableauPizzaProsciuttoColonnes, label: "pizza" },
-    "pizzatruffe":     { table: "tableauPizzaTruffe",     fn: htmlTableauPizzaTruffeColonnes,    label: "pizza" },
-    "pizzabiancoverdure":{ table: "tableauPizzaBianca",   fn: htmlTableauPizzaBiancaColonnes,    label: "pizza" },
-    "pizzacalzone":    { table: "tableauCalzone",         fn: htmlTableauCalzoneColonnes,        label: "calzone" },
-    "pizzapoivrons":   { table: "tableauPizzaPoivrons",   fn: htmlTableauPizzaPoivronsColonnes,  label: "pizza" },
-    "pizzapatate":     { table: "tableauPizzaPatate",     fn: htmlTableauPizzaPatateColonnes,    label: "pizza" },
-    "pizzabresilienne":{ table: "tableauPizzaBresil",     fn: htmlTableauPizzaBresilieneColonnes,label: "pizza" },
-  };
-  // Ajouter dans la fonction calculer() accessible globalement
-  window._nouvellesRecettesTables = nouvellesRecettesTables;
-
-  cocktailsTablesGlobal = {
-    "mojito":             { table: "tableauMojito",       fn: htmlTableauMojitoColonnes,       label: "verre" },
-    "margarita":          { table: "tableauMargarita",     fn: htmlTableauMargaritaColonnes,    label: "verre" },
-    "cosmopolitan":       { table: "tableauCosmopolitan",  fn: htmlTableauCosmopolitanColonnes, label: "verre" },
-    "spritz":             { table: "tableauSpritz",        fn: htmlTableauSpritzColonnes,       label: "verre" },
-    "sangria":            { table: "tableauSangria",       fn: htmlTableauSangriaColonnes,      label: "verre" },
-    "pinacolada":         { table: "tableauPinaColada",    fn: htmlTableauPinaColadaColonnes,   label: "verre" },
-    "daiquiri":           { table: "tableauDaiquiri",      fn: htmlTableauDaiquiriColonnes,     label: "verre" },
-    "whiskysour":         { table: "tableauWhiskySour",    fn: htmlTableauWhiskySourColonnes,   label: "verre" },
-    "virginmojito":       { table: "tableauVirginMojito",  fn: htmlTableauVirginMojitoColonnes, label: "verre" },
-    "limonademaison":     { table: "tableauLimonade",      fn: htmlTableauLimonadeColonnes,     label: "verre" },
-    "smoothiemangopassion":{ table: "tableauSmoothieMango",fn: htmlTableauSmoothieMangoColonnes,label: "verre" },
-    "citronadementhe":    { table: "tableauCitronade",     fn: htmlTableauCitronadeColonnes,    label: "verre" },
-    "jusPastequeMenuthe": { table: "tableauJusPasteque",   fn: htmlTableauJusPastequeColonnes,  label: "verre" },
-    "virginpinacolada":   { table: "tableauVirginPina",    fn: htmlTableauVirginPinaColonnes,   label: "verre" },
-    "mojitorose":         { table: "tableauMojitoRose",    fn: htmlTableauMojitoRoseColonnes,   label: "verre" },
-    "negroni":            { table: "tableauNegroni",        fn: htmlTableauNegroniColonnes,      label: "verre" },
-    "moscowmule":         { table: "tableauMoscowMule",     fn: htmlTableauMoscowMuleColonnes,   label: "verre" },
-    "pornstarmartini":    { table: "tableauPornstar",       fn: htmlTableauPornstarColonnes,     label: "verre" },
-    "hugospritz":         { table: "tableauHugoSpritz",     fn: htmlTableauHugoSpritzColonnes,   label: "verre" },
-    "cherryblossommocktail":{ table: "tableauCherryBlossom",fn: htmlTableauCherryBlossomColonnes,label: "verre" },
-    "oldFashioned":       { table: "tableauOldFashioned",   fn: htmlTableauOldFashionedColonnes, label: "verre" },
-    "gintoniqmaison":     { table: "tableauGinTonic",       fn: htmlTableauGinTonicColonnes,     label: "verre" },
-    "shrubframboisebasilic":{ table: "tableauShrub",        fn: htmlTableauShrubColonnes,        label: "verre" },
-    "mocktailcoconananas":{ table: "tableauCocoAnanas",     fn: htmlTableauCocoAnanasColonnes,   label: "verre" },
-    "tequilasunrise":  { table: "tableauTequilaSunrise",  fn: htmlTableauTequilaSunriseColonnes, label: "verre" },
-    "aperolspritzrosa":{ table: "tableauAperolRosa",      fn: htmlTableauAperolRosaColonnes,     label: "verre" },
-    "espressoMartini": { table: "tableauEspressoMartini", fn: htmlTableauEspressoMartiniColonnes,label: "verre" },
-    "punchfruitsrouges":{ table: "tableauPunchRouge",     fn: htmlTableauPunchRougeColonnes,     label: "verre" },
-    "blueLagoon":      { table: "tableauBlueLagoon",      fn: htmlTableauBlueLagoonColonnes,     label: "verre" },
-    "mimosa":          { table: "tableauMimosa",          fn: htmlTableauMimosaColonnes,         label: "verre" },
-    "sidecarvintage":  { table: "tableauSidecar",         fn: htmlTableauSidecarColonnes,        label: "verre" },
-    "mocktailberrybliss":{ table: "tableauBerryBliss",    fn: htmlTableauBerryBlissColonnes,     label: "verre" },
-    "gingerlemondrop": { table: "tableauLemonDrop",       fn: htmlTableauLemonDropColonnes,      label: "verre" },
-    "mocktailcoconorchidee":{ table: "tableauCocoOrchidee",fn: htmlTableauCocoOrchideeColonnes, label: "verre" },
-  };
-}
-
-function htmlTableauMojitoRoseColonnes(l) {
-  return col(`
-    <tr><th>🌹 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
-    <tr><th>🍓 Fraises fraîches</th><td>${l.fraises}</td></tr>
-    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
-    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🍬 Sucre de canne</th><td>${l.sucre}</td></tr>
-    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
-    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauNegroniColonnes(l) {
-  return col(`
-    <tr><th>🍊 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍶 Gin</th><td>${l.gin}</td></tr>
-    <tr><th>🍊 Campari</th><td>${l.campari}</td></tr>
-    <tr><th>🍷 Vermouth rouge</th><td>${l.vermouth}</td></tr>
-    <tr><th>🍊 Zeste d'orange</th><td>${l.orange}</td></tr>
-    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauMoscowMuleColonnes(l) {
-  return col(`
-    <tr><th>🫙 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr>
-    <tr><th>💧 Ginger beer</th><td>${l.gingerBeer}</td></tr>
-    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
-    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauPornstarColonnes(l) {
-  return col(`
-    <tr><th>🍍 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍶 Vodka vanille</th><td>${l.vodka}</td></tr>
-    <tr><th>🌺 Passoa</th><td>${l.passoa}</td></tr>
-    <tr><th>🌺 Jus de passion</th><td>${l.passion}</td></tr>
-    <tr><th>🍾 Prosecco (à part)</th><td>${l.prosecco}</td></tr>
-    <tr><th>🍦 Sirop vanille</th><td>${l.vanille}</td></tr>`);
-}
-function htmlTableauHugoSpritzColonnes(l) {
-  return col(`
-    <tr><th>🌸 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍾 Prosecco</th><td>${l.prosecco}</td></tr>
-    <tr><th>🌸 Sirop de sureau</th><td>${l.sureau}</td></tr>
-    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
-    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
-    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauCherryBlossomColonnes(l) {
-  return col(`
-    <tr><th>🌸 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍒 Jus de cerise</th><td>${l.cerise}</td></tr>
-    <tr><th>🌹 Eau de rose</th><td>${l.eauRose}</td></tr>
-    <tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr>
-    <tr><th>🍬 Sirop de sucre</th><td>${l.sirop}</td></tr>
-    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
-}
-function htmlTableauOldFashionedColonnes(l) {
-  return col(`
-    <tr><th>🥃 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥃 Bourbon / Rye whisky</th><td>${l.bourbon}</td></tr>
-    <tr><th>🍬 Sucre (morceau)</th><td>${l.sucre}</td></tr>
-    <tr><th>💧 Angostura bitters</th><td>${l.bitters}</td></tr>
-    <tr><th>🍊 Zeste d'orange</th><td>${l.orange}</td></tr>
-    <tr><th>🧊 Gros glaçon</th><td>1 par verre</td></tr>`);
-}
-function htmlTableauGinTonicColonnes(l) {
-  return col(`
-    <tr><th>🫧 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍶 Gin</th><td>${l.gin}</td></tr>
-    <tr><th>💧 Tonic premium</th><td>${l.tonic}</td></tr>
-    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🌶️ Poivre rose</th><td>${l.poivre}</td></tr>
-    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauShrubColonnes(l) {
-  return col(`
-    <tr><th>🫐 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍓 Framboises</th><td>${l.framboises}</td></tr>
-    <tr><th>🌿 Basilic frais</th><td>${l.basilic}</td></tr>
-    <tr><th>🍶 Vinaigre de cidre</th><td>${l.vinaigre}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
-}
-function htmlTableauCocoAnanasColonnes(l) {
-  return col(`
-    <tr><th>🥥 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
-    <tr><th>🍍 Jus d'ananas</th><td>${l.ananas}</td></tr>
-    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>
-    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
-}
-
-function htmlTableauMojitoColonnes(l) {
-  return col(`
-    <tr><th>🍹 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
-    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
-    <tr><th>🍬 Sucre de canne</th><td>${l.sucre}</td></tr>
-    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
-    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauMargaritaColonnes(l) {
-  return col(`
-    <tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥃 Tequila</th><td>${l.tequila}</td></tr>
-    <tr><th>🍊 Triple sec</th><td>${l.tripleSec}</td></tr>
-    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🧂 Sel (rebord)</th><td>${l.sel}</td></tr>
-    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauCosmopolitanColonnes(l) {
-  return col(`
-    <tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍶 Vodka citronnée</th><td>${l.vodka}</td></tr>
-    <tr><th>🍊 Cointreau</th><td>${l.cointreau}</td></tr>
-    <tr><th>🍒 Jus de cranberry</th><td>${l.cranberry}</td></tr>
-    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauSpritzColonnes(l) {
-  return col(`
-    <tr><th>🥂 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍊 Aperol</th><td>${l.aperol}</td></tr>
-    <tr><th>🍾 Prosecco</th><td>${l.prosecco}</td></tr>
-    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
-    <tr><th>🍊 Orange (déco)</th><td>${l.orange}</td></tr>
-    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauSangriaColonnes(l) {
-  return col(`
-    <tr><th>🍷 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍷 Vin rouge</th><td>${l.vin}</td></tr>
-    <tr><th>🥃 Brandy / Cognac</th><td>${l.brandy}</td></tr>
-    <tr><th>🍊 Jus d'orange</th><td>${l.orangeJus}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🍊 Orange</th><td>${l.orange}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
-    <tr><th>🍑 Pêche</th><td>${l.peche}</td></tr>`);
-}
-function htmlTableauPinaColadaColonnes(l) {
-  return col(`
-    <tr><th>🥥 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
-    <tr><th>🥥 Crème de coco</th><td>${l.cremeCoco}</td></tr>
-    <tr><th>🍍 Jus d'ananas</th><td>${l.ananas}</td></tr>
-    <tr><th>🧊 Glace pilée</th><td>${l.glace}</td></tr>`);
-}
-function htmlTableauDaiquiriColonnes(l) {
-  return col(`
-    <tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
-    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🍬 Sirop de sucre de canne</th><td>${l.sucre}</td></tr>
-    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauWhiskySourColonnes(l) {
-  return col(`
-    <tr><th>🥃 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥃 Bourbon</th><td>${l.bourbon}</td></tr>
-    <tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr>
-    <tr><th>🍬 Sirop de sucre</th><td>${l.sirop}</td></tr>
-    <tr><th>🥚 Blanc d'œuf</th><td>${l.blanc}</td></tr>
-    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauVirginMojitoColonnes(l) {
-  return col(`
-    <tr><th>🥤 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
-    <tr><th>🍬 Sucre de canne</th><td>${l.sucre}</td></tr>
-    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
-    <tr><th>🌿 Sirop de menthe</th><td>${l.sirop}</td></tr>
-    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauLimonadeColonnes(l) {
-  return col(`
-    <tr><th>🍋 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
-    <tr><th>🌿 Menthe</th><td>${l.menthe}</td></tr>
-    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauSmoothieMangoColonnes(l) {
-  return col(`
-    <tr><th>🥭 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥭 Mangue</th><td>${l.mangue}</td></tr>
-    <tr><th>🌺 Fruits de la passion</th><td>${l.passion}</td></tr>
-    <tr><th>🍌 Banane</th><td>${l.banane}</td></tr>
-    <tr><th>🥥 Lait de coco / végétal</th><td>${l.lait}</td></tr>
-    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
-}
-function htmlTableauCitronadeColonnes(l) {
-  return col(`
-    <tr><th>🌿 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
-    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>💧 Eau fraîche</th><td>${l.eau}</td></tr>
-    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauJusPastequeColonnes(l) {
-  return col(`
-    <tr><th>🍉 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍉 Pastèque</th><td>${l.pasteque}</td></tr>
-    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
-    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>
-    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
-}
-function htmlTableauVirginPinaColonnes(l) {
-  return col(`
-    <tr><th>🥥 Verres</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥥 Crème de coco</th><td>${l.cremeCoco}</td></tr>
-    <tr><th>🍍 Jus d'ananas</th><td>${l.ananas}</td></tr>
-    <tr><th>🥥 Lait de coco</th><td>${l.laitCoco}</td></tr>
-    <tr><th>🧊 Glace pilée</th><td>${l.glace}</td></tr>`);
-}
-
-function htmlTableauParisBrestColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🥧 Pâte à choux</th></tr>
-    <tr><th>💧 Eau</th><td>${l.eauChoux}</td></tr>
-    <tr><th>🥛 Lait</th><td>${l.laitChoux}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurrChoux}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufChoux}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌰 Crème mousseline pralinée</th></tr>
-    <tr><th>🥛 Lait entier</th><td>${l.laitCreme}</td></tr>
-    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunesCreme}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
-    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
-    <tr><th>🧈 Beurre mou</th><td>${l.beurrCreme}</td></tr>
-    <tr><th>🌰 Pâte de pralin</th><td>${l.pralin}</td></tr>`);
-}
-
-function htmlTableauLasagneViandeColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr><tr><th>🍝 Feuilles de lasagne</th><td>${l.lasagne}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
-}
-function htmlTableauSouvlakiPouletColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr><tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr><tr><th>🌿 Origan</th><td>${l.origan}</td></tr>`);
-}
-function htmlTableauButterChickenColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr><tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>`);
-}
-function htmlTableauRisottoPrimaveraColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍚 Riz arborio</th><td>${l.riz}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🫛 Petits pois</th><td>${l.petitspois}</td></tr><tr><th>🌿 Asperges</th><td>${l.asperges}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🍷 Vin blanc</th><td>${l.vin}</td></tr>`);
-}
-function htmlTableauBolognaiseColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée mixte</th><td>${l.viande}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🍷 Vin rouge</th><td>${l.vin}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>`);
-}
-function htmlTableauTacosViandeColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr><tr><th>🌮 Tortillas</th><td>${l.tortillas}</td></tr><tr><th>🥑 Avocats</th><td>${l.avocat}</td></tr><tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr><tr><th>🧀 Fromage râpé</th><td>${l.fromage}</td></tr><tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauCouscousRoyalColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Semoule</th><td>${l.semoule}</td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌭 Merguez</th><td>${l.merguez}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🥕 Carotte</th><td>${l.carotte}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
-}
-function htmlTableauMoussakaColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐑 Agneau haché</th><td>${l.agneau}</td></tr><tr><th>🍆 Aubergines</th><td>${l.aubergines}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
-}
-function htmlTableauPaellaColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍚 Riz à paella</th><td>${l.riz}</td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌭 Chorizo</th><td>${l.chorizo}</td></tr><tr><th>🦪 Moules</th><td>${l.moules}</td></tr><tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr><tr><th>🌼 Safran</th><td>${l.safran}</td></tr>`);
-}
-function htmlTableauQuicheLorraineColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥐 Pâte brisée</th><td>${l.pate}</td></tr><tr><th>🥓 Lardons fumés</th><td>${l.lardons}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🧀 Gruyère</th><td>${l.gruyere}</td></tr>`);
-}
-function htmlTableauDalIndienColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🫘 Lentilles corail</th><td>${l.lentilles}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr><tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
-}
-
-function htmlTableauBibimbapColonnes(l) {
-  return col(`
-    <tr><th>🍚 Bols</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍚 Riz</th><td>${l.riz}</td></tr>
-    <tr><th>🥩 Bœuf mariné</th><td>${l.boeuf}</td></tr>
-    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
-    <tr><th>🥕 Carotte</th><td>${l.carotte}</td></tr>
-    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
-    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>
-    <tr><th>🌶️ Gochujang</th><td>${l.gochujang}</td></tr>`);
-}
-function htmlTableauMoquecaColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐟 Poisson</th><td>${l.poisson}</td></tr>
-    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
-    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🌿 Coriandre</th><td>${l.coriandre}</td></tr>`);
-}
-function htmlTableauRendangColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Bœuf</th><td>${l.boeuf}</td></tr>
-    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
-    <tr><th>🌿 Citronnelle</th><td>${l.citronnelle}</td></tr>
-    <tr><th>🫚 Galanga</th><td>${l.galanga}</td></tr>
-    <tr><th>🌶️ Piments</th><td>${l.piment}</td></tr>`);
-}
-function htmlTableauTacoPastorColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐷 Porc (épaule)</th><td>${l.porc}</td></tr>
-    <tr><th>🍍 Ananas</th><td>${l.ananas}</td></tr>
-    <tr><th>🌮 Tortillas</th><td>${l.tortillas}</td></tr>
-    <tr><th>🧅 Oignon blanc</th><td>${l.oignon}</td></tr>
-    <tr><th>🌿 Coriandre</th><td>${l.coriandre}</td></tr>
-    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauCoteletsColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐑 Côtelettes d'agneau</th><td>${l.cotelets}</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>
-    <tr><th>🌿 Romarin</th><td>${l.romarin}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauSushiColonnes(l) {
-  return col(`
-    <tr><th>🍣 Pièces</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍚 Riz à sushi</th><td>${l.riz}</td></tr>
-    <tr><th>🐟 Saumon sashimi</th><td>${l.saumon}</td></tr>
-    <tr><th>🐟 Thon sashimi</th><td>${l.thon}</td></tr>
-    <tr><th>🌿 Feuilles de nori</th><td>${l.nori}</td></tr>
-    <tr><th>🍶 Vinaigre de riz</th><td>${l.vinaigre}</td></tr>`);
-}
-function htmlTableauCariGriotColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐷 Porc (épaule)</th><td>${l.porc}</td></tr>
-    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
-    <tr><th>🌿 Thym frais</th><td>${l.thym}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🌶️ Piment</th><td>${l.piment}</td></tr>`);
-}
-function htmlTableauSemouleColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Semoule fine</th><td>${l.semoule}</td></tr>
-    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
-    <tr><th>🍅 Tomates cerises</th><td>${l.tomateCerise}</td></tr>
-    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
-    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>`);
-}
-function htmlTableauBasquaiseColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐓 Poulet</th><td>${l.poulet}</td></tr>
-    <tr><th>🫑 Poivrons</th><td>${l.poivron}</td></tr>
-    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
-    <tr><th>🥓 Jambon de Bayonne</th><td>${l.jambon}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
-}
-function htmlTableauCrevPilPilColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🌶️ Piment séché</th><td>${l.piment}</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>
-    <tr><th>🌿 Persil</th><td>${l.persil}</td></tr>`);
-}
-function htmlTableauLasagneVerdureColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Feuilles de lasagne</th><td>${l.lasagne}</td></tr>
-    <tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr>
-    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
-    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
-    <tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr>
-    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
-}
-function htmlTableauCrumbleColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍎 Fruits</th><td>${l.fruits}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🧈 Beurre froid</th><td>${l.beurre}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🌰 Amandes effilées</th><td>${l.amandes}</td></tr>`);
-}
-function htmlTableauPintxosColonnes(l) {
-  return col(`
-    <tr><th>🥖 Pintxos</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍞 Tranches de pain</th><td>${l.pain}</td></tr>
-    <tr><th>🐟 Anchois</th><td>${l.anchoix}</td></tr>
-    <tr><th>🥓 Jambon de Bayonne</th><td>${l.jambon}</td></tr>
-    <tr><th>🧀 Fromage</th><td>${l.fromage}</td></tr>
-    <tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr>`);
-}
-function htmlTableauMisoRamenColonnes(l) {
-  return col(`
-    <tr><th>🍜 Bols</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍜 Nouilles ramen</th><td>${l.nouilles}</td></tr>
-    <tr><th>💧 Dashi</th><td>${l.dashi}</td></tr>
-    <tr><th>🌿 Miso blanc</th><td>${l.miso}</td></tr>
-    <tr><th>🧀 Tofu</th><td>${l.tofu}</td></tr>
-    <tr><th>🌽 Maïs</th><td>${l.maïs}</td></tr>
-    <tr><th>🌿 Nori</th><td>${l.nori}</td></tr>`);
-}
-function htmlTableauVeloutePPColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
-    <tr><th>🥬 Poireaux</th><td>${l.poireaux}</td></tr>
-    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
-}
-function htmlTableauTerrineColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Porc haché</th><td>${l.porc}</td></tr>
-    <tr><th>🫀 Foies de volaille</th><td>${l.foie}</td></tr>
-    <tr><th>🥓 Lardons</th><td>${l.lardons}</td></tr>
-    <tr><th>🥃 Cognac</th><td>${l.cognac}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeuf}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
-}
-function htmlTableauPoulpeColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐙 Poulpe frais</th><td>${l.poulpe}</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🌿 Persil</th><td>${l.persil}</td></tr>`);
-}
-function htmlTableauPouletRotiColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐓 Poulet entier</th><td>${l.poulet}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🌿 Thym</th><td>${l.thym}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauMillefeuilleColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥐 Pâte feuilletée</th><td>${l.feuilletee}</td></tr>
-    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
-    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunes}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
-}
-function htmlTableauSaumonCrouteColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐟 Pavés de saumon</th><td>${l.saumon}</td></tr>
-    <tr><th>🍞 Chapelure</th><td>${l.chapelure}</td></tr>
-    <tr><th>🌿 Persil / herbes</th><td>${l.persil}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
-}
-
-function htmlTableauTequilaSunriseColonnes(l) {
-  return col(`<tr><th>🌅 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥃 Tequila</th><td>${l.tequila}</td></tr><tr><th>🍊 Jus d'orange</th><td>${l.orange}</td></tr><tr><th>🍒 Grenadine</th><td>${l.grenadine}</td></tr>`);
-}
-function htmlTableauAperolRosaColonnes(l) {
-  return col(`<tr><th>🌸 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍊 Aperol</th><td>${l.aperol}</td></tr><tr><th>🍷 Rosé pétillant</th><td>${l.rose}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr><tr><th>🍓 Fraise</th><td>${l.fraise}</td></tr>`);
-}
-function htmlTableauEspressoMartiniColonnes(l) {
-  return col(`<tr><th>☕ Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr><tr><th>☕ Kahlúa / Tia Maria</th><td>${l.kahluaC}</td></tr><tr><th>☕ Espresso serré</th><td>${l.espresso}</td></tr><tr><th>🍬 Sirop de sucre</th><td>${l.sucre}</td></tr>`);
-}
-function htmlTableauPunchRougeColonnes(l) {
-  return col(`<tr><th>🍓 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr><tr><th>🍓 Fraises</th><td>${l.fraises}</td></tr><tr><th>🫐 Framboises</th><td>${l.framboises}</td></tr><tr><th>🍹 Jus fruits rouges</th><td>${l.jusMixte}</td></tr><tr><th>💧 Ginger beer</th><td>${l.gingerBeer}</td></tr>`);
-}
-function htmlTableauBlueLagoonColonnes(l) {
-  return col(`<tr><th>🫐 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr><tr><th>🫐 Curaçao bleu</th><td>${l.curacao}</td></tr><tr><th>💧 Limonade</th><td>${l.limonade}</td></tr><tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauMimosaColonnes(l) {
-  return col(`<tr><th>🍾 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍾 Champagne / Prosecco</th><td>${l.champagne}</td></tr><tr><th>🍊 Jus d'orange frais</th><td>${l.orangeJus}</td></tr>`);
-}
-function htmlTableauSidecarColonnes(l) {
-  return col(`<tr><th>🥃 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥃 Cognac</th><td>${l.cognac}</td></tr><tr><th>🍊 Cointreau</th><td>${l.cointreau}</td></tr><tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr><tr><th>🍬 Sucre (rebord)</th><td>${l.sucre}</td></tr>`);
-}
-function htmlTableauBerryBlissColonnes(l) {
-  return col(`<tr><th>🫐 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🫐 Myrtilles</th><td>${l.myrtilles}</td></tr><tr><th>🍓 Framboises</th><td>${l.framboises}</td></tr><tr><th>🍒 Jus de cranberry</th><td>${l.cranberry}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
-}
-function htmlTableauLemonDropColonnes(l) {
-  return col(`<tr><th>🍋 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka citronnée</th><td>${l.vodka}</td></tr><tr><th>🍋 Jus de citron frais</th><td>${l.citron}</td></tr><tr><th>🫚 Sirop de gingembre</th><td>${l.gingembre}</td></tr><tr><th>🍬 Sucre (rebord)</th><td>${l.sucre}</td></tr>`);
-}
-function htmlTableauCocoOrchideeColonnes(l) {
-  return col(`<tr><th>🌺 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥥 Lait de coco</th><td>${l.laitCoco}</td></tr><tr><th>🌸 Eau de fleur d'oranger</th><td>${l.fleurOranger}</td></tr><tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
-}
-function htmlTableauPizzaProsciuttoColonnes(l) {
-  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍖 Prosciutto di Parma</th><td>${l.prosciutto}</td></tr><tr><th>🥬 Roquette</th><td>${l.roquette}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
-}
-function htmlTableauPizzaTruffeColonnes(l) {
-  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍄 Crème de truffe</th><td>${l.cremeTruffe}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr><tr><th>🍄 Huile de truffe</th><td>${l.huileTruffe}</td></tr>`);
-}
-function htmlTableauPizzaBiancaColonnes(l) {
-  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🌿 Asperges</th><td>${l.asperges}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
-}
-function htmlTableauCalzoneColonnes(l) {
-  return col(`<tr><th>🌙 Calzones</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍖 Jambon</th><td>${l.jambon}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>`);
-}
-function htmlTableauPizzaPoivronsColonnes(l) {
-  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🫑 Poivrons</th><td>${l.poivron}</td></tr><tr><th>🐟 Anchois</th><td>${l.anchois}</td></tr><tr><th>🫒 Olives noires</th><td>${l.olives}</td></tr>`);
-}
-function htmlTableauPizzaPatateColonnes(l) {
-  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr><tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr><tr><th>🧀 Pecorino</th><td>${l.pecorino}</td></tr><tr><th>🌿 Romarin</th><td>${l.romarin}</td></tr>`);
-}
-function htmlTableauPizzaBresilieneColonnes(l) {
-  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🌴 Cœurs de palmier</th><td>${l.palmier}</td></tr><tr><th>🌽 Maïs</th><td>${l.mais}</td></tr><tr><th>🫒 Olives</th><td>${l.olives}</td></tr>`);
-}
-
-function htmlTableauTarteTatinColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍎 Pommes</th><td>${l.pommes}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🫓 Pâte feuilletée</th><td>${l.pate}</td></tr><tr><th>🪵 Cannelle</th><td>${l.cannelle}</td></tr>`);
-}
-function htmlTableauCroissantColonnes(l) {
-  return col(`<tr><th>🥐 Croissants</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🧈 Beurre de tourage</th><td>${l.beurre}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🟨 Levure</th><td>${l.levure}</td></tr>`);
-}
-function htmlTableauVerrineFramboiseColonnes(l) {
-  return col(`<tr><th>🍫 Verrines</th><td><b>${l.nb}</b></td></tr><tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr><tr><th>🫐 Framboises</th><td>${l.framboises}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>`);
-}
-function htmlTableauSautePorcColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐷 Porc</th><td>${l.porc}</td></tr><tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
-}
-function htmlTableauVelouteCorgetteColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥒 Courgettes</th><td>${l.courgette}</td></tr><tr><th>🧀 Fromage de chèvre</th><td>${l.chevre}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🌿 Basilic</th><td>${l.basilic}</td></tr>`);
-}
-function htmlTableauRatatouilleColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍆 Aubergine</th><td>${l.aubergine}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr><tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
-}
-function htmlTableauPouletCurryNoixColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🌶️ Curry</th><td>${l.curry}</td></tr><tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr><tr><th>🌿 Coriandre</th><td>${l.coriandre}</td></tr>`);
-}
-function htmlTableauFinanciersColonnes(l) {
-  return col(`<tr><th>🟡 Financiers</th><td><b>${l.nb}</b></td></tr><tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr><tr><th>🧈 Beurre noisette</th><td>${l.beurre}</td></tr><tr><th>🌰 Poudre d'amande</th><td>${l.poudreAmande}</td></tr><tr><th>🍬 Sucre glace</th><td>${l.sucreGlace}</td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr>`);
-}
-function htmlTableauChoufleurGratinColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥦 Chou-fleur</th><td>${l.choufleur}</td></tr><tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr><tr><th>🧀 Gruyère</th><td>${l.gruyere}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
-}
-function htmlTableauSalmonGrilleeColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐟 Saumon</th><td>${l.saumon}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🌿 Câpres</th><td>${l.capres}</td></tr><tr><th>🌿 Aneth</th><td>${l.aneth}</td></tr>`);
-}
-function htmlTableauSobaColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍜 Soba (sarrasin)</th><td>${l.soba}</td></tr><tr><th>💧 Dashi</th><td>${l.dashi}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr><tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr><tr><th>🌿 Ciboule</th><td>${l.ciboule}</td></tr>`);
-}
-function htmlTableauTartePistacheColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâte sablée</th><td>${l.pateSablee}</td></tr><tr><th>🟢 Pistaches</th><td>${l.pistaches}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍓 Framboises</th><td>${l.framboises}</td></tr>`);
-}
-function htmlTableauAgnelRotiColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐑 Gigot d'agneau</th><td>${l.agneau}</td></tr><tr><th>🧄 Ail</th><td>${l.ail}</td></tr><tr><th>🌿 Romarin</th><td>${l.romarin}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
-}
-function htmlTableauCrepesBretonnesColonnes(l) {
-  return col(`<tr><th>🫓 Galettes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine sarrasin</th><td>${l.farine}</td></tr><tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🍖 Jambon</th><td>${l.jambon}</td></tr><tr><th>🧀 Fromage</th><td>${l.fromage}</td></tr>`);
-}
-function htmlTableauStroganovColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Bœuf</th><td>${l.boeuf}</td></tr><tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🟡 Moutarde</th><td>${l.moutarde}</td></tr>`);
-}
-function htmlTableauPizzaHawaienneColonnes(l) {
-  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍖 Jambon</th><td>${l.jambon}</td></tr><tr><th>🍍 Ananas</th><td>${l.ananas}</td></tr>`);
-}
-function htmlTableauPouletEscalopesColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍞 Chapelure</th><td>${l.chapelure}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauTofuSauteColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🧀 Tofu ferme</th><td>${l.tofu}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr><tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr><tr><th>🌾 Graines de sésame</th><td>${l.sesame}</td></tr><tr><th>🥬 Bok choy</th><td>${l.bok_choy}</td></tr>`);
-}
-function htmlTableauCapreseColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella di bufala</th><td>${l.mozza}</td></tr><tr><th>🌿 Basilic frais</th><td>${l.basilic}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
-}
-function htmlTableauMoulesMarinnieresColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🦪 Moules fraîches</th><td>${l.moules}</td></tr><tr><th>🍷 Vin blanc sec</th><td>${l.vin}</td></tr><tr><th>🧅 Échalotes</th><td>${l.echalote}</td></tr><tr><th>🌿 Persil</th><td>${l.persil}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
-}
-function htmlTableauSexBeachColonnes(l) {
-  return col(`<tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr><tr><th>🍑 Liqueur de pêche</th><td>${l.peche}</td></tr><tr><th>🍊 Jus d'orange</th><td>${l.orange}</td></tr><tr><th>🍒 Jus de cranberry</th><td>${l.cranberry}</td></tr>`);
-}
-function htmlTableauMocktailMentheColonnes(l) {
-  return col(`<tr><th>🌿 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr><tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr><tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
-}
-function htmlTableauTarteChocoCaramelColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâte sablée</th><td>${l.pateSablee}</td></tr><tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
-}
-function htmlTableauSoupeHariraColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🫘 Lentilles corail</th><td>${l.lentilles}</td></tr><tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🧄 Ail</th><td>${l.ail}</td></tr>`);
-}
-
-function htmlTableauBlanquetteColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Veau</th><td>${l.veau}</td></tr><tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
-}
-function htmlTableauNavarinColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐑 Agneau</th><td>${l.agneau}</td></tr><tr><th>🫛 Petits pois</th><td>${l.petitspois}</td></tr><tr><th>🪨 Navets</th><td>${l.navets}</td></tr><tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
-}
-function htmlTableauCamembertRotiColonnes(l) {
-  return col(`<tr><th>🧀 Camemberts</th><td><b>${l.nb}</b></td></tr><tr><th>🧀 Camembert de Normandie</th><td>${l.camembert}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr><tr><th>🌿 Romarin</th><td>${l.romarin}</td></tr><tr><th>🌰 Noix</th><td>${l.noix}</td></tr><tr><th>🥖 Pain</th><td>${l.pain}</td></tr>`);
-}
-function htmlTableauTarteFlambeeColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🍦 Fromage blanc + crème</th><td>${l.creme}</td></tr><tr><th>🥓 Lardons</th><td>${l.lardons}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
-}
-function htmlTableauPouletMisoColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌿 Miso blanc</th><td>${l.miso}</td></tr><tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr><tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>`);
-}
-function htmlTableauNoodlesWokColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍜 Nouilles de riz</th><td>${l.nouilles}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr><tr><th>🌾 Graines de sésame</th><td>${l.sesame}</td></tr><tr><th>🥬 Bok choy</th><td>${l.bok_choy}</td></tr>`);
-}
-function htmlTableauMaffeSenegalColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🥜 Pâte d'arachide</th><td>${l.arachide}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🍠 Patate douce</th><td>${l.patate}</td></tr>`);
-}
-function htmlTableauGazpachoMelonColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍈 Melon</th><td>${l.melon}</td></tr><tr><th>🍖 Jambon de Parme</th><td>${l.jambon}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
-}
-function htmlTableauWafflesSalesColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🧀 Fromage râpé</th><td>${l.fromage}</td></tr><tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>`);
-}
-function htmlTableauChoucrouteColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥬 Choucroute crue</th><td>${l.chouC}</td></tr><tr><th>🌭 Saucisses</th><td>${l.saucisses}</td></tr><tr><th>🦴 Jarret de porc</th><td>${l.jarret}</td></tr><tr><th>🥓 Lard fumé</th><td>${l.lard}</td></tr><tr><th>🍷 Riesling</th><td>${l.vin}</td></tr><tr><th>🫐 Baies de genièvre</th><td>${l.baies}</td></tr>`);
-}
-function htmlTableauSconeColonnes(l) {
-  return col(`<tr><th>🫖 Scones</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🧈 Beurre froid</th><td>${l.beurre}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🟨 Levure chimique</th><td>${l.levure}</td></tr>`);
-}
-function htmlTableauCalamarsColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🦑 Calamars / Encornets</th><td>${l.calamars}</td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🧄 Ail</th><td>${l.ail}</td></tr><tr><th>🌿 Persil</th><td>${l.persil}</td></tr>`);
-}
-function htmlTableauBaklavaColonnes(l) {
-  return col(`<tr><th>🍯 Pièces</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Feuilles de filo</th><td>${l.filo}</td></tr><tr><th>🌰 Pistaches</th><td>${l.pistaches}</td></tr><tr><th>🧈 Beurre clarifié</th><td>${l.beurre}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr><tr><th>🌹 Eau de rose</th><td>${l.eauRose}</td></tr>`);
-}
-function htmlTableauEggsBenedictColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍞 Muffins anglais</th><td>${l.muffins}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍖 Jambon de pays</th><td>${l.jambon}</td></tr><tr><th>🧈 Beurre (hollandaise)</th><td>${l.beurre}</td></tr><tr><th>🥚 Jaunes (hollandaise)</th><td>${l.jaunes}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauPorkBellyColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐷 Poitrine de porc</th><td>${l.porc}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr><tr><th>🧄 Ail</th><td>${l.ail}</td></tr><tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
-}
-function htmlTableauVeloutePotironColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🎃 Courge butternut</th><td>${l.courge}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
-}
-function htmlTableauChocolatChaudColonnes(l) {
-  return col(`<tr><th>☕ Tasses</th><td><b>${l.nb}</b></td></tr><tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr><tr><th>🍫 Chocolat noir 70%</th><td>${l.chocolat}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
-}
-function htmlTableauGranolaMaisonColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Flocons d'avoine</th><td>${l.flocons}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr><tr><th>🌰 Noix mélangées</th><td>${l.noix}</td></tr><tr><th>🌱 Graines</th><td>${l.graines}</td></tr><tr><th>🫒 Huile de coco</th><td>${l.huile}</td></tr>`);
-}
-
-function htmlTableauPizzaChorizoColonnes(l) {
-  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🌭 Chorizo</th><td>${l.chorizo}</td></tr><tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr>`);
-}
-function htmlTableauPouletTeriyakiColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr><tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🌾 Graines de sésame</th><td>${l.sesame}</td></tr>`);
-}
-function htmlTableauCurryVerthaiColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🍛 Pâte curry vert</th><td>${l.curryVert}</td></tr><tr><th>🍆 Aubergine</th><td>${l.aubergine}</td></tr><tr><th>🌿 Basilic thaï</th><td>${l.basilic}</td></tr>`);
-}
-function htmlTableauChiliCarneColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr><tr><th>🫘 Haricots rouges</th><td>${l.haricots}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🌶️ Piment de Cayenne</th><td>${l.piment}</td></tr><tr><th>🌿 Cumin</th><td>${l.cumin}</td></tr>`);
-}
-function htmlTableauKFCColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌾 Farine de riz</th><td>${l.farine}</td></tr><tr><th>🌾 Fécule de maïs</th><td>${l.fecule}</td></tr><tr><th>🌶️ Gochujang</th><td>${l.gochujang}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
-}
-function htmlTableauRisottoMilaneseColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍚 Riz arborio</th><td>${l.riz}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🌼 Safran</th><td>${l.safran}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🍷 Vin blanc</th><td>${l.vin}</td></tr>`);
-}
-function htmlTableauSoupeAziatColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🍜 Nouilles de riz</th><td>${l.nouilles}</td></tr><tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr><tr><th>🥬 Bok choy</th><td>${l.bok_choy}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>`);
-}
-function htmlTableauTartareSaumonColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐟 Saumon frais</th><td>${l.saumon}</td></tr><tr><th>🥑 Avocat</th><td>${l.avocat}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🌿 Ciboulette</th><td>${l.ciboulette}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
-}
-function htmlTableauCremeBruleeColonnes(l) {
-  return col(`<tr><th>🔥 Verrines</th><td><b>${l.nb}</b></td></tr><tr><th>🍦 Crème fraîche entière</th><td>${l.creme}</td></tr><tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunes}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🍦 Vanille</th><td>${l.vanille}</td></tr><tr><th>🍬 Sucre à caraméliser</th><td>${l.sucreD}</td></tr>`);
-}
-function htmlTableauTiramisuFraiseColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍪 Biscuits à la cuillère</th><td>${l.biscuits}</td></tr><tr><th>🧀 Mascarpone</th><td>${l.mascarpone}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🍓 Fraises</th><td>${l.fraises}</td></tr>`);
-}
-function htmlTableauPouletCocoLColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🍋 Citron confit</th><td>${l.citronC}</td></tr><tr><th>🧄 Ail</th><td>${l.ail}</td></tr><tr><th>🌿 Coriandre</th><td>${l.coriandre}</td></tr>`);
-}
-function htmlTableauCrepesSucreesColonnes(l) {
-  return col(`<tr><th>🍮 Crêpes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>`);
-}
-function htmlTableauPoireauVinaigretteColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥬 Poireaux</th><td>${l.poireaux}</td></tr><tr><th>🥚 Œufs durs</th><td>${l.oeufs}</td></tr><tr><th>🟡 Moutarde</th><td>${l.moutarde}</td></tr><tr><th>🍶 Vinaigre</th><td>${l.vinaigre}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
-}
-function htmlTableauSpaetzleColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🧂 Sel</th><td>${l.sel}</td></tr><tr><th>🧈 Beurre noisette</th><td>${l.beurre}</td></tr>`);
-}
-function htmlTableauWagyuBurgerColonnes(l) {
-  return col(`<tr><th>🍔 Burgers</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr><tr><th>🍞 Buns briochés</th><td>${l.buns}</td></tr><tr><th>🧀 Cheddar</th><td>${l.cheddar}</td></tr><tr><th>🥬 Salade</th><td>${l.salade}</td></tr><tr><th>🍅 Tomate</th><td>${l.tomate}</td></tr>`);
-}
-function htmlTableauLemonPastaColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍝 Spaghetti</th><td>${l.spaghetti}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
-}
-function htmlTableauMinestroneColonnes(l) {
-  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🥕 Carotte</th><td>${l.carotte}</td></tr><tr><th>🫘 Haricots blancs</th><td>${l.haricots}</td></tr><tr><th>🍝 Petites pâtes</th><td>${l.pates}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
-}
-
-function htmlTableauPizzaReineColonnes(l) {
-  return col(`
-    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
-    <tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>
-    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
-    <tr><th>🍖 Jambon</th><td>${l.jambon}</td></tr>
-    <tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr>`);
-}
-function htmlTableauPizzaFormaggiColonnes(l) {
-  return col(`
-    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
-    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
-    <tr><th>🧀 Gorgonzola</th><td>${l.gorgonzola}</td></tr>
-    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>
-    <tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
-}
-function htmlTableauPizzaDiavolaColonnes(l) {
-  return col(`
-    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
-    <tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>
-    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
-    <tr><th>🌭 Salami épicé</th><td>${l.salami}</td></tr>
-    <tr><th>🌶️ Nduja</th><td>${l.nduja}</td></tr>
-    <tr><th>🌶️ Piment frais</th><td>${l.piment}</td></tr>`);
-}
-function htmlTableauPizzaSaumonColonnes(l) {
-  return col(`
-    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
-    <tr><th>🐟 Saumon fumé</th><td>${l.saumon}</td></tr>
-    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
-    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauPizzaVegeColonnes(l) {
-  return col(`
-    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
-    <tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>
-    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
-    <tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr>
-    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
-    <tr><th>🍆 Aubergine</th><td>${l.aubergine}</td></tr>
-    <tr><th>🌿 Pesto</th><td>${l.pesto}</td></tr>`);
-}
-function htmlTableauSouvlakiAgneauColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Agneau</th><td>${l.agneau}</td></tr>
-    <tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr>
-    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
-}
-function htmlTableauTomYamColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
-    <tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr>
-    <tr><th>🍋 Citrons verts</th><td>${l.citron}</td></tr>
-    <tr><th>🌿 Citronnelle</th><td>${l.citronnelle}</td></tr>
-    <tr><th>🫚 Galanga</th><td>${l.galanga}</td></tr>`);
-}
-function htmlTableauDoradeColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐟 Dorade royale</th><td>${l.dorade}</td></tr>
-    <tr><th>🌿 Chermoula</th><td>${l.chermoula}</td></tr>
-    <tr><th>🍋 Citrons</th><td>${l.citron}</td></tr>
-    <tr><th>🫒 Olives</th><td>${l.olives}</td></tr>`);
-}
-function htmlTableauChicken65Colonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
-    <tr><th>🥛 Yaourt</th><td>${l.yaourt}</td></tr>
-    <tr><th>🌾 Farine de riz</th><td>${l.farine}</td></tr>
-    <tr><th>🌶️ Piment rouge</th><td>${l.piment}</td></tr>
-    <tr><th>🌶️ Feuilles de curry</th><td>${l.curry}</td></tr>`);
-}
-function htmlTableauPierogiColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
-    <tr><th>🧀 Fromage frais</th><td>${l.fromage}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🍦 Crème sure</th><td>${l.creme}</td></tr>`);
-}
-function htmlTableauMomosColonnes(l) {
-  return col(`
-    <tr><th>🥟 Momos</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr>
-    <tr><th>🥬 Chou</th><td>${l.chou}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
-}
-function htmlTableauShakshukaVerteColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
-    <tr><th>🫑 Poivron vert</th><td>${l.poivron}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🧀 Feta (optionnel)</th><td>${l.fetaOpt}</td></tr>`);
-}
-function htmlTableauKebbehColonnes(l) {
-  return col(`
-    <tr><th>🥩 Kebbeh</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Agneau haché</th><td>${l.agneau}</td></tr>
-    <tr><th>🌾 Semoule fine</th><td>${l.semoule}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🌰 Pignons de pin</th><td>${l.pignons}</td></tr>
-    <tr><th>🪵 Cannelle</th><td>${l.cannelle}</td></tr>`);
-}
-function htmlTableauTteokbokkiColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍱 Tteok (gâteaux de riz)</th><td>${l.tteok}</td></tr>
-    <tr><th>🌶️ Gochujang</th><td>${l.gochujang}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>
-    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
-}
-function htmlTableauPulledPorkColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐷 Épaule de porc</th><td>${l.porc}</td></tr>
-    <tr><th>🌶️ Rub BBQ</th><td>${l.rub}</td></tr>
-    <tr><th>🍖 Sauce BBQ</th><td>${l.bbqSauce}</td></tr>
-    <tr><th>💨 Paprika fumé</th><td>${l.fumee}</td></tr>`);
-}
-function htmlTableauDosaColonnes(l) {
-  return col(`
-    <tr><th>🥞 Dosas</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍚 Riz</th><td>${l.rizS}</td></tr>
-    <tr><th>🫘 Lentilles urad dal</th><td>${l.lentilles}</td></tr>
-    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
-    <tr><th>🍲 Sambar</th><td>${l.sambar}</td></tr>
-    <tr><th>🌿 Chutney</th><td>${l.chutney}</td></tr>`);
-}
-function htmlTableauBraiseBoeufColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Joues de bœuf</th><td>${l.joues}</td></tr>
-    <tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>
-    <tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr>
-    <tr><th>🍶 Saké</th><td>${l.saké}</td></tr>
-    <tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>
-    <tr><th>⭐ Anis étoilé</th><td>${l.anis}</td></tr>`);
-}
-function htmlTableauPaprikashColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
-    <tr><th>🌶️ Paprika hongrois</th><td>${l.paprika}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
-}
-
-function htmlTableauRamenColonnes(l) {
-  return col(`
-    <tr><th>🍜 Bols</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍜 Nouilles ramen</th><td>${l.nouilles}</td></tr>
-    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
-    <tr><th>🥩 Porc (chashu)</th><td>${l.porc}</td></tr>
-    <tr><th>🥚 Œufs mollets</th><td>${l.oeuf}</td></tr>
-    <tr><th>🍄 Shiitake</th><td>${l.shiitake}</td></tr>`);
-}
-function htmlTableauGyozaColonnes(l) {
-  return col(`
-    <tr><th>🥟 Gyoza</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫓 Feuilles à gyoza</th><td>${l.pate}</td></tr>
-    <tr><th>🥩 Porc haché</th><td>${l.porc}</td></tr>
-    <tr><th>🥬 Chou chinois</th><td>${l.chou}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
-}
-function htmlTableauTikaMasalaColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
-    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
-    <tr><th>🥛 Yaourt (marinade)</th><td>${l.yaourt}</td></tr>
-    <tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr>`);
-}
-function htmlTableauPhoColonnes(l) {
-  return col(`
-    <tr><th>🍲 Bols</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍜 Nouilles de riz</th><td>${l.nouilles}</td></tr>
-    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
-    <tr><th>🥩 Bœuf (tranché fin)</th><td>${l.boeuf}</td></tr>
-    <tr><th>⭐ Anis étoilé</th><td>${l.anis}</td></tr>
-    <tr><th>🪵 Cannelle</th><td>${l.cannelle}</td></tr>`);
-}
-function htmlTableauPizzaMargheritaColonnes(l) {
-  return col(`
-    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫓 Pâtons (recette pâte à pizza)</th><td>${l.pate}</td></tr>
-    <tr><th>🍅 Tomates San Marzano</th><td>${l.tomates}</td></tr>
-    <tr><th>🧀 Mozzarella di bufala</th><td>${l.mozza}</td></tr>
-    <tr><th>🌿 Basilic frais</th><td>${l.basilic}</td></tr>`);
-}
-function htmlTableauCarbonaraColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍝 Spaghetti</th><td>${l.spaghetti}</td></tr>
-    <tr><th>🥓 Guanciale</th><td>${l.guanciale}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🧀 Pecorino romano</th><td>${l.pecorino}</td></tr>
-    <tr><th>🌶️ Poivre noir</th><td>généreusement</td></tr>`);
-}
-function htmlTableauCeebujennColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐟 Poisson</th><td>${l.poisson}</td></tr>
-    <tr><th>🍚 Riz</th><td>${l.riz}</td></tr>
-    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
-    <tr><th>🫚 Manioc</th><td>${l.manioc}</td></tr>
-    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>`);
-}
-function htmlTableauMafeColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Viande (agneau/bœuf)</th><td>${l.viande}</td></tr>
-    <tr><th>🥜 Pâte d'arachide</th><td>${l.arachide}</td></tr>
-    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
-    <tr><th>🍠 Patate douce</th><td>${l.patate}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
-}
-function htmlTableauGnocchisColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>
-    <tr><th>🧀 Gorgonzola</th><td>${l.gorgonzola}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
-}
-function htmlTableauFalafelColonnes(l) {
-  return col(`
-    <tr><th>🧆 Falafels</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫘 Pois chiches crus</th><td>${l.poischiches}</td></tr>
-    <tr><th>🌿 Persil / coriandre</th><td>${l.persil}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🌿 Cumin</th><td>${l.cumin}</td></tr>
-    <tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr>`);
-}
-function htmlTableauTandooriColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
-    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
-    <tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr>
-    <tr><th>🌶️ Paprika</th><td>${l.paprika}</td></tr>`);
-}
-function htmlTableauPekinDuckColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🦆 Canard</th><td>${l.canard}</td></tr>
-    <tr><th>🍶 Sauce hoisin</th><td>${l.hoisin}</td></tr>
-    <tr><th>🫓 Crêpes pékinoises</th><td>${l.crepesP}</td></tr>
-    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
-    <tr><th>🌿 Ciboule</th><td>${l.ciboule} tiges</td></tr>`);
-}
-function htmlTableauOssobucoColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🦴 Jarret de veau</th><td>${l.jarret}</td></tr>
-    <tr><th>🍷 Vin blanc</th><td>${l.vin}</td></tr>
-    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
-    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
-    <tr><th>🌿 Gremolata (citron, ail, persil)</th><td>1 portion</td></tr>`);
-}
-function htmlTableauTajineColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Agneau</th><td>${l.agneau}</td></tr>
-    <tr><th>🫐 Pruneaux</th><td>${l.pruneaux}</td></tr>
-    <tr><th>🌰 Amandes effilées</th><td>${l.amandes}</td></tr>
-    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
-}
-function htmlTableauMoelleuxColonnes(l) {
-  return col(`
-    <tr><th>🍫 Moelleux</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>`);
-}
-function htmlTableauCheesecakeColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🧀 Philadelphia</th><td>${l.philadelphia}</td></tr>
-    <tr><th>🍪 Biscuits digestifs</th><td>${l.biscuits}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
-}
-function htmlTableauPainAuChocolatColonnes(l) {
-  return col(`
-    <tr><th>🍫 Pains</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine T45</th><td>${l.farine}</td></tr>
-    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
-    <tr><th>🧈 Beurre (détrempe)</th><td>${l.beurre}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
-    <tr><th>🧈 Beurre de tourage</th><td>${l.beurrage}</td></tr>
-    <tr><th>🍫 Chocolat (barres)</th><td>${l.chocolat}</td></tr>`);
-}
-function htmlTableauGateauBasqueColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🍦 Crème (crème pâtissière)</th><td>${l.creme}</td></tr>
-    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`);
-}
-function htmlTableauCaneleColonnes(l) {
-  return col(`
-    <tr><th>🏺 Cannelés</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🥃 Rhum</th><td>${l.rhum}</td></tr>`);
-}
-
-function htmlTableauGravlaxColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐟 Saumon (filet)</th><td>${l.saumon}</td></tr>
-    <tr><th>🧂 Gros sel</th><td>${l.sel}</td></tr>
-    <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
-    <tr><th>🌿 Aneth frais</th><td>${l.aneth}</td></tr>
-    <tr><th>🥃 Vodka (optionnel)</th><td>${l.vodka}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌿 Sauce moutarde aneth</th></tr>
-    <tr><th>🌿 Moutarde douce</th><td>3 c.à.s / 4 pers.</td></tr>
-    <tr><th>🫒 Huile neutre</th><td>3 c.à.s / 4 pers.</td></tr>`);
-}
-
-function htmlTableauVerrineTiramisuColonnes(l) {
-  return col(`
-    <tr><th>🥂 Verrines</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍪 Biscuits roses de Reims</th><td>${l.biscuits}</td></tr>
-    <tr><th>🧀 Mascarpone</th><td>${l.mascarpone}</td></tr>
-    <tr><th>🥚 Œufs extra-frais</th><td>${l.oeufs}</td></tr>
-    <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
-    <tr><th>🍓 Coulis de fraises</th><td>${l.coulis}</td></tr>
-    <tr><th>🌸 Sirop de fraise</th><td>${l.sirop}</td></tr>
-    <tr><th>🍫 Cacao amer</th><td>pour la finition</td></tr>`);
-}
-
-function htmlTableauPotAuFeuColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Viande de bœuf</th><td>${l.viande}</td></tr>
-    <tr><th>🦴 Os à moelle</th><td>${l.os}</td></tr>
-    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>
-    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
-    <tr><th>🧅 Poireaux</th><td>${l.poireaux}</td></tr>
-    <tr><th>🫚 Navets</th><td>${l.navets}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🌿 Bouquet garni</th><td>1</td></tr>`);
-}
-
-function htmlTableauCouscousColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Semoule</th><td>${l.semoule}</td></tr>
-    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
-    <tr><th>🥩 Merguez</th><td>${l.merguez}</td></tr>
-    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
-    <tr><th>🥕 Carottes</th><td>${l.carotte}</td></tr>
-    <tr><th>🫘 Pois chiches</th><td>${l.pois}</td></tr>`);
-}
-function htmlTableauMoussakaColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍆 Aubergines</th><td>${l.aubergines}</td></tr>
-    <tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr>
-    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
-    <tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr>
-    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
-}
-function htmlTableauPaellaColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍚 Riz paella</th><td>${l.riz}</td></tr>
-    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
-    <tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr>
-    <tr><th>🦪 Moules</th><td>${l.moules}</td></tr>
-    <tr><th>🌭 Chorizo</th><td>${l.chorizo}</td></tr>
-    <tr><th>🌼 Safran</th><td>${l.safran}</td></tr>`);
-}
-function htmlTableauButterChickenColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
-    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr>`);
-}
-function htmlTableauSouvlakiColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Porc</th><td>${l.porc}</td></tr>
-    <tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr>
-    <tr><th>🥒 Concombre (tzatziki)</th><td>${l.concombre}</td></tr>
-    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
-}
-function htmlTableauQuicheColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥓 Lardons fumés</th><td>${l.lardons}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
-    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
-    <tr><th>🥧 Pâte brisée</th><td>1</td></tr>`);
-}
-function htmlTableauSoupeOignonColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🧅 Oignons</th><td>${l.oignons}</td></tr>
-    <tr><th>🍲 Bouillon de bœuf</th><td>${l.bouillon}</td></tr>
-    <tr><th>🍞 Pain</th><td>${l.pain}</td></tr>
-    <tr><th>🧀 Gruyère râpé</th><td>${l.gruyere}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
-}
-function htmlTableauDalColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫘 Lentilles corail</th><td>${l.lentilles}</td></tr>
-    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
-    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr>`);
-}
-function htmlTableauRizCantonnaisColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍚 Riz (cuit froid)</th><td>${l.riz}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🥓 Jambon</th><td>${l.jambon}</td></tr>
-    <tr><th>🫛 Petits pois</th><td>${l.petitspois}</td></tr>
-    <tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>`);
-}
-function htmlTableauHariraColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫘 Lentilles</th><td>${l.lentilles}</td></tr>
-    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
-    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
-    <tr><th>🥩 Viande</th><td>${l.viande}</td></tr>
-    <tr><th>🌾 Vermicelles</th><td>${l.vermicelles}</td></tr>`);
-}
-function htmlTableauNaanColonnes(l) {
-  return col(`
-    <tr><th>🫓 Naans</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
-    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
-    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
-    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>`);
-}
-function htmlTableauChurrosColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>💧 Eau</th><td>${l.eau}</td></tr>
-    <tr><th>🍬 Sucre cannelle</th><td>${l.sucre}</td></tr>
-    <tr><th>🫒 Huile de friture</th><td>${l.huile}</td></tr>
-    <tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr>`);
-}
-
-function htmlTableauPouletCitronColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍗 Poulet (filets)</th><td>${l.poulet}</td></tr>
-    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
-    <tr><th>🫛 Haricots verts</th><td>${l.haricots}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
-    <tr><th>🌿 Thym frais</th><td>selon goût</td></tr>`);
-}
-function htmlTableauSalmonTeriyakiColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🐟 Pavés de saumon</th><td>${l.saumon}</td></tr>
-    <tr><th>🍚 Riz à sushi</th><td>${l.riz}</td></tr>
-    <tr><th>🫘 Edamame</th><td>${l.edamame}</td></tr>
-    <tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>
-    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
-    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>`);
-}
-function htmlTableauBolognaiseColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr>
-    <tr><th>🍝 Pâtes (tagliatelles)</th><td>${l.pates}</td></tr>
-    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
-    <tr><th>🍷 Vin rouge</th><td>${l.vin}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
-}
-function htmlTableauTacosColonnes(l) {
-  return col(`
-    <tr><th>🌮 Tacos</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Bœuf haché</th><td>${l.boeuf}</td></tr>
-    <tr><th>🫓 Tortillas</th><td>${l.tortillas}</td></tr>
-    <tr><th>🥑 Avocat</th><td>${l.avocat}</td></tr>
-    <tr><th>🍅 Tomate</th><td>${l.tomate}</td></tr>
-    <tr><th>🧀 Fromage râpé</th><td>${l.fromage}</td></tr>`);
-}
-function htmlTableauPadThaiColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍜 Nouilles de riz</th><td>${l.nouilles}</td></tr>
-    <tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr>
-    <tr><th>🧀 Tofu ferme</th><td>${l.tofu}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🌰 Cacahuètes</th><td>${l.cacahetes}</td></tr>`);
-}
-function htmlTableauCurryPouletColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
-    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
-    <tr><th>🍚 Riz jasmin</th><td>${l.riz}</td></tr>
-    <tr><th>🌶️ Pâte de curry</th><td>${l.pateC}</td></tr>
-    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>`);
-}
-function htmlTableauBurgerColonnes(l) {
-  return col(`
-    <tr><th>🍔 Burgers</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr>
-    <tr><th>🍞 Buns</th><td>${l.buns}</td></tr>
-    <tr><th>🧀 Cheddar</th><td>${l.cheddar}</td></tr>
-    <tr><th>🥬 Salade</th><td>${l.salade}</td></tr>
-    <tr><th>🍅 Tomate</th><td>${l.tomate}</td></tr>`);
-}
-function htmlTableauRisottoPrimaveraColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍚 Riz arborio</th><td>${l.riz}</td></tr>
-    <tr><th>🍲 Bouillon légumes</th><td>${l.bouillon}</td></tr>
-    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
-    <tr><th>🫛 Petits pois</th><td>${l.petitspois}</td></tr>
-    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
-}
-function htmlTableauShakshukaColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
-    <tr><th>🫑 Poivron rouge</th><td>${l.poivron}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🌿 Cumin</th><td>${l.cumin}</td></tr>`);
-}
-
-function htmlTableauBoeufColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥩 Bœuf</th><td>${l.boeuf}</td></tr>
-    <tr><th>🍷 Vin rouge</th><td>${l.vin}</td></tr>
-    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>
-    <tr><th>🧅 Oignons</th><td>${l.oignons}</td></tr>
-    <tr><th>🥓 Lardons</th><td>${l.lardons}</td></tr>
-    <tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🧄 Ail</th><td>2 gousses</td></tr>
-    <tr><th>🌿 Bouquet garni</th><td>1</td></tr>`);
-}
-
-function htmlTableauGratinColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
-    <tr><th>🍦 Crème liquide</th><td>${l.creme}</td></tr>
-    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🫙 Noix de muscade</th><td>1 pincée</td></tr>`);
-}
-
-function htmlTableauCremeBruleeColonnes(l) {
-  return col(`
-    <tr><th>🍮 Ramequins</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍦 Crème liquide entière</th><td>${l.creme}</td></tr>
-    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunes}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🌿 Gousse de vanille</th><td>${l.vanille}</td></tr>
-    <tr><th>🍬 Cassonade (caramel)</th><td>${l.cassonade}</td></tr>`);
-}
-
-function htmlTableauMousseColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍫 Chocolat noir (70%)</th><td>${l.chocolat}</td></tr>
-    <tr><th>🥚 Œufs entiers</th><td>${l.oeufs}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🧂 Sel</th><td>1 pincée</td></tr>`);
-}
-
-function htmlTableauIleFlottanteColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🥛 Crème anglaise</th></tr>
-    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
-    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunesCreme}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
-    <tr><th>🌿 Vanille</th><td>${l.vanille} gousse</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌨️ Îles (meringue)</th></tr>
-    <tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreIles}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🍯 Caramel</th></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreCaramel}</td></tr>`);
-}
-
-function htmlTableauBananaBreadColonnes(l) {
-  return col(`
-    <tr><th>🍰 Tranches</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍌 Bananes mûres</th><td>${l.bananes}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🍬 Sucre roux</th><td>${l.sucre}</td></tr>
-    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>`);
-}
-
-function htmlTableauGranolaColonnes(l) {
-  return col(`
-    <tr><th>🥣 Portions</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Flocons d'avoine</th><td>${l.flocons}</td></tr>
-    <tr><th>🍯 Miel / sirop d'érable</th><td>${l.miel}</td></tr>
-    <tr><th>🫒 Huile de coco</th><td>${l.huile}</td></tr>
-    <tr><th>🌰 Noix mélangées</th><td>${l.noix}</td></tr>
-    <tr><th>🌱 Graines</th><td>${l.graines}</td></tr>
-    <tr><th>🍇 Fruits secs</th><td>selon goût</td></tr>`);
-}
-
-function htmlTableauHoumousColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
-    <tr><th>🫒 Tahini</th><td>${l.tahini}</td></tr>
-    <tr><th>🍋 Citron (jus)</th><td>${l.citron}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>${l.huile}</td></tr>
-    <tr><th>💧 Eau froide</th><td>3–4 c.à.s</td></tr>`);
-}
-
-function htmlTableauRisottoColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍚 Riz arborio</th><td>${l.riz}</td></tr>
-    <tr><th>🍲 Bouillon chaud</th><td>${l.bouillon}</td></tr>
-    <tr><th>🍷 Vin blanc</th><td>${l.vin}</td></tr>
-    <tr><th>🧀 Parmesan râpé</th><td>${l.parmesan}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🧅 Oignon</th><td>1</td></tr>`);
-}
-
-function htmlTableauFondantColonnes(l) {
-  return col(`
-    <tr><th>🍫 Fondants</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>`);
-}
-
-function htmlTableauMadeleineColonnes(l) {
-  return col(`
-    <tr><th>🫐 Madeleines</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>
-    <tr><th>🍯 Miel</th><td>1 c.à.s / 12</td></tr>
-    <tr><th>🍋 Zeste citron</th><td>1 / 12</td></tr>`);
-}
-
-function htmlTableauCurryLegumesColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
-    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
-    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
-    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
-    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
-    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>
-    <tr><th>🌶️ Curry en poudre</th><td>${l.curry}</td></tr>`);
-}
-
-function htmlTableauVelouteLegumesColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>
-    <tr><th>🎃 Courge butternut</th><td>${l.courge}</td></tr>
-    <tr><th>🍲 Bouillon de légumes</th><td>${l.bouillon}</td></tr>
-    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
-    <tr><th>🧅 Oignon</th><td>1</td></tr>
-    <tr><th>🌿 Gingembre frais</th><td>2 cm</td></tr>`);
-}
-
-function htmlTableauTarteCitronColonnes(l) {
-  return col(`
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🥧 Pâte sablée</th></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🧈 Beurre froid</th><td>${l.beurrePate}</td></tr>
-    <tr><th>🍬 Sucre glace</th><td>${l.sucreGlace}</td></tr>
-    <tr><th>🌰 Poudre d'amande</th><td>${l.poudreAmande}</td></tr>
-    <tr><th>🥚 Œuf</th><td>${l.oeufPate}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🍋 Crème citron</th></tr>
-    <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufCreme}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
-    <tr><th>🧈 Beurre</th><td>${l.beurreCreme}</td></tr>
-    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🌨️ Meringue</th></tr>
-    <tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreMeringue}</td></tr>`);
-}
-
-function htmlTableauQuinoaColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Quinoa</th><td>${l.quinoa}</td></tr>
-    <tr><th>🍅 Tomates cerises</th><td>${l.tomates}</td></tr>
-    <tr><th>🧀 Feta</th><td>${l.feta}</td></tr>
-    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
-    <tr><th>🫑 Poivron rouge</th><td>${l.poivron}</td></tr>
-    <tr><th>🫒 Huile d'olive</th><td>${l.huile}</td></tr>
-    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
-}
-
-function htmlTableauLasagneColonnes(l) {
-  return col(`
-    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
-}
-
-function htmlTableauBriocheColonnes(l) {
-  const laitRow = l.lait !== "—"
-    ? `<tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`
-    : `<tr><th>🥛 Lait</th><td style="color:#888;">— (version sans lait)</td></tr>`;
-  return col(`
-    <tr><th>📋 Version</th><td><b>${l.label}</b></td></tr>
-    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🌿 Extrait de vanille</th><td>${l.vanille}</td></tr>
-    ${laitRow}
-    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
-    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🧈 Beurre froid</th><td>${l.beurre}</td></tr>`);
-}
-
-// ==============================
-// CALCULATEUR
-// ==============================
-
-function calculer() {
-  const recette   = document.getElementById("recette").value;
-  const personnes = parseInt(document.getElementById("personnes").value) || 1;
-  const data      = recettes[recette];
-
-  // Pizza : afficher uniquement la ligne sélectionnée en colonnes
-  if (recette === "pizza" && data.tableauPatons) {
-    const ligne = data.tableauPatons.find(l => l.patons === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} pâton${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPizzaColonnes(ligne) + htmlPrixCalories("pizza", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (0–20).</p>`;
-    return;
-  }
-
-  // Gaufres : tableau par nombre de gaufres
-  if (recette === "gaufres" && data.tableauGaufres) {
-    const ligne = data.tableauGaufres.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} gaufre${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaufresColonnes(ligne) + htmlPrixCalories("gaufres", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
-    return;
-  }
-
-  // Cookies : tableau par nombre de cookies
-  if (recette === "cookies" && data.tableauCookies) {
-    const ligne = data.tableauCookies.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} cookie${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCookiesColonnes(ligne) + htmlPrixCalories("cookies", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
-    return;
-  }
-
-  // Goumeau
-  if (recette === "goumeau" && data.tableauGoumeau) {
-    const ligne = data.tableauGoumeau.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGoumeauColonnes(ligne) + htmlPrixCalories("goumeau", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 10.</p>`;
-    return;
-  }
-
-  // Galette tacos
-  if (recette === "galettetacos" && data.tableauGaletteTacos) {
-    const ligne = data.tableauGaletteTacos.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} galette${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaletteTacosColonnes(ligne) + htmlPrixCalories("galettetacos", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir 2, 4, 6, 8, 10, 12, 14 ou 16.</p>`;
-    return;
-  }
-
-  // Pain burger
-  if (recette === "painburger" && data.tableauPainBurger) {
-    const ligne = data.tableauPainBurger.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} bun${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPainBurgerColonnes(ligne) + htmlPrixCalories("painburger", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir 2, 4, 6, 8, 10 ou 12.</p>`;
-    return;
-  }
-
-  // Pain de mie
-  if (recette === "paindemie" && data.tableauPainDeMie) {
-    const ligne = data.tableauPainDeMie.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} tranche${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPainDeMieColonnes(ligne) + htmlPrixCalories("paindemie", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 20.</p>`;
-    return;
-  }
-
-  // Overnight oats
-  if (recette === "overnightoats" && data.tableauOvernightOats) {
-    const ligne = data.tableauOvernightOats.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} pot${personnes > 1 ? "s" : ""}</h3>` + htmlTableauOvernightOatsColonnes(ligne) + htmlPrixCalories("overnightoats", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
-    return;
-  }
-  // Buddha bowl
-  if (recette === "buddhaBowl" && data.tableauBuddhaBowl) {
-    const ligne = data.tableauBuddhaBowl.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauBuddhaBowlColonnes(ligne) + htmlPrixCalories("buddhaBowl", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
-    return;
-  }
-  // Soupe miso
-  if (recette === "soupemiso" && data.tableauSoupeMiso) {
-    const ligne = data.tableauSoupeMiso.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSoupeMisoColonnes(ligne) + htmlPrixCalories("soupemiso", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
-    return;
-  }
-  // Wrap poulet
-  if (recette === "wrappoulet" && data.tableauWrapPoulet) {
-    const ligne = data.tableauWrapPoulet.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} wrap${personnes > 1 ? "s" : ""}</h3>` + htmlTableauWrapPouletColonnes(ligne) + htmlPrixCalories("wrappoulet", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
-    return;
-  }
-  // Energy balls
-  if (recette === "energyballs" && data.tableauEnergyBalls) {
-    const ligne = data.tableauEnergyBalls.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} ball${personnes > 1 ? "s" : ""}</h3>` + htmlTableauEnergyBallsColonnes(ligne) + htmlPrixCalories("energyballs", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir 4, 8, 12, 16, 20 ou 24.</p>`;
-    return;
-  }
-  // Pancakes protéinés
-  if (recette === "pancakesproteine" && data.tableauPancakesProteine) {
-    const ligne = data.tableauPancakesProteine.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} pancake${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPancakesProteineColonnes(ligne) + htmlPrixCalories("pancakesproteine", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir 2, 4, 6, 8, 10 ou 12.</p>`;
-    return;
-  }
-  // Bowl açaï
-  if (recette === "bowlacai" && data.tableauBowlAcai) {
-    const ligne = data.tableauBowlAcai.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauBowlAcaiColonnes(ligne) + htmlPrixCalories("bowlacai", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
-    return;
-  }
-  // Salade pois chiches
-  if (recette === "saladepoischiches" && data.tableauSaladePoisChiches) {
-    const ligne = data.tableauSaladePoisChiches.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSaladePoisChichesColonnes(ligne) + htmlPrixCalories("saladepoischiches", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
-    return;
-  }
-  // Gaspacho
-  if (recette === "gaspacho" && data.tableauGaspacho) {
-    const ligne = data.tableauGaspacho.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaspachoColonnes(ligne) + htmlPrixCalories("gaspacho", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
-    return;
-  }
-
-  // Curry de légumes
-  if (recette === "curryledumes" && data.tableauCurryLegumes) {
-    const ligne = data.tableauCurryLegumes.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCurryLegumesColonnes(ligne) + htmlPrixCalories("curryledumes", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
-    return;
-  }
-
-  // Smoothie bowl
-  if (recette === "smoothiebowl" && data.tableauSmoothie) {
-    const ligne = data.tableauSmoothie.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSmoothieColonnes(ligne) + htmlPrixCalories("smoothiebowl", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
-    return;
-  }
-  // Yaourt maison
-  if (recette === "yaourt" && data.tableauYaourt) {
-    const ligne = data.tableauYaourt.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} yaourt${personnes > 1 ? "s" : ""}</h3>` + htmlTableauYaourtColonnes(ligne) + htmlPrixCalories("yaourt", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
-    return;
-  }
-
-  // Pancakes
-  if (recette === "pancakes" && data.tableauPancakes) {
-    const ligne = data.tableauPancakes.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} pancake${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPancakesColonnes(ligne) + htmlPrixCalories("pancakes", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
-    return;
-  }
-  // Muffins
-  if (recette === "muffins" && data.tableauMuffins) {
-    const ligne = data.tableauMuffins.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} muffin${personnes > 1 ? "s" : ""}</h3>` + htmlTableauMuffinsColonnes(ligne) + htmlPrixCalories("muffins", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–24).</p>`;
-    return;
-  }
-  // Croque-monsieur
-  if (recette === "croquemonsieur" && data.tableauCroques) {
-    const ligne = data.tableauCroques.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} croque${personnes > 1 ? "s" : ""}-monsieur</h3>` + htmlTableauCroquesColonnes(ligne) + htmlPrixCalories("croquemonsieur", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
-    return;
-  }
-  // Salades d'été
-  const saladesTables = {
-    "saladeniçoise":       { table: "tableauSaladeNicoise",    fn: htmlTableauSaladeNicoiseColonnes,    label: "personne" },
-    "saladecesar":         { table: "tableauSaladeCesar",      fn: htmlTableauSaladeCesarColonnes,      label: "personne" },
-    "saladegreque":        { table: "tableauSaladeGreque",     fn: htmlTableauSaladeGrequeColonnes,     label: "personne" },
-    "saladepatasthon":     { table: "tableauSaladePatas",      fn: htmlTableauSaladePatasColonnes,      label: "personne" },
-    "saladerizmediterranee":{ table: "tableauSaladeRiz",       fn: htmlTableauSaladeRizColonnes,        label: "personne" },
-    "tabulemaison":        { table: "tableauTabule",           fn: htmlTableauTabuleColonnes,           label: "personne" },
-    "saladelentilles":     { table: "tableauSaladeLentilles",  fn: htmlTableauSaladeLentillesColonnes,  label: "personne" },
-    "saladeavocatcrevettes":{ table: "tableauAvocatCrevettes", fn: htmlTableauAvocatCrevettesColonnes,  label: "personne" },
-  };
-  if (saladesTables[recette] && data[saladesTables[recette].table]) {
-    const cfg  = saladesTables[recette];
-    const ligne = data[cfg.table].find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
-    return;
-  }
-
-  // Tiramisu
-  if (recette === "tiramisu" && data.tableauTiramisu) {
-    const ligne = data.tableauTiramisu.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTiramisuColonnes(ligne) + htmlPrixCalories("tiramisu", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
-    return;
-  }
-
-  // Flan
-  if (recette === "flan" && data.tableauFlan) {
-    const ligne = data.tableauFlan.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauFlanColonnes(ligne) + htmlPrixCalories("flan", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
-    return;
-  }
-  // Clafoutis
-  if (recette === "clafoutis" && data.tableauClafoutis) {
-    const ligne = data.tableauClafoutis.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauClafoutisColonnes(ligne) + htmlPrixCalories("clafoutis", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
-    return;
-  }
-  // Tarte aux pommes
-  if (recette === "tarteaupommes" && data.tableauTartePommes) {
-    const ligne = data.tableauTartePommes.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTartePommesColonnes(ligne) + htmlPrixCalories("tarteaupommes", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
-    return;
-  }
-
-  // Nouvelles recettes monde et desserts
-  const nRT = window._nouvellesRecettesTables || {};
-  if (nRT[recette] && data[nRT[recette].table]) {
-    const cfg = nRT[recette];
-    const ligne = data[cfg.table].find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
-    return;
-  }
-
-  // Cocktails
-  const cocktailsTables = {
-    "mojito":             { table: "tableauMojito",       fn: htmlTableauMojitoColonnes,       label: "verre" },
-    "margarita":          { table: "tableauMargarita",     fn: htmlTableauMargaritaColonnes,    label: "verre" },
-    "cosmopolitan":       { table: "tableauCosmopolitan",  fn: htmlTableauCosmopolitanColonnes, label: "verre" },
-    "spritz":             { table: "tableauSpritz",        fn: htmlTableauSpritzColonnes,       label: "verre" },
-    "sangria":            { table: "tableauSangria",       fn: htmlTableauSangriaColonnes,      label: "verre" },
-    "pinacolada":         { table: "tableauPinaColada",    fn: htmlTableauPinaColadaColonnes,   label: "verre" },
-    "daiquiri":           { table: "tableauDaiquiri",      fn: htmlTableauDaiquiriColonnes,     label: "verre" },
-    "whiskysour":         { table: "tableauWhiskySour",    fn: htmlTableauWhiskySourColonnes,   label: "verre" },
-    "virginmojito":       { table: "tableauVirginMojito",  fn: htmlTableauVirginMojitoColonnes, label: "verre" },
-    "limonademaison":     { table: "tableauLimonade",      fn: htmlTableauLimonadeColonnes,     label: "verre" },
-    "smoothiemangopassion":{ table: "tableauSmoothieMango",fn: htmlTableauSmoothieMangoColonnes,label: "verre" },
-    "citronadementhe":    { table: "tableauCitronade",     fn: htmlTableauCitronadeColonnes,    label: "verre" },
-    "jusPastequeMenuthe": { table: "tableauJusPasteque",   fn: htmlTableauJusPastequeColonnes,  label: "verre" },
-    "virginpinacolada":   { table: "tableauVirginPina",    fn: htmlTableauVirginPinaColonnes,   label: "verre" },
-    "mojitorose":         { table: "tableauMojitoRose",    fn: htmlTableauMojitoRoseColonnes,   label: "verre" },
-    "negroni":            { table: "tableauNegroni",        fn: htmlTableauNegroniColonnes,      label: "verre" },
-    "moscowmule":         { table: "tableauMoscowMule",     fn: htmlTableauMoscowMuleColonnes,   label: "verre" },
-    "pornstarmartini":    { table: "tableauPornstar",       fn: htmlTableauPornstarColonnes,     label: "verre" },
-    "hugospritz":         { table: "tableauHugoSpritz",     fn: htmlTableauHugoSpritzColonnes,   label: "verre" },
-    "cherryblossommocktail":{ table: "tableauCherryBlossom",fn: htmlTableauCherryBlossomColonnes,label: "verre" },
-    "oldFashioned":       { table: "tableauOldFashioned",   fn: htmlTableauOldFashionedColonnes, label: "verre" },
-    "gintoniqmaison":     { table: "tableauGinTonic",       fn: htmlTableauGinTonicColonnes,     label: "verre" },
-    "shrubframboisebasilic":{ table: "tableauShrub",        fn: htmlTableauShrubColonnes,        label: "verre" },
-    "mocktailcoconananas":{ table: "tableauCocoAnanas",     fn: htmlTableauCocoAnanasColonnes,   label: "verre" },
-    "tequilasunrise":  { table: "tableauTequilaSunrise",  fn: htmlTableauTequilaSunriseColonnes, label: "verre" },
-    "aperolspritzrosa":{ table: "tableauAperolRosa",      fn: htmlTableauAperolRosaColonnes,     label: "verre" },
-    "espressoMartini": { table: "tableauEspressoMartini", fn: htmlTableauEspressoMartiniColonnes,label: "verre" },
-    "punchfruitsrouges":{ table: "tableauPunchRouge",     fn: htmlTableauPunchRougeColonnes,     label: "verre" },
-    "blueLagoon":      { table: "tableauBlueLagoon",      fn: htmlTableauBlueLagoonColonnes,     label: "verre" },
-    "mimosa":          { table: "tableauMimosa",          fn: htmlTableauMimosaColonnes,         label: "verre" },
-    "sidecarvintage":  { table: "tableauSidecar",         fn: htmlTableauSidecarColonnes,        label: "verre" },
-    "mocktailberrybliss":{ table: "tableauBerryBliss",    fn: htmlTableauBerryBlissColonnes,     label: "verre" },
-    "gingerlemondrop": { table: "tableauLemonDrop",       fn: htmlTableauLemonDropColonnes,      label: "verre" },
-    "mocktailcoconorchidee":{ table: "tableauCocoOrchidee",fn: htmlTableauCocoOrchideeColonnes, label: "verre" },
-  };
-  if (cocktailsTables[recette] && data[cocktailsTables[recette].table]) {
-    const cfg = cocktailsTables[recette];
-    const ligne = data[cfg.table].find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
-    return;
-  }
-
-  // Paris-Brest
-  if (recette === "parisbrestreinterpretation" && data.tableauParisBrest) {
-    const ligne = data.tableauParisBrest.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauParisBrestColonnes(ligne) + htmlPrixCalories("parisbrestreinterpretation", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
-    return;
-  }
-
-  // Saumon gravlax
-  if (recette === "saumongravlax" && data.tableauGravlax) {
-    const ligne = data.tableauGravlax.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGravlaxColonnes(ligne) + htmlPrixCalories("saumongravlax", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
-    return;
-  }
-  // Verrines tiramisu
-  if (recette === "verrinetiramisu" && data.tableauVerrineTiramisu) {
-    const ligne = data.tableauVerrineTiramisu.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} verrine${personnes > 1 ? "s" : ""}</h3>` + htmlTableauVerrineTiramisuColonnes(ligne) + htmlPrixCalories("verrinetiramisu", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
-    return;
-  }
-  // Pot-au-feu
-  if (recette === "potaufeu" && data.tableauPotAuFeu) {
-    const ligne = data.tableauPotAuFeu.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPotAuFeuColonnes(ligne) + htmlPrixCalories("potaufeu", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
-    return;
-  }
-
-  // Recettes du monde + classiques
-  const mondeClassiquesTables = mondeClassiquesTablesGlobal || {
-    "couscous":       { table: "tableauCouscous",        fn: htmlTableauCouscousColonnes,       label: "personne" },
-    "moussaka":       { table: "tableauMoussaka",         fn: htmlTableauMoussakaColonnes,       label: "personne" },
-    "paella":         { table: "tableauPaella",           fn: htmlTableauPaellaColonnes,         label: "personne" },
-    "butterchicken":  { table: "tableauButterChicken",    fn: htmlTableauButterChickenColonnes,  label: "personne" },
-    "souvlaki":       { table: "tableauSouvlaki",         fn: htmlTableauSouvlakiColonnes,       label: "personne" },
-    "quichelorraine": { table: "tableauQuiche",           fn: htmlTableauQuicheColonnes,         label: "personne" },
-    "soupeaoignon":   { table: "tableauSoupeOignon",      fn: htmlTableauSoupeOignonColonnes,    label: "personne" },
-    "dalindien":      { table: "tableauDal",              fn: htmlTableauDalColonnes,            label: "personne" },
-    "rizcantonnais":  { table: "tableauRizCantonnais",    fn: htmlTableauRizCantonnaisColonnes,  label: "personne" },
-    "hariramarocaine":{ table: "tableauHarira",           fn: htmlTableauHariraColonnes,         label: "personne" },
-    "naan":           { table: "tableauNaan",             fn: htmlTableauNaanColonnes,           label: "naan" },
-    "churros":        { table: "tableauChurros",          fn: htmlTableauChurrosColonnes,        label: "personne" },
-  };
-  if (mondeClassiquesTables[recette] && data[mondeClassiquesTables[recette].table]) {
-    const cfg = mondeClassiquesTables[recette];
-    const ligne = data[cfg.table].find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 2 et 12.</p>`;
-    return;
-  }
-
-  // Recettes HelloFresh style
-  const hellofreshTables = {
-    "pouletcitronthym":  { table: "tableauPouletCitron",      fn: htmlTableauPouletCitronColonnes,    label: "personne" },
-    "salmonteriyaki":    { table: "tableauSalmonTeriyaki",     fn: htmlTableauSalmonTeriyakiColonnes,  label: "personne" },
-    "tacosmaison":       { table: "tableauTacos",              fn: htmlTableauTacosColonnes,           label: "taco" },
-    "padthai":           { table: "tableauPadThai",            fn: htmlTableauPadThaiColonnes,         label: "personne" },
-    "currypouletcoco":   { table: "tableauCurryPoulet",        fn: htmlTableauCurryPouletColonnes,     label: "personne" },
-    "burgermaison":      { table: "tableauBurger",             fn: htmlTableauBurgerColonnes,          label: "burger" },
-    "risottoprimavera":  { table: "tableauRisottoPrimavera",   fn: htmlTableauRisottoPrimaveraColonnes,label: "personne" },
-    "shakshuka":         { table: "tableauShakshuka",          fn: htmlTableauShakshukaColonnes,       label: "personne" },
-  };
-  if (hellofreshTables[recette] && data[hellofreshTables[recette].table]) {
-    const cfg = hellofreshTables[recette];
-    const ligne = data[cfg.table].find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
-    return;
-  }
-
-  // Bœuf bourguignon
-  if (recette === "boeufbourguignon" && data.tableauBoeuf) {
-    const ligne = data.tableauBoeuf.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauBoeufColonnes(ligne) + htmlPrixCalories("boeufbourguignon", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
-    return;
-  }
-  // Gratin dauphinois
-  if (recette === "gratindauphinois" && data.tableauGratin) {
-    const ligne = data.tableauGratin.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauGratinColonnes(ligne) + htmlPrixCalories("gratindauphinois", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
-    return;
-  }
-  // Crème brûlée
-  if (recette === "cremebrulee" && data.tableauCremebrulee) {
-    const ligne = data.tableauCremebrulee.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} ramequin${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCremeBruleeColonnes(ligne) + htmlPrixCalories("cremebrulee", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10.</p>`;
-    return;
-  }
-  // Mousse au chocolat
-  if (recette === "mousseauchocolat" && data.tableauMousse) {
-    const ligne = data.tableauMousse.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauMousseColonnes(ligne) + htmlPrixCalories("mousseauchocolat", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
-    return;
-  }
-  // Île flottante
-  if (recette === "ileflottante" && data.tableauIleFlottante) {
-    const ligne = data.tableauIleFlottante.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauIleFlottanteColonnes(ligne) + htmlPrixCalories("ileflottante", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
-    return;
-  }
-  // Banana bread
-  if (recette === "bananabread" && data.tableauBananaBread) {
-    const ligne = data.tableauBananaBread.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} tranches</h3>` + htmlTableauBananaBreadColonnes(ligne) + htmlPrixCalories("bananabread", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10.</p>`;
-    return;
-  }
-  // Granola
-  if (recette === "granola" && data.tableauGranola) {
-    const ligne = data.tableauGranola.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} portions</h3>` + htmlTableauGranolaColonnes(ligne) + htmlPrixCalories("granola", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10.</p>`;
-    return;
-  }
-  // Houmous
-  if (recette === "houmous" && data.tableauHoumous) {
-    const ligne = data.tableauHoumous.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauHoumousColonnes(ligne) + htmlPrixCalories("houmous", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
-    return;
-  }
-
-  // Risotto
-  if (recette === "risotto" && data.tableauRisotto) {
-    const ligne = data.tableauRisotto.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauRisottoColonnes(ligne) + htmlPrixCalories("risotto", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
-    return;
-  }
-  // Fondant au chocolat
-  if (recette === "fondantchocolat" && data.tableauFondant) {
-    const ligne = data.tableauFondant.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} fondant${personnes > 1 ? "s" : ""}</h3>` + htmlTableauFondantColonnes(ligne) + htmlPrixCalories("fondantchocolat", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
-    return;
-  }
-  // Madeleine
-  if (recette === "madeleine" && data.tableauMadeleine) {
-    const ligne = data.tableauMadeleine.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} madeleine${personnes > 1 ? "s" : ""}</h3>` + htmlTableauMadeleineColonnes(ligne) + htmlPrixCalories("madeleine", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
-    return;
-  }
-  // Velouté légumes
-  if (recette === "veloutelegumes" && data.tableauVeloute) {
-    const ligne = data.tableauVeloute.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauVelouteLegumesColonnes(ligne) + htmlPrixCalories("veloutelegumes", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
-    return;
-  }
-
-  // Tarte au citron
-  if (recette === "tartecitron" && data.tableauTarteCitron) {
-    const ligne = data.tableauTarteCitron.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} tartelette${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTarteCitronColonnes(ligne) + htmlPrixCalories("tartecitron", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
-    return;
-  }
-
-  // Salade quinoa
-  if (recette === "saladequinoa" && data.tableauQuinoa) {
-    const ligne = data.tableauQuinoa.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauQuinoaColonnes(ligne) + htmlPrixCalories("saladequinoa", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–8).</p>`;
-    return;
-  }
-
-  // Lasagne : tableau pâte maison
-  if (recette === "lasagne" && data.tableauLasagne) {
-    const ligne = data.tableauLasagne.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauLasagneColonnes(ligne) + htmlPrixCalories("lasagne", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
-    return;
-  }
-
-  // Brioche : afficher les 4 boutons de version
-  if (recette === "brioche" && data.tableauBrioche) {
-    const ligne = data.tableauBrioche.find(l => l.nb === personnes);
-    const boutons = data.tableauBrioche.map(l => `
-      <button class="btn-brioche${l.nb === personnes ? " btn-brioche-actif" : ""}"
-        onclick="document.getElementById('personnes').value=${l.nb};calculer()">
-        ${l.label}
-      </button>`).join("");
-    document.getElementById("resultat").innerHTML =
-      `<div class="brioche-choix">${boutons}</div>` +
-      (ligne ? `<h3>${ligne.label}</h3>` + htmlTableauBriocheColonnes(ligne) + htmlPrixCalories("brioche", personnes) : "");
-    return;
-  }
-
-  // Crêpes : afficher uniquement la ligne sélectionnée en colonnes
-  if (recette === "crepes" && data.tableauPersonnes) {
-    const ligne = data.tableauPersonnes.find(l => l.nb === personnes);
-    document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCrepesColonnes(ligne) + htmlPrixCalories("crepes", personnes)
-      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
-    return;
-  }
-
-  // Recettes fixes (flan, clafoutis) : afficher les ingrédients tels quels
-  if (data.fixe && data.ingredientsFixes) {
-    let rows = data.ingredientsFixes.map(([k,v]) =>
-      `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
-    document.getElementById("resultat").innerHTML =
-      `<h3>Recette complète (~6 personnes)</h3>
-       <table class="tableau-patons tableau-colonnes"><tbody>${rows}</tbody></table>` +
-      htmlPrixCalories(recette, 6);
-    return;
-  }
-
-  // Autres recettes : calcul proportionnel classique
-  const ratio = personnes / data.base;
-  let html = `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>`;
-  for (const [nom, qte] of Object.entries(data.ingredients)) {
-    const qteCalculee = (qte * ratio).toFixed(1);
-    html += `<div class="ingredient"><span>${nom}</span><b>${qteCalculee}</b></div>`;
-  }
-  document.getElementById("resultat").innerHTML = html;
-}
-
-function afficherFiche(recette) {
-  const data = recettes[recette];
-  let html = `<div class="fiche"><h2>📖 ${recette}</h2><p>⏱ ${data.temps}</p><p>${data.niveau}</p><h3>Étapes :</h3><ol>`;
-  data.etapes.forEach(e => { html += `<li>${e.titre}</li>`; });
-  html += `</ol></div>`;
-  document.getElementById("ficheRecette").innerHTML = html;
-}
-
-
-
-// ==============================
-// PRIX & CALORIES PAR RECETTE
-// Prix moyens supermarché France 2025
-// ==============================
