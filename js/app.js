@@ -48,7 +48,11 @@ function chargerAccueilFavoris() {
 function chargerAccueilMenus() {
   const row = document.getElementById("accueil-menus-row");
   if (!row) return;
-  const hist = window.userProfile?.historiqueMenus || [];
+  // Lire depuis Firebase OU localStorage
+  let hist = window.userProfile?.historiqueMenus || [];
+  if (hist.length === 0) {
+    try { hist = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]"); } catch(e) {}
+  }
   if (hist.length === 0) {
     row.innerHTML = `<div class="accueil-empty">Génère ton premier menu dans l'onglet Menus !</div>`;
     return;
@@ -83,6 +87,20 @@ function chargerAccueilRecents() {
     return;
   }
   row.innerHTML = recents.slice(0, 20).map(key => miniCarte(key)).join("");
+}
+
+function effacerHistoriqueMenus() {
+  try {
+    localStorage.removeItem("cuisineJeje_histMenus");
+    // Purger aussi Firebase
+    if (window.currentUser && window.db && window.userProfile) {
+      window.userProfile.historiqueMenus = [];
+      window.db.collection("utilisateurs").doc(window.currentUser.uid)
+        .update({ historiqueMenus: [] }).catch(() => {});
+    }
+  } catch(e) {}
+  const row = document.getElementById("accueil-menus-row");
+  if (row) row.innerHTML = `<div class="accueil-empty">Génère ton premier menu dans l'onglet Menus !</div>`;
 }
 
 function effacerRecents() {
@@ -821,6 +839,19 @@ function sauvegarderMenus(menus, personnes, jours) {
     Object.keys(localStorage).forEach(k => {
       if (k.startsWith(STORAGE_KEY)) localStorage.removeItem(k);
     });
+    // Sauvegarder aussi en localStorage pour l'historique accueil (connecté ou non)
+    try {
+      const resume = menus.semaine?.slice(0, 3).map(j => ({
+        jour: j.jour,
+        midi: j.midi?.recette || j.midi,
+        soir: j.soir?.recette || j.soir
+      })) || [];
+      const today2 = new Date().toLocaleDateString("fr-FR");
+      const entry = { date: today2, jours: jours?.length || 5, resume };
+      const hist2 = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]");
+      const newHist2 = [entry, ...hist2.filter(h => h.date !== today2)].slice(0, 5);
+      localStorage.setItem("cuisineJeje_histMenus", JSON.stringify(newHist2));
+    } catch(e) {}
     // Sauvegarder aussi dans Firebase pour l'historique accueil
     if (window.currentUser && window.db) {
       const resume = menus.semaine?.slice(0, 3).map(j => ({
@@ -1539,6 +1570,75 @@ function getNomRecette(key) {
     "pizzavegetarienne":  "Pizza Végétarienne",
     "gnocchismaison":    "Gnocchis Maison",
     "noodlesWok":        "Nouilles Wok",
+    // Noms collés corrigés
+    "aperolspritzrosa":  "Spritz Aperol Rosé",
+    "canelebordelais":   "Cannelés Bordelais",
+    "carigrioantillais": "Cari Griot Antillais",
+    "crumblefruits":     "Crumble aux Fruits",
+    "dosakerdosai":      "Dosa / Dosai",
+    "gateaubasque":      "Gâteau Basque",
+    "gingerlemondrop":   "Ginger Lemon Drop",
+    "grilladelamnocciole": "Grillades Agneau Nocciole",
+    "lasagneverdure":    "Lasagnes aux Légumes",
+    "mafewestafricain":  "Maafé Ouest-Africain",
+    "misoramenleger":    "Miso Ramen Léger",
+    "mocktailberrybliss": "Mocktail Berry Bliss",
+    "mocktailcoconorchidee": "Mocktail Coco Orchidée",
+    "moelleuxchocolat":  "Moelleux au Chocolat",
+    "moquecabresil":     "Moqueca Brésilienne",
+    "painauchocolat":    "Pain au Chocolat",
+    "paprikashpoulet":   "Paprikash de Poulet",
+    "pekinduckeasy":     "Canard Laqué Pékinois",
+    "phovietnambien":    "Pho Vietnamien",
+    "pintxosbasques":    "Pintxos Basques",
+    "pizza4fromages":    "Pizza 4 Fromages",
+    "pizzabiancoverdure": "Pizza Bianca aux Légumes",
+    "pizzacalzone":      "Pizza Calzone",
+    "pizzadiavola":      "Pizza Diavola",
+    "pizzapatate":       "Pizza à la Patate",
+    "pizzapoivrons":     "Pizza aux Poivrons",
+    "pizzaprosciuttoroquette": "Pizza Prosciutto Roquette",
+    "pizzatruffe":       "Pizza à la Truffe",
+    "pizzareine":        "Pizza Reine",
+    "pouletbasquaise":   "Poulet à la Basquaise",
+    "pouletchicken65":   "Poulet Chicken 65",
+    "pouletrotiperfect": "Poulet Rôti Parfait",
+    "poulettandoori":    "Poulet Tandoori",
+    "poulpegrillebresil": "Poulpe Grillé Brésilien",
+    "punchfruitsrouges": "Punch aux Fruits Rouges",
+    "ramenjaponais":     "Ramen Japonais",
+    "rendangboeuf":      "Rendang de Bœuf",
+    "saumoncrouteherbes": "Saumon en Croûte d\'Herbes",
+    "souvlakiagneau":    "Souvlaki d\'Agneau",
+    "tacoshijosepastor": "Tacos al Pastor",
+    "tajinemouton":      "Tajine d\'Agneau",
+    "tequilasunrise":    "Tequila Sunrise",
+    "terrinecampagne":   "Terrine de Campagne",
+    "millefeuille":      "Mille-feuille",
+    "pouletCocoLemon":   "Poulet Coco Citron",
+    "pouletMisoGingembre": "Poulet Miso Gingembre",
+    "risottoMilanese":   "Risotto Milanese",
+    "soupeAziatique":    "Soupe Asiatique",
+    "poireauVinaigrette": "Poireaux Vinaigrette",
+    "veloutePoiron":     "Velouté de Potiron",
+    "camembertRoti":     "Camembert Rôti",
+    "tarteFlambee":      "Tarte Flambée",
+    "wafflesSales":      "Gaufres Salées",
+    "calamarsRomaine":   "Calamars à la Romaine",
+    "eggsBenedict":      "Œufs Bénédicte",
+    "porkBelly":         "Poitrine de Porc Caramélisée",
+    "wagyuBurger":       "Burger Wagyu",
+    "granolaMaison":     "Granola Maison",
+    "chocolatChaud":     "Chocolat Chaud",
+    "sconeBritish":      "Scones Britanniques",
+    "gazpachoMelon":     "Gaspacho de Melon",
+    "maffeSenegal":      "Maafé Sénégalais",
+    "choucroute":        "Choucroute Garnie",
+    "koreanfriedchicken": "Poulet Frit Coréen",
+    "soupeMinestrone":   "Minestrone",
+    "lemonPasta":        "Pâtes au Citron",
+    "crepesSucrées":     "Crêpes Sucrées",
+    "noodlesWok":        "Nouilles Sautées Wok",
     "bibimbap":          "Bibimbap",
     "gyozas":            "Gyozas",
     "sushimaison":       "Sushis Maison",
