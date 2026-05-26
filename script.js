@@ -66,11 +66,17 @@ function appliquerPreferencesVisuelles() {
     if (!key) return;
 
     const recette = typeof recettes !== 'undefined' ? recettes[key] : null;
-    const texte   = [
+    let texte = [
       key,
       recette?.description || '',
       carte.querySelector('h2')?.textContent || '',
     ].join(' ').toLowerCase();
+    // Ajouter les noms des ingrédients depuis les tableaux (clés)
+    Object.keys(recette || {}).forEach(k => {
+      if (k.startsWith('tableau') && Array.isArray(recette[k]) && recette[k].length > 0) {
+        texte += ' ' + Object.keys(recette[k][0]).join(' ').toLowerCase();
+      }
+    });
 
     // Trouver les mots problématiques
     const trouvés = [...motsExclus].filter(mot => texte.includes(mot));
