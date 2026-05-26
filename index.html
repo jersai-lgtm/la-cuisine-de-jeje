@@ -4358,6 +4358,36 @@ function afficherCourses() {
 }
 
 // Charger menus sauvegardés
+// Pré-cocher les tags du formulaire selon le profil utilisateur
+function appliquerProfilSurFormulaire() {
+  const prefs = window.userProfile?.preferences;
+  if (!prefs) return;
+
+  // Pré-cocher régimes dans les tags du formulaire semaine
+  const regimes = prefs.regimes || [];
+  document.querySelectorAll("#plan-form .plan-tag").forEach(btn => {
+    const val = btn.dataset.val;
+    if (regimes.includes(val)) {
+      btn.classList.add("plan-tag-active");
+    }
+  });
+
+  // Pré-remplir personnes depuis le foyer
+  const foyer = window.userProfile?.foyer;
+  if (foyer) {
+    const nb = (foyer.adultes||0) + (foyer.ados||0) + (foyer.enfants||0);
+    const inputP = document.getElementById("plan-personnes");
+    if (inputP && nb > 0) inputP.value = nb;
+  }
+
+  // Pré-remplir allergies dans le champ texte
+  const allergies = [...(prefs.allergies||[]), ...(prefs.allergiesCustom||[])];
+  const inputA = document.getElementById("plan-allergies");
+  if (inputA && allergies.length > 0 && !inputA.value) {
+    inputA.value = allergies.join(", ");
+  }
+}
+
 function chargerMenusAuDemarrage() {
   const saved = chargerMenusSauvegardes();
   if (saved && saved.menus) {
@@ -4569,6 +4599,8 @@ function afficherSection(section, btn) {
     if (accueilSec) accueilSec.style.display = "none";
     menuCats.style.display = "none";
     searchBar.style.display = "none";
+    // Pré-remplir le formulaire avec le profil
+    setTimeout(() => { if (typeof appliquerProfilSurFormulaire === "function") appliquerProfilSurFormulaire(); }, 200);
     document.getElementById("menu-categories").style.display = "none";
     document.getElementById("menu-pays").style.display = "none";
 
