@@ -3402,6 +3402,14 @@ gtag('config', 'G-390C5MY2SS');
     </div>
 
     <div class="plan-field">
+      <label>🍽️ Format des repas</label>
+      <div class="plan-tags">
+        <button class="plan-tag plan-tag-active" id="format-midi-soir" onclick="setFormatRepas('midi-soir', this)">🌞🌙 Midi &amp; Soir</button>
+        <button class="plan-tag" id="format-complet" onclick="setFormatRepas('complet', this)">🥗🍽️🍰 Repas complet</button>
+      </div>
+    </div>
+
+    <div class="plan-field">
       <label>📆 Jours à planifier</label>
       <div class="plan-tags" id="plan-jours-choix">
         <button class="plan-tag plan-tag-active" onclick="toggleTag(this)" data-val="Lundi">Lun</button>
