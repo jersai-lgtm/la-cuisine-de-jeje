@@ -11,7 +11,7 @@ const ALLERGENES_MOTS = {
   "moutarde":       ["moutarde"],
   "sésame":         ["sésame","sesame","tahini"],
   "sulfites":       ["vin","vinaigre","champagne","prosecco","riesling"],
-  "végétarien":     ["bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami","nduja","jarret","pork","bacon","pancetta","volaille","dinde","pintade","foie","rillettes","andouille","boudin","chipolata","pepperoni","coppa","bresaola","magret","confit","pulled","ribs","speck","ventreche"],
+  "végétarien":     ["bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami","nduja","jarret","pork","bacon","pancetta","volaille","dinde","pintade","foie","rillettes","andouille","boudin","chipolata","pepperoni","coppa","bresaola","magret","confit","pulled","ribs","speck","ventreche","saumon","thon","crevette","crevettes","anchois","poisson","cabillaud","dorade","truite","hareng","sardine","lieu","merlan","bar","sole","turbot","langoustine","homard","crabe","moule","huitre","seiche","calmar","poulpe","fruits de mer","surimi"],
   "pesco-végétarien": ["bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami","nduja","pork","bacon","pancetta","volaille","dinde","pintade","foie","andouille","boudin","pepperoni","coppa","bresaola","magret","confit","pulled","ribs"],
   "vegan": ["lait","fromage","beurre","crème","œuf","oeuf","oeufs","miel","mozzarella","parmesan","mascarpone","yaourt","ricotta","bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","saumon","thon","crevette","anchois","viande","bacon","pancetta","prosciutto","guanciale","salami","volaille","dinde","foie","rillettes","andouille","boudin","pepperoni"],
   "sans-gluten":    ["farine","blé","semoule","pâte","pain","biscuit","gaufre","crêpe","lasagne","spätzle","couscous"],
@@ -256,12 +256,17 @@ function chargerAccueilSuggestions() {
     });
   }
 
+  const _catsExclues = new Set(["boulangerie","cocktails","mocktails"]);
+  const _recExclues = new Set(["croissant","patepizza","patelasagne","financiers","tartetatinpommes","tartepistache","tartechocolatcaramel"]);
+
   let pool = toutes.filter(key => {
     if (exclus.has(key)) return false;
+    if (_recExclues.has(key)) return false;
+    const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
+    if (carte && _catsExclues.has(carte.dataset.cat)) return false;
     if (motsExclus.size === 0) return true;
     const r = recettes[key];
     let texte = [key, r?.description || ""].join(" ").toLowerCase();
-    // Lire les noms des ingrédients (clés des tableaux)
     Object.keys(r || {}).forEach(k => {
       if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
         texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
