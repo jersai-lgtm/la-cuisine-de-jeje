@@ -1315,3 +1315,65 @@ select, input[type="number"] {
 }
 .accueil-menu-repas:hover { background: rgba(255,77,136,.15); color: #fff; }
 .accueil-menu-repas span { font-size: 12px; margin-right: 4px; }
+
+/* Bouton reset menus */
+.plan-reset-btn {
+  width: 100%;
+  background: rgba(255,255,255,.06);
+  color: #888;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: .2s;
+}
+.plan-reset-btn:hover {
+  background: rgba(255,80,80,.15);
+  color: #ff6b6b;
+  border-color: rgba(255,80,80,.3);
+}
+
+/* ==============================
+   FORMAT REPAS COMPLET
+============================== */
+.plan-repas-col {
+  flex: 1;
+  background: rgba(255,255,255,.06);
+  border-radius: 14px;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.plan-repas-sous {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .2s;
+  margin-bottom: 6px;
+  border: 1px solid rgba(255,255,255,.05);
+}
+.plan-repas-sous:hover { background: rgba(255,77,136,.15); border-color: rgba(255,77,136,.3); }
+.plan-sous-label {
+  font-size: 10px;
+  color: #ff8fb3;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.plan-repas-nom {
+  font-size: 12px;
+  font-weight: 600;
+  color: #eee;
+  text-align: center;
+}
+.plan-repas-note {
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+  font-style: italic;
+}
