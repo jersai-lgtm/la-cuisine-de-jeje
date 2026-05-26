@@ -63,10 +63,65 @@ function chargerAccueilMenus() {
     return;
   }
 
-  // Afficher comme des mini-cartes de type recette — une par jour
-  // Cliquer sur une carte ouvre la section menus
-  const navBtn = document.querySelector(".nav-btn[onclick*=menus]") || document.querySelector("[data-section=menus]");
+  const goMenus = () => afficherSection('planificateur', document.querySelector('.nav-btn[onclick*=planificateur]'));
+
+  // Détecter le format : repas complet ou simple
+  const isComplet = semaine[0]?.midi?.plat !== undefined;
+  // Détecter si c'est un menu thématique (a une propriété theme)
+  const isTheme = dernier?.menu?.theme !== undefined;
+
+  if (isTheme) {
+    // Menu thématique — afficher les plats
+    const plats = dernier.menu.menu || [];
+    row.innerHTML = plats.map(p => {
+      const key = p.recette || "";
+      const nom = getNomRecette(key) || key || "—";
+      const emoji = key ? (getEmoji(key) || "🍽️") : "🍽️";
+      return `
+      <div class="accueil-menu-card" onclick="goMenus()">
+        <div class="accueil-menu-day">${p.categorie || "Plat"}</div>
+        <div class="accueil-menu-item">
+          <span>${emoji}</span>
+          <div>
+            <div class="menu-item-nom">${nom}</div>
+          </div>
+        </div>
+      </div>`;
+    }).join("");
+    return;
+  }
+
   row.innerHTML = semaine.map(j => {
+    if (isComplet) {
+      // Format repas complet : entrée / plat / dessert
+      const genSous = (r, icone) => {
+        if (!r) return "";
+        const key = r.recette || "";
+        const nom = getNomRecette(key) || key || "—";
+        const emoji = key ? (getEmoji(key) || "🍽️") : "🍽️";
+        return `<div class="accueil-menu-item">
+          <span>${emoji}</span>
+          <div>
+            <div class="menu-moment">${icone}</div>
+            <div class="menu-item-nom">${nom}</div>
+          </div>
+        </div>`;
+      };
+      return `
+      <div class="accueil-menu-card" onclick="goMenus()">
+        <div class="accueil-menu-day">${j.jour}</div>
+        <div style="font-size:9px;color:#ff8fb3;font-weight:700;margin-bottom:4px">☀️ Midi</div>
+        ${genSous(j.midi?.entree, "🥗 Entrée")}
+        ${genSous(j.midi?.plat, "🍽️ Plat")}
+        ${genSous(j.midi?.dessert, "🍰 Dessert")}
+        <div style="font-size:9px;color:#ff8fb3;font-weight:700;margin:4px 0">🌙 Soir</div>
+        ${genSous(j.soir?.entree, "🥗 Entrée")}
+        ${genSous(j.soir?.plat, "🍽️ Plat")}
+        ${genSous(j.soir?.dessert, "🍰 Dessert")}
+      </div>`;
+    }
+
+    // Format simple midi/soir
     const midiKey = j.midi?.recette || j.midi || "";
     const soirKey = j.soir?.recette || j.soir || "";
     const midiNom = getNomRecette(midiKey) || midiKey || "—";
@@ -74,7 +129,7 @@ function chargerAccueilMenus() {
     const emoji1 = midiKey ? (getEmoji(midiKey) || "🍽️") : "🍽️";
     const emoji2 = soirKey ? (getEmoji(soirKey) || "🍽️") : "🍽️";
     return `
-    <div class="accueil-menu-card" onclick="afficherSection('menus', document.querySelector('.nav-btn[onclick*=menus]'))">
+    <div class="accueil-menu-card" onclick="goMenus()">
       <div class="accueil-menu-day">${j.jour}</div>
       <div class="accueil-menu-item">
         <span>${emoji1}</span>
