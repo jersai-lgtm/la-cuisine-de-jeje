@@ -173,6 +173,14 @@ window.sauvegarderProfilComplet = async function() {
 
   await window.sauvegarderProfil({ foyer, preferences });
 
+  // Purger le cache des menus et suggestions (régimes ont changé)
+  try {
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith("cuisineJeje_menus_") || k.startsWith("suggestions_")) {
+        localStorage.removeItem(k);
+      }
+    });
+  } catch(e) {}
   // Rafraîchir les badges sur les cartes
   if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
   const btn = document.getElementById("btn-sauvegarder-profil");
