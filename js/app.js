@@ -48,7 +48,6 @@ function chargerAccueilFavoris() {
 function chargerAccueilMenus() {
   const row = document.getElementById("accueil-menus-row");
   if (!row) return;
-  // Lire depuis Firebase OU localStorage
   let hist = window.userProfile?.historiqueMenus || [];
   if (hist.length === 0) {
     try { hist = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]"); } catch(e) {}
@@ -57,24 +56,34 @@ function chargerAccueilMenus() {
     row.innerHTML = `<div class="accueil-empty">Génère ton premier menu dans l'onglet Menus !</div>`;
     return;
   }
-  // Prendre le menu le plus récent (index 0)
   const dernier = hist[0];
   const semaine = dernier?.menu?.semaine || [];
   if (semaine.length === 0) {
     row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`;
     return;
   }
-  row.innerHTML = semaine.slice(0, 5).map(j => `
-    <div class="accueil-menu-jour">
-      <div class="accueil-menu-jour-label">${j.jour}</div>
-      <div class="accueil-menu-repas" onclick="ouvrirFiche('${j.midi?.recette}','')">
-        <span>🌞</span> ${getNomRecette(j.midi?.recette) || j.midi?.recette || "—"}
+  // Afficher comme des mini-cartes par jour
+  row.innerHTML = semaine.map(j => {
+    const midiKey = j.midi?.recette || j.midi || "";
+    const soirKey = j.soir?.recette || j.soir || "";
+    const midiNom = getNomRecette(midiKey) || midiKey || "—";
+    const soirNom = getNomRecette(soirKey) || soirKey || "—";
+    const midiEmoji = midiKey && typeof getEmoji === "function" ? getEmoji(midiKey) : "🍽️";
+    const soirEmoji = soirKey && typeof getEmoji === "function" ? getEmoji(soirKey) : "🍽️";
+    return `<div class="accueil-menu-card">
+      <div class="accueil-menu-day">${j.jour}</div>
+      <div class="accueil-menu-item" onclick="afficherSection('menus',document.querySelector('[data-section=menus]'))">
+        <span class="menu-item-emoji">${midiEmoji}</span>
+        <span class="menu-item-label">☀️</span>
+        <span class="menu-item-nom">${midiNom}</span>
       </div>
-      <div class="accueil-menu-repas" onclick="ouvrirFiche('${j.soir?.recette}','')">
-        <span>🌙</span> ${getNomRecette(j.soir?.recette) || j.soir?.recette || "—"}
+      <div class="accueil-menu-item" onclick="afficherSection('menus',document.querySelector('[data-section=menus]'))">
+        <span class="menu-item-emoji">${soirEmoji}</span>
+        <span class="menu-item-label">🌙</span>
+        <span class="menu-item-nom">${soirNom}</span>
       </div>
-    </div>
-  `).join("");
+    </div>`;
+  }).join("");
 }
 
 // Dernières recettes vues
