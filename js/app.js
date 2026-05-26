@@ -1009,41 +1009,11 @@ async function genererMenus() {
     "- Sois CRÉATIF et VARIÉ\n\n" +
     "Réponds UNIQUEMENT en JSON valide :\n" + structureJSON;
 
-  try {
-    // Appel via proxy CORS
-    const GAS_URL = "https://script.google.com/macros/s/AKfycbwfuONnrjBqVvO4W9mv_4grMnDFkf9_7JZ6Y9VLSueUt1U5YnPFTYQ7IBwpoVqOzrhBzQ/exec";
-    const proxyUrl = "https://corsproxy.io/?" + encodeURIComponent(GAS_URL);
-    const response = await fetch(proxyUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ prompt: prompt })
-    });
-    const data = await response.json();
-    const text = data.content?.[0]?.text || "";
-    const clean = text.replace(/```json|```/g, "").trim();
-    menusSemaine = JSON.parse(clean);
-
-    // DEBUG
-    console.log("=== DEBUG RÉGIME ===");
-    console.log("tagsFinaux:", tagsFinaux);
-    console.log("Menu brut IA:", JSON.stringify(menusSemaine?.semaine?.map(j=>({jour:j.jour,midi:j.midi?.recette,soir:j.soir?.recette}))));
-
-    menusSemaine = normaliserClesMenus(menusSemaine);
-    menusSemaine = corrigerDoublons(menusSemaine, joursSelectionnes, tags, allergies);
-    menusSemaine = validerRegimeMenus(menusSemaine, tagsFinaux, allergiesFinales);
-
-    console.log("Menu après validation:", JSON.stringify(menusSemaine?.semaine?.map(j=>({jour:j.jour,midi:j.midi?.recette,soir:j.soir?.recette}))));
-
-    sauvegarderMenus(menusSemaine, personnes, joursSelectionnes);
-    afficherMenusSemaine(menusSemaine, parseInt(personnes));
-
-  } catch(err) {
-    console.log("IA indispo, génération aléatoire", err);
-    menusSemaine = genererMenusAleatoires(joursSelectionnes, tagsFinaux, allergiesFinales);
-    menusSemaine = validerRegimeMenus(menusSemaine, tagsFinaux, allergiesFinales);
-    sauvegarderMenus(menusSemaine, personnes, joursSelectionnes);
-    afficherMenusSemaine(menusSemaine, parseInt(personnes));
-  }
+  // Génération intelligente avec variété de cuisines
+  menusSemaine = genererMenusAleatoires(joursSelectionnes, tagsFinaux, allergiesFinales);
+  menusSemaine = validerRegimeMenus(menusSemaine, tagsFinaux, allergiesFinales);
+  sauvegarderMenus(menusSemaine, personnes, joursSelectionnes);
+  afficherMenusSemaine(menusSemaine, parseInt(personnes));
 
   btn.textContent = "✨ Générer mes menus";
   btn.disabled = false;
@@ -1217,21 +1187,23 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
     // Boulangerie
     "croissant","patepizza","patelasagne","financiers","painbaguette","paindemie",
     "patefeuilletee","patebrisee","patesablee","painburger","galettetacos",
-    "sconeBritish","naan","bananabread",
-    // Desserts/sucreries
+    "sconeBritish","naan","bananabread","brioche","painlevain",
+    // Petit-déjeuner / pas repas principal
+    "overnightoats","granolaMaison","chocolatChaud","smoothiebowl","bowlacai",
+    "pancakesproteine","energyballs","smoothiemangopassion","jusPastequeMenuthe",
+    "citronadementhe","limonademaison",
+    // Desserts
     "tartetatinpommes","tartepistache","tartechocolatcaramel","madeleine","muffins",
-    "crepes","granolaMaison","chocolatChaud","energyballs","overnightoats",
-    "baklava","churros","cremebrulee","mousseauchocolat","fondantchocolat",
-    "ileflottante","verrinetiramisu","tiramisufraise","pancakesproteine",
-    "parisbrestreinterpretation","tartecitron","tarteaupommes","coulantchocolat",
-    "verrineframboisechocolat","tartechocolatcaramel","smoothiebowl","bowlacai",
+    "crepes","baklava","churros","cremebrulee","mousseauchocolat","fondantchocolat",
+    "ileflottante","verrinetiramisu","tiramisufraise","parisbrestreinterpretation",
+    "tartecitron","tarteaupommes","verrineframboisechocolat","coulantchocolat",
+    "tiramisufraise","mousseauchocolat","crepesbretonnes",
     // Cocktails/mocktails
     "mojito","margarita","cosmopolitan","spritz","sangria","pinacolada","daiquiri",
-    "whiskysour","virginmojito","limonademaison","smoothiemangopassion",
-    "citronadementhe","jusPastequeMenuthe","virginpinacolada","mojitorose","negroni",
-    "moscowmule","pornstarmartini","hugospritz","cherryblossommocktail","oldFashioned",
-    "gintoniqmaison","shrubframboisebasilic","mocktailcoconananas",
-    "coktailcosmopolitan","mocktailmentheagume"
+    "whiskysour","virginmojito","mojitorose","negroni","moscowmule","pornstarmartini",
+    "hugospritz","cherryblossommocktail","oldFashioned","gintoniqmaison",
+    "shrubframboisebasilic","mocktailcoconananas","coktailcosmopolitan",
+    "mocktailmentheagume","virginpinacolada"
   ]);
 
   // Filtrer les recettes compatibles
@@ -1249,10 +1221,44 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
     return ![...motsInterdits].some(m => texte.includes(m));
   });
 
-  // Mélanger et sélectionner
+  // Grouper par cuisine pour varier
+  const cuisines = {
+    francaise: pool.filter(k => {
+      const t = (k + " " + (recettes[k]?.description||"")).toLowerCase();
+      return t.includes("français") || t.includes("france") || ["gratindauphinois","soupeaoignon","ratatouille","quichelorraine","poireauVinaigrette","veloutecourgette","veloutePoiron","camembertRoti"].includes(k);
+    }),
+    italienne: pool.filter(k => ["risotto","risottoprimavera","risottoMilanese","lasagneviande","gnocchismaison","pizzamargherita","pizzavegetarienne","pizzabresilienne","lemonPasta","spaetzle"].includes(k)),
+    asiatique: pool.filter(k => {
+      const t = (k + " " + (recettes[k]?.description||"")).toLowerCase();
+      return t.includes("asiat") || t.includes("japonais") || t.includes("thaï") || t.includes("coréen") || t.includes("wok") || ["padthai","sushimaison","bibimbap","gyozas","tom_yam","sobejaponais","noodlesWok","tofusaute","soupemiso","pouletMisoGingembre","pouletteriyaki","curryverthai","koreanfriedchicken","soupeAziatique"].includes(k);
+    }),
+    mondiale: pool.filter(k => ["couscous","moussaka","paella","dalindien","hariramarocaine","soupeharira","maffeSenegal","souvlaki","taboule","tabulemaison","shakshuka","pierogi","falafel","humous","houmous","gyozas","bibimbap"].includes(k))
+  };
+
+  // Mélanger chaque groupe
+  Object.keys(cuisines).forEach(c => { cuisines[c] = shuffleArray(cuisines[c]); });
+  
+  // Pool global mélangé
   const melange = shuffleArray([...pool]);
   const utilises = new Set();
+  
+  // Alterner les cuisines
+  let cuisineIdx = { francaise:0, italienne:0, asiatique:0, mondiale:0 };
+  const cuisineOrder = shuffleArray(["francaise","italienne","asiatique","mondiale","francaise","italienne","asiatique","mondiale","francaise","italienne"]);
+  let cuisineCount = 0;
+  
   const pick = () => {
+    // Essayer d'alterner les cuisines
+    if (cuisineCount < cuisineOrder.length) {
+      const cuisine = cuisineOrder[cuisineCount];
+      cuisineCount++;
+      const arr = cuisines[cuisine];
+      if (arr) {
+        const r = arr.find(k => !utilises.has(k));
+        if (r) { utilises.add(r); return r; }
+      }
+    }
+    // Fallback : pool global
     const r = melange.find(k => !utilises.has(k));
     if (r) utilises.add(r);
     return r || melange[0] || "risotto";
