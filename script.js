@@ -13,7 +13,7 @@ const ALLERGENES_MOTS = {
   "sulfites":       ["vin","vinaigre","champagne","prosecco","riesling"],
   "végétarien":     ["bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami","nduja","jarret","pork","bacon","pancetta"],
   "pesco-végétarien": ["bœuf","veau","porc","poulet","agneau","canard","jambon","lardons","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami"],
-  "vegan":          ["lait","fromage","beurre","crème","œuf","oeuf","oeufs","miel","mozzarella","parmesan","mascarpone","yaourt","bœuf","veau","porc","poulet","agneau","canard","jambon","lardons","saumon","thon","crevette","anchois"],
+  "vegan":          ["lait","fromage","beurre","crème","œuf","oeuf","oeufs","miel","mozzarella","parmesan","mascarpone","yaourt","bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","saumon","thon","crevette","anchois","viande","bacon","pancetta","prosciutto","guanciale","salami","volaille","dinde"],
   "sans-gluten":    ["farine","blé","semoule","pâte","pain","biscuit","gaufre","crêpe","lasagne","spätzle","couscous"],
   "sans-lactose":   ["lait","fromage","beurre","crème","yaourt","mascarpone","mozzarella","parmesan","gruyère","cheddar","ricotta"],
   "protéiné":       [],
