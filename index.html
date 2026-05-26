@@ -3830,27 +3830,30 @@ function toggleTag(btn) {
 function sauvegarderMenus(menus, personnes, jours) {
   try {
     const today = new Date().toLocaleDateString("fr-FR");
-    const data  = { menus, personnes, jours, date: today };
-    // localStorage = persiste entre rechargements, clé avec date du jour
-    localStorage.setItem(STORAGE_KEY + "_" + today, JSON.stringify(data));
-    // Garder aussi sessionStorage pour compatibilité
-    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    const uid = window.currentUser?.uid || "anon";
+    const regimes = (window.userProfile?.preferences?.regimes || []).sort().join("-");
+    // Clé unique : date + uid + régimes → invalide automatiquement si profil change
+    const key = STORAGE_KEY + "_" + today + "_" + uid + "_" + regimes;
+    const data = { menus, personnes, jours, date: today };
+    sessionStorage.setItem(key, JSON.stringify(data));
+    // Purger les anciennes clés localStorage
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith(STORAGE_KEY)) localStorage.removeItem(k);
+    });
   } catch(e) {}
 }
 
 function chargerMenusSauvegardes() {
   try {
     const today = new Date().toLocaleDateString("fr-FR");
-    // Chercher d'abord le menu du jour dans localStorage
-    const rawLocal = localStorage.getItem(STORAGE_KEY + "_" + today);
-    if (rawLocal) return JSON.parse(rawLocal);
-    // Sinon sessionStorage
-    const raw = sessionStorage.getItem(STORAGE_KEY);
+    const uid = window.currentUser?.uid || "anon";
+    const regimes = (window.userProfile?.preferences?.regimes || []).sort().join("-");
+    const key = STORAGE_KEY + "_" + today + "_" + uid + "_" + regimes;
+    const raw = sessionStorage.getItem(key);
     if (!raw) return null;
     const data = JSON.parse(raw);
-    // Vérifier que c'est bien le menu d'aujourd'hui
     if (data.date === today) return data;
-    return null; // Menu périmé
+    return null;
   } catch(e) { return null; }
 }
 
@@ -3932,7 +3935,11 @@ async function genererMenus() {
     });
     return ![...motsExclusion].some(mot => texte.includes(mot));
   });
-  const recettesDispos = recettesFiltrees.join(", ");
+  // Envoyer clé + nom pour aider l'IA à retourner la bonne clé
+  const recettesDispos = recettesFiltrees.map(k => {
+    const nom = (typeof getNomRecette === 'function') ? getNomRecette(k) : k;
+    return nom !== k ? `${k} (${nom})` : k;
+  }).join(", ");
 
   btn.textContent = "⏳ Génération en cours...";
   btn.disabled = true;
@@ -3975,12 +3982,12 @@ ${preferences} ${eviter}${instructionsRegimeFinal}
 Recettes disponibles : ${recettesDispos}
 
 RÈGLES STRICTES :
-- Utilise UNIQUEMENT des recettes de la liste ci-dessus (ce sont déjà les recettes filtrées selon les allergènes)
-- AUCUNE répétition de recette sur toute la semaine (ni midi-soir du même jour, ni d'un jour à l'autre)
+- Utilise UNIQUEMENT les recettes de la liste ci-dessus (déjà filtrées selon le régime)
+- Dans le JSON, le champ "recette" doit contenir la CLÉ exacte (ex: "wrappoulet", pas "Wrap au Poulet")
+- AUCUNE répétition sur toute la semaine
 - Une recette ne peut apparaître QU'UNE SEULE FOIS sur les 14 repas
-- RESPECTE ABSOLUMENT les allergies et intolérances listées — c'est une question de santé
-- RESPECTE ABSOLUMENT le régime alimentaire indiqué — c'est non négociable
-- Les recettes disponibles ont déjà été filtrées selon le régime, choisis uniquement parmi elles
+- RESPECTE ABSOLUMENT le régime alimentaire — c'est non négociable
+- NE JAMAIS inventer une recette qui n'est pas dans la liste disponible
 - Varie les cuisines (française, italienne, asiatique, mexicaine...)
 - Équilibre les repas (pas que des desserts!)
 - Midi : plutôt salades, plats légers, healthy
@@ -4050,6 +4057,33 @@ function pickUnique(pool, n) {
 
 
 // Validation post-génération : remplacer les recettes incompatibles avec le régime
+// Normaliser les clés retournées par l'IA (nom → clé)
+function normaliserClesMenus(menus) {
+  if (!menus?.semaine) return menus;
+  // Construire index nom→clé
+  const nomVersClé = {};
+  if (typeof nomsAffichage !== "undefined") {
+    Object.entries(nomsAffichage).forEach(([cle, nom]) => {
+      nomVersClé[nom.toLowerCase()] = cle;
+      nomVersClé[cle.toLowerCase()] = cle;
+    });
+  }
+  menus.semaine.forEach(jour => {
+    ["midi", "soir"].forEach(moment => {
+      if (!jour[moment]?.recette) return;
+      const val = jour[moment].recette;
+      // Si la clé n'existe pas dans recettes{}, chercher par nom
+      if (typeof recettes !== "undefined" && !recettes[val]) {
+        const cle = nomVersClé[val.toLowerCase()];
+        if (cle && recettes[cle]) {
+          jour[moment].recette = cle;
+        }
+      }
+    });
+  });
+  return menus;
+}
+
 function validerRegimeMenus(menus, regimes, allergies) {
   if (!menus?.semaine) return menus;
 
@@ -4445,6 +4479,24 @@ function afficherCourses() {
 }
 
 // Charger menus sauvegardés
+// Vider le cache des menus
+function viderCacheMenus(btn) {
+  try {
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith("cuisineJeje_menus") || k.startsWith("suggestions_")) {
+        localStorage.removeItem(k);
+      }
+    });
+    sessionStorage.removeItem("cuisineJeje_menus");
+  } catch(e) {}
+  // Réafficher le formulaire
+  document.getElementById("plan-form").style.display = "block";
+  document.getElementById("plan-result").style.display = "none";
+  const planJours = document.getElementById("plan-jours");
+  if (planJours) planJours.innerHTML = "";
+  if (btn) { btn.textContent = "✅ Effacé !"; setTimeout(() => btn.textContent = "🗑️ Effacer le menu actuel", 2000); }
+}
+
 // Pré-cocher les tags du formulaire selon le profil utilisateur
 function appliquerProfilSurFormulaire() {
   const prefs = window.userProfile?.preferences;
