@@ -415,6 +415,14 @@ function choisirRecette(nom) {
   const data = recettes[nom];
   if (!data) return;
 
+  // Sauvegarder dans les recettes vues récemment
+  try {
+    let recents = window._recentsVus || [];
+    recents = [nom, ...recents.filter(k => k !== nom)].slice(0, 20);
+    window._recentsVus = recents;
+    localStorage.setItem("recentsVus", JSON.stringify(recents));
+  } catch(e) {}
+
   const inputPersonnes = document.getElementById("personnes");
   const personnes = inputPersonnes ? parseInt(inputPersonnes.value) || data.base : data.base;
   const ratio = personnes / data.base;
