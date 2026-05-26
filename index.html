@@ -4187,57 +4187,53 @@ function toutesSaladesDispos() {
   return ["saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison","saladequinoa","saladeavocatcrevettes","saladelentilles","saladepoischiches","saladerizmediterranee","gaspacho","buddhaBowl","smoothiebowl","houmous","overnightoats","wrappoulet","croquemonsieur","shakshuka","veloutelegumes","soupemiso","misoramenleger","semoulecourgette"];
 }
 
-function genererMenusAleatoires(joursSelectionnes, tags, allergies) {
+function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
+  // Construire mots interdits depuis régimes et allergies
+  const motsInterdits = new Set();
+  (regimes || []).forEach(r => {
+    (ALLERGENES_MOTS[r] || []).forEach(m => motsInterdits.add(m.toLowerCase()));
+  });
+  (allergies || []).forEach(a => {
+    (ALLERGENES_MOTS[a] || [a]).forEach(m => motsInterdits.add(m.toLowerCase()));
+  });
+
+  // Catégories à exclure des menus
+  const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts"]);
+
+  // Filtrer les recettes compatibles
+  const pool = Object.keys(recettes).filter(key => {
+    const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
+    if (carte && catsExclues.has(carte.dataset.cat)) return false;
+    if (motsInterdits.size === 0) return true;
+    const r = recettes[key];
+    let texte = (key + " " + (r?.description || "")).toLowerCase();
+    Object.keys(r || {}).forEach(k => {
+      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
+        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
+      }
+    });
+    return ![...motsInterdits].some(m => texte.includes(m));
+  });
+
+  // Mélanger et sélectionner
+  const melange = shuffleArray([...pool]);
+  const utilises = new Set();
+  const pick = () => {
+    const r = melange.find(k => !utilises.has(k));
+    if (r) utilises.add(r);
+    return r || melange[0] || "risotto";
+  };
+
   const jours = joursSelectionnes;
-  const n = jours.length;
-
-  const tousPlats = [
-    // Plats français
-    "lasagne","boeufbourguignon","gratindauphinois","quichelorraine","soupeaoignon",
-    "potaufeu","saumongravlax","pouletcitronthym","risotto","risottoprimavera",
-    // Plats monde
-    "couscous","moussaka","paella","butterchicken","souvlaki","dalindien",
-    "rizcantonnais","hariramarocaine","shakshuka","padthai","currypouletcoco",
-    "tacosmaison","bolognaisemaison","burgermaison","salmonteriyaki",
-    // Healthy / autres
-    "curryledumes","wrappoulet","soupemiso","veloutelegumes","naan",
-    // Encas pouvant faire plat
-    "croquemonsieur","pancakes","shakshuka"
-  ];
-  const toutesSalades = [
-    // Salades composées
-    "saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison",
-    "saladequinoa","saladeavocatcrevettes","saladelentilles","saladepoischiches",
-    "saladerizmediterranee",
-    // Healthy légers
-    "gaspacho","buddhaBowl","smoothiebowl","houmous","overnightoats",
-    "smoothiemangopassion","bowlacai","veloutelegumes","soupemiso","wrappoulet"
-  ];
-
-  // Filtrer healthy si tag actif
-  const platsDispos = tags.includes("healthy")
-    ? tousPlats.filter(r => ["curryledumes","wrappoulet","soupemiso","veloutelegumes","salmonteriyaki","dalindien","padthai","buddhaBowl"].includes(r))
-    : tousPlats;
-
-  // Piocher n plats ET n salades UNIQUES — garantit 0 répétition même entre midi et soir
-  const platsChoisis   = pickUnique(platsDispos, n);
-  // Exclure du pool salades les plats déjà choisis pour le soir
-  const saladesDispos = toutesSalades.filter(r => !platsChoisis.includes(r));
-  const saladesChoisies = pickUnique(saladesDispos, n);
-
-  const notesPlats = ["Parfait pour ce soir ! 🍽️","Un régal assuré ✨","Réconfortant et savoureux 😋","La recette star de la semaine 🌟","Simple et délicieux 👌","Un classique revisité 🍴","Pour se faire plaisir 🎉","Rapide et savoureux ⚡","Dépaysement garanti 🌍","Un incontournable ! 🏆"];
-  const notesSalades = ["Léger et frais 🌿","Parfait pour le midi ☀️","Coloré et vitaminé 🥗","Équilibré et gourmand 💚","Le midi idéal 🌸","Savoureux et léger ✨","Plein de fraîcheur 🌊","Pour bien commencer 🌿","Rapide et délicieux ⚡","Vitaminé et gourmand 🌈"];
-  const notesShuffled = shuffleArray(notesPlats);
-  const saladesNotesShuffled = shuffleArray(notesSalades);
-
   return {
-    semaine: jours.map((jour, i) => ({
+    semaine: jours.map(jour => ({
       jour,
-      midi: { recette: saladesChoisies[i], note: saladesNotesShuffled[i % saladesNotesShuffled.length] },
-      soir: { recette: platsChoisis[i],    note: notesShuffled[i % notesShuffled.length] }
+      midi: { recette: pick(), note: "Bon appétit ! 🍽️" },
+      soir: { recette: pick(), note: "Régal assuré ! ✨" }
     }))
   };
 }
+
 
 function getNomRecette(key) {
   const nomsAffichage = {
