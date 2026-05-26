@@ -42,7 +42,7 @@ gtag('config', 'G-390C5MY2SS');
   <div class="header-top">
     <div>
       <h1>👨‍🍳 La Cuisine de Jéjé</h1>
-      <p id="nb-recettes">🍽️ 235 recettes</p>
+      <p id="nb-recettes">🍽️ 264 recettes</p>
     </div>
     <div id="zone-utilisateur">
       <button class="btn-connexion" onclick="ouvrirModalAuth()">👤 Connexion</button>
@@ -69,12 +69,18 @@ gtag('config', 'G-390C5MY2SS');
 
 <!-- SOUS-MENU CATÉGORIES -->
 <div class="menu-pays" id="menu-categories" style="display:none">
+  <button class="pays-btn" onclick="filtrerCategorie('plats')">🍽️ Plats</button>
+  <button class="pays-btn" onclick="filtrerCategorie('soupes')">🍲 Soupes & Entrées</button>
+  <button class="pays-btn" onclick="filtrerCategorie('entrees')">🥗 Entrées</button>
+  <button class="pays-btn" onclick="filtrerCategorie('salades')">🥙 Salades</button>
+  <button class="pays-btn" onclick="filtrerCategorie('healthy')">💚 Healthy</button>
+  <button class="pays-btn" onclick="filtrerCategorie('brunch')">🍳 Brunch</button>
+  <button class="pays-btn" onclick="filtrerCategorie('encas')">🥪 Encas</button>
   <button class="pays-btn" onclick="filtrerCategorie('pizzas')">🍕 Pizzas</button>
   <button class="pays-btn" onclick="filtrerCategorie('desserts')">🍰 Desserts</button>
   <button class="pays-btn" onclick="filtrerCategorie('boulangerie')">🥖 Boulangerie</button>
-  <button class="pays-btn" onclick="filtrerCategorie('plats')">🍝 Plats</button>
-  <button class="pays-btn" onclick="filtrerCategorie('encas')">🥪 Encas</button>
-  <button class="pays-btn" onclick="filtrerCategorie('healthy')">🥗 Healthy</button>
+  <button class="pays-btn" onclick="filtrerCategorie('cocktails')">🍹 Cocktails</button>
+  <button class="pays-btn" onclick="filtrerCategorie('mocktails')">🧃 Mocktails</button>
   <button class="pays-btn" onclick="filtrerCategorie('salades')">🥙 Salades</button>
   <button class="pays-btn" onclick="filtrerCategorie('cocktails')">🍹 Cocktails (avec alcool)</button>
   <button class="pays-btn" onclick="filtrerCategorie('mocktails')">🥤 Cocktails (sans alcool)</button>
@@ -949,7 +955,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('saumongravlax', 'calc-saumongravlax')">
+  <div class="carte" data-cat="entrees" data-pays="france" onclick="ouvrirFiche('saumongravlax', 'calc-saumongravlax')">
     <img src="images/saumongravlax.webp" alt="Saumon Gravlax">
     <div class="carte-info">
       <h2>🐟 Saumon Gravlax</h2>
@@ -961,7 +967,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="liban" onclick="ouvrirFiche('shakshuka', 'calc-shakshuka')">
+  <div class="carte" data-cat="brunch" data-pays="liban" onclick="ouvrirFiche('shakshuka', 'calc-shakshuka')">
     <img src="images/shakshuka.webp" alt="Shakshuka">
     <div class="carte-info">
       <h2>🍳 Shakshuka</h2>
@@ -1047,7 +1053,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('soupeaoignon', 'calc-soupeaoignon')">
+  <div class="carte" data-cat="soupes" data-pays="france" onclick="ouvrirFiche('soupeaoignon', 'calc-soupeaoignon')">
     <img src="images/soupeaoignon.webp" alt="Soupe à l'Oignon">
     <div class="carte-info">
       <h2>🧅 Soupe à l'Oignon</h2>
@@ -1083,7 +1089,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="maroc" onclick="ouvrirFiche('hariramarocaine', 'calc-hariramarocaine')">
+  <div class="carte" data-cat="soupes" data-pays="maroc" onclick="ouvrirFiche('hariramarocaine', 'calc-hariramarocaine')">
     <img src="images/hariramarocaine.webp" alt="Harira Marocaine">
     <div class="carte-info">
       <h2>🍲 Harira Marocaine</h2>
@@ -1751,7 +1757,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="thailande" onclick="ouvrirFiche('tom_yam', 'calc-tom_yam')">
+  <div class="carte" data-cat="soupes" data-pays="thailande" onclick="ouvrirFiche('tom_yam', 'calc-tom_yam')">
     <img src="images/tom_yam.webp" alt="Soupe Tom Yam">
     <div class="carte-info">
       <h2>🍲 Soupe Tom Yam</h2>
@@ -1775,7 +1781,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="encas" data-pays="inde" onclick="ouvrirFiche('pouletchicken65', 'calc-pouletchicken65')">
+  <div class="carte" data-cat="plats" data-pays="inde" onclick="ouvrirFiche('pouletchicken65', 'calc-pouletchicken65')">
     <img src="images/pouletchicken65.webp" alt="Chicken 65">
     <div class="carte-info">
       <h2>🌶️ Chicken 65</h2>
@@ -1811,7 +1817,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="liban" onclick="ouvrirFiche('shakshukaverte', 'calc-shakshukaverte')">
+  <div class="carte" data-cat="brunch" data-pays="liban" onclick="ouvrirFiche('shakshukaverte', 'calc-shakshukaverte')">
     <img src="images/shakshukaverte.webp" alt="Shakshuka Verte">
     <div class="carte-info">
       <h2>🥬 Shakshuka Verte</h2>
@@ -1823,7 +1829,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="encas" data-pays="liban" onclick="ouvrirFiche('kebbeh', 'calc-kebbeh')">
+  <div class="carte" data-cat="plats" data-pays="liban" onclick="ouvrirFiche('kebbeh', 'calc-kebbeh')">
     <img src="images/kebbeh.webp" alt="Kebbeh Libanais">
     <div class="carte-info">
       <h2>🥩 Kebbeh Libanais</h2>
@@ -1835,7 +1841,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="encas" data-pays="coree" onclick="ouvrirFiche('tteokbokki', 'calc-tteokbokki')">
+  <div class="carte" data-cat="plats" data-pays="coree" onclick="ouvrirFiche('tteokbokki', 'calc-tteokbokki')">
     <img src="images/tteokbokki.webp" alt="Tteokbokki">
     <div class="carte-info">
       <h2>🌶️ Tteokbokki</h2>
@@ -1859,7 +1865,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="inde" onclick="ouvrirFiche('dosakerdosai', 'calc-dosakerdosai')">
+  <div class="carte" data-cat="brunch" data-pays="inde" onclick="ouvrirFiche('dosakerdosai', 'calc-dosakerdosai')">
     <img src="images/dosakerdosai.webp" alt="Dosa">
     <div class="carte-info">
       <h2>🥞 Dosa</h2>
@@ -2005,7 +2011,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="encas" data-pays="espagne" onclick="ouvrirFiche('crevettespilpil', 'calc-crevettespilpil')">
+  <div class="carte" data-cat="entrees" data-pays="espagne" onclick="ouvrirFiche('crevettespilpil', 'calc-crevettespilpil')">
     <img src="images/crevettespilpil.webp" alt="Crevettes Pil Pil">
     <div class="carte-info">
       <h2>🦐 Crevettes Pil Pil</h2>
@@ -2053,7 +2059,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('misoramenleger', 'calc-misoramenleger')">
+  <div class="carte" data-cat="soupes" data-pays="japon" onclick="ouvrirFiche('misoramenleger', 'calc-misoramenleger')">
     <img src="images/misoramenleger.webp" alt="Ramen Miso Léger">
     <div class="carte-info">
       <h2>🍜 Ramen Miso Léger</h2>
@@ -2065,7 +2071,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('veloutepatatepoireaux', 'calc-veloutepatatepoireaux')">
+  <div class="carte" data-cat="soupes" data-pays="france" onclick="ouvrirFiche('veloutepatatepoireaux', 'calc-veloutepatatepoireaux')">
     <img src="images/veloutepatatepoireaux.webp" alt="Velouté Patate & Poireaux">
     <div class="carte-info">
       <h2>🥔 Velouté Patate & Poireaux</h2>
@@ -2077,7 +2083,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('terrinecampagne', 'calc-terrinecampagne')">
+  <div class="carte" data-cat="entrees" data-pays="france" onclick="ouvrirFiche('terrinecampagne', 'calc-terrinecampagne')">
     <img src="images/terrinecampagne.webp" alt="Terrine de Campagne">
     <div class="carte-info">
       <h2>🥩 Terrine de Campagne</h2>
@@ -2407,7 +2413,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="encas" data-pays="coree" onclick="ouvrirFiche('koreanfriedchicken', 'calc-koreanfriedchicken')">
+  <div class="carte" data-cat="plats" data-pays="coree" onclick="ouvrirFiche('koreanfriedchicken', 'calc-koreanfriedchicken')">
     <img src="images/koreanfriedchicken.webp" alt="Korean Fried Chicken">
     <div class="carte-info">
       <h2>🍗 Poulet Frit Coréen</h2>
@@ -2431,7 +2437,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('soupeAziatique', 'calc-soupeAziatique')">
+  <div class="carte" data-cat="soupes" data-pays="japon" onclick="ouvrirFiche('soupeAziatique', 'calc-soupeAziatique')">
     <img src="images/soupeAziatique.webp" alt="Soupe Asiatique">
     <div class="carte-info">
       <h2>🍲 Soupe Asiatique aux Nouilles</h2>
@@ -2443,7 +2449,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="salades" data-pays="france" onclick="ouvrirFiche('tartareSaumon', 'calc-tartareSaumon')">
+  <div class="carte" data-cat="entrees" data-pays="france" onclick="ouvrirFiche('tartareSaumon', 'calc-tartareSaumon')">
     <img src="images/tartareSaumon.webp" alt="Tartare de Saumon">
     <div class="carte-info">
       <h2>🐟 Tartare de Saumon</h2>
@@ -2491,7 +2497,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="salades" data-pays="france" onclick="ouvrirFiche('poireauVinaigrette', 'calc-poireauVinaigrette')">
+  <div class="carte" data-cat="entrees" data-pays="france" onclick="ouvrirFiche('poireauVinaigrette', 'calc-poireauVinaigrette')">
     <img src="images/poireauVinaigrette.webp" alt="Poireaux Vinaigrette">
     <div class="carte-info">
       <h2>🥬 Poireaux Vinaigrette</h2>
@@ -2539,7 +2545,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('soupeMinestrone', 'calc-soupeMinestrone')">
+  <div class="carte" data-cat="soupes" data-pays="italie" onclick="ouvrirFiche('soupeMinestrone', 'calc-soupeMinestrone')">
     <img src="images/soupeMinestrone.webp" alt="Minestrone">
     <div class="carte-info">
       <h2>🥣 Minestrone</h2>
@@ -2637,7 +2643,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="salades" data-pays="espagne" onclick="ouvrirFiche('gazpachoMelon', 'calc-gazpachoMelon')">
+  <div class="carte" data-cat="entrees" data-pays="espagne" onclick="ouvrirFiche('gazpachoMelon', 'calc-gazpachoMelon')">
     <img src="images/gazpachoMelon.webp" alt="Gaspacho de Melon">
     <div class="carte-info">
       <h2>🍈 Gaspacho de Melon</h2>
@@ -2685,7 +2691,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="encas" data-pays="espagne" onclick="ouvrirFiche('calamarsRomaine', 'calc-calamarsRomaine')">
+  <div class="carte" data-cat="entrees" data-pays="espagne" onclick="ouvrirFiche('calamarsRomaine', 'calc-calamarsRomaine')">
     <img src="images/calamarsRomaine.webp" alt="Calamars à la Romaine">
     <div class="carte-info">
       <h2>🦑 Calamars à la Romaine</h2>
@@ -2709,7 +2715,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="usa" onclick="ouvrirFiche('eggsBenedict', 'calc-eggsBenedict')">
+  <div class="carte" data-cat="brunch" data-pays="usa" onclick="ouvrirFiche('eggsBenedict', 'calc-eggsBenedict')">
     <img src="images/eggsBenedict.webp" alt="Eggs Benedict">
     <div class="carte-info">
       <h2>🥚 Œufs Bénédicte</h2>
@@ -2733,7 +2739,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('veloutePoiron', 'calc-veloutePoiron')">
+  <div class="carte" data-cat="soupes" data-pays="france" onclick="ouvrirFiche('veloutePoiron', 'calc-veloutePoiron')">
     <img src="images/veloutePoiron.webp" alt="Velouté de Potiron">
     <div class="carte-info">
       <h2>🎃 Velouté de Potiron</h2>
@@ -2757,7 +2763,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="healthy" data-pays="france" onclick="ouvrirFiche('granolaMaison', 'calc-granolaMaison')">
+  <div class="carte" data-cat="boulangerie" data-pays="france" onclick="ouvrirFiche('granolaMaison', 'calc-granolaMaison')">
     <img src="images/granolaMaison.webp" alt="Granola Maison">
     <div class="carte-info">
       <h2>🌾 Granola Maison</h2>
@@ -2819,7 +2825,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('veloutecourgette', 'calc-veloutecourgette')">
+  <div class="carte" data-cat="soupes" data-pays="france" onclick="ouvrirFiche('veloutecourgette', 'calc-veloutecourgette')">
     <img src="images/veloutecourgette.webp" alt="Velouté de Courgettes">
     <div class="carte-info">
       <h2>🥒 Velouté de Courgettes</h2>
@@ -2975,7 +2981,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="salades" data-pays="italie" onclick="ouvrirFiche('saladecaprese', 'calc-saladecaprese')">
+  <div class="carte" data-cat="entrees" data-pays="italie" onclick="ouvrirFiche('saladecaprese', 'calc-saladecaprese')">
     <img src="images/saladecaprese.webp" alt="Salade Caprese">
     <div class="carte-info">
       <h2>🍅 Salade Caprese</h2>
@@ -3035,7 +3041,7 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="maroc" onclick="ouvrirFiche('soupeharira', 'calc-soupeharira')">
+  <div class="carte" data-cat="soupes" data-pays="maroc" onclick="ouvrirFiche('soupeharira', 'calc-soupeharira')">
     <img src="images/soupeharira.webp" alt="Harira Marocaine">
     <div class="carte-info">
       <h2>🫘 Harira Marocaine</h2>
@@ -3822,3 +3828,130 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+        <!-- Nouvelles recettes batch 3 -->
+        <!-- PLATS -->
+        <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('cassoulet')">
+          <div class="carte-img"><img src="images/cassoulet.webp" alt="Cassoulet" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🫘</span><h2>Cassoulet Toulousain</h2><p>2h30 · ⭐⭐ Moyen</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('hachisparmentier')">
+          <div class="carte-img"><img src="images/hachisparmentier.webp" alt="Hachis Parmentier" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🥔</span><h2>Hachis Parmentier</h2><p>50 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('daubeProvencale')">
+          <div class="carte-img"><img src="images/daubeProvencale.webp" alt="Daube Provençale" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🥩</span><h2>Daube Provençale</h2><p>3h · ⭐⭐ Moyen</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('pouletNormande')">
+          <div class="carte-img"><img src="images/pouletNormande.webp" alt="Poulet Normande" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🍗</span><h2>Poulet à la Normande</h2><p>45 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="maroc" onclick="ouvrirFiche('tajinepoulet')">
+          <div class="carte-img"><img src="images/tajinepoulet.webp" alt="Tajine Poulet" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🍋</span><h2>Tajine Poulet Citron</h2><p>1h · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('saltimbocca')">
+          <div class="carte-img"><img src="images/saltimbocca.webp" alt="Saltimbocca" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🥩</span><h2>Saltimbocca alla Romana</h2><p>20 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('bouillabaisse')">
+          <div class="carte-img"><img src="images/bouillabaisse.webp" alt="Bouillabaisse" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🐟</span><h2>Bouillabaisse</h2><p>1h30 · ⭐⭐⭐ Expert</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('gratinPates')">
+          <div class="carte-img"><img src="images/gratinPates.webp" alt="Gratin de Pâtes" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🍝</span><h2>Gratin de Pâtes</h2><p>40 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('volauVent')">
+          <div class="carte-img"><img src="images/volauVent.webp" alt="Vol-au-Vent" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🥐</span><h2>Vol-au-Vent</h2><p>45 min · ⭐⭐ Moyen</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('jambonneauLentilles')">
+          <div class="carte-img"><img src="images/jambonneauLentilles.webp" alt="Jarret Lentilles" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🫘</span><h2>Jarret aux Lentilles</h2><p>2h · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('boulettesViande')">
+          <div class="carte-img"><img src="images/boulettesViande.webp" alt="Boulettes Viande" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🍝</span><h2>Boulettes Sauce Tomate</h2><p>35 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('brandadeMorue')">
+          <div class="carte-img"><img src="images/brandadeMorue.webp" alt="Brandade de Morue" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🐟</span><h2>Brandade de Morue</h2><p>1h · ⭐⭐ Moyen</p></div>
+        </div>
+        <!-- SALADES -->
+        <div class="carte" data-cat="salades" data-pays="asie" onclick="ouvrirFiche('saladeThai')">
+          <div class="carte-img"><img src="images/saladeThai.webp" alt="Salade Thaï" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🥗</span><h2>Salade Thaï</h2><p>20 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="salades" data-pays="france" onclick="ouvrirFiche('saladeHaricotsVerts')">
+          <div class="carte-img"><img src="images/saladeHaricotsVerts.webp" alt="Salade Haricots Verts" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🫛</span><h2>Salade Haricots Verts</h2><p>20 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="salades" data-pays="france" onclick="ouvrirFiche('saladeFruitsMer')">
+          <div class="carte-img"><img src="images/saladeFruitsMer.webp" alt="Salade Fruits de Mer" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🦐</span><h2>Salade Fruits de Mer</h2><p>25 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="salades" data-pays="grece" onclick="ouvrirFiche('saladePoulpe')">
+          <div class="carte-img"><img src="images/saladePoulpe.webp" alt="Salade Poulpe" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🐙</span><h2>Salade de Poulpe</h2><p>1h30 · ⭐⭐ Moyen</p></div>
+        </div>
+        <!-- HEALTHY -->
+        <div class="carte" data-cat="soupes" data-pays="monde" onclick="ouvrirFiche('soupeLentillesCorail')">
+          <div class="carte-img"><img src="images/soupeLentillesCorail.webp" alt="Soupe Lentilles" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🧡</span><h2>Soupe Lentilles Corail</h2><p>30 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="healthy" data-pays="monde" onclick="ouvrirFiche('bowlProteineVege')">
+          <div class="carte-img"><img src="images/bowlProteineVege.webp" alt="Bowl Protéiné" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">💪</span><h2>Bowl Protéiné Végétarien</h2><p>25 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="soupes" data-pays="monde" onclick="ouvrirFiche('soupeDetox')">
+          <div class="carte-img"><img src="images/soupeDetox.webp" alt="Soupe Détox" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🥬</span><h2>Soupe Détox Verte</h2><p>30 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="healthy" data-pays="monde" onclick="ouvrirFiche('saladeKale')">
+          <div class="carte-img"><img src="images/saladeKale.webp" alt="Salade Kale" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🥬</span><h2>Salade de Kale</h2><p>15 min · ⭐ Facile</p></div>
+        </div>
+        <!-- ENCAS -->
+        <div class="carte" data-cat="encas" data-pays="italie" onclick="ouvrirFiche('bruschetta')">
+          <div class="carte-img"><img src="images/bruschetta.webp" alt="Bruschetta" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🍅</span><h2>Bruschetta Tomate Basilic</h2><p>15 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="encas" data-pays="inde" onclick="ouvrirFiche('samosas')">
+          <div class="carte-img"><img src="images/samosas.webp" alt="Samosas" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🥟</span><h2>Samosas aux Légumes</h2><p>45 min · ⭐⭐ Moyen</p></div>
+        </div>
+        <div class="carte" data-cat="encas" data-pays="asie" onclick="ouvrirFiche('springRolls')">
+          <div class="carte-img"><img src="images/springRolls.webp" alt="Spring Rolls" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🌿</span><h2>Spring Rolls Frais</h2><p>30 min · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="encas" data-pays="france" onclick="ouvrirFiche('oeufsCocotte')">
+          <div class="carte-img"><img src="images/oeufsCocotte.webp" alt="Oeufs Cocotte" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🥚</span><h2>Œufs Cocotte</h2><p>25 min · ⭐ Facile</p></div>
+        </div>
+        <!-- DESSERTS -->
+        <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('tarteFragoles')">
+          <div class="carte-img"><img src="images/tarteFragoles.webp" alt="Tarte Fraises" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🍓</span><h2>Tarte aux Fraises</h2><p>1h · ⭐⭐ Moyen</p></div>
+        </div>
+        <div class="carte" data-cat="desserts" data-pays="italie" onclick="ouvrirFiche('pannaCotta')">
+          <div class="carte-img"><img src="images/pannaCotta.webp" alt="Panna Cotta" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🍮</span><h2>Panna Cotta Vanille</h2><p>20 min + 4h · ⭐ Facile</p></div>
+        </div>
+        <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('eclair')">
+          <div class="carte-img"><img src="images/eclair.webp" alt="Eclairs" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">⚡</span><h2>Éclairs au Chocolat</h2><p>1h · ⭐⭐⭐ Expert</p></div>
+        </div>
+        <div class="carte" data-cat="desserts" data-pays="monde" onclick="ouvrirFiche('pavlova')">
+          <div class="carte-img"><img src="images/pavlova.webp" alt="Pavlova" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🍰</span><h2>Pavlova aux Fruits</h2><p>1h30 · ⭐⭐ Moyen</p></div>
+        </div>
+        <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('profiteroles')">
+          <div class="carte-img"><img src="images/profiteroles.webp" alt="Profiteroles" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🍨</span><h2>Profiteroles</h2><p>50 min · ⭐⭐ Moyen</p></div>
+        </div>
+        <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('tarteNormande')">
+          <div class="carte-img"><img src="images/tarteNormande.webp" alt="Tarte Normande" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="carte-info"><span class="carte-emoji">🍎</span><h2>Tarte Normande</h2><p>55 min · ⭐ Facile</p></div>
+        </div>
+
