@@ -4000,6 +4000,7 @@ Réponds UNIQUEMENT en JSON valide :
     menusSemaine = JSON.parse(clean);
     // Vérifier et corriger les doublons éventuels de l'IA
     menusSemaine = corrigerDoublons(menusSemaine, joursSelectionnes, tags, allergies);
+    menusSemaine = validerRegimeMenus(menusSemaine, tagsFinaux, allergiesFinales);
     sauvegarderMenus(menusSemaine, personnes, joursSelectionnes);
     afficherMenusSemaine(menusSemaine, parseInt(personnes));
   } catch(err) {
@@ -4030,6 +4031,77 @@ function pickUnique(pool, n) {
     result.push(shuffled[i]);
   }
   return result;
+}
+
+
+// Validation post-génération : remplacer les recettes incompatibles avec le régime
+function validerRegimeMenus(menus, regimes, allergies) {
+  if (!menus?.semaine) return menus;
+
+  // Construire la liste des mots interdits
+  const motsInterdits = new Set();
+  regimes.forEach(r => {
+    (ALLERGENES_MOTS[r] || []).forEach(m => motsInterdits.add(m.toLowerCase()));
+  });
+  allergies.forEach(a => {
+    (ALLERGENES_MOTS[a] || [a]).forEach(m => motsInterdits.add(m.toLowerCase()));
+  });
+
+  if (motsInterdits.size === 0) return menus;
+
+  // Construire pool de recettes valides
+  const recettesValides = Object.keys(recettes).filter(key => {
+    const r = recettes[key];
+    let texte = (key + " " + (r?.description || "")).toLowerCase();
+    // Ajouter les clés (noms) du premier tableau
+    Object.keys(r || {}).forEach(k => {
+      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
+        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
+        texte += " " + Object.values(r[k][0]).join(" ").toLowerCase();
+      }
+    });
+    return ![...motsInterdits].some(m => texte.includes(m));
+  });
+
+  // Recettes déjà utilisées dans le menu
+  const utilisees = new Set();
+  menus.semaine.forEach(j => {
+    utilisees.add(j.midi?.recette);
+    utilisees.add(j.soir?.recette);
+  });
+
+  // Vérifier et remplacer chaque repas incompatible
+  menus.semaine.forEach(jour => {
+    ["midi", "soir"].forEach(moment => {
+      const repas = jour[moment];
+      if (!repas?.recette) return;
+      const key = repas.recette;
+      const r = recettes[key];
+      if (!r) return;
+
+      let texte = (key + " " + (r?.description || "")).toLowerCase();
+      Object.keys(r || {}).forEach(k => {
+        if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
+          texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
+          texte += " " + Object.values(r[k][0]).join(" ").toLowerCase();
+        }
+      });
+
+      const incompatible = [...motsInterdits].some(m => texte.includes(m));
+      if (incompatible) {
+        // Trouver une alternative valide non encore utilisée
+        const alternative = recettesValides.find(k => !utilisees.has(k));
+        if (alternative) {
+          utilisees.delete(key);
+          utilisees.add(alternative);
+          repas.recette = alternative;
+          repas.note = "✅ Adapté à votre régime";
+        }
+      }
+    });
+  });
+
+  return menus;
 }
 
 function corrigerDoublons(menus, joursSelectionnes, tags, allergies) {
