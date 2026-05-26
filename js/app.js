@@ -1010,7 +1010,7 @@ async function genererMenus() {
     "Réponds UNIQUEMENT en JSON valide :\n" + structureJSON;
 
   try {
-    const response = await fetch("https://lovely-moonbeam-006d50.netlify.app/.netlify/functions/menu", {
+    const response = await fetch("https://lovely-moonbeam-006d50.netlify.app/api/menu", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt: prompt })
