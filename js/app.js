@@ -2119,6 +2119,23 @@ function basculeVersGrille() {
     secCartes.style.display = "";
   }
 }
+function filtrerCategorieDrinks() {
+  const menuC = document.getElementById("menu-cocktails");
+  if (!menuC) return;
+  const visible = menuC.style.display !== "none";
+  menuC.style.display = visible ? "none" : "flex";
+  // Fermer si on clique en dehors
+  if (!visible) {
+    const close = (e) => {
+      if (!menuC.contains(e.target)) {
+        menuC.style.display = "none";
+        document.removeEventListener("click", close);
+      }
+    };
+    setTimeout(() => document.addEventListener("click", close), 100);
+  }
+}
+
 function filtrerCategorie(cat) {
   window.scrollTo({ top: 0, behavior: "smooth" });
   basculeVersGrille();
