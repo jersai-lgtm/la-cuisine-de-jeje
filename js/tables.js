@@ -969,7 +969,12 @@ function choisirRecette(nom) {
   }
 }
 
-// initTablesGlobales() déplacé en fin de fichier
-
-// Initialiser les tables globales — après toutes les définitions de fonctions
+// Initialiser les tables globales
+function initTablesGlobales() {
+  // Initialiser les variables globales si non définies
+  if (typeof window._nouvellesRecettesTables === "undefined") window._nouvellesRecettesTables = null;
+  if (typeof window.mondeClassiquesTablesGlobal === "undefined") window.mondeClassiquesTablesGlobal = null;
+  if (typeof window.hellofreshTablesGlobal === "undefined") window.hellofreshTablesGlobal = null;
+  if (typeof window.cocktailsTablesGlobal === "undefined") window.cocktailsTablesGlobal = null;
+}
 initTablesGlobales();
