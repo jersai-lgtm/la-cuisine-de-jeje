@@ -441,3 +441,1322 @@ const INGREDIENTS_LABELS = {
   pralin: "🌰 Pâte de pralin", proteine: "💪 Protéine", dattes: "🌴 Dattes",
   vermicelles: "🍜 Vermicelles", edamame: "🫛 Edamame",
 };
+
+
+
+// ==============================
+// FONCTIONS DEPUIS INDEX.HTML
+// ==============================
+
+// Calculer brioche depuis la carte
+function calculerCarteBrioche(version) {
+  // Mettre à jour le bouton actif
+  document.querySelectorAll(".btn-brioche-carte").forEach((b, i) => {
+    b.classList.toggle("btn-brioche-carte-actif", i + 1 === version);
+  });
+  document.getElementById("recette").value = "brioche";
+  document.getElementById("personnes").value = version;
+  calculer();
+  setTimeout(() => {
+    const res = document.getElementById("resultat").innerHTML;
+    document.getElementById("modal-resultat").innerHTML = res;
+    document.getElementById("modal-calc").classList.add("visible");
+  }, 50);
+}
+
+// ==============================
+// PLANIFICATEUR DE MENUS
+// ==============================
+// Mémorisation de l'onglet actif
+window._planTabActif = "semaine";
+
+// Switch entre onglets planificateur
+function switchPlanTab(tab) {
+  window._planTabActif = tab;
+  const sectionSemaine = document.getElementById("section-planificateur");
+  const sectionFestif  = document.getElementById("section-festif");
+
+  // Mettre à jour tous les onglets
+  ["tab-semaine","tab-semaine2"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle("active", tab === "semaine");
+  });
+  ["tab-festif","tab-festif2"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle("active", tab === "festif");
+  });
+
+  if (tab === "semaine") {
+    sectionSemaine.style.display = "block";
+    sectionFestif.style.display  = "none";
+  } else {
+    sectionSemaine.style.display = "none";
+    sectionFestif.style.display  = "block";
+  }
+}
+
+// Sélection thème festif (un seul à la fois)
+function selectTheme(btn) {
+  document.querySelectorAll("#festif-themes .plan-tag").forEach(b => b.classList.remove("plan-tag-active"));
+  btn.classList.add("plan-tag-active");
+}
+
+// Menus thématiques prédéfinis
+// Tous les plats disponibles par catégorie
+const TOUS_LES_PLATS = [
+  "lasagne","boeufbourguignon","gratindauphinois","quichelorraine","soupeaoignon",
+  "potaufeu","pouletcitronthym","risotto","risottoprimavera","couscous","moussaka",
+  "paella","butterchicken","souvlaki","dalindien","rizcantonnais","hariramarocaine",
+  "shakshuka","padthai","currypouletcoco","tacosmaison","bolognaisemaison",
+  "burgermaison","salmonteriyaki","curryledumes","wrappoulet","soupemiso",
+  "veloutelegumes","saumongravlax","croquemonsieur","naan",
+  "souvlakiagneau","tom_yam","dorade_chermoula","pierogi","shakshukaverte",
+  "porc_pulled","braiseboeuf_asiatique","paprikashpoulet","ossobuco","tajinemouton",
+  "tikamasala","phovietnambien","carbonara","gnocchismaison","poulettandoori",
+  "pekinduckeasy","ceebujen","mafewestafricain","dosakerdosai","tteokbokki"
+];
+const TOUTES_LES_PIZZAS = [
+  "pizzamargherita","pizzareine","pizza4fromages","pizzadiavola",
+  "pizzasaumonepinards","pizzavegetarienne"
+];
+const TOUTES_LES_ENTREES = [
+  "saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison",
+  "saladequinoa","saladeavocatcrevettes","saladelentilles","saladepoischiches",
+  "saladerizmediterranee","gaspacho","houmous","soupemiso","veloutelegumes",
+  "buddhaBowl","smoothiebowl","smoothiemangopassion","overnightoats","saumongravlax"
+];
+const TOUS_LES_DESSERTS = [
+  "tiramisu","cremebrulee","mousseauchocolat","fondantchocolat","tartecitron",
+  "tarteaupommes","clafoutis","flan","madeleine","verrinetiramisu","goumeau",
+  "ileflottante","bananabread","churros","parisbrestreinterpretation","muffins",
+  "granola","smoothiebowl","bowlacai","yaourt"
+];
+const TOUS_LES_APEROS_ALCOOL = [
+  "mojito","margarita","cosmopolitan","spritz","sangria","pinacolada","daiquiri","whiskysour",
+  "mojitorose","negroni","moscowmule","pornstarmartini","hugospritz","oldFashioned","gintoniqmaison"
+];
+const TOUS_LES_APEROS_SANS = [
+  "virginmojito","limonademaison","smoothiemangopassion","citronadementhe",
+  "jusPastequeMenuthe","virginpinacolada","cherryblossommocktail","shrubframboisebasilic","mocktailcoconananas"
+];
+const TOUS_LES_APEROS = [...TOUS_LES_APEROS_ALCOOL, ...TOUS_LES_APEROS_SANS];
+
+const menusFestifs = {
+  festif: {
+    label: "🎉 Soirée Festive",
+    apero:   TOUS_LES_APEROS,
+    entree:  TOUTES_LES_ENTREES,
+    plat:    TOUS_LES_PLATS,
+    dessert: TOUS_LES_DESSERTS,
+  },
+  estival: {
+    label: "🌞 Menu Estival",
+    apero:   [...TOUS_LES_APEROS_SANS, "spritz","mojito","daiquiri"],
+    entree:  ["gaspacho","saladeniçoise","tabulemaison","saladeavocatcrevettes","saladegreque","saladecesar","saladepoischiches","saladepatasthon","smoothiebowl","houmous","saladerizmediterranee"],
+    plat:    ["paella","salmonteriyaki","souvlaki","saladecesar","wrappoulet","padthai","shakshuka","burgermaison","tacosmaison","saladeniçoise","saumongravlax"],
+    dessert: ["tartecitron","smoothiebowl","bowlacai","clafoutis","verrinetiramisu","granola","yaourt","bananabread"],
+  },
+  hivernal: {
+    label: "❄️ Menu Hivernal",
+    apero:   ["sangria","whiskysour","limonademaison","virginmojito","cosmopolitan"],
+    entree:  ["soupeaoignon","veloutelegumes","saladelentilles","hariramarocaine","soupemiso","houmous"],
+    plat:    ["boeufbourguignon","potaufeu","gratindauphinois","couscous","moussaka","butterchicken","dalindien","quichelorraine","lasagne","risotto"],
+    dessert: ["fondantchocolat","cremebrulee","ileflottante","tiramisu","mousseauchocolat","parisbrestreinterpretation","clafoutis","flan"],
+  },
+  mexicain: {
+    label: "🇲🇽 Soirée Mexicaine",
+    apero:   ["margarita","virginmojito","limonademaison","mojito","sangria"],
+    entree:  ["houmous","gaspacho","saladepoischiches","tabulemaison","saladeniçoise"],
+    plat:    ["tacosmaison","currypouletcoco","bolognaisemaison","padthai","burgermaison","shakshuka"],
+    dessert: ["churros","mousseauchocolat","bananabread","muffins","madeleine"],
+  },
+  italien: {
+    label: "🇮🇹 Soirée Italienne",
+    apero:   ["spritz","sangria","cosmopolitan","daiquiri"],
+    entree:  ["saladecesar","saladeniçoise","saladegreque","saladepatasthon","houmous"],
+    plat:    ["risotto","bolognaisemaison","risottoprimavera","lasagne","paella","moussaka"],
+    dessert: ["tiramisu","verrinetiramisu","mousseauchocolat","pannacotta","cremebrulee","parisbrestreinterpretation"],
+  },
+  healthy: {
+    label: "🥗 Menu Healthy",
+    apero:   [...TOUS_LES_APEROS_SANS],
+    entree:  ["saladequinoa","houmous","gaspacho","smoothiebowl","bowlacai","overnightoats","buddhaBowl","saladepoischiches","tabulemaison"],
+    plat:    ["buddhaBowl","wrappoulet","curryledumes","salmonteriyaki","padthai","dalindien","soupemiso","veloutelegumes","shakshuka","saladeniçoise"],
+    dessert: ["smoothiebowl","bowlacai","yaourt","granola","bananabread","madeleine"],
+  },
+  romantique: {
+    label: "💑 Dîner Romantique",
+    apero:   ["cosmopolitan","spritz","daiquiri","mojito","pinacolada"],
+    entree:  ["saumongravlax","saladeavocatcrevettes","saladeniçoise","saladegreque","houmous","verrinetiramisu"],
+    plat:    ["salmonteriyaki","risottoprimavera","pouletcitronthym","boeufbourguignon","souvlaki","butterchicken","paella"],
+    dessert: ["cremebrulee","tiramisu","mousseauchocolat","fondantchocolat","tartecitron","parisbrestreinterpretation","ileflottante"],
+  },
+  brunch: {
+    label: "☀️ Brunch Dominical",
+    apero:   ["limonademaison","smoothiemangopassion","citronadementhe","jusPastequeMenuthe","virginmojito"],
+    entree:  ["smoothiebowl","bowlacai","overnightoats","saladequinoa","smoothiemangopassion","yaourt","granola"],
+    plat:    ["pancakes","pancakesproteine","shakshuka","croquemonsieur","muffins","overnightoats","bruschetta"],
+    dessert: ["muffins","madeleine","bananabread","granola","verrinetiramisu","goumeau"],
+  },
+};
+
+let menuFestifActuel = null;
+
+async function genererMenuFestif() {
+  // Vider le cache festif pour forcer un nouveau menu
+  try { sessionStorage.removeItem("cuisineJeje_festif"); } catch(e) {}
+  const btn = document.getElementById("btn-generer-festif");
+  const personnes = document.getElementById("festif-personnes").value;
+  const allergies = document.getElementById("festif-allergies").value;
+  const themeBtn = document.querySelector("#festif-themes .plan-tag-active");
+  const theme = themeBtn ? themeBtn.dataset.val : "festif";
+  const structure = [...document.querySelectorAll(".plan-form:not(#plan-form) .plan-tag-active:not(#festif-themes .plan-tag-active)")].map(b => b.dataset.val);
+
+  btn.textContent = "⏳ Génération en cours...";
+  btn.disabled = true;
+
+  const themeData = menusFestifs[theme];
+  // Enrichir avec allergènes du profil
+  let allergiesFinalesFestif = allergies ? allergies.split(",").map(a => a.trim()) : [];
+  if (window.userProfile?.preferences) {
+    const prefs = window.userProfile.preferences;
+    if (prefs.allergies?.length) allergiesFinalesFestif = [...new Set([...allergiesFinalesFestif, ...prefs.allergies])];
+    if (prefs.allergiesCustom?.length) allergiesFinalesFestif = [...new Set([...allergiesFinalesFestif, ...prefs.allergiesCustom])];
+  }
+  const motsExclusionFestif = new Set();
+  allergiesFinalesFestif.forEach(a => {
+    const mots = (typeof ALLERGENES_MOTS !== "undefined" ? ALLERGENES_MOTS[a] : null) || [a];
+    mots.forEach(m => motsExclusionFestif.add(m.toLowerCase()));
+  });
+  const recettesDispos = Object.keys(recettes).filter(key => {
+    if (motsExclusionFestif.size === 0) return true;
+    const r = recettes[key];
+    let texte = [key, r?.description || ""].join(" ").toLowerCase();
+    Object.keys(r || {}).forEach(k => {
+      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
+        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
+        texte += " " + Object.values(r[k][0]).join(" ").toLowerCase();
+      }
+    });
+    return ![...motsExclusionFestif].some(mot => texte.includes(mot));
+  }).join(", ");
+
+  // Instructions régime pour festif
+  const regimesFestif = (window.userProfile?.preferences?.regimes || []);
+  let instrRegimeFestif = "";
+  if (regimesFestif.includes("vegan")) instrRegimeFestif = "VEGAN STRICT : aucun produit animal.";
+  else if (regimesFestif.includes("végétarien")) instrRegimeFestif = "VÉGÉTARIEN STRICT : aucune viande ni poisson.";
+  else if (regimesFestif.includes("pesco-végétarien")) instrRegimeFestif = "PESCO-VÉGÉTARIEN : aucune viande (poisson autorisé).";
+  if (regimesFestif.includes("sans-gluten")) instrRegimeFestif += " Sans gluten.";
+  if (regimesFestif.includes("sans-lactose")) instrRegimeFestif += " Sans lactose.";
+
+  const eviterFestif = allergiesFinalesFestif.length ? `ALLERGIES - NE JAMAIS PROPOSER : ${allergiesFinalesFestif.join(", ")}.` : "";
+  const instrRegimeFestifFinal = instrRegimeFestif ? `⚠️ RÉGIME ALIMENTAIRE OBLIGATOIRE : ${instrRegimeFestif}` : "";
+
+  const prompt = `Tu es un chef cuisinier. Génère un menu thématique "${themeData.label}" pour ${personnes} personne(s).
+${eviterFestif} ${instrRegimeFestifFinal}
+Structure souhaitée : ${structure.join(", ")}.
+
+Recettes disponibles : ${recettesDispos}
+
+Suggestions par catégorie :
+- Apéro/Cocktail : ${themeData.apero.join(", ")}
+- Entrée : ${themeData.entree.join(", ")}
+- Plat : ${themeData.plat.join(", ")}
+- Dessert : ${themeData.dessert.join(", ")}
+
+Choisis UNE recette par catégorie demandée parmi les recettes disponibles.
+Réponds UNIQUEMENT en JSON :
+{
+  "theme": "${themeData.label}",
+  "menu": [
+    {"categorie": "🥂 Apéro", "recette": "nomRecette", "note": "courte note"},
+    {"categorie": "🥗 Entrée", "recette": "nomRecette", "note": "courte note"},
+    {"categorie": "🍽️ Plat",  "recette": "nomRecette", "note": "courte note"},
+    {"categorie": "🍰 Dessert","recette": "nomRecette", "note": "courte note"}
+  ]
+}`;
+
+  try {
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-20250514",
+        max_tokens: 500,
+        messages: [{ role: "user", content: prompt }]
+      })
+    });
+    const data = await response.json();
+    const text = data.content[0].text;
+    const clean = text.replace(/```json|```/g, "").trim();
+    menuFestifActuel = JSON.parse(clean);
+  } catch(err) {
+    // Fallback aléatoire avec pickUnique pour éviter les répétitions
+    const pickOne = arr => shuffleArray(arr)[0];
+    const notesMap = {
+      apero:   ["Pour bien commencer la soirée ! 🥂","L'apéro qui met en appétit ✨","Parfait pour briser la glace 🎉","Le coup d'envoi de la soirée 🍹"],
+      entree:  ["Légère et savoureuse 🌿","Une entrée qui met en appétit 😋","Fraîche et colorée 🥗","Le parfait début de repas ✨"],
+      plat:    ["Le plat star de la soirée ! 🌟","Un régal assuré 🍽️","Tout le monde va adorer ! 👌","La recette qui impressionne 🏆"],
+      dessert: ["Une touche sucrée pour finir 🍰","Le point final parfait ✨","On termine en beauté ! 😋","Le dessert qui fait l'unanimité 🎉"],
+    };
+    const catMap = [
+      { key: "apero",   emoji: "🥂", label: "🥂 Apéro",  pool: themeData.apero   },
+      { key: "entree",  emoji: "🥗", label: "🥗 Entrée", pool: themeData.entree  },
+      { key: "plat",    emoji: "🍽️", label: "🍽️ Plat",   pool: themeData.plat    },
+      { key: "dessert", emoji: "🍰", label: "🍰 Dessert", pool: themeData.dessert },
+    ];
+    menuFestifActuel = {
+      theme: themeData.label,
+      menu: catMap
+        .filter(c => structure.length === 0 || structure.some(s => c.key.includes(s) || s.includes(c.key)))
+        .map(c => ({
+          categorie: c.label,
+          recette:   pickOne(c.pool),
+          note:      pickOne(notesMap[c.key])
+        }))
+    };
+  }
+
+  afficherMenuFestif(menuFestifActuel, parseInt(personnes));
+  btn.textContent = "✨ Générer mon menu";
+  btn.disabled = false;
+}
+
+function afficherMenuFestif(menu, personnes) {
+  document.getElementById("festif-result-titre").textContent = menu.theme;
+  const container = document.getElementById("festif-jours");
+  container.innerHTML = "";
+
+  menu.menu.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "plan-jour";
+    div.innerHTML = `
+      <div class="plan-repas-row" style="grid-template-columns:1fr">
+        <div class="plan-repas" onclick="ouvrirRecettePlan('${item.recette}', ${personnes})" style="text-align:left;display:flex;align-items:center;gap:14px">
+          <div style="font-size:32px">${getEmoji(item.recette)}</div>
+          <div>
+            <div class="plan-repas-label">${item.categorie}</div>
+            <div class="plan-repas-nom" style="font-size:16px">${getNomRecette(item.recette)}</div>
+            <div class="plan-repas-note">${item.note}</div>
+          </div>
+        </div>
+      </div>`;
+    container.appendChild(div);
+  });
+
+  // Sauvegarder
+  try { sessionStorage.setItem("cuisineJeje_festif", JSON.stringify({menu, personnes})); } catch(e) {}
+
+  document.getElementById("festif-form").style.display = "none";
+  document.getElementById("festif-result").style.display = "block";
+  document.getElementById("festif-courses").style.display = "none";
+}
+
+function afficherCoursesFestif() {
+  if (!menuFestifActuel) return;
+  const personnes = parseInt(document.getElementById("festif-personnes").value);
+  const courses = {};
+
+  menuFestifActuel.menu.forEach(item => {
+    const ingrs = getIngredientsCourses(item.recette, personnes);
+    Object.entries(ingrs).forEach(([nom, data]) => {
+      if (!courses[nom]) courses[nom] = { qte: 0, raw: null };
+      if (typeof data.qte === "number" && data.qte > 0) courses[nom].qte += data.qte;
+      else if (data.raw) courses[nom].raw = data.raw;
+    });
+  });
+
+  let html = `<p class="courses-subtitle">Pour ${personnes} personne${personnes > 1 ? "s" : ""} — ${menuFestifActuel.menu.length} plats</p>`;
+  html += '<div class="courses-liste">';
+  Object.entries(courses).sort((a,b) => a[0].localeCompare(b[0])).forEach(([nom, data]) => {
+    const qteStr = data.qte > 0 ? (data.qte % 1 === 0 ? data.qte : data.qte.toFixed(0)) : (data.raw || "");
+    html += `<div class="courses-item"><span class="courses-nom">${nom}</span><span class="courses-qte">${qteStr}</span></div>`;
+  });
+  html += "</div>";
+
+  document.getElementById("festif-courses-content").innerHTML = html;
+  document.getElementById("festif-result").style.display = "none";
+  document.getElementById("festif-courses").style.display = "block";
+}
+
+// Charger menu festif sauvegardé
+function chargerMenuFestifAuDemarrage() {
+  try {
+    const raw = sessionStorage.getItem("cuisineJeje_festif");
+    if (!raw) {
+      document.getElementById("festif-form").style.display = "block";
+      document.getElementById("festif-result").style.display = "none";
+      document.getElementById("festif-courses").style.display = "none";
+      return;
+    }
+    const saved = JSON.parse(raw);
+    menuFestifActuel = saved.menu;
+    document.getElementById("festif-form").style.display = "none";
+    afficherMenuFestif(saved.menu, saved.personnes);
+  } catch(e) {
+    document.getElementById("festif-form").style.display = "block";
+  }
+}
+
+let menusSemaine = null;
+const STORAGE_KEY = "cuisineJeje_menus";
+
+function toggleTag(btn) {
+  btn.classList.toggle("plan-tag-active");
+}
+
+// Sauvegarde locale
+function sauvegarderMenus(menus, personnes, jours) {
+  try {
+    const today = new Date().toLocaleDateString("fr-FR");
+    const uid = window.currentUser?.uid || "anon";
+    const regimes = (window.userProfile?.preferences?.regimes || []).sort().join("-");
+    // Clé unique : date + uid + régimes → invalide automatiquement si profil change
+    const key = STORAGE_KEY + "_" + today + "_" + uid + "_" + regimes;
+    const data = { menus, personnes, jours, date: today };
+    sessionStorage.setItem(key, JSON.stringify(data));
+    // Purger les anciennes clés localStorage
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith(STORAGE_KEY)) localStorage.removeItem(k);
+    });
+  } catch(e) {}
+}
+
+function chargerMenusSauvegardes() {
+  try {
+    const today = new Date().toLocaleDateString("fr-FR");
+    const uid = window.currentUser?.uid || "anon";
+    const regimes = (window.userProfile?.preferences?.regimes || []).sort().join("-");
+    const key = STORAGE_KEY + "_" + today + "_" + uid + "_" + regimes;
+    const raw = sessionStorage.getItem(key);
+    if (!raw) return null;
+    const data = JSON.parse(raw);
+    if (data.date === today) return data;
+    return null;
+  } catch(e) { return null; }
+}
+
+function nettoyerVieuxMenus() {
+  // Supprimer les menus de plus de 7 jours
+  try {
+    const today = new Date();
+    Object.keys(localStorage).forEach(key => {
+      if (!key.startsWith(STORAGE_KEY + "_")) return;
+      const dateStr = key.replace(STORAGE_KEY + "_", "");
+      const parts = dateStr.split("/");
+      if (parts.length === 3) {
+        const d = new Date(parts[2], parts[1]-1, parts[0]);
+        if ((today - d) > 7 * 24 * 60 * 60 * 1000) localStorage.removeItem(key);
+      }
+    });
+  } catch(e) {}
+}
+
+function voirFormulaire() {
+  document.getElementById("plan-form").style.display = "block";
+  document.getElementById("plan-result").style.display = "none";
+  document.getElementById("plan-courses").style.display = "none";
+}
+
+async function genererMenus() {
+  // Vider le cache pour forcer un nouveau menu
+  try { sessionStorage.removeItem(STORAGE_KEY); } catch(e) {}
+  const btn = document.getElementById("btn-generer");
+  const personnes = document.getElementById("plan-personnes").value;
+  const allergies = document.getElementById("plan-allergies").value;
+
+  // Récupérer jours sélectionnés (dans #plan-jours-choix) ET préférences (autres tags)
+  const joursSelectionnes = [...document.querySelectorAll("#plan-jours-choix .plan-tag-active")].map(b => b.dataset.val);
+  const tags = [...document.querySelectorAll(".plan-tags:not(#plan-jours-choix) .plan-tag-active")].map(b => b.dataset.val);
+
+  if (joursSelectionnes.length === 0) {
+    alert("Sélectionne au moins un jour !");
+    return;
+  }
+
+  // Enrichir avec les allergènes et préférences du profil connecté
+  let allergiesFinales = allergies ? allergies.split(",").map(a => a.trim()) : [];
+  let tagsFinaux = [...tags];
+
+  if (window.userProfile?.preferences) {
+    const prefs = window.userProfile.preferences;
+    // Ajouter régimes comme préférences
+    if (prefs.regimes?.length)
+      tagsFinaux = [...new Set([...tagsFinaux, ...prefs.regimes])];
+    // Ajouter allergènes du profil
+    if (prefs.allergies?.length)
+      allergiesFinales = [...new Set([...allergiesFinales, ...prefs.allergies])];
+    if (prefs.allergiesCustom?.length)
+      allergiesFinales = [...new Set([...allergiesFinales, ...prefs.allergiesCustom])];
+  }
+
+  // Filtrer recettesDispos : exclure les recettes incompatibles avec les allergènes
+  const motsExclusion = new Set();
+  allergiesFinales.forEach(a => {
+    const mots = (typeof ALLERGENES_MOTS !== "undefined" ? ALLERGENES_MOTS[a] : null) || [a];
+    mots.forEach(m => motsExclusion.add(m.toLowerCase()));
+  });
+  tagsFinaux.forEach(tag => {
+    const mots = (typeof ALLERGENES_MOTS !== "undefined" ? ALLERGENES_MOTS[tag] : null) || [];
+    mots.forEach(m => motsExclusion.add(m.toLowerCase()));
+  });
+
+  const recettesFiltrees = Object.keys(recettes).filter(key => {
+    if (motsExclusion.size === 0) return true;
+    const r = recettes[key];
+    let texte = [key, r?.description || ""].join(" ").toLowerCase();
+    // Lire les CLÉS des tableaux (noms des ingrédients : jambon, lardons, poulet...)
+    Object.keys(r || {}).forEach(k => {
+      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
+        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();   // ← CLÉS
+        texte += " " + Object.values(r[k][0]).join(" ").toLowerCase(); // ← VALEURS aussi
+      }
+    });
+    return ![...motsExclusion].some(mot => texte.includes(mot));
+  });
+  // Envoyer clé + nom pour aider l'IA à retourner la bonne clé
+  const recettesDispos = recettesFiltrees.map(k => {
+    const nom = (typeof getNomRecette === 'function') ? getNomRecette(k) : k;
+    return nom !== k ? `${k} (${nom})` : k;
+  }).join(", ");
+
+  btn.textContent = "⏳ Génération en cours...";
+  btn.disabled = true;
+  document.getElementById("plan-result").style.display = "none";
+
+  // Construire des instructions claires selon les régimes
+  const regimesActifs = tagsFinaux.filter(t => ["végétarien","vegan","pesco-végétarien","sans-gluten","sans-lactose","protéiné","moins-viande"].includes(t));
+  let instructionsRegime = "";
+  if (regimesActifs.includes("vegan")) {
+    instructionsRegime = "RÉGIME VEGAN STRICT : ZÉRO viande, ZÉRO poisson, ZÉRO produit animal (lait, œufs, fromage, beurre, miel). Uniquement recettes 100% végétales.";
+    if (regimesActifs.includes("protéiné")) instructionsRegime += " PROTÉINÉ VEGAN : privilégier légumineuses (lentilles, pois chiches), tofu, tempeh, seitan, noix.";
+  } else if (regimesActifs.includes("végétarien")) {
+    instructionsRegime = "RÉGIME VÉGÉTARIEN STRICT : ZÉRO viande (bœuf, porc, poulet, agneau, canard, jambon, lardons, bacon, saucisse...), ZÉRO poisson, ZÉRO fruits de mer. Uniquement recettes sans viande ni poisson.";
+    if (regimesActifs.includes("protéiné")) instructionsRegime += " PROTÉINÉ VÉGÉTARIEN : privilégier œufs, fromage, légumineuses (lentilles, pois chiches, haricots), tofu, tempeh — SANS viande ni poisson.";
+  } else if (regimesActifs.includes("pesco-végétarien")) {
+    instructionsRegime = "RÉGIME PESCO-VÉGÉTARIEN : ZÉRO viande (bœuf, porc, poulet, agneau, canard, jambon...). Poisson et fruits de mer autorisés.";
+    if (regimesActifs.includes("protéiné")) instructionsRegime += " PROTÉINÉ : privilégier poissons, œufs, légumineuses.";
+  } else if (regimesActifs.includes("protéiné")) {
+    instructionsRegime = "RÉGIME PROTÉINÉ : privilégier viandes maigres (poulet, dinde, veau), poissons, œufs, légumineuses, tofu. Éviter les plats trop glucidiques.";
+  } else if (regimesActifs.includes("moins-viande")) {
+    instructionsRegime = "OBJECTIF MOINS DE VIANDE : maximum 2 repas avec viande sur toute la semaine. Privilégier légumes, légumineuses, poisson, œufs.";
+  }
+  if (regimesActifs.includes("sans-gluten")) {
+    instructionsRegime += " SANS GLUTEN STRICT : aucun blé, farine de blé, pâtes, pain, semoule, couscous.";
+  }
+  if (regimesActifs.includes("sans-lactose")) {
+    instructionsRegime += " SANS LACTOSE : aucun lait, fromage, beurre, crème fraîche, yaourt.";
+  }
+
+  const preferences = tagsFinaux.length ? `Préférences : ${tagsFinaux.join(", ")}.` : "";
+  const eviter = allergiesFinales.length ? `ALLERGIES ET INTOLÉRANCES - NE JAMAIS PROPOSER ces ingrédients : ${allergiesFinales.join(", ")}.` : "";
+  const instructionsRegimeFinal = instructionsRegime ? `\n⚠️ RÉGIME ALIMENTAIRE - RÈGLE ABSOLUE : ${instructionsRegime}` : "";
+  const joursStr = joursSelectionnes.join(", ");
+
+  // Ajouter un seed aléatoire pour forcer la variété
+  const seed = Math.floor(Math.random() * 1000);
+  const prompt = `Tu es un chef cuisinier créatif (seed: ${seed}). Génère un plan de menus VARIÉ et ORIGINAL pour ces jours : ${joursStr} (midi et soir) pour ${personnes} personne(s).
+${preferences} ${eviter}${instructionsRegimeFinal}
+
+Recettes disponibles : ${recettesDispos}
+
+RÈGLES STRICTES :
+- Utilise UNIQUEMENT les recettes de la liste ci-dessus (déjà filtrées selon le régime)
+- Dans le JSON, le champ "recette" doit contenir la CLÉ exacte (ex: "wrappoulet", pas "Wrap au Poulet")
+- AUCUNE répétition sur toute la semaine
+- Une recette ne peut apparaître QU'UNE SEULE FOIS sur les 14 repas
+- RESPECTE ABSOLUMENT le régime alimentaire — c'est non négociable
+- NE JAMAIS inventer une recette qui n'est pas dans la liste disponible
+- Varie les cuisines (française, italienne, asiatique, mexicaine...)
+- Équilibre les repas (pas que des desserts!)
+- Midi : plutôt salades, plats légers, healthy
+- Soir : plats plus consistants et chauds
+- Sois CRÉATIF et VARIÉ - évite les recettes trop classiques/attendues
+
+Réponds UNIQUEMENT en JSON valide :
+{
+  "semaine": [
+    {
+      "jour": "Lundi",
+      "midi": {"recette": "nomRecette", "note": "courte note sympa"},
+      "soir": {"recette": "nomRecette", "note": "courte note sympa"}
+    }
+  ]
+}`;
+
+  try {
+    const response = await fetch("https://la-cuisine-de-jeje-fgdmxm73c-jeromesainthot-9281s-projects.vercel.app/api/menu", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ prompt: prompt })
+    });
+    const data = await response.json();
+    const text = data.content?.[0]?.text || "";
+    const clean = text.replace(/```json|```/g, "").trim();
+    menusSemaine = JSON.parse(clean);
+
+    // DEBUG
+    console.log("=== DEBUG RÉGIME ===");
+    console.log("tagsFinaux:", tagsFinaux);
+    console.log("Menu brut IA:", JSON.stringify(menusSemaine?.semaine?.map(j=>({jour:j.jour,midi:j.midi?.recette,soir:j.soir?.recette}))));
+
+    menusSemaine = normaliserClesMenus(menusSemaine);
+    menusSemaine = corrigerDoublons(menusSemaine, joursSelectionnes, tags, allergies);
+    menusSemaine = validerRegimeMenus(menusSemaine, tagsFinaux, allergiesFinales);
+
+    console.log("Menu après validation:", JSON.stringify(menusSemaine?.semaine?.map(j=>({jour:j.jour,midi:j.midi?.recette,soir:j.soir?.recette}))));
+
+    sauvegarderMenus(menusSemaine, personnes, joursSelectionnes);
+    afficherMenusSemaine(menusSemaine, parseInt(personnes));
+
+  } catch(err) {
+    console.log("IA indispo, génération aléatoire", err);
+    menusSemaine = genererMenusAleatoires(joursSelectionnes, tagsFinaux, allergiesFinales);
+    menusSemaine = validerRegimeMenus(menusSemaine, tagsFinaux, allergiesFinales);
+    sauvegarderMenus(menusSemaine, personnes, joursSelectionnes);
+    afficherMenusSemaine(menusSemaine, parseInt(personnes));
+  }
+
+  btn.textContent = "✨ Générer mes menus";
+  btn.disabled = false;
+}
+
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function pickUnique(pool, n) {
+  // Pioche n éléments uniques dans pool
+  const shuffled = shuffleArray(pool);
+  const result = [];
+  for (let i = 0; result.length < n && i < shuffled.length; i++) {
+    result.push(shuffled[i]);
+  }
+  return result;
+}
+
+
+// Validation post-génération : remplacer les recettes incompatibles avec le régime
+// Normaliser les clés retournées par l'IA (nom → clé)
+function normaliserClesMenus(menus) {
+  if (!menus?.semaine) return menus;
+  // Construire index nom→clé
+  const nomVersClé = {};
+  if (typeof nomsAffichage !== "undefined") {
+    Object.entries(nomsAffichage).forEach(([cle, nom]) => {
+      nomVersClé[nom.toLowerCase()] = cle;
+      nomVersClé[cle.toLowerCase()] = cle;
+    });
+  }
+  menus.semaine.forEach(jour => {
+    ["midi", "soir"].forEach(moment => {
+      if (!jour[moment]?.recette) return;
+      const val = jour[moment].recette;
+      // Si la clé n'existe pas dans recettes{}, chercher par nom
+      if (typeof recettes !== "undefined" && !recettes[val]) {
+        const cle = nomVersClé[val.toLowerCase()];
+        if (cle && recettes[cle]) {
+          jour[moment].recette = cle;
+        }
+      }
+    });
+  });
+  return menus;
+}
+
+function validerRegimeMenus(menus, regimes, allergies) {
+  if (!menus?.semaine) return menus;
+
+  // Construire mots interdits
+  const motsInterdits = new Set();
+  regimes.forEach(r => {
+    (ALLERGENES_MOTS[r] || []).forEach(m => motsInterdits.add(m.toLowerCase()));
+  });
+  allergies.forEach(a => {
+    (ALLERGENES_MOTS[a] || [a]).forEach(m => motsInterdits.add(m.toLowerCase()));
+  });
+
+  if (motsInterdits.size === 0) return menus;
+
+  // Tester une recette
+  function recetteCompatible(key) {
+    if (!key) return false;
+    const r = recettes[key];
+    if (!r) return false; // clé inconnue = invalide
+    let texte = (key + " " + (r.description || "")).toLowerCase();
+    Object.keys(r).forEach(k => {
+      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
+        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
+      }
+    });
+    return ![...motsInterdits].some(m => texte.includes(m));
+  }
+
+  // Pool de recettes valides non utilisées
+  const utilisees = new Set();
+  menus.semaine.forEach(j => {
+    if (j.midi?.recette) utilisees.add(j.midi.recette);
+    if (j.soir?.recette) utilisees.add(j.soir.recette);
+  });
+
+  const recettesValides = Object.keys(recettes).filter(k => recetteCompatible(k));
+
+  // Remplacer toute recette incompatible OU inconnue
+  menus.semaine.forEach(jour => {
+    ["midi", "soir"].forEach(moment => {
+      const repas = jour[moment];
+      if (!repas) return;
+      const key = repas.recette;
+
+      if (!recetteCompatible(key)) {
+        // Trouver alternative valide non encore utilisée
+        const alt = recettesValides.find(k => !utilisees.has(k));
+        if (alt) {
+          console.log(`[Régime] ${key} → remplacé par ${alt}`);
+          utilisees.delete(key);
+          utilisees.add(alt);
+          repas.recette = alt;
+          repas.note = "✅ Adapté à votre régime";
+        }
+      }
+    });
+  });
+
+  return menus;
+}
+function corrigerDoublons(menus, joursSelectionnes, tags, allergies) {
+  // Collecter toutes les recettes utilisées
+  const utilisees = new Set();
+  menus.semaine.forEach(j => {
+    utilisees.add(j.midi.recette);
+    utilisees.add(j.soir.recette);
+  });
+  
+  // Si doublon détecté (midi = soir ou recette déjà vue)
+  const vus = new Set();
+  menus.semaine.forEach(j => {
+    // Doublon midi=soir
+    if (j.midi.recette === j.soir.recette) {
+      // Remplacer le soir par une recette non utilisée
+      const nouveauPlat = shuffleArray(tousPlatsDispos(tags)).find(r => !vus.has(r) && r !== j.midi.recette);
+      if (nouveauPlat) j.soir.recette = nouveauPlat;
+    }
+    // Doublon avec un jour précédent
+    if (vus.has(j.midi.recette)) {
+      const nouveau = shuffleArray(toutesSaladesDispos()).find(r => !vus.has(r));
+      if (nouveau) j.midi.recette = nouveau;
+    }
+    if (vus.has(j.soir.recette)) {
+      const nouveau = shuffleArray(tousPlatsDispos(tags)).find(r => !vus.has(r));
+      if (nouveau) j.soir.recette = nouveau;
+    }
+    vus.add(j.midi.recette);
+    vus.add(j.soir.recette);
+  });
+  return menus;
+}
+
+function tousPlatsDispos(tags) {
+  const filtrerHealthy = tags && tags.includes("healthy");
+  return filtrerHealthy
+    ? ["curryledumes","wrappoulet","soupemiso","veloutelegumes","salmonteriyaki","dalindien","padthai","buddhaBowl"]
+    : ["lasagne","boeufbourguignon","gratindauphinois","quichelorraine","soupeaoignon","potaufeu","pouletcitronthym","risotto","risottoprimavera","couscous","moussaka","paella","butterchicken","souvlaki","dalindien","rizcantonnais","hariramarocaine","shakshuka","padthai","currypouletcoco","tacosmaison","bolognaisemaison","burgermaison","salmonteriyaki","curryledumes","wrappoulet","soupemiso","veloutelegumes","naan","souvlakiagneau","tom_yam","dorade_chermoula","pierogi","shakshukaverte","porc_pulled","braiseboeuf_asiatique","paprikashpoulet","ossobuco","tajinemouton","tikamasala","phovietnambien","carbonara","gnocchismaison","poulettandoori","pekinduckeasy","ceebujen","mafewestafricain","pouletbasquaise","pouletrotiperfect","saumoncrouteherbes","bibimbap","moquecabresil","rendangboeuf"];
+}
+
+function toutesSaladesDispos() {
+  return ["saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison","saladequinoa","saladeavocatcrevettes","saladelentilles","saladepoischiches","saladerizmediterranee","gaspacho","buddhaBowl","smoothiebowl","houmous","overnightoats","wrappoulet","croquemonsieur","shakshuka","veloutelegumes","soupemiso","misoramenleger","semoulecourgette"];
+}
+
+function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
+  // Construire mots interdits depuis régimes et allergies
+  const motsInterdits = new Set();
+  (regimes || []).forEach(r => {
+    (ALLERGENES_MOTS[r] || []).forEach(m => motsInterdits.add(m.toLowerCase()));
+  });
+  (allergies || []).forEach(a => {
+    (ALLERGENES_MOTS[a] || [a]).forEach(m => motsInterdits.add(m.toLowerCase()));
+  });
+
+  // Catégories à exclure des menus
+  const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts"]);
+
+  // Filtrer les recettes compatibles
+  const pool = Object.keys(recettes).filter(key => {
+    const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
+    if (carte && catsExclues.has(carte.dataset.cat)) return false;
+    if (motsInterdits.size === 0) return true;
+    const r = recettes[key];
+    let texte = (key + " " + (r?.description || "")).toLowerCase();
+    Object.keys(r || {}).forEach(k => {
+      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
+        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
+      }
+    });
+    return ![...motsInterdits].some(m => texte.includes(m));
+  });
+
+  // Mélanger et sélectionner
+  const melange = shuffleArray([...pool]);
+  const utilises = new Set();
+  const pick = () => {
+    const r = melange.find(k => !utilises.has(k));
+    if (r) utilises.add(r);
+    return r || melange[0] || "risotto";
+  };
+
+  const jours = joursSelectionnes;
+  return {
+    semaine: jours.map(jour => ({
+      jour,
+      midi: { recette: pick(), note: "Bon appétit ! 🍽️" },
+      soir: { recette: pick(), note: "Régal assuré ! ✨" }
+    }))
+  };
+}
+
+
+function getNomRecette(key) {
+  const nomsAffichage = {
+    "croquemonsieur":"Croque-monsieur","cremebrulee":"Crème brûlée",
+    "tarteaupommes":"Tarte aux pommes","tartecitron":"Tarte au citron",
+    "boeufbourguignon":"Bœuf bourguignon","gratindauphinois":"Gratin dauphinois",
+    "mousseauchocolat":"Mousse au chocolat","fondantchocolat":"Fondant au chocolat",
+    "ileflottante":"Île flottante","bananabread":"Banana bread",
+    "veloutelegumes":"Velouté de légumes","saladeniçoise":"Salade niçoise",
+    "saladecesar":"Salade César","saladegreque":"Salade grecque",
+    "saladepatasthon":"Salade pâtes thon","saladerizmediterranee":"Salade riz méditerranéenne",
+    "tabulemaison":"Taboulé maison","saladelentilles":"Salade de lentilles",
+    "saladeavocatcrevettes":"Salade avocat crevettes","smoothiebowl":"Smoothie Bowl",
+    "saladequinoa":"Salade de quinoa","overnightoats":"Overnight Oats",
+    "buddhaBowl":"Buddha Bowl","soupemiso":"Soupe Miso","wrappoulet":"Wrap au Poulet",
+    "energyballs":"Energy Balls","pancakesproteine":"Pancakes Protéinés",
+    "bowlacai":"Bowl Açaï","saladepoischiches":"Salade de Pois Chiches",
+    "gaspacho":"Gaspacho","curryledumes":"Curry de Légumes",
+    "painbaguette":"Pain — Baguette","paindemie":"Pain de mie",
+    "patefeuilletee":"Pâte feuilletée","patebrisee":"Pâte brisée","patesablee":"Pâte sablée",
+    "goumeau":           "Galette de Goumeau",
+    "burgermaison":      "Burger Maison",
+    "bolognaisemaison":  "Bolognaise Maison",
+    "tacosmaison":       "Tacos Maison",
+    "padthai":           "Pad Thaï",
+    "currypouletcoco":   "Curry Poulet Coco",
+    "pouletcitronthym":  "Poulet Citron & Thym",
+    "salmonteriyaki":    "Saumon Teriyaki",
+    "risottoprimavera":  "Risotto Primavera",
+    "saumongravlax":     "Saumon Gravlax",
+    "shakshuka":         "Shakshuka",
+    "couscous":          "Couscous Royal",
+    "moussaka":          "Moussaka",
+    "paella":            "Paella",
+    "butterchicken":     "Butter Chicken",
+    "souvlaki":          "Souvlaki",
+    "quichelorraine":    "Quiche Lorraine",
+    "soupeaoignon":      "Soupe à l'Oignon",
+    "dalindien":         "Dal Indien",
+    "rizcantonnais":     "Riz Cantonnais",
+    "hariramarocaine":   "Harira Marocaine",
+    "naan":              "Naans",
+    "verrinetiramisu":   "Verrines Tiramisu",
+    "churros":           "Churros",
+    "potaufeu":          "Pot-au-Feu",
+    "parisbrestreinterpretation": "Paris-Brest",
+    "mojito":            "Mojito",
+    "margarita":         "Margarita",
+    "cosmopolitan":      "Cosmopolitan",
+    "spritz":            "Spritz Aperol",
+    "sangria":           "Sangria",
+    "pinacolada":        "Piña Colada",
+    "daiquiri":          "Daiquiri",
+    "whiskysour":        "Whisky Sour",
+    "virginmojito":      "Virgin Mojito",
+    "limonademaison":    "Limonade Maison",
+    "smoothiemangopassion": "Smoothie Mangue Passion",
+    "citronadementhe":   "Citronnade à la Menthe",
+    "jusPastequeMenuthe":"Jus Pastèque Menthe",
+    "virginpinacolada":  "Virgin Piña Colada",
+    "mojitorose":        "Mojito Rosé",
+    "negroni":           "Negroni",
+    "moscowmule":        "Moscow Mule",
+    "pornstarmartini":   "Porn Star Martini",
+    "hugospritz":        "Hugo Spritz",
+    "cherryblossommocktail": "Cherry Blossom",
+    "oldFashioned":      "Old Fashioned",
+    "gintoniqmaison":    "Gin Tonic Maison",
+    "shrubframboisebasilic": "Shrub Framboise Basilic",
+    "mocktailcoconananas":   "Mocktail Coco Ananas",
+    "painburger":        "Pain Burger (Buns)",
+    "galettetacos":      "Galette à Tacos",
+    "tartetatinpommes": "Tarte Tatin aux Pommes",
+    "croissant": "Croissants au Beurre",
+    "verrineframboisechocolat": "Verrines Framboise Chocolat",
+    "sauteporc": "Sauté de Porc aux Légumes",
+    "veloutecourgette": "Velouté de Courgettes",
+    "ratatouille": "Ratatouille Provençale",
+    "financiers": "Financiers aux Amandes",
+    "choufleurgratin": "Gratin de Chou-fleur",
+    "salmongrillee": "Saumon Grillé au Citron",
+    "sobejaponais": "Soba Japonais Froids",
+    "tartepistache": "Tarte à la Pistache",
+    "agneluroti": "Gigot d'Agneau Rôti",
+    "crepesbretonnes": "Galettes Bretonnes",
+    "stroganov": "Bœuf Stroganoff",
+    "pizzahawaienne": "Pizza Hawaïenne",
+    "pouletescalopes": "Escalopes de Poulet Panées",
+    "tofusaute": "Tofu Sauté Teriyaki",
+    "saladecaprese": "Salade Caprese",
+    "moulesmarinieres": "Moules Marinières",
+    "coktailcosmopolitan": "Sex on the Beach",
+    "mocktailmentheagume": "Mocktail Menthe Concombre",
+    "tartechocolatcaramel": "Tarte Chocolat Caramel",
+    "soupeharira": "Harira Marocaine",
+    "blanquetteveau": "Blanquette de Veau",
+    "navarin": "Navarin d'Agneau",
+    "camembertRoti": "Camembert Rôti",
+    "tarteFlambee": "Tarte Flambée",
+    "pouletMisoGingembre": "Poulet Miso Gingembre",
+    "noodlesWok": "Noodles Sautés Wok",
+    "maffeSenegal": "Maafé Poulet",
+    "gazpachoMelon": "Gaspacho de Melon",
+    "wafflesSales": "Gaufres Salées",
+    "choucroute": "Choucroute Garnie",
+    "sconeBritish": "Scones",
+    "calamarsRomaine": "Calamars à la Romaine",
+    "baklava": "Baklava",
+    "eggsBenedict": "Eggs Benedict",
+    "porkBelly": "Pork Belly Caramélisé",
+    "veloutePoiron": "Velouté de Potiron",
+    "chocolatChaud": "Chocolat Chaud",
+    "granolaMaison": "Granola Maison",
+    "pizzachorizo": "Pizza Chorizo",
+    "pouletteriyaki": "Poulet Teriyaki",
+    "curryverthai": "Curry Vert Thaï",
+    "chiliconcarneV": "Chili Con Carne",
+    "koreanfriedchicken": "Korean Fried Chicken",
+    "risottoMilanese": "Risotto Milanese",
+    "soupeAziatique": "Soupe Asiatique",
+    "tartareSaumon": "Tartare de Saumon",
+    "tiramisufraise": "Tiramisu aux Fraises",
+    "pouletCocoLemon": "Poulet Coco Citron",
+    "crepesSucrées": "Crêpes Sucrées",
+    "poireauVinaigrette": "Poireaux Vinaigrette",
+    "spaetzle": "Spätzle",
+    "wagyuBurger": "Burger Wagyu",
+    "lemonPasta": "Lemon Pasta",
+    "soupeMinestrone": "Minestrone",
+    "lasagneviande":     "Lasagnes Bolognaise",
+    "souvlaki":          "Souvlaki",
+    "butterchicken":     "Butter Chicken",
+    "risottoprimavera":  "Risotto Primavera",
+    "bolognaisemaison":  "Bolognaise Maison",
+    "tacosmaison":       "Tacos Maison",
+    "couscous":          "Couscous Royal",
+    "moussaka":          "Moussaka",
+    "paella":            "Paella",
+    "quichelorraine":    "Quiche Lorraine",
+    "dalindien":         "Dal Indien",
+  };
+  if (nomsAffichage[key]) return nomsAffichage[key];
+  // Fallback : découper camelCase en mots
+  return key.replace(/([A-Z])/g, " $1").replace(/^./, s => s.toUpperCase()).trim();
+}
+
+function getEmoji(key) {
+  const data = recettes[key];
+  return data ? data.emoji : "🍽️";
+}
+
+function afficherMenusSemaine(menus, personnes) {
+  const container = document.getElementById("plan-jours");
+  container.innerHTML = "";
+
+  menus.semaine.forEach(jour => {
+    const div = document.createElement("div");
+    div.className = "plan-jour";
+    div.innerHTML = `
+      <h3 class="plan-jour-titre">${jour.jour}</h3>
+      <div class="plan-repas-row">
+        <div class="plan-repas" onclick="ouvrirRecettePlan('${jour.midi.recette}', ${personnes})">
+          <div class="plan-repas-label">☀️ Midi</div>
+          <div class="plan-repas-emoji">${getEmoji(jour.midi.recette)}</div>
+          <div class="plan-repas-nom">${getNomRecette(jour.midi.recette)}</div>
+          <div class="plan-repas-note">${jour.midi.note}</div>
+        </div>
+        <div class="plan-repas" onclick="ouvrirRecettePlan('${jour.soir.recette}', ${personnes})">
+          <div class="plan-repas-label">🌙 Soir</div>
+          <div class="plan-repas-emoji">${getEmoji(jour.soir.recette)}</div>
+          <div class="plan-repas-nom">${getNomRecette(jour.soir.recette)}</div>
+          <div class="plan-repas-note">${jour.soir.note}</div>
+        </div>
+      </div>`;
+    container.appendChild(div);
+  });
+
+  document.getElementById("plan-form").style.display = "none";
+  document.getElementById("plan-result").style.display = "block";
+  document.getElementById("plan-courses").style.display = "none";
+}
+
+function ouvrirRecettePlan(recetteKey, personnes) {
+  // Ouvrir directement la modale sans changer d'onglet
+  document.getElementById("personnes").value = personnes;
+  choisirRecette(recetteKey);
+}
+
+function afficherCourses() {
+  if (!menusSemaine) return;
+  const personnes = parseInt(document.getElementById("plan-personnes").value);
+  const courses = {};
+
+  menusSemaine.semaine.forEach(jour => {
+    [jour.midi.recette, jour.soir.recette].forEach(key => {
+      const ingrs = getIngredientsCourses(key, personnes);
+      Object.entries(ingrs).forEach(([nom, data]) => {
+        if (!courses[nom]) courses[nom] = { qte: 0, raw: null };
+        if (typeof data.qte === "number" && data.qte > 0) {
+          courses[nom].qte += data.qte;
+        } else if (data.raw) {
+          courses[nom].raw = data.raw;
+        }
+      });
+    });
+  });
+
+  const container = document.getElementById("plan-courses-content");
+  let html = `<p class="courses-subtitle">Pour ${personnes} personne${personnes > 1 ? "s" : ""} — ${menusSemaine.semaine.length * 2} repas</p>`;
+  html += '<div class="courses-liste">';
+
+  Object.entries(courses).sort((a,b) => a[0].localeCompare(b[0])).forEach(([nom, data]) => {
+    let qteStr = "";
+    if (data.qte > 0) {
+      const v = data.qte;
+      qteStr = v % 1 === 0 ? `${v}` : `${v.toFixed(0)}`;
+    } else if (data.raw) {
+      qteStr = data.raw;
+    }
+    html += `<div class="courses-item">
+      <span class="courses-nom">${nom}</span>
+      <span class="courses-qte">${qteStr}</span>
+    </div>`;
+  });
+
+  html += "</div>";
+  container.innerHTML = html;
+  document.getElementById("plan-result").style.display = "none";
+  document.getElementById("plan-courses").style.display = "block";
+}
+
+// Charger menus sauvegardés
+// Vider le cache des menus
+function viderCacheMenus(btn) {
+  try {
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith("cuisineJeje_menus") || k.startsWith("suggestions_")) {
+        localStorage.removeItem(k);
+      }
+    });
+    sessionStorage.removeItem("cuisineJeje_menus");
+  } catch(e) {}
+  // Réafficher le formulaire
+  document.getElementById("plan-form").style.display = "block";
+  document.getElementById("plan-result").style.display = "none";
+  const planJours = document.getElementById("plan-jours");
+  if (planJours) planJours.innerHTML = "";
+  if (btn) { btn.textContent = "✅ Effacé !"; setTimeout(() => btn.textContent = "🗑️ Effacer le menu actuel", 2000); }
+}
+
+// Pré-cocher les tags du formulaire selon le profil utilisateur
+function appliquerProfilSurFormulaire() {
+  const prefs = window.userProfile?.preferences;
+  if (!prefs) return;
+
+  // Pré-cocher régimes dans les tags du formulaire semaine
+  const regimes = prefs.regimes || [];
+  document.querySelectorAll("#plan-form .plan-tag").forEach(btn => {
+    const val = btn.dataset.val;
+    if (regimes.includes(val)) {
+      btn.classList.add("plan-tag-active");
+    }
+  });
+
+  // Pré-remplir personnes depuis le foyer
+  const foyer = window.userProfile?.foyer;
+  if (foyer) {
+    const nb = (foyer.adultes||0) + (foyer.ados||0) + (foyer.enfants||0);
+    const inputP = document.getElementById("plan-personnes");
+    if (inputP && nb > 0) inputP.value = nb;
+  }
+
+  // Pré-remplir allergies dans le champ texte
+  const allergies = [...(prefs.allergies||[]), ...(prefs.allergiesCustom||[])];
+  const inputA = document.getElementById("plan-allergies");
+  if (inputA && allergies.length > 0 && !inputA.value) {
+    inputA.value = allergies.join(", ");
+  }
+}
+
+function chargerMenusAuDemarrage() {
+  // Vider TOUS les menus en cache (version mapping changée)
+  try {
+    const today = new Date().toLocaleDateString("fr-FR");
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith("cuisineJeje_menus")) localStorage.removeItem(k);
+      if (k.startsWith("suggestions_") && !k.startsWith("suggestions_v3_")) localStorage.removeItem(k);
+    });
+  } catch(e) {}
+
+  const saved = chargerMenusSauvegardes();
+  if (saved && saved.menus) {
+    menusSemaine = saved.menus;
+    // Revalider avec les préférences actuelles du profil
+    const regimesActuels = [...(window.userProfile?.preferences?.regimes||[]), ...(window.userProfile?.preferences?.objectifs||[])];
+    const allergiesActuelles = [...(window.userProfile?.preferences?.allergies||[]), ...(window.userProfile?.preferences?.allergiesCustom||[])];
+    if (regimesActuels.length > 0 || allergiesActuelles.length > 0) {
+      menusSemaine = validerRegimeMenus(menusSemaine, regimesActuels, allergiesActuelles);
+    }
+    document.getElementById("plan-form").style.display = "none";
+    afficherMenusSemaine(menusSemaine, saved.personnes || 4);
+    document.getElementById("plan-personnes").value = saved.personnes || 4;
+  }
+}
+
+// Retour au formulaire depuis les menus
+function resetPlanificateur() {
+  document.getElementById("plan-form").style.display = "block";
+  document.getElementById("plan-result").style.display = "none";
+  document.getElementById("plan-courses").style.display = "none";
+  menusSemaine = null;
+  sessionStorage.removeItem(STORAGE_KEY);
+}
+
+// Recherche
+function rechercherRecette(query) {
+  const q = query.toLowerCase().trim();
+  const clear = document.getElementById("search-clear");
+  clear.style.display = q ? "flex" : "none";
+
+  // Si recherche active, basculer vers la grille
+  if (q) {
+    const secAccueil = document.getElementById("section-accueil");
+    const secCartes  = document.getElementById("section-cartes");
+    if (secAccueil) secAccueil.style.display = "none";
+    if (secCartes) { secCartes.classList.add("visible"); }
+    document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  } else {
+    // Si on efface la recherche → retour accueil
+    if (typeof afficherAccueil === "function") afficherAccueil();
+    return;
+  }
+
+  document.querySelectorAll(".carte").forEach(carte => {
+    const nom = carte.querySelector("h2").textContent.toLowerCase();
+    carte.style.display = (!q || nom.includes(q)) ? "flex" : "none";
+  });
+  if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
+
+  // Désactiver les filtres catégories si recherche active
+  if (q) {
+    document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  } else {
+    document.querySelectorAll(".cat-btn")[0].classList.add("active");
+  }
+}
+
+function viderRecherche() {
+  document.getElementById("search-input").value = "";
+  document.getElementById("search-clear").style.display = "none";
+  document.querySelectorAll(".carte").forEach(c => c.style.display = "");
+  // Retour à l'accueil plutôt que tout afficher
+  if (typeof afficherAccueil === "function") afficherAccueil();
+  else afficherTout();
+}
+
+// Afficher tout
+function afficherTout() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  fermerSousMenus();
+  document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  const btnTout = document.getElementById("btn-tout");
+  if (btnTout) btnTout.classList.add("active");
+  // Basculer vers la grille
+  const secAccueil = document.getElementById("section-accueil");
+  const secCartes  = document.getElementById("section-cartes");
+  if (secAccueil) secAccueil.style.display = "none";
+  if (secCartes)  secCartes.classList.add("visible");
+  document.querySelectorAll(".carte").forEach(c => c.style.display = "");
+  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+}
+
+// Toggle sous-menu générique
+function toggleSousMenu(menuId, btn) {
+  // Remonter en haut de page
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  const menu = document.getElementById(menuId);
+  const autreMenu = menuId === "menu-categories" ? "menu-pays" : "menu-categories";
+  const autreBtn  = menuId === "menu-categories" ? "btn-monde" : "btn-categories";
+  const visible = menu.style.display !== "none";
+
+  // Fermer l'autre sous-menu
+  document.getElementById(autreMenu).style.display = "none";
+  document.getElementById(autreBtn).classList.remove("active");
+
+  if (visible) {
+    menu.style.display = "none";
+    btn.classList.remove("active");
+  } else {
+    menu.style.display = "flex";
+    btn.classList.add("active");
+    document.getElementById("btn-tout").classList.remove("active");
+    document.querySelectorAll(`#${menuId} .pays-btn`).forEach(b => b.classList.remove("active"));
+    // Basculer vers la grille si on est sur l'accueil
+    const secAccueil = document.getElementById("section-accueil");
+    const secCartes  = document.getElementById("section-cartes");
+    if (secAccueil) secAccueil.style.display = "none";
+    if (secCartes) { secCartes.classList.add("visible"); }
+    // Tout afficher dans la grille
+    document.querySelectorAll(".carte").forEach(c => c.style.display = "");
+    if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+  }
+}
+
+function fermerSousMenus() {
+  ["menu-categories", "menu-pays"].forEach(id => {
+    document.getElementById(id).style.display = "none";
+  });
+  document.getElementById("btn-categories").classList.remove("active");
+  document.getElementById("btn-monde").classList.remove("active");
+}
+
+// Filtre catégories (depuis sous-menu)
+
+// Utilitaire : basculer vers la grille des recettes
+function basculeVersGrille() {
+  const secAccueil = document.getElementById("section-accueil");
+  const secCartes  = document.getElementById("section-cartes");
+  if (secAccueil) secAccueil.style.display = "none";
+  if (secCartes) {
+    secCartes.classList.add("visible");
+    // S'assurer que le style inline ne bloque pas
+    secCartes.style.display = "";
+  }
+}
+function filtrerCategorie(cat) {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  basculeVersGrille();
+  document.querySelectorAll("#menu-categories .pays-btn").forEach(b => b.classList.remove("active"));
+  event.target.classList.add("active");
+  document.querySelectorAll(".carte").forEach(c => {
+    c.style.display = (c.dataset.cat === cat) ? "" : "none";
+  });
+  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+}
+
+// Filtre par pays
+function filtrerPays(pays) {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  basculeVersGrille();
+  document.querySelectorAll("#menu-pays .pays-btn").forEach(b => b.classList.remove("active"));
+  event.target.classList.add("active");
+  document.querySelectorAll(".carte").forEach(c => {
+    c.style.display = (c.dataset.pays === pays) ? "" : "none";
+  });
+  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+}
+
+// Calculer depuis une carte et afficher en modal
+function calculerCarte(recette, inputId) {
+  const input = document.getElementById(inputId);
+  const val = parseInt(input.value) || 1;
+  document.getElementById("recette").value = recette;
+  document.getElementById("personnes").value = val;
+  calculer();
+  setTimeout(() => {
+    const res = document.getElementById("resultat").innerHTML;
+    document.getElementById("modal-resultat").innerHTML = res;
+    document.getElementById("modal-calc").classList.add("visible");
+  }, 50);
+}
+
+// Ouvrir la fiche recette depuis une carte en lisant son input
+function ouvrirFiche(recette, inputId) {
+  const input = inputId ? document.getElementById(inputId) : null;
+  const val = input ? (parseInt(input.value) || 1) : null;
+  if (val !== null) {
+    document.getElementById("personnes").value = val;
+  }
+  choisirRecette(recette);
+}
+
+function fermerModal() {
+  document.getElementById("modal-calc").classList.remove("visible");
+}
+
+// Nav bottom
+function afficherSection(section, btn) {
+  document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  // Fermer les sous-menus catégories/monde
+  fermerSousMenus();
+  const calc       = document.getElementById("section-calculateur");
+  const cartes     = document.getElementById("section-cartes");   // grille complète
+  const accueilSec = document.getElementById("section-accueil"); // page accueil
+  const menuCats   = document.querySelector(".menu-cats");
+  const planif     = document.getElementById("section-planificateur");
+  const searchBar  = document.querySelector(".search-bar");
+
+  if (section === "calculateur") {
+    calc.style.display = "block";
+    if (cartes)     { cartes.classList.remove("visible"); }
+    if (accueilSec) accueilSec.style.display = "none";
+    menuCats.style.display = "none";
+    planif.style.display = "none";
+    searchBar.style.display = "none";
+    document.getElementById("menu-categories").style.display = "none";
+    document.getElementById("menu-pays").style.display = "none";
+  } else if (section === "planificateur") {
+    calc.style.display = "none";
+    if (cartes)     { cartes.classList.remove("visible"); }
+    if (accueilSec) accueilSec.style.display = "none";
+    menuCats.style.display = "none";
+    searchBar.style.display = "none";
+    // Pré-remplir le formulaire avec le profil
+    setTimeout(() => { if (typeof appliquerProfilSurFormulaire === "function") appliquerProfilSurFormulaire(); }, 200);
+    document.getElementById("menu-categories").style.display = "none";
+    document.getElementById("menu-pays").style.display = "none";
+
+    // Restaurer l'onglet qui était actif avant de quitter
+    const tabActif = window._planTabActif || "semaine";
+    if (tabActif === "festif") {
+      planif.style.display = "none";
+      document.getElementById("section-festif").style.display = "block";
+      chargerMenuFestifAuDemarrage();
+      // Mettre à jour les onglets
+      document.getElementById("tab-semaine") && document.getElementById("tab-semaine").classList.remove("active");
+      document.getElementById("tab-semaine2") && document.getElementById("tab-semaine2").classList.remove("active");
+      document.getElementById("tab-festif") && document.getElementById("tab-festif").classList.add("active");
+      document.getElementById("tab-festif2") && document.getElementById("tab-festif2").classList.add("active");
+    } else {
+      planif.style.display = "block";
+      document.getElementById("section-festif").style.display = "none";
+      chargerMenusAuDemarrage();
+      chargerMenuFestifAuDemarrage();
+    }
+  } else {
+    calc.style.display = "none";
+    planif.style.display = "none";
+    menuCats.style.display = "flex";
+    searchBar.style.display = "flex";
+    // Retour vers l'accueil personnalisé
+    if (accueilSec) accueilSec.style.display = "block";
+    if (cartes) { cartes.classList.remove("visible"); } // ← retirer visible !
+    if (typeof chargerAccueil === "function") chargerAccueil();
+    document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+    const btnA = document.getElementById("btn-accueil");
+    if (btnA) btnA.classList.add("active");
+  }
+}
