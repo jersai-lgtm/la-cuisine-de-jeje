@@ -1760,3 +1760,7 @@ function afficherSection(section, btn) {
     if (btnA) btnA.classList.add("active");
   }
 }
+
+
+// Alias pour compatibilité avec les boutons HTML
+function genererMenusIA(btn) { return genererMenus(btn); }
