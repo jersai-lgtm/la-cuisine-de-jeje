@@ -814,7 +814,6 @@ function sauvegarderMenus(menus, personnes, jours) {
     const today = new Date().toLocaleDateString("fr-FR");
     const uid = window.currentUser?.uid || "anon";
     const regimes = (window.userProfile?.preferences?.regimes || []).sort().join("-");
-    // Clé unique : date + uid + régimes → invalide automatiquement si profil change
     const key = STORAGE_KEY + "_" + today + "_" + uid + "_" + regimes;
     const data = { menus, personnes, jours, date: today };
     sessionStorage.setItem(key, JSON.stringify(data));
@@ -822,6 +821,22 @@ function sauvegarderMenus(menus, personnes, jours) {
     Object.keys(localStorage).forEach(k => {
       if (k.startsWith(STORAGE_KEY)) localStorage.removeItem(k);
     });
+    // Sauvegarder aussi dans Firebase pour l'historique accueil
+    if (window.currentUser && window.db) {
+      const resume = menus.semaine?.slice(0, 3).map(j => ({
+        jour: j.jour,
+        midi: j.midi?.recette || j.midi,
+        soir: j.soir?.recette || j.soir
+      })) || [];
+      const entry = { date: today, jours: jours?.length || 5, resume };
+      const hist = window.userProfile?.historiqueMenus || [];
+      const newHist = [entry, ...hist.filter(h => h.date !== today)].slice(0, 5);
+      window.userProfile = window.userProfile || {};
+      window.userProfile.historiqueMenus = newHist;
+      window.db.collection("utilisateurs").doc(window.currentUser.uid)
+        .update({ historiqueMenus: newHist })
+        .catch(() => {});
+    }
   } catch(e) {}
 }
 
