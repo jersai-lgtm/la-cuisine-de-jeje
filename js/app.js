@@ -1,5 +1,3 @@
-
-
 // ==============================
 // ACCUEIL PERSONNALISÉ
 // ==============================
@@ -443,4 +441,3 @@ const INGREDIENTS_LABELS = {
   pralin: "🌰 Pâte de pralin", proteine: "💪 Protéine", dattes: "🌴 Dattes",
   vermicelles: "🍜 Vermicelles", edamame: "🫛 Edamame",
 };
-
