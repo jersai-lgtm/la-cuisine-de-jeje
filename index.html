@@ -4476,13 +4476,26 @@ function appliquerProfilSurFormulaire() {
 }
 
 function chargerMenusAuDemarrage() {
+  // Vider TOUS les menus en cache (version mapping changée)
+  try {
+    const today = new Date().toLocaleDateString("fr-FR");
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith("cuisineJeje_menus")) localStorage.removeItem(k);
+      if (k.startsWith("suggestions_") && !k.startsWith("suggestions_v3_")) localStorage.removeItem(k);
+    });
+  } catch(e) {}
+
   const saved = chargerMenusSauvegardes();
   if (saved && saved.menus) {
     menusSemaine = saved.menus;
-    // Afficher directement les menus sauvegardés
+    // Revalider avec les préférences actuelles du profil
+    const regimesActuels = [...(window.userProfile?.preferences?.regimes||[]), ...(window.userProfile?.preferences?.objectifs||[])];
+    const allergiesActuelles = [...(window.userProfile?.preferences?.allergies||[]), ...(window.userProfile?.preferences?.allergiesCustom||[])];
+    if (regimesActuels.length > 0 || allergiesActuelles.length > 0) {
+      menusSemaine = validerRegimeMenus(menusSemaine, regimesActuels, allergiesActuelles);
+    }
     document.getElementById("plan-form").style.display = "none";
-    afficherMenusSemaine(saved.menus, saved.personnes || 4);
-    // Mettre à jour le champ personnes
+    afficherMenusSemaine(menusSemaine, saved.personnes || 4);
     document.getElementById("plan-personnes").value = saved.personnes || 4;
   }
 }
