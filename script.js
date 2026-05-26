@@ -11,9 +11,9 @@ const ALLERGENES_MOTS = {
   "moutarde":       ["moutarde"],
   "sésame":         ["sésame","sesame","tahini"],
   "sulfites":       ["vin","vinaigre","champagne","prosecco","riesling"],
-  "végétarien":     ["bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami","nduja","jarret","pork","bacon","pancetta"],
-  "pesco-végétarien": ["bœuf","veau","porc","poulet","agneau","canard","jambon","lardons","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami"],
-  "vegan":          ["lait","fromage","beurre","crème","œuf","oeuf","oeufs","miel","mozzarella","parmesan","mascarpone","yaourt","bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","saumon","thon","crevette","anchois","viande","bacon","pancetta","prosciutto","guanciale","salami","volaille","dinde"],
+  "végétarien":     ["bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami","nduja","jarret","pork","bacon","pancetta","volaille","dinde","pintade","foie","rillettes","andouille","boudin","chipolata","pepperoni","coppa","bresaola","magret","confit","pulled","ribs","speck","ventreche"],
+  "pesco-végétarien": ["bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","guanciale","prosciutto","viande","salami","nduja","pork","bacon","pancetta","volaille","dinde","pintade","foie","andouille","boudin","pepperoni","coppa","bresaola","magret","confit","pulled","ribs"],
+  "vegan": ["lait","fromage","beurre","crème","œuf","oeuf","oeufs","miel","mozzarella","parmesan","mascarpone","yaourt","ricotta","bœuf","boeuf","veau","porc","poulet","agneau","canard","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","saumon","thon","crevette","anchois","viande","bacon","pancetta","prosciutto","guanciale","salami","volaille","dinde","foie","rillettes","andouille","boudin","pepperoni"],
   "sans-gluten":    ["farine","blé","semoule","pâte","pain","biscuit","gaufre","crêpe","lasagne","spätzle","couscous"],
   "sans-lactose":   ["lait","fromage","beurre","crème","yaourt","mascarpone","mozzarella","parmesan","gruyère","cheddar","ricotta"],
   "protéiné":       [],
@@ -227,7 +227,8 @@ function chargerAccueilSuggestions() {
   if (!row) return;
 
   const today = new Date().toLocaleDateString("fr-FR");
-  const storageKey = "suggestions_" + today + "_" + (window.currentUser?.uid || "anon");
+  const regimesKey = (window.userProfile?.preferences?.regimes || []).sort().join("-");
+  const storageKey = "suggestions_" + today + "_" + (window.currentUser?.uid || "anon") + "_" + regimesKey;
 
   // Réutiliser les suggestions du jour si déjà générées
   try {
@@ -259,7 +260,13 @@ function chargerAccueilSuggestions() {
     if (exclus.has(key)) return false;
     if (motsExclus.size === 0) return true;
     const r = recettes[key];
-    const texte = [key, r?.description || ""].join(" ").toLowerCase();
+    let texte = [key, r?.description || ""].join(" ").toLowerCase();
+    // Lire les noms des ingrédients (clés des tableaux)
+    Object.keys(r || {}).forEach(k => {
+      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
+        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
+      }
+    });
     return ![...motsExclus].some(m => texte.includes(m));
   });
 
