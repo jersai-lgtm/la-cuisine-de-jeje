@@ -70,20 +70,22 @@ gtag('config', 'G-390C5MY2SS');
 <!-- SOUS-MENU CATÉGORIES -->
 <div class="menu-pays" id="menu-categories" style="display:none">
   <button class="pays-btn" onclick="filtrerCategorie('plats')">🍽️ Plats</button>
-  <button class="pays-btn" onclick="filtrerCategorie('soupes')">🍲 Soupes & Entrées</button>
-  <button class="pays-btn" onclick="filtrerCategorie('entrees')">🥗 Entrées</button>
-  <button class="pays-btn" onclick="filtrerCategorie('salades')">🥙 Salades</button>
+  <button class="pays-btn" onclick="filtrerCategorie('soupes')">🍲 Soupes</button>
+  <button class="pays-btn" onclick="filtrerCategorie('entrees')">🫕 Entrées</button>
+  <button class="pays-btn" onclick="filtrerCategorie('salades')">🥗 Salades</button>
   <button class="pays-btn" onclick="filtrerCategorie('healthy')">💚 Healthy</button>
   <button class="pays-btn" onclick="filtrerCategorie('brunch')">🍳 Brunch</button>
   <button class="pays-btn" onclick="filtrerCategorie('encas')">🥪 Encas</button>
   <button class="pays-btn" onclick="filtrerCategorie('pizzas')">🍕 Pizzas</button>
   <button class="pays-btn" onclick="filtrerCategorie('desserts')">🍰 Desserts</button>
   <button class="pays-btn" onclick="filtrerCategorie('boulangerie')">🥖 Boulangerie</button>
-  <button class="pays-btn" onclick="filtrerCategorie('cocktails')">🍹 Cocktails</button>
-  <button class="pays-btn" onclick="filtrerCategorie('mocktails')">🧃 Mocktails</button>
-  <button class="pays-btn" onclick="filtrerCategorie('salades')">🥙 Salades</button>
-  <button class="pays-btn" onclick="filtrerCategorie('cocktails')">🍹 Cocktails (avec alcool)</button>
-  <button class="pays-btn" onclick="filtrerCategorie('mocktails')">🥤 Cocktails (sans alcool)</button>
+  <button class="pays-btn" onclick="filtrerCategorieDrinks()">🍹 Cocktails ▾</button>
+</div>
+<!-- Sous-menu cocktails -->
+<div class="menu-pays" id="menu-cocktails" style="display:none">
+  <button class="pays-btn" onclick="filtrerCategorie('cocktails')">🍸 Avec alcool</button>
+  <button class="pays-btn" onclick="filtrerCategorie('mocktails')">🧃 Sans alcool</button>
+  <button class="pays-btn" onclick="filtrerCategorieDrinks()">✕ Fermer</button>
 </div>
 
 <!-- SOUS-MENU PAYS -->
