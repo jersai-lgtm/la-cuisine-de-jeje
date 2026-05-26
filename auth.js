@@ -25,7 +25,16 @@ _auth.onAuthStateChanged(async function(user) {
   if (user) {
     await chargerProfil(user);
     afficherUtilisateurConnecte(user);
-    // Charger l'accueil personnalisé et appliquer les préférences
+    // Purger le cache menus/suggestions pour appliquer le profil
+    try {
+      Object.keys(localStorage).forEach(k => {
+        if (k.startsWith("cuisineJeje_menus") || k.startsWith("suggestions_")) {
+          localStorage.removeItem(k);
+        }
+      });
+      sessionStorage.removeItem("cuisineJeje_menus");
+    } catch(e) {}
+    // Charger l'accueil et appliquer les préférences
     setTimeout(() => {
       if (typeof chargerAccueil === 'function') chargerAccueil();
       if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
