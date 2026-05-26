@@ -4087,7 +4087,7 @@ function normaliserClesMenus(menus) {
 function validerRegimeMenus(menus, regimes, allergies) {
   if (!menus?.semaine) return menus;
 
-  // Construire la liste des mots interdits
+  // Construire mots interdits
   const motsInterdits = new Set();
   regimes.forEach(r => {
     (ALLERGENES_MOTS[r] || []).forEach(m => motsInterdits.add(m.toLowerCase()));
@@ -4098,52 +4098,44 @@ function validerRegimeMenus(menus, regimes, allergies) {
 
   if (motsInterdits.size === 0) return menus;
 
-  // Construire pool de recettes valides
-  const recettesValides = Object.keys(recettes).filter(key => {
+  // Tester une recette
+  function recetteCompatible(key) {
+    if (!key) return false;
     const r = recettes[key];
-    let texte = (key + " " + (r?.description || "")).toLowerCase();
-    // Ajouter les clés (noms) du premier tableau
-    Object.keys(r || {}).forEach(k => {
+    if (!r) return false; // clé inconnue = invalide
+    let texte = (key + " " + (r.description || "")).toLowerCase();
+    Object.keys(r).forEach(k => {
       if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
         texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
-        texte += " " + Object.values(r[k][0]).join(" ").toLowerCase();
       }
     });
     return ![...motsInterdits].some(m => texte.includes(m));
-  });
+  }
 
-  // Recettes déjà utilisées dans le menu
+  // Pool de recettes valides non utilisées
   const utilisees = new Set();
   menus.semaine.forEach(j => {
-    utilisees.add(j.midi?.recette);
-    utilisees.add(j.soir?.recette);
+    if (j.midi?.recette) utilisees.add(j.midi.recette);
+    if (j.soir?.recette) utilisees.add(j.soir.recette);
   });
 
-  // Vérifier et remplacer chaque repas incompatible
+  const recettesValides = Object.keys(recettes).filter(k => recetteCompatible(k));
+
+  // Remplacer toute recette incompatible OU inconnue
   menus.semaine.forEach(jour => {
     ["midi", "soir"].forEach(moment => {
       const repas = jour[moment];
-      if (!repas?.recette) return;
+      if (!repas) return;
       const key = repas.recette;
-      const r = recettes[key];
-      if (!r) return;
 
-      let texte = (key + " " + (r?.description || "")).toLowerCase();
-      Object.keys(r || {}).forEach(k => {
-        if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
-          texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
-          texte += " " + Object.values(r[k][0]).join(" ").toLowerCase();
-        }
-      });
-
-      const incompatible = [...motsInterdits].some(m => texte.includes(m));
-      if (incompatible) {
-        // Trouver une alternative valide non encore utilisée
-        const alternative = recettesValides.find(k => !utilisees.has(k));
-        if (alternative) {
+      if (!recetteCompatible(key)) {
+        // Trouver alternative valide non encore utilisée
+        const alt = recettesValides.find(k => !utilisees.has(k));
+        if (alt) {
+          console.log(`[Régime] ${key} → remplacé par ${alt}`);
           utilisees.delete(key);
-          utilisees.add(alternative);
-          repas.recette = alternative;
+          utilisees.add(alt);
+          repas.recette = alt;
           repas.note = "✅ Adapté à votre régime";
         }
       }
@@ -4152,7 +4144,6 @@ function validerRegimeMenus(menus, regimes, allergies) {
 
   return menus;
 }
-
 function corrigerDoublons(menus, joursSelectionnes, tags, allergies) {
   // Collecter toutes les recettes utilisées
   const utilisees = new Set();
