@@ -57,8 +57,8 @@ function chargerAccueilMenus() {
     row.innerHTML = `<div class="accueil-empty">Génère ton premier menu dans l'onglet Menus !</div>`;
     return;
   }
-  // Prendre le dernier menu
-  const dernier = hist[hist.length - 1];
+  // Prendre le menu le plus récent (index 0)
+  const dernier = hist[0];
   const semaine = dernier?.menu?.semaine || [];
   if (semaine.length === 0) {
     row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`;
@@ -156,7 +156,21 @@ function chargerAccueilSuggestions() {
   }
 
   const _catsExclues = new Set(["boulangerie","cocktails","mocktails"]);
-  const _recExclues = new Set(["croissant","patepizza","patelasagne","financiers","tartetatinpommes","tartepistache","tartechocolatcaramel"]);
+  const _recExclues = new Set([
+    "croissant","patepizza","patelasagne","financiers","tartetatinpommes","tartepistache",
+    "tartechocolatcaramel","overnightoats","granolaMaison","chocolatChaud","smoothiebowl",
+    "bowlacai","pancakesproteine","smoothiemangopassion","energyballs","bananabread",
+    "painbaguette","paindemie","patefeuilletee","patebrisee","patesablee",
+    "painburger","galettetacos","brioche","painauchocolat","sconeBritish",
+    "mojito","margarita","cosmopolitan","spritz","sangria","pinacolada","daiquiri",
+    "whiskysour","virginmojito","limonademaison","citronadementhe","virginpinacolada",
+    "mojitorose","negroni","moscowmule","pornstarmartini","hugospritz",
+    "cherryblossommocktail","oldFashioned","gintoniqmaison","shrubframboisebasilic",
+    "mocktailcoconananas","coktailcosmopolitan","mocktailmentheagume",
+    "aperolspritzrosa","blueLagoon","espressoMartini","sidecarvintage",
+    "gingerlemondrop","tequilasunrise","punchfruitsrouges","mocktailberrybliss",
+    "mocktailcoconorchidee"
+  ]);
 
   let pool = toutes.filter(key => {
     if (exclus.has(key)) return false;
@@ -839,15 +853,10 @@ function sauvegarderMenus(menus, personnes, jours) {
     Object.keys(localStorage).forEach(k => {
       if (k.startsWith(STORAGE_KEY)) localStorage.removeItem(k);
     });
-    // Sauvegarder aussi en localStorage pour l'historique accueil (connecté ou non)
+    // Sauvegarder le menu complet en localStorage pour l'accueil
     try {
-      const resume = menus.semaine?.slice(0, 3).map(j => ({
-        jour: j.jour,
-        midi: j.midi?.recette || j.midi,
-        soir: j.soir?.recette || j.soir
-      })) || [];
       const today2 = new Date().toLocaleDateString("fr-FR");
-      const entry = { date: today2, jours: jours?.length || 5, resume };
+      const entry = { date: today2, jours: jours?.length || 5, menu: menus };
       const hist2 = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]");
       const newHist2 = [entry, ...hist2.filter(h => h.date !== today2)].slice(0, 5);
       localStorage.setItem("cuisineJeje_histMenus", JSON.stringify(newHist2));
