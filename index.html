@@ -4006,7 +4006,33 @@ Réponds UNIQUEMENT en JSON valide :
 }`;
 
   try {
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    const response = await fetch("https://la-cuisine-de-jeje-fgdmxm73c-jeromesainthot-9281s-projects.vercel.app/api/menu", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ prompt: prompt })
+    });
+    const data = await response.json();
+    const text = data.content?.[0]?.text || "";
+    const clean = text.replace(/```json|```/g, "").trim();
+    menusSemaine = JSON.parse(clean);
+
+    // DEBUG
+    console.log("=== DEBUG RÉGIME ===");
+    console.log("tagsFinaux:", tagsFinaux);
+    console.log("Menu brut IA:", JSON.stringify(menusSemaine?.semaine?.map(j=>({jour:j.jour,midi:j.midi?.recette,soir:j.soir?.recette}))));
+
+    menusSemaine = normaliserClesMenus(menusSemaine);
+    menusSemaine = corrigerDoublons(menusSemaine, joursSelectionnes, tags, allergies);
+    menusSemaine = validerRegimeMenus(menusSemaine, tagsFinaux, allergiesFinales);
+
+    console.log("Menu après validation:", JSON.stringify(menusSemaine?.semaine?.map(j=>({jour:j.jour,midi:j.midi?.recette,soir:j.soir?.recette}))));
+
+    sauvegarderMenus(menusSemaine, personnes, joursSelectionnes);
+    afficherMenusSemaine(menusSemaine, parseInt(personnes));
+
+  } catch(err) {
+    // Fallback si proxy indispo
+    const _ignore = await fetch("https://DISABLED", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
