@@ -953,37 +953,59 @@ async function genererMenus() {
   const eviter = allergiesFinales.length ? `ALLERGIES ET INTOLÉRANCES - NE JAMAIS PROPOSER ces ingrédients : ${allergiesFinales.join(", ")}.` : "";
   const instructionsRegimeFinal = instructionsRegime ? `\n⚠️ RÉGIME ALIMENTAIRE - RÈGLE ABSOLUE : ${instructionsRegime}` : "";
   const joursStr = joursSelectionnes.join(", ");
+  const formatRepas = window._formatRepas || "midi-soir";
 
   // Ajouter un seed aléatoire pour forcer la variété
   const seed = Math.floor(Math.random() * 1000);
-  const prompt = `Tu es un chef cuisinier créatif (seed: ${seed}). Génère un plan de menus VARIÉ et ORIGINAL pour ces jours : ${joursStr} (midi et soir) pour ${personnes} personne(s).
-${preferences} ${eviter}${instructionsRegimeFinal}
-
-Recettes disponibles : ${recettesDispos}
-
-RÈGLES STRICTES :
-- Utilise UNIQUEMENT les recettes de la liste ci-dessus (déjà filtrées selon le régime)
-- Dans le JSON, le champ "recette" doit contenir la CLÉ exacte (ex: "wrappoulet", pas "Wrap au Poulet")
-- AUCUNE répétition sur toute la semaine
-- Une recette ne peut apparaître QU'UNE SEULE FOIS sur les 14 repas
-- RESPECTE ABSOLUMENT le régime alimentaire — c'est non négociable
-- NE JAMAIS inventer une recette qui n'est pas dans la liste disponible
-- Varie les cuisines (française, italienne, asiatique, mexicaine...)
-- Équilibre les repas (pas que des desserts!)
-- Midi : plutôt salades, plats légers, healthy
-- Soir : plats plus consistants et chauds
-- Sois CRÉATIF et VARIÉ - évite les recettes trop classiques/attendues
-
-Réponds UNIQUEMENT en JSON valide :
-{
+  const isComplet = formatRepas === "complet";
+  const structureJSON = isComplet ? `{
   "semaine": [
     {
       "jour": "Lundi",
-      "midi": {"recette": "nomRecette", "note": "courte note sympa"},
-      "soir": {"recette": "nomRecette", "note": "courte note sympa"}
+      "midi": {
+        "entree": {"recette": "cleRecette", "note": "note"},
+        "plat":   {"recette": "cleRecette", "note": "note"},
+        "dessert":{"recette": "cleRecette", "note": "note"}
+      },
+      "soir": {
+        "entree": {"recette": "cleRecette", "note": "note"},
+        "plat":   {"recette": "cleRecette", "note": "note"},
+        "dessert":{"recette": "cleRecette", "note": "note"}
+      }
+    }
+  ]
+}` : `{
+  "semaine": [
+    {
+      "jour": "Lundi",
+      "midi": {"recette": "cleRecette", "note": "courte note sympa"},
+      "soir": {"recette": "cleRecette", "note": "courte note sympa"}
     }
   ]
 }`;
+
+  const reglesMidi = isComplet
+    ? `- Midi et Soir : chaque repas a UNE entrée légère, UN plat principal, UN dessert
+- Entrées : salades, soupes, verrines
+- Plats : plats chauds consistants
+- Desserts : uniquement recettes de type dessert`
+    : `- Midi : plutôt salades, plats légers, healthy
+- Soir : plats plus consistants et chauds`;
+
+  const formatDesc = isComplet ? "midi et soir avec entrée/plat/dessert" : "midi et soir";
+  const prompt = "Tu es un chef cuisinier créatif (seed: " + seed + "). Génère un plan de menus VARIÉ et ORIGINAL pour ces jours : " + joursStr + " (" + formatDesc + ") pour " + personnes + " personne(s).\n" +
+    preferences + " " + eviter + instructionsRegimeFinal + "\n\n" +
+    "Recettes disponibles : " + recettesDispos + "\n\n" +
+    "RÈGLES STRICTES :\n" +
+    "- Utilise UNIQUEMENT les recettes de la liste ci-dessus (déjà filtrées selon le régime)\n" +
+    "- Dans le JSON, le champ \"recette\" doit contenir la CLÉ exacte (ex: \"wrappoulet\", pas \"Wrap au Poulet\")\n" +
+    "- AUCUNE répétition sur toute la semaine\n" +
+    "- RESPECTE ABSOLUMENT le régime alimentaire — c\'est non négociable\n" +
+    "- NE JAMAIS inventer une recette qui n\'est pas dans la liste disponible\n" +
+    "- Varie les cuisines (française, italienne, asiatique, mexicaine...)\n" +
+    reglesMidi + "\n" +
+    "- Sois CRÉATIF et VARIÉ\n\n" +
+    "Réponds UNIQUEMENT en JSON valide :\n" + structureJSON;
 
   try {
     const response = await fetch("https://la-cuisine-de-jeje-fgdmxm73c-jeromesainthot-9281s-projects.vercel.app/api/menu", {
@@ -1185,6 +1207,12 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
 
   // Catégories à exclure des menus
   const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts"]);
+  // Recettes à exclure spécifiquement des repas
+  const _recExclues2 = new Set(["croissant","patepizza","patelasagne","financiers",
+    "tartetatinpommes","tartepistache","tartechocolatcaramel","madeleine","muffins",
+    "crepes","granolaMaison","chocolatChaud","energyballs","overnightoats","bananabread",
+    "sconeBritish","baklava","churros","cremebrulee","mousseauchocolat","fondantchocolat",
+    "ileflottante","verrinetiramisu","tiramisufraise","pancakesproteine","parisbrestreinterpretation"]);
 
   // Filtrer les recettes compatibles
   const pool = Object.keys(recettes).filter(key => {
@@ -1360,6 +1388,19 @@ function getNomRecette(key) {
     "paella":            "Paella",
     "quichelorraine":    "Quiche Lorraine",
     "dalindien":         "Dal Indien",
+    "pizzabresilienne":  "Pizza Brésilienne",
+    "bibimbap":          "Bibimbap",
+    "gyozas":            "Gyozas",
+    "sushimaison":       "Sushis Maison",
+    "tom_yam":           "Tom Yam",
+    "crevettespilpil":   "Crevettes Pil Pil",
+    "pizzamargherita":   "Pizza Margherita",
+    "pizzasaumonepinards": "Pizza Saumon Épinards",
+    "tortillaespagnole": "Tortilla Espagnole",
+    "pizzavegetarienne": "Pizza Végétarienne",
+    "crepes":            "Crêpes Sucrées",
+    "lasagne":           "Pâte à Lasagne",
+    "patepizza":         "Pâte à Pizza",
   };
   if (nomsAffichage[key]) return nomsAffichage[key];
   // Fallback : découper camelCase en mots
@@ -1374,16 +1415,57 @@ function getEmoji(key) {
 function afficherMenusSemaine(menus, personnes) {
   const container = document.getElementById("plan-jours");
   container.innerHTML = "";
+  const isComplet = window._formatRepas === "complet";
 
   menus.semaine.forEach(jour => {
     const div = document.createElement("div");
     div.className = "plan-jour";
+
+    // Générer le HTML selon le format
+    const genRepas = (moment, label, emoji) => {
+      const r = jour[moment];
+      if (!r) return "";
+      if (isComplet && r.plat) {
+        // Format entrée/plat/dessert
+        return `
+          <div class="plan-repas-col">
+            <div class="plan-repas-label">${emoji} ${label}</div>
+            ${r.entree ? `<div class="plan-repas-sous" onclick="ouvrirRecettePlan('${r.entree.recette}', ${personnes})">
+              <span class="plan-sous-label">🥗 Entrée</span>
+              <span>${getEmoji(r.entree.recette)}</span>
+              <span class="plan-repas-nom">${getNomRecette(r.entree.recette)}</span>
+              <span class="plan-repas-note">${r.entree.note || ""}</span>
+            </div>` : ""}
+            ${r.plat ? `<div class="plan-repas-sous" onclick="ouvrirRecettePlan('${r.plat.recette}', ${personnes})">
+              <span class="plan-sous-label">🍽️ Plat</span>
+              <span>${getEmoji(r.plat.recette)}</span>
+              <span class="plan-repas-nom">${getNomRecette(r.plat.recette)}</span>
+              <span class="plan-repas-note">${r.plat.note || ""}</span>
+            </div>` : ""}
+            ${r.dessert ? `<div class="plan-repas-sous" onclick="ouvrirRecettePlan('${r.dessert.recette}', ${personnes})">
+              <span class="plan-sous-label">🍰 Dessert</span>
+              <span>${getEmoji(r.dessert.recette)}</span>
+              <span class="plan-repas-nom">${getNomRecette(r.dessert.recette)}</span>
+              <span class="plan-repas-note">${r.dessert.note || ""}</span>
+            </div>` : ""}
+          </div>`;
+      } else {
+        // Format simple midi/soir
+        const recette = r.recette || r;
+        const note = r.note || "";
+        return `
+          <div class="plan-repas" onclick="ouvrirRecettePlan('${recette}', ${personnes})">
+            <div class="plan-repas-label">${emoji} ${label}</div>
+            <div class="plan-repas-emoji">${getEmoji(recette)}</div>`;
+      }
+    };
+
     div.innerHTML = `
       <h3 class="plan-jour-titre">${jour.jour}</h3>
       <div class="plan-repas-row">
-        <div class="plan-repas" onclick="ouvrirRecettePlan('${jour.midi.recette}', ${personnes})">
+        <div class="plan-repas" onclick="ouvrirRecettePlan('${jour.midi?.recette || ""}', ${personnes})">
           <div class="plan-repas-label">☀️ Midi</div>
-          <div class="plan-repas-emoji">${getEmoji(jour.midi.recette)}</div>
+          <div class="plan-repas-emoji">${getEmoji(jour.midi?.recette || "")}</div>
           <div class="plan-repas-nom">${getNomRecette(jour.midi.recette)}</div>
           <div class="plan-repas-note">${jour.midi.note}</div>
         </div>
@@ -1764,3 +1846,12 @@ function afficherSection(section, btn) {
 
 // Alias pour compatibilité avec les boutons HTML
 function genererMenusIA(btn) { return genererMenus(btn); }
+
+// Format repas
+window._formatRepas = "midi-soir"; // défaut
+
+function setFormatRepas(format, btn) {
+  window._formatRepas = format;
+  document.querySelectorAll("#format-midi-soir, #format-complet").forEach(b => b.classList.remove("plan-tag-active"));
+  btn.classList.add("plan-tag-active");
+}
