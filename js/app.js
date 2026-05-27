@@ -1,6 +1,44 @@
 
 
 // ==============================
+// RECETTES NON-REPAS (boulangerie, desserts, cocktails, mocktails, brunch)
+// Liste fiable issue des data-cat de index.html — NE dépend PAS du DOM.
+// Utilisée pour exclure ces recettes de la génération de menus.
+// ==============================
+const RECETTES_NON_REPAS = new Set([
+  "amarettoSour","aperolPamplemousse","aperolspritzrosa","baklava","bananabread","bellini",
+  "blueLagoon","bowlacai","canelebordelais","cheesecake","cherryblossommocktail","chocolatChaud",
+  "churros","citronadementhe","clafoutis","coktailcosmopolitan","cookies","cosmopolitan",
+  "cremebrulee","crepes","crepesSucrées","croissant","crumblefruits","daiquiri",
+  "darkStormyCocktail","dosakerdosai","eclair","eggsBenedict","espressoMartini","financiers",
+  "flan","fondantchocolat","frenchMartini","galettetacos","gateaubasque","gaufres",
+  "gingerlemondrop","gintoniqmaison","goumeau","granolaMaison","hugospritz","ileflottante",
+  "jusPastequeMenuthe","limonademaison","madeleine","margarita","millefeuille","mimosa",
+  "mocktailberrybliss","mocktailcoconananas","mocktailcoconorchidee","mocktailconcombrecitr","mocktailfraisesvanille","mocktailframboisementhe",
+  "mocktailgingembre","mocktailmentheagume","mocktailpassionsoleil","moelleuxchocolat","mojito","mojitorose",
+  "moscowmule","mousseauchocolat","muffins","negroni","oldFashioned","overnightoats",
+  "painauchocolat","painbaguette","painburger","paindemie","pancakes","pancakesproteine",
+  "pannaCotta","parisbrestreinterpretation","patebrisee","patefeuilletee","patesablee","pavlova",
+  "pinacolada","pizza","pornstarmartini","profiteroles","punchfruitsrouges","sangria",
+  "sconeBritish","shakshuka","shakshukaverte","shrubframboisebasilic","sidecarvintage","smoothiemangopassion",
+  "smoothievert","spritz","tarteFragoles","tarteNormande","tarteaupommes","tartechocolatcaramel",
+  "tartecitron","tartepistache","tartetatinpommes","tequilasunrise","tiramisu","tiramisufraise",
+  "verrineframboisechocolat","verrinetiramisu","virginmojito","virginpinacolada","whiskysour",
+  // bases supplémentaires
+  "patepizza","patelasagne","yaourt","smoothiebowl","energyballs","naan","painlevain","brioche"
+]);
+
+// Desserts (pour le pool desserts du menu complet — liste fiable, ne dépend pas du DOM)
+const RECETTES_DESSERTS = [
+  "baklava","canelebordelais","cheesecake","churros","clafoutis","cookies",
+  "cremebrulee","crumblefruits","eclair","flan","fondantchocolat","gateaubasque",
+  "ileflottante","madeleine","millefeuille","moelleuxchocolat","mousseauchocolat",
+  "pannaCotta","parisbrestreinterpretation","pavlova","profiteroles","tarteFragoles","tarteNormande",
+  "tarteaupommes","tartechocolatcaramel","tartecitron","tartepistache","tartetatinpommes","tiramisu",
+  "tiramisufraise","verrineframboisechocolat","verrinetiramisu"
+];
+
+// ==============================
 // HELPER : texte complet d'une recette (pour filtres allergènes/régimes)
 // Lit clé + nom affiché + description + TOUTES les lignes des tableaux
 // (clés de colonnes ET valeurs), pour ne jamais rater un ingrédient.
@@ -20,6 +58,23 @@ function texteRecette(key) {
       });
     }
   });
+  // Neutraliser les faux allergènes : la noix/lait/crème DE COCO n'est ni un
+  // fruit à coque ni un produit laitier ; le "beurre noisette" est une technique.
+  // On gère aussi les formes collées issues des clés de tableau (laitcoco, cremecoco…).
+  texte = texte
+    .replace(/noix de coco/g, "coco")
+    .replace(/lait de coco/g, "coco")
+    .replace(/crème de coco/g, "coco")
+    .replace(/creme de coco/g, "coco")
+    .replace(/sucre de coco/g, "coco")
+    .replace(/huile de coco/g, "coco")
+    .replace(/eau de coco/g, "coco")
+    .replace(/beurre de coco/g, "coco")
+    .replace(/laitcoco/g, "coco")
+    .replace(/cremecoco/g, "coco")
+    .replace(/cremedecoco/g, "coco")
+    .replace(/laitdecoco/g, "coco")
+    .replace(/beurre noisette/g, "beurre-cuit");
   return texte;
 }
 
@@ -289,17 +344,11 @@ function chargerAccueilSuggestions() {
 
   let pool = toutes.filter(key => {
     if (exclus.has(key)) return false;
-    if (_recExclues.has(key)) return false;
+    if (_recExclues.has(key) || RECETTES_NON_REPAS.has(key)) return false;
     const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
     if (carte && _catsExclues.has(carte.dataset.cat)) return false;
     if (motsExclus.size === 0) return true;
-    const r = recettes[key];
-    let texte = [key, r?.description || ""].join(" ").toLowerCase();
-    Object.keys(r || {}).forEach(k => {
-      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
-        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
-      }
-    });
+    const texte = texteRecette(key);
     return ![...motsExclus].some(m => texte.includes(m));
   });
 
@@ -1345,6 +1394,9 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
 
   // Filtrer les recettes compatibles
   const pool = Object.keys(recettes).filter(key => {
+    // Exclure les non-repas (boulangerie/desserts/cocktails/brunch) — liste fiable
+    if (RECETTES_NON_REPAS.has(key)) return false;
+    // Sécurité supplémentaire via la catégorie de la carte si disponible
     const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
     if (carte && catsExclues.has(carte.dataset.cat)) return false;
     if (motsInterdits.size === 0) return true;
@@ -1403,10 +1455,14 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   const isComplet = window._formatRepas === "complet";
 
   // Pool séparé pour desserts
-  const poolDesserts = Object.keys(recettes).filter(key => {
+  let poolDesserts = Object.keys(recettes).filter(key => {
     const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
     return carte && ["desserts"].includes(carte.dataset.cat);
   });
+  // Fallback fiable si les cartes ne sont pas dans le DOM
+  if (poolDesserts.length === 0) {
+    poolDesserts = RECETTES_DESSERTS.filter(k => recettes[k]);
+  }
   const melangeD = shuffleArray([...poolDesserts]);
   const utilisesD = new Set();
   const pickDessert = () => {
@@ -1889,6 +1945,8 @@ function regenRepas(jourNom, moment) {
   const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts","brunch"]);
   const motsExclus = motsExclusProfil();
   const pool = Object.keys(recettes).filter(key => {
+    // Exclure les non-repas via la liste fiable (ne dépend pas du DOM)
+    if (RECETTES_NON_REPAS.has(key)) return false;
     const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
     // Garder uniquement les vrais plats (exclure boulangerie/desserts/cocktails/brunch)
     if (carte && catsExclues.has(carte.dataset.cat)) return false;

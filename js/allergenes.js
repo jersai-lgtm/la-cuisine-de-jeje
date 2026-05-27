@@ -1,14 +1,31 @@
 const ALLERGENES_MOTS = {
-  "végétarien":     ["bœuf","boeuf","veau","porc","poulet","agneau","canard","dinde","pintade","volaille","foie","rillettes","andouille","boudin","chipolata","pepperoni","coppa","bresaola","magret","confit","ribs","speck","ventreche","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","guanciale","prosciutto","salami","nduja","jarret","pork","bacon","pancetta","saumon","thon","crevette","crevettes","anchois","poisson","cabillaud","dorade","truite","hareng","sardine","lieu","merlan","bar","sole","turbot","langoustine","homard","crabe","moule","huitre","seiche","calmar","poulpe","surimi","viande","pulled","morcilla","lonza"],
+  "végétarien":     ["bœuf","boeuf","veau","porc","poulet","agneau","canard","dinde","pintade","volaille","foie","rillettes","andouille","boudin","chipolata","pepperoni","coppa","bresaola","magret","confit","ribs","speck","ventreche","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","guanciale","prosciutto","salami","nduja","jarret","pork","bacon","pancetta","saumon","thon","crevette","crevettes","anchois","poisson","cabillaud","dorade","truite","hareng","sardine","lieu","merlan","bar","sole","turbot","langoustine","homard","crabe","moule","huitre","seiche","calmar","calamar","calamars","poulpe","calamarsromaine","surimi","viande","pulled","morcilla","lonza"],
   "pesco-végétarien": ["bœuf","boeuf","veau","porc","poulet","agneau","canard","dinde","pintade","volaille","foie","rillettes","andouille","boudin","pepperoni","coppa","bresaola","magret","confit","ribs","speck","ventreche","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","guanciale","prosciutto","salami","nduja","pork","bacon","pancetta","viande","pulled"],
-  "vegan":          ["lait","fromage","beurre","crème","creme","œuf","oeuf","oeufs","miel","mozzarella","parmesan","mascarpone","yaourt","ricotta","gruyère","gruyere","cheddar","feta","brie","camembert","roquefort","emmental","gouda","comté","reblochon","pecorino","manchego","halloumi","burrata","chantilly","crémeux","lacté","bœuf","boeuf","veau","porc","poulet","agneau","canard","dinde","pintade","volaille","foie","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","bacon","pancetta","prosciutto","guanciale","salami","viande","saumon","thon","crevette","crevettes","anchois","poisson","cabillaud","dorade","truite","moule","homard","crabe"],
+  "vegan":          ["lait","fromage","beurre","crème","creme","œuf","oeuf","oeufs","miel","mozzarella","parmesan","mascarpone","yaourt","ricotta","gruyère","gruyere","cheddar","feta","brie","camembert","roquefort","emmental","gouda","comté","reblochon","pecorino","manchego","halloumi","burrata","chantilly","crémeux","lacté","bœuf","boeuf","veau","porc","poulet","agneau","canard","dinde","pintade","volaille","foie","jambon","lardons","lardon","lard","chorizo","saucisse","merguez","bacon","pancetta","prosciutto","guanciale","salami","viande","saumon","thon","crevette","crevettes","anchois","poisson","cabillaud","dorade","truite","moule","homard","crabe","calmar","calamar","calamars","poulpe","seiche","huitre","huître","langoustine","gambas","langouste"],
   "sans-gluten":    ["farine","blé","ble","semoule","couscous","boulgour","épeautre","epeautre","seigle","orge","triticale","kamut","chapelure","panko","pâtes","pates","spaghetti","tagliatelle","lasagne","macaroni","penne","pain","baguette","brioche","biscuit","cracker","viennoiserie","pizza","quiche","flan","gaufre","crêpe","crepe","pancake","muffin","financier","clafoutis","tiramisu","cheesecake","millefeuille","naan","pita","tortilla","wrap","croissant"],
   "sans-lactose":   ["lait","fromage","beurre","crème","creme","mozzarella","parmesan","mascarpone","yaourt","ricotta","gruyère","gruyere","cheddar","feta","brie","camembert","roquefort","emmental","gouda","comté","reblochon","pecorino","manchego","halloumi","burrata","chantilly","lacté","lactose"],
   "protéiné":       ["sucre","caramel","chocolat","confiture","sirop","biscuit","tiramisu","churros","millefeuille","cheesecake","clafoutis","crumble","madeleine","muffin","financier","bananabread","croissant","cookie","brownie","crème brûlée","île flottante","mousse au chocolat","pannacotta","sorbet","verrine","smoothie","granola","açaï","limonade"],
   "moins-viande":   ["bœuf","boeuf","veau","porc","agneau","canard","dinde","pintade","lardons","lardon","lard","chorizo","saucisse","merguez","guanciale","prosciutto","salami","nduja","pork","bacon","pancetta","viande","rillettes","andouille","boudin","foie"],
   "healthy":        ["friture","chips","nugget","sucre","caramel","chocolat","confiture","biscuit","tiramisu","churros","millefeuille","cheesecake","clafoutis","madeleine","muffin","financier","bananabread","cookie","crumble","crème brûlée","mousse au chocolat","tarte tatin","croissant","brioche"],
   "économique":     [],
-  "rapide":         []
+  "rapide":         [],
+
+  // ==============================
+  // ALLERGÈNES MAJEURS (cochables dans le profil)
+  // Les clés correspondent EXACTEMENT aux value="" des cases à cocher.
+  // ==============================
+  "arachides":      ["arachide","cacahuète","cacahuete","cacahouète","beurre de cacahuète","peanut"],
+  "fruits-à-coque": ["noix","noisette","amande","pistache","cajou","noix de cajou","pécan","pecan","macadamia","praline","pralin","nutella","frangipane","massepain","beurre de noix","gianduja","noix de grenoble"],
+  "lait":           ["lait","fromage","beurre","crème","creme","mozzarella","parmesan","mascarpone","yaourt","ricotta","gruyère","gruyere","cheddar","feta","brie","camembert","roquefort","emmental","gouda","comté","comte","reblochon","pecorino","manchego","halloumi","burrata","chantilly","crémeux","cremeux","lacté","lactose","gorgonzola","raclette","fromage blanc","ghee","fromage frais","petit-suisse","chèvre","chevre","cancoillotte","vacherin"],
+  "œufs":           ["œuf","oeuf","oeufs","œufs","jaune d'œuf","jaune d'oeuf","blanc d'œuf","blanc d'oeuf","jaune d","blanc d","meringue","mayonnaise","aïoli","aioli","sabayon","omelette","frittata","brouillé"],
+  "gluten":         ["farine","blé","ble","semoule","couscous","boulgour","épeautre","epeautre","seigle","orge","triticale","kamut","chapelure","panko","pâtes","pates","spaghetti","tagliatelle","lasagne","macaroni","penne","pain","baguette","brioche","biscuit","cracker","viennoiserie","pizza","quiche","flan","gaufre","crêpe","crepe","pancake","muffin","financier","clafoutis","tiramisu","cheesecake","millefeuille","naan","pita","tortilla","wrap","croissant","nouille","ramen","udon","soba","gyoza","raviole","raviol","gnocchi","gnocchis","spaetzle","spätzle","panure","panée","panee","pané","bière","biere","pâte feuilletée","pâte brisée","pâte sablée","dumpling","pierogi","momos","samosa","dosa","scone","strudel","fond de tarte"],
+  "poisson":        ["saumon","thon","cabillaud","dorade","truite","colin","lieu","merlan","bar","sole","turbot","flétan","fletan","lotte","raie","maquereau","sardine","anchois","hareng","morue","poisson","filet de poisson","églefin","eglefin","haddock","espadon","rouget","daurade","brandade","tarama","surimi","ceebu","thiéboudienne","moqueca","bouillabaisse","gravlax","tartare de saumon","tartare de thon"],
+  "crustacés":      ["crevette","crevettes","gambas","homard","langoustine","langoustines","crabe","écrevisse","ecrevisse","langouste","scampi","tourteau","crustacé","crustace","king prawn","gamberi"],
+  "soja":           ["soja","tofu","edamame","miso","tamari","tempeh","sauce soja","sauce teriyaki","teriyaki","nuoc-mâm","lait de soja","yuba","natto"],
+  "céleri":         ["céleri","celeri","céleri-rave","branche de céleri"],
+  "moutarde":       ["moutarde","graines de moutarde","moutarde de dijon"],
+  "sésame":         ["sésame","sesame","tahini","tahin","huile de sésame","gomasio","graines de sésame","houmous","hummus"],
+  "sulfites":       ["vin","vinaigre","sulfite","abricot sec","raisin sec","sangria","fruits secs"]
 };
 
 function appliquerPreferencesVisuelles() {
@@ -52,17 +69,23 @@ function appliquerPreferencesVisuelles() {
     if (!key) return;
 
     const recette = typeof recettes !== 'undefined' ? recettes[key] : null;
-    let texte = [
-      key,
-      recette?.description || '',
-      carte.querySelector('h2')?.textContent || '',
-    ].join(' ').toLowerCase();
-    // Ajouter les noms des ingrédients depuis les tableaux (clés)
-    Object.keys(recette || {}).forEach(k => {
-      if (k.startsWith('tableau') && Array.isArray(recette[k]) && recette[k].length > 0) {
-        texte += ' ' + Object.keys(recette[k][0]).join(' ').toLowerCase();
-      }
-    });
+    // Utiliser le helper centralisé (lecture complète des tableaux + neutralisation
+    // coco/beurre noisette) si dispo, sinon fallback simple.
+    let texte;
+    if (typeof texteRecette === 'function') {
+      texte = texteRecette(key) + ' ' + (carte.querySelector('h2')?.textContent || '').toLowerCase();
+    } else {
+      texte = [
+        key,
+        recette?.description || '',
+        carte.querySelector('h2')?.textContent || '',
+      ].join(' ').toLowerCase();
+      Object.keys(recette || {}).forEach(k => {
+        if (k.startsWith('tableau') && Array.isArray(recette[k]) && recette[k].length > 0) {
+          texte += ' ' + Object.keys(recette[k][0]).join(' ').toLowerCase();
+        }
+      });
+    }
 
     // Trouver les mots problématiques
     const trouvés = [...motsExclus].filter(mot => texte.includes(mot));
