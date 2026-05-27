@@ -1632,7 +1632,37 @@ function getNomRecette(key) {
     "pavlova":           "Pavlova aux Fruits",
     "profiteroles":      "Profiteroles",
     "brandadeMorue":     "Brandade de Morue",
-    "tarteNormande":     "Tarte Normande",
+    // Batch 4
+    "sobejaponais":           "Soba Japonais",
+    "tartarethon":            "Tartare de Thon",
+    "pouletcitroncitronelle": "Poulet Citron Citronnelle",
+    "velouteAsperges":        "Velouté d'Asperges",
+    "saladeLegsRoasted":      "Salade de Légumes Rôtis",
+    "quinoalegumes":          "Quinoa aux Légumes",
+    "patatesdoucesCurry":     "Patates Douces au Curry",
+    "falafelbaked":           "Falafel au Four",
+    "smoothievert":           "Smoothie Vert Détox",
+    "assiettepouletpatate":   "Assiette Healthy Poulet",
+    "gnocchisgorgonzola":     "Gnocchis au Gorgonzola",
+    "risottocourgettechevre": "Risotto Courgette Chèvre",
+    "currypoischiches":       "Curry de Pois Chiches",
+    "pastapomodoro":          "Pasta Pomodoro",
+    "omeletteprovencale":     "Omelette Provençale",
+    "tarteepinardfeta":       "Tarte Épinards Feta",
+    "veggieburger":           "Burger Végétarien",
+    "soufflecheese":          "Soufflé au Fromage",
+    "paellaVege":             "Paella Végétarienne",
+    "bellini":                "Bellini Pêche",
+    "frenchMartini":          "French Martini",
+    "darkStormyCocktail":     "Dark & Stormy",
+    "amarettoSour":           "Amaretto Sour",
+    "aperolPamplemousse":     "Aperol Pamplemousse",
+    "mocktailframboisementhe":"Mocktail Framboise Menthe",
+    "mocktailpassionsoleil":  "Mocktail Passion Soleil",
+    "mocktailconcombrecitr":  "Mocktail Concombre Citron",
+    "mocktailgingembre":      "Ginger Mocktail",
+    "mocktailfraisesvanille": "Mocktail Fraises Vanille",
+    "tarteNormande":          "Tarte Normande",
     "wafflesSales":      "Gaufres Salées",
     "eggsBenedict":      "Œufs Bénédicte",
     "porkBelly":         "Poitrine de Porc Caramélisée",
@@ -1781,7 +1811,37 @@ function getNomRecette(key) {
     "pavlova":           "Pavlova aux Fruits",
     "profiteroles":      "Profiteroles",
     "brandadeMorue":     "Brandade de Morue",
-    "tarteNormande":     "Tarte Normande",
+    // Batch 4
+    "sobejaponais":           "Soba Japonais",
+    "tartarethon":            "Tartare de Thon",
+    "pouletcitroncitronelle": "Poulet Citron Citronnelle",
+    "velouteAsperges":        "Velouté d'Asperges",
+    "saladeLegsRoasted":      "Salade de Légumes Rôtis",
+    "quinoalegumes":          "Quinoa aux Légumes",
+    "patatesdoucesCurry":     "Patates Douces au Curry",
+    "falafelbaked":           "Falafel au Four",
+    "smoothievert":           "Smoothie Vert Détox",
+    "assiettepouletpatate":   "Assiette Healthy Poulet",
+    "gnocchisgorgonzola":     "Gnocchis au Gorgonzola",
+    "risottocourgettechevre": "Risotto Courgette Chèvre",
+    "currypoischiches":       "Curry de Pois Chiches",
+    "pastapomodoro":          "Pasta Pomodoro",
+    "omeletteprovencale":     "Omelette Provençale",
+    "tarteepinardfeta":       "Tarte Épinards Feta",
+    "veggieburger":           "Burger Végétarien",
+    "soufflecheese":          "Soufflé au Fromage",
+    "paellaVege":             "Paella Végétarienne",
+    "bellini":                "Bellini Pêche",
+    "frenchMartini":          "French Martini",
+    "darkStormyCocktail":     "Dark & Stormy",
+    "amarettoSour":           "Amaretto Sour",
+    "aperolPamplemousse":     "Aperol Pamplemousse",
+    "mocktailframboisementhe":"Mocktail Framboise Menthe",
+    "mocktailpassionsoleil":  "Mocktail Passion Soleil",
+    "mocktailconcombrecitr":  "Mocktail Concombre Citron",
+    "mocktailgingembre":      "Ginger Mocktail",
+    "mocktailfraisesvanille": "Mocktail Fraises Vanille",
+    "tarteNormande":          "Tarte Normande",
     "bibimbap":          "Bibimbap",
     "gyozas":            "Gyozas",
     "sushimaison":       "Sushis Maison",
@@ -2124,13 +2184,17 @@ function filtrerCategorieDrinks(souscat) {
   if (!menuC) return;
 
   if (!souscat) {
-    // Clic sur "Cocktails ▾" → afficher tous + toggle sous-menu
+    // Clic sur "Cocktails ▾" → toggle sous-menu + afficher tous
     const visible = menuC.style.display !== "none";
     menuC.style.display = visible ? "none" : "flex";
     if (!visible) {
-      // Afficher tous les cocktails ET mocktails
+      // Réinitialiser les boutons du sous-menu
+      menuC.querySelectorAll(".pays-btn").forEach(b => {
+        b.style.background = "";
+        b.style.color = "";
+      });
+      // Afficher tous cocktails + mocktails
       filtrerCategorieMulti(["cocktails", "mocktails"]);
-      // Fermer si on clique dehors
       const close = (e) => {
         if (!menuC.contains(e.target) && !e.target.closest(".pays-btn")) {
           menuC.style.display = "none";
@@ -2140,9 +2204,23 @@ function filtrerCategorieDrinks(souscat) {
       setTimeout(() => document.addEventListener("click", close), 150);
     }
   } else {
-    // Clic sur "Avec alcool" ou "Sans alcool" → filtrer uniquement cette cat
-    filtrerCategorie(souscat);
-    menuC.style.display = "none";
+    // Réinitialiser les deux boutons du sous-menu
+    menuC.querySelectorAll(".pays-btn").forEach(b => b.classList.remove("active"));
+    // Activer uniquement le bouton cliqué
+    const btnActif = menuC.querySelector(`[onclick*="${souscat}"]`);
+    if (btnActif) btnActif.classList.add("active");
+
+    // Filtrer les cartes directement (sans passer par filtrerCategorie pour éviter event.target)
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    basculeVersGrille();
+    // Désactiver les boutons de la barre principale
+    document.querySelectorAll("#menu-categories .pays-btn").forEach(b => b.classList.remove("active"));
+    // Filtrer
+    document.querySelectorAll(".carte").forEach(c => {
+      c.style.display = (c.dataset.cat === souscat) ? "" : "none";
+    });
+    if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+    // Garder le sous-menu visible
   }
 }
 

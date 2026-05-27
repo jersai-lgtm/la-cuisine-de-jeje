@@ -8515,4 +8515,693 @@ const recettes = {
     ]
   },
 
+  // ============================================================
+  // BATCH 4 — 10 HEALTHY + 10 VÉGÉTARIENNES + 10 COCKTAILS
+  // ============================================================
+
+  // ── HEALTHY ──────────────────────────────────────────────────
+  sobejaponais: {
+    base: 2, temps: "15 min", niveau: "⭐ Facile", emoji: "🍜",
+    description: "Soba japonais au bouillon dashi — nouilles de sarrasin froides, sauce soja, dashi et garnitures fraîches. Léger, nutritif et prêt en 15 minutes.",
+    tableauSoba: [
+      { nb:  1, soba: "50 g",  soja: "15 ml", dashi: "100 ml", ciboule: "10 g" },
+      { nb:  2, soba: "100 g", soja: "30 ml", dashi: "200 ml", ciboule: "20 g" },
+      { nb:  3, soba: "150 g", soja: "45 ml", dashi: "300 ml", ciboule: "30 g" },
+      { nb:  4, soba: "200 g", soja: "60 ml", dashi: "400 ml", ciboule: "40 g" },
+      { nb:  5, soba: "250 g", soja: "75 ml", dashi: "500 ml", ciboule: "50 g" },
+      { nb:  6, soba: "300 g", soja: "90 ml", dashi: "600 ml", ciboule: "60 g" },
+      { nb:  7, soba: "350 g", soja: "105 ml",dashi: "700 ml", ciboule: "70 g" },
+      { nb:  8, soba: "400 g", soja: "120 ml",dashi: "800 ml", ciboule: "80 g" },
+      { nb:  9, soba: "450 g", soja: "135 ml",dashi: "900 ml", ciboule: "90 g" },
+      { nb: 10, soba: "500 g", soja: "150 ml",dashi: "1000 ml",ciboule: "100 g" },
+      { nb: 11, soba: "550 g", soja: "165 ml",dashi: "1100 ml",ciboule: "110 g" },
+      { nb: 12, soba: "600 g", soja: "180 ml",dashi: "1200 ml",ciboule: "120 g" },
+      { nb: 13, soba: "650 g", soja: "195 ml",dashi: "1300 ml",ciboule: "130 g" },
+      { nb: 14, soba: "700 g", soja: "210 ml",dashi: "1400 ml",ciboule: "140 g" },
+      { nb: 15, soba: "750 g", soja: "225 ml",dashi: "1500 ml",ciboule: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍜", titre: "Cuire les soba", detail: "Cuire les nouilles soba 4 min dans l'eau bouillante. Rincer abondamment à l'eau froide pour stopper la cuisson.", badge: "⏱ 4 min" },
+      { icone: "🍶", titre: "Préparer le bouillon", detail: "Mélanger dashi froid, sauce soja, mirin et sucre. Goûter et ajuster.", badge: null },
+      { icone: "🌿", titre: "Garnir", detail: "Disposer les soba dans les bols. Verser le bouillon froid. Garnir de ciboule, algues wakame, graines de sésame et gingembre.", badge: null }
+    ]
+  },
+
+  tartarethon: {
+    base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🐟",
+    description: "Tartare de thon à l'avocat — thon rouge cru, avocat crémeux, sésame et sauce soja. Frais, protéiné et élégant en entrée ou plat léger.",
+    tableauTartareThon: [
+      { nb:  1, thon: "75 g",  avocat: "0.25", soja: "10 ml", sesame: "5 g",  citrons: "0.25" },
+      { nb:  2, thon: "150 g", avocat: "0.5",  soja: "20 ml", sesame: "10 g", citrons: "0.5" },
+      { nb:  3, thon: "225 g", avocat: "0.75", soja: "30 ml", sesame: "15 g", citrons: "0.75" },
+      { nb:  4, thon: "300 g", avocat: "1",    soja: "40 ml", sesame: "20 g", citrons: "1" },
+      { nb:  5, thon: "375 g", avocat: "1.25", soja: "50 ml", sesame: "25 g", citrons: "1.25" },
+      { nb:  6, thon: "450 g", avocat: "1.5",  soja: "60 ml", sesame: "30 g", citrons: "1.5" },
+      { nb:  7, thon: "525 g", avocat: "1.75", soja: "70 ml", sesame: "35 g", citrons: "1.75" },
+      { nb:  8, thon: "600 g", avocat: "2",    soja: "80 ml", sesame: "40 g", citrons: "2" },
+      { nb:  9, thon: "675 g", avocat: "2.25", soja: "90 ml", sesame: "45 g", citrons: "2.25" },
+      { nb: 10, thon: "750 g", avocat: "2.5",  soja: "100 ml",sesame: "50 g", citrons: "2.5" },
+      { nb: 11, thon: "825 g", avocat: "2.75", soja: "110 ml",sesame: "55 g", citrons: "2.75" },
+      { nb: 12, thon: "900 g", avocat: "3",    soja: "120 ml",sesame: "60 g", citrons: "3" },
+      { nb: 13, thon: "975 g", avocat: "3.25", soja: "130 ml",sesame: "65 g", citrons: "3.25" },
+      { nb: 14, thon: "1050 g",avocat: "3.5",  soja: "140 ml",sesame: "70 g", citrons: "3.5" },
+      { nb: 15, thon: "1125 g",avocat: "3.75", soja: "150 ml",sesame: "75 g", citrons: "3.75" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Préparer le thon", detail: "Couper le thon en petits dés réguliers. Assaisonner avec sauce soja, huile de sésame, gingembre râpé, citron.", badge: null },
+      { icone: "🥑", titre: "Préparer l'avocat", detail: "Couper l'avocat en dés. Citronner pour éviter l'oxydation.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dans un cercle, alterner couches de thon et avocat. Parsemer de sésame grillé, ciboule et piment d'Espelette.", badge: null }
+    ]
+  },
+
+  pouletcitroncitronelle: {
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍋",
+    description: "Poulet citron citronnelle à la thaïe — escalopes légères marinées et sautées avec citronnelle, gingembre et citron vert. Parfumé et très peu calorique.",
+    tableauPouletCitronelle: [
+      { nb:  1, poulet: "150 g", citrons: "0.5", gingembre: "5 g",  soja: "10 ml" },
+      { nb:  2, poulet: "300 g", citrons: "1",   gingembre: "10 g", soja: "20 ml" },
+      { nb:  3, poulet: "450 g", citrons: "1.5", gingembre: "15 g", soja: "30 ml" },
+      { nb:  4, poulet: "600 g", citrons: "2",   gingembre: "20 g", soja: "40 ml" },
+      { nb:  5, poulet: "750 g", citrons: "2.5", gingembre: "25 g", soja: "50 ml" },
+      { nb:  6, poulet: "900 g", citrons: "3",   gingembre: "30 g", soja: "60 ml" },
+      { nb:  7, poulet: "1050 g",citrons: "3.5", gingembre: "35 g", soja: "70 ml" },
+      { nb:  8, poulet: "1200 g",citrons: "4",   gingembre: "40 g", soja: "80 ml" },
+      { nb:  9, poulet: "1350 g",citrons: "4.5", gingembre: "45 g", soja: "90 ml" },
+      { nb: 10, poulet: "1500 g",citrons: "5",   gingembre: "50 g", soja: "100 ml" },
+      { nb: 11, poulet: "1650 g",citrons: "5.5", gingembre: "55 g", soja: "110 ml" },
+      { nb: 12, poulet: "1800 g",citrons: "6",   gingembre: "60 g", soja: "120 ml" },
+      { nb: 13, poulet: "1950 g",citrons: "6.5", gingembre: "65 g", soja: "130 ml" },
+      { nb: 14, poulet: "2100 g",citrons: "7",   gingembre: "70 g", soja: "140 ml" },
+      { nb: 15, poulet: "2250 g",citrons: "7.5", gingembre: "75 g", soja: "150 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Mariner", detail: "Émincer les escalopes. Mariner 15 min avec jus de citron vert, citronnelle finement hachée, gingembre, sauce soja.", badge: "⏱ 15 min" },
+      { icone: "🔥", titre: "Sauter", detail: "Faire sauter à feu vif dans très peu d'huile. Cuire 3-4 min de chaque côté.", badge: "⏱ 8 min" },
+      { icone: "🌿", titre: "Servir", detail: "Servir sur riz basmati ou vermicelles avec herbes fraîches et quartiers de citron vert.", badge: null }
+    ]
+  },
+
+  velouteAsperges: {
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🌱",
+    description: "Velouté d'asperges vertes — onctueuse soupe de printemps, légère et raffinée. Servie chaude ou froide avec une touche de crème et parmesan.",
+    tableauVelouteAsperges: [
+      { nb:  1, asperges: "125 g", oignons: "0.25", bouillon: "250 ml", creme: "20 ml" },
+      { nb:  2, asperges: "250 g", oignons: "0.5",  bouillon: "500 ml", creme: "40 ml" },
+      { nb:  3, asperges: "375 g", oignons: "0.75", bouillon: "750 ml", creme: "60 ml" },
+      { nb:  4, asperges: "500 g", oignons: "1",    bouillon: "1000 ml",creme: "80 ml" },
+      { nb:  5, asperges: "625 g", oignons: "1.25", bouillon: "1250 ml",creme: "100 ml" },
+      { nb:  6, asperges: "750 g", oignons: "1.5",  bouillon: "1500 ml",creme: "120 ml" },
+      { nb:  7, asperges: "875 g", oignons: "1.75", bouillon: "1750 ml",creme: "140 ml" },
+      { nb:  8, asperges: "1000 g",oignons: "2",    bouillon: "2000 ml",creme: "160 ml" },
+      { nb:  9, asperges: "1125 g",oignons: "2.25", bouillon: "2250 ml",creme: "180 ml" },
+      { nb: 10, asperges: "1250 g",oignons: "2.5",  bouillon: "2500 ml",creme: "200 ml" },
+      { nb: 11, asperges: "1375 g",oignons: "2.75", bouillon: "2750 ml",creme: "220 ml" },
+      { nb: 12, asperges: "1500 g",oignons: "3",    bouillon: "3000 ml",creme: "240 ml" },
+      { nb: 13, asperges: "1625 g",oignons: "3.25", bouillon: "3250 ml",creme: "260 ml" },
+      { nb: 14, asperges: "1750 g",oignons: "3.5",  bouillon: "3500 ml",creme: "280 ml" },
+      { nb: 15, asperges: "1875 g",oignons: "3.75", bouillon: "3750 ml",creme: "300 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌱", titre: "Préparer les asperges", detail: "Casser la base dure des asperges. Garder quelques pointes pour la décoration. Couper le reste en tronçons.", badge: null },
+      { icone: "🧅", titre: "Faire suer", detail: "Faire suer oignon et ail dans l'huile d'olive 3 min. Ajouter les asperges. Verser le bouillon chaud.", badge: "⏱ 15 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement jusqu'à consistance veloutée. Incorporer la crème légère. Rectifier l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud ou froid avec les pointes d'asperges grillées, copeaux de parmesan et huile d'olive.", badge: null }
+    ]
+  },
+
+  saladeLegsRoasted: {
+    base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🥕",
+    description: "Salade de légumes rôtis au four — courgette, poivron, aubergine caramélisés, sur lit de roquette avec feta et vinaigrette au miel. Colorée et nutritive.",
+    tableauSaladeRoasted: [
+      { nb:  1, courgette: "0.5", aubergine: "0.25", poivron: "0.25", roquette: "20 g", fetaOpt: "20 g" },
+      { nb:  2, courgette: "1",   aubergine: "0.5",  poivron: "0.5",  roquette: "40 g", fetaOpt: "40 g" },
+      { nb:  3, courgette: "1.5", aubergine: "0.75", poivron: "0.75", roquette: "60 g", fetaOpt: "60 g" },
+      { nb:  4, courgette: "2",   aubergine: "1",    poivron: "1",    roquette: "80 g", fetaOpt: "80 g" },
+      { nb:  5, courgette: "2.5", aubergine: "1.25", poivron: "1.25", roquette: "100 g",fetaOpt: "100 g" },
+      { nb:  6, courgette: "3",   aubergine: "1.5",  poivron: "1.5",  roquette: "120 g",fetaOpt: "120 g" },
+      { nb:  7, courgette: "3.5", aubergine: "1.75", poivron: "1.75", roquette: "140 g",fetaOpt: "140 g" },
+      { nb:  8, courgette: "4",   aubergine: "2",    poivron: "2",    roquette: "160 g",fetaOpt: "160 g" },
+      { nb:  9, courgette: "4.5", aubergine: "2.25", poivron: "2.25", roquette: "180 g",fetaOpt: "180 g" },
+      { nb: 10, courgette: "5",   aubergine: "2.5",  poivron: "2.5",  roquette: "200 g",fetaOpt: "200 g" },
+      { nb: 11, courgette: "5.5", aubergine: "2.75", poivron: "2.75", roquette: "220 g",fetaOpt: "220 g" },
+      { nb: 12, courgette: "6",   aubergine: "3",    poivron: "3",    roquette: "240 g",fetaOpt: "240 g" },
+      { nb: 13, courgette: "6.5", aubergine: "3.25", poivron: "3.25", roquette: "260 g",fetaOpt: "260 g" },
+      { nb: 14, courgette: "7",   aubergine: "3.5",  poivron: "3.5",  roquette: "280 g",fetaOpt: "280 g" },
+      { nb: 15, courgette: "7.5", aubergine: "3.75", poivron: "3.75", roquette: "300 g",fetaOpt: "300 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Rôtir les légumes", detail: "Couper les légumes en gros morceaux. Enrober d'huile d'olive, sel, herbes de Provence. Rôtir au four à 200°C.", badge: "⏱ 25 min" },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer les légumes tièdes sur la roquette. Émietter la feta. Arroser de vinaigrette miel-moutarde.", badge: null }
+    ]
+  },
+
+  quinoalegumes: {
+    base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "🌾",
+    description: "Quinoa aux légumes du soleil — quinoa protéiné avec tomates, courgettes, poivrons et herbes fraîches. Complet, végétarien et très équilibré.",
+    tableauQuinoaLegumes: [
+      { nb:  1, quinoa: "60 g",  courgette: "0.5", tomates: "100 g", poivron: "0.25" },
+      { nb:  2, quinoa: "120 g", courgette: "1",   tomates: "200 g", poivron: "0.5" },
+      { nb:  3, quinoa: "180 g", courgette: "1.5", tomates: "300 g", poivron: "0.75" },
+      { nb:  4, quinoa: "240 g", courgette: "2",   tomates: "400 g", poivron: "1" },
+      { nb:  5, quinoa: "300 g", courgette: "2.5", tomates: "500 g", poivron: "1.25" },
+      { nb:  6, quinoa: "360 g", courgette: "3",   tomates: "600 g", poivron: "1.5" },
+      { nb:  7, quinoa: "420 g", courgette: "3.5", tomates: "700 g", poivron: "1.75" },
+      { nb:  8, quinoa: "480 g", courgette: "4",   tomates: "800 g", poivron: "2" },
+      { nb:  9, quinoa: "540 g", courgette: "4.5", tomates: "900 g", poivron: "2.25" },
+      { nb: 10, quinoa: "600 g", courgette: "5",   tomates: "1000 g",poivron: "2.5" },
+      { nb: 11, quinoa: "660 g", courgette: "5.5", tomates: "1100 g",poivron: "2.75" },
+      { nb: 12, quinoa: "720 g", courgette: "6",   tomates: "1200 g",poivron: "3" },
+      { nb: 13, quinoa: "780 g", courgette: "6.5", tomates: "1300 g",poivron: "3.25" },
+      { nb: 14, quinoa: "840 g", courgette: "7",   tomates: "1400 g",poivron: "3.5" },
+      { nb: 15, quinoa: "900 g", courgette: "7.5", tomates: "1500 g",poivron: "3.75" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Cuire le quinoa", detail: "Rincer le quinoa. Cuire dans 2x son volume d'eau salée à couvert jusqu'à absorption complète.", badge: "⏱ 15 min" },
+      { icone: "🔥", titre: "Faire sauter les légumes", detail: "Faire sauter courgette, poivron, tomates cerise dans l'huile d'olive avec ail et herbes de Provence.", badge: "⏱ 10 min" },
+      { icone: "🥗", titre: "Mélanger et servir", detail: "Mélanger quinoa et légumes. Assaisonner. Servir tiède ou froid avec un filet de citron et basilic.", badge: null }
+    ]
+  },
+
+  patatesdoucesCurry: {
+    base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🍠",
+    description: "Curry de patates douces au lait de coco — fondant et réconfortant, épicé juste comme il faut avec curcuma et coriandre. 100% végétalien et rassasiant.",
+    tableauPatateCurry: [
+      { nb:  1, patatedouce: "150 g", cremeCoco: "75 ml",  curry: "½ c.à.c", oignons: "0.25" },
+      { nb:  2, patatedouce: "300 g", cremeCoco: "150 ml", curry: "1 c.à.c",  oignons: "0.5" },
+      { nb:  3, patatedouce: "450 g", cremeCoco: "225 ml", curry: "1½ c.à.c", oignons: "0.75" },
+      { nb:  4, patatedouce: "600 g", cremeCoco: "300 ml", curry: "2 c.à.c",  oignons: "1" },
+      { nb:  5, patatedouce: "750 g", cremeCoco: "375 ml", curry: "2½ c.à.c", oignons: "1.25" },
+      { nb:  6, patatedouce: "900 g", cremeCoco: "450 ml", curry: "3 c.à.c",  oignons: "1.5" },
+      { nb:  7, patatedouce: "1050 g",cremeCoco: "525 ml", curry: "3½ c.à.c", oignons: "1.75" },
+      { nb:  8, patatedouce: "1200 g",cremeCoco: "600 ml", curry: "4 c.à.c",  oignons: "2" },
+      { nb:  9, patatedouce: "1350 g",cremeCoco: "675 ml", curry: "4½ c.à.c", oignons: "2.25" },
+      { nb: 10, patatedouce: "1500 g",cremeCoco: "750 ml", curry: "5 c.à.c",  oignons: "2.5" },
+      { nb: 11, patatedouce: "1650 g",cremeCoco: "825 ml", curry: "5½ c.à.c", oignons: "2.75" },
+      { nb: 12, patatedouce: "1800 g",cremeCoco: "900 ml", curry: "6 c.à.c",  oignons: "3" },
+      { nb: 13, patatedouce: "1950 g",cremeCoco: "975 ml", curry: "6½ c.à.c", oignons: "3.25" },
+      { nb: 14, patatedouce: "2100 g",cremeCoco: "1050 ml",curry: "7 c.à.c",  oignons: "3.5" },
+      { nb: 15, patatedouce: "2250 g",cremeCoco: "1125 ml",curry: "7½ c.à.c", oignons: "3.75" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Faire revenir", detail: "Faire suer l'oignon et l'ail dans l'huile de coco. Ajouter curry, curcuma, cumin. Torréfier 1 min.", badge: null },
+      { icone: "🍠", titre: "Ajouter les patates", detail: "Ajouter les patates douces en cubes. Verser le lait de coco et un peu d'eau. Mélanger.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Couvrir et laisser mijoter jusqu'à ce que les patates soient fondantes.", badge: "⏱ 20 min" },
+      { icone: "🌿", titre: "Finir", detail: "Ajouter les épinards hors du feu. Parsemer de coriandre fraîche. Servir avec riz basmati.", badge: null }
+    ]
+  },
+
+  falafelbaked: {
+    base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🟡",
+    description: "Falafels cuits au four — plus légers que les falafels frits, tout aussi croustillants. Pois chiches, cumin, coriandre et persil. Idéal dans un wrap ou salade.",
+    tableauFalafelBaked: [
+      { nb:  1, pois: "100 g", oignons: "0.25", coriandre: "5 g",  farine: "15 g" },
+      { nb:  2, pois: "200 g", oignons: "0.5",  coriandre: "10 g", farine: "30 g" },
+      { nb:  3, pois: "300 g", oignons: "0.75", coriandre: "15 g", farine: "45 g" },
+      { nb:  4, pois: "400 g", oignons: "1",    coriandre: "20 g", farine: "60 g" },
+      { nb:  5, pois: "500 g", oignons: "1.25", coriandre: "25 g", farine: "75 g" },
+      { nb:  6, pois: "600 g", oignons: "1.5",  coriandre: "30 g", farine: "90 g" },
+      { nb:  7, pois: "700 g", oignons: "1.75", coriandre: "35 g", farine: "105 g" },
+      { nb:  8, pois: "800 g", oignons: "2",    coriandre: "40 g", farine: "120 g" },
+      { nb:  9, pois: "900 g", oignons: "2.25", coriandre: "45 g", farine: "135 g" },
+      { nb: 10, pois: "1000 g",oignons: "2.5",  coriandre: "50 g", farine: "150 g" },
+      { nb: 11, pois: "1100 g",oignons: "2.75", coriandre: "55 g", farine: "165 g" },
+      { nb: 12, pois: "1200 g",oignons: "3",    coriandre: "60 g", farine: "180 g" },
+      { nb: 13, pois: "1300 g",oignons: "3.25", coriandre: "65 g", farine: "195 g" },
+      { nb: 14, pois: "1400 g",oignons: "3.5",  coriandre: "70 g", farine: "210 g" },
+      { nb: 15, pois: "1500 g",oignons: "3.75", coriandre: "75 g", farine: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Préparer la pâte", detail: "Mixer pois chiches (pas en conserve, trempés crus), oignon, ail, coriandre, cumin, sel. La texture doit être grossière, pas lisse.", badge: null },
+      { icone: "🟡", titre: "Former les boulettes", detail: "Former des boulettes de 3 cm. Placer sur plaque huileée.", badge: null },
+      { icone: "🔥", titre: "Cuire au four", detail: "Badigeonner légèrement d'huile. Cuire à 200°C en retournant à mi-cuisson.", badge: "⏱ 25 min" },
+      { icone: "🫙", titre: "Servir", detail: "Servir avec sauce tahini, tomates, concombre et salade verte dans un pain pita ou wrap.", badge: null }
+    ]
+  },
+
+  smoothievert: {
+    base: 2, temps: "5 min", niveau: "⭐ Facile", emoji: "🥬",
+    description: "Smoothie vert détox — épinards, concombre, pomme verte, gingembre et citron. Vitaminé, alcalinisant et parfait pour démarrer la journée sainement.",
+    tableauSmoothieVert: [
+      { nb:  1, epinards: "20 g", concombre: "0.25", pomme: "0.25", citrons: "0.25", gingembre: "3 g" },
+      { nb:  2, epinards: "40 g", concombre: "0.5",  pomme: "0.5",  citrons: "0.5",  gingembre: "5 g" },
+      { nb:  3, epinards: "60 g", concombre: "0.75", pomme: "0.75", citrons: "0.75", gingembre: "8 g" },
+      { nb:  4, epinards: "80 g", concombre: "1",    pomme: "1",    citrons: "1",    gingembre: "10 g" },
+      { nb:  5, epinards: "100 g",concombre: "1.25", pomme: "1.25", citrons: "1.25", gingembre: "13 g" },
+      { nb:  6, epinards: "120 g",concombre: "1.5",  pomme: "1.5",  citrons: "1.5",  gingembre: "15 g" },
+      { nb:  7, epinards: "140 g",concombre: "1.75", pomme: "1.75", citrons: "1.75", gingembre: "18 g" },
+      { nb:  8, epinards: "160 g",concombre: "2",    pomme: "2",    citrons: "2",    gingembre: "20 g" },
+      { nb:  9, epinards: "180 g",concombre: "2.25", pomme: "2.25", citrons: "2.25", gingembre: "23 g" },
+      { nb: 10, epinards: "200 g",concombre: "2.5",  pomme: "2.5",  citrons: "2.5",  gingembre: "25 g" },
+      { nb: 11, epinards: "220 g",concombre: "2.75", pomme: "2.75", citrons: "2.75", gingembre: "28 g" },
+      { nb: 12, epinards: "240 g",concombre: "3",    pomme: "3",    citrons: "3",    gingembre: "30 g" },
+      { nb: 13, epinards: "260 g",concombre: "3.25", pomme: "3.25", citrons: "3.25", gingembre: "33 g" },
+      { nb: 14, epinards: "280 g",concombre: "3.5",  pomme: "3.5",  citrons: "3.5",  gingembre: "35 g" },
+      { nb: 15, epinards: "300 g",concombre: "3.75", pomme: "3.75", citrons: "3.75", gingembre: "38 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Préparer les ingrédients", detail: "Laver épinards et concombre. Éplucher gingembre. Épépiner la pomme.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Tout mettre dans le blender avec 200ml d'eau froide ou glaçons. Mixer jusqu'à consistance lisse.", badge: "⏱ 2 min" },
+      { icone: "🍋", titre: "Ajuster et servir", detail: "Ajouter jus de citron, ajuster la texture avec eau ou glaçons. Servir immédiatement.", badge: null }
+    ]
+  },
+
+  assiettepouletpatate: {
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍗",
+    description: "Assiette healthy poulet grillé — filet de poulet mariné aux herbes, patate douce rôtie et brocoli vapeur. Repas complet, équilibré et savoureux.",
+    tableauAssiettePoulet: [
+      { nb:  1, poulet: "120 g", patatedouce: "100 g", chouC: "80 g",  citrons: "0.25" },
+      { nb:  2, poulet: "240 g", patatedouce: "200 g", chouC: "160 g", citrons: "0.5" },
+      { nb:  3, poulet: "360 g", patatedouce: "300 g", chouC: "240 g", citrons: "0.75" },
+      { nb:  4, poulet: "480 g", patatedouce: "400 g", chouC: "320 g", citrons: "1" },
+      { nb:  5, poulet: "600 g", patatedouce: "500 g", chouC: "400 g", citrons: "1.25" },
+      { nb:  6, poulet: "720 g", patatedouce: "600 g", chouC: "480 g", citrons: "1.5" },
+      { nb:  7, poulet: "840 g", patatedouce: "700 g", chouC: "560 g", citrons: "1.75" },
+      { nb:  8, poulet: "960 g", patatedouce: "800 g", chouC: "640 g", citrons: "2" },
+      { nb:  9, poulet: "1080 g",patatedouce: "900 g", chouC: "720 g", citrons: "2.25" },
+      { nb: 10, poulet: "1200 g",patatedouce: "1000 g",chouC: "800 g", citrons: "2.5" },
+      { nb: 11, poulet: "1320 g",patatedouce: "1100 g",chouC: "880 g", citrons: "2.75" },
+      { nb: 12, poulet: "1440 g",patatedouce: "1200 g",chouC: "960 g", citrons: "3" },
+      { nb: 13, poulet: "1560 g",patatedouce: "1300 g",chouC: "1040 g",citrons: "3.25" },
+      { nb: 14, poulet: "1680 g",patatedouce: "1400 g",chouC: "1120 g",citrons: "3.5" },
+      { nb: 15, poulet: "1800 g",patatedouce: "1500 g",chouC: "1200 g",citrons: "3.75" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Mariner le poulet", detail: "Mariner les filets 15 min avec herbes de Provence, ail, citron et huile d'olive.", badge: "⏱ 15 min" },
+      { icone: "🔥", titre: "Cuire en parallèle", detail: "Rôtir la patate douce en dés au four 20 min. Cuire le brocoli à la vapeur 8 min. Griller le poulet à la poêle.", badge: "⏱ 20 min" },
+      { icone: "🍽️", titre: "Dresser", detail: "Assembler dans l'assiette. Assaisonner avec jus de citron, sel, poivre et herbes fraîches.", badge: null }
+    ]
+  },
+
+  // ── VÉGÉTARIENNES ─────────────────────────────────────────────
+  gnocchisgorgonzola: {
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥔",
+    description: "Gnocchis au gorgonzola et noix — gnocchis moelleux nappés d'une sauce onctueuse au gorgonzola fondant et noix croquantes. Rapide et terriblement gourmand.",
+    tableauGnocchisGorgon: [
+      { nb:  1, pates: "125 g", fromage: "30 g",  noix: "15 g",  creme: "40 ml" },
+      { nb:  2, pates: "250 g", fromage: "60 g",  noix: "30 g",  creme: "80 ml" },
+      { nb:  3, pates: "375 g", fromage: "90 g",  noix: "45 g",  creme: "120 ml" },
+      { nb:  4, pates: "500 g", fromage: "120 g", noix: "60 g",  creme: "160 ml" },
+      { nb:  5, pates: "625 g", fromage: "150 g", noix: "75 g",  creme: "200 ml" },
+      { nb:  6, pates: "750 g", fromage: "180 g", noix: "90 g",  creme: "240 ml" },
+      { nb:  7, pates: "875 g", fromage: "210 g", noix: "105 g", creme: "280 ml" },
+      { nb:  8, pates: "1000 g",fromage: "240 g", noix: "120 g", creme: "320 ml" },
+      { nb:  9, pates: "1125 g",fromage: "270 g", noix: "135 g", creme: "360 ml" },
+      { nb: 10, pates: "1250 g",fromage: "300 g", noix: "150 g", creme: "400 ml" },
+      { nb: 11, pates: "1375 g",fromage: "330 g", noix: "165 g", creme: "440 ml" },
+      { nb: 12, pates: "1500 g",fromage: "360 g", noix: "180 g", creme: "480 ml" },
+      { nb: 13, pates: "1625 g",fromage: "390 g", noix: "195 g", creme: "520 ml" },
+      { nb: 14, pates: "1750 g",fromage: "420 g", noix: "210 g", creme: "560 ml" },
+      { nb: 15, pates: "1875 g",fromage: "450 g", noix: "225 g", creme: "600 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire les gnocchis", detail: "Cuire les gnocchis dans l'eau bouillante salée jusqu'à ce qu'ils remontent à la surface. Égoutter.", badge: "⏱ 3 min" },
+      { icone: "🧀", titre: "Faire la sauce", detail: "Dans la casserole, faire fondre le gorgonzola avec la crème à feu doux en remuant. Poivrer généreusement.", badge: "⏱ 3 min" },
+      { icone: "🌰", titre: "Finir et servir", detail: "Mélanger gnocchis et sauce. Répartir dans les assiettes. Parsemer de noix concassées et de sauge frite.", badge: null }
+    ]
+  },
+
+  risottocourgettechevre: {
+    base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🍚",
+    description: "Risotto courgette et chèvre frais — crémeux et parfumé, avec des courgettes fondantes et la douceur acidulée du fromage de chèvre. Un risotto printanier.",
+    tableauRisottoChevre: [
+      { nb:  1, riz: "70 g",   courgette: "0.5", chevre: "25 g", bouillon: "300 ml" },
+      { nb:  2, riz: "140 g",  courgette: "1",   chevre: "50 g", bouillon: "600 ml" },
+      { nb:  3, riz: "210 g",  courgette: "1.5", chevre: "75 g", bouillon: "900 ml" },
+      { nb:  4, riz: "280 g",  courgette: "2",   chevre: "100 g",bouillon: "1200 ml" },
+      { nb:  5, riz: "350 g",  courgette: "2.5", chevre: "125 g",bouillon: "1500 ml" },
+      { nb:  6, riz: "420 g",  courgette: "3",   chevre: "150 g",bouillon: "1800 ml" },
+      { nb:  7, riz: "490 g",  courgette: "3.5", chevre: "175 g",bouillon: "2100 ml" },
+      { nb:  8, riz: "560 g",  courgette: "4",   chevre: "200 g",bouillon: "2400 ml" },
+      { nb:  9, riz: "630 g",  courgette: "4.5", chevre: "225 g",bouillon: "2700 ml" },
+      { nb: 10, riz: "700 g",  courgette: "5",   chevre: "250 g",bouillon: "3000 ml" },
+      { nb: 11, riz: "770 g",  courgette: "5.5", chevre: "275 g",bouillon: "3300 ml" },
+      { nb: 12, riz: "840 g",  courgette: "6",   chevre: "300 g",bouillon: "3600 ml" },
+      { nb: 13, riz: "910 g",  courgette: "6.5", chevre: "325 g",bouillon: "3900 ml" },
+      { nb: 14, riz: "980 g",  courgette: "7",   chevre: "350 g",bouillon: "4200 ml" },
+      { nb: 15, riz: "1050 g", courgette: "7.5", chevre: "375 g",bouillon: "4500 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Faire le soffritto", detail: "Faire suer échalote et ail dans le beurre. Ajouter le riz arborio et nacrer 2 min.", badge: null },
+      { icone: "🍷", titre: "Déglacer et cuire", detail: "Déglacer au vin blanc. Ajouter le bouillon chaud louche par louche en remuant sans arrêt.", badge: "⏱ 18 min" },
+      { icone: "🥒", titre: "Ajouter les courgettes", detail: "À mi-cuisson, ajouter les courgettes sautées. En fin de cuisson, incorporer chèvre émietté et beurre froid.", badge: null },
+      { icone: "🍽️", titre: "Mantecatura", detail: "Hors du feu, mantequer vigoureusement. Repos 2 min. Servir avec menthe fraîche.", badge: "⏱ 2 min" }
+    ]
+  },
+
+  currypoischiches: {
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🫘",
+    description: "Curry de pois chiches à la tomate — riche, parfumé et 100% végétalien. Garam masala, tomates concassées et lait de coco pour un plat indien express.",
+    tableauCurryPois: [
+      { nb:  1, pois: "120 g",  tomates: "150 g", cremeCoco: "60 ml",  oignons: "0.5", curry: "1 c.à.c" },
+      { nb:  2, pois: "240 g",  tomates: "300 g", cremeCoco: "120 ml", oignons: "1",   curry: "2 c.à.c" },
+      { nb:  3, pois: "360 g",  tomates: "450 g", cremeCoco: "180 ml", oignons: "1.5", curry: "3 c.à.c" },
+      { nb:  4, pois: "480 g",  tomates: "600 g", cremeCoco: "240 ml", oignons: "2",   curry: "4 c.à.c" },
+      { nb:  5, pois: "600 g",  tomates: "750 g", cremeCoco: "300 ml", oignons: "2.5", curry: "5 c.à.c" },
+      { nb:  6, pois: "720 g",  tomates: "900 g", cremeCoco: "360 ml", oignons: "3",   curry: "6 c.à.c" },
+      { nb:  7, pois: "840 g",  tomates: "1050 g",cremeCoco: "420 ml", oignons: "3.5", curry: "7 c.à.c" },
+      { nb:  8, pois: "960 g",  tomates: "1200 g",cremeCoco: "480 ml", oignons: "4",   curry: "8 c.à.c" },
+      { nb:  9, pois: "1080 g", tomates: "1350 g",cremeCoco: "540 ml", oignons: "4.5", curry: "9 c.à.c" },
+      { nb: 10, pois: "1200 g", tomates: "1500 g",cremeCoco: "600 ml", oignons: "5",   curry: "10 c.à.c" },
+      { nb: 11, pois: "1320 g", tomates: "1650 g",cremeCoco: "660 ml", oignons: "5.5", curry: "11 c.à.c" },
+      { nb: 12, pois: "1440 g", tomates: "1800 g",cremeCoco: "720 ml", oignons: "6",   curry: "12 c.à.c" },
+      { nb: 13, pois: "1560 g", tomates: "1950 g",cremeCoco: "780 ml", oignons: "6.5", curry: "13 c.à.c" },
+      { nb: 14, pois: "1680 g", tomates: "2100 g",cremeCoco: "840 ml", oignons: "7",   curry: "14 c.à.c" },
+      { nb: 15, pois: "1800 g", tomates: "2250 g",cremeCoco: "900 ml", oignons: "7.5", curry: "15 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Faire revenir", detail: "Faire suer oignon et ail. Ajouter curry, garam masala, curcuma, cumin. Torréfier 1 min.", badge: null },
+      { icone: "🍅", titre: "Ajouter tomates et pois", detail: "Ajouter tomates concassées et pois chiches égouttés. Mélanger.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Verser le lait de coco. Laisser mijoter à feu doux.", badge: "⏱ 15 min" },
+      { icone: "🌿", titre: "Finir", detail: "Ajouter les épinards frais. Parsemer de coriandre. Servir avec riz basmati ou naans.", badge: null }
+    ]
+  },
+
+  pastapomodoro: {
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🍝",
+    description: "Pasta al pomodoro fresco — le plat le plus simple et le plus savoureux d'Italie. Tomates fraîches concassées, basilic, ail et huile d'olive sur spaghetti al dente.",
+    tableauPomodoro: [
+      { nb:  1, pates: "80 g",  tomates: "150 g", basilic: "5 g",  huile: "10 ml" },
+      { nb:  2, pates: "160 g", tomates: "300 g", basilic: "10 g", huile: "20 ml" },
+      { nb:  3, pates: "240 g", tomates: "450 g", basilic: "15 g", huile: "30 ml" },
+      { nb:  4, pates: "320 g", tomates: "600 g", basilic: "20 g", huile: "40 ml" },
+      { nb:  5, pates: "400 g", tomates: "750 g", basilic: "25 g", huile: "50 ml" },
+      { nb:  6, pates: "480 g", tomates: "900 g", basilic: "30 g", huile: "60 ml" },
+      { nb:  7, pates: "560 g", tomates: "1050 g",basilic: "35 g", huile: "70 ml" },
+      { nb:  8, pates: "640 g", tomates: "1200 g",basilic: "40 g", huile: "80 ml" },
+      { nb:  9, pates: "720 g", tomates: "1350 g",basilic: "45 g", huile: "90 ml" },
+      { nb: 10, pates: "800 g", tomates: "1500 g",basilic: "50 g", huile: "100 ml" },
+      { nb: 11, pates: "880 g", tomates: "1650 g",basilic: "55 g", huile: "110 ml" },
+      { nb: 12, pates: "960 g", tomates: "1800 g",basilic: "60 g", huile: "120 ml" },
+      { nb: 13, pates: "1040 g",tomates: "1950 g",basilic: "65 g", huile: "130 ml" },
+      { nb: 14, pates: "1120 g",tomates: "2100 g",basilic: "70 g", huile: "140 ml" },
+      { nb: 15, pates: "1200 g",tomates: "2250 g",basilic: "75 g", huile: "150 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les spaghetti al dente dans l'eau bouillante très salée. Réserver 1 verre d'eau de cuisson.", badge: "⏱ 9 min" },
+      { icone: "🧄", titre: "Faire la sauce", detail: "Faire dorer l'ail dans l'huile d'olive. Ajouter tomates concassées, sel, sucre. Cuire 10 min.", badge: "⏱ 10 min" },
+      { icone: "🍅", titre: "Lier", detail: "Égoutter les pâtes al dente. Les finir dans la sauce avec un peu d'eau de cuisson. Bien enrober.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Ajouter le basilic frais déchiré. Un filet d'huile d'olive. Servir immédiatement.", badge: null }
+    ]
+  },
+
+  omeletteprovencale: {
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥚",
+    description: "Omelette provençale — œufs battus garnis de tomates, poivrons, herbes de Provence et fromage de chèvre. Colorée, parfumée et parfaite pour un repas rapide.",
+    tableauOmelette: [
+      { nb:  1, oeuf: "2",   tomates: "50 g",  poivron: "0.25", chevre: "20 g" },
+      { nb:  2, oeuf: "3",   tomates: "75 g",  poivron: "0.5",  chevre: "30 g" },
+      { nb:  3, oeuf: "4",   tomates: "100 g", poivron: "0.75", chevre: "40 g" },
+      { nb:  4, oeuf: "6",   tomates: "150 g", poivron: "1",    chevre: "60 g" },
+      { nb:  5, oeuf: "8",   tomates: "200 g", poivron: "1.25", chevre: "80 g" },
+      { nb:  6, oeuf: "9",   tomates: "225 g", poivron: "1.5",  chevre: "90 g" },
+      { nb:  7, oeuf: "10",  tomates: "250 g", poivron: "1.75", chevre: "100 g" },
+      { nb:  8, oeuf: "12",  tomates: "300 g", poivron: "2",    chevre: "120 g" },
+      { nb:  9, oeuf: "14",  tomates: "350 g", poivron: "2.25", chevre: "140 g" },
+      { nb: 10, oeuf: "15",  tomates: "375 g", poivron: "2.5",  chevre: "150 g" },
+      { nb: 11, oeuf: "16",  tomates: "400 g", poivron: "2.75", chevre: "160 g" },
+      { nb: 12, oeuf: "18",  tomates: "450 g", poivron: "3",    chevre: "180 g" },
+      { nb: 13, oeuf: "20",  tomates: "500 g", poivron: "3.25", chevre: "200 g" },
+      { nb: 14, oeuf: "21",  tomates: "525 g", poivron: "3.5",  chevre: "210 g" },
+      { nb: 15, oeuf: "22",  tomates: "550 g", poivron: "3.75", chevre: "220 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫑", titre: "Faire sauter les légumes", detail: "Faire sauter poivron et tomates cerise dans l'huile d'olive avec herbes de Provence. Réserver.", badge: "⏱ 5 min" },
+      { icone: "🥚", titre: "Battre les œufs", detail: "Battre les œufs avec sel, poivre et un peu d'eau. Verser dans la poêle beurrée chaude.", badge: null },
+      { icone: "🧀", titre: "Garnir et plier", detail: "Quand le dessus commence à prendre, déposer légumes et chèvre émietté. Plier et servir.", badge: "⏱ 3 min" }
+    ]
+  },
+
+  tarteepinardfeta: {
+    base: 6, temps: "45 min", niveau: "⭐ Facile", emoji: "🥬",
+    description: "Tarte épinards feta — fond de pâte brisée, épinards fondants et feta crémeuse. Une tarte salée méditerranéenne simple et délicieuse.",
+    tableauTarteEpinard: [
+      { nb:  1, farine: "55 g",  beurre: "30 g",  epinards: "100 g", fetaOpt: "50 g",  oeuf: "0.75" },
+      { nb:  2, farine: "110 g", beurre: "60 g",  epinards: "200 g", fetaOpt: "100 g", oeuf: "1.5" },
+      { nb:  3, farine: "165 g", beurre: "90 g",  epinards: "300 g", fetaOpt: "150 g", oeuf: "2.25" },
+      { nb:  4, farine: "220 g", beurre: "120 g", epinards: "400 g", fetaOpt: "200 g", oeuf: "3" },
+      { nb:  5, farine: "275 g", beurre: "150 g", epinards: "500 g", fetaOpt: "250 g", oeuf: "3.75" },
+      { nb:  6, farine: "330 g", beurre: "180 g", epinards: "600 g", fetaOpt: "300 g", oeuf: "4.5" },
+      { nb:  7, farine: "385 g", beurre: "210 g", epinards: "700 g", fetaOpt: "350 g", oeuf: "5.25" },
+      { nb:  8, farine: "440 g", beurre: "240 g", epinards: "800 g", fetaOpt: "400 g", oeuf: "6" },
+      { nb:  9, farine: "495 g", beurre: "270 g", epinards: "900 g", fetaOpt: "450 g", oeuf: "6.75" },
+      { nb: 10, farine: "550 g", beurre: "300 g", epinards: "1000 g",fetaOpt: "500 g", oeuf: "7.5" },
+      { nb: 11, farine: "605 g", beurre: "330 g", epinards: "1100 g",fetaOpt: "550 g", oeuf: "8.25" },
+      { nb: 12, farine: "660 g", beurre: "360 g", epinards: "1200 g",fetaOpt: "600 g", oeuf: "9" },
+      { nb: 13, farine: "715 g", beurre: "390 g", epinards: "1300 g",fetaOpt: "650 g", oeuf: "9.75" },
+      { nb: 14, farine: "770 g", beurre: "420 g", epinards: "1400 g",fetaOpt: "700 g", oeuf: "10.5" },
+      { nb: 15, farine: "825 g", beurre: "450 g", epinards: "1500 g",fetaOpt: "750 g", oeuf: "11.25" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥐", titre: "Préparer la pâte", detail: "Sabler farine et beurre froid. Ajouter œuf et eau froide. Former une boule. Réfrigérer 20 min.", badge: "⏱ 20 min" },
+      { icone: "🥬", titre: "Préparer les épinards", detail: "Faire fondre les épinards avec ail dans l'huile d'olive. Laisser refroidir. Égoutter.", badge: "⏱ 5 min" },
+      { icone: "🥚", titre: "Faire l'appareil", detail: "Mélanger œufs, crème, épinards, feta émiettée, noix de muscade.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Foncer le moule avec la pâte. Verser l'appareil. Cuire à 180°C.", badge: "⏱ 30 min" }
+    ]
+  },
+
+  veggieburger: {
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍔",
+    description: "Burger végétarien maison — galette de pois chiches et betterave, garnie d'avocat écrasé, tomate, salade et sauce yogurt. Aussi gourmand que le vrai !",
+    tableauVeggieBurger: [
+      { nb:  1, pois: "100 g", betterave: "50 g", avocat: "0.25", pain: "1 burger" },
+      { nb:  2, pois: "200 g", betterave: "100 g",avocat: "0.5",  pain: "2 burgers" },
+      { nb:  3, pois: "300 g", betterave: "150 g",avocat: "0.75", pain: "3 burgers" },
+      { nb:  4, pois: "400 g", betterave: "200 g",avocat: "1",    pain: "4 burgers" },
+      { nb:  5, pois: "500 g", betterave: "250 g",avocat: "1.25", pain: "5 burgers" },
+      { nb:  6, pois: "600 g", betterave: "300 g",avocat: "1.5",  pain: "6 burgers" },
+      { nb:  7, pois: "700 g", betterave: "350 g",avocat: "1.75", pain: "7 burgers" },
+      { nb:  8, pois: "800 g", betterave: "400 g",avocat: "2",    pain: "8 burgers" },
+      { nb:  9, pois: "900 g", betterave: "450 g",avocat: "2.25", pain: "9 burgers" },
+      { nb: 10, pois: "1000 g",betterave: "500 g",avocat: "2.5",  pain: "10 burgers" },
+      { nb: 11, pois: "1100 g",betterave: "550 g",avocat: "2.75", pain: "11 burgers" },
+      { nb: 12, pois: "1200 g",betterave: "600 g",avocat: "3",    pain: "12 burgers" },
+      { nb: 13, pois: "1300 g",betterave: "650 g",avocat: "3.25", pain: "13 burgers" },
+      { nb: 14, pois: "1400 g",betterave: "700 g",avocat: "3.5",  pain: "14 burgers" },
+      { nb: 15, pois: "1500 g",betterave: "750 g",avocat: "3.75", pain: "15 burgers" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Faire les galettes", detail: "Mixer pois chiches égouttés, betterave râpée, oignon, ail, cumin, sel. Former 4 galettes. Réfrigérer 15 min.", badge: "⏱ 15 min" },
+      { icone: "🔥", titre: "Cuire les galettes", detail: "Faire dorer les galettes à la poêle huilée 4 min par côté à feu moyen.", badge: "⏱ 8 min" },
+      { icone: "🥑", titre: "Préparer la garniture", detail: "Écraser l'avocat avec citron, sel. Préparer tomate, salade, sauce yaourt-ail.", badge: null },
+      { icone: "🍔", titre: "Assembler", detail: "Griller les pains. Garnir avec galette, avocat, tomate, salade et sauce.", badge: null }
+    ]
+  },
+
+  soufflecheese: {
+    base: 4, temps: "45 min", niveau: "⭐⭐⭐ Expert", emoji: "🧀",
+    description: "Soufflé au fromage — léger comme un nuage, dorée et gonflée à souhait. La grande classique de la cuisine française qui impressionne à tous les coups.",
+    tableauSouffleCheese: [
+      { nb:  1, fromage: "30 g",  beurre: "15 g",  farine: "15 g",  lait: "125 ml", oeuf: "1.5" },
+      { nb:  2, fromage: "60 g",  beurre: "30 g",  farine: "30 g",  lait: "250 ml", oeuf: "3" },
+      { nb:  3, fromage: "90 g",  beurre: "45 g",  farine: "45 g",  lait: "375 ml", oeuf: "4.5" },
+      { nb:  4, fromage: "120 g", beurre: "60 g",  farine: "60 g",  lait: "500 ml", oeuf: "6" },
+      { nb:  5, fromage: "150 g", beurre: "75 g",  farine: "75 g",  lait: "625 ml", oeuf: "7.5" },
+      { nb:  6, fromage: "180 g", beurre: "90 g",  farine: "90 g",  lait: "750 ml", oeuf: "9" },
+      { nb:  7, fromage: "210 g", beurre: "105 g", farine: "105 g", lait: "875 ml", oeuf: "10.5" },
+      { nb:  8, fromage: "240 g", beurre: "120 g", farine: "120 g", lait: "1000 ml",oeuf: "12" },
+      { nb:  9, fromage: "270 g", beurre: "135 g", farine: "135 g", lait: "1125 ml",oeuf: "13.5" },
+      { nb: 10, fromage: "300 g", beurre: "150 g", farine: "150 g", lait: "1250 ml",oeuf: "15" },
+      { nb: 11, fromage: "330 g", beurre: "165 g", farine: "165 g", lait: "1375 ml",oeuf: "16.5" },
+      { nb: 12, fromage: "360 g", beurre: "180 g", farine: "180 g", lait: "1500 ml",oeuf: "18" },
+      { nb: 13, fromage: "390 g", beurre: "195 g", farine: "195 g", lait: "1625 ml",oeuf: "19.5" },
+      { nb: 14, fromage: "420 g", beurre: "210 g", farine: "210 g", lait: "1750 ml",oeuf: "21" },
+      { nb: 15, fromage: "450 g", beurre: "225 g", farine: "225 g", lait: "1875 ml",oeuf: "22.5" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Faire la béchamel", detail: "Faire un roux beurre/farine. Verser le lait chaud. Cuire jusqu'à épaississement. Ajouter fromage râpé, muscade, jaunes d'œufs.", badge: "⏱ 8 min" },
+      { icone: "🥚", titre: "Monter les blancs", detail: "Monter les blancs en neige très ferme avec une pincée de sel.", badge: null },
+      { icone: "🌀", titre: "Incorporer", detail: "Incorporer délicatement les blancs à la béchamel en 3 fois, en soulevant la masse.", badge: null },
+      { icone: "🔥", titre: "Cuire SANS ouvrir", detail: "Verser dans les moules beurrés-farinés. Cuire au four préchauffé SANS ouvrir la porte.", badge: "⏱ 12 min" }
+    ]
+  },
+
+  paellaVege: {
+    base: 4, temps: "40 min", niveau: "⭐⭐ Moyen", emoji: "🥘",
+    description: "Paella végétarienne — riz bomba safrané avec artichauts, poivrons, haricots verts et tomates. Toutes les saveurs de Valence sans viande ni poisson.",
+    tableauPaellaVege: [
+      { nb:  1, riz: "80 g",  poivron: "0.5", tomates: "100 g", petitspois: "50 g", safran: "1 pincée" },
+      { nb:  2, riz: "160 g", poivron: "1",   tomates: "200 g", petitspois: "100 g",safran: "2 pincées" },
+      { nb:  3, riz: "240 g", poivron: "1.5", tomates: "300 g", petitspois: "150 g",safran: "3 pincées" },
+      { nb:  4, riz: "320 g", poivron: "2",   tomates: "400 g", petitspois: "200 g",safran: "4 pincées" },
+      { nb:  5, riz: "400 g", poivron: "2.5", tomates: "500 g", petitspois: "250 g",safran: "5 pincées" },
+      { nb:  6, riz: "480 g", poivron: "3",   tomates: "600 g", petitspois: "300 g",safran: "6 pincées" },
+      { nb:  7, riz: "560 g", poivron: "3.5", tomates: "700 g", petitspois: "350 g",safran: "7 pincées" },
+      { nb:  8, riz: "640 g", poivron: "4",   tomates: "800 g", petitspois: "400 g",safran: "8 pincées" },
+      { nb:  9, riz: "720 g", poivron: "4.5", tomates: "900 g", petitspois: "450 g",safran: "9 pincées" },
+      { nb: 10, riz: "800 g", poivron: "5",   tomates: "1000 g",petitspois: "500 g",safran: "10 pincées" },
+      { nb: 11, riz: "880 g", poivron: "5.5", tomates: "1100 g",petitspois: "550 g",safran: "11 pincées" },
+      { nb: 12, riz: "960 g", poivron: "6",   tomates: "1200 g",petitspois: "600 g",safran: "12 pincées" },
+      { nb: 13, riz: "1040 g",poivron: "6.5", tomates: "1300 g",petitspois: "650 g",safran: "13 pincées" },
+      { nb: 14, riz: "1120 g",poivron: "7",   tomates: "1400 g",petitspois: "700 g",safran: "14 pincées" },
+      { nb: 15, riz: "1200 g",poivron: "7.5", tomates: "1500 g",petitspois: "750 g",safran: "15 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫑", titre: "Faire le sofrito", detail: "Faire revenir oignon, poivron rouge et vert, ail dans l'huile d'olive. Ajouter tomates concassées.", badge: "⏱ 10 min" },
+      { icone: "🌾", titre: "Ajouter le riz", detail: "Ajouter le riz bomba. Mélanger pour l'enrober. Verser le bouillon chaud avec safran et paprika fumé.", badge: null },
+      { icone: "🫘", titre: "Cuire sans remuer", detail: "Ajouter légumes. Cuire à feu moyen SANS remuer pour former le socarrat.", badge: "⏱ 18 min" },
+      { icone: "🍋", titre: "Reposer et servir", detail: "Couvrir d'aluminium. Laisser reposer 5 min. Servir avec quartiers de citron.", badge: "⏱ 5 min" }
+    ]
+  },
+
+  // ── COCKTAILS AVEC ALCOOL ─────────────────────────────────────
+  bellini: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍑",
+    description: "Bellini — le cocktail emblématique de l'Harry's Bar de Venise. Purée de pêche blanche et prosecco pétillant. Élégant, fruité et irrésistiblement festif.",
+    fixe: true,
+    ingredientsFixes: [
+      ["prosecco", "100 ml"], ["peche", "1 pêche"], ["sucre", "½ c.à.c"]
+    ],
+    etapes: [
+      { icone: "🍑", titre: "Préparer la purée", detail: "Mixer la pêche blanche pelée avec le sucre et quelques gouttes de jus de citron jusqu'à consistance lisse.", badge: null },
+      { icone: "🍾", titre: "Verser le prosecco", detail: "Verser 2 cuillères à soupe de purée dans une flûte bien froide. Verser délicatement le prosecco froid.", badge: null },
+      { icone: "🥂", titre: "Mélanger et servir", detail: "Mélanger délicatement avec une cuillère longue. Décorer avec un quartier de pêche.", badge: null }
+    ]
+  },
+
+  frenchMartini: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍸",
+    description: "French Martini — vodka, Chambord et jus d'ananas. Un cocktail fruité, soyeux et légèrement exotique avec sa mousse caractéristique.",
+    fixe: true,
+    ingredientsFixes: [
+      ["vodka", "45 ml"], ["ananas", "45 ml"], ["sirop", "15 ml (Chambord)"], ["glace", "glaçons"]
+    ],
+    etapes: [
+      { icone: "🧊", titre: "Remplir le shaker", detail: "Remplir le shaker de glaçons. Verser vodka, jus d'ananas et Chambord.", badge: null },
+      { icone: "🍸", titre: "Shaker vigoureusement", detail: "Shaker 15 secondes vigoureusement pour créer la mousse caractéristique.", badge: "⏱ 15 sec" },
+      { icone: "🍷", titre: "Servir", detail: "Double filtration dans une coupe Martini froide. La mousse se forme en surface.", badge: null }
+    ]
+  },
+
+  darkStormyCocktail: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "⛈️",
+    description: "Dark & Stormy — rhum brun épicé et ginger beer avec une rondelle de citron vert. Un cocktail des Bermudes intense, rafraîchissant et très facile.",
+    fixe: true,
+    ingredientsFixes: [
+      ["rhum", "60 ml (rhum brun)"], ["gingerBeer", "120 ml"], ["citrons", "1 rondelle"], ["glace", "glaçons"]
+    ],
+    etapes: [
+      { icone: "🧊", titre: "Remplir le verre", detail: "Remplir un verre highball de glaçons. Verser le ginger beer.", badge: null },
+      { icone: "⛈️", titre: "Ajouter le rhum", detail: "Verser délicatement le rhum brun par-dessus sans mélanger pour créer l'effet nuage.", badge: null },
+      { icone: "🍋", titre: "Garnir", detail: "Presser et déposer la rondelle de citron vert. Servir avec une paille.", badge: null }
+    ]
+  },
+
+  amarettoSour: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍊",
+    description: "Amaretto Sour — amaretto doux, citron frais et blanc d'œuf pour une mousse veloutée. Un sour parfaitement équilibré entre douceur amandée et acidité.",
+    fixe: true,
+    ingredientsFixes: [
+      ["cognac", "50 ml (amaretto)"], ["citrons", "25 ml jus"], ["sucre", "10 ml sirop"], ["blanc", "15 ml"], ["glace", "glaçons"]
+    ],
+    etapes: [
+      { icone: "🥚", titre: "Dry shake", detail: "Mettre amaretto, jus de citron, sirop et blanc d'œuf dans le shaker SANS glaçons. Shaker 10 sec.", badge: "⏱ 10 sec" },
+      { icone: "🧊", titre: "Wet shake", detail: "Ajouter les glaçons. Shaker à nouveau vigoureusement 15 secondes.", badge: "⏱ 15 sec" },
+      { icone: "🍊", titre: "Servir", detail: "Filtrer dans un verre rocks sur glaçons. Décorer avec une cerise et un twist d'orange.", badge: null }
+    ]
+  },
+
+  aperolPamplemousse: {
+    base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍊",
+    description: "Aperol Pamplemousse Spritz — une variation fruitée du spritz classique avec du jus de pamplemousse rose pour plus d'amertume et de fraîcheur.",
+    fixe: true,
+    ingredientsFixes: [
+      ["campari", "40 ml (Aperol)"], ["orange", "60 ml jus pamplemousse"], ["tonic", "60 ml prosecco"], ["glace", "glaçons"], ["citrons", "1 rondelle"]
+    ],
+    etapes: [
+      { icone: "🧊", titre: "Remplir", detail: "Remplir un grand verre de glaçons.", badge: null },
+      { icone: "🍊", titre: "Verser", detail: "Verser l'Aperol, le jus de pamplemousse rose puis le prosecco.", badge: null },
+      { icone: "🌿", titre: "Garnir", detail: "Remuer délicatement. Décorer avec une rondelle de pamplemousse et un brin de romarin.", badge: null }
+    ]
+  },
+
+  // ── MOCKTAILS ────────────────────────────────────────────────
+  mocktailframboisementhe: {
+    base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🫐",
+    description: "Mocktail framboise menthe — framboises fraîches pilées, sirop de menthe, limonade pétillante et glaçons. Frais, coloré et zéro alcool.",
+    fixe: true,
+    ingredientsFixes: [
+      ["fraises", "50 g framboises"], ["menthe", "5 feuilles"], ["sirop", "20 ml sirop framboise"], ["tonic", "120 ml limonade"], ["glace", "glaçons"]
+    ],
+    etapes: [
+      { icone: "🫐", titre: "Piler les framboises", detail: "Dans le verre, piler les framboises avec la menthe et le sirop.", badge: null },
+      { icone: "🧊", titre: "Ajouter les glaçons", detail: "Remplir de glaçons.", badge: null },
+      { icone: "💧", titre: "Compléter", detail: "Verser la limonade pétillante. Remuer délicatement. Décorer avec framboises et menthe fraîche.", badge: null }
+    ]
+  },
+
+  mocktailpassionsoleil: {
+    base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "☀️",
+    description: "Mocktail Passion Soleil — fruit de la passion, mangue, jus d'orange et eau gazeuse. Tropical, vitaminé et ensoleillé même en hiver.",
+    fixe: true,
+    ingredientsFixes: [
+      ["passion", "1 fruit de la passion"], ["orange", "60 ml jus mangue"], ["orangeJus", "60 ml jus d'orange"], ["tonic", "60 ml eau gazeuse"], ["glace", "glaçons"]
+    ],
+    etapes: [
+      { icone: "☀️", titre: "Préparer", detail: "Dans un shaker avec glaçons, verser pulpe de fruit de la passion, jus de mangue et jus d'orange.", badge: null },
+      { icone: "🍹", titre: "Shaker", detail: "Shaker vigoureusement 10 secondes.", badge: "⏱ 10 sec" },
+      { icone: "💧", titre: "Servir", detail: "Verser dans un verre. Compléter avec l'eau gazeuse. Décorer avec une rondelle d'orange.", badge: null }
+    ]
+  },
+
+  mocktailconcombrecitr: {
+    base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🥒",
+    description: "Mocktail concombre citron vert — concombre frais, citron vert, basilic et eau pétillante. Ultrafraîchissant, détox et élégant pour l'apéritif.",
+    fixe: true,
+    ingredientsFixes: [
+      ["concombre", "4 rondelles"], ["citrons", "30 ml jus citron vert"], ["basilic", "3 feuilles"], ["sirop", "15 ml sirop agave"], ["tonic", "100 ml eau gazeuse"], ["glace", "glaçons"]
+    ],
+    etapes: [
+      { icone: "🥒", titre: "Piler", detail: "Dans le verre, piler les rondelles de concombre avec le basilic et le sirop d'agave.", badge: null },
+      { icone: "🍋", titre: "Ajouter", detail: "Ajouter jus de citron vert et glaçons.", badge: null },
+      { icone: "💧", titre: "Compléter", detail: "Verser l'eau gazeuse. Garnir d'une rondelle de concombre et basilic.", badge: null }
+    ]
+  },
+
+  mocktailgingembre: {
+    base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🫚",
+    description: "Ginger Mocktail — gingembre frais, citron, miel et ginger beer. Épicé, piquant et revigorant. La version sans alcool du Moscow Mule.",
+    fixe: true,
+    ingredientsFixes: [
+      ["gingembre", "5 g râpé"], ["citrons", "30 ml jus"], ["miel", "15 ml"], ["gingerBeer", "150 ml ginger beer"], ["glace", "glaçons"]
+    ],
+    etapes: [
+      { icone: "🫚", titre: "Préparer", detail: "Mélanger gingembre râpé, jus de citron et miel. Laisser infuser 2 min.", badge: "⏱ 2 min" },
+      { icone: "🧊", titre: "Remplir", detail: "Filtrer dans un mug en cuivre ou verre rempli de glaçons.", badge: null },
+      { icone: "💧", titre: "Compléter", detail: "Verser le ginger beer. Garnir de rondelle de citron et brin de menthe.", badge: null }
+    ]
+  },
+
+  mocktailfraisesvanille: {
+    base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🍓",
+    description: "Mocktail Fraises Vanille — coulis de fraises fraîches, extrait de vanille, lait de coco et eau gazeuse. Doux, fruité et terriblement gourmand.",
+    fixe: true,
+    ingredientsFixes: [
+      ["fraises", "80 g fraises"], ["vanilleE", "½ c.à.c"], ["cremeCoco", "40 ml lait de coco"], ["sirop", "15 ml sirop de sucre"], ["tonic", "80 ml eau gazeuse"], ["glace", "glaçons"]
+    ],
+    etapes: [
+      { icone: "🍓", titre: "Mixer", detail: "Mixer les fraises avec la vanille et le sirop jusqu'à obtenir un coulis lisse.", badge: null },
+      { icone: "🥥", titre: "Assembler", detail: "Dans un verre rempli de glaçons, verser le coulis de fraises puis le lait de coco.", badge: null },
+      { icone: "💧", titre: "Finir", detail: "Ajouter l'eau gazeuse. Remuer délicatement. Décorer avec une fraise sur le bord du verre.", badge: null }
+    ]
+  },
+
 };
