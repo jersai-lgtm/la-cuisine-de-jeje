@@ -2788,12 +2788,19 @@ function appliquerProfilSurFormulaire() {
     }
   });
 
-  // Pré-remplir personnes depuis le foyer
+  // Pré-remplir personnes depuis le foyer (formulaires Semaine ET Thématique)
   const foyer = window.userProfile?.foyer;
   if (foyer) {
-    const nb = (foyer.adultes||0) + (foyer.ados||0) + (foyer.enfants||0);
-    const inputP = document.getElementById("plan-personnes");
-    if (inputP && nb > 0) inputP.value = nb;
+    const nb = Math.min(15, Math.max(1,
+      (foyer.adultes || 0) + (foyer.ados || 0) +
+      (foyer.enfants || 0) + (foyer.bebes || foyer.bébés || 0)
+    ));
+    if (nb > 0) {
+      const inputP = document.getElementById("plan-personnes");
+      if (inputP) inputP.value = nb;
+      const inputF = document.getElementById("festif-personnes");
+      if (inputF) inputF.value = nb;
+    }
   }
 
   // Pré-remplir allergies dans le champ texte
