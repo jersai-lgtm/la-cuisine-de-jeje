@@ -174,6 +174,17 @@ window.sauvegarderProfilComplet = async function() {
   };
 
   const qsa = (sel) => scope ? [...scope.querySelectorAll(sel)].map(c => c.value) : [];
+
+  // Filet de sécurité : récupérer une allergie tapée dans le champ mais pas
+  // encore validée par "+ Ajouter" / Entrée, pour ne jamais l'oublier.
+  const inputCustom = document.getElementById(pfx === "pp" ? "pp-allergie-input" : "allergie-custom-input");
+  const valEnAttente = inputCustom?.value.trim().toLowerCase();
+  if (valEnAttente) {
+    if (!window["_ac_" + pfx]) window["_ac_" + pfx] = [];
+    if (!window["_ac_" + pfx].includes(valEnAttente)) window["_ac_" + pfx].push(valEnAttente);
+    inputCustom.value = "";
+  }
+
   const preferences = {
     regimes:          qsa(".pref-regime:checked"),
     allergies:        qsa(".pref-allergie:checked"),
