@@ -2753,7 +2753,9 @@ Réponds en français.`;
   container.scrollTop = container.scrollHeight;
 
   try {
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    // Proxy Cloudflare Worker (évite le blocage CORS de GitHub Pages)
+    const CLAUDE_PROXY = "https://la-cuisine-de-jeje.jerome-sainthot.workers.dev";
+    const response = await fetch(CLAUDE_PROXY, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
