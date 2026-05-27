@@ -138,6 +138,8 @@ window.toggleFavori = async function(key) {
     const el = document.getElementById(id);
     if (el) el.textContent = newFavs.includes(key) ? "❤️" : "🤍";
   });
+  // Rafraîchir l'UI (accueil + onglets favoris si ouverts)
+  window.dispatchEvent(new Event("profilMisAJour"));
 };
 
 window.estFavori = function(key) {
