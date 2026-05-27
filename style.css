@@ -1592,6 +1592,24 @@ select, input[type="number"] {
   letter-spacing: .2px;
 }
 
+/* Bouton "Sauvegarder en favori" dans le header des menus */
+.plan-btn-favori-menu {
+  background: rgba(255,77,136,.12);
+  border: 1px solid rgba(255,77,136,.35);
+  color: #ff8fb3;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease;
+  white-space: nowrap;
+}
+.plan-btn-favori-menu:hover {
+  background: rgba(255,77,136,.22);
+  transform: translateY(-1px);
+}
+
 /* ==============================
    ASSISTANT CLAUDE
 ============================== */

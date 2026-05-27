@@ -111,7 +111,7 @@ async function chargerProfil(user) {
       dateCreation: new Date().toISOString(),
       foyer: null,
       preferences: { regimes:[], allergies:[], allergiesCustom:[], objectifs:[], cuisinesFavorites:[], niveauCuisine:"débutant" },
-      favoris: [], historiqueMenus: []
+      favoris: [], historiqueMenus: [], menusFavoris: []
     };
     await ref.set(profil);
     window.userProfile = profil;
@@ -142,6 +142,86 @@ window.toggleFavori = async function(key) {
 
 window.estFavori = function(key) {
   return (window.userProfile?.favoris || []).includes(key);
+};
+
+// ==============================
+// MENUS FAVORIS (semaine + thématique)
+// ==============================
+
+// Génère un ID unique pour un menu favori
+function _genIdMenu() {
+  return "m_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7);
+}
+
+// Génère le nom auto "Menu du JJ mois — Premier plat"
+window.genererNomMenuFavori = function(menu, type) {
+  const date = new Date().toLocaleDateString("fr-FR", { day: "numeric", month: "long" });
+  let premier = "";
+  if (type === "thematique") {
+    // Menu thématique : 1er plat de la liste
+    const items = menu?.menu || [];
+    const platItem = items.find(p => /plat/i.test(p.categorie || "")) || items[0];
+    premier = platItem?.recette || "";
+  } else {
+    // Menu semaine : 1er plat du 1er jour
+    const jour1 = menu?.semaine?.[0];
+    if (jour1) {
+      premier = jour1.midi?.recette || jour1.midi?.plat?.recette || (typeof jour1.midi === "string" ? jour1.midi : "") || "";
+    }
+  }
+  const nom = (typeof getNomRecette === "function" && premier) ? getNomRecette(premier) : premier;
+  return nom ? `Menu du ${date} — ${nom}` : `Menu du ${date}`;
+};
+
+// Sauvegarder le menu courant comme favori
+window.sauvegarderMenuFavori = async function(menu, type, personnes) {
+  if (!window.currentUser) { ouvrirModalAuth(); return null; }
+  if (!menu) return null;
+  const liste = window.userProfile?.menusFavoris || [];
+  const nouveau = {
+    id: _genIdMenu(),
+    type: type, // "semaine" ou "thematique"
+    nom: window.genererNomMenuFavori(menu, type),
+    date: new Date().toISOString(),
+    personnes: personnes || 4,
+    menu: menu // structure complète
+  };
+  const nouvelle = [nouveau, ...liste].slice(0, 30); // max 30 menus favoris
+  await _db.collection("utilisateurs").doc(window.currentUser.uid).update({ menusFavoris: nouvelle });
+  window.userProfile.menusFavoris = nouvelle;
+  window.dispatchEvent(new Event("profilMisAJour"));
+  return nouveau.id;
+};
+
+// Supprimer un menu favori par son ID
+window.supprimerMenuFavori = async function(id) {
+  if (!window.currentUser) return;
+  const liste = (window.userProfile?.menusFavoris || []).filter(m => m.id !== id);
+  await _db.collection("utilisateurs").doc(window.currentUser.uid).update({ menusFavoris: liste });
+  window.userProfile.menusFavoris = liste;
+  window.dispatchEvent(new Event("profilMisAJour"));
+};
+
+// Renommer un menu favori (pour future personnalisation)
+window.renommerMenuFavori = async function(id, nouveauNom) {
+  if (!window.currentUser) return;
+  const liste = (window.userProfile?.menusFavoris || []).map(m =>
+    m.id === id ? { ...m, nom: nouveauNom } : m
+  );
+  await _db.collection("utilisateurs").doc(window.currentUser.uid).update({ menusFavoris: liste });
+  window.userProfile.menusFavoris = liste;
+  window.dispatchEvent(new Event("profilMisAJour"));
+};
+
+window.getMenusFavoris = function() {
+  return window.userProfile?.menusFavoris || [];
+};
+
+window.estMenuFavori = function(menu, type) {
+  // Compare la structure du menu pour détecter si déjà sauvegardé
+  if (!menu) return false;
+  const liste = window.userProfile?.menusFavoris || [];
+  return liste.some(m => m.type === type && JSON.stringify(m.menu) === JSON.stringify(menu));
 };
 
 window.sauvegarderHistoriqueMenu = async function(menu, type) {
