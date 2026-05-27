@@ -141,6 +141,16 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
+  <!-- Bloc Plats fétiches du foyer -->
+  <div class="accueil-bloc" id="section-accueil-fetiches" style="display:none">
+    <div class="accueil-bloc-header">
+      <h2>🔥 Plats fétiches du foyer</h2>
+    </div>
+    <div class="accueil-scroll-row" id="accueil-fetiches-row">
+      <div class="accueil-empty">Aucun favori du foyer encore</div>
+    </div>
+  </div>
+
   <!-- Bloc Dernières recettes vues -->
   <div class="accueil-bloc" id="accueil-recents-bloc">
     <div class="accueil-bloc-header">
@@ -3657,7 +3667,10 @@ gtag('config', 'G-390C5MY2SS');
   <div id="festif-courses" style="display:none">
     <div class="plan-result-header">
       <h2>🛒 Liste de courses</h2>
-      <button class="plan-btn-retry" onclick="document.getElementById('festif-courses').style.display='none';document.getElementById('festif-result').style.display='block'">← Retour</button>
+      <div style="display:flex;gap:8px">
+        <button class="plan-btn-retry" onclick="imprimerCourses('festif-courses')">📄 Imprimer / PDF</button>
+        <button class="plan-btn-retry" onclick="document.getElementById('festif-courses').style.display='none';document.getElementById('festif-result').style.display='block'">← Retour</button>
+      </div>
     </div>
     <div id="festif-courses-content"></div>
   </div>
@@ -4006,7 +4019,10 @@ gtag('config', 'G-390C5MY2SS');
   <div id="plan-courses" style="display:none">
     <div class="plan-result-header">
       <h2>🛒 Liste de courses</h2>
-      <button class="plan-btn-retry" onclick="document.getElementById('plan-courses').style.display='none';document.getElementById('plan-result').style.display='block'">← Retour</button>
+      <div style="display:flex;gap:8px">
+        <button class="plan-btn-retry" onclick="imprimerCourses('plan-courses')">📄 Imprimer / PDF</button>
+        <button class="plan-btn-retry" onclick="document.getElementById('plan-courses').style.display='none';document.getElementById('plan-result').style.display='block'">← Retour</button>
+      </div>
     </div>
     <div id="plan-courses-content"></div>
   </div>

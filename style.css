@@ -257,6 +257,18 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
   font-size: 12px;
   color: #ffb3cc;
 }
+/* Badge saison : vert tendre */
+.fiche-meta .fiche-saison {
+  background: rgba(76,175,80,.2);
+  border: 1px solid rgba(76,175,80,.4);
+  color: #a5d6a7;
+}
+/* Badge historique : bleu doux */
+.fiche-meta .fiche-historique {
+  background: rgba(100,149,237,.18);
+  border: 1px solid rgba(100,149,237,.4);
+  color: #a8c7ed;
+}
 
 /* ==========================
    SECTION FICHE
@@ -1501,6 +1513,20 @@ select, input[type="number"] {
   position: absolute;
   top: 6px;
   right: 6px;
+  font-size: 14px;
+  background: rgba(0,0,0,.55);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.mini-carte-saison {
+  position: absolute;
+  top: 6px;
+  left: 6px;
   font-size: 14px;
   background: rgba(0,0,0,.55);
   border-radius: 50%;
