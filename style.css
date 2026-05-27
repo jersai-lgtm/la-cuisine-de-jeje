@@ -196,7 +196,7 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
   inset: 0;
   background: rgba(0,0,0,.7);
   z-index: 500;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   backdrop-filter: blur(4px);
 }
@@ -210,11 +210,11 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 }
 .modal-contenu {
   background: rgba(20,20,20,.98);
-  border-radius: 24px 24px 0 0;
-  padding: 20px 18px 40px;
-  width: 100%;
+  border-radius: 20px;
+  padding: 20px 18px 30px;
+  width: 95%;
   max-width: 540px;
-  max-height: 90vh;
+  max-height: 85vh;
   overflow-y: auto;
   position: relative;
 }
@@ -1513,4 +1513,31 @@ select, input[type="number"] {
 }
 .mini-carte {
   position: relative;
+}
+
+/* ==============================
+   MENU — BADGES & BOUTON REGEN
+============================== */
+.plan-badge-famille {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+.plan-regen-btn {
+  background: rgba(255,255,255,.12);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 4px;
+  transition: .2s;
+  padding: 0;
+  line-height: 24px;
+}
+.plan-regen-btn:hover {
+  background: rgba(255,255,255,.25);
+  transform: rotate(45deg);
 }
