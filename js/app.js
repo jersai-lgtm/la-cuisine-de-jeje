@@ -566,6 +566,18 @@ function chargerAccueilFetiches() {
 }
 
 // Variante de miniCarte avec un badge fréquence ("🔥 X fois")
+// Mapping clé Firestore → nom de fichier image
+// Pour les recettes dont la clé interne ne correspond pas au nom du fichier .webp
+// (utilisé par miniCarte / miniCarteFetiche pour générer le bon chemin d'image)
+const IMAGE_EXCEPTIONS = {
+  pizza:   "patepizza",   // clé 'pizza' → images/patepizza.webp
+  lasagne: "patelasagne", // clé 'lasagne' → images/patelasagne.webp
+};
+function getImagePath(key) {
+  const nom = IMAGE_EXCEPTIONS[key] || key;
+  return `images/${nom}.webp`;
+}
+
 function miniCarteFetiche(key, count) {
   if (!key || !recettes[key]) return "";
   const r    = recettes[key];
@@ -578,7 +590,7 @@ function miniCarteFetiche(key, count) {
   const label = count >= 4 ? "Plat fétiche" : "Favori du foyer";
   const badgeFreq = `<span class="mini-carte-saison" style="background:rgba(255,140,0,.75)" title="${label} — ${count} fois">${emoji}${count}</span>`;
   return `<div class="mini-carte" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
-    <img src="images/${key}.webp" alt="${nom}" onerror="this.style.display='none'">
+    <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
     ${badgeFam}
     ${badgeFreq}
     <div class="mini-carte-info">
@@ -705,7 +717,7 @@ function miniCarte(key) {
   const infoSaison = deSaison ? getEmojiSaison(getSaisonActuelle()) : null;
   const badgeSaison = infoSaison ? `<span class="mini-carte-saison" title="De saison : ${infoSaison.label}">${infoSaison.emoji}</span>` : "";
   return `<div class="mini-carte" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
-    <img src="images/${key}.webp" alt="${nom}" onerror="this.style.display='none'">
+    <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
     ${badgeFam}
     ${badgeSaison}
     <div class="mini-carte-info">
@@ -1098,6 +1110,68 @@ const INGREDIENTS_LABELS = {
   soba: "🍜 Nouilles soba",
   // Spécifique brioche / patisserie
   beurrage: "🧈 Beurre de tourage",
+  // == Ingrédients ajoutés (50 nouvelles recettes du monde) ==
+  // Viandes
+  agneauHache: "🐑 Agneau haché", boeufHache: "🐮 Bœuf haché",
+  viandeHachee: "🥩 Viande hachée", queueboeuf: "🐮 Queue de bœuf",
+  travers: "🥩 Travers de bœuf", saucisse: "🌭 Saucisse fumée",
+  serrano: "🥓 Jambon Serrano",
+  // Poissons / fruits de mer
+  thonHuile: "🐟 Thon à l'huile",
+  // Légumes & herbes
+  bokchoy: "🥬 Bok choy", brocoli: "🥦 Brocoli",
+  oignonNouveau: "🧅 Oignon nouveau", oignonRouge: "🧅 Oignon rouge",
+  feves: "🫛 Fèves", figues: "🟣 Figues",
+  pommedeterre: "🥔 Pommes de terre", maïs: "🌽 Maïs",
+  haricotsnoirs: "🫘 Haricots noirs", haricotsrouges: "🫘 Haricots rouges",
+  cornichons: "🥒 Cornichons", poire: "🍐 Poire asiatique",
+  pousses: "🌱 Pousses de soja", feuilles: "🌿 Feuilles de vigne",
+  feuillesBric: "📄 Feuilles de brick",
+  // Fromages
+  burrata: "🧀 Burrata", mozzarella: "🧀 Mozzarella",
+  paneer: "🧀 Paneer", fromageFrais: "🧀 Fromage frais",
+  // Épices & condiments
+  curcuma: "🌶️ Curcuma", garamMasala: "🌶️ Garam masala",
+  cardamome: "🌰 Cardamome", fenugrec: "🌾 Fenugrec",
+  origan: "🌿 Origan", laurier: "🌿 Laurier",
+  sumac: "🌶️ Sumac", tamarin: "🟤 Tamarin",
+  ancho: "🌶️ Piment ancho", piment_ancho: "🌶️ Piment ancho",
+  piment_guajillo: "🌶️ Piment guajillo", scotchBonnet: "🌶️ Piment scotch bonnet",
+  guascas: "🌿 Guascas",
+  // Sauces & pâtes
+  sojaSauce: "🍶 Sauce soja", nuocmam: "🐟 Nuoc-mâm",
+  pateMassaman: "🌶️ Pâte de curry Massaman", kecapManis: "🍶 Kecap manis",
+  sambal: "🌶️ Sambal oelek", hoisin: "🍶 Sauce hoisin",
+  mayonnaise: "🥫 Mayonnaise", concentre: "🥫 Concentré de tomate",
+  cremeFraiche: "🥛 Crème fraîche",
+  vinaigreBalsamique: "🍶 Vinaigre balsamique", vinaigreRiz: "🍶 Vinaigre de riz",
+  // Vins / alcools cuisine
+  vinblanc: "🍷 Vin blanc",
+  // Pains & pâtes (boulangerie)
+  paton: "🍞 Pâton (pizza)", pateFeuilletee: "🥧 Pâte feuilletée",
+  baos: "🥟 Petits pains bao", ramen: "🍜 Nouilles ramen",
+  rizCuit: "🍚 Riz cuit (froid)",
+  // Liquides / matières grasses
+  laitcoco: "🥥 Lait de coco", huilesesame: "🫒 Huile de sésame",
+  // Fruits secs / noix
+  cacahuetes: "🥜 Cacahuètes", noixCoco: "🥥 Noix de coco râpée",
+  raisinsSecs: "🟤 Raisins secs", edamames: "🌱 Edamames",
+  // Boulghour & céréales
+  boulghour: "🌾 Boulghour", farineRiz: "🌾 Farine de riz gluant",
+  lentillesCorail: "🌾 Lentilles corail",
+  // Levures & ferments
+  // Pâtisserie spécifique
+  kataifi: "🌾 Cheveux d'ange (kataifi)", kaya: "🍯 Confiture de coco kaya",
+  dulceDeLeche: "🍯 Dulce de leche",
+  eauFleurOranger: "💧 Eau de fleur d'oranger",
+  colorant: "🎨 Colorant alimentaire",
+  // Aromates spécifiques
+  kaffir: "🍃 Feuilles de combava (kaffir)",
+  citronvert: "🍋 Citron vert",
+  // Divers
+  sucrebrun: "🟤 Sucre brun", sucrepalme: "🟤 Sucre de palme",
+  selFleur: "🧂 Fleur de sel", sauce: "🥫 Sauce",
+  wasabi: "🌿 Wasabi",
 };
 
 
