@@ -186,7 +186,7 @@ window.sauvegarderMenuFavori = async function(menu, type, personnes) {
     nom: window.genererNomMenuFavori(menu, type),
     date: new Date().toISOString(),
     personnes: personnes || 4,
-    menu: menu // structure complète
+    menu: JSON.parse(JSON.stringify(menu)) // copie profonde : isolée du menu courant
   };
   const nouvelle = [nouveau, ...liste].slice(0, 30); // max 30 menus favoris
   await _db.collection("utilisateurs").doc(window.currentUser.uid).update({ menusFavoris: nouvelle });
