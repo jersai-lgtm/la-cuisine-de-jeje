@@ -2365,6 +2365,16 @@ function filtrerPays(pays) {
 }
 
 // Calculer depuis une carte et afficher en modal
+function calculer() {
+  const recette = document.getElementById("recette")?.value;
+  const personnes = parseInt(document.getElementById("personnes")?.value) || 4;
+  if (!recette) return;
+  // Mettre à jour l'input personnes pour que choisirRecette le lise
+  const inputP = document.getElementById("personnes");
+  if (inputP) inputP.dataset.modified = "1";
+  choisirRecette(recette);
+}
+
 function calculerCarte(recette, inputId) {
   const input = document.getElementById(inputId);
   const val = parseInt(input.value) || 1;
@@ -2488,5 +2498,37 @@ function setFormatRepas(format, btn) {
 window.addEventListener('profilMisAJour', majBoutonFamille);
 // Vérifier aussi après chargement initial
 document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(majBoutonFamille, 1500); // après chargement profil Firebase
+  setTimeout(() => {
+    majBoutonFamille();
+    // Initialiser tous les inputs calc-* avec la taille du foyer
+    const foyer = window.userProfile?.foyer;
+    if (foyer) {
+      const nb = Math.min(15, Math.max(1,
+        (foyer.adultes || 0) + (foyer.ados || 0) +
+        (foyer.enfants || 0) + (foyer.bebes || foyer.bébés || 0)
+      ));
+      if (nb > 0) {
+        document.querySelectorAll(".calc-input").forEach(inp => {
+          inp.value = nb;
+        });
+      }
+    }
+  }, 1500);
+});
+
+// Aussi mettre à jour quand le profil est chargé/modifié
+window.addEventListener("profilMisAJour", () => {
+  majBoutonFamille();
+  const foyer = window.userProfile?.foyer;
+  if (foyer) {
+    const nb = Math.min(15, Math.max(1,
+      (foyer.adultes || 0) + (foyer.ados || 0) +
+      (foyer.enfants || 0) + (foyer.bebes || foyer.bébés || 0)
+    ));
+    if (nb > 0) {
+      document.querySelectorAll(".calc-input").forEach(inp => {
+        inp.value = nb;
+      });
+    }
+  }
 });
