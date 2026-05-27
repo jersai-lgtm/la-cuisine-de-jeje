@@ -748,9 +748,32 @@ function choisirRecette(nom) {
       `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
     listeIngredients = `<table class="tableau-patons tableau-colonnes"><tbody>${rows}</tbody></table>`;
   } else {
-    for (const [nom_i, qte] of Object.entries(data.ingredients)) {
-      const qteCalculee = (qte * ratio).toFixed(1);
-      listeIngredients += `<div class="fiche-ingredient"><span>${nom_i}</span><b>${qteCalculee}</b></div>`;
+    // Chercher d'abord dans les tableaux dynamiques
+    const tableauKeys = Object.keys(data).filter(k => k.startsWith("tableau"));
+    if (tableauKeys.length > 0) {
+      const tableauKey = tableauKeys[0];
+      const tableau = data[tableauKey];
+      if (Array.isArray(tableau) && tableau.length > 0) {
+        const ligne = tableau.find(l => l.nb === personnes) || tableau[Math.min(personnes-1, tableau.length-1)];
+        if (ligne) {
+          listeIngredients = htmlTableauGenerique(ligne);
+        }
+      }
+    }
+    // Fallback sur data.ingredients si tableau vide
+    if (!listeIngredients) {
+      for (const [nom_i, qte] of Object.entries(data.ingredients || {})) {
+        const qteCalculee = (parseFloat(qte) * ratio).toFixed(1);
+        listeIngredients += `<div class="fiche-ingredient"><span>${nom_i}</span><b>${qteCalculee}</b></div>`;
+      }
+    }
+    // Si toujours vide, utiliser getIngredientsCourses
+    if (!listeIngredients) {
+      const ingrs = typeof getIngredientsCourses === "function" ? getIngredientsCourses(nom, personnes) : {};
+      listeIngredients = Object.entries(ingrs)
+        .filter(([k]) => !k.startsWith("---"))
+        .map(([k, v]) => `<div class="fiche-ingredient"><span>${k}</span><b>${v.raw || ""}</b></div>`)
+        .join("");
     }
   }
 

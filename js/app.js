@@ -1360,18 +1360,22 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
     return ![...motsInterdits].some(m => texte.includes(m));
   });
 
+  // Filtre famille — pas d'exclusion, juste signalement visuel après génération
+  const foyerProfil = typeof getFoyerProfil === "function" ? getFoyerProfil() : null;
+  const poolFinal = pool;
+
   // Grouper par cuisine pour varier
   const cuisines = {
-    francaise: pool.filter(k => {
+    francaise: poolFinal.filter(k => {
       const t = (k + " " + (recettes[k]?.description||"")).toLowerCase();
       return t.includes("français") || t.includes("france") || ["gratindauphinois","soupeaoignon","ratatouille","quichelorraine","poireauVinaigrette","veloutecourgette","veloutePoiron","camembertRoti"].includes(k);
     }),
-    italienne: pool.filter(k => ["risotto","risottoprimavera","risottoMilanese","lasagneviande","gnocchismaison","pizzamargherita","pizzavegetarienne","pizzabresilienne","lemonPasta","spaetzle"].includes(k)),
-    asiatique: pool.filter(k => {
+    italienne: poolFinal.filter(k => ["risotto","risottoprimavera","risottoMilanese","lasagneviande","gnocchismaison","pizzamargherita","pizzavegetarienne","pizzabresilienne","lemonPasta","spaetzle"].includes(k)),
+    asiatique: poolFinal.filter(k => {
       const t = (k + " " + (recettes[k]?.description||"")).toLowerCase();
       return t.includes("asiat") || t.includes("japonais") || t.includes("thaï") || t.includes("coréen") || t.includes("wok") || ["padthai","sushimaison","bibimbap","gyozas","tom_yam","sobejaponais","noodlesWok","tofusaute","soupemiso","pouletMisoGingembre","pouletteriyaki","curryverthai","koreanfriedchicken","soupeAziatique"].includes(k);
     }),
-    mondiale: pool.filter(k => ["couscous","moussaka","paella","dalindien","hariramarocaine","soupeharira","maffeSenegal","souvlaki","taboule","tabulemaison","shakshuka","pierogi","falafel","humous","houmous","gyozas","bibimbap"].includes(k))
+    mondiale: poolFinal.filter(k => ["couscous","moussaka","paella","dalindien","hariramarocaine","soupeharira","maffeSenegal","souvlaki","taboule","tabulemaison","shakshuka","pierogi","falafel","humous","houmous","gyozas","bibimbap"].includes(k))
   };
 
   // Mélanger chaque groupe
@@ -1881,6 +1885,53 @@ function getEmoji(key) {
   return data ? data.emoji : "🍽️";
 }
 
+function regenRepas(jourNom, moment) {
+  // Remplacer un seul repas par une nouvelle recette compatible
+  const menus = window._derniersMenus;
+  if (!menus?.semaine) return;
+
+  const jour = menus.semaine.find(j => j.jour === jourNom);
+  if (!jour) return;
+
+  // Construire pool compatible
+  const pool = Object.keys(recettes).filter(key => {
+    const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
+    const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts","brunch"]);
+    if (carte && catsExclues.has(carte.dataset.cat)) return false;
+    if (_recExclues?.has(key)) return false;
+    const niveau = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
+    return niveau === null; // Seulement les recettes sans alerte
+  });
+
+  if (pool.length === 0) return;
+
+  // Exclure les recettes déjà dans le menu
+  const dejaDans = new Set(menus.semaine.flatMap(j => [
+    j.midi?.recette || j.midi,
+    j.soir?.recette || j.soir
+  ]).filter(Boolean));
+
+  const candidates = pool.filter(k => !dejaDans.has(k));
+  if (candidates.length === 0) return;
+
+  // Choisir aléatoirement
+  const nouvelle = candidates[Math.floor(Math.random() * candidates.length)];
+
+  // Remplacer dans le menu
+  if (moment === "midi") {
+    if (typeof jour.midi === "string") jour.midi = nouvelle;
+    else jour.midi = { recette: nouvelle };
+  } else {
+    if (typeof jour.soir === "string") jour.soir = nouvelle;
+    else jour.soir = { recette: nouvelle };
+  }
+
+  // Réafficher
+  const personnes = parseInt(document.getElementById("plan-personnes")?.value) || 4;
+  afficherMenusSemaine(menus, personnes);
+  sauvegarderMenus(menus, personnes, menus.semaine.map(j => j.jour));
+}
+
 function afficherMenusSemaine(menus, personnes) {
   const container = document.getElementById("plan-jours");
   container.innerHTML = "";
@@ -1943,6 +1994,7 @@ function afficherMenusSemaine(menus, personnes) {
     container.appendChild(div);
   });
 
+  window._derniersMenus = menus; // Pour regenRepas
   document.getElementById("plan-form").style.display = "none";
   document.getElementById("plan-result").style.display = "block";
 
@@ -2211,6 +2263,26 @@ function basculeVersGrille() {
 // ============================================================
 // ADAPTATION FAMILIALE — profil foyer
 // ============================================================
+// Mots bébé (rouge) et enfant (orange)
+const MOTS_BEBE = ["miel","harissa","piment","chorizo","merguez","tartare","carpaccio",
+  "huitre","huître","fruit de mer","noix","cacahuète","cacahuete","alcool","vin",
+  "nduja","saucisson","jambon cru","prosciutto","anchois","sashimi","poisson cru",
+  "thon cru","saumon cru","crevette crue"];
+
+const MOTS_ENFANT = ["harissa","piment fort","gochujang","wasabi","tartare","carpaccio",
+  "sashimi","huitre","huître","bouillabaisse","très épicé","épicé"];
+
+function getNiveauFamille(cle) {
+  // Retourne: null = OK, "bebe" = rouge, "enfant" = orange
+  const profil = getFoyerProfil();
+  if (!profil) return null;
+  const r = recettes?.[cle];
+  const texte = (cle + " " + (r?.description || "")).toLowerCase();
+  if (profil.hasBebe && MOTS_BEBE.some(m => texte.includes(m))) return "bebe";
+  if ((profil.hasEnfant || profil.hasBebe) && MOTS_ENFANT.some(m => texte.includes(m))) return "enfant";
+  return null;
+}
+
 function getFoyerProfil() {
   const foyer = window.userProfile?.foyer;
   if (!foyer) return null;
@@ -2377,15 +2449,12 @@ function calculer() {
 
 function calculerCarte(recette, inputId) {
   const input = document.getElementById(inputId);
+  if (!input) return;
   const val = parseInt(input.value) || 1;
-  document.getElementById("recette").value = recette;
-  document.getElementById("personnes").value = val;
-  calculer();
-  setTimeout(() => {
-    const res = document.getElementById("resultat").innerHTML;
-    document.getElementById("modal-resultat").innerHTML = res;
-    document.getElementById("modal-calc").classList.add("visible");
-  }, 50);
+  // Passer la valeur à ouvrirFiche via l'input personnes
+  const inputP = document.getElementById("personnes");
+  if (inputP) { inputP.value = val; inputP.dataset.modified = "1"; }
+  ouvrirFiche(recette, inputId);
 }
 
 // Ouvrir la fiche recette depuis une carte en lisant son input
