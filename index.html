@@ -60,7 +60,8 @@ gtag('config', 'G-390C5MY2SS');
 <!-- MENU PRINCIPAL -->
 <nav class="menu-cats">
   <button class="cat-btn active" id="btn-accueil" onclick="afficherAccueil()">🏠 Accueil</button>
-  <button class="cat-btn" id="btn-favoris" onclick="filtrerFavoris()">❤️ Favoris</button>
+  <button class="cat-btn" id="btn-favoris" onclick="filtrerFavoris()">🍽️ Recettes favorites</button>
+  <button class="cat-btn" id="btn-menus-favoris" onclick="filtrerMenusFavoris()">❤️ Menus favoris</button>
   <button class="cat-btn" id="btn-tout" onclick="afficherTout()">🍽️ Tout</button>
   <button class="cat-btn" id="btn-categories" onclick="toggleSousMenu('menu-categories', this)">🗂️ Catégories ▾</button>
   <button class="cat-btn" id="btn-monde" onclick="toggleSousMenu('menu-pays', this)">🌍 Monde ▾</button>
@@ -4222,8 +4223,6 @@ gtag('config', 'G-390C5MY2SS');
     <div class="profil-tabs">
       <button class="profil-tab-btn active" onclick="switchProfilTab('foyer',this)">🏠 Foyer</button>
       <button class="profil-tab-btn" onclick="switchProfilTab('prefs',this)">🥗 Préférences</button>
-      <button class="profil-tab-btn" onclick="switchProfilTab('favoris',this)">🍽️ Recettes favorites</button>
-      <button class="profil-tab-btn" onclick="switchProfilTab('menusfavoris',this)">❤️ Menus favoris</button>
     </div>
 
     <!-- Foyer -->
@@ -4325,14 +4324,6 @@ gtag('config', 'G-390C5MY2SS');
     </div>
 
     <!-- Favoris -->
-    <div id="profil-tab-favoris" class="profil-tab-content" style="display:none">
-      <div id="liste-favoris" class="favoris-liste"></div>
-    </div>
-
-    <!-- Menus favoris -->
-    <div id="profil-tab-menusfavoris" class="profil-tab-content" style="display:none">
-      <div id="liste-menus-favoris" class="favoris-liste"></div>
-    </div>
 
     <div class="profil-footer">
       <button id="btn-sauvegarder-profil" class="btn-auth-submit" onclick="sauvegarderProfilComplet()">💾 Sauvegarder</button>
