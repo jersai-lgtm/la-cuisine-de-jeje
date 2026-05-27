@@ -1035,6 +1035,22 @@ function choisirRecette(nom) {
     "saladequinoa":      "Salade de quinoa",
   };
   const nomPropre = nomsAffichage[nom] || (nom.charAt(0).toUpperCase() + nom.slice(1));
+
+  // Info historique : "Refait il y a X jours" (uniquement si déjà fait)
+  let infoHistorique = "";
+  if (typeof dernierUsageRecette === "function") {
+    const dern = dernierUsageRecette(nom);
+    if (dern) {
+      infoHistorique = `<span class="fiche-historique" title="Dernière fois dans un de tes menus générés">🕐 Réalisée ${formatJoursDepuis(dern.jours)}</span>`;
+    }
+  }
+  // Info saisonnière (uniquement si la recette est de saison MAINTENANT)
+  let infoSaison = "";
+  if (typeof estDeSaison === "function" && estDeSaison(nom)) {
+    const inf = getEmojiSaison(getSaisonActuelle());
+    infoSaison = `<span class="fiche-saison" title="De saison : ${inf.label}">${inf.emoji} De saison</span>`;
+  }
+
   document.getElementById("modal-resultat").innerHTML = `
     <div class="fiche-modal-header">
       <div class="fiche-emoji">${data.emoji}</div>
@@ -1044,6 +1060,8 @@ function choisirRecette(nom) {
         <span>⏱ ${data.temps}</span>
         <span>${data.niveau}</span>
         <span>${labelQte}</span>
+        ${infoSaison}
+        ${infoHistorique}
       </div>
     </div>
     ${htmlPrixCalories(nom, personnes)}

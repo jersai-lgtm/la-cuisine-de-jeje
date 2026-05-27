@@ -140,6 +140,7 @@ function chargerAccueil() {
   chargerAccueilFavoris();
   chargerAccueilMenus();
   chargerAccueilMenusFavoris();
+  chargerAccueilFetiches();
   chargerAccueilRecents();
   chargerAccueilSuggestions();
 }
@@ -410,6 +411,184 @@ function effacerRecents() {
 }
 
 // Suggestions selon profil
+// ==============================
+// SAISONS — printemps / été / automne / hiver
+// ==============================
+// Renvoie la saison du mois courant (basée sur l'hémisphère nord)
+function getSaisonActuelle() {
+  const mois = new Date().getMonth() + 1; // 1-12
+  if (mois >= 3 && mois <= 5)  return "printemps";
+  if (mois >= 6 && mois <= 8)  return "ete";
+  if (mois >= 9 && mois <= 11) return "automne";
+  return "hiver"; // déc, jan, fev
+}
+
+// Emoji et libellé associés à chaque saison
+function getEmojiSaison(saison) {
+  return ({
+    printemps: { emoji: "🌸", label: "Printemps" },
+    ete:       { emoji: "🌞", label: "Été" },
+    automne:   { emoji: "🍂", label: "Automne" },
+    hiver:     { emoji: "❄️", label: "Hiver" },
+  })[saison] || { emoji: "", label: "" };
+}
+
+// Indique si une recette est "de saison maintenant"
+function estDeSaison(key) {
+  const s = recettes[key]?.saisons;
+  if (!s || !Array.isArray(s)) return false; // pas de tag = toutes saisons (ni de saison ni hors-saison)
+  return s.includes(getSaisonActuelle());
+}
+
+// ==============================
+// HISTORIQUE — "Refait il y a X jours"
+// ==============================
+// Parcourt l'historique des menus et trouve la date la plus récente où cette recette a été utilisée.
+// Retourne { jours: nombre, date: Date } ou null si jamais utilisée.
+function dernierUsageRecette(key) {
+  const hist = window.userProfile?.historiqueMenus || [];
+  if (!key || hist.length === 0) return null;
+  let dernier = null;
+  hist.forEach(entry => {
+    if (!entry?.date) return;
+    const trouve = recetteDansMenu(entry.menu, key);
+    if (trouve) {
+      const d = new Date(entry.date);
+      if (!isNaN(d) && (!dernier || d > dernier)) dernier = d;
+    }
+  });
+  if (!dernier) return null;
+  const diffMs = Date.now() - dernier.getTime();
+  const jours = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  return { jours, date: dernier };
+}
+
+// Vérifie si une clé recette apparaît quelque part dans un objet menu (semaine ou thématique)
+function recetteDansMenu(menu, key) {
+  if (!menu) return false;
+  // Menu thématique : { menu: [{ recette: "..." }, ...] }
+  if (Array.isArray(menu.menu)) {
+    return menu.menu.some(item => item?.recette === key);
+  }
+  // Menu semaine : { semaine: [{ midi: ..., soir: ... }, ...] }
+  if (Array.isArray(menu.semaine)) {
+    return menu.semaine.some(jour => {
+      return ["midi","soir"].some(m => {
+        const v = jour[m];
+        if (!v) return false;
+        if (typeof v === "string") return v === key;
+        if (v.recette === key) return true;
+        // Format complet entrée/plat/dessert
+        return ["entree","plat","dessert"].some(t => v[t]?.recette === key);
+      });
+    });
+  }
+  return false;
+}
+
+// Format lisible : "aujourd'hui" / "hier" / "il y a 5 jours" / "il y a 2 semaines"
+function formatJoursDepuis(jours) {
+  if (jours <= 0) return "aujourd'hui";
+  if (jours === 1) return "hier";
+  if (jours < 7)   return `il y a ${jours} jours`;
+  if (jours < 14)  return "il y a 1 semaine";
+  if (jours < 30)  return `il y a ${Math.floor(jours/7)} semaines`;
+  if (jours < 60)  return "il y a 1 mois";
+  return `il y a ${Math.floor(jours/30)} mois`;
+}
+
+// ==============================
+// FAVORIS FRÉQUENCE — "Plats fétiches du foyer"
+// ==============================
+// Compte le nombre d'occurrences de chaque recette dans l'historique des menus.
+// Retourne une Map { cle: { count, derniere } } triée par count décroissant.
+function calculerFrequenceRecettes() {
+  const hist = window.userProfile?.historiqueMenus || [];
+  const compteur = new Map();
+  hist.forEach(entry => {
+    if (!entry?.menu) return;
+    const date = entry.date ? new Date(entry.date) : null;
+    // Collecter toutes les clés présentes dans ce menu
+    const cles = collectClesMenu(entry.menu);
+    cles.forEach(k => {
+      const courant = compteur.get(k) || { count: 0, derniere: null };
+      courant.count++;
+      if (date && (!courant.derniere || date > courant.derniere)) courant.derniere = date;
+      compteur.set(k, courant);
+    });
+  });
+  return compteur;
+}
+
+// Extrait toutes les clés recettes d'un menu (semaine ou thématique, simple ou complet)
+function collectClesMenu(menu) {
+  const cles = new Set();
+  if (!menu) return cles;
+  if (Array.isArray(menu.menu)) {
+    menu.menu.forEach(item => { if (item?.recette) cles.add(item.recette); });
+  }
+  if (Array.isArray(menu.semaine)) {
+    menu.semaine.forEach(jour => {
+      ["midi","soir"].forEach(m => {
+        const v = jour[m];
+        if (!v) return;
+        if (typeof v === "string") cles.add(v);
+        else if (v.recette) cles.add(v.recette);
+        ["entree","plat","dessert"].forEach(t => { if (v[t]?.recette) cles.add(v[t].recette); });
+      });
+    });
+  }
+  return cles;
+}
+
+// Charge la mini-tuile "Plats fétiches du foyer" sur l'accueil
+function chargerAccueilFetiches() {
+  const row = document.getElementById("accueil-fetiches-row");
+  const sec = document.getElementById("section-accueil-fetiches");
+  if (!row || !sec) return;
+
+  const freq = calculerFrequenceRecettes();
+  // Seuil : recettes faites au moins 2 fois (vrais favoris, pas des essais)
+  const fetiches = [...freq.entries()]
+    .filter(([k, v]) => v.count >= 2 && recettes[k])
+    .sort((a, b) => b[1].count - a[1].count)
+    .slice(0, 10);
+
+  if (fetiches.length === 0) {
+    sec.style.display = "none"; // masquer la section si rien
+    return;
+  }
+  sec.style.display = "";
+
+  row.innerHTML = fetiches.map(([key, info]) => {
+    return miniCarteFetiche(key, info.count);
+  }).join("");
+}
+
+// Variante de miniCarte avec un badge fréquence ("🔥 X fois")
+function miniCarteFetiche(key, count) {
+  if (!key || !recettes[key]) return "";
+  const r    = recettes[key];
+  const nom  = getNomRecette(key);
+  // Badge famille
+  const adapt = typeof getAdaptationFamille === "function" ? getAdaptationFamille(key) : null;
+  const badgeFam = adapt ? `<span class="mini-carte-famille" title="${adapt.label}">${adapt.badge}</span>` : "";
+  // Badge fréquence
+  const emoji = count >= 4 ? "🔥" : "⭐";
+  const label = count >= 4 ? "Plat fétiche" : "Favori du foyer";
+  const badgeFreq = `<span class="mini-carte-saison" style="background:rgba(255,140,0,.75)" title="${label} — ${count} fois">${emoji}${count}</span>`;
+  return `<div class="mini-carte" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
+    <img src="images/${key}.webp" alt="${nom}" onerror="this.style.display='none'">
+    ${badgeFam}
+    ${badgeFreq}
+    <div class="mini-carte-info">
+      <span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>
+      <span class="mini-carte-nom">${nom}</span>
+      <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
+    </div>
+  </div>`;
+}
+
 function chargerAccueilSuggestions() {
   const row = document.getElementById("accueil-suggestions-row");
   if (!row) return;
@@ -490,7 +669,13 @@ function chargerAccueilSuggestions() {
 
   // Seed basé sur la date pour stabiliser le mélange du jour
   const seed = today.split("/").reduce((a, b) => parseInt(a) + parseInt(b), 0);
+  // Boost saisonnier : les recettes de la saison actuelle ont priorité
+  const saisonActuelle = getSaisonActuelle();
   pool = pool.sort((a, b) => {
+    const saisonA = recettes[a]?.saisons?.includes(saisonActuelle) ? 1 : 0;
+    const saisonB = recettes[b]?.saisons?.includes(saisonActuelle) ? 1 : 0;
+    if (saisonA !== saisonB) return saisonB - saisonA; // saison actuelle d'abord
+    // À égalité, mélange stable basé sur la date
     const ha = (a.charCodeAt(0) * seed) % 997;
     const hb = (b.charCodeAt(0) * seed) % 997;
     return ha - hb;
@@ -515,9 +700,14 @@ function miniCarte(key) {
   // Badge famille discret
   const adapt = typeof getAdaptationFamille === "function" ? getAdaptationFamille(key) : null;
   const badgeFam = adapt ? `<span class="mini-carte-famille" title="${adapt.label}">${adapt.badge}</span>` : "";
+  // Badge saison (uniquement si recette est de saison actuelle)
+  const deSaison = typeof estDeSaison === "function" && estDeSaison(key);
+  const infoSaison = deSaison ? getEmojiSaison(getSaisonActuelle()) : null;
+  const badgeSaison = infoSaison ? `<span class="mini-carte-saison" title="De saison : ${infoSaison.label}">${infoSaison.emoji}</span>` : "";
   return `<div class="mini-carte" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
     <img src="images/${key}.webp" alt="${nom}" onerror="this.style.display='none'">
     ${badgeFam}
+    ${badgeSaison}
     <div class="mini-carte-info">
       <span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>
       <span class="mini-carte-nom">${nom}</span>
@@ -1733,7 +1923,7 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   ]);
 
   // Filtrer les recettes compatibles
-  const pool = Object.keys(recettes).filter(key => {
+  let pool = Object.keys(recettes).filter(key => {
     // Exclure les non-repas (boulangerie/desserts/cocktails/brunch) — liste fiable
     if (RECETTES_NON_REPAS.has(key)) return false;
     // Sécurité supplémentaire via la catégorie (depuis la donnée, pas le DOM)
@@ -1742,6 +1932,16 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
     const texte = texteRecette(key);
     return ![...motsInterdits].some(m => texte.includes(m));
   });
+
+  // Anti-répétition récente : exclure les recettes faites depuis moins de 7 jours
+  // Soft : si après filtre il reste moins de 30 recettes, on relâche cette contrainte.
+  if (typeof dernierUsageRecette === "function") {
+    const poolFiltre = pool.filter(key => {
+      const dern = dernierUsageRecette(key);
+      return !dern || dern.jours >= 7;
+    });
+    if (poolFiltre.length >= 30) pool = poolFiltre;
+  }
 
   // Filtre famille — pas d'exclusion, juste signalement visuel après génération
   const foyerProfil = typeof getFoyerProfil === "function" ? getFoyerProfil() : null;
@@ -2712,6 +2912,119 @@ function ouvrirRecettePlan(recetteKey, personnes) {
   choisirRecette(recetteKey);
 }
 
+// ==============================
+// EXPORT PDF / IMPRESSION
+// ==============================
+// Ouvre une fenêtre dédiée avec la liste de courses bien formatée et lance l'impression.
+// L'utilisateur peut alors "Enregistrer en PDF" depuis le dialogue d'impression du navigateur.
+function imprimerCourses(sourceId) {
+  const source = document.getElementById(sourceId);
+  if (!source) return;
+  const contentEl = source.querySelector("#plan-courses-content, #festif-courses-content");
+  if (!contentEl) return;
+
+  const titre = sourceId === "festif-courses" ? "Liste de courses — Menu Thématique" : "Liste de courses — Semaine";
+  const dateStr = new Date().toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+
+  // Récupérer le contenu textuel des courses pour le formater
+  const items = contentEl.querySelectorAll(".courses-item");
+  let listeHtml = "";
+  if (items.length > 0) {
+    listeHtml = '<ul class="liste-print">';
+    items.forEach(item => {
+      const nom = item.querySelector(".courses-nom")?.textContent || "";
+      const qte = item.querySelector(".courses-qte")?.textContent || "";
+      listeHtml += `<li><span class="cb">☐</span> <span class="nom">${nom}</span> <span class="qte">${qte}</span></li>`;
+    });
+    listeHtml += "</ul>";
+  } else {
+    // Fallback : copier le HTML brut
+    listeHtml = contentEl.innerHTML;
+  }
+  // Ligne d'info en haut (Pour X personnes...)
+  const subtitle = contentEl.querySelector(".courses-subtitle")?.textContent || "";
+
+  // Ouvrir une nouvelle fenêtre dédiée à l'impression
+  const win = window.open("", "_blank", "width=800,height=900");
+  if (!win) {
+    alert("⚠️ Impossible d'ouvrir la fenêtre d'impression. Autorise les popups dans ton navigateur.");
+    return;
+  }
+
+  win.document.write(`<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>${titre}</title>
+  <style>
+    @page { margin: 1.5cm; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #222;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.5;
+    }
+    h1 {
+      color: #d63384;
+      border-bottom: 3px solid #d63384;
+      padding-bottom: 8px;
+      margin-bottom: 4px;
+    }
+    .meta {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .meta strong { color: #333; }
+    .liste-print {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      columns: 2;
+      column-gap: 30px;
+    }
+    .liste-print li {
+      padding: 6px 0;
+      border-bottom: 1px dashed #ccc;
+      break-inside: avoid;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .cb { color: #999; font-size: 18px; flex-shrink: 0; }
+    .nom { flex: 1; font-weight: 500; }
+    .qte { color: #d63384; font-weight: 600; white-space: nowrap; }
+    footer {
+      margin-top: 30px;
+      padding-top: 12px;
+      border-top: 1px solid #ddd;
+      color: #888;
+      font-size: 12px;
+      text-align: center;
+    }
+    @media print {
+      body { padding: 0; }
+      .liste-print { columns: 2; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🛒 ${titre}</h1>
+  <div class="meta">
+    <strong>📅 ${dateStr}</strong>${subtitle ? " &nbsp;·&nbsp; " + subtitle : ""}
+  </div>
+  ${listeHtml}
+  <footer>La Cuisine de Jéjé — généré le ${dateStr}</footer>
+  <script>
+    window.onload = () => { setTimeout(() => window.print(), 200); };
+  </script>
+</body>
+</html>`);
+  win.document.close();
+}
+
 function afficherCourses() {
   if (!menusSemaine) return;
   const personnes = parseInt(document.getElementById("plan-personnes").value);
@@ -3426,6 +3739,7 @@ window.addEventListener('profilMisAJour', () => {
   // Rafraîchir les sections favoris (accueil + nouvelle vue dédiée si visible)
   if (typeof chargerAccueilFavoris === "function") chargerAccueilFavoris();
   if (typeof chargerAccueilMenusFavoris === "function") chargerAccueilMenusFavoris();
+  if (typeof chargerAccueilFetiches === "function") chargerAccueilFetiches();
   // Si la vue dédiée "Menus favoris" est ouverte, la re-rendre
   const secMF = document.getElementById("section-menus-favoris");
   if (secMF && secMF.style.display !== "none" && typeof filtrerMenusFavoris === "function") {
