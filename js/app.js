@@ -585,11 +585,23 @@ function filtrerMenusFavoris() {
 
   if (!window.currentUser) { ouvrirModalAuth(); return; }
 
-  // Masquer accueil et grille
+  // Masquer TOUTES les autres sections (accueil, grille, calculateur, planificateur)
+  fermerSousMenus();
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
+  const secCalc    = document.getElementById("section-calculateur");
+  const secPlan    = document.getElementById("section-planificateur");
+  const secFestif  = document.getElementById("section-festif");
+  const menuCats   = document.querySelector(".menu-cats");
+  const searchBar  = document.querySelector(".search-bar");
   if (secAccueil) secAccueil.style.display = "none";
   if (secCartes)  { secCartes.classList.remove("visible"); secCartes.style.display = "none"; }
+  if (secCalc)    secCalc.style.display = "none";
+  if (secPlan)    secPlan.style.display = "none";
+  if (secFestif)  secFestif.style.display = "none";
+  // On garde la barre de catégories et la search bar visibles (pour pouvoir naviguer)
+  if (menuCats)  menuCats.style.display = "";
+  if (searchBar) searchBar.style.display = "";
 
   // Créer (ou retrouver) la section dédiée
   let sec = document.getElementById("section-menus-favoris");
@@ -2562,6 +2574,7 @@ function injecterBoutonMenuFavori(containerId, type, menu, personnes) {
       const f = liste.find(m => m.type === type && JSON.stringify(m.menu) === JSON.stringify(menu));
       if (f) await window.supprimerMenuFavori(f.id);
       btn.innerHTML = "🤍 Sauvegarder";
+      if (typeof afficherToast === "function") afficherToast("💔 Menu retiré des favoris", "info");
     } else {
       const id = await window.sauvegarderMenuFavori(menu, type, personnes);
       if (id) {
@@ -2569,10 +2582,60 @@ function injecterBoutonMenuFavori(containerId, type, menu, personnes) {
         // Petit flash visuel
         btn.style.transform = "scale(1.1)";
         setTimeout(() => btn.style.transform = "", 200);
+        // Confirmation toast avec le nom du menu sauvegardé
+        const fav = (window.userProfile?.menusFavoris || []).find(m => m.id === id);
+        const nomAffiche = fav?.nom || "Menu";
+        if (typeof afficherToast === "function") afficherToast(`✅ Sauvegardé : ${nomAffiche}`, "success");
       }
     }
   };
   header.appendChild(btn);
+}
+
+// Affiche un toast de notification temporaire en bas de l'écran
+function afficherToast(message, type) {
+  // Supprime l'ancien si présent
+  const ancien = document.getElementById("app-toast");
+  if (ancien) ancien.remove();
+
+  const couleur = type === "success" ? "#22c55e"
+                : type === "error"   ? "#ef4444"
+                : "#ff8fb3";
+  const toast = document.createElement("div");
+  toast.id = "app-toast";
+  toast.style.cssText = `
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%) translateY(60px);
+    background: rgba(20,20,30,.96);
+    color: #fff;
+    padding: 14px 22px;
+    border-radius: 12px;
+    border-left: 4px solid ${couleur};
+    box-shadow: 0 6px 24px rgba(0,0,0,.4);
+    z-index: 99999;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 90%;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s ease;
+    pointer-events: none;
+  `;
+  toast.textContent = message;
+  document.body.appendChild(toast);
+  // Animer in
+  requestAnimationFrame(() => {
+    toast.style.opacity = "1";
+    toast.style.transform = "translateX(-50%) translateY(0)";
+  });
+  // Animer out après 2.8s
+  setTimeout(() => {
+    toast.style.opacity = "0";
+    toast.style.transform = "translateX(-50%) translateY(60px)";
+    setTimeout(() => toast.remove(), 300);
+  }, 2800);
 }
 
 // Charge un menu favori (semaine) et l'affiche
@@ -2580,6 +2643,8 @@ window.appliquerMenuFavoriSemaine = function(id) {
   const liste = window.userProfile?.menusFavoris || [];
   const fav = liste.find(m => m.id === id);
   if (!fav || fav.type !== "semaine") return;
+  // Masquer la vue dédiée des menus favoris avant de naviguer
+  if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
   menusSemaine = fav.menu;
   // Naviguer vers la section Menus et l'onglet Semaine
   const btnMenus = document.querySelector(".nav-btn[onclick*=planificateur]");
@@ -2590,6 +2655,8 @@ window.appliquerMenuFavoriSemaine = function(id) {
     const inputP = document.getElementById("plan-personnes");
     if (inputP) inputP.value = fav.personnes || 4;
     afficherMenusSemaine(menusSemaine, fav.personnes || 4);
+    // Toast de confirmation
+    if (typeof afficherToast === "function") afficherToast(`📅 Menu chargé : ${fav.nom}`, "info");
   }, 100);
 };
 
@@ -2598,6 +2665,8 @@ window.appliquerMenuFavoriFestif = function(id) {
   const liste = window.userProfile?.menusFavoris || [];
   const fav = liste.find(m => m.id === id);
   if (!fav || fav.type !== "thematique") return;
+  // Masquer la vue dédiée des menus favoris avant de naviguer
+  if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
   menuFestifActuel = fav.menu;
   const btnMenus = document.querySelector(".nav-btn[onclick*=planificateur]");
   if (btnMenus) afficherSection("planificateur", btnMenus);
@@ -2606,6 +2675,7 @@ window.appliquerMenuFavoriFestif = function(id) {
     const inputP = document.getElementById("festif-personnes");
     if (inputP) inputP.value = fav.personnes || 4;
     afficherMenuFestif(menuFestifActuel, fav.personnes || 4);
+    if (typeof afficherToast === "function") afficherToast(`🎉 Menu chargé : ${fav.nom}`, "info");
   }, 100);
 };
 
