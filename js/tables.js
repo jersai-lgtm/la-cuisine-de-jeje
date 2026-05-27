@@ -304,6 +304,51 @@ const prixCalories = {
 // INGRÉDIENTS POUR LES COURSES
 // Extrait les ingrédients depuis n'importe quel type de recette
 // ==============================
+
+// ============================================================
+// FONCTION GÉNÉRIQUE — remplace toutes les htmlTableau*Colonnes
+// ============================================================
+function htmlTableauGenerique(ligne) {
+  if (!ligne) return "";
+  const ignorés = new Set(["nb", "label", "total", "unite"]);
+  return Object.entries(ligne)
+    .filter(([k]) => !ignorés.has(k))
+    .map(([k, v]) => {
+      const label = (typeof INGREDIENTS_LABELS !== "undefined" && INGREDIENTS_LABELS[k])
+        ? INGREDIENTS_LABELS[k]
+        : k.charAt(0).toUpperCase() + k.slice(1).replace(/([A-Z])/g, " $1");
+      if (!label || !v || v === "0" || v === 0) return "";
+      return `<div class="fiche-ingredient"><span>${label}</span><b>${v}</b></div>`;
+    })
+    .filter(Boolean)
+    .join("");
+}
+
+// Alias pour toutes les fonctions manquantes
+const _htmlFns = [
+  "htmlTableauAvocatCrevettesColonnes","htmlTableauBananaBreadColonnes",
+  "htmlTableauBoeufColonnes","htmlTableauBowlAcaiColonnes","htmlTableauBriocheColonnes",
+  "htmlTableauBuddhaBowlColonnes","htmlTableauClafoutisColonnes","htmlTableauCookiesColonnes",
+  "htmlTableauCremeBruleeColonnes","htmlTableauCrepesColonnes","htmlTableauCroquesColonnes",
+  "htmlTableauCurryLegumesColonnes","htmlTableauEnergyBallsColonnes","htmlTableauFlanColonnes",
+  "htmlTableauFondantColonnes","htmlTableauGaletteTacosColonnes","htmlTableauGaspachoColonnes",
+  "htmlTableauGaufresColonnes","htmlTableauGoumeauColonnes","htmlTableauGranolaColonnes",
+  "htmlTableauGratinColonnes","htmlTableauGravlaxColonnes","htmlTableauHoumousColonnes",
+  "htmlTableauIleFlottanteColonnes","htmlTableauLasagneColonnes","htmlTableauMadeleineColonnes",
+  "htmlTableauMousseColonnes","htmlTableauMuffinsColonnes","htmlTableauOvernightOatsColonnes",
+  "htmlTableauPainBurgerColonnes","htmlTableauPainDeMieColonnes","htmlTableauPancakesColonnes",
+  "htmlTableauPancakesProteineColonnes","htmlTableauParisBrestColonnes","htmlTableauPizzaColonnes",
+  "htmlTableauPotAuFeuColonnes","htmlTableauQuinoaColonnes","htmlTableauRisottoColonnes",
+  "htmlTableauSaladeCesarColonnes","htmlTableauSaladeGrequeColonnes","htmlTableauSaladeLentillesColonnes",
+  "htmlTableauSaladeNicoiseColonnes","htmlTableauSaladePatasColonnes","htmlTableauSaladePoisChichesColonnes",
+  "htmlTableauSaladeRizColonnes","htmlTableauSmoothieColonnes","htmlTableauSoupeMisoColonnes",
+  "htmlTableauTabuleColonnes","htmlTableauTarteCitronColonnes","htmlTableauTartePommesColonnes",
+  "htmlTableauTiramisuColonnes","htmlTableauVelouteLegumesColonnes","htmlTableauVerrineTiramisuColonnes",
+  "htmlTableauWrapPouletColonnes","htmlTableauYaourtColonnes"
+];
+_htmlFns.forEach(fn => { window[fn] = htmlTableauGenerique; });
+
+
 function getIngredientsCourses(nom, personnes) {
   const data = recettes[nom];
   if (!data) return {};
@@ -485,6 +530,7 @@ function choisirRecette(nom) {
   } catch(e) {}
 
   const inputPersonnes = document.getElementById("personnes");
+
   const personnes = inputPersonnes ? parseInt(inputPersonnes.value) || data.base : data.base;
   const ratio = personnes / data.base;
 

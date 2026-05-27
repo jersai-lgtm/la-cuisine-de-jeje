@@ -2382,13 +2382,28 @@ function calculerCarte(recette, inputId) {
 function ouvrirFiche(recette, inputId) {
   const input = inputId ? document.getElementById(inputId) : null;
   const val = input ? (parseInt(input.value) || 1) : null;
+  const inputP = document.getElementById("personnes");
+
   if (val !== null) {
-    document.getElementById("personnes").value = val;
+    // Valeur venant de la carte calculateur
+    if (inputP) { inputP.value = val; inputP.dataset.modified = "1"; }
+  } else {
+    // Pas d'inputId → initialiser depuis le foyer si non modifié manuellement
+    if (inputP && !inputP.dataset.modified) {
+      const foyer = window.userProfile?.foyer;
+      if (foyer) {
+        const nb = (foyer.adultes || 0) + (foyer.ados || 0) +
+                   (foyer.enfants || 0) + (foyer.bebes || foyer.bébés || 0);
+        if (nb > 0) inputP.value = Math.min(15, Math.max(1, nb));
+      }
+    }
   }
   choisirRecette(recette);
 }
 
 function fermerModal() {
+  const inputP = document.getElementById("personnes");
+  if (inputP) delete inputP.dataset.modified;
   document.getElementById("modal-calc").classList.remove("visible");
 }
 
