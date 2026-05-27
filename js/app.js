@@ -132,6 +132,7 @@ function afficherAccueil() {
 function chargerAccueil() {
   chargerAccueilFavoris();
   chargerAccueilMenus();
+  chargerAccueilMenusFavoris();
   chargerAccueilRecents();
   chargerAccueilSuggestions();
 }
@@ -185,13 +186,22 @@ function chargerAccueilMenus() {
       const key = p.recette || "";
       const nom = getNomRecette(key) || key || "—";
       const emoji = key ? (getEmoji(key) || "🍽️") : "🍽️";
+      // Alerte famille
+      const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
+      const lvl = niv?.niveau;
+      const raison = niv?.raison || "";
+      const tip = lvl === "bebe" ? `${raison} — déconseillé bébé` : lvl === "enfant" ? `${raison} — déconseillé enfant` : "";
+      const style = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.08);padding-left:6px"
+                  : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.06);padding-left:6px" : "";
+      const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
+                  : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🌶️</span>` : "";
       return `
       <div class="accueil-menu-card" onclick="goMenus()">
         <div class="accueil-menu-day">${p.categorie || "Plat"}</div>
-        <div class="accueil-menu-item">
+        <div class="accueil-menu-item" style="${style}" title="${tip}">
           <span>${emoji}</span>
           <div>
-            <div class="menu-item-nom">${nom}</div>
+            <div class="menu-item-nom">${nom}${mini}</div>
           </div>
         </div>
       </div>`;
@@ -207,11 +217,20 @@ function chargerAccueilMenus() {
         const key = r.recette || "";
         const nom = getNomRecette(key) || key || "—";
         const emoji = key ? (getEmoji(key) || "🍽️") : "🍽️";
-        return `<div class="accueil-menu-item">
+        // Alerte famille (rouge bébé / orange enfant) + raison
+        const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
+        const lvl = niv?.niveau;
+        const raison = niv?.raison || "";
+        const tip = lvl === "bebe" ? `${raison} — déconseillé bébé` : lvl === "enfant" ? `${raison} — déconseillé enfant` : "";
+        const style = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.08);padding-left:6px"
+                    : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.06);padding-left:6px" : "";
+        const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
+                    : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🌶️</span>` : "";
+        return `<div class="accueil-menu-item" style="${style}" title="${tip}">
           <span>${emoji}</span>
           <div>
             <div class="menu-moment">${icone}</div>
-            <div class="menu-item-nom">${nom}</div>
+            <div class="menu-item-nom">${nom}${mini}</div>
           </div>
         </div>`;
       };
@@ -236,21 +255,112 @@ function chargerAccueilMenus() {
     const soirNom = getNomRecette(soirKey) || soirKey || "—";
     const emoji1 = midiKey ? (getEmoji(midiKey) || "🍽️") : "🍽️";
     const emoji2 = soirKey ? (getEmoji(soirKey) || "🍽️") : "🍽️";
+    // Alertes famille
+    const nM = typeof getNiveauFamille === "function" ? getNiveauFamille(midiKey) : null;
+    const nS = typeof getNiveauFamille === "function" ? getNiveauFamille(soirKey) : null;
+    const fmtAlerte = (n) => {
+      if (!n) return { style: "", mini: "", tip: "" };
+      const tip = n.niveau === "bebe" ? `${n.raison} — déconseillé bébé` : `${n.raison} — déconseillé enfant`;
+      const style = n.niveau === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.08);padding-left:6px"
+                                          : "border-left:3px solid #ff9900;background:rgba(255,153,0,.06);padding-left:6px";
+      const mini = n.niveau === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
+                                       : `<span title="${tip}" style="margin-left:4px;font-size:11px">🌶️</span>`;
+      return { style, mini, tip };
+    };
+    const aM = fmtAlerte(nM);
+    const aS = fmtAlerte(nS);
     return `
     <div class="accueil-menu-card" onclick="goMenus()">
       <div class="accueil-menu-day">${j.jour}</div>
-      <div class="accueil-menu-item">
+      <div class="accueil-menu-item" style="${aM.style}" title="${aM.tip}">
         <span>${emoji1}</span>
         <div>
           <div class="menu-moment">☀️ Midi</div>
-          <div class="menu-item-nom">${midiNom}</div>
+          <div class="menu-item-nom">${midiNom}${aM.mini}</div>
         </div>
       </div>
-      <div class="accueil-menu-item">
+      <div class="accueil-menu-item" style="${aS.style}" title="${aS.tip}">
         <span>${emoji2}</span>
         <div>
           <div class="menu-moment">🌙 Soir</div>
-          <div class="menu-item-nom">${soirNom}</div>
+          <div class="menu-item-nom">${soirNom}${aS.mini}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+// Mes menus favoris (sur l'accueil) — bloc créé dynamiquement
+function chargerAccueilMenusFavoris() {
+  const blocId = "accueil-menus-favoris-bloc";
+  const menusBloc = document.getElementById("accueil-menus-bloc");
+  if (!menusBloc) return;
+
+  const favs = (typeof getMenusFavoris === "function" ? getMenusFavoris() : []) || [];
+  // Si pas de favoris ET pas connecté, on ne crée pas le bloc
+  if (favs.length === 0 && !window.currentUser) {
+    const existant = document.getElementById(blocId);
+    if (existant) existant.remove();
+    return;
+  }
+
+  let bloc = document.getElementById(blocId);
+  if (!bloc) {
+    // Créer le bloc et l'insérer juste après "Derniers menus générés"
+    bloc = document.createElement("div");
+    bloc.id = blocId;
+    bloc.className = "accueil-bloc";
+    bloc.innerHTML = `
+      <div class="accueil-bloc-header">
+        <h2>❤️ Mes menus favoris</h2>
+        <button class="accueil-voir-plus" onclick="ouvrirModalProfil()">Tout voir →</button>
+      </div>
+      <div class="accueil-scroll-row" id="accueil-menus-favoris-row"></div>`;
+    menusBloc.parentNode.insertBefore(bloc, menusBloc.nextSibling);
+  }
+
+  const row = document.getElementById("accueil-menus-favoris-row");
+  if (!row) return;
+
+  if (favs.length === 0) {
+    row.innerHTML = `<div class="accueil-empty">Aucun menu favori — sauvegarde tes menus préférés depuis l'écran Menus !</div>`;
+    return;
+  }
+
+  row.innerHTML = favs.slice(0, 10).map(f => {
+    // Aperçu : 1er plat (ou apéro pour thématique)
+    let apercu = "";
+    let emoji = "🍽️";
+    if (f.type === "thematique") {
+      const items = f.menu?.menu || [];
+      const plat = items.find(p => /plat/i.test(p.categorie || "")) || items[0];
+      if (plat?.recette) {
+        apercu = getNomRecette(plat.recette) || plat.recette;
+        emoji = getEmoji(plat.recette) || "🎉";
+      } else {
+        emoji = "🎉";
+      }
+    } else {
+      const j1 = f.menu?.semaine?.[0];
+      const k = j1?.midi?.recette || j1?.midi?.plat?.recette || (typeof j1?.midi === "string" ? j1.midi : "");
+      if (k) {
+        apercu = getNomRecette(k) || k;
+        emoji = getEmoji(k) || "🗓️";
+      } else {
+        emoji = "🗓️";
+      }
+    }
+    const sousType = f.type === "thematique" ? "🎉 Thématique" : "🗓️ Semaine";
+    return `<div class="accueil-menu-card" onclick="appliquerMenuFavori('${f.id}')" style="cursor:pointer;min-width:180px">
+      <div class="accueil-menu-day" style="display:flex;justify-content:space-between;align-items:center">
+        <span>${sousType}</span>
+        <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}').then(()=>chargerAccueilMenusFavoris())" style="background:transparent;border:none;color:#ff6b6b;cursor:pointer;font-size:14px;padding:0">✕</button>
+      </div>
+      <div class="accueil-menu-item">
+        <span>${emoji}</span>
+        <div>
+          <div class="menu-item-nom" style="font-weight:600">${f.nom}</div>
+          <div style="font-size:11px;color:#aaa;margin-top:2px">${apercu || ""}</div>
         </div>
       </div>
     </div>`;
@@ -497,24 +607,60 @@ function switchProfilTab(tab, btn) {
   if (tab === 'favoris') afficherFavoris();
 }
 
-// Afficher favoris
+// Afficher favoris (recettes ET menus)
 function afficherFavoris() {
   const liste = document.getElementById('liste-favoris');
   if (!liste) return;
   const favs = window.userProfile?.favoris || [];
-  if (favs.length === 0) {
-    liste.innerHTML = `<p style="text-align:center;color:#888;padding:20px">Aucun favori pour l'instant.<br>Appuie sur 🤍 dans une recette pour l'ajouter !</p>`;
-    return;
+  const menusFavs = window.userProfile?.menusFavoris || [];
+
+  let html = "";
+
+  // --- Section MENUS FAVORIS ---
+  if (menusFavs.length > 0) {
+    html += `<h3 style="font-size:14px;color:#ff8fb3;margin:8px 0 6px 0;font-weight:700">❤️ Menus favoris (${menusFavs.length})</h3>`;
+    html += menusFavs.map(f => {
+      const sousType = f.type === "thematique" ? "🎉" : "🗓️";
+      // Aperçu : 1er plat
+      let apercu = "";
+      if (f.type === "thematique") {
+        const plat = (f.menu?.menu || []).find(p => /plat/i.test(p.categorie || "")) || (f.menu?.menu || [])[0];
+        if (plat?.recette) apercu = getNomRecette(plat.recette) || plat.recette;
+      } else {
+        const j1 = f.menu?.semaine?.[0];
+        const k = j1?.midi?.recette || j1?.midi?.plat?.recette || (typeof j1?.midi === "string" ? j1.midi : "");
+        if (k) apercu = getNomRecette(k) || k;
+      }
+      return `<div class="favori-item" onclick="fermerModalProfil();appliquerMenuFavori('${f.id}')" title="Cliquer pour appliquer ce menu">
+        <span style="display:flex;flex-direction:column;gap:2px">
+          <span>${sousType} ${f.nom}</span>
+          ${apercu ? `<span style="font-size:11px;color:#888;font-weight:normal">→ ${apercu}</span>` : ""}
+        </span>
+        <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}').then(()=>afficherFavoris())" class="btn-retirer-favori">✕</button>
+      </div>`;
+    }).join('');
   }
-  liste.innerHTML = favs.map(key => {
-    const nom = (typeof getNomRecette === 'function' ? getNomRecette(key) : key);
-    const data = typeof recettes !== 'undefined' ? recettes[key] : null;
-    const emoji = data?.emoji || '🍽️';
-    return `<div class="favori-item" onclick="fermerModalProfil();choisirRecette('${key}')">
-      <span>${emoji} ${nom}</span>
-      <button onclick="event.stopPropagation();toggleFavori('${key}');afficherFavoris()" class="btn-retirer-favori">✕</button>
-    </div>`;
-  }).join('');
+
+  // --- Section RECETTES FAVORITES ---
+  if (favs.length > 0) {
+    if (menusFavs.length > 0) html += `<h3 style="font-size:14px;color:#ff8fb3;margin:14px 0 6px 0;font-weight:700">🍽️ Recettes favorites (${favs.length})</h3>`;
+    html += favs.map(key => {
+      const nom = (typeof getNomRecette === 'function' ? getNomRecette(key) : key);
+      const data = typeof recettes !== 'undefined' ? recettes[key] : null;
+      const emoji = data?.emoji || '🍽️';
+      return `<div class="favori-item" onclick="fermerModalProfil();choisirRecette('${key}')">
+        <span>${emoji} ${nom}</span>
+        <button onclick="event.stopPropagation();toggleFavori('${key}');afficherFavoris()" class="btn-retirer-favori">✕</button>
+      </div>`;
+    }).join('');
+  }
+
+  // Vide
+  if (favs.length === 0 && menusFavs.length === 0) {
+    html = `<p style="text-align:center;color:#888;padding:20px">Aucun favori pour l'instant.<br>Appuie sur 🤍 dans une recette ou sur un menu pour l'ajouter !</p>`;
+  }
+
+  liste.innerHTML = html;
 }
 
 // Ajouter bouton favori dans la modale recette
@@ -629,6 +775,37 @@ const INGREDIENTS_LABELS = {
   // == Ingrédients spéciaux ==
   pralin: "🌰 Pâte de pralin", proteine: "💪 Protéine", dattes: "🌴 Dattes",
   vermicelles: "🍜 Vermicelles", edamame: "🫛 Edamame",
+  // == Ajouts audit complet (50 ingrédients) ==
+  // Boissons / alcools
+  vin: "🍷 Vin", cidre: "🍎 Cidre", saké: "🍶 Saké",
+  // Légumes
+  avocat: "🥑 Avocat", melon: "🍈 Melon",
+  chouC: "🥬 Chou", choufleur: "🥦 Chou-fleur", betterave: "🟥 Betterave",
+  bok_choy: "🥬 Bok choy", herbes: "🌿 Herbes de Provence",
+  // Aromates / condiments
+  ciboule: "🌿 Ciboule", ciboulette: "🌿 Ciboulette", sauge: "🌿 Sauge",
+  capres: "🫒 Câpres", baies: "🫐 Baies de genièvre",
+  // Sauces / pâtes
+  bechamel: "🥛 Sauce béchamel", soja: "🥢 Sauce soja", chutney: "🫙 Chutney",
+  pateC: "🌶️ Pâte de curry", curryVert: "🌶️ Pâte de curry vert",
+  fecule: "🌾 Fécule de maïs",
+  // Viandes / poissons / fruits de mer
+  veau: "🥩 Veau", lard: "🥓 Lard fumé", saucisses: "🌭 Saucisses",
+  merguez: "🌶️ Merguez", calamars: "🦑 Calamars", moule: "🦪 Moules",
+  // Produits laitiers / œufs
+  chevre: "🐐 Fromage de chèvre", camembert: "🧀 Camembert", gJaune: "🥚 Jaune d'œuf",
+  // Fruits
+  banane: "🍌 Banane", pomme: "🍎 Pomme", kiwi: "🥝 Kiwi", citronC: "🍋 Citron",
+  // Fruits secs & graines
+  pistaches: "🌰 Pistaches", arachide: "🥜 Arachide",
+  sesame: "🫘 Graines de sésame", cacahetes: "🥜 Cacahuètes grillées",
+  // Sucré / divers
+  choco: "🍫 Chocolat", biscuits: "🍪 Biscuits", gelatine: "🟦 Gélatine",
+  filo: "🥟 Pâte filo", pateSablee: "🥧 Pâte sablée",
+  muffins: "🧁 Muffins anglais", tteok: "🍢 Gâteaux de riz tteok",
+  soba: "🍜 Nouilles soba",
+  // Spécifique brioche / patisserie
+  beurrage: "🧈 Beurre de tourage",
 };
 
 
@@ -693,7 +870,7 @@ function selectTheme(btn) {
 // Menus thématiques prédéfinis
 // Tous les plats disponibles par catégorie
 const TOUS_LES_PLATS = [
-  "lasagne","boeufbourguignon","gratindauphinois","quichelorraine","soupeaoignon",
+  "boeufbourguignon","gratindauphinois","quichelorraine","soupeaoignon",
   "potaufeu","pouletcitronthym","risotto","risottoprimavera","couscous","moussaka",
   "paella","butterchicken","souvlaki","dalindien","rizcantonnais","hariramarocaine",
   "shakshuka","padthai","currypouletcoco","tacosmaison","bolognaisemaison",
@@ -712,13 +889,13 @@ const TOUTES_LES_ENTREES = [
   "saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison",
   "saladequinoa","saladeavocatcrevettes","saladelentilles","saladepoischiches",
   "saladerizmediterranee","gaspacho","houmous","soupemiso","veloutelegumes",
-  "buddhaBowl","smoothiebowl","smoothiemangopassion","overnightoats","saumongravlax"
+  "buddhaBowl","saumongravlax"
 ];
 const TOUS_LES_DESSERTS = [
   "tiramisu","cremebrulee","mousseauchocolat","fondantchocolat","tartecitron",
   "tarteaupommes","clafoutis","flan","madeleine","verrinetiramisu","goumeau",
   "ileflottante","bananabread","churros","parisbrestreinterpretation","muffins",
-  "granola","smoothiebowl","bowlacai","yaourt"
+  "cookies","cheesecake","baklava","tartetatinpommes","crumblefruits","tartepistache"
 ];
 const TOUS_LES_APEROS_ALCOOL = [
   "mojito","margarita","cosmopolitan","spritz","sangria","pinacolada","daiquiri","whiskysour",
@@ -819,14 +996,7 @@ async function genererMenuFestif() {
   });
   const recettesDispos = Object.keys(recettes).filter(key => {
     if (motsExclusionFestif.size === 0) return true;
-    const r = recettes[key];
-    let texte = [key, r?.description || ""].join(" ").toLowerCase();
-    Object.keys(r || {}).forEach(k => {
-      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
-        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
-        texte += " " + Object.values(r[k][0]).join(" ").toLowerCase();
-      }
-    });
+    const texte = texteRecette(key);
     return ![...motsExclusionFestif].some(mot => texte.includes(mot));
   }).join(", ");
 
@@ -895,15 +1065,35 @@ Réponds UNIQUEMENT en JSON :
       { key: "plat",    emoji: "🍽️", label: "🍽️ Plat",   pool: themeData.plat    },
       { key: "dessert", emoji: "🍰", label: "🍰 Dessert", pool: themeData.dessert },
     ];
+    // Filtre commun : retire les recettes incompatibles allergies/régimes/non-repas/famille
+    const filtrerPool = (pool, autoriseNonRepas) => pool.filter(k => {
+      if (!recettes[k]) return false;
+      // Non-repas autorisés seulement pour apéro et dessert
+      if (!autoriseNonRepas && RECETTES_NON_REPAS.has(k)) return false;
+      // Allergies / régimes
+      if (motsExclusionFestif.size > 0) {
+        const texte = texteRecette(k);
+        if ([...motsExclusionFestif].some(m => texte.includes(m))) return false;
+      }
+      // Famille : éviter rouge (bébé) — orange (enfant) reste autorisé, l'utilisateur verra l'alerte
+      const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(k) : null;
+      if (niv?.niveau === "bebe") return false;
+      return true;
+    });
     menuFestifActuel = {
       theme: themeData.label,
       menu: catMap
         .filter(c => structure.length === 0 || structure.some(s => c.key.includes(s) || s.includes(c.key)))
-        .map(c => ({
-          categorie: c.label,
-          recette:   pickOne(c.pool),
-          note:      pickOne(notesMap[c.key])
-        }))
+        .map(c => {
+          const autoriseNonRepas = (c.key === "apero" || c.key === "dessert");
+          const poolOK = filtrerPool(c.pool, autoriseNonRepas);
+          const choix = pickOne(poolOK.length ? poolOK : c.pool); // fallback ultime
+          return {
+            categorie: c.label,
+            recette:   choix,
+            note:      pickOne(notesMap[c.key])
+          };
+        })
     };
   }
 
@@ -917,17 +1107,44 @@ function afficherMenuFestif(menu, personnes) {
   const container = document.getElementById("festif-jours");
   container.innerHTML = "";
 
-  menu.menu.forEach(item => {
+  // Légende famille (uniquement si le foyer a bébé/enfant)
+  const profilL = typeof getFoyerProfil === "function" ? getFoyerProfil() : null;
+  if (profilL && (profilL.hasBebe || profilL.hasEnfant)) {
+    const legende = document.createElement("div");
+    legende.className = "plan-legende-famille";
+    const parts = [];
+    if (profilL.hasBebe)   parts.push(`<span class="leg-item"><span class="leg-pastille bebe"></span>🍼 Déconseillé bébé</span>`);
+    if (profilL.hasEnfant) parts.push(`<span class="leg-item"><span class="leg-pastille enfant"></span>🌶️ Déconseillé enfant</span>`);
+    parts.push(`<span class="leg-hint">Tu peux <strong>🔄 régénérer</strong> chaque item concerné</span>`);
+    legende.innerHTML = parts.join("");
+    container.appendChild(legende);
+  }
+
+  menu.menu.forEach((item, idx) => {
     const div = document.createElement("div");
     div.className = "plan-jour";
+
+    // Alerte famille + raison
+    const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(item.recette) : null;
+    const lvl = niv?.niveau;
+    const raison = niv?.raison || "";
+    const tip = lvl === "bebe" ? `${raison} — déconseillé bébé` : lvl === "enfant" ? `${raison} — déconseillé enfant` : "";
+    const styleAlerte = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
+                      : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
+    const badge = lvl === "bebe"   ? `<span title="${tip}" style="margin-left:6px">🍼</span>`
+                : lvl === "enfant" ? `<span title="${tip}" style="margin-left:6px">🌶️</span>` : "";
+    const btn = lvl ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenItemFestif(${idx})" title="Regénérer">🔄</button>` : "";
+    const motif = lvl ? `<div class="plan-motif-famille" title="${tip}" style="max-width:280px">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
+
     div.innerHTML = `
       <div class="plan-repas-row" style="grid-template-columns:1fr">
-        <div class="plan-repas" onclick="ouvrirRecettePlan('${item.recette}', ${personnes})" style="text-align:left;display:flex;align-items:center;gap:14px">
+        <div class="plan-repas" onclick="ouvrirRecettePlan('${item.recette}', ${personnes})" style="${styleAlerte};text-align:left;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
           <div style="font-size:32px">${getEmoji(item.recette)}</div>
-          <div>
-            <div class="plan-repas-label">${item.categorie}</div>
+          <div style="flex:1;min-width:0">
+            <div class="plan-repas-label">${item.categorie} ${badge}${btn}</div>
             <div class="plan-repas-nom" style="font-size:16px">${getNomRecette(item.recette)}</div>
             <div class="plan-repas-note">${item.note}</div>
+            ${motif}
           </div>
         </div>
       </div>`;
@@ -940,6 +1157,47 @@ function afficherMenuFestif(menu, personnes) {
   document.getElementById("festif-form").style.display = "none";
   document.getElementById("festif-result").style.display = "block";
   document.getElementById("festif-courses").style.display = "none";
+
+  // Bouton "Sauvegarder en favori"
+  injecterBoutonMenuFavori("festif-result", "thematique", menu, personnes);
+}
+
+// Régénère UN item du menu festif (apéro/entrée/plat/dessert)
+function regenItemFestif(idx) {
+  if (!menuFestifActuel?.menu?.[idx]) return;
+  const item = menuFestifActuel.menu[idx];
+  // Catégorie -> pool de candidats (selon le label)
+  const cats = {
+    "🥂 Apéro":   ["cocktails","mocktails"],
+    "🥗 Entrée":  ["entrees","soupes","salades"],
+    "🍽️ Plat":   ["plats","pizzas","healthy"],
+    "🍰 Dessert": ["desserts"],
+  };
+  const allowedCats = cats[item.categorie] || ["plats"];
+
+  // Mots à exclure (allergies + régimes du profil)
+  const motsExclus = typeof motsExclusProfil === "function" ? motsExclusProfil() : new Set();
+
+  // Pool : catégorie correcte + pas d'alerte famille + compatible profil
+  const pool = Object.keys(recettes).filter(key => {
+    if (!allowedCats.includes(categorieRecette(key))) return false;
+    if (motsExclus.size > 0) {
+      const texte = texteRecette(key);
+      if ([...motsExclus].some(m => texte.includes(m))) return false;
+    }
+    const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
+    return !niv; // ni rouge ni orange
+  });
+
+  // Éviter de retomber sur l'actuelle et sur celles déjà dans le menu
+  const dejaDans = new Set(menuFestifActuel.menu.map(x => x.recette));
+  let candidates = pool.filter(k => !dejaDans.has(k));
+  if (candidates.length === 0) candidates = pool.filter(k => k !== item.recette);
+  if (candidates.length === 0) return;
+
+  item.recette = candidates[Math.floor(Math.random() * candidates.length)];
+  const personnes = parseInt(document.getElementById("festif-personnes")?.value) || 4;
+  afficherMenuFestif(menuFestifActuel, personnes);
 }
 
 function afficherCoursesFestif() {
@@ -2201,7 +2459,90 @@ function afficherMenusSemaine(menus, personnes) {
     note.innerHTML = `<strong>${icone} Adaptation famille</strong><br><span style="opacity:.85">${texte}</span>`;
     document.getElementById("plan-result").appendChild(note);
   }
+
+  // Bouton "Sauvegarder en favori"
+  injecterBoutonMenuFavori("plan-result", "semaine", menus, personnes);
 }
+
+// Injecte un bouton ❤️ dans le header d'un écran menu (semaine ou thématique)
+function injecterBoutonMenuFavori(containerId, type, menu, personnes) {
+  if (!window.currentUser) return; // pas de favoris sans compte
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const header = container.querySelector(".plan-result-header");
+  if (!header) return;
+
+  // Supprimer ancien bouton si présent
+  const ancien = header.querySelector(".plan-btn-favori-menu");
+  if (ancien) ancien.remove();
+
+  const estFav = typeof estMenuFavori === "function" && estMenuFavori(menu, type);
+  const btn = document.createElement("button");
+  btn.className = "plan-btn-favori-menu";
+  btn.innerHTML = estFav ? "❤️ Sauvegardé" : "🤍 Sauvegarder";
+  btn.title = estFav ? "Ce menu est dans tes favoris" : "Sauvegarder ce menu en favori";
+  btn.onclick = async (e) => {
+    e.stopPropagation();
+    if (estFav) {
+      // Si déjà favori, on cherche son id pour le retirer
+      const liste = window.userProfile?.menusFavoris || [];
+      const f = liste.find(m => m.type === type && JSON.stringify(m.menu) === JSON.stringify(menu));
+      if (f) await window.supprimerMenuFavori(f.id);
+      btn.innerHTML = "🤍 Sauvegarder";
+    } else {
+      const id = await window.sauvegarderMenuFavori(menu, type, personnes);
+      if (id) {
+        btn.innerHTML = "❤️ Sauvegardé";
+        // Petit flash visuel
+        btn.style.transform = "scale(1.1)";
+        setTimeout(() => btn.style.transform = "", 200);
+      }
+    }
+  };
+  header.appendChild(btn);
+}
+
+// Charge un menu favori (semaine) et l'affiche
+window.appliquerMenuFavoriSemaine = function(id) {
+  const liste = window.userProfile?.menusFavoris || [];
+  const fav = liste.find(m => m.id === id);
+  if (!fav || fav.type !== "semaine") return;
+  menusSemaine = fav.menu;
+  // Naviguer vers la section Menus et l'onglet Semaine
+  const btnMenus = document.querySelector(".nav-btn[onclick*=planificateur]");
+  if (btnMenus) afficherSection("planificateur", btnMenus);
+  // Forcer l'onglet semaine
+  if (typeof switchPlanTab === "function") switchPlanTab("semaine");
+  setTimeout(() => {
+    const inputP = document.getElementById("plan-personnes");
+    if (inputP) inputP.value = fav.personnes || 4;
+    afficherMenusSemaine(menusSemaine, fav.personnes || 4);
+  }, 100);
+};
+
+// Charge un menu favori (thématique) et l'affiche
+window.appliquerMenuFavoriFestif = function(id) {
+  const liste = window.userProfile?.menusFavoris || [];
+  const fav = liste.find(m => m.id === id);
+  if (!fav || fav.type !== "thematique") return;
+  menuFestifActuel = fav.menu;
+  const btnMenus = document.querySelector(".nav-btn[onclick*=planificateur]");
+  if (btnMenus) afficherSection("planificateur", btnMenus);
+  if (typeof switchPlanTab === "function") switchPlanTab("festif");
+  setTimeout(() => {
+    const inputP = document.getElementById("festif-personnes");
+    if (inputP) inputP.value = fav.personnes || 4;
+    afficherMenuFestif(menuFestifActuel, fav.personnes || 4);
+  }, 100);
+};
+
+window.appliquerMenuFavori = function(id) {
+  const liste = window.userProfile?.menusFavoris || [];
+  const fav = liste.find(m => m.id === id);
+  if (!fav) return;
+  if (fav.type === "thematique") window.appliquerMenuFavoriFestif(id);
+  else window.appliquerMenuFavoriSemaine(id);
+};
 
 
 function ouvrirRecettePlan(recetteKey, personnes) {
