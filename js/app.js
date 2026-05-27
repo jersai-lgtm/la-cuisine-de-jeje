@@ -25,7 +25,11 @@ const RECETTES_NON_REPAS = new Set([
   "tartecitron","tartepistache","tartetatinpommes","tequilasunrise","tiramisu","tiramisufraise",
   "verrineframboisechocolat","verrinetiramisu","virginmojito","virginpinacolada","whiskysour",
   // bases supplémentaires
-  "patepizza","patelasagne","lasagne","yaourt","smoothiebowl","energyballs","naan","painlevain","brioche"
+  "patepizza","patelasagne","lasagne","yaourt","smoothiebowl","energyballs","naan","painlevain","brioche",
+  // 50 nouvelles recettes — non-repas (desserts/boulangerie/brunch/encas)
+  "huevosrancheros","chilaquilesrojos","kayatoast","samossasagneau","empanadasargentines",
+  "baoporccarmelise","pasteldenata","basquecheesecake","mochiglace","knafehlibanais",
+  "alfajores","focacciaolives","khachapuri","painpita"
 ]);
 
 // Desserts (pour le pool desserts du menu complet — liste fiable, ne dépend pas du DOM)
@@ -3675,23 +3679,580 @@ function filtrerPays(pays) {
 
 // Calculer depuis une carte et afficher en modal
 function calculer() {
-  const recette = document.getElementById("recette")?.value;
-  const personnes = parseInt(document.getElementById("personnes")?.value) || 4;
-  if (!recette) return;
-  // Mettre à jour l'input personnes pour que choisirRecette le lise
-  const inputP = document.getElementById("personnes");
-  if (inputP) inputP.dataset.modified = "1";
-  choisirRecette(recette);
+  const recette   = document.getElementById("recette").value;
+  const personnes = parseInt(document.getElementById("personnes").value) || 1;
+  const data      = recettes[recette];
+
+  // Pizza : afficher uniquement la ligne sélectionnée en colonnes
+  if (recette === "pizza" && data.tableauPatons) {
+    const ligne = data.tableauPatons.find(l => l.patons === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} pâton${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPizzaColonnes(ligne) + htmlPrixCalories("pizza", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (0–20).</p>`;
+    return;
+  }
+
+  // Gaufres : tableau par nombre de gaufres
+  if (recette === "gaufres" && data.tableauGaufres) {
+    const ligne = data.tableauGaufres.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} gaufre${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaufresColonnes(ligne) + htmlPrixCalories("gaufres", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
+    return;
+  }
+
+  // Cookies : tableau par nombre de cookies
+  if (recette === "cookies" && data.tableauCookies) {
+    const ligne = data.tableauCookies.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} cookie${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCookiesColonnes(ligne) + htmlPrixCalories("cookies", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
+    return;
+  }
+
+  // Goumeau
+  if (recette === "goumeau" && data.tableauGoumeau) {
+    const ligne = data.tableauGoumeau.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGoumeauColonnes(ligne) + htmlPrixCalories("goumeau", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 10.</p>`;
+    return;
+  }
+
+  // Galette tacos
+  if (recette === "galettetacos" && data.tableauGaletteTacos) {
+    const ligne = data.tableauGaletteTacos.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} galette${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaletteTacosColonnes(ligne) + htmlPrixCalories("galettetacos", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir 2, 4, 6, 8, 10, 12, 14 ou 16.</p>`;
+    return;
+  }
+
+  // Pain burger
+  if (recette === "painburger" && data.tableauPainBurger) {
+    const ligne = data.tableauPainBurger.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} bun${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPainBurgerColonnes(ligne) + htmlPrixCalories("painburger", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir 2, 4, 6, 8, 10 ou 12.</p>`;
+    return;
+  }
+
+  // Pain de mie
+  if (recette === "paindemie" && data.tableauPainDeMie) {
+    const ligne = data.tableauPainDeMie.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} tranche${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPainDeMieColonnes(ligne) + htmlPrixCalories("paindemie", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 20.</p>`;
+    return;
+  }
+
+  // Overnight oats
+  if (recette === "overnightoats" && data.tableauOvernightOats) {
+    const ligne = data.tableauOvernightOats.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} pot${personnes > 1 ? "s" : ""}</h3>` + htmlTableauOvernightOatsColonnes(ligne) + htmlPrixCalories("overnightoats", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+  // Buddha bowl
+  if (recette === "buddhaBowl" && data.tableauBuddhaBowl) {
+    const ligne = data.tableauBuddhaBowl.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauBuddhaBowlColonnes(ligne) + htmlPrixCalories("buddhaBowl", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+  // Soupe miso
+  if (recette === "soupemiso" && data.tableauSoupeMiso) {
+    const ligne = data.tableauSoupeMiso.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSoupeMisoColonnes(ligne) + htmlPrixCalories("soupemiso", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+  // Wrap poulet
+  if (recette === "wrappoulet" && data.tableauWrapPoulet) {
+    const ligne = data.tableauWrapPoulet.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} wrap${personnes > 1 ? "s" : ""}</h3>` + htmlTableauWrapPouletColonnes(ligne) + htmlPrixCalories("wrappoulet", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+  // Energy balls
+  if (recette === "energyballs" && data.tableauEnergyBalls) {
+    const ligne = data.tableauEnergyBalls.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} ball${personnes > 1 ? "s" : ""}</h3>` + htmlTableauEnergyBallsColonnes(ligne) + htmlPrixCalories("energyballs", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir 4, 8, 12, 16, 20 ou 24.</p>`;
+    return;
+  }
+  // Pancakes protéinés
+  if (recette === "pancakesproteine" && data.tableauPancakesProteine) {
+    const ligne = data.tableauPancakesProteine.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} pancake${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPancakesProteineColonnes(ligne) + htmlPrixCalories("pancakesproteine", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir 2, 4, 6, 8, 10 ou 12.</p>`;
+    return;
+  }
+  // Bowl açaï
+  if (recette === "bowlacai" && data.tableauBowlAcai) {
+    const ligne = data.tableauBowlAcai.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauBowlAcaiColonnes(ligne) + htmlPrixCalories("bowlacai", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+  // Salade pois chiches
+  if (recette === "saladepoischiches" && data.tableauSaladePoisChiches) {
+    const ligne = data.tableauSaladePoisChiches.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSaladePoisChichesColonnes(ligne) + htmlPrixCalories("saladepoischiches", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
+    return;
+  }
+  // Gaspacho
+  if (recette === "gaspacho" && data.tableauGaspacho) {
+    const ligne = data.tableauGaspacho.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaspachoColonnes(ligne) + htmlPrixCalories("gaspacho", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
+    return;
+  }
+
+  // Curry de légumes
+  if (recette === "curryledumes" && data.tableauCurryLegumes) {
+    const ligne = data.tableauCurryLegumes.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCurryLegumesColonnes(ligne) + htmlPrixCalories("curryledumes", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+
+  // Smoothie bowl
+  if (recette === "smoothiebowl" && data.tableauSmoothie) {
+    const ligne = data.tableauSmoothie.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSmoothieColonnes(ligne) + htmlPrixCalories("smoothiebowl", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
+    return;
+  }
+  // Yaourt maison
+  if (recette === "yaourt" && data.tableauYaourt) {
+    const ligne = data.tableauYaourt.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} yaourt${personnes > 1 ? "s" : ""}</h3>` + htmlTableauYaourtColonnes(ligne) + htmlPrixCalories("yaourt", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
+    return;
+  }
+
+  // Pancakes
+  if (recette === "pancakes" && data.tableauPancakes) {
+    const ligne = data.tableauPancakes.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} pancake${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPancakesColonnes(ligne) + htmlPrixCalories("pancakes", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
+    return;
+  }
+  // Muffins
+  if (recette === "muffins" && data.tableauMuffins) {
+    const ligne = data.tableauMuffins.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} muffin${personnes > 1 ? "s" : ""}</h3>` + htmlTableauMuffinsColonnes(ligne) + htmlPrixCalories("muffins", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–24).</p>`;
+    return;
+  }
+  // Croque-monsieur
+  if (recette === "croquemonsieur" && data.tableauCroques) {
+    const ligne = data.tableauCroques.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} croque${personnes > 1 ? "s" : ""}-monsieur</h3>` + htmlTableauCroquesColonnes(ligne) + htmlPrixCalories("croquemonsieur", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
+    return;
+  }
+  // Salades d'été
+  const saladesTables = {
+    "saladeniçoise":       { table: "tableauSaladeNicoise",    fn: htmlTableauSaladeNicoiseColonnes,    label: "personne" },
+    "saladecesar":         { table: "tableauSaladeCesar",      fn: htmlTableauSaladeCesarColonnes,      label: "personne" },
+    "saladegreque":        { table: "tableauSaladeGreque",     fn: htmlTableauSaladeGrequeColonnes,     label: "personne" },
+    "saladepatasthon":     { table: "tableauSaladePatas",      fn: htmlTableauSaladePatasColonnes,      label: "personne" },
+    "saladerizmediterranee":{ table: "tableauSaladeRiz",       fn: htmlTableauSaladeRizColonnes,        label: "personne" },
+    "tabulemaison":        { table: "tableauTabule",           fn: htmlTableauTabuleColonnes,           label: "personne" },
+    "saladelentilles":     { table: "tableauSaladeLentilles",  fn: htmlTableauSaladeLentillesColonnes,  label: "personne" },
+    "saladeavocatcrevettes":{ table: "tableauAvocatCrevettes", fn: htmlTableauAvocatCrevettesColonnes,  label: "personne" },
+  };
+  if (saladesTables[recette] && data[saladesTables[recette].table]) {
+    const cfg  = saladesTables[recette];
+    const ligne = data[cfg.table].find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
+    return;
+  }
+
+  // Tiramisu
+  if (recette === "tiramisu" && data.tableauTiramisu) {
+    const ligne = data.tableauTiramisu.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTiramisuColonnes(ligne) + htmlPrixCalories("tiramisu", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
+    return;
+  }
+
+  // Flan
+  if (recette === "flan" && data.tableauFlan) {
+    const ligne = data.tableauFlan.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauFlanColonnes(ligne) + htmlPrixCalories("flan", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
+    return;
+  }
+  // Clafoutis
+  if (recette === "clafoutis" && data.tableauClafoutis) {
+    const ligne = data.tableauClafoutis.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauClafoutisColonnes(ligne) + htmlPrixCalories("clafoutis", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
+    return;
+  }
+  // Tarte aux pommes
+  if (recette === "tarteaupommes" && data.tableauTartePommes) {
+    const ligne = data.tableauTartePommes.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTartePommesColonnes(ligne) + htmlPrixCalories("tarteaupommes", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
+    return;
+  }
+
+  // Nouvelles recettes monde et desserts
+  const nRT = window._nouvellesRecettesTables || {};
+  if (nRT[recette] && data[nRT[recette].table]) {
+    const cfg = nRT[recette];
+    const ligne = data[cfg.table].find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+
+  // Cocktails
+  const cocktailsTables = {
+    "mojito":             { table: "tableauMojito",       fn: htmlTableauMojitoColonnes,       label: "verre" },
+    "margarita":          { table: "tableauMargarita",     fn: htmlTableauMargaritaColonnes,    label: "verre" },
+    "cosmopolitan":       { table: "tableauCosmopolitan",  fn: htmlTableauCosmopolitanColonnes, label: "verre" },
+    "spritz":             { table: "tableauSpritz",        fn: htmlTableauSpritzColonnes,       label: "verre" },
+    "sangria":            { table: "tableauSangria",       fn: htmlTableauSangriaColonnes,      label: "verre" },
+    "pinacolada":         { table: "tableauPinaColada",    fn: htmlTableauPinaColadaColonnes,   label: "verre" },
+    "daiquiri":           { table: "tableauDaiquiri",      fn: htmlTableauDaiquiriColonnes,     label: "verre" },
+    "whiskysour":         { table: "tableauWhiskySour",    fn: htmlTableauWhiskySourColonnes,   label: "verre" },
+    "virginmojito":       { table: "tableauVirginMojito",  fn: htmlTableauVirginMojitoColonnes, label: "verre" },
+    "limonademaison":     { table: "tableauLimonade",      fn: htmlTableauLimonadeColonnes,     label: "verre" },
+    "smoothiemangopassion":{ table: "tableauSmoothieMango",fn: htmlTableauSmoothieMangoColonnes,label: "verre" },
+    "citronadementhe":    { table: "tableauCitronade",     fn: htmlTableauCitronadeColonnes,    label: "verre" },
+    "jusPastequeMenuthe": { table: "tableauJusPasteque",   fn: htmlTableauJusPastequeColonnes,  label: "verre" },
+    "virginpinacolada":   { table: "tableauVirginPina",    fn: htmlTableauVirginPinaColonnes,   label: "verre" },
+    "mojitorose":         { table: "tableauMojitoRose",    fn: htmlTableauMojitoRoseColonnes,   label: "verre" },
+    "negroni":            { table: "tableauNegroni",        fn: htmlTableauNegroniColonnes,      label: "verre" },
+    "moscowmule":         { table: "tableauMoscowMule",     fn: htmlTableauMoscowMuleColonnes,   label: "verre" },
+    "pornstarmartini":    { table: "tableauPornstar",       fn: htmlTableauPornstarColonnes,     label: "verre" },
+    "hugospritz":         { table: "tableauHugoSpritz",     fn: htmlTableauHugoSpritzColonnes,   label: "verre" },
+    "cherryblossommocktail":{ table: "tableauCherryBlossom",fn: htmlTableauCherryBlossomColonnes,label: "verre" },
+    "oldFashioned":       { table: "tableauOldFashioned",   fn: htmlTableauOldFashionedColonnes, label: "verre" },
+    "gintoniqmaison":     { table: "tableauGinTonic",       fn: htmlTableauGinTonicColonnes,     label: "verre" },
+    "shrubframboisebasilic":{ table: "tableauShrub",        fn: htmlTableauShrubColonnes,        label: "verre" },
+    "mocktailcoconananas":{ table: "tableauCocoAnanas",     fn: htmlTableauCocoAnanasColonnes,   label: "verre" },
+    "tequilasunrise":  { table: "tableauTequilaSunrise",  fn: htmlTableauTequilaSunriseColonnes, label: "verre" },
+    "aperolspritzrosa":{ table: "tableauAperolRosa",      fn: htmlTableauAperolRosaColonnes,     label: "verre" },
+    "espressoMartini": { table: "tableauEspressoMartini", fn: htmlTableauEspressoMartiniColonnes,label: "verre" },
+    "punchfruitsrouges":{ table: "tableauPunchRouge",     fn: htmlTableauPunchRougeColonnes,     label: "verre" },
+    "blueLagoon":      { table: "tableauBlueLagoon",      fn: htmlTableauBlueLagoonColonnes,     label: "verre" },
+    "mimosa":          { table: "tableauMimosa",          fn: htmlTableauMimosaColonnes,         label: "verre" },
+    "sidecarvintage":  { table: "tableauSidecar",         fn: htmlTableauSidecarColonnes,        label: "verre" },
+    "mocktailberrybliss":{ table: "tableauBerryBliss",    fn: htmlTableauBerryBlissColonnes,     label: "verre" },
+    "gingerlemondrop": { table: "tableauLemonDrop",       fn: htmlTableauLemonDropColonnes,      label: "verre" },
+    "mocktailcoconorchidee":{ table: "tableauCocoOrchidee",fn: htmlTableauCocoOrchideeColonnes, label: "verre" },
+  };
+  if (cocktailsTables[recette] && data[cocktailsTables[recette].table]) {
+    const cfg = cocktailsTables[recette];
+    const ligne = data[cfg.table].find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+
+  // Paris-Brest
+  if (recette === "parisbrestreinterpretation" && data.tableauParisBrest) {
+    const ligne = data.tableauParisBrest.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauParisBrestColonnes(ligne) + htmlPrixCalories("parisbrestreinterpretation", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+
+  // Saumon gravlax
+  if (recette === "saumongravlax" && data.tableauGravlax) {
+    const ligne = data.tableauGravlax.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGravlaxColonnes(ligne) + htmlPrixCalories("saumongravlax", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+  // Verrines tiramisu
+  if (recette === "verrinetiramisu" && data.tableauVerrineTiramisu) {
+    const ligne = data.tableauVerrineTiramisu.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} verrine${personnes > 1 ? "s" : ""}</h3>` + htmlTableauVerrineTiramisuColonnes(ligne) + htmlPrixCalories("verrinetiramisu", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+  // Pot-au-feu
+  if (recette === "potaufeu" && data.tableauPotAuFeu) {
+    const ligne = data.tableauPotAuFeu.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPotAuFeuColonnes(ligne) + htmlPrixCalories("potaufeu", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
+    return;
+  }
+
+  // Recettes du monde + classiques
+  const mondeClassiquesTables = mondeClassiquesTablesGlobal || {
+    "couscous":       { table: "tableauCouscous",        fn: htmlTableauCouscousColonnes,       label: "personne" },
+    "moussaka":       { table: "tableauMoussaka",         fn: htmlTableauMoussakaColonnes,       label: "personne" },
+    "paella":         { table: "tableauPaella",           fn: htmlTableauPaellaColonnes,         label: "personne" },
+    "butterchicken":  { table: "tableauButterChicken",    fn: htmlTableauButterChickenColonnes,  label: "personne" },
+    "souvlaki":       { table: "tableauSouvlaki",         fn: htmlTableauSouvlakiColonnes,       label: "personne" },
+    "quichelorraine": { table: "tableauQuiche",           fn: htmlTableauQuicheColonnes,         label: "personne" },
+    "soupeaoignon":   { table: "tableauSoupeOignon",      fn: htmlTableauSoupeOignonColonnes,    label: "personne" },
+    "dalindien":      { table: "tableauDal",              fn: htmlTableauDalColonnes,            label: "personne" },
+    "rizcantonnais":  { table: "tableauRizCantonnais",    fn: htmlTableauRizCantonnaisColonnes,  label: "personne" },
+    "hariramarocaine":{ table: "tableauHarira",           fn: htmlTableauHariraColonnes,         label: "personne" },
+    "naan":           { table: "tableauNaan",             fn: htmlTableauNaanColonnes,           label: "naan" },
+    "churros":        { table: "tableauChurros",          fn: htmlTableauChurrosColonnes,        label: "personne" },
+  };
+  if (mondeClassiquesTables[recette] && data[mondeClassiquesTables[recette].table]) {
+    const cfg = mondeClassiquesTables[recette];
+    const ligne = data[cfg.table].find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 2 et 12.</p>`;
+    return;
+  }
+
+  // Recettes HelloFresh style
+  const hellofreshTables = {
+    "pouletcitronthym":  { table: "tableauPouletCitron",      fn: htmlTableauPouletCitronColonnes,    label: "personne" },
+    "salmonteriyaki":    { table: "tableauSalmonTeriyaki",     fn: htmlTableauSalmonTeriyakiColonnes,  label: "personne" },
+    "tacosmaison":       { table: "tableauTacos",              fn: htmlTableauTacosColonnes,           label: "taco" },
+    "padthai":           { table: "tableauPadThai",            fn: htmlTableauPadThaiColonnes,         label: "personne" },
+    "currypouletcoco":   { table: "tableauCurryPoulet",        fn: htmlTableauCurryPouletColonnes,     label: "personne" },
+    "burgermaison":      { table: "tableauBurger",             fn: htmlTableauBurgerColonnes,          label: "burger" },
+    "risottoprimavera":  { table: "tableauRisottoPrimavera",   fn: htmlTableauRisottoPrimaveraColonnes,label: "personne" },
+    "shakshuka":         { table: "tableauShakshuka",          fn: htmlTableauShakshukaColonnes,       label: "personne" },
+  };
+  if (hellofreshTables[recette] && data[hellofreshTables[recette].table]) {
+    const cfg = hellofreshTables[recette];
+    const ligne = data[cfg.table].find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
+    return;
+  }
+
+  // Bœuf bourguignon
+  if (recette === "boeufbourguignon" && data.tableauBoeuf) {
+    const ligne = data.tableauBoeuf.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauBoeufColonnes(ligne) + htmlPrixCalories("boeufbourguignon", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
+    return;
+  }
+  // Gratin dauphinois
+  if (recette === "gratindauphinois" && data.tableauGratin) {
+    const ligne = data.tableauGratin.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauGratinColonnes(ligne) + htmlPrixCalories("gratindauphinois", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
+    return;
+  }
+  // Crème brûlée
+  if (recette === "cremebrulee" && data.tableauCremebrulee) {
+    const ligne = data.tableauCremebrulee.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} ramequin${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCremeBruleeColonnes(ligne) + htmlPrixCalories("cremebrulee", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10.</p>`;
+    return;
+  }
+  // Mousse au chocolat
+  if (recette === "mousseauchocolat" && data.tableauMousse) {
+    const ligne = data.tableauMousse.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauMousseColonnes(ligne) + htmlPrixCalories("mousseauchocolat", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
+    return;
+  }
+  // Île flottante
+  if (recette === "ileflottante" && data.tableauIleFlottante) {
+    const ligne = data.tableauIleFlottante.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauIleFlottanteColonnes(ligne) + htmlPrixCalories("ileflottante", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
+    return;
+  }
+  // Banana bread
+  if (recette === "bananabread" && data.tableauBananaBread) {
+    const ligne = data.tableauBananaBread.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} tranches</h3>` + htmlTableauBananaBreadColonnes(ligne) + htmlPrixCalories("bananabread", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10.</p>`;
+    return;
+  }
+  // Granola
+  if (recette === "granola" && data.tableauGranola) {
+    const ligne = data.tableauGranola.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} portions</h3>` + htmlTableauGranolaColonnes(ligne) + htmlPrixCalories("granola", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10.</p>`;
+    return;
+  }
+  // Houmous
+  if (recette === "houmous" && data.tableauHoumous) {
+    const ligne = data.tableauHoumous.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauHoumousColonnes(ligne) + htmlPrixCalories("houmous", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
+    return;
+  }
+
+  // Risotto
+  if (recette === "risotto" && data.tableauRisotto) {
+    const ligne = data.tableauRisotto.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauRisottoColonnes(ligne) + htmlPrixCalories("risotto", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
+    return;
+  }
+  // Fondant au chocolat
+  if (recette === "fondantchocolat" && data.tableauFondant) {
+    const ligne = data.tableauFondant.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} fondant${personnes > 1 ? "s" : ""}</h3>` + htmlTableauFondantColonnes(ligne) + htmlPrixCalories("fondantchocolat", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
+    return;
+  }
+  // Madeleine
+  if (recette === "madeleine" && data.tableauMadeleine) {
+    const ligne = data.tableauMadeleine.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} madeleine${personnes > 1 ? "s" : ""}</h3>` + htmlTableauMadeleineColonnes(ligne) + htmlPrixCalories("madeleine", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
+    return;
+  }
+  // Velouté légumes
+  if (recette === "veloutelegumes" && data.tableauVeloute) {
+    const ligne = data.tableauVeloute.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauVelouteLegumesColonnes(ligne) + htmlPrixCalories("veloutelegumes", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
+    return;
+  }
+
+  // Tarte au citron
+  if (recette === "tartecitron" && data.tableauTarteCitron) {
+    const ligne = data.tableauTarteCitron.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>${personnes} tartelette${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTarteCitronColonnes(ligne) + htmlPrixCalories("tartecitron", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
+    return;
+  }
+
+  // Salade quinoa
+  if (recette === "saladequinoa" && data.tableauQuinoa) {
+    const ligne = data.tableauQuinoa.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauQuinoaColonnes(ligne) + htmlPrixCalories("saladequinoa", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–8).</p>`;
+    return;
+  }
+
+  // Lasagne : tableau pâte maison
+  if (recette === "lasagne" && data.tableauLasagne) {
+    const ligne = data.tableauLasagne.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauLasagneColonnes(ligne) + htmlPrixCalories("lasagne", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
+    return;
+  }
+
+  // Brioche : afficher les 4 boutons de version
+  if (recette === "brioche" && data.tableauBrioche) {
+    const ligne = data.tableauBrioche.find(l => l.nb === personnes);
+    const boutons = data.tableauBrioche.map(l => `
+      <button class="btn-brioche${l.nb === personnes ? " btn-brioche-actif" : ""}"
+        onclick="document.getElementById('personnes').value=${l.nb};calculer()">
+        ${l.label}
+      </button>`).join("");
+    document.getElementById("resultat").innerHTML =
+      `<div class="brioche-choix">${boutons}</div>` +
+      (ligne ? `<h3>${ligne.label}</h3>` + htmlTableauBriocheColonnes(ligne) + htmlPrixCalories("brioche", personnes) : "");
+    return;
+  }
+
+  // Crêpes : afficher uniquement la ligne sélectionnée en colonnes
+  if (recette === "crepes" && data.tableauPersonnes) {
+    const ligne = data.tableauPersonnes.find(l => l.nb === personnes);
+    document.getElementById("resultat").innerHTML = ligne
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCrepesColonnes(ligne) + htmlPrixCalories("crepes", personnes)
+      : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
+    return;
+  }
+
+  // Recettes fixes (flan, clafoutis) : afficher les ingrédients tels quels
+  if (data.fixe && data.ingredientsFixes) {
+    let rows = data.ingredientsFixes.map(([k,v]) =>
+      `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
+    document.getElementById("resultat").innerHTML =
+      `<h3>Recette complète (~6 personnes)</h3>
+       <table class="tableau-patons tableau-colonnes"><tbody>${rows}</tbody></table>` +
+      htmlPrixCalories(recette, 6);
+    return;
+  }
+
+  // Recettes avec tableau dynamique (50 nouvelles recettes du monde + autres)
+  const tableauKey = Object.keys(data).find(k => k.startsWith("tableau") && Array.isArray(data[k]));
+  if (tableauKey) {
+    const tableau = data[tableauKey];
+    const ligne = tableau.find(l => l.nb === personnes) || tableau[Math.min(personnes-1, tableau.length-1)];
+    if (ligne) {
+      document.getElementById("resultat").innerHTML =
+        `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` +
+        htmlTableauGenerique(ligne) +
+        htmlPrixCalories(recette, personnes);
+      return;
+    }
+  }
+
+  // Autres recettes : calcul proportionnel classique
+  const ratio = personnes / data.base;
+  let html = `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>`;
+  for (const [nom, qte] of Object.entries(data.ingredients)) {
+    const qteCalculee = (qte * ratio).toFixed(1);
+    html += `<div class="ingredient"><span>${nom}</span><b>${qteCalculee}</b></div>`;
+  }
+  document.getElementById("resultat").innerHTML = html;
 }
 
 function calculerCarte(recette, inputId) {
   const input = document.getElementById(inputId);
   if (!input) return;
   const val = parseInt(input.value) || 1;
-  // Passer la valeur à ouvrirFiche via l'input personnes
-  const inputP = document.getElementById("personnes");
-  if (inputP) { inputP.value = val; inputP.dataset.modified = "1"; }
-  ouvrirFiche(recette, inputId);
+  document.getElementById("recette").value = recette;
+  document.getElementById("personnes").value = val;
+  calculer();
+  setTimeout(() => {
+    const res = document.getElementById("resultat").innerHTML;
+    document.getElementById("modal-resultat").innerHTML = res;
+    document.getElementById("modal-calc").classList.add("visible");
+  }, 50);
 }
 
 // Ouvrir la fiche recette depuis une carte en lisant son input

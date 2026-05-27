@@ -324,7 +324,10 @@ function htmlTableauGenerique(ligne) {
     .join("");
 }
 
-// Alias pour toutes les fonctions manquantes
+// Fallback intelligent : si une fonction html* est référencée mais n'existe pas,
+// on retombe sur htmlTableauGenerique. Mais on NE remplace PAS les vraies fonctions
+// qui sont déclarées plus bas dans le fichier (restaurées depuis le labo).
+// Le fallback est appliqué APRÈS le chargement complet du fichier via setTimeout 0.
 const _htmlFns = [
   "htmlTableauAvocatCrevettesColonnes","htmlTableauBananaBreadColonnes",
   "htmlTableauBoeufColonnes","htmlTableauBowlAcaiColonnes","htmlTableauBriocheColonnes",
@@ -346,7 +349,8 @@ const _htmlFns = [
   "htmlTableauTiramisuColonnes","htmlTableauVelouteLegumesColonnes","htmlTableauVerrineTiramisuColonnes",
   "htmlTableauWrapPouletColonnes","htmlTableauYaourtColonnes"
 ];
-_htmlFns.forEach(fn => { window[fn] = htmlTableauGenerique; });
+// Ne remplacer QUE les fonctions inexistantes par le générique (préserve les vraies versions)
+_htmlFns.forEach(fn => { if (typeof window[fn] !== "function") window[fn] = htmlTableauGenerique; });
 
 
 function getIngredientsCourses(nom, personnes) {
@@ -1109,3 +1113,1954 @@ function initTablesGlobales() {
   if (typeof window.cocktailsTablesGlobal === "undefined") window.cocktailsTablesGlobal = null;
 }
 initTablesGlobales();
+
+
+// === Fonctions html restaurées depuis le labo ===
+
+// Helper col() utilisé par toutes les fonctions html du labo
+function col(lignes) {
+  return `<table class="tableau-patons tableau-colonnes"><tbody>${lignes}</tbody></table>`;
+}
+
+function htmlTableauPizzaColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pâtons</th><td><b>${l.patons}</b></td></tr>
+    <tr><th>⚖️ Poids total pâte</th><td><b style="color:#ff8fb3">${l.total}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>💧 Eau (65% hydratation)</th><td>${l.eau}</td></tr>
+    <tr><th>🧂 Sel (~3%)</th><td>${l.sel}</td></tr>
+    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>`);
+}
+
+function htmlTableauCrepesColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
+    <tr><th>💧 Eau</th><td>${l.eau}</td></tr>
+    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
+}
+
+function htmlTableauGaufresColonnes(l) {
+  return col(`
+    <tr><th>🧇 Gaufres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
+    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`);
+}
+
+function htmlTableauCookiesColonnes(l) {
+  return col(`
+    <tr><th>🍪 Cookies</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🧈 Beurre tendre</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌿 Vanille</th><td>${l.vanille}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🍫 Chocolat noir</th><td>${l.choco}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
+    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>
+    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>`);
+}
+
+function htmlTableauSmoothieColonnes(l) {
+  return col(`
+    <tr><th>🍓 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍓 Fruits rouges surgelés</th><td>${l.fruits}</td></tr>
+    <tr><th>🍌 Banane congelée</th><td>${l.banane}</td></tr>
+    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
+    <tr><th>🥥 Lait végétal</th><td>${l.lait}</td></tr>
+    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;padding-top:12px">🎨 Toppings (selon goût)</th></tr>
+    <tr><th>🫐 Fruits frais</th><td>1 poignée / bol</td></tr>
+    <tr><th>🌾 Granola / flocons avoine</th><td>2 c.à.s / bol</td></tr>
+    <tr><th>🌱 Graines de chia</th><td>1 c.à.c / bol</td></tr>
+    <tr><th>🥥 Noix de coco râpée</th><td>1 c.à.s / bol</td></tr>`);
+}
+
+function htmlTableauYaourtColonnes(l) {
+  return col(`
+    <tr><th>🥛 Yaourts</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
+    <tr><th>🧫 Ferment (yaourt nature)</th><td>${l.ferment}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;padding-top:12px">🍯 Pour servir (optionnel)</th></tr>
+    <tr><th>🍯 Miel / confiture</th><td>selon goût</td></tr>
+    <tr><th>🍓 Fruits frais</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauPancakesColonnes(l) {
+  return col(`
+    <tr><th>🥞 Pancakes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
+    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>`);
+}
+
+function htmlTableauMuffinsColonnes(l) {
+  return col(`
+    <tr><th>🧁 Muffins</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🍫 Cacao</th><td>${l.cacao}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🧪 Levure</th><td>${l.levure}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
+    <tr><th>🫒 Huile</th><td>${l.huile}</td></tr>
+    <tr><th>🍫 Pépites chocolat</th><td>${l.pepites}</td></tr>`);
+}
+
+function htmlTableauCroquesColonnes(l) {
+  return col(`
+    <tr><th>🥪 Croques</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍞 Pain de mie</th><td>${l.pain}</td></tr>
+    <tr><th>🥩 Jambon blanc</th><td>${l.jambon}</td></tr>
+    <tr><th>🧀 Gruyère râpé</th><td>${l.gruyere}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🌾 Farine (béchamel)</th><td>${l.farine}</td></tr>
+    <tr><th>🥛 Lait (béchamel)</th><td>${l.lait}</td></tr>
+    <tr><th>🌿 Moutarde Dijon</th><td>${l.moutarde}</td></tr>`);
+}
+
+function htmlTableauSaladeNicoiseColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🐟 Thon (boîte)</th><td>${l.thon}</td></tr>
+    <tr><th>🥚 Œufs durs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🫒 Olives noires</th><td>${l.olives}</td></tr>
+    <tr><th>🐟 Anchois</th><td>${l.anchois} filets</td></tr>
+    <tr><th>🥬 Salade (batavia)</th><td>${l.salade}</td></tr>
+    <tr><th>🧅 Oignon rouge</th><td>${l.oignon}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauSaladeCesarColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥬 Laitue romaine</th><td>${l.laitue}</td></tr>
+    <tr><th>🍗 Poulet grillé</th><td>${l.poulet}</td></tr>
+    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>
+    <tr><th>🍞 Pain (croûtons)</th><td>${l.pain}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🥚 Jaunes d'œufs (sauce)</th><td>1 / 4 pers.</td></tr>`);
+}
+
+function htmlTableauSaladeGrequeColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
+    <tr><th>🧀 Feta</th><td>${l.feta}</td></tr>
+    <tr><th>🫒 Olives Kalamata</th><td>${l.olives}</td></tr>
+    <tr><th>🧅 Oignon rouge</th><td>${l.oignon}</td></tr>
+    <tr><th>🌿 Origan séché</th><td>selon goût</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauSaladePatasColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍝 Pâtes courtes</th><td>${l.pates}</td></tr>
+    <tr><th>🐟 Thon (boîte)</th><td>${l.thon}</td></tr>
+    <tr><th>🍅 Tomates cerises</th><td>${l.tomates}</td></tr>
+    <tr><th>🌽 Maïs</th><td>${l.mais}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauSaladeRizColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz</th><td>${l.riz}</td></tr>
+    <tr><th>🫑 Poivron rouge</th><td>${l.poivron}</td></tr>
+    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
+    <tr><th>🍅 Tomates cerises</th><td>${l.tomates}</td></tr>
+    <tr><th>🫒 Olives</th><td>${l.olives}</td></tr>
+    <tr><th>🌿 Basilic / persil</th><td>1 bouquet</td></tr>`);
+}
+
+function htmlTableauTabuleColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Semoule fine</th><td>${l.semoule}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
+    <tr><th>🌿 Persil plat</th><td>${l.persil}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauSaladeLentillesColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫘 Lentilles vertes</th><td>${l.lentilles}</td></tr>
+    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🥓 Lardons (optionnel)</th><td>${l.lardons}</td></tr>
+    <tr><th>🌿 Bouquet garni</th><td>1</td></tr>
+    <tr><th>🥣 Moutarde (vinaigrette)</th><td>1 c.à.s / 4 pers.</td></tr>`);
+}
+
+function htmlTableauAvocatCrevettesColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥑 Avocats</th><td>${l.avocats}</td></tr>
+    <tr><th>🦐 Crevettes roses cuites</th><td>${l.crevettes}</td></tr>
+    <tr><th>🥬 Salade verte</th><td>${l.salade}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🍶 Mayonnaise (sauce cocktail)</th><td>3 c.à.s / 4 pers.</td></tr>`);
+}
+
+function htmlTableauGoumeauColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🫓 Pâte</th></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🟨 Levure de bière</th><td>${l.levure}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥚 Œuf entier</th><td>${l.oeuf}</td></tr>
+    <tr><th>🍦 Crème épaisse</th><td>${l.creme}</td></tr>
+    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
+    <tr><th>🌸 Eau de fleur d'oranger</th><td>selon quantité</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🍮 Goumeau (nappage)</th></tr>
+    <tr><th>🍦 Crème fraîche épaisse</th><td>${l.gCreme}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.gSucre}</td></tr>
+    <tr><th>🥚 Jaune d'œuf</th><td>${l.gJaune}</td></tr>`);
+}
+
+function htmlTableauGaletteTacosColonnes(l) {
+  return col(`
+    <tr><th>🌮 Galettes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine T55</th><td>${l.farine}</td></tr>
+    <tr><th>💧 Eau tiède</th><td>${l.eau}</td></tr>
+    <tr><th>🫒 Huile neutre</th><td>${l.huile}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
+}
+
+function htmlTableauPainBurgerColonnes(l) {
+  return col(`
+    <tr><th>🍔 Buns</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine T55</th><td>${l.farine}</td></tr>
+    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
+    <tr><th>🧈 Beurre mou</th><td>${l.beurre}</td></tr>
+    <tr><th>🫒 Huile neutre</th><td>${l.huile}</td></tr>
+    <tr><th>🥚 Œuf</th><td>${l.oeufs}</td></tr>
+    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">✨ Finition</th></tr>
+    <tr><th>🥛 Lait (dorure)</th><td>pour badigeonner</td></tr>
+    <tr><th>⚪ Graines de sésame</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauPainDeMieColonnes(l) {
+  return col(`
+    <tr><th>🍞 Tranches</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
+    <tr><th>🧈 Beurre mou</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
+}
+
+function htmlTableauOvernightOatsColonnes(l) {
+  return col(`
+    <tr><th>🌾 Pots</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Flocons d'avoine</th><td>${l.flocons}</td></tr>
+    <tr><th>🥛 Lait végétal</th><td>${l.lait}</td></tr>
+    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
+    <tr><th>🌱 Graines de chia</th><td>${l.chia}</td></tr>
+    <tr><th>🍯 Miel / sirop d'érable</th><td>${l.miel}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🎨 Toppings (selon goût)</th></tr>
+    <tr><th>🍓 Fruits frais</th><td>1 poignée / pot</td></tr>
+    <tr><th>🌰 Noix / amandes</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauBuddhaBowlColonnes(l) {
+  return col(`
+    <tr><th>🥙 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Quinoa</th><td>${l.quinoa}</td></tr>
+    <tr><th>🍠 Patate douce</th><td>${l.patatedouce}</td></tr>
+    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
+    <tr><th>🥬 Épinards frais</th><td>${l.epinards}</td></tr>
+    <tr><th>🥑 Avocat</th><td>${l.avocat}</td></tr>
+    <tr><th>🫒 Tahini (sauce)</th><td>${l.tahini}</td></tr>
+    <tr><th>🍋 Citron + ail</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauSoupeMisoColonnes(l) {
+  return col(`
+    <tr><th>🍜 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>💧 Eau (+ dashi)</th><td>${l.eau}</td></tr>
+    <tr><th>🌿 Pâte miso</th><td>${l.miso}</td></tr>
+    <tr><th>🧀 Tofu soyeux</th><td>${l.tofu}</td></tr>
+    <tr><th>🌊 Wakamé séché</th><td>${l.wakame}</td></tr>
+    <tr><th>🌿 Ciboule</th><td>${l.ciboule} tige(s)</td></tr>`);
+}
+
+function htmlTableauWrapPouletColonnes(l) {
+  return col(`
+    <tr><th>🌯 Wraps</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🫓 Tortillas</th><td>${l.tortilla}</td></tr>
+    <tr><th>🥬 Laitue</th><td>${l.laitue}</td></tr>
+    <tr><th>🍅 Tomate</th><td>${l.tomate}</td></tr>
+    <tr><th>🥛 Yaourt grec (sauce)</th><td>${l.yaourt}</td></tr>
+    <tr><th>🍋 Citron + herbes</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauEnergyBallsColonnes(l) {
+  return col(`
+    <tr><th>⚡ Balls</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌴 Dattes Medjool</th><td>${l.dattes}</td></tr>
+    <tr><th>🌰 Amandes</th><td>${l.amandes}</td></tr>
+    <tr><th>🌾 Flocons d'avoine</th><td>${l.flocons}</td></tr>
+    <tr><th>🍫 Cacao en poudre</th><td>${l.cacao}</td></tr>
+    <tr><th>🥥 Noix de coco râpée</th><td>${l.coco}</td></tr>`);
+}
+
+function htmlTableauPancakesProteineColonnes(l) {
+  return col(`
+    <tr><th>💪 Pancakes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍌 Banane mûre</th><td>${l.banane}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>💪 Poudre de protéines (opt.)</th><td>${l.proteine}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`);
+}
+
+function htmlTableauBowlAcaiColonnes(l) {
+  return col(`
+    <tr><th>🫐 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫐 Purée açaï surgelée</th><td>${l.acai}</td></tr>
+    <tr><th>🍌 Banane congelée</th><td>${l.banane}</td></tr>
+    <tr><th>🥥 Lait végétal</th><td>${l.lait}</td></tr>
+    <tr><th>🌾 Granola</th><td>${l.granola}</td></tr>
+    <tr><th>🍓 Fruits frais</th><td>${l.fruits}</td></tr>`);
+}
+
+function htmlTableauSaladePoisChichesColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
+    <tr><th>🧅 Oignon rouge</th><td>${l.oignon}</td></tr>
+    <tr><th>🌿 Persil</th><td>${l.persil}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauGaspachoColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
+    <tr><th>🫑 Poivron rouge</th><td>${l.poivron}</td></tr>
+    <tr><th>🍞 Pain rassis</th><td>${l.pain}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauTiramisuColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍪 Biscuits à la cuillère</th><td>${l.biscuits}</td></tr>
+    <tr><th>🧀 Mascarpone</th><td>${l.mascarpone}</td></tr>
+    <tr><th>🥚 Œufs (extra-frais)</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
+    <tr><th>☕ Café expresso</th><td>${l.cafe}</td></tr>
+    <tr><th>🍫 Cacao amer</th><td>selon goût</td></tr>
+    <tr><th>🥃 Marsala (facultatif)</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauFlanColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥧 Pâte feuilletée</th><td>1</td></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
+    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunes}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
+    <tr><th>🍦 Crème liquide</th><td>${l.creme}</td></tr>
+    <tr><th>🌿 Gousse de vanille</th><td>1</td></tr>`);
+}
+
+function htmlTableauClafoutisColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍒 Cerises</th><td>${l.cerises}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌿 Sucre vanillé</th><td>1 sachet</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🧈 Beurre</th><td>pour le moule</td></tr>`);
+}
+
+function htmlTableauTartePommesColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥧 Pâte brisée</th><td>1</td></tr>
+    <tr><th>🍎 Pommes</th><td>${l.pommes}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau</th><td>${l.eau}</td></tr>
+    <tr><th>🍋 Citron (jus)</th><td>½</td></tr>
+    <tr><th>🍑 Confiture abricot</th><td>${l.confiture}</td></tr>`);
+}
+
+function htmlTableauMojitoRoseColonnes(l) {
+  return col(`
+    <tr><th>🌹 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
+    <tr><th>🍓 Fraises fraîches</th><td>${l.fraises}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🍬 Sucre de canne</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauNegroniColonnes(l) {
+  return col(`
+    <tr><th>🍊 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Gin</th><td>${l.gin}</td></tr>
+    <tr><th>🍊 Campari</th><td>${l.campari}</td></tr>
+    <tr><th>🍷 Vermouth rouge</th><td>${l.vermouth}</td></tr>
+    <tr><th>🍊 Zeste d'orange</th><td>${l.orange}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauMoscowMuleColonnes(l) {
+  return col(`
+    <tr><th>🫙 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr>
+    <tr><th>💧 Ginger beer</th><td>${l.gingerBeer}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauPornstarColonnes(l) {
+  return col(`
+    <tr><th>🍍 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Vodka vanille</th><td>${l.vodka}</td></tr>
+    <tr><th>🌺 Passoa</th><td>${l.passoa}</td></tr>
+    <tr><th>🌺 Jus de passion</th><td>${l.passion}</td></tr>
+    <tr><th>🍾 Prosecco (à part)</th><td>${l.prosecco}</td></tr>
+    <tr><th>🍦 Sirop vanille</th><td>${l.vanille}</td></tr>`);
+}
+
+function htmlTableauHugoSpritzColonnes(l) {
+  return col(`
+    <tr><th>🌸 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍾 Prosecco</th><td>${l.prosecco}</td></tr>
+    <tr><th>🌸 Sirop de sureau</th><td>${l.sureau}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauCherryBlossomColonnes(l) {
+  return col(`
+    <tr><th>🌸 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍒 Jus de cerise</th><td>${l.cerise}</td></tr>
+    <tr><th>🌹 Eau de rose</th><td>${l.eauRose}</td></tr>
+    <tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr>
+    <tr><th>🍬 Sirop de sucre</th><td>${l.sirop}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
+}
+
+function htmlTableauOldFashionedColonnes(l) {
+  return col(`
+    <tr><th>🥃 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥃 Bourbon / Rye whisky</th><td>${l.bourbon}</td></tr>
+    <tr><th>🍬 Sucre (morceau)</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Angostura bitters</th><td>${l.bitters}</td></tr>
+    <tr><th>🍊 Zeste d'orange</th><td>${l.orange}</td></tr>
+    <tr><th>🧊 Gros glaçon</th><td>1 par verre</td></tr>`);
+}
+
+function htmlTableauGinTonicColonnes(l) {
+  return col(`
+    <tr><th>🫧 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Gin</th><td>${l.gin}</td></tr>
+    <tr><th>💧 Tonic premium</th><td>${l.tonic}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🌶️ Poivre rose</th><td>${l.poivre}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauShrubColonnes(l) {
+  return col(`
+    <tr><th>🫐 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍓 Framboises</th><td>${l.framboises}</td></tr>
+    <tr><th>🌿 Basilic frais</th><td>${l.basilic}</td></tr>
+    <tr><th>🍶 Vinaigre de cidre</th><td>${l.vinaigre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
+}
+
+function htmlTableauCocoAnanasColonnes(l) {
+  return col(`
+    <tr><th>🥥 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
+    <tr><th>🍍 Jus d'ananas</th><td>${l.ananas}</td></tr>
+    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>
+    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
+}
+
+function htmlTableauMojitoColonnes(l) {
+  return col(`
+    <tr><th>🍹 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍬 Sucre de canne</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauMargaritaColonnes(l) {
+  return col(`
+    <tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥃 Tequila</th><td>${l.tequila}</td></tr>
+    <tr><th>🍊 Triple sec</th><td>${l.tripleSec}</td></tr>
+    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🧂 Sel (rebord)</th><td>${l.sel}</td></tr>
+    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauCosmopolitanColonnes(l) {
+  return col(`
+    <tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Vodka citronnée</th><td>${l.vodka}</td></tr>
+    <tr><th>🍊 Cointreau</th><td>${l.cointreau}</td></tr>
+    <tr><th>🍒 Jus de cranberry</th><td>${l.cranberry}</td></tr>
+    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauSpritzColonnes(l) {
+  return col(`
+    <tr><th>🥂 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍊 Aperol</th><td>${l.aperol}</td></tr>
+    <tr><th>🍾 Prosecco</th><td>${l.prosecco}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🍊 Orange (déco)</th><td>${l.orange}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauSangriaColonnes(l) {
+  return col(`
+    <tr><th>🍷 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍷 Vin rouge</th><td>${l.vin}</td></tr>
+    <tr><th>🥃 Brandy / Cognac</th><td>${l.brandy}</td></tr>
+    <tr><th>🍊 Jus d'orange</th><td>${l.orangeJus}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🍊 Orange</th><td>${l.orange}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🍑 Pêche</th><td>${l.peche}</td></tr>`);
+}
+
+function htmlTableauPinaColadaColonnes(l) {
+  return col(`
+    <tr><th>🥥 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
+    <tr><th>🥥 Crème de coco</th><td>${l.cremeCoco}</td></tr>
+    <tr><th>🍍 Jus d'ananas</th><td>${l.ananas}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>${l.glace}</td></tr>`);
+}
+
+function htmlTableauDaiquiriColonnes(l) {
+  return col(`
+    <tr><th>🍸 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr>
+    <tr><th>🍋 Jus de citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🍬 Sirop de sucre de canne</th><td>${l.sucre}</td></tr>
+    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauWhiskySourColonnes(l) {
+  return col(`
+    <tr><th>🥃 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥃 Bourbon</th><td>${l.bourbon}</td></tr>
+    <tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr>
+    <tr><th>🍬 Sirop de sucre</th><td>${l.sirop}</td></tr>
+    <tr><th>🥚 Blanc d'œuf</th><td>${l.blanc}</td></tr>
+    <tr><th>🧊 Glace</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauVirginMojitoColonnes(l) {
+  return col(`
+    <tr><th>🥤 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍬 Sucre de canne</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🌿 Sirop de menthe</th><td>${l.sirop}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauLimonadeColonnes(l) {
+  return col(`
+    <tr><th>🍋 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>
+    <tr><th>🌿 Menthe</th><td>${l.menthe}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauSmoothieMangoColonnes(l) {
+  return col(`
+    <tr><th>🥭 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥭 Mangue</th><td>${l.mangue}</td></tr>
+    <tr><th>🌺 Fruits de la passion</th><td>${l.passion}</td></tr>
+    <tr><th>🍌 Banane</th><td>${l.banane}</td></tr>
+    <tr><th>🥥 Lait de coco / végétal</th><td>${l.lait}</td></tr>
+    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
+}
+
+function htmlTableauCitronadeColonnes(l) {
+  return col(`
+    <tr><th>🌿 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>💧 Eau fraîche</th><td>${l.eau}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauJusPastequeColonnes(l) {
+  return col(`
+    <tr><th>🍉 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍉 Pastèque</th><td>${l.pasteque}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>
+    <tr><th>🧊 Glaçons</th><td>selon besoin</td></tr>`);
+}
+
+function htmlTableauVirginPinaColonnes(l) {
+  return col(`
+    <tr><th>🥥 Verres</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥥 Crème de coco</th><td>${l.cremeCoco}</td></tr>
+    <tr><th>🍍 Jus d'ananas</th><td>${l.ananas}</td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.laitCoco}</td></tr>
+    <tr><th>🧊 Glace pilée</th><td>${l.glace}</td></tr>`);
+}
+
+function htmlTableauParisBrestColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🥧 Pâte à choux</th></tr>
+    <tr><th>💧 Eau</th><td>${l.eauChoux}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.laitChoux}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurrChoux}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufChoux}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌰 Crème mousseline pralinée</th></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.laitCreme}</td></tr>
+    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunesCreme}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
+    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
+    <tr><th>🧈 Beurre mou</th><td>${l.beurrCreme}</td></tr>
+    <tr><th>🌰 Pâte de pralin</th><td>${l.pralin}</td></tr>`);
+}
+
+function htmlTableauLasagneViandeColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr><tr><th>🍝 Feuilles de lasagne</th><td>${l.lasagne}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+
+function htmlTableauSouvlakiPouletColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr><tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr><tr><th>🌿 Origan</th><td>${l.origan}</td></tr>`);
+}
+
+function htmlTableauButterChickenColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr><tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>`);
+}
+
+function htmlTableauRisottoPrimaveraColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍚 Riz arborio</th><td>${l.riz}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🫛 Petits pois</th><td>${l.petitspois}</td></tr><tr><th>🌿 Asperges</th><td>${l.asperges}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🍷 Vin blanc</th><td>${l.vin}</td></tr>`);
+}
+
+function htmlTableauBolognaiseColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée mixte</th><td>${l.viande}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🍷 Vin rouge</th><td>${l.vin}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>`);
+}
+
+function htmlTableauTacosViandeColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr><tr><th>🌮 Tortillas</th><td>${l.tortillas}</td></tr><tr><th>🥑 Avocats</th><td>${l.avocat}</td></tr><tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr><tr><th>🧀 Fromage râpé</th><td>${l.fromage}</td></tr><tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauCouscousRoyalColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Semoule</th><td>${l.semoule}</td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌭 Merguez</th><td>${l.merguez}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🥕 Carotte</th><td>${l.carotte}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
+}
+
+function htmlTableauMoussakaColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐑 Agneau haché</th><td>${l.agneau}</td></tr><tr><th>🍆 Aubergines</th><td>${l.aubergines}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+
+function htmlTableauPaellaColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍚 Riz à paella</th><td>${l.riz}</td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌭 Chorizo</th><td>${l.chorizo}</td></tr><tr><th>🦪 Moules</th><td>${l.moules}</td></tr><tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr><tr><th>🌼 Safran</th><td>${l.safran}</td></tr>`);
+}
+
+function htmlTableauQuicheLorraineColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥐 Pâte brisée</th><td>${l.pate}</td></tr><tr><th>🥓 Lardons fumés</th><td>${l.lardons}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🧀 Gruyère</th><td>${l.gruyere}</td></tr>`);
+}
+
+function htmlTableauDalIndienColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🫘 Lentilles corail</th><td>${l.lentilles}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr><tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
+}
+
+function htmlTableauBibimbapColonnes(l) {
+  return col(`
+    <tr><th>🍚 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz</th><td>${l.riz}</td></tr>
+    <tr><th>🥩 Bœuf mariné</th><td>${l.boeuf}</td></tr>
+    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
+    <tr><th>🥕 Carotte</th><td>${l.carotte}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
+    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>
+    <tr><th>🌶️ Gochujang</th><td>${l.gochujang}</td></tr>`);
+}
+
+function htmlTableauMoquecaColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Poisson</th><td>${l.poisson}</td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🌿 Coriandre</th><td>${l.coriandre}</td></tr>`);
+}
+
+function htmlTableauRendangColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Bœuf</th><td>${l.boeuf}</td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
+    <tr><th>🌿 Citronnelle</th><td>${l.citronnelle}</td></tr>
+    <tr><th>🫚 Galanga</th><td>${l.galanga}</td></tr>
+    <tr><th>🌶️ Piments</th><td>${l.piment}</td></tr>`);
+}
+
+function htmlTableauTacoPastorColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐷 Porc (épaule)</th><td>${l.porc}</td></tr>
+    <tr><th>🍍 Ananas</th><td>${l.ananas}</td></tr>
+    <tr><th>🌮 Tortillas</th><td>${l.tortillas}</td></tr>
+    <tr><th>🧅 Oignon blanc</th><td>${l.oignon}</td></tr>
+    <tr><th>🌿 Coriandre</th><td>${l.coriandre}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauCoteletsColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐑 Côtelettes d'agneau</th><td>${l.cotelets}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>
+    <tr><th>🌿 Romarin</th><td>${l.romarin}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauSushiColonnes(l) {
+  return col(`
+    <tr><th>🍣 Pièces</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz à sushi</th><td>${l.riz}</td></tr>
+    <tr><th>🐟 Saumon sashimi</th><td>${l.saumon}</td></tr>
+    <tr><th>🐟 Thon sashimi</th><td>${l.thon}</td></tr>
+    <tr><th>🌿 Feuilles de nori</th><td>${l.nori}</td></tr>
+    <tr><th>🍶 Vinaigre de riz</th><td>${l.vinaigre}</td></tr>`);
+}
+
+function htmlTableauCariGriotColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐷 Porc (épaule)</th><td>${l.porc}</td></tr>
+    <tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr>
+    <tr><th>🌿 Thym frais</th><td>${l.thym}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌶️ Piment</th><td>${l.piment}</td></tr>`);
+}
+
+function htmlTableauSemouleColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Semoule fine</th><td>${l.semoule}</td></tr>
+    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
+    <tr><th>🍅 Tomates cerises</th><td>${l.tomateCerise}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr>`);
+}
+
+function htmlTableauBasquaiseColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐓 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🫑 Poivrons</th><td>${l.poivron}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🥓 Jambon de Bayonne</th><td>${l.jambon}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+
+function htmlTableauCrevPilPilColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌶️ Piment séché</th><td>${l.piment}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>
+    <tr><th>🌿 Persil</th><td>${l.persil}</td></tr>`);
+}
+
+function htmlTableauLasagneVerdureColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Feuilles de lasagne</th><td>${l.lasagne}</td></tr>
+    <tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr>
+    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
+}
+
+function htmlTableauCrumbleColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍎 Fruits</th><td>${l.fruits}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🧈 Beurre froid</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌰 Amandes effilées</th><td>${l.amandes}</td></tr>`);
+}
+
+function htmlTableauPintxosColonnes(l) {
+  return col(`
+    <tr><th>🥖 Pintxos</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍞 Tranches de pain</th><td>${l.pain}</td></tr>
+    <tr><th>🐟 Anchois</th><td>${l.anchoix}</td></tr>
+    <tr><th>🥓 Jambon de Bayonne</th><td>${l.jambon}</td></tr>
+    <tr><th>🧀 Fromage</th><td>${l.fromage}</td></tr>
+    <tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr>`);
+}
+
+function htmlTableauMisoRamenColonnes(l) {
+  return col(`
+    <tr><th>🍜 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍜 Nouilles ramen</th><td>${l.nouilles}</td></tr>
+    <tr><th>💧 Dashi</th><td>${l.dashi}</td></tr>
+    <tr><th>🌿 Miso blanc</th><td>${l.miso}</td></tr>
+    <tr><th>🧀 Tofu</th><td>${l.tofu}</td></tr>
+    <tr><th>🌽 Maïs</th><td>${l.maïs}</td></tr>
+    <tr><th>🌿 Nori</th><td>${l.nori}</td></tr>`);
+}
+
+function htmlTableauVeloutePPColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
+    <tr><th>🥬 Poireaux</th><td>${l.poireaux}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+
+function htmlTableauTerrineColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Porc haché</th><td>${l.porc}</td></tr>
+    <tr><th>🫀 Foies de volaille</th><td>${l.foie}</td></tr>
+    <tr><th>🥓 Lardons</th><td>${l.lardons}</td></tr>
+    <tr><th>🥃 Cognac</th><td>${l.cognac}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeuf}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
+}
+
+function htmlTableauPoulpeColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐙 Poulpe frais</th><td>${l.poulpe}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌿 Persil</th><td>${l.persil}</td></tr>`);
+}
+
+function htmlTableauPouletRotiColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐓 Poulet entier</th><td>${l.poulet}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌿 Thym</th><td>${l.thym}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauMillefeuilleColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥐 Pâte feuilletée</th><td>${l.feuilletee}</td></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
+    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunes}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+
+function htmlTableauSaumonCrouteColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Pavés de saumon</th><td>${l.saumon}</td></tr>
+    <tr><th>🍞 Chapelure</th><td>${l.chapelure}</td></tr>
+    <tr><th>🌿 Persil / herbes</th><td>${l.persil}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+
+function htmlTableauTequilaSunriseColonnes(l) {
+  return col(`<tr><th>🌅 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥃 Tequila</th><td>${l.tequila}</td></tr><tr><th>🍊 Jus d'orange</th><td>${l.orange}</td></tr><tr><th>🍒 Grenadine</th><td>${l.grenadine}</td></tr>`);
+}
+
+function htmlTableauAperolRosaColonnes(l) {
+  return col(`<tr><th>🌸 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍊 Aperol</th><td>${l.aperol}</td></tr><tr><th>🍷 Rosé pétillant</th><td>${l.rose}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr><tr><th>🍓 Fraise</th><td>${l.fraise}</td></tr>`);
+}
+
+function htmlTableauEspressoMartiniColonnes(l) {
+  return col(`<tr><th>☕ Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr><tr><th>☕ Kahlúa / Tia Maria</th><td>${l.kahluaC}</td></tr><tr><th>☕ Espresso serré</th><td>${l.espresso}</td></tr><tr><th>🍬 Sirop de sucre</th><td>${l.sucre}</td></tr>`);
+}
+
+function htmlTableauPunchRougeColonnes(l) {
+  return col(`<tr><th>🍓 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Rhum blanc</th><td>${l.rhum}</td></tr><tr><th>🍓 Fraises</th><td>${l.fraises}</td></tr><tr><th>🫐 Framboises</th><td>${l.framboises}</td></tr><tr><th>🍹 Jus fruits rouges</th><td>${l.jusMixte}</td></tr><tr><th>💧 Ginger beer</th><td>${l.gingerBeer}</td></tr>`);
+}
+
+function htmlTableauBlueLagoonColonnes(l) {
+  return col(`<tr><th>🫐 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka</th><td>${l.vodka}</td></tr><tr><th>🫐 Curaçao bleu</th><td>${l.curacao}</td></tr><tr><th>💧 Limonade</th><td>${l.limonade}</td></tr><tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauMimosaColonnes(l) {
+  return col(`<tr><th>🍾 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍾 Champagne / Prosecco</th><td>${l.champagne}</td></tr><tr><th>🍊 Jus d'orange frais</th><td>${l.orangeJus}</td></tr>`);
+}
+
+function htmlTableauSidecarColonnes(l) {
+  return col(`<tr><th>🥃 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥃 Cognac</th><td>${l.cognac}</td></tr><tr><th>🍊 Cointreau</th><td>${l.cointreau}</td></tr><tr><th>🍋 Jus de citron</th><td>${l.citron}</td></tr><tr><th>🍬 Sucre (rebord)</th><td>${l.sucre}</td></tr>`);
+}
+
+function htmlTableauBerryBlissColonnes(l) {
+  return col(`<tr><th>🫐 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🫐 Myrtilles</th><td>${l.myrtilles}</td></tr><tr><th>🍓 Framboises</th><td>${l.framboises}</td></tr><tr><th>🍒 Jus de cranberry</th><td>${l.cranberry}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr>`);
+}
+
+function htmlTableauLemonDropColonnes(l) {
+  return col(`<tr><th>🍋 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🍶 Vodka citronnée</th><td>${l.vodka}</td></tr><tr><th>🍋 Jus de citron frais</th><td>${l.citron}</td></tr><tr><th>🫚 Sirop de gingembre</th><td>${l.gingembre}</td></tr><tr><th>🍬 Sucre (rebord)</th><td>${l.sucre}</td></tr>`);
+}
+
+function htmlTableauCocoOrchideeColonnes(l) {
+  return col(`<tr><th>🌺 Verres</th><td><b>${l.nb}</b></td></tr><tr><th>🥥 Lait de coco</th><td>${l.laitCoco}</td></tr><tr><th>🌸 Eau de fleur d'oranger</th><td>${l.fleurOranger}</td></tr><tr><th>🍋 Citron vert</th><td>${l.citron}</td></tr><tr><th>💧 Eau gazeuse</th><td>${l.eauGaz}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
+}
+
+function htmlTableauPizzaProsciuttoColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍖 Prosciutto di Parma</th><td>${l.prosciutto}</td></tr><tr><th>🥬 Roquette</th><td>${l.roquette}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
+}
+
+function htmlTableauPizzaTruffeColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍄 Crème de truffe</th><td>${l.cremeTruffe}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr><tr><th>🍄 Huile de truffe</th><td>${l.huileTruffe}</td></tr>`);
+}
+
+function htmlTableauPizzaBiancaColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🌿 Asperges</th><td>${l.asperges}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
+}
+
+function htmlTableauCalzoneColonnes(l) {
+  return col(`<tr><th>🌙 Calzones</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🍖 Jambon</th><td>${l.jambon}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>`);
+}
+
+function htmlTableauPizzaPoivronsColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🫑 Poivrons</th><td>${l.poivron}</td></tr><tr><th>🐟 Anchois</th><td>${l.anchois}</td></tr><tr><th>🫒 Olives noires</th><td>${l.olives}</td></tr>`);
+}
+
+function htmlTableauPizzaPatateColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr><tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr><tr><th>🧀 Pecorino</th><td>${l.pecorino}</td></tr><tr><th>🌿 Romarin</th><td>${l.romarin}</td></tr>`);
+}
+
+function htmlTableauPizzaBresilieneColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🌴 Cœurs de palmier</th><td>${l.palmier}</td></tr><tr><th>🌽 Maïs</th><td>${l.mais}</td></tr><tr><th>🫒 Olives</th><td>${l.olives}</td></tr>`);
+}
+
+function htmlTableauBlanquetteColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Veau</th><td>${l.veau}</td></tr><tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+
+function htmlTableauNavarinColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐑 Agneau</th><td>${l.agneau}</td></tr><tr><th>🫛 Petits pois</th><td>${l.petitspois}</td></tr><tr><th>🪨 Navets</th><td>${l.navets}</td></tr><tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
+}
+
+function htmlTableauCamembertRotiColonnes(l) {
+  return col(`<tr><th>🧀 Camemberts</th><td><b>${l.nb}</b></td></tr><tr><th>🧀 Camembert de Normandie</th><td>${l.camembert}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr><tr><th>🌿 Romarin</th><td>${l.romarin}</td></tr><tr><th>🌰 Noix</th><td>${l.noix}</td></tr><tr><th>🥖 Pain</th><td>${l.pain}</td></tr>`);
+}
+
+function htmlTableauTarteFlambeeColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🍦 Fromage blanc + crème</th><td>${l.creme}</td></tr><tr><th>🥓 Lardons</th><td>${l.lardons}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+
+function htmlTableauPouletMisoColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌿 Miso blanc</th><td>${l.miso}</td></tr><tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr><tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>`);
+}
+
+function htmlTableauNoodlesWokColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍜 Nouilles de riz</th><td>${l.nouilles}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr><tr><th>🌾 Graines de sésame</th><td>${l.sesame}</td></tr><tr><th>🥬 Bok choy</th><td>${l.bok_choy}</td></tr>`);
+}
+
+function htmlTableauMaffeSenegalColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🥜 Pâte d'arachide</th><td>${l.arachide}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🍠 Patate douce</th><td>${l.patate}</td></tr>`);
+}
+
+function htmlTableauGazpachoMelonColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍈 Melon</th><td>${l.melon}</td></tr><tr><th>🍖 Jambon de Parme</th><td>${l.jambon}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🌿 Menthe fraîche</th><td>${l.menthe}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
+}
+
+function htmlTableauWafflesSalesColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🧀 Fromage râpé</th><td>${l.fromage}</td></tr><tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>`);
+}
+
+function htmlTableauChoucrouteColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥬 Choucroute crue</th><td>${l.chouC}</td></tr><tr><th>🌭 Saucisses</th><td>${l.saucisses}</td></tr><tr><th>🦴 Jarret de porc</th><td>${l.jarret}</td></tr><tr><th>🥓 Lard fumé</th><td>${l.lard}</td></tr><tr><th>🍷 Riesling</th><td>${l.vin}</td></tr><tr><th>🫐 Baies de genièvre</th><td>${l.baies}</td></tr>`);
+}
+
+function htmlTableauSconeColonnes(l) {
+  return col(`<tr><th>🫖 Scones</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🧈 Beurre froid</th><td>${l.beurre}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🟨 Levure chimique</th><td>${l.levure}</td></tr>`);
+}
+
+function htmlTableauCalamarsColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🦑 Calamars / Encornets</th><td>${l.calamars}</td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🧄 Ail</th><td>${l.ail}</td></tr><tr><th>🌿 Persil</th><td>${l.persil}</td></tr>`);
+}
+
+function htmlTableauBaklavaColonnes(l) {
+  return col(`<tr><th>🍯 Pièces</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Feuilles de filo</th><td>${l.filo}</td></tr><tr><th>🌰 Pistaches</th><td>${l.pistaches}</td></tr><tr><th>🧈 Beurre clarifié</th><td>${l.beurre}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr><tr><th>🌹 Eau de rose</th><td>${l.eauRose}</td></tr>`);
+}
+
+function htmlTableauEggsBenedictColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍞 Muffins anglais</th><td>${l.muffins}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍖 Jambon de pays</th><td>${l.jambon}</td></tr><tr><th>🧈 Beurre (hollandaise)</th><td>${l.beurre}</td></tr><tr><th>🥚 Jaunes (hollandaise)</th><td>${l.jaunes}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauPorkBellyColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐷 Poitrine de porc</th><td>${l.porc}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr><tr><th>🧄 Ail</th><td>${l.ail}</td></tr><tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
+}
+
+function htmlTableauVeloutePotironColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🎃 Courge butternut</th><td>${l.courge}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+
+function htmlTableauChocolatChaudColonnes(l) {
+  return col(`<tr><th>☕ Tasses</th><td><b>${l.nb}</b></td></tr><tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr><tr><th>🍫 Chocolat noir 70%</th><td>${l.chocolat}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
+}
+
+function htmlTableauGranolaMaisonColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Flocons d'avoine</th><td>${l.flocons}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr><tr><th>🌰 Noix mélangées</th><td>${l.noix}</td></tr><tr><th>🌱 Graines</th><td>${l.graines}</td></tr><tr><th>🫒 Huile de coco</th><td>${l.huile}</td></tr>`);
+}
+
+function htmlTableauPizzaChorizoColonnes(l) {
+  return col(`<tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr><tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr><tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr><tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr><tr><th>🌭 Chorizo</th><td>${l.chorizo}</td></tr><tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr>`);
+}
+
+function htmlTableauPouletTeriyakiColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr><tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🌾 Graines de sésame</th><td>${l.sesame}</td></tr>`);
+}
+
+function htmlTableauCurryVerthaiColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🍛 Pâte curry vert</th><td>${l.curryVert}</td></tr><tr><th>🍆 Aubergine</th><td>${l.aubergine}</td></tr><tr><th>🌿 Basilic thaï</th><td>${l.basilic}</td></tr>`);
+}
+
+function htmlTableauChiliCarneColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr><tr><th>🫘 Haricots rouges</th><td>${l.haricots}</td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr><tr><th>🌶️ Piment de Cayenne</th><td>${l.piment}</td></tr><tr><th>🌿 Cumin</th><td>${l.cumin}</td></tr>`);
+}
+
+function htmlTableauKFCColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🌾 Farine de riz</th><td>${l.farine}</td></tr><tr><th>🌾 Fécule de maïs</th><td>${l.fecule}</td></tr><tr><th>🌶️ Gochujang</th><td>${l.gochujang}</td></tr><tr><th>🍯 Miel</th><td>${l.miel}</td></tr>`);
+}
+
+function htmlTableauRisottoMilaneseColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍚 Riz arborio</th><td>${l.riz}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🌼 Safran</th><td>${l.safran}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr><tr><th>🍷 Vin blanc</th><td>${l.vin}</td></tr>`);
+}
+
+function htmlTableauSoupeAziatColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr><tr><th>🍜 Nouilles de riz</th><td>${l.nouilles}</td></tr><tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr><tr><th>🥬 Bok choy</th><td>${l.bok_choy}</td></tr><tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>`);
+}
+
+function htmlTableauTartareSaumonColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🐟 Saumon frais</th><td>${l.saumon}</td></tr><tr><th>🥑 Avocat</th><td>${l.avocat}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🌿 Ciboulette</th><td>${l.ciboulette}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
+}
+
+function htmlTableauCremeBruleeColonnes(l) {
+  return col(`<tr><th>🔥 Verrines</th><td><b>${l.nb}</b></td></tr><tr><th>🍦 Crème fraîche entière</th><td>${l.creme}</td></tr><tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunes}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🍦 Vanille</th><td>${l.vanille}</td></tr><tr><th>🍬 Sucre à caraméliser</th><td>${l.sucreD}</td></tr>`);
+}
+
+function htmlTableauTiramisuFraiseColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍪 Biscuits à la cuillère</th><td>${l.biscuits}</td></tr><tr><th>🧀 Mascarpone</th><td>${l.mascarpone}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr><tr><th>🍓 Fraises</th><td>${l.fraises}</td></tr>`);
+}
+
+function htmlTableauPouletCocoLColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr><tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr><tr><th>🍋 Citron confit</th><td>${l.citronC}</td></tr><tr><th>🧄 Ail</th><td>${l.ail}</td></tr><tr><th>🌿 Coriandre</th><td>${l.coriandre}</td></tr>`);
+}
+
+function htmlTableauCrepesSucreesColonnes(l) {
+  return col(`<tr><th>🍮 Crêpes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr><tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>`);
+}
+
+function htmlTableauPoireauVinaigretteColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🥬 Poireaux</th><td>${l.poireaux}</td></tr><tr><th>🥚 Œufs durs</th><td>${l.oeufs}</td></tr><tr><th>🟡 Moutarde</th><td>${l.moutarde}</td></tr><tr><th>🍶 Vinaigre</th><td>${l.vinaigre}</td></tr><tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
+}
+
+function htmlTableauSpaetzleColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🌾 Farine</th><td>${l.farine}</td></tr><tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr><tr><th>🥛 Lait</th><td>${l.lait}</td></tr><tr><th>🧂 Sel</th><td>${l.sel}</td></tr><tr><th>🧈 Beurre noisette</th><td>${l.beurre}</td></tr>`);
+}
+
+function htmlTableauWagyuBurgerColonnes(l) {
+  return col(`<tr><th>🍔 Burgers</th><td><b>${l.nb}</b></td></tr><tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr><tr><th>🍞 Buns briochés</th><td>${l.buns}</td></tr><tr><th>🧀 Cheddar</th><td>${l.cheddar}</td></tr><tr><th>🥬 Salade</th><td>${l.salade}</td></tr><tr><th>🍅 Tomate</th><td>${l.tomate}</td></tr>`);
+}
+
+function htmlTableauLemonPastaColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍝 Spaghetti</th><td>${l.spaghetti}</td></tr><tr><th>🍋 Citron</th><td>${l.citron}</td></tr><tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr><tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr><tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+
+function htmlTableauMinestroneColonnes(l) {
+  return col(`<tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr><tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr><tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr><tr><th>🥕 Carotte</th><td>${l.carotte}</td></tr><tr><th>🫘 Haricots blancs</th><td>${l.haricots}</td></tr><tr><th>🍝 Petites pâtes</th><td>${l.pates}</td></tr><tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
+}
+
+function htmlTableauPizzaReineColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
+    <tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>
+    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
+    <tr><th>🍖 Jambon</th><td>${l.jambon}</td></tr>
+    <tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr>`);
+}
+
+function htmlTableauPizzaFormaggiColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
+    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
+    <tr><th>🧀 Gorgonzola</th><td>${l.gorgonzola}</td></tr>
+    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>
+    <tr><th>🧀 Ricotta</th><td>${l.ricotta}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
+}
+
+function htmlTableauPizzaDiavolaColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
+    <tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>
+    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
+    <tr><th>🌭 Salami épicé</th><td>${l.salami}</td></tr>
+    <tr><th>🌶️ Nduja</th><td>${l.nduja}</td></tr>
+    <tr><th>🌶️ Piment frais</th><td>${l.piment}</td></tr>`);
+}
+
+function htmlTableauPizzaSaumonColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🐟 Saumon fumé</th><td>${l.saumon}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
+    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauPizzaVegeColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons</th><td>${l.pate}</td></tr>
+    <tr><th>🍅 Sauce tomate</th><td>${l.tomates}</td></tr>
+    <tr><th>🧀 Mozzarella</th><td>${l.mozza}</td></tr>
+    <tr><th>🫑 Poivron</th><td>${l.poivron}</td></tr>
+    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
+    <tr><th>🍆 Aubergine</th><td>${l.aubergine}</td></tr>
+    <tr><th>🌿 Pesto</th><td>${l.pesto}</td></tr>`);
+}
+
+function htmlTableauSouvlakiAgneauColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Agneau</th><td>${l.agneau}</td></tr>
+    <tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr>
+    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huileOlive}</td></tr>`);
+}
+
+function htmlTableauTomYamColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr>
+    <tr><th>🍋 Citrons verts</th><td>${l.citron}</td></tr>
+    <tr><th>🌿 Citronnelle</th><td>${l.citronnelle}</td></tr>
+    <tr><th>🫚 Galanga</th><td>${l.galanga}</td></tr>`);
+}
+
+function htmlTableauDoradeColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Dorade royale</th><td>${l.dorade}</td></tr>
+    <tr><th>🌿 Chermoula</th><td>${l.chermoula}</td></tr>
+    <tr><th>🍋 Citrons</th><td>${l.citron}</td></tr>
+    <tr><th>🫒 Olives</th><td>${l.olives}</td></tr>`);
+}
+
+function htmlTableauPierogiColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
+    <tr><th>🧀 Fromage frais</th><td>${l.fromage}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🍦 Crème sure</th><td>${l.creme}</td></tr>`);
+}
+
+function htmlTableauMomosColonnes(l) {
+  return col(`
+    <tr><th>🥟 Momos</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr>
+    <tr><th>🥬 Chou</th><td>${l.chou}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
+}
+
+function htmlTableauShakshukaVerteColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
+    <tr><th>🫑 Poivron vert</th><td>${l.poivron}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🧀 Feta (optionnel)</th><td>${l.fetaOpt}</td></tr>`);
+}
+
+function htmlTableauKebbehColonnes(l) {
+  return col(`
+    <tr><th>🥩 Kebbeh</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Agneau haché</th><td>${l.agneau}</td></tr>
+    <tr><th>🌾 Semoule fine</th><td>${l.semoule}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🌰 Pignons de pin</th><td>${l.pignons}</td></tr>
+    <tr><th>🪵 Cannelle</th><td>${l.cannelle}</td></tr>`);
+}
+
+function htmlTableauTteokbokkiColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍱 Tteok (gâteaux de riz)</th><td>${l.tteok}</td></tr>
+    <tr><th>🌶️ Gochujang</th><td>${l.gochujang}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
+}
+
+function htmlTableauPulledPorkColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐷 Épaule de porc</th><td>${l.porc}</td></tr>
+    <tr><th>🌶️ Rub BBQ</th><td>${l.rub}</td></tr>
+    <tr><th>🍖 Sauce BBQ</th><td>${l.bbqSauce}</td></tr>
+    <tr><th>💨 Paprika fumé</th><td>${l.fumee}</td></tr>`);
+}
+
+function htmlTableauDosaColonnes(l) {
+  return col(`
+    <tr><th>🥞 Dosas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz</th><td>${l.rizS}</td></tr>
+    <tr><th>🫘 Lentilles urad dal</th><td>${l.lentilles}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
+    <tr><th>🍲 Sambar</th><td>${l.sambar}</td></tr>
+    <tr><th>🌿 Chutney</th><td>${l.chutney}</td></tr>`);
+}
+
+function htmlTableauBraiseBoeufColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Joues de bœuf</th><td>${l.joues}</td></tr>
+    <tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>
+    <tr><th>🍶 Mirin</th><td>${l.mirin}</td></tr>
+    <tr><th>🍶 Saké</th><td>${l.saké}</td></tr>
+    <tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>
+    <tr><th>⭐ Anis étoilé</th><td>${l.anis}</td></tr>`);
+}
+
+function htmlTableauPaprikashColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🌶️ Paprika hongrois</th><td>${l.paprika}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>`);
+}
+
+function htmlTableauRamenColonnes(l) {
+  return col(`
+    <tr><th>🍜 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍜 Nouilles ramen</th><td>${l.nouilles}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🥩 Porc (chashu)</th><td>${l.porc}</td></tr>
+    <tr><th>🥚 Œufs mollets</th><td>${l.oeuf}</td></tr>
+    <tr><th>🍄 Shiitake</th><td>${l.shiitake}</td></tr>`);
+}
+
+function htmlTableauGyozaColonnes(l) {
+  return col(`
+    <tr><th>🥟 Gyoza</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Feuilles à gyoza</th><td>${l.pate}</td></tr>
+    <tr><th>🥩 Porc haché</th><td>${l.porc}</td></tr>
+    <tr><th>🥬 Chou chinois</th><td>${l.chou}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🫚 Gingembre</th><td>${l.gingembre}</td></tr>`);
+}
+
+function htmlTableauTikaMasalaColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🥛 Yaourt (marinade)</th><td>${l.yaourt}</td></tr>
+    <tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr>`);
+}
+
+function htmlTableauPhoColonnes(l) {
+  return col(`
+    <tr><th>🍲 Bols</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍜 Nouilles de riz</th><td>${l.nouilles}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🥩 Bœuf (tranché fin)</th><td>${l.boeuf}</td></tr>
+    <tr><th>⭐ Anis étoilé</th><td>${l.anis}</td></tr>
+    <tr><th>🪵 Cannelle</th><td>${l.cannelle}</td></tr>`);
+}
+
+function htmlTableauPizzaMargheritaColonnes(l) {
+  return col(`
+    <tr><th>🍕 Pizzas</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫓 Pâtons (recette pâte à pizza)</th><td>${l.pate}</td></tr>
+    <tr><th>🍅 Tomates San Marzano</th><td>${l.tomates}</td></tr>
+    <tr><th>🧀 Mozzarella di bufala</th><td>${l.mozza}</td></tr>
+    <tr><th>🌿 Basilic frais</th><td>${l.basilic}</td></tr>`);
+}
+
+function htmlTableauCarbonaraColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍝 Spaghetti</th><td>${l.spaghetti}</td></tr>
+    <tr><th>🥓 Guanciale</th><td>${l.guanciale}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🧀 Pecorino romano</th><td>${l.pecorino}</td></tr>
+    <tr><th>🌶️ Poivre noir</th><td>généreusement</td></tr>`);
+}
+
+function htmlTableauCeebujennColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Poisson</th><td>${l.poisson}</td></tr>
+    <tr><th>🍚 Riz</th><td>${l.riz}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🫚 Manioc</th><td>${l.manioc}</td></tr>
+    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>`);
+}
+
+function htmlTableauMafeColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Viande (agneau/bœuf)</th><td>${l.viande}</td></tr>
+    <tr><th>🥜 Pâte d'arachide</th><td>${l.arachide}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🍠 Patate douce</th><td>${l.patate}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+
+function htmlTableauGnocchisColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥚 Œuf</th><td>${l.oeuf}</td></tr>
+    <tr><th>🧀 Gorgonzola</th><td>${l.gorgonzola}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
+}
+
+function htmlTableauFalafelColonnes(l) {
+  return col(`
+    <tr><th>🧆 Falafels</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫘 Pois chiches crus</th><td>${l.poischiches}</td></tr>
+    <tr><th>🌿 Persil / coriandre</th><td>${l.persil}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌿 Cumin</th><td>${l.cumin}</td></tr>
+    <tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr>`);
+}
+
+function htmlTableauTandooriColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr>
+    <tr><th>🌶️ Paprika</th><td>${l.paprika}</td></tr>`);
+}
+
+function htmlTableauPekinDuckColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🦆 Canard</th><td>${l.canard}</td></tr>
+    <tr><th>🍶 Sauce hoisin</th><td>${l.hoisin}</td></tr>
+    <tr><th>🫓 Crêpes pékinoises</th><td>${l.crepesP}</td></tr>
+    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
+    <tr><th>🌿 Ciboule</th><td>${l.ciboule} tiges</td></tr>`);
+}
+
+function htmlTableauOssobucoColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🦴 Jarret de veau</th><td>${l.jarret}</td></tr>
+    <tr><th>🍷 Vin blanc</th><td>${l.vin}</td></tr>
+    <tr><th>🍲 Bouillon</th><td>${l.bouillon}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🌿 Gremolata (citron, ail, persil)</th><td>1 portion</td></tr>`);
+}
+
+function htmlTableauTajineColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Agneau</th><td>${l.agneau}</td></tr>
+    <tr><th>🫐 Pruneaux</th><td>${l.pruneaux}</td></tr>
+    <tr><th>🌰 Amandes effilées</th><td>${l.amandes}</td></tr>
+    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+
+function htmlTableauMoelleuxColonnes(l) {
+  return col(`
+    <tr><th>🍫 Moelleux</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>`);
+}
+
+function htmlTableauCheesecakeColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🧀 Philadelphia</th><td>${l.philadelphia}</td></tr>
+    <tr><th>🍪 Biscuits digestifs</th><td>${l.biscuits}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>`);
+}
+
+function htmlTableauPainAuChocolatColonnes(l) {
+  return col(`
+    <tr><th>🍫 Pains</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine T45</th><td>${l.farine}</td></tr>
+    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
+    <tr><th>🧈 Beurre (détrempe)</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
+    <tr><th>🧈 Beurre de tourage</th><td>${l.beurrage}</td></tr>
+    <tr><th>🍫 Chocolat (barres)</th><td>${l.chocolat}</td></tr>`);
+}
+
+function htmlTableauGateauBasqueColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍦 Crème (crème pâtissière)</th><td>${l.creme}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`);
+}
+
+function htmlTableauCaneleColonnes(l) {
+  return col(`
+    <tr><th>🏺 Cannelés</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🥃 Rhum</th><td>${l.rhum}</td></tr>`);
+}
+
+function htmlTableauGravlaxColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Saumon (filet)</th><td>${l.saumon}</td></tr>
+    <tr><th>🧂 Gros sel</th><td>${l.sel}</td></tr>
+    <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌿 Aneth frais</th><td>${l.aneth}</td></tr>
+    <tr><th>🥃 Vodka (optionnel)</th><td>${l.vodka}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌿 Sauce moutarde aneth</th></tr>
+    <tr><th>🌿 Moutarde douce</th><td>3 c.à.s / 4 pers.</td></tr>
+    <tr><th>🫒 Huile neutre</th><td>3 c.à.s / 4 pers.</td></tr>`);
+}
+
+function htmlTableauVerrineTiramisuColonnes(l) {
+  return col(`
+    <tr><th>🥂 Verrines</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍪 Biscuits roses de Reims</th><td>${l.biscuits}</td></tr>
+    <tr><th>🧀 Mascarpone</th><td>${l.mascarpone}</td></tr>
+    <tr><th>🥚 Œufs extra-frais</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
+    <tr><th>🍓 Coulis de fraises</th><td>${l.coulis}</td></tr>
+    <tr><th>🌸 Sirop de fraise</th><td>${l.sirop}</td></tr>
+    <tr><th>🍫 Cacao amer</th><td>pour la finition</td></tr>`);
+}
+
+function htmlTableauPotAuFeuColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Viande de bœuf</th><td>${l.viande}</td></tr>
+    <tr><th>🦴 Os à moelle</th><td>${l.os}</td></tr>
+    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>
+    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
+    <tr><th>🧅 Poireaux</th><td>${l.poireaux}</td></tr>
+    <tr><th>🫚 Navets</th><td>${l.navets}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🌿 Bouquet garni</th><td>1</td></tr>`);
+}
+
+function htmlTableauCouscousColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Semoule</th><td>${l.semoule}</td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🥩 Merguez</th><td>${l.merguez}</td></tr>
+    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
+    <tr><th>🥕 Carottes</th><td>${l.carotte}</td></tr>
+    <tr><th>🫘 Pois chiches</th><td>${l.pois}</td></tr>`);
+}
+
+function htmlTableauMoussakaColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍆 Aubergines</th><td>${l.aubergines}</td></tr>
+    <tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🥛 Béchamel</th><td>${l.bechamel}</td></tr>
+    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
+}
+
+function htmlTableauPaellaColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz paella</th><td>${l.riz}</td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr>
+    <tr><th>🦪 Moules</th><td>${l.moules}</td></tr>
+    <tr><th>🌭 Chorizo</th><td>${l.chorizo}</td></tr>
+    <tr><th>🌼 Safran</th><td>${l.safran}</td></tr>`);
+}
+
+function htmlTableauButterChickenColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr>`);
+}
+
+function htmlTableauSouvlakiColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Porc</th><td>${l.porc}</td></tr>
+    <tr><th>🫓 Pains pita</th><td>${l.pita}</td></tr>
+    <tr><th>🥒 Concombre (tzatziki)</th><td>${l.concombre}</td></tr>
+    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauQuicheColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥓 Lardons fumés</th><td>${l.lardons}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
+    <tr><th>🥧 Pâte brisée</th><td>1</td></tr>`);
+}
+
+function htmlTableauSoupeOignonColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🧅 Oignons</th><td>${l.oignons}</td></tr>
+    <tr><th>🍲 Bouillon de bœuf</th><td>${l.bouillon}</td></tr>
+    <tr><th>🍞 Pain</th><td>${l.pain}</td></tr>
+    <tr><th>🧀 Gruyère râpé</th><td>${l.gruyere}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>`);
+}
+
+function htmlTableauDalColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫘 Lentilles corail</th><td>${l.lentilles}</td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🌶️ Garam masala</th><td>${l.masala}</td></tr>`);
+}
+
+function htmlTableauRizCantonnaisColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz (cuit froid)</th><td>${l.riz}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🥓 Jambon</th><td>${l.jambon}</td></tr>
+    <tr><th>🫛 Petits pois</th><td>${l.petitspois}</td></tr>
+    <tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>`);
+}
+
+function htmlTableauHariraColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫘 Lentilles</th><td>${l.lentilles}</td></tr>
+    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
+    <tr><th>🍅 Tomates</th><td>${l.tomates}</td></tr>
+    <tr><th>🥩 Viande</th><td>${l.viande}</td></tr>
+    <tr><th>🌾 Vermicelles</th><td>${l.vermicelles}</td></tr>`);
+}
+
+function htmlTableauNaanColonnes(l) {
+  return col(`
+    <tr><th>🫓 Naans</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
+    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
+    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
+    <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>`);
+}
+
+function htmlTableauChurrosColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>💧 Eau</th><td>${l.eau}</td></tr>
+    <tr><th>🍬 Sucre cannelle</th><td>${l.sucre}</td></tr>
+    <tr><th>🫒 Huile de friture</th><td>${l.huile}</td></tr>
+    <tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr>`);
+}
+
+function htmlTableauPouletCitronColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet (filets)</th><td>${l.poulet}</td></tr>
+    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
+    <tr><th>🫛 Haricots verts</th><td>${l.haricots}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🌿 Thym frais</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauSalmonTeriyakiColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🐟 Pavés de saumon</th><td>${l.saumon}</td></tr>
+    <tr><th>🍚 Riz à sushi</th><td>${l.riz}</td></tr>
+    <tr><th>🫘 Edamame</th><td>${l.edamame}</td></tr>
+    <tr><th>🍶 Sauce soja</th><td>${l.sojaS}</td></tr>
+    <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
+    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>`);
+}
+
+function htmlTableauBolognaiseColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr>
+    <tr><th>🍝 Pâtes (tagliatelles)</th><td>${l.pates}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🍷 Vin rouge</th><td>${l.vin}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>`);
+}
+
+function htmlTableauTacosColonnes(l) {
+  return col(`
+    <tr><th>🌮 Tacos</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Bœuf haché</th><td>${l.boeuf}</td></tr>
+    <tr><th>🫓 Tortillas</th><td>${l.tortillas}</td></tr>
+    <tr><th>🥑 Avocat</th><td>${l.avocat}</td></tr>
+    <tr><th>🍅 Tomate</th><td>${l.tomate}</td></tr>
+    <tr><th>🧀 Fromage râpé</th><td>${l.fromage}</td></tr>`);
+}
+
+function htmlTableauPadThaiColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍜 Nouilles de riz</th><td>${l.nouilles}</td></tr>
+    <tr><th>🦐 Crevettes</th><td>${l.crevettes}</td></tr>
+    <tr><th>🧀 Tofu ferme</th><td>${l.tofu}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🌰 Cacahuètes</th><td>${l.cacahetes}</td></tr>`);
+}
+
+function htmlTableauCurryPouletColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍗 Poulet</th><td>${l.poulet}</td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
+    <tr><th>🍚 Riz jasmin</th><td>${l.riz}</td></tr>
+    <tr><th>🌶️ Pâte de curry</th><td>${l.pateC}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>`);
+}
+
+function htmlTableauBurgerColonnes(l) {
+  return col(`
+    <tr><th>🍔 Burgers</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Viande hachée</th><td>${l.viande}</td></tr>
+    <tr><th>🍞 Buns</th><td>${l.buns}</td></tr>
+    <tr><th>🧀 Cheddar</th><td>${l.cheddar}</td></tr>
+    <tr><th>🥬 Salade</th><td>${l.salade}</td></tr>
+    <tr><th>🍅 Tomate</th><td>${l.tomate}</td></tr>`);
+}
+
+function htmlTableauRisottoPrimaveraColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz arborio</th><td>${l.riz}</td></tr>
+    <tr><th>🍲 Bouillon légumes</th><td>${l.bouillon}</td></tr>
+    <tr><th>🥒 Courgette</th><td>${l.courgette}</td></tr>
+    <tr><th>🫛 Petits pois</th><td>${l.petitspois}</td></tr>
+    <tr><th>🧀 Parmesan</th><td>${l.parmesan}</td></tr>`);
+}
+
+function htmlTableauShakshukaColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🫑 Poivron rouge</th><td>${l.poivron}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🌿 Cumin</th><td>${l.cumin}</td></tr>`);
+}
+
+function htmlTableauBoeufColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥩 Bœuf</th><td>${l.boeuf}</td></tr>
+    <tr><th>🍷 Vin rouge</th><td>${l.vin}</td></tr>
+    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>
+    <tr><th>🧅 Oignons</th><td>${l.oignons}</td></tr>
+    <tr><th>🥓 Lardons</th><td>${l.lardons}</td></tr>
+    <tr><th>🍄 Champignons</th><td>${l.champignons}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🧄 Ail</th><td>2 gousses</td></tr>
+    <tr><th>🌿 Bouquet garni</th><td>1</td></tr>`);
+}
+
+function htmlTableauGratinColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥔 Pommes de terre</th><td>${l.pdterre}</td></tr>
+    <tr><th>🍦 Crème liquide</th><td>${l.creme}</td></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🫙 Noix de muscade</th><td>1 pincée</td></tr>`);
+}
+
+function htmlTableauCremeBruleeColonnes(l) {
+  return col(`
+    <tr><th>🍮 Ramequins</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍦 Crème liquide entière</th><td>${l.creme}</td></tr>
+    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunes}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌿 Gousse de vanille</th><td>${l.vanille}</td></tr>
+    <tr><th>🍬 Cassonade (caramel)</th><td>${l.cassonade}</td></tr>`);
+}
+
+function htmlTableauMousseColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍫 Chocolat noir (70%)</th><td>${l.chocolat}</td></tr>
+    <tr><th>🥚 Œufs entiers</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🧂 Sel</th><td>1 pincée</td></tr>`);
+}
+
+function htmlTableauIleFlottanteColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🥛 Crème anglaise</th></tr>
+    <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
+    <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunesCreme}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
+    <tr><th>🌿 Vanille</th><td>${l.vanille} gousse</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌨️ Îles (meringue)</th></tr>
+    <tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucreIles}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🍯 Caramel</th></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucreCaramel}</td></tr>`);
+}
+
+function htmlTableauBananaBreadColonnes(l) {
+  return col(`
+    <tr><th>🍰 Tranches</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍌 Bananes mûres</th><td>${l.bananes}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🍬 Sucre roux</th><td>${l.sucre}</td></tr>
+    <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>`);
+}
+
+function htmlTableauGranolaColonnes(l) {
+  return col(`
+    <tr><th>🥣 Portions</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Flocons d'avoine</th><td>${l.flocons}</td></tr>
+    <tr><th>🍯 Miel / sirop d'érable</th><td>${l.miel}</td></tr>
+    <tr><th>🫒 Huile de coco</th><td>${l.huile}</td></tr>
+    <tr><th>🌰 Noix mélangées</th><td>${l.noix}</td></tr>
+    <tr><th>🌱 Graines</th><td>${l.graines}</td></tr>
+    <tr><th>🍇 Fruits secs</th><td>selon goût</td></tr>`);
+}
+
+function htmlTableauHoumousColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
+    <tr><th>🫒 Tahini</th><td>${l.tahini}</td></tr>
+    <tr><th>🍋 Citron (jus)</th><td>${l.citron}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huile}</td></tr>
+    <tr><th>💧 Eau froide</th><td>3–4 c.à.s</td></tr>`);
+}
+
+function htmlTableauRisottoColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍚 Riz arborio</th><td>${l.riz}</td></tr>
+    <tr><th>🍲 Bouillon chaud</th><td>${l.bouillon}</td></tr>
+    <tr><th>🍷 Vin blanc</th><td>${l.vin}</td></tr>
+    <tr><th>🧀 Parmesan râpé</th><td>${l.parmesan}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🧅 Oignon</th><td>1</td></tr>`);
+}
+
+function htmlTableauFondantColonnes(l) {
+  return col(`
+    <tr><th>🍫 Fondants</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🍫 Chocolat noir</th><td>${l.chocolat}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>`);
+}
+
+function htmlTableauMadeleineColonnes(l) {
+  return col(`
+    <tr><th>🫐 Madeleines</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>
+    <tr><th>🍯 Miel</th><td>1 c.à.s / 12</td></tr>
+    <tr><th>🍋 Zeste citron</th><td>1 / 12</td></tr>`);
+}
+
+function htmlTableauCurryLegumesColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥥 Lait de coco</th><td>${l.coco}</td></tr>
+    <tr><th>🫘 Pois chiches</th><td>${l.poischiches}</td></tr>
+    <tr><th>🍅 Tomates concassées</th><td>${l.tomates}</td></tr>
+    <tr><th>🌿 Épinards</th><td>${l.epinards}</td></tr>
+    <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
+    <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
+    <tr><th>🫚 Gingembre frais</th><td>${l.gingembre}</td></tr>
+    <tr><th>🌶️ Curry en poudre</th><td>${l.curry}</td></tr>`);
+}
+
+function htmlTableauVelouteLegumesColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🥕 Carottes</th><td>${l.carottes}</td></tr>
+    <tr><th>🎃 Courge butternut</th><td>${l.courge}</td></tr>
+    <tr><th>🍲 Bouillon de légumes</th><td>${l.bouillon}</td></tr>
+    <tr><th>🍦 Crème fraîche</th><td>${l.creme}</td></tr>
+    <tr><th>🧅 Oignon</th><td>1</td></tr>
+    <tr><th>🌿 Gingembre frais</th><td>2 cm</td></tr>`);
+}
+
+function htmlTableauTarteCitronColonnes(l) {
+  return col(`
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🥧 Pâte sablée</th></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🧈 Beurre froid</th><td>${l.beurrePate}</td></tr>
+    <tr><th>🍬 Sucre glace</th><td>${l.sucreGlace}</td></tr>
+    <tr><th>🌰 Poudre d'amande</th><td>${l.poudreAmande}</td></tr>
+    <tr><th>🥚 Œuf</th><td>${l.oeufPate}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🍋 Crème citron</th></tr>
+    <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufCreme}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
+    <tr><th>🧈 Beurre</th><td>${l.beurreCreme}</td></tr>
+    <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
+    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🌨️ Meringue</th></tr>
+    <tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr>
+    <tr><th>🍬 Sucre</th><td>${l.sucreMeringue}</td></tr>`);
+}
+
+function htmlTableauQuinoaColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Quinoa</th><td>${l.quinoa}</td></tr>
+    <tr><th>🍅 Tomates cerises</th><td>${l.tomates}</td></tr>
+    <tr><th>🧀 Feta</th><td>${l.feta}</td></tr>
+    <tr><th>🥒 Concombre</th><td>${l.concombre}</td></tr>
+    <tr><th>🫑 Poivron rouge</th><td>${l.poivron}</td></tr>
+    <tr><th>🫒 Huile d'olive</th><td>${l.huile}</td></tr>
+    <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>`);
+}
+
+function htmlTableauLasagneColonnes(l) {
+  return col(`
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>`);
+}
+
+function htmlTableauBriocheColonnes(l) {
+  const laitRow = l.lait !== "—"
+    ? `<tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`
+    : `<tr><th>🥛 Lait</th><td style="color:#888;">— (version sans lait)</td></tr>`;
+  return col(`
+    <tr><th>📋 Version</th><td><b>${l.label}</b></td></tr>
+    <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
+    <tr><th>🌿 Extrait de vanille</th><td>${l.vanille}</td></tr>
+    ${laitRow}
+    <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
+    <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
+    <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
+    <tr><th>🧈 Beurre froid</th><td>${l.beurre}</td></tr>`);
+}
+
