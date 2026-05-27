@@ -2759,7 +2759,7 @@ Réponds en français.`;
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-5",
         max_tokens: 400,
         system: systemPrompt,
         messages: hist.messages
@@ -2767,6 +2767,13 @@ Réponds en français.`;
     });
 
     const data2 = await response.json();
+    // Vérifier si l'API a retourné une erreur
+    if (data2.error) {
+      console.error("Erreur API Claude:", data2.error);
+      document.getElementById(loadingId)?.remove();
+      afficherMessageClaude(nom, "assistant", `❌ Erreur : ${data2.error.message || "Problème avec l'API"}. Vérifie ta clé API Anthropic.`);
+      return;
+    }
     const reponse = data2.content?.[0]?.text || "Désolé, je n'ai pas pu répondre. Réessaie !";
 
     // Supprimer le loading
