@@ -1054,6 +1054,20 @@ function choisirRecette(nom) {
     <div class="fiche-section">
       <h2 class="fiche-section-titre">📋 Étapes</h2>
       <div class="fiche-etapes-liste">${listeEtapes}</div>
+    </div>
+    <div class="fiche-claude-section" id="fiche-claude-${nom}">
+      <button class="fiche-claude-btn" onclick="ouvrirChatClaude('${nom}')">
+        🤖 Demander à Claude
+        <span class="claude-quota" id="claude-quota-${nom}"></span>
+      </button>
+      <div class="fiche-claude-chat" id="claude-chat-${nom}" style="display:none">
+        <div class="claude-messages" id="claude-messages-${nom}"></div>
+        <div class="claude-input-row">
+          <input type="text" id="claude-input-${nom}" placeholder="Pose ta question sur cette recette..." maxlength="200"
+            onkeydown="if(event.key==='Enter')envoyerQuestionClaude('${nom}')">
+          <button onclick="envoyerQuestionClaude('${nom}')">➤</button>
+        </div>
+      </div>
     </div>`;
 
   document.getElementById("modal-calc").classList.add("visible");

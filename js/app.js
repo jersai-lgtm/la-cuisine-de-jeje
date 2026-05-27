@@ -2638,3 +2638,149 @@ window.addEventListener("profilMisAJour", () => {
     }
   }
 });
+
+
+// ============================================================
+// ASSISTANT CLAUDE — Aide contextuelle par recette
+// ============================================================
+
+const CLAUDE_MAX_QUESTIONS = 5;
+window._claudeHistoires = {}; // { nomRecette: { messages: [], count: 0 } }
+
+function ouvrirChatClaude(nom) {
+  const chatDiv = document.getElementById(`claude-chat-${nom}`);
+  const btn = document.querySelector(`#fiche-claude-${nom} .fiche-claude-btn`);
+  if (!chatDiv) return;
+
+  const ouvert = chatDiv.style.display !== "none";
+  chatDiv.style.display = ouvert ? "none" : "block";
+  if (btn) btn.classList.toggle("actif", !ouvert);
+
+  if (!ouvert) {
+    // Initialiser si première ouverture
+    if (!window._claudeHistoires[nom]) {
+      window._claudeHistoires[nom] = { messages: [], count: 0 };
+      // Message de bienvenue
+      afficherMessageClaude(nom, "assistant",
+        `Bonjour ! Je suis là pour t'aider avec **${getNomRecette(nom)}**. Tu peux me poser jusqu'à ${CLAUDE_MAX_QUESTIONS} questions — technique, substitution, timing, adaptation... Je suis là ! 👨‍🍳`
+      );
+    }
+    majQuotaClaude(nom);
+    // Focus sur l'input
+    setTimeout(() => document.getElementById(`claude-input-${nom}`)?.focus(), 100);
+  }
+}
+
+function majQuotaClaude(nom) {
+  const quota = document.getElementById(`claude-quota-${nom}`);
+  if (!quota) return;
+  const hist = window._claudeHistoires[nom];
+  const restant = CLAUDE_MAX_QUESTIONS - (hist?.count || 0);
+  if (restant <= 0) {
+    quota.textContent = "· limite atteinte";
+    quota.style.color = "#ff6b6b";
+  } else {
+    quota.textContent = `· ${restant} question${restant > 1 ? "s" : ""} restante${restant > 1 ? "s" : ""}`;
+    quota.style.color = "#aaa";
+  }
+}
+
+function afficherMessageClaude(nom, role, texte) {
+  const container = document.getElementById(`claude-messages-${nom}`);
+  if (!container) return;
+  const div = document.createElement("div");
+  div.className = `claude-msg claude-msg-${role}`;
+  // Markdown basique : **gras**, *italique*, \`code\`
+  const html = texte
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*([^*]+)\*/g, "<em>$1</em>")
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\n/g, "<br>");
+  div.innerHTML = role === "assistant" ? `<span class="claude-avatar">🤖</span><div class="claude-bubble">${html}</div>`
+                                       : `<div class="claude-bubble">${html}</div><span class="claude-avatar">👤</span>`;
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+}
+
+async function envoyerQuestionClaude(nom) {
+  const input = document.getElementById(`claude-input-${nom}`);
+  const question = input?.value?.trim();
+  if (!question) return;
+
+  // Vérifier quota
+  const hist = window._claudeHistoires[nom] || { messages: [], count: 0 };
+  if (hist.count >= CLAUDE_MAX_QUESTIONS) {
+    afficherMessageClaude(nom, "assistant", "Tu as atteint la limite de questions pour cette recette. Ferme et rouvre la fiche pour recommencer ! 😊");
+    return;
+  }
+
+  // Afficher la question
+  afficherMessageClaude(nom, "user", question);
+  input.value = "";
+
+  // Construire le contexte de la recette
+  const data = recettes?.[nom];
+  const nomPropre = getNomRecette(nom);
+  const desc = data?.description || "";
+  const temps = data?.temps || "";
+
+  // Construire le contexte système
+  const systemPrompt = `Tu es un chef cuisinier expert et pédagogue intégré dans l'application "La Cuisine de Jéjé". 
+Tu aides l'utilisateur avec la recette suivante :
+
+**Recette : ${nomPropre}**
+${desc}
+Temps de préparation : ${temps}
+
+Réponds de façon concise, pratique et bienveillante. Maximum 3-4 phrases. 
+Si la question ne concerne pas cette recette ou la cuisine, redirige gentiment.
+Réponds en français.`;
+
+  // Ajouter au historique
+  hist.messages.push({ role: "user", content: question });
+  hist.count++;
+  window._claudeHistoires[nom] = hist;
+  majQuotaClaude(nom);
+
+  // Afficher indicateur de chargement
+  const loadingId = `claude-loading-${nom}-${Date.now()}`;
+  const container = document.getElementById(`claude-messages-${nom}`);
+  const loadingDiv = document.createElement("div");
+  loadingDiv.id = loadingId;
+  loadingDiv.className = "claude-msg claude-msg-assistant";
+  loadingDiv.innerHTML = `<span class="claude-avatar">🤖</span><div class="claude-bubble claude-loading">...</div>`;
+  container.appendChild(loadingDiv);
+  container.scrollTop = container.scrollHeight;
+
+  try {
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-20250514",
+        max_tokens: 400,
+        system: systemPrompt,
+        messages: hist.messages
+      })
+    });
+
+    const data2 = await response.json();
+    const reponse = data2.content?.[0]?.text || "Désolé, je n'ai pas pu répondre. Réessaie !";
+
+    // Supprimer le loading
+    document.getElementById(loadingId)?.remove();
+
+    // Afficher la réponse
+    afficherMessageClaude(nom, "assistant", reponse);
+
+    // Ajouter la réponse à l'historique
+    hist.messages.push({ role: "assistant", content: reponse });
+
+    // Limiter l'historique à 10 messages pour éviter les contextes trop longs
+    if (hist.messages.length > 10) hist.messages = hist.messages.slice(-10);
+
+  } catch(err) {
+    document.getElementById(loadingId)?.remove();
+    afficherMessageClaude(nom, "assistant", "Oups, une erreur s'est produite. Vérifie ta connexion et réessaie ! 🙏");
+  }
+}
