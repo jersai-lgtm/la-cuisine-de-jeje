@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v156";
+const CACHE_NAME = "cuisine-jeje-v158";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
@@ -81,12 +81,25 @@ self.addEventListener("activate", e => {
 });
 
 // Fetch : réseau en priorité, cache en fallback
+// On ne met en cache QUE les GET (l'API Cache rejette les POST/PUT/DELETE).
+// On laisse passer sans toucher : requêtes externes (Firestore, Anthropic, etc.)
 self.addEventListener("fetch", e => {
+  // Ignorer tout ce qui n'est pas GET (POST/PUT/DELETE vers Firestore, API Claude, etc.)
+  if (e.request.method !== "GET") return;
+
+  // Ignorer les requêtes vers des origines externes (Firestore, Google, Anthropic, etc.)
+  const url = new URL(e.request.url);
+  if (url.origin !== self.location.origin) return;
+
   e.respondWith(
     fetch(e.request)
       .then(response => {
+        // Ne pas cacher les réponses d'erreur ou opaques
+        if (!response || response.status !== 200 || response.type !== "basic") {
+          return response;
+        }
         const clone = response.clone();
-        caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
+        caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone)).catch(() => {});
         return response;
       })
       .catch(() => caches.match(e.request))
