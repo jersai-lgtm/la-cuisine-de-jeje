@@ -2119,21 +2119,44 @@ function basculeVersGrille() {
     secCartes.style.display = "";
   }
 }
-function filtrerCategorieDrinks() {
+function filtrerCategorieDrinks(souscat) {
   const menuC = document.getElementById("menu-cocktails");
   if (!menuC) return;
-  const visible = menuC.style.display !== "none";
-  menuC.style.display = visible ? "none" : "flex";
-  // Fermer si on clique en dehors
-  if (!visible) {
-    const close = (e) => {
-      if (!menuC.contains(e.target)) {
-        menuC.style.display = "none";
-        document.removeEventListener("click", close);
-      }
-    };
-    setTimeout(() => document.addEventListener("click", close), 100);
+
+  if (!souscat) {
+    // Clic sur "Cocktails ▾" → afficher tous + toggle sous-menu
+    const visible = menuC.style.display !== "none";
+    menuC.style.display = visible ? "none" : "flex";
+    if (!visible) {
+      // Afficher tous les cocktails ET mocktails
+      filtrerCategorieMulti(["cocktails", "mocktails"]);
+      // Fermer si on clique dehors
+      const close = (e) => {
+        if (!menuC.contains(e.target) && !e.target.closest(".pays-btn")) {
+          menuC.style.display = "none";
+          document.removeEventListener("click", close);
+        }
+      };
+      setTimeout(() => document.addEventListener("click", close), 150);
+    }
+  } else {
+    // Clic sur "Avec alcool" ou "Sans alcool" → filtrer uniquement cette cat
+    filtrerCategorie(souscat);
+    menuC.style.display = "none";
   }
+}
+
+function filtrerCategorieMulti(cats) {
+  // Afficher toutes les cartes des catégories listées
+  const cartes = document.querySelectorAll(".carte");
+  cartes.forEach(c => {
+    c.style.display = cats.includes(c.dataset.cat) ? "" : "none";
+  });
+  // Masquer section-accueil, afficher section-cartes
+  const accueil = document.getElementById("section-accueil");
+  const cartesSec = document.getElementById("section-cartes");
+  if (accueil) accueil.style.display = "none";
+  if (cartesSec) cartesSec.classList.add("visible");
 }
 
 function filtrerCategorie(cat) {
