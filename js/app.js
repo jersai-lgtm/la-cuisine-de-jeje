@@ -1894,16 +1894,22 @@ function regenRepas(jourNom, moment) {
   if (!jour) return;
 
   // Construire pool compatible
+  const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts","brunch"]);
   const pool = Object.keys(recettes).filter(key => {
     const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
-    const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts","brunch"]);
+    // Garder uniquement les vrais plats (exclure boulangerie/desserts/cocktails/brunch)
     if (carte && catsExclues.has(carte.dataset.cat)) return false;
-    if (_recExclues?.has(key)) return false;
+    // Seulement les recettes sans alerte famille (ni rouge, ni orange)
     const niveau = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
-    return niveau === null; // Seulement les recettes sans alerte
+    return niveau === null;
   });
 
   if (pool.length === 0) return;
+
+  // Recette actuellement à cette place (pour éviter de retomber dessus)
+  const actuelle = moment === "midi"
+    ? (jour.midi?.recette || jour.midi)
+    : (jour.soir?.recette || jour.soir);
 
   // Exclure les recettes déjà dans le menu
   const dejaDans = new Set(menus.semaine.flatMap(j => [
@@ -1911,7 +1917,11 @@ function regenRepas(jourNom, moment) {
     j.soir?.recette || j.soir
   ]).filter(Boolean));
 
-  const candidates = pool.filter(k => !dejaDans.has(k));
+  // 1er choix : recettes pas encore dans le menu
+  let candidates = pool.filter(k => !dejaDans.has(k));
+  // Fallback : si tout est déjà utilisé, autoriser n'importe quelle recette compatible
+  // sauf celle qu'on est en train de remplacer
+  if (candidates.length === 0) candidates = pool.filter(k => k !== actuelle);
   if (candidates.length === 0) return;
 
   // Choisir aléatoirement
@@ -1932,6 +1942,61 @@ function regenRepas(jourNom, moment) {
   sauvegarderMenus(menus, personnes, menus.semaine.map(j => j.jour));
 }
 
+// Régénère UNE sous-recette (entrée/plat/dessert) en mode menu complet,
+// en respectant son type et en évitant les recettes à risque famille.
+function regenRepasSous(jourNom, moment, type) {
+  const menus = window._derniersMenus;
+  if (!menus?.semaine) return;
+  const jour = menus.semaine.find(j => j.jour === jourNom);
+  if (!jour || !jour[moment]) return;
+
+  // Catégories autorisées selon le type de plat
+  const catsParType = {
+    entree:  new Set(["entrees","soupes","salades"]),
+    plat:    new Set(["plats","pizzas","healthy"]),
+    dessert: new Set(["desserts"]),
+  };
+  const catsOK = catsParType[type];
+  if (!catsOK) return;
+
+  // Pool de recettes du bon type, sans alerte famille
+  const pool = Object.keys(recettes).filter(key => {
+    const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
+    if (!carte || !catsOK.has(carte.dataset.cat)) return false;
+    const niveau = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
+    return niveau === null;
+  });
+  if (pool.length === 0) return;
+
+  // Recette actuellement à cette place
+  const actuelle = jour[moment]?.[type]?.recette;
+
+  // Éviter les recettes déjà présentes dans tout le menu (entrées/plats/desserts)
+  const dejaDans = new Set();
+  menus.semaine.forEach(j => {
+    ["midi","soir"].forEach(m => {
+      ["entree","plat","dessert"].forEach(t => {
+        const k = j[m]?.[t]?.recette;
+        if (k) dejaDans.add(k);
+      });
+    });
+  });
+
+  let candidates = pool.filter(k => !dejaDans.has(k));
+  if (candidates.length === 0) candidates = pool.filter(k => k !== actuelle);
+  if (candidates.length === 0) return;
+
+  const nouvelle = candidates[Math.floor(Math.random() * candidates.length)];
+
+  // Remplacer la sous-recette
+  if (!jour[moment][type]) jour[moment][type] = {};
+  jour[moment][type].recette = nouvelle;
+
+  const personnes = parseInt(document.getElementById("plan-personnes")?.value) || 4;
+  afficherMenusSemaine(menus, personnes);
+  sauvegarderMenus(menus, personnes, menus.semaine.map(j => j.jour));
+}
+
 function afficherMenusSemaine(menus, personnes) {
   const container = document.getElementById("plan-jours");
   container.innerHTML = "";
@@ -1946,20 +2011,28 @@ function afficherMenusSemaine(menus, personnes) {
       const genMoment = (moment, emoji, label) => {
         const r = jour[moment];
         if (!r) return "";
-        const genSous = (type, icone, data) => {
+        const genSous = (type, icone, data, cleType) => {
           if (!data?.recette) return "";
-          return `<div class="plan-repas-sous" onclick="ouvrirRecettePlan('${data.recette}', ${personnes})">
-            <span class="plan-sous-label">${icone} ${type}</span>
-            <span style="font-size:22px">${getEmoji(data.recette)}</span>
-            <span class="plan-repas-nom">${getNomRecette(data.recette)}</span>
+          const key = data.recette;
+          // Alerte famille (rouge bébé / orange enfant)
+          const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
+          const styleAlerte = niv === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
+                            : niv === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
+          const badge = niv === "bebe"   ? `<span title="À adapter pour bébé" style="margin-left:4px">🍼</span>`
+                      : niv === "enfant" ? `<span title="Épicé pour enfant" style="margin-left:4px">🌶️</span>` : "";
+          const btn = niv ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepasSous('${jour.jour}','${moment}','${cleType}')" title="Regénérer">🔄</button>` : "";
+          return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${personnes})">
+            <span class="plan-sous-label">${icone} ${type} ${badge}${btn}</span>
+            <span style="font-size:22px">${getEmoji(key)}</span>
+            <span class="plan-repas-nom">${getNomRecette(key)}</span>
             <span class="plan-repas-note">${data.note || ""}</span>
           </div>`;
         };
         return `<div class="plan-repas-col">
           <div class="plan-repas-label">${emoji} ${label}</div>
-          ${genSous("Entrée", "🥗", r.entree)}
-          ${genSous("Plat", "🍽️", r.plat)}
-          ${genSous("Dessert", "🍰", r.dessert)}
+          ${genSous("Entrée", "🥗", r.entree, "entree")}
+          ${genSous("Plat", "🍽️", r.plat, "plat")}
+          ${genSous("Dessert", "🍰", r.dessert, "dessert")}
         </div>`;
       };
       div.innerHTML = `
@@ -1999,7 +2072,7 @@ function afficherMenusSemaine(menus, personnes) {
             <div class="plan-repas-note">${midiNote}</div>
           </div>
           <div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
-            <div class="plan-repas-label">🌙 Soir</div>
+            <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}</div>
             <div class="plan-repas-emoji">${getEmoji(soir)}</div>
             <div class="plan-repas-nom">${getNomRecette(soir)}</div>
             <div class="plan-repas-note">${soirNote}</div>
@@ -2292,12 +2365,12 @@ const MOTS_BEBE = [
   "harissa","piment fort","piment rouge","sauce piquante","tabasco",
   // Alcool
   "flambé","flambée","flamber","au rhum","au cognac","au whisky","alcool",
-  // Moules/coquillages (risque allergie)
-  "moule","huitre","huître","palourde","coquillage"
+  // Moules/coquillages (risque allergie) — "moules" au pluriel pour éviter "moule à tarte/gâteau"
+  "moules","huitre","huître","palourde","coquillage"
 ];
 
 const MOTS_ENFANT = ["harissa","piment fort","gochujang","wasabi","tartare","carpaccio",
-  "sashimi","huitre","huître","bouillabaisse","très épicé","épicé"];
+  "sashimi","huitre","huître","bouillabaisse","très épicé","bien épicé","relevé","piquant"];
 
 function getNiveauFamille(cle) {
   // Retourne: null = OK, "bebe" = rouge, "enfant" = orange
@@ -2305,7 +2378,11 @@ function getNiveauFamille(cle) {
   if (!profil) return null;
   if (!profil.hasBebe && !profil.hasEnfant) return null;
   const r = recettes?.[cle];
-  const texte = (cle + " " + (r?.description || "")).toLowerCase();
+  let texte = (cle + " " + (r?.description || "")).toLowerCase();
+  // Garde : une boisson sans alcool (mocktail / virgin / "sans alcool") ne doit pas
+  // être flaggée à cause du mot "alcool" présent dans sa description ("sans alcool")
+  const estSansAlcool = /sans alcool|mocktail|virgin/.test(texte) || /mocktail|virgin/.test(cle.toLowerCase());
+  if (estSansAlcool) texte = texte.replace(/alcool/g, "");
   if (profil.hasBebe && MOTS_BEBE.some(m => texte.includes(m))) return "bebe";
   if ((profil.hasEnfant || profil.hasBebe) && MOTS_ENFANT.some(m => texte.includes(m))) return "enfant";
   return null;

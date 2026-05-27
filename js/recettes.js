@@ -3597,7 +3597,7 @@ const recettes = {
     base: 4,
     temps: "45 min",
     niveau: "⭐ Facile",
-    emoji: "🇭🇺",
+    emoji: "🍗",
     description: "Le Paprikash de poulet hongrois — poulet mijoté dans une sauce crémeuse au paprika fumé. Un plat réconfortant d'Europe centrale.",
     tableauPaprikash: [
       { nb:  1, poulet: "200 g", paprika: "0.5 c.à.s", creme: "50 ml", oignon: "0.5", bouillon: "75 ml" },
@@ -4768,7 +4768,7 @@ const recettes = {
   },
 
   pizzabresilienne: {
-    base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🇧🇷",
+    base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🍕",
     description: "Pizza Brésilienne — tomates, mozzarella, cœurs de palmier, maïs et olives. La pizza São Paulo, version fusion tropicale !",
     tableauPizzaBresil: [
       { nb:  1, pate: "1 pâton",  tomates: "80 g",  mozza: "80 g",  palmier: "50 g", mais: "30 g",  olives: "6"   },
