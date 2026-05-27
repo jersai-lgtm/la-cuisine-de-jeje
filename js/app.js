@@ -113,6 +113,7 @@ function motsExclusProfil() {
 function afficherAccueil() {
   window.scrollTo({ top: 0, behavior: "smooth" });
   fermerSousMenus();
+  if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
   if (typeof majBoutonFamille === "function") majBoutonFamille();
 
   // Activer bouton
@@ -576,6 +577,79 @@ function filtrerFavoris() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Affiche la vue dédiée "Menus favoris" (déclenché par l'onglet ❤️ Menus favoris)
+function filtrerMenusFavoris() {
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  const btn = document.getElementById('btn-menus-favoris');
+  if (btn) btn.classList.add('active');
+
+  if (!window.currentUser) { ouvrirModalAuth(); return; }
+
+  // Masquer accueil et grille
+  const secAccueil = document.getElementById("section-accueil");
+  const secCartes  = document.getElementById("section-cartes");
+  if (secAccueil) secAccueil.style.display = "none";
+  if (secCartes)  { secCartes.classList.remove("visible"); secCartes.style.display = "none"; }
+
+  // Créer (ou retrouver) la section dédiée
+  let sec = document.getElementById("section-menus-favoris");
+  if (!sec) {
+    sec = document.createElement("section");
+    sec.id = "section-menus-favoris";
+    sec.style.cssText = "max-width:900px;margin:20px auto;padding:0 16px";
+    // Insertion après section-cartes pour rester dans le flux normal
+    if (secCartes && secCartes.parentNode) {
+      secCartes.parentNode.insertBefore(sec, secCartes.nextSibling);
+    } else {
+      document.body.appendChild(sec);
+    }
+  }
+  sec.style.display = "block";
+
+  // Remplir avec la liste des menus favoris
+  const menusFavs = window.userProfile?.menusFavoris || [];
+  let html = `<h2 style="color:#ff8fb3;margin:16px 0 12px 0;font-size:22px">❤️ Mes Menus Favoris</h2>`;
+
+  if (menusFavs.length === 0) {
+    html += `<p style="text-align:center;color:#888;padding:40px;font-size:15px;background:rgba(255,255,255,.03);border-radius:12px">
+      Aucun menu favori pour l'instant.<br>
+      <small style="opacity:.7">Sauvegarde tes menus préférés depuis l'écran Menus avec 🤍 !</small>
+    </p>`;
+  } else {
+    html += `<div style="display:grid;gap:10px">`;
+    menusFavs.forEach(f => {
+      const sousType = f.type === "thematique" ? "🎉 Thématique" : "🗓️ Semaine";
+      // Aperçu
+      let apercu = "";
+      if (f.type === "thematique") {
+        const plat = (f.menu?.menu || []).find(p => /plat/i.test(p.categorie || "")) || (f.menu?.menu || [])[0];
+        if (plat?.recette) apercu = getNomRecette(plat.recette) || plat.recette;
+      } else {
+        const j1 = f.menu?.semaine?.[0];
+        const k = j1?.midi?.recette || j1?.midi?.plat?.recette || (typeof j1?.midi === "string" ? j1.midi : "");
+        if (k) apercu = getNomRecette(k) || k;
+      }
+      const date = f.date ? new Date(f.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }) : "";
+      html += `<div class="favori-item" style="padding:14px 16px;cursor:pointer" onclick="appliquerMenuFavori('${f.id}')" title="Cliquer pour appliquer ce menu">
+        <span style="display:flex;flex-direction:column;gap:4px;flex:1;min-width:0">
+          <span style="font-weight:700;color:#fff;font-size:15px">${f.nom}</span>
+          <span style="font-size:12px;color:#aaa">${sousType} ${apercu ? "· " + apercu : ""} ${date ? "· " + date : ""}</span>
+        </span>
+        <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}')" class="btn-retirer-favori" title="Supprimer">✕</button>
+      </div>`;
+    });
+    html += `</div>`;
+  }
+  sec.innerHTML = html;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Quand on revient sur Accueil ou autre onglet, on masque la section menus favoris
+function masquerSectionMenusFavoris() {
+  const sec = document.getElementById("section-menus-favoris");
+  if (sec) sec.style.display = "none";
+}
+
 // ==============================
 // ALLERGIES CUSTOM
 // ==============================
@@ -605,7 +679,6 @@ function switchProfilTab(tab, btn) {
   document.getElementById('profil-tab-' + tab).style.display = 'block';
   btn.classList.add('active');
   if (tab === 'favoris') afficherFavoris();
-  else if (tab === 'menusfavoris') afficherMenusFavoris();
 }
 
 // Afficher favoris RECETTES (onglet "Recettes favorites" du profil)
@@ -2790,6 +2863,7 @@ function viderRecherche() {
 function afficherTout() {
   window.scrollTo({ top: 0, behavior: "smooth" });
   fermerSousMenus();
+  if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
   const btnTout = document.getElementById("btn-tout");
   if (btnTout) btnTout.classList.add("active");
@@ -2854,6 +2928,7 @@ function basculeVersGrille() {
     // S'assurer que le style inline ne bloque pas
     secCartes.style.display = "";
   }
+  if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
 }
 
 // ============================================================
@@ -3232,18 +3307,13 @@ window.addEventListener('profilMisAJour', () => {
       afficherMenusSemaine(window._derniersMenus, p);
     }
   }
-  // Rafraîchir les sections favoris (accueil + profil si ouverts)
+  // Rafraîchir les sections favoris (accueil + nouvelle vue dédiée si visible)
   if (typeof chargerAccueilFavoris === "function") chargerAccueilFavoris();
   if (typeof chargerAccueilMenusFavoris === "function") chargerAccueilMenusFavoris();
-  // Si l'onglet "Recettes favorites" du profil est ouvert, le re-rendre
-  const tabFav = document.getElementById("profil-tab-favoris");
-  if (tabFav && tabFav.style.display !== "none" && typeof afficherFavoris === "function") {
-    afficherFavoris();
-  }
-  // Idem pour l'onglet "Menus favoris"
-  const tabMenusFav = document.getElementById("profil-tab-menusfavoris");
-  if (tabMenusFav && tabMenusFav.style.display !== "none" && typeof afficherMenusFavoris === "function") {
-    afficherMenusFavoris();
+  // Si la vue dédiée "Menus favoris" est ouverte, la re-rendre
+  const secMF = document.getElementById("section-menus-favoris");
+  if (secMF && secMF.style.display !== "none" && typeof filtrerMenusFavoris === "function") {
+    filtrerMenusFavoris();
   }
 });
 // Vérifier aussi après chargement initial
