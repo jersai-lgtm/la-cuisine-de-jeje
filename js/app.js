@@ -537,6 +537,7 @@ function afficherHistorique() {
 }
 
 function filtrerFavoris() {
+  if (typeof fermerSousMenus === "function") fermerSousMenus();
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   const btn = document.getElementById('btn-favoris');
   if (btn) btn.classList.add('active');
@@ -551,7 +552,8 @@ function filtrerFavoris() {
   let count = 0;
   cartes.forEach(c => {
     const onclick = c.getAttribute('onclick') || '';
-    const match = onclick.match(/ouvrirFiche\('([^']+)'/);
+    // Reconnaître les deux patterns : ouvrirFiche(...) OU choisirRecette(...)
+    const match = onclick.match(/(?:ouvrirFiche|choisirRecette)\('([^']+)'/);
     const key = match ? match[1] : null;
     if (key && favs.includes(key)) {
       c.style.display = 'flex';
@@ -2645,7 +2647,12 @@ window.appliquerMenuFavoriSemaine = function(id) {
   if (!fav || fav.type !== "semaine") return;
   // Masquer la vue dédiée des menus favoris avant de naviguer
   if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
-  menusSemaine = fav.menu;
+  // Copie profonde : on travaille sur une copie pour ne pas altérer le favori
+  menusSemaine = JSON.parse(JSON.stringify(fav.menu));
+  // Détecter le format du menu (simple ou complet) pour bien afficher
+  const premier = menusSemaine?.semaine?.[0];
+  const estComplet = premier && premier.midi && premier.midi.plat !== undefined;
+  window._formatRepas = estComplet ? "complet" : "simple";
   // Naviguer vers la section Menus et l'onglet Semaine
   const btnMenus = document.querySelector(".nav-btn[onclick*=planificateur]");
   if (btnMenus) afficherSection("planificateur", btnMenus);
@@ -2667,7 +2674,8 @@ window.appliquerMenuFavoriFestif = function(id) {
   if (!fav || fav.type !== "thematique") return;
   // Masquer la vue dédiée des menus favoris avant de naviguer
   if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
-  menuFestifActuel = fav.menu;
+  // Copie profonde : on travaille sur une copie
+  menuFestifActuel = JSON.parse(JSON.stringify(fav.menu));
   const btnMenus = document.querySelector(".nav-btn[onclick*=planificateur]");
   if (btnMenus) afficherSection("planificateur", btnMenus);
   if (typeof switchPlanTab === "function") switchPlanTab("festif");
@@ -3220,6 +3228,11 @@ function majBoutonFamille() {
 function filtrerCategorie(cat) {
   window.scrollTo({ top: 0, behavior: "smooth" });
   basculeVersGrille();
+  // Désactiver les boutons principaux (Accueil, Recettes favorites, etc.)
+  document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  // Réactiver le bouton Catégories
+  const btnCat = document.getElementById("btn-categories");
+  if (btnCat) btnCat.classList.add("active");
   document.querySelectorAll("#menu-categories .pays-btn").forEach(b => b.classList.remove("active"));
   event.target.classList.add("active");
   document.querySelectorAll(".carte").forEach(c => {
@@ -3232,6 +3245,11 @@ function filtrerCategorie(cat) {
 function filtrerPays(pays) {
   window.scrollTo({ top: 0, behavior: "smooth" });
   basculeVersGrille();
+  // Désactiver les boutons principaux
+  document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  // Réactiver le bouton Monde
+  const btnMonde = document.getElementById("btn-monde");
+  if (btnMonde) btnMonde.classList.add("active");
   document.querySelectorAll("#menu-pays .pays-btn").forEach(b => b.classList.remove("active"));
   event.target.classList.add("active");
   document.querySelectorAll(".carte").forEach(c => {
