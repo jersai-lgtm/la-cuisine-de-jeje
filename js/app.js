@@ -38,6 +38,12 @@ const RECETTES_DESSERTS = [
   "tiramisufraise","verrineframboisechocolat","verrinetiramisu"
 ];
 
+// Catégorie d'une recette, lue depuis la DONNÉE (recettes.js), pas le DOM.
+// Fiable même si les cartes ne sont pas (encore) rendues.
+function categorieRecette(key) {
+  return (typeof recettes !== "undefined" && recettes[key]) ? (recettes[key].cat || "") : "";
+}
+
 // ==============================
 // HELPER : texte complet d'une recette (pour filtres allergènes/régimes)
 // Lit clé + nom affiché + description + TOUTES les lignes des tableaux
@@ -345,8 +351,7 @@ function chargerAccueilSuggestions() {
   let pool = toutes.filter(key => {
     if (exclus.has(key)) return false;
     if (_recExclues.has(key) || RECETTES_NON_REPAS.has(key)) return false;
-    const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
-    if (carte && _catsExclues.has(carte.dataset.cat)) return false;
+    if (_catsExclues.has(categorieRecette(key))) return false;
     if (motsExclus.size === 0) return true;
     const texte = texteRecette(key);
     return ![...motsExclus].some(m => texte.includes(m));
@@ -1396,9 +1401,8 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   const pool = Object.keys(recettes).filter(key => {
     // Exclure les non-repas (boulangerie/desserts/cocktails/brunch) — liste fiable
     if (RECETTES_NON_REPAS.has(key)) return false;
-    // Sécurité supplémentaire via la catégorie de la carte si disponible
-    const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
-    if (carte && catsExclues.has(carte.dataset.cat)) return false;
+    // Sécurité supplémentaire via la catégorie (depuis la donnée, pas le DOM)
+    if (catsExclues.has(categorieRecette(key))) return false;
     if (motsInterdits.size === 0) return true;
     const texte = texteRecette(key);
     return ![...motsInterdits].some(m => texte.includes(m));
@@ -1455,11 +1459,8 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   const isComplet = window._formatRepas === "complet";
 
   // Pool séparé pour desserts
-  let poolDesserts = Object.keys(recettes).filter(key => {
-    const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
-    return carte && ["desserts"].includes(carte.dataset.cat);
-  });
-  // Fallback fiable si les cartes ne sont pas dans le DOM
+  let poolDesserts = Object.keys(recettes).filter(key => categorieRecette(key) === "desserts");
+  // Fallback ultime si jamais cat manquait
   if (poolDesserts.length === 0) {
     poolDesserts = RECETTES_DESSERTS.filter(k => recettes[k]);
   }
@@ -1947,9 +1948,8 @@ function regenRepas(jourNom, moment) {
   const pool = Object.keys(recettes).filter(key => {
     // Exclure les non-repas via la liste fiable (ne dépend pas du DOM)
     if (RECETTES_NON_REPAS.has(key)) return false;
-    const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
-    // Garder uniquement les vrais plats (exclure boulangerie/desserts/cocktails/brunch)
-    if (carte && catsExclues.has(carte.dataset.cat)) return false;
+    // Garder uniquement les vrais plats (catégorie depuis la donnée)
+    if (catsExclues.has(categorieRecette(key))) return false;
     // Respecter allergies / régimes du profil
     if (motsExclus.size > 0) {
       const texte = texteRecette(key);
@@ -2018,8 +2018,7 @@ function regenRepasSous(jourNom, moment, type) {
   // Pool de recettes du bon type, sans alerte famille, et compatibles profil
   const motsExclus = motsExclusProfil();
   const pool = Object.keys(recettes).filter(key => {
-    const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
-    if (!carte || !catsOK.has(carte.dataset.cat)) return false;
+    if (!catsOK.has(categorieRecette(key))) return false;
     if (motsExclus.size > 0) {
       const texte = texteRecette(key);
       if ([...motsExclus].some(m => texte.includes(m))) return false;
@@ -2063,6 +2062,19 @@ function afficherMenusSemaine(menus, personnes) {
   container.innerHTML = "";
   const isComplet = window._formatRepas === "complet";
 
+  // Légende famille (uniquement si le foyer a bébé/enfant)
+  const profilL = typeof getFoyerProfil === "function" ? getFoyerProfil() : null;
+  if (profilL && (profilL.hasBebe || profilL.hasEnfant)) {
+    const legende = document.createElement("div");
+    legende.className = "plan-legende-famille";
+    const parts = [];
+    if (profilL.hasBebe)   parts.push(`<span class="leg-item"><span class="leg-pastille bebe"></span>🍼 Déconseillé bébé</span>`);
+    if (profilL.hasEnfant) parts.push(`<span class="leg-item"><span class="leg-pastille enfant"></span>🌶️ Déconseillé enfant</span>`);
+    parts.push(`<span class="leg-hint">Tu peux <strong>🔄 régénérer</strong> chaque repas concerné</span>`);
+    legende.innerHTML = parts.join("");
+    container.appendChild(legende);
+  }
+
   menus.semaine.forEach(jour => {
     const div = document.createElement("div");
     div.className = "plan-jour";
@@ -2075,18 +2087,23 @@ function afficherMenusSemaine(menus, personnes) {
         const genSous = (type, icone, data, cleType) => {
           if (!data?.recette) return "";
           const key = data.recette;
-          // Alerte famille (rouge bébé / orange enfant)
+          // Alerte famille (rouge bébé / orange enfant) + raison
           const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
-          const styleAlerte = niv === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
-                            : niv === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
-          const badge = niv === "bebe"   ? `<span title="À adapter pour bébé" style="margin-left:4px">🍼</span>`
-                      : niv === "enfant" ? `<span title="Épicé pour enfant" style="margin-left:4px">🌶️</span>` : "";
-          const btn = niv ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepasSous('${jour.jour}','${moment}','${cleType}')" title="Regénérer">🔄</button>` : "";
+          const lvl = niv?.niveau;
+          const raison = niv?.raison || "";
+          const tip = lvl === "bebe" ? `${raison} — déconseillé bébé` : lvl === "enfant" ? `${raison} — déconseillé enfant` : "";
+          const styleAlerte = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
+                            : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
+          const badge = lvl === "bebe"   ? `<span title="${tip}" style="margin-left:4px">🍼</span>`
+                      : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px">🌶️</span>` : "";
+          const btn = lvl ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepasSous('${jour.jour}','${moment}','${cleType}')" title="Regénérer">🔄</button>` : "";
+          const motif = lvl ? `<div class="plan-motif-famille" title="${tip}">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
           return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${personnes})">
             <span class="plan-sous-label">${icone} ${type} ${badge}${btn}</span>
             <span style="font-size:22px">${getEmoji(key)}</span>
             <span class="plan-repas-nom">${getNomRecette(key)}</span>
             <span class="plan-repas-note">${data.note || ""}</span>
+            ${motif}
           </div>`;
         };
         return `<div class="plan-repas-col">
@@ -2109,19 +2126,26 @@ function afficherMenusSemaine(menus, personnes) {
       const midiNote = jour.midi?.note || "";
       const soirNote = jour.soir?.note || "";
 
-      // Couleur famille
+      // Couleur famille + raison
       const nMidi = typeof getNiveauFamille === "function" ? getNiveauFamille(midi) : null;
       const nSoir = typeof getNiveauFamille === "function" ? getNiveauFamille(soir) : null;
-      const sMidi = nMidi === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
-                  : nMidi === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
-      const sSoir = nSoir === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
-                  : nSoir === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
-      const bMidi = nMidi === "bebe" ? `<span title="Attention bébé" style="margin-left:4px">🍼</span>`
-                  : nMidi === "enfant" ? `<span title="Épicé pour enfant" style="margin-left:4px">🌶️</span>` : "";
-      const bSoir = nSoir === "bebe" ? `<span title="Attention bébé" style="margin-left:4px">🍼</span>`
-                  : nSoir === "enfant" ? `<span title="Épicé pour enfant" style="margin-left:4px">🌶️</span>` : "";
-      const btnMidi = nMidi ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','midi')" title="Regénérer">🔄</button>` : "";
-      const btnSoir = nSoir ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','soir')" title="Regénérer">🔄</button>` : "";
+      const lvlM = nMidi?.niveau, lvlS = nSoir?.niveau;
+      const raisonM = nMidi?.raison || "";
+      const raisonS = nSoir?.raison || "";
+      const tipM = lvlM === "bebe" ? `${raisonM} — déconseillé bébé` : lvlM === "enfant" ? `${raisonM} — déconseillé enfant` : "";
+      const tipS = lvlS === "bebe" ? `${raisonS} — déconseillé bébé` : lvlS === "enfant" ? `${raisonS} — déconseillé enfant` : "";
+      const sMidi = lvlM === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
+                  : lvlM === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
+      const sSoir = lvlS === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
+                  : lvlS === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
+      const bMidi = lvlM === "bebe" ? `<span title="${tipM}" style="margin-left:4px">🍼</span>`
+                  : lvlM === "enfant" ? `<span title="${tipM}" style="margin-left:4px">🌶️</span>` : "";
+      const bSoir = lvlS === "bebe" ? `<span title="${tipS}" style="margin-left:4px">🍼</span>`
+                  : lvlS === "enfant" ? `<span title="${tipS}" style="margin-left:4px">🌶️</span>` : "";
+      const btnMidi = lvlM ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','midi')" title="Regénérer">🔄</button>` : "";
+      const btnSoir = lvlS ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','soir')" title="Regénérer">🔄</button>` : "";
+      const motifM = lvlM ? `<div class="plan-motif-famille" title="${tipM}">${lvlM === "bebe" ? "🍼" : "🌶️"} ${raisonM}</div>` : "";
+      const motifS = lvlS ? `<div class="plan-motif-famille" title="${tipS}">${lvlS === "bebe" ? "🍼" : "🌶️"} ${raisonS}</div>` : "";
 
       div.innerHTML = `
         <h3 class="plan-jour-titre">${jour.jour}</h3>
@@ -2131,12 +2155,14 @@ function afficherMenusSemaine(menus, personnes) {
             <div class="plan-repas-emoji">${getEmoji(midi)}</div>
             <div class="plan-repas-nom">${getNomRecette(midi)}</div>
             <div class="plan-repas-note">${midiNote}</div>
+            ${motifM}
           </div>
           <div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
             <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}</div>
             <div class="plan-repas-emoji">${getEmoji(soir)}</div>
             <div class="plan-repas-nom">${getNomRecette(soir)}</div>
             <div class="plan-repas-note">${soirNote}</div>
+            ${motifS}
           </div>
         </div>`;
     }
@@ -2433,8 +2459,41 @@ const MOTS_BEBE = [
 const MOTS_ENFANT = ["harissa","piment fort","gochujang","wasabi","tartare","carpaccio",
   "sashimi","huitre","huître","bouillabaisse","très épicé","bien épicé","relevé","piquant"];
 
+// Table mot trouvé → libellé lisible (ce qu'on montrera à l'utilisateur).
+// Plusieurs mots peuvent partager le même libellé.
+const RAISONS_FAMILLE = {
+  // Poisson cru
+  "sushi":"Poisson cru","maki":"Poisson cru","nigiri":"Poisson cru","temaki":"Poisson cru",
+  "sashimi":"Poisson cru","ceviche":"Poisson cru","poisson cru":"Poisson cru",
+  "thon cru":"Poisson cru","saumon cru":"Poisson cru","tartare":"Viande/poisson cru",
+  "carpaccio":"Viande/poisson cru","gravlax":"Poisson cru",
+  // Coquillages / fruits de mer
+  "moules":"Coquillages","huitre":"Coquillages","huître":"Coquillages",
+  "palourde":"Coquillages","coquillage":"Coquillages","fruit de mer cru":"Fruits de mer crus",
+  "crevette crue":"Crevettes crues",
+  // Charcuterie crue
+  "jambon cru":"Charcuterie crue","prosciutto":"Charcuterie crue","nduja":"Charcuterie crue",
+  "saucisson":"Charcuterie crue","bresaola":"Charcuterie crue","coppa":"Charcuterie crue",
+  "salami cru":"Charcuterie crue",
+  // Allergènes risqués bébé
+  "miel":"Miel (déconseillé < 1 an)",
+  "cacahuète":"Arachides","cacahuete":"Arachides","arachide":"Arachides",
+  "noix de":"Fruits à coque","noisette":"Fruits à coque","amande crue":"Fruits à coque",
+  // Épices fortes
+  "harissa":"Épicé (harissa)","piment fort":"Épicé","piment rouge":"Épicé",
+  "sauce piquante":"Épicé","tabasco":"Épicé","gochujang":"Sauce coréenne épicée",
+  "wasabi":"Wasabi (très piquant)","très épicé":"Très épicé","bien épicé":"Très épicé",
+  "relevé":"Plat relevé","piquant":"Plat piquant",
+  // Alcool
+  "flambé":"Plat flambé (alcool)","flambée":"Plat flambé (alcool)","flamber":"Plat flambé (alcool)",
+  "au rhum":"Contient du rhum","au cognac":"Contient du cognac","au whisky":"Contient du whisky",
+  "alcool":"Contient de l'alcool",
+  // Soupe spéciale
+  "bouillabaisse":"Bouillabaisse (poisson)",
+};
+
 function getNiveauFamille(cle) {
-  // Retourne: null = OK, "bebe" = rouge, "enfant" = orange
+  // Retourne: null = OK, sinon { niveau: "bebe"|"enfant", mot: "...", raison: "..." }
   const profil = getFoyerProfil();
   if (!profil) return null;
   if (!profil.hasBebe && !profil.hasEnfant) return null;
@@ -2444,9 +2503,22 @@ function getNiveauFamille(cle) {
   // être flaggée à cause du mot "alcool" présent dans sa description ("sans alcool")
   const estSansAlcool = /sans alcool|mocktail|virgin/.test(texte) || /mocktail|virgin/.test(cle.toLowerCase());
   if (estSansAlcool) texte = texte.replace(/alcool/g, "");
-  if (profil.hasBebe && MOTS_BEBE.some(m => texte.includes(m))) return "bebe";
-  if ((profil.hasEnfant || profil.hasBebe) && MOTS_ENFANT.some(m => texte.includes(m))) return "enfant";
+
+  if (profil.hasBebe) {
+    const mot = MOTS_BEBE.find(m => texte.includes(m));
+    if (mot) return { niveau: "bebe", mot, raison: RAISONS_FAMILLE[mot] || mot };
+  }
+  if (profil.hasEnfant || profil.hasBebe) {
+    const mot = MOTS_ENFANT.find(m => texte.includes(m));
+    if (mot) return { niveau: "enfant", mot, raison: RAISONS_FAMILLE[mot] || mot };
+  }
   return null;
+}
+
+// Helper : juste le niveau (string ou null), pour compat avec l'ancien code
+function getNiveauFamilleStr(cle) {
+  const r = getNiveauFamille(cle);
+  return r ? r.niveau : null;
 }
 
 function getFoyerProfil() {

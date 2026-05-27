@@ -1,6 +1,7 @@
 const recettes = {
 
   pizza: {
+    cat: "boulangerie", pays: "italie",
     base: 4,
     temps: "48h fermentation",
     niveau: "⭐ Moyen",
@@ -88,6 +89,7 @@ const recettes = {
   },
 
   crepes: {
+    cat: "brunch", pays: "france",
     base: 4,
     temps: "20 min + 1h repos",
     niveau: "⭐ Facile",
@@ -123,6 +125,7 @@ const recettes = {
   },
 
   gaufres: {
+    cat: "brunch", pays: "france",
     base: 1,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -161,6 +164,7 @@ const recettes = {
 
 
   painbaguette: {
+    cat: "boulangerie", pays: "france",
     base: 1,
     temps: "3h",
     niveau: "⭐⭐ Intermédiaire",
@@ -186,6 +190,7 @@ const recettes = {
   },
 
   paindemie: {
+    cat: "boulangerie", pays: "france",
     base: 20,
     temps: "2h30",
     niveau: "⭐ Facile",
@@ -226,6 +231,7 @@ const recettes = {
   },
 
   patefeuilletee: {
+    cat: "boulangerie", pays: "france",
     base: 1,
     temps: "2h + repos",
     niveau: "⭐⭐⭐ Difficile",
@@ -250,6 +256,7 @@ const recettes = {
   },
 
   patebrisee: {
+    cat: "boulangerie", pays: "france",
     base: 1,
     temps: "15 min + repos",
     niveau: "⭐ Facile",
@@ -272,6 +279,7 @@ const recettes = {
   },
 
   patesablee: {
+    cat: "boulangerie", pays: "france",
     base: 1,
     temps: "15 min + repos",
     niveau: "⭐ Facile",
@@ -297,6 +305,7 @@ const recettes = {
   },
 
   goumeau: {
+    cat: "desserts", pays: "france",
     base: 4,
     temps: "3h (dont 2h levée)",
     niveau: "⭐ Facile",
@@ -336,6 +345,7 @@ const recettes = {
 
 
   painburger: {
+    cat: "boulangerie", pays: "usa",
     base: 6,
     temps: "2h30 (dont 1h30 levée)",
     niveau: "⭐ Facile",
@@ -375,6 +385,7 @@ const recettes = {
 
 
   galettetacos: {
+    cat: "boulangerie", pays: "mexique",
     base: 8,
     temps: "45 min (dont 30 min repos)",
     niveau: "⭐ Facile",
@@ -411,6 +422,7 @@ const recettes = {
   },
 
   brioche: {
+    cat: "boulangerie", pays: "france",
     base: 1,
     temps: "~2h + 35 min cuisson",
     niveau: "⭐ Moyen",
@@ -455,6 +467,7 @@ const recettes = {
   },
 
   lasagne: {
+    cat: "plats", pays: "italie",
     base: 1,
     temps: "1h30",
     niveau: "⭐ Moyen",
@@ -490,6 +503,7 @@ const recettes = {
   },
 
   cookies: {
+    cat: "desserts", pays: "usa",
     base: 1,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -527,6 +541,7 @@ const recettes = {
 
 
   saladeniçoise: {
+    cat: "salades", pays: "france",
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -561,6 +576,7 @@ const recettes = {
   },
 
   saladecesar: {
+    cat: "salades", pays: "usa",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -594,6 +610,7 @@ const recettes = {
   },
 
   saladegreque: {
+    cat: "salades", pays: "grece",
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -626,6 +643,7 @@ const recettes = {
   },
 
   saladepatasthon: {
+    cat: "salades", pays: "france",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -659,6 +677,7 @@ const recettes = {
   },
 
   saladerizmediterranee: {
+    cat: "salades", pays: "france",
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -692,6 +711,7 @@ const recettes = {
   },
 
   tabulemaison: {
+    cat: "salades", pays: "liban",
     base: 4,
     temps: "20 min + repos",
     niveau: "⭐ Facile",
@@ -725,6 +745,7 @@ const recettes = {
   },
 
   saladelentilles: {
+    cat: "salades", pays: "france",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -758,6 +779,7 @@ const recettes = {
   },
 
   saladeavocatcrevettes: {
+    cat: "salades", pays: "france",
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -791,6 +813,7 @@ const recettes = {
   },
 
   pouletcitronthym: {
+    cat: "plats", pays: "france",
     base: 2,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -825,6 +848,7 @@ const recettes = {
   },
 
   salmonteriyaki: {
+    cat: "plats", pays: "japon",
     base: 2,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -859,6 +883,7 @@ const recettes = {
   },
 
   bolognaisemaison: {
+    cat: "plats", pays: "italie",
     base: 4,
     temps: "45 min",
     niveau: "⭐ Facile",
@@ -894,6 +919,7 @@ const recettes = {
   },
 
   tacosmaison: {
+    cat: "plats", pays: "mexique",
     base: 2,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -928,6 +954,7 @@ const recettes = {
   },
 
   padthai: {
+    cat: "plats", pays: "thailande",
     base: 2,
     temps: "20 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -962,6 +989,7 @@ const recettes = {
   },
 
   currypouletcoco: {
+    cat: "plats", pays: "thailande",
     base: 4,
     temps: "35 min",
     niveau: "⭐ Facile",
@@ -996,6 +1024,7 @@ const recettes = {
   },
 
   burgermaison: {
+    cat: "plats", pays: "usa",
     base: 2,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -1031,6 +1060,7 @@ const recettes = {
 
 
   saumongravlax: {
+    cat: "entrees", pays: "france",
     base: 4,
     temps: "15 min + 24h marinade",
     niveau: "⭐ Facile",
@@ -1063,6 +1093,7 @@ const recettes = {
   },
 
   shakshuka: {
+    cat: "brunch", pays: "liban",
     base: 2,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -1097,6 +1128,7 @@ const recettes = {
   },
 
   couscous: {
+    cat: "plats", pays: "maroc",
     base: 6,
     temps: "1h30",
     niveau: "⭐⭐ Intermédiaire",
@@ -1132,6 +1164,7 @@ const recettes = {
   },
 
   moussaka: {
+    cat: "plats", pays: "grece",
     base: 6,
     temps: "1h30",
     niveau: "⭐⭐ Intermédiaire",
@@ -1167,6 +1200,7 @@ const recettes = {
   },
 
   paella: {
+    cat: "plats", pays: "espagne",
     base: 4,
     temps: "50 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -1202,6 +1236,7 @@ const recettes = {
   },
 
   butterchicken: {
+    cat: "plats", pays: "inde",
     base: 4,
     temps: "40 min",
     niveau: "⭐ Facile",
@@ -1237,6 +1272,7 @@ const recettes = {
   },
 
   souvlaki: {
+    cat: "plats", pays: "grece",
     base: 4,
     temps: "20 min + marinade",
     niveau: "⭐ Facile",
@@ -1272,6 +1308,7 @@ const recettes = {
   },
 
   quichelorraine: {
+    cat: "plats", pays: "france",
     base: 6,
     temps: "1h",
     niveau: "⭐ Facile",
@@ -1307,6 +1344,7 @@ const recettes = {
   },
 
   soupeaoignon: {
+    cat: "soupes", pays: "france",
     base: 4,
     temps: "1h",
     niveau: "⭐ Facile",
@@ -1342,6 +1380,7 @@ const recettes = {
   },
 
   dalindien: {
+    cat: "plats", pays: "inde",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -1377,6 +1416,7 @@ const recettes = {
   },
 
   rizcantonnais: {
+    cat: "plats", pays: "chine",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -1412,6 +1452,7 @@ const recettes = {
   },
 
   hariramarocaine: {
+    cat: "soupes", pays: "maroc",
     base: 6,
     temps: "1h",
     niveau: "⭐ Facile",
@@ -1447,6 +1488,7 @@ const recettes = {
   },
 
   naan: {
+    cat: "encas", pays: "inde",
     base: 4,
     temps: "1h30",
     niveau: "⭐ Facile",
@@ -1482,6 +1524,7 @@ const recettes = {
   },
 
   verrinetiramisu: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "20 min + 4h repos",
     niveau: "⭐ Facile",
@@ -1515,6 +1558,7 @@ const recettes = {
   },
 
   churros: {
+    cat: "desserts", pays: "espagne",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -1550,6 +1594,7 @@ const recettes = {
   },
 
   potaufeu: {
+    cat: "plats", pays: "france",
     base: 6,
     temps: "3h",
     niveau: "⭐ Facile",
@@ -1583,6 +1628,7 @@ const recettes = {
   },
 
   parisbrestreinterpretation: {
+    cat: "desserts", pays: "france",
     base: 8,
     temps: "1h30",
     niveau: "⭐⭐⭐ Difficile",
@@ -1616,6 +1662,7 @@ const recettes = {
   },
 
   mojito: {
+    cat: "cocktails", pays: "cuba",
     base: 1,
     temps: "5 min",
     niveau: "⭐ Facile",
@@ -1648,6 +1695,7 @@ const recettes = {
   },
 
   margarita: {
+    cat: "cocktails", pays: "mexique",
     base: 1,
     temps: "3 min",
     niveau: "⭐ Facile",
@@ -1679,6 +1727,7 @@ const recettes = {
   },
 
   cosmopolitan: {
+    cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
     niveau: "⭐ Facile",
@@ -1710,6 +1759,7 @@ const recettes = {
   },
 
   spritz: {
+    cat: "cocktails", pays: "italie",
     base: 1,
     temps: "2 min",
     niveau: "⭐ Facile",
@@ -1741,6 +1791,7 @@ const recettes = {
   },
 
   sangria: {
+    cat: "cocktails", pays: "espagne",
     base: 6,
     temps: "15 min + 2h repos",
     niveau: "⭐ Facile",
@@ -1773,6 +1824,7 @@ const recettes = {
   },
 
   pinacolada: {
+    cat: "cocktails", pays: "usa",
     base: 1,
     temps: "5 min",
     niveau: "⭐ Facile",
@@ -1803,6 +1855,7 @@ const recettes = {
   },
 
   daiquiri: {
+    cat: "cocktails", pays: "cuba",
     base: 1,
     temps: "3 min",
     niveau: "⭐ Facile",
@@ -1834,6 +1887,7 @@ const recettes = {
   },
 
   whiskysour: {
+    cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
     niveau: "⭐ Facile",
@@ -1865,6 +1919,7 @@ const recettes = {
   },
 
   virginmojito: {
+    cat: "mocktails", pays: "france",
     base: 1,
     temps: "5 min",
     niveau: "⭐ Facile",
@@ -1896,6 +1951,7 @@ const recettes = {
   },
 
   limonademaison: {
+    cat: "mocktails", pays: "france",
     base: 4,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -1928,6 +1984,7 @@ const recettes = {
   },
 
   smoothiemangopassion: {
+    cat: "mocktails", pays: "france",
     base: 2,
     temps: "5 min",
     niveau: "⭐ Facile",
@@ -1959,6 +2016,7 @@ const recettes = {
   },
 
   citronadementhe: {
+    cat: "mocktails", pays: "france",
     base: 4,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -1990,6 +2048,7 @@ const recettes = {
   },
 
   jusPastequeMenuthe: {
+    cat: "mocktails", pays: "france",
     base: 4,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -2021,6 +2080,7 @@ const recettes = {
   },
 
   virginpinacolada: {
+    cat: "mocktails", pays: "france",
     base: 1,
     temps: "5 min",
     niveau: "⭐ Facile",
@@ -2051,6 +2111,7 @@ const recettes = {
   },
 
   ramenjaponais: {
+    cat: "plats", pays: "japon",
     base: 2,
     temps: "45 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -2084,6 +2145,7 @@ const recettes = {
   },
 
   gyoza: {
+    cat: "encas", pays: "japon",
     base: 20,
     temps: "45 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -2132,6 +2194,7 @@ const recettes = {
   },
 
   tikamasala: {
+    cat: "plats", pays: "inde",
     base: 4,
     temps: "50 min + marinade",
     niveau: "⭐ Facile",
@@ -2165,6 +2228,7 @@ const recettes = {
   },
 
   phovietnambien: {
+    cat: "plats", pays: "vietnam",
     base: 2,
     temps: "4h (bouillon)",
     niveau: "⭐⭐ Intermédiaire",
@@ -2197,6 +2261,7 @@ const recettes = {
   },
 
   pizzamargherita: {
+    cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
     niveau: "⭐ Facile",
@@ -2231,6 +2296,7 @@ const recettes = {
   },
 
   carbonara: {
+    cat: "plats", pays: "italie",
     base: 4,
     temps: "20 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -2264,6 +2330,7 @@ const recettes = {
   },
 
   ceebujen: {
+    cat: "plats", pays: "senegal",
     base: 4,
     temps: "1h30",
     niveau: "⭐⭐ Intermédiaire",
@@ -2297,6 +2364,7 @@ const recettes = {
   },
 
   mafewestafricain: {
+    cat: "plats", pays: "senegal",
     base: 4,
     temps: "1h",
     niveau: "⭐ Facile",
@@ -2330,6 +2398,7 @@ const recettes = {
   },
 
   gnocchismaison: {
+    cat: "plats", pays: "italie",
     base: 4,
     temps: "1h",
     niveau: "⭐⭐ Intermédiaire",
@@ -2363,6 +2432,7 @@ const recettes = {
   },
 
   falafel: {
+    cat: "encas", pays: "liban",
     base: 4,
     temps: "30 min + trempage",
     niveau: "⭐ Facile",
@@ -2406,6 +2476,7 @@ const recettes = {
   },
 
   poulettandoori: {
+    cat: "plats", pays: "inde",
     base: 4,
     temps: "30 min + marinade",
     niveau: "⭐ Facile",
@@ -2438,6 +2509,7 @@ const recettes = {
   },
 
   pekinduckeasy: {
+    cat: "plats", pays: "chine",
     base: 4,
     temps: "2h30",
     niveau: "⭐⭐ Intermédiaire",
@@ -2471,6 +2543,7 @@ const recettes = {
   },
 
   ossobuco: {
+    cat: "plats", pays: "italie",
     base: 4,
     temps: "2h",
     niveau: "⭐⭐ Intermédiaire",
@@ -2504,6 +2577,7 @@ const recettes = {
   },
 
   tajinemouton: {
+    cat: "plats", pays: "maroc",
     base: 4,
     temps: "2h",
     niveau: "⭐ Facile",
@@ -2537,6 +2611,7 @@ const recettes = {
   },
 
   moelleuxchocolat: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -2570,6 +2645,7 @@ const recettes = {
   },
 
   cheesecake: {
+    cat: "desserts", pays: "usa",
     base: 8,
     temps: "1h + repos",
     niveau: "⭐⭐ Intermédiaire",
@@ -2603,6 +2679,7 @@ const recettes = {
   },
 
   painauchocolat: {
+    cat: "boulangerie", pays: "france",
     base: 8,
     temps: "3h + repos",
     niveau: "⭐⭐⭐ Difficile",
@@ -2636,6 +2713,7 @@ const recettes = {
   },
 
   gateaubasque: {
+    cat: "desserts", pays: "france",
     base: 8,
     temps: "1h30",
     niveau: "⭐⭐ Intermédiaire",
@@ -2669,6 +2747,7 @@ const recettes = {
   },
 
   canelebordelais: {
+    cat: "desserts", pays: "france",
     base: 12,
     temps: "15 min + 24h repos",
     niveau: "⭐⭐ Intermédiaire",
@@ -2712,6 +2791,7 @@ const recettes = {
   },
 
   mojitorose: {
+    cat: "cocktails", pays: "cuba",
     base: 1,
     temps: "5 min",
     niveau: "⭐ Facile",
@@ -2744,6 +2824,7 @@ const recettes = {
   },
 
   negroni: {
+    cat: "cocktails", pays: "italie",
     base: 1,
     temps: "2 min",
     niveau: "⭐ Facile",
@@ -2775,6 +2856,7 @@ const recettes = {
   },
 
   moscowmule: {
+    cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
     niveau: "⭐ Facile",
@@ -2807,6 +2889,7 @@ const recettes = {
   },
 
   pornstarmartini: {
+    cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
     niveau: "⭐ Facile",
@@ -2839,6 +2922,7 @@ const recettes = {
   },
 
   hugospritz: {
+    cat: "cocktails", pays: "italie",
     base: 1,
     temps: "2 min",
     niveau: "⭐ Facile",
@@ -2871,6 +2955,7 @@ const recettes = {
   },
 
   cherryblossommocktail: {
+    cat: "mocktails", pays: "france",
     base: 1,
     temps: "5 min",
     niveau: "⭐ Facile",
@@ -2902,6 +2987,7 @@ const recettes = {
   },
 
   oldFashioned: {
+    cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
     niveau: "⭐ Facile",
@@ -2934,6 +3020,7 @@ const recettes = {
   },
 
   gintoniqmaison: {
+    cat: "cocktails", pays: "france",
     base: 1,
     temps: "2 min",
     niveau: "⭐ Facile",
@@ -2966,6 +3053,7 @@ const recettes = {
   },
 
   shrubframboisebasilic: {
+    cat: "mocktails", pays: "france",
     base: 4,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -2997,6 +3085,7 @@ const recettes = {
   },
 
   mocktailcoconananas: {
+    cat: "mocktails", pays: "france",
     base: 2,
     temps: "5 min",
     niveau: "⭐ Facile",
@@ -3027,6 +3116,7 @@ const recettes = {
   },
 
   pizzareine: {
+    cat: "pizzas", pays: "france",
     base: 2,
     temps: "20 min + 48h pâte",
     niveau: "⭐ Facile",
@@ -3060,6 +3150,7 @@ const recettes = {
   },
 
   pizza4fromages: {
+    cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
     niveau: "⭐ Facile",
@@ -3091,6 +3182,7 @@ const recettes = {
   },
 
   pizzadiavola: {
+    cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
     niveau: "⭐ Facile",
@@ -3123,6 +3215,7 @@ const recettes = {
   },
 
   pizzasaumonepinards: {
+    cat: "pizzas", pays: "france",
     base: 2,
     temps: "20 min + 48h pâte",
     niveau: "⭐ Facile",
@@ -3155,6 +3248,7 @@ const recettes = {
   },
 
   pizzavegetarienne: {
+    cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
     niveau: "⭐ Facile",
@@ -3187,6 +3281,7 @@ const recettes = {
   },
 
   souvlakiagneau: {
+    cat: "plats", pays: "grece",
     base: 4,
     temps: "25 min + marinade",
     niveau: "⭐ Facile",
@@ -3219,6 +3314,7 @@ const recettes = {
   },
 
   tom_yam: {
+    cat: "soupes", pays: "thailande",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -3251,6 +3347,7 @@ const recettes = {
   },
 
   dorade_chermoula: {
+    cat: "plats", pays: "maroc",
     base: 4,
     temps: "40 min + marinade",
     niveau: "⭐ Facile",
@@ -3283,6 +3380,7 @@ const recettes = {
   },
 
   pouletchicken65: {
+    cat: "plats", pays: "inde",
     base: 4,
     temps: "30 min + marinade",
     niveau: "⭐ Facile",
@@ -3315,6 +3413,7 @@ const recettes = {
   },
 
   pierogi: {
+    cat: "plats", pays: "pologne",
     base: 4,
     temps: "1h30",
     niveau: "⭐⭐ Intermédiaire",
@@ -3348,6 +3447,7 @@ const recettes = {
   },
 
   momos: {
+    cat: "encas", pays: "tibet",
     base: 4,
     temps: "1h",
     niveau: "⭐⭐ Intermédiaire",
@@ -3391,6 +3491,7 @@ const recettes = {
   },
 
   shakshukaverte: {
+    cat: "brunch", pays: "liban",
     base: 2,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -3423,6 +3524,7 @@ const recettes = {
   },
 
   kebbeh: {
+    cat: "plats", pays: "liban",
     base: 4,
     temps: "45 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -3466,6 +3568,7 @@ const recettes = {
   },
 
   tteokbokki: {
+    cat: "plats", pays: "coree",
     base: 2,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -3498,6 +3601,7 @@ const recettes = {
   },
 
   porc_pulled: {
+    cat: "plats", pays: "usa",
     base: 6,
     temps: "6h",
     niveau: "⭐ Facile",
@@ -3530,6 +3634,7 @@ const recettes = {
   },
 
   dosakerdosai: {
+    cat: "brunch", pays: "inde",
     base: 4,
     temps: "30 min + 12h fermentation",
     niveau: "⭐⭐ Intermédiaire",
@@ -3562,6 +3667,7 @@ const recettes = {
   },
 
   braiseboeuf_asiatique: {
+    cat: "plats", pays: "japon",
     base: 4,
     temps: "3h",
     niveau: "⭐ Facile",
@@ -3594,6 +3700,7 @@ const recettes = {
   },
 
   paprikashpoulet: {
+    cat: "plats", pays: "hongrie",
     base: 4,
     temps: "45 min",
     niveau: "⭐ Facile",
@@ -3626,6 +3733,7 @@ const recettes = {
   },
 
   bibimbap: {
+    cat: "plats", pays: "coree",
     base: 2,
     temps: "40 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -3659,6 +3767,7 @@ const recettes = {
   },
 
   moquecabresil: {
+    cat: "plats", pays: "bresil",
     base: 4,
     temps: "40 min",
     niveau: "⭐ Facile",
@@ -3692,6 +3801,7 @@ const recettes = {
   },
 
   rendangboeuf: {
+    cat: "plats", pays: "indonesie",
     base: 4,
     temps: "3h",
     niveau: "⭐⭐ Intermédiaire",
@@ -3725,6 +3835,7 @@ const recettes = {
   },
 
   tacoshijosepastor: {
+    cat: "plats", pays: "mexique",
     base: 2,
     temps: "30 min + marinade",
     niveau: "⭐ Facile",
@@ -3757,6 +3868,7 @@ const recettes = {
   },
 
   grilladelamnocciole: {
+    cat: "plats", pays: "france",
     base: 4,
     temps: "25 min + marinade",
     niveau: "⭐ Facile",
@@ -3789,6 +3901,7 @@ const recettes = {
   },
 
   sushimaison: {
+    cat: "plats", pays: "japon",
     base: 2,
     temps: "1h",
     niveau: "⭐⭐ Intermédiaire",
@@ -3836,6 +3949,7 @@ const recettes = {
   },
 
   carigrioantillais: {
+    cat: "plats", pays: "haiti",
     base: 4,
     temps: "1h",
     niveau: "⭐ Facile",
@@ -3868,6 +3982,7 @@ const recettes = {
   },
 
   semoulecourgette: {
+    cat: "healthy", pays: "france",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -3900,6 +4015,7 @@ const recettes = {
   },
 
   pouletbasquaise: {
+    cat: "plats", pays: "france",
     base: 4,
     temps: "1h",
     niveau: "⭐ Facile",
@@ -3933,6 +4049,7 @@ const recettes = {
   },
 
   crevettespilpil: {
+    cat: "entrees", pays: "espagne",
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -3965,6 +4082,7 @@ const recettes = {
   },
 
   lasagneverdure: {
+    cat: "plats", pays: "italie",
     base: 6,
     temps: "1h30",
     niveau: "⭐⭐ Intermédiaire",
@@ -3998,6 +4116,7 @@ const recettes = {
   },
 
   crumblefruits: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "45 min",
     niveau: "⭐ Facile",
@@ -4031,6 +4150,7 @@ const recettes = {
   },
 
   pintxosbasques: {
+    cat: "encas", pays: "espagne",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -4077,6 +4197,7 @@ const recettes = {
   },
 
   misoramenleger: {
+    cat: "soupes", pays: "japon",
     base: 2,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -4110,6 +4231,7 @@ const recettes = {
   },
 
   veloutepatatepoireaux: {
+    cat: "soupes", pays: "france",
     base: 4,
     temps: "35 min",
     niveau: "⭐ Facile",
@@ -4143,6 +4265,7 @@ const recettes = {
   },
 
   terrinecampagne: {
+    cat: "entrees", pays: "france",
     base: 8,
     temps: "1h30 + repos",
     niveau: "⭐⭐ Intermédiaire",
@@ -4176,6 +4299,7 @@ const recettes = {
   },
 
   poulpegrillebresil: {
+    cat: "plats", pays: "espagne",
     base: 4,
     temps: "1h",
     niveau: "⭐⭐ Intermédiaire",
@@ -4209,6 +4333,7 @@ const recettes = {
   },
 
   pouletrotiperfect: {
+    cat: "plats", pays: "france",
     base: 4,
     temps: "1h30",
     niveau: "⭐ Facile",
@@ -4242,6 +4367,7 @@ const recettes = {
   },
 
   millefeuille: {
+    cat: "desserts", pays: "france",
     base: 8,
     temps: "1h",
     niveau: "⭐⭐ Intermédiaire",
@@ -4275,6 +4401,7 @@ const recettes = {
   },
 
   saumoncrouteherbes: {
+    cat: "plats", pays: "france",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -4308,6 +4435,7 @@ const recettes = {
   },
 
   tequilasunrise: {
+    cat: "cocktails", pays: "mexique",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🌅",
     description: "Le Tequila Sunrise — tequila, jus d'orange et grenadine qui forme un magnifique dégradé. Le cocktail coucher de soleil !",
     tableauTequilaSunrise: [
@@ -4336,6 +4464,7 @@ const recettes = {
   },
 
   aperolspritzrosa: {
+    cat: "cocktails", pays: "italie",
     base: 1, temps: "2 min", niveau: "⭐ Facile", emoji: "🌸",
     description: "Spritz Rosé — Aperol, rosé pétillant et eau gazeuse. La version plus douce et fruitée du Spritz classique.",
     tableauAperolRosa: [
@@ -4364,6 +4493,7 @@ const recettes = {
   },
 
   espressoMartini: {
+    cat: "cocktails", pays: "usa",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "☕",
     description: "L'Espresso Martini — vodka, liqueur de café et espresso frais. Le cocktail après-dîner qui réveille et plaît à tout le monde.",
     tableauEspressoMartini: [
@@ -4393,6 +4523,7 @@ const recettes = {
   },
 
   punchfruitsrouges: {
+    cat: "cocktails", pays: "france",
     base: 8, temps: "10 min", niveau: "⭐ Facile", emoji: "🍓",
     description: "Punch aux fruits rouges — rhum, fruits frais, jus de fruits et ginger beer. Le cocktail de fête qui régale tout le monde.",
     tableauPunchRouge: [
@@ -4422,6 +4553,7 @@ const recettes = {
   },
 
   blueLagoon: {
+    cat: "cocktails", pays: "usa",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🫐",
     description: "Le Blue Lagoon — vodka, curaçao bleu et limonade. Un cocktail visuellement spectaculaire et légèrement sucré.",
     tableauBlueLagoon: [
@@ -4450,6 +4582,7 @@ const recettes = {
   },
 
   mimosa: {
+    cat: "cocktails", pays: "france",
     base: 1, temps: "2 min", niveau: "⭐ Facile", emoji: "🍾",
     description: "Le Mimosa — champagne et jus d'orange frais en parts égales. Le cocktail du brunch par excellence, élégant et léger.",
     tableauMimosa: [
@@ -4478,6 +4611,7 @@ const recettes = {
   },
 
   sidecarvintage: {
+    cat: "cocktails", pays: "france",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🥃",
     description: "Le Sidecar — cognac, Cointreau et jus de citron. Un cocktail des années 1920, sec et élégant, avec le rebord sucré.",
     tableauSidecar: [
@@ -4507,6 +4641,7 @@ const recettes = {
   },
 
   mocktailberrybliss: {
+    cat: "mocktails", pays: "france",
     base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🫐",
     description: "Berry Bliss Mocktail — myrtilles, framboises, jus de cranberry et eau gazeuse. Un mocktail antioxydant et spectaculaire sans alcool.",
     tableauBerryBliss: [
@@ -4535,6 +4670,7 @@ const recettes = {
   },
 
   gingerlemondrop: {
+    cat: "cocktails", pays: "usa",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍋",
     description: "Lemon Drop Gingembre — vodka citronnée, jus de citron frais et gingembre. Sec, pétillant et revigorant !",
     tableauLemonDrop: [
@@ -4564,6 +4700,7 @@ const recettes = {
   },
 
   mocktailcoconorchidee: {
+    cat: "mocktails", pays: "france",
     base: 2, temps: "5 min", niveau: "⭐ Facile", emoji: "🌺",
     description: "Mocktail Coco Orchidée — lait de coco, sirop de fleur d'oranger, citron vert et eau gazeuse. Exotique, floral et sans alcool.",
     tableauCocoOrchidee: [
@@ -4592,6 +4729,7 @@ const recettes = {
   },
 
   pizzaprosciuttoroquette: {
+    cat: "pizzas", pays: "italie",
     base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🍕",
     description: "Pizza Prosciutto Roquette — jambon de Parme posé après cuisson sur mozzarella fondante, roquette fraîche et parmesan. L'élégance italienne.",
     tableauPizzaProsciutto: [
@@ -4621,6 +4759,7 @@ const recettes = {
   },
 
   pizzatruffe: {
+    cat: "pizzas", pays: "italie",
     base: 2, temps: "20 min + 48h pâte", niveau: "⭐⭐ Intermédiaire", emoji: "🍄",
     description: "Pizza à la Truffe — crème de truffe, mozzarella, champignons et huile de truffe. Une pizza gastronomique pour les grandes occasions.",
     tableauPizzaTruffe: [
@@ -4650,6 +4789,7 @@ const recettes = {
   },
 
   pizzabiancoverdure: {
+    cat: "pizzas", pays: "italie",
     base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🤍",
     description: "Pizza Bianca aux Légumes — base ricotta sans tomate, courgette fine, asperges et parmesan. Légère, printanière et raffinée.",
     tableauPizzaBianca: [
@@ -4679,6 +4819,7 @@ const recettes = {
   },
 
   pizzacalzone: {
+    cat: "pizzas", pays: "italie",
     base: 2, temps: "25 min + 48h pâte", niveau: "⭐⭐ Intermédiaire", emoji: "🌙",
     description: "Le Calzone — pizza fermée farcie de ricotta, jambon, mozzarella et sauce tomate. La pizza-chausson napolitaine croustillante.",
     tableauCalzone: [
@@ -4709,6 +4850,7 @@ const recettes = {
   },
 
   pizzapoivrons: {
+    cat: "pizzas", pays: "italie",
     base: 2, temps: "30 min + 48h pâte", niveau: "⭐ Facile", emoji: "🫑",
     description: "Pizza aux Poivrons Rôtis — poivrons confits au four, anchois, câpres et olives noires. Généreuse et méditerranéenne.",
     tableauPizzaPoivrons: [
@@ -4738,6 +4880,7 @@ const recettes = {
   },
 
   pizzapatate: {
+    cat: "pizzas", pays: "italie",
     base: 2, temps: "30 min + 48h pâte", niveau: "⭐ Facile", emoji: "🥔",
     description: "Pizza Patate — base ricotta, pommes de terre ultra-fines, romarin et pecorino. La pizza romaine blanche et croustillante au format pala.",
     tableauPizzaPatate: [
@@ -4768,6 +4911,7 @@ const recettes = {
   },
 
   pizzabresilienne: {
+    cat: "pizzas", pays: "bresil",
     base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🍕",
     description: "Pizza Brésilienne — tomates, mozzarella, cœurs de palmier, maïs et olives. La pizza São Paulo, version fusion tropicale !",
     tableauPizzaBresil: [
@@ -4797,6 +4941,7 @@ const recettes = {
   },
 
   lasagneviande: {
+    cat: "plats", pays: "italie",
     base: 6,
     temps: "1h30",
     niveau: "⭐⭐ Intermédiaire",
@@ -4832,6 +4977,7 @@ const recettes = {
 
 
   risottoprimavera: {
+    cat: "plats", pays: "italie",
     base: 4,
     temps: "35 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -4868,6 +5014,7 @@ const recettes = {
 
 
   pizzachorizo: {
+    cat: "pizzas", pays: "italie",
     base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🌶️",
     description: "Pizza Chorizo — sauce tomate, mozzarella, chorizo croustillant et poivrons rôtis. Relevée, généreuse, irrésistible !",
     tableauPizzaChorizo: [
@@ -4898,6 +5045,7 @@ const recettes = {
   },
 
   pouletteriyaki: {
+    cat: "plats", pays: "japon",
     base: 4, temps: "25 min + marinade", niveau: "⭐ Facile", emoji: "🍗",
     description: "Poulet Teriyaki maison — sauce sucrée-salée laquée, riz vapeur et sésame. Le classique japonais simple et addictif.",
     tableauPouletTeriyaki: [
@@ -4927,6 +5075,7 @@ const recettes = {
   },
 
   curryverthai: {
+    cat: "plats", pays: "thailande",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍛",
     description: "Curry Vert Thaïlandais — pâte de curry vert, lait de coco, légumes et poulet. Parfumé, crémeux et légèrement piquant.",
     tableauCurryVerthai: [
@@ -4957,6 +5106,7 @@ const recettes = {
   },
 
   chiliconcarneV: {
+    cat: "plats", pays: "usa",
     base: 4, temps: "1h", niveau: "⭐ Facile", emoji: "🌶️",
     description: "Chili Con Carne — bœuf haché, haricots rouges, tomates et épices tex-mex. Le plat américain réconfortant qui réchauffe !",
     tableauChiliCarne: [
@@ -4987,6 +5137,7 @@ const recettes = {
   },
 
   koreanfriedchicken: {
+    cat: "plats", pays: "coree",
     base: 4, temps: "35 min", niveau: "⭐⭐ Intermédiaire", emoji: "🍗",
     description: "Korean Fried Chicken — double friture pour une panure ultra croustillante, sauce gochujang sucrée-piquante. Le KFC version Séoul !",
     tableauKFC: [
@@ -5017,6 +5168,7 @@ const recettes = {
   },
 
   risottoMilanese: {
+    cat: "plats", pays: "italie",
     base: 4, temps: "35 min", niveau: "⭐⭐ Intermédiaire", emoji: "🌼",
     description: "Risotto Milanese au safran — le riz crémeux teint en or par le safran, mantecato au parmesan et beurre. La grande recette lombarde.",
     tableauRisottoMilanese: [
@@ -5047,6 +5199,7 @@ const recettes = {
   },
 
   soupeAziatique: {
+    cat: "soupes", pays: "japon",
     base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "🍲",
     description: "Soupe Asiatique aux nouilles — bouillon de poulet au gingembre, nouilles de riz, légumes croquants et coriandre fraîche.",
     tableauSoupeAziat: [
@@ -5076,6 +5229,7 @@ const recettes = {
   },
 
   tartareSaumon: {
+    cat: "entrees", pays: "france",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🐟",
     description: "Tartare de Saumon — saumon frais coupé au couteau, avocat, citron et herbes. Frais, élégant et prêt en 20 minutes.",
     tableauTartareSaumon: [
@@ -5106,6 +5260,7 @@ const recettes = {
 
 
   tiramisufraise: {
+    cat: "desserts", pays: "italie",
     base: 6, temps: "30 min + 4h repos", niveau: "⭐ Facile", emoji: "🍓",
     description: "Tiramisu aux Fraises — version estivale sans café ni alcool, avec coulis de fraises et biscuits à la cuillère. Léger et fruité !",
     tableauTiramisuFraise: [
@@ -5136,6 +5291,7 @@ const recettes = {
   },
 
   pouletCocoLemon: {
+    cat: "plats", pays: "france",
     base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🍋",
     description: "Poulet Coco Citron — poulet dans une sauce crémeuse au lait de coco et citron confit. Doux, exotique et parfumé.",
     tableauPouletCocoL: [
@@ -5166,6 +5322,7 @@ const recettes = {
   },
 
   crepesSucrées: {
+    cat: "brunch", pays: "france",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍮",
     description: "Crêpes Sucrées Garnies — crêpes fines façon beurre-sucre, Nutella, confiture ou flambées au Grand Marnier. La vraie recette bretonne.",
     tableauCrepesSucrees: [
@@ -5196,6 +5353,7 @@ const recettes = {
   },
 
   poireauVinaigrette: {
+    cat: "entrees", pays: "france",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🥬",
     description: "Poireaux Vinaigrette — poireaux fondants, vinaigrette moutardée et œufs mimosa. L'entrée bistrot français par excellence.",
     tableauPoireauVinaigrette: [
@@ -5225,6 +5383,7 @@ const recettes = {
   },
 
   spaetzle: {
+    cat: "plats", pays: "france",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍜",
     description: "Spätzle alsaciens — petites pâtes fraîches au fromage ou au beurre noisette. La spécialité réconfortante d'Alsace.",
     tableauSpaetzle: [
@@ -5254,6 +5413,7 @@ const recettes = {
   },
 
   wagyuBurger: {
+    cat: "plats", pays: "usa",
     base: 2, temps: "25 min", niveau: "⭐ Facile", emoji: "🍔",
     description: "Burger Wagyu Maison — steak haché de qualité, sauce burger maison, cheddar fondu et buns briochés. Le burger gourmet !",
     tableauWagyuBurger: [
@@ -5284,6 +5444,7 @@ const recettes = {
   },
 
   lemonPasta: {
+    cat: "plats", pays: "italie",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🍋",
     description: "Lemon Pasta — pâtes crémeuses au citron, parmesan et basilic. La recette virale italienne en 5 ingrédients, prête en 20 minutes !",
     tableauLemonPasta: [
@@ -5314,6 +5475,7 @@ const recettes = {
   },
 
   soupeMinestrone: {
+    cat: "soupes", pays: "italie",
     base: 4, temps: "45 min", niveau: "⭐ Facile", emoji: "🥣",
     description: "Minestrone italien — soupe aux légumes de saison, haricots et petites pâtes. Épaisse, nourrissante et pleine de vitamines !",
     tableauMinestrone: [
@@ -5344,6 +5506,7 @@ const recettes = {
   },
 
   blanquetteveau: {
+    cat: "plats", pays: "france",
     base: 4, temps: "1h30", niveau: "⭐ Facile", emoji: "🥩",
     description: "La Blanquette de Veau — le grand classique français. Veau tendre dans une sauce blanche crémeuse au citron et champignons.",
     tableauBlanquette: [
@@ -5374,6 +5537,7 @@ const recettes = {
   },
 
   navarin: {
+    cat: "plats", pays: "france",
     base: 4, temps: "1h30", niveau: "⭐ Facile", emoji: "🐑",
     description: "Navarin d'Agneau printanier — morceaux d'agneau mijotés avec petits pois, carottes nouvelles et navets. Le plat de printemps français.",
     tableauNavarin: [
@@ -5404,6 +5568,7 @@ const recettes = {
   },
 
   camembertRoti: {
+    cat: "encas", pays: "france",
     base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🧀",
     description: "Camembert Rôti au Four — camembert entier rôti avec miel, romarin et noix. Fondu et coulant, à tremper avec du pain.",
     tableauCamembertRoti: [
@@ -5433,6 +5598,7 @@ const recettes = {
   },
 
   tarteFlambee: {
+    cat: "plats", pays: "france",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🥧",
     description: "Tarte Flambée Alsacienne (Flammekueche) — pâte fine et croustillante, crème fraîche, lardons et oignons. La pizza alsacienne !",
     tableauTarteFlambee: [
@@ -5462,6 +5628,7 @@ const recettes = {
   },
 
   pouletMisoGingembre: {
+    cat: "plats", pays: "japon",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍗",
     description: "Poulet Miso Gingembre — filets de poulet laqués à la sauce miso-mirin-gingembre. Umami, sucré-salé et ultra rapide.",
     tableauPouletMiso: [
@@ -5491,6 +5658,7 @@ const recettes = {
   },
 
   noodlesWok: {
+    cat: "plats", pays: "chine",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥢",
     description: "Noodles Sautés au Wok — nouilles de riz, légumes croquants, œuf et sauce soja. Le plat wok rapide et savoureux de tous les soirs.",
     tableauNoodlesWok: [
@@ -5521,6 +5689,7 @@ const recettes = {
   },
 
   maffeSenegal: {
+    cat: "plats", pays: "senegal",
     base: 4, temps: "1h", niveau: "⭐ Facile", emoji: "🥜",
     description: "Maafé Sénégalais au poulet — sauce d'arachide onctueuse, tomates et épices. Version plus légère et rapide du maafé traditionnel.",
     tableauMaffeSenegal: [
@@ -5551,6 +5720,7 @@ const recettes = {
   },
 
   gazpachoMelon: {
+    cat: "entrees", pays: "espagne",
     base: 4, temps: "15 min + repos", niveau: "⭐ Facile", emoji: "🍈",
     description: "Gaspacho de Melon au Jambon de Parme — soupe froide sucrée-salée, fraîche et estivale. L'entrée d'été qui impressionne en 15 min.",
     tableauGazpachoMelon: [
@@ -5579,6 +5749,7 @@ const recettes = {
   },
 
   wafflesSales: {
+    cat: "encas", pays: "france",
     base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "🧇",
     description: "Gaufres Salées — pâte à gaufre avec fromage et herbes, servies avec saumon fumé et crème. L'apéro original qui étonne !",
     tableauWafflesSales: [
@@ -5608,6 +5779,7 @@ const recettes = {
   },
 
   choucroute: {
+    cat: "plats", pays: "france",
     base: 6, temps: "2h", niveau: "⭐ Facile", emoji: "🥬",
     description: "La Choucroute Garnie Alsacienne — chou fermenté mijoté au Riesling avec saucisses, jarret et lard fumé. Le plat alsacien festif.",
     tableauChoucroute: [
@@ -5639,6 +5811,7 @@ const recettes = {
   },
 
   sconeBritish: {
+    cat: "brunch", pays: "france",
     base: 8, temps: "25 min", niveau: "⭐ Facile", emoji: "🫖",
     description: "Scones Britanniques — petits pains moelleux à la fève de tonka, servis avec clotted cream et confiture. Le vrai afternoon tea !",
     tableauScone: [
@@ -5670,6 +5843,7 @@ const recettes = {
   },
 
   calamarsRomaine: {
+    cat: "entrees", pays: "espagne",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🦑",
     description: "Calamars à la Romaine — encornets en beignets croustillants, ail, citron et sauce aïoli. L'encas méditerranéen du bord de mer.",
     tableauCalamars: [
@@ -5699,6 +5873,7 @@ const recettes = {
   },
 
   baklava: {
+    cat: "desserts", pays: "liban",
     base: 12, temps: "1h30", niveau: "⭐⭐ Intermédiaire", emoji: "🍯",
     description: "Baklava Turc — feuilles de pâte filo, pistaches hachées et sirop au miel de fleur d'oranger. Le dessert du Moyen-Orient.",
     tableauBaklava: [
@@ -5730,6 +5905,7 @@ const recettes = {
   },
 
   eggsBenedict: {
+    cat: "brunch", pays: "usa",
     base: 2, temps: "30 min", niveau: "⭐⭐ Intermédiaire", emoji: "🥚",
     description: "Eggs Benedict — muffins anglais toastés, jambon, œuf poché et sauce hollandaise. Le brunch new-yorkais de légende.",
     tableauEggsBenedict: [
@@ -5759,6 +5935,7 @@ const recettes = {
   },
 
   porkBelly: {
+    cat: "plats", pays: "chine",
     base: 4, temps: "3h", niveau: "⭐ Facile", emoji: "🐷",
     description: "Pork Belly Caramélisé — poitrine de porc confite et laquée à la sauce soja et miel. La viande fondante ultime, recette asiatique.",
     tableauPorkBelly: [
@@ -5788,6 +5965,7 @@ const recettes = {
   },
 
   veloutePoiron: {
+    cat: "soupes", pays: "france",
     base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🎃",
     description: "Velouté de Potiron au Gingembre — soupe onctueuse de courge butternut, gingembre frais et lait de coco. Réconfortant et parfumé.",
     tableauVeloutePotiron: [
@@ -5818,6 +5996,7 @@ const recettes = {
   },
 
   chocolatChaud: {
+    cat: "brunch", pays: "france",
     base: 2, temps: "10 min", niveau: "⭐ Facile", emoji: "☕",
     description: "Chocolat Chaud Maison — chocolat noir fondu dans le lait entier, onctueux et intense. Le vrai chocolat chaud parisien.",
     tableauChocolatChaud: [
@@ -5847,6 +6026,7 @@ const recettes = {
   },
 
   granolaMaison: {
+    cat: "brunch", pays: "france",
     base: 6, temps: "30 min", niveau: "⭐ Facile", emoji: "🌾",
     description: "Granola Maison — flocons d'avoine caramélisés au miel, noix, graines et fruits secs. Croustillant, sain et sans conservateurs.",
     tableauGranolaMaison: [
@@ -5876,6 +6056,7 @@ const recettes = {
   },
 
   tartetatinpommes: {
+    cat: "desserts", pays: "france",
     base: 6, temps: "1h", niveau: "⭐⭐ Intermédiaire", emoji: "🍎",
     description: "La Tarte Tatin — pommes caramélisées renversées sur une pâte croustillante. Le dessert français emblématique, né d'un accident heureux !",
     tableauTarteTatin: [
@@ -5906,6 +6087,7 @@ const recettes = {
   },
 
   croissant: {
+    cat: "boulangerie", pays: "france",
     base: 8, temps: "3h + 12h repos", niveau: "⭐⭐⭐ Expert", emoji: "🥐",
     description: "Croissants au Beurre — la recette classique de la boulangerie française. Feuilletage beurré, croustillant dehors et filant dedans.",
     tableauCroissant: [
@@ -5929,6 +6111,7 @@ const recettes = {
   },
 
   verrineframboisechocolat: {
+    cat: "desserts", pays: "france",
     base: 4, temps: "30 min + 2h frigo", niveau: "⭐ Facile", emoji: "🍫",
     description: "Verrines Framboise Chocolat — mousse au chocolat noir, coulis de framboise et crème chantilly. Élégant, rapide et sans cuisson.",
     tableauVerrineFramboise: [
@@ -5958,6 +6141,7 @@ const recettes = {
   },
 
   sauteporc: {
+    cat: "plats", pays: "france",
     base: 4, temps: "45 min", niveau: "⭐ Facile", emoji: "🐷",
     description: "Sauté de Porc aux Légumes — porc tendre sauté avec carottes, courgettes et sauce aux herbes. Le plat du quotidien rapide et savoureux.",
     tableauSautePorc: [
@@ -5987,6 +6171,7 @@ const recettes = {
   },
 
   veloutecourgette: {
+    cat: "soupes", pays: "france",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🥒",
     description: "Velouté de Courgettes au Chèvre — soupe crémeuse de courgettes fondantes avec fromage de chèvre et basilic. Légère et estivale.",
     tableauVelouteCourgette: [
@@ -6015,6 +6200,7 @@ const recettes = {
   },
 
   ratatouille: {
+    cat: "plats", pays: "france",
     base: 4, temps: "1h", niveau: "⭐ Facile", emoji: "🫑",
     description: "La Ratatouille Provençale — aubergines, courgettes, poivrons et tomates mijotés aux herbes de Provence. Le plat d'été méditerranéen.",
     tableauRatatouille: [
@@ -6045,6 +6231,7 @@ const recettes = {
 
 
   financiers: {
+    cat: "brunch", pays: "france",
     base: 12, temps: "25 min", niveau: "⭐ Facile", emoji: "🟡",
     description: "Financiers aux Amandes — petits gâteaux moelleux au beurre noisette et poudre d'amande. La mignardise de pâtisserie française.",
     tableauFinanciers: [
@@ -6065,6 +6252,7 @@ const recettes = {
   },
 
   choufleurgratin: {
+    cat: "plats", pays: "france",
     base: 4, temps: "45 min", niveau: "⭐ Facile", emoji: "🥦",
     description: "Gratin de Chou-fleur Béchamel — chou-fleur fondant nappé de béchamel crémeuse et gratiné au gruyère. Le gratin végétarien réconfortant.",
     tableauChoufleurGratin: [
@@ -6094,6 +6282,7 @@ const recettes = {
   },
 
   salmongrillee: {
+    cat: "plats", pays: "france",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🐟",
     description: "Pavé de Saumon Grillé au Citron — saumon grillé à la poêle, sauce au beurre citronné et câpres. Simple, rapide et élégant.",
     tableauSalmonGrillee: [
@@ -6123,6 +6312,7 @@ const recettes = {
   },
 
   sobejaponais: {
+    cat: "healthy", pays: "japon",
     base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🍜",
     description: "Soba Japonais Froids — nouilles de sarrasin servies froides avec sauce tsuyu, dashi et garnitures. Le repas estival japonais par excellence.",
     tableauSoba: [
@@ -6151,6 +6341,7 @@ const recettes = {
   },
 
   tartepistache: {
+    cat: "desserts", pays: "france",
     base: 8, temps: "1h + 3h frigo", niveau: "⭐⭐ Intermédiaire", emoji: "🟢",
     description: "Tarte à la Pistache — crème de pistache sur pâte sablée dorée, avec framboises fraîches. La tarte de pâtisserie qui fait sensation.",
     tableauTartePistache: [
@@ -6172,6 +6363,7 @@ const recettes = {
   },
 
   agneluroti: {
+    cat: "plats", pays: "france",
     base: 6, temps: "2h", niveau: "⭐ Facile", emoji: "🐑",
     description: "Gigot d'Agneau Rôti — le grand classique du dimanche français. Agneau parfumé à l'ail et au romarin, jus de cuisson corsé.",
     tableauAgnelRoti: [
@@ -6201,6 +6393,7 @@ const recettes = {
   },
 
   crepesbretonnes: {
+    cat: "plats", pays: "france",
     base: 4, temps: "30 min + 1h repos", niveau: "⭐ Facile", emoji: "🫓",
     description: "Galettes Bretonnes — crêpes de blé noir (sarrasin) garnies jambon-fromage-œuf. La vraie galette complete bretonne !",
     tableauCrepesBretonnes: [
@@ -6222,6 +6415,7 @@ const recettes = {
   },
 
   stroganov: {
+    cat: "plats", pays: "russie",
     base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🥩",
     description: "Bœuf Stroganoff — lanières de bœuf dans une sauce crémeuse aux champignons et moutarde. Le grand classique russe, servi sur riz ou pâtes.",
     tableauStroganov: [
@@ -6251,6 +6445,7 @@ const recettes = {
   },
 
   pizzahawaienne: {
+    cat: "pizzas", pays: "italie",
     base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🍍",
     description: "Pizza Hawaïenne — sauce tomate, mozzarella, jambon et ananas. La pizza sucrée-salée qui divise... mais qui plaît !",
     tableauPizzaHawaiene: [
@@ -6280,6 +6475,7 @@ const recettes = {
   },
 
   pouletescalopes: {
+    cat: "plats", pays: "france",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🍗",
     description: "Escalopes de Poulet Panées — panure croustillante maison, citron et salade. Le classique rapide des familles qui plaît à tous.",
     tableauPouletEscalopes: [
@@ -6309,6 +6505,7 @@ const recettes = {
   },
 
   tofusaute: {
+    cat: "healthy", pays: "japon",
     base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "🧀",
     description: "Tofu Sauté Sauce Teriyaki — cubes de tofu ferme caramélisés à la sauce teriyaki, riz et légumes. Un plat vegan savoureux et protéiné.",
     tableauTofuSaute: [
@@ -6338,6 +6535,7 @@ const recettes = {
   },
 
   saladecaprese: {
+    cat: "entrees", pays: "italie",
     base: 4, temps: "10 min", niveau: "⭐ Facile", emoji: "🍅",
     description: "Salade Caprese — tomates mûres, mozzarella di bufala et basilic frais. La salade italienne la plus simple et la plus belle.",
     tableauCaprese: [
@@ -6366,6 +6564,7 @@ const recettes = {
   },
 
   moulesmarinieres: {
+    cat: "plats", pays: "france",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🦪",
     description: "Moules Marinières — moules fraîches ouvertes au vin blanc avec échalotes et persil. Le grand classique du bord de mer français.",
     tableauMoulesMarinieres: [
@@ -6395,6 +6594,7 @@ const recettes = {
   },
 
   coktailcosmopolitan: {
+    cat: "cocktails", pays: "usa",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍸",
     description: "Sex on the Beach — vodka, pêche, jus d'orange et cranberry. Le cocktail tropical fruité et coloré des soirées d'été.",
     tableauSexBeach: [
@@ -6423,6 +6623,7 @@ const recettes = {
   },
 
   mocktailmentheagume: {
+    cat: "mocktails", pays: "france",
     base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🌿",
     description: "Mocktail Menthe Concombre — concombre frais, menthe, citron vert et eau gazeuse. Le mocktail ultra-frais et detox de l'été.",
     tableauMocktailMenthe: [
@@ -6451,6 +6652,7 @@ const recettes = {
   },
 
   tartechocolatcaramel: {
+    cat: "desserts", pays: "france",
     base: 8, temps: "1h + 2h frigo", niveau: "⭐⭐ Intermédiaire", emoji: "🍫",
     description: "Tarte Chocolat Caramel Beurre Salé — ganache chocolat noir sur caramel au beurre salé dans une pâte sablée. La tarte indulgente !",
     tableauTarteChocoCaramel: [
@@ -6472,6 +6674,7 @@ const recettes = {
   },
 
   soupeharira: {
+    cat: "soupes", pays: "maroc",
     base: 6, temps: "1h", niveau: "⭐ Facile", emoji: "🫘",
     description: "Harira Marocaine — soupe de lentilles, pois chiches, tomates et épices. La soupe du Ramadan, nourrissante et parfumée.",
     tableauSoupeHarira: [
@@ -6500,6 +6703,7 @@ const recettes = {
     ]
   },
   boeufbourguignon: {
+    cat: "plats", pays: "france",
     base: 6,
     temps: "3h30 + marinade",
     niveau: "⭐⭐ Intermédiaire",
@@ -6537,6 +6741,7 @@ const recettes = {
   },
 
   risotto: {
+    cat: "plats", pays: "italie",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -6571,6 +6776,7 @@ const recettes = {
   },
 
   gratindauphinois: {
+    cat: "plats", pays: "france",
     base: 6,
     temps: "1h30",
     niveau: "⭐ Facile",
@@ -6606,6 +6812,7 @@ const recettes = {
   },
 
   cremebrulee: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "45 min + repos",
     niveau: "⭐ Facile",
@@ -6641,6 +6848,7 @@ const recettes = {
   },
 
   mousseauchocolat: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "20 min + 2h repos",
     niveau: "⭐ Facile",
@@ -6675,6 +6883,7 @@ const recettes = {
   },
 
   ileflottante: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "40 min",
     niveau: "⭐⭐ Intermédiaire",
@@ -6710,6 +6919,7 @@ const recettes = {
   },
 
   fondantchocolat: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -6744,6 +6954,7 @@ const recettes = {
   },
 
   madeleine: {
+    cat: "desserts", pays: "france",
     base: 12,
     temps: "30 min + repos",
     niveau: "⭐ Facile",
@@ -6782,6 +6993,7 @@ const recettes = {
   },
 
   bananabread: {
+    cat: "brunch", pays: "usa",
     base: 8,
     temps: "15 min + 1h four",
     niveau: "⭐ Facile",
@@ -6817,6 +7029,7 @@ const recettes = {
 
 
   veloutelegumes: {
+    cat: "soupes", pays: "france",
     base: 4,
     temps: "35 min",
     niveau: "⭐ Facile",
@@ -6852,6 +7065,7 @@ const recettes = {
 
 
   overnightoats: {
+    cat: "brunch", pays: "usa",
     base: 1,
     temps: "5 min + nuit repos",
     niveau: "⭐ Facile",
@@ -6885,6 +7099,7 @@ const recettes = {
   },
 
   buddhaBowl: {
+    cat: "healthy", pays: "usa",
     base: 2,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -6919,6 +7134,7 @@ const recettes = {
   },
 
   soupemiso: {
+    cat: "soupes", pays: "japon",
     base: 2,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -6953,6 +7169,7 @@ const recettes = {
   },
 
   wrappoulet: {
+    cat: "plats", pays: "usa",
     base: 2,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -6986,6 +7203,7 @@ const recettes = {
   },
 
   energyballs: {
+    cat: "encas", pays: "usa",
     base: 12,
     temps: "15 min + 30 min frigo",
     niveau: "⭐ Facile",
@@ -7019,6 +7237,7 @@ const recettes = {
   },
 
   pancakesproteine: {
+    cat: "brunch", pays: "usa",
     base: 2,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -7052,6 +7271,7 @@ const recettes = {
   },
 
   bowlacai: {
+    cat: "brunch", pays: "usa",
     base: 1,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -7084,6 +7304,7 @@ const recettes = {
   },
 
   saladepoischiches: {
+    cat: "healthy", pays: "liban",
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
@@ -7117,6 +7338,7 @@ const recettes = {
   },
 
   gaspacho: {
+    cat: "entrees", pays: "espagne",
     base: 4,
     temps: "15 min + 2h frigo",
     niveau: "⭐ Facile",
@@ -7150,6 +7372,7 @@ const recettes = {
   },
 
   curryledumes: {
+    cat: "healthy", pays: "inde",
     base: 4,
     temps: "35 min",
     niveau: "⭐ Facile",
@@ -7182,6 +7405,7 @@ const recettes = {
     ]
   },
   houmous: {
+    cat: "encas", pays: "liban",
     base: 6,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -7214,6 +7438,7 @@ const recettes = {
     ]
   },
   clafoutis: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "~50 min",
     niveau: "⭐ Facile",
@@ -7260,6 +7485,7 @@ const recettes = {
   },
 
   pancakes: {
+    cat: "brunch", pays: "usa",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -7298,6 +7524,7 @@ const recettes = {
   },
 
   muffins: {
+    cat: "brunch", pays: "usa",
     base: 12,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -7340,6 +7567,7 @@ const recettes = {
   },
 
   croquemonsieur: {
+    cat: "encas", pays: "france",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
@@ -7374,6 +7602,7 @@ const recettes = {
   },
 
   smoothiebowl: {
+    cat: "healthy", pays: "usa",
     base: 2,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -7407,6 +7636,7 @@ const recettes = {
   },
 
   saladequinoa: {
+    cat: "healthy", pays: "usa",
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
@@ -7441,6 +7671,7 @@ const recettes = {
   },
 
   yaourt: {
+    cat: "healthy", pays: "france",
     base: 8,
     temps: "10 min + 8h repos",
     niveau: "⭐ Facile",
@@ -7475,6 +7706,7 @@ const recettes = {
   },
 
   tartecitron: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "1h30 + repos",
     niveau: "⭐⭐ Intermédiaire",
@@ -7510,6 +7742,7 @@ const recettes = {
   },
 
   tarteaupommes: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "~1h",
     niveau: "⭐ Facile",
@@ -7547,6 +7780,7 @@ const recettes = {
   },
 
   tiramisu: {
+    cat: "desserts", pays: "italie",
     base: 6,
     temps: "25 min + 12h repos",
     niveau: "⭐ Facile",
@@ -7584,6 +7818,7 @@ const recettes = {
   },
 
   flan: {
+    cat: "desserts", pays: "france",
     base: 6,
     temps: "~1h + refroidissement",
     niveau: "⭐ Facile",
@@ -7636,6 +7871,7 @@ const recettes = {
   // ============================================================
 
   cassoulet: {
+    cat: "plats", pays: "france",
     base: 4, temps: "2h30", niveau: "⭐⭐ Moyen", emoji: "🫘",
     description: "Le cassoulet toulousain — haricots blancs mijotés avec saucisses, confit de canard et couenne. Un plat du Sud-Ouest généreux et savoureux.",
     tableauCassoulet: [
@@ -7666,6 +7902,7 @@ const recettes = {
   },
 
   hachisparmentier: {
+    cat: "plats", pays: "france",
     base: 4, temps: "50 min", niveau: "⭐ Facile", emoji: "🥔",
     description: "Le hachis parmentier — viande hachée mijotée sous une généreuse purée de pommes de terre gratinée. Le classique réconfortant de nos grands-mères.",
     tableauHachis: [
@@ -7695,6 +7932,7 @@ const recettes = {
   },
 
   daubeProvencale: {
+    cat: "plats", pays: "france",
     base: 4, temps: "3h", niveau: "⭐⭐ Moyen", emoji: "🥩",
     description: "La daube provençale — bœuf mijoté au vin rouge avec olives, herbes de Provence et orange. Un plat du soleil qui embaume toute la maison.",
     tableauDaube: [
@@ -7725,6 +7963,7 @@ const recettes = {
   },
 
   pouletNormande: {
+    cat: "plats", pays: "france",
     base: 4, temps: "45 min", niveau: "⭐ Facile", emoji: "🍗",
     description: "Poulet à la normande — suprêmes de poulet mijotés au cidre avec crème fraîche et pommes. La douceur de la Normandie dans votre assiette.",
     tableauPNormande: [
@@ -7755,6 +7994,7 @@ const recettes = {
   },
 
   tajinepoulet: {
+    cat: "plats", pays: "maroc",
     base: 4, temps: "1h", niveau: "⭐ Facile", emoji: "🍋",
     description: "Tajine de poulet au citron confit et olives — les saveurs du Maroc en un plat parfumé aux épices douces, citrons confits et olives vertes.",
     tableauTajinePoulet: [
@@ -7784,6 +8024,7 @@ const recettes = {
   },
 
   saltimbocca: {
+    cat: "plats", pays: "italie",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥩",
     description: "Saltimbocca alla romana — escalopes de veau garnies de jambon cru et sauge, sautées au beurre et déglacées au vin blanc. Un classique romain en 20 minutes.",
     tableauSaltimbocca: [
@@ -7813,6 +8054,7 @@ const recettes = {
   },
 
   bouillabaisse: {
+    cat: "plats", pays: "france",
     base: 4, temps: "1h30", niveau: "⭐⭐⭐ Expert", emoji: "🐟",
     description: "La vraie bouillabaisse marseillaise — soupe de poissons rocailleux, safran, rouille et croûtons. Un monument de la cuisine provençale.",
     tableauBouillabaisse: [
@@ -7843,6 +8085,7 @@ const recettes = {
   },
 
   gratinPates: {
+    cat: "plats", pays: "france",
     base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🍝",
     description: "Gratin de pâtes — macaronis nappés de béchamel crémeuse, jambon et fromage fondu gratinés au four. Simple, gourmand et inratable.",
     tableauGratinPates: [
@@ -7872,6 +8115,7 @@ const recettes = {
   },
 
   volauVent: {
+    cat: "plats", pays: "france",
     base: 4, temps: "45 min", niveau: "⭐⭐ Moyen", emoji: "🥐",
     description: "Vol-au-vent aux fruits de mer — croustillants feuilletés garnis d'une onctueuse fricassée de crevettes et noix de Saint-Jacques en sauce veloutée.",
     tableauVolauVent: [
@@ -7901,6 +8145,7 @@ const recettes = {
   },
 
   jambonneauLentilles: {
+    cat: "plats", pays: "france",
     base: 4, temps: "2h", niveau: "⭐ Facile", emoji: "🫘",
     description: "Jarret de porc aux lentilles vertes du Puy — plat rustique et réconfortant mijoté longuement avec carottes et herbes aromatiques.",
     tableauJarretLentilles: [
@@ -7930,6 +8175,7 @@ const recettes = {
   },
 
   boulettesViande: {
+    cat: "plats", pays: "italie",
     base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🍝",
     description: "Boulettes de viande à la sauce tomate — moelleuses et parfumées, mijotées dans une sauce tomate maison avec basilic. Le comfort food par excellence.",
     tableauBoulettes: [
@@ -7961,6 +8207,7 @@ const recettes = {
 
   // SALADES
   saladeThai: {
+    cat: "salades", pays: "asie",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥗",
     description: "Salade thaï — vermicelles de riz, légumes croquants, coriandre fraîche et vinaigrette au citron vert et sauce nuoc-mâm. Fraîche et explosive en saveurs.",
     tableauSaladeThai: [
@@ -7990,6 +8237,7 @@ const recettes = {
   },
 
   saladeHaricotsVerts: {
+    cat: "salades", pays: "france",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🫛",
     description: "Salade de haricots verts croquants aux amandes grillées — vinaigrette moutardée et œufs durs. Simple et délicieuse en entrée ou accompagnement.",
     tableauSaladeHV: [
@@ -8019,6 +8267,7 @@ const recettes = {
   },
 
   saladeFruitsMer: {
+    cat: "salades", pays: "france",
     base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "🦐",
     description: "Salade de fruits de mer — crevettes, moules et calamars marinés à l'huile d'olive citronnée avec ail et persil. Fraîcheur marine garantie.",
     tableauSaladeFM: [
@@ -8048,6 +8297,7 @@ const recettes = {
   },
 
   saladePoulpe: {
+    cat: "salades", pays: "grece",
     base: 4, temps: "1h30", niveau: "⭐⭐ Moyen", emoji: "🐙",
     description: "Salade de poulpe à la grecque — poulpe tendre cuit longuement, mariné à l'huile d'olive, citron, câpres et olives. Méditerranéen et savoureux.",
     tableauSaladePoulpe: [
@@ -8078,6 +8328,7 @@ const recettes = {
 
   // HEALTHY
   soupeLentillesCorail: {
+    cat: "soupes", pays: "monde",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🧡",
     description: "Soupe de lentilles corail au cumin et citron — onctueuse, dorée et parfumée. Végétarienne, riche en protéines et prête en 30 minutes.",
     tableauSoupeLentilles: [
@@ -8107,6 +8358,7 @@ const recettes = {
   },
 
   bowlProteineVege: {
+    cat: "healthy", pays: "monde",
     base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "💪",
     description: "Bowl protéiné végétarien — quinoa, pois chiches rôtis, avocat, œuf mollet et tahini. Complet, équilibré et rassasiant sans viande.",
     tableauBowlVege: [
@@ -8136,6 +8388,7 @@ const recettes = {
   },
 
   soupeDetox: {
+    cat: "soupes", pays: "monde",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🥬",
     description: "Soupe détox verte — épinards, courgette, gingembre et citron vert. Légère, vitaminée et revitalisante. Parfaite après les excès.",
     tableauSoupeDetox: [
@@ -8165,6 +8418,7 @@ const recettes = {
   },
 
   saladeKale: {
+    cat: "healthy", pays: "monde",
     base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🥬",
     description: "Salade de kale massée — chou kale tendre, parmesan, noix, cranberries et vinaigrette au citron. Croquante, nutritive et pleine de saveurs.",
     tableauSaladeKale: [
@@ -8195,6 +8449,7 @@ const recettes = {
 
   // ENCAS
   bruschetta: {
+    cat: "encas", pays: "italie",
     base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🍅",
     description: "Bruschetta classique à la tomate et basilic — pain grillé frotté à l'ail, garni de tomates fraîches marinées à l'huile d'olive. L'entrée italienne par excellence.",
     tableauBruschetta: [
@@ -8224,6 +8479,7 @@ const recettes = {
   },
 
   samosas: {
+    cat: "encas", pays: "inde",
     base: 4, temps: "45 min", niveau: "⭐⭐ Moyen", emoji: "🥟",
     description: "Samosas aux légumes épicés — triangles dorés et croustillants farcis de pommes de terre et petits pois parfumés aux épices indiennes.",
     tableauSamosas: [
@@ -8253,6 +8509,7 @@ const recettes = {
   },
 
   springRolls: {
+    cat: "encas", pays: "asie",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🌿",
     description: "Spring rolls frais vietnamiens — galettes de riz garnies de crevettes, vermicelles, crudités et herbes fraîches. Légers, frais et servis avec sauce nuoc-mâm.",
     tableauSpringRolls: [
@@ -8282,6 +8539,7 @@ const recettes = {
   },
 
   oeufsCocotte: {
+    cat: "encas", pays: "france",
     base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "🥚",
     description: "Œufs cocotte à la crème et aux herbes — cuits au bain-marie dans leur petite cocotte avec crème, gruyère et ciboulette. Élégant et rapide.",
     tableauOeufsCocotte: [
@@ -8312,6 +8570,7 @@ const recettes = {
 
   // DESSERTS
   tarteFragoles: {
+    cat: "desserts", pays: "france",
     base: 6, temps: "1h + repos", niveau: "⭐⭐ Moyen", emoji: "🍓",
     description: "Tarte aux fraises sur crème pâtissière — fond sablé croustillant, crème pâtissière vanillée et fraises fraîches brillantes. La grande classique de la pâtisserie française.",
     tableauTarteFragoles: [
@@ -8341,6 +8600,7 @@ const recettes = {
   },
 
   pannaCotta: {
+    cat: "desserts", pays: "italie",
     base: 4, temps: "20 min + 4h", niveau: "⭐ Facile", emoji: "🍮",
     description: "Panna cotta vanille au coulis de fruits rouges — dessert italien soyeux et délicat, tremblant à souhait. Simple à préparer, impressionnant à présenter.",
     tableauPannaCotta: [
@@ -8370,6 +8630,7 @@ const recettes = {
   },
 
   eclair: {
+    cat: "desserts", pays: "france",
     base: 4, temps: "1h", niveau: "⭐⭐⭐ Expert", emoji: "⚡",
     description: "Éclairs au chocolat — choux croustillants garnis de crème pâtissière au chocolat et nappés de fondant brillant. La pâtisserie française dans toute sa splendeur.",
     tableauEclair: [
@@ -8399,6 +8660,7 @@ const recettes = {
   },
 
   pavlova: {
+    cat: "desserts", pays: "monde",
     base: 6, temps: "1h30", niveau: "⭐⭐ Moyen", emoji: "🍰",
     description: "Pavlova aux fruits frais — meringue croustillante dehors et fondante dedans, surmontée de crème chantilly et de fruits exotiques colorés. Un nuage de légèreté.",
     tableauPavlova: [
@@ -8428,6 +8690,7 @@ const recettes = {
   },
 
   profiteroles: {
+    cat: "desserts", pays: "france",
     base: 4, temps: "50 min", niveau: "⭐⭐ Moyen", emoji: "🍨",
     description: "Profiteroles — petits choux légers garnis de glace vanille, nappés de sauce au chocolat chaud. Le dessert emblématique des bistrots parisiens.",
     tableauProfiteroles: [
@@ -8457,6 +8720,7 @@ const recettes = {
   },
 
   tarteNormande: {
+    cat: "desserts", pays: "france",
     base: 6, temps: "55 min", niveau: "⭐ Facile", emoji: "🍎",
     description: "Tarte normande aux pommes — fond de pâte brisée, pommes fondantes et appareil à la crème, œufs et calvados. La tarte emblématique de la Normandie.",
     tableauTarteNormande: [
@@ -8486,6 +8750,7 @@ const recettes = {
   },
 
   brandadeMorue: {
+    cat: "plats", pays: "france",
     base: 4, temps: "1h", niveau: "⭐⭐ Moyen", emoji: "🐟",
     description: "La brandade de morue nimoise — morue dessalée montée à l'huile d'olive et à la crème, onctueuse et parfumée à l'ail. Un grand classique du Midi.",
     tableauBrandade: [
@@ -8521,6 +8786,7 @@ const recettes = {
 
   // ── HEALTHY ──────────────────────────────────────────────────
   sobejaponais: {
+    cat: "healthy", pays: "japon",
     base: 2, temps: "15 min", niveau: "⭐ Facile", emoji: "🍜",
     description: "Soba japonais au bouillon dashi — nouilles de sarrasin froides, sauce soja, dashi et garnitures fraîches. Léger, nutritif et prêt en 15 minutes.",
     tableauSoba: [
@@ -8549,6 +8815,7 @@ const recettes = {
   },
 
   tartarethon: {
+    cat: "healthy", pays: "france",
     base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🐟",
     description: "Tartare de thon à l'avocat — thon rouge cru, avocat crémeux, sésame et sauce soja. Frais, protéiné et élégant en entrée ou plat léger.",
     tableauTartareThon: [
@@ -8577,6 +8844,7 @@ const recettes = {
   },
 
   pouletcitroncitronelle: {
+    cat: "healthy", pays: "asie",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍋",
     description: "Poulet citron citronnelle à la thaïe — escalopes légères marinées et sautées avec citronnelle, gingembre et citron vert. Parfumé et très peu calorique.",
     tableauPouletCitronelle: [
@@ -8605,6 +8873,7 @@ const recettes = {
   },
 
   velouteAsperges: {
+    cat: "soupes", pays: "france",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🌱",
     description: "Velouté d'asperges vertes — onctueuse soupe de printemps, légère et raffinée. Servie chaude ou froide avec une touche de crème et parmesan.",
     tableauVelouteAsperges: [
@@ -8634,6 +8903,7 @@ const recettes = {
   },
 
   saladeLegsRoasted: {
+    cat: "healthy", pays: "monde",
     base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🥕",
     description: "Salade de légumes rôtis au four — courgette, poivron, aubergine caramélisés, sur lit de roquette avec feta et vinaigrette au miel. Colorée et nutritive.",
     tableauSaladeRoasted: [
@@ -8661,6 +8931,7 @@ const recettes = {
   },
 
   quinoalegumes: {
+    cat: "healthy", pays: "monde",
     base: 4, temps: "25 min", niveau: "⭐ Facile", emoji: "🌾",
     description: "Quinoa aux légumes du soleil — quinoa protéiné avec tomates, courgettes, poivrons et herbes fraîches. Complet, végétarien et très équilibré.",
     tableauQuinoaLegumes: [
@@ -8689,6 +8960,7 @@ const recettes = {
   },
 
   patatesdoucesCurry: {
+    cat: "healthy", pays: "inde",
     base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🍠",
     description: "Curry de patates douces au lait de coco — fondant et réconfortant, épicé juste comme il faut avec curcuma et coriandre. 100% végétalien et rassasiant.",
     tableauPatateCurry: [
@@ -8718,6 +8990,7 @@ const recettes = {
   },
 
   falafelbaked: {
+    cat: "healthy", pays: "monde",
     base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🟡",
     description: "Falafels cuits au four — plus légers que les falafels frits, tout aussi croustillants. Pois chiches, cumin, coriandre et persil. Idéal dans un wrap ou salade.",
     tableauFalafelBaked: [
@@ -8747,6 +9020,7 @@ const recettes = {
   },
 
   smoothievert: {
+    cat: "brunch", pays: "monde",
     base: 2, temps: "5 min", niveau: "⭐ Facile", emoji: "🥬",
     description: "Smoothie vert détox — épinards, concombre, pomme verte, gingembre et citron. Vitaminé, alcalinisant et parfait pour démarrer la journée sainement.",
     tableauSmoothieVert: [
@@ -8775,6 +9049,7 @@ const recettes = {
   },
 
   assiettepouletpatate: {
+    cat: "healthy", pays: "monde",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍗",
     description: "Assiette healthy poulet grillé — filet de poulet mariné aux herbes, patate douce rôtie et brocoli vapeur. Repas complet, équilibré et savoureux.",
     tableauAssiettePoulet: [
@@ -8804,6 +9079,7 @@ const recettes = {
 
   // ── VÉGÉTARIENNES ─────────────────────────────────────────────
   gnocchisgorgonzola: {
+    cat: "plats", pays: "italie",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥔",
     description: "Gnocchis au gorgonzola et noix — gnocchis moelleux nappés d'une sauce onctueuse au gorgonzola fondant et noix croquantes. Rapide et terriblement gourmand.",
     tableauGnocchisGorgon: [
@@ -8832,6 +9108,7 @@ const recettes = {
   },
 
   risottocourgettechevre: {
+    cat: "plats", pays: "italie",
     base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🍚",
     description: "Risotto courgette et chèvre frais — crémeux et parfumé, avec des courgettes fondantes et la douceur acidulée du fromage de chèvre. Un risotto printanier.",
     tableauRisottoChevre: [
@@ -8861,6 +9138,7 @@ const recettes = {
   },
 
   currypoischiches: {
+    cat: "plats", pays: "inde",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🫘",
     description: "Curry de pois chiches à la tomate — riche, parfumé et 100% végétalien. Garam masala, tomates concassées et lait de coco pour un plat indien express.",
     tableauCurryPois: [
@@ -8890,6 +9168,7 @@ const recettes = {
   },
 
   pastapomodoro: {
+    cat: "plats", pays: "italie",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🍝",
     description: "Pasta al pomodoro fresco — le plat le plus simple et le plus savoureux d'Italie. Tomates fraîches concassées, basilic, ail et huile d'olive sur spaghetti al dente.",
     tableauPomodoro: [
@@ -8919,6 +9198,7 @@ const recettes = {
   },
 
   omeletteprovencale: {
+    cat: "plats", pays: "france",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥚",
     description: "Omelette provençale — œufs battus garnis de tomates, poivrons, herbes de Provence et fromage de chèvre. Colorée, parfumée et parfaite pour un repas rapide.",
     tableauOmelette: [
@@ -8947,6 +9227,7 @@ const recettes = {
   },
 
   tarteepinardfeta: {
+    cat: "plats", pays: "france",
     base: 6, temps: "45 min", niveau: "⭐ Facile", emoji: "🥬",
     description: "Tarte épinards feta — fond de pâte brisée, épinards fondants et feta crémeuse. Une tarte salée méditerranéenne simple et délicieuse.",
     tableauTarteEpinard: [
@@ -8976,6 +9257,7 @@ const recettes = {
   },
 
   veggieburger: {
+    cat: "plats", pays: "monde",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍔",
     description: "Burger végétarien maison — galette de pois chiches et betterave, garnie d'avocat écrasé, tomate, salade et sauce yogurt. Aussi gourmand que le vrai !",
     tableauVeggieBurger: [
@@ -9005,6 +9287,7 @@ const recettes = {
   },
 
   soufflecheese: {
+    cat: "plats", pays: "france",
     base: 4, temps: "45 min", niveau: "⭐⭐⭐ Expert", emoji: "🧀",
     description: "Soufflé au fromage — léger comme un nuage, dorée et gonflée à souhait. La grande classique de la cuisine française qui impressionne à tous les coups.",
     tableauSouffleCheese: [
@@ -9034,6 +9317,7 @@ const recettes = {
   },
 
   paellaVege: {
+    cat: "plats", pays: "espagne",
     base: 4, temps: "40 min", niveau: "⭐⭐ Moyen", emoji: "🥘",
     description: "Paella végétarienne — riz bomba safrané avec artichauts, poivrons, haricots verts et tomates. Toutes les saveurs de Valence sans viande ni poisson.",
     tableauPaellaVege: [
@@ -9064,6 +9348,7 @@ const recettes = {
 
   // ── COCKTAILS AVEC ALCOOL ─────────────────────────────────────
   bellini: {
+    cat: "cocktails", pays: "italie",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍑",
     description: "Bellini — le cocktail emblématique de l'Harry's Bar de Venise. Purée de pêche blanche et prosecco pétillant. Élégant, fruité et irrésistiblement festif.",
     fixe: true,
@@ -9078,6 +9363,7 @@ const recettes = {
   },
 
   frenchMartini: {
+    cat: "cocktails", pays: "monde",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍸",
     description: "French Martini — vodka, Chambord et jus d'ananas. Un cocktail fruité, soyeux et légèrement exotique avec sa mousse caractéristique.",
     fixe: true,
@@ -9092,6 +9378,7 @@ const recettes = {
   },
 
   darkStormyCocktail: {
+    cat: "cocktails", pays: "monde",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "⛈️",
     description: "Dark & Stormy — rhum brun épicé et ginger beer avec une rondelle de citron vert. Un cocktail des Bermudes intense, rafraîchissant et très facile.",
     fixe: true,
@@ -9106,6 +9393,7 @@ const recettes = {
   },
 
   amarettoSour: {
+    cat: "cocktails", pays: "italie",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍊",
     description: "Amaretto Sour — amaretto doux, citron frais et blanc d'œuf pour une mousse veloutée. Un sour parfaitement équilibré entre douceur amandée et acidité.",
     fixe: true,
@@ -9120,6 +9408,7 @@ const recettes = {
   },
 
   aperolPamplemousse: {
+    cat: "cocktails", pays: "italie",
     base: 1, temps: "3 min", niveau: "⭐ Facile", emoji: "🍊",
     description: "Aperol Pamplemousse Spritz — une variation fruitée du spritz classique avec du jus de pamplemousse rose pour plus d'amertume et de fraîcheur.",
     fixe: true,
@@ -9135,6 +9424,7 @@ const recettes = {
 
   // ── MOCKTAILS ────────────────────────────────────────────────
   mocktailframboisementhe: {
+    cat: "mocktails", pays: "monde",
     base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🫐",
     description: "Mocktail framboise menthe — framboises fraîches pilées, sirop de menthe, limonade pétillante et glaçons. Frais, coloré et zéro alcool.",
     fixe: true,
@@ -9149,6 +9439,7 @@ const recettes = {
   },
 
   mocktailpassionsoleil: {
+    cat: "mocktails", pays: "monde",
     base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "☀️",
     description: "Mocktail Passion Soleil — fruit de la passion, mangue, jus d'orange et eau gazeuse. Tropical, vitaminé et ensoleillé même en hiver.",
     fixe: true,
@@ -9163,6 +9454,7 @@ const recettes = {
   },
 
   mocktailconcombrecitr: {
+    cat: "mocktails", pays: "monde",
     base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🥒",
     description: "Mocktail concombre citron vert — concombre frais, citron vert, basilic et eau pétillante. Ultrafraîchissant, détox et élégant pour l'apéritif.",
     fixe: true,
@@ -9177,6 +9469,7 @@ const recettes = {
   },
 
   mocktailgingembre: {
+    cat: "mocktails", pays: "monde",
     base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🫚",
     description: "Ginger Mocktail — gingembre frais, citron, miel et ginger beer. Épicé, piquant et revigorant. La version sans alcool du Moscow Mule.",
     fixe: true,
@@ -9191,6 +9484,7 @@ const recettes = {
   },
 
   mocktailfraisesvanille: {
+    cat: "mocktails", pays: "monde",
     base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🍓",
     description: "Mocktail Fraises Vanille — coulis de fraises fraîches, extrait de vanille, lait de coco et eau gazeuse. Doux, fruité et terriblement gourmand.",
     fixe: true,
