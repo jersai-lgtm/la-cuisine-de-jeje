@@ -1974,16 +1974,31 @@ function afficherMenusSemaine(menus, personnes) {
       const soir = jour.soir?.recette || jour.soir || "";
       const midiNote = jour.midi?.note || "";
       const soirNote = jour.soir?.note || "";
+
+      // Couleur famille
+      const nMidi = typeof getNiveauFamille === "function" ? getNiveauFamille(midi) : null;
+      const nSoir = typeof getNiveauFamille === "function" ? getNiveauFamille(soir) : null;
+      const sMidi = nMidi === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
+                  : nMidi === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
+      const sSoir = nSoir === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
+                  : nSoir === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
+      const bMidi = nMidi === "bebe" ? `<span title="Attention bébé" style="margin-left:4px">🍼</span>`
+                  : nMidi === "enfant" ? `<span title="Épicé pour enfant" style="margin-left:4px">🌶️</span>` : "";
+      const bSoir = nSoir === "bebe" ? `<span title="Attention bébé" style="margin-left:4px">🍼</span>`
+                  : nSoir === "enfant" ? `<span title="Épicé pour enfant" style="margin-left:4px">🌶️</span>` : "";
+      const btnMidi = nMidi ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','midi')" title="Regénérer">🔄</button>` : "";
+      const btnSoir = nSoir ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','soir')" title="Regénérer">🔄</button>` : "";
+
       div.innerHTML = `
         <h3 class="plan-jour-titre">${jour.jour}</h3>
         <div class="plan-repas-row">
-          <div class="plan-repas" onclick="ouvrirRecettePlan('${midi}', ${personnes})">
-            <div class="plan-repas-label">☀️ Midi</div>
+          <div class="plan-repas" style="${sMidi}" onclick="ouvrirRecettePlan('${midi}', ${personnes})">
+            <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}</div>
             <div class="plan-repas-emoji">${getEmoji(midi)}</div>
             <div class="plan-repas-nom">${getNomRecette(midi)}</div>
             <div class="plan-repas-note">${midiNote}</div>
           </div>
-          <div class="plan-repas" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
+          <div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
             <div class="plan-repas-label">🌙 Soir</div>
             <div class="plan-repas-emoji">${getEmoji(soir)}</div>
             <div class="plan-repas-nom">${getNomRecette(soir)}</div>
@@ -2264,10 +2279,22 @@ function basculeVersGrille() {
 // ADAPTATION FAMILIALE — profil foyer
 // ============================================================
 // Mots bébé (rouge) et enfant (orange)
-const MOTS_BEBE = ["miel","harissa","piment","chorizo","merguez","tartare","carpaccio",
-  "huitre","huître","fruit de mer","noix","cacahuète","cacahuete","alcool","vin",
-  "nduja","saucisson","jambon cru","prosciutto","anchois","sashimi","poisson cru",
-  "thon cru","saumon cru","crevette crue"];
+const MOTS_BEBE = [
+  // Crus et dangereux
+  "tartare","carpaccio","sashimi","ceviche","sushi","maki","nigiri","temaki",
+  "poisson cru","thon cru","saumon cru",
+  "huitre","huître","crevette crue","fruit de mer cru",
+  // Allergènes majeurs bébé
+  "miel","cacahuète","cacahuete","arachide","noix de","noisette","amande crue",
+  // Charcuterie crue
+  "jambon cru","prosciutto","nduja","saucisson","bresaola","coppa","salami cru",
+  // Très épicé
+  "harissa","piment fort","piment rouge","sauce piquante","tabasco",
+  // Alcool
+  "flambé","flambée","flamber","au rhum","au cognac","au whisky","alcool",
+  // Moules/coquillages (risque allergie)
+  "moule","huitre","huître","palourde","coquillage"
+];
 
 const MOTS_ENFANT = ["harissa","piment fort","gochujang","wasabi","tartare","carpaccio",
   "sashimi","huitre","huître","bouillabaisse","très épicé","épicé"];
@@ -2276,6 +2303,7 @@ function getNiveauFamille(cle) {
   // Retourne: null = OK, "bebe" = rouge, "enfant" = orange
   const profil = getFoyerProfil();
   if (!profil) return null;
+  if (!profil.hasBebe && !profil.hasEnfant) return null;
   const r = recettes?.[cle];
   const texte = (cle + " " + (r?.description || "")).toLowerCase();
   if (profil.hasBebe && MOTS_BEBE.some(m => texte.includes(m))) return "bebe";
@@ -2564,7 +2592,16 @@ function setFormatRepas(format, btn) {
   btn.classList.add("plan-tag-active");
 }
 
-window.addEventListener('profilMisAJour', majBoutonFamille);
+window.addEventListener('profilMisAJour', () => {
+  majBoutonFamille();
+  // Ré-afficher les menus avec badges famille si un menu est actif
+  if (window._derniersMenus) {
+    const p = parseInt(document.getElementById("plan-personnes")?.value) || 4;
+    if (typeof afficherMenusSemaine === "function") {
+      afficherMenusSemaine(window._derniersMenus, p);
+    }
+  }
+});
 // Vérifier aussi après chargement initial
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
