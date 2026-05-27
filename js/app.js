@@ -6,6 +6,7 @@
 function afficherAccueil() {
   window.scrollTo({ top: 0, behavior: "smooth" });
   fermerSousMenus();
+  if (typeof majBoutonFamille === "function") majBoutonFamille();
 
   // Activer bouton
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
@@ -229,11 +230,16 @@ function chargerAccueilSuggestions() {
 
   const _catsExclues = new Set(["boulangerie","cocktails","mocktails"]);
   const _recExclues = new Set([
-    "croissant","patepizza","patelasagne","financiers","tartetatinpommes","tartepistache",
-    "tartechocolatcaramel","overnightoats","granolaMaison","chocolatChaud","smoothiebowl",
+    // Boulangerie / bases
+    "croissant","patepizza","patelasagne","patefeuilletee","patebrisee","patesablee",
+    "painbaguette","paindemie","painburger","galettetacos","brioche","painauchocolat",
+    // Petit-déjeuner / brunch sucré
+    "financiers","overnightoats","granolaMaison","chocolatChaud","smoothiebowl",
     "bowlacai","pancakesproteine","smoothiemangopassion","energyballs","bananabread",
-    "painbaguette","paindemie","patefeuilletee","patebrisee","patesablee",
-    "painburger","galettetacos","brioche","painauchocolat","sconeBritish",
+    "sconeBritish","yaourt","smoothievert","crepes","gaufres","pancakes",
+    // Desserts
+    "tartetatinpommes","tartepistache","tartechocolatcaramel","cookies","churros",
+    // Cocktails / mocktails — tous exclus des repas
     "mojito","margarita","cosmopolitan","spritz","sangria","pinacolada","daiquiri",
     "whiskysour","virginmojito","limonademaison","citronadementhe","virginpinacolada",
     "mojitorose","negroni","moscowmule","pornstarmartini","hugospritz",
@@ -241,7 +247,9 @@ function chargerAccueilSuggestions() {
     "mocktailcoconananas","coktailcosmopolitan","mocktailmentheagume",
     "aperolspritzrosa","blueLagoon","espressoMartini","sidecarvintage",
     "gingerlemondrop","tequilasunrise","punchfruitsrouges","mocktailberrybliss",
-    "mocktailcoconorchidee"
+    "mocktailcoconorchidee","bellini","frenchMartini","darkStormyCocktail",
+    "amarettoSour","aperolPamplemousse","mocktailframboisementhe","mocktailpassionsoleil",
+    "mocktailconcombrecitr","mocktailgingembre","mocktailfraisesvanille"
   ]);
 
   let pool = toutes.filter(key => {
@@ -1949,8 +1957,8 @@ function afficherMenusSemaine(menus, personnes) {
       : "Menu généré pour votre foyer — vérifiez les plats épicés pour les enfants";
     const note = document.createElement("div");
     note.id = "plan-famille-note";
-    note.style.cssText = "font-size:12px;color:#aaa;text-align:center;padding:8px 16px;margin-top:4px;opacity:.8";
-    note.innerHTML = `${icone} <em>${texte}</em>`;
+    note.style.cssText = "font-size:13px;color:#fff;text-align:center;padding:10px 20px;margin-top:12px;background:rgba(255,180,0,.15);border:1px solid rgba(255,180,0,.3);border-radius:10px;line-height:1.5";
+    note.innerHTML = `<strong>${icone} Adaptation famille</strong><br><span style="opacity:.85">${texte}</span>`;
     document.getElementById("plan-result").appendChild(note);
   }
 }
@@ -2463,3 +2471,7 @@ function setFormatRepas(format, btn) {
 }
 
 window.addEventListener('profilMisAJour', majBoutonFamille);
+// Vérifier aussi après chargement initial
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(majBoutonFamille, 1500); // après chargement profil Firebase
+});
