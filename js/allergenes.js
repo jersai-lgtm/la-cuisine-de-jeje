@@ -92,6 +92,24 @@ function appliquerPreferencesVisuelles() {
     } else {
       carte.classList.remove('carte-grisee');
     }
+
+    // Badge famille — discret, non bloquant
+    const existingFam = carte.querySelector('.carte-badge-famille');
+    if (existingFam) existingFam.remove();
+
+    if (typeof getAdaptationFamille === 'function') {
+      const cle = carte.getAttribute('onclick')?.match(/'(\w+)'/)?.[1];
+      if (cle) {
+        const adapt = getAdaptationFamille(cle);
+        if (adapt) {
+          const badgeFam = document.createElement('div');
+          badgeFam.className = 'carte-badge-famille';
+          badgeFam.title = adapt.label;
+          badgeFam.textContent = adapt.badge;
+          carte.appendChild(badgeFam);
+        }
+      }
+    }
   });
 }
 

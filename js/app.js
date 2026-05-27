@@ -284,8 +284,12 @@ function miniCarte(key) {
   const r    = recettes[key];
   const nom  = getNomRecette(key);
   const img  = key.toLowerCase().replace(/[^a-z0-9]/g, "");
+  // Badge famille discret
+  const adapt = typeof getAdaptationFamille === "function" ? getAdaptationFamille(key) : null;
+  const badgeFam = adapt ? `<span class="mini-carte-famille" title="${adapt.label}">${adapt.badge}</span>` : "";
   return `<div class="mini-carte" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
     <img src="images/${key}.webp" alt="${nom}" onerror="this.style.display='none'">
+    ${badgeFam}
     <div class="mini-carte-info">
       <span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>
       <span class="mini-carte-nom">${nom}</span>
@@ -1933,6 +1937,22 @@ function afficherMenusSemaine(menus, personnes) {
 
   document.getElementById("plan-form").style.display = "none";
   document.getElementById("plan-result").style.display = "block";
+
+  // Note discrète adaptation famille
+  const profil = typeof getFoyerProfil === "function" ? getFoyerProfil() : null;
+  const noteExistante = document.getElementById("plan-famille-note");
+  if (noteExistante) noteExistante.remove();
+  if (profil && (profil.hasBebe || profil.hasEnfant)) {
+    const icone = profil.hasBebe ? "🍼" : "🧒";
+    const texte = profil.hasBebe
+      ? "Menu généré pour votre foyer — certains plats peuvent nécessiter une adaptation pour bébé"
+      : "Menu généré pour votre foyer — vérifiez les plats épicés pour les enfants";
+    const note = document.createElement("div");
+    note.id = "plan-famille-note";
+    note.style.cssText = "font-size:12px;color:#aaa;text-align:center;padding:8px 16px;margin-top:4px;opacity:.8";
+    note.innerHTML = `${icone} <em>${texte}</em>`;
+    document.getElementById("plan-result").appendChild(note);
+  }
 }
 
 
@@ -2179,6 +2199,63 @@ function basculeVersGrille() {
     secCartes.style.display = "";
   }
 }
+
+// ============================================================
+// ADAPTATION FAMILIALE — profil foyer
+// ============================================================
+function getFoyerProfil() {
+  const foyer = window.userProfile?.foyer;
+  if (!foyer) return null;
+  return {
+    hasBebe:   (foyer.bebes || foyer.bébés || 0) > 0,
+    hasEnfant: (foyer.enfants || 0) > 0,
+    hasAdo:    (foyer.ados || 0) > 0,
+    hasAdulte: (foyer.adultes || 0) > 0,
+  };
+}
+
+// Mots-clés problématiques par profil
+const FOYER_RESTRICTIONS = {
+  bebe: {
+    badge: "🍼",
+    label: "À adapter pour bébé",
+    mots: ["miel","harissa","piment","chorizo","merguez","saumon cru","thon cru",
+           "tartare","carpaccio","huître","moule","crevette","fruit de mer",
+           "noix","cacahuète","amande","pistache","alcool","vin","cidre",
+           "charcuterie","jambon cru","saucisson","nduja","sel","épice"]
+  },
+  enfant: {
+    badge: "🧒",
+    label: "Épicé — version douce pour les enfants",
+    mots: ["piment fort","harissa","curry fort","gochujang","wasabi",
+           "tartare","carpaccio","sashimi","huître","bouillabaisse"]
+  }
+};
+
+function getAdaptationFamille(cle) {
+  const profil = getFoyerProfil();
+  if (!profil) return null;
+
+  // Récupérer le texte de la recette
+  const carte = document.querySelector(`.carte[onclick*="'${cle}'"]`);
+  const desc = recettes?.[cle]?.description?.toLowerCase() || "";
+  const texte = (cle + " " + desc).toLowerCase();
+
+  if (profil.hasBebe) {
+    const match = FOYER_RESTRICTIONS.bebe.mots.some(m => texte.includes(m));
+    if (match) return FOYER_RESTRICTIONS.bebe;
+  }
+  if (profil.hasEnfant) {
+    const match = FOYER_RESTRICTIONS.enfant.mots.some(m => texte.includes(m));
+    if (match) return FOYER_RESTRICTIONS.enfant;
+  }
+  return null;
+}
+
+function estCompatibleFamille(cle) {
+  return getAdaptationFamille(cle) === null;
+}
+
 function filtrerCategorieDrinks(souscat) {
   const menuC = document.getElementById("menu-cocktails");
   if (!menuC) return;
@@ -2235,6 +2312,25 @@ function filtrerCategorieMulti(cats) {
   const cartesSec = document.getElementById("section-cartes");
   if (accueil) accueil.style.display = "none";
   if (cartesSec) cartesSec.classList.add("visible");
+}
+
+function filtrerFamille() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  basculeVersGrille();
+  document.querySelectorAll("#menu-categories .pays-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("btn-filtre-famille")?.classList.add("active");
+  document.querySelectorAll(".carte").forEach(c => {
+    const cle = c.getAttribute("onclick")?.match(/'(\w+)'/)?.[1];
+    const ok = !cle || estCompatibleFamille(cle);
+    c.style.display = ok ? "" : "none";
+  });
+}
+
+function majBoutonFamille() {
+  const btn = document.getElementById("btn-filtre-famille");
+  if (!btn) return;
+  const profil = getFoyerProfil();
+  btn.style.display = (profil && (profil.hasBebe || profil.hasEnfant)) ? "" : "none";
 }
 
 function filtrerCategorie(cat) {
@@ -2365,3 +2461,5 @@ function setFormatRepas(format, btn) {
   document.querySelectorAll("#format-midi-soir, #format-complet").forEach(b => b.classList.remove("plan-tag-active"));
   btn.classList.add("plan-tag-active");
 }
+
+window.addEventListener('profilMisAJour', majBoutonFamille);
