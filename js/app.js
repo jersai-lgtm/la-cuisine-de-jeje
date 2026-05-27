@@ -1,6 +1,41 @@
 
 
 // ==============================
+// HELPER : texte complet d'une recette (pour filtres allergènes/régimes)
+// Lit clé + nom affiché + description + TOUTES les lignes des tableaux
+// (clés de colonnes ET valeurs), pour ne jamais rater un ingrédient.
+// ==============================
+function texteRecette(key) {
+  const r = (typeof recettes !== "undefined") ? recettes[key] : null;
+  if (!r) return key.toLowerCase();
+  const nom = (typeof getNomRecette === "function") ? getNomRecette(key) : "";
+  let texte = [key, nom, r.description || ""].join(" ").toLowerCase();
+  Object.keys(r).forEach(k => {
+    if (k.startsWith("tableau") && Array.isArray(r[k])) {
+      r[k].forEach(ligne => {
+        if (ligne && typeof ligne === "object") {
+          texte += " " + Object.keys(ligne).join(" ").toLowerCase();
+          texte += " " + Object.values(ligne).join(" ").toLowerCase();
+        }
+      });
+    }
+  });
+  return texte;
+}
+
+// Mots à exclure selon le profil connecté (régimes + allergies + allergies custom)
+function motsExclusProfil() {
+  const set = new Set();
+  const prefs = window.userProfile?.preferences;
+  if (!prefs) return set;
+  const ajoute = (mots) => mots.forEach(m => set.add(m.toLowerCase()));
+  (prefs.regimes || []).forEach(r => ajoute((typeof ALLERGENES_MOTS !== "undefined" ? ALLERGENES_MOTS[r] : null) || []));
+  (prefs.allergies || []).forEach(a => ajoute((typeof ALLERGENES_MOTS !== "undefined" ? ALLERGENES_MOTS[a] : null) || [a]));
+  (prefs.allergiesCustom || []).forEach(a => set.add(a.toLowerCase()));
+  return set;
+}
+
+// ==============================
 // ACCUEIL PERSONNALISÉ
 // ==============================
 function afficherAccueil() {
@@ -369,41 +404,12 @@ function filtrerFavoris() {
 // ==============================
 // ALLERGIES CUSTOM
 // ==============================
-window._allergiesCustom = [];
+// ⚠️ Les fonctions de gestion des allergies custom (ajouterAllergieCustom,
+// renderAllergiesCustom, retirerAC) sont définies dans auth.js avec le stockage
+// window._ac_p / _ac_pp, qui est celui lu par sauvegarderProfilComplet().
+// Ne PAS les redéfinir ici : ça créait un conflit où l'allergie tapée n'était
+// jamais sauvegardée (ex: "ananas" ignoré → pizza hawaïenne proposée).
 
-function ajouterAllergieCustom(prefix) {
-  prefix = prefix || 'p';
-  const inputId = prefix === 'pp' ? 'pp-allergie-input' : 'allergie-custom-input';
-  const input = document.getElementById(inputId);
-  if (!input) return;
-  const val = input.value.trim().toLowerCase();
-  if (!val) return;
-  const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
-  if (!window[store]) window[store] = [];
-  if (window[store].includes(val)) { input.value = ''; return; }
-  window[store].push(val);
-  input.value = '';
-  renderAllergiesCustom(prefix);
-}
-
-function renderAllergiesCustom(prefix) {
-  prefix = prefix || 'p';
-  const listeId = prefix === 'pp' ? 'pp-allergies-liste' : 'allergies-custom-liste';
-  const liste = document.getElementById(listeId);
-  if (!liste) return;
-  const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
-  const items = window[store] || [];
-  liste.innerHTML = items.map(a =>
-    `<span class="allergie-tag">${a} <button onclick="retirerAC('${a}','${prefix}')">✕</button></span>`
-  ).join('');
-}
-
-function retirerAC(val, prefix) {
-  prefix = prefix || 'p';
-  const store = prefix === 'pp' ? '_allergiesCustomProfil' : '_allergiesCustom';
-  if (window[store]) window[store] = window[store].filter(a => a !== val);
-  renderAllergiesCustom(prefix);
-}
 
 // ==============================
 // Compteur +/-
@@ -1045,15 +1051,7 @@ async function genererMenus() {
 
   const recettesFiltrees = Object.keys(recettes).filter(key => {
     if (motsExclusion.size === 0) return true;
-    const r = recettes[key];
-    let texte = [key, r?.description || ""].join(" ").toLowerCase();
-    // Lire les CLÉS des tableaux (noms des ingrédients : jambon, lardons, poulet...)
-    Object.keys(r || {}).forEach(k => {
-      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
-        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();   // ← CLÉS
-        texte += " " + Object.values(r[k][0]).join(" ").toLowerCase(); // ← VALEURS aussi
-      }
-    });
+    const texte = texteRecette(key);
     return ![...motsExclusion].some(mot => texte.includes(mot));
   });
   // Envoyer clé + nom pour aider l'IA à retourner la bonne clé
@@ -1350,13 +1348,7 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
     const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
     if (carte && catsExclues.has(carte.dataset.cat)) return false;
     if (motsInterdits.size === 0) return true;
-    const r = recettes[key];
-    let texte = (key + " " + (r?.description || "")).toLowerCase();
-    Object.keys(r || {}).forEach(k => {
-      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
-        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
-      }
-    });
+    const texte = texteRecette(key);
     return ![...motsInterdits].some(m => texte.includes(m));
   });
 
@@ -1895,10 +1887,16 @@ function regenRepas(jourNom, moment) {
 
   // Construire pool compatible
   const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts","brunch"]);
+  const motsExclus = motsExclusProfil();
   const pool = Object.keys(recettes).filter(key => {
     const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
     // Garder uniquement les vrais plats (exclure boulangerie/desserts/cocktails/brunch)
     if (carte && catsExclues.has(carte.dataset.cat)) return false;
+    // Respecter allergies / régimes du profil
+    if (motsExclus.size > 0) {
+      const texte = texteRecette(key);
+      if ([...motsExclus].some(m => texte.includes(m))) return false;
+    }
     // Seulement les recettes sans alerte famille (ni rouge, ni orange)
     const niveau = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
     return niveau === null;
@@ -1959,10 +1957,15 @@ function regenRepasSous(jourNom, moment, type) {
   const catsOK = catsParType[type];
   if (!catsOK) return;
 
-  // Pool de recettes du bon type, sans alerte famille
+  // Pool de recettes du bon type, sans alerte famille, et compatibles profil
+  const motsExclus = motsExclusProfil();
   const pool = Object.keys(recettes).filter(key => {
     const carte = document.querySelector(`.carte[onclick*="'${key}'"]`);
     if (!carte || !catsOK.has(carte.dataset.cat)) return false;
+    if (motsExclus.size > 0) {
+      const texte = texteRecette(key);
+      if ([...motsExclus].some(m => texte.includes(m))) return false;
+    }
     const niveau = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
     return niveau === null;
   });
