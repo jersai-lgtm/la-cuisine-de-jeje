@@ -467,7 +467,7 @@ const recettes = {
   },
 
   lasagne: {
-    cat: "plats", pays: "italie",
+    cat: "boulangerie", pays: "italie",
     base: 1,
     temps: "1h30",
     niveau: "⭐ Moyen",
@@ -4790,7 +4790,7 @@ const recettes = {
 
   pizzabiancoverdure: {
     cat: "pizzas", pays: "italie",
-    base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🤍",
+    base: 2, temps: "20 min + 48h pâte", niveau: "⭐ Facile", emoji: "🍕",
     description: "Pizza Bianca aux Légumes — base ricotta sans tomate, courgette fine, asperges et parmesan. Légère, printanière et raffinée.",
     tableauPizzaBianca: [
       { nb:  1, pate: "1 pâton",  ricotta: "60 g",  courgette: "½",  asperges: "3",  parmesan: "20 g" },
@@ -6308,35 +6308,6 @@ const recettes = {
       { icone: "🔥", titre: "Griller côté peau",      detail: "Poêle très chaude avec huile. Déposer côté peau. Appuyer 30 sec. Cuire 3-4 min sans toucher.", badge: "⏱ 4 min" },
       { icone: "🔄", titre: "Retourner",              detail: "Retourner et cuire 2 min côté chair. Le centre doit rester légèrement nacré.", badge: "⏱ 2 min" },
       { icone: "🧈", titre: "Sauce beurre citron",    detail: "Dans la même poêle, fondre beurre + jus citron + câpres + aneth. Napper le saumon.", badge: null },
-    ]
-  },
-
-  sobejaponais: {
-    cat: "healthy", pays: "japon",
-    base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🍜",
-    description: "Soba Japonais Froids — nouilles de sarrasin servies froides avec sauce tsuyu, dashi et garnitures. Le repas estival japonais par excellence.",
-    tableauSoba: [
-      { nb:  1, soba: "80 g",   dashi: "100 ml", sojaS: "1 c.à.s", mirin: "1 c.à.s", ciboule: "2 tiges" },
-      { nb:  2, soba: "160 g",  dashi: "200 ml", sojaS: "2 c.à.s", mirin: "2 c.à.s", ciboule: "4 tiges" },
-      { nb:  3, soba: "240 g",  dashi: "300 ml", sojaS: "3 c.à.s", mirin: "3 c.à.s", ciboule: "6 tiges" },
-      { nb:  4, soba: "320 g",  dashi: "400 ml", sojaS: "4 c.à.s", mirin: "4 c.à.s", ciboule: "8 tiges" },
-      { nb:  5, soba: "400 g",  dashi: "500 ml", sojaS: "5 c.à.s", mirin: "5 c.à.s", ciboule: "10 tiges"},
-      { nb:  6, soba: "480 g",  dashi: "600 ml", sojaS: "6 c.à.s", mirin: "6 c.à.s", ciboule: "12 tiges"},
-      { nb:  7, soba: "560 g",  dashi: "700 ml", sojaS: "7 c.à.s", mirin: "7 c.à.s", ciboule: "14 tiges"},
-      { nb:  8, soba: "640 g",  dashi: "800 ml", sojaS: "8 c.à.s", mirin: "8 c.à.s", ciboule: "16 tiges"},
-      { nb:  9, soba: "720 g",  dashi: "900 ml", sojaS: "9 c.à.s", mirin: "9 c.à.s", ciboule: "18 tiges"},
-      { nb: 10, soba: "800 g",  dashi: "1 L",    sojaS: "10 c.à.s",mirin: "10 c.à.s",ciboule: "20 tiges"},
-      { nb: 11, soba: "880 g",  dashi: "1.1 L",  sojaS: "11 c.à.s",mirin: "11 c.à.s",ciboule: "22 tiges"},
-      { nb: 12, soba: "960 g",  dashi: "1.2 L",  sojaS: "12 c.à.s",mirin: "12 c.à.s",ciboule: "24 tiges"},
-      { nb: 13, soba: "1040 g", dashi: "1.3 L",  sojaS: "13 c.à.s",mirin: "13 c.à.s",ciboule: "26 tiges"},
-      { nb: 14, soba: "1120 g", dashi: "1.4 L",  sojaS: "14 c.à.s",mirin: "14 c.à.s",ciboule: "28 tiges"},
-      { nb: 15, soba: "1200 g", dashi: "1.5 L",  sojaS: "15 c.à.s",mirin: "15 c.à.s",ciboule: "30 tiges"},
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍜", titre: "Cuire les soba",         detail: "Cuire dans eau bouillante non salée. Rincer abondamment à l'eau froide pour arrêter la cuisson et enlever l'amidon.", badge: "⏱ 4-5 min" },
-      { icone: "🍶", titre: "Sauce tsuyu",            detail: "Mélanger dashi, sauce soja et mirin. Faire chauffer 2 min. Laisser refroidir au frigo.", badge: "⏱ 30 min frigo" },
-      { icone: "🥢", titre: "Servir",                 detail: "Disposer les soba sur plateau ou assiette froide. Verser la sauce froide. Garnir de ciboule, wasabi, nori et graines de sésame.", badge: null },
     ]
   },
 
@@ -8329,7 +8300,7 @@ const recettes = {
   // HEALTHY
   soupeLentillesCorail: {
     cat: "soupes", pays: "monde",
-    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🧡",
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍲",
     description: "Soupe de lentilles corail au cumin et citron — onctueuse, dorée et parfumée. Végétarienne, riche en protéines et prête en 30 minutes.",
     tableauSoupeLentilles: [
       { nb:  1, lentilles: "60 g",  tomates: "100 g", oignons: "0.25",cumin: "½ c.à.c", citrons: "0.25" },

@@ -25,7 +25,7 @@ const RECETTES_NON_REPAS = new Set([
   "tartecitron","tartepistache","tartetatinpommes","tequilasunrise","tiramisu","tiramisufraise",
   "verrineframboisechocolat","verrinetiramisu","virginmojito","virginpinacolada","whiskysour",
   // bases supplémentaires
-  "patepizza","patelasagne","yaourt","smoothiebowl","energyballs","naan","painlevain","brioche"
+  "patepizza","patelasagne","lasagne","yaourt","smoothiebowl","energyballs","naan","painlevain","brioche"
 ]);
 
 // Desserts (pour le pool desserts du menu complet — liste fiable, ne dépend pas du DOM)
@@ -64,6 +64,17 @@ function texteRecette(key) {
       });
     }
   });
+  // Format alternatif : ingredientsFixes = [[nom, qté], ...]
+  if (Array.isArray(r.ingredientsFixes)) {
+    r.ingredientsFixes.forEach(p => {
+      if (Array.isArray(p)) texte += " " + p.join(" ").toLowerCase();
+    });
+  }
+  // Format alternatif : ingredients = {nom: qté, ...} ou liste
+  if (r.ingredients && typeof r.ingredients === "object") {
+    texte += " " + Object.keys(r.ingredients).join(" ").toLowerCase();
+    texte += " " + Object.values(r.ingredients).join(" ").toLowerCase();
+  }
   // Neutraliser les faux allergènes : la noix/lait/crème DE COCO n'est ni un
   // fruit à coque ni un produit laitier ; le "beurre noisette" est une technique.
   // On gère aussi les formes collées issues des clés de tableau (laitcoco, cremecoco…).
@@ -1532,6 +1543,7 @@ function getNomRecette(key) {
     "gaspacho":"Gaspacho","curryledumes":"Curry de Légumes",
     "painbaguette":"Pain — Baguette","paindemie":"Pain de mie",
     "patefeuilletee":"Pâte feuilletée","patebrisee":"Pâte brisée","patesablee":"Pâte sablée",
+    "pizza":"Pâte à Pizza",
     "goumeau":           "Galette de Goumeau",
     "burgermaison":      "Burger Maison",
     "bolognaisemaison":  "Bolognaise Maison",
@@ -1919,6 +1931,7 @@ function getNomRecette(key) {
     "crepes":            "Crêpes Sucrées",
     "lasagne":           "Pâte à Lasagne",
     "patepizza":         "Pâte à Pizza",
+    "pizza":             "Pâte à Pizza",
   };
   if (nomsAffichage[key]) return nomsAffichage[key];
   // Fallback : découper camelCase/underscores en mots lisibles
@@ -2289,6 +2302,70 @@ function appliquerProfilSurFormulaire() {
   }
 }
 
+// Nettoie un menu chargé : si un repas pointe vers une recette non-repas
+// (boulangerie/dessert/cocktail issu d'un ancien menu sauvegardé), remplace
+// par une recette compatible. Préserve la structure (simple ou complet).
+function nettoyerMenusNonRepas(menus) {
+  if (!menus?.semaine) return menus;
+  // Pool de remplacement : vrais plats, hors non-repas
+  const poolPlats = Object.keys(recettes).filter(k => {
+    if (RECETTES_NON_REPAS.has(k)) return false;
+    const c = categorieRecette(k);
+    return c && !["boulangerie","desserts","cocktails","mocktails","brunch"].includes(c);
+  });
+  const dejaUtilise = new Set();
+  // Index des recettes déjà présentes (pour éviter doublons)
+  menus.semaine.forEach(j => {
+    ["midi","soir"].forEach(m => {
+      const r = j[m]?.recette || (typeof j[m] === "string" ? j[m] : null);
+      if (r && !RECETTES_NON_REPAS.has(r)) dejaUtilise.add(r);
+    });
+  });
+  const pickPlat = () => {
+    const dispo = poolPlats.filter(k => !dejaUtilise.has(k));
+    const choix = (dispo.length ? dispo : poolPlats)[Math.floor(Math.random() * (dispo.length || poolPlats.length))];
+    dejaUtilise.add(choix);
+    return choix;
+  };
+  const pickType = (type) => {
+    // entree/plat/dessert : pick selon la catégorie cible
+    const catsParType = {
+      entree: ["entrees","soupes","salades"],
+      plat: ["plats","pizzas","healthy"],
+      dessert: ["desserts"],
+    };
+    const cats = catsParType[type] || catsParType.plat;
+    const pool = Object.keys(recettes).filter(k => cats.includes(categorieRecette(k)));
+    const dispo = pool.filter(k => !dejaUtilise.has(k));
+    const choix = (dispo.length ? dispo : pool)[Math.floor(Math.random() * (dispo.length || pool.length))];
+    if (choix) dejaUtilise.add(choix);
+    return choix;
+  };
+
+  menus.semaine.forEach(j => {
+    ["midi","soir"].forEach(m => {
+      const v = j[m];
+      if (!v) return;
+      if (typeof v === "string") {
+        if (RECETTES_NON_REPAS.has(v)) j[m] = pickPlat();
+      } else if (typeof v === "object") {
+        if (v.recette && RECETTES_NON_REPAS.has(v.recette)) {
+          v.recette = pickPlat();
+        }
+        ["entree","plat","dessert"].forEach(type => {
+          const sub = v[type];
+          if (sub?.recette && RECETTES_NON_REPAS.has(sub.recette) && type !== "dessert") {
+            // Pour entree/plat : remplacer si non-repas
+            sub.recette = pickType(type);
+          }
+          // Pour dessert : on laisse, car un dessert EST une recette "non-repas"
+        });
+      }
+    });
+  });
+  return menus;
+}
+
 function chargerMenusAuDemarrage() {
   // Vider TOUS les menus en cache (version mapping changée)
   try {
@@ -2302,6 +2379,9 @@ function chargerMenusAuDemarrage() {
   const saved = chargerMenusSauvegardes();
   if (saved && saved.menus) {
     menusSemaine = saved.menus;
+    // Auto-nettoyage : remplacer toute recette non-repas par un vrai plat
+    // (cas des menus sauvegardés AVANT les corrections de catégories)
+    menusSemaine = nettoyerMenusNonRepas(menusSemaine);
     // Revalider avec les préférences actuelles du profil
     const regimesActuels = [...(window.userProfile?.preferences?.regimes||[]), ...(window.userProfile?.preferences?.objectifs||[])];
     const allergiesActuelles = [...(window.userProfile?.preferences?.allergies||[]), ...(window.userProfile?.preferences?.allergiesCustom||[])];
