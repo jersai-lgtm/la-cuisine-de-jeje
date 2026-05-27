@@ -353,9 +353,12 @@ function chargerAccueilMenusFavoris() {
     }
     const sousType = f.type === "thematique" ? "🎉 Thématique" : "🗓️ Semaine";
     return `<div class="accueil-menu-card" onclick="appliquerMenuFavori('${f.id}')" style="cursor:pointer;min-width:180px">
-      <div class="accueil-menu-day" style="display:flex;justify-content:space-between;align-items:center">
+      <div class="accueil-menu-day" style="display:flex;justify-content:space-between;align-items:center;gap:4px">
         <span>${sousType}</span>
-        <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}').then(()=>chargerAccueilMenusFavoris())" style="background:transparent;border:none;color:#ff6b6b;cursor:pointer;font-size:14px;padding:0">✕</button>
+        <span style="display:flex;gap:6px">
+          <button onclick="event.stopPropagation();demanderRenommageMenu('${f.id}')" style="background:transparent;border:none;color:#ff8fb3;cursor:pointer;font-size:13px;padding:0" title="Renommer">✏️</button>
+          <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}').then(()=>chargerAccueilMenusFavoris())" style="background:transparent;border:none;color:#ff6b6b;cursor:pointer;font-size:14px;padding:0" title="Supprimer">✕</button>
+        </span>
       </div>
       <div class="accueil-menu-item">
         <span>${emoji}</span>
@@ -649,7 +652,10 @@ function filtrerMenusFavoris() {
           <span style="font-weight:700;color:#fff;font-size:15px">${f.nom}</span>
           <span style="font-size:12px;color:#aaa">${sousType} ${apercu ? "· " + apercu : ""} ${date ? "· " + date : ""}</span>
         </span>
-        <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}')" class="btn-retirer-favori" title="Supprimer">✕</button>
+        <span style="display:flex;gap:8px;align-items:center">
+          <button onclick="event.stopPropagation();demanderRenommageMenu('${f.id}')" class="btn-retirer-favori" title="Renommer" style="color:#ff8fb3">✏️</button>
+          <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}')" class="btn-retirer-favori" title="Supprimer">✕</button>
+        </span>
       </div>`;
     });
     html += `</div>`;
@@ -745,7 +751,10 @@ function afficherMenusFavoris() {
         <span>${sousType} ${f.nom}</span>
         ${apercu ? `<span style="font-size:11px;color:#888;font-weight:normal">→ ${apercu}</span>` : ""}
       </span>
-      <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}').then(()=>{afficherMenusFavoris();chargerAccueilMenusFavoris();})" class="btn-retirer-favori">✕</button>
+      <span style="display:flex;gap:8px;align-items:center">
+        <button onclick="event.stopPropagation();demanderRenommageMenu('${f.id}')" class="btn-retirer-favori" title="Renommer" style="color:#ff8fb3">✏️</button>
+        <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}').then(()=>{afficherMenusFavoris();chargerAccueilMenusFavoris();})" class="btn-retirer-favori">✕</button>
+      </span>
     </div>`;
   }).join('');
 }
@@ -1316,6 +1325,8 @@ function afficherCoursesFestif() {
 
 // Charger menu festif sauvegardé
 function chargerMenuFestifAuDemarrage() {
+  // Si un menu favori thématique est en cours d'application, ne PAS écraser
+  if (window._chargementFavoriEnCours) return;
   try {
     const raw = sessionStorage.getItem("cuisineJeje_festif");
     if (!raw) {
@@ -2595,6 +2606,24 @@ function injecterBoutonMenuFavori(containerId, type, menu, personnes) {
 }
 
 // Affiche un toast de notification temporaire en bas de l'écran
+// Demande à l'utilisateur un nouveau nom pour un menu favori et le sauvegarde.
+// Rafraîchit toutes les vues concernées en cas de succès.
+async function demanderRenommageMenu(id) {
+  const liste = window.userProfile?.menusFavoris || [];
+  const fav = liste.find(m => m.id === id);
+  if (!fav) return;
+  const nouveau = window.prompt("✏️ Renommer ce menu favori :", fav.nom);
+  if (nouveau === null) return; // annulé
+  const nom = nouveau.trim();
+  if (!nom || nom === fav.nom) return; // vide ou identique
+  if (nom.length > 80) {
+    if (typeof afficherToast === "function") afficherToast("Nom trop long (80 caractères max)", "error");
+    return;
+  }
+  await window.renommerMenuFavori(id, nom);
+  if (typeof afficherToast === "function") afficherToast(`✏️ Renommé : ${nom}`, "success");
+}
+
 function afficherToast(message, type) {
   // Supprime l'ancien si présent
   const ancien = document.getElementById("app-toast");
@@ -2647,13 +2676,17 @@ window.appliquerMenuFavoriSemaine = function(id) {
   if (!fav || fav.type !== "semaine") return;
   // Masquer la vue dédiée des menus favoris avant de naviguer
   if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
+  // Flag : empêche chargerMenusAuDemarrage d'écraser menusSemaine pendant la navigation
+  window._chargementFavoriEnCours = true;
   // Copie profonde : on travaille sur une copie pour ne pas altérer le favori
   menusSemaine = JSON.parse(JSON.stringify(fav.menu));
   // Détecter le format du menu (simple ou complet) pour bien afficher
   const premier = menusSemaine?.semaine?.[0];
   const estComplet = premier && premier.midi && premier.midi.plat !== undefined;
   window._formatRepas = estComplet ? "complet" : "simple";
-  // Naviguer vers la section Menus et l'onglet Semaine
+  // Forcer l'onglet semaine pour que afficherSection ne tente pas de basculer en festif
+  window._planTabActif = "semaine";
+  // Naviguer vers la section Menus
   const btnMenus = document.querySelector(".nav-btn[onclick*=planificateur]");
   if (btnMenus) afficherSection("planificateur", btnMenus);
   // Forcer l'onglet semaine
@@ -2661,10 +2694,13 @@ window.appliquerMenuFavoriSemaine = function(id) {
   setTimeout(() => {
     const inputP = document.getElementById("plan-personnes");
     if (inputP) inputP.value = fav.personnes || 4;
+    // Restaurer menusSemaine au cas où il aurait été écrasé entre-temps
+    menusSemaine = JSON.parse(JSON.stringify(fav.menu));
     afficherMenusSemaine(menusSemaine, fav.personnes || 4);
+    window._chargementFavoriEnCours = false;
     // Toast de confirmation
     if (typeof afficherToast === "function") afficherToast(`📅 Menu chargé : ${fav.nom}`, "info");
-  }, 100);
+  }, 150);
 };
 
 // Charge un menu favori (thématique) et l'affiche
@@ -2674,17 +2710,23 @@ window.appliquerMenuFavoriFestif = function(id) {
   if (!fav || fav.type !== "thematique") return;
   // Masquer la vue dédiée des menus favoris avant de naviguer
   if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
+  window._chargementFavoriEnCours = true;
   // Copie profonde : on travaille sur une copie
   menuFestifActuel = JSON.parse(JSON.stringify(fav.menu));
+  // Forcer l'onglet festif pour la navigation
+  window._planTabActif = "festif";
   const btnMenus = document.querySelector(".nav-btn[onclick*=planificateur]");
   if (btnMenus) afficherSection("planificateur", btnMenus);
   if (typeof switchPlanTab === "function") switchPlanTab("festif");
   setTimeout(() => {
     const inputP = document.getElementById("festif-personnes");
     if (inputP) inputP.value = fav.personnes || 4;
+    // Restaurer au cas où
+    menuFestifActuel = JSON.parse(JSON.stringify(fav.menu));
     afficherMenuFestif(menuFestifActuel, fav.personnes || 4);
+    window._chargementFavoriEnCours = false;
     if (typeof afficherToast === "function") afficherToast(`🎉 Menu chargé : ${fav.nom}`, "info");
-  }, 100);
+  }, 150);
 };
 
 window.appliquerMenuFavori = function(id) {
@@ -2859,6 +2901,8 @@ function nettoyerMenusNonRepas(menus) {
 }
 
 function chargerMenusAuDemarrage() {
+  // Si un menu favori est en cours d'application, ne PAS écraser menusSemaine
+  if (window._chargementFavoriEnCours) return;
   // Vider TOUS les menus en cache (version mapping changée)
   try {
     const today = new Date().toLocaleDateString("fr-FR");
