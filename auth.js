@@ -103,6 +103,7 @@ async function chargerProfil(user) {
   const snap = await ref.get();
   if (snap.exists) {
     window.userProfile = snap.data();
+  window.dispatchEvent(new Event('profilMisAJour'));
   } else {
     const profil = {
       uid: user.uid, prenom: user.displayName || "",
@@ -114,6 +115,7 @@ async function chargerProfil(user) {
     };
     await ref.set(profil);
     window.userProfile = profil;
+  window.dispatchEvent(new Event('profilMisAJour'));
   }
 }
 
@@ -121,6 +123,7 @@ window.sauvegarderProfil = async function(data) {
   if (!window.currentUser) return;
   await _db.collection("utilisateurs").doc(window.currentUser.uid).update(data);
   window.userProfile = Object.assign({}, window.userProfile, data);
+  window.dispatchEvent(new Event('profilMisAJour'));
 };
 
 window.toggleFavori = async function(key) {
