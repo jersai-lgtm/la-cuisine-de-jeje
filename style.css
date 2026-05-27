@@ -1543,6 +1543,56 @@ select, input[type="number"] {
 }
 
 /* ==============================
+   LÉGENDE & RAISON FAMILLE (bébé/enfant)
+============================== */
+.plan-legende-famille {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  margin: 0 0 14px 0;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px;
+  font-size: 13px;
+  color: #ddd;
+}
+.plan-legende-famille .leg-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.plan-legende-famille .leg-pastille {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.plan-legende-famille .leg-pastille.bebe   { background: #ff4444; }
+.plan-legende-famille .leg-pastille.enfant { background: #ff9900; }
+.plan-legende-famille .leg-hint {
+  margin-left: auto;
+  font-size: 12px;
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Motif (raison) affiché sous chaque repas coloré */
+.plan-motif-famille {
+  margin-top: 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(255,255,255,.06);
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffd6db;
+  text-align: center;
+  letter-spacing: .2px;
+}
+
+/* ==============================
    ASSISTANT CLAUDE
 ============================== */
 .fiche-claude-section {
