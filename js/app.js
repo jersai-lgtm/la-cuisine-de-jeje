@@ -605,62 +605,62 @@ function switchProfilTab(tab, btn) {
   document.getElementById('profil-tab-' + tab).style.display = 'block';
   btn.classList.add('active');
   if (tab === 'favoris') afficherFavoris();
+  else if (tab === 'menusfavoris') afficherMenusFavoris();
 }
 
-// Afficher favoris (recettes ET menus)
+// Afficher favoris RECETTES (onglet "Recettes favorites" du profil)
 function afficherFavoris() {
   const liste = document.getElementById('liste-favoris');
   if (!liste) return;
   const favs = window.userProfile?.favoris || [];
+
+  if (favs.length === 0) {
+    liste.innerHTML = `<p style="text-align:center;color:#888;padding:20px">Aucune recette favorite pour l'instant.<br>Appuie sur 🤍 dans une recette pour l'ajouter !</p>`;
+    return;
+  }
+
+  liste.innerHTML = favs.map(key => {
+    const nom = (typeof getNomRecette === 'function' ? getNomRecette(key) : key);
+    const data = typeof recettes !== 'undefined' ? recettes[key] : null;
+    const emoji = data?.emoji || '🍽️';
+    return `<div class="favori-item" onclick="fermerModalProfil();choisirRecette('${key}')">
+      <span>${emoji} ${nom}</span>
+      <button onclick="event.stopPropagation();toggleFavori('${key}').then(()=>afficherFavoris())" class="btn-retirer-favori">✕</button>
+    </div>`;
+  }).join('');
+}
+
+// Afficher menus favoris (onglet "Menus favoris" du profil)
+function afficherMenusFavoris() {
+  const liste = document.getElementById('liste-menus-favoris');
+  if (!liste) return;
   const menusFavs = window.userProfile?.menusFavoris || [];
 
-  let html = "";
-
-  // --- Section MENUS FAVORIS ---
-  if (menusFavs.length > 0) {
-    html += `<h3 style="font-size:14px;color:#ff8fb3;margin:8px 0 6px 0;font-weight:700">❤️ Menus favoris (${menusFavs.length})</h3>`;
-    html += menusFavs.map(f => {
-      const sousType = f.type === "thematique" ? "🎉" : "🗓️";
-      // Aperçu : 1er plat
-      let apercu = "";
-      if (f.type === "thematique") {
-        const plat = (f.menu?.menu || []).find(p => /plat/i.test(p.categorie || "")) || (f.menu?.menu || [])[0];
-        if (plat?.recette) apercu = getNomRecette(plat.recette) || plat.recette;
-      } else {
-        const j1 = f.menu?.semaine?.[0];
-        const k = j1?.midi?.recette || j1?.midi?.plat?.recette || (typeof j1?.midi === "string" ? j1.midi : "");
-        if (k) apercu = getNomRecette(k) || k;
-      }
-      return `<div class="favori-item" onclick="fermerModalProfil();appliquerMenuFavori('${f.id}')" title="Cliquer pour appliquer ce menu">
-        <span style="display:flex;flex-direction:column;gap:2px">
-          <span>${sousType} ${f.nom}</span>
-          ${apercu ? `<span style="font-size:11px;color:#888;font-weight:normal">→ ${apercu}</span>` : ""}
-        </span>
-        <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}').then(()=>afficherFavoris())" class="btn-retirer-favori">✕</button>
-      </div>`;
-    }).join('');
+  if (menusFavs.length === 0) {
+    liste.innerHTML = `<p style="text-align:center;color:#888;padding:20px">Aucun menu favori pour l'instant.<br>Sauvegarde tes menus préférés depuis l'écran Menus avec 🤍 !</p>`;
+    return;
   }
 
-  // --- Section RECETTES FAVORITES ---
-  if (favs.length > 0) {
-    if (menusFavs.length > 0) html += `<h3 style="font-size:14px;color:#ff8fb3;margin:14px 0 6px 0;font-weight:700">🍽️ Recettes favorites (${favs.length})</h3>`;
-    html += favs.map(key => {
-      const nom = (typeof getNomRecette === 'function' ? getNomRecette(key) : key);
-      const data = typeof recettes !== 'undefined' ? recettes[key] : null;
-      const emoji = data?.emoji || '🍽️';
-      return `<div class="favori-item" onclick="fermerModalProfil();choisirRecette('${key}')">
-        <span>${emoji} ${nom}</span>
-        <button onclick="event.stopPropagation();toggleFavori('${key}');afficherFavoris()" class="btn-retirer-favori">✕</button>
-      </div>`;
-    }).join('');
-  }
-
-  // Vide
-  if (favs.length === 0 && menusFavs.length === 0) {
-    html = `<p style="text-align:center;color:#888;padding:20px">Aucun favori pour l'instant.<br>Appuie sur 🤍 dans une recette ou sur un menu pour l'ajouter !</p>`;
-  }
-
-  liste.innerHTML = html;
+  liste.innerHTML = menusFavs.map(f => {
+    const sousType = f.type === "thematique" ? "🎉" : "🗓️";
+    // Aperçu : 1er plat
+    let apercu = "";
+    if (f.type === "thematique") {
+      const plat = (f.menu?.menu || []).find(p => /plat/i.test(p.categorie || "")) || (f.menu?.menu || [])[0];
+      if (plat?.recette) apercu = getNomRecette(plat.recette) || plat.recette;
+    } else {
+      const j1 = f.menu?.semaine?.[0];
+      const k = j1?.midi?.recette || j1?.midi?.plat?.recette || (typeof j1?.midi === "string" ? j1.midi : "");
+      if (k) apercu = getNomRecette(k) || k;
+    }
+    return `<div class="favori-item" onclick="fermerModalProfil();appliquerMenuFavori('${f.id}')" title="Cliquer pour appliquer ce menu">
+      <span style="display:flex;flex-direction:column;gap:2px">
+        <span>${sousType} ${f.nom}</span>
+        ${apercu ? `<span style="font-size:11px;color:#888;font-weight:normal">→ ${apercu}</span>` : ""}
+      </span>
+      <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}').then(()=>{afficherMenusFavoris();chargerAccueilMenusFavoris();})" class="btn-retirer-favori">✕</button>
+    </div>`;
+  }).join('');
 }
 
 // Ajouter bouton favori dans la modale recette
@@ -3231,6 +3231,19 @@ window.addEventListener('profilMisAJour', () => {
     if (typeof afficherMenusSemaine === "function") {
       afficherMenusSemaine(window._derniersMenus, p);
     }
+  }
+  // Rafraîchir les sections favoris (accueil + profil si ouverts)
+  if (typeof chargerAccueilFavoris === "function") chargerAccueilFavoris();
+  if (typeof chargerAccueilMenusFavoris === "function") chargerAccueilMenusFavoris();
+  // Si l'onglet "Recettes favorites" du profil est ouvert, le re-rendre
+  const tabFav = document.getElementById("profil-tab-favoris");
+  if (tabFav && tabFav.style.display !== "none" && typeof afficherFavoris === "function") {
+    afficherFavoris();
+  }
+  // Idem pour l'onglet "Menus favoris"
+  const tabMenusFav = document.getElementById("profil-tab-menusfavoris");
+  if (tabMenusFav && tabMenusFav.style.display !== "none" && typeof afficherMenusFavoris === "function") {
+    afficherMenusFavoris();
   }
 });
 // Vérifier aussi après chargement initial
