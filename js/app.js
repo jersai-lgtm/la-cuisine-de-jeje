@@ -121,11 +121,17 @@ function afficherAccueil() {
   const btn = document.getElementById("btn-accueil");
   if (btn) btn.classList.add("active");
 
-  // Afficher section accueil, masquer grille
+  // Afficher section accueil, masquer toutes les autres
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
+  const secCalc    = document.getElementById("section-calculateur");
+  const secPlan    = document.getElementById("section-planificateur");
+  const secFestif  = document.getElementById("section-festif");
   if (secAccueil) secAccueil.style.display = "block";
   if (secCartes) { secCartes.classList.remove("visible"); secCartes.style.display = ""; }
+  if (secCalc)   secCalc.style.display = "none";
+  if (secPlan)   secPlan.style.display = "none";
+  if (secFestif) secFestif.style.display = "none";
 
   chargerAccueil();
 }
@@ -1108,46 +1114,8 @@ async function genererMenuFestif() {
   const eviterFestif = allergiesFinalesFestif.length ? `ALLERGIES - NE JAMAIS PROPOSER : ${allergiesFinalesFestif.join(", ")}.` : "";
   const instrRegimeFestifFinal = instrRegimeFestif ? `⚠️ RÉGIME ALIMENTAIRE OBLIGATOIRE : ${instrRegimeFestif}` : "";
 
-  const prompt = `Tu es un chef cuisinier. Génère un menu thématique "${themeData.label}" pour ${personnes} personne(s).
-${eviterFestif} ${instrRegimeFestifFinal}
-Structure souhaitée : ${structure.join(", ")}.
-
-Recettes disponibles : ${recettesDispos}
-
-Suggestions par catégorie :
-- Apéro/Cocktail : ${themeData.apero.join(", ")}
-- Entrée : ${themeData.entree.join(", ")}
-- Plat : ${themeData.plat.join(", ")}
-- Dessert : ${themeData.dessert.join(", ")}
-
-Choisis UNE recette par catégorie demandée parmi les recettes disponibles.
-Réponds UNIQUEMENT en JSON :
-{
-  "theme": "${themeData.label}",
-  "menu": [
-    {"categorie": "🥂 Apéro", "recette": "nomRecette", "note": "courte note"},
-    {"categorie": "🥗 Entrée", "recette": "nomRecette", "note": "courte note"},
-    {"categorie": "🍽️ Plat",  "recette": "nomRecette", "note": "courte note"},
-    {"categorie": "🍰 Dessert","recette": "nomRecette", "note": "courte note"}
-  ]
-}`;
-
-  try {
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
-        max_tokens: 500,
-        messages: [{ role: "user", content: prompt }]
-      })
-    });
-    const data = await response.json();
-    const text = data.content[0].text;
-    const clean = text.replace(/```json|```/g, "").trim();
-    menuFestifActuel = JSON.parse(clean);
-  } catch(err) {
-    // Fallback aléatoire avec pickUnique pour éviter les répétitions
+  // Génération locale (pas d'appel API externe, instantané et gratuit)
+  {
     const pickOne = arr => shuffleArray(arr)[0];
     const notesMap = {
       apero:   ["Pour bien commencer la soirée ! 🥂","L'apéro qui met en appétit ✨","Parfait pour briser la glace 🎉","Le coup d'envoi de la soirée 🍹"],
@@ -2989,11 +2957,17 @@ function afficherTout() {
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
   const btnTout = document.getElementById("btn-tout");
   if (btnTout) btnTout.classList.add("active");
-  // Basculer vers la grille
+  // Basculer vers la grille, masquer toutes les autres sections
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
+  const secCalc    = document.getElementById("section-calculateur");
+  const secPlan    = document.getElementById("section-planificateur");
+  const secFestif  = document.getElementById("section-festif");
   if (secAccueil) secAccueil.style.display = "none";
   if (secCartes)  secCartes.classList.add("visible");
+  if (secCalc)    secCalc.style.display = "none";
+  if (secPlan)    secPlan.style.display = "none";
+  if (secFestif)  secFestif.style.display = "none";
   document.querySelectorAll(".carte").forEach(c => c.style.display = "");
   if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
 }
@@ -3016,9 +2990,12 @@ function toggleSousMenu(menuId, btn) {
     btn.classList.remove("active");
   } else {
     menu.style.display = "flex";
+    // Désélectionner tous les autres boutons principaux (Accueil, Recettes favorites, Menus favoris, Tout)
+    document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
-    document.getElementById("btn-tout").classList.remove("active");
     document.querySelectorAll(`#${menuId} .pays-btn`).forEach(b => b.classList.remove("active"));
+    // Masquer la vue dédiée menus favoris si elle était affichée
+    if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
     // Basculer vers la grille si on est sur l'accueil
     const secAccueil = document.getElementById("section-accueil");
     const secCartes  = document.getElementById("section-cartes");
