@@ -717,23 +717,93 @@ function miniCarte(key) {
   const r    = recettes[key];
   const nom  = getNomRecette(key);
   const img  = key.toLowerCase().replace(/[^a-z0-9]/g, "");
-  // Badge famille discret
-  const adapt = typeof getAdaptationFamille === "function" ? getAdaptationFamille(key) : null;
-  const badgeFam = adapt ? `<span class="mini-carte-famille" title="${adapt.label}">${adapt.badge}</span>` : "";
+  // Badge famille : alerte rouge/orange si recette présente une difficulté famille (cohérent avec planif menus)
+  let badgeFam = "";
+  let styleAlerte = "";
+  let titleAlerte = "";
+  let btnRegen = "";
+  if (typeof getNiveauFamille === "function" && typeof getFoyerProfil === "function") {
+    const profil = getFoyerProfil();
+    if (profil && (profil.hasBebe || profil.hasEnfant)) {
+      const niv = getNiveauFamille(key);
+      if (niv) {
+        // Recette inadaptée : alerte (bordure colorée + badge)
+        const raison = niv.raison || "";
+        const lvl = niv.niveau;
+        titleAlerte = lvl === "bebe" ? `${raison} — déconseillé bébé` : `${raison} — déconseillé enfant`;
+        styleAlerte = lvl === "bebe" ? "border:2px solid #ff4444;box-shadow:0 0 8px rgba(255,68,68,.3)"
+                                     : "border:2px solid #ff9900;box-shadow:0 0 8px rgba(255,153,0,.3)";
+        const emoji = lvl === "bebe" ? "🍼" : "🌶️";
+        badgeFam = `<span class="mini-carte-famille" title="${titleAlerte}">${emoji}</span>`;
+        // Bouton régénérer
+        btnRegen = `<button class="mini-carte-regen" onclick="event.stopPropagation();regenererSuggestion('${key}')" title="Régénérer cette suggestion">🔄</button>`;
+      } else {
+        // Recette 100% adaptée famille → badge positif
+        badgeFam = `<span class="mini-carte-famille mini-carte-famille-ok" title="Adapté à toute la famille">🏠</span>`;
+      }
+    }
+  }
   // Badge saison (uniquement si recette est de saison actuelle)
   const deSaison = typeof estDeSaison === "function" && estDeSaison(key);
   const infoSaison = deSaison ? getEmojiSaison(getSaisonActuelle()) : null;
   const badgeSaison = infoSaison ? `<span class="mini-carte-saison" title="De saison : ${infoSaison.label}">${infoSaison.emoji}</span>` : "";
-  return `<div class="mini-carte" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
+  return `<div class="mini-carte" style="${styleAlerte}" title="${titleAlerte}" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
     <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
     ${badgeFam}
     ${badgeSaison}
+    ${btnRegen}
     <div class="mini-carte-info">
       <span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>
       <span class="mini-carte-nom">${nom}</span>
       <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
     </div>
   </div>`;
+}
+
+// Régénère une recette dans les suggestions du jour
+function regenererSuggestion(cleAremplacer) {
+  const storageKey = Object.keys(localStorage).find(k => k.startsWith("suggestions_v3_"));
+  if (!storageKey) return;
+  try {
+    const pool = JSON.parse(localStorage.getItem(storageKey) || "[]");
+    const idx = pool.indexOf(cleAremplacer);
+    if (idx === -1) return;
+    // Trouver une recette de remplacement adaptée
+    const favs   = window.userProfile?.favoris || [];
+    const vus    = window._recentsVus || [];
+    const exclus = new Set([...favs, ...vus, ...pool]); // exclure aussi celles déjà dans le pool
+    const prefs = window.userProfile?.preferences;
+    const motsExclus = new Set();
+    if (prefs && typeof ALLERGENES_MOTS !== "undefined") {
+      [...(prefs.allergies||[]), ...(prefs.regimes||[]), ...(prefs.allergiesCustom||[])].forEach(a => {
+        (ALLERGENES_MOTS[a] || [a]).forEach(m => motsExclus.add(m.toLowerCase()));
+      });
+    }
+    const _catsExclues = new Set(["boulangerie","cocktails","mocktails"]);
+    const candidats = Object.keys(recettes).filter(key => {
+      if (exclus.has(key)) return false;
+      if (RECETTES_NON_REPAS && RECETTES_NON_REPAS.has(key)) return false;
+      if (_catsExclues.has(categorieRecette(key))) return false;
+      // Préférer une recette ADAPTÉE famille
+      if (typeof getNiveauFamille === "function" && getNiveauFamille(key)) return false;
+      if (motsExclus.size > 0) {
+        const texte = texteRecette(key);
+        if ([...motsExclus].some(m => texte.includes(m))) return false;
+      }
+      return true;
+    });
+    if (candidats.length === 0) {
+      if (typeof afficherToast === "function") afficherToast("Aucune recette adaptée trouvée pour remplacer", "info");
+      return;
+    }
+    // Choisir aléatoirement
+    const remplacement = candidats[Math.floor(Math.random() * candidats.length)];
+    pool[idx] = remplacement;
+    localStorage.setItem(storageKey, JSON.stringify(pool));
+    // Re-rendre les suggestions
+    if (typeof chargerAccueilSuggestions === "function") chargerAccueilSuggestions();
+    if (typeof afficherToast === "function") afficherToast(`✨ Remplacé par ${getNomRecette(remplacement)}`, "success");
+  } catch(e) { console.error(e); }
 }
 
 function afficherHistorique() {
