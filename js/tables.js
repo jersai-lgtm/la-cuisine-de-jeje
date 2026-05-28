@@ -1247,6 +1247,19 @@ function choisirRecette(nom) {
     "saladeburrata":         "Salade Burrata",
     "goulashhongrois":       "Goulash Hongrois",
     "raclette":              "Raclette Savoyarde",
+    // === Incontournables ===
+    "fonduesavoyarde":       "Fondue Savoyarde",
+    "saintjacquespoelees":   "Saint-Jacques poêlées",
+    "painperdubrioche":      "Pain Perdu Brioché",
+    "tartareboeuf":          "Tartare de Bœuf",
+    "soupepoissonroche":     "Soupe de Poisson de Roche",
+    "okonomiyaki":           "Okonomiyaki",
+    "biryanipoulet":         "Biryani de Poulet",
+    "tagliatellestruffe":    "Tagliatelles à la Truffe",
+    "pastillaroyale":        "Pastilla Royale",
+    "carbonadeflamande":     "Carbonade Flamande",
+    "macarons":              "Macarons Parisiens",
+    "babaaurhum":            "Baba au Rhum",
   };
   const nomPropre = nomsAffichage[nom] || (nom.charAt(0).toUpperCase() + nom.slice(1));
 
