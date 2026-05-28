@@ -42,7 +42,7 @@ gtag('config', 'G-390C5MY2SS');
   <div class="header-top">
     <div>
       <h1>👨‍🍳 La Cuisine de Jéjé</h1>
-      <p id="nb-recettes">🍽️ 412 recettes</p>
+      <p id="nb-recettes">🍽️ 413 recettes</p>
     </div>
     <div id="zone-utilisateur">
       <button class="btn-connexion" onclick="ouvrirModalAuth()">👤 Connexion</button>
@@ -4957,6 +4957,18 @@ gtag('config', 'G-390C5MY2SS');
       <div class="carte-calc" onclick="event.stopPropagation()">
         <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-babaaurhum">
         <button class="calc-btn" onclick="calculerCarte('babaaurhum', 'calc-babaaurhum')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('cakeBananeChoco', 'calc-cakeBananeChoco')">
+    <img src="images/cakeBananeChoco.webp" alt="Cake Banane Chocolat" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍌 Cake Banane Chocolat</h2>
+      <p>⏱ 1h05 • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-cakeBananeChoco">
+        <button class="calc-btn" onclick="calculerCarte('cakeBananeChoco', 'calc-cakeBananeChoco')">Calculer</button>
       </div>
     </div>
   </div>
