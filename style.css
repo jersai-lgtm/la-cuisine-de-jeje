@@ -1834,9 +1834,9 @@ select, input[type="number"] {
 /* ============================================================ */
 .carte-etiquette-famille {
   position: absolute;
-  bottom: 145px;         /* Sur le bas de l'image, juste au-dessus de la zone titre */
-  left: 8px;
-  right: 8px;
+  top: 50%;              /* CENTRÉ verticalement sur l'image */
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: rgba(255,255,255,.97);
   border-radius: 8px;
   padding: 4px 8px;
@@ -1864,14 +1864,14 @@ select, input[type="number"] {
 /* ============================================================ */
 @media (max-width: 600px) {
   .carte-etiquette-famille {
-    bottom: 100px;       /* Mobile : image plus petite, on remonte */
     font-size: 10px;
     padding: 3px 6px;
+    max-width: 90%;       /* Limite la largeur pour ne pas déborder */
   }
 }
 @media (max-width: 480px) {
   .carte-etiquette-famille {
-    bottom: 95px;
     font-size: 10px;
+    max-width: 92%;
   }
 }
