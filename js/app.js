@@ -2667,7 +2667,7 @@ function getNomRecette(key) {
     "pizzasaumonepinards": "Pizza Saumon Épinards",
     "tortillaespagnole": "Tortilla Espagnole",
     "pizzavegetarienne": "Pizza Végétarienne",
-    "crepes":            "Crêpes Sucrées",
+    "crepes":            "Crêpes",
     "lasagne":           "Pâte à Lasagne",
     "patepizza":         "Pâte à Pizza",
     "pizza":             "Pâte à Pizza",
