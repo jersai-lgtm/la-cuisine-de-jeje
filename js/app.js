@@ -155,7 +155,7 @@ function chargerAccueilFavoris() {
   if (!row) return;
   const favs = window.userProfile?.favoris || [];
   if (!window.currentUser) {
-    row.innerHTML = `<div class="accueil-empty">👤 <a onclick="ouvrirModalAuth()" style="color:#ff8fb3;cursor:pointer">Connecte-toi</a> pour voir tes favoris</div>`;
+    row.innerHTML = `<div class="accueil-empty">👤 <a onclick="ouvrirModalAuth()" style="color:#ff8fb3;cursor:pointer">Connectez-vous</a> pour voir vos favoris</div>`;
     return;
   }
   if (favs.length === 0) {
@@ -174,7 +174,7 @@ function chargerAccueilMenus() {
     try { hist = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]"); } catch(e) {}
   }
   if (hist.length === 0) {
-    row.innerHTML = `<div class="accueil-empty">Génère ton premier menu dans l'onglet Menus !</div>`;
+    row.innerHTML = `<div class="accueil-empty">Générez votre premier menu dans l'onglet Menus !</div>`;
     return;
   }
   const dernier = hist[0];
@@ -335,7 +335,7 @@ function chargerAccueilMenusFavoris() {
   if (!row) return;
 
   if (favs.length === 0) {
-    row.innerHTML = `<div class="accueil-empty">Aucun menu favori — sauvegarde tes menus préférés depuis l'écran Menus !</div>`;
+    row.innerHTML = `<div class="accueil-empty">Aucun menu favori — sauvegardez vos menus préférés depuis l'écran Menus !</div>`;
     return;
   }
 
@@ -405,7 +405,7 @@ function effacerHistoriqueMenus() {
     }
   } catch(e) {}
   const row = document.getElementById("accueil-menus-row");
-  if (row) row.innerHTML = `<div class="accueil-empty">Génère ton premier menu dans l'onglet Menus !</div>`;
+  if (row) row.innerHTML = `<div class="accueil-empty">Générez votre premier menu dans l'onglet Menus !</div>`;
 }
 
 function effacerRecents() {
@@ -842,7 +842,7 @@ function filtrerMenusFavoris() {
   if (menusFavs.length === 0) {
     html += `<p style="text-align:center;color:#888;padding:40px;font-size:15px;background:rgba(255,255,255,.03);border-radius:12px">
       Aucun menu favori pour l'instant.<br>
-      <small style="opacity:.7">Sauvegarde tes menus préférés depuis l'écran Menus avec 🤍 !</small>
+      <small style="opacity:.7">Sauvegardez vos menus préférés depuis l'écran Menus avec 🤍 !</small>
     </p>`;
   } else {
     html += `<div style="display:grid;gap:10px">`;
@@ -942,7 +942,7 @@ function afficherMenusFavoris() {
   const menusFavs = window.userProfile?.menusFavoris || [];
 
   if (menusFavs.length === 0) {
-    liste.innerHTML = `<p style="text-align:center;color:#888;padding:20px">Aucun menu favori pour l'instant.<br>Sauvegarde tes menus préférés depuis l'écran Menus avec 🤍 !</p>`;
+    liste.innerHTML = `<p style="text-align:center;color:#888;padding:20px">Aucun menu favori pour l'instant.<br>Sauvegardez vos menus préférés depuis l'écran Menus avec 🤍 !</p>`;
     return;
   }
 
@@ -1447,7 +1447,7 @@ function afficherMenuFestif(menu, personnes) {
     const parts = [];
     if (profilL.hasBebe)   parts.push(`<span class="leg-item"><span class="leg-pastille bebe"></span>🍼 Déconseillé bébé</span>`);
     if (profilL.hasEnfant) parts.push(`<span class="leg-item"><span class="leg-pastille enfant"></span>🌶️ Déconseillé enfant</span>`);
-    parts.push(`<span class="leg-hint">Tu peux <strong>🔄 régénérer</strong> chaque item concerné</span>`);
+    parts.push(`<span class="leg-hint"><strong>🔄 Régénérer</strong> chaque item concerné</span>`);
     legende.innerHTML = parts.join("");
     container.appendChild(legende);
   }
@@ -1675,7 +1675,7 @@ async function genererMenus() {
   const tags = [...document.querySelectorAll(".plan-tags:not(#plan-jours-choix) .plan-tag-active")].map(b => b.dataset.val);
 
   if (joursSelectionnes.length === 0) {
-    alert("Sélectionne au moins un jour !");
+    alert("Sélectionnez au moins un jour !");
     return;
   }
 
@@ -2685,7 +2685,7 @@ function afficherMenusSemaine(menus, personnes) {
     const parts = [];
     if (profilL.hasBebe)   parts.push(`<span class="leg-item"><span class="leg-pastille bebe"></span>🍼 Déconseillé bébé</span>`);
     if (profilL.hasEnfant) parts.push(`<span class="leg-item"><span class="leg-pastille enfant"></span>🌶️ Déconseillé enfant</span>`);
-    parts.push(`<span class="leg-hint">Tu peux <strong>🔄 régénérer</strong> chaque repas concerné</span>`);
+    parts.push(`<span class="leg-hint"><strong>🔄 Régénérer</strong> chaque repas concerné</span>`);
     legende.innerHTML = parts.join("");
     container.appendChild(legende);
   }
@@ -2824,7 +2824,7 @@ function injecterBoutonMenuFavori(containerId, type, menu, personnes) {
   const btn = document.createElement("button");
   btn.className = "plan-btn-favori-menu";
   btn.innerHTML = estFav ? "❤️ Sauvegardé" : "🤍 Sauvegarder";
-  btn.title = estFav ? "Ce menu est dans tes favoris" : "Sauvegarder ce menu en favori";
+  btn.title = estFav ? "Ce menu est dans vos favoris" : "Sauvegarder ce menu en favori";
   btn.onclick = async (e) => {
     e.stopPropagation();
     if (estFav) {
@@ -3025,7 +3025,7 @@ function imprimerCourses(sourceId) {
   // Ouvrir une nouvelle fenêtre dédiée à l'impression
   const win = window.open("", "_blank", "width=800,height=900");
   if (!win) {
-    alert("⚠️ Impossible d'ouvrir la fenêtre d'impression. Autorise les popups dans ton navigateur.");
+    alert("⚠️ Impossible d'ouvrir la fenêtre d'impression. Autorisez les popups dans votre navigateur.");
     return;
   }
 
@@ -4446,7 +4446,7 @@ function ouvrirChatClaude(nom) {
       window._claudeHistoires[nom] = { messages: [], count: 0 };
       // Message de bienvenue
       afficherMessageClaude(nom, "assistant",
-        `Bonjour ! Je suis là pour t'aider avec **${getNomRecette(nom)}**. Tu peux me poser jusqu'à ${CLAUDE_MAX_QUESTIONS} questions — technique, substitution, timing, adaptation... Je suis là ! 👨‍🍳`
+        `Bonjour ! Je suis là pour vous aider avec **${getNomRecette(nom)}**. Vous pouvez me poser jusqu'à ${CLAUDE_MAX_QUESTIONS} questions — technique, substitution, timing, adaptation... Je suis là ! 👨‍🍳`
       );
     }
     majQuotaClaude(nom);
@@ -4494,7 +4494,7 @@ async function envoyerQuestionClaude(nom) {
   // Vérifier quota
   const hist = window._claudeHistoires[nom] || { messages: [], count: 0 };
   if (hist.count >= CLAUDE_MAX_QUESTIONS) {
-    afficherMessageClaude(nom, "assistant", "Tu as atteint la limite de questions pour cette recette. Ferme et rouvre la fiche pour recommencer ! 😊");
+    afficherMessageClaude(nom, "assistant", "Vous avez atteint la limite de questions pour cette recette. Fermez et rouvrez la fiche pour recommencer ! 😊");
     return;
   }
 
@@ -4555,10 +4555,10 @@ Réponds en français.`;
     if (data2.error) {
       console.error("Erreur API Claude:", data2.error);
       document.getElementById(loadingId)?.remove();
-      afficherMessageClaude(nom, "assistant", `❌ Erreur : ${data2.error.message || "Problème avec l'API"}. Vérifie ta clé API Anthropic.`);
+      afficherMessageClaude(nom, "assistant", `❌ Erreur : ${data2.error.message || "Problème avec l'API"}. Vérifiez votre clé API Anthropic.`);
       return;
     }
-    const reponse = data2.content?.[0]?.text || "Désolé, je n'ai pas pu répondre. Réessaie !";
+    const reponse = data2.content?.[0]?.text || "Désolé, je n'ai pas pu répondre. Réessayez !";
 
     // Supprimer le loading
     document.getElementById(loadingId)?.remove();
@@ -4574,6 +4574,6 @@ Réponds en français.`;
 
   } catch(err) {
     document.getElementById(loadingId)?.remove();
-    afficherMessageClaude(nom, "assistant", "Oups, une erreur s'est produite. Vérifie ta connexion et réessaie ! 🙏");
+    afficherMessageClaude(nom, "assistant", "Oups, une erreur s'est produite. Vérifiez votre connexion et réessayez ! 🙏");
   }
 }
