@@ -42,7 +42,7 @@ gtag('config', 'G-390C5MY2SS');
   <div class="header-top">
     <div>
       <h1>👨‍🍳 La Cuisine de Jéjé</h1>
-      <p id="nb-recettes">🍽️ 354 recettes</p>
+      <p id="nb-recettes">🍽️ 365 recettes</p>
     </div>
     <div id="zone-utilisateur">
       <button class="btn-connexion" onclick="ouvrirModalAuth()">👤 Connexion</button>
@@ -4319,6 +4319,128 @@ gtag('config', 'G-390C5MY2SS');
       <div class="carte-calc" onclick="event.stopPropagation()">
         <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-galettedesrois">
         <button class="calc-btn" onclick="calculerCarte('galettedesrois', 'calc-galettedesrois')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="vietnam" onclick="ouvrirFiche('bunbonamoo', 'calc-bunbonamoo')">
+    <img src="images/bunbonamoo.webp" alt="Bún Bò Nam Bộ" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍜 Bún Bò Nam Bộ</h2>
+      <p>⏱ 45 min • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-bunbonamoo">
+        <button class="calc-btn" onclick="calculerCarte('bunbonamoo', 'calc-bunbonamoo')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="vietnam" onclick="ouvrirFiche('banhmiviet', 'calc-banhmiviet')">
+    <img src="images/banhmiviet.webp" alt="Bánh Mì Vietnamien" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥖 Bánh Mì Vietnamien</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-banhmiviet">
+        <button class="calc-btn" onclick="calculerCarte('banhmiviet', 'calc-banhmiviet')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="bresil" onclick="ouvrirFiche('feijoadabresil', 'calc-feijoadabresil')">
+    <img src="images/feijoadabresil.webp" alt=" Feijoada Brésilienne" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🇧🇷 Feijoada Brésilienne</h2>
+      <p>⏱ 3h+12h • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-feijoadabresil">
+        <button class="calc-btn" onclick="calculerCarte('feijoadabresil', 'calc-feijoadabresil')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="indonesie" onclick="ouvrirFiche('gadogado', 'calc-gadogado')">
+    <img src="images/gadogado.webp" alt="Gado-Gado Indonésien" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥗 Gado-Gado Indonésien</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-gadogado">
+        <button class="calc-btn" onclick="calculerCarte('gadogado', 'calc-gadogado')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="thailande" onclick="ouvrirFiche('larbgai', 'calc-larbgai')">
+    <img src="images/larbgai.webp" alt=" Larb Gai Thaï" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🌶️ Larb Gai Thaï</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-larbgai">
+        <button class="calc-btn" onclick="calculerCarte('larbgai', 'calc-larbgai')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="thailande" onclick="ouvrirFiche('khaosoi', 'calc-khaosoi')">
+    <img src="images/khaosoi.webp" alt="Khao Soi" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍜 Khao Soi</h2>
+      <p>⏱ 50 min • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-khaosoi">
+        <button class="calc-btn" onclick="calculerCarte('khaosoi', 'calc-khaosoi')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="liban" onclick="ouvrirFiche('sayadieh', 'calc-sayadieh')">
+    <img src="images/sayadieh.webp" alt="Sayadieh Libanais" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🐟 Sayadieh Libanais</h2>
+      <p>⏱ 1h15 • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-sayadieh">
+        <button class="calc-btn" onclick="calculerCarte('sayadieh', 'calc-sayadieh')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="liban" onclick="ouvrirFiche('fattehlibanaise', 'calc-fattehlibanaise')">
+    <img src="images/fattehlibanaise.webp" alt="Fatteh Libanaise" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥙 Fatteh Libanaise</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-fattehlibanaise">
+        <button class="calc-btn" onclick="calculerCarte('fattehlibanaise', 'calc-fattehlibanaise')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="maroc" onclick="ouvrirFiche('keftamarocaine', 'calc-keftamarocaine')">
+    <img src="images/keftamarocaine.webp" alt="Kefta Marocaine" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍅 Kefta Marocaine</h2>
+      <p>⏱ 45 min • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-keftamarocaine">
+        <button class="calc-btn" onclick="calculerCarte('keftamarocaine', 'calc-keftamarocaine')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="maroc" onclick="ouvrirFiche('pastillapoulet', 'calc-pastillapoulet')">
+    <img src="images/pastillapoulet.webp" alt="Pastilla au Poulet" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥧 Pastilla au Poulet</h2>
+      <p>⏱ 2h30 • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pastillapoulet">
+        <button class="calc-btn" onclick="calculerCarte('pastillapoulet', 'calc-pastillapoulet')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="entrees" data-pays="grece" onclick="ouvrirFiche('spanakopita', 'calc-spanakopita')">
+    <img src="images/spanakopita.webp" alt="Spanakopita Grecque" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥬 Spanakopita Grecque</h2>
+      <p>⏱ 1h30 • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-spanakopita">
+        <button class="calc-btn" onclick="calculerCarte('spanakopita', 'calc-spanakopita')">Calculer</button>
       </div>
     </div>
   </div>

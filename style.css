@@ -1494,21 +1494,6 @@ select, input[type="number"] {
 /* ==============================
    BADGES FAMILLE
 ============================== */
-.carte-badge-famille {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
-  font-size: 16px;
-  background: rgba(0,0,0,.55);
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: default;
-  z-index: 2;
-}
 .mini-carte-famille {
   position: absolute;
   top: 6px;
@@ -1824,4 +1809,20 @@ select, input[type="number"] {
   z-index: 3;
   pointer-events: none;
   box-shadow: 0 2px 4px rgba(0,0,0,.4);
+}
+
+/* ============================================================ */
+/* Alertes famille / niveau sur les cartes du catalogue          */
+/* ============================================================ */
+.carte.carte-alerte-bebe {
+  border: 2px solid #ff4444 !important;
+  box-shadow: 0 0 12px rgba(255,68,68,.3) !important;
+}
+.carte.carte-alerte-enfant {
+  border: 2px solid #ff9900 !important;
+  box-shadow: 0 0 10px rgba(255,153,0,.25) !important;
+}
+.carte.carte-alerte-niveau {
+  /* Niveau trop élevé : alerte plus douce que famille (juste un soft glow) */
+  box-shadow: inset 0 0 0 1px rgba(255,153,0,.4) !important;
 }
