@@ -458,7 +458,7 @@ const recettes = {
       { icone: "🔥", titre: "Cuire", detail: "Enfourner. Le cookie doit être encore mou à la sortie du four, il durcit en refroidissant. Laisser reposer 5 min sur la plaque. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 10–12 min" }
     ]
   },
-  saladeniçoise: {
+  "saladeniçoise": {
     cat: "salades", saisons: ["ete"], pays: "france",
     base: 4,
     temps: "25 min",
@@ -5008,36 +5008,36 @@ const recettes = {
       { icone: "🌿", titre: "Finir", detail: "Parsemer de coriandre fraîche. Servir avec riz basmati ou semoule.", badge: null }
     ]
   },
-  crepesSucrées: {
+  "crepesSucrées": {
     cat: "brunch", pays: "france",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
     emoji: "🍮",
-    description: "Crêpes Sucrées Garnies — crêpes fines façon beurre-sucre, Nutella, confiture ou flambées au Grand Marnier. La vraie recette bretonne.",
+    description: "Crêpes Sucrées Garnies — crêpes fines façon beurre-sucre, Nutella, confiture ou caramel beurre salé. La vraie recette bretonne.",
     tableauCrepesSucrees: [
-      { nb: 1, farine: "31 g", lait: "62.5 ml", oeufs: "0.5", beurre: "6 g", sucre: "3 g", citron: "⅓ citron", miel: "1 c.à.s" },
-      { nb: 2, farine: "62 g", lait: "125 ml", oeufs: "1", beurre: "12 g", sucre: "6 g", citron: "⅔ citron", miel: "2 c.à.s" },
-      { nb: 3, farine: "93 g", lait: "187.5 ml", oeufs: "1.5", beurre: "18 g", sucre: "9 g", citron: "1 citron", miel: "3 c.à.s" },
-      { nb: 4, farine: "125 g", lait: "250 ml", oeufs: "2", beurre: "25 g", sucre: "12 g", citron: "2 citrons", miel: "4 c.à.s" },
-      { nb: 5, farine: "156.2 g", lait: "312.5 ml", oeufs: "2.5", beurre: "31.2 g", sucre: "15 g", citron: "2 citrons", miel: "5 c.à.s" },
-      { nb: 6, farine: "187 g", lait: "375 ml", oeufs: "3", beurre: "37 g", sucre: "18 g", citron: "2 citrons", miel: "6 c.à.s" },
-      { nb: 7, farine: "218.2 g", lait: "437.5 ml", oeufs: "3.5", beurre: "43.2 g", sucre: "21 g", citron: "3 citrons", miel: "7 c.à.s" },
-      { nb: 8, farine: "250 g", lait: "500 ml", oeufs: "4", beurre: "50 g", sucre: "25 g", citron: "3 citrons", miel: "8 c.à.s" },
-      { nb: 9, farine: "281.2 g", lait: "562.5 ml", oeufs: "4.5", beurre: "56.2 g", sucre: "28.1 g", citron: "3 citrons", miel: "9 c.à.s" },
-      { nb: 10, farine: "312 g", lait: "625 ml", oeufs: "5", beurre: "62 g", sucre: "31 g", citron: "4 citrons", miel: "10 c.à.s" },
-      { nb: 11, farine: "343.2 g", lait: "687.5 ml", oeufs: "5.5", beurre: "68.2 g", sucre: "34.1 g", citron: "4 citrons", miel: "11 c.à.s" },
-      { nb: 12, farine: "375 g", lait: "750 ml", oeufs: "6", beurre: "75 g", sucre: "37 g", citron: "4 citrons", miel: "12 c.à.s" },
-      { nb: 13, farine: "406.2 g", lait: "812.5 ml", oeufs: "6.5", beurre: "81.2 g", sucre: "40.1 g", citron: "5 citrons", miel: "13 c.à.s" },
-      { nb: 14, farine: "437 g", lait: "875 ml", oeufs: "7", beurre: "87 g", sucre: "43 g", citron: "5 citrons", miel: "14 c.à.s" },
-      { nb: 15, farine: "468.2 g", lait: "937.5 ml", oeufs: "7.5", beurre: "93.2 g", sucre: "46.1 g", citron: "5 citrons", miel: "15 c.à.s" }
+      { nb: 1, farine: "31 g", lait: "62.5 ml", oeufs: "0.5", beurre: "6 g", sucre: "3 g", citron: "⅓ citron", confiture: "1 c.à.s" },
+      { nb: 2, farine: "62 g", lait: "125 ml", oeufs: "1", beurre: "12 g", sucre: "6 g", citron: "⅔ citron", confiture: "2 c.à.s" },
+      { nb: 3, farine: "93 g", lait: "187.5 ml", oeufs: "1.5", beurre: "18 g", sucre: "9 g", citron: "1 citron", confiture: "3 c.à.s" },
+      { nb: 4, farine: "125 g", lait: "250 ml", oeufs: "2", beurre: "25 g", sucre: "12 g", citron: "2 citrons", confiture: "4 c.à.s" },
+      { nb: 5, farine: "156.2 g", lait: "312.5 ml", oeufs: "2.5", beurre: "31.2 g", sucre: "15 g", citron: "2 citrons", confiture: "5 c.à.s" },
+      { nb: 6, farine: "187 g", lait: "375 ml", oeufs: "3", beurre: "37 g", sucre: "18 g", citron: "2 citrons", confiture: "6 c.à.s" },
+      { nb: 7, farine: "218.2 g", lait: "437.5 ml", oeufs: "3.5", beurre: "43.2 g", sucre: "21 g", citron: "3 citrons", confiture: "7 c.à.s" },
+      { nb: 8, farine: "250 g", lait: "500 ml", oeufs: "4", beurre: "50 g", sucre: "25 g", citron: "3 citrons", confiture: "8 c.à.s" },
+      { nb: 9, farine: "281.2 g", lait: "562.5 ml", oeufs: "4.5", beurre: "56.2 g", sucre: "28.1 g", citron: "3 citrons", confiture: "9 c.à.s" },
+      { nb: 10, farine: "312 g", lait: "625 ml", oeufs: "5", beurre: "62 g", sucre: "31 g", citron: "4 citrons", confiture: "10 c.à.s" },
+      { nb: 11, farine: "343.2 g", lait: "687.5 ml", oeufs: "5.5", beurre: "68.2 g", sucre: "34.1 g", citron: "4 citrons", confiture: "11 c.à.s" },
+      { nb: 12, farine: "375 g", lait: "750 ml", oeufs: "6", beurre: "75 g", sucre: "37 g", citron: "4 citrons", confiture: "12 c.à.s" },
+      { nb: 13, farine: "406.2 g", lait: "812.5 ml", oeufs: "6.5", beurre: "81.2 g", sucre: "40.1 g", citron: "5 citrons", confiture: "13 c.à.s" },
+      { nb: 14, farine: "437 g", lait: "875 ml", oeufs: "7", beurre: "87 g", sucre: "43 g", citron: "5 citrons", confiture: "14 c.à.s" },
+      { nb: 15, farine: "468.2 g", lait: "937.5 ml", oeufs: "7.5", beurre: "93.2 g", sucre: "46.1 g", citron: "5 citrons", confiture: "15 c.à.s" }
     ],
     ingredients: {},
     etapes: [
       { icone: "🌾", titre: "Pâte à crêpes", detail: "Mélanger farine et sucre. Creuser un puits, ajouter les œufs. Incorporer le lait progressivement pour éviter les grumeaux. Ajouter beurre fondu. Reposer 30 min.", badge: "⏱ 30 min repos" },
       { icone: "🍳", titre: "Cuire les crêpes", detail: "Poêle bien chaude légèrement beurrée. Verser une louche, incliner pour étaler. Cuire 1 min par face.", badge: "⏱ 2 min/crêpe" },
-      { icone: "🧈", titre: "Garnitures", detail: "Beurre + sucre, Nutella, confiture de fraises, miel + citron, ou caramel au beurre salé.", badge: null },
-      { icone: "🔥", titre: "Crêpes Suzette (option)", detail: "Faire un caramel au beurre avec jus d'orange et zeste. Y plonger les crêpes pliées en 4. Flamber au Grand Marnier.", badge: null }
+      { icone: "🧈", titre: "Garnitures", detail: "Beurre + sucre, Nutella, confiture de fraises, confiture + citron, ou caramel au beurre salé.", badge: null },
+      { icone: "🍊", titre: "Crêpes à l'orange (option)", detail: "Faire un caramel au beurre avec jus d'orange et zeste. Y plonger les crêpes pliées en 4. ASTUCE CHEF : pour version sans alcool, le caramel à l'orange suffit largement à parfumer.", badge: null }
     ]
   },
   poireauVinaigrette: {
