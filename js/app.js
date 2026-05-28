@@ -1049,7 +1049,7 @@ const INGREDIENTS_LABELS = {
   // == Aromates & épices ==
   sel: "🧂 Sel", poivre: "🌶️ Poivre noir", piment: "🌶️ Piment",
   masala: "🌶️ Garam masala", curry: "🌶️ Curry", cumin: "🌿 Cumin",
-  cannelle: "🪵 Cannelle", safran: "🌼 Safran", paprika: "🌶️ Paprika",
+  cannelle: "🪵 Cannelle", muscade: "🌰 Muscade", safran: "🌼 Safran", paprika: "🌶️ Paprika",
   gingembre: "🫚 Gingembre", galanga: "🫚 Galanga", anis: "⭐ Anis étoilé",
   citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille", fumee: "💨 Paprika fumé",
   chermoula: "🌿 Chermoula", pesto: "🌿 Pesto",
