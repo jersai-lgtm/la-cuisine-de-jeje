@@ -1189,6 +1189,18 @@ function choisirRecette(nom) {
     "focacciaolives":        "Focaccia Olives-Romarin",
     "khachapuri":            "Khachapuri",
     "painpita":              "Pain Pita",
+    // === Lot 1 — 11 classiques français ===
+    "quenelleslyonnaises":   "Quenelles Lyonnaises sauce Nantua",
+    "aligotcantal":          "Aligot du Cantal",
+    "coqauvin":              "Coq au Vin",
+    "civetlapin":            "Civet de Lapin",
+    "soupeaupistou":         "Soupe au Pistou",
+    "tartiflettesavoyarde":  "Tartiflette Savoyarde",
+    "andouillettemoutarde":  "Andouillette à la Moutarde",
+    "confitcanard":          "Confit de Canard",
+    "cremecaramel":          "Crème Caramel",
+    "farbreton":             "Far Breton aux Pruneaux",
+    "galettedesrois":        "Galette des Rois Frangipane",
   };
   const nomPropre = nomsAffichage[nom] || (nom.charAt(0).toUpperCase() + nom.slice(1));
 

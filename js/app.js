@@ -29,7 +29,9 @@ const RECETTES_NON_REPAS = new Set([
   // 50 nouvelles recettes — non-repas (desserts/boulangerie/brunch/encas)
   "huevosrancheros","chilaquilesrojos","kayatoast","samossasagneau","empanadasargentines",
   "baoporccarmelise","pasteldenata","basquecheesecake","mochiglace","knafehlibanais",
-  "alfajores","focacciaolives","khachapuri","painpita"
+  "alfajores","focacciaolives","khachapuri","painpita",
+  // Lot 1 — desserts français
+  "cremecaramel","farbreton","galettedesrois"
 ]);
 
 // Desserts (pour le pool desserts du menu complet — liste fiable, ne dépend pas du DOM)
@@ -39,7 +41,9 @@ const RECETTES_DESSERTS = [
   "ileflottante","madeleine","millefeuille","moelleuxchocolat","mousseauchocolat",
   "pannaCotta","parisbrestreinterpretation","pavlova","profiteroles","tarteFragoles","tarteNormande",
   "tarteaupommes","tartechocolatcaramel","tartecitron","tartepistache","tartetatinpommes","tiramisu",
-  "tiramisufraise","verrineframboisechocolat","verrinetiramisu"
+  "tiramisufraise","verrineframboisechocolat","verrinetiramisu",
+  // Lot 1
+  "cremecaramel","farbreton","galettedesrois"
 ];
 
 // Catégorie d'une recette, lue depuis la DONNÉE (recettes.js), pas le DOM.
@@ -1050,6 +1054,14 @@ const INGREDIENTS_LABELS = {
   sel: "🧂 Sel", poivre: "🌶️ Poivre noir", piment: "🌶️ Piment",
   masala: "🌶️ Garam masala", curry: "🌶️ Curry", cumin: "🌿 Cumin",
   cannelle: "🪵 Cannelle", muscade: "🌰 Muscade", safran: "🌼 Safran", paprika: "🌶️ Paprika",
+  // === Lot 1 — Ingrédients classiques français ===
+  brochet: "🐟 Brochet", ecrevisses: "🦞 Écrevisses", lapin: "🐰 Lapin",
+  reblochon: "🧀 Reblochon", tomme: "🧀 Tomme fraîche", andouillette: "🌭 Andouillette",
+  cuissecanard: "🦆 Cuisse de canard", graissecanard: "🦆 Graisse de canard",
+  haricotsblancs: "🫘 Haricots blancs", vinrouge: "🍷 Vin rouge",
+  patefeuilletee: "🥧 Pâte feuilletée", poudreamandes: "🥥 Poudre d'amandes",
+  cremepatissiere: "🍮 Crème pâtissière", sucrecaramel: "🍯 Sucre (caramel)",
+  feve: "🪙 Fève",
   gingembre: "🫚 Gingembre", galanga: "🫚 Galanga", anis: "⭐ Anis étoilé",
   citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille", fumee: "💨 Paprika fumé",
   chermoula: "🌿 Chermoula", pesto: "🌿 Pesto",
