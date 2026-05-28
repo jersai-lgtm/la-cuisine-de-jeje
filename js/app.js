@@ -1360,18 +1360,7 @@ function selectTheme(btn) {
 
 // Menus thématiques prédéfinis
 // Tous les plats disponibles par catégorie
-const TOUS_LES_PLATS = [
-  "boeufbourguignon","gratindauphinois","quichelorraine","soupeaoignon",
-  "potaufeu","pouletcitronthym","risotto","risottoprimavera","couscous","moussaka",
-  "paella","butterchicken","souvlaki","dalindien","rizcantonnais","hariramarocaine",
-  "shakshuka","padthai","currypouletcoco","tacosmaison","bolognaisemaison",
-  "burgermaison","salmonteriyaki","curryledumes","wrappoulet","soupemiso",
-  "veloutelegumes","saumongravlax","croquemonsieur","naan",
-  "souvlakiagneau","tom_yam","dorade_chermoula","pierogi","shakshukaverte",
-  "porc_pulled","braiseboeuf_asiatique","paprikashpoulet","ossobuco","tajinemouton",
-  "tikamasala","phovietnambien","carbonara","gnocchismaison","poulettandoori",
-  "pekinduckeasy","ceebujen","mafewestafricain","dosakerdosai","tteokbokki"
-];
+const TOUS_LES_PLATS = ["boeufbourguignon","gratindauphinois","quichelorraine","soupeaoignon","potaufeu","pouletcitronthym","risotto","risottoprimavera","couscous","moussaka","paella","butterchicken","souvlakiagneau","dahllentillescorail","rizcantonnais","soupeharira","shakshuka","padthai","currypouletcoco","tacosmaison","bolognaisemaison","burgermaison","salmonteriyaki","curryledumes","wrappoulet","soupemiso","veloutelegumes","saumongravlax","croquemonsieur","naan","tom_yam","dorade_chermoula","pierogi","shakshukaverte","porc_pulled","braiseboeuf_asiatique","paprikashpoulet","ossobuco","tajinemouton","tikamasala","phovietnambien","carbonara","gnocchismaison","poulettandoori","pekinduckeasy","ceebujen","mafewestafricain","dosakerdosai","tteokbokki"];
 const TOUTES_LES_PIZZAS = [
   "pizzamargherita","pizzareine","pizza4fromages","pizzadiavola",
   "pizzasaumonepinards","pizzavegetarienne"
@@ -1410,14 +1399,14 @@ const menusFestifs = {
     label: "🌞 Menu Estival",
     apero:   [...TOUS_LES_APEROS_SANS, "spritz","mojito","daiquiri"],
     entree:  ["gaspacho","saladeniçoise","tabulemaison","saladeavocatcrevettes","saladegreque","saladecesar","saladepoischiches","saladepatasthon","smoothiebowl","houmous","saladerizmediterranee"],
-    plat:    ["paella","salmonteriyaki","souvlaki","saladecesar","wrappoulet","padthai","shakshuka","burgermaison","tacosmaison","saladeniçoise","saumongravlax"],
+    plat:    ["paella","salmonteriyaki","souvlakiagneau","saladecesar","wrappoulet","padthai","shakshuka","burgermaison","tacosmaison","saladeniçoise","saumongravlax"],
     dessert: ["tartecitron","smoothiebowl","bowlacai","clafoutis","verrinetiramisu","granola","yaourt","bananabread"],
   },
   hivernal: {
     label: "❄️ Menu Hivernal",
     apero:   ["sangria","whiskysour","limonademaison","virginmojito","cosmopolitan"],
-    entree:  ["soupeaoignon","veloutelegumes","saladelentilles","hariramarocaine","soupemiso","houmous"],
-    plat:    ["boeufbourguignon","potaufeu","gratindauphinois","couscous","moussaka","butterchicken","dalindien","quichelorraine","lasagne","risotto"],
+    entree:  ["soupeaoignon","veloutelegumes","saladelentilles","soupeharira","soupemiso","houmous"],
+    plat:    ["boeufbourguignon","potaufeu","gratindauphinois","couscous","moussaka","butterchicken","dahllentillescorail","quichelorraine","lasagne","risotto"],
     dessert: ["fondantchocolat","cremebrulee","ileflottante","tiramisu","mousseauchocolat","parisbrestreinterpretation","clafoutis","flan"],
   },
   mexicain: {
@@ -1438,14 +1427,14 @@ const menusFestifs = {
     label: "🥗 Menu Healthy",
     apero:   [...TOUS_LES_APEROS_SANS],
     entree:  ["saladequinoa","houmous","gaspacho","smoothiebowl","bowlacai","overnightoats","buddhaBowl","saladepoischiches","tabulemaison"],
-    plat:    ["buddhaBowl","wrappoulet","curryledumes","salmonteriyaki","padthai","dalindien","soupemiso","veloutelegumes","shakshuka","saladeniçoise"],
+    plat:    ["buddhaBowl","wrappoulet","curryledumes","salmonteriyaki","padthai","dahllentillescorail","soupemiso","veloutelegumes","shakshuka","saladeniçoise"],
     dessert: ["smoothiebowl","bowlacai","yaourt","granola","bananabread","madeleine"],
   },
   romantique: {
     label: "💑 Dîner Romantique",
     apero:   ["cosmopolitan","spritz","daiquiri","mojito","pinacolada"],
     entree:  ["saumongravlax","saladeavocatcrevettes","saladeniçoise","saladegreque","houmous","verrinetiramisu"],
-    plat:    ["salmonteriyaki","risottoprimavera","pouletcitronthym","boeufbourguignon","souvlaki","butterchicken","paella"],
+    plat:    ["salmonteriyaki","risottoprimavera","pouletcitronthym","boeufbourguignon","souvlakiagneau","butterchicken","paella"],
     dessert: ["cremebrulee","tiramisu","mousseauchocolat","fondantchocolat","tartecitron","parisbrestreinterpretation","ileflottante"],
   },
   brunch: {
@@ -2077,8 +2066,8 @@ function corrigerDoublons(menus, joursSelectionnes, tags, allergies) {
 function tousPlatsDispos(tags) {
   const filtrerHealthy = tags && tags.includes("healthy");
   return filtrerHealthy
-    ? ["curryledumes","wrappoulet","soupemiso","veloutelegumes","salmonteriyaki","dalindien","padthai","buddhaBowl"]
-    : ["lasagne","boeufbourguignon","gratindauphinois","quichelorraine","soupeaoignon","potaufeu","pouletcitronthym","risotto","risottoprimavera","couscous","moussaka","paella","butterchicken","souvlaki","dalindien","rizcantonnais","hariramarocaine","shakshuka","padthai","currypouletcoco","tacosmaison","bolognaisemaison","burgermaison","salmonteriyaki","curryledumes","wrappoulet","soupemiso","veloutelegumes","naan","souvlakiagneau","tom_yam","dorade_chermoula","pierogi","shakshukaverte","porc_pulled","braiseboeuf_asiatique","paprikashpoulet","ossobuco","tajinemouton","tikamasala","phovietnambien","carbonara","gnocchismaison","poulettandoori","pekinduckeasy","ceebujen","mafewestafricain","pouletbasquaise","pouletrotiperfect","saumoncrouteherbes","bibimbap","moquecabresil","rendangboeuf"];
+    ? ["curryledumes","wrappoulet","soupemiso","veloutelegumes","salmonteriyaki","dahllentillescorail","padthai","buddhaBowl"]
+    : ["lasagne","boeufbourguignon","gratindauphinois","quichelorraine","soupeaoignon","potaufeu","pouletcitronthym","risotto","risottoprimavera","couscous","moussaka","paella","butterchicken","souvlakiagneau","dahllentillescorail","rizcantonnais","soupeharira","shakshuka","padthai","currypouletcoco","tacosmaison","bolognaisemaison","burgermaison","salmonteriyaki","curryledumes","wrappoulet","soupemiso","veloutelegumes","naan","tom_yam","dorade_chermoula","pierogi","shakshukaverte","porc_pulled","braiseboeuf_asiatique","paprikashpoulet","ossobuco","tajinemouton","tikamasala","phovietnambien","carbonara","gnocchismaison","poulettandoori","pekinduckeasy","ceebujen","mafewestafricain","pouletbasquaise","pouletrotiperfect","saumoncrouteherbes","bibimbap","moquecabresil","rendangboeuf"];
 }
 
 function toutesSaladesDispos() {
@@ -2157,7 +2146,7 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
       const t = (k + " " + (recettes[k]?.description||"")).toLowerCase();
       return t.includes("asiat") || t.includes("japonais") || t.includes("thaï") || t.includes("coréen") || t.includes("wok") || ["padthai","sushimaison","bibimbap","gyozas","tom_yam","sobejaponais","noodlesWok","tofusaute","soupemiso","pouletMisoGingembre","pouletteriyaki","curryverthai","koreanfriedchicken","soupeAziatique"].includes(k);
     }),
-    mondiale: poolFinal.filter(k => ["couscous","moussaka","paella","dalindien","hariramarocaine","soupeharira","maffeSenegal","souvlaki","taboule","tabulemaison","shakshuka","pierogi","falafel","humous","houmous","gyozas","bibimbap"].includes(k))
+    mondiale: poolFinal.filter(k => ["couscous","moussaka","paella","dahllentillescorail","soupeharira","maffeSenegal","souvlakiagneau","taboule","tabulemaison","shakshuka","pierogi","falafel","humous","houmous","gyozas","bibimbap"].includes(k))
   };
 
   // Mélanger chaque groupe
@@ -2169,7 +2158,7 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   
   // Alterner les cuisines
   let cuisineIdx = { francaise:0, italienne:0, asiatique:0, mondiale:0 };
-  const cuisineOrder = shuffleArray(["francaise","italienne","asiatique","mondiale","francaise","italienne","asiatique","mondiale","francaise","italienne"]);
+  const cuisineOrder = shuffleArray(["francaise","italienne","asiatique","mondiale"]);
   let cuisineCount = 0;
   
   const pick = () => {
@@ -2282,12 +2271,12 @@ function getNomRecette(key) {
     "moussaka":          "Moussaka",
     "paella":            "Paella",
     "butterchicken":     "Butter Chicken",
-    "souvlaki":          "Souvlaki",
+    "souvlakiagneau":          "Souvlaki",
     "quichelorraine":    "Quiche Lorraine",
     "soupeaoignon":      "Soupe à l'Oignon",
-    "dalindien":         "Dal Indien",
+    "dahllentillescorail":         "Dal Indien",
     "rizcantonnais":     "Riz Cantonnais",
-    "hariramarocaine":   "Harira Marocaine",
+    "soupeharira":   "Harira Marocaine",
     "naan":              "Naans",
     "verrinetiramisu":   "Verrines Tiramisu",
     "churros":           "Churros",
@@ -2377,7 +2366,7 @@ function getNomRecette(key) {
     "lemonPasta": "Lemon Pasta",
     "soupeMinestrone": "Minestrone",
     "lasagneviande":     "Lasagnes Bolognaise",
-    "souvlaki":          "Souvlaki",
+    "souvlakiagneau":          "Souvlaki",
     "butterchicken":     "Butter Chicken",
     "risottoprimavera":  "Risotto Primavera",
     "bolognaisemaison":  "Bolognaise Maison",
@@ -2386,7 +2375,7 @@ function getNomRecette(key) {
     "moussaka":          "Moussaka",
     "paella":            "Paella",
     "quichelorraine":    "Quiche Lorraine",
-    "dalindien":         "Dal Indien",
+    "dahllentillescorail":         "Dal Indien",
     "pizzabresilienne":  "Pizza Brésilienne",
     "veloutepatatepoireaux": "Velouté Patate Poireaux",
     "semoulecourgette":  "Semoule aux Courgettes",
@@ -3445,9 +3434,29 @@ function rechercherRecette(query) {
     return;
   }
 
+  // Helper : retire les emojis/symboles et garde uniquement les mots
+  // Match si UN DES MOTS du nom COMMENCE par la requête (plus intelligent)
+  function matcheNom(nom, query) {
+    // Normalisation : retirer accents pour permettre "cafe" = "café"
+    const normalize = s => s.toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")  // accents
+      .replace(/[^a-z0-9\s]/g, " ")  // emojis et symboles → espaces
+      .trim();
+    
+    const nomN = normalize(nom);
+    const qN = normalize(query);
+    
+    // Recherche multi-mots : "tarte chocolat" matche "tarte au chocolat"
+    const motsQuery = qN.split(/\s+/).filter(Boolean);
+    const motsNom = nomN.split(/\s+/).filter(Boolean);
+    
+    // Chaque mot de la query doit matcher LE DÉBUT d'au moins un mot du nom
+    return motsQuery.every(mq => motsNom.some(mn => mn.startsWith(mq)));
+  }
+
   document.querySelectorAll(".carte").forEach(carte => {
-    const nom = carte.querySelector("h2").textContent.toLowerCase();
-    carte.style.display = (!q || nom.includes(q)) ? "flex" : "none";
+    const nom = carte.querySelector("h2").textContent;
+    carte.style.display = (!q || matcheNom(nom, q)) ? "flex" : "none";
   });
   if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
 
@@ -4295,12 +4304,12 @@ function calculer(recetteArg, personnesArg) {
     "moussaka":       { table: "tableauMoussaka",         fn: htmlTableauMoussakaColonnes,       label: "personne" },
     "paella":         { table: "tableauPaella",           fn: htmlTableauPaellaColonnes,         label: "personne" },
     "butterchicken":  { table: "tableauButterChicken",    fn: htmlTableauButterChickenColonnes,  label: "personne" },
-    "souvlaki":       { table: "tableauSouvlaki",         fn: htmlTableauSouvlakiColonnes,       label: "personne" },
+    "souvlakiagneau":       { table: "tableauSouvlaki",         fn: htmlTableauSouvlakiColonnes,       label: "personne" },
     "quichelorraine": { table: "tableauQuiche",           fn: htmlTableauQuicheColonnes,         label: "personne" },
     "soupeaoignon":   { table: "tableauSoupeOignon",      fn: htmlTableauSoupeOignonColonnes,    label: "personne" },
-    "dalindien":      { table: "tableauDal",              fn: htmlTableauDalColonnes,            label: "personne" },
+    "dahllentillescorail":      { table: "tableauDal",              fn: htmlTableauDalColonnes,            label: "personne" },
     "rizcantonnais":  { table: "tableauRizCantonnais",    fn: htmlTableauRizCantonnaisColonnes,  label: "personne" },
-    "hariramarocaine":{ table: "tableauHarira",           fn: htmlTableauHariraColonnes,         label: "personne" },
+    "soupeharira":{ table: "tableauHarira",           fn: htmlTableauHariraColonnes,         label: "personne" },
     "naan":           { table: "tableauNaan",             fn: htmlTableauNaanColonnes,           label: "naan" },
     "churros":        { table: "tableauChurros",          fn: htmlTableauChurrosColonnes,        label: "personne" },
   };

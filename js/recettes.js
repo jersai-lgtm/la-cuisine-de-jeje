@@ -1145,39 +1145,6 @@ const recettes = {
       { icone: "🍦", titre: "Finir et servir", detail: "Ajouter le poulet et la crème fraîche. Laisser mijoter 10 min. Servir avec du riz basmati ou des naans chauds. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 10 min" }
     ]
   },
-  souvlaki: {
-    cat: "plats", saisons: ["ete"], pays: "grece",
-    base: 4,
-    temps: "20 min + marinade",
-    niveau: "⭐ Facile",
-    emoji: "🍢",
-    description: "Les souvlaki grecs — brochettes de porc marinées à l'origan et citron, servies avec tzatziki et pain pita.",
-    tableauSouvlaki: [
-      { nb: 1, porc: "150 g", pita: "1", concombre: "¼", yaourt: "50 g", citron: "½", sel: "1 pincée", poivre: "1 pincée", huile: "1 c.à.s", ail: "1 gousse" },
-      { nb: 2, porc: "300 g", pita: "2", concombre: "¼", yaourt: "100 g", citron: "½", sel: "1 pincée", poivre: "1 pincée", huile: "2 c.à.s", ail: "2 gousses" },
-      { nb: 3, porc: "450 g", pita: "3", concombre: "¼", yaourt: "150 g", citron: "½", sel: "1 pincée", poivre: "1 pincée", huile: "3 c.à.s", ail: "3 gousses" },
-      { nb: 4, porc: "600 g", pita: "4", concombre: "½", yaourt: "200 g", citron: "1", sel: "1 pincée", poivre: "1 pincée", huile: "4 c.à.s", ail: "4 gousses" },
-      { nb: 5, porc: "750 g", pita: "5", concombre: "½", yaourt: "250 g", citron: "1.2", sel: "1 pincée", poivre: "1 pincée", huile: "5 c.à.s", ail: "5 gousses" },
-      { nb: 6, porc: "900 g", pita: "6", concombre: "¾", yaourt: "300 g", citron: "1", sel: "1 pincée", poivre: "1 pincée", huile: "6 c.à.s", ail: "6 gousses" },
-      { nb: 7, porc: "1050 g", pita: "7", concombre: "¾", yaourt: "350 g", citron: "1.2", sel: "1 pincée", poivre: "1 pincée", huile: "7 c.à.s", ail: "7 gousses" },
-      { nb: 8, porc: "1.2 kg", pita: "8", concombre: "1", yaourt: "400 g", citron: "2", sel: "1 pincée", poivre: "1 pincée", huile: "8 c.à.s", ail: "8 gousses" },
-      { nb: 9, porc: "1.3 kg", pita: "9", concombre: "1.1", yaourt: "450 g", citron: "2.2", sel: "1 pincée", poivre: "1 pincée", huile: "9 c.à.s", ail: "9 gousses" },
-      { nb: 10, porc: "1.5 kg", pita: "10", concombre: "1½", yaourt: "500 g", citron: "2", sel: "1 pincée", poivre: "1 pincée", huile: "10 c.à.s", ail: "10 gousses" },
-      { nb: 11, porc: "1.7 kg", pita: "11", concombre: "1.1 ½", yaourt: "550 g", citron: "2.2", sel: "1 pincée", poivre: "1 pincée", huile: "11 c.à.s", ail: "11 gousses" },
-      { nb: 12, porc: "1.8 kg", pita: "12", concombre: "2", yaourt: "600 g", citron: "3", sel: "1 pincée", poivre: "1 pincée", huile: "12 c.à.s", ail: "12 gousses" },
-      { nb: 13, porc: "1950 g", pita: "13", concombre: "¾", yaourt: "650 g", citron: "2.2", sel: "1 pincée", poivre: "1 pincée", huile: "13 c.à.s", ail: "13 gousses" },
-      { nb: 14, porc: "2100 g", pita: "14", concombre: "¾", yaourt: "700 g", citron: "2.3", sel: "1 pincée", poivre: "1 pincée", huile: "14 c.à.s", ail: "14 gousses" },
-      { nb: 15, porc: "2250 g", pita: "15", concombre: "¾", yaourt: "750 g", citron: "2.5", sel: "1 pincée", poivre: "1 pincée", huile: "15 c.à.s", ail: "15 gousses" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🫙", titre: "Marinade", detail: "Couper le porc en cubes de 3cm. Mélanger avec huile d'olive, jus de citron, origan, ail écrasé, sel et poivre. Mariner au frais. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 2h minimum" },
-      { icone: "🍢", titre: "Former les brochettes", detail: "Enfiler la viande sur des brochettes. Cuire sur grill chaud ou barbecue en tournant régulièrement.", badge: "⏱ 10-12 min" },
-      { icone: "🥒", titre: "Tzatziki", detail: "Râper le concombre, presser pour extraire l'eau. Mélanger avec yaourt grec, ail pressé, aneth, jus de citron et huile d'olive. ASTUCE CHEF : râper à la dernière minute pour conserver tous les arômes.", badge: null },
-      { icone: "🫓", titre: "Réchauffer les pitas", detail: "Passer les pains pita quelques secondes à la flamme ou dans une poêle chaude.", badge: null },
-      { icone: "🍢", titre: "Dresser", detail: "Servir les brochettes avec pitas, tzatziki, tomates, oignons rouges et olives. Arroser d'huile d'olive et origan.", badge: null }
-    ]
-  },
   quichelorraine: {
     cat: "plats", pays: "france",
     base: 6,
@@ -1244,39 +1211,6 @@ const recettes = {
       { icone: "🧀", titre: "Gratiner", detail: "Verser la soupe dans des bols allant au four. Poser un croûton sur chaque bol, couvrir généreusement de gruyère râpé. Passer sous le gril jusqu'à gratinage.", badge: "⏱ 5 min gril" }
     ]
   },
-  dalindien: {
-    cat: "plats", saisons: ["ete"], pays: "inde",
-    base: 4,
-    temps: "30 min",
-    niveau: "⭐ Facile",
-    emoji: "🫘",
-    description: "Le dal indien — lentilles corail mijotées au lait de coco et épices. Végétarien, protéiné et réconfortant.",
-    tableauDal: [
-      { nb: 1, lentilles: "60 g", coco: "100 ml", tomates: "100 g", oignon: "¼", masala: "½ c.à.c", huile: "1 c.à.s", ail: "1 gousse", citron: "⅓ citron", lait: "50 ml", gingembre: "½ c.à.c" },
-      { nb: 2, lentilles: "120 g", coco: "200 ml", tomates: "200 g", oignon: "½", masala: "1 c.à.c", huile: "2 c.à.s", ail: "2 gousses", citron: "⅔ citron", lait: "100 ml", gingembre: "1 c.à.c" },
-      { nb: 3, lentilles: "180 g", coco: "300 ml", tomates: "300 g", oignon: "¾", masala: "1½ c.à.c", huile: "3 c.à.s", ail: "3 gousses", citron: "1 citron", lait: "150 ml", gingembre: "1.5 c.à.c" },
-      { nb: 4, lentilles: "250 g", coco: "400 ml", tomates: "400 g", oignon: "1", masala: "2 c.à.c", huile: "4 c.à.s", ail: "4 gousses", citron: "2 citrons", lait: "200 ml", gingembre: "2 c.à.c" },
-      { nb: 5, lentilles: "312 g", coco: "500 ml", tomates: "500 g", oignon: "1.2", masala: "2.5 c.à.c", huile: "5 c.à.s", ail: "5 gousses", citron: "2 citrons", lait: "250 ml", gingembre: "2.5 c.à.c" },
-      { nb: 6, lentilles: "370 g", coco: "600 ml", tomates: "600 g", oignon: "1", masala: "3 c.à.c", huile: "6 c.à.s", ail: "6 gousses", citron: "2 citrons", lait: "300 ml", gingembre: "3 c.à.c" },
-      { nb: 7, lentilles: "432 g", coco: "700 ml", tomates: "700 g", oignon: "1.2", masala: "3.5 c.à.c", huile: "7 c.à.s", ail: "7 gousses", citron: "3 citrons", lait: "350 ml", gingembre: "3.5 c.à.c" },
-      { nb: 8, lentilles: "500 g", coco: "800 ml", tomates: "800 g", oignon: "2", masala: "4 c.à.c", huile: "8 c.à.s", ail: "8 gousses", citron: "3 citrons", lait: "400 ml", gingembre: "4 c.à.c" },
-      { nb: 9, lentilles: "562 g", coco: "900 ml", tomates: "900 g", oignon: "2.2", masala: "4.5 c.à.c", huile: "9 c.à.s", ail: "9 gousses", citron: "3 citrons", lait: "450 ml", gingembre: "4.5 c.à.c" },
-      { nb: 10, lentilles: "625 g", coco: "1000 ml", tomates: "1000 g", oignon: "2.5", masala: "5 c.à.c", huile: "10 c.à.s", ail: "10 gousses", citron: "4 citrons", lait: "500 ml", gingembre: "5 c.à.c" },
-      { nb: 11, lentilles: "688 g", coco: "1100 ml", tomates: "1100 g", oignon: "2.8", masala: "5.5 c.à.c", huile: "11 c.à.s", ail: "11 gousses", citron: "4 citrons", lait: "550 ml", gingembre: "5.5 c.à.c" },
-      { nb: 12, lentilles: "750 g", coco: "1200 ml", tomates: "1200 g", oignon: "3", masala: "6 c.à.c", huile: "12 c.à.s", ail: "12 gousses", citron: "4 citrons", lait: "600 ml", gingembre: "6 c.à.c" },
-      { nb: 13, lentilles: "812 g", coco: "1300 ml", tomates: "1300 g", oignon: "3.2", masala: "6.5 c.à.c", huile: "13 c.à.s", ail: "13 gousses", citron: "5 citrons", lait: "650 ml", gingembre: "6.5 c.à.c" },
-      { nb: 14, lentilles: "875 g", coco: "1400 ml", tomates: "1400 g", oignon: "3.5", masala: "7 c.à.c", huile: "14 c.à.s", ail: "14 gousses", citron: "5 citrons", lait: "700 ml", gingembre: "7 c.à.c" },
-      { nb: 15, lentilles: "938 g", coco: "1500 ml", tomates: "1500 g", oignon: "3.8", masala: "7.5 c.à.c", huile: "15 c.à.s", ail: "15 gousses", citron: "5 citrons", lait: "750 ml", gingembre: "7.5 c.à.c" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧅", titre: "Faire revenir les aromates", detail: "Faire suer l'oignon dans l'huile. Ajouter ail, gingembre râpé, garam masala, curcuma, cumin et coriandre. Torréfier 1 min.", badge: null },
-      { icone: "🍅", titre: "Ajouter tomates", detail: "Ajouter les tomates concassées. Cuire 5 min jusqu'à réduction.", badge: null },
-      { icone: "🫘", titre: "Cuire les lentilles", detail: "Rincer les lentilles corail. Les ajouter avec le lait de coco et 200ml d'eau. Mélanger et porter à ébullition. Rincer abondamment à l'eau froide.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Baisser le feu et laisser mijoter à découvert en remuant régulièrement. Les lentilles vont fondre et épaissir naturellement. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 20 min" },
-      { icone: "🌿", titre: "Servir", detail: "Rectifier l'assaisonnement. Servir avec riz basmati ou pain naan. Garnir de coriandre fraîche et d'un filet de jus de citron.", badge: null }
-    ]
-  },
   rizcantonnais: {
     cat: "plats", saisons: ["ete","printemps"], pays: "chine",
     base: 4,
@@ -1308,39 +1242,6 @@ const recettes = {
       { icone: "🍳", titre: "Sauter le riz", detail: "Dans le même wok, ajouter huile et riz froid. Faire sauter à feu maximum en remuant constamment 3-4 min.", badge: "⏱ 4 min" },
       { icone: "🥓", titre: "Ajouter garnitures", detail: "Ajouter le jambon en dés, les petits pois, les œufs brouillés. Mélanger à feu vif. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: null },
       { icone: "🍶", titre: "Assaisonner", detail: "Ajouter la sauce soja et l'huile de sésame. Mélanger rapidement. Servir immédiatement.", badge: null }
-    ]
-  },
-  hariramarocaine: {
-    cat: "soupes", saisons: ["ete"], pays: "maroc",
-    base: 6,
-    temps: "1h",
-    niveau: "⭐ Facile",
-    emoji: "🍲",
-    description: "La harira marocaine — soupe traditionnelle aux lentilles, pois chiches, tomates et épices. La soupe du Ramadan.",
-    tableauHarira: [
-      { nb: 1, lentilles: "25 g", poischiches: "50 g", tomates: "100 g", viande: "50 g", vermicelles: "10 g", citron: "⅓ citron", oignon: "½ oignon", cannelle: "½ c.à.c", gingembre: "½ c.à.c" },
-      { nb: 2, lentilles: "50 g", poischiches: "100 g", tomates: "200 g", viande: "100 g", vermicelles: "20 g", citron: "⅔ citron", oignon: "1 oignon", cannelle: "1 c.à.c", gingembre: "1 c.à.c" },
-      { nb: 3, lentilles: "75 g", poischiches: "150 g", tomates: "300 g", viande: "150 g", vermicelles: "30 g", citron: "1 citron", oignon: "2 oignons", cannelle: "1.5 c.à.c", gingembre: "1.5 c.à.c" },
-      { nb: 4, lentilles: "100 g", poischiches: "200 g", tomates: "400 g", viande: "200 g", vermicelles: "40 g", citron: "2 citrons", oignon: "2 oignons", cannelle: "2 c.à.c", gingembre: "2 c.à.c" },
-      { nb: 5, lentilles: "125 g", poischiches: "250 g", tomates: "500 g", viande: "250 g", vermicelles: "50 g", citron: "2 citrons", oignon: "2 oignons", cannelle: "2.5 c.à.c", gingembre: "2.5 c.à.c" },
-      { nb: 6, lentilles: "150 g", poischiches: "300 g", tomates: "600 g", viande: "300 g", vermicelles: "60 g", citron: "2 citrons", oignon: "3 oignons", cannelle: "3 c.à.c", gingembre: "3 c.à.c" },
-      { nb: 7, lentilles: "175 g", poischiches: "350 g", tomates: "700 g", viande: "350 g", vermicelles: "70 g", citron: "3 citrons", oignon: "4 oignons", cannelle: "3.5 c.à.c", gingembre: "3.5 c.à.c" },
-      { nb: 8, lentilles: "200 g", poischiches: "400 g", tomates: "800 g", viande: "400 g", vermicelles: "80 g", citron: "3 citrons", oignon: "4 oignons", cannelle: "4 c.à.c", gingembre: "4 c.à.c" },
-      { nb: 9, lentilles: "225 g", poischiches: "450 g", tomates: "900 g", viande: "450 g", vermicelles: "90 g", citron: "3 citrons", oignon: "4 oignons", cannelle: "4.5 c.à.c", gingembre: "4.5 c.à.c" },
-      { nb: 10, lentilles: "250 g", poischiches: "500 g", tomates: "1 kg", viande: "500 g", vermicelles: "100 g", citron: "4 citrons", oignon: "5 oignons", cannelle: "5 c.à.c", gingembre: "5 c.à.c" },
-      { nb: 11, lentilles: "275 g", poischiches: "550 g", tomates: "1.1 kg", viande: "550 g", vermicelles: "110 g", citron: "4 citrons", oignon: "6 oignons", cannelle: "5.5 c.à.c", gingembre: "5.5 c.à.c" },
-      { nb: 12, lentilles: "300 g", poischiches: "600 g", tomates: "1.2 kg", viande: "600 g", vermicelles: "120 g", citron: "4 citrons", oignon: "6 oignons", cannelle: "6 c.à.c", gingembre: "6 c.à.c" },
-      { nb: 13, lentilles: "325 g", poischiches: "650 g", tomates: "1300 g", viande: "650 g", vermicelles: "130 g", citron: "5 citrons", oignon: "6 oignons", cannelle: "6.5 c.à.c", gingembre: "6.5 c.à.c" },
-      { nb: 14, lentilles: "350 g", poischiches: "700 g", tomates: "1400 g", viande: "700 g", vermicelles: "140 g", citron: "5 citrons", oignon: "7 oignons", cannelle: "7 c.à.c", gingembre: "7 c.à.c" },
-      { nb: 15, lentilles: "375 g", poischiches: "750 g", tomates: "1500 g", viande: "750 g", vermicelles: "150 g", citron: "5 citrons", oignon: "8 oignons", cannelle: "7.5 c.à.c", gingembre: "7.5 c.à.c" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥩", titre: "Faire revenir la viande", detail: "Dans une grande casserole, faire revenir l'agneau ou le bœuf en dés avec oignon, céleri et tomates. Ajouter curcuma, gingembre, cannelle et coriandre.", badge: null },
-      { icone: "🫘", titre: "Ajouter les légumineuses", detail: "Ajouter lentilles et pois chiches (égouttés si en boîte). Couvrir d'eau (environ 1.5L). Porter à ébullition.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Baisser le feu et laisser mijoter. Ajouter les tomates concassées et la purée de tomates. Continuer à cuire. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 40 min" },
-      { icone: "🌾", titre: "Ajouter les vermicelles", detail: "10 min avant la fin, ajouter les vermicelles et la coriandre fraîche ciselée.", badge: "⏱ 10 min" },
-      { icone: "🍋", titre: "Servir", detail: "Servir avec des dattes, des œufs durs et un filet de jus de citron. Traditionnellement accompagnée de chebakia.", badge: null }
     ]
   },
   naan: {
@@ -3323,48 +3224,6 @@ const recettes = {
       { icone: "🥬", titre: "Ajouter les épinards", detail: "Ajouter les épinards frais, coriandre et persil. Cuire jusqu'à ce qu'ils réduisent. Assaisonner. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: "⏱ 5 min" },
       { icone: "🥚", titre: "Pocher les œufs", detail: "Faire des puits dans la sauce verte. Casser les œufs délicatement. Couvrir et cuire selon la préférence.", badge: "⏱ 5 min (mollet)" },
       { icone: "🧀", titre: "Servir", detail: "Parsemer de feta émiettée, herbes fraîches et graines de sésame. Servir avec pain pita.", badge: null }
-    ]
-  },
-  kebbeh: {
-    cat: "plats", pays: "liban",
-    base: 4,
-    temps: "45 min",
-    niveau: "⭐⭐ Intermédiaire",
-    emoji: "🥩",
-    description: "Le Kebbeh libanais — boulettes de viande à la semoule de blé et épices, frites ou au four. La recette emblématique du Liban.",
-    tableauKebbeh: [
-      { nb: 1, agneau: "50 g", semoule: "25 g", oignon: "0.2", pignons: "7.5 g", cannelle: "½ c.à.c", sel: "1 pincée", huile: "1 c.à.s", yaourt: "40 g" },
-      { nb: 2, agneau: "100 g", semoule: "50 g", oignon: "0.5", pignons: "15 g", cannelle: "½ c.à.c", sel: "1 pincée", huile: "2 c.à.s", yaourt: "80 g" },
-      { nb: 3, agneau: "150 g", semoule: "75 g", oignon: "0.8", pignons: "22 g", cannelle: "½ c.à.c", sel: "1 pincée", huile: "3 c.à.s", yaourt: "120 g" },
-      { nb: 4, agneau: "200 g", semoule: "100 g", oignon: "1", pignons: "30 g", cannelle: "½ c.à.c", sel: "1 pincée", huile: "4 c.à.s", yaourt: "160 g" },
-      { nb: 5, agneau: "250 g", semoule: "125 g", oignon: "1.2", pignons: "38 g", cannelle: "½ c.à.c", sel: "1 pincée", huile: "5 c.à.s", yaourt: "200 g" },
-      { nb: 6, agneau: "300 g", semoule: "150 g", oignon: "1.5", pignons: "45 g", cannelle: "½ c.à.c", sel: "1 pincée", huile: "6 c.à.s", yaourt: "240 g" },
-      { nb: 7, agneau: "350 g", semoule: "175 g", oignon: "1.8", pignons: "52 g", cannelle: "0.9 c.à.c", sel: "1 pincée", huile: "7 c.à.s", yaourt: "280 g" },
-      { nb: 8, agneau: "400 g", semoule: "200 g", oignon: "2", pignons: "60 g", cannelle: "1 c.à.c", sel: "1 pincée", huile: "8 c.à.s", yaourt: "320 g" },
-      { nb: 9, agneau: "450 g", semoule: "225 g", oignon: "2.2", pignons: "68 g", cannelle: "1.1 c.à.c", sel: "1 pincée", huile: "9 c.à.s", yaourt: "360 g" },
-      { nb: 10, agneau: "500 g", semoule: "250 g", oignon: "2.5", pignons: "75 g", cannelle: "1.2 c.à.c", sel: "1 pincée", huile: "10 c.à.s", yaourt: "400 g" },
-      { nb: 11, agneau: "550 g", semoule: "275 g", oignon: "2.8", pignons: "82 g", cannelle: "0.9 ½ c.à.c", sel: "1 pincée", huile: "11 c.à.s", yaourt: "440 g" },
-      { nb: 12, agneau: "600 g", semoule: "300 g", oignon: "3", pignons: "90 g", cannelle: "1½ c.à.c", sel: "1 pincée", huile: "12 c.à.s", yaourt: "480 g" },
-      { nb: 13, agneau: "650 g", semoule: "325 g", oignon: "3.2", pignons: "98 g", cannelle: "1.1 ½ c.à.c", sel: "1 pincée", huile: "13 c.à.s", yaourt: "520 g" },
-      { nb: 14, agneau: "700 g", semoule: "350 g", oignon: "3.5", pignons: "105 g", cannelle: "1.2 ½ c.à.c", sel: "1 pincée", huile: "14 c.à.s", yaourt: "560 g" },
-      { nb: 15, agneau: "750 g", semoule: "375 g", oignon: "3.8", pignons: "112 g", cannelle: "1.9 c.à.c", sel: "1 pincée", huile: "15 c.à.s", yaourt: "600 g" },
-      { nb: 16, agneau: "800 g", semoule: "400 g", oignon: "4", pignons: "120 g", cannelle: "2 c.à.c", sel: "1 pincée", huile: "16 c.à.s", yaourt: "640 g" },
-      { nb: 17, agneau: "850 g", semoule: "425 g", oignon: "4.2", pignons: "128 g", cannelle: "2.1 c.à.c", sel: "1 pincée", huile: "17 c.à.s", yaourt: "680 g" },
-      { nb: 18, agneau: "900 g", semoule: "450 g", oignon: "4.5", pignons: "135 g", cannelle: "2.2 c.à.c", sel: "1 pincée", huile: "18 c.à.s", yaourt: "720 g" },
-      { nb: 19, agneau: "0.9 kg", semoule: "475 g", oignon: "4.8", pignons: "142 g", cannelle: "1.9 ½ c.à.c", sel: "1 pincée", huile: "19 c.à.s", yaourt: "760 g" },
-      { nb: 20, agneau: "1 kg", semoule: "500 g", oignon: "5", pignons: "150 g", cannelle: "2½ c.à.c", sel: "1 pincée", huile: "20 c.à.s", yaourt: "800 g" },
-      { nb: 21, agneau: "1.1 kg", semoule: "525 g", oignon: "5.2", pignons: "158 g", cannelle: "2.1 ½ c.à.c", sel: "1 pincée", huile: "21 c.à.s", yaourt: "840 g" },
-      { nb: 22, agneau: "1.1 kg", semoule: "550 g", oignon: "5.5", pignons: "165 g", cannelle: "2.2 ½ c.à.c", sel: "1 pincée", huile: "22 c.à.s", yaourt: "880 g" },
-      { nb: 23, agneau: "1.1 kg", semoule: "575 g", oignon: "5.8", pignons: "172 g", cannelle: "2.9 c.à.c", sel: "1 pincée", huile: "23 c.à.s", yaourt: "920 g" },
-      { nb: 24, agneau: "1.2 kg", semoule: "600 g", oignon: "6", pignons: "180 g", cannelle: "3 c.à.c", sel: "1 pincée", huile: "24 c.à.s", yaourt: "960 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🌾", titre: "Tremper la semoule", detail: "Tremper la semoule fine dans eau froide 20 min. Bien égoutter et essorer.", badge: "⏱ 20 min" },
-      { icone: "🥩", titre: "Pâte de base", detail: "Mixer agneau haché très fin + semoule + oignon + épices (cannelle, cumin, allspice) + sel. La pâte doit être homogène.", badge: null },
-      { icone: "🥜", titre: "Farce", detail: "Faire revenir oignon, viande hachée, pignons, raisins secs et épices. Refroidir.", badge: null },
-      { icone: "⚽", titre: "Former les kebbeh", detail: "Former des boules avec la pâte, creuser pour farcir. Refermer en forme de football américain.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Frire dans huile chaude ou cuire au four à 180°C. Servir avec labneh (yaourt égoutté) et salade. Température idéale 170-180°C. Test : cube de pain dore en 30s.", badge: "⏱ 20 min à 180°C" }
     ]
   },
   tteokbokki: {
