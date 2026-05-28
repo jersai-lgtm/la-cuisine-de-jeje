@@ -42,7 +42,7 @@ gtag('config', 'G-390C5MY2SS');
   <div class="header-top">
     <div>
       <h1>👨‍🍳 La Cuisine de Jéjé</h1>
-      <p id="nb-recettes">🍽️ 343 recettes</p>
+      <p id="nb-recettes">🍽️ 354 recettes</p>
     </div>
     <div id="zone-utilisateur">
       <button class="btn-connexion" onclick="ouvrirModalAuth()">👤 Connexion</button>
@@ -4200,6 +4200,128 @@ gtag('config', 'G-390C5MY2SS');
   </div>
 
 </section>
+
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('quenelleslyonnaises', 'calc-quenelleslyonnaises')">
+    <img src="images/quenelleslyonnaises.webp" alt="Quenelles Lyonnaises" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🐟 Quenelles Lyonnaises</h2>
+      <p>⏱ 1h30 • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-quenelleslyonnaises">
+        <button class="calc-btn" onclick="calculerCarte('quenelleslyonnaises', 'calc-quenelleslyonnaises')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('aligotcantal', 'calc-aligotcantal')">
+    <img src="images/aligotcantal.webp" alt="Aligot du Cantal" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥔 Aligot du Cantal</h2>
+      <p>⏱ 1h • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-aligotcantal">
+        <button class="calc-btn" onclick="calculerCarte('aligotcantal', 'calc-aligotcantal')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('coqauvin', 'calc-coqauvin')">
+    <img src="images/coqauvin.webp" alt="Coq au Vin" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍗 Coq au Vin</h2>
+      <p>⏱ 2h30 • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-coqauvin">
+        <button class="calc-btn" onclick="calculerCarte('coqauvin', 'calc-coqauvin')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('civetlapin', 'calc-civetlapin')">
+    <img src="images/civetlapin.webp" alt="Civet de Lapin" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🐰 Civet de Lapin</h2>
+      <p>⏱ 2h30 • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-civetlapin">
+        <button class="calc-btn" onclick="calculerCarte('civetlapin', 'calc-civetlapin')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="soupes" data-pays="france" onclick="ouvrirFiche('soupeaupistou', 'calc-soupeaupistou')">
+    <img src="images/soupeaupistou.webp" alt="Soupe au Pistou" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🌿 Soupe au Pistou</h2>
+      <p>⏱ 1h30 • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-soupeaupistou">
+        <button class="calc-btn" onclick="calculerCarte('soupeaupistou', 'calc-soupeaupistou')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('tartiflettesavoyarde', 'calc-tartiflettesavoyarde')">
+    <img src="images/tartiflettesavoyarde.webp" alt="Tartiflette Savoyarde" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🧀 Tartiflette Savoyarde</h2>
+      <p>⏱ 1h • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-tartiflettesavoyarde">
+        <button class="calc-btn" onclick="calculerCarte('tartiflettesavoyarde', 'calc-tartiflettesavoyarde')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('andouillettemoutarde', 'calc-andouillettemoutarde')">
+    <img src="images/andouillettemoutarde.webp" alt="Andouillette Moutarde" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🌭 Andouillette Moutarde</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-andouillettemoutarde">
+        <button class="calc-btn" onclick="calculerCarte('andouillettemoutarde', 'calc-andouillettemoutarde')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('confitcanard', 'calc-confitcanard')">
+    <img src="images/confitcanard.webp" alt="Confit de Canard" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🦆 Confit de Canard</h2>
+      <p>⏱ 3h+24h • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-confitcanard">
+        <button class="calc-btn" onclick="calculerCarte('confitcanard', 'calc-confitcanard')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('cremecaramel', 'calc-cremecaramel')">
+    <img src="images/cremecaramel.webp" alt="Crème Caramel" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍮 Crème Caramel</h2>
+      <p>⏱ 45 min+4h • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-cremecaramel">
+        <button class="calc-btn" onclick="calculerCarte('cremecaramel', 'calc-cremecaramel')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('farbreton', 'calc-farbreton')">
+    <img src="images/farbreton.webp" alt="Far Breton" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍮 Far Breton</h2>
+      <p>⏱ 1h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-farbreton">
+        <button class="calc-btn" onclick="calculerCarte('farbreton', 'calc-farbreton')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('galettedesrois', 'calc-galettedesrois')">
+    <img src="images/galettedesrois.webp" alt="Galette des Rois" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>👑 Galette des Rois</h2>
+      <p>⏱ 1h+1h • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-galettedesrois">
+        <button class="calc-btn" onclick="calculerCarte('galettedesrois', 'calc-galettedesrois')">Calculer</button>
+      </div>
+    </div>
+  </div>
 
 <!-- FIN SECTION CARTES -->
 
