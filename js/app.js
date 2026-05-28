@@ -3678,10 +3678,16 @@ function filtrerPays(pays) {
 }
 
 // Calculer depuis une carte et afficher en modal
-function calculer() {
-  const recette   = document.getElementById("recette").value;
-  const personnes = parseInt(document.getElementById("personnes").value) || 1;
+function calculer(recetteArg, personnesArg) {
+  // Accepte des paramètres optionnels — sinon lit depuis le DOM (compatibilité ancien comportement)
+  const recette   = recetteArg !== undefined ? recetteArg : document.getElementById("recette").value;
+  const personnes = personnesArg !== undefined ? personnesArg : (parseInt(document.getElementById("personnes").value) || 1);
   const data      = recettes[recette];
+  // Garde-fou : si la recette n'existe pas, on s'arrête proprement
+  if (!data) {
+    document.getElementById("resultat").innerHTML = `<p style="text-align:center;color:#ff8fb3;">Recette introuvable : ${recette}</p>`;
+    return;
+  }
 
   // Pizza : afficher uniquement la ligne sélectionnée en colonnes
   if (recette === "pizza" && data.tableauPatons) {
@@ -4245,9 +4251,8 @@ function calculerCarte(recette, inputId) {
   const input = document.getElementById(inputId);
   if (!input) return;
   const val = parseInt(input.value) || 1;
-  document.getElementById("recette").value = recette;
-  document.getElementById("personnes").value = val;
-  calculer();
+  // Passer DIRECTEMENT à calculer() au lieu de transiter par le <select> (qui ne contient pas toutes les recettes)
+  calculer(recette, val);
   setTimeout(() => {
     const res = document.getElementById("resultat").innerHTML;
     document.getElementById("modal-resultat").innerHTML = res;
