@@ -1834,9 +1834,12 @@ select, input[type="number"] {
 /* ============================================================ */
 .carte-etiquette-famille {
   position: absolute;
-  top: 50%;              /* CENTRÉ verticalement sur l'image */
+  /* Positionnée en bas de l'image (zone safe — jamais sur le titre) */
+  /* L'image fait 160px (desktop), 140px (mobile), 130px (tablette) */
+  /* On place l'étiquette à 8px du bord bas de l'image */
+  top: 130px;            /* Bas de l'image desktop (160px - 30px) */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background: rgba(255,255,255,.97);
   border-radius: 8px;
   padding: 4px 8px;
@@ -1864,13 +1867,15 @@ select, input[type="number"] {
 /* ============================================================ */
 @media (max-width: 600px) {
   .carte-etiquette-famille {
+    top: 110px;            /* Image mobile = 140px - 30px de marge */
     font-size: 10px;
     padding: 3px 6px;
-    max-width: 90%;       /* Limite la largeur pour ne pas déborder */
+    max-width: 90%;
   }
 }
 @media (max-width: 480px) {
   .carte-etiquette-famille {
+    top: 100px;            /* Image tablette = 130px - 30px de marge */
     font-size: 10px;
     max-width: 92%;
   }
