@@ -699,8 +699,15 @@ function chargerAccueilSuggestions() {
     if (!saisons || saisons.length === 0) return true; // toute l'année
     return saisons.includes(saisonActuelle);
   });
-  // Mélange stable basé sur la date
+  // Pondération par niveau utilisateur : on favorise les recettes adaptées au niveau
+  // Débutant → priorité Facile / Intermédiaire → priorité Facile+Moyen / Confirmé → équilibré
+  const userNiv = typeof getNiveauUtilisateur === "function" ? getNiveauUtilisateur() : "intermédiaire";
   pool = pool.sort((a, b) => {
+    // Score selon le niveau de la recette vs niveau utilisateur
+    const scoreA = scoreNiveauPourUser(a, userNiv);
+    const scoreB = scoreNiveauPourUser(b, userNiv);
+    if (scoreA !== scoreB) return scoreB - scoreA; // score plus élevé = priorité
+    // À score égal, mélange stable basé sur la date
     const ha = (a.charCodeAt(0) * seed) % 997;
     const hb = (b.charCodeAt(0) * seed) % 997;
     return ha - hb;
@@ -3601,6 +3608,29 @@ function getNiveauFamilleStr(cle) {
   return r ? r.niveau : null;
 }
 
+// ===== Niveau cuisine utilisateur =====
+// Retourne le niveau numérique de la recette : 1 (facile), 2 (moyen), 3 (élevé)
+function getNiveauRecette(cle) {
+  const niv = recettes?.[cle]?.niveau || "";
+  if (niv.includes("⭐⭐⭐") || /Élevé|Expert|Difficile/i.test(niv)) return 3;
+  if (niv.includes("⭐⭐") || /Moyen|Intermédiaire/i.test(niv)) return 2;
+  return 1; // ⭐ Facile par défaut
+}
+
+// Retourne le niveau MAX (numérique) que l'utilisateur accepte selon son profil
+// débutant=1 (facile), intermédiaire=2 (facile+moyen), confirmé=3 (tout)
+function getNiveauUtilisateurMax() {
+  const niv = window.userProfile?.preferences?.niveauCuisine || "débutant";
+  if (niv === "confirmé" || niv === "confirme") return 3;
+  if (niv === "intermédiaire" || niv === "intermediaire") return 2;
+  return 1; // débutant
+}
+
+// Une recette est-elle "au-dessus" du niveau utilisateur ?
+function recetteAuDessusDuNiveau(cle) {
+  return getNiveauRecette(cle) > getNiveauUtilisateurMax();
+}
+
 function getFoyerProfil() {
   const foyer = window.userProfile?.foyer;
   if (!foyer) return null;
@@ -3610,6 +3640,53 @@ function getFoyerProfil() {
     hasAdo:    (foyer.ados || 0) > 0,
     hasAdulte: (foyer.adultes || 0) > 0,
   };
+}
+
+// === SYSTÈME NIVEAU CUISINE ===
+// Détecte le niveau d'une recette : "facile" | "moyen" | "eleve"
+function getNiveauRecette(cle) {
+  const niv = (recettes?.[cle]?.niveau || "").toLowerCase();
+  if (niv.includes("⭐⭐⭐") || niv.includes("élevé") || niv.includes("expert") || niv.includes("difficile")) return "eleve";
+  if (niv.includes("⭐⭐") || niv.includes("intermédiaire") || niv.includes("moyen")) return "moyen";
+  return "facile"; // ⭐ Facile ou défaut
+}
+// Récupère le niveau cuisine de l'utilisateur : "débutant" | "intermédiaire" | "confirmé"
+function getNiveauUtilisateur() {
+  return window.userProfile?.preferences?.niveauCuisine || "intermédiaire";
+}
+// Détermine si une recette est au-dessus du niveau utilisateur
+// Retourne null si OK, sinon { niveauUser, niveauRecette, raison }
+function niveauTropEleve(cle) {
+  const userNiv = getNiveauUtilisateur();
+  const recNiv = getNiveauRecette(cle);
+  // Débutant ne devrait pas voir Moyen ou Élevé
+  if (userNiv === "débutant" && (recNiv === "moyen" || recNiv === "eleve")) {
+    return { niveauUser: userNiv, niveauRecette: recNiv, raison: recNiv === "eleve" ? "Recette technique (⭐⭐⭐)" : "Recette intermédiaire (⭐⭐)" };
+  }
+  // Intermédiaire ne devrait pas voir Élevé
+  if (userNiv === "intermédiaire" && recNiv === "eleve") {
+    return { niveauUser: userNiv, niveauRecette: recNiv, raison: "Recette technique (⭐⭐⭐)" };
+  }
+  return null; // OK
+}
+// Score de pondération pour la pertinence d'une recette selon le niveau utilisateur
+// Plus le score est élevé, plus la recette est priorisée dans les suggestions
+function scoreNiveauPourUser(cle, userNiv) {
+  const recNiv = getNiveauRecette(cle);
+  if (userNiv === "débutant") {
+    if (recNiv === "facile") return 10;
+    if (recNiv === "moyen")  return 3;
+    return 0;  // eleve : très peu de chance
+  }
+  if (userNiv === "intermédiaire") {
+    if (recNiv === "moyen")  return 10;
+    if (recNiv === "facile") return 8;
+    return 2;  // eleve : faible chance
+  }
+  // confirmé : équilibré, légèrement orienté vers les plus techniques
+  if (recNiv === "eleve")  return 10;
+  if (recNiv === "moyen")  return 8;
+  return 6;  // facile : toujours présent mais moins prioritaire
 }
 
 // Mots-clés problématiques par profil
@@ -4347,6 +4424,49 @@ function calculerCarte(recette, inputId) {
   }, 50);
 }
 
+// ============================================================
+// Applique les préférences utilisateur visuellement sur les cartes
+// - Ajoute un badge discret sur les recettes au-dessus du niveau utilisateur
+// - Ajoute un badge sur les recettes problématiques pour la famille (bébé/enfant)
+// Appelée à chaque chargement de l'écran principal et après modif du profil
+// ============================================================
+function appliquerPreferencesVisuelles() {
+  if (typeof recettes === "undefined") return;
+  const cartes = document.querySelectorAll(".carte[onclick*='ouvrirFiche']");
+  cartes.forEach(carte => {
+    const m = (carte.getAttribute("onclick") || "").match(/ouvrirFiche\('([^']+)'/);
+    if (!m) return;
+    const cle = m[1];
+
+    // 1) Retirer les anciens badges (au cas où on rappelle la fonction après modif du profil)
+    carte.querySelectorAll(".carte-badge-niveau, .carte-badge-famille").forEach(b => b.remove());
+
+    // 2) Badge niveau (si recette trop difficile pour le niveau utilisateur)
+    if (typeof niveauTropEleve === "function") {
+      const trop = niveauTropEleve(cle);
+      if (trop) {
+        const badge = document.createElement("span");
+        badge.className = "carte-badge-niveau";
+        badge.title = `${trop.raison} — au-dessus de votre niveau (${trop.niveauUser})`;
+        badge.textContent = trop.niveauRecette === "eleve" ? "⭐⭐⭐" : "⭐⭐";
+        carte.appendChild(badge);
+      }
+    }
+
+    // 3) Badge famille (si recette problématique pour bébé/enfant du foyer)
+    if (typeof getNiveauFamille === "function") {
+      const niv = getNiveauFamille(cle);
+      if (niv) {
+        const badge = document.createElement("span");
+        badge.className = "carte-badge-famille";
+        badge.title = niv.raison + (niv.niveau === "bebe" ? " — déconseillé bébé" : " — déconseillé enfant");
+        badge.textContent = niv.niveau === "bebe" ? "🍼" : "🌶️";
+        carte.appendChild(badge);
+      }
+    }
+  });
+}
+
 // Ouvrir la fiche recette depuis une carte en lisant son input
 function ouvrirFiche(recette, inputId) {
   const input = inputId ? document.getElementById(inputId) : null;
@@ -4490,6 +4610,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     }
+    // Appliquer les préférences visuelles (badges niveau + famille)
+    if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
   }, 1500);
 });
 
