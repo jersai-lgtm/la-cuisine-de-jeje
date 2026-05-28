@@ -42,7 +42,7 @@ gtag('config', 'G-390C5MY2SS');
   <div class="header-top">
     <div>
       <h1>👨‍🍳 La Cuisine de Jéjé</h1>
-      <p id="nb-recettes">🍽️ 382 recettes</p>
+      <p id="nb-recettes">🍽️ 378 recettes</p>
     </div>
     <div id="zone-utilisateur">
       <button class="btn-connexion" onclick="ouvrirModalAuth()">👤 Connexion</button>
@@ -642,7 +642,7 @@ gtag('config', 'G-390C5MY2SS');
         
   
   
-    <option value="souvlaki">Souvlaki</option>
+    <option value="souvlakiagneau">Souvlaki</option>
     <option value="butterchicken">Butter Chicken</option>
     <option value="risottoprimavera">Risotto Primavera</option>
     <option value="bolognaisemaison">Bolognaise Maison</option>
@@ -651,7 +651,7 @@ gtag('config', 'G-390C5MY2SS');
     <option value="moussaka">Moussaka</option>
     <option value="paella">Paella</option>
     <option value="quichelorraine">Quiche Lorraine</option>
-    <option value="dalindien">Dal Indien</option>
+    <option value="dahllentillescorail">Dal Indien</option>
   
   
   </select>
@@ -1041,18 +1041,6 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="grece" onclick="ouvrirFiche('souvlaki', 'calc-souvlaki')">
-    <img src="images/souvlaki.webp" alt="Souvlaki">
-    <div class="carte-info">
-      <h2>🍢 Souvlaki</h2>
-      <p>⏱ 20 min • ⭐ Facile</p>
-      <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-souvlaki">
-        <button class="calc-btn" onclick="calculerCarte('souvlaki', 'calc-souvlaki')">Calculer</button>
-      </div>
-    </div>
-  </div>
-
   <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('quichelorraine', 'calc-quichelorraine')">
     <img src="images/quichelorraine.webp" alt="Quiche Lorraine">
     <div class="carte-info">
@@ -1077,18 +1065,6 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <div class="carte" data-cat="plats" data-pays="inde" onclick="ouvrirFiche('dalindien', 'calc-dalindien')">
-    <img src="images/dalindien.webp" alt="Dal Indien">
-    <div class="carte-info">
-      <h2>🫘 Dal Indien</h2>
-      <p>⏱ 30 min • ⭐ Facile</p>
-      <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-dalindien">
-        <button class="calc-btn" onclick="calculerCarte('dalindien', 'calc-dalindien')">Calculer</button>
-      </div>
-    </div>
-  </div>
-
   <div class="carte" data-cat="plats" data-pays="chine" onclick="ouvrirFiche('rizcantonnais', 'calc-rizcantonnais')">
     <img src="images/rizcantonnais.webp" alt="Riz Cantonnais">
     <div class="carte-info">
@@ -1097,18 +1073,6 @@ gtag('config', 'G-390C5MY2SS');
       <div class="carte-calc" onclick="event.stopPropagation()">
         <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-rizcantonnais">
         <button class="calc-btn" onclick="calculerCarte('rizcantonnais', 'calc-rizcantonnais')">Calculer</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="carte" data-cat="soupes" data-pays="maroc" onclick="ouvrirFiche('hariramarocaine', 'calc-hariramarocaine')">
-    <img src="images/hariramarocaine.webp" alt="Harira Marocaine">
-    <div class="carte-info">
-      <h2>🍲 Harira Marocaine</h2>
-      <p>⏱ 1h • ⭐ Facile</p>
-      <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-hariramarocaine">
-        <button class="calc-btn" onclick="calculerCarte('hariramarocaine', 'calc-hariramarocaine')">Calculer</button>
       </div>
     </div>
   </div>
@@ -1837,18 +1801,6 @@ gtag('config', 'G-390C5MY2SS');
       <div class="carte-calc" onclick="event.stopPropagation()">
         <input type="number" value="2" min="1" max="15" class="calc-input" id="calc-shakshukaverte">
         <button class="calc-btn" onclick="calculerCarte('shakshukaverte', 'calc-shakshukaverte')">Calculer</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="carte" data-cat="plats" data-pays="liban" onclick="ouvrirFiche('kebbeh', 'calc-kebbeh')">
-    <img src="images/kebbeh.webp" alt="Kebbeh Libanais">
-    <div class="carte-info">
-      <h2>🥩 Kebbeh Libanais</h2>
-      <p>⏱ 45 min • ⭐⭐ Intermédiaire</p>
-      <div class="carte-calc" onclick="event.stopPropagation()">
-        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-kebbeh">
-        <button class="calc-btn" onclick="calculerCarte('kebbeh', 'calc-kebbeh')">Calculer</button>
       </div>
     </div>
   </div>
@@ -4818,7 +4770,7 @@ gtag('config', 'G-390C5MY2SS');
     <option value="shakshuka">Shakshuka</option>
     <option value="soupeaoignon">Soupe à l'Oignon</option>
     <option value="rizcantonnais">Riz Cantonnais</option>
-    <option value="hariramarocaine">Harira Marocaine</option>
+    <option value="soupeharira">Harira Marocaine</option>
     <option value="naan">Naans</option>
     <option value="verrinetiramisu">Verrines Tiramisu</option>
     <option value="churros">Churros</option>
@@ -4865,7 +4817,7 @@ gtag('config', 'G-390C5MY2SS');
     <option value="pierogi">Pierogi</option>
     <option value="momos">Momos Tibétains</option>
     <option value="shakshukaverte">Shakshuka Verte</option>
-    <option value="kebbeh">Kebbeh Libanais</option>
+    <option value="kibbeh">Kebbeh Libanais</option>
     <option value="tteokbokki">Tteokbokki</option>
     <option value="porc_pulled">Pulled Pork</option>
     <option value="dosakerdosai">Dosa</option>
