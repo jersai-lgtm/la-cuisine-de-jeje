@@ -42,7 +42,7 @@ gtag('config', 'G-390C5MY2SS');
   <div class="header-top">
     <div>
       <h1>👨‍🍳 La Cuisine de Jéjé</h1>
-      <p id="nb-recettes">🍽️ 365 recettes</p>
+      <p id="nb-recettes">🍽️ 382 recettes</p>
     </div>
     <div id="zone-utilisateur">
       <button class="btn-connexion" onclick="ouvrirModalAuth()">👤 Connexion</button>
@@ -4441,6 +4441,194 @@ gtag('config', 'G-390C5MY2SS');
       <div class="carte-calc" onclick="event.stopPropagation()">
         <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-spanakopita">
         <button class="calc-btn" onclick="calculerCarte('spanakopita', 'calc-spanakopita')">Calculer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('spaghettivongole', 'calc-spaghettivongole')">
+    <img src="images/spaghettivongole.webp" alt="Spaghetti Vongole" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍝 Spaghetti Vongole</h2>
+      <p>⏱ 30 min • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-spaghettivongole">
+        <button class="calc-btn" onclick="calculerCarte('spaghettivongole', 'calc-spaghettivongole')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('polentagorgonzola', 'calc-polentagorgonzola')">
+    <img src="images/polentagorgonzola.webp" alt="Polenta Gorgonzola" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🧀 Polenta Gorgonzola</h2>
+      <p>⏱ 45 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-polentagorgonzola">
+        <button class="calc-btn" onclick="calculerCarte('polentagorgonzola', 'calc-polentagorgonzola')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="encas" data-pays="italie" onclick="ouvrirFiche('arancinissicilien', 'calc-arancinissicilien')">
+    <img src="images/arancinissicilien.webp" alt="Arancini Siciliens" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍙 Arancini Siciliens</h2>
+      <p>⏱ 1h30 + 2h • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-arancinissicilien">
+        <button class="calc-btn" onclick="calculerCarte('arancinissicilien', 'calc-arancinissicilien')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="entrees" data-pays="italie" onclick="ouvrirFiche('caponatasicile', 'calc-caponatasicile')">
+    <img src="images/caponatasicile.webp" alt="Caponata Sicilienne" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍆 Caponata Sicilienne</h2>
+      <p>⏱ 50 min • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-caponatasicile">
+        <button class="calc-btn" onclick="calculerCarte('caponatasicile', 'calc-caponatasicile')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="desserts" data-pays="italie" onclick="ouvrirFiche('cannolisicilien', 'calc-cannolisicilien')">
+    <img src="images/cannolisicilien.webp" alt="Cannoli Siciliens" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥐 Cannoli Siciliens</h2>
+      <p>⏱ 1h + repos • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-cannolisicilien">
+        <button class="calc-btn" onclick="calculerCarte('cannolisicilien', 'calc-cannolisicilien')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="desserts" data-pays="italie" onclick="ouvrirFiche('affogatoglace', 'calc-affogatoglace')">
+    <img src="images/affogatoglace.webp" alt="Affogato al Caffè" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>☕ Affogato al Caffè</h2>
+      <p>⏱ 5 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-affogatoglace">
+        <button class="calc-btn" onclick="calculerCarte('affogatoglace', 'calc-affogatoglace')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="boulangerie" data-pays="france" onclick="ouvrirFiche('painsigle', 'calc-painsigle')">
+    <img src="images/painsigle.webp" alt="Pain de Seigle" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍞 Pain de Seigle</h2>
+      <p>⏱ 2h30 • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-painsigle">
+        <button class="calc-btn" onclick="calculerCarte('painsigle', 'calc-painsigle')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="boulangerie" data-pays="france" onclick="ouvrirFiche('paincampagne', 'calc-paincampagne')">
+    <img src="images/paincampagne.webp" alt="Pain de Campagne" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🌾 Pain de Campagne</h2>
+      <p>⏱ 3h • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-paincampagne">
+        <button class="calc-btn" onclick="calculerCarte('paincampagne', 'calc-paincampagne')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('religieusechocolat', 'calc-religieusechocolat')">
+    <img src="images/religieusechocolat.webp" alt="Religieuse Chocolat" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍫 Religieuse Chocolat</h2>
+      <p>⏱ 2h • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-religieusechocolat">
+        <button class="calc-btn" onclick="calculerCarte('religieusechocolat', 'calc-religieusechocolat')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('sainthonore', 'calc-sainthonore')">
+    <img src="images/sainthonore.webp" alt="Saint-Honoré" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>👑 Saint-Honoré</h2>
+      <p>⏱ 3h • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-sainthonore">
+        <button class="calc-btn" onclick="calculerCarte('sainthonore', 'calc-sainthonore')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="desserts" data-pays="allemagne" onclick="ouvrirFiche('foretnoire', 'calc-foretnoire')">
+    <img src="images/foretnoire.webp" alt="Forêt Noire" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍒 Forêt Noire</h2>
+      <p>⏱ 2h + 4h • ⭐⭐⭐ Élevé</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-foretnoire">
+        <button class="calc-btn" onclick="calculerCarte('foretnoire', 'calc-foretnoire')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="desserts" data-pays="france" onclick="ouvrirFiche('charlottefruits', 'calc-charlottefruits')">
+    <img src="images/charlottefruits.webp" alt="Charlotte Fruits Rouges" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍓 Charlotte Fruits Rouges</h2>
+      <p>⏱ 45 min + 4h • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-charlottefruits">
+        <button class="calc-btn" onclick="calculerCarte('charlottefruits', 'calc-charlottefruits')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="entrees" data-pays="italie" onclick="ouvrirFiche('carpacciodeboeuf', 'calc-carpacciodeboeuf')">
+    <img src="images/carpacciodeboeuf.webp" alt="Carpaccio de Bœuf" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥩 Carpaccio de Bœuf</h2>
+      <p>⏱ 15 min + 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-carpacciodeboeuf">
+        <button class="calc-btn" onclick="calculerCarte('carpacciodeboeuf', 'calc-carpacciodeboeuf')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="entrees" data-pays="france" onclick="ouvrirFiche('rillettessaumonfume', 'calc-rillettessaumonfume')">
+    <img src="images/rillettessaumonfume.webp" alt="Rillettes Saumon Fumé" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🐟 Rillettes Saumon Fumé</h2>
+      <p>⏱ 15 min + 2h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-rillettessaumonfume">
+        <button class="calc-btn" onclick="calculerCarte('rillettessaumonfume', 'calc-rillettessaumonfume')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('quichepoireaux', 'calc-quichepoireaux')">
+    <img src="images/quichepoireaux.webp" alt="Quiche aux Poireaux" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥧 Quiche aux Poireaux</h2>
+      <p>⏱ 1h • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-quichepoireaux">
+        <button class="calc-btn" onclick="calculerCarte('quichepoireaux', 'calc-quichepoireaux')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="healthy" data-pays="international" onclick="ouvrirFiche('bowlsaumonquinoa', 'calc-bowlsaumonquinoa')">
+    <img src="images/bowlsaumonquinoa.webp" alt="Bowl Saumon-Quinoa" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥗 Bowl Saumon-Quinoa</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-bowlsaumonquinoa">
+        <button class="calc-btn" onclick="calculerCarte('bowlsaumonquinoa', 'calc-bowlsaumonquinoa')">Calculer</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="france" onclick="ouvrirFiche('galettesarrasin', 'calc-galettesarrasin')">
+    <img src="images/galettesarrasin.webp" alt=" Galette Sarrasin" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🇫🇷 Galette Sarrasin</h2>
+      <p>⏱ 30 min + 1h • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-galettesarrasin">
+        <button class="calc-btn" onclick="calculerCarte('galettesarrasin', 'calc-galettesarrasin')">Calculer</button>
       </div>
     </div>
   </div>
