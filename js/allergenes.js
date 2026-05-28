@@ -96,18 +96,19 @@ function appliquerPreferencesVisuelles() {
 
     if (trouvés.length > 0) {
       carte.classList.add('carte-grisee');
-      // Badge avec le premier allergène trouvé
+      // Badge avec le premier élément trouvé
+      // PRIORITÉ : allergie (critique santé) > régime (choix alimentaire)
       const badge = document.createElement('div');
       badge.className = 'carte-badge-allergie';
-      const regime = [...regimes].find(r => (ALLERGENES_MOTS[r] || []).some(m => trouvés.includes(m)));
       const allergie = [...allergies, ...allergiesCustom].find(a => 
         trouvés.some(t => t.includes(a.toLowerCase()) || a.toLowerCase().includes(t))
       );
-      if (regime) {
+      const regime = [...regimes].find(r => (ALLERGENES_MOTS[r] || []).some(m => trouvés.includes(m)));
+      if (allergie) {
+        badge.textContent = '⚠️ ' + allergie;
+      } else if (regime) {
         const labels = { 'végétarien':'🥦 Végétarien', 'vegan':'🌱 Vegan', 'sans-gluten':'🌾 Sans gluten', 'sans-lactose':'🥛 Sans lactose', 'pesco-végétarien':'🐟 Pesco-végé', 'moins-viande':'🌱 Moins viande' };
         badge.textContent = labels[regime] || regime;
-      } else if (allergie) {
-        badge.textContent = '⚠️ ' + allergie;
       } else {
         badge.textContent = '⚠️ Exclut';
       }
@@ -116,9 +117,11 @@ function appliquerPreferencesVisuelles() {
       carte.classList.remove('carte-grisee');
     }
 
-    // Badge famille — bordure rouge (bébé) ou orange (enfant) + badge clair + tooltip précis
+    // Badge famille — bordure rouge (bébé) ou orange (enfant) + badge clair + étiquette explicite
     const existingFam = carte.querySelector('.carte-badge-famille');
     if (existingFam) existingFam.remove();
+    const existingEtiq = carte.querySelector('.carte-etiquette-famille');
+    if (existingEtiq) existingEtiq.remove();
     carte.classList.remove('carte-alerte-bebe', 'carte-alerte-enfant');
 
     if (typeof getNiveauFamille === 'function') {
@@ -126,13 +129,24 @@ function appliquerPreferencesVisuelles() {
       if (cle) {
         const niv = getNiveauFamille(cle);
         if (niv) {
+          // 1) Badge emoji en haut à gauche (signal compact)
           const badgeFam = document.createElement('div');
           badgeFam.className = 'carte-badge-famille';
           const detailBebe = niv.niveau === 'bebe' ? ' — déconseillé bébé < 1 an' : ' — déconseillé enfant';
           badgeFam.title = (niv.raison || niv.mot || '') + detailBebe;
-          badgeFam.textContent = niv.niveau === 'bebe' ? '🍼' : '🌶️';
+          badgeFam.textContent = niv.niveau === 'bebe' ? '🍼' : '🧒';
           carte.appendChild(badgeFam);
-          // Bordure d'alerte rouge (bébé) ou orange (enfant)
+
+          // 2) Étiquette explicite sur l'image (style pastille blanche, texte coloré)
+          const etiquetteText = typeof getEtiquetteFamille === 'function' ? getEtiquetteFamille(cle) : null;
+          if (etiquetteText) {
+            const etiq = document.createElement('div');
+            etiq.className = 'carte-etiquette-famille carte-etiquette-' + niv.niveau;
+            etiq.textContent = etiquetteText;
+            carte.appendChild(etiq);
+          }
+
+          // 3) Bordure d'alerte rouge (bébé) ou orange (enfant)
           carte.classList.add(niv.niveau === 'bebe' ? 'carte-alerte-bebe' : 'carte-alerte-enfant');
         }
       }

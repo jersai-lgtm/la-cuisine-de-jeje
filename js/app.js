@@ -210,7 +210,7 @@ function chargerAccueilMenus() {
       const style = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.08);padding-left:6px"
                   : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.06);padding-left:6px" : "";
       const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
-                  : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🌶️</span>` : "";
+                  : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🧒</span>` : "";
       return `
       <div class="accueil-menu-card" onclick="goMenus()">
         <div class="accueil-menu-day">${p.categorie || "Plat"}</div>
@@ -241,7 +241,7 @@ function chargerAccueilMenus() {
         const style = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.08);padding-left:6px"
                     : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.06);padding-left:6px" : "";
         const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
-                    : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🌶️</span>` : "";
+                    : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🧒</span>` : "";
         return `<div class="accueil-menu-item" style="${style}" title="${tip}">
           <span>${emoji}</span>
           <div>
@@ -280,7 +280,7 @@ function chargerAccueilMenus() {
       const style = n.niveau === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.08);padding-left:6px"
                                           : "border-left:3px solid #ff9900;background:rgba(255,153,0,.06);padding-left:6px";
       const mini = n.niveau === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
-                                       : `<span title="${tip}" style="margin-left:4px;font-size:11px">🌶️</span>`;
+                                       : `<span title="${tip}" style="margin-left:4px;font-size:11px">🧒</span>`;
       return { style, mini, tip };
     };
     const aM = fmtAlerte(nM);
@@ -745,7 +745,7 @@ function miniCarte(key) {
         titleAlerte = lvl === "bebe" ? `${raison} — déconseillé bébé` : `${raison} — déconseillé enfant`;
         styleAlerte = lvl === "bebe" ? "border:2px solid #ff4444;box-shadow:0 0 8px rgba(255,68,68,.3)"
                                      : "border:2px solid #ff9900;box-shadow:0 0 8px rgba(255,153,0,.3)";
-        const emoji = lvl === "bebe" ? "🍼" : "🌶️";
+        const emoji = lvl === "bebe" ? "🍼" : "🧒";
         badgeFam = `<span class="mini-carte-famille" title="${titleAlerte}">${emoji}</span>`;
         // Bouton régénérer
         btnRegen = `<button class="mini-carte-regen" onclick="event.stopPropagation();regenererSuggestion('${key}')" title="Régénérer cette suggestion">🔄</button>`;
@@ -1144,6 +1144,15 @@ const INGREDIENTS_LABELS = {
   patefeuilletee: "🥧 Pâte feuilletée", poudreamandes: "🥥 Poudre d'amandes",
   cremepatissiere: "🍮 Crème pâtissière", sucrecaramel: "🍯 Sucre (caramel)",
   feve: "🪙 Fève",
+  // === Lot 2 — Ingrédients cuisines du monde ===
+  baguette: "🥖 Baguette", painpita: "🫓 Pain pita",
+  haricotsverts: "🫛 Haricots verts", saucissefumee: "🌭 Saucisse fumée",
+  pouletHache: "🍗 Poulet haché", rizGrillé: "🌾 Riz grillé concassé",
+  oignonrouge: "🧅 Oignon rouge", nouillesoeuf: "🍜 Nouilles aux œufs",
+  pateCurry: "🌶️ Pâte de curry", cacahuetespurée: "🥜 Purée de cacahuètes",
+  lait_coco: "🥥 Lait de coco", tempeh: "🟨 Tempeh",
+  piniots: "🌰 Pignons de pin", feuillesBrick: "📜 Feuilles de brick",
+  feuillesFilo: "📜 Feuilles de filo", sucreglace: "❄️ Sucre glace",
   gingembre: "🫚 Gingembre", galanga: "🫚 Galanga", anis: "⭐ Anis étoilé",
   citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille", fumee: "💨 Paprika fumé",
   chermoula: "🌿 Chermoula", pesto: "🌿 Pesto",
@@ -1540,7 +1549,7 @@ function afficherMenuFestif(menu, personnes) {
     legende.className = "plan-legende-famille";
     const parts = [];
     if (profilL.hasBebe)   parts.push(`<span class="leg-item"><span class="leg-pastille bebe"></span>🍼 Déconseillé bébé</span>`);
-    if (profilL.hasEnfant) parts.push(`<span class="leg-item"><span class="leg-pastille enfant"></span>🌶️ Déconseillé enfant</span>`);
+    if (profilL.hasEnfant) parts.push(`<span class="leg-item"><span class="leg-pastille enfant"></span>🧒 Déconseillé enfant</span>`);
     parts.push(`<span class="leg-hint"><strong>🔄 Régénérer</strong> chaque item concerné</span>`);
     legende.innerHTML = parts.join("");
     container.appendChild(legende);
@@ -1558,7 +1567,7 @@ function afficherMenuFestif(menu, personnes) {
     const styleAlerte = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
                       : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
     const badge = lvl === "bebe"   ? `<span title="${tip}" style="margin-left:6px">🍼</span>`
-                : lvl === "enfant" ? `<span title="${tip}" style="margin-left:6px">🌶️</span>` : "";
+                : lvl === "enfant" ? `<span title="${tip}" style="margin-left:6px">🧒</span>` : "";
     const btn = lvl ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenItemFestif(${idx})" title="Regénérer">🔄</button>` : "";
     const motif = lvl ? `<div class="plan-motif-famille" title="${tip}" style="max-width:280px">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
 
@@ -2778,7 +2787,7 @@ function afficherMenusSemaine(menus, personnes) {
     legende.className = "plan-legende-famille";
     const parts = [];
     if (profilL.hasBebe)   parts.push(`<span class="leg-item"><span class="leg-pastille bebe"></span>🍼 Déconseillé bébé</span>`);
-    if (profilL.hasEnfant) parts.push(`<span class="leg-item"><span class="leg-pastille enfant"></span>🌶️ Déconseillé enfant</span>`);
+    if (profilL.hasEnfant) parts.push(`<span class="leg-item"><span class="leg-pastille enfant"></span>🧒 Déconseillé enfant</span>`);
     parts.push(`<span class="leg-hint"><strong>🔄 Régénérer</strong> chaque repas concerné</span>`);
     legende.innerHTML = parts.join("");
     container.appendChild(legende);
@@ -2804,7 +2813,7 @@ function afficherMenusSemaine(menus, personnes) {
           const styleAlerte = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
                             : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
           const badge = lvl === "bebe"   ? `<span title="${tip}" style="margin-left:4px">🍼</span>`
-                      : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px">🌶️</span>` : "";
+                      : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px">🧒</span>` : "";
           const btn = lvl ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepasSous('${jour.jour}','${moment}','${cleType}')" title="Regénérer">🔄</button>` : "";
           const motif = lvl ? `<div class="plan-motif-famille" title="${tip}">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
           return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${personnes})">
@@ -2848,9 +2857,9 @@ function afficherMenusSemaine(menus, personnes) {
       const sSoir = lvlS === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
                   : lvlS === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
       const bMidi = lvlM === "bebe" ? `<span title="${tipM}" style="margin-left:4px">🍼</span>`
-                  : lvlM === "enfant" ? `<span title="${tipM}" style="margin-left:4px">🌶️</span>` : "";
+                  : lvlM === "enfant" ? `<span title="${tipM}" style="margin-left:4px">🧒</span>` : "";
       const bSoir = lvlS === "bebe" ? `<span title="${tipS}" style="margin-left:4px">🍼</span>`
-                  : lvlS === "enfant" ? `<span title="${tipS}" style="margin-left:4px">🌶️</span>` : "";
+                  : lvlS === "enfant" ? `<span title="${tipS}" style="margin-left:4px">🧒</span>` : "";
       const btnMidi = lvlM ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','midi')" title="Regénérer">🔄</button>` : "";
       const btnSoir = lvlS ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','soir')" title="Regénérer">🔄</button>` : "";
       const motifM = lvlM ? `<div class="plan-motif-famille" title="${tipM}">${lvlM === "bebe" ? "🍼" : "🌶️"} ${raisonM}</div>` : "";
@@ -3579,6 +3588,68 @@ const RAISONS_FAMILLE = {
   "bouillabaisse":"Bouillabaisse (poisson)",
 };
 
+// Étiquettes courtes affichées EN GROS sur les cartes (style "⛔ Miel interdit < 1 an")
+// Format : { motDétecté: { bebe: "...", enfant: "..." } }
+// "bebe" pour foyer avec bébé (rouge), "enfant" pour foyer avec enfant uniquement (orange)
+const ETIQUETTES_FAMILLE = {
+  // Poisson cru / Viande crue
+  "sushi":            { bebe: "⛔ Poisson cru — pas avant 5 ans",        enfant: "⚠️ Poisson cru — déconseillé enfant" },
+  "maki":             { bebe: "⛔ Poisson cru — pas avant 5 ans",        enfant: "⚠️ Poisson cru — déconseillé enfant" },
+  "nigiri":           { bebe: "⛔ Poisson cru — pas avant 5 ans",        enfant: "⚠️ Poisson cru — déconseillé enfant" },
+  "sashimi":          { bebe: "⛔ Poisson cru — pas avant 5 ans",        enfant: "⚠️ Poisson cru — déconseillé enfant" },
+  "ceviche":          { bebe: "⛔ Poisson cru — pas avant 5 ans",        enfant: "⚠️ Poisson cru — déconseillé enfant" },
+  "poisson cru":      { bebe: "⛔ Poisson cru — pas avant 5 ans",        enfant: "⚠️ Poisson cru — déconseillé enfant" },
+  "thon cru":         { bebe: "⛔ Thon cru — pas avant 5 ans",           enfant: "⚠️ Thon cru — déconseillé enfant" },
+  "saumon cru":       { bebe: "⛔ Saumon cru — pas avant 5 ans",         enfant: "⚠️ Saumon cru — déconseillé enfant" },
+  "tartare":          { bebe: "⛔ Tartare cru — pas avant 5 ans",        enfant: "⚠️ Tartare cru — déconseillé enfant" },
+  "carpaccio":        { bebe: "⛔ Carpaccio cru — pas avant 5 ans",      enfant: "⚠️ Carpaccio cru — déconseillé enfant" },
+  "gravlax":          { bebe: "⛔ Saumon cru — pas avant 5 ans",         enfant: "⚠️ Saumon cru — déconseillé enfant" },
+  // Coquillages
+  "moules":           { bebe: "⛔ Coquillages — pas avant 3 ans",        enfant: "⚠️ Coquillages — risque allergie" },
+  "huitre":           { bebe: "⛔ Huîtres — pas avant 3 ans",            enfant: "⚠️ Huîtres — risque allergie" },
+  "huître":           { bebe: "⛔ Huîtres — pas avant 3 ans",            enfant: "⚠️ Huîtres — risque allergie" },
+  "palourde":         { bebe: "⛔ Coquillages — pas avant 3 ans",        enfant: "⚠️ Coquillages — risque allergie" },
+  "crevette crue":    { bebe: "⛔ Crevettes crues — pas avant 3 ans",    enfant: "⚠️ Crevettes crues" },
+  // Charcuterie crue
+  "jambon cru":       { bebe: "⛔ Charcuterie crue — pas avant 3 ans",   enfant: "⚠️ Charcuterie crue" },
+  "prosciutto":       { bebe: "⛔ Prosciutto cru — pas avant 3 ans",     enfant: "⚠️ Charcuterie crue" },
+  "nduja":            { bebe: "⛔ N'duja crue — pas avant 3 ans",        enfant: "⚠️ N'duja épicée crue" },
+  "saucisson":        { bebe: "⛔ Saucisson cru — pas avant 3 ans",      enfant: null },
+  "bresaola":         { bebe: "⛔ Bresaola crue — pas avant 3 ans",      enfant: "⚠️ Charcuterie crue" },
+  "coppa":            { bebe: "⛔ Coppa crue — pas avant 3 ans",         enfant: "⚠️ Charcuterie crue" },
+  "salami cru":       { bebe: "⛔ Salami cru — pas avant 3 ans",         enfant: "⚠️ Charcuterie crue" },
+  // Allergènes risqués bébé
+  "miel":             { bebe: "⛔ Miel interdit < 1 an",                 enfant: null },
+  "cacahuète":        { bebe: "⛔ Arachides — risque allergie < 3 ans",  enfant: "⚠️ Arachides — risque allergie" },
+  "cacahuete":        { bebe: "⛔ Arachides — risque allergie < 3 ans",  enfant: "⚠️ Arachides — risque allergie" },
+  "arachide":         { bebe: "⛔ Arachides — risque allergie < 3 ans",  enfant: "⚠️ Arachides — risque allergie" },
+  "noix de":          { bebe: "⛔ Fruits à coque — risque allergie",     enfant: "⚠️ Fruits à coque" },
+  "noisette":         { bebe: "⛔ Fruits à coque — risque allergie",     enfant: "⚠️ Fruits à coque" },
+  "amande crue":      { bebe: "⛔ Fruits à coque crus — pas avant 3 ans",enfant: null },
+  // Épices fortes
+  "harissa":          { bebe: "⛔ Harissa — trop épicé bébé",            enfant: "⚠️ Harissa — version douce pour enfant" },
+  "piment fort":      { bebe: "⛔ Piment fort — trop épicé bébé",        enfant: "⚠️ Piment fort — version douce" },
+  "piment rouge":     { bebe: "⛔ Piment — trop épicé bébé",             enfant: null },
+  "sauce piquante":   { bebe: "⛔ Sauce piquante — trop épicé bébé",     enfant: "⚠️ Trop épicé pour enfant" },
+  "tabasco":          { bebe: "⛔ Tabasco — trop épicé bébé",            enfant: "⚠️ Tabasco — réduire la dose" },
+  "gochujang":        { bebe: "⛔ Gochujang — trop épicé bébé",          enfant: "⚠️ Gochujang — version douce" },
+  "wasabi":           { bebe: "⛔ Wasabi — trop piquant bébé",           enfant: "⚠️ Wasabi — très piquant" },
+  "très épicé":       { bebe: "⛔ Très épicé — pas pour bébé",           enfant: "⚠️ Très épicé — adapter dose" },
+  "bien épicé":       { bebe: "⛔ Bien épicé — pas pour bébé",           enfant: "⚠️ Bien épicé — adapter" },
+  "relevé":           { bebe: "⛔ Plat relevé — pas pour bébé",          enfant: "⚠️ Plat relevé — adapter pour enfant" },
+  "piquant":          { bebe: "⛔ Plat piquant — pas pour bébé",         enfant: "⚠️ Plat piquant — adapter pour enfant" },
+  // Alcool (subtil, peut piéger dans desserts/marinades)
+  "flambé":           { bebe: "⛔ Plat flambé (alcool) — pas pour bébé", enfant: "⚠️ Plat flambé — alcool résiduel" },
+  "flambée":          { bebe: "⛔ Plat flambé (alcool) — pas pour bébé", enfant: "⚠️ Plat flambé — alcool résiduel" },
+  "flamber":          { bebe: "⛔ Plat flambé (alcool) — pas pour bébé", enfant: "⚠️ Plat flambé — alcool résiduel" },
+  "au rhum":          { bebe: "⛔ Rhum — alcool, pas pour bébé",         enfant: "⚠️ Contient du rhum (cuit)" },
+  "au cognac":        { bebe: "⛔ Cognac — alcool, pas pour bébé",       enfant: "⚠️ Contient du cognac (cuit)" },
+  "au whisky":        { bebe: "⛔ Whisky — alcool, pas pour bébé",       enfant: "⚠️ Contient du whisky (cuit)" },
+  "alcool":           { bebe: "⛔ Contient de l'alcool",                 enfant: "⚠️ Contient de l'alcool" },
+  // Soupe spéciale
+  "bouillabaisse":    { bebe: "⛔ Bouillabaisse — poisson, arêtes",      enfant: "⚠️ Bouillabaisse — gare aux arêtes" },
+};
+
 function getNiveauFamille(cle) {
   // Retourne: null = OK, sinon { niveau: "bebe"|"enfant", mot: "...", raison: "..." }
   const profil = getFoyerProfil();
@@ -3606,6 +3677,22 @@ function getNiveauFamille(cle) {
 function getNiveauFamilleStr(cle) {
   const r = getNiveauFamille(cle);
   return r ? r.niveau : null;
+}
+
+// Helper : retourne l'étiquette explicite "⛔ Miel interdit < 1 an" ou "⚠️ Trop épicé enfant"
+// Retourne null si pas d'étiquette nécessaire
+function getEtiquetteFamille(cle) {
+  const niv = getNiveauFamille(cle);
+  if (!niv) return null;
+  const mot = (niv.mot || "").toLowerCase();
+  // Chercher l'étiquette correspondant au mot trouvé
+  if (typeof ETIQUETTES_FAMILLE !== "undefined" && ETIQUETTES_FAMILLE[mot]) {
+    const e = ETIQUETTES_FAMILLE[mot];
+    return e[niv.niveau] || null;
+  }
+  // Fallback : générer une étiquette basique
+  if (niv.niveau === "bebe") return `⛔ ${niv.raison || "Déconseillé bébé"}`;
+  return `⚠️ ${niv.raison || "Déconseillé enfant"}`;
 }
 
 // ===== Niveau cuisine utilisateur =====
@@ -4424,52 +4511,22 @@ function calculerCarte(recette, inputId) {
   }, 50);
 }
 
-// ============================================================
-// Applique les préférences utilisateur visuellement sur les cartes
-// - Ajoute un badge discret sur les recettes au-dessus du niveau utilisateur
-// - Ajoute un badge sur les recettes problématiques pour la famille (bébé/enfant)
-// Appelée à chaque chargement de l'écran principal et après modif du profil
-// ============================================================
-function appliquerPreferencesVisuelles() {
-  if (typeof recettes === "undefined") return;
-  const cartes = document.querySelectorAll(".carte[onclick*='ouvrirFiche']");
-  cartes.forEach(carte => {
-    const m = (carte.getAttribute("onclick") || "").match(/ouvrirFiche\('([^']+)'/);
-    if (!m) return;
-    const cle = m[1];
-
-    // 1) Retirer les anciens badges (au cas où on rappelle la fonction après modif du profil)
-    carte.querySelectorAll(".carte-badge-niveau, .carte-badge-famille").forEach(b => b.remove());
-
-    // 2) Badge niveau (si recette trop difficile pour le niveau utilisateur)
-    if (typeof niveauTropEleve === "function") {
-      const trop = niveauTropEleve(cle);
-      if (trop) {
-        const badge = document.createElement("span");
-        badge.className = "carte-badge-niveau";
-        badge.title = `${trop.raison} — au-dessus de votre niveau (${trop.niveauUser})`;
-        badge.textContent = trop.niveauRecette === "eleve" ? "⭐⭐⭐" : "⭐⭐";
-        carte.appendChild(badge);
-      }
-    }
-
-    // 3) Badge famille (si recette problématique pour bébé/enfant du foyer)
-    if (typeof getNiveauFamille === "function") {
-      const niv = getNiveauFamille(cle);
-      if (niv) {
-        const badge = document.createElement("span");
-        badge.className = "carte-badge-famille";
-        badge.title = niv.raison + (niv.niveau === "bebe" ? " — déconseillé bébé" : " — déconseillé enfant");
-        badge.textContent = niv.niveau === "bebe" ? "🍼" : "🌶️";
-        carte.appendChild(badge);
-      }
-    }
-  });
-}
+// La fonction appliquerPreferencesVisuelles est définie dans allergenes.js
+// (elle gère allergies, régimes, famille et niveau cuisine dans une seule fonction)
 
 // Ouvrir la fiche recette depuis une carte en lisant son input
 function ouvrirFiche(recette, inputId) {
   const input = inputId ? document.getElementById(inputId) : null;
+  // Si l'input existe ET n'a pas été modifié manuellement, le synchroniser avec le foyer
+  // (au cas où le profil aurait été chargé après l'init initial)
+  if (input && !input.dataset.modifie) {
+    const foyer = window.userProfile?.foyer;
+    if (foyer) {
+      const nb = (foyer.adultes || 0) + (foyer.ados || 0) +
+                 (foyer.enfants || 0) + (foyer.bebes || foyer.bébés || 0);
+      if (nb > 0) input.value = Math.min(15, Math.max(1, nb));
+    }
+  }
   const val = input ? (parseInt(input.value) || 1) : null;
   const inputP = document.getElementById("personnes");
 
@@ -4612,6 +4669,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // Appliquer les préférences visuelles (badges niveau + famille)
     if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+
+    // Marquer les calc-input comme "modifié" quand l'utilisateur change leur valeur
+    // (pour ne pas que la maj depuis le foyer écrase un choix manuel)
+    document.querySelectorAll(".calc-input").forEach(inp => {
+      inp.addEventListener("input", () => { inp.dataset.modifie = "1"; });
+    });
   }, 1500);
 });
 
@@ -4625,8 +4688,9 @@ window.addEventListener("profilMisAJour", () => {
       (foyer.enfants || 0) + (foyer.bebes || foyer.bébés || 0)
     ));
     if (nb > 0) {
+      // Ne pas écraser les valeurs modifiées manuellement par l'utilisateur
       document.querySelectorAll(".calc-input").forEach(inp => {
-        inp.value = nb;
+        if (!inp.dataset.modifie) inp.value = nb;
       });
     }
   }
