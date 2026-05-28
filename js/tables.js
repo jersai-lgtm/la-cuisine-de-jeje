@@ -224,7 +224,7 @@ const prixCalories = {
   ileflottante:     { base: 6,  baseLabel: "6 personnes",  prixTotal: 3.00,  calTotal: 1800, unite: "personne" },
   fondantchocolat:  { base: 6,  baseLabel: "6 fondants",   prixTotal: 3.80,  calTotal: 3000, unite: "fondant" },
   madeleine:        { base: 12, baseLabel: "12 madeleines",prixTotal: 2.50,  calTotal: 1800, unite: "madeleine" },
-  bananabread:      { base: 8,  baseLabel: "8 tranches",   prixTotal: 2.80,  calTotal: 2400, unite: "tranche" },
+  bananabread:      { base: 8,  baseLabel: "8 personnes",  prixTotal: 2.80,  calTotal: 2400, unite: "personne" },
   veloutelegumes:   { base: 4,  baseLabel: "4 personnes",  prixTotal: 3.50,  calTotal: 600,  unite: "personne" },
   houmous:          { base: 6,  baseLabel: "6 personnes",  prixTotal: 2.50,  calTotal: 900,   unite: "personne" },
   overnightoats:    { base: 1,  baseLabel: "1 pot",         prixTotal: 1.20,  calTotal: 350,   unite: "pot" },
@@ -322,6 +322,46 @@ function htmlTableauGenerique(ligne) {
     })
     .filter(Boolean)
     .join("");
+}
+
+// ============================================================
+// COMPLÉMENT pour les fonctions html du labo qui n'affichent pas tous les ingrédients
+// Ajoute des <tr> pour les ingrédients absents du rendu spécifique
+// ============================================================
+function htmlIngredientsComplement(ligne, fnHtml) {
+  if (!ligne || typeof fnHtml !== "function") return "";
+  const ignorés = new Set(["nb", "label", "total", "unite"]);
+  // Appeler la fonction et voir quelles colonnes sont déjà affichées
+  // On détecte via le code source de la fonction
+  const src = fnHtml.toString();
+  const colsAffichees = new Set([...src.matchAll(/\bl\.(\w+)/g)].map(m => m[1]));
+  // Trouver les colonnes manquantes
+  const manquantes = Object.entries(ligne)
+    .filter(([k, v]) => !ignorés.has(k) && !colsAffichees.has(k) && v && v !== "0" && v !== 0);
+  if (manquantes.length === 0) return "";
+  // Produire des <tr> avec le label INGREDIENTS_LABELS si possible
+  return manquantes.map(([k, v]) => {
+    const label = (typeof INGREDIENTS_LABELS !== "undefined" && INGREDIENTS_LABELS[k])
+      ? INGREDIENTS_LABELS[k]
+      : k.charAt(0).toUpperCase() + k.slice(1).replace(/([A-Z])/g, " $1");
+    return `<tr><th>${label}</th><td>${v}</td></tr>`;
+  }).join("");
+}
+
+// Wrapper : combine le rendu spécifique avec le complément pour les ingrédients manquants
+// Le complément s'insère AVANT la fermeture </table> du rendu spécifique
+function renduComplet(fnHtml, ligne) {
+  const rendu = fnHtml(ligne);
+  const complement = htmlIngredientsComplement(ligne, fnHtml);
+  if (!complement) return rendu;
+  // Insérer le complément avant </tbody> (ou </table>)
+  if (rendu.includes("</tbody>")) {
+    return rendu.replace("</tbody>", complement + "</tbody>");
+  }
+  if (rendu.includes("</table>")) {
+    return rendu.replace("</table>", "<tbody>" + complement + "</tbody></table>");
+  }
+  return rendu + complement;
 }
 
 // Fallback intelligent : si une fonction html* est référencée mais n'existe pas,
@@ -3033,13 +3073,17 @@ function htmlTableauIleFlottanteColonnes(l) {
 
 function htmlTableauBananaBreadColonnes(l) {
   return col(`
-    <tr><th>🍰 Tranches</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
     <tr><th>🍌 Bananes mûres</th><td>${l.bananes}</td></tr>
     <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
     <tr><th>🍬 Sucre roux</th><td>${l.sucre}</td></tr>
     <tr><th>🧈 Beurre fondu</th><td>${l.beurre}</td></tr>
     <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>`);
+    <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>
+    ${l.lait ? `<tr><th>🥛 Lait</th><td>${l.lait}</td></tr>` : ""}
+    ${l.yaourt ? `<tr><th>🥛 Yaourt</th><td>${l.yaourt}</td></tr>` : ""}
+    ${l.vanille ? `<tr><th>🌿 Vanille</th><td>${l.vanille}</td></tr>` : ""}
+    ${l.sel ? `<tr><th>🧂 Sel</th><td>${l.sel}</td></tr>` : ""}`);
 }
 
 function htmlTableauGranolaColonnes(l) {

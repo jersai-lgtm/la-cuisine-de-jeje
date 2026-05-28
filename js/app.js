@@ -3693,7 +3693,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "pizza" && data.tableauPatons) {
     const ligne = data.tableauPatons.find(l => l.patons === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} pâton${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPizzaColonnes(ligne) + htmlPrixCalories("pizza", personnes)
+      ? `<h3>Pour ${personnes} pâton${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauPizzaColonnes, ligne) + htmlPrixCalories("pizza", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (0–20).</p>`;
     return;
   }
@@ -3702,7 +3702,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "gaufres" && data.tableauGaufres) {
     const ligne = data.tableauGaufres.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} gaufre${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaufresColonnes(ligne) + htmlPrixCalories("gaufres", personnes)
+      ? `<h3>${personnes} gaufre${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauGaufresColonnes, ligne) + htmlPrixCalories("gaufres", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
     return;
   }
@@ -3711,7 +3711,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "cookies" && data.tableauCookies) {
     const ligne = data.tableauCookies.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} cookie${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCookiesColonnes(ligne) + htmlPrixCalories("cookies", personnes)
+      ? `<h3>${personnes} cookie${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauCookiesColonnes, ligne) + htmlPrixCalories("cookies", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
     return;
   }
@@ -3720,7 +3720,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "goumeau" && data.tableauGoumeau) {
     const ligne = data.tableauGoumeau.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGoumeauColonnes(ligne) + htmlPrixCalories("goumeau", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauGoumeauColonnes, ligne) + htmlPrixCalories("goumeau", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 10.</p>`;
     return;
   }
@@ -3729,7 +3729,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "galettetacos" && data.tableauGaletteTacos) {
     const ligne = data.tableauGaletteTacos.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} galette${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaletteTacosColonnes(ligne) + htmlPrixCalories("galettetacos", personnes)
+      ? `<h3>${personnes} galette${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauGaletteTacosColonnes, ligne) + htmlPrixCalories("galettetacos", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir 2, 4, 6, 8, 10, 12, 14 ou 16.</p>`;
     return;
   }
@@ -3738,7 +3738,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "painburger" && data.tableauPainBurger) {
     const ligne = data.tableauPainBurger.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} bun${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPainBurgerColonnes(ligne) + htmlPrixCalories("painburger", personnes)
+      ? `<h3>${personnes} bun${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauPainBurgerColonnes, ligne) + htmlPrixCalories("painburger", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir 2, 4, 6, 8, 10 ou 12.</p>`;
     return;
   }
@@ -3747,7 +3747,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "paindemie" && data.tableauPainDeMie) {
     const ligne = data.tableauPainDeMie.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} tranche${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPainDeMieColonnes(ligne) + htmlPrixCalories("paindemie", personnes)
+      ? `<h3>${personnes} tranche${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauPainDeMieColonnes, ligne) + htmlPrixCalories("paindemie", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 20.</p>`;
     return;
   }
@@ -3756,7 +3756,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "overnightoats" && data.tableauOvernightOats) {
     const ligne = data.tableauOvernightOats.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} pot${personnes > 1 ? "s" : ""}</h3>` + htmlTableauOvernightOatsColonnes(ligne) + htmlPrixCalories("overnightoats", personnes)
+      ? `<h3>${personnes} pot${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauOvernightOatsColonnes, ligne) + htmlPrixCalories("overnightoats", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
     return;
   }
@@ -3764,7 +3764,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "buddhaBowl" && data.tableauBuddhaBowl) {
     const ligne = data.tableauBuddhaBowl.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauBuddhaBowlColonnes(ligne) + htmlPrixCalories("buddhaBowl", personnes)
+      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauBuddhaBowlColonnes, ligne) + htmlPrixCalories("buddhaBowl", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
     return;
   }
@@ -3772,7 +3772,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "soupemiso" && data.tableauSoupeMiso) {
     const ligne = data.tableauSoupeMiso.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSoupeMisoColonnes(ligne) + htmlPrixCalories("soupemiso", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauSoupeMisoColonnes, ligne) + htmlPrixCalories("soupemiso", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
     return;
   }
@@ -3780,7 +3780,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "wrappoulet" && data.tableauWrapPoulet) {
     const ligne = data.tableauWrapPoulet.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} wrap${personnes > 1 ? "s" : ""}</h3>` + htmlTableauWrapPouletColonnes(ligne) + htmlPrixCalories("wrappoulet", personnes)
+      ? `<h3>${personnes} wrap${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauWrapPouletColonnes, ligne) + htmlPrixCalories("wrappoulet", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
     return;
   }
@@ -3788,7 +3788,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "energyballs" && data.tableauEnergyBalls) {
     const ligne = data.tableauEnergyBalls.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} ball${personnes > 1 ? "s" : ""}</h3>` + htmlTableauEnergyBallsColonnes(ligne) + htmlPrixCalories("energyballs", personnes)
+      ? `<h3>${personnes} ball${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauEnergyBallsColonnes, ligne) + htmlPrixCalories("energyballs", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir 4, 8, 12, 16, 20 ou 24.</p>`;
     return;
   }
@@ -3796,7 +3796,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "pancakesproteine" && data.tableauPancakesProteine) {
     const ligne = data.tableauPancakesProteine.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} pancake${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPancakesProteineColonnes(ligne) + htmlPrixCalories("pancakesproteine", personnes)
+      ? `<h3>${personnes} pancake${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauPancakesProteineColonnes, ligne) + htmlPrixCalories("pancakesproteine", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir 2, 4, 6, 8, 10 ou 12.</p>`;
     return;
   }
@@ -3804,7 +3804,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "bowlacai" && data.tableauBowlAcai) {
     const ligne = data.tableauBowlAcai.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauBowlAcaiColonnes(ligne) + htmlPrixCalories("bowlacai", personnes)
+      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauBowlAcaiColonnes, ligne) + htmlPrixCalories("bowlacai", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
     return;
   }
@@ -3812,7 +3812,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "saladepoischiches" && data.tableauSaladePoisChiches) {
     const ligne = data.tableauSaladePoisChiches.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSaladePoisChichesColonnes(ligne) + htmlPrixCalories("saladepoischiches", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauSaladePoisChichesColonnes, ligne) + htmlPrixCalories("saladepoischiches", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
     return;
   }
@@ -3820,7 +3820,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "gaspacho" && data.tableauGaspacho) {
     const ligne = data.tableauGaspacho.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGaspachoColonnes(ligne) + htmlPrixCalories("gaspacho", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauGaspachoColonnes, ligne) + htmlPrixCalories("gaspacho", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
     return;
   }
@@ -3829,7 +3829,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "curryledumes" && data.tableauCurryLegumes) {
     const ligne = data.tableauCurryLegumes.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCurryLegumesColonnes(ligne) + htmlPrixCalories("curryledumes", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauCurryLegumesColonnes, ligne) + htmlPrixCalories("curryledumes", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
     return;
   }
@@ -3838,7 +3838,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "smoothiebowl" && data.tableauSmoothie) {
     const ligne = data.tableauSmoothie.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + htmlTableauSmoothieColonnes(ligne) + htmlPrixCalories("smoothiebowl", personnes)
+      ? `<h3>${personnes} bol${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauSmoothieColonnes, ligne) + htmlPrixCalories("smoothiebowl", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
     return;
   }
@@ -3846,7 +3846,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "yaourt" && data.tableauYaourt) {
     const ligne = data.tableauYaourt.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} yaourt${personnes > 1 ? "s" : ""}</h3>` + htmlTableauYaourtColonnes(ligne) + htmlPrixCalories("yaourt", personnes)
+      ? `<h3>${personnes} yaourt${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauYaourtColonnes, ligne) + htmlPrixCalories("yaourt", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
     return;
   }
@@ -3855,7 +3855,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "pancakes" && data.tableauPancakes) {
     const ligne = data.tableauPancakes.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} pancake${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPancakesColonnes(ligne) + htmlPrixCalories("pancakes", personnes)
+      ? `<h3>${personnes} pancake${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauPancakesColonnes, ligne) + htmlPrixCalories("pancakes", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
     return;
   }
@@ -3863,7 +3863,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "muffins" && data.tableauMuffins) {
     const ligne = data.tableauMuffins.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} muffin${personnes > 1 ? "s" : ""}</h3>` + htmlTableauMuffinsColonnes(ligne) + htmlPrixCalories("muffins", personnes)
+      ? `<h3>${personnes} muffin${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauMuffinsColonnes, ligne) + htmlPrixCalories("muffins", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–24).</p>`;
     return;
   }
@@ -3871,7 +3871,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "croquemonsieur" && data.tableauCroques) {
     const ligne = data.tableauCroques.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} croque${personnes > 1 ? "s" : ""}-monsieur</h3>` + htmlTableauCroquesColonnes(ligne) + htmlPrixCalories("croquemonsieur", personnes)
+      ? `<h3>${personnes} croque${personnes > 1 ? "s" : ""}-monsieur</h3>` + renduComplet(htmlTableauCroquesColonnes, ligne) + htmlPrixCalories("croquemonsieur", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
     return;
   }
@@ -3890,7 +3890,7 @@ function calculer(recetteArg, personnesArg) {
     const cfg  = saladesTables[recette];
     const ligne = data[cfg.table].find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + renduComplet(cfg.fn, ligne) + htmlPrixCalories(recette, personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
     return;
   }
@@ -3899,7 +3899,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "tiramisu" && data.tableauTiramisu) {
     const ligne = data.tableauTiramisu.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTiramisuColonnes(ligne) + htmlPrixCalories("tiramisu", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauTiramisuColonnes, ligne) + htmlPrixCalories("tiramisu", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
     return;
   }
@@ -3908,7 +3908,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "flan" && data.tableauFlan) {
     const ligne = data.tableauFlan.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauFlanColonnes(ligne) + htmlPrixCalories("flan", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauFlanColonnes, ligne) + htmlPrixCalories("flan", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
     return;
   }
@@ -3916,7 +3916,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "clafoutis" && data.tableauClafoutis) {
     const ligne = data.tableauClafoutis.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauClafoutisColonnes(ligne) + htmlPrixCalories("clafoutis", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauClafoutisColonnes, ligne) + htmlPrixCalories("clafoutis", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
     return;
   }
@@ -3924,7 +3924,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "tarteaupommes" && data.tableauTartePommes) {
     const ligne = data.tableauTartePommes.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTartePommesColonnes(ligne) + htmlPrixCalories("tarteaupommes", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauTartePommesColonnes, ligne) + htmlPrixCalories("tarteaupommes", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 12.</p>`;
     return;
   }
@@ -3935,7 +3935,7 @@ function calculer(recetteArg, personnesArg) {
     const cfg = nRT[recette];
     const ligne = data[cfg.table].find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + renduComplet(cfg.fn, ligne) + htmlPrixCalories(recette, personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
     return;
   }
@@ -3981,7 +3981,7 @@ function calculer(recetteArg, personnesArg) {
     const cfg = cocktailsTables[recette];
     const ligne = data[cfg.table].find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      ? `<h3>${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + renduComplet(cfg.fn, ligne) + htmlPrixCalories(recette, personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
     return;
   }
@@ -3990,7 +3990,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "parisbrestreinterpretation" && data.tableauParisBrest) {
     const ligne = data.tableauParisBrest.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauParisBrestColonnes(ligne) + htmlPrixCalories("parisbrestreinterpretation", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauParisBrestColonnes, ligne) + htmlPrixCalories("parisbrestreinterpretation", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
     return;
   }
@@ -3999,7 +3999,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "saumongravlax" && data.tableauGravlax) {
     const ligne = data.tableauGravlax.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauGravlaxColonnes(ligne) + htmlPrixCalories("saumongravlax", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauGravlaxColonnes, ligne) + htmlPrixCalories("saumongravlax", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
     return;
   }
@@ -4007,7 +4007,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "verrinetiramisu" && data.tableauVerrineTiramisu) {
     const ligne = data.tableauVerrineTiramisu.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} verrine${personnes > 1 ? "s" : ""}</h3>` + htmlTableauVerrineTiramisuColonnes(ligne) + htmlPrixCalories("verrinetiramisu", personnes)
+      ? `<h3>${personnes} verrine${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauVerrineTiramisuColonnes, ligne) + htmlPrixCalories("verrinetiramisu", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
     return;
   }
@@ -4015,7 +4015,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "potaufeu" && data.tableauPotAuFeu) {
     const ligne = data.tableauPotAuFeu.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauPotAuFeuColonnes(ligne) + htmlPrixCalories("potaufeu", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauPotAuFeuColonnes, ligne) + htmlPrixCalories("potaufeu", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 15.</p>`;
     return;
   }
@@ -4039,7 +4039,7 @@ function calculer(recetteArg, personnesArg) {
     const cfg = mondeClassiquesTables[recette];
     const ligne = data[cfg.table].find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + renduComplet(cfg.fn, ligne) + htmlPrixCalories(recette, personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 2 et 12.</p>`;
     return;
   }
@@ -4059,7 +4059,7 @@ function calculer(recetteArg, personnesArg) {
     const cfg = hellofreshTables[recette];
     const ligne = data[cfg.table].find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + cfg.fn(ligne) + htmlPrixCalories(recette, personnes)
+      ? `<h3>Pour ${personnes} ${cfg.label}${personnes > 1 ? "s" : ""}</h3>` + renduComplet(cfg.fn, ligne) + htmlPrixCalories(recette, personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 1 et 6.</p>`;
     return;
   }
@@ -4068,7 +4068,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "boeufbourguignon" && data.tableauBoeuf) {
     const ligne = data.tableauBoeuf.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauBoeufColonnes(ligne) + htmlPrixCalories("boeufbourguignon", personnes)
+      ? `<h3>Pour ${personnes} personnes</h3>` + renduComplet(htmlTableauBoeufColonnes, ligne) + htmlPrixCalories("boeufbourguignon", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
     return;
   }
@@ -4076,7 +4076,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "gratindauphinois" && data.tableauGratin) {
     const ligne = data.tableauGratin.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauGratinColonnes(ligne) + htmlPrixCalories("gratindauphinois", personnes)
+      ? `<h3>Pour ${personnes} personnes</h3>` + renduComplet(htmlTableauGratinColonnes, ligne) + htmlPrixCalories("gratindauphinois", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
     return;
   }
@@ -4084,7 +4084,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "cremebrulee" && data.tableauCremebrulee) {
     const ligne = data.tableauCremebrulee.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} ramequin${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCremeBruleeColonnes(ligne) + htmlPrixCalories("cremebrulee", personnes)
+      ? `<h3>${personnes} ramequin${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauCremeBruleeColonnes, ligne) + htmlPrixCalories("cremebrulee", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10.</p>`;
     return;
   }
@@ -4092,7 +4092,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "mousseauchocolat" && data.tableauMousse) {
     const ligne = data.tableauMousse.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauMousseColonnes(ligne) + htmlPrixCalories("mousseauchocolat", personnes)
+      ? `<h3>Pour ${personnes} personnes</h3>` + renduComplet(htmlTableauMousseColonnes, ligne) + htmlPrixCalories("mousseauchocolat", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
     return;
   }
@@ -4100,7 +4100,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "ileflottante" && data.tableauIleFlottante) {
     const ligne = data.tableauIleFlottante.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauIleFlottanteColonnes(ligne) + htmlPrixCalories("ileflottante", personnes)
+      ? `<h3>Pour ${personnes} personnes</h3>` + renduComplet(htmlTableauIleFlottanteColonnes, ligne) + htmlPrixCalories("ileflottante", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
     return;
   }
@@ -4108,7 +4108,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "bananabread" && data.tableauBananaBread) {
     const ligne = data.tableauBananaBread.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} tranches</h3>` + htmlTableauBananaBreadColonnes(ligne) + htmlPrixCalories("bananabread", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauBananaBreadColonnes, ligne) + htmlPrixCalories("bananabread", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10.</p>`;
     return;
   }
@@ -4116,7 +4116,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "granola" && data.tableauGranola) {
     const ligne = data.tableauGranola.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} portions</h3>` + htmlTableauGranolaColonnes(ligne) + htmlPrixCalories("granola", personnes)
+      ? `<h3>Pour ${personnes} portions</h3>` + renduComplet(htmlTableauGranolaColonnes, ligne) + htmlPrixCalories("granola", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10.</p>`;
     return;
   }
@@ -4124,7 +4124,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "houmous" && data.tableauHoumous) {
     const ligne = data.tableauHoumous.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personnes</h3>` + htmlTableauHoumousColonnes(ligne) + htmlPrixCalories("houmous", personnes)
+      ? `<h3>Pour ${personnes} personnes</h3>` + renduComplet(htmlTableauHoumousColonnes, ligne) + htmlPrixCalories("houmous", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Choisir entre 4 et 10 personnes.</p>`;
     return;
   }
@@ -4133,7 +4133,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "risotto" && data.tableauRisotto) {
     const ligne = data.tableauRisotto.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauRisottoColonnes(ligne) + htmlPrixCalories("risotto", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauRisottoColonnes, ligne) + htmlPrixCalories("risotto", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
     return;
   }
@@ -4141,7 +4141,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "fondantchocolat" && data.tableauFondant) {
     const ligne = data.tableauFondant.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} fondant${personnes > 1 ? "s" : ""}</h3>` + htmlTableauFondantColonnes(ligne) + htmlPrixCalories("fondantchocolat", personnes)
+      ? `<h3>${personnes} fondant${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauFondantColonnes, ligne) + htmlPrixCalories("fondantchocolat", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
     return;
   }
@@ -4149,7 +4149,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "madeleine" && data.tableauMadeleine) {
     const ligne = data.tableauMadeleine.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} madeleine${personnes > 1 ? "s" : ""}</h3>` + htmlTableauMadeleineColonnes(ligne) + htmlPrixCalories("madeleine", personnes)
+      ? `<h3>${personnes} madeleine${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauMadeleineColonnes, ligne) + htmlPrixCalories("madeleine", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–20).</p>`;
     return;
   }
@@ -4157,7 +4157,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "veloutelegumes" && data.tableauVeloute) {
     const ligne = data.tableauVeloute.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauVelouteLegumesColonnes(ligne) + htmlPrixCalories("veloutelegumes", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauVelouteLegumesColonnes, ligne) + htmlPrixCalories("veloutelegumes", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–6).</p>`;
     return;
   }
@@ -4166,7 +4166,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "tartecitron" && data.tableauTarteCitron) {
     const ligne = data.tableauTarteCitron.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>${personnes} tartelette${personnes > 1 ? "s" : ""}</h3>` + htmlTableauTarteCitronColonnes(ligne) + htmlPrixCalories("tartecitron", personnes)
+      ? `<h3>${personnes} tartelette${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauTarteCitronColonnes, ligne) + htmlPrixCalories("tartecitron", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
     return;
   }
@@ -4175,7 +4175,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "saladequinoa" && data.tableauQuinoa) {
     const ligne = data.tableauQuinoa.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauQuinoaColonnes(ligne) + htmlPrixCalories("saladequinoa", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauQuinoaColonnes, ligne) + htmlPrixCalories("saladequinoa", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–8).</p>`;
     return;
   }
@@ -4184,7 +4184,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "lasagne" && data.tableauLasagne) {
     const ligne = data.tableauLasagne.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauLasagneColonnes(ligne) + htmlPrixCalories("lasagne", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauLasagneColonnes, ligne) + htmlPrixCalories("lasagne", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
     return;
   }
@@ -4199,7 +4199,7 @@ function calculer(recetteArg, personnesArg) {
       </button>`).join("");
     document.getElementById("resultat").innerHTML =
       `<div class="brioche-choix">${boutons}</div>` +
-      (ligne ? `<h3>${ligne.label}</h3>` + htmlTableauBriocheColonnes(ligne) + htmlPrixCalories("brioche", personnes) : "");
+      (ligne ? `<h3>${ligne.label}</h3>` + renduComplet(htmlTableauBriocheColonnes, ligne) + htmlPrixCalories("brioche", personnes) : "");
     return;
   }
 
@@ -4207,7 +4207,7 @@ function calculer(recetteArg, personnesArg) {
   if (recette === "crepes" && data.tableauPersonnes) {
     const ligne = data.tableauPersonnes.find(l => l.nb === personnes);
     document.getElementById("resultat").innerHTML = ligne
-      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + htmlTableauCrepesColonnes(ligne) + htmlPrixCalories("crepes", personnes)
+      ? `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` + renduComplet(htmlTableauCrepesColonnes, ligne) + htmlPrixCalories("crepes", personnes)
       : `<p style="text-align:center;color:#ff8fb3;">Nombre hors tableau (1–10).</p>`;
     return;
   }
