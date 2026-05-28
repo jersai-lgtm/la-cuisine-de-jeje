@@ -54,21 +54,21 @@ const recettes = {
     emoji: "🥞",
     description: "Des crêpes légères et dorées, parfaites pour un goûter ou un dessert rapide.",
     tableauPersonnes: [
-      { nb: 1, farine: "60 g", oeufs: "1", lait: "125 ml", eau: "25 ml", beurre: "12 g", sucre: "½ c.s. (facultatif)", sel: "1 pincée", rhum: "10 ml" },
-      { nb: 2, farine: "125 g", oeufs: "2", lait: "250 ml", eau: "50 ml", beurre: "25 g", sucre: "1 c.s. (facultatif)", sel: "1 pincée", rhum: "20 ml" },
-      { nb: 3, farine: "190 g", oeufs: "3", lait: "375 ml", eau: "75 ml", beurre: "35 g", sucre: "1½ c.s. (facultatif)", sel: "1 pincée", rhum: "30 ml" },
-      { nb: 4, farine: "250 g", oeufs: "4", lait: "500 ml", eau: "100 ml", beurre: "50 g", sucre: "2 c.s. (facultatif)", sel: "1 pincée", rhum: "40 ml" },
-      { nb: 5, farine: "310 g", oeufs: "5", lait: "625 ml", eau: "125 ml", beurre: "60 g", sucre: "2½ c.s. (facultatif)", sel: "1 pincée", rhum: "50 ml" },
-      { nb: 6, farine: "375 g", oeufs: "6", lait: "750 ml", eau: "150 ml", beurre: "75 g", sucre: "3 c.s. (facultatif)", sel: "1 pincée", rhum: "60 ml" },
-      { nb: 7, farine: "440 g", oeufs: "7", lait: "875 ml", eau: "175 ml", beurre: "85 g", sucre: "3½ c.s. (facultatif)", sel: "1 pincée", rhum: "70 ml" },
-      { nb: 8, farine: "500 g", oeufs: "8", lait: "1000 ml", eau: "200 ml", beurre: "100 g", sucre: "4 c.s. (facultatif)", sel: "1 pincée", rhum: "80 ml" },
-      { nb: 9, farine: "560 g", oeufs: "9", lait: "1125 ml", eau: "225 ml", beurre: "110 g", sucre: "4½ c.s. (facultatif)", sel: "1 pincée", rhum: "90 ml" },
-      { nb: 10, farine: "625 g", oeufs: "10", lait: "1250 ml", eau: "250 ml", beurre: "125 g", sucre: "5 c.s. (facultatif)", sel: "1 pincée", rhum: "100 ml" },
-      { nb: 11, farine: "688 g", lait: "1375 ml", eau: "275 ml", beurre: "138 g", sucre: "5.5 c.s. (facultatif)", sel: "2.8 pincée", rhum: "110 ml" },
-      { nb: 12, farine: "750 g", lait: "1500 ml", eau: "300 ml", beurre: "150 g", sucre: "6 c.s. (facultatif)", sel: "3 pincée", rhum: "120 ml" },
-      { nb: 13, farine: "812 g", lait: "1625 ml", eau: "325 ml", beurre: "162 g", sucre: "6.5 c.s. (facultatif)", sel: "3.2 pincée", rhum: "130 ml" },
-      { nb: 14, farine: "875 g", lait: "1750 ml", eau: "350 ml", beurre: "175 g", sucre: "7 c.s. (facultatif)", sel: "3.5 pincée", rhum: "140 ml" },
-      { nb: 15, farine: "938 g", lait: "1875 ml", eau: "375 ml", beurre: "188 g", sucre: "7.5 c.s. (facultatif)", sel: "3.8 pincée", rhum: "150 ml" }
+      { nb: 1, farine: "60 g", oeufs: "1", lait: "125 ml", eau: "25 ml", beurre: "12 g", sucre: "½ c.s. (facultatif)", sel: "1 pincée" },
+      { nb: 2, farine: "125 g", oeufs: "2", lait: "250 ml", eau: "50 ml", beurre: "25 g", sucre: "1 c.s. (facultatif)", sel: "1 pincée" },
+      { nb: 3, farine: "190 g", oeufs: "3", lait: "375 ml", eau: "75 ml", beurre: "35 g", sucre: "1½ c.s. (facultatif)", sel: "1 pincée" },
+      { nb: 4, farine: "250 g", oeufs: "4", lait: "500 ml", eau: "100 ml", beurre: "50 g", sucre: "2 c.s. (facultatif)", sel: "1 pincée" },
+      { nb: 5, farine: "310 g", oeufs: "5", lait: "625 ml", eau: "125 ml", beurre: "60 g", sucre: "2½ c.s. (facultatif)", sel: "1 pincée" },
+      { nb: 6, farine: "375 g", oeufs: "6", lait: "750 ml", eau: "150 ml", beurre: "75 g", sucre: "3 c.s. (facultatif)", sel: "1 pincée" },
+      { nb: 7, farine: "440 g", oeufs: "7", lait: "875 ml", eau: "175 ml", beurre: "85 g", sucre: "3½ c.s. (facultatif)", sel: "1 pincée" },
+      { nb: 8, farine: "500 g", oeufs: "8", lait: "1000 ml", eau: "200 ml", beurre: "100 g", sucre: "4 c.s. (facultatif)", sel: "1 pincée" },
+      { nb: 9, farine: "560 g", oeufs: "9", lait: "1125 ml", eau: "225 ml", beurre: "110 g", sucre: "4½ c.s. (facultatif)", sel: "1 pincée" },
+      { nb: 10, farine: "625 g", oeufs: "10", lait: "1250 ml", eau: "250 ml", beurre: "125 g", sucre: "5 c.s. (facultatif)", sel: "1 pincée" },
+      { nb: 11, farine: "688 g", lait: "1375 ml", eau: "275 ml", beurre: "138 g", sucre: "5.5 c.s. (facultatif)", sel: "2.8 pincée" },
+      { nb: 12, farine: "750 g", lait: "1500 ml", eau: "300 ml", beurre: "150 g", sucre: "6 c.s. (facultatif)", sel: "3 pincée" },
+      { nb: 13, farine: "812 g", lait: "1625 ml", eau: "325 ml", beurre: "162 g", sucre: "6.5 c.s. (facultatif)", sel: "3.2 pincée" },
+      { nb: 14, farine: "875 g", lait: "1750 ml", eau: "350 ml", beurre: "175 g", sucre: "7 c.s. (facultatif)", sel: "3.5 pincée" },
+      { nb: 15, farine: "938 g", lait: "1875 ml", eau: "375 ml", beurre: "188 g", sucre: "7.5 c.s. (facultatif)", sel: "3.8 pincée" }
     ],
     ingredients: {
       "Farine (g)": 250,
@@ -80,8 +80,8 @@ const recettes = {
     etapes: [
       { icone: "🌾", titre: "Farine + sel", detail: "Mélangez la farine et le sel dans un saladier.", badge: null },
       { icone: "🥚", titre: "Ajouter les œufs", detail: "Ajoutez les œufs un à un en mélangeant bien après chaque ajout.", badge: null },
-      { icone: "🥛", titre: "Lait + eau", detail: "Versez progressivement le lait et l'eau (ou la bière) tout en remuant pour éviter les grumeaux.", badge: null },
-      { icone: "🧈", titre: "Beurre + arôme", detail: "Incorporez le beurre fondu et, si vous le souhaitez, le sucre et l'arôme (rhum, fleur d'oranger, etc.).", badge: null },
+      { icone: "🥛", titre: "Lait + eau", detail: "Versez progressivement le lait et l'eau tout en remuant pour éviter les grumeaux.", badge: null },
+      { icone: "🧈", titre: "Beurre + arôme", detail: "Incorporez le beurre fondu et, si vous le souhaitez, le sucre et un arôme (vanille, fleur d'oranger, zeste de citron).", badge: null },
       { icone: "❄️", titre: "Repos au frigo", detail: "Laissez reposer la pâte au moins 1 heure au réfrigérateur. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ Repos : 1 h minimum" },
       { icone: "🍳", titre: "Cuire les crêpes", detail: "Faites cuire les crêpes à feu moyen dans une poêle légèrement graissée.", badge: null }
     ]
