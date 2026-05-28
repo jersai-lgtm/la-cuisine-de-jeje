@@ -1171,6 +1171,33 @@ const INGREDIENTS_LABELS = {
   fleurdesel: "🧂 Fleur de sel", crème: "🥛 Crème fraîche",
   patebrisee: "🥧 Pâte brisée", fromagerape: "🧀 Fromage râpé",
   emmental: "🧀 Emmental", huiledolive: "🫒 Huile d'olive",
+  // === Sprint final — Allemagne, Espagne, Mexique, Inde, Japon, Chine, Russie, Portugal, Hongrie ===
+  bratwurst: "🌭 Saucisses bratwurst", ketchup: "🍅 Ketchup",
+  currypoudre: "🌶️ Curry en poudre", paprikaFume: "🌶️ Paprika fumé",
+  paprikafume: "🌶️ Paprika fumé", bicarbonate: "🧂 Bicarbonate",
+  grossel: "🧂 Gros sel", raisinssecs: "🍇 Raisins secs",
+  pommeterre: "🥔 Pommes de terre", boeufbourguignon: "🥩 Bœuf à mijoter",
+  betteraves: "🟣 Betteraves", chouvert: "🥬 Chou vert",
+  cremefraiche: "🥛 Crème fraîche", boeufhache: "🥩 Bœuf haché",
+  porchache: "🐷 Porc haché", moruedessale: "🐟 Morue dessalée",
+  jalapeno: "🌶️ Jalapeños", crema: "🥛 Crema mexicaine",
+  laitconcentre: "🥛 Lait concentré sucré", laitevapore: "🥛 Lait évaporé",
+  fruitsrouges: "🫐 Fruits rouges", epicesmasala: "🌶️ Garam masala",
+  pouletcuisses: "🍗 Cuisses de poulet", saucesoja: "🥢 Sauce soja",
+  sauceaussoja: "🥢 Sauce soja", sake: "🍶 Sake",
+  matcha: "🍵 Matcha (poudre)", laitamande: "🥛 Lait d'amande",
+  eauchaude: "💧 Eau chaude", tofusoie: "🟩 Tofu soyeux",
+  doubanjiang: "🌶️ Doubanjiang (pâte sichuanaise)", ailechalote: "🧅 Ail-échalote",
+  poivresichuan: "🌶️ Poivre du Sichuan", huilepiment: "🌶️ Huile pimentée",
+  huilesame: "🌰 Huile de sésame", feuilleswonton: "🥟 Feuilles de wonton",
+  charcuterie: "🥩 Charcuterie", fromageraclette: "🧀 Fromage à raclette",
+  oignonsblanc: "🧅 Petits oignons", saladeverte: "🥗 Salade verte",
+  pain: "🥖 Pain", balsamique: "🍶 Vinaigre balsamique",
+  acaipuree: "🫐 Purée d'açaí", cocoflocons: "🥥 Flocons de coco",
+  grainepain: "🌾 Graines (chia, lin)", amande: "🥜 Amandes", beurredamande: "🥜 Beurre d'amande",
+  huileolive: "🫒 Huile d'olive", sucreroux: "🍯 Sucre roux",
+  sucrecasso: "🍯 Sucre cassonade", jaunesoeufs: "🥚 Jaunes d'œufs",
+  zestecitron: "🍋 Zeste de citron", crudités: "🥕 Crudités",
   gingembre: "🫚 Gingembre", galanga: "🫚 Galanga", anis: "⭐ Anis étoilé",
   citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille", fumee: "💨 Paprika fumé",
   chermoula: "🌿 Chermoula", pesto: "🌿 Pesto",
@@ -3573,8 +3600,10 @@ const MOTS_BEBE = [
   "jambon cru","prosciutto","nduja","saucisson","bresaola","coppa","salami cru",
   // Très épicé
   "harissa","piment fort","piment rouge","sauce piquante","tabasco",
-  // Alcool
+  // Alcool — versions "au xxx" (description) ET versions sèches (ingrédient)
   "flambé","flambée","flamber","au rhum","au cognac","au whisky","alcool",
+  "rhum","cognac","whisky","vodka","tequila","kirsch","amaretto","marsala",
+  "vinblanc","vinrouge","vinrose","saké","sake",
   // Moules/coquillages (risque allergie) — "moules" au pluriel pour éviter "moule à tarte/gâteau"
   "moules","huitre","huître","palourde","coquillage"
 ];
@@ -3672,6 +3701,19 @@ const ETIQUETTES_FAMILLE = {
   "au rhum":          { bebe: "⛔ Rhum — alcool, pas pour bébé",         enfant: "⚠️ Contient du rhum (cuit)" },
   "au cognac":        { bebe: "⛔ Cognac — alcool, pas pour bébé",       enfant: "⚠️ Contient du cognac (cuit)" },
   "au whisky":        { bebe: "⛔ Whisky — alcool, pas pour bébé",       enfant: "⚠️ Contient du whisky (cuit)" },
+  "rhum":             { bebe: "⛔ Rhum — alcool, pas pour bébé",         enfant: "⚠️ Contient du rhum (cuit)" },
+  "cognac":           { bebe: "⛔ Cognac — alcool, pas pour bébé",       enfant: "⚠️ Contient du cognac (cuit)" },
+  "whisky":           { bebe: "⛔ Whisky — alcool, pas pour bébé",       enfant: "⚠️ Contient du whisky (cuit)" },
+  "vodka":            { bebe: "⛔ Vodka — alcool, pas pour bébé",        enfant: "⚠️ Contient de la vodka" },
+  "tequila":          { bebe: "⛔ Tequila — alcool, pas pour bébé",      enfant: "⚠️ Contient de la tequila" },
+  "kirsch":           { bebe: "⛔ Kirsch — alcool, pas pour bébé",       enfant: "⚠️ Contient du kirsch (cuit)" },
+  "amaretto":         { bebe: "⛔ Amaretto — alcool, pas pour bébé",     enfant: "⚠️ Contient de l'amaretto" },
+  "marsala":          { bebe: "⛔ Marsala — alcool, pas pour bébé",      enfant: "⚠️ Contient du marsala (cuit)" },
+  "vinblanc":         { bebe: "⛔ Vin blanc — alcool, pas pour bébé",    enfant: "⚠️ Contient du vin blanc (cuit)" },
+  "vinrouge":         { bebe: "⛔ Vin rouge — alcool, pas pour bébé",    enfant: "⚠️ Contient du vin rouge (cuit)" },
+  "vinrose":          { bebe: "⛔ Vin rosé — alcool, pas pour bébé",     enfant: "⚠️ Contient du vin rosé (cuit)" },
+  "saké":             { bebe: "⛔ Saké — alcool, pas pour bébé",         enfant: "⚠️ Contient du saké (cuit)" },
+  "sake":             { bebe: "⛔ Saké — alcool, pas pour bébé",         enfant: "⚠️ Contient du saké (cuit)" },
   "alcool":           { bebe: "⛔ Contient de l'alcool",                 enfant: "⚠️ Contient de l'alcool" },
   // Soupe spéciale
   "bouillabaisse":    { bebe: "⛔ Bouillabaisse — poisson, arêtes",      enfant: "⚠️ Bouillabaisse — gare aux arêtes" },
@@ -3683,7 +3725,17 @@ function getNiveauFamille(cle) {
   if (!profil) return null;
   if (!profil.hasBebe && !profil.hasEnfant) return null;
   const r = recettes?.[cle];
+  // Texte = clé + description + INGRÉDIENTS du tableau
+  // Sans ça, des recettes comme Smoothie Bowl (contient du miel) ne sont pas détectées
   let texte = (cle + " " + (r?.description || "")).toLowerCase();
+  if (r) {
+    Object.keys(r).forEach(k => {
+      if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k][0]) {
+        // Ajouter les noms des colonnes (= ingrédients)
+        texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
+      }
+    });
+  }
   // Garde : une boisson sans alcool (mocktail / virgin / "sans alcool") ne doit pas
   // être flaggée à cause du mot "alcool" présent dans sa description ("sans alcool")
   const estSansAlcool = /sans alcool|mocktail|virgin/.test(texte) || /mocktail|virgin/.test(cle.toLowerCase());
