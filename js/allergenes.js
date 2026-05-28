@@ -116,20 +116,44 @@ function appliquerPreferencesVisuelles() {
       carte.classList.remove('carte-grisee');
     }
 
-    // Badge famille — discret, non bloquant
+    // Badge famille — bordure rouge (bébé) ou orange (enfant) + badge clair + tooltip précis
     const existingFam = carte.querySelector('.carte-badge-famille');
     if (existingFam) existingFam.remove();
+    carte.classList.remove('carte-alerte-bebe', 'carte-alerte-enfant');
 
-    if (typeof getAdaptationFamille === 'function') {
+    if (typeof getNiveauFamille === 'function') {
       const cle = carte.getAttribute('onclick')?.match(/'(\w+)'/)?.[1];
       if (cle) {
-        const adapt = getAdaptationFamille(cle);
-        if (adapt) {
+        const niv = getNiveauFamille(cle);
+        if (niv) {
           const badgeFam = document.createElement('div');
           badgeFam.className = 'carte-badge-famille';
-          badgeFam.title = adapt.label;
-          badgeFam.textContent = adapt.badge;
+          const detailBebe = niv.niveau === 'bebe' ? ' — déconseillé bébé < 1 an' : ' — déconseillé enfant';
+          badgeFam.title = (niv.raison || niv.mot || '') + detailBebe;
+          badgeFam.textContent = niv.niveau === 'bebe' ? '🍼' : '🌶️';
           carte.appendChild(badgeFam);
+          // Bordure d'alerte rouge (bébé) ou orange (enfant)
+          carte.classList.add(niv.niveau === 'bebe' ? 'carte-alerte-bebe' : 'carte-alerte-enfant');
+        }
+      }
+    }
+
+    // Badge niveau (si recette au-dessus du niveau utilisateur)
+    const existingNiv = carte.querySelector('.carte-badge-niveau');
+    if (existingNiv) existingNiv.remove();
+    carte.classList.remove('carte-alerte-niveau');
+
+    if (typeof niveauTropEleve === 'function') {
+      const cle = carte.getAttribute('onclick')?.match(/'(\w+)'/)?.[1];
+      if (cle) {
+        const trop = niveauTropEleve(cle);
+        if (trop) {
+          const badgeNiv = document.createElement('span');
+          badgeNiv.className = 'carte-badge-niveau';
+          badgeNiv.title = `${trop.raison} — au-dessus de votre niveau (${trop.niveauUser})`;
+          badgeNiv.textContent = trop.niveauRecette === 'eleve' ? '⭐⭐⭐' : '⭐⭐';
+          carte.appendChild(badgeNiv);
+          carte.classList.add('carte-alerte-niveau');
         }
       }
     }
