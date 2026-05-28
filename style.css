@@ -1789,3 +1789,39 @@ select, input[type="number"] {
   border-radius: 4px;
   font-size: 12px;
 }
+
+/* ============================================================ */
+/* Badges sur les cartes du catalogue                            */
+/* ============================================================ */
+.carte {
+  position: relative;
+}
+.carte-badge-niveau {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255,153,0,.9);
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 10px;
+  z-index: 3;
+  pointer-events: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,.4);
+}
+.carte-badge-famille {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0,0,0,.7);
+  font-size: 14px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,.4);
+}
