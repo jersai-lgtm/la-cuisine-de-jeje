@@ -1857,3 +1857,21 @@ select, input[type="number"] {
   color: #d97500;
   border: 1.5px solid #ff9900;
 }
+
+/* ============================================================ */
+/* Responsive étiquette famille — sur mobile, l'image est plus  */
+/* petite, donc on remonte l'étiquette                          */
+/* ============================================================ */
+@media (max-width: 600px) {
+  .carte-etiquette-famille {
+    bottom: 100px;       /* Mobile : image plus petite, on remonte */
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
+@media (max-width: 480px) {
+  .carte-etiquette-famille {
+    bottom: 95px;
+    font-size: 10px;
+  }
+}
