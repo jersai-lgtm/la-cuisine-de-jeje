@@ -1219,6 +1219,7 @@ const INGREDIENTS_LABELS = {
   ganacheoufruit: "🍫 Ganache ou confiture", arome: "✨ Arôme (vanille...)",
   levureboulanger: "🍞 Levure boulangère", cremechantilly: "🥛 Crème chantilly",
   jauneoeuf: "🥚 Jaune d'œuf", tabasco: "🌶️ Tabasco",
+  farinetamisee: "🌾 Farine tamisée", chocolatnoir: "🍫 Chocolat noir", jusdecitron: "🍋 Jus de citron",
   gingembre: "🫚 Gingembre", galanga: "🫚 Galanga", anis: "⭐ Anis étoilé",
   citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille", fumee: "💨 Paprika fumé",
   chermoula: "🌿 Chermoula", pesto: "🌿 Pesto",

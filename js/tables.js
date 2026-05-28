@@ -1260,6 +1260,7 @@ function choisirRecette(nom) {
     "carbonadeflamande":     "Carbonade Flamande",
     "macarons":              "Macarons Parisiens",
     "babaaurhum":            "Baba au Rhum",
+    "cakeBananeChoco":       "Cake Banane Chocolat",
   };
   const nomPropre = nomsAffichage[nom] || (nom.charAt(0).toUpperCase() + nom.slice(1));
 

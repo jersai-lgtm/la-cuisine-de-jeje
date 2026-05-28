@@ -13662,6 +13662,41 @@ const recettes = {
       { icone: "🍽️", titre: "Dressage classique", detail: "Sur assiettes : poser un baba ouvert en deux dans la longueur. Pocher GÉNÉREUSEMENT de chantilly entre les deux moitiés (ou en quenelles). Verser EN PLUS un peu de rhum supplémentaire à table (la touche pro). Servir IMMÉDIATEMENT.", badge: "⏱ 3 min" },
       { icone: "🥃", titre: "Service", detail: "Boisson : champagne demi-sec, vin doux (Sauternes), café. ATTENTION : très alcoolisé — pas pour enfants ni femmes enceintes. À déguster lentement. Délicieux !", badge: null },
     ]
-  },
+  }
+,
+  cakeBananeChoco: {
+    cat: "desserts", pays: "france",
+    base: 4,
+    temps: "1h05",
+    niveau: "⭐ Facile",
+    emoji: "🍌",
+    description: "Cake Banane Chocolat — la recette de Jéjé. Moelleux et fondant, parfumé au gingembre, avec des morceaux de banane et du chocolat noir. Le goûter familial par excellence.",
+    tableauCakeBananeChoco: [
+      { nb:  1, farinetamisee: "42 g", sucre: "21 g", banane: "⅓", beurre: "30 g", levure: "¼ sachet", gingembre: "¼ pincée", chocolatnoir: "21 g", oeuf: "½", jusdecitron: "¼ c.à.s" },
+      { nb:  2, farinetamisee: "84 g", sucre: "42 g", banane: "⅔", beurre: "59 g", levure: "¼ sachet", gingembre: "⅓ pincée", chocolatnoir: "42 g", oeuf: "1", jusdecitron: "⅓ c.à.s" },
+      { nb:  3, farinetamisee: "125 g", sucre: "63 g", banane: "1", beurre: "88 g", levure: "¼ sachet", gingembre: "½ pincée", chocolatnoir: "63 g", oeuf: "1½", jusdecitron: "½ c.à.s" },
+      { nb:  4, farinetamisee: "167 g", sucre: "84 g", banane: "1½", beurre: "117 g", levure: "¼ sachet", gingembre: "⅔ pincée", chocolatnoir: "84 g", oeuf: "2", jusdecitron: "⅔ c.à.s" },
+      { nb:  5, farinetamisee: "209 g", sucre: "105 g", banane: "2", beurre: "146 g", levure: "½ sachet", gingembre: "⅚ pincée", chocolatnoir: "105 g", oeuf: "2½", jusdecitron: "⅚ c.à.s" },
+      { nb:  6, farinetamisee: "251 g", sucre: "126 g", banane: "2½", beurre: "175 g", levure: "½ sachet", gingembre: "1 pincée", chocolatnoir: "126 g", oeuf: "3", jusdecitron: "1 c.à.s" },
+      { nb:  7, farinetamisee: "293 g", sucre: "147 g", banane: "3", beurre: "204 g", levure: "½ sachet", gingembre: "1⅙ pincées", chocolatnoir: "147 g", oeuf: "3½", jusdecitron: "1⅙ c.à.s" },
+      { nb:  8, farinetamisee: "335 g", sucre: "168 g", banane: "3½", beurre: "233 g", levure: "¾ sachet", gingembre: "1⅓ pincées", chocolatnoir: "168 g", oeuf: "4", jusdecitron: "1⅓ c.à.s" },
+      { nb:  9, farinetamisee: "377 g", sucre: "189 g", banane: "4", beurre: "262 g", levure: "¾ sachet", gingembre: "1½ pincées", chocolatnoir: "189 g", oeuf: "4½", jusdecitron: "1½ c.à.s" },
+      { nb: 10, farinetamisee: "419 g", sucre: "210 g", banane: "4½", beurre: "291 g", levure: "¾ sachet", gingembre: "1⅔ pincées", chocolatnoir: "210 g", oeuf: "5", jusdecitron: "1⅔ c.à.s" },
+      { nb: 11, farinetamisee: "461 g", sucre: "231 g", banane: "5", beurre: "320 g", levure: "1 sachet", gingembre: "1⅚ pincées", chocolatnoir: "231 g", oeuf: "5½", jusdecitron: "1⅚ c.à.s" },
+      { nb: 12, farinetamisee: "503 g", sucre: "252 g", banane: "5½", beurre: "349 g", levure: "1 sachet", gingembre: "2 pincées", chocolatnoir: "252 g", oeuf: "6", jusdecitron: "2 c.à.s" },
+      { nb: 13, farinetamisee: "545 g", sucre: "273 g", banane: "6", beurre: "378 g", levure: "1 sachet", gingembre: "2⅙ pincées", chocolatnoir: "273 g", oeuf: "6½", jusdecitron: "2⅙ c.à.s" },
+      { nb: 14, farinetamisee: "587 g", sucre: "294 g", banane: "6½", beurre: "407 g", levure: "1¼ sachets", gingembre: "2⅓ pincées", chocolatnoir: "294 g", oeuf: "7", jusdecitron: "2⅓ c.à.s" },
+      { nb: 15, farinetamisee: "629 g", sucre: "315 g", banane: "7", beurre: "436 g", levure: "1¼ sachets", gingembre: "2½ pincées", chocolatnoir: "315 g", oeuf: "7½", jusdecitron: "2½ c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍌", titre: "Préparer les bananes", detail: "Couper les bananes dans le sens de la longueur, puis en dés. Les placer dans un saladier avec un peu de jus de citron.", badge: null },
+      { icone: "🔥", titre: "Préchauffer le four", detail: "Allumer le four à thermostat 7 (210°C).", badge: null },
+      { icone: "🧈", titre: "Mélanger beurre, sucre, levure", detail: "Placer dans une terrine le beurre ramolli, le sucre, la levure et le sel, puis mélanger. Ajouter les œufs un à un en travaillant la pâte.", badge: null },
+      { icone: "🌾", titre: "Ajouter la farine", detail: "Verser la farine d'un seul coup.", badge: null },
+      { icone: "🍫", titre: "Incorporer le reste", detail: "Ajouter le gingembre, les bananes, le jus de citron, puis le chocolat coupé en (petits) morceaux. Bien mélanger.", badge: null },
+      { icone: "⏱️", titre: "Cuisson en 2 temps", detail: "Verser dans un moule à cake beurré et cuire 15 min à thermostat 7, puis 30 min à thermostat 6 (180°C).", badge: "⏱ 45 min" },
+    ]
+  }
 
 };
