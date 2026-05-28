@@ -1834,7 +1834,7 @@ select, input[type="number"] {
 /* ============================================================ */
 .carte-etiquette-famille {
   position: absolute;
-  bottom: 88px;         /* Au-dessus du bloc info, en bas de l'image */
+  bottom: 122px;         /* Juste au-dessus du titre, chevauchant le bas de l'image */
   left: 8px;
   right: 8px;
   background: rgba(255,255,255,.97);
