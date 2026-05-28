@@ -689,17 +689,22 @@ function chargerAccueilSuggestions() {
 
   // Seed basé sur la date pour stabiliser le mélange du jour
   const seed = today.split("/").reduce((a, b) => parseInt(a) + parseInt(b), 0);
-  // Boost saisonnier : les recettes de la saison actuelle ont priorité
+  // Filtre saison STRICT : on garde uniquement les recettes
+  //   - taguées avec la saison actuelle
+  //   - OU sans tag saison (= toute l'année)
+  // Une recette taguée "hiver" ne sera donc PAS suggérée en été !
   const saisonActuelle = getSaisonActuelle();
+  pool = pool.filter(key => {
+    const saisons = recettes[key]?.saisons;
+    if (!saisons || saisons.length === 0) return true; // toute l'année
+    return saisons.includes(saisonActuelle);
+  });
+  // Mélange stable basé sur la date
   pool = pool.sort((a, b) => {
-    const saisonA = recettes[a]?.saisons?.includes(saisonActuelle) ? 1 : 0;
-    const saisonB = recettes[b]?.saisons?.includes(saisonActuelle) ? 1 : 0;
-    if (saisonA !== saisonB) return saisonB - saisonA; // saison actuelle d'abord
-    // À égalité, mélange stable basé sur la date
     const ha = (a.charCodeAt(0) * seed) % 997;
     const hb = (b.charCodeAt(0) * seed) % 997;
     return ha - hb;
-  }).slice(0, 10);
+  }).slice(0, 6);  // 6 suggestions du jour
 
   if (pool.length === 0) {
     row.innerHTML = `<div class="accueil-empty">Aucune suggestion disponible</div>`;
