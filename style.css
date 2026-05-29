@@ -766,6 +766,8 @@ select, input[type="number"] {
   border-radius: 12px;
   transition: .2s;
   font-size: 24px;
+  flex: 1;             /* v252 : chaque bouton prend la même largeur (1/4) */
+  min-width: 0;        /* permet à flex de réduire si nécessaire */
 }
 .nav-btn small { 
   font-size: 11px; 
@@ -774,10 +776,19 @@ select, input[type="number"] {
 }
 .nav-btn.active { color: #ff4d88; }
 
-/* Icône SVG (Garde-manger) — même taille que les emojis (~22px) */
+/* Wrapper de l'icône SVG — simule la hauteur d'un emoji 24px avec line-height */
+.nav-icone-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;  /* Même hauteur visuelle qu'un emoji en font-size 24px */
+  line-height: 1;
+}
+
+/* Icône SVG (Garde-manger) — taille agrandie pour matcher visuellement les emojis */
 .nav-icone-svg {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   display: block;
 }
 
@@ -788,8 +799,10 @@ select, input[type="number"] {
 
 /* Mobile : labels nav un poil plus petits pour que "Garde-manger" rentre */
 @media (max-width: 480px) {
+  .nav-btn { padding: 4px 8px; }
   .nav-btn small { font-size: 10px; }
-  .nav-icone-svg { width: 22px; height: 22px; }
+  .nav-icone-svg { width: 26px; height: 26px; }
+  .nav-icone-wrap { height: 30px; }
 }
 
 /* ==========================
@@ -4065,4 +4078,29 @@ select, input[type="number"] {
   .top10-rang { width: 28px; height: 28px; font-size: 13px; }
   .top10-emoji { font-size: 18px; }
   .top10-nom { font-size: 13px; }
+}
+
+/* =============================================================================
+   v253 — TOP DU MOIS (ingrédients de saison)
+   ============================================================================= */
+.accueil-mois-badge {
+  display: inline-block;
+  margin-top: 4px;
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(76,175,80,.3);
+}
+
+/* Le bloc Top du mois a un fond légèrement vert pour évoquer la saisonnalité */
+#accueil-mois-bloc .accueil-bloc-header h2 {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
