@@ -1487,6 +1487,8 @@ function choisirRecette(nom) {
     btnFav.setAttribute("onclick", `toggleFavori('${nom}')`);
     btnFav.textContent = (typeof estFavori === 'function' && estFavori(nom)) ? '❤️' : '🤍';
   }
+  // Bouton "J'ai cuisiné" (v240)
+  if (typeof majBoutonCuisine === "function") majBoutonCuisine(nom);
 }
 
 // Initialiser les tables globales

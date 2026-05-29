@@ -761,8 +761,31 @@ function miniCarte(key) {
   const deSaison = typeof estDeSaison === "function" && estDeSaison(key);
   const infoSaison = deSaison ? getEmojiSaison(getSaisonActuelle()) : null;
   const badgeSaison = infoSaison ? `<span class="mini-carte-saison" title="De saison : ${infoSaison.label}">${infoSaison.emoji}</span>` : "";
+  
+  // Badge Nutri-Score (positionné en haut à gauche, à l'opposé du badge famille)
+  let badgeNutri = "";
+  if (typeof calculerNutriScoreRecette === "function") {
+    // Exclure cocktails/mocktails (boissons alcoolisées/sucrées)
+    const r2 = recettes[key];
+    const isDrink = r2 && (r2.categorie === "cocktails" || r2.categorie === "mocktails");
+    if (!isDrink) {
+      const tabKey = Object.keys(r2 || {}).find(k => k.startsWith("tableau") && Array.isArray(r2[k]));
+      if (tabKey) {
+        const base = r2.base || 4;
+        const ligne = r2[tabKey].find(l => l.nb === base || l.patons === base) || r2[tabKey][0];
+        if (ligne) {
+          const ns = calculerNutriScoreRecette(ligne);
+          if (ns) {
+            badgeNutri = `<span class="mini-carte-nutri nutri-${ns.lettre}" data-lettre="${ns.lettre}" title="Nutri-Score ${ns.lettre}"></span>`;
+          }
+        }
+      }
+    }
+  }
+  
   return `<div class="mini-carte" style="${styleAlerte}" title="${titleAlerte}" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
     <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
+    ${badgeNutri}
     ${badgeFam}
     ${badgeSaison}
     ${btnRegen}
@@ -3504,71 +3527,445 @@ function resetPlanificateur() {
   sessionStorage.removeItem(STORAGE_KEY);
 }
 
-// Recherche
+// =============================================================================
+// 🔍 RECHERCHE INTELLIGENTE v239
+// =============================================================================
+// Capable de :
+//   - Détecter une CATÉGORIE ("cocktail" → filtre cocktails)
+//   - Détecter un PAYS ("italien" → filtre italie)
+//   - Détecter un RÉGIME ("vegan" → filtre vegan)
+//   - Chercher dans le NOM des recettes
+//   - Chercher dans les INGRÉDIENTS ("poulet" → recettes au poulet)
+//   - Auto-complétion (dropdown sous la barre)
+//   - Tolérance aux fautes (fuzzy matching)
+// =============================================================================
+
+// Normalise un texte : minuscule, sans accent, sans emoji
+function normalizeText(s) {
+  if (!s) return "";
+  return String(s).toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")  // accents
+    .replace(/[^a-z0-9\s]/g, " ")                       // emojis/symboles
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// === DICTIONNAIRES DE SYNONYMES ===
+const SYNONYMES_CATEGORIE = {
+  "cocktail": "cocktails", "cocktails": "cocktails", "alcool": "cocktails", "boisson alcoolisee": "cocktails", "drink": "cocktails",
+  "mocktail": "mocktails", "mocktails": "mocktails", "sans alcool": "mocktails", "soft": "mocktails",
+  "salade": "salades", "salades": "salades",
+  "dessert": "desserts", "desserts": "desserts", "sucre": "desserts", "patisserie": "desserts", "patisseries": "desserts", "gateau": "desserts", "gateaux": "desserts",
+  "soupe": "soupes", "soupes": "soupes", "veloute": "soupes", "veloutes": "soupes", "potage": "soupes",
+  "entree": "entrees", "entrees": "entrees", "amuse-bouche": "entrees", "apero": "entrees", "tapas": "entrees",
+  "healthy": "healthy", "sain": "healthy", "saine": "healthy", "leger": "healthy", "diet": "healthy",
+  "brunch": "brunch", "petit dej": "brunch", "petit-dej": "brunch", "dejeuner": "brunch", "matin": "brunch", "breakfast": "brunch",
+  "encas": "encas", "snack": "encas", "snacks": "encas", "casse-croute": "encas", "grignotage": "encas",
+  "pizza": "pizzas", "pizzas": "pizzas",
+  "boulangerie": "boulangerie", "pain": "boulangerie", "pains": "boulangerie", "viennoiserie": "boulangerie", "viennoiseries": "boulangerie", "brioche": "boulangerie",
+  "plat": "plats", "plats": "plats", "principal": "plats", "main": "plats",
+};
+
+const SYNONYMES_PAYS = {
+  "france": "france", "francais": "france", "francaise": "france", "francaises": "france", "francais": "france",
+  "italie": "italie", "italien": "italie", "italienne": "italie", "italiens": "italie", "italiennes": "italie",
+  "japon": "japon", "japonais": "japon", "japonaise": "japon", "asiatique": "japon",
+  "thailande": "thailande", "thai": "thailande", "thailandais": "thailande", "thailandaise": "thailande",
+  "mexique": "mexique", "mexicain": "mexique", "mexicaine": "mexique",
+  "inde": "inde", "indien": "inde", "indienne": "inde",
+  "liban": "liban", "libanais": "liban", "libanaise": "liban",
+  "grece": "grece", "grec": "grece", "grecque": "grece",
+  "chine": "chine", "chinois": "chine", "chinoise": "chine",
+  "usa": "usa", "americain": "usa", "americaine": "usa", "etats-unis": "usa", "etatsunis": "usa",
+  "espagne": "espagne", "espagnol": "espagne", "espagnole": "espagne",
+  "maroc": "maroc", "marocain": "maroc", "marocaine": "maroc",
+  "cuba": "cuba", "cubain": "cuba", "cubaine": "cuba",
+  "vietnam": "vietnam", "vietnamien": "vietnam", "vietnamienne": "vietnam",
+  "senegal": "senegal", "senegalais": "senegal", "senegalaise": "senegal",
+  "pologne": "pologne", "polonais": "pologne", "polonaise": "pologne",
+  "coree": "coree", "coreen": "coree", "coreenne": "coree",
+  "hongrie": "hongrie", "hongrois": "hongrie", "hongroise": "hongrie",
+  "tibet": "tibet", "tibetain": "tibet", "tibetaine": "tibet",
+  "bresil": "bresil", "bresilien": "bresil", "bresilienne": "bresil",
+  "indonesie": "indonesie", "indonesien": "indonesie", "indonesienne": "indonesie",
+  "haiti": "haiti", "haitien": "haiti", "haitienne": "haiti",
+};
+
+// Régimes (clés correspondent à allergenes.js)
+const SYNONYMES_REGIME = {
+  "vegan": "vegan", "vegane": "vegan", "vegetalien": "vegan", "vegetalienne": "vegan",
+  "vege": "vegetarien", "vegetarien": "vegetarien", "vegetarienne": "vegetarien",
+  "sans gluten": "sans-gluten", "gluten free": "sans-gluten", "no gluten": "sans-gluten",
+  "sans lactose": "sans-lactose", "lactose free": "sans-lactose", "no lactose": "sans-lactose",
+  "pesco-vegetarien": "pesco-vegetarien", "pescovegetarien": "pesco-vegetarien", "pesco": "pesco-vegetarien",
+};
+
+const LABELS_CATEGORIE = {
+  cocktails: "🍸 Cocktails", mocktails: "🧃 Mocktails", salades: "🥗 Salades",
+  desserts: "🍰 Desserts", soupes: "🍲 Soupes", entrees: "🫕 Entrées",
+  healthy: "💚 Healthy", brunch: "🍳 Brunch", encas: "🥪 Encas",
+  pizzas: "🍕 Pizzas", boulangerie: "🥖 Boulangerie", plats: "🍽️ Plats",
+};
+const LABELS_PAYS = {
+  france: "🇫🇷 France", italie: "🇮🇹 Italie", japon: "🇯🇵 Japon",
+  thailande: "🇹🇭 Thaïlande", mexique: "🇲🇽 Mexique", inde: "🇮🇳 Inde",
+  liban: "🇱🇧 Liban", grece: "🇬🇷 Grèce", chine: "🇨🇳 Chine", usa: "🇺🇸 USA",
+  espagne: "🇪🇸 Espagne", maroc: "🇲🇦 Maroc", cuba: "🇨🇺 Cuba",
+  vietnam: "🇻🇳 Vietnam", senegal: "🇸🇳 Sénégal", pologne: "🇵🇱 Pologne",
+  coree: "🇰🇷 Corée", hongrie: "🇭🇺 Hongrie", tibet: "🏔️ Tibet",
+  bresil: "🇧🇷 Brésil", indonesie: "🇮🇩 Indonésie", haiti: "🇭🇹 Haïti",
+};
+
+// === INDEXATION DES CARTES (faite une seule fois au chargement) ===
+function construireIndexRecherche() {
+  window._searchIndex = { cartes: [], parIngredient: {} };
+  document.querySelectorAll(".carte").forEach(carte => {
+    const cle = extraireCleRecetteCarte(carte);
+    if (!cle) return;
+    const nom = carte.querySelector("h2")?.textContent || "";
+    const cat = carte.dataset.cat || "";
+    const pays = carte.dataset.pays || "";
+    
+    // Extraire les ingrédients depuis le tableau de la recette
+    const r = recettes?.[cle];
+    let ingredients = [];
+    if (r) {
+      const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+      if (tabKey && r[tabKey][0]) {
+        ingredients = Object.keys(r[tabKey][0]).filter(k => k !== "nb" && k !== "patons" && k !== "total" && k !== "label");
+      }
+    }
+    
+    const entry = {
+      element: carte,
+      cle,
+      nom,
+      nomNorm: normalizeText(nom),
+      cat,
+      pays,
+      ingredients,
+      ingredientsNorm: ingredients.map(i => normalizeText(i)),
+    };
+    window._searchIndex.cartes.push(entry);
+    
+    // Index inversé : ingrédient → liste de clés
+    ingredients.forEach(ing => {
+      const k = normalizeText(ing);
+      if (!window._searchIndex.parIngredient[k]) window._searchIndex.parIngredient[k] = [];
+      window._searchIndex.parIngredient[k].push(entry);
+    });
+  });
+  console.log("✅ Index recherche : " + window._searchIndex.cartes.length + " cartes, " + Object.keys(window._searchIndex.parIngredient).length + " ingrédients");
+}
+
+// === FUZZY MATCH : distance de Levenshtein (tolérance fautes) ===
+function levenshtein(a, b) {
+  if (!a || !b) return Math.max(a?.length || 0, b?.length || 0);
+  const m = a.length, n = b.length;
+  if (Math.abs(m - n) > 2) return 99; // optimisation : trop différent
+  const dp = Array(n + 1).fill(0).map((_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    let prev = dp[0]; dp[0] = i;
+    for (let j = 1; j <= n; j++) {
+      const tmp = dp[j];
+      dp[j] = a[i-1] === b[j-1] ? prev : Math.min(prev, dp[j-1], dp[j]) + 1;
+      prev = tmp;
+    }
+  }
+  return dp[n];
+}
+
+// Match flou : retourne true si query est proche de target (≤2 erreurs)
+function fuzzyMatch(query, target) {
+  if (!query || !target) return false;
+  if (target.includes(query)) return true;
+  if (query.length < 4) return false; // pas de fuzzy sur trop court
+  return levenshtein(query, target.substring(0, query.length + 2)) <= 2;
+}
+
+// === DÉTECTION D'INTENTION ===
+// Retourne { type: "categorie"|"pays"|"regime"|null, value, label, fortMatch: bool }
+function detecterIntention(qNorm) {
+  // 1. Match exact catégorie
+  if (SYNONYMES_CATEGORIE[qNorm]) {
+    const cat = SYNONYMES_CATEGORIE[qNorm];
+    return { type: "categorie", value: cat, label: LABELS_CATEGORIE[cat] || cat, fortMatch: true };
+  }
+  // 2. Match exact pays
+  if (SYNONYMES_PAYS[qNorm]) {
+    const pays = SYNONYMES_PAYS[qNorm];
+    return { type: "pays", value: pays, label: LABELS_PAYS[pays] || pays, fortMatch: true };
+  }
+  // 3. Match exact régime
+  if (SYNONYMES_REGIME[qNorm]) {
+    const reg = SYNONYMES_REGIME[qNorm];
+    return { type: "regime", value: reg, label: "🥦 " + reg, fortMatch: true };
+  }
+  // 4. Match préfixe catégorie (ex: "cock" → cocktails)
+  for (const [syn, cat] of Object.entries(SYNONYMES_CATEGORIE)) {
+    if (syn.startsWith(qNorm) && qNorm.length >= 3) {
+      return { type: "categorie", value: cat, label: LABELS_CATEGORIE[cat] || cat, fortMatch: false };
+    }
+  }
+  // 5. Match préfixe pays
+  for (const [syn, pays] of Object.entries(SYNONYMES_PAYS)) {
+    if (syn.startsWith(qNorm) && qNorm.length >= 3) {
+      return { type: "pays", value: pays, label: LABELS_PAYS[pays] || pays, fortMatch: false };
+    }
+  }
+  return null;
+}
+
+// === RÉCUPÉRER LES RECETTES D'UN RÉGIME (vegan, sans-gluten, etc.) ===
+function getCartesPourRegime(regime) {
+  if (typeof ALLERGENES_MOTS === "undefined" || !ALLERGENES_MOTS[regime]) return [];
+  const motsExclus = ALLERGENES_MOTS[regime].map(m => normalizeText(m));
+  return window._searchIndex.cartes.filter(entry => {
+    // Une recette est OK si aucun de ses ingrédients ne contient un mot exclu
+    const texteRecette = (entry.nomNorm + " " + entry.ingredientsNorm.join(" "));
+    return !motsExclus.some(mot => mot && texteRecette.includes(mot));
+  });
+}
+
+// === SCORING DES CARTES POUR UNE REQUÊTE LIBRE ===
+function scorerCartes(qNorm) {
+  if (!window._searchIndex) return [];
+  const motsQuery = qNorm.split(/\s+/).filter(Boolean);
+  
+  return window._searchIndex.cartes.map(entry => {
+    let score = 0;
+    const motsNom = entry.nomNorm.split(/\s+/).filter(Boolean);
+    
+    // 1. Match exact du nom complet : énorme bonus
+    if (entry.nomNorm === qNorm) score += 1000;
+    // 2. Le nom contient toute la query : grand bonus
+    else if (entry.nomNorm.includes(qNorm)) score += 200;
+    
+    // 3. Pour chaque mot de la query, on cherche dans le nom et les ingrédients
+    motsQuery.forEach(mq => {
+      // Match exact d'un mot du nom
+      if (motsNom.includes(mq)) score += 100;
+      // Match préfixe d'un mot du nom
+      else if (motsNom.some(mn => mn.startsWith(mq))) score += 50;
+      // Match dans les ingrédients (exact)
+      else if (entry.ingredientsNorm.some(i => i === mq)) score += 40;
+      // Match dans les ingrédients (préfixe)
+      else if (entry.ingredientsNorm.some(i => i.startsWith(mq))) score += 25;
+      // Match dans les ingrédients (contient)
+      else if (entry.ingredientsNorm.some(i => i.includes(mq))) score += 15;
+      // Fuzzy match (faute de frappe) sur le nom
+      else if (motsNom.some(mn => fuzzyMatch(mq, mn))) score += 30;
+    });
+    
+    return { entry, score };
+  }).filter(x => x.score > 0).sort((a, b) => b.score - a.score);
+}
+
+// === AFFICHAGE DES SUGGESTIONS (dropdown) ===
+function afficherSuggestions(query) {
+  const dropdown = document.getElementById("search-suggestions");
+  if (!dropdown) return;
+  
+  const qNorm = normalizeText(query);
+  if (!qNorm || qNorm.length < 1) {
+    dropdown.style.display = "none";
+    return;
+  }
+  
+  if (!window._searchIndex) construireIndexRecherche();
+  
+  const groupes = [];
+  
+  // 1. Catégories matchées
+  const catsMatch = [];
+  for (const [syn, cat] of Object.entries(SYNONYMES_CATEGORIE)) {
+    if (syn.startsWith(qNorm) && !catsMatch.find(c => c.value === cat)) {
+      catsMatch.push({ value: cat, label: LABELS_CATEGORIE[cat] || cat });
+    }
+  }
+  if (catsMatch.length > 0) {
+    groupes.push({
+      label: "Catégorie",
+      items: catsMatch.slice(0, 3).map(c => ({
+        icon: "📂", text: c.label,
+        action: `filtrerChipCategorieDepuisRecherche('${c.value}')`,
+      })),
+    });
+  }
+  
+  // 2. Pays matchés
+  const paysMatch = [];
+  for (const [syn, pays] of Object.entries(SYNONYMES_PAYS)) {
+    if (syn.startsWith(qNorm) && !paysMatch.find(p => p.value === pays)) {
+      paysMatch.push({ value: pays, label: LABELS_PAYS[pays] || pays });
+    }
+  }
+  if (paysMatch.length > 0) {
+    groupes.push({
+      label: "Pays",
+      items: paysMatch.slice(0, 3).map(p => ({
+        icon: "🌍", text: p.label,
+        action: `filtrerChipPaysDepuisRecherche('${p.value}')`,
+      })),
+    });
+  }
+  
+  // 3. Régimes
+  const regimeMatch = [];
+  for (const [syn, reg] of Object.entries(SYNONYMES_REGIME)) {
+    if (syn.startsWith(qNorm) && !regimeMatch.find(r => r.value === reg)) {
+      regimeMatch.push({ value: reg, label: reg });
+    }
+  }
+  if (regimeMatch.length > 0) {
+    groupes.push({
+      label: "Régime",
+      items: regimeMatch.slice(0, 2).map(r => ({
+        icon: "🥦", text: r.label,
+        action: `filtrerParRegime('${r.value}')`,
+      })),
+    });
+  }
+  
+  // 4. Recettes (top 5 scoring)
+  const resultats = scorerCartes(qNorm).slice(0, 6);
+  if (resultats.length > 0) {
+    groupes.push({
+      label: "Recettes",
+      items: resultats.map(({ entry, score }) => ({
+        icon: "🍽️", text: entry.nom,
+        meta: entry.pays ? (LABELS_PAYS[entry.pays]?.split(" ")[0] || "") : "",
+        action: `ouvrirFiche('${entry.cle}', null)`,
+      })),
+    });
+  }
+  
+  // Rendu
+  if (groupes.length === 0) {
+    dropdown.innerHTML = `<div class="suggestion-empty">Aucun résultat — essaye autre chose</div>`;
+  } else {
+    dropdown.innerHTML = groupes.map(g => `
+      <div class="suggestion-group">
+        <div class="suggestion-group-label">${g.label}</div>
+        ${g.items.map(item => `
+          <button class="suggestion-item" onclick="cacherSuggestions();${item.action}">
+            <span class="suggestion-icon">${item.icon}</span>
+            <span class="suggestion-text">${item.text}</span>
+            ${item.meta ? `<span class="suggestion-meta">${item.meta}</span>` : ""}
+          </button>
+        `).join("")}
+      </div>
+    `).join("");
+  }
+  dropdown.style.display = "block";
+}
+
+function cacherSuggestions() {
+  const dropdown = document.getElementById("search-suggestions");
+  if (dropdown) dropdown.style.display = "none";
+}
+
+// === Toast de notification ===
+function afficherToast(message) {
+  const ancien = document.querySelector(".search-toast");
+  if (ancien) ancien.remove();
+  const t = document.createElement("div");
+  t.className = "search-toast";
+  t.textContent = message;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 2500);
+}
+
+// === Helpers pour les clics dans le dropdown ===
+function filtrerChipCategorieDepuisRecherche(cat) {
+  viderRechercheSilencieux();
+  afficherRecettes(); // assure mode recettes
+  const chip = document.querySelector(`.filtres-chips .chip[onclick*="filtrerChipCategorie('${cat}'"]`);
+  if (chip) filtrerChipCategorie(cat, chip);
+  afficherToast("📂 " + (LABELS_CATEGORIE[cat] || cat));
+}
+
+function filtrerChipPaysDepuisRecherche(pays) {
+  viderRechercheSilencieux();
+  afficherRecettes();
+  const chip = document.querySelector(`.filtres-chips .chip[onclick*="filtrerChipPays('${pays}'"]`);
+  if (chip) filtrerChipPays(pays, chip);
+  afficherToast("🌍 " + (LABELS_PAYS[pays] || pays));
+}
+
+function filtrerParRegime(regime) {
+  viderRechercheSilencieux();
+  afficherRecettes();
+  // Filtrer les cartes selon le régime
+  const cartesOK = getCartesPourRegime(regime);
+  const setOK = new Set(cartesOK.map(c => c.element));
+  document.querySelectorAll(".carte").forEach(c => {
+    c.style.display = setOK.has(c) ? "" : "none";
+  });
+  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+  afficherToast("🥦 " + regime);
+}
+
+// Vide le champ de recherche sans déclencher la restauration d'état
+function viderRechercheSilencieux() {
+  const input = document.getElementById("search-input");
+  if (input) input.value = "";
+  const clear = document.getElementById("search-clear");
+  if (clear) clear.style.display = "none";
+  cacherSuggestions();
+  window._etatAvantRecherche = null;
+}
+
+// === Recherche principale ===
 function rechercherRecette(query) {
   const q = query.toLowerCase().trim();
   const clear = document.getElementById("search-clear");
-  clear.style.display = q ? "flex" : "none";
-
-  // === RECHERCHE CONTEXTUELLE ===
-  // Au premier caractère tapé, on capture l'état actuel des cartes
-  // (quelles cartes sont visibles dans le contexte courant : Mon Profil, Cocktails...)
+  if (clear) clear.style.display = q ? "flex" : "none";
+  
+  // Capture état pour la recherche contextuelle (au premier caractère)
   if (q && !window._etatAvantRecherche) {
     window._etatAvantRecherche = new Map();
     document.querySelectorAll(".carte").forEach(c => {
-      // On sauve si la carte était visible (display différent de "none")
-      const estVisible = c.style.display !== "none";
-      window._etatAvantRecherche.set(c, estVisible);
+      window._etatAvantRecherche.set(c, c.style.display !== "none");
     });
   }
-
-  // Si la recherche est vidée → restaurer l'état d'avant
+  
+  // Si vidée : restaurer
   if (!q) {
+    cacherSuggestions();
     if (window._etatAvantRecherche) {
       window._etatAvantRecherche.forEach((etaitVisible, c) => {
         c.style.display = etaitVisible ? "" : "none";
       });
       window._etatAvantRecherche = null;
-    } else {
-      // Cas où il n'y avait pas d'état (rare) : retour accueil
-      if (typeof afficherAccueil === "function") afficherAccueil();
+    } else if (typeof afficherAccueil === "function") {
+      afficherAccueil();
     }
     return;
   }
-
-  // Si recherche active, s'assurer qu'on est sur la grille
+  
+  // Assurer que la grille est visible
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   if (secAccueil) secAccueil.style.display = "none";
-  if (secCartes) { secCartes.classList.add("visible"); }
-
-  // Helper : retire les emojis/symboles et garde uniquement les mots
-  // Match si UN DES MOTS du nom COMMENCE par la requête (plus intelligent)
-  function matcheNom(nom, query) {
-    // Normalisation : retirer accents pour permettre "cafe" = "café"
-    const normalize = s => s.toLowerCase()
-      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")  // accents
-      .replace(/[^a-z0-9\s]/g, " ")  // emojis et symboles → espaces
-      .trim();
-    
-    const nomN = normalize(nom);
-    const qN = normalize(query);
-    
-    // Recherche multi-mots : "tarte chocolat" matche "tarte au chocolat"
-    const motsQuery = qN.split(/\s+/).filter(Boolean);
-    const motsNom = nomN.split(/\s+/).filter(Boolean);
-    
-    // Chaque mot de la query doit matcher LE DÉBUT d'au moins un mot du nom
-    return motsQuery.every(mq => motsNom.some(mn => mn.startsWith(mq)));
-  }
-
-  // Filtrer : on montre une carte SI elle matche ET qu'elle était visible dans le contexte
+  if (secCartes) secCartes.classList.add("visible");
+  
+  // Construire l'index si pas encore fait
+  if (!window._searchIndex) construireIndexRecherche();
+  
+  // Afficher les suggestions dropdown
+  afficherSuggestions(q);
+  
+  // Faire le filtrage des cartes en arrière-plan
+  const qNorm = normalizeText(q);
+  const resultats = scorerCartes(qNorm);
+  const setMatch = new Set(resultats.map(r => r.entry.element));
+  
   document.querySelectorAll(".carte").forEach(carte => {
     const etaitVisible = window._etatAvantRecherche.get(carte) !== false;
-    const nom = carte.querySelector("h2").textContent;
-    const matche = matcheNom(nom, q);
-    carte.style.display = (etaitVisible && matche) ? "" : "none";
+    carte.style.display = (etaitVisible && setMatch.has(carte)) ? "" : "none";
   });
+  
   if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
 }
 
@@ -5267,8 +5664,9 @@ function calculerToutesStats() {
   const menusFavoris = user.menusFavoris || [];
   const historique = user.historiqueMenus || [];
   const recents = window._recentsVus || [];
+  const cuisinees = user.recettesCuisinees || []; // v240 : nouveau tracking manuel
   
-  // 1) Toutes les recettes utilisées (favoris + historique + récentes vues)
+  // 1) Recettes "vues" (large) — utilisé pour les stats secondaires (top pays, top cat)
   const recettesVues = new Set([...recents, ...favoris]);
   historique.forEach(menu => {
     (menu.menus || menu.menu || []).forEach(plat => {
@@ -5277,22 +5675,25 @@ function calculerToutesStats() {
     });
   });
   
-  // 2) Compter les occurrences de chaque recette dans l'historique
-  const compteurRecettes = {};
-  historique.forEach(menu => {
-    (menu.menus || menu.menu || []).forEach(plat => {
-      const cle = typeof plat === "string" ? plat : plat?.cle;
-      if (cle) compteurRecettes[cle] = (compteurRecettes[cle] || 0) + 1;
-    });
-  });
+  // 1bis) Recettes RÉELLEMENT cuisinées (manuel) — base des stats principales
+  const recettesCuisineesSet = new Set(cuisinees.map(c => c.cle));
+  // Total de "cuissons" (recette comptée plusieurs fois si refaite)
+  const totalCuissons = cuisinees.reduce((sum, c) => sum + (c.count || 1), 0);
   
-  // 3) Calculer le prix total et kcal totales de TOUTES les recettes essayées
+  // 2) Compteur recettes refaites (depuis cuisinees, plus précis)
+  const compteurRecettes = {};
+  cuisinees.forEach(c => { compteurRecettes[c.cle] = c.count || 1; });
+  
+  // 3) Calculer prix et kcal — sur les recettes CUISINÉES uniquement
   let prixTotalCumule = 0, prixCount = 0;
   let calTotalCumule = 0, calCount = 0;
   let recettePlusChere = null, recettePlusKcal = null, recettePlusRapide = null;
   let prixMax = 0, calMax = 0, tempsMin = Infinity;
   
-  recettesVues.forEach(cle => {
+  // Si pas encore de recettes cuisinées, on calcule sur les favoris pour ne pas avoir 0 partout
+  const baseCalcul = recettesCuisineesSet.size > 0 ? recettesCuisineesSet : new Set(favoris);
+  
+  baseCalcul.forEach(cle => {
     const r = recettes[cle];
     if (!r) return;
     
@@ -5304,12 +5705,16 @@ function calculerToutesStats() {
         const ligne = r[tabKey].find(l => l.nb === base || l.patons === base) || r[tabKey][0];
         const res = calculerPrixCaloriesRecette(ligne);
         if (res.prix > 0) {
-          prixTotalCumule += res.prix;
+          // Ramener par personne (base = nb personnes de la recette de référence)
+          const prixParPers = res.prix / base;
+          prixTotalCumule += prixParPers;
           prixCount++;
           if (res.prix > prixMax) { prixMax = res.prix; recettePlusChere = cle; }
         }
         if (res.cal > 0) {
-          calTotalCumule += res.cal;
+          // Ramener par personne aussi
+          const calParPers = res.cal / base;
+          calTotalCumule += calParPers;
           calCount++;
           if (res.cal > calMax) { calMax = res.cal; recettePlusKcal = cle; }
         }
@@ -5351,11 +5756,14 @@ function calculerToutesStats() {
   
   return {
     nbRecettesEssayees: recettesVues.size,
+    nbRecettesVues: recettesVues.size, // v240 : alias plus parlant
+    nbRecettesCuisinees: recettesCuisineesSet.size, // v240 : nouveau
+    totalCuissons: totalCuissons, // v240 : total des fois où des recettes ont été cuisinées
     nbFavoris: favoris.length,
     nbMenusFavoris: menusFavoris.length,
     nbMenusGeneres: historique.length,
-    prixMoyen: prixCount > 0 ? prixTotalCumule / prixCount : 0,
-    calMoyen: calCount > 0 ? calTotalCumule / calCount : 0,
+    prixMoyen: prixCount > 0 ? prixTotalCumule / prixCount : 0, // v240 : par personne
+    calMoyen: calCount > 0 ? calTotalCumule / calCount : 0,     // v240 : par personne
     recettePlusChere: recettePlusChere ? { cle: recettePlusChere, prix: prixMax } : null,
     recettePlusKcal: recettePlusKcal ? { cle: recettePlusKcal, cal: calMax } : null,
     recettePlusRapide: recettePlusRapide ? { cle: recettePlusRapide, temps: tempsMin } : null,
@@ -5370,9 +5778,9 @@ function calculerToutesStats() {
 function remplirVueEnsemble(s) {
   const html = `
     <div class="stat-card stat-card-or">
-      <div class="stat-emoji">🍳</div>
-      <div class="stat-valeur">${s.nbRecettesEssayees}</div>
-      <div class="stat-label">Recettes essayées</div>
+      <div class="stat-emoji">👨‍🍳</div>
+      <div class="stat-valeur">${s.totalCuissons}</div>
+      <div class="stat-label">Recettes cuisinées</div>
     </div>
     <div class="stat-card stat-card-rose">
       <div class="stat-emoji">❤️</div>
@@ -5392,12 +5800,12 @@ function remplirVueEnsemble(s) {
     <div class="stat-card stat-card-orange">
       <div class="stat-emoji">💰</div>
       <div class="stat-valeur">${s.prixMoyen > 0 ? s.prixMoyen.toFixed(2) + " €" : "—"}</div>
-      <div class="stat-label">Prix moyen</div>
+      <div class="stat-label">Prix moyen / pers.</div>
     </div>
     <div class="stat-card stat-card-turquoise">
       <div class="stat-emoji">🔥</div>
       <div class="stat-valeur">${s.calMoyen > 0 ? Math.round(s.calMoyen) : "—"}</div>
-      <div class="stat-label">Kcal moyennes</div>
+      <div class="stat-label">Kcal moyennes / pers.</div>
     </div>
   `;
   document.getElementById("stats-overview").innerHTML = html;
@@ -5480,6 +5888,16 @@ function remplirRecords(s) {
     });
   }
   
+  // v240 : Record "Recettes vues" (curiosité)
+  if (s.nbRecettesVues > 0) {
+    records.push({
+      icon: "👀",
+      label: "Recettes explorées",
+      valeur: s.nbRecettesVues + " recette" + (s.nbRecettesVues > 1 ? "s" : ""),
+      detail: "Vues / consultées",
+    });
+  }
+  
   if (records.length === 0) {
     document.getElementById("stats-records").innerHTML = 
       `<p class="stats-vide">🍳 Commencez à cuisiner pour débloquer vos records !</p>`;
@@ -5537,14 +5955,23 @@ function remplirEvolution(s) {
 // Remplit la section "Badges"
 function remplirBadges(s) {
   const badges = [
-    { id: "premier-pas", emoji: "👶", titre: "Premier pas", desc: "1 recette essayée", debloque: s.nbRecettesEssayees >= 1 },
-    { id: "explorer", emoji: "🧭", titre: "Explorateur", desc: "10 recettes essayées", debloque: s.nbRecettesEssayees >= 10 },
-    { id: "chef", emoji: "👨‍🍳", titre: "Chef en herbe", desc: "25 recettes essayées", debloque: s.nbRecettesEssayees >= 25 },
-    { id: "master", emoji: "🏆", titre: "Master Chef", desc: "50 recettes essayées", debloque: s.nbRecettesEssayees >= 50 },
+    // === Badges cuisson ===
+    { id: "premier-pas", emoji: "👶", titre: "Premier pas", desc: "1 recette cuisinée", debloque: s.nbRecettesCuisinees >= 1 },
+    { id: "explorer-cuisine", emoji: "🧭", titre: "Explorateur", desc: "10 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 10 },
+    { id: "chef", emoji: "👨‍🍳", titre: "Chef en herbe", desc: "25 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 25 },
+    { id: "master", emoji: "🏆", titre: "Master Chef", desc: "50 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 50 },
+    // === Badges curiosité (recettes vues/explorées) v240 ===
+    { id: "curieux", emoji: "👀", titre: "Curieux", desc: "10 recettes vues", debloque: s.nbRecettesVues >= 10 },
+    { id: "voyageur", emoji: "🗺️", titre: "Voyageur", desc: "50 recettes vues", debloque: s.nbRecettesVues >= 50 },
+    { id: "centurion", emoji: "💯", titre: "Centurion", desc: "100 recettes vues", debloque: s.nbRecettesVues >= 100 },
+    { id: "expert", emoji: "🎓", titre: "Expert", desc: "200 recettes vues", debloque: s.nbRecettesVues >= 200 },
+    // === Badges favoris ===
     { id: "fan", emoji: "❤️", titre: "Fan", desc: "5 favoris", debloque: s.nbFavoris >= 5 },
     { id: "collectionneur", emoji: "💎", titre: "Collectionneur", desc: "15 favoris", debloque: s.nbFavoris >= 15 },
+    // === Badges menus ===
     { id: "planificateur", emoji: "📅", titre: "Planificateur", desc: "5 menus générés", debloque: s.nbMenusGeneres >= 5 },
     { id: "organisateur", emoji: "🗂️", titre: "Organisateur", desc: "20 menus générés", debloque: s.nbMenusGeneres >= 20 },
+    // === Badges spéciaux ===
     { id: "fidele", emoji: "🥇", titre: "Fidèle", desc: "Une recette refaite 3 fois", debloque: s.recettePlusRefaite && s.recettePlusRefaite.n >= 3 },
     { id: "globetrotter", emoji: "🌍", titre: "Globe-trotter", desc: "5 pays différents", debloque: false }, // calculé ci-dessous
   ];
@@ -5720,6 +6147,31 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Appliquer les badges Nutri-Score sur toutes les cartes
     if (typeof appliquerNutriScoreCartes === "function") appliquerNutriScoreCartes();
+    
+    // Construire l'index de recherche intelligente
+    if (typeof construireIndexRecherche === "function") construireIndexRecherche();
+    
+    // Fermer le dropdown des suggestions quand on clique ailleurs
+    document.addEventListener("click", (e) => {
+      const searchBar = document.querySelector(".search-bar");
+      if (searchBar && !searchBar.contains(e.target)) {
+        cacherSuggestions();
+      }
+    });
+    // Quand on focus l'input et qu'il y a déjà du texte, ré-afficher les suggestions
+    const searchInput = document.getElementById("search-input");
+    if (searchInput) {
+      searchInput.addEventListener("focus", () => {
+        if (searchInput.value) afficherSuggestions(searchInput.value);
+      });
+      // Échap pour fermer
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          cacherSuggestions();
+          searchInput.blur();
+        }
+      });
+    }
 
     // Marquer les calc-input comme "modifié" quand l'utilisateur change leur valeur
     // (pour ne pas que la maj depuis le foyer écrase un choix manuel)
