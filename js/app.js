@@ -8170,6 +8170,12 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     majBoutonFamille();
     majBoutonMonProfil();
+    // v257.3 : compteur dynamique de recettes (plus de chiffre figé !)
+    try {
+      const nbR = (typeof recettes !== "undefined") ? Object.keys(recettes).length : 0;
+      const el = document.getElementById("nb-recettes");
+      if (el && nbR > 0) el.textContent = `🍽️ ${nbR} recettes`;
+    } catch (e) {}
     // Initialiser tous les inputs calc-* avec la taille du foyer
     const foyer = window.userProfile?.foyer;
     if (foyer) {
