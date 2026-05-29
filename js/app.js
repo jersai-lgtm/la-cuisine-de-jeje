@@ -3676,10 +3676,11 @@ function levenshtein(a, b) {
 }
 
 // Match flou : retourne true si query est proche de target (≤2 erreurs)
+// Plus strict : minimum 5 caractères pour éviter les faux positifs courts (cock/coco)
 function fuzzyMatch(query, target) {
   if (!query || !target) return false;
   if (target.includes(query)) return true;
-  if (query.length < 4) return false; // pas de fuzzy sur trop court
+  if (query.length < 5) return false; // ÉVITER les matchs courts trop permissifs
   return levenshtein(query, target.substring(0, query.length + 2)) <= 2;
 }
 
@@ -3745,16 +3746,14 @@ function scorerCartes(qNorm) {
     motsQuery.forEach(mq => {
       // Match exact d'un mot du nom
       if (motsNom.includes(mq)) score += 100;
-      // Match préfixe d'un mot du nom
-      else if (motsNom.some(mn => mn.startsWith(mq))) score += 50;
-      // Match dans les ingrédients (exact)
-      else if (entry.ingredientsNorm.some(i => i === mq)) score += 40;
-      // Match dans les ingrédients (préfixe)
-      else if (entry.ingredientsNorm.some(i => i.startsWith(mq))) score += 25;
-      // Match dans les ingrédients (contient)
-      else if (entry.ingredientsNorm.some(i => i.includes(mq))) score += 15;
-      // Fuzzy match (faute de frappe) sur le nom
-      else if (motsNom.some(mn => fuzzyMatch(mq, mn))) score += 30;
+      // Match préfixe d'un mot du nom (au moins 3 chars pour éviter "co" = "coq", "coco", "cot"...)
+      else if (mq.length >= 3 && motsNom.some(mn => mn.startsWith(mq))) score += 50;
+      // Match dans les ingrédients (exact uniquement, pas de fuzzy là)
+      else if (mq.length >= 4 && entry.ingredientsNorm.some(i => i === mq)) score += 40;
+      // Match préfixe ingrédient (≥4 chars pour ne pas matcher "cock"→"coco")
+      else if (mq.length >= 4 && entry.ingredientsNorm.some(i => i.startsWith(mq))) score += 25;
+      // Fuzzy match SUR LE NOM uniquement (faute de frappe sur nom recette)
+      else if (mq.length >= 5 && motsNom.some(mn => fuzzyMatch(mq, mn))) score += 30;
     });
     
     return { entry, score };
@@ -3944,20 +3943,43 @@ function rechercherRecette(query) {
     return;
   }
   
+  // Construire l'index si pas encore fait
+  if (!window._searchIndex) construireIndexRecherche();
+  
+  // === v240 : AUTO-FILTRE sur match EXACT d'un mot-clé ===
+  // Si l'utilisateur tape "cocktail" entier, on applique direct le filtre catégorie
+  const qNorm = normalizeText(q);
+  if (SYNONYMES_CATEGORIE[qNorm]) {
+    const cat = SYNONYMES_CATEGORIE[qNorm];
+    viderRechercheSilencieux();
+    // Petit délai pour laisser le DOM respirer
+    setTimeout(() => filtrerChipCategorieDepuisRecherche(cat), 50);
+    return;
+  }
+  if (SYNONYMES_PAYS[qNorm]) {
+    const pays = SYNONYMES_PAYS[qNorm];
+    viderRechercheSilencieux();
+    setTimeout(() => filtrerChipPaysDepuisRecherche(pays), 50);
+    return;
+  }
+  if (SYNONYMES_REGIME[qNorm]) {
+    const reg = SYNONYMES_REGIME[qNorm];
+    viderRechercheSilencieux();
+    setTimeout(() => filtrerParRegime(reg), 50);
+    return;
+  }
+  
+  // Sinon : afficher les suggestions + filtrer les cartes en mode recherche libre
   // Assurer que la grille est visible
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   if (secAccueil) secAccueil.style.display = "none";
   if (secCartes) secCartes.classList.add("visible");
   
-  // Construire l'index si pas encore fait
-  if (!window._searchIndex) construireIndexRecherche();
-  
   // Afficher les suggestions dropdown
   afficherSuggestions(q);
   
   // Faire le filtrage des cartes en arrière-plan
-  const qNorm = normalizeText(q);
   const resultats = scorerCartes(qNorm);
   const setMatch = new Set(resultats.map(r => r.entry.element));
   
@@ -6169,6 +6191,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === "Escape") {
           cacherSuggestions();
           searchInput.blur();
+        }
+        // Entrée : applique la TOP suggestion (catégorie/pays prioritaire)
+        if (e.key === "Enter") {
+          e.preventDefault();
+          const dropdown = document.getElementById("search-suggestions");
+          if (!dropdown || dropdown.style.display === "none") return;
+          const firstItem = dropdown.querySelector(".suggestion-item");
+          if (firstItem) firstItem.click();
         }
       });
     }
