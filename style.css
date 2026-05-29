@@ -134,31 +134,91 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 .carte-calc {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin-top: 4px;
+  gap: 0;
+  margin-top: 8px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,77,136,.3);
+  border-radius: 12px;
+  padding: 3px;
+  overflow: hidden;
+  transition: all .2s ease;
+}
+.carte-calc:hover {
+  border-color: rgba(255,77,136,.6);
+  background: rgba(255,255,255,.12);
 }
 .calc-input {
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.2);
-  border-radius: 8px;
+  background: transparent;
+  border: none;
   color: white;
-  padding: 5px 6px;
-  font-size: 13px;
-  width: 55px;
+  padding: 6px 4px;
+  flex: 1;
+  font-size: 15px;
+  font-weight: 700;
   text-align: center;
+  min-width: 0;
+  -moz-appearance: textfield; /* Firefox : masque flèches */
 }
+.calc-input::-webkit-outer-spin-button,
+.calc-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.calc-input:focus {
+  outline: none;
+  background: rgba(255,77,136,.15);
+}
+.calc-btn-minus, .calc-btn-plus {
+  background: linear-gradient(135deg, #ff4d88 0%, #ff6ba1 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .15s ease;
+  box-shadow: 0 2px 6px rgba(255,77,136,.3);
+  flex-shrink: 0;
+  user-select: none;
+}
+.calc-btn-minus:hover, .calc-btn-plus:hover {
+  background: linear-gradient(135deg, #ff6ba1 0%, #ff85b6 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(255,77,136,.5);
+}
+.calc-btn-minus:active, .calc-btn-plus:active {
+  transform: scale(.92);
+  box-shadow: 0 1px 3px rgba(255,77,136,.4);
+}
+.calc-btn-minus:disabled, .calc-btn-plus:disabled {
+  background: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.3);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+/* Animation lors du changement de valeur */
+.calc-input.bump {
+  animation: bumpScale .25s ease;
+}
+@keyframes bumpScale {
+  0%   { transform: scale(1); color: white; }
+  50%  { transform: scale(1.25); color: #ff6ba1; }
+  100% { transform: scale(1); color: white; }
+}
+/* Style legacy si encore présent quelque part */
 .calc-btn {
   background: #ff4d88;
   color: white;
   border: none;
   border-radius: 8px;
   padding: 5px 10px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: .2s;
-  white-space: nowrap;
+  font-size: 13px;
+  width: 55px;
+  text-align: center;
 }
-.calc-btn:hover { background: #ff6ba1; }
 .calc-fixed { font-size: 12px; color: #ffb3cc; font-style: italic; }
 
 /* ==========================
@@ -529,19 +589,18 @@ select, input[type="number"] {
     height: 140px;
   }
   .carte-calc {
-    flex-wrap: wrap;
-    gap: 4px;
+    flex-wrap: nowrap;
+    gap: 0;
   }
   .calc-input {
-    width: 100%;
+    width: auto;
     font-size: 16px;
-    padding: 6px;
+    padding: 6px 2px;
   }
-  .calc-btn {
-    width: 100%;
-    text-align: center;
-    padding: 6px;
-    font-size: 13px;
+  .calc-btn-minus, .calc-btn-plus {
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
   }
   
   .brioche-carte-choix {
