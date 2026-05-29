@@ -107,6 +107,7 @@ gtag('config', 'G-390C5MY2SS');
   <button class="cat-btn" id="btn-tout" onclick="afficherTout()">🍽️ Tout</button>
   <button class="cat-btn" id="btn-categories" onclick="toggleSousMenu('menu-categories', this)">🗂️ Catégories ▾</button>
   <button class="cat-btn" id="btn-monde" onclick="toggleSousMenu('menu-pays', this)">🌍 Monde ▾</button>
+  <button class="cat-btn" id="btn-mon-profil" onclick="filtrerMonProfil()" style="display:none">👤 Mon Profil</button>
 </nav>
 
 <!-- SOUS-MENU CATÉGORIES -->
@@ -122,7 +123,6 @@ gtag('config', 'G-390C5MY2SS');
   <button class="pays-btn" onclick="filtrerCategorie('desserts')">🍰 Desserts</button>
   <button class="pays-btn" onclick="filtrerCategorie('boulangerie')">🥖 Boulangerie</button>
   <button class="pays-btn" onclick="filtrerCategorieDrinks()">🍹 Cocktails ▾</button>
-  <button class="pays-btn" id="btn-filtre-famille" onclick="filtrerFamille()" style="display:none">🏠 Famille</button>
 </div>
 <!-- Sous-menu cocktails -->
 <div class="menu-pays" id="menu-cocktails" style="display:none">

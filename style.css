@@ -58,6 +58,25 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 .cat-btn:hover  { background: rgba(255,77,136,.2); border-color: #ff4d88; }
 .cat-btn.active { background: #ff4d88; border-color: #ff4d88; color: #fff; font-weight: bold; }
 
+/* Bouton Mon Profil — couleur turquoise pour le distinguer */
+#btn-mon-profil {
+  background: rgba(38,198,218,.12);
+  border-color: rgba(38,198,218,.4);
+  color: #80deea;
+}
+#btn-mon-profil:hover {
+  background: rgba(38,198,218,.25);
+  border-color: #26c6da;
+  color: #fff;
+}
+#btn-mon-profil.active {
+  background: linear-gradient(135deg, #26c6da 0%, #0097a7 100%);
+  border-color: transparent;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(38,198,218,.4);
+}
+
 /* ==========================
    CARTES RECETTES
 ========================== */
