@@ -5473,8 +5473,8 @@ gtag('config', 'G-390C5MY2SS');
   <button class="nav-btn active" onclick="afficherSection('accueil', this)">
     <span>🏠</span><small>Accueil</small>
   </button>
-  <button class="nav-btn" onclick="afficherSection('calculateur', this)">
-    <span>🧮</span><small>Calculateur</small>
+  <button class="nav-btn" onclick="afficherSection('cuisine', this)">
+    <span>🥕</span><small>Cuisine</small>
   </button>
   <button class="nav-btn" onclick="afficherSection('planificateur', this)">
     <span>📅</span><small>Menus</small>
@@ -5542,244 +5542,54 @@ gtag('config', 'G-390C5MY2SS');
   </details>
 </section>
 
-<!-- SECTION CALCULATEUR CLASSIQUE (cachée par défaut) -->
-<section class="calculateur" id="section-calculateur" style="display:none">
-  <h2>Calculateur recettes</h2>
-  <select id="recette">
-    <option value="pizza">Pizza</option>
-    <option value="crepes">Crêpes</option>
-    <option value="gaufres">Gaufres</option>
-    <option value="brioche">Brioche</option>
-    <option value="goumeau">Galette de Goumeau</option>
-    <option value="galettetacos">Galette à Tacos</option>
-    <option value="painburger">Pain Burger (Buns)</option>
-    <option value="painbaguette">Pain — Baguette</option>
-    <option value="paindemie">Pain de mie</option>
-    <option value="patefeuilletee">Pâte feuilletée</option>
-    <option value="patebrisee">Pâte brisée</option>
-    <option value="patesablee">Pâte sablée</option>
-    <option value="lasagne">Pâte à Lasagne</option>
-    <option value="cookies">Cookies</option>
-    <option value="flan">Flan</option>
-    <option value="clafoutis">Clafoutis</option>
-    <option value="boeufbourguignon">Bœuf bourguignon</option>
-    <option value="saladeniçoise">Salade niçoise</option>
-    <option value="saladecesar">Salade César</option>
-    <option value="saladegreque">Salade grecque</option>
-    <option value="saladepatasthon">Salade pâtes thon</option>
-    <option value="saladerizmediterranee">Salade riz méditerranéenne</option>
-    <option value="tabulemaison">Taboulé maison</option>
-    <option value="saladelentilles">Salade de lentilles</option>
-    <option value="saladeavocatcrevettes">Salade avocat crevettes</option>
-    <option value="risotto">Risotto</option>
-    <option value="gratindauphinois">Gratin dauphinois</option>
-    <option value="cremebrulee">Crème brûlée</option>
-    <option value="mousseauchocolat">Mousse au chocolat</option>
-    <option value="ileflottante">Île flottante</option>
-    <option value="fondantchocolat">Fondant au chocolat</option>
-    <option value="madeleine">Madeleines</option>
-    <option value="bananabread">Banana bread</option>
-    <option value="veloutelegumes">Velouté de légumes</option>
-    <option value="houmous">Houmous maison</option>
-    <option value="overnightoats">Overnight Oats</option>
-    <option value="buddhaBowl">Buddha Bowl</option>
-    <option value="soupemiso">Soupe Miso</option>
-    <option value="wrappoulet">Wrap au Poulet</option>
-    <option value="energyballs">Energy Balls</option>
-    <option value="pancakesproteine">Pancakes Protéinés</option>
-    <option value="bowlacai">Bowl Açaï</option>
-    <option value="saladepoischiches">Salade Pois Chiches</option>
-    <option value="gaspacho">Gaspacho</option>
-    <option value="curryledumes">Curry de Légumes</option>
-    <option value="mojito">Mojito</option>
-    <option value="margarita">Margarita</option>
-    <option value="cosmopolitan">Cosmopolitan</option>
-    <option value="spritz">Spritz Aperol</option>
-    <option value="sangria">Sangria</option>
-    <option value="pinacolada">Piña Colada</option>
-    <option value="daiquiri">Daiquiri</option>
-    <option value="whiskysour">Whisky Sour</option>
-    <option value="virginmojito">Virgin Mojito</option>
-    <option value="limonademaison">Limonade Maison</option>
-    <option value="smoothiemangopassion">Smoothie Mangue Passion</option>
-    <option value="citronadementhe">Citronnade à la Menthe</option>
-    <option value="jusPastequeMenuthe">Jus Pastèque Menthe</option>
-    <option value="virginpinacolada">Virgin Piña Colada</option>
-    <option value="mojitorose">Mojito Rosé</option>
-    <option value="negroni">Negroni</option>
-    <option value="moscowmule">Moscow Mule</option>
-    <option value="pornstarmartini">Porn Star Martini</option>
-    <option value="hugospritz">Hugo Spritz</option>
-    <option value="cherryblossommocktail">Cherry Blossom</option>
-    <option value="oldFashioned">Old Fashioned</option>
-    <option value="gintoniqmaison">Gin Tonic Maison</option>
-    <option value="shrubframboisebasilic">Shrub Framboise Basilic</option>
-    <option value="mocktailcoconananas">Mocktail Coco Ananas</option>
-    <option value="pouletcitronthym">Poulet Citron & Thym</option>
-    <option value="salmonteriyaki">Saumon Teriyaki</option>
-    <option value="padthai">Pad Thaï</option>
-    <option value="currypouletcoco">Curry Poulet Coco</option>
-    <option value="burgermaison">Burger Maison</option>
-    <option value="saumongravlax">Saumon Gravlax</option>
-    <option value="shakshuka">Shakshuka</option>
-    <option value="soupeaoignon">Soupe à l'Oignon</option>
-    <option value="rizcantonnais">Riz Cantonnais</option>
-    <option value="soupeharira">Harira Marocaine</option>
-    <option value="naan">Naans</option>
-    <option value="verrinetiramisu">Verrines Tiramisu</option>
-    <option value="churros">Churros</option>
-    <option value="potaufeu">Pot-au-Feu</option>
-    <option value="ramenjaponais">Ramen Japonais</option>
-    <option value="gyoza">Gyoza</option>
-    <option value="tikamasala">Poulet Tikka Masala</option>
-    <option value="phovietnambien">Pho Vietnamien</option>
-    <option value="pizzamargherita">Pizza Margherita</option>
-    <option value="carbonara">Carbonara</option>
-    <option value="ceebujen">Thiéboudienne</option>
-    <option value="mafewestafricain">Maafé</option>
-    <option value="gnocchismaison">Gnocchis Maison</option>
-    <option value="falafel">Falafel</option>
-    <option value="poulettandoori">Poulet Tandoori</option>
-    <option value="pekinduckeasy">Canard Laqué Pékinois</option>
-    <option value="ossobuco">Osso Buco</option>
-    <option value="tajinemouton">Tajine d'Agneau</option>
-    <option value="moelleuxchocolat">Moelleux au Chocolat</option>
-    <option value="cheesecake">Cheesecake</option>
-    <option value="painauchocolat">Pain au Chocolat</option>
-    <option value="gateaubasque">Gâteau Basque</option>
-    <option value="canelebordelais">Cannelés Bordelais</option>
-    <option value="parisbrestreinterpretation">Paris-Brest</option>
-    <option value="tartecitron">Tarte au citron</option>
-    <option value="tiramisu">Tiramisu</option>
-    <option value="tarteaupommes">Tarte aux pommes</option>
-    <option value="pancakes">Pancakes</option>
-    <option value="muffins">Muffins</option>
-    <option value="croquemonsieur">Croque-monsieur</option>
-    <option value="smoothiebowl">Smoothie Bowl</option>
-    <option value="saladequinoa">Salade de quinoa</option>
-    <option value="yaourt">Yaourt maison</option>
+<!-- SECTION CUISINE — Vide-frigo & Liste de courses (v242) -->
+<section class="cuisine-section" id="section-cuisine" style="display:none">
   
-    <option value="pizzareine">Pizza Reine</option>
-    <option value="pizza4fromages">Pizza 4 Fromages</option>
-    <option value="pizzadiavola">Pizza Diavola</option>
-    <option value="pizzasaumonepinards">Pizza Saumon Épinards</option>
-    <option value="pizzavegetarienne">Pizza Végétarienne</option>
-    <option value="souvlakiagneau">Souvlaki d'Agneau</option>
-    <option value="tom_yam">Soupe Tom Yam</option>
-    <option value="dorade_chermoula">Dorade Chermoula</option>
-    <option value="pouletchicken65">Chicken 65</option>
-    <option value="pierogi">Pierogi</option>
-    <option value="momos">Momos Tibétains</option>
-    <option value="shakshukaverte">Shakshuka Verte</option>
-    <option value="kibbeh">Kebbeh Libanais</option>
-    <option value="tteokbokki">Tteokbokki</option>
-    <option value="porc_pulled">Pulled Pork</option>
-    <option value="dosakerdosai">Dosa</option>
-    <option value="braiseboeuf_asiatique">Joues de Bœuf Braisées</option>
-    <option value="paprikashpoulet">Paprikash de Poulet</option>
-    <option value="bibimbap">Bibimbap</option>
-    <option value="moquecabresil">Moqueca Brésilienne</option>
-    <option value="rendangboeuf">Rendang de Bœuf</option>
-    <option value="tacoshijosepastor">Tacos Al Pastor</option>
-    <option value="grilladelamnocciole">Côtelettes d'Agneau Grillées</option>
-    <option value="sushimaison">Sushis Maison</option>
-    <option value="carigrioantillais">Cari Griot</option>
-    <option value="semoulecourgette">Semoule aux Légumes Grillés</option>
-    <option value="pouletbasquaise">Poulet Basquaise</option>
-    <option value="crevettespilpil">Crevettes Pil Pil</option>
-    <option value="lasagneverdure">Lasagne Verdure</option>
-    <option value="crumblefruits">Crumble aux Fruits</option>
-    <option value="pintxosbasques">Pintxos Basques</option>
-    <option value="misoramenleger">Ramen Miso Léger</option>
-    <option value="veloutepatatepoireaux">Velouté Patate & Poireaux</option>
-    <option value="terrinecampagne">Terrine de Campagne</option>
-    <option value="poulpegrillebresil">Poulpe Grillé</option>
-    <option value="pouletrotiperfect">Poulet Rôti Parfait</option>
-    <option value="millefeuille">Mille-feuille</option>
-    <option value="saumoncrouteherbes">Saumon Croûte d'Herbes</option>
-    <option value="tequilasunrise">Tequila Sunrise</option>
-    <option value="aperolspritzrosa">Spritz Rosé</option>
-    <option value="espressoMartini">Espresso Martini</option>
-    <option value="punchfruitsrouges">Punch Fruits Rouges</option>
-    <option value="blueLagoon">Blue Lagoon</option>
-    <option value="mimosa">Mimosa</option>
-    <option value="sidecarvintage">Sidecar</option>
-    <option value="mocktailberrybliss">Berry Bliss Mocktail</option>
-    <option value="gingerlemondrop">Lemon Drop Gingembre</option>
-    <option value="mocktailcoconorchidee">Mocktail Coco Orchidée</option>
-    <option value="pizzaprosciuttoroquette">Pizza Prosciutto Roquette</option>
-    <option value="pizzatruffe">Pizza à la Truffe</option>
-    <option value="pizzabiancoverdure">Pizza Bianca Verdure</option>
-    <option value="pizzacalzone">Calzone</option>
-    <option value="pizzapoivrons">Pizza Poivrons Anchois</option>
-    <option value="pizzapatate">Pizza Patate Romarin</option>
-    <option value="pizzabresilienne">Pizza Brésilienne</option>
-    <option value="lasagneviande">Lasagnes Bolognaise</option>
-  
-    <option value="pizzachorizo">Pizza Chorizo</option>
-    <option value="pouletteriyaki">Poulet Teriyaki</option>
-    <option value="curryverthai">Curry Vert Thaï</option>
-    <option value="chiliconcarneV">Chili Con Carne</option>
-    <option value="koreanfriedchicken">Poulet Frit Coréen</option>
-    <option value="risottoMilanese">Risotto Milanais au Safran</option>
-    <option value="soupeAziatique">Soupe Asiatique aux Nouilles</option>
-    <option value="tartareSaumon">Tartare de Saumon</option>
-    <option value="tiramisufraise">Tiramisu aux Fraises</option>
-    <option value="pouletCocoLemon">Poulet Coco Citron</option>
-    <option value="crepesSucrées">Crêpes Sucrées</option>
-    <option value="poireauVinaigrette">Poireaux Vinaigrette</option>
-    <option value="spaetzle">Spätzle</option>
-    <option value="wagyuBurger">Burger Wagyu</option>
-    <option value="lemonPasta">Pâtes au Citron</option>
-    <option value="soupeMinestrone">Minestrone</option>
-  
-    <option value="blanquetteveau">Blanquette de Veau</option>
-    <option value="navarin">Navarin d'Agneau</option>
-    <option value="camembertRoti">Camembert Rôti</option>
-    <option value="tarteFlambee">Tarte Flambée</option>
-    <option value="pouletMisoGingembre">Poulet Miso Gingembre</option>
-    <option value="noodlesWok">Nouilles Sautées au Wok</option>
-    <option value="maffeSenegal">Maafé Poulet</option>
-    <option value="gazpachoMelon">Gaspacho de Melon</option>
-    <option value="wafflesSales">Gaufres Salées</option>
-    <option value="choucroute">Choucroute Garnie</option>
-    <option value="sconeBritish">Scones</option>
-    <option value="calamarsRomaine">Calamars à la Romaine</option>
-    <option value="baklava">Baklava</option>
-    <option value="eggsBenedict">Œufs Bénédicte</option>
-    <option value="porkBelly">Poitrine de Porc Caramélisée</option>
-    <option value="veloutePoiron">Velouté de Potiron</option>
-    <option value="chocolatChaud">Chocolat Chaud</option>
-    <option value="granolaMaison">Granola Maison</option>
-  
-    <option value="tartetatinpommes">Tarte Tatin aux Pommes</option>
-    <option value="croissant">Croissants au Beurre</option>
-    <option value="verrineframboisechocolat">Verrines Framboise Chocolat</option>
-    <option value="sauteporc">Sauté de Porc aux Légumes</option>
-    <option value="veloutecourgette">Velouté de Courgettes</option>
-    <option value="ratatouille">Ratatouille Provençale</option>
-    <option value="financiers">Financiers aux Amandes</option>
-    <option value="choufleurgratin">Gratin de Chou-fleur</option>
-    <option value="salmongrillee">Saumon Grillé au Citron</option>
-    <option value="sobejaponais">Soba Japonais Froids</option>
-    <option value="tartepistache">Tarte à la Pistache</option>
-    <option value="agneluroti">Gigot d'Agneau Rôti</option>
-    <option value="crepesbretonnes">Galettes Bretonnes</option>
-    <option value="stroganov">Bœuf Stroganoff</option>
-    <option value="pizzahawaienne">Pizza Hawaïenne</option>
-    <option value="pouletescalopes">Escalopes de Poulet Panées</option>
-    <option value="tofusaute">Tofu Sauté Teriyaki</option>
-    <option value="saladecaprese">Salade Caprese</option>
-    <option value="moulesmarinieres">Moules Marinières</option>
-    <option value="coktailcosmopolitan">Sex on the Beach</option>
-    <option value="mocktailmentheagume">Mocktail Menthe Concombre</option>
-    <option value="tartechocolatcaramel">Tarte Chocolat Caramel</option>
-    <option value="soupeharira">Harira Marocaine</option>
-  </select>
-  <input type="number" id="personnes" value="4" min="1">
-  <button onclick="calculer()">Calculer</button>
-  <div id="resultat"><div id="ficheRecette"></div></div>
+  <!-- ONGLETS CUISINE -->
+  <div class="plan-tabs">
+    <button class="plan-tab active" id="tab-videfrigo" onclick="switchCuisineTab('videfrigo')">🥶 Vide-frigo</button>
+    <button class="plan-tab" id="tab-courses" onclick="switchCuisineTab('courses')">🛒 Liste de courses</button>
+  </div>
+
+  <!-- ONGLET VIDE-FRIGO -->
+  <div id="cuisine-onglet-videfrigo" class="cuisine-onglet">
+    <h2>🥶 Mode vide-frigo</h2>
+    <p class="plan-subtitle">Coche les ingrédients que tu as → on te liste les recettes possibles</p>
+
+    <!-- Recherche d'ingrédient -->
+    <div class="vf-search-box">
+      <input type="text" id="vf-search" placeholder="🔍 Chercher un ingrédient..." oninput="vfFiltrerIngredients(this.value)">
+      <button class="vf-reset-btn" onclick="vfReset()" title="Tout décocher">🗑️ Reset</button>
+    </div>
+
+    <!-- Compteur ingrédients sélectionnés -->
+    <div class="vf-selection-info" id="vf-selection-info">
+      Aucun ingrédient sélectionné — coche ce qui est dans ton frigo
+    </div>
+
+    <!-- Liste des ingrédients (générée dynamiquement) -->
+    <div class="vf-ingredients-container" id="vf-ingredients-container">
+      <!-- Rempli par vfChargerIngredients() -->
+    </div>
+
+    <!-- Résultats : recettes possibles -->
+    <div class="vf-resultats" id="vf-resultats" style="display:none">
+      <h3>🍽️ Recettes possibles</h3>
+      <div class="vf-resultats-liste" id="vf-resultats-liste"></div>
+    </div>
+  </div>
+
+  <!-- ONGLET LISTE DE COURSES (placeholder) -->
+  <div id="cuisine-onglet-courses" class="cuisine-onglet" style="display:none">
+    <h2>🛒 Liste de courses intelligente</h2>
+    <p class="plan-subtitle">Sélectionne plusieurs recettes → on regroupe la liste de courses</p>
+    <div class="vf-placeholder">
+      <p>🚧 Cette fonctionnalité arrive très bientôt !</p>
+      <p style="font-size:13px;color:#888">Tu pourras sélectionner plusieurs recettes et obtenir une liste de courses unifiée, triée par rayon.</p>
+    </div>
+  </div>
 </section>
+
 
 <!-- SECTION PLANIFICATEUR -->
 <section class="planificateur-section" id="section-planificateur" style="display:none">
@@ -5873,11 +5683,11 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/allergenes.js?v=241"></script>
-<script src="js/recettes.js?v=241"></script>
-<script src="js/ingredients_prix.js?v=241"></script>
-<script src="js/tables.js?v=241"></script>
-<script src="js/app.js?v=241"></script>
+<script src="js/allergenes.js?v=242"></script>
+<script src="js/recettes.js?v=242"></script>
+<script src="js/ingredients_prix.js?v=242"></script>
+<script src="js/tables.js?v=242"></script>
+<script src="js/app.js?v=242"></script>
 
 
 

@@ -2896,3 +2896,222 @@ select, input[type="number"] {
   justify-content: center;
   border: 2px solid #1a1a1a;
 }
+
+/* =============================================================================
+   v242 — SECTION CUISINE (Vide-frigo & Liste courses)
+   ============================================================================= */
+.cuisine-section {
+  padding: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.cuisine-section h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.cuisine-onglet {
+  margin-top: 16px;
+}
+
+/* === Vide-frigo : barre de recherche === */
+.vf-search-box {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.vf-search-box input {
+  flex: 1;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50px;
+  padding: 10px 16px;
+  color: white;
+  font-size: 14px;
+}
+
+.vf-search-box input:focus {
+  outline: none;
+  border-color: #ff4d88;
+  background: rgba(255,255,255,.12);
+}
+
+.vf-reset-btn {
+  background: rgba(255,68,68,.2);
+  border: 1px solid rgba(255,68,68,.5);
+  color: #ff8888;
+  border-radius: 50px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: all .2s;
+}
+.vf-reset-btn:hover {
+  background: rgba(255,68,68,.4);
+  color: white;
+}
+
+/* === Info sélection === */
+.vf-selection-info {
+  background: rgba(76,175,80,.1);
+  border: 1px solid rgba(76,175,80,.3);
+  border-radius: 12px;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #aaffcc;
+  text-align: center;
+}
+
+/* === Catégories d'ingrédients === */
+.vf-cat-bloc {
+  margin-bottom: 18px;
+  background: rgba(255,255,255,.03);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.vf-cat-titre {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.vf-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.vf-chip {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  color: #bbb;
+  border-radius: 50px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all .15s;
+  font-family: inherit;
+}
+
+.vf-chip:hover {
+  background: rgba(255,77,136,.15);
+  border-color: rgba(255,77,136,.3);
+  color: white;
+}
+
+.vf-chip-active {
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  border-color: #4caf50;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(76,175,80,.4);
+}
+
+.vf-chip-active::before {
+  content: "✓ ";
+}
+
+/* === Résultats : cartes des recettes possibles === */
+.vf-resultats {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.vf-resultats h3 {
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+
+.vf-resultats-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vf-result-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.vf-result-card:hover {
+  background: rgba(255,77,136,.12);
+  border-color: rgba(255,77,136,.4);
+  transform: translateY(-2px);
+}
+
+.vf-result-pourcent {
+  font-size: 24px;
+  font-weight: 800;
+  min-width: 70px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.vf-100 .vf-result-pourcent { background: linear-gradient(135deg, #4caf50, #66bb6a); color: white; }
+.vf-80 .vf-result-pourcent  { background: linear-gradient(135deg, #8bc34a, #aed581); color: #1a1a1a; }
+.vf-60 .vf-result-pourcent  { background: linear-gradient(135deg, #ffc107, #ffd54f); color: #5a3e00; }
+.vf-low .vf-result-pourcent { background: linear-gradient(135deg, #ff9800, #ffb74d); color: #5a3e00; }
+
+.vf-result-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.vf-result-nom {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.vf-result-manquants {
+  font-size: 12px;
+  color: #999;
+}
+
+.vf-no-result {
+  text-align: center;
+  color: #888;
+  padding: 24px;
+  font-style: italic;
+}
+
+.vf-placeholder {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255,255,255,.03);
+  border-radius: 14px;
+  margin-top: 20px;
+}
+
+.vf-placeholder p {
+  margin: 8px 0;
+  color: #ddd;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .vf-result-pourcent {
+    font-size: 20px;
+    min-width: 56px;
+    padding: 8px;
+  }
+  .vf-result-nom { font-size: 14px; }
+  .vf-result-manquants { font-size: 11px; }
+}
