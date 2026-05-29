@@ -3410,3 +3410,294 @@ select, input[type="number"] {
   .vf-ia-sep { display: none; }
   .vf-ia-hint { display: block; margin: 4px 0; }
 }
+
+/* =============================================================================
+   v249 — LISTE DE COURSES INTELLIGENTE
+   ============================================================================= */
+
+/* Actions en haut */
+.lc-actions {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.lc-btn-ajout {
+  background: linear-gradient(135deg, #ff4d88, #ff6ba1);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  flex: 1;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.lc-btn-ajout:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(255,77,136,.35); }
+
+.lc-btn-reset {
+  background: rgba(255,68,68,.15);
+  color: #ff8888;
+  border: 1px solid rgba(255,68,68,.4);
+  border-radius: 50px;
+  padding: 12px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.lc-btn-reset:hover { background: rgba(255,68,68,.3); color: white; }
+
+/* Panier de recettes */
+.lc-panier-vide {
+  text-align: center;
+  padding: 40px 20px;
+  color: #aaa;
+  background: rgba(255,255,255,.03);
+  border-radius: 14px;
+  border: 1px dashed rgba(255,255,255,.1);
+}
+
+.lc-panier-titre {
+  margin: 16px 0 12px;
+  font-size: 16px;
+  color: #ddd;
+}
+
+.lc-panier-recettes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lc-recette-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.lc-recette-nom {
+  flex: 1;
+  font-size: 14px;
+  color: #ddd;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lc-recette-pers {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0,0,0,.3);
+  border-radius: 50px;
+  padding: 4px 8px;
+}
+.lc-recette-pers button {
+  background: rgba(255,77,136,.2);
+  border: 1px solid rgba(255,77,136,.5);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  padding: 0;
+}
+.lc-recette-pers span { font-size: 12px; color: #ccc; min-width: 50px; text-align: center; }
+
+.lc-recette-retirer {
+  background: rgba(255,68,68,.15);
+  border: 1px solid rgba(255,68,68,.4);
+  color: #ff8888;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+.lc-recette-retirer:hover { background: rgba(255,68,68,.35); color: white; }
+
+/* Liste consolidée */
+.lc-liste {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.lc-liste h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.lc-progress {
+  background: linear-gradient(135deg, rgba(76,175,80,.15), rgba(76,175,80,.05));
+  border: 1px solid rgba(76,175,80,.3);
+  color: #aaffcc;
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+/* Rayons */
+.lc-rayon {
+  background: rgba(255,255,255,.03);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.lc-rayon-titre {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #ffd54f;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.lc-rayon-count {
+  background: rgba(255,193,7,.2);
+  color: #ffc107;
+  padding: 1px 8px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.lc-items {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lc-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.lc-item:hover { background: rgba(255,255,255,.04); }
+.lc-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #4caf50;
+  cursor: pointer;
+}
+.lc-item-label {
+  flex: 1;
+  font-size: 14px;
+  color: #ddd;
+  transition: all 0.2s;
+}
+.lc-item-qte {
+  font-size: 12px;
+  color: #999;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.lc-item-coche .lc-item-label {
+  text-decoration: line-through;
+  color: #555;
+}
+.lc-item-coche .lc-item-qte {
+  color: #555;
+}
+
+/* Modal de sélection des recettes */
+.lc-modal-contenu {
+  max-width: 700px !important;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+.lc-modal-contenu h2 {
+  margin: 0 0 12px;
+  padding-right: 30px;
+}
+#lc-search {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50px;
+  padding: 10px 16px;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+#lc-search:focus { outline: none; border-color: #ff4d88; }
+
+.lc-grille-selection {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px;
+  max-height: 50vh;
+}
+
+.lc-recette-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  color: #bbb;
+  border-radius: 50px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.lc-recette-chip:hover { background: rgba(255,77,136,.15); border-color: rgba(255,77,136,.3); color: white; }
+.lc-recette-chip.lc-chip-active {
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  border-color: #4caf50;
+  color: white;
+  font-weight: 600;
+}
+.lc-chip-check { width: 14px; }
+
+.lc-modal-footer {
+  margin-top: 12px;
+  text-align: center;
+}
+.lc-btn-valider {
+  background: linear-gradient(135deg, #ff4d88, #ff6ba1);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .lc-recette-card { flex-wrap: wrap; }
+  .lc-recette-nom { width: 100%; }
+  .lc-recette-pers span { font-size: 11px; min-width: 40px; }
+}

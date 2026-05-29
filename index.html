@@ -204,11 +204,14 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <!-- Bloc Derniers menus générés (v248) -->
+  <!-- Bloc Dernier menu généré (v249) -->
   <div class="accueil-bloc" id="accueil-menus-bloc">
     <div class="accueil-bloc-header">
       <h2>📅 Dernier menu généré</h2>
-      <button class="accueil-voir-plus" onclick="afficherSection('planificateur', document.querySelectorAll('.nav-btn')[2])">Voir tout →</button>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="accueil-voir-plus" onclick="effacerHistoriqueMenus()" style="color:#ff6b6b;">🗑️ Effacer</button>
+        <button class="accueil-voir-plus" onclick="afficherSection('planificateur', document.querySelectorAll('.nav-btn')[2])">Tout voir →</button>
+      </div>
     </div>
     <div class="accueil-scroll-row" id="accueil-menus-row">
       <div class="accueil-empty">Générez votre premier menu dans l'onglet Menus !</div>
@@ -5638,16 +5641,47 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
-  <!-- ONGLET LISTE DE COURSES (placeholder) -->
+  <!-- ONGLET LISTE DE COURSES (v249) -->
   <div id="cuisine-onglet-courses" class="cuisine-onglet" style="display:none">
     <h2>🛒 Liste de courses intelligente</h2>
-    <p class="plan-subtitle">Sélectionne plusieurs recettes → on regroupe la liste de courses</p>
-    <div class="vf-placeholder">
-      <p>🚧 Cette fonctionnalité arrive très bientôt !</p>
-      <p style="font-size:13px;color:#888">Tu pourras sélectionner plusieurs recettes et obtenir une liste de courses unifiée, triée par rayon.</p>
+    <p class="plan-subtitle">Sélectionne des recettes → on regroupe les ingrédients par rayon</p>
+    
+    <!-- Bouton principal d'ajout + action vider -->
+    <div class="lc-actions">
+      <button class="lc-btn-ajout" onclick="lcOuvrirSelectionRecettes()">➕ Ajouter des recettes</button>
+      <button class="lc-btn-reset" onclick="lcViderListe()" id="lc-btn-reset" style="display:none">🗑️ Tout vider</button>
+    </div>
+    
+    <!-- Recettes dans le panier -->
+    <div class="lc-panier" id="lc-panier">
+      <!-- Rempli par lcAfficherPanier() -->
+    </div>
+    
+    <!-- Liste consolidée par rayon -->
+    <div class="lc-liste" id="lc-liste" style="display:none">
+      <h3>📋 Ta liste de courses</h3>
+      <div class="lc-progress" id="lc-progress">0 / 0 cochés</div>
+      <div class="lc-rayons" id="lc-rayons">
+        <!-- Rempli par lcGenererListe() -->
+      </div>
     </div>
   </div>
 </section>
+
+<!-- MODAL DE SÉLECTION DES RECETTES (v249) -->
+<div id="modal-lc-selection" class="modal-auth-overlay" onclick="if(event.target===this)fermerLCSelection()">
+  <div class="modal-auth-contenu lc-modal-contenu">
+    <button class="modal-fermer" onclick="fermerLCSelection()">✕</button>
+    <h2>🍽️ Choisis des recettes</h2>
+    <input type="text" id="lc-search" placeholder="🔍 Chercher une recette..." oninput="lcFiltrerRecettes(this.value)" autocomplete="off">
+    <div class="lc-grille-selection" id="lc-grille-selection">
+      <!-- Rempli par lcOuvrirSelectionRecettes() -->
+    </div>
+    <div class="lc-modal-footer">
+      <button class="lc-btn-valider" onclick="fermerLCSelection()">Terminer →</button>
+    </div>
+  </div>
+</div>
 
 
 <!-- SECTION PLANIFICATEUR -->
@@ -5742,11 +5776,11 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/allergenes.js?v=248"></script>
-<script src="js/recettes.js?v=248"></script>
-<script src="js/ingredients_prix.js?v=248"></script>
-<script src="js/tables.js?v=248"></script>
-<script src="js/app.js?v=248"></script>
+<script src="js/allergenes.js?v=249"></script>
+<script src="js/recettes.js?v=249"></script>
+<script src="js/ingredients_prix.js?v=249"></script>
+<script src="js/tables.js?v=249"></script>
+<script src="js/app.js?v=249"></script>
 
 
 

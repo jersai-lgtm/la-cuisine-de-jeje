@@ -105,6 +105,9 @@ async function chargerProfil(user) {
     window.userProfile = snap.data();
     // v241 : Restaurer les recettes vues depuis Firebase
     window._recentsVus = window.userProfile.recettesVues || [];
+    // v249 : Init liste de courses si pas définie
+    if (!window.userProfile.listeCourses) window.userProfile.listeCourses = [];
+    if (!window.userProfile.listeCoursesCoches) window.userProfile.listeCoursesCoches = [];
   window.dispatchEvent(new Event('profilMisAJour'));
   } else {
     const profil = {
@@ -114,7 +117,8 @@ async function chargerProfil(user) {
       foyer: null,
       preferences: { regimes:[], allergies:[], allergiesCustom:[], objectifs:[], cuisinesFavorites:[], niveauCuisine:"débutant" },
       favoris: [], historiqueMenus: [], menusFavoris: [],
-      recettesVues: [], totalRecettesVues: 0, recettesCuisinees: []
+      recettesVues: [], totalRecettesVues: 0, recettesCuisinees: [],
+      listeCourses: [], listeCoursesCoches: []
     };
     await ref.set(profil);
     window.userProfile = profil;
