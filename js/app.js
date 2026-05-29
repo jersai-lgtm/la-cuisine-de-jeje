@@ -4162,8 +4162,7 @@ function switchCuisineTab(tab) {
   if (ongletC)  ongletC.style.display  = tab === "courses"   ? "block" : "none";
 }
 
-// === v247 : Demander une recette personnalisée à l'IA Claude ===
-// Génère un prompt riche → copie dans le presse-papier → ouvre claude.ai
+// === v247 : Génère un prompt + copie + affiche les options IA ===
 async function vfDemanderIA() {
   // 1. Vérifier qu'il y a au moins un ingrédient
   if (window._vfSelection.size === 0) {
@@ -4198,7 +4197,7 @@ async function vfDemanderIA() {
   const niveau = prefs.niveauCuisine || "débutant";
   
   // 5. Construire le prompt final
-  let prompt = `Bonjour ! Voici les ingrédients que j'ai actuellement dans mon frigo / placards :
+  const prompt = `Bonjour ! Voici les ingrédients que j'ai actuellement dans mon frigo / placards :
 
 🛒 INGRÉDIENTS DISPONIBLES :
 ${ingredients.map(i => `- ${i}`).join("\n")}
@@ -4221,11 +4220,10 @@ Format attendu :
 Merci !`;
   
   // 6. Copier dans le presse-papier
+  let copieOK = false;
   try {
     await navigator.clipboard.writeText(prompt);
-    if (typeof afficherToast === "function") {
-      afficherToast("📋 Prompt copié ! Ouverture de Claude...");
-    }
+    copieOK = true;
   } catch (e) {
     // Fallback : ancien navigateur ou permission refusée
     const textarea = document.createElement("textarea");
@@ -4236,17 +4234,30 @@ Merci !`;
     textarea.select();
     try {
       document.execCommand("copy");
-      if (typeof afficherToast === "function") afficherToast("📋 Prompt copié ! Ouverture de Claude...");
-    } catch (e2) {
-      if (typeof afficherToast === "function") afficherToast("⚠️ Copie impossible — l'éditeur va s'ouvrir");
-    }
+      copieOK = true;
+    } catch (e2) {}
     document.body.removeChild(textarea);
   }
   
-  // 7. Ouvrir Claude.ai dans un nouvel onglet (avec un petit délai pour le toast)
-  setTimeout(() => {
-    window.open("https://claude.ai/new", "_blank", "noopener,noreferrer");
-  }, 700);
+  // 7. Toast et affichage du menu de choix IA
+  if (copieOK) {
+    if (typeof afficherToast === "function") afficherToast("📋 Prompt copié — choisis ton IA !");
+  } else {
+    if (typeof afficherToast === "function") afficherToast("⚠️ Copie impossible — utilise un site IA et redemande");
+  }
+  
+  // Afficher le menu de choix IA
+  const choix = document.getElementById("vf-ia-choix");
+  if (choix) {
+    choix.style.display = "block";
+    // Scroller pour voir les options
+    setTimeout(() => choix.scrollIntoView({ behavior: "smooth", block: "center" }), 100);
+  }
+}
+
+// Ouvre le site IA choisi dans un nouvel onglet
+function vfOuvrirIA(url) {
+  window.open(url, "_blank", "noopener,noreferrer");
 }
 
 // === Recherche principale ===
