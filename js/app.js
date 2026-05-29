@@ -4007,10 +4007,25 @@ function filtrerMonProfil() {
   document.querySelectorAll(".cat-btn, #menu-categories .pays-btn, #menu-pays .pays-btn").forEach(b => b.classList.remove("active"));
   document.getElementById("btn-mon-profil")?.classList.add("active");
   document.querySelectorAll(".carte").forEach(c => {
-    const cle = c.getAttribute("onclick")?.match(/'(\w+)'/)?.[1];
+    const cle = extraireCleRecetteCarte(c);
     const ok = !cle || estCompatibleMonProfil(cle);
     c.style.display = ok ? "" : "none";
   });
+}
+
+// Extrait la clé recette depuis l'attribut onclick d'une carte.
+// Gère les 2 formats possibles :
+//   - "ouvrirFiche('recette', 'calc-recette')"
+//   - "document.getElementById('personnes').value=8;choisirRecette('recette')"
+function extraireCleRecetteCarte(carte) {
+  const onclick = carte.getAttribute("onclick") || "";
+  // Chercher d'abord ouvrirFiche('xxx' ou choisirRecette('xxx')
+  let m = onclick.match(/(?:ouvrirFiche|choisirRecette)\(\s*['"](\w+)['"]/);
+  if (m) return m[1];
+  // Fallback : prendre la dernière capture entre quotes (souvent la clé recette)
+  const tous = [...onclick.matchAll(/'(\w+)'/g)];
+  if (tous.length > 0) return tous[tous.length - 1][1];
+  return null;
 }
 
 // Le bouton "Mon Profil" n'apparaît que si l'utilisateur a au moins UNE restriction
@@ -4089,7 +4104,9 @@ function filtrerFamille() {
   document.querySelectorAll("#menu-categories .pays-btn").forEach(b => b.classList.remove("active"));
   document.getElementById("btn-filtre-famille")?.classList.add("active");
   document.querySelectorAll(".carte").forEach(c => {
-    const cle = c.getAttribute("onclick")?.match(/'(\w+)'/)?.[1];
+    const cle = typeof extraireCleRecetteCarte === "function" 
+      ? extraireCleRecetteCarte(c)
+      : c.getAttribute("onclick")?.match(/'(\w+)'/)?.[1];
     const ok = !cle || estCompatibleFamille(cle);
     c.style.display = ok ? "" : "none";
   });
