@@ -3365,16 +3365,18 @@ select, input[type="number"] {
 .vf-ia-aide {
   text-align: center;
   margin: 16px 0 0;
-  color: #888;
-  font-size: 12px;
+  color: #1a1a1a;
+  font-size: 13px;
+  background: linear-gradient(135deg, #ffd54f, #ffecb3);
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(255,193,7,.2);
 }
 
-.vf-ia-aide kbd {
-  background: rgba(255,255,255,.1);
-  padding: 1px 6px;
-  border-radius: 4px;
-  font-family: monospace;
-  border: 1px solid rgba(255,255,255,.15);
+.vf-ia-aide strong {
+  color: #c5300f;
+  font-weight: 700;
 }
 
 /* Mobile */
@@ -3624,10 +3626,19 @@ select, input[type="number"] {
 
 /* Modal de sélection des recettes */
 .lc-modal-contenu {
+  background: #1a1a2e;
+  border: 1px solid rgba(255,77,136,.2);
+  border-radius: 24px;
+  padding: 28px 24px;
+  width: 100%;
   max-width: 700px !important;
   max-height: 85vh;
+  position: relative;
+  margin: auto;
   display: flex;
   flex-direction: column;
+  animation: slideUp .3s ease;
+  box-shadow: 0 20px 60px rgba(0,0,0,.8);
 }
 .lc-modal-contenu h2 {
   margin: 0 0 12px;
