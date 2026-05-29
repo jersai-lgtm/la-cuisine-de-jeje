@@ -224,15 +224,16 @@ function chargerAccueilTopMois() {
     return;
   }
   
+  // On utilise miniCarte() pour avoir image + Nutri + emoji + nom + temps (cohérent avec les autres blocs)
   row.innerHTML = top.map(({ cle, score }) => {
-    const r = recettes[cle];
-    const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
-    const img = r.image ? `images/${r.image}` : "";
-    return `<div class="accueil-carte" onclick="ouvrirFiche('${cle}','calc-${cle}')" title="${nom} — ${score} ingrédient${score>1?'s':''} de saison">
-      ${img ? `<img src="${img}" alt="${nom}" loading="lazy">` : `<div class="accueil-carte-emoji">${r.emoji || "🍽️"}</div>`}
-      <div class="accueil-carte-titre">${nom}</div>
-      <div class="accueil-mois-badge">🌱 ${score} de saison</div>
-    </div>`;
+    const carte = (typeof miniCarte === "function") ? miniCarte(cle) : "";
+    // On rajoute un overlay badge "X de saison" en haut à droite de la carte
+    // (insertion via remplacement : on ajoute un span dans le DOM string)
+    if (!carte) return "";
+    return carte.replace(
+      '<div class="mini-carte-info">',
+      `<span class="mini-carte-badge-mois" title="${score} ingrédient${score>1?'s':''} de saison ce mois-ci">🌱 ${score}</span><div class="mini-carte-info">`
+    );
   }).join("");
 }
 
