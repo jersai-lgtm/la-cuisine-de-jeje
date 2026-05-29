@@ -203,6 +203,17 @@ gtag('config', 'G-390C5MY2SS');
       <div class="accueil-empty">Chargement...</div>
     </div>
   </div>
+
+  <!-- Bloc Derniers menus générés (v248) -->
+  <div class="accueil-bloc" id="accueil-menus-bloc">
+    <div class="accueil-bloc-header">
+      <h2>📅 Dernier menu généré</h2>
+      <button class="accueil-voir-plus" onclick="afficherSection('planificateur', document.querySelectorAll('.nav-btn')[2])">Voir tout →</button>
+    </div>
+    <div class="accueil-scroll-row" id="accueil-menus-row">
+      <div class="accueil-empty">Générez votre premier menu dans l'onglet Menus !</div>
+    </div>
+  </div>
 </section>
 
 <!-- CARTES RECETTES -->
@@ -5580,8 +5591,49 @@ gtag('config', 'G-390C5MY2SS');
       <!-- Bouton IA : demander à Claude de générer une recette à partir des ingrédients -->
       <div class="vf-ia-section">
         <div class="vf-ia-titre">✨ Pas trouvé ton bonheur ?</div>
-        <p class="vf-ia-subtitle">Laisse l'IA te créer une recette sur mesure avec ce que tu as !</p>
-        <button class="vf-ia-btn" onclick="vfDemanderIA()">🪄 Demander une recette à l'IA Claude</button>
+        <p class="vf-ia-subtitle">Une IA peut te créer une recette sur mesure avec ce que tu as !</p>
+        
+        <!-- Bouton principal : génère et ouvre un menu de choix -->
+        <button class="vf-ia-btn" onclick="vfDemanderIA()">🪄 Générer une recette IA</button>
+        
+        <!-- Menu de choix IA, caché par défaut -->
+        <div class="vf-ia-choix" id="vf-ia-choix" style="display:none">
+          <div class="vf-ia-choix-titre">📋 Prompt copié ! Choisis ton IA :</div>
+          <div class="vf-ia-options">
+            <button class="vf-ia-option" onclick="vfOuvrirIA('https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat')">
+              <span class="vf-ia-emoji">🦆</span>
+              <span class="vf-ia-nom">DuckDuckGo AI</span>
+              <span class="vf-ia-badge">Sans compte</span>
+            </button>
+            <button class="vf-ia-option" onclick="vfOuvrirIA('https://huggingface.co/chat')">
+              <span class="vf-ia-emoji">🤗</span>
+              <span class="vf-ia-nom">HuggingFace Chat</span>
+              <span class="vf-ia-badge">Sans compte</span>
+            </button>
+            <button class="vf-ia-option" onclick="vfOuvrirIA('https://claude.ai/new')">
+              <span class="vf-ia-emoji">🪄</span>
+              <span class="vf-ia-nom">Claude</span>
+            </button>
+            <button class="vf-ia-option" onclick="vfOuvrirIA('https://chatgpt.com')">
+              <span class="vf-ia-emoji">💬</span>
+              <span class="vf-ia-nom">ChatGPT</span>
+            </button>
+            <button class="vf-ia-option" onclick="vfOuvrirIA('https://gemini.google.com/app')">
+              <span class="vf-ia-emoji">✨</span>
+              <span class="vf-ia-nom">Gemini</span>
+            </button>
+            <button class="vf-ia-option" onclick="vfOuvrirIA('https://chat.mistral.ai/chat')">
+              <span class="vf-ia-emoji">🤖</span>
+              <span class="vf-ia-nom">Le Chat (Mistral)</span>
+            </button>
+          </div>
+          <p class="vf-ia-aide">
+            💡 Sur le site, colle le prompt :<br>
+            <span class="vf-ia-hint"><kbd>Ctrl</kbd>+<kbd>V</kbd> sur PC</span>
+            <span class="vf-ia-sep">·</span>
+            <span class="vf-ia-hint">Appui long sur le champ → <strong>Coller</strong> sur mobile</span>
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -5690,11 +5742,11 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/allergenes.js?v=247"></script>
-<script src="js/recettes.js?v=247"></script>
-<script src="js/ingredients_prix.js?v=247"></script>
-<script src="js/tables.js?v=247"></script>
-<script src="js/app.js?v=247"></script>
+<script src="js/allergenes.js?v=248"></script>
+<script src="js/recettes.js?v=248"></script>
+<script src="js/ingredients_prix.js?v=248"></script>
+<script src="js/tables.js?v=248"></script>
+<script src="js/app.js?v=248"></script>
 
 
 
