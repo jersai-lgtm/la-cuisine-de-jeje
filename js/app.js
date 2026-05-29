@@ -1371,6 +1371,36 @@ function calculerCarteBrioche(version) {
   }, 50);
 }
 
+// Nouvelle gestion des pills brioche (quantité + type)
+// Stocke l'état localement, et OUVRE la fiche (popup) seulement si les 2 sont définis
+window._briocheChoix = { qte: 1, type: "lait" };
+
+function selectionnerBrioche(btn, groupe, valeur) {
+  // Désactiver les autres boutons du même groupe (data-qte ou data-type)
+  const selector = groupe === "qte" ? ".btn-brioche-qte" : ".btn-brioche-type";
+  document.querySelectorAll(selector).forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  
+  // Mettre à jour l'état
+  window._briocheChoix[groupe] = valeur;
+  
+  // Calculer la version (1=1🥛, 2=2🥛, 3=1🚫, 4=2🚫)
+  const { qte, type } = window._briocheChoix;
+  let version;
+  if (type === "lait") version = (qte === 1) ? 1 : 2;
+  else version = (qte === 1) ? 3 : 4;
+  
+  // Ouvrir la fiche avec ce choix
+  document.getElementById("recette").value = "brioche";
+  document.getElementById("personnes").value = version;
+  calculer();
+  setTimeout(() => {
+    const res = document.getElementById("resultat").innerHTML;
+    document.getElementById("modal-resultat").innerHTML = res;
+    document.getElementById("modal-calc").classList.add("visible");
+  }, 50);
+}
+
 // ==============================
 // PLANIFICATEUR DE MENUS
 // ==============================
