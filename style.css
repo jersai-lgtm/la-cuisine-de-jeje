@@ -226,9 +226,41 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 ========================== */
 .brioche-carte-choix {
   display: flex;
-  gap: 3px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
 }
+.brioche-ligne {
+  display: flex;
+  gap: 5px;
+}
+.btn-brioche-pill {
+  flex: 1;
+  background: rgba(255,255,255,.08);
+  color: #ddd;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 10px;
+  padding: 7px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease;
+  white-space: nowrap;
+}
+.btn-brioche-pill:hover {
+  background: rgba(255,77,136,.15);
+  border-color: rgba(255,77,136,.4);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.btn-brioche-pill.active {
+  background: linear-gradient(135deg, #ff4d88 0%, #ff6ba1 100%);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 2px 8px rgba(255,77,136,.4);
+}
+
+/* Legacy : ancien CSS conservé au cas où */
 .btn-brioche-carte {
   background: rgba(255,255,255,.1);
   color: #fff;
@@ -725,7 +757,14 @@ select, input[type="number"] {
   }
   
   .brioche-carte-choix {
-    gap: 3px;
+    gap: 5px;
+  }
+  .brioche-ligne {
+    gap: 4px;
+  }
+  .btn-brioche-pill {
+    padding: 6px 4px;
+    font-size: 11px;
   }
   .btn-brioche-carte {
     padding: 5px 4px;

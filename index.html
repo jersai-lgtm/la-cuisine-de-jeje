@@ -266,11 +266,15 @@ gtag('config', 'G-390C5MY2SS');
     <div class="carte-info">
       <h2>🍞 Brioche</h2>
       <p>⏱ 4h • ⭐ Moyen</p>
-      <div class="carte-calc brioche-carte-choix" onclick="event.stopPropagation()">
-        <button class="btn-brioche-carte" onclick="calculerCarteBrioche(1)">1x🥛</button>
-        <button class="btn-brioche-carte" onclick="calculerCarteBrioche(2)">2x🥛</button>
-        <button class="btn-brioche-carte" onclick="calculerCarteBrioche(3)">1x🥛🚫</button>
-        <button class="btn-brioche-carte" onclick="calculerCarteBrioche(4)">2x🥛🚫</button>
+      <div class="brioche-carte-choix" onclick="event.stopPropagation()">
+        <div class="brioche-ligne">
+          <button class="btn-brioche-pill btn-brioche-qte active" data-qte="1" onclick="selectionnerBrioche(this, 'qte', 1)">1 brioche</button>
+          <button class="btn-brioche-pill btn-brioche-qte" data-qte="2" onclick="selectionnerBrioche(this, 'qte', 2)">2 brioches</button>
+        </div>
+        <div class="brioche-ligne">
+          <button class="btn-brioche-pill btn-brioche-type active" data-type="lait" onclick="selectionnerBrioche(this, 'type', 'lait')">🥛 Avec lait</button>
+          <button class="btn-brioche-pill btn-brioche-type" data-type="sanslait" onclick="selectionnerBrioche(this, 'type', 'sanslait')">🚫 Sans lait</button>
+        </div>
       </div>
     </div>
   </div>
