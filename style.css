@@ -4107,3 +4107,147 @@ select, input[type="number"] {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+
+/* =============================================================================
+   v254 — ÉVOLUTION NUTRI-SCORE
+   ============================================================================= */
+.nutri-evol-block {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px dashed rgba(255,255,255,.12);
+}
+
+/* Résumé en 3 colonnes */
+.nutri-evol-resume {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.nutri-evol-resume-item {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.nutri-evol-resume-label {
+  font-size: 11px;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+
+.nutri-evol-resume-lettre {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+  margin: 0 auto 6px;
+}
+.nutri-evol-resume-lettre.nutri-A { background: #008944; }
+.nutri-evol-resume-lettre.nutri-B { background: #85bb2f; }
+.nutri-evol-resume-lettre.nutri-C { background: #f9b327; }
+.nutri-evol-resume-lettre.nutri-D { background: #ef7c1d; }
+.nutri-evol-resume-lettre.nutri-E { background: #e63312; }
+
+.nutri-evol-resume-stat {
+  font-size: 11px;
+  color: #888;
+  font-weight: 600;
+}
+
+.nutri-evol-resume-nb {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffd54f;
+}
+
+/* Cas avec UN seul mois : on affiche juste un gros indicateur */
+.nutri-evol-moyenne-grande {
+  text-align: center;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+.nutri-evol-moyenne-grande .nutri-evol-label {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+.nutri-evol-moyenne-grande .nutri-evol-lettre {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 32px;
+  color: white;
+  margin: 0 auto 10px;
+}
+.nutri-evol-moyenne-grande .nutri-evol-lettre.nutri-A { background: #008944; }
+.nutri-evol-moyenne-grande .nutri-evol-lettre.nutri-B { background: #85bb2f; }
+.nutri-evol-moyenne-grande .nutri-evol-lettre.nutri-C { background: #f9b327; }
+.nutri-evol-moyenne-grande .nutri-evol-lettre.nutri-D { background: #ef7c1d; }
+.nutri-evol-moyenne-grande .nutri-evol-lettre.nutri-E { background: #e63312; }
+.nutri-evol-moyenne-grande .nutri-evol-stat {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Graphique SVG */
+.nutri-evol-graphique {
+  background: rgba(255,255,255,.03);
+  border-radius: 12px;
+  padding: 8px;
+  overflow-x: auto;
+}
+
+.nutri-evol-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  min-width: 320px;
+}
+
+/* Mobile : 3 colonnes plus serrées */
+@media (max-width: 480px) {
+  .nutri-evol-resume {
+    gap: 6px;
+  }
+  .nutri-evol-resume-item {
+    padding: 10px 4px;
+  }
+  .nutri-evol-resume-label {
+    font-size: 10px;
+  }
+  .nutri-evol-resume-lettre {
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
+  }
+  .nutri-evol-resume-nb {
+    font-size: 20px;
+    padding-top: 4px;
+  }
+}
+
+/* v254 — Plan-field centré (Nombre de personnes au-dessus des boutons +/-) */
+.plan-field-centre {
+  text-align: center;
+}
+.plan-field-centre label {
+  display: block;
+  text-align: center;
+  margin-bottom: 8px;
+}
