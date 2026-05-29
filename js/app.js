@@ -146,6 +146,96 @@ function afficherAccueil() {
   chargerAccueil();
 }
 
+// =============================================================================
+// 🌱 INGRÉDIENTS DE SAISON v253 (France)
+// =============================================================================
+const INGREDIENTS_SAISON_FRANCE = {
+  0:  ["chou","carotte","poireau","endive","navet","panais","salsifis","potiron","courge","butternut","betterave","topinambour","oignon","ail","echalote","celeri","mache","epinard","fenouil","pomme","poire","orange","mandarine","clementine","kiwi","citron","pamplemousse","ananas","chataigne","noix","noisette"],
+  1:  ["chou","carotte","poireau","endive","navet","panais","salsifis","courge","butternut","betterave","topinambour","oignon","ail","echalote","celeri","mache","epinard","fenouil","radis","pomme","poire","orange","mandarine","clementine","kiwi","citron","pamplemousse","ananas"],
+  2:  ["poireau","endive","carotte","chou","navet","panais","betterave","epinard","mache","oignon","ail","blette","asperge","salade","radis","pomme","poire","kiwi","orange","citron","pamplemousse"],
+  3:  ["asperge","radis","salade","petitspois","feve","oignon","epinard","navet","betterave","carotte","blette","rhubarbe","fraise","pomme","poire","citron"],
+  4:  ["asperge","petitspois","feve","radis","salade","courgette","tomate","concombre","oignon","ail","epinard","blette","fraise","cerise","rhubarbe","abricot","pomme"],
+  5:  ["courgette","aubergine","tomate","poivron","concombre","haricot","salade","oignon","ail","fenouil","petitspois","blette","epinard","fraise","cerise","framboise","abricot","melon","peche","prune","groseille","myrtille"],
+  6:  ["tomate","courgette","aubergine","poivron","concombre","haricot","mais","blette","salade","ail","oignon","fenouil","abricot","cerise","framboise","fraise","melon","pasteque","peche","prune","mirabelle","groseille","cassis","myrtille","figue","mure"],
+  7:  ["tomate","aubergine","courgette","poivron","concombre","haricot","mais","blette","salade","abricot","mirabelle","melon","pasteque","raisin","peche","prune","figue","mure","myrtille","framboise","cassis","groseille","pomme"],
+  8:  ["poireau","courge","potiron","butternut","chou","carotte","panais","betterave","brocoli","tomate","courgette","aubergine","poivron","blette","mache","haricot","fenouil","raisin","figue","mirabelle","pomme","poire","mure","myrtille","framboise","prune","melon","pasteque","noisette","noix"],
+  9:  ["potiron","courge","butternut","chou","carotte","panais","navet","brocoli","topinambour","betterave","blette","mache","poireau","fenouil","salsifis","epinard","oignon","ail","raisin","pomme","poire","chataigne","figue","mure","coing","kaki","noix","noisette","mirabelle"],
+  10: ["potiron","courge","butternut","chou","carotte","panais","navet","brocoli","topinambour","betterave","mache","poireau","fenouil","salsifis","endive","celeri","echalote","epinard","oignon","ail","pomme","poire","kiwi","coing","chataigne","noix","noisette","orange","mandarine","clementine"],
+  11: ["chou","carotte","poireau","endive","navet","panais","salsifis","potiron","courge","butternut","betterave","topinambour","oignon","ail","echalote","celeri","mache","epinard","fenouil","pomme","poire","kiwi","orange","mandarine","clementine","citron","pamplemousse","chataigne","noix","noisette"],
+};
+
+const NOMS_MOIS_FR = ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"];
+
+function getIngredientsDuMois() {
+  return INGREDIENTS_SAISON_FRANCE[new Date().getMonth()] || [];
+}
+
+function normaliserPourSaison(s) {
+  return (s || "").toString().toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/œ/g, "oe").replace(/æ/g, "ae");
+}
+
+function scoreSaisonRecette(cle) {
+  const r = recettes[cle];
+  if (!r) return 0;
+  if (r.cat === "cocktails" || r.cat === "mocktails") return 0;
+  
+  const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+  if (!tabKey) return 0;
+  const base = r.base || 4;
+  const ligne = r[tabKey].find(l => l.nb === base || l.patons === base) || r[tabKey][0];
+  if (!ligne) return 0;
+  
+  const motsDuMois = getIngredientsDuMois();
+  if (motsDuMois.length === 0) return 0;
+  
+  let score = 0;
+  Object.keys(ligne).forEach(k => {
+    if (k === "nb" || k === "patons" || k === "total" || k === "label") return;
+    const label = (typeof INGREDIENTS_LABELS !== "undefined" && INGREDIENTS_LABELS[k]) ? INGREDIENTS_LABELS[k] : k;
+    const norm = normaliserPourSaison(label);
+    if (motsDuMois.some(mot => norm.includes(mot))) score++;
+  });
+  return score;
+}
+
+function getRecettesDuMois(n = 10) {
+  const candidats = [];
+  Object.keys(recettes).forEach(cle => {
+    const score = scoreSaisonRecette(cle);
+    if (score > 0) candidats.push({ cle, score });
+  });
+  candidats.sort((a, b) => b.score - a.score);
+  return candidats.slice(0, n);
+}
+
+function chargerAccueilTopMois() {
+  const row = document.getElementById("accueil-mois-row");
+  const titre = document.getElementById("accueil-mois-titre");
+  if (!row) return;
+  
+  const mois = new Date().getMonth();
+  if (titre) titre.textContent = `🌱 Le top de ${NOMS_MOIS_FR[mois]}`;
+  
+  const top = getRecettesDuMois(10);
+  if (top.length === 0) {
+    row.innerHTML = `<div class="accueil-empty">Pas de suggestion saisonnière pour ce mois.</div>`;
+    return;
+  }
+  
+  row.innerHTML = top.map(({ cle, score }) => {
+    const r = recettes[cle];
+    const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
+    const img = r.image ? `images/${r.image}` : "";
+    return `<div class="accueil-carte" onclick="ouvrirFiche('${cle}','calc-${cle}')" title="${nom} — ${score} ingrédient${score>1?'s':''} de saison">
+      ${img ? `<img src="${img}" alt="${nom}" loading="lazy">` : `<div class="accueil-carte-emoji">${r.emoji || "🍽️"}</div>`}
+      <div class="accueil-carte-titre">${nom}</div>
+      <div class="accueil-mois-badge">🌱 ${score} de saison</div>
+    </div>`;
+  }).join("");
+}
+
 function chargerAccueil() {
   chargerAccueilFavoris();
   chargerAccueilMenus();
@@ -154,6 +244,8 @@ function chargerAccueil() {
   chargerAccueilFetiches();
   chargerAccueilRecents();
   chargerAccueilSuggestions();
+  // v253 : Top du mois (ingrédients de saison)
+  chargerAccueilTopMois();
   // S'assurer qu'aucun ancien bloc menus favoris ne traîne
   const ancien = document.getElementById("accueil-menus-favoris-bloc");
   if (ancien) ancien.remove();
