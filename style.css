@@ -3897,3 +3897,172 @@ select, input[type="number"] {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* =============================================================================
+   v252 — TOP 10 DES RECETTES (dans Mes Stats)
+   ============================================================================= */
+.top10-content { padding: 8px 4px; }
+
+.top10-subtitle {
+  margin: 0 0 12px;
+  color: #aaa;
+  font-size: 13px;
+  text-align: center;
+}
+
+.top10-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.top10-cat-btn {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  color: #ccc;
+  border-radius: 50px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.top10-cat-btn:hover {
+  background: rgba(255,77,136,.15);
+  border-color: rgba(255,77,136,.3);
+  color: white;
+}
+.top10-cat-btn.active {
+  background: linear-gradient(135deg, #ff4d88, #ff6ba1);
+  border-color: #ff4d88;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255,77,136,.35);
+}
+
+.top10-titre {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffd54f;
+  margin-bottom: 14px;
+}
+
+.top10-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.top10-empty {
+  text-align: center;
+  padding: 30px 20px;
+  color: #aaa;
+  background: rgba(255,255,255,.03);
+  border-radius: 12px;
+  border: 1px dashed rgba(255,255,255,.1);
+}
+
+.top10-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.top10-item:hover {
+  background: rgba(255,77,136,.1);
+  border-color: rgba(255,77,136,.3);
+  transform: translateX(4px);
+}
+
+.top10-rang {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.08);
+  color: #aaa;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Podium : couleurs spéciales pour les 3 premiers */
+.top10-rang-1 {
+  background: linear-gradient(135deg, #ffd700, #ffb300);
+  color: #5d4037;
+  box-shadow: 0 2px 8px rgba(255,215,0,.4);
+}
+.top10-rang-2 {
+  background: linear-gradient(135deg, #e0e0e0, #bdbdbd);
+  color: #424242;
+  box-shadow: 0 2px 8px rgba(189,189,189,.4);
+}
+.top10-rang-3 {
+  background: linear-gradient(135deg, #cd7f32, #8d4e0c);
+  color: white;
+  box-shadow: 0 2px 8px rgba(205,127,50,.4);
+}
+
+.top10-emoji {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.top10-infos {
+  flex: 1;
+  min-width: 0;
+}
+
+.top10-nom {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top10-stat {
+  font-size: 12px;
+  color: #ffd54f;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.top10-nutri-badge {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.top10-nutri-badge.nutri-A { background: #008944; }
+.top10-nutri-badge.nutri-B { background: #85bb2f; }
+.top10-nutri-badge.nutri-C { background: #f9b327; }
+.top10-nutri-badge.nutri-D { background: #ef7c1d; }
+.top10-nutri-badge.nutri-E { background: #e63312; }
+
+/* Mobile */
+@media (max-width: 480px) {
+  .top10-cat-btn { font-size: 11px; padding: 5px 10px; }
+  .top10-item { padding: 8px 10px; gap: 10px; }
+  .top10-rang { width: 28px; height: 28px; font-size: 13px; }
+  .top10-emoji { font-size: 18px; }
+  .top10-nom { font-size: 13px; }
+}
