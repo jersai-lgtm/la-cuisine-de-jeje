@@ -124,6 +124,7 @@ function afficherAccueil() {
   if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
   if (typeof majBoutonFamille === "function") majBoutonFamille();
   if (typeof majBoutonMonProfil === "function") majBoutonMonProfil();
+  if (typeof cacherFiltresChips === "function") cacherFiltresChips();
 
   // Activer bouton
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
@@ -840,6 +841,8 @@ function afficherHistorique() {
 
 function filtrerFavoris() {
   if (typeof fermerSousMenus === "function") fermerSousMenus();
+  if (typeof cacherFiltresChips === "function") cacherFiltresChips();
+  if (typeof reinitialiserRecherche === "function") reinitialiserRecherche();
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   const btn = document.getElementById('btn-favoris');
   if (btn) btn.classList.add('active');
@@ -3583,17 +3586,33 @@ function viderRecherche() {
   }
 }
 
-// Afficher tout
-function afficherTout() {
+// === v236 : Nouvelle fonction principale pour le mode "Recettes" ===
+// Affiche la grille de cartes + la barre de chips filtres (catégorie + pays)
+function afficherRecettes() {
   window.scrollTo({ top: 0, behavior: "smooth" });
-  fermerSousMenus();
   if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
-  // Désactiver explicitement TOUS les boutons (y compris Mon Profil)
+  reinitialiserRecherche();
+  
+  // Désactiver les autres boutons, activer "Recettes"
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
-  document.getElementById("btn-mon-profil")?.classList.remove("active");
-  const btnTout = document.getElementById("btn-tout");
-  if (btnTout) btnTout.classList.add("active");
-  // Basculer vers la grille, masquer toutes les autres sections
+  document.getElementById("btn-recettes")?.classList.add("active");
+  
+  // Afficher la barre de chips
+  const chips = document.getElementById("filtres-chips");
+  if (chips) chips.style.display = "block";
+  
+  // Réinitialiser les chips : "Tout" actif sur chaque ligne
+  document.querySelectorAll(".filtres-chips .chip").forEach(c => c.classList.remove("active"));
+  document.querySelectorAll(".chips-row").forEach(row => {
+    const premiereChip = row.querySelector(".chip");
+    if (premiereChip) premiereChip.classList.add("active");
+  });
+  
+  // Réinitialiser les filtres internes
+  window._filtreCategorie = "all";
+  window._filtrePays = "all";
+  
+  // Basculer vers la grille
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
   const secCalc    = document.getElementById("section-calculateur");
@@ -3602,71 +3621,83 @@ function afficherTout() {
   if (secAccueil) secAccueil.style.display = "none";
   if (secCartes)  {
     secCartes.classList.add("visible");
-    secCartes.style.display = ""; // s'assurer que l'inline ne bloque pas
+    secCartes.style.display = "";
   }
   if (secCalc)    secCalc.style.display = "none";
   if (secPlan)    secPlan.style.display = "none";
   if (secFestif)  secFestif.style.display = "none";
-  // RÉAFFICHER ABSOLUMENT TOUTES LES CARTES (override tout filtre précédent)
+  
+  // Afficher toutes les cartes
   document.querySelectorAll(".carte").forEach(c => {
     c.style.display = "";
-    c.style.removeProperty("display"); // supprimer même l'attribut style.display="none"
+    c.style.removeProperty("display");
   });
-  // Vider la barre de recherche si elle était utilisée
-  const searchInput = document.getElementById("search-input");
-  if (searchInput && searchInput.value) {
-    searchInput.value = "";
-    const clear = document.getElementById("search-clear");
-    if (clear) clear.style.display = "none";
-  }
-  // Réinitialiser le contexte de recherche
-  window._etatAvantRecherche = null;
-  // Réappliquer les badges visuels (allergie, famille, nutri-score)
+  
   if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
   if (typeof appliquerNutriScoreCartes === "function") appliquerNutriScoreCartes();
 }
 
+// === Chip "Catégorie" : filtre combiné catégorie + pays ===
+function filtrerChipCategorie(cat, btn) {
+  window._filtreCategorie = cat;
+  if (btn) {
+    btn.parentElement.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+    btn.classList.add("active");
+  }
+  appliquerFiltresChips();
+}
+
+// === Chip "Pays" : filtre combiné pays + catégorie ===
+function filtrerChipPays(pays, btn) {
+  window._filtrePays = pays;
+  if (btn) {
+    btn.parentElement.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+    btn.classList.add("active");
+  }
+  appliquerFiltresChips();
+}
+
+// === Application combinée des 2 filtres (catégorie ET pays) ===
+function appliquerFiltresChips() {
+  const cat  = window._filtreCategorie || "all";
+  const pays = window._filtrePays || "all";
+  reinitialiserRecherche();
+  document.querySelectorAll(".carte").forEach(c => {
+    const okCat  = (cat === "all")  || (c.dataset.cat === cat);
+    const okPays = (pays === "all") || (c.dataset.pays === pays);
+    c.style.display = (okCat && okPays) ? "" : "none";
+  });
+  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+}
+
+// === Cacher la barre de chips (Accueil/Favoris/Mon Profil) ===
+function cacherFiltresChips() {
+  const chips = document.getElementById("filtres-chips");
+  if (chips) chips.style.display = "none";
+}
+
+// === Compatibilité : afficherTout() → afficherRecettes() ===
+// Certains liens HTML (accueil "Voir tout →") appellent encore afficherTout
+function afficherTout() {
+  afficherRecettes();
+}
+
 // Toggle sous-menu générique
 function toggleSousMenu(menuId, btn) {
-  // Remonter en haut de page
-  window.scrollTo({ top: 0, behavior: "smooth" });
-  const menu = document.getElementById(menuId);
-  const autreMenu = menuId === "menu-categories" ? "menu-pays" : "menu-categories";
-  const autreBtn  = menuId === "menu-categories" ? "btn-monde" : "btn-categories";
-  const visible = menu.style.display !== "none";
-
-  // Fermer l'autre sous-menu
-  document.getElementById(autreMenu).style.display = "none";
-  document.getElementById(autreBtn).classList.remove("active");
-
-  if (visible) {
-    menu.style.display = "none";
-    btn.classList.remove("active");
-  } else {
-    menu.style.display = "flex";
-    // Désélectionner tous les autres boutons principaux (Accueil, Recettes favorites, Menus favoris, Tout)
-    document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    document.querySelectorAll(`#${menuId} .pays-btn`).forEach(b => b.classList.remove("active"));
-    // Masquer la vue dédiée menus favoris si elle était affichée
-    if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
-    // Basculer vers la grille si on est sur l'accueil
-    const secAccueil = document.getElementById("section-accueil");
-    const secCartes  = document.getElementById("section-cartes");
-    if (secAccueil) secAccueil.style.display = "none";
-    if (secCartes) { secCartes.classList.add("visible"); }
-    // Tout afficher dans la grille
-    document.querySelectorAll(".carte").forEach(c => c.style.display = "");
-    if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
-  }
+  // v236 : les sous-menus dépliables ont été remplacés par des chips
+  // Cette fonction redirige vers le mode "Recettes" (chips visibles)
+  if (typeof afficherRecettes === "function") afficherRecettes();
 }
 
 function fermerSousMenus() {
-  ["menu-categories", "menu-pays"].forEach(id => {
-    document.getElementById(id).style.display = "none";
+  // v236 : les sous-menus dépliables ont été remplacés par des chips fixes
+  // Cette fonction est gardée pour la compatibilité mais devient un no-op
+  ["menu-categories", "menu-pays", "menu-cocktails"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = "none";
   });
-  document.getElementById("btn-categories").classList.remove("active");
-  document.getElementById("btn-monde").classList.remove("active");
+  document.getElementById("btn-categories")?.classList.remove("active");
+  document.getElementById("btn-monde")?.classList.remove("active");
 }
 
 // Filtre catégories (depuis sous-menu)
@@ -4049,6 +4080,7 @@ function filtrerMonProfil() {
   window.scrollTo({ top: 0, behavior: "smooth" });
   basculeVersGrille();
   reinitialiserRecherche();
+  if (typeof cacherFiltresChips === "function") cacherFiltresChips();
   // Désactiver les autres filtres actifs
   document.querySelectorAll(".cat-btn, #menu-categories .pays-btn, #menu-pays .pays-btn").forEach(b => b.classList.remove("active"));
   document.getElementById("btn-mon-profil")?.classList.add("active");
@@ -4230,38 +4262,19 @@ function reinitialiserRecherche() {
 }
 
 function filtrerCategorie(cat) {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-  basculeVersGrille();
-  reinitialiserRecherche();
-  // Désactiver les boutons principaux (Accueil, Recettes favorites, etc.)
-  document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
-  // Réactiver le bouton Catégories
-  const btnCat = document.getElementById("btn-categories");
-  if (btnCat) btnCat.classList.add("active");
-  document.querySelectorAll("#menu-categories .pays-btn").forEach(b => b.classList.remove("active"));
-  event.target.classList.add("active");
-  document.querySelectorAll(".carte").forEach(c => {
-    c.style.display = (c.dataset.cat === cat) ? "" : "none";
-  });
-  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+  // v236 : redirige vers le mode "Recettes" + active la chip catégorie correspondante
+  if (typeof afficherRecettes === "function") afficherRecettes();
+  // Trouver la chip catégorie correspondante et l'activer
+  const chip = document.querySelector(`.filtres-chips .chip[onclick*="filtrerChipCategorie('${cat}'"]`);
+  if (chip) filtrerChipCategorie(cat, chip);
 }
 
 // Filtre par pays
 function filtrerPays(pays) {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-  basculeVersGrille();
-  reinitialiserRecherche();
-  // Désactiver les boutons principaux
-  document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
-  // Réactiver le bouton Monde
-  const btnMonde = document.getElementById("btn-monde");
-  if (btnMonde) btnMonde.classList.add("active");
-  document.querySelectorAll("#menu-pays .pays-btn").forEach(b => b.classList.remove("active"));
-  event.target.classList.add("active");
-  document.querySelectorAll(".carte").forEach(c => {
-    c.style.display = (c.dataset.pays === pays) ? "" : "none";
-  });
-  if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+  // v236 : redirige vers le mode "Recettes" + active la chip pays correspondante
+  if (typeof afficherRecettes === "function") afficherRecettes();
+  const chip = document.querySelector(`.filtres-chips .chip[onclick*="filtrerChipPays('${pays}'"]`);
+  if (chip) filtrerChipPays(pays, chip);
 }
 
 // Calculer depuis une carte et afficher en modal
@@ -5539,8 +5552,7 @@ function afficherSection(section, btn) {
     if (festif)     festif.style.display = "none";
     if (menuCats)   menuCats.style.display = "none";
     if (searchBar)  searchBar.style.display = "none";
-    document.getElementById("menu-categories").style.display = "none";
-    document.getElementById("menu-pays").style.display = "none";
+    if (typeof cacherFiltresChips === "function") cacherFiltresChips();
     if (stats)      stats.style.display = "block";
     // Charger les stats
     if (typeof chargerMesStats === "function") chargerMesStats();
@@ -5555,8 +5567,7 @@ function afficherSection(section, btn) {
     menuCats.style.display = "none";
     planif.style.display = "none";
     searchBar.style.display = "none";
-    document.getElementById("menu-categories").style.display = "none";
-    document.getElementById("menu-pays").style.display = "none";
+    if (typeof cacherFiltresChips === "function") cacherFiltresChips();
   } else if (section === "planificateur") {
     calc.style.display = "none";
     if (cartes)     { cartes.classList.remove("visible"); }
@@ -5565,8 +5576,7 @@ function afficherSection(section, btn) {
     searchBar.style.display = "none";
     // Pré-remplir le formulaire avec le profil
     setTimeout(() => { if (typeof appliquerProfilSurFormulaire === "function") appliquerProfilSurFormulaire(); }, 200);
-    document.getElementById("menu-categories").style.display = "none";
-    document.getElementById("menu-pays").style.display = "none";
+    if (typeof cacherFiltresChips === "function") cacherFiltresChips();
 
     // Restaurer l'onglet qui était actif avant de quitter
     const tabActif = window._planTabActif || "semaine";

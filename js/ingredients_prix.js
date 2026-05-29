@@ -719,11 +719,13 @@ function calculerNutriScore(parPortion) {
 
 // Helper : calcule le Nutri-Score d'une recette complète (ligne du tableau)
 // Poids unitaire moyen (en g) d'un ingrédient compté
+// Note : pour le citron, on prend 30g (jus + zeste consommables) au lieu du fruit entier (~100g)
+// car en pratique on consomme rarement le citron entier dans une recette.
 const POIDS_UNITAIRE = {
   oeuf: 50, oeufs: 50, oeufPate: 50, oeufCreme: 50, oeufChoux: 50,
   jauneoeuf: 18, jauneoeufs: 18, jaunes: 18, jaunesoeufs: 18, jaunesCreme: 18, gJaune: 18,
   blancsoeufs: 32, blancs: 32, blanc: 32,
-  citron: 100, citrons: 100, citronC: 100, citronvert: 70, zestecitron: 10,
+  citron: 30, citrons: 30, citronC: 30, citronvert: 20, zestecitron: 5,
   ail: 3, gingembreail: 5, ailechalote: 5,
   oignon: 100, oignons: 100, oignonRouge: 100, oignonrouge: 100, oignonNouveau: 30, oignonsblanc: 30, echalote: 30,
   banane: 120, bananes: 120, pomme: 150, pommes: 150, poire: 150,
@@ -731,6 +733,49 @@ const POIDS_UNITAIRE = {
   mangue: 300, ananas: 500, melon: 1000, passion: 50,
   serrano: 30,
 };
+
+// === Parser tolérant pour le Nutri-Score ===
+// Comme parserQuantite, mais convertit aussi c.à.s (15g), c.à.c (5g), pincée (0.5g)
+// Permet d'inclure les sucres/confitures/sels dosés en cuillères qui sinon seraient ignorés
+function parserQuantiteNutri(texte) {
+  if (typeof texte === "number") return { valeur: texte, unite: "unite" };
+  if (!texte || typeof texte !== "string") return null;
+  
+  let s = String(texte).trim();
+  if (s === "—" || s === "" || s.toLowerCase().includes("facultatif") || s === "0") return null;
+  
+  s = s.replace(/^[~≈]/, "").trim();
+  s = s.replace(/½/g, "0.5").replace(/¼/g, "0.25").replace(/¾/g, "0.75")
+       .replace(/⅓/g, "0.333").replace(/⅔/g, "0.667")
+       .replace(/⅛/g, "0.125").replace(/⅜/g, "0.375").replace(/⅝/g, "0.625").replace(/⅞/g, "0.875")
+       .replace(/⅙/g, "0.167").replace(/⅚/g, "0.833");
+  s = s.replace(/,/g, ".");
+  
+  const m = s.match(/^([0-9]+(?:\.[0-9]+)?)/);
+  if (!m) return null;
+  
+  let nombre = parseFloat(m[1]);
+  const unite = s.slice(m[0].length).trim().toLowerCase();
+  
+  // === Conversions cuillères (la VRAIE différence avec parserQuantite) ===
+  if (unite.includes("c.à.s") || unite.includes("c.s") || unite.includes("cuillère à soupe") || unite.includes("cuiller")) {
+    return { valeur: nombre * 15, unite: "poids" }; // 1 c.à.s = ~15g
+  }
+  if (unite.includes("c.à.c") || unite.includes("c.c") || unite.includes("cuillère à café")) {
+    return { valeur: nombre * 5, unite: "poids" }; // 1 c.à.c = ~5g
+  }
+  if (unite.includes("pinc")) return { valeur: nombre * 0.5, unite: "poids" }; // 1 pincée = ~0.5g (sel surtout)
+  if (unite.includes("goutte")) return { valeur: nombre * 0.05, unite: "poids" }; // 1 goutte = ~0.05g
+  
+  // Autres conversions (identiques au parser principal)
+  if (unite.includes("sachet")) return { valeur: nombre * 11, unite: "poids" };
+  if (unite === "kg") return { valeur: nombre * 1000, unite: "poids" };
+  if (unite === "l")  return { valeur: nombre * 1000, unite: "poids" };
+  if (unite === "g" || unite === "ml") return { valeur: nombre, unite: "poids" };
+  if (unite === "cl") return { valeur: nombre * 10, unite: "poids" };
+  
+  return { valeur: nombre, unite: "unite" };
+}
 
 // Liste des SPIRITUEUX et boissons alcoolisées pures (pour exclusion Nutri-Score)
 // Le Nutri-Score officiel exclut les boissons alcoolisées.
@@ -759,11 +804,8 @@ function calculerNutriScoreRecette(ligne) {
     const ing = INGREDIENTS_PRIX[nomIng];
     if (!ing) return;
     
-    const q = parserQuantite(valeur);
+    const q = parserQuantiteNutri(valeur);
     if (!q) return;
-    
-    // Convertir en grammes selon l'unité retournée par parserQuantite
-    // parserQuantite retourne { valeur, unite: "poids" | "unite" }
     let grammes = 0;
     if (q.unite === "poids") {
       // Déjà en grammes/ml (parseur a converti kg→g, l→ml, cl→ml, sachet→11g)
