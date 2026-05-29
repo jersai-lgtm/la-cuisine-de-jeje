@@ -5542,7 +5542,7 @@ gtag('config', 'G-390C5MY2SS');
   </div>
 
   <!-- Section 1 : Vue d'ensemble -->
-  <details class="stats-block" open>
+  <details class="stats-block">
     <summary>
       <span class="stats-block-icon">🍳</span>
       <span class="stats-block-title">Vue d'ensemble</span>
@@ -5578,7 +5578,7 @@ gtag('config', 'G-390C5MY2SS');
   </details>
 
   <!-- Section 3 : Records -->
-  <details class="stats-block" open>
+  <details class="stats-block">
     <summary>
       <span class="stats-block-icon">🏆</span>
       <span class="stats-block-title">Records</span>
@@ -5612,7 +5612,55 @@ gtag('config', 'G-390C5MY2SS');
       <!-- Rempli dynamiquement -->
     </div>
   </details>
+
+  <!-- Section 5 : Vos retours v256 -->
+  <details class="stats-block" id="bloc-avis">
+    <summary>
+      <span class="stats-block-icon">💌</span>
+      <span class="stats-block-title">Donner mon avis</span>
+      <span class="stats-block-chevron">▾</span>
+    </summary>
+    <div class="avis-content">
+      <p class="avis-subtitle">Aide-moi à améliorer l'application !</p>
+      
+      <div class="avis-stats-globales" id="avis-stats-globales">
+        <span class="avis-empty">Chargement...</span>
+      </div>
+      
+      <div id="mon-avis-zone">
+        <button class="avis-btn-principal" onclick="ouvrirModalAvis()">⭐ Noter l'application</button>
+      </div>
+      
+      <div id="avis-admin-zone" style="display:none">
+        <h4 class="avis-admin-titre">👑 Tableau de bord admin</h4>
+        <div id="avis-admin-liste"></div>
+      </div>
+    </div>
+  </details>
 </section>
+
+<!-- MODAL DE NOTATION (v256) -->
+<div id="modal-avis" class="modal-auth-overlay" onclick="if(event.target===this)fermerModalAvis()">
+  <div class="modal-auth-contenu modal-avis-contenu">
+    <button class="modal-fermer" onclick="fermerModalAvis()">✕</button>
+    <h2>⭐ Noter l'application</h2>
+    <p class="avis-modal-subtitle">Ton avis m'aide à améliorer l'app !</p>
+    
+    <div class="avis-etoiles-input" id="avis-etoiles-input">
+      <button type="button" class="avis-etoile" data-note="1" onclick="setNoteAvis(1)">☆</button>
+      <button type="button" class="avis-etoile" data-note="2" onclick="setNoteAvis(2)">☆</button>
+      <button type="button" class="avis-etoile" data-note="3" onclick="setNoteAvis(3)">☆</button>
+      <button type="button" class="avis-etoile" data-note="4" onclick="setNoteAvis(4)">☆</button>
+      <button type="button" class="avis-etoile" data-note="5" onclick="setNoteAvis(5)">☆</button>
+    </div>
+    <div class="avis-note-text" id="avis-note-text">Choisis une note</div>
+    
+    <textarea id="avis-commentaire" class="avis-textarea" placeholder="Un commentaire ? Qu'est-ce qui te plaît / déplaît ? (optionnel)" maxlength="500" rows="4" oninput="majCompteurAvis()"></textarea>
+    <div class="avis-compteur" id="avis-compteur">0/500</div>
+    
+    <button class="avis-btn-envoyer" onclick="envoyerAvis()" id="avis-btn-envoyer">💌 Envoyer mon avis</button>
+  </div>
+</div>
 
 <!-- SECTION CUISINE — Vide-frigo & Liste de courses (v242) -->
 <section class="cuisine-section" id="section-cuisine" style="display:none">
@@ -5835,11 +5883,11 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/allergenes.js?v=254"></script>
-<script src="js/recettes.js?v=254"></script>
-<script src="js/ingredients_prix.js?v=254"></script>
-<script src="js/tables.js?v=254"></script>
-<script src="js/app.js?v=254"></script>
+<script src="js/allergenes.js?v=256"></script>
+<script src="js/recettes.js?v=256"></script>
+<script src="js/ingredients_prix.js?v=256"></script>
+<script src="js/tables.js?v=256"></script>
+<script src="js/app.js?v=256"></script>
 
 
 

@@ -4251,3 +4251,352 @@ select, input[type="number"] {
   text-align: center;
   margin-bottom: 8px;
 }
+
+/* =============================================================================
+   v255 — BADGE 📝 sur les cartes avec note personnelle
+   ============================================================================= */
+.carte-note-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffc107, #ffd54f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  cursor: help;
+  box-shadow: 0 2px 8px rgba(255,193,7,.4), 0 0 0 2px rgba(0,0,0,.3);
+  z-index: 3;
+  transition: transform 0.2s;
+  animation: noteBadgePulse 3s ease-in-out infinite;
+}
+
+.carte-note-badge:hover {
+  transform: scale(1.15);
+}
+
+@keyframes noteBadgePulse {
+  0%, 100% { box-shadow: 0 2px 8px rgba(255,193,7,.4), 0 0 0 2px rgba(0,0,0,.3); }
+  50%      { box-shadow: 0 2px 14px rgba(255,193,7,.7), 0 0 0 2px rgba(0,0,0,.3); }
+}
+
+/* Si la carte a aussi un Nutri-Score (en haut à droite par défaut), 
+   on déplace le badge note légèrement pour ne pas se chevaucher */
+.carte:has(.carte-nutri) .carte-note-badge {
+  top: 8px;
+  right: 50px; /* à côté du badge Nutri */
+}
+
+/* =============================================================================
+   v256 — SYSTÈME D'AVIS (notation 1-5 étoiles + commentaires)
+   ============================================================================= */
+.avis-content { padding: 4px; }
+
+.avis-subtitle {
+  color: #aaa;
+  font-size: 13px;
+  text-align: center;
+  margin: 0 0 14px;
+}
+
+/* Stats globales */
+.avis-stats-globales {
+  background: linear-gradient(135deg, rgba(255,193,7,.1), rgba(255,193,7,.05));
+  border: 1px solid rgba(255,193,7,.2);
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.avis-empty { color: #888; font-size: 13px; font-style: italic; }
+.avis-moyenne-affichage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.avis-moyenne-etoiles {
+  font-size: 24px;
+  color: #ffc107;
+  letter-spacing: 2px;
+}
+.avis-moyenne-chiffre {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+.avis-moyenne-nb {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Bouton principal */
+.avis-btn-principal {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #ffc107, #ffd54f);
+  color: #1a1a1a;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(255,193,7,.4);
+}
+.avis-btn-principal:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(255,193,7,.55); }
+
+/* État : déjà noté */
+.mon-avis-deja {
+  background: rgba(76,175,80,.1);
+  border: 1px solid rgba(76,175,80,.3);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.mon-avis-deja > span {
+  color: #aaffcc;
+  font-size: 14px;
+  font-weight: 600;
+}
+.avis-btn-modifier {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.2);
+  color: white;
+  border-radius: 50px;
+  padding: 8px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.avis-btn-modifier:hover { background: rgba(255,193,7,.2); border-color: #ffc107; }
+
+/* MODAL DE NOTATION */
+.modal-avis-contenu {
+  background: #1a1a2e;
+  border: 1px solid rgba(255,193,7,.3);
+  border-radius: 24px;
+  padding: 32px 24px;
+  width: 100%;
+  max-width: 480px !important;
+  position: relative;
+  margin: auto;
+  animation: slideUp .3s ease;
+  box-shadow: 0 20px 60px rgba(0,0,0,.8);
+}
+.modal-avis-contenu h2 {
+  margin: 0 0 8px;
+  padding-right: 30px;
+  color: white;
+  text-align: center;
+}
+.avis-modal-subtitle {
+  color: #aaa;
+  font-size: 13px;
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+/* Étoiles cliquables */
+.avis-etoiles-input {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.avis-etoile {
+  background: transparent;
+  border: none;
+  font-size: 42px;
+  color: #555;
+  cursor: pointer;
+  padding: 4px;
+  transition: all 0.15s;
+  font-family: inherit;
+  line-height: 1;
+}
+.avis-etoile:hover {
+  transform: scale(1.2) rotate(-5deg);
+  color: #ffc107;
+}
+.avis-etoile.active {
+  color: #ffc107;
+  text-shadow: 0 0 12px rgba(255,193,7,.6);
+}
+
+.avis-note-text {
+  text-align: center;
+  font-size: 14px;
+  color: #ffd54f;
+  font-weight: 600;
+  margin-bottom: 16px;
+  min-height: 20px;
+}
+
+/* Textarea */
+.avis-textarea {
+  width: 100%;
+  background: rgba(0,0,0,.3);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px;
+  padding: 12px;
+  color: white;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1.5;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 80px;
+}
+.avis-textarea:focus {
+  outline: none;
+  border-color: #ffc107;
+}
+.avis-textarea::placeholder { color: #777; font-style: italic; }
+
+.avis-compteur {
+  text-align: right;
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+/* Bouton envoyer */
+.avis-btn-envoyer {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #ff4d88, #ff6ba1);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(255,77,136,.4);
+}
+.avis-btn-envoyer:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255,77,136,.55);
+}
+.avis-btn-envoyer:disabled {
+  background: #555;
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* ZONE ADMIN */
+#avis-admin-zone {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 2px dashed rgba(255,193,7,.3);
+}
+.avis-admin-titre {
+  text-align: center;
+  color: #ffd54f;
+  margin: 0 0 16px;
+  font-size: 16px;
+}
+
+.avis-distrib-zone {
+  background: rgba(255,255,255,.04);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+.avis-distrib-ligne {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.avis-distrib-ligne:last-child { margin-bottom: 0; }
+.avis-distrib-label {
+  width: 30px;
+  font-size: 12px;
+  color: #ffd54f;
+  font-weight: 600;
+}
+.avis-distrib-bar {
+  flex: 1;
+  height: 14px;
+  background: rgba(255,255,255,.05);
+  border-radius: 50px;
+  overflow: hidden;
+}
+.avis-distrib-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffc107, #ffd54f);
+  border-radius: 50px;
+}
+.avis-distrib-count {
+  width: 30px;
+  text-align: right;
+  font-size: 12px;
+  color: #aaa;
+  font-weight: 600;
+}
+
+.avis-admin-sous-titre {
+  color: #ddd;
+  font-size: 13px;
+  margin: 16px 0 10px;
+}
+
+.avis-admin-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.avis-item {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.avis-item-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+.avis-item-prenom {
+  font-weight: 600;
+  color: white;
+  font-size: 13px;
+}
+.avis-item-etoiles {
+  font-size: 12px;
+}
+.avis-item-date {
+  font-size: 11px;
+  color: #888;
+  margin-left: auto;
+}
+.avis-item-commentaire {
+  color: #ddd;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+.avis-item-sans-commentaire {
+  color: #666;
+  font-size: 11px;
+  font-style: italic;
+}
