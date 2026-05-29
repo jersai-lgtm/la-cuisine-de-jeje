@@ -4017,13 +4017,15 @@ function filtrerMonProfil() {
 // Gère les 2 formats possibles :
 //   - "ouvrirFiche('recette', 'calc-recette')"
 //   - "document.getElementById('personnes').value=8;choisirRecette('recette')"
+// Gère aussi les caractères spéciaux/accentués dans les clés (saladeniçoise, crepesSucrées...)
 function extraireCleRecetteCarte(carte) {
   const onclick = carte.getAttribute("onclick") || "";
   // Chercher d'abord ouvrirFiche('xxx' ou choisirRecette('xxx')
-  let m = onclick.match(/(?:ouvrirFiche|choisirRecette)\(\s*['"](\w+)['"]/);
+  // [^']+ accepte tout sauf le quote, donc gère ç, é, à, etc.
+  let m = onclick.match(/(?:ouvrirFiche|choisirRecette)\(\s*['"]([^'"]+)['"]/);
   if (m) return m[1];
   // Fallback : prendre la dernière capture entre quotes (souvent la clé recette)
-  const tous = [...onclick.matchAll(/'(\w+)'/g)];
+  const tous = [...onclick.matchAll(/'([^']+)'/g)];
   if (tous.length > 0) return tous[tous.length - 1][1];
   return null;
 }
@@ -4106,7 +4108,7 @@ function filtrerFamille() {
   document.querySelectorAll(".carte").forEach(c => {
     const cle = typeof extraireCleRecetteCarte === "function" 
       ? extraireCleRecetteCarte(c)
-      : c.getAttribute("onclick")?.match(/'(\w+)'/)?.[1];
+      : c.getAttribute("onclick")?.match(/['"]([^'"]+)['"]/)?.[1];
     const ok = !cle || estCompatibleFamille(cle);
     c.style.display = ok ? "" : "none";
   });
@@ -5049,6 +5051,359 @@ function fermerModal() {
 }
 
 // Nav bottom
+// ================================================================
+// 📊 MES STATS — Dashboard utilisateur
+// ================================================================
+
+// Fonction principale qui calcule et affiche toutes les stats
+function chargerMesStats() {
+  const user = window.userProfile;
+  const subtitle = document.getElementById("stats-subtitle");
+  
+  // Si pas connecté
+  if (!user || !user.uid) {
+    if (subtitle) subtitle.innerHTML = `👤 <a onclick="ouvrirModalAuth()" style="color:#ff8fb3;cursor:pointer;text-decoration:underline">Connectez-vous</a> pour voir vos statistiques personnelles`;
+    document.getElementById("stats-overview").innerHTML = "";
+    document.getElementById("stats-records").innerHTML = "";
+    document.getElementById("stats-evolution").innerHTML = "";
+    document.getElementById("stats-badges").innerHTML = "";
+    return;
+  }
+  
+  const prenom = user.prenom || user.email?.split("@")[0] || "vous";
+  if (subtitle) subtitle.textContent = `Suivez votre aventure culinaire, ${prenom} !`;
+  
+  // Calculer les statistiques
+  const stats = calculerToutesStats();
+  
+  // Remplir les sections
+  remplirVueEnsemble(stats);
+  remplirRecords(stats);
+  remplirEvolution(stats);
+  remplirBadges(stats);
+}
+
+// Calcule toutes les statistiques à partir des données utilisateur
+function calculerToutesStats() {
+  const user = window.userProfile || {};
+  const favoris = user.favoris || [];
+  const menusFavoris = user.menusFavoris || [];
+  const historique = user.historiqueMenus || [];
+  const recents = window._recentsVus || [];
+  
+  // 1) Toutes les recettes utilisées (favoris + historique + récentes vues)
+  const recettesVues = new Set([...recents, ...favoris]);
+  historique.forEach(menu => {
+    (menu.menus || menu.menu || []).forEach(plat => {
+      if (typeof plat === "string") recettesVues.add(plat);
+      else if (plat && plat.cle) recettesVues.add(plat.cle);
+    });
+  });
+  
+  // 2) Compter les occurrences de chaque recette dans l'historique
+  const compteurRecettes = {};
+  historique.forEach(menu => {
+    (menu.menus || menu.menu || []).forEach(plat => {
+      const cle = typeof plat === "string" ? plat : plat?.cle;
+      if (cle) compteurRecettes[cle] = (compteurRecettes[cle] || 0) + 1;
+    });
+  });
+  
+  // 3) Calculer le prix total et kcal totales de TOUTES les recettes essayées
+  let prixTotalCumule = 0, prixCount = 0;
+  let calTotalCumule = 0, calCount = 0;
+  let recettePlusChere = null, recettePlusKcal = null, recettePlusRapide = null;
+  let prixMax = 0, calMax = 0, tempsMin = Infinity;
+  
+  recettesVues.forEach(cle => {
+    const r = recettes[cle];
+    if (!r) return;
+    
+    // Prix et calories via la nouvelle fonction
+    if (typeof calculerPrixCaloriesRecette === "function") {
+      const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+      if (tabKey && r[tabKey].length) {
+        const base = r.base || 4;
+        const ligne = r[tabKey].find(l => l.nb === base || l.patons === base) || r[tabKey][0];
+        const res = calculerPrixCaloriesRecette(ligne);
+        if (res.prix > 0) {
+          prixTotalCumule += res.prix;
+          prixCount++;
+          if (res.prix > prixMax) { prixMax = res.prix; recettePlusChere = cle; }
+        }
+        if (res.cal > 0) {
+          calTotalCumule += res.cal;
+          calCount++;
+          if (res.cal > calMax) { calMax = res.cal; recettePlusKcal = cle; }
+        }
+      }
+    }
+    
+    // Temps de préparation (extraire les minutes)
+    const temps = r.temps || "";
+    const min = parseInt(temps.match(/(\d+)\s*min/)?.[1] || temps.match(/(\d+)\s*h/)?.[1]*60 || 0);
+    if (min > 0 && min < tempsMin) { tempsMin = min; recettePlusRapide = cle; }
+  });
+  
+  // 4) Recette la plus refaite
+  let recettePlusRefaite = null, maxRefait = 0;
+  Object.entries(compteurRecettes).forEach(([cle, n]) => {
+    if (n > maxRefait) { maxRefait = n; recettePlusRefaite = cle; }
+  });
+  
+  // 5) Compter par pays / catégorie sur favoris + historique
+  const paysCount = {};
+  const catCount = {};
+  recettesVues.forEach(cle => {
+    const r = recettes[cle];
+    if (!r) return;
+    if (r.pays) paysCount[r.pays] = (paysCount[r.pays] || 0) + 1;
+    if (r.cat) catCount[r.cat] = (catCount[r.cat] || 0) + 1;
+  });
+  const topPays = Object.entries(paysCount).sort((a,b) => b[1] - a[1])[0];
+  const topCat = Object.entries(catCount).sort((a,b) => b[1] - a[1])[0];
+  
+  // 6) Évolution mensuelle (nombre de menus générés par mois)
+  const parMois = {};
+  historique.forEach(menu => {
+    const date = menu.date ? new Date(menu.date) : null;
+    if (!date || isNaN(date.getTime())) return;
+    const ym = date.getFullYear() + "-" + String(date.getMonth() + 1).padStart(2, "0");
+    parMois[ym] = (parMois[ym] || 0) + 1;
+  });
+  
+  return {
+    nbRecettesEssayees: recettesVues.size,
+    nbFavoris: favoris.length,
+    nbMenusFavoris: menusFavoris.length,
+    nbMenusGeneres: historique.length,
+    prixMoyen: prixCount > 0 ? prixTotalCumule / prixCount : 0,
+    calMoyen: calCount > 0 ? calTotalCumule / calCount : 0,
+    recettePlusChere: recettePlusChere ? { cle: recettePlusChere, prix: prixMax } : null,
+    recettePlusKcal: recettePlusKcal ? { cle: recettePlusKcal, cal: calMax } : null,
+    recettePlusRapide: recettePlusRapide ? { cle: recettePlusRapide, temps: tempsMin } : null,
+    recettePlusRefaite: recettePlusRefaite ? { cle: recettePlusRefaite, n: maxRefait } : null,
+    topPays,
+    topCat,
+    parMois,
+  };
+}
+
+// Remplit la section "Vue d'ensemble"
+function remplirVueEnsemble(s) {
+  const html = `
+    <div class="stat-card stat-card-or">
+      <div class="stat-emoji">🍳</div>
+      <div class="stat-valeur">${s.nbRecettesEssayees}</div>
+      <div class="stat-label">Recettes essayées</div>
+    </div>
+    <div class="stat-card stat-card-rose">
+      <div class="stat-emoji">❤️</div>
+      <div class="stat-valeur">${s.nbFavoris}</div>
+      <div class="stat-label">Favoris</div>
+    </div>
+    <div class="stat-card stat-card-violet">
+      <div class="stat-emoji">📅</div>
+      <div class="stat-valeur">${s.nbMenusGeneres}</div>
+      <div class="stat-label">Menus générés</div>
+    </div>
+    <div class="stat-card stat-card-vert">
+      <div class="stat-emoji">💝</div>
+      <div class="stat-valeur">${s.nbMenusFavoris}</div>
+      <div class="stat-label">Menus favoris</div>
+    </div>
+    <div class="stat-card stat-card-orange">
+      <div class="stat-emoji">💰</div>
+      <div class="stat-valeur">${s.prixMoyen > 0 ? s.prixMoyen.toFixed(2) + " €" : "—"}</div>
+      <div class="stat-label">Prix moyen</div>
+    </div>
+    <div class="stat-card stat-card-turquoise">
+      <div class="stat-emoji">🔥</div>
+      <div class="stat-valeur">${s.calMoyen > 0 ? Math.round(s.calMoyen) : "—"}</div>
+      <div class="stat-label">Kcal moyennes</div>
+    </div>
+  `;
+  document.getElementById("stats-overview").innerHTML = html;
+}
+
+// Remplit la section "Records"
+function remplirRecords(s) {
+  const nomRecette = (cle) => {
+    if (!cle) return "—";
+    if (typeof getNomRecette === "function") return getNomRecette(cle);
+    return cle;
+  };
+  
+  const records = [];
+  
+  if (s.recettePlusRefaite && s.recettePlusRefaite.n >= 2) {
+    records.push({
+      icon: "🥇",
+      label: "Recette préférée",
+      valeur: nomRecette(s.recettePlusRefaite.cle),
+      detail: `Faite ${s.recettePlusRefaite.n} fois`,
+      cle: s.recettePlusRefaite.cle,
+    });
+  }
+  
+  if (s.recettePlusChere) {
+    records.push({
+      icon: "💎",
+      label: "Plus chère cuisinée",
+      valeur: nomRecette(s.recettePlusChere.cle),
+      detail: `${s.recettePlusChere.prix.toFixed(2)} €`,
+      cle: s.recettePlusChere.cle,
+    });
+  }
+  
+  if (s.recettePlusKcal) {
+    records.push({
+      icon: "🔥",
+      label: "Plus calorique",
+      valeur: nomRecette(s.recettePlusKcal.cle),
+      detail: `${s.recettePlusKcal.cal} kcal`,
+      cle: s.recettePlusKcal.cle,
+    });
+  }
+  
+  if (s.recettePlusRapide && s.recettePlusRapide.temps < Infinity) {
+    records.push({
+      icon: "⚡",
+      label: "La plus rapide",
+      valeur: nomRecette(s.recettePlusRapide.cle),
+      detail: `${s.recettePlusRapide.temps} min`,
+      cle: s.recettePlusRapide.cle,
+    });
+  }
+  
+  if (s.topPays) {
+    const flags = {
+      france: "🇫🇷", italie: "🇮🇹", japon: "🇯🇵", usa: "🇺🇸", mexique: "🇲🇽",
+      espagne: "🇪🇸", chine: "🇨🇳", inde: "🇮🇳", thailande: "🇹🇭", grece: "🇬🇷",
+      maroc: "🇲🇦", liban: "🇱🇧", coree: "🇰🇷", vietnam: "🇻🇳", allemagne: "🇩🇪",
+    };
+    records.push({
+      icon: flags[s.topPays[0]] || "🌍",
+      label: "Cuisine favorite",
+      valeur: s.topPays[0].charAt(0).toUpperCase() + s.topPays[0].slice(1),
+      detail: `${s.topPays[1]} recette${s.topPays[1] > 1 ? "s" : ""}`,
+    });
+  }
+  
+  if (s.topCat) {
+    const catEmojis = {
+      plats: "🍽️", desserts: "🍰", salades: "🥗", healthy: "💚", brunch: "🍳",
+      boulangerie: "🥖", pizzas: "🍕", soupes: "🍲", entrees: "🫕", encas: "🥪",
+    };
+    records.push({
+      icon: catEmojis[s.topCat[0]] || "🍴",
+      label: "Catégorie préférée",
+      valeur: s.topCat[0].charAt(0).toUpperCase() + s.topCat[0].slice(1),
+      detail: `${s.topCat[1]} recette${s.topCat[1] > 1 ? "s" : ""}`,
+    });
+  }
+  
+  if (records.length === 0) {
+    document.getElementById("stats-records").innerHTML = 
+      `<p class="stats-vide">🍳 Commencez à cuisiner pour débloquer vos records !</p>`;
+    return;
+  }
+  
+  const html = records.map(r => `
+    <div class="record-card" ${r.cle ? `onclick="ouvrirFiche('${r.cle}')" style="cursor:pointer"` : ""}>
+      <div class="record-icon">${r.icon}</div>
+      <div class="record-content">
+        <div class="record-label">${r.label}</div>
+        <div class="record-valeur">${r.valeur}</div>
+        <div class="record-detail">${r.detail}</div>
+      </div>
+    </div>
+  `).join("");
+  document.getElementById("stats-records").innerHTML = html;
+}
+
+// Remplit la section "Évolution"
+function remplirEvolution(s) {
+  const mois = Object.entries(s.parMois).sort((a,b) => a[0].localeCompare(b[0]));
+  
+  if (mois.length === 0) {
+    document.getElementById("stats-evolution").innerHTML = 
+      `<p class="stats-vide">📈 Générez des menus pour voir votre évolution !</p>`;
+    return;
+  }
+  
+  const max = Math.max(...mois.map(m => m[1]));
+  const nomsMois = ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Oct", "Nov", "Déc"];
+  
+  const bars = mois.map(([ym, n]) => {
+    const [annee, m] = ym.split("-");
+    const label = nomsMois[parseInt(m) - 1] + " " + annee.slice(-2);
+    const pct = (n / max) * 100;
+    return `
+      <div class="stats-bar-wrap">
+        <div class="stats-bar-label">${label}</div>
+        <div class="stats-bar-track">
+          <div class="stats-bar-fill" style="width:${pct}%">
+            <span class="stats-bar-value">${n}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
+  
+  document.getElementById("stats-evolution").innerHTML = `
+    <p class="stats-evolution-titre">Menus générés par mois</p>
+    <div class="stats-bars">${bars}</div>
+  `;
+}
+
+// Remplit la section "Badges"
+function remplirBadges(s) {
+  const badges = [
+    { id: "premier-pas", emoji: "👶", titre: "Premier pas", desc: "1 recette essayée", debloque: s.nbRecettesEssayees >= 1 },
+    { id: "explorer", emoji: "🧭", titre: "Explorateur", desc: "10 recettes essayées", debloque: s.nbRecettesEssayees >= 10 },
+    { id: "chef", emoji: "👨‍🍳", titre: "Chef en herbe", desc: "25 recettes essayées", debloque: s.nbRecettesEssayees >= 25 },
+    { id: "master", emoji: "🏆", titre: "Master Chef", desc: "50 recettes essayées", debloque: s.nbRecettesEssayees >= 50 },
+    { id: "fan", emoji: "❤️", titre: "Fan", desc: "5 favoris", debloque: s.nbFavoris >= 5 },
+    { id: "collectionneur", emoji: "💎", titre: "Collectionneur", desc: "15 favoris", debloque: s.nbFavoris >= 15 },
+    { id: "planificateur", emoji: "📅", titre: "Planificateur", desc: "5 menus générés", debloque: s.nbMenusGeneres >= 5 },
+    { id: "organisateur", emoji: "🗂️", titre: "Organisateur", desc: "20 menus générés", debloque: s.nbMenusGeneres >= 20 },
+    { id: "fidele", emoji: "🥇", titre: "Fidèle", desc: "Une recette refaite 3 fois", debloque: s.recettePlusRefaite && s.recettePlusRefaite.n >= 3 },
+    { id: "globetrotter", emoji: "🌍", titre: "Globe-trotter", desc: "5 pays différents", debloque: false }, // calculé ci-dessous
+  ];
+  
+  // Calcul globetrotter à partir de userProfile
+  const user = window.userProfile || {};
+  const recettesVues = new Set([...(window._recentsVus || []), ...(user.favoris || [])]);
+  (user.historiqueMenus || []).forEach(menu => {
+    (menu.menus || menu.menu || []).forEach(plat => {
+      const cle = typeof plat === "string" ? plat : plat?.cle;
+      if (cle) recettesVues.add(cle);
+    });
+  });
+  const paysSet = new Set();
+  recettesVues.forEach(cle => {
+    const r = recettes[cle];
+    if (r?.pays) paysSet.add(r.pays);
+  });
+  const ggBadge = badges.find(b => b.id === "globetrotter");
+  if (ggBadge) ggBadge.debloque = paysSet.size >= 5;
+  
+  const html = badges.map(b => `
+    <div class="badge-card ${b.debloque ? 'badge-debloque' : 'badge-verrou'}">
+      <div class="badge-emoji">${b.debloque ? b.emoji : "🔒"}</div>
+      <div class="badge-titre">${b.titre}</div>
+      <div class="badge-desc">${b.desc}</div>
+    </div>
+  `).join("");
+  
+  const debloques = badges.filter(b => b.debloque).length;
+  document.getElementById("stats-badges").innerHTML = `
+    <p class="stats-badges-progress">${debloques} / ${badges.length} badges débloqués</p>
+    <div class="badges-grid">${html}</div>
+  `;
+}
+
 function afficherSection(section, btn) {
   document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
   btn.classList.add("active");
@@ -5060,6 +5415,28 @@ function afficherSection(section, btn) {
   const menuCats   = document.querySelector(".menu-cats");
   const planif     = document.getElementById("section-planificateur");
   const searchBar  = document.querySelector(".search-bar");
+  const stats      = document.getElementById("section-stats");
+  const festif     = document.getElementById("section-festif");
+
+  // Toujours masquer la section stats par défaut (sauf si on y va)
+  if (stats && section !== "stats") stats.style.display = "none";
+
+  if (section === "stats") {
+    if (calc)       calc.style.display = "none";
+    if (cartes)     cartes.classList.remove("visible");
+    if (accueilSec) accueilSec.style.display = "none";
+    if (planif)     planif.style.display = "none";
+    if (festif)     festif.style.display = "none";
+    if (menuCats)   menuCats.style.display = "none";
+    if (searchBar)  searchBar.style.display = "none";
+    document.getElementById("menu-categories").style.display = "none";
+    document.getElementById("menu-pays").style.display = "none";
+    if (stats)      stats.style.display = "block";
+    // Charger les stats
+    if (typeof chargerMesStats === "function") chargerMesStats();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
 
   if (section === "calculateur") {
     calc.style.display = "block";

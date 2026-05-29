@@ -125,7 +125,7 @@ function appliquerPreferencesVisuelles() {
     carte.classList.remove('carte-alerte-bebe', 'carte-alerte-enfant');
 
     if (typeof getNiveauFamille === 'function') {
-      const cle = carte.getAttribute('onclick')?.match(/'(\w+)'/)?.[1];
+      const cle = carte.getAttribute('onclick')?.match(/['"]([^'"]+)['"]/)?.[1];
       if (cle) {
         const niv = getNiveauFamille(cle);
         if (niv) {
@@ -158,7 +158,7 @@ function appliquerPreferencesVisuelles() {
     carte.classList.remove('carte-alerte-niveau');
 
     if (typeof niveauTropEleve === 'function') {
-      const cle = carte.getAttribute('onclick')?.match(/'(\w+)'/)?.[1];
+      const cle = carte.getAttribute('onclick')?.match(/['"]([^'"]+)['"]/)?.[1];
       if (cle) {
         const trop = niveauTropEleve(cle);
         if (trop) {
