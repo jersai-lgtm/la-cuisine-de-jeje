@@ -4600,6 +4600,157 @@ function calculer(recetteArg, personnesArg) {
   document.getElementById("resultat").innerHTML = html;
 }
 
+// ========================================
+// SÉLECTEUR DE PERSONNES DANS LA MODAL
+// ========================================
+// Stocke la recette actuellement affichée dans la modal pour les boutons +/-
+let _recetteActuelleModal = null;
+
+// Quand on ouvre la fiche d'une recette dans la modal,
+// on stocke la clé de la recette et on configure le sélecteur
+function configurerSelecteurModal(recetteCle, personnes) {
+  _recetteActuelleModal = recetteCle;
+  const selecteur = document.getElementById("modal-selecteur-personnes");
+  const input = document.getElementById("modal-personnes-input");
+  if (!selecteur || !input) return;
+  
+  // Trouver le tableau de la recette pour connaître min et max
+  const r = recettes?.[recetteCle];
+  if (!r) {
+    selecteur.style.display = "none";
+    return;
+  }
+  
+  const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+  let min = 1, max = 15;
+  if (tabKey && r[tabKey].length > 0) {
+    const lignes = r[tabKey];
+    const premier = lignes[0];
+    const dernier = lignes[lignes.length - 1];
+    // Champ clé : "nb" ou "patons" pour la pizza
+    const cleNb = premier.nb !== undefined ? "nb" : (premier.patons !== undefined ? "patons" : null);
+    if (cleNb) {
+      min = premier[cleNb] || 1;
+      max = dernier[cleNb] || 15;
+    }
+  }
+  
+  input.min = min;
+  input.max = max;
+  input.value = Math.max(min, Math.min(max, personnes));
+  
+  // Mettre à jour le libellé unité (galette / bun / personne / etc.)
+  const unite = document.getElementById("selecteur-unite");
+  if (unite) {
+    const v = parseInt(input.value);
+    const unites = {
+      "galettetacos": ["galette", "galettes"],
+      "painburger":   ["bun", "buns"],
+      "pizza":        ["pâton", "pâtons"],
+      "gaufres":      ["gaufre", "gaufres"],
+      "cookies":      ["cookie", "cookies"],
+      "madeleine":    ["madeleine", "madeleines"],
+      "muffins":      ["muffin", "muffins"],
+      "financiers":   ["financier", "financiers"],
+      "macarons":     ["macaron", "macarons"],
+      "gyoza":        ["gyoza", "gyozas"],
+      "momos":        ["momo", "momos"],
+      "falafel":      ["falafel", "falafels"],
+      "canelebordelais": ["canelé", "canelés"],
+      "sushimaison":  ["sushi", "sushis"],
+      "pintxosbasques": ["pintxo", "pintxos"],
+      "croissant":    ["croissant", "croissants"],
+      "fondantchocolat": ["fondant", "fondants"],
+      "paindemie":    ["tranche", "tranches"],
+      "overnightoats": ["pot", "pots"],
+      "buddhaBowl":   ["bol", "bols"],
+      "smoothiebowl": ["bol", "bols"],
+      "bowlacai":     ["bol", "bols"],
+      "pancakes":     ["pancake", "pancakes"],
+    };
+    const [sing, plur] = unites[recetteCle] || ["personne", "personnes"];
+    unite.textContent = v > 1 ? plur : sing;
+  }
+  
+  // État des boutons aux bornes
+  const minus = selecteur.querySelector(".calc-btn-minus");
+  const plus  = selecteur.querySelector(".calc-btn-plus");
+  if (minus) minus.disabled = (parseInt(input.value) <= min);
+  if (plus)  plus.disabled  = (parseInt(input.value) >= max);
+  
+  selecteur.style.display = "flex";
+}
+
+// Bouton +/- de la modal : change la valeur et relance calculer()
+function changerPersonnesModal(delta) {
+  const input = document.getElementById("modal-personnes-input");
+  if (!input || !_recetteActuelleModal) return;
+  const min = parseInt(input.min) || 1;
+  const max = parseInt(input.max) || 15;
+  let val = parseInt(input.value) || 1;
+  val = Math.max(min, Math.min(max, val + delta));
+  input.value = val;
+  // Petite animation bump
+  input.classList.remove("bump");
+  void input.offsetWidth;
+  input.classList.add("bump");
+  // Désactiver boutons aux bornes
+  const selecteur = document.getElementById("modal-selecteur-personnes");
+  if (selecteur) {
+    const minus = selecteur.querySelector(".calc-btn-minus");
+    const plus  = selecteur.querySelector(".calc-btn-plus");
+    if (minus) minus.disabled = (val <= min);
+    if (plus)  plus.disabled  = (val >= max);
+  }
+  // Mettre à jour l'unité affichée
+  const unite = document.getElementById("selecteur-unite");
+  if (unite) {
+    // On garde la même unité mais on ajuste singulier/pluriel
+    const txt = unite.textContent;
+    // Tente de retirer un éventuel "s" final pour partir de la base singulière
+    const baseSing = txt.endsWith("s") ? txt.slice(0, -1) : txt;
+    unite.textContent = val > 1 ? baseSing + "s" : baseSing;
+  }
+  // Recalculer et mettre à jour le contenu de modal-resultat
+  recalculerDansModal();
+}
+
+// Quand on tape directement dans l'input
+function onChangePersonnesModal() {
+  const input = document.getElementById("modal-personnes-input");
+  if (!input || !_recetteActuelleModal) return;
+  const min = parseInt(input.min) || 1;
+  const max = parseInt(input.max) || 15;
+  let val = parseInt(input.value);
+  if (isNaN(val) || val < min) val = min;
+  if (val > max) val = max;
+  input.value = val;
+  // Désactiver boutons aux bornes
+  const selecteur = document.getElementById("modal-selecteur-personnes");
+  if (selecteur) {
+    const minus = selecteur.querySelector(".calc-btn-minus");
+    const plus  = selecteur.querySelector(".calc-btn-plus");
+    if (minus) minus.disabled = (val <= min);
+    if (plus)  plus.disabled  = (val >= max);
+  }
+  recalculerDansModal();
+}
+
+// Relance calculer() pour la recette actuellement dans la modal
+function recalculerDansModal() {
+  if (!_recetteActuelleModal) return;
+  const input = document.getElementById("modal-personnes-input");
+  if (!input) return;
+  const val = parseInt(input.value) || 1;
+  // calculer() met à jour #resultat
+  calculer(_recetteActuelleModal, val);
+  // Recopier dans modal-resultat
+  setTimeout(() => {
+    const res = document.getElementById("resultat").innerHTML;
+    document.getElementById("modal-resultat").innerHTML = res;
+  }, 50);
+}
+
 function calculerCarte(recette, inputId) {
   const input = document.getElementById(inputId);
   if (!input) return;
@@ -4610,6 +4761,8 @@ function calculerCarte(recette, inputId) {
     const res = document.getElementById("resultat").innerHTML;
     document.getElementById("modal-resultat").innerHTML = res;
     document.getElementById("modal-calc").classList.add("visible");
+    // Configurer le sélecteur de personnes dans la modal
+    configurerSelecteurModal(recette, val);
   }, 50);
 }
 
@@ -4704,6 +4857,10 @@ function fermerModal() {
   const inputP = document.getElementById("personnes");
   if (inputP) delete inputP.dataset.modified;
   document.getElementById("modal-calc").classList.remove("visible");
+  // Réinitialiser le sélecteur de personnes
+  _recetteActuelleModal = null;
+  const selecteur = document.getElementById("modal-selecteur-personnes");
+  if (selecteur) selecteur.style.display = "none";
 }
 
 // Nav bottom
