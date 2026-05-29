@@ -3941,6 +3941,7 @@ function vfChargerIngredients() {
   if (!container) return;
   
   // Récupérer la liste de tous les ingrédients uniques utilisés dans les recettes
+  // ET GROUPER PAR LABEL AFFICHÉ pour éviter les doublons (beurre/beurrPate/beurrCreme...)
   if (!window._vfIngredients) {
     const ingSet = new Set();
     Object.values(recettes).forEach(r => {
@@ -3952,41 +3953,57 @@ function vfChargerIngredients() {
         }
       });
     });
-    window._vfIngredients = Array.from(ingSet).sort();
+    
+    // Construire le mapping label → [ingrédients_canoniques...]
+    const labelToIngs = {};
+    Array.from(ingSet).forEach(ing => {
+      const label = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
+      if (!labelToIngs[label]) labelToIngs[label] = [];
+      labelToIngs[label].push(ing);
+    });
+    
+    // Une "entrée d'ingrédient" pour le vide-frigo = { label, ings: [variants] }
+    window._vfIngredients = Object.entries(labelToIngs)
+      .map(([label, ings]) => ({ label, ings, key: ings[0] })) // key = première variante pour stockage
+      .sort((a, b) => a.label.localeCompare(b.label));
   }
   
   // Construire l'affichage par catégories
   let html = "";
-  const ingredientsRanges = new Set();
+  const labelsRanges = new Set();
   
   for (const [cat, mots] of Object.entries(VF_CATEGORIES)) {
-    const ingsDeCetteCat = window._vfIngredients.filter(ing => 
-      mots.some(mot => ing.toLowerCase().includes(mot.toLowerCase()))
-    );
-    if (ingsDeCetteCat.length === 0) continue;
+    const entriesDeCetteCat = window._vfIngredients.filter(entry => {
+      const labelLow = entry.label.toLowerCase();
+      const ingsLow = entry.ings.map(i => i.toLowerCase());
+      return mots.some(mot => {
+        const m = mot.toLowerCase();
+        return labelLow.includes(m) || ingsLow.some(i => i.includes(m));
+      });
+    });
+    if (entriesDeCetteCat.length === 0) continue;
     
     html += `<div class="vf-cat-bloc">
       <h3 class="vf-cat-titre">${cat}</h3>
       <div class="vf-chips-row">`;
-    ingsDeCetteCat.forEach(ing => {
-      ingredientsRanges.add(ing);
-      const nom = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
-      const checked = window._vfSelection.has(ing) ? "vf-chip-active" : "";
-      html += `<button class="vf-chip ${checked}" data-ing="${ing}" onclick="vfToggleIng('${ing}', this)">${nom}</button>`;
+    entriesDeCetteCat.forEach(entry => {
+      labelsRanges.add(entry.label);
+      // On stocke le label comme clé du chip (uniqueness)
+      const checked = window._vfSelection.has(entry.label) ? "vf-chip-active" : "";
+      html += `<button class="vf-chip ${checked}" data-label="${entry.label}" onclick="vfToggleLabel('${entry.label.replace(/'/g, "\\'")}', this)">${entry.label}</button>`;
     });
     html += `</div></div>`;
   }
   
   // Catégorie "Autres" pour ce qui n'est pas rangé
-  const autres = window._vfIngredients.filter(ing => !ingredientsRanges.has(ing));
+  const autres = window._vfIngredients.filter(entry => !labelsRanges.has(entry.label));
   if (autres.length > 0) {
     html += `<div class="vf-cat-bloc">
       <h3 class="vf-cat-titre">📦 Autres</h3>
       <div class="vf-chips-row">`;
-    autres.forEach(ing => {
-      const nom = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
-      const checked = window._vfSelection.has(ing) ? "vf-chip-active" : "";
-      html += `<button class="vf-chip ${checked}" data-ing="${ing}" onclick="vfToggleIng('${ing}', this)">${nom}</button>`;
+    autres.forEach(entry => {
+      const checked = window._vfSelection.has(entry.label) ? "vf-chip-active" : "";
+      html += `<button class="vf-chip ${checked}" data-label="${entry.label}" onclick="vfToggleLabel('${entry.label.replace(/'/g, "\\'")}', this)">${entry.label}</button>`;
     });
     html += `</div></div>`;
   }
@@ -3995,16 +4012,29 @@ function vfChargerIngredients() {
   vfMettreAJourSelection();
 }
 
-// Toggle un ingrédient
-function vfToggleIng(ing, btn) {
-  if (window._vfSelection.has(ing)) {
-    window._vfSelection.delete(ing);
+// Toggle un label (qui regroupe potentiellement plusieurs variantes d'ingrédients)
+function vfToggleLabel(label, btn) {
+  if (window._vfSelection.has(label)) {
+    window._vfSelection.delete(label);
     btn.classList.remove("vf-chip-active");
   } else {
-    window._vfSelection.add(ing);
+    window._vfSelection.add(label);
     btn.classList.add("vf-chip-active");
   }
   vfMettreAJourSelection();
+}
+
+// Retourne l'ensemble des "ingrédients canoniques" actuellement sélectionnés
+// (un label peut couvrir plusieurs variants : beurre, beurrPate, beurrCreme...)
+function vfGetIngredientsCanoniques() {
+  const result = new Set();
+  if (!window._vfIngredients) return result;
+  window._vfIngredients.forEach(entry => {
+    if (window._vfSelection.has(entry.label)) {
+      entry.ings.forEach(i => result.add(i));
+    }
+  });
+  return result;
 }
 
 // Met à jour l'affichage du compteur et calcule les résultats
@@ -4029,7 +4059,10 @@ function vfMettreAJourSelection() {
     return;
   }
   
-  // Pour chaque recette, calculer le % de match
+  // Récupérer TOUS les ingrédients canoniques sélectionnés (un label = potentiellement plusieurs variants)
+  const ingredientsPossedes = vfGetIngredientsCanoniques();
+  
+  // Pour chaque recette, calculer le % de match (en regroupant aussi par label pour éviter double comptage)
   const resultats = [];
   Object.entries(recettes).forEach(([cle, r]) => {
     const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
@@ -4040,15 +4073,23 @@ function vfMettreAJourSelection() {
     );
     if (ingredients.length === 0) return;
     
-    // Combien d'ingrédients sont dans le frigo ?
-    const possedes = ingredients.filter(ing => window._vfSelection.has(ing));
-    const manquants = ingredients.filter(ing => !window._vfSelection.has(ing));
-    const pourcent = Math.round((possedes.length / ingredients.length) * 100);
+    // Convertir les ingrédients de la recette en LABELS uniques (pour ne pas compter beurre+beurrPate 2 fois)
+    const labelsRecette = new Set();
+    ingredients.forEach(ing => {
+      const label = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
+      labelsRecette.add(label);
+    });
+    const labelsArr = Array.from(labelsRecette);
+    
+    // Combien de labels sont sélectionnés ?
+    const labelsPossedes = labelsArr.filter(label => window._vfSelection.has(label));
+    const labelsManquants = labelsArr.filter(label => !window._vfSelection.has(label));
+    const pourcent = Math.round((labelsPossedes.length / labelsArr.length) * 100);
     
     // Ignorer les recettes trop incomplètes (<30%)
     if (pourcent < 30) return;
     
-    resultats.push({ cle, recette: r, pourcent, possedes, manquants, total: ingredients.length });
+    resultats.push({ cle, recette: r, pourcent, manquants: labelsManquants, total: labelsArr.length });
   });
   
   // Trier par % décroissant
@@ -4061,10 +4102,8 @@ function vfMettreAJourSelection() {
       const nom = (typeof getNomRecette === "function" ? getNomRecette(cle) : cle);
       const couleur = pourcent === 100 ? "vf-100" : pourcent >= 80 ? "vf-80" : pourcent >= 60 ? "vf-60" : "vf-low";
       
-      // Limiter à 5 ingrédients manquants affichés
-      const manquantsAffichage = manquants.slice(0, 5).map(m => 
-        (INGREDIENTS_LABELS && INGREDIENTS_LABELS[m]) ? INGREDIENTS_LABELS[m] : m
-      );
+      // Limiter à 5 ingrédients manquants affichés (déjà des labels propres)
+      const manquantsAffichage = manquants.slice(0, 5);
       const manquantsTxt = manquants.length === 0 
         ? "✨ Tu as tout ce qu'il faut !" 
         : `Il te manque : ${manquantsAffichage.join(", ")}${manquants.length > 5 ? ` (+ ${manquants.length - 5} autres)` : ""}`;
@@ -4087,8 +4126,8 @@ function vfFiltrerIngredients(query) {
   const q = query.toLowerCase().trim();
   document.querySelectorAll(".vf-chip").forEach(chip => {
     const txt = chip.textContent.toLowerCase();
-    const ing = (chip.getAttribute("data-ing") || "").toLowerCase();
-    const match = !q || txt.includes(q) || ing.includes(q);
+    const label = (chip.getAttribute("data-label") || "").toLowerCase();
+    const match = !q || txt.includes(q) || label.includes(q);
     chip.style.display = match ? "" : "none";
   });
   // Cacher les catégories qui n'ont plus aucun chip visible
