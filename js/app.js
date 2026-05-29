@@ -841,7 +841,9 @@ function afficherHistorique() {
 
 function filtrerFavoris() {
   if (typeof fermerSousMenus === "function") fermerSousMenus();
-  if (typeof cacherFiltresChips === "function") cacherFiltresChips();
+  // Cacher uniquement les chips Recettes (cat+pays), pas les chips Favoris
+  const chipsRec = document.getElementById("filtres-chips");
+  if (chipsRec) chipsRec.style.display = "none";
   if (typeof reinitialiserRecherche === "function") reinitialiserRecherche();
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   const btn = document.getElementById('btn-favoris');
@@ -887,8 +889,11 @@ function filtrerFavoris() {
 // Affiche la vue dédiée "Menus favoris" (déclenché par l'onglet ❤️ Menus favoris)
 function filtrerMenusFavoris() {
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-  const btn = document.getElementById('btn-menus-favoris');
-  if (btn) btn.classList.add('active');
+  // Activer le bouton "Favoris" (qui contient l'option Menus)
+  document.getElementById('btn-favoris')?.classList.add('active');
+  // Cacher uniquement les chips Recettes (cat+pays), pas les chips Favoris
+  const chipsRec = document.getElementById("filtres-chips");
+  if (chipsRec) chipsRec.style.display = "none";
 
   if (!window.currentUser) { ouvrirModalAuth(); return; }
 
@@ -3674,6 +3679,55 @@ function appliquerFiltresChips() {
 function cacherFiltresChips() {
   const chips = document.getElementById("filtres-chips");
   if (chips) chips.style.display = "none";
+  const chipsFav = document.getElementById("filtres-favoris-chips");
+  if (chipsFav) chipsFav.style.display = "none";
+}
+
+// === v236 : Mode "Favoris" avec chips Recettes/Menus ===
+function afficherFavorisAvecChips() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  reinitialiserRecherche();
+  
+  // Activer le bouton Favoris
+  document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("btn-favoris")?.classList.add("active");
+  
+  // Cacher la barre de chips Recettes (cat+pays) et afficher la barre Favoris
+  const chipsRec = document.getElementById("filtres-chips");
+  if (chipsRec) chipsRec.style.display = "none";
+  const chipsFav = document.getElementById("filtres-favoris-chips");
+  if (chipsFav) chipsFav.style.display = "block";
+  
+  // Activer la chip "Recettes favorites" par défaut
+  document.getElementById("chip-fav-recettes")?.classList.add("active");
+  document.getElementById("chip-fav-menus")?.classList.remove("active");
+  
+  // Afficher les recettes favorites par défaut
+  filtrerFavoris();
+}
+
+// === Chip "Recettes favorites" dans le mode Favoris ===
+function chipFavorisRecettes(btn) {
+  if (btn) {
+    btn.parentElement.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+    btn.classList.add("active");
+  }
+  filtrerFavoris();
+  // Re-afficher la barre de chips Favoris (filtrerFavoris la cache)
+  const chipsFav = document.getElementById("filtres-favoris-chips");
+  if (chipsFav) chipsFav.style.display = "block";
+}
+
+// === Chip "Menus favoris" dans le mode Favoris ===
+function chipFavorisMenus(btn) {
+  if (btn) {
+    btn.parentElement.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+    btn.classList.add("active");
+  }
+  filtrerMenusFavoris();
+  // Re-afficher la barre de chips Favoris (filtrerMenusFavoris la cache)
+  const chipsFav = document.getElementById("filtres-favoris-chips");
+  if (chipsFav) chipsFav.style.display = "block";
 }
 
 // === Compatibilité : afficherTout() → afficherRecettes() ===
