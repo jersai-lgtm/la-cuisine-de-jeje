@@ -5492,7 +5492,68 @@ gtag('config', 'G-390C5MY2SS');
   <button class="nav-btn" onclick="afficherSection('planificateur', this)">
     <span>📅</span><small>Menus</small>
   </button>
+  <button class="nav-btn" onclick="afficherSection('stats', this)">
+    <span>📊</span><small>Mes Stats</small>
+  </button>
 </nav>
+
+<!-- ============================== -->
+<!-- SECTION MES STATS               -->
+<!-- ============================== -->
+<section class="stats-section" id="section-stats" style="display:none">
+  <div class="stats-header">
+    <h2>📊 Mes Stats</h2>
+    <p class="stats-subtitle" id="stats-subtitle">Suivez votre aventure culinaire</p>
+  </div>
+
+  <!-- Section 1 : Vue d'ensemble -->
+  <details class="stats-block" open>
+    <summary>
+      <span class="stats-block-icon">🍳</span>
+      <span class="stats-block-title">Vue d'ensemble</span>
+      <span class="stats-block-chevron">▾</span>
+    </summary>
+    <div class="stats-grid" id="stats-overview">
+      <!-- Rempli dynamiquement -->
+    </div>
+  </details>
+
+  <!-- Section 2 : Records -->
+  <details class="stats-block" open>
+    <summary>
+      <span class="stats-block-icon">🏆</span>
+      <span class="stats-block-title">Records</span>
+      <span class="stats-block-chevron">▾</span>
+    </summary>
+    <div class="stats-records" id="stats-records">
+      <!-- Rempli dynamiquement -->
+    </div>
+  </details>
+
+  <!-- Section 3 : Évolution -->
+  <details class="stats-block">
+    <summary>
+      <span class="stats-block-icon">📈</span>
+      <span class="stats-block-title">Évolution</span>
+      <span class="stats-block-chevron">▾</span>
+    </summary>
+    <div class="stats-evolution" id="stats-evolution">
+      <!-- Rempli dynamiquement -->
+    </div>
+  </details>
+
+  <!-- Section 4 : Badges -->
+  <details class="stats-block">
+    <summary>
+      <span class="stats-block-icon">🏅</span>
+      <span class="stats-block-title">Badges</span>
+      <span class="stats-block-chevron">▾</span>
+    </summary>
+    <div class="stats-badges" id="stats-badges">
+      <!-- Rempli dynamiquement -->
+    </div>
+  </details>
+</section>
 
 <!-- SECTION CALCULATEUR CLASSIQUE (cachée par défaut) -->
 <section class="calculateur" id="section-calculateur" style="display:none">
