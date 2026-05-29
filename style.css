@@ -3231,3 +3231,63 @@ select, input[type="number"] {
   color: #666;
   cursor: not-allowed;
 }
+
+/* =============================================================================
+   v247 — Bouton IA dans le vide-frigo
+   ============================================================================= */
+.vf-ia-section {
+  margin-top: 32px;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(168,85,247,.08), rgba(236,72,153,.08));
+  border: 1px solid rgba(168,85,247,.25);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.vf-ia-titre {
+  font-size: 16px;
+  font-weight: 600;
+  color: #d4a8ff;
+  margin-bottom: 6px;
+}
+
+.vf-ia-subtitle {
+  margin: 0 0 14px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.vf-ia-btn {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 4px 16px rgba(168,85,247,.35);
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vf-ia-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(168,85,247,.5);
+}
+
+.vf-ia-btn:active {
+  transform: scale(0.98);
+}
+
+/* Animation pulse subtile pour attirer l'attention */
+@keyframes vfIaPulse {
+  0%, 100% { box-shadow: 0 4px 16px rgba(168,85,247,.35); }
+  50%      { box-shadow: 0 4px 24px rgba(168,85,247,.6); }
+}
+.vf-ia-btn {
+  animation: vfIaPulse 3s ease-in-out infinite;
+}
