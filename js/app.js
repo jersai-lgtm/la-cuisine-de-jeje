@@ -4162,6 +4162,93 @@ function switchCuisineTab(tab) {
   if (ongletC)  ongletC.style.display  = tab === "courses"   ? "block" : "none";
 }
 
+// === v247 : Demander une recette personnalisée à l'IA Claude ===
+// Génère un prompt riche → copie dans le presse-papier → ouvre claude.ai
+async function vfDemanderIA() {
+  // 1. Vérifier qu'il y a au moins un ingrédient
+  if (window._vfSelection.size === 0) {
+    if (typeof afficherToast === "function") afficherToast("⚠️ Coche d'abord quelques ingrédients !");
+    return;
+  }
+  
+  // 2. Récupérer les labels sélectionnés (lisibles, sans variantes techniques)
+  const ingredients = Array.from(window._vfSelection)
+    .map(label => label.replace(/^[^\s]+\s+/, "").trim()) // retirer l'emoji au début
+    .filter(Boolean);
+  
+  // 3. Récupérer le contexte foyer + préférences pour personnaliser
+  const user = window.userProfile || {};
+  const foyer = user.foyer || {};
+  const prefs = user.preferences || {};
+  
+  const nbPersonnes = (foyer.adultes || 0) + (foyer.ados || 0) + (foyer.enfants || 0) + (foyer.bebes || 0);
+  const nb = nbPersonnes > 0 ? nbPersonnes : 4;
+  
+  // 4. Construire les contraintes
+  const contraintes = [];
+  if (foyer.bebes > 0) contraintes.push(`il y a ${foyer.bebes} bébé(s) de 0-2 ans (pas de miel, peu de sel, pas de fruits à coque entiers)`);
+  if (foyer.enfants > 0) contraintes.push(`il y a ${foyer.enfants} enfant(s) (3-12 ans)`);
+  
+  const regimes = prefs.regimes || [];
+  if (regimes.length > 0) contraintes.push(`régime alimentaire : ${regimes.join(", ")}`);
+  
+  const allergies = (prefs.allergies || []).concat(prefs.allergiesCustom || []);
+  if (allergies.length > 0) contraintes.push(`allergies/intolérances à éviter ABSOLUMENT : ${allergies.join(", ")}`);
+  
+  const niveau = prefs.niveauCuisine || "débutant";
+  
+  // 5. Construire le prompt final
+  let prompt = `Bonjour ! Voici les ingrédients que j'ai actuellement dans mon frigo / placards :
+
+🛒 INGRÉDIENTS DISPONIBLES :
+${ingredients.map(i => `- ${i}`).join("\n")}
+
+👨‍👩‍👧 CONTEXTE :
+- À cuisiner pour ${nb} personne${nb > 1 ? "s" : ""}
+- Niveau cuisine : ${niveau}
+${contraintes.length > 0 ? contraintes.map(c => `- ${c}`).join("\n") : ""}
+
+📋 CE QUE JE VEUX :
+Propose-moi UNE recette créative et délicieuse que je peux faire avec ces ingrédients (tu peux ajouter quelques basiques comme sel, poivre, huile, eau, mais idéalement pas trop d'ingrédients hors liste).
+
+Format attendu :
+1. **Nom de la recette** (avec un petit emoji)
+2. ⏱ Temps de préparation et de cuisson
+3. 📋 Liste des ingrédients (avec quantités précises pour ${nb} pers.)
+4. 👨‍🍳 Étapes de préparation détaillées
+5. 💡 Astuce ou variante si pertinent
+
+Merci !`;
+  
+  // 6. Copier dans le presse-papier
+  try {
+    await navigator.clipboard.writeText(prompt);
+    if (typeof afficherToast === "function") {
+      afficherToast("📋 Prompt copié ! Ouverture de Claude...");
+    }
+  } catch (e) {
+    // Fallback : ancien navigateur ou permission refusée
+    const textarea = document.createElement("textarea");
+    textarea.value = prompt;
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      document.execCommand("copy");
+      if (typeof afficherToast === "function") afficherToast("📋 Prompt copié ! Ouverture de Claude...");
+    } catch (e2) {
+      if (typeof afficherToast === "function") afficherToast("⚠️ Copie impossible — l'éditeur va s'ouvrir");
+    }
+    document.body.removeChild(textarea);
+  }
+  
+  // 7. Ouvrir Claude.ai dans un nouvel onglet (avec un petit délai pour le toast)
+  setTimeout(() => {
+    window.open("https://claude.ai/new", "_blank", "noopener,noreferrer");
+  }, 700);
+}
+
 // === Recherche principale ===
 function rechercherRecette(query) {
   const q = query.toLowerCase().trim();
