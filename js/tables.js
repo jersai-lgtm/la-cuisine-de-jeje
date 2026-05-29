@@ -484,6 +484,7 @@ function getUniteRecette(nom, n) {
     "galettetacos":    ["galette", "galettes"],
     "painburger":      ["bun", "buns"],
     "pizza":           ["pâton", "pâtons"],
+    "brioche":         ["brioche", "brioches"],
     "gaufres":         ["gaufre", "gaufres"],
     "cookies":         ["cookie", "cookies"],
     "madeleine":       ["madeleine", "madeleines"],
@@ -529,10 +530,6 @@ function getSelecteurBriocheHTML(version) {
 function getSelecteurPersonnesHTML(nom, personnes) {
   const r = recettes[nom];
   if (!r) return `<span>${personnes} ${getUniteRecette(nom, personnes)}</span>`;
-  
-  // CAS SPÉCIAL : brioche utilise ses propres boutons de sélection (1 brioche / 2 brioches / avec ou sans lait)
-  // Le sélecteur +/- n'a pas de sens car ce sont 4 versions distinctes, pas une progression
-  if (nom === "brioche") return getSelecteurBriocheHTML(personnes);
   
   // Trouver les bornes min/max selon le tableau de la recette
   const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
@@ -614,8 +611,8 @@ function htmlPrixCalories(nom, quantite) {
   if (data && data.fixe) {
     ratio = 1;
   } else if (nom === "brioche") {
-    // 1=1 avec lait, 2=2 avec lait, 3=1 sans lait, 4=2 sans lait
-    ratio = (quantite === 2 || quantite === 4) ? 2 : 1;
+    // Brioche : 1=1×, 2=2×, 3=3×, 4=4×, 5=5× (simple multiplication)
+    ratio = quantite;
   } else {
     ratio = quantite / pc.base;
   }
@@ -669,7 +666,7 @@ function choisirRecette(nom) {
   const ratio = personnes / data.base;
 
   // Label quantité
-  const briocheVersions = { 1: "1 brioche 🥛", 2: "2 brioches 🥛", 3: "1 brioche 🥛🚫", 4: "2 brioches 🥛🚫" };
+  const briocheVersions = { 1: "1 brioche", 2: "2 brioches", 3: "3 brioches", 4: "4 brioches", 5: "5 brioches" };
   const labelQte = (nom === "patefeuilletee" || nom === "patebrisee")
     ? "🥧 1 pâte (~28 cm)"
     : nom === "patesablee"
@@ -3364,18 +3361,16 @@ function htmlTableauLasagneColonnes(l) {
 }
 
 function htmlTableauBriocheColonnes(l) {
-  const laitRow = l.lait !== "—"
-    ? `<tr><th>🥛 Lait</th><td>${l.lait}</td></tr>`
-    : `<tr><th>🥛 Lait</th><td style="color:#888;">— (version sans lait)</td></tr>`;
   return col(`
-    <tr><th>📋 Version</th><td><b>${l.label}</b></td></tr>
+    <tr><th>🍞 Brioches</th><td><b>${l.nb}</b></td></tr>
+    <tr><th>⚖️ Poids total pâte</th><td><b style="color:#ff8fb3">${l.total}</b></td></tr>
+    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
     <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
-    <tr><th>🌿 Extrait de vanille</th><td>${l.vanille}</td></tr>
-    ${laitRow}
+    <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>
+    <tr><th>🧈 Beurre froid</th><td>${l.beurre}</td></tr>
     <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
     <tr><th>🟨 Levure fraîche</th><td>${l.levure}</td></tr>
     <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
-    <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
-    <tr><th>🧈 Beurre froid</th><td>${l.beurre}</td></tr>`);
+    <tr><th>🌿 Extrait de vanille</th><td>${l.vanille}</td></tr>`);
 }
 
