@@ -604,9 +604,71 @@ function afficherCoursesRecette(nom, personnes) {
 }
 
 function htmlPrixCalories(nom, quantite) {
-  const pc = prixCalories[nom];
-  if (!pc) return "";
   const data = recettes[nom];
+  
+  // === CALCUL AUTOMATIQUE depuis ingredients_prix.js ===
+  // Si la fonction est dispo ET qu'on a un tableau, on calcule en live à partir des ingrédients
+  if (typeof calculerPrixCaloriesRecette === "function" && data) {
+    const tabKey = Object.keys(data).find(k => k.startsWith("tableau") && Array.isArray(data[k]));
+    if (tabKey) {
+      const lignes = data[tabKey];
+      // Trouver la ligne correspondant à la quantité (nb ou patons)
+      const ligne = lignes.find(l => l.nb === quantite || l.patons === quantite);
+      if (ligne) {
+        const res = calculerPrixCaloriesRecette(ligne);
+        if (res.prix > 0) {
+          // Déterminer l'unité d'affichage
+          const unites = {
+            pizza: "pâton", brioche: "brioche", gaufres: "gaufre", cookies: "cookie",
+            galettetacos: "galette", painburger: "bun", paindemie: "tranche",
+            overnightoats: "pot", buddhaBowl: "bol", smoothiebowl: "bol", bowlacai: "bol",
+            madeleine: "madeleine", muffins: "muffin", financiers: "financier", macarons: "macaron",
+            gyoza: "gyoza", momos: "momo", falafel: "falafel", canelebordelais: "canelé",
+            sushimaison: "sushi", pintxosbasques: "pintxo", croissant: "croissant",
+            fondantchocolat: "fondant", pancakes: "pancake", crepes: "personne",
+          };
+          const unite = unites[nom] || "personne";
+          const calParUnite = Math.round(res.cal / quantite);
+          
+          return `
+            <div class="prix-cal-bloc">
+              <div class="prix-cal-item">
+                <span class="pc-icone">💰</span>
+                <div class="pc-valeur">${res.prix.toFixed(2)} €</div>
+                <div class="pc-label">Coût estimé</div>
+              </div>
+              <div class="prix-cal-item">
+                <span class="pc-icone">🔥</span>
+                <div class="pc-valeur">${res.cal} kcal</div>
+                <div class="pc-label">Total recette</div>
+              </div>
+              <div class="prix-cal-item">
+                <span class="pc-icone">👤</span>
+                <div class="pc-valeur">${calParUnite} kcal</div>
+                <div class="pc-label">Par ${unite}</div>
+              </div>
+            </div>
+            <button class="btn-courses-recette" onclick="afficherCoursesRecette('${nom}', ${quantite})">
+              🛒 Liste de courses
+            </button>
+            <div class="courses-recette-bloc" id="courses-recette-${nom}" style="display:none"></div>
+          `;
+        }
+      }
+    }
+  }
+  
+  // === FALLBACK : ancien système prixCalories pour les recettes sans tableau ===
+  const pc = prixCalories[nom];
+  // Si pas d'entrée prixCalories : on affiche QUAND MÊME le bouton "Liste de courses"
+  if (!pc) {
+    return `
+      <button class="btn-courses-recette" onclick="afficherCoursesRecette('${nom}', ${quantite})">
+        🛒 Liste de courses
+      </button>
+      <div class="courses-recette-bloc" id="courses-recette-${nom}" style="display:none"></div>
+    `;
+  }
   let ratio = 1;
   if (data && data.fixe) {
     ratio = 1;
