@@ -300,6 +300,39 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
   gap: 6px;
   font-weight: 600;
 }
+
+/* Sélecteur spécial brioche dans la fiche (4 boutons sur 2 lignes) */
+.fiche-brioche-choix {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 280px;
+  justify-content: center;
+}
+.btn-brioche-pill-fiche {
+  background: rgba(255,255,255,.08);
+  color: #ddd;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease;
+  white-space: nowrap;
+}
+.btn-brioche-pill-fiche:hover {
+  background: rgba(255,77,136,.15);
+  border-color: rgba(255,77,136,.4);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.btn-brioche-pill-fiche.active {
+  background: linear-gradient(135deg, #ff4d88 0%, #ff6ba1 100%);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 2px 6px rgba(255,77,136,.4);
+}
 .fiche-selecteur-personnes .selecteur-pre,
 .fiche-selecteur-personnes .selecteur-post {
   color: #ffb3cc;
