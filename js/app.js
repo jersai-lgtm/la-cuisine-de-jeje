@@ -6508,8 +6508,204 @@ function chargerMesStats() {
   remplirRecords(stats);
   remplirEvolution(stats);
   remplirBadges(stats);
+  // v252 : Tops
+  if (typeof top10Initialiser === "function") top10Initialiser();
 }
 
+// =============================================================================
+// 🥇 TOP 10 DES RECETTES v252
+// =============================================================================
+// Classements multi-critères : économiques, légères, copieuses, Nutri, cuisinées, vues
+// =============================================================================
+
+// Cache des stats calculées (évite de recalculer 413 recettes à chaque switch)
+window._top10Cache = null;
+window._top10CritereActuel = "economiques";
+
+// Calcule prix/cal/nutri pour TOUTES les recettes (une seule fois, mis en cache)
+function top10CalculerCache() {
+  if (window._top10Cache) return window._top10Cache;
+  
+  const cache = [];
+  
+  Object.entries(recettes).forEach(([cle, r]) => {
+    // Exclure les cocktails / mocktails (pas pertinent pour ces stats)
+    if (r.cat === "cocktails" || r.cat === "mocktails") return;
+    
+    const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (!tabKey) return;
+    
+    const base = r.base || 4;
+    const ligne = r[tabKey].find(l => l.nb === base || l.patons === base) || r[tabKey][0];
+    if (!ligne) return;
+    
+    // Nb de portions pour calcul "par personne"
+    const portions = ligne.nb || ligne.patons || base;
+    
+    // Calculs
+    let prix = null, cal = null, nutri = null;
+    
+    try {
+      const pc = (typeof calculerPrixCaloriesRecette === "function") 
+        ? calculerPrixCaloriesRecette(ligne) 
+        : null;
+      if (pc && pc.prix > 0) {
+        prix = pc.prix / portions;  // par personne
+        cal = pc.cal / portions;
+      }
+    } catch (e) {}
+    
+    try {
+      const ns = (typeof calculerNutriScoreRecette === "function") 
+        ? calculerNutriScoreRecette(ligne) 
+        : null;
+      if (ns) nutri = ns.lettre;
+    } catch (e) {}
+    
+    cache.push({
+      cle,
+      nom: (typeof getNomRecette === "function") ? getNomRecette(cle) : cle,
+      emoji: r.emoji || "🍽️",
+      pays: r.pays || "",
+      cat: r.cat || "",
+      image: r.image || "",
+      prix, // par personne
+      cal,  // par personne
+      nutri // lettre A-E
+    });
+  });
+  
+  window._top10Cache = cache;
+  return cache;
+}
+
+// Initialise l'affichage Top 10 quand on entre dans Mes Stats
+function top10Initialiser() {
+  // Reset à "économiques" par défaut
+  window._top10CritereActuel = "economiques";
+  // Marquer le bon bouton actif
+  document.querySelectorAll(".top10-cat-btn").forEach(b => {
+    b.classList.toggle("active", b.getAttribute("data-critere") === "economiques");
+  });
+  top10Afficher("economiques");
+}
+
+// Switche entre les catégories
+function top10Switcher(critere, btn) {
+  document.querySelectorAll(".top10-cat-btn").forEach(b => b.classList.remove("active"));
+  if (btn) btn.classList.add("active");
+  window._top10CritereActuel = critere;
+  top10Afficher(critere);
+}
+
+// Affiche le top 10 selon le critère
+function top10Afficher(critere) {
+  const cache = top10CalculerCache();
+  const liste = document.getElementById("top10-liste");
+  const titreEl = document.getElementById("top10-titre");
+  if (!liste) return;
+  
+  // Filtrer et trier
+  let recs = cache.slice();
+  let titre = "";
+  let formatStat = (r) => "";
+  
+  switch (critere) {
+    case "economiques":
+      recs = recs.filter(r => r.prix !== null && r.prix > 0)
+                 .sort((a, b) => a.prix - b.prix);
+      titre = "💰 Les 10 plus économiques";
+      formatStat = r => `${r.prix.toFixed(2)} € / pers.`;
+      break;
+      
+    case "legeres":
+      recs = recs.filter(r => r.cal !== null && r.cal > 0)
+                 .sort((a, b) => a.cal - b.cal);
+      titre = "🌱 Les 10 plus légères";
+      formatStat = r => `${Math.round(r.cal)} kcal / pers.`;
+      break;
+      
+    case "copieuses":
+      recs = recs.filter(r => r.cal !== null && r.cal > 0)
+                 .sort((a, b) => b.cal - a.cal);
+      titre = "💪 Les 10 plus copieuses";
+      formatStat = r => `${Math.round(r.cal)} kcal / pers.`;
+      break;
+      
+    case "nutri":
+      // Order: A=5, B=4, C=3, D=2, E=1
+      const nutriRank = { "A": 5, "B": 4, "C": 3, "D": 2, "E": 1 };
+      recs = recs.filter(r => r.nutri)
+                 .sort((a, b) => (nutriRank[b.nutri] || 0) - (nutriRank[a.nutri] || 0));
+      titre = "🥗 Les 10 meilleurs Nutri-Score";
+      formatStat = r => `Nutri-Score ${r.nutri}`;
+      break;
+      
+    case "cuisinees":
+      // Utiliser userProfile.recettesCuisinees
+      const cuisinees = (window.userProfile?.recettesCuisinees || [])
+        .map(c => ({ cle: c.cle, count: c.count || 0 }))
+        .sort((a, b) => b.count - a.count)
+        .slice(0, 10);
+      
+      if (cuisinees.length === 0) {
+        liste.innerHTML = `<div class="top10-empty">Tu n'as encore cuisiné aucune recette.<br><span style="font-size:13px;color:#888">Click sur 👨‍🍳 J'ai cuisiné pour commencer !</span></div>`;
+        if (titreEl) titreEl.textContent = "👨‍🍳 Tes recettes les plus cuisinées";
+        return;
+      }
+      
+      titre = "👨‍🍳 Tes recettes les plus cuisinées";
+      const cacheMap = new Map(cache.map(r => [r.cle, r]));
+      recs = cuisinees
+        .filter(c => cacheMap.has(c.cle))
+        .map(c => ({ ...cacheMap.get(c.cle), _count: c.count }));
+      formatStat = r => `${r._count} fois cuisiné${r._count > 1 ? "s" : ""}`;
+      break;
+      
+    case "vues":
+      // Utiliser _recentsVus (les 100 derniers) — on compte la position
+      const vus = window._recentsVus || [];
+      if (vus.length === 0) {
+        liste.innerHTML = `<div class="top10-empty">Aucune recette consultée encore.<br><span style="font-size:13px;color:#888">Click sur une carte pour la voir !</span></div>`;
+        if (titreEl) titreEl.textContent = "👁️ Tes recettes les plus consultées";
+        return;
+      }
+      
+      titre = "👁️ Tes recettes les plus récemment consultées";
+      const cacheMap2 = new Map(cache.map(r => [r.cle, r]));
+      recs = vus
+        .filter(cle => cacheMap2.has(cle))
+        .slice(0, 10)
+        .map(cle => cacheMap2.get(cle));
+      formatStat = (r, i) => i === 0 ? "Dernière vue 🆕" : `#${i + 1}`;
+      break;
+  }
+  
+  // Limiter à 10
+  recs = recs.slice(0, 10);
+  
+  if (titreEl) titreEl.textContent = titre;
+  
+  if (recs.length === 0) {
+    liste.innerHTML = `<div class="top10-empty">Aucune donnée disponible pour ce classement.</div>`;
+    return;
+  }
+  
+  // Rendu
+  liste.innerHTML = recs.map((r, i) => `
+    <div class="top10-item" onclick="ouvrirFiche('${r.cle}','calc-${r.cle}')">
+      <div class="top10-rang ${i < 3 ? 'top10-rang-' + (i+1) : ''}">${i + 1}</div>
+      <div class="top10-emoji">${r.emoji}</div>
+      <div class="top10-infos">
+        <div class="top10-nom">${r.nom}</div>
+        <div class="top10-stat">${formatStat(r, i)}</div>
+      </div>
+      ${r.nutri ? `<div class="top10-nutri-badge nutri-${r.nutri}">${r.nutri}</div>` : ''}
+    </div>
+  `).join("");
+}
+
+// =============================================================================
 // Calcule toutes les statistiques à partir des données utilisateur
 function calculerToutesStats() {
   const user = window.userProfile || {};
