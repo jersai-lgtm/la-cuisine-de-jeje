@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v220";
+const CACHE_NAME = "cuisine-jeje-v222";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
