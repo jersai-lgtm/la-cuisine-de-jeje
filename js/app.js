@@ -520,7 +520,19 @@ function effacerHistoriqueMenus() {
 function effacerRecents() {
   window._recentsVus = [];
   try { localStorage.removeItem("recentsVus"); } catch(e) {}
+  
+  // v254 : Purger aussi Firebase pour que ça persiste après refresh
+  // Note : on garde "totalRecettesVues" intact pour ne pas perdre les badges curiosité
+  if (window.currentUser && window.userProfile) {
+    window.userProfile.recettesVues = [];
+    try {
+      _db.collection("utilisateurs").doc(window.currentUser.uid)
+        .update({ recettesVues: [] }).catch(() => {});
+    } catch(e) {}
+  }
+  
   chargerAccueilRecents();
+  if (typeof afficherToast === "function") afficherToast("🗑️ Liste effacée");
 }
 
 // Suggestions selon profil
@@ -7133,36 +7145,217 @@ function remplirRecords(s) {
 // Remplit la section "Évolution"
 function remplirEvolution(s) {
   const mois = Object.entries(s.parMois).sort((a,b) => a[0].localeCompare(b[0]));
+  const nomsMois = ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Oct", "Nov", "Déc"];
   
-  if (mois.length === 0) {
+  // v254 : Bloc Évolution Nutri-Score
+  const blocNutri = genererBlocEvolutionNutri();
+  
+  if (mois.length === 0 && !blocNutri) {
     document.getElementById("stats-evolution").innerHTML = 
-      `<p class="stats-vide">📈 Générez des menus pour voir votre évolution !</p>`;
+      `<p class="stats-vide">📈 Générez des menus ou cuisinez des recettes pour voir votre évolution !</p>`;
     return;
   }
   
-  const max = Math.max(...mois.map(m => m[1]));
-  const nomsMois = ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Oct", "Nov", "Déc"];
-  
-  const bars = mois.map(([ym, n]) => {
-    const [annee, m] = ym.split("-");
-    const label = nomsMois[parseInt(m) - 1] + " " + annee.slice(-2);
-    const pct = (n / max) * 100;
-    return `
-      <div class="stats-bar-wrap">
-        <div class="stats-bar-label">${label}</div>
-        <div class="stats-bar-track">
-          <div class="stats-bar-fill" style="width:${pct}%">
-            <span class="stats-bar-value">${n}</span>
+  // Bloc 1 : menus par mois (existant)
+  let blocMenus = "";
+  if (mois.length > 0) {
+    const max = Math.max(...mois.map(m => m[1]));
+    const bars = mois.map(([ym, n]) => {
+      const [annee, m] = ym.split("-");
+      const label = nomsMois[parseInt(m) - 1] + " " + annee.slice(-2);
+      const pct = (n / max) * 100;
+      return `
+        <div class="stats-bar-wrap">
+          <div class="stats-bar-label">${label}</div>
+          <div class="stats-bar-track">
+            <div class="stats-bar-fill" style="width:${pct}%">
+              <span class="stats-bar-value">${n}</span>
+            </div>
           </div>
         </div>
-      </div>
+      `;
+    }).join("");
+    blocMenus = `
+      <p class="stats-evolution-titre">Menus générés par mois</p>
+      <div class="stats-bars">${bars}</div>
     `;
+  }
+  
+  document.getElementById("stats-evolution").innerHTML = blocMenus + blocNutri;
+}
+
+// v254 : Génère le bloc "Évolution Nutri-Score" — courbe SVG des 12 derniers mois
+function genererBlocEvolutionNutri() {
+  const cuisinees = (window.userProfile?.recettesCuisinees || []);
+  if (cuisinees.length === 0) return "";
+  if (typeof calculerNutriScoreRecette !== "function") return "";
+  
+  const nutriRank = { A: 5, B: 4, C: 3, D: 2, E: 1 };
+  const parMois = {}; // {ym: {sum, count}}
+  let totalSum = 0, totalCount = 0;
+  
+  cuisinees.forEach(({ cle, count, dernierDate }) => {
+    if (!cle || !count || !dernierDate) return;
+    const r = recettes[cle];
+    if (!r) return;
+    if (r.cat === "cocktails" || r.cat === "mocktails") return; // exclus
+    
+    const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (!tabKey) return;
+    const base = r.base || 4;
+    const ligne = r[tabKey].find(l => l.nb === base || l.patons === base) || r[tabKey][0];
+    if (!ligne) return;
+    
+    const ns = calculerNutriScoreRecette(ligne);
+    if (!ns) return;
+    const score = nutriRank[ns.lettre];
+    if (!score) return;
+    
+    const d = new Date(dernierDate);
+    if (isNaN(d.getTime())) return;
+    const ym = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0");
+    
+    if (!parMois[ym]) parMois[ym] = { sum: 0, count: 0 };
+    parMois[ym].sum += score * count;
+    parMois[ym].count += count;
+    
+    totalSum += score * count;
+    totalCount += count;
+  });
+  
+  if (totalCount === 0) {
+    return `
+      <div class="nutri-evol-block">
+        <p class="stats-evolution-titre">🥗 Évolution Nutri-Score</p>
+        <p class="stats-vide">📊 Cuisine des recettes pour voir l'évolution !</p>
+      </div>`;
+  }
+  
+  // Moyenne globale
+  const moyenneGlobale = totalSum / totalCount;
+  const lettreGlobale = scoreNutriVersLettre(moyenneGlobale);
+  
+  // Limiter aux 12 derniers mois
+  const moisOrdonnes = Object.entries(parMois)
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .slice(-12);
+  
+  // Si un seul mois → afficher juste la moyenne, pas de graphique
+  if (moisOrdonnes.length < 2) {
+    return `
+      <div class="nutri-evol-block">
+        <p class="stats-evolution-titre">🥗 Évolution Nutri-Score</p>
+        <div class="nutri-evol-moyenne-grande">
+          <div class="nutri-evol-label">Moyenne globale</div>
+          <div class="nutri-evol-lettre nutri-${lettreGlobale}">${lettreGlobale}</div>
+          <div class="nutri-evol-stat">${moyenneGlobale.toFixed(2)}/5 · ${totalCount} recette${totalCount>1?'s':''} cuisinée${totalCount>1?'s':''}</div>
+        </div>
+        <p class="stats-vide" style="margin-top:12px">Cuisine plus pour voir une vraie courbe d'évolution !</p>
+      </div>`;
+  }
+  
+  // Graphique SVG
+  const W = 600, H = 200, padX = 32, padY = 16;
+  const usableW = W - 2 * padX;
+  const usableH = H - 2 * padY - 18;
+  
+  const points = moisOrdonnes.map(([ym, { sum, count }]) => ({
+    ym,
+    moyenne: sum / count
+  }));
+  
+  const xStep = points.length > 1 ? usableW / (points.length - 1) : 0;
+  const yMap = (v) => padY + usableH - ((v - 1) / 4) * usableH;
+  const xMap = (i) => padX + i * xStep;
+  
+  const nutriCouleurs = [
+    { v: 5, label: "A", color: "#008944" },
+    { v: 4, label: "B", color: "#85bb2f" },
+    { v: 3, label: "C", color: "#f9b327" },
+    { v: 2, label: "D", color: "#ef7c1d" },
+    { v: 1, label: "E", color: "#e63312" },
+  ];
+  
+  // Lignes de référence
+  const reperes = nutriCouleurs.map(l => `
+    <line x1="${padX}" y1="${yMap(l.v)}" x2="${W - padX}" y2="${yMap(l.v)}" 
+          stroke="${l.color}" stroke-width="1" stroke-dasharray="2,3" opacity="0.3"/>
+    <text x="${padX - 6}" y="${yMap(l.v) + 4}" fill="${l.color}" 
+          font-size="12" font-weight="700" text-anchor="end">${l.label}</text>
+  `).join("");
+  
+  // Courbe
+  const path = points.map((p, i) => 
+    `${i === 0 ? "M" : "L"} ${xMap(i)} ${yMap(p.moyenne)}`
+  ).join(" ");
+  
+  // Points colorés
+  const dots = points.map((p, i) => {
+    const couleur = getCouleurPourScoreNutri(p.moyenne);
+    return `<circle cx="${xMap(i)}" cy="${yMap(p.moyenne)}" r="5" fill="${couleur}" stroke="#1a1a2e" stroke-width="2"/>`;
   }).join("");
   
-  document.getElementById("stats-evolution").innerHTML = `
-    <p class="stats-evolution-titre">Menus générés par mois</p>
-    <div class="stats-bars">${bars}</div>
+  // Labels X
+  const moisAbbr = ["Jan","Fév","Mar","Avr","Mai","Juin","Juil","Août","Sep","Oct","Nov","Déc"];
+  const xLabels = points.map((p, i) => {
+    const [annee, mois] = p.ym.split("-");
+    const label = moisAbbr[parseInt(mois) - 1];
+    return `<text x="${xMap(i)}" y="${H - 4}" fill="#aaa" font-size="11" text-anchor="middle">${label}</text>`;
+  }).join("");
+  
+  // Stats : moyennes
+  const dernierMois = points[points.length - 1];
+  const lettreDernier = scoreNutriVersLettre(dernierMois.moyenne);
+  
+  return `
+    <div class="nutri-evol-block">
+      <p class="stats-evolution-titre">🥗 Évolution Nutri-Score</p>
+      
+      <div class="nutri-evol-resume">
+        <div class="nutri-evol-resume-item">
+          <div class="nutri-evol-resume-label">Moyenne globale</div>
+          <div class="nutri-evol-resume-lettre nutri-${lettreGlobale}">${lettreGlobale}</div>
+          <div class="nutri-evol-resume-stat">${moyenneGlobale.toFixed(1)}/5</div>
+        </div>
+        <div class="nutri-evol-resume-item">
+          <div class="nutri-evol-resume-label">Ce mois</div>
+          <div class="nutri-evol-resume-lettre nutri-${lettreDernier}">${lettreDernier}</div>
+          <div class="nutri-evol-resume-stat">${dernierMois.moyenne.toFixed(1)}/5</div>
+        </div>
+        <div class="nutri-evol-resume-item">
+          <div class="nutri-evol-resume-label">Recettes cuisinées</div>
+          <div class="nutri-evol-resume-nb">${totalCount}</div>
+        </div>
+      </div>
+      
+      <div class="nutri-evol-graphique">
+        <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" class="nutri-evol-svg">
+          ${reperes}
+          <path d="${path}" fill="none" stroke="#ff4d88" stroke-width="2.5" stroke-linejoin="round"/>
+          ${dots}
+          ${xLabels}
+        </svg>
+      </div>
+    </div>
   `;
+}
+
+// Convertit un score numérique en lettre Nutri-Score
+function scoreNutriVersLettre(score) {
+  if (score >= 4.5) return "A";
+  if (score >= 3.5) return "B";
+  if (score >= 2.5) return "C";
+  if (score >= 1.5) return "D";
+  return "E";
+}
+
+// Couleur Nutri selon un score continu
+function getCouleurPourScoreNutri(s) {
+  if (s >= 4.5) return "#008944";
+  if (s >= 3.5) return "#85bb2f";
+  if (s >= 2.5) return "#f9b327";
+  if (s >= 1.5) return "#ef7c1d";
+  return "#e63312";
 }
 
 // Remplit la section "Badges"
