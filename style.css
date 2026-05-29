@@ -767,8 +767,30 @@ select, input[type="number"] {
   transition: .2s;
   font-size: 24px;
 }
-.nav-btn small { font-size: 11px; }
+.nav-btn small { 
+  font-size: 11px; 
+  white-space: nowrap;
+  letter-spacing: -0.2px;
+}
 .nav-btn.active { color: #ff4d88; }
+
+/* Icône SVG (Garde-manger) — même taille que les emojis (~22px) */
+.nav-icone-svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* Au survol/actif, le SVG suit la couleur du parent via currentColor */
+.nav-btn.active .nav-icone-svg {
+  filter: drop-shadow(0 0 4px rgba(255,77,136,.4));
+}
+
+/* Mobile : labels nav un poil plus petits pour que "Garde-manger" rentre */
+@media (max-width: 480px) {
+  .nav-btn small { font-size: 10px; }
+  .nav-icone-svg { width: 22px; height: 22px; }
+}
 
 /* ==========================
    RESPONSIVE MOBILE
@@ -3238,22 +3260,23 @@ select, input[type="number"] {
 .vf-ia-section {
   margin-top: 32px;
   padding: 24px;
-  background: linear-gradient(135deg, rgba(168,85,247,.08), rgba(236,72,153,.08));
-  border: 1px solid rgba(168,85,247,.25);
+  background: linear-gradient(135deg, rgba(168,85,247,.22), rgba(236,72,153,.22));
+  border: 1px solid rgba(168,85,247,.5);
   border-radius: 16px;
   text-align: center;
+  box-shadow: 0 4px 20px rgba(168,85,247,.15);
 }
 
 .vf-ia-titre {
   font-size: 16px;
   font-weight: 600;
-  color: #d4a8ff;
+  color: #e9c4ff;
   margin-bottom: 6px;
 }
 
 .vf-ia-subtitle {
   margin: 0 0 14px;
-  color: #aaa;
+  color: #ccc;
   font-size: 13px;
 }
 
@@ -3327,20 +3350,21 @@ select, input[type="number"] {
   align-items: center;
   gap: 6px;
   padding: 16px 12px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(0,0,0,.4);
+  border: 1px solid rgba(168,85,247,.4);
   border-radius: 14px;
   cursor: pointer;
   transition: all 0.2s;
   font-family: inherit;
-  color: #ddd;
+  color: #eee;
   text-align: center;
 }
 
 .vf-ia-option:hover {
-  background: rgba(168,85,247,.15);
-  border-color: rgba(168,85,247,.5);
+  background: rgba(168,85,247,.25);
+  border-color: rgba(168,85,247,.7);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168,85,247,.35);
 }
 
 .vf-ia-emoji {
@@ -3711,4 +3735,165 @@ select, input[type="number"] {
   .lc-recette-card { flex-wrap: wrap; }
   .lc-recette-nom { width: 100%; }
   .lc-recette-pers span { font-size: 11px; min-width: 40px; }
+}
+
+/* =============================================================================
+   v250 — MODAL DE CONFIRMATION CUSTOM (remplace confirm() natif)
+   ============================================================================= */
+.modal-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  padding: 20px;
+}
+
+.modal-confirm-overlay.animate-in {
+  opacity: 1;
+}
+
+.modal-confirm-box {
+  background: #1a1a2e;
+  border: 1px solid rgba(255,77,136,.3);
+  border-radius: 20px;
+  padding: 28px 24px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.8);
+  transform: scale(0.9);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.modal-confirm-overlay.animate-in .modal-confirm-box {
+  transform: scale(1);
+}
+
+.modal-confirm-titre {
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal-confirm-message {
+  font-size: 15px;
+  color: #ddd;
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.modal-confirm-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.modal-confirm-non,
+.modal-confirm-oui {
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.2s;
+  min-width: 100px;
+}
+
+.modal-confirm-non {
+  background: rgba(255,255,255,.08);
+  color: #ddd;
+  border: 1px solid rgba(255,255,255,.15);
+}
+.modal-confirm-non:hover {
+  background: rgba(255,255,255,.15);
+}
+
+.modal-confirm-oui {
+  background: linear-gradient(135deg, #ff4d88, #ff6ba1);
+  color: white;
+  box-shadow: 0 4px 12px rgba(255,77,136,.35);
+}
+.modal-confirm-oui:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(255,77,136,.5);
+}
+
+.modal-confirm-oui.danger {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  box-shadow: 0 4px 12px rgba(239,68,68,.35);
+}
+.modal-confirm-oui.danger:hover {
+  box-shadow: 0 6px 18px rgba(239,68,68,.5);
+}
+
+/* =============================================================================
+   v251 — Sélecteur +/- pour le planificateur (Semaine & Thématique)
+   ============================================================================= */
+.plan-personnes-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 50px;
+  padding: 6px;
+  width: fit-content;
+  margin: 4px auto;
+}
+
+.plan-pers-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff4d88, #ff6ba1);
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  padding: 0;
+  line-height: 1;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 2px 6px rgba(255,77,136,.3);
+}
+
+.plan-pers-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(255,77,136,.5);
+}
+
+.plan-pers-btn:active {
+  transform: scale(0.95);
+}
+
+.plan-input-personnes {
+  width: 60px !important;
+  text-align: center;
+  background: transparent !important;
+  border: none !important;
+  font-size: 18px !important;
+  font-weight: 700;
+  color: white !important;
+  padding: 0 !important;
+  /* Cacher les flèches natives du browser */
+  -moz-appearance: textfield;
+}
+.plan-input-personnes::-webkit-outer-spin-button,
+.plan-input-personnes::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

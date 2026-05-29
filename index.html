@@ -5424,7 +5424,11 @@ gtag('config', 'G-390C5MY2SS');
 
     <div class="plan-field">
       <label>👥 Nombre de personnes</label>
-      <input type="number" id="festif-personnes" value="6" min="1" max="15" class="plan-input">
+      <div class="plan-personnes-selector">
+        <button type="button" class="plan-pers-btn" onclick="changerPersonnesPlan('festif-personnes', -1)" aria-label="Moins une personne">−</button>
+        <input type="number" id="festif-personnes" value="6" min="1" max="15" class="plan-input plan-input-personnes" onchange="onChangePersonnesPlan('festif-personnes')">
+        <button type="button" class="plan-pers-btn" onclick="changerPersonnesPlan('festif-personnes', 1)" aria-label="Plus une personne">+</button>
+      </div>
     </div>
 
     <div class="plan-field">
@@ -5488,7 +5492,32 @@ gtag('config', 'G-390C5MY2SS');
     <span>🏠</span><small>Accueil</small>
   </button>
   <button class="nav-btn" onclick="afficherSection('cuisine', this)">
-    <span>🥕</span><small>Cuisine</small>
+    <svg class="nav-icone-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Structure étagère -->
+      <rect x="3" y="2" width="26" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.55"/>
+      <!-- Tablettes horizontales -->
+      <line x1="3" y1="11" x2="29" y2="11" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>
+      <line x1="3" y1="20" x2="29" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>
+      <!-- Bocaux rangée 1 -->
+      <rect x="6" y="5" width="3.5" height="5" rx="0.6" fill="#ffc107"/>
+      <rect x="11.5" y="4" width="3.5" height="6" rx="0.6" fill="#e53935"/>
+      <rect x="17" y="5" width="3.5" height="5" rx="0.6" fill="#43a047"/>
+      <rect x="22.5" y="4" width="3.5" height="6" rx="0.6" fill="#1e88e5"/>
+      <!-- Pain et fromage rangée 2 -->
+      <ellipse cx="9" cy="16" rx="4" ry="2.2" fill="#d4a574"/>
+      <rect x="17" y="13" width="9" height="6" rx="0.8" fill="#ffd54f"/>
+      <rect x="17" y="13" width="9" height="1.5" fill="#ffb300"/>
+      <!-- Paniers fruits/légumes rangée 3 -->
+      <path d="M 5 23 L 14 23 L 13 28 L 6 28 Z" fill="#8d6e63"/>
+      <circle cx="7" cy="23.5" r="1.4" fill="#e53935"/>
+      <circle cx="9.5" cy="23.5" r="1.4" fill="#fb8c00"/>
+      <circle cx="12" cy="23.5" r="1.4" fill="#7cb342"/>
+      <path d="M 17 23 L 27 23 L 26 28 L 18 28 Z" fill="#8d6e63"/>
+      <circle cx="19.5" cy="23.5" r="1.4" fill="#fdd835"/>
+      <circle cx="22" cy="23.5" r="1.4" fill="#f06292"/>
+      <circle cx="24.5" cy="23.5" r="1.4" fill="#aed581"/>
+    </svg>
+    <small>Garde-manger</small>
   </button>
   <button class="nav-btn" onclick="afficherSection('planificateur', this)">
     <span>📅</span><small>Menus</small>
@@ -5697,7 +5726,11 @@ gtag('config', 'G-390C5MY2SS');
 
     <div class="plan-field">
       <label>👥 Nombre de personnes</label>
-      <input type="number" id="plan-personnes" value="4" min="1" max="15" class="plan-input">
+      <div class="plan-personnes-selector">
+        <button type="button" class="plan-pers-btn" onclick="changerPersonnesPlan('plan-personnes', -1)" aria-label="Moins une personne">−</button>
+        <input type="number" id="plan-personnes" value="4" min="1" max="15" class="plan-input plan-input-personnes" onchange="onChangePersonnesPlan('plan-personnes')">
+        <button type="button" class="plan-pers-btn" onclick="changerPersonnesPlan('plan-personnes', 1)" aria-label="Plus une personne">+</button>
+      </div>
     </div>
 
     <div class="plan-field">
