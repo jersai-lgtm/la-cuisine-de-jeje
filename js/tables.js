@@ -1489,6 +1489,9 @@ function choisirRecette(nom) {
   }
   // Bouton "J'ai cuisiné" (v240)
   if (typeof majBoutonCuisine === "function") majBoutonCuisine(nom);
+  
+  // v245 : Section "Mes notes personnelles" en bas de la fiche
+  if (typeof injecterNotesRecette === "function") injecterNotesRecette(nom);
 }
 
 // Initialiser les tables globales
