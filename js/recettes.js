@@ -13697,5 +13697,378 @@ const recettes = {
       { icone: "🔥", titre: "Cuisson", detail: "Beurrez un moule à cake et versez-y la préparation. Enfournez dans un four préchauffé à 180°C pendant 45 minutes environ.", badge: "⏱ 45 min" },
       { icone: "✨", titre: "Démoulage", detail: "Au bout de 5-10 minutes de cuisson, sortez votre cake du four et pratiquez une entaille à l'aide de la pointe d'un couteau sur toute la longueur du cake afin d'avoir un cake avec une belle entaille uniforme. Démoulez et laissez refroidir sur une grille.", badge: null }
     ]
+  },
+
+  // === v257 — 16 NOUVELLES RECETTES ===
+
+  fishandchips: {
+    cat: "platprincipal", pays: "angleterre",
+    base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🐟",
+    description: "Le classique anglais : poisson blanc en beignet croustillant et frites épaisses. Servir avec sauce tartare et purée de petits pois.",
+    tableauPersonnes: [
+      { nb: 1, cabillaud: "180 g", pommesdeterre: "300 g", farine: "80 g", oeufs: "1", lait: "100 ml", bierebrune: "50 ml", huilefriture: "300 ml", citron: "½" },
+      { nb: 2, cabillaud: "360 g", pommesdeterre: "600 g", farine: "160 g", oeufs: "1", lait: "200 ml", bierebrune: "100 ml", huilefriture: "500 ml", citron: "1" },
+      { nb: 4, cabillaud: "720 g", pommesdeterre: "1200 g", farine: "320 g", oeufs: "2", lait: "400 ml", bierebrune: "200 ml", huilefriture: "800 ml", citron: "2" },
+      { nb: 6, cabillaud: "1080 g", pommesdeterre: "1800 g", farine: "480 g", oeufs: "3", lait: "600 ml", bierebrune: "300 ml", huilefriture: "1200 ml", citron: "3" },
+      { nb: 8, cabillaud: "1440 g", pommesdeterre: "2400 g", farine: "640 g", oeufs: "4", lait: "800 ml", bierebrune: "400 ml", huilefriture: "1500 ml", citron: "4" }
+    ],
+    ingredients: { "Cabillaud (g)": 720, "Pommes de terre (g)": 1200, "Farine (g)": 320, "Œufs": 2, "Lait (ml)": 400, "Bière brune (ml)": 200, "Citron": 2 },
+    etapes: [
+      { icone: "🥔", titre: "Couper les frites", detail: "Éplucher les pommes de terre et les couper en bâtonnets épais (1cm). Rincer à l'eau froide, sécher.", badge: null },
+      { icone: "🍳", titre: "Pré-cuire les frites", detail: "Première friture à 150°C pendant 8 min jusqu'à tendres mais pas colorées. Égoutter.", badge: "⏱ 8 min" },
+      { icone: "🥣", titre: "Pâte à beignet", detail: "Mélanger farine, sel, levure. Ajouter œufs, lait et bière brune. Fouetter jusqu'à pâte lisse. Laisser reposer 15 min.", badge: "⏱ 15 min repos" },
+      { icone: "🐟", titre: "Enrober le poisson", detail: "Sécher les filets de cabillaud, saler. Tremper dans la pâte pour bien enrober.", badge: null },
+      { icone: "🔥", titre: "Frire le poisson", detail: "Plonger dans l'huile à 180°C 6-8 min jusqu'à doré et croustillant. Égoutter sur papier absorbant.", badge: "⏱ 6-8 min" },
+      { icone: "🥔", titre: "Finir les frites", detail: "Repasser les frites dans l'huile à 180°C 3-4 min jusqu'à dorées et croustillantes.", badge: "⏱ 3-4 min" },
+      { icone: "🍋", titre: "Servir", detail: "Servir aussitôt avec quartiers de citron, sauce tartare et petits pois écrasés.", badge: null }
+    ]
+  },
+
+  shepherdspie: {
+    cat: "platprincipal", pays: "angleterre",
+    base: 4, temps: "1h", niveau: "⭐ Facile", emoji: "🥧",
+    description: "Le hachis parmentier anglais à l'agneau — viande mijotée aux légumes, recouverte de purée gratinée. Le réconfort à l'état pur.",
+    tableauPersonnes: [
+      { nb: 1, agneau: "150 g", pommesdeterre: "300 g", carottes: "100 g", oignons: "½", ail: "1 gousse", beurre: "20 g", lait: "50 ml", concentre: "1 c.à.s", thym: "1 brin" },
+      { nb: 2, agneau: "300 g", pommesdeterre: "600 g", carottes: "200 g", oignons: "1", ail: "1 gousse", beurre: "40 g", lait: "100 ml", concentre: "2 c.à.s", thym: "2 brins" },
+      { nb: 4, agneau: "600 g", pommesdeterre: "1200 g", carottes: "400 g", oignons: "2", ail: "2 gousses", beurre: "80 g", lait: "200 ml", concentre: "4 c.à.s", thym: "4 brins" },
+      { nb: 6, agneau: "900 g", pommesdeterre: "1800 g", carottes: "600 g", oignons: "3", ail: "3 gousses", beurre: "120 g", lait: "300 ml", concentre: "6 c.à.s", thym: "6 brins" },
+      { nb: 8, agneau: "1200 g", pommesdeterre: "2400 g", carottes: "800 g", oignons: "4", ail: "4 gousses", beurre: "160 g", lait: "400 ml", concentre: "8 c.à.s", thym: "8 brins" }
+    ],
+    ingredients: { "Agneau haché (g)": 600, "Pommes de terre (g)": 1200, "Carottes (g)": 400, "Oignons": 2, "Ail": 2, "Beurre (g)": 80, "Lait (ml)": 200, "Concentré de tomate (c.à.s)": 4 },
+    etapes: [
+      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Éplucher les pommes de terre, couper en gros morceaux et cuire à l'eau salée 20 min.", badge: "⏱ 20 min" },
+      { icone: "🧅", titre: "Faire revenir aromates", detail: "Émincer oignons et ail. Couper carottes en dés. Faire revenir dans l'huile 5 min.", badge: null },
+      { icone: "🐑", titre: "Saisir l'agneau", detail: "Ajouter l'agneau haché, écraser à la fourchette. Cuire 8 min jusqu'à doré. Saler, poivrer.", badge: "⏱ 8 min" },
+      { icone: "🍅", titre: "Mijoter", detail: "Ajouter concentré de tomate, thym, un peu de bouillon. Couvrir et mijoter 15 min.", badge: "⏱ 15 min" },
+      { icone: "🥄", titre: "Purée", detail: "Égoutter les pommes de terre, écraser avec beurre et lait chaud. Saler, poivrer.", badge: null },
+      { icone: "🥧", titre: "Monter le plat", detail: "Dans un plat à gratin, étaler la viande, recouvrir de purée. Rayer à la fourchette pour effet gratiné.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner 20 min à 200°C jusqu'à doré et bouillonnant.", badge: "⏱ 20 min" }
+    ]
+  },
+
+  croquemadame: {
+    cat: "brunch", pays: "france",
+    base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🍞",
+    description: "Le croque-monsieur surmonté d'un œuf au plat — la version 'madame'. Béchamel onctueuse, jambon, gruyère et œuf coulant.",
+    tableauPersonnes: [
+      { nb: 1, pain: "2 tranches", jambon: "1 tranche", gruyere: "40 g", beurre: "20 g", farine: "10 g", lait: "100 ml", oeufs: "1", moutarde: "½ c.à.c" },
+      { nb: 2, pain: "4 tranches", jambon: "2 tranches", gruyere: "80 g", beurre: "40 g", farine: "20 g", lait: "200 ml", oeufs: "2", moutarde: "1 c.à.c" },
+      { nb: 4, pain: "8 tranches", jambon: "4 tranches", gruyere: "160 g", beurre: "80 g", farine: "40 g", lait: "400 ml", oeufs: "4", moutarde: "2 c.à.c" },
+      { nb: 6, pain: "12 tranches", jambon: "6 tranches", gruyere: "240 g", beurre: "120 g", farine: "60 g", lait: "600 ml", oeufs: "6", moutarde: "3 c.à.c" },
+      { nb: 8, pain: "16 tranches", jambon: "8 tranches", gruyere: "320 g", beurre: "160 g", farine: "80 g", lait: "800 ml", oeufs: "8", moutarde: "4 c.à.c" }
+    ],
+    ingredients: { "Pain de mie": 4, "Jambon (tranches)": 2, "Gruyère (g)": 80, "Beurre (g)": 40, "Farine (g)": 20, "Lait (ml)": 200, "Œufs": 2, "Moutarde (c.à.c)": 1 },
+    etapes: [
+      { icone: "🥛", titre: "Béchamel", detail: "Faire fondre le beurre, ajouter la farine, cuire 1 min. Verser le lait froid d'un coup en fouettant. Cuire 3-5 min jusqu'à épaississement.", badge: "⏱ 5 min" },
+      { icone: "🟡", titre: "Assaisonner", detail: "Ajouter sel, poivre, muscade râpée et la moutarde. Hors du feu, incorporer la moitié du gruyère.", badge: null },
+      { icone: "🍞", titre: "Monter les croques", detail: "Toaster légèrement le pain. Tartiner de béchamel, poser une tranche de jambon, fromage, refermer.", badge: null },
+      { icone: "🧀", titre: "Couronner", detail: "Tartiner le dessus de béchamel et de gruyère râpé.", badge: null },
+      { icone: "🔥", titre: "Cuire au four", detail: "Enfourner à 200°C 10-12 min jusqu'à doré et bouillonnant.", badge: "⏱ 10-12 min" },
+      { icone: "🍳", titre: "Œuf au plat", detail: "Pendant ce temps, faire cuire un œuf au plat par croque. Le jaune doit rester coulant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Déposer l'œuf au plat sur chaque croque-monsieur sorti du four. Saler, poivrer et déguster aussitôt.", badge: null }
+    ]
+  },
+
+  tomkhagai: {
+    cat: "soupe", pays: "thailande",
+    base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🍲",
+    description: "La soupe thaïe au lait de coco, poulet et galanga. Parfumée à la citronnelle, citron vert et coriandre — réconfortante et exotique.",
+    tableauPersonnes: [
+      { nb: 1, poulet: "120 g", laitcoco: "200 ml", boullionLeg: "150 ml", champignons: "60 g", citronnelle: "1 tige", gingembre: "10 g", saucePoisson: "1 c.à.c", citron: "½", coriandre: "5 g", piment: "½" },
+      { nb: 2, poulet: "240 g", laitcoco: "400 ml", boullionLeg: "300 ml", champignons: "120 g", citronnelle: "2 tiges", gingembre: "20 g", saucePoisson: "1 c.à.s", citron: "1", coriandre: "10 g", piment: "1" },
+      { nb: 4, poulet: "480 g", laitcoco: "800 ml", boullionLeg: "600 ml", champignons: "240 g", citronnelle: "3 tiges", gingembre: "40 g", saucePoisson: "2 c.à.s", citron: "2", coriandre: "20 g", piment: "1-2" },
+      { nb: 6, poulet: "720 g", laitcoco: "1200 ml", boullionLeg: "900 ml", champignons: "360 g", citronnelle: "4 tiges", gingembre: "60 g", saucePoisson: "3 c.à.s", citron: "3", coriandre: "30 g", piment: "2-3" },
+      { nb: 8, poulet: "960 g", laitcoco: "1600 ml", boullionLeg: "1200 ml", champignons: "480 g", citronnelle: "5 tiges", gingembre: "80 g", saucePoisson: "4 c.à.s", citron: "4", coriandre: "40 g", piment: "3-4" }
+    ],
+    ingredients: { "Poulet (g)": 480, "Lait de coco (ml)": 800, "Bouillon (ml)": 600, "Champignons (g)": 240, "Citronnelle (tiges)": 3, "Gingembre (g)": 40, "Citron vert": 2 },
+    etapes: [
+      { icone: "🌿", titre: "Préparer les aromates", detail: "Écraser les tiges de citronnelle au plat du couteau. Émincer le gingembre en fines lamelles.", badge: null },
+      { icone: "🍲", titre: "Faire infuser le bouillon", detail: "Dans une casserole, verser le bouillon et la moitié du lait de coco. Ajouter citronnelle, gingembre, feuilles de citron kaffir si disponibles. Frémir 10 min.", badge: "⏱ 10 min" },
+      { icone: "🍗", titre: "Cuire le poulet", detail: "Ajouter le poulet en lamelles fines. Cuire 5 min jusqu'à blanc.", badge: "⏱ 5 min" },
+      { icone: "🍄", titre: "Ajouter les champignons", detail: "Incorporer les champignons (paille de préférence, sinon de Paris) coupés en deux. Cuire 3 min.", badge: "⏱ 3 min" },
+      { icone: "🥥", titre: "Reste du lait de coco", detail: "Verser le reste du lait de coco. Réchauffer sans bouillir (sinon il se sépare).", badge: "⚠️ Ne pas bouillir" },
+      { icone: "🐟", titre: "Assaisonner", detail: "Ajouter sauce poisson, jus de citron vert, piments écrasés. Goûter et ajuster (sucré/salé/acide/piquant).", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Verser en bol, parsemer de coriandre fraîche et de piment rouge. Retirer les morceaux de citronnelle avant de manger.", badge: null }
+    ]
+  },
+
+  macandcheese: {
+    cat: "platprincipal", pays: "etatsunis",
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🧀",
+    description: "Le comfort food américain ultime : pâtes coquillettes nappées d'une sauce fromage crémeuse au cheddar, gratinées à la chapelure.",
+    tableauPersonnes: [
+      { nb: 1, pates: "100 g", cheddar: "100 g", beurre: "20 g", farine: "20 g", lait: "200 ml", chapelure: "20 g", parmesan: "15 g" },
+      { nb: 2, pates: "200 g", cheddar: "200 g", beurre: "40 g", farine: "40 g", lait: "400 ml", chapelure: "40 g", parmesan: "30 g" },
+      { nb: 4, pates: "400 g", cheddar: "400 g", beurre: "80 g", farine: "80 g", lait: "800 ml", chapelure: "80 g", parmesan: "60 g" },
+      { nb: 6, pates: "600 g", cheddar: "600 g", beurre: "120 g", farine: "120 g", lait: "1200 ml", chapelure: "120 g", parmesan: "90 g" },
+      { nb: 8, pates: "800 g", cheddar: "800 g", beurre: "160 g", farine: "160 g", lait: "1600 ml", chapelure: "160 g", parmesan: "120 g" }
+    ],
+    ingredients: { "Pâtes coquillettes (g)": 400, "Cheddar (g)": 400, "Beurre (g)": 80, "Farine (g)": 80, "Lait (ml)": 800, "Chapelure (g)": 80, "Parmesan (g)": 60 },
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes dans l'eau bouillante salée 2 min DE MOINS que sur le paquet (elles finissent au four).", badge: "⏱ -2 min" },
+      { icone: "🧈", titre: "Roux", detail: "Faire fondre le beurre, ajouter la farine, cuire 1-2 min en remuant. Doit sentir bon le biscuit.", badge: "⏱ 2 min" },
+      { icone: "🥛", titre: "Sauce", detail: "Verser le lait froid d'un coup en fouettant énergiquement. Cuire 5 min en remuant jusqu'à épaississement.", badge: "⏱ 5 min" },
+      { icone: "🧀", titre: "Fromage", detail: "Hors du feu, ajouter le cheddar râpé. Mélanger jusqu'à lisse et brillant. Saler, poivrer, ajouter une pincée de muscade.", badge: "🔑 Hors du feu" },
+      { icone: "🍲", titre: "Mélanger", detail: "Mélanger les pâtes égouttées avec la sauce. Verser dans un plat à gratin.", badge: null },
+      { icone: "✨", titre: "Topping", detail: "Mélanger chapelure et parmesan. Saupoudrer généreusement sur le dessus.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner 15-20 min jusqu'à doré et bouillonnant sur les bords.", badge: "⏱ 15-20 min" }
+    ]
+  },
+
+  yakitori: {
+    cat: "platprincipal", pays: "japon",
+    base: 4, temps: "30 min + 30 min marinade", niveau: "⭐ Facile", emoji: "🍢",
+    description: "Brochettes japonaises de poulet caramélisées à la sauce tare (soja-mirin-sucre). Le classique des izakaya nippons.",
+    tableauPersonnes: [
+      { nb: 1, poulet: "200 g", oignonsblanc: "1", sojaS: "3 c.à.s", mirin: "2 c.à.s", sucre: "1 c.à.s", sake: "1 c.à.s", gingembre: "5 g" },
+      { nb: 2, poulet: "400 g", oignonsblanc: "2", sojaS: "5 c.à.s", mirin: "4 c.à.s", sucre: "2 c.à.s", sake: "2 c.à.s", gingembre: "10 g" },
+      { nb: 4, poulet: "800 g", oignonsblanc: "4", sojaS: "10 c.à.s", mirin: "8 c.à.s", sucre: "4 c.à.s", sake: "4 c.à.s", gingembre: "20 g" },
+      { nb: 6, poulet: "1200 g", oignonsblanc: "6", sojaS: "15 c.à.s", mirin: "12 c.à.s", sucre: "6 c.à.s", sake: "6 c.à.s", gingembre: "30 g" },
+      { nb: 8, poulet: "1600 g", oignonsblanc: "8", sojaS: "20 c.à.s", mirin: "16 c.à.s", sucre: "8 c.à.s", sake: "8 c.à.s", gingembre: "40 g" }
+    ],
+    ingredients: { "Cuisses de poulet (g)": 800, "Oignons nouveaux": 4, "Sauce soja (c.à.s)": 10, "Mirin (c.à.s)": 8, "Sucre (c.à.s)": 4, "Saké (c.à.s)": 4, "Gingembre (g)": 20 },
+    etapes: [
+      { icone: "🥢", titre: "Préparer les piques", detail: "Faire tremper des piques en bambou dans l'eau 30 min (évite qu'elles brûlent).", badge: "⏱ 30 min" },
+      { icone: "🔪", titre: "Découper", detail: "Couper le poulet en morceaux de 2-3 cm. Couper l'oignon nouveau en tronçons de 3 cm.", badge: null },
+      { icone: "🍶", titre: "Sauce tare", detail: "Mélanger sauce soja, mirin, sucre, saké, gingembre râpé. Porter à frémissement et réduire 5 min jusqu'à sirupeux.", badge: "⏱ 5 min réduction" },
+      { icone: "🍢", titre: "Monter les brochettes", detail: "Alterner morceaux de poulet et oignon sur les piques (3-4 morceaux par pique).", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire au gril, plancha ou poêle 5-6 min de chaque côté. Badigeonner de sauce tare en dernière minute.", badge: "⏱ 10-12 min" },
+      { icone: "✨", titre: "Caraméliser", detail: "Badigeonner à nouveau de sauce et faire caraméliser 1 min de chaque côté.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir avec du riz japonais et un peu de sauce restante. Saupoudrer de graines de sésame.", badge: null }
+    ]
+  },
+
+  magretcanard: {
+    cat: "platprincipal", pays: "france",
+    base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🦆",
+    description: "Magret de canard rôti à la peau croustillante, sauce au miel et vinaigre balsamique. Le classique gastronomique du Sud-Ouest.",
+    tableauPersonnes: [
+      { nb: 1, magret: "200 g", miel: "1 c.à.s", balsamique: "1 c.à.s", echalote: "½", thym: "1 brin", beurre: "10 g" },
+      { nb: 2, magret: "400 g", miel: "2 c.à.s", balsamique: "2 c.à.s", echalote: "1", thym: "2 brins", beurre: "20 g" },
+      { nb: 4, magret: "800 g", miel: "4 c.à.s", balsamique: "4 c.à.s", echalote: "2", thym: "4 brins", beurre: "40 g" },
+      { nb: 6, magret: "1200 g", miel: "6 c.à.s", balsamique: "6 c.à.s", echalote: "3", thym: "6 brins", beurre: "60 g" },
+      { nb: 8, magret: "1600 g", miel: "8 c.à.s", balsamique: "8 c.à.s", echalote: "4", thym: "8 brins", beurre: "80 g" }
+    ],
+    ingredients: { "Magret de canard (g)": 800, "Miel (c.à.s)": 4, "Vinaigre balsamique (c.à.s)": 4, "Échalotes": 2, "Thym (brins)": 4, "Beurre (g)": 40 },
+    etapes: [
+      { icone: "🦆", titre: "Préparer les magrets", detail: "Quadriller la peau du magret au couteau (sans entamer la chair). Saler généreusement côté peau.", badge: "🔑 Quadrillage essentiel" },
+      { icone: "🔥", titre: "Saisir côté peau", detail: "Démarrer dans une poêle FROIDE côté peau. Cuire à feu moyen 6-8 min jusqu'à peau dorée et craquante. La graisse fond doucement.", badge: "⏱ 6-8 min • ❄️ Poêle froide" },
+      { icone: "🍳", titre: "Retourner", detail: "Vider la graisse (garder pour des pommes de terre rôties). Retourner et cuire 4 min côté chair pour rosé.", badge: "⏱ 4 min" },
+      { icone: "🌡️", titre: "Repos", detail: "Sortir et laisser reposer 5 min sous une feuille d'alu. La cuisson continue.", badge: "⏱ 5 min repos" },
+      { icone: "🧅", titre: "Sauce", detail: "Dans la poêle, faire suer l'échalote ciselée 2 min. Ajouter le miel, le balsamique, le thym. Réduire 3 min.", badge: "⏱ 5 min" },
+      { icone: "🧈", titre: "Monter au beurre", detail: "Hors du feu, incorporer le beurre froid en morceaux pour lier la sauce.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Trancher le magret en biais, napper de sauce. Accompagner de pommes de terre sarladaises ou d'un gratin dauphinois.", badge: null }
+    ]
+  },
+
+  risottochampignons: {
+    cat: "platprincipal", pays: "italie",
+    base: 4, temps: "35 min", niveau: "⭐⭐ Moyen", emoji: "🍚",
+    description: "Risotto italien crémeux parfumé aux champignons sauvages et au parmesan. Onctueux comme il faut !",
+    tableauPersonnes: [
+      { nb: 1, rizArborio: "80 g", champignons: "150 g", oignons: "½", ail: "1 gousse", vinBlanc: "30 ml", boullionLeg: "400 ml", parmesan: "30 g", beurre: "15 g", huileolive: "1 c.à.s" },
+      { nb: 2, rizArborio: "160 g", champignons: "300 g", oignons: "1", ail: "1 gousse", vinBlanc: "60 ml", boullionLeg: "800 ml", parmesan: "60 g", beurre: "30 g", huileolive: "1,5 c.à.s" },
+      { nb: 4, rizArborio: "320 g", champignons: "600 g", oignons: "2", ail: "2 gousses", vinBlanc: "120 ml", boullionLeg: "1500 ml", parmesan: "120 g", beurre: "60 g", huileolive: "2 c.à.s" },
+      { nb: 6, rizArborio: "480 g", champignons: "900 g", oignons: "3", ail: "3 gousses", vinBlanc: "180 ml", boullionLeg: "2200 ml", parmesan: "180 g", beurre: "90 g", huileolive: "3 c.à.s" },
+      { nb: 8, rizArborio: "640 g", champignons: "1200 g", oignons: "4", ail: "4 gousses", vinBlanc: "240 ml", boullionLeg: "3000 ml", parmesan: "240 g", beurre: "120 g", huileolive: "4 c.à.s" }
+    ],
+    ingredients: { "Riz arborio (g)": 320, "Champignons (g)": 600, "Oignons": 2, "Ail": 2, "Vin blanc (ml)": 120, "Bouillon (ml)": 1500, "Parmesan (g)": 120, "Beurre (g)": 60 },
+    etapes: [
+      { icone: "🍄", titre: "Préparer les champignons", detail: "Brosser et émincer. Faire revenir dans une poêle avec un peu d'huile jusqu'à doré. Réserver.", badge: "⏱ 8 min" },
+      { icone: "🍲", titre: "Chauffer le bouillon", detail: "Maintenir le bouillon de légumes chaud dans une casserole à côté.", badge: "⚠️ Toujours chaud" },
+      { icone: "🧅", titre: "Suer l'oignon", detail: "Faire suer l'oignon émincé et l'ail haché dans huile + beurre, 3 min.", badge: null },
+      { icone: "🍚", titre: "Nacrer le riz", detail: "Ajouter le riz arborio, remuer 2 min jusqu'à translucide sur les bords.", badge: "⏱ 2 min" },
+      { icone: "🍷", titre: "Déglacer", detail: "Verser le vin blanc, laisser s'évaporer en remuant.", badge: null },
+      { icone: "💧", titre: "Ajouter le bouillon", detail: "Ajouter une louche de bouillon, remuer jusqu'à absorption. Répéter 18-20 min.", badge: "⏱ 18-20 min" },
+      { icone: "🍄", titre: "Incorporer les champignons", detail: "Quand le riz est al dente, ajouter les champignons réservés.", badge: null },
+      { icone: "🧀", titre: "Mantecare", detail: "Hors du feu, incorporer parmesan + beurre froid. Couvrir 2 min et servir.", badge: "🔑 Étape clé" }
+    ]
+  },
+
+  banoffeepie: {
+    cat: "dessert", pays: "angleterre",
+    base: 8, temps: "30 min + 3h frigo", niveau: "⭐ Facile", emoji: "🍌",
+    description: "Le dessert anglais culte : biscuits sablés, caramel au lait concentré, bananes et chantilly. Pure gourmandise !",
+    tableauPersonnes: [
+      { nb: 4, biscuits: "100 g", beurre: "50 g", laitconcentre: "200 g", bananes: "2", cremeChantilly: "150 g", cacao: "5 g" },
+      { nb: 6, biscuits: "150 g", beurre: "75 g", laitconcentre: "300 g", bananes: "3", cremeChantilly: "225 g", cacao: "8 g" },
+      { nb: 8, biscuits: "200 g", beurre: "100 g", laitconcentre: "400 g", bananes: "4", cremeChantilly: "300 g", cacao: "10 g" },
+      { nb: 10, biscuits: "250 g", beurre: "125 g", laitconcentre: "500 g", bananes: "5", cremeChantilly: "375 g", cacao: "12 g" },
+      { nb: 12, biscuits: "300 g", beurre: "150 g", laitconcentre: "600 g", bananes: "6", cremeChantilly: "450 g", cacao: "15 g" }
+    ],
+    ingredients: { "Biscuits sablés (g)": 200, "Beurre (g)": 100, "Lait concentré (g)": 400, "Bananes": 4, "Chantilly (g)": 300, "Cacao (g)": 10 },
+    etapes: [
+      { icone: "🥫", titre: "Cuire le caramel", detail: "Mettre la boîte de lait concentré FERMÉE dans une casserole d'eau bouillante. Cuire 2h en gardant la boîte immergée.", badge: "⏱ 2h • Boîte sous eau !" },
+      { icone: "❄️", titre: "Refroidir", detail: "Sortir la boîte, refroidir complètement avant ouverture.", badge: "⏱ 30 min" },
+      { icone: "🍪", titre: "Préparer la base", detail: "Réduire les biscuits en miettes. Mélanger avec le beurre fondu.", badge: null },
+      { icone: "🥧", titre: "Mouler la base", detail: "Tasser au fond d'un moule à tarte (24cm). Réfrigérer 30 min.", badge: "⏱ 30 min frigo" },
+      { icone: "🍯", titre: "Étaler le caramel", detail: "Ouvrir la boîte, étaler le caramel doré ferme sur la base de biscuits.", badge: null },
+      { icone: "🍌", titre: "Bananes", detail: "Couper les bananes en rondelles, disposer sur le caramel.", badge: null },
+      { icone: "🍦", titre: "Chantilly", detail: "Recouvrir généreusement de chantilly. Saupoudrer de cacao.", badge: null },
+      { icone: "❄️", titre: "Frigo", detail: "Réfrigérer 1h minimum avant de servir.", badge: "⏱ 1h frigo" }
+    ]
+  },
+
+  veloutebutternut: {
+    cat: "soupe", pays: "france",
+    base: 4, temps: "50 min", niveau: "⭐ Facile", emoji: "🎃",
+    description: "Velouté de butternut soyeux et réconfortant, parfumé au gingembre et lait de coco. Le soin d'automne par excellence !",
+    tableauPersonnes: [
+      { nb: 1, butternut: "300 g", oignons: "½", ail: "1 gousse", laitcoco: "50 ml", boullionLeg: "300 ml", huileolive: "1 c.à.s", gingembre: "5 g" },
+      { nb: 2, butternut: "600 g", oignons: "1", ail: "1 gousse", laitcoco: "100 ml", boullionLeg: "600 ml", huileolive: "1,5 c.à.s", gingembre: "10 g" },
+      { nb: 4, butternut: "1200 g", oignons: "2", ail: "2 gousses", laitcoco: "200 ml", boullionLeg: "1200 ml", huileolive: "2 c.à.s", gingembre: "20 g" },
+      { nb: 6, butternut: "1800 g", oignons: "3", ail: "3 gousses", laitcoco: "300 ml", boullionLeg: "1800 ml", huileolive: "3 c.à.s", gingembre: "30 g" },
+      { nb: 8, butternut: "2400 g", oignons: "4", ail: "4 gousses", laitcoco: "400 ml", boullionLeg: "2400 ml", huileolive: "4 c.à.s", gingembre: "40 g" }
+    ],
+    ingredients: { "Butternut (g)": 1200, "Oignons": 2, "Ail": 2, "Lait coco (ml)": 200, "Bouillon (ml)": 1200, "Gingembre (g)": 20 },
+    etapes: [
+      { icone: "🎃", titre: "Préparer la courge", detail: "Éplucher la butternut, retirer les graines, couper en cubes de 3 cm.", badge: null },
+      { icone: "🧅", titre: "Faire suer l'oignon", detail: "Faire revenir l'oignon émincé dans l'huile 5 min. Ajouter ail et gingembre haché.", badge: "⏱ 5 min" },
+      { icone: "🥘", titre: "Ajouter la courge", detail: "Ajouter les cubes de butternut, remuer 2 min pour les enrober.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Verser le bouillon, porter à ébullition puis laisser mijoter à couvert 25 min.", badge: "⏱ 25 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer au blender ou plongeur jusqu'à texture ultra lisse.", badge: null },
+      { icone: "🥥", titre: "Finition coco", detail: "Hors du feu, incorporer le lait de coco. Ajuster sel et poivre. Servir chaud.", badge: null }
+    ]
+  },
+
+  muffinkinder: {
+    cat: "viennoiserie", pays: "etatsunis",
+    base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
+    description: "Muffins moelleux fourrés et garnis de Kinder Bueno fondu — chocolat au lait, noisette croustillante.",
+    tableauMuffins: [
+      { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", vanilleExtrait: "2 g", kinderBueno: "3 barres", pepitesChoco: "30 g" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", vanilleExtrait: "5 g", kinderBueno: "6 barres", pepitesChoco: "60 g" },
+      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", vanilleExtrait: "7 g", kinderBueno: "9 barres", pepitesChoco: "90 g" },
+      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", vanilleExtrait: "10 g", kinderBueno: "12 barres", pepitesChoco: "120 g" }
+    ],
+    ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Kinder Bueno": 6, "Pépites choco (g)": 60 },
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 180°C. Préparer 12 caissettes à muffins.", badge: null },
+      { icone: "🌾", titre: "Mélanger secs", detail: "Dans un saladier : farine, sucre, levure chimique. Bien fouetter pour aérer.", badge: null },
+      { icone: "🥚", titre: "Mélanger liquides", detail: "Dans un autre bol : œufs battus, lait, beurre fondu tiédi, vanille. Fouetter.", badge: null },
+      { icone: "🫶", titre: "Combiner", detail: "Verser les liquides sur les secs et mélanger à la spatule JUSTE assez (grumeaux ok).", badge: "🔑 Sous-mélanger" },
+      { icone: "🍫", titre: "Casser les Kinder", detail: "Casser 4 Kinder Bueno en gros morceaux. Garder 2 entiers pour la déco.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Verser la pâte aux 2/3 dans les caissettes, ajouter morceaux de Kinder au centre, recouvrir.", badge: null },
+      { icone: "✨", titre: "Topping", detail: "Saupoudrer le dessus de pépites de chocolat et déposer ½ Kinder Bueno par muffin.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C. Vérifier avec un cure-dent.", badge: "⏱ 20-22 min" }
+    ]
+  },
+
+  muffinmars: {
+    cat: "viennoiserie", pays: "etatsunis",
+    base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
+    description: "Muffins gourmands au cœur de Mars fondu : chocolat, caramel coulant et nougat fondant.",
+    tableauMuffins: [
+      { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", cacao: "10 g", vanilleExtrait: "2 g", mars: "3 barres", caramelSale: "30 g" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", cacao: "20 g", vanilleExtrait: "5 g", mars: "6 barres", caramelSale: "60 g" },
+      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", cacao: "30 g", vanilleExtrait: "7 g", mars: "9 barres", caramelSale: "90 g" },
+      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", cacao: "40 g", vanilleExtrait: "10 g", mars: "12 barres", caramelSale: "120 g" }
+    ],
+    ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Cacao (g)": 20, "Mars": 6, "Caramel salé (g)": 60 },
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer", detail: "Four à 180°C, caissettes prêtes.", badge: null },
+      { icone: "🍫", titre: "Découper les Mars", detail: "Couper 5 Mars en cubes (~1cm). Garder 1 Mars pour le topping.", badge: null },
+      { icone: "🌾", titre: "Mélanger secs", detail: "Farine, sucre, levure, cacao. Bien fouetter.", badge: null },
+      { icone: "🥚", titre: "Mélanger liquides", detail: "Œufs, lait, beurre fondu, vanille.", badge: null },
+      { icone: "🫶", titre: "Combiner", detail: "Verser le liquide sur le sec, mélanger juste assez. Ajouter les cubes de Mars.", badge: "🔑 Pas trop mélanger" },
+      { icone: "🥄", titre: "Garnir", detail: "Caissettes (2/3). Faire un puits, mettre 1 c.à.c de caramel salé, recouvrir.", badge: null },
+      { icone: "✨", titre: "Topping", detail: "Poser une rondelle de Mars sur chaque muffin.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C.", badge: "⏱ 20-22 min" }
+    ]
+  },
+
+  muffinkitkat: {
+    cat: "viennoiserie", pays: "etatsunis",
+    base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
+    description: "Muffins au chocolat avec morceaux croquants de Kit Kat dedans et entiers en topping.",
+    tableauMuffins: [
+      { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", cacao: "15 g", vanilleExtrait: "2 g", kitkat: "4 barres", chocolat: "30 g" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", cacao: "30 g", vanilleExtrait: "5 g", kitkat: "8 barres", chocolat: "60 g" },
+      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", cacao: "45 g", vanilleExtrait: "7 g", kitkat: "12 barres", chocolat: "90 g" },
+      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", cacao: "60 g", vanilleExtrait: "10 g", kitkat: "16 barres", chocolat: "120 g" }
+    ],
+    ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Cacao (g)": 30, "Kit Kat": 8, "Chocolat (g)": 60 },
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer", detail: "Four à 180°C, caissettes prêtes.", badge: null },
+      { icone: "🍫", titre: "Concasser Kit Kat", detail: "Casser 5 Kit Kat en petits morceaux. Garder 3 Kit Kat entiers (cassés en demi) pour le topping.", badge: null },
+      { icone: "🌾", titre: "Mélanger secs", detail: "Farine, sucre, levure, cacao. Bien fouetter.", badge: null },
+      { icone: "🥚", titre: "Mélanger liquides", detail: "Œufs, lait, beurre fondu, vanille.", badge: null },
+      { icone: "🫶", titre: "Combiner", detail: "Mélanger sec + liquide. Ajouter morceaux de Kit Kat et chocolat haché.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Verser dans caissettes (2/3 hauteur).", badge: null },
+      { icone: "✨", titre: "Topping", detail: "Planter 2 demi-Kit Kat verticalement sur chaque muffin.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C.", badge: "⏱ 20-22 min" }
+    ]
+  },
+
+  muffinraffaello: {
+    cat: "viennoiserie", pays: "etatsunis",
+    base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
+    description: "Muffins blanc-coco délicats avec Raffaello fondants au cœur. Noix de coco, amande et chocolat blanc !",
+    tableauMuffins: [
+      { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", vanilleExtrait: "2 g", coco: "30 g", amandes: "20 g", chocolatBlanc: "40 g", raffaello: "6" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", vanilleExtrait: "5 g", coco: "60 g", amandes: "40 g", chocolatBlanc: "80 g", raffaello: "12" },
+      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", vanilleExtrait: "7 g", coco: "90 g", amandes: "60 g", chocolatBlanc: "120 g", raffaello: "18" },
+      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", vanilleExtrait: "10 g", coco: "120 g", amandes: "80 g", chocolatBlanc: "160 g", raffaello: "24" }
+    ],
+    ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Coco râpée (g)": 60, "Amandes (g)": 40, "Chocolat blanc (g)": 80, "Raffaello": 12 },
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer", detail: "Four à 180°C, caissettes prêtes.", badge: null },
+      { icone: "🥥", titre: "Mélanger secs", detail: "Farine, sucre, levure, noix de coco râpée. Bien fouetter.", badge: null },
+      { icone: "🥚", titre: "Mélanger liquides", detail: "Œufs, lait, beurre fondu, vanille.", badge: null },
+      { icone: "🫶", titre: "Combiner", detail: "Mélanger sec + liquide. Ajouter amandes effilées et chocolat blanc en morceaux.", badge: "🔑 Pas trop mélanger" },
+      { icone: "🥄", titre: "Garnir", detail: "Verser 1/3 dans la caissette. Enfoncer 1 Raffaello entier au centre. Recouvrir.", badge: null },
+      { icone: "✨", titre: "Topping", detail: "Saupoudrer de noix de coco râpée et déposer une amande effilée sur le dessus.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C. Couleur doit rester pâle.", badge: "⏱ 20-22 min" }
+    ]
+  },
+
+  muffinsnickers: {
+    cat: "viennoiserie", pays: "etatsunis",
+    base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
+    description: "Muffins ultra gourmands au Snickers : chocolat, caramel, cacahuète et nougat. Combo sucré-salé !",
+    tableauMuffins: [
+      { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", cacao: "10 g", vanilleExtrait: "2 g", snickers: "3", cacahuetes: "25 g", caramelSale: "30 g" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", cacao: "20 g", vanilleExtrait: "5 g", snickers: "6", cacahuetes: "50 g", caramelSale: "60 g" },
+      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", cacao: "30 g", vanilleExtrait: "7 g", snickers: "9", cacahuetes: "75 g", caramelSale: "90 g" },
+      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", cacao: "40 g", vanilleExtrait: "10 g", snickers: "12", cacahuetes: "100 g", caramelSale: "120 g" }
+    ],
+    ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Cacao (g)": 20, "Snickers": 6, "Cacahuètes (g)": 50, "Caramel salé (g)": 60 },
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer", detail: "Four à 180°C, caissettes prêtes.", badge: null },
+      { icone: "🍫", titre: "Découper Snickers", detail: "Couper 5 Snickers en cubes (~1cm). Garder 1 Snickers pour le topping.", badge: null },
+      { icone: "🥜", titre: "Concasser cacahuètes", detail: "Concasser grossièrement les cacahuètes.", badge: null },
+      { icone: "🌾", titre: "Mélanger secs", detail: "Farine, sucre, levure, cacao. Bien fouetter.", badge: null },
+      { icone: "🥚", titre: "Mélanger liquides", detail: "Œufs, lait, beurre fondu, vanille.", badge: null },
+      { icone: "🫶", titre: "Combiner", detail: "Mélanger sec + liquide. Ajouter cubes de Snickers + cacahuètes concassées.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Verser dans caissettes (2/3). Faire un puits, déposer 1 c.à.c de caramel salé, recouvrir.", badge: null },
+      { icone: "✨", titre: "Topping", detail: "Saupoudrer cacahuètes concassées + rondelle de Snickers.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C.", badge: "⏱ 20-22 min" }
+    ]
+  },
+
+  muffinoreo: {
+    cat: "viennoiserie", pays: "etatsunis",
+    base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
+    description: "Muffins vanille avec Oreo concassés dans la pâte et chocolat blanc fondant. Le contraste noir-blanc !",
+    tableauMuffins: [
+      { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", vanilleExtrait: "3 g", oreo: "6", chocolatBlanc: "40 g" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", vanilleExtrait: "5 g", oreo: "12", chocolatBlanc: "80 g" },
+      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", vanilleExtrait: "7 g", oreo: "18", chocolatBlanc: "120 g" },
+      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", vanilleExtrait: "10 g", oreo: "24", chocolatBlanc: "160 g" }
+    ],
+    ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Oreo": 12, "Chocolat blanc (g)": 80 },
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer", detail: "Four à 180°C, caissettes prêtes.", badge: null },
+      { icone: "🍪", titre: "Concasser Oreo", detail: "Casser 8 Oreo en gros morceaux. Garder 4 Oreo entiers (cassés en deux) pour la déco.", badge: null },
+      { icone: "🌾", titre: "Mélanger secs", detail: "Farine, sucre, levure. Bien fouetter pour aérer.", badge: null },
+      { icone: "🥚", titre: "Mélanger liquides", detail: "Œufs, lait, beurre fondu, vanille.", badge: null },
+      { icone: "🫶", titre: "Combiner", detail: "Sec + liquide. Mélanger juste. Ajouter morceaux d'Oreo + chocolat blanc en morceaux.", badge: "🔑 Sous-mélanger" },
+      { icone: "🥄", titre: "Garnir", detail: "Verser dans caissettes (2/3).", badge: null },
+      { icone: "✨", titre: "Topping", detail: "Planter 1/2 Oreo verticalement sur chaque muffin.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C. La pâte doit rester claire.", badge: "⏱ 20-22 min" }
+    ]
   }
 };
+
