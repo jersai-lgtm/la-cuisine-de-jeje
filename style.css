@@ -3291,3 +3291,122 @@ select, input[type="number"] {
 .vf-ia-btn {
   animation: vfIaPulse 3s ease-in-out infinite;
 }
+
+/* =============================================================================
+   v247 — Menu de choix IA (multi-fournisseurs)
+   ============================================================================= */
+.vf-ia-choix {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px dashed rgba(168,85,247,.3);
+  animation: vfFadeIn 0.3s ease;
+}
+
+@keyframes vfFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.vf-ia-choix-titre {
+  text-align: center;
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.vf-ia-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.vf-ia-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 12px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  color: #ddd;
+  text-align: center;
+}
+
+.vf-ia-option:hover {
+  background: rgba(168,85,247,.15);
+  border-color: rgba(168,85,247,.5);
+  transform: translateY(-2px);
+}
+
+.vf-ia-emoji {
+  font-size: 28px;
+}
+
+.vf-ia-nom {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.vf-ia-badge {
+  font-size: 10px;
+  font-weight: 600;
+  color: #4caf50;
+  background: rgba(76,175,80,.15);
+  padding: 2px 8px;
+  border-radius: 50px;
+  margin-top: 4px;
+}
+
+.vf-ia-aide {
+  text-align: center;
+  margin: 16px 0 0;
+  color: #888;
+  font-size: 12px;
+}
+
+.vf-ia-aide kbd {
+  background: rgba(255,255,255,.1);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  border: 1px solid rgba(255,255,255,.15);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .vf-ia-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vf-ia-emoji { font-size: 24px; }
+  .vf-ia-option { padding: 12px 8px; }
+  .vf-ia-nom { font-size: 12px; }
+}
+
+/* v248 - aide IA adaptée multi-device */
+.vf-ia-hint {
+  white-space: nowrap;
+  display: inline-block;
+}
+.vf-ia-sep {
+  color: #555;
+  margin: 0 8px;
+}
+.vf-ia-aide kbd {
+  background: rgba(255,255,255,.1);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  border: 1px solid rgba(255,255,255,.15);
+  font-size: 11px;
+}
+
+/* Sur mobile, séparer en deux lignes pour plus de lisibilité */
+@media (max-width: 600px) {
+  .vf-ia-sep { display: none; }
+  .vf-ia-hint { display: block; margin: 4px 0; }
+}
