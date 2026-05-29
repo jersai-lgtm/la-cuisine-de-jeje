@@ -165,8 +165,19 @@ const ADMIN_EMAILS = [
 function estAdmin() {
   if (!window.currentUser) return false;
   if (ADMIN_UIDS.includes(window.currentUser.uid)) return true;
-  if (ADMIN_EMAILS.includes(window.currentUser.email)) return true;
-  return false;
+  // v256.1 : Comparaison tolérante (lowercase + trim) pour éviter les soucis d'espaces/majuscules
+  const email = (window.currentUser.email || "").toLowerCase().trim();
+  const isAdmin = ADMIN_EMAILS.some(e => e.toLowerCase().trim() === email);
+  // Log de diagnostic — visible dans la console (F12)
+  console.log("👑 [Admin check]", { 
+    email: window.currentUser.email, 
+    emailNorm: email,
+    uid: window.currentUser.uid,
+    adminEmails: ADMIN_EMAILS,
+    adminUids: ADMIN_UIDS,
+    estAdmin: isAdmin 
+  });
+  return isAdmin;
 }
 
 window._noteAvisSelectionnee = 0;
@@ -258,7 +269,16 @@ async function envoyerAvis() {
     chargerStatsAvis();
   } catch (e) {
     console.error("Erreur envoi avis:", e);
-    if (typeof afficherToast === "function") afficherToast("⚠️ Erreur — réessaie plus tard");
+    // Message d'erreur précis selon le code Firebase
+    let msg = "⚠️ Erreur — réessaie plus tard";
+    if (e?.code === "permission-denied") {
+      msg = "🔒 Permission refusée — vérifie les règles Firestore !";
+    } else if (e?.code === "unavailable") {
+      msg = "📡 Pas de connexion internet";
+    } else if (e?.message) {
+      msg = "⚠️ " + e.message.slice(0, 80);
+    }
+    if (typeof afficherToast === "function") afficherToast(msg);
   } finally {
     if (btn) { btn.disabled = false; btn.textContent = "💌 Envoyer mon avis"; }
   }
