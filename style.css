@@ -2436,3 +2436,115 @@ select, input[type="number"] {
   .badge-titre { font-size: 11px; }
   .badge-desc { font-size: 9px; }
 }
+
+/* ===================================================================
+   NUTRI-SCORE — Badge mini sur carte + bloc fiche
+   =================================================================== */
+
+/* La carte doit être en position relative pour que le badge se positionne */
+.carte {
+  position: relative;
+}
+
+/* --- Mini badge sur les cartes : pastille blanche avec lettre colorée
+       Placée sur l'image, en haut à droite (zone libre) --- */
+.carte-nutri {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  z-index: 10;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+/* Cercle coloré intérieur (la lettre A/B/C/D/E) */
+.carte-nutri::before {
+  content: attr(data-lettre);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: -0.5px;
+}
+
+/* Couleurs officielles Nutri-Score Santé Publique France */
+.carte-nutri.nutri-A::before { background: #038141; }                       /* vert foncé */
+.carte-nutri.nutri-B::before { background: #85bb2f; }                       /* vert clair */
+.carte-nutri.nutri-C::before { background: #fecb02; color: #5a3e00; }       /* jaune */
+.carte-nutri.nutri-D::before { background: #ee8100; }                       /* orange */
+.carte-nutri.nutri-E::before { background: #e63e11; }                       /* rouge */
+
+/* Couleurs pour le bloc fiche (sans pseudo-élément) */
+.nutri-A { background: #038141; }
+.nutri-B { background: #85bb2f; }
+.nutri-C { background: #fecb02; color: #5a3e00; }
+.nutri-D { background: #ee8100; }
+.nutri-E { background: #e63e11; }
+
+/* --- Bloc Nutri-Score dans la fiche recette (à côté du prix/cal) --- */
+.nutri-score-bloc {
+  background: #f7f7f7;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nutri-score-bloc.nutri-A { background: linear-gradient(135deg, #ecf7e8, #d4ebcb); }
+.nutri-score-bloc.nutri-B { background: linear-gradient(135deg, #f4f9e8, #e6f0c8); }
+.nutri-score-bloc.nutri-C { background: linear-gradient(135deg, #fff8d6, #fdecae); }
+.nutri-score-bloc.nutri-D { background: linear-gradient(135deg, #ffe6cc, #ffcd9c); }
+.nutri-score-bloc.nutri-E { background: linear-gradient(135deg, #ffd5cc, #ffb5a3); }
+
+.nutri-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 22px;
+  color: white;
+  margin: 4px auto 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.nutri-score-bloc.nutri-A .nutri-badge { background: #038141; }
+.nutri-score-bloc.nutri-B .nutri-badge { background: #85bb2f; }
+.nutri-score-bloc.nutri-C .nutri-badge { background: #fecb02; color: #5a3e00; }
+.nutri-score-bloc.nutri-D .nutri-badge { background: #ee8100; }
+.nutri-score-bloc.nutri-E .nutri-badge { background: #e63e11; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .carte-nutri {
+    width: 32px;
+    height: 32px;
+    top: 6px;
+    right: 6px;
+    padding: 2px;
+  }
+  .carte-nutri::before {
+    font-size: 14px;
+  }
+  .nutri-badge {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}
