@@ -4600,3 +4600,123 @@ select, input[type="number"] {
   font-size: 11px;
   font-style: italic;
 }
+
+/* ============================================================ */
+/* 👑 STATS ADMIN COMPLÈTES v257.1                              */
+/* ============================================================ */
+.admin-section { margin: 24px 0; padding: 16px 0; border-top: 1px solid rgba(255,255,255,0.08); }
+.admin-section-titre {
+  color: #ffd700; font-size: 16px; font-weight: 700;
+  margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+}
+.admin-mini-titre {
+  color: #ddd; font-size: 13px; font-weight: 600;
+}
+.admin-error {
+  background: rgba(255, 99, 99, 0.1); border: 1px solid rgba(255, 99, 99, 0.3);
+  border-radius: 12px; padding: 16px; color: #ffaaaa;
+}
+.admin-error h5 { color: #ff6363; margin-bottom: 8px; font-size: 14px; }
+.admin-error p { font-size: 13px; line-height: 1.5; }
+
+/* Cartes stats */
+.admin-cartes-grille {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px; margin-bottom: 16px;
+}
+.admin-carte {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px; padding: 12px; text-align: center;
+}
+.admin-carte-val { font-size: 22px; font-weight: 700; color: white; }
+.admin-carte-lbl { font-size: 11px; color: #aaa; margin-top: 4px; }
+.admin-carte-vert { background: rgba(76, 175, 80, 0.12); border-color: rgba(76,175,80,0.3); }
+.admin-carte-vert .admin-carte-val { color: #81c784; }
+.admin-carte-bleu { background: rgba(33, 150, 243, 0.12); border-color: rgba(33,150,243,0.3); }
+.admin-carte-bleu .admin-carte-val { color: #64b5f6; }
+.admin-carte-orange { background: rgba(255, 152, 0, 0.12); border-color: rgba(255,152,0,0.3); }
+.admin-carte-orange .admin-carte-val { color: #ffb74d; }
+.admin-carte-rose { background: rgba(233, 30, 99, 0.12); border-color: rgba(233,30,99,0.3); }
+.admin-carte-rose .admin-carte-val { color: #f48fb1; }
+
+/* Foyer moyen */
+.admin-foyer-moy {
+  background: rgba(255,255,255,0.04); border-radius: 10px;
+  padding: 10px 14px; margin-top: 8px;
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+}
+.admin-foyer-detail { color: #ddd; font-size: 13px; }
+
+/* Tops (cuisinées, favoris) */
+.admin-tops-grille {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px; margin-top: 16px;
+}
+.admin-top {
+  background: rgba(255,255,255,0.03); border-radius: 12px; padding: 12px;
+}
+.admin-top-titre {
+  color: #ffd700; font-size: 13px; font-weight: 600;
+  margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.admin-top-ligne {
+  display: grid; grid-template-columns: 32px 1fr auto; gap: 8px; align-items: center;
+  padding: 4px 0; font-size: 12px;
+}
+.admin-top-rang { color: #888; font-weight: 700; }
+.admin-top-nom { color: #ddd; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.admin-top-val { color: #ffd700; font-weight: 700; }
+
+/* Préférences agrégées */
+.admin-prefs-grille {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+.admin-pref-bloc {
+  background: rgba(255,255,255,0.03); border-radius: 12px; padding: 12px;
+}
+.admin-pref-titre {
+  color: #ffd700; font-size: 13px; font-weight: 600;
+  margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.admin-pref-ligne {
+  display: grid; grid-template-columns: 100px 1fr 30px; gap: 8px; align-items: center;
+  padding: 3px 0;
+}
+.admin-pref-label {
+  color: #ddd; font-size: 11px; text-transform: capitalize;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.admin-pref-bar {
+  background: rgba(255,255,255,0.06); height: 8px; border-radius: 4px; overflow: hidden;
+}
+.admin-pref-fill {
+  background: linear-gradient(90deg, #ff8fb3, #ffd700); height: 100%; border-radius: 4px;
+}
+.admin-pref-count { color: #ffd700; font-weight: 700; font-size: 12px; text-align: right; }
+
+/* Tableau utilisateurs */
+.admin-tab-wrap {
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  background: rgba(255,255,255,0.03); border-radius: 12px; padding: 6px;
+}
+.admin-tab {
+  width: 100%; border-collapse: collapse; font-size: 11px;
+}
+.admin-tab th {
+  background: rgba(255,215,0,0.1); color: #ffd700; padding: 8px 6px;
+  font-weight: 600; text-align: left; border-bottom: 1px solid rgba(255,215,0,0.2);
+  white-space: nowrap;
+}
+.admin-tab td {
+  padding: 6px; color: #ddd; border-bottom: 1px solid rgba(255,255,255,0.05);
+  white-space: nowrap;
+}
+.admin-tab tr:last-child td { border-bottom: none; }
+.admin-tab-email { color: #888 !important; font-size: 10px; max-width: 160px; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 600px) {
+  .admin-cartes-grille { grid-template-columns: repeat(2, 1fr); }
+  .admin-tops-grille, .admin-prefs-grille { grid-template-columns: 1fr; }
+  .admin-tab { font-size: 10px; }
+  .admin-pref-ligne { grid-template-columns: 80px 1fr 28px; }
+}
