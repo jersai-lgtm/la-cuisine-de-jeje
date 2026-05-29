@@ -214,8 +214,116 @@ window.retirerCuisine = async function(key) {
 };
 
 // ==============================
-// RECETTES VUES (v241) — tracking automatique + persistance
+// NOTES PERSONNELLES (v245) — par recette
 // ==============================
+// Format Firebase : userProfile.notesRecettes = { "cle_recette": "ma note", ... }
+
+window.getNoteRecette = function(key) {
+  const notes = window.userProfile?.notesRecettes || {};
+  return notes[key] || "";
+};
+
+window.enregistrerNoteRecette = async function(key, note) {
+  if (!window.currentUser) { ouvrirModalAuth(); return; }
+  if (!window.userProfile) return;
+  
+  // Init si nécessaire
+  if (!window.userProfile.notesRecettes) window.userProfile.notesRecettes = {};
+  
+  const noteTrim = (note || "").trim();
+  if (noteTrim === "") {
+    // Note vide → supprimer l'entrée
+    delete window.userProfile.notesRecettes[key];
+  } else {
+    window.userProfile.notesRecettes[key] = noteTrim;
+  }
+  
+  // Sauvegarde Firebase (silencieuse)
+  try {
+    await _db.collection("utilisateurs").doc(window.currentUser.uid).update({
+      notesRecettes: window.userProfile.notesRecettes
+    });
+    if (typeof afficherToast === "function") afficherToast(noteTrim ? "📝 Note enregistrée" : "🗑️ Note supprimée");
+  } catch (e) {
+    console.warn("Erreur sauvegarde note:", e);
+  }
+  
+  window.dispatchEvent(new Event("profilMisAJour"));
+};
+
+// Injecte la section "Mes notes" dans la fiche recette ouverte
+window.injecterNotesRecette = function(key) {
+  // Trouver la zone de la fiche
+  const resultat = document.getElementById("modal-resultat");
+  if (!resultat) return;
+  
+  // Supprimer une éventuelle section précédente
+  const ancien = document.getElementById("notes-section");
+  if (ancien) ancien.remove();
+  
+  const noteActuelle = window.getNoteRecette(key);
+  const aUneNote = noteActuelle.length > 0;
+  
+  // Construire la section
+  const section = document.createElement("div");
+  section.id = "notes-section";
+  section.className = "notes-section";
+  section.innerHTML = `
+    <div class="notes-header" onclick="toggleNotesSection()">
+      <span class="notes-icon">📝</span>
+      <span class="notes-titre">Mes notes personnelles</span>
+      ${aUneNote ? '<span class="notes-badge">●</span>' : ''}
+      <span class="notes-chevron" id="notes-chevron">▼</span>
+    </div>
+    <div class="notes-body" id="notes-body" style="display:${aUneNote ? 'block' : 'none'}">
+      <textarea 
+        id="notes-textarea" 
+        class="notes-textarea"
+        placeholder="Ex : « Ajouter +1 c.à.c de paprika », « Recette préférée de Mamie », « Pas assez salé la dernière fois »..."
+        maxlength="500"
+        oninput="onNoteInput()">${noteActuelle.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</textarea>
+      <div class="notes-footer">
+        <span class="notes-compteur" id="notes-compteur">${noteActuelle.length}/500</span>
+        <button class="notes-btn-save" id="notes-btn-save" onclick="sauverNoteActuelle('${key}')" disabled>💾 Enregistrer</button>
+      </div>
+    </div>
+  `;
+  resultat.appendChild(section);
+};
+
+window.toggleNotesSection = function() {
+  const body = document.getElementById("notes-body");
+  const chevron = document.getElementById("notes-chevron");
+  if (!body) return;
+  const ouvert = body.style.display !== "none";
+  body.style.display = ouvert ? "none" : "block";
+  if (chevron) chevron.textContent = ouvert ? "▼" : "▲";
+};
+
+window.onNoteInput = function() {
+  const ta = document.getElementById("notes-textarea");
+  const compteur = document.getElementById("notes-compteur");
+  const btnSave = document.getElementById("notes-btn-save");
+  if (!ta || !compteur || !btnSave) return;
+  compteur.textContent = ta.value.length + "/500";
+  btnSave.disabled = false; // activer le bouton dès qu'on tape
+};
+
+window.sauverNoteActuelle = async function(key) {
+  const ta = document.getElementById("notes-textarea");
+  if (!ta) return;
+  const btn = document.getElementById("notes-btn-save");
+  if (btn) { btn.disabled = true; btn.textContent = "💾 ..."; }
+  
+  await window.enregistrerNoteRecette(key, ta.value);
+  
+  if (btn) {
+    btn.textContent = "✅ Enregistré !";
+    setTimeout(() => {
+      if (btn) btn.textContent = "💾 Enregistrer";
+    }, 1500);
+  }
+};
 // _recentsVus : liste des 100 dernières recettes uniques (pour "Récents", suggestions)
 // totalRecettesVues : compteur cumulatif (cap à 9999, ne descend jamais → garde les badges débloqués)
 
@@ -450,10 +558,12 @@ window.ouvrirModalAuth = function(onglet) {
   const m = document.getElementById("modal-auth");
   if (m) m.classList.add("visible");
   switchAuthTab(onglet || "connexion");
+  if (typeof modalPush === "function") modalPush(window.fermerModalAuth, "auth");
 };
 window.fermerModalAuth = function() {
   const m = document.getElementById("modal-auth");
   if (m) m.classList.remove("visible");
+  if (typeof modalPop === "function") modalPop("auth");
 };
 window.switchAuthTab = function(onglet) {
   const c = document.getElementById("auth-tab-connexion");
@@ -497,11 +607,15 @@ window.ouvrirModalProfil = function() {
   // Allergies custom
   window._ac_pp = prefs.allergiesCustom || [];
   renderAC("pp");
+  
+  // v244 : retour téléphone
+  if (typeof modalPush === "function") modalPush(window.fermerModalProfil, "profil");
 };
 
 window.fermerModalProfil = function() {
   const m = document.getElementById("modal-profil");
   if (m) m.classList.remove("visible");
+  if (typeof modalPop === "function") modalPop("profil");
 };
 window.fermerOnboarding = function() {
   const m = document.getElementById("modal-onboarding");
