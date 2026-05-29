@@ -103,6 +103,8 @@ async function chargerProfil(user) {
   const snap = await ref.get();
   if (snap.exists) {
     window.userProfile = snap.data();
+    // v241 : Restaurer les recettes vues depuis Firebase
+    window._recentsVus = window.userProfile.recettesVues || [];
   window.dispatchEvent(new Event('profilMisAJour'));
   } else {
     const profil = {
@@ -111,10 +113,12 @@ async function chargerProfil(user) {
       dateCreation: new Date().toISOString(),
       foyer: null,
       preferences: { regimes:[], allergies:[], allergiesCustom:[], objectifs:[], cuisinesFavorites:[], niveauCuisine:"débutant" },
-      favoris: [], historiqueMenus: [], menusFavoris: []
+      favoris: [], historiqueMenus: [], menusFavoris: [],
+      recettesVues: [], totalRecettesVues: 0, recettesCuisinees: []
     };
     await ref.set(profil);
     window.userProfile = profil;
+    window._recentsVus = [];
   window.dispatchEvent(new Event('profilMisAJour'));
   }
 }
@@ -207,6 +211,38 @@ window.retirerCuisine = async function(key) {
   window.userProfile.recettesCuisinees = arr;
   majBoutonCuisine(key);
   window.dispatchEvent(new Event("profilMisAJour"));
+};
+
+// ==============================
+// RECETTES VUES (v241) — tracking automatique + persistance
+// ==============================
+// _recentsVus : liste des 100 dernières recettes uniques (pour "Récents", suggestions)
+// totalRecettesVues : compteur cumulatif (cap à 9999, ne descend jamais → garde les badges débloqués)
+
+window.ajouterRecent = function(key) {
+  if (!key) return;
+  
+  // 1. Liste des récentes (sans doublon, plus récente en premier, max 100)
+  let vus = window._recentsVus || [];
+  vus = vus.filter(k => k !== key);
+  vus.unshift(key);
+  if (vus.length > 100) vus = vus.slice(0, 100);
+  window._recentsVus = vus;
+  
+  // Si pas connecté, on garde juste en mémoire pour la session
+  if (!window.currentUser || !window.userProfile) return;
+  
+  // 2. Compteur cumulatif (cap à 9999 pour éviter l'overflow visuel)
+  // Ne se reset jamais — préserve les badges débloqués
+  const total = Math.min((window.userProfile.totalRecettesVues || 0) + 1, 9999);
+  window.userProfile.totalRecettesVues = total;
+  window.userProfile.recettesVues = vus;
+  
+  // 3. Sauvegarder en arrière-plan (sans bloquer l'UX)
+  _db.collection("utilisateurs").doc(window.currentUser.uid).set({
+    recettesVues: vus,
+    totalRecettesVues: total
+  }, { merge: true }).catch(e => console.warn("Sauvegarde recettes vues échouée :", e));
 };
 
 // Met à jour visuellement le bouton "J'ai cuisiné"
