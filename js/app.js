@@ -5605,6 +5605,9 @@ function onInputCalcChange(inputId, _recetteCle) {
 
 // Ouvrir la fiche recette depuis une carte en lisant son input
 function ouvrirFiche(recette, inputId) {
+  // v241 : Tracker la vue de cette recette (persistant)
+  if (typeof ajouterRecent === "function") ajouterRecent(recette);
+  
   const input = inputId ? document.getElementById(inputId) : null;
   // Si l'input existe ET n'a pas été modifié manuellement, le synchroniser avec le foyer
   // (au cas où le profil aurait été chargé après l'init initial)
@@ -5778,7 +5781,8 @@ function calculerToutesStats() {
   
   return {
     nbRecettesEssayees: recettesVues.size,
-    nbRecettesVues: recettesVues.size, // v240 : alias plus parlant
+    // v241 : compteur cumulatif (persiste entre sessions, jamais reset à 0)
+    nbRecettesVues: Math.max(user.totalRecettesVues || 0, recettesVues.size),
     nbRecettesCuisinees: recettesCuisineesSet.size, // v240 : nouveau
     totalCuissons: totalCuissons, // v240 : total des fois où des recettes ont été cuisinées
     nbFavoris: favoris.length,
