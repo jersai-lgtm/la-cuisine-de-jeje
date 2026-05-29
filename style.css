@@ -2676,7 +2676,7 @@ select, input[type="number"] {
 .search-bar {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 500; /* doit être > .menu-cats (100) pour que le dropdown passe au-dessus */
 }
 
 /* Dropdown des suggestions */
