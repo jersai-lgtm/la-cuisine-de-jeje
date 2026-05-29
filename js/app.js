@@ -149,10 +149,14 @@ function afficherAccueil() {
 function chargerAccueil() {
   chargerAccueilFavoris();
   chargerAccueilMenus();
-  chargerAccueilMenusFavoris();
+  // v249 : Retiré — accessible via ⭐ Favoris → ❤️ Menus favoris
+  // chargerAccueilMenusFavoris();
   chargerAccueilFetiches();
   chargerAccueilRecents();
   chargerAccueilSuggestions();
+  // S'assurer qu'aucun ancien bloc menus favoris ne traîne
+  const ancien = document.getElementById("accueil-menus-favoris-bloc");
+  if (ancien) ancien.remove();
 }
 
 // Favoris
@@ -310,6 +314,12 @@ function chargerAccueilMenus() {
 
 // Mes menus favoris (sur l'accueil) — bloc créé dynamiquement
 function chargerAccueilMenusFavoris() {
+  // v249 : Retiré de l'accueil — accessible via ⭐ Favoris → ❤️ Menus favoris
+  // Suppression défensive du bloc s'il existe encore
+  const ancien = document.getElementById("accueil-menus-favoris-bloc");
+  if (ancien) ancien.remove();
+  return;
+  // --- Code historique conservé en cas de besoin futur ---
   const blocId = "accueil-menus-favoris-bloc";
   const menusBloc = document.getElementById("accueil-menus-bloc");
   if (!menusBloc) return;
@@ -374,7 +384,7 @@ function chargerAccueilMenusFavoris() {
         <span>${sousType}</span>
         <span style="display:flex;gap:6px">
           <button onclick="event.stopPropagation();demanderRenommageMenu('${f.id}')" style="background:transparent;border:none;color:#ff8fb3;cursor:pointer;font-size:13px;padding:0" title="Renommer">✏️</button>
-          <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}').then(()=>chargerAccueilMenusFavoris())" style="background:transparent;border:none;color:#ff6b6b;cursor:pointer;font-size:14px;padding:0" title="Supprimer">✕</button>
+          <button onclick="event.stopPropagation();confirmer('Supprimer ce menu favori ?',{titre:'❤️ Menu favori',boutonOui:'Supprimer'}).then(ok=>{if(ok)supprimerMenuFavori('${f.id}').then(()=>chargerAccueilMenusFavoris())})" style="background:transparent;border:none;color:#ff6b6b;cursor:pointer;font-size:14px;padding:0" title="Supprimer">✕</button>
         </span>
       </div>
       <div class="accueil-menu-item">
@@ -984,7 +994,7 @@ function filtrerMenusFavoris() {
         </span>
         <span style="display:flex;gap:8px;align-items:center">
           <button onclick="event.stopPropagation();demanderRenommageMenu('${f.id}')" class="btn-retirer-favori" title="Renommer" style="color:#ff8fb3">✏️</button>
-          <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}')" class="btn-retirer-favori" title="Supprimer">✕</button>
+          <button onclick="event.stopPropagation();confirmer('Supprimer ce menu favori ?',{titre:'❤️ Menu favori',boutonOui:'Supprimer'}).then(ok=>{if(ok)supprimerMenuFavori('${f.id}')})" class="btn-retirer-favori" title="Supprimer">✕</button>
         </span>
       </div>`;
     });
@@ -1019,6 +1029,28 @@ function changerCompteur(id, delta) {
   const val = parseInt(el.value) + delta;
   const min = parseInt(el.min) || 0;
   const max = parseInt(el.max) || 99;
+  el.value = Math.min(max, Math.max(min, val));
+}
+
+// v251 : Sélecteur +/- pour le planificateur (Semaine et Thématique)
+function changerPersonnesPlan(inputId, delta) {
+  const el = document.getElementById(inputId);
+  if (!el) return;
+  const val = (parseInt(el.value) || 4) + delta;
+  const min = parseInt(el.min) || 1;
+  const max = parseInt(el.max) || 15;
+  el.value = Math.min(max, Math.max(min, val));
+  // Déclencher l'événement de changement pour que le reste de la logique réagisse
+  el.dispatchEvent(new Event("change"));
+}
+
+// Validation manuelle de l'input (saisie directe au clavier)
+function onChangePersonnesPlan(inputId) {
+  const el = document.getElementById(inputId);
+  if (!el) return;
+  let val = parseInt(el.value) || 4;
+  const min = parseInt(el.min) || 1;
+  const max = parseInt(el.max) || 15;
   el.value = Math.min(max, Math.max(min, val));
 }
 
@@ -1083,7 +1115,7 @@ function afficherMenusFavoris() {
       </span>
       <span style="display:flex;gap:8px;align-items:center">
         <button onclick="event.stopPropagation();demanderRenommageMenu('${f.id}')" class="btn-retirer-favori" title="Renommer" style="color:#ff8fb3">✏️</button>
-        <button onclick="event.stopPropagation();if(confirm('Supprimer ce menu favori ?'))supprimerMenuFavori('${f.id}').then(()=>{afficherMenusFavoris();chargerAccueilMenusFavoris();})" class="btn-retirer-favori">✕</button>
+        <button onclick="event.stopPropagation();confirmer('Supprimer ce menu favori ?',{titre:'❤️ Menu favori',boutonOui:'Supprimer'}).then(ok=>{if(ok)supprimerMenuFavori('${f.id}').then(()=>{afficherMenusFavoris();chargerAccueilMenusFavoris();})})" class="btn-retirer-favori">✕</button>
       </span>
     </div>`;
   }).join('');
@@ -4153,6 +4185,61 @@ function vfReset() {
 }
 
 // =============================================================================
+// ✋ MODAL DE CONFIRMATION CUSTOM v250
+// =============================================================================
+// Remplace le confirm() natif qui affichait obligatoirement "domaine.com indique"
+// Usage : const ok = await confirmer("Tu es sûr ?");
+// =============================================================================
+window.confirmer = function(message, options = {}) {
+  const {
+    titre = "Confirmation",
+    boutonOui = "Confirmer",
+    boutonNon = "Annuler",
+    dangereux = true, // si true, le bouton OUI est rouge
+  } = options;
+  
+  return new Promise((resolve) => {
+    // Créer la modal
+    const overlay = document.createElement("div");
+    overlay.className = "modal-confirm-overlay visible";
+    overlay.innerHTML = `
+      <div class="modal-confirm-box">
+        <div class="modal-confirm-titre">${titre}</div>
+        <div class="modal-confirm-message">${message}</div>
+        <div class="modal-confirm-actions">
+          <button class="modal-confirm-non">${boutonNon}</button>
+          <button class="modal-confirm-oui ${dangereux ? "danger" : ""}">${boutonOui}</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+    
+    // Animation d'entrée (force le reflow)
+    void overlay.offsetWidth;
+    overlay.classList.add("animate-in");
+    
+    const cleanup = (resultat) => {
+      overlay.classList.remove("animate-in");
+      setTimeout(() => overlay.remove(), 200);
+      resolve(resultat);
+    };
+    
+    overlay.querySelector(".modal-confirm-non").onclick = () => cleanup(false);
+    overlay.querySelector(".modal-confirm-oui").onclick = () => cleanup(true);
+    // Clic en dehors = annuler
+    overlay.onclick = (e) => { if (e.target === overlay) cleanup(false); };
+    // Touche Échap = annuler
+    const escHandler = (e) => {
+      if (e.key === "Escape") {
+        cleanup(false);
+        document.removeEventListener("keydown", escHandler);
+      }
+    };
+    document.addEventListener("keydown", escHandler);
+  });
+};
+
+// =============================================================================
 // 🛒 LISTE DE COURSES INTELLIGENTE v249
 // =============================================================================
 // Sélection multi-recettes → consolidation des ingrédients → tri par rayon
@@ -4310,8 +4397,13 @@ function lcRetirerRecette(cle) {
   lcSauvegarder();
 }
 
-function lcViderListe() {
-  if (!confirm("Vider toute la liste de courses ?")) return;
+async function lcViderListe() {
+  const ok = await confirmer("Vider toute la liste de courses ?", {
+    titre: "🗑️ Vider la liste",
+    boutonOui: "Tout vider",
+    boutonNon: "Annuler",
+  });
+  if (!ok) return;
   if (window.userProfile) {
     window.userProfile.listeCourses = [];
     window.userProfile.listeCoursesCoches = [];
