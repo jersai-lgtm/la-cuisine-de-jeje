@@ -1354,15 +1354,15 @@ function choisirRecette(nom) {
       <div class="fiche-emoji">${data.emoji}</div>
       <h2 class="fiche-titre">${nomPropre}</h2>
       <p class="fiche-desc">${data.description}</p>
-      <div class="fiche-meta">
-        <span>⏱ ${data.temps}</span>
-        <span>${data.niveau}</span>
-        ${getSelecteurPersonnesHTML(nom, personnes)}
-        ${infoSaison}
-        ${infoHistorique}
-      </div>
     </div>
     ${htmlPrixCalories(nom, personnes)}
+    <div class="fiche-meta">
+      <span>⏱ ${data.temps}</span>
+      <span>${data.niveau}</span>
+      ${getSelecteurPersonnesHTML(nom, personnes)}
+      ${infoSaison}
+      ${infoHistorique}
+    </div>
     <div class="fiche-section">
       <h2 class="fiche-section-titre">🛒 Ingrédients</h2>
       <div class="fiche-ingredients-liste">${listeIngredients}</div>
