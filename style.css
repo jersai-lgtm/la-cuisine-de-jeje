@@ -261,7 +261,58 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
   backdrop-filter: blur(4px);
 }
 
-/* Sélecteur de personnes dans la modal (sticky en haut) */
+/* Sélecteur de personnes intégré dans la fiche (à la place du badge "4 pâtons") */
+.fiche-selecteur-personnes {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+.fiche-selecteur-personnes .selecteur-pre,
+.fiche-selecteur-personnes .selecteur-post {
+  color: #ffb3cc;
+  font-size: 13px;
+}
+.fiche-calc {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,77,136,.3);
+  border-radius: 10px;
+  padding: 2px;
+  overflow: hidden;
+}
+.fiche-calc .calc-btn-minus,
+.fiche-calc .calc-btn-plus {
+  width: 26px;
+  height: 26px;
+  font-size: 16px;
+}
+.fiche-calc .calc-input {
+  background: transparent;
+  border: none;
+  color: white;
+  width: 36px;
+  padding: 4px 2px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+.fiche-calc .calc-input::-webkit-outer-spin-button,
+.fiche-calc .calc-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+/* Note "* Prix moyens..." dans le bloc liste de courses */
+.prix-cal-note-courses {
+  font-size: 11px;
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 8px;
+}
+
+/* Ancien sélecteur sticky modal (legacy, peut être supprimé si plus utilisé) */
 .modal-selecteur-personnes {
   display: flex;
   align-items: center;
