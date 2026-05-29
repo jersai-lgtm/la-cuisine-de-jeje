@@ -4122,11 +4122,19 @@ function vfMettreAJourSelection() {
 }
 
 // Filtre les chips selon une recherche
+// Normalise un texte pour recherche : minuscule, sans accent, sans ligature (œ→oe)
+function vfNormalize(s) {
+  if (!s) return "";
+  return String(s).toLowerCase()
+    .replace(/œ/g, "oe").replace(/æ/g, "ae")     // Ligatures FR
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "");  // Accents
+}
+
 function vfFiltrerIngredients(query) {
-  const q = query.toLowerCase().trim();
+  const q = vfNormalize(query.trim());
   document.querySelectorAll(".vf-chip").forEach(chip => {
-    const txt = chip.textContent.toLowerCase();
-    const label = (chip.getAttribute("data-label") || "").toLowerCase();
+    const txt = vfNormalize(chip.textContent);
+    const label = vfNormalize(chip.getAttribute("data-label") || "");
     const match = !q || txt.includes(q) || label.includes(q);
     chip.style.display = match ? "" : "none";
   });
@@ -5876,7 +5884,87 @@ function ouvrirFiche(recette, inputId) {
     }
   }
   choisirRecette(recette);
+  // v246 : Pousser un état tampon pour que le bouton retour ferme la fiche
+  if (typeof window._backGuardPush === "function") window._backGuardPush();
 }
+
+// =============================================================================
+// 📱 GESTION DU BOUTON RETOUR DU TÉLÉPHONE (v246 — refonte robuste)
+// =============================================================================
+// Approche : on push un "état tampon" dans l'historique au chargement, et au
+// popstate on vérifie quelles modals sont visibles dans le DOM pour les fermer.
+// =============================================================================
+
+// Pousse un état tampon pour intercepter le prochain retour
+window._backGuardPush = function() {
+  try {
+    history.pushState({ backGuard: Date.now() }, "");
+  } catch (e) { /* PWA peut bloquer */ }
+};
+
+// Au chargement initial, on initialise le buffer
+if (typeof window !== "undefined") {
+  // Quand l'app démarre, on ajoute un état tampon à l'historique
+  // De cette façon, le 1er bouton retour déclenche popstate au lieu de fermer
+  setTimeout(() => {
+    try {
+      // Marquer l'état actuel comme racine
+      history.replaceState({ appRoot: true }, "");
+      // Pousser un état tampon (l'utilisateur est dessus)
+      history.pushState({ tampon: true }, "");
+    } catch (e) {}
+  }, 100);
+}
+
+// Liste des modals à surveiller (id du DOM + fonction de fermeture)
+const _MODALS_SURVEILLEES = [
+  { id: "modal-calc",        close: () => typeof fermerModal === "function" && fermerModal() },
+  { id: "modal-auth",        close: () => typeof fermerModalAuth === "function" && fermerModalAuth() },
+  { id: "modal-profil",      close: () => typeof fermerModalProfil === "function" && fermerModalProfil() },
+  { id: "modal-onboarding",  close: () => typeof fermerOnboarding === "function" && fermerOnboarding() },
+];
+
+// Vérifie si un élément est actuellement visible (modal ouverte)
+function _modalEstVisible(el) {
+  if (!el) return false;
+  if (el.classList.contains("visible")) return true;
+  const d = el.style.display;
+  if (d === "block" || d === "flex") return true;
+  // Vérifier le computed style si pas de style inline
+  if (!d) {
+    const cs = window.getComputedStyle(el);
+    if (cs.display !== "none" && cs.visibility !== "hidden") return true;
+  }
+  return false;
+}
+
+// Quand le user appuie sur le bouton retour du téléphone
+window.addEventListener("popstate", function(e) {
+  // Trouver la modal du dessus actuellement visible
+  let modalFermee = false;
+  // On parcourt en ordre inverse (la dernière ouverte = la plus haute z-index)
+  for (let i = _MODALS_SURVEILLEES.length - 1; i >= 0; i--) {
+    const m = _MODALS_SURVEILLEES[i];
+    const el = document.getElementById(m.id);
+    if (_modalEstVisible(el)) {
+      try { m.close(); } catch (err) { console.warn("Erreur fermeture modal:", err); }
+      modalFermee = true;
+      break;
+    }
+  }
+  
+  // Re-pousser un état tampon pour intercepter le PROCHAIN retour aussi
+  // Sinon le user aurait besoin de 2 clics retour à chaque fois
+  if (modalFermee) {
+    window._backGuardPush();
+  }
+  // Si aucune modal n'était ouverte, on laisse le browser quitter naturellement
+  // (l'historique se vide normalement)
+});
+
+// Compat : on garde modalPush/modalPop comme no-ops pour le code existant
+window.modalPush = function() {};
+window.modalPop = function() {};
 
 function fermerModal() {
   const inputP = document.getElementById("personnes");
