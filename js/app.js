@@ -4089,6 +4089,11 @@ function appliquerNutriScoreCartes() {
     // Ne pas réappliquer si déjà fait
     if (carte.querySelector(".carte-nutri")) return;
     
+    // EXCLUSION : pas de Nutri-Score sur les boissons alcoolisées (cocktails)
+    // ni sur les mocktails (boissons sucrées, hors-cadre Nutri-Score)
+    const cat = carte.dataset.cat;
+    if (cat === "cocktails" || cat === "mocktails") return;
+    
     const cle = extraireCleRecetteCarte(carte);
     if (!cle) return;
     

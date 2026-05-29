@@ -732,11 +732,24 @@ const POIDS_UNITAIRE = {
   serrano: 30,
 };
 
+// Liste des SPIRITUEUX et boissons alcoolisées pures (pour exclusion Nutri-Score)
+// Le Nutri-Score officiel exclut les boissons alcoolisées.
+// Note : le vin/marsala/mirin/sake ne sont PAS dans cette liste car ils servent
+// principalement à cuisiner — l'alcool s'évapore à la cuisson (bourguignon, coq au vin...).
+// Pour les recettes type "sangria" qui contiennent du vin, l'exclusion se fait
+// au niveau de la catégorie (data-cat="cocktails") dans app.js.
+const INGREDIENTS_ALCOOL = new Set([
+  "rhum", "vodka", "tequila", "cognac", "bourbon", "brandy", "kirsch", "gin",
+  "cointreau", "tripleSec", "curacao", "aperol", "campari", "vermouth", "passoa", "amaretto",
+  "champagne", "prosecco", "bierebrune", "kahluaC", "bitters"
+]);
+
 function calculerNutriScoreRecette(ligne) {
   if (!ligne || typeof ligne !== "object") return null;
   
   let poidsTotal = 0;
   let poidsFlv = 0;
+  let poidsAlcool = 0;
   const totaux = { cal: 0, lipSat: 0, sucre: 0, sel: 0, fibres: 0, prot: 0 };
   
   Object.entries(ligne).forEach(([nomIng, valeur]) => {
@@ -764,6 +777,12 @@ function calculerNutriScoreRecette(ligne) {
     if (grammes <= 0) return;
     
     poidsTotal += grammes;
+    
+    // Si c'est un alcool, on cumule pour exclure ensuite si proportion trop élevée
+    if (INGREDIENTS_ALCOOL.has(nomIng)) {
+      poidsAlcool += grammes;
+    }
+    
     const facteur = grammes / 100; // pour passer de "/100g" à "absolu"
     
     // Calories : utiliser calPer100g si dispo, sinon cal/unité ramené à 100g
@@ -787,6 +806,15 @@ function calculerNutriScoreRecette(ligne) {
   });
   
   if (poidsTotal === 0) return null;
+  
+  // === EXCLUSION DES BOISSONS ALCOOLISÉES ===
+  // Le Nutri-Score officiel exclut les boissons contenant > 1.2% d'alcool en volume
+  // Notre seuil : si l'alcool représente plus de 15% du poids de la recette,
+  // c'est une boisson alcoolisée (vs un plat cuisiné où le vin s'évapore).
+  // Boeuf bourguignon : ~10-13% de vin → reste calculé
+  // Cocktail mojito : >20% de rhum → exclu
+  // Vin chaud : ~70% de vin → exclu
+  if (poidsAlcool / poidsTotal > 0.15) return null;
   
   // Ramener à 100g (référence Nutri-Score officielle)
   const parPortion = {
