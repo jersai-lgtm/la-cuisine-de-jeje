@@ -156,7 +156,7 @@ function afficherAccueil() {
 // 🔑 ADMIN : tu peux mettre ton UID Firebase OU ton email ici.
 // Pour trouver ton UID : Firebase Console > Authentication > clic sur ton compte > copier "Identifiant utilisateur"
 const ADMIN_UIDS = [
-  // "ton-uid-firebase-ici", // ← remplace par le tien
+  "sQWjiKrOIsdzWr0nCspn3WSkY5D3", // 👑 Jérôme (UID Firebase)
 ];
 const ADMIN_EMAILS = [
   "[email protected]", // 👑 Jérôme (créateur de l'app)
@@ -1483,6 +1483,29 @@ const _origChoisirRecette = typeof choisirRecette !== 'undefined' ? choisirRecet
 
 // Mapping des clés de colonnes vers labels affichables
 const INGREDIENTS_LABELS = {
+  // == v257 — Muffins & Pâtisserie ==
+  chocolatBlanc: "🤍 Chocolat blanc", chocolatLait: "🍫 Chocolat au lait",
+  pepitesChoco: "🍫 Pépites de chocolat",
+  cannelle: "🪵 Cannelle", pavot: "🌱 Graines de pavot",
+  noix: "🌰 Noix", amandes: "🌰 Amandes",
+  huileTournesol: "🌻 Huile de tournesol", vanilleExtrait: "🌿 Extrait de vanille",
+  streusel: "🍪 Streusel", caramelSale: "🍯 Caramel beurre salé",
+  // == v257 — Marques ==
+  kinderBueno: "🍫 Kinder Bueno", mars: "🍫 Mars",
+  kitkat: "🍫 Kit Kat", raffaello: "🥥 Raffaello",
+  snickers: "🥜 Snickers", oreo: "🍪 Oreo",
+  // == v257 — Asie & autres ==
+  nouillesRiz: "🍜 Nouilles de riz", saucePoisson: "🐟 Sauce poisson (nuoc-mâm)",
+  pousses_soja: "🌱 Pousses de soja",
+  pateCurryVert: "🌶️ Pâte de curry vert", basilic_thai: "🌿 Basilic thaï",
+  reblochon: "🧀 Reblochon", pousseBambou: "🎍 Pousses de bambou",
+  biscuits: "🍪 Biscuits sablés", epaulePorc: "🐖 Épaule de porc",
+  sauceBBQ: "🥫 Sauce barbecue", saumonFrais: "🐟 Saumon frais",
+  ciboulette: "🌿 Ciboulette", cremeChantilly: "🍦 Crème chantilly",
+  agneau: "🐑 Agneau", merguez: "🌭 Merguez",
+  butternut: "🎃 Butternut", rizArborio: "🍚 Riz arborio",
+  vinBlanc: "🍷 Vin blanc sec", champignons: "🍄 Champignons",
+  boullionLeg: "🥣 Bouillon de légumes",
   // == Ignorés ==
   nb: null, label: null, total: null,
   // == Céréales & pâtes ==
