@@ -298,6 +298,23 @@ const prixCalories = {
   mocktailgingembre:      { base: 1,  baseLabel: "1 verre",       prixTotal: 1.50,  calTotal: 80,   unite: "verre" },
   mocktailfraisesvanille: { base: 1,  baseLabel: "1 verre",       prixTotal: 1.80,  calTotal: 110,  unite: "verre" },
   tarteNormande:       { base: 6,  baseLabel: "6 parts",       prixTotal: 5.00,  calTotal: 2100, unite: "part" },
+  // === v257 — 16 nouvelles recettes ===
+  fishandchips:        { base: 4,  baseLabel: "4 personnes",   prixTotal: 12.0,  calTotal: 3200, unite: "personne" },
+  shepherdspie:        { base: 4,  baseLabel: "4 personnes",   prixTotal: 10.0,  calTotal: 2400, unite: "personne" },
+  croquemadame:        { base: 2,  baseLabel: "2 personnes",   prixTotal: 4.50,  calTotal: 1200, unite: "personne" },
+  tomkhagai:           { base: 4,  baseLabel: "4 personnes",   prixTotal: 8.00,  calTotal: 1400, unite: "personne" },
+  macandcheese:        { base: 4,  baseLabel: "4 personnes",   prixTotal: 6.50,  calTotal: 2800, unite: "personne" },
+  yakitori:            { base: 4,  baseLabel: "4 personnes",   prixTotal: 9.00,  calTotal: 1600, unite: "personne" },
+  magretcanard:        { base: 4,  baseLabel: "4 personnes",   prixTotal: 22.0,  calTotal: 1800, unite: "personne" },
+  risottochampignons:  { base: 4,  baseLabel: "4 personnes",   prixTotal: 7.50,  calTotal: 2200, unite: "personne" },
+  banoffeepie:         { base: 8,  baseLabel: "8 parts",       prixTotal: 6.00,  calTotal: 2800, unite: "part" },
+  veloutebutternut:    { base: 4,  baseLabel: "4 personnes",   prixTotal: 4.00,  calTotal: 800,  unite: "personne" },
+  muffinkinder:        { base: 12, baseLabel: "12 muffins",    prixTotal: 8.00,  calTotal: 3600, unite: "muffin" },
+  muffinmars:          { base: 12, baseLabel: "12 muffins",    prixTotal: 8.50,  calTotal: 3800, unite: "muffin" },
+  muffinkitkat:        { base: 12, baseLabel: "12 muffins",    prixTotal: 8.00,  calTotal: 3700, unite: "muffin" },
+  muffinraffaello:     { base: 12, baseLabel: "12 muffins",    prixTotal: 9.00,  calTotal: 3500, unite: "muffin" },
+  muffinsnickers:      { base: 12, baseLabel: "12 muffins",    prixTotal: 9.50,  calTotal: 4000, unite: "muffin" },
+  muffinoreo:          { base: 12, baseLabel: "12 muffins",    prixTotal: 7.50,  calTotal: 3400, unite: "muffin" },
 };
 
 // ==============================
