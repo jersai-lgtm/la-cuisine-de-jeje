@@ -1434,16 +1434,19 @@ select, input[type="number"] {
 
 /* ==============================
    CARTES GRISÉES (préférences)
+   v230 : grisage désactivé — "Mon Profil" fait le hard-clean,
+   on garde juste les badges informatifs sur les cartes
 ============================== */
 .carte-grisee {
-  opacity: 0.45;
-  filter: grayscale(60%);
+  /* Plus de grisage : on laisse les cartes en pleine couleur */
+  /* opacity: 0.45;
+  filter: grayscale(60%); */
   position: relative;
-  transition: opacity .2s, filter .2s;
+  /* transition: opacity .2s, filter .2s; */
 }
 .carte-grisee:hover {
-  opacity: 0.75;
-  filter: grayscale(30%);
+  /* opacity: 0.75;
+  filter: grayscale(30%); */
 }
 
 /* Badge allergène */
