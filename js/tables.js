@@ -476,6 +476,76 @@ function getIngredientsCourses(nom, personnes) {
 }
 
 
+// === Helpers pour le sélecteur de personnes dans la fiche ===
+
+// Détermine l'unité (singulier/pluriel) selon la recette
+function getUniteRecette(nom, n) {
+  const unites = {
+    "galettetacos":    ["galette", "galettes"],
+    "painburger":      ["bun", "buns"],
+    "pizza":           ["pâton", "pâtons"],
+    "gaufres":         ["gaufre", "gaufres"],
+    "cookies":         ["cookie", "cookies"],
+    "madeleine":       ["madeleine", "madeleines"],
+    "muffins":         ["muffin", "muffins"],
+    "financiers":      ["financier", "financiers"],
+    "macarons":        ["macaron", "macarons"],
+    "gyoza":           ["gyoza", "gyozas"],
+    "momos":           ["momo", "momos"],
+    "falafel":         ["falafel", "falafels"],
+    "canelebordelais": ["canelé", "canelés"],
+    "sushimaison":     ["sushi", "sushis"],
+    "pintxosbasques":  ["pintxo", "pintxos"],
+    "croissant":       ["croissant", "croissants"],
+    "fondantchocolat": ["fondant", "fondants"],
+    "paindemie":       ["tranche", "tranches"],
+    "overnightoats":   ["pot", "pots"],
+    "buddhaBowl":      ["bol", "bols"],
+    "smoothiebowl":    ["bol", "bols"],
+    "bowlacai":        ["bol", "bols"],
+    "pancakes":        ["pancake", "pancakes"],
+  };
+  const [sing, plur] = unites[nom] || ["personne", "personnes"];
+  return n > 1 ? plur : sing;
+}
+
+// Génère le HTML du sélecteur +/- pour la fiche recette
+function getSelecteurPersonnesHTML(nom, personnes) {
+  const r = recettes[nom];
+  if (!r) return `<span>${personnes} ${getUniteRecette(nom, personnes)}</span>`;
+  
+  // Trouver les bornes min/max selon le tableau de la recette
+  const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+  let min = 1, max = 15;
+  if (tabKey && r[tabKey].length > 0) {
+    const lignes = r[tabKey];
+    const premier = lignes[0];
+    const dernier = lignes[lignes.length - 1];
+    const cleNb = premier.nb !== undefined ? "nb" : (premier.patons !== undefined ? "patons" : null);
+    if (cleNb) {
+      min = premier[cleNb] || 1;
+      max = dernier[cleNb] || 15;
+      // Pour pizza, min=0 dans le tableau mais on force min=1 (pas de pizza à 0 pâtons)
+      if (min < 1) min = 1;
+    }
+  }
+  
+  const val = Math.max(min, Math.min(max, personnes));
+  const unite = getUniteRecette(nom, val);
+  
+  return `
+    <span class="fiche-selecteur-personnes">
+      <span class="selecteur-pre">Pour</span>
+      <span class="fiche-calc">
+        <button type="button" class="calc-btn-minus" onclick="changerPersonnesFiche('${nom}', -1)" ${val <= min ? 'disabled' : ''} aria-label="Moins">−</button>
+        <input type="number" value="${val}" min="${min}" max="${max}" class="calc-input" id="fiche-personnes-input" onchange="onChangePersonnesFiche('${nom}')" onclick="this.select()">
+        <button type="button" class="calc-btn-plus" onclick="changerPersonnesFiche('${nom}', 1)" ${val >= max ? 'disabled' : ''} aria-label="Plus">+</button>
+      </span>
+      <span class="selecteur-post" id="selecteur-unite-fiche">${unite}</span>
+    </span>
+  `;
+}
+
 function afficherCoursesRecette(nom, personnes) {
   const id = "courses-recette-" + nom;
   const bloc = document.getElementById(id);
@@ -496,7 +566,8 @@ function afficherCoursesRecette(nom, personnes) {
     return;
   }
 
-  let html = `<div class="courses-recette-liste">`;
+  let html = `<p class="prix-cal-note-courses">* Prix moyens supermarché France 2025</p>
+  <div class="courses-recette-liste">`;
   entries.sort((a,b) => a[0].localeCompare(b[0])).forEach(([nom, data]) => {
     let qteStr = "";
     if (typeof data.qte === "number" && data.qte > 0) {
@@ -549,7 +620,6 @@ function htmlPrixCalories(nom, quantite) {
         <div class="pc-label">Par ${pc.unite}</div>
       </div>
     </div>
-    <p class="prix-cal-note">* Prix moyens supermarché France 2025</p>
     <button class="btn-courses-recette" onclick="afficherCoursesRecette('${nom}', ${quantite})">
       🛒 Liste de courses
     </button>
@@ -1287,7 +1357,7 @@ function choisirRecette(nom) {
       <div class="fiche-meta">
         <span>⏱ ${data.temps}</span>
         <span>${data.niveau}</span>
-        <span>${labelQte}</span>
+        ${getSelecteurPersonnesHTML(nom, personnes)}
         ${infoSaison}
         ${infoHistorique}
       </div>

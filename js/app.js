@@ -4601,6 +4601,46 @@ function calculer(recetteArg, personnesArg) {
 }
 
 // ========================================
+// SÉLECTEUR DE PERSONNES DANS LA FICHE (en-tête)
+// ========================================
+// Boutons +/- intégrés dans le bandeau meta de la fiche
+function changerPersonnesFiche(nom, delta) {
+  const input = document.getElementById("fiche-personnes-input");
+  if (!input) return;
+  const min = parseInt(input.min) || 1;
+  const max = parseInt(input.max) || 15;
+  let val = parseInt(input.value) || 1;
+  val = Math.max(min, Math.min(max, val + delta));
+  input.value = val;
+  // Re-rendre toute la fiche avec la nouvelle valeur
+  rerendreFiche(nom, val);
+}
+
+function onChangePersonnesFiche(nom) {
+  const input = document.getElementById("fiche-personnes-input");
+  if (!input) return;
+  const min = parseInt(input.min) || 1;
+  const max = parseInt(input.max) || 15;
+  let val = parseInt(input.value);
+  if (isNaN(val) || val < min) val = min;
+  if (val > max) val = max;
+  input.value = val;
+  rerendreFiche(nom, val);
+}
+
+// Re-affiche la fiche avec un nouveau nombre de personnes (sans rouvrir la modal)
+function rerendreFiche(nom, personnes) {
+  // Mettre à jour l'input #personnes (utilisé en interne par choisirRecette)
+  const inputP = document.getElementById("personnes");
+  if (inputP) {
+    inputP.value = personnes;
+    inputP.dataset.modified = "1";
+  }
+  // Re-appeler choisirRecette qui régénère tout le HTML de la fiche
+  choisirRecette(nom);
+}
+
+// ========================================
 // SÉLECTEUR DE PERSONNES DANS LA MODAL
 // ========================================
 // Stocke la recette actuellement affichée dans la modal pour les boutons +/-
@@ -4761,8 +4801,8 @@ function calculerCarte(recette, inputId) {
     const res = document.getElementById("resultat").innerHTML;
     document.getElementById("modal-resultat").innerHTML = res;
     document.getElementById("modal-calc").classList.add("visible");
-    // Configurer le sélecteur de personnes dans la modal
-    configurerSelecteurModal(recette, val);
+    // Le sélecteur +/- est maintenant intégré directement dans la fiche (en-tête meta)
+    // via getSelecteurPersonnesHTML() — pas besoin d'un sélecteur séparé dans la modal
   }, 50);
 }
 
