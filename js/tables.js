@@ -509,10 +509,30 @@ function getUniteRecette(nom, n) {
   return n > 1 ? plur : sing;
 }
 
+// Génère le HTML du sélecteur SPÉCIAL pour la brioche (4 versions : 1 ou 2 brioches × avec ou sans lait)
+function getSelecteurBriocheHTML(version) {
+  // version : 1=1×🥛, 2=2×🥛, 3=1×🚫, 4=2×🚫
+  const qte = (version === 1 || version === 3) ? 1 : 2;
+  const type = (version === 1 || version === 2) ? "lait" : "sanslait";
+  
+  return `
+    <span class="fiche-brioche-choix">
+      <button type="button" class="btn-brioche-pill-fiche ${qte === 1 ? 'active' : ''}" onclick="changerBriocheFiche('qte', 1)">1 brioche</button>
+      <button type="button" class="btn-brioche-pill-fiche ${qte === 2 ? 'active' : ''}" onclick="changerBriocheFiche('qte', 2)">2 brioches</button>
+      <button type="button" class="btn-brioche-pill-fiche ${type === 'lait' ? 'active' : ''}" onclick="changerBriocheFiche('type', 'lait')">🥛 Avec lait</button>
+      <button type="button" class="btn-brioche-pill-fiche ${type === 'sanslait' ? 'active' : ''}" onclick="changerBriocheFiche('type', 'sanslait')">🚫 Sans lait</button>
+    </span>
+  `;
+}
+
 // Génère le HTML du sélecteur +/- pour la fiche recette
 function getSelecteurPersonnesHTML(nom, personnes) {
   const r = recettes[nom];
   if (!r) return `<span>${personnes} ${getUniteRecette(nom, personnes)}</span>`;
+  
+  // CAS SPÉCIAL : brioche utilise ses propres boutons de sélection (1 brioche / 2 brioches / avec ou sans lait)
+  // Le sélecteur +/- n'a pas de sens car ce sont 4 versions distinctes, pas une progression
+  if (nom === "brioche") return getSelecteurBriocheHTML(personnes);
   
   // Trouver les bornes min/max selon le tableau de la recette
   const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
@@ -844,12 +864,9 @@ function choisirRecette(nom) {
     if (ligne) listeIngredients = htmlTableauCookiesColonnes(ligne);
   } else if (nom === "brioche" && data.tableauBrioche) {
     const ligne = data.tableauBrioche.find(l => l.nb === personnes) || data.tableauBrioche[0];
-    const boutons = data.tableauBrioche.map(l => `
-      <button class="btn-brioche${l.nb === ligne.nb ? " btn-brioche-actif" : ""}"
-        onclick="document.getElementById('personnes').value=${l.nb};calculer()">
-        ${l.label}
-      </button>`).join("");
-    listeIngredients = `<div class="brioche-choix">${boutons}</div>` + htmlTableauBriocheColonnes(ligne);
+    // Les boutons de sélection (1/2 brioches avec/sans lait) sont déplacés dans le bandeau meta
+    // via getSelecteurBriocheHTML(). Ici on ne génère que les ingrédients.
+    listeIngredients = htmlTableauBriocheColonnes(ligne);
   } else if (nom === "patefeuilletee" || nom === "patebrisee" || nom === "patesablee" || nom === "painbaguette") {
     // Recettes fixes sans calcul — afficher ingredientsFixes directement
     if (data.ingredientsFixes) {

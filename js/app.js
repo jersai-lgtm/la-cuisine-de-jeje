@@ -4670,6 +4670,29 @@ function rerendreFiche(nom, personnes) {
   choisirRecette(nom);
 }
 
+// Spécial brioche : change la quantité ou le type (lait/sans lait) dans la fiche ouverte
+function changerBriocheFiche(groupe, valeur) {
+  // Récupérer l'état actuel depuis la version courante
+  const inputP = document.getElementById("personnes");
+  if (!inputP) return;
+  const versionActuelle = parseInt(inputP.value) || 1;
+  // version : 1=1×🥛, 2=2×🥛, 3=1×🚫, 4=2×🚫
+  let qte = (versionActuelle === 1 || versionActuelle === 3) ? 1 : 2;
+  let type = (versionActuelle === 1 || versionActuelle === 2) ? "lait" : "sanslait";
+  
+  // Appliquer le changement
+  if (groupe === "qte") qte = valeur;
+  else if (groupe === "type") type = valeur;
+  
+  // Calculer la nouvelle version
+  let nouvelleVersion;
+  if (type === "lait") nouvelleVersion = (qte === 1) ? 1 : 2;
+  else nouvelleVersion = (qte === 1) ? 3 : 4;
+  
+  // Re-rendre la fiche
+  rerendreFiche("brioche", nouvelleVersion);
+}
+
 // ========================================
 // SÉLECTEUR DE PERSONNES DANS LA MODAL
 // ========================================
