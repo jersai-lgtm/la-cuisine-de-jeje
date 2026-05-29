@@ -123,6 +123,7 @@ function afficherAccueil() {
   fermerSousMenus();
   if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
   if (typeof majBoutonFamille === "function") majBoutonFamille();
+  if (typeof majBoutonMonProfil === "function") majBoutonMonProfil();
 
   // Activer bouton
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
@@ -3947,7 +3948,81 @@ function getAdaptationFamille(cle) {
 }
 
 function estCompatibleFamille(cle) {
+  // STRICT : on utilise la même logique d'analyse que les cadres warning.
+  // Une recette est "famille-OK" uniquement si elle n'a AUCUN warning
+  // (ni rouge bébé, ni orange enfant, ni jaune à adapter).
+  if (typeof getNiveauFamille === "function") {
+    return getNiveauFamille(cle) === null;
+  }
+  // Fallback : ancienne logique si la fonction stricte n'est pas dispo
   return getAdaptationFamille(cle) === null;
+}
+
+// ===============================================================
+// "MON PROFIL" — filtre strict qui combine TOUS les filtres profil :
+//   - Restrictions famille (bébé/enfant)
+//   - Régimes alimentaires (végétarien/vegan/pesco-végé/sans-gluten/sans-lactose)
+//   - Allergies (arachides, fruits à coque, lait, œufs, gluten, ...)
+//   - Allergies personnalisées
+// Une recette n'apparaît que si elle passe TOUS les filtres.
+// ===============================================================
+function estCompatibleMonProfil(cle) {
+  // 1) Filtre famille (si bébé ou enfant dans le foyer)
+  if (typeof getNiveauFamille === "function" && getNiveauFamille(cle) !== null) {
+    return false;
+  }
+  
+  // 2) Filtre régimes + allergies depuis les préférences
+  const prefs = window.userProfile?.preferences;
+  if (prefs && typeof ALLERGENES_MOTS !== "undefined") {
+    const motsExclus = new Set();
+    [...(prefs.regimes||[]), ...(prefs.allergies||[]), ...(prefs.allergiesCustom||[])].forEach(a => {
+      (ALLERGENES_MOTS[a] || [a]).forEach(m => motsExclus.add(m.toLowerCase()));
+    });
+    if (motsExclus.size > 0) {
+      // Construire le texte de la recette (clé + description + ingrédients)
+      const r = recettes?.[cle];
+      if (!r) return true;
+      let texte = (cle + " " + (r.description || "")).toLowerCase();
+      Object.keys(r).forEach(k => {
+        if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k][0]) {
+          texte += " " + Object.keys(r[k][0]).join(" ").toLowerCase();
+        }
+      });
+      // Si un mot exclu est trouvé → refuser
+      for (const m of motsExclus) {
+        if (texte.includes(m)) return false;
+      }
+    }
+  }
+  
+  return true;
+}
+
+// Filtre l'affichage des cartes selon le profil complet
+function filtrerMonProfil() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  basculeVersGrille();
+  // Désactiver les autres filtres actifs
+  document.querySelectorAll(".cat-btn, #menu-categories .pays-btn, #menu-pays .pays-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("btn-mon-profil")?.classList.add("active");
+  document.querySelectorAll(".carte").forEach(c => {
+    const cle = c.getAttribute("onclick")?.match(/'(\w+)'/)?.[1];
+    const ok = !cle || estCompatibleMonProfil(cle);
+    c.style.display = ok ? "" : "none";
+  });
+}
+
+// Le bouton "Mon Profil" n'apparaît que si l'utilisateur a au moins UNE restriction
+// (foyer famille OU régime OU allergie)
+function majBoutonMonProfil() {
+  const btn = document.getElementById("btn-mon-profil");
+  if (!btn) return;
+  const profil = getFoyerProfil();
+  const prefs = window.userProfile?.preferences;
+  const aFamille = profil && (profil.hasBebe || profil.hasEnfant);
+  const aRegimes = prefs && (prefs.regimes?.length > 0 || prefs.allergies?.length > 0 || prefs.allergiesCustom?.length > 0);
+  btn.style.display = (aFamille || aRegimes) ? "" : "none";
 }
 
 function filtrerCategorieDrinks(souscat) {
@@ -5036,6 +5111,7 @@ function setFormatRepas(format, btn) {
 
 window.addEventListener('profilMisAJour', () => {
   majBoutonFamille();
+  majBoutonMonProfil();
   // Ré-afficher les menus avec badges famille si un menu est actif
   if (window._derniersMenus) {
     const p = parseInt(document.getElementById("plan-personnes")?.value) || 4;
@@ -5057,6 +5133,7 @@ window.addEventListener('profilMisAJour', () => {
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     majBoutonFamille();
+    majBoutonMonProfil();
     // Initialiser tous les inputs calc-* avec la taille du foyer
     const foyer = window.userProfile?.foyer;
     if (foyer) {
@@ -5084,6 +5161,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Aussi mettre à jour quand le profil est chargé/modifié
 window.addEventListener("profilMisAJour", () => {
   majBoutonFamille();
+  majBoutonMonProfil();
   const foyer = window.userProfile?.foyer;
   if (foyer) {
     const nb = Math.min(15, Math.max(1,
