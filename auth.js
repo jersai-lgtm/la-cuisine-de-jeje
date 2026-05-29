@@ -147,6 +147,88 @@ window.estFavori = function(key) {
 };
 
 // ==============================
+// RECETTES CUISINÉES (v240) — tracking manuel
+// ==============================
+// Format : window.userProfile.recettesCuisinees = [{ cle, count, dernierDate }]
+
+window.estCuisinee = function(key) {
+  const arr = window.userProfile?.recettesCuisinees || [];
+  return arr.some(r => r.cle === key);
+};
+
+window.getCompteurCuisine = function(key) {
+  const arr = window.userProfile?.recettesCuisinees || [];
+  const found = arr.find(r => r.cle === key);
+  return found ? (found.count || 0) : 0;
+};
+
+window.toggleCuisine = async function(key) {
+  if (!window.currentUser) { ouvrirModalAuth(); return; }
+  let arr = window.userProfile?.recettesCuisinees || [];
+  const existing = arr.find(r => r.cle === key);
+  const now = new Date().toISOString();
+  
+  if (existing) {
+    // Déjà cuisinée → incrémenter
+    existing.count = (existing.count || 1) + 1;
+    existing.dernierDate = now;
+  } else {
+    // Première fois
+    arr = [...arr, { cle: key, count: 1, dernierDate: now }];
+  }
+  
+  await _db.collection("utilisateurs").doc(window.currentUser.uid).update({ recettesCuisinees: arr });
+  window.userProfile.recettesCuisinees = arr;
+  
+  // Mettre à jour le bouton visuel
+  majBoutonCuisine(key);
+  
+  // Toast feedback
+  if (typeof afficherToast === "function") {
+    const newCount = arr.find(r => r.cle === key)?.count || 1;
+    afficherToast(`👨‍🍳 Cuisinée ${newCount} fois !`);
+  }
+  
+  window.dispatchEvent(new Event("profilMisAJour"));
+};
+
+// Retire une "cuisson" (en cas de clic accidentel)
+window.retirerCuisine = async function(key) {
+  if (!window.currentUser) return;
+  let arr = window.userProfile?.recettesCuisinees || [];
+  const existing = arr.find(r => r.cle === key);
+  if (!existing) return;
+  if (existing.count > 1) {
+    existing.count--;
+  } else {
+    arr = arr.filter(r => r.cle !== key);
+  }
+  await _db.collection("utilisateurs").doc(window.currentUser.uid).update({ recettesCuisinees: arr });
+  window.userProfile.recettesCuisinees = arr;
+  majBoutonCuisine(key);
+  window.dispatchEvent(new Event("profilMisAJour"));
+};
+
+// Met à jour visuellement le bouton "J'ai cuisiné"
+window.majBoutonCuisine = function(key) {
+  const btn = document.getElementById("btn-cuisine-modal");
+  if (!btn) return;
+  const count = window.getCompteurCuisine(key);
+  if (count > 0) {
+    btn.innerHTML = `👨‍🍳 <span class="cuisine-badge">${count}</span>`;
+    btn.classList.add("cuisine-active");
+    btn.title = `Cuisinée ${count} fois — clic pour ajouter, clic droit pour retirer`;
+  } else {
+    btn.textContent = "👨‍🍳";
+    btn.classList.remove("cuisine-active");
+    btn.title = "Marquer comme cuisinée";
+  }
+  // Listener double : clic = ajouter, clic droit = retirer
+  btn.onclick = () => window.toggleCuisine(key);
+  btn.oncontextmenu = (e) => { e.preventDefault(); window.retirerCuisine(key); return false; };
+};
+
+// ==============================
 // MENUS FAVORIS (semaine + thématique)
 // ==============================
 

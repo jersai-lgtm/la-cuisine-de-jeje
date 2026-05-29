@@ -95,8 +95,10 @@ gtag('config', 'G-390C5MY2SS');
 <!-- BARRE DE RECHERCHE -->
 <div class="search-bar">
   <span class="search-icon">🔍</span>
-  <input type="text" id="search-input" placeholder="Rechercher une recette..." oninput="rechercherRecette(this.value)">
+  <input type="text" id="search-input" placeholder="Rechercher une recette, ingrédient, cocktail..." oninput="rechercherRecette(this.value)" autocomplete="off">
   <button class="search-clear" id="search-clear" onclick="viderRecherche()" style="display:none">✕</button>
+  <!-- Dropdown de suggestions auto-complétion -->
+  <div class="search-suggestions" id="search-suggestions" style="display:none"></div>
 </div>
 
 <!-- MENU PRINCIPAL — 4 boutons fixes -->
@@ -5461,6 +5463,7 @@ gtag('config', 'G-390C5MY2SS');
   <div class="modal-contenu fiche-complete" onclick="event.stopPropagation()">
     <button class="modal-fermer" onclick="fermerModal()">✕</button>
     <button id="btn-favori-modal" class="btn-favori-recette" onclick="ouvrirModalAuth()">🤍</button>
+    <button id="btn-cuisine-modal" class="btn-cuisine-recette" title="Marquer comme cuisinée">👨‍🍳</button>
     <div id="modal-resultat"></div>
   </div>
 </div>
@@ -5870,11 +5873,11 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/allergenes.js?v=238"></script>
-<script src="js/recettes.js?v=238"></script>
-<script src="js/ingredients_prix.js?v=238"></script>
-<script src="js/tables.js?v=238"></script>
-<script src="js/app.js?v=238"></script>
+<script src="js/allergenes.js?v=240"></script>
+<script src="js/recettes.js?v=240"></script>
+<script src="js/ingredients_prix.js?v=240"></script>
+<script src="js/tables.js?v=240"></script>
+<script src="js/app.js?v=240"></script>
 
 
 
