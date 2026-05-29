@@ -2489,13 +2489,6 @@ select, input[type="number"] {
 .carte-nutri.nutri-D::before { background: #ee8100; }                       /* orange */
 .carte-nutri.nutri-E::before { background: #e63e11; }                       /* rouge */
 
-/* Couleurs pour le bloc fiche (sans pseudo-élément) */
-.nutri-A { background: #038141; }
-.nutri-B { background: #85bb2f; }
-.nutri-C { background: #fecb02; color: #5a3e00; }
-.nutri-D { background: #ee8100; }
-.nutri-E { background: #e63e11; }
-
 /* --- Bloc Nutri-Score dans la fiche recette (à côté du prix/cal) --- */
 .nutri-score-bloc {
   background: #f7f7f7;
