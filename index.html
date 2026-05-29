@@ -665,32 +665,9 @@ gtag('config', 'G-390C5MY2SS');
       <h2>🌮 Galette à Tacos</h2>
       <p>⏱ 45 min • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <select class="calc-input" id="calc-galettetacos">
-          <option value="2">2 galettes</option>
-          <option value="4">4 galettes</option>
-          <option value="6">6 galettes</option>
-          <option value="8" selected>8 galettes</option>
-          <option value="10">10 galettes</option>
-          <option value="12">12 galettes</option>
-          <option value="14">14 galettes</option>
-          <option value="15">16 galettes</option>
-        
-  
-  
-    <option value="souvlakiagneau">Souvlaki</option>
-    <option value="butterchicken">Butter Chicken</option>
-    <option value="risottoprimavera">Risotto Primavera</option>
-    <option value="bolognaisemaison">Bolognaise Maison</option>
-    <option value="tacosmaison">Tacos Maison</option>
-    <option value="couscous">Couscous Royal</option>
-    <option value="moussaka">Moussaka</option>
-    <option value="paella">Paella</option>
-    <option value="quichelorraine">Quiche Lorraine</option>
-    <option value="dahllentillescorail">Dal Indien</option>
-  
-  
-  </select>
-        <button class="calc-btn" onclick="calculerCarte('galettetacos', 'calc-galettetacos')">Calculer</button>
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-galettetacos', -1, 'galettetacos')" aria-label="Moins une galette">−</button>
+        <input type="number" value="8" min="1" max="16" class="calc-input" id="calc-galettetacos" onchange="onInputCalcChange('calc-galettetacos', 'galettetacos')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-galettetacos', 1, 'galettetacos')" aria-label="Plus une galette">+</button>
       </div>
     </div>
   </div>
@@ -701,15 +678,9 @@ gtag('config', 'G-390C5MY2SS');
       <h2>🍔 Pain Burger (Buns)</h2>
       <p>⏱ 2h30 • ⭐ Facile</p>
       <div class="carte-calc" onclick="event.stopPropagation()">
-        <select class="calc-input" id="calc-painburger">
-          <option value="2">2 buns</option>
-          <option value="4">4 buns</option>
-          <option value="6" selected>6 buns</option>
-          <option value="8">8 buns</option>
-          <option value="10">10 buns</option>
-          <option value="12">12 buns</option>
-        </select>
-        <button class="calc-btn" onclick="calculerCarte('painburger', 'calc-painburger')">Calculer</button>
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-painburger', -1, 'painburger')" aria-label="Moins un bun">−</button>
+        <input type="number" value="6" min="1" max="15" class="calc-input" id="calc-painburger" onchange="onInputCalcChange('calc-painburger', 'painburger')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-painburger', 1, 'painburger')" aria-label="Plus un bun">+</button>
       </div>
     </div>
   </div>
@@ -5465,6 +5436,16 @@ gtag('config', 'G-390C5MY2SS');
   <div class="modal-contenu fiche-complete" onclick="event.stopPropagation()">
     <button class="modal-fermer" onclick="fermerModal()">✕</button>
     <button id="btn-favori-modal" class="btn-favori-recette" onclick="ouvrirModalAuth()">🤍</button>
+    <!-- Sélecteur de personnes dans la modal -->
+    <div id="modal-selecteur-personnes" class="modal-selecteur-personnes" style="display:none;">
+      <span class="selecteur-label">Pour</span>
+      <div class="carte-calc">
+        <button class="calc-btn-minus" onclick="changerPersonnesModal(-1)" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="modal-personnes-input" onchange="onChangePersonnesModal()" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnesModal(1)" aria-label="Plus une personne">+</button>
+      </div>
+      <span class="selecteur-label" id="selecteur-unite">personne(s)</span>
+    </div>
     <div id="modal-resultat"></div>
   </div>
 </div>

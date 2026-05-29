@@ -260,6 +260,35 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
   justify-content: center;
   backdrop-filter: blur(4px);
 }
+
+/* Sélecteur de personnes dans la modal (sticky en haut) */
+.modal-selecteur-personnes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  margin: 0 -20px 20px;
+  background: linear-gradient(135deg, rgba(255,77,136,.15) 0%, rgba(255,107,161,.08) 100%);
+  border-bottom: 1px solid rgba(255,77,136,.3);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.modal-selecteur-personnes .selecteur-label {
+  color: #ffb3cc;
+  font-size: 15px;
+  font-weight: 600;
+}
+.modal-selecteur-personnes .carte-calc {
+  margin-top: 0;
+  min-width: 120px;
+}
+.modal-selecteur-personnes .calc-input {
+  font-size: 17px;
+}
 .modal-calc.visible {
   display: flex;
   animation: slideUp .3s ease;
