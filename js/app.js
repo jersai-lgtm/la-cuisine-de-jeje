@@ -134,12 +134,12 @@ function afficherAccueil() {
   // Afficher section accueil, masquer toutes les autres
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
-  const secCalc    = document.getElementById("section-calculateur");
+  const secCuisine    = document.getElementById("section-cuisine");
   const secPlan    = document.getElementById("section-planificateur");
   const secFestif  = document.getElementById("section-festif");
   if (secAccueil) secAccueil.style.display = "block";
   if (secCartes) { secCartes.classList.remove("visible"); secCartes.style.display = ""; }
-  if (secCalc)   secCalc.style.display = "none";
+  if (secCuisine)   secCuisine.style.display = "none";
   if (secPlan)   secPlan.style.display = "none";
   if (secFestif) secFestif.style.display = "none";
 
@@ -924,14 +924,14 @@ function filtrerMenusFavoris() {
   fermerSousMenus();
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
-  const secCalc    = document.getElementById("section-calculateur");
+  const secCuisine    = document.getElementById("section-cuisine");
   const secPlan    = document.getElementById("section-planificateur");
   const secFestif  = document.getElementById("section-festif");
   const menuCats   = document.querySelector(".menu-cats");
   const searchBar  = document.querySelector(".search-bar");
   if (secAccueil) secAccueil.style.display = "none";
   if (secCartes)  { secCartes.classList.remove("visible"); secCartes.style.display = "none"; }
-  if (secCalc)    secCalc.style.display = "none";
+  if (secCuisine)    secCuisine.style.display = "none";
   if (secPlan)    secPlan.style.display = "none";
   if (secFestif)  secFestif.style.display = "none";
   // On garde la barre de catégories et la search bar visibles (pour pouvoir naviguer)
@@ -3915,6 +3915,206 @@ function viderRechercheSilencieux() {
   window._etatAvantRecherche = null;
 }
 
+// =============================================================================
+// 🥶 MODE VIDE-FRIGO v242
+// =============================================================================
+// Tu coches ce que tu as → on calcule les recettes possibles avec score de match
+// =============================================================================
+
+// Set des ingrédients sélectionnés (mémoire seulement, pas sauvé)
+window._vfSelection = new Set();
+
+// Labels pour catégoriser les ingrédients dans la liste affichée
+const VF_CATEGORIES = {
+  "🥩 Viandes & poissons": ["poulet","bœuf","boeuf","porc","agneau","veau","canard","dinde","lapin","jambon","lardons","bacon","saucisse","chorizo","merguez","steak","escalope","filet","saumon","thon","cabillaud","truite","crevette","crevettes","calmar","moules","huitres","sardine","anchois"],
+  "🥛 Frais & laitages": ["lait","creme","crèmefraiche","yaourt","fromage","mozzarella","parmesan","feta","ricotta","mascarpone","cheddar","emmental","gruyere","chevre","beurre","margarine","oeuf","oeufs","jauneoeuf","blancsoeufs","tofu"],
+  "🥬 Légumes": ["tomate","tomates","concombre","carotte","carottes","oignon","oignons","ail","echalote","poireau","celeri","fenouil","epinards","laitue","salade","mache","roquette","courgette","aubergine","poivron","poivrons","champignons","champignon","brocoli","choufleur","chou","haricots","petitspois","mais","navet","betterave","radis","asperges","artichaut","pdt","pommedeterre","patate","patatedouce","potiron","courge"],
+  "🍎 Fruits": ["pomme","pommes","poire","banane","bananes","orange","oranges","citron","citrons","citronvert","fraise","fraises","framboise","myrtille","kiwi","mangue","ananas","peche","abricot","cerise","raisin","melon","pasteque","grenade","figue","datte","passion","coco"],
+  "🌾 Féculents & pâtes": ["riz","pates","spaghetti","penne","tagliatelles","macaroni","lasagne","quinoa","semoule","couscous","boulgour","blé","farine","pain","baguette","tortilla","wrap","nouilles","ramen","udon"],
+  "🥫 Conserves & secs": ["thon","sardine","haricotsblancs","haricotsrouges","poischiches","lentilles","poix","mais","olives","cornichons","cors","tomatespelees","tomatesconcassees","sauce","ketchup","mayonnaise","moutarde","vinaigre","vinaigrebalsamique"],
+  "🧂 Épices & condiments": ["sel","poivre","sucre","huile","huiledolive","huiledetournesol","curry","paprika","cumin","curcuma","cannelle","muscade","gingembre","piment","tabasco","basilic","persil","thym","laurier","origan","romarin","menthe","coriandre","cerfeuil","ciboulette","aneth","estragon","safran","vanille","cacao","chocolat","levure","bicarbonate"],
+};
+
+// Charge la liste des ingrédients dans le DOM (appelé quand on entre dans la section)
+function vfChargerIngredients() {
+  const container = document.getElementById("vf-ingredients-container");
+  if (!container) return;
+  
+  // Récupérer la liste de tous les ingrédients uniques utilisés dans les recettes
+  if (!window._vfIngredients) {
+    const ingSet = new Set();
+    Object.values(recettes).forEach(r => {
+      const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+      if (!tabKey || !r[tabKey][0]) return;
+      Object.keys(r[tabKey][0]).forEach(k => {
+        if (k !== "nb" && k !== "patons" && k !== "total" && k !== "label") {
+          ingSet.add(k);
+        }
+      });
+    });
+    window._vfIngredients = Array.from(ingSet).sort();
+  }
+  
+  // Construire l'affichage par catégories
+  let html = "";
+  const ingredientsRanges = new Set();
+  
+  for (const [cat, mots] of Object.entries(VF_CATEGORIES)) {
+    const ingsDeCetteCat = window._vfIngredients.filter(ing => 
+      mots.some(mot => ing.toLowerCase().includes(mot.toLowerCase()))
+    );
+    if (ingsDeCetteCat.length === 0) continue;
+    
+    html += `<div class="vf-cat-bloc">
+      <h3 class="vf-cat-titre">${cat}</h3>
+      <div class="vf-chips-row">`;
+    ingsDeCetteCat.forEach(ing => {
+      ingredientsRanges.add(ing);
+      const nom = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
+      const checked = window._vfSelection.has(ing) ? "vf-chip-active" : "";
+      html += `<button class="vf-chip ${checked}" data-ing="${ing}" onclick="vfToggleIng('${ing}', this)">${nom}</button>`;
+    });
+    html += `</div></div>`;
+  }
+  
+  // Catégorie "Autres" pour ce qui n'est pas rangé
+  const autres = window._vfIngredients.filter(ing => !ingredientsRanges.has(ing));
+  if (autres.length > 0) {
+    html += `<div class="vf-cat-bloc">
+      <h3 class="vf-cat-titre">📦 Autres</h3>
+      <div class="vf-chips-row">`;
+    autres.forEach(ing => {
+      const nom = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
+      const checked = window._vfSelection.has(ing) ? "vf-chip-active" : "";
+      html += `<button class="vf-chip ${checked}" data-ing="${ing}" onclick="vfToggleIng('${ing}', this)">${nom}</button>`;
+    });
+    html += `</div></div>`;
+  }
+  
+  container.innerHTML = html;
+  vfMettreAJourSelection();
+}
+
+// Toggle un ingrédient
+function vfToggleIng(ing, btn) {
+  if (window._vfSelection.has(ing)) {
+    window._vfSelection.delete(ing);
+    btn.classList.remove("vf-chip-active");
+  } else {
+    window._vfSelection.add(ing);
+    btn.classList.add("vf-chip-active");
+  }
+  vfMettreAJourSelection();
+}
+
+// Met à jour l'affichage du compteur et calcule les résultats
+function vfMettreAJourSelection() {
+  const info = document.getElementById("vf-selection-info");
+  const n = window._vfSelection.size;
+  if (info) {
+    if (n === 0) {
+      info.textContent = "Aucun ingrédient sélectionné — coche ce qui est dans ton frigo";
+    } else {
+      info.textContent = `✅ ${n} ingrédient${n > 1 ? "s" : ""} sélectionné${n > 1 ? "s" : ""}`;
+    }
+  }
+  
+  // Calculer et afficher les résultats
+  const resultatsBox = document.getElementById("vf-resultats");
+  const resultatsListe = document.getElementById("vf-resultats-liste");
+  if (!resultatsBox || !resultatsListe) return;
+  
+  if (n === 0) {
+    resultatsBox.style.display = "none";
+    return;
+  }
+  
+  // Pour chaque recette, calculer le % de match
+  const resultats = [];
+  Object.entries(recettes).forEach(([cle, r]) => {
+    const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (!tabKey || !r[tabKey][0]) return;
+    
+    const ingredients = Object.keys(r[tabKey][0]).filter(k => 
+      k !== "nb" && k !== "patons" && k !== "total" && k !== "label"
+    );
+    if (ingredients.length === 0) return;
+    
+    // Combien d'ingrédients sont dans le frigo ?
+    const possedes = ingredients.filter(ing => window._vfSelection.has(ing));
+    const manquants = ingredients.filter(ing => !window._vfSelection.has(ing));
+    const pourcent = Math.round((possedes.length / ingredients.length) * 100);
+    
+    // Ignorer les recettes trop incomplètes (<30%)
+    if (pourcent < 30) return;
+    
+    resultats.push({ cle, recette: r, pourcent, possedes, manquants, total: ingredients.length });
+  });
+  
+  // Trier par % décroissant
+  resultats.sort((a, b) => b.pourcent - a.pourcent);
+  
+  if (resultats.length === 0) {
+    resultatsListe.innerHTML = `<div class="vf-no-result">Aucune recette ne correspond — coche au moins quelques ingrédients de base !</div>`;
+  } else {
+    resultatsListe.innerHTML = resultats.slice(0, 30).map(({cle, recette, pourcent, manquants, total}) => {
+      const nom = (typeof getNomRecette === "function" ? getNomRecette(cle) : cle);
+      const couleur = pourcent === 100 ? "vf-100" : pourcent >= 80 ? "vf-80" : pourcent >= 60 ? "vf-60" : "vf-low";
+      
+      // Limiter à 5 ingrédients manquants affichés
+      const manquantsAffichage = manquants.slice(0, 5).map(m => 
+        (INGREDIENTS_LABELS && INGREDIENTS_LABELS[m]) ? INGREDIENTS_LABELS[m] : m
+      );
+      const manquantsTxt = manquants.length === 0 
+        ? "✨ Tu as tout ce qu'il faut !" 
+        : `Il te manque : ${manquantsAffichage.join(", ")}${manquants.length > 5 ? ` (+ ${manquants.length - 5} autres)` : ""}`;
+      
+      return `<div class="vf-result-card ${couleur}" onclick="ouvrirFiche('${cle}', null)">
+        <div class="vf-result-pourcent">${pourcent}%</div>
+        <div class="vf-result-info">
+          <div class="vf-result-nom">${nom}</div>
+          <div class="vf-result-manquants">${manquantsTxt}</div>
+        </div>
+      </div>`;
+    }).join("");
+  }
+  
+  resultatsBox.style.display = "block";
+}
+
+// Filtre les chips selon une recherche
+function vfFiltrerIngredients(query) {
+  const q = query.toLowerCase().trim();
+  document.querySelectorAll(".vf-chip").forEach(chip => {
+    const txt = chip.textContent.toLowerCase();
+    const ing = (chip.getAttribute("data-ing") || "").toLowerCase();
+    const match = !q || txt.includes(q) || ing.includes(q);
+    chip.style.display = match ? "" : "none";
+  });
+  // Cacher les catégories qui n'ont plus aucun chip visible
+  document.querySelectorAll(".vf-cat-bloc").forEach(bloc => {
+    const visibles = bloc.querySelectorAll('.vf-chip:not([style*="none"])').length;
+    bloc.style.display = visibles === 0 ? "none" : "";
+  });
+}
+
+// Tout décocher
+function vfReset() {
+  window._vfSelection.clear();
+  document.querySelectorAll(".vf-chip-active").forEach(c => c.classList.remove("vf-chip-active"));
+  vfMettreAJourSelection();
+}
+
+// Switch entre les onglets Cuisine
+function switchCuisineTab(tab) {
+  document.getElementById("tab-videfrigo")?.classList.toggle("active", tab === "videfrigo");
+  document.getElementById("tab-courses")?.classList.toggle("active", tab === "courses");
+  const ongletVF = document.getElementById("cuisine-onglet-videfrigo");
+  const ongletC  = document.getElementById("cuisine-onglet-courses");
+  if (ongletVF) ongletVF.style.display = tab === "videfrigo" ? "block" : "none";
+  if (ongletC)  ongletC.style.display  = tab === "courses"   ? "block" : "none";
+}
+
 // === Recherche principale ===
 function rechercherRecette(query) {
   const q = query.toLowerCase().trim();
@@ -4039,7 +4239,7 @@ function afficherRecettes() {
   // Basculer vers la grille
   const secAccueil = document.getElementById("section-accueil");
   const secCartes  = document.getElementById("section-cartes");
-  const secCalc    = document.getElementById("section-calculateur");
+  const secCuisine    = document.getElementById("section-cuisine");
   const secPlan    = document.getElementById("section-planificateur");
   const secFestif  = document.getElementById("section-festif");
   if (secAccueil) secAccueil.style.display = "none";
@@ -4047,7 +4247,7 @@ function afficherRecettes() {
     secCartes.classList.add("visible");
     secCartes.style.display = "";
   }
-  if (secCalc)    secCalc.style.display = "none";
+  if (secCuisine)    secCuisine.style.display = "none";
   if (secPlan)    secPlan.style.display = "none";
   if (secFestif)  secFestif.style.display = "none";
   
@@ -5705,6 +5905,56 @@ function calculerToutesStats() {
   // Total de "cuissons" (recette comptée plusieurs fois si refaite)
   const totalCuissons = cuisinees.reduce((sum, c) => sum + (c.count || 1), 0);
   
+  // 1ter) v242 : Calculer le STREAK (jours consécutifs à cuisiner)
+  // On regarde les dernierDate des recettes cuisinées, on calcule la plus longue série de jours consécutifs
+  let streakActuel = 0;
+  let streakRecord = 0;
+  if (cuisinees.length > 0) {
+    // Récupérer les dates uniques de cuisson (sans l'heure)
+    const datesUnique = new Set();
+    cuisinees.forEach(c => {
+      if (c.dernierDate) {
+        const d = new Date(c.dernierDate);
+        if (!isNaN(d.getTime())) {
+          datesUnique.add(d.toISOString().slice(0, 10)); // "YYYY-MM-DD"
+        }
+      }
+    });
+    // Trier les dates
+    const dates = Array.from(datesUnique).sort();
+    
+    // Calculer le streak record
+    let courant = 1;
+    for (let i = 1; i < dates.length; i++) {
+      const d1 = new Date(dates[i - 1]);
+      const d2 = new Date(dates[i]);
+      const diff = (d2 - d1) / (1000 * 60 * 60 * 24);
+      if (diff === 1) {
+        courant++;
+        if (courant > streakRecord) streakRecord = courant;
+      } else {
+        courant = 1;
+      }
+    }
+    if (dates.length === 1) streakRecord = 1;
+    else if (courant > streakRecord) streakRecord = courant;
+    
+    // Calculer le streak actuel (en cours)
+    const aujourdhui = new Date().toISOString().slice(0, 10);
+    const hier = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+    if (dates[dates.length - 1] === aujourdhui || dates[dates.length - 1] === hier) {
+      // Streak en cours : remonter en arrière
+      streakActuel = 1;
+      for (let i = dates.length - 1; i > 0; i--) {
+        const d1 = new Date(dates[i - 1]);
+        const d2 = new Date(dates[i]);
+        const diff = (d2 - d1) / (1000 * 60 * 60 * 24);
+        if (diff === 1) streakActuel++;
+        else break;
+      }
+    }
+  }
+  
   // 2) Compteur recettes refaites (depuis cuisinees, plus précis)
   const compteurRecettes = {};
   cuisinees.forEach(c => { compteurRecettes[c.cle] = c.count || 1; });
@@ -5785,6 +6035,8 @@ function calculerToutesStats() {
     nbRecettesVues: Math.max(user.totalRecettesVues || 0, recettesVues.size),
     nbRecettesCuisinees: recettesCuisineesSet.size, // v240 : nouveau
     totalCuissons: totalCuissons, // v240 : total des fois où des recettes ont été cuisinées
+    streakActuel: streakActuel, // v242 : jours consécutifs actuels
+    streakRecord: streakRecord, // v242 : record historique
     nbFavoris: favoris.length,
     nbMenusFavoris: menusFavoris.length,
     nbMenusGeneres: historique.length,
@@ -5924,6 +6176,24 @@ function remplirRecords(s) {
     });
   }
   
+  // v242 : Streak cuisine
+  if (s.streakActuel > 0) {
+    records.push({
+      icon: "🔥",
+      label: "Streak en cours",
+      valeur: s.streakActuel + " jour" + (s.streakActuel > 1 ? "s" : ""),
+      detail: "À cuisiner aujourd'hui pour continuer !",
+    });
+  }
+  if (s.streakRecord > 0) {
+    records.push({
+      icon: "🏅",
+      label: "Record streak",
+      valeur: s.streakRecord + " jour" + (s.streakRecord > 1 ? "s" : ""),
+      detail: "Jours consécutifs à cuisiner",
+    });
+  }
+  
   if (records.length === 0) {
     document.getElementById("stats-records").innerHTML = 
       `<p class="stats-vide">🍳 Commencez à cuisiner pour débloquer vos records !</p>`;
@@ -5991,6 +6261,9 @@ function remplirBadges(s) {
     { id: "voyageur", emoji: "🗺️", titre: "Voyageur", desc: "50 recettes vues", debloque: s.nbRecettesVues >= 50 },
     { id: "centurion", emoji: "💯", titre: "Centurion", desc: "100 recettes vues", debloque: s.nbRecettesVues >= 100 },
     { id: "expert", emoji: "🎓", titre: "Expert", desc: "200 recettes vues", debloque: s.nbRecettesVues >= 200 },
+    // === Badges streak (v242) ===
+    { id: "enfeu", emoji: "🔥", titre: "En feu", desc: "7 jours d'affilée à cuisiner", debloque: s.streakRecord >= 7 },
+    { id: "inarretable", emoji: "🌋", titre: "Inarrêtable", desc: "30 jours d'affilée à cuisiner", debloque: s.streakRecord >= 30 },
     // === Badges favoris ===
     { id: "fan", emoji: "❤️", titre: "Fan", desc: "5 favoris", debloque: s.nbFavoris >= 5 },
     { id: "collectionneur", emoji: "💎", titre: "Collectionneur", desc: "15 favoris", debloque: s.nbFavoris >= 15 },
@@ -6039,7 +6312,7 @@ function afficherSection(section, btn) {
   btn.classList.add("active");
   // Fermer les sous-menus catégories/monde
   fermerSousMenus();
-  const calc       = document.getElementById("section-calculateur");
+  const cuisine    = document.getElementById("section-cuisine"); // v242 : remplace calculateur
   const cartes     = document.getElementById("section-cartes");   // grille complète
   const accueilSec = document.getElementById("section-accueil"); // page accueil
   const menuCats   = document.querySelector(".menu-cats");
@@ -6052,7 +6325,7 @@ function afficherSection(section, btn) {
   if (stats && section !== "stats") stats.style.display = "none";
 
   if (section === "stats") {
-    if (calc)       calc.style.display = "none";
+    if (cuisine)    cuisine.style.display = "none";
     if (cartes)     cartes.classList.remove("visible");
     if (accueilSec) accueilSec.style.display = "none";
     if (planif)     planif.style.display = "none";
@@ -6067,20 +6340,24 @@ function afficherSection(section, btn) {
     return;
   }
 
-  if (section === "calculateur") {
-    calc.style.display = "block";
+  if (section === "cuisine") {
+    if (cuisine) cuisine.style.display = "block";
     if (cartes)     { cartes.classList.remove("visible"); }
     if (accueilSec) accueilSec.style.display = "none";
-    menuCats.style.display = "none";
-    planif.style.display = "none";
-    searchBar.style.display = "none";
+    if (planif)     planif.style.display = "none";
+    if (festif)     festif.style.display = "none";
+    if (menuCats)   menuCats.style.display = "none";
+    if (searchBar)  searchBar.style.display = "none";
     if (typeof cacherFiltresChips === "function") cacherFiltresChips();
+    // Charger les ingrédients du vide-frigo
+    if (typeof vfChargerIngredients === "function") vfChargerIngredients();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   } else if (section === "planificateur") {
-    calc.style.display = "none";
+    if (cuisine) cuisine.style.display = "none";
     if (cartes)     { cartes.classList.remove("visible"); }
     if (accueilSec) accueilSec.style.display = "none";
-    menuCats.style.display = "none";
-    searchBar.style.display = "none";
+    if (menuCats)   menuCats.style.display = "none";
+    if (searchBar)  searchBar.style.display = "none";
     // Pré-remplir le formulaire avec le profil
     setTimeout(() => { if (typeof appliquerProfilSurFormulaire === "function") appliquerProfilSurFormulaire(); }, 200);
     if (typeof cacherFiltresChips === "function") cacherFiltresChips();
@@ -6103,10 +6380,10 @@ function afficherSection(section, btn) {
       chargerMenuFestifAuDemarrage();
     }
   } else {
-    calc.style.display = "none";
-    planif.style.display = "none";
-    menuCats.style.display = "flex";
-    searchBar.style.display = "flex";
+    if (cuisine) cuisine.style.display = "none";
+    if (planif)  planif.style.display = "none";
+    if (menuCats) menuCats.style.display = "flex";
+    if (searchBar) searchBar.style.display = "flex";
     // Retour vers l'accueil personnalisé
     if (accueilSec) accueilSec.style.display = "block";
     if (cartes) { cartes.classList.remove("visible"); } // ← retirer visible !
