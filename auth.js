@@ -558,12 +558,11 @@ window.ouvrirModalAuth = function(onglet) {
   const m = document.getElementById("modal-auth");
   if (m) m.classList.add("visible");
   switchAuthTab(onglet || "connexion");
-  if (typeof modalPush === "function") modalPush(window.fermerModalAuth, "auth");
+  if (typeof window._backGuardPush === "function") window._backGuardPush();
 };
 window.fermerModalAuth = function() {
   const m = document.getElementById("modal-auth");
   if (m) m.classList.remove("visible");
-  if (typeof modalPop === "function") modalPop("auth");
 };
 window.switchAuthTab = function(onglet) {
   const c = document.getElementById("auth-tab-connexion");
@@ -608,14 +607,13 @@ window.ouvrirModalProfil = function() {
   window._ac_pp = prefs.allergiesCustom || [];
   renderAC("pp");
   
-  // v244 : retour téléphone
-  if (typeof modalPush === "function") modalPush(window.fermerModalProfil, "profil");
+  // v246 : retour téléphone
+  if (typeof window._backGuardPush === "function") window._backGuardPush();
 };
 
 window.fermerModalProfil = function() {
   const m = document.getElementById("modal-profil");
   if (m) m.classList.remove("visible");
-  if (typeof modalPop === "function") modalPop("profil");
 };
 window.fermerOnboarding = function() {
   const m = document.getElementById("modal-onboarding");
