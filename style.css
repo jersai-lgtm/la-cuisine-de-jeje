@@ -4083,20 +4083,23 @@ select, input[type="number"] {
 /* =============================================================================
    v253 — TOP DU MOIS (ingrédients de saison)
    ============================================================================= */
-.accueil-mois-badge {
-  display: inline-block;
-  margin-top: 4px;
+/* Badge "X de saison" en surimpression sur la mini-carte */
+.mini-carte-badge-mois {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   background: linear-gradient(135deg, #4caf50, #66bb6a);
   color: white;
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-radius: 50px;
   font-size: 11px;
   font-weight: 700;
   white-space: nowrap;
-  box-shadow: 0 2px 4px rgba(76,175,80,.3);
+  box-shadow: 0 2px 6px rgba(76,175,80,.4);
+  z-index: 3;
 }
 
-/* Le bloc Top du mois a un fond légèrement vert pour évoquer la saisonnalité */
+/* Le bloc Top du mois — titre vert pour évoquer la saisonnalité */
 #accueil-mois-bloc .accueil-bloc-header h2 {
   background: linear-gradient(135deg, #4caf50, #81c784);
   -webkit-background-clip: text;
