@@ -99,90 +99,65 @@ gtag('config', 'G-390C5MY2SS');
   <button class="search-clear" id="search-clear" onclick="viderRecherche()" style="display:none">✕</button>
 </div>
 
-<!-- MENU PRINCIPAL -->
-<nav class="menu-cats">
-  <button class="cat-btn active" id="btn-accueil" onclick="afficherAccueil()">🏠 Accueil</button>
-  <button class="cat-btn" id="btn-favoris" onclick="filtrerFavoris()">🍽️ Recettes favorites</button>
-  <button class="cat-btn" id="btn-menus-favoris" onclick="filtrerMenusFavoris()">❤️ Menus favoris</button>
-  <button class="cat-btn" id="btn-tout" onclick="afficherTout()">🍽️ Tout</button>
-  <button class="cat-btn" id="btn-categories" onclick="toggleSousMenu('menu-categories', this)">🗂️ Catégories ▾</button>
-  <button class="cat-btn" id="btn-monde" onclick="toggleSousMenu('menu-pays', this)">🌍 Monde ▾</button>
-  <button class="cat-btn" id="btn-mon-profil" onclick="filtrerMonProfil()" style="display:none">👤 Mon Profil</button>
+<!-- MENU PRINCIPAL — 4 boutons fixes -->
+<nav class="menu-cats menu-cats-main">
+  <button class="cat-btn active" id="btn-accueil" onclick="afficherAccueil()">🏠 <span class="cat-label">Accueil</span></button>
+  <button class="cat-btn" id="btn-recettes" onclick="afficherRecettes()">🍳 <span class="cat-label">Recettes</span></button>
+  <button class="cat-btn" id="btn-favoris" onclick="filtrerFavoris()">⭐ <span class="cat-label">Favoris</span></button>
+  <button class="cat-btn" id="btn-mon-profil" onclick="filtrerMonProfil()" style="display:none">👤 <span class="cat-label">Profil</span></button>
 </nav>
 
-<!-- SOUS-MENU CATÉGORIES -->
-<div class="menu-pays" id="menu-categories" style="display:none">
-  <button class="pays-btn" onclick="filtrerCategorie('plats')">🍽️ Plats</button>
-  <button class="pays-btn" onclick="filtrerCategorie('soupes')">🍲 Soupes</button>
-  <button class="pays-btn" onclick="filtrerCategorie('entrees')">🫕 Entrées</button>
-  <button class="pays-btn" onclick="filtrerCategorie('salades')">🥗 Salades</button>
-  <button class="pays-btn" onclick="filtrerCategorie('healthy')">💚 Healthy</button>
-  <button class="pays-btn" onclick="filtrerCategorie('brunch')">🍳 Brunch</button>
-  <button class="pays-btn" onclick="filtrerCategorie('encas')">🥪 Encas</button>
-  <button class="pays-btn" onclick="filtrerCategorie('pizzas')">🍕 Pizzas</button>
-  <button class="pays-btn" onclick="filtrerCategorie('desserts')">🍰 Desserts</button>
-  <button class="pays-btn" onclick="filtrerCategorie('boulangerie')">🥖 Boulangerie</button>
-  <button class="pays-btn" onclick="filtrerCategorieDrinks()">🍹 Cocktails ▾</button>
-</div>
-<!-- Sous-menu cocktails -->
-<div class="menu-pays" id="menu-cocktails" style="display:none">
-  <button class="pays-btn" onclick="filtrerCategorieDrinks('cocktails')">🍸 Avec alcool</button>
-  <button class="pays-btn" onclick="filtrerCategorieDrinks('mocktails')">🧃 Sans alcool</button>
-</div>
-
-<!-- SOUS-MENU PAYS -->
-<div class="menu-pays" id="menu-pays" style="display:none">
-  <button class="pays-btn" onclick="filtrerPays('france')">🇫🇷 France</button>
-  <button class="pays-btn" onclick="filtrerPays('italie')">🇮🇹 Italie</button>
-  <button class="pays-btn" onclick="filtrerPays('japon')">🇯🇵 Japon</button>
-  <button class="pays-btn" onclick="filtrerPays('thailande')">🇹🇭 Thaïlande</button>
-  <button class="pays-btn" onclick="filtrerPays('mexique')">🇲🇽 Mexique</button>
-  <button class="pays-btn" onclick="filtrerPays('inde')">🇮🇳 Inde</button>
-  <button class="pays-btn" onclick="filtrerPays('liban')">🇱🇧 Liban</button>
-  <button class="pays-btn" onclick="filtrerPays('grece')">🇬🇷 Grèce</button>
-  <button class="pays-btn" onclick="filtrerPays('chine')">🇨🇳 Chine</button>
-  <button class="pays-btn" onclick="filtrerPays('usa')">🇺🇸 USA</button>
-  <button class="pays-btn" onclick="filtrerPays('espagne')">🇪🇸 Espagne</button>
-  <button class="pays-btn" onclick="filtrerPays('maroc')">🇲🇦 Maroc</button>
-  <button class="pays-btn" onclick="filtrerPays('cuba')">🇨🇺 Cuba</button>
-  <button class="pays-btn" onclick="filtrerPays('vietnam')">🇻🇳 Vietnam</button>
-  <button class="pays-btn" onclick="filtrerPays('senegal')">🇸🇳 Sénégal</button>
-  <button class="pays-btn" onclick="filtrerPays('pologne')">🇵🇱 Pologne</button>
-  <button class="pays-btn" onclick="filtrerPays('coree')">🇰🇷 Corée</button>
-  <button class="pays-btn" onclick="filtrerPays('hongrie')">🇭🇺 Hongrie</button>
-  <button class="pays-btn" onclick="filtrerPays('tibet')">🏔️ Tibet</button>
-  <button class="pays-btn" onclick="filtrerPays('bresil')">🇧🇷 Brésil</button>
-  <button class="pays-btn" onclick="filtrerPays('indonesie')">🇮🇩 Indonésie</button>
-  <button class="pays-btn" onclick="filtrerPays('haiti')">🇭🇹 Haïti</button>
+<!-- BARRE DE FILTRES — visible seulement en mode "Recettes" -->
+<div class="filtres-chips" id="filtres-chips" style="display:none">
+  <!-- Ligne 1 : Catégories -->
+  <div class="chips-row">
+    <span class="chips-label">🗂️</span>
+    <button class="chip active" onclick="filtrerChipCategorie('all', this)">Tout</button>
+    <button class="chip" onclick="filtrerChipCategorie('plats', this)">🍽️ Plats</button>
+    <button class="chip" onclick="filtrerChipCategorie('soupes', this)">🍲 Soupes</button>
+    <button class="chip" onclick="filtrerChipCategorie('entrees', this)">🫕 Entrées</button>
+    <button class="chip" onclick="filtrerChipCategorie('salades', this)">🥗 Salades</button>
+    <button class="chip" onclick="filtrerChipCategorie('healthy', this)">💚 Healthy</button>
+    <button class="chip" onclick="filtrerChipCategorie('brunch', this)">🍳 Brunch</button>
+    <button class="chip" onclick="filtrerChipCategorie('encas', this)">🥪 Encas</button>
+    <button class="chip" onclick="filtrerChipCategorie('pizzas', this)">🍕 Pizzas</button>
+    <button class="chip" onclick="filtrerChipCategorie('desserts', this)">🍰 Desserts</button>
+    <button class="chip" onclick="filtrerChipCategorie('boulangerie', this)">🥖 Boulangerie</button>
+    <button class="chip" onclick="filtrerChipCategorie('cocktails', this)">🍸 Cocktails</button>
+    <button class="chip" onclick="filtrerChipCategorie('mocktails', this)">🧃 Mocktails</button>
+  </div>
+  <!-- Ligne 2 : Pays -->
+  <div class="chips-row">
+    <span class="chips-label">🌍</span>
+    <button class="chip active" onclick="filtrerChipPays('all', this)">Tout</button>
+    <button class="chip" onclick="filtrerChipPays('france', this)">🇫🇷 France</button>
+    <button class="chip" onclick="filtrerChipPays('italie', this)">🇮🇹 Italie</button>
+    <button class="chip" onclick="filtrerChipPays('japon', this)">🇯🇵 Japon</button>
+    <button class="chip" onclick="filtrerChipPays('thailande', this)">🇹🇭 Thaï</button>
+    <button class="chip" onclick="filtrerChipPays('mexique', this)">🇲🇽 Mexique</button>
+    <button class="chip" onclick="filtrerChipPays('inde', this)">🇮🇳 Inde</button>
+    <button class="chip" onclick="filtrerChipPays('liban', this)">🇱🇧 Liban</button>
+    <button class="chip" onclick="filtrerChipPays('grece', this)">🇬🇷 Grèce</button>
+    <button class="chip" onclick="filtrerChipPays('chine', this)">🇨🇳 Chine</button>
+    <button class="chip" onclick="filtrerChipPays('usa', this)">🇺🇸 USA</button>
+    <button class="chip" onclick="filtrerChipPays('espagne', this)">🇪🇸 Espagne</button>
+    <button class="chip" onclick="filtrerChipPays('maroc', this)">🇲🇦 Maroc</button>
+    <button class="chip" onclick="filtrerChipPays('cuba', this)">🇨🇺 Cuba</button>
+    <button class="chip" onclick="filtrerChipPays('vietnam', this)">🇻🇳 Vietnam</button>
+    <button class="chip" onclick="filtrerChipPays('senegal', this)">🇸🇳 Sénégal</button>
+    <button class="chip" onclick="filtrerChipPays('pologne', this)">🇵🇱 Pologne</button>
+    <button class="chip" onclick="filtrerChipPays('coree', this)">🇰🇷 Corée</button>
+    <button class="chip" onclick="filtrerChipPays('hongrie', this)">🇭🇺 Hongrie</button>
+    <button class="chip" onclick="filtrerChipPays('tibet', this)">🏔️ Tibet</button>
+    <button class="chip" onclick="filtrerChipPays('bresil', this)">🇧🇷 Brésil</button>
+    <button class="chip" onclick="filtrerChipPays('indonesie', this)">🇮🇩 Indonésie</button>
+    <button class="chip" onclick="filtrerChipPays('haiti', this)">🇭🇹 Haïti</button>
+  </div>
 </div>
 
 <!-- SECTION ACCUEIL PERSONNALISÉ -->
 <section id="section-accueil" class="section-accueil">
   <!-- Bloc Favoris rapides -->
-  <div class="accueil-bloc" id="accueil-favoris-bloc">
-    <div class="accueil-bloc-header">
-      <h2>❤️ Mes Favoris</h2>
-      <button class="accueil-voir-plus" onclick="filtrerFavoris()">Voir tout →</button>
-    </div>
-    <div class="accueil-scroll-row" id="accueil-favoris-row">
-      <div class="accueil-empty">Connectez-vous pour voir vos favoris</div>
-    </div>
-  </div>
-
-  <!-- Bloc Derniers menus générés -->
-  <div class="accueil-bloc" id="accueil-menus-bloc">
-    <div class="accueil-bloc-header">
-      <h2>📅 Derniers menus générés</h2>
-      <div style="display:flex;gap:8px;align-items:center">
-        <button class="accueil-voir-plus" onclick="effacerHistoriqueMenus()" style="color:#ff6b6b;">🗑️ Effacer</button>
-        <button class="accueil-voir-plus" onclick="afficherSection('planificateur', document.querySelector('.nav-btn[onclick*=planificateur]'))">Voir menus →</button>
-      </div>
-    </div>
-    <div class="accueil-scroll-row" id="accueil-menus-row">
-      <div class="accueil-empty">Générez votre premier menu dans l'onglet Menus !</div>
-    </div>
-  </div>
-
   <!-- Bloc Plats fétiches du foyer -->
   <div class="accueil-bloc" id="section-accueil-fetiches" style="display:none">
     <div class="accueil-bloc-header">
