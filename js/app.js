@@ -1220,6 +1220,7 @@ const INGREDIENTS_LABELS = {
   levureboulanger: "🍞 Levure boulangère", cremechantilly: "🥛 Crème chantilly",
   jauneoeuf: "🥚 Jaune d'œuf", tabasco: "🌶️ Tabasco",
   farinetamisee: "🌾 Farine tamisée", chocolatnoir: "🍫 Chocolat noir", jusdecitron: "🍋 Jus de citron",
+  levurechimique: "🍞 Levure chimique", pepiteschoco: "🍫 Pépites de chocolat",
   gingembre: "🫚 Gingembre", galanga: "🫚 Galanga", anis: "⭐ Anis étoilé",
   citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille", fumee: "💨 Paprika fumé",
   chermoula: "🌿 Chermoula", pesto: "🌿 Pesto",
