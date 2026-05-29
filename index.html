@@ -103,7 +103,7 @@ gtag('config', 'G-390C5MY2SS');
 <nav class="menu-cats menu-cats-main">
   <button class="cat-btn active" id="btn-accueil" onclick="afficherAccueil()">🏠 <span class="cat-label">Accueil</span></button>
   <button class="cat-btn" id="btn-recettes" onclick="afficherRecettes()">🍳 <span class="cat-label">Recettes</span></button>
-  <button class="cat-btn" id="btn-favoris" onclick="filtrerFavoris()">⭐ <span class="cat-label">Favoris</span></button>
+  <button class="cat-btn" id="btn-favoris" onclick="afficherFavorisAvecChips()">⭐ <span class="cat-label">Favoris</span></button>
   <button class="cat-btn" id="btn-mon-profil" onclick="filtrerMonProfil()" style="display:none">👤 <span class="cat-label">Profil</span></button>
 </nav>
 
@@ -152,6 +152,15 @@ gtag('config', 'G-390C5MY2SS');
     <button class="chip" onclick="filtrerChipPays('bresil', this)">🇧🇷 Brésil</button>
     <button class="chip" onclick="filtrerChipPays('indonesie', this)">🇮🇩 Indonésie</button>
     <button class="chip" onclick="filtrerChipPays('haiti', this)">🇭🇹 Haïti</button>
+  </div>
+</div>
+
+<!-- BARRE DE FILTRES FAVORIS — visible seulement en mode "Favoris" -->
+<div class="filtres-chips" id="filtres-favoris-chips" style="display:none">
+  <div class="chips-row">
+    <span class="chips-label">⭐</span>
+    <button class="chip active" id="chip-fav-recettes" onclick="chipFavorisRecettes(this)">🍽️ Recettes favorites</button>
+    <button class="chip" id="chip-fav-menus" onclick="chipFavorisMenus(this)">❤️ Menus favoris</button>
   </div>
 </div>
 
@@ -5861,11 +5870,11 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/allergenes.js?v=224"></script>
-<script src="js/recettes.js?v=224"></script>
-<script src="js/ingredients_prix.js?v=224"></script>
-<script src="js/tables.js?v=224"></script>
-<script src="js/app.js?v=224"></script>
+<script src="js/allergenes.js?v=238"></script>
+<script src="js/recettes.js?v=238"></script>
+<script src="js/ingredients_prix.js?v=238"></script>
+<script src="js/tables.js?v=238"></script>
+<script src="js/app.js?v=238"></script>
 
 
 
