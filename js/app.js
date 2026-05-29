@@ -4613,6 +4613,57 @@ function calculerCarte(recette, inputId) {
   }, 50);
 }
 
+// ========================================
+// BOUTONS +/- SUR LES CARTES
+// ========================================
+// Change le nombre de personnes sur une carte (- 1 ou + 1)
+// `delta` = +1 (bouton +) ou -1 (bouton -)
+function changerPersonnes(inputId, delta, _recetteCle) {
+  const input = document.getElementById(inputId);
+  if (!input) return;
+  const min = parseInt(input.min) || 1;
+  const max = parseInt(input.max) || 15;
+  let val = parseInt(input.value) || 1;
+  val = Math.max(min, Math.min(max, val + delta));
+  input.value = val;
+  // Marquer comme modifié pour ne pas être écrasé par le foyer
+  input.dataset.modifie = "1";
+  // Petite animation visuelle "bump"
+  input.classList.remove("bump");
+  void input.offsetWidth; // force reflow pour relancer l'animation
+  input.classList.add("bump");
+  // Désactiver les boutons aux bornes (visual hint)
+  const carteCalc = input.closest(".carte-calc");
+  if (carteCalc) {
+    const btnMinus = carteCalc.querySelector(".calc-btn-minus");
+    const btnPlus  = carteCalc.querySelector(".calc-btn-plus");
+    if (btnMinus) btnMinus.disabled = (val <= min);
+    if (btnPlus)  btnPlus.disabled  = (val >= max);
+  }
+}
+
+// Callback quand l'utilisateur tape directement dans l'input
+function onInputCalcChange(inputId, _recetteCle) {
+  const input = document.getElementById(inputId);
+  if (!input) return;
+  const min = parseInt(input.min) || 1;
+  const max = parseInt(input.max) || 15;
+  let val = parseInt(input.value);
+  // Si saisie invalide ou hors limites, on corrige
+  if (isNaN(val) || val < min) val = min;
+  if (val > max) val = max;
+  input.value = val;
+  input.dataset.modifie = "1";
+  // Mettre à jour l'état des boutons
+  const carteCalc = input.closest(".carte-calc");
+  if (carteCalc) {
+    const btnMinus = carteCalc.querySelector(".calc-btn-minus");
+    const btnPlus  = carteCalc.querySelector(".calc-btn-plus");
+    if (btnMinus) btnMinus.disabled = (val <= min);
+    if (btnPlus)  btnPlus.disabled  = (val >= max);
+  }
+}
+
 // La fonction appliquerPreferencesVisuelles est définie dans allergenes.js
 // (elle gère allergies, régimes, famille et niveau cuisine dans une seule fonction)
 
