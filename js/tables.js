@@ -630,6 +630,20 @@ function htmlPrixCalories(nom, quantite) {
           const unite = unites[nom] || "personne";
           const calParUnite = Math.round(res.cal / quantite);
           
+          // === NUTRI-SCORE (calcul auto) ===
+          let nutriHtml = "";
+          if (typeof calculerNutriScoreRecette === "function") {
+            const ns = calculerNutriScoreRecette(ligne);
+            if (ns) {
+              nutriHtml = `
+                <div class="prix-cal-item nutri-score-bloc nutri-${ns.lettre}" title="Nutri-Score ${ns.lettre} — Indicateur officiel de qualité nutritionnelle">
+                  <span class="pc-icone">🥗</span>
+                  <div class="nutri-badge">${ns.lettre}</div>
+                  <div class="pc-label">Nutri-Score</div>
+                </div>`;
+            }
+          }
+          
           return `
             <div class="prix-cal-bloc">
               <div class="prix-cal-item">
@@ -647,6 +661,7 @@ function htmlPrixCalories(nom, quantite) {
                 <div class="pc-valeur">${calParUnite} kcal</div>
                 <div class="pc-label">Par ${unite}</div>
               </div>
+              ${nutriHtml}
             </div>
             <button class="btn-courses-recette" onclick="afficherCoursesRecette('${nom}', ${quantite})">
               🛒 Liste de courses

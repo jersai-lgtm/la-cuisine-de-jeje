@@ -3502,18 +3502,37 @@ function rechercherRecette(query) {
   const clear = document.getElementById("search-clear");
   clear.style.display = q ? "flex" : "none";
 
-  // Si recherche active, basculer vers la grille
-  if (q) {
-    const secAccueil = document.getElementById("section-accueil");
-    const secCartes  = document.getElementById("section-cartes");
-    if (secAccueil) secAccueil.style.display = "none";
-    if (secCartes) { secCartes.classList.add("visible"); }
-    document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
-  } else {
-    // Si on efface la recherche → retour accueil
-    if (typeof afficherAccueil === "function") afficherAccueil();
+  // === RECHERCHE CONTEXTUELLE ===
+  // Au premier caractère tapé, on capture l'état actuel des cartes
+  // (quelles cartes sont visibles dans le contexte courant : Mon Profil, Cocktails...)
+  if (q && !window._etatAvantRecherche) {
+    window._etatAvantRecherche = new Map();
+    document.querySelectorAll(".carte").forEach(c => {
+      // On sauve si la carte était visible (display différent de "none")
+      const estVisible = c.style.display !== "none";
+      window._etatAvantRecherche.set(c, estVisible);
+    });
+  }
+
+  // Si la recherche est vidée → restaurer l'état d'avant
+  if (!q) {
+    if (window._etatAvantRecherche) {
+      window._etatAvantRecherche.forEach((etaitVisible, c) => {
+        c.style.display = etaitVisible ? "" : "none";
+      });
+      window._etatAvantRecherche = null;
+    } else {
+      // Cas où il n'y avait pas d'état (rare) : retour accueil
+      if (typeof afficherAccueil === "function") afficherAccueil();
+    }
     return;
   }
+
+  // Si recherche active, s'assurer qu'on est sur la grille
+  const secAccueil = document.getElementById("section-accueil");
+  const secCartes  = document.getElementById("section-cartes");
+  if (secAccueil) secAccueil.style.display = "none";
+  if (secCartes) { secCartes.classList.add("visible"); }
 
   // Helper : retire les emojis/symboles et garde uniquement les mots
   // Match si UN DES MOTS du nom COMMENCE par la requête (plus intelligent)
@@ -3535,27 +3554,33 @@ function rechercherRecette(query) {
     return motsQuery.every(mq => motsNom.some(mn => mn.startsWith(mq)));
   }
 
+  // Filtrer : on montre une carte SI elle matche ET qu'elle était visible dans le contexte
   document.querySelectorAll(".carte").forEach(carte => {
+    const etaitVisible = window._etatAvantRecherche.get(carte) !== false;
     const nom = carte.querySelector("h2").textContent;
-    carte.style.display = (!q || matcheNom(nom, q)) ? "flex" : "none";
+    const matche = matcheNom(nom, q);
+    carte.style.display = (etaitVisible && matche) ? "" : "none";
   });
   if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
-
-  // Désactiver les filtres catégories si recherche active
-  if (q) {
-    document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
-  } else {
-    document.querySelectorAll(".cat-btn")[0].classList.add("active");
-  }
 }
 
 function viderRecherche() {
-  document.getElementById("search-input").value = "";
-  document.getElementById("search-clear").style.display = "none";
-  document.querySelectorAll(".carte").forEach(c => c.style.display = "");
-  // Retour à l'accueil plutôt que tout afficher
-  if (typeof afficherAccueil === "function") afficherAccueil();
-  else afficherTout();
+  const input = document.getElementById("search-input");
+  if (input) input.value = "";
+  const clear = document.getElementById("search-clear");
+  if (clear) clear.style.display = "none";
+  
+  // Restaurer l'état d'avant la recherche (préserver le filtre Mon Profil/catégorie/etc.)
+  if (window._etatAvantRecherche) {
+    window._etatAvantRecherche.forEach((etaitVisible, c) => {
+      c.style.display = etaitVisible ? "" : "none";
+    });
+    window._etatAvantRecherche = null;
+  } else {
+    // Cas où il n'y avait pas d'état (rare) : retour accueil
+    if (typeof afficherAccueil === "function") afficherAccueil();
+    else afficherTout();
+  }
 }
 
 // Afficher tout
@@ -3563,7 +3588,9 @@ function afficherTout() {
   window.scrollTo({ top: 0, behavior: "smooth" });
   fermerSousMenus();
   if (typeof masquerSectionMenusFavoris === "function") masquerSectionMenusFavoris();
+  // Désactiver explicitement TOUS les boutons (y compris Mon Profil)
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("btn-mon-profil")?.classList.remove("active");
   const btnTout = document.getElementById("btn-tout");
   if (btnTout) btnTout.classList.add("active");
   // Basculer vers la grille, masquer toutes les autres sections
@@ -3573,12 +3600,30 @@ function afficherTout() {
   const secPlan    = document.getElementById("section-planificateur");
   const secFestif  = document.getElementById("section-festif");
   if (secAccueil) secAccueil.style.display = "none";
-  if (secCartes)  secCartes.classList.add("visible");
+  if (secCartes)  {
+    secCartes.classList.add("visible");
+    secCartes.style.display = ""; // s'assurer que l'inline ne bloque pas
+  }
   if (secCalc)    secCalc.style.display = "none";
   if (secPlan)    secPlan.style.display = "none";
   if (secFestif)  secFestif.style.display = "none";
-  document.querySelectorAll(".carte").forEach(c => c.style.display = "");
+  // RÉAFFICHER ABSOLUMENT TOUTES LES CARTES (override tout filtre précédent)
+  document.querySelectorAll(".carte").forEach(c => {
+    c.style.display = "";
+    c.style.removeProperty("display"); // supprimer même l'attribut style.display="none"
+  });
+  // Vider la barre de recherche si elle était utilisée
+  const searchInput = document.getElementById("search-input");
+  if (searchInput && searchInput.value) {
+    searchInput.value = "";
+    const clear = document.getElementById("search-clear");
+    if (clear) clear.style.display = "none";
+  }
+  // Réinitialiser le contexte de recherche
+  window._etatAvantRecherche = null;
+  // Réappliquer les badges visuels (allergie, famille, nutri-score)
   if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+  if (typeof appliquerNutriScoreCartes === "function") appliquerNutriScoreCartes();
 }
 
 // Toggle sous-menu générique
@@ -4003,6 +4048,7 @@ function estCompatibleMonProfil(cle) {
 function filtrerMonProfil() {
   window.scrollTo({ top: 0, behavior: "smooth" });
   basculeVersGrille();
+  reinitialiserRecherche();
   // Désactiver les autres filtres actifs
   document.querySelectorAll(".cat-btn, #menu-categories .pays-btn, #menu-pays .pays-btn").forEach(b => b.classList.remove("active"));
   document.getElementById("btn-mon-profil")?.classList.add("active");
@@ -4028,6 +4074,50 @@ function extraireCleRecetteCarte(carte) {
   const tous = [...onclick.matchAll(/'([^']+)'/g)];
   if (tous.length > 0) return tous[tous.length - 1][1];
   return null;
+}
+
+// === NUTRI-SCORE : appliquer le mini badge sur toutes les cartes ===
+// Calcule le Nutri-Score pour chaque recette qui a un tableau d'ingrédients
+// et ajoute une pastille blanche avec lettre colorée sur l'image, en haut à droite.
+function appliquerNutriScoreCartes() {
+  if (typeof calculerNutriScoreRecette !== "function" || typeof recettes !== "object") return;
+  
+  const cartes = document.querySelectorAll(".carte");
+  let nbAppliques = 0;
+  
+  cartes.forEach(carte => {
+    // Ne pas réappliquer si déjà fait
+    if (carte.querySelector(".carte-nutri")) return;
+    
+    const cle = extraireCleRecetteCarte(carte);
+    if (!cle) return;
+    
+    const r = recettes[cle];
+    if (!r) return;
+    
+    // Trouver le tableau d'ingrédients
+    const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (!tabKey) return;
+    
+    // Prendre la ligne "base" (4 personnes par défaut, ou la première)
+    const base = r.base || 4;
+    const ligne = r[tabKey].find(l => l.nb === base || l.patons === base) || r[tabKey][0];
+    if (!ligne) return;
+    
+    const ns = calculerNutriScoreRecette(ligne);
+    if (!ns) return;
+    
+    // Créer le badge : pastille blanche avec lettre colorée via CSS ::before
+    const badge = document.createElement("div");
+    badge.className = "carte-nutri nutri-" + ns.lettre;
+    badge.setAttribute("data-lettre", ns.lettre);
+    badge.title = "Nutri-Score " + ns.lettre + " — Qualité nutritionnelle";
+    // Insérer en PREMIER pour que le z-index fonctionne bien
+    carte.insertBefore(badge, carte.firstChild);
+    nbAppliques++;
+  });
+  
+  console.log("✅ Nutri-Score appliqué sur " + nbAppliques + " cartes");
 }
 
 // Le bouton "Mon Profil" n'apparaît que si l'utilisateur a au moins UNE restriction
@@ -4121,9 +4211,23 @@ function majBoutonFamille() {
   btn.style.display = (profil && (profil.hasBebe || profil.hasEnfant)) ? "" : "none";
 }
 
+// === Réinitialiser la recherche quand on change de contexte ===
+// Vide la barre de recherche et oublie l'état précédent (la recherche
+// repartira du nouveau contexte au prochain caractère tapé).
+function reinitialiserRecherche() {
+  window._etatAvantRecherche = null;
+  const input = document.getElementById("search-input");
+  if (input && input.value) {
+    input.value = "";
+    const clear = document.getElementById("search-clear");
+    if (clear) clear.style.display = "none";
+  }
+}
+
 function filtrerCategorie(cat) {
   window.scrollTo({ top: 0, behavior: "smooth" });
   basculeVersGrille();
+  reinitialiserRecherche();
   // Désactiver les boutons principaux (Accueil, Recettes favorites, etc.)
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
   // Réactiver le bouton Catégories
@@ -4141,6 +4245,7 @@ function filtrerCategorie(cat) {
 function filtrerPays(pays) {
   window.scrollTo({ top: 0, behavior: "smooth" });
   basculeVersGrille();
+  reinitialiserRecherche();
   // Désactiver les boutons principaux
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
   // Réactiver le bouton Monde
@@ -5543,6 +5648,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // Appliquer les préférences visuelles (badges niveau + famille)
     if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
+    
+    // Appliquer les badges Nutri-Score sur toutes les cartes
+    if (typeof appliquerNutriScoreCartes === "function") appliquerNutriScoreCartes();
 
     // Marquer les calc-input comme "modifié" quand l'utilisateur change leur valeur
     // (pour ne pas que la maj depuis le foyer écrase un choix manuel)
