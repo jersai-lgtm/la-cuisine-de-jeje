@@ -24,10 +24,52 @@ gtag('config', 'G-390C5MY2SS');
 <script>
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("service-worker.js")
-      .then(() => console.log("Service Worker OK"))
+      .then(registration => {
+        console.log("Service Worker OK");
+        // Vérifier les mises à jour toutes les 60 secondes
+        setInterval(() => registration.update(), 60 * 1000);
+        // Détecter une nouvelle version disponible
+        registration.addEventListener("updatefound", () => {
+          const newWorker = registration.installing;
+          if (!newWorker) return;
+          newWorker.addEventListener("statechange", () => {
+            // Quand le nouveau SW est installé ET qu'il y en a déjà un actif
+            // (= il y a une mise à jour disponible)
+            if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
+              console.log("🎉 Nouvelle version disponible !");
+              // Afficher un toast discret en bas de l'écran
+              const toast = document.createElement("div");
+              toast.id = "toast-maj";
+              toast.style.cssText = "position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#ff4d88 0%,#ff6ba1 100%);color:white;padding:14px 22px;border-radius:50px;font-weight:600;font-size:14px;box-shadow:0 4px 20px rgba(0,0,0,.4);z-index:9999;cursor:pointer;display:flex;align-items:center;gap:10px;animation:slideUpToast .4s ease;";
+              toast.innerHTML = "🔄 Nouvelle version dispo — cliquez pour mettre à jour";
+              toast.onclick = () => {
+                // Demander au SW de prendre le contrôle immédiatement
+                if (newWorker) newWorker.postMessage({ action: "skipWaiting" });
+                window.location.reload();
+              };
+              document.body.appendChild(toast);
+              // Recharger automatiquement si l'utilisateur ne clique pas dans 8s
+              setTimeout(() => {
+                if (document.getElementById("toast-maj")) window.location.reload();
+              }, 8000);
+            }
+          });
+        });
+        // Quand le SW prend le contrôle, recharger pour appliquer les changements
+        let refreshing = false;
+        navigator.serviceWorker.addEventListener("controllerchange", () => {
+          if (!refreshing) { refreshing = true; window.location.reload(); }
+        });
+      })
       .catch(err => console.log("SW erreur:", err));
   }
 </script>
+<style>
+  @keyframes slideUpToast {
+    from { transform: translate(-50%, 100px); opacity: 0; }
+    to   { transform: translate(-50%, 0);     opacity: 1; }
+  }
+</style>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

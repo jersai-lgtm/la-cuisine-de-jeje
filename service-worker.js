@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v217";
+const CACHE_NAME = "cuisine-jeje-v218";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
@@ -78,6 +78,13 @@ self.addEventListener("activate", e => {
     )
   );
   self.clients.claim();
+});
+
+// Permet à la page de demander au SW d'activer immédiatement la nouvelle version
+self.addEventListener("message", e => {
+  if (e.data && e.data.action === "skipWaiting") {
+    self.skipWaiting();
+  }
 });
 
 // Fetch : réseau en priorité, cache en fallback
