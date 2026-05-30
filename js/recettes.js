@@ -8512,7 +8512,7 @@ const recettes = {
     ]
   },
   babaganoush: {
-    cat: "entrees", saisons: ["ete","automne"], pays: "liban",
+    cat: "aperitifs", saisons: ["ete","automne"], pays: "liban",
     base: 4,
     temps: "45 min",
     niveau: "⭐ Facile",
@@ -10955,7 +10955,7 @@ const recettes = {
     ]
   },
   rillettessaumonfume: {
-    cat: "entrees", pays: "france",
+    cat: "aperitifs", pays: "france",
     base: 6,
     temps: "15 min + 2h frigo",
     niveau: "⭐ Facile",
@@ -11360,7 +11360,7 @@ const recettes = {
     ]
   },
   guacamole: {
-    cat: "encas", pays: "mexique",
+    cat: "aperitifs", pays: "mexique",
     base: 6,
     temps: "15 min",
     niveau: "⭐ Facile",
