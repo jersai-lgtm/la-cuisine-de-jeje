@@ -764,9 +764,14 @@ function choisirRecette(nom, personnesOverride) {
   const inputPersonnes = document.getElementById("personnes");
 
   // v257.5 : Accepte un override (utilisé par rerendreFiche pour conserver la valeur après +/-)
+  // v258.1 : Par défaut, on suit le foyer du profil (avec exceptions cocktails /
+  //          mocktails / unités) au lieu de retomber sur data.base.
+  const defautFoyer = (typeof calculerPersonnesPourRecette === "function")
+    ? calculerPersonnesPourRecette(nom)
+    : (inputPersonnes ? parseInt(inputPersonnes.value) || data.base : data.base);
   const personnes = (typeof personnesOverride === "number" && personnesOverride > 0)
     ? personnesOverride
-    : (inputPersonnes ? parseInt(inputPersonnes.value) || data.base : data.base);
+    : defautFoyer;
   const ratio = personnes / data.base;
 
   // Label quantité

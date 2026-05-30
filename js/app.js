@@ -1850,6 +1850,65 @@ function getFoyerProfil() {
   };
 }
 
+// =============================================================================
+// 👥 NOMBRE DE PERSONNES PAR DÉFAUT À L'OUVERTURE D'UNE FICHE (v258.1)
+// =============================================================================
+// Renvoie le nombre de personnes à pré-sélectionner quand on ouvre une recette.
+// Par défaut → on suit la taille du foyer (profil). Exceptions :
+//   - recettes "à l'unité" (brioche, pâtes) → gardent leur valeur de base
+//   - cocktails  → adultes uniquement (alcool)
+//   - mocktails  → tout le foyer SAUF les bébés
+// La valeur est bornée par le min/max du tableau de la recette.
+// Si pas de profil/foyer → on retombe sur data.base (comportement historique).
+// =============================================================================
+function calculerPersonnesPourRecette(nom) {
+  const r = (typeof recettes !== "undefined") ? recettes[nom] : null;
+  if (!r) return 4;
+
+  // Bornes min/max d'après le tableau de la recette (si présent)
+  let min = 1, max = 15;
+  const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+  if (tabKey && r[tabKey].length > 0) {
+    const lignes = r[tabKey];
+    const cleNb = lignes[0].nb !== undefined ? "nb"
+                : (lignes[0].patons !== undefined ? "patons" : null);
+    if (cleNb) {
+      min = lignes[0][cleNb] || 1;
+      max = lignes[lignes.length - 1][cleNb] || 15;
+      if (min < 1) min = 1;
+    }
+  }
+
+  // Exceptions "à l'unité" → on garde la valeur de base (max 5)
+  const unites = (window.EXCEPTIONS && window.EXCEPTIONS.unites) || [];
+  if (unites.includes(nom)) {
+    return Math.max(1, Math.min(5, r.base || 1));
+  }
+
+  const foyer = window.userProfile?.foyer;
+  // Pas de profil/foyer → comportement historique
+  if (!foyer) return r.base || 4;
+
+  const adultes = foyer.adultes || 0;
+  const ados    = foyer.ados || 0;
+  const enfants = foyer.enfants || 0;
+  const bebes   = foyer.bebes || foyer.bébés || 0;
+  const total   = adultes + ados + enfants + bebes;
+
+  let nb;
+  if (r.cat === "cocktails") {
+    nb = adultes || total;                       // alcool → adultes
+  } else if (r.cat === "mocktails") {
+    nb = (adultes + ados + enfants) || total;    // sans alcool → foyer sauf bébés
+  } else {
+    nb = total;                                  // tout le foyer
+  }
+
+  if (!nb || nb < 1) return r.base || 4;
+  return Math.max(min, Math.min(max, nb));
+}
+window.calculerPersonnesPourRecette = calculerPersonnesPourRecette;
+
 // === SYSTÈME NIVEAU CUISINE ===
 // Détecte le niveau d'une recette : "facile" | "moyen" | "eleve"
 function getNiveauRecette(cle) {

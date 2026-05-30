@@ -17,7 +17,8 @@ window.EXCEPTIONS = {
     "brioche",          // 🍞 1 brioche
     "patefeuilletee",   // 🥧 1 pâte
     "patebrisee",       // 🥧 1 pâte
-    "patesablee"        // 🍪 1 pâte
+    "patesablee",       // 🍪 1 pâte
+    "painbaguette"      // 🥖 1 baguette (~250g)
   ],
 
   // -------------------------------------------------------------------------
