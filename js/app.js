@@ -301,8 +301,13 @@ function chargerAccueilMenus() {
     return;
   }
   const dernier = hist[0];
+  // v258.6 : détecter le thématique AVANT le test "semaine vide". Un menu
+  // thématique n'a pas de `semaine` (il a `menu.menu` + `menu.theme`) ; sans ça
+  // il était écarté à tort de « Dernier menu généré ».
+  const isTheme = dernier?.menu?.theme !== undefined;
   const semaine = dernier?.menu?.semaine || [];
-  if (semaine.length === 0) {
+
+  if (!isTheme && semaine.length === 0) {
     row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`;
     return;
   }
@@ -311,8 +316,6 @@ function chargerAccueilMenus() {
 
   // Détecter le format : repas complet ou simple
   const isComplet = semaine[0]?.midi?.plat !== undefined;
-  // Détecter si c'est un menu thématique (a une propriété theme)
-  const isTheme = dernier?.menu?.theme !== undefined;
 
   if (isTheme) {
     // Menu thématique — afficher les plats
@@ -330,8 +333,10 @@ function chargerAccueilMenus() {
                   : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.06);padding-left:6px" : "";
       const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
                   : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🧒</span>` : "";
+      // v258.6 : un item thématique = une recette → clic ouvre la fiche (et non le planificateur)
+      const clickAttr = key ? `onclick="ouvrirFiche('${key}','')"` : `onclick="goMenus()"`;
       return `
-      <div class="accueil-menu-card" onclick="goMenus()">
+      <div class="accueil-menu-card" ${clickAttr} style="cursor:pointer">
         <div class="accueil-menu-day">${p.categorie || "Plat"}</div>
         <div class="accueil-menu-item" style="${style}" title="${tip}">
           <span>${emoji}</span>

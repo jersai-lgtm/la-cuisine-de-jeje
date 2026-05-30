@@ -4744,13 +4744,20 @@ const recettes = {
     description: "Croissants au Beurre — la recette classique de la boulangerie française. Feuilletage beurré, croustillant dehors et filant dedans.",
     tableauCroissant: [
       { nb: 1, farine: "62 g", beurre: "44 g", lait: "35 ml", sucre: "8 g", levure: "2 g", sel: "1 pincée" },
-      { nb: 2, farine: "125 g", beurre: "88 g", lait: "70 ml", sucre: "16 g", levure: "4 g", sel: "1 pincée" },
-      { nb: 4, farine: "250 g", beurre: "175 g", lait: "140 ml", sucre: "32 g", levure: "8 g", sel: "1 pincée" },
-      { nb: 6, farine: "375 g", beurre: "263 g", lait: "210 ml", sucre: "48 g", levure: "12 g", sel: "1 pincée" },
-      { nb: 8, farine: "500 g", beurre: "350 g", lait: "280 ml", sucre: "64 g", levure: "16 g", sel: "1 pincée" },
-      { nb: 10, farine: "625 g", beurre: "438 g", lait: "350 ml", sucre: "80 g", levure: "20 g", sel: "1 pincée" },
-      { nb: 12, farine: "750 g", beurre: "525 g", lait: "420 ml", sucre: "96 g", levure: "24 g", sel: "1 pincée" },
-      { nb: 14, farine: "875 g", beurre: "613 g", lait: "490 ml", sucre: "112 g", levure: "28 g", sel: "1 pincée" }
+      { nb: 2, farine: "124 g", beurre: "88 g", lait: "70 ml", sucre: "16 g", levure: "4 g", sel: "2 pincées" },
+      { nb: 3, farine: "186 g", beurre: "132 g", lait: "105 ml", sucre: "24 g", levure: "6 g", sel: "3 pincées" },
+      { nb: 4, farine: "248 g", beurre: "176 g", lait: "140 ml", sucre: "32 g", levure: "8 g", sel: "4 pincées" },
+      { nb: 5, farine: "310 g", beurre: "220 g", lait: "175 ml", sucre: "40 g", levure: "10 g", sel: "5 pincées" },
+      { nb: 6, farine: "372 g", beurre: "264 g", lait: "210 ml", sucre: "48 g", levure: "12 g", sel: "6 pincées" },
+      { nb: 7, farine: "434 g", beurre: "308 g", lait: "245 ml", sucre: "56 g", levure: "14 g", sel: "7 pincées" },
+      { nb: 8, farine: "496 g", beurre: "352 g", lait: "280 ml", sucre: "64 g", levure: "16 g", sel: "8 pincées" },
+      { nb: 9, farine: "558 g", beurre: "396 g", lait: "315 ml", sucre: "72 g", levure: "18 g", sel: "9 pincées" },
+      { nb: 10, farine: "620 g", beurre: "440 g", lait: "350 ml", sucre: "80 g", levure: "20 g", sel: "10 pincées" },
+      { nb: 11, farine: "682 g", beurre: "484 g", lait: "385 ml", sucre: "88 g", levure: "22 g", sel: "11 pincées" },
+      { nb: 12, farine: "744 g", beurre: "528 g", lait: "420 ml", sucre: "96 g", levure: "24 g", sel: "12 pincées" },
+      { nb: 13, farine: "806 g", beurre: "572 g", lait: "455 ml", sucre: "104 g", levure: "26 g", sel: "13 pincées" },
+      { nb: 14, farine: "868 g", beurre: "616 g", lait: "490 ml", sucre: "112 g", levure: "28 g", sel: "14 pincées" },
+      { nb: 15, farine: "930 g", beurre: "660 g", lait: "525 ml", sucre: "120 g", levure: "30 g", sel: "15 pincées" }
     ],
     ingredients: {},
     etapes: [
@@ -4896,12 +4903,21 @@ const recettes = {
     emoji: "🟡",
     description: "Financiers aux Amandes — petits gâteaux moelleux au beurre noisette et poudre d'amande. La mignardise de pâtisserie française.",
     tableauFinanciers: [
+      { nb: 1, blancs: "½", beurre: "15 g", poudreAmande: "10 g", sucreGlace: "15 g", farine: "5 g", noix: "15 g" },
+      { nb: 2, blancs: "1", beurre: "30 g", poudreAmande: "20 g", sucreGlace: "30 g", farine: "10 g", noix: "30 g" },
+      { nb: 3, blancs: "1½", beurre: "45 g", poudreAmande: "30 g", sucreGlace: "45 g", farine: "15 g", noix: "45 g" },
       { nb: 4, blancs: "2", beurre: "60 g", poudreAmande: "40 g", sucreGlace: "60 g", farine: "20 g", noix: "60 g" },
+      { nb: 5, blancs: "2½", beurre: "75 g", poudreAmande: "50 g", sucreGlace: "75 g", farine: "25 g", noix: "75 g" },
       { nb: 6, blancs: "3", beurre: "90 g", poudreAmande: "60 g", sucreGlace: "90 g", farine: "30 g", noix: "90 g" },
+      { nb: 7, blancs: "3½", beurre: "105 g", poudreAmande: "70 g", sucreGlace: "105 g", farine: "35 g", noix: "105 g" },
       { nb: 8, blancs: "4", beurre: "120 g", poudreAmande: "80 g", sucreGlace: "120 g", farine: "40 g", noix: "120 g" },
+      { nb: 9, blancs: "4½", beurre: "135 g", poudreAmande: "90 g", sucreGlace: "135 g", farine: "45 g", noix: "135 g" },
       { nb: 10, blancs: "5", beurre: "150 g", poudreAmande: "100 g", sucreGlace: "150 g", farine: "50 g", noix: "150 g" },
+      { nb: 11, blancs: "5½", beurre: "165 g", poudreAmande: "110 g", sucreGlace: "165 g", farine: "55 g", noix: "165 g" },
       { nb: 12, blancs: "6", beurre: "180 g", poudreAmande: "120 g", sucreGlace: "180 g", farine: "60 g", noix: "180 g" },
-      { nb: 14, blancs: "7", beurre: "210 g", poudreAmande: "140 g", sucreGlace: "210 g", farine: "70 g", noix: "210 g" }
+      { nb: 13, blancs: "6½", beurre: "195 g", poudreAmande: "130 g", sucreGlace: "195 g", farine: "65 g", noix: "195 g" },
+      { nb: 14, blancs: "7", beurre: "210 g", poudreAmande: "140 g", sucreGlace: "210 g", farine: "70 g", noix: "210 g" },
+      { nb: 15, blancs: "7½", beurre: "225 g", poudreAmande: "150 g", sucreGlace: "225 g", farine: "75 g", noix: "225 g" }
     ],
     ingredients: {},
     etapes: [
@@ -4983,13 +4999,21 @@ const recettes = {
     emoji: "🟢",
     description: "Tarte à la Pistache — crème de pistache sur pâte sablée dorée, avec framboises fraîches. La tarte de pâtisserie qui fait sensation.",
     tableauTartePistache: [
+      { nb: 1, pateSablee: "75 g", pistaches: "20 g", beurre: "15 g", oeufs: "½", sucre: "15 g", framboises: "25 g", farine: "20 g" },
       { nb: 2, pateSablee: "150 g", pistaches: "40 g", beurre: "30 g", oeufs: "1", sucre: "30 g", framboises: "50 g", farine: "40 g" },
+      { nb: 3, pateSablee: "225 g", pistaches: "60 g", beurre: "45 g", oeufs: "1½", sucre: "45 g", framboises: "75 g", farine: "60 g" },
       { nb: 4, pateSablee: "300 g", pistaches: "80 g", beurre: "60 g", oeufs: "2", sucre: "60 g", framboises: "100 g", farine: "80 g" },
+      { nb: 5, pateSablee: "375 g", pistaches: "100 g", beurre: "75 g", oeufs: "2½", sucre: "75 g", framboises: "125 g", farine: "100 g" },
       { nb: 6, pateSablee: "450 g", pistaches: "120 g", beurre: "90 g", oeufs: "3", sucre: "90 g", framboises: "150 g", farine: "120 g" },
+      { nb: 7, pateSablee: "525 g", pistaches: "140 g", beurre: "105 g", oeufs: "3½", sucre: "105 g", framboises: "175 g", farine: "140 g" },
       { nb: 8, pateSablee: "600 g", pistaches: "160 g", beurre: "120 g", oeufs: "4", sucre: "120 g", framboises: "200 g", farine: "160 g" },
+      { nb: 9, pateSablee: "675 g", pistaches: "180 g", beurre: "135 g", oeufs: "4½", sucre: "135 g", framboises: "225 g", farine: "180 g" },
       { nb: 10, pateSablee: "750 g", pistaches: "200 g", beurre: "150 g", oeufs: "5", sucre: "150 g", framboises: "250 g", farine: "200 g" },
+      { nb: 11, pateSablee: "825 g", pistaches: "220 g", beurre: "165 g", oeufs: "5½", sucre: "165 g", framboises: "275 g", farine: "220 g" },
       { nb: 12, pateSablee: "900 g", pistaches: "240 g", beurre: "180 g", oeufs: "6", sucre: "180 g", framboises: "300 g", farine: "240 g" },
-      { nb: 14, pateSablee: "1050 g", pistaches: "280 g", beurre: "210 g", oeufs: "7", sucre: "210 g", framboises: "350 g", farine: "280 g" }
+      { nb: 13, pateSablee: "975 g", pistaches: "260 g", beurre: "195 g", oeufs: "6½", sucre: "195 g", framboises: "325 g", farine: "260 g" },
+      { nb: 14, pateSablee: "1050 g", pistaches: "280 g", beurre: "210 g", oeufs: "7", sucre: "210 g", framboises: "350 g", farine: "280 g" },
+      { nb: 15, pateSablee: "1125 g", pistaches: "300 g", beurre: "225 g", oeufs: "7½", sucre: "225 g", framboises: "375 g", farine: "300 g" }
     ],
     ingredients: {},
     etapes: [
@@ -5039,13 +5063,21 @@ const recettes = {
     emoji: "🥙",
     description: "Galettes Bretonnes — crêpes de blé noir (sarrasin) garnies jambon-fromage-œuf. La vraie galette complete bretonne !",
     tableauCrepesBretonnes: [
+      { nb: 1, farine: "31 g", oeuf: "½", lait: "63 ml", beurre: "5 g", jambon: "1 tranche", fromage: "20 g", sel: "½ pincée" },
       { nb: 2, farine: "62 g", oeuf: "1", lait: "125 ml", beurre: "10 g", jambon: "2 tranches", fromage: "40 g", sel: "1 pincée" },
-      { nb: 4, farine: "125 g", oeuf: "2", lait: "250 ml", beurre: "20 g", jambon: "4 tranches", fromage: "80 g", sel: "1 pincée" },
-      { nb: 6, farine: "187 g", oeuf: "3", lait: "375 ml", beurre: "30 g", jambon: "6 tranches", fromage: "120 g", sel: "1 pincée" },
-      { nb: 8, farine: "250 g", oeuf: "4", lait: "500 ml", beurre: "40 g", jambon: "8 tranches", fromage: "160 g", sel: "1 pincée" },
-      { nb: 10, farine: "312 g", oeuf: "5", lait: "625 ml", beurre: "50 g", jambon: "10 tranches", fromage: "200 g", sel: "1 pincée" },
-      { nb: 12, farine: "375 g", oeuf: "6", lait: "750 ml", beurre: "60 g", jambon: "12 tranches", fromage: "240 g", sel: "1 pincée" },
-      { nb: 14, farine: "437 g", oeuf: "7", lait: "875 ml", beurre: "70 g", jambon: "14 tranches", fromage: "280 g", sel: "1 pincée" }
+      { nb: 3, farine: "93 g", oeuf: "1½", lait: "188 ml", beurre: "15 g", jambon: "3 tranches", fromage: "60 g", sel: "1½ pincée" },
+      { nb: 4, farine: "124 g", oeuf: "2", lait: "250 ml", beurre: "20 g", jambon: "4 tranches", fromage: "80 g", sel: "2 pincées" },
+      { nb: 5, farine: "155 g", oeuf: "2½", lait: "313 ml", beurre: "25 g", jambon: "5 tranches", fromage: "100 g", sel: "2½ pincées" },
+      { nb: 6, farine: "186 g", oeuf: "3", lait: "375 ml", beurre: "30 g", jambon: "6 tranches", fromage: "120 g", sel: "3 pincées" },
+      { nb: 7, farine: "217 g", oeuf: "3½", lait: "438 ml", beurre: "35 g", jambon: "7 tranches", fromage: "140 g", sel: "3½ pincées" },
+      { nb: 8, farine: "248 g", oeuf: "4", lait: "500 ml", beurre: "40 g", jambon: "8 tranches", fromage: "160 g", sel: "4 pincées" },
+      { nb: 9, farine: "279 g", oeuf: "4½", lait: "563 ml", beurre: "45 g", jambon: "9 tranches", fromage: "180 g", sel: "4½ pincées" },
+      { nb: 10, farine: "310 g", oeuf: "5", lait: "625 ml", beurre: "50 g", jambon: "10 tranches", fromage: "200 g", sel: "5 pincées" },
+      { nb: 11, farine: "341 g", oeuf: "5½", lait: "688 ml", beurre: "55 g", jambon: "11 tranches", fromage: "220 g", sel: "5½ pincées" },
+      { nb: 12, farine: "372 g", oeuf: "6", lait: "750 ml", beurre: "60 g", jambon: "12 tranches", fromage: "240 g", sel: "6 pincées" },
+      { nb: 13, farine: "403 g", oeuf: "6½", lait: "813 ml", beurre: "65 g", jambon: "13 tranches", fromage: "260 g", sel: "6½ pincées" },
+      { nb: 14, farine: "434 g", oeuf: "7", lait: "875 ml", beurre: "70 g", jambon: "14 tranches", fromage: "280 g", sel: "7 pincées" },
+      { nb: 15, farine: "465 g", oeuf: "7½", lait: "938 ml", beurre: "75 g", jambon: "15 tranches", fromage: "300 g", sel: "7½ pincées" }
     ],
     ingredients: {},
     etapes: [
@@ -5254,13 +5286,21 @@ const recettes = {
     emoji: "🍫",
     description: "Tarte Chocolat Caramel Beurre Salé — ganache chocolat noir sur caramel au beurre salé dans une pâte sablée. La tarte indulgente !",
     tableauTarteChocoCaramel: [
+      { nb: 1, pateSablee: "75 g", chocolat: "30 g", creme: "30 ml", sucre: "30 g", beurre: "23 g", sel: "½ pincée" },
       { nb: 2, pateSablee: "150 g", chocolat: "60 g", creme: "60 ml", sucre: "60 g", beurre: "45 g", sel: "1 pincée" },
+      { nb: 3, pateSablee: "225 g", chocolat: "90 g", creme: "90 ml", sucre: "90 g", beurre: "68 g", sel: "1½ pincée" },
       { nb: 4, pateSablee: "300 g", chocolat: "120 g", creme: "120 ml", sucre: "120 g", beurre: "90 g", sel: "2 pincées" },
+      { nb: 5, pateSablee: "375 g", chocolat: "150 g", creme: "150 ml", sucre: "150 g", beurre: "113 g", sel: "2½ pincées" },
       { nb: 6, pateSablee: "450 g", chocolat: "180 g", creme: "180 ml", sucre: "180 g", beurre: "135 g", sel: "3 pincées" },
+      { nb: 7, pateSablee: "525 g", chocolat: "210 g", creme: "210 ml", sucre: "210 g", beurre: "158 g", sel: "3½ pincées" },
       { nb: 8, pateSablee: "600 g", chocolat: "240 g", creme: "240 ml", sucre: "240 g", beurre: "180 g", sel: "4 pincées" },
+      { nb: 9, pateSablee: "675 g", chocolat: "270 g", creme: "270 ml", sucre: "270 g", beurre: "203 g", sel: "4½ pincées" },
       { nb: 10, pateSablee: "750 g", chocolat: "300 g", creme: "300 ml", sucre: "300 g", beurre: "225 g", sel: "5 pincées" },
+      { nb: 11, pateSablee: "825 g", chocolat: "330 g", creme: "330 ml", sucre: "330 g", beurre: "248 g", sel: "5½ pincées" },
       { nb: 12, pateSablee: "900 g", chocolat: "360 g", creme: "360 ml", sucre: "360 g", beurre: "270 g", sel: "6 pincées" },
-      { nb: 14, pateSablee: "1050 g", chocolat: "420 g", creme: "420 ml", sucre: "420 g", beurre: "315 g", sel: "7 pincées" }
+      { nb: 13, pateSablee: "975 g", chocolat: "390 g", creme: "390 ml", sucre: "390 g", beurre: "293 g", sel: "6½ pincées" },
+      { nb: 14, pateSablee: "1050 g", chocolat: "420 g", creme: "420 ml", sucre: "420 g", beurre: "315 g", sel: "7 pincées" },
+      { nb: 15, pateSablee: "1125 g", chocolat: "450 g", creme: "450 ml", sucre: "450 g", beurre: "338 g", sel: "7½ pincées" }
     ],
     ingredients: {},
     etapes: [
@@ -12314,15 +12354,25 @@ const recettes = {
     ]
   },
   fishandchips: {
-    cat: "platprincipal", pays: "angleterre",
+    cat: "plats", pays: "angleterre",
     base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🐟",
     description: "Le classique anglais : poisson blanc en beignet croustillant et frites épaisses. Servir avec sauce tartare et purée de petits pois.",
     tableauPersonnes: [
       { nb: 1, cabillaud: "180 g", pommesdeterre: "300 g", farine: "80 g", oeufs: "1", lait: "100 ml", bierebrune: "50 ml", huilefriture: "300 ml", citron: "½" },
-      { nb: 2, cabillaud: "360 g", pommesdeterre: "600 g", farine: "160 g", oeufs: "1", lait: "200 ml", bierebrune: "100 ml", huilefriture: "500 ml", citron: "1" },
-      { nb: 4, cabillaud: "720 g", pommesdeterre: "1200 g", farine: "320 g", oeufs: "2", lait: "400 ml", bierebrune: "200 ml", huilefriture: "800 ml", citron: "2" },
-      { nb: 6, cabillaud: "1080 g", pommesdeterre: "1800 g", farine: "480 g", oeufs: "3", lait: "600 ml", bierebrune: "300 ml", huilefriture: "1200 ml", citron: "3" },
-      { nb: 8, cabillaud: "1440 g", pommesdeterre: "2400 g", farine: "640 g", oeufs: "4", lait: "800 ml", bierebrune: "400 ml", huilefriture: "1500 ml", citron: "4" }
+      { nb: 2, cabillaud: "360 g", pommesdeterre: "600 g", farine: "160 g", oeufs: "2", lait: "200 ml", bierebrune: "100 ml", huilefriture: "600 ml", citron: "1" },
+      { nb: 3, cabillaud: "540 g", pommesdeterre: "900 g", farine: "240 g", oeufs: "3", lait: "300 ml", bierebrune: "150 ml", huilefriture: "900 ml", citron: "1½" },
+      { nb: 4, cabillaud: "720 g", pommesdeterre: "1200 g", farine: "320 g", oeufs: "4", lait: "400 ml", bierebrune: "200 ml", huilefriture: "1200 ml", citron: "2" },
+      { nb: 5, cabillaud: "900 g", pommesdeterre: "1500 g", farine: "400 g", oeufs: "5", lait: "500 ml", bierebrune: "250 ml", huilefriture: "1500 ml", citron: "2½" },
+      { nb: 6, cabillaud: "1080 g", pommesdeterre: "1800 g", farine: "480 g", oeufs: "6", lait: "600 ml", bierebrune: "300 ml", huilefriture: "1800 ml", citron: "3" },
+      { nb: 7, cabillaud: "1260 g", pommesdeterre: "2100 g", farine: "560 g", oeufs: "7", lait: "700 ml", bierebrune: "350 ml", huilefriture: "2100 ml", citron: "3½" },
+      { nb: 8, cabillaud: "1440 g", pommesdeterre: "2400 g", farine: "640 g", oeufs: "8", lait: "800 ml", bierebrune: "400 ml", huilefriture: "2400 ml", citron: "4" },
+      { nb: 9, cabillaud: "1620 g", pommesdeterre: "2700 g", farine: "720 g", oeufs: "9", lait: "900 ml", bierebrune: "450 ml", huilefriture: "2700 ml", citron: "4½" },
+      { nb: 10, cabillaud: "1800 g", pommesdeterre: "3000 g", farine: "800 g", oeufs: "10", lait: "1000 ml", bierebrune: "500 ml", huilefriture: "3000 ml", citron: "5" },
+      { nb: 11, cabillaud: "1980 g", pommesdeterre: "3300 g", farine: "880 g", oeufs: "11", lait: "1100 ml", bierebrune: "550 ml", huilefriture: "3300 ml", citron: "5½" },
+      { nb: 12, cabillaud: "2160 g", pommesdeterre: "3600 g", farine: "960 g", oeufs: "12", lait: "1200 ml", bierebrune: "600 ml", huilefriture: "3600 ml", citron: "6" },
+      { nb: 13, cabillaud: "2340 g", pommesdeterre: "3900 g", farine: "1040 g", oeufs: "13", lait: "1300 ml", bierebrune: "650 ml", huilefriture: "3900 ml", citron: "6½" },
+      { nb: 14, cabillaud: "2520 g", pommesdeterre: "4200 g", farine: "1120 g", oeufs: "14", lait: "1400 ml", bierebrune: "700 ml", huilefriture: "4200 ml", citron: "7" },
+      { nb: 15, cabillaud: "2700 g", pommesdeterre: "4500 g", farine: "1200 g", oeufs: "15", lait: "1500 ml", bierebrune: "750 ml", huilefriture: "4500 ml", citron: "7½" }
     ],
     ingredients: { "Cabillaud (g)": 720, "Pommes de terre (g)": 1200, "Farine (g)": 320, "Œufs": 2, "Lait (ml)": 400, "Bière brune (ml)": 200, "Citron": 2 },
     etapes: [
@@ -12336,15 +12386,25 @@ const recettes = {
     ]
   },
   shepherdspie: {
-    cat: "platprincipal", pays: "angleterre",
+    cat: "plats", pays: "angleterre",
     base: 4, temps: "1h", niveau: "⭐ Facile", emoji: "🥧",
     description: "Le hachis parmentier anglais à l'agneau — viande mijotée aux légumes, recouverte de purée gratinée. Le réconfort à l'état pur.",
     tableauPersonnes: [
       { nb: 1, agneau: "150 g", pommesdeterre: "300 g", carottes: "100 g", oignons: "½", ail: "1 gousse", beurre: "20 g", lait: "50 ml", concentre: "1 c.à.s", thym: "1 brin" },
-      { nb: 2, agneau: "300 g", pommesdeterre: "600 g", carottes: "200 g", oignons: "1", ail: "1 gousse", beurre: "40 g", lait: "100 ml", concentre: "2 c.à.s", thym: "2 brins" },
-      { nb: 4, agneau: "600 g", pommesdeterre: "1200 g", carottes: "400 g", oignons: "2", ail: "2 gousses", beurre: "80 g", lait: "200 ml", concentre: "4 c.à.s", thym: "4 brins" },
-      { nb: 6, agneau: "900 g", pommesdeterre: "1800 g", carottes: "600 g", oignons: "3", ail: "3 gousses", beurre: "120 g", lait: "300 ml", concentre: "6 c.à.s", thym: "6 brins" },
-      { nb: 8, agneau: "1200 g", pommesdeterre: "2400 g", carottes: "800 g", oignons: "4", ail: "4 gousses", beurre: "160 g", lait: "400 ml", concentre: "8 c.à.s", thym: "8 brins" }
+      { nb: 2, agneau: "300 g", pommesdeterre: "600 g", carottes: "200 g", oignons: "1", ail: "2 gousses", beurre: "40 g", lait: "100 ml", concentre: "2 c.à.s", thym: "2 brins" },
+      { nb: 3, agneau: "450 g", pommesdeterre: "900 g", carottes: "300 g", oignons: "1½", ail: "3 gousses", beurre: "60 g", lait: "150 ml", concentre: "3 c.à.s", thym: "3 brins" },
+      { nb: 4, agneau: "600 g", pommesdeterre: "1200 g", carottes: "400 g", oignons: "2", ail: "4 gousses", beurre: "80 g", lait: "200 ml", concentre: "4 c.à.s", thym: "4 brins" },
+      { nb: 5, agneau: "750 g", pommesdeterre: "1500 g", carottes: "500 g", oignons: "2½", ail: "5 gousses", beurre: "100 g", lait: "250 ml", concentre: "5 c.à.s", thym: "5 brins" },
+      { nb: 6, agneau: "900 g", pommesdeterre: "1800 g", carottes: "600 g", oignons: "3", ail: "6 gousses", beurre: "120 g", lait: "300 ml", concentre: "6 c.à.s", thym: "6 brins" },
+      { nb: 7, agneau: "1050 g", pommesdeterre: "2100 g", carottes: "700 g", oignons: "3½", ail: "7 gousses", beurre: "140 g", lait: "350 ml", concentre: "7 c.à.s", thym: "7 brins" },
+      { nb: 8, agneau: "1200 g", pommesdeterre: "2400 g", carottes: "800 g", oignons: "4", ail: "8 gousses", beurre: "160 g", lait: "400 ml", concentre: "8 c.à.s", thym: "8 brins" },
+      { nb: 9, agneau: "1350 g", pommesdeterre: "2700 g", carottes: "900 g", oignons: "4½", ail: "9 gousses", beurre: "180 g", lait: "450 ml", concentre: "9 c.à.s", thym: "9 brins" },
+      { nb: 10, agneau: "1500 g", pommesdeterre: "3000 g", carottes: "1000 g", oignons: "5", ail: "10 gousses", beurre: "200 g", lait: "500 ml", concentre: "10 c.à.s", thym: "10 brins" },
+      { nb: 11, agneau: "1650 g", pommesdeterre: "3300 g", carottes: "1100 g", oignons: "5½", ail: "11 gousses", beurre: "220 g", lait: "550 ml", concentre: "11 c.à.s", thym: "11 brins" },
+      { nb: 12, agneau: "1800 g", pommesdeterre: "3600 g", carottes: "1200 g", oignons: "6", ail: "12 gousses", beurre: "240 g", lait: "600 ml", concentre: "12 c.à.s", thym: "12 brins" },
+      { nb: 13, agneau: "1950 g", pommesdeterre: "3900 g", carottes: "1300 g", oignons: "6½", ail: "13 gousses", beurre: "260 g", lait: "650 ml", concentre: "13 c.à.s", thym: "13 brins" },
+      { nb: 14, agneau: "2100 g", pommesdeterre: "4200 g", carottes: "1400 g", oignons: "7", ail: "14 gousses", beurre: "280 g", lait: "700 ml", concentre: "14 c.à.s", thym: "14 brins" },
+      { nb: 15, agneau: "2250 g", pommesdeterre: "4500 g", carottes: "1500 g", oignons: "7½", ail: "15 gousses", beurre: "300 g", lait: "750 ml", concentre: "15 c.à.s", thym: "15 brins" }
     ],
     ingredients: { "Agneau haché (g)": 600, "Pommes de terre (g)": 1200, "Carottes (g)": 400, "Oignons": 2, "Ail": 2, "Beurre (g)": 80, "Lait (ml)": 200, "Concentré de tomate (c.à.s)": 4 },
     etapes: [
@@ -12364,9 +12424,19 @@ const recettes = {
     tableauPersonnes: [
       { nb: 1, pain: "2 tranches", jambon: "1 tranche", gruyere: "40 g", beurre: "20 g", farine: "10 g", lait: "100 ml", oeufs: "1", moutarde: "½ c.à.c" },
       { nb: 2, pain: "4 tranches", jambon: "2 tranches", gruyere: "80 g", beurre: "40 g", farine: "20 g", lait: "200 ml", oeufs: "2", moutarde: "1 c.à.c" },
+      { nb: 3, pain: "6 tranches", jambon: "3 tranches", gruyere: "120 g", beurre: "60 g", farine: "30 g", lait: "300 ml", oeufs: "3", moutarde: "1½ c.à.c" },
       { nb: 4, pain: "8 tranches", jambon: "4 tranches", gruyere: "160 g", beurre: "80 g", farine: "40 g", lait: "400 ml", oeufs: "4", moutarde: "2 c.à.c" },
+      { nb: 5, pain: "10 tranches", jambon: "5 tranches", gruyere: "200 g", beurre: "100 g", farine: "50 g", lait: "500 ml", oeufs: "5", moutarde: "2½ c.à.c" },
       { nb: 6, pain: "12 tranches", jambon: "6 tranches", gruyere: "240 g", beurre: "120 g", farine: "60 g", lait: "600 ml", oeufs: "6", moutarde: "3 c.à.c" },
-      { nb: 8, pain: "16 tranches", jambon: "8 tranches", gruyere: "320 g", beurre: "160 g", farine: "80 g", lait: "800 ml", oeufs: "8", moutarde: "4 c.à.c" }
+      { nb: 7, pain: "14 tranches", jambon: "7 tranches", gruyere: "280 g", beurre: "140 g", farine: "70 g", lait: "700 ml", oeufs: "7", moutarde: "3½ c.à.c" },
+      { nb: 8, pain: "16 tranches", jambon: "8 tranches", gruyere: "320 g", beurre: "160 g", farine: "80 g", lait: "800 ml", oeufs: "8", moutarde: "4 c.à.c" },
+      { nb: 9, pain: "18 tranches", jambon: "9 tranches", gruyere: "360 g", beurre: "180 g", farine: "90 g", lait: "900 ml", oeufs: "9", moutarde: "4½ c.à.c" },
+      { nb: 10, pain: "20 tranches", jambon: "10 tranches", gruyere: "400 g", beurre: "200 g", farine: "100 g", lait: "1000 ml", oeufs: "10", moutarde: "5 c.à.c" },
+      { nb: 11, pain: "22 tranches", jambon: "11 tranches", gruyere: "440 g", beurre: "220 g", farine: "110 g", lait: "1100 ml", oeufs: "11", moutarde: "5½ c.à.c" },
+      { nb: 12, pain: "24 tranches", jambon: "12 tranches", gruyere: "480 g", beurre: "240 g", farine: "120 g", lait: "1200 ml", oeufs: "12", moutarde: "6 c.à.c" },
+      { nb: 13, pain: "26 tranches", jambon: "13 tranches", gruyere: "520 g", beurre: "260 g", farine: "130 g", lait: "1300 ml", oeufs: "13", moutarde: "6½ c.à.c" },
+      { nb: 14, pain: "28 tranches", jambon: "14 tranches", gruyere: "560 g", beurre: "280 g", farine: "140 g", lait: "1400 ml", oeufs: "14", moutarde: "7 c.à.c" },
+      { nb: 15, pain: "30 tranches", jambon: "15 tranches", gruyere: "600 g", beurre: "300 g", farine: "150 g", lait: "1500 ml", oeufs: "15", moutarde: "7½ c.à.c" }
     ],
     ingredients: { "Pain de mie": 4, "Jambon (tranches)": 2, "Gruyère (g)": 80, "Beurre (g)": 40, "Farine (g)": 20, "Lait (ml)": 200, "Œufs": 2, "Moutarde (c.à.c)": 1 },
     etapes: [
@@ -12380,15 +12450,25 @@ const recettes = {
     ]
   },
   tomkhagai: {
-    cat: "soupe", pays: "thailande",
+    cat: "soupes", pays: "thailande",
     base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🍲",
     description: "La soupe thaïe au lait de coco, poulet et galanga. Parfumée à la citronnelle, citron vert et coriandre — réconfortante et exotique.",
     tableauPersonnes: [
       { nb: 1, poulet: "120 g", laitcoco: "200 ml", boullionLeg: "150 ml", champignons: "60 g", citronnelle: "1 tige", gingembre: "10 g", saucePoisson: "1 c.à.c", citron: "½", coriandre: "5 g", piment: "½" },
-      { nb: 2, poulet: "240 g", laitcoco: "400 ml", boullionLeg: "300 ml", champignons: "120 g", citronnelle: "2 tiges", gingembre: "20 g", saucePoisson: "1 c.à.s", citron: "1", coriandre: "10 g", piment: "1" },
-      { nb: 4, poulet: "480 g", laitcoco: "800 ml", boullionLeg: "600 ml", champignons: "240 g", citronnelle: "3 tiges", gingembre: "40 g", saucePoisson: "2 c.à.s", citron: "2", coriandre: "20 g", piment: "1-2" },
-      { nb: 6, poulet: "720 g", laitcoco: "1200 ml", boullionLeg: "900 ml", champignons: "360 g", citronnelle: "4 tiges", gingembre: "60 g", saucePoisson: "3 c.à.s", citron: "3", coriandre: "30 g", piment: "2-3" },
-      { nb: 8, poulet: "960 g", laitcoco: "1600 ml", boullionLeg: "1200 ml", champignons: "480 g", citronnelle: "5 tiges", gingembre: "80 g", saucePoisson: "4 c.à.s", citron: "4", coriandre: "40 g", piment: "3-4" }
+      { nb: 2, poulet: "240 g", laitcoco: "400 ml", boullionLeg: "300 ml", champignons: "120 g", citronnelle: "2 tiges", gingembre: "20 g", saucePoisson: "2 c.à.c", citron: "1", coriandre: "10 g", piment: "1" },
+      { nb: 3, poulet: "360 g", laitcoco: "600 ml", boullionLeg: "450 ml", champignons: "180 g", citronnelle: "3 tiges", gingembre: "30 g", saucePoisson: "3 c.à.c", citron: "1½", coriandre: "15 g", piment: "1½" },
+      { nb: 4, poulet: "480 g", laitcoco: "800 ml", boullionLeg: "600 ml", champignons: "240 g", citronnelle: "4 tiges", gingembre: "40 g", saucePoisson: "4 c.à.c", citron: "2", coriandre: "20 g", piment: "2" },
+      { nb: 5, poulet: "600 g", laitcoco: "1000 ml", boullionLeg: "750 ml", champignons: "300 g", citronnelle: "5 tiges", gingembre: "50 g", saucePoisson: "5 c.à.c", citron: "2½", coriandre: "25 g", piment: "2½" },
+      { nb: 6, poulet: "720 g", laitcoco: "1200 ml", boullionLeg: "900 ml", champignons: "360 g", citronnelle: "6 tiges", gingembre: "60 g", saucePoisson: "6 c.à.c", citron: "3", coriandre: "30 g", piment: "3" },
+      { nb: 7, poulet: "840 g", laitcoco: "1400 ml", boullionLeg: "1050 ml", champignons: "420 g", citronnelle: "7 tiges", gingembre: "70 g", saucePoisson: "7 c.à.c", citron: "3½", coriandre: "35 g", piment: "3½" },
+      { nb: 8, poulet: "960 g", laitcoco: "1600 ml", boullionLeg: "1200 ml", champignons: "480 g", citronnelle: "8 tiges", gingembre: "80 g", saucePoisson: "8 c.à.c", citron: "4", coriandre: "40 g", piment: "4" },
+      { nb: 9, poulet: "1080 g", laitcoco: "1800 ml", boullionLeg: "1350 ml", champignons: "540 g", citronnelle: "9 tiges", gingembre: "90 g", saucePoisson: "9 c.à.c", citron: "4½", coriandre: "45 g", piment: "4½" },
+      { nb: 10, poulet: "1200 g", laitcoco: "2000 ml", boullionLeg: "1500 ml", champignons: "600 g", citronnelle: "10 tiges", gingembre: "100 g", saucePoisson: "10 c.à.c", citron: "5", coriandre: "50 g", piment: "5" },
+      { nb: 11, poulet: "1320 g", laitcoco: "2200 ml", boullionLeg: "1650 ml", champignons: "660 g", citronnelle: "11 tiges", gingembre: "110 g", saucePoisson: "11 c.à.c", citron: "5½", coriandre: "55 g", piment: "5½" },
+      { nb: 12, poulet: "1440 g", laitcoco: "2400 ml", boullionLeg: "1800 ml", champignons: "720 g", citronnelle: "12 tiges", gingembre: "120 g", saucePoisson: "12 c.à.c", citron: "6", coriandre: "60 g", piment: "6" },
+      { nb: 13, poulet: "1560 g", laitcoco: "2600 ml", boullionLeg: "1950 ml", champignons: "780 g", citronnelle: "13 tiges", gingembre: "130 g", saucePoisson: "13 c.à.c", citron: "6½", coriandre: "65 g", piment: "6½" },
+      { nb: 14, poulet: "1680 g", laitcoco: "2800 ml", boullionLeg: "2100 ml", champignons: "840 g", citronnelle: "14 tiges", gingembre: "140 g", saucePoisson: "14 c.à.c", citron: "7", coriandre: "70 g", piment: "7" },
+      { nb: 15, poulet: "1800 g", laitcoco: "3000 ml", boullionLeg: "2250 ml", champignons: "900 g", citronnelle: "15 tiges", gingembre: "150 g", saucePoisson: "15 c.à.c", citron: "7½", coriandre: "75 g", piment: "7½" }
     ],
     ingredients: { "Poulet (g)": 480, "Lait de coco (ml)": 800, "Bouillon (ml)": 600, "Champignons (g)": 240, "Citronnelle (tiges)": 3, "Gingembre (g)": 40, "Citron vert": 2 },
     etapes: [
@@ -12402,15 +12482,25 @@ const recettes = {
     ]
   },
   macandcheese: {
-    cat: "platprincipal", pays: "etatsunis",
+    cat: "plats", pays: "etatsunis",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🧀",
     description: "Le comfort food américain ultime : pâtes coquillettes nappées d'une sauce fromage crémeuse au cheddar, gratinées à la chapelure.",
     tableauPersonnes: [
       { nb: 1, pates: "100 g", cheddar: "100 g", beurre: "20 g", farine: "20 g", lait: "200 ml", chapelure: "20 g", parmesan: "15 g" },
       { nb: 2, pates: "200 g", cheddar: "200 g", beurre: "40 g", farine: "40 g", lait: "400 ml", chapelure: "40 g", parmesan: "30 g" },
+      { nb: 3, pates: "300 g", cheddar: "300 g", beurre: "60 g", farine: "60 g", lait: "600 ml", chapelure: "60 g", parmesan: "45 g" },
       { nb: 4, pates: "400 g", cheddar: "400 g", beurre: "80 g", farine: "80 g", lait: "800 ml", chapelure: "80 g", parmesan: "60 g" },
+      { nb: 5, pates: "500 g", cheddar: "500 g", beurre: "100 g", farine: "100 g", lait: "1000 ml", chapelure: "100 g", parmesan: "75 g" },
       { nb: 6, pates: "600 g", cheddar: "600 g", beurre: "120 g", farine: "120 g", lait: "1200 ml", chapelure: "120 g", parmesan: "90 g" },
-      { nb: 8, pates: "800 g", cheddar: "800 g", beurre: "160 g", farine: "160 g", lait: "1600 ml", chapelure: "160 g", parmesan: "120 g" }
+      { nb: 7, pates: "700 g", cheddar: "700 g", beurre: "140 g", farine: "140 g", lait: "1400 ml", chapelure: "140 g", parmesan: "105 g" },
+      { nb: 8, pates: "800 g", cheddar: "800 g", beurre: "160 g", farine: "160 g", lait: "1600 ml", chapelure: "160 g", parmesan: "120 g" },
+      { nb: 9, pates: "900 g", cheddar: "900 g", beurre: "180 g", farine: "180 g", lait: "1800 ml", chapelure: "180 g", parmesan: "135 g" },
+      { nb: 10, pates: "1000 g", cheddar: "1000 g", beurre: "200 g", farine: "200 g", lait: "2000 ml", chapelure: "200 g", parmesan: "150 g" },
+      { nb: 11, pates: "1100 g", cheddar: "1100 g", beurre: "220 g", farine: "220 g", lait: "2200 ml", chapelure: "220 g", parmesan: "165 g" },
+      { nb: 12, pates: "1200 g", cheddar: "1200 g", beurre: "240 g", farine: "240 g", lait: "2400 ml", chapelure: "240 g", parmesan: "180 g" },
+      { nb: 13, pates: "1300 g", cheddar: "1300 g", beurre: "260 g", farine: "260 g", lait: "2600 ml", chapelure: "260 g", parmesan: "195 g" },
+      { nb: 14, pates: "1400 g", cheddar: "1400 g", beurre: "280 g", farine: "280 g", lait: "2800 ml", chapelure: "280 g", parmesan: "210 g" },
+      { nb: 15, pates: "1500 g", cheddar: "1500 g", beurre: "300 g", farine: "300 g", lait: "3000 ml", chapelure: "300 g", parmesan: "225 g" }
     ],
     ingredients: { "Pâtes coquillettes (g)": 400, "Cheddar (g)": 400, "Beurre (g)": 80, "Farine (g)": 80, "Lait (ml)": 800, "Chapelure (g)": 80, "Parmesan (g)": 60 },
     etapes: [
@@ -12425,15 +12515,25 @@ const recettes = {
     ]
   },
   yakitori: {
-    cat: "platprincipal", pays: "japon",
+    cat: "plats", pays: "japon",
     base: 4, temps: "30 min + 30 min marinade", niveau: "⭐ Facile", emoji: "🍢",
     description: "Brochettes japonaises de poulet caramélisées à la sauce tare (soja-mirin-sucre). Le classique des izakaya nippons.",
     tableauPersonnes: [
       { nb: 1, poulet: "200 g", oignonsblanc: "1", sojaS: "3 c.à.s", mirin: "2 c.à.s", sucre: "1 c.à.s", sake: "1 c.à.s", gingembre: "5 g" },
-      { nb: 2, poulet: "400 g", oignonsblanc: "2", sojaS: "5 c.à.s", mirin: "4 c.à.s", sucre: "2 c.à.s", sake: "2 c.à.s", gingembre: "10 g" },
-      { nb: 4, poulet: "800 g", oignonsblanc: "4", sojaS: "10 c.à.s", mirin: "8 c.à.s", sucre: "4 c.à.s", sake: "4 c.à.s", gingembre: "20 g" },
-      { nb: 6, poulet: "1200 g", oignonsblanc: "6", sojaS: "15 c.à.s", mirin: "12 c.à.s", sucre: "6 c.à.s", sake: "6 c.à.s", gingembre: "30 g" },
-      { nb: 8, poulet: "1600 g", oignonsblanc: "8", sojaS: "20 c.à.s", mirin: "16 c.à.s", sucre: "8 c.à.s", sake: "8 c.à.s", gingembre: "40 g" }
+      { nb: 2, poulet: "400 g", oignonsblanc: "2", sojaS: "6 c.à.s", mirin: "4 c.à.s", sucre: "2 c.à.s", sake: "2 c.à.s", gingembre: "10 g" },
+      { nb: 3, poulet: "600 g", oignonsblanc: "3", sojaS: "9 c.à.s", mirin: "6 c.à.s", sucre: "3 c.à.s", sake: "3 c.à.s", gingembre: "15 g" },
+      { nb: 4, poulet: "800 g", oignonsblanc: "4", sojaS: "12 c.à.s", mirin: "8 c.à.s", sucre: "4 c.à.s", sake: "4 c.à.s", gingembre: "20 g" },
+      { nb: 5, poulet: "1000 g", oignonsblanc: "5", sojaS: "15 c.à.s", mirin: "10 c.à.s", sucre: "5 c.à.s", sake: "5 c.à.s", gingembre: "25 g" },
+      { nb: 6, poulet: "1200 g", oignonsblanc: "6", sojaS: "18 c.à.s", mirin: "12 c.à.s", sucre: "6 c.à.s", sake: "6 c.à.s", gingembre: "30 g" },
+      { nb: 7, poulet: "1400 g", oignonsblanc: "7", sojaS: "21 c.à.s", mirin: "14 c.à.s", sucre: "7 c.à.s", sake: "7 c.à.s", gingembre: "35 g" },
+      { nb: 8, poulet: "1600 g", oignonsblanc: "8", sojaS: "24 c.à.s", mirin: "16 c.à.s", sucre: "8 c.à.s", sake: "8 c.à.s", gingembre: "40 g" },
+      { nb: 9, poulet: "1800 g", oignonsblanc: "9", sojaS: "27 c.à.s", mirin: "18 c.à.s", sucre: "9 c.à.s", sake: "9 c.à.s", gingembre: "45 g" },
+      { nb: 10, poulet: "2000 g", oignonsblanc: "10", sojaS: "30 c.à.s", mirin: "20 c.à.s", sucre: "10 c.à.s", sake: "10 c.à.s", gingembre: "50 g" },
+      { nb: 11, poulet: "2200 g", oignonsblanc: "11", sojaS: "33 c.à.s", mirin: "22 c.à.s", sucre: "11 c.à.s", sake: "11 c.à.s", gingembre: "55 g" },
+      { nb: 12, poulet: "2400 g", oignonsblanc: "12", sojaS: "36 c.à.s", mirin: "24 c.à.s", sucre: "12 c.à.s", sake: "12 c.à.s", gingembre: "60 g" },
+      { nb: 13, poulet: "2600 g", oignonsblanc: "13", sojaS: "39 c.à.s", mirin: "26 c.à.s", sucre: "13 c.à.s", sake: "13 c.à.s", gingembre: "65 g" },
+      { nb: 14, poulet: "2800 g", oignonsblanc: "14", sojaS: "42 c.à.s", mirin: "28 c.à.s", sucre: "14 c.à.s", sake: "14 c.à.s", gingembre: "70 g" },
+      { nb: 15, poulet: "3000 g", oignonsblanc: "15", sojaS: "45 c.à.s", mirin: "30 c.à.s", sucre: "15 c.à.s", sake: "15 c.à.s", gingembre: "75 g" }
     ],
     ingredients: { "Cuisses de poulet (g)": 800, "Oignons nouveaux": 4, "Sauce soja (c.à.s)": 10, "Mirin (c.à.s)": 8, "Sucre (c.à.s)": 4, "Saké (c.à.s)": 4, "Gingembre (g)": 20 },
     etapes: [
@@ -12447,15 +12547,25 @@ const recettes = {
     ]
   },
   magretcanard: {
-    cat: "platprincipal", pays: "france",
+    cat: "plats", pays: "france",
     base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🦆",
     description: "Magret de canard rôti à la peau croustillante, sauce au miel et vinaigre balsamique. Le classique gastronomique du Sud-Ouest.",
     tableauPersonnes: [
       { nb: 1, magret: "200 g", miel: "1 c.à.s", balsamique: "1 c.à.s", echalote: "½", thym: "1 brin", beurre: "10 g" },
       { nb: 2, magret: "400 g", miel: "2 c.à.s", balsamique: "2 c.à.s", echalote: "1", thym: "2 brins", beurre: "20 g" },
+      { nb: 3, magret: "600 g", miel: "3 c.à.s", balsamique: "3 c.à.s", echalote: "1½", thym: "3 brins", beurre: "30 g" },
       { nb: 4, magret: "800 g", miel: "4 c.à.s", balsamique: "4 c.à.s", echalote: "2", thym: "4 brins", beurre: "40 g" },
+      { nb: 5, magret: "1000 g", miel: "5 c.à.s", balsamique: "5 c.à.s", echalote: "2½", thym: "5 brins", beurre: "50 g" },
       { nb: 6, magret: "1200 g", miel: "6 c.à.s", balsamique: "6 c.à.s", echalote: "3", thym: "6 brins", beurre: "60 g" },
-      { nb: 8, magret: "1600 g", miel: "8 c.à.s", balsamique: "8 c.à.s", echalote: "4", thym: "8 brins", beurre: "80 g" }
+      { nb: 7, magret: "1400 g", miel: "7 c.à.s", balsamique: "7 c.à.s", echalote: "3½", thym: "7 brins", beurre: "70 g" },
+      { nb: 8, magret: "1600 g", miel: "8 c.à.s", balsamique: "8 c.à.s", echalote: "4", thym: "8 brins", beurre: "80 g" },
+      { nb: 9, magret: "1800 g", miel: "9 c.à.s", balsamique: "9 c.à.s", echalote: "4½", thym: "9 brins", beurre: "90 g" },
+      { nb: 10, magret: "2000 g", miel: "10 c.à.s", balsamique: "10 c.à.s", echalote: "5", thym: "10 brins", beurre: "100 g" },
+      { nb: 11, magret: "2200 g", miel: "11 c.à.s", balsamique: "11 c.à.s", echalote: "5½", thym: "11 brins", beurre: "110 g" },
+      { nb: 12, magret: "2400 g", miel: "12 c.à.s", balsamique: "12 c.à.s", echalote: "6", thym: "12 brins", beurre: "120 g" },
+      { nb: 13, magret: "2600 g", miel: "13 c.à.s", balsamique: "13 c.à.s", echalote: "6½", thym: "13 brins", beurre: "130 g" },
+      { nb: 14, magret: "2800 g", miel: "14 c.à.s", balsamique: "14 c.à.s", echalote: "7", thym: "14 brins", beurre: "140 g" },
+      { nb: 15, magret: "3000 g", miel: "15 c.à.s", balsamique: "15 c.à.s", echalote: "7½", thym: "15 brins", beurre: "150 g" }
     ],
     ingredients: { "Magret de canard (g)": 800, "Miel (c.à.s)": 4, "Vinaigre balsamique (c.à.s)": 4, "Échalotes": 2, "Thym (brins)": 4, "Beurre (g)": 40 },
     etapes: [
@@ -12469,15 +12579,25 @@ const recettes = {
     ]
   },
   risottochampignons: {
-    cat: "platprincipal", pays: "italie",
+    cat: "plats", pays: "italie",
     base: 4, temps: "35 min", niveau: "⭐⭐ Moyen", emoji: "🍚",
     description: "Risotto italien crémeux parfumé aux champignons sauvages et au parmesan. Onctueux comme il faut !",
     tableauPersonnes: [
       { nb: 1, rizArborio: "80 g", champignons: "150 g", oignons: "½", ail: "1 gousse", vinBlanc: "30 ml", boullionLeg: "400 ml", parmesan: "30 g", beurre: "15 g", huileolive: "1 c.à.s" },
-      { nb: 2, rizArborio: "160 g", champignons: "300 g", oignons: "1", ail: "1 gousse", vinBlanc: "60 ml", boullionLeg: "800 ml", parmesan: "60 g", beurre: "30 g", huileolive: "1,5 c.à.s" },
-      { nb: 4, rizArborio: "320 g", champignons: "600 g", oignons: "2", ail: "2 gousses", vinBlanc: "120 ml", boullionLeg: "1500 ml", parmesan: "120 g", beurre: "60 g", huileolive: "2 c.à.s" },
-      { nb: 6, rizArborio: "480 g", champignons: "900 g", oignons: "3", ail: "3 gousses", vinBlanc: "180 ml", boullionLeg: "2200 ml", parmesan: "180 g", beurre: "90 g", huileolive: "3 c.à.s" },
-      { nb: 8, rizArborio: "640 g", champignons: "1200 g", oignons: "4", ail: "4 gousses", vinBlanc: "240 ml", boullionLeg: "3000 ml", parmesan: "240 g", beurre: "120 g", huileolive: "4 c.à.s" }
+      { nb: 2, rizArborio: "160 g", champignons: "300 g", oignons: "1", ail: "2 gousses", vinBlanc: "60 ml", boullionLeg: "800 ml", parmesan: "60 g", beurre: "30 g", huileolive: "2 c.à.s" },
+      { nb: 3, rizArborio: "240 g", champignons: "450 g", oignons: "1½", ail: "3 gousses", vinBlanc: "90 ml", boullionLeg: "1200 ml", parmesan: "90 g", beurre: "45 g", huileolive: "3 c.à.s" },
+      { nb: 4, rizArborio: "320 g", champignons: "600 g", oignons: "2", ail: "4 gousses", vinBlanc: "120 ml", boullionLeg: "1600 ml", parmesan: "120 g", beurre: "60 g", huileolive: "4 c.à.s" },
+      { nb: 5, rizArborio: "400 g", champignons: "750 g", oignons: "2½", ail: "5 gousses", vinBlanc: "150 ml", boullionLeg: "2000 ml", parmesan: "150 g", beurre: "75 g", huileolive: "5 c.à.s" },
+      { nb: 6, rizArborio: "480 g", champignons: "900 g", oignons: "3", ail: "6 gousses", vinBlanc: "180 ml", boullionLeg: "2400 ml", parmesan: "180 g", beurre: "90 g", huileolive: "6 c.à.s" },
+      { nb: 7, rizArborio: "560 g", champignons: "1050 g", oignons: "3½", ail: "7 gousses", vinBlanc: "210 ml", boullionLeg: "2800 ml", parmesan: "210 g", beurre: "105 g", huileolive: "7 c.à.s" },
+      { nb: 8, rizArborio: "640 g", champignons: "1200 g", oignons: "4", ail: "8 gousses", vinBlanc: "240 ml", boullionLeg: "3200 ml", parmesan: "240 g", beurre: "120 g", huileolive: "8 c.à.s" },
+      { nb: 9, rizArborio: "720 g", champignons: "1350 g", oignons: "4½", ail: "9 gousses", vinBlanc: "270 ml", boullionLeg: "3600 ml", parmesan: "270 g", beurre: "135 g", huileolive: "9 c.à.s" },
+      { nb: 10, rizArborio: "800 g", champignons: "1500 g", oignons: "5", ail: "10 gousses", vinBlanc: "300 ml", boullionLeg: "4000 ml", parmesan: "300 g", beurre: "150 g", huileolive: "10 c.à.s" },
+      { nb: 11, rizArborio: "880 g", champignons: "1650 g", oignons: "5½", ail: "11 gousses", vinBlanc: "330 ml", boullionLeg: "4400 ml", parmesan: "330 g", beurre: "165 g", huileolive: "11 c.à.s" },
+      { nb: 12, rizArborio: "960 g", champignons: "1800 g", oignons: "6", ail: "12 gousses", vinBlanc: "360 ml", boullionLeg: "4800 ml", parmesan: "360 g", beurre: "180 g", huileolive: "12 c.à.s" },
+      { nb: 13, rizArborio: "1040 g", champignons: "1950 g", oignons: "6½", ail: "13 gousses", vinBlanc: "390 ml", boullionLeg: "5200 ml", parmesan: "390 g", beurre: "195 g", huileolive: "13 c.à.s" },
+      { nb: 14, rizArborio: "1120 g", champignons: "2100 g", oignons: "7", ail: "14 gousses", vinBlanc: "420 ml", boullionLeg: "5600 ml", parmesan: "420 g", beurre: "210 g", huileolive: "14 c.à.s" },
+      { nb: 15, rizArborio: "1200 g", champignons: "2250 g", oignons: "7½", ail: "15 gousses", vinBlanc: "450 ml", boullionLeg: "6000 ml", parmesan: "450 g", beurre: "225 g", huileolive: "15 c.à.s" }
     ],
     ingredients: { "Riz arborio (g)": 320, "Champignons (g)": 600, "Oignons": 2, "Ail": 2, "Vin blanc (ml)": 120, "Bouillon (ml)": 1500, "Parmesan (g)": 120, "Beurre (g)": 60 },
     etapes: [
@@ -12492,15 +12612,25 @@ const recettes = {
     ]
   },
   banoffeepie: {
-    cat: "dessert", pays: "angleterre",
+    cat: "desserts", pays: "angleterre",
     base: 8, temps: "30 min + 3h frigo", niveau: "⭐ Facile", emoji: "🍌",
     description: "Le dessert anglais culte : biscuits sablés, caramel au lait concentré, bananes et chantilly. Pure gourmandise !",
     tableauPersonnes: [
+      { nb: 1, biscuits: "25 g", beurre: "13 g", laitconcentre: "50 g", bananes: "½", cremeChantilly: "38 g", cacao: "1.5 g" },
+      { nb: 2, biscuits: "50 g", beurre: "25 g", laitconcentre: "100 g", bananes: "1", cremeChantilly: "75 g", cacao: "2.5 g" },
+      { nb: 3, biscuits: "75 g", beurre: "38 g", laitconcentre: "150 g", bananes: "1½", cremeChantilly: "113 g", cacao: "4 g" },
       { nb: 4, biscuits: "100 g", beurre: "50 g", laitconcentre: "200 g", bananes: "2", cremeChantilly: "150 g", cacao: "5 g" },
-      { nb: 6, biscuits: "150 g", beurre: "75 g", laitconcentre: "300 g", bananes: "3", cremeChantilly: "225 g", cacao: "8 g" },
+      { nb: 5, biscuits: "125 g", beurre: "63 g", laitconcentre: "250 g", bananes: "2½", cremeChantilly: "188 g", cacao: "6.5 g" },
+      { nb: 6, biscuits: "150 g", beurre: "75 g", laitconcentre: "300 g", bananes: "3", cremeChantilly: "225 g", cacao: "7.5 g" },
+      { nb: 7, biscuits: "175 g", beurre: "88 g", laitconcentre: "350 g", bananes: "3½", cremeChantilly: "263 g", cacao: "9 g" },
       { nb: 8, biscuits: "200 g", beurre: "100 g", laitconcentre: "400 g", bananes: "4", cremeChantilly: "300 g", cacao: "10 g" },
-      { nb: 10, biscuits: "250 g", beurre: "125 g", laitconcentre: "500 g", bananes: "5", cremeChantilly: "375 g", cacao: "12 g" },
-      { nb: 12, biscuits: "300 g", beurre: "150 g", laitconcentre: "600 g", bananes: "6", cremeChantilly: "450 g", cacao: "15 g" }
+      { nb: 9, biscuits: "225 g", beurre: "113 g", laitconcentre: "450 g", bananes: "4½", cremeChantilly: "338 g", cacao: "11 g" },
+      { nb: 10, biscuits: "250 g", beurre: "125 g", laitconcentre: "500 g", bananes: "5", cremeChantilly: "375 g", cacao: "13 g" },
+      { nb: 11, biscuits: "275 g", beurre: "138 g", laitconcentre: "550 g", bananes: "5½", cremeChantilly: "413 g", cacao: "14 g" },
+      { nb: 12, biscuits: "300 g", beurre: "150 g", laitconcentre: "600 g", bananes: "6", cremeChantilly: "450 g", cacao: "15 g" },
+      { nb: 13, biscuits: "325 g", beurre: "163 g", laitconcentre: "650 g", bananes: "6½", cremeChantilly: "488 g", cacao: "16 g" },
+      { nb: 14, biscuits: "350 g", beurre: "175 g", laitconcentre: "700 g", bananes: "7", cremeChantilly: "525 g", cacao: "18 g" },
+      { nb: 15, biscuits: "375 g", beurre: "188 g", laitconcentre: "750 g", bananes: "7½", cremeChantilly: "563 g", cacao: "19 g" }
     ],
     ingredients: { "Biscuits sablés (g)": 200, "Beurre (g)": 100, "Lait concentré (g)": 400, "Bananes": 4, "Chantilly (g)": 300, "Cacao (g)": 10 },
     etapes: [
@@ -12515,15 +12645,25 @@ const recettes = {
     ]
   },
   veloutebutternut: {
-    cat: "soupe", pays: "france",
+    cat: "soupes", pays: "france",
     base: 4, temps: "50 min", niveau: "⭐ Facile", emoji: "🎃",
     description: "Velouté de butternut soyeux et réconfortant, parfumé au gingembre et lait de coco. Le soin d'automne par excellence !",
     tableauPersonnes: [
       { nb: 1, butternut: "300 g", oignons: "½", ail: "1 gousse", laitcoco: "50 ml", boullionLeg: "300 ml", huileolive: "1 c.à.s", gingembre: "5 g" },
-      { nb: 2, butternut: "600 g", oignons: "1", ail: "1 gousse", laitcoco: "100 ml", boullionLeg: "600 ml", huileolive: "1,5 c.à.s", gingembre: "10 g" },
-      { nb: 4, butternut: "1200 g", oignons: "2", ail: "2 gousses", laitcoco: "200 ml", boullionLeg: "1200 ml", huileolive: "2 c.à.s", gingembre: "20 g" },
-      { nb: 6, butternut: "1800 g", oignons: "3", ail: "3 gousses", laitcoco: "300 ml", boullionLeg: "1800 ml", huileolive: "3 c.à.s", gingembre: "30 g" },
-      { nb: 8, butternut: "2400 g", oignons: "4", ail: "4 gousses", laitcoco: "400 ml", boullionLeg: "2400 ml", huileolive: "4 c.à.s", gingembre: "40 g" }
+      { nb: 2, butternut: "600 g", oignons: "1", ail: "2 gousses", laitcoco: "100 ml", boullionLeg: "600 ml", huileolive: "2 c.à.s", gingembre: "10 g" },
+      { nb: 3, butternut: "900 g", oignons: "1½", ail: "3 gousses", laitcoco: "150 ml", boullionLeg: "900 ml", huileolive: "3 c.à.s", gingembre: "15 g" },
+      { nb: 4, butternut: "1200 g", oignons: "2", ail: "4 gousses", laitcoco: "200 ml", boullionLeg: "1200 ml", huileolive: "4 c.à.s", gingembre: "20 g" },
+      { nb: 5, butternut: "1500 g", oignons: "2½", ail: "5 gousses", laitcoco: "250 ml", boullionLeg: "1500 ml", huileolive: "5 c.à.s", gingembre: "25 g" },
+      { nb: 6, butternut: "1800 g", oignons: "3", ail: "6 gousses", laitcoco: "300 ml", boullionLeg: "1800 ml", huileolive: "6 c.à.s", gingembre: "30 g" },
+      { nb: 7, butternut: "2100 g", oignons: "3½", ail: "7 gousses", laitcoco: "350 ml", boullionLeg: "2100 ml", huileolive: "7 c.à.s", gingembre: "35 g" },
+      { nb: 8, butternut: "2400 g", oignons: "4", ail: "8 gousses", laitcoco: "400 ml", boullionLeg: "2400 ml", huileolive: "8 c.à.s", gingembre: "40 g" },
+      { nb: 9, butternut: "2700 g", oignons: "4½", ail: "9 gousses", laitcoco: "450 ml", boullionLeg: "2700 ml", huileolive: "9 c.à.s", gingembre: "45 g" },
+      { nb: 10, butternut: "3000 g", oignons: "5", ail: "10 gousses", laitcoco: "500 ml", boullionLeg: "3000 ml", huileolive: "10 c.à.s", gingembre: "50 g" },
+      { nb: 11, butternut: "3300 g", oignons: "5½", ail: "11 gousses", laitcoco: "550 ml", boullionLeg: "3300 ml", huileolive: "11 c.à.s", gingembre: "55 g" },
+      { nb: 12, butternut: "3600 g", oignons: "6", ail: "12 gousses", laitcoco: "600 ml", boullionLeg: "3600 ml", huileolive: "12 c.à.s", gingembre: "60 g" },
+      { nb: 13, butternut: "3900 g", oignons: "6½", ail: "13 gousses", laitcoco: "650 ml", boullionLeg: "3900 ml", huileolive: "13 c.à.s", gingembre: "65 g" },
+      { nb: 14, butternut: "4200 g", oignons: "7", ail: "14 gousses", laitcoco: "700 ml", boullionLeg: "4200 ml", huileolive: "14 c.à.s", gingembre: "70 g" },
+      { nb: 15, butternut: "4500 g", oignons: "7½", ail: "15 gousses", laitcoco: "750 ml", boullionLeg: "4500 ml", huileolive: "15 c.à.s", gingembre: "75 g" }
     ],
     ingredients: { "Butternut (g)": 1200, "Oignons": 2, "Ail": 2, "Lait coco (ml)": 200, "Bouillon (ml)": 1200, "Gingembre (g)": 20 },
     etapes: [
@@ -12536,14 +12676,25 @@ const recettes = {
     ]
   },
   muffinkinder: {
-    cat: "viennoiserie", pays: "etatsunis",
+    cat: "brunch", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins moelleux fourrés et garnis de Kinder Bueno fondu — chocolat au lait, noisette croustillante.",
     tableauMuffins: [
+      { nb: 1, farine: "23 g", sucre: "15 g", beurre: "8.5 g", oeufs: "¼", lait: "17 ml", levurechimique: "0.8 g", vanilleExtrait: "0.3 g", kinderBueno: "½ barre", pepitesChoco: "5 g" },
+      { nb: 2, farine: "47 g", sucre: "30 g", beurre: "17 g", oeufs: "⅓", lait: "33 ml", levurechimique: "1.5 g", vanilleExtrait: "0.7 g", kinderBueno: "1 barre", pepitesChoco: "10 g" },
+      { nb: 3, farine: "70 g", sucre: "45 g", beurre: "25 g", oeufs: "½", lait: "50 ml", levurechimique: "2.5 g", vanilleExtrait: "1 g", kinderBueno: "1½ barre", pepitesChoco: "15 g" },
+      { nb: 4, farine: "93 g", sucre: "60 g", beurre: "33 g", oeufs: "⅔", lait: "67 ml", levurechimique: "3.5 g", vanilleExtrait: "1.5 g", kinderBueno: "2 barres", pepitesChoco: "20 g" },
+      { nb: 5, farine: "117 g", sucre: "75 g", beurre: "42 g", oeufs: "¾", lait: "83 ml", levurechimique: "4 g", vanilleExtrait: "1.5 g", kinderBueno: "2½ barres", pepitesChoco: "25 g" },
       { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", vanilleExtrait: "2 g", kinderBueno: "3 barres", pepitesChoco: "30 g" },
-      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", vanilleExtrait: "5 g", kinderBueno: "6 barres", pepitesChoco: "60 g" },
-      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", vanilleExtrait: "7 g", kinderBueno: "9 barres", pepitesChoco: "90 g" },
-      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", vanilleExtrait: "10 g", kinderBueno: "12 barres", pepitesChoco: "120 g" }
+      { nb: 7, farine: "163 g", sucre: "105 g", beurre: "58 g", oeufs: "1¼", lait: "117 ml", levurechimique: "6 g", vanilleExtrait: "2.5 g", kinderBueno: "3½ barres", pepitesChoco: "35 g" },
+      { nb: 8, farine: "187 g", sucre: "120 g", beurre: "67 g", oeufs: "1⅓", lait: "133 ml", levurechimique: "6.5 g", vanilleExtrait: "2.5 g", kinderBueno: "4 barres", pepitesChoco: "40 g" },
+      { nb: 9, farine: "210 g", sucre: "135 g", beurre: "75 g", oeufs: "1½", lait: "150 ml", levurechimique: "7.5 g", vanilleExtrait: "3 g", kinderBueno: "4½ barres", pepitesChoco: "45 g" },
+      { nb: 10, farine: "233 g", sucre: "150 g", beurre: "83 g", oeufs: "1⅔", lait: "167 ml", levurechimique: "8.5 g", vanilleExtrait: "3.5 g", kinderBueno: "5 barres", pepitesChoco: "50 g" },
+      { nb: 11, farine: "257 g", sucre: "165 g", beurre: "92 g", oeufs: "1¾", lait: "183 ml", levurechimique: "9 g", vanilleExtrait: "3.5 g", kinderBueno: "5½ barres", pepitesChoco: "55 g" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", vanilleExtrait: "4 g", kinderBueno: "6 barres", pepitesChoco: "60 g" },
+      { nb: 13, farine: "303 g", sucre: "195 g", beurre: "108 g", oeufs: "2¼", lait: "217 ml", levurechimique: "11 g", vanilleExtrait: "4.5 g", kinderBueno: "6½ barres", pepitesChoco: "65 g" },
+      { nb: 14, farine: "327 g", sucre: "210 g", beurre: "117 g", oeufs: "2⅓", lait: "233 ml", levurechimique: "12 g", vanilleExtrait: "4.5 g", kinderBueno: "7 barres", pepitesChoco: "70 g" },
+      { nb: 15, farine: "350 g", sucre: "225 g", beurre: "125 g", oeufs: "2½", lait: "250 ml", levurechimique: "13 g", vanilleExtrait: "5 g", kinderBueno: "7½ barres", pepitesChoco: "75 g" }
     ],
     ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Kinder Bueno": 6, "Pépites choco (g)": 60 },
     etapes: [
@@ -12558,14 +12709,25 @@ const recettes = {
     ]
   },
   muffinmars: {
-    cat: "viennoiserie", pays: "etatsunis",
+    cat: "brunch", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins gourmands au cœur de Mars fondu : chocolat, caramel coulant et nougat fondant.",
     tableauMuffins: [
+      { nb: 1, farine: "23 g", sucre: "15 g", beurre: "8.5 g", oeufs: "¼", lait: "17 ml", levurechimique: "0.8 g", cacao: "1.5 g", vanilleExtrait: "0.3 g", mars: "½ barre", caramelSale: "5 g" },
+      { nb: 2, farine: "47 g", sucre: "30 g", beurre: "17 g", oeufs: "⅓", lait: "33 ml", levurechimique: "1.5 g", cacao: "3.5 g", vanilleExtrait: "0.7 g", mars: "1 barre", caramelSale: "10 g" },
+      { nb: 3, farine: "70 g", sucre: "45 g", beurre: "25 g", oeufs: "½", lait: "50 ml", levurechimique: "2.5 g", cacao: "5 g", vanilleExtrait: "1 g", mars: "1½ barre", caramelSale: "15 g" },
+      { nb: 4, farine: "93 g", sucre: "60 g", beurre: "33 g", oeufs: "⅔", lait: "67 ml", levurechimique: "3.5 g", cacao: "6.5 g", vanilleExtrait: "1.5 g", mars: "2 barres", caramelSale: "20 g" },
+      { nb: 5, farine: "117 g", sucre: "75 g", beurre: "42 g", oeufs: "¾", lait: "83 ml", levurechimique: "4 g", cacao: "8.5 g", vanilleExtrait: "1.5 g", mars: "2½ barres", caramelSale: "25 g" },
       { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", cacao: "10 g", vanilleExtrait: "2 g", mars: "3 barres", caramelSale: "30 g" },
-      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", cacao: "20 g", vanilleExtrait: "5 g", mars: "6 barres", caramelSale: "60 g" },
-      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", cacao: "30 g", vanilleExtrait: "7 g", mars: "9 barres", caramelSale: "90 g" },
-      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", cacao: "40 g", vanilleExtrait: "10 g", mars: "12 barres", caramelSale: "120 g" }
+      { nb: 7, farine: "163 g", sucre: "105 g", beurre: "58 g", oeufs: "1¼", lait: "117 ml", levurechimique: "6 g", cacao: "12 g", vanilleExtrait: "2.5 g", mars: "3½ barres", caramelSale: "35 g" },
+      { nb: 8, farine: "187 g", sucre: "120 g", beurre: "67 g", oeufs: "1⅓", lait: "133 ml", levurechimique: "6.5 g", cacao: "13 g", vanilleExtrait: "2.5 g", mars: "4 barres", caramelSale: "40 g" },
+      { nb: 9, farine: "210 g", sucre: "135 g", beurre: "75 g", oeufs: "1½", lait: "150 ml", levurechimique: "7.5 g", cacao: "15 g", vanilleExtrait: "3 g", mars: "4½ barres", caramelSale: "45 g" },
+      { nb: 10, farine: "233 g", sucre: "150 g", beurre: "83 g", oeufs: "1⅔", lait: "167 ml", levurechimique: "8.5 g", cacao: "17 g", vanilleExtrait: "3.5 g", mars: "5 barres", caramelSale: "50 g" },
+      { nb: 11, farine: "257 g", sucre: "165 g", beurre: "92 g", oeufs: "1¾", lait: "183 ml", levurechimique: "9 g", cacao: "18 g", vanilleExtrait: "3.5 g", mars: "5½ barres", caramelSale: "55 g" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", cacao: "20 g", vanilleExtrait: "4 g", mars: "6 barres", caramelSale: "60 g" },
+      { nb: 13, farine: "303 g", sucre: "195 g", beurre: "108 g", oeufs: "2¼", lait: "217 ml", levurechimique: "11 g", cacao: "22 g", vanilleExtrait: "4.5 g", mars: "6½ barres", caramelSale: "65 g" },
+      { nb: 14, farine: "327 g", sucre: "210 g", beurre: "117 g", oeufs: "2⅓", lait: "233 ml", levurechimique: "12 g", cacao: "23 g", vanilleExtrait: "4.5 g", mars: "7 barres", caramelSale: "70 g" },
+      { nb: 15, farine: "350 g", sucre: "225 g", beurre: "125 g", oeufs: "2½", lait: "250 ml", levurechimique: "13 g", cacao: "25 g", vanilleExtrait: "5 g", mars: "7½ barres", caramelSale: "75 g" }
     ],
     ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Cacao (g)": 20, "Mars": 6, "Caramel salé (g)": 60 },
     etapes: [
@@ -12580,14 +12742,25 @@ const recettes = {
     ]
   },
   muffinkitkat: {
-    cat: "viennoiserie", pays: "etatsunis",
+    cat: "brunch", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins au chocolat avec morceaux croquants de Kit Kat dedans et entiers en topping.",
     tableauMuffins: [
+      { nb: 1, farine: "23 g", sucre: "15 g", beurre: "8.5 g", oeufs: "¼", lait: "17 ml", levurechimique: "0.8 g", cacao: "2.5 g", vanilleExtrait: "0.3 g", kitkat: "⅔ barre", chocolat: "5 g" },
+      { nb: 2, farine: "47 g", sucre: "30 g", beurre: "17 g", oeufs: "⅓", lait: "33 ml", levurechimique: "1.5 g", cacao: "5 g", vanilleExtrait: "0.7 g", kitkat: "1⅓ barre", chocolat: "10 g" },
+      { nb: 3, farine: "70 g", sucre: "45 g", beurre: "25 g", oeufs: "½", lait: "50 ml", levurechimique: "2.5 g", cacao: "7.5 g", vanilleExtrait: "1 g", kitkat: "2 barres", chocolat: "15 g" },
+      { nb: 4, farine: "93 g", sucre: "60 g", beurre: "33 g", oeufs: "⅔", lait: "67 ml", levurechimique: "3.5 g", cacao: "10 g", vanilleExtrait: "1.5 g", kitkat: "2⅔ barres", chocolat: "20 g" },
+      { nb: 5, farine: "117 g", sucre: "75 g", beurre: "42 g", oeufs: "¾", lait: "83 ml", levurechimique: "4 g", cacao: "13 g", vanilleExtrait: "1.5 g", kitkat: "3⅓ barres", chocolat: "25 g" },
       { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", cacao: "15 g", vanilleExtrait: "2 g", kitkat: "4 barres", chocolat: "30 g" },
-      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", cacao: "30 g", vanilleExtrait: "5 g", kitkat: "8 barres", chocolat: "60 g" },
-      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", cacao: "45 g", vanilleExtrait: "7 g", kitkat: "12 barres", chocolat: "90 g" },
-      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", cacao: "60 g", vanilleExtrait: "10 g", kitkat: "16 barres", chocolat: "120 g" }
+      { nb: 7, farine: "163 g", sucre: "105 g", beurre: "58 g", oeufs: "1¼", lait: "117 ml", levurechimique: "6 g", cacao: "18 g", vanilleExtrait: "2.5 g", kitkat: "4⅔ barres", chocolat: "35 g" },
+      { nb: 8, farine: "187 g", sucre: "120 g", beurre: "67 g", oeufs: "1⅓", lait: "133 ml", levurechimique: "6.5 g", cacao: "20 g", vanilleExtrait: "2.5 g", kitkat: "5⅓ barres", chocolat: "40 g" },
+      { nb: 9, farine: "210 g", sucre: "135 g", beurre: "75 g", oeufs: "1½", lait: "150 ml", levurechimique: "7.5 g", cacao: "23 g", vanilleExtrait: "3 g", kitkat: "6 barres", chocolat: "45 g" },
+      { nb: 10, farine: "233 g", sucre: "150 g", beurre: "83 g", oeufs: "1⅔", lait: "167 ml", levurechimique: "8.5 g", cacao: "25 g", vanilleExtrait: "3.5 g", kitkat: "6⅔ barres", chocolat: "50 g" },
+      { nb: 11, farine: "257 g", sucre: "165 g", beurre: "92 g", oeufs: "1¾", lait: "183 ml", levurechimique: "9 g", cacao: "28 g", vanilleExtrait: "3.5 g", kitkat: "7⅓ barres", chocolat: "55 g" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", cacao: "30 g", vanilleExtrait: "4 g", kitkat: "8 barres", chocolat: "60 g" },
+      { nb: 13, farine: "303 g", sucre: "195 g", beurre: "108 g", oeufs: "2¼", lait: "217 ml", levurechimique: "11 g", cacao: "33 g", vanilleExtrait: "4.5 g", kitkat: "8⅔ barres", chocolat: "65 g" },
+      { nb: 14, farine: "327 g", sucre: "210 g", beurre: "117 g", oeufs: "2⅓", lait: "233 ml", levurechimique: "12 g", cacao: "35 g", vanilleExtrait: "4.5 g", kitkat: "9⅓ barres", chocolat: "70 g" },
+      { nb: 15, farine: "350 g", sucre: "225 g", beurre: "125 g", oeufs: "2½", lait: "250 ml", levurechimique: "13 g", cacao: "38 g", vanilleExtrait: "5 g", kitkat: "10 barres", chocolat: "75 g" }
     ],
     ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Cacao (g)": 30, "Kit Kat": 8, "Chocolat (g)": 60 },
     etapes: [
@@ -12602,14 +12775,25 @@ const recettes = {
     ]
   },
   muffinraffaello: {
-    cat: "viennoiserie", pays: "etatsunis",
+    cat: "brunch", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins blanc-coco délicats avec Raffaello fondants au cœur. Noix de coco, amande et chocolat blanc !",
     tableauMuffins: [
+      { nb: 1, farine: "23 g", sucre: "15 g", beurre: "8.5 g", oeufs: "¼", lait: "17 ml", levurechimique: "0.8 g", vanilleExtrait: "0.3 g", coco: "5 g", amandes: "3.5 g", chocolatBlanc: "6.5 g", raffaello: "1" },
+      { nb: 2, farine: "47 g", sucre: "30 g", beurre: "17 g", oeufs: "⅓", lait: "33 ml", levurechimique: "1.5 g", vanilleExtrait: "0.7 g", coco: "10 g", amandes: "6.5 g", chocolatBlanc: "13 g", raffaello: "2" },
+      { nb: 3, farine: "70 g", sucre: "45 g", beurre: "25 g", oeufs: "½", lait: "50 ml", levurechimique: "2.5 g", vanilleExtrait: "1 g", coco: "15 g", amandes: "10 g", chocolatBlanc: "20 g", raffaello: "3" },
+      { nb: 4, farine: "93 g", sucre: "60 g", beurre: "33 g", oeufs: "⅔", lait: "67 ml", levurechimique: "3.5 g", vanilleExtrait: "1.5 g", coco: "20 g", amandes: "13 g", chocolatBlanc: "27 g", raffaello: "4" },
+      { nb: 5, farine: "117 g", sucre: "75 g", beurre: "42 g", oeufs: "¾", lait: "83 ml", levurechimique: "4 g", vanilleExtrait: "1.5 g", coco: "25 g", amandes: "17 g", chocolatBlanc: "33 g", raffaello: "5" },
       { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", vanilleExtrait: "2 g", coco: "30 g", amandes: "20 g", chocolatBlanc: "40 g", raffaello: "6" },
-      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", vanilleExtrait: "5 g", coco: "60 g", amandes: "40 g", chocolatBlanc: "80 g", raffaello: "12" },
-      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", vanilleExtrait: "7 g", coco: "90 g", amandes: "60 g", chocolatBlanc: "120 g", raffaello: "18" },
-      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", vanilleExtrait: "10 g", coco: "120 g", amandes: "80 g", chocolatBlanc: "160 g", raffaello: "24" }
+      { nb: 7, farine: "163 g", sucre: "105 g", beurre: "58 g", oeufs: "1¼", lait: "117 ml", levurechimique: "6 g", vanilleExtrait: "2.5 g", coco: "35 g", amandes: "23 g", chocolatBlanc: "47 g", raffaello: "7" },
+      { nb: 8, farine: "187 g", sucre: "120 g", beurre: "67 g", oeufs: "1⅓", lait: "133 ml", levurechimique: "6.5 g", vanilleExtrait: "2.5 g", coco: "40 g", amandes: "27 g", chocolatBlanc: "53 g", raffaello: "8" },
+      { nb: 9, farine: "210 g", sucre: "135 g", beurre: "75 g", oeufs: "1½", lait: "150 ml", levurechimique: "7.5 g", vanilleExtrait: "3 g", coco: "45 g", amandes: "30 g", chocolatBlanc: "60 g", raffaello: "9" },
+      { nb: 10, farine: "233 g", sucre: "150 g", beurre: "83 g", oeufs: "1⅔", lait: "167 ml", levurechimique: "8.5 g", vanilleExtrait: "3.5 g", coco: "50 g", amandes: "33 g", chocolatBlanc: "67 g", raffaello: "10" },
+      { nb: 11, farine: "257 g", sucre: "165 g", beurre: "92 g", oeufs: "1¾", lait: "183 ml", levurechimique: "9 g", vanilleExtrait: "3.5 g", coco: "55 g", amandes: "37 g", chocolatBlanc: "73 g", raffaello: "11" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", vanilleExtrait: "4 g", coco: "60 g", amandes: "40 g", chocolatBlanc: "80 g", raffaello: "12" },
+      { nb: 13, farine: "303 g", sucre: "195 g", beurre: "108 g", oeufs: "2¼", lait: "217 ml", levurechimique: "11 g", vanilleExtrait: "4.5 g", coco: "65 g", amandes: "43 g", chocolatBlanc: "87 g", raffaello: "13" },
+      { nb: 14, farine: "327 g", sucre: "210 g", beurre: "117 g", oeufs: "2⅓", lait: "233 ml", levurechimique: "12 g", vanilleExtrait: "4.5 g", coco: "70 g", amandes: "47 g", chocolatBlanc: "93 g", raffaello: "14" },
+      { nb: 15, farine: "350 g", sucre: "225 g", beurre: "125 g", oeufs: "2½", lait: "250 ml", levurechimique: "13 g", vanilleExtrait: "5 g", coco: "75 g", amandes: "50 g", chocolatBlanc: "100 g", raffaello: "15" }
     ],
     ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Coco râpée (g)": 60, "Amandes (g)": 40, "Chocolat blanc (g)": 80, "Raffaello": 12 },
     etapes: [
@@ -12623,14 +12807,25 @@ const recettes = {
     ]
   },
   muffinsnickers: {
-    cat: "viennoiserie", pays: "etatsunis",
+    cat: "brunch", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins ultra gourmands au Snickers : chocolat, caramel, cacahuète et nougat. Combo sucré-salé !",
     tableauMuffins: [
+      { nb: 1, farine: "23 g", sucre: "15 g", beurre: "8.5 g", oeufs: "¼", lait: "17 ml", levurechimique: "0.8 g", cacao: "1.5 g", vanilleExtrait: "0.3 g", snickers: "½", cacahuetes: "4 g", caramelSale: "5 g" },
+      { nb: 2, farine: "47 g", sucre: "30 g", beurre: "17 g", oeufs: "⅓", lait: "33 ml", levurechimique: "1.5 g", cacao: "3.5 g", vanilleExtrait: "0.7 g", snickers: "1", cacahuetes: "8.5 g", caramelSale: "10 g" },
+      { nb: 3, farine: "70 g", sucre: "45 g", beurre: "25 g", oeufs: "½", lait: "50 ml", levurechimique: "2.5 g", cacao: "5 g", vanilleExtrait: "1 g", snickers: "1½", cacahuetes: "13 g", caramelSale: "15 g" },
+      { nb: 4, farine: "93 g", sucre: "60 g", beurre: "33 g", oeufs: "⅔", lait: "67 ml", levurechimique: "3.5 g", cacao: "6.5 g", vanilleExtrait: "1.5 g", snickers: "2", cacahuetes: "17 g", caramelSale: "20 g" },
+      { nb: 5, farine: "117 g", sucre: "75 g", beurre: "42 g", oeufs: "¾", lait: "83 ml", levurechimique: "4 g", cacao: "8.5 g", vanilleExtrait: "1.5 g", snickers: "2½", cacahuetes: "21 g", caramelSale: "25 g" },
       { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", cacao: "10 g", vanilleExtrait: "2 g", snickers: "3", cacahuetes: "25 g", caramelSale: "30 g" },
-      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", cacao: "20 g", vanilleExtrait: "5 g", snickers: "6", cacahuetes: "50 g", caramelSale: "60 g" },
-      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", cacao: "30 g", vanilleExtrait: "7 g", snickers: "9", cacahuetes: "75 g", caramelSale: "90 g" },
-      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", cacao: "40 g", vanilleExtrait: "10 g", snickers: "12", cacahuetes: "100 g", caramelSale: "120 g" }
+      { nb: 7, farine: "163 g", sucre: "105 g", beurre: "58 g", oeufs: "1¼", lait: "117 ml", levurechimique: "6 g", cacao: "12 g", vanilleExtrait: "2.5 g", snickers: "3½", cacahuetes: "29 g", caramelSale: "35 g" },
+      { nb: 8, farine: "187 g", sucre: "120 g", beurre: "67 g", oeufs: "1⅓", lait: "133 ml", levurechimique: "6.5 g", cacao: "13 g", vanilleExtrait: "2.5 g", snickers: "4", cacahuetes: "33 g", caramelSale: "40 g" },
+      { nb: 9, farine: "210 g", sucre: "135 g", beurre: "75 g", oeufs: "1½", lait: "150 ml", levurechimique: "7.5 g", cacao: "15 g", vanilleExtrait: "3 g", snickers: "4½", cacahuetes: "38 g", caramelSale: "45 g" },
+      { nb: 10, farine: "233 g", sucre: "150 g", beurre: "83 g", oeufs: "1⅔", lait: "167 ml", levurechimique: "8.5 g", cacao: "17 g", vanilleExtrait: "3.5 g", snickers: "5", cacahuetes: "42 g", caramelSale: "50 g" },
+      { nb: 11, farine: "257 g", sucre: "165 g", beurre: "92 g", oeufs: "1¾", lait: "183 ml", levurechimique: "9 g", cacao: "18 g", vanilleExtrait: "3.5 g", snickers: "5½", cacahuetes: "46 g", caramelSale: "55 g" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", cacao: "20 g", vanilleExtrait: "4 g", snickers: "6", cacahuetes: "50 g", caramelSale: "60 g" },
+      { nb: 13, farine: "303 g", sucre: "195 g", beurre: "108 g", oeufs: "2¼", lait: "217 ml", levurechimique: "11 g", cacao: "22 g", vanilleExtrait: "4.5 g", snickers: "6½", cacahuetes: "54 g", caramelSale: "65 g" },
+      { nb: 14, farine: "327 g", sucre: "210 g", beurre: "117 g", oeufs: "2⅓", lait: "233 ml", levurechimique: "12 g", cacao: "23 g", vanilleExtrait: "4.5 g", snickers: "7", cacahuetes: "58 g", caramelSale: "70 g" },
+      { nb: 15, farine: "350 g", sucre: "225 g", beurre: "125 g", oeufs: "2½", lait: "250 ml", levurechimique: "13 g", cacao: "25 g", vanilleExtrait: "5 g", snickers: "7½", cacahuetes: "63 g", caramelSale: "75 g" }
     ],
     ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Cacao (g)": 20, "Snickers": 6, "Cacahuètes (g)": 50, "Caramel salé (g)": 60 },
     etapes: [
@@ -12646,14 +12841,25 @@ const recettes = {
     ]
   },
   muffinoreo: {
-    cat: "viennoiserie", pays: "etatsunis",
+    cat: "brunch", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins vanille avec Oreo concassés dans la pâte et chocolat blanc fondant. Le contraste noir-blanc !",
     tableauMuffins: [
+      { nb: 1, farine: "23 g", sucre: "15 g", beurre: "8.5 g", oeufs: "¼", lait: "17 ml", levurechimique: "0.8 g", vanilleExtrait: "0.5 g", oreo: "1", chocolatBlanc: "6.5 g" },
+      { nb: 2, farine: "47 g", sucre: "30 g", beurre: "17 g", oeufs: "⅓", lait: "33 ml", levurechimique: "1.5 g", vanilleExtrait: "1 g", oreo: "2", chocolatBlanc: "13 g" },
+      { nb: 3, farine: "70 g", sucre: "45 g", beurre: "25 g", oeufs: "½", lait: "50 ml", levurechimique: "2.5 g", vanilleExtrait: "1.5 g", oreo: "3", chocolatBlanc: "20 g" },
+      { nb: 4, farine: "93 g", sucre: "60 g", beurre: "33 g", oeufs: "⅔", lait: "67 ml", levurechimique: "3.5 g", vanilleExtrait: "2 g", oreo: "4", chocolatBlanc: "27 g" },
+      { nb: 5, farine: "117 g", sucre: "75 g", beurre: "42 g", oeufs: "¾", lait: "83 ml", levurechimique: "4 g", vanilleExtrait: "2.5 g", oreo: "5", chocolatBlanc: "33 g" },
       { nb: 6, farine: "140 g", sucre: "90 g", beurre: "50 g", oeufs: "1", lait: "100 ml", levurechimique: "5 g", vanilleExtrait: "3 g", oreo: "6", chocolatBlanc: "40 g" },
-      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", vanilleExtrait: "5 g", oreo: "12", chocolatBlanc: "80 g" },
-      { nb: 18, farine: "420 g", sucre: "270 g", beurre: "150 g", oeufs: "3", lait: "300 ml", levurechimique: "15 g", vanilleExtrait: "7 g", oreo: "18", chocolatBlanc: "120 g" },
-      { nb: 24, farine: "560 g", sucre: "360 g", beurre: "200 g", oeufs: "4", lait: "400 ml", levurechimique: "20 g", vanilleExtrait: "10 g", oreo: "24", chocolatBlanc: "160 g" }
+      { nb: 7, farine: "163 g", sucre: "105 g", beurre: "58 g", oeufs: "1¼", lait: "117 ml", levurechimique: "6 g", vanilleExtrait: "3.5 g", oreo: "7", chocolatBlanc: "47 g" },
+      { nb: 8, farine: "187 g", sucre: "120 g", beurre: "67 g", oeufs: "1⅓", lait: "133 ml", levurechimique: "6.5 g", vanilleExtrait: "4 g", oreo: "8", chocolatBlanc: "53 g" },
+      { nb: 9, farine: "210 g", sucre: "135 g", beurre: "75 g", oeufs: "1½", lait: "150 ml", levurechimique: "7.5 g", vanilleExtrait: "4.5 g", oreo: "9", chocolatBlanc: "60 g" },
+      { nb: 10, farine: "233 g", sucre: "150 g", beurre: "83 g", oeufs: "1⅔", lait: "167 ml", levurechimique: "8.5 g", vanilleExtrait: "5 g", oreo: "10", chocolatBlanc: "67 g" },
+      { nb: 11, farine: "257 g", sucre: "165 g", beurre: "92 g", oeufs: "1¾", lait: "183 ml", levurechimique: "9 g", vanilleExtrait: "5.5 g", oreo: "11", chocolatBlanc: "73 g" },
+      { nb: 12, farine: "280 g", sucre: "180 g", beurre: "100 g", oeufs: "2", lait: "200 ml", levurechimique: "10 g", vanilleExtrait: "6 g", oreo: "12", chocolatBlanc: "80 g" },
+      { nb: 13, farine: "303 g", sucre: "195 g", beurre: "108 g", oeufs: "2¼", lait: "217 ml", levurechimique: "11 g", vanilleExtrait: "6.5 g", oreo: "13", chocolatBlanc: "87 g" },
+      { nb: 14, farine: "327 g", sucre: "210 g", beurre: "117 g", oeufs: "2⅓", lait: "233 ml", levurechimique: "12 g", vanilleExtrait: "7 g", oreo: "14", chocolatBlanc: "93 g" },
+      { nb: 15, farine: "350 g", sucre: "225 g", beurre: "125 g", oeufs: "2½", lait: "250 ml", levurechimique: "13 g", vanilleExtrait: "7.5 g", oreo: "15", chocolatBlanc: "100 g" }
     ],
     ingredients: { "Farine (g)": 280, "Sucre (g)": 180, "Beurre (g)": 100, "Œufs": 2, "Lait (ml)": 200, "Oreo": 12, "Chocolat blanc (g)": 80 },
     etapes: [

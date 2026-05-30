@@ -655,9 +655,15 @@ function htmlPrixCalories(nom, quantite) {
           const calParUnite = Math.round(res.cal / quantite);
           
           // === NUTRI-SCORE (calcul auto) ===
+          // v258.5 : on calcule TOUJOURS sur la ligne de référence (base), jamais sur la
+          // ligne du nombre courant. Le Nutri-Score est une propriété de la recette (pour
+          // 100 g) → lettre stable quel que soit le nombre de portions, et identique au
+          // badge des cartes (qui utilise déjà la ligne base).
           let nutriHtml = "";
           if (typeof calculerNutriScoreRecette === "function") {
-            const ns = calculerNutriScoreRecette(ligne);
+            const baseNutri = data.base || 4;
+            const ligneNutri = lignes.find(l => l.nb === baseNutri || l.patons === baseNutri) || lignes[0];
+            const ns = calculerNutriScoreRecette(ligneNutri);
             if (ns) {
               nutriHtml = `
                 <div class="prix-cal-item nutri-score-bloc nutri-${ns.lettre}" title="Nutri-Score ${ns.lettre} — Indicateur officiel de qualité nutritionnelle">
@@ -1030,6 +1036,23 @@ function choisirRecette(nom, personnesOverride) {
 
   // Afficher dans la modal
   const nomsAffichage = {
+    // v258.4 : noms des recettes récentes, alignés EXACTEMENT sur le titre des cartes
+    "fishandchips":        "Fish and Chips",
+    "shepherdspie":        "Shepherd's Pie",
+    "croquemadame":        "Croque-Madame",
+    "tomkhagai":           "Tom Kha Gai",
+    "macandcheese":        "Mac & Cheese",
+    "yakitori":            "Yakitori",
+    "magretcanard":        "Magret de canard",
+    "risottochampignons":  "Risotto champignons",
+    "banoffeepie":         "Banoffee Pie",
+    "veloutebutternut":    "Velouté butternut",
+    "muffinkinder":        "Muffin Kinder Bueno",
+    "muffinmars":          "Muffin Mars caramel",
+    "muffinkitkat":        "Muffin Kit Kat",
+    "muffinraffaello":     "Muffin Raffaello coco",
+    "muffinsnickers":      "Muffin Snickers",
+    "muffinoreo":          "Muffin Oreo",
     // Recettes sans nom explicite
     "pizza":             "Pâte à Pizza",
     "crepes":            "Crêpes",

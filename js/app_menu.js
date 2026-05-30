@@ -46,40 +46,28 @@ function selectTheme(btn) {
 
 // Menus thématiques prédéfinis
 // Tous les plats disponibles par catégorie
-const TOUS_LES_PLATS = ["boeufbourguignon","gratindauphinois","quichelorraine","soupeaoignon","potaufeu","pouletcitronthym","risotto","risottoprimavera","couscous","moussaka","paella","butterchicken","souvlakiagneau","dahllentillescorail","rizcantonnais","soupeharira","shakshuka","padthai","currypouletcoco","tacosmaison","bolognaisemaison","burgermaison","salmonteriyaki","curryledumes","wrappoulet","soupemiso","veloutelegumes","saumongravlax","croquemonsieur","naan","tom_yam","dorade_chermoula","pierogi","shakshukaverte","porc_pulled","braiseboeuf_asiatique","paprikashpoulet","ossobuco","tajinemouton","tikamasala","phovietnambien","carbonara","gnocchismaison","poulettandoori","pekinduckeasy","ceebujen","mafewestafricain","dosakerdosai","tteokbokki"];
-const TOUTES_LES_PIZZAS = [
-  "pizzamargherita","pizzareine","pizza4fromages","pizzadiavola",
-  "pizzasaumonepinards","pizzavegetarienne"
-];
-const TOUTES_LES_ENTREES = [
-  "saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison",
-  "saladequinoa","saladeavocatcrevettes","saladelentilles","saladepoischiches",
-  "saladerizmediterranee","gaspacho","houmous","soupemiso","veloutelegumes",
-  "buddhaBowl","saumongravlax"
-];
-const TOUS_LES_DESSERTS = [
-  "tiramisu","cremebrulee","mousseauchocolat","fondantchocolat","tartecitron",
-  "tarteaupommes","clafoutis","flan","madeleine","verrinetiramisu","goumeau",
-  "ileflottante","bananabread","churros","parisbrestreinterpretation","muffins",
-  "cookies","cheesecake","baklava","tartetatinpommes","crumblefruits","tartepistache"
-];
-const TOUS_LES_APEROS_ALCOOL = [
-  "mojito","margarita","cosmopolitan","spritz","sangria","pinacolada","daiquiri","whiskysour",
-  "mojitorose","negroni","moscowmule","pornstarmartini","hugospritz","oldFashioned","gintoniqmaison"
-];
-const TOUS_LES_APEROS_SANS = [
-  "virginmojito","limonademaison","smoothiemangopassion","citronadementhe",
-  "jusPastequeMenuthe","virginpinacolada","cherryblossommocktail","shrubframboisebasilic","mocktailcoconananas"
-];
+// v258.7 : listes générées dynamiquement depuis `recettes` (par catégorie) pour que
+// le menu thématique pioche dans TOUTES les recettes concernées et inclue
+// automatiquement les futures. recettes + cocktails + mocktails sont déjà
+// fusionnés (Object.assign) AVANT ce fichier dans index.html.
+const _clesParCat = (...cats) => Object.keys(recettes).filter(k => cats.includes((recettes[k] || {}).cat));
+const TOUS_LES_PLATS         = _clesParCat("plats", "pizzas");
+const TOUTES_LES_PIZZAS      = _clesParCat("pizzas");
+const TOUTES_LES_ENTREES     = _clesParCat("entrees", "salades", "soupes");
+const TOUS_LES_DESSERTS      = _clesParCat("desserts");
+const TOUS_LES_APERITIFS     = _clesParCat("aperitifs"); // 🥨 gâteaux apéritif, feuilletés, cakes salés…
+const TOUS_LES_APEROS_ALCOOL = _clesParCat("cocktails");
+const TOUS_LES_APEROS_SANS   = _clesParCat("mocktails");
 const TOUS_LES_APEROS = [...TOUS_LES_APEROS_ALCOOL, ...TOUS_LES_APEROS_SANS];
 
 const menusFestifs = {
   festif: {
     label: "🎉 Soirée Festive",
-    apero:   TOUS_LES_APEROS,
-    entree:  TOUTES_LES_ENTREES,
-    plat:    TOUS_LES_PLATS,
-    dessert: TOUS_LES_DESSERTS,
+    apero:     TOUS_LES_APEROS,
+    aperitifs: TOUS_LES_APERITIFS,
+    entree:    TOUTES_LES_ENTREES,
+    plat:      TOUS_LES_PLATS,
+    dessert:   TOUS_LES_DESSERTS,
   },
   estival: {
     label: "🌞 Menu Estival",
@@ -182,19 +170,21 @@ async function genererMenuFestif() {
   {
     const pickOne = arr => shuffleArray(arr)[0];
     const notesMap = {
-      apero:   ["Pour bien commencer la soirée ! 🥂","L'apéro qui met en appétit ✨","Parfait pour briser la glace 🎉","Le coup d'envoi de la soirée 🍹"],
-      entree:  ["Légère et savoureuse 🌿","Une entrée qui met en appétit 😋","Fraîche et colorée 🥗","Le parfait début de repas ✨"],
-      plat:    ["Le plat star de la soirée ! 🌟","Un régal assuré 🍽️","Tout le monde va adorer ! 👌","La recette qui impressionne 🏆"],
-      dessert: ["Une touche sucrée pour finir 🍰","Le point final parfait ✨","On termine en beauté ! 😋","Le dessert qui fait l'unanimité 🎉"],
+      apero:     ["Pour bien commencer la soirée ! 🥂","L'apéro qui met en appétit ✨","Parfait pour briser la glace 🎉","Le coup d'envoi de la soirée 🍹"],
+      aperitifs: ["À grignoter à l'apéro 🥨","Le petit salé qui fait plaisir 😋","Parfait avec un verre 🧀","Pour patienter avant le repas ✨"],
+      entree:    ["Légère et savoureuse 🌿","Une entrée qui met en appétit 😋","Fraîche et colorée 🥗","Le parfait début de repas ✨"],
+      plat:      ["Le plat star de la soirée ! 🌟","Un régal assuré 🍽️","Tout le monde va adorer ! 👌","La recette qui impressionne 🏆"],
+      dessert:   ["Une touche sucrée pour finir 🍰","Le point final parfait ✨","On termine en beauté ! 😋","Le dessert qui fait l'unanimité 🎉"],
     };
     const catMap = [
-      { key: "apero",   emoji: "🥂", label: "🥂 Apéro",  pool: themeData.apero   },
-      { key: "entree",  emoji: "🥗", label: "🥗 Entrée", pool: themeData.entree  },
-      { key: "plat",    emoji: "🍽️", label: "🍽️ Plat",   pool: themeData.plat    },
-      { key: "dessert", emoji: "🍰", label: "🍰 Dessert", pool: themeData.dessert },
+      { key: "apero",     emoji: "🥂", label: "🥂 Apéro",     pool: themeData.apero     },
+      { key: "aperitifs", emoji: "🥨", label: "🥨 Apéritifs", pool: themeData.aperitifs },
+      { key: "entree",    emoji: "🥗", label: "🥗 Entrée",    pool: themeData.entree    },
+      { key: "plat",      emoji: "🍽️", label: "🍽️ Plat",      pool: themeData.plat      },
+      { key: "dessert",   emoji: "🍰", label: "🍰 Dessert",   pool: themeData.dessert   },
     ];
     // Filtre commun : retire les recettes incompatibles allergies/régimes/non-repas/famille
-    const filtrerPool = (pool, autoriseNonRepas) => pool.filter(k => {
+    const filtrerPool = (pool, autoriseNonRepas) => (pool || []).filter(k => {
       if (!recettes[k]) return false;
       // Non-repas autorisés seulement pour apéro et dessert
       if (!autoriseNonRepas && RECETTES_NON_REPAS.has(k)) return false;
@@ -212,8 +202,11 @@ async function genererMenuFestif() {
       theme: themeData.label,
       menu: catMap
         .filter(c => structure.length === 0 || structure.some(s => c.key.includes(s) || s.includes(c.key)))
+        // v258.8 : ignorer un slot dont le pool est vide (ex. Apéritifs tant
+        // qu'aucune recette en catégorie "aperitifs" n'existe) → pas d'item vide.
+        .filter(c => Array.isArray(c.pool) && c.pool.length > 0)
         .map(c => {
-          const autoriseNonRepas = (c.key === "apero" || c.key === "dessert");
+          const autoriseNonRepas = (c.key === "apero" || c.key === "aperitifs" || c.key === "dessert");
           const poolOK = filtrerPool(c.pool, autoriseNonRepas);
           const choix = pickOne(poolOK.length ? poolOK : c.pool); // fallback ultime
           return {
@@ -226,6 +219,7 @@ async function genererMenuFestif() {
   }
 
   afficherMenuFestif(menuFestifActuel, parseInt(personnes));
+  enregistrerFestifHistorique(menuFestifActuel); // v258.6 : remonte dans "Dernier menu généré"
   btn.textContent = "✨ Générer mon menu";
   btn.disabled = false;
 }
@@ -248,6 +242,18 @@ function afficherMenuFestif(menu, personnes) {
     container.appendChild(legende);
   }
 
+  // v258.11 : la couleur par type de slot est désormais en classes CSS (.slot-*)
+  // dans style.css. Ici on ne calcule plus que la clé de slot à poser sur l'élément.
+  const slotKey = (cat) => {
+    const c = (cat || "").toLowerCase();
+    if (c.includes("apéritif") || c.includes("aperitif")) return "aperitifs";
+    if (c.includes("apéro")    || c.includes("apero"))     return "apero";
+    if (c.includes("entrée")   || c.includes("entree"))    return "entree";
+    if (c.includes("plat"))                                return "plat";
+    if (c.includes("dessert"))                             return "dessert";
+    return "";
+  };
+
   menu.menu.forEach((item, idx) => {
     const div = document.createElement("div");
     div.className = "plan-jour";
@@ -264,12 +270,17 @@ function afficherMenuFestif(menu, personnes) {
     const btn = lvl ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenItemFestif(${idx})" title="Regénérer">🔄</button>` : "";
     const motif = lvl ? `<div class="plan-motif-famille" title="${tip}" style="max-width:280px">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
 
+    // Couleur du slot via classe CSS (.slot-apero/.slot-plat…). L'alerte famille (inline) reste prioritaire.
+    const sk = slotKey(item.categorie);
+    const styleSlotInline = lvl ? styleAlerte + ";" : "";
+    const pill = `<span class="slot-pill">${item.categorie}</span>`;
+
     div.innerHTML = `
       <div class="plan-repas-row" style="grid-template-columns:1fr">
-        <div class="plan-repas" onclick="ouvrirRecettePlan('${item.recette}', ${personnes})" style="${styleAlerte};text-align:left;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+        <div class="plan-repas slot-${sk}" onclick="ouvrirRecettePlan('${item.recette}', ${personnes})" style="${styleSlotInline}text-align:left;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
           <div style="font-size:32px">${getEmoji(item.recette)}</div>
           <div style="flex:1;min-width:0">
-            <div class="plan-repas-label">${item.categorie} ${badge}${btn}</div>
+            <div class="plan-repas-label">${pill} ${badge}${btn}</div>
             <div class="plan-repas-nom" style="font-size:16px">${getNomRecette(item.recette)}</div>
             <div class="plan-repas-note">${item.note}</div>
             ${motif}
@@ -296,10 +307,11 @@ function regenItemFestif(idx) {
   const item = menuFestifActuel.menu[idx];
   // Catégorie -> pool de candidats (selon le label)
   const cats = {
-    "🥂 Apéro":   ["cocktails","mocktails"],
-    "🥗 Entrée":  ["entrees","soupes","salades"],
-    "🍽️ Plat":   ["plats","pizzas","healthy"],
-    "🍰 Dessert": ["desserts"],
+    "🥂 Apéro":     ["cocktails","mocktails"],
+    "🥨 Apéritifs": ["aperitifs"],
+    "🥗 Entrée":    ["entrees","soupes","salades"],
+    "🍽️ Plat":     ["plats","pizzas","healthy"],
+    "🍰 Dessert":   ["desserts"],
   };
   const allowedCats = cats[item.categorie] || ["plats"];
 
@@ -326,6 +338,7 @@ function regenItemFestif(idx) {
   item.recette = candidates[Math.floor(Math.random() * candidates.length)];
   const personnes = parseInt(document.getElementById("festif-personnes")?.value) || 4;
   afficherMenuFestif(menuFestifActuel, personnes);
+  enregistrerFestifHistorique(menuFestifActuel); // v258.6 : garder l'historique à jour
 }
 
 function afficherCoursesFestif() {
@@ -353,6 +366,70 @@ function afficherCoursesFestif() {
   document.getElementById("festif-courses-content").innerHTML = html;
   document.getElementById("festif-result").style.display = "none";
   document.getElementById("festif-courses").style.display = "block";
+}
+
+// v258.10 : envoie TOUTES les recettes du menu (Semaine ou Thématique) dans la
+// liste de courses intelligente (window.userProfile.listeCourses), exactement
+// comme l'ajout recette par recette du garde-manger — mais en un seul clic.
+function ajouterMenuAuxCourses(type) {
+  if (!window.userProfile) {
+    if (typeof afficherToast === "function") afficherToast("⚠️ Connecte-toi pour utiliser la liste de courses");
+    return;
+  }
+  // Extrait les clés de recette d'un repas (gère string, {recette}, et {entree,plat,dessert})
+  const clesRepas = (v) => {
+    if (!v) return [];
+    if (typeof v === "string") return [v];
+    const out = [];
+    if (v.recette) out.push(v.recette);
+    ["entree", "plat", "dessert"].forEach(t => {
+      if (v[t]?.recette) out.push(v[t].recette);
+      else if (typeof v[t] === "string") out.push(v[t]);
+    });
+    return out;
+  };
+
+  let cles = [];
+  let personnes = 4;
+  if (type === "thematique") {
+    if (!menuFestifActuel?.menu?.length) {
+      if (typeof afficherToast === "function") afficherToast("Génère d'abord un menu thématique");
+      return;
+    }
+    personnes = parseInt(document.getElementById("festif-personnes")?.value) || 4;
+    cles = menuFestifActuel.menu.map(it => it.recette).filter(Boolean);
+  } else {
+    if (!menusSemaine?.semaine?.length) {
+      if (typeof afficherToast === "function") afficherToast("Génère d'abord un menu");
+      return;
+    }
+    personnes = parseInt(document.getElementById("plan-personnes")?.value) || 4;
+    menusSemaine.semaine.forEach(j => { cles.push(...clesRepas(j.midi), ...clesRepas(j.soir)); });
+  }
+
+  // Ajoute à la liste sans écraser l'existant (dédoublonné par clé)
+  if (!window.userProfile.listeCourses) window.userProfile.listeCourses = [];
+  const liste = window.userProfile.listeCourses;
+  let ajoutes = 0;
+  [...new Set(cles)].forEach(cle => {
+    if (!recettes[cle]) return;
+    const i = liste.findIndex(p => p.cle === cle);
+    if (i >= 0) liste[i].personnes = personnes;       // met à jour le nb de personnes
+    else { liste.push({ cle, personnes }); ajoutes++; }
+  });
+
+  if (typeof lcSauvegarder === "function") lcSauvegarder();
+
+  // Bascule sur la liste de courses intelligente (Garde-manger → onglet Courses)
+  const navBtn = document.querySelector('.nav-btn[onclick*="cuisine"]');
+  if (navBtn) navBtn.click();
+  if (typeof switchCuisineTab === "function") switchCuisineTab("courses");
+
+  if (typeof afficherToast === "function") {
+    afficherToast(ajoutes > 0
+      ? `🛒 ${ajoutes} recette${ajoutes > 1 ? "s" : ""} ajoutée${ajoutes > 1 ? "s" : ""} à ta liste de courses`
+      : "🛒 Ces recettes sont déjà dans ta liste");
+  }
 }
 
 // Charger menu festif sauvegardé
@@ -419,6 +496,31 @@ function sauvegarderMenus(menus, personnes, jours) {
       window.db.collection("utilisateurs").doc(window.currentUser.uid)
         .update({ historiqueMenus: newHist })
         .catch(() => {});
+    }
+  } catch(e) {}
+}
+
+// v258.6 : enregistre le menu thématique dans l'historique pour qu'il apparaisse
+// dans « Dernier menu généré » sur l'accueil (genererMenuFestif ne le faisait pas).
+function enregistrerFestifHistorique(menu) {
+  if (!menu) return;
+  try {
+    const today = new Date().toLocaleDateString("fr-FR");
+    const entry = { date: today, type: "thematique", menu: menu };
+    // localStorage (source principale lue par l'accueil)
+    try {
+      const hist = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]");
+      const newHist = [entry, ...hist.filter(h => !(h.type === "thematique" && h.date === today))].slice(0, 5);
+      localStorage.setItem("cuisineJeje_histMenus", JSON.stringify(newHist));
+    } catch(e) {}
+    // Firebase + userProfile (même structure, avec le menu complet)
+    if (window.currentUser && window.db) {
+      const hist = window.userProfile?.historiqueMenus || [];
+      const newHist = [entry, ...hist.filter(h => !(h.type === "thematique" && h.date === today))].slice(0, 5);
+      window.userProfile = window.userProfile || {};
+      window.userProfile.historiqueMenus = newHist;
+      window.db.collection("utilisateurs").doc(window.currentUser.uid)
+        .update({ historiqueMenus: newHist }).catch(() => {});
     }
   } catch(e) {}
 }
