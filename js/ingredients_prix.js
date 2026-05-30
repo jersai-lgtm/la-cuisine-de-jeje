@@ -308,6 +308,15 @@ const INGREDIENTS_PRIX = {
   thon:           { prixKg: 20.0, calPer100g: 144,  lipSat: 1.3,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 30,   flv: 0 },
   thonHuile:      { prixKg: 14.0, calPer100g: 198,  lipSat: 1.5,  sucre: 0,    sel: 0.5,  fibres: 0,   prot: 28,   flv: 0 },
   crevettes:      { prixKg: 18.0, calPer100g: 99,   lipSat: 0.4,  sucre: 0,    sel: 0.9,  fibres: 0,   prot: 24,   flv: 0 },
+  crevette:       { prixKg: 18.0, calPer100g: 99,   lipSat: 0.4,  sucre: 0,    sel: 0.9,  fibres: 0,   prot: 24,   flv: 0 },
+  comte:          { prixKg: 16.0, calPer100g: 410,  lipSat: 20,   sucre: 0.5,  sel: 1.5,  fibres: 0,   prot: 27,   flv: 0 },
+  morue:          { prixKg: 18.0, calPer100g: 105,  lipSat: 0.2,  sucre: 0,    sel: 1.5,  fibres: 0,   prot: 23,   flv: 0 },
+  olivenoire:     { prixKg: 10.0, calPer100g: 115,  lipSat: 1.4,  sucre: 0,    sel: 3.3,  fibres: 3.2, prot: 0.8,  flv: 100 },
+  olivevert:      { prixKg: 9.0,  calPer100g: 145,  lipSat: 1.9,  sucre: 0,    sel: 3.3,  fibres: 3,   prot: 1,    flv: 100 },
+  tortillachips:  { prixKg: 8.0,  calPer100g: 500,  lipSat: 3,    sucre: 1.5,  sel: 1.2,  fibres: 4,   prot: 7,    flv: 0 },
+  yaourtgrec:     { prixKg: 4.0,  calPer100g: 115,  lipSat: 6,    sucre: 4,    sel: 0.1,  fibres: 0,   prot: 5,    flv: 0 },
+  tomatecerise:   { prixUnite: 0.06, cal: 1.4,      lipSat: 0,    sucre: 0.2,  sel: 0,    fibres: 0.1, prot: 0.07, flv: 100 },
+  feuillebrick:   { prixUnite: 0.15, cal: 35,       lipSat: 0.2,  sucre: 0,    sel: 0.4,  fibres: 0.5, prot: 1,    flv: 0 },
   saintjacques:   { prixKg: 35.0, calPer100g: 88,   lipSat: 0.1,  sucre: 0,    sel: 0.4,  fibres: 0,   prot: 17,   flv: 0 },
   poissonroche:   { prixKg: 18.0, calPer100g: 110,  lipSat: 0.5,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 20,   flv: 0 },
   poisson:        { prixKg: 16.0, calPer100g: 105,  lipSat: 0.4,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 20,   flv: 0 },
@@ -776,6 +785,7 @@ const POIDS_UNITAIRE = {
   avocat: 200, avocats: 200, orange: 130, kiwi: 75, peche: 150,
   mangue: 300, ananas: 500, melon: 1000, passion: 50,
   serrano: 30,
+  tomatecerise: 8, tomatescerises: 8, feuillebrick: 10, feuillesbrick: 10,
 };
 
 // === Parser tolérant pour le Nutri-Score ===
