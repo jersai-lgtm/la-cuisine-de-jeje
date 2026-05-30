@@ -25,6 +25,7 @@ function normalizeText(s) {
   if (!s) return "";
   return String(s).toLowerCase()
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")  // accents
+    .replace(/œ/g, "oe").replace(/æ/g, "ae")            // ligatures : œuf->oeuf, cœur->coeur
     .replace(/[^a-z0-9\s]/g, " ")                       // emojis/symboles
     .replace(/\s+/g, " ")
     .trim();
@@ -363,7 +364,7 @@ function afficherSuggestions(query) {
       <div class="suggestion-group">
         <div class="suggestion-group-label">${g.label}</div>
         ${g.items.map(item => `
-          <button class="suggestion-item" onclick="cacherSuggestions();${item.action}">
+          <button type="button" class="suggestion-item" onclick="cacherSuggestions();${item.action}">
             <span class="suggestion-icon">${item.icon}</span>
             <span class="suggestion-text">${item.text}</span>
             ${item.meta ? `<span class="suggestion-meta">${item.meta}</span>` : ""}
@@ -378,6 +379,25 @@ function afficherSuggestions(query) {
 function cacherSuggestions() {
   const dropdown = document.getElementById("search-suggestions");
   if (dropdown) dropdown.style.display = "none";
+}
+
+// === v260 : Valider la recherche (touche Entrée) ===
+// Ferme le dropdown et laisse la GRILLE afficher toutes les recettes
+// correspondantes (par nom OU ingrédient) — sans ouvrir une recette précise
+// ni basculer dans une catégorie. Résout le cas "Entrée → 1er résultat".
+function validerRecherche() {
+  const input = document.getElementById("search-input");
+  const q = input ? input.value.trim() : "";
+  cacherSuggestions();
+  if (!q) return;
+  // Re-filtrer la grille sur TOUS les résultats (sécurité)
+  const qNorm = normalizeText(q);
+  const setMatch = new Set(scorerCartes(qNorm).map(r => r.entry.element));
+  document.querySelectorAll(".carte").forEach(carte => {
+    const etaitVisible = !window._etatAvantRecherche || window._etatAvantRecherche.get(carte) !== false;
+    carte.style.display = (etaitVisible && setMatch.has(carte)) ? "" : "none";
+  });
+  if (input) input.blur(); // ferme le clavier mobile + enlève le focus
 }
 
 // === Toast de notification ===

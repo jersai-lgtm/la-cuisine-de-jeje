@@ -309,6 +309,18 @@ const INGREDIENTS_PRIX = {
   thonHuile:      { prixKg: 14.0, calPer100g: 198,  lipSat: 1.5,  sucre: 0,    sel: 0.5,  fibres: 0,   prot: 28,   flv: 0 },
   crevettes:      { prixKg: 18.0, calPer100g: 99,   lipSat: 0.4,  sucre: 0,    sel: 0.9,  fibres: 0,   prot: 24,   flv: 0 },
   crevette:       { prixKg: 18.0, calPer100g: 99,   lipSat: 0.4,  sucre: 0,    sel: 0.9,  fibres: 0,   prot: 24,   flv: 0 },
+  champignon:     { prixKg: 6.00,  calPer100g: 22,   lipSat: 0,    sucre: 1,    sel: 0,    fibres: 2,   prot: 3.1,  flv: 100 },
+  houmous:        { prixKg: 8.00,  calPer100g: 230,  lipSat: 2,    sucre: 0.5,  sel: 1.2,  fibres: 4,   prot: 7,    flv: 60 },
+  mortadelle:     { prixKg: 14.0,  calPer100g: 290,  lipSat: 9,    sucre: 0.5,  sel: 2.5,  fibres: 0,   prot: 16,   flv: 0 },
+  pignon:         { prixKg: 40.0,  calPer100g: 673,  lipSat: 4.6,  sucre: 3.6,  sel: 0,    fibres: 3.7, prot: 14,   flv: 100 },
+  pistache:       { prixKg: 25.0,  calPer100g: 560,  lipSat: 5.4,  sucre: 8,    sel: 0,    fibres: 10,  prot: 20,   flv: 100 },
+  raisinsec:      { prixKg: 6.00,  calPer100g: 299,  lipSat: 0.1,  sucre: 60,   sel: 0,    fibres: 4,   prot: 3,    flv: 100 },
+  paincomplet:    { prixKg: 4.50,  calPer100g: 247,  lipSat: 0.6,  sucre: 3,    sel: 1.1,  fibres: 7,   prot: 9,    flv: 0 },
+  painmie:        { prixKg: 4.00,  calPer100g: 280,  lipSat: 1,    sucre: 4,    sel: 1.1,  fibres: 3,   prot: 8,    flv: 0 },
+  bagel:          { prixUnite: 0.50, cal: 245,      lipSat: 0.5,  sucre: 5,    sel: 1.1,  fibres: 2.3, prot: 9,    flv: 0 },
+  escargot:       { prixUnite: 0.25, cal: 18,       lipSat: 0.4,  sucre: 0,    sel: 0.3,  fibres: 0,   prot: 1.6,  flv: 0 },
+  figue:          { prixUnite: 0.60, cal: 37,       lipSat: 0,    sucre: 8,    sel: 0,    fibres: 1.5, prot: 0.4,  flv: 100 },
+  painpanini:     { prixUnite: 0.60, cal: 240,      lipSat: 1,    sucre: 3,    sel: 1.1,  fibres: 2,   prot: 8,    flv: 0 },
   comte:          { prixKg: 16.0, calPer100g: 410,  lipSat: 20,   sucre: 0.5,  sel: 1.5,  fibres: 0,   prot: 27,   flv: 0 },
   morue:          { prixKg: 18.0, calPer100g: 105,  lipSat: 0.2,  sucre: 0,    sel: 1.5,  fibres: 0,   prot: 23,   flv: 0 },
   olivenoire:     { prixKg: 10.0, calPer100g: 115,  lipSat: 1.4,  sucre: 0,    sel: 3.3,  fibres: 3.2, prot: 0.8,  flv: 100 },
@@ -786,6 +798,7 @@ const POIDS_UNITAIRE = {
   mangue: 300, ananas: 500, melon: 1000, passion: 50,
   serrano: 30,
   tomatecerise: 8, tomatescerises: 8, feuillebrick: 10, feuillesbrick: 10,
+  bagel: 85, escargot: 10, figue: 50, figues: 50, painpanini: 90, painmie: 30, paincomplet: 35, tortilla: 50, tortillas: 50,
 };
 
 // === Parser tolérant pour le Nutri-Score ===
