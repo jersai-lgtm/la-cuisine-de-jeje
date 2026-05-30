@@ -6010,7 +6010,7 @@ const recettes = {
     ]
   },
   houmous: {
-    cat: "encas", pays: "liban",
+    cat: "aperitifs", pays: "liban",
     base: 6,
     temps: "10 min",
     niveau: "⭐ Facile",
@@ -12482,7 +12482,7 @@ const recettes = {
     ]
   },
   macandcheese: {
-    cat: "plats", pays: "etatsunis",
+    cat: "plats", pays: "usa",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🧀",
     description: "Le comfort food américain ultime : pâtes coquillettes nappées d'une sauce fromage crémeuse au cheddar, gratinées à la chapelure.",
     tableauPersonnes: [
@@ -12676,7 +12676,7 @@ const recettes = {
     ]
   },
   muffinkinder: {
-    cat: "brunch", pays: "etatsunis",
+    cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins moelleux fourrés et garnis de Kinder Bueno fondu — chocolat au lait, noisette croustillante.",
     tableauMuffins: [
@@ -12709,7 +12709,7 @@ const recettes = {
     ]
   },
   muffinmars: {
-    cat: "brunch", pays: "etatsunis",
+    cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins gourmands au cœur de Mars fondu : chocolat, caramel coulant et nougat fondant.",
     tableauMuffins: [
@@ -12742,7 +12742,7 @@ const recettes = {
     ]
   },
   muffinkitkat: {
-    cat: "brunch", pays: "etatsunis",
+    cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins au chocolat avec morceaux croquants de Kit Kat dedans et entiers en topping.",
     tableauMuffins: [
@@ -12775,7 +12775,7 @@ const recettes = {
     ]
   },
   muffinraffaello: {
-    cat: "brunch", pays: "etatsunis",
+    cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins blanc-coco délicats avec Raffaello fondants au cœur. Noix de coco, amande et chocolat blanc !",
     tableauMuffins: [
@@ -12807,7 +12807,7 @@ const recettes = {
     ]
   },
   muffinsnickers: {
-    cat: "brunch", pays: "etatsunis",
+    cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins ultra gourmands au Snickers : chocolat, caramel, cacahuète et nougat. Combo sucré-salé !",
     tableauMuffins: [
@@ -12841,7 +12841,7 @@ const recettes = {
     ]
   },
   muffinoreo: {
-    cat: "brunch", pays: "etatsunis",
+    cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins vanille avec Oreo concassés dans la pâte et chocolat blanc fondant. Le contraste noir-blanc !",
     tableauMuffins: [

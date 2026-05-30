@@ -1785,7 +1785,7 @@ function getNiveauFamille(cle) {
   }
   // Garde : une boisson sans alcool (mocktail / virgin / "sans alcool") ne doit pas
   // être flaggée à cause du mot "alcool" présent dans sa description ("sans alcool")
-  const estSansAlcool = /sans alcool|mocktail|virgin/.test(texte) || /mocktail|virgin/.test(cle.toLowerCase());
+  const estSansAlcool = /sans alcool|sans-alcool|ni alcool|sans café ni alcool/.test(texte) || /mocktail|virgin/.test(texte) || /mocktail|virgin/.test(cle.toLowerCase());
   if (estSansAlcool) texte = texte.replace(/alcool/g, "");
 
   if (profil.hasBebe) {

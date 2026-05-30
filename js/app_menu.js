@@ -72,42 +72,42 @@ const menusFestifs = {
   estival: {
     label: "🌞 Menu Estival",
     apero:   [...TOUS_LES_APEROS_SANS, "spritz","mojito","daiquiri"],
-    entree:  ["gaspacho","saladeniçoise","tabulemaison","saladeavocatcrevettes","saladegreque","saladecesar","saladepoischiches","saladepatasthon","smoothiebowl","houmous","saladerizmediterranee"],
+    entree:  ["gaspacho","saladeniçoise","tabulemaison","saladeavocatcrevettes","saladegreque","saladecesar","saladepoischiches","saladepatasthon","smoothiebowl","saladerizmediterranee"],
     plat:    ["paella","salmonteriyaki","souvlakiagneau","saladecesar","wrappoulet","padthai","shakshuka","burgermaison","tacosmaison","saladeniçoise","saumongravlax"],
     dessert: ["tartecitron","smoothiebowl","bowlacai","clafoutis","verrinetiramisu","granola","yaourt","bananabread"],
   },
   hivernal: {
     label: "❄️ Menu Hivernal",
     apero:   ["sangria","whiskysour","limonademaison","virginmojito","cosmopolitan"],
-    entree:  ["soupeaoignon","veloutelegumes","saladelentilles","soupeharira","soupemiso","houmous"],
+    entree:  ["soupeaoignon","veloutelegumes","saladelentilles","soupeharira","soupemiso"],
     plat:    ["boeufbourguignon","potaufeu","gratindauphinois","couscous","moussaka","butterchicken","dahllentillescorail","quichelorraine","lasagne","risotto"],
     dessert: ["fondantchocolat","cremebrulee","ileflottante","tiramisu","mousseauchocolat","parisbrestreinterpretation","clafoutis","flan"],
   },
   mexicain: {
     label: "🇲🇽 Soirée Mexicaine",
     apero:   ["margarita","virginmojito","limonademaison","mojito","sangria"],
-    entree:  ["houmous","gaspacho","saladepoischiches","tabulemaison","saladeniçoise"],
+    entree:  ["gaspacho","saladepoischiches","tabulemaison","saladeniçoise"],
     plat:    ["tacosmaison","currypouletcoco","bolognaisemaison","padthai","burgermaison","shakshuka"],
     dessert: ["churros","mousseauchocolat","bananabread","muffins","madeleine"],
   },
   italien: {
     label: "🇮🇹 Soirée Italienne",
     apero:   ["spritz","sangria","cosmopolitan","daiquiri"],
-    entree:  ["saladecesar","saladeniçoise","saladegreque","saladepatasthon","houmous"],
+    entree:  ["saladecesar","saladeniçoise","saladegreque","saladepatasthon"],
     plat:    ["risotto","bolognaisemaison","risottoprimavera","lasagne","paella","moussaka"],
     dessert: ["tiramisu","verrinetiramisu","mousseauchocolat","pannacotta","cremebrulee","parisbrestreinterpretation"],
   },
   healthy: {
     label: "🥗 Menu Healthy",
     apero:   [...TOUS_LES_APEROS_SANS],
-    entree:  ["saladequinoa","houmous","gaspacho","smoothiebowl","bowlacai","overnightoats","buddhaBowl","saladepoischiches","tabulemaison"],
+    entree:  ["saladequinoa","gaspacho","smoothiebowl","bowlacai","overnightoats","buddhaBowl","saladepoischiches","tabulemaison"],
     plat:    ["buddhaBowl","wrappoulet","curryledumes","salmonteriyaki","padthai","dahllentillescorail","soupemiso","veloutelegumes","shakshuka","saladeniçoise"],
     dessert: ["smoothiebowl","bowlacai","yaourt","granola","bananabread","madeleine"],
   },
   romantique: {
     label: "💑 Dîner Romantique",
     apero:   ["cosmopolitan","spritz","daiquiri","mojito","pinacolada"],
-    entree:  ["saumongravlax","saladeavocatcrevettes","saladeniçoise","saladegreque","houmous","verrinetiramisu"],
+    entree:  ["saumongravlax","saladeavocatcrevettes","saladeniçoise","saladegreque","verrinetiramisu"],
     plat:    ["salmonteriyaki","risottoprimavera","pouletcitronthym","boeufbourguignon","souvlakiagneau","butterchicken","paella"],
     dessert: ["cremebrulee","tiramisu","mousseauchocolat","fondantchocolat","tartecitron","parisbrestreinterpretation","ileflottante"],
   },
@@ -859,7 +859,7 @@ function tousPlatsDispos(tags) {
 }
 
 function toutesSaladesDispos() {
-  return ["saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison","saladequinoa","saladeavocatcrevettes","saladelentilles","saladepoischiches","saladerizmediterranee","gaspacho","buddhaBowl","smoothiebowl","houmous","overnightoats","wrappoulet","croquemonsieur","shakshuka","veloutelegumes","soupemiso","misoramenleger","semoulecourgette"];
+  return ["saladeniçoise","saladecesar","saladegreque","saladepatasthon","tabulemaison","saladequinoa","saladeavocatcrevettes","saladelentilles","saladepoischiches","saladerizmediterranee","gaspacho","buddhaBowl","smoothiebowl","overnightoats","wrappoulet","croquemonsieur","shakshuka","veloutelegumes","soupemiso","misoramenleger","semoulecourgette"];
 }
 
 function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
@@ -1883,8 +1883,11 @@ window.appliquerMenuFavori = function(id) {
 
 
 function ouvrirRecettePlan(recetteKey, personnes) {
-  // Ouvrir directement la modale sans changer d'onglet
-  document.getElementById("personnes").value = personnes;
+  // Ouvrir directement la modale sans changer d'onglet.
+  // Garde : #personnes n'existe pas toujours dans le DOM au moment du clic
+  // (selon la section) — sans ce garde, le clic plantait et la recette ne s'ouvrait pas.
+  const inputP = document.getElementById("personnes");
+  if (inputP && typeof personnes === "number" && personnes > 0) inputP.value = personnes;
   choisirRecette(recetteKey);
 }
 
