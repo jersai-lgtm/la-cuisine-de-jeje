@@ -655,3 +655,68 @@ window.retirerAC = function(val, pfx) {
   if (window["_ac_" + pfx]) window["_ac_" + pfx] = window["_ac_" + pfx].filter(a => a !== val);
   renderAC(pfx);
 };
+
+// =============================================================================
+// 🟢 PRÉSENCE / UTILISATEURS EN LIGNE (v258.2)
+// =============================================================================
+// Chaque visiteur (connecté OU anonyme) écrit un "heartbeat" toutes les 60 s
+// dans la collection Firestore "presence". L'admin compte ensuite ceux dont
+// lastSeen date de moins de 2 minutes. La présence est totalement silencieuse :
+// elle ne doit jamais bloquer ou casser l'appli.
+// =============================================================================
+(function initPresence() {
+  // Identifiant visiteur persistant (inclut les visiteurs anonymes)
+  function getVisitorId() {
+    try {
+      let id = localStorage.getItem("visitorId");
+      if (!id) {
+        id = (window.crypto && crypto.randomUUID)
+          ? crypto.randomUUID()
+          : ("v_" + Date.now() + "_" + Math.random().toString(36).slice(2, 10));
+        localStorage.setItem("visitorId", id);
+      }
+      return id;
+    } catch (e) {
+      // localStorage indisponible → id volatil pour la session
+      if (!window._visitorIdVolatile) {
+        window._visitorIdVolatile = "v_" + Date.now() + "_" + Math.random().toString(36).slice(2, 10);
+      }
+      return window._visitorIdVolatile;
+    }
+  }
+
+  const VISITOR_ID = getVisitorId();
+  const PING_MS = 60 * 1000; // toutes les 60 s
+
+  async function ping() {
+    try {
+      if (typeof _db === "undefined" || !_db) return;
+      await _db.collection("presence").doc(VISITOR_ID).set({
+        lastSeen: firebase.firestore.FieldValue.serverTimestamp(),
+        connecte: !!window.currentUser,
+        uid: window.currentUser ? window.currentUser.uid : null,
+        maj: Date.now() // secours si lastSeen pas encore résolu côté serveur
+      }, { merge: true });
+    } catch (e) {
+      // silencieux
+    }
+  }
+
+  // Premier ping au démarrage, puis toutes les 60 s
+  ping();
+  setInterval(ping, PING_MS);
+
+  // Re-ping quand l'onglet redevient visible
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") ping();
+  });
+
+  // Re-ping à chaque changement d'état de connexion (met à jour connecte/uid)
+  try {
+    if (typeof _auth !== "undefined" && _auth.onAuthStateChanged) {
+      _auth.onAuthStateChanged(function () { ping(); });
+    }
+  } catch (e) {}
+
+  window._presencePing = ping;
+})();
