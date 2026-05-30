@@ -507,16 +507,17 @@ function enregistrerFestifHistorique(menu) {
   try {
     const today = new Date().toLocaleDateString("fr-FR");
     const entry = { date: today, type: "thematique", menu: menu };
-    // localStorage (source principale lue par l'accueil)
+    // localStorage (source principale lue par l'accueil) — même logique que la semaine :
+    // on retire toute entrée du jour pour que le dernier généré soit toujours en tête.
     try {
       const hist = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]");
-      const newHist = [entry, ...hist.filter(h => !(h.type === "thematique" && h.date === today))].slice(0, 5);
+      const newHist = [entry, ...hist.filter(h => h.date !== today)].slice(0, 5);
       localStorage.setItem("cuisineJeje_histMenus", JSON.stringify(newHist));
     } catch(e) {}
     // Firebase + userProfile (même structure, avec le menu complet)
     if (window.currentUser && window.db) {
       const hist = window.userProfile?.historiqueMenus || [];
-      const newHist = [entry, ...hist.filter(h => !(h.type === "thematique" && h.date === today))].slice(0, 5);
+      const newHist = [entry, ...hist.filter(h => h.date !== today)].slice(0, 5);
       window.userProfile = window.userProfile || {};
       window.userProfile.historiqueMenus = newHist;
       window.db.collection("utilisateurs").doc(window.currentUser.uid)
