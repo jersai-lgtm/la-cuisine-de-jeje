@@ -95,6 +95,12 @@ const LABELS_PAYS = {
   vietnam: "🇻🇳 Vietnam", senegal: "🇸🇳 Sénégal", pologne: "🇵🇱 Pologne",
   coree: "🇰🇷 Corée", hongrie: "🇭🇺 Hongrie", tibet: "🏔️ Tibet",
   bresil: "🇧🇷 Brésil", indonesie: "🇮🇩 Indonésie", haiti: "🇭🇹 Haïti",
+  russie: "🇷🇺 Russie", allemagne: "🇩🇪 Allemagne", portugal: "🇵🇹 Portugal",
+  angleterre: "🇬🇧 Angleterre", georgie: "🇬🇪 Géorgie", argentine: "🇦🇷 Argentine",
+  nigeria: "🇳🇬 Nigeria", perou: "🇵🇪 Pérou", colombie: "🇨🇴 Colombie",
+  singapour: "🇸🇬 Singapour", belgique: "🇧🇪 Belgique", polynesie: "🇵🇫 Polynésie",
+  hawaii: "🌺 Hawaï", caraibes: "🏝️ Caraïbes", antilles: "🏝️ Antilles",
+  asie: "🌏 Asie", monde: "🌍 Monde", international: "🌍 International",
 };
 
 // === INDEXATION DES CARTES (faite une seule fois au chargement) ===
@@ -327,8 +333,10 @@ function afficherSuggestions(query) {
           motsQuery.some(mq => mq.length >= 3 && motsNom.some(mn => mn.startsWith(mq)));
         let meta;
         if (viaNom) {
-          // match par nom → on montre la catégorie (aide à se repérer)
-          meta = LABELS_CATEGORIE[entry.cat] || "";
+          // match par nom → drapeau (origine) + catégorie (repère)
+          const flag = (LABELS_PAYS[entry.pays] || "").split(" ")[0];
+          const catTxt = (LABELS_CATEGORIE[entry.cat] || "").replace(/^\S+\s/, "");
+          meta = `${flag} ${catTxt}`.trim();
         } else {
           // match par ingrédient → on indique lequel ("contient …")
           const idx = entry.ingredientsNorm.findIndex(i =>
