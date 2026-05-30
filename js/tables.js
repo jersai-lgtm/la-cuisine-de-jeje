@@ -1510,7 +1510,11 @@ function choisirRecette(nom, personnesOverride) {
     </div>`;
 
   document.getElementById("modal-calc").classList.add("visible");
-  document.getElementById("modal-resultat").parentElement.scrollTop = 0;
+  // v258.3 : on ne remonte en haut qu'à l'ouverture initiale de la fiche.
+  // Sur un +/- (recalcul), personnesOverride est un nombre → on garde la position.
+  if (typeof personnesOverride !== "number") {
+    document.getElementById("modal-resultat").parentElement.scrollTop = 0;
+  }
 
   // Bouton favori
   const btnFav = document.getElementById("btn-favori-modal");

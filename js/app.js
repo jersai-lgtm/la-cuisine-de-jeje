@@ -2885,9 +2885,14 @@ function rerendreFiche(nom, personnes) {
     inputP.value = personnes;
     inputP.dataset.modified = "1";
   }
+  // v258.3 : mémoriser la position de défilement pour que la fenêtre ne saute pas
+  const scroller = document.getElementById("modal-resultat")?.parentElement;
+  const y = scroller ? scroller.scrollTop : 0;
   // v257.5 : Passer la valeur en argument pour que choisirRecette l'utilise
   // (l'input #personnes n'existe pas toujours)
   choisirRecette(nom, personnes);
+  // Restaurer la position exacte (recalcul synchrone → aucun saut visible)
+  if (scroller) scroller.scrollTop = y;
 }
 
 // Spécial brioche : change la quantité ou le type (lait/sans lait) dans la fiche ouverte
