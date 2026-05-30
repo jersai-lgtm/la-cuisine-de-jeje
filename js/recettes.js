@@ -1410,449 +1410,6 @@ const recettes = {
       { icone: "🍰", titre: "Monter le Paris-Brest", detail: "Couper la couronne en deux. Garnir généreusement de crème pralinée avec une poche à douille cannelée. Refermer et saupoudrer de sucre glace. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
     ]
   },
-  mojito: {
-    cat: "cocktails", pays: "cuba",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🍹",
-    description: "Le mojito cubain classique — rhum blanc, menthe fraîche, citron vert, sucre de canne et eau gazeuse. Frais et incontournable.",
-    tableauMojito: [
-      { nb: 1, rhum: "5 cl", citron: "½", menthe: "8 feuilles", sucre: "2 c.à.c", eauGaz: "10 cl" },
-      { nb: 2, rhum: "10 cl", citron: "1", menthe: "16 feuilles", sucre: "4 c.à.c", eauGaz: "20 cl" },
-      { nb: 3, rhum: "15 cl", citron: "1½", menthe: "24 feuilles", sucre: "6 c.à.c", eauGaz: "30 cl" },
-      { nb: 4, rhum: "20 cl", citron: "2", menthe: "32 feuilles", sucre: "8 c.à.c", eauGaz: "40 cl" },
-      { nb: 5, rhum: "25 cl", citron: "2½", menthe: "40 feuilles", sucre: "10 c.à.c", eauGaz: "50 cl" },
-      { nb: 6, rhum: "30 cl", citron: "3", menthe: "48 feuilles", sucre: "12 c.à.c", eauGaz: "60 cl" },
-      { nb: 7, rhum: "35 cl", citron: "3½", menthe: "56 feuilles", sucre: "14 c.à.c", eauGaz: "70 cl" },
-      { nb: 8, rhum: "40 cl", citron: "4", menthe: "64 feuilles", sucre: "16 c.à.c", eauGaz: "80 cl" },
-      { nb: 9, rhum: "45 cl", citron: "4½", menthe: "72 feuilles", sucre: "18 c.à.c", eauGaz: "90 cl" },
-      { nb: 10, rhum: "50 cl", citron: "5", menthe: "80 feuilles", sucre: "20 c.à.c", eauGaz: "1 L" },
-      { nb: 11, rhum: "55 cl", citron: "5½", menthe: "88 feuilles", sucre: "22 c.à.c", eauGaz: "1.1 L" },
-      { nb: 12, rhum: "60 cl", citron: "6", menthe: "96 feuilles", sucre: "24 c.à.c", eauGaz: "1.2 L" },
-      { nb: 13, rhum: "65 cl", citron: "6½", menthe: "104 feuilles", sucre: "26 c.à.c", eauGaz: "1.3 L" },
-      { nb: 14, rhum: "70 cl", citron: "7", menthe: "112 feuilles", sucre: "28 c.à.c", eauGaz: "1.4 L" },
-      { nb: 15, rhum: "75 cl", citron: "7½", menthe: "120 feuilles", sucre: "30 c.à.c", eauGaz: "1.5 L" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍋", titre: "Préparer le verre", detail: "Dans un grand verre, mettre les feuilles de menthe et le sucre de canne. Ajouter le jus du citron vert. Piler doucement (pas trop fort — juste pour libérer les arômes).", badge: null },
-      { icone: "🧊", titre: "Ajouter la glace", detail: "Remplir le verre de glace pilée ou de glaçons.", badge: null },
-      { icone: "🍶", titre: "Verser le rhum", detail: "Verser le rhum blanc sur la glace.", badge: null },
-      { icone: "💧", titre: "Compléter et servir", detail: "Compléter avec l'eau gazeuse. Mélanger délicatement avec une cuillère longue. Garnir d'une branche de menthe et d'une rondelle de citron vert.", badge: null }
-    ]
-  },
-  margarita: {
-    cat: "cocktails", pays: "mexique",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🍸",
-    description: "La margarita mexicaine classique — tequila, triple sec et jus de citron vert. Servie avec le rebord givré de sel.",
-    tableauMargarita: [
-      { nb: 1, tequila: "5 cl", tripleSec: "2 cl", citron: "3 cl", sel: "pour le rebord" },
-      { nb: 2, tequila: "10 cl", tripleSec: "4 cl", citron: "6 cl", sel: "pour le rebord" },
-      { nb: 3, tequila: "15 cl", tripleSec: "6 cl", citron: "9 cl", sel: "pour le rebord" },
-      { nb: 4, tequila: "20 cl", tripleSec: "8 cl", citron: "12 cl", sel: "pour le rebord" },
-      { nb: 5, tequila: "25 cl", tripleSec: "10 cl", citron: "15 cl", sel: "pour le rebord" },
-      { nb: 6, tequila: "30 cl", tripleSec: "12 cl", citron: "18 cl", sel: "pour le rebord" },
-      { nb: 7, tequila: "35 cl", tripleSec: "14 cl", citron: "21 cl", sel: "pour le rebord" },
-      { nb: 8, tequila: "40 cl", tripleSec: "16 cl", citron: "24 cl", sel: "pour le rebord" },
-      { nb: 9, tequila: "45 cl", tripleSec: "18 cl", citron: "27 cl", sel: "pour le rebord" },
-      { nb: 10, tequila: "50 cl", tripleSec: "20 cl", citron: "30 cl", sel: "pour le rebord" },
-      { nb: 11, tequila: "55 cl", tripleSec: "22 cl", citron: "33 cl", sel: "pour le rebord" },
-      { nb: 12, tequila: "60 cl", tripleSec: "24 cl", citron: "36 cl", sel: "pour le rebord" },
-      { nb: 13, tequila: "65 cl", tripleSec: "26 cl", citron: "39 cl", sel: "pour le rebord" },
-      { nb: 14, tequila: "70 cl", tripleSec: "28 cl", citron: "42 cl", sel: "pour le rebord" },
-      { nb: 15, tequila: "75 cl", tripleSec: "30 cl", citron: "45 cl", sel: "pour le rebord" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧂", titre: "Givrer le verre", detail: "Frotter le bord du verre avec un quartier de citron vert. Tremper dans du sel fin pour givrer.", badge: null },
-      { icone: "🍹", titre: "Shaker", detail: "Dans un shaker avec de la glace, verser tequila, triple sec et jus de citron vert. Shaker vigoureusement 10-15 secondes.", badge: "⏱ 15 sec" },
-      { icone: "🍸", titre: "Servir", detail: "Filtrer dans le verre givré. Garnir d'une rondelle de citron vert.", badge: null }
-    ]
-  },
-  cosmopolitan: {
-    cat: "cocktails", pays: "usa",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🍸",
-    description: "Le Cosmopolitan — vodka citronnée, Cointreau, jus de cranberry et citron vert. Le cocktail glamour par excellence.",
-    tableauCosmopolitan: [
-      { nb: 1, vodka: "4 cl", cointreau: "2 cl", cranberry: "3 cl", citron: "1 cl" },
-      { nb: 2, vodka: "8 cl", cointreau: "4 cl", cranberry: "6 cl", citron: "2 cl" },
-      { nb: 3, vodka: "12 cl", cointreau: "6 cl", cranberry: "9 cl", citron: "3 cl" },
-      { nb: 4, vodka: "16 cl", cointreau: "8 cl", cranberry: "12 cl", citron: "4 cl" },
-      { nb: 5, vodka: "20 cl", cointreau: "10 cl", cranberry: "15 cl", citron: "5 cl" },
-      { nb: 6, vodka: "24 cl", cointreau: "12 cl", cranberry: "18 cl", citron: "6 cl" },
-      { nb: 7, vodka: "28 cl", cointreau: "14 cl", cranberry: "21 cl", citron: "7 cl" },
-      { nb: 8, vodka: "32 cl", cointreau: "16 cl", cranberry: "24 cl", citron: "8 cl" },
-      { nb: 9, vodka: "36 cl", cointreau: "18 cl", cranberry: "27 cl", citron: "9 cl" },
-      { nb: 10, vodka: "40 cl", cointreau: "20 cl", cranberry: "30 cl", citron: "10 cl" },
-      { nb: 11, vodka: "44 cl", cointreau: "22 cl", cranberry: "33 cl", citron: "11 cl" },
-      { nb: 12, vodka: "48 cl", cointreau: "24 cl", cranberry: "36 cl", citron: "12 cl" },
-      { nb: 13, vodka: "52 cl", cointreau: "26 cl", cranberry: "39 cl", citron: "13 cl" },
-      { nb: 14, vodka: "56 cl", cointreau: "28 cl", cranberry: "42 cl", citron: "14 cl" },
-      { nb: 15, vodka: "60 cl", cointreau: "30 cl", cranberry: "45 cl", citron: "15 cl" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🍹", titre: "Shaker avec glace", detail: "Mettre de la glace dans le shaker. Ajouter vodka citronnée, Cointreau, jus de cranberry et jus de citron vert.", badge: null },
-      { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement une quinzaine de secondes.", badge: "⏱ 15 sec" },
-      { icone: "🍸", titre: "Filtrer et servir", detail: "Filtrer dans un verre à cocktail refroidi. Garnir d'un zeste de citron vert.", badge: null }
-    ]
-  },
-  spritz: {
-    cat: "cocktails", saisons: ["hiver"], pays: "italie",
-    base: 1,
-    temps: "2 min",
-    niveau: "⭐ Facile",
-    emoji: "🥂",
-    description: "Le Spritz vénitien — Aperol, prosecco et eau gazeuse. L'apéritif italien par excellence, orange et pétillant.",
-    tableauSpritz: [
-      { nb: 1, aperol: "6 cl", prosecco: "9 cl", eauGaz: "3 cl", orange: "½ rondelle", vin: "50 ml" },
-      { nb: 2, aperol: "12 cl", prosecco: "18 cl", eauGaz: "6 cl", orange: "1 rondelle", vin: "100 ml" },
-      { nb: 3, aperol: "18 cl", prosecco: "27 cl", eauGaz: "9 cl", orange: "1½ rondelle", vin: "150 ml" },
-      { nb: 4, aperol: "24 cl", prosecco: "36 cl", eauGaz: "12 cl", orange: "2 rondelles", vin: "200 ml" },
-      { nb: 5, aperol: "30 cl", prosecco: "45 cl", eauGaz: "15 cl", orange: "2½ rondelles", vin: "250 ml" },
-      { nb: 6, aperol: "36 cl", prosecco: "54 cl", eauGaz: "18 cl", orange: "3 rondelles", vin: "300 ml" },
-      { nb: 7, aperol: "42 cl", prosecco: "63 cl", eauGaz: "21 cl", orange: "3½ rondelles", vin: "350 ml" },
-      { nb: 8, aperol: "48 cl", prosecco: "72 cl", eauGaz: "24 cl", orange: "4 rondelles", vin: "400 ml" },
-      { nb: 9, aperol: "54 cl", prosecco: "81 cl", eauGaz: "27 cl", orange: "4½ rondelles", vin: "450 ml" },
-      { nb: 10, aperol: "60 cl", prosecco: "90 cl", eauGaz: "30 cl", orange: "5 rondelles", vin: "500 ml" },
-      { nb: 11, aperol: "66 cl", prosecco: "99 cl", eauGaz: "33 cl", orange: "5½ rondelles", vin: "550 ml" },
-      { nb: 12, aperol: "72 cl", prosecco: "108 cl", eauGaz: "36 cl", orange: "6 rondelles", vin: "600 ml" },
-      { nb: 13, aperol: "78 cl", prosecco: "117 cl", eauGaz: "39 cl", orange: "6½ rondelles", vin: "650 ml" },
-      { nb: 14, aperol: "84 cl", prosecco: "126 cl", eauGaz: "42 cl", orange: "7 rondelles", vin: "700 ml" },
-      { nb: 15, aperol: "90 cl", prosecco: "135 cl", eauGaz: "45 cl", orange: "7½ rondelles", vin: "750 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧊", titre: "Préparer le verre", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
-      { icone: "🥂", titre: "Verser dans l'ordre", detail: "Verser d'abord le prosecco, puis l'Aperol, puis l'eau gazeuse. Cet ordre préserve les bulles.", badge: null },
-      { icone: "🍊", titre: "Garnir et servir", detail: "Garnir d'une rondelle d'orange et d'une olive verte. Mélanger très délicatement.", badge: null }
-    ]
-  },
-  sangria: {
-    cat: "cocktails", saisons: ["ete","hiver"], pays: "espagne",
-    base: 6,
-    temps: "15 min + 2h repos",
-    niveau: "⭐ Facile",
-    emoji: "🍷",
-    description: "La sangria espagnole — vin rouge fruité, brandy, jus d'orange et fruits frais. Parfaite pour les grandes tablées.",
-    tableauSangria: [
-      { nb: 1, vin: "125 ml", brandy: "1 cl", orangeJus: "3 cl", sucre: "1 c.à.c", orange: "¼", citron: "¼", peche: "¼" },
-      { nb: 2, vin: "250 ml", brandy: "2 cl", orangeJus: "6 cl", sucre: "2 c.à.c", orange: "½", citron: "½", peche: "½" },
-      { nb: 3, vin: "375 ml", brandy: "3 cl", orangeJus: "9 cl", sucre: "3 c.à.c", orange: "¾", citron: "¾", peche: "¾" },
-      { nb: 4, vin: "500 ml", brandy: "4 cl", orangeJus: "12 cl", sucre: "4 c.à.c", orange: "1", citron: "1", peche: "1" },
-      { nb: 5, vin: "625 ml", brandy: "5 cl", orangeJus: "15 cl", sucre: "5 c.à.c", orange: "1", citron: "1", peche: "1" },
-      { nb: 6, vin: "750 ml", brandy: "6 cl", orangeJus: "18 cl", sucre: "6 c.à.c", orange: "1", citron: "1", peche: "2" },
-      { nb: 7, vin: "875 ml", brandy: "7 cl", orangeJus: "21 cl", sucre: "7 c.à.c", orange: "1½", citron: "1", peche: "2" },
-      { nb: 8, vin: "1 L", brandy: "8 cl", orangeJus: "24 cl", sucre: "8 c.à.c", orange: "1½", citron: "1½", peche: "2" },
-      { nb: 9, vin: "1.1 L", brandy: "9 cl", orangeJus: "27 cl", sucre: "9 c.à.c", orange: "2", citron: "1½", peche: "3" },
-      { nb: 10, vin: "1.25 L", brandy: "10 cl", orangeJus: "30 cl", sucre: "10 c.à.c", orange: "2", citron: "2", peche: "3" },
-      { nb: 11, vin: "1.4 L", brandy: "11 cl", orangeJus: "33 cl", sucre: "11 c.à.c", orange: "2", citron: "2", peche: "3" },
-      { nb: 12, vin: "1.5 L", brandy: "12 cl", orangeJus: "36 cl", sucre: "12 c.à.c", orange: "2", citron: "2", peche: "4" },
-      { nb: 13, vin: "1.6 L", brandy: "13 cl", orangeJus: "39 cl", sucre: "13 c.à.c", orange: "2½", citron: "2", peche: "4" },
-      { nb: 14, vin: "1.75 L", brandy: "14 cl", orangeJus: "42 cl", sucre: "14 c.à.c", orange: "2½", citron: "2½", peche: "4" },
-      { nb: 15, vin: "1.9 L", brandy: "15 cl", orangeJus: "45 cl", sucre: "15 c.à.c", orange: "3", citron: "2½", peche: "5" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍊", titre: "Préparer les fruits", detail: "Couper orange, citron et pêche en tranches ou en dés. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍷", titre: "Mélanger", detail: "Dans un grand pichet, verser le vin rouge, le brandy, le jus d'orange et le sucre. Bien mélanger pour dissoudre le sucre.", badge: null },
-      { icone: "🍑", titre: "Ajouter les fruits", detail: "Ajouter les fruits coupés. Mélanger.", badge: null },
-      { icone: "❄️", titre: "Repos au frigo", detail: "Réfrigérer au moins 2h pour que les saveurs se mélangent. Servir avec des glaçons et compléter avec du jus d'orange si trop fort.", badge: "⏱ 2h minimum" }
-    ]
-  },
-  pinacolada: {
-    cat: "cocktails", pays: "usa",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🥥",
-    description: "La Piña Colada portoricaine — rhum blanc, crème de coco et ananas. Le cocktail tropical par excellence.",
-    tableauPinaColada: [
-      { nb: 1, rhum: "5 cl", cremeCoco: "3 cl", ananas: "12 cl", glace: "1 poignée" },
-      { nb: 2, rhum: "10 cl", cremeCoco: "6 cl", ananas: "24 cl", glace: "2 poignées" },
-      { nb: 3, rhum: "15 cl", cremeCoco: "9 cl", ananas: "36 cl", glace: "3 poignées" },
-      { nb: 4, rhum: "20 cl", cremeCoco: "12 cl", ananas: "48 cl", glace: "4 poignées" },
-      { nb: 5, rhum: "25 cl", cremeCoco: "15 cl", ananas: "60 cl", glace: "5 poignées" },
-      { nb: 6, rhum: "30 cl", cremeCoco: "18 cl", ananas: "72 cl", glace: "6 poignées" },
-      { nb: 7, rhum: "35 cl", cremeCoco: "21 cl", ananas: "84 cl", glace: "7 poignées" },
-      { nb: 8, rhum: "40 cl", cremeCoco: "24 cl", ananas: "96 cl", glace: "8 poignées" },
-      { nb: 9, rhum: "45 cl", cremeCoco: "27 cl", ananas: "108 cl", glace: "9 poignées" },
-      { nb: 10, rhum: "50 cl", cremeCoco: "30 cl", ananas: "120 cl", glace: "10 poignées" },
-      { nb: 11, rhum: "55 cl", cremeCoco: "33 cl", ananas: "132 cl", glace: "11 poignées" },
-      { nb: 12, rhum: "60 cl", cremeCoco: "36 cl", ananas: "144 cl", glace: "12 poignées" },
-      { nb: 13, rhum: "65 cl", cremeCoco: "39 cl", ananas: "156 cl", glace: "13 poignées" },
-      { nb: 14, rhum: "70 cl", cremeCoco: "42 cl", ananas: "168 cl", glace: "14 poignées" },
-      { nb: 15, rhum: "75 cl", cremeCoco: "45 cl", ananas: "180 cl", glace: "15 poignées" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mettre tous les ingrédients dans un blender avec la glace pilée. Mixer jusqu'à obtenir une texture lisse et crémeuse.", badge: "⏱ 30 sec blender" },
-      { icone: "🥥", titre: "Servir", detail: "Verser dans un grand verre. Garnir d'une tranche d'ananas et d'une cerise. Servir avec une paille.", badge: null }
-    ]
-  },
-  daiquiri: {
-    cat: "cocktails", pays: "cuba",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🍸",
-    description: "Le Daiquiri cubain — rhum blanc, jus de citron vert et sucre de canne. Simple, élégant et parfaitement équilibré.",
-    tableauDaiquiri: [
-      { nb: 1, rhum: "5 cl", citron: "2.5 cl", sucre: "1.5 cl" },
-      { nb: 2, rhum: "10 cl", citron: "5 cl", sucre: "3 cl" },
-      { nb: 3, rhum: "15 cl", citron: "7.5 cl", sucre: "4.5 cl" },
-      { nb: 4, rhum: "20 cl", citron: "10 cl", sucre: "6 cl" },
-      { nb: 5, rhum: "25 cl", citron: "12.5 cl", sucre: "7.5 cl" },
-      { nb: 6, rhum: "30 cl", citron: "15 cl", sucre: "9 cl" },
-      { nb: 7, rhum: "35 cl", citron: "17.5 cl", sucre: "10.5 cl" },
-      { nb: 8, rhum: "40 cl", citron: "20 cl", sucre: "12 cl" },
-      { nb: 9, rhum: "45 cl", citron: "22.5 cl", sucre: "13.5 cl" },
-      { nb: 10, rhum: "50 cl", citron: "25 cl", sucre: "15 cl" },
-      { nb: 11, rhum: "55 cl", citron: "27.5 cl", sucre: "16.5 cl" },
-      { nb: 12, rhum: "60 cl", citron: "30 cl", sucre: "18 cl" },
-      { nb: 13, rhum: "65 cl", citron: "32.5 cl", sucre: "19.5 cl" },
-      { nb: 14, rhum: "70 cl", citron: "35 cl", sucre: "21 cl" },
-      { nb: 15, rhum: "75 cl", citron: "37.5 cl", sucre: "22.5 cl" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🍹", titre: "Shaker avec glace", detail: "Mettre de la glace dans le shaker. Ajouter rhum blanc, jus de citron vert fraîchement pressé et sirop de sucre de canne.", badge: null },
-      { icone: "🥶", titre: "Shaker vigoureusement", detail: "Shaker fort pendant 15 secondes pour bien refroidir et diluer légèrement.", badge: "⏱ 15 sec" },
-      { icone: "🍸", titre: "Filtrer et servir", detail: "Filtrer dans un verre à cocktail refroidi. Garnir d'un zeste de citron vert.", badge: null }
-    ]
-  },
-  whiskysour: {
-    cat: "cocktails", pays: "usa",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🥃",
-    description: "Le Whisky Sour — bourbon, jus de citron, sirop de sucre et blanc d'œuf pour la mousse. Un classique américain.",
-    tableauWhiskySour: [
-      { nb: 1, bourbon: "5 cl", citron: "2.5 cl", sirop: "2 cl", blanc: "1" },
-      { nb: 2, bourbon: "10 cl", citron: "5 cl", sirop: "4 cl", blanc: "1" },
-      { nb: 3, bourbon: "15 cl", citron: "7.5 cl", sirop: "6 cl", blanc: "2" },
-      { nb: 4, bourbon: "20 cl", citron: "10 cl", sirop: "8 cl", blanc: "2" },
-      { nb: 5, bourbon: "25 cl", citron: "12.5 cl", sirop: "10 cl", blanc: "3" },
-      { nb: 6, bourbon: "30 cl", citron: "15 cl", sirop: "12 cl", blanc: "3" },
-      { nb: 7, bourbon: "35 cl", citron: "17.5 cl", sirop: "14 cl", blanc: "4" },
-      { nb: 8, bourbon: "40 cl", citron: "20 cl", sirop: "16 cl", blanc: "4" },
-      { nb: 9, bourbon: "45 cl", citron: "22.5 cl", sirop: "18 cl", blanc: "5" },
-      { nb: 10, bourbon: "50 cl", citron: "25 cl", sirop: "20 cl", blanc: "5" },
-      { nb: 11, bourbon: "55 cl", citron: "27.5 cl", sirop: "22 cl", blanc: "6" },
-      { nb: 12, bourbon: "60 cl", citron: "30 cl", sirop: "24 cl", blanc: "6" },
-      { nb: 13, bourbon: "65 cl", citron: "32.5 cl", sirop: "26 cl", blanc: "7" },
-      { nb: 14, bourbon: "70 cl", citron: "35 cl", sirop: "28 cl", blanc: "7" },
-      { nb: 15, bourbon: "75 cl", citron: "37.5 cl", sirop: "30 cl", blanc: "8" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🥚", titre: "Dry shake", detail: "Mettre tous les ingrédients dans le shaker SANS glace. Shaker fort 10 sec pour émulsionner le blanc d'œuf.", badge: "⏱ 10 sec sans glace" },
-      { icone: "🧊", titre: "Wet shake", detail: "Ajouter de la glace et shaker à nouveau vigoureusement.", badge: "⏱ 15 sec avec glace" },
-      { icone: "🥃", titre: "Servir", detail: "Filtrer dans un verre avec glaçons. Garnir d'une cerise et d'une rondelle de citron. La mousse de blanc d'œuf doit être belle et onctueuse.", badge: null }
-    ]
-  },
-  virginmojito: {
-    cat: "mocktails", pays: "france",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🥤",
-    description: "Le Virgin Mojito — menthe fraîche, citron vert, sucre de canne et eau gazeuse. Toute la fraîcheur du mojito, sans alcool !",
-    tableauVirginMojito: [
-      { nb: 1, citron: "1", menthe: "10 feuilles", sucre: "2 c.à.c", eauGaz: "15 cl", sirop: "1 cl" },
-      { nb: 2, citron: "2", menthe: "20 feuilles", sucre: "4 c.à.c", eauGaz: "30 cl", sirop: "2 cl" },
-      { nb: 3, citron: "3", menthe: "30 feuilles", sucre: "6 c.à.c", eauGaz: "45 cl", sirop: "3 cl" },
-      { nb: 4, citron: "4", menthe: "40 feuilles", sucre: "8 c.à.c", eauGaz: "60 cl", sirop: "4 cl" },
-      { nb: 5, citron: "5", menthe: "50 feuilles", sucre: "10 c.à.c", eauGaz: "75 cl", sirop: "5 cl" },
-      { nb: 6, citron: "6", menthe: "60 feuilles", sucre: "12 c.à.c", eauGaz: "90 cl", sirop: "6 cl" },
-      { nb: 7, citron: "7", menthe: "70 feuilles", sucre: "14 c.à.c", eauGaz: "1 L", sirop: "7 cl" },
-      { nb: 8, citron: "8", menthe: "80 feuilles", sucre: "16 c.à.c", eauGaz: "1.2 L", sirop: "8 cl" },
-      { nb: 9, citron: "9", menthe: "90 feuilles", sucre: "18 c.à.c", eauGaz: "1.35 L", sirop: "9 cl" },
-      { nb: 10, citron: "10", menthe: "100 feuilles", sucre: "20 c.à.c", eauGaz: "1.5 L", sirop: "10 cl" },
-      { nb: 11, citron: "11", menthe: "110 feuilles", sucre: "22 c.à.c", eauGaz: "1.65 L", sirop: "11 cl" },
-      { nb: 12, citron: "12", menthe: "120 feuilles", sucre: "24 c.à.c", eauGaz: "1.8 L", sirop: "12 cl" },
-      { nb: 13, citron: "13", menthe: "130 feuilles", sucre: "26 c.à.c", eauGaz: "1.95 L", sirop: "13 cl" },
-      { nb: 14, citron: "14", menthe: "140 feuilles", sucre: "28 c.à.c", eauGaz: "2.1 L", sirop: "14 cl" },
-      { nb: 15, citron: "15", menthe: "150 feuilles", sucre: "30 c.à.c", eauGaz: "2.25 L", sirop: "15 cl" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🍋", titre: "Piler menthe + citron", detail: "Dans un verre, mettre les feuilles de menthe et le sucre. Presser le citron vert par-dessus. Piler doucement.", badge: null },
-      { icone: "🧊", titre: "Glace", detail: "Remplir de glace pilée.", badge: null },
-      { icone: "💧", titre: "Compléter", detail: "Ajouter le sirop de menthe et l'eau gazeuse. Mélanger délicatement. Garnir de menthe fraîche.", badge: null },
-      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
-    ]
-  },
-  limonademaison: {
-    cat: "mocktails", pays: "france",
-    base: 4,
-    temps: "10 min",
-    niveau: "⭐ Facile",
-    emoji: "🍋",
-    description: "La limonade maison fraîche et naturelle — citrons pressés, sucre de canne et eau gazeuse. Bien meilleure que celle du commerce !",
-    tableauLimonade: [
-      { nb: 1, citrons: "1", sucre: "2 c.à.s", eauGaz: "20 cl", menthe: "3 feuilles" },
-      { nb: 2, citrons: "1", sucre: "3 c.à.s", eauGaz: "40 cl", menthe: "6 feuilles" },
-      { nb: 3, citrons: "2", sucre: "5 c.à.s", eauGaz: "60 cl", menthe: "9 feuilles" },
-      { nb: 4, citrons: "3", sucre: "6 c.à.s", eauGaz: "80 cl", menthe: "12 feuilles" },
-      { nb: 5, citrons: "3", sucre: "8 c.à.s", eauGaz: "100 cl", menthe: "15 feuilles" },
-      { nb: 6, citrons: "4", sucre: "9 c.à.s", eauGaz: "120 cl", menthe: "18 feuilles" },
-      { nb: 7, citrons: "5", sucre: "11 c.à.s", eauGaz: "140 cl", menthe: "21 feuilles" },
-      { nb: 8, citrons: "5", sucre: "12 c.à.s", eauGaz: "160 cl", menthe: "24 feuilles" },
-      { nb: 9, citrons: "6", sucre: "14 c.à.s", eauGaz: "180 cl", menthe: "27 feuilles" },
-      { nb: 10, citrons: "7", sucre: "15 c.à.s", eauGaz: "200 cl", menthe: "30 feuilles" },
-      { nb: 11, citrons: "7", sucre: "17 c.à.s", eauGaz: "220 cl", menthe: "33 feuilles" },
-      { nb: 12, citrons: "8", sucre: "18 c.à.s", eauGaz: "240 cl", menthe: "36 feuilles" },
-      { nb: 13, citrons: "9", sucre: "20 c.à.s", eauGaz: "260 cl", menthe: "39 feuilles" },
-      { nb: 14, citrons: "9", sucre: "21 c.à.s", eauGaz: "280 cl", menthe: "42 feuilles" },
-      { nb: 15, citrons: "10", sucre: "23 c.à.s", eauGaz: "300 cl", menthe: "45 feuilles" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍋", titre: "Préparer le sirop", detail: "Faire chauffer 100ml d'eau avec le sucre jusqu'à dissolution complète. Laisser refroidir.", badge: null },
-      { icone: "🍋", titre: "Presser les citrons", detail: "Presser les citrons. Filtrer le jus.", badge: null },
-      { icone: "🥤", titre: "Assembler", detail: "Mélanger jus de citron et sirop refroidi. Ajouter l'eau gazeuse froide. Mélanger délicatement.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Servir dans des grands verres avec glaçons, rondelles de citron et feuilles de menthe.", badge: null }
-    ]
-  },
-  smoothiemangopassion: {
-    cat: "mocktails", pays: "france",
-    base: 2,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🥭",
-    description: "Smoothie mangue passion tropical — onctueux, vitaminé et sans alcool. Un vrai voyage sous les tropiques !",
-    tableauSmoothieMango: [
-      { nb: 1, mangue: "100 g", passion: "1", banane: "½", lait: "80 ml", miel: "1 c.à.c" },
-      { nb: 2, mangue: "200 g", passion: "2", banane: "1", lait: "160 ml", miel: "2 c.à.c" },
-      { nb: 3, mangue: "300 g", passion: "3", banane: "1½", lait: "240 ml", miel: "3 c.à.c" },
-      { nb: 4, mangue: "400 g", passion: "4", banane: "2", lait: "320 ml", miel: "4 c.à.c" },
-      { nb: 5, mangue: "500 g", passion: "5", banane: "2½", lait: "400 ml", miel: "5 c.à.c" },
-      { nb: 6, mangue: "600 g", passion: "6", banane: "3", lait: "480 ml", miel: "6 c.à.c" },
-      { nb: 7, mangue: "700 g", passion: "7", banane: "3½", lait: "560 ml", miel: "7 c.à.c" },
-      { nb: 8, mangue: "800 g", passion: "8", banane: "4", lait: "640 ml", miel: "8 c.à.c" },
-      { nb: 9, mangue: "900 g", passion: "9", banane: "4½", lait: "720 ml", miel: "9 c.à.c" },
-      { nb: 10, mangue: "1 kg", passion: "10", banane: "5", lait: "800 ml", miel: "10 c.à.c" },
-      { nb: 11, mangue: "1.1 kg", passion: "11", banane: "5½", lait: "880 ml", miel: "11 c.à.c" },
-      { nb: 12, mangue: "1.2 kg", passion: "12", banane: "6", lait: "960 ml", miel: "12 c.à.c" },
-      { nb: 13, mangue: "1.3 kg", passion: "13", banane: "6½", lait: "1040 ml", miel: "13 c.à.c" },
-      { nb: 14, mangue: "1.4 kg", passion: "14", banane: "7", lait: "1120 ml", miel: "14 c.à.c" },
-      { nb: 15, mangue: "1.5 kg", passion: "15", banane: "7½", lait: "1200 ml", miel: "15 c.à.c" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥭", titre: "Préparer les fruits", detail: "Éplucher et couper la mangue en morceaux. Couper les fruits de la passion en deux et récupérer la pulpe. Éplucher la banane. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌀", titre: "Mixer", detail: "Mettre tous les ingrédients dans le blender avec quelques glaçons. Mixer jusqu'à texture lisse.", badge: "⏱ 30 sec" },
-      { icone: "🥤", titre: "Servir", detail: "Verser dans des grands verres. Décorer d'une tranche de mangue et d'une paille. Déguster immédiatement !", badge: null }
-    ]
-  },
-  citronadementhe: {
-    cat: "mocktails", pays: "france",
-    base: 4,
-    temps: "10 min",
-    niveau: "⭐ Facile",
-    emoji: "🌿",
-    description: "La citronnade à la menthe maison — fraîche, parfumée et naturelle. La boisson estivale incontournable sans alcool.",
-    tableauCitronade: [
-      { nb: 1, citrons: "1", menthe: "5 feuilles", sucre: "2 c.à.s", eau: "20 cl" },
-      { nb: 2, citrons: "1", menthe: "8 feuilles", sucre: "3 c.à.s", eau: "40 cl" },
-      { nb: 3, citrons: "2", menthe: "10 feuilles", sucre: "5 c.à.s", eau: "60 cl" },
-      { nb: 4, citrons: "2", menthe: "15 feuilles", sucre: "6 c.à.s", eau: "80 cl" },
-      { nb: 5, citrons: "3", menthe: "18 feuilles", sucre: "8 c.à.s", eau: "100 cl" },
-      { nb: 6, citrons: "3", menthe: "20 feuilles", sucre: "9 c.à.s", eau: "120 cl" },
-      { nb: 7, citrons: "4", menthe: "25 feuilles", sucre: "11 c.à.s", eau: "140 cl" },
-      { nb: 8, citrons: "4", menthe: "28 feuilles", sucre: "12 c.à.s", eau: "160 cl" },
-      { nb: 9, citrons: "5", menthe: "30 feuilles", sucre: "14 c.à.s", eau: "180 cl" },
-      { nb: 10, citrons: "5", menthe: "35 feuilles", sucre: "15 c.à.s", eau: "200 cl" },
-      { nb: 11, citrons: "6", menthe: "38 feuilles", sucre: "17 c.à.s", eau: "220 cl" },
-      { nb: 12, citrons: "6", menthe: "40 feuilles", sucre: "18 c.à.s", eau: "240 cl" },
-      { nb: 13, citrons: "7", menthe: "45 feuilles", sucre: "20 c.à.s", eau: "260 cl" },
-      { nb: 14, citrons: "7", menthe: "48 feuilles", sucre: "21 c.à.s", eau: "280 cl" },
-      { nb: 15, citrons: "8", menthe: "50 feuilles", sucre: "23 c.à.s", eau: "300 cl" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🌿", titre: "Sirop menthe", detail: "Chauffer 100ml d'eau avec le sucre et la menthe. Laisser infuser 10 min hors du feu. Filtrer et refroidir.", badge: "⏱ 10 min infusion" },
-      { icone: "🍋", titre: "Presser les citrons", detail: "Presser les citrons et filtrer le jus.", badge: null },
-      { icone: "🥤", titre: "Assembler et servir", detail: "Mélanger jus de citron, sirop à la menthe et eau fraîche. Servir avec glaçons et feuilles de menthe fraîches.", badge: null }
-    ]
-  },
-  jusPastequeMenuthe: {
-    cat: "mocktails", saisons: ["ete"], pays: "france",
-    base: 4,
-    temps: "10 min",
-    niveau: "⭐ Facile",
-    emoji: "🍉",
-    description: "Jus de pastèque à la menthe — ultra rafraîchissant, naturellement sucré et plein de vitamines. Le mocktail de l'été !",
-    tableauJusPasteque: [
-      { nb: 1, pasteque: "250 g", menthe: "3 feuilles", citron: "¼", gingembre: "½ cm" },
-      { nb: 2, pasteque: "500 g", menthe: "5 feuilles", citron: "½", gingembre: "1 cm" },
-      { nb: 3, pasteque: "750 g", menthe: "8 feuilles", citron: "¾", gingembre: "1 cm" },
-      { nb: 4, pasteque: "1 kg", menthe: "10 feuilles", citron: "1", gingembre: "2 cm" },
-      { nb: 5, pasteque: "1.25 kg", menthe: "12 feuilles", citron: "1", gingembre: "2 cm" },
-      { nb: 6, pasteque: "1.5 kg", menthe: "15 feuilles", citron: "1½", gingembre: "2 cm" },
-      { nb: 7, pasteque: "1.75 kg", menthe: "18 feuilles", citron: "1½", gingembre: "3 cm" },
-      { nb: 8, pasteque: "2 kg", menthe: "20 feuilles", citron: "2", gingembre: "3 cm" },
-      { nb: 9, pasteque: "2.25 kg", menthe: "22 feuilles", citron: "2", gingembre: "3 cm" },
-      { nb: 10, pasteque: "2.5 kg", menthe: "25 feuilles", citron: "2½", gingembre: "4 cm" },
-      { nb: 11, pasteque: "2.75 kg", menthe: "28 feuilles", citron: "2½", gingembre: "4 cm" },
-      { nb: 12, pasteque: "3 kg", menthe: "30 feuilles", citron: "3", gingembre: "4 cm" },
-      { nb: 13, pasteque: "3.25 kg", menthe: "32 feuilles", citron: "3", gingembre: "5 cm" },
-      { nb: 14, pasteque: "3.5 kg", menthe: "35 feuilles", citron: "3½", gingembre: "5 cm" },
-      { nb: 15, pasteque: "3.75 kg", menthe: "38 feuilles", citron: "3½", gingembre: "5 cm" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍉", titre: "Préparer la pastèque", detail: "Couper la pastèque en morceaux, retirer les pépins et enlever la peau. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer la pastèque avec la menthe, le jus de citron et le gingembre râpé jusqu'à texture lisse.", badge: "⏱ 30 sec" },
-      { icone: "🥤", titre: "Filtrer et servir", detail: "Filtrer si souhaité. Servir très frais avec glaçons et feuilles de menthe. Ne pas sucrer — la pastèque est naturellement sucrée !", badge: null }
-    ]
-  },
-  virginpinacolada: {
-    cat: "mocktails", pays: "france",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🥥",
-    description: "Virgin Piña Colada — lait de coco, jus d'ananas et glace pilée. Toute la magie tropicale, sans alcool !",
-    tableauVirginPina: [
-      { nb: 1, cremeCoco: "6 cl", ananas: "12 cl", laitCoco: "4 cl", glace: "1 poignée" },
-      { nb: 2, cremeCoco: "12 cl", ananas: "24 cl", laitCoco: "8 cl", glace: "2 poignées" },
-      { nb: 3, cremeCoco: "18 cl", ananas: "36 cl", laitCoco: "12 cl", glace: "3 poignées" },
-      { nb: 4, cremeCoco: "24 cl", ananas: "48 cl", laitCoco: "16 cl", glace: "4 poignées" },
-      { nb: 5, cremeCoco: "30 cl", ananas: "60 cl", laitCoco: "20 cl", glace: "5 poignées" },
-      { nb: 6, cremeCoco: "36 cl", ananas: "72 cl", laitCoco: "24 cl", glace: "6 poignées" },
-      { nb: 7, cremeCoco: "42 cl", ananas: "84 cl", laitCoco: "28 cl", glace: "7 poignées" },
-      { nb: 8, cremeCoco: "48 cl", ananas: "96 cl", laitCoco: "32 cl", glace: "8 poignées" },
-      { nb: 9, cremeCoco: "54 cl", ananas: "108 cl", laitCoco: "36 cl", glace: "9 poignées" },
-      { nb: 10, cremeCoco: "60 cl", ananas: "120 cl", laitCoco: "40 cl", glace: "10 poignées" },
-      { nb: 11, cremeCoco: "66 cl", ananas: "132 cl", laitCoco: "44 cl", glace: "11 poignées" },
-      { nb: 12, cremeCoco: "72 cl", ananas: "144 cl", laitCoco: "48 cl", glace: "12 poignées" },
-      { nb: 13, cremeCoco: "78 cl", ananas: "156 cl", laitCoco: "52 cl", glace: "13 poignées" },
-      { nb: 14, cremeCoco: "84 cl", ananas: "168 cl", laitCoco: "56 cl", glace: "14 poignées" },
-      { nb: 15, cremeCoco: "90 cl", ananas: "180 cl", laitCoco: "60 cl", glace: "15 poignées" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mettre tous les ingrédients dans le blender avec la glace pilée. Mixer jusqu'à texture crémeuse et onctueuse.", badge: "⏱ 30 sec" },
-      { icone: "🥥", titre: "Servir", detail: "Verser dans un grand verre. Décorer d'une tranche d'ananas, de noix de coco râpée et d'une paille. Servir immédiatement !", badge: null }
-    ]
-  },
   ramenjaponais: {
     cat: "plats", pays: "japon",
     base: 2,
@@ -2509,325 +2066,6 @@ const recettes = {
       { icone: "🫙", titre: "Préparer les moules", detail: "Préchauffer le four à 250°C. Badigeonner les moules en cuivre (ou silicone) de beurre d'abeille ou beurre + cire d'abeille pour une croûte parfaite. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
       { icone: "🔥", titre: "Cuisson en deux temps", detail: "Remplir les moules aux ¾. Cuire 15 min à 250°C pour la croûte, puis baisser à 180°C pour le reste. Les cannelés doivent être très sombres (presque noirs) à l'extérieur.", badge: "⏱ 15 min à 250°C + 45 min à 180°C" },
       { icone: "⏳", titre: "Démouler tiède", detail: "Démouler après 5 min. Déguster tiède pour le contraste croustillant/moelleux maximal. Se conservent 24h.", badge: null }
-    ]
-  },
-  mojitorose: {
-    cat: "cocktails", saisons: ["ete","printemps"], pays: "cuba",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🌹",
-    description: "Le Mojito Rosé — rhum blanc, fraises fraîches, menthe, citron vert et eau gazeuse. Une version fruitée et colorée du classique.",
-    tableauMojitoRose: [
-      { nb: 1, rhum: "5 cl", fraises: "4", menthe: "6 feuilles", citron: "½", sucre: "2 c.à.c", eauGaz: "10 cl" },
-      { nb: 2, rhum: "10 cl", fraises: "8", menthe: "12 feuilles", citron: "1", sucre: "4 c.à.c", eauGaz: "20 cl" },
-      { nb: 3, rhum: "15 cl", fraises: "12", menthe: "18 feuilles", citron: "1½", sucre: "6 c.à.c", eauGaz: "30 cl" },
-      { nb: 4, rhum: "20 cl", fraises: "16", menthe: "24 feuilles", citron: "2", sucre: "8 c.à.c", eauGaz: "40 cl" },
-      { nb: 5, rhum: "25 cl", fraises: "20", menthe: "30 feuilles", citron: "2½", sucre: "10 c.à.c", eauGaz: "50 cl" },
-      { nb: 6, rhum: "30 cl", fraises: "24", menthe: "36 feuilles", citron: "3", sucre: "12 c.à.c", eauGaz: "60 cl" },
-      { nb: 7, rhum: "35 cl", fraises: "28", menthe: "42 feuilles", citron: "3½", sucre: "14 c.à.c", eauGaz: "70 cl" },
-      { nb: 8, rhum: "40 cl", fraises: "32", menthe: "48 feuilles", citron: "4", sucre: "16 c.à.c", eauGaz: "80 cl" },
-      { nb: 9, rhum: "45 cl", fraises: "36", menthe: "54 feuilles", citron: "4½", sucre: "18 c.à.c", eauGaz: "90 cl" },
-      { nb: 10, rhum: "50 cl", fraises: "40", menthe: "60 feuilles", citron: "5", sucre: "20 c.à.c", eauGaz: "1 L" },
-      { nb: 11, rhum: "55 cl", fraises: "44", menthe: "66 feuilles", citron: "5½", sucre: "22 c.à.c", eauGaz: "1.1 L" },
-      { nb: 12, rhum: "60 cl", fraises: "48", menthe: "72 feuilles", citron: "6", sucre: "24 c.à.c", eauGaz: "1.2 L" },
-      { nb: 13, rhum: "65 cl", fraises: "52", menthe: "78 feuilles", citron: "6½", sucre: "26 c.à.c", eauGaz: "1.3 L" },
-      { nb: 14, rhum: "70 cl", fraises: "56", menthe: "84 feuilles", citron: "7", sucre: "28 c.à.c", eauGaz: "1.4 L" },
-      { nb: 15, rhum: "75 cl", fraises: "60", menthe: "90 feuilles", citron: "7½", sucre: "30 c.à.c", eauGaz: "1.5 L" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍓", titre: "Écraser les fraises", detail: "Couper les fraises en deux et les placer dans le verre avec le sucre. Écraser doucement pour libérer le jus. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌿", titre: "Ajouter menthe et citron", detail: "Ajouter les feuilles de menthe et le jus de citron vert. Piler légèrement.", badge: null },
-      { icone: "🧊", titre: "Glace et rhum", detail: "Remplir de glace pilée. Verser le rhum blanc.", badge: null },
-      { icone: "💧", titre: "Compléter", detail: "Compléter avec l'eau gazeuse. Mélanger délicatement. Décorer d'une fraise et de menthe fraîche.", badge: null }
-    ]
-  },
-  negroni: {
-    cat: "cocktails", saisons: ["hiver"], pays: "italie",
-    base: 1,
-    temps: "2 min",
-    niveau: "⭐ Facile",
-    emoji: "🍊",
-    description: "Le Negroni — gin, Campari et vermouth rouge en proportions égales. L'apéritif italien au goût amer et complexe.",
-    tableauNegroni: [
-      { nb: 1, gin: "3 cl", campari: "3 cl", vermouth: "3 cl", orange: "1 zeste", vin: "50 ml" },
-      { nb: 2, gin: "6 cl", campari: "6 cl", vermouth: "6 cl", orange: "2 zestes", vin: "100 ml" },
-      { nb: 3, gin: "9 cl", campari: "9 cl", vermouth: "9 cl", orange: "3 zestes", vin: "150 ml" },
-      { nb: 4, gin: "12 cl", campari: "12 cl", vermouth: "12 cl", orange: "4 zestes", vin: "200 ml" },
-      { nb: 5, gin: "15 cl", campari: "15 cl", vermouth: "15 cl", orange: "5 zestes", vin: "250 ml" },
-      { nb: 6, gin: "18 cl", campari: "18 cl", vermouth: "18 cl", orange: "6 zestes", vin: "300 ml" },
-      { nb: 7, gin: "21 cl", campari: "21 cl", vermouth: "21 cl", orange: "7 zestes", vin: "350 ml" },
-      { nb: 8, gin: "24 cl", campari: "24 cl", vermouth: "24 cl", orange: "8 zestes", vin: "400 ml" },
-      { nb: 9, gin: "27 cl", campari: "27 cl", vermouth: "27 cl", orange: "9 zestes", vin: "450 ml" },
-      { nb: 10, gin: "30 cl", campari: "30 cl", vermouth: "30 cl", orange: "10 zestes", vin: "500 ml" },
-      { nb: 11, gin: "33 cl", campari: "33 cl", vermouth: "33 cl", orange: "11 zestes", vin: "550 ml" },
-      { nb: 12, gin: "36 cl", campari: "36 cl", vermouth: "36 cl", orange: "12 zestes", vin: "600 ml" },
-      { nb: 13, gin: "39 cl", campari: "39 cl", vermouth: "39 cl", orange: "13 zestes", vin: "650 ml" },
-      { nb: 14, gin: "42 cl", campari: "42 cl", vermouth: "42 cl", orange: "14 zestes", vin: "700 ml" },
-      { nb: 15, gin: "45 cl", campari: "45 cl", vermouth: "45 cl", orange: "15 zestes", vin: "750 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧊", titre: "Verre plein de glace", detail: "Remplir un verre old-fashioned ou à vin de glaçons.", badge: null },
-      { icone: "🍶", titre: "Verser les 3 spiritueux", detail: "Verser gin, Campari et vermouth rouge en proportions égales. Mélanger doucement avec une cuillère longue pendant 30 secondes.", badge: "⏱ 30 sec mélange" },
-      { icone: "🍊", titre: "Zeste d'orange", detail: "Presser un zeste d'orange au-dessus du verre pour libérer les huiles essentielles. Frotter le rebord avec le zeste et déposer dans le verre.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
-  },
-  moscowmule: {
-    cat: "cocktails", pays: "usa",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🫙",
-    description: "Le Moscow Mule — vodka, ginger beer et citron vert. Servi dans sa célèbre tasse en cuivre, pétillant et rafraîchissant.",
-    tableauMoscowMule: [
-      { nb: 1, vodka: "5 cl", gingerBeer: "12 cl", citron: "½", menthe: "3 feuilles" },
-      { nb: 2, vodka: "10 cl", gingerBeer: "24 cl", citron: "1", menthe: "6 feuilles" },
-      { nb: 3, vodka: "15 cl", gingerBeer: "36 cl", citron: "1½", menthe: "9 feuilles" },
-      { nb: 4, vodka: "20 cl", gingerBeer: "48 cl", citron: "2", menthe: "12 feuilles" },
-      { nb: 5, vodka: "25 cl", gingerBeer: "60 cl", citron: "2½", menthe: "15 feuilles" },
-      { nb: 6, vodka: "30 cl", gingerBeer: "72 cl", citron: "3", menthe: "18 feuilles" },
-      { nb: 7, vodka: "35 cl", gingerBeer: "84 cl", citron: "3½", menthe: "21 feuilles" },
-      { nb: 8, vodka: "40 cl", gingerBeer: "96 cl", citron: "4", menthe: "24 feuilles" },
-      { nb: 9, vodka: "45 cl", gingerBeer: "108 cl", citron: "4½", menthe: "27 feuilles" },
-      { nb: 10, vodka: "50 cl", gingerBeer: "120 cl", citron: "5", menthe: "30 feuilles" },
-      { nb: 11, vodka: "55 cl", gingerBeer: "132 cl", citron: "5½", menthe: "33 feuilles" },
-      { nb: 12, vodka: "60 cl", gingerBeer: "144 cl", citron: "6", menthe: "36 feuilles" },
-      { nb: 13, vodka: "65 cl", gingerBeer: "156 cl", citron: "6½", menthe: "39 feuilles" },
-      { nb: 14, vodka: "70 cl", gingerBeer: "168 cl", citron: "7", menthe: "42 feuilles" },
-      { nb: 15, vodka: "75 cl", gingerBeer: "180 cl", citron: "7½", menthe: "45 feuilles" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧊", titre: "Tasse en cuivre et glace", detail: "Remplir une tasse en cuivre (ou grand verre) de glace pilée.", badge: null },
-      { icone: "🍶", titre: "Vodka et citron", detail: "Verser la vodka. Presser le jus du citron vert par-dessus.", badge: null },
-      { icone: "💧", titre: "Ginger beer", detail: "Compléter avec la ginger beer bien froide. Mélanger délicatement.", badge: null },
-      { icone: "🌿", titre: "Garnir", detail: "Garnir de feuilles de menthe fraîche et d'une rondelle de citron vert.", badge: null }
-    ]
-  },
-  pornstarmartini: {
-    cat: "cocktails", pays: "usa",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🍍",
-    description: "Le Porn Star Martini — vodka à la vanille, Passoa, jus de passion et prosecco à part. Le cocktail le plus populaire d'Angleterre !",
-    tableauPornstar: [
-      { nb: 1, vodka: "4 cl", passoa: "2 cl", passion: "4 cl", prosecco: "5 cl", vanille: "½ c.à.c" },
-      { nb: 2, vodka: "8 cl", passoa: "4 cl", passion: "8 cl", prosecco: "10 cl", vanille: "1 c.à.c" },
-      { nb: 3, vodka: "12 cl", passoa: "6 cl", passion: "12 cl", prosecco: "15 cl", vanille: "1½ c.à.c" },
-      { nb: 4, vodka: "16 cl", passoa: "8 cl", passion: "16 cl", prosecco: "20 cl", vanille: "2 c.à.c" },
-      { nb: 5, vodka: "20 cl", passoa: "10 cl", passion: "20 cl", prosecco: "25 cl", vanille: "2½ c.à.c" },
-      { nb: 6, vodka: "24 cl", passoa: "12 cl", passion: "24 cl", prosecco: "30 cl", vanille: "3 c.à.c" },
-      { nb: 7, vodka: "28 cl", passoa: "14 cl", passion: "28 cl", prosecco: "35 cl", vanille: "3½ c.à.c" },
-      { nb: 8, vodka: "32 cl", passoa: "16 cl", passion: "32 cl", prosecco: "40 cl", vanille: "4 c.à.c" },
-      { nb: 9, vodka: "36 cl", passoa: "18 cl", passion: "36 cl", prosecco: "45 cl", vanille: "4½ c.à.c" },
-      { nb: 10, vodka: "40 cl", passoa: "20 cl", passion: "40 cl", prosecco: "50 cl", vanille: "5 c.à.c" },
-      { nb: 11, vodka: "44 cl", passoa: "22 cl", passion: "44 cl", prosecco: "55 cl", vanille: "5½ c.à.c" },
-      { nb: 12, vodka: "48 cl", passoa: "24 cl", passion: "48 cl", prosecco: "60 cl", vanille: "6 c.à.c" },
-      { nb: 13, vodka: "52 cl", passoa: "26 cl", passion: "52 cl", prosecco: "65 cl", vanille: "6½ c.à.c" },
-      { nb: 14, vodka: "56 cl", passoa: "28 cl", passion: "56 cl", prosecco: "70 cl", vanille: "7 c.à.c" },
-      { nb: 15, vodka: "60 cl", passoa: "30 cl", passion: "60 cl", prosecco: "75 cl", vanille: "7½ c.à.c" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍹", titre: "Shaker avec glace", detail: "Mettre de la glace dans le shaker. Ajouter vodka vanille, Passoa, jus de fruit de la passion et sirop de vanille.", badge: null },
-      { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement 15 secondes.", badge: "⏱ 15 sec" },
-      { icone: "🍸", titre: "Filtrer", detail: "Filtrer dans un verre à martini. Déposer une demi-passion flottante sur le dessus.", badge: null },
-      { icone: "🥂", titre: "Prosecco à part", detail: "Servir le prosecco dans un shot verre à côté — on l'ajoute au cocktail ou on le boit en une gorgée entre deux sips !", badge: null }
-    ]
-  },
-  hugospritz: {
-    cat: "cocktails", pays: "italie",
-    base: 1,
-    temps: "2 min",
-    niveau: "⭐ Facile",
-    emoji: "🌸",
-    description: "Le Hugo Spritz — prosecco, sirop de sureau, menthe fraîche et eau gazeuse. Plus doux et floral que le Spritz classique.",
-    tableauHugoSpritz: [
-      { nb: 1, prosecco: "9 cl", sureau: "2 cl", eauGaz: "3 cl", menthe: "4 feuilles", citron: "1 rondelle", vin: "50 ml" },
-      { nb: 2, prosecco: "18 cl", sureau: "4 cl", eauGaz: "6 cl", menthe: "8 feuilles", citron: "2 rondelles", vin: "100 ml" },
-      { nb: 3, prosecco: "27 cl", sureau: "6 cl", eauGaz: "9 cl", menthe: "12 feuilles", citron: "3 rondelles", vin: "150 ml" },
-      { nb: 4, prosecco: "36 cl", sureau: "8 cl", eauGaz: "12 cl", menthe: "16 feuilles", citron: "4 rondelles", vin: "200 ml" },
-      { nb: 5, prosecco: "45 cl", sureau: "10 cl", eauGaz: "15 cl", menthe: "20 feuilles", citron: "5 rondelles", vin: "250 ml" },
-      { nb: 6, prosecco: "54 cl", sureau: "12 cl", eauGaz: "18 cl", menthe: "24 feuilles", citron: "6 rondelles", vin: "300 ml" },
-      { nb: 7, prosecco: "63 cl", sureau: "14 cl", eauGaz: "21 cl", menthe: "28 feuilles", citron: "7 rondelles", vin: "350 ml" },
-      { nb: 8, prosecco: "72 cl", sureau: "16 cl", eauGaz: "24 cl", menthe: "32 feuilles", citron: "8 rondelles", vin: "400 ml" },
-      { nb: 9, prosecco: "81 cl", sureau: "18 cl", eauGaz: "27 cl", menthe: "36 feuilles", citron: "9 rondelles", vin: "450 ml" },
-      { nb: 10, prosecco: "90 cl", sureau: "20 cl", eauGaz: "30 cl", menthe: "40 feuilles", citron: "10 rondelles", vin: "500 ml" },
-      { nb: 11, prosecco: "99 cl", sureau: "22 cl", eauGaz: "33 cl", menthe: "44 feuilles", citron: "11 rondelles", vin: "550 ml" },
-      { nb: 12, prosecco: "108 cl", sureau: "24 cl", eauGaz: "36 cl", menthe: "48 feuilles", citron: "12 rondelles", vin: "600 ml" },
-      { nb: 13, prosecco: "117 cl", sureau: "26 cl", eauGaz: "39 cl", menthe: "52 feuilles", citron: "13 rondelles", vin: "650 ml" },
-      { nb: 14, prosecco: "126 cl", sureau: "28 cl", eauGaz: "42 cl", menthe: "56 feuilles", citron: "14 rondelles", vin: "700 ml" },
-      { nb: 15, prosecco: "135 cl", sureau: "30 cl", eauGaz: "45 cl", menthe: "60 feuilles", citron: "15 rondelles", vin: "750 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
-      { icone: "🌸", titre: "Sirop de sureau", detail: "Verser le sirop de fleur de sureau (St. Germain ou autre).", badge: null },
-      { icone: "🍾", titre: "Prosecco et eau gazeuse", detail: "Verser le prosecco puis l'eau gazeuse. Mélanger très délicatement.", badge: null },
-      { icone: "🌿", titre: "Garnir", detail: "Ajouter menthe fraîche et rondelle de citron vert. Servir immédiatement.", badge: null }
-    ]
-  },
-  cherryblossommocktail: {
-    cat: "mocktails", pays: "france",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🌸",
-    description: "Le Cherry Blossom Mocktail — jus de cerise, eau de rose, citron et eau gazeuse. Un mocktail floral et élégant, sans alcool.",
-    tableauCherryBlossom: [
-      { nb: 1, cerise: "8 cl", eauRose: "1 cl", citron: "1 cl", sirop: "1 cl", eauGaz: "8 cl", sucre: "10 g" },
-      { nb: 2, cerise: "16 cl", eauRose: "2 cl", citron: "2 cl", sirop: "2 cl", eauGaz: "16 cl", sucre: "20 g" },
-      { nb: 3, cerise: "24 cl", eauRose: "3 cl", citron: "3 cl", sirop: "3 cl", eauGaz: "24 cl", sucre: "30 g" },
-      { nb: 4, cerise: "32 cl", eauRose: "4 cl", citron: "4 cl", sirop: "4 cl", eauGaz: "32 cl", sucre: "40 g" },
-      { nb: 5, cerise: "40 cl", eauRose: "5 cl", citron: "5 cl", sirop: "5 cl", eauGaz: "40 cl", sucre: "50 g" },
-      { nb: 6, cerise: "48 cl", eauRose: "6 cl", citron: "6 cl", sirop: "6 cl", eauGaz: "48 cl", sucre: "60 g" },
-      { nb: 7, cerise: "56 cl", eauRose: "7 cl", citron: "7 cl", sirop: "7 cl", eauGaz: "56 cl", sucre: "70 g" },
-      { nb: 8, cerise: "64 cl", eauRose: "8 cl", citron: "8 cl", sirop: "8 cl", eauGaz: "64 cl", sucre: "80 g" },
-      { nb: 9, cerise: "72 cl", eauRose: "9 cl", citron: "9 cl", sirop: "9 cl", eauGaz: "72 cl", sucre: "90 g" },
-      { nb: 10, cerise: "80 cl", eauRose: "10 cl", citron: "10 cl", sirop: "10 cl", eauGaz: "80 cl", sucre: "100 g" },
-      { nb: 11, cerise: "88 cl", eauRose: "11 cl", citron: "11 cl", sirop: "11 cl", eauGaz: "88 cl", sucre: "110 g" },
-      { nb: 12, cerise: "96 cl", eauRose: "12 cl", citron: "12 cl", sirop: "12 cl", eauGaz: "96 cl", sucre: "120 g" },
-      { nb: 13, cerise: "104 cl", eauRose: "13 cl", citron: "13 cl", sirop: "13 cl", eauGaz: "104 cl", sucre: "130 g" },
-      { nb: 14, cerise: "112 cl", eauRose: "14 cl", citron: "14 cl", sirop: "14 cl", eauGaz: "112 cl", sucre: "140 g" },
-      { nb: 15, cerise: "120 cl", eauRose: "15 cl", citron: "15 cl", sirop: "15 cl", eauGaz: "120 cl", sucre: "150 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🍒", titre: "Mélanger", detail: "Dans un shaker avec glace, mélanger jus de cerise, eau de rose, jus de citron et sirop de sucre.", badge: null },
-      { icone: "🥶", titre: "Shaker", detail: "Shaker 10 secondes.", badge: "⏱ 10 sec" },
-      { icone: "🌸", titre: "Filtrer et servir", detail: "Filtrer dans un verre à champagne ou coupe. Compléter avec l'eau gazeuse. Décorer d'une fleur comestible ou cerise.", badge: null }
-    ]
-  },
-  oldFashioned: {
-    cat: "cocktails", saisons: ["hiver"], pays: "usa",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🥃",
-    description: "L'Old Fashioned — bourbon ou rye, sucre, Angostura bitters et zeste d'orange. Le cocktail classique par excellence depuis 1806.",
-    tableauOldFashioned: [
-      { nb: 1, bourbon: "6 cl", sucre: "1 morceau", bitters: "2 traits", orange: "1 zeste" },
-      { nb: 2, bourbon: "12 cl", sucre: "2 morceaux", bitters: "4 traits", orange: "2 zestes" },
-      { nb: 3, bourbon: "18 cl", sucre: "3 morceaux", bitters: "6 traits", orange: "3 zestes" },
-      { nb: 4, bourbon: "24 cl", sucre: "4 morceaux", bitters: "8 traits", orange: "4 zestes" },
-      { nb: 5, bourbon: "30 cl", sucre: "5 morceaux", bitters: "10 traits", orange: "5 zestes" },
-      { nb: 6, bourbon: "36 cl", sucre: "6 morceaux", bitters: "12 traits", orange: "6 zestes" },
-      { nb: 7, bourbon: "42 cl", sucre: "7 morceaux", bitters: "14 traits", orange: "7 zestes" },
-      { nb: 8, bourbon: "48 cl", sucre: "8 morceaux", bitters: "16 traits", orange: "8 zestes" },
-      { nb: 9, bourbon: "54 cl", sucre: "9 morceaux", bitters: "18 traits", orange: "9 zestes" },
-      { nb: 10, bourbon: "60 cl", sucre: "10 morceaux", bitters: "20 traits", orange: "10 zestes" },
-      { nb: 11, bourbon: "66 cl", sucre: "11 morceaux", bitters: "22 traits", orange: "11 zestes" },
-      { nb: 12, bourbon: "72 cl", sucre: "12 morceaux", bitters: "24 traits", orange: "12 zestes" },
-      { nb: 13, bourbon: "78 cl", sucre: "13 morceaux", bitters: "26 traits", orange: "13 zestes" },
-      { nb: 14, bourbon: "84 cl", sucre: "14 morceaux", bitters: "28 traits", orange: "14 zestes" },
-      { nb: 15, bourbon: "90 cl", sucre: "15 morceaux", bitters: "30 traits", orange: "15 zestes" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍬", titre: "Dissoudre le sucre", detail: "Placer le morceau de sucre dans le verre. Ajouter les Angostura bitters et une cuillère à café d'eau. Écraser et dissoudre complètement.", badge: null },
-      { icone: "🧊", titre: "Grande glace", detail: "Ajouter un gros glaçon ou plusieurs glaçons. Le format gros glaçon est important — il fond moins vite.", badge: null },
-      { icone: "🥃", titre: "Verser le bourbon", detail: "Verser le bourbon. Mélanger lentement avec une cuillère longue pendant 30 secondes.", badge: "⏱ 30 sec mélange" },
-      { icone: "🍊", titre: "Zeste d'orange", detail: "Exprimer le zeste d'orange au-dessus du verre pour libérer les huiles. Frotter le bord et déposer ou suspendre sur le verre.", badge: null }
-    ]
-  },
-  gintoniqmaison: {
-    cat: "cocktails", pays: "france",
-    base: 1,
-    temps: "2 min",
-    niveau: "⭐ Facile",
-    emoji: "🫧",
-    description: "Le Gin Tonic maison — gin de qualité, tonic premium et garnitures soignées. Simple mais tellement bon quand c'est bien fait.",
-    tableauGinTonic: [
-      { nb: 1, gin: "5 cl", tonic: "15 cl", citron: "1 rondelle", poivre: "3 grains" },
-      { nb: 2, gin: "10 cl", tonic: "30 cl", citron: "2 rondelles", poivre: "6 grains" },
-      { nb: 3, gin: "15 cl", tonic: "45 cl", citron: "3 rondelles", poivre: "9 grains" },
-      { nb: 4, gin: "20 cl", tonic: "60 cl", citron: "4 rondelles", poivre: "12 grains" },
-      { nb: 5, gin: "25 cl", tonic: "75 cl", citron: "5 rondelles", poivre: "15 grains" },
-      { nb: 6, gin: "30 cl", tonic: "90 cl", citron: "6 rondelles", poivre: "18 grains" },
-      { nb: 7, gin: "35 cl", tonic: "105 cl", citron: "7 rondelles", poivre: "21 grains" },
-      { nb: 8, gin: "40 cl", tonic: "120 cl", citron: "8 rondelles", poivre: "24 grains" },
-      { nb: 9, gin: "45 cl", tonic: "135 cl", citron: "9 rondelles", poivre: "27 grains" },
-      { nb: 10, gin: "50 cl", tonic: "150 cl", citron: "10 rondelles", poivre: "30 grains" },
-      { nb: 11, gin: "55 cl", tonic: "165 cl", citron: "11 rondelles", poivre: "33 grains" },
-      { nb: 12, gin: "60 cl", tonic: "180 cl", citron: "12 rondelles", poivre: "36 grains" },
-      { nb: 13, gin: "65 cl", tonic: "195 cl", citron: "13 rondelles", poivre: "39 grains" },
-      { nb: 14, gin: "70 cl", tonic: "210 cl", citron: "14 rondelles", poivre: "42 grains" },
-      { nb: 15, gin: "75 cl", tonic: "225 cl", citron: "15 rondelles", poivre: "45 grains" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🫙", titre: "Verre ballon et glace", detail: "Utiliser un grand verre ballon (Copa glass). Remplir de glaçons jusqu'en haut.", badge: null },
-      { icone: "🌿", titre: "Aromates d'abord", detail: "Déposer les garnitures choisies sur la glace : rondelle de citron vert, grains de poivre rose, romarin, concombre... selon le style de gin.", badge: null },
-      { icone: "🍶", titre: "Verser le gin", detail: "Verser le gin sur la glace.", badge: null },
-      { icone: "💧", titre: "Tonic premium", detail: "Verser le tonic froid en filet contre le bord du verre pour préserver les bulles. Ne jamais remuer !", badge: null }
-    ]
-  },
-  shrubframboisebasilic: {
-    cat: "mocktails", saisons: ["ete"], pays: "france",
-    base: 4,
-    temps: "10 min",
-    niveau: "⭐ Facile",
-    emoji: "🫐",
-    description: "Shrub Framboise Basilic — sirop vinaigré aux framboises et basilic, allongé d'eau gazeuse. Un mocktail sophistiqué et acidulé.",
-    tableauShrub: [
-      { nb: 1, framboises: "50 g", basilic: "3 feuilles", vinaigre: "2 cl", sucre: "2 c.à.s", eauGaz: "15 cl" },
-      { nb: 2, framboises: "100 g", basilic: "6 feuilles", vinaigre: "4 cl", sucre: "4 c.à.s", eauGaz: "30 cl" },
-      { nb: 3, framboises: "150 g", basilic: "9 feuilles", vinaigre: "6 cl", sucre: "6 c.à.s", eauGaz: "45 cl" },
-      { nb: 4, framboises: "200 g", basilic: "12 feuilles", vinaigre: "8 cl", sucre: "8 c.à.s", eauGaz: "60 cl" },
-      { nb: 5, framboises: "250 g", basilic: "15 feuilles", vinaigre: "10 cl", sucre: "10 c.à.s", eauGaz: "75 cl" },
-      { nb: 6, framboises: "300 g", basilic: "18 feuilles", vinaigre: "12 cl", sucre: "12 c.à.s", eauGaz: "90 cl" },
-      { nb: 7, framboises: "350 g", basilic: "21 feuilles", vinaigre: "14 cl", sucre: "14 c.à.s", eauGaz: "105 cl" },
-      { nb: 8, framboises: "400 g", basilic: "24 feuilles", vinaigre: "16 cl", sucre: "16 c.à.s", eauGaz: "120 cl" },
-      { nb: 9, framboises: "450 g", basilic: "27 feuilles", vinaigre: "18 cl", sucre: "18 c.à.s", eauGaz: "135 cl" },
-      { nb: 10, framboises: "500 g", basilic: "30 feuilles", vinaigre: "20 cl", sucre: "20 c.à.s", eauGaz: "150 cl" },
-      { nb: 11, framboises: "550 g", basilic: "33 feuilles", vinaigre: "22 cl", sucre: "22 c.à.s", eauGaz: "165 cl" },
-      { nb: 12, framboises: "600 g", basilic: "36 feuilles", vinaigre: "24 cl", sucre: "24 c.à.s", eauGaz: "180 cl" },
-      { nb: 13, framboises: "650 g", basilic: "39 feuilles", vinaigre: "26 cl", sucre: "26 c.à.s", eauGaz: "195 cl" },
-      { nb: 14, framboises: "700 g", basilic: "42 feuilles", vinaigre: "28 cl", sucre: "28 c.à.s", eauGaz: "210 cl" },
-      { nb: 15, framboises: "750 g", basilic: "45 feuilles", vinaigre: "30 cl", sucre: "30 c.à.s", eauGaz: "225 cl" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🫐", titre: "Préparer le shrub", detail: "Écraser les framboises avec le sucre et le vinaigre de cidre dans un bol. Ajouter le basilic froissé. Laisser macérer au frigo.", badge: "⏱ 2h macération" },
-      { icone: "🌀", titre: "Filtrer", detail: "Filtrer le sirop obtenu en pressant bien les framboises. Conserver en bocal au frigo (se garde 2 semaines).", badge: null },
-      { icone: "🥤", titre: "Assembler", detail: "Dans un verre avec glace, verser le shrub. Compléter avec eau gazeuse. Décorer d'une framboise et feuille de basilic.", badge: null },
-      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
-    ]
-  },
-  mocktailcoconananas: {
-    cat: "mocktails", pays: "france",
-    base: 2,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🥥",
-    description: "Mocktail Coco Ananas — lait de coco, jus d'ananas, citron vert et gingembre. Tropical, frais et sans alcool pour toute la famille.",
-    tableauCocoAnanas: [
-      { nb: 1, coco: "8 cl", ananas: "10 cl", citron: "1 cl", gingembre: "½ cm", miel: "1 c.à.c", lait: "50 ml" },
-      { nb: 2, coco: "16 cl", ananas: "20 cl", citron: "2 cl", gingembre: "1 cm", miel: "2 c.à.c", lait: "100 ml" },
-      { nb: 3, coco: "24 cl", ananas: "30 cl", citron: "3 cl", gingembre: "1 cm", miel: "3 c.à.c", lait: "150 ml" },
-      { nb: 4, coco: "32 cl", ananas: "40 cl", citron: "4 cl", gingembre: "2 cm", miel: "4 c.à.c", lait: "200 ml" },
-      { nb: 5, coco: "40 cl", ananas: "50 cl", citron: "5 cl", gingembre: "2 cm", miel: "5 c.à.c", lait: "250 ml" },
-      { nb: 6, coco: "48 cl", ananas: "60 cl", citron: "6 cl", gingembre: "2 cm", miel: "6 c.à.c", lait: "300 ml" },
-      { nb: 7, coco: "56 cl", ananas: "70 cl", citron: "7 cl", gingembre: "3 cm", miel: "7 c.à.c", lait: "350 ml" },
-      { nb: 8, coco: "64 cl", ananas: "80 cl", citron: "8 cl", gingembre: "3 cm", miel: "8 c.à.c", lait: "400 ml" },
-      { nb: 9, coco: "72 cl", ananas: "90 cl", citron: "9 cl", gingembre: "3 cm", miel: "9 c.à.c", lait: "450 ml" },
-      { nb: 10, coco: "80 cl", ananas: "100 cl", citron: "10 cl", gingembre: "4 cm", miel: "10 c.à.c", lait: "500 ml" },
-      { nb: 11, coco: "88 cl", ananas: "110 cl", citron: "11 cl", gingembre: "4 cm", miel: "11 c.à.c", lait: "550 ml" },
-      { nb: 12, coco: "96 cl", ananas: "120 cl", citron: "12 cl", gingembre: "4 cm", miel: "12 c.à.c", lait: "600 ml" },
-      { nb: 13, coco: "104 cl", ananas: "130 cl", citron: "13 cl", gingembre: "5 cm", miel: "13 c.à.c", lait: "650 ml" },
-      { nb: 14, coco: "112 cl", ananas: "140 cl", citron: "14 cl", gingembre: "5 cm", miel: "14 c.à.c", lait: "700 ml" },
-      { nb: 15, coco: "120 cl", ananas: "150 cl", citron: "15 cl", gingembre: "5 cm", miel: "15 c.à.c", lait: "750 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer lait de coco, jus d'ananas, jus de citron vert, gingembre râpé et miel avec quelques glaçons jusqu'à texture lisse.", badge: "⏱ 30 sec" },
-      { icone: "🥥", titre: "Servir", detail: "Verser dans des grands verres avec glaçons. Décorer d'une tranche d'ananas, noix de coco râpée et paille. Servir immédiatement !", badge: null }
     ]
   },
   pizzareine: {
@@ -4065,329 +3303,6 @@ const recettes = {
       { icone: "🌿", titre: "Appliquer la croûte", detail: "Presser la croûte d'herbes sur le dessus des pavés. Elle doit adhérer grâce à la moutarde.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Four préchauffé à 200°C. Poser les pavés sur une plaque. La croûte doit être dorée et le saumon rosé à cœur.", badge: "⏱ 12-15 min à 200°C" },
       { icone: "🍋", titre: "Servir", detail: "Accompagner de riz pilaf, d'écrasé de pommes de terre ou de légumes vapeur. Arroser de jus de citron.", badge: null }
-    ]
-  },
-  tequilasunrise: {
-    cat: "cocktails", saisons: ["hiver"], pays: "mexique",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🌅",
-    description: "Le Tequila Sunrise — tequila, jus d'orange et grenadine qui forme un magnifique dégradé. Le cocktail coucher de soleil !",
-    tableauTequilaSunrise: [
-      { nb: 1, tequila: "5 cl", orange: "10 cl", grenadine: "1 cl" },
-      { nb: 2, tequila: "10 cl", orange: "20 cl", grenadine: "2 cl" },
-      { nb: 3, tequila: "15 cl", orange: "30 cl", grenadine: "3 cl" },
-      { nb: 4, tequila: "20 cl", orange: "40 cl", grenadine: "4 cl" },
-      { nb: 5, tequila: "25 cl", orange: "50 cl", grenadine: "5 cl" },
-      { nb: 6, tequila: "30 cl", orange: "60 cl", grenadine: "6 cl" },
-      { nb: 7, tequila: "35 cl", orange: "70 cl", grenadine: "7 cl" },
-      { nb: 8, tequila: "40 cl", orange: "80 cl", grenadine: "8 cl" },
-      { nb: 9, tequila: "45 cl", orange: "90 cl", grenadine: "9 cl" },
-      { nb: 10, tequila: "50 cl", orange: "100 cl", grenadine: "10 cl" },
-      { nb: 11, tequila: "55 cl", orange: "110 cl", grenadine: "11 cl" },
-      { nb: 12, tequila: "60 cl", orange: "120 cl", grenadine: "12 cl" },
-      { nb: 13, tequila: "65 cl", orange: "130 cl", grenadine: "13 cl" },
-      { nb: 14, tequila: "70 cl", orange: "140 cl", grenadine: "14 cl" },
-      { nb: 15, tequila: "75 cl", orange: "150 cl", grenadine: "15 cl" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre de glaçons.", badge: null },
-      { icone: "🍊", titre: "Verser tequila et orange", detail: "Verser la tequila puis le jus d'orange. Mélanger légèrement.", badge: null },
-      { icone: "🌅", titre: "Grenadine", detail: "Verser doucement la grenadine le long du verre — elle va couler au fond et créer le dégradé. NE PAS mélanger ! Garnir d'une tranche d'orange.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
-  },
-  aperolspritzrosa: {
-    cat: "cocktails", saisons: ["ete","printemps"], pays: "italie",
-    base: 1,
-    temps: "2 min",
-    niveau: "⭐ Facile",
-    emoji: "🌸",
-    description: "Spritz Rosé — Aperol, rosé pétillant et eau gazeuse. La version plus douce et fruitée du Spritz classique.",
-    tableauAperolRosa: [
-      { nb: 1, aperol: "6 cl", rose: "9 cl", eauGaz: "3 cl", fraise: "1", vin: "50 ml" },
-      { nb: 2, aperol: "12 cl", rose: "18 cl", eauGaz: "6 cl", fraise: "2", vin: "100 ml" },
-      { nb: 3, aperol: "18 cl", rose: "27 cl", eauGaz: "9 cl", fraise: "3", vin: "150 ml" },
-      { nb: 4, aperol: "24 cl", rose: "36 cl", eauGaz: "12 cl", fraise: "4", vin: "200 ml" },
-      { nb: 5, aperol: "30 cl", rose: "45 cl", eauGaz: "15 cl", fraise: "5", vin: "250 ml" },
-      { nb: 6, aperol: "36 cl", rose: "54 cl", eauGaz: "18 cl", fraise: "6", vin: "300 ml" },
-      { nb: 7, aperol: "42 cl", rose: "63 cl", eauGaz: "21 cl", fraise: "7", vin: "350 ml" },
-      { nb: 8, aperol: "48 cl", rose: "72 cl", eauGaz: "24 cl", fraise: "8", vin: "400 ml" },
-      { nb: 9, aperol: "54 cl", rose: "81 cl", eauGaz: "27 cl", fraise: "9", vin: "450 ml" },
-      { nb: 10, aperol: "60 cl", rose: "90 cl", eauGaz: "30 cl", fraise: "10", vin: "500 ml" },
-      { nb: 11, aperol: "66 cl", rose: "99 cl", eauGaz: "33 cl", fraise: "11", vin: "550 ml" },
-      { nb: 12, aperol: "72 cl", rose: "108 cl", eauGaz: "36 cl", fraise: "12", vin: "600 ml" },
-      { nb: 13, aperol: "78 cl", rose: "117 cl", eauGaz: "39 cl", fraise: "13", vin: "650 ml" },
-      { nb: 14, aperol: "84 cl", rose: "126 cl", eauGaz: "42 cl", fraise: "14", vin: "700 ml" },
-      { nb: 15, aperol: "90 cl", rose: "135 cl", eauGaz: "45 cl", fraise: "15", vin: "750 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
-      { icone: "🌸", titre: "Aperol et rosé", detail: "Verser l'Aperol puis le rosé pétillant. Compléter avec l'eau gazeuse.", badge: null },
-      { icone: "🍓", titre: "Garnir", detail: "Garnir d'une fraise et mélanger très délicatement.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
-  },
-  espressoMartini: {
-    cat: "cocktails", pays: "usa",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "☕",
-    description: "L'Espresso Martini — vodka, liqueur de café et espresso frais. Le cocktail après-dîner qui réveille et plaît à tout le monde.",
-    tableauEspressoMartini: [
-      { nb: 1, vodka: "4 cl", kahluaC: "2 cl", espresso: "3 cl", sucre: "1 c.à.c" },
-      { nb: 2, vodka: "8 cl", kahluaC: "4 cl", espresso: "6 cl", sucre: "2 c.à.c" },
-      { nb: 3, vodka: "12 cl", kahluaC: "6 cl", espresso: "9 cl", sucre: "3 c.à.c" },
-      { nb: 4, vodka: "16 cl", kahluaC: "8 cl", espresso: "12 cl", sucre: "4 c.à.c" },
-      { nb: 5, vodka: "20 cl", kahluaC: "10 cl", espresso: "15 cl", sucre: "5 c.à.c" },
-      { nb: 6, vodka: "24 cl", kahluaC: "12 cl", espresso: "18 cl", sucre: "6 c.à.c" },
-      { nb: 7, vodka: "28 cl", kahluaC: "14 cl", espresso: "21 cl", sucre: "7 c.à.c" },
-      { nb: 8, vodka: "32 cl", kahluaC: "16 cl", espresso: "24 cl", sucre: "8 c.à.c" },
-      { nb: 9, vodka: "36 cl", kahluaC: "18 cl", espresso: "27 cl", sucre: "9 c.à.c" },
-      { nb: 10, vodka: "40 cl", kahluaC: "20 cl", espresso: "30 cl", sucre: "10 c.à.c" },
-      { nb: 11, vodka: "44 cl", kahluaC: "22 cl", espresso: "33 cl", sucre: "11 c.à.c" },
-      { nb: 12, vodka: "48 cl", kahluaC: "24 cl", espresso: "36 cl", sucre: "12 c.à.c" },
-      { nb: 13, vodka: "52 cl", kahluaC: "26 cl", espresso: "39 cl", sucre: "13 c.à.c" },
-      { nb: 14, vodka: "56 cl", kahluaC: "28 cl", espresso: "42 cl", sucre: "14 c.à.c" },
-      { nb: 15, vodka: "60 cl", kahluaC: "30 cl", espresso: "45 cl", sucre: "15 c.à.c" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "☕", titre: "Préparer l'espresso", detail: "Faire un espresso serré et le laisser refroidir légèrement.", badge: null },
-      { icone: "🍹", titre: "Shaker avec glace", detail: "Dans un shaker avec beaucoup de glace, verser vodka, Kahlúa, espresso et sirop de sucre.", badge: null },
-      { icone: "🥶", titre: "Shaker fort", detail: "Shaker très vigoureusement 15-20 secondes — plus c'est fort, plus la mousse est belle.", badge: "⏱ 20 sec" },
-      { icone: "☕", titre: "Filtrer", detail: "Filtrer dans un verre à martini. La belle mousse crémeuse doit se former en surface. Décorer de 3 grains de café.", badge: null }
-    ]
-  },
-  punchfruitsrouges: {
-    cat: "cocktails", saisons: ["ete","printemps"], pays: "france",
-    base: 8,
-    temps: "10 min",
-    niveau: "⭐ Facile",
-    emoji: "🍓",
-    description: "Punch aux fruits rouges — rhum, fruits frais, jus de fruits et ginger beer. Le cocktail de fête qui régale tout le monde.",
-    tableauPunchRouge: [
-      { nb: 1, rhum: "5 cl", fraises: "50 g", framboises: "25 g", jusMixte: "10 cl", gingerBeer: "5 cl", citron: "⅓ citron", sucre: "10 g" },
-      { nb: 2, rhum: "10 cl", fraises: "100 g", framboises: "50 g", jusMixte: "20 cl", gingerBeer: "10 cl", citron: "⅔ citron", sucre: "20 g" },
-      { nb: 3, rhum: "15 cl", fraises: "150 g", framboises: "75 g", jusMixte: "30 cl", gingerBeer: "15 cl", citron: "1 citron", sucre: "30 g" },
-      { nb: 4, rhum: "20 cl", fraises: "200 g", framboises: "100 g", jusMixte: "40 cl", gingerBeer: "20 cl", citron: "2 citrons", sucre: "40 g" },
-      { nb: 5, rhum: "25 cl", fraises: "250 g", framboises: "125 g", jusMixte: "50 cl", gingerBeer: "25 cl", citron: "2 citrons", sucre: "50 g" },
-      { nb: 6, rhum: "30 cl", fraises: "300 g", framboises: "150 g", jusMixte: "60 cl", gingerBeer: "30 cl", citron: "2 citrons", sucre: "60 g" },
-      { nb: 7, rhum: "35 cl", fraises: "350 g", framboises: "175 g", jusMixte: "70 cl", gingerBeer: "35 cl", citron: "3 citrons", sucre: "70 g" },
-      { nb: 8, rhum: "40 cl", fraises: "400 g", framboises: "200 g", jusMixte: "80 cl", gingerBeer: "40 cl", citron: "3 citrons", sucre: "80 g" },
-      { nb: 9, rhum: "45 cl", fraises: "450 g", framboises: "225 g", jusMixte: "90 cl", gingerBeer: "45 cl", citron: "3 citrons", sucre: "90 g" },
-      { nb: 10, rhum: "50 cl", fraises: "500 g", framboises: "250 g", jusMixte: "100 cl", gingerBeer: "50 cl", citron: "4 citrons", sucre: "100 g" },
-      { nb: 11, rhum: "55 cl", fraises: "550 g", framboises: "275 g", jusMixte: "110 cl", gingerBeer: "55 cl", citron: "4 citrons", sucre: "110 g" },
-      { nb: 12, rhum: "60 cl", fraises: "600 g", framboises: "300 g", jusMixte: "120 cl", gingerBeer: "60 cl", citron: "4 citrons", sucre: "120 g" },
-      { nb: 13, rhum: "65 cl", fraises: "650 g", framboises: "325 g", jusMixte: "130 cl", gingerBeer: "65 cl", citron: "5 citrons", sucre: "130 g" },
-      { nb: 14, rhum: "70 cl", fraises: "700 g", framboises: "350 g", jusMixte: "140 cl", gingerBeer: "70 cl", citron: "5 citrons", sucre: "140 g" },
-      { nb: 15, rhum: "75 cl", fraises: "750 g", framboises: "375 g", jusMixte: "150 cl", gingerBeer: "75 cl", citron: "5 citrons", sucre: "150 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍓", titre: "Écraser les fruits", detail: "Écraser légèrement fraises et framboises dans le pichet. Ajouter sucre et jus de citron vert.", badge: null },
-      { icone: "🍶", titre: "Ajouter les liquides", detail: "Verser rhum, jus de fruits rouges et jus d'orange. Mélanger.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Mettre au frigo 1h pour que les saveurs se mélangent.", badge: "⏱ 1h frigo" },
-      { icone: "🥂", titre: "Servir", detail: "Au moment de servir, ajouter ginger beer et glaçons. Garnir de fruits frais.", badge: null }
-    ]
-  },
-  blueLagoon: {
-    cat: "cocktails", pays: "usa",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🫐",
-    description: "Le Blue Lagoon — vodka, curaçao bleu et limonade. Un cocktail visuellement spectaculaire et légèrement sucré.",
-    tableauBlueLagoon: [
-      { nb: 1, vodka: "4 cl", curacao: "2 cl", limonade: "12 cl", citron: "1 cl" },
-      { nb: 2, vodka: "8 cl", curacao: "4 cl", limonade: "24 cl", citron: "2 cl" },
-      { nb: 3, vodka: "12 cl", curacao: "6 cl", limonade: "36 cl", citron: "3 cl" },
-      { nb: 4, vodka: "16 cl", curacao: "8 cl", limonade: "48 cl", citron: "4 cl" },
-      { nb: 5, vodka: "20 cl", curacao: "10 cl", limonade: "60 cl", citron: "5 cl" },
-      { nb: 6, vodka: "24 cl", curacao: "12 cl", limonade: "72 cl", citron: "6 cl" },
-      { nb: 7, vodka: "28 cl", curacao: "14 cl", limonade: "84 cl", citron: "7 cl" },
-      { nb: 8, vodka: "32 cl", curacao: "16 cl", limonade: "96 cl", citron: "8 cl" },
-      { nb: 9, vodka: "36 cl", curacao: "18 cl", limonade: "108 cl", citron: "9 cl" },
-      { nb: 10, vodka: "40 cl", curacao: "20 cl", limonade: "120 cl", citron: "10 cl" },
-      { nb: 11, vodka: "44 cl", curacao: "22 cl", limonade: "132 cl", citron: "11 cl" },
-      { nb: 12, vodka: "48 cl", curacao: "24 cl", limonade: "144 cl", citron: "12 cl" },
-      { nb: 13, vodka: "52 cl", curacao: "26 cl", limonade: "156 cl", citron: "13 cl" },
-      { nb: 14, vodka: "56 cl", curacao: "28 cl", limonade: "168 cl", citron: "14 cl" },
-      { nb: 15, vodka: "60 cl", curacao: "30 cl", limonade: "180 cl", citron: "15 cl" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre de glaçons.", badge: null },
-      { icone: "🫐", titre: "Vodka et curaçao", detail: "Verser la vodka et le curaçao bleu.", badge: null },
-      { icone: "💧", titre: "Limonade", detail: "Compléter avec la limonade et le jus de citron. Mélanger délicatement. Garnir d'une rondelle de citron.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
-  },
-  mimosa: {
-    cat: "cocktails", saisons: ["hiver"], pays: "france",
-    base: 1,
-    temps: "2 min",
-    niveau: "⭐ Facile",
-    emoji: "🍾",
-    description: "Le Mimosa — champagne et jus d'orange frais en parts égales. Le cocktail du brunch par excellence, élégant et léger.",
-    tableauMimosa: [
-      { nb: 1, champagne: "7.5 cl", orangeJus: "7.5 cl" },
-      { nb: 2, champagne: "15 cl", orangeJus: "15 cl" },
-      { nb: 3, champagne: "22 cl", orangeJus: "22 cl" },
-      { nb: 4, champagne: "30 cl", orangeJus: "30 cl" },
-      { nb: 5, champagne: "37 cl", orangeJus: "37 cl" },
-      { nb: 6, champagne: "45 cl", orangeJus: "45 cl" },
-      { nb: 7, champagne: "52 cl", orangeJus: "52 cl" },
-      { nb: 8, champagne: "60 cl", orangeJus: "60 cl" },
-      { nb: 9, champagne: "67 cl", orangeJus: "67 cl" },
-      { nb: 10, champagne: "75 cl", orangeJus: "75 cl" },
-      { nb: 11, champagne: "82 cl", orangeJus: "82 cl" },
-      { nb: 12, champagne: "90 cl", orangeJus: "90 cl" },
-      { nb: 13, champagne: "97 cl", orangeJus: "97 cl" },
-      { nb: 14, champagne: "105 cl", orangeJus: "105 cl" },
-      { nb: 15, champagne: "112 cl", orangeJus: "112 cl" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🍊", titre: "Presser les oranges", detail: "Presser des oranges fraîches. Filtrer le jus.", badge: null },
-      { icone: "🍾", titre: "Champagne d'abord", detail: "Verser d'abord le champagne bien froid dans la flûte.", badge: null },
-      { icone: "🍊", titre: "Jus d'orange", detail: "Compléter doucement avec le jus d'orange. Ne pas mélanger — laisser les couches naturelles. Garnir d'un zeste d'orange.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
-  },
-  sidecarvintage: {
-    cat: "cocktails", pays: "france",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🥃",
-    description: "Le Sidecar — cognac, Cointreau et jus de citron. Un cocktail des années 1920, sec et élégant, avec le rebord sucré.",
-    tableauSidecar: [
-      { nb: 1, cognac: "5 cl", cointreau: "2 cl", citron: "2 cl", sucre: "rebord" },
-      { nb: 2, cognac: "10 cl", cointreau: "4 cl", citron: "4 cl", sucre: "rebord" },
-      { nb: 3, cognac: "15 cl", cointreau: "6 cl", citron: "6 cl", sucre: "rebord" },
-      { nb: 4, cognac: "20 cl", cointreau: "8 cl", citron: "8 cl", sucre: "rebord" },
-      { nb: 5, cognac: "25 cl", cointreau: "10 cl", citron: "10 cl", sucre: "rebord" },
-      { nb: 6, cognac: "30 cl", cointreau: "12 cl", citron: "12 cl", sucre: "rebord" },
-      { nb: 7, cognac: "35 cl", cointreau: "14 cl", citron: "14 cl", sucre: "rebord" },
-      { nb: 8, cognac: "40 cl", cointreau: "16 cl", citron: "16 cl", sucre: "rebord" },
-      { nb: 9, cognac: "45 cl", cointreau: "18 cl", citron: "18 cl", sucre: "rebord" },
-      { nb: 10, cognac: "50 cl", cointreau: "20 cl", citron: "20 cl", sucre: "rebord" },
-      { nb: 11, cognac: "55 cl", cointreau: "22 cl", citron: "22 cl", sucre: "rebord" },
-      { nb: 12, cognac: "60 cl", cointreau: "24 cl", citron: "24 cl", sucre: "rebord" },
-      { nb: 13, cognac: "65 cl", cointreau: "26 cl", citron: "26 cl", sucre: "rebord" },
-      { nb: 14, cognac: "70 cl", cointreau: "28 cl", citron: "28 cl", sucre: "rebord" },
-      { nb: 15, cognac: "75 cl", cointreau: "30 cl", citron: "30 cl", sucre: "rebord" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍬", titre: "Givrer au sucre", detail: "Frotter le rebord du verre avec un quartier de citron. Tremper dans le sucre fin.", badge: null },
-      { icone: "🍹", titre: "Shaker avec glace", detail: "Dans un shaker avec glace, verser cognac, Cointreau et jus de citron frais.", badge: null },
-      { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement 15 secondes.", badge: "⏱ 15 sec" },
-      { icone: "🥃", titre: "Filtrer et servir", detail: "Filtrer dans le verre givré. Garnir d'un zeste de citron.", badge: null }
-    ]
-  },
-  mocktailberrybliss: {
-    cat: "mocktails", saisons: ["ete"], pays: "france",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🫐",
-    description: "Berry Bliss Mocktail — myrtilles, framboises, jus de cranberry et eau gazeuse. Un mocktail antioxydant et spectaculaire sans alcool.",
-    tableauBerryBliss: [
-      { nb: 1, myrtilles: "30 g", framboises: "20 g", cranberry: "8 cl", citron: "1 cl", eauGaz: "8 cl", miel: "1 c.à.s" },
-      { nb: 2, myrtilles: "60 g", framboises: "40 g", cranberry: "16 cl", citron: "2 cl", eauGaz: "16 cl", miel: "2 c.à.s" },
-      { nb: 3, myrtilles: "90 g", framboises: "60 g", cranberry: "24 cl", citron: "3 cl", eauGaz: "24 cl", miel: "3 c.à.s" },
-      { nb: 4, myrtilles: "120 g", framboises: "80 g", cranberry: "32 cl", citron: "4 cl", eauGaz: "32 cl", miel: "4 c.à.s" },
-      { nb: 5, myrtilles: "150 g", framboises: "100 g", cranberry: "40 cl", citron: "5 cl", eauGaz: "40 cl", miel: "5 c.à.s" },
-      { nb: 6, myrtilles: "180 g", framboises: "120 g", cranberry: "48 cl", citron: "6 cl", eauGaz: "48 cl", miel: "6 c.à.s" },
-      { nb: 7, myrtilles: "210 g", framboises: "140 g", cranberry: "56 cl", citron: "7 cl", eauGaz: "56 cl", miel: "7 c.à.s" },
-      { nb: 8, myrtilles: "240 g", framboises: "160 g", cranberry: "64 cl", citron: "8 cl", eauGaz: "64 cl", miel: "8 c.à.s" },
-      { nb: 9, myrtilles: "270 g", framboises: "180 g", cranberry: "72 cl", citron: "9 cl", eauGaz: "72 cl", miel: "9 c.à.s" },
-      { nb: 10, myrtilles: "300 g", framboises: "200 g", cranberry: "80 cl", citron: "10 cl", eauGaz: "80 cl", miel: "10 c.à.s" },
-      { nb: 11, myrtilles: "330 g", framboises: "220 g", cranberry: "88 cl", citron: "11 cl", eauGaz: "88 cl", miel: "11 c.à.s" },
-      { nb: 12, myrtilles: "360 g", framboises: "240 g", cranberry: "96 cl", citron: "12 cl", eauGaz: "96 cl", miel: "12 c.à.s" },
-      { nb: 13, myrtilles: "390 g", framboises: "260 g", cranberry: "104 cl", citron: "13 cl", eauGaz: "104 cl", miel: "13 c.à.s" },
-      { nb: 14, myrtilles: "420 g", framboises: "280 g", cranberry: "112 cl", citron: "14 cl", eauGaz: "112 cl", miel: "14 c.à.s" },
-      { nb: 15, myrtilles: "450 g", framboises: "300 g", cranberry: "120 cl", citron: "15 cl", eauGaz: "120 cl", miel: "15 c.à.s" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🫐", titre: "Mixer les fruits", detail: "Mixer myrtilles et framboises avec le jus de citron et 1 c.à.s de miel. Filtrer.", badge: null },
-      { icone: "🍒", titre: "Assembler", detail: "Verser le coulis de fruits dans un verre avec glace. Ajouter le jus de cranberry.", badge: null },
-      { icone: "💧", titre: "Eau gazeuse et déco", detail: "Compléter avec l'eau gazeuse. Garnir de quelques fruits frais et feuille de menthe.", badge: null },
-      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
-    ]
-  },
-  gingerlemondrop: {
-    cat: "cocktails", pays: "usa",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🍋",
-    description: "Lemon Drop Gingembre — vodka citronnée, jus de citron frais et gingembre. Sec, pétillant et revigorant !",
-    tableauLemonDrop: [
-      { nb: 1, vodka: "5 cl", citron: "3 cl", gingembre: "1 cl", sucre: "1 c.à.c", selRebord: "pour le rebord" },
-      { nb: 2, vodka: "10 cl", citron: "6 cl", gingembre: "2 cl", sucre: "2 c.à.c", selRebord: "pour le rebord" },
-      { nb: 3, vodka: "15 cl", citron: "9 cl", gingembre: "3 cl", sucre: "3 c.à.c", selRebord: "pour le rebord" },
-      { nb: 4, vodka: "20 cl", citron: "12 cl", gingembre: "4 cl", sucre: "4 c.à.c", selRebord: "pour le rebord" },
-      { nb: 5, vodka: "25 cl", citron: "15 cl", gingembre: "5 cl", sucre: "5 c.à.c", selRebord: "pour le rebord" },
-      { nb: 6, vodka: "30 cl", citron: "18 cl", gingembre: "6 cl", sucre: "6 c.à.c", selRebord: "pour le rebord" },
-      { nb: 7, vodka: "35 cl", citron: "21 cl", gingembre: "7 cl", sucre: "7 c.à.c", selRebord: "pour le rebord" },
-      { nb: 8, vodka: "40 cl", citron: "24 cl", gingembre: "8 cl", sucre: "8 c.à.c", selRebord: "pour le rebord" },
-      { nb: 9, vodka: "45 cl", citron: "27 cl", gingembre: "9 cl", sucre: "9 c.à.c", selRebord: "pour le rebord" },
-      { nb: 10, vodka: "50 cl", citron: "30 cl", gingembre: "10 cl", sucre: "10 c.à.c", selRebord: "pour le rebord" },
-      { nb: 11, vodka: "55 cl", citron: "33 cl", gingembre: "11 cl", sucre: "11 c.à.c", selRebord: "pour le rebord" },
-      { nb: 12, vodka: "60 cl", citron: "36 cl", gingembre: "12 cl", sucre: "12 c.à.c", selRebord: "pour le rebord" },
-      { nb: 13, vodka: "65 cl", citron: "39 cl", gingembre: "13 cl", sucre: "13 c.à.c", selRebord: "pour le rebord" },
-      { nb: 14, vodka: "70 cl", citron: "42 cl", gingembre: "14 cl", sucre: "14 c.à.c", selRebord: "pour le rebord" },
-      { nb: 15, vodka: "75 cl", citron: "45 cl", gingembre: "15 cl", sucre: "15 c.à.c", selRebord: "pour le rebord" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍋", titre: "Givrer au sucre", detail: "Frotter le rebord d'un verre avec citron. Tremper dans le sucre fin.", badge: null },
-      { icone: "🍹", titre: "Shaker", detail: "Dans un shaker avec glace, verser vodka citronnée, jus de citron frais, sirop de gingembre et sirop de sucre.", badge: null },
-      { icone: "🥶", titre: "Shaker fort", detail: "Shaker 15 secondes.", badge: "⏱ 15 sec" },
-      { icone: "🍋", titre: "Filtrer et servir", detail: "Filtrer dans le verre givré. Garnir d'un zeste de citron et d'une tranche de gingembre confit.", badge: null }
-    ]
-  },
-  mocktailcoconorchidee: {
-    cat: "mocktails", saisons: ["hiver"], pays: "france",
-    base: 2,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🌺",
-    description: "Mocktail Coco Orchidée — lait de coco, sirop de fleur d'oranger, citron vert et eau gazeuse. Exotique, floral et sans alcool.",
-    tableauCocoOrchidee: [
-      { nb: 1, laitCoco: "8 cl", fleurOranger: "1 cl", citron: "1 cl", eauGaz: "8 cl", miel: "1 c.à.c" },
-      { nb: 2, laitCoco: "16 cl", fleurOranger: "2 cl", citron: "2 cl", eauGaz: "16 cl", miel: "2 c.à.c" },
-      { nb: 3, laitCoco: "24 cl", fleurOranger: "3 cl", citron: "3 cl", eauGaz: "24 cl", miel: "3 c.à.c" },
-      { nb: 4, laitCoco: "32 cl", fleurOranger: "4 cl", citron: "4 cl", eauGaz: "32 cl", miel: "4 c.à.c" },
-      { nb: 5, laitCoco: "40 cl", fleurOranger: "5 cl", citron: "5 cl", eauGaz: "40 cl", miel: "5 c.à.c" },
-      { nb: 6, laitCoco: "48 cl", fleurOranger: "6 cl", citron: "6 cl", eauGaz: "48 cl", miel: "6 c.à.c" },
-      { nb: 7, laitCoco: "56 cl", fleurOranger: "7 cl", citron: "7 cl", eauGaz: "56 cl", miel: "7 c.à.c" },
-      { nb: 8, laitCoco: "64 cl", fleurOranger: "8 cl", citron: "8 cl", eauGaz: "64 cl", miel: "8 c.à.c" },
-      { nb: 9, laitCoco: "72 cl", fleurOranger: "9 cl", citron: "9 cl", eauGaz: "72 cl", miel: "9 c.à.c" },
-      { nb: 10, laitCoco: "80 cl", fleurOranger: "10 cl", citron: "10 cl", eauGaz: "80 cl", miel: "10 c.à.c" },
-      { nb: 11, laitCoco: "88 cl", fleurOranger: "11 cl", citron: "11 cl", eauGaz: "88 cl", miel: "11 c.à.c" },
-      { nb: 12, laitCoco: "96 cl", fleurOranger: "12 cl", citron: "12 cl", eauGaz: "96 cl", miel: "12 c.à.c" },
-      { nb: 13, laitCoco: "104 cl", fleurOranger: "13 cl", citron: "13 cl", eauGaz: "104 cl", miel: "13 c.à.c" },
-      { nb: 14, laitCoco: "112 cl", fleurOranger: "14 cl", citron: "14 cl", eauGaz: "112 cl", miel: "14 c.à.c" },
-      { nb: 15, laitCoco: "120 cl", fleurOranger: "15 cl", citron: "15 cl", eauGaz: "120 cl", miel: "15 c.à.c" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🥥", titre: "Mélanger", detail: "Dans un shaker avec glace, mélanger lait de coco, eau de fleur d'oranger, jus de citron vert et miel.", badge: null },
-      { icone: "💧", titre: "Eau gazeuse", detail: "Filtrer dans un verre avec glace. Compléter d'eau gazeuse.", badge: null },
-      { icone: "🌺", titre: "Décorer", detail: "Garnir d'une fleur comestible ou zeste de citron vert. Servir très frais.", badge: null },
-      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
     ]
   },
   pizzaprosciuttoroquette: {
@@ -6329,71 +5244,6 @@ const recettes = {
       { icone: "🧅", titre: "Faire revenir", detail: "Faire revenir échalotes et ail émincés dans le beurre 2 min.", badge: null },
       { icone: "🍷", titre: "Cuire les moules", detail: "Ajouter le vin blanc et les moules. Couvrir à feu vif. Secouer régulièrement. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 5-7 min" },
       { icone: "🌿", titre: "Servir", detail: "Jeter les moules fermées. Parsemer de persil haché. Servir avec frites et pain de campagne.", badge: null }
-    ]
-  },
-  coktailcosmopolitan: {
-    cat: "cocktails", saisons: ["ete","hiver"], pays: "usa",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🍸",
-    description: "Sex on the Beach — vodka, pêche, jus d'orange et cranberry. Le cocktail tropical fruité et coloré des soirées d'été.",
-    tableauSexBeach: [
-      { nb: 1, vodka: "4 cl", peche: "2 cl", orange: "6 cl", cranberry: "4 cl" },
-      { nb: 2, vodka: "8 cl", peche: "4 cl", orange: "12 cl", cranberry: "8 cl" },
-      { nb: 3, vodka: "12 cl", peche: "6 cl", orange: "18 cl", cranberry: "12 cl" },
-      { nb: 4, vodka: "16 cl", peche: "8 cl", orange: "24 cl", cranberry: "16 cl" },
-      { nb: 5, vodka: "20 cl", peche: "10 cl", orange: "30 cl", cranberry: "20 cl" },
-      { nb: 6, vodka: "24 cl", peche: "12 cl", orange: "36 cl", cranberry: "24 cl" },
-      { nb: 7, vodka: "28 cl", peche: "14 cl", orange: "42 cl", cranberry: "28 cl" },
-      { nb: 8, vodka: "32 cl", peche: "16 cl", orange: "48 cl", cranberry: "32 cl" },
-      { nb: 9, vodka: "36 cl", peche: "18 cl", orange: "54 cl", cranberry: "36 cl" },
-      { nb: 10, vodka: "40 cl", peche: "20 cl", orange: "60 cl", cranberry: "40 cl" },
-      { nb: 11, vodka: "44 cl", peche: "22 cl", orange: "66 cl", cranberry: "44 cl" },
-      { nb: 12, vodka: "48 cl", peche: "24 cl", orange: "72 cl", cranberry: "48 cl" },
-      { nb: 13, vodka: "52 cl", peche: "26 cl", orange: "78 cl", cranberry: "52 cl" },
-      { nb: 14, vodka: "56 cl", peche: "28 cl", orange: "84 cl", cranberry: "56 cl" },
-      { nb: 15, vodka: "60 cl", peche: "30 cl", orange: "90 cl", cranberry: "60 cl" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre de glaçons.", badge: null },
-      { icone: "🍸", titre: "Verser", detail: "Verser vodka, liqueur de pêche et jus d'orange. Mélanger.", badge: null },
-      { icone: "🍒", titre: "Cranberry", detail: "Verser doucement le jus de cranberry. Il va couler au fond. Garnir d'une tranche d'orange.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
-  },
-  mocktailmentheagume: {
-    cat: "mocktails", saisons: ["ete"], pays: "france",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🌿",
-    description: "Mocktail Menthe Concombre — concombre frais, menthe, citron vert et eau gazeuse. Le mocktail ultra-frais et detox de l'été.",
-    tableauMocktailMenthe: [
-      { nb: 1, concombre: "¼", menthe: "6 feuilles", citron: "½", miel: "1 c.à.c", eauGaz: "150 ml" },
-      { nb: 2, concombre: "½", menthe: "12 feuilles", citron: "1", miel: "2 c.à.c", eauGaz: "300 ml" },
-      { nb: 3, concombre: "¾", menthe: "18 feuilles", citron: "1½", miel: "3 c.à.c", eauGaz: "450 ml" },
-      { nb: 4, concombre: "1", menthe: "24 feuilles", citron: "2", miel: "4 c.à.c", eauGaz: "600 ml" },
-      { nb: 5, concombre: "1", menthe: "30 feuilles", citron: "2", miel: "5 c.à.c", eauGaz: "750 ml" },
-      { nb: 6, concombre: "1½", menthe: "36 feuilles", citron: "3", miel: "6 c.à.c", eauGaz: "900 ml" },
-      { nb: 7, concombre: "1½", menthe: "42 feuilles", citron: "3", miel: "7 c.à.c", eauGaz: "1050 ml" },
-      { nb: 8, concombre: "2", menthe: "48 feuilles", citron: "4", miel: "8 c.à.c", eauGaz: "1200 ml" },
-      { nb: 9, concombre: "2", menthe: "54 feuilles", citron: "4", miel: "9 c.à.c", eauGaz: "1350 ml" },
-      { nb: 10, concombre: "2½", menthe: "60 feuilles", citron: "5", miel: "10 c.à.c", eauGaz: "1500 ml" },
-      { nb: 11, concombre: "2½", menthe: "66 feuilles", citron: "5", miel: "11 c.à.c", eauGaz: "1650 ml" },
-      { nb: 12, concombre: "3", menthe: "72 feuilles", citron: "6", miel: "12 c.à.c", eauGaz: "1800 ml" },
-      { nb: 13, concombre: "3", menthe: "78 feuilles", citron: "6", miel: "13 c.à.c", eauGaz: "1950 ml" },
-      { nb: 14, concombre: "3½", menthe: "84 feuilles", citron: "7", miel: "14 c.à.c", eauGaz: "2100 ml" },
-      { nb: 15, concombre: "3½", menthe: "90 feuilles", citron: "7", miel: "15 c.à.c", eauGaz: "2250 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🥒", titre: "Mixer concombre", detail: "Mixer le concombre épluché avec les feuilles de menthe, jus de citron et miel.", badge: null },
-      { icone: "🧊", titre: "Filtrer et glacer", detail: "Filtrer le mélange. Verser sur glaçons.", badge: null },
-      { icone: "💧", titre: "Compléter", detail: "Compléter d'eau gazeuse. Décorer de rondelles de concombre et feuilles de menthe fraîche.", badge: null },
-      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
     ]
   },
   tartechocolatcaramel: {
@@ -9122,168 +7972,6 @@ const recettes = {
       { icone: "🌾", titre: "Ajouter le riz", detail: "Ajouter le riz bomba. Mélanger pour l'enrober. Verser le bouillon chaud avec safran et paprika fumé.", badge: null },
       { icone: "🫘", titre: "Cuire sans remuer", detail: "Ajouter légumes. Cuire à feu moyen SANS remuer pour former le socarrat.", badge: "⏱ 18 min" },
       { icone: "🍋", titre: "Reposer et servir", detail: "Couvrir d'aluminium. Laisser reposer 5 min. Servir avec quartiers de citron. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 5 min" }
-    ]
-  },
-  bellini: {
-    cat: "cocktails", saisons: ["ete"], pays: "italie",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🍑",
-    description: "Bellini — le cocktail emblématique de l'Harry's Bar de Venise. Purée de pêche blanche et prosecco pétillant. Élégant, fruité et irrésistiblement festif.",
-    fixe: true,
-    ingredientsFixes: [["prosecco","100 ml"],["peche","1 pêche"],["sucre","½ c.à.c"]],
-    etapes: [
-      { icone: "🍑", titre: "Préparer la purée", detail: "Mixer la pêche blanche pelée avec le sucre et quelques gouttes de jus de citron jusqu'à consistance lisse.", badge: null },
-      { icone: "🍾", titre: "Verser le prosecco", detail: "Verser 2 cuillères à soupe de purée dans une flûte bien froide. Verser délicatement le prosecco froid.", badge: null },
-      { icone: "🥂", titre: "Mélanger et servir", detail: "Mélanger délicatement avec une cuillère longue. Décorer avec un quartier de pêche.", badge: null }
-    ]
-  },
-  frenchMartini: {
-    cat: "cocktails", pays: "monde",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🍸",
-    description: "French Martini — vodka, Chambord et jus d'ananas. Un cocktail fruité, soyeux et légèrement exotique avec sa mousse caractéristique.",
-    fixe: true,
-    ingredientsFixes: [["vodka","45 ml"],["ananas","45 ml"],["sirop","15 ml (Chambord)"],["glace","glaçons"]],
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🧊", titre: "Remplir le shaker", detail: "Remplir le shaker de glaçons. Verser vodka, jus d'ananas et Chambord.", badge: null },
-      { icone: "🍸", titre: "Shaker vigoureusement", detail: "Shaker 15 secondes vigoureusement pour créer la mousse caractéristique.", badge: "⏱ 15 sec" },
-      { icone: "🍷", titre: "Servir", detail: "Double filtration dans une coupe Martini froide. La mousse se forme en surface.", badge: null }
-    ]
-  },
-  darkStormyCocktail: {
-    cat: "cocktails", pays: "monde",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "⛈️",
-    description: "Dark & Stormy — rhum brun épicé et ginger beer avec une rondelle de citron vert. Un cocktail des Bermudes intense, rafraîchissant et très facile.",
-    fixe: true,
-    ingredientsFixes: [["rhum","60 ml (rhum brun)"],["gingerBeer","120 ml"],["citrons","1 rondelle"],["glace","glaçons"]],
-    etapes: [
-      { icone: "🧊", titre: "Remplir le verre", detail: "Remplir un verre highball de glaçons. Verser le ginger beer.", badge: null },
-      { icone: "⛈️", titre: "Ajouter le rhum", detail: "Verser délicatement le rhum brun par-dessus sans mélanger pour créer l'effet nuage.", badge: null },
-      { icone: "🍋", titre: "Garnir", detail: "Presser et déposer la rondelle de citron vert. Servir avec une paille.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
-  },
-  amarettoSour: {
-    cat: "cocktails", pays: "italie",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🍊",
-    description: "Amaretto Sour — amaretto doux, citron frais et blanc d'œuf pour une mousse veloutée. Un sour parfaitement équilibré entre douceur amandée et acidité.",
-    fixe: true,
-    ingredientsFixes: [["cognac","50 ml (amaretto)"],["citrons","25 ml jus"],["sucre","10 ml sirop"],["blanc","15 ml"],["glace","glaçons"]],
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🥚", titre: "Dry shake", detail: "Mettre amaretto, jus de citron, sirop et blanc d'œuf dans le shaker SANS glaçons. Shaker 10 sec.", badge: "⏱ 10 sec" },
-      { icone: "🧊", titre: "Wet shake", detail: "Ajouter les glaçons. Shaker à nouveau vigoureusement 15 secondes.", badge: "⏱ 15 sec" },
-      { icone: "🍊", titre: "Servir", detail: "Filtrer dans un verre rocks sur glaçons. Décorer avec une cerise et un twist d'orange.", badge: null }
-    ]
-  },
-  aperolPamplemousse: {
-    cat: "cocktails", saisons: ["hiver"], pays: "italie",
-    base: 1,
-    temps: "3 min",
-    niveau: "⭐ Facile",
-    emoji: "🍊",
-    description: "Aperol Pamplemousse Spritz — une variation fruitée du spritz classique avec du jus de pamplemousse rose pour plus d'amertume et de fraîcheur.",
-    fixe: true,
-    ingredientsFixes: [["campari","40 ml (Aperol)"],["orange","60 ml jus pamplemousse"],["tonic","60 ml prosecco"],["glace","glaçons"],["citrons","1 rondelle"]],
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🧊", titre: "Remplir", detail: "Remplir un grand verre de glaçons.", badge: null },
-      { icone: "🍊", titre: "Verser", detail: "Verser l'Aperol, le jus de pamplemousse rose puis le prosecco.", badge: null },
-      { icone: "🌿", titre: "Garnir", detail: "Remuer délicatement. Décorer avec une rondelle de pamplemousse et un brin de romarin.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
-  },
-  mocktailframboisementhe: {
-    cat: "mocktails", saisons: ["ete","printemps"], pays: "monde",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🫐",
-    description: "Mocktail framboise menthe — framboises fraîches pilées, sirop de menthe, limonade pétillante et glaçons. Frais, coloré et zéro alcool.",
-    fixe: true,
-    ingredientsFixes: [["fraises","50 g framboises"],["menthe","5 feuilles"],["sirop","20 ml sirop framboise"],["tonic","120 ml limonade"],["glace","glaçons"]],
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🫐", titre: "Piler les framboises", detail: "Dans le verre, piler les framboises avec la menthe et le sirop.", badge: null },
-      { icone: "🧊", titre: "Ajouter les glaçons", detail: "Remplir de glaçons.", badge: null },
-      { icone: "💧", titre: "Compléter", detail: "Verser la limonade pétillante. Remuer délicatement. Décorer avec framboises et menthe fraîche.", badge: null },
-      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
-    ]
-  },
-  mocktailpassionsoleil: {
-    cat: "mocktails", saisons: ["hiver"], pays: "monde",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "☀️",
-    description: "Mocktail Passion Soleil — fruit de la passion, mangue, jus d'orange et eau gazeuse. Tropical, vitaminé et ensoleillé même en hiver.",
-    fixe: true,
-    ingredientsFixes: [["passion","1 fruit de la passion"],["orange","60 ml jus mangue"],["orangeJus","60 ml jus d'orange"],["tonic","60 ml eau gazeuse"],["glace","glaçons"]],
-    etapes: [
-      { icone: "☀️", titre: "Préparer", detail: "Dans un shaker avec glaçons, verser pulpe de fruit de la passion, jus de mangue et jus d'orange.", badge: null },
-      { icone: "🍹", titre: "Shaker", detail: "Shaker vigoureusement 10 secondes.", badge: "⏱ 10 sec" },
-      { icone: "💧", titre: "Servir", detail: "Verser dans un verre. Compléter avec l'eau gazeuse. Décorer avec une rondelle d'orange.", badge: null }
-    ]
-  },
-  mocktailconcombrecitr: {
-    cat: "mocktails", saisons: ["ete"], pays: "monde",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🥒",
-    description: "Mocktail concombre citron vert — concombre frais, citron vert, basilic et eau pétillante. Ultrafraîchissant, détox et élégant pour l'apéritif.",
-    fixe: true,
-    ingredientsFixes: [["concombre","4 rondelles"],["citrons","30 ml jus citron vert"],["basilic","3 feuilles"],["sirop","15 ml sirop agave"],["tonic","100 ml eau gazeuse"],["glace","glaçons"]],
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🥒", titre: "Piler", detail: "Dans le verre, piler les rondelles de concombre avec le basilic et le sirop d'agave.", badge: null },
-      { icone: "🍋", titre: "Ajouter", detail: "Ajouter jus de citron vert et glaçons.", badge: null },
-      { icone: "💧", titre: "Compléter", detail: "Verser l'eau gazeuse. Garnir d'une rondelle de concombre et basilic.", badge: null },
-      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
-    ]
-  },
-  mocktailgingembre: {
-    cat: "mocktails", pays: "monde",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🫚",
-    description: "Ginger Mocktail — gingembre frais, citron, miel et ginger beer. Épicé, piquant et revigorant. La version sans alcool du Moscow Mule.",
-    fixe: true,
-    ingredientsFixes: [["gingembre","5 g râpé"],["citrons","30 ml jus"],["miel","15 ml"],["gingerBeer","150 ml ginger beer"],["glace","glaçons"]],
-    etapes: [
-      { icone: "🫚", titre: "Préparer", detail: "Mélanger gingembre râpé, jus de citron et miel. Laisser infuser 2 min.", badge: "⏱ 2 min" },
-      { icone: "🧊", titre: "Remplir", detail: "Filtrer dans un mug en cuivre ou verre rempli de glaçons.", badge: null },
-      { icone: "💧", titre: "Compléter", detail: "Verser le ginger beer. Garnir de rondelle de citron et brin de menthe.", badge: null },
-      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
-    ]
-  },
-  mocktailfraisesvanille: {
-    cat: "mocktails", saisons: ["ete","printemps"], pays: "monde",
-    base: 1,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🍓",
-    description: "Mocktail Fraises Vanille — coulis de fraises fraîches, extrait de vanille, lait de coco et eau gazeuse. Doux, fruité et terriblement gourmand.",
-    fixe: true,
-    ingredientsFixes: [["fraises","80 g fraises"],["vanilleE","½ c.à.c"],["cremeCoco","40 ml lait de coco"],["sirop","15 ml sirop de sucre"],["tonic","80 ml eau gazeuse"],["glace","glaçons"]],
-    etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
-      { icone: "🍓", titre: "Mixer", detail: "Mixer les fraises avec la vanille et le sirop jusqu'à obtenir un coulis lisse.", badge: null },
-      { icone: "🥥", titre: "Assembler", detail: "Dans un verre rempli de glaçons, verser le coulis de fraises puis le lait de coco.", badge: null },
-      { icone: "💧", titre: "Finir", detail: "Ajouter l'eau gazeuse. Remuer délicatement. Décorer avec une fraise sur le bord du verre.", badge: null },
-      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
     ]
   },
   massamancurry: {
@@ -12742,42 +11430,6 @@ const recettes = {
       { icone: "🍽️", titre: "Service indien", detail: "Servir CHAUDS avec : chutney à la menthe-coriandre (yaourt + menthe + coriandre + citron), chutney aux tamarinds, ou ketchup. Boisson : lassi mangue ou chai. Namaste !", badge: null }
     ]
   },
-  mangolassi: {
-    cat: "mocktails", pays: "inde",
-    base: 4,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🥭",
-    description: "Mango Lassi — boisson indienne onctueuse à la mangue et yaourt. Crémeux, frais et naturellement sucré. Le parfait accompagnement d'un curry épicé ou en dessert.",
-    tableauMangoLassi: [
-      { nb: 1, mangue: "80 g", yaourt: "80 g", lait: "40 ml", sucre: "5 g", cardamome: "0.1 c.à.c", glace: "20 g", menthe: "1 g", zestecitron: "0" },
-      { nb: 2, mangue: "160 g", yaourt: "160 g", lait: "80 ml", sucre: "10 g", cardamome: "0.2 c.à.c", glace: "40 g", menthe: "2 g", zestecitron: "¼" },
-      { nb: 3, mangue: "240 g", yaourt: "240 g", lait: "120 ml", sucre: "15 g", cardamome: "0.3 c.à.c", glace: "60 g", menthe: "3 g", zestecitron: "¼" },
-      { nb: 4, mangue: "320 g", yaourt: "320 g", lait: "160 ml", sucre: "20 g", cardamome: "0.4 c.à.c", glace: "80 g", menthe: "4 g", zestecitron: "¼" },
-      { nb: 5, mangue: "400 g", yaourt: "400 g", lait: "200 ml", sucre: "25 g", cardamome: "0.5 c.à.c", glace: "100 g", menthe: "5 g", zestecitron: "¼" },
-      { nb: 6, mangue: "480 g", yaourt: "480 g", lait: "240 ml", sucre: "30 g", cardamome: "0.6 c.à.c", glace: "120 g", menthe: "6 g", zestecitron: "¼" },
-      { nb: 7, mangue: "560 g", yaourt: "560 g", lait: "280 ml", sucre: "35 g", cardamome: "0.7 c.à.c", glace: "140 g", menthe: "7 g", zestecitron: "⅓" },
-      { nb: 8, mangue: "640 g", yaourt: "640 g", lait: "320 ml", sucre: "40 g", cardamome: "0.8 c.à.c", glace: "160 g", menthe: "8 g", zestecitron: "½" },
-      { nb: 9, mangue: "720 g", yaourt: "720 g", lait: "360 ml", sucre: "45 g", cardamome: "0.9 c.à.c", glace: "180 g", menthe: "9 g", zestecitron: "½" },
-      { nb: 10, mangue: "800 g", yaourt: "800 g", lait: "400 ml", sucre: "50 g", cardamome: "1 c.à.c", glace: "200 g", menthe: "10 g", zestecitron: "½" },
-      { nb: 11, mangue: "880 g", yaourt: "880 g", lait: "440 ml", sucre: "55 g", cardamome: "1.1 c.à.c", glace: "220 g", menthe: "11 g", zestecitron: "½" },
-      { nb: 12, mangue: "960 g", yaourt: "960 g", lait: "480 ml", sucre: "60 g", cardamome: "1.2 c.à.c", glace: "240 g", menthe: "12 g", zestecitron: "½" },
-      { nb: 13, mangue: "1 kg", yaourt: "1 kg", lait: "520 ml", sucre: "65 g", cardamome: "1.3 c.à.c", glace: "260 g", menthe: "13 g", zestecitron: "⅔" },
-      { nb: 14, mangue: "1.1 kg", yaourt: "1.1 kg", lait: "560 ml", sucre: "70 g", cardamome: "1.4 c.à.c", glace: "280 g", menthe: "14 g", zestecitron: "¾" },
-      { nb: 15, mangue: "1.2 kg", yaourt: "1.2 kg", lait: "600 ml", sucre: "75 g", cardamome: "1.5 c.à.c", glace: "300 g", menthe: "15 g", zestecitron: "¾" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥭", titre: "Choisir les mangues", detail: "ESSENTIEL : mangues MÛRES À POINT (cèdent au doigt, parfumées). Variétés Alphonso (Inde) ou Kent idéales. ASTUCE CHEF : pour version express, utiliser de la PURÉE DE MANGUE indienne en boîte (Ratna, Patak's).", badge: "⏱ 1 min" },
-      { icone: "🍽️", titre: "Préparer la mangue", detail: "Éplucher la mangue, couper la chair autour du noyau central. Couper en cubes. Si trop ferme : laisser 1h à température ambiante.", badge: "⏱ 3 min" },
-      { icone: "🌿", titre: "Cardamome (option authentique)", detail: "SECRET DU LASSI INDIEN : ouvrir 4 gousses de cardamome verte. Récupérer les graines noires. Piler au mortier ou écraser avec le dos d'une cuillère. C'est LE parfum signature.", badge: "⏱ 2 min" },
-      { icone: "❄️", titre: "Yaourt bien froid", detail: "Utiliser du YAOURT NATURE ENTIER (yaourt grec ou yaourt indien Dahi). Bien froid = onctuosité maximale. NE PAS prendre 0% (texture aqueuse).", badge: "⏱ -" },
-      { icone: "🌀", titre: "Mixer", detail: "Dans un blender : cubes de mangue (400g) + yaourt (400ml) + lait (200ml) + sucre (2 cs ajuster selon douceur de la mangue) + cardamome moulue + 1 poignée de glaçons. Mixer 30-45 secondes à pleine puissance.", badge: "⏱ 45 sec" },
-      { icone: "✨", titre: "Texture", detail: "Doit être SOYEUSE et ONCTUEUSE comme un milkshake. Si trop épais : ajouter lait. Si trop liquide : ajouter glace ou yaourt.", badge: "⏱ 30 sec" },
-      { icone: "🥤", titre: "Service", detail: "Servir dans des verres GLACÉS (au congélateur 10 min avant). Saupoudrer d'une pincée de cardamome moulue ou de pistaches concassées sur le dessus.", badge: null },
-      { icone: "🌿", titre: "Touches finales", detail: "Une feuille de menthe fraîche, un zeste de citron vert. Servir avec paille. PARFAIT avec un curry épicé (rafraîchit le palais) ou seul en collation.", badge: null }
-    ]
-  },
   karaagepoulet: {
     cat: "plats", pays: "japon",
     base: 4,
@@ -12812,43 +11464,6 @@ const recettes = {
       { icone: "🔥", titre: "Deuxième friture (180°C)", detail: "Augmenter l'huile à 180°C. Replonger les morceaux 1-2 min jusqu'à DORÉ FONCÉ et CROUSTILLANT. C'est la double cuisson japonaise qui rend le karaage unique.", badge: "⏱ 2 min" },
       { icone: "🧂", titre: "Égoutter et saler", detail: "Sortir sur papier absorbant. Saler IMMÉDIATEMENT pendant que c'est chaud (le sel adhère mieux). ASTUCE : pas trop de sel, la sauce soja a déjà salé.", badge: "⏱ 1 min" },
       { icone: "🍋", titre: "Service izakaya", detail: "Servir BRÛLANTS avec : quartiers de citron jaune (à presser dessus), mayonnaise japonaise (Kewpie), shichimi togarashi (mélange 7 épices). Riz blanc et bière japonaise à côté. Kampai !", badge: null }
-    ]
-  },
-  matchalattewi: {
-    cat: "mocktails", pays: "japon",
-    base: 2,
-    temps: "5 min",
-    niveau: "⭐ Facile",
-    emoji: "🍵",
-    description: "Matcha Latte — boisson japonaise crémeuse et énergisante. Poudre de matcha cérémoniale fouettée avec du lait chaud, légèrement sucrée au miel ou sirop. Antioxydants et zen attitude !",
-    tableauMatchaLatte: [
-      { nb: 1, matcha: "2 g", laitamande: "150 ml", eauchaude: "30 ml", sirop: "8 ml", vanille: "0.1 c.à.c", cannelle: "0.1 c.à.c", sucre: "3 g", glace: "50 g" },
-      { nb: 2, matcha: "4 g", laitamande: "300 ml", eauchaude: "60 ml", sirop: "16 ml", vanille: "0.2 c.à.c", cannelle: "0.2 c.à.c", sucre: "6 g", glace: "100 g" },
-      { nb: 3, matcha: "6 g", laitamande: "450 ml", eauchaude: "90 ml", sirop: "24 ml", vanille: "0.3 c.à.c", cannelle: "0.3 c.à.c", sucre: "9 g", glace: "150 g" },
-      { nb: 4, matcha: "8 g", laitamande: "600 ml", eauchaude: "120 ml", sirop: "32 ml", vanille: "0.4 c.à.c", cannelle: "0.4 c.à.c", sucre: "12 g", glace: "200 g" },
-      { nb: 5, matcha: "10 g", laitamande: "750 ml", eauchaude: "150 ml", sirop: "40 ml", vanille: "0.5 c.à.c", cannelle: "0.5 c.à.c", sucre: "15 g", glace: "250 g" },
-      { nb: 6, matcha: "12 g", laitamande: "900 ml", eauchaude: "180 ml", sirop: "48 ml", vanille: "0.6 c.à.c", cannelle: "0.6 c.à.c", sucre: "18 g", glace: "300 g" },
-      { nb: 7, matcha: "14 g", laitamande: "1.1 l", eauchaude: "210 ml", sirop: "56 ml", vanille: "0.7 c.à.c", cannelle: "0.7 c.à.c", sucre: "21 g", glace: "350 g" },
-      { nb: 8, matcha: "16 g", laitamande: "1.2 l", eauchaude: "240 ml", sirop: "64 ml", vanille: "0.8 c.à.c", cannelle: "0.8 c.à.c", sucre: "24 g", glace: "400 g" },
-      { nb: 9, matcha: "18 g", laitamande: "1.4 l", eauchaude: "270 ml", sirop: "72 ml", vanille: "0.9 c.à.c", cannelle: "0.9 c.à.c", sucre: "27 g", glace: "450 g" },
-      { nb: 10, matcha: "20 g", laitamande: "1.5 l", eauchaude: "300 ml", sirop: "80 ml", vanille: "1 c.à.c", cannelle: "1 c.à.c", sucre: "30 g", glace: "500 g" },
-      { nb: 11, matcha: "22 g", laitamande: "1.6 l", eauchaude: "330 ml", sirop: "88 ml", vanille: "1.1 c.à.c", cannelle: "1.1 c.à.c", sucre: "33 g", glace: "550 g" },
-      { nb: 12, matcha: "24 g", laitamande: "1.8 l", eauchaude: "360 ml", sirop: "96 ml", vanille: "1.2 c.à.c", cannelle: "1.2 c.à.c", sucre: "36 g", glace: "600 g" },
-      { nb: 13, matcha: "26 g", laitamande: "1.9 l", eauchaude: "390 ml", sirop: "104 ml", vanille: "1.3 c.à.c", cannelle: "1.3 c.à.c", sucre: "39 g", glace: "650 g" },
-      { nb: 14, matcha: "28 g", laitamande: "2.1 l", eauchaude: "420 ml", sirop: "112 ml", vanille: "1.4 c.à.c", cannelle: "1.4 c.à.c", sucre: "42 g", glace: "700 g" },
-      { nb: 15, matcha: "30 g", laitamande: "2.2 l", eauchaude: "450 ml", sirop: "120 ml", vanille: "1.5 c.à.c", cannelle: "1.5 c.à.c", sucre: "45 g", glace: "750 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍵", titre: "Choisir le matcha", detail: "CRITIQUE : utiliser du VRAI matcha cérémoniel (qualité haute, vert vif). Le matcha culinaire (vert jaunâtre) est amer. Marques recommandées : Ippodo, Marukyu Koyamaen.", badge: "⏱ 1 min" },
-      { icone: "💧", titre: "Eau à bonne température", detail: "Faire chauffer l'eau à 70-75°C (PAS bouillante — sinon matcha amer). ASTUCE CHEF : porter à ébullition puis laisser 2 min pour redescendre à la bonne température.", badge: "⏱ 3 min" },
-      { icone: "🍵", titre: "Tamiser le matcha", detail: "SECRET DU MATCHA : passer le matcha à travers un petit tamis fin pour éviter les grumeaux. C'est CE QUE FONT TOUS les sommeliers de matcha.", badge: "⏱ 1 min" },
-      { icone: "🥢", titre: "Préparer la base", detail: "Dans un grand bol (chawan japonais ou bol large) : verser 1 cc de matcha tamisé + 60ml d'eau chaude.", badge: "⏱ 1 min" },
-      { icone: "🍃", titre: "Fouetter au chasen", detail: "TECHNIQUE TRADITIONNELLE : fouetter avec un CHASEN (fouet bambou) en mouvements ZIG-ZAG rapides (W ou M) pendant 30 secondes. Le matcha doit devenir MOUSSEUX en surface. À défaut : fouet électrique.", badge: "⏱ 30 sec" },
-      { icone: "🥛", titre: "Chauffer le lait", detail: "Pendant ce temps, chauffer 200ml de lait (vache ou avoine pour version moderne) à 65°C. NE PAS BOUILLIR. Optionnel : faire mousser avec un mousseur à lait.", badge: "⏱ 3 min" },
-      { icone: "🥄", titre: "Sucrer (option)", detail: "Dans le matcha mousseux, ajouter : 1 cs de sirop d'érable, miel ou agave + 1/2 cc de vanille. Mélanger.", badge: "⏱ 1 min" },
-      { icone: "🍵", titre: "Assembler", detail: "Verser le lait chaud LENTEMENT en filet sur la mousse de matcha. Si bien fait : le matcha vert pur reste au-dessus, le lait blanc en-dessous = effet visuel signature.", badge: "⏱ 30 sec" },
-      { icone: "✨", titre: "Service zen", detail: "Servir IMMÉDIATEMENT dans une grande tasse. Saupoudrer d'un peu de matcha en surface. Pour version GLACÉE : verser sur des glaçons. Pour version originale : sans sucre, juste matcha + lait. 抹茶ラテ !", badge: null }
     ]
   },
   mapotofu: {
@@ -13698,9 +12313,6 @@ const recettes = {
       { icone: "✨", titre: "Démoulage", detail: "Au bout de 5-10 minutes de cuisson, sortez votre cake du four et pratiquez une entaille à l'aide de la pointe d'un couteau sur toute la longueur du cake afin d'avoir un cake avec une belle entaille uniforme. Démoulez et laissez refroidir sur une grille.", badge: null }
     ]
   },
-
-  // === v257 — 16 NOUVELLES RECETTES ===
-
   fishandchips: {
     cat: "platprincipal", pays: "angleterre",
     base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🐟",
@@ -13723,7 +12335,6 @@ const recettes = {
       { icone: "🍋", titre: "Servir", detail: "Servir aussitôt avec quartiers de citron, sauce tartare et petits pois écrasés.", badge: null }
     ]
   },
-
   shepherdspie: {
     cat: "platprincipal", pays: "angleterre",
     base: 4, temps: "1h", niveau: "⭐ Facile", emoji: "🥧",
@@ -13746,7 +12357,6 @@ const recettes = {
       { icone: "🔥", titre: "Gratiner", detail: "Enfourner 20 min à 200°C jusqu'à doré et bouillonnant.", badge: "⏱ 20 min" }
     ]
   },
-
   croquemadame: {
     cat: "brunch", pays: "france",
     base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🍞",
@@ -13769,7 +12379,6 @@ const recettes = {
       { icone: "🍽️", titre: "Servir", detail: "Déposer l'œuf au plat sur chaque croque-monsieur sorti du four. Saler, poivrer et déguster aussitôt.", badge: null }
     ]
   },
-
   tomkhagai: {
     cat: "soupe", pays: "thailande",
     base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🍲",
@@ -13792,7 +12401,6 @@ const recettes = {
       { icone: "🌿", titre: "Servir", detail: "Verser en bol, parsemer de coriandre fraîche et de piment rouge. Retirer les morceaux de citronnelle avant de manger.", badge: null }
     ]
   },
-
   macandcheese: {
     cat: "platprincipal", pays: "etatsunis",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🧀",
@@ -13816,7 +12424,6 @@ const recettes = {
       { icone: "🔥", titre: "Gratiner", detail: "Enfourner 15-20 min jusqu'à doré et bouillonnant sur les bords.", badge: "⏱ 15-20 min" }
     ]
   },
-
   yakitori: {
     cat: "platprincipal", pays: "japon",
     base: 4, temps: "30 min + 30 min marinade", niveau: "⭐ Facile", emoji: "🍢",
@@ -13839,7 +12446,6 @@ const recettes = {
       { icone: "🍚", titre: "Servir", detail: "Servir avec du riz japonais et un peu de sauce restante. Saupoudrer de graines de sésame.", badge: null }
     ]
   },
-
   magretcanard: {
     cat: "platprincipal", pays: "france",
     base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🦆",
@@ -13862,7 +12468,6 @@ const recettes = {
       { icone: "🍽️", titre: "Servir", detail: "Trancher le magret en biais, napper de sauce. Accompagner de pommes de terre sarladaises ou d'un gratin dauphinois.", badge: null }
     ]
   },
-
   risottochampignons: {
     cat: "platprincipal", pays: "italie",
     base: 4, temps: "35 min", niveau: "⭐⭐ Moyen", emoji: "🍚",
@@ -13886,7 +12491,6 @@ const recettes = {
       { icone: "🧀", titre: "Mantecare", detail: "Hors du feu, incorporer parmesan + beurre froid. Couvrir 2 min et servir.", badge: "🔑 Étape clé" }
     ]
   },
-
   banoffeepie: {
     cat: "dessert", pays: "angleterre",
     base: 8, temps: "30 min + 3h frigo", niveau: "⭐ Facile", emoji: "🍌",
@@ -13910,7 +12514,6 @@ const recettes = {
       { icone: "❄️", titre: "Frigo", detail: "Réfrigérer 1h minimum avant de servir.", badge: "⏱ 1h frigo" }
     ]
   },
-
   veloutebutternut: {
     cat: "soupe", pays: "france",
     base: 4, temps: "50 min", niveau: "⭐ Facile", emoji: "🎃",
@@ -13932,7 +12535,6 @@ const recettes = {
       { icone: "🥥", titre: "Finition coco", detail: "Hors du feu, incorporer le lait de coco. Ajuster sel et poivre. Servir chaud.", badge: null }
     ]
   },
-
   muffinkinder: {
     cat: "viennoiserie", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
@@ -13955,7 +12557,6 @@ const recettes = {
       { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C. Vérifier avec un cure-dent.", badge: "⏱ 20-22 min" }
     ]
   },
-
   muffinmars: {
     cat: "viennoiserie", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
@@ -13978,7 +12579,6 @@ const recettes = {
       { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C.", badge: "⏱ 20-22 min" }
     ]
   },
-
   muffinkitkat: {
     cat: "viennoiserie", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
@@ -14001,7 +12601,6 @@ const recettes = {
       { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C.", badge: "⏱ 20-22 min" }
     ]
   },
-
   muffinraffaello: {
     cat: "viennoiserie", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
@@ -14023,7 +12622,6 @@ const recettes = {
       { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C. Couleur doit rester pâle.", badge: "⏱ 20-22 min" }
     ]
   },
-
   muffinsnickers: {
     cat: "viennoiserie", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
@@ -14047,7 +12645,6 @@ const recettes = {
       { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C.", badge: "⏱ 20-22 min" }
     ]
   },
-
   muffinoreo: {
     cat: "viennoiserie", pays: "etatsunis",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
@@ -14071,4 +12668,3 @@ const recettes = {
     ]
   }
 };
-

@@ -564,6 +564,13 @@ function getSelecteurPersonnesHTML(nom, personnes) {
     }
   }
   
+  // v257.9 : Exceptions pour les recettes "à l'unité" (depuis exceptions.js)
+  const exceptionsUnites = (window.EXCEPTIONS && window.EXCEPTIONS.unites) || ["brioche","patefeuilletee","patebrisee","patesablee"];
+  if (exceptionsUnites.includes(nom)) {
+    min = 1;
+    max = 5;
+  }
+  
   const val = Math.max(min, Math.min(max, personnes));
   const unite = getUniteRecette(nom, val);
   
@@ -742,7 +749,7 @@ function htmlPrixCalories(nom, quantite) {
 // FICHE PLEINE PAGE
 // =============================
 
-function choisirRecette(nom) {
+function choisirRecette(nom, personnesOverride) {
   const data = recettes[nom];
   if (!data) return;
 
@@ -756,7 +763,10 @@ function choisirRecette(nom) {
 
   const inputPersonnes = document.getElementById("personnes");
 
-  const personnes = inputPersonnes ? parseInt(inputPersonnes.value) || data.base : data.base;
+  // v257.5 : Accepte un override (utilisé par rerendreFiche pour conserver la valeur après +/-)
+  const personnes = (typeof personnesOverride === "number" && personnesOverride > 0)
+    ? personnesOverride
+    : (inputPersonnes ? parseInt(inputPersonnes.value) || data.base : data.base);
   const ratio = personnes / data.base;
 
   // Label quantité

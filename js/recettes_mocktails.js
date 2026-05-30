@@ -1,0 +1,548 @@
+// =============================================================================
+// 🥤 MOCKTAILS (sans alcool)
+// =============================================================================
+// Ces recettes sont fusionnées dans l'objet `recettes` global.
+// Init par défaut : foyer entier sauf les bébés.
+// =============================================================================
+
+Object.assign(recettes, {
+  virginmojito: {
+    cat: "mocktails", pays: "france",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥤",
+    description: "Le Virgin Mojito — menthe fraîche, citron vert, sucre de canne et eau gazeuse. Toute la fraîcheur du mojito, sans alcool !",
+    tableauVirginMojito: [
+      { nb: 1, citron: "1", menthe: "10 feuilles", sucre: "2 c.à.c", eauGaz: "15 cl", sirop: "1 cl" },
+      { nb: 2, citron: "2", menthe: "20 feuilles", sucre: "4 c.à.c", eauGaz: "30 cl", sirop: "2 cl" },
+      { nb: 3, citron: "3", menthe: "30 feuilles", sucre: "6 c.à.c", eauGaz: "45 cl", sirop: "3 cl" },
+      { nb: 4, citron: "4", menthe: "40 feuilles", sucre: "8 c.à.c", eauGaz: "60 cl", sirop: "4 cl" },
+      { nb: 5, citron: "5", menthe: "50 feuilles", sucre: "10 c.à.c", eauGaz: "75 cl", sirop: "5 cl" },
+      { nb: 6, citron: "6", menthe: "60 feuilles", sucre: "12 c.à.c", eauGaz: "90 cl", sirop: "6 cl" },
+      { nb: 7, citron: "7", menthe: "70 feuilles", sucre: "14 c.à.c", eauGaz: "1 L", sirop: "7 cl" },
+      { nb: 8, citron: "8", menthe: "80 feuilles", sucre: "16 c.à.c", eauGaz: "1.2 L", sirop: "8 cl" },
+      { nb: 9, citron: "9", menthe: "90 feuilles", sucre: "18 c.à.c", eauGaz: "1.35 L", sirop: "9 cl" },
+      { nb: 10, citron: "10", menthe: "100 feuilles", sucre: "20 c.à.c", eauGaz: "1.5 L", sirop: "10 cl" },
+      { nb: 11, citron: "11", menthe: "110 feuilles", sucre: "22 c.à.c", eauGaz: "1.65 L", sirop: "11 cl" },
+      { nb: 12, citron: "12", menthe: "120 feuilles", sucre: "24 c.à.c", eauGaz: "1.8 L", sirop: "12 cl" },
+      { nb: 13, citron: "13", menthe: "130 feuilles", sucre: "26 c.à.c", eauGaz: "1.95 L", sirop: "13 cl" },
+      { nb: 14, citron: "14", menthe: "140 feuilles", sucre: "28 c.à.c", eauGaz: "2.1 L", sirop: "14 cl" },
+      { nb: 15, citron: "15", menthe: "150 feuilles", sucre: "30 c.à.c", eauGaz: "2.25 L", sirop: "15 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🍋", titre: "Piler menthe + citron", detail: "Dans un verre, mettre les feuilles de menthe et le sucre. Presser le citron vert par-dessus. Piler doucement.", badge: null },
+      { icone: "🧊", titre: "Glace", detail: "Remplir de glace pilée.", badge: null },
+      { icone: "💧", titre: "Compléter", detail: "Ajouter le sirop de menthe et l'eau gazeuse. Mélanger délicatement. Garnir de menthe fraîche.", badge: null },
+      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
+    ]
+  },
+  limonademaison: {
+    cat: "mocktails", pays: "france",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍋",
+    description: "La limonade maison fraîche et naturelle — citrons pressés, sucre de canne et eau gazeuse. Bien meilleure que celle du commerce !",
+    tableauLimonade: [
+      { nb: 1, citrons: "1", sucre: "2 c.à.s", eauGaz: "20 cl", menthe: "3 feuilles" },
+      { nb: 2, citrons: "1", sucre: "3 c.à.s", eauGaz: "40 cl", menthe: "6 feuilles" },
+      { nb: 3, citrons: "2", sucre: "5 c.à.s", eauGaz: "60 cl", menthe: "9 feuilles" },
+      { nb: 4, citrons: "3", sucre: "6 c.à.s", eauGaz: "80 cl", menthe: "12 feuilles" },
+      { nb: 5, citrons: "3", sucre: "8 c.à.s", eauGaz: "100 cl", menthe: "15 feuilles" },
+      { nb: 6, citrons: "4", sucre: "9 c.à.s", eauGaz: "120 cl", menthe: "18 feuilles" },
+      { nb: 7, citrons: "5", sucre: "11 c.à.s", eauGaz: "140 cl", menthe: "21 feuilles" },
+      { nb: 8, citrons: "5", sucre: "12 c.à.s", eauGaz: "160 cl", menthe: "24 feuilles" },
+      { nb: 9, citrons: "6", sucre: "14 c.à.s", eauGaz: "180 cl", menthe: "27 feuilles" },
+      { nb: 10, citrons: "7", sucre: "15 c.à.s", eauGaz: "200 cl", menthe: "30 feuilles" },
+      { nb: 11, citrons: "7", sucre: "17 c.à.s", eauGaz: "220 cl", menthe: "33 feuilles" },
+      { nb: 12, citrons: "8", sucre: "18 c.à.s", eauGaz: "240 cl", menthe: "36 feuilles" },
+      { nb: 13, citrons: "9", sucre: "20 c.à.s", eauGaz: "260 cl", menthe: "39 feuilles" },
+      { nb: 14, citrons: "9", sucre: "21 c.à.s", eauGaz: "280 cl", menthe: "42 feuilles" },
+      { nb: 15, citrons: "10", sucre: "23 c.à.s", eauGaz: "300 cl", menthe: "45 feuilles" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Préparer le sirop", detail: "Faire chauffer 100ml d'eau avec le sucre jusqu'à dissolution complète. Laisser refroidir.", badge: null },
+      { icone: "🍋", titre: "Presser les citrons", detail: "Presser les citrons. Filtrer le jus.", badge: null },
+      { icone: "🥤", titre: "Assembler", detail: "Mélanger jus de citron et sirop refroidi. Ajouter l'eau gazeuse froide. Mélanger délicatement.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Servir dans des grands verres avec glaçons, rondelles de citron et feuilles de menthe.", badge: null }
+    ]
+  },
+  smoothiemangopassion: {
+    cat: "mocktails", pays: "france",
+    base: 2,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥭",
+    description: "Smoothie mangue passion tropical — onctueux, vitaminé et sans alcool. Un vrai voyage sous les tropiques !",
+    tableauSmoothieMango: [
+      { nb: 1, mangue: "100 g", passion: "1", banane: "½", lait: "80 ml", miel: "1 c.à.c" },
+      { nb: 2, mangue: "200 g", passion: "2", banane: "1", lait: "160 ml", miel: "2 c.à.c" },
+      { nb: 3, mangue: "300 g", passion: "3", banane: "1½", lait: "240 ml", miel: "3 c.à.c" },
+      { nb: 4, mangue: "400 g", passion: "4", banane: "2", lait: "320 ml", miel: "4 c.à.c" },
+      { nb: 5, mangue: "500 g", passion: "5", banane: "2½", lait: "400 ml", miel: "5 c.à.c" },
+      { nb: 6, mangue: "600 g", passion: "6", banane: "3", lait: "480 ml", miel: "6 c.à.c" },
+      { nb: 7, mangue: "700 g", passion: "7", banane: "3½", lait: "560 ml", miel: "7 c.à.c" },
+      { nb: 8, mangue: "800 g", passion: "8", banane: "4", lait: "640 ml", miel: "8 c.à.c" },
+      { nb: 9, mangue: "900 g", passion: "9", banane: "4½", lait: "720 ml", miel: "9 c.à.c" },
+      { nb: 10, mangue: "1 kg", passion: "10", banane: "5", lait: "800 ml", miel: "10 c.à.c" },
+      { nb: 11, mangue: "1.1 kg", passion: "11", banane: "5½", lait: "880 ml", miel: "11 c.à.c" },
+      { nb: 12, mangue: "1.2 kg", passion: "12", banane: "6", lait: "960 ml", miel: "12 c.à.c" },
+      { nb: 13, mangue: "1.3 kg", passion: "13", banane: "6½", lait: "1040 ml", miel: "13 c.à.c" },
+      { nb: 14, mangue: "1.4 kg", passion: "14", banane: "7", lait: "1120 ml", miel: "14 c.à.c" },
+      { nb: 15, mangue: "1.5 kg", passion: "15", banane: "7½", lait: "1200 ml", miel: "15 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥭", titre: "Préparer les fruits", detail: "Éplucher et couper la mangue en morceaux. Couper les fruits de la passion en deux et récupérer la pulpe. Éplucher la banane. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mettre tous les ingrédients dans le blender avec quelques glaçons. Mixer jusqu'à texture lisse.", badge: "⏱ 30 sec" },
+      { icone: "🥤", titre: "Servir", detail: "Verser dans des grands verres. Décorer d'une tranche de mangue et d'une paille. Déguster immédiatement !", badge: null }
+    ]
+  },
+  citronadementhe: {
+    cat: "mocktails", pays: "france",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "La citronnade à la menthe maison — fraîche, parfumée et naturelle. La boisson estivale incontournable sans alcool.",
+    tableauCitronade: [
+      { nb: 1, citrons: "1", menthe: "5 feuilles", sucre: "2 c.à.s", eau: "20 cl" },
+      { nb: 2, citrons: "1", menthe: "8 feuilles", sucre: "3 c.à.s", eau: "40 cl" },
+      { nb: 3, citrons: "2", menthe: "10 feuilles", sucre: "5 c.à.s", eau: "60 cl" },
+      { nb: 4, citrons: "2", menthe: "15 feuilles", sucre: "6 c.à.s", eau: "80 cl" },
+      { nb: 5, citrons: "3", menthe: "18 feuilles", sucre: "8 c.à.s", eau: "100 cl" },
+      { nb: 6, citrons: "3", menthe: "20 feuilles", sucre: "9 c.à.s", eau: "120 cl" },
+      { nb: 7, citrons: "4", menthe: "25 feuilles", sucre: "11 c.à.s", eau: "140 cl" },
+      { nb: 8, citrons: "4", menthe: "28 feuilles", sucre: "12 c.à.s", eau: "160 cl" },
+      { nb: 9, citrons: "5", menthe: "30 feuilles", sucre: "14 c.à.s", eau: "180 cl" },
+      { nb: 10, citrons: "5", menthe: "35 feuilles", sucre: "15 c.à.s", eau: "200 cl" },
+      { nb: 11, citrons: "6", menthe: "38 feuilles", sucre: "17 c.à.s", eau: "220 cl" },
+      { nb: 12, citrons: "6", menthe: "40 feuilles", sucre: "18 c.à.s", eau: "240 cl" },
+      { nb: 13, citrons: "7", menthe: "45 feuilles", sucre: "20 c.à.s", eau: "260 cl" },
+      { nb: 14, citrons: "7", menthe: "48 feuilles", sucre: "21 c.à.s", eau: "280 cl" },
+      { nb: 15, citrons: "8", menthe: "50 feuilles", sucre: "23 c.à.s", eau: "300 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🌿", titre: "Sirop menthe", detail: "Chauffer 100ml d'eau avec le sucre et la menthe. Laisser infuser 10 min hors du feu. Filtrer et refroidir.", badge: "⏱ 10 min infusion" },
+      { icone: "🍋", titre: "Presser les citrons", detail: "Presser les citrons et filtrer le jus.", badge: null },
+      { icone: "🥤", titre: "Assembler et servir", detail: "Mélanger jus de citron, sirop à la menthe et eau fraîche. Servir avec glaçons et feuilles de menthe fraîches.", badge: null }
+    ]
+  },
+  jusPastequeMenuthe: {
+    cat: "mocktails", saisons: ["ete"], pays: "france",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍉",
+    description: "Jus de pastèque à la menthe — ultra rafraîchissant, naturellement sucré et plein de vitamines. Le mocktail de l'été !",
+    tableauJusPasteque: [
+      { nb: 1, pasteque: "250 g", menthe: "3 feuilles", citron: "¼", gingembre: "½ cm" },
+      { nb: 2, pasteque: "500 g", menthe: "5 feuilles", citron: "½", gingembre: "1 cm" },
+      { nb: 3, pasteque: "750 g", menthe: "8 feuilles", citron: "¾", gingembre: "1 cm" },
+      { nb: 4, pasteque: "1 kg", menthe: "10 feuilles", citron: "1", gingembre: "2 cm" },
+      { nb: 5, pasteque: "1.25 kg", menthe: "12 feuilles", citron: "1", gingembre: "2 cm" },
+      { nb: 6, pasteque: "1.5 kg", menthe: "15 feuilles", citron: "1½", gingembre: "2 cm" },
+      { nb: 7, pasteque: "1.75 kg", menthe: "18 feuilles", citron: "1½", gingembre: "3 cm" },
+      { nb: 8, pasteque: "2 kg", menthe: "20 feuilles", citron: "2", gingembre: "3 cm" },
+      { nb: 9, pasteque: "2.25 kg", menthe: "22 feuilles", citron: "2", gingembre: "3 cm" },
+      { nb: 10, pasteque: "2.5 kg", menthe: "25 feuilles", citron: "2½", gingembre: "4 cm" },
+      { nb: 11, pasteque: "2.75 kg", menthe: "28 feuilles", citron: "2½", gingembre: "4 cm" },
+      { nb: 12, pasteque: "3 kg", menthe: "30 feuilles", citron: "3", gingembre: "4 cm" },
+      { nb: 13, pasteque: "3.25 kg", menthe: "32 feuilles", citron: "3", gingembre: "5 cm" },
+      { nb: 14, pasteque: "3.5 kg", menthe: "35 feuilles", citron: "3½", gingembre: "5 cm" },
+      { nb: 15, pasteque: "3.75 kg", menthe: "38 feuilles", citron: "3½", gingembre: "5 cm" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍉", titre: "Préparer la pastèque", detail: "Couper la pastèque en morceaux, retirer les pépins et enlever la peau. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer la pastèque avec la menthe, le jus de citron et le gingembre râpé jusqu'à texture lisse.", badge: "⏱ 30 sec" },
+      { icone: "🥤", titre: "Filtrer et servir", detail: "Filtrer si souhaité. Servir très frais avec glaçons et feuilles de menthe. Ne pas sucrer — la pastèque est naturellement sucrée !", badge: null }
+    ]
+  },
+  virginpinacolada: {
+    cat: "mocktails", pays: "france",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥥",
+    description: "Virgin Piña Colada — lait de coco, jus d'ananas et glace pilée. Toute la magie tropicale, sans alcool !",
+    tableauVirginPina: [
+      { nb: 1, cremeCoco: "6 cl", ananas: "12 cl", laitCoco: "4 cl", glace: "1 poignée" },
+      { nb: 2, cremeCoco: "12 cl", ananas: "24 cl", laitCoco: "8 cl", glace: "2 poignées" },
+      { nb: 3, cremeCoco: "18 cl", ananas: "36 cl", laitCoco: "12 cl", glace: "3 poignées" },
+      { nb: 4, cremeCoco: "24 cl", ananas: "48 cl", laitCoco: "16 cl", glace: "4 poignées" },
+      { nb: 5, cremeCoco: "30 cl", ananas: "60 cl", laitCoco: "20 cl", glace: "5 poignées" },
+      { nb: 6, cremeCoco: "36 cl", ananas: "72 cl", laitCoco: "24 cl", glace: "6 poignées" },
+      { nb: 7, cremeCoco: "42 cl", ananas: "84 cl", laitCoco: "28 cl", glace: "7 poignées" },
+      { nb: 8, cremeCoco: "48 cl", ananas: "96 cl", laitCoco: "32 cl", glace: "8 poignées" },
+      { nb: 9, cremeCoco: "54 cl", ananas: "108 cl", laitCoco: "36 cl", glace: "9 poignées" },
+      { nb: 10, cremeCoco: "60 cl", ananas: "120 cl", laitCoco: "40 cl", glace: "10 poignées" },
+      { nb: 11, cremeCoco: "66 cl", ananas: "132 cl", laitCoco: "44 cl", glace: "11 poignées" },
+      { nb: 12, cremeCoco: "72 cl", ananas: "144 cl", laitCoco: "48 cl", glace: "12 poignées" },
+      { nb: 13, cremeCoco: "78 cl", ananas: "156 cl", laitCoco: "52 cl", glace: "13 poignées" },
+      { nb: 14, cremeCoco: "84 cl", ananas: "168 cl", laitCoco: "56 cl", glace: "14 poignées" },
+      { nb: 15, cremeCoco: "90 cl", ananas: "180 cl", laitCoco: "60 cl", glace: "15 poignées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mettre tous les ingrédients dans le blender avec la glace pilée. Mixer jusqu'à texture crémeuse et onctueuse.", badge: "⏱ 30 sec" },
+      { icone: "🥥", titre: "Servir", detail: "Verser dans un grand verre. Décorer d'une tranche d'ananas, de noix de coco râpée et d'une paille. Servir immédiatement !", badge: null }
+    ]
+  },
+  cherryblossommocktail: {
+    cat: "mocktails", pays: "france",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🌸",
+    description: "Le Cherry Blossom Mocktail — jus de cerise, eau de rose, citron et eau gazeuse. Un mocktail floral et élégant, sans alcool.",
+    tableauCherryBlossom: [
+      { nb: 1, cerise: "8 cl", eauRose: "1 cl", citron: "1 cl", sirop: "1 cl", eauGaz: "8 cl", sucre: "10 g" },
+      { nb: 2, cerise: "16 cl", eauRose: "2 cl", citron: "2 cl", sirop: "2 cl", eauGaz: "16 cl", sucre: "20 g" },
+      { nb: 3, cerise: "24 cl", eauRose: "3 cl", citron: "3 cl", sirop: "3 cl", eauGaz: "24 cl", sucre: "30 g" },
+      { nb: 4, cerise: "32 cl", eauRose: "4 cl", citron: "4 cl", sirop: "4 cl", eauGaz: "32 cl", sucre: "40 g" },
+      { nb: 5, cerise: "40 cl", eauRose: "5 cl", citron: "5 cl", sirop: "5 cl", eauGaz: "40 cl", sucre: "50 g" },
+      { nb: 6, cerise: "48 cl", eauRose: "6 cl", citron: "6 cl", sirop: "6 cl", eauGaz: "48 cl", sucre: "60 g" },
+      { nb: 7, cerise: "56 cl", eauRose: "7 cl", citron: "7 cl", sirop: "7 cl", eauGaz: "56 cl", sucre: "70 g" },
+      { nb: 8, cerise: "64 cl", eauRose: "8 cl", citron: "8 cl", sirop: "8 cl", eauGaz: "64 cl", sucre: "80 g" },
+      { nb: 9, cerise: "72 cl", eauRose: "9 cl", citron: "9 cl", sirop: "9 cl", eauGaz: "72 cl", sucre: "90 g" },
+      { nb: 10, cerise: "80 cl", eauRose: "10 cl", citron: "10 cl", sirop: "10 cl", eauGaz: "80 cl", sucre: "100 g" },
+      { nb: 11, cerise: "88 cl", eauRose: "11 cl", citron: "11 cl", sirop: "11 cl", eauGaz: "88 cl", sucre: "110 g" },
+      { nb: 12, cerise: "96 cl", eauRose: "12 cl", citron: "12 cl", sirop: "12 cl", eauGaz: "96 cl", sucre: "120 g" },
+      { nb: 13, cerise: "104 cl", eauRose: "13 cl", citron: "13 cl", sirop: "13 cl", eauGaz: "104 cl", sucre: "130 g" },
+      { nb: 14, cerise: "112 cl", eauRose: "14 cl", citron: "14 cl", sirop: "14 cl", eauGaz: "112 cl", sucre: "140 g" },
+      { nb: 15, cerise: "120 cl", eauRose: "15 cl", citron: "15 cl", sirop: "15 cl", eauGaz: "120 cl", sucre: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🍒", titre: "Mélanger", detail: "Dans un shaker avec glace, mélanger jus de cerise, eau de rose, jus de citron et sirop de sucre.", badge: null },
+      { icone: "🥶", titre: "Shaker", detail: "Shaker 10 secondes.", badge: "⏱ 10 sec" },
+      { icone: "🌸", titre: "Filtrer et servir", detail: "Filtrer dans un verre à champagne ou coupe. Compléter avec l'eau gazeuse. Décorer d'une fleur comestible ou cerise.", badge: null }
+    ]
+  },
+  shrubframboisebasilic: {
+    cat: "mocktails", saisons: ["ete"], pays: "france",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🫐",
+    description: "Shrub Framboise Basilic — sirop vinaigré aux framboises et basilic, allongé d'eau gazeuse. Un mocktail sophistiqué et acidulé.",
+    tableauShrub: [
+      { nb: 1, framboises: "50 g", basilic: "3 feuilles", vinaigre: "2 cl", sucre: "2 c.à.s", eauGaz: "15 cl" },
+      { nb: 2, framboises: "100 g", basilic: "6 feuilles", vinaigre: "4 cl", sucre: "4 c.à.s", eauGaz: "30 cl" },
+      { nb: 3, framboises: "150 g", basilic: "9 feuilles", vinaigre: "6 cl", sucre: "6 c.à.s", eauGaz: "45 cl" },
+      { nb: 4, framboises: "200 g", basilic: "12 feuilles", vinaigre: "8 cl", sucre: "8 c.à.s", eauGaz: "60 cl" },
+      { nb: 5, framboises: "250 g", basilic: "15 feuilles", vinaigre: "10 cl", sucre: "10 c.à.s", eauGaz: "75 cl" },
+      { nb: 6, framboises: "300 g", basilic: "18 feuilles", vinaigre: "12 cl", sucre: "12 c.à.s", eauGaz: "90 cl" },
+      { nb: 7, framboises: "350 g", basilic: "21 feuilles", vinaigre: "14 cl", sucre: "14 c.à.s", eauGaz: "105 cl" },
+      { nb: 8, framboises: "400 g", basilic: "24 feuilles", vinaigre: "16 cl", sucre: "16 c.à.s", eauGaz: "120 cl" },
+      { nb: 9, framboises: "450 g", basilic: "27 feuilles", vinaigre: "18 cl", sucre: "18 c.à.s", eauGaz: "135 cl" },
+      { nb: 10, framboises: "500 g", basilic: "30 feuilles", vinaigre: "20 cl", sucre: "20 c.à.s", eauGaz: "150 cl" },
+      { nb: 11, framboises: "550 g", basilic: "33 feuilles", vinaigre: "22 cl", sucre: "22 c.à.s", eauGaz: "165 cl" },
+      { nb: 12, framboises: "600 g", basilic: "36 feuilles", vinaigre: "24 cl", sucre: "24 c.à.s", eauGaz: "180 cl" },
+      { nb: 13, framboises: "650 g", basilic: "39 feuilles", vinaigre: "26 cl", sucre: "26 c.à.s", eauGaz: "195 cl" },
+      { nb: 14, framboises: "700 g", basilic: "42 feuilles", vinaigre: "28 cl", sucre: "28 c.à.s", eauGaz: "210 cl" },
+      { nb: 15, framboises: "750 g", basilic: "45 feuilles", vinaigre: "30 cl", sucre: "30 c.à.s", eauGaz: "225 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫐", titre: "Préparer le shrub", detail: "Écraser les framboises avec le sucre et le vinaigre de cidre dans un bol. Ajouter le basilic froissé. Laisser macérer au frigo.", badge: "⏱ 2h macération" },
+      { icone: "🌀", titre: "Filtrer", detail: "Filtrer le sirop obtenu en pressant bien les framboises. Conserver en bocal au frigo (se garde 2 semaines).", badge: null },
+      { icone: "🥤", titre: "Assembler", detail: "Dans un verre avec glace, verser le shrub. Compléter avec eau gazeuse. Décorer d'une framboise et feuille de basilic.", badge: null },
+      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
+    ]
+  },
+  mocktailcoconananas: {
+    cat: "mocktails", pays: "france",
+    base: 2,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥥",
+    description: "Mocktail Coco Ananas — lait de coco, jus d'ananas, citron vert et gingembre. Tropical, frais et sans alcool pour toute la famille.",
+    tableauCocoAnanas: [
+      { nb: 1, coco: "8 cl", ananas: "10 cl", citron: "1 cl", gingembre: "½ cm", miel: "1 c.à.c", lait: "50 ml" },
+      { nb: 2, coco: "16 cl", ananas: "20 cl", citron: "2 cl", gingembre: "1 cm", miel: "2 c.à.c", lait: "100 ml" },
+      { nb: 3, coco: "24 cl", ananas: "30 cl", citron: "3 cl", gingembre: "1 cm", miel: "3 c.à.c", lait: "150 ml" },
+      { nb: 4, coco: "32 cl", ananas: "40 cl", citron: "4 cl", gingembre: "2 cm", miel: "4 c.à.c", lait: "200 ml" },
+      { nb: 5, coco: "40 cl", ananas: "50 cl", citron: "5 cl", gingembre: "2 cm", miel: "5 c.à.c", lait: "250 ml" },
+      { nb: 6, coco: "48 cl", ananas: "60 cl", citron: "6 cl", gingembre: "2 cm", miel: "6 c.à.c", lait: "300 ml" },
+      { nb: 7, coco: "56 cl", ananas: "70 cl", citron: "7 cl", gingembre: "3 cm", miel: "7 c.à.c", lait: "350 ml" },
+      { nb: 8, coco: "64 cl", ananas: "80 cl", citron: "8 cl", gingembre: "3 cm", miel: "8 c.à.c", lait: "400 ml" },
+      { nb: 9, coco: "72 cl", ananas: "90 cl", citron: "9 cl", gingembre: "3 cm", miel: "9 c.à.c", lait: "450 ml" },
+      { nb: 10, coco: "80 cl", ananas: "100 cl", citron: "10 cl", gingembre: "4 cm", miel: "10 c.à.c", lait: "500 ml" },
+      { nb: 11, coco: "88 cl", ananas: "110 cl", citron: "11 cl", gingembre: "4 cm", miel: "11 c.à.c", lait: "550 ml" },
+      { nb: 12, coco: "96 cl", ananas: "120 cl", citron: "12 cl", gingembre: "4 cm", miel: "12 c.à.c", lait: "600 ml" },
+      { nb: 13, coco: "104 cl", ananas: "130 cl", citron: "13 cl", gingembre: "5 cm", miel: "13 c.à.c", lait: "650 ml" },
+      { nb: 14, coco: "112 cl", ananas: "140 cl", citron: "14 cl", gingembre: "5 cm", miel: "14 c.à.c", lait: "700 ml" },
+      { nb: 15, coco: "120 cl", ananas: "150 cl", citron: "15 cl", gingembre: "5 cm", miel: "15 c.à.c", lait: "750 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer lait de coco, jus d'ananas, jus de citron vert, gingembre râpé et miel avec quelques glaçons jusqu'à texture lisse.", badge: "⏱ 30 sec" },
+      { icone: "🥥", titre: "Servir", detail: "Verser dans des grands verres avec glaçons. Décorer d'une tranche d'ananas, noix de coco râpée et paille. Servir immédiatement !", badge: null }
+    ]
+  },
+  mocktailberrybliss: {
+    cat: "mocktails", saisons: ["ete"], pays: "france",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🫐",
+    description: "Berry Bliss Mocktail — myrtilles, framboises, jus de cranberry et eau gazeuse. Un mocktail antioxydant et spectaculaire sans alcool.",
+    tableauBerryBliss: [
+      { nb: 1, myrtilles: "30 g", framboises: "20 g", cranberry: "8 cl", citron: "1 cl", eauGaz: "8 cl", miel: "1 c.à.s" },
+      { nb: 2, myrtilles: "60 g", framboises: "40 g", cranberry: "16 cl", citron: "2 cl", eauGaz: "16 cl", miel: "2 c.à.s" },
+      { nb: 3, myrtilles: "90 g", framboises: "60 g", cranberry: "24 cl", citron: "3 cl", eauGaz: "24 cl", miel: "3 c.à.s" },
+      { nb: 4, myrtilles: "120 g", framboises: "80 g", cranberry: "32 cl", citron: "4 cl", eauGaz: "32 cl", miel: "4 c.à.s" },
+      { nb: 5, myrtilles: "150 g", framboises: "100 g", cranberry: "40 cl", citron: "5 cl", eauGaz: "40 cl", miel: "5 c.à.s" },
+      { nb: 6, myrtilles: "180 g", framboises: "120 g", cranberry: "48 cl", citron: "6 cl", eauGaz: "48 cl", miel: "6 c.à.s" },
+      { nb: 7, myrtilles: "210 g", framboises: "140 g", cranberry: "56 cl", citron: "7 cl", eauGaz: "56 cl", miel: "7 c.à.s" },
+      { nb: 8, myrtilles: "240 g", framboises: "160 g", cranberry: "64 cl", citron: "8 cl", eauGaz: "64 cl", miel: "8 c.à.s" },
+      { nb: 9, myrtilles: "270 g", framboises: "180 g", cranberry: "72 cl", citron: "9 cl", eauGaz: "72 cl", miel: "9 c.à.s" },
+      { nb: 10, myrtilles: "300 g", framboises: "200 g", cranberry: "80 cl", citron: "10 cl", eauGaz: "80 cl", miel: "10 c.à.s" },
+      { nb: 11, myrtilles: "330 g", framboises: "220 g", cranberry: "88 cl", citron: "11 cl", eauGaz: "88 cl", miel: "11 c.à.s" },
+      { nb: 12, myrtilles: "360 g", framboises: "240 g", cranberry: "96 cl", citron: "12 cl", eauGaz: "96 cl", miel: "12 c.à.s" },
+      { nb: 13, myrtilles: "390 g", framboises: "260 g", cranberry: "104 cl", citron: "13 cl", eauGaz: "104 cl", miel: "13 c.à.s" },
+      { nb: 14, myrtilles: "420 g", framboises: "280 g", cranberry: "112 cl", citron: "14 cl", eauGaz: "112 cl", miel: "14 c.à.s" },
+      { nb: 15, myrtilles: "450 g", framboises: "300 g", cranberry: "120 cl", citron: "15 cl", eauGaz: "120 cl", miel: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🫐", titre: "Mixer les fruits", detail: "Mixer myrtilles et framboises avec le jus de citron et 1 c.à.s de miel. Filtrer.", badge: null },
+      { icone: "🍒", titre: "Assembler", detail: "Verser le coulis de fruits dans un verre avec glace. Ajouter le jus de cranberry.", badge: null },
+      { icone: "💧", titre: "Eau gazeuse et déco", detail: "Compléter avec l'eau gazeuse. Garnir de quelques fruits frais et feuille de menthe.", badge: null },
+      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
+    ]
+  },
+  mocktailcoconorchidee: {
+    cat: "mocktails", saisons: ["hiver"], pays: "france",
+    base: 2,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🌺",
+    description: "Mocktail Coco Orchidée — lait de coco, sirop de fleur d'oranger, citron vert et eau gazeuse. Exotique, floral et sans alcool.",
+    tableauCocoOrchidee: [
+      { nb: 1, laitCoco: "8 cl", fleurOranger: "1 cl", citron: "1 cl", eauGaz: "8 cl", miel: "1 c.à.c" },
+      { nb: 2, laitCoco: "16 cl", fleurOranger: "2 cl", citron: "2 cl", eauGaz: "16 cl", miel: "2 c.à.c" },
+      { nb: 3, laitCoco: "24 cl", fleurOranger: "3 cl", citron: "3 cl", eauGaz: "24 cl", miel: "3 c.à.c" },
+      { nb: 4, laitCoco: "32 cl", fleurOranger: "4 cl", citron: "4 cl", eauGaz: "32 cl", miel: "4 c.à.c" },
+      { nb: 5, laitCoco: "40 cl", fleurOranger: "5 cl", citron: "5 cl", eauGaz: "40 cl", miel: "5 c.à.c" },
+      { nb: 6, laitCoco: "48 cl", fleurOranger: "6 cl", citron: "6 cl", eauGaz: "48 cl", miel: "6 c.à.c" },
+      { nb: 7, laitCoco: "56 cl", fleurOranger: "7 cl", citron: "7 cl", eauGaz: "56 cl", miel: "7 c.à.c" },
+      { nb: 8, laitCoco: "64 cl", fleurOranger: "8 cl", citron: "8 cl", eauGaz: "64 cl", miel: "8 c.à.c" },
+      { nb: 9, laitCoco: "72 cl", fleurOranger: "9 cl", citron: "9 cl", eauGaz: "72 cl", miel: "9 c.à.c" },
+      { nb: 10, laitCoco: "80 cl", fleurOranger: "10 cl", citron: "10 cl", eauGaz: "80 cl", miel: "10 c.à.c" },
+      { nb: 11, laitCoco: "88 cl", fleurOranger: "11 cl", citron: "11 cl", eauGaz: "88 cl", miel: "11 c.à.c" },
+      { nb: 12, laitCoco: "96 cl", fleurOranger: "12 cl", citron: "12 cl", eauGaz: "96 cl", miel: "12 c.à.c" },
+      { nb: 13, laitCoco: "104 cl", fleurOranger: "13 cl", citron: "13 cl", eauGaz: "104 cl", miel: "13 c.à.c" },
+      { nb: 14, laitCoco: "112 cl", fleurOranger: "14 cl", citron: "14 cl", eauGaz: "112 cl", miel: "14 c.à.c" },
+      { nb: 15, laitCoco: "120 cl", fleurOranger: "15 cl", citron: "15 cl", eauGaz: "120 cl", miel: "15 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🥥", titre: "Mélanger", detail: "Dans un shaker avec glace, mélanger lait de coco, eau de fleur d'oranger, jus de citron vert et miel.", badge: null },
+      { icone: "💧", titre: "Eau gazeuse", detail: "Filtrer dans un verre avec glace. Compléter d'eau gazeuse.", badge: null },
+      { icone: "🌺", titre: "Décorer", detail: "Garnir d'une fleur comestible ou zeste de citron vert. Servir très frais.", badge: null },
+      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
+    ]
+  },
+  mocktailmentheagume: {
+    cat: "mocktails", saisons: ["ete"], pays: "france",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "Mocktail Menthe Concombre — concombre frais, menthe, citron vert et eau gazeuse. Le mocktail ultra-frais et detox de l'été.",
+    tableauMocktailMenthe: [
+      { nb: 1, concombre: "¼", menthe: "6 feuilles", citron: "½", miel: "1 c.à.c", eauGaz: "150 ml" },
+      { nb: 2, concombre: "½", menthe: "12 feuilles", citron: "1", miel: "2 c.à.c", eauGaz: "300 ml" },
+      { nb: 3, concombre: "¾", menthe: "18 feuilles", citron: "1½", miel: "3 c.à.c", eauGaz: "450 ml" },
+      { nb: 4, concombre: "1", menthe: "24 feuilles", citron: "2", miel: "4 c.à.c", eauGaz: "600 ml" },
+      { nb: 5, concombre: "1", menthe: "30 feuilles", citron: "2", miel: "5 c.à.c", eauGaz: "750 ml" },
+      { nb: 6, concombre: "1½", menthe: "36 feuilles", citron: "3", miel: "6 c.à.c", eauGaz: "900 ml" },
+      { nb: 7, concombre: "1½", menthe: "42 feuilles", citron: "3", miel: "7 c.à.c", eauGaz: "1050 ml" },
+      { nb: 8, concombre: "2", menthe: "48 feuilles", citron: "4", miel: "8 c.à.c", eauGaz: "1200 ml" },
+      { nb: 9, concombre: "2", menthe: "54 feuilles", citron: "4", miel: "9 c.à.c", eauGaz: "1350 ml" },
+      { nb: 10, concombre: "2½", menthe: "60 feuilles", citron: "5", miel: "10 c.à.c", eauGaz: "1500 ml" },
+      { nb: 11, concombre: "2½", menthe: "66 feuilles", citron: "5", miel: "11 c.à.c", eauGaz: "1650 ml" },
+      { nb: 12, concombre: "3", menthe: "72 feuilles", citron: "6", miel: "12 c.à.c", eauGaz: "1800 ml" },
+      { nb: 13, concombre: "3", menthe: "78 feuilles", citron: "6", miel: "13 c.à.c", eauGaz: "1950 ml" },
+      { nb: 14, concombre: "3½", menthe: "84 feuilles", citron: "7", miel: "14 c.à.c", eauGaz: "2100 ml" },
+      { nb: 15, concombre: "3½", menthe: "90 feuilles", citron: "7", miel: "15 c.à.c", eauGaz: "2250 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🥒", titre: "Mixer concombre", detail: "Mixer le concombre épluché avec les feuilles de menthe, jus de citron et miel.", badge: null },
+      { icone: "🧊", titre: "Filtrer et glacer", detail: "Filtrer le mélange. Verser sur glaçons.", badge: null },
+      { icone: "💧", titre: "Compléter", detail: "Compléter d'eau gazeuse. Décorer de rondelles de concombre et feuilles de menthe fraîche.", badge: null },
+      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
+    ]
+  },
+  mocktailframboisementhe: {
+    cat: "mocktails", saisons: ["ete","printemps"], pays: "monde",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🫐",
+    description: "Mocktail framboise menthe — framboises fraîches pilées, sirop de menthe, limonade pétillante et glaçons. Frais, coloré et zéro alcool.",
+    fixe: true,
+    ingredientsFixes: [["fraises","50 g framboises"],["menthe","5 feuilles"],["sirop","20 ml sirop framboise"],["tonic","120 ml limonade"],["glace","glaçons"]],
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🫐", titre: "Piler les framboises", detail: "Dans le verre, piler les framboises avec la menthe et le sirop.", badge: null },
+      { icone: "🧊", titre: "Ajouter les glaçons", detail: "Remplir de glaçons.", badge: null },
+      { icone: "💧", titre: "Compléter", detail: "Verser la limonade pétillante. Remuer délicatement. Décorer avec framboises et menthe fraîche.", badge: null },
+      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
+    ]
+  },
+  mocktailpassionsoleil: {
+    cat: "mocktails", saisons: ["hiver"], pays: "monde",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "☀️",
+    description: "Mocktail Passion Soleil — fruit de la passion, mangue, jus d'orange et eau gazeuse. Tropical, vitaminé et ensoleillé même en hiver.",
+    fixe: true,
+    ingredientsFixes: [["passion","1 fruit de la passion"],["orange","60 ml jus mangue"],["orangeJus","60 ml jus d'orange"],["tonic","60 ml eau gazeuse"],["glace","glaçons"]],
+    etapes: [
+      { icone: "☀️", titre: "Préparer", detail: "Dans un shaker avec glaçons, verser pulpe de fruit de la passion, jus de mangue et jus d'orange.", badge: null },
+      { icone: "🍹", titre: "Shaker", detail: "Shaker vigoureusement 10 secondes.", badge: "⏱ 10 sec" },
+      { icone: "💧", titre: "Servir", detail: "Verser dans un verre. Compléter avec l'eau gazeuse. Décorer avec une rondelle d'orange.", badge: null }
+    ]
+  },
+  mocktailconcombrecitr: {
+    cat: "mocktails", saisons: ["ete"], pays: "monde",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥒",
+    description: "Mocktail concombre citron vert — concombre frais, citron vert, basilic et eau pétillante. Ultrafraîchissant, détox et élégant pour l'apéritif.",
+    fixe: true,
+    ingredientsFixes: [["concombre","4 rondelles"],["citrons","30 ml jus citron vert"],["basilic","3 feuilles"],["sirop","15 ml sirop agave"],["tonic","100 ml eau gazeuse"],["glace","glaçons"]],
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🥒", titre: "Piler", detail: "Dans le verre, piler les rondelles de concombre avec le basilic et le sirop d'agave.", badge: null },
+      { icone: "🍋", titre: "Ajouter", detail: "Ajouter jus de citron vert et glaçons.", badge: null },
+      { icone: "💧", titre: "Compléter", detail: "Verser l'eau gazeuse. Garnir d'une rondelle de concombre et basilic.", badge: null },
+      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
+    ]
+  },
+  mocktailgingembre: {
+    cat: "mocktails", pays: "monde",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🫚",
+    description: "Ginger Mocktail — gingembre frais, citron, miel et ginger beer. Épicé, piquant et revigorant. La version sans alcool du Moscow Mule.",
+    fixe: true,
+    ingredientsFixes: [["gingembre","5 g râpé"],["citrons","30 ml jus"],["miel","15 ml"],["gingerBeer","150 ml ginger beer"],["glace","glaçons"]],
+    etapes: [
+      { icone: "🫚", titre: "Préparer", detail: "Mélanger gingembre râpé, jus de citron et miel. Laisser infuser 2 min.", badge: "⏱ 2 min" },
+      { icone: "🧊", titre: "Remplir", detail: "Filtrer dans un mug en cuivre ou verre rempli de glaçons.", badge: null },
+      { icone: "💧", titre: "Compléter", detail: "Verser le ginger beer. Garnir de rondelle de citron et brin de menthe.", badge: null },
+      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
+    ]
+  },
+  mocktailfraisesvanille: {
+    cat: "mocktails", saisons: ["ete","printemps"], pays: "monde",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🍓",
+    description: "Mocktail Fraises Vanille — coulis de fraises fraîches, extrait de vanille, lait de coco et eau gazeuse. Doux, fruité et terriblement gourmand.",
+    fixe: true,
+    ingredientsFixes: [["fraises","80 g fraises"],["vanilleE","½ c.à.c"],["cremeCoco","40 ml lait de coco"],["sirop","15 ml sirop de sucre"],["tonic","80 ml eau gazeuse"],["glace","glaçons"]],
+    etapes: [
+      { icone: "❄️", titre: "Préparer le verre", detail: "Refroidir le verre au congélateur 10 min avant. Un verre froid sublime l'expérience même sans alcool.", badge: "⏱ 10 min" },
+      { icone: "🍓", titre: "Mixer", detail: "Mixer les fraises avec la vanille et le sirop jusqu'à obtenir un coulis lisse.", badge: null },
+      { icone: "🥥", titre: "Assembler", detail: "Dans un verre rempli de glaçons, verser le coulis de fraises puis le lait de coco.", badge: null },
+      { icone: "💧", titre: "Finir", detail: "Ajouter l'eau gazeuse. Remuer délicatement. Décorer avec une fraise sur le bord du verre.", badge: null },
+      { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }
+    ]
+  },
+  mangolassi: {
+    cat: "mocktails", pays: "inde",
+    base: 4,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥭",
+    description: "Mango Lassi — boisson indienne onctueuse à la mangue et yaourt. Crémeux, frais et naturellement sucré. Le parfait accompagnement d'un curry épicé ou en dessert.",
+    tableauMangoLassi: [
+      { nb: 1, mangue: "80 g", yaourt: "80 g", lait: "40 ml", sucre: "5 g", cardamome: "0.1 c.à.c", glace: "20 g", menthe: "1 g", zestecitron: "0" },
+      { nb: 2, mangue: "160 g", yaourt: "160 g", lait: "80 ml", sucre: "10 g", cardamome: "0.2 c.à.c", glace: "40 g", menthe: "2 g", zestecitron: "¼" },
+      { nb: 3, mangue: "240 g", yaourt: "240 g", lait: "120 ml", sucre: "15 g", cardamome: "0.3 c.à.c", glace: "60 g", menthe: "3 g", zestecitron: "¼" },
+      { nb: 4, mangue: "320 g", yaourt: "320 g", lait: "160 ml", sucre: "20 g", cardamome: "0.4 c.à.c", glace: "80 g", menthe: "4 g", zestecitron: "¼" },
+      { nb: 5, mangue: "400 g", yaourt: "400 g", lait: "200 ml", sucre: "25 g", cardamome: "0.5 c.à.c", glace: "100 g", menthe: "5 g", zestecitron: "¼" },
+      { nb: 6, mangue: "480 g", yaourt: "480 g", lait: "240 ml", sucre: "30 g", cardamome: "0.6 c.à.c", glace: "120 g", menthe: "6 g", zestecitron: "¼" },
+      { nb: 7, mangue: "560 g", yaourt: "560 g", lait: "280 ml", sucre: "35 g", cardamome: "0.7 c.à.c", glace: "140 g", menthe: "7 g", zestecitron: "⅓" },
+      { nb: 8, mangue: "640 g", yaourt: "640 g", lait: "320 ml", sucre: "40 g", cardamome: "0.8 c.à.c", glace: "160 g", menthe: "8 g", zestecitron: "½" },
+      { nb: 9, mangue: "720 g", yaourt: "720 g", lait: "360 ml", sucre: "45 g", cardamome: "0.9 c.à.c", glace: "180 g", menthe: "9 g", zestecitron: "½" },
+      { nb: 10, mangue: "800 g", yaourt: "800 g", lait: "400 ml", sucre: "50 g", cardamome: "1 c.à.c", glace: "200 g", menthe: "10 g", zestecitron: "½" },
+      { nb: 11, mangue: "880 g", yaourt: "880 g", lait: "440 ml", sucre: "55 g", cardamome: "1.1 c.à.c", glace: "220 g", menthe: "11 g", zestecitron: "½" },
+      { nb: 12, mangue: "960 g", yaourt: "960 g", lait: "480 ml", sucre: "60 g", cardamome: "1.2 c.à.c", glace: "240 g", menthe: "12 g", zestecitron: "½" },
+      { nb: 13, mangue: "1 kg", yaourt: "1 kg", lait: "520 ml", sucre: "65 g", cardamome: "1.3 c.à.c", glace: "260 g", menthe: "13 g", zestecitron: "⅔" },
+      { nb: 14, mangue: "1.1 kg", yaourt: "1.1 kg", lait: "560 ml", sucre: "70 g", cardamome: "1.4 c.à.c", glace: "280 g", menthe: "14 g", zestecitron: "¾" },
+      { nb: 15, mangue: "1.2 kg", yaourt: "1.2 kg", lait: "600 ml", sucre: "75 g", cardamome: "1.5 c.à.c", glace: "300 g", menthe: "15 g", zestecitron: "¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥭", titre: "Choisir les mangues", detail: "ESSENTIEL : mangues MÛRES À POINT (cèdent au doigt, parfumées). Variétés Alphonso (Inde) ou Kent idéales. ASTUCE CHEF : pour version express, utiliser de la PURÉE DE MANGUE indienne en boîte (Ratna, Patak's).", badge: "⏱ 1 min" },
+      { icone: "🍽️", titre: "Préparer la mangue", detail: "Éplucher la mangue, couper la chair autour du noyau central. Couper en cubes. Si trop ferme : laisser 1h à température ambiante.", badge: "⏱ 3 min" },
+      { icone: "🌿", titre: "Cardamome (option authentique)", detail: "SECRET DU LASSI INDIEN : ouvrir 4 gousses de cardamome verte. Récupérer les graines noires. Piler au mortier ou écraser avec le dos d'une cuillère. C'est LE parfum signature.", badge: "⏱ 2 min" },
+      { icone: "❄️", titre: "Yaourt bien froid", detail: "Utiliser du YAOURT NATURE ENTIER (yaourt grec ou yaourt indien Dahi). Bien froid = onctuosité maximale. NE PAS prendre 0% (texture aqueuse).", badge: "⏱ -" },
+      { icone: "🌀", titre: "Mixer", detail: "Dans un blender : cubes de mangue (400g) + yaourt (400ml) + lait (200ml) + sucre (2 cs ajuster selon douceur de la mangue) + cardamome moulue + 1 poignée de glaçons. Mixer 30-45 secondes à pleine puissance.", badge: "⏱ 45 sec" },
+      { icone: "✨", titre: "Texture", detail: "Doit être SOYEUSE et ONCTUEUSE comme un milkshake. Si trop épais : ajouter lait. Si trop liquide : ajouter glace ou yaourt.", badge: "⏱ 30 sec" },
+      { icone: "🥤", titre: "Service", detail: "Servir dans des verres GLACÉS (au congélateur 10 min avant). Saupoudrer d'une pincée de cardamome moulue ou de pistaches concassées sur le dessus.", badge: null },
+      { icone: "🌿", titre: "Touches finales", detail: "Une feuille de menthe fraîche, un zeste de citron vert. Servir avec paille. PARFAIT avec un curry épicé (rafraîchit le palais) ou seul en collation.", badge: null }
+    ]
+  },
+  matchalattewi: {
+    cat: "mocktails", pays: "japon",
+    base: 2,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🍵",
+    description: "Matcha Latte — boisson japonaise crémeuse et énergisante. Poudre de matcha cérémoniale fouettée avec du lait chaud, légèrement sucrée au miel ou sirop. Antioxydants et zen attitude !",
+    tableauMatchaLatte: [
+      { nb: 1, matcha: "2 g", laitamande: "150 ml", eauchaude: "30 ml", sirop: "8 ml", vanille: "0.1 c.à.c", cannelle: "0.1 c.à.c", sucre: "3 g", glace: "50 g" },
+      { nb: 2, matcha: "4 g", laitamande: "300 ml", eauchaude: "60 ml", sirop: "16 ml", vanille: "0.2 c.à.c", cannelle: "0.2 c.à.c", sucre: "6 g", glace: "100 g" },
+      { nb: 3, matcha: "6 g", laitamande: "450 ml", eauchaude: "90 ml", sirop: "24 ml", vanille: "0.3 c.à.c", cannelle: "0.3 c.à.c", sucre: "9 g", glace: "150 g" },
+      { nb: 4, matcha: "8 g", laitamande: "600 ml", eauchaude: "120 ml", sirop: "32 ml", vanille: "0.4 c.à.c", cannelle: "0.4 c.à.c", sucre: "12 g", glace: "200 g" },
+      { nb: 5, matcha: "10 g", laitamande: "750 ml", eauchaude: "150 ml", sirop: "40 ml", vanille: "0.5 c.à.c", cannelle: "0.5 c.à.c", sucre: "15 g", glace: "250 g" },
+      { nb: 6, matcha: "12 g", laitamande: "900 ml", eauchaude: "180 ml", sirop: "48 ml", vanille: "0.6 c.à.c", cannelle: "0.6 c.à.c", sucre: "18 g", glace: "300 g" },
+      { nb: 7, matcha: "14 g", laitamande: "1.1 l", eauchaude: "210 ml", sirop: "56 ml", vanille: "0.7 c.à.c", cannelle: "0.7 c.à.c", sucre: "21 g", glace: "350 g" },
+      { nb: 8, matcha: "16 g", laitamande: "1.2 l", eauchaude: "240 ml", sirop: "64 ml", vanille: "0.8 c.à.c", cannelle: "0.8 c.à.c", sucre: "24 g", glace: "400 g" },
+      { nb: 9, matcha: "18 g", laitamande: "1.4 l", eauchaude: "270 ml", sirop: "72 ml", vanille: "0.9 c.à.c", cannelle: "0.9 c.à.c", sucre: "27 g", glace: "450 g" },
+      { nb: 10, matcha: "20 g", laitamande: "1.5 l", eauchaude: "300 ml", sirop: "80 ml", vanille: "1 c.à.c", cannelle: "1 c.à.c", sucre: "30 g", glace: "500 g" },
+      { nb: 11, matcha: "22 g", laitamande: "1.6 l", eauchaude: "330 ml", sirop: "88 ml", vanille: "1.1 c.à.c", cannelle: "1.1 c.à.c", sucre: "33 g", glace: "550 g" },
+      { nb: 12, matcha: "24 g", laitamande: "1.8 l", eauchaude: "360 ml", sirop: "96 ml", vanille: "1.2 c.à.c", cannelle: "1.2 c.à.c", sucre: "36 g", glace: "600 g" },
+      { nb: 13, matcha: "26 g", laitamande: "1.9 l", eauchaude: "390 ml", sirop: "104 ml", vanille: "1.3 c.à.c", cannelle: "1.3 c.à.c", sucre: "39 g", glace: "650 g" },
+      { nb: 14, matcha: "28 g", laitamande: "2.1 l", eauchaude: "420 ml", sirop: "112 ml", vanille: "1.4 c.à.c", cannelle: "1.4 c.à.c", sucre: "42 g", glace: "700 g" },
+      { nb: 15, matcha: "30 g", laitamande: "2.2 l", eauchaude: "450 ml", sirop: "120 ml", vanille: "1.5 c.à.c", cannelle: "1.5 c.à.c", sucre: "45 g", glace: "750 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍵", titre: "Choisir le matcha", detail: "CRITIQUE : utiliser du VRAI matcha cérémoniel (qualité haute, vert vif). Le matcha culinaire (vert jaunâtre) est amer. Marques recommandées : Ippodo, Marukyu Koyamaen.", badge: "⏱ 1 min" },
+      { icone: "💧", titre: "Eau à bonne température", detail: "Faire chauffer l'eau à 70-75°C (PAS bouillante — sinon matcha amer). ASTUCE CHEF : porter à ébullition puis laisser 2 min pour redescendre à la bonne température.", badge: "⏱ 3 min" },
+      { icone: "🍵", titre: "Tamiser le matcha", detail: "SECRET DU MATCHA : passer le matcha à travers un petit tamis fin pour éviter les grumeaux. C'est CE QUE FONT TOUS les sommeliers de matcha.", badge: "⏱ 1 min" },
+      { icone: "🥢", titre: "Préparer la base", detail: "Dans un grand bol (chawan japonais ou bol large) : verser 1 cc de matcha tamisé + 60ml d'eau chaude.", badge: "⏱ 1 min" },
+      { icone: "🍃", titre: "Fouetter au chasen", detail: "TECHNIQUE TRADITIONNELLE : fouetter avec un CHASEN (fouet bambou) en mouvements ZIG-ZAG rapides (W ou M) pendant 30 secondes. Le matcha doit devenir MOUSSEUX en surface. À défaut : fouet électrique.", badge: "⏱ 30 sec" },
+      { icone: "🥛", titre: "Chauffer le lait", detail: "Pendant ce temps, chauffer 200ml de lait (vache ou avoine pour version moderne) à 65°C. NE PAS BOUILLIR. Optionnel : faire mousser avec un mousseur à lait.", badge: "⏱ 3 min" },
+      { icone: "🥄", titre: "Sucrer (option)", detail: "Dans le matcha mousseux, ajouter : 1 cs de sirop d'érable, miel ou agave + 1/2 cc de vanille. Mélanger.", badge: "⏱ 1 min" },
+      { icone: "🍵", titre: "Assembler", detail: "Verser le lait chaud LENTEMENT en filet sur la mousse de matcha. Si bien fait : le matcha vert pur reste au-dessus, le lait blanc en-dessous = effet visuel signature.", badge: "⏱ 30 sec" },
+      { icone: "✨", titre: "Service zen", detail: "Servir IMMÉDIATEMENT dans une grande tasse. Saupoudrer d'un peu de matcha en surface. Pour version GLACÉE : verser sur des glaçons. Pour version originale : sans sucre, juste matcha + lait. 抹茶ラテ !", badge: null }
+    ]
+  }
+});
