@@ -85,6 +85,7 @@ const LABELS_CATEGORIE = {
   desserts: "🍰 Desserts", soupes: "🍲 Soupes", entrees: "🫕 Entrées",
   healthy: "💚 Healthy", brunch: "🍳 Brunch", encas: "🥪 Encas",
   pizzas: "🍕 Pizzas", boulangerie: "🥖 Boulangerie", plats: "🍽️ Plats",
+  aperitifs: "🥨 Apéritifs",
 };
 const LABELS_PAYS = {
   france: "🇫🇷 France", italie: "🇮🇹 Italie", japon: "🇯🇵 Japon",
@@ -313,16 +314,36 @@ function afficherSuggestions(query) {
     });
   }
   
-  // 4. Recettes (top 5 scoring)
-  const resultats = scorerCartes(qNorm).slice(0, 6);
+  // 4. Recettes (top 8 scoring) — avec indice de pertinence (catégorie ou ingrédient)
+  const resultats = scorerCartes(qNorm).slice(0, 8);
   if (resultats.length > 0) {
+    const motsQuery = qNorm.split(/\s+/).filter(Boolean);
     groupes.push({
       label: "Recettes",
-      items: resultats.map(({ entry, score }) => ({
-        icon: "🍽️", text: entry.nom,
-        meta: entry.pays ? (LABELS_PAYS[entry.pays]?.split(" ")[0] || "") : "",
-        action: `ouvrirFiche('${entry.cle}', null)`,
-      })),
+      items: resultats.map(({ entry }) => {
+        // La recette matche-t-elle par son NOM ?
+        const motsNom = entry.nomNorm.split(/\s+/).filter(Boolean);
+        const viaNom = entry.nomNorm.includes(qNorm) ||
+          motsQuery.some(mq => mq.length >= 3 && motsNom.some(mn => mn.startsWith(mq)));
+        let meta;
+        if (viaNom) {
+          // match par nom → on montre la catégorie (aide à se repérer)
+          meta = LABELS_CATEGORIE[entry.cat] || "";
+        } else {
+          // match par ingrédient → on indique lequel ("contient …")
+          const idx = entry.ingredientsNorm.findIndex(i =>
+            motsQuery.some(mq => mq.length >= 3 && i.startsWith(mq)));
+          const ingLabel = idx >= 0
+            ? ((typeof INGREDIENTS_LABELS !== "undefined" && INGREDIENTS_LABELS[entry.ingredients[idx]]) || entry.ingredients[idx])
+            : query;
+          meta = "🧂 " + ingLabel;
+        }
+        return {
+          icon: "🍽️", text: entry.nom, meta,
+          // Clic = ouvrir la fiche ET atterrir dans la catégorie (pour voir les recettes sœurs)
+          action: `ouvrirRecetteEtCategorie('${entry.cle}', '${entry.cat}')`,
+        };
+      }),
     });
   }
   
@@ -390,6 +411,25 @@ function filtrerParRegime(regime) {
   });
   if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
   afficherToast("🥦 " + regime);
+}
+
+// v258.16 : clic sur une recette du dropdown → ouvre la fiche ET filtre la grille
+// sur sa catégorie, pour qu'en refermant la fiche on voie les recettes sœurs.
+function ouvrirRecetteEtCategorie(cle, cat) {
+  viderRechercheSilencieux();
+  if (typeof afficherRecettes === "function") afficherRecettes(); // mode grille + chips
+  // Filtrer sur la catégorie de la recette cliquée
+  if (cat) {
+    const chip = document.querySelector(`.filtres-chips .chip[onclick*="filtrerChipCategorie('${cat}'"]`);
+    if (chip && typeof filtrerChipCategorie === "function") filtrerChipCategorie(cat, chip);
+  }
+  // Ouvrir la fiche de la recette
+  if (typeof ouvrirFiche === "function") ouvrirFiche(cle, null);
+  // Positionner la grille sur la carte (visible quand on referme la fiche)
+  setTimeout(() => {
+    const carte = document.querySelector(`.carte[onclick*="ouvrirFiche('${cle}'"]`);
+    if (carte) carte.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, 150);
 }
 
 // Vide le champ de recherche sans déclencher la restauration d'état
