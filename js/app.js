@@ -258,6 +258,20 @@ function chargerAccueilTopMois() {
 }
 
 function chargerAccueil() {
+  // v258.13 : garantir que seule la section Accueil est visible. Corrige le cas où
+  // la section « Menu Thématique » (section-festif) restait affichée PAR-DESSUS
+  // l'accueil quand on revenait via la barre de navigation.
+  const secAccueil = document.getElementById("section-accueil");
+  const secCartes  = document.getElementById("section-cartes");
+  const secCuisine = document.getElementById("section-cuisine");
+  const secPlan    = document.getElementById("section-planificateur");
+  const secFestif  = document.getElementById("section-festif");
+  if (secAccueil) secAccueil.style.display = "block";
+  if (secCartes)  { secCartes.classList.remove("visible"); secCartes.style.display = ""; }
+  if (secCuisine) secCuisine.style.display = "none";
+  if (secPlan)    secPlan.style.display = "none";
+  if (secFestif)  secFestif.style.display = "none";
+
   chargerAccueilFavoris();
   chargerAccueilMenus();
   // v249 : Retiré — accessible via ⭐ Favoris → ❤️ Menus favoris
@@ -292,6 +306,12 @@ function chargerAccueilFavoris() {
 function chargerAccueilMenus() {
   const row = document.getElementById("accueil-menus-row");
   if (!row) return;
+  // v258.15b : filet de sécurité — masquer les sections Menu Thématique / planificateur
+  // qui pouvaient rester affichées PAR-DESSUS l'accueil quand on y revenait.
+  ["section-festif", "section-planificateur"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = "none";
+  });
   let hist = window.userProfile?.historiqueMenus || [];
   if (hist.length === 0) {
     try { hist = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]"); } catch(e) {}
