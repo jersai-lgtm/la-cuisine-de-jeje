@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v259-0";
+const CACHE_NAME = "cuisine-jeje-v259-1";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
@@ -56,6 +56,28 @@ const FICHIERS = [
   "/la-cuisine-de-jeje/images/tabulemaison.webp",
   "/la-cuisine-de-jeje/images/saladelentilles.webp",
   "/la-cuisine-de-jeje/images/saladeavocatcrevettes.webp",
+"/la-cuisine-de-jeje/images/tapenade.webp",
+  "/la-cuisine-de-jeje/images/tzatziki.webp",
+  "/la-cuisine-de-jeje/images/gougeres.webp",
+  "/la-cuisine-de-jeje/images/blinissaumon.webp",
+  "/la-cuisine-de-jeje/images/cakeolivesjambon.webp",
+  "/la-cuisine-de-jeje/images/cakechorizofeta.webp",
+  "/la-cuisine-de-jeje/images/feuilletessaucisse.webp",
+  "/la-cuisine-de-jeje/images/palmierspesto.webp",
+  "/la-cuisine-de-jeje/images/oeufsmimosa.webp",
+  "/la-cuisine-de-jeje/images/brochettecaprese.webp",
+  "/la-cuisine-de-jeje/images/nachosgratines.webp",
+  "/la-cuisine-de-jeje/images/accrasmorue.webp",
+  "/la-cuisine-de-jeje/images/boulettesfetaepinard.webp",
+  "/la-cuisine-de-jeje/images/samoussaslegumes.webp",
+  "/la-cuisine-de-jeje/images/grissiniparme.webp",
+  "/la-cuisine-de-jeje/images/dipfetapoivron.webp",
+  "/la-cuisine-de-jeje/images/rillettesthon.webp",
+  "/la-cuisine-de-jeje/images/crackersgraines.webp",
+  "/la-cuisine-de-jeje/images/verrineavocatcrevette.webp",
+  "/la-cuisine-de-jeje/images/tortillaespagnola.webp",
+  "/la-cuisine-de-jeje/images/croquetasjamon.webp",
+  "/la-cuisine-de-jeje/images/patatasbravas.webp",
 ];
 
 // Installation : mise en cache de tous les fichiers
