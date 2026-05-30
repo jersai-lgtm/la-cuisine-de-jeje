@@ -36,6 +36,7 @@ const SYNONYMES_CATEGORIE = {
   "cocktail": "cocktails", "cocktails": "cocktails", "alcool": "cocktails", "boisson alcoolisee": "cocktails", "drink": "cocktails",
   "mocktail": "mocktails", "mocktails": "mocktails", "sans alcool": "mocktails", "soft": "mocktails",
   "salade": "salades", "salades": "salades",
+  "sauce": "sauces", "sauces": "sauces", "condiment": "sauces", "condiments": "sauces",
   "dessert": "desserts", "desserts": "desserts", "sucre": "desserts", "patisserie": "desserts", "patisseries": "desserts", "gateau": "desserts", "gateaux": "desserts",
   "soupe": "soupes", "soupes": "soupes", "veloute": "soupes", "veloutes": "soupes", "potage": "soupes",
   "entree": "entrees", "entrees": "entrees", "amuse-bouche": "entrees", "apero": "entrees", "tapas": "entrees",
@@ -87,6 +88,7 @@ const LABELS_CATEGORIE = {
   healthy: "💚 Healthy", brunch: "🍳 Brunch", encas: "🥪 Encas",
   pizzas: "🍕 Pizzas", boulangerie: "🥖 Boulangerie", plats: "🍽️ Plats",
   aperitifs: "🥨 Apéritifs",
+  sauces: "🥫 Sauces",
 };
 const LABELS_PAYS = {
   france: "🇫🇷 France", italie: "🇮🇹 Italie", japon: "🇯🇵 Japon",

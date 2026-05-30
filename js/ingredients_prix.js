@@ -310,6 +310,8 @@ const INGREDIENTS_PRIX = {
   crevettes:      { prixKg: 18.0, calPer100g: 99,   lipSat: 0.4,  sucre: 0,    sel: 0.9,  fibres: 0,   prot: 24,   flv: 0 },
   crevette:       { prixKg: 18.0, calPer100g: 99,   lipSat: 0.4,  sucre: 0,    sel: 0.9,  fibres: 0,   prot: 24,   flv: 0 },
   champignon:     { prixKg: 6.00,  calPer100g: 22,   lipSat: 0,    sucre: 1,    sel: 0,    fibres: 2,   prot: 3.1,  flv: 100 },
+  harissa:        { prixKg: 12.0,  calPer100g: 70,   lipSat: 0.5,  sucre: 3,    sel: 3,    fibres: 3,   prot: 2,    flv: 80 },
+  cornichon:      { prixKg: 6.00,  calPer100g: 14,   lipSat: 0,    sucre: 1.5,  sel: 2,    fibres: 1.2, prot: 0.4,  flv: 100 },
   houmous:        { prixKg: 8.00,  calPer100g: 230,  lipSat: 2,    sucre: 0.5,  sel: 1.2,  fibres: 4,   prot: 7,    flv: 60 },
   mortadelle:     { prixKg: 14.0,  calPer100g: 290,  lipSat: 9,    sucre: 0.5,  sel: 2.5,  fibres: 0,   prot: 16,   flv: 0 },
   pignon:         { prixKg: 40.0,  calPer100g: 673,  lipSat: 4.6,  sucre: 3.6,  sel: 0,    fibres: 3.7, prot: 14,   flv: 100 },
