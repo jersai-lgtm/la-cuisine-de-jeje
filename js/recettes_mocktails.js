@@ -444,12 +444,12 @@ Object.assign(recettes, {
     base: 1,
     temps: "5 min",
     niveau: "⭐ Facile",
-    emoji: "🫚",
+    emoji: "🌿",
     description: "Ginger Mocktail — gingembre frais, citron, miel et ginger beer. Épicé, piquant et revigorant. La version sans alcool du Moscow Mule.",
     fixe: true,
     ingredientsFixes: [["gingembre","5 g râpé"],["citrons","30 ml jus"],["miel","15 ml"],["gingerBeer","150 ml ginger beer"],["glace","glaçons"]],
     etapes: [
-      { icone: "🫚", titre: "Préparer", detail: "Mélanger gingembre râpé, jus de citron et miel. Laisser infuser 2 min.", badge: "⏱ 2 min" },
+      { icone: "🌿", titre: "Préparer", detail: "Mélanger gingembre râpé, jus de citron et miel. Laisser infuser 2 min.", badge: "⏱ 2 min" },
       { icone: "🧊", titre: "Remplir", detail: "Filtrer dans un mug en cuivre ou verre rempli de glaçons.", badge: null },
       { icone: "💧", titre: "Compléter", detail: "Verser le ginger beer. Garnir de rondelle de citron et brin de menthe.", badge: null },
       { icone: "🥤", titre: "Service rafraîchissant", detail: "Servir IMMÉDIATEMENT avec une jolie paille. Décorer généreusement (le visuel compte !). Idéal en apéritif ou rafraîchissement.", badge: null }

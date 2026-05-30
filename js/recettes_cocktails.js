@@ -328,7 +328,7 @@ Object.assign(recettes, {
     base: 1,
     temps: "3 min",
     niveau: "⭐ Facile",
-    emoji: "🫙",
+    emoji: "🍯",
     description: "Le Moscow Mule — vodka, ginger beer et citron vert. Servi dans sa célèbre tasse en cuivre, pétillant et rafraîchissant.",
     tableauMoscowMule: [
       { nb: 1, vodka: "5 cl", gingerBeer: "12 cl", citron: "½", menthe: "3 feuilles" },
@@ -456,7 +456,7 @@ Object.assign(recettes, {
     base: 1,
     temps: "2 min",
     niveau: "⭐ Facile",
-    emoji: "🫧",
+    emoji: "💧",
     description: "Le Gin Tonic maison — gin de qualité, tonic premium et garnitures soignées. Simple mais tellement bon quand c'est bien fait.",
     tableauGinTonic: [
       { nb: 1, gin: "5 cl", tonic: "15 cl", citron: "1 rondelle", poivre: "3 grains" },
@@ -477,7 +477,7 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫙", titre: "Verre ballon et glace", detail: "Utiliser un grand verre ballon (Copa glass). Remplir de glaçons jusqu'en haut.", badge: null },
+      { icone: "🍯", titre: "Verre ballon et glace", detail: "Utiliser un grand verre ballon (Copa glass). Remplir de glaçons jusqu'en haut.", badge: null },
       { icone: "🌿", titre: "Aromates d'abord", detail: "Déposer les garnitures choisies sur la glace : rondelle de citron vert, grains de poivre rose, romarin, concombre... selon le style de gin.", badge: null },
       { icone: "🍶", titre: "Verser le gin", detail: "Verser le gin sur la glace.", badge: null },
       { icone: "💧", titre: "Tonic premium", detail: "Verser le tonic froid en filet contre le bord du verre pour préserver les bulles. Ne jamais remuer !", badge: null }

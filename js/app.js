@@ -1286,8 +1286,8 @@ const INGREDIENTS_LABELS = {
   quinoa: "🌾 Quinoa", maizena: "🌾 Maïzena", cacao: "🍫 Cacao en poudre",
   graines: "🌱 Graines", chia: "🌱 Graines de chia", granola: "🌾 Granola",
   chapelure: "🍞 Chapelure", pain: "🍞 Pain", buns: "🍞 Buns",
-  pita: "🫓 Pains pita", crepesP: "🫓 Crêpes pékinoises",
-  feuilletee: "🥐 Pâte feuilletée", pate: "🫓 Pâton(s)", patons: "🫓 Pâton(s)",
+  pita: "🥙 Pains pita", crepesP: "🥙 Crêpes pékinoises",
+  feuilletee: "🥐 Pâte feuilletée", pate: "🥙 Pâton(s)", patons: "🥙 Pâton(s)",
   // == Produits laitiers ==
   lait: "🥛 Lait", laitChoux: "🥛 Lait", laitCreme: "🥛 Lait",
   creme: "🍦 Crème fraîche", gCreme: "🍦 Crème fraîche", beurreCreme: "🍦 Crème fraîche",
@@ -1331,13 +1331,13 @@ const INGREDIENTS_LABELS = {
   poivron: "🫑 Poivron", champignons: "🍄 Champignons", shiitake: "🍄 Shiitake",
   epinards: "🌿 Épinards", salade: "🥬 Salade", laitue: "🥬 Laitue",
   pdterre: "🥔 Pommes de terre", patate: "🍠 Patate douce", patatedouce: "🍠 Patate douce",
-  courge: "🎃 Courge butternut", manioc: "🫚 Manioc", navets: "🪨 Navets",
+  courge: "🎃 Courge butternut", manioc: "🌿 Manioc", navets: "🪨 Navets",
   chou: "🥬 Chou", poireaux: "🥬 Poireaux", asperges: "🌿 Asperges",
-  mais: "🌽 Maïs", maïs: "🌽 Maïs", petitspois: "🫛 Petits pois",
-  haricots: "🫛 Haricots verts", concombre: "🥒 Concombre", celeri: "🌿 Céleri",
-  edamame: "🫛 Edamame", pois: "🫘 Pois",
+  mais: "🌽 Maïs", maïs: "🌽 Maïs", petitspois: "🟢 Petits pois",
+  haricots: "🟢 Haricots verts", concombre: "🥒 Concombre", celeri: "🌿 Céleri",
+  edamame: "🟢 Edamame", pois: "🥜 Pois",
   // == Légumineuses ==
-  poischiches: "🫘 Pois chiches", lentilles: "🫘 Lentilles",
+  poischiches: "🥜 Pois chiches", lentilles: "🥜 Lentilles",
   // == Fruits ==
   citron: "🍋 Citron", citrons: "🍋 Citrons", orange: "🍊 Orange", orangeJus: "🍊 Jus d'orange",
   pommes: "🍎 Pommes", bananes: "🍌 Bananes", fraise: "🍓 Fraise", fraises: "🍓 Fraises",
@@ -1354,13 +1354,13 @@ const INGREDIENTS_LABELS = {
   brochet: "🐟 Brochet", ecrevisses: "🦞 Écrevisses", lapin: "🐰 Lapin",
   reblochon: "🧀 Reblochon", tomme: "🧀 Tomme fraîche", andouillette: "🌭 Andouillette",
   cuissecanard: "🦆 Cuisse de canard", graissecanard: "🦆 Graisse de canard",
-  haricotsblancs: "🫘 Haricots blancs", vinrouge: "🍷 Vin rouge",
+  haricotsblancs: "🥜 Haricots blancs", vinrouge: "🍷 Vin rouge",
   patefeuilletee: "🥧 Pâte feuilletée", poudreamandes: "🥥 Poudre d'amandes",
   cremepatissiere: "🍮 Crème pâtissière", sucrecaramel: "🍯 Sucre (caramel)",
   feve: "🪙 Fève",
   // === Lot 2 — Ingrédients cuisines du monde ===
-  baguette: "🥖 Baguette", painpita: "🫓 Pain pita",
-  haricotsverts: "🫛 Haricots verts", saucissefumee: "🌭 Saucisse fumée",
+  baguette: "🥖 Baguette", painpita: "🥙 Pain pita",
+  haricotsverts: "🟢 Haricots verts", saucissefumee: "🌭 Saucisse fumée",
   pouletHache: "🍗 Poulet haché", rizGrillé: "🌾 Riz grillé concassé",
   oignonrouge: "🧅 Oignon rouge", nouillesoeuf: "🍜 Nouilles aux œufs",
   pateCurry: "🌶️ Pâte de curry", cacahuetespurée: "🥜 Purée de cacahuètes",
@@ -1435,7 +1435,7 @@ const INGREDIENTS_LABELS = {
   jauneoeuf: "🥚 Jaune d'œuf", tabasco: "🌶️ Tabasco",
   farinetamisee: "🌾 Farine tamisée", chocolatnoir: "🍫 Chocolat noir", jusdecitron: "🍋 Jus de citron",
   levurechimique: "🍞 Levure chimique", pepiteschoco: "🍫 Pépites de chocolat",
-  gingembre: "🫚 Gingembre", galanga: "🫚 Galanga", anis: "⭐ Anis étoilé",
+  gingembre: "🌿 Gingembre", galanga: "🌿 Galanga", anis: "⭐ Anis étoilé",
   citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille", fumee: "💨 Paprika fumé",
   chermoula: "🌿 Chermoula", pesto: "🌿 Pesto",
   persil: "🌿 Persil", coriandre: "🌿 Coriandre", menthe: "🌿 Menthe fraîche",
@@ -1467,7 +1467,7 @@ const INGREDIENTS_LABELS = {
   cremeTruffe: "🍄 Crème de truffe", roquette: "🥬 Roquette",
   // == Ingrédients spéciaux ==
   pralin: "🌰 Pâte de pralin", proteine: "💪 Protéine", dattes: "🌴 Dattes",
-  vermicelles: "🍜 Vermicelles", edamame: "🫛 Edamame",
+  vermicelles: "🍜 Vermicelles", edamame: "🟢 Edamame",
   // == Ajouts audit complet (50 ingrédients) ==
   // Boissons / alcools
   vin: "🍷 Vin", cidre: "🍎 Cidre", saké: "🍶 Saké",
@@ -1479,7 +1479,7 @@ const INGREDIENTS_LABELS = {
   ciboule: "🌿 Ciboule", ciboulette: "🌿 Ciboulette", sauge: "🌿 Sauge",
   capres: "🫒 Câpres", baies: "🫐 Baies de genièvre",
   // Sauces / pâtes
-  bechamel: "🥛 Sauce béchamel", soja: "🥢 Sauce soja", chutney: "🫙 Chutney",
+  bechamel: "🥛 Sauce béchamel", soja: "🥢 Sauce soja", chutney: "🍯 Chutney",
   pateC: "🌶️ Pâte de curry", curryVert: "🌶️ Pâte de curry vert",
   fecule: "🌾 Fécule de maïs",
   // Viandes / poissons / fruits de mer
@@ -1491,7 +1491,7 @@ const INGREDIENTS_LABELS = {
   banane: "🍌 Banane", pomme: "🍎 Pomme", kiwi: "🥝 Kiwi", citronC: "🍋 Citron",
   // Fruits secs & graines
   pistaches: "🌰 Pistaches", arachide: "🥜 Arachide",
-  sesame: "🫘 Graines de sésame", cacahetes: "🥜 Cacahuètes grillées",
+  sesame: "🥜 Graines de sésame", cacahetes: "🥜 Cacahuètes grillées",
   // Sucré / divers
   choco: "🍫 Chocolat", biscuits: "🍪 Biscuits", gelatine: "🟦 Gélatine",
   filo: "🥟 Pâte filo", pateSablee: "🥧 Pâte sablée",
@@ -1510,9 +1510,9 @@ const INGREDIENTS_LABELS = {
   // Légumes & herbes
   bokchoy: "🥬 Bok choy", brocoli: "🥦 Brocoli",
   oignonNouveau: "🧅 Oignon nouveau", oignonRouge: "🧅 Oignon rouge",
-  feves: "🫛 Fèves", figues: "🟣 Figues",
+  feves: "🟢 Fèves", figues: "🟣 Figues",
   pommedeterre: "🥔 Pommes de terre", maïs: "🌽 Maïs",
-  haricotsnoirs: "🫘 Haricots noirs", haricotsrouges: "🫘 Haricots rouges",
+  haricotsnoirs: "🥜 Haricots noirs", haricotsrouges: "🥜 Haricots rouges",
   cornichons: "🥒 Cornichons", poire: "🍐 Poire asiatique",
   pousses: "🌱 Pousses de soja", feuilles: "🌿 Feuilles de vigne",
   feuillesBric: "📄 Feuilles de brick",

@@ -4,7 +4,7 @@ const recettes = {
     base: 4,
     temps: "48h fermentation",
     niveau: "⭐⭐ Moyen",
-    emoji: "🫓",
+    emoji: "🥙",
     description: "La pâte à pizza napolitaine authentique — légère et croustillante grâce à une longue fermentation. Base pour toutes vos pizzas !",
     tableauPatons: [
       { patons: 0, total: "0 g", farine: "0 g", eau: "0 g", sel: "0 g", levure: "0 g" },
@@ -246,7 +246,7 @@ const recettes = {
     base: 4,
     temps: "3h (dont 2h levée)",
     niveau: "⭐ Facile",
-    emoji: "🫓",
+    emoji: "🥙",
     description: "La galette de goumeau franc-comtoise — une brioche moelleuse nappée d'une crème dorée. Spécialité traditionnelle de Franche-Comté.",
     tableauGoumeau: [
       { nb: 1, sucre: "9 g", levure: "3 g", farine: "34 g", oeuf: "¼", creme: "1 c.à.s", lait: "¼ dl", gCreme: "¾ c.à.s", gSucre: "¾ c.à.s", gJaune: "¼", sel: "1 pincée" },
@@ -658,7 +658,7 @@ const recettes = {
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
-    emoji: "🫘",
+    emoji: "🥜",
     description: "Une salade de lentilles tiède ou froide — légumineuses, légumes croquants et vinaigrette moutardée.",
     tableauSaladeLentilles: [
       { nb: 1, lentilles: "60 g", carottes: "½", oignon: "¼", lardons: "25 g", sel: "1 pincée", poivre: "1 pincée", huile: "1 c.à.s", vin: "50 ml" },
@@ -679,7 +679,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Cuire les lentilles", detail: "Rincer les lentilles vertes (du Puy de préférence). Les plonger dans l'eau froide avec un bouquet garni et les carottes coupées. Porter à ébullition puis cuire à feu moyen. Ne pas saler en début de cuisson. Rincer abondamment à l'eau froide.", badge: "⏱ 20–25 min" },
+      { icone: "🥜", titre: "Cuire les lentilles", detail: "Rincer les lentilles vertes (du Puy de préférence). Les plonger dans l'eau froide avec un bouquet garni et les carottes coupées. Porter à ébullition puis cuire à feu moyen. Ne pas saler en début de cuisson. Rincer abondamment à l'eau froide.", badge: "⏱ 20–25 min" },
       { icone: "🥓", titre: "Faire revenir les lardons", detail: "Faire dorer les lardons à la poêle sans matière grasse. Égoutter sur du papier absorbant. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 5 min" },
       { icone: "🥣", titre: "Préparer la vinaigrette", detail: "Mélanger 1 c.à.s de moutarde, 2 c.à.s de vinaigre de vin, 4 c.à.s d'huile d'olive, sel et poivre. Bien fouetter.", badge: null },
       { icone: "🥗", titre: "Assembler", detail: "Égoutter les lentilles encore chaudes et les mélanger immédiatement avec la vinaigrette. Ajouter les lardons et l'oignon émincé. Servir tiède ou froid.", badge: null }
@@ -1250,7 +1250,7 @@ const recettes = {
     base: 4,
     temps: "1h30",
     niveau: "⭐ Facile",
-    emoji: "🫓",
+    emoji: "🥙",
     description: "Les naans indiens moelleux — pains plats au yaourt cuits à la poêle. Parfaits avec tous les currys.",
     tableauNaan: [
       { nb: 1, farine: "75 g", yaourt: "38 g", levure: "1.5 g", beurre: "7.5 g", lait: "15 ml", sel: "1 pincée", huile: "1 c.à.s", ail: "1 gousse", sucre: "10 g" },
@@ -1581,7 +1581,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Préparer la pâte", detail: "Utiliser la recette de pâte à pizza de l'appli (48h de fermentation). Sortir les pâtons 1h avant.", badge: null },
+      { icone: "🥙", titre: "Préparer la pâte", detail: "Utiliser la recette de pâte à pizza de l'appli (48h de fermentation). Sortir les pâtons 1h avant.", badge: null },
       { icone: "🍅", titre: "Sauce tomate", detail: "Écraser les tomates San Marzano à la main avec sel, huile d'olive et basilic. Ne pas cuire — la sauce reste crue.", badge: null },
       { icone: "📏", titre: "Étaler la pâte", detail: "Étaler chaque pâton à la main en partant du centre vers les bords. Ne jamais utiliser de rouleau — laisser les bords épais.", badge: null },
       { icone: "🧀", titre: "Garnir", detail: "Étaler la sauce en spirale. Déposer la mozzarella di bufala égouttée et déchirée. Arroser d'huile d'olive.", badge: null },
@@ -1756,11 +1756,11 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Tremper les pois chiches", detail: "Faire tremper les pois chiches CRUS (pas en boîte !) dans eau froide. Égoutter et sécher.", badge: "⏱ 12h trempage" },
+      { icone: "🥜", titre: "Tremper les pois chiches", detail: "Faire tremper les pois chiches CRUS (pas en boîte !) dans eau froide. Égoutter et sécher.", badge: "⏱ 12h trempage" },
       { icone: "🌀", titre: "Mixer la farce", detail: "Mixer pois chiches, persil, coriandre, ail, oignon, cumin, coriandre moulue, sel, poivre, bicarbonate. La texture doit être granuleuse — pas une purée.", badge: null },
       { icone: "⚽", titre: "Former les boulettes", detail: "Former des boules de 3cm ou utiliser une cuillère à glace. Les réfrigérer 30 min pour qu'elles tiennent.", badge: "⏱ 30 min frigo" },
       { icone: "🔥", titre: "Frire", detail: "Frire dans huile chaude (180°C) jusqu'à belle couleur dorée et croustillante. Température idéale 170-180°C. Test : cube de pain dore en 30s.", badge: "⏱ 3-4 min" },
-      { icone: "🫓", titre: "Servir", detail: "Servir dans pita avec houmous, tahini, tomates, concombre, oignon rouge et herbes fraîches.", badge: null }
+      { icone: "🥙", titre: "Servir", detail: "Servir dans pita avec houmous, tahini, tomates, concombre, oignon rouge et herbes fraîches.", badge: null }
     ]
   },
   poulettandoori: {
@@ -1824,7 +1824,7 @@ const recettes = {
       { icone: "🦆", titre: "Préparer le canard", detail: "Sécher la peau du canard avec du papier absorbant. Mélanger miel, sauce soja, vinaigre de riz et cinq-épices. Badigeonner le canard généreusement. Laisser sécher à l'air 2h (ou 1 nuit au frigo).", badge: "⏱ 2h séchage" },
       { icone: "🔥", titre: "Rôtir", detail: "Préchauffer à 200°C. Poser le canard sur une grille au-dessus d'un plat. Rôtir en retournant et badigeonnant toutes les 30 min. Préchauffer le four 10 min avant. Chaleur tournante pour un rôtissage uniforme.", badge: "⏱ 1h30 à 200°C" },
       { icone: "🔪", titre: "Découper", detail: "Laisser reposer 10 min. Découper en tranches fines en séparant la peau croustillante de la chair. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🫓", titre: "Préparer les crêpes", detail: "Réchauffer les crêpes pékinoises (ou crêpes fines maison) dans de la vapeur 2 min.", badge: null },
+      { icone: "🥙", titre: "Préparer les crêpes", detail: "Réchauffer les crêpes pékinoises (ou crêpes fines maison) dans de la vapeur 2 min.", badge: null },
       { icone: "🥢", titre: "Dresser et servir", detail: "Chaque convive garnit sa crêpe de sauce hoisin, concombre en julienne, ciboule émincée et tranches de canard laqué. Rouler et déguster !", badge: null }
     ]
   },
@@ -2063,7 +2063,7 @@ const recettes = {
     etapes: [
       { icone: "🥛", titre: "Préparer l'appareil", detail: "Chauffer lait + beurre + vanille jusqu'à ébullition. Dans un bol, mélanger sucre + farine. Verser le lait chaud progressivement en fouettant. Ajouter œufs et rhum. Passer au chinois.", badge: null },
       { icone: "❄️", titre: "Repos indispensable", detail: "Filmer et réfrigérer la pâte. Ce repos développe les arômes et donne la texture caractéristique.", badge: "⏱ 24h au frigo" },
-      { icone: "🫙", titre: "Préparer les moules", detail: "Préchauffer le four à 250°C. Badigeonner les moules en cuivre (ou silicone) de beurre d'abeille ou beurre + cire d'abeille pour une croûte parfaite. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
+      { icone: "🍯", titre: "Préparer les moules", detail: "Préchauffer le four à 250°C. Badigeonner les moules en cuivre (ou silicone) de beurre d'abeille ou beurre + cire d'abeille pour une croûte parfaite. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
       { icone: "🔥", titre: "Cuisson en deux temps", detail: "Remplir les moules aux ¾. Cuire 15 min à 250°C pour la croûte, puis baisser à 180°C pour le reste. Les cannelés doivent être très sombres (presque noirs) à l'extérieur.", badge: "⏱ 15 min à 250°C + 45 min à 180°C" },
       { icone: "⏳", titre: "Démouler tiède", detail: "Démouler après 5 min. Déguster tiède pour le contraste croustillant/moelleux maximal. Se conservent 24h.", badge: null }
     ]
@@ -2094,7 +2094,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Préparer la pâte", detail: "Utiliser la recette de pâte à pizza de l'appli. Sortir les pâtons 1h avant. Étaler à la main.", badge: null },
+      { icone: "🥙", titre: "Préparer la pâte", detail: "Utiliser la recette de pâte à pizza de l'appli. Sortir les pâtons 1h avant. Étaler à la main.", badge: null },
       { icone: "🍅", titre: "Sauce tomate", detail: "Étaler la sauce tomate assaisonnée en spirale sur la pâte.", badge: null },
       { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella déchirée ou râpée.", badge: null },
       { icone: "🍖", titre: "Garnitures", detail: "Disposer le jambon en morceaux et les champignons émincés (crus ou poêlés).", badge: null },
@@ -2128,7 +2128,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🔥", titre: "Préchauffer le four à FOND", detail: "Préchauffer le four à 250°C MINIMUM. ASTUCE PRO : utiliser une pierre à pizza ou plaque en fonte préchauffée 30 min — c'est ce qui fait une pâte croustillante comme en pizzeria.", badge: "⏱ 30 min" },
-      { icone: "🫓", titre: "Pâte et base crème", detail: "Étaler la pâte. Napper d'une fine couche de crème fraîche à la place de la tomate.", badge: null },
+      { icone: "🥙", titre: "Pâte et base crème", detail: "Étaler la pâte. Napper d'une fine couche de crème fraîche à la place de la tomate.", badge: null },
       { icone: "🧀", titre: "Quatre fromages", detail: "Disposer par zones mozzarella, gorgonzola en morceaux, ricotta en petites cuillerées et parmesan râpé. Un généreux filet d'huile d'olive.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Four à maximum. Cuire jusqu'à ce que les fromages soient fondus et dorés. Finir avec un filet de miel si souhaité.", badge: "⏱ 7-10 min à 280°C" },
       { icone: "🌿", titre: "Service italien", detail: "Sortir du four, parsemer de basilic frais, filet d'huile d'olive extra-vierge. Couper en parts à la roulette, servir BRÛLANT. Buon appetito !", badge: null }
@@ -2160,7 +2160,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Pâte et sauce", detail: "Étaler la pâte. Napper de sauce tomate assaisonnée à l'ail et à l'origan.", badge: null },
+      { icone: "🥙", titre: "Pâte et sauce", detail: "Étaler la pâte. Napper de sauce tomate assaisonnée à l'ail et à l'origan.", badge: null },
       { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella déchirée.", badge: null },
       { icone: "🌶️", titre: "Garnitures piquantes", detail: "Disposer les tranches de salami épicé, des petites cuillerées de nduja (saucisse calabraise) et les rondelles de piment frais.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Four à maximum. Finir avec un filet d'huile d'olive pimentée à la sortie du four.", badge: "⏱ 7-10 min à 280°C" }
@@ -2192,7 +2192,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Base crème", detail: "Étaler la pâte. Napper de crème fraîche assaisonnée sel, poivre et aneth.", badge: null },
+      { icone: "🥙", titre: "Base crème", detail: "Étaler la pâte. Napper de crème fraîche assaisonnée sel, poivre et aneth.", badge: null },
       { icone: "🧀", titre: "Mozzarella + épinards", detail: "Répartir la mozzarella. Parsemer les épinards frais (ils vont cuire sur la pizza).", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Cuire la pizza sans le saumon.", badge: "⏱ 7-10 min à 280°C" },
       { icone: "🐟", titre: "Saumon fumé à la sortie", detail: "Sortir la pizza, disposer le saumon fumé en tranches. Presser le citron. Quelques câpres et aneth frais. Le saumon fumé ne se cuit jamais !", badge: null }
@@ -2225,7 +2225,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🥒", titre: "Griller les légumes", detail: "Couper poivrons, courgette et aubergine en lamelles. Griller à la poêle ou au four avec huile d'olive. Saler. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 10 min" },
-      { icone: "🫓", titre: "Pâte et sauce", detail: "Étaler la pâte. Napper de sauce tomate et de pesto en alternance.", badge: null },
+      { icone: "🥙", titre: "Pâte et sauce", detail: "Étaler la pâte. Napper de sauce tomate et de pesto en alternance.", badge: null },
       { icone: "🧀", titre: "Mozzarella et légumes", detail: "Répartir mozzarella puis les légumes grillés. Olives noires en option.", badge: null },
       { icone: "🔥", titre: "Cuire et finir", detail: "Cuire au four à maximum. Finir avec roquette fraîche et copeaux de parmesan à la sortie.", badge: "⏱ 7-10 min à 280°C" }
     ]
@@ -2259,7 +2259,7 @@ const recettes = {
       { icone: "🥩", titre: "Marinade", detail: "Couper l'agneau en cubes. Mariner avec huile d'olive, jus de citron, origan, ail, sel et poivre. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 2h minimum" },
       { icone: "🍢", titre: "Brochettes", detail: "Enfiler sur brochettes. Cuire au grill ou barbecue en tournant.", badge: "⏱ 10-12 min" },
       { icone: "🥒", titre: "Tzatziki", detail: "Mélanger yaourt grec, concombre râpé essoré, ail, aneth, jus de citron.", badge: null },
-      { icone: "🫓", titre: "Servir", detail: "Réchauffer les pitas. Garnir de tzatziki, tomate, oignon rouge et la viande. Arroser d'huile d'olive.", badge: null }
+      { icone: "🥙", titre: "Servir", detail: "Réchauffer les pitas. Garnir de tzatziki, tomate, oignon rouge et la viande. Arroser d'huile d'olive.", badge: null }
     ]
   },
   tom_yam: {
@@ -2588,7 +2588,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🥩", titre: "Saisir les joues", detail: "Faire dorer les joues de bœuf sur toutes les faces dans huile à feu vif. Réserver. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🫙", titre: "Préparer la braise", detail: "Dans la même cocotte, faire revenir ail et gingembre. Ajouter sauce soja, mirin, saké, sucre de palme, anis étoilé et bouillon. Porter à ébullition.", badge: null },
+      { icone: "🍯", titre: "Préparer la braise", detail: "Dans la même cocotte, faire revenir ail et gingembre. Ajouter sauce soja, mirin, saké, sucre de palme, anis étoilé et bouillon. Porter à ébullition.", badge: null },
       { icone: "⏳", titre: "Braiser longuement", detail: "Remettre les joues. Couvrir et cuire à feu très doux. La viande doit se défaire à la fourchette.", badge: "⏱ 2h30 à feu doux" },
       { icone: "🍚", titre: "Réduire et servir", detail: "Retirer la viande, réduire la sauce à feu vif 5 min. Napper les joues. Servir avec riz vapeur et bok choy sauté. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: null }
     ]
@@ -2957,7 +2957,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫙", titre: "Poêle en terre cuite", detail: "Idéalement utiliser une cazuela (poêle en terre cuite). Verser l'huile d'olive généreusement.", badge: null },
+      { icone: "🍯", titre: "Poêle en terre cuite", detail: "Idéalement utiliser une cazuela (poêle en terre cuite). Verser l'huile d'olive généreusement.", badge: null },
       { icone: "🧄", titre: "Infuser ail et piment", detail: "À feu moyen, faire revenir l'ail tranché et le piment séché jusqu'à légère dorure. Ne pas brûler !", badge: "⏱ 2 min" },
       { icone: "🦐", titre: "Sauter les crevettes", detail: "Augmenter le feu. Ajouter les crevettes. Cuire 1-2 min de chaque côté — elles cuisent très vite !", badge: "⏱ 2-3 min" },
       { icone: "🌿", titre: "Servir immédiatement", detail: "Parsemer de persil haché. Servir bouillant dans la poêle avec pain croustillant pour saucer. Le Pil Pil c'est l'huile qui grésille !", badge: null }
@@ -3137,7 +3137,7 @@ const recettes = {
       { icone: "🥔", titre: "Ajouter les pommes de terre", detail: "Éplucher et couper en cubes. Ajouter aux poireaux. Couvrir de bouillon. Saler. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
       { icone: "⏳", titre: "Cuire", detail: "Cuire jusqu'à ce que les pommes de terre soient très tendres.", badge: "⏱ 20 min" },
       { icone: "🌀", titre: "Mixer", detail: "Mixer finement. Incorporer la crème fraîche. Rectifier l'assaisonnement. Ajuster la consistance avec du bouillon. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🫙", titre: "Servir", detail: "Servir chaud avec croûtons dorés au beurre, lardons grillés ou ciboulette fraîche.", badge: null }
+      { icone: "🍯", titre: "Servir", detail: "Servir chaud avec croûtons dorés au beurre, lardons grillés ou ciboulette fraîche.", badge: null }
     ]
   },
   terrinecampagne: {
@@ -3236,7 +3236,7 @@ const recettes = {
       { icone: "🐓", titre: "Assaisonner", detail: "Saler et poivrer l'extérieur. Mettre dans la cavité : demi-citron, gousses d'ail entières et thym. Ficeler le poulet.", badge: null },
       { icone: "🔥", titre: "Saisir à four chaud", detail: "Démarrer à 220°C pendant 20 min pour dorer la peau. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 20 min à 220°C" },
       { icone: "⏳", titre: "Finir à four moyen", detail: "Baisser à 180°C. Arroser toutes les 15 min avec les sucs de cuisson.", badge: "⏱ 50-60 min à 180°C" },
-      { icone: "🫙", titre: "Sauce et repos", detail: "Sortir le poulet, laisser reposer 10 min. Déglacer le plat au vin blanc ou bouillon. Servir avec la sauce et des pommes de terre rôties. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 10 min repos" }
+      { icone: "🍯", titre: "Sauce et repos", detail: "Sortir le poulet, laisser reposer 10 min. Déglacer le plat au vin blanc ou bouillon. Servir avec la sauce et des pommes de terre rôties. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 10 min repos" }
     ]
   },
   millefeuille: {
@@ -3331,7 +3331,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Pâte et base", detail: "Étaler la pâte. Napper de sauce tomate légère ou huile d'olive et ail.", badge: null },
+      { icone: "🥙", titre: "Pâte et base", detail: "Étaler la pâte. Napper de sauce tomate légère ou huile d'olive et ail.", badge: null },
       { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella. Filet d'huile d'olive. Enfourner. Chaleur tournante pour une cuisson uniforme.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Cuire au four maximum jusqu'à bords dorés.", badge: "⏱ 7-10 min à 280°C" },
       { icone: "🍖", titre: "Garnir après cuisson", detail: "Sortir du four, disposer immédiatement le prosciutto di Parma en rosace. Ajouter la roquette fraîche et copeaux de parmesan. Filet d'huile d'olive et poivre.", badge: null }
@@ -3363,7 +3363,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Base crème de truffe", detail: "Étaler la pâte. Napper généreusement de crème de truffe (tartare de truffe ou crème fraîche + truffe râpée).", badge: null },
+      { icone: "🥙", titre: "Base crème de truffe", detail: "Étaler la pâte. Napper généreusement de crème de truffe (tartare de truffe ou crème fraîche + truffe râpée).", badge: null },
       { icone: "🍄", titre: "Champignons et mozza", detail: "Disposer les champignons émincés (cèpes ou champignons Paris) et la mozzarella.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" },
       { icone: "🍄", titre: "Finition truffe", detail: "À la sortie du four, arroser d'huile de truffe et ajouter des copeaux de truffe fraîche ou séchée. Quelques feuilles de roquette. Servir immédiatement.", badge: null }
@@ -3395,7 +3395,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Base ricotta", detail: "Étaler la pâte. Mélanger la ricotta avec ail, sel, poivre et zeste de citron. Napper la pâte.", badge: null },
+      { icone: "🥙", titre: "Base ricotta", detail: "Étaler la pâte. Mélanger la ricotta avec ail, sel, poivre et zeste de citron. Napper la pâte.", badge: null },
       { icone: "🥒", titre: "Légumes", detail: "Couper la courgette en rubans fins (économe). Disposer courgette et asperges sur la pizza. Râper le parmesan. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" },
       { icone: "🌿", titre: "Finir", detail: "Sortir du four, arroser d'huile d'olive et de quelques feuilles de basilic frais.", badge: null }
@@ -3427,7 +3427,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Étaler la pâte", detail: "Étaler chaque pâton en disque. La moitié seulement sera garnie.", badge: null },
+      { icone: "🥙", titre: "Étaler la pâte", detail: "Étaler chaque pâton en disque. La moitié seulement sera garnie.", badge: null },
       { icone: "🧀", titre: "Farcir", detail: "Sur une moitié : étaler sauce tomate, ricotta, mozza, jambon et une pincée d'origan. Laisser 2cm de bord libre.", badge: null },
       { icone: "🌙", titre: "Plier et souder", detail: "Rabattre l'autre moitié. Souder les bords en appuyant et en roulant. Percer 2-3 trous sur le dessus.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Badigeonner d'huile d'olive. Cuire sur pierre chaude.", badge: "⏱ 10-12 min à 250°C" },
@@ -3461,7 +3461,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🫑", titre: "Rôtir les poivrons", detail: "Couper les poivrons en lamelles. Rôtir à la poêle ou au four avec huile d'olive jusqu'à tendreté et légère coloration. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 15 min" },
-      { icone: "🫓", titre: "Sauce tomate", detail: "Étaler la sauce tomate sur la pâte.", badge: null },
+      { icone: "🥙", titre: "Sauce tomate", detail: "Étaler la sauce tomate sur la pâte.", badge: null },
       { icone: "🧀", titre: "Garnir", detail: "Répartir la mozzarella, les poivrons rôtis, les filets d'anchois, les olives noires et câpres.", badge: null },
       { icone: "🔥", titre: "Cuire et finir", detail: "Cuire au four maximum. Finir avec origan et filet d'huile d'olive.", badge: "⏱ 7-10 min à 280°C" }
     ]
@@ -3493,7 +3493,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🥔", titre: "Tranches ultra-fines", detail: "Éplucher les pommes de terre et les couper en tranches de 1-2 mm à la mandoline. Les faire tremper dans l'eau froide 10 min pour ôter l'amidon. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🫓", titre: "Base ricotta", detail: "Étaler la pâte. Napper de ricotta assaisonnée d'ail, sel, poivre.", badge: null },
+      { icone: "🥙", titre: "Base ricotta", detail: "Étaler la pâte. Napper de ricotta assaisonnée d'ail, sel, poivre.", badge: null },
       { icone: "🥔", titre: "Disposer les pommes de terre", detail: "Égoutter et sécher les tranches. Les disposer en rosace sur la ricotta. Arroser d'huile d'olive et saler.", badge: null },
       { icone: "🌿", titre: "Romarin et pecorino", detail: "Parsemer de feuilles de romarin et de pecorino râpé.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Four au maximum — les pommes de terre cuisent très vite à haute température.", badge: "⏱ 8-12 min à 280°C" }
@@ -3525,7 +3525,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Sauce et fromage", detail: "Étaler la sauce tomate et la mozzarella râpée.", badge: null },
+      { icone: "🥙", titre: "Sauce et fromage", detail: "Étaler la sauce tomate et la mozzarella râpée.", badge: null },
       { icone: "🌴", titre: "Garnitures brésiliennes", detail: "Disposer les cœurs de palmier en rondelles, le maïs et les olives vertes.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" },
       { icone: "🌿", titre: "Finir", detail: "Parsemer d'origan frais. Au Brésil on ajoute souvent de la catupiry (fromage crémeux) — remplaçable par crème fraîche épaisse.", badge: null }
@@ -3624,7 +3624,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🫑", titre: "Rôtir le poivron", detail: "Couper le poivron en lanières et le faire rôtir à la poêle avec huile d'olive 8 min. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 8 min" },
-      { icone: "🫓", titre: "Sauce tomate", detail: "Étaler la sauce tomate assaisonnée à l'ail et à l'origan sur la pâte.", badge: null },
+      { icone: "🥙", titre: "Sauce tomate", detail: "Étaler la sauce tomate assaisonnée à l'ail et à l'origan sur la pâte.", badge: null },
       { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella déchirée.", badge: null },
       { icone: "🌭", titre: "Chorizo et poivrons", detail: "Disposer les rondelles de chorizo et les poivrons rôtis. Le chorizo va croustiller au four.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Four au maximum. La graisse du chorizo va parfumer toute la pizza.", badge: "⏱ 7-10 min à 280°C" }
@@ -4115,7 +4115,7 @@ const recettes = {
       { icone: "🧅", titre: "Soffritto", detail: "Faire revenir oignon, céleri et carotte en brunoise dans huile d'olive.", badge: "⏱ 8 min" },
       { icone: "🍅", titre: "Tomates et bouillon", detail: "Ajouter ail, tomates concassées, concentré de tomate et bouillon de légumes. Porter à ébullition.", badge: null },
       { icone: "🥒", titre: "Légumes de saison", detail: "Ajouter courgettes, haricots verts, pommes de terre en cubes, épinards. Cuire 15 min.", badge: "⏱ 15 min" },
-      { icone: "🫘", titre: "Haricots et pâtes", detail: "Ajouter haricots blancs et petites pâtes (ditalini ou coquillettes). Cuire encore 10 min.", badge: "⏱ 10 min" },
+      { icone: "🥜", titre: "Haricots et pâtes", detail: "Ajouter haricots blancs et petites pâtes (ditalini ou coquillettes). Cuire encore 10 min.", badge: "⏱ 10 min" },
       { icone: "🧀", titre: "Servir", detail: "Rectifier l'assaisonnement. Servir avec un filet d'huile d'olive et parmesan râpé. Le lendemain c'est encore meilleur !", badge: null }
     ]
   },
@@ -4181,7 +4181,7 @@ const recettes = {
       { icone: "🐑", titre: "Dorer l'agneau", detail: "Faire dorer les morceaux d'agneau à feu vif. Saupoudrer de farine, cuire 2 min. Ajouter concentré de tomate, ail, bouquet garni. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
       { icone: "🍷", titre: "Mouiller", detail: "Déglacer au vin blanc. Couvrir de bouillon. Mijoter couvert. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 45 min" },
       { icone: "🥕", titre: "Légumes printaniers", detail: "Ajouter navets et carottes nouvelles. Cuire encore 20 min.", badge: "⏱ 20 min" },
-      { icone: "🫛", titre: "Petits pois", detail: "Ajouter les petits pois les 10 dernières minutes. Rectifier l'assaisonnement.", badge: "⏱ 10 min" },
+      { icone: "🟢", titre: "Petits pois", detail: "Ajouter les petits pois les 10 dernières minutes. Rectifier l'assaisonnement.", badge: "⏱ 10 min" },
       { icone: "🌿", titre: "Servir", detail: "Parsemer de persil frais. Servir avec pommes de terre vapeur ou pain de campagne.", badge: null }
     ]
   },
@@ -4535,7 +4535,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🌰", titre: "Hacher les pistaches", detail: "Hacher grossièrement les pistaches non salées. Mélanger avec sucre et cannelle.", badge: null },
-      { icone: "🫓", titre: "Monter le baklava", detail: "Beurrer le plat. Alterner 2 feuilles de filo beurrées + une couche de pistaches. Répéter. Terminer par 3-4 feuilles de filo.", badge: null },
+      { icone: "🥙", titre: "Monter le baklava", detail: "Beurrer le plat. Alterner 2 feuilles de filo beurrées + une couche de pistaches. Répéter. Terminer par 3-4 feuilles de filo.", badge: null },
       { icone: "🔪", titre: "Découper avant cuisson", detail: "Découper en losanges ou carrés avant d'enfourner. Important : couper jusqu'en bas.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Cuire jusqu'à belle couleur dorée.", badge: "⏱ 35-40 min à 160°C" },
       { icone: "🍯", titre: "Sirop", detail: "Verser immédiatement le sirop (eau + sucre + miel + eau de rose) sur le baklava chaud. Laisser absorber.", badge: "⏱ 2h repos" }
@@ -4731,7 +4731,7 @@ const recettes = {
       { icone: "🍎", titre: "Préparer les pommes", detail: "Éplucher et couper les pommes en quartiers épais. Utiliser des pommes fermes (Granny Smith ou Reinettes).", badge: null },
       { icone: "🍯", titre: "Caramel", detail: "Dans une poêle allant au four, fondre beurre + sucre jusqu'à caramel doré ambré. Attention à ne pas brûler.", badge: "⏱ 8 min" },
       { icone: "🍎", titre: "Disposer les pommes", detail: "Disposer les quartiers debout dans le caramel, très serrés. Cuire à feu moyen pour compoter.", badge: "⏱ 15 min" },
-      { icone: "🫓", titre: "Couvrir de pâte", detail: "Recouvrir les pommes de pâte feuilletée. Rentrer les bords. Piquer.", badge: null },
+      { icone: "🥙", titre: "Couvrir de pâte", detail: "Recouvrir les pommes de pâte feuilletée. Rentrer les bords. Piquer.", badge: null },
       { icone: "🔥", titre: "Cuire et retourner", detail: "Enfourner. Laisser reposer 5 min hors du four puis retourner sur un plat d'un coup sec. Servir tiède avec crème fraîche.", badge: "⏱ 25 min à 200°C" }
     ]
   },
@@ -4993,7 +4993,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Foncer et cuire à blanc", detail: "Étaler la pâte sablée dans le moule. Piquer. Papier + billes. Cuire à blanc puis 5 min sans billes.", badge: "⏱ 20 min à 180°C" },
+      { icone: "🥙", titre: "Foncer et cuire à blanc", detail: "Étaler la pâte sablée dans le moule. Piquer. Papier + billes. Cuire à blanc puis 5 min sans billes.", badge: "⏱ 20 min à 180°C" },
       { icone: "🟢", titre: "Crème pistache", detail: "Mixer pistaches non salées en pâte. Crémer beurre + sucre. Ajouter les œufs, puis la pâte de pistache et la farine.", badge: null },
       { icone: "🔥", titre: "Cuire la tarte", detail: "Verser la crème pistache dans le fond cuit. Recuire jusqu'à crème prise et légèrement dorée.", badge: "⏱ 25 min à 170°C" },
       { icone: "❄️", titre: "Refroidir et décorer", detail: "Laisser refroidir complètement puis réfrigérer. Décorer de framboises et sucre glace au moment de servir.", badge: "⏱ 3h frigo" }
@@ -5036,7 +5036,7 @@ const recettes = {
     base: 4,
     temps: "30 min + 1h repos",
     niveau: "⭐ Facile",
-    emoji: "🫓",
+    emoji: "🥙",
     description: "Galettes Bretonnes — crêpes de blé noir (sarrasin) garnies jambon-fromage-œuf. La vraie galette complete bretonne !",
     tableauCrepesBretonnes: [
       { nb: 2, farine: "62 g", oeuf: "1", lait: "125 ml", beurre: "10 g", jambon: "2 tranches", fromage: "40 g", sel: "1 pincée" },
@@ -5113,7 +5113,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Sauce tomate", detail: "Étaler la sauce tomate assaisonnée à l'ail et l'origan.", badge: null },
+      { icone: "🥙", titre: "Sauce tomate", detail: "Étaler la sauce tomate assaisonnée à l'ail et l'origan.", badge: null },
       { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella.", badge: null },
       { icone: "🍍", titre: "Jambon et ananas", detail: "Disposer les tranches de jambon et les morceaux d'ananas (frais de préférence, en conserve sinon).", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" }
@@ -5264,7 +5264,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Foncer et cuire à blanc", detail: "Foncer la pâte sablée dans le moule. Cuire à blanc.", badge: "⏱ 20 min à 180°C" },
+      { icone: "🥙", titre: "Foncer et cuire à blanc", detail: "Foncer la pâte sablée dans le moule. Cuire à blanc.", badge: "⏱ 20 min à 180°C" },
       { icone: "🍯", titre: "Caramel beurre salé", detail: "Faire un caramel à sec avec le sucre. Décuire avec la crème chaude. Incorporer le beurre et le sel. Verser dans le fond de tarte. Réfrigérer. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: "⏱ 1h frigo" },
       { icone: "🍫", titre: "Ganache chocolat", detail: "Chauffer la crème restante. Verser sur le chocolat haché. Mélanger jusqu'à brillant. Verser sur le caramel refroidi.", badge: null },
       { icone: "❄️", titre: "Réfrigérer", detail: "Laisser prendre au frigo. Décorer de fleur de sel et d'éclats de caramel.", badge: "⏱ 2h frigo" }
@@ -5275,7 +5275,7 @@ const recettes = {
     base: 6,
     temps: "1h",
     niveau: "⭐ Facile",
-    emoji: "🫘",
+    emoji: "🥜",
     description: "Harira Marocaine — soupe de lentilles, pois chiches, tomates et épices. La soupe du Ramadan, nourrissante et parfumée.",
     tableauSoupeHarira: [
       { nb: 1, lentilles: "40 g", poischiches: "40 g", tomates: "100 g", bouillon: "300 ml", ail: "1 gousse", huile: "1 c.à.s", citron: "⅓ citron", oignon: "½ oignon", cannelle: "½ c.à.c", gingembre: "½ c.à.c" },
@@ -5701,7 +5701,7 @@ const recettes = {
     etapes: [
       { icone: "🌾", titre: "Cuire le quinoa", detail: "Rincer le quinoa. Cuire dans 2x son volume d'eau salée à feu moyen jusqu'à absorption. Égrainer à la fourchette. Rincer abondamment à l'eau froide.", badge: "⏱ 15 min" },
       { icone: "🍠", titre: "Rôtir la patate douce", detail: "Couper la patate douce en cubes. Assaisonner d'huile d'olive, cumin, paprika, sel. Rôtir au four. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 20 min à 200°C" },
-      { icone: "🫘", titre: "Griller les pois chiches", detail: "Égoutter et sécher les pois chiches. Les faire dorer à la poêle avec huile d'olive et épices jusqu'à ce qu'ils soient croustillants. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 8 min" },
+      { icone: "🥜", titre: "Griller les pois chiches", detail: "Égoutter et sécher les pois chiches. Les faire dorer à la poêle avec huile d'olive et épices jusqu'à ce qu'ils soient croustillants. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 8 min" },
       { icone: "🥄", titre: "Préparer la sauce tahini", detail: "Mélanger tahini, jus de citron, ail pressé, eau froide, sel. Fouetter jusqu'à obtenir une sauce crémeuse.", badge: null },
       { icone: "🎨", titre: "Dresser le bowl", detail: "Disposer quinoa, patate douce, pois chiches, épinards et avocat en tranches dans le bol. Napper de sauce tahini. Ajouter graines de sésame et herbes.", badge: null }
     ]
@@ -5877,7 +5877,7 @@ const recettes = {
     base: 4,
     temps: "15 min",
     niveau: "⭐ Facile",
-    emoji: "🫘",
+    emoji: "🥜",
     description: "Une salade de pois chiches fraîche et protéinée — légumes croquants, herbes et vinaigrette citronnée. Parfaite l'été.",
     tableauSaladePoisChiches: [
       { nb: 1, poischiches: "100 g", tomates: "1", concombre: "¼", oignon: "¼", persil: "¼ botte", citron: "¼", huile: "1 c.à.s" },
@@ -5898,7 +5898,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Préparer les pois chiches", detail: "Égoutter et rincer les pois chiches en boîte. Les sécher avec du papier absorbant. Rincer abondamment à l'eau froide.", badge: null },
+      { icone: "🥜", titre: "Préparer les pois chiches", detail: "Égoutter et rincer les pois chiches en boîte. Les sécher avec du papier absorbant. Rincer abondamment à l'eau froide.", badge: null },
       { icone: "🔪", titre: "Couper les légumes", detail: "Couper les tomates en dés, le concombre épépiné en petits cubes, émincer finement l'oignon rouge. Ciseler le persil. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
       { icone: "🥗", titre: "Assembler", detail: "Mélanger pois chiches, légumes et persil dans un grand saladier.", badge: null },
       { icone: "🍋", titre: "Assaisonner", detail: "Arroser de jus de citron et d'huile d'olive généreuse. Saler, poivrer. Ajouter cumin et paprika selon goût. Bien mélanger et réfrigérer 15 min avant de servir.", badge: "⏱ 15 min au frais" }
@@ -5974,7 +5974,7 @@ const recettes = {
     base: 6,
     temps: "10 min",
     niveau: "⭐ Facile",
-    emoji: "🫘",
+    emoji: "🥜",
     description: "Un houmous maison crémeux et savoureux — bien meilleur que celui du commerce et prêt en 10 minutes !",
     tableauHoumous: [
       { nb: 1, poischiches: "67 g", tahini: "½ c.à.s", citron: "¼", ail: "½ gousse", huile: "½ c.à.s", sel: "1 pincée" },
@@ -5995,7 +5995,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Préparer les pois chiches", detail: "Égoutter et rincer les pois chiches. Garder un peu d'eau de la boîte. Pour un houmous ultra-lisse, retirer la peau de chaque pois chiche (facultatif mais ça change tout !). Rincer abondamment à l'eau froide.", badge: null },
+      { icone: "🥜", titre: "Préparer les pois chiches", detail: "Égoutter et rincer les pois chiches. Garder un peu d'eau de la boîte. Pour un houmous ultra-lisse, retirer la peau de chaque pois chiche (facultatif mais ça change tout !). Rincer abondamment à l'eau froide.", badge: null },
       { icone: "🌀", titre: "Mixer", detail: "Placer tous les ingrédients dans le mixeur : pois chiches, tahini, jus de citron, ail, huile d'olive, cumin et sel. Mixer 2 min à puissance maximale.", badge: "⏱ 2 min mixer" },
       { icone: "💧", titre: "Ajuster la texture", detail: "Ajouter l'eau froide cuillère par cuillère tout en mixant jusqu'à obtenir la consistance souhaitée — lisse et crémeuse. Goûter et ajuster le sel et le citron.", badge: null },
       { icone: "🍽️", titre: "Dresser et servir", detail: "Verser dans un bol. Creuser un puits au centre avec le dos d'une cuillère. Verser un filet d'huile d'olive, saupoudrer de paprika et de cumin. Servir avec du pain pita, des légumes crus ou des crackers.", badge: null }
@@ -6252,7 +6252,7 @@ const recettes = {
     etapes: [
       { icone: "🌡️", titre: "Chauffer le lait", detail: "Faire chauffer le lait à 45 °C (tiède, pas bouillant — supporter le doigt dedans 10 secondes). Si vous utilisez du lait UHT il n'est pas nécessaire de le chauffer.", badge: null },
       { icone: "🥣", titre: "Ajouter le ferment", detail: "Délayer le yaourt (ou les ferments) dans un peu de lait tiède, puis mélanger avec le reste du lait. Fouetter doucement.", badge: null },
-      { icone: "🫙", titre: "Remplir les pots", detail: "Verser dans des pots en verre propres. Ne pas remuer une fois les pots remplis.", badge: null },
+      { icone: "🍯", titre: "Remplir les pots", detail: "Verser dans des pots en verre propres. Ne pas remuer une fois les pots remplis.", badge: null },
       { icone: "⏳", titre: "Laisser fermenter", detail: "Placer les pots dans un four éteint avec la lumière allumée (ou dans une yaourtière) pour maintenir une température de 40–45 °C.", badge: "⏱ 8h minimum" },
       { icone: "❄️", titre: "Réfrigérer", detail: "Une fois la texture prise, placer au réfrigérateur au moins 2h avant de déguster. Se conservent 1 semaine.", badge: "⏱ 2h au frigo" }
     ]
@@ -6415,7 +6415,7 @@ const recettes = {
     base: 4,
     temps: "2h30",
     niveau: "⭐⭐ Moyen",
-    emoji: "🫘",
+    emoji: "🥜",
     description: "Le cassoulet toulousain — haricots blancs mijotés avec saucisses, confit de canard et couenne. Un plat du Sud-Ouest généreux et savoureux.",
     tableauCassoulet: [
       { nb: 1, haricots: "100 g", saucisses: "75 g", canard: "1 cuisse", lardons: "30 g", tomates: "50 g", oignons: "¼", sel: "1 pincée", poivre: "1 pincée", ail: "1 gousse" },
@@ -6436,7 +6436,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Tremper les haricots", detail: "La veille, faire tremper les haricots blancs secs dans l'eau froide pendant 12h. Égoutter et rincer. Rincer abondamment à l'eau froide.", badge: "⏱ 12h" },
+      { icone: "🥜", titre: "Tremper les haricots", detail: "La veille, faire tremper les haricots blancs secs dans l'eau froide pendant 12h. Égoutter et rincer. Rincer abondamment à l'eau froide.", badge: "⏱ 12h" },
       { icone: "🧅", titre: "Préparer la base", detail: "Faire revenir oignons et ail dans une grande cocotte. Ajouter les lardons et faire dorer. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: null },
       { icone: "🍅", titre: "Ajouter les haricots", detail: "Ajouter les haricots, tomates concassées, bouquet garni, sel, poivre. Couvrir d'eau et laisser mijoter. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 1h" },
       { icone: "🌭", titre: "Ajouter les viandes", detail: "Faire dorer les saucisses. Les ajouter avec le confit de canard dans la cocotte. Mélanger délicatement. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: null },
@@ -6633,7 +6633,7 @@ const recettes = {
     etapes: [
       { icone: "🐟", titre: "Préparer les poissons", detail: "Nettoyer et couper les poissons (rascasse, grondin, saint-pierre). Préparer les crustacés. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
       { icone: "🧅", titre: "Faire le fumet", detail: "Faire revenir oignons, fenouil, tomates, ail dans l'huile d'olive. Ajouter les arêtes et têtes de poisson, safran, bouquet garni. Couvrir d'eau.", badge: "⏱ 30 min" },
-      { icone: "🫙", titre: "Préparer la rouille", detail: "Mixer ail, safran, jaune d'œuf, huile d'olive pour faire la rouille. Saler.", badge: null },
+      { icone: "🍯", titre: "Préparer la rouille", detail: "Mixer ail, safran, jaune d'œuf, huile d'olive pour faire la rouille. Saler.", badge: null },
       { icone: "🐠", titre: "Cuire les poissons", detail: "Filtrer le bouillon. Porter à ébullition. Ajouter les poissons selon leur temps de cuisson. Servir immédiatement.", badge: "⏱ 15 min" },
       { icone: "🍞", titre: "Servir", detail: "Servir avec des croûtons frottés à l'ail et la rouille à part.", badge: null }
     ]
@@ -6707,7 +6707,7 @@ const recettes = {
     base: 4,
     temps: "2h",
     niveau: "⭐ Facile",
-    emoji: "🫘",
+    emoji: "🥜",
     description: "Jarret de porc aux lentilles vertes du Puy — plat rustique et réconfortant mijoté longuement avec carottes et herbes aromatiques.",
     tableauJarretLentilles: [
       { nb: 1, jarret: "200 g", lentilles: "75 g", carottes: "0.5", oignons: "0.5", thym: "1 brin" },
@@ -6730,7 +6730,7 @@ const recettes = {
     etapes: [
       { icone: "🥩", titre: "Cuire le jarret", detail: "Placer le jarret dans une cocotte avec eau froide, oignons, carottes, bouquet garni. Porter à ébullition, écumer.", badge: null },
       { icone: "⏳", titre: "Mijoter", detail: "Baisser le feu et laisser mijoter à couvert. La viande doit être très tendre. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 1h30" },
-      { icone: "🫘", titre: "Cuire les lentilles", detail: "Rincer les lentilles. Les plonger dans le bouillon de cuisson. Laisser cuire jusqu'à tendreté. Rincer abondamment à l'eau froide.", badge: "⏱ 25 min" },
+      { icone: "🥜", titre: "Cuire les lentilles", detail: "Rincer les lentilles. Les plonger dans le bouillon de cuisson. Laisser cuire jusqu'à tendreté. Rincer abondamment à l'eau froide.", badge: "⏱ 25 min" },
       { icone: "🍽️", titre: "Servir", detail: "Trancher le jarret. Servir sur le lit de lentilles avec la moutarde de Dijon. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
     ]
   },
@@ -6804,7 +6804,7 @@ const recettes = {
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
-    emoji: "🫛",
+    emoji: "🟢",
     description: "Salade de haricots verts croquants aux amandes grillées — vinaigrette moutardée et œufs durs. Simple et délicieuse en entrée ou accompagnement.",
     tableauSaladeHV: [
       { nb: 1, haricots: "100 g", oeuf: "0.5", amandes: "10 g", moutarde: "½ c.à.c", vinaigre: "5 ml" },
@@ -6825,7 +6825,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫛", titre: "Cuire les haricots", detail: "Cuire les haricots verts al dente dans l'eau bouillante salée. Refroidir immédiatement dans l'eau glacée pour garder la couleur. 1 min de moins que sur l'emballage. Goûter pour vérifier.", badge: "⏱ 5 min" },
+      { icone: "🟢", titre: "Cuire les haricots", detail: "Cuire les haricots verts al dente dans l'eau bouillante salée. Refroidir immédiatement dans l'eau glacée pour garder la couleur. 1 min de moins que sur l'emballage. Goûter pour vérifier.", badge: "⏱ 5 min" },
       { icone: "🥚", titre: "Cuire les œufs durs", detail: "Cuire les œufs 9 min dans l'eau bouillante. Refroidir et écaler.", badge: "⏱ 9 min" },
       { icone: "🌰", titre: "Griller les amandes", detail: "Faire griller les amandes effilées à sec dans une poêle jusqu'à coloration dorée. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 3 min" },
       { icone: "🥗", titre: "Dresser", detail: "Disposer les haricots. Ajouter les œufs coupés en quartiers, les amandes. Arroser de vinaigrette moutardée.", badge: null }
@@ -6891,7 +6891,7 @@ const recettes = {
     etapes: [
       { icone: "🐙", titre: "Cuire le poulpe", detail: "Plonger le poulpe dans l'eau bouillante avec laurier, sel, grains de poivre. Laisser mijoter. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 1h" },
       { icone: "✂️", titre: "Découper", detail: "Laisser refroidir. Couper les tentacules en rondelles. Réserver les plus belles pour la présentation. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🫙", titre: "Préparer la marinade", detail: "Mélanger huile d'olive, jus de citron, ail, persil, câpres, olives, origan. Assaisonner. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
+      { icone: "🍯", titre: "Préparer la marinade", detail: "Mélanger huile d'olive, jus de citron, ail, persil, câpres, olives, origan. Assaisonner. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
       { icone: "⏳", titre: "Mariner et servir", detail: "Mélanger poulpe et marinade. Laisser reposer 30 min. Servir sur lit de roquette. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 30 min" }
     ]
   },
@@ -6954,7 +6954,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🌾", titre: "Cuire le quinoa", detail: "Rincer le quinoa. Cuire dans 2x son volume d'eau salée. Laisser gonfler 15 min à couvert. Rincer abondamment à l'eau froide.", badge: "⏱ 15 min" },
-      { icone: "🫘", titre: "Rôtir les pois chiches", detail: "Égoutter les pois chiches. Les enrober d'huile, cumin, paprika. Rôtir au four 20 min à 200°C. Préchauffer le four 10 min avant. Chaleur tournante pour un rôtissage uniforme.", badge: "⏱ 20 min" },
+      { icone: "🥜", titre: "Rôtir les pois chiches", detail: "Égoutter les pois chiches. Les enrober d'huile, cumin, paprika. Rôtir au four 20 min à 200°C. Préchauffer le four 10 min avant. Chaleur tournante pour un rôtissage uniforme.", badge: "⏱ 20 min" },
       { icone: "🥚", titre: "Cuire les œufs mollets", detail: "Cuire les œufs 6 min dans l'eau bouillante. Refroidir et écaler délicatement.", badge: "⏱ 6 min" },
       { icone: "🥑", titre: "Assembler le bowl", detail: "Disposer quinoa, pois chiches, avocat tranché, œuf coupé. Napper de sauce tahini citron-ail.", badge: null }
     ]
@@ -7082,7 +7082,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🥔", titre: "Préparer la farce", detail: "Cuire pommes de terre et petits pois. Écraser grossièrement. Ajouter oignons revenus, épices (curry, cumin, coriandre, piment). Mélanger.", badge: null },
-      { icone: "🫓", titre: "Faire la pâte", detail: "Mélanger farine, sel, huile et eau tiède pour former une pâte souple. Pétrir 5 min. Laisser reposer 20 min. Pétrir 10 min à la main ou 7 min au robot — la pâte doit être lisse et élastique.", badge: "⏱ 20 min" },
+      { icone: "🥙", titre: "Faire la pâte", detail: "Mélanger farine, sel, huile et eau tiède pour former une pâte souple. Pétrir 5 min. Laisser reposer 20 min. Pétrir 10 min à la main ou 7 min au robot — la pâte doit être lisse et élastique.", badge: "⏱ 20 min" },
       { icone: "🥟", titre: "Former les samosas", detail: "Abaisser la pâte finement. Découper en cercles. Garnir de farce et plier en triangle. Sceller les bords. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
       { icone: "🔥", titre: "Frire", detail: "Frire dans l'huile chaude (175°C) jusqu'à dorure. Égoutter sur papier absorbant. Température idéale 170-180°C. Test : cube de pain dore en 30s.", badge: "⏱ 4 min" }
     ]
@@ -7116,7 +7116,7 @@ const recettes = {
       { icone: "🍜", titre: "Préparer les ingrédients", detail: "Tremper les vermicelles 5 min. Cuire les crevettes. Râper les carottes. Ciseler herbes et salade. ASTUCE CHEF : râper à la dernière minute pour conserver tous les arômes.", badge: "⏱ 5 min" },
       { icone: "💧", titre: "Tremper les galettes", detail: "Tremper une galette de riz dans l'eau tiède 20 secondes jusqu'à souplesse.", badge: "⏱ 20 sec" },
       { icone: "🌿", titre: "Garnir et rouler", detail: "Disposer crevettes, vermicelles, crudités, herbes au centre. Replier les côtés et rouler serré.", badge: null },
-      { icone: "🫙", titre: "Servir avec la sauce", detail: "Servir avec sauce nuoc-mâm citronnée ou sauce cacahuète. Consommer rapidement.", badge: null }
+      { icone: "🍯", titre: "Servir avec la sauce", detail: "Servir avec sauce nuoc-mâm citronnée ou sauce cacahuète. Consommer rapidement.", badge: null }
     ]
   },
   oeufsCocotte: {
@@ -7210,7 +7210,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🌸", titre: "Faire tremper la gélatine", detail: "Faire tremper les feuilles de gélatine dans l'eau froide 5 min.", badge: "⏱ 5 min" },
-      { icone: "🫙", titre: "Chauffer la crème", detail: "Chauffer crème, sucre et gousse de vanille fendue jusqu'à frémissement. Ne pas bouillir.", badge: "⏱ 5 min" },
+      { icone: "🍯", titre: "Chauffer la crème", detail: "Chauffer crème, sucre et gousse de vanille fendue jusqu'à frémissement. Ne pas bouillir.", badge: "⏱ 5 min" },
       { icone: "🍮", titre: "Incorporer la gélatine", detail: "Hors du feu, incorporer la gélatine essorée. Mélanger. Filtrer. Verser dans les moules. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
       { icone: "❄️", titre: "Réfrigérer", detail: "Réfrigérer au moins 4h. Démouler sur les assiettes. Napper de coulis de fruits rouges.", badge: "⏱ 4h" }
     ]
@@ -7620,10 +7620,10 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Préparer la pâte", detail: "Mixer pois chiches (pas en conserve, trempés crus), oignon, ail, coriandre, cumin, sel. La texture doit être grossière, pas lisse.", badge: null },
+      { icone: "🥜", titre: "Préparer la pâte", detail: "Mixer pois chiches (pas en conserve, trempés crus), oignon, ail, coriandre, cumin, sel. La texture doit être grossière, pas lisse.", badge: null },
       { icone: "🟡", titre: "Former les boulettes", detail: "Former des boulettes de 3 cm. Placer sur plaque huileée.", badge: null },
       { icone: "🔥", titre: "Cuire au four", detail: "Badigeonner légèrement d'huile. Cuire à 200°C en retournant à mi-cuisson.", badge: "⏱ 25 min" },
-      { icone: "🫙", titre: "Servir", detail: "Servir avec sauce tahini, tomates, concombre et salade verte dans un pain pita ou wrap.", badge: null }
+      { icone: "🍯", titre: "Servir", detail: "Servir avec sauce tahini, tomates, concombre et salade verte dans un pain pita ou wrap.", badge: null }
     ]
   },
   smoothievert: {
@@ -7756,7 +7756,7 @@ const recettes = {
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",
-    emoji: "🫘",
+    emoji: "🥜",
     description: "Curry de pois chiches à la tomate — riche, parfumé et 100% végétalien. Garam masala, tomates concassées et lait de coco pour un plat indien express.",
     tableauCurryPois: [
       { nb: 1, pois: "120 g", tomates: "150 g", cremeCoco: "60 ml", oignons: "0.5", curry: "1 c.à.c", ail: "1 gousse", lait: "50 ml" },
@@ -7904,7 +7904,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Faire les galettes", detail: "Mixer pois chiches égouttés, betterave râpée, oignon, ail, cumin, sel. Former 4 galettes. Réfrigérer 15 min.", badge: "⏱ 15 min" },
+      { icone: "🥜", titre: "Faire les galettes", detail: "Mixer pois chiches égouttés, betterave râpée, oignon, ail, cumin, sel. Former 4 galettes. Réfrigérer 15 min.", badge: "⏱ 15 min" },
       { icone: "🔥", titre: "Cuire les galettes", detail: "Faire dorer les galettes à la poêle huilée 4 min par côté à feu moyen. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 8 min" },
       { icone: "🥑", titre: "Préparer la garniture", detail: "Écraser l'avocat avec citron, sel. Préparer tomate, salade, sauce yaourt-ail.", badge: null },
       { icone: "🍔", titre: "Assembler", detail: "Griller les pains. Garnir avec galette, avocat, tomate, salade et sauce. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: null }
@@ -7970,7 +7970,7 @@ const recettes = {
     etapes: [
       { icone: "🫑", titre: "Faire le sofrito", detail: "Faire revenir oignon, poivron rouge et vert, ail dans l'huile d'olive. Ajouter tomates concassées.", badge: "⏱ 10 min" },
       { icone: "🌾", titre: "Ajouter le riz", detail: "Ajouter le riz bomba. Mélanger pour l'enrober. Verser le bouillon chaud avec safran et paprika fumé.", badge: null },
-      { icone: "🫘", titre: "Cuire sans remuer", detail: "Ajouter légumes. Cuire à feu moyen SANS remuer pour former le socarrat.", badge: "⏱ 18 min" },
+      { icone: "🥜", titre: "Cuire sans remuer", detail: "Ajouter légumes. Cuire à feu moyen SANS remuer pour former le socarrat.", badge: "⏱ 18 min" },
       { icone: "🍋", titre: "Reposer et servir", detail: "Couvrir d'aluminium. Laisser reposer 5 min. Servir avec quartiers de citron. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 5 min" }
     ]
   },
@@ -8302,7 +8302,7 @@ const recettes = {
       { icone: "🧅", titre: "Sofrito antillais", detail: "Ajouter oignon, ail, scotch bonnet (avec parcimonie !), thym frais. Faire revenir 5 min.", badge: "⏱ 5 min" },
       { icone: "🍅", titre: "Mouiller", detail: "Ajouter tomates concassées, bouillon de bœuf, sauce Worcestershire, sucre brun. Mélanger.", badge: null },
       { icone: "⏳", titre: "Mijoter longuement", detail: "Couvrir et mijoter à très feu doux 2h30. La viande doit fondre et se détacher de l'os. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 2h30" },
-      { icone: "🫘", titre: "Haricots rouges", detail: "Ajouter les haricots rouges cuits 30 min avant la fin. Servir avec du \"rice and peas\".", badge: null }
+      { icone: "🥜", titre: "Haricots rouges", detail: "Ajouter les haricots rouges cuits 30 min avant la fin. Servir avec du \"rice and peas\".", badge: null }
     ]
   },
   paneertikkamasala: {
@@ -8808,7 +8808,7 @@ const recettes = {
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
-    emoji: "🫛",
+    emoji: "🟢",
     description: "Salade chorizo-fèves — un printemps espagnol dans l'assiette. Fèves fraîches, chorizo doux poêlé, jambon Serrano et feta. Vivifiant.",
     tableauSaladeChorizoFeves: [
       { nb: 1, feves: "150 g", chorizo: "50 g", serrano: "2", feta: "40 g", menthe: "3 c.à.c", huile: "1 c.à.s", citron: "2/7", poivre: "1 pincée" },
@@ -8829,7 +8829,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫛", titre: "Éplucher les fèves", detail: "Écosser les fèves fraîches. Blanchir 1 min, plonger dans l'eau glacée, enlever la deuxième peau (plus tendre !). ASTUCE PRO : eau bouillante salée 2-3 min puis eau glacée. Arrête la cuisson et garde la couleur vive.", badge: "⏱ 10 min" },
+      { icone: "🟢", titre: "Éplucher les fèves", detail: "Écosser les fèves fraîches. Blanchir 1 min, plonger dans l'eau glacée, enlever la deuxième peau (plus tendre !). ASTUCE PRO : eau bouillante salée 2-3 min puis eau glacée. Arrête la cuisson et garde la couleur vive.", badge: "⏱ 10 min" },
       { icone: "🌶️", titre: "Chorizo", detail: "Couper le chorizo doux en rondelles. Le poêler à sec 2 min par face pour libérer l'huile parfumée. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 4 min" },
       { icone: "🥗", titre: "Dresser", detail: "Disposer les fèves, le chorizo et son huile, le jambon Serrano en chiffonnade, la feta émiettée.", badge: null },
       { icone: "🌿", titre: "Finition", detail: "Parsemer de menthe fraîche, arroser d'huile d'olive et jus de citron. Poivre du moulin généreux. Servir tiède.", badge: null }
@@ -9196,7 +9196,7 @@ const recettes = {
     ingredients: {},
     etapes: [
       { icone: "🌶️", titre: "Sauce ranchera", detail: "Mixer tomates, jalapeño, oignon, ail. Cuire en sauce 10 min à feu vif. Saler. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 10 min" },
-      { icone: "🫘", titre: "Haricots", detail: "Faire revenir les haricots noirs avec un peu d'oignon, cumin. Écraser grossièrement. Réserver chaud.", badge: "⏱ 5 min" },
+      { icone: "🥜", titre: "Haricots", detail: "Faire revenir les haricots noirs avec un peu d'oignon, cumin. Écraser grossièrement. Réserver chaud.", badge: "⏱ 5 min" },
       { icone: "🌮", titre: "Tortillas", detail: "Réchauffer les tortillas à sec dans une poêle 30 secondes par face.", badge: null },
       { icone: "🍳", titre: "Œufs sur le plat", detail: "Cuire les œufs sur le plat avec le jaune coulant.", badge: "⏱ 4 min" },
       { icone: "🍽️", titre: "Dresser", detail: "Assiette : tortilla, haricots, sauce ranchera chaude, œufs au plat dessus.", badge: null },
@@ -9615,7 +9615,7 @@ const recettes = {
     base: 6,
     temps: "2h",
     niveau: "⭐⭐ Moyen",
-    emoji: "🫓",
+    emoji: "🥙",
     description: "Pain pita maison — pain plat libanais qui gonfle au four en formant une poche. Parfait pour les sandwichs et mezzés. Magique à voir.",
     tableauPainPita: [
       { nb: 1, farine: "80 g", eau: "50 ml", levure: "2 g", huile: "1 c.à.s", sucre: "1 c.à.c", sel: "1 pincée", semoule: "5 g", sesame: "1 c.à.c" },
@@ -9814,7 +9814,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Tremper haricots", detail: "La veille : tremper les haricots blancs (cocos blancs) et coco rouge dans l'eau froide 12h. ASTUCE : utiliser haricots demi-secs en saison pour gagner du temps.", badge: "⏱ 12h" },
+      { icone: "🥜", titre: "Tremper haricots", detail: "La veille : tremper les haricots blancs (cocos blancs) et coco rouge dans l'eau froide 12h. ASTUCE : utiliser haricots demi-secs en saison pour gagner du temps.", badge: "⏱ 12h" },
       { icone: "🍅", titre: "Bouillon", detail: "Cuire les haricots dans 2L d'eau avec oignon piqué de clous de girofle, bouquet garni 45 min jusqu'à tendreté.", badge: "⏱ 45 min" },
       { icone: "🥬", titre: "Légumes d'été", detail: "Ajouter au bouillon : courgettes en cubes, tomates pelées et concassées, pommes de terre, haricots verts coupés. Cuire 15 min.", badge: "⏱ 15 min" },
       { icone: "🍝", titre: "Pâtes", detail: "Ajouter les petites pâtes (coquillettes ou langues d'oiseau). Cuire 8-10 min.", badge: "⏱ 10 min" },
@@ -10139,10 +10139,10 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Tremper les haricots", detail: "La veille : tremper les haricots noirs dans 3x leur volume d'eau froide 12h. ASTUCE CHEF : cette étape est INDISPENSABLE, elle réduit le temps de cuisson de moitié et améliore la digestion.", badge: "⏱ 12h" },
+      { icone: "🥜", titre: "Tremper les haricots", detail: "La veille : tremper les haricots noirs dans 3x leur volume d'eau froide 12h. ASTUCE CHEF : cette étape est INDISPENSABLE, elle réduit le temps de cuisson de moitié et améliore la digestion.", badge: "⏱ 12h" },
       { icone: "🥓", titre: "Dessaler les viandes", detail: "Si viandes salées (jarret de porc, lard, queue de porc) : dessaler 4h à l'eau froide en changeant l'eau 2-3 fois. ASTUCE : sinon plat trop salé !", badge: "⏱ 4h" },
       { icone: "🥩", titre: "Saisir les viandes", detail: "Égoutter et sécher les viandes. Saisir dans la cocotte avec un peu d'huile. Réserver. Faire revenir oignons, ail.", badge: "⏱ 15 min" },
-      { icone: "🫘", titre: "Mijoter", detail: "Remettre les viandes, ajouter haricots égouttés, eau à hauteur, laurier, sel léger. Couvrir et cuire à TRÈS feu doux 2h30. Remuer toutes les 30 min.", badge: "⏱ 2h30" },
+      { icone: "🥜", titre: "Mijoter", detail: "Remettre les viandes, ajouter haricots égouttés, eau à hauteur, laurier, sel léger. Couvrir et cuire à TRÈS feu doux 2h30. Remuer toutes les 30 min.", badge: "⏱ 2h30" },
       { icone: "🌭", titre: "Ajouter saucisses", detail: "45 min avant la fin : ajouter saucisse fumée (paio si possible) et boudin noir tranchés. ASTUCE : ne pas mixer pour garder la rusticité.", badge: null },
       { icone: "🍚", titre: "Le couvert", detail: "Pendant ce temps : cuire riz blanc parfumé, préparer la farofa (semoule de manioc grillée au beurre + lardons + œuf brouillé), trancher les oranges en demi-rondelles, faire revenir chou frisé émincé à l'ail.", badge: "⏱ 30 min" },
       { icone: "🍊", titre: "Service brésilien", detail: "Servir la feijoada à part dans une grande terrine. Chacun se compose son assiette : riz, feijoada, farofa par-dessus, tranches d'orange (à manger en alternance, ça allège), chou. Caïpirinha en boisson !", badge: null }
@@ -10315,7 +10315,7 @@ const recettes = {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Pois chiches", detail: "IDÉAL : pois chiches secs trempés 12h, cuits 1h à l'eau jusqu'à très tendres. Conserver 1 verre d'eau de cuisson. Sinon : pois chiches en bocal de bonne qualité, réchauffés.", badge: "⏱ 1h ou 5 min" },
+      { icone: "🥜", titre: "Pois chiches", detail: "IDÉAL : pois chiches secs trempés 12h, cuits 1h à l'eau jusqu'à très tendres. Conserver 1 verre d'eau de cuisson. Sinon : pois chiches en bocal de bonne qualité, réchauffés.", badge: "⏱ 1h ou 5 min" },
       { icone: "🍞", titre: "Pain croustillant", detail: "Couper les pains pita en triangles. Toaster au four à 180°C 10 min jusqu'à BIEN dorés et croustillants. ASTUCE CHEF : peuvent aussi être frits dans l'huile pour plus de gourmandise.", badge: "⏱ 10 min" },
       { icone: "🥄", titre: "Sauce yaourt", detail: "Mélanger yaourt grec épais, tahini, ail pilé en purée, jus de citron, sel. Lisser au fouet. Doit être épaisse et crémeuse.", badge: "⏱ 3 min" },
       { icone: "🌿", titre: "Pois chiches parfumés", detail: "Réchauffer les pois chiches dans leur eau avec cumin, ail haché, 1 cs huile d'olive. Goûter, saler. Garder un peu de liquide.", badge: "⏱ 5 min" },
@@ -11015,7 +11015,7 @@ const recettes = {
     etapes: [
       { icone: "🌾", titre: "Cuire le quinoa", detail: "Rincer le quinoa à l'eau froide (TRÈS IMPORTANT : enlève l'amertume). Cuire dans 2x son volume d'eau salée. Couvrir, feu doux 12-15 min jusqu'à absorption. Laisser gonfler 5 min hors du feu.", badge: "⏱ 20 min" },
       { icone: "🐟", titre: "Mariner le saumon", detail: "Mélanger 1 cs sauce soja + 1 cc miel + 1 cc gingembre râpé + zeste citron. Enduire les filets de saumon. Réserver 10 min.", badge: "⏱ 10 min" },
-      { icone: "🫛", titre: "Cuire edamame", detail: "Plonger les edamame congelées dans l'eau bouillante salée 3-4 min. Égoutter, refroidir à l'eau glacée. Écosser.", badge: "⏱ 5 min" },
+      { icone: "🟢", titre: "Cuire edamame", detail: "Plonger les edamame congelées dans l'eau bouillante salée 3-4 min. Égoutter, refroidir à l'eau glacée. Écosser.", badge: "⏱ 5 min" },
       { icone: "🥑", titre: "Préparer les légumes", detail: "Couper avocat en lamelles (arroser de jus de citron pour pas qu'il noircisse). Concombre en demi-lunes. Carottes en julienne ou râpées. Radis tranchés très fins.", badge: "⏱ 8 min" },
       { icone: "🐟", titre: "Cuire le saumon", detail: "Chauffer une poêle bien chaude. Cuire les pavés de saumon côté peau d'abord 4-5 min, puis 2 min sur l'autre côté. Cuisson rosée à cœur idéale.", badge: "⏱ 7 min" },
       { icone: "🥄", titre: "Sauce miso-citron", detail: "Mélanger : 1 cs miso blanc + 2 cs jus de citron + 1 cs huile de sésame + 1 cc miel + 1 cs eau + 1 cc gingembre. Goûter, ajuster.", badge: "⏱ 3 min" },
@@ -12550,7 +12550,7 @@ const recettes = {
       { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 180°C. Préparer 12 caissettes à muffins.", badge: null },
       { icone: "🌾", titre: "Mélanger secs", detail: "Dans un saladier : farine, sucre, levure chimique. Bien fouetter pour aérer.", badge: null },
       { icone: "🥚", titre: "Mélanger liquides", detail: "Dans un autre bol : œufs battus, lait, beurre fondu tiédi, vanille. Fouetter.", badge: null },
-      { icone: "🫶", titre: "Combiner", detail: "Verser les liquides sur les secs et mélanger à la spatule JUSTE assez (grumeaux ok).", badge: "🔑 Sous-mélanger" },
+      { icone: "❤️", titre: "Combiner", detail: "Verser les liquides sur les secs et mélanger à la spatule JUSTE assez (grumeaux ok).", badge: "🔑 Sous-mélanger" },
       { icone: "🍫", titre: "Casser les Kinder", detail: "Casser 4 Kinder Bueno en gros morceaux. Garder 2 entiers pour la déco.", badge: null },
       { icone: "🥄", titre: "Garnir", detail: "Verser la pâte aux 2/3 dans les caissettes, ajouter morceaux de Kinder au centre, recouvrir.", badge: null },
       { icone: "✨", titre: "Topping", detail: "Saupoudrer le dessus de pépites de chocolat et déposer ½ Kinder Bueno par muffin.", badge: null },
@@ -12573,7 +12573,7 @@ const recettes = {
       { icone: "🍫", titre: "Découper les Mars", detail: "Couper 5 Mars en cubes (~1cm). Garder 1 Mars pour le topping.", badge: null },
       { icone: "🌾", titre: "Mélanger secs", detail: "Farine, sucre, levure, cacao. Bien fouetter.", badge: null },
       { icone: "🥚", titre: "Mélanger liquides", detail: "Œufs, lait, beurre fondu, vanille.", badge: null },
-      { icone: "🫶", titre: "Combiner", detail: "Verser le liquide sur le sec, mélanger juste assez. Ajouter les cubes de Mars.", badge: "🔑 Pas trop mélanger" },
+      { icone: "❤️", titre: "Combiner", detail: "Verser le liquide sur le sec, mélanger juste assez. Ajouter les cubes de Mars.", badge: "🔑 Pas trop mélanger" },
       { icone: "🥄", titre: "Garnir", detail: "Caissettes (2/3). Faire un puits, mettre 1 c.à.c de caramel salé, recouvrir.", badge: null },
       { icone: "✨", titre: "Topping", detail: "Poser une rondelle de Mars sur chaque muffin.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C.", badge: "⏱ 20-22 min" }
@@ -12595,7 +12595,7 @@ const recettes = {
       { icone: "🍫", titre: "Concasser Kit Kat", detail: "Casser 5 Kit Kat en petits morceaux. Garder 3 Kit Kat entiers (cassés en demi) pour le topping.", badge: null },
       { icone: "🌾", titre: "Mélanger secs", detail: "Farine, sucre, levure, cacao. Bien fouetter.", badge: null },
       { icone: "🥚", titre: "Mélanger liquides", detail: "Œufs, lait, beurre fondu, vanille.", badge: null },
-      { icone: "🫶", titre: "Combiner", detail: "Mélanger sec + liquide. Ajouter morceaux de Kit Kat et chocolat haché.", badge: null },
+      { icone: "❤️", titre: "Combiner", detail: "Mélanger sec + liquide. Ajouter morceaux de Kit Kat et chocolat haché.", badge: null },
       { icone: "🥄", titre: "Garnir", detail: "Verser dans caissettes (2/3 hauteur).", badge: null },
       { icone: "✨", titre: "Topping", detail: "Planter 2 demi-Kit Kat verticalement sur chaque muffin.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C.", badge: "⏱ 20-22 min" }
@@ -12616,7 +12616,7 @@ const recettes = {
       { icone: "🔥", titre: "Préchauffer", detail: "Four à 180°C, caissettes prêtes.", badge: null },
       { icone: "🥥", titre: "Mélanger secs", detail: "Farine, sucre, levure, noix de coco râpée. Bien fouetter.", badge: null },
       { icone: "🥚", titre: "Mélanger liquides", detail: "Œufs, lait, beurre fondu, vanille.", badge: null },
-      { icone: "🫶", titre: "Combiner", detail: "Mélanger sec + liquide. Ajouter amandes effilées et chocolat blanc en morceaux.", badge: "🔑 Pas trop mélanger" },
+      { icone: "❤️", titre: "Combiner", detail: "Mélanger sec + liquide. Ajouter amandes effilées et chocolat blanc en morceaux.", badge: "🔑 Pas trop mélanger" },
       { icone: "🥄", titre: "Garnir", detail: "Verser 1/3 dans la caissette. Enfoncer 1 Raffaello entier au centre. Recouvrir.", badge: null },
       { icone: "✨", titre: "Topping", detail: "Saupoudrer de noix de coco râpée et déposer une amande effilée sur le dessus.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C. Couleur doit rester pâle.", badge: "⏱ 20-22 min" }
@@ -12639,7 +12639,7 @@ const recettes = {
       { icone: "🥜", titre: "Concasser cacahuètes", detail: "Concasser grossièrement les cacahuètes.", badge: null },
       { icone: "🌾", titre: "Mélanger secs", detail: "Farine, sucre, levure, cacao. Bien fouetter.", badge: null },
       { icone: "🥚", titre: "Mélanger liquides", detail: "Œufs, lait, beurre fondu, vanille.", badge: null },
-      { icone: "🫶", titre: "Combiner", detail: "Mélanger sec + liquide. Ajouter cubes de Snickers + cacahuètes concassées.", badge: null },
+      { icone: "❤️", titre: "Combiner", detail: "Mélanger sec + liquide. Ajouter cubes de Snickers + cacahuètes concassées.", badge: null },
       { icone: "🥄", titre: "Garnir", detail: "Verser dans caissettes (2/3). Faire un puits, déposer 1 c.à.c de caramel salé, recouvrir.", badge: null },
       { icone: "✨", titre: "Topping", detail: "Saupoudrer cacahuètes concassées + rondelle de Snickers.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C.", badge: "⏱ 20-22 min" }
@@ -12661,7 +12661,7 @@ const recettes = {
       { icone: "🍪", titre: "Concasser Oreo", detail: "Casser 8 Oreo en gros morceaux. Garder 4 Oreo entiers (cassés en deux) pour la déco.", badge: null },
       { icone: "🌾", titre: "Mélanger secs", detail: "Farine, sucre, levure. Bien fouetter pour aérer.", badge: null },
       { icone: "🥚", titre: "Mélanger liquides", detail: "Œufs, lait, beurre fondu, vanille.", badge: null },
-      { icone: "🫶", titre: "Combiner", detail: "Sec + liquide. Mélanger juste. Ajouter morceaux d'Oreo + chocolat blanc en morceaux.", badge: "🔑 Sous-mélanger" },
+      { icone: "❤️", titre: "Combiner", detail: "Sec + liquide. Mélanger juste. Ajouter morceaux d'Oreo + chocolat blanc en morceaux.", badge: "🔑 Sous-mélanger" },
       { icone: "🥄", titre: "Garnir", detail: "Verser dans caissettes (2/3).", badge: null },
       { icone: "✨", titre: "Topping", detail: "Planter 1/2 Oreo verticalement sur chaque muffin.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Enfourner 20-22 min à 180°C. La pâte doit rester claire.", badge: "⏱ 20-22 min" }

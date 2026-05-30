@@ -31,6 +31,7 @@ async function chargerStatsAdminComplet() {
     try {
       const presSnap = await _db.collection("presence").get();
       enLigne = _calculerEnLigne(presSnap.docs.map(d => d.data()));
+      nettoyerPresence(presSnap); // 🧹 ménage best-effort (fire-and-forget)
     } catch (e) {
       console.warn("⚠️ Présence indisponible :", e?.message);
     }
@@ -387,4 +388,33 @@ function demarrerRefreshEnLigne() {
     }
     majUtilisateursEnLigne();
   }, 30 * 1000);
+}
+
+// 🧹 Nettoyage des docs de présence obsolètes (> 1 jour) — best-effort.
+// Le compteur "en ligne" reste juste même sans ménage, mais ça évite que la
+// collection "presence" grossisse indéfiniment. Lancé au chargement de l'admin.
+async function nettoyerPresence(docsSnap) {
+  try {
+    if (!docsSnap || typeof docsSnap.forEach !== "function") return;
+    const SEUIL_MS = 24 * 60 * 60 * 1000; // 1 jour
+    const now = Date.now();
+    const aSupprimer = [];
+    docsSnap.forEach(doc => {
+      const d = doc.data() || {};
+      let ts = (d.lastSeen && typeof d.lastSeen.toMillis === "function")
+        ? d.lastSeen.toMillis()
+        : (typeof d.maj === "number" ? d.maj : null);
+      if (ts === null || (now - ts) > SEUIL_MS) aSupprimer.push(doc.ref);
+    });
+    if (aSupprimer.length === 0) return;
+    // Suppression par lots (limite batch Firestore = 500)
+    for (let i = 0; i < aSupprimer.length; i += 400) {
+      const batch = _db.batch();
+      aSupprimer.slice(i, i + 400).forEach(ref => batch.delete(ref));
+      await batch.commit();
+    }
+    console.log(`🧹 [Présence] ${aSupprimer.length} doc(s) obsolète(s) supprimé(s)`);
+  } catch (e) {
+    console.warn("⚠️ Nettoyage présence :", e?.message);
+  }
 }
