@@ -108,6 +108,33 @@ function lcToggleRecette(cle, btn) {
   lcSauvegarder();
 }
 
+// v258.14 : ajoute UNE recette (depuis sa fiche) à la liste de courses intelligente.
+// Remplace l'ancien bouton « Liste de courses » qui ne faisait que ré-afficher les
+// ingrédients déjà visibles sur la fiche.
+function ajouterRecetteAuxCourses(cle) {
+  if (!window.userProfile) {
+    if (typeof afficherToast === "function") afficherToast("⚠️ Connecte-toi pour utiliser la liste de courses");
+    return;
+  }
+  if (typeof recettes !== "undefined" && !recettes[cle]) return;
+  if (!window.userProfile.listeCourses) window.userProfile.listeCourses = [];
+  const liste = window.userProfile.listeCourses;
+  // Nombre de personnes : valeur affichée sur la fiche, sinon foyer, sinon 4
+  const foyer = window.userProfile.foyer || {};
+  const totalFoyer = (foyer.adultes || 0) + (foyer.ados || 0) + (foyer.enfants || 0) + (foyer.bebes || foyer.bébés || 0);
+  const inputP = document.getElementById("personnes");
+  const nb = (inputP && parseInt(inputP.value)) || totalFoyer || 4;
+  const i = liste.findIndex(p => p.cle === cle);
+  if (i >= 0) {
+    liste[i].personnes = nb;
+    if (typeof afficherToast === "function") afficherToast("🛒 Déjà dans ta liste (quantité mise à jour)");
+  } else {
+    liste.push({ cle, personnes: nb });
+    if (typeof afficherToast === "function") afficherToast("🛒 Ajouté à ta liste de courses");
+  }
+  if (typeof lcSauvegarder === "function") lcSauvegarder();
+}
+
 async function lcSauvegarder() {
   if (!window.currentUser || !window.userProfile) return;
   try {

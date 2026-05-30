@@ -693,8 +693,8 @@ function htmlPrixCalories(nom, quantite) {
               </div>
               ${nutriHtml}
             </div>
-            <button class="btn-courses-recette" onclick="afficherCoursesRecette('${nom}', ${quantite})">
-              🛒 Liste de courses
+            <button class="btn-courses-recette" onclick="ajouterRecetteAuxCourses('${nom}')">
+              🛒 Ajouter aux courses
             </button>
             <div class="courses-recette-bloc" id="courses-recette-${nom}" style="display:none"></div>
           `;
@@ -708,8 +708,8 @@ function htmlPrixCalories(nom, quantite) {
   // Si pas d'entrée prixCalories : on affiche QUAND MÊME le bouton "Liste de courses"
   if (!pc) {
     return `
-      <button class="btn-courses-recette" onclick="afficherCoursesRecette('${nom}', ${quantite})">
-        🛒 Liste de courses
+      <button class="btn-courses-recette" onclick="ajouterRecetteAuxCourses('${nom}')">
+        🛒 Ajouter aux courses
       </button>
       <div class="courses-recette-bloc" id="courses-recette-${nom}" style="display:none"></div>
     `;
@@ -744,8 +744,8 @@ function htmlPrixCalories(nom, quantite) {
         <div class="pc-label">Par ${pc.unite}</div>
       </div>
     </div>
-    <button class="btn-courses-recette" onclick="afficherCoursesRecette('${nom}', ${quantite})">
-      🛒 Liste de courses
+    <button class="btn-courses-recette" onclick="ajouterRecetteAuxCourses('${nom}')">
+      🛒 Ajouter aux courses
     </button>
     <div class="courses-recette-bloc" id="courses-recette-${nom}" style="display:none"></div>
   `;
