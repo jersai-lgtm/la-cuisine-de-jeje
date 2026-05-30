@@ -95,7 +95,7 @@ gtag('config', 'G-390C5MY2SS');
 <!-- BARRE DE RECHERCHE -->
 <div class="search-bar">
   <span class="search-icon">🔍</span>
-  <input type="text" id="search-input" placeholder="Rechercher une recette, ingrédient, cocktail..." oninput="rechercherRecette(this.value)" autocomplete="off">
+  <input type="text" id="search-input" placeholder="Rechercher une recette, ingrédient, cocktail..." oninput="rechercherRecette(this.value)" onkeydown="if(event.key==='Enter'){event.preventDefault();validerRecherche();}" autocomplete="off">
   <button class="search-clear" id="search-clear" onclick="viderRecherche()" style="display:none">✕</button>
   <!-- Dropdown de suggestions auto-complétion -->
   <div class="search-suggestions" id="search-suggestions" style="display:none"></div>
@@ -5327,6 +5327,306 @@ gtag('config', 'G-390C5MY2SS');
       </div>
     </div>
   </div>
+<div class="carte" data-cat="entrees" data-pays="france" onclick="ouvrirFiche('oeufmayo', 'calc-oeufmayo')">
+    <img src="images/oeufmayo.webp" alt="Œufs mayonnaise" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥚 Œufs mayonnaise</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-oeufmayo', -1, 'oeufmayo')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-oeufmayo" onchange="onInputCalcChange('calc-oeufmayo', 'oeufmayo')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-oeufmayo', 1, 'oeufmayo')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="entrees" data-pays="italie" onclick="ouvrirFiche('melonjambon', 'calc-melonjambon')">
+    <img src="images/melonjambon.webp" alt="Melon & jambon cru" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍈 Melon & jambon cru</h2>
+      <p>⏱ 10 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-melonjambon', -1, 'melonjambon')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-melonjambon" onchange="onInputCalcChange('calc-melonjambon', 'melonjambon')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-melonjambon', 1, 'melonjambon')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="entrees" data-pays="france" onclick="ouvrirFiche('feuilletechevremiel', 'calc-feuilletechevremiel')">
+    <img src="images/feuilletechevremiel.webp" alt="Feuilletés chèvre-miel" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🧀 Feuilletés chèvre-miel</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-feuilletechevremiel', -1, 'feuilletechevremiel')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-feuilletechevremiel" onchange="onInputCalcChange('calc-feuilletechevremiel', 'feuilletechevremiel')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-feuilletechevremiel', 1, 'feuilletechevremiel')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="entrees" data-pays="france" onclick="ouvrirFiche('escargots', 'calc-escargots')">
+    <img src="images/escargots.webp" alt="Escargots de Bourgogne" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🐌 Escargots de Bourgogne</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-escargots', -1, 'escargots')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-escargots" onchange="onInputCalcChange('calc-escargots', 'escargots')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-escargots', 1, 'escargots')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="entrees" data-pays="france" onclick="ouvrirFiche('oeufsmeurette', 'calc-oeufsmeurette')">
+    <img src="images/oeufsmeurette.webp" alt="Œufs en meurette" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍷 Œufs en meurette</h2>
+      <p>⏱ 45 min • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-oeufsmeurette', -1, 'oeufsmeurette')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-oeufsmeurette" onchange="onInputCalcChange('calc-oeufsmeurette', 'oeufsmeurette')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-oeufsmeurette', 1, 'oeufsmeurette')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="salades" data-pays="usa" onclick="ouvrirFiche('coleslaw', 'calc-coleslaw')">
+    <img src="images/coleslaw.webp" alt="Coleslaw" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥬 Coleslaw</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-coleslaw', -1, 'coleslaw')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-coleslaw" onchange="onInputCalcChange('calc-coleslaw', 'coleslaw')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-coleslaw', 1, 'coleslaw')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="salades" data-pays="usa" onclick="ouvrirFiche('saladewaldorf', 'calc-saladewaldorf')">
+    <img src="images/saladewaldorf.webp" alt="Salade Waldorf" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍎 Salade Waldorf</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-saladewaldorf', -1, 'saladewaldorf')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladewaldorf" onchange="onInputCalcChange('calc-saladewaldorf', 'saladewaldorf')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-saladewaldorf', 1, 'saladewaldorf')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="salades" data-pays="france" onclick="ouvrirFiche('saladebetteravechevre', 'calc-saladebetteravechevre')">
+    <img src="images/saladebetteravechevre.webp" alt="Salade betterave & chèvre" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🧀 Salade betterave & chèvre</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-saladebetteravechevre', -1, 'saladebetteravechevre')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladebetteravechevre" onchange="onInputCalcChange('calc-saladebetteravechevre', 'saladebetteravechevre')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-saladebetteravechevre', 1, 'saladebetteravechevre')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="salades" data-pays="italie" onclick="ouvrirFiche('saladefiguejambon', 'calc-saladefiguejambon')">
+    <img src="images/saladefiguejambon.webp" alt="Salade figues & jambon cru" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍖 Salade figues & jambon cru</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-saladefiguejambon', -1, 'saladefiguejambon')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladefiguejambon" onchange="onInputCalcChange('calc-saladefiguejambon', 'saladefiguejambon')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-saladefiguejambon', 1, 'saladefiguejambon')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="salades" data-pays="italie" onclick="ouvrirFiche('saladeroquetteparmesan', 'calc-saladeroquetteparmesan')">
+    <img src="images/saladeroquetteparmesan.webp" alt="Salade roquette-parmesan" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🌿 Salade roquette-parmesan</h2>
+      <p>⏱ 10 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-saladeroquetteparmesan', -1, 'saladeroquetteparmesan')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-saladeroquetteparmesan" onchange="onInputCalcChange('calc-saladeroquetteparmesan', 'saladeroquetteparmesan')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-saladeroquetteparmesan', 1, 'saladeroquetteparmesan')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="pizzas" data-pays="italie" onclick="ouvrirFiche('pizzamarinara', 'calc-pizzamarinara')">
+    <img src="images/pizzamarinara.webp" alt="Pizza marinara" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍅 Pizza marinara</h2>
+      <p>⏱ 20 min + repos • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-pizzamarinara', -1, 'pizzamarinara')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pizzamarinara" onchange="onInputCalcChange('calc-pizzamarinara', 'pizzamarinara')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-pizzamarinara', 1, 'pizzamarinara')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="pizzas" data-pays="italie" onclick="ouvrirFiche('pizzanapolitaine', 'calc-pizzanapolitaine')">
+    <img src="images/pizzanapolitaine.webp" alt="Pizza napolitaine" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🐟 Pizza napolitaine</h2>
+      <p>⏱ 20 min + repos • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-pizzanapolitaine', -1, 'pizzanapolitaine')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pizzanapolitaine" onchange="onInputCalcChange('calc-pizzanapolitaine', 'pizzanapolitaine')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-pizzanapolitaine', 1, 'pizzanapolitaine')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="pizzas" data-pays="italie" onclick="ouvrirFiche('pizzaburrata', 'calc-pizzaburrata')">
+    <img src="images/pizzaburrata.webp" alt="Pizza burrata" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🧀 Pizza burrata</h2>
+      <p>⏱ 20 min + repos • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-pizzaburrata', -1, 'pizzaburrata')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pizzaburrata" onchange="onInputCalcChange('calc-pizzaburrata', 'pizzaburrata')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-pizzaburrata', 1, 'pizzaburrata')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="pizzas" data-pays="italie" onclick="ouvrirFiche('pizzamortadelle', 'calc-pizzamortadelle')">
+    <img src="images/pizzamortadelle.webp" alt="Pizza mortadelle-pistache" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🌰 Pizza mortadelle-pistache</h2>
+      <p>⏱ 20 min + repos • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-pizzamortadelle', -1, 'pizzamortadelle')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-pizzamortadelle" onchange="onInputCalcChange('calc-pizzamortadelle', 'pizzamortadelle')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-pizzamortadelle', 1, 'pizzamortadelle')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="boulangerie" data-pays="france" onclick="ouvrirFiche('fougasse', 'calc-fougasse')">
+    <img src="images/fougasse.webp" alt="Fougasse aux olives" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🫒 Fougasse aux olives</h2>
+      <p>⏱ 30 min + repos • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-fougasse', -1, 'fougasse')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-fougasse" onchange="onInputCalcChange('calc-fougasse', 'fougasse')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-fougasse', 1, 'fougasse')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="boulangerie" data-pays="france" onclick="ouvrirFiche('painauxraisins', 'calc-painauxraisins')">
+    <img src="images/painauxraisins.webp" alt="Pain aux raisins" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🌀 Pain aux raisins</h2>
+      <p>⏱ 40 min + repos • ⭐⭐⭐ Difficile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-painauxraisins', -1, 'painauxraisins')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-painauxraisins" onchange="onInputCalcChange('calc-painauxraisins', 'painauxraisins')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-painauxraisins', 1, 'painauxraisins')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="boulangerie" data-pays="france" onclick="ouvrirFiche('chaussonpommes', 'calc-chaussonpommes')">
+    <img src="images/chaussonpommes.webp" alt="Chausson aux pommes" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍎 Chausson aux pommes</h2>
+      <p>⏱ 35 min • ⭐⭐ Moyen</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-chaussonpommes', -1, 'chaussonpommes')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-chaussonpommes" onchange="onInputCalcChange('calc-chaussonpommes', 'chaussonpommes')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-chaussonpommes', 1, 'chaussonpommes')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="boulangerie" data-pays="italie" onclick="ouvrirFiche('ciabatta', 'calc-ciabatta')">
+    <img src="images/ciabatta.webp" alt="Ciabatta" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥖 Ciabatta</h2>
+      <p>⏱ 30 min + repos • ⭐⭐⭐ Difficile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-ciabatta', -1, 'ciabatta')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-ciabatta" onchange="onInputCalcChange('calc-ciabatta', 'ciabatta')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-ciabatta', 1, 'ciabatta')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="encas" data-pays="usa" onclick="ouvrirFiche('bagelsaumon', 'calc-bagelsaumon')">
+    <img src="images/bagelsaumon.webp" alt="Bagel saumon" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥯 Bagel saumon</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-bagelsaumon', -1, 'bagelsaumon')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-bagelsaumon" onchange="onInputCalcChange('calc-bagelsaumon', 'bagelsaumon')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-bagelsaumon', 1, 'bagelsaumon')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="encas" data-pays="usa" onclick="ouvrirFiche('clubsandwich', 'calc-clubsandwich')">
+    <img src="images/clubsandwich.webp" alt="Club sandwich" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥪 Club sandwich</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-clubsandwich', -1, 'clubsandwich')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-clubsandwich" onchange="onInputCalcChange('calc-clubsandwich', 'clubsandwich')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-clubsandwich', 1, 'clubsandwich')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="encas" data-pays="italie" onclick="ouvrirFiche('paninimozza', 'calc-paninimozza')">
+    <img src="images/paninimozza.webp" alt="Panini tomate-mozza" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🫓 Panini tomate-mozza</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-paninimozza', -1, 'paninimozza')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-paninimozza" onchange="onInputCalcChange('calc-paninimozza', 'paninimozza')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-paninimozza', 1, 'paninimozza')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="encas" data-pays="usa" onclick="ouvrirFiche('nuggetspoulet', 'calc-nuggetspoulet')">
+    <img src="images/nuggetspoulet.webp" alt="Nuggets de poulet maison" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍗 Nuggets de poulet maison</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-nuggetspoulet', -1, 'nuggetspoulet')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-nuggetspoulet" onchange="onInputCalcChange('calc-nuggetspoulet', 'nuggetspoulet')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-nuggetspoulet', 1, 'nuggetspoulet')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="healthy" data-pays="usa" onclick="ouvrirFiche('avocadotoast', 'calc-avocadotoast')">
+    <img src="images/avocadotoast.webp" alt="Tartine avocat & œuf poché" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥑 Tartine avocat & œuf poché</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-avocadotoast', -1, 'avocadotoast')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-avocadotoast" onchange="onInputCalcChange('calc-avocadotoast', 'avocadotoast')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-avocadotoast', 1, 'avocadotoast')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="healthy" data-pays="usa" onclick="ouvrirFiche('chiapudding', 'calc-chiapudding')">
+    <img src="images/chiapudding.webp" alt="Chia pudding" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥣 Chia pudding</h2>
+      <p>⏱ 5 min + repos • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-chiapudding', -1, 'chiapudding')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-chiapudding" onchange="onInputCalcChange('calc-chiapudding', 'chiapudding')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-chiapudding', 1, 'chiapudding')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="carte" data-cat="healthy" data-pays="monde" onclick="ouvrirFiche('wrapveggie', 'calc-wrapveggie')">
+    <img src="images/wrapveggie.webp" alt="Wrap végétarien" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🌯 Wrap végétarien</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+      <div class="carte-calc" onclick="event.stopPropagation()">
+        <button class="calc-btn-minus" onclick="changerPersonnes('calc-wrapveggie', -1, 'wrapveggie')" aria-label="Moins une personne">−</button>
+        <input type="number" value="4" min="1" max="15" class="calc-input" id="calc-wrapveggie" onchange="onInputCalcChange('calc-wrapveggie', 'wrapveggie')" onclick="this.select()">
+        <button class="calc-btn-plus" onclick="changerPersonnes('calc-wrapveggie', 1, 'wrapveggie')" aria-label="Plus une personne">+</button>
+      </div>
+    </div>
+  </div>
   <div class="carte" data-cat="desserts" data-pays="mexique" onclick="ouvrirFiche('treslecheas', 'calc-treslecheas')">
     <img src="images/treslecheas.webp" alt="Tres Leches" onerror="this.style.display='none'">
     <div class="carte-info">
@@ -6374,23 +6674,23 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/allergenes.js?v=258-23"></script>
-<script src="js/exceptions.js?v=258-23"></script>
-<script src="js/recettes.js?v=258-23"></script>
-<script src="js/recettes_cocktails.js?v=258-23"></script>
-<script src="js/recettes_mocktails.js?v=258-23"></script>
-<script src="js/ingredients_prix.js?v=258-23"></script>
-<script src="js/tables.js?v=258-23"></script>
-<script src="js/app.js?v=258-23"></script>
-<script src="js/app_avis.js?v=258-23"></script>
-<script src="js/app_admin.js?v=258-23"></script>
-<script src="js/app_menu.js?v=258-23"></script>
-<script src="js/app_courses_impr.js?v=258-23"></script>
-<script src="js/app_recherche.js?v=258-23"></script>
-<script src="js/app_garde_manger.js?v=258-23"></script>
-<script src="js/app_modal_confirm.js?v=258-23"></script>
-<script src="js/app_courses.js?v=258-23"></script>
-<script src="js/app_stats.js?v=258-23"></script>
+<script src="js/allergenes.js?v=258-26"></script>
+<script src="js/exceptions.js?v=258-26"></script>
+<script src="js/recettes.js?v=258-26"></script>
+<script src="js/recettes_cocktails.js?v=258-26"></script>
+<script src="js/recettes_mocktails.js?v=258-26"></script>
+<script src="js/ingredients_prix.js?v=258-26"></script>
+<script src="js/tables.js?v=258-26"></script>
+<script src="js/app.js?v=258-26"></script>
+<script src="js/app_avis.js?v=258-26"></script>
+<script src="js/app_admin.js?v=258-26"></script>
+<script src="js/app_menu.js?v=258-26"></script>
+<script src="js/app_courses_impr.js?v=258-26"></script>
+<script src="js/app_recherche.js?v=258-26"></script>
+<script src="js/app_garde_manger.js?v=258-26"></script>
+<script src="js/app_modal_confirm.js?v=258-26"></script>
+<script src="js/app_courses.js?v=258-26"></script>
+<script src="js/app_stats.js?v=258-26"></script>
 
 
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v259-1";
+const CACHE_NAME = "cuisine-jeje-v259-2";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
@@ -78,6 +78,31 @@ const FICHIERS = [
   "/la-cuisine-de-jeje/images/tortillaespagnola.webp",
   "/la-cuisine-de-jeje/images/croquetasjamon.webp",
   "/la-cuisine-de-jeje/images/patatasbravas.webp",
+"/la-cuisine-de-jeje/images/oeufmayo.webp",
+  "/la-cuisine-de-jeje/images/melonjambon.webp",
+  "/la-cuisine-de-jeje/images/feuilletechevremiel.webp",
+  "/la-cuisine-de-jeje/images/escargots.webp",
+  "/la-cuisine-de-jeje/images/oeufsmeurette.webp",
+  "/la-cuisine-de-jeje/images/coleslaw.webp",
+  "/la-cuisine-de-jeje/images/saladewaldorf.webp",
+  "/la-cuisine-de-jeje/images/saladebetteravechevre.webp",
+  "/la-cuisine-de-jeje/images/saladefiguejambon.webp",
+  "/la-cuisine-de-jeje/images/saladeroquetteparmesan.webp",
+  "/la-cuisine-de-jeje/images/pizzamarinara.webp",
+  "/la-cuisine-de-jeje/images/pizzanapolitaine.webp",
+  "/la-cuisine-de-jeje/images/pizzaburrata.webp",
+  "/la-cuisine-de-jeje/images/pizzamortadelle.webp",
+  "/la-cuisine-de-jeje/images/fougasse.webp",
+  "/la-cuisine-de-jeje/images/painauxraisins.webp",
+  "/la-cuisine-de-jeje/images/chaussonpommes.webp",
+  "/la-cuisine-de-jeje/images/ciabatta.webp",
+  "/la-cuisine-de-jeje/images/bagelsaumon.webp",
+  "/la-cuisine-de-jeje/images/clubsandwich.webp",
+  "/la-cuisine-de-jeje/images/paninimozza.webp",
+  "/la-cuisine-de-jeje/images/nuggetspoulet.webp",
+  "/la-cuisine-de-jeje/images/avocadotoast.webp",
+  "/la-cuisine-de-jeje/images/chiapudding.webp",
+  "/la-cuisine-de-jeje/images/wrapveggie.webp",
 ];
 
 // Installation : mise en cache de tous les fichiers
