@@ -242,10 +242,10 @@ function scorerCartes(qNorm) {
       if (motsNom.includes(mq)) score += 100;
       // Match préfixe d'un mot du nom (au moins 3 chars pour éviter "co" = "coq", "coco", "cot"...)
       else if (mq.length >= 3 && motsNom.some(mn => mn.startsWith(mq))) score += 50;
-      // Match dans les ingrédients (exact uniquement, pas de fuzzy là)
-      else if (mq.length >= 4 && entry.ingredientsNorm.some(i => i === mq)) score += 40;
-      // Match préfixe ingrédient (≥4 chars pour ne pas matcher "cock"→"coco")
-      else if (mq.length >= 4 && entry.ingredientsNorm.some(i => i.startsWith(mq))) score += 25;
+      // Match dans les ingrédients (exact)
+      else if (mq.length >= 3 && entry.ingredientsNorm.some(i => i === mq)) score += 40;
+      // Match préfixe ingrédient (≥3 chars, cohérent avec le préfixe de nom)
+      else if (mq.length >= 3 && entry.ingredientsNorm.some(i => i.startsWith(mq))) score += 25;
       // Fuzzy match SUR LE NOM uniquement (faute de frappe sur nom recette)
       else if (mq.length >= 5 && motsNom.some(mn => fuzzyMatch(mq, mn))) score += 30;
     });
