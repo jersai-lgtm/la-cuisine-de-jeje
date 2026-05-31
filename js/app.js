@@ -1796,6 +1796,20 @@ function getNiveauFamille(cle) {
   const estSansAlcool = /sans alcool|mocktail|virgin/.test(texte) || /mocktail|virgin/.test(cle.toLowerCase());
   if (estSansAlcool) texte = texte.replace(/alcool/g, "");
 
+  // Neutraliser les faux positifs (le mot interdit est contenu dans un terme sans danger réel)
+  texte = texte
+    .replace(/saucetartare|sauce tartare/g, "sauce")            // mayo, aucun cru (clé collée + description)
+    .replace(/beurre noisette/g, "beurre")                      // beurre bruni, pas le fruit à coque
+    .replace(/pommes? noisette/g, "pommes")                     // pommes noisette, pas le fruit à coque
+    .replace(/noix de coco/g, "coco")                           // coco, pas un fruit à coque
+    .replace(/noix de muscade/g, "muscade")                     // épice
+    .replace(/noix de (saint[- ]?jacques|st[- ]?jacques)/g, "saint-jacques") // coquille st-jacques
+    .replace(/tarte flamb[ée]e|flammek?ueche|flammenkueche/g, "tarte alsacienne"); // aucun alcool
+  // "sushi" cité en suggestion sur un plat cuit (clé non-sushi) → on ne le compte pas
+  if (!cle.toLowerCase().includes("sushi")) texte = texte.replace(/sushi/g, "");
+  // "sake" parasite dans une clé de dosa (galette indienne) — rien à voir avec l'alcool
+  if (cle.toLowerCase().includes("dosa")) texte = texte.replace(/sake/g, "");
+
   if (profil.hasBebe) {
     const mot = MOTS_BEBE.find(m => texte.includes(m));
     if (mot) return { niveau: "bebe", mot, raison: RAISONS_FAMILLE[mot] || mot };

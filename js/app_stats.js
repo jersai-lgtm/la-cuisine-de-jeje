@@ -530,6 +530,25 @@ function remplirRecords(s) {
       detail: "Vues / consultées",
     });
   }
+
+  // Menus générés (équivalent menu de "Recettes explorées")
+  if (s.nbMenusGeneres > 0) {
+    records.push({
+      icon: "📅",
+      label: "Menus générés",
+      valeur: s.nbMenusGeneres + " menu" + (s.nbMenusGeneres > 1 ? "s" : ""),
+      detail: "Créés au planificateur",
+    });
+  }
+  // Menus favoris (menus que tu as sauvegardés)
+  if (s.nbMenusFavoris > 0) {
+    records.push({
+      icon: "💝",
+      label: "Menus favoris",
+      valeur: s.nbMenusFavoris + " menu" + (s.nbMenusFavoris > 1 ? "s" : ""),
+      detail: "Sauvegardés",
+    });
+  }
   
   // v242 : Streak cuisine
   if (s.streakActuel > 0) {
