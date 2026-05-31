@@ -49,25 +49,17 @@ function detecterAllergenesRecette(texte) {
 function appliquerPreferencesVisuelles() {
   const prefs = window.userProfile?.preferences || null;
 
-  // Mots à griser (régimes + allergies) et allergies PERSO (label -> mots) pour l'alerte rouge
+  // Allergènes de l'utilisateur connecté : pour la mise en avant (rouge) + le grisage
   const motsExclus = new Set();
-  const allergiesPerso = new Map(); // label affiché -> [mots à repérer]
+  const allergenesPerso = new Set();
   if (prefs) {
     const allergies = prefs.allergies || [];
     const regimes = prefs.regimes || [];
     const allergiesCustom = prefs.allergiesCustom || [];
     [...allergies, ...regimes].forEach(p => (ALLERGENES_MOTS[p] || []).forEach(m => motsExclus.add(m.toLowerCase())));
     allergiesCustom.forEach(m => motsExclus.add(m.toLowerCase()));
-    // Allergies majeures cochées
-    allergies.forEach(a => {
-      const label = ALLERGENES_MAJEURS[a] || a;
-      allergiesPerso.set(label, (ALLERGENES_MOTS[a] || [a]).map(m => m.toLowerCase()));
-    });
-    // Régimes sans-gluten / sans-lactose = allergie de fait
-    if (regimes.includes('sans-gluten')) allergiesPerso.set('Gluten', (ALLERGENES_MOTS['gluten'] || []).map(m => m.toLowerCase()));
-    if (regimes.includes('sans-lactose')) allergiesPerso.set('Lait', (ALLERGENES_MOTS['lait'] || []).map(m => m.toLowerCase()));
-    // Allergies personnalisées (ex. "Ananas")
-    allergiesCustom.forEach(c => allergiesPerso.set(c.charAt(0).toUpperCase() + c.slice(1), [c.toLowerCase()]));
+    allergies.forEach(a => { if (ALLERGENES_MAJEURS[a]) allergenesPerso.add(a); });
+    regimes.forEach(r => { if (r === "sans-gluten") allergenesPerso.add("gluten"); if (r === "sans-lactose") allergenesPerso.add("lait"); });
   }
 
   document.querySelectorAll('.carte').forEach(carte => {
@@ -90,48 +82,84 @@ function appliquerPreferencesVisuelles() {
 
     const info = carte.querySelector('.carte-info') || carte;
 
-    // Nettoyage de TOUS les anciens éléments (y compris l'ancienne zone "Contient" générale)
-    carte.querySelector('.carte-indicateurs')?.remove();
-    carte.querySelector('.carte-allergie-perso')?.remove();
+    // Nettoyage des anciens éléments (overlay image + emoji coin + ancien badge allergie)
     carte.querySelector('.carte-etiquette-famille')?.remove();
     carte.querySelector('.carte-badge-famille')?.remove();
     carte.querySelector('.carte-badge-allergie')?.remove();
     carte.classList.remove('carte-alerte-bebe', 'carte-alerte-enfant');
 
-    // 1) ALLERGÈNES — UNIQUEMENT ceux de l'utilisateur, en rouge
-    const touches = [];
-    allergiesPerso.forEach((mots, label) => {
-      if (mots.some(m => m && texte.includes(m))) touches.push(label);
+    // ---- Zone d'indicateurs en bas de carte (on recrée à neuf) ----
+    carte.querySelector('.carte-indicateurs')?.remove();
+    const zone = document.createElement('div');
+    zone.className = 'carte-indicateurs';
+    info.appendChild(zone);
+
+    // 1) Ligne "Contient :" — allergènes majeurs + TES allergies perso (ex: Ananas), tes allergènes en rouge
+    const presents = detecterAllergenesRecette(texte);
+    const items = [];
+    presents.forEach(a => {
+      const label = ALLERGENES_MAJEURS[a];
+      items.push(allergenesPerso.has(a) ? `<span class="alg-perso">${label}</span>` : label);
     });
-    if (touches.length) {
-      const ligne = document.createElement('div');
-      ligne.className = 'carte-allergie-perso';
-      ligne.textContent = '⚠️ Allergie — Contient : ' + touches.join(', ');
-      info.appendChild(ligne);
+    // Allergies perso libres (ex: ananas) détectées dans la recette
+    (prefs?.allergiesCustom || []).forEach(mot => {
+      const m = (mot || '').toLowerCase().trim();
+      if (m && texte.includes(m)) {
+        const label = mot.charAt(0).toUpperCase() + mot.slice(1);
+        items.push(`<span class="alg-perso">${label}</span>`);
+      }
+    });
+    const ligne = document.createElement('div');
+    if (items.length) {
+      ligne.className = 'carte-allergenes';
+      ligne.innerHTML = `<span class="alg-label">Contient :</span> ${items.join(' · ')}`;
+    } else {
+      ligne.className = 'carte-allergenes-none';
+      ligne.textContent = '✓ Sans allergène majeur';
+    }
+    zone.appendChild(ligne);
+
+    // 2) Conflit régime végan / végétarien (pour l'utilisateur connecté)
+    if (prefs) {
+      const regimes = prefs.regimes || [];
+      let conflit = null;
+      if (regimes.includes('vegan') && (ALLERGENES_MOTS['vegan'] || []).some(m => texte.includes(m))) {
+        conflit = '🌱 Non végan';
+      } else if (regimes.includes('végétarien') && (ALLERGENES_MOTS['végétarien'] || []).some(m => texte.includes(m))) {
+        conflit = '🌱 Non végétarien';
+      } else if (regimes.includes('pesco-végétarien') && (ALLERGENES_MOTS['pesco-végétarien'] || []).some(m => texte.includes(m))) {
+        conflit = '🐟 Non pesco-végétarien';
+      }
+      if (conflit) {
+        const lr = document.createElement('div');
+        lr.className = 'carte-regime-conflit';
+        lr.textContent = conflit;
+        zone.appendChild(lr);
+      }
     }
 
-    // 2) FAMILLE — cadre rouge (bébé) / orange (enfant) + étiquette avec la raison (comme avant)
+    // 3) Avertissement famille bébé/enfant (ex: "⛔ Miel interdit < 1 an") — même zone, même style
     if (typeof getNiveauFamille === 'function') {
       const niv = getNiveauFamille(key);
       if (niv) {
         carte.classList.add(niv.niveau === 'bebe' ? 'carte-alerte-bebe' : 'carte-alerte-enfant');
-        const etiqText = (typeof getEtiquetteFamille === 'function') ? getEtiquetteFamille(key) : (niv.raison || '');
-        if (etiqText) {
-          const etiq = document.createElement('div');
-          etiq.className = 'carte-etiquette-famille carte-etiquette-' + niv.niveau;
-          etiq.textContent = etiqText;
-          carte.appendChild(etiq);
+        const txt = (typeof getEtiquetteFamille === 'function') ? getEtiquetteFamille(key) : (niv.raison || '');
+        if (txt) {
+          const lf = document.createElement('div');
+          lf.className = 'carte-famille-ligne ' + (niv.niveau === 'bebe' ? 'fam-bebe' : 'fam-enfant');
+          lf.textContent = txt;
+          zone.appendChild(lf);
         }
       }
     }
 
-    // 3) Grisage des recettes exclues (régime/allergie) pour l'utilisateur connecté
+    // ---- Personnalisation : grisage des recettes exclues pour l'utilisateur connecté ----
     carte.classList.remove('carte-grisee');
     if (motsExclus.size && [...motsExclus].some(mot => texte.includes(mot))) {
       carte.classList.add('carte-grisee');
     }
 
-    // 4) Badge niveau (recette au-dessus du niveau de l'utilisateur)
+    // ---- Badge niveau (recette au-dessus du niveau de l'utilisateur) ----
     carte.querySelector('.carte-badge-niveau')?.remove();
     carte.classList.remove('carte-alerte-niveau');
     if (prefs && typeof niveauTropEleve === 'function') {
