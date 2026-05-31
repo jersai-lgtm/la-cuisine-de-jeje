@@ -271,10 +271,11 @@ function afficherMenuFestif(menu, personnes) {
                       : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
     // Couleur par type de plat (apéro / entrée / plat / dessert)
     const cat = (item.categorie || "").toLowerCase();
-    const styleCat = (cat.includes("apéro") || cat.includes("apero")) ? "border-left:3px solid #f0b429;background:rgba(240,180,41,.10)"
-                   : (cat.includes("entrée") || cat.includes("entree")) ? "border-left:3px solid #4caf50;background:rgba(76,175,80,.10)"
-                   : cat.includes("plat")    ? "border-left:3px solid #ef6c40;background:rgba(239,108,64,.10)"
-                   : cat.includes("dessert") ? "border-left:3px solid #ec6ea0;background:rgba(236,110,160,.10)" : "";
+    const styleCat = (cat.includes("apéritif") || cat.includes("aperitif")) ? "border-left:3px solid #2FA6A0;background:rgba(47,166,160,.12)"
+                   : (cat.includes("apéro") || cat.includes("apero")) ? "border-left:3px solid #E0A82E;background:rgba(224,168,46,.12)"
+                   : (cat.includes("entrée") || cat.includes("entree")) ? "border-left:3px solid #4F91D9;background:rgba(79,145,217,.12)"
+                   : cat.includes("plat")    ? "border-left:3px solid #E0654F;background:rgba(224,101,79,.12)"
+                   : cat.includes("dessert") ? "border-left:3px solid #9B6FC9;background:rgba(155,111,201,.12)" : "";
     // L'alerte famille reste prioritaire ; sinon on applique la couleur du type
     const styleBloc = styleAlerte || styleCat;
     const badge = lvl === "bebe"   ? `<span title="${tip}" style="margin-left:6px">🍼</span>`
