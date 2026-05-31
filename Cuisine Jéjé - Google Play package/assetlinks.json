@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.jersai_lgtm.twa",
+        "sha256_cert_fingerprints": ["75:DC:2A:D0:76:03:F3:31:27:27:0E:30:73:6B:89:83:9A:F4:3E:12:66:2D:22:37:4F:09:EF:CC:70:E4:47:9B"]
+      }
+    }]
