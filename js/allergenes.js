@@ -28,147 +28,116 @@ const ALLERGENES_MOTS = {
   "sulfites":       ["vin","vinaigre","sulfite","abricot sec","raisin sec","sangria","fruits secs"]
 };
 
-function appliquerPreferencesVisuelles() {
-  const prefs = window.userProfile?.preferences;
-  if (!prefs) {
-    // Pas connecté : enlever tous les badges
-    document.querySelectorAll('.carte').forEach(c => {
-      c.classList.remove('carte-grisee');
-      const badge = c.querySelector('.carte-badge-allergie');
-      if (badge) badge.remove();
-    });
-    return;
+// ==============================
+// ALLERGÈNES MAJEURS (pour l'indicateur GÉNÉRAL affiché sur chaque carte)
+// ==============================
+const ALLERGENES_MAJEURS = {
+  "gluten": "Gluten", "lait": "Lait", "œufs": "Œuf", "arachides": "Arachides",
+  "fruits-à-coque": "Fruits à coque", "poisson": "Poisson", "crustacés": "Crustacés",
+  "soja": "Soja", "céleri": "Céleri", "moutarde": "Moutarde", "sésame": "Sésame", "sulfites": "Sulfites"
+};
+
+function detecterAllergenesRecette(texte) {
+  const presents = [];
+  for (const cle in ALLERGENES_MAJEURS) {
+    const mots = ALLERGENES_MOTS[cle] || [];
+    if (mots.some(m => texte.includes(m.toLowerCase()))) presents.push(cle);
   }
+  return presents;
+}
 
-  const allergies     = prefs.allergies        || [];
-  const allergiesCustom = prefs.allergiesCustom  || [];
-  const regimes       = prefs.regimes          || [];
-  const objectifs     = prefs.objectifs        || [];
+function appliquerPreferencesVisuelles() {
+  const prefs = window.userProfile?.preferences || null;
 
-  // Construire la liste de tous les mots à exclure
+  // Allergènes de l'utilisateur connecté : pour la mise en avant (rouge) + le grisage
   const motsExclus = new Set();
-  [...allergies, ...regimes].forEach(pref => {
-    (ALLERGENES_MOTS[pref] || []).forEach(m => motsExclus.add(m.toLowerCase()));
-  });
-  allergiesCustom.forEach(m => motsExclus.add(m.toLowerCase()));
-
-  if (motsExclus.size === 0) {
-    // Rien à exclure - enlever badges
-    document.querySelectorAll('.carte').forEach(c => {
-      c.classList.remove('carte-grisee');
-      const badge = c.querySelector('.carte-badge-allergie');
-      if (badge) badge.remove();
-    });
-    return;
+  const allergenesPerso = new Set();
+  if (prefs) {
+    const allergies = prefs.allergies || [];
+    const regimes = prefs.regimes || [];
+    const allergiesCustom = prefs.allergiesCustom || [];
+    [...allergies, ...regimes].forEach(p => (ALLERGENES_MOTS[p] || []).forEach(m => motsExclus.add(m.toLowerCase())));
+    allergiesCustom.forEach(m => motsExclus.add(m.toLowerCase()));
+    allergies.forEach(a => { if (ALLERGENES_MAJEURS[a]) allergenesPerso.add(a); });
+    regimes.forEach(r => { if (r === "sans-gluten") allergenesPerso.add("gluten"); if (r === "sans-lactose") allergenesPerso.add("lait"); });
   }
 
   document.querySelectorAll('.carte').forEach(carte => {
     const onclick = carte.getAttribute('onclick') || '';
-    const match   = onclick.match(/ouvrirFiche\('([^']+)'/);
-    const key     = match ? match[1] : null;
+    const match = onclick.match(/ouvrirFiche\('([^']+)'/);
+    const key = match ? match[1] : null;
     if (!key) return;
+    const recette = (typeof recettes !== 'undefined') ? recettes[key] : null;
 
-    const recette = typeof recettes !== 'undefined' ? recettes[key] : null;
-    // Utiliser le helper centralisé (lecture complète des tableaux + neutralisation
-    // coco/beurre noisette) si dispo, sinon fallback simple.
+    // Texte complet de la recette (lecture des tableaux + neutralisation coco)
     let texte;
     if (typeof texteRecette === 'function') {
-      texte = texteRecette(key) + ' ' + (carte.querySelector('h2')?.textContent || '').toLowerCase();
+      texte = (texteRecette(key) + ' ' + (carte.querySelector('h2')?.textContent || '')).toLowerCase();
     } else {
-      texte = [
-        key,
-        recette?.description || '',
-        carte.querySelector('h2')?.textContent || '',
-      ].join(' ').toLowerCase();
+      texte = [key, recette?.description || '', carte.querySelector('h2')?.textContent || ''].join(' ').toLowerCase();
       Object.keys(recette || {}).forEach(k => {
-        if (k.startsWith('tableau') && Array.isArray(recette[k]) && recette[k].length > 0) {
-          texte += ' ' + Object.keys(recette[k][0]).join(' ').toLowerCase();
-        }
+        if (k.startsWith('tableau') && Array.isArray(recette[k]) && recette[k][0]) texte += ' ' + Object.keys(recette[k][0]).join(' ').toLowerCase();
       });
     }
 
-    // Trouver les mots problématiques
-    const trouvés = [...motsExclus].filter(mot => texte.includes(mot));
+    const info = carte.querySelector('.carte-info') || carte;
 
-    // Supprimer l'ancien badge
-    const oldBadge = carte.querySelector('.carte-badge-allergie');
-    if (oldBadge) oldBadge.remove();
-
-    if (trouvés.length > 0) {
-      carte.classList.add('carte-grisee');
-      // Badge avec le premier élément trouvé
-      // PRIORITÉ : allergie (critique santé) > régime (choix alimentaire)
-      const badge = document.createElement('div');
-      badge.className = 'carte-badge-allergie';
-      const allergie = [...allergies, ...allergiesCustom].find(a => 
-        trouvés.some(t => t.includes(a.toLowerCase()) || a.toLowerCase().includes(t))
-      );
-      const regime = [...regimes].find(r => (ALLERGENES_MOTS[r] || []).some(m => trouvés.includes(m)));
-      if (allergie) {
-        badge.textContent = '⚠️ ' + allergie;
-      } else if (regime) {
-        const labels = { 'végétarien':'🥦 Végétarien', 'vegan':'🌱 Vegan', 'sans-gluten':'🌾 Sans gluten', 'sans-lactose':'🥛 Sans lactose', 'pesco-végétarien':'🐟 Pesco-végé', 'moins-viande':'🌱 Moins viande' };
-        badge.textContent = labels[regime] || regime;
-      } else {
-        badge.textContent = '⚠️ Exclut';
-      }
-      carte.appendChild(badge);
-    } else {
-      carte.classList.remove('carte-grisee');
-    }
-
-    // Badge famille — bordure rouge (bébé) ou orange (enfant) + badge clair + étiquette explicite
-    const existingFam = carte.querySelector('.carte-badge-famille');
-    if (existingFam) existingFam.remove();
-    const existingEtiq = carte.querySelector('.carte-etiquette-famille');
-    if (existingEtiq) existingEtiq.remove();
+    // Nettoyage des anciens éléments (overlay image + emoji coin + ancien badge allergie)
+    carte.querySelector('.carte-etiquette-famille')?.remove();
+    carte.querySelector('.carte-badge-famille')?.remove();
+    carte.querySelector('.carte-badge-allergie')?.remove();
     carte.classList.remove('carte-alerte-bebe', 'carte-alerte-enfant');
 
-    if (typeof getNiveauFamille === 'function') {
-      const cle = carte.getAttribute('onclick')?.match(/['"]([^'"]+)['"]/)?.[1];
-      if (cle) {
-        const niv = getNiveauFamille(cle);
-        if (niv) {
-          // 1) Badge emoji en haut à gauche (signal compact)
-          const badgeFam = document.createElement('div');
-          badgeFam.className = 'carte-badge-famille';
-          const detailBebe = niv.niveau === 'bebe' ? ' — déconseillé bébé < 1 an' : ' — déconseillé enfant';
-          badgeFam.title = (niv.raison || niv.mot || '') + detailBebe;
-          badgeFam.textContent = niv.niveau === 'bebe' ? '🍼' : '🧒';
-          carte.appendChild(badgeFam);
+    // ---- Zone d'indicateurs en bas de carte ----
+    let zone = carte.querySelector('.carte-indicateurs');
+    if (!zone) { zone = document.createElement('div'); zone.className = 'carte-indicateurs'; info.appendChild(zone); }
+    zone.innerHTML = '';
 
-          // 2) Étiquette explicite sur l'image (style pastille blanche, texte coloré)
-          const etiquetteText = typeof getEtiquetteFamille === 'function' ? getEtiquetteFamille(cle) : null;
-          if (etiquetteText) {
-            const etiq = document.createElement('div');
-            etiq.className = 'carte-etiquette-famille carte-etiquette-' + niv.niveau;
-            etiq.textContent = etiquetteText;
-            carte.appendChild(etiq);
-          }
+    // 1) Allergènes (GÉNÉRAL) + mise en avant des allergènes de l'utilisateur
+    const presents = detecterAllergenesRecette(texte);
+    const ligne = document.createElement('div');
+    if (presents.length) {
+      ligne.className = 'carte-allergenes';
+      const items = presents.map(a => {
+        const label = ALLERGENES_MAJEURS[a];
+        return allergenesPerso.has(a) ? `<span class="alg-perso">${label}</span>` : label;
+      }).join(' · ');
+      ligne.innerHTML = `<span class="alg-label">Contient :</span> ${items}`;
+    } else {
+      ligne.className = 'carte-allergenes-none';
+      ligne.textContent = '✓ Sans allergène majeur';
+    }
+    zone.appendChild(ligne);
 
-          // 3) Bordure d'alerte rouge (bébé) ou orange (enfant)
-          carte.classList.add(niv.niveau === 'bebe' ? 'carte-alerte-bebe' : 'carte-alerte-enfant');
-        }
-      }
+    // 2) Alerte bébé/enfant (GÉNÉRALE) — déplacée en bas, image dégagée
+    const alerte = (typeof getAlerteFamilleGenerale === 'function') ? getAlerteFamilleGenerale(key) : null;
+    if (alerte) {
+      const badge = document.createElement('div');
+      badge.className = 'carte-famille-badge ' + (alerte.niveau === 'bebe' ? 'fam-bebe' : 'fam-enfant');
+      badge.textContent = alerte.texte;
+      zone.appendChild(badge);
+      // Bordure colorée comme signal discret
+      carte.classList.add(alerte.niveau === 'bebe' ? 'carte-alerte-bebe' : 'carte-alerte-enfant');
     }
 
-    // Badge niveau (si recette au-dessus du niveau utilisateur)
-    const existingNiv = carte.querySelector('.carte-badge-niveau');
-    if (existingNiv) existingNiv.remove();
-    carte.classList.remove('carte-alerte-niveau');
+    // ---- Personnalisation : grisage des recettes exclues pour l'utilisateur connecté ----
+    carte.classList.remove('carte-grisee');
+    if (motsExclus.size && [...motsExclus].some(mot => texte.includes(mot))) {
+      carte.classList.add('carte-grisee');
+    }
 
-    if (typeof niveauTropEleve === 'function') {
-      const cle = carte.getAttribute('onclick')?.match(/['"]([^'"]+)['"]/)?.[1];
-      if (cle) {
-        const trop = niveauTropEleve(cle);
-        if (trop) {
-          const badgeNiv = document.createElement('span');
-          badgeNiv.className = 'carte-badge-niveau';
-          badgeNiv.title = `${trop.raison} — au-dessus de votre niveau (${trop.niveauUser})`;
-          badgeNiv.textContent = trop.niveauRecette === 'eleve' ? '⭐⭐⭐' : '⭐⭐';
-          carte.appendChild(badgeNiv);
-          carte.classList.add('carte-alerte-niveau');
-        }
+    // ---- Badge niveau (recette au-dessus du niveau de l'utilisateur) ----
+    carte.querySelector('.carte-badge-niveau')?.remove();
+    carte.classList.remove('carte-alerte-niveau');
+    if (prefs && typeof niveauTropEleve === 'function') {
+      const trop = niveauTropEleve(key);
+      if (trop) {
+        const badgeNiv = document.createElement('span');
+        badgeNiv.className = 'carte-badge-niveau';
+        badgeNiv.title = `${trop.raison} — au-dessus de votre niveau (${trop.niveauUser})`;
+        badgeNiv.textContent = trop.niveauRecette === 'eleve' ? '⭐⭐⭐' : '⭐⭐';
+        carte.appendChild(badgeNiv);
+        carte.classList.add('carte-alerte-niveau');
       }
     }
   });
@@ -176,6 +145,9 @@ function appliquerPreferencesVisuelles() {
 
 // Appeler quand le profil change
 window.addEventListener('profilMisAJour', appliquerPreferencesVisuelles);
+// Appliquer aussi au chargement (indicateurs généraux visibles sans connexion)
+if (document.readyState !== 'loading') { appliquerPreferencesVisuelles(); }
+else { document.addEventListener('DOMContentLoaded', appliquerPreferencesVisuelles); }
 
 // ==============================
 // FAVORIS

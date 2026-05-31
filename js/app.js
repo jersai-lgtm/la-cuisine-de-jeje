@@ -258,20 +258,6 @@ function chargerAccueilTopMois() {
 }
 
 function chargerAccueil() {
-  // v258.13 : garantir que seule la section Accueil est visible. Corrige le cas où
-  // la section « Menu Thématique » (section-festif) restait affichée PAR-DESSUS
-  // l'accueil quand on revenait via la barre de navigation.
-  const secAccueil = document.getElementById("section-accueil");
-  const secCartes  = document.getElementById("section-cartes");
-  const secCuisine = document.getElementById("section-cuisine");
-  const secPlan    = document.getElementById("section-planificateur");
-  const secFestif  = document.getElementById("section-festif");
-  if (secAccueil) secAccueil.style.display = "block";
-  if (secCartes)  { secCartes.classList.remove("visible"); secCartes.style.display = ""; }
-  if (secCuisine) secCuisine.style.display = "none";
-  if (secPlan)    secPlan.style.display = "none";
-  if (secFestif)  secFestif.style.display = "none";
-
   chargerAccueilFavoris();
   chargerAccueilMenus();
   // v249 : Retiré — accessible via ⭐ Favoris → ❤️ Menus favoris
@@ -306,12 +292,6 @@ function chargerAccueilFavoris() {
 function chargerAccueilMenus() {
   const row = document.getElementById("accueil-menus-row");
   if (!row) return;
-  // v258.15b : filet de sécurité — masquer les sections Menu Thématique / planificateur
-  // qui pouvaient rester affichées PAR-DESSUS l'accueil quand on y revenait.
-  ["section-festif", "section-planificateur"].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.style.display = "none";
-  });
   let hist = window.userProfile?.historiqueMenus || [];
   if (hist.length === 0) {
     try { hist = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]"); } catch(e) {}
@@ -321,21 +301,18 @@ function chargerAccueilMenus() {
     return;
   }
   const dernier = hist[0];
-  // v258.6 : détecter le thématique AVANT le test "semaine vide". Un menu
-  // thématique n'a pas de `semaine` (il a `menu.menu` + `menu.theme`) ; sans ça
-  // il était écarté à tort de « Dernier menu généré ».
-  const isTheme = dernier?.menu?.theme !== undefined;
   const semaine = dernier?.menu?.semaine || [];
-
-  if (!isTheme && semaine.length === 0) {
+  if (semaine.length === 0) {
     row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`;
     return;
   }
 
-  const goMenus = () => afficherSection('planificateur', document.querySelector('.nav-btn[onclick*=planificateur]'));
+  window.goMenus = () => afficherSection('planificateur', document.querySelector('.nav-btn[onclick*=planificateur]'));
 
   // Détecter le format : repas complet ou simple
   const isComplet = semaine[0]?.midi?.plat !== undefined;
+  // Détecter si c'est un menu thématique (a une propriété theme)
+  const isTheme = dernier?.menu?.theme !== undefined;
 
   if (isTheme) {
     // Menu thématique — afficher les plats
@@ -353,10 +330,8 @@ function chargerAccueilMenus() {
                   : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.06);padding-left:6px" : "";
       const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
                   : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🧒</span>` : "";
-      // v258.6 : un item thématique = une recette → clic ouvre la fiche (et non le planificateur)
-      const clickAttr = key ? `onclick="ouvrirFiche('${key}','')"` : `onclick="goMenus()"`;
       return `
-      <div class="accueil-menu-card" ${clickAttr} style="cursor:pointer">
+      <div class="accueil-menu-card" onclick="goMenus()">
         <div class="accueil-menu-day">${p.categorie || "Plat"}</div>
         <div class="accueil-menu-item" style="${style}" title="${tip}">
           <span>${emoji}</span>
@@ -1311,8 +1286,8 @@ const INGREDIENTS_LABELS = {
   quinoa: "🌾 Quinoa", maizena: "🌾 Maïzena", cacao: "🍫 Cacao en poudre",
   graines: "🌱 Graines", chia: "🌱 Graines de chia", granola: "🌾 Granola",
   chapelure: "🍞 Chapelure", pain: "🍞 Pain", buns: "🍞 Buns",
-  pita: "🥙 Pains pita", crepesP: "🥙 Crêpes pékinoises",
-  feuilletee: "🥐 Pâte feuilletée", pate: "🥙 Pâton(s)", patons: "🥙 Pâton(s)",
+  pita: "🫓 Pains pita", crepesP: "🫓 Crêpes pékinoises",
+  feuilletee: "🥐 Pâte feuilletée", pate: "🫓 Pâton(s)", patons: "🫓 Pâton(s)",
   // == Produits laitiers ==
   lait: "🥛 Lait", laitChoux: "🥛 Lait", laitCreme: "🥛 Lait",
   creme: "🍦 Crème fraîche", gCreme: "🍦 Crème fraîche", beurreCreme: "🍦 Crème fraîche",
@@ -1356,13 +1331,13 @@ const INGREDIENTS_LABELS = {
   poivron: "🫑 Poivron", champignons: "🍄 Champignons", shiitake: "🍄 Shiitake",
   epinards: "🌿 Épinards", salade: "🥬 Salade", laitue: "🥬 Laitue",
   pdterre: "🥔 Pommes de terre", patate: "🍠 Patate douce", patatedouce: "🍠 Patate douce",
-  courge: "🎃 Courge butternut", manioc: "🌿 Manioc", navets: "🪨 Navets",
+  courge: "🎃 Courge butternut", manioc: "🫚 Manioc", navets: "🪨 Navets",
   chou: "🥬 Chou", poireaux: "🥬 Poireaux", asperges: "🌿 Asperges",
-  mais: "🌽 Maïs", maïs: "🌽 Maïs", petitspois: "🟢 Petits pois",
-  haricots: "🟢 Haricots verts", concombre: "🥒 Concombre", celeri: "🌿 Céleri",
-  edamame: "🟢 Edamame", pois: "🥜 Pois",
+  mais: "🌽 Maïs", maïs: "🌽 Maïs", petitspois: "🫛 Petits pois",
+  haricots: "🫛 Haricots verts", concombre: "🥒 Concombre", celeri: "🌿 Céleri",
+  edamame: "🫛 Edamame", pois: "🫘 Pois",
   // == Légumineuses ==
-  poischiches: "🥜 Pois chiches", lentilles: "🥜 Lentilles",
+  poischiches: "🫘 Pois chiches", lentilles: "🫘 Lentilles",
   // == Fruits ==
   citron: "🍋 Citron", citrons: "🍋 Citrons", orange: "🍊 Orange", orangeJus: "🍊 Jus d'orange",
   pommes: "🍎 Pommes", bananes: "🍌 Bananes", fraise: "🍓 Fraise", fraises: "🍓 Fraises",
@@ -1379,13 +1354,13 @@ const INGREDIENTS_LABELS = {
   brochet: "🐟 Brochet", ecrevisses: "🦞 Écrevisses", lapin: "🐰 Lapin",
   reblochon: "🧀 Reblochon", tomme: "🧀 Tomme fraîche", andouillette: "🌭 Andouillette",
   cuissecanard: "🦆 Cuisse de canard", graissecanard: "🦆 Graisse de canard",
-  haricotsblancs: "🥜 Haricots blancs", vinrouge: "🍷 Vin rouge",
+  haricotsblancs: "🫘 Haricots blancs", vinrouge: "🍷 Vin rouge",
   patefeuilletee: "🥧 Pâte feuilletée", poudreamandes: "🥥 Poudre d'amandes",
   cremepatissiere: "🍮 Crème pâtissière", sucrecaramel: "🍯 Sucre (caramel)",
   feve: "🪙 Fève",
   // === Lot 2 — Ingrédients cuisines du monde ===
-  baguette: "🥖 Baguette", painpita: "🥙 Pain pita",
-  haricotsverts: "🟢 Haricots verts", saucissefumee: "🌭 Saucisse fumée",
+  baguette: "🥖 Baguette", painpita: "🫓 Pain pita",
+  haricotsverts: "🫛 Haricots verts", saucissefumee: "🌭 Saucisse fumée",
   pouletHache: "🍗 Poulet haché", rizGrillé: "🌾 Riz grillé concassé",
   oignonrouge: "🧅 Oignon rouge", nouillesoeuf: "🍜 Nouilles aux œufs",
   pateCurry: "🌶️ Pâte de curry", cacahuetespurée: "🥜 Purée de cacahuètes",
@@ -1460,7 +1435,7 @@ const INGREDIENTS_LABELS = {
   jauneoeuf: "🥚 Jaune d'œuf", tabasco: "🌶️ Tabasco",
   farinetamisee: "🌾 Farine tamisée", chocolatnoir: "🍫 Chocolat noir", jusdecitron: "🍋 Jus de citron",
   levurechimique: "🍞 Levure chimique", pepiteschoco: "🍫 Pépites de chocolat",
-  gingembre: "🌿 Gingembre", galanga: "🌿 Galanga", anis: "⭐ Anis étoilé",
+  gingembre: "🫚 Gingembre", galanga: "🫚 Galanga", anis: "⭐ Anis étoilé",
   citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille", fumee: "💨 Paprika fumé",
   chermoula: "🌿 Chermoula", pesto: "🌿 Pesto",
   persil: "🌿 Persil", coriandre: "🌿 Coriandre", menthe: "🌿 Menthe fraîche",
@@ -1492,7 +1467,7 @@ const INGREDIENTS_LABELS = {
   cremeTruffe: "🍄 Crème de truffe", roquette: "🥬 Roquette",
   // == Ingrédients spéciaux ==
   pralin: "🌰 Pâte de pralin", proteine: "💪 Protéine", dattes: "🌴 Dattes",
-  vermicelles: "🍜 Vermicelles", edamame: "🟢 Edamame",
+  vermicelles: "🍜 Vermicelles", edamame: "🫛 Edamame",
   // == Ajouts audit complet (50 ingrédients) ==
   // Boissons / alcools
   vin: "🍷 Vin", cidre: "🍎 Cidre", saké: "🍶 Saké",
@@ -1504,7 +1479,7 @@ const INGREDIENTS_LABELS = {
   ciboule: "🌿 Ciboule", ciboulette: "🌿 Ciboulette", sauge: "🌿 Sauge",
   capres: "🫒 Câpres", baies: "🫐 Baies de genièvre",
   // Sauces / pâtes
-  bechamel: "🥛 Sauce béchamel", soja: "🥢 Sauce soja", chutney: "🍯 Chutney",
+  bechamel: "🥛 Sauce béchamel", soja: "🥢 Sauce soja", chutney: "🫙 Chutney",
   pateC: "🌶️ Pâte de curry", curryVert: "🌶️ Pâte de curry vert",
   fecule: "🌾 Fécule de maïs",
   // Viandes / poissons / fruits de mer
@@ -1516,7 +1491,7 @@ const INGREDIENTS_LABELS = {
   banane: "🍌 Banane", pomme: "🍎 Pomme", kiwi: "🥝 Kiwi", citronC: "🍋 Citron",
   // Fruits secs & graines
   pistaches: "🌰 Pistaches", arachide: "🥜 Arachide",
-  sesame: "🥜 Graines de sésame", cacahetes: "🥜 Cacahuètes grillées",
+  sesame: "🫘 Graines de sésame", cacahetes: "🥜 Cacahuètes grillées",
   // Sucré / divers
   choco: "🍫 Chocolat", biscuits: "🍪 Biscuits", gelatine: "🟦 Gélatine",
   filo: "🥟 Pâte filo", pateSablee: "🥧 Pâte sablée",
@@ -1535,9 +1510,9 @@ const INGREDIENTS_LABELS = {
   // Légumes & herbes
   bokchoy: "🥬 Bok choy", brocoli: "🥦 Brocoli",
   oignonNouveau: "🧅 Oignon nouveau", oignonRouge: "🧅 Oignon rouge",
-  feves: "🟢 Fèves", figues: "🟣 Figues",
+  feves: "🫛 Fèves", figues: "🟣 Figues",
   pommedeterre: "🥔 Pommes de terre", maïs: "🌽 Maïs",
-  haricotsnoirs: "🥜 Haricots noirs", haricotsrouges: "🥜 Haricots rouges",
+  haricotsnoirs: "🫘 Haricots noirs", haricotsrouges: "🫘 Haricots rouges",
   cornichons: "🥒 Cornichons", poire: "🍐 Poire asiatique",
   pousses: "🌱 Pousses de soja", feuilles: "🌿 Feuilles de vigne",
   feuillesBric: "📄 Feuilles de brick",
@@ -1805,7 +1780,7 @@ function getNiveauFamille(cle) {
   }
   // Garde : une boisson sans alcool (mocktail / virgin / "sans alcool") ne doit pas
   // être flaggée à cause du mot "alcool" présent dans sa description ("sans alcool")
-  const estSansAlcool = /sans alcool|sans-alcool|ni alcool|sans café ni alcool/.test(texte) || /mocktail|virgin/.test(texte) || /mocktail|virgin/.test(cle.toLowerCase());
+  const estSansAlcool = /sans alcool|mocktail|virgin/.test(texte) || /mocktail|virgin/.test(cle.toLowerCase());
   if (estSansAlcool) texte = texte.replace(/alcool/g, "");
 
   if (profil.hasBebe) {
@@ -1874,65 +1849,6 @@ function getFoyerProfil() {
     hasAdulte: (foyer.adultes || 0) > 0,
   };
 }
-
-// =============================================================================
-// 👥 NOMBRE DE PERSONNES PAR DÉFAUT À L'OUVERTURE D'UNE FICHE (v258.1)
-// =============================================================================
-// Renvoie le nombre de personnes à pré-sélectionner quand on ouvre une recette.
-// Par défaut → on suit la taille du foyer (profil). Exceptions :
-//   - recettes "à l'unité" (brioche, pâtes) → gardent leur valeur de base
-//   - cocktails  → adultes uniquement (alcool)
-//   - mocktails  → tout le foyer SAUF les bébés
-// La valeur est bornée par le min/max du tableau de la recette.
-// Si pas de profil/foyer → on retombe sur data.base (comportement historique).
-// =============================================================================
-function calculerPersonnesPourRecette(nom) {
-  const r = (typeof recettes !== "undefined") ? recettes[nom] : null;
-  if (!r) return 4;
-
-  // Bornes min/max d'après le tableau de la recette (si présent)
-  let min = 1, max = 15;
-  const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
-  if (tabKey && r[tabKey].length > 0) {
-    const lignes = r[tabKey];
-    const cleNb = lignes[0].nb !== undefined ? "nb"
-                : (lignes[0].patons !== undefined ? "patons" : null);
-    if (cleNb) {
-      min = lignes[0][cleNb] || 1;
-      max = lignes[lignes.length - 1][cleNb] || 15;
-      if (min < 1) min = 1;
-    }
-  }
-
-  // Exceptions "à l'unité" → on garde la valeur de base (max 5)
-  const unites = (window.EXCEPTIONS && window.EXCEPTIONS.unites) || [];
-  if (unites.includes(nom)) {
-    return Math.max(1, Math.min(5, r.base || 1));
-  }
-
-  const foyer = window.userProfile?.foyer;
-  // Pas de profil/foyer → comportement historique
-  if (!foyer) return r.base || 4;
-
-  const adultes = foyer.adultes || 0;
-  const ados    = foyer.ados || 0;
-  const enfants = foyer.enfants || 0;
-  const bebes   = foyer.bebes || foyer.bébés || 0;
-  const total   = adultes + ados + enfants + bebes;
-
-  let nb;
-  if (r.cat === "cocktails") {
-    nb = adultes || total;                       // alcool → adultes
-  } else if (r.cat === "mocktails") {
-    nb = (adultes + ados + enfants) || total;    // sans alcool → foyer sauf bébés
-  } else {
-    nb = total;                                  // tout le foyer
-  }
-
-  if (!nb || nb < 1) return r.base || 4;
-  return Math.max(min, Math.min(max, nb));
-}
-window.calculerPersonnesPourRecette = calculerPersonnesPourRecette;
 
 // === SYSTÈME NIVEAU CUISINE ===
 // Détecte le niveau d'une recette : "facile" | "moyen" | "eleve"
@@ -2910,14 +2826,9 @@ function rerendreFiche(nom, personnes) {
     inputP.value = personnes;
     inputP.dataset.modified = "1";
   }
-  // v258.3 : mémoriser la position de défilement pour que la fenêtre ne saute pas
-  const scroller = document.getElementById("modal-resultat")?.parentElement;
-  const y = scroller ? scroller.scrollTop : 0;
   // v257.5 : Passer la valeur en argument pour que choisirRecette l'utilise
   // (l'input #personnes n'existe pas toujours)
   choisirRecette(nom, personnes);
-  // Restaurer la position exacte (recalcul synchrone → aucun saut visible)
-  if (scroller) scroller.scrollTop = y;
 }
 
 // Spécial brioche : change la quantité ou le type (lait/sans lait) dans la fiche ouverte

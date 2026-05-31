@@ -1793,8 +1793,58 @@ window.appliquerMenuFavori = function(id) {
 
 
 function ouvrirRecettePlan(recetteKey, personnes) {
-  // Ouvrir directement la modale sans changer d'onglet
-  document.getElementById("personnes").value = personnes;
-  choisirRecette(recetteKey);
+  // Le champ #personnes est créé PAR choisirRecette (il n'existe pas avant).
+  // On passe donc le nombre de personnes en paramètre (personnesOverride) au lieu
+  // d'écrire dans un champ inexistant — corrige "Cannot set properties of null".
+  choisirRecette(recetteKey, Number(personnes));
 }
+
+// Récupère récursivement toutes les clés de recettes présentes dans un objet menu
+function _collecterClesMenu(obj, acc) {
+  if (!obj) return;
+  if (typeof obj === "string") {
+    if (typeof recettes !== "undefined" && recettes[obj]) acc.add(obj);
+    return;
+  }
+  if (Array.isArray(obj)) { obj.forEach(o => _collecterClesMenu(o, acc)); return; }
+  if (typeof obj === "object") { Object.values(obj).forEach(v => _collecterClesMenu(v, acc)); }
+}
+
+// Ajoute toutes les recettes du menu courant (type "semaine" ou "thematique") à la liste de courses
+function ajouterMenuAuxCourses(type) {
+  if (!window.currentUser) { if (typeof ouvrirModalAuth === "function") ouvrirModalAuth(); return; }
+
+  let source = null, personnes = 4;
+  if (type === "thematique") {
+    source = (typeof menuFestifActuel !== "undefined") ? menuFestifActuel : null;
+    personnes = parseInt(document.getElementById("festif-personnes")?.value) || 4;
+  } else {
+    source = (typeof menusSemaine !== "undefined") ? menusSemaine : null;
+    personnes = parseInt(document.getElementById("plan-personnes")?.value) || 4;
+  }
+  if (!source) { if (typeof afficherToast === "function") afficherToast("Aucun menu à ajouter."); return; }
+
+  const cles = new Set();
+  _collecterClesMenu(source, cles);
+  if (cles.size === 0) { if (typeof afficherToast === "function") afficherToast("Aucune recette trouvée dans le menu."); return; }
+
+  if (!window.userProfile.listeCourses) window.userProfile.listeCourses = [];
+  let ajout = 0;
+  cles.forEach(cle => {
+    if (!window.userProfile.listeCourses.some(x => x.cle === cle)) {
+      window.userProfile.listeCourses.push({ cle, personnes });
+      ajout++;
+    }
+  });
+
+  if (typeof sauvegarderProfil === "function") {
+    sauvegarderProfil({ listeCourses: window.userProfile.listeCourses });
+  }
+  if (typeof afficherToast === "function") {
+    afficherToast(ajout > 0
+      ? `🛒 ${ajout} recette${ajout > 1 ? "s" : ""} ajoutée${ajout > 1 ? "s" : ""} aux courses`
+      : "Ces recettes sont déjà dans vos courses ✓");
+  }
+}
+window.ajouterMenuAuxCourses = ajouterMenuAuxCourses;
 
