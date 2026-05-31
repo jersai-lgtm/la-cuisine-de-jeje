@@ -4737,3 +4737,43 @@ select, input[type="number"] {
   .admin-tab { font-size: 10px; }
   .admin-pref-ligne { grid-template-columns: 80px 1fr 28px; }
 }
+
+/* ============================================================ */
+/* Indicateurs en bas de carte : allergènes (général + perso)   */
+/* + alerte bébé/enfant (déplacée de l'image vers le bas)        */
+/* ============================================================ */
+.carte-indicateurs {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.carte-allergenes {
+  font-size: 11px;
+  line-height: 1.35;
+  color: #9a9a9a;
+}
+.carte-allergenes .alg-label { color: #c9c9c9; font-weight: 600; }
+.carte-allergenes .alg-perso { color: #ff5a5a; font-weight: 700; }
+.carte-allergenes-none {
+  font-size: 11px;
+  color: #5fae6b;
+}
+.carte-famille-badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1.25;
+  padding: 2px 7px;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+.carte-famille-badge.fam-bebe {
+  background: rgba(176, 0, 0, .14);
+  color: #ff6b6b;
+  border: 1px solid rgba(176, 0, 0, .4);
+}
+.carte-famille-badge.fam-enfant {
+  background: rgba(196, 106, 0, .14);
+  color: #ffaa4d;
+  border: 1px solid rgba(196, 106, 0, .4);
+}
