@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=259-14">
+<link rel="stylesheet" href="style.css?v=259-15">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=259-14">
+<link rel="stylesheet" href="style.css?v=259-15">
 </head>
 
 <body>
@@ -4051,6 +4051,7 @@ gtag('config', 'G-390C5MY2SS');
       <h2 id="festif-result-titre">🎉 Menu Festif</h2>
       <button class="plan-btn-courses" onclick="ajouterMenuAuxCourses('thematique')">🛒 Ajouter aux courses</button>
       <button class="plan-btn-retry" onclick="document.getElementById('festif-form').style.display='block';document.getElementById('festif-result').style.display='none'">⚙️ Modifier</button>
+      <button class="plan-btn-retry" style="color:#ff6b6b" onclick="confirmer('Effacer le menu actuel ?',{titre:'🗑️ Effacer le menu',boutonOui:'Effacer'}).then(ok=>{if(ok)effacerMenuCourant()})">🗑️ Effacer</button>
     </div>
     <div id="festif-jours"></div>
     <button class="plan-btn-regenrer" onclick="genererMenuFestif()">🔄 Nouveau menu</button>
@@ -4447,6 +4448,7 @@ gtag('config', 'G-390C5MY2SS');
       <h2>🗓️ Mes menus</h2>
       <button class="plan-btn-courses" onclick="ajouterMenuAuxCourses('semaine')">🛒 Ajouter aux courses</button>
       <button class="plan-btn-retry" onclick="voirFormulaire()">⚙️ Modifier</button>
+      <button class="plan-btn-retry" style="color:#ff6b6b" onclick="confirmer('Effacer le menu actuel ?',{titre:'🗑️ Effacer le menu',boutonOui:'Effacer'}).then(ok=>{if(ok)effacerMenuCourant()})">🗑️ Effacer</button>
     </div>
     <div id="plan-jours"></div>
     <button class="plan-btn-regenrer" onclick="genererMenus()">🔄 Nouveau menu</button>
@@ -4467,25 +4469,25 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=259-14"></script>
-<script src="js/allergenes.js?v=259-14"></script>
+<script src="js/version.js?v=259-15"></script>
+<script src="js/allergenes.js?v=259-15"></script>
 <script src="js/exceptions.js?v=258-34"></script>
 <script src="js/recettes.js?v=258-34"></script>
 <script src="js/recettes_cocktails.js?v=258-34"></script>
 <script src="js/recettes_mocktails.js?v=258-34"></script>
 <script src="js/ingredients_prix.js?v=258-34"></script>
 <script src="js/tables.js?v=258-34"></script>
-<script src="js/app.js?v=259-14"></script>
-<script src="js/emojis.js?v=259-14"></script>
-<script src="js/app_avis.js?v=259-14"></script>
+<script src="js/app.js?v=259-15"></script>
+<script src="js/emojis.js?v=259-15"></script>
+<script src="js/app_avis.js?v=259-15"></script>
 <script src="js/app_admin.js?v=258-34"></script>
-<script src="js/app_menu.js?v=259-14"></script>
+<script src="js/app_menu.js?v=259-15"></script>
 <script src="js/app_courses_impr.js?v=258-34"></script>
 <script src="js/app_recherche.js?v=258-34"></script>
 <script src="js/app_garde_manger.js?v=258-34"></script>
 <script src="js/app_modal_confirm.js?v=258-34"></script>
 <script src="js/app_courses.js?v=258-34"></script>
-<script src="js/app_stats.js?v=259-14"></script>
+<script src="js/app_stats.js?v=259-15"></script>
 
 
 
