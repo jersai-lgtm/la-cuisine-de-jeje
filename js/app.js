@@ -301,13 +301,14 @@ function chargerAccueilMenus() {
     return;
   }
   const dernier = hist[0];
+  const persMenu = dernier.personnes || dernier?.menu?.personnes || 4;
   const semaine = dernier?.menu?.semaine || [];
   if (semaine.length === 0) {
     row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`;
     return;
   }
 
-  window.goMenus = () => afficherSection('planificateur', document.querySelector('.nav-btn[onclick*=planificateur]'));
+  const goMenus = () => afficherSection('planificateur', document.querySelector('.nav-btn[onclick*=planificateur]'));
 
   // Détecter le format : repas complet ou simple
   const isComplet = semaine[0]?.midi?.plat !== undefined;
@@ -331,9 +332,9 @@ function chargerAccueilMenus() {
       const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
                   : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🧒</span>` : "";
       return `
-      <div class="accueil-menu-card" onclick="goMenus()">
+      <div class="accueil-menu-card">
         <div class="accueil-menu-day">${p.categorie || "Plat"}</div>
-        <div class="accueil-menu-item" style="${style}" title="${tip}">
+        <div class="accueil-menu-item" style="${style};cursor:pointer" title="${tip}" onclick="ouvrirRecettePlan('${key}', ${persMenu})">
           <span>${emoji}</span>
           <div>
             <div class="menu-item-nom">${nom}${mini}</div>
@@ -361,7 +362,7 @@ function chargerAccueilMenus() {
                     : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.06);padding-left:6px" : "";
         const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
                     : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🧒</span>` : "";
-        return `<div class="accueil-menu-item" style="${style}" title="${tip}">
+        return `<div class="accueil-menu-item" style="${style};cursor:pointer" title="${tip}" onclick="ouvrirRecettePlan('${key}', ${persMenu})">
           <span>${emoji}</span>
           <div>
             <div class="menu-moment">${icone}</div>
@@ -370,7 +371,7 @@ function chargerAccueilMenus() {
         </div>`;
       };
       return `
-      <div class="accueil-menu-card" onclick="goMenus()">
+      <div class="accueil-menu-card">
         <div class="accueil-menu-day">${j.jour}</div>
         <div style="font-size:9px;color:#ff8fb3;font-weight:700;margin-bottom:4px">☀️ Midi</div>
         ${genSous(j.midi?.entree, "🥗 Entrée")}
@@ -405,16 +406,16 @@ function chargerAccueilMenus() {
     const aM = fmtAlerte(nM);
     const aS = fmtAlerte(nS);
     return `
-    <div class="accueil-menu-card" onclick="goMenus()">
+    <div class="accueil-menu-card">
       <div class="accueil-menu-day">${j.jour}</div>
-      <div class="accueil-menu-item" style="${aM.style}" title="${aM.tip}">
+      <div class="accueil-menu-item" style="${aM.style};cursor:pointer" title="${aM.tip}" ${midiKey ? `onclick="ouvrirRecettePlan('${midiKey}', ${persMenu})"` : ""}>
         <span>${emoji1}</span>
         <div>
           <div class="menu-moment">☀️ Midi</div>
           <div class="menu-item-nom">${midiNom}${aM.mini}</div>
         </div>
       </div>
-      <div class="accueil-menu-item" style="${aS.style}" title="${aS.tip}">
+      <div class="accueil-menu-item" style="${aS.style};cursor:pointer" title="${aS.tip}" ${soirKey ? `onclick="ouvrirRecettePlan('${soirKey}', ${persMenu})"` : ""}>
         <span>${emoji2}</span>
         <div>
           <div class="menu-moment">🌙 Soir</div>
@@ -1390,6 +1391,7 @@ const INGREDIENTS_LABELS = {
   currypoudre: "🌶️ Curry en poudre", paprikaFume: "🌶️ Paprika fumé",
   paprikafume: "🌶️ Paprika fumé", bicarbonate: "🧂 Bicarbonate",
   grossel: "🧂 Gros sel", raisinssecs: "🍇 Raisins secs",
+  raisinsec: "🍇 Raisins secs", pommesdeterre: "🥔 Pommes de terre",
   pommeterre: "🥔 Pommes de terre", boeufbourguignon: "🥩 Bœuf à mijoter",
   betteraves: "🟣 Betteraves", chouvert: "🥬 Chou vert",
   cremefraiche: "🥛 Crème fraîche", boeufhache: "🥩 Bœuf haché",
