@@ -4727,6 +4727,8 @@ select, input[type="number"] {
 .accueil-menu-item:hover { background: rgba(255,255,255,.10); }
 .accueil-menu-card .menu-item-nom { color: #fff; }
 .accueil-menu-card .menu-moment { color: rgba(255,255,255,.7); }
+/* Cartes "Suggestions du jour" + "Le top du mois" : fond foncé opaque (comme "Dernier menu généré") au lieu de transparent */
+.mini-carte { background: rgba(18,16,22,.82); border: 1px solid rgba(255,255,255,.16); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 
 /* === Allergie personnelle : ligne rouge sous la carte (uniquement si concerné) === */
 .carte-allergie-perso {
@@ -4740,3 +4742,7 @@ select, input[type="number"] {
   font-weight: 600;
   line-height: 1.3;
 }
+/* Étiquette famille (ex: "⛔ Miel interdit < 1 an") : on enlève le fond blanc et on passe en rouge sombre, cohérent avec "Contient". Le cadre rouge de la carte (carte-alerte-bebe) est conservé. */
+.carte-etiquette-famille { background: rgba(28,12,14,.92); box-shadow: 0 2px 8px rgba(0,0,0,.55); }
+.carte-etiquette-bebe { color: #ff5a5a; border: 1px solid rgba(255,68,68,.6); }
+.carte-etiquette-enfant { color: #ffb04d; border: 1px solid rgba(255,153,0,.6); }
