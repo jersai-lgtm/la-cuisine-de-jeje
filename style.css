@@ -4746,3 +4746,14 @@ select, input[type="number"] {
 .carte-etiquette-famille { background: rgba(28,12,14,.92); box-shadow: 0 2px 8px rgba(0,0,0,.55); }
 .carte-etiquette-bebe { color: #ff5a5a; border: 1px solid rgba(255,68,68,.6); }
 .carte-etiquette-enfant { color: #ffb04d; border: 1px solid rgba(255,153,0,.6); }
+
+/* ===== Zone "Contient : …" enrichie : allergènes majeurs + allergies perso (ananas) + régime végan/végétarien + alerte famille ===== */
+.carte-indicateurs { margin-top: 6px; display: flex; flex-direction: column; gap: 3px; }
+.carte-allergenes { font-size: 11px; color: #b9b3ad; line-height: 1.35; }
+.carte-allergenes .alg-label { color: #8d8780; font-weight: 600; }
+.carte-allergenes .alg-perso { color: #ff5a5a; font-weight: 700; }
+.carte-allergenes-none { font-size: 11px; color: #6fcf8e; }
+.carte-regime-conflit { font-size: 11px; font-weight: 600; color: #ffb04d; }
+.carte-famille-ligne { font-size: 11px; font-weight: 600; line-height: 1.3; }
+.carte-famille-ligne.fam-bebe { color: #ff5a5a; }
+.carte-famille-ligne.fam-enfant { color: #ffb04d; }
