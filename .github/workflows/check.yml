@@ -1,0 +1,63 @@
+name: Vérification du site
+
+# Se lance à chaque envoi de code (push) et sur les pull requests.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:   # permet aussi de la lancer à la main depuis l'onglet Actions
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # --- 1. Syntaxe de tous les fichiers .js -------------------------------
+      - name: Vérifier la syntaxe de tous les .js
+        run: |
+          echo "🔎 Vérification de la syntaxe JavaScript..."
+          ERREUR=0
+          while IFS= read -r f; do
+            if node --check "$f" 2>/tmp/err; then
+              echo "✅ $f"
+            else
+              echo "❌ SYNTAXE INVALIDE : $f"
+              cat /tmp/err
+              ERREUR=1
+            fi
+          done < <(find . -path ./node_modules -prune -o -name "*.js" -print)
+          if [ "$ERREUR" -ne 0 ]; then
+            echo "::error::Au moins un fichier .js contient une erreur de syntaxe."
+            exit 1
+          fi
+          echo "👍 Tous les fichiers .js sont valides."
+
+      # --- 2. Les fichiers référencés dans index.html existent ---------------
+      - name: Vérifier que les fichiers de index.html existent
+        run: |
+          echo "🔎 Vérification des fichiers référencés dans index.html..."
+          MANQUANTS=""
+          # On extrait les src/href en .js ou .css, on enlève le ?v=... et les URL externes
+          REFS=$(grep -oE '(src|href)="[^"]*\.(js|css)(\?[^"]*)?"' index.html \
+                  | sed -E 's/.*="//; s/".*//; s/\?.*//' \
+                  | grep -vE '^https?://' \
+                  | sort -u)
+          for f in $REFS; do
+            if [ -f "$f" ]; then
+              echo "✅ $f"
+            else
+              echo "❌ FICHIER MANQUANT : $f"
+              MANQUANTS="$MANQUANTS $f"
+            fi
+          done
+          if [ -n "$MANQUANTS" ]; then
+            echo "::error::Fichier(s) référencé(s) dans index.html mais absent(s) du repo :$MANQUANTS"
+            exit 1
+          fi
+          echo "👍 Tous les fichiers référencés sont présents."
