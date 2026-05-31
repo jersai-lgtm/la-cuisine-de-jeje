@@ -1852,6 +1852,31 @@ function getFoyerProfil() {
   };
 }
 
+// Nombre de personnes par défaut à l'ouverture d'une recette = celui du foyer.
+// (Était appelée par choisirRecette mais jamais définie → la recette s'ouvrait
+//  sur data.base au lieu du foyer.)
+function calculerPersonnesPourRecette(nom) {
+  const data = (typeof recettes !== "undefined") ? recettes[nom] : null;
+  const base = (data && data.base) ? data.base : 4;
+  const foyer = window.userProfile?.foyer;
+  if (!foyer) return base;
+  // Recettes "à l'unité" (pâtes, brioche, baguette…) : on garde leur base
+  const exceptionsUnites = (window.EXCEPTIONS && window.EXCEPTIONS.unites) || [];
+  if (exceptionsUnites.includes(nom)) return base;
+  const totalFoyer = (foyer.adultes || 0) + (foyer.ados || 0) +
+                     (foyer.enfants || 0) + (foyer.bebes || foyer.bébés || 0);
+  let nb = totalFoyer;
+  if (data) {
+    if (data.cat === "cocktails") {
+      nb = (foyer.adultes || 0) || totalFoyer; // cocktails : adultes seulement
+    } else if (data.cat === "mocktails") {
+      nb = ((foyer.adultes || 0) + (foyer.ados || 0) + (foyer.enfants || 0)) || totalFoyer; // pas les bébés
+    }
+  }
+  if (!nb || nb < 1) return base;
+  return Math.min(15, Math.max(1, nb));
+}
+
 // === SYSTÈME NIVEAU CUISINE ===
 // Détecte le niveau d'une recette : "facile" | "moyen" | "eleve"
 function getNiveauRecette(cle) {

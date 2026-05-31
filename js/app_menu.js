@@ -72,6 +72,13 @@ const TOUS_LES_APEROS_SANS = [
   "jusPastequeMenuthe","virginpinacolada","cherryblossommocktail","shrubframboisebasilic","mocktailcoconananas"
 ];
 const TOUS_LES_APEROS = [...TOUS_LES_APEROS_ALCOOL, ...TOUS_LES_APEROS_SANS];
+// Apéritifs (catégorie "aperitifs" : tapenade, gougères, verrines… — la nourriture d'apéro)
+const TOUS_LES_APERITIFS = (typeof recettes !== "undefined")
+  ? Object.keys(recettes).filter(k => {
+      const c = (typeof categorieRecette === "function") ? categorieRecette(k) : (recettes[k] && recettes[k].cat);
+      return c === "aperitifs";
+    })
+  : [];
 
 const menusFestifs = {
   festif: {
@@ -183,15 +190,17 @@ async function genererMenuFestif() {
     const pickOne = arr => shuffleArray(arr)[0];
     const notesMap = {
       apero:   ["Pour bien commencer la soirée ! 🥂","L'apéro qui met en appétit ✨","Parfait pour briser la glace 🎉","Le coup d'envoi de la soirée 🍹"],
+      aperitifs: ["À picorer avant de passer à table 🥨","Parfait pour l'apéro dînatoire ✨","Quelques bouchées pour patienter 😋","L'amuse-bouche qui lance le repas 🎉"],
       entree:  ["Légère et savoureuse 🌿","Une entrée qui met en appétit 😋","Fraîche et colorée 🥗","Le parfait début de repas ✨"],
       plat:    ["Le plat star de la soirée ! 🌟","Un régal assuré 🍽️","Tout le monde va adorer ! 👌","La recette qui impressionne 🏆"],
       dessert: ["Une touche sucrée pour finir 🍰","Le point final parfait ✨","On termine en beauté ! 😋","Le dessert qui fait l'unanimité 🎉"],
     };
     const catMap = [
-      { key: "apero",   emoji: "🥂", label: "🥂 Apéro",  pool: themeData.apero   },
-      { key: "entree",  emoji: "🥗", label: "🥗 Entrée", pool: themeData.entree  },
-      { key: "plat",    emoji: "🍽️", label: "🍽️ Plat",   pool: themeData.plat    },
-      { key: "dessert", emoji: "🍰", label: "🍰 Dessert", pool: themeData.dessert },
+      { key: "apero",     emoji: "🥂", label: "🥂 Apéro",     pool: themeData.apero   },
+      { key: "aperitifs", emoji: "🥨", label: "🥨 Apéritif",  pool: themeData.aperitifs || TOUS_LES_APERITIFS },
+      { key: "entree",    emoji: "🥗", label: "🥗 Entrée",    pool: themeData.entree  },
+      { key: "plat",      emoji: "🍽️", label: "🍽️ Plat",      pool: themeData.plat    },
+      { key: "dessert",   emoji: "🍰", label: "🍰 Dessert",   pool: themeData.dessert },
     ];
     // Filtre commun : retire les recettes incompatibles allergies/régimes/non-repas/famille
     const filtrerPool = (pool, autoriseNonRepas) => pool.filter(k => {
@@ -211,7 +220,8 @@ async function genererMenuFestif() {
     menuFestifActuel = {
       theme: themeData.label,
       menu: catMap
-        .filter(c => structure.length === 0 || structure.some(s => c.key.includes(s) || s.includes(c.key)))
+        .filter(c => structure.length === 0 || structure.includes(c.key))
+        .filter(c => Array.isArray(c.pool) && c.pool.length > 0)
         .map(c => {
           const autoriseNonRepas = (c.key === "apero" || c.key === "dessert");
           const poolOK = filtrerPool(c.pool, autoriseNonRepas);
@@ -259,6 +269,14 @@ function afficherMenuFestif(menu, personnes) {
     const tip = lvl === "bebe" ? `${raison} — déconseillé bébé` : lvl === "enfant" ? `${raison} — déconseillé enfant` : "";
     const styleAlerte = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
                       : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
+    // Couleur par type de plat (apéro / entrée / plat / dessert)
+    const cat = (item.categorie || "").toLowerCase();
+    const styleCat = (cat.includes("apéro") || cat.includes("apero")) ? "border-left:3px solid #f0b429;background:rgba(240,180,41,.10)"
+                   : (cat.includes("entrée") || cat.includes("entree")) ? "border-left:3px solid #4caf50;background:rgba(76,175,80,.10)"
+                   : cat.includes("plat")    ? "border-left:3px solid #ef6c40;background:rgba(239,108,64,.10)"
+                   : cat.includes("dessert") ? "border-left:3px solid #ec6ea0;background:rgba(236,110,160,.10)" : "";
+    // L'alerte famille reste prioritaire ; sinon on applique la couleur du type
+    const styleBloc = styleAlerte || styleCat;
     const badge = lvl === "bebe"   ? `<span title="${tip}" style="margin-left:6px">🍼</span>`
                 : lvl === "enfant" ? `<span title="${tip}" style="margin-left:6px">🧒</span>` : "";
     const btn = lvl ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenItemFestif(${idx})" title="Regénérer">🔄</button>` : "";
@@ -266,7 +284,7 @@ function afficherMenuFestif(menu, personnes) {
 
     div.innerHTML = `
       <div class="plan-repas-row" style="grid-template-columns:1fr">
-        <div class="plan-repas" onclick="ouvrirRecettePlan('${item.recette}', ${personnes})" style="${styleAlerte};text-align:left;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+        <div class="plan-repas" onclick="ouvrirRecettePlan('${item.recette}', ${personnes})" style="${styleBloc};text-align:left;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
           <div style="font-size:32px">${getEmoji(item.recette)}</div>
           <div style="flex:1;min-width:0">
             <div class="plan-repas-label">${item.categorie} ${badge}${btn}</div>
@@ -1485,6 +1503,12 @@ function afficherMenusSemaine(menus, personnes) {
   container.innerHTML = "";
   const isComplet = window._formatRepas === "complet";
 
+  // Couleur par jour de la semaine
+  const COULEURS_JOURS = {
+    "Lundi":"#e2574c","Mardi":"#e58e26","Mercredi":"#f0b429","Jeudi":"#4caf50",
+    "Vendredi":"#1aa6b3","Samedi":"#5a6ee0","Dimanche":"#c44cc4"
+  };
+
   // Légende famille (uniquement si le foyer a bébé/enfant)
   const profilL = typeof getFoyerProfil === "function" ? getFoyerProfil() : null;
   if (profilL && (profilL.hasBebe || profilL.hasEnfant)) {
@@ -1501,6 +1525,10 @@ function afficherMenusSemaine(menus, personnes) {
   menus.semaine.forEach(jour => {
     const div = document.createElement("div");
     div.className = "plan-jour";
+    // Liseré coloré selon le jour
+    const couleurJour = COULEURS_JOURS[jour.jour] || "#888";
+    div.style.borderLeft = "5px solid " + couleurJour;
+    div.style.paddingLeft = "14px";
 
     if (isComplet) {
       // Format entrée/plat/dessert
@@ -1537,7 +1565,7 @@ function afficherMenusSemaine(menus, personnes) {
         </div>`;
       };
       div.innerHTML = `
-        <h3 class="plan-jour-titre">${jour.jour}</h3>
+        <h3 class="plan-jour-titre" style="color:${couleurJour}">${jour.jour}</h3>
         <div class="plan-repas-row">
           ${genMoment("midi", "☀️", "Midi")}
           ${genMoment("soir", "🌙", "Soir")}
@@ -1571,7 +1599,7 @@ function afficherMenusSemaine(menus, personnes) {
       const motifS = lvlS ? `<div class="plan-motif-famille" title="${tipS}">${lvlS === "bebe" ? "🍼" : "🌶️"} ${raisonS}</div>` : "";
 
       div.innerHTML = `
-        <h3 class="plan-jour-titre">${jour.jour}</h3>
+        <h3 class="plan-jour-titre" style="color:${couleurJour}">${jour.jour}</h3>
         <div class="plan-repas-row">
           <div class="plan-repas" style="${sMidi}" onclick="ouvrirRecettePlan('${midi}', ${personnes})">
             <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}</div>
