@@ -25,24 +25,12 @@ async function chargerStatsAdminComplet() {
     const snap = await _db.collection("utilisateurs").get();
     const users = snap.docs.map(d => d.data());
     console.log("👑 [Admin] Utilisateurs chargés :", users.length);
-
-    // 🟢 v258.2 : Présence — qui est en ligne maintenant (connectés + anonymes)
-    let enLigne = null;
-    try {
-      const presSnap = await _db.collection("presence").get();
-      enLigne = _calculerEnLigne(presSnap.docs.map(d => d.data()));
-      nettoyerPresence(presSnap); // 🧹 ménage best-effort (fire-and-forget)
-    } catch (e) {
-      console.warn("⚠️ Présence indisponible :", e?.message);
-    }
-
-    afficherAdminVueEnsemble(users, enLigne);
+    
+    afficherAdminVueEnsemble(users);
+    afficherAdminEnLigne(users);
     afficherAdminEngagement(users);
     afficherAdminPreferences(users);
     afficherAdminListeUsers(users);
-
-    // Rafraîchit le compteur "en ligne" toutes les 30 s tant que le panneau est ouvert
-    demarrerRefreshEnLigne();
   } catch (e) {
     console.error("❌ Erreur stats admin complet:", e);
     if (e?.code === "permission-denied") {
@@ -59,8 +47,39 @@ async function chargerStatsAdminComplet() {
   }
 }
 
+// === Section : Qui est en ligne maintenant ===
+// "En ligne" = lastSeen (heartbeat auth.js) de moins de 3 minutes.
+function afficherAdminEnLigne(users) {
+  const zone = document.getElementById("admin-stats-utilisateurs");
+  if (!zone) return;
+  const SEUIL = 3 * 60 * 1000;
+  const maintenant = Date.now();
+  const enLigne = users
+    .filter(u => {
+      if (!u.lastSeen) return false;
+      const t = new Date(u.lastSeen).getTime();
+      return !isNaN(t) && (maintenant - t) < SEUIL;
+    })
+    .sort((a, b) => new Date(b.lastSeen) - new Date(a.lastSeen));
+
+  const chips = enLigne.map(u => {
+    const prenom = u.prenom || u.email?.split("@")[0] || "Anonyme";
+    return `<span style="display:inline-flex;align-items:center;gap:4px;background:rgba(46,204,113,.18);color:#6ee29a;border:1px solid rgba(46,204,113,.45);border-radius:14px;padding:3px 10px;font-size:0.85rem;font-weight:600;margin:3px 4px 3px 0">🟢 ${escapeHTML(prenom)}</span>`;
+  }).join("");
+
+  const html = `
+    <div style="background:rgba(46,204,113,.06);border:1px solid rgba(46,204,113,.25);border-radius:10px;padding:10px 12px;margin-bottom:14px">
+      <h5 class="admin-section-titre" style="margin-top:0">🟢 En ligne maintenant (${enLigne.length})</h5>
+      ${enLigne.length
+        ? `<div>${chips}</div>`
+        : `<p class="avis-empty" style="margin:0">Personne en ligne en ce moment.</p>`}
+      <p style="font-size:0.72rem;opacity:0.6;margin:6px 0 0">Actif il y a moins de 3 minutes • rafraîchir pour mettre à jour</p>
+    </div>`;
+  zone.insertAdjacentHTML("afterbegin", html);
+}
+
 // === Section 1 : Vue d'ensemble utilisateurs ===
-function afficherAdminVueEnsemble(users, enLigne) {
+function afficherAdminVueEnsemble(users) {
   const zone = document.getElementById("admin-stats-utilisateurs");
   if (!zone) return;
   
@@ -101,11 +120,6 @@ function afficherAdminVueEnsemble(users, enLigne) {
   zone.innerHTML = `
     <h5 class="admin-section-titre">👥 Vue d'ensemble des utilisateurs</h5>
     <div class="admin-cartes-grille">
-      <div class="admin-carte admin-carte-vert">
-        <div class="admin-carte-val" id="admin-enligne-val">${enLigne ? enLigne.total : "—"}</div>
-        <div class="admin-carte-lbl">🟢 En ligne maintenant</div>
-        <div class="admin-carte-lbl" id="admin-enligne-sub" style="font-size:0.72rem;opacity:0.75;margin-top:0.15rem">${enLigne ? `${enLigne.connectes} connectés · ${enLigne.anonymes} anonymes` : ""}</div>
-      </div>
       <div class="admin-carte">
         <div class="admin-carte-val">${total}</div>
         <div class="admin-carte-lbl">Utilisateurs au total</div>
@@ -337,84 +351,3 @@ function afficherAdminListeUsers(users) {
   `;
 }
 
-
-// =============================================================================
-// 🟢 UTILISATEURS EN LIGNE (v258.2)
-// =============================================================================
-// Compte les visiteurs présents (lastSeen < 2 min) à partir de la collection
-// "presence" alimentée par le heartbeat (auth.js). Connectés + anonymes.
-// =============================================================================
-
-// Calcule { total, connectes, anonymes } à partir des docs de présence
-function _calculerEnLigne(docs) {
-  const SEUIL_MS = 2 * 60 * 1000; // 2 minutes
-  const now = Date.now();
-  let total = 0, connectes = 0, anonymes = 0;
-  (docs || []).forEach(d => {
-    let ts = null;
-    if (d.lastSeen && typeof d.lastSeen.toMillis === "function") ts = d.lastSeen.toMillis();
-    else if (typeof d.maj === "number") ts = d.maj;
-    if (ts !== null && (now - ts) <= SEUIL_MS) {
-      total++;
-      if (d.connecte) connectes++; else anonymes++;
-    }
-  });
-  return { total, connectes, anonymes };
-}
-
-// Met à jour uniquement le compteur "en ligne" sans tout re-rendre
-async function majUtilisateursEnLigne() {
-  const elVal = document.getElementById("admin-enligne-val");
-  if (!elVal) return; // panneau fermé
-  try {
-    const presSnap = await _db.collection("presence").get();
-    const e = _calculerEnLigne(presSnap.docs.map(d => d.data()));
-    elVal.textContent = e.total;
-    const elSub = document.getElementById("admin-enligne-sub");
-    if (elSub) elSub.textContent = `${e.connectes} connectés · ${e.anonymes} anonymes`;
-  } catch (err) {
-    // silencieux
-  }
-}
-
-// Rafraîchit le compteur toutes les 30 s ; s'arrête tout seul si le panneau est fermé
-function demarrerRefreshEnLigne() {
-  if (window._intervalEnLigne) clearInterval(window._intervalEnLigne);
-  window._intervalEnLigne = setInterval(function () {
-    if (!document.getElementById("admin-enligne-val")) {
-      clearInterval(window._intervalEnLigne);
-      window._intervalEnLigne = null;
-      return;
-    }
-    majUtilisateursEnLigne();
-  }, 30 * 1000);
-}
-
-// 🧹 Nettoyage des docs de présence obsolètes (> 1 jour) — best-effort.
-// Le compteur "en ligne" reste juste même sans ménage, mais ça évite que la
-// collection "presence" grossisse indéfiniment. Lancé au chargement de l'admin.
-async function nettoyerPresence(docsSnap) {
-  try {
-    if (!docsSnap || typeof docsSnap.forEach !== "function") return;
-    const SEUIL_MS = 24 * 60 * 60 * 1000; // 1 jour
-    const now = Date.now();
-    const aSupprimer = [];
-    docsSnap.forEach(doc => {
-      const d = doc.data() || {};
-      let ts = (d.lastSeen && typeof d.lastSeen.toMillis === "function")
-        ? d.lastSeen.toMillis()
-        : (typeof d.maj === "number" ? d.maj : null);
-      if (ts === null || (now - ts) > SEUIL_MS) aSupprimer.push(doc.ref);
-    });
-    if (aSupprimer.length === 0) return;
-    // Suppression par lots (limite batch Firestore = 500)
-    for (let i = 0; i < aSupprimer.length; i += 400) {
-      const batch = _db.batch();
-      aSupprimer.slice(i, i + 400).forEach(ref => batch.delete(ref));
-      await batch.commit();
-    }
-    console.log(`🧹 [Présence] ${aSupprimer.length} doc(s) obsolète(s) supprimé(s)`);
-  } catch (e) {
-    console.warn("⚠️ Nettoyage présence :", e?.message);
-  }
-}
