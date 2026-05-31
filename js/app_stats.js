@@ -918,6 +918,7 @@ function afficherSection(section, btn) {
   } else {
     if (cuisine) cuisine.style.display = "none";
     if (planif)  planif.style.display = "none";
+    if (festif)  festif.style.display = "none";
     if (menuCats) menuCats.style.display = "flex";
     if (searchBar) searchBar.style.display = "flex";
     // Retour vers l'accueil personnalisé

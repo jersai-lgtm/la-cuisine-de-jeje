@@ -1527,8 +1527,8 @@ function afficherMenusSemaine(menus, personnes) {
     div.className = "plan-jour";
     // Liseré coloré selon le jour
     const couleurJour = COULEURS_JOURS[jour.jour] || "#888";
-    div.style.borderLeft = "5px solid " + couleurJour;
-    div.style.paddingLeft = "14px";
+    div.style.border = "2px solid " + couleurJour;
+    div.style.boxShadow = "0 0 12px " + couleurJour + "44";
 
     if (isComplet) {
       // Format entrée/plat/dessert
@@ -1828,14 +1828,27 @@ function ouvrirRecettePlan(recetteKey, personnes) {
 }
 
 // Récupère récursivement toutes les clés de recettes présentes dans un objet menu
-function _collecterClesMenu(obj, acc) {
-  if (!obj) return;
-  if (typeof obj === "string") {
-    if (typeof recettes !== "undefined" && recettes[obj]) acc.add(obj);
-    return;
+function _collecterClesMenu(source, acc) {
+  if (!source) return;
+  const okRec = k => k && typeof recettes !== "undefined" && recettes[k];
+  // Menu thématique : { theme, menu: [ {recette}, ... ] }
+  if (Array.isArray(source.menu)) {
+    source.menu.forEach(it => { if (it && okRec(it.recette)) acc.add(it.recette); });
   }
-  if (Array.isArray(obj)) { obj.forEach(o => _collecterClesMenu(o, acc)); return; }
-  if (typeof obj === "object") { Object.values(obj).forEach(v => _collecterClesMenu(v, acc)); }
+  // Menu de la semaine : { semaine: [ {jour, midi, soir}, ... ] }
+  if (Array.isArray(source.semaine)) {
+    source.semaine.forEach(jour => {
+      ["midi", "soir"].forEach(moment => {
+        const repas = jour && jour[moment];
+        if (!repas) return;
+        if (typeof repas === "string") { if (okRec(repas)) acc.add(repas); return; }
+        if (okRec(repas.recette)) acc.add(repas.recette);            // format simple
+        ["entree", "plat", "dessert"].forEach(c => {                 // format complet
+          if (repas[c] && okRec(repas[c].recette)) acc.add(repas[c].recette);
+        });
+      });
+    });
+  }
 }
 
 // Ajoute toutes les recettes du menu courant (type "semaine" ou "thematique") à la liste de courses
@@ -1847,7 +1860,9 @@ function ajouterMenuAuxCourses(type) {
     source = (typeof menuFestifActuel !== "undefined") ? menuFestifActuel : null;
     personnes = parseInt(document.getElementById("festif-personnes")?.value) || 4;
   } else {
-    source = (typeof menusSemaine !== "undefined") ? menusSemaine : null;
+    source = (typeof window._derniersMenus !== "undefined" && window._derniersMenus)
+      ? window._derniersMenus
+      : ((typeof menusSemaine !== "undefined") ? menusSemaine : null);
     personnes = parseInt(document.getElementById("plan-personnes")?.value) || 4;
   }
   if (!source) { if (typeof afficherToast === "function") afficherToast("Aucun menu à ajouter."); return; }
