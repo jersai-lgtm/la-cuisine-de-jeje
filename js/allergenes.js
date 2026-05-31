@@ -94,30 +94,24 @@ function appliquerPreferencesVisuelles() {
     zone.className = 'carte-indicateurs';
     info.appendChild(zone);
 
-    // 1) Ligne "Contient :" — allergènes majeurs + TES allergies perso (ex: Ananas), tes allergènes en rouge
-    const presents = detecterAllergenesRecette(texte);
+    // 1) Ligne "Contient :" — UNIQUEMENT TES allergies présentes dans la recette
+    //    (allergènes majeurs cochés dans ton profil + allergies perso comme Ananas).
+    //    Si aucune de tes allergies n'est présente → on n'affiche RIEN.
     const items = [];
-    presents.forEach(a => {
-      const label = ALLERGENES_MAJEURS[a];
-      items.push(allergenesPerso.has(a) ? `<span class="alg-perso">${label}</span>` : label);
+    detecterAllergenesRecette(texte).forEach(a => {
+      if (allergenesPerso.has(a)) items.push(ALLERGENES_MAJEURS[a]);
     });
-    // Allergies perso libres (ex: ananas) détectées dans la recette
     (prefs?.allergiesCustom || []).forEach(mot => {
       const m = (mot || '').toLowerCase().trim();
-      if (m && texte.includes(m)) {
-        const label = mot.charAt(0).toUpperCase() + mot.slice(1);
-        items.push(`<span class="alg-perso">${label}</span>`);
-      }
+      if (m && texte.includes(m)) items.push(mot.charAt(0).toUpperCase() + mot.slice(1));
     });
-    const ligne = document.createElement('div');
     if (items.length) {
+      const ligne = document.createElement('div');
       ligne.className = 'carte-allergenes';
-      ligne.innerHTML = `<span class="alg-label">Contient :</span> ${items.join(' · ')}`;
-    } else {
-      ligne.className = 'carte-allergenes-none';
-      ligne.textContent = '✓ Sans allergène majeur';
+      ligne.innerHTML = `<span class="alg-label">⚠️ Contient :</span> ` +
+        items.map(l => `<span class="alg-perso">${l}</span>`).join(' · ');
+      zone.appendChild(ligne);
     }
-    zone.appendChild(ligne);
 
     // 2) Conflit régime végan / végétarien (pour l'utilisateur connecté)
     if (prefs) {
