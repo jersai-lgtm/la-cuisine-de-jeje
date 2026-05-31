@@ -296,11 +296,22 @@ function chargerAccueilMenus() {
   if (hist.length === 0) {
     try { hist = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]"); } catch(e) {}
   }
-  if (hist.length === 0) {
-    row.innerHTML = `<div class="accueil-empty">Générez votre premier menu dans l'onglet Menus !</div>`;
-    return;
+  // Fallback : pas d'historique (ex: après "Effacer"), mais un menu est ENCORE chargé
+  // dans le planificateur → on le réaffiche quand même sur l'accueil.
+  let dernier = hist[0];
+  if (!dernier) {
+    const charge = window._derniersMenus || null;
+    const aDuContenu = charge && (
+      (Array.isArray(charge.semaine) && charge.semaine.length) ||
+      (Array.isArray(charge.menu) && charge.menu.length)
+    );
+    if (aDuContenu) {
+      dernier = { menu: charge, personnes: charge.personnes || 4 };
+    } else {
+      row.innerHTML = `<div class="accueil-empty">Générez votre premier menu dans l'onglet Menus !</div>`;
+      return;
+    }
   }
-  const dernier = hist[0];
   const persMenu = dernier.personnes || dernier?.menu?.personnes || 4;
   const semaine = dernier?.menu?.semaine || [];
   if (semaine.length === 0) {
