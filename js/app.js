@@ -292,25 +292,27 @@ function chargerAccueilFavoris() {
 function chargerAccueilMenus() {
   const row = document.getElementById("accueil-menus-row");
   if (!row) return;
-  let hist = window.userProfile?.historiqueMenus || [];
-  if (hist.length === 0) {
-    try { hist = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]"); } catch(e) {}
+  // 1) Le menu réellement généré/chargé en dernier (semaine OU thématique) prime
+  let dernier = null;
+  const courant = window._dernierMenuGenere || window._derniersMenus || null;
+  const courantOk = courant && (
+    (Array.isArray(courant.semaine) && courant.semaine.length) ||
+    (Array.isArray(courant.menu) && courant.menu.length)
+  );
+  if (courantOk) {
+    dernier = { menu: courant, personnes: courant.personnes || 4 };
   }
-  // Fallback : pas d'historique (ex: après "Effacer"), mais un menu est ENCORE chargé
-  // dans le planificateur → on le réaffiche quand même sur l'accueil.
-  let dernier = hist[0];
+  // 2) Sinon, l'historique sauvegardé (Firebase puis localStorage)
   if (!dernier) {
-    const charge = window._derniersMenus || null;
-    const aDuContenu = charge && (
-      (Array.isArray(charge.semaine) && charge.semaine.length) ||
-      (Array.isArray(charge.menu) && charge.menu.length)
-    );
-    if (aDuContenu) {
-      dernier = { menu: charge, personnes: charge.personnes || 4 };
-    } else {
-      row.innerHTML = `<div class="accueil-empty">Générez votre premier menu dans l'onglet Menus !</div>`;
-      return;
+    let hist = window.userProfile?.historiqueMenus || [];
+    if (hist.length === 0) {
+      try { hist = JSON.parse(localStorage.getItem("cuisineJeje_histMenus") || "[]"); } catch(e) {}
     }
+    dernier = hist[0];
+  }
+  if (!dernier) {
+    row.innerHTML = `<div class="accueil-empty">Générez votre premier menu dans l'onglet Menus !</div>`;
+    return;
   }
   const persMenu = dernier.personnes || dernier?.menu?.personnes || 4;
   const semaine = dernier?.menu?.semaine || [];

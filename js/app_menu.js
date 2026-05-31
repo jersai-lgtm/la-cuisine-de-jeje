@@ -236,6 +236,8 @@ async function genererMenuFestif() {
   }
 
   afficherMenuFestif(menuFestifActuel, parseInt(personnes));
+  menuFestifActuel.personnes = parseInt(personnes);
+  window._dernierMenuGenere = menuFestifActuel;
   btn.textContent = "✨ Générer mon menu";
   btn.disabled = false;
 }
@@ -623,6 +625,8 @@ async function genererMenus() {
   menusSemaine = validerRegimeMenus(menusSemaine, tagsFinaux, allergiesFinales);
   sauvegarderMenus(menusSemaine, personnes, joursSelectionnes);
   afficherMenusSemaine(menusSemaine, parseInt(personnes));
+  menusSemaine.personnes = parseInt(personnes);
+  window._dernierMenuGenere = menusSemaine;
 
   btn.textContent = "✨ Générer mes menus";
   btn.disabled = false;
@@ -1646,6 +1650,34 @@ function afficherMenusSemaine(menus, personnes) {
 }
 
 // Injecte un bouton ❤️ dans le header d'un écran menu (semaine ou thématique)
+// Effacer / réinitialiser le menu courant (semaine OU thématique)
+function effacerMenuCourant() {
+  window._dernierMenuGenere = null;
+  window._derniersMenus = null;
+  menusSemaine = null;
+  menuFestifActuel = null;
+  try { localStorage.removeItem("cuisineJeje_histMenus"); } catch(e) {}
+  try {
+    Object.keys(sessionStorage).forEach(k => {
+      if (k.indexOf(STORAGE_KEY) === 0 || k === "cuisineJeje_festif") sessionStorage.removeItem(k);
+    });
+  } catch(e) {}
+  if (window.currentUser && window.db && window.userProfile) {
+    window.userProfile.historiqueMenus = [];
+    window.db.collection("utilisateurs").doc(window.currentUser.uid)
+      .update({ historiqueMenus: [] }).catch(() => {});
+  }
+  // Revenir aux formulaires (cacher les résultats)
+  ["festif-result", "plan-result", "festif-courses", "plan-courses"].forEach(id => {
+    const el = document.getElementById(id); if (el) el.style.display = "none";
+  });
+  ["festif-form", "plan-form"].forEach(id => {
+    const el = document.getElementById(id); if (el) el.style.display = "block";
+  });
+  if (typeof chargerAccueilMenus === "function") chargerAccueilMenus();
+  if (typeof afficherToast === "function") afficherToast("🗑️ Menu effacé", "info");
+}
+
 function injecterBoutonMenuFavori(containerId, type, menu, personnes) {
   if (!window.currentUser) return; // pas de favoris sans compte
   const container = document.getElementById(containerId);
@@ -1780,6 +1812,8 @@ window.appliquerMenuFavoriSemaine = function(id) {
     // Restaurer menusSemaine au cas où il aurait été écrasé entre-temps
     menusSemaine = JSON.parse(JSON.stringify(fav.menu));
     afficherMenusSemaine(menusSemaine, fav.personnes || 4);
+    menusSemaine.personnes = fav.personnes || 4;
+    window._dernierMenuGenere = menusSemaine;
     window._chargementFavoriEnCours = false;
     // Toast de confirmation
     if (typeof afficherToast === "function") afficherToast(`📅 Menu chargé : ${fav.nom}`, "info");
