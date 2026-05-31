@@ -25,6 +25,7 @@ _auth.onAuthStateChanged(async function(user) {
   if (user) {
     await chargerProfil(user);
     afficherUtilisateurConnecte(user);
+    demarrerPresence();
     // Purger le cache menus/suggestions pour appliquer le profil
     try {
       Object.keys(localStorage).forEach(k => {
@@ -44,9 +45,36 @@ _auth.onAuthStateChanged(async function(user) {
     }
   } else {
     window.userProfile = null;
+    arreterPresence();
     afficherBoutonConnexion();
   }
 });
+
+// ==============================
+// PRÉSENCE EN LIGNE (heartbeat)
+// Écrit "lastSeen" dans le profil toutes les 60 s tant que l'onglet est visible.
+// L'admin liste ceux dont lastSeen date de moins de 3 min comme "en ligne".
+// ==============================
+let _presenceTimer = null;
+async function pingPresence() {
+  if (!window.currentUser) return;
+  if (document.visibilityState && document.visibilityState !== "visible") return;
+  try {
+    await _db.collection("utilisateurs").doc(window.currentUser.uid)
+      .update({ lastSeen: new Date().toISOString() });
+  } catch (e) {}
+}
+function _onVisiblePing() { if (document.visibilityState === "visible") pingPresence(); }
+function demarrerPresence() {
+  arreterPresence();
+  pingPresence();
+  _presenceTimer = setInterval(pingPresence, 60000);
+  document.addEventListener("visibilitychange", _onVisiblePing);
+}
+function arreterPresence() {
+  if (_presenceTimer) { clearInterval(_presenceTimer); _presenceTimer = null; }
+  document.removeEventListener("visibilitychange", _onVisiblePing);
+}
 
 // ==============================
 // CONNEXION / INSCRIPTION
@@ -655,68 +683,3 @@ window.retirerAC = function(val, pfx) {
   if (window["_ac_" + pfx]) window["_ac_" + pfx] = window["_ac_" + pfx].filter(a => a !== val);
   renderAC(pfx);
 };
-
-// =============================================================================
-// 🟢 PRÉSENCE / UTILISATEURS EN LIGNE (v258.2)
-// =============================================================================
-// Chaque visiteur (connecté OU anonyme) écrit un "heartbeat" toutes les 60 s
-// dans la collection Firestore "presence". L'admin compte ensuite ceux dont
-// lastSeen date de moins de 2 minutes. La présence est totalement silencieuse :
-// elle ne doit jamais bloquer ou casser l'appli.
-// =============================================================================
-(function initPresence() {
-  // Identifiant visiteur persistant (inclut les visiteurs anonymes)
-  function getVisitorId() {
-    try {
-      let id = localStorage.getItem("visitorId");
-      if (!id) {
-        id = (window.crypto && crypto.randomUUID)
-          ? crypto.randomUUID()
-          : ("v_" + Date.now() + "_" + Math.random().toString(36).slice(2, 10));
-        localStorage.setItem("visitorId", id);
-      }
-      return id;
-    } catch (e) {
-      // localStorage indisponible → id volatil pour la session
-      if (!window._visitorIdVolatile) {
-        window._visitorIdVolatile = "v_" + Date.now() + "_" + Math.random().toString(36).slice(2, 10);
-      }
-      return window._visitorIdVolatile;
-    }
-  }
-
-  const VISITOR_ID = getVisitorId();
-  const PING_MS = 60 * 1000; // toutes les 60 s
-
-  async function ping() {
-    try {
-      if (typeof _db === "undefined" || !_db) return;
-      await _db.collection("presence").doc(VISITOR_ID).set({
-        lastSeen: firebase.firestore.FieldValue.serverTimestamp(),
-        connecte: !!window.currentUser,
-        uid: window.currentUser ? window.currentUser.uid : null,
-        maj: Date.now() // secours si lastSeen pas encore résolu côté serveur
-      }, { merge: true });
-    } catch (e) {
-      // silencieux
-    }
-  }
-
-  // Premier ping au démarrage, puis toutes les 60 s
-  ping();
-  setInterval(ping, PING_MS);
-
-  // Re-ping quand l'onglet redevient visible
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") ping();
-  });
-
-  // Re-ping à chaque changement d'état de connexion (met à jour connecte/uid)
-  try {
-    if (typeof _auth !== "undefined" && _auth.onAuthStateChanged) {
-      _auth.onAuthStateChanged(function () { ping(); });
-    }
-  } catch (e) {}
-
-  window._presencePing = ping;
-})();
