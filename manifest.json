@@ -1,7 +1,8 @@
 {
+  "id": "/la-cuisine-de-jeje/",
   "name": "La Cuisine de Jéjé",
   "short_name": "Cuisine Jéjé",
-  "description": "235 recettes de cuisine avec calculateur de portions",
+  "description": "Près de 500 recettes familiales, adaptées bébé et enfant, avec calculateur de portions.",
   "start_url": "/la-cuisine-de-jeje/",
   "scope": "/la-cuisine-de-jeje/",
   "display": "standalone",
