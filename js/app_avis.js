@@ -172,9 +172,9 @@ async function chargerStatsAvis() {
       `;
     }
     
-    // Bouton selon état
-    if (window.currentUser && zoneMonAvis) {
-      const monAvis = tous.find(a => a.uid === window.currentUser.uid);
+    // Bouton selon état (déconnecté → on remet le bouton "Noter", pas de reste obsolète)
+    if (zoneMonAvis) {
+      const monAvis = window.currentUser ? tous.find(a => a.uid === window.currentUser.uid) : null;
       if (monAvis) {
         zoneMonAvis.innerHTML = `
           <div class="mon-avis-deja">

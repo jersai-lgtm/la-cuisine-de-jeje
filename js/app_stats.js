@@ -958,6 +958,8 @@ window.addEventListener('profilMisAJour', () => {
   if (typeof chargerAccueilFavoris === "function") chargerAccueilFavoris();
   if (typeof chargerAccueilMenusFavoris === "function") chargerAccueilMenusFavoris();
   if (typeof chargerAccueilFetiches === "function") chargerAccueilFetiches();
+  // Rafraîchir le bouton d'avis selon le compte (corrige le "redonner mon avis" après reconnexion)
+  if (typeof chargerStatsAvis === "function") chargerStatsAvis();
   // Si la vue dédiée "Menus favoris" est ouverte, la re-rendre
   const secMF = document.getElementById("section-menus-favoris");
   if (secMF && secMF.style.display !== "none" && typeof filtrerMenusFavoris === "function") {
