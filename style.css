@@ -4722,9 +4722,11 @@ select, input[type="number"] {
 }
 
 /* === Accueil : meilleure lisibilité des cartes menu (correction transparence) === */
-.accueil-menu-card { background: rgba(255,255,255,.13); border-color: rgba(255,255,255,.18); }
-.accueil-menu-item { border-bottom-color: rgba(255,255,255,.13); border-radius: 8px; padding: 6px 4px; transition: background .15s; }
+.accueil-menu-card { background: rgba(18,16,22,.82); border: 1px solid rgba(255,255,255,.16); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.accueil-menu-item { border-bottom-color: rgba(255,255,255,.14); border-radius: 8px; padding: 6px 4px; transition: background .15s; }
 .accueil-menu-item:hover { background: rgba(255,255,255,.10); }
+.accueil-menu-card .menu-item-nom { color: #fff; }
+.accueil-menu-card .menu-moment { color: rgba(255,255,255,.7); }
 
 /* === Allergie personnelle : ligne rouge sous la carte (uniquement si concerné) === */
 .carte-allergie-perso {
