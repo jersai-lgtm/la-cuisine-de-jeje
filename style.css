@@ -1857,6 +1857,32 @@ select, input[type="number"] {
   justify-content: center;
   z-index: 2;
 }
+/* Badge 🆕 « nouveauté » (≤ 7 jours) — haut-centre sur les mini-cartes, haut-droite sur les cartes catalogue */
+.mini-carte-nouveau {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  background: rgba(0,0,0,.55);
+  border-radius: 12px;
+  padding: 0 7px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+}
+.carte-badge-nouveau {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+  z-index: 3;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,.6));
+}
 .mini-carte {
   position: relative;
 }
