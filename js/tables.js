@@ -1618,6 +1618,8 @@ function choisirRecette(nom, personnesOverride) {
   // Bouton "J'ai cuisiné" (v240)
   if (typeof majBoutonCuisine === "function") majBoutonCuisine(nom);
   
+  // v259.40 : Note en étoiles de la recette (au-dessus de "Mes notes")
+  if (typeof injecterEtoilesRecette === "function") injecterEtoilesRecette(nom);
   // v245 : Section "Mes notes personnelles" en bas de la fiche
   if (typeof injecterNotesRecette === "function") injecterNotesRecette(nom);
 }
