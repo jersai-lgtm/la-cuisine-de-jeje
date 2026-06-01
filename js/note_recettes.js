@@ -29,11 +29,37 @@ window.getNoteCommunaute = function(key) {
   return { moyenne: c.sum / c.count, nb: c.count };
 };
 
-// Charge toutes les notes partagées et reconstruit l'agrégat, puis rafraîchit les badges
-window.chargerNotesCommunaute = async function() {
-  if (typeof _db === "undefined" || !_db) return;
+// Re-render les menus actuellement affichés pour mettre à jour leurs notes ★ (elles sont figées dans le HTML)
+window.rafraichirNotesMenus = function() {
+  try { if (typeof chargerAccueilMenus === "function") chargerAccueilMenus(); } catch (e) {}
+  // Planificateur (semaine) si affiché
   try {
-    const snap = await _db.collection("notesEtoiles").get();
+    const pr = document.getElementById("plan-result");
+    if (pr && pr.style.display !== "none" && window._derniersMenus && typeof afficherMenusSemaine === "function") {
+      const pers = window._derniersMenus.personnes || parseInt(document.getElementById("plan-personnes")?.value) || 4;
+      afficherMenusSemaine(window._derniersMenus, pers);
+    }
+  } catch (e) {}
+  // Menu festif / thématique si affiché
+  try {
+    const fr = document.getElementById("festif-result");
+    if (fr && fr.style.display !== "none" && typeof afficherMenuFestif === "function") {
+      let data = null;
+      try { data = JSON.parse(sessionStorage.getItem("cuisineJeje_festif") || "null"); } catch (e2) {}
+      if ((!data || !data.menu) && window._dernierMenuGenere && Array.isArray(window._dernierMenuGenere.menu)) {
+        data = { menu: window._dernierMenuGenere, personnes: window._dernierMenuGenere.personnes || 4 };
+      }
+      if (data && data.menu) afficherMenuFestif(data.menu, data.personnes || 4);
+    }
+  } catch (e) {}
+};
+
+// Écoute TEMPS RÉEL des notes partagées : toute note (mienne ou d'un autre compte)
+// reconstruit l'agrégat puis rafraîchit cartes + mini-cartes + menus, sans recharger la page.
+window.chargerNotesCommunaute = function() {
+  if (typeof _db === "undefined" || !_db) return;
+  if (window._notesEtoilesUnsub) return; // un seul écouteur
+  const traiter = (snap) => {
     const cache = {};
     snap.forEach(doc => {
       const d = doc.data();
@@ -43,10 +69,17 @@ window.chargerNotesCommunaute = async function() {
       cache[d.recette].count += 1;
     });
     window._notesEtoilesCache = cache;
+    if (typeof appliquerBadgeEtoilesCartes === "function") appliquerBadgeEtoilesCartes();
+    if (typeof rafraichirNotesMenus === "function") rafraichirNotesMenus();
+  };
+  try {
+    window._notesEtoilesUnsub = _db.collection("notesEtoiles").onSnapshot(
+      traiter,
+      (err) => console.warn("Écoute des notes communauté échouée:", err)
+    );
   } catch (e) {
     console.warn("Chargement des notes communauté échoué:", e);
   }
-  if (typeof appliquerBadgeEtoilesCartes === "function") appliquerBadgeEtoilesCartes();
 };
 
 // Enregistre (ou retire si n<=0) MA note pour une recette
@@ -72,6 +105,7 @@ window.setNoteEtoiles = async function(key, n) {
   // 3) Rafraîchir l'affichage immédiatement
   if (typeof injecterEtoilesRecette === "function") injecterEtoilesRecette(key);
   if (typeof appliquerBadgeEtoilesCartes === "function") appliquerBadgeEtoilesCartes();
+  if (typeof rafraichirNotesMenus === "function") rafraichirNotesMenus();
 
   // 4) Sauvegardes Firebase
   const docId = window.currentUser.uid + "__" + key;
