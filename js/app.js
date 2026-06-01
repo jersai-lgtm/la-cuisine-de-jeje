@@ -1003,7 +1003,7 @@ function miniCarte(key) {
   if (typeof calculerNutriScoreRecette === "function") {
     // Exclure cocktails/mocktails (boissons alcoolisées/sucrées)
     const r2 = recettes[key];
-    const isDrink = r2 && (r2.categorie === "cocktails" || r2.categorie === "mocktails");
+    const isDrink = r2 && (r2.cat === "cocktails" || r2.cat === "mocktails");
     if (!isDrink) {
       const tabKey = Object.keys(r2 || {}).find(k => k.startsWith("tableau") && Array.isArray(r2[k]));
       if (tabKey) {
@@ -1021,7 +1021,7 @@ function miniCarte(key) {
   
   // Badge 🆕 (recette ajoutée il y a ≤ 7 jours)
   const badgeNouveau = (typeof estNouveaute === "function" && estNouveaute(key))
-    ? `<span class="mini-carte-nouveau" title="Nouvelle recette">🆕</span>` : "";
+    ? `<span class="mini-carte-nouveau" title="Nouvelle recette">NEW</span>` : "";
 
   return `<div class="mini-carte" style="${styleAlerte}" title="${titleAlerte}" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
     <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">

@@ -93,7 +93,7 @@ function appliquerPreferencesVisuelles() {
     if (typeof estNouveaute === 'function' && estNouveaute(key)) {
       const bn = document.createElement('span');
       bn.className = 'carte-badge-nouveau';
-      bn.textContent = '🆕';
+      bn.textContent = 'NEW';
       bn.title = 'Nouvelle recette';
       carte.appendChild(bn);
     }
