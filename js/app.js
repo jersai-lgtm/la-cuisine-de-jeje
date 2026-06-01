@@ -589,6 +589,16 @@ function effacerRecents() {
 }
 
 // Suggestions selon profil
+// Hash de chaîne (FNV-1a) — distribution uniforme, utilisé pour le mélange des suggestions
+function hashChaine(s) {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
 // ==============================
 // SAISONS — printemps / été / automne / hiver
 // ==============================
@@ -867,8 +877,8 @@ function chargerAccueilSuggestions() {
     return ![...motsExclus].some(m => texte.includes(m));
   });
 
-  // Seed basé sur la date pour stabiliser le mélange du jour
-  const seed = today.split("/").reduce((a, b) => parseInt(a) + parseInt(b), 0);
+  // Seed basé sur la date COMPLÈTE (hash) → chaque jour distinct, sans collision
+  const seed = hashChaine(today);
   // Filtre saison STRICT : on garde uniquement les recettes
   //   - taguées avec la saison actuelle
   //   - OU sans tag saison (= toute l'année)
@@ -887,9 +897,9 @@ function chargerAccueilSuggestions() {
     const scoreA = scoreNiveauPourUser(a, userNiv);
     const scoreB = scoreNiveauPourUser(b, userNiv);
     if (scoreA !== scoreB) return scoreB - scoreA; // score plus élevé = priorité
-    // À score égal, mélange stable basé sur la date
-    const ha = (a.charCodeAt(0) * seed) % 997;
-    const hb = (b.charCodeAt(0) * seed) % 997;
+    // À score égal, mélange varié et stable du jour (hash de la clé entière + graine)
+    const ha = hashChaine(a + ":" + seed);
+    const hb = hashChaine(b + ":" + seed);
     return ha - hb;
   }).slice(0, 6);  // 6 suggestions du jour
 
