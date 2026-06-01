@@ -1,20 +1,23 @@
 // ============================================================
-// version.js — Affiche la version déployée pour repérer toute
-// régression d'un coup d'œil.
-//  • Un petit badge "✅ Version XXX chargée" apparaît 2,5 s à chaque ouverture.
-//  • La version est aussi loggée dans la console (F12).
+// version.js — Affiche la version déployée UNIQUEMENT pour l'admin (Jérôme),
+// pour repérer toute régression d'un coup d'œil. Les autres utilisateurs
+// ne voient rien (le badge est réservé à l'admin via estAdmin()).
+//  • La version est toujours loggée dans la console (F12).
 //
 // 👉 À CHAQUE déploiement : mets ce numéro À JOUR (le même que le ?v= dans
 //    index.html et que CACHE_NAME dans service-worker.js).
 // ============================================================
-const APP_VERSION = "259-16";
+const APP_VERSION = "259-17";
 
 console.log("%c🍳 La Cuisine de Jéjé — version " + APP_VERSION,
             "color:#ff6ba1;font-weight:bold;font-size:14px");
 
 (function () {
-  function afficherBadge() {
-    if (document.getElementById("app-version-badge")) return;
+  function montrerBadge() {
+    if (window._badgeVersionMontre) return;
+    // Réservé à l'admin : inutile (et parasite) pour les utilisateurs normaux
+    if (typeof estAdmin !== "function" || !estAdmin()) return;
+    window._badgeVersionMontre = true;
     const b = document.createElement("div");
     b.id = "app-version-badge";
     b.textContent = "✅ Version " + APP_VERSION + " chargée";
@@ -30,6 +33,9 @@ console.log("%c🍳 La Cuisine de Jéjé — version " + APP_VERSION,
       setTimeout(function () { b.remove(); }, 700);
     }, 2500);
   }
-  if (document.readyState !== "loading") afficherBadge();
-  else document.addEventListener("DOMContentLoaded", afficherBadge);
+  // Le statut admin n'est connu qu'après la connexion (auth asynchrone) :
+  // on (re)tente à chaque mise à jour de profil, et une fois au chargement.
+  window.addEventListener("profilMisAJour", montrerBadge);
+  if (document.readyState !== "loading") montrerBadge();
+  else document.addEventListener("DOMContentLoaded", montrerBadge);
 })();
