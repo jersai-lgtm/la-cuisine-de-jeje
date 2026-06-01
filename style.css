@@ -4807,3 +4807,40 @@ select, input[type="number"] {
 .carte-famille-ligne { font-size: 11px; font-weight: 600; line-height: 1.3; }
 .carte-famille-ligne.fam-bebe { color: #ff5a5a; }
 .carte-famille-ligne.fam-enfant { color: #ffb04d; }
+
+/* ===== Note communautaire en étoiles par recette (v259.41) ===== */
+.etoiles-section {
+  display: flex; flex-direction: column; gap: 8px;
+  background: #1c1922; border: 1px solid #2a2630; border-radius: 14px;
+  padding: 14px 16px; margin: 16px 0 8px;
+}
+.etoiles-com-titre { font-weight: 700; color: #f5f5f5; font-size: 14px; }
+.etoiles-com { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.etoiles-com-stars { color: #f5b301; font-size: 22px; letter-spacing: 1px; }
+.etoiles-com-moy { color: #fff; font-size: 18px; }
+.etoiles-com-nb { color: #9b94a3; font-size: 13px; }
+.etoiles-com-vide { color: #9b94a3; font-size: 14px; font-style: italic; }
+.etoiles-ma-ligne {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-top: 1px solid #2a2630; padding-top: 10px; margin-top: 2px;
+}
+.etoiles-titre { font-weight: 700; color: #f5f5f5; }
+.fiche-etoiles { display: flex; gap: 4px; }
+.fiche-etoile {
+  font-size: 28px; line-height: 1; cursor: pointer; color: #56505e;
+  transition: transform .1s ease, color .1s ease; user-select: none;
+}
+.fiche-etoile:hover { transform: scale(1.18); color: #f5b301; }
+.fiche-etoile.active { color: #f5b301; }
+.etoiles-valeur { color: #b9b3c0; font-size: 14px; }
+.etoiles-clear {
+  margin-left: auto; background: #2a2630; color: #ff8fb3; border: none;
+  border-radius: 8px; padding: 5px 11px; cursor: pointer; font-weight: 700; font-size: 13px;
+}
+.etoiles-clear:hover { background: #3a3442; }
+.carte-etoiles-badge {
+  position: absolute; bottom: 8px; left: 8px; z-index: 3;
+  background: rgba(245,179,1,.96); color: #231c00;
+  font-weight: 800; font-size: 12px; padding: 2px 8px; border-radius: 11px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.45);
+}
