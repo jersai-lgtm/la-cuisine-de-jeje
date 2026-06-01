@@ -547,6 +547,7 @@ Object.assign(recettes, {
   },
   bieraubeurre: {
     cat: "mocktails", pays: "angleterre",
+    dateAjout: "2026-06-01",
     base: 1,
     temps: "15 min",
     niveau: "⭐ Facile",

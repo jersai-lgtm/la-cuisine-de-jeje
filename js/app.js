@@ -269,6 +269,7 @@ function chargerAccueilTopMois() {
 }
 
 function chargerAccueil() {
+  chargerAccueilNouveautes();
   chargerAccueilFavoris();
   chargerAccueilMenus();
   // v249 : Retiré — accessible via ⭐ Favoris → ❤️ Menus favoris
@@ -751,6 +752,29 @@ function collectClesMenu(menu) {
     });
   }
   return cles;
+}
+
+// Nouveautés de la semaine : recettes ajoutées dans les 7 derniers jours (max 10, plus récente en tête).
+// Masquée si aucune recette récente. Se "reset" toute seule quand les dates vieillissent.
+function chargerAccueilNouveautes() {
+  const row = document.getElementById("accueil-nouveautes-row");
+  const sec = document.getElementById("accueil-nouveautes-bloc");
+  if (!row || !sec) return;
+  const now = Date.now();
+  const SEMAINE = 7 * 24 * 60 * 60 * 1000;
+  const recents = Object.keys(recettes)
+    .filter(k => recettes[k] && recettes[k].dateAjout)
+    .map(k => ({ k, t: new Date(recettes[k].dateAjout).getTime() }))
+    .filter(o => !isNaN(o.t) && (now - o.t) >= 0 && (now - o.t) <= SEMAINE)
+    .sort((a, b) => b.t - a.t)
+    .slice(0, 10)
+    .map(o => o.k);
+  if (recents.length === 0) {
+    sec.style.display = "none"; // rien de neuf cette semaine → section masquée
+    return;
+  }
+  sec.style.display = "";
+  row.innerHTML = recents.map(key => miniCarte(key)).join("");
 }
 
 // Charge la mini-tuile "Plats fétiches du foyer" sur l'accueil
