@@ -4846,3 +4846,15 @@ select, input[type="number"] {
 }
 .carte-etoiles-badge.etoiles-sur-image { bottom: calc(100% + 6px); } /* sur le bas de la photo */
 .carte-etoiles-badge.etoiles-sur-info  { bottom: 8px; }              /* sans photo : coin carte */
+
+/* Note communautaire sur mini-cartes accueil + lignes de menus */
+.mini-carte-note {
+  position: absolute; bottom: 6px; left: 6px; z-index: 3;
+  background: rgba(245,179,1,.96); color: #231c00;
+  font-weight: 800; font-size: 11px; padding: 1px 6px; border-radius: 9px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.45);
+}
+.note-inline {
+  display: inline-block; background: rgba(245,179,1,.15); color: #f5b301;
+  font-weight: 800; font-size: 12px; padding: 0 6px; border-radius: 8px; margin-left: 6px;
+}
