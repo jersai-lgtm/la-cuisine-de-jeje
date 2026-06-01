@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=259-52">
+<link rel="stylesheet" href="style.css?v=259-54">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=259-52">
+<link rel="stylesheet" href="style.css?v=259-54">
 </head>
 
 <body>
@@ -116,18 +116,18 @@ gtag('config', 'G-390C5MY2SS');
   <div class="chips-row">
     <span class="chips-label">🗂️</span>
     <button class="chip active" onclick="filtrerChipCategorie('all', this)">Tout</button>
-    <button class="chip" onclick="filtrerChipCategorie('plats', this)">🍽️ Plats</button>
-    <button class="chip" onclick="filtrerChipCategorie('soupes', this)">🍲 Soupes</button>
-    <button class="chip" onclick="filtrerChipCategorie('entrees', this)">🫕 Entrées</button>
-    <button class="chip" onclick="filtrerChipCategorie('salades', this)">🥗 Salades</button>
-    <button class="chip" onclick="filtrerChipCategorie('healthy', this)">💚 Healthy</button>
-    <button class="chip" onclick="filtrerChipCategorie('brunch', this)">🍳 Brunch</button>
-    <button class="chip" onclick="filtrerChipCategorie('encas', this)">🥪 Encas</button>
-    <button class="chip" onclick="filtrerChipCategorie('pizzas', this)">🍕 Pizzas</button>
-    <button class="chip" onclick="filtrerChipCategorie('desserts', this)">🍰 Desserts</button>
-    <button class="chip" onclick="filtrerChipCategorie('boulangerie', this)">🥖 Boulangerie</button>
     <button class="chip" onclick="filtrerChipCategorie('aperitifs', this)">🥨 Apéritifs</button>
+    <button class="chip" onclick="filtrerChipCategorie('entrees', this)">🫕 Entrées</button>
+    <button class="chip" onclick="filtrerChipCategorie('soupes', this)">🍲 Soupes</button>
+    <button class="chip" onclick="filtrerChipCategorie('salades', this)">🥗 Salades</button>
+    <button class="chip" onclick="filtrerChipCategorie('plats', this)">🍽️ Plats</button>
+    <button class="chip" onclick="filtrerChipCategorie('pizzas', this)">🍕 Pizzas</button>
+    <button class="chip" onclick="filtrerChipCategorie('brunch', this)">🍳 Brunch</button>
+    <button class="chip" onclick="filtrerChipCategorie('healthy', this)">💚 Healthy</button>
+    <button class="chip" onclick="filtrerChipCategorie('encas', this)">🥪 Encas</button>
+    <button class="chip" onclick="filtrerChipCategorie('boulangerie', this)">🥖 Boulangerie</button>
     <button class="chip" onclick="filtrerChipCategorie('sauces', this)">🥫 Sauces</button>
+    <button class="chip" onclick="filtrerChipCategorie('desserts', this)">🍰 Desserts</button>
     <button class="chip" onclick="filtrerChipCategorie('cocktails', this)">🍸 Cocktails</button>
     <button class="chip" onclick="filtrerChipCategorie('mocktails', this)">🧃 Mocktails</button>
   </div>
@@ -135,28 +135,47 @@ gtag('config', 'G-390C5MY2SS');
   <div class="chips-row">
     <span class="chips-label">🌍</span>
     <button class="chip active" onclick="filtrerChipPays('all', this)">Tout</button>
+    <button class="chip" onclick="filtrerChipPays('allemagne', this)">🇩🇪 Allemagne</button>
+    <button class="chip" onclick="filtrerChipPays('angleterre', this)">🇬🇧 Angleterre</button>
+    <button class="chip" onclick="filtrerChipPays('antilles', this)">🌴 Antilles</button>
+    <button class="chip" onclick="filtrerChipPays('argentine', this)">🇦🇷 Argentine</button>
+    <button class="chip" onclick="filtrerChipPays('belgique', this)">🇧🇪 Belgique</button>
+    <button class="chip" onclick="filtrerChipPays('bresil', this)">🇧🇷 Brésil</button>
+    <button class="chip" onclick="filtrerChipPays('canada', this)">🇨🇦 Canada</button>
+    <button class="chip" onclick="filtrerChipPays('caraibes', this)">🏝️ Caraïbes</button>
+    <button class="chip" onclick="filtrerChipPays('chine', this)">🇨🇳 Chine</button>
+    <button class="chip" onclick="filtrerChipPays('colombie', this)">🇨🇴 Colombie</button>
+    <button class="chip" onclick="filtrerChipPays('coree', this)">🇰🇷 Corée</button>
+    <button class="chip" onclick="filtrerChipPays('cuba', this)">🇨🇺 Cuba</button>
+    <button class="chip" onclick="filtrerChipPays('espagne', this)">🇪🇸 Espagne</button>
+    <button class="chip" onclick="filtrerChipPays('ethiopie', this)">🇪🇹 Éthiopie</button>
     <button class="chip" onclick="filtrerChipPays('france', this)">🇫🇷 France</button>
+    <button class="chip" onclick="filtrerChipPays('georgie', this)">🇬🇪 Géorgie</button>
+    <button class="chip" onclick="filtrerChipPays('grece', this)">🇬🇷 Grèce</button>
+    <button class="chip" onclick="filtrerChipPays('haiti', this)">🇭🇹 Haïti</button>
+    <button class="chip" onclick="filtrerChipPays('hawaii', this)">🌺 Hawaii</button>
+    <button class="chip" onclick="filtrerChipPays('hongrie', this)">🇭🇺 Hongrie</button>
+    <button class="chip" onclick="filtrerChipPays('inde', this)">🇮🇳 Inde</button>
+    <button class="chip" onclick="filtrerChipPays('indonesie', this)">🇮🇩 Indonésie</button>
     <button class="chip" onclick="filtrerChipPays('italie', this)">🇮🇹 Italie</button>
     <button class="chip" onclick="filtrerChipPays('japon', this)">🇯🇵 Japon</button>
-    <button class="chip" onclick="filtrerChipPays('thailande', this)">🇹🇭 Thaï</button>
-    <button class="chip" onclick="filtrerChipPays('mexique', this)">🇲🇽 Mexique</button>
-    <button class="chip" onclick="filtrerChipPays('inde', this)">🇮🇳 Inde</button>
     <button class="chip" onclick="filtrerChipPays('liban', this)">🇱🇧 Liban</button>
-    <button class="chip" onclick="filtrerChipPays('grece', this)">🇬🇷 Grèce</button>
-    <button class="chip" onclick="filtrerChipPays('chine', this)">🇨🇳 Chine</button>
-    <button class="chip" onclick="filtrerChipPays('usa', this)">🇺🇸 USA</button>
-    <button class="chip" onclick="filtrerChipPays('espagne', this)">🇪🇸 Espagne</button>
     <button class="chip" onclick="filtrerChipPays('maroc', this)">🇲🇦 Maroc</button>
-    <button class="chip" onclick="filtrerChipPays('cuba', this)">🇨🇺 Cuba</button>
-    <button class="chip" onclick="filtrerChipPays('vietnam', this)">🇻🇳 Vietnam</button>
-    <button class="chip" onclick="filtrerChipPays('senegal', this)">🇸🇳 Sénégal</button>
+    <button class="chip" onclick="filtrerChipPays('mexique', this)">🇲🇽 Mexique</button>
+    <button class="chip" onclick="filtrerChipPays('nigeria', this)">🇳🇬 Nigeria</button>
+    <button class="chip" onclick="filtrerChipPays('perou', this)">🇵🇪 Pérou</button>
     <button class="chip" onclick="filtrerChipPays('pologne', this)">🇵🇱 Pologne</button>
-    <button class="chip" onclick="filtrerChipPays('coree', this)">🇰🇷 Corée</button>
-    <button class="chip" onclick="filtrerChipPays('hongrie', this)">🇭🇺 Hongrie</button>
+    <button class="chip" onclick="filtrerChipPays('polynesie', this)">🌴 Polynésie</button>
+    <button class="chip" onclick="filtrerChipPays('portugal', this)">🇵🇹 Portugal</button>
+    <button class="chip" onclick="filtrerChipPays('russie', this)">🇷🇺 Russie</button>
+    <button class="chip" onclick="filtrerChipPays('senegal', this)">🇸🇳 Sénégal</button>
+    <button class="chip" onclick="filtrerChipPays('singapour', this)">🇸🇬 Singapour</button>
+    <button class="chip" onclick="filtrerChipPays('suede', this)">🇸🇪 Suède</button>
+    <button class="chip" onclick="filtrerChipPays('thailande', this)">🇹🇭 Thaïlande</button>
     <button class="chip" onclick="filtrerChipPays('tibet', this)">🏔️ Tibet</button>
-    <button class="chip" onclick="filtrerChipPays('bresil', this)">🇧🇷 Brésil</button>
-    <button class="chip" onclick="filtrerChipPays('indonesie', this)">🇮🇩 Indonésie</button>
-    <button class="chip" onclick="filtrerChipPays('haiti', this)">🇭🇹 Haïti</button>
+    <button class="chip" onclick="filtrerChipPays('turquie', this)">🇹🇷 Turquie</button>
+    <button class="chip" onclick="filtrerChipPays('usa', this)">🇺🇸 USA</button>
+    <button class="chip" onclick="filtrerChipPays('vietnam', this)">🇻🇳 Vietnam</button>
   </div>
   <!-- Ligne 3 : Tri -->
   <div class="chips-row">
@@ -4406,6 +4425,64 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
+  <div class="carte" data-cat="entrees" data-pays="espagne" onclick="ouvrirFiche('gambasajillo', null)">
+    <img src="images/gambasajillo.webp" alt="Gambas al Ajillo" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🦐 Gambas al Ajillo</h2><p>⏱ 15 min • ⭐ Facile</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="coree" onclick="ouvrirFiche('bulgogi', null)">
+    <img src="images/bulgogi.webp" alt="Bulgogi" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🥩 Bulgogi</h2><p>⏱ 30 min + marinade • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="coree" onclick="ouvrirFiche('japchae', null)">
+    <img src="images/japchae.webp" alt="Japchae" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍜 Japchae</h2><p>⏱ 35 min • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="liban" onclick="ouvrirFiche('shawarma', null)">
+    <img src="images/shawarma.webp" alt="Shawarma de Poulet" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🌯 Shawarma de Poulet</h2><p>⏱ 30 min + marinade • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="aperitifs" data-pays="indonesie" onclick="ouvrirFiche('satay', null)">
+    <img src="images/satay.webp" alt="Satay & Sauce Cacahuète" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍢 Satay & Sauce Cacahuète</h2><p>⏱ 30 min + marinade • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="inde" onclick="ouvrirFiche('palakpaneer', null)">
+    <img src="images/palakpaneer.webp" alt="Palak Paneer" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🥬 Palak Paneer</h2><p>⏱ 40 min • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="mexique" onclick="ouvrirFiche('enchiladas', null)">
+    <img src="images/enchiladas.webp" alt="Enchiladas" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🌶️ Enchiladas</h2><p>⏱ 50 min • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="usa" onclick="ouvrirFiche('jambalaya', null)">
+    <img src="images/jambalaya.webp" alt="Jambalaya" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍤 Jambalaya</h2><p>⏱ 50 min • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="canada" onclick="ouvrirFiche('poutine', null)">
+    <img src="images/poutine.webp" alt="Poutine" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍟 Poutine</h2><p>⏱ 35 min • ⭐ Facile</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="turquie" onclick="ouvrirFiche('lahmacun', null)">
+    <img src="images/lahmacun.webp" alt="Lahmacun" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🫓 Lahmacun</h2><p>⏱ 1h • ⭐⭐ Moyen</p></div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="portugal" onclick="ouvrirFiche('bifana', null)">
+    <img src="images/bifana.webp" alt="Bifana" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🥪 Bifana</h2><p>⏱ 25 min + marinade • ⭐ Facile</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="portugal" onclick="ouvrirFiche('francesinha', null)">
+    <img src="images/francesinha.webp" alt="Francesinha" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🥪 Francesinha</h2><p>⏱ 45 min • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="portugal" onclick="ouvrirFiche('frangopiripiri', null)">
+    <img src="images/frangopiripiri.webp" alt="Frango Piri Piri" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍗 Frango Piri Piri</h2><p>⏱ 40 min + marinade • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="desserts" data-pays="portugal" onclick="ouvrirFiche('arrozdoce', null)">
+    <img src="images/arrozdoce.webp" alt="Arroz Doce" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍮 Arroz Doce</h2><p>⏱ 45 min • ⭐ Facile</p></div>
+  </div>
+
 </section>
 
 <!-- FIN SECTION CARTES -->
@@ -4891,25 +4968,25 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=259-52"></script>
-<script src="js/allergenes.js?v=259-52"></script>
-<script src="js/exceptions.js?v=259-52"></script>
-<script src="js/recettes.js?v=259-52"></script>
-<script src="js/recettes_cocktails.js?v=258-34"></script>
-<script src="js/recettes_mocktails.js?v=259-52"></script>
-<script src="js/ingredients_prix.js?v=259-52"></script>
-<script src="js/tables.js?v=259-52"></script>
-<script src="js/app.js?v=259-52"></script>
-<script src="js/emojis.js?v=259-52"></script>
-<script src="js/app_avis.js?v=259-52"></script>
-<script src="js/app_admin.js?v=258-34"></script>
-<script src="js/app_menu.js?v=259-52"></script>
-<script src="js/app_courses_impr.js?v=258-34"></script>
-<script src="js/app_recherche.js?v=258-34"></script>
-<script src="js/app_garde_manger.js?v=258-34"></script>
-<script src="js/app_modal_confirm.js?v=258-34"></script>
-<script src="js/app_courses.js?v=259-52"></script>
-<script src="js/app_stats.js?v=259-52"></script>
+<script src="js/version.js?v=259-54"></script>
+<script src="js/allergenes.js?v=259-54"></script>
+<script src="js/exceptions.js?v=259-54"></script>
+<script src="js/recettes.js?v=259-54"></script>
+<script src="js/recettes_cocktails.js?v=259-54"></script>
+<script src="js/recettes_mocktails.js?v=259-54"></script>
+<script src="js/ingredients_prix.js?v=259-54"></script>
+<script src="js/tables.js?v=259-54"></script>
+<script src="js/app.js?v=259-54"></script>
+<script src="js/emojis.js?v=259-54"></script>
+<script src="js/app_avis.js?v=259-54"></script>
+<script src="js/app_admin.js?v=259-54"></script>
+<script src="js/app_menu.js?v=259-54"></script>
+<script src="js/app_courses_impr.js?v=259-54"></script>
+<script src="js/app_recherche.js?v=259-54"></script>
+<script src="js/app_garde_manger.js?v=259-54"></script>
+<script src="js/app_modal_confirm.js?v=259-54"></script>
+<script src="js/app_courses.js?v=259-54"></script>
+<script src="js/app_stats.js?v=259-54"></script>
 
 
 
@@ -5321,9 +5398,9 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="auth.js?v=259-52"></script>
-<script src="js/note_recettes.js?v=259-52"></script>
-<script src="js/app_contribution.js?v=259-52"></script>
+<script src="auth.js?v=259-54"></script>
+<script src="js/note_recettes.js?v=259-54"></script>
+<script src="js/app_contribution.js?v=259-54"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
