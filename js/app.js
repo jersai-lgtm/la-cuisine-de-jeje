@@ -1882,6 +1882,9 @@ function getNiveauFamille(cle) {
   if (!profil) return null;
   if (!profil.hasBebe && !profil.hasEnfant) return null;
   const r = recettes?.[cle];
+  // Cocktails = boissons alcoolisées réservées aux adultes par évidence :
+  // inutile d'afficher une alerte bébé/enfant dessus.
+  if (r && r.cat === "cocktails") return null;
   // Texte = clé + description + INGRÉDIENTS du tableau
   // Sans ça, des recettes comme Smoothie Bowl (contient du miel) ne sont pas détectées
   let texte = (cle + " " + (r?.description || "")).toLowerCase();

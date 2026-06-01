@@ -157,11 +157,13 @@ window.appliquerBadgeEtoilesCartes = function() {
     if (!cle) return;
     const com = window.getNoteCommunaute(cle);
     if (!com) return;
+    const img = carte.querySelector("img");
+    const aImage = !!(img && img.getAttribute("src") && img.style.display !== "none");
     const badge = document.createElement("div");
-    badge.className = "carte-etoiles-badge";
+    badge.className = "carte-etoiles-badge " + (aImage ? "etoiles-sur-image" : "etoiles-sur-info");
     badge.textContent = "★ " + com.moyenne.toFixed(1).replace(".", ",");
     badge.title = "Note moyenne : " + com.moyenne.toFixed(1) + "/5 (" + com.nb + " avis)";
-    carte.appendChild(badge);
+    (carte.querySelector(".carte-info") || carte).appendChild(badge);
     nb++;
   });
   if (nb > 0) console.log("⭐ Badge note communauté appliqué sur " + nb + " cartes");
