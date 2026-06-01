@@ -316,16 +316,10 @@ function chargerAccueilMenus() {
   }
   const persMenu = dernier.personnes || dernier?.menu?.personnes || 4;
   const semaine = dernier?.menu?.semaine || [];
-  if (semaine.length === 0) {
-    row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`;
-    return;
-  }
 
   const goMenus = () => afficherSection('planificateur', document.querySelector('.nav-btn[onclick*=planificateur]'));
 
-  // Détecter le format : repas complet ou simple
-  const isComplet = semaine[0]?.midi?.plat !== undefined;
-  // Détecter si c'est un menu thématique (a une propriété theme)
+  // Détecter si c'est un menu thématique (a une propriété theme) — AVANT le test "semaine vide"
   const isTheme = dernier?.menu?.theme !== undefined;
 
   if (isTheme) {
@@ -357,6 +351,13 @@ function chargerAccueilMenus() {
     }).join("");
     return;
   }
+
+  // (menu semaine) — si vide après avoir écarté le thématique
+  if (semaine.length === 0) {
+    row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`;
+    return;
+  }
+  const isComplet = semaine[0]?.midi?.plat !== undefined;
 
   row.innerHTML = semaine.map(j => {
     if (isComplet) {

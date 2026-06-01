@@ -1612,7 +1612,6 @@ function choisirRecette(nom, personnesOverride) {
   // Bouton favori
   const btnFav = document.getElementById("btn-favori-modal");
   if (btnFav) {
-    btnFav.id = "btn-favori-" + nom;
     btnFav.setAttribute("onclick", `toggleFavori('${nom}')`);
     btnFav.textContent = (typeof estFavori === 'function' && estFavori(nom)) ? '❤️' : '🤍';
   }

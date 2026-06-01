@@ -519,8 +519,8 @@ function rechercherRecette(query) {
   if (secAccueil) secAccueil.style.display = "none";
   if (secCartes) secCartes.classList.add("visible");
   
-  // Afficher les suggestions dropdown
-  afficherSuggestions(q);
+  // Option 1 : pas de dropdown — la grille filtrée ci-dessous montre directement les cartes
+  cacherSuggestions();
   
   // Faire le filtrage des cartes en arrière-plan
   const resultats = scorerCartes(qNorm);
