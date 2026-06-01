@@ -695,6 +695,10 @@ const INGREDIENTS_PRIX = {
   petitsPois:       { prixKg: 2.50, calPer100g: 81,   lipSat: 0.1,  sucre: 5.7,  sel: 0.01, fibres: 5,   prot: 5.4,  flv: 100 },
   semoulemil:       { prixKg: 4.00, calPer100g: 360,  lipSat: 0.6,  sucre: 1,    sel: 0,    fibres: 3.5, prot: 10,   flv: 0 },
   tapioca:          { prixKg: 4.00, calPer100g: 350,  lipSat: 0,    sucre: 0.4,  sel: 0,    fibres: 0.9, prot: 0.2,  flv: 0 },
+  sauceSoja:     {prixKg:4,calPer100g:60,lipSat:0,sucre:4,sel:18,fibres:0,prot:8,flv:20},
+  cacahuete:     {prixKg:6,calPer100g:567,lipSat:7,sucre:4,sel:0,fibres:8.5,prot:26,flv:10},
+  garam:         {prixKg:25,calPer100g:379,lipSat:2,sucre:2,sel:0,fibres:25,prot:14,flv:60},
+  tortillamais:  {prixKg:4,calPer100g:220,lipSat:0.5,sucre:1,sel:0.5,fibres:6,prot:6,flv:0},
 };
 
 // ===================================================================
