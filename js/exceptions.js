@@ -14,11 +14,7 @@ window.EXCEPTIONS = {
   //                          le foyer). Limite max basse (5 max).
   // -------------------------------------------------------------------------
   unites: [
-    "brioche",          // 🍞 1 brioche
-    "patefeuilletee",   // 🥧 1 pâte
-    "patebrisee",       // 🥧 1 pâte
-    "patesablee",       // 🍪 1 pâte
-    "painbaguette"      // 🥖 1 baguette (~250g)
+    "brioche"           // 🍞 1 brioche (sélecteur spécial dédié)
   ],
 
   // -------------------------------------------------------------------------

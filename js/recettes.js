@@ -130,14 +130,20 @@ const recettes = {
   },
   painbaguette: {
     cat: "boulangerie", pays: "france",
-    base: 1,
+    base: 6,
     temps: "3h",
     niveau: "⭐⭐ Intermédiaire",
     emoji: "🥖",
-    description: "Une vraie baguette maison — croûte dorée et craquante, mie alvéolée. La base de la boulangerie française.",
+    description: "Une vraie baguette maison — croûte dorée et craquante, mie alvéolée. Quantités pour 1 à 6 baguettes.",
     ingredients: {},
-    fixe: true,
-    ingredientsFixes: [["🌾 Farine T65","250 g"],["💧 Eau tiède","160 ml"],["🟨 Levure fraîche","8 g"],["🧂 Sel","5 g"]],
+    tableauPainBaguette: [
+      { nb: 1, farine: "250 g", eau: "160 ml", levure: "8 g", sel: "5 g" },
+      { nb: 2, farine: "500 g", eau: "320 ml", levure: "16 g", sel: "10 g" },
+      { nb: 3, farine: "750 g", eau: "480 ml", levure: "24 g", sel: "15 g" },
+      { nb: 4, farine: "1000 g", eau: "640 ml", levure: "32 g", sel: "20 g" },
+      { nb: 5, farine: "1250 g", eau: "800 ml", levure: "40 g", sel: "25 g" },
+      { nb: 6, farine: "1500 g", eau: "960 ml", levure: "48 g", sel: "30 g" }
+    ],
     etapes: [
       { icone: "🟨", titre: "Diluer la levure", detail: "Diluer la levure fraîche dans l'eau tiède (max 35°C). Laisser reposer 5 min. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 5 min" },
       { icone: "🌾", titre: "Former la pâte", detail: "Dans un grand bol, mélanger la farine et le sel. Ajouter le mélange eau-levure. Mélanger jusqu'à formation d'une pâte homogène.", badge: null },
@@ -190,16 +196,22 @@ const recettes = {
   },
   patefeuilletee: {
     cat: "boulangerie", pays: "france",
-    base: 1,
+    base: 6,
     temps: "2h + repos",
     niveau: "⭐⭐⭐ Difficile",
     emoji: "🥧",
-    description: "La vraie pâte feuilletée maison — croustillante, beurrée et feuilletée. Pour un moule de 28 cm environ.",
+    description: "La vraie pâte feuilletée maison — croustillante, beurrée et feuilletée. Quantités pour 1 à 6 pâtes (moule ~28 cm).",
     ingredients: {},
-    fixe: true,
-    ingredientsFixes: [["🌾 Farine T55","250 g"],["💧 Eau froide","125 ml"],["🧂 Sel","5 g"],["🧈 Beurre (pour la détrempe)","30 g"],["🧈 Beurre de tourage (sec/AOC)","175 g"]],
+    tableauPateFeuilletee: [
+      { nb: 1, farine: "250 g", beurre: "205 g", eau: "125 ml", sel: "5 g" },
+      { nb: 2, farine: "500 g", beurre: "410 g", eau: "250 ml", sel: "10 g" },
+      { nb: 3, farine: "750 g", beurre: "615 g", eau: "375 ml", sel: "15 g" },
+      { nb: 4, farine: "1000 g", beurre: "820 g", eau: "500 ml", sel: "20 g" },
+      { nb: 5, farine: "1250 g", beurre: "1025 g", eau: "625 ml", sel: "25 g" },
+      { nb: 6, farine: "1500 g", beurre: "1230 g", eau: "750 ml", sel: "30 g" }
+    ],
     etapes: [
-      { icone: "🌾", titre: "La détrempe", detail: "Mélanger farine, sel et 30g de beurre fondu. Ajouter l'eau froide progressivement. Former une boule sans trop pétrir. Inciser en croix. Filmer et reposer au frigo.", badge: "⏱ 30 min au frigo" },
+      { icone: "🌾", titre: "La détrempe", detail: "Mélanger la farine, le sel et une petite part du beurre fondu (~15 % ; le reste servira au tourage). Ajouter l'eau froide progressivement. Former une boule sans trop pétrir. Inciser en croix. Filmer et reposer au frigo.", badge: "⏱ 30 min au frigo" },
       { icone: "🧈", titre: "Préparer le beurre", detail: "Aplatir le beurre de tourage froid en carré de 1cm d'épaisseur entre deux feuilles de papier. Il doit avoir la même consistance que la détrempe.", badge: null },
       { icone: "📏", titre: "Premier tourage", detail: "Étaler la détrempe en croix. Envelopper le beurre dedans comme une enveloppe. Étaler en rectangle et faire 1 tour double. Filmer et reposer. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 30 min au frigo" },
       { icone: "📏", titre: "Tourages suivants", detail: "Répéter l'opération 2 fois en faisant 2 tours doubles à chaque fois, en reposant 30 min au frigo entre chaque. Au total : 3 × 2 tours doubles.", badge: "⏱ 3 × 30 min repos" },
@@ -208,14 +220,20 @@ const recettes = {
   },
   patebrisee: {
     cat: "boulangerie", pays: "france",
-    base: 1,
+    base: 6,
     temps: "15 min + repos",
     niveau: "⭐ Facile",
     emoji: "🥧",
-    description: "La pâte brisée maison — croustillante et fondante. Pour un moule de 28 cm environ.",
+    description: "La pâte brisée maison — croustillante et fondante. Quantités pour 1 à 6 pâtes (moule ~28 cm).",
     ingredients: {},
-    fixe: true,
-    ingredientsFixes: [["🌾 Farine T55","200 g"],["🧈 Beurre froid","100 g"],["💧 Eau froide","50 ml"],["🧂 Sel","4 g"]],
+    tableauPateBrisee: [
+      { nb: 1, farine: "200 g", beurre: "100 g", eau: "50 ml", sel: "4 g" },
+      { nb: 2, farine: "400 g", beurre: "200 g", eau: "100 ml", sel: "8 g" },
+      { nb: 3, farine: "600 g", beurre: "300 g", eau: "150 ml", sel: "12 g" },
+      { nb: 4, farine: "800 g", beurre: "400 g", eau: "200 ml", sel: "16 g" },
+      { nb: 5, farine: "1000 g", beurre: "500 g", eau: "250 ml", sel: "20 g" },
+      { nb: 6, farine: "1200 g", beurre: "600 g", eau: "300 ml", sel: "24 g" }
+    ],
     etapes: [
       { icone: "🌾", titre: "Sabler", detail: "Couper le beurre froid en petits dés. L'incorporer à la farine et au sel du bout des doigts en frottant jusqu'à obtenir une texture sableuse. Ne pas trop travailler. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
       { icone: "💧", titre: "Hydrater", detail: "Ajouter l'eau froide cuillère par cuillère. Mélanger jusqu'à ce que la pâte s'amalgame. S'arrêter dès qu'elle forme une boule — ne pas trop pétrir. Pétrir 10 min à la main ou 7 min au robot — la pâte doit être lisse et élastique.", badge: null },
@@ -225,14 +243,20 @@ const recettes = {
   },
   patesablee: {
     cat: "boulangerie", pays: "france",
-    base: 1,
+    base: 6,
     temps: "15 min + repos",
     niveau: "⭐ Facile",
     emoji: "🍪",
-    description: "La pâte sablée maison — plus sucrée et friable que la brisée. Pour un moule de 28 cm environ.",
+    description: "La pâte sablée maison — plus sucrée et friable que la brisée. Quantités pour 1 à 6 pâtes (moule ~28 cm).",
     ingredients: {},
-    fixe: true,
-    ingredientsFixes: [["🌾 Farine T55","200 g"],["🧈 Beurre mou","100 g"],["🍬 Sucre glace","80 g"],["🥚 Œuf","1"],["🌰 Poudre d'amande","20 g"],["🧂 Sel","1 pincée"]],
+    tableauPateSablee: [
+      { nb: 1, farine: "200 g", beurre: "100 g", sucre: "80 g", oeufs: "1", amande: "20 g", sel: "1 g" },
+      { nb: 2, farine: "400 g", beurre: "200 g", sucre: "160 g", oeufs: "2", amande: "40 g", sel: "2 g" },
+      { nb: 3, farine: "600 g", beurre: "300 g", sucre: "240 g", oeufs: "3", amande: "60 g", sel: "3 g" },
+      { nb: 4, farine: "800 g", beurre: "400 g", sucre: "320 g", oeufs: "4", amande: "80 g", sel: "4 g" },
+      { nb: 5, farine: "1000 g", beurre: "500 g", sucre: "400 g", oeufs: "5", amande: "100 g", sel: "5 g" },
+      { nb: 6, farine: "1200 g", beurre: "600 g", sucre: "480 g", oeufs: "6", amande: "120 g", sel: "6 g" }
+    ],
     etapes: [
       { icone: "🧈", titre: "Crémer beurre + sucre", detail: "Travailler le beurre mou avec le sucre glace jusqu'à obtenir un mélange crémeux.", badge: null },
       { icone: "🥚", titre: "Ajouter l'œuf", detail: "Incorporer l'œuf et mélanger. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },

@@ -517,6 +517,10 @@ function getUniteRecette(nom, n) {
     "croissant":       ["croissant", "croissants"],
     "fondantchocolat": ["fondant", "fondants"],
     "paindemie":       ["tranche", "tranches"],
+    "painbaguette":    ["baguette", "baguettes"],
+    "patefeuilletee":  ["pâte", "pâtes"],
+    "patebrisee":      ["pâte", "pâtes"],
+    "patesablee":      ["pâte", "pâtes"],
     "overnightoats":   ["pot", "pots"],
     "buddhaBowl":      ["bol", "bols"],
     "smoothiebowl":    ["bol", "bols"],
@@ -565,7 +569,7 @@ function getSelecteurPersonnesHTML(nom, personnes) {
   }
   
   // v257.9 : Exceptions pour les recettes "à l'unité" (depuis exceptions.js)
-  const exceptionsUnites = (window.EXCEPTIONS && window.EXCEPTIONS.unites) || ["brioche","patefeuilletee","patebrisee","patesablee"];
+  const exceptionsUnites = (window.EXCEPTIONS && window.EXCEPTIONS.unites) || ["brioche"];
   if (exceptionsUnites.includes(nom)) {
     min = 1;
     max = 5;
@@ -979,13 +983,6 @@ function choisirRecette(nom, personnesOverride) {
     // Les boutons de sélection (1/2 brioches avec/sans lait) sont déplacés dans le bandeau meta
     // via getSelecteurBriocheHTML(). Ici on ne génère que les ingrédients.
     listeIngredients = htmlTableauBriocheColonnes(ligne);
-  } else if (nom === "patefeuilletee" || nom === "patebrisee" || nom === "patesablee" || nom === "painbaguette") {
-    // Recettes fixes sans calcul — afficher ingredientsFixes directement
-    if (data.ingredientsFixes) {
-      let rows = data.ingredientsFixes.map(([k,v]) =>
-        `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
-      listeIngredients = `<table class="tableau-patons tableau-colonnes"><tbody>${rows}</tbody></table>`;
-    }
   } else if (data.fixe && data.ingredientsFixes) {
     let rows = data.ingredientsFixes.map(([k,v]) =>
       `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
