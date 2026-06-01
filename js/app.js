@@ -237,10 +237,15 @@ function chargerAccueilTopMois() {
   
   const mois = new Date().getMonth();
   if (titre) {
-    titre.textContent = `🌱 Le top de ${NOMS_MOIS_FR[mois]}`;
-    // Couleur selon la saison : vert printemps / or été / marron automne / bleu hiver
-    if (typeof getCouleurSaison === "function" && typeof getSaisonActuelle === "function") {
-      titre.style.color = getCouleurSaison(getSaisonActuelle());
+    const label = `Le top de ${NOMS_MOIS_FR[mois]}`;
+    const trans = (typeof TRANSITIONS_SAISON !== "undefined") ? TRANSITIONS_SAISON[mois + 1] : null;
+    if (trans) {
+      // Mois de transition → dégradé des 2 couleurs de saison sur le texte
+      titre.innerHTML = `🌱 <span style="background:linear-gradient(90deg,${trans[0]},${trans[1]});-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">${label}</span>`;
+    } else {
+      // Couleur unie de la saison : vert printemps / or été / marron automne / bleu hiver
+      const c = (typeof getCouleurSaison === "function" && typeof getSaisonActuelle === "function") ? getCouleurSaison(getSaisonActuelle()) : "";
+      titre.innerHTML = `🌱 <span style="color:${c}">${label}</span>`;
     }
   }
   
@@ -630,6 +635,15 @@ function getCouleurSaison(saison) {
     hiver:     "#4F91D9", // bleu
   })[saison] || "#888";
 }
+
+// Mois de transition entre 2 saisons → dégradé des 2 couleurs (mois en 1-12)
+// mars : hiver→printemps · juin : printemps→été · septembre : été→automne · décembre : automne→hiver
+const TRANSITIONS_SAISON = {
+  3:  ["#4F91D9", "#4CAF50"], // bleu → vert
+  6:  ["#4CAF50", "#E0A82E"], // vert → or
+  9:  ["#E0A82E", "#B5651D"], // or → marron
+  12: ["#B5651D", "#4F91D9"], // marron → bleu
+};
 
 // Indique si une recette est "de saison maintenant"
 function estDeSaison(key) {
