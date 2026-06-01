@@ -145,7 +145,7 @@ async function chargerProfil(user) {
       foyer: null,
       preferences: { regimes:[], allergies:[], allergiesCustom:[], objectifs:[], cuisinesFavorites:[], niveauCuisine:"débutant" },
       favoris: [], historiqueMenus: [], menusFavoris: [],
-      recettesVues: [], totalRecettesVues: 0, recettesCuisinees: [],
+      recettesVues: [], totalRecettesVues: 0, totalMenusGeneres: 0, recettesCuisinees: [],
       listeCourses: [], listeCoursesCoches: []
     };
     await ref.set(profil);
@@ -383,6 +383,17 @@ window.ajouterRecent = function(key) {
     recettesVues: vus,
     totalRecettesVues: total
   }, { merge: true }).catch(e => console.warn("Sauvegarde recettes vues échouée :", e));
+};
+
+// totalMenusGeneres : compteur cumulatif de menus générés (cap à 9999, ne descend jamais
+// → l'historique affiché est plafonné/dédoublonné, mais ce compteur garde le vrai total).
+window.incrementerMenusGeneres = function() {
+  if (!window.currentUser || !window.userProfile) return;
+  const total = Math.min((window.userProfile.totalMenusGeneres || 0) + 1, 9999);
+  window.userProfile.totalMenusGeneres = total;
+  _db.collection("utilisateurs").doc(window.currentUser.uid).set({
+    totalMenusGeneres: total
+  }, { merge: true }).catch(e => console.warn("Sauvegarde menus générés échouée :", e));
 };
 
 // Met à jour visuellement le bouton "J'ai cuisiné"
