@@ -683,6 +683,18 @@ const INGREDIENTS_PRIX = {
   painDeMie:        { prixUnite: 0.10, cal: 70,        lipSat: 0.5,  sucre: 3,    sel: 0.5,  fibres: 1.5, prot: 2.5,  flv: 0 },
   plantain:         { prixUnite: 0.50, cal: 220,       lipSat: 0.1,  sucre: 17,   sel: 0,    fibres: 4,   prot: 2,    flv: 100 },
   poireau:          { prixUnite: 0.60, cal: 30,        lipSat: 0,    sucre: 2.3,  sel: 0,    fibres: 2.5, prot: 1.5,  flv: 100 },
+  // === v259.37 — Ingrédients tour du monde 2 (Hongrie, Géorgie, Antilles, Vietnam, Sénégal, Brésil, Russie, Cuba, Allemagne, Angleterre, Turquie, Éthiopie, Suède) ===
+  escalope:         { prixKg: 14.0, calPer100g: 170,  lipSat: 3,    sucre: 0,    sel: 0.15, fibres: 0,   prot: 22,   flv: 0 },
+  farineTeff:       { prixKg: 8.00, calPer100g: 366,  lipSat: 0.5,  sucre: 1.8,  sel: 0.01, fibres: 8,   prot: 13,   flv: 0 },
+  galettederiz:     { prixUnite: 0.08, cal: 30,        lipSat: 0,    sucre: 0.5,  sel: 0.05, fibres: 0.4, prot: 0.5,  flv: 0 },
+  haricotsNoirs:    { prixKg: 3.00, calPer100g: 130,  lipSat: 0.1,  sucre: 0.3,  sel: 0.01, fibres: 8.7, prot: 8.9,  flv: 100 },
+  laitConcentre:    { prixKg: 5.00, calPer100g: 330,  lipSat: 5,    sucre: 54,   sel: 0.3,  fibres: 0,   prot: 8,    flv: 0 },
+  painEpices:       { prixKg: 8.00, calPer100g: 350,  lipSat: 1,    sucre: 40,   sel: 0.5,  fibres: 3,   prot: 5,    flv: 0 },
+  painPita:         { prixUnite: 0.30, cal: 165,       lipSat: 0.4,  sucre: 2,    sel: 1,    fibres: 2.2, prot: 5.5,  flv: 0 },
+  pateFilo:         { prixKg: 5.00, calPer100g: 290,  lipSat: 1,    sucre: 1,    sel: 0.6,  fibres: 2.5, prot: 8,    flv: 0 },
+  petitsPois:       { prixKg: 2.50, calPer100g: 81,   lipSat: 0.1,  sucre: 5.7,  sel: 0.01, fibres: 5,   prot: 5.4,  flv: 100 },
+  semoulemil:       { prixKg: 4.00, calPer100g: 360,  lipSat: 0.6,  sucre: 1,    sel: 0,    fibres: 3.5, prot: 10,   flv: 0 },
+  tapioca:          { prixKg: 4.00, calPer100g: 350,  lipSat: 0,    sucre: 0.4,  sel: 0,    fibres: 0.9, prot: 0.2,  flv: 0 },
 };
 
 // ===================================================================
