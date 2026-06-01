@@ -653,6 +653,16 @@ function estDeSaison(key) {
   return s.includes(getSaisonActuelle());
 }
 
+// Recette ajoutée il y a ≤ 7 jours (réutilise dateAjout) → badge 🆕 app-wide
+function estNouveaute(key) {
+  const d = recettes?.[key]?.dateAjout;
+  if (!d) return false;
+  const t = new Date(d).getTime();
+  if (isNaN(t)) return false;
+  const diff = Date.now() - t;
+  return diff >= 0 && diff <= 7 * 24 * 60 * 60 * 1000;
+}
+
 // ==============================
 // HISTORIQUE — "Refait il y a X jours"
 // ==============================
@@ -1009,9 +1019,14 @@ function miniCarte(key) {
     }
   }
   
+  // Badge 🆕 (recette ajoutée il y a ≤ 7 jours)
+  const badgeNouveau = (typeof estNouveaute === "function" && estNouveaute(key))
+    ? `<span class="mini-carte-nouveau" title="Nouvelle recette">🆕</span>` : "";
+
   return `<div class="mini-carte" style="${styleAlerte}" title="${titleAlerte}" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
     <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
     ${badgeNutri}
+    ${badgeNouveau}
     ${badgeFam}
     ${badgeSaison}
     ${btnRegen}

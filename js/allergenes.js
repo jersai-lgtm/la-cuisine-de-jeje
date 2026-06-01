@@ -88,6 +88,16 @@ function appliquerPreferencesVisuelles() {
     carte.querySelector('.carte-badge-allergie')?.remove();
     carte.classList.remove('carte-alerte-bebe', 'carte-alerte-enfant');
 
+    // Badge 🆕 (recette ajoutée il y a ≤ 7 jours) — app-wide
+    carte.querySelector('.carte-badge-nouveau')?.remove();
+    if (typeof estNouveaute === 'function' && estNouveaute(key)) {
+      const bn = document.createElement('span');
+      bn.className = 'carte-badge-nouveau';
+      bn.textContent = '🆕';
+      bn.title = 'Nouvelle recette';
+      carte.appendChild(bn);
+    }
+
     // ---- Zone d'indicateurs en bas de carte (on recrée à neuf) ----
     carte.querySelector('.carte-indicateurs')?.remove();
     const zone = document.createElement('div');
