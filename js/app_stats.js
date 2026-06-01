@@ -1058,6 +1058,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Appliquer les badges Nutri-Score sur toutes les cartes
     if (typeof appliquerNutriScoreCartes === "function") appliquerNutriScoreCartes();
   if (typeof appliquerBadgeNotesCartes === "function") appliquerBadgeNotesCartes();
+  if (typeof chargerNotesCommunaute === "function") chargerNotesCommunaute();
     
     // Construire l'index de recherche intelligente
     if (typeof construireIndexRecherche === "function") construireIndexRecherche();
