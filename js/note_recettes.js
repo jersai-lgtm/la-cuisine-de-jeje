@@ -147,7 +147,17 @@ window.injecterEtoilesRecette = function(key) {
   else resultat.appendChild(section);
 };
 
-// Badge ★moyenne (bas-gauche) sur les cartes ayant au moins une note
+// Retourne un petit HTML de badge note (pour mini-cartes accueil + lignes de menus)
+window.noteCommunauteBadgeHTML = function(key, variante) {
+  const com = (typeof getNoteCommunaute === "function") ? getNoteCommunaute(key) : null;
+  if (!com) return "";
+  const val = com.moyenne.toFixed(1).replace(".", ",");
+  const title = "Note moyenne : " + com.moyenne.toFixed(1) + "/5 (" + com.nb + " avis)";
+  if (variante === "mini") return `<span class="mini-carte-note" title="${title}">★ ${val}</span>`;
+  return `<span class="note-inline" title="${title}">★ ${val}</span>`;
+};
+
+// Badge ★moyenne sur les cartes catalogue (.carte) ET les mini-cartes accueil (.mini-carte)
 window.appliquerBadgeEtoilesCartes = function() {
   let nb = 0;
   document.querySelectorAll(".carte").forEach(carte => {
@@ -165,6 +175,20 @@ window.appliquerBadgeEtoilesCartes = function() {
     badge.title = "Note moyenne : " + com.moyenne.toFixed(1) + "/5 (" + com.nb + " avis)";
     (carte.querySelector(".carte-info") || carte).appendChild(badge);
     nb++;
+  });
+  // Mini-cartes de l'accueil (suggestions, récents, dernières ajoutées, favoris, fétiches)
+  document.querySelectorAll(".mini-carte").forEach(mc => {
+    const ancien = mc.querySelector(".mini-carte-note");
+    if (ancien) ancien.remove();
+    const cle = (typeof extraireCleRecetteCarte === "function") ? extraireCleRecetteCarte(mc) : null;
+    if (!cle) return;
+    const com = window.getNoteCommunaute(cle);
+    if (!com) return;
+    const b = document.createElement("span");
+    b.className = "mini-carte-note";
+    b.textContent = "★ " + com.moyenne.toFixed(1).replace(".", ",");
+    b.title = "Note moyenne : " + com.moyenne.toFixed(1) + "/5 (" + com.nb + " avis)";
+    mc.appendChild(b);
   });
   if (nb > 0) console.log("⭐ Badge note communauté appliqué sur " + nb + " cartes");
 };

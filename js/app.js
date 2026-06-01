@@ -1020,10 +1020,14 @@ function miniCarte(key) {
   const badgeNouveau = (typeof estNouveaute === "function" && estNouveaute(key))
     ? `<span class="mini-carte-nouveau" title="Nouvelle recette">NEW</span>` : "";
 
+  // Badge note communautaire (bas-gauche)
+  const badgeNote = (typeof noteCommunauteBadgeHTML === "function") ? noteCommunauteBadgeHTML(key, "mini") : "";
+
   return `<div class="mini-carte" style="${styleAlerte}" title="${titleAlerte}" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
     <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
     ${badgeNutri}
     ${badgeNouveau}
+    ${badgeNote}
     ${badgeFam}
     ${badgeSaison}
     ${btnRegen}

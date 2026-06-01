@@ -1565,6 +1565,7 @@ function afficherMenusSemaine(menus, personnes) {
             <span style="font-size:22px">${getEmoji(key)}</span>
             <span class="plan-repas-nom">${getNomRecette(key)}</span>
             <span class="plan-repas-note">${data.note || ""}</span>
+            ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(key, "inline") : ""}
             ${motif}
           </div>`;
         };
@@ -1617,6 +1618,7 @@ function afficherMenusSemaine(menus, personnes) {
             <div class="plan-repas-emoji">${getEmoji(midi)}</div>
             <div class="plan-repas-nom">${getNomRecette(midi)}</div>
             <div class="plan-repas-note">${midiNote}</div>
+            ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(midi, "inline") : ""}
             ${motifM}
           </div>
           <div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
@@ -1624,6 +1626,7 @@ function afficherMenusSemaine(menus, personnes) {
             <div class="plan-repas-emoji">${getEmoji(soir)}</div>
             <div class="plan-repas-nom">${getNomRecette(soir)}</div>
             <div class="plan-repas-note">${soirNote}</div>
+            ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(soir, "inline") : ""}
             ${motifS}
           </div>
         </div>`;
