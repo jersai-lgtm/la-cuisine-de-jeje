@@ -1059,6 +1059,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof appliquerNutriScoreCartes === "function") appliquerNutriScoreCartes();
   if (typeof appliquerBadgeNotesCartes === "function") appliquerBadgeNotesCartes();
   if (typeof chargerNotesCommunaute === "function") chargerNotesCommunaute();
+  if (typeof chargerRecettesCommunaute === "function") chargerRecettesCommunaute();
     
     // Construire l'index de recherche intelligente
     if (typeof construireIndexRecherche === "function") construireIndexRecherche();
