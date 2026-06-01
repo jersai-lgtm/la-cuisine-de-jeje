@@ -293,6 +293,7 @@ function afficherMenuFestif(menu, personnes) {
             <div class="plan-repas-label">${item.categorie} ${badge}${btn}</div>
             <div class="plan-repas-nom" style="font-size:16px">${getNomRecette(item.recette)}</div>
             <div class="plan-repas-note">${item.note}</div>
+            ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(item.recette, "inline") : ""}
             ${motif}
           </div>
         </div>

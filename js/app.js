@@ -367,7 +367,7 @@ function chargerAccueilMenus() {
         <div class="accueil-menu-item" style="${style};cursor:pointer" title="${tip}" onclick="ouvrirRecettePlan('${key}', ${persMenu})">
           <span>${emoji}</span>
           <div>
-            <div class="menu-item-nom">${nom}${mini}</div>
+            <div class="menu-item-nom">${nom}${mini}${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(key, "inline") : ""}</div>
           </div>
         </div>
       </div>`;
@@ -404,7 +404,7 @@ function chargerAccueilMenus() {
           <span>${emoji}</span>
           <div>
             <div class="menu-moment">${icone}</div>
-            <div class="menu-item-nom">${nom}${mini}</div>
+            <div class="menu-item-nom">${nom}${mini}${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(key, "inline") : ""}</div>
           </div>
         </div>`;
       };
@@ -450,14 +450,14 @@ function chargerAccueilMenus() {
         <span>${emoji1}</span>
         <div>
           <div class="menu-moment">☀️ Midi</div>
-          <div class="menu-item-nom">${midiNom}${aM.mini}</div>
+          <div class="menu-item-nom">${midiNom}${aM.mini}${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(midiKey, "inline") : ""}</div>
         </div>
       </div>
       <div class="accueil-menu-item" style="${aS.style};cursor:pointer" title="${aS.tip}" ${soirKey ? `onclick="ouvrirRecettePlan('${soirKey}', ${persMenu})"` : ""}>
         <span>${emoji2}</span>
         <div>
           <div class="menu-moment">🌙 Soir</div>
-          <div class="menu-item-nom">${soirNom}${aS.mini}</div>
+          <div class="menu-item-nom">${soirNom}${aS.mini}${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(soirKey, "inline") : ""}</div>
         </div>
       </div>
     </div>`;
@@ -1027,11 +1027,11 @@ function miniCarte(key) {
     <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
     ${badgeNutri}
     ${badgeNouveau}
-    ${badgeNote}
     ${badgeFam}
     ${badgeSaison}
     ${btnRegen}
     <div class="mini-carte-info">
+      ${badgeNote}
       <span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>
       <span class="mini-carte-nom">${nom}</span>
       <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>

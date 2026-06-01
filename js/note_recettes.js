@@ -153,7 +153,7 @@ window.noteCommunauteBadgeHTML = function(key, variante) {
   if (!com) return "";
   const val = com.moyenne.toFixed(1).replace(".", ",");
   const title = "Note moyenne : " + com.moyenne.toFixed(1) + "/5 (" + com.nb + " avis)";
-  if (variante === "mini") return `<span class="mini-carte-note" title="${title}">★ ${val}</span>`;
+  if (variante === "mini") return `<span class="mini-carte-note mini-note-sur-image" title="${title}">★ ${val}</span>`;
   return `<span class="note-inline" title="${title}">★ ${val}</span>`;
 };
 
@@ -184,11 +184,13 @@ window.appliquerBadgeEtoilesCartes = function() {
     if (!cle) return;
     const com = window.getNoteCommunaute(cle);
     if (!com) return;
+    const img = mc.querySelector("img");
+    const aImage = !!(img && img.getAttribute("src") && img.style.display !== "none");
     const b = document.createElement("span");
-    b.className = "mini-carte-note";
+    b.className = "mini-carte-note " + (aImage ? "mini-note-sur-image" : "mini-note-sur-info");
     b.textContent = "★ " + com.moyenne.toFixed(1).replace(".", ",");
     b.title = "Note moyenne : " + com.moyenne.toFixed(1) + "/5 (" + com.nb + " avis)";
-    mc.appendChild(b);
+    (mc.querySelector(".mini-carte-info") || mc).appendChild(b);
   });
   if (nb > 0) console.log("⭐ Badge note communauté appliqué sur " + nb + " cartes");
 };
