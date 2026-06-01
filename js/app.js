@@ -878,7 +878,7 @@ function chargerAccueilSuggestions() {
   });
 
   // Seed basé sur la date COMPLÈTE (hash) → chaque jour distinct, sans collision
-  const seed = hashChaine(today);
+  const seed = hashChaine(today + ":" + (window._suggRegenN || 0));
   // Filtre saison STRICT : on garde uniquement les recettes
   //   - taguées avec la saison actuelle
   //   - OU sans tag saison (= toute l'année)
@@ -1029,6 +1029,17 @@ function regenererSuggestion(cleAremplacer) {
     if (typeof chargerAccueilSuggestions === "function") chargerAccueilSuggestions();
     if (typeof afficherToast === "function") afficherToast(`✨ Remplacé par ${getNomRecette(remplacement)}`, "success");
   } catch(e) { console.error(e); }
+}
+
+// Régénère TOUTES les suggestions du jour (nouveau tirage à la demande, via le 🔄 de la section)
+function regenererToutesSuggestions() {
+  window._suggRegenN = (window._suggRegenN || 0) + 1; // change la graine → nouveau tirage
+  // Supprimer le cache du jour pour forcer la régénération
+  try {
+    Object.keys(localStorage).forEach(k => { if (k.startsWith("suggestions_v3_")) localStorage.removeItem(k); });
+  } catch(e) {}
+  if (typeof chargerAccueilSuggestions === "function") chargerAccueilSuggestions();
+  if (typeof afficherToast === "function") afficherToast("✨ Nouvelles suggestions", "success");
 }
 
 function afficherHistorique() {
