@@ -531,15 +531,13 @@ function remplirRecords(s) {
     });
   }
 
-  // Menus générés (équivalent menu de "Recettes explorées")
-  if (s.nbMenusGeneres > 0) {
-    records.push({
-      icon: "📅",
-      label: "Menus générés",
-      valeur: s.nbMenusGeneres + " menu" + (s.nbMenusGeneres > 1 ? "s" : ""),
-      detail: "Créés au planificateur",
-    });
-  }
+  // Menus générés — TOUJOURS affiché (même à 0) pour suivre la progression vers les badges
+  records.push({
+    icon: "📅",
+    label: "Menus générés",
+    valeur: s.nbMenusGeneres + " menu" + (s.nbMenusGeneres > 1 ? "s" : ""),
+    detail: "Créés au planificateur",
+  });
   // Menus favoris (menus que tu as sauvegardés)
   if (s.nbMenusFavoris > 0) {
     records.push({
