@@ -1548,7 +1548,9 @@ function choisirRecette(nom, personnesOverride) {
     "babaaurhum":            "Baba au Rhum",
     "cakeBananeChoco":       "Cake Banane Chocolat",
   };
-  const nomPropre = nomsAffichage[nom] || (nom.charAt(0).toUpperCase() + nom.slice(1));
+  const nomPropre = (typeof getNomRecette === "function")
+    ? getNomRecette(nom)
+    : (nomsAffichage[nom] || (nom.charAt(0).toUpperCase() + nom.slice(1)));
 
   // Info historique : "Refait il y a X jours" (uniquement si déjà fait)
   let infoHistorique = "";

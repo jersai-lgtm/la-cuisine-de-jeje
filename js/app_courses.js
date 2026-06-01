@@ -96,9 +96,11 @@ function lcToggleRecette(cle, btn) {
     btn.classList.remove("lc-chip-active");
     btn.querySelector(".lc-chip-check").textContent = "";
   } else {
-    // Ajouter (nb personnes = foyer ou 4)
+    // Ajouter (nb personnes = foyer ; bébés exclus pour cocktails/mocktails, comme sur la fiche)
     const foyer = window.userProfile.foyer || {};
-    const nb = (foyer.adultes || 0) + (foyer.ados || 0) + (foyer.enfants || 0) + (foyer.bebes || 0) || 4;
+    const nb = (typeof calculerPersonnesPourRecette === "function")
+      ? calculerPersonnesPourRecette(cle)
+      : ((foyer.adultes || 0) + (foyer.ados || 0) + (foyer.enfants || 0) + (foyer.bebes || 0) || 4);
     window.userProfile.listeCourses.push({ cle, personnes: nb });
     btn.classList.add("lc-chip-active");
     btn.querySelector(".lc-chip-check").textContent = "✓";
@@ -106,6 +108,8 @@ function lcToggleRecette(cle, btn) {
   
   // Sauvegarde Firebase silencieuse
   lcSauvegarder();
+  if (typeof lcAfficherPanier === "function") lcAfficherPanier();
+  if (typeof lcGenererListe === "function") lcGenererListe();
 }
 
 // v258.14 : ajoute UNE recette (depuis sa fiche) à la liste de courses intelligente.
@@ -123,7 +127,8 @@ function ajouterRecetteAuxCourses(cle) {
   const foyer = window.userProfile.foyer || {};
   const totalFoyer = (foyer.adultes || 0) + (foyer.ados || 0) + (foyer.enfants || 0) + (foyer.bebes || foyer.bébés || 0);
   const inputP = document.getElementById("personnes");
-  const nb = (inputP && parseInt(inputP.value)) || totalFoyer || 4;
+  const nb = (inputP && parseInt(inputP.value))
+    || ((typeof calculerPersonnesPourRecette === "function") ? calculerPersonnesPourRecette(cle) : (totalFoyer || 4));
   const i = liste.findIndex(p => p.cle === cle);
   if (i >= 0) {
     liste[i].personnes = nb;
@@ -133,6 +138,8 @@ function ajouterRecetteAuxCourses(cle) {
     if (typeof afficherToast === "function") afficherToast("🛒 Ajouté à ta liste de courses");
   }
   if (typeof lcSauvegarder === "function") lcSauvegarder();
+  if (typeof lcAfficherPanier === "function") lcAfficherPanier();
+  if (typeof lcGenererListe === "function") lcGenererListe();
 }
 
 async function lcSauvegarder() {
@@ -603,6 +610,7 @@ function afficherRecettes() {
   if (typeof appliquerPreferencesVisuelles === "function") appliquerPreferencesVisuelles();
   if (typeof appliquerNutriScoreCartes === "function") appliquerNutriScoreCartes();
   if (typeof appliquerBadgeNotesCartes === "function") appliquerBadgeNotesCartes();
+  if (typeof appliquerBadgeEtoilesCartes === "function") appliquerBadgeEtoilesCartes();
 }
 
 // === Chip "Catégorie" : filtre combiné catégorie + pays ===
