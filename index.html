@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=259-36">
+<link rel="stylesheet" href="style.css?v=259-38">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=259-36">
+<link rel="stylesheet" href="style.css?v=259-38">
 </head>
 
 <body>
@@ -173,7 +173,7 @@ gtag('config', 'G-390C5MY2SS');
   <!-- Bloc Nouveautés de la semaine (masqué si aucune recette récente) -->
   <div class="accueil-bloc" id="accueil-nouveautes-bloc" style="display:none">
     <div class="accueil-bloc-header">
-      <h2><span class="badge-new">NEW</span> Nouveautés de la semaine</h2>
+      <h2><span class="badge-new">NEW</span> Dernières recettes ajoutées</h2>
     </div>
     <div class="accueil-scroll-row" id="accueil-nouveautes-row"></div>
   </div>
@@ -4176,6 +4176,230 @@ gtag('config', 'G-390C5MY2SS');
     </div>
   </div>
 
+  <div class="carte" data-cat="encas" data-pays="hongrie" onclick="ouvrirFiche('langos', null)">
+    <img src="images/langos.webp" alt="Lángos" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍞 Lángos</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="hongrie" onclick="ouvrirFiche('lecso', null)">
+    <img src="images/lecso.webp" alt="Lecsó" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🫑 Lecsó</h2>
+      <p>⏱ 35 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="georgie" onclick="ouvrirFiche('khinkali', null)">
+    <img src="images/khinkali.webp" alt="Khinkali" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥟 Khinkali</h2>
+      <p>⏱ 1h • ⭐⭐⭐ Élevé</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="georgie" onclick="ouvrirFiche('lobio', null)">
+    <img src="images/lobio.webp" alt="Lobio" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🫘 Lobio</h2>
+      <p>⏱ 45 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="antilles" onclick="ouvrirFiche('colombopoulet', null)">
+    <img src="images/colombopoulet.webp" alt="Colombo de poulet" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍛 Colombo de poulet</h2>
+      <p>⏱ 50 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="soupes" data-pays="antilles" onclick="ouvrirFiche('blaffpoisson', null)">
+    <img src="images/blaffpoisson.webp" alt="Blaff de poisson" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🐟 Blaff de poisson</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="aperitifs" data-pays="vietnam" onclick="ouvrirFiche('nemsvietnam', null)">
+    <img src="images/nemsvietnam.webp" alt="Nems" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥢 Nems</h2>
+      <p>⏱ 1h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="entrees" data-pays="vietnam" onclick="ouvrirFiche('goicuon', null)">
+    <img src="images/goicuon.webp" alt="Gỏi cuốn" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🌯 Gỏi cuốn</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="senegal" onclick="ouvrirFiche('dibisenegal', null)">
+    <img src="images/dibisenegal.webp" alt="Dibi" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍖 Dibi</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="senegal" onclick="ouvrirFiche('thiakry', null)">
+    <img src="images/thiakry.webp" alt="Thiakry" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥣 Thiakry</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="bresil" onclick="ouvrirFiche('paodequeijo', null)">
+    <img src="images/paodequeijo.webp" alt="Pão de queijo" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🧀 Pão de queijo</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="bresil" onclick="ouvrirFiche('brigadeiro', null)">
+    <img src="images/brigadeiro.webp" alt="Brigadeiro" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍫 Brigadeiro</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="entrees" data-pays="russie" onclick="ouvrirFiche('blinis', null)">
+    <img src="images/blinis.webp" alt="Blinis" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥞 Blinis</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="salades" data-pays="russie" onclick="ouvrirFiche('saladeolivier', null)">
+    <img src="images/saladeolivier.webp" alt="Salade Olivier" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥗 Salade Olivier</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="cuba" onclick="ouvrirFiche('morosycristianos', null)">
+    <img src="images/morosycristianos.webp" alt="Moros y Cristianos" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍚 Moros y Cristianos</h2>
+      <p>⏱ 50 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="cuba" onclick="ouvrirFiche('picadillo', null)">
+    <img src="images/picadillo.webp" alt="Picadillo" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥩 Picadillo</h2>
+      <p>⏱ 40 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="allemagne" onclick="ouvrirFiche('schnitzel', null)">
+    <img src="images/schnitzel.webp" alt="Schnitzel" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍖 Schnitzel</h2>
+      <p>⏱ 30 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="allemagne" onclick="ouvrirFiche('sauerbraten', null)">
+    <img src="images/sauerbraten.webp" alt="Sauerbraten" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥩 Sauerbraten</h2>
+      <p>⏱ 2h30 • ⭐⭐⭐ Élevé</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="angleterre" onclick="ouvrirFiche('scones', null)">
+    <img src="images/scones.webp" alt="Scones" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🧁 Scones</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="angleterre" onclick="ouvrirFiche('stickytoffee', null)">
+    <img src="images/stickytoffee.webp" alt="Sticky Toffee Pudding" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍰 Sticky Toffee Pudding</h2>
+      <p>⏱ 50 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="turquie" onclick="ouvrirFiche('doner', null)">
+    <img src="images/doner.webp" alt="Döner Kebab" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥙 Döner Kebab</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="encas" data-pays="turquie" onclick="ouvrirFiche('borekturc', null)">
+    <img src="images/borekturc.webp" alt="Börek" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥟 Börek</h2>
+      <p>⏱ 45 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="turquie" onclick="ouvrirFiche('kofteturc', null)">
+    <img src="images/kofteturc.webp" alt="Köfte" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍢 Köfte</h2>
+      <p>⏱ 35 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="ethiopie" onclick="ouvrirFiche('dorowat', null)">
+    <img src="images/dorowat.webp" alt="Doro Wat" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🍗 Doro Wat</h2>
+      <p>⏱ 1h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="ethiopie" onclick="ouvrirFiche('misirwat', null)">
+    <img src="images/misirwat.webp" alt="Misir Wat" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🫘 Misir Wat</h2>
+      <p>⏱ 40 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="boulangerie" data-pays="ethiopie" onclick="ouvrirFiche('injera', null)">
+    <img src="images/injera.webp" alt="Injera" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🫓 Injera</h2>
+      <p>⏱ 30 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="plats" data-pays="suede" onclick="ouvrirFiche('kottbullar', null)">
+    <img src="images/kottbullar.webp" alt="Köttbullar" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🧆 Köttbullar</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-cat="desserts" data-pays="suede" onclick="ouvrirFiche('kanelbullar', null)">
+    <img src="images/kanelbullar.webp" alt="Kanelbullar" onerror="this.style.display='none'">
+    <div class="carte-info">
+      <h2>🥐 Kanelbullar</h2>
+      <p>⏱ 45 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
 </section>
 
 <!-- FIN SECTION CARTES -->
@@ -4661,25 +4885,25 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=259-36"></script>
-<script src="js/allergenes.js?v=259-36"></script>
+<script src="js/version.js?v=259-38"></script>
+<script src="js/allergenes.js?v=259-38"></script>
 <script src="js/exceptions.js?v=258-34"></script>
-<script src="js/recettes.js?v=259-36"></script>
+<script src="js/recettes.js?v=259-38"></script>
 <script src="js/recettes_cocktails.js?v=258-34"></script>
-<script src="js/recettes_mocktails.js?v=259-36"></script>
-<script src="js/ingredients_prix.js?v=259-36"></script>
-<script src="js/tables.js?v=259-36"></script>
-<script src="js/app.js?v=259-36"></script>
-<script src="js/emojis.js?v=259-36"></script>
-<script src="js/app_avis.js?v=259-36"></script>
+<script src="js/recettes_mocktails.js?v=259-38"></script>
+<script src="js/ingredients_prix.js?v=259-38"></script>
+<script src="js/tables.js?v=259-38"></script>
+<script src="js/app.js?v=259-38"></script>
+<script src="js/emojis.js?v=259-38"></script>
+<script src="js/app_avis.js?v=259-38"></script>
 <script src="js/app_admin.js?v=258-34"></script>
-<script src="js/app_menu.js?v=259-36"></script>
+<script src="js/app_menu.js?v=259-38"></script>
 <script src="js/app_courses_impr.js?v=258-34"></script>
 <script src="js/app_recherche.js?v=258-34"></script>
 <script src="js/app_garde_manger.js?v=258-34"></script>
 <script src="js/app_modal_confirm.js?v=258-34"></script>
-<script src="js/app_courses.js?v=259-36"></script>
-<script src="js/app_stats.js?v=259-36"></script>
+<script src="js/app_courses.js?v=259-38"></script>
+<script src="js/app_stats.js?v=259-38"></script>
 
 
 
@@ -4999,7 +5223,7 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="auth.js?v=259-36"></script>
+<script src="auth.js?v=259-38"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
