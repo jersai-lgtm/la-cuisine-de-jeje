@@ -236,7 +236,13 @@ function chargerAccueilTopMois() {
   if (!row) return;
   
   const mois = new Date().getMonth();
-  if (titre) titre.textContent = `🌱 Le top de ${NOMS_MOIS_FR[mois]}`;
+  if (titre) {
+    titre.textContent = `🌱 Le top de ${NOMS_MOIS_FR[mois]}`;
+    // Couleur selon la saison : vert printemps / or été / marron automne / bleu hiver
+    if (typeof getCouleurSaison === "function" && typeof getSaisonActuelle === "function") {
+      titre.style.color = getCouleurSaison(getSaisonActuelle());
+    }
+  }
   
   const top = getRecettesDuMois(10);
   if (top.length === 0) {
@@ -292,6 +298,17 @@ function chargerAccueilFavoris() {
 function chargerAccueilMenus() {
   const row = document.getElementById("accueil-menus-row");
   if (!row) return;
+  // Couleurs : jours (comme le planificateur) + catégories (comme le menu thématique, Option C)
+  const COULEURS_JOURS_ACC = { Lundi:"#e2574c", Mardi:"#e58e26", Mercredi:"#f0b429", Jeudi:"#4caf50", Vendredi:"#1aa6b3", Samedi:"#5a6ee0", Dimanche:"#c44cc4" };
+  const couleurCatAcc = (cat) => {
+    const c = (cat || "").toLowerCase();
+    if (c.includes("apéritif") || c.includes("aperitif")) return "#2FA6A0";
+    if (c.includes("apéro") || c.includes("apero")) return "#E0A82E";
+    if (c.includes("entrée") || c.includes("entree")) return "#4F91D9";
+    if (c.includes("plat")) return "#E0654F";
+    if (c.includes("dessert")) return "#9B6FC9";
+    return "#888";
+  };
   // 1) Le menu réellement généré/chargé en dernier (semaine OU thématique) prime
   let dernier = null;
   const courant = window._dernierMenuGenere || window._derniersMenus || null;
@@ -339,8 +356,8 @@ function chargerAccueilMenus() {
       const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
                   : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🧒</span>` : "";
       return `
-      <div class="accueil-menu-card">
-        <div class="accueil-menu-day">${p.categorie || "Plat"}</div>
+      <div class="accueil-menu-card" style="border-left:3px solid ${couleurCatAcc(p.categorie)}">
+        <div class="accueil-menu-day" style="color:${couleurCatAcc(p.categorie)}">${p.categorie || "Plat"}</div>
         <div class="accueil-menu-item" style="${style};cursor:pointer" title="${tip}" onclick="ouvrirRecettePlan('${key}', ${persMenu})">
           <span>${emoji}</span>
           <div>
@@ -360,6 +377,7 @@ function chargerAccueilMenus() {
   const isComplet = semaine[0]?.midi?.plat !== undefined;
 
   row.innerHTML = semaine.map(j => {
+    const cJour = COULEURS_JOURS_ACC[j.jour] || "#888";
     if (isComplet) {
       // Format repas complet : entrée / plat / dessert
       const genSous = (r, icone) => {
@@ -385,8 +403,8 @@ function chargerAccueilMenus() {
         </div>`;
       };
       return `
-      <div class="accueil-menu-card">
-        <div class="accueil-menu-day">${j.jour}</div>
+      <div class="accueil-menu-card" style="border-left:3px solid ${cJour}">
+        <div class="accueil-menu-day" style="color:${cJour}">${j.jour}</div>
         <div style="font-size:9px;color:#ff8fb3;font-weight:700;margin-bottom:4px">☀️ Midi</div>
         ${genSous(j.midi?.entree, "🥗 Entrée")}
         ${genSous(j.midi?.plat, "🍽️ Plat")}
@@ -420,8 +438,8 @@ function chargerAccueilMenus() {
     const aM = fmtAlerte(nM);
     const aS = fmtAlerte(nS);
     return `
-    <div class="accueil-menu-card">
-      <div class="accueil-menu-day">${j.jour}</div>
+    <div class="accueil-menu-card" style="border-left:3px solid ${cJour}">
+      <div class="accueil-menu-day" style="color:${cJour}">${j.jour}</div>
       <div class="accueil-menu-item" style="${aM.style};cursor:pointer" title="${aM.tip}" ${midiKey ? `onclick="ouvrirRecettePlan('${midiKey}', ${persMenu})"` : ""}>
         <span>${emoji1}</span>
         <div>
@@ -591,6 +609,16 @@ function getEmojiSaison(saison) {
     automne:   { emoji: "🍂", label: "Automne" },
     hiver:     { emoji: "❄️", label: "Hiver" },
   })[saison] || { emoji: "", label: "" };
+}
+
+// Couleur associée à chaque saison : 🌱 vert printemps / ☀️ or été / 🍂 marron automne / ❄️ bleu hiver
+function getCouleurSaison(saison) {
+  return ({
+    printemps: "#4CAF50", // vert
+    ete:       "#E0A82E", // or
+    automne:   "#B5651D", // marron
+    hiver:     "#4F91D9", // bleu
+  })[saison] || "#888";
 }
 
 // Indique si une recette est "de saison maintenant"
