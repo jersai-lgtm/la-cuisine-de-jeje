@@ -979,6 +979,15 @@ window.addEventListener('profilMisAJour', () => {
   if (typeof chargerAccueilFetiches === "function") chargerAccueilFetiches();
   // Rafraîchir le bouton d'avis selon le compte (corrige le "redonner mon avis" après reconnexion)
   if (typeof chargerStatsAvis === "function") chargerStatsAvis();
+  // Si la vue "Recettes favorites" (grille) est ouverte, la re-filtrer en direct
+  // (retrait d'un favori → la carte disparaît immédiatement, sans recharger la page)
+  const btnFavActif = document.getElementById("btn-favoris");
+  const chipRecFav = document.getElementById("chip-fav-recettes");
+  if (btnFavActif && btnFavActif.classList.contains("active") &&
+      chipRecFav && chipRecFav.classList.contains("active") &&
+      typeof filtrerFavoris === "function") {
+    filtrerFavoris();
+  }
   // Si la vue dédiée "Menus favoris" est ouverte, la re-rendre
   const secMF = document.getElementById("section-menus-favoris");
   if (secMF && secMF.style.display !== "none" && typeof filtrerMenusFavoris === "function") {
