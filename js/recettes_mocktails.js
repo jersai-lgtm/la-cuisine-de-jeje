@@ -544,5 +544,32 @@ Object.assign(recettes, {
       { icone: "🍵", titre: "Assembler", detail: "Verser le lait chaud LENTEMENT en filet sur la mousse de matcha. Si bien fait : le matcha vert pur reste au-dessus, le lait blanc en-dessous = effet visuel signature.", badge: "⏱ 30 sec" },
       { icone: "✨", titre: "Service zen", detail: "Servir IMMÉDIATEMENT dans une grande tasse. Saupoudrer d'un peu de matcha en surface. Pour version GLACÉE : verser sur des glaçons. Pour version originale : sans sucre, juste matcha + lait. 抹茶ラテ !", badge: null }
     ]
+  },
+  bieraubeurre: {
+    cat: "mocktails", pays: "angleterre",
+    base: 1,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🍺",
+    description: "La célèbre Bière au Beurre des sorciers — sans alcool ! Une boisson pétillante au caramel beurre salé, coiffée d'une mousse onctueuse. Magique pour petits et grands. 🪄",
+    tableauBiereBeurre: [
+      { verres: 1, limonade: "20 cl", caramel: "2 c.à.s", beurre: "10 g", cassonade: "1 c.à.s", creme: "5 cl" },
+      { verres: 2, limonade: "40 cl", caramel: "4 c.à.s", beurre: "20 g", cassonade: "2 c.à.s", creme: "10 cl" },
+      { verres: 3, limonade: "60 cl", caramel: "6 c.à.s", beurre: "30 g", cassonade: "3 c.à.s", creme: "15 cl" },
+      { verres: 4, limonade: "80 cl", caramel: "8 c.à.s", beurre: "40 g", cassonade: "4 c.à.s", creme: "20 cl" },
+      { verres: 5, limonade: "1 L", caramel: "10 c.à.s", beurre: "50 g", cassonade: "5 c.à.s", creme: "25 cl" },
+      { verres: 6, limonade: "1,2 L", caramel: "12 c.à.s", beurre: "60 g", cassonade: "6 c.à.s", creme: "30 cl" },
+      { verres: 7, limonade: "1,4 L", caramel: "14 c.à.s", beurre: "70 g", cassonade: "7 c.à.s", creme: "35 cl" },
+      { verres: 8, limonade: "1,6 L", caramel: "16 c.à.s", beurre: "80 g", cassonade: "8 c.à.s", creme: "40 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Le sirop beurré", detail: "Dans une petite casserole à feu doux, faire fondre le beurre avec le caramel beurre salé et la cassonade. Mélanger jusqu'à obtenir un sirop lisse et brillant. Hors du feu, ajouter la vanille (≈1 c.à.c pour 4 verres).", badge: "⏱ 5 min" },
+      { icone: "❄️", titre: "Faire tiédir", detail: "Laisser refroidir le sirop quelques minutes. ASTUCE : s'il est trop chaud, il fera retomber les bulles de la limonade.", badge: "⏱ 5 min" },
+      { icone: "🥛", titre: "La mousse signature", detail: "Fouetter la crème BIEN FROIDE avec 1 c.à.s de caramel et un peu de sucre glace, jusqu'à une mousse SOUPLE (surtout pas ferme : elle doit encore couler un peu).", badge: "⏱ 3 min" },
+      { icone: "🥤", titre: "Assembler", detail: "Au fond de chaque verre, verser le sirop beurré tiède. Compléter avec la limonade (ou un cream soda) bien fraîche, en remuant délicatement pour garder les bulles.", badge: null },
+      { icone: "✨", titre: "Couronner de mousse", detail: "Déposer généreusement la mousse à la crème sur le dessus, façon faux-col de bière. Un filet de caramel par-dessus pour la gourmandise.", badge: null },
+      { icone: "🪄", titre: "Service magique", detail: "Servir AUSSITÔT, mousse débordante. Version froide en été ; pour une version chaude réconfortante, remplacer la limonade par du lait chaud vanillé. À déguster même par les sorciers de moins de 11 ans !", badge: null }
+    ]
   }
 });

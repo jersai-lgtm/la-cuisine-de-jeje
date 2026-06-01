@@ -964,7 +964,8 @@ function getNomRecette(key) {
     "gaspacho":"Gaspacho","curryledumes":"Curry de Légumes",
     "painbaguette":"Pain — Baguette","paindemie":"Pain de mie",
     "patefeuilletee":"Pâte feuilletée","patebrisee":"Pâte brisée","patesablee":"Pâte sablée",
-    "pizza":"Pâte à Pizza",
+    "pizza":"Pâte à pizza",
+    "bieraubeurre":"Bière au Beurre",
     "goumeau":           "Galette de Goumeau",
     "burgermaison":      "Burger Maison",
     "bolognaisemaison":  "Bolognaise Maison",
@@ -1351,8 +1352,9 @@ function getNomRecette(key) {
     "pizzavegetarienne": "Pizza Végétarienne",
     "crepes":            "Crêpes",
     "lasagne":           "Pâte à Lasagne",
-    "patepizza":         "Pâte à Pizza",
-    "pizza":             "Pâte à Pizza",
+    "patepizza":         "Pâte à pizza",
+    "pizza":             "Pâte à pizza",
+    "bieraubeurre":      "Bière au Beurre",
   };
   if (nomsAffichage[key]) return nomsAffichage[key];
   // Fallback 1 : lire le nom depuis le <h2> de la carte (source complète des 499 recettes,
