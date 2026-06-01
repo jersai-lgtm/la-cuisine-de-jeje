@@ -949,6 +949,8 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
 
 
 function getNomRecette(key) {
+  // Recettes perso/communauté : nom stocké directement sur l'objet
+  if (typeof recettes !== "undefined" && recettes[key] && recettes[key].nom) return recettes[key].nom;
   const nomsAffichage = {
     "croquemonsieur":"Croque-monsieur","cremebrulee":"Crème brûlée",
     "tarteaupommes":"Tarte aux pommes","tartecitron":"Tarte au citron",
