@@ -660,6 +660,29 @@ const INGREDIENTS_PRIX = {
   // === v257.2 — Ingrédients pour nouvelles recettes ===
   cabillaud:      { prixKg: 22.0, calPer100g: 82,   lipSat: 0.2,  sucre: 0,    sel: 0.1,  fibres: 0,   prot: 18,   flv: 0 },
   magret:         { prixKg: 26.0, calPer100g: 200,  lipSat: 4,    sucre: 0,    sel: 0.1,  fibres: 0,   prot: 18,   flv: 0 },
+  // === v259.32 — Ingrédients des recettes du monde (Pologne, Tibet, Haïti, Nigeria, Caraïbes, Pérou, Colombie, Polynésie, Hawaii, Singapour, Belgique) ===
+  boeufOuPoulet:    { prixKg: 15.0, calPer100g: 200,  lipSat: 4,    sucre: 0,    sel: 0.2,  fibres: 0,   prot: 25,   flv: 0 },
+  saucisseFumee:    { prixKg: 10.0, calPer100g: 300,  lipSat: 10,   sucre: 1,    sel: 2,    fibres: 0,   prot: 15,   flv: 0 },
+  poitrine:         { prixKg: 9.00, calPer100g: 290,  lipSat: 13,   sucre: 0,    sel: 0.4,  fibres: 0,   prot: 14,   flv: 0 },
+  choucroute:       { prixKg: 3.00, calPer100g: 20,   lipSat: 0,    sucre: 1,    sel: 0.8,  fibres: 3,   prot: 1.5,  flv: 100 },
+  chouFrais:        { prixKg: 1.50, calPer100g: 25,   lipSat: 0,    sucre: 3.8,  sel: 0,    fibres: 2.5, prot: 1.3,  flv: 100 },
+  giraumon:         { prixKg: 2.00, calPer100g: 26,   lipSat: 0,    sucre: 3,    sel: 0,    fibres: 2,   prot: 1,    flv: 100 },
+  legumes:          { prixKg: 2.50, calPer100g: 45,   lipSat: 0.1,  sucre: 4,    sel: 0.05, fibres: 3,   prot: 2,    flv: 100 },
+  pommesDeTerre:    { prixKg: 1.20, calPer100g: 77,   lipSat: 0,    sucre: 0.8,  sel: 0,    fibres: 2.1, prot: 2,    flv: 100 },
+  pommeDeTerre:     { prixUnite: 0.20, cal: 115,       lipSat: 0,    sucre: 0.8,  sel: 0,    fibres: 2.1, prot: 2,    flv: 100 },
+  frites:           { prixKg: 2.50, calPer100g: 150,  lipSat: 1.5,  sucre: 0.5,  sel: 0.4,  fibres: 3.5, prot: 2.5,  flv: 0 },
+  farineMais:       { prixKg: 2.50, calPer100g: 361,  lipSat: 0.2,  sucre: 0.6,  sel: 0,    fibres: 7,   prot: 7,    flv: 0 },
+  haricotsRouges:   { prixKg: 3.00, calPer100g: 127,  lipSat: 0.1,  sucre: 0.3,  sel: 0.01, fibres: 7.4, prot: 8.7,  flv: 100 },
+  crevettesSechees: { prixKg: 30.0, calPer100g: 290,  lipSat: 1,    sucre: 0,    sel: 3,    fibres: 0,   prot: 62,   flv: 0 },
+  djondjon:         { prixKg: 60.0, calPer100g: 280,  lipSat: 0.3,  sucre: 2,    sel: 0.05, fibres: 25,  prot: 20,   flv: 100 },
+  grainesEgusi:     { prixKg: 12.0, calPer100g: 590,  lipSat: 8,    sucre: 1,    sel: 0,    fibres: 4,   prot: 28,   flv: 0 },
+  germes:           { prixKg: 4.00, calPer100g: 30,   lipSat: 0,    sucre: 2,    sel: 0.01, fibres: 1.8, prot: 3,    flv: 100 },
+  gravy:            { prixKg: 3.00, calPer100g: 50,   lipSat: 1,    sucre: 1,    sel: 1,    fibres: 0,   prot: 1,    flv: 0 },
+  sucrePerle:       { prixKg: 4.00, calPer100g: 400,  lipSat: 0,    sucre: 100,  sel: 0,    fibres: 0,   prot: 0,    flv: 0 },
+  jauneOeuf:        { prixUnite: 0.15, cal: 55,        lipSat: 4,    sucre: 0.6,  sel: 0.1,  fibres: 0,   prot: 2.7,  flv: 0 },
+  painDeMie:        { prixUnite: 0.10, cal: 70,        lipSat: 0.5,  sucre: 3,    sel: 0.5,  fibres: 1.5, prot: 2.5,  flv: 0 },
+  plantain:         { prixUnite: 0.50, cal: 220,       lipSat: 0.1,  sucre: 17,   sel: 0,    fibres: 4,   prot: 2,    flv: 100 },
+  poireau:          { prixUnite: 0.60, cal: 30,        lipSat: 0,    sucre: 2.3,  sel: 0,    fibres: 2.5, prot: 1.5,  flv: 100 },
 };
 
 // ===================================================================
