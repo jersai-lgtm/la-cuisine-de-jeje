@@ -627,6 +627,8 @@ async function genererMenus() {
   afficherMenusSemaine(menusSemaine, parseInt(personnes));
   menusSemaine.personnes = parseInt(personnes);
   window._dernierMenuGenere = menusSemaine;
+  // v259.34 : compteur cumulatif de menus générés (pour les stats/records/badges)
+  if (typeof window.incrementerMenusGeneres === "function") window.incrementerMenusGeneres();
 
   btn.textContent = "✨ Générer mes menus";
   btn.disabled = false;
