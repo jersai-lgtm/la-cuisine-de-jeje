@@ -4898,3 +4898,37 @@ select, input[type="number"] {
 .contrib-item-actions button {
   background: none; border: none; cursor: pointer; font-size: 16px; padding: 2px 6px;
 }
+
+/* ===== CONTRIBUTION Phase 2 — communauté + modération ===== */
+.contrib-mode { display: flex; gap: 8px; margin-top: 14px; }
+.contrib-mode-btn {
+  flex: 1; padding: 10px; border-radius: 12px; cursor: pointer;
+  border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.05);
+  color: #ccc; font-weight: 700; font-size: 14px;
+}
+.contrib-mode-btn.active { background: linear-gradient(135deg, #7c5cd6, #b06cf5); color: #fff; border-color: transparent; }
+.contrib-mode-note { font-size: 12px; color: #999; margin: 8px 2px 0; }
+.carte-badge-com {
+  position: absolute; top: 8px; left: 8px; z-index: 3;
+  background: rgba(34,160,120,.96); color: #fff;
+  font-size: 11px; font-weight: 800; padding: 2px 7px; border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.45); max-width: 80%;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.contrib-statut { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 8px; }
+.statut-attente { background: rgba(245,179,1,.18); color: #f5b301; }
+.contrib-moderation { margin-top: 22px; border-top: 2px solid rgba(34,160,120,.4); padding-top: 14px; }
+.contrib-modo-item {
+  background: rgba(255,255,255,.05); border-radius: 12px; padding: 12px; margin-bottom: 10px;
+}
+.contrib-modo-head { font-size: 15px; color: #fff; }
+.contrib-modo-auteur { color: #999; font-size: 12px; font-weight: 400; }
+.contrib-modo-desc { color: #bbb; font-size: 13px; margin: 6px 0; font-style: italic; }
+.contrib-modo-ingr { color: #aaa; font-size: 12px; margin-bottom: 10px; }
+.contrib-modo-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.contrib-modo-actions button {
+  flex: 1; min-width: 80px; padding: 8px; border-radius: 10px; border: none; cursor: pointer;
+  font-weight: 700; font-size: 13px; background: rgba(255,255,255,.1); color: #eee;
+}
+.contrib-modo-actions .modo-ok { background: rgba(34,160,120,.9); color: #fff; }
+.contrib-modo-actions .modo-no { background: rgba(220,70,70,.9); color: #fff; }

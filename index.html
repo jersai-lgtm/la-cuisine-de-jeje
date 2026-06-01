@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=259-51">
+<link rel="stylesheet" href="style.css?v=259-52">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=259-51">
+<link rel="stylesheet" href="style.css?v=259-52">
 </head>
 
 <body>
@@ -4891,25 +4891,25 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=259-51"></script>
-<script src="js/allergenes.js?v=259-51"></script>
-<script src="js/exceptions.js?v=259-51"></script>
-<script src="js/recettes.js?v=259-51"></script>
+<script src="js/version.js?v=259-52"></script>
+<script src="js/allergenes.js?v=259-52"></script>
+<script src="js/exceptions.js?v=259-52"></script>
+<script src="js/recettes.js?v=259-52"></script>
 <script src="js/recettes_cocktails.js?v=258-34"></script>
-<script src="js/recettes_mocktails.js?v=259-51"></script>
-<script src="js/ingredients_prix.js?v=259-51"></script>
-<script src="js/tables.js?v=259-51"></script>
-<script src="js/app.js?v=259-51"></script>
-<script src="js/emojis.js?v=259-51"></script>
-<script src="js/app_avis.js?v=259-51"></script>
+<script src="js/recettes_mocktails.js?v=259-52"></script>
+<script src="js/ingredients_prix.js?v=259-52"></script>
+<script src="js/tables.js?v=259-52"></script>
+<script src="js/app.js?v=259-52"></script>
+<script src="js/emojis.js?v=259-52"></script>
+<script src="js/app_avis.js?v=259-52"></script>
 <script src="js/app_admin.js?v=258-34"></script>
-<script src="js/app_menu.js?v=259-51"></script>
+<script src="js/app_menu.js?v=259-52"></script>
 <script src="js/app_courses_impr.js?v=258-34"></script>
 <script src="js/app_recherche.js?v=258-34"></script>
 <script src="js/app_garde_manger.js?v=258-34"></script>
 <script src="js/app_modal_confirm.js?v=258-34"></script>
-<script src="js/app_courses.js?v=259-51"></script>
-<script src="js/app_stats.js?v=259-51"></script>
+<script src="js/app_courses.js?v=259-52"></script>
+<script src="js/app_stats.js?v=259-52"></script>
 
 
 
@@ -5112,6 +5112,12 @@ gtag('config', 'G-390C5MY2SS');
       </div>
     </div>
 
+    <div class="contrib-mode">
+      <button class="contrib-mode-btn active" onclick="contribSetMode('perso', this)">🔒 Pour moi</button>
+      <button class="contrib-mode-btn" onclick="contribSetMode('communaute', this)">🌍 Communauté</button>
+    </div>
+    <p class="contrib-mode-note" id="contrib-mode-note">Ta recette restera privée, visible par toi seul.</p>
+
     <div class="contrib-form">
       <label class="contrib-label">Nom de la recette *</label>
       <input type="text" id="c-nom" class="contrib-input" placeholder="Ex : Gratin de mamie" maxlength="60">
@@ -5167,12 +5173,22 @@ gtag('config', 'G-390C5MY2SS');
       <label class="contrib-label">Étapes * <span class="contrib-hint">(une par ligne)</span></label>
       <textarea id="c-etapes" class="contrib-input" rows="5" placeholder="Préchauffer le four à 180°C&#10;Mélanger la farine et le beurre&#10;Enfourner 30 min"></textarea>
 
-      <button class="contrib-submit" onclick="soumettreContribution()">✅ Enregistrer ma recette</button>
+      <button class="contrib-submit" id="contrib-submit-btn" onclick="soumettreContribution()">✅ Enregistrer ma recette</button>
     </div>
 
     <div class="contrib-mes-recettes">
       <h3 class="contrib-sous-titre">👤 Mes recettes perso</h3>
       <div id="c-mes-recettes"></div>
+    </div>
+
+    <div class="contrib-mes-recettes">
+      <h3 class="contrib-sous-titre">🌍 Mes propositions communauté</h3>
+      <div id="c-mes-propositions"></div>
+    </div>
+
+    <div id="c-moderation" class="contrib-moderation" style="display:none">
+      <h3 class="contrib-sous-titre">🛡️ Modération — recettes à valider</h3>
+      <div id="c-moderation-liste"></div>
     </div>
   </div>
 </div>
@@ -5305,9 +5321,9 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="auth.js?v=259-51"></script>
-<script src="js/note_recettes.js?v=259-51"></script>
-<script src="js/app_contribution.js?v=259-51"></script>
+<script src="auth.js?v=259-52"></script>
+<script src="js/note_recettes.js?v=259-52"></script>
+<script src="js/app_contribution.js?v=259-52"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
