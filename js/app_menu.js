@@ -1534,6 +1534,8 @@ function afficherMenusSemaine(menus, personnes) {
     const couleurJour = COULEURS_JOURS[jour.jour] || "#888";
     div.style.border = "2px solid " + couleurJour;
     div.style.boxShadow = "0 0 12px " + couleurJour + "44";
+    // Teinte (Moyen) de la couleur du jour sur tout le bloc (adoucit le noir)
+    div.style.background = "linear-gradient(0deg, " + couleurJour + "28, " + couleurJour + "28), #17151c";
 
     if (isComplet) {
       // Format entrée/plat/dessert

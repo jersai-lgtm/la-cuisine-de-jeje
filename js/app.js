@@ -356,7 +356,7 @@ function chargerAccueilMenus() {
       const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
                   : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🧒</span>` : "";
       return `
-      <div class="accueil-menu-card" style="border-left:3px solid ${couleurCatAcc(p.categorie)}">
+      <div class="accueil-menu-card" style="border-left:3px solid ${couleurCatAcc(p.categorie)};background:linear-gradient(0deg, ${couleurCatAcc(p.categorie)}28, ${couleurCatAcc(p.categorie)}28), #17151c">
         <div class="accueil-menu-day" style="color:${couleurCatAcc(p.categorie)}">${p.categorie || "Plat"}</div>
         <div class="accueil-menu-item" style="${style};cursor:pointer" title="${tip}" onclick="ouvrirRecettePlan('${key}', ${persMenu})">
           <span>${emoji}</span>
@@ -403,7 +403,7 @@ function chargerAccueilMenus() {
         </div>`;
       };
       return `
-      <div class="accueil-menu-card" style="border-left:3px solid ${cJour}">
+      <div class="accueil-menu-card" style="border-left:3px solid ${cJour};background:linear-gradient(0deg, ${cJour}28, ${cJour}28), #17151c">
         <div class="accueil-menu-day" style="color:${cJour}">${j.jour}</div>
         <div style="font-size:9px;color:#ff8fb3;font-weight:700;margin-bottom:4px">☀️ Midi</div>
         ${genSous(j.midi?.entree, "🥗 Entrée")}
@@ -438,7 +438,7 @@ function chargerAccueilMenus() {
     const aM = fmtAlerte(nM);
     const aS = fmtAlerte(nS);
     return `
-    <div class="accueil-menu-card" style="border-left:3px solid ${cJour}">
+    <div class="accueil-menu-card" style="border-left:3px solid ${cJour};background:linear-gradient(0deg, ${cJour}28, ${cJour}28), #17151c">
       <div class="accueil-menu-day" style="color:${cJour}">${j.jour}</div>
       <div class="accueil-menu-item" style="${aM.style};cursor:pointer" title="${aM.tip}" ${midiKey ? `onclick="ouvrirRecettePlan('${midiKey}', ${persMenu})"` : ""}>
         <span>${emoji1}</span>
