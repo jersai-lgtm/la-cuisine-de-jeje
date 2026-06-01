@@ -146,7 +146,7 @@ async function chargerProfil(user) {
       preferences: { regimes:[], allergies:[], allergiesCustom:[], objectifs:[], cuisinesFavorites:[], niveauCuisine:"débutant" },
       favoris: [], historiqueMenus: [], menusFavoris: [],
       recettesVues: [], totalRecettesVues: 0, totalMenusGeneres: 0, recettesCuisinees: [],
-      listeCourses: [], listeCoursesCoches: [], notesEtoilesRecettes: {}
+      listeCourses: [], listeCoursesCoches: [], notesEtoilesRecettes: {}, recettesPerso: {}
     };
     await ref.set(profil);
     window.userProfile = profil;

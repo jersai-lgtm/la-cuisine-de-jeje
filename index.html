@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=259-50">
+<link rel="stylesheet" href="style.css?v=259-51">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=259-50">
+<link rel="stylesheet" href="style.css?v=259-51">
 </head>
 
 <body>
@@ -107,6 +107,7 @@ gtag('config', 'G-390C5MY2SS');
   <button class="cat-btn" id="btn-recettes" onclick="afficherRecettes()">🍳 <span class="cat-label">Recettes</span></button>
   <button class="cat-btn" id="btn-favoris" onclick="afficherFavorisAvecChips()">⭐ <span class="cat-label">Favoris</span></button>
   <button class="cat-btn" id="btn-mon-profil" onclick="filtrerMonProfil()" style="display:none">👤 <span class="cat-label">Profil</span></button>
+  <button class="cat-btn" id="btn-contribution" onclick="ouvrirContribution()">➕ <span class="cat-label">Ajouter</span></button>
 </nav>
 
 <!-- BARRE DE FILTRES — visible seulement en mode "Recettes" -->
@@ -4890,25 +4891,25 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=259-50"></script>
-<script src="js/allergenes.js?v=259-50"></script>
-<script src="js/exceptions.js?v=259-50"></script>
-<script src="js/recettes.js?v=259-50"></script>
+<script src="js/version.js?v=259-51"></script>
+<script src="js/allergenes.js?v=259-51"></script>
+<script src="js/exceptions.js?v=259-51"></script>
+<script src="js/recettes.js?v=259-51"></script>
 <script src="js/recettes_cocktails.js?v=258-34"></script>
-<script src="js/recettes_mocktails.js?v=259-50"></script>
-<script src="js/ingredients_prix.js?v=259-50"></script>
-<script src="js/tables.js?v=259-50"></script>
-<script src="js/app.js?v=259-50"></script>
-<script src="js/emojis.js?v=259-50"></script>
-<script src="js/app_avis.js?v=259-50"></script>
+<script src="js/recettes_mocktails.js?v=259-51"></script>
+<script src="js/ingredients_prix.js?v=259-51"></script>
+<script src="js/tables.js?v=259-51"></script>
+<script src="js/app.js?v=259-51"></script>
+<script src="js/emojis.js?v=259-51"></script>
+<script src="js/app_avis.js?v=259-51"></script>
 <script src="js/app_admin.js?v=258-34"></script>
-<script src="js/app_menu.js?v=259-50"></script>
+<script src="js/app_menu.js?v=259-51"></script>
 <script src="js/app_courses_impr.js?v=258-34"></script>
 <script src="js/app_recherche.js?v=258-34"></script>
 <script src="js/app_garde_manger.js?v=258-34"></script>
 <script src="js/app_modal_confirm.js?v=258-34"></script>
-<script src="js/app_courses.js?v=259-50"></script>
-<script src="js/app_stats.js?v=259-50"></script>
+<script src="js/app_courses.js?v=259-51"></script>
+<script src="js/app_stats.js?v=259-51"></script>
 
 
 
@@ -5100,6 +5101,82 @@ gtag('config', 'G-390C5MY2SS');
 <!-- ==============================
      MODAL PROFIL (modifier)
 ================================ -->
+<div id="modal-contribution" class="modal-auth-overlay" style="display:none" onclick="if(event.target===this)fermerContribution()">
+  <div class="modal-auth-box modal-contrib-box">
+    <button class="modal-fermer" onclick="fermerContribution()">✕</button>
+    <div class="profil-header">
+      <div class="auth-logo">➕</div>
+      <div>
+        <div class="profil-nom">Ajouter une recette</div>
+        <div class="profil-email-txt">Ta recette perso, privée et rien qu'à toi 🔒</div>
+      </div>
+    </div>
+
+    <div class="contrib-form">
+      <label class="contrib-label">Nom de la recette *</label>
+      <input type="text" id="c-nom" class="contrib-input" placeholder="Ex : Gratin de mamie" maxlength="60">
+
+      <div class="contrib-row">
+        <div>
+          <label class="contrib-label">Emoji</label>
+          <input type="text" id="c-emoji" class="contrib-input" placeholder="🍽️" maxlength="4">
+        </div>
+        <div>
+          <label class="contrib-label">Temps</label>
+          <input type="text" id="c-temps" class="contrib-input" placeholder="45 min">
+        </div>
+      </div>
+
+      <div class="contrib-row">
+        <div>
+          <label class="contrib-label">Catégorie</label>
+          <select id="c-cat" class="contrib-input">
+            <option value="plats">Plats</option>
+            <option value="entrees">Entrées</option>
+            <option value="soupes">Soupes</option>
+            <option value="salades">Salades</option>
+            <option value="desserts">Desserts</option>
+            <option value="encas">En-cas</option>
+            <option value="aperitifs">Apéritifs</option>
+            <option value="brunch">Brunch</option>
+            <option value="healthy">Healthy</option>
+            <option value="pizzas">Pizzas</option>
+            <option value="sauces">Sauces</option>
+            <option value="boulangerie">Boulangerie</option>
+          </select>
+        </div>
+        <div>
+          <label class="contrib-label">Niveau</label>
+          <select id="c-niveau" class="contrib-input">
+            <option value="⭐ Facile">⭐ Facile</option>
+            <option value="⭐⭐ Moyen">⭐⭐ Moyen</option>
+            <option value="⭐⭐⭐ Difficile">⭐⭐⭐ Difficile</option>
+          </select>
+        </div>
+      </div>
+
+      <label class="contrib-label">Origine / pays</label>
+      <input type="text" id="c-pays" class="contrib-input" placeholder="france" value="france">
+
+      <label class="contrib-label">Description</label>
+      <textarea id="c-desc" class="contrib-input" rows="2" placeholder="Une petite phrase pour donner envie…"></textarea>
+
+      <label class="contrib-label">Ingrédients * <span class="contrib-hint">(un par ligne — « Nom : quantité »)</span></label>
+      <textarea id="c-ingredients" class="contrib-input" rows="5" placeholder="Farine : 250 g&#10;Beurre : 100 g&#10;Œufs : 3"></textarea>
+
+      <label class="contrib-label">Étapes * <span class="contrib-hint">(une par ligne)</span></label>
+      <textarea id="c-etapes" class="contrib-input" rows="5" placeholder="Préchauffer le four à 180°C&#10;Mélanger la farine et le beurre&#10;Enfourner 30 min"></textarea>
+
+      <button class="contrib-submit" onclick="soumettreContribution()">✅ Enregistrer ma recette</button>
+    </div>
+
+    <div class="contrib-mes-recettes">
+      <h3 class="contrib-sous-titre">👤 Mes recettes perso</h3>
+      <div id="c-mes-recettes"></div>
+    </div>
+  </div>
+</div>
+
 <div id="modal-profil" class="modal-auth-overlay" onclick="if(event.target===this)fermerModalProfil()">
   <div class="modal-auth-box modal-profil-box">
     <button class="modal-fermer" onclick="fermerModalProfil()">✕</button>
@@ -5228,8 +5305,9 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="auth.js?v=259-50"></script>
-<script src="js/note_recettes.js?v=259-50"></script>
+<script src="auth.js?v=259-51"></script>
+<script src="js/note_recettes.js?v=259-51"></script>
+<script src="js/app_contribution.js?v=259-51"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
