@@ -507,7 +507,7 @@ window.sauvegarderProfilComplet = async function() {
 
   const g = (id) => document.getElementById(pfx + "-" + id)?.value;
   const foyer = {
-    adultes: parseInt(g("adultes")) || 2,
+    adultes: parseInt(g("adultes")) || 1,
     ados:    parseInt(g("ados"))    || 0,
     enfants: parseInt(g("enfants")) || 0,
     bebes:   parseInt(g("bebe"))    || 0,
@@ -624,7 +624,7 @@ window.ouvrirModalProfil = function() {
   // Foyer
   const f = p.foyer || {};
   ["adultes","ados","enfants"].forEach(k => { const e = el("pp-" + k); if (e) e.value = f[k] || 0; });
-  if (el("pp-adultes")) el("pp-adultes").value = f.adultes || 2;
+  if (el("pp-adultes")) el("pp-adultes").value = f.adultes || 1;
   if (el("pp-bebe"))    el("pp-bebe").value    = f.bebes   || 0;
 
   // Préférences — uniquement dans modal-profil
