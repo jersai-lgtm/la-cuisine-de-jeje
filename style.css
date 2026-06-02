@@ -4932,3 +4932,19 @@ select, input[type="number"] {
 }
 .contrib-modo-actions .modo-ok { background: rgba(34,160,120,.9); color: #fff; }
 .contrib-modo-actions .modo-no { background: rgba(220,70,70,.9); color: #fff; }
+
+/* Échange de précisions admin <-> auteur */
+.statut-precision { background: rgba(90,160,245,.18); color: #5aa0f5; }
+.contrib-precision { background: rgba(90,160,245,.08); border: 1px solid rgba(90,160,245,.25); border-radius: 10px; padding: 10px; margin: 6px 0 12px; }
+.contrib-question { color: #cfe2ff; font-size: 13px; margin-bottom: 8px; }
+.contrib-modo-q { color: #9bc1ff; font-size: 12.5px; margin: 4px 0; }
+.contrib-modo-r { color: #d8f5e2; font-size: 13px; margin: 4px 0 8px; }
+.contrib-modo-qbox { margin-top: 8px; }
+.contrib-rep-input {
+  width: 100%; box-sizing: border-box; border-radius: 10px; border: 1px solid rgba(255,255,255,.15);
+  background: rgba(0,0,0,.25); color: #eee; padding: 8px; font-size: 13px; resize: vertical; margin-bottom: 6px;
+}
+.contrib-rep-btn {
+  padding: 8px 12px; border-radius: 10px; border: none; cursor: pointer; font-weight: 700; font-size: 13px;
+  background: rgba(90,160,245,.9); color: #fff;
+}
