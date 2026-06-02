@@ -282,14 +282,37 @@ window.contribAfficherMesPropositions = async function () {
     if (snap.empty) { box.innerHTML = `<p class="contrib-vide">Aucune proposition en attente.</p>`; return; }
     let html = "";
     snap.forEach(doc => {
-      const r = doc.data();
+      const r = doc.data(); const k = doc.id;
+      const precision = r.statut === "precision" && r.questionAdmin;
       html += `<div class="contrib-item">
-        <span class="contrib-item-nom">${r.emoji || "🍽️"} ${r.nom || doc.id}</span>
-        <span class="contrib-statut statut-attente">⏳ En attente</span>
+        <span class="contrib-item-nom">${r.emoji || "🍽️"} ${r.nom || k}</span>
+        <span class="contrib-statut ${precision ? "statut-precision" : "statut-attente"}">${precision ? "💬 Précision demandée" : "⏳ En attente"}</span>
       </div>`;
+      if (precision) {
+        html += `<div class="contrib-precision">
+          <div class="contrib-question">💬 <b>Question de l'admin :</b> ${r.questionAdmin}</div>
+          <textarea id="c-rep-${k}" class="contrib-rep-input" rows="2" placeholder="Ta réponse (ex : c'est pour 4 personnes)…"></textarea>
+          <button class="contrib-rep-btn" onclick="repondrePrecision('${k}')">↩️ Répondre</button>
+        </div>`;
+      }
     });
     box.innerHTML = html;
   } catch (e) { console.warn(e); box.innerHTML = `<p class="contrib-vide">—</p>`; }
+};
+
+// --- L'auteur répond à une demande de précision -> repasse en file de validation ---
+window.repondrePrecision = async function (key) {
+  if (!window.currentUser || typeof _db === "undefined" || !_db) return;
+  const ta = document.getElementById("c-rep-" + key);
+  const txt = ((ta && ta.value) || "").trim();
+  if (!txt) { if (typeof afficherToast === "function") afficherToast("⚠️ Écris une réponse d'abord"); return; }
+  try {
+    await _db.collection("recettesProposees").doc(key).update({
+      reponseAuteur: txt, statut: "en_attente", dateReponse: new Date().toISOString()
+    });
+    if (typeof afficherToast === "function") afficherToast("↩️ Réponse envoyée à l'admin !");
+    contribAfficherMesPropositions();
+  } catch (e) { console.warn("Réponse échouée :", e); if (typeof afficherToast === "function") afficherToast("⚠️ Échec de l'envoi"); }
 };
 
 // --- Panneau de modération (admin uniquement) ---
@@ -309,14 +332,21 @@ window.chargerModeration = async function () {
       // Fusionner pour permettre l'aperçu via la fiche (admin uniquement)
       if (typeof recettes !== "undefined") recettes[k] = r;
       const ingr = (r.ingredientsFixes || []).map(p => { const a = Array.isArray(p), n = a ? p[0] : (p && p.k), q = a ? p[1] : (p && p.v); return (n || "") + (q ? " (" + q + ")" : ""); }).join(", ");
+      const conv = `${r.questionAdmin ? `<div class="contrib-modo-q">💬 Tu as demandé : <i>${r.questionAdmin}</i></div>` : ""}${r.reponseAuteur ? `<div class="contrib-modo-r">↩️ Réponse de l'auteur : <b>${r.reponseAuteur}</b></div>` : ""}`;
+      const badge = r.reponseAuteur ? ` <span class="contrib-statut statut-attente">↩️ a répondu</span>` : (r.statut === "precision" ? ` <span class="contrib-statut statut-precision">💬 en attente de l'auteur</span>` : "");
       html += `<div class="contrib-modo-item">
-        <div class="contrib-modo-head">${r.emoji || "🍽️"} <b>${r.nom || k}</b> <span class="contrib-modo-auteur">par ${r.prenom || "?"}</span></div>
+        <div class="contrib-modo-head">${r.emoji || "🍽️"} <b>${r.nom || k}</b> <span class="contrib-modo-auteur">par ${r.prenom || "?"}</span>${badge}</div>
         ${r.description ? `<div class="contrib-modo-desc">${r.description}</div>` : ""}
         <div class="contrib-modo-ingr">🛒 ${ingr || "—"}</div>
+        ${conv}
         <div class="contrib-modo-actions">
           <button onclick="fermerContribution();ouvrirFiche('${k}', null)">👁️ Aperçu</button>
           <button class="modo-ok" onclick="validerProposition('${k}')">✅ Valider</button>
           <button class="modo-no" onclick="refuserProposition('${k}')">❌ Refuser</button>
+        </div>
+        <div class="contrib-modo-qbox">
+          <textarea id="c-q-${k}" class="contrib-rep-input" rows="2" placeholder="Demander une précision à l'auteur (nb de personnes, champ manquant…)"></textarea>
+          <button class="contrib-rep-btn" onclick="demanderPrecision('${k}')">💬 Demander une précision</button>
         </div>
       </div>`;
     });
@@ -356,4 +386,19 @@ window.refuserProposition = async function (key) {
     if (typeof afficherToast === "function") afficherToast("❌ Proposition refusée");
     chargerModeration();
   } catch (e) { console.warn("Refus échoué :", e); }
+};
+
+// --- Admin : demander une précision à l'auteur ---
+window.demanderPrecision = async function (key) {
+  if (!contribEstAdmin() || typeof _db === "undefined" || !_db) return;
+  const ta = document.getElementById("c-q-" + key);
+  const txt = ((ta && ta.value) || "").trim();
+  if (!txt) { if (typeof afficherToast === "function") afficherToast("⚠️ Écris ta question d'abord"); return; }
+  try {
+    await _db.collection("recettesProposees").doc(key).update({
+      questionAdmin: txt, statut: "precision", reponseAuteur: "", dateQuestion: new Date().toISOString()
+    });
+    if (typeof afficherToast === "function") afficherToast("💬 Question envoyée à l'auteur");
+    chargerModeration();
+  } catch (e) { console.warn("Demande de précision échouée :", e); if (typeof afficherToast === "function") afficherToast("⚠️ Échec de l'envoi"); }
 };
