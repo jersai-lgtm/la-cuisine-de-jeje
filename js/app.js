@@ -271,6 +271,7 @@ function chargerAccueilTopMois() {
 
 function chargerAccueil() {
   chargerAccueilNouveautes();
+  chargerAccueilPourVous();
   chargerAccueilFavoris();
   chargerAccueilMenus();
   // v249 : Retiré — accessible via ⭐ Favoris → ❤️ Menus favoris
@@ -845,6 +846,124 @@ function miniCarteFetiche(key, count) {
   </div>`;
 }
 
+// ============================================================
+// RECOMMANDÉ POUR VOUS — accueil personnalisé selon profil
+// (cuisines préférées + objectifs). v259-61
+// ============================================================
+const CUISINE_PAYS = {
+  "française": ["france", "belgique", "suisse"],
+  "italienne": ["italie"],
+  "méditerranéenne": ["grece", "espagne", "portugal"],
+  "moyen-orient": ["liban", "turquie", "maroc"],
+  "africaine": ["senegal", "nigeria", "ethiopie"],
+  "asiatique": ["japon", "chine", "coree", "thailande", "vietnam", "indonesie", "singapour", "tibet"],
+  "indienne": ["inde"],
+  "latino": ["mexique", "argentine", "bresil", "perou", "colombie", "cuba"],
+  "nord-américaine": ["usa", "canada"],
+  "europe-est": ["allemagne", "angleterre", "pologne", "hongrie", "russie", "georgie", "suede"],
+  "antilles": ["antilles", "caraibes", "haiti", "hawaii", "polynesie"],
+  // compatibilité avec d'anciens choix de profil
+  "mexicaine": ["mexique"],
+  "américaine": ["usa", "canada"]
+};
+const MOTS_VIANDE = [
+  "boeuf", "bœuf", "poulet", "porc", "agneau", "veau", "dinde", "jambon", "lardons", "lard", "bacon",
+  "saucisse", "chorizo", "merguez", "canard", "steak", "viande", "escalope", "gigot", "magret", "foie",
+  "rôti", "roti", "charcuterie", "poisson", "saumon", "thon", "cabillaud", "crevette", "gambas", "morue",
+  "poulpe", "palourde", "calamar", "seiche", "anchois", "sardine", "maquereau", "crabe", "moule"
+];
+
+// Coût estimé par personne d'une recette (ou null si inconnu)
+function coutParPersonneRecette(key) {
+  const data = recettes[key];
+  if (!data || typeof calculerPrixCaloriesRecette !== "function") return null;
+  const tabKey = Object.keys(data).find(k => k.startsWith("tableau") && Array.isArray(data[k]));
+  if (!tabKey) return null;
+  const lignes = data[tabKey];
+  const base = data.base || 4;
+  const ligne = lignes.find(l => l.nb === base) || lignes.find(l => l.nb === 4) || lignes[Math.floor(lignes.length / 2)];
+  if (!ligne) return null;
+  try {
+    const res = calculerPrixCaloriesRecette(ligne);
+    const pers = ligne.nb || base || 1;
+    if (res && res.prix > 0 && pers > 0) return res.prix / pers;
+  } catch (e) {}
+  return null;
+}
+
+function chargerAccueilPourVous() {
+  const bloc = document.getElementById("accueil-pourvous-bloc");
+  const row = document.getElementById("accueil-pourvous-row");
+  if (!bloc || !row) return;
+  const prefs = window.userProfile && window.userProfile.preferences;
+  if (!window.currentUser || !prefs) { bloc.style.display = "none"; return; }
+  const cuisines = prefs.cuisinesFavorites || [];
+  const objectifs = prefs.objectifs || [];
+  if (cuisines.length === 0 && objectifs.length === 0) { bloc.style.display = "none"; return; }
+
+  const paysPref = new Set();
+  cuisines.forEach(c => (CUISINE_PAYS[c] || []).forEach(p => paysPref.add(p)));
+
+  const veutEco = objectifs.includes("économique");
+  const veutEquilibre = objectifs.includes("équilibré");
+  const veutMoinsViande = objectifs.includes("moins-viande");
+  const veutDecouvrir = objectifs.includes("découvrir");
+
+  const favs = new Set(window.userProfile?.favoris || []);
+  const vus = new Set(window._recentsVus || []);
+  const saison = (typeof getSaisonActuelle === "function") ? getSaisonActuelle() : null;
+
+  const motsExclus = new Set();
+  [...(prefs.allergies || []), ...(prefs.regimes || []), ...(prefs.allergiesCustom || [])].forEach(a => {
+    (typeof ALLERGENES_MOTS !== "undefined" ? (ALLERGENES_MOTS[a] || [a]) : [a]).forEach(m => motsExclus.add(String(m).toLowerCase()));
+  });
+
+  const catsExclues = new Set(["cocktails", "mocktails"]);
+  let scored = [];
+  Object.keys(recettes).forEach(key => {
+    if (favs.has(key) || vus.has(key)) return;
+    if (typeof RECETTES_NON_REPAS !== "undefined" && RECETTES_NON_REPAS.has(key)) return;
+    const cat = (typeof categorieRecette === "function") ? categorieRecette(key) : recettes[key]?.cat;
+    if (catsExclues.has(cat)) return;
+    const texte = (typeof texteRecette === "function") ? texteRecette(key) : "";
+    if (motsExclus.size && [...motsExclus].some(m => texte.includes(m))) return;
+    const saisons = recettes[key]?.saisons;
+    if (saison && saisons && saisons.length && !saisons.includes(saison)) return;
+
+    let score = 0;
+    const raisons = [];
+    if (paysPref.size && paysPref.has(recettes[key]?.pays)) { score += 5; raisons.push("💛 ta cuisine"); }
+    if (veutEquilibre) {
+      if (["healthy", "salades", "soupes"].includes(cat)) { score += 3; raisons.push("🥗 équilibré"); }
+      if (saisons && saison && saisons.includes(saison)) score += 1;
+    }
+    if (veutMoinsViande && !MOTS_VIANDE.some(m => texte.includes(m))) { score += 3; raisons.push("🌱 végé"); }
+    if (veutEco) {
+      const cpp = coutParPersonneRecette(key);
+      if (cpp != null) {
+        if (cpp <= 2) score += 3; else if (cpp <= 3.5) score += 2; else if (cpp <= 5) score += 1;
+        if (cpp <= 3.5) raisons.push("💰 économique");
+      }
+    }
+    if (veutDecouvrir) {
+      if (recettes[key]?.dateAjout) score += 1;
+      if (typeof hashChaine === "function") score += (hashChaine(key + ":pourvous") % 3);
+      if (raisons.length === 0) raisons.push("🌍 à découvrir");
+    }
+    if (score > 0) {
+      const raisonHTML = raisons.slice(0, 2).map(t => `<span class="mini-carte-raison">${t}</span>`).join("");
+      scored.push([key, score, raisonHTML]);
+    }
+  });
+
+  if (scored.length === 0) { bloc.style.display = "none"; return; }
+  const seed = (typeof hashChaine === "function") ? hashChaine("pourvous:" + (window._suggRegenN || 0)) : 0;
+  scored.sort((a, b) => (b[1] - a[1]) || ((typeof hashChaine === "function") ? (hashChaine(a[0] + ":" + seed) - hashChaine(b[0] + ":" + seed)) : 0));
+  const top = scored.slice(0, 12);
+  bloc.style.display = "";
+  row.innerHTML = top.map(x => miniCarte(x[0], x[2])).join("");
+}
+
 function chargerAccueilSuggestions() {
   const row = document.getElementById("accueil-suggestions-row");
   if (!row) return;
@@ -960,7 +1079,7 @@ function chargerAccueilSuggestions() {
 }
 
 // Mini carte pour les scrolls horizontaux
-function miniCarte(key) {
+function miniCarte(key, raisonHTML) {
   if (!key || !recettes[key]) return "";
   const r    = recettes[key];
   const nom  = getNomRecette(key);
@@ -1036,6 +1155,7 @@ function miniCarte(key) {
       <span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>
       <span class="mini-carte-nom">${nom}</span>
       <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
+      ${raisonHTML || ""}
     </div>
   </div>`;
 }
