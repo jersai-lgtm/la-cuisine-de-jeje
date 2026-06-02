@@ -163,7 +163,7 @@ async function genererMenuFestif() {
     if (prefs.allergiesCustom?.length) allergiesFinalesFestif = [...new Set([...allergiesFinalesFestif, ...prefs.allergiesCustom])];
   }
   const motsExclusionFestif = new Set();
-  allergiesFinalesFestif.forEach(a => {
+  [...allergiesFinalesFestif, ...(window.userProfile?.preferences?.regimes || [])].forEach(a => {
     const mots = (typeof ALLERGENES_MOTS !== "undefined" ? ALLERGENES_MOTS[a] : null) || [a];
     mots.forEach(m => motsExclusionFestif.add(m.toLowerCase()));
   });
@@ -225,11 +225,12 @@ async function genererMenuFestif() {
         .map(c => {
           const autoriseNonRepas = (c.key === "apero" || c.key === "dessert");
           const poolOK = filtrerPool(c.pool, autoriseNonRepas);
-          const choix = pickOne(poolOK.length ? poolOK : c.pool); // fallback ultime
+          // Sécurité : si aucune recette compatible (allergies/régimes), ne RIEN servir plutôt qu'un plat à risque
+          const choix = poolOK.length ? pickOne(poolOK) : null;
           return {
             categorie: c.label,
             recette:   choix,
-            note:      pickOne(notesMap[c.key])
+            note:      choix ? pickOne(notesMap[c.key]) : "Aucune recette compatible avec tes filtres 🤔"
           };
         })
     };
@@ -263,6 +264,20 @@ function afficherMenuFestif(menu, personnes) {
   menu.menu.forEach((item, idx) => {
     const div = document.createElement("div");
     div.className = "plan-jour";
+
+    // Sécurité : aucune recette compatible avec les filtres → message clair, jamais un plat à risque
+    if (!item.recette) {
+      div.innerHTML = `
+      <div class="plan-repas-row" style="grid-template-columns:1fr">
+        <div class="plan-repas" style="border-left:3px solid #ff9900;background:rgba(255,153,0,.08);text-align:left">
+          <div class="plan-repas-label">${item.categorie}</div>
+          <div class="plan-repas-nom" style="font-size:15px">Aucune recette compatible</div>
+          <div class="plan-repas-note">${item.note}</div>
+        </div>
+      </div>`;
+      container.appendChild(div);
+      return;
+    }
 
     // Alerte famille + raison
     const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(item.recette) : null;
