@@ -699,6 +699,9 @@ const INGREDIENTS_PRIX = {
   cacahuete:     {prixKg:6,calPer100g:567,lipSat:7,sucre:4,sel:0,fibres:8.5,prot:26,flv:10},
   garam:         {prixKg:25,calPer100g:379,lipSat:2,sucre:2,sel:0,fibres:25,prot:14,flv:60},
   tortillamais:  {prixKg:4,calPer100g:220,lipSat:0.5,sucre:1,sel:0.5,fibres:6,prot:6,flv:0},
+  papaye:        {prixUnite:2,cal:43,lipSat:0,sucre:8,sel:0,fibres:1.7,prot:0.5,flv:60},
+  lentillescorail: {prixKg:3.5,calPer100g:120,lipSat:0.1,sucre:2,sel:0,fibres:8,prot:9,flv:30},
+  haricotsBlancs: {prixKg:2.5,calPer100g:139,lipSat:0.1,sucre:0.3,sel:0,fibres:8,prot:9.7,flv:30},
 };
 
 // ===================================================================

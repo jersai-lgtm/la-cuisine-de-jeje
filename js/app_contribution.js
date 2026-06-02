@@ -89,10 +89,11 @@ window.soumettreContribution = async function () {
 
   // Ingrédients : 1 ligne = "Nom : quantité" (ou "Nom - quantité", ou juste "Nom")
   const ingredientsFixes = ingrTxt.split("\n").map(l => l.trim()).filter(Boolean).map(l => {
+    // Firestore n'accepte pas les tableaux imbriqués -> on stocke des objets {k, v}
     let i = l.indexOf(":");
-    if (i < 0) { const j = l.indexOf(" - "); if (j >= 0) { return [l.slice(0, j).trim(), l.slice(j + 3).trim()]; } }
-    if (i >= 0) return [l.slice(0, i).trim(), l.slice(i + 1).trim()];
-    return [l, ""];
+    if (i < 0) { const j = l.indexOf(" - "); if (j >= 0) { return { k: l.slice(0, j).trim(), v: l.slice(j + 3).trim() }; } }
+    if (i >= 0) return { k: l.slice(0, i).trim(), v: l.slice(i + 1).trim() };
+    return { k: l, v: "" };
   });
 
   // Étapes : 1 ligne = 1 étape
@@ -307,7 +308,7 @@ window.chargerModeration = async function () {
       const r = doc.data(); const k = doc.id;
       // Fusionner pour permettre l'aperçu via la fiche (admin uniquement)
       if (typeof recettes !== "undefined") recettes[k] = r;
-      const ingr = (r.ingredientsFixes || []).map(p => p[0] + (p[1] ? " (" + p[1] + ")" : "")).join(", ");
+      const ingr = (r.ingredientsFixes || []).map(p => { const a = Array.isArray(p), n = a ? p[0] : (p && p.k), q = a ? p[1] : (p && p.v); return (n || "") + (q ? " (" + q + ")" : ""); }).join(", ");
       html += `<div class="contrib-modo-item">
         <div class="contrib-modo-head">${r.emoji || "🍽️"} <b>${r.nom || k}</b> <span class="contrib-modo-auteur">par ${r.prenom || "?"}</span></div>
         ${r.description ? `<div class="contrib-modo-desc">${r.description}</div>` : ""}

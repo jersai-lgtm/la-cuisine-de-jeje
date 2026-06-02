@@ -435,8 +435,8 @@ function getIngredientsCourses(nom, personnes) {
 
   // Recettes avec ingredientsFixes
   if (data.fixe && data.ingredientsFixes) {
-    data.ingredientsFixes.forEach(([k, v]) => {
-      if (!k.startsWith("---")) ajout(k, v);
+    data.ingredientsFixes.forEach(p => { const k = Array.isArray(p) ? p[0] : p.k, v = Array.isArray(p) ? p[1] : p.v;
+      if (k && !String(k).startsWith("---")) ajout(k, v);
     });
     return result;
   }
@@ -984,8 +984,8 @@ function choisirRecette(nom, personnesOverride) {
     // via getSelecteurBriocheHTML(). Ici on ne génère que les ingrédients.
     listeIngredients = htmlTableauBriocheColonnes(ligne);
   } else if (data.fixe && data.ingredientsFixes) {
-    let rows = data.ingredientsFixes.map(([k,v]) =>
-      `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
+    let rows = data.ingredientsFixes.map(p => { const k = Array.isArray(p) ? p[0] : p.k, v = Array.isArray(p) ? p[1] : p.v;
+      return `<tr><th>${k}</th><td>${v}</td></tr>`; }).join("");
     listeIngredients = `<table class="tableau-patons tableau-colonnes"><tbody>${rows}</tbody></table>`;
   } else {
     // Chercher d'abord dans les tableaux dynamiques

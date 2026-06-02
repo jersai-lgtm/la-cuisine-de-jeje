@@ -76,6 +76,7 @@ function texteRecette(key) {
   if (Array.isArray(r.ingredientsFixes)) {
     r.ingredientsFixes.forEach(p => {
       if (Array.isArray(p)) texte += " " + p.join(" ").toLowerCase();
+      else if (p && typeof p === "object") texte += " " + ((p.k || "") + " " + (p.v || "")).toLowerCase();
     });
   }
   // Format alternatif : ingredients = {nom: qté, ...} ou liste
@@ -2918,8 +2919,8 @@ function calculer(recetteArg, personnesArg) {
 
   // Recettes fixes (flan, clafoutis) : afficher les ingrédients tels quels
   if (data.fixe && data.ingredientsFixes) {
-    let rows = data.ingredientsFixes.map(([k,v]) =>
-      `<tr><th>${k}</th><td>${v}</td></tr>`).join("");
+    let rows = data.ingredientsFixes.map(p => { const k = Array.isArray(p) ? p[0] : p.k, v = Array.isArray(p) ? p[1] : p.v;
+      return `<tr><th>${k}</th><td>${v}</td></tr>`; }).join("");
     document.getElementById("resultat").innerHTML =
       `<h3>Recette complète (~6 personnes)</h3>
        <table class="tableau-patons tableau-colonnes"><tbody>${rows}</tbody></table>` +
