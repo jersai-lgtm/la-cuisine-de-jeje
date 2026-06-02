@@ -696,3 +696,147 @@ window.retirerAC = function(val, pfx) {
   if (window["_ac_" + pfx]) window["_ac_" + pfx] = window["_ac_" + pfx].filter(a => a !== val);
   renderAC(pfx);
 };
+
+// =============================================================================
+// 🗑️ SUPPRESSION DE COMPTE (exigence Google Play) — v259-66
+// Supprime TOUTES les données de l'utilisateur, puis le compte Firebase :
+//   • "notesEtoiles"        : toutes ses notes communautaires (champ uid)
+//   • "recettesProposees"   : ses recettes proposées en attente (champ uid)
+//   • "recettesCommunaute"  : ses recettes publiées dans la communauté (champ uid)
+//   • "avis/{uid}"          : son avis sur l'appli (id = uid)
+//   • "utilisateurs/{uid}"  : son profil (foyer, préférences, favoris, menus,
+//                             historique, notes perso, recettes perso…)
+//   • puis le compte d'authentification lui-même.
+// Gère la ré-authentification requise (Google popup ou e-mail/mot de passe).
+// =============================================================================
+
+// Ré-authentifie l'utilisateur avant une opération sensible (suppression).
+async function _reauthAvantSuppression(user) {
+  const providerId =
+    (user.providerData && user.providerData[0] && user.providerData[0].providerId) || "";
+
+  if (providerId === "google.com") {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    await user.reauthenticateWithPopup(provider);
+  } else {
+    // Connexion e-mail / mot de passe : on redemande le mot de passe
+    const mdp = prompt("🔒 Confirme ton mot de passe pour supprimer définitivement ton compte :");
+    if (!mdp) { const err = new Error("Ré-authentification annulée"); err.code = "reauth/cancelled"; throw err; }
+    const cred = firebase.auth.EmailAuthProvider.credential(user.email, mdp);
+    await user.reauthenticateWithCredential(cred);
+  }
+}
+
+// Supprime tous les documents d'une collection appartenant à l'utilisateur
+// (filtre sur le champ "uid"), par lots de 450 (limite batch Firestore = 500).
+async function _supprimerDocsParUid(collectionName, uid) {
+  const snap = await _db.collection(collectionName).where("uid", "==", uid).get();
+  if (snap.empty) return 0;
+  let batch = _db.batch();
+  let n = 0;
+  for (const d of snap.docs) {
+    batch.delete(d.ref);
+    n++;
+    if (n % 450 === 0) { await batch.commit(); batch = _db.batch(); }
+  }
+  if (n % 450 !== 0) await batch.commit();
+  return n;
+}
+
+window.supprimerMonCompte = async function() {
+  const user = window.currentUser;
+  if (!user) { if (typeof ouvrirModalAuth === "function") ouvrirModalAuth(); return; }
+
+  // Double confirmation (action irréversible)
+  const ok1 = confirm(
+    "⚠️ SUPPRESSION DÉFINITIVE DU COMPTE\n\n" +
+    "Toutes tes données seront effacées : profil, foyer, préférences, favoris, " +
+    "menus, historique, notes, recettes perso, ainsi que tes recettes et notes " +
+    "publiées dans la communauté.\n\n" +
+    "Cette action est IRRÉVERSIBLE. Continuer ?"
+  );
+  if (!ok1) return;
+
+  const saisie = prompt('Pour confirmer, tape SUPPRIMER (en majuscules) :');
+  if (saisie !== "SUPPRIMER") {
+    if (typeof afficherToast === "function") afficherToast("Suppression annulée");
+    return;
+  }
+
+  try {
+    // 1) Ré-authentification (Firebase exige une connexion récente)
+    await _reauthAvantSuppression(user);
+
+    const uid = user.uid;
+
+    // 2) Supprimer les données Firestore
+    try { await _supprimerDocsParUid("notesEtoiles", uid); }       catch (e) { console.warn("notesEtoiles:", e); }
+    try { await _supprimerDocsParUid("recettesProposees", uid); }  catch (e) { console.warn("recettesProposees:", e); }
+    try { await _supprimerDocsParUid("recettesCommunaute", uid); } catch (e) { console.warn("recettesCommunaute:", e); }
+    try { await _db.collection("avis").doc(uid).delete(); }        catch (e) { /* le doc avis peut ne pas exister */ }
+    try { await _db.collection("utilisateurs").doc(uid).delete(); } catch (e) { console.warn("utilisateurs:", e); }
+
+    // 3) Supprimer le compte d'authentification
+    await user.delete();
+
+    // 4) Nettoyage local + confirmation
+    window.userProfile = null;
+    window._recentsVus = [];
+    try { localStorage.clear(); } catch (e) {}
+    if (typeof fermerModalProfil === "function") fermerModalProfil();
+    if (typeof afficherBoutonConnexion === "function") afficherBoutonConnexion();
+
+    alert("✅ Ton compte et toutes tes données ont été supprimés.");
+    location.reload();
+
+  } catch (e) {
+    console.error("Erreur suppression compte:", e);
+    if (e && e.code === "auth/requires-recent-login") {
+      alert("Pour des raisons de sécurité, reconnecte-toi puis relance la suppression.");
+    } else if (e && (e.code === "reauth/cancelled" ||
+                     e.code === "auth/popup-closed-by-user" ||
+                     e.code === "auth/cancelled-popup-request")) {
+      alert("Ré-authentification annulée — ton compte n'a pas été supprimé.");
+    } else if (e && e.code === "auth/wrong-password") {
+      alert("Mot de passe incorrect — ton compte n'a pas été supprimé.");
+    } else if (e && e.code === "permission-denied") {
+      alert("⚠️ Suppression partielle : une règle Firestore manque (voir 'recettesCommunaute'). Contacte le support.");
+    } else {
+      alert("⚠️ Erreur lors de la suppression : " + ((e && e.message) || e));
+    }
+  }
+};
+
+// Injecte le bouton "Supprimer mon compte" tout en bas de la modale profil (une fois).
+function _injecterBoutonSuppression() {
+  const modal = document.getElementById("modal-profil");
+  if (!modal) return;
+  if (document.getElementById("btn-supprimer-compte")) return; // déjà présent
+
+  const zone = document.createElement("div");
+  zone.style.cssText =
+    "margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);text-align:center;";
+  zone.innerHTML =
+    '<button id="btn-supprimer-compte" type="button" onclick="supprimerMonCompte()" ' +
+    'style="background:transparent;color:#ff6b6b;border:1px solid #ff6b6b;' +
+    'border-radius:10px;padding:10px 18px;font-size:14px;cursor:pointer;">' +
+    '🗑️ Supprimer mon compte</button>' +
+    '<div style="margin-top:8px;font-size:12px;color:#999;line-height:1.4;">' +
+    'Suppression définitive du compte et de toutes les données associées.</div>';
+
+  const deco = modal.querySelector(".btn-deconnexion");
+  const save = document.getElementById("btn-sauvegarder-profil");
+  if (deco && deco.parentNode) {
+    deco.parentNode.insertBefore(zone, deco.nextSibling);
+  } else if (save && save.parentNode) {
+    save.parentNode.insertBefore(zone, save.nextSibling);
+  } else {
+    modal.appendChild(zone);
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", _injecterBoutonSuppression);
+} else {
+  _injecterBoutonSuppression();
+}
