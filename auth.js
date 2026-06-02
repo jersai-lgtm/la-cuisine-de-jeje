@@ -127,6 +127,16 @@ window.deconnexion = async function() {
 // FIRESTORE - PROFIL
 // ==============================
 async function chargerProfil(user) {
+  // 🗑️ Suppression en cours sur cette page : ne PAS (re)créer le profil.
+  if (window._suppressionCompteEnCours) return;
+  // Reprise après un reload : ce compte vient d'être supprimé → déconnexion, pas de recréation.
+  try {
+    if (sessionStorage.getItem("_uidSupprime") === user.uid) {
+      sessionStorage.removeItem("_uidSupprime");
+      await _auth.signOut();
+      return;
+    }
+  } catch (e) {}
   const ref  = _db.collection("utilisateurs").doc(user.uid);
   const snap = await ref.get();
   if (snap.exists) {
@@ -698,17 +708,18 @@ window.retirerAC = function(val, pfx) {
 };
 
 // =============================================================================
-// 🗑️ SUPPRESSION DE COMPTE (exigence Google Play) — v259-68
+// 🗑️ SUPPRESSION DE COMPTE (exigence Google Play) — v259-69
 // Supprime TOUTES les données utilisateur (notesEtoiles, recettesProposees,
-// recettesCommunaute, avis/{uid}, utilisateurs/{uid}) puis le compte Firebase.
+// recettesCommunaute, avis/{uid}, utilisateurs/{uid}) puis le compte Firebase,
+// et FORCE la déconnexion sans recréer le profil.
 //
-// Ré-authentification : la popup Google est ouverte DIRECTEMENT depuis le clic
-// du bouton de confirmation d'une modale intégrée (pas de confirm()/prompt()
-// natifs avant), ce qui évite le blocage de popup. Repli redirection en
-// dernier recours seulement.
+// Garde-fous anti-recréation :
+//   • window._suppressionCompteEnCours : bloque chargerProfil pendant l'opération
+//     (le rafraîchissement de jeton lors de la ré-auth déclenche sinon une recréation).
+//   • sessionStorage "_uidSupprime" : au reload, si le compte supprimé réapparaît
+//     (jeton en cache), on force la déconnexion au lieu de recréer le profil.
 // =============================================================================
 
-// Supprime tous les docs d'une collection appartenant à l'utilisateur (champ "uid"), par lots.
 async function _supprimerDocsParUid(collectionName, uid) {
   const snap = await _db.collection(collectionName).where("uid", "==", uid).get();
   if (snap.empty) return 0;
@@ -725,22 +736,25 @@ async function _supprimerDocsParUid(collectionName, uid) {
 
 // Cœur de la suppression : appelé UNIQUEMENT après une ré-authentification réussie.
 async function _executerSuppression(user) {
+  window._suppressionCompteEnCours = true;
   const uid = user.uid;
+  try { sessionStorage.setItem("_uidSupprime", uid); } catch (e) {}
+
   try { await _supprimerDocsParUid("notesEtoiles", uid); }        catch (e) { console.warn("notesEtoiles:", e); }
   try { await _supprimerDocsParUid("recettesProposees", uid); }   catch (e) { console.warn("recettesProposees:", e); }
   try { await _supprimerDocsParUid("recettesCommunaute", uid); }  catch (e) { console.warn("recettesCommunaute:", e); }
   try { await _db.collection("avis").doc(uid).delete(); }          catch (e) { /* peut ne pas exister */ }
   try { await _db.collection("utilisateurs").doc(uid).delete(); }  catch (e) { console.warn("utilisateurs:", e); }
 
-  await user.delete();
+  await user.delete();                 // supprime le compte d'authentification
+  try { await _auth.signOut(); } catch (e) {}  // s'assure qu'aucune session ne subsiste
 
   window.userProfile = null;
   window._recentsVus = [];
   try { localStorage.clear(); } catch (e) {}
-  if (typeof fermerModalProfil === "function") fermerModalProfil();
-  if (typeof afficherBoutonConnexion === "function") afficherBoutonConnexion();
+
   alert("✅ Ton compte et toutes tes données ont été supprimés.");
-  location.reload();
+  location.reload();   // recharge dans un état propre, déconnecté
 }
 
 function _gererErreurSuppression(e) {
@@ -759,7 +773,7 @@ function _gererErreurSuppression(e) {
 window.supprimerMonCompte = function() {
   const user = window.currentUser;
   if (!user) { if (typeof ouvrirModalAuth === "function") ouvrirModalAuth(); return; }
-  if (document.getElementById("modal-suppression-overlay")) return; // déjà ouverte
+  if (document.getElementById("modal-suppression-overlay")) return;
 
   const providerId =
     (user.providerData && user.providerData[0] && user.providerData[0].providerId) || "";
@@ -811,6 +825,8 @@ window.supprimerMonCompte = function() {
     }
 
     btn.disabled = true; btn.textContent = "Suppression…";
+    // Bloque toute recréation de profil dès maintenant (avant le rafraîchissement de jeton de la ré-auth)
+    window._suppressionCompteEnCours = true;
     try {
       if (estEmail) {
         const cred = firebase.auth.EmailAuthProvider.credential(user.email, mdp);
@@ -823,17 +839,17 @@ window.supprimerMonCompte = function() {
       fermer();
       await _executerSuppression(user);
     } catch (e) {
+      window._suppressionCompteEnCours = false; // on annule le blocage si la ré-auth échoue
+      try { sessionStorage.removeItem("_uidSupprime"); } catch (_) {}
       btn.disabled = false; btn.textContent = "Supprimer définitivement";
       if (e && e.code === "auth/wrong-password") {
         err.textContent = "Mot de passe incorrect.";
       } else if (e && (e.code === "auth/popup-closed-by-user" || e.code === "auth/cancelled-popup-request")) {
         err.textContent = "Ré-authentification annulée.";
+      } else if (e && e.code === "auth/user-mismatch") {
+        err.textContent = "Choisis bien le compte que tu es en train de supprimer.";
       } else if (e && e.code === "auth/popup-blocked") {
-        // Ultime repli : redirection (rare ; getRedirectResult reprend au retour)
-        err.textContent = "Popup bloquée — redirection vers Google…";
-        try { sessionStorage.setItem("_suppressionCompteEnCours", user.uid); } catch (_) {}
-        const provider = new firebase.auth.GoogleAuthProvider();
-        try { await user.reauthenticateWithRedirect(provider); } catch (e2) { _gererErreurSuppression(e2); }
+        err.textContent = "Popup bloquée — autorise les popups puis réessaie.";
       } else {
         fermer();
         _gererErreurSuppression(e);
@@ -841,27 +857,9 @@ window.supprimerMonCompte = function() {
     }
   };
 
-  // Focus sur le champ pour confort
   const inp = overlay.querySelector("#supp-confirm-input");
   if (inp) inp.focus();
 };
-
-// Reprise après redirection (repli uniquement) : si une suppression était en cours
-// et que la ré-auth a réussi, on termine automatiquement.
-async function _reprendreSuppressionApresRedirect() {
-  let pendingUid = null;
-  try { pendingUid = sessionStorage.getItem("_suppressionCompteEnCours"); } catch (e) {}
-  if (!pendingUid) return;
-
-  let result = null;
-  try { result = await _auth.getRedirectResult(); } catch (e) {}
-  try { sessionStorage.removeItem("_suppressionCompteEnCours"); } catch (e) {}
-
-  const reauthOk = !!(result && result.user);
-  const user = _auth.currentUser;
-  if (!reauthOk || !user || user.uid !== pendingUid) return;
-  try { await _executerSuppression(user); } catch (e) { _gererErreurSuppression(e); }
-}
 
 // Injecte le bouton "Supprimer mon compte" en bas de la modale profil (une fois).
 function _injecterBoutonSuppression() {
@@ -888,11 +886,7 @@ function _injecterBoutonSuppression() {
 }
 
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", function () {
-    _injecterBoutonSuppression();
-    _reprendreSuppressionApresRedirect();
-  });
+  document.addEventListener("DOMContentLoaded", _injecterBoutonSuppression);
 } else {
   _injecterBoutonSuppression();
-  _reprendreSuppressionApresRedirect();
 }
