@@ -698,13 +698,14 @@ window.retirerAC = function(val, pfx) {
 };
 
 // =============================================================================
-// 🗑️ SUPPRESSION DE COMPTE (exigence Google Play) — v259-67
-// Supprime TOUTES les données de l'utilisateur, puis le compte Firebase :
-//   notesEtoiles, recettesProposees, recettesCommunaute (filtre uid),
-//   avis/{uid}, utilisateurs/{uid}, puis le compte d'authentification.
-// Ré-authentification requise : popup Google, avec REPLI AUTOMATIQUE par
-// redirection si la popup est bloquée (auth/popup-blocked) ; mot de passe
-// pour les comptes e-mail.
+// 🗑️ SUPPRESSION DE COMPTE (exigence Google Play) — v259-68
+// Supprime TOUTES les données utilisateur (notesEtoiles, recettesProposees,
+// recettesCommunaute, avis/{uid}, utilisateurs/{uid}) puis le compte Firebase.
+//
+// Ré-authentification : la popup Google est ouverte DIRECTEMENT depuis le clic
+// du bouton de confirmation d'une modale intégrée (pas de confirm()/prompt()
+// natifs avant), ce qui évite le blocage de popup. Repli redirection en
+// dernier recours seulement.
 // =============================================================================
 
 // Supprime tous les docs d'une collection appartenant à l'utilisateur (champ "uid"), par lots.
@@ -725,11 +726,11 @@ async function _supprimerDocsParUid(collectionName, uid) {
 // Cœur de la suppression : appelé UNIQUEMENT après une ré-authentification réussie.
 async function _executerSuppression(user) {
   const uid = user.uid;
-  try { await _supprimerDocsParUid("notesEtoiles", uid); }       catch (e) { console.warn("notesEtoiles:", e); }
-  try { await _supprimerDocsParUid("recettesProposees", uid); }  catch (e) { console.warn("recettesProposees:", e); }
-  try { await _supprimerDocsParUid("recettesCommunaute", uid); } catch (e) { console.warn("recettesCommunaute:", e); }
-  try { await _db.collection("avis").doc(uid).delete(); }         catch (e) { /* peut ne pas exister */ }
-  try { await _db.collection("utilisateurs").doc(uid).delete(); } catch (e) { console.warn("utilisateurs:", e); }
+  try { await _supprimerDocsParUid("notesEtoiles", uid); }        catch (e) { console.warn("notesEtoiles:", e); }
+  try { await _supprimerDocsParUid("recettesProposees", uid); }   catch (e) { console.warn("recettesProposees:", e); }
+  try { await _supprimerDocsParUid("recettesCommunaute", uid); }  catch (e) { console.warn("recettesCommunaute:", e); }
+  try { await _db.collection("avis").doc(uid).delete(); }          catch (e) { /* peut ne pas exister */ }
+  try { await _db.collection("utilisateurs").doc(uid).delete(); }  catch (e) { console.warn("utilisateurs:", e); }
 
   await user.delete();
 
@@ -746,96 +747,123 @@ function _gererErreurSuppression(e) {
   console.error("Erreur suppression compte:", e);
   if (e && e.code === "auth/requires-recent-login") {
     alert("Pour des raisons de sécurité, reconnecte-toi puis relance la suppression.");
-  } else if (e && (e.code === "auth/popup-closed-by-user" || e.code === "auth/cancelled-popup-request")) {
-    alert("Ré-authentification annulée — ton compte n'a pas été supprimé.");
-  } else if (e && e.code === "auth/wrong-password") {
-    alert("Mot de passe incorrect — ton compte n'a pas été supprimé.");
   } else if (e && e.code === "permission-denied") {
-    alert("⚠️ Suppression partielle : une règle Firestore manque. Vérifie les règles 'recettesProposees' / 'recettesCommunaute'.");
+    alert("⚠️ Suppression partielle : une règle Firestore manque ('recettesProposees' / 'recettesCommunaute').");
   } else {
     alert("⚠️ Erreur lors de la suppression : " + ((e && e.message) || e));
   }
 }
 
-window.supprimerMonCompte = async function() {
+// Ouvre une modale de confirmation intégrée. Le bouton "Supprimer définitivement"
+// déclenche la ré-auth (popup Google ou mot de passe) DIRECTEMENT dans son clic.
+window.supprimerMonCompte = function() {
   const user = window.currentUser;
   if (!user) { if (typeof ouvrirModalAuth === "function") ouvrirModalAuth(); return; }
-
-  // Double confirmation (action irréversible)
-  const ok1 = confirm(
-    "⚠️ SUPPRESSION DÉFINITIVE DU COMPTE\n\n" +
-    "Toutes tes données seront effacées : profil, foyer, préférences, favoris, " +
-    "menus, historique, notes, recettes perso, ainsi que tes recettes et notes " +
-    "publiées dans la communauté.\n\n" +
-    "Cette action est IRRÉVERSIBLE. Continuer ?"
-  );
-  if (!ok1) return;
-
-  const saisie = prompt('Pour confirmer, tape SUPPRIMER (en majuscules) :');
-  if (saisie !== "SUPPRIMER") {
-    if (typeof afficherToast === "function") afficherToast("Suppression annulée");
-    return;
-  }
+  if (document.getElementById("modal-suppression-overlay")) return; // déjà ouverte
 
   const providerId =
     (user.providerData && user.providerData[0] && user.providerData[0].providerId) || "";
+  const estEmail = providerId !== "google.com";
 
-  try {
-    if (providerId === "google.com") {
-      const provider = new firebase.auth.GoogleAuthProvider();
-      try {
-        // 1er essai : popup
-        await user.reauthenticateWithPopup(provider);
-      } catch (e) {
-        // Popup bloquée/indispo → repli par redirection (ne peut pas être bloquée)
-        if (e && (e.code === "auth/popup-blocked" ||
-                  e.code === "auth/cancelled-popup-request" ||
-                  e.code === "auth/operation-not-supported-in-this-environment")) {
-          try { sessionStorage.setItem("_suppressionCompteEnCours", user.uid); } catch (er) {}
-          await user.reauthenticateWithRedirect(provider);
-          return; // la page se recharge ; la suite se fait au retour (voir ci-dessous)
-        }
-        throw e; // popup fermée par l'utilisateur, etc.
-      }
-    } else {
-      // Compte e-mail / mot de passe : on redemande le mot de passe (pas de popup)
-      const mdp = prompt("🔒 Confirme ton mot de passe pour supprimer définitivement ton compte :");
-      if (!mdp) { if (typeof afficherToast === "function") afficherToast("Suppression annulée"); return; }
-      const cred = firebase.auth.EmailAuthProvider.credential(user.email, mdp);
-      await user.reauthenticateWithCredential(cred);
+  const overlay = document.createElement("div");
+  overlay.id = "modal-suppression-overlay";
+  overlay.style.cssText =
+    "position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,.7);" +
+    "display:flex;align-items:center;justify-content:center;padding:20px;";
+  overlay.innerHTML =
+    '<div style="background:#1b1b1f;color:#eee;max-width:420px;width:100%;border-radius:16px;padding:22px;box-shadow:0 10px 40px rgba(0,0,0,.5);font-family:system-ui,-apple-system,sans-serif;">' +
+      '<h3 style="margin:0 0 10px;color:#ff6b6b;font-size:18px;">⚠️ Supprimer définitivement le compte</h3>' +
+      '<p style="font-size:14px;line-height:1.5;color:#ccc;margin:0 0 14px;">' +
+        'Toutes tes données seront effacées : profil, foyer, préférences, favoris, menus, historique, notes, ' +
+        'recettes perso, ainsi que tes recettes et notes publiées dans la communauté. ' +
+        '<strong>Cette action est irréversible.</strong></p>' +
+      '<label style="font-size:13px;color:#bbb;display:block;margin-bottom:6px;">Tape <strong>SUPPRIMER</strong> pour confirmer :</label>' +
+      '<input id="supp-confirm-input" type="text" autocomplete="off" autocapitalize="characters" ' +
+        'style="width:100%;box-sizing:border-box;padding:10px;border-radius:8px;border:1px solid #444;background:#111;color:#fff;margin-bottom:12px;">' +
+      (estEmail
+        ? '<label style="font-size:13px;color:#bbb;display:block;margin-bottom:6px;">Confirme ton mot de passe :</label>' +
+          '<input id="supp-pwd-input" type="password" autocomplete="current-password" ' +
+            'style="width:100%;box-sizing:border-box;padding:10px;border-radius:8px;border:1px solid #444;background:#111;color:#fff;margin-bottom:12px;">'
+        : '') +
+      '<div id="supp-erreur" style="color:#ff6b6b;font-size:13px;min-height:18px;margin-bottom:8px;"></div>' +
+      '<div style="display:flex;gap:10px;justify-content:flex-end;">' +
+        '<button id="supp-annuler" type="button" style="background:#333;color:#eee;border:none;border-radius:8px;padding:10px 16px;cursor:pointer;">Annuler</button>' +
+        '<button id="supp-confirmer" type="button" style="background:#ff5b5b;color:#fff;border:none;border-radius:8px;padding:10px 16px;cursor:pointer;font-weight:600;">Supprimer définitivement</button>' +
+      '</div>' +
+    '</div>';
+  document.body.appendChild(overlay);
+
+  const fermer = () => overlay.remove();
+  overlay.querySelector("#supp-annuler").onclick = fermer;
+  overlay.onclick = (e) => { if (e.target === overlay) fermer(); };
+
+  const btn = overlay.querySelector("#supp-confirmer");
+  btn.onclick = async function() {
+    const err = overlay.querySelector("#supp-erreur");
+    err.textContent = "";
+    const val = (overlay.querySelector("#supp-confirm-input").value || "").trim();
+    if (val !== "SUPPRIMER") { err.textContent = "Tape SUPPRIMER (en majuscules) pour confirmer."; return; }
+
+    let mdp = "";
+    if (estEmail) {
+      mdp = overlay.querySelector("#supp-pwd-input").value || "";
+      if (!mdp) { err.textContent = "Entre ton mot de passe."; return; }
     }
 
-    // Ré-authentification réussie (popup ou mot de passe) → suppression
-    await _executerSuppression(user);
+    btn.disabled = true; btn.textContent = "Suppression…";
+    try {
+      if (estEmail) {
+        const cred = firebase.auth.EmailAuthProvider.credential(user.email, mdp);
+        await user.reauthenticateWithCredential(cred);
+      } else {
+        // ⚠️ Popup ouverte ICI, en 1er, dans le geste du clic → non bloquée par Chrome
+        const provider = new firebase.auth.GoogleAuthProvider();
+        await user.reauthenticateWithPopup(provider);
+      }
+      fermer();
+      await _executerSuppression(user);
+    } catch (e) {
+      btn.disabled = false; btn.textContent = "Supprimer définitivement";
+      if (e && e.code === "auth/wrong-password") {
+        err.textContent = "Mot de passe incorrect.";
+      } else if (e && (e.code === "auth/popup-closed-by-user" || e.code === "auth/cancelled-popup-request")) {
+        err.textContent = "Ré-authentification annulée.";
+      } else if (e && e.code === "auth/popup-blocked") {
+        // Ultime repli : redirection (rare ; getRedirectResult reprend au retour)
+        err.textContent = "Popup bloquée — redirection vers Google…";
+        try { sessionStorage.setItem("_suppressionCompteEnCours", user.uid); } catch (_) {}
+        const provider = new firebase.auth.GoogleAuthProvider();
+        try { await user.reauthenticateWithRedirect(provider); } catch (e2) { _gererErreurSuppression(e2); }
+      } else {
+        fermer();
+        _gererErreurSuppression(e);
+      }
+    }
+  };
 
-  } catch (e) {
-    _gererErreurSuppression(e);
-  }
+  // Focus sur le champ pour confort
+  const inp = overlay.querySelector("#supp-confirm-input");
+  if (inp) inp.focus();
 };
 
-// Au retour de la redirection : si une suppression était en cours et que la
-// ré-authentification a réussi, on termine automatiquement la suppression.
+// Reprise après redirection (repli uniquement) : si une suppression était en cours
+// et que la ré-auth a réussi, on termine automatiquement.
 async function _reprendreSuppressionApresRedirect() {
   let pendingUid = null;
   try { pendingUid = sessionStorage.getItem("_suppressionCompteEnCours"); } catch (e) {}
   if (!pendingUid) return;
 
   let result = null;
-  try { result = await _auth.getRedirectResult(); } catch (e) { /* ignore */ }
+  try { result = await _auth.getRedirectResult(); } catch (e) {}
   try { sessionStorage.removeItem("_suppressionCompteEnCours"); } catch (e) {}
 
   const reauthOk = !!(result && result.user);
   const user = _auth.currentUser;
-  if (!reauthOk || !user || user.uid !== pendingUid) return; // reauth annulée → on ne supprime rien
-
-  try {
-    await _executerSuppression(user);
-  } catch (e) {
-    _gererErreurSuppression(e);
-  }
+  if (!reauthOk || !user || user.uid !== pendingUid) return;
+  try { await _executerSuppression(user); } catch (e) { _gererErreurSuppression(e); }
 }
 
-// Injecte le bouton "Supprimer mon compte" tout en bas de la modale profil (une fois).
+// Injecte le bouton "Supprimer mon compte" en bas de la modale profil (une fois).
 function _injecterBoutonSuppression() {
   const modal = document.getElementById("modal-profil");
   if (!modal) return;
