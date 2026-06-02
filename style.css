@@ -1603,6 +1603,12 @@ select, input[type="number"] {
   font-size: 10px;
   color: #888;
 }
+.mini-carte-raison {
+  display: inline-block; margin-top: 3px; font-size: 9.5px; font-weight: 700;
+  color: #cfe2ff; background: rgba(90,160,245,.16); border-radius: 6px;
+  padding: 1px 6px; line-height: 1.5; white-space: nowrap;
+}
+.mini-carte-raison + .mini-carte-raison { margin-left: 4px; }
 
 /* Derniers menus */
 .accueil-menus-list {
@@ -4947,4 +4953,17 @@ select, input[type="number"] {
 .contrib-rep-btn {
   padding: 8px 12px; border-radius: 10px; border: none; cursor: pointer; font-weight: 700; font-size: 13px;
   background: rgba(90,160,245,.9); color: #fff;
+}
+
+/* Voyant admin : recettes communautaires en attente */
+.badge-modo {
+  display: block; margin: 6px 0 0 auto; background: #2f7ff0; color: #fff; border: none;
+  border-radius: 12px; padding: 6px 11px; font-size: 12px; font-weight: 700; cursor: pointer;
+  box-shadow: 0 2px 10px rgba(47,127,240,.45); white-space: nowrap;
+  animation: badgeModoPulse 2s ease-in-out infinite;
+}
+.badge-modo:hover { background: #1f6fe0; }
+@keyframes badgeModoPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 2px 10px rgba(47,127,240,.45); }
+  50% { transform: scale(1.05); box-shadow: 0 3px 14px rgba(47,127,240,.65); }
 }

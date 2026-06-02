@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=259-60">
+<link rel="stylesheet" href="style.css?v=259-63">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=259-60">
+<link rel="stylesheet" href="style.css?v=259-63">
 </head>
 
 <body>
@@ -202,6 +202,15 @@ gtag('config', 'G-390C5MY2SS');
       <h2><span class="badge-new">NEW</span> Dernières recettes ajoutées</h2>
     </div>
     <div class="accueil-scroll-row" id="accueil-nouveautes-row"></div>
+  </div>
+
+  <!-- Bloc Recommandé pour vous (selon objectifs + cuisines préférées) -->
+  <div class="accueil-bloc" id="accueil-pourvous-bloc" style="display:none">
+    <div class="accueil-bloc-header">
+      <h2>✨ Recommandé pour vous</h2>
+      <button class="accueil-voir-plus" onclick="ouvrirModalProfil()">Mes préférences →</button>
+    </div>
+    <div class="accueil-scroll-row" id="accueil-pourvous-row"></div>
   </div>
 
   <!-- Bloc Favoris rapides -->
@@ -5046,25 +5055,25 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=259-60"></script>
-<script src="js/allergenes.js?v=259-60"></script>
-<script src="js/exceptions.js?v=259-60"></script>
-<script src="js/recettes.js?v=259-60"></script>
-<script src="js/recettes_cocktails.js?v=259-60"></script>
-<script src="js/recettes_mocktails.js?v=259-60"></script>
-<script src="js/ingredients_prix.js?v=259-60"></script>
-<script src="js/tables.js?v=259-60"></script>
-<script src="js/app.js?v=259-60"></script>
-<script src="js/emojis.js?v=259-60"></script>
-<script src="js/app_avis.js?v=259-60"></script>
-<script src="js/app_admin.js?v=259-60"></script>
-<script src="js/app_menu.js?v=259-60"></script>
-<script src="js/app_courses_impr.js?v=259-60"></script>
-<script src="js/app_recherche.js?v=259-60"></script>
-<script src="js/app_garde_manger.js?v=259-60"></script>
-<script src="js/app_modal_confirm.js?v=259-60"></script>
-<script src="js/app_courses.js?v=259-60"></script>
-<script src="js/app_stats.js?v=259-60"></script>
+<script src="js/version.js?v=259-63"></script>
+<script src="js/allergenes.js?v=259-63"></script>
+<script src="js/exceptions.js?v=259-63"></script>
+<script src="js/recettes.js?v=259-63"></script>
+<script src="js/recettes_cocktails.js?v=259-63"></script>
+<script src="js/recettes_mocktails.js?v=259-63"></script>
+<script src="js/ingredients_prix.js?v=259-63"></script>
+<script src="js/tables.js?v=259-63"></script>
+<script src="js/app.js?v=259-63"></script>
+<script src="js/emojis.js?v=259-63"></script>
+<script src="js/app_avis.js?v=259-63"></script>
+<script src="js/app_admin.js?v=259-63"></script>
+<script src="js/app_menu.js?v=259-63"></script>
+<script src="js/app_courses_impr.js?v=259-63"></script>
+<script src="js/app_recherche.js?v=259-63"></script>
+<script src="js/app_garde_manger.js?v=259-63"></script>
+<script src="js/app_modal_confirm.js?v=259-63"></script>
+<script src="js/app_courses.js?v=259-63"></script>
+<script src="js/app_stats.js?v=259-63"></script>
 
 
 
@@ -5226,12 +5235,15 @@ gtag('config', 'G-390C5MY2SS');
       <div class="prefs-grid">
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="française"> 🇫🇷 Française</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="italienne"> 🇮🇹 Italienne</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="asiatique"> 🥢 Asiatique</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="mexicaine"> 🇲🇽 Mexicaine</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="indienne"> 🇮🇳 Indienne</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="méditerranéenne"> 🫒 Méditerranéenne</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="moyen-orient"> 🧆 Moyen-Orient & Maghreb</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="africaine"> 🌍 Africaine</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="américaine"> 🇺🇸 Américaine</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="asiatique"> 🥢 Asiatique</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="indienne"> 🇮🇳 Indienne</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="latino"> 🌮 Latino-américaine</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="nord-américaine"> 🍔 Nord-américaine</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="europe-est"> 🍺 Europe du Nord & centrale</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="antilles"> 🏝️ Antilles & Îles</label>
       </div>
     </div>
 
@@ -5447,12 +5459,15 @@ gtag('config', 'G-390C5MY2SS');
       <div class="prefs-grid">
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="française"> 🇫🇷 Française</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="italienne"> 🇮🇹 Italienne</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="asiatique"> 🥢 Asiatique</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="mexicaine"> 🇲🇽 Mexicaine</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="indienne"> 🇮🇳 Indienne</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="méditerranéenne"> 🫒 Méditerranéenne</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="moyen-orient"> 🧆 Moyen-Orient & Maghreb</label>
         <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="africaine"> 🌍 Africaine</label>
-        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="américaine"> 🇺🇸 Américaine</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="asiatique"> 🥢 Asiatique</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="indienne"> 🇮🇳 Indienne</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="latino"> 🌮 Latino-américaine</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="nord-américaine"> 🍔 Nord-américaine</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="europe-est"> 🍺 Europe du Nord & centrale</label>
+        <label class="pref-checkbox"><input type="checkbox" class="pref-cuisine" value="antilles"> 🏝️ Antilles & Îles</label>
       </div>
       <h4 style="margin-top:16px">👨‍🍳 Niveau en cuisine</h4>
       <select id="pp-niveau" class="auth-input">
@@ -5476,9 +5491,9 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="auth.js?v=259-60"></script>
-<script src="js/note_recettes.js?v=259-60"></script>
-<script src="js/app_contribution.js?v=259-60"></script>
+<script src="auth.js?v=259-63"></script>
+<script src="js/note_recettes.js?v=259-63"></script>
+<script src="js/app_contribution.js?v=259-63"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
