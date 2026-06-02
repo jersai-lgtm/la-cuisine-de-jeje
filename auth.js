@@ -834,6 +834,7 @@ window.supprimerMonCompte = function() {
       } else {
         // ⚠️ Popup ouverte ICI, en 1er, dans le geste du clic → non bloquée par Chrome
         const provider = new firebase.auth.GoogleAuthProvider();
+        try { provider.setCustomParameters({ login_hint: user.email || "" }); } catch (e) {}
         await user.reauthenticateWithPopup(provider);
       }
       fermer();
