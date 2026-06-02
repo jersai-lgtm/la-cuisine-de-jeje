@@ -1269,6 +1269,40 @@ const recettes = {
       { icone: "🍶", titre: "Assaisonner", detail: "Ajouter la sauce soja et l'huile de sésame. Mélanger rapidement. Servir immédiatement.", badge: null }
     ]
   },
+  boeufoignons: {
+    cat: "plats", pays: "chine",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥩",
+    description: "Le bœuf aux oignons à la chinoise — lamelles de bœuf saisies au wok et oignons fondants, liés d'une sauce soja légèrement sucrée. Le grand classique sauté, prêt en 30 minutes.",
+    tableauBoeufOignons: [
+      { nb: 1,  boeuf: "125 g",  oignon: "1 oignon",   ail: "1 gousse",  gingembre: "5 g",  saucesoja: "15 ml",  sucre: "2 g",  huile: "1 c.à.s",  riz: "80 g" },
+      { nb: 2,  boeuf: "250 g",  oignon: "2 oignons",  ail: "1 gousse",  gingembre: "10 g", saucesoja: "30 ml",  sucre: "4 g",  huile: "2 c.à.s",  riz: "160 g" },
+      { nb: 3,  boeuf: "375 g",  oignon: "3 oignons",  ail: "2 gousses", gingembre: "15 g", saucesoja: "45 ml",  sucre: "6 g",  huile: "3 c.à.s",  riz: "240 g" },
+      { nb: 4,  boeuf: "500 g",  oignon: "4 oignons",  ail: "2 gousses", gingembre: "20 g", saucesoja: "60 ml",  sucre: "8 g",  huile: "4 c.à.s",  riz: "320 g" },
+      { nb: 5,  boeuf: "625 g",  oignon: "5 oignons",  ail: "3 gousses", gingembre: "25 g", saucesoja: "75 ml",  sucre: "10 g", huile: "5 c.à.s",  riz: "400 g" },
+      { nb: 6,  boeuf: "750 g",  oignon: "6 oignons",  ail: "3 gousses", gingembre: "30 g", saucesoja: "90 ml",  sucre: "12 g", huile: "6 c.à.s",  riz: "480 g" },
+      { nb: 7,  boeuf: "875 g",  oignon: "7 oignons",  ail: "4 gousses", gingembre: "35 g", saucesoja: "105 ml", sucre: "14 g", huile: "7 c.à.s",  riz: "560 g" },
+      { nb: 8,  boeuf: "1000 g", oignon: "8 oignons",  ail: "4 gousses", gingembre: "40 g", saucesoja: "120 ml", sucre: "16 g", huile: "8 c.à.s",  riz: "640 g" },
+      { nb: 9,  boeuf: "1125 g", oignon: "9 oignons",  ail: "5 gousses", gingembre: "45 g", saucesoja: "135 ml", sucre: "18 g", huile: "9 c.à.s",  riz: "720 g" },
+      { nb: 10, boeuf: "1250 g", oignon: "10 oignons", ail: "5 gousses", gingembre: "50 g", saucesoja: "150 ml", sucre: "20 g", huile: "10 c.à.s", riz: "800 g" },
+      { nb: 11, boeuf: "1375 g", oignon: "11 oignons", ail: "6 gousses", gingembre: "55 g", saucesoja: "165 ml", sucre: "22 g", huile: "11 c.à.s", riz: "880 g" },
+      { nb: 12, boeuf: "1500 g", oignon: "12 oignons", ail: "6 gousses", gingembre: "60 g", saucesoja: "180 ml", sucre: "24 g", huile: "12 c.à.s", riz: "960 g" },
+      { nb: 13, boeuf: "1625 g", oignon: "13 oignons", ail: "7 gousses", gingembre: "65 g", saucesoja: "195 ml", sucre: "26 g", huile: "13 c.à.s", riz: "1040 g" },
+      { nb: 14, boeuf: "1750 g", oignon: "14 oignons", ail: "7 gousses", gingembre: "70 g", saucesoja: "210 ml", sucre: "28 g", huile: "14 c.à.s", riz: "1120 g" },
+      { nb: 15, boeuf: "1875 g", oignon: "15 oignons", ail: "8 gousses", gingembre: "75 g", saucesoja: "225 ml", sucre: "30 g", huile: "15 c.à.s", riz: "1200 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Émincer et mariner le bœuf", detail: "Couper le bœuf en fines lamelles dans le sens contraire des fibres. Mélanger avec 1 c.à.s de sauce soja et laisser mariner. ASTUCE CHEF : trancher à contre-fil pour une viande ultra tendre.", badge: "⏱ 15 min marinade" },
+      { icone: "🧅", titre: "Préparer oignons, ail et gingembre", detail: "Émincer les oignons en lamelles. Hacher finement l'ail et le gingembre.", badge: null },
+      { icone: "🔥", titre: "Saisir le bœuf", detail: "Dans un wok très chaud avec un filet d'huile, saisir le bœuf 1 à 2 min jusqu'à coloration, puis réserver. ASTUCE CHEF : feu VIF et wok pas surchargé pour saisir au lieu de bouillir.", badge: "⏱ 2 min" },
+      { icone: "🧅", titre: "Faire fondre les oignons", detail: "Dans le même wok, faire revenir oignons, ail et gingembre jusqu'à ce qu'ils soient fondants et légèrement dorés.", badge: "⏱ 6 min" },
+      { icone: "🥢", titre: "Lier la sauce", detail: "Remettre le bœuf, ajouter le reste de sauce soja et le sucre. Sauter à feu vif pour bien enrober et laisser caraméliser légèrement.", badge: "⏱ 2 min" },
+      { icone: "🍚", titre: "Servir", detail: "Servir aussitôt sur un riz blanc bien chaud, parsemé d'oignon vert si vous aimez.", badge: null }
+    ]
+  },
   naan: {
     cat: "encas", pays: "inde",
     base: 4,
