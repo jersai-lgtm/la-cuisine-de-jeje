@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=259-54">
+<link rel="stylesheet" href="style.css?v=259-56">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=259-54">
+<link rel="stylesheet" href="style.css?v=259-56">
 </head>
 
 <body>
@@ -171,6 +171,7 @@ gtag('config', 'G-390C5MY2SS');
     <button class="chip" onclick="filtrerChipPays('senegal', this)">🇸🇳 Sénégal</button>
     <button class="chip" onclick="filtrerChipPays('singapour', this)">🇸🇬 Singapour</button>
     <button class="chip" onclick="filtrerChipPays('suede', this)">🇸🇪 Suède</button>
+    <button class="chip" onclick="filtrerChipPays('suisse', this)">🇨🇭 Suisse</button>
     <button class="chip" onclick="filtrerChipPays('thailande', this)">🇹🇭 Thaïlande</button>
     <button class="chip" onclick="filtrerChipPays('tibet', this)">🏔️ Tibet</button>
     <button class="chip" onclick="filtrerChipPays('turquie', this)">🇹🇷 Turquie</button>
@@ -4483,6 +4484,83 @@ gtag('config', 'G-390C5MY2SS');
     <div class="carte-info"><h2>🍮 Arroz Doce</h2><p>⏱ 45 min • ⭐ Facile</p></div>
   </div>
 
+  <div class="carte" data-cat="salades" data-pays="thailande" onclick="ouvrirFiche('somtam', null)">
+    <img src="images/somtam.webp" alt="Som Tam" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🥗 Som Tam</h2><p>⏱ 20 min • ⭐ Facile</p></div>
+  </div>
+  <div class="carte" data-cat="aperitifs" data-pays="japon" onclick="ouvrirFiche('takoyaki', null)">
+    <img src="images/takoyaki.webp" alt="Takoyaki" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🐙 Takoyaki</h2><p>⏱ 30 min • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('katsucurry', null)">
+    <img src="images/katsucurry.webp" alt="Katsu Curry" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍛 Katsu Curry</h2><p>⏱ 45 min • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="japon" onclick="ouvrirFiche('gyudon', null)">
+    <img src="images/gyudon.webp" alt="Gyudon" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍚 Gyudon</h2><p>⏱ 25 min • ⭐ Facile</p></div>
+  </div>
+  <div class="carte" data-cat="brunch" data-pays="inde" onclick="ouvrirFiche('dosa', null)">
+    <img src="images/dosa.webp" alt="Masala Dosa" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🫓 Masala Dosa</h2><p>⏱ 30 min + fermentation • ⭐⭐⭐ Difficile</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="inde" onclick="ouvrirFiche('dal', null)">
+    <img src="images/dal.webp" alt="Dal de Lentilles" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍲 Dal de Lentilles</h2><p>⏱ 35 min • ⭐ Facile</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="inde" onclick="ouvrirFiche('roganjosh', null)">
+    <img src="images/roganjosh.webp" alt="Rogan Josh" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍛 Rogan Josh</h2><p>⏱ 1h30 • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="argentine" onclick="ouvrirFiche('milanesa', null)">
+    <img src="images/milanesa.webp" alt="Milanesa" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍖 Milanesa</h2><p>⏱ 30 min • ⭐ Facile</p></div>
+  </div>
+  <div class="carte" data-cat="soupes" data-pays="mexique" onclick="ouvrirFiche('pozole', null)">
+    <img src="images/pozole.webp" alt="Pozole" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🌽 Pozole</h2><p>⏱ 1h30 • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="mexique" onclick="ouvrirFiche('chilesrellenos', null)">
+    <img src="images/chilesrellenos.webp" alt="Chiles Rellenos" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🌶️ Chiles Rellenos</h2><p>⏱ 50 min • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="mexique" onclick="ouvrirFiche('cochinita', null)">
+    <img src="images/cochinita.webp" alt="Cochinita Pibil" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🐷 Cochinita Pibil</h2><p>⏱ 2h + marinade • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="soupes" data-pays="usa" onclick="ouvrirFiche('gumbo', null)">
+    <img src="images/gumbo.webp" alt="Gumbo" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍲 Gumbo</h2><p>⏱ 1h15 • ⭐⭐⭐ Difficile</p></div>
+  </div>
+  <div class="carte" data-cat="soupes" data-pays="usa" onclick="ouvrirFiche('clamchowder', null)">
+    <img src="images/clamchowder.webp" alt="Clam Chowder" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🥣 Clam Chowder</h2><p>⏱ 40 min • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="brunch" data-pays="suisse" onclick="ouvrirFiche('rosti', null)">
+    <img src="images/rosti.webp" alt="Rösti" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🥔 Rösti</h2><p>⏱ 30 min • ⭐ Facile</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="belgique" onclick="ouvrirFiche('carbonnade', null)">
+    <img src="images/carbonnade.webp" alt="Carbonnade Flamande" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍺 Carbonnade Flamande</h2><p>⏱ 2h30 • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="angleterre" onclick="ouvrirFiche('beefwellington', null)">
+    <img src="images/beefwellington.webp" alt="Beef Wellington" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🥩 Beef Wellington</h2><p>⏱ 1h30 • ⭐⭐⭐ Difficile</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="espagne" onclick="ouvrirFiche('fabada', null)">
+    <img src="images/fabada.webp" alt="Fabada Asturienne" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🫘 Fabada Asturienne</h2><p>⏱ 2h • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('parmigiana', null)">
+    <img src="images/parmigiana.webp" alt="Parmigiana d'Aubergines" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🍆 Parmigiana d'Aubergines</h2><p>⏱ 1h • ⭐⭐ Moyen</p></div>
+  </div>
+  <div class="carte" data-cat="plats" data-pays="italie" onclick="ouvrirFiche('cacioepepe', null)">
+    <img src="images/cacioepepe.webp" alt="Cacio e Pepe" onerror="this.style.display='none'">
+    <div class="carte-info"><h2>🧀 Cacio e Pepe</h2><p>⏱ 20 min • ⭐⭐ Moyen</p></div>
+  </div>
+
 </section>
 
 <!-- FIN SECTION CARTES -->
@@ -4968,25 +5046,25 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=259-54"></script>
-<script src="js/allergenes.js?v=259-54"></script>
-<script src="js/exceptions.js?v=259-54"></script>
-<script src="js/recettes.js?v=259-54"></script>
-<script src="js/recettes_cocktails.js?v=259-54"></script>
-<script src="js/recettes_mocktails.js?v=259-54"></script>
-<script src="js/ingredients_prix.js?v=259-54"></script>
-<script src="js/tables.js?v=259-54"></script>
-<script src="js/app.js?v=259-54"></script>
-<script src="js/emojis.js?v=259-54"></script>
-<script src="js/app_avis.js?v=259-54"></script>
-<script src="js/app_admin.js?v=259-54"></script>
-<script src="js/app_menu.js?v=259-54"></script>
-<script src="js/app_courses_impr.js?v=259-54"></script>
-<script src="js/app_recherche.js?v=259-54"></script>
-<script src="js/app_garde_manger.js?v=259-54"></script>
-<script src="js/app_modal_confirm.js?v=259-54"></script>
-<script src="js/app_courses.js?v=259-54"></script>
-<script src="js/app_stats.js?v=259-54"></script>
+<script src="js/version.js?v=259-56"></script>
+<script src="js/allergenes.js?v=259-56"></script>
+<script src="js/exceptions.js?v=259-56"></script>
+<script src="js/recettes.js?v=259-56"></script>
+<script src="js/recettes_cocktails.js?v=259-56"></script>
+<script src="js/recettes_mocktails.js?v=259-56"></script>
+<script src="js/ingredients_prix.js?v=259-56"></script>
+<script src="js/tables.js?v=259-56"></script>
+<script src="js/app.js?v=259-56"></script>
+<script src="js/emojis.js?v=259-56"></script>
+<script src="js/app_avis.js?v=259-56"></script>
+<script src="js/app_admin.js?v=259-56"></script>
+<script src="js/app_menu.js?v=259-56"></script>
+<script src="js/app_courses_impr.js?v=259-56"></script>
+<script src="js/app_recherche.js?v=259-56"></script>
+<script src="js/app_garde_manger.js?v=259-56"></script>
+<script src="js/app_modal_confirm.js?v=259-56"></script>
+<script src="js/app_courses.js?v=259-56"></script>
+<script src="js/app_stats.js?v=259-56"></script>
 
 
 
@@ -5398,9 +5476,9 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="auth.js?v=259-54"></script>
-<script src="js/note_recettes.js?v=259-54"></script>
-<script src="js/app_contribution.js?v=259-54"></script>
+<script src="auth.js?v=259-56"></script>
+<script src="js/note_recettes.js?v=259-56"></script>
+<script src="js/app_contribution.js?v=259-56"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
