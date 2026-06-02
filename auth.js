@@ -557,6 +557,8 @@ window.sauvegarderProfilComplet = async function() {
   } catch(e) {}
   // Rafraîchir les badges sur les cartes
   if (typeof appliquerPreferencesVisuelles === 'function') appliquerPreferencesVisuelles();
+  // Rafraîchir l'accueil (dont la section "Recommandé pour vous") avec les nouvelles préférences
+  if (typeof chargerAccueil === 'function') chargerAccueil();
   const btn = document.getElementById("btn-sauvegarder-profil");
   if (btn) { btn.textContent = "✅ Sauvegardé !"; setTimeout(() => btn.textContent = "💾 Sauvegarder", 2000); }
 };
