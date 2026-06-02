@@ -206,6 +206,7 @@ window.supprimerRecettePerso = async function (key) {
 // Fusion automatique au chargement / à chaque mise à jour du profil
 window.addEventListener("profilMisAJour", function () {
   try { fusionnerRecettesPerso(); } catch (e) {}
+  try { verifierModeration(); rafraichirBadgeModo(); } catch (e) {}
 });
 
 /* ============================================================
@@ -402,3 +403,79 @@ window.demanderPrecision = async function (key) {
     chargerModeration();
   } catch (e) { console.warn("Demande de précision échouée :", e); if (typeof afficherToast === "function") afficherToast("⚠️ Échec de l'envoi"); }
 };
+
+/* ============================================================
+   VOYANT ADMIN — recettes communautaires en attente de modération
+   Bouton bleu sous la connexion + toast quand une nouvelle arrive.
+   ============================================================ */
+let _modoUnsub = null;
+let _modoAtt = -1;   // recettes en attente de validation admin
+let _modoPrec = 0;   // recettes en "précision demandée" (attente de l'auteur)
+
+function ensureBadgeModo() {
+  let b = document.getElementById("badge-modo");
+  if (!b) {
+    const z = document.getElementById("zone-utilisateur");
+    if (!z) return null;
+    b = document.createElement("button");
+    b.id = "badge-modo";
+    b.className = "badge-modo";
+    b.style.display = "none";
+    z.appendChild(b);
+  }
+  b.onclick = window.ouvrirModeration;
+  return b;
+}
+
+window.rafraichirBadgeModo = function () {
+  const b = ensureBadgeModo();
+  if (!b) return;
+  const att = Math.max(_modoAtt, 0);
+  if (contribEstAdmin() && (att + _modoPrec) > 0) {
+    b.style.display = "";
+    const parts = [];
+    if (att > 0) parts.push("🔔 " + att + " à valider");
+    if (_modoPrec > 0) parts.push("💬 " + _modoPrec + " précision" + (_modoPrec > 1 ? "s" : ""));
+    b.textContent = parts.join(" · ");
+  } else {
+    b.style.display = "none";
+  }
+};
+
+window.verifierModeration = function () {
+  // Non-admin : pas de voyant, on coupe l'écoute éventuelle
+  if (!contribEstAdmin() || typeof _db === "undefined" || !_db) {
+    if (_modoUnsub) { try { _modoUnsub(); } catch (e) {} _modoUnsub = null; }
+    _modoAtt = -1; _modoPrec = 0;
+    const b = document.getElementById("badge-modo"); if (b) b.style.display = "none";
+    return;
+  }
+  if (_modoUnsub) return; // déjà à l'écoute
+  try {
+    _modoUnsub = _db.collection("recettesProposees").onSnapshot(snap => {
+      // "à valider" (attente admin) vs "précision" (attente de l'auteur)
+      let att = 0, prec = 0;
+      snap.forEach(d => { if ((d.data().statut || "en_attente") === "precision") prec++; else att++; });
+      const nouvelle = (_modoAtt >= 0 && att > _modoAtt); // nouvelle proposition OU l'auteur a répondu
+      _modoAtt = att; _modoPrec = prec;
+      rafraichirBadgeModo();
+      if (nouvelle && typeof afficherToast === "function") {
+        afficherToast("🔔 Une recette communautaire attend ta validation !");
+      }
+    }, err => { console.warn("verifierModeration :", err); });
+  } catch (e) { console.warn("verifierModeration :", e); }
+};
+
+// Ouvre la contribution et fait défiler jusqu'au panneau de modération
+window.ouvrirModeration = function () {
+  if (typeof ouvrirContribution === "function") ouvrirContribution();
+  setTimeout(() => {
+    const el = document.getElementById("c-moderation");
+    if (el && el.scrollIntoView) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, 250);
+};
+
+// Tentative initiale (si déjà connecté en admin au chargement)
+window.addEventListener("load", function () {
+  setTimeout(() => { try { verifierModeration(); rafraichirBadgeModo(); } catch (e) {} }, 1500);
+});
