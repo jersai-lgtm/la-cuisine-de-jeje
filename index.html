@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=261">
+<link rel="stylesheet" href="style.css?v=262">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=261">
+<link rel="stylesheet" href="style.css?v=262">
 </head>
 
 <body>
@@ -95,7 +95,7 @@ gtag('config', 'G-390C5MY2SS');
 <!-- BARRE DE RECHERCHE -->
 <div class="search-bar">
   <span class="search-icon">🔍</span>
-  <input type="search" id="search-input" name="recherche-recette" placeholder="Rechercher une recette, ingrédient, cocktail..." oninput="rechercherRecette(this.value)" onkeydown="if(event.key==='Enter'){event.preventDefault();validerRecherche();}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="search" enterkeyhint="search" data-form-type="other" data-lpignore="true" data-1p-ignore aria-label="Rechercher une recette">
+  <input type="search" id="search-input" name="recherche-recette" placeholder="Rechercher une recette, ingrédient, cocktail..." oninput="rechercherRecette(this.value)" onkeydown="if(event.key==='Enter'){event.preventDefault();validerRecherche();}" readonly onfocus="this.removeAttribute('readonly')" onblur="this.setAttribute('readonly',true)" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="search" enterkeyhint="search" data-form-type="other" data-lpignore="true" data-1p-ignore aria-label="Rechercher une recette">
   <button class="search-clear" id="search-clear" onclick="viderRecherche()" style="display:none">✕</button>
   <!-- Dropdown de suggestions auto-complétion -->
   <div class="search-suggestions" id="search-suggestions" style="display:none"></div>
@@ -5063,25 +5063,25 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=261"></script>
-<script src="js/allergenes.js?v=261"></script>
-<script src="js/exceptions.js?v=261"></script>
-<script src="js/recettes.js?v=261"></script>
-<script src="js/recettes_cocktails.js?v=261"></script>
-<script src="js/recettes_mocktails.js?v=261"></script>
-<script src="js/ingredients_prix.js?v=261"></script>
-<script src="js/tables.js?v=261"></script>
-<script src="js/app.js?v=261"></script>
-<script src="js/emojis.js?v=261"></script>
-<script src="js/app_avis.js?v=261"></script>
-<script src="js/app_admin.js?v=261"></script>
-<script src="js/app_menu.js?v=261"></script>
-<script src="js/app_courses_impr.js?v=261"></script>
-<script src="js/app_recherche.js?v=261"></script>
-<script src="js/app_garde_manger.js?v=261"></script>
-<script src="js/app_modal_confirm.js?v=261"></script>
-<script src="js/app_courses.js?v=261"></script>
-<script src="js/app_stats.js?v=261"></script>
+<script src="js/version.js?v=262"></script>
+<script src="js/allergenes.js?v=262"></script>
+<script src="js/exceptions.js?v=262"></script>
+<script src="js/recettes.js?v=262"></script>
+<script src="js/recettes_cocktails.js?v=262"></script>
+<script src="js/recettes_mocktails.js?v=262"></script>
+<script src="js/ingredients_prix.js?v=262"></script>
+<script src="js/tables.js?v=262"></script>
+<script src="js/app.js?v=262"></script>
+<script src="js/emojis.js?v=262"></script>
+<script src="js/app_avis.js?v=262"></script>
+<script src="js/app_admin.js?v=262"></script>
+<script src="js/app_menu.js?v=262"></script>
+<script src="js/app_courses_impr.js?v=262"></script>
+<script src="js/app_recherche.js?v=262"></script>
+<script src="js/app_garde_manger.js?v=262"></script>
+<script src="js/app_modal_confirm.js?v=262"></script>
+<script src="js/app_courses.js?v=262"></script>
+<script src="js/app_stats.js?v=262"></script>
 
 
 
@@ -5126,8 +5126,8 @@ gtag('config', 'G-390C5MY2SS');
 
     <!-- Connexion Email -->
     <div id="auth-tab-connexion">
-      <input id="auth-email-login" class="auth-input" type="email" placeholder="Email">
-      <input id="auth-mdp-login" class="auth-input" type="password" placeholder="Mot de passe" onkeydown="if(event.key==='Enter')connecterEmail()">
+      <input id="auth-email-login" class="auth-input" type="email" placeholder="Email" autocomplete="username">
+      <input id="auth-mdp-login" class="auth-input" type="password" placeholder="Mot de passe" autocomplete="current-password" onkeydown="if(event.key==='Enter')connecterEmail()">
       <button class="btn-auth-submit" onclick="connecterEmail()">Se connecter</button>
       <p class="auth-switch">Pas encore de compte ? <a onclick="switchAuthTab('inscription')">Créer un compte</a></p>
     </div>
@@ -5135,8 +5135,8 @@ gtag('config', 'G-390C5MY2SS');
     <!-- Inscription Email -->
     <div id="auth-tab-inscription" style="display:none">
       <input id="auth-prenom" class="auth-input" type="text" placeholder="Ton prénom">
-      <input id="auth-email" class="auth-input" type="email" placeholder="Email">
-      <input id="auth-mdp" class="auth-input" type="password" placeholder="Mot de passe (6 car. min)" onkeydown="if(event.key==='Enter')inscrireEmail()">
+      <input id="auth-email" class="auth-input" type="email" placeholder="Email" autocomplete="username">
+      <input id="auth-mdp" class="auth-input" type="password" placeholder="Mot de passe (6 car. min)" autocomplete="new-password" onkeydown="if(event.key==='Enter')inscrireEmail()">
       <button class="btn-auth-submit" onclick="inscrireEmail()">Créer mon compte</button>
       <p class="auth-switch">Déjà un compte ? <a onclick="switchAuthTab('connexion')">Se connecter</a></p>
     </div>
@@ -5499,9 +5499,9 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="auth.js?v=261"></script>
-<script src="js/note_recettes.js?v=261"></script>
-<script src="js/app_contribution.js?v=261"></script>
+<script src="auth.js?v=262"></script>
+<script src="js/note_recettes.js?v=262"></script>
+<script src="js/app_contribution.js?v=262"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
