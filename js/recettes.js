@@ -16879,9 +16879,12 @@ mayonnaise: {
       { nb: 15, crevettes: "1880 g", ail: "25", huileolive: "380 ml", piment: "7.5 g", persil: "4", citron: "4" }
     ],
     etapes: [
-      { icone: "🧄", titre: "Parfumer l'huile", detail: "Faire chauffer l'huile d'olive avec l'ail émincé et le piment, sans brûler l'ail.", badge: null },
-      { icone: "🦐", titre: "Saisir les gambas", detail: "Ajouter les gambas décortiquées et les saisir 2 min de chaque côté.", badge: "⏱ 4 min" },
-      { icone: "🍋", titre: "Finir", detail: "Déglacer d'un filet de citron, parsemer de persil. Servir brûlant avec du pain.", badge: null }
+      { icone: "🧄", titre: "Préparer", detail: "Émincer finement l'ail, ciseler le persil et décortiquer les gambas en gardant la queue.", badge: null },
+      { icone: "🫒", titre: "Parfumer l'huile", detail: "Verser une généreuse quantité d'huile d'olive dans une poêle, ajouter l'ail et le piment. Chauffer à feu doux pour infuser sans brûler l'ail.", badge: "⏱ 2 min à feu doux" },
+      { icone: "🦐", titre: "Saisir les gambas", detail: "Monter le feu et saisir les gambas 1 à 2 min de chaque côté jusqu'à ce qu'elles soient bien rosées.", badge: "⏱ 4 min à feu vif" },
+      { icone: "🍋", titre: "Déglacer", detail: "Arroser d'un filet de jus de citron et enrober les gambas du jus parfumé.", badge: null },
+      { icone: "🌿", titre: "Dresser", detail: "Parsemer de persil frais.", badge: null },
+      { icone: "🍞", titre: "Servir", detail: "Servir brûlant, directement dans la poêle, avec du bon pain.", badge: "ASTUCE CHEF : le pain pour saucer est obligatoire" }
     ]
   },
   bulgogi: {
@@ -16912,10 +16915,12 @@ mayonnaise: {
       { nb: 15, boeuf: "2250 g", sauceSoja: "300 ml", sucre: "110 g", sesame: "75 g", ail: "15", gingembre: "55 g", oignon: "4" }
     ],
     etapes: [
-      { icone: "🥩", titre: "Trancher", detail: "Trancher le bœuf très finement (plus facile s'il est légèrement congelé).", badge: null },
-      { icone: "🥣", titre: "Marinade", detail: "Mélanger sauce soja, sucre, ail, gingembre, sésame. Y faire mariner le bœuf.", badge: "⏱ 1h minimum" },
-      { icone: "🔥", titre: "Saisir", detail: "Saisir à feu vif dans une poêle bien chaude, par petites quantités.", badge: "⏱ 3-4 min" },
-      { icone: "🌿", titre: "Servir", detail: "Parsemer de sésame et d'oignon. Servir avec du riz et des feuilles de salade.", badge: null }
+      { icone: "🥩", titre: "Trancher", detail: "Trancher le bœuf en lamelles très fines (plus facile s'il a raffermi 30 min au congélateur).", badge: null },
+      { icone: "🥣", titre: "Marinade", detail: "Mélanger sauce soja, sucre, ail écrasé, gingembre râpé et huile de sésame jusqu'à dissolution du sucre.", badge: null },
+      { icone: "⏳", titre: "Mariner", detail: "Enrober le bœuf de marinade et laisser reposer au frais.", badge: "⏱ 1h minimum" },
+      { icone: "🔥", titre: "Saisir", detail: "Saisir le bœuf à feu vif par petites quantités, pour qu'il grille sans bouillir.", badge: "⏱ 4 min à feu vif" },
+      { icone: "🧅", titre: "Oignons", detail: "Ajouter l'oignon émincé en fin de cuisson pour qu'il reste légèrement croquant.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de graines de sésame. Servir avec du riz et des feuilles de salade pour rouler le bœuf.", badge: null }
     ]
   },
   japchae: {
@@ -16946,10 +16951,12 @@ mayonnaise: {
       { nb: 15, nouilles: "1130 g", boeuf: "750 g", epinards: "560 g", carotte: "7.5", sauceSoja: "230 ml", sesame: "55 g", sucre: "75 g" }
     ],
     etapes: [
-      { icone: "🍜", titre: "Nouilles", detail: "Cuire les nouilles de patate douce, rincer et couper grossièrement.", badge: "⏱ 7 min" },
-      { icone: "🥕", titre: "Légumes", detail: "Sauter séparément carottes, épinards et bœuf émincé.", badge: null },
-      { icone: "🥣", titre: "Assembler", detail: "Tout mélanger avec sauce soja, sucre et huile de sésame.", badge: null },
-      { icone: "🌰", titre: "Finir", detail: "Parsemer de graines de sésame. Se mange tiède ou froid.", badge: null }
+      { icone: "🍜", titre: "Nouilles", detail: "Cuire les nouilles de patate douce, les rincer à l'eau froide et les couper grossièrement aux ciseaux.", badge: "⏱ 7 min" },
+      { icone: "🥩", titre: "Bœuf", detail: "Émincer et faire sauter le bœuf à feu vif avec un peu de sauce soja. Réserver.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Faire sauter séparément la carotte en julienne puis les épinards, pour garder leurs couleurs.", badge: null },
+      { icone: "🥣", titre: "La sauce", detail: "Mélanger sauce soja, sucre et huile de sésame.", badge: null },
+      { icone: "🍳", titre: "Assembler", detail: "Réunir nouilles, bœuf et légumes, verser la sauce et faire sauter le tout.", badge: "⏱ 2 min" },
+      { icone: "🌰", titre: "Servir", detail: "Parsemer de graines de sésame. Le japchae se déguste tiède ou froid.", badge: null }
     ]
   },
   shawarma: {
@@ -16980,10 +16987,12 @@ mayonnaise: {
       { nb: 15, poulet: "2250 g", yaourt: "380 g", ail: "15", cumin: "20 g", paprika: "20 g", tortilla: "15", citron: "4" }
     ],
     etapes: [
-      { icone: "🍗", titre: "Mariner", detail: "Mariner le poulet dans yaourt, ail, cumin, paprika, citron.", badge: "⏱ 1h minimum" },
-      { icone: "🔥", titre: "Cuire", detail: "Saisir le poulet à feu vif jusqu'à belle coloration, puis émincer.", badge: "⏱ 10 min" },
-      { icone: "🧄", titre: "Sauce", detail: "Mélanger yaourt, ail écrasé et citron pour la sauce blanche.", badge: null },
-      { icone: "🌯", titre: "Rouler", detail: "Garnir les galettes de poulet, crudités et sauce. Rouler bien serré.", badge: null }
+      { icone: "🥣", titre: "Marinade", detail: "Mélanger yaourt, ail écrasé, cumin, paprika, jus de citron, sel et poivre.", badge: null },
+      { icone: "🍗", titre: "Mariner", detail: "Enrober le poulet en lanières de marinade et laisser reposer au frais.", badge: "⏱ 1h minimum" },
+      { icone: "🔥", titre: "Cuire", detail: "Saisir le poulet à feu vif jusqu'à ce qu'il soit doré et caramélisé sur les bords, puis l'émincer.", badge: "⏱ 10 min" },
+      { icone: "🧄", titre: "Sauce blanche", detail: "Mélanger yaourt, ail écrasé et un filet de citron.", badge: null },
+      { icone: "🥗", titre: "Crudités", detail: "Émincer tomates, oignon et salade.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Garnir les galettes chaudes de poulet, crudités et sauce, puis rouler bien serré.", badge: null }
     ]
   },
   satay: {
@@ -17014,10 +17023,12 @@ mayonnaise: {
       { nb: 15, poulet: "2250 g", cacahuete: "450 g", laitcoco: "380 ml", sauceSoja: "150 ml", miel: "75 g", ail: "10" }
     ],
     etapes: [
-      { icone: "🍗", titre: "Mariner", detail: "Mariner le poulet en cubes dans sauce soja, ail et miel.", badge: "⏱ 30 min" },
-      { icone: "🍢", titre: "Embrocher", detail: "Enfiler sur des piques et griller à feu vif.", badge: "⏱ 10 min" },
-      { icone: "🥜", titre: "Sauce", detail: "Mélanger beurre de cacahuète, lait de coco et un peu de sauce soja, chauffer doucement.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir les brochettes nappées ou accompagnées de la sauce.", badge: null }
+      { icone: "🍗", titre: "Mariner", detail: "Couper le poulet en cubes et le mariner dans sauce soja, ail et miel.", badge: "⏱ 30 min" },
+      { icone: "🍢", titre: "Embrocher", detail: "Enfiler le poulet sur des piques (trempées dans l'eau si en bois).", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller les brochettes à feu vif en les retournant, jusqu'à belle coloration.", badge: "⏱ 10 min" },
+      { icone: "🥜", titre: "Sauce cacahuète", detail: "Chauffer doucement beurre de cacahuète, lait de coco, sauce soja et miel jusqu'à une sauce onctueuse.", badge: null },
+      { icone: "🌶️", titre: "Ajuster", detail: "Détendre la sauce avec un peu d'eau si besoin et relever d'une pointe de piment.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Napper les brochettes de sauce, ou la servir à part pour tremper.", badge: null }
     ]
   },
   palakpaneer: {
@@ -17048,10 +17059,12 @@ mayonnaise: {
       { nb: 15, epinards: "1880 g", paneer: "940 g", oignon: "4", ail: "10", gingembre: "55 g", creme: "380 ml", garam: "25 g" }
     ],
     etapes: [
-      { icone: "🥬", titre: "Épinards", detail: "Blanchir les épinards puis les mixer en purée lisse.", badge: null },
-      { icone: "🧅", titre: "Base", detail: "Faire revenir oignon, ail, gingembre et garam masala.", badge: null },
-      { icone: "🧀", titre: "Paneer", detail: "Dorer les cubes de paneer à part, réserver.", badge: null },
-      { icone: "🍲", titre: "Assembler", detail: "Ajouter la purée d'épinards et la crème à la base, puis le paneer. Mijoter.", badge: "⏱ 10 min" }
+      { icone: "🥬", titre: "Blanchir", detail: "Plonger les épinards 1 min dans l'eau bouillante puis dans l'eau glacée pour fixer le vert.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer les épinards en purée lisse.", badge: null },
+      { icone: "🧀", titre: "Dorer le paneer", detail: "Faire dorer les cubes de paneer dans un peu de matière grasse, réserver.", badge: null },
+      { icone: "🧅", titre: "La base", detail: "Faire revenir oignon, ail et gingembre, ajouter le garam masala et laisser parfumer.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Ajouter la purée d'épinards et la crème, puis le paneer. Mijoter doucement.", badge: "⏱ 10 min" },
+      { icone: "🍚", titre: "Servir", detail: "Servir bien chaud avec du riz basmati ou du naan.", badge: null }
     ]
   },
   enchiladas: {
@@ -17082,10 +17095,12 @@ mayonnaise: {
       { nb: 15, tortillamais: "30", poulet: "1880 g", tomate: "1500 g", cheddar: "750 g", oignon: "4", paprika: "25 g" }
     ],
     etapes: [
-      { icone: "🍗", titre: "Poulet", detail: "Cuire et effilocher le poulet, mélanger avec oignon revenu.", badge: null },
-      { icone: "🍅", titre: "Sauce", detail: "Mixer tomates, paprika et piment, faire réduire en sauce.", badge: "⏱ 15 min" },
-      { icone: "🌯", titre: "Rouler", detail: "Garnir et rouler les tortillas, les ranger dans un plat.", badge: null },
-      { icone: "🧀", titre: "Gratiner", detail: "Napper de sauce et de fromage, enfourner.", badge: "⏱ 20 min à 190°C" }
+      { icone: "🍗", titre: "Poulet", detail: "Cuire le poulet, l'effilocher et le mélanger avec l'oignon revenu.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Mixer tomates, paprika et piment, faire réduire en sauce épicée.", badge: "⏱ 15 min" },
+      { icone: "🌯", titre: "Garnir", detail: "Garnir les tortillas de poulet, les rouler et les ranger serrées dans un plat.", badge: null },
+      { icone: "🧀", titre: "Napper", detail: "Recouvrir de sauce et de fromage râpé.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner jusqu'à ce que le fromage soit fondu et gratiné.", badge: "⏱ 20 min à 190°C" },
+      { icone: "🌿", titre: "Servir", detail: "Garnir de coriandre fraîche et servir aussitôt.", badge: null }
     ]
   },
   jambalaya: {
@@ -17116,10 +17131,12 @@ mayonnaise: {
       { nb: 15, riz: "1130 g", poulet: "1130 g", saucisseFumee: "750 g", crevettes: "750 g", poivron: "4", tomate: "1130 g", paprika: "30 g" }
     ],
     etapes: [
-      { icone: "🍗", titre: "Saisir", detail: "Saisir poulet et saucisse, réserver. Suer poivron, oignon et céleri.", badge: null },
-      { icone: "🍅", titre: "Base", detail: "Ajouter tomates, paprika et épices cajun.", badge: null },
-      { icone: "🍚", titre: "Riz", detail: "Incorporer le riz et le bouillon, laisser absorber à couvert.", badge: "⏱ 20 min" },
-      { icone: "🦐", titre: "Crevettes", detail: "Ajouter les crevettes en fin de cuisson, juste le temps qu'elles rosissent.", badge: "⏱ 5 min" }
+      { icone: "🍗", titre: "Saisir les viandes", detail: "Saisir le poulet et la saucisse fumée en morceaux, réserver.", badge: null },
+      { icone: "🧅", titre: "La trinité", detail: "Faire suer oignon, poivron et céleri dans la même cocotte.", badge: null },
+      { icone: "🍅", titre: "Base", detail: "Ajouter tomates, paprika et épices cajun, laisser compoter.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Incorporer le riz et le bouillon, remettre les viandes, couvrir et laisser absorber.", badge: "⏱ 20 min" },
+      { icone: "🦐", titre: "Crevettes", detail: "Ajouter les crevettes en fin de cuisson, juste le temps qu'elles rosissent.", badge: "⏱ 5 min" },
+      { icone: "🌿", titre: "Servir", detail: "Laisser reposer 5 min, parsemer d'oignon vert et servir.", badge: null }
     ]
   },
   poutine: {
@@ -17150,10 +17167,12 @@ mayonnaise: {
       { nb: 15, pommedeterre: "3750 g", mozzarella: "940 g", beurre: "150 g", farine: "110 g", bouillon: "1500 ml" }
     ],
     etapes: [
-      { icone: "🥔", titre: "Frites", detail: "Tailler les pommes de terre en frites et les cuire jusqu'à bien dorées.", badge: "⏱ 20 min" },
-      { icone: "🥘", titre: "Sauce brune", detail: "Faire un roux beurre-farine, mouiller au bouillon et laisser épaissir.", badge: null },
-      { icone: "🧀", titre: "Monter", detail: "Déposer les frites, parsemer de fromage en grains.", badge: null },
-      { icone: "🔥", titre: "Napper", detail: "Verser la sauce brûlante sur le tout pour faire fondre le fromage. Servir aussitôt.", badge: null }
+      { icone: "🥔", titre: "Frites", detail: "Tailler les pommes de terre en frites et les cuire (idéalement en deux bains) jusqu'à dorées et croustillantes.", badge: "⏱ 20 min" },
+      { icone: "🧈", titre: "Roux", detail: "Faire fondre le beurre, ajouter la farine et cuire 1 min en remuant.", badge: null },
+      { icone: "🥘", titre: "Sauce brune", detail: "Mouiller au bouillon chaud et laisser épaissir en sauce nappante.", badge: "⏱ 5 min" },
+      { icone: "🧀", titre: "Fromage", detail: "Déposer les frites dans un plat et parsemer généreusement de fromage en grains.", badge: null },
+      { icone: "🔥", titre: "Napper", detail: "Verser la sauce brûlante sur le tout pour faire fondre légèrement le fromage.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir immédiatement, tant que les frites sont croustillantes.", badge: "ASTUCE CHEF : le service rapide est la clé" }
     ]
   },
   lahmacun: {
@@ -17184,10 +17203,12 @@ mayonnaise: {
       { nb: 15, farine: "1310 g", boeuf: "1130 g", tomate: "750 g", oignon: "4", persil: "4", paprika: "25 g" }
     ],
     etapes: [
-      { icone: "🌾", titre: "La pâte", detail: "Pétrir farine, eau, levure et sel. Laisser lever.", badge: "⏱ 45 min levée" },
-      { icone: "🥩", titre: "La garniture", detail: "Mixer viande, tomate, oignon, persil et épices en pâte fine.", badge: null },
-      { icone: "🫓", titre: "Étaler", detail: "Étaler la pâte très finement, tartiner d'une fine couche de garniture.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire au four très chaud jusqu'à ce que les bords soient dorés.", badge: "⏱ 8 min à 250°C" }
+      { icone: "🌾", titre: "La pâte", detail: "Pétrir farine, eau, levure et sel en pâte souple, puis laisser lever.", badge: "⏱ 45 min levée" },
+      { icone: "🥩", titre: "La garniture", detail: "Mixer viande hachée, tomate, oignon, persil, ail et paprika en une pâte fine.", badge: null },
+      { icone: "🫓", titre: "Étaler", detail: "Diviser la pâte et l'étaler très finement en disques.", badge: null },
+      { icone: "🥄", titre: "Tartiner", detail: "Étaler une fine couche de garniture sur chaque disque jusqu'aux bords.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire au four très chaud jusqu'à ce que les bords soient dorés.", badge: "⏱ 8 min à 250°C" },
+      { icone: "🍋", titre: "Servir", detail: "Arroser de citron, garnir de persil et de salade, puis rouler pour déguster.", badge: null }
     ]
   },
   bifana: {
@@ -17218,9 +17239,12 @@ mayonnaise: {
       { nb: 15, porc: "1880 g", ail: "15", vinblanc: "380 ml", paprika: "25 g", oignon: "4", pain: "15" }
     ],
     etapes: [
-      { icone: "🐷", titre: "Mariner", detail: "Mariner les fines escalopes de porc dans ail écrasé, vin blanc et paprika.", badge: "⏱ 30 min" },
-      { icone: "🔥", titre: "Saisir", detail: "Saisir le porc à feu vif, puis le laisser mijoter quelques minutes dans la marinade.", badge: "⏱ 10 min" },
-      { icone: "🥪", titre: "Garnir", detail: "Glisser le porc et un peu de jus dans des pains moelleux. Moutarde selon le goût.", badge: null }
+      { icone: "🐷", titre: "Mariner", detail: "Mariner les fines escalopes de porc dans ail écrasé, vin blanc, paprika, sel et poivre.", badge: "⏱ 30 min minimum" },
+      { icone: "🧅", titre: "Oignons", detail: "Faire revenir l'oignon émincé jusqu'à fondant.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisir le porc à feu vif dans la poêle.", badge: "⏱ 5 min" },
+      { icone: "💧", titre: "Mijoter", detail: "Verser la marinade et laisser réduire quelques minutes pour un porc tendre et juteux.", badge: "⏱ 10 min" },
+      { icone: "🥪", titre: "Garnir", detail: "Glisser le porc et un peu de jus dans des pains moelleux.", badge: null },
+      { icone: "🌶️", titre: "Servir", detail: "Servir avec de la moutarde ou une pointe de piri-piri selon le goût.", badge: null }
     ]
   },
   francesinha: {
@@ -17251,9 +17275,10 @@ mayonnaise: {
       { nb: 15, pain: "30", boeuf: "1880 g", jambon: "750 g", saucisseFumee: "750 g", cheddar: "1130 g", tomate: "1500 g", oeufs: "15" }
     ],
     etapes: [
-      { icone: "🥩", titre: "Les viandes", detail: "Saisir le steak, réchauffer jambon et saucisse.", badge: null },
-      { icone: "🥪", titre: "Monter", detail: "Empiler les viandes entre des tranches de pain de mie, recouvrir de tranches de fromage.", badge: null },
-      { icone: "🍅", titre: "La sauce", detail: "Mijoter tomate, un trait de bière et du piment jusqu'à une sauce nappante.", badge: "⏱ 15 min" },
+      { icone: "🥩", titre: "Les viandes", detail: "Saisir le steak, réchauffer le jambon et la saucisse.", badge: null },
+      { icone: "🥪", titre: "Monter", detail: "Empiler les viandes entre des tranches de pain de mie.", badge: null },
+      { icone: "🧀", titre: "Fromage", detail: "Recouvrir entièrement le sandwich de tranches de fromage.", badge: null },
+      { icone: "🍅", titre: "La sauce", detail: "Mijoter tomate, un trait de bière et du piment jusqu'à une sauce nappante et brillante.", badge: "⏱ 15 min" },
       { icone: "🔥", titre: "Gratiner", detail: "Napper de sauce et passer au four pour faire fondre le fromage.", badge: "⏱ 8 min" },
       { icone: "🍳", titre: "Finir", detail: "Couronner d'un œuf au plat. Servir brûlant avec des frites.", badge: null }
     ]
@@ -17286,9 +17311,11 @@ mayonnaise: {
       { nb: 15, poulet: "3750 g", piment: "55 g", ail: "20", citron: "7.5", paprika: "30 g", huileolive: "230 ml" }
     ],
     etapes: [
-      { icone: "🌶️", titre: "Sauce piri piri", detail: "Mixer piment, ail, jus de citron, paprika et huile d'olive en marinade.", badge: null },
-      { icone: "🍗", titre: "Mariner", detail: "En badigeonner généreusement le poulet et laisser mariner.", badge: "⏱ 1h minimum" },
-      { icone: "🔥", titre: "Griller", detail: "Griller le poulet en l'arrosant régulièrement de marinade jusqu'à doré et bien cuit.", badge: "⏱ 30 min" },
+      { icone: "🌶️", titre: "Sauce piri-piri", detail: "Mixer piment, ail, jus de citron, paprika et huile d'olive en marinade lisse.", badge: null },
+      { icone: "🍗", titre: "Entailler", detail: "Inciser le poulet pour que la marinade pénètre bien la chair.", badge: null },
+      { icone: "⏳", titre: "Mariner", detail: "Badigeonner le poulet de marinade et laisser reposer au frais.", badge: "⏱ 1h minimum" },
+      { icone: "🔥", titre: "Griller", detail: "Griller le poulet (four, plancha ou barbecue) en l'arrosant régulièrement de marinade.", badge: "⏱ 30 min" },
+      { icone: "🥄", titre: "Glacer", detail: "En fin de cuisson, badigeonner une dernière fois pour une belle laque brillante.", badge: null },
       { icone: "🍋", titre: "Servir", detail: "Servir avec un filet de citron et le reste de sauce à part.", badge: null }
     ]
   },
@@ -17320,10 +17347,12 @@ mayonnaise: {
       { nb: 15, riz: "500 g", lait: "2500 ml", sucre: "380 g", oeufs: "7.5", citron: "2.5", cannelle: "7.5 g" }
     ],
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz quelques minutes à l'eau frémissante avec un zeste de citron.", badge: "⏱ 10 min" },
-      { icone: "🥛", titre: "Lait", detail: "Ajouter le lait chaud et le sucre, laisser mijoter doucement en remuant.", badge: "⏱ 20 min" },
-      { icone: "🥚", titre: "Lier", detail: "Hors du feu, incorporer les jaunes d'œufs battus pour la crémeux.", badge: null },
-      { icone: "🌀", titre: "Dresser", detail: "Verser dans des coupes, décorer de motifs de cannelle en poudre. Servir frais ou tiède.", badge: null }
+      { icone: "🍚", titre: "Pré-cuire le riz", detail: "Cuire le riz quelques minutes dans l'eau frémissante avec un zeste de citron.", badge: "⏱ 10 min" },
+      { icone: "🥛", titre: "Ajouter le lait", detail: "Verser le lait chaud et le sucre, puis laisser mijoter doucement en remuant souvent.", badge: "⏱ 20 min" },
+      { icone: "🥄", titre: "Texture", detail: "Poursuivre jusqu'à ce que le riz soit fondant et crémeux (la préparation épaissit en refroidissant).", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Hors du feu, incorporer les jaunes d'œufs battus pour enrichir la crème.", badge: null },
+      { icone: "🌀", titre: "Dresser", detail: "Verser dans des coupes individuelles et lisser la surface.", badge: null },
+      { icone: "🌿", titre: "Cannelle", detail: "Décorer de motifs de cannelle en poudre. Servir frais ou tiède.", badge: null }
     ]
   },
   somtam: {
@@ -17354,10 +17383,12 @@ mayonnaise: {
       { nb: 15, papaye: "4", tomate: "7.5", carotte: "4", cacahuete: "190 g", citronvert: "7.5", nuocmam: "110 ml", piment: "20 g", ail: "7.5", sucre: "75 g" }
     ],
     etapes: [
-      { icone: "🧄", titre: "Piler la base", detail: "Piler ail, piment et sucre au mortier.", badge: null },
-      { icone: "🥭", titre: "Papaye", detail: "Râper la papaye verte et la carotte en fins bâtonnets, ajouter au mortier avec les tomates.", badge: null },
-      { icone: "🍋", titre: "Assaisonner", detail: "Verser nuoc-mâm et jus de citron vert, piler doucement pour mélanger.", badge: null },
-      { icone: "🥜", titre: "Servir", detail: "Parsemer de cacahuètes concassées. Servir bien frais.", badge: null }
+      { icone: "🥭", titre: "Préparer", detail: "Râper la papaye verte et la carotte en fins bâtonnets, couper les tomates en quartiers.", badge: null },
+      { icone: "🧄", titre: "Piler la base", detail: "Piler ail, piment et sucre au mortier jusqu'à obtenir une pâte.", badge: null },
+      { icone: "🍋", titre: "La sauce", detail: "Ajouter nuoc-mâm et jus de citron vert, puis piler pour mélanger.", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Incorporer papaye, carotte et tomates, piler doucement pour les imprégner sans les écraser.", badge: null },
+      { icone: "🥜", titre: "Cacahuètes", detail: "Ajouter les cacahuètes concassées et mélanger.", badge: null },
+      { icone: "🧊", titre: "Servir", detail: "Servir bien frais, en entrée ou en accompagnement.", badge: null }
     ]
   },
   takoyaki: {
@@ -17388,10 +17419,12 @@ mayonnaise: {
       { nb: 15, farine: "560 g", oeufs: "7.5", bouillon: "1500 ml", poulpe: "750 g", sauceSoja: "110 ml", ciboulette: "4" }
     ],
     etapes: [
-      { icone: "🥣", titre: "La pâte", detail: "Mélanger farine, œufs et bouillon dashi en pâte fluide.", badge: null },
-      { icone: "🐙", titre: "Garnir", detail: "Verser la pâte dans une plaque à takoyaki, déposer un morceau de poulpe dans chaque alvéole.", badge: null },
-      { icone: "🔄", titre: "Tourner", detail: "Faire pivoter les boules d'un quart de tour avec une pique au fur et à mesure.", badge: "⏱ 8 min" },
-      { icone: "🥢", titre: "Servir", detail: "Napper de sauce, mayo, et parsemer de ciboulette.", badge: null }
+      { icone: "🥣", titre: "La pâte", detail: "Mélanger farine, œufs et bouillon dashi en une pâte bien fluide.", badge: null },
+      { icone: "🐙", titre: "Préparer", detail: "Couper le poulpe cuit en petits dés. Huiler et bien chauffer la plaque à takoyaki.", badge: null },
+      { icone: "💧", titre: "Remplir", detail: "Verser la pâte dans les alvéoles et déposer un dé de poulpe dans chacune.", badge: null },
+      { icone: "🔄", titre: "Tourner", detail: "Avec une pique, faire pivoter chaque boule d'un quart de tour au fur et à mesure pour former des sphères.", badge: "⏱ 8 min" },
+      { icone: "🟤", titre: "Dorer", detail: "Continuer jusqu'à ce que les boules soient dorées dehors et moelleuses dedans.", badge: null },
+      { icone: "🥢", titre: "Servir", detail: "Napper de sauce et de mayo, parsemer de ciboulette (et de bonite séchée).", badge: null }
     ]
   },
   katsucurry: {
@@ -17422,10 +17455,12 @@ mayonnaise: {
       { nb: 15, poulet: "2250 g", chapelure: "450 g", oeufs: "7.5", farine: "190 g", oignon: "7.5", carotte: "7.5", curry: "55 g", riz: "1130 g" }
     ],
     etapes: [
-      { icone: "🍗", titre: "Paner", detail: "Paner le poulet : farine, œuf battu, puis chapelure panko.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire les escalopes jusqu'à doré et croustillant, puis trancher.", badge: "⏱ 8 min" },
-      { icone: "🍛", titre: "La sauce curry", detail: "Faire revenir oignon et carotte, ajouter curry et eau, mijoter en sauce nappante.", badge: "⏱ 15 min" },
-      { icone: "🍚", titre: "Dresser", detail: "Servir le riz, le katsu tranché et napper de curry.", badge: null }
+      { icone: "🍗", titre: "Paner", detail: "Aplatir le poulet, le passer dans la farine, l'œuf battu puis la chapelure panko.", badge: null },
+      { icone: "🍛", titre: "La sauce curry", detail: "Faire revenir oignon et carotte, ajouter le curry puis de l'eau et mijoter en sauce nappante.", badge: "⏱ 15 min" },
+      { icone: "🍳", titre: "Frire", detail: "Frire les escalopes panées jusqu'à doré et croustillant.", badge: "⏱ 8 min" },
+      { icone: "🔪", titre: "Trancher", detail: "Égoutter sur papier absorbant et trancher le katsu en lanières.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Disposer un lit de riz dans chaque assiette.", badge: null },
+      { icone: "🥄", titre: "Dresser", detail: "Poser le katsu tranché à côté du riz et napper généreusement de curry.", badge: null }
     ]
   },
   gyudon: {
@@ -17456,9 +17491,12 @@ mayonnaise: {
       { nb: 15, boeuf: "1880 g", oignon: "7.5", sauceSoja: "300 ml", sucre: "75 g", gingembre: "40 g", riz: "1130 g" }
     ],
     etapes: [
-      { icone: "🧅", titre: "Mijoter", detail: "Faire mijoter l'oignon émincé dans sauce soja, sucre et gingembre.", badge: null },
-      { icone: "🥩", titre: "Le bœuf", detail: "Ajouter le bœuf très finement tranché, cuire juste ce qu'il faut.", badge: "⏱ 5 min" },
-      { icone: "🍚", titre: "Servir", detail: "Disposer sur un bol de riz chaud avec le jus.", badge: null }
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz japonais et le maintenir au chaud.", badge: "⏱ 15 min" },
+      { icone: "🥣", titre: "Sauce", detail: "Mélanger sauce soja, sucre, gingembre râpé et un peu d'eau (idéalement avec un trait de mirin).", badge: null },
+      { icone: "🧅", titre: "Oignons", detail: "Faire mijoter l'oignon émincé dans la sauce jusqu'à ce qu'il fonde.", badge: "⏱ 5 min" },
+      { icone: "🥩", titre: "Le bœuf", detail: "Ajouter le bœuf très finement tranché et cuire juste ce qu'il faut, sans le dessécher.", badge: "⏱ 3 min" },
+      { icone: "🍳", titre: "Dresser", detail: "Disposer le bœuf et son jus sur un bol de riz chaud.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Garnir d'oignon vert et, si on aime, d'un œuf cru ou mollet.", badge: null }
     ]
   },
   dosa: {
@@ -17489,10 +17527,12 @@ mayonnaise: {
       { nb: 15, riz: "750 g", lentilles: "300 g", pommedeterre: "1130 g", oignon: "4", curcuma: "15 g", cumin: "15 g" }
     ],
     etapes: [
-      { icone: "💧", titre: "Tremper", detail: "Tremper riz et lentilles séparément, puis mixer en pâte lisse.", badge: "⏱ 4h trempage" },
-      { icone: "🫧", titre: "Fermenter", detail: "Laisser fermenter la pâte une nuit dans un endroit tiède.", badge: "⏱ une nuit" },
-      { icone: "🥔", titre: "Le masala", detail: "Faire revenir oignon, curcuma et cumin avec les pommes de terre écrasées.", badge: null },
-      { icone: "🫓", titre: "Cuire", detail: "Étaler la pâte très finement sur une plaque chaude, garnir de masala, rouler.", badge: "⏱ 3 min" }
+      { icone: "💧", titre: "Tremper", detail: "Tremper le riz et les lentilles séparément plusieurs heures.", badge: "⏱ 4h trempage" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer le tout avec un peu d'eau en une pâte lisse et fluide.", badge: null },
+      { icone: "🫧", titre: "Fermenter", detail: "Laisser fermenter la pâte une nuit dans un endroit tiède (elle doit buller et gonfler).", badge: "⏱ une nuit" },
+      { icone: "🥔", titre: "Masala", detail: "Faire revenir oignon, curcuma et cumin, ajouter les pommes de terre cuites écrasées.", badge: null },
+      { icone: "🫓", titre: "Cuire", detail: "Étaler une fine couche de pâte sur une plaque chaude huilée, en spirale, jusqu'à ce qu'elle dore.", badge: "⏱ 3 min" },
+      { icone: "🌯", titre: "Garnir", detail: "Déposer le masala au centre, replier la dosa et servir avec un chutney.", badge: null }
     ]
   },
   dal: {
@@ -17523,9 +17563,12 @@ mayonnaise: {
       { nb: 15, lentillescorail: "940 g", oignon: "4", ail: "10", gingembre: "55 g", tomate: "750 g", curcuma: "15 g", cumin: "15 g", beurre: "110 g" }
     ],
     etapes: [
-      { icone: "🫘", titre: "Cuire les lentilles", detail: "Cuire les lentilles corail avec le curcuma jusqu'à tendreté.", badge: "⏱ 20 min" },
-      { icone: "🧅", titre: "Le tarka", detail: "Faire revenir oignon, ail et gingembre avec le cumin dans le beurre.", badge: null },
-      { icone: "🍅", titre: "Mélanger", detail: "Ajouter la tomate, puis verser le tarka dans les lentilles. Mijoter quelques minutes.", badge: null }
+      { icone: "🫘", titre: "Cuire les lentilles", detail: "Rincer les lentilles corail et les cuire avec le curcuma jusqu'à ce qu'elles se défassent.", badge: "⏱ 20 min" },
+      { icone: "🍅", titre: "Tomate", detail: "Ajouter la tomate concassée aux lentilles et poursuivre la cuisson.", badge: null },
+      { icone: "🧅", titre: "Le tarka", detail: "Dans une petite poêle, faire revenir oignon, ail et gingembre avec le cumin dans le beurre (ghee).", badge: null },
+      { icone: "🌶️", titre: "Parfumer", detail: "Laisser les épices grésiller jusqu'à ce qu'elles libèrent leurs arômes.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Verser le tarka grésillant sur les lentilles et mélanger.", badge: "ASTUCE CHEF : le tarka versé chaud parfume tout le plat" },
+      { icone: "🍚", titre: "Servir", detail: "Servir avec du riz ou du naan, parsemé de coriandre.", badge: null }
     ]
   },
   roganjosh: {
@@ -17556,10 +17599,12 @@ mayonnaise: {
       { nb: 15, agneau: "2630 g", yaourt: "560 g", oignon: "7.5", ail: "15", gingembre: "75 g", garam: "30 g", paprika: "30 g", cannelle: "10 g" }
     ],
     etapes: [
-      { icone: "🥩", titre: "Saisir", detail: "Faire dorer l'agneau en morceaux, réserver.", badge: null },
-      { icone: "🧅", titre: "La base", detail: "Faire revenir oignon, ail, gingembre avec garam masala, paprika et cannelle.", badge: null },
-      { icone: "🥣", titre: "Yaourt", detail: "Ajouter le yaourt cuillère par cuillère en remuant pour ne pas trancher.", badge: null },
-      { icone: "🍲", titre: "Mijoter", detail: "Remettre l'agneau, mouiller et mijoter à couvert jusqu'à fondant.", badge: "⏱ 1h à feu doux" }
+      { icone: "🥩", titre: "Saisir", detail: "Faire dorer l'agneau en morceaux sur toutes les faces, réserver.", badge: null },
+      { icone: "🧅", titre: "La base", detail: "Faire revenir l'oignon émincé jusqu'à doré, ajouter ail et gingembre.", badge: null },
+      { icone: "🌶️", titre: "Épices", detail: "Ajouter garam masala, paprika et cannelle, laisser parfumer 1 min.", badge: null },
+      { icone: "🥣", titre: "Yaourt", detail: "Incorporer le yaourt cuillère par cuillère en remuant pour qu'il ne tranche pas.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Remettre l'agneau, mouiller d'un peu d'eau, couvrir et mijoter jusqu'à ce qu'il soit fondant.", badge: "⏱ 1h à feu doux" },
+      { icone: "🍚", titre: "Servir", detail: "Servir avec du riz basmati, nappé de cette sauce rouge et onctueuse.", badge: null }
     ]
   },
   milanesa: {
@@ -17590,10 +17635,12 @@ mayonnaise: {
       { nb: 15, boeuf: "2250 g", chapelure: "450 g", oeufs: "7.5", farine: "190 g", ail: "7.5", persil: "4", citron: "4" }
     ],
     etapes: [
-      { icone: "🥩", titre: "Aplatir", detail: "Aplatir les tranches de bœuf très finement.", badge: null },
-      { icone: "🥚", titre: "Mariner", detail: "Battre les œufs avec ail écrasé et persil, y tremper la viande.", badge: null },
-      { icone: "🍞", titre: "Paner", detail: "Passer dans la farine puis la chapelure en pressant bien.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire jusqu'à doré des deux côtés. Servir avec du citron.", badge: "⏱ 6 min" }
+      { icone: "🥩", titre: "Aplatir", detail: "Aplatir les tranches de bœuf entre deux feuilles jusqu'à ce qu'elles soient très fines.", badge: null },
+      { icone: "🥚", titre: "Œufs parfumés", detail: "Battre les œufs avec l'ail écrasé, le persil ciselé, sel et poivre.", badge: null },
+      { icone: "🍞", titre: "Paner", detail: "Passer chaque tranche dans la farine, puis l'œuf, puis la chapelure en pressant bien.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire dans l'huile chaude jusqu'à doré et croustillant des deux côtés.", badge: "⏱ 6 min" },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur papier absorbant.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servir avec un quartier de citron (ou « a caballo », surmontée d'un œuf au plat).", badge: null }
     ]
   },
   pozole: {
@@ -17624,9 +17671,12 @@ mayonnaise: {
       { nb: 15, porc: "1500 g", mais: "1000 g", oignon: "2.5", ail: "10", piment: "25 g", bouillon: "2500 ml", citronvert: "5", coriandre: "2.5" }
     ],
     etapes: [
-      { icone: "🐷", titre: "Le bouillon", detail: "Cuire le porc avec oignon et ail jusqu'à tendreté, l'effilocher.", badge: "⏱ 1h" },
-      { icone: "🌽", titre: "Maïs & piment", detail: "Ajouter le maïs et la sauce piment, mijoter pour lier les saveurs.", badge: "⏱ 20 min" },
-      { icone: "🥗", titre: "Garnir", detail: "Servir et garnir à table de citron vert, coriandre, oignon et radis.", badge: null }
+      { icone: "🐷", titre: "Le bouillon", detail: "Cuire le porc avec oignon et ail dans le bouillon jusqu'à ce qu'il soit tendre.", badge: "⏱ 1h" },
+      { icone: "🍖", titre: "Effilocher", detail: "Sortir le porc, l'effilocher et le remettre dans le bouillon.", badge: null },
+      { icone: "🌶️", titre: "Sauce piment", detail: "Mixer les piments réhydratés en sauce et l'incorporer au bouillon.", badge: null },
+      { icone: "🌽", titre: "Maïs", detail: "Ajouter le maïs (hominy) et laisser mijoter pour lier les saveurs.", badge: "⏱ 20 min" },
+      { icone: "🥗", titre: "Les garnitures", detail: "Préparer à part radis, oignon, citron vert et coriandre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir le pozole brûlant et laisser chacun garnir son bol.", badge: null }
     ]
   },
   chilesrellenos: {
@@ -17657,10 +17707,12 @@ mayonnaise: {
       { nb: 15, poivron: "15", mozzarella: "750 g", oeufs: "10", farine: "190 g", tomate: "1130 g", oignon: "4" }
     ],
     etapes: [
-      { icone: "🔥", titre: "Griller", detail: "Griller et peler les poivrons, retirer les graines en gardant la forme.", badge: null },
-      { icone: "🧀", titre: "Farcir", detail: "Garnir chaque poivron de fromage.", badge: null },
-      { icone: "🥚", titre: "Enrober", detail: "Monter les blancs en neige, incorporer les jaunes, fariner les poivrons et les enrober.", badge: null },
-      { icone: "🍅", titre: "Frire & napper", detail: "Frire jusqu'à doré, servir nappé de sauce tomate à l'oignon.", badge: "⏱ 6 min" }
+      { icone: "🔥", titre: "Griller", detail: "Griller les poivrons (poblanos) jusqu'à ce que la peau noircisse, puis les peler.", badge: null },
+      { icone: "🔪", titre: "Évider", detail: "Inciser délicatement et retirer les graines en gardant le poivron entier.", badge: null },
+      { icone: "🧀", titre: "Farcir", detail: "Garnir chaque poivron de fromage et refermer.", badge: null },
+      { icone: "🥚", titre: "Enrober", detail: "Monter les blancs en neige, incorporer les jaunes, fariner les poivrons puis les enrober de cette pâte.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire jusqu'à ce que l'enrobage soit gonflé et doré.", badge: "⏱ 6 min" },
+      { icone: "🍅", titre: "Servir", detail: "Napper de sauce tomate à l'oignon et servir aussitôt.", badge: null }
     ]
   },
   cochinita: {
@@ -17691,10 +17743,12 @@ mayonnaise: {
       { nb: 15, porc: "2000 g", orange: "5", citron: "5", ail: "10", paprika: "25 g", oignon: "2.5", tortillamais: "20" }
     ],
     etapes: [
-      { icone: "🍊", titre: "Mariner", detail: "Mariner le porc dans jus d'orange, citron, ail et paprika (achiote).", badge: "⏱ 2h minimum" },
-      { icone: "🔥", titre: "Cuire lentement", detail: "Cuire à couvert à feu très doux jusqu'à ce que la viande s'effiloche.", badge: "⏱ 2h" },
+      { icone: "🍊", titre: "Marinade", detail: "Mélanger jus d'orange, citron, ail et paprika (achiote) en une marinade rouge.", badge: null },
+      { icone: "⏳", titre: "Mariner", detail: "Enrober le porc et laisser mariner longuement au frais.", badge: "⏱ 2h minimum" },
+      { icone: "🔥", titre: "Cuire lentement", detail: "Cuire à couvert à feu très doux (ou au four) jusqu'à ce que la viande s'effiloche.", badge: "⏱ 2h" },
       { icone: "🧅", titre: "Oignon mariné", detail: "Faire mariner l'oignon rouge émincé dans du jus de citron.", badge: null },
-      { icone: "🌮", titre: "Servir", detail: "Effilocher le porc, servir dans des tortillas avec l'oignon mariné.", badge: null }
+      { icone: "🍖", titre: "Effilocher", detail: "Effilocher le porc et le mélanger à son jus de cuisson.", badge: null },
+      { icone: "🌮", titre: "Servir", detail: "Garnir les tortillas de porc et d'oignon rouge mariné.", badge: null }
     ]
   },
   gumbo: {
@@ -17725,10 +17779,12 @@ mayonnaise: {
       { nb: 15, poulet: "750 g", saucisseFumee: "500 g", crevettes: "500 g", poivron: "2.5", oignon: "2.5", celeri: "2.5", farine: "130 g", huile: "130 ml", riz: "750 g", bouillon: "2000 ml" }
     ],
     etapes: [
-      { icone: "🟤", titre: "Le roux", detail: "Cuire farine et huile en remuant jusqu'à un roux brun chocolat (sans brûler).", badge: "ASTUCE CHEF : le roux fait tout le gumbo" },
-      { icone: "🧅", titre: "La trinité", detail: "Ajouter oignon, poivron et céleri, faire suer.", badge: null },
-      { icone: "🍗", titre: "Mijoter", detail: "Mouiller au bouillon, ajouter poulet et saucisse, laisser mijoter.", badge: "⏱ 40 min" },
-      { icone: "🦐", titre: "Finir", detail: "Ajouter les crevettes en fin de cuisson. Servir sur du riz.", badge: "⏱ 5 min" }
+      { icone: "🟤", titre: "Le roux", detail: "Cuire la farine et l'huile à feu moyen en remuant sans cesse jusqu'à un roux brun chocolat.", badge: "ASTUCE CHEF : le roux ne doit jamais brûler" },
+      { icone: "🧅", titre: "La trinité", detail: "Ajouter oignon, poivron et céleri hachés, faire suer dans le roux.", badge: null },
+      { icone: "🍗", titre: "Viandes", detail: "Ajouter poulet et saucisse fumée, faire revenir.", badge: null },
+      { icone: "🥘", titre: "Mijoter", detail: "Mouiller au bouillon, assaisonner d'épices cajun et laisser mijoter.", badge: "⏱ 40 min" },
+      { icone: "🦐", titre: "Crevettes", detail: "Ajouter les crevettes en fin de cuisson, juste le temps qu'elles rosissent.", badge: "⏱ 5 min" },
+      { icone: "🍚", titre: "Servir", detail: "Servir sur un lit de riz blanc.", badge: null }
     ]
   },
   clamchowder: {
@@ -17759,10 +17815,12 @@ mayonnaise: {
       { nb: 15, palourdes: "1500 g", pommedeterre: "1500 g", lardons: "380 g", oignon: "4", creme: "750 ml", lait: "1130 ml", beurre: "110 g", farine: "110 g" }
     ],
     etapes: [
-      { icone: "🥓", titre: "Lardons", detail: "Faire revenir les lardons puis l'oignon dans le beurre.", badge: null },
-      { icone: "🌾", titre: "Roux", detail: "Saupoudrer de farine, mouiller au lait en fouettant.", badge: null },
-      { icone: "🥔", titre: "Pommes de terre", detail: "Ajouter les pommes de terre en dés, cuire jusqu'à tendreté.", badge: "⏱ 15 min" },
-      { icone: "🦪", titre: "Palourdes", detail: "Ajouter palourdes et crème, réchauffer sans bouillir.", badge: null }
+      { icone: "🥓", titre: "Lardons", detail: "Faire revenir les lardons jusqu'à coloration, ajouter l'oignon émincé et le beurre.", badge: null },
+      { icone: "🌾", titre: "Roux", detail: "Saupoudrer de farine et cuire 1 min en remuant.", badge: null },
+      { icone: "🥛", titre: "Mouiller", detail: "Verser le lait progressivement en fouettant pour éviter les grumeaux.", badge: null },
+      { icone: "🥔", titre: "Pommes de terre", detail: "Ajouter les pommes de terre en dés et cuire jusqu'à tendreté.", badge: "⏱ 15 min" },
+      { icone: "🦪", titre: "Palourdes", detail: "Ajouter les palourdes et la crème, réchauffer doucement sans faire bouillir.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Servir bien chaud, parsemé de persil, avec des crackers.", badge: null }
     ]
   },
   rosti: {
@@ -17793,9 +17851,12 @@ mayonnaise: {
       { nb: 15, pommedeterre: "3000 g", beurre: "230 g", huile: "75 ml" }
     ],
     etapes: [
-      { icone: "🥔", titre: "Râper", detail: "Râper les pommes de terre (crues ou précuites la veille), bien éponger.", badge: null },
-      { icone: "🍳", titre: "Former", detail: "Disposer en galette dans une poêle beurrée, presser légèrement.", badge: null },
-      { icone: "🔥", titre: "Dorer", detail: "Cuire à feu moyen jusqu'à croûte dorée, retourner et dorer l'autre face.", badge: "⏱ 20 min" }
+      { icone: "🥔", titre: "Râper", detail: "Râper les pommes de terre (crues, ou précuites la veille pour un rösti plus moelleux).", badge: null },
+      { icone: "💧", titre: "Éponger", detail: "Bien presser les pommes de terre râpées dans un linge pour retirer l'eau.", badge: "ASTUCE CHEF : pommes de terre sèches = rösti croustillant" },
+      { icone: "🧈", titre: "Former", detail: "Faire chauffer beurre et huile, étaler les pommes de terre en galette et presser légèrement.", badge: null },
+      { icone: "🔥", titre: "Première face", detail: "Cuire à feu moyen sans y toucher jusqu'à une croûte bien dorée.", badge: "⏱ 10 min" },
+      { icone: "🔄", titre: "Retourner", detail: "Retourner la galette à l'aide d'une assiette et dorer l'autre face.", badge: "⏱ 8 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud, en accompagnement ou avec un œuf au plat.", badge: null }
     ]
   },
   carbonnade: {
@@ -17826,10 +17887,12 @@ mayonnaise: {
       { nb: 15, boeuf: "2630 g", oignon: "10", beurre: "110 g", farine: "75 g", bouillon: "1130 ml", pain: "7.5", moutarde: "75 g", sucre: "75 g" }
     ],
     etapes: [
-      { icone: "🥩", titre: "Saisir", detail: "Faire dorer le bœuf en morceaux, réserver. Faire fondre les oignons.", badge: null },
-      { icone: "🍺", titre: "Déglacer", detail: "Singer de farine, déglacer à la bière brune et au bouillon.", badge: null },
-      { icone: "🍞", titre: "Pain d'épices", detail: "Tartiner des tranches de pain d'épices de moutarde, les déposer dessus avec la cassonade.", badge: null },
-      { icone: "🍲", titre: "Mijoter", detail: "Couvrir et mijoter très longtemps jusqu'à ce que la viande soit fondante.", badge: "⏱ 2h à feu doux" }
+      { icone: "🥩", titre: "Saisir", detail: "Faire dorer le bœuf en gros morceaux dans le beurre, par petites quantités. Réserver.", badge: null },
+      { icone: "🧅", titre: "Oignons", detail: "Faire fondre les oignons émincés dans la cocotte jusqu'à coloration.", badge: null },
+      { icone: "🍺", titre: "Déglacer", detail: "Singer de farine, puis déglacer à la bière brune et au bouillon.", badge: null },
+      { icone: "🍞", titre: "Pain d'épices", detail: "Tartiner des tranches de pain d'épices de moutarde et les poser sur la viande avec la cassonade.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Couvrir et laisser mijoter très longtemps à feu doux : le pain fond et lie la sauce.", badge: "⏱ 2h à feu doux" },
+      { icone: "🍟", titre: "Servir", detail: "Servir avec des frites, comme en Belgique.", badge: null }
     ]
   },
   beefwellington: {
@@ -17860,11 +17923,12 @@ mayonnaise: {
       { nb: 15, boeuf: "2250 g", pateFeuilletee: "4", champignons: "1130 g", jambon: "380 g", oeufs: "4", moutarde: "75 g" }
     ],
     etapes: [
-      { icone: "🔥", titre: "Saisir", detail: "Saisir le filet sur toutes les faces, le badigeonner de moutarde. Refroidir.", badge: null },
-      { icone: "🍄", titre: "Duxelles", detail: "Hacher et faire dessécher les champignons en duxelles.", badge: null },
-      { icone: "🌯", titre: "Envelopper", detail: "Étaler le jambon, la duxelles, y rouler le filet bien serré.", badge: null },
-      { icone: "🥐", titre: "En croûte", detail: "Envelopper de pâte feuilletée, dorer à l'œuf et entailler le dessus.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C pour une croûte dorée et un cœur rosé.", badge: "⏱ 35 min à 200°C" }
+      { icone: "🔥", titre: "Saisir", detail: "Saisir le filet sur toutes les faces à feu vif, puis le badigeonner de moutarde. Laisser refroidir.", badge: null },
+      { icone: "🍄", titre: "Duxelles", detail: "Hacher finement les champignons et les faire dessécher à la poêle jusqu'à évaporation de l'eau.", badge: null },
+      { icone: "🌯", titre: "Envelopper", detail: "Étaler le jambon sur un film, répartir la duxelles, poser le filet et rouler bien serré.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Réfrigérer le rouleau pour qu'il se tienne.", badge: "⏱ 20 min au frais" },
+      { icone: "🥐", titre: "En croûte", detail: "Envelopper de pâte feuilletée, souder, dorer à l'œuf et entailler le dessus.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner bien chaud pour une croûte dorée et un cœur rosé.", badge: "⏱ 35 min à 200°C" }
     ]
   },
   fabada: {
@@ -17895,10 +17959,12 @@ mayonnaise: {
       { nb: 15, haricotsBlancs: "1250 g", chorizo: "500 g", lardons: "380 g", saucisseFumee: "380 g", oignon: "2.5", ail: "5", paprika: "15 g", safran: "0.5 g" }
     ],
     etapes: [
-      { icone: "🫘", titre: "Tremper", detail: "Faire tremper les haricots blancs la veille.", badge: "⏱ une nuit" },
-      { icone: "🥓", titre: "Réunir", detail: "Mettre haricots, chorizo, lard et saucisse dans une marmite, couvrir d'eau.", badge: null },
-      { icone: "🌶️", titre: "Épices", detail: "Ajouter ail, paprika et safran. Porter à frémissement.", badge: null },
-      { icone: "🍲", titre: "Mijoter", detail: "Mijoter doucement jusqu'à ce que les haricots soient crémeux.", badge: "⏱ 1h30 à feu doux" }
+      { icone: "🫘", titre: "Tremper", detail: "Faire tremper les haricots blancs la veille dans un grand volume d'eau.", badge: "⏱ une nuit" },
+      { icone: "🥓", titre: "Réunir", detail: "Mettre haricots égouttés, chorizo, lard et saucisse dans une marmite, couvrir d'eau froide.", badge: null },
+      { icone: "🌶️", titre: "Épices", detail: "Ajouter oignon, ail, paprika et safran, puis porter à frémissement.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Laisser mijoter doucement, en écumant, jusqu'à ce que les haricots soient crémeux.", badge: "⏱ 1h30 à feu doux" },
+      { icone: "💧", titre: "Lier", detail: "Écraser quelques haricots pour épaissir le bouillon, puis laisser reposer.", badge: null },
+      { icone: "🍖", titre: "Servir", detail: "Trancher les viandes et servir bien chaud avec les haricots.", badge: null }
     ]
   },
   parmigiana: {
@@ -17929,10 +17995,12 @@ mayonnaise: {
       { nb: 15, aubergine: "10", tomate: "1880 g", mozzarella: "940 g", parmesan: "380 g", ail: "7.5", basilic: "4", huileolive: "190 ml" }
     ],
     etapes: [
-      { icone: "🍆", titre: "Aubergines", detail: "Trancher et faire dorer les aubergines à l'huile d'olive.", badge: null },
-      { icone: "🍅", titre: "Sauce", detail: "Préparer une sauce tomate à l'ail et au basilic.", badge: "⏱ 15 min" },
-      { icone: "🧀", titre: "Monter", detail: "Alterner aubergines, sauce, mozzarella et parmesan en couches.", badge: null },
-      { icone: "🔥", titre: "Gratiner", detail: "Enfourner jusqu'à ce que le dessus soit gratiné et bouillonnant.", badge: "⏱ 25 min à 190°C" }
+      { icone: "🍆", titre: "Aubergines", detail: "Trancher les aubergines, les faire dégorger au sel, puis les dorer à l'huile d'olive ou au four.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Préparer une sauce tomate à l'ail et au basilic, bien réduite.", badge: "⏱ 15 min" },
+      { icone: "🧀", titre: "Préparer", detail: "Trancher la mozzarella et râper le parmesan.", badge: null },
+      { icone: "🥘", titre: "Monter", detail: "Dans un plat, alterner sauce, aubergines, mozzarella et parmesan en plusieurs couches.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner jusqu'à ce que le dessus soit gratiné et bouillonnant.", badge: "⏱ 25 min à 190°C" },
+      { icone: "🌿", titre: "Reposer", detail: "Laisser reposer 10 min avant de servir.", badge: "ASTUCE CHEF : le repos facilite le découpage" }
     ]
   },
   cacioepepe: {
@@ -17963,9 +18031,12 @@ mayonnaise: {
       { nb: 15, pates: "1500 g", parmesan: "560 g", poivre: "20 g" }
     ],
     etapes: [
-      { icone: "💧", titre: "Cuire", detail: "Cuire les pâtes dans peu d'eau salée (l'eau doit être bien amidonnée).", badge: null },
-      { icone: "🌶️", titre: "Poivre", detail: "Torréfier le poivre concassé dans une poêle.", badge: null },
-      { icone: "🧀", titre: "Émulsionner", detail: "Hors du feu, mélanger pecorino et eau de cuisson en crème, ajouter les pâtes.", badge: "ASTUCE CHEF : jamais sur feu vif, le fromage filerait" }
+      { icone: "💧", titre: "Cuire les pâtes", detail: "Cuire les pâtes dans peu d'eau salée, pour que l'eau soit bien amidonnée.", badge: null },
+      { icone: "🌶️", titre: "Poivre", detail: "Torréfier le poivre concassé à sec dans une poêle pour libérer ses arômes.", badge: null },
+      { icone: "🧀", titre: "La crème", detail: "Mélanger le pecorino râpé avec un peu d'eau de cuisson tiède pour former une crème.", badge: "ASTUCE CHEF : jamais sur feu vif, le fromage filerait" },
+      { icone: "🍝", titre: "Lier", detail: "Ajouter les pâtes égouttées encore tièdes et le poivre, mélanger énergiquement.", badge: null },
+      { icone: "💦", titre: "Émulsionner", detail: "Détendre avec un peu d'eau de cuisson jusqu'à une sauce nappante et soyeuse.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, avec un tour de poivre supplémentaire.", badge: null }
     ]
   },
 };
