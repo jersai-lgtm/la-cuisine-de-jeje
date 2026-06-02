@@ -29,15 +29,6 @@ function estAdmin() {
   // v256.1 : Comparaison tolérante (lowercase + trim) pour éviter les soucis d'espaces/majuscules
   const email = (window.currentUser.email || "").toLowerCase().trim();
   const isAdmin = ADMIN_EMAILS.some(e => e.toLowerCase().trim() === email);
-  // Log de diagnostic — visible dans la console (F12)
-  console.log("👑 [Admin check]", { 
-    email: window.currentUser.email, 
-    emailNorm: email,
-    uid: window.currentUser.uid,
-    adminEmails: ADMIN_EMAILS,
-    adminUids: ADMIN_UIDS,
-    estAdmin: isAdmin 
-  });
   return isAdmin;
 }
 
