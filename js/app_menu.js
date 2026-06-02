@@ -306,7 +306,7 @@ function afficherMenuFestif(menu, personnes) {
           <div style="font-size:32px">${getEmoji(item.recette)}</div>
           <div style="flex:1;min-width:0">
             <div class="plan-repas-label">${item.categorie} ${badge}${btn}</div>
-            <div class="plan-repas-nom" style="font-size:16px">${getNomRecette(item.recette)}</div>
+            <div class="plan-repas-nom" style="font-size:16px">${typeof drapeau === "function" ? drapeau(recettes[item.recette]?.pays, 14) + " " : ""}${getNomRecette(item.recette)}</div>
             <div class="plan-repas-note">${item.note}</div>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(item.recette, "inline") : ""}
             ${motif}
@@ -1581,7 +1581,7 @@ function afficherMenusSemaine(menus, personnes) {
           return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${personnes})">
             <span class="plan-sous-label">${icone} ${type} ${badge}${btn}</span>
             <span style="font-size:22px">${getEmoji(key)}</span>
-            <span class="plan-repas-nom">${getNomRecette(key)}</span>
+            <span class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[key]?.pays, 13) + " " : ""}${getNomRecette(key)}</span>
             <span class="plan-repas-note">${data.note || ""}</span>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(key, "inline") : ""}
             ${motif}
@@ -1634,7 +1634,7 @@ function afficherMenusSemaine(menus, personnes) {
           <div class="plan-repas" style="${sMidi}" onclick="ouvrirRecettePlan('${midi}', ${personnes})">
             <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}</div>
             <div class="plan-repas-emoji">${getEmoji(midi)}</div>
-            <div class="plan-repas-nom">${getNomRecette(midi)}</div>
+            <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[midi]?.pays, 13) + " " : ""}${getNomRecette(midi)}</div>
             <div class="plan-repas-note">${midiNote}</div>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(midi, "inline") : ""}
             ${motifM}
@@ -1642,7 +1642,7 @@ function afficherMenusSemaine(menus, personnes) {
           <div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
             <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}</div>
             <div class="plan-repas-emoji">${getEmoji(soir)}</div>
-            <div class="plan-repas-nom">${getNomRecette(soir)}</div>
+            <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[soir]?.pays, 13) + " " : ""}${getNomRecette(soir)}</div>
             <div class="plan-repas-note">${soirNote}</div>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(soir, "inline") : ""}
             ${motifS}

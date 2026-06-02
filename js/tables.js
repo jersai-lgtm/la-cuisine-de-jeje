@@ -193,7 +193,6 @@ const prixCalories = {
   soupeaoignon:       { base: 4,  baseLabel: "4 personnes",  prixTotal: 3.50,  calTotal: 800,  unite: "personne" },
   dahllentillescorail:          { base: 4,  baseLabel: "4 personnes",  prixTotal: 3.00,  calTotal: 1200, unite: "personne" },
   rizcantonnais:      { base: 4,  baseLabel: "4 personnes",  prixTotal: 3.50,  calTotal: 1200, unite: "personne" },
-  boeufoignons:       { base: 4,  baseLabel: "4 personnes",  prixTotal: 11.00, calTotal: 2200, unite: "personne" },
   soupeharira:    { base: 6,  baseLabel: "6 personnes",  prixTotal: 5.00,  calTotal: 1200, unite: "personne" },
   naan:               { base: 4,  baseLabel: "4 naans",      prixTotal: 1.50,  calTotal: 800,  unite: "naan" },
   verrinetiramisu:    { base: 6,  baseLabel: "6 verrines",   prixTotal: 6.00,  calTotal: 1800, unite: "verrine" },
@@ -1209,7 +1208,7 @@ function choisirRecette(nom, personnesOverride) {
     "moussaka":          "Moussaka",
     "paella":            "Paella",
     "butterchicken":     "Butter Chicken",    "quichelorraine":    "Quiche Lorraine",
-    "soupeaoignon":      "Soupe à l'Oignon",    "rizcantonnais":     "Riz Cantonnais",    "boeufoignons":      "Bœuf aux Oignons",    "naan":              "Naans",
+    "soupeaoignon":      "Soupe à l'Oignon",    "rizcantonnais":     "Riz Cantonnais",    "naan":              "Naans",
     "verrinetiramisu":   "Verrines Tiramisu",
     "churros":           "Churros",
     "potaufeu":          "Pot-au-Feu",
@@ -1568,7 +1567,7 @@ function choisirRecette(nom, personnesOverride) {
   document.getElementById("modal-resultat").innerHTML = `
     <div class="fiche-modal-header">
       <div class="fiche-emoji">${data.emoji}</div>
-      <h2 class="fiche-titre">${nomPropre}</h2>
+      <h2 class="fiche-titre">${typeof drapeau === "function" ? drapeau(data.pays, 22) + " " : ""}${nomPropre}</h2>
       <p class="fiche-desc">${data.description}</p>
     </div>
     ${htmlPrixCalories(nom, personnes)}
