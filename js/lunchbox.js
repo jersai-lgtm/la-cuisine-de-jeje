@@ -171,7 +171,7 @@ function afficherLunchbox(menus, personnes) {
     div.className = "plan-jour";
     div.style.border = "2px solid " + couleur;
     div.style.boxShadow = "0 0 12px " + couleur + "44";
-    div.style.background = "linear-gradient(0deg, " + couleur + "28, " + couleur + "28), #17151c";
+    div.style.background = "linear-gradient(180deg, " + couleur + "33, " + couleur + "0d 55%, #17151c)";
     div.innerHTML =
       '<h3 class="plan-jour-titre" style="color:' + couleur + '">' + jour.jour + '</h3>' +
       '<div class="plan-repas-row">' +
