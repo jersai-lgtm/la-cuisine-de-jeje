@@ -1589,6 +1589,7 @@ select, input[type="number"] {
   position: relative;
 }
 .mini-carte-emoji { font-size: 14px; }
+.mini-carte-entete { display: flex; align-items: center; gap: 5px; }
 .mini-carte-nom {
   font-size: 11px;
   font-weight: 600;
@@ -1925,22 +1926,24 @@ select, input[type="number"] {
   margin-left: 4px;
 }
 .plan-regen-btn {
-  background: rgba(255,255,255,.12);
+  background: linear-gradient(135deg, #ff4d88, #ff8fb3);
   border: none;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
   cursor: pointer;
   vertical-align: middle;
-  margin-left: 4px;
+  margin-left: 6px;
   transition: .2s;
   padding: 0;
-  line-height: 24px;
+  line-height: 30px;
+  box-shadow: 0 2px 8px rgba(255,77,136,.55);
 }
 .plan-regen-btn:hover {
-  background: rgba(255,255,255,.25);
-  transform: rotate(45deg);
+  background: linear-gradient(135deg, #ff2d72, #ff7aa6);
+  transform: rotate(45deg) scale(1.08);
+  box-shadow: 0 3px 12px rgba(255,77,136,.7);
 }
 
 /* ==============================
