@@ -18178,4 +18178,144 @@ mayonnaise: {
     ]
   },
 
+  semla: {
+    cat: "desserts", pays: "suede",
+    dateAjout: "2026-06-03",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧁",
+    description: "La semla suédoise — brioche à la cardamome fourrée de pâte d'amande et de crème fouettée, saupoudrée de sucre glace. La pâtisserie du Mardi gras en Suède.",
+    tableauSemla: [
+      { nb: 1, farine: "50 g", lait: "30 g", beurre: "15 g", sucre: "15 g", oeuf: "0.2", levure: "0.4 c.à.c", cardamome: "0.15 c.à.c", amande: "20 g", creme: "40 g" },
+      { nb: 2, farine: "100 g", lait: "60 g", beurre: "30 g", sucre: "30 g", oeuf: "0.5", levure: "0.8 c.à.c", cardamome: "0.3 c.à.c", amande: "40 g", creme: "80 g" },
+      { nb: 3, farine: "150 g", lait: "90 g", beurre: "45 g", sucre: "45 g", oeuf: "0.8", levure: "1.2 c.à.c", cardamome: "0.45 c.à.c", amande: "60 g", creme: "120 g" },
+      { nb: 4, farine: "200 g", lait: "120 g", beurre: "60 g", sucre: "60 g", oeuf: "1", levure: "1.6 c.à.c", cardamome: "0.6 c.à.c", amande: "80 g", creme: "160 g" },
+      { nb: 5, farine: "250 g", lait: "150 g", beurre: "75 g", sucre: "75 g", oeuf: "1.2", levure: "2 c.à.c", cardamome: "0.75 c.à.c", amande: "100 g", creme: "200 g" },
+      { nb: 6, farine: "300 g", lait: "180 g", beurre: "90 g", sucre: "90 g", oeuf: "1.5", levure: "2.4 c.à.c", cardamome: "0.9 c.à.c", amande: "120 g", creme: "240 g" },
+      { nb: 7, farine: "350 g", lait: "210 g", beurre: "105 g", sucre: "105 g", oeuf: "1.8", levure: "2.8 c.à.c", cardamome: "1.05 c.à.c", amande: "140 g", creme: "280 g" },
+      { nb: 8, farine: "400 g", lait: "240 g", beurre: "120 g", sucre: "120 g", oeuf: "2", levure: "3.2 c.à.c", cardamome: "1.2 c.à.c", amande: "160 g", creme: "320 g" },
+      { nb: 9, farine: "450 g", lait: "270 g", beurre: "135 g", sucre: "135 g", oeuf: "2.2", levure: "3.6 c.à.c", cardamome: "1.35 c.à.c", amande: "180 g", creme: "360 g" },
+      { nb: 10, farine: "500 g", lait: "300 g", beurre: "150 g", sucre: "150 g", oeuf: "2.5", levure: "4 c.à.c", cardamome: "1.5 c.à.c", amande: "200 g", creme: "400 g" },
+      { nb: 11, farine: "550 g", lait: "330 g", beurre: "165 g", sucre: "165 g", oeuf: "2.8", levure: "4.4 c.à.c", cardamome: "1.65 c.à.c", amande: "220 g", creme: "440 g" },
+      { nb: 12, farine: "600 g", lait: "360 g", beurre: "180 g", sucre: "180 g", oeuf: "3", levure: "4.8 c.à.c", cardamome: "1.8 c.à.c", amande: "240 g", creme: "480 g" },
+      { nb: 13, farine: "650 g", lait: "390 g", beurre: "195 g", sucre: "195 g", oeuf: "3.2", levure: "5.2 c.à.c", cardamome: "1.95 c.à.c", amande: "260 g", creme: "520 g" },
+      { nb: 14, farine: "700 g", lait: "420 g", beurre: "210 g", sucre: "210 g", oeuf: "3.5", levure: "5.6 c.à.c", cardamome: "2.1 c.à.c", amande: "280 g", creme: "560 g" },
+      { nb: 15, farine: "750 g", lait: "450 g", beurre: "225 g", sucre: "225 g", oeuf: "3.8", levure: "6 c.à.c", cardamome: "2.25 c.à.c", amande: "300 g", creme: "600 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pétrir la pâte", detail: "Mélanger farine, lait tiède, levure, sucre, beurre mou, œuf et cardamome moulue. Pétrir 10 min jusqu'à une pâte souple. ASTUCE CHEF : la cardamome fraîchement moulue change tout.", badge: "⏱ 10 min" },
+      { icone: "⏲️", titre: "Laisser lever", detail: "Couvrir et laisser pousser au chaud jusqu'à ce que la pâte double de volume.", badge: "⏱ 1h" },
+      { icone: "🔥", titre: "Façonner et cuire", detail: "Former des boules régulières, les dorer et enfourner à 200°C jusqu'à belle coloration.", badge: "⏱ 12 min" },
+      { icone: "🥄", titre: "Garnir", detail: "Découper un chapeau, creuser la mie. Mélanger la mie avec la pâte d'amande, garnir, puis recouvrir de crème fouettée.", badge: null },
+      { icone: "❄️", titre: "Finir", detail: "Reposer le chapeau, saupoudrer de sucre glace. SERVIR frais avec un café — la tradition du « fika » suédois.", badge: null }
+    ]
+  },
+
+  manti: {
+    cat: "plats", pays: "turquie",
+    dateAjout: "2026-06-03",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥟",
+    description: "Les manti — petits raviolis turcs farcis à la viande, servis sur un yaourt à l'ail et nappés de beurre au paprika. Un plat de patience, et de fête.",
+    tableauManti: [
+      { nb: 1, farine: "60 g", oeuf: "0.2", viandeHachee: "60 g", oignon: "0.2", ail: "0.5", yaourt: "60 g", beurre: "10 g", paprika: "0.3 c.à.c" },
+      { nb: 2, farine: "120 g", oeuf: "0.5", viandeHachee: "120 g", oignon: "0.5", ail: "1", yaourt: "120 g", beurre: "20 g", paprika: "0.6 c.à.c" },
+      { nb: 3, farine: "180 g", oeuf: "0.8", viandeHachee: "180 g", oignon: "0.8", ail: "1.5", yaourt: "180 g", beurre: "30 g", paprika: "0.9 c.à.c" },
+      { nb: 4, farine: "240 g", oeuf: "1", viandeHachee: "240 g", oignon: "1", ail: "2", yaourt: "240 g", beurre: "40 g", paprika: "1.2 c.à.c" },
+      { nb: 5, farine: "300 g", oeuf: "1.2", viandeHachee: "300 g", oignon: "1.2", ail: "2.5", yaourt: "300 g", beurre: "50 g", paprika: "1.5 c.à.c" },
+      { nb: 6, farine: "360 g", oeuf: "1.5", viandeHachee: "360 g", oignon: "1.5", ail: "3", yaourt: "360 g", beurre: "60 g", paprika: "1.8 c.à.c" },
+      { nb: 7, farine: "420 g", oeuf: "1.8", viandeHachee: "420 g", oignon: "1.8", ail: "3.5", yaourt: "420 g", beurre: "70 g", paprika: "2.1 c.à.c" },
+      { nb: 8, farine: "480 g", oeuf: "2", viandeHachee: "480 g", oignon: "2", ail: "4", yaourt: "480 g", beurre: "80 g", paprika: "2.4 c.à.c" },
+      { nb: 9, farine: "540 g", oeuf: "2.2", viandeHachee: "540 g", oignon: "2.2", ail: "4.5", yaourt: "540 g", beurre: "90 g", paprika: "2.7 c.à.c" },
+      { nb: 10, farine: "600 g", oeuf: "2.5", viandeHachee: "600 g", oignon: "2.5", ail: "5", yaourt: "600 g", beurre: "100 g", paprika: "3 c.à.c" },
+      { nb: 11, farine: "660 g", oeuf: "2.8", viandeHachee: "660 g", oignon: "2.8", ail: "5.5", yaourt: "660 g", beurre: "110 g", paprika: "3.3 c.à.c" },
+      { nb: 12, farine: "720 g", oeuf: "3", viandeHachee: "720 g", oignon: "3", ail: "6", yaourt: "720 g", beurre: "120 g", paprika: "3.6 c.à.c" },
+      { nb: 13, farine: "780 g", oeuf: "3.2", viandeHachee: "780 g", oignon: "3.2", ail: "6.5", yaourt: "780 g", beurre: "130 g", paprika: "3.9 c.à.c" },
+      { nb: 14, farine: "840 g", oeuf: "3.5", viandeHachee: "840 g", oignon: "3.5", ail: "7", yaourt: "840 g", beurre: "140 g", paprika: "4.2 c.à.c" },
+      { nb: 15, farine: "900 g", oeuf: "3.8", viandeHachee: "900 g", oignon: "3.8", ail: "7.5", yaourt: "900 g", beurre: "150 g", paprika: "4.5 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Faire la pâte", detail: "Mélanger farine, œuf, une pincée de sel et un peu d'eau. Pétrir jusqu'à une pâte lisse, laisser reposer 30 min.", badge: "⏱ 30 min" },
+      { icone: "🥩", titre: "Préparer la farce", detail: "Mélanger la viande hachée avec l'oignon très finement haché, sel et poivre.", badge: null },
+      { icone: "🥟", titre: "Façonner les raviolis", detail: "Étaler finement la pâte, découper des petits carrés, déposer une noisette de farce et pincer en aumônière. ASTUCE CHEF : plus ils sont petits, plus c'est authentique (et long !).", badge: "⏱ 30 min" },
+      { icone: "💧", titre: "Cuire", detail: "Pocher les manti dans l'eau frémissante salée jusqu'à ce qu'ils remontent.", badge: "⏱ 10 min" },
+      { icone: "🧄", titre: "Dresser", detail: "Napper de yaourt battu à l'ail, arroser de beurre fondu au paprika. Parsemer de menthe séchée. SERVIR aussitôt.", badge: null }
+    ]
+  },
+
+  menemen: {
+    cat: "brunch", pays: "turquie",
+    dateAjout: "2026-06-03",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    description: "Le menemen — œufs brouillés à la turque, mijotés avec tomates, poivrons et oignon. Le petit-déjeuner salé incontournable de Turquie.",
+    tableauMenemen: [
+      { nb: 1, oeuf: "1.5", tomates: "100 g", poivron: "0.5", oignon: "0.2", huile: "1 c.à.s", piment: "0.1 c.à.c" },
+      { nb: 2, oeuf: "3", tomates: "200 g", poivron: "1", oignon: "0.5", huile: "2 c.à.s", piment: "0.2 c.à.c" },
+      { nb: 3, oeuf: "4.5", tomates: "300 g", poivron: "1.5", oignon: "0.8", huile: "3 c.à.s", piment: "0.3 c.à.c" },
+      { nb: 4, oeuf: "6", tomates: "400 g", poivron: "2", oignon: "1", huile: "4 c.à.s", piment: "0.4 c.à.c" },
+      { nb: 5, oeuf: "7.5", tomates: "500 g", poivron: "2.5", oignon: "1.2", huile: "5 c.à.s", piment: "0.5 c.à.c" },
+      { nb: 6, oeuf: "9", tomates: "600 g", poivron: "3", oignon: "1.5", huile: "6 c.à.s", piment: "0.6 c.à.c" },
+      { nb: 7, oeuf: "10.5", tomates: "700 g", poivron: "3.5", oignon: "1.8", huile: "7 c.à.s", piment: "0.7 c.à.c" },
+      { nb: 8, oeuf: "12", tomates: "800 g", poivron: "4", oignon: "2", huile: "8 c.à.s", piment: "0.8 c.à.c" },
+      { nb: 9, oeuf: "13.5", tomates: "900 g", poivron: "4.5", oignon: "2.2", huile: "9 c.à.s", piment: "0.9 c.à.c" },
+      { nb: 10, oeuf: "15", tomates: "1.0 kg", poivron: "5", oignon: "2.5", huile: "10 c.à.s", piment: "1 c.à.c" },
+      { nb: 11, oeuf: "16.5", tomates: "1.1 kg", poivron: "5.5", oignon: "2.8", huile: "11 c.à.s", piment: "1.1 c.à.c" },
+      { nb: 12, oeuf: "18", tomates: "1.2 kg", poivron: "6", oignon: "3", huile: "12 c.à.s", piment: "1.2 c.à.c" },
+      { nb: 13, oeuf: "19.5", tomates: "1.3 kg", poivron: "6.5", oignon: "3.2", huile: "13 c.à.s", piment: "1.3 c.à.c" },
+      { nb: 14, oeuf: "21", tomates: "1.4 kg", poivron: "7", oignon: "3.5", huile: "14 c.à.s", piment: "1.4 c.à.c" },
+      { nb: 15, oeuf: "22.5", tomates: "1.5 kg", poivron: "7.5", oignon: "3.8", huile: "15 c.à.s", piment: "1.5 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Faire revenir", detail: "Émincer oignon et poivron, les faire fondre doucement dans l'huile d'olive jusqu'à tendres.", badge: "⏱ 6 min" },
+      { icone: "🍅", titre: "Ajouter la tomate", detail: "Ajouter les tomates concassées et le piment. Laisser compoter à feu doux.", badge: "⏱ 8 min" },
+      { icone: "🥚", titre: "Ajouter les œufs", detail: "Casser les œufs directement dans la poêle. ASTUCE CHEF : mélange peu et à feu doux — les œufs doivent rester baveux, jamais secs.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer. Couper le feu dès que les œufs sont juste pris.", badge: null },
+      { icone: "🍞", titre: "Servir", detail: "Servir brûlant dans la poêle, avec du pain frais pour saucer.", badge: null }
+    ]
+  },
+
+  miegoreng: {
+    cat: "plats", pays: "indonesie",
+    dateAjout: "2026-06-03",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍜",
+    description: "Le mie goreng — nouilles sautées indonésiennes au poulet, légumes et sauce soja sucrée, le tout couronné d'un œuf. Le plat de rue par excellence.",
+    tableauMieGoreng: [
+      { nb: 1, nouilles: "80 g", poulet: "60 g", oeuf: "0.5", chou: "40 g", carotte: "30 g", saucesoja: "1 c.à.s", ail: "0.5", huile: "1 c.à.s" },
+      { nb: 2, nouilles: "160 g", poulet: "120 g", oeuf: "1", chou: "80 g", carotte: "60 g", saucesoja: "2 c.à.s", ail: "1", huile: "2 c.à.s" },
+      { nb: 3, nouilles: "240 g", poulet: "180 g", oeuf: "1.5", chou: "120 g", carotte: "90 g", saucesoja: "3 c.à.s", ail: "1.5", huile: "3 c.à.s" },
+      { nb: 4, nouilles: "320 g", poulet: "240 g", oeuf: "2", chou: "160 g", carotte: "120 g", saucesoja: "4 c.à.s", ail: "2", huile: "4 c.à.s" },
+      { nb: 5, nouilles: "400 g", poulet: "300 g", oeuf: "2.5", chou: "200 g", carotte: "150 g", saucesoja: "5 c.à.s", ail: "2.5", huile: "5 c.à.s" },
+      { nb: 6, nouilles: "480 g", poulet: "360 g", oeuf: "3", chou: "240 g", carotte: "180 g", saucesoja: "6 c.à.s", ail: "3", huile: "6 c.à.s" },
+      { nb: 7, nouilles: "560 g", poulet: "420 g", oeuf: "3.5", chou: "280 g", carotte: "210 g", saucesoja: "7 c.à.s", ail: "3.5", huile: "7 c.à.s" },
+      { nb: 8, nouilles: "640 g", poulet: "480 g", oeuf: "4", chou: "320 g", carotte: "240 g", saucesoja: "8 c.à.s", ail: "4", huile: "8 c.à.s" },
+      { nb: 9, nouilles: "720 g", poulet: "540 g", oeuf: "4.5", chou: "360 g", carotte: "270 g", saucesoja: "9 c.à.s", ail: "4.5", huile: "9 c.à.s" },
+      { nb: 10, nouilles: "800 g", poulet: "600 g", oeuf: "5", chou: "400 g", carotte: "300 g", saucesoja: "10 c.à.s", ail: "5", huile: "10 c.à.s" },
+      { nb: 11, nouilles: "880 g", poulet: "660 g", oeuf: "5.5", chou: "440 g", carotte: "330 g", saucesoja: "11 c.à.s", ail: "5.5", huile: "11 c.à.s" },
+      { nb: 12, nouilles: "960 g", poulet: "720 g", oeuf: "6", chou: "480 g", carotte: "360 g", saucesoja: "12 c.à.s", ail: "6", huile: "12 c.à.s" },
+      { nb: 13, nouilles: "1.04 kg", poulet: "780 g", oeuf: "6.5", chou: "520 g", carotte: "390 g", saucesoja: "13 c.à.s", ail: "6.5", huile: "13 c.à.s" },
+      { nb: 14, nouilles: "1.12 kg", poulet: "840 g", oeuf: "7", chou: "560 g", carotte: "420 g", saucesoja: "14 c.à.s", ail: "7", huile: "14 c.à.s" },
+      { nb: 15, nouilles: "1.2 kg", poulet: "900 g", oeuf: "7.5", chou: "600 g", carotte: "450 g", saucesoja: "15 c.à.s", ail: "7.5", huile: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍜", titre: "Cuire les nouilles", detail: "Cuire les nouilles selon le paquet, les égoutter et réserver.", badge: "⏱ 5 min" },
+      { icone: "🐔", titre: "Saisir le poulet", detail: "Couper le poulet en lanières, le faire sauter à feu vif dans l'huile avec l'ail. ASTUCE CHEF : feu très fort façon wok, on saute, on ne fait pas bouillir.", badge: "⏱ 5 min" },
+      { icone: "🥕", titre: "Ajouter les légumes", detail: "Ajouter chou émincé et carotte râpée. Sauter 3 min en gardant du croquant.", badge: null },
+      { icone: "🍳", titre: "Nouilles et sauce", detail: "Ajouter les nouilles et la sauce soja sucrée. Pousser sur un côté, brouiller l'œuf, puis tout mélanger.", badge: "⏱ 4 min" },
+      { icone: "🌿", titre: "Servir", detail: "Servir aussitôt, éventuellement avec oignons frits et un trait de citron vert.", badge: null }
+    ]
+  },
+
 };
