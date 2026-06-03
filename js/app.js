@@ -1152,8 +1152,7 @@ function miniCarte(key, raisonHTML) {
     ${btnRegen}
     <div class="mini-carte-info">
       ${badgeNote}
-      <span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>
-      ${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}
+      <span class="mini-carte-entete"><span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}</span>
       <span class="mini-carte-nom">${nom}</span>
       <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
       ${raisonHTML || ""}
@@ -1549,7 +1548,7 @@ const INGREDIENTS_LABELS = {
   gSucre: "🍬 Sucre", sucreCreme: "🍬 Sucre", sucreCaramel: "🍬 Sucre",
   sucreMeringue: "🍬 Sucre", sucreIles: "🍬 Sucre de coco",
   miel: "🍯 Miel", sirop: "🍬 Sirop de sucre", selRebord: "🧂 Sucre/sel (rebord)",
-  siropderable: "🍁 Sirop d'érable", noisettes: "🌰 Noisettes",
+  siropderable: "🍁 Sirop d'érable", noisettes: "🌰 Noisettes", plantain: "🍌 Banane plantain",
   levure: "🟨 Levure fraîche", ferment: "🟨 Ferments lactiques",
   poudreAmande: "🌰 Poudre d'amande", glace: "🍦 Glace vanille",
   // == Viandes ==
