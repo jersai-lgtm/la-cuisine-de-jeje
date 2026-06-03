@@ -17859,42 +17859,6 @@ mayonnaise: {
       { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud, en accompagnement ou avec un œuf au plat.", badge: null }
     ]
   },
-  carbonnade: {
-    cat: "plats", pays: "belgique",
-    dateAjout: "2026-06-02",
-    base: 4,
-    temps: "2h30",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🍺",
-    nom: "Carbonnade Flamande",
-    description: "Le ragoût belge de bœuf mijoté à la bière brune, adouci au pain d'épices moutardé et à la cassonade. Profond et réconfortant. 🇧🇪",
-    ingredients: {},
-    tableauCarbonnade: [
-      { nb: 1, boeuf: "180 g", oignon: "1", beurre: "7.5 g", farine: "5 g", bouillon: "75 ml", pain: "0.5", moutarde: "5 g", sucre: "5 g" },
-      { nb: 2, boeuf: "350 g", oignon: "1.5", beurre: "15 g", farine: "10 g", bouillon: "150 ml", pain: "1", moutarde: "10 g", sucre: "10 g" },
-      { nb: 3, boeuf: "530 g", oignon: "2.5", beurre: "25 g", farine: "15 g", bouillon: "230 ml", pain: "1.5", moutarde: "15 g", sucre: "15 g" },
-      { nb: 4, boeuf: "700 g", oignon: "3", beurre: "30 g", farine: "20 g", bouillon: "300 ml", pain: "2", moutarde: "20 g", sucre: "20 g" },
-      { nb: 5, boeuf: "880 g", oignon: "4", beurre: "40 g", farine: "25 g", bouillon: "380 ml", pain: "2.5", moutarde: "25 g", sucre: "25 g" },
-      { nb: 6, boeuf: "1050 g", oignon: "4.5", beurre: "45 g", farine: "30 g", bouillon: "450 ml", pain: "3", moutarde: "30 g", sucre: "30 g" },
-      { nb: 7, boeuf: "1230 g", oignon: "5.5", beurre: "55 g", farine: "35 g", bouillon: "530 ml", pain: "3.5", moutarde: "35 g", sucre: "35 g" },
-      { nb: 8, boeuf: "1400 g", oignon: "6", beurre: "60 g", farine: "40 g", bouillon: "600 ml", pain: "4", moutarde: "40 g", sucre: "40 g" },
-      { nb: 9, boeuf: "1580 g", oignon: "7", beurre: "70 g", farine: "45 g", bouillon: "680 ml", pain: "4.5", moutarde: "45 g", sucre: "45 g" },
-      { nb: 10, boeuf: "1750 g", oignon: "7.5", beurre: "75 g", farine: "50 g", bouillon: "750 ml", pain: "5", moutarde: "50 g", sucre: "50 g" },
-      { nb: 11, boeuf: "1930 g", oignon: "8.5", beurre: "85 g", farine: "55 g", bouillon: "830 ml", pain: "5.5", moutarde: "55 g", sucre: "55 g" },
-      { nb: 12, boeuf: "2100 g", oignon: "9", beurre: "90 g", farine: "60 g", bouillon: "900 ml", pain: "6", moutarde: "60 g", sucre: "60 g" },
-      { nb: 13, boeuf: "2280 g", oignon: "10", beurre: "100 g", farine: "65 g", bouillon: "980 ml", pain: "6.5", moutarde: "65 g", sucre: "65 g" },
-      { nb: 14, boeuf: "2450 g", oignon: "10", beurre: "110 g", farine: "70 g", bouillon: "1050 ml", pain: "7", moutarde: "70 g", sucre: "70 g" },
-      { nb: 15, boeuf: "2630 g", oignon: "10", beurre: "110 g", farine: "75 g", bouillon: "1130 ml", pain: "7.5", moutarde: "75 g", sucre: "75 g" }
-    ],
-    etapes: [
-      { icone: "🥩", titre: "Saisir", detail: "Faire dorer le bœuf en gros morceaux dans le beurre, par petites quantités. Réserver.", badge: null },
-      { icone: "🧅", titre: "Oignons", detail: "Faire fondre les oignons émincés dans la cocotte jusqu'à coloration.", badge: null },
-      { icone: "🍺", titre: "Déglacer", detail: "Singer de farine, puis déglacer à la bière brune et au bouillon.", badge: null },
-      { icone: "🍞", titre: "Pain d'épices", detail: "Tartiner des tranches de pain d'épices de moutarde et les poser sur la viande avec la cassonade.", badge: null },
-      { icone: "🍲", titre: "Mijoter", detail: "Couvrir et laisser mijoter très longtemps à feu doux : le pain fond et lie la sauce.", badge: "⏱ 2h à feu doux" },
-      { icone: "🍟", titre: "Servir", detail: "Servir avec des frites, comme en Belgique.", badge: null }
-    ]
-  },
   beefwellington: {
     cat: "plats", pays: "angleterre",
     dateAjout: "2026-06-02",
