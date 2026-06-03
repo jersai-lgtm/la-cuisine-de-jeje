@@ -1,10 +1,22 @@
-const CACHE_NAME = "cuisine-jeje-v1.0.3";
+const CACHE_NAME = "cuisine-jeje-v1.0.4";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
   "/la-cuisine-de-jeje/style.css",
   "/la-cuisine-de-jeje/js/allergenes.js",
   "/la-cuisine-de-jeje/js/recettes.js",
+  "/la-cuisine-de-jeje/js/recettes_plats.js",
+  "/la-cuisine-de-jeje/js/recettes_desserts.js",
+  "/la-cuisine-de-jeje/js/recettes_soupes.js",
+  "/la-cuisine-de-jeje/js/recettes_brunch.js",
+  "/la-cuisine-de-jeje/js/recettes_encas.js",
+  "/la-cuisine-de-jeje/js/recettes_aperitifs.js",
+  "/la-cuisine-de-jeje/js/recettes_healthy.js",
+  "/la-cuisine-de-jeje/js/recettes_entrees.js",
+  "/la-cuisine-de-jeje/js/recettes_sauces.js",
+  "/la-cuisine-de-jeje/js/recettes_boulangerie.js",
+  "/la-cuisine-de-jeje/js/recettes_salades.js",
+  "/la-cuisine-de-jeje/js/recettes_pizzas.js",
   "/la-cuisine-de-jeje/js/ingredients_prix.js",
   "/la-cuisine-de-jeje/js/tables.js",
   "/la-cuisine-de-jeje/js/drapeaux.js",
