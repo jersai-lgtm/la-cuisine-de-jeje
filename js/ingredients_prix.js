@@ -309,6 +309,7 @@ const INGREDIENTS_PRIX = {
   thonHuile:      { prixKg: 14.0, calPer100g: 198,  lipSat: 1.5,  sucre: 0,    sel: 0.5,  fibres: 0,   prot: 28,   flv: 0 },
   crevettes:      { prixKg: 18.0, calPer100g: 99,   lipSat: 0.4,  sucre: 0,    sel: 0.9,  fibres: 0,   prot: 24,   flv: 0 },
   crevette:       { prixKg: 18.0, calPer100g: 99,   lipSat: 0.4,  sucre: 0,    sel: 0.9,  fibres: 0,   prot: 24,   flv: 0 },
+  crabe:          { prixKg: 24.0, calPer100g: 83,   lipSat: 0.1,  sucre: 0,    sel: 0.8,  fibres: 0,   prot: 18,   flv: 0 },
   champignon:     { prixKg: 6.00,  calPer100g: 22,   lipSat: 0,    sucre: 1,    sel: 0,    fibres: 2,   prot: 3.1,  flv: 100 },
   harissa:        { prixKg: 12.0,  calPer100g: 70,   lipSat: 0.5,  sucre: 3,    sel: 3,    fibres: 3,   prot: 2,    flv: 80 },
   cornichon:      { prixKg: 6.00,  calPer100g: 14,   lipSat: 0,    sucre: 1.5,  sel: 2,    fibres: 1.2, prot: 0.4,  flv: 100 },

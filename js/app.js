@@ -1548,7 +1548,7 @@ const INGREDIENTS_LABELS = {
   gSucre: "🍬 Sucre", sucreCreme: "🍬 Sucre", sucreCaramel: "🍬 Sucre",
   sucreMeringue: "🍬 Sucre", sucreIles: "🍬 Sucre de coco",
   miel: "🍯 Miel", sirop: "🍬 Sirop de sucre", selRebord: "🧂 Sucre/sel (rebord)",
-  siropderable: "🍁 Sirop d'érable", noisettes: "🌰 Noisettes", plantain: "🍌 Banane plantain",
+  siropderable: "🍁 Sirop d'érable", noisettes: "🌰 Noisettes", plantain: "🍌 Banane plantain", crabe: "🦀 Crabe", cornichon: "🥒 Cornichon",
   levure: "🟨 Levure fraîche", ferment: "🟨 Ferments lactiques",
   poudreAmande: "🌰 Poudre d'amande", glace: "🍦 Glace vanille",
   // == Viandes ==
