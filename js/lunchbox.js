@@ -101,8 +101,9 @@ function genererLunchbox() {
   }
   const choix = lbChoisir(pool, jours.length);
   const semaine = jours.map((j, i) => ({ jour: j, midi: { recette: choix[i % choix.length] } }));
-  const menus = { semaine };
-  window._derniersMenus = menus;     // réutilise "Ajouter aux courses" (lit semaine[].midi)
+  const menus = { semaine, mode: "lunchbox", personnes: personnes };
+  window._derniersMenus = menus;       // réutilise "Ajouter aux courses" (lit semaine[].midi)
+  window._dernierMenuGenere = menus;   // pour le "dernier menu généré" de l'accueil
   window._lunchboxActif = true;
   afficherLunchbox(menus, personnes);
   if (typeof sauvegarderMenus === "function") {
@@ -174,7 +175,7 @@ function afficherLunchbox(menus, personnes) {
     div.style.background = "linear-gradient(180deg, " + couleur + "33, " + couleur + "0d 55%, #17151c)";
     div.innerHTML =
       '<h3 class="plan-jour-titre" style="color:' + couleur + '">' + jour.jour + '</h3>' +
-      '<div class="plan-repas-row">' +
+      '<div class="plan-repas-row" style="grid-template-columns:1fr">' +
         '<div class="plan-repas" onclick="ouvrirRecettePlan(\'' + key + '\', ' + personnes + ')">' +
           '<div class="plan-repas-label">🥡 Lunch <button class="plan-regen-btn" onclick="event.stopPropagation();regenLunchbox(\'' + jour.jour + '\')" title="Remplacer ce plat">🔄</button></div>' +
           '<div class="plan-repas-emoji">' + emoji + '</div>' +

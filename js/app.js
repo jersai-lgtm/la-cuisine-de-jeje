@@ -377,6 +377,36 @@ function chargerAccueilMenus() {
     return;
   }
 
+  // (lunch box) — 1 plat (midi) par jour, sans soir
+  if (dernier?.menu?.mode === "lunchbox") {
+    if (semaine.length === 0) { row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`; return; }
+    row.innerHTML = semaine.map(j => {
+      const cJour = COULEURS_JOURS_ACC[j.jour] || "#888";
+      const key = j.midi?.recette || j.midi || "";
+      const nom = getNomRecette(key) || key || "—";
+      const emoji = key ? (getEmoji(key) || "🍽️") : "🍽️";
+      const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
+      const lvl = niv?.niveau; const raison = niv?.raison || "";
+      const tip = lvl === "bebe" ? `${raison} — déconseillé bébé` : lvl === "enfant" ? `${raison} — déconseillé enfant` : "";
+      const style = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.08);padding-left:6px"
+                  : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.06);padding-left:6px" : "";
+      const mini  = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🍼</span>`
+                  : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px;font-size:11px">🧒</span>` : "";
+      return `
+      <div class="accueil-menu-card" style="border-left:3px solid ${cJour};background:linear-gradient(180deg, ${cJour}33, ${cJour}0d 55%, #17151c)">
+        <div class="accueil-menu-day" style="color:${cJour}">${j.jour}</div>
+        <div style="font-size:9px;color:#ff8fb3;font-weight:700;margin-bottom:4px">🥡 Lunch box</div>
+        <div class="accueil-menu-item" style="${style};cursor:pointer" title="${tip}" ${key ? `onclick="ouvrirRecettePlan('${key}', ${persMenu})"` : ""}>
+          <span>${emoji}</span>
+          <div>
+            <div class="menu-item-nom">${nom}${mini}${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(key, "inline") : ""}</div>
+          </div>
+        </div>
+      </div>`;
+    }).join("");
+    return;
+  }
+
   // (menu semaine) — si vide après avoir écarté le thématique
   if (semaine.length === 0) {
     row.innerHTML = `<div class="accueil-empty">Aucun menu récent</div>`;
