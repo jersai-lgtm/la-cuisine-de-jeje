@@ -18056,7 +18056,7 @@ mayonnaise: {
       { nb: 7, porc: "700 g", boeuf: "350 g", oignon: "1.8", patate: "420 g", ail: "3.5", cannelle: "1.05 c.à.c", patebrisee: "3.5" },
       { nb: 8, porc: "800 g", boeuf: "400 g", oignon: "2", patate: "480 g", ail: "4", cannelle: "1.2 c.à.c", patebrisee: "4" },
       { nb: 9, porc: "900 g", boeuf: "450 g", oignon: "2.2", patate: "540 g", ail: "4.5", cannelle: "1.35 c.à.c", patebrisee: "4.5" },
-      { nb: 10, porc: "1 kg", boeuf: "500 g", oignon: "2.5", patate: "600 g", ail: "5", cannelle: "1.5 c.à.c", patebrisee: "5" },
+      { nb: 10, porc: "1.0 kg", boeuf: "500 g", oignon: "2.5", patate: "600 g", ail: "5", cannelle: "1.5 c.à.c", patebrisee: "5" },
       { nb: 11, porc: "1.1 kg", boeuf: "550 g", oignon: "2.8", patate: "660 g", ail: "5.5", cannelle: "1.65 c.à.c", patebrisee: "5.5" },
       { nb: 12, porc: "1.2 kg", boeuf: "600 g", oignon: "3", patate: "720 g", ail: "6", cannelle: "1.8 c.à.c", patebrisee: "6" },
       { nb: 13, porc: "1.3 kg", boeuf: "650 g", oignon: "3.2", patate: "780 g", ail: "6.5", cannelle: "1.95 c.à.c", patebrisee: "6.5" },
@@ -18065,14 +18065,15 @@ mayonnaise: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Cuire la pomme de terre", detail: "Éplucher la pomme de terre, la couper en cubes et la cuire à l'eau bouillante salée 15 min. Égoutter et écraser grossièrement. ASTUCE CHEF : garde un peu d'eau de cuisson pour lier la farce si besoin.", badge: "⏱ 15 min" },
-      { icone: "🧅", titre: "Faire revenir", detail: "Émincer l'oignon et l'ail, les faire suer dans un peu de beurre jusqu'à translucides.", badge: null },
-      { icone: "🥩", titre: "Cuire la viande", detail: "Ajouter le porc et le bœuf hachés. Cuire à feu moyen en émiettant. Assaisonner avec cannelle, une pointe de clou de girofle moulu, sel et poivre.", badge: "⏱ 12 min" },
-      { icone: "🥣", titre: "Lier la farce", detail: "Mélanger la viande avec la purée de pomme de terre. La farce doit être moelleuse, pas sèche.", badge: null },
-      { icone: "🥧", titre: "Monter et cuire", detail: "Garnir une pâte brisée, couvrir d'une seconde pâte, souder les bords et dorer. Enfourner à 200°C. À SERVIR chaud avec un ketchup maison ou une salade verte.", badge: "⏱ 35 min" }
+      { icone: "🥔", titre: "Cuire la pomme de terre", detail: "Éplucher et couper la pomme de terre en cubes, cuire à l'eau bouillante salée puis écraser grossièrement.", badge: "⏱ 15 min" },
+      { icone: "🧅", titre: "Faire suer les aromates", detail: "Émincer oignon et ail, les faire fondre dans un peu de beurre jusqu'à translucides.", badge: "⏱ 5 min" },
+      { icone: "🥩", titre: "Cuire la viande", detail: "Ajouter porc et bœuf hachés, cuire en émiettant à feu moyen. Assaisonner avec cannelle, une pointe de clou de girofle, sel et poivre.", badge: "⏱ 12 min" },
+      { icone: "💧", titre: "Mijoter", detail: "Mouiller avec un peu de bouillon et laisser réduire à sec. ASTUCE CHEF : la farce doit être parfumée mais pas liquide, sinon la pâte détrempe.", badge: "⏱ 10 min" },
+      { icone: "🥣", titre: "Lier la farce", detail: "Hors du feu, mélanger la viande avec la purée de pomme de terre pour une farce moelleuse.", badge: null },
+      { icone: "🥧", titre: "Monter la tourte", detail: "Foncer un moule avec une pâte brisée, garnir, couvrir d'une seconde pâte, souder les bords et dorer à l'œuf.", badge: null },
+      { icone: "🔥", titre: "Cuire au four", detail: "Enfourner à 200°C jusqu'à ce que la croûte soit bien dorée. Servir chaud avec une salade verte.", badge: "⏱ 35 min" }
     ]
   },
-
   poudingchomeur: {
     cat: "desserts", pays: "canada",
     dateAjout: "2026-06-03",
@@ -18100,14 +18101,15 @@ mayonnaise: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧈", titre: "Préparer la pâte", detail: "Crémer le beurre mou avec le sucre. Ajouter l'œuf, puis la farine et la levure en alternant avec le lait. Verser dans un plat beurré.", badge: "⏱ 10 min" },
-      { icone: "🍁", titre: "Faire le sirop", detail: "Dans une casserole, chauffer le sirop d'érable avec la crème jusqu'à frémissement. ASTUCE CHEF : ne fais pas bouillir trop fort, le sirop ne doit pas réduire.", badge: "⏱ 5 min" },
-      { icone: "🫗", titre: "Napper", detail: "Verser délicatement le sirop chaud SUR la pâte crue. Surtout ne pas mélanger — la magie opère à la cuisson.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C : le gâteau monte et le sirop forme une sauce caramélée en dessous.", badge: "⏱ 30 min" },
-      { icone: "🍮", titre: "Servir", detail: "Servir tiède, la sauce nappée par-dessus. Délicieux avec une boule de glace vanille.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 180°C et beurrer un plat à gratin.", badge: null },
+      { icone: "🧈", titre: "Crémer le beurre", detail: "Travailler le beurre mou avec le sucre jusqu'à une texture crémeuse.", badge: null },
+      { icone: "🥚", titre: "Faire la pâte", detail: "Ajouter l'œuf, puis la farine et la levure en alternant avec le lait. Verser dans le plat.", badge: "⏱ 8 min" },
+      { icone: "🍁", titre: "Préparer le sirop", detail: "Chauffer le sirop d'érable avec la crème jusqu'à frémissement. ASTUCE CHEF : ne fais pas bouillir fort, le sirop ne doit pas réduire.", badge: "⏱ 5 min" },
+      { icone: "🫗", titre: "Napper", detail: "Verser délicatement le sirop chaud SUR la pâte crue, sans mélanger — la magie opère à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner : le gâteau monte et le sirop forme une sauce caramélée en dessous.", badge: "⏱ 30 min" },
+      { icone: "🍮", titre: "Servir", detail: "Servir tiède, nappé de sa sauce. Délicieux avec une boule de glace vanille.", badge: null }
     ]
   },
-
   alplermagronen: {
     cat: "plats", pays: "suisse",
     dateAjout: "2026-06-03",
@@ -18135,14 +18137,15 @@ mayonnaise: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Cuire pommes de terre et pâtes", detail: "Couper les pommes de terre en cubes. Les cuire 5 min dans l'eau bouillante salée, puis ajouter les pâtes et cuire ensemble jusqu'à tendreté. Égoutter.", badge: "⏱ 15 min" },
-      { icone: "🧅", titre: "Oignons frits", detail: "Émincer l'oignon et le faire dorer dans le beurre jusqu'à bien croustillant. Réserver. ASTUCE CHEF : c'est LE topping signature, ne le saute pas.", badge: "⏱ 8 min" },
-      { icone: "🧀", titre: "Crème et fromage", detail: "Chauffer la crème, ajouter le gruyère râpé hors du feu, mélanger jusqu'à fondre.", badge: null },
-      { icone: "🥣", titre: "Assembler", detail: "Mélanger pâtes, pommes de terre et sauce au fromage. Saler, poivrer.", badge: null },
-      { icone: "🍎", titre: "Servir", detail: "Garnir des oignons frits. SERVIR traditionnellement avec une compote de pommes à côté — le sucré-salé fait tout.", badge: null }
+      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Couper les pommes de terre en cubes et les cuire 5 min dans l'eau bouillante salée.", badge: "⏱ 5 min" },
+      { icone: "🍝", titre: "Ajouter les pâtes", detail: "Ajouter les pâtes dans la même eau et cuire jusqu'à tendreté, puis égoutter le tout.", badge: "⏱ 10 min" },
+      { icone: "🧅", titre: "Oignons frits", detail: "Émincer l'oignon et le faire dorer dans le beurre jusqu'à bien croustillant. ASTUCE CHEF : c'est LE topping signature, ne le saute pas.", badge: "⏱ 8 min" },
+      { icone: "🧀", titre: "Sauce au fromage", detail: "Chauffer la crème, ajouter le gruyère râpé hors du feu et mélanger jusqu'à ce qu'il fonde.", badge: null },
+      { icone: "🥣", titre: "Assembler", detail: "Mélanger pâtes, pommes de terre et sauce. Saler, poivrer généreusement.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Verser dans un plat et passer quelques minutes sous le gril pour dorer (facultatif mais top).", badge: "⏱ 5 min" },
+      { icone: "🍎", titre: "Servir", detail: "Garnir d'oignons frits. Servir avec une compote de pommes à côté — le sucré-salé fait tout.", badge: null }
     ]
   },
-
   birchermuesli: {
     cat: "brunch", pays: "suisse",
     dateAjout: "2026-06-03",
@@ -18170,14 +18173,14 @@ mayonnaise: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Tremper les flocons", detail: "La veille, mélanger les flocons d'avoine avec le lait. Couvrir et laisser gonfler au frais toute la nuit. ASTUCE CHEF : une nuit de repos = texture crémeuse parfaite.", badge: "⏱ 1 nuit" },
-      { icone: "🍎", titre: "Râper la pomme", detail: "Le matin, râper la pomme avec la peau. L'arroser d'un filet de jus de citron pour qu'elle ne noircisse pas.", badge: null },
-      { icone: "🥛", titre: "Mélanger", detail: "Incorporer le yaourt, la pomme râpée et le miel aux flocons. Mélanger.", badge: null },
-      { icone: "🌰", titre: "Garnir", detail: "Parsemer de noisettes concassées et, selon l'envie, de fruits frais.", badge: null },
+      { icone: "🌙", titre: "Tremper les flocons", detail: "La veille, mélanger les flocons d'avoine avec le lait. Couvrir et laisser gonfler au frais toute la nuit. ASTUCE CHEF : une nuit de repos = texture crémeuse parfaite.", badge: "⏱ 1 nuit" },
+      { icone: "🍎", titre: "Râper la pomme", detail: "Le matin, râper la pomme avec la peau et l'arroser d'un filet de jus de citron pour qu'elle ne noircisse pas.", badge: null },
+      { icone: "🍯", titre: "Mélanger", detail: "Incorporer le yaourt, la pomme râpée et le miel aux flocons.", badge: null },
+      { icone: "⏲️", titre: "Laisser reposer", detail: "Laisser reposer 10 min pour que les saveurs se mélangent.", badge: "⏱ 10 min" },
+      { icone: "🌰", titre: "Garnir", detail: "Parsemer de noisettes concassées et de fruits frais selon l'envie.", badge: null },
       { icone: "🥄", titre: "Déguster", detail: "Servir bien frais. Se conserve 2 jours au frigo — idéal à préparer à l'avance.", badge: null }
     ]
   },
-
   semla: {
     cat: "desserts", pays: "suede",
     dateAjout: "2026-06-03",
@@ -18205,14 +18208,16 @@ mayonnaise: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pétrir la pâte", detail: "Mélanger farine, lait tiède, levure, sucre, beurre mou, œuf et cardamome moulue. Pétrir 10 min jusqu'à une pâte souple. ASTUCE CHEF : la cardamome fraîchement moulue change tout.", badge: "⏱ 10 min" },
-      { icone: "⏲️", titre: "Laisser lever", detail: "Couvrir et laisser pousser au chaud jusqu'à ce que la pâte double de volume.", badge: "⏱ 1h" },
-      { icone: "🔥", titre: "Façonner et cuire", detail: "Former des boules régulières, les dorer et enfourner à 200°C jusqu'à belle coloration.", badge: "⏱ 12 min" },
-      { icone: "🥄", titre: "Garnir", detail: "Découper un chapeau, creuser la mie. Mélanger la mie avec la pâte d'amande, garnir, puis recouvrir de crème fouettée.", badge: null },
-      { icone: "❄️", titre: "Finir", detail: "Reposer le chapeau, saupoudrer de sucre glace. SERVIR frais avec un café — la tradition du « fika » suédois.", badge: null }
+      { icone: "🥣", titre: "Pétrir la pâte", detail: "Mélanger farine, lait tiède, levure, sucre, beurre mou, œuf et cardamome moulue. Pétrir jusqu'à une pâte souple. ASTUCE CHEF : la cardamome fraîchement moulue change tout.", badge: "⏱ 10 min" },
+      { icone: "⏲️", titre: "Première pousse", detail: "Couvrir et laisser pousser au chaud jusqu'à ce que la pâte double de volume.", badge: "⏱ 45 min" },
+      { icone: "✋", titre: "Façonner", detail: "Dégazer et former des boules régulières, les déposer sur une plaque.", badge: null },
+      { icone: "⏲️", titre: "Deuxième pousse", detail: "Laisser de nouveau gonfler 20 min, puis dorer à l'œuf.", badge: "⏱ 20 min" },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C jusqu'à belle coloration. Laisser refroidir.", badge: "⏱ 12 min" },
+      { icone: "🥛", titre: "Garniture", detail: "Fouetter la crème bien froide en chantilly. Émietter un peu de mie et la mélanger à la pâte d'amande.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Découper un chapeau, creuser légèrement, garnir de pâte d'amande puis d'une généreuse rosace de chantilly.", badge: null },
+      { icone: "❄️", titre: "Finir", detail: "Reposer le chapeau, saupoudrer de sucre glace. Servir frais avec un café — la tradition du fika.", badge: null }
     ]
   },
-
   manti: {
     cat: "plats", pays: "turquie",
     dateAjout: "2026-06-03",
@@ -18240,14 +18245,16 @@ mayonnaise: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Faire la pâte", detail: "Mélanger farine, œuf, une pincée de sel et un peu d'eau. Pétrir jusqu'à une pâte lisse, laisser reposer 30 min.", badge: "⏱ 30 min" },
+      { icone: "🥣", titre: "Faire la pâte", detail: "Mélanger farine, œuf, une pincée de sel et un peu d'eau. Pétrir jusqu'à une pâte lisse.", badge: "⏱ 10 min" },
+      { icone: "⏲️", titre: "Repos de la pâte", detail: "Filmer et laisser reposer pour qu'elle se détende.", badge: "⏱ 30 min" },
       { icone: "🥩", titre: "Préparer la farce", detail: "Mélanger la viande hachée avec l'oignon très finement haché, sel et poivre.", badge: null },
-      { icone: "🥟", titre: "Façonner les raviolis", detail: "Étaler finement la pâte, découper des petits carrés, déposer une noisette de farce et pincer en aumônière. ASTUCE CHEF : plus ils sont petits, plus c'est authentique (et long !).", badge: "⏱ 30 min" },
+      { icone: "🥟", titre: "Découper", detail: "Étaler très finement la pâte et découper de petits carrés de 3 cm.", badge: null },
+      { icone: "🤏", titre: "Façonner", detail: "Déposer une mini-noisette de farce sur chaque carré et pincer en aumônière. ASTUCE CHEF : plus ils sont petits, plus c'est authentique (et long !).", badge: "⏱ 30 min" },
       { icone: "💧", titre: "Cuire", detail: "Pocher les manti dans l'eau frémissante salée jusqu'à ce qu'ils remontent.", badge: "⏱ 10 min" },
-      { icone: "🧄", titre: "Dresser", detail: "Napper de yaourt battu à l'ail, arroser de beurre fondu au paprika. Parsemer de menthe séchée. SERVIR aussitôt.", badge: null }
+      { icone: "🧄", titre: "Yaourt à l'ail", detail: "Battre le yaourt avec l'ail écrasé et une pincée de sel.", badge: null },
+      { icone: "🌶️", titre: "Dresser", detail: "Disposer les manti sur le yaourt, arroser de beurre fondu au paprika et de menthe séchée. Servir aussitôt.", badge: null }
     ]
   },
-
   menemen: {
     cat: "brunch", pays: "turquie",
     dateAjout: "2026-06-03",
@@ -18275,14 +18282,14 @@ mayonnaise: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire revenir", detail: "Émincer oignon et poivron, les faire fondre doucement dans l'huile d'olive jusqu'à tendres.", badge: "⏱ 6 min" },
-      { icone: "🍅", titre: "Ajouter la tomate", detail: "Ajouter les tomates concassées et le piment. Laisser compoter à feu doux.", badge: "⏱ 8 min" },
-      { icone: "🥚", titre: "Ajouter les œufs", detail: "Casser les œufs directement dans la poêle. ASTUCE CHEF : mélange peu et à feu doux — les œufs doivent rester baveux, jamais secs.", badge: null },
-      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer. Couper le feu dès que les œufs sont juste pris.", badge: null },
+      { icone: "🧅", titre: "Faire revenir", detail: "Émincer oignon et poivron, les faire fondre doucement dans l'huile d'olive.", badge: "⏱ 6 min" },
+      { icone: "🍅", titre: "Ajouter la tomate", detail: "Ajouter les tomates concassées et le piment, laisser compoter à feu doux.", badge: "⏱ 8 min" },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et goûter la base tomatée avant d'ajouter les œufs.", badge: null },
+      { icone: "🥚", titre: "Ajouter les œufs", detail: "Casser les œufs directement dans la poêle. ASTUCE CHEF : mélange peu et à feu doux, les œufs doivent rester baveux.", badge: null },
+      { icone: "🥄", titre: "Brouiller", detail: "Remuer délicatement et couper le feu dès que les œufs sont juste pris.", badge: null },
       { icone: "🍞", titre: "Servir", detail: "Servir brûlant dans la poêle, avec du pain frais pour saucer.", badge: null }
     ]
   },
-
   miegoreng: {
     cat: "plats", pays: "indonesie",
     dateAjout: "2026-06-03",
@@ -18290,7 +18297,7 @@ mayonnaise: {
     temps: "30 min",
     niveau: "⭐ Facile",
     emoji: "🍜",
-    description: "Le mie goreng — nouilles sautées indonésiennes au poulet, légumes et sauce soja sucrée, le tout couronné d'un œuf. Le plat de rue par excellence.",
+    description: "Le mie goreng — nouilles sautées indonésiennes au poulet, légumes et sauce soja sucrée, couronnées d'un œuf. Le plat de rue par excellence.",
     tableauMieGoreng: [
       { nb: 1, nouilles: "80 g", poulet: "60 g", oeuf: "0.5", chou: "40 g", carotte: "30 g", saucesoja: "1 c.à.s", ail: "0.5", huile: "1 c.à.s" },
       { nb: 2, nouilles: "160 g", poulet: "120 g", oeuf: "1", chou: "80 g", carotte: "60 g", saucesoja: "2 c.à.s", ail: "1", huile: "2 c.à.s" },
@@ -18310,12 +18317,13 @@ mayonnaise: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍜", titre: "Cuire les nouilles", detail: "Cuire les nouilles selon le paquet, les égoutter et réserver.", badge: "⏱ 5 min" },
-      { icone: "🐔", titre: "Saisir le poulet", detail: "Couper le poulet en lanières, le faire sauter à feu vif dans l'huile avec l'ail. ASTUCE CHEF : feu très fort façon wok, on saute, on ne fait pas bouillir.", badge: "⏱ 5 min" },
-      { icone: "🥕", titre: "Ajouter les légumes", detail: "Ajouter chou émincé et carotte râpée. Sauter 3 min en gardant du croquant.", badge: null },
-      { icone: "🍳", titre: "Nouilles et sauce", detail: "Ajouter les nouilles et la sauce soja sucrée. Pousser sur un côté, brouiller l'œuf, puis tout mélanger.", badge: "⏱ 4 min" },
-      { icone: "🌿", titre: "Servir", detail: "Servir aussitôt, éventuellement avec oignons frits et un trait de citron vert.", badge: null }
+      { icone: "🍜", titre: "Cuire les nouilles", detail: "Cuire les nouilles selon le paquet, égoutter et réserver avec un filet d'huile.", badge: "⏱ 5 min" },
+      { icone: "🥄", titre: "Préparer la sauce", detail: "Mélanger la sauce soja sucrée avec l'ail écrasé (et un peu de sauce piment si tu aimes).", badge: null },
+      { icone: "🐔", titre: "Saisir le poulet", detail: "Couper le poulet en lanières et le faire sauter à feu vif. ASTUCE CHEF : feu très fort façon wok, on saute, on ne fait pas bouillir.", badge: "⏱ 5 min" },
+      { icone: "🥕", titre: "Ajouter les légumes", detail: "Ajouter chou émincé et carotte râpée, sauter 3 min en gardant du croquant.", badge: "⏱ 3 min" },
+      { icone: "🍝", titre: "Nouilles et sauce", detail: "Ajouter les nouilles et la sauce, bien enrober à feu vif.", badge: "⏱ 2 min" },
+      { icone: "🍳", titre: "L'œuf", detail: "Pousser sur un côté, brouiller l'œuf dans la poêle puis tout mélanger.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Servir aussitôt avec oignons frits et un trait de citron vert.", badge: null }
     ]
   },
-
 };
