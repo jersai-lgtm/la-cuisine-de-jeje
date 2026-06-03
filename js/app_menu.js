@@ -1576,7 +1576,7 @@ function afficherMenusSemaine(menus, personnes) {
                             : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
           const badge = lvl === "bebe"   ? `<span title="${tip}" style="margin-left:4px">🍼</span>`
                       : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px">🧒</span>` : "";
-          const btn = lvl ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepasSous('${jour.jour}','${moment}','${cleType}')" title="Regénérer">🔄</button>` : "";
+          const btn = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepasSous('${jour.jour}','${moment}','${cleType}')" title="Remplacer ce plat">🔄</button>`;
           const motif = lvl ? `<div class="plan-motif-famille" title="${tip}">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
           return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${personnes})">
             <span class="plan-sous-label">${icone} ${type} ${badge}${btn}</span>
@@ -1623,8 +1623,8 @@ function afficherMenusSemaine(menus, personnes) {
                   : lvlM === "enfant" ? `<span title="${tipM}" style="margin-left:4px">🧒</span>` : "";
       const bSoir = lvlS === "bebe" ? `<span title="${tipS}" style="margin-left:4px">🍼</span>`
                   : lvlS === "enfant" ? `<span title="${tipS}" style="margin-left:4px">🧒</span>` : "";
-      const btnMidi = lvlM ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','midi')" title="Regénérer">🔄</button>` : "";
-      const btnSoir = lvlS ? `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','soir')" title="Regénérer">🔄</button>` : "";
+      const btnMidi = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','midi')" title="Remplacer ce plat">🔄</button>`;
+      const btnSoir = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','soir')" title="Remplacer ce plat">🔄</button>`;
       const motifM = lvlM ? `<div class="plan-motif-famille" title="${tipM}">${lvlM === "bebe" ? "🍼" : "🌶️"} ${raisonM}</div>` : "";
       const motifS = lvlS ? `<div class="plan-motif-famille" title="${tipS}">${lvlS === "bebe" ? "🍼" : "🌶️"} ${raisonS}</div>` : "";
 
