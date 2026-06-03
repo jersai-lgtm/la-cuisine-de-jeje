@@ -1118,3 +1118,323 @@ function parserQuantite(texte) {
 if (typeof module !== "undefined") {
   module.exports = { INGREDIENTS_PRIX, calculerPrixCaloriesRecette, parserQuantite, calculerNutriScore, calculerNutriScoreRecette };
 }
+
+// ============================================================
+// Libellés affichables des ingrédients (déplacé depuis app.js).
+// 👉 Rangé ici, à côté des prix : quand tu ajoutes un ingrédient,
+//    mets son prix ci-dessus ET son libellé ci-dessous.
+// ============================================================
+// Mapping des clés de colonnes vers labels affichables
+const INGREDIENTS_LABELS = {
+  // == v257 — Muffins & Pâtisserie ==
+  chocolatBlanc: "🤍 Chocolat blanc", chocolatLait: "🍫 Chocolat au lait",
+  pepitesChoco: "🍫 Pépites de chocolat",
+  cannelle: "🪵 Cannelle", pavot: "🌱 Graines de pavot",
+  noix: "🌰 Noix", amandes: "🌰 Amandes",
+  huileTournesol: "🌻 Huile de tournesol", vanilleExtrait: "🌿 Extrait de vanille",
+  streusel: "🍪 Streusel", caramelSale: "🍯 Caramel beurre salé",
+  // == v257 — Marques ==
+  kinderBueno: "🍫 Kinder Bueno", mars: "🍫 Mars",
+  kitkat: "🍫 Kit Kat", raffaello: "🥥 Raffaello",
+  snickers: "🥜 Snickers", oreo: "🍪 Oreo",
+  // == v257 — Asie & autres ==
+  nouillesRiz: "🍜 Nouilles de riz", saucePoisson: "🐟 Sauce poisson (nuoc-mâm)",
+  pousses_soja: "🌱 Pousses de soja",
+  pateCurryVert: "🌶️ Pâte de curry vert", basilic_thai: "🌿 Basilic thaï",
+  reblochon: "🧀 Reblochon", pousseBambou: "🎍 Pousses de bambou",
+  biscuits: "🍪 Biscuits sablés", epaulePorc: "🐖 Épaule de porc",
+  sauceBBQ: "🥫 Sauce barbecue", saumonFrais: "🐟 Saumon frais",
+  ciboulette: "🌿 Ciboulette", cremeChantilly: "🍦 Crème chantilly",
+  agneau: "🐑 Agneau", merguez: "🌭 Merguez",
+  butternut: "🎃 Butternut", rizArborio: "🍚 Riz arborio",
+  vinBlanc: "🍷 Vin blanc sec", champignons: "🍄 Champignons",
+  boullionLeg: "🥣 Bouillon de légumes",
+  // === v257.2 — Nouveaux ingrédients ===
+  cabillaud: "🐟 Cabillaud", magret: "🦆 Magret de canard",
+  // == Ignorés ==
+  nb: null, label: null, total: null,
+  // == Céréales & pâtes ==
+  farine: "🌾 Farine", riz: "🍚 Riz", rizS: "🍚 Riz", semoule: "🌾 Semoule",
+  nouilles: "🍜 Nouilles", spaghetti: "🍝 Spaghetti", pates: "🍝 Pâtes",
+  lasagne: "🍝 Feuilles de lasagne", flocons: "🌾 Flocons d'avoine",
+  quinoa: "🌾 Quinoa", maizena: "🌾 Maïzena", cacao: "🍫 Cacao en poudre",
+  graines: "🌱 Graines", chia: "🌱 Graines de chia", granola: "🌾 Granola",
+  chapelure: "🍞 Chapelure", pain: "🍞 Pain", buns: "🍞 Buns",
+  pita: "🫓 Pains pita", crepesP: "🫓 Crêpes pékinoises",
+  feuilletee: "🥐 Pâte feuilletée", pate: "🫓 Pâton(s)", patons: "🫓 Pâton(s)",
+  // == Produits laitiers ==
+  lait: "🥛 Lait", laitChoux: "🥛 Lait", laitCreme: "🥛 Lait",
+  creme: "🍦 Crème fraîche", gCreme: "🍦 Crème fraîche", beurreCreme: "🍦 Crème fraîche",
+  yaourt: "🥛 Yaourt grec",
+  beurre: "🧈 Beurre", beurrChoux: "🧈 Beurre", beurrCreme: "🧈 Beurre", beurrePate: "🧈 Beurre",
+  huile: "🫒 Huile", huileOlive: "🫒 Huile d'olive", huileTruffe: "🍄 Huile de truffe",
+  mascarpone: "🧀 Mascarpone", parmesan: "🧀 Parmesan", gruyere: "🧀 Gruyère",
+  feta: "🧀 Feta", fetaOpt: "🧀 Feta (optionnel)", gorgonzola: "🧀 Gorgonzola",
+  ricotta: "🧀 Ricotta", pecorino: "🧀 Pecorino", philadelphia: "🧀 Philadelphia",
+  cheddar: "🧀 Cheddar", mozza: "🧀 Mozzarella", fromage: "🧀 Fromage",
+  laitCoco: "🥥 Lait de coco", cremeCoco: "🥥 Crème de coco", coco: "🥥 Lait de coco",
+  confiture: "🍓 Confiture", moutarde: "🟡 Moutarde",
+  // == Œufs ==
+  oeufs: "🥚 Œufs", oeuf: "🥚 Œuf", oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs",
+  oeufPate: "🥚 Œufs", jaunes: "🥚 Jaunes d'œufs", jaunesCreme: "🥚 Jaunes d'œufs",
+  blancs: "🥚 Blancs d'œufs", blanc: "🥚 Blancs d'œufs",
+  // == Sucre & levure ==
+  sucre: "🍬 Sucre", sucreGlace: "🍬 Sucre glace", cassonade: "🍬 Cassonade",
+  gSucre: "🍬 Sucre", sucreCreme: "🍬 Sucre", sucreCaramel: "🍬 Sucre",
+  sucreMeringue: "🍬 Sucre", sucreIles: "🍬 Sucre de coco",
+  miel: "🍯 Miel", sirop: "🍬 Sirop de sucre", selRebord: "🧂 Sucre/sel (rebord)",
+  siropderable: "🍁 Sirop d'érable", noisettes: "🌰 Noisettes", plantain: "🍌 Banane plantain", crabe: "🦀 Crabe", cornichon: "🥒 Cornichon",
+  levure: "🟨 Levure fraîche", ferment: "🟨 Ferments lactiques",
+  poudreAmande: "🌰 Poudre d'amande", glace: "🍦 Glace vanille",
+  // == Viandes ==
+  poulet: "🍗 Poulet", porc: "🐷 Porc", boeuf: "🥩 Bœuf", agneau: "🐑 Agneau",
+  viande: "🥩 Viande", joues: "🥩 Joues de bœuf", jarret: "🦴 Jarret de veau",
+  canard: "🦆 Canard", cotelets: "🐑 Côtelettes d'agneau", os: "🦴 Os",
+  lardons: "🥓 Lardons", jambon: "🍖 Jambon", guanciale: "🥓 Guanciale",
+  salami: "🌭 Salami", chorizo: "🌭 Chorizo", nduja: "🌶️ Nduja",
+  prosciutto: "🍖 Prosciutto di Parma", foie: "🫀 Foies de volaille",
+  proteine: "💪 Protéine en poudre",
+  // == Poissons & fruits de mer ==
+  saumon: "🐟 Saumon fumé", thon: "🐟 Thon", poisson: "🐟 Poisson",
+  dorade: "🐟 Dorade", poulpe: "🐙 Poulpe", crevettes: "🦐 Crevettes",
+  moules: "🦪 Moules", anchois: "🐟 Anchois", anchoix: "🐟 Anchois",
+  // == Légumes ==
+  tomates: "🍅 Tomates", tomate: "🍅 Tomates", tomateCerise: "🍅 Tomates cerises",
+  oignon: "🧅 Oignon", oignons: "🧅 Oignons", echalote: "🧅 Échalote",
+  ail: "🧄 Ail", carotte: "🥕 Carotte", carottes: "🥕 Carottes",
+  courgette: "🥒 Courgette", aubergine: "🍆 Aubergine", aubergines: "🍆 Aubergines",
+  poivron: "🫑 Poivron", champignons: "🍄 Champignons", shiitake: "🍄 Shiitake",
+  epinards: "🌿 Épinards", salade: "🥬 Salade", laitue: "🥬 Laitue",
+  pdterre: "🥔 Pommes de terre", patate: "🍠 Patate douce", patatedouce: "🍠 Patate douce",
+  courge: "🎃 Courge butternut", manioc: "🫚 Manioc", navets: "🪨 Navets",
+  chou: "🥬 Chou", poireaux: "🥬 Poireaux", asperges: "🌿 Asperges",
+  mais: "🌽 Maïs", maïs: "🌽 Maïs", petitspois: "🫛 Petits pois",
+  haricots: "🫛 Haricots verts", concombre: "🥒 Concombre", celeri: "🌿 Céleri",
+  edamame: "🫛 Edamame", pois: "🫘 Pois",
+  // == Légumineuses ==
+  poischiches: "🫘 Pois chiches", lentilles: "🫘 Lentilles",
+  // == Fruits ==
+  citron: "🍋 Citron", citrons: "🍋 Citrons", orange: "🍊 Orange", orangeJus: "🍊 Jus d'orange",
+  pommes: "🍎 Pommes", bananes: "🍌 Bananes", fraise: "🍓 Fraise", fraises: "🍓 Fraises",
+  framboises: "🫐 Framboises", myrtilles: "🫐 Myrtilles", peche: "🍑 Pêche",
+  pruneaux: "🫐 Pruneaux", fruits: "🍎 Fruits", passion: "🌺 Fruits de la passion",
+  mangue: "🥭 Mangue", pasteque: "🍉 Pastèque", cerises: "🍒 Cerises", cerise: "🍒 Cerise",
+  fraise: "🍓 Fraise", avocats: "🥑 Avocats", ananas: "🍍 Ananas",
+  acai: "🫐 Açaï", coulis: "🍓 Coulis", sambar: "🍲 Sambar",
+  // == Aromates & épices ==
+  sel: "🧂 Sel", poivre: "🌶️ Poivre noir", piment: "🌶️ Piment",
+  masala: "🌶️ Garam masala", curry: "🌶️ Curry", cumin: "🌿 Cumin",
+  cannelle: "🪵 Cannelle", muscade: "🌰 Muscade", safran: "🌼 Safran", paprika: "🌶️ Paprika",
+  // === Lot 1 — Ingrédients classiques français ===
+  brochet: "🐟 Brochet", ecrevisses: "🦞 Écrevisses", lapin: "🐰 Lapin",
+  reblochon: "🧀 Reblochon", tomme: "🧀 Tomme fraîche", andouillette: "🌭 Andouillette",
+  cuissecanard: "🦆 Cuisse de canard", graissecanard: "🦆 Graisse de canard",
+  haricotsblancs: "🫘 Haricots blancs", vinrouge: "🍷 Vin rouge",
+  patefeuilletee: "🥧 Pâte feuilletée", poudreamandes: "🥥 Poudre d'amandes",
+  cremepatissiere: "🍮 Crème pâtissière", sucrecaramel: "🍯 Sucre (caramel)",
+  feve: "🪙 Fève",
+  // === Lot 2 — Ingrédients cuisines du monde ===
+  baguette: "🥖 Baguette", painpita: "🫓 Pain pita",
+  haricotsverts: "🫛 Haricots verts", saucissefumee: "🌭 Saucisse fumée",
+  pouletHache: "🍗 Poulet haché", rizGrillé: "🌾 Riz grillé concassé",
+  oignonrouge: "🧅 Oignon rouge", nouillesoeuf: "🍜 Nouilles aux œufs",
+  pateCurry: "🌶️ Pâte de curry", cacahuetespurée: "🥜 Purée de cacahuètes",
+  lait_coco: "🥥 Lait de coco", tempeh: "🟨 Tempeh",
+  piniots: "🌰 Pignons de pin", feuillesBrick: "📜 Feuilles de brick",
+  feuillesFilo: "📜 Feuilles de filo", sucreglace: "❄️ Sucre glace",
+  // === Mega-Lot — Italie / Pâtisserie / Healthy ===
+  spaghetti: "🍝 Spaghetti", palourdes: "🦪 Palourdes",
+  polenta: "🌽 Polenta", gorgonzola: "🧀 Gorgonzola",
+  ragu: "🍝 Ragù (sauce bolognaise)", huilefriture: "🛢️ Huile de friture",
+  marsala: "🍷 Marsala", caramel: "🍯 Caramel",
+  amaretto: "🥃 Amaretto", glacevanille: "🍦 Glace vanille",
+  fondant: "🍬 Fondant pâtissier", chocolatNoir: "🍫 Chocolat noir",
+  kirsch: "🍷 Kirsch", cerises: "🍒 Cerises",
+  biscuitscuillere: "🍪 Biscuits cuillère", fraisesframboises: "🍓 Fraises ou framboises",
+  fromageblanc: "🥛 Fromage blanc", jusfruit: "🧃 Jus de fruits",
+  farineT80: "🌾 Farine T80", farineble: "🌾 Farine de blé",
+  farineseigle: "🌾 Farine de seigle", farinesarrasin: "🌾 Farine de sarrasin",
+  levain: "🥖 Levain", graines: "🌻 Graines (tournesol, lin, sésame)",
+  filetdeboeuf: "🥩 Filet de bœuf", saumonfume: "🐟 Saumon fumé",
+  saumonfrais: "🐟 Filet de saumon frais", fromagefrais: "🧀 Fromage frais",
+  fleurdesel: "🧂 Fleur de sel", crème: "🥛 Crème fraîche",
+  patebrisee: "🥧 Pâte brisée", fromagerape: "🧀 Fromage râpé",
+  emmental: "🧀 Emmental", huiledolive: "🫒 Huile d'olive",
+  // === Sprint final — Allemagne, Espagne, Mexique, Inde, Japon, Chine, Russie, Portugal, Hongrie ===
+  bratwurst: "🌭 Saucisses bratwurst", ketchup: "🍅 Ketchup",
+  currypoudre: "🌶️ Curry en poudre", paprikaFume: "🌶️ Paprika fumé",
+  paprikafume: "🌶️ Paprika fumé", bicarbonate: "🧂 Bicarbonate",
+  grossel: "🧂 Gros sel", raisinssecs: "🍇 Raisins secs",
+  raisinsec: "🍇 Raisins secs", pommesdeterre: "🥔 Pommes de terre",
+  pommeterre: "🥔 Pommes de terre", boeufbourguignon: "🥩 Bœuf à mijoter",
+  betteraves: "🟣 Betteraves", chouvert: "🥬 Chou vert",
+  cremefraiche: "🥛 Crème fraîche", boeufhache: "🥩 Bœuf haché",
+  porchache: "🐷 Porc haché", moruedessale: "🐟 Morue dessalée",
+  jalapeno: "🌶️ Jalapeños", crema: "🥛 Crema mexicaine",
+  laitconcentre: "🥛 Lait concentré sucré", laitevapore: "🥛 Lait évaporé",
+  fruitsrouges: "🫐 Fruits rouges", epicesmasala: "🌶️ Garam masala",
+  pouletcuisses: "🍗 Cuisses de poulet", saucesoja: "🥢 Sauce soja",
+  sauceaussoja: "🥢 Sauce soja", sake: "🍶 Sake",
+  matcha: "🍵 Matcha (poudre)", laitamande: "🥛 Lait d'amande",
+  eauchaude: "💧 Eau chaude", tofusoie: "🟩 Tofu soyeux",
+  doubanjiang: "🌶️ Doubanjiang (pâte sichuanaise)", ailechalote: "🧅 Ail-échalote",
+  poivresichuan: "🌶️ Poivre du Sichuan", huilepiment: "🌶️ Huile pimentée",
+  huilesame: "🌰 Huile de sésame", feuilleswonton: "🥟 Feuilles de wonton",
+  charcuterie: "🥩 Charcuterie", fromageraclette: "🧀 Fromage à raclette",
+  oignonsblanc: "🧅 Petits oignons", saladeverte: "🥗 Salade verte",
+  pain: "🥖 Pain", balsamique: "🍶 Vinaigre balsamique",
+  acaipuree: "🫐 Purée d'açaí", cocoflocons: "🥥 Flocons de coco",
+  grainepain: "🌾 Graines (chia, lin)", amande: "🥜 Amandes", beurredamande: "🥜 Beurre d'amande",
+  huileolive: "🫒 Huile d'olive", sucreroux: "🍯 Sucre roux",
+  sucrecasso: "🍯 Sucre cassonade", jaunesoeufs: "🥚 Jaunes d'œufs",
+  zestecitron: "🍋 Zeste de citron", crudités: "🥕 Crudités",
+  // === Incontournables ===
+  fromagebeaufort: "🧀 Beaufort", fromagecomte: "🧀 Comté",
+  fromageemmental: "🧀 Emmental français", painrassis: "🥖 Pain rassis",
+  saintjacques: "🦪 Noix de Saint-Jacques", fleurdesel: "🧂 Fleur de sel",
+  briocheoupain: "🍞 Brioche ou pain", sucresemoule: "🍬 Sucre semoule",
+  poissonroche: "🐟 Poisson de roche", fenouil: "🌿 Fenouil",
+  croutons: "🥖 Croûtons aillés", rouille: "🌶️ Rouille",
+  bouquetgarni: "🌿 Bouquet garni",
+  laitnon: "🥛 Lait", sauceokonomi: "🥢 Sauce okonomi",
+  mayojaponaise: "🥚 Mayonnaise japonaise", bonite: "🐟 Bonite séchée",
+  rizbasmati: "🌾 Riz basmati", epicesbiryani: "🌶️ Épices biryani (garam masala)",
+  gingembreail: "🧄 Pâte gingembre-ail", pouletoupigeon: "🍗 Poulet ou pigeon",
+  feuillesbrick: "📜 Feuilles de brick", epicesras: "🌶️ Ras-el-hanout",
+  tagliatellesfraiches: "🍝 Tagliatelles fraîches", truffenoire: "🍄 Truffe noire",
+  boeufpouramijoter: "🥩 Bœuf à mijoter", bierebrune: "🍺 Bière brune",
+  painepicesmoutarde: "🥖 Pain d'épices moutardé", vergeoise: "🍯 Vergeoise (cassonade)",
+  saindoux: "🥓 Saindoux",
+  poudreamande: "🥜 Poudre d'amande", blancsoeufs: "🥚 Blancs d'œufs",
+  ganacheoufruit: "🍫 Ganache ou confiture", arome: "✨ Arôme (vanille...)",
+  levureboulanger: "🍞 Levure boulangère", cremechantilly: "🥛 Crème chantilly",
+  jauneoeuf: "🥚 Jaune d'œuf", tabasco: "🌶️ Tabasco",
+  farinetamisee: "🌾 Farine tamisée", chocolatnoir: "🍫 Chocolat noir", jusdecitron: "🍋 Jus de citron",
+  levurechimique: "🍞 Levure chimique", pepiteschoco: "🍫 Pépites de chocolat",
+  gingembre: "🫚 Gingembre", galanga: "🫚 Galanga", anis: "⭐ Anis étoilé",
+  citronnelle: "🌿 Citronnelle", vanille: "🍦 Vanille", fumee: "💨 Paprika fumé",
+  chermoula: "🌿 Chermoula", pesto: "🌿 Pesto",
+  persil: "🌿 Persil", coriandre: "🌿 Coriandre", menthe: "🌿 Menthe fraîche",
+  basilic: "🌿 Basilic", thym: "🌿 Thym", romarin: "🌿 Romarin", aneth: "🌿 Aneth",
+  // == Condiments & sauces ==
+  sojaS: "🍶 Sauce soja", mirin: "🍶 Mirin", saké: "🍶 Saké", hoisin: "🍶 Sauce hoisin",
+  bbqSauce: "🍖 Sauce BBQ", rub: "🌶️ Rub BBQ", tahini: "🫒 Tahini",
+  miso: "🌿 Miso", gochujang: "🌶️ Gochujang", vinaigre: "🍶 Vinaigre",
+  // == Divers cuisine ==
+  bouillon: "🍲 Bouillon", dashi: "💧 Dashi", cafe: "☕ Café expresso",
+  nori: "🌿 Nori", tofu: "🧀 Tofu", wakame: "🌊 Wakamé",
+  tortilla: "🌮 Tortillas", tortillas: "🌮 Tortillas", noix: "🌰 Noix",
+  amandes: "🌰 Amandes", pignons: "🌰 Pignons de pin", olives: "🫒 Olives",
+  palmier: "🌴 Cœurs de palmier", tahini: "🫒 Tahini",
+  // == Alcools ==
+  rhum: "🍶 Rhum blanc", tequila: "🥃 Tequila", vodka: "🍶 Vodka",
+  gin: "🍶 Gin", bourbon: "🥃 Bourbon", cognac: "🥃 Cognac", brandy: "🥃 Brandy",
+  aperol: "🍊 Aperol", campari: "🍊 Campari", vermouth: "🍷 Vermouth",
+  prosecco: "🍾 Prosecco", champagne: "🍾 Champagne", tripleSec: "🍊 Triple sec",
+  cointreau: "🍊 Cointreau", passoa: "🌺 Passoa", curacao: "🫐 Curaçao bleu",
+  kahluaC: "☕ Kahlúa", gingerBeer: "💧 Ginger beer", limonade: "💧 Limonade",
+  grenadine: "🍒 Grenadine", rose: "🍷 Rosé pétillant", sureau: "🌸 Sirop de sureau",
+  espresso: "☕ Espresso", jusMixte: "🍹 Jus de fruits rouges",
+  cranberry: "🍒 Jus de cranberry", bitters: "💧 Angostura bitters",
+  fleurOranger: "🌸 Eau de fleur d'oranger", tonic: "💧 Tonic premium",
+  eauGaz: "💧 Eau gazeuse", eau: "💧 Eau", eauChoux: "💧 Eau", eauRose: "🌹 Eau de rose",
+  // == Chocolat & pâtisserie ==
+  chocolat: "🍫 Chocolat noir", pepites: "🍫 Pépites de chocolat",
+  cremeTruffe: "🍄 Crème de truffe", roquette: "🥬 Roquette",
+  // == Ingrédients spéciaux ==
+  pralin: "🌰 Pâte de pralin", proteine: "💪 Protéine", dattes: "🌴 Dattes",
+  vermicelles: "🍜 Vermicelles", edamame: "🫛 Edamame",
+  // == Ajouts audit complet (50 ingrédients) ==
+  // Boissons / alcools
+  vin: "🍷 Vin", cidre: "🍎 Cidre", saké: "🍶 Saké",
+  // Légumes
+  avocat: "🥑 Avocat", melon: "🍈 Melon",
+  chouC: "🥬 Chou", choufleur: "🥦 Chou-fleur", betterave: "🟥 Betterave",
+  bok_choy: "🥬 Bok choy", herbes: "🌿 Herbes de Provence",
+  // Aromates / condiments
+  ciboule: "🌿 Ciboule", ciboulette: "🌿 Ciboulette", sauge: "🌿 Sauge",
+  capres: "🫒 Câpres", baies: "🫐 Baies de genièvre",
+  // Sauces / pâtes
+  bechamel: "🥛 Sauce béchamel", soja: "🥢 Sauce soja", chutney: "🫙 Chutney",
+  pateC: "🌶️ Pâte de curry", curryVert: "🌶️ Pâte de curry vert",
+  fecule: "🌾 Fécule de maïs",
+  // Viandes / poissons / fruits de mer
+  veau: "🥩 Veau", lard: "🥓 Lard fumé", saucisses: "🌭 Saucisses",
+  merguez: "🌶️ Merguez", calamars: "🦑 Calamars", moule: "🦪 Moules",
+  // Produits laitiers / œufs
+  chevre: "🐐 Fromage de chèvre", camembert: "🧀 Camembert", gJaune: "🥚 Jaune d'œuf",
+  // Fruits
+  banane: "🍌 Banane", pomme: "🍎 Pomme", kiwi: "🥝 Kiwi", citronC: "🍋 Citron",
+  // Fruits secs & graines
+  pistaches: "🌰 Pistaches", arachide: "🥜 Arachide",
+  sesame: "🫘 Graines de sésame", cacahetes: "🥜 Cacahuètes grillées",
+  // Sucré / divers
+  choco: "🍫 Chocolat", biscuits: "🍪 Biscuits", gelatine: "🟦 Gélatine",
+  filo: "🥟 Pâte filo", pateSablee: "🥧 Pâte sablée",
+  muffins: "🧁 Muffins anglais", tteok: "🍢 Gâteaux de riz tteok",
+  soba: "🍜 Nouilles soba",
+  // Spécifique brioche / patisserie
+  beurrage: "🧈 Beurre de tourage",
+  // == Ingrédients ajoutés (50 nouvelles recettes du monde) ==
+  // Viandes
+  agneauHache: "🐑 Agneau haché", boeufHache: "🐮 Bœuf haché",
+  viandeHachee: "🥩 Viande hachée", queueboeuf: "🐮 Queue de bœuf",
+  travers: "🥩 Travers de bœuf", saucisse: "🌭 Saucisse fumée",
+  serrano: "🥓 Jambon Serrano",
+  // Poissons / fruits de mer
+  thonHuile: "🐟 Thon à l'huile",
+  // Légumes & herbes
+  bokchoy: "🥬 Bok choy", brocoli: "🥦 Brocoli",
+  oignonNouveau: "🧅 Oignon nouveau", oignonRouge: "🧅 Oignon rouge",
+  feves: "🫛 Fèves", figues: "🟣 Figues",
+  pommedeterre: "🥔 Pommes de terre", maïs: "🌽 Maïs",
+  haricotsnoirs: "🫘 Haricots noirs", haricotsrouges: "🫘 Haricots rouges",
+  cornichons: "🥒 Cornichons", poire: "🍐 Poire asiatique",
+  pousses: "🌱 Pousses de soja", feuilles: "🌿 Feuilles de vigne",
+  feuillesBric: "📄 Feuilles de brick",
+  // Fromages
+  burrata: "🧀 Burrata", mozzarella: "🧀 Mozzarella",
+  paneer: "🧀 Paneer", fromageFrais: "🧀 Fromage frais",
+  // Épices & condiments
+  curcuma: "🌶️ Curcuma", garamMasala: "🌶️ Garam masala",
+  cardamome: "🌰 Cardamome", fenugrec: "🌾 Fenugrec",
+  origan: "🌿 Origan", laurier: "🌿 Laurier",
+  sumac: "🌶️ Sumac", tamarin: "🟤 Tamarin",
+  ancho: "🌶️ Piment ancho", piment_ancho: "🌶️ Piment ancho",
+  piment_guajillo: "🌶️ Piment guajillo", scotchBonnet: "🌶️ Piment scotch bonnet",
+  guascas: "🌿 Guascas",
+  // Sauces & pâtes
+  sojaSauce: "🍶 Sauce soja", nuocmam: "🐟 Nuoc-mâm",
+  pateMassaman: "🌶️ Pâte de curry Massaman", kecapManis: "🍶 Kecap manis",
+  sambal: "🌶️ Sambal oelek", hoisin: "🍶 Sauce hoisin",
+  mayonnaise: "🥫 Mayonnaise", concentre: "🥫 Concentré de tomate",
+  cremeFraiche: "🥛 Crème fraîche",
+  vinaigreBalsamique: "🍶 Vinaigre balsamique", vinaigreRiz: "🍶 Vinaigre de riz",
+  // Vins / alcools cuisine
+  vinblanc: "🍷 Vin blanc",
+  // Pains & pâtes (boulangerie)
+  paton: "🍞 Pâton (pizza)", pateFeuilletee: "🥧 Pâte feuilletée",
+  baos: "🥟 Petits pains bao", ramen: "🍜 Nouilles ramen",
+  rizCuit: "🍚 Riz cuit (froid)",
+  // Liquides / matières grasses
+  laitcoco: "🥥 Lait de coco", huilesesame: "🫒 Huile de sésame",
+  // Fruits secs / noix
+  cacahuetes: "🥜 Cacahuètes", noixCoco: "🥥 Noix de coco râpée",
+  raisinsSecs: "🟤 Raisins secs", edamames: "🌱 Edamames",
+  // Boulghour & céréales
+  boulghour: "🌾 Boulghour", farineRiz: "🌾 Farine de riz gluant",
+  lentillesCorail: "🌾 Lentilles corail",
+  // Levures & ferments
+  // Pâtisserie spécifique
+  kataifi: "🌾 Cheveux d'ange (kataifi)", kaya: "🍯 Confiture de coco kaya",
+  dulceDeLeche: "🍯 Dulce de leche",
+  eauFleurOranger: "💧 Eau de fleur d'oranger",
+  colorant: "🎨 Colorant alimentaire",
+  // Aromates spécifiques
+  kaffir: "🍃 Feuilles de combava (kaffir)",
+  citronvert: "🍋 Citron vert",
+  // Divers
+  sucrebrun: "🟤 Sucre brun", sucrepalme: "🟤 Sucre de palme",
+  selFleur: "🧂 Fleur de sel", sauce: "🥫 Sauce",
+  wasabi: "🌿 Wasabi",
+};
