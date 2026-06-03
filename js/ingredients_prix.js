@@ -427,6 +427,7 @@ const INGREDIENTS_PRIX = {
   sucreMeringue:  { prixKg: 1.20, calPer100g: 387,  lipSat: 0,    sucre: 100,  sel: 0,    fibres: 0,   prot: 0,    flv: 0 },
   gSucre:         { prixKg: 1.20, calPer100g: 387,  lipSat: 0,    sucre: 100,  sel: 0,    fibres: 0,   prot: 0,    flv: 0 },
   miel:           { prixKg: 14.0, calPer100g: 304,  lipSat: 0,    sucre: 82,   sel: 0,    fibres: 0.2, prot: 0.3,  flv: 0 },
+  siropderable:   { prixKg: 12.0, calPer100g: 260,  lipSat: 0,    sucre: 60,   sel: 0.05, fibres: 0,   prot: 0,    flv: 0 },
   sirop:          { prixKg: 10.0, calPer100g: 310,  lipSat: 0,    sucre: 78,   sel: 0.1,  fibres: 0,   prot: 0.1,  flv: 0 },
   caramel:        { prixKg: 8.00, calPer100g: 380,  lipSat: 5,    sucre: 75,   sel: 0.2,  fibres: 0,   prot: 2,    flv: 0 },
   dulceDeLeche:   { prixKg: 8.00, calPer100g: 315,  lipSat: 4,    sucre: 55,   sel: 0.3,  fibres: 0,   prot: 7,    flv: 0 },

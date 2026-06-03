@@ -18038,4 +18038,144 @@ mayonnaise: {
       { icone: "🍚", titre: "Servir", detail: "Servir aussitôt sur un riz blanc bien chaud, parsemé d'oignon vert si vous aimez.", badge: null }
     ]
   },
+  tourtiere: {
+    cat: "plats", pays: "canada",
+    dateAjout: "2026-06-03",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥧",
+    description: "La tourtière québécoise — tourte à la viande hachée et aux épices douces, un classique des fêtes au Canada.",
+    tableauTourtiere: [
+      { nb: 1, porc: "100 g", boeuf: "50 g", oignon: "0.2", patate: "60 g", ail: "0.5", cannelle: "0.15 c.à.c", patebrisee: "0.5" },
+      { nb: 2, porc: "200 g", boeuf: "100 g", oignon: "0.5", patate: "120 g", ail: "1", cannelle: "0.3 c.à.c", patebrisee: "1" },
+      { nb: 3, porc: "300 g", boeuf: "150 g", oignon: "0.8", patate: "180 g", ail: "1.5", cannelle: "0.45 c.à.c", patebrisee: "1.5" },
+      { nb: 4, porc: "400 g", boeuf: "200 g", oignon: "1", patate: "240 g", ail: "2", cannelle: "0.6 c.à.c", patebrisee: "2" },
+      { nb: 5, porc: "500 g", boeuf: "250 g", oignon: "1.2", patate: "300 g", ail: "2.5", cannelle: "0.75 c.à.c", patebrisee: "2.5" },
+      { nb: 6, porc: "600 g", boeuf: "300 g", oignon: "1.5", patate: "360 g", ail: "3", cannelle: "0.9 c.à.c", patebrisee: "3" },
+      { nb: 7, porc: "700 g", boeuf: "350 g", oignon: "1.8", patate: "420 g", ail: "3.5", cannelle: "1.05 c.à.c", patebrisee: "3.5" },
+      { nb: 8, porc: "800 g", boeuf: "400 g", oignon: "2", patate: "480 g", ail: "4", cannelle: "1.2 c.à.c", patebrisee: "4" },
+      { nb: 9, porc: "900 g", boeuf: "450 g", oignon: "2.2", patate: "540 g", ail: "4.5", cannelle: "1.35 c.à.c", patebrisee: "4.5" },
+      { nb: 10, porc: "1 kg", boeuf: "500 g", oignon: "2.5", patate: "600 g", ail: "5", cannelle: "1.5 c.à.c", patebrisee: "5" },
+      { nb: 11, porc: "1.1 kg", boeuf: "550 g", oignon: "2.8", patate: "660 g", ail: "5.5", cannelle: "1.65 c.à.c", patebrisee: "5.5" },
+      { nb: 12, porc: "1.2 kg", boeuf: "600 g", oignon: "3", patate: "720 g", ail: "6", cannelle: "1.8 c.à.c", patebrisee: "6" },
+      { nb: 13, porc: "1.3 kg", boeuf: "650 g", oignon: "3.2", patate: "780 g", ail: "6.5", cannelle: "1.95 c.à.c", patebrisee: "6.5" },
+      { nb: 14, porc: "1.4 kg", boeuf: "700 g", oignon: "3.5", patate: "840 g", ail: "7", cannelle: "2.1 c.à.c", patebrisee: "7" },
+      { nb: 15, porc: "1.5 kg", boeuf: "750 g", oignon: "3.8", patate: "900 g", ail: "7.5", cannelle: "2.25 c.à.c", patebrisee: "7.5" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire la pomme de terre", detail: "Éplucher la pomme de terre, la couper en cubes et la cuire à l'eau bouillante salée 15 min. Égoutter et écraser grossièrement. ASTUCE CHEF : garde un peu d'eau de cuisson pour lier la farce si besoin.", badge: "⏱ 15 min" },
+      { icone: "🧅", titre: "Faire revenir", detail: "Émincer l'oignon et l'ail, les faire suer dans un peu de beurre jusqu'à translucides.", badge: null },
+      { icone: "🥩", titre: "Cuire la viande", detail: "Ajouter le porc et le bœuf hachés. Cuire à feu moyen en émiettant. Assaisonner avec cannelle, une pointe de clou de girofle moulu, sel et poivre.", badge: "⏱ 12 min" },
+      { icone: "🥣", titre: "Lier la farce", detail: "Mélanger la viande avec la purée de pomme de terre. La farce doit être moelleuse, pas sèche.", badge: null },
+      { icone: "🥧", titre: "Monter et cuire", detail: "Garnir une pâte brisée, couvrir d'une seconde pâte, souder les bords et dorer. Enfourner à 200°C. À SERVIR chaud avec un ketchup maison ou une salade verte.", badge: "⏱ 35 min" }
+    ]
+  },
+
+  poudingchomeur: {
+    cat: "desserts", pays: "canada",
+    dateAjout: "2026-06-03",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🍮",
+    description: "Le pouding chômeur — gâteau moelleux nappé d'un sirop d'érable chaud et caramélisé. Le dessert réconfortant du Québec.",
+    tableauPouding: [
+      { nb: 1, farine: "40 g", sucre: "30 g", beurre: "20 g", lait: "30 g", oeuf: "0.2", levure: "0.5 c.à.c", siropderable: "60 g", creme: "30 g" },
+      { nb: 2, farine: "80 g", sucre: "60 g", beurre: "40 g", lait: "60 g", oeuf: "0.5", levure: "1 c.à.c", siropderable: "120 g", creme: "60 g" },
+      { nb: 3, farine: "120 g", sucre: "90 g", beurre: "60 g", lait: "90 g", oeuf: "0.8", levure: "1.5 c.à.c", siropderable: "180 g", creme: "90 g" },
+      { nb: 4, farine: "160 g", sucre: "120 g", beurre: "80 g", lait: "120 g", oeuf: "1", levure: "2 c.à.c", siropderable: "240 g", creme: "120 g" },
+      { nb: 5, farine: "200 g", sucre: "150 g", beurre: "100 g", lait: "150 g", oeuf: "1.2", levure: "2.5 c.à.c", siropderable: "300 g", creme: "150 g" },
+      { nb: 6, farine: "240 g", sucre: "180 g", beurre: "120 g", lait: "180 g", oeuf: "1.5", levure: "3 c.à.c", siropderable: "360 g", creme: "180 g" },
+      { nb: 7, farine: "280 g", sucre: "210 g", beurre: "140 g", lait: "210 g", oeuf: "1.8", levure: "3.5 c.à.c", siropderable: "420 g", creme: "210 g" },
+      { nb: 8, farine: "320 g", sucre: "240 g", beurre: "160 g", lait: "240 g", oeuf: "2", levure: "4 c.à.c", siropderable: "480 g", creme: "240 g" },
+      { nb: 9, farine: "360 g", sucre: "270 g", beurre: "180 g", lait: "270 g", oeuf: "2.2", levure: "4.5 c.à.c", siropderable: "540 g", creme: "270 g" },
+      { nb: 10, farine: "400 g", sucre: "300 g", beurre: "200 g", lait: "300 g", oeuf: "2.5", levure: "5 c.à.c", siropderable: "600 g", creme: "300 g" },
+      { nb: 11, farine: "440 g", sucre: "330 g", beurre: "220 g", lait: "330 g", oeuf: "2.8", levure: "5.5 c.à.c", siropderable: "660 g", creme: "330 g" },
+      { nb: 12, farine: "480 g", sucre: "360 g", beurre: "240 g", lait: "360 g", oeuf: "3", levure: "6 c.à.c", siropderable: "720 g", creme: "360 g" },
+      { nb: 13, farine: "520 g", sucre: "390 g", beurre: "260 g", lait: "390 g", oeuf: "3.2", levure: "6.5 c.à.c", siropderable: "780 g", creme: "390 g" },
+      { nb: 14, farine: "560 g", sucre: "420 g", beurre: "280 g", lait: "420 g", oeuf: "3.5", levure: "7 c.à.c", siropderable: "840 g", creme: "420 g" },
+      { nb: 15, farine: "600 g", sucre: "450 g", beurre: "300 g", lait: "450 g", oeuf: "3.8", levure: "7.5 c.à.c", siropderable: "900 g", creme: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Préparer la pâte", detail: "Crémer le beurre mou avec le sucre. Ajouter l'œuf, puis la farine et la levure en alternant avec le lait. Verser dans un plat beurré.", badge: "⏱ 10 min" },
+      { icone: "🍁", titre: "Faire le sirop", detail: "Dans une casserole, chauffer le sirop d'érable avec la crème jusqu'à frémissement. ASTUCE CHEF : ne fais pas bouillir trop fort, le sirop ne doit pas réduire.", badge: "⏱ 5 min" },
+      { icone: "🫗", titre: "Napper", detail: "Verser délicatement le sirop chaud SUR la pâte crue. Surtout ne pas mélanger — la magie opère à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C : le gâteau monte et le sirop forme une sauce caramélée en dessous.", badge: "⏱ 30 min" },
+      { icone: "🍮", titre: "Servir", detail: "Servir tiède, la sauce nappée par-dessus. Délicieux avec une boule de glace vanille.", badge: null }
+    ]
+  },
+
+  alplermagronen: {
+    cat: "plats", pays: "suisse",
+    dateAjout: "2026-06-03",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Les Älplermagronen — gratin de macaronis, pommes de terre et fromage à la crème, le plat des bergers des Alpes suisses.",
+    tableauAlpler: [
+      { nb: 1, pates: "80 g", patate: "80 g", creme: "50 g", gruyere: "40 g", oignon: "0.5", beurre: "10 g" },
+      { nb: 2, pates: "160 g", patate: "160 g", creme: "100 g", gruyere: "80 g", oignon: "1", beurre: "20 g" },
+      { nb: 3, pates: "240 g", patate: "240 g", creme: "150 g", gruyere: "120 g", oignon: "1.5", beurre: "30 g" },
+      { nb: 4, pates: "320 g", patate: "320 g", creme: "200 g", gruyere: "160 g", oignon: "2", beurre: "40 g" },
+      { nb: 5, pates: "400 g", patate: "400 g", creme: "250 g", gruyere: "200 g", oignon: "2.5", beurre: "50 g" },
+      { nb: 6, pates: "480 g", patate: "480 g", creme: "300 g", gruyere: "240 g", oignon: "3", beurre: "60 g" },
+      { nb: 7, pates: "560 g", patate: "560 g", creme: "350 g", gruyere: "280 g", oignon: "3.5", beurre: "70 g" },
+      { nb: 8, pates: "640 g", patate: "640 g", creme: "400 g", gruyere: "320 g", oignon: "4", beurre: "80 g" },
+      { nb: 9, pates: "720 g", patate: "720 g", creme: "450 g", gruyere: "360 g", oignon: "4.5", beurre: "90 g" },
+      { nb: 10, pates: "800 g", patate: "800 g", creme: "500 g", gruyere: "400 g", oignon: "5", beurre: "100 g" },
+      { nb: 11, pates: "880 g", patate: "880 g", creme: "550 g", gruyere: "440 g", oignon: "5.5", beurre: "110 g" },
+      { nb: 12, pates: "960 g", patate: "960 g", creme: "600 g", gruyere: "480 g", oignon: "6", beurre: "120 g" },
+      { nb: 13, pates: "1.04 kg", patate: "1.04 kg", creme: "650 g", gruyere: "520 g", oignon: "6.5", beurre: "130 g" },
+      { nb: 14, pates: "1.12 kg", patate: "1.12 kg", creme: "700 g", gruyere: "560 g", oignon: "7", beurre: "140 g" },
+      { nb: 15, pates: "1.2 kg", patate: "1.2 kg", creme: "750 g", gruyere: "600 g", oignon: "7.5", beurre: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire pommes de terre et pâtes", detail: "Couper les pommes de terre en cubes. Les cuire 5 min dans l'eau bouillante salée, puis ajouter les pâtes et cuire ensemble jusqu'à tendreté. Égoutter.", badge: "⏱ 15 min" },
+      { icone: "🧅", titre: "Oignons frits", detail: "Émincer l'oignon et le faire dorer dans le beurre jusqu'à bien croustillant. Réserver. ASTUCE CHEF : c'est LE topping signature, ne le saute pas.", badge: "⏱ 8 min" },
+      { icone: "🧀", titre: "Crème et fromage", detail: "Chauffer la crème, ajouter le gruyère râpé hors du feu, mélanger jusqu'à fondre.", badge: null },
+      { icone: "🥣", titre: "Assembler", detail: "Mélanger pâtes, pommes de terre et sauce au fromage. Saler, poivrer.", badge: null },
+      { icone: "🍎", titre: "Servir", detail: "Garnir des oignons frits. SERVIR traditionnellement avec une compote de pommes à côté — le sucré-salé fait tout.", badge: null }
+    ]
+  },
+
+  birchermuesli: {
+    cat: "brunch", pays: "suisse",
+    dateAjout: "2026-06-03",
+    base: 4,
+    temps: "10 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    description: "Le Birchermüesli — flocons d'avoine trempés, pomme râpée, yaourt et noisettes. Le petit-déjeuner santé inventé en Suisse.",
+    tableauBircher: [
+      { nb: 1, flocons: "40 g", pomme: "0.5", yaourt: "80 g", lait: "40 g", citron: "0.1", miel: "10 g", noisettes: "10 g" },
+      { nb: 2, flocons: "80 g", pomme: "1", yaourt: "160 g", lait: "80 g", citron: "0.2", miel: "20 g", noisettes: "20 g" },
+      { nb: 3, flocons: "120 g", pomme: "1.5", yaourt: "240 g", lait: "120 g", citron: "0.3", miel: "30 g", noisettes: "30 g" },
+      { nb: 4, flocons: "160 g", pomme: "2", yaourt: "320 g", lait: "160 g", citron: "0.4", miel: "40 g", noisettes: "40 g" },
+      { nb: 5, flocons: "200 g", pomme: "2.5", yaourt: "400 g", lait: "200 g", citron: "0.5", miel: "50 g", noisettes: "50 g" },
+      { nb: 6, flocons: "240 g", pomme: "3", yaourt: "480 g", lait: "240 g", citron: "0.6", miel: "60 g", noisettes: "60 g" },
+      { nb: 7, flocons: "280 g", pomme: "3.5", yaourt: "560 g", lait: "280 g", citron: "0.7", miel: "70 g", noisettes: "70 g" },
+      { nb: 8, flocons: "320 g", pomme: "4", yaourt: "640 g", lait: "320 g", citron: "0.8", miel: "80 g", noisettes: "80 g" },
+      { nb: 9, flocons: "360 g", pomme: "4.5", yaourt: "720 g", lait: "360 g", citron: "0.9", miel: "90 g", noisettes: "90 g" },
+      { nb: 10, flocons: "400 g", pomme: "5", yaourt: "800 g", lait: "400 g", citron: "1", miel: "100 g", noisettes: "100 g" },
+      { nb: 11, flocons: "440 g", pomme: "5.5", yaourt: "880 g", lait: "440 g", citron: "1.1", miel: "110 g", noisettes: "110 g" },
+      { nb: 12, flocons: "480 g", pomme: "6", yaourt: "960 g", lait: "480 g", citron: "1.2", miel: "120 g", noisettes: "120 g" },
+      { nb: 13, flocons: "520 g", pomme: "6.5", yaourt: "1.04 kg", lait: "520 g", citron: "1.3", miel: "130 g", noisettes: "130 g" },
+      { nb: 14, flocons: "560 g", pomme: "7", yaourt: "1.12 kg", lait: "560 g", citron: "1.4", miel: "140 g", noisettes: "140 g" },
+      { nb: 15, flocons: "600 g", pomme: "7.5", yaourt: "1.2 kg", lait: "600 g", citron: "1.5", miel: "150 g", noisettes: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Tremper les flocons", detail: "La veille, mélanger les flocons d'avoine avec le lait. Couvrir et laisser gonfler au frais toute la nuit. ASTUCE CHEF : une nuit de repos = texture crémeuse parfaite.", badge: "⏱ 1 nuit" },
+      { icone: "🍎", titre: "Râper la pomme", detail: "Le matin, râper la pomme avec la peau. L'arroser d'un filet de jus de citron pour qu'elle ne noircisse pas.", badge: null },
+      { icone: "🥛", titre: "Mélanger", detail: "Incorporer le yaourt, la pomme râpée et le miel aux flocons. Mélanger.", badge: null },
+      { icone: "🌰", titre: "Garnir", detail: "Parsemer de noisettes concassées et, selon l'envie, de fruits frais.", badge: null },
+      { icone: "🥄", titre: "Déguster", detail: "Servir bien frais. Se conserve 2 jours au frigo — idéal à préparer à l'avance.", badge: null }
+    ]
+  },
+
 };
