@@ -112,6 +112,46 @@ function lcToggleRecette(cle, btn) {
   if (typeof lcGenererListe === "function") lcGenererListe();
 }
 
+// v1.0.6 : ouvre directement la vue Liste de courses (section Cuisine > onglet Courses).
+function ouvrirListeCourses() {
+  if (typeof fermerModal === "function") fermerModal();           // ferme la fiche recette
+  const btnCuisine = document.querySelectorAll(".nav-btn")[1];    // 2e bouton nav = Cuisine
+  if (typeof afficherSection === "function" && btnCuisine) afficherSection("cuisine", btnCuisine);
+  if (typeof switchCuisineTab === "function") switchCuisineTab("courses");
+  try { window.scrollTo({ top: 0, behavior: "smooth" }); } catch (e) {}
+}
+
+// v1.0.6 : toast CLIQUABLE (~4 s) qui redirige vers la liste de courses.
+function afficherToastCourses(message) {
+  const ancien = document.getElementById("toast-courses");
+  if (ancien) ancien.remove();
+  const t = document.createElement("div");
+  t.id = "toast-courses";
+  t.setAttribute("role", "button");
+  t.innerHTML = message + ' <span style="font-weight:800;margin-left:6px;white-space:nowrap">— Voir la liste 👉</span>';
+  t.style.cssText =
+    "position:fixed;bottom:84px;left:50%;transform:translateX(-50%) translateY(60px);" +
+    "background:linear-gradient(135deg,#ff5e9a,#ff8fb3);color:#fff;" +
+    "padding:13px 22px;border-radius:24px;box-shadow:0 6px 26px rgba(255,77,136,.5);" +
+    "z-index:100000;font-size:14px;font-weight:600;max-width:92%;text-align:center;" +
+    "cursor:pointer;opacity:0;transition:opacity .3s ease,transform .3s ease;pointer-events:auto;" +
+    "font-family:system-ui,-apple-system,sans-serif";
+  document.body.appendChild(t);
+  requestAnimationFrame(() => {
+    t.style.opacity = "1";
+    t.style.transform = "translateX(-50%) translateY(0)";
+  });
+  let parti = false;
+  const fermer = () => {
+    if (parti) return; parti = true;
+    t.style.opacity = "0";
+    t.style.transform = "translateX(-50%) translateY(60px)";
+    setTimeout(() => t.remove(), 350);
+  };
+  t.addEventListener("click", () => { fermer(); ouvrirListeCourses(); });
+  setTimeout(fermer, 4000); // visible ~4 secondes pour avoir le temps de cliquer
+}
+
 // v258.14 : ajoute UNE recette (depuis sa fiche) à la liste de courses intelligente.
 // Remplace l'ancien bouton « Liste de courses » qui ne faisait que ré-afficher les
 // ingrédients déjà visibles sur la fiche.
@@ -132,10 +172,10 @@ function ajouterRecetteAuxCourses(cle) {
   const i = liste.findIndex(p => p.cle === cle);
   if (i >= 0) {
     liste[i].personnes = nb;
-    if (typeof afficherToast === "function") afficherToast("🛒 Déjà dans ta liste (quantité mise à jour)");
+    if (typeof afficherToastCourses === "function") afficherToastCourses("🛒 Déjà dans ta liste — quantité mise à jour");
   } else {
     liste.push({ cle, personnes: nb });
-    if (typeof afficherToast === "function") afficherToast("🛒 Ajouté à ta liste de courses");
+    if (typeof afficherToastCourses === "function") afficherToastCourses("🛒 Ajouté à ta liste de courses");
   }
   if (typeof lcSauvegarder === "function") lcSauvegarder();
   if (typeof lcAfficherPanier === "function") lcAfficherPanier();
