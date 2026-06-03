@@ -16,25 +16,52 @@ window._planTabActif = "semaine";
 // Switch entre onglets planificateur
 function switchPlanTab(tab) {
   window._planTabActif = tab;
+  // Semaine et Lunch box partagent la même section (le formulaire), mais pas le même mode
+  window._planMode = (tab === "lunchbox") ? "lunchbox" : "semaine";
   const sectionSemaine = document.getElementById("section-planificateur");
   const sectionFestif  = document.getElementById("section-festif");
 
-  // Mettre à jour tous les onglets
+  // Mettre à jour tous les onglets (présents en double : section semaine + section festif)
   ["tab-semaine","tab-semaine2"].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.toggle("active", tab === "semaine");
+  });
+  ["tab-lunchbox","tab-lunchbox2"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle("active", tab === "lunchbox");
   });
   ["tab-festif","tab-festif2"].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.toggle("active", tab === "festif");
   });
 
-  if (tab === "semaine") {
-    sectionSemaine.style.display = "block";
-    sectionFestif.style.display  = "none";
+  if (tab === "festif") {
+    if (sectionSemaine) sectionSemaine.style.display = "none";
+    if (sectionFestif)  sectionFestif.style.display  = "block";
   } else {
-    sectionSemaine.style.display = "none";
-    sectionFestif.style.display  = "block";
+    if (sectionSemaine) sectionSemaine.style.display = "block";
+    if (sectionFestif)  sectionFestif.style.display  = "none";
+  }
+
+  // Adapter le formulaire selon le mode (lunch box = 1 plat/jour, pas de choix de format)
+  const lb = (tab === "lunchbox");
+  const fmt = document.getElementById("plan-field-format");
+  if (fmt) fmt.style.display = lb ? "none" : "";
+  const titre = document.querySelector("#plan-form h2");
+  if (titre) titre.textContent = lb ? "🥡 Lunch box de la semaine" : "📅 Planificateur de menus";
+  const sub = document.querySelector("#plan-form .plan-subtitle");
+  if (sub) sub.textContent = lb
+    ? "Des déjeuners rapides, sains et faciles à emporter au travail"
+    : "Générez vos menus équilibrés avec liste de courses";
+  const btnG = document.getElementById("btn-generer");
+  if (btnG) btnG.textContent = lb ? "🥡 Générer mes lunch box" : "✨ Générer mes menus";
+
+  // En changeant d'onglet, on revient au formulaire (on masque un éventuel résultat)
+  if (tab !== "festif") {
+    const form = document.getElementById("plan-form");
+    const res  = document.getElementById("plan-result");
+    if (form) form.style.display = "block";
+    if (res)  res.style.display  = "none";
   }
 }
 
@@ -497,6 +524,8 @@ function voirFormulaire() {
 }
 
 async function genererMenus() {
+  // Mode "Lunch box" : générateur dédié et local (lunchbox.js)
+  if (window._planMode === "lunchbox" && typeof genererLunchbox === "function") { genererLunchbox(); return; }
   // Vider le cache pour forcer un nouveau menu
   try { sessionStorage.removeItem(STORAGE_KEY); } catch(e) {}
   const btn = document.getElementById("btn-generer");
