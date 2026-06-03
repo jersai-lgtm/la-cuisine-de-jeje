@@ -459,6 +459,7 @@ const INGREDIENTS_PRIX = {
   persil:         { prixKg: 14.0, calPer100g: 36,   lipSat: 0.1,  sucre: 0.9,  sel: 0.1,  fibres: 3.3, prot: 3,    flv: 100 },
   coriandre:      { prixKg: 14.0, calPer100g: 23,   lipSat: 0,    sucre: 0.9,  sel: 0.1,  fibres: 2.8, prot: 2.1,  flv: 100 },
   basilic:        { prixKg: 18.0, calPer100g: 23,   lipSat: 0,    sucre: 0.3,  sel: 0,    fibres: 1.6, prot: 3.2,  flv: 100 },
+  estragon:       { prixKg: 22.0, calPer100g: 49,   lipSat: 0.1,  sucre: 0,    sel: 0.1,  fibres: 7.4, prot: 3.4,  flv: 100 },
   menthe:         { prixKg: 16.0, calPer100g: 70,   lipSat: 0.2,  sucre: 0,    sel: 0,    fibres: 8,   prot: 3.8,  flv: 100 },
   ciboule:        { prixKg: 14.0, calPer100g: 32,   lipSat: 0,    sucre: 1.9,  sel: 0,    fibres: 2.6, prot: 1.8,  flv: 100 },
   ciboulette:     { prixKg: 14.0, calPer100g: 32,   lipSat: 0,    sucre: 1.9,  sel: 0,    fibres: 2.6, prot: 1.8,  flv: 100 },
@@ -1183,7 +1184,7 @@ const INGREDIENTS_LABELS = {
   gSucre: "🍬 Sucre", sucreCreme: "🍬 Sucre", sucreCaramel: "🍬 Sucre",
   sucreMeringue: "🍬 Sucre", sucreIles: "🍬 Sucre de coco",
   miel: "🍯 Miel", sirop: "🍬 Sirop de sucre", selRebord: "🧂 Sucre/sel (rebord)",
-  siropderable: "🍁 Sirop d'érable", noisettes: "🌰 Noisettes", plantain: "🍌 Banane plantain", crabe: "🦀 Crabe", cornichon: "🥒 Cornichon",
+  siropderable: "🍁 Sirop d'érable", noisettes: "🌰 Noisettes", plantain: "🍌 Banane plantain", crabe: "🦀 Crabe", cornichon: "🥒 Cornichon", estragon: "🌿 Estragon",
   levure: "🟨 Levure fraîche", ferment: "🟨 Ferments lactiques",
   poudreAmande: "🌰 Poudre d'amande", glace: "🍦 Glace vanille",
   // == Viandes ==
