@@ -132,7 +132,7 @@ function htmlSectionAstuces(recetteKey) {
 
 // Greffe la section dans la fiche (#resultat) puis charge les astuces publiées
 function renderAstucesFiche(recetteKey) {
-  const hote = document.getElementById("resultat");
+  const hote = document.getElementById("modal-resultat");
   if (!hote || !recetteKey) return;
   if (document.getElementById("astuces-fiche")) document.getElementById("astuces-fiche").remove();
   hote.insertAdjacentHTML("beforeend", htmlSectionAstuces(recetteKey));
@@ -271,7 +271,7 @@ window.majOngletAdmin = function () {
     const _orig = window.choisirRecette;
     window.choisirRecette = function (nom) {
       const r = _orig.apply(this, arguments);
-      try { if (nom && document.getElementById("resultat")) renderAstucesFiche(nom); } catch (e) {}
+      try { if (nom && document.getElementById("modal-resultat")) renderAstucesFiche(nom); } catch (e) {}
       return r;
     };
     window._choisirPatchedAstuces = true;
