@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=1.3.0">
+<link rel="stylesheet" href="style.css?v=1.3.1">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=1.3.0">
+<link rel="stylesheet" href="style.css?v=1.3.1">
 </head>
 
 <body>
@@ -4764,34 +4764,65 @@ gtag('config', 'G-390C5MY2SS');
 <!-- ESPACE ADMIN (réservé à l'admin, affiché via estAdmin) -->
 <section id="section-admin" style="display:none">
   <h2 style="color:#ff8fb3;margin:8px 0 14px;font-size:20px">🛡️ Espace admin</h2>
-  <h3 style="color:#fff;font-size:16px;margin:0 0 8px">💬 Astuces à valider</h3>
-  <div id="admin-moderation-astuces" style="margin-bottom:22px"></div>
-  <h3 style="color:#fff;font-size:16px;margin:18px 0 4px">💬 Astuces publiées</h3>
-  <p style="color:#88858f;font-size:12px;margin:0 0 8px">Tu peux en supprimer une à tout moment (ex. validée par erreur).</p>
-  <div id="admin-astuces-publiees" style="margin-bottom:22px"></div>
-  <h3 style="color:#fff;font-size:16px;margin:18px 0 8px">📷 Photos à valider</h3>
-  <div id="admin-moderation-photos" style="margin-bottom:22px"></div>
-  <h3 style="color:#fff;font-size:16px;margin:18px 0 4px">📷 Photos publiées</h3>
-  <p style="color:#88858f;font-size:12px;margin:0 0 8px">Tu peux en supprimer une à tout moment.</p>
-  <div id="admin-photos-publiees" style="margin-bottom:22px"></div>
-  <style>#badge-modo{display:none!important}</style>
-  <h3 style="color:#fff;font-size:16px;margin:18px 0 8px">🍽️ Recettes proposées à valider</h3>
-  <div id="c-moderation" class="contrib-moderation" style="display:block">
-    <div id="c-moderation-liste"></div>
-  </div>
-  <div id="avis-admin-zone" style="display:block">
-        <h4 class="avis-admin-titre">👑 Tableau de bord admin</h4>
-        
-        <!-- v257.1 — Stats utilisateurs complètes -->
+  <style>
+    #badge-modo{display:none!important}
+    .admin-acc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;margin-bottom:12px}
+    .admin-acc>summary{list-style:none;cursor:pointer;padding:14px 16px;color:#fff;font-size:15px;font-weight:600;display:flex;align-items:center;gap:9px;user-select:none}
+    .admin-acc>summary::-webkit-details-marker{display:none}
+    .admin-acc>summary::after{content:"▸";margin-left:auto;color:#88858f;transition:transform .2s;font-size:13px}
+    .admin-acc[open]>summary::after{transform:rotate(90deg)}
+    .admin-acc-cnt{font-size:12px;color:#fff;background:#e2574c;border-radius:20px;padding:1px 9px;font-weight:700;display:none}
+    .admin-acc-cnt.on{display:inline-block}
+    .admin-acc-body{padding:0 16px 14px}
+    .admin-acc-sous{color:#88858f;font-size:12px;margin:-2px 0 10px}
+  </style>
+
+  <details class="admin-acc" open>
+    <summary>💬 Astuces à valider <span id="cnt-astuces-att" class="admin-acc-cnt"></span></summary>
+    <div class="admin-acc-body"><div id="admin-moderation-astuces"></div></div>
+  </details>
+
+  <details class="admin-acc">
+    <summary>💬 Astuces publiées <span id="cnt-astuces-pub" class="admin-acc-cnt"></span></summary>
+    <div class="admin-acc-body">
+      <p class="admin-acc-sous">Tu peux en supprimer une à tout moment (ex. validée par erreur).</p>
+      <div id="admin-astuces-publiees"></div>
+    </div>
+  </details>
+
+  <details class="admin-acc" open>
+    <summary>📷 Photos à valider <span id="cnt-photos-att" class="admin-acc-cnt"></span></summary>
+    <div class="admin-acc-body"><div id="admin-moderation-photos"></div></div>
+  </details>
+
+  <details class="admin-acc">
+    <summary>📷 Photos publiées <span id="cnt-photos-pub" class="admin-acc-cnt"></span></summary>
+    <div class="admin-acc-body">
+      <p class="admin-acc-sous">Tu peux en supprimer une à tout moment.</p>
+      <div id="admin-photos-publiees"></div>
+    </div>
+  </details>
+
+  <details class="admin-acc" open>
+    <summary>🍽️ Recettes proposées à valider <span id="cnt-recettes-att" class="admin-acc-cnt"></span></summary>
+    <div class="admin-acc-body">
+      <div id="c-moderation" class="contrib-moderation" style="display:block"><div id="c-moderation-liste"></div></div>
+    </div>
+  </details>
+
+  <details class="admin-acc">
+    <summary>👑 Tableau de bord admin</summary>
+    <div class="admin-acc-body">
+      <div id="avis-admin-zone" style="display:block">
         <div id="admin-stats-utilisateurs" class="admin-section"></div>
         <div id="admin-engagement-global" class="admin-section"></div>
         <div id="admin-preferences-agregees" class="admin-section"></div>
         <div id="admin-liste-utilisateurs" class="admin-section"></div>
-        
-        <!-- Section avis (existant) -->
         <h5 class="admin-section-titre">💌 Avis utilisateurs</h5>
         <div id="avis-admin-liste"></div>
       </div>
+    </div>
+  </details>
 </section>
 <nav class="nav-bottom">
   <button class="nav-btn active" onclick="afficherSection('accueil', this)">
@@ -5172,39 +5203,39 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=1.3.0"></script>
-<script src="js/allergenes.js?v=1.3.0"></script>
-<script src="js/exceptions.js?v=1.3.0"></script>
-<script src="js/recettes.js?v=1.3.0"></script>
-<script src="js/recettes_plats.js?v=1.3.0"></script>
-<script src="js/recettes_desserts.js?v=1.3.0"></script>
-<script src="js/recettes_soupes.js?v=1.3.0"></script>
-<script src="js/recettes_brunch.js?v=1.3.0"></script>
-<script src="js/recettes_encas.js?v=1.3.0"></script>
-<script src="js/recettes_aperitifs.js?v=1.3.0"></script>
-<script src="js/recettes_healthy.js?v=1.3.0"></script>
-<script src="js/recettes_entrees.js?v=1.3.0"></script>
-<script src="js/recettes_sauces.js?v=1.3.0"></script>
-<script src="js/recettes_boulangerie.js?v=1.3.0"></script>
-<script src="js/recettes_salades.js?v=1.3.0"></script>
-<script src="js/recettes_pizzas.js?v=1.3.0"></script>
-<script src="js/recettes_cocktails.js?v=1.3.0"></script>
-<script src="js/recettes_mocktails.js?v=1.3.0"></script>
-<script src="js/ingredients_prix.js?v=1.3.0"></script>
-<script src="js/drapeaux.js?v=1.3.0"></script>
-<script src="js/tables.js?v=1.3.0"></script>
-<script src="js/app.js?v=1.3.0"></script>
-<script src="js/emojis.js?v=1.3.0"></script>
-<script src="js/app_avis.js?v=1.3.0"></script>
-<script src="js/app_admin.js?v=1.3.0"></script>
-<script src="js/app_menu.js?v=1.3.0"></script>
-<script src="js/lunchbox.js?v=1.3.0"></script>
-<script src="js/app_courses_impr.js?v=1.3.0"></script>
-<script src="js/app_recherche.js?v=1.3.0"></script>
-<script src="js/app_garde_manger.js?v=1.3.0"></script>
-<script src="js/app_modal_confirm.js?v=1.3.0"></script>
-<script src="js/app_courses.js?v=1.3.0"></script>
-<script src="js/app_stats.js?v=1.3.0"></script>
+<script src="js/version.js?v=1.3.1"></script>
+<script src="js/allergenes.js?v=1.3.1"></script>
+<script src="js/exceptions.js?v=1.3.1"></script>
+<script src="js/recettes.js?v=1.3.1"></script>
+<script src="js/recettes_plats.js?v=1.3.1"></script>
+<script src="js/recettes_desserts.js?v=1.3.1"></script>
+<script src="js/recettes_soupes.js?v=1.3.1"></script>
+<script src="js/recettes_brunch.js?v=1.3.1"></script>
+<script src="js/recettes_encas.js?v=1.3.1"></script>
+<script src="js/recettes_aperitifs.js?v=1.3.1"></script>
+<script src="js/recettes_healthy.js?v=1.3.1"></script>
+<script src="js/recettes_entrees.js?v=1.3.1"></script>
+<script src="js/recettes_sauces.js?v=1.3.1"></script>
+<script src="js/recettes_boulangerie.js?v=1.3.1"></script>
+<script src="js/recettes_salades.js?v=1.3.1"></script>
+<script src="js/recettes_pizzas.js?v=1.3.1"></script>
+<script src="js/recettes_cocktails.js?v=1.3.1"></script>
+<script src="js/recettes_mocktails.js?v=1.3.1"></script>
+<script src="js/ingredients_prix.js?v=1.3.1"></script>
+<script src="js/drapeaux.js?v=1.3.1"></script>
+<script src="js/tables.js?v=1.3.1"></script>
+<script src="js/app.js?v=1.3.1"></script>
+<script src="js/emojis.js?v=1.3.1"></script>
+<script src="js/app_avis.js?v=1.3.1"></script>
+<script src="js/app_admin.js?v=1.3.1"></script>
+<script src="js/app_menu.js?v=1.3.1"></script>
+<script src="js/lunchbox.js?v=1.3.1"></script>
+<script src="js/app_courses_impr.js?v=1.3.1"></script>
+<script src="js/app_recherche.js?v=1.3.1"></script>
+<script src="js/app_garde_manger.js?v=1.3.1"></script>
+<script src="js/app_modal_confirm.js?v=1.3.1"></script>
+<script src="js/app_courses.js?v=1.3.1"></script>
+<script src="js/app_stats.js?v=1.3.1"></script>
 
 
 
@@ -5619,11 +5650,11 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
-<script src="auth.js?v=1.3.0"></script>
-<script src="js/note_recettes.js?v=1.3.0"></script>
-<script src="js/app_contribution.js?v=1.3.0"></script>
-<script src="js/community.js?v=1.3.0"></script>
-<script src="js/whatsnew.js?v=1.3.0"></script>
+<script src="auth.js?v=1.3.1"></script>
+<script src="js/note_recettes.js?v=1.3.1"></script>
+<script src="js/app_contribution.js?v=1.3.1"></script>
+<script src="js/community.js?v=1.3.1"></script>
+<script src="js/whatsnew.js?v=1.3.1"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
