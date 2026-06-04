@@ -579,5 +579,143 @@ Object.assign(recettes, {
       { icone: "✨", titre: "Couronner de mousse", detail: "Déposer généreusement la mousse à la crème sur le dessus, façon faux-col de bière. Un filet de caramel par-dessus pour la gourmandise.", badge: null },
       { icone: "🪄", titre: "Service magique", detail: "Servir AUSSITÔT, mousse débordante. Version froide en été ; pour une version chaude réconfortante, remplacer la limonade par du lait chaud vanillé. À déguster même par les sorciers de moins de 11 ans !", badge: null }
     ]
-  }
+  },
+  shirleytemple: {
+    nom: "Shirley Temple",
+    dateAjout: "2026-06-04",
+    cat: "mocktails", pays: "usa",
+    base: 1,
+    temps: "3 min",
+    niveau: "⭐ Très facile",
+    emoji: "🍒",
+    description: "Le mocktail rétro préféré des enfants : limonade pétillante, grenadine et cerise. Doux, fruité et festif.",
+    tableauShirleytemple: [
+      { nb: 1, limonade: "15 cl", grenadine: "2 cl", citronvert: "½", cerise: "1" },
+      { nb: 2, limonade: "30 cl", grenadine: "4 cl", citronvert: "1", cerise: "2" },
+      { nb: 3, limonade: "45 cl", grenadine: "6 cl", citronvert: "1½", cerise: "3" },
+      { nb: 4, limonade: "60 cl", grenadine: "8 cl", citronvert: "2", cerise: "4" },
+      { nb: 5, limonade: "75 cl", grenadine: "10 cl", citronvert: "2½", cerise: "5" },
+      { nb: 6, limonade: "90 cl", grenadine: "12 cl", citronvert: "3", cerise: "6" },
+      { nb: 7, limonade: "1,05 L", grenadine: "14 cl", citronvert: "3½", cerise: "7" },
+      { nb: 8, limonade: "1,2 L", grenadine: "16 cl", citronvert: "4", cerise: "8" },
+      { nb: 9, limonade: "1,35 L", grenadine: "18 cl", citronvert: "4½", cerise: "9" },
+      { nb: 10, limonade: "1,5 L", grenadine: "20 cl", citronvert: "5", cerise: "10" },
+      { nb: 11, limonade: "1,65 L", grenadine: "22 cl", citronvert: "5½", cerise: "11" },
+      { nb: 12, limonade: "1,8 L", grenadine: "24 cl", citronvert: "6", cerise: "12" },
+      { nb: 13, limonade: "1,95 L", grenadine: "26 cl", citronvert: "6½", cerise: "13" },
+      { nb: 14, limonade: "2,1 L", grenadine: "28 cl", citronvert: "7", cerise: "14" },
+      { nb: 15, limonade: "2,25 L", grenadine: "30 cl", citronvert: "7½", cerise: "15" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Glace", detail: "Remplir un grand verre de glaçons.", badge: null },
+      { icone: "🍒", titre: "Grenadine", detail: "Verser le sirop de grenadine au fond du verre.", badge: null },
+      { icone: "🥤", titre: "Limonade", detail: "Compléter doucement avec la limonade bien fraîche pour conserver les bulles.", badge: null },
+      { icone: "🍋", titre: "Finir", detail: "Presser le demi-citron vert, remuer une fois et garnir d'une cerise. ASTUCE CHEF : versez la grenadine en dernier sur le dos d'une cuillère pour un dégradé rouge spectaculaire.", badge: "⏱ 3 min" }
+    ]
+  },
+  virginspritz: {
+    nom: "Virgin Spritz",
+    dateAjout: "2026-06-04",
+    cat: "mocktails", pays: "italie",
+    base: 1,
+    temps: "4 min",
+    niveau: "⭐ Facile",
+    emoji: "🍊",
+    description: "La version sans alcool du spritz italien : jus d'orange, soda amer et eau gazeuse. Pétillant, légèrement amer et très désaltérant.",
+    tableauVirginspritz: [
+      { nb: 1, jusorange: "6 cl", sodaamer: "6 cl", eauGaz: "6 cl", orange: "1" },
+      { nb: 2, jusorange: "12 cl", sodaamer: "12 cl", eauGaz: "12 cl", orange: "2" },
+      { nb: 3, jusorange: "18 cl", sodaamer: "18 cl", eauGaz: "18 cl", orange: "3" },
+      { nb: 4, jusorange: "24 cl", sodaamer: "24 cl", eauGaz: "24 cl", orange: "4" },
+      { nb: 5, jusorange: "30 cl", sodaamer: "30 cl", eauGaz: "30 cl", orange: "5" },
+      { nb: 6, jusorange: "36 cl", sodaamer: "36 cl", eauGaz: "36 cl", orange: "6" },
+      { nb: 7, jusorange: "42 cl", sodaamer: "42 cl", eauGaz: "42 cl", orange: "7" },
+      { nb: 8, jusorange: "48 cl", sodaamer: "48 cl", eauGaz: "48 cl", orange: "8" },
+      { nb: 9, jusorange: "54 cl", sodaamer: "54 cl", eauGaz: "54 cl", orange: "9" },
+      { nb: 10, jusorange: "60 cl", sodaamer: "60 cl", eauGaz: "60 cl", orange: "10" },
+      { nb: 11, jusorange: "66 cl", sodaamer: "66 cl", eauGaz: "66 cl", orange: "11" },
+      { nb: 12, jusorange: "72 cl", sodaamer: "72 cl", eauGaz: "72 cl", orange: "12" },
+      { nb: 13, jusorange: "78 cl", sodaamer: "78 cl", eauGaz: "78 cl", orange: "13" },
+      { nb: 14, jusorange: "84 cl", sodaamer: "84 cl", eauGaz: "84 cl", orange: "14" },
+      { nb: 15, jusorange: "90 cl", sodaamer: "90 cl", eauGaz: "90 cl", orange: "15" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Glace", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
+      { icone: "🍊", titre: "Base orange", detail: "Verser le jus d'orange et le soda amer sans alcool.", badge: null },
+      { icone: "💧", titre: "Bulles", detail: "Compléter avec l'eau gazeuse et remuer délicatement.", badge: null },
+      { icone: "🍊", titre: "Garnir", detail: "Décorer d'une tranche d'orange et, si vous aimez, d'une olive verte. ASTUCE CHEF : un soupçon de jus de pamplemousse apporte l'amertume typique du spritz original.", badge: "⏱ 4 min" }
+    ]
+  },
+  thepechemaison: {
+    nom: "Thé glacé pêche maison",
+    dateAjout: "2026-06-04",
+    cat: "mocktails", pays: "france",
+    base: 1,
+    temps: "10 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🍑",
+    description: "Un thé glacé maison bien meilleur que ceux du commerce : thé noir infusé, pêche fraîche, citron et juste ce qu'il faut de sucre.",
+    tableauThepechemaison: [
+      { nb: 1, thenoir: "20 cl", peche: "½", juscitron: "1 cl", siropsucre: "2 cl" },
+      { nb: 2, thenoir: "40 cl", peche: "1", juscitron: "2 cl", siropsucre: "4 cl" },
+      { nb: 3, thenoir: "60 cl", peche: "1½", juscitron: "3 cl", siropsucre: "6 cl" },
+      { nb: 4, thenoir: "80 cl", peche: "2", juscitron: "4 cl", siropsucre: "8 cl" },
+      { nb: 5, thenoir: "1 L", peche: "2½", juscitron: "5 cl", siropsucre: "10 cl" },
+      { nb: 6, thenoir: "1,2 L", peche: "3", juscitron: "6 cl", siropsucre: "12 cl" },
+      { nb: 7, thenoir: "1,4 L", peche: "3½", juscitron: "7 cl", siropsucre: "14 cl" },
+      { nb: 8, thenoir: "1,6 L", peche: "4", juscitron: "8 cl", siropsucre: "16 cl" },
+      { nb: 9, thenoir: "1,8 L", peche: "4½", juscitron: "9 cl", siropsucre: "18 cl" },
+      { nb: 10, thenoir: "2 L", peche: "5", juscitron: "10 cl", siropsucre: "20 cl" },
+      { nb: 11, thenoir: "2,2 L", peche: "5½", juscitron: "11 cl", siropsucre: "22 cl" },
+      { nb: 12, thenoir: "2,4 L", peche: "6", juscitron: "12 cl", siropsucre: "24 cl" },
+      { nb: 13, thenoir: "2,6 L", peche: "6½", juscitron: "13 cl", siropsucre: "26 cl" },
+      { nb: 14, thenoir: "2,8 L", peche: "7", juscitron: "14 cl", siropsucre: "28 cl" },
+      { nb: 15, thenoir: "3 L", peche: "7½", juscitron: "15 cl", siropsucre: "30 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫖", titre: "Infuser", detail: "Faire infuser le thé noir 4 minutes dans de l'eau frémissante, pas plus, pour éviter l'amertume.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Retirer le sachet, sucrer légèrement et laisser refroidir complètement.", badge: null },
+      { icone: "🍑", titre: "Pêche", detail: "Couper la pêche en fines lamelles et les déposer dans le verre.", badge: null },
+      { icone: "🧊", titre: "Assembler", detail: "Remplir de glaçons, verser le thé froid et le jus de citron.", badge: null },
+      { icone: "🥄", titre: "Servir", detail: "Remuer et goûter pour ajuster le sucre. ASTUCE CHEF : écrasez quelques morceaux de pêche au fond du verre pour un thé glacé naturellement parfumé, sans arôme artificiel.", badge: "⏱ 10 min" }
+    ]
+  },
+  virginmargarita: {
+    nom: "Virgin Margarita",
+    dateAjout: "2026-06-04",
+    cat: "mocktails", pays: "mexique",
+    base: 1,
+    temps: "4 min",
+    niveau: "⭐ Facile",
+    emoji: "🍸",
+    description: "La margarita sans alcool : citron vert, orange et sirop d'agave, avec un bord de verre givré au sel. Acidulé et rafraîchissant.",
+    tableauVirginmargarita: [
+      { nb: 1, juscitronvert: "2 cl", jusorange: "4 cl", siropagave: "1,5 cl", eauGaz: "4 cl", sel: "1 pincée" },
+      { nb: 2, juscitronvert: "4 cl", jusorange: "8 cl", siropagave: "3 cl", eauGaz: "8 cl", sel: "2 pincées" },
+      { nb: 3, juscitronvert: "6 cl", jusorange: "12 cl", siropagave: "4,5 cl", eauGaz: "12 cl", sel: "3 pincées" },
+      { nb: 4, juscitronvert: "8 cl", jusorange: "16 cl", siropagave: "6 cl", eauGaz: "16 cl", sel: "4 pincées" },
+      { nb: 5, juscitronvert: "10 cl", jusorange: "20 cl", siropagave: "7,5 cl", eauGaz: "20 cl", sel: "5 pincées" },
+      { nb: 6, juscitronvert: "12 cl", jusorange: "24 cl", siropagave: "9 cl", eauGaz: "24 cl", sel: "6 pincées" },
+      { nb: 7, juscitronvert: "14 cl", jusorange: "28 cl", siropagave: "10,5 cl", eauGaz: "28 cl", sel: "7 pincées" },
+      { nb: 8, juscitronvert: "16 cl", jusorange: "32 cl", siropagave: "12 cl", eauGaz: "32 cl", sel: "8 pincées" },
+      { nb: 9, juscitronvert: "18 cl", jusorange: "36 cl", siropagave: "13,5 cl", eauGaz: "36 cl", sel: "9 pincées" },
+      { nb: 10, juscitronvert: "20 cl", jusorange: "40 cl", siropagave: "15 cl", eauGaz: "40 cl", sel: "10 pincées" },
+      { nb: 11, juscitronvert: "22 cl", jusorange: "44 cl", siropagave: "16,5 cl", eauGaz: "44 cl", sel: "11 pincées" },
+      { nb: 12, juscitronvert: "24 cl", jusorange: "48 cl", siropagave: "18 cl", eauGaz: "48 cl", sel: "12 pincées" },
+      { nb: 13, juscitronvert: "26 cl", jusorange: "52 cl", siropagave: "19,5 cl", eauGaz: "52 cl", sel: "13 pincées" },
+      { nb: 14, juscitronvert: "28 cl", jusorange: "56 cl", siropagave: "21 cl", eauGaz: "56 cl", sel: "14 pincées" },
+      { nb: 15, juscitronvert: "30 cl", jusorange: "60 cl", siropagave: "22,5 cl", eauGaz: "60 cl", sel: "15 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧂", titre: "Givrer le verre", detail: "Passer un quartier de citron sur le bord du verre puis le tremper dans une assiette de sel fin.", badge: null },
+      { icone: "🥃", titre: "Au shaker", detail: "Verser le jus de citron vert, le jus d'orange et le sirop d'agave dans un shaker avec des glaçons.", badge: null },
+      { icone: "🤝", titre: "Frapper", detail: "Secouer une dizaine de secondes.", badge: null },
+      { icone: "🍸", titre: "Verser", detail: "Filtrer dans le verre givré rempli de glace.", badge: null },
+      { icone: "💧", titre: "Finir", detail: "Allonger d'un trait d'eau gazeuse et remuer. ASTUCE CHEF : remplacez le sirop d'agave par du miel liquide légèrement détendu à l'eau chaude pour une douceur plus parfumée.", badge: "⏱ 4 min" }
+    ]
+  },
 });

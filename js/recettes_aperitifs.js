@@ -1005,4 +1005,75 @@ tapenade: {
       { icone: "🥑", titre: "Servir", detail: "Servir chaud, avec une sauce avocat ou une sauce piquante pour tremper.", badge: null }
     ]
   },
+  tapenade: {
+    nom: "Tapenade d'olives noires",
+    dateAjout: "2026-06-04",
+    cat: "aperitifs", pays: "france",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Très facile",
+    emoji: "🫒",
+    description: "La pâte à tartiner provençale : olives noires, anchois, câpres et huile d'olive mixés. Parfaite à l'apéritif sur des toasts.",
+    tableauTapenade: [
+      { nb: 1, olivenoire: "50 g", anchois: "1", capres: "0,5 c.à.c", ail: "0", huileolive: "1 c.à.s", juscitron: "0,5 cl" },
+      { nb: 2, olivenoire: "100 g", anchois: "2", capres: "1 c.à.c", ail: "½", huileolive: "2 c.à.s", juscitron: "1 cl" },
+      { nb: 3, olivenoire: "150 g", anchois: "3", capres: "1,5 c.à.c", ail: "1", huileolive: "3 c.à.s", juscitron: "1,5 cl" },
+      { nb: 4, olivenoire: "200 g", anchois: "4", capres: "2 c.à.c", ail: "1", huileolive: "4 c.à.s", juscitron: "2 cl" },
+      { nb: 5, olivenoire: "250 g", anchois: "5", capres: "2,5 c.à.c", ail: "1", huileolive: "5 c.à.s", juscitron: "2,5 cl" },
+      { nb: 6, olivenoire: "300 g", anchois: "6", capres: "3 c.à.c", ail: "1½", huileolive: "6 c.à.s", juscitron: "3 cl" },
+      { nb: 7, olivenoire: "350 g", anchois: "7", capres: "3,5 c.à.c", ail: "2", huileolive: "7 c.à.s", juscitron: "3,5 cl" },
+      { nb: 8, olivenoire: "400 g", anchois: "8", capres: "4 c.à.c", ail: "2", huileolive: "8 c.à.s", juscitron: "4 cl" },
+      { nb: 9, olivenoire: "450 g", anchois: "9", capres: "4,5 c.à.c", ail: "2", huileolive: "9 c.à.s", juscitron: "4,5 cl" },
+      { nb: 10, olivenoire: "500 g", anchois: "10", capres: "5 c.à.c", ail: "2½", huileolive: "10 c.à.s", juscitron: "5 cl" },
+      { nb: 11, olivenoire: "550 g", anchois: "11", capres: "5,5 c.à.c", ail: "3", huileolive: "11 c.à.s", juscitron: "5,5 cl" },
+      { nb: 12, olivenoire: "600 g", anchois: "12", capres: "6 c.à.c", ail: "3", huileolive: "12 c.à.s", juscitron: "6 cl" },
+      { nb: 13, olivenoire: "650 g", anchois: "13", capres: "6,5 c.à.c", ail: "3", huileolive: "13 c.à.s", juscitron: "6,5 cl" },
+      { nb: 14, olivenoire: "700 g", anchois: "14", capres: "7 c.à.c", ail: "3½", huileolive: "14 c.à.s", juscitron: "7 cl" },
+      { nb: 15, olivenoire: "750 g", anchois: "15", capres: "7,5 c.à.c", ail: "4", huileolive: "15 c.à.s", juscitron: "7,5 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫒", titre: "Dénoyauter", detail: "Vérifier que les olives sont bien dénoyautées et les égoutter.", badge: null },
+      { icone: "🐟", titre: "Réunir", detail: "Mettre les olives, les anchois, les câpres et l'ail dans le bol d'un mixeur.", badge: null },
+      { icone: "🌿", titre: "Mixer", detail: "Mixer par à-coups en ajoutant l'huile d'olive en filet, jusqu'à obtenir une pâte encore un peu texturée.", badge: null },
+      { icone: "🍋", titre: "Ajuster", detail: "Ajouter le jus de citron, poivrer et goûter (le sel est souvent inutile grâce aux anchois et câpres).", badge: null },
+      { icone: "🥖", titre: "Servir", detail: "Servir sur des toasts grillés. ASTUCE CHEF : laissez reposer la tapenade au frais 1 heure avant de servir, les saveurs n'en seront que meilleures.", badge: null }
+    ]
+  },
+  cakesalejambon: {
+    nom: "Cake salé jambon-olives",
+    dateAjout: "2026-06-04",
+    cat: "aperitifs", pays: "france",
+    base: 6,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Le cake salé moelleux des apéritifs réussis : jambon, olives et fromage. Se déguste tiède ou froid, en tranches ou en dés.",
+    tableauCakesalejambon: [
+      { nb: 1, farine: "33 g", oeufs: "½", lait: "1,7 cl", huile: "1,7 cl", jambon: "25 g", fromagerape: "17 g", olives: "13 g", levure: "0,33 c.à.c" },
+      { nb: 2, farine: "66 g", oeufs: "1", lait: "3,4 cl", huile: "3,4 cl", jambon: "50 g", fromagerape: "34 g", olives: "26 g", levure: "0,66 c.à.c" },
+      { nb: 3, farine: "99 g", oeufs: "1½", lait: "5,1 cl", huile: "5,1 cl", jambon: "75 g", fromagerape: "51 g", olives: "39 g", levure: "0,99 c.à.c" },
+      { nb: 4, farine: "132 g", oeufs: "2", lait: "6,8 cl", huile: "6,8 cl", jambon: "100 g", fromagerape: "68 g", olives: "52 g", levure: "1,32 c.à.c" },
+      { nb: 5, farine: "165 g", oeufs: "2½", lait: "8,5 cl", huile: "8,5 cl", jambon: "125 g", fromagerape: "85 g", olives: "65 g", levure: "1,65 c.à.c" },
+      { nb: 6, farine: "198 g", oeufs: "3", lait: "10,2 cl", huile: "10,2 cl", jambon: "150 g", fromagerape: "102 g", olives: "78 g", levure: "1,98 c.à.c" },
+      { nb: 7, farine: "231 g", oeufs: "3½", lait: "11,9 cl", huile: "11,9 cl", jambon: "175 g", fromagerape: "119 g", olives: "91 g", levure: "2,31 c.à.c" },
+      { nb: 8, farine: "264 g", oeufs: "4", lait: "13,6 cl", huile: "13,6 cl", jambon: "200 g", fromagerape: "136 g", olives: "104 g", levure: "2,64 c.à.c" },
+      { nb: 9, farine: "297 g", oeufs: "4½", lait: "15,3 cl", huile: "15,3 cl", jambon: "225 g", fromagerape: "153 g", olives: "117 g", levure: "2,97 c.à.c" },
+      { nb: 10, farine: "330 g", oeufs: "5", lait: "17 cl", huile: "17 cl", jambon: "250 g", fromagerape: "170 g", olives: "130 g", levure: "3,3 c.à.c" },
+      { nb: 11, farine: "363 g", oeufs: "5½", lait: "18,7 cl", huile: "18,7 cl", jambon: "275 g", fromagerape: "187 g", olives: "143 g", levure: "3,63 c.à.c" },
+      { nb: 12, farine: "396 g", oeufs: "6", lait: "20,4 cl", huile: "20,4 cl", jambon: "300 g", fromagerape: "204 g", olives: "156 g", levure: "3,96 c.à.c" },
+      { nb: 13, farine: "429 g", oeufs: "6½", lait: "22,1 cl", huile: "22,1 cl", jambon: "325 g", fromagerape: "221 g", olives: "169 g", levure: "4,29 c.à.c" },
+      { nb: 14, farine: "462 g", oeufs: "7", lait: "23,8 cl", huile: "23,8 cl", jambon: "350 g", fromagerape: "238 g", olives: "182 g", levure: "4,62 c.à.c" },
+      { nb: 15, farine: "495 g", oeufs: "7½", lait: "25,5 cl", huile: "25,5 cl", jambon: "375 g", fromagerape: "255 g", olives: "195 g", levure: "4,95 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger la farine et la levure. Ajouter les œufs, le lait et l'huile pour obtenir une pâte lisse.", badge: null },
+      { icone: "🥓", titre: "Garniture", detail: "Couper le jambon en dés et les olives en rondelles. Les incorporer avec le fromage râpé.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Poivrer généreusement (saler peu, le jambon et les olives le sont déjà).", badge: null },
+      { icone: "🧈", titre: "Moule", detail: "Verser dans un moule à cake beurré et fariné.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180 °C pendant 40 à 45 minutes, jusqu'à ce que la lame d'un couteau ressorte sèche.", badge: "⏱ 45 min" },
+      { icone: "🔪", titre: "Servir", detail: "Laisser tiédir avant de démouler et trancher. ASTUCE CHEF : pour un cake bien aéré, sortez les œufs et le lait du réfrigérateur à l'avance et ne travaillez pas trop la pâte.", badge: null }
+    ]
+  },
 });
