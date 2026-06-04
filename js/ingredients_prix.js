@@ -1127,6 +1127,7 @@ if (typeof module !== "undefined") {
 // ============================================================
 // Mapping des clés de colonnes vers labels affichables
 const INGREDIENTS_LABELS = {
+  painmie: "🍞 Pain de mie", poireau: "🥬 Poireau",
   // == v257 — Muffins & Pâtisserie ==
   chocolatBlanc: "🤍 Chocolat blanc", chocolatLait: "🍫 Chocolat au lait",
   pepitesChoco: "🍫 Pépites de chocolat",

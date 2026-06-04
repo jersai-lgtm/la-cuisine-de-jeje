@@ -1190,4 +1190,36 @@ Object.assign(recettes, {
       { icone: "🍲", titre: "Servir", detail: "Servir bien chaud, chaque bol garni d'un demi-œuf.", badge: null }
     ]
   },
+  veloutecarottes: {
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥕",
+    description: "Un velouté de carottes tout doux et légèrement crémeux. Coloré, réconfortant et plein de douceur — les enfants adorent.",
+    tableauVelouteCarottes: [
+      { nb: 1, carotte: "150 g", pdterre: "80 g", oignon: "1", creme: "30 ml" },
+      { nb: 2, carotte: "300 g", pdterre: "160 g", oignon: "1", creme: "60 ml" },
+      { nb: 3, carotte: "450 g", pdterre: "240 g", oignon: "2", creme: "90 ml" },
+      { nb: 4, carotte: "600 g", pdterre: "320 g", oignon: "2", creme: "120 ml" },
+      { nb: 5, carotte: "750 g", pdterre: "400 g", oignon: "3", creme: "150 ml" },
+      { nb: 6, carotte: "900 g", pdterre: "480 g", oignon: "3", creme: "180 ml" },
+      { nb: 7, carotte: "1050 g", pdterre: "560 g", oignon: "4", creme: "210 ml" },
+      { nb: 8, carotte: "1200 g", pdterre: "640 g", oignon: "4", creme: "240 ml" },
+      { nb: 9, carotte: "1350 g", pdterre: "720 g", oignon: "5", creme: "270 ml" },
+      { nb: 10, carotte: "1500 g", pdterre: "800 g", oignon: "5", creme: "300 ml" },
+      { nb: 11, carotte: "1650 g", pdterre: "880 g", oignon: "6", creme: "330 ml" },
+      { nb: 12, carotte: "1800 g", pdterre: "960 g", oignon: "6", creme: "360 ml" },
+      { nb: 13, carotte: "1950 g", pdterre: "1040 g", oignon: "7", creme: "390 ml" },
+      { nb: 14, carotte: "2100 g", pdterre: "1120 g", oignon: "7", creme: "420 ml" },
+      { nb: 15, carotte: "2250 g", pdterre: "1200 g", oignon: "8", creme: "450 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Couper", detail: "Éplucher les carottes, les pommes de terre et l'oignon, puis les couper en morceaux.", badge: null },
+      { icone: "🥕", titre: "Cuire", detail: "Mettre les légumes dans une casserole, couvrir d'eau, saler et laisser mijoter jusqu'à ce qu'ils soient bien tendres.", badge: "⏱ 25 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer finement avec la crème jusqu'à obtenir une texture veloutée. Ajuster avec un peu d'eau si nécessaire.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir bien chaud. ASTUCE : une pincée de cumin ou de coriandre sublime les carottes.", badge: null }
+    ]
+  },
 });

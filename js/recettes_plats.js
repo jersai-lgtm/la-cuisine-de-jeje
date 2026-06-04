@@ -7186,4 +7186,258 @@ Object.assign(recettes, {
       { icone: "🍴", titre: "Servir", detail: "Servir brûlant, idéalement sur une injera, avec un peu de fromage frais à côté.", badge: null }
     ]
   },
+  patestomate: {
+    cat: "plats", pays: "italie",
+    base: 2,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "Le grand classique sans prise de tête : des pâtes nappées d'une sauce tomate maison mijotée à l'oignon et à l'huile d'olive.",
+    tableauPatesTomate: [
+      { nb: 1, pates: "100 g", tomate: "150 g", oignon: "1", huileolive: "1 c.à.s", parmesan: "15 g" },
+      { nb: 2, pates: "200 g", tomate: "300 g", oignon: "1", huileolive: "2 c.à.s", parmesan: "30 g" },
+      { nb: 3, pates: "300 g", tomate: "450 g", oignon: "2", huileolive: "3 c.à.s", parmesan: "45 g" },
+      { nb: 4, pates: "400 g", tomate: "600 g", oignon: "2", huileolive: "4 c.à.s", parmesan: "60 g" },
+      { nb: 5, pates: "500 g", tomate: "750 g", oignon: "3", huileolive: "5 c.à.s", parmesan: "75 g" },
+      { nb: 6, pates: "600 g", tomate: "900 g", oignon: "3", huileolive: "6 c.à.s", parmesan: "90 g" },
+      { nb: 7, pates: "700 g", tomate: "1050 g", oignon: "4", huileolive: "7 c.à.s", parmesan: "105 g" },
+      { nb: 8, pates: "800 g", tomate: "1200 g", oignon: "4", huileolive: "8 c.à.s", parmesan: "120 g" },
+      { nb: 9, pates: "900 g", tomate: "1350 g", oignon: "5", huileolive: "9 c.à.s", parmesan: "135 g" },
+      { nb: 10, pates: "1000 g", tomate: "1500 g", oignon: "5", huileolive: "10 c.à.s", parmesan: "150 g" },
+      { nb: 11, pates: "1100 g", tomate: "1650 g", oignon: "6", huileolive: "11 c.à.s", parmesan: "165 g" },
+      { nb: 12, pates: "1200 g", tomate: "1800 g", oignon: "6", huileolive: "12 c.à.s", parmesan: "180 g" },
+      { nb: 13, pates: "1300 g", tomate: "1950 g", oignon: "7", huileolive: "13 c.à.s", parmesan: "195 g" },
+      { nb: 14, pates: "1400 g", tomate: "2100 g", oignon: "7", huileolive: "14 c.à.s", parmesan: "210 g" },
+      { nb: 15, pates: "1500 g", tomate: "2250 g", oignon: "8", huileolive: "15 c.à.s", parmesan: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon et couper les tomates en dés (ou utiliser des tomates concassées en boîte).", badge: null },
+      { icone: "🥘", titre: "Faire la sauce", detail: "Faire revenir l'oignon dans l'huile d'olive, ajouter les tomates, saler, et laisser mijoter à feu doux jusqu'à ce que la sauce épaississe.", badge: "⏱ 15 min" },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Pendant ce temps, cuire les pâtes al dente dans l'eau bouillante salée. Égoutter.", badge: "⏱ 10 min" },
+      { icone: "🧀", titre: "Mélanger et servir", detail: "Mélanger les pâtes avec la sauce tomate, parsemer de parmesan et servir. ASTUCE : quelques feuilles de basilic frais subliment le plat.", badge: null }
+    ]
+  },
+  carbonarasimple: {
+    cat: "plats", pays: "italie",
+    base: 2,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍝",
+    description: "La vraie carbonara, sans crème : des pâtes liées à l'œuf et au parmesan, avec des lardons dorés. Onctueuse et rapide.",
+    tableauCarbonaraSimple: [
+      { nb: 1, pates: "100 g", lardons: "50 g", oeufs: "1", parmesan: "20 g", poivre: "1 pincée" },
+      { nb: 2, pates: "200 g", lardons: "100 g", oeufs: "2", parmesan: "40 g", poivre: "1 pincée" },
+      { nb: 3, pates: "300 g", lardons: "150 g", oeufs: "3", parmesan: "60 g", poivre: "1 pincée" },
+      { nb: 4, pates: "400 g", lardons: "200 g", oeufs: "4", parmesan: "80 g", poivre: "1 pincée" },
+      { nb: 5, pates: "500 g", lardons: "250 g", oeufs: "5", parmesan: "100 g", poivre: "1 pincée" },
+      { nb: 6, pates: "600 g", lardons: "300 g", oeufs: "6", parmesan: "120 g", poivre: "1 pincée" },
+      { nb: 7, pates: "700 g", lardons: "350 g", oeufs: "7", parmesan: "140 g", poivre: "1 pincée" },
+      { nb: 8, pates: "800 g", lardons: "400 g", oeufs: "8", parmesan: "160 g", poivre: "1 pincée" },
+      { nb: 9, pates: "900 g", lardons: "450 g", oeufs: "9", parmesan: "180 g", poivre: "1 pincée" },
+      { nb: 10, pates: "1000 g", lardons: "500 g", oeufs: "10", parmesan: "200 g", poivre: "1 pincée" },
+      { nb: 11, pates: "1100 g", lardons: "550 g", oeufs: "11", parmesan: "220 g", poivre: "1 pincée" },
+      { nb: 12, pates: "1200 g", lardons: "600 g", oeufs: "12", parmesan: "240 g", poivre: "1 pincée" },
+      { nb: 13, pates: "1300 g", lardons: "650 g", oeufs: "13", parmesan: "260 g", poivre: "1 pincée" },
+      { nb: 14, pates: "1400 g", lardons: "700 g", oeufs: "14", parmesan: "280 g", poivre: "1 pincée" },
+      { nb: 15, pates: "1500 g", lardons: "750 g", oeufs: "15", parmesan: "300 g", poivre: "1 pincée" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes dans un grand volume d'eau bien salée jusqu'à ce qu'elles soient al dente. Garder un peu d'eau de cuisson avant d'égoutter.", badge: "⏱ 10 min" },
+      { icone: "🥓", titre: "Dorer les lardons", detail: "Pendant ce temps, faire revenir les lardons à feu moyen dans une poêle, sans matière grasse, jusqu'à ce qu'ils soient dorés.", badge: "⏱ 5 min" },
+      { icone: "🥚", titre: "Préparer l'appareil", detail: "Dans un bol, battre les œufs avec le parmesan râpé et du poivre. ASTUCE : pas de crème, c'est l'œuf qui apporte l'onctuosité.", badge: null },
+      { icone: "🍳", titre: "Lier hors du feu", detail: "Égoutter les pâtes, les verser dans la poêle hors du feu, ajouter le mélange œuf-parmesan et un filet d'eau de cuisson. Mélanger vivement. IMPORTANT : hors du feu, sinon l'œuf cuit en omelette.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Servir aussitôt avec un tour de moulin à poivre et un peu de parmesan.", badge: null }
+    ]
+  },
+  patespesto: {
+    cat: "plats", pays: "italie",
+    base: 2,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "Le dîner express par excellence : des pâtes nappées de pesto et de parmesan. Prêt en un quart d'heure.",
+    tableauPatesPesto: [
+      { nb: 1, pates: "100 g", pesto: "30 g", parmesan: "15 g" },
+      { nb: 2, pates: "200 g", pesto: "60 g", parmesan: "30 g" },
+      { nb: 3, pates: "300 g", pesto: "90 g", parmesan: "45 g" },
+      { nb: 4, pates: "400 g", pesto: "120 g", parmesan: "60 g" },
+      { nb: 5, pates: "500 g", pesto: "150 g", parmesan: "75 g" },
+      { nb: 6, pates: "600 g", pesto: "180 g", parmesan: "90 g" },
+      { nb: 7, pates: "700 g", pesto: "210 g", parmesan: "105 g" },
+      { nb: 8, pates: "800 g", pesto: "240 g", parmesan: "120 g" },
+      { nb: 9, pates: "900 g", pesto: "270 g", parmesan: "135 g" },
+      { nb: 10, pates: "1000 g", pesto: "300 g", parmesan: "150 g" },
+      { nb: 11, pates: "1100 g", pesto: "330 g", parmesan: "165 g" },
+      { nb: 12, pates: "1200 g", pesto: "360 g", parmesan: "180 g" },
+      { nb: 13, pates: "1300 g", pesto: "390 g", parmesan: "195 g" },
+      { nb: 14, pates: "1400 g", pesto: "420 g", parmesan: "210 g" },
+      { nb: 15, pates: "1500 g", pesto: "450 g", parmesan: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente dans l'eau bouillante salée. Garder une louche d'eau de cuisson avant d'égoutter.", badge: "⏱ 10 min" },
+      { icone: "🌿", titre: "Mélanger au pesto", detail: "Hors du feu, mélanger les pâtes avec le pesto et un peu d'eau de cuisson pour bien les enrober.", badge: null },
+      { icone: "🧀", titre: "Finir", detail: "Parsemer de parmesan râpé et servir aussitôt. ASTUCE : quelques pignons grillés par-dessus, c'est encore meilleur.", badge: null }
+    ]
+  },
+  gratinpatesjambon: {
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Un gratin de pâtes crémeux au jambon, doré au four. Le plat familial qui plaît à tous les coups.",
+    tableauGratinPatesJambon: [
+      { nb: 1, pates: "80 g", jambon: "50 g", creme: "60 ml", fromage: "40 g" },
+      { nb: 2, pates: "160 g", jambon: "100 g", creme: "120 ml", fromage: "80 g" },
+      { nb: 3, pates: "240 g", jambon: "150 g", creme: "180 ml", fromage: "120 g" },
+      { nb: 4, pates: "320 g", jambon: "200 g", creme: "240 ml", fromage: "160 g" },
+      { nb: 5, pates: "400 g", jambon: "250 g", creme: "300 ml", fromage: "200 g" },
+      { nb: 6, pates: "480 g", jambon: "300 g", creme: "360 ml", fromage: "240 g" },
+      { nb: 7, pates: "560 g", jambon: "350 g", creme: "420 ml", fromage: "280 g" },
+      { nb: 8, pates: "640 g", jambon: "400 g", creme: "480 ml", fromage: "320 g" },
+      { nb: 9, pates: "720 g", jambon: "450 g", creme: "540 ml", fromage: "360 g" },
+      { nb: 10, pates: "800 g", jambon: "500 g", creme: "600 ml", fromage: "400 g" },
+      { nb: 11, pates: "880 g", jambon: "550 g", creme: "660 ml", fromage: "440 g" },
+      { nb: 12, pates: "960 g", jambon: "600 g", creme: "720 ml", fromage: "480 g" },
+      { nb: 13, pates: "1040 g", jambon: "650 g", creme: "780 ml", fromage: "520 g" },
+      { nb: 14, pates: "1120 g", jambon: "700 g", creme: "840 ml", fromage: "560 g" },
+      { nb: 15, pates: "1200 g", jambon: "750 g", creme: "900 ml", fromage: "600 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes un peu moins que d'habitude, car elles finiront au four. Égoutter.", badge: "⏱ 8 min" },
+      { icone: "🍖", titre: "Mélanger", detail: "Mélanger les pâtes avec la crème et le jambon coupé en lanières. Saler légèrement.", badge: null },
+      { icone: "🧀", titre: "Gratiner", detail: "Verser dans un plat, couvrir de fromage râpé et enfourner à 200°C jusqu'à ce que le dessus soit doré.", badge: "⏱ 20 min" }
+    ]
+  },
+  rizcantonais: {
+    cat: "plats", pays: "chine",
+    base: 2,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍚",
+    description: "Le riz sauté façon cantonais : œufs, jambon et petits pois, parfumé à la sauce soja. Idéal avec un reste de riz.",
+    tableauRizCantonais: [
+      { nb: 1, riz: "80 g", oeufs: "1", jambon: "40 g", petitspois: "40 g", oignon: "1", sojaS: "1 c.à.s" },
+      { nb: 2, riz: "160 g", oeufs: "2", jambon: "80 g", petitspois: "80 g", oignon: "1", sojaS: "2 c.à.s" },
+      { nb: 3, riz: "240 g", oeufs: "3", jambon: "120 g", petitspois: "120 g", oignon: "2", sojaS: "3 c.à.s" },
+      { nb: 4, riz: "320 g", oeufs: "4", jambon: "160 g", petitspois: "160 g", oignon: "2", sojaS: "4 c.à.s" },
+      { nb: 5, riz: "400 g", oeufs: "5", jambon: "200 g", petitspois: "200 g", oignon: "3", sojaS: "5 c.à.s" },
+      { nb: 6, riz: "480 g", oeufs: "6", jambon: "240 g", petitspois: "240 g", oignon: "3", sojaS: "6 c.à.s" },
+      { nb: 7, riz: "560 g", oeufs: "7", jambon: "280 g", petitspois: "280 g", oignon: "4", sojaS: "7 c.à.s" },
+      { nb: 8, riz: "640 g", oeufs: "8", jambon: "320 g", petitspois: "320 g", oignon: "4", sojaS: "8 c.à.s" },
+      { nb: 9, riz: "720 g", oeufs: "9", jambon: "360 g", petitspois: "360 g", oignon: "5", sojaS: "9 c.à.s" },
+      { nb: 10, riz: "800 g", oeufs: "10", jambon: "400 g", petitspois: "400 g", oignon: "5", sojaS: "10 c.à.s" },
+      { nb: 11, riz: "880 g", oeufs: "11", jambon: "440 g", petitspois: "440 g", oignon: "6", sojaS: "11 c.à.s" },
+      { nb: 12, riz: "960 g", oeufs: "12", jambon: "480 g", petitspois: "480 g", oignon: "6", sojaS: "12 c.à.s" },
+      { nb: 13, riz: "1040 g", oeufs: "13", jambon: "520 g", petitspois: "520 g", oignon: "7", sojaS: "13 c.à.s" },
+      { nb: 14, riz: "1120 g", oeufs: "14", jambon: "560 g", petitspois: "560 g", oignon: "7", sojaS: "14 c.à.s" },
+      { nb: 15, riz: "1200 g", oeufs: "15", jambon: "600 g", petitspois: "600 g", oignon: "8", sojaS: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Cuire le riz", detail: "Cuire le riz puis le laisser refroidir, idéalement de la veille. ASTUCE : un riz froid ne colle pas à la cuisson sautée.", badge: "⏱ 15 min" },
+      { icone: "🍳", titre: "Préparer l'omelette", detail: "Battre les œufs et les cuire en fine omelette à la poêle, puis les couper en lanières.", badge: null },
+      { icone: "🥘", titre: "Faire sauter", detail: "Faire revenir l'oignon émincé, ajouter le jambon en dés et les petits pois. Verser le riz et faire sauter à feu vif.", badge: "⏱ 6 min" },
+      { icone: "🥢", titre: "Assaisonner", detail: "Ajouter les lanières d'omelette et la sauce soja. Mélanger et servir bien chaud.", badge: null }
+    ]
+  },
+  omelettefromage: {
+    cat: "plats", pays: "france",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    description: "L'omelette moelleuse au fromage fondu : trois œufs, une poêle, et c'est prêt. Le dépannage parfait.",
+    tableauOmeletteFromage: [
+      { nb: 1, oeufs: "3", fromage: "30 g", beurre: "10 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 2, oeufs: "6", fromage: "60 g", beurre: "20 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 3, oeufs: "9", fromage: "90 g", beurre: "30 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 4, oeufs: "12", fromage: "120 g", beurre: "40 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 5, oeufs: "15", fromage: "150 g", beurre: "50 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 6, oeufs: "18", fromage: "180 g", beurre: "60 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 7, oeufs: "21", fromage: "210 g", beurre: "70 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 8, oeufs: "24", fromage: "240 g", beurre: "80 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 9, oeufs: "27", fromage: "270 g", beurre: "90 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 10, oeufs: "30", fromage: "300 g", beurre: "100 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 11, oeufs: "33", fromage: "330 g", beurre: "110 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 12, oeufs: "36", fromage: "360 g", beurre: "120 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 13, oeufs: "39", fromage: "390 g", beurre: "130 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 14, oeufs: "42", fromage: "420 g", beurre: "140 g", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 15, oeufs: "45", fromage: "450 g", beurre: "150 g", sel: "1 pincée", poivre: "1 pincée" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Battre les œufs", detail: "Casser les œufs dans un bol, saler, poivrer et battre à la fourchette.", badge: null },
+      { icone: "🧀", titre: "Ajouter le fromage", detail: "Incorporer le fromage râpé aux œufs battus.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Faire fondre le beurre dans une poêle chaude, verser les œufs et cuire à feu moyen. Replier l'omelette quand le dessus est encore légèrement baveux. ASTUCE : feu pas trop fort pour garder le moelleux.", badge: "⏱ 4 min" }
+    ]
+  },
+  poeleepouletlegumes: {
+    cat: "plats", pays: "france",
+    base: 2,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Une poêlée complète et légère : morceaux de poulet dorés, courgette et poivron fondants. Sain et rapide.",
+    tableauPoeleePouletLegumes: [
+      { nb: 1, poulet: "150 g", courgette: "120 g", poivron: "80 g", oignon: "1", huileolive: "1 c.à.s" },
+      { nb: 2, poulet: "300 g", courgette: "240 g", poivron: "160 g", oignon: "1", huileolive: "2 c.à.s" },
+      { nb: 3, poulet: "450 g", courgette: "360 g", poivron: "240 g", oignon: "2", huileolive: "3 c.à.s" },
+      { nb: 4, poulet: "600 g", courgette: "480 g", poivron: "320 g", oignon: "2", huileolive: "4 c.à.s" },
+      { nb: 5, poulet: "750 g", courgette: "600 g", poivron: "400 g", oignon: "3", huileolive: "5 c.à.s" },
+      { nb: 6, poulet: "900 g", courgette: "720 g", poivron: "480 g", oignon: "3", huileolive: "6 c.à.s" },
+      { nb: 7, poulet: "1050 g", courgette: "840 g", poivron: "560 g", oignon: "4", huileolive: "7 c.à.s" },
+      { nb: 8, poulet: "1200 g", courgette: "960 g", poivron: "640 g", oignon: "4", huileolive: "8 c.à.s" },
+      { nb: 9, poulet: "1350 g", courgette: "1080 g", poivron: "720 g", oignon: "5", huileolive: "9 c.à.s" },
+      { nb: 10, poulet: "1500 g", courgette: "1200 g", poivron: "800 g", oignon: "5", huileolive: "10 c.à.s" },
+      { nb: 11, poulet: "1650 g", courgette: "1320 g", poivron: "880 g", oignon: "6", huileolive: "11 c.à.s" },
+      { nb: 12, poulet: "1800 g", courgette: "1440 g", poivron: "960 g", oignon: "6", huileolive: "12 c.à.s" },
+      { nb: 13, poulet: "1950 g", courgette: "1560 g", poivron: "1040 g", oignon: "7", huileolive: "13 c.à.s" },
+      { nb: 14, poulet: "2100 g", courgette: "1680 g", poivron: "1120 g", oignon: "7", huileolive: "14 c.à.s" },
+      { nb: 15, poulet: "2250 g", courgette: "1800 g", poivron: "1200 g", oignon: "8", huileolive: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Couper", detail: "Couper le poulet en morceaux, émincer l'oignon et détailler la courgette et le poivron en dés.", badge: null },
+      { icone: "🍗", titre: "Saisir le poulet", detail: "Faire dorer les morceaux de poulet dans l'huile d'olive à feu vif, puis les réserver.", badge: "⏱ 6 min" },
+      { icone: "🥘", titre: "Cuire les légumes", detail: "Dans la même poêle, faire revenir l'oignon, la courgette et le poivron jusqu'à ce qu'ils soient tendres.", badge: "⏱ 8 min" },
+      { icone: "🍽️", titre: "Réunir", detail: "Remettre le poulet, saler, poivrer et mélanger encore 2 min. Servir chaud, éventuellement avec du riz.", badge: null }
+    ]
+  },
+  pdtsautees: {
+    cat: "plats", pays: "france",
+    base: 2,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Des pommes de terre dorées et croustillantes, sautées à la poêle avec des lardons et de l'oignon. Le plat réconfortant et économique par excellence.",
+    tableauPdtSautees: [
+      { nb: 1, pdterre: "200 g", lardons: "50 g", oignon: "1", huile: "1 c.à.s" },
+      { nb: 2, pdterre: "400 g", lardons: "100 g", oignon: "1", huile: "2 c.à.s" },
+      { nb: 3, pdterre: "600 g", lardons: "150 g", oignon: "2", huile: "3 c.à.s" },
+      { nb: 4, pdterre: "800 g", lardons: "200 g", oignon: "2", huile: "4 c.à.s" },
+      { nb: 5, pdterre: "1000 g", lardons: "250 g", oignon: "3", huile: "5 c.à.s" },
+      { nb: 6, pdterre: "1200 g", lardons: "300 g", oignon: "3", huile: "6 c.à.s" },
+      { nb: 7, pdterre: "1400 g", lardons: "350 g", oignon: "4", huile: "7 c.à.s" },
+      { nb: 8, pdterre: "1600 g", lardons: "400 g", oignon: "4", huile: "8 c.à.s" },
+      { nb: 9, pdterre: "1800 g", lardons: "450 g", oignon: "5", huile: "9 c.à.s" },
+      { nb: 10, pdterre: "2000 g", lardons: "500 g", oignon: "5", huile: "10 c.à.s" },
+      { nb: 11, pdterre: "2200 g", lardons: "550 g", oignon: "6", huile: "11 c.à.s" },
+      { nb: 12, pdterre: "2400 g", lardons: "600 g", oignon: "6", huile: "12 c.à.s" },
+      { nb: 13, pdterre: "2600 g", lardons: "650 g", oignon: "7", huile: "13 c.à.s" },
+      { nb: 14, pdterre: "2800 g", lardons: "700 g", oignon: "7", huile: "14 c.à.s" },
+      { nb: 15, pdterre: "3000 g", lardons: "750 g", oignon: "8", huile: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Couper", detail: "Éplucher les pommes de terre et les couper en cubes. Émincer l'oignon.", badge: null },
+      { icone: "💧", titre: "Précuire (facultatif)", detail: "Pour des pommes de terre plus fondantes, les précuire 8 min à l'eau bouillante salée, puis bien les égoutter. ASTUCE : cœur tendre garanti et extérieur croustillant.", badge: "⏱ 8 min" },
+      { icone: "🍳", titre: "Faire sauter", detail: "Dans une poêle avec l'huile bien chaude, faire dorer les pommes de terre sur toutes les faces sans trop les remuer.", badge: "⏱ 12 min" },
+      { icone: "🥓", titre: "Ajouter les lardons", detail: "Ajouter les lardons et l'oignon, poursuivre jusqu'à ce que le tout soit doré. Saler, poivrer et servir bien chaud.", badge: null }
+    ]
+  },
 });

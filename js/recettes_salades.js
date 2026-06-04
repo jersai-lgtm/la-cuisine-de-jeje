@@ -789,4 +789,36 @@ Object.assign(recettes, {
       { icone: "🧊", titre: "Servir", detail: "Servir bien frais, en entrée ou en accompagnement.", badge: null }
     ]
   },
+  saladepates: {
+    cat: "salades", pays: "france",
+    base: 2,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Une salade de pâtes fraîche et complète, parfaite pour l'été ou les pique-niques : pâtes, tomates, jambon et œuf dur.",
+    tableauSaladePates: [
+      { nb: 1, pates: "80 g", tomate: "80 g", jambon: "40 g", oeufs: "1", huileolive: "1 c.à.s" },
+      { nb: 2, pates: "160 g", tomate: "160 g", jambon: "80 g", oeufs: "2", huileolive: "2 c.à.s" },
+      { nb: 3, pates: "240 g", tomate: "240 g", jambon: "120 g", oeufs: "3", huileolive: "3 c.à.s" },
+      { nb: 4, pates: "320 g", tomate: "320 g", jambon: "160 g", oeufs: "4", huileolive: "4 c.à.s" },
+      { nb: 5, pates: "400 g", tomate: "400 g", jambon: "200 g", oeufs: "5", huileolive: "5 c.à.s" },
+      { nb: 6, pates: "480 g", tomate: "480 g", jambon: "240 g", oeufs: "6", huileolive: "6 c.à.s" },
+      { nb: 7, pates: "560 g", tomate: "560 g", jambon: "280 g", oeufs: "7", huileolive: "7 c.à.s" },
+      { nb: 8, pates: "640 g", tomate: "640 g", jambon: "320 g", oeufs: "8", huileolive: "8 c.à.s" },
+      { nb: 9, pates: "720 g", tomate: "720 g", jambon: "360 g", oeufs: "9", huileolive: "9 c.à.s" },
+      { nb: 10, pates: "800 g", tomate: "800 g", jambon: "400 g", oeufs: "10", huileolive: "10 c.à.s" },
+      { nb: 11, pates: "880 g", tomate: "880 g", jambon: "440 g", oeufs: "11", huileolive: "11 c.à.s" },
+      { nb: 12, pates: "960 g", tomate: "960 g", jambon: "480 g", oeufs: "12", huileolive: "12 c.à.s" },
+      { nb: 13, pates: "1040 g", tomate: "1040 g", jambon: "520 g", oeufs: "13", huileolive: "13 c.à.s" },
+      { nb: 14, pates: "1120 g", tomate: "1120 g", jambon: "560 g", oeufs: "14", huileolive: "14 c.à.s" },
+      { nb: 15, pates: "1200 g", tomate: "1200 g", jambon: "600 g", oeufs: "15", huileolive: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente, les égoutter et les passer sous l'eau froide pour les refroidir.", badge: "⏱ 10 min" },
+      { icone: "🥚", titre: "Cuire les œufs", detail: "Faire cuire les œufs durs (environ 9 min dans l'eau bouillante), les écaler et les couper en quartiers.", badge: "⏱ 9 min" },
+      { icone: "🔪", titre: "Couper", detail: "Couper les tomates et le jambon en dés.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mélanger les pâtes refroidies avec les tomates, le jambon et l'huile d'olive. Saler, poivrer et déposer les œufs par-dessus. ASTUCE : une cuillère de moutarde dans l'assaisonnement relève la salade.", badge: null }
+    ]
+  },
 });
