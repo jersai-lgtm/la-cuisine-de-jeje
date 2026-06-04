@@ -285,13 +285,13 @@ async function chargerAstucesPubliesAdmin() {
 }
 window.chargerAstucesPubliesAdmin = chargerAstucesPubliesAdmin;
 
-// =================== BADGE LIVE (onglet Admin) ===================
-let _astucesUnsub = null;
-let _astucesAtt = 0;
-function majBadgeAstuces(n) {
+// =================== BADGE LIVE (onglet Admin) : astuces + recettes proposées ===================
+let _astucesUnsub = null, _propsUnsub = null;
+let _cntAstuces = 0, _cntProps = 0;
+function _majBadgeAdminTotal() {
   const b = document.getElementById("nav-admin-badge");
   if (!b) return;
-  _astucesAtt = n;
+  const n = _cntAstuces + _cntProps;
   if (_estAdminCom() && n > 0) { b.textContent = n; b.style.display = ""; }
   else b.style.display = "none";
 }
@@ -299,14 +299,25 @@ window.verifierBadgeAstuces = function () {
   const db = _dbCom();
   if (!_estAdminCom() || !db) {
     if (_astucesUnsub) { try { _astucesUnsub(); } catch (e) {} _astucesUnsub = null; }
-    majBadgeAstuces(0);
+    if (_propsUnsub) { try { _propsUnsub(); } catch (e) {} _propsUnsub = null; }
+    _cntAstuces = 0; _cntProps = 0; _majBadgeAdminTotal();
     return;
   }
-  if (_astucesUnsub) return; // déjà à l'écoute
-  try {
-    _astucesUnsub = db.collection("astuces").where("statut", "==", "en_attente")
-      .onSnapshot(snap => { majBadgeAstuces(snap.size); }, err => console.warn("badge astuces:", err));
-  } catch (e) { console.warn(e); }
+  if (!_astucesUnsub) {
+    try {
+      _astucesUnsub = db.collection("astuces").where("statut", "==", "en_attente")
+        .onSnapshot(snap => { _cntAstuces = snap.size; _majBadgeAdminTotal(); }, err => console.warn("badge astuces:", err));
+    } catch (e) { console.warn(e); }
+  }
+  if (!_propsUnsub) {
+    try {
+      _propsUnsub = db.collection("recettesProposees")
+        .onSnapshot(snap => {
+          let n = 0; snap.forEach(d => { if ((d.data().statut || "en_attente") !== "precision") n++; });
+          _cntProps = n; _majBadgeAdminTotal();
+        }, err => console.warn("badge recettes:", err));
+    } catch (e) { console.warn(e); }
+  }
 };
 
 // Affiche/masque l'onglet Admin selon le rôle, et lance le badge
