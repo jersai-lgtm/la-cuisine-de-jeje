@@ -134,6 +134,7 @@ function htmlSectionAstuces(recetteKey) {
 function renderAstucesFiche(recetteKey) {
   const hote = document.getElementById("modal-resultat");
   if (!hote || !recetteKey) return;
+  window._ficheAstucesKey = recetteKey;
   if (document.getElementById("astuces-fiche")) document.getElementById("astuces-fiche").remove();
   hote.insertAdjacentHTML("beforeend", htmlSectionAstuces(recetteKey));
   chargerAstucesPubliees(recetteKey);
@@ -149,7 +150,7 @@ async function chargerAstucesPubliees(recetteKey) {
       .where("recetteKey", "==", recetteKey)
       .where("statut", "==", "publie")
       .get();
-    const arr = snap.docs.map(d => d.data())
+    const arr = snap.docs.map(d => ({ id: d.id, ...d.data() }))
       .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
     if (compte) compte.textContent = arr.length;
     if (arr.length === 0) {
@@ -159,10 +160,13 @@ async function chargerAstucesPubliees(recetteKey) {
     liste.innerHTML = arr.map(a => {
       const init = (a.pseudo || "?").substring(0, 2).toUpperCase();
       const texte = _echapCom(a.texte);
+      const delBtn = _estAdminCom()
+        ? '<button onclick="supprimerAstuce(\'' + a.id + '\')" aria-label="Supprimer" title="Supprimer (admin)" style="margin-left:auto;background:rgba(226,87,76,.15);color:#e8867d;border:1px solid rgba(226,87,76,.4);border-radius:8px;padding:3px 9px;font-size:13px;cursor:pointer">🗑️</button>'
+        : '';
       return '<div style="background:rgba(255,255,255,.05);border-radius:12px;padding:10px 12px;margin-bottom:8px">' +
         '<div style="display:flex;align-items:center;gap:8px">' +
           '<div style="width:28px;height:28px;border-radius:50%;background:#5a6ee0;color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;flex:none">' + init + '</div>' +
-          '<span style="font-size:13px;font-weight:600;color:#fff">' + _echapCom(a.pseudo || "Gourmand") + '</span>' +
+          '<span style="font-size:13px;font-weight:600;color:#fff">' + _echapCom(a.pseudo || "Gourmand") + '</span>' + delBtn +
         '</div>' +
         '<p style="font-size:13px;color:#cfccd4;margin:8px 0 0;line-height:1.5">' + texte + '</p>' +
       '</div>';
@@ -184,6 +188,7 @@ async function chargerAstucesModeration() {
   if (!_estAdminCom()) { zone.innerHTML = ""; return; }
   const db = _dbCom();
   if (!db) return;
+  if (typeof chargerAstucesPubliesAdmin === "function") chargerAstucesPubliesAdmin();
   zone.innerHTML = '<p style="color:#88858f;font-size:13px">Chargement…</p>';
   try {
     const snap = await db.collection("astuces").where("statut", "==", "en_attente").get();
@@ -233,6 +238,52 @@ window.refuserAstuce = async function (id) {
     chargerAstucesModeration();
   } catch (e) { console.warn(e); _toastCom("Erreur lors du refus"); }
 };
+
+// Supprimer une astuce DÉJÀ PUBLIÉE (validée par erreur, contenu limite, etc.) — admin
+window.supprimerAstuce = async function (id) {
+  const db = _dbCom();
+  if (!db || !_estAdminCom()) return;
+  const ok = (typeof confirmerAction === "function")
+    ? await confirmerAction("Supprimer définitivement cette astuce publiée ?")
+    : confirm("Supprimer définitivement cette astuce publiée ?");
+  if (!ok) return;
+  try {
+    await db.collection("astuces").doc(id).delete();
+    _toastCom("🗑️ Astuce supprimée");
+    if (typeof chargerAstucesModeration === "function") chargerAstucesModeration();
+    if (window._ficheAstucesKey) chargerAstucesPubliees(window._ficheAstucesKey);
+  } catch (e) { console.warn(e); _toastCom("Erreur lors de la suppression"); }
+};
+
+// Liste de TOUTES les astuces publiées (onglet Admin) avec bouton supprimer
+async function chargerAstucesPubliesAdmin() {
+  const zone = document.getElementById("admin-astuces-publiees");
+  if (!zone) return;
+  if (!_estAdminCom()) { zone.innerHTML = ""; return; }
+  const db = _dbCom();
+  if (!db) return;
+  try {
+    const snap = await db.collection("astuces").where("statut", "==", "publie").get();
+    const arr = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+      .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+    if (arr.length === 0) {
+      zone.innerHTML = '<p style="color:#88858f;font-size:13px">Aucune astuce publiée pour l\'instant.</p>';
+      return;
+    }
+    zone.innerHTML = arr.map(a => {
+      const nomRec = (typeof getNomRecette === "function" ? getNomRecette(a.recetteKey) : "") || a.recetteKey;
+      return '<div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px">' +
+        '<div style="font-size:12px;color:#88858f;margin-bottom:6px">' + _echapCom(a.pseudo || "Gourmand") + ' · sur <strong style="color:#ff8fb3">' + _echapCom(nomRec) + '</strong></div>' +
+        '<p style="font-size:14px;color:#fff;margin:0 0 10px;line-height:1.5">' + _echapCom(a.texte) + '</p>' +
+        '<button onclick="supprimerAstuce(\'' + a.id + '\')" style="background:rgba(226,87,76,.15);color:#e8867d;border:1px solid rgba(226,87,76,.5);border-radius:10px;padding:8px 14px;font-size:13px;font-weight:500;cursor:pointer">🗑️ Supprimer</button>' +
+      '</div>';
+    }).join("");
+  } catch (e) {
+    console.warn("Erreur astuces publiées :", e);
+    zone.innerHTML = '<p style="color:#e8867d;font-size:13px">Erreur de chargement</p>';
+  }
+}
+window.chargerAstucesPubliesAdmin = chargerAstucesPubliesAdmin;
 
 // =================== BADGE LIVE (onglet Admin) ===================
 let _astucesUnsub = null;
