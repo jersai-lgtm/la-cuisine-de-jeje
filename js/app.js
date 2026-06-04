@@ -1313,6 +1313,50 @@ function filtrerFavoris() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Affiche uniquement les recettes perso de l'utilisateur (onglet "📝 Mes recettes")
+function filtrerMesRecettes() {
+  if (typeof fermerSousMenus === "function") fermerSousMenus();
+  const chipsRec = document.getElementById("filtres-chips");
+  if (chipsRec) chipsRec.style.display = "none";
+  if (typeof reinitialiserRecherche === "function") reinitialiserRecherche();
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn-favoris')?.classList.add('active');
+
+  if (!window.currentUser) { ouvrirModalAuth(); return; }
+
+  // Basculer vers la grille
+  if (typeof basculeVersGrille === "function") basculeVersGrille();
+  // S'assurer que les cartes perso sont bien injectées et à jour
+  if (typeof injecterCartesPerso === "function") { try { injecterCartesPerso(); } catch (e) {} }
+
+  // Nettoyer un éventuel message d'une autre vue Favoris
+  document.getElementById('msg-no-favoris')?.remove();
+
+  // N'afficher que les cartes marquées "perso"
+  const cartes = document.querySelectorAll('.carte');
+  let count = 0;
+  cartes.forEach(c => {
+    if (c.getAttribute('data-perso') === '1') { c.style.display = 'flex'; count++; }
+    else c.style.display = 'none';
+  });
+
+  // Message + bouton de création si aucune recette perso
+  let msg = document.getElementById('msg-no-mesrecettes');
+  if (count === 0) {
+    if (!msg) {
+      msg = document.createElement('p');
+      msg.id = 'msg-no-mesrecettes';
+      msg.style.cssText = 'text-align:center;color:#888;padding:40px;grid-column:1/-1;font-size:15px';
+      msg.innerHTML = `📝 Tu n'as pas encore de recette perso.<br><small>Ce sont tes recettes à toi, séparées du catalogue.</small><br>`
+        + `<button onclick="ouvrirContribution()" style="margin-top:16px;padding:10px 18px;border:none;border-radius:10px;background:#ff8c42;color:#fff;font-weight:600;cursor:pointer">➕ Créer une recette</button>`;
+      document.getElementById('section-cartes')?.appendChild(msg);
+    }
+  } else if (msg) {
+    msg.remove();
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 // Affiche la vue dédiée "Menus favoris" (déclenché par l'onglet ❤️ Menus favoris)
 function filtrerMenusFavoris() {
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
