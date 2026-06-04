@@ -1191,6 +1191,7 @@ Object.assign(recettes, {
     ]
   },
   veloutecarottes: {
+    nom: "Velouté de carottes",
     dateAjout: "2026-06-04",
     cat: "soupes", pays: "france",
     base: 4,
@@ -1226,6 +1227,7 @@ Object.assign(recettes, {
     ]
   },
   veloutetomates: {
+    nom: "Velouté de tomates",
     dateAjout: "2026-06-04",
     cat: "soupes", pays: "france",
     base: 4,
@@ -1261,6 +1263,7 @@ Object.assign(recettes, {
     ]
   },
   soupepotimarron: {
+    nom: "Soupe de potimarron",
     dateAjout: "2026-06-04",
     cat: "soupes", pays: "france",
     base: 4,
@@ -1296,6 +1299,7 @@ Object.assign(recettes, {
     ]
   },
   soupecourgettes: {
+    nom: "Soupe de courgettes",
     dateAjout: "2026-06-04",
     cat: "soupes", pays: "france",
     base: 4,
@@ -1331,6 +1335,7 @@ Object.assign(recettes, {
     ]
   },
   veloutechampignons: {
+    nom: "Velouté de champignons",
     dateAjout: "2026-06-04",
     cat: "soupes", pays: "france",
     base: 4,
@@ -1366,6 +1371,7 @@ Object.assign(recettes, {
     ]
   },
   veloutebrocolis: {
+    nom: "Velouté de brocolis",
     dateAjout: "2026-06-04",
     cat: "soupes", pays: "france",
     base: 4,

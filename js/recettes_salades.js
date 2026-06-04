@@ -790,6 +790,7 @@ Object.assign(recettes, {
     ]
   },
   saladepates: {
+    nom: "Salade de pâtes",
     dateAjout: "2026-06-04",
     cat: "salades", pays: "france",
     base: 2,
@@ -825,6 +826,7 @@ Object.assign(recettes, {
     ]
   },
   saladecomposee: {
+    nom: "Salade composée",
     dateAjout: "2026-06-04",
     cat: "salades", pays: "france",
     base: 2,

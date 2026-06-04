@@ -7187,6 +7187,7 @@ Object.assign(recettes, {
     ]
   },
   patestomate: {
+    nom: "Pâtes à la sauce tomate",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "italie",
     base: 2,
@@ -7223,6 +7224,7 @@ Object.assign(recettes, {
     ]
   },
   carbonarasimple: {
+    nom: "Pâtes à la carbonara",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "italie",
     base: 2,
@@ -7259,6 +7261,7 @@ Object.assign(recettes, {
     ]
   },
   patespesto: {
+    nom: "Pâtes au pesto",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "italie",
     base: 2,
@@ -7294,6 +7297,7 @@ Object.assign(recettes, {
     ]
   },
   gratinpatesjambon: {
+    nom: "Gratin de pâtes au jambon",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 4,
@@ -7329,6 +7333,7 @@ Object.assign(recettes, {
     ]
   },
   rizcantonais: {
+    nom: "Riz cantonais",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "chine",
     base: 2,
@@ -7365,6 +7370,7 @@ Object.assign(recettes, {
     ]
   },
   omelettefromage: {
+    nom: "Omelette au fromage",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 1,
@@ -7400,6 +7406,7 @@ Object.assign(recettes, {
     ]
   },
   poeleepouletlegumes: {
+    nom: "Poêlée de poulet aux légumes",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 2,
@@ -7436,6 +7443,7 @@ Object.assign(recettes, {
     ]
   },
   pdtsautees: {
+    nom: "Pommes de terre sautées aux lardons",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 2,
@@ -7471,6 +7479,7 @@ Object.assign(recettes, {
     ]
   },
   patessaumon: {
+    nom: "Pâtes au saumon",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 2,
@@ -7507,6 +7516,7 @@ Object.assign(recettes, {
     ]
   },
   patescourgettes: {
+    nom: "Pâtes aux courgettes",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "italie",
     base: 2,
@@ -7542,6 +7552,7 @@ Object.assign(recettes, {
     ]
   },
   patesbrocolis: {
+    nom: "Pâtes aux brocolis",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "italie",
     base: 2,
@@ -7577,6 +7588,7 @@ Object.assign(recettes, {
     ]
   },
   pateschevre: {
+    nom: "Pâtes au chèvre",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 2,
@@ -7612,6 +7624,7 @@ Object.assign(recettes, {
     ]
   },
   gratincourgettes: {
+    nom: "Gratin de courgettes",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 4,
@@ -7648,6 +7661,7 @@ Object.assign(recettes, {
     ]
   },
   gratinbrocolis: {
+    nom: "Gratin de brocolis",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 4,
@@ -7683,6 +7697,7 @@ Object.assign(recettes, {
     ]
   },
   gratinpdt: {
+    nom: "Gratin de pommes de terre",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 4,
@@ -7719,6 +7734,7 @@ Object.assign(recettes, {
     ]
   },
   quichethon: {
+    nom: "Quiche au thon",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 4,
@@ -7755,6 +7771,7 @@ Object.assign(recettes, {
     ]
   },
   tartetomate: {
+    nom: "Tarte à la tomate",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 4,
@@ -7790,6 +7807,7 @@ Object.assign(recettes, {
     ]
   },
   tartecourgettes: {
+    nom: "Tarte aux courgettes",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 4,
@@ -7825,6 +7843,7 @@ Object.assign(recettes, {
     ]
   },
   saumonpapillote: {
+    nom: "Saumon en papillote",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 2,
@@ -7860,6 +7879,7 @@ Object.assign(recettes, {
     ]
   },
   poeleeharicots: {
+    nom: "Poêlée de haricots verts",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 4,
@@ -7895,6 +7915,7 @@ Object.assign(recettes, {
     ]
   },
   pdtfour: {
+    nom: "Pommes de terre au four",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 4,
@@ -7930,6 +7951,7 @@ Object.assign(recettes, {
     ]
   },
   cordonbleu: {
+    nom: "Cordon bleu",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 2,

@@ -132,6 +132,12 @@ function construireIndexRecherche() {
         ingredients = Object.keys(r[tabKey][0]).filter(k => k !== "nb" && k !== "patons" && k !== "total" && k !== "label");
       }
     }
+    // Noms lisibles des ingrédients (ex : code "brocoli" → "Brocoli") pour rendre la recherche par ingrédient automatique
+    const ingredientsLabels = ingredients.map(code => {
+      const lbl = (typeof INGREDIENTS_LABELS !== "undefined" && INGREDIENTS_LABELS[code]) ? INGREDIENTS_LABELS[code] : code;
+      return String(lbl).replace(/[^A-Za-zÀ-ÿ\s'’-]/g, "").trim(); // retire l'emoji/symboles
+    }).filter(Boolean);
+    const tousIngredients = ingredients.concat(ingredientsLabels);
     
     const entry = {
       element: carte,
@@ -141,12 +147,12 @@ function construireIndexRecherche() {
       cat,
       pays,
       ingredients,
-      ingredientsNorm: ingredients.map(i => normalizeText(i)),
+      ingredientsNorm: tousIngredients.map(i => normalizeText(i)),
     };
     window._searchIndex.cartes.push(entry);
     
     // Index inversé : ingrédient → liste de clés
-    ingredients.forEach(ing => {
+    tousIngredients.forEach(ing => {
       const k = normalizeText(ing);
       if (!window._searchIndex.parIngredient[k]) window._searchIndex.parIngredient[k] = [];
       window._searchIndex.parIngredient[k].push(entry);
