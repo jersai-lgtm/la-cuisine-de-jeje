@@ -106,8 +106,59 @@ const LABELS_PAYS = {
   asie: "🌏 Asie", monde: "🌍 Monde", international: "🌍 International",
 };
 
+// === GÉNÉRATION AUTOMATIQUE DES CARTES MANQUANTES ===
+// Toute recette présente dans l'objet `recettes` mais sans carte dans #section-cartes
+// se voit créer sa carte automatiquement. Plus besoin d'ajouter une carte à la main
+// dans index.html : une nouvelle recette devient visible (grille + recherche) toute seule.
+function genererCartesManquantes() {
+  const section = document.getElementById("section-cartes");
+  if (!section || typeof recettes === "undefined") return 0;
+
+  const existantes = new Set();
+  section.querySelectorAll(".carte").forEach(c => {
+    const k = (typeof extraireCleRecetteCarte === "function") ? extraireCleRecetteCarte(c) : null;
+    if (k) existantes.add(k);
+  });
+
+  const echap = (s) => String(s == null ? "" : s).replace(/"/g, "&quot;");
+  let html = "", ajout = 0;
+  Object.keys(recettes).forEach(key => {
+    if (existantes.has(key)) return;
+    const r = recettes[key];
+    if (!r) return;
+    const nom    = (typeof getNomRecette === "function") ? getNomRecette(key) : key;
+    const emoji  = r.emoji || "🍽️";
+    const img    = (typeof getImagePath === "function") ? getImagePath(key) : ("images/" + key + ".webp");
+    const cat    = r.cat || "";
+    const pays   = r.pays || "";
+    const meta   = [r.temps ? ("⏱ " + r.temps) : "", r.niveau || ""].filter(Boolean).join(" • ");
+    html += '<div class="carte" data-cat="' + echap(cat) + '" data-pays="' + echap(pays) + '" '
+          + "onclick=\"ouvrirFiche('" + key + "', '')\">"
+          + '<img loading="lazy" decoding="async" src="' + echap(img) + '" alt="' + echap(nom) + '" onerror="this.style.display=\'none\'">'
+          + '<div class="carte-info"><h2>' + emoji + " " + echap(nom) + "</h2><p>" + echap(meta) + "</p></div></div>";
+    ajout++;
+  });
+  if (html) {
+    section.insertAdjacentHTML("beforeend", html);
+    // Réappliquer les habillages dynamiques sur les nouvelles cartes (idempotents)
+    try { if (typeof injecterDrapeauxCartes === "function") injecterDrapeauxCartes(); } catch (e) {}
+    try { if (typeof appliquerNutriScoreCartes === "function") appliquerNutriScoreCartes(); } catch (e) {}
+    try { if (typeof completerEmojisIngredients === "function") completerEmojisIngredients(); } catch (e) {}
+  }
+  if (ajout) console.log("🧩 Cartes générées automatiquement : " + ajout);
+  return ajout;
+}
+// Génère les cartes manquantes dès que le DOM est prêt (avant toute recherche / navigation)
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", genererCartesManquantes);
+} else {
+  genererCartesManquantes();
+}
+
 // === INDEXATION DES CARTES (faite une seule fois au chargement) ===
 function construireIndexRecherche() {
+  // Filet de sécurité : s'assurer que toutes les recettes ont leur carte avant d'indexer
+  if (typeof genererCartesManquantes === "function") genererCartesManquantes();
   window._searchIndex = { cartes: [], parIngredient: {} };
   document.querySelectorAll(".carte").forEach(carte => {
     const cle = extraireCleRecetteCarte(carte);
