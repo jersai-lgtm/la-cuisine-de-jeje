@@ -21,6 +21,7 @@
 // ===================================================================
 
 const INGREDIENTS_PRIX = {
+  potimarron:    { prixKg: 2.20, calPer100g: 32, lipSat: 0.1, sucre: 4, sel: 0, fibres: 2.2, prot: 1.4, flv: 100 },
   // ===== BASES =====
   sel:           { prixKg: 0.85, calPer100g: 0,    lipSat: 0,    sucre: 0,    sel: 100,  fibres: 0,   prot: 0,    flv: 0 },
   huile:         { prixKg: 4.50, calPer100g: 884,  lipSat: 14,   sucre: 0,    sel: 0,    fibres: 0,   prot: 0,    flv: 0 },
@@ -1127,6 +1128,7 @@ if (typeof module !== "undefined") {
 // ============================================================
 // Mapping des clés de colonnes vers labels affichables
 const INGREDIENTS_LABELS = {
+  champignon: "🍄 Champignons", potimarron: "🎃 Potimarron",
   painmie: "🍞 Pain de mie", poireau: "🥬 Poireau",
   // == v257 — Muffins & Pâtisserie ==
   chocolatBlanc: "🤍 Chocolat blanc", chocolatLait: "🍫 Chocolat au lait",

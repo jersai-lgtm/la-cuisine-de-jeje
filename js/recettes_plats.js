@@ -7187,6 +7187,7 @@ Object.assign(recettes, {
     ]
   },
   patestomate: {
+    dateAjout: "2026-06-04",
     cat: "plats", pays: "italie",
     base: 2,
     temps: "25 min",
@@ -7219,6 +7220,7 @@ Object.assign(recettes, {
     ]
   },
   carbonarasimple: {
+    dateAjout: "2026-06-04",
     cat: "plats", pays: "italie",
     base: 2,
     temps: "20 min",
@@ -7252,6 +7254,7 @@ Object.assign(recettes, {
     ]
   },
   patespesto: {
+    dateAjout: "2026-06-04",
     cat: "plats", pays: "italie",
     base: 2,
     temps: "15 min",
@@ -7283,6 +7286,7 @@ Object.assign(recettes, {
     ]
   },
   gratinpatesjambon: {
+    dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 4,
     temps: "35 min",
@@ -7314,6 +7318,7 @@ Object.assign(recettes, {
     ]
   },
   rizcantonais: {
+    dateAjout: "2026-06-04",
     cat: "plats", pays: "chine",
     base: 2,
     temps: "25 min",
@@ -7346,6 +7351,7 @@ Object.assign(recettes, {
     ]
   },
   omelettefromage: {
+    dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 1,
     temps: "10 min",
@@ -7377,6 +7383,7 @@ Object.assign(recettes, {
     ]
   },
   poeleepouletlegumes: {
+    dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 2,
     temps: "25 min",
@@ -7409,6 +7416,7 @@ Object.assign(recettes, {
     ]
   },
   pdtsautees: {
+    dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
     base: 2,
     temps: "25 min",
@@ -7438,6 +7446,468 @@ Object.assign(recettes, {
       { icone: "💧", titre: "Précuire (facultatif)", detail: "Pour des pommes de terre plus fondantes, les précuire 8 min à l'eau bouillante salée, puis bien les égoutter. ASTUCE : cœur tendre garanti et extérieur croustillant.", badge: "⏱ 8 min" },
       { icone: "🍳", titre: "Faire sauter", detail: "Dans une poêle avec l'huile bien chaude, faire dorer les pommes de terre sur toutes les faces sans trop les remuer.", badge: "⏱ 12 min" },
       { icone: "🥓", titre: "Ajouter les lardons", detail: "Ajouter les lardons et l'oignon, poursuivre jusqu'à ce que le tout soit doré. Saler, poivrer et servir bien chaud.", badge: null }
+    ]
+  },
+  patessaumon: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 2,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Des pâtes crémeuses au saumon, prêtes en 20 minutes. Un plat simple et un brin chic pour les soirs de semaine.",
+    tableauPatesSaumon: [
+      { nb: 1, pates: "100 g", saumon: "80 g", creme: "60 ml", ail: "1", huileolive: "1 c.à.s" },
+      { nb: 2, pates: "200 g", saumon: "160 g", creme: "120 ml", ail: "1", huileolive: "2 c.à.s" },
+      { nb: 3, pates: "300 g", saumon: "240 g", creme: "180 ml", ail: "2", huileolive: "3 c.à.s" },
+      { nb: 4, pates: "400 g", saumon: "320 g", creme: "240 ml", ail: "2", huileolive: "4 c.à.s" },
+      { nb: 5, pates: "500 g", saumon: "400 g", creme: "300 ml", ail: "3", huileolive: "5 c.à.s" },
+      { nb: 6, pates: "600 g", saumon: "480 g", creme: "360 ml", ail: "3", huileolive: "6 c.à.s" },
+      { nb: 7, pates: "700 g", saumon: "560 g", creme: "420 ml", ail: "4", huileolive: "7 c.à.s" },
+      { nb: 8, pates: "800 g", saumon: "640 g", creme: "480 ml", ail: "4", huileolive: "8 c.à.s" },
+      { nb: 9, pates: "900 g", saumon: "720 g", creme: "540 ml", ail: "5", huileolive: "9 c.à.s" },
+      { nb: 10, pates: "1000 g", saumon: "800 g", creme: "600 ml", ail: "5", huileolive: "10 c.à.s" },
+      { nb: 11, pates: "1100 g", saumon: "880 g", creme: "660 ml", ail: "6", huileolive: "11 c.à.s" },
+      { nb: 12, pates: "1200 g", saumon: "960 g", creme: "720 ml", ail: "6", huileolive: "12 c.à.s" },
+      { nb: 13, pates: "1300 g", saumon: "1040 g", creme: "780 ml", ail: "7", huileolive: "13 c.à.s" },
+      { nb: 14, pates: "1400 g", saumon: "1120 g", creme: "840 ml", ail: "7", huileolive: "14 c.à.s" },
+      { nb: 15, pates: "1500 g", saumon: "1200 g", creme: "900 ml", ail: "8", huileolive: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente dans l'eau bouillante salée, puis les égoutter en gardant un peu d'eau de cuisson.", badge: "⏱ 10 min" },
+      { icone: "🧄", titre: "Faire revenir l'ail", detail: "Faire revenir l'ail émincé dans l'huile d'olive sans le colorer.", badge: null },
+      { icone: "🐟", titre: "Préparer la sauce", detail: "Ajouter le saumon coupé en dés et la crème, laisser frémir quelques minutes. Saler, poivrer.", badge: "⏱ 5 min" },
+      { icone: "🍽️", titre: "Mélanger", detail: "Mélanger les pâtes à la sauce avec un peu d'eau de cuisson. Servir aussitôt.", badge: null }
+    ]
+  },
+  patescourgettes: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "italie",
+    base: 2,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥒",
+    description: "Des pâtes légères aux courgettes fondantes, ail et parmesan. Un classique d'été tout simple.",
+    tableauPatesCourgettes: [
+      { nb: 1, pates: "100 g", courgette: "120 g", ail: "1", huileolive: "1 c.à.s", parmesan: "15 g" },
+      { nb: 2, pates: "200 g", courgette: "240 g", ail: "1", huileolive: "2 c.à.s", parmesan: "30 g" },
+      { nb: 3, pates: "300 g", courgette: "360 g", ail: "2", huileolive: "3 c.à.s", parmesan: "45 g" },
+      { nb: 4, pates: "400 g", courgette: "480 g", ail: "2", huileolive: "4 c.à.s", parmesan: "60 g" },
+      { nb: 5, pates: "500 g", courgette: "600 g", ail: "3", huileolive: "5 c.à.s", parmesan: "75 g" },
+      { nb: 6, pates: "600 g", courgette: "720 g", ail: "3", huileolive: "6 c.à.s", parmesan: "90 g" },
+      { nb: 7, pates: "700 g", courgette: "840 g", ail: "4", huileolive: "7 c.à.s", parmesan: "105 g" },
+      { nb: 8, pates: "800 g", courgette: "960 g", ail: "4", huileolive: "8 c.à.s", parmesan: "120 g" },
+      { nb: 9, pates: "900 g", courgette: "1080 g", ail: "5", huileolive: "9 c.à.s", parmesan: "135 g" },
+      { nb: 10, pates: "1000 g", courgette: "1200 g", ail: "5", huileolive: "10 c.à.s", parmesan: "150 g" },
+      { nb: 11, pates: "1100 g", courgette: "1320 g", ail: "6", huileolive: "11 c.à.s", parmesan: "165 g" },
+      { nb: 12, pates: "1200 g", courgette: "1440 g", ail: "6", huileolive: "12 c.à.s", parmesan: "180 g" },
+      { nb: 13, pates: "1300 g", courgette: "1560 g", ail: "7", huileolive: "13 c.à.s", parmesan: "195 g" },
+      { nb: 14, pates: "1400 g", courgette: "1680 g", ail: "7", huileolive: "14 c.à.s", parmesan: "210 g" },
+      { nb: 15, pates: "1500 g", courgette: "1800 g", ail: "8", huileolive: "15 c.à.s", parmesan: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente dans l'eau bouillante salée.", badge: "⏱ 10 min" },
+      { icone: "🥒", titre: "Cuire les courgettes", detail: "Couper les courgettes en rondelles et les faire revenir avec l'ail dans l'huile d'olive jusqu'à ce qu'elles soient tendres.", badge: "⏱ 8 min" },
+      { icone: "🍳", titre: "Mélanger", detail: "Ajouter les pâtes égouttées aux courgettes et mélanger.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Parsemer de parmesan et servir aussitôt. ASTUCE : une pointe de zeste de citron réveille le plat.", badge: null }
+    ]
+  },
+  patesbrocolis: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "italie",
+    base: 2,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥦",
+    description: "Des pâtes au brocoli écrasé, ail et parmesan. Une façon gourmande de manger des légumes verts.",
+    tableauPatesBrocolis: [
+      { nb: 1, pates: "100 g", brocoli: "120 g", ail: "1", huileolive: "1 c.à.s", parmesan: "15 g" },
+      { nb: 2, pates: "200 g", brocoli: "240 g", ail: "1", huileolive: "2 c.à.s", parmesan: "30 g" },
+      { nb: 3, pates: "300 g", brocoli: "360 g", ail: "2", huileolive: "3 c.à.s", parmesan: "45 g" },
+      { nb: 4, pates: "400 g", brocoli: "480 g", ail: "2", huileolive: "4 c.à.s", parmesan: "60 g" },
+      { nb: 5, pates: "500 g", brocoli: "600 g", ail: "3", huileolive: "5 c.à.s", parmesan: "75 g" },
+      { nb: 6, pates: "600 g", brocoli: "720 g", ail: "3", huileolive: "6 c.à.s", parmesan: "90 g" },
+      { nb: 7, pates: "700 g", brocoli: "840 g", ail: "4", huileolive: "7 c.à.s", parmesan: "105 g" },
+      { nb: 8, pates: "800 g", brocoli: "960 g", ail: "4", huileolive: "8 c.à.s", parmesan: "120 g" },
+      { nb: 9, pates: "900 g", brocoli: "1080 g", ail: "5", huileolive: "9 c.à.s", parmesan: "135 g" },
+      { nb: 10, pates: "1000 g", brocoli: "1200 g", ail: "5", huileolive: "10 c.à.s", parmesan: "150 g" },
+      { nb: 11, pates: "1100 g", brocoli: "1320 g", ail: "6", huileolive: "11 c.à.s", parmesan: "165 g" },
+      { nb: 12, pates: "1200 g", brocoli: "1440 g", ail: "6", huileolive: "12 c.à.s", parmesan: "180 g" },
+      { nb: 13, pates: "1300 g", brocoli: "1560 g", ail: "7", huileolive: "13 c.à.s", parmesan: "195 g" },
+      { nb: 14, pates: "1400 g", brocoli: "1680 g", ail: "7", huileolive: "14 c.à.s", parmesan: "210 g" },
+      { nb: 15, pates: "1500 g", brocoli: "1800 g", ail: "8", huileolive: "15 c.à.s", parmesan: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente dans l'eau bouillante salée.", badge: "⏱ 10 min" },
+      { icone: "🥦", titre: "Cuire le brocoli", detail: "Détacher le brocoli en petits bouquets et le cuire à l'eau ou à la vapeur jusqu'à ce qu'il soit tendre.", badge: "⏱ 8 min" },
+      { icone: "🧄", titre: "Faire revenir", detail: "Faire revenir l'ail dans l'huile d'olive, ajouter le brocoli et l'écraser légèrement.", badge: null },
+      { icone: "🧀", titre: "Mélanger", detail: "Mélanger avec les pâtes et le parmesan. Servir chaud.", badge: null }
+    ]
+  },
+  pateschevre: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 2,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Des pâtes nappées d'une sauce crémeuse au chèvre. Réconfortant et prêt en un quart d'heure.",
+    tableauPatesChevre: [
+      { nb: 1, pates: "100 g", chevre: "50 g", creme: "40 ml", poivre: "1 pincée" },
+      { nb: 2, pates: "200 g", chevre: "100 g", creme: "80 ml", poivre: "1 pincée" },
+      { nb: 3, pates: "300 g", chevre: "150 g", creme: "120 ml", poivre: "1 pincée" },
+      { nb: 4, pates: "400 g", chevre: "200 g", creme: "160 ml", poivre: "1 pincée" },
+      { nb: 5, pates: "500 g", chevre: "250 g", creme: "200 ml", poivre: "1 pincée" },
+      { nb: 6, pates: "600 g", chevre: "300 g", creme: "240 ml", poivre: "1 pincée" },
+      { nb: 7, pates: "700 g", chevre: "350 g", creme: "280 ml", poivre: "1 pincée" },
+      { nb: 8, pates: "800 g", chevre: "400 g", creme: "320 ml", poivre: "1 pincée" },
+      { nb: 9, pates: "900 g", chevre: "450 g", creme: "360 ml", poivre: "1 pincée" },
+      { nb: 10, pates: "1000 g", chevre: "500 g", creme: "400 ml", poivre: "1 pincée" },
+      { nb: 11, pates: "1100 g", chevre: "550 g", creme: "440 ml", poivre: "1 pincée" },
+      { nb: 12, pates: "1200 g", chevre: "600 g", creme: "480 ml", poivre: "1 pincée" },
+      { nb: 13, pates: "1300 g", chevre: "650 g", creme: "520 ml", poivre: "1 pincée" },
+      { nb: 14, pates: "1400 g", chevre: "700 g", creme: "560 ml", poivre: "1 pincée" },
+      { nb: 15, pates: "1500 g", chevre: "750 g", creme: "600 ml", poivre: "1 pincée" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente, puis les égoutter.", badge: "⏱ 10 min" },
+      { icone: "🧀", titre: "Faire la sauce", detail: "Dans la casserole, faire fondre le chèvre avec la crème à feu doux jusqu'à obtenir une sauce lisse.", badge: "⏱ 4 min" },
+      { icone: "🍽️", titre: "Mélanger", detail: "Ajouter les pâtes, poivrer et bien mélanger. ASTUCE : une cuillère de miel adoucit joliment le chèvre.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Servir aussitôt, éventuellement avec quelques noix concassées.", badge: null }
+    ]
+  },
+  gratincourgettes: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🥒",
+    description: "Un gratin de courgettes moelleux, lié aux œufs et à la crème, gratiné au fromage. Parfait pour écouler les courgettes du jardin.",
+    tableauGratinCourgettes: [
+      { nb: 1, courgette: "200 g", oeufs: "1", creme: "50 ml", fromage: "40 g", ail: "1" },
+      { nb: 2, courgette: "400 g", oeufs: "1", creme: "100 ml", fromage: "80 g", ail: "1" },
+      { nb: 3, courgette: "600 g", oeufs: "2", creme: "150 ml", fromage: "120 g", ail: "2" },
+      { nb: 4, courgette: "800 g", oeufs: "2", creme: "200 ml", fromage: "160 g", ail: "2" },
+      { nb: 5, courgette: "1000 g", oeufs: "3", creme: "250 ml", fromage: "200 g", ail: "3" },
+      { nb: 6, courgette: "1200 g", oeufs: "3", creme: "300 ml", fromage: "240 g", ail: "3" },
+      { nb: 7, courgette: "1400 g", oeufs: "4", creme: "350 ml", fromage: "280 g", ail: "4" },
+      { nb: 8, courgette: "1600 g", oeufs: "4", creme: "400 ml", fromage: "320 g", ail: "4" },
+      { nb: 9, courgette: "1800 g", oeufs: "5", creme: "450 ml", fromage: "360 g", ail: "5" },
+      { nb: 10, courgette: "2000 g", oeufs: "5", creme: "500 ml", fromage: "400 g", ail: "5" },
+      { nb: 11, courgette: "2200 g", oeufs: "6", creme: "550 ml", fromage: "440 g", ail: "6" },
+      { nb: 12, courgette: "2400 g", oeufs: "6", creme: "600 ml", fromage: "480 g", ail: "6" },
+      { nb: 13, courgette: "2600 g", oeufs: "7", creme: "650 ml", fromage: "520 g", ail: "7" },
+      { nb: 14, courgette: "2800 g", oeufs: "7", creme: "700 ml", fromage: "560 g", ail: "7" },
+      { nb: 15, courgette: "3000 g", oeufs: "8", creme: "750 ml", fromage: "600 g", ail: "8" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥒", titre: "Préparer les courgettes", detail: "Couper les courgettes en rondelles et les faire revenir quelques minutes pour les attendrir et évacuer l'eau.", badge: "⏱ 8 min" },
+      { icone: "🥚", titre: "Faire l'appareil", detail: "Battre les œufs avec la crème, l'ail, du sel et du poivre.", badge: null },
+      { icone: "🧀", titre: "Monter le gratin", detail: "Disposer les courgettes dans un plat, verser l'appareil et couvrir de fromage râpé.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner à 190°C jusqu'à ce que le dessus soit doré et pris.", badge: "⏱ 30 min" }
+    ]
+  },
+  gratinbrocolis: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🥦",
+    description: "Un gratin de brocolis crémeux et gratiné. Une bonne façon de faire aimer les légumes verts.",
+    tableauGratinBrocolis: [
+      { nb: 1, brocoli: "200 g", oeufs: "1", creme: "50 ml", fromage: "40 g" },
+      { nb: 2, brocoli: "400 g", oeufs: "1", creme: "100 ml", fromage: "80 g" },
+      { nb: 3, brocoli: "600 g", oeufs: "2", creme: "150 ml", fromage: "120 g" },
+      { nb: 4, brocoli: "800 g", oeufs: "2", creme: "200 ml", fromage: "160 g" },
+      { nb: 5, brocoli: "1000 g", oeufs: "3", creme: "250 ml", fromage: "200 g" },
+      { nb: 6, brocoli: "1200 g", oeufs: "3", creme: "300 ml", fromage: "240 g" },
+      { nb: 7, brocoli: "1400 g", oeufs: "4", creme: "350 ml", fromage: "280 g" },
+      { nb: 8, brocoli: "1600 g", oeufs: "4", creme: "400 ml", fromage: "320 g" },
+      { nb: 9, brocoli: "1800 g", oeufs: "5", creme: "450 ml", fromage: "360 g" },
+      { nb: 10, brocoli: "2000 g", oeufs: "5", creme: "500 ml", fromage: "400 g" },
+      { nb: 11, brocoli: "2200 g", oeufs: "6", creme: "550 ml", fromage: "440 g" },
+      { nb: 12, brocoli: "2400 g", oeufs: "6", creme: "600 ml", fromage: "480 g" },
+      { nb: 13, brocoli: "2600 g", oeufs: "7", creme: "650 ml", fromage: "520 g" },
+      { nb: 14, brocoli: "2800 g", oeufs: "7", creme: "700 ml", fromage: "560 g" },
+      { nb: 15, brocoli: "3000 g", oeufs: "8", creme: "750 ml", fromage: "600 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥦", titre: "Cuire le brocoli", detail: "Cuire le brocoli en bouquets à l'eau salée jusqu'à ce qu'il soit tendre, puis l'égoutter.", badge: "⏱ 8 min" },
+      { icone: "🥚", titre: "Faire l'appareil", detail: "Battre les œufs avec la crème, saler et poivrer.", badge: null },
+      { icone: "🧀", titre: "Monter le gratin", detail: "Répartir le brocoli dans un plat, verser l'appareil et parsemer de fromage râpé.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner à 190°C jusqu'à ce que le dessus soit doré.", badge: "⏱ 30 min" }
+    ]
+  },
+  gratinpdt: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "55 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Un gratin de pommes de terre tout simple, fondant au lait et gratiné au fromage. Le réconfort à l'état pur.",
+    tableauGratinPdt: [
+      { nb: 1, pdterre: "250 g", lait: "60 ml", fromage: "40 g", beurre: "10 g", ail: "1" },
+      { nb: 2, pdterre: "500 g", lait: "120 ml", fromage: "80 g", beurre: "20 g", ail: "1" },
+      { nb: 3, pdterre: "750 g", lait: "180 ml", fromage: "120 g", beurre: "30 g", ail: "2" },
+      { nb: 4, pdterre: "1000 g", lait: "240 ml", fromage: "160 g", beurre: "40 g", ail: "2" },
+      { nb: 5, pdterre: "1250 g", lait: "300 ml", fromage: "200 g", beurre: "50 g", ail: "3" },
+      { nb: 6, pdterre: "1500 g", lait: "360 ml", fromage: "240 g", beurre: "60 g", ail: "3" },
+      { nb: 7, pdterre: "1750 g", lait: "420 ml", fromage: "280 g", beurre: "70 g", ail: "4" },
+      { nb: 8, pdterre: "2000 g", lait: "480 ml", fromage: "320 g", beurre: "80 g", ail: "4" },
+      { nb: 9, pdterre: "2250 g", lait: "540 ml", fromage: "360 g", beurre: "90 g", ail: "5" },
+      { nb: 10, pdterre: "2500 g", lait: "600 ml", fromage: "400 g", beurre: "100 g", ail: "5" },
+      { nb: 11, pdterre: "2750 g", lait: "660 ml", fromage: "440 g", beurre: "110 g", ail: "6" },
+      { nb: 12, pdterre: "3000 g", lait: "720 ml", fromage: "480 g", beurre: "120 g", ail: "6" },
+      { nb: 13, pdterre: "3250 g", lait: "780 ml", fromage: "520 g", beurre: "130 g", ail: "7" },
+      { nb: 14, pdterre: "3500 g", lait: "840 ml", fromage: "560 g", beurre: "140 g", ail: "7" },
+      { nb: 15, pdterre: "3750 g", lait: "900 ml", fromage: "600 g", beurre: "150 g", ail: "8" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Couper", detail: "Éplucher les pommes de terre et les couper en fines rondelles. Frotter le plat avec l'ail.", badge: null },
+      { icone: "🥛", titre: "Disposer", detail: "Ranger les rondelles dans le plat, saler, poivrer et verser le lait à mi-hauteur. Parsemer de noisettes de beurre.", badge: null },
+      { icone: "🧀", titre: "Couvrir", detail: "Couvrir de fromage râpé.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C jusqu'à ce que les pommes de terre soient tendres et le dessus gratiné.", badge: "⏱ 45 min" }
+    ]
+  },
+  quichethon: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Une quiche au thon et à la tomate, sur une pâte croustillante. Économique et toujours appréciée.",
+    tableauQuicheThon: [
+      { nb: 1, patebrisee: "60 g", thon: "50 g", oeufs: "1", creme: "70 ml", tomate: "40 g" },
+      { nb: 2, patebrisee: "120 g", thon: "100 g", oeufs: "2", creme: "140 ml", tomate: "80 g" },
+      { nb: 3, patebrisee: "180 g", thon: "150 g", oeufs: "3", creme: "210 ml", tomate: "120 g" },
+      { nb: 4, patebrisee: "240 g", thon: "200 g", oeufs: "4", creme: "280 ml", tomate: "160 g" },
+      { nb: 5, patebrisee: "300 g", thon: "250 g", oeufs: "5", creme: "350 ml", tomate: "200 g" },
+      { nb: 6, patebrisee: "360 g", thon: "300 g", oeufs: "6", creme: "420 ml", tomate: "240 g" },
+      { nb: 7, patebrisee: "420 g", thon: "350 g", oeufs: "7", creme: "490 ml", tomate: "280 g" },
+      { nb: 8, patebrisee: "480 g", thon: "400 g", oeufs: "8", creme: "560 ml", tomate: "320 g" },
+      { nb: 9, patebrisee: "540 g", thon: "450 g", oeufs: "9", creme: "630 ml", tomate: "360 g" },
+      { nb: 10, patebrisee: "600 g", thon: "500 g", oeufs: "10", creme: "700 ml", tomate: "400 g" },
+      { nb: 11, patebrisee: "660 g", thon: "550 g", oeufs: "11", creme: "770 ml", tomate: "440 g" },
+      { nb: 12, patebrisee: "720 g", thon: "600 g", oeufs: "12", creme: "840 ml", tomate: "480 g" },
+      { nb: 13, patebrisee: "780 g", thon: "650 g", oeufs: "13", creme: "910 ml", tomate: "520 g" },
+      { nb: 14, patebrisee: "840 g", thon: "700 g", oeufs: "14", creme: "980 ml", tomate: "560 g" },
+      { nb: 15, patebrisee: "900 g", thon: "750 g", oeufs: "15", creme: "1050 ml", tomate: "600 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥧", titre: "Foncer le moule", detail: "Étaler la pâte brisée dans un moule et la piquer à la fourchette.", badge: null },
+      { icone: "🐟", titre: "Garnir", detail: "Émietter le thon égoutté sur le fond de pâte et répartir les dés de tomate.", badge: null },
+      { icone: "🥚", titre: "Faire l'appareil", detail: "Battre les œufs avec la crème, saler et poivrer, puis verser sur la garniture.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 190°C jusqu'à ce que la quiche soit dorée et prise.", badge: "⏱ 35 min" }
+    ]
+  },
+  tartetomate: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "Une tarte fine aux tomates sur pâte feuilletée, relevée d'un peu de fromage et d'huile d'olive. L'été en tarte.",
+    tableauTarteTomate: [
+      { nb: 1, patefeuilletee: "60 g", tomate: "120 g", fromage: "30 g", oignon: "1", huileolive: "1 c.à.s" },
+      { nb: 2, patefeuilletee: "120 g", tomate: "240 g", fromage: "60 g", oignon: "1", huileolive: "2 c.à.s" },
+      { nb: 3, patefeuilletee: "180 g", tomate: "360 g", fromage: "90 g", oignon: "2", huileolive: "3 c.à.s" },
+      { nb: 4, patefeuilletee: "240 g", tomate: "480 g", fromage: "120 g", oignon: "2", huileolive: "4 c.à.s" },
+      { nb: 5, patefeuilletee: "300 g", tomate: "600 g", fromage: "150 g", oignon: "3", huileolive: "5 c.à.s" },
+      { nb: 6, patefeuilletee: "360 g", tomate: "720 g", fromage: "180 g", oignon: "3", huileolive: "6 c.à.s" },
+      { nb: 7, patefeuilletee: "420 g", tomate: "840 g", fromage: "210 g", oignon: "4", huileolive: "7 c.à.s" },
+      { nb: 8, patefeuilletee: "480 g", tomate: "960 g", fromage: "240 g", oignon: "4", huileolive: "8 c.à.s" },
+      { nb: 9, patefeuilletee: "540 g", tomate: "1080 g", fromage: "270 g", oignon: "5", huileolive: "9 c.à.s" },
+      { nb: 10, patefeuilletee: "600 g", tomate: "1200 g", fromage: "300 g", oignon: "5", huileolive: "10 c.à.s" },
+      { nb: 11, patefeuilletee: "660 g", tomate: "1320 g", fromage: "330 g", oignon: "6", huileolive: "11 c.à.s" },
+      { nb: 12, patefeuilletee: "720 g", tomate: "1440 g", fromage: "360 g", oignon: "6", huileolive: "12 c.à.s" },
+      { nb: 13, patefeuilletee: "780 g", tomate: "1560 g", fromage: "390 g", oignon: "7", huileolive: "13 c.à.s" },
+      { nb: 14, patefeuilletee: "840 g", tomate: "1680 g", fromage: "420 g", oignon: "7", huileolive: "14 c.à.s" },
+      { nb: 15, patefeuilletee: "900 g", tomate: "1800 g", fromage: "450 g", oignon: "8", huileolive: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥧", titre: "Préparer la pâte", detail: "Dérouler la pâte feuilletée dans un moule et la piquer à la fourchette.", badge: null },
+      { icone: "🧀", titre: "Garnir le fond", detail: "Parsemer le fond de fromage râpé et répartir l'oignon émincé.", badge: null },
+      { icone: "🍅", titre: "Disposer les tomates", detail: "Couper les tomates en rondelles, les disposer en rosace, arroser d'huile d'olive, saler et poivrer.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C jusqu'à ce que la pâte soit dorée. ASTUCE : un peu de moutarde sous les tomates, c'est encore meilleur.", badge: "⏱ 30 min" }
+    ]
+  },
+  tartecourgettes: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🥒",
+    description: "Une tarte aux courgettes crémeuse sur pâte feuilletée. Simple, jolie et savoureuse.",
+    tableauTarteCourgettes: [
+      { nb: 1, patefeuilletee: "60 g", courgette: "120 g", creme: "30 ml", fromage: "30 g" },
+      { nb: 2, patefeuilletee: "120 g", courgette: "240 g", creme: "60 ml", fromage: "60 g" },
+      { nb: 3, patefeuilletee: "180 g", courgette: "360 g", creme: "90 ml", fromage: "90 g" },
+      { nb: 4, patefeuilletee: "240 g", courgette: "480 g", creme: "120 ml", fromage: "120 g" },
+      { nb: 5, patefeuilletee: "300 g", courgette: "600 g", creme: "150 ml", fromage: "150 g" },
+      { nb: 6, patefeuilletee: "360 g", courgette: "720 g", creme: "180 ml", fromage: "180 g" },
+      { nb: 7, patefeuilletee: "420 g", courgette: "840 g", creme: "210 ml", fromage: "210 g" },
+      { nb: 8, patefeuilletee: "480 g", courgette: "960 g", creme: "240 ml", fromage: "240 g" },
+      { nb: 9, patefeuilletee: "540 g", courgette: "1080 g", creme: "270 ml", fromage: "270 g" },
+      { nb: 10, patefeuilletee: "600 g", courgette: "1200 g", creme: "300 ml", fromage: "300 g" },
+      { nb: 11, patefeuilletee: "660 g", courgette: "1320 g", creme: "330 ml", fromage: "330 g" },
+      { nb: 12, patefeuilletee: "720 g", courgette: "1440 g", creme: "360 ml", fromage: "360 g" },
+      { nb: 13, patefeuilletee: "780 g", courgette: "1560 g", creme: "390 ml", fromage: "390 g" },
+      { nb: 14, patefeuilletee: "840 g", courgette: "1680 g", creme: "420 ml", fromage: "420 g" },
+      { nb: 15, patefeuilletee: "900 g", courgette: "1800 g", creme: "450 ml", fromage: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥧", titre: "Préparer la pâte", detail: "Dérouler la pâte feuilletée dans un moule et la piquer.", badge: null },
+      { icone: "🥒", titre: "Préparer les courgettes", detail: "Couper les courgettes en fines rondelles.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Mélanger la crème et le fromage, étaler sur la pâte, puis disposer les courgettes. Saler, poivrer.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C jusqu'à ce que la tarte soit dorée.", badge: "⏱ 30 min" }
+    ]
+  },
+  saumonpapillote: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 2,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Un pavé de saumon cuit en papillote avec des légumes et du citron. Léger, parfumé et sans vaisselle qui colle !",
+    tableauSaumonPapillote: [
+      { nb: 1, saumon: "150 g", courgette: "80 g", carotte: "60 g", citron: "1", huileolive: "1 c.à.s" },
+      { nb: 2, saumon: "300 g", courgette: "160 g", carotte: "120 g", citron: "1", huileolive: "2 c.à.s" },
+      { nb: 3, saumon: "450 g", courgette: "240 g", carotte: "180 g", citron: "1", huileolive: "3 c.à.s" },
+      { nb: 4, saumon: "600 g", courgette: "320 g", carotte: "240 g", citron: "1", huileolive: "4 c.à.s" },
+      { nb: 5, saumon: "750 g", courgette: "400 g", carotte: "300 g", citron: "1", huileolive: "5 c.à.s" },
+      { nb: 6, saumon: "900 g", courgette: "480 g", carotte: "360 g", citron: "2", huileolive: "6 c.à.s" },
+      { nb: 7, saumon: "1050 g", courgette: "560 g", carotte: "420 g", citron: "2", huileolive: "7 c.à.s" },
+      { nb: 8, saumon: "1200 g", courgette: "640 g", carotte: "480 g", citron: "2", huileolive: "8 c.à.s" },
+      { nb: 9, saumon: "1350 g", courgette: "720 g", carotte: "540 g", citron: "2", huileolive: "9 c.à.s" },
+      { nb: 10, saumon: "1500 g", courgette: "800 g", carotte: "600 g", citron: "3", huileolive: "10 c.à.s" },
+      { nb: 11, saumon: "1650 g", courgette: "880 g", carotte: "660 g", citron: "3", huileolive: "11 c.à.s" },
+      { nb: 12, saumon: "1800 g", courgette: "960 g", carotte: "720 g", citron: "3", huileolive: "12 c.à.s" },
+      { nb: 13, saumon: "1950 g", courgette: "1040 g", carotte: "780 g", citron: "3", huileolive: "13 c.à.s" },
+      { nb: 14, saumon: "2100 g", courgette: "1120 g", carotte: "840 g", citron: "4", huileolive: "14 c.à.s" },
+      { nb: 15, saumon: "2250 g", courgette: "1200 g", carotte: "900 g", citron: "4", huileolive: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer les légumes", detail: "Tailler la courgette et la carotte en fines lamelles.", badge: null },
+      { icone: "📦", titre: "Monter la papillote", detail: "Déposer le saumon sur une feuille de papier cuisson, ajouter les légumes, un filet d'huile d'olive, des rondelles de citron, sel et poivre. Refermer hermétiquement.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C : la papillote gonfle et le saumon cuit à la vapeur.", badge: "⏱ 18 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Ouvrir la papillote à table pour profiter des arômes. ASTUCE : un brin d'aneth sublime le saumon.", badge: null }
+    ]
+  },
+  poeleeharicots: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🫛",
+    description: "Une poêlée de haricots verts à l'ail et au beurre. L'accompagnement vert simple et savoureux.",
+    tableauPoeleeHaricots: [
+      { nb: 1, haricots: "200 g", beurre: "15 g", ail: "1", oignon: "1" },
+      { nb: 2, haricots: "400 g", beurre: "30 g", ail: "1", oignon: "1" },
+      { nb: 3, haricots: "600 g", beurre: "45 g", ail: "2", oignon: "2" },
+      { nb: 4, haricots: "800 g", beurre: "60 g", ail: "2", oignon: "2" },
+      { nb: 5, haricots: "1000 g", beurre: "75 g", ail: "3", oignon: "3" },
+      { nb: 6, haricots: "1200 g", beurre: "90 g", ail: "3", oignon: "3" },
+      { nb: 7, haricots: "1400 g", beurre: "105 g", ail: "4", oignon: "4" },
+      { nb: 8, haricots: "1600 g", beurre: "120 g", ail: "4", oignon: "4" },
+      { nb: 9, haricots: "1800 g", beurre: "135 g", ail: "5", oignon: "5" },
+      { nb: 10, haricots: "2000 g", beurre: "150 g", ail: "5", oignon: "5" },
+      { nb: 11, haricots: "2200 g", beurre: "165 g", ail: "6", oignon: "6" },
+      { nb: 12, haricots: "2400 g", beurre: "180 g", ail: "6", oignon: "6" },
+      { nb: 13, haricots: "2600 g", beurre: "195 g", ail: "7", oignon: "7" },
+      { nb: 14, haricots: "2800 g", beurre: "210 g", ail: "7", oignon: "7" },
+      { nb: 15, haricots: "3000 g", beurre: "225 g", ail: "8", oignon: "8" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫛", titre: "Cuire les haricots", detail: "Cuire les haricots verts à l'eau bouillante salée jusqu'à ce qu'ils soient tendres mais encore croquants, puis les égoutter.", badge: "⏱ 8 min" },
+      { icone: "🧄", titre: "Faire revenir", detail: "Faire fondre le beurre dans une poêle, ajouter l'ail et l'oignon émincés.", badge: null },
+      { icone: "🍳", titre: "Sauter", detail: "Ajouter les haricots et les faire sauter quelques minutes. Saler, poivrer.", badge: "⏱ 5 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir en accompagnement d'une viande ou d'un poisson.", badge: null }
+    ]
+  },
+  pdtfour: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Des pommes de terre rôties au four, dorées et croustillantes, parfumées à l'ail et aux herbes.",
+    tableauPdtFour: [
+      { nb: 1, pdterre: "250 g", huileolive: "1 c.à.s", ail: "1", sel: "1 pincée" },
+      { nb: 2, pdterre: "500 g", huileolive: "2 c.à.s", ail: "1", sel: "1 pincée" },
+      { nb: 3, pdterre: "750 g", huileolive: "3 c.à.s", ail: "2", sel: "1 pincée" },
+      { nb: 4, pdterre: "1000 g", huileolive: "4 c.à.s", ail: "2", sel: "1 pincée" },
+      { nb: 5, pdterre: "1250 g", huileolive: "5 c.à.s", ail: "3", sel: "1 pincée" },
+      { nb: 6, pdterre: "1500 g", huileolive: "6 c.à.s", ail: "3", sel: "1 pincée" },
+      { nb: 7, pdterre: "1750 g", huileolive: "7 c.à.s", ail: "4", sel: "1 pincée" },
+      { nb: 8, pdterre: "2000 g", huileolive: "8 c.à.s", ail: "4", sel: "1 pincée" },
+      { nb: 9, pdterre: "2250 g", huileolive: "9 c.à.s", ail: "5", sel: "1 pincée" },
+      { nb: 10, pdterre: "2500 g", huileolive: "10 c.à.s", ail: "5", sel: "1 pincée" },
+      { nb: 11, pdterre: "2750 g", huileolive: "11 c.à.s", ail: "6", sel: "1 pincée" },
+      { nb: 12, pdterre: "3000 g", huileolive: "12 c.à.s", ail: "6", sel: "1 pincée" },
+      { nb: 13, pdterre: "3250 g", huileolive: "13 c.à.s", ail: "7", sel: "1 pincée" },
+      { nb: 14, pdterre: "3500 g", huileolive: "14 c.à.s", ail: "7", sel: "1 pincée" },
+      { nb: 15, pdterre: "3750 g", huileolive: "15 c.à.s", ail: "8", sel: "1 pincée" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Préparer", detail: "Laver les pommes de terre et les couper en quartiers, avec ou sans la peau.", badge: null },
+      { icone: "🧄", titre: "Assaisonner", detail: "Mélanger les pommes de terre avec l'huile d'olive, l'ail écrasé, du sel et des herbes.", badge: null },
+      { icone: "🔥", titre: "Enfourner", detail: "Étaler sur une plaque et enfourner à 200°C jusqu'à ce qu'elles soient dorées et tendres, en les retournant à mi-cuisson.", badge: "⏱ 35 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud. ASTUCE : ne pas les superposer sur la plaque pour qu'elles restent croustillantes.", badge: null }
+    ]
+  },
+  cordonbleu: {
+    dateAjout: "2026-06-04",
+    cat: "plats", pays: "france",
+    base: 2,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Le cordon bleu maison : escalope de poulet garnie de jambon et de fromage fondant, panée et dorée à la poêle.",
+    tableauCordonBleu: [
+      { nb: 1, poulet: "150 g", jambon: "30 g", fromage: "30 g", chapelure: "30 g", oeufs: "1" },
+      { nb: 2, poulet: "300 g", jambon: "60 g", fromage: "60 g", chapelure: "60 g", oeufs: "1" },
+      { nb: 3, poulet: "450 g", jambon: "90 g", fromage: "90 g", chapelure: "90 g", oeufs: "2" },
+      { nb: 4, poulet: "600 g", jambon: "120 g", fromage: "120 g", chapelure: "120 g", oeufs: "2" },
+      { nb: 5, poulet: "750 g", jambon: "150 g", fromage: "150 g", chapelure: "150 g", oeufs: "3" },
+      { nb: 6, poulet: "900 g", jambon: "180 g", fromage: "180 g", chapelure: "180 g", oeufs: "3" },
+      { nb: 7, poulet: "1050 g", jambon: "210 g", fromage: "210 g", chapelure: "210 g", oeufs: "4" },
+      { nb: 8, poulet: "1200 g", jambon: "240 g", fromage: "240 g", chapelure: "240 g", oeufs: "4" },
+      { nb: 9, poulet: "1350 g", jambon: "270 g", fromage: "270 g", chapelure: "270 g", oeufs: "5" },
+      { nb: 10, poulet: "1500 g", jambon: "300 g", fromage: "300 g", chapelure: "300 g", oeufs: "5" },
+      { nb: 11, poulet: "1650 g", jambon: "330 g", fromage: "330 g", chapelure: "330 g", oeufs: "6" },
+      { nb: 12, poulet: "1800 g", jambon: "360 g", fromage: "360 g", chapelure: "360 g", oeufs: "6" },
+      { nb: 13, poulet: "1950 g", jambon: "390 g", fromage: "390 g", chapelure: "390 g", oeufs: "7" },
+      { nb: 14, poulet: "2100 g", jambon: "420 g", fromage: "420 g", chapelure: "420 g", oeufs: "7" },
+      { nb: 15, poulet: "2250 g", jambon: "450 g", fromage: "450 g", chapelure: "450 g", oeufs: "8" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer le poulet", detail: "Ouvrir les escalopes en portefeuille, glisser à l'intérieur une tranche de jambon et du fromage, puis refermer.", badge: null },
+      { icone: "🥚", titre: "Paner", detail: "Passer chaque cordon bleu dans l'œuf battu, puis dans la chapelure.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Faire dorer à la poêle à feu moyen quelques minutes de chaque côté, jusqu'à ce que la panure soit croustillante et le poulet cuit.", badge: "⏱ 12 min" },
+      { icone: "🧀", titre: "Servir", detail: "Servir aussitôt : le fromage doit être fondant à cœur.", badge: null }
     ]
   },
 });

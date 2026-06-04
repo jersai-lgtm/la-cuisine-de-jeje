@@ -1191,6 +1191,7 @@ Object.assign(recettes, {
     ]
   },
   veloutecarottes: {
+    dateAjout: "2026-06-04",
     cat: "soupes", pays: "france",
     base: 4,
     temps: "30 min",
@@ -1220,6 +1221,171 @@ Object.assign(recettes, {
       { icone: "🥕", titre: "Cuire", detail: "Mettre les légumes dans une casserole, couvrir d'eau, saler et laisser mijoter jusqu'à ce qu'ils soient bien tendres.", badge: "⏱ 25 min" },
       { icone: "🥣", titre: "Mixer", detail: "Mixer finement avec la crème jusqu'à obtenir une texture veloutée. Ajuster avec un peu d'eau si nécessaire.", badge: null },
       { icone: "🍲", titre: "Servir", detail: "Servir bien chaud. ASTUCE : une pincée de cumin ou de coriandre sublime les carottes.", badge: null }
+    ]
+  },
+  veloutetomates: {
+    dateAjout: "2026-06-04",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "Un velouté de tomates onctueux et parfumé. Réconfortant en toute saison.",
+    tableauVelouteTomates: [
+      { nb: 1, tomate: "200 g", oignon: "1", ail: "1", creme: "30 ml" },
+      { nb: 2, tomate: "400 g", oignon: "1", ail: "1", creme: "60 ml" },
+      { nb: 3, tomate: "600 g", oignon: "2", ail: "2", creme: "90 ml" },
+      { nb: 4, tomate: "800 g", oignon: "2", ail: "2", creme: "120 ml" },
+      { nb: 5, tomate: "1000 g", oignon: "3", ail: "3", creme: "150 ml" },
+      { nb: 6, tomate: "1200 g", oignon: "3", ail: "3", creme: "180 ml" },
+      { nb: 7, tomate: "1400 g", oignon: "4", ail: "4", creme: "210 ml" },
+      { nb: 8, tomate: "1600 g", oignon: "4", ail: "4", creme: "240 ml" },
+      { nb: 9, tomate: "1800 g", oignon: "5", ail: "5", creme: "270 ml" },
+      { nb: 10, tomate: "2000 g", oignon: "5", ail: "5", creme: "300 ml" },
+      { nb: 11, tomate: "2200 g", oignon: "6", ail: "6", creme: "330 ml" },
+      { nb: 12, tomate: "2400 g", oignon: "6", ail: "6", creme: "360 ml" },
+      { nb: 13, tomate: "2600 g", oignon: "7", ail: "7", creme: "390 ml" },
+      { nb: 14, tomate: "2800 g", oignon: "7", ail: "7", creme: "420 ml" },
+      { nb: 15, tomate: "3000 g", oignon: "8", ail: "8", creme: "450 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer", detail: "Couper les tomates et l'oignon en morceaux.", badge: null },
+      { icone: "🍅", titre: "Cuire", detail: "Faire revenir l'oignon et l'ail, ajouter les tomates, couvrir d'eau, saler et laisser mijoter.", badge: "⏱ 20 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer le tout avec la crème jusqu'à obtenir un velouté lisse.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir bien chaud. ASTUCE : quelques feuilles de basilic et un trait d'huile d'olive en finition.", badge: null }
+    ]
+  },
+  soupepotimarron: {
+    dateAjout: "2026-06-04",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🎃",
+    description: "Une soupe de potimarron douce et veloutée, idéale dès les premiers froids. La star de l'automne.",
+    tableauSoupePotimarron: [
+      { nb: 1, potimarron: "250 g", pdterre: "60 g", oignon: "1", creme: "30 ml" },
+      { nb: 2, potimarron: "500 g", pdterre: "120 g", oignon: "1", creme: "60 ml" },
+      { nb: 3, potimarron: "750 g", pdterre: "180 g", oignon: "2", creme: "90 ml" },
+      { nb: 4, potimarron: "1000 g", pdterre: "240 g", oignon: "2", creme: "120 ml" },
+      { nb: 5, potimarron: "1250 g", pdterre: "300 g", oignon: "3", creme: "150 ml" },
+      { nb: 6, potimarron: "1500 g", pdterre: "360 g", oignon: "3", creme: "180 ml" },
+      { nb: 7, potimarron: "1750 g", pdterre: "420 g", oignon: "4", creme: "210 ml" },
+      { nb: 8, potimarron: "2000 g", pdterre: "480 g", oignon: "4", creme: "240 ml" },
+      { nb: 9, potimarron: "2250 g", pdterre: "540 g", oignon: "5", creme: "270 ml" },
+      { nb: 10, potimarron: "2500 g", pdterre: "600 g", oignon: "5", creme: "300 ml" },
+      { nb: 11, potimarron: "2750 g", pdterre: "660 g", oignon: "6", creme: "330 ml" },
+      { nb: 12, potimarron: "3000 g", pdterre: "720 g", oignon: "6", creme: "360 ml" },
+      { nb: 13, potimarron: "3250 g", pdterre: "780 g", oignon: "7", creme: "390 ml" },
+      { nb: 14, potimarron: "3500 g", pdterre: "840 g", oignon: "7", creme: "420 ml" },
+      { nb: 15, potimarron: "3750 g", pdterre: "900 g", oignon: "8", creme: "450 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher le potimarron et la pomme de terre, les couper en cubes avec l'oignon.", badge: null },
+      { icone: "🎃", titre: "Cuire", detail: "Mettre les légumes dans une casserole, couvrir d'eau, saler et laisser mijoter jusqu'à ce qu'ils soient tendres.", badge: "⏱ 25 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème jusqu'à obtenir une texture veloutée.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE : une pincée de noix de muscade se marie à merveille avec la courge.", badge: null }
+    ]
+  },
+  soupecourgettes: {
+    dateAjout: "2026-06-04",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥒",
+    description: "Une soupe de courgettes légère et onctueuse, prête en moins de 30 minutes.",
+    tableauSoupeCourgettes: [
+      { nb: 1, courgette: "200 g", pdterre: "60 g", oignon: "1", creme: "20 ml" },
+      { nb: 2, courgette: "400 g", pdterre: "120 g", oignon: "1", creme: "40 ml" },
+      { nb: 3, courgette: "600 g", pdterre: "180 g", oignon: "2", creme: "60 ml" },
+      { nb: 4, courgette: "800 g", pdterre: "240 g", oignon: "2", creme: "80 ml" },
+      { nb: 5, courgette: "1000 g", pdterre: "300 g", oignon: "3", creme: "100 ml" },
+      { nb: 6, courgette: "1200 g", pdterre: "360 g", oignon: "3", creme: "120 ml" },
+      { nb: 7, courgette: "1400 g", pdterre: "420 g", oignon: "4", creme: "140 ml" },
+      { nb: 8, courgette: "1600 g", pdterre: "480 g", oignon: "4", creme: "160 ml" },
+      { nb: 9, courgette: "1800 g", pdterre: "540 g", oignon: "5", creme: "180 ml" },
+      { nb: 10, courgette: "2000 g", pdterre: "600 g", oignon: "5", creme: "200 ml" },
+      { nb: 11, courgette: "2200 g", pdterre: "660 g", oignon: "6", creme: "220 ml" },
+      { nb: 12, courgette: "2400 g", pdterre: "720 g", oignon: "6", creme: "240 ml" },
+      { nb: 13, courgette: "2600 g", pdterre: "780 g", oignon: "7", creme: "260 ml" },
+      { nb: 14, courgette: "2800 g", pdterre: "840 g", oignon: "7", creme: "280 ml" },
+      { nb: 15, courgette: "3000 g", pdterre: "900 g", oignon: "8", creme: "300 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer", detail: "Couper les courgettes, la pomme de terre et l'oignon en morceaux.", badge: null },
+      { icone: "🥒", titre: "Cuire", detail: "Faire mijoter les légumes dans l'eau salée jusqu'à ce qu'ils soient tendres.", badge: "⏱ 20 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème pour une soupe onctueuse.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir chaud, avec un peu de poivre. ASTUCE : une portion de fromage fondu rend la soupe encore plus douce.", badge: null }
+    ]
+  },
+  veloutechampignons: {
+    dateAjout: "2026-06-04",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍄",
+    description: "Un velouté de champignons crémeux et parfumé. Chic et réconfortant à la fois.",
+    tableauVelouteChampignons: [
+      { nb: 1, champignon: "200 g", pdterre: "50 g", oignon: "1", creme: "40 ml" },
+      { nb: 2, champignon: "400 g", pdterre: "100 g", oignon: "1", creme: "80 ml" },
+      { nb: 3, champignon: "600 g", pdterre: "150 g", oignon: "2", creme: "120 ml" },
+      { nb: 4, champignon: "800 g", pdterre: "200 g", oignon: "2", creme: "160 ml" },
+      { nb: 5, champignon: "1000 g", pdterre: "250 g", oignon: "3", creme: "200 ml" },
+      { nb: 6, champignon: "1200 g", pdterre: "300 g", oignon: "3", creme: "240 ml" },
+      { nb: 7, champignon: "1400 g", pdterre: "350 g", oignon: "4", creme: "280 ml" },
+      { nb: 8, champignon: "1600 g", pdterre: "400 g", oignon: "4", creme: "320 ml" },
+      { nb: 9, champignon: "1800 g", pdterre: "450 g", oignon: "5", creme: "360 ml" },
+      { nb: 10, champignon: "2000 g", pdterre: "500 g", oignon: "5", creme: "400 ml" },
+      { nb: 11, champignon: "2200 g", pdterre: "550 g", oignon: "6", creme: "440 ml" },
+      { nb: 12, champignon: "2400 g", pdterre: "600 g", oignon: "6", creme: "480 ml" },
+      { nb: 13, champignon: "2600 g", pdterre: "650 g", oignon: "7", creme: "520 ml" },
+      { nb: 14, champignon: "2800 g", pdterre: "700 g", oignon: "7", creme: "560 ml" },
+      { nb: 15, champignon: "3000 g", pdterre: "750 g", oignon: "8", creme: "600 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer", detail: "Émincer les champignons et l'oignon.", badge: null },
+      { icone: "🍄", titre: "Faire revenir", detail: "Faire revenir les champignons et l'oignon, ajouter la pomme de terre, couvrir d'eau et laisser mijoter.", badge: "⏱ 20 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème jusqu'à obtenir un velouté lisse.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE : garder quelques champignons poêlés pour la décoration.", badge: null }
+    ]
+  },
+  veloutebrocolis: {
+    dateAjout: "2026-06-04",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥦",
+    description: "Un velouté de brocolis vert et onctueux, plein de douceur. Les enfants en redemandent.",
+    tableauVelouteBrocolis: [
+      { nb: 1, brocoli: "200 g", pdterre: "60 g", oignon: "1", creme: "30 ml" },
+      { nb: 2, brocoli: "400 g", pdterre: "120 g", oignon: "1", creme: "60 ml" },
+      { nb: 3, brocoli: "600 g", pdterre: "180 g", oignon: "2", creme: "90 ml" },
+      { nb: 4, brocoli: "800 g", pdterre: "240 g", oignon: "2", creme: "120 ml" },
+      { nb: 5, brocoli: "1000 g", pdterre: "300 g", oignon: "3", creme: "150 ml" },
+      { nb: 6, brocoli: "1200 g", pdterre: "360 g", oignon: "3", creme: "180 ml" },
+      { nb: 7, brocoli: "1400 g", pdterre: "420 g", oignon: "4", creme: "210 ml" },
+      { nb: 8, brocoli: "1600 g", pdterre: "480 g", oignon: "4", creme: "240 ml" },
+      { nb: 9, brocoli: "1800 g", pdterre: "540 g", oignon: "5", creme: "270 ml" },
+      { nb: 10, brocoli: "2000 g", pdterre: "600 g", oignon: "5", creme: "300 ml" },
+      { nb: 11, brocoli: "2200 g", pdterre: "660 g", oignon: "6", creme: "330 ml" },
+      { nb: 12, brocoli: "2400 g", pdterre: "720 g", oignon: "6", creme: "360 ml" },
+      { nb: 13, brocoli: "2600 g", pdterre: "780 g", oignon: "7", creme: "390 ml" },
+      { nb: 14, brocoli: "2800 g", pdterre: "840 g", oignon: "7", creme: "420 ml" },
+      { nb: 15, brocoli: "3000 g", pdterre: "900 g", oignon: "8", creme: "450 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer", detail: "Détacher le brocoli en bouquets, couper la pomme de terre et l'oignon.", badge: null },
+      { icone: "🥦", titre: "Cuire", detail: "Cuire les légumes dans l'eau salée jusqu'à ce qu'ils soient tendres.", badge: "⏱ 18 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème jusqu'à obtenir un velouté vert et lisse.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE : un peu de fromage râpé fondu par-dessus, et les enfants adorent.", badge: null }
     ]
   },
 });
