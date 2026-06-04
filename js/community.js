@@ -271,6 +271,7 @@ async function chargerAstucesPubliesAdmin() {
     const snap = await db.collection("astuces").where("statut", "==", "publie").get();
     const arr = snap.docs.map(d => ({ id: d.id, ...d.data() }))
       .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+    _setCnt("cnt-astuces-pub", arr.length);
     if (arr.length === 0) {
       zone.innerHTML = '<p style="color:#88858f;font-size:13px">Aucune astuce publiée pour l\'instant.</p>';
       return;
@@ -542,6 +543,7 @@ async function chargerPhotosPubliesAdmin() {
     var snap = await db.collection("photos").where("statut", "==", "publie").get();
     var arr = snap.docs.map(function (d) { return Object.assign({ id: d.id }, d.data()); })
       .sort(function (a, b) { return (b.date || "").localeCompare(a.date || ""); });
+    _setCnt("cnt-photos-pub", arr.length);
     if (arr.length === 0) { zone.innerHTML = '<p style="color:#88858f;font-size:13px">Aucune photo publiée pour l\'instant.</p>'; return; }
     zone.innerHTML =
       '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px">' +
@@ -564,6 +566,12 @@ window.chargerPhotosPubliesAdmin = chargerPhotosPubliesAdmin;
 // =================== BADGE LIVE (onglet Admin) : astuces + recettes proposées ===================
 let _astucesUnsub = null, _propsUnsub = null, _photosUnsub = null;
 let _cntAstuces = 0, _cntProps = 0, _cntPhotos = 0;
+function _setCnt(id, n) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  if (n > 0) { el.textContent = n; el.classList.add("on"); }
+  else { el.textContent = ""; el.classList.remove("on"); }
+}
 function _majBadgeAdminTotal() {
   const b = document.getElementById("nav-admin-badge");
   if (!b) return;
@@ -583,7 +591,7 @@ window.verifierBadgeAstuces = function () {
   if (!_astucesUnsub) {
     try {
       _astucesUnsub = db.collection("astuces").where("statut", "==", "en_attente")
-        .onSnapshot(snap => { _cntAstuces = snap.size; _majBadgeAdminTotal(); }, err => console.warn("badge astuces:", err));
+        .onSnapshot(snap => { _cntAstuces = snap.size; _setCnt("cnt-astuces-att", _cntAstuces); _majBadgeAdminTotal(); }, err => console.warn("badge astuces:", err));
     } catch (e) { console.warn(e); }
   }
   if (!_propsUnsub) {
@@ -591,14 +599,14 @@ window.verifierBadgeAstuces = function () {
       _propsUnsub = db.collection("recettesProposees")
         .onSnapshot(snap => {
           let n = 0; snap.forEach(d => { if ((d.data().statut || "en_attente") !== "precision") n++; });
-          _cntProps = n; _majBadgeAdminTotal();
+          _cntProps = n; _setCnt("cnt-recettes-att", _cntProps); _majBadgeAdminTotal();
         }, err => console.warn("badge recettes:", err));
     } catch (e) { console.warn(e); }
   }
   if (!_photosUnsub) {
     try {
       _photosUnsub = db.collection("photos").where("statut", "==", "en_attente")
-        .onSnapshot(snap => { _cntPhotos = snap.size; _majBadgeAdminTotal(); }, err => console.warn("badge photos:", err));
+        .onSnapshot(snap => { _cntPhotos = snap.size; _setCnt("cnt-photos-att", _cntPhotos); _majBadgeAdminTotal(); }, err => console.warn("badge photos:", err));
     } catch (e) { console.warn(e); }
   }
 };
