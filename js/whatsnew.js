@@ -12,12 +12,12 @@ const QUOI_DE_NEUF = [
   {
     v: "1.3.0",
     titre: "📷 Les photos sont arrivées !",
-    texte: "Tu peux maintenant ajouter tes photos de plats sur chaque recette et admirer celles de la communauté. Avec les astuces, place à la cuisine collaborative !"
+    texte: "Tu peux maintenant ajouter tes photos de plats sur chaque recette et admirer celles de la communauté. Avec les commentaires, place à la cuisine collaborative !"
   },
   {
     v: "1.2.0",
-    titre: "💬 Astuces sur les recettes",
-    texte: "Partage tes astuces sur chaque recette (« j'ai mis moins de sucre, un peu de cannelle… ») et profite de celles des autres."
+    titre: "💬 Commentaires sur les recettes",
+    texte: "Partage tes commentaires sur chaque recette (« j'ai mis moins de sucre, un peu de cannelle… ») et profite de celles des autres."
   },
   {
     v: "1.1.0",

@@ -50,7 +50,7 @@ function astucePseudo() {
 // =================== AJOUT D'UNE ASTUCE (utilisateur) ===================
 function ouvrirModalAstuce(recetteKey) {
   if (!window.currentUser) {
-    _toastCom("Connecte-toi pour partager une astuce 🙂");
+    _toastCom("Connecte-toi pour partager un commentaire 🙂");
     if (typeof ouvrirModalAuth === "function") ouvrirModalAuth();
     return;
   }
@@ -63,8 +63,8 @@ function ouvrirModalAstuce(recetteKey) {
     modal.onclick = (e) => { if (e.target === modal) fermerModalAstuce(); };
     modal.innerHTML =
       '<div style="background:#211e26;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px;max-width:420px;width:100%">' +
-        '<h3 style="color:#fff;font-size:17px;margin:0 0 4px">✍️ Partager mon astuce</h3>' +
-        '<p style="color:#b3b0b8;font-size:13px;margin:0 0 12px">Ton astuce sera visible après validation. Sois sympa et utile 🙂</p>' +
+        '<h3 style="color:#fff;font-size:17px;margin:0 0 4px">✍️ Partager mon commentaire</h3>' +
+        '<p style="color:#b3b0b8;font-size:13px;margin:0 0 12px">Ton commentaire sera visible après validation. Sois sympa et utile 🙂</p>' +
         '<textarea id="astuce-texte" maxlength="500" rows="4" placeholder="Ex : j\'ai mis moins de sucre et un peu de cannelle, top !" oninput="majCompteurAstuce()" style="width:100%;box-sizing:border-box;background:#17151c;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:10px;font-size:14px;resize:vertical"></textarea>' +
         '<div id="astuce-compteur" style="text-align:right;color:#88858f;font-size:11px;margin-top:4px">0 / 500</div>' +
         '<div style="display:flex;gap:10px;margin-top:12px">' +
@@ -94,10 +94,10 @@ async function envoyerAstuce() {
   const ta = document.getElementById("astuce-texte");
   const recetteKey = window._astuceRecetteKey;
   if (!db || !ta || !recetteKey) return;
-  if (!window.currentUser) { _toastCom("Connecte-toi pour partager une astuce 🙂"); return; }
+  if (!window.currentUser) { _toastCom("Connecte-toi pour partager un commentaire 🙂"); return; }
   const texte = (ta.value || "").trim();
-  if (texte.length < 3) { _toastCom("Ton astuce est un peu courte 🙂"); return; }
-  if (texte.length > 500) { _toastCom("Ton astuce est trop longue (500 max)"); return; }
+  if (texte.length < 3) { _toastCom("Ton commentaire est un peu court 🙂"); return; }
+  if (texte.length > 500) { _toastCom("Ton commentaire est trop long (500 max)"); return; }
   if (contientMotInterdit(texte)) { _toastCom("Oups, ton message contient des mots non autorisés 🚫"); return; }
   try {
     await db.collection("astuces").add({
@@ -109,10 +109,10 @@ async function envoyerAstuce() {
       date: new Date().toISOString()
     });
     fermerModalAstuce();
-    _toastCom("Merci ! Ton astuce sera visible après validation 💛");
+    _toastCom("Merci ! Ton commentaire sera visible après validation 💛");
   } catch (e) {
     console.warn("Erreur envoi astuce :", e);
-    _toastCom("Impossible d'envoyer ton astuce pour le moment");
+    _toastCom("Impossible d'envoyer ton commentaire pour le moment");
   }
 }
 
@@ -121,11 +121,11 @@ function htmlSectionAstuces(recetteKey) {
   return (
     '<div id="astuces-fiche" style="margin-top:22px;border-top:1px solid rgba(255,255,255,.1);padding-top:16px">' +
       '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">' +
-        '<span style="font-size:16px;font-weight:600;color:#fff">💬 Astuces de la communauté</span>' +
+        '<span style="font-size:16px;font-weight:600;color:#fff">💬 Commentaires de la communauté</span>' +
         '<span id="astuces-compte" style="font-size:12px;color:#ff8fb3;background:rgba(255,77,136,.18);padding:2px 8px;border-radius:20px">0</span>' +
       '</div>' +
       '<div style="display:flex;gap:8px;margin-bottom:12px">' +
-        '<button onclick="ouvrirModalAstuce(\'' + recetteKey + '\')" style="flex:1;background:linear-gradient(135deg,#ff4d88,#ff8fb3);color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:5px">✍️ Astuce</button>' +
+        '<button onclick="ouvrirModalAstuce(\'' + recetteKey + '\')" style="flex:1;background:linear-gradient(135deg,#ff4d88,#ff8fb3);color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:5px">✍️ Commentaire</button>' +
         '<button onclick="ouvrirSelecteurPhoto(\'' + recetteKey + '\')" style="flex:1;background:linear-gradient(135deg,#5a6ee0,#8a9bf0);color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:5px">📷 Photo</button>' +
       '</div>' +
       '<div id="photos-galerie" style="margin-bottom:12px"></div>' +
@@ -145,21 +145,18 @@ function renderAstucesFiche(recetteKey) {
   if (typeof chargerPhotosPubliees === "function") chargerPhotosPubliees(recetteKey);
 }
 
-async function chargerAstucesPubliees(recetteKey) {
+function chargerAstucesPubliees(recetteKey) {
   const db = _dbCom();
-  const liste = document.getElementById("astuces-liste");
-  const compte = document.getElementById("astuces-compte");
-  if (!db || !liste) return;
-  try {
-    const snap = await db.collection("astuces")
-      .where("recetteKey", "==", recetteKey)
-      .where("statut", "==", "publie")
-      .get();
-    const arr = snap.docs.map(d => ({ id: d.id, ...d.data() }))
-      .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  if (!db || !document.getElementById("astuces-liste")) return;
+  // Désabonnement de l'écouteur précédent (autre recette / réouverture)
+  if (window._unsubAstucesFiche) { try { window._unsubAstucesFiche(); } catch (e) {} window._unsubAstucesFiche = null; }
+  const rendre = (arr) => {
+    const liste = document.getElementById("astuces-liste");
+    const compte = document.getElementById("astuces-compte");
+    if (!liste) return;
     if (compte) compte.textContent = arr.length;
     if (arr.length === 0) {
-      liste.innerHTML = '<p style="color:#88858f;font-size:13px;text-align:center">Aucune astuce pour l\'instant — sois le premier ! 🙂</p>';
+      liste.innerHTML = '<p style="color:#88858f;font-size:13px;text-align:center">Aucun commentaire pour l\'instant — sois le premier ! 🙂</p>';
       return;
     }
     liste.innerHTML = arr.map(a => {
@@ -176,10 +173,17 @@ async function chargerAstucesPubliees(recetteKey) {
         '<p style="font-size:13px;color:#cfccd4;margin:8px 0 0;line-height:1.5">' + texte + '</p>' +
       '</div>';
     }).join("");
-  } catch (e) {
-    console.warn("Erreur chargement astuces :", e);
-    liste.innerHTML = '<p style="color:#88858f;font-size:13px;text-align:center">Astuces indisponibles pour le moment</p>';
-  }
+  };
+  try {
+    window._unsubAstucesFiche = db.collection("astuces")
+      .where("recetteKey", "==", recetteKey)
+      .where("statut", "==", "publie")
+      .onSnapshot(snap => {
+        const arr = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+          .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+        rendre(arr);
+      }, err => { console.warn("Astuces live :", err); });
+  } catch (e) { console.warn(e); }
 }
 
 function _echapCom(s) {
@@ -190,20 +194,24 @@ function _echapCom(s) {
 async function chargerAstucesModeration() {
   const zone = document.getElementById("admin-moderation-astuces");
   if (!zone) return;
-  if (!_estAdminCom()) { zone.innerHTML = ""; return; }
+  if (!_estAdminCom()) {
+    zone.innerHTML = "";
+    if (window._unsubAstucesModo) { try { window._unsubAstucesModo(); } catch (e) {} window._unsubAstucesModo = null; }
+    return;
+  }
   const db = _dbCom();
   if (!db) return;
   if (typeof chargerAstucesPubliesAdmin === "function") chargerAstucesPubliesAdmin();
+  if (window._unsubAstucesModo) { try { window._unsubAstucesModo(); } catch (e) {} window._unsubAstucesModo = null; }
   zone.innerHTML = '<p style="color:#88858f;font-size:13px">Chargement…</p>';
-  try {
-    const snap = await db.collection("astuces").where("statut", "==", "en_attente").get();
-    const arr = snap.docs.map(d => ({ id: d.id, ...d.data() }))
-      .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  const rendre = (arr) => {
+    const z = document.getElementById("admin-moderation-astuces");
+    if (!z) return;
     if (arr.length === 0) {
-      zone.innerHTML = '<p style="color:#7fc783;font-size:13px">✅ Aucune astuce à valider — tout est propre !</p>';
+      z.innerHTML = '<p style="color:#7fc783;font-size:13px">✅ Aucun commentaire à valider — tout est propre !</p>';
       return;
     }
-    zone.innerHTML = arr.map(a => {
+    z.innerHTML = arr.map(a => {
       const nomRec = (typeof getNomRecette === "function" ? getNomRecette(a.recetteKey) : "") || a.recetteKey;
       return '<div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px">' +
         '<div style="font-size:12px;color:#88858f;margin-bottom:6px">' + _echapCom(a.pseudo || "Gourmand") + ' · sur <strong style="color:#ff8fb3">' + _echapCom(nomRec) + '</strong></div>' +
@@ -214,10 +222,19 @@ async function chargerAstucesModeration() {
         '</div>' +
       '</div>';
     }).join("");
-  } catch (e) {
-    console.warn("Erreur modération astuces :", e);
-    zone.innerHTML = '<p style="color:#e8867d;font-size:13px">Erreur de chargement</p>';
-  }
+  };
+  try {
+    window._unsubAstucesModo = db.collection("astuces").where("statut", "==", "en_attente")
+      .onSnapshot(snap => {
+        const arr = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+          .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+        rendre(arr);
+      }, err => {
+        console.warn("Modération astuces live :", err);
+        const z = document.getElementById("admin-moderation-astuces");
+        if (z) z.innerHTML = '<p style="color:#e8867d;font-size:13px">Erreur de chargement</p>';
+      });
+  } catch (e) { console.warn(e); }
 }
 
 window.approuverAstuce = async function (id) {
@@ -225,7 +242,7 @@ window.approuverAstuce = async function (id) {
   if (!db || !_estAdminCom()) return;
   try {
     await db.collection("astuces").doc(id).update({ statut: "publie", dateValidation: new Date().toISOString() });
-    _toastCom("✅ Astuce publiée");
+    _toastCom("✅ Commentaire publié");
     chargerAstucesModeration();
   } catch (e) { console.warn(e); _toastCom("Erreur lors de la validation"); }
 };
@@ -234,12 +251,12 @@ window.refuserAstuce = async function (id) {
   const db = _dbCom();
   if (!db || !_estAdminCom()) return;
   const ok = (typeof confirmerAction === "function")
-    ? await confirmerAction("Refuser et supprimer cette astuce ?")
-    : confirm("Refuser et supprimer cette astuce ?");
+    ? await confirmerAction("Refuser et supprimer ce commentaire ?")
+    : confirm("Refuser et supprimer ce commentaire ?");
   if (!ok) return;
   try {
     await db.collection("astuces").doc(id).delete();
-    _toastCom("❌ Astuce refusée");
+    _toastCom("❌ Commentaire refusé");
     chargerAstucesModeration();
   } catch (e) { console.warn(e); _toastCom("Erreur lors du refus"); }
 };
@@ -249,12 +266,12 @@ window.supprimerAstuce = async function (id) {
   const db = _dbCom();
   if (!db || !_estAdminCom()) return;
   const ok = (typeof confirmerAction === "function")
-    ? await confirmerAction("Supprimer définitivement cette astuce publiée ?")
-    : confirm("Supprimer définitivement cette astuce publiée ?");
+    ? await confirmerAction("Supprimer définitivement ce commentaire publié ?")
+    : confirm("Supprimer définitivement ce commentaire publié ?");
   if (!ok) return;
   try {
     await db.collection("astuces").doc(id).delete();
-    _toastCom("🗑️ Astuce supprimée");
+    _toastCom("🗑️ Commentaire supprimé");
     if (typeof chargerAstucesModeration === "function") chargerAstucesModeration();
     if (window._ficheAstucesKey) chargerAstucesPubliees(window._ficheAstucesKey);
   } catch (e) { console.warn(e); _toastCom("Erreur lors de la suppression"); }
@@ -273,7 +290,7 @@ async function chargerAstucesPubliesAdmin() {
       .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
     _setCnt("cnt-astuces-pub", arr.length);
     if (arr.length === 0) {
-      zone.innerHTML = '<p style="color:#88858f;font-size:13px">Aucune astuce publiée pour l\'instant.</p>';
+      zone.innerHTML = '<p style="color:#88858f;font-size:13px">Aucun commentaire publié pour l\'instant.</p>';
       return;
     }
     zone.innerHTML = arr.map(a => {
@@ -412,17 +429,13 @@ async function envoyerPhoto(file, recetteKey) {
 window.ouvrirSelecteurPhoto = ouvrirSelecteurPhoto;
 
 // Galerie des photos publiées sur la fiche
-async function chargerPhotosPubliees(recetteKey) {
+function chargerPhotosPubliees(recetteKey) {
   var db = _dbCom();
-  var zone = document.getElementById("photos-galerie");
-  if (!db || !zone) return;
-  try {
-    var snap = await db.collection("photos")
-      .where("recetteKey", "==", recetteKey)
-      .where("statut", "==", "publie")
-      .get();
-    var arr = snap.docs.map(function (d) { return Object.assign({ id: d.id }, d.data()); })
-      .sort(function (a, b) { return (b.date || "").localeCompare(a.date || ""); });
+  if (!db || !document.getElementById("photos-galerie")) return;
+  if (window._unsubPhotosFiche) { try { window._unsubPhotosFiche(); } catch (e) {} window._unsubPhotosFiche = null; }
+  var rendre = function (arr) {
+    var zone = document.getElementById("photos-galerie");
+    if (!zone) return;
     if (arr.length === 0) { zone.innerHTML = ""; return; }
     window._photosFiche = arr;
     zone.innerHTML =
@@ -437,10 +450,17 @@ async function chargerPhotosPubliees(recetteKey) {
         '</div>';
       }).join("") +
       '</div>';
-  } catch (e) {
-    console.warn("Erreur chargement photos :", e);
-    zone.innerHTML = "";
-  }
+  };
+  try {
+    window._unsubPhotosFiche = db.collection("photos")
+      .where("recetteKey", "==", recetteKey)
+      .where("statut", "==", "publie")
+      .onSnapshot(function (snap) {
+        var arr = snap.docs.map(function (d) { return Object.assign({ id: d.id }, d.data()); })
+          .sort(function (a, b) { return (b.date || "").localeCompare(a.date || ""); });
+        rendre(arr);
+      }, function (err) { console.warn("Photos live :", err); });
+  } catch (e) { console.warn(e); }
 }
 window.ouvrirPhotoPleinEcran = function (id) {
   var arr = window._photosFiche || [];
@@ -457,17 +477,21 @@ window.ouvrirPhotoPleinEcran = function (id) {
 async function chargerPhotosModeration() {
   var zone = document.getElementById("admin-moderation-photos");
   if (!zone) return;
-  if (!_estAdminCom()) { zone.innerHTML = ""; return; }
+  if (!_estAdminCom()) {
+    zone.innerHTML = "";
+    if (window._unsubPhotosModo) { try { window._unsubPhotosModo(); } catch (e) {} window._unsubPhotosModo = null; }
+    return;
+  }
   var db = _dbCom();
   if (!db) return;
   if (typeof chargerPhotosPubliesAdmin === "function") chargerPhotosPubliesAdmin();
+  if (window._unsubPhotosModo) { try { window._unsubPhotosModo(); } catch (e) {} window._unsubPhotosModo = null; }
   zone.innerHTML = '<p style="color:#88858f;font-size:13px">Chargement…</p>';
-  try {
-    var snap = await db.collection("photos").where("statut", "==", "en_attente").get();
-    var arr = snap.docs.map(function (d) { return Object.assign({ id: d.id }, d.data()); })
-      .sort(function (a, b) { return (a.date || "").localeCompare(b.date || ""); });
-    if (arr.length === 0) { zone.innerHTML = '<p style="color:#7fc783;font-size:13px">✅ Aucune photo à valider.</p>'; return; }
-    zone.innerHTML = arr.map(function (p) {
+  var rendre = function (arr) {
+    var z = document.getElementById("admin-moderation-photos");
+    if (!z) return;
+    if (arr.length === 0) { z.innerHTML = '<p style="color:#7fc783;font-size:13px">✅ Aucune photo à valider.</p>'; return; }
+    z.innerHTML = arr.map(function (p) {
       var nomRec = (typeof getNomRecette === "function" ? getNomRecette(p.recetteKey) : "") || p.recetteKey;
       return '<div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px">' +
         '<div style="font-size:12px;color:#88858f;margin-bottom:8px">' + _echapCom(p.pseudo || "Gourmand") + ' · sur <strong style="color:#ff8fb3">' + _echapCom(nomRec) + '</strong></div>' +
@@ -478,10 +502,19 @@ async function chargerPhotosModeration() {
         '</div>' +
       '</div>';
     }).join("");
-  } catch (e) {
-    console.warn("Erreur modération photos :", e);
-    zone.innerHTML = '<p style="color:#e8867d;font-size:13px">Erreur de chargement</p>';
-  }
+  };
+  try {
+    window._unsubPhotosModo = db.collection("photos").where("statut", "==", "en_attente")
+      .onSnapshot(function (snap) {
+        var arr = snap.docs.map(function (d) { return Object.assign({ id: d.id }, d.data()); })
+          .sort(function (a, b) { return (a.date || "").localeCompare(b.date || ""); });
+        rendre(arr);
+      }, function (err) {
+        console.warn("Modération photos live :", err);
+        var z = document.getElementById("admin-moderation-photos");
+        if (z) z.innerHTML = '<p style="color:#e8867d;font-size:13px">Erreur de chargement</p>';
+      });
+  } catch (e) { console.warn(e); }
 }
 window.chargerPhotosModeration = chargerPhotosModeration;
 
