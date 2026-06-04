@@ -889,6 +889,25 @@ function afficherSection(section, btn) {
 
   // Toujours masquer la section stats par défaut (sauf si on y va)
   if (stats && section !== "stats") stats.style.display = "none";
+  // Masquer l'espace Admin sauf si on y va
+  const sAdmin = document.getElementById("section-admin");
+  if (sAdmin && section !== "admin") sAdmin.style.display = "none";
+
+  if (section === "admin") {
+    if (cuisine)    cuisine.style.display = "none";
+    if (cartes)     cartes.classList.remove("visible");
+    if (accueilSec) accueilSec.style.display = "none";
+    if (planif)     planif.style.display = "none";
+    if (festif)     festif.style.display = "none";
+    if (menuCats)   menuCats.style.display = "none";
+    if (searchBar)  searchBar.style.display = "none";
+    if (typeof cacherFiltresChips === "function") cacherFiltresChips();
+    if (sAdmin)     sAdmin.style.display = "block";
+    if (typeof chargerAstucesModeration === "function") chargerAstucesModeration();
+    if (typeof chargerStatsAvis === "function") chargerStatsAvis();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
 
   if (section === "stats") {
     if (cuisine)    cuisine.style.display = "none";

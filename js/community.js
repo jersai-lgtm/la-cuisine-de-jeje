@@ -265,6 +265,23 @@ window.majOngletAdmin = function () {
   window.verifierBadgeAstuces();
 };
 
+// --- Intégration fiche : greffe les astuces après le rendu de la recette ---
+(function () {
+  if (typeof window.choisirRecette === "function" && !window._choisirPatchedAstuces) {
+    const _orig = window.choisirRecette;
+    window.choisirRecette = function (nom) {
+      const r = _orig.apply(this, arguments);
+      try { if (nom && document.getElementById("resultat")) renderAstucesFiche(nom); } catch (e) {}
+      return r;
+    };
+    window._choisirPatchedAstuces = true;
+  }
+})();
+
+// --- Activer l'onglet Admin + badge à la connexion / mise à jour du profil ---
+window.addEventListener("profilMisAJour", function () { try { window.majOngletAdmin(); } catch (e) {} });
+document.addEventListener("DOMContentLoaded", function () { try { window.majOngletAdmin(); } catch (e) {} });
+
 // Exposer les fonctions appelées en inline
 window.ouvrirModalAstuce = ouvrirModalAstuce;
 window.fermerModalAstuce = fermerModalAstuce;
