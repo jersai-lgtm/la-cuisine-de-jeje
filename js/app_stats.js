@@ -904,6 +904,7 @@ function afficherSection(section, btn) {
     if (typeof cacherFiltresChips === "function") cacherFiltresChips();
     if (sAdmin)     sAdmin.style.display = "block";
     if (typeof chargerAstucesModeration === "function") chargerAstucesModeration();
+    if (typeof chargerPhotosModeration === "function") chargerPhotosModeration();
     if (typeof chargerModeration === "function") chargerModeration();
     if (typeof chargerStatsAvis === "function") chargerStatsAvis();
     window.scrollTo({ top: 0, behavior: "smooth" });
