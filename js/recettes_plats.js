@@ -7213,10 +7213,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon et couper les tomates en dés (ou utiliser des tomates concassées en boîte).", badge: null },
-      { icone: "🥘", titre: "Faire la sauce", detail: "Faire revenir l'oignon dans l'huile d'olive, ajouter les tomates, saler, et laisser mijoter à feu doux jusqu'à ce que la sauce épaississe.", badge: "⏱ 15 min" },
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Pendant ce temps, cuire les pâtes al dente dans l'eau bouillante salée. Égoutter.", badge: "⏱ 10 min" },
-      { icone: "🧀", titre: "Mélanger et servir", detail: "Mélanger les pâtes avec la sauce tomate, parsemer de parmesan et servir. ASTUCE : quelques feuilles de basilic frais subliment le plat.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon et l'ail, couper les tomates en dés (ou tomates concassées en boîte).", badge: null },
+      { icone: "🧅", titre: "Suer l'oignon", detail: "Faire revenir l'oignon dans l'huile d'olive à feu doux jusqu'à ce qu'il soit translucide.", badge: "⏱ 5 min" },
+      { icone: "🍅", titre: "Sauce tomate", detail: "Ajouter les tomates, saler, laisser mijoter à feu doux. ASTUCE CHEF : une pincée de sucre casse l'acidité de la tomate.", badge: "⏱ 15 min" },
+      { icone: "💧", titre: "Eau salée", detail: "Pendant ce temps, porter une casserole d'eau salée à ébullition.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente puis les égoutter.", badge: "⏱ 10 min" },
+      { icone: "🍽️", titre: "Mélanger", detail: "Mélanger les pâtes avec la sauce tomate.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Parsemer de parmesan. ASTUCE CHEF : du basilic frais déchiré à la main sublime le plat.", badge: null }
     ]
   },
   carbonarasimple: {
@@ -7246,11 +7249,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes dans un grand volume d'eau bien salée jusqu'à ce qu'elles soient al dente. Garder un peu d'eau de cuisson avant d'égoutter.", badge: "⏱ 10 min" },
-      { icone: "🥓", titre: "Dorer les lardons", detail: "Pendant ce temps, faire revenir les lardons à feu moyen dans une poêle, sans matière grasse, jusqu'à ce qu'ils soient dorés.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Préparer l'appareil", detail: "Dans un bol, battre les œufs avec le parmesan râpé et du poivre. ASTUCE : pas de crème, c'est l'œuf qui apporte l'onctuosité.", badge: null },
-      { icone: "🍳", titre: "Lier hors du feu", detail: "Égoutter les pâtes, les verser dans la poêle hors du feu, ajouter le mélange œuf-parmesan et un filet d'eau de cuisson. Mélanger vivement. IMPORTANT : hors du feu, sinon l'œuf cuit en omelette.", badge: null },
-      { icone: "🧀", titre: "Servir", detail: "Servir aussitôt avec un tour de moulin à poivre et un peu de parmesan.", badge: null }
+      { icone: "🧂", titre: "Préparer", detail: "Sortir les œufs à température ambiante et râper finement le parmesan.", badge: null },
+      { icone: "💧", titre: "Eau de cuisson", detail: "Porter une grande casserole d'eau à ébullition et la saler. ASTUCE CHEF : l'eau des pâtes doit être salée comme l'eau de mer.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente, réserver une tasse d'eau de cuisson avant d'égoutter.", badge: "⏱ 10 min" },
+      { icone: "🥓", titre: "Dorer les lardons", detail: "Faire revenir les lardons à feu moyen sans matière grasse jusqu'à ce qu'ils soient croustillants.", badge: "⏱ 5 min" },
+      { icone: "🥚", titre: "Préparer la liaison", detail: "Battre les œufs avec le parmesan et beaucoup de poivre. ASTUCE CHEF : pas de crème, c'est l'œuf qui crée le crémeux.", badge: null },
+      { icone: "🍳", titre: "Lier hors du feu", detail: "Verser les pâtes dans la poêle HORS du feu, ajouter la liaison et un filet d'eau de cuisson, mélanger vivement. IMPORTANT : hors du feu, sinon l'œuf coagule.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Dresser aussitôt avec un dernier tour de poivre.", badge: null }
     ]
   },
   patespesto: {
@@ -7280,9 +7285,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente dans l'eau bouillante salée. Garder une louche d'eau de cuisson avant d'égoutter.", badge: "⏱ 10 min" },
-      { icone: "🌿", titre: "Mélanger au pesto", detail: "Hors du feu, mélanger les pâtes avec le pesto et un peu d'eau de cuisson pour bien les enrober.", badge: null },
-      { icone: "🧀", titre: "Finir", detail: "Parsemer de parmesan râpé et servir aussitôt. ASTUCE : quelques pignons grillés par-dessus, c'est encore meilleur.", badge: null }
+      { icone: "💧", titre: "Eau salée", detail: "Porter une grande casserole d'eau salée à ébullition.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente, réserver une louche d'eau de cuisson avant d'égoutter. ASTUCE CHEF : l'eau de cuisson lie la sauce.", badge: "⏱ 10 min" },
+      { icone: "🌿", titre: "Détendre le pesto", detail: "Dans le saladier, détendre le pesto avec 1 à 2 cuillères d'eau de cuisson chaude.", badge: null },
+      { icone: "🍽️", titre: "Mélanger", detail: "Verser les pâtes égouttées et mélanger pour bien les enrober.", badge: null },
+      { icone: "🧀", titre: "Parmesan", detail: "Ajouter le parmesan râpé et mélanger encore.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Servir aussitôt. ASTUCE CHEF : quelques pignons grillés à sec apportent du croquant.", badge: null }
     ]
   },
   gratinpatesjambon: {
@@ -7312,9 +7320,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes un peu moins que d'habitude, car elles finiront au four. Égoutter.", badge: "⏱ 8 min" },
-      { icone: "🍖", titre: "Mélanger", detail: "Mélanger les pâtes avec la crème et le jambon coupé en lanières. Saler légèrement.", badge: null },
-      { icone: "🧀", titre: "Gratiner", detail: "Verser dans un plat, couvrir de fromage râpé et enfourner à 200°C jusqu'à ce que le dessus soit doré.", badge: "⏱ 20 min" }
+      { icone: "💧", titre: "Eau salée", detail: "Porter une grande casserole d'eau salée à ébullition.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes un peu moins que d'habitude, elles finiront au four. ASTUCE CHEF : sous-cuire légèrement évite des pâtes molles après gratinage.", badge: "⏱ 8 min" },
+      { icone: "🍖", titre: "Préparer le jambon", detail: "Couper le jambon en lanières.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Mélanger les pâtes avec la crème et le jambon. Saler légèrement, poivrer.", badge: null },
+      { icone: "🧀", titre: "Monter le plat", detail: "Verser dans un plat à gratin et couvrir de fromage râpé.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner à 200°C jusqu'à ce que le dessus soit doré. ASTUCE CHEF : 2 min sous le gril en fin de cuisson pour une croûte dorée.", badge: "⏱ 20 min" }
     ]
   },
   rizcantonais: {
@@ -7344,10 +7355,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Cuire le riz", detail: "Cuire le riz puis le laisser refroidir, idéalement de la veille. ASTUCE : un riz froid ne colle pas à la cuisson sautée.", badge: "⏱ 15 min" },
-      { icone: "🍳", titre: "Préparer l'omelette", detail: "Battre les œufs et les cuire en fine omelette à la poêle, puis les couper en lanières.", badge: null },
-      { icone: "🥘", titre: "Faire sauter", detail: "Faire revenir l'oignon émincé, ajouter le jambon en dés et les petits pois. Verser le riz et faire sauter à feu vif.", badge: "⏱ 6 min" },
-      { icone: "🥢", titre: "Assaisonner", detail: "Ajouter les lanières d'omelette et la sauce soja. Mélanger et servir bien chaud.", badge: null }
+      { icone: "🍚", titre: "Cuire le riz", detail: "Cuire le riz puis le laisser refroidir, idéalement de la veille. ASTUCE CHEF : un riz froid et sec ne colle pas et saute parfaitement.", badge: "⏱ 15 min" },
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon et couper le jambon en petits dés.", badge: null },
+      { icone: "🍳", titre: "Omelette", detail: "Battre les œufs et les cuire en fine omelette, puis les couper en lanières.", badge: null },
+      { icone: "🧅", titre: "Faire revenir", detail: "Dans un wok bien chaud, faire revenir l'oignon, puis le jambon et les petits pois.", badge: "⏱ 4 min" },
+      { icone: "🍚", titre: "Sauter le riz", detail: "Ajouter le riz et faire sauter à feu vif en remuant. ASTUCE CHEF : feu vif et mouvements rapides = riz sauté, pas riz à l'étouffée.", badge: "⏱ 4 min" },
+      { icone: "🥢", titre: "Assaisonner", detail: "Incorporer l'omelette et la sauce soja, mélanger.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud, parsemé de ciboule.", badge: null }
     ]
   },
   omelettefromage: {
@@ -7377,9 +7391,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Battre les œufs", detail: "Casser les œufs dans un bol, saler, poivrer et battre à la fourchette.", badge: null },
-      { icone: "🧀", titre: "Ajouter le fromage", detail: "Incorporer le fromage râpé aux œufs battus.", badge: null },
-      { icone: "🍳", titre: "Cuire", detail: "Faire fondre le beurre dans une poêle chaude, verser les œufs et cuire à feu moyen. Replier l'omelette quand le dessus est encore légèrement baveux. ASTUCE : feu pas trop fort pour garder le moelleux.", badge: "⏱ 4 min" }
+      { icone: "🥚", titre: "Battre", detail: "Casser les œufs, saler, poivrer et battre vivement. ASTUCE CHEF : bien battre incorpore de l'air pour une omelette mousseuse.", badge: null },
+      { icone: "🧀", titre: "Fromage", detail: "Ajouter le fromage râpé aux œufs battus.", badge: null },
+      { icone: "🔥", titre: "Chauffer la poêle", detail: "Faire fondre le beurre à feu moyen jusqu'à ce qu'il mousse.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Verser les œufs et laisser prendre en ramenant les bords vers le centre.", badge: "⏱ 3 min" },
+      { icone: "🌯", titre: "Replier", detail: "Replier l'omelette quand le dessus est encore légèrement baveux. ASTUCE CHEF : la baveuse au centre garde le moelleux.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Faire glisser sur l'assiette et servir aussitôt.", badge: null }
     ]
   },
   poeleepouletlegumes: {
@@ -7409,10 +7426,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Couper", detail: "Couper le poulet en morceaux, émincer l'oignon et détailler la courgette et le poivron en dés.", badge: null },
-      { icone: "🍗", titre: "Saisir le poulet", detail: "Faire dorer les morceaux de poulet dans l'huile d'olive à feu vif, puis les réserver.", badge: "⏱ 6 min" },
-      { icone: "🥘", titre: "Cuire les légumes", detail: "Dans la même poêle, faire revenir l'oignon, la courgette et le poivron jusqu'à ce qu'ils soient tendres.", badge: "⏱ 8 min" },
-      { icone: "🍽️", titre: "Réunir", detail: "Remettre le poulet, saler, poivrer et mélanger encore 2 min. Servir chaud, éventuellement avec du riz.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le poulet en morceaux, émincer l'oignon, détailler la courgette et le poivron en dés.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler et poivrer les morceaux de poulet.", badge: null },
+      { icone: "🍗", titre: "Saisir le poulet", detail: "Faire dorer le poulet dans l'huile d'olive à feu vif, puis réserver. ASTUCE CHEF : ne pas surcharger la poêle, sinon la viande bout au lieu de dorer.", badge: "⏱ 6 min" },
+      { icone: "🧅", titre: "Légumes", detail: "Dans la même poêle, faire revenir l'oignon, puis la courgette et le poivron.", badge: "⏱ 8 min" },
+      { icone: "🔥", titre: "Réunir", detail: "Remettre le poulet et mélanger 2 min pour réchauffer.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Rectifier l'assaisonnement. ASTUCE CHEF : un filet de citron ou des herbes fraîches réveillent la poêlée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud, éventuellement avec du riz.", badge: null }
     ]
   },
   pdtsautees: {
@@ -7442,10 +7462,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Couper", detail: "Éplucher les pommes de terre et les couper en cubes. Émincer l'oignon.", badge: null },
-      { icone: "💧", titre: "Précuire (facultatif)", detail: "Pour des pommes de terre plus fondantes, les précuire 8 min à l'eau bouillante salée, puis bien les égoutter. ASTUCE : cœur tendre garanti et extérieur croustillant.", badge: "⏱ 8 min" },
-      { icone: "🍳", titre: "Faire sauter", detail: "Dans une poêle avec l'huile bien chaude, faire dorer les pommes de terre sur toutes les faces sans trop les remuer.", badge: "⏱ 12 min" },
-      { icone: "🥓", titre: "Ajouter les lardons", detail: "Ajouter les lardons et l'oignon, poursuivre jusqu'à ce que le tout soit doré. Saler, poivrer et servir bien chaud.", badge: null }
+      { icone: "🔪", titre: "Couper", detail: "Éplucher les pommes de terre et les couper en cubes réguliers, émincer l'oignon.", badge: null },
+      { icone: "💧", titre: "Précuire", detail: "Précuire les pommes de terre 8 min à l'eau bouillante salée, puis bien les égoutter. ASTUCE CHEF : bien les sécher avant la poêle pour qu'elles croustillent.", badge: "⏱ 8 min" },
+      { icone: "🍳", titre: "Faire dorer", detail: "Dans une poêle avec l'huile bien chaude, faire dorer les pommes de terre sans trop les remuer. ASTUCE CHEF : on ne touche pas trop, c'est le contact qui crée la croûte.", badge: "⏱ 12 min" },
+      { icone: "🥓", titre: "Lardons", detail: "Ajouter les lardons et l'oignon, poursuivre jusqu'à coloration.", badge: "⏱ 4 min" },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et mélanger.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud, parsemé de persil.", badge: null }
     ]
   },
   patessaumon: {
@@ -7475,10 +7497,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente dans l'eau bouillante salée, puis les égoutter en gardant un peu d'eau de cuisson.", badge: "⏱ 10 min" },
-      { icone: "🧄", titre: "Faire revenir l'ail", detail: "Faire revenir l'ail émincé dans l'huile d'olive sans le colorer.", badge: null },
-      { icone: "🐟", titre: "Préparer la sauce", detail: "Ajouter le saumon coupé en dés et la crème, laisser frémir quelques minutes. Saler, poivrer.", badge: "⏱ 5 min" },
-      { icone: "🍽️", titre: "Mélanger", detail: "Mélanger les pâtes à la sauce avec un peu d'eau de cuisson. Servir aussitôt.", badge: null }
+      { icone: "💧", titre: "Eau salée", detail: "Porter une casserole d'eau salée à ébullition.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente, réserver un peu d'eau de cuisson et égoutter.", badge: "⏱ 10 min" },
+      { icone: "🧄", titre: "Ail", detail: "Faire revenir l'ail émincé dans l'huile d'olive sans le colorer.", badge: null },
+      { icone: "🐟", titre: "Saumon", detail: "Ajouter le saumon en dés et le saisir 1 min. ASTUCE CHEF : ne pas trop cuire le saumon, il finit dans la sauce chaude.", badge: null },
+      { icone: "🥛", titre: "Crème", detail: "Verser la crème, saler, poivrer et laisser frémir.", badge: "⏱ 5 min" },
+      { icone: "🍽️", titre: "Mélanger", detail: "Ajouter les pâtes et un filet d'eau de cuisson. ASTUCE CHEF : un zeste de citron équilibre la richesse de la crème.", badge: null },
+      { icone: "🍴", titre: "Servir", detail: "Servir aussitôt, parsemé d'aneth ou de ciboulette.", badge: null }
     ]
   },
   patescourgettes: {
@@ -7508,10 +7533,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente dans l'eau bouillante salée.", badge: "⏱ 10 min" },
-      { icone: "🥒", titre: "Cuire les courgettes", detail: "Couper les courgettes en rondelles et les faire revenir avec l'ail dans l'huile d'olive jusqu'à ce qu'elles soient tendres.", badge: "⏱ 8 min" },
-      { icone: "🍳", titre: "Mélanger", detail: "Ajouter les pâtes égouttées aux courgettes et mélanger.", badge: null },
-      { icone: "🧀", titre: "Servir", detail: "Parsemer de parmesan et servir aussitôt. ASTUCE : une pointe de zeste de citron réveille le plat.", badge: null }
+      { icone: "💧", titre: "Eau salée", detail: "Porter une casserole d'eau salée à ébullition.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente, garder un peu d'eau de cuisson, égoutter.", badge: "⏱ 10 min" },
+      { icone: "🔪", titre: "Courgettes", detail: "Couper les courgettes en rondelles ou en dés.", badge: null },
+      { icone: "🥒", titre: "Faire revenir", detail: "Faire revenir l'ail puis les courgettes dans l'huile d'olive jusqu'à coloration. ASTUCE CHEF : feu vif pour les dorer sans les rendre aqueuses.", badge: "⏱ 8 min" },
+      { icone: "🍳", titre: "Mélanger", detail: "Ajouter les pâtes et un filet d'eau de cuisson, mélanger.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Parsemer de parmesan, poivrer et servir. ASTUCE CHEF : un peu de zeste de citron réveille le plat.", badge: null }
     ]
   },
   patesbrocolis: {
@@ -7541,10 +7568,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente dans l'eau bouillante salée.", badge: "⏱ 10 min" },
-      { icone: "🥦", titre: "Cuire le brocoli", detail: "Détacher le brocoli en petits bouquets et le cuire à l'eau ou à la vapeur jusqu'à ce qu'il soit tendre.", badge: "⏱ 8 min" },
-      { icone: "🧄", titre: "Faire revenir", detail: "Faire revenir l'ail dans l'huile d'olive, ajouter le brocoli et l'écraser légèrement.", badge: null },
-      { icone: "🧀", titre: "Mélanger", detail: "Mélanger avec les pâtes et le parmesan. Servir chaud.", badge: null }
+      { icone: "💧", titre: "Eau salée", detail: "Porter une casserole d'eau salée à ébullition.", badge: null },
+      { icone: "🥦", titre: "Brocoli", detail: "Détacher le brocoli en petits bouquets.", badge: null },
+      { icone: "🍝", titre: "Cuisson combinée", detail: "Cuire les pâtes ; ajouter les bouquets de brocoli dans la même eau les dernières minutes. ASTUCE CHEF : cuire le brocoli avec les pâtes gagne du temps et de la vaisselle.", badge: "⏱ 10 min" },
+      { icone: "🧄", titre: "Ail", detail: "Faire revenir l'ail dans l'huile d'olive.", badge: null },
+      { icone: "🍳", titre: "Écraser", detail: "Ajouter le brocoli égoutté et l'écraser grossièrement pour qu'il enrobe les pâtes.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Mélanger avec les pâtes et le parmesan, poivrer. ASTUCE CHEF : un peu de piment d'Espelette relève joliment.", badge: null }
     ]
   },
   pateschevre: {
@@ -7574,10 +7603,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente, puis les égoutter.", badge: "⏱ 10 min" },
-      { icone: "🧀", titre: "Faire la sauce", detail: "Dans la casserole, faire fondre le chèvre avec la crème à feu doux jusqu'à obtenir une sauce lisse.", badge: "⏱ 4 min" },
-      { icone: "🍽️", titre: "Mélanger", detail: "Ajouter les pâtes, poivrer et bien mélanger. ASTUCE : une cuillère de miel adoucit joliment le chèvre.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Servir aussitôt, éventuellement avec quelques noix concassées.", badge: null }
+      { icone: "💧", titre: "Eau salée", detail: "Porter une casserole d'eau salée à ébullition.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente, réserver un peu d'eau de cuisson, égoutter.", badge: "⏱ 10 min" },
+      { icone: "🧀", titre: "Sauce chèvre", detail: "À feu doux, faire fondre le chèvre avec la crème jusqu'à une sauce lisse. ASTUCE CHEF : un peu d'eau de cuisson rend la sauce plus nappante.", badge: "⏱ 4 min" },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Poivrer généreusement.", badge: null },
+      { icone: "🍽️", titre: "Mélanger", detail: "Ajouter les pâtes et bien enrober. ASTUCE CHEF : une cuillère de miel adoucit le côté typé du chèvre.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Servir aussitôt, avec des noix concassées et de la ciboulette.", badge: null }
     ]
   },
   gratincourgettes: {
@@ -7607,10 +7638,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥒", titre: "Préparer les courgettes", detail: "Couper les courgettes en rondelles et les faire revenir quelques minutes pour les attendrir et évacuer l'eau.", badge: "⏱ 8 min" },
-      { icone: "🥚", titre: "Faire l'appareil", detail: "Battre les œufs avec la crème, l'ail, du sel et du poivre.", badge: null },
-      { icone: "🧀", titre: "Monter le gratin", detail: "Disposer les courgettes dans un plat, verser l'appareil et couvrir de fromage râpé.", badge: null },
-      { icone: "🔥", titre: "Gratiner", detail: "Enfourner à 190°C jusqu'à ce que le dessus soit doré et pris.", badge: "⏱ 30 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 190°C.", badge: null },
+      { icone: "🔪", titre: "Courgettes", detail: "Couper les courgettes en rondelles.", badge: null },
+      { icone: "🥒", titre: "Dégorger", detail: "Faire revenir les courgettes quelques minutes pour les attendrir et évacuer l'eau. ASTUCE CHEF : évacuer l'eau évite un gratin détrempé.", badge: "⏱ 8 min" },
+      { icone: "🥚", titre: "Appareil", detail: "Battre les œufs avec la crème, l'ail, du sel et du poivre.", badge: null },
+      { icone: "🧀", titre: "Monter", detail: "Disposer les courgettes dans un plat, verser l'appareil, couvrir de fromage râpé.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner jusqu'à ce que le dessus soit doré et l'appareil pris.", badge: "⏱ 30 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser tiédir 5 min avant de servir. ASTUCE CHEF : un repos court facilite la découpe en parts nettes.", badge: null }
     ]
   },
   gratinbrocolis: {
@@ -7640,10 +7674,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥦", titre: "Cuire le brocoli", detail: "Cuire le brocoli en bouquets à l'eau salée jusqu'à ce qu'il soit tendre, puis l'égoutter.", badge: "⏱ 8 min" },
-      { icone: "🥚", titre: "Faire l'appareil", detail: "Battre les œufs avec la crème, saler et poivrer.", badge: null },
-      { icone: "🧀", titre: "Monter le gratin", detail: "Répartir le brocoli dans un plat, verser l'appareil et parsemer de fromage râpé.", badge: null },
-      { icone: "🔥", titre: "Gratiner", detail: "Enfourner à 190°C jusqu'à ce que le dessus soit doré.", badge: "⏱ 30 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 190°C.", badge: null },
+      { icone: "🥦", titre: "Cuire le brocoli", detail: "Cuire le brocoli en bouquets à l'eau salée, puis bien l'égoutter. ASTUCE CHEF : ne pas trop cuire pour garder une belle couleur verte.", badge: "⏱ 8 min" },
+      { icone: "🥚", titre: "Appareil", detail: "Battre les œufs avec la crème, saler et poivrer.", badge: null },
+      { icone: "🧀", titre: "Monter", detail: "Répartir le brocoli dans un plat, verser l'appareil, parsemer de fromage.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner jusqu'à ce que le dessus soit doré.", badge: "⏱ 30 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud. ASTUCE CHEF : une pointe de noix de muscade dans l'appareil sublime le brocoli.", badge: null }
     ]
   },
   gratinpdt: {
@@ -7673,10 +7709,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Couper", detail: "Éplucher les pommes de terre et les couper en fines rondelles. Frotter le plat avec l'ail.", badge: null },
-      { icone: "🥛", titre: "Disposer", detail: "Ranger les rondelles dans le plat, saler, poivrer et verser le lait à mi-hauteur. Parsemer de noisettes de beurre.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 180°C.", badge: null },
+      { icone: "🥔", titre: "Couper", detail: "Éplucher les pommes de terre et les couper en fines rondelles. ASTUCE CHEF : des rondelles fines et régulières cuisent uniformément.", badge: null },
+      { icone: "🧄", titre: "Parfumer le plat", detail: "Frotter le plat avec une gousse d'ail et le beurrer légèrement.", badge: null },
+      { icone: "🥛", titre: "Disposer", detail: "Ranger les rondelles, saler, poivrer, verser le lait à mi-hauteur et parsemer de noisettes de beurre.", badge: null },
       { icone: "🧀", titre: "Couvrir", detail: "Couvrir de fromage râpé.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C jusqu'à ce que les pommes de terre soient tendres et le dessus gratiné.", badge: "⏱ 45 min" }
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner jusqu'à ce que les pommes de terre soient tendres et le dessus gratiné. ASTUCE CHEF : la pointe d'un couteau doit s'enfoncer sans résistance.", badge: "⏱ 45 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser reposer 5 min puis servir.", badge: null }
     ]
   },
   quichethon: {
@@ -7706,10 +7745,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥧", titre: "Foncer le moule", detail: "Étaler la pâte brisée dans un moule et la piquer à la fourchette.", badge: null },
-      { icone: "🐟", titre: "Garnir", detail: "Émietter le thon égoutté sur le fond de pâte et répartir les dés de tomate.", badge: null },
-      { icone: "🥚", titre: "Faire l'appareil", detail: "Battre les œufs avec la crème, saler et poivrer, puis verser sur la garniture.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 190°C jusqu'à ce que la quiche soit dorée et prise.", badge: "⏱ 35 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 190°C.", badge: null },
+      { icone: "🥧", titre: "Foncer", detail: "Étaler la pâte brisée dans un moule et la piquer. ASTUCE CHEF : piquer la pâte évite qu'elle gonfle.", badge: null },
+      { icone: "🐟", titre: "Thon", detail: "Émietter le thon égoutté sur le fond de pâte.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Répartir les dés de tomate sur le thon.", badge: null },
+      { icone: "🥚", titre: "Appareil", detail: "Battre les œufs avec la crème, saler et poivrer.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Verser l'appareil et enfourner jusqu'à ce que la quiche soit dorée. ASTUCE CHEF : la quiche est cuite quand le centre ne tremble plus.", badge: "⏱ 35 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Déguster tiède ou froide.", badge: null }
     ]
   },
   tartetomate: {
@@ -7739,10 +7781,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥧", titre: "Préparer la pâte", detail: "Dérouler la pâte feuilletée dans un moule et la piquer à la fourchette.", badge: null },
-      { icone: "🧀", titre: "Garnir le fond", detail: "Parsemer le fond de fromage râpé et répartir l'oignon émincé.", badge: null },
-      { icone: "🍅", titre: "Disposer les tomates", detail: "Couper les tomates en rondelles, les disposer en rosace, arroser d'huile d'olive, saler et poivrer.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C jusqu'à ce que la pâte soit dorée. ASTUCE : un peu de moutarde sous les tomates, c'est encore meilleur.", badge: "⏱ 30 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C.", badge: null },
+      { icone: "🥧", titre: "Pâte", detail: "Dérouler la pâte feuilletée dans un moule et la piquer.", badge: null },
+      { icone: "🧀", titre: "Fond", detail: "Parsemer le fond de fromage et répartir l'oignon émincé. ASTUCE CHEF : le fromage absorbe le jus des tomates et garde la pâte croustillante.", badge: null },
+      { icone: "🍅", titre: "Tomates", detail: "Couper les tomates en rondelles, disposer en rosace, saler, poivrer, arroser d'huile d'olive.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner jusqu'à ce que la pâte soit dorée. ASTUCE CHEF : une fine couche de moutarde sous le fromage relève la tarte.", badge: "⏱ 30 min" },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de basilic et servir tiède.", badge: null }
     ]
   },
   tartecourgettes: {
@@ -7772,10 +7816,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥧", titre: "Préparer la pâte", detail: "Dérouler la pâte feuilletée dans un moule et la piquer.", badge: null },
-      { icone: "🥒", titre: "Préparer les courgettes", detail: "Couper les courgettes en fines rondelles.", badge: null },
-      { icone: "🧀", titre: "Garnir", detail: "Mélanger la crème et le fromage, étaler sur la pâte, puis disposer les courgettes. Saler, poivrer.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C jusqu'à ce que la tarte soit dorée.", badge: "⏱ 30 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C.", badge: null },
+      { icone: "🥧", titre: "Pâte", detail: "Dérouler la pâte feuilletée dans un moule et la piquer.", badge: null },
+      { icone: "🔪", titre: "Courgettes", detail: "Couper les courgettes en fines rondelles. ASTUCE CHEF : des rondelles fines cuisent en même temps que la pâte.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Mélanger crème et fromage, étaler sur la pâte, disposer les courgettes en rosace, saler, poivrer.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner jusqu'à ce que la tarte soit dorée.", badge: "⏱ 30 min" },
+      { icone: "🌿", titre: "Servir", detail: "Servir tiède. ASTUCE CHEF : un filet d'huile d'olive et du thym à la sortie du four.", badge: null }
     ]
   },
   saumonpapillote: {
@@ -7805,10 +7851,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Préparer les légumes", detail: "Tailler la courgette et la carotte en fines lamelles.", badge: null },
-      { icone: "📦", titre: "Monter la papillote", detail: "Déposer le saumon sur une feuille de papier cuisson, ajouter les légumes, un filet d'huile d'olive, des rondelles de citron, sel et poivre. Refermer hermétiquement.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C : la papillote gonfle et le saumon cuit à la vapeur.", badge: "⏱ 18 min" },
-      { icone: "🍽️", titre: "Servir", detail: "Ouvrir la papillote à table pour profiter des arômes. ASTUCE : un brin d'aneth sublime le saumon.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C.", badge: null },
+      { icone: "🔪", titre: "Légumes", detail: "Tailler la courgette et la carotte en fines lamelles. ASTUCE CHEF : plus les légumes sont fins, mieux ils cuisent avec le poisson.", badge: null },
+      { icone: "📦", titre: "Monter", detail: "Déposer le saumon sur une feuille de papier cuisson, ajouter les légumes.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Arroser d'huile d'olive, ajouter des rondelles de citron, saler et poivrer.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Refermer la papillote hermétiquement et enfourner. ASTUCE CHEF : bien fermer pour emprisonner la vapeur.", badge: "⏱ 18 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Ouvrir la papillote à table pour profiter des arômes, avec un brin d'aneth.", badge: null }
     ]
   },
   poeleeharicots: {
@@ -7838,9 +7886,11 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫛", titre: "Cuire les haricots", detail: "Cuire les haricots verts à l'eau bouillante salée jusqu'à ce qu'ils soient tendres mais encore croquants, puis les égoutter.", badge: "⏱ 8 min" },
-      { icone: "🧄", titre: "Faire revenir", detail: "Faire fondre le beurre dans une poêle, ajouter l'ail et l'oignon émincés.", badge: null },
-      { icone: "🍳", titre: "Sauter", detail: "Ajouter les haricots et les faire sauter quelques minutes. Saler, poivrer.", badge: "⏱ 5 min" },
+      { icone: "💧", titre: "Eau salée", detail: "Porter une casserole d'eau salée à ébullition.", badge: null },
+      { icone: "🫛", titre: "Cuire", detail: "Cuire les haricots verts jusqu'à ce qu'ils soient tendres mais croquants, puis égoutter. ASTUCE CHEF : un passage en eau glacée fixe la couleur verte vive.", badge: "⏱ 8 min" },
+      { icone: "🧅", titre: "Préparer", detail: "Émincer l'ail et l'oignon.", badge: null },
+      { icone: "🧈", titre: "Faire revenir", detail: "Faire fondre le beurre, ajouter l'ail et l'oignon.", badge: "⏱ 3 min" },
+      { icone: "🍳", titre: "Sauter", detail: "Ajouter les haricots et faire sauter quelques minutes, saler, poivrer. ASTUCE CHEF : du beurre plutôt que de l'huile pour un goût plus gourmand.", badge: "⏱ 5 min" },
       { icone: "🍽️", titre: "Servir", detail: "Servir en accompagnement d'une viande ou d'un poisson.", badge: null }
     ]
   },
@@ -7871,10 +7921,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Préparer", detail: "Laver les pommes de terre et les couper en quartiers, avec ou sans la peau.", badge: null },
-      { icone: "🧄", titre: "Assaisonner", detail: "Mélanger les pommes de terre avec l'huile d'olive, l'ail écrasé, du sel et des herbes.", badge: null },
-      { icone: "🔥", titre: "Enfourner", detail: "Étaler sur une plaque et enfourner à 200°C jusqu'à ce qu'elles soient dorées et tendres, en les retournant à mi-cuisson.", badge: "⏱ 35 min" },
-      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud. ASTUCE : ne pas les superposer sur la plaque pour qu'elles restent croustillantes.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C.", badge: null },
+      { icone: "🥔", titre: "Préparer", detail: "Laver les pommes de terre et les couper en quartiers.", badge: null },
+      { icone: "🧄", titre: "Assaisonner", detail: "Mélanger avec l'huile d'olive, l'ail écrasé, du sel et des herbes. ASTUCE CHEF : bien enrober chaque morceau d'huile pour une dorure uniforme.", badge: null },
+      { icone: "🔥", titre: "Enfourner", detail: "Étaler sur une plaque en une seule couche et enfourner.", badge: "⏱ 35 min" },
+      { icone: "🔄", titre: "Retourner", detail: "Retourner à mi-cuisson. ASTUCE CHEF : ne pas superposer, sinon elles cuisent à la vapeur au lieu de croustiller.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud et doré.", badge: null }
     ]
   },
   cordonbleu: {
@@ -7904,10 +7956,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Préparer le poulet", detail: "Ouvrir les escalopes en portefeuille, glisser à l'intérieur une tranche de jambon et du fromage, puis refermer.", badge: null },
-      { icone: "🥚", titre: "Paner", detail: "Passer chaque cordon bleu dans l'œuf battu, puis dans la chapelure.", badge: null },
-      { icone: "🍳", titre: "Cuire", detail: "Faire dorer à la poêle à feu moyen quelques minutes de chaque côté, jusqu'à ce que la panure soit croustillante et le poulet cuit.", badge: "⏱ 12 min" },
-      { icone: "🧀", titre: "Servir", detail: "Servir aussitôt : le fromage doit être fondant à cœur.", badge: null }
+      { icone: "🔪", titre: "Ouvrir", detail: "Ouvrir les escalopes de poulet en portefeuille.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Glisser une tranche de jambon et du fromage, puis bien refermer. ASTUCE CHEF : presser les bords pour que le fromage ne s'échappe pas.", badge: null },
+      { icone: "🥚", titre: "Œuf", detail: "Battre l'œuf dans une assiette creuse.", badge: null },
+      { icone: "🍞", titre: "Paner", detail: "Passer chaque cordon bleu dans l'œuf battu puis dans la chapelure. ASTUCE CHEF : double passage œuf-chapelure pour une panure bien épaisse.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Faire dorer à la poêle à feu moyen quelques minutes de chaque côté.", badge: "⏱ 12 min" },
+      { icone: "🌡️", titre: "Vérifier", detail: "S'assurer que le poulet est cuit à cœur.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Servir aussitôt, le fromage doit être fondant.", badge: null }
     ]
   },
 });

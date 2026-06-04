@@ -816,10 +816,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente, les égoutter et les passer sous l'eau froide pour les refroidir.", badge: "⏱ 10 min" },
-      { icone: "🥚", titre: "Cuire les œufs", detail: "Faire cuire les œufs durs (environ 9 min dans l'eau bouillante), les écaler et les couper en quartiers.", badge: "⏱ 9 min" },
-      { icone: "🔪", titre: "Couper", detail: "Couper les tomates et le jambon en dés.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mélanger les pâtes refroidies avec les tomates, le jambon et l'huile d'olive. Saler, poivrer et déposer les œufs par-dessus. ASTUCE : une cuillère de moutarde dans l'assaisonnement relève la salade.", badge: null }
+      { icone: "💧", titre: "Eau salée", detail: "Porter une casserole d'eau salée à ébullition.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente, les égoutter et les rincer à l'eau froide. ASTUCE CHEF : un filet d'huile évite qu'elles collent en refroidissant.", badge: "⏱ 10 min" },
+      { icone: "🥚", titre: "Œufs durs", detail: "Cuire les œufs durs 9 min, les rafraîchir, les écaler et les couper en quartiers.", badge: "⏱ 9 min" },
+      { icone: "🔪", titre: "Préparer", detail: "Couper les tomates et le jambon en dés.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mélanger les pâtes avec les tomates, le jambon et l'huile d'olive. Saler, poivrer.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Disposer les œufs sur le dessus et servir frais. ASTUCE CHEF : une cuillère de moutarde dans l'assaisonnement relève la salade.", badge: null }
     ]
   },
   saladecomposee: {
@@ -849,10 +851,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Cuire les œufs", detail: "Faire cuire les œufs durs (environ 9 min), les écaler et les couper en quartiers.", badge: "⏱ 9 min" },
-      { icone: "🔪", titre: "Préparer", detail: "Laver et déchirer la salade, couper les tomates, égoutter le maïs et couper le jambon en lanières.", badge: null },
+      { icone: "🥚", titre: "Œufs durs", detail: "Cuire les œufs durs 9 min, les rafraîchir, les écaler et les couper en quartiers.", badge: "⏱ 9 min" },
+      { icone: "🥬", titre: "Salade", detail: "Laver et essorer la salade, puis la déchirer en morceaux. ASTUCE CHEF : bien essorer pour que la vinaigrette accroche.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Couper les tomates, égoutter le maïs et couper le jambon en lanières.", badge: null },
       { icone: "🥗", titre: "Assembler", detail: "Disposer la salade dans un saladier, ajouter tomates, maïs, jambon et œufs.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Arroser d'une vinaigrette à l'huile d'olive, saler et poivrer. Servir frais.", badge: null }
+      { icone: "🫒", titre: "Vinaigrette", detail: "Préparer une vinaigrette à l'huile d'olive, saler et poivrer. ASTUCE CHEF : assaisonner juste avant de servir pour garder la salade croquante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir frais.", badge: null }
     ]
   },
 });

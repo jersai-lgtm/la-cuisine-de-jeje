@@ -1217,10 +1217,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Couper", detail: "Éplucher les carottes, les pommes de terre et l'oignon, puis les couper en morceaux.", badge: null },
-      { icone: "🥕", titre: "Cuire", detail: "Mettre les légumes dans une casserole, couvrir d'eau, saler et laisser mijoter jusqu'à ce qu'ils soient bien tendres.", badge: "⏱ 25 min" },
-      { icone: "🥣", titre: "Mixer", detail: "Mixer finement avec la crème jusqu'à obtenir une texture veloutée. Ajuster avec un peu d'eau si nécessaire.", badge: null },
-      { icone: "🍲", titre: "Servir", detail: "Servir bien chaud. ASTUCE : une pincée de cumin ou de coriandre sublime les carottes.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher carottes, pomme de terre et oignon, puis couper en morceaux.", badge: null },
+      { icone: "🧅", titre: "Suer l'oignon", detail: "Faire revenir l'oignon dans un peu de matière grasse jusqu'à ce qu'il soit translucide.", badge: "⏱ 3 min" },
+      { icone: "🥕", titre: "Cuire", detail: "Ajouter carottes et pomme de terre, couvrir d'eau, saler et laisser mijoter jusqu'à tendreté.", badge: "⏱ 25 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer finement avec la crème. ASTUCE CHEF : mixer longtemps donne une texture vraiment soyeuse.", badge: null },
+      { icone: "💧", titre: "Ajuster", detail: "Détendre avec un peu d'eau de cuisson si le velouté est trop épais.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE CHEF : une pincée de cumin sublime la carotte.", badge: null }
     ]
   },
   veloutetomates: {
@@ -1250,10 +1252,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Préparer", detail: "Couper les tomates et l'oignon en morceaux.", badge: null },
-      { icone: "🍅", titre: "Cuire", detail: "Faire revenir l'oignon et l'ail, ajouter les tomates, couvrir d'eau, saler et laisser mijoter.", badge: "⏱ 20 min" },
-      { icone: "🥣", titre: "Mixer", detail: "Mixer le tout avec la crème jusqu'à obtenir un velouté lisse.", badge: null },
-      { icone: "🍲", titre: "Servir", detail: "Servir bien chaud. ASTUCE : quelques feuilles de basilic et un trait d'huile d'olive en finition.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper les tomates et l'oignon en morceaux, hacher l'ail.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire revenir l'oignon et l'ail dans un peu d'huile sans coloration.", badge: "⏱ 3 min" },
+      { icone: "🍅", titre: "Cuire", detail: "Ajouter les tomates, couvrir d'eau, saler et laisser mijoter. ASTUCE CHEF : une pincée de sucre adoucit l'acidité de la tomate.", badge: "⏱ 20 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème jusqu'à un velouté lisse.", badge: null },
+      { icone: "💧", titre: "Ajuster", detail: "Rectifier l'assaisonnement et la consistance.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE CHEF : un trait d'huile d'olive et du basilic en finition.", badge: null }
     ]
   },
   soupepotimarron: {
@@ -1283,10 +1287,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Préparer", detail: "Éplucher le potimarron et la pomme de terre, les couper en cubes avec l'oignon.", badge: null },
-      { icone: "🎃", titre: "Cuire", detail: "Mettre les légumes dans une casserole, couvrir d'eau, saler et laisser mijoter jusqu'à ce qu'ils soient tendres.", badge: "⏱ 25 min" },
-      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème jusqu'à obtenir une texture veloutée.", badge: null },
-      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE : une pincée de noix de muscade se marie à merveille avec la courge.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher le potimarron et la pomme de terre, couper en cubes avec l'oignon. ASTUCE CHEF : la peau du potimarron est comestible si tu mixes bien.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire revenir l'oignon dans un peu de matière grasse.", badge: "⏱ 3 min" },
+      { icone: "🎃", titre: "Cuire", detail: "Ajouter potimarron et pomme de terre, couvrir d'eau, saler et laisser mijoter jusqu'à tendreté.", badge: "⏱ 25 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème jusqu'à une texture veloutée.", badge: null },
+      { icone: "💧", titre: "Ajuster", detail: "Détendre avec un peu d'eau si la soupe est trop épaisse.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE CHEF : une pincée de noix de muscade se marie parfaitement avec la courge.", badge: null }
     ]
   },
   soupecourgettes: {
@@ -1316,10 +1322,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Préparer", detail: "Couper les courgettes, la pomme de terre et l'oignon en morceaux.", badge: null },
-      { icone: "🥒", titre: "Cuire", detail: "Faire mijoter les légumes dans l'eau salée jusqu'à ce qu'ils soient tendres.", badge: "⏱ 20 min" },
+      { icone: "🔪", titre: "Préparer", detail: "Couper courgettes, pomme de terre et oignon en morceaux.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire revenir l'oignon sans coloration.", badge: "⏱ 3 min" },
+      { icone: "🥒", titre: "Cuire", detail: "Ajouter courgettes et pomme de terre, couvrir d'eau, saler et laisser mijoter. ASTUCE CHEF : garder la peau des courgettes donne une jolie couleur verte.", badge: "⏱ 20 min" },
       { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème pour une soupe onctueuse.", badge: null },
-      { icone: "🍲", titre: "Servir", detail: "Servir chaud, avec un peu de poivre. ASTUCE : une portion de fromage fondu rend la soupe encore plus douce.", badge: null }
+      { icone: "💧", titre: "Ajuster", detail: "Rectifier l'assaisonnement et la consistance.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE CHEF : une portion de fromage fondu rend la soupe plus douce et plaît aux enfants.", badge: null }
     ]
   },
   veloutechampignons: {
@@ -1350,9 +1358,11 @@ Object.assign(recettes, {
     ingredients: {},
     etapes: [
       { icone: "🔪", titre: "Préparer", detail: "Émincer les champignons et l'oignon.", badge: null },
-      { icone: "🍄", titre: "Faire revenir", detail: "Faire revenir les champignons et l'oignon, ajouter la pomme de terre, couvrir d'eau et laisser mijoter.", badge: "⏱ 20 min" },
-      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème jusqu'à obtenir un velouté lisse.", badge: null },
-      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE : garder quelques champignons poêlés pour la décoration.", badge: null }
+      { icone: "🍄", titre: "Saisir", detail: "Faire revenir les champignons à feu vif jusqu'à évaporation de leur eau. ASTUCE CHEF : bien saisir les champignons concentre leur goût.", badge: "⏱ 5 min" },
+      { icone: "🥔", titre: "Cuire", detail: "Ajouter l'oignon et la pomme de terre, couvrir d'eau, saler et laisser mijoter.", badge: "⏱ 20 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème jusqu'à un velouté lisse.", badge: null },
+      { icone: "💧", titre: "Ajuster", detail: "Rectifier l'assaisonnement.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE CHEF : garder quelques champignons poêlés pour la déco et le croquant.", badge: null }
     ]
   },
   veloutebrocolis: {
@@ -1383,9 +1393,11 @@ Object.assign(recettes, {
     ingredients: {},
     etapes: [
       { icone: "🔪", titre: "Préparer", detail: "Détacher le brocoli en bouquets, couper la pomme de terre et l'oignon.", badge: null },
-      { icone: "🥦", titre: "Cuire", detail: "Cuire les légumes dans l'eau salée jusqu'à ce qu'ils soient tendres.", badge: "⏱ 18 min" },
-      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème jusqu'à obtenir un velouté vert et lisse.", badge: null },
-      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE : un peu de fromage râpé fondu par-dessus, et les enfants adorent.", badge: null }
+      { icone: "🧅", titre: "Suer", detail: "Faire revenir l'oignon sans coloration.", badge: "⏱ 3 min" },
+      { icone: "🥦", titre: "Cuire", detail: "Ajouter brocoli et pomme de terre, couvrir d'eau, saler et laisser mijoter. ASTUCE CHEF : ne pas trop cuire pour garder une belle couleur verte.", badge: "⏱ 18 min" },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer avec la crème jusqu'à un velouté vert et lisse.", badge: null },
+      { icone: "💧", titre: "Ajuster", detail: "Rectifier la consistance avec un peu d'eau si besoin.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE CHEF : un peu de fromage râpé fondu par-dessus, et les enfants adorent.", badge: null }
     ]
   },
 });
