@@ -571,18 +571,40 @@ function lcGenererPlanPrep() {
     </div>`;
   }).join("");
 
-  const consHTML = liste.map(({ cle }) => {
+  // Conservation — enrichi : niveau de risque + tri (le plus fragile en haut) + portions
+  const consData = liste.map(({ cle, personnes }) => {
     const r = recettes[cle];
-    if (!r) return "";
+    if (!r) return null;
     const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
     const c = lcConseilConservation(cle);
-    const frigoTxt = c.frigo > 0 ? `🧊 Frigo ${c.frigo} j` : "🥤 à préparer minute";
-    const congTxt = c.congel === "oui" ? "❄️ se congèle bien" : c.congel === "moyen" ? "❄️ congélation possible" : "⛔ ne se congèle pas";
-    const congColor = c.congel === "oui" ? "#7fdca8" : c.congel === "moyen" ? "#ffb27a" : "#ff8f8f";
+    let risque = "bas";
+    if (c.congel === "non" && c.frigo <= 2) risque = "haut";
+    else if (c.frigo <= 2 || c.congel !== "oui") risque = "moyen";
+    return { nom, personnes: personnes || null, frigo: c.frigo, congel: c.congel, note: c.note, risque };
+  }).filter(Boolean);
+  const rang = { haut: 0, moyen: 1, bas: 2 };
+  consData.sort((a, b) => (rang[a.risque] - rang[b.risque]) || (a.frigo - b.frigo));
+
+  const fragiles = consData.filter(x => x.risque === "haut");
+  const plur = fragiles.length > 1;
+  const alerteHTML = fragiles.length ? `<div style="background:rgba(255,90,90,.1);border:1px solid rgba(255,90,90,.35);border-radius:11px;padding:9px 11px;margin:0 0 9px 33px">
+      <div style="font-size:12px;color:#ff8f8f;font-weight:600;margin-bottom:2px">⚠️ À manger en début de semaine</div>
+      <div style="font-size:11px;color:#d7b3b3">${fragiles.map(x => ech(x.nom)).join(", ")} — se garde${plur ? "nt" : ""} peu et ne se congèle${plur ? "nt" : ""} pas. N'en prépare pas plus que ce que tu mangeras en 1-2 jours.</div>
+    </div>` : "";
+
+  const consHTML = consData.map(x => {
+    const pastille = x.risque === "haut" ? "🔴" : x.risque === "moyen" ? "🟠" : "🟢";
+    const frigoTxt = x.frigo > 0 ? `🧊 Frigo ${x.frigo} j` : "🥤 à préparer minute";
+    const congTxt = x.congel === "oui" ? "❄️ se congèle bien" : x.congel === "moyen" ? "❄️ congélation possible" : "⛔ ne se congèle pas";
+    const congColor = x.congel === "oui" ? "#7fdca8" : x.congel === "moyen" ? "#ffb27a" : "#ff8f8f";
+    const portionTxt = x.personnes ? ` · 🍽️ ${x.personnes} pers.` : "";
+    const avert = (x.risque === "haut" && x.personnes && x.personnes >= 4)
+      ? `<div style="font-size:11px;color:#ff8f8f;margin-top:3px">⚠️ ${x.personnes} portions d'un plat qui ne tient que ${x.frigo} j et ne se congèle pas : prévois de le manger vite, ou réduis la quantité pour éviter le gaspillage.</div>` : "";
     return `<div style="background:#1a1620;border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:9px 11px">
-        <div style="font-size:13px;color:#fff;font-weight:500;margin-bottom:3px">${ech(nom)}</div>
+        <div style="font-size:13px;color:#fff;font-weight:500;margin-bottom:3px">${pastille} ${ech(x.nom)}<span style="color:#88858f;font-weight:400">${portionTxt}</span></div>
         <div style="font-size:12px;color:#b3b0b8">${frigoTxt} · <span style="color:${congColor}">${congTxt}</span></div>
-        ${c.note ? `<div style="font-size:11px;color:#88858f;margin-top:2px">${ech(c.note)}</div>` : ""}
+        ${x.note ? `<div style="font-size:11px;color:#88858f;margin-top:2px">${ech(x.note)}</div>` : ""}
+        ${avert}
       </div>`;
   }).join("");
   const conservationBloc = `<div style="margin-bottom:4px">
@@ -590,7 +612,8 @@ function lcGenererPlanPrep() {
         <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#3a6ea5;color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center">🥶</span>
         <span style="font-size:15px;font-weight:500;color:#fff;flex:1">Conservation & congélation</span>
       </div>
-      <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">Mange en premier ce qui se garde le moins longtemps, et congèle les portions que tu ne finiras pas à temps : tu auras du rab pour plus tard. 😊</div>
+      <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">🔴 à manger en premier · 🟠 assez vite · 🟢 se garde bien / se congèle. Congèle les portions que tu ne finiras pas à temps : tu auras du rab. 😊</div>
+      ${alerteHTML}
       <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${consHTML}</div>
     </div>`;
 
