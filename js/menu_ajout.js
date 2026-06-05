@@ -153,3 +153,40 @@ function maToast(msg) {
   clearTimeout(window._maToastTO);
   window._maToastTO = setTimeout(function () { t.style.opacity = "0"; }, 2600);
 }
+
+// ============================================================
+//  Point d'entrée 2 : recherche dans l'onglet Menu
+// ============================================================
+function maNorm(s) { return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+
+function maRechercheMenu(q) {
+  const res = document.getElementById("ma-srch-res");
+  if (!res) return;
+  const v = maNorm(q).trim();
+  if (v.length < 2) { res.innerHTML = ""; return; }
+  const hits = Object.keys(recettes).filter(function (k) {
+    return maNorm(typeof getNomRecette === "function" ? getNomRecette(k) : k).indexOf(v) >= 0;
+  }).slice(0, 8);
+  if (!hits.length) { res.innerHTML = '<p style="margin:8px 0 0;color:#88858f;font-size:12px">Aucune recette trouvée.</p>'; return; }
+  res.innerHTML = hits.map(function (k) {
+    const nom = typeof getNomRecette === "function" ? getNomRecette(k) : k;
+    const emo = typeof getEmoji === "function" ? getEmoji(k) : "🍽️";
+    return '<div onclick="ouvrirAjoutMenu(\'' + k + '\')" style="display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;background:#1a1620;border:1px solid rgba(255,255,255,.07);margin-top:6px;cursor:pointer">'
+      + '<span style="font-size:20px">' + emo + '</span>'
+      + '<span style="flex:1;color:#fff;font-size:13px">' + nom + '</span>'
+      + '<span style="font-size:12px;color:#ff4d88;font-weight:600">+ menu</span></div>';
+  }).join("");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("plan-form");
+  if (!form || document.getElementById("ma-recherche-menu")) return;
+  const box = document.createElement("div");
+  box.id = "ma-recherche-menu";
+  box.style.cssText = "margin:0 0 18px";
+  box.innerHTML =
+    '<p style="margin:0 0 8px;color:#fff;font-size:15px;font-weight:600">➕ Ajouter une recette précise</p>'
+    + '<input id="ma-srch" type="text" placeholder="Rechercher une recette à mettre au menu…" oninput="maRechercheMenu(this.value)" style="width:100%;box-sizing:border-box;padding:11px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:#1a1620;color:#fff;font-size:14px" />'
+    + '<div id="ma-srch-res" style="margin-top:6px"></div>';
+  form.parentNode.insertBefore(box, form);
+});
