@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   goumeau: {
+    nom: "Galette de Goumeau",
     cat: "desserts", pays: "france",
     base: 4,
     temps: "3h (dont 2h levée)",
@@ -42,6 +43,7 @@ Object.assign(recettes, {
     ]
   },
   cookies: {
+    nom: "Cookies",
     cat: "desserts", pays: "usa",
     base: 1,
     temps: "20 min",
@@ -81,6 +83,7 @@ Object.assign(recettes, {
     ]
   },
   verrinetiramisu: {
+    nom: "Verrines Tiramisu",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "20 min + 4h repos",
@@ -114,6 +117,7 @@ Object.assign(recettes, {
     ]
   },
   churros: {
+    nom: "Churros",
     cat: "desserts", saisons: ["automne","hiver"], pays: "espagne",
     base: 4,
     temps: "30 min",
@@ -147,6 +151,7 @@ Object.assign(recettes, {
     ]
   },
   parisbrestreinterpretation: {
+    nom: "Paris-Brest",
     cat: "desserts", saisons: ["automne","hiver"], pays: "france",
     base: 8,
     temps: "1h30",
@@ -180,6 +185,7 @@ Object.assign(recettes, {
     ]
   },
   moelleuxchocolat: {
+    nom: "Moelleux au Chocolat",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "25 min",
@@ -213,6 +219,7 @@ Object.assign(recettes, {
     ]
   },
   cheesecake: {
+    nom: "Cheesecake",
     cat: "desserts", pays: "usa",
     base: 8,
     temps: "1h + repos",
@@ -246,6 +253,7 @@ Object.assign(recettes, {
     ]
   },
   gateaubasque: {
+    nom: "Gâteau Basque",
     cat: "desserts", pays: "france",
     base: 8,
     temps: "1h30",
@@ -279,6 +287,7 @@ Object.assign(recettes, {
     ]
   },
   canelebordelais: {
+    nom: "Cannelés Bordelais",
     cat: "desserts", pays: "france",
     base: 12,
     temps: "15 min + 24h repos",
@@ -321,6 +330,7 @@ Object.assign(recettes, {
     ]
   },
   crumblefruits: {
+    nom: "Crumble aux Fruits",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "45 min",
@@ -354,6 +364,7 @@ Object.assign(recettes, {
     ]
   },
   millefeuille: {
+    nom: "Mille-feuille",
     cat: "desserts", pays: "france",
     base: 8,
     temps: "1h",
@@ -387,6 +398,7 @@ Object.assign(recettes, {
     ]
   },
   tiramisufraise: {
+    nom: "Tiramisu aux Fraises",
     cat: "desserts", saisons: ["ete","printemps"], pays: "italie",
     base: 6,
     temps: "30 min + 4h repos",
@@ -420,6 +432,7 @@ Object.assign(recettes, {
     ]
   },
   baklava: {
+    nom: "Baklava",
     cat: "desserts", saisons: ["hiver"], pays: "liban",
     base: 12,
     temps: "1h30",
@@ -453,6 +466,7 @@ Object.assign(recettes, {
     ]
   },
   tartetatinpommes: {
+    nom: "Tarte Tatin aux Pommes",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "1h",
@@ -486,6 +500,7 @@ Object.assign(recettes, {
     ]
   },
   verrineframboisechocolat: {
+    nom: "Verrines Framboise Chocolat",
     cat: "desserts", saisons: ["ete"], pays: "france",
     base: 4,
     temps: "30 min + 2h frigo",
@@ -518,6 +533,7 @@ Object.assign(recettes, {
     ]
   },
   tartepistache: {
+    nom: "Tarte à la Pistache",
     cat: "desserts", saisons: ["ete"], pays: "france",
     base: 8,
     temps: "1h + 3h frigo",
@@ -550,6 +566,7 @@ Object.assign(recettes, {
     ]
   },
   tartechocolatcaramel: {
+    nom: "Tarte Chocolat Caramel",
     cat: "desserts", pays: "france",
     base: 8,
     temps: "1h + 2h frigo",
@@ -582,6 +599,7 @@ Object.assign(recettes, {
     ]
   },
   cremebrulee: {
+    nom: "Crème Brûlée",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "45 min + repos",
@@ -616,6 +634,7 @@ Object.assign(recettes, {
     ]
   },
   mousseauchocolat: {
+    nom: "Mousse au Chocolat",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "20 min + 2h repos",
@@ -649,6 +668,7 @@ Object.assign(recettes, {
     ]
   },
   ileflottante: {
+    nom: "Île Flottante",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "40 min",
@@ -683,6 +703,7 @@ Object.assign(recettes, {
     ]
   },
   fondantchocolat: {
+    nom: "Fondant au Chocolat",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "25 min",
@@ -716,6 +737,7 @@ Object.assign(recettes, {
     ]
   },
   madeleine: {
+    nom: "Madeleines",
     cat: "desserts", pays: "france",
     base: 12,
     temps: "30 min + repos",
@@ -754,6 +776,7 @@ Object.assign(recettes, {
     ]
   },
   clafoutis: {
+    nom: "Clafoutis",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "~50 min",
@@ -799,6 +822,7 @@ Object.assign(recettes, {
     ]
   },
   tartecitron: {
+    nom: "Tarte au Citron",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "1h30 + repos",
@@ -833,6 +857,7 @@ Object.assign(recettes, {
     ]
   },
   tarteaupommes: {
+    nom: "Tarte aux Pommes",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "~1h",
@@ -869,6 +894,7 @@ Object.assign(recettes, {
     ]
   },
   tiramisu: {
+    nom: "Tiramisu",
     cat: "desserts", pays: "italie",
     base: 6,
     temps: "25 min + 12h repos",
@@ -905,6 +931,7 @@ Object.assign(recettes, {
     ]
   },
   flan: {
+    nom: "Flan",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "~1h + refroidissement",
@@ -952,6 +979,7 @@ Object.assign(recettes, {
     ]
   },
   tarteFragoles: {
+    nom: "Tarte aux Fraises",
     cat: "desserts", saisons: ["ete","printemps"], pays: "france",
     base: 6,
     temps: "1h + repos",
@@ -984,6 +1012,7 @@ Object.assign(recettes, {
     ]
   },
   pannaCotta: {
+    nom: "Panna Cotta Vanille",
     cat: "desserts", saisons: ["ete","printemps"], pays: "italie",
     base: 4,
     temps: "20 min + 4h",
@@ -1016,6 +1045,7 @@ Object.assign(recettes, {
     ]
   },
   eclair: {
+    nom: "Éclairs au Chocolat",
     cat: "desserts", saisons: ["automne","hiver"], pays: "france",
     base: 4,
     temps: "1h",
@@ -1048,6 +1078,7 @@ Object.assign(recettes, {
     ]
   },
   pavlova: {
+    nom: "Pavlova aux Fruits",
     cat: "desserts", saisons: ["ete","printemps"], pays: "monde",
     base: 6,
     temps: "1h30",
@@ -1080,6 +1111,7 @@ Object.assign(recettes, {
     ]
   },
   profiteroles: {
+    nom: "Profiteroles",
     cat: "desserts", saisons: ["automne","hiver"], pays: "france",
     base: 4,
     temps: "50 min",
@@ -1112,6 +1144,7 @@ Object.assign(recettes, {
     ]
   },
   tarteNormande: {
+    nom: "Tarte Normande",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "55 min",
@@ -1144,6 +1177,7 @@ Object.assign(recettes, {
     ]
   },
   pasteldenata: {
+    nom: "Pastéis de Nata",
     cat: "desserts", pays: "portugal",
     base: 4,
     temps: "45 min",
@@ -1178,6 +1212,7 @@ Object.assign(recettes, {
     ]
   },
   basquecheesecake: {
+    nom: "Basque Cheesecake",
     cat: "desserts", pays: "espagne",
     base: 8,
     temps: "1h + repos",
@@ -1212,6 +1247,7 @@ Object.assign(recettes, {
     ]
   },
   mochiglace: {
+    nom: "Mochis Glacés",
     cat: "desserts", saisons: ["ete"], pays: "japon",
     base: 4,
     temps: "45 min + congélation",
@@ -1246,6 +1282,7 @@ Object.assign(recettes, {
     ]
   },
   knafehlibanais: {
+    nom: "Knafeh",
     cat: "desserts", pays: "liban",
     base: 6,
     temps: "1h",
@@ -1280,6 +1317,7 @@ Object.assign(recettes, {
     ]
   },
   alfajores: {
+    nom: "Alfajores",
     cat: "desserts", pays: "argentine",
     base: 4,
     temps: "1h",
@@ -1314,6 +1352,7 @@ Object.assign(recettes, {
     ]
   },
   cremecaramel: {
+    nom: "Crème Caramel",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "45 min + 4h frais",
@@ -1351,6 +1390,7 @@ Object.assign(recettes, {
     ]
   },
   farbreton: {
+    nom: "Far Breton",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "1h",
@@ -1387,6 +1427,7 @@ Object.assign(recettes, {
     ]
   },
   galettedesrois: {
+    nom: "Galette des Rois",
     cat: "desserts", saisons: ["hiver"], pays: "france",
     base: 8,
     temps: "1h + 1h frais",
@@ -1426,6 +1467,7 @@ Object.assign(recettes, {
     ]
   },
   cannolisicilien: {
+    nom: "Cannoli Siciliens",
     cat: "desserts", pays: "italie",
     base: 6,
     temps: "1h + 1h repos",
@@ -1463,6 +1505,7 @@ Object.assign(recettes, {
     ]
   },
   affogatoglace: {
+    nom: "Affogato al Caffè",
     cat: "desserts", pays: "italie",
     base: 2,
     temps: "5 min",
@@ -1498,6 +1541,7 @@ Object.assign(recettes, {
     ]
   },
   religieusechocolat: {
+    nom: "Religieuse Chocolat",
     cat: "desserts", pays: "france",
     base: 6,
     temps: "2h",
@@ -1535,6 +1579,7 @@ Object.assign(recettes, {
     ]
   },
   sainthonore: {
+    nom: "Saint-Honoré",
     cat: "desserts", pays: "france",
     base: 8,
     temps: "3h",
@@ -1573,6 +1618,7 @@ Object.assign(recettes, {
     ]
   },
   foretnoire: {
+    nom: "Forêt Noire",
     cat: "desserts", pays: "allemagne",
     base: 8,
     temps: "2h + 4h réfrigération",
@@ -1612,6 +1658,7 @@ Object.assign(recettes, {
     ]
   },
   charlottefruits: {
+    nom: "Charlotte Fruits Rouges",
     cat: "desserts", saisons: ["printemps","ete"], pays: "france",
     base: 8,
     temps: "45 min + 4h frigo",
@@ -1650,6 +1697,7 @@ Object.assign(recettes, {
     ]
   },
   apfelstrudel: {
+    nom: "Apfelstrudel",
     cat: "desserts", saisons: ["automne","hiver"], pays: "allemagne",
     base: 8,
     temps: "1h30",
@@ -1688,6 +1736,7 @@ Object.assign(recettes, {
     ]
   },
   cremecatalane: {
+    nom: "Crema Catalana",
     cat: "desserts", pays: "espagne",
     base: 6,
     temps: "30 min + 4h frigo",
@@ -1725,6 +1774,7 @@ Object.assign(recettes, {
     ]
   },
   treslecheas: {
+    nom: "Tres Leches",
     cat: "desserts", pays: "mexique",
     base: 10,
     temps: "1h + 4h frigo",
@@ -1763,6 +1813,7 @@ Object.assign(recettes, {
     ]
   },
   macarons: {
+    nom: "Macarons Parisiens",
     cat: "desserts", pays: "france",
     base: 12,
     temps: "2h + 1h croûtage",
@@ -1806,6 +1857,7 @@ Object.assign(recettes, {
     ]
   },
   babaaurhum: {
+    nom: "Baba au Rhum",
     cat: "desserts", pays: "france",
     base: 8,
     temps: "3h",
@@ -1848,6 +1900,7 @@ Object.assign(recettes, {
     ]
   },
   cakeBananeChoco: {
+    nom: "Cake Banane Chocolat",
     cat: "desserts", pays: "france",
     base: 4,
     temps: "1h05",
@@ -1882,6 +1935,7 @@ Object.assign(recettes, {
     ]
   },
   banoffeepie: {
+    nom: "Banoffee Pie",
     cat: "desserts", pays: "angleterre",
     base: 8, temps: "30 min + 3h frigo", niveau: "⭐ Facile", emoji: "🍌",
     description: "Le dessert anglais culte : biscuits sablés, caramel au lait concentré, bananes et chantilly. Pure gourmandise !",
@@ -1915,6 +1969,7 @@ Object.assign(recettes, {
     ]
   },
   poebanane: {
+    nom: "Po'e banane",
     cat: "desserts", pays: "polynesie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -1951,6 +2006,7 @@ Object.assign(recettes, {
     ]
   },
   haupia: {
+    nom: "Haupia",
     cat: "desserts", pays: "hawaii",
     dateAjout: "2026-06-01",
     base: 4,
@@ -1987,6 +2043,7 @@ Object.assign(recettes, {
     ]
   },
   gaufresliege: {
+    nom: "Gaufres de Liège",
     cat: "desserts", pays: "belgique",
     dateAjout: "2026-06-01",
     base: 4,
@@ -2023,6 +2080,7 @@ Object.assign(recettes, {
     ]
   },
   thiakry: {
+    nom: "Thiakry",
     cat: "desserts", pays: "senegal",
     dateAjout: "2026-06-01",
     base: 4,
@@ -2059,6 +2117,7 @@ Object.assign(recettes, {
     ]
   },
   brigadeiro: {
+    nom: "Brigadeiro",
     cat: "desserts", pays: "bresil",
     dateAjout: "2026-06-01",
     base: 4,
@@ -2095,6 +2154,7 @@ Object.assign(recettes, {
     ]
   },
   scones: {
+    nom: "Scones",
     cat: "desserts", pays: "angleterre",
     dateAjout: "2026-06-01",
     base: 4,
@@ -2131,6 +2191,7 @@ Object.assign(recettes, {
     ]
   },
   stickytoffee: {
+    nom: "Sticky Toffee Pudding",
     cat: "desserts", pays: "angleterre",
     dateAjout: "2026-06-01",
     base: 4,
@@ -2167,6 +2228,7 @@ Object.assign(recettes, {
     ]
   },
   kanelbullar: {
+    nom: "Kanelbullar",
     cat: "desserts", pays: "suede",
     dateAjout: "2026-06-01",
     base: 4,
@@ -2239,6 +2301,7 @@ Object.assign(recettes, {
     ]
   },
   poudingchomeur: {
+    nom: "Pouding Chômeur",
     cat: "desserts", pays: "canada",
     dateAjout: "2026-06-03",
     base: 4,
@@ -2275,6 +2338,7 @@ Object.assign(recettes, {
     ]
   },
   semla: {
+    nom: "Semla",
     cat: "desserts", pays: "suede",
     dateAjout: "2026-06-03",
     base: 4,
@@ -2312,6 +2376,7 @@ Object.assign(recettes, {
     ]
   },
   kurtoskalacs: {
+    nom: "Kürtőskalács",
     cat: "desserts", pays: "hongrie",
     dateAjout: "2026-06-03",
     base: 4,

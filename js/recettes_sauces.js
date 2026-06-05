@@ -37,6 +37,7 @@ mayonnaise: {
     ]
   },
   ketchup: {
+    nom: "Ketchup maison",
     cat: "sauces", pays: "usa",
     base: 8,
     temps: "35 min",
@@ -69,6 +70,7 @@ mayonnaise: {
     ]
   },
   saucebarbecue: {
+    nom: "Sauce barbecue",
     cat: "sauces", pays: "usa",
     base: 8,
     temps: "20 min",
@@ -101,6 +103,7 @@ mayonnaise: {
     ]
   },
   harissa: {
+    nom: "Harissa maison",
     cat: "sauces", pays: "maroc",
     base: 10,
     temps: "20 min",
@@ -133,6 +136,7 @@ mayonnaise: {
     ]
   },
   saucetomate: {
+    nom: "Sauce tomate maison",
     cat: "sauces", pays: "italie",
     base: 4,
     temps: "30 min",
@@ -165,6 +169,7 @@ mayonnaise: {
     ]
   },
   vinaigrette: {
+    nom: "Vinaigrette classique",
     cat: "sauces", pays: "france",
     base: 6,
     temps: "5 min",
@@ -196,6 +201,7 @@ mayonnaise: {
     ]
   },
   bechamel: {
+    nom: "Sauce béchamel",
     cat: "sauces", pays: "france",
     base: 4,
     temps: "15 min",
@@ -228,6 +234,7 @@ mayonnaise: {
     ]
   },
   pestomaison: {
+    nom: "Pesto maison",
     cat: "sauces", pays: "italie",
     base: 6,
     temps: "10 min",
@@ -260,6 +267,7 @@ mayonnaise: {
     ]
   },
   aioli: {
+    nom: "Aïoli",
     cat: "sauces", pays: "espagne",
     base: 6,
     temps: "10 min",
@@ -292,6 +300,7 @@ mayonnaise: {
     ]
   },
   saucecesar: {
+    nom: "Sauce César",
     cat: "sauces", pays: "usa",
     base: 6,
     temps: "10 min",
@@ -324,6 +333,7 @@ mayonnaise: {
     ]
   },
   chimichurri: {
+    nom: "Chimichurri",
     cat: "sauces", pays: "argentine",
     base: 6,
     temps: "10 min",
@@ -356,6 +366,7 @@ mayonnaise: {
     ]
   },
   saucecurrycoco: {
+    nom: "Sauce curry-coco",
     cat: "sauces", pays: "inde",
     base: 4,
     temps: "20 min",
@@ -388,6 +399,7 @@ mayonnaise: {
     ]
   },
   teriyaki: {
+    nom: "Sauce teriyaki",
     cat: "sauces", pays: "japon",
     base: 6,
     temps: "15 min",
@@ -419,6 +431,7 @@ mayonnaise: {
     ]
   },
   sauceblanche: {
+    nom: "Sauce blanche (kebab)",
     cat: "sauces", pays: "monde",
     base: 6,
     temps: "5 min",
@@ -450,6 +463,7 @@ mayonnaise: {
     ]
   },
   saucesamourai: {
+    nom: "Sauce samouraï",
     cat: "sauces", pays: "france",
     base: 6,
     temps: "5 min",
@@ -481,6 +495,7 @@ mayonnaise: {
     ]
   },
   saucetartare: {
+    nom: "Sauce tartare",
     cat: "sauces", pays: "france",
     base: 6,
     temps: "10 min",
@@ -512,6 +527,7 @@ mayonnaise: {
     ]
   },
   saucehollandaise: {
+    nom: "Sauce hollandaise",
     cat: "sauces", pays: "france",
     base: 4,
     temps: "15 min",
@@ -544,6 +560,7 @@ mayonnaise: {
     ]
   },
   saucesoja: {
+    nom: "Sauce soja-sésame",
     cat: "sauces", pays: "japon",
     base: 6,
     temps: "5 min",
@@ -575,6 +592,7 @@ mayonnaise: {
     ]
   },
   saucecocktail: {
+    nom: "Sauce cocktail",
     cat: "sauces", pays: "france",
     base: 6,
     temps: "5 min",
@@ -606,6 +624,7 @@ mayonnaise: {
     ]
   },
   sauceaigredouce: {
+    nom: "Sauce aigre-douce",
     cat: "sauces", pays: "chine",
     base: 6,
     temps: "15 min",
@@ -638,6 +657,7 @@ mayonnaise: {
     ]
   },
   saucemoutardemiel: {
+    nom: "Sauce moutarde-miel",
     cat: "sauces", pays: "france",
     base: 6,
     temps: "5 min",
@@ -669,6 +689,7 @@ mayonnaise: {
     ]
   },
   saucepoivre: {
+    nom: "Sauce au poivre",
     cat: "sauces", pays: "france",
     base: 4,
     temps: "15 min",
@@ -701,6 +722,7 @@ mayonnaise: {
     ]
   },
   sauceburger: {
+    nom: "Sauce burger",
     cat: "sauces", pays: "usa",
     base: 6,
     temps: "5 min",
@@ -732,6 +754,7 @@ mayonnaise: {
     ]
   },
   saucechampignon: {
+    nom: "Sauce aux champignons",
     cat: "sauces", pays: "france",
     base: 4,
     temps: "20 min",
@@ -764,6 +787,7 @@ mayonnaise: {
     ]
   },
   veloute: {
+    nom: "Sauce velouté",
     cat: "sauces", pays: "france",
     dateAjout: "2026-06-03",
     base: 4,
@@ -800,6 +824,7 @@ mayonnaise: {
     ]
   },
   sauceespagnole: {
+    nom: "Sauce espagnole",
     cat: "sauces", pays: "france",
     dateAjout: "2026-06-03",
     base: 4,
@@ -837,6 +862,7 @@ mayonnaise: {
     ]
   },
   bearnaise: {
+    nom: "Sauce béarnaise",
     cat: "sauces", pays: "france",
     dateAjout: "2026-06-03",
     base: 4,
@@ -874,6 +900,7 @@ mayonnaise: {
     ]
   },
   beurreblanc: {
+    nom: "Beurre blanc",
     cat: "sauces", pays: "france",
     dateAjout: "2026-06-03",
     base: 4,
@@ -910,6 +937,7 @@ mayonnaise: {
     ]
   },
   saucebordelaise: {
+    nom: "Sauce bordelaise",
     cat: "sauces", pays: "france",
     dateAjout: "2026-06-03",
     base: 4,

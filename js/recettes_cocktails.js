@@ -7,6 +7,7 @@
 
 Object.assign(recettes, {
   mojito: {
+    nom: "Mojito",
     cat: "cocktails", pays: "cuba",
     base: 1,
     temps: "5 min",
@@ -39,6 +40,7 @@ Object.assign(recettes, {
     ]
   },
   margarita: {
+    nom: "Margarita",
     cat: "cocktails", pays: "mexique",
     base: 1,
     temps: "3 min",
@@ -70,6 +72,7 @@ Object.assign(recettes, {
     ]
   },
   cosmopolitan: {
+    nom: "Cosmopolitan",
     cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
@@ -102,6 +105,7 @@ Object.assign(recettes, {
     ]
   },
   spritz: {
+    nom: "Spritz Aperol",
     cat: "cocktails", saisons: ["hiver"], pays: "italie",
     base: 1,
     temps: "2 min",
@@ -133,6 +137,7 @@ Object.assign(recettes, {
     ]
   },
   sangria: {
+    nom: "Sangria",
     cat: "cocktails", saisons: ["ete","hiver"], pays: "espagne",
     base: 6,
     temps: "15 min + 2h repos",
@@ -165,6 +170,7 @@ Object.assign(recettes, {
     ]
   },
   pinacolada: {
+    nom: "Piña Colada",
     cat: "cocktails", pays: "usa",
     base: 1,
     temps: "5 min",
@@ -196,6 +202,7 @@ Object.assign(recettes, {
     ]
   },
   daiquiri: {
+    nom: "Daiquiri",
     cat: "cocktails", pays: "cuba",
     base: 1,
     temps: "3 min",
@@ -228,6 +235,7 @@ Object.assign(recettes, {
     ]
   },
   whiskysour: {
+    nom: "Whisky Sour",
     cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
@@ -260,6 +268,7 @@ Object.assign(recettes, {
     ]
   },
   mojitorose: {
+    nom: "Mojito Rosé",
     cat: "cocktails", saisons: ["ete","printemps"], pays: "cuba",
     base: 1,
     temps: "5 min",
@@ -292,6 +301,7 @@ Object.assign(recettes, {
     ]
   },
   negroni: {
+    nom: "Negroni",
     cat: "cocktails", saisons: ["hiver"], pays: "italie",
     base: 1,
     temps: "2 min",
@@ -324,6 +334,7 @@ Object.assign(recettes, {
     ]
   },
   moscowmule: {
+    nom: "Moscow Mule",
     cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
@@ -356,6 +367,7 @@ Object.assign(recettes, {
     ]
   },
   pornstarmartini: {
+    nom: "Porn Star Martini",
     cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
@@ -388,6 +400,7 @@ Object.assign(recettes, {
     ]
   },
   hugospritz: {
+    nom: "Hugo Spritz",
     cat: "cocktails", pays: "italie",
     base: 1,
     temps: "2 min",
@@ -420,6 +433,7 @@ Object.assign(recettes, {
     ]
   },
   oldFashioned: {
+    nom: "Old Fashioned",
     cat: "cocktails", saisons: ["hiver"], pays: "usa",
     base: 1,
     temps: "3 min",
@@ -452,6 +466,7 @@ Object.assign(recettes, {
     ]
   },
   gintoniqmaison: {
+    nom: "Gin Tonic Maison",
     cat: "cocktails", pays: "france",
     base: 1,
     temps: "2 min",
@@ -484,6 +499,7 @@ Object.assign(recettes, {
     ]
   },
   tequilasunrise: {
+    nom: "Tequila Sunrise",
     cat: "cocktails", saisons: ["hiver"], pays: "mexique",
     base: 1,
     temps: "3 min",
@@ -516,6 +532,7 @@ Object.assign(recettes, {
     ]
   },
   aperolspritzrosa: {
+    nom: "Spritz Aperol Rosé",
     cat: "cocktails", saisons: ["ete","printemps"], pays: "italie",
     base: 1,
     temps: "2 min",
@@ -548,6 +565,7 @@ Object.assign(recettes, {
     ]
   },
   espressoMartini: {
+    nom: "Espresso Martini",
     cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
@@ -580,6 +598,7 @@ Object.assign(recettes, {
     ]
   },
   punchfruitsrouges: {
+    nom: "Punch aux Fruits Rouges",
     cat: "cocktails", saisons: ["ete","printemps"], pays: "france",
     base: 8,
     temps: "10 min",
@@ -612,6 +631,7 @@ Object.assign(recettes, {
     ]
   },
   blueLagoon: {
+    nom: "Blue Lagoon",
     cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
@@ -644,6 +664,7 @@ Object.assign(recettes, {
     ]
   },
   mimosa: {
+    nom: "Mimosa",
     cat: "cocktails", saisons: ["hiver"], pays: "france",
     base: 1,
     temps: "2 min",
@@ -677,6 +698,7 @@ Object.assign(recettes, {
     ]
   },
   sidecarvintage: {
+    nom: "Sidecar",
     cat: "cocktails", pays: "france",
     base: 1,
     temps: "3 min",
@@ -709,6 +731,7 @@ Object.assign(recettes, {
     ]
   },
   gingerlemondrop: {
+    nom: "Ginger Lemon Drop",
     cat: "cocktails", pays: "usa",
     base: 1,
     temps: "3 min",
@@ -741,6 +764,7 @@ Object.assign(recettes, {
     ]
   },
   coktailcosmopolitan: {
+    nom: "Sex on the Beach",
     cat: "cocktails", saisons: ["ete","hiver"], pays: "usa",
     base: 1,
     temps: "3 min",
@@ -773,6 +797,7 @@ Object.assign(recettes, {
     ]
   },
   bellini: {
+    nom: "Bellini Pêche",
     cat: "cocktails", saisons: ["ete"], pays: "italie",
     base: 1,
     temps: "3 min",
@@ -788,6 +813,7 @@ Object.assign(recettes, {
     ]
   },
   frenchMartini: {
+    nom: "French Martini",
     cat: "cocktails", pays: "monde",
     base: 1,
     temps: "3 min",
@@ -804,6 +830,7 @@ Object.assign(recettes, {
     ]
   },
   darkStormyCocktail: {
+    nom: "Dark & Stormy",
     cat: "cocktails", pays: "monde",
     base: 1,
     temps: "3 min",
@@ -820,6 +847,7 @@ Object.assign(recettes, {
     ]
   },
   amarettoSour: {
+    nom: "Amaretto Sour",
     cat: "cocktails", pays: "italie",
     base: 1,
     temps: "3 min",
@@ -836,6 +864,7 @@ Object.assign(recettes, {
     ]
   },
   aperolPamplemousse: {
+    nom: "Aperol Pamplemousse",
     cat: "cocktails", saisons: ["hiver"], pays: "italie",
     base: 1,
     temps: "3 min",

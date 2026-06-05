@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   pouletcitronthym: {
+    nom: "Poulet Citron & Thym",
     cat: "plats", pays: "france",
     base: 2,
     temps: "30 min",
@@ -38,6 +39,7 @@ Object.assign(recettes, {
     ]
   },
   salmonteriyaki: {
+    nom: "Saumon Teriyaki",
     cat: "plats", pays: "japon",
     base: 2,
     temps: "25 min",
@@ -71,6 +73,7 @@ Object.assign(recettes, {
     ]
   },
   bolognaisemaison: {
+    nom: "Bolognaise Maison",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 4,
     temps: "45 min",
@@ -105,6 +108,7 @@ Object.assign(recettes, {
     ]
   },
   tacosmaison: {
+    nom: "Tacos Maison",
     cat: "plats", saisons: ["ete"], pays: "mexique",
     base: 2,
     temps: "25 min",
@@ -138,6 +142,7 @@ Object.assign(recettes, {
     ]
   },
   padthai: {
+    nom: "Pad Thaï",
     cat: "plats", pays: "thailande",
     base: 2,
     temps: "20 min",
@@ -171,6 +176,7 @@ Object.assign(recettes, {
     ]
   },
   currypouletcoco: {
+    nom: "Curry Poulet Coco",
     cat: "plats", pays: "thailande",
     base: 4,
     temps: "35 min",
@@ -204,6 +210,7 @@ Object.assign(recettes, {
     ]
   },
   burgermaison: {
+    nom: "Burger Maison",
     cat: "plats", saisons: ["ete"], pays: "usa",
     base: 2,
     temps: "20 min",
@@ -237,6 +244,7 @@ Object.assign(recettes, {
     ]
   },
   couscous: {
+    nom: "Couscous Royal",
     cat: "plats", pays: "maroc",
     base: 6,
     temps: "1h30",
@@ -270,6 +278,7 @@ Object.assign(recettes, {
     ]
   },
   moussaka: {
+    nom: "Moussaka",
     cat: "plats", saisons: ["automne","ete"], pays: "grece",
     base: 6,
     temps: "1h30",
@@ -303,6 +312,7 @@ Object.assign(recettes, {
     ]
   },
   paella: {
+    nom: "Paella",
     cat: "plats", pays: "espagne",
     base: 4,
     temps: "50 min",
@@ -336,6 +346,7 @@ Object.assign(recettes, {
     ]
   },
   butterchicken: {
+    nom: "Poulet Beurre",
     cat: "plats", saisons: ["ete"], pays: "inde",
     base: 4,
     temps: "40 min",
@@ -369,6 +380,7 @@ Object.assign(recettes, {
     ]
   },
   quichelorraine: {
+    nom: "Quiche Lorraine",
     cat: "plats", pays: "france",
     base: 6,
     temps: "1h",
@@ -402,6 +414,7 @@ Object.assign(recettes, {
     ]
   },
   rizcantonnais: {
+    nom: "Riz Cantonnais",
     cat: "plats", saisons: ["ete","printemps"], pays: "chine",
     base: 4,
     temps: "20 min",
@@ -435,6 +448,7 @@ Object.assign(recettes, {
     ]
   },
   potaufeu: {
+    nom: "Pot-au-Feu",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 6,
     temps: "3h",
@@ -468,6 +482,7 @@ Object.assign(recettes, {
     ]
   },
   ramenjaponais: {
+    nom: "Ramen Japonais",
     cat: "plats", pays: "japon",
     base: 2,
     temps: "45 min",
@@ -501,6 +516,7 @@ Object.assign(recettes, {
     ]
   },
   tikamasala: {
+    nom: "Poulet Tikka Masala",
     cat: "plats", saisons: ["ete"], pays: "inde",
     base: 4,
     temps: "50 min + marinade",
@@ -534,6 +550,7 @@ Object.assign(recettes, {
     ]
   },
   phovietnambien: {
+    nom: "Pho Vietnamien",
     cat: "plats", pays: "vietnam",
     base: 2,
     temps: "4h (bouillon)",
@@ -566,6 +583,7 @@ Object.assign(recettes, {
     ]
   },
   carbonara: {
+    nom: "Carbonara",
     cat: "plats", pays: "italie",
     base: 4,
     temps: "20 min",
@@ -599,6 +617,7 @@ Object.assign(recettes, {
     ]
   },
   ceebujen: {
+    nom: "Thiéboudienne",
     cat: "plats", saisons: ["ete"], pays: "senegal",
     base: 4,
     temps: "1h30",
@@ -632,6 +651,7 @@ Object.assign(recettes, {
     ]
   },
   mafewestafricain: {
+    nom: "Maafé Ouest-Africain",
     cat: "plats", saisons: ["ete"], pays: "senegal",
     base: 4,
     temps: "1h",
@@ -665,6 +685,7 @@ Object.assign(recettes, {
     ]
   },
   gnocchismaison: {
+    nom: "Gnocchis Maison",
     cat: "plats", pays: "italie",
     base: 4,
     temps: "1h",
@@ -698,6 +719,7 @@ Object.assign(recettes, {
     ]
   },
   poulettandoori: {
+    nom: "Poulet Tandoori",
     cat: "plats", pays: "inde",
     base: 4,
     temps: "30 min + marinade",
@@ -730,6 +752,7 @@ Object.assign(recettes, {
     ]
   },
   pekinduckeasy: {
+    nom: "Canard Laqué Pékinois",
     cat: "plats", saisons: ["ete"], pays: "chine",
     base: 4,
     temps: "2h30",
@@ -763,6 +786,7 @@ Object.assign(recettes, {
     ]
   },
   ossobuco: {
+    nom: "Osso Buco",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 4,
     temps: "2h",
@@ -796,6 +820,7 @@ Object.assign(recettes, {
     ]
   },
   tajinemouton: {
+    nom: "Tajine d\'Agneau",
     cat: "plats", pays: "maroc",
     base: 4,
     temps: "2h",
@@ -829,6 +854,7 @@ Object.assign(recettes, {
     ]
   },
   souvlakiagneau: {
+    nom: "Souvlaki d\'Agneau",
     cat: "plats", pays: "grece",
     base: 4,
     temps: "25 min + marinade",
@@ -861,6 +887,7 @@ Object.assign(recettes, {
     ]
   },
   dorade_chermoula: {
+    nom: "Dorade Chermoula",
     cat: "plats", pays: "maroc",
     base: 4,
     temps: "40 min + marinade",
@@ -893,6 +920,7 @@ Object.assign(recettes, {
     ]
   },
   pouletchicken65: {
+    nom: "Poulet Chicken 65",
     cat: "plats", pays: "inde",
     base: 4,
     temps: "30 min + marinade",
@@ -925,6 +953,7 @@ Object.assign(recettes, {
     ]
   },
   pierogi: {
+    nom: "Pierogi",
     cat: "plats", pays: "pologne",
     base: 4,
     temps: "1h30",
@@ -958,6 +987,7 @@ Object.assign(recettes, {
     ]
   },
   tteokbokki: {
+    nom: "Tteokbokki",
     cat: "plats", pays: "coree",
     base: 2,
     temps: "20 min",
@@ -990,6 +1020,7 @@ Object.assign(recettes, {
     ]
   },
   porc_pulled: {
+    nom: "Pulled Pork",
     cat: "plats", pays: "usa",
     base: 6,
     temps: "6h",
@@ -1022,6 +1053,7 @@ Object.assign(recettes, {
     ]
   },
   braiseboeuf_asiatique: {
+    nom: "Joues de Bœuf Braisées",
     cat: "plats", pays: "japon",
     base: 4,
     temps: "3h",
@@ -1054,6 +1086,7 @@ Object.assign(recettes, {
     ]
   },
   paprikashpoulet: {
+    nom: "Paprikash de Poulet",
     cat: "plats", pays: "hongrie",
     base: 4,
     temps: "45 min",
@@ -1086,6 +1119,7 @@ Object.assign(recettes, {
     ]
   },
   bibimbap: {
+    nom: "Bibimbap",
     cat: "plats", pays: "coree",
     base: 2,
     temps: "40 min",
@@ -1119,6 +1153,7 @@ Object.assign(recettes, {
     ]
   },
   moquecabresil: {
+    nom: "Moqueca Brésilienne",
     cat: "plats", saisons: ["ete"], pays: "bresil",
     base: 4,
     temps: "40 min",
@@ -1152,6 +1187,7 @@ Object.assign(recettes, {
     ]
   },
   rendangboeuf: {
+    nom: "Rendang de Bœuf",
     cat: "plats", pays: "indonesie",
     base: 4,
     temps: "3h",
@@ -1185,6 +1221,7 @@ Object.assign(recettes, {
     ]
   },
   tacoshijosepastor: {
+    nom: "Tacos al Pastor",
     cat: "plats", pays: "mexique",
     base: 2,
     temps: "30 min + marinade",
@@ -1217,6 +1254,7 @@ Object.assign(recettes, {
     ]
   },
   grilladelamnocciole: {
+    nom: "Grillades Agneau Nocciole",
     cat: "plats", pays: "france",
     base: 4,
     temps: "25 min + marinade",
@@ -1249,6 +1287,7 @@ Object.assign(recettes, {
     ]
   },
   sushimaison: {
+    nom: "Sushis Maison",
     cat: "plats", pays: "japon",
     base: 2,
     temps: "1h",
@@ -1295,6 +1334,7 @@ Object.assign(recettes, {
     ]
   },
   carigrioantillais: {
+    nom: "Cari Griot Antillais",
     cat: "plats", pays: "haiti",
     base: 4,
     temps: "1h",
@@ -1327,6 +1367,7 @@ Object.assign(recettes, {
     ]
   },
   pouletbasquaise: {
+    nom: "Poulet à la Basquaise",
     cat: "plats", saisons: ["automne","ete"], pays: "france",
     base: 4,
     temps: "1h",
@@ -1360,6 +1401,7 @@ Object.assign(recettes, {
     ]
   },
   lasagneverdure: {
+    nom: "Lasagnes aux Légumes",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 6,
     temps: "1h30",
@@ -1393,6 +1435,7 @@ Object.assign(recettes, {
     ]
   },
   poulpegrillebresil: {
+    nom: "Poulpe Grillé Brésilien",
     cat: "plats", pays: "espagne",
     base: 4,
     temps: "1h",
@@ -1426,6 +1469,7 @@ Object.assign(recettes, {
     ]
   },
   pouletrotiperfect: {
+    nom: "Poulet Rôti Parfait",
     cat: "plats", pays: "france",
     base: 4,
     temps: "1h30",
@@ -1459,6 +1503,7 @@ Object.assign(recettes, {
     ]
   },
   saumoncrouteherbes: {
+    nom: "Saumon en Croûte d\'Herbes",
     cat: "plats", pays: "france",
     base: 4,
     temps: "30 min",
@@ -1492,6 +1537,7 @@ Object.assign(recettes, {
     ]
   },
   lasagneviande: {
+    nom: "Lasagnes Bolognaise",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 6,
     temps: "1h30",
@@ -1525,6 +1571,7 @@ Object.assign(recettes, {
     ]
   },
   risottoprimavera: {
+    nom: "Risotto Primavera",
     cat: "plats", saisons: ["ete","printemps"], pays: "italie",
     base: 4,
     temps: "35 min",
@@ -1558,6 +1605,7 @@ Object.assign(recettes, {
     ]
   },
   pouletteriyaki: {
+    nom: "Poulet Teriyaki",
     cat: "plats", pays: "japon",
     base: 4,
     temps: "25 min + marinade",
@@ -1590,6 +1638,7 @@ Object.assign(recettes, {
     ]
   },
   curryverthai: {
+    nom: "Curry Vert Thaï",
     cat: "plats", saisons: ["automne","ete"], pays: "thailande",
     base: 4,
     temps: "30 min",
@@ -1623,6 +1672,7 @@ Object.assign(recettes, {
     ]
   },
   chiliconcarneV: {
+    nom: "Chili Con Carne",
     cat: "plats", saisons: ["ete"], pays: "usa",
     base: 4,
     temps: "1h",
@@ -1656,6 +1706,7 @@ Object.assign(recettes, {
     ]
   },
   koreanfriedchicken: {
+    nom: "Poulet Frit Coréen",
     cat: "plats", pays: "coree",
     base: 4,
     temps: "35 min",
@@ -1689,6 +1740,7 @@ Object.assign(recettes, {
     ]
   },
   risottoMilanese: {
+    nom: "Risotto Milanese",
     cat: "plats", pays: "italie",
     base: 4,
     temps: "35 min",
@@ -1722,6 +1774,7 @@ Object.assign(recettes, {
     ]
   },
   pouletCocoLemon: {
+    nom: "Poulet Coco Citron",
     cat: "plats", pays: "france",
     base: 4,
     temps: "40 min",
@@ -1755,6 +1808,7 @@ Object.assign(recettes, {
     ]
   },
   spaetzle: {
+    nom: "Spätzle Alsaciens",
     cat: "plats", pays: "france",
     base: 4,
     temps: "30 min",
@@ -1787,6 +1841,7 @@ Object.assign(recettes, {
     ]
   },
   wagyuBurger: {
+    nom: "Burger Wagyu",
     cat: "plats", saisons: ["ete"], pays: "usa",
     base: 2,
     temps: "25 min",
@@ -1820,6 +1875,7 @@ Object.assign(recettes, {
     ]
   },
   lemonPasta: {
+    nom: "Pâtes au Citron",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 4,
     temps: "20 min",
@@ -1853,6 +1909,7 @@ Object.assign(recettes, {
     ]
   },
   blanquetteveau: {
+    nom: "Blanquette de Veau",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "1h30",
@@ -1886,6 +1943,7 @@ Object.assign(recettes, {
     ]
   },
   navarin: {
+    nom: "Navarin d\'Agneau",
     cat: "plats", saisons: ["printemps"], pays: "france",
     base: 4,
     temps: "1h30",
@@ -1919,6 +1977,7 @@ Object.assign(recettes, {
     ]
   },
   tarteFlambee: {
+    nom: "Tarte Flambée",
     cat: "plats", pays: "france",
     base: 4,
     temps: "30 min",
@@ -1951,6 +2010,7 @@ Object.assign(recettes, {
     ]
   },
   pouletMisoGingembre: {
+    nom: "Poulet Miso Gingembre",
     cat: "plats", pays: "japon",
     base: 4,
     temps: "30 min",
@@ -1983,6 +2043,7 @@ Object.assign(recettes, {
     ]
   },
   noodlesWok: {
+    nom: "Nouilles Sautées Wok",
     cat: "plats", pays: "chine",
     base: 4,
     temps: "20 min",
@@ -2016,6 +2077,7 @@ Object.assign(recettes, {
     ]
   },
   maffeSenegal: {
+    nom: "Maafé Sénégalais",
     cat: "plats", saisons: ["ete"], pays: "senegal",
     base: 4,
     temps: "1h",
@@ -2049,6 +2111,7 @@ Object.assign(recettes, {
     ]
   },
   choucroute: {
+    nom: "Choucroute Garnie",
     cat: "plats", saisons: ["automne","hiver"], pays: "france",
     base: 6,
     temps: "2h",
@@ -2082,6 +2145,7 @@ Object.assign(recettes, {
     ]
   },
   porkBelly: {
+    nom: "Poitrine de Porc Caramélisée",
     cat: "plats", pays: "chine",
     base: 4,
     temps: "3h",
@@ -2114,6 +2178,7 @@ Object.assign(recettes, {
     ]
   },
   sauteporc: {
+    nom: "Sauté de Porc aux Légumes",
     cat: "plats", pays: "france",
     base: 4,
     temps: "45 min",
@@ -2146,6 +2211,7 @@ Object.assign(recettes, {
     ]
   },
   ratatouille: {
+    nom: "Ratatouille Provençale",
     cat: "plats", pays: "france",
     base: 4,
     temps: "1h",
@@ -2178,6 +2244,7 @@ Object.assign(recettes, {
     ]
   },
   choufleurgratin: {
+    nom: "Gratin de Chou-fleur",
     cat: "plats", saisons: ["automne","hiver"], pays: "france",
     base: 4,
     temps: "45 min",
@@ -2210,6 +2277,7 @@ Object.assign(recettes, {
     ]
   },
   salmongrillee: {
+    nom: "Saumon Grillé au Citron",
     cat: "plats", pays: "france",
     base: 4,
     temps: "20 min",
@@ -2242,6 +2310,7 @@ Object.assign(recettes, {
     ]
   },
   agneluroti: {
+    nom: "Gigot d'Agneau Rôti",
     cat: "plats", pays: "france",
     base: 6,
     temps: "2h",
@@ -2274,6 +2343,7 @@ Object.assign(recettes, {
     ]
   },
   crepesbretonnes: {
+    nom: "Galettes Bretonnes",
     cat: "plats", pays: "france",
     base: 4,
     temps: "30 min + 1h repos",
@@ -2306,6 +2376,7 @@ Object.assign(recettes, {
     ]
   },
   stroganov: {
+    nom: "Bœuf Stroganoff",
     cat: "plats", saisons: ["automne"], pays: "russie",
     base: 4,
     temps: "35 min",
@@ -2338,6 +2409,7 @@ Object.assign(recettes, {
     ]
   },
   pouletescalopes: {
+    nom: "Escalopes de Poulet Panées",
     cat: "plats", pays: "france",
     base: 4,
     temps: "20 min",
@@ -2370,6 +2442,7 @@ Object.assign(recettes, {
     ]
   },
   moulesmarinieres: {
+    nom: "Moules Marinières",
     cat: "plats", pays: "france",
     base: 4,
     temps: "20 min",
@@ -2402,6 +2475,7 @@ Object.assign(recettes, {
     ]
   },
   boeufbourguignon: {
+    nom: "Bœuf bourguignon",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 6,
     temps: "3h30 + marinade",
@@ -2437,6 +2511,7 @@ Object.assign(recettes, {
     ]
   },
   risotto: {
+    nom: "Risotto",
     cat: "plats", pays: "italie",
     base: 4,
     temps: "30 min",
@@ -2470,6 +2545,7 @@ Object.assign(recettes, {
     ]
   },
   gratindauphinois: {
+    nom: "Gratin dauphinois",
     cat: "plats", pays: "france",
     base: 6,
     temps: "1h30",
@@ -2503,6 +2579,7 @@ Object.assign(recettes, {
     ]
   },
   wrappoulet: {
+    nom: "Wrap au Poulet",
     cat: "plats", saisons: ["ete"], pays: "usa",
     base: 2,
     temps: "20 min",
@@ -2535,6 +2612,7 @@ Object.assign(recettes, {
     ]
   },
   cassoulet: {
+    nom: "Cassoulet Toulousain",
     cat: "plats", saisons: ["ete"], pays: "france",
     base: 4,
     temps: "2h30",
@@ -2568,6 +2646,7 @@ Object.assign(recettes, {
     ]
   },
   hachisparmentier: {
+    nom: "Hachis Parmentier",
     cat: "plats", pays: "france",
     base: 4,
     temps: "50 min",
@@ -2600,6 +2679,7 @@ Object.assign(recettes, {
     ]
   },
   daubeProvencale: {
+    nom: "Daube Provençale",
     cat: "plats", saisons: ["hiver"], pays: "france",
     base: 4,
     temps: "3h",
@@ -2633,6 +2713,7 @@ Object.assign(recettes, {
     ]
   },
   pouletNormande: {
+    nom: "Poulet à la Normande",
     cat: "plats", pays: "france",
     base: 4,
     temps: "45 min",
@@ -2666,6 +2747,7 @@ Object.assign(recettes, {
     ]
   },
   tajinepoulet: {
+    nom: "Tajine Poulet Citron",
     cat: "plats", pays: "maroc",
     base: 4,
     temps: "1h",
@@ -2698,6 +2780,7 @@ Object.assign(recettes, {
     ]
   },
   saltimbocca: {
+    nom: "Saltimbocca alla Romana",
     cat: "plats", pays: "italie",
     base: 4,
     temps: "20 min",
@@ -2730,6 +2813,7 @@ Object.assign(recettes, {
     ]
   },
   bouillabaisse: {
+    nom: "Bouillabaisse",
     cat: "plats", saisons: ["ete"], pays: "france",
     base: 4,
     temps: "1h30",
@@ -2763,6 +2847,7 @@ Object.assign(recettes, {
     ]
   },
   gratinPates: {
+    nom: "Gratin de Pâtes",
     cat: "plats", pays: "france",
     base: 4,
     temps: "40 min",
@@ -2795,6 +2880,7 @@ Object.assign(recettes, {
     ]
   },
   volauVent: {
+    nom: "Vol-au-Vent",
     cat: "plats", saisons: ["automne"], pays: "france",
     base: 4,
     temps: "45 min",
@@ -2827,6 +2913,7 @@ Object.assign(recettes, {
     ]
   },
   jambonneauLentilles: {
+    nom: "Jarret aux Lentilles",
     cat: "plats", pays: "france",
     base: 4,
     temps: "2h",
@@ -2859,6 +2946,7 @@ Object.assign(recettes, {
     ]
   },
   boulettesViande: {
+    nom: "Boulettes Sauce Tomate",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 4,
     temps: "35 min",
@@ -2892,6 +2980,7 @@ Object.assign(recettes, {
     ]
   },
   brandadeMorue: {
+    nom: "Brandade de Morue",
     cat: "plats", pays: "france",
     base: 4,
     temps: "1h",
@@ -2925,6 +3014,7 @@ Object.assign(recettes, {
     ]
   },
   gnocchisgorgonzola: {
+    nom: "Gnocchis au Gorgonzola",
     cat: "plats", saisons: ["automne"], pays: "italie",
     base: 4,
     temps: "20 min",
@@ -2956,6 +3046,7 @@ Object.assign(recettes, {
     ]
   },
   risottocourgettechevre: {
+    nom: "Risotto Courgette Chèvre",
     cat: "plats", pays: "italie",
     base: 4,
     temps: "30 min",
@@ -2988,6 +3079,7 @@ Object.assign(recettes, {
     ]
   },
   currypoischiches: {
+    nom: "Curry de Pois Chiches",
     cat: "plats", saisons: ["ete"], pays: "inde",
     base: 4,
     temps: "30 min",
@@ -3020,6 +3112,7 @@ Object.assign(recettes, {
     ]
   },
   pastapomodoro: {
+    nom: "Pasta Pomodoro",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 4,
     temps: "20 min",
@@ -3052,6 +3145,7 @@ Object.assign(recettes, {
     ]
   },
   omeletteprovencale: {
+    nom: "Omelette Provençale",
     cat: "plats", saisons: ["automne","ete"], pays: "france",
     base: 4,
     temps: "20 min",
@@ -3083,6 +3177,7 @@ Object.assign(recettes, {
     ]
   },
   tarteepinardfeta: {
+    nom: "Tarte Épinards Feta",
     cat: "plats", pays: "france",
     base: 6,
     temps: "45 min",
@@ -3115,6 +3210,7 @@ Object.assign(recettes, {
     ]
   },
   veggieburger: {
+    nom: "Burger Végétarien",
     cat: "plats", pays: "monde",
     base: 4,
     temps: "30 min",
@@ -3147,6 +3243,7 @@ Object.assign(recettes, {
     ]
   },
   soufflecheese: {
+    nom: "Soufflé au Fromage",
     cat: "plats", pays: "france",
     base: 4,
     temps: "45 min",
@@ -3179,6 +3276,7 @@ Object.assign(recettes, {
     ]
   },
   paellaVege: {
+    nom: "Paella Végétarienne",
     cat: "plats", pays: "espagne",
     base: 4,
     temps: "40 min",
@@ -3211,6 +3309,7 @@ Object.assign(recettes, {
     ]
   },
   massamancurry: {
+    nom: "Massaman de Bœuf",
     cat: "plats", saisons: ["hiver","automne"], pays: "thailande",
     base: 4,
     temps: "1h30",
@@ -3244,6 +3343,7 @@ Object.assign(recettes, {
     ]
   },
   dakgalbi: {
+    nom: "Dak Galbi (Poulet Coréen)",
     cat: "plats", pays: "coree",
     base: 4,
     temps: "45 min",
@@ -3277,6 +3377,7 @@ Object.assign(recettes, {
     ]
   },
   bobun: {
+    nom: "Bo Bún Vietnamien",
     cat: "plats", saisons: ["ete"], pays: "vietnam",
     base: 4,
     temps: "40 min",
@@ -3310,6 +3411,7 @@ Object.assign(recettes, {
     ]
   },
   massamanagneau: {
+    nom: "Massaman d&#39;Agneau",
     cat: "plats", saisons: ["hiver","automne"], pays: "thailande",
     base: 4,
     temps: "2h",
@@ -3344,6 +3446,7 @@ Object.assign(recettes, {
     ]
   },
   jollofrice: {
+    nom: "Jollof Rice Nigérian",
     cat: "plats", pays: "nigeria",
     base: 4,
     temps: "1h",
@@ -3377,6 +3480,7 @@ Object.assign(recettes, {
     ]
   },
   ropavieja: {
+    nom: "Ropa Vieja Cubaine",
     cat: "plats", pays: "cuba",
     base: 4,
     temps: "2h30",
@@ -3410,6 +3514,7 @@ Object.assign(recettes, {
     ]
   },
   birriatacos: {
+    nom: "Tacos Birria",
     cat: "plats", pays: "mexique",
     base: 4,
     temps: "3h",
@@ -3444,6 +3549,7 @@ Object.assign(recettes, {
     ]
   },
   galbicoreen: {
+    nom: "Galbi (BBQ Coréen)",
     cat: "plats", pays: "coree",
     base: 4,
     temps: "45 min + marinade",
@@ -3476,6 +3582,7 @@ Object.assign(recettes, {
     ]
   },
   nasigoreng: {
+    nom: "Nasi Goreng",
     cat: "plats", pays: "indonesie",
     base: 4,
     temps: "30 min",
@@ -3509,6 +3616,7 @@ Object.assign(recettes, {
     ]
   },
   oxtailcaribeen: {
+    nom: "Queue de Bœuf Caribéenne",
     cat: "plats", saisons: ["hiver","automne"], pays: "caraibes",
     base: 4,
     temps: "3h",
@@ -3542,6 +3650,7 @@ Object.assign(recettes, {
     ]
   },
   paneertikkamasala: {
+    nom: "Paneer Tikka Masala",
     cat: "plats", pays: "inde",
     base: 4,
     temps: "50 min",
@@ -3575,6 +3684,7 @@ Object.assign(recettes, {
     ]
   },
   souskaicrevettes: {
+    nom: "Souskaï de Crevettes",
     cat: "plats", saisons: ["ete"], pays: "antilles",
     base: 4,
     temps: "25 min + marinade",
@@ -3607,6 +3717,7 @@ Object.assign(recettes, {
     ]
   },
   agnellocacciatore: {
+    nom: "Agnello alla Cacciatora",
     cat: "plats", saisons: ["hiver","automne"], pays: "italie",
     base: 4,
     temps: "1h45",
@@ -3641,6 +3752,7 @@ Object.assign(recettes, {
     ]
   },
   pouletyassa: {
+    nom: "Poulet Yassa",
     cat: "plats", pays: "senegal",
     base: 4,
     temps: "1h + marinade",
@@ -3674,6 +3786,7 @@ Object.assign(recettes, {
     ]
   },
   kibbeh: {
+    nom: "Kibbeh Libanais",
     cat: "plats", pays: "liban",
     base: 4,
     temps: "1h15",
@@ -3708,6 +3821,7 @@ Object.assign(recettes, {
     ]
   },
   quenelleslyonnaises: {
+    nom: "Quenelles Lyonnaises",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "1h30",
@@ -3744,6 +3858,7 @@ Object.assign(recettes, {
     ]
   },
   aligotcantal: {
+    nom: "Aligot du Cantal",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "1h",
@@ -3779,6 +3894,7 @@ Object.assign(recettes, {
     ]
   },
   coqauvin: {
+    nom: "Coq au Vin",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 6,
     temps: "2h30 + marinade",
@@ -3815,6 +3931,7 @@ Object.assign(recettes, {
     ]
   },
   civetlapin: {
+    nom: "Civet de Lapin",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "2h30 + marinade",
@@ -3852,6 +3969,7 @@ Object.assign(recettes, {
     ]
   },
   tartiflettesavoyarde: {
+    nom: "Tartiflette Savoyarde",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "1h",
@@ -3888,6 +4006,7 @@ Object.assign(recettes, {
     ]
   },
   andouillettemoutarde: {
+    nom: "Andouillette Moutarde",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "30 min",
@@ -3923,6 +4042,7 @@ Object.assign(recettes, {
     ]
   },
   confitcanard: {
+    nom: "Confit de Canard",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "3h + 24h marinade",
@@ -3959,6 +4079,7 @@ Object.assign(recettes, {
     ]
   },
   bunbonamoo: {
+    nom: "Bún Bò Nam Bộ",
     cat: "plats", saisons: ["ete","printemps"], pays: "vietnam",
     base: 4,
     temps: "45 min",
@@ -3995,6 +4116,7 @@ Object.assign(recettes, {
     ]
   },
   banhmiviet: {
+    nom: "Bánh Mì Vietnamien",
     cat: "plats", pays: "vietnam",
     base: 2,
     temps: "30 min",
@@ -4030,6 +4152,7 @@ Object.assign(recettes, {
     ]
   },
   feijoadabresil: {
+    nom: "Feijoada Brésilienne",
     cat: "plats", saisons: ["hiver","automne"], pays: "bresil",
     base: 6,
     temps: "3h + 12h trempage",
@@ -4065,6 +4188,7 @@ Object.assign(recettes, {
     ]
   },
   gadogado: {
+    nom: "Gado-Gado Indonésien",
     cat: "plats", saisons: ["ete","printemps"], pays: "indonesie",
     base: 4,
     temps: "40 min",
@@ -4100,6 +4224,7 @@ Object.assign(recettes, {
     ]
   },
   larbgai: {
+    nom: "Larb Gai Thaï",
     cat: "plats", saisons: ["ete"], pays: "thailande",
     base: 4,
     temps: "25 min",
@@ -4134,6 +4259,7 @@ Object.assign(recettes, {
     ]
   },
   khaosoi: {
+    nom: "Khao Soi",
     cat: "plats", saisons: ["hiver","automne"], pays: "thailande",
     base: 4,
     temps: "50 min",
@@ -4170,6 +4296,7 @@ Object.assign(recettes, {
     ]
   },
   sayadieh: {
+    nom: "Sayadieh Libanais",
     cat: "plats", pays: "liban",
     base: 4,
     temps: "1h15",
@@ -4206,6 +4333,7 @@ Object.assign(recettes, {
     ]
   },
   fattehlibanaise: {
+    nom: "Fatteh Libanaise",
     cat: "plats", pays: "liban",
     base: 4,
     temps: "40 min",
@@ -4241,6 +4369,7 @@ Object.assign(recettes, {
     ]
   },
   keftamarocaine: {
+    nom: "Kefta Marocaine",
     cat: "plats", pays: "maroc",
     base: 4,
     temps: "45 min",
@@ -4277,6 +4406,7 @@ Object.assign(recettes, {
     ]
   },
   pastillapoulet: {
+    nom: "Pastilla au Poulet",
     cat: "plats", pays: "maroc",
     base: 6,
     temps: "2h30",
@@ -4315,6 +4445,7 @@ Object.assign(recettes, {
     ]
   },
   spaghettivongole: {
+    nom: "Spaghetti Vongole",
     cat: "plats", saisons: ["ete","printemps"], pays: "italie",
     base: 4,
     temps: "30 min",
@@ -4350,6 +4481,7 @@ Object.assign(recettes, {
     ]
   },
   polentagorgonzola: {
+    nom: "Polenta Gorgonzola",
     cat: "plats", saisons: ["hiver","automne"], pays: "italie",
     base: 4,
     temps: "45 min",
@@ -4385,6 +4517,7 @@ Object.assign(recettes, {
     ]
   },
   quichepoireaux: {
+    nom: "Quiche aux Poireaux",
     cat: "plats", saisons: ["hiver","printemps","automne"], pays: "france",
     base: 6,
     temps: "1h",
@@ -4422,6 +4555,7 @@ Object.assign(recettes, {
     ]
   },
   galettesarrasin: {
+    nom: "Galette Sarrasin",
     cat: "plats", pays: "france",
     base: 4,
     temps: "30 min + 1h repos pâte",
@@ -4459,6 +4593,7 @@ Object.assign(recettes, {
     ]
   },
   currywurst: {
+    nom: "Currywurst",
     cat: "plats", pays: "allemagne",
     base: 4,
     temps: "30 min",
@@ -4495,6 +4630,7 @@ Object.assign(recettes, {
     ]
   },
   tortillaespagnole: {
+    nom: "Tortilla Espagnole",
     cat: "plats", pays: "espagne",
     base: 4,
     temps: "30 min",
@@ -4532,6 +4668,7 @@ Object.assign(recettes, {
     ]
   },
   karaagepoulet: {
+    nom: "Karaage Japonais",
     cat: "plats", pays: "japon",
     base: 4,
     temps: "45 min",
@@ -4568,6 +4705,7 @@ Object.assign(recettes, {
     ]
   },
   mapotofu: {
+    nom: "Mapo Tofu",
     cat: "plats", pays: "chine",
     base: 4,
     temps: "30 min",
@@ -4606,6 +4744,7 @@ Object.assign(recettes, {
     ]
   },
   pelmeni: {
+    nom: "Pelmeni Russes",
     cat: "plats", saisons: ["hiver"], pays: "russie",
     base: 4,
     temps: "1h30",
@@ -4645,6 +4784,7 @@ Object.assign(recettes, {
     ]
   },
   bacalhaubras: {
+    nom: "Bacalhau à Brás",
     cat: "plats", pays: "portugal",
     base: 4,
     temps: "1h",
@@ -4683,6 +4823,7 @@ Object.assign(recettes, {
     ]
   },
   goulashhongrois: {
+    nom: "Goulash Hongrois",
     cat: "plats", saisons: ["hiver","automne"], pays: "hongrie",
     base: 4,
     temps: "2h30",
@@ -4721,6 +4862,7 @@ Object.assign(recettes, {
     ]
   },
   raclette: {
+    nom: "Raclette Savoyarde",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "30 min",
@@ -4758,6 +4900,7 @@ Object.assign(recettes, {
     ]
   },
   fonduesavoyarde: {
+    nom: "Fondue Savoyarde",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "30 min",
@@ -4796,6 +4939,7 @@ Object.assign(recettes, {
     ]
   },
   tartareboeuf: {
+    nom: "Tartare de Bœuf",
     cat: "plats", pays: "france",
     base: 4,
     temps: "25 min + 30 min frigo",
@@ -4833,6 +4977,7 @@ Object.assign(recettes, {
     ]
   },
   okonomiyaki: {
+    nom: "Okonomiyaki",
     cat: "plats", pays: "japon",
     base: 4,
     temps: "45 min",
@@ -4872,6 +5017,7 @@ Object.assign(recettes, {
     ]
   },
   biryanipoulet: {
+    nom: "Biryani Poulet",
     cat: "plats", pays: "inde",
     base: 6,
     temps: "1h45",
@@ -4911,6 +5057,7 @@ Object.assign(recettes, {
     ]
   },
   tagliatellestruffe: {
+    nom: "Tagliatelles Truffe",
     cat: "plats", saisons: ["automne","hiver"], pays: "italie",
     base: 4,
     temps: "30 min",
@@ -4951,6 +5098,7 @@ Object.assign(recettes, {
     ]
   },
   pastillaroyale: {
+    nom: "Pastilla Royale",
     cat: "plats", pays: "maroc",
     base: 6,
     temps: "2h30",
@@ -4991,6 +5139,7 @@ Object.assign(recettes, {
     ]
   },
   carbonadeflamande: {
+    nom: "Carbonade Flamande",
     cat: "plats", saisons: ["hiver","automne"], pays: "belgique",
     base: 6,
     temps: "3h",
@@ -5031,6 +5180,7 @@ Object.assign(recettes, {
     ]
   },
   fishandchips: {
+    nom: "Fish and Chips",
     cat: "plats", pays: "angleterre",
     base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🐟",
     description: "Le classique anglais : poisson blanc en beignet croustillant et frites épaisses. Servir avec sauce tartare et purée de petits pois.",
@@ -5063,6 +5213,7 @@ Object.assign(recettes, {
     ]
   },
   shepherdspie: {
+    nom: "Shepherd's Pie",
     cat: "plats", pays: "angleterre",
     base: 4, temps: "1h", niveau: "⭐ Facile", emoji: "🥧",
     description: "Le hachis parmentier anglais à l'agneau — viande mijotée aux légumes, recouverte de purée gratinée. Le réconfort à l'état pur.",
@@ -5095,6 +5246,7 @@ Object.assign(recettes, {
     ]
   },
   macandcheese: {
+    nom: "Mac &amp; Cheese",
     cat: "plats", pays: "usa",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🧀",
     description: "Le comfort food américain ultime : pâtes coquillettes nappées d'une sauce fromage crémeuse au cheddar, gratinées à la chapelure.",
@@ -5128,6 +5280,7 @@ Object.assign(recettes, {
     ]
   },
   yakitori: {
+    nom: "Yakitori",
     cat: "plats", pays: "japon",
     base: 4, temps: "30 min + 30 min marinade", niveau: "⭐ Facile", emoji: "🍢",
     description: "Brochettes japonaises de poulet caramélisées à la sauce tare (soja-mirin-sucre). Le classique des izakaya nippons.",
@@ -5160,6 +5313,7 @@ Object.assign(recettes, {
     ]
   },
   magretcanard: {
+    nom: "Magret de canard",
     cat: "plats", pays: "france",
     base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🦆",
     description: "Magret de canard rôti à la peau croustillante, sauce au miel et vinaigre balsamique. Le classique gastronomique du Sud-Ouest.",
@@ -5192,6 +5346,7 @@ Object.assign(recettes, {
     ]
   },
   risottochampignons: {
+    nom: "Risotto champignons",
     cat: "plats", pays: "italie",
     base: 4, temps: "35 min", niveau: "⭐⭐ Moyen", emoji: "🍚",
     description: "Risotto italien crémeux parfumé aux champignons sauvages et au parmesan. Onctueux comme il faut !",
@@ -5225,6 +5380,7 @@ Object.assign(recettes, {
     ]
   },
   bigos: {
+    nom: "Bigos",
     cat: "plats", pays: "pologne",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5261,6 +5417,7 @@ Object.assign(recettes, {
     ]
   },
   shaptatibet: {
+    nom: "Shapta",
     cat: "plats", pays: "tibet",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5297,6 +5454,7 @@ Object.assign(recettes, {
     ]
   },
   rizdjondjon: {
+    nom: "Riz Djon Djon",
     cat: "plats", pays: "haiti",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5333,6 +5491,7 @@ Object.assign(recettes, {
     ]
   },
   suya: {
+    nom: "Suya",
     cat: "plats", pays: "nigeria",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5369,6 +5528,7 @@ Object.assign(recettes, {
     ]
   },
   jerkchicken: {
+    nom: "Jerk Chicken",
     cat: "plats", pays: "caraibes",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5405,6 +5565,7 @@ Object.assign(recettes, {
     ]
   },
   lomosaltado: {
+    nom: "Lomo Saltado",
     cat: "plats", pays: "perou",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5441,6 +5602,7 @@ Object.assign(recettes, {
     ]
   },
   ajidegallina: {
+    nom: "Ají de Gallina",
     cat: "plats", pays: "perou",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5477,6 +5639,7 @@ Object.assign(recettes, {
     ]
   },
   bandejapaisa: {
+    nom: "Bandeja Paisa",
     cat: "plats", pays: "colombie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5513,6 +5676,7 @@ Object.assign(recettes, {
     ]
   },
   pouletfafa: {
+    nom: "Poulet Fafa",
     cat: "plats", pays: "polynesie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5549,6 +5713,7 @@ Object.assign(recettes, {
     ]
   },
   riceandpeas: {
+    nom: "Rice & Peas",
     cat: "plats", pays: "caraibes",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5585,6 +5750,7 @@ Object.assign(recettes, {
     ]
   },
   locomoco: {
+    nom: "Loco Moco",
     cat: "plats", pays: "hawaii",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5621,6 +5787,7 @@ Object.assign(recettes, {
     ]
   },
   hainanchicken: {
+    nom: "Hainanese Chicken Rice",
     cat: "plats", pays: "singapour",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5657,6 +5824,7 @@ Object.assign(recettes, {
     ]
   },
   waterzooi: {
+    nom: "Waterzooi",
     cat: "plats", pays: "belgique",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5693,6 +5861,7 @@ Object.assign(recettes, {
     ]
   },
   lecso: {
+    nom: "Lecsó",
     cat: "plats", pays: "hongrie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5729,6 +5898,7 @@ Object.assign(recettes, {
     ]
   },
   khinkali: {
+    nom: "Khinkali",
     cat: "plats", pays: "georgie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5765,6 +5935,7 @@ Object.assign(recettes, {
     ]
   },
   lobio: {
+    nom: "Lobio",
     cat: "plats", pays: "georgie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5801,6 +5972,7 @@ Object.assign(recettes, {
     ]
   },
   colombopoulet: {
+    nom: "Colombo de poulet",
     cat: "plats", pays: "antilles",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5837,6 +6009,7 @@ Object.assign(recettes, {
     ]
   },
   dibisenegal: {
+    nom: "Dibi",
     cat: "plats", pays: "senegal",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5873,6 +6046,7 @@ Object.assign(recettes, {
     ]
   },
   morosycristianos: {
+    nom: "Moros y Cristianos",
     cat: "plats", pays: "cuba",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5909,6 +6083,7 @@ Object.assign(recettes, {
     ]
   },
   picadillo: {
+    nom: "Picadillo",
     cat: "plats", pays: "cuba",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5945,6 +6120,7 @@ Object.assign(recettes, {
     ]
   },
   schnitzel: {
+    nom: "Schnitzel",
     cat: "plats", pays: "allemagne",
     dateAjout: "2026-06-01",
     base: 4,
@@ -5981,6 +6157,7 @@ Object.assign(recettes, {
     ]
   },
   sauerbraten: {
+    nom: "Sauerbraten",
     cat: "plats", pays: "allemagne",
     dateAjout: "2026-06-01",
     base: 4,
@@ -6017,6 +6194,7 @@ Object.assign(recettes, {
     ]
   },
   doner: {
+    nom: "Döner Kebab",
     cat: "plats", pays: "turquie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -6053,6 +6231,7 @@ Object.assign(recettes, {
     ]
   },
   kofteturc: {
+    nom: "Köfte",
     cat: "plats", pays: "turquie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -6089,6 +6268,7 @@ Object.assign(recettes, {
     ]
   },
   dorowat: {
+    nom: "Doro Wat",
     cat: "plats", pays: "ethiopie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -6125,6 +6305,7 @@ Object.assign(recettes, {
     ]
   },
   misirwat: {
+    nom: "Misir Wat",
     cat: "plats", pays: "ethiopie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -6161,6 +6342,7 @@ Object.assign(recettes, {
     ]
   },
   kottbullar: {
+    nom: "Köttbullar",
     cat: "plats", pays: "suede",
     dateAjout: "2026-06-01",
     base: 4,
@@ -6953,6 +7135,7 @@ Object.assign(recettes, {
     ]
   },
   boeufoignons: {
+    nom: "Bœuf aux Oignons",
     cat: "plats", pays: "chine",
     dateAjout: "2026-06-02",
     base: 4,
@@ -6988,6 +7171,7 @@ Object.assign(recettes, {
     ]
   },
   tourtiere: {
+    nom: "Tourtière",
     cat: "plats", pays: "canada",
     dateAjout: "2026-06-03",
     base: 4,
@@ -7024,6 +7208,7 @@ Object.assign(recettes, {
     ]
   },
   alplermagronen: {
+    nom: "Älplermagronen",
     cat: "plats", pays: "suisse",
     dateAjout: "2026-06-03",
     base: 4,
@@ -7060,6 +7245,7 @@ Object.assign(recettes, {
     ]
   },
   manti: {
+    nom: "Manti",
     cat: "plats", pays: "turquie",
     dateAjout: "2026-06-03",
     base: 4,
@@ -7097,6 +7283,7 @@ Object.assign(recettes, {
     ]
   },
   miegoreng: {
+    nom: "Mie Goreng",
     cat: "plats", pays: "indonesie",
     dateAjout: "2026-06-03",
     base: 4,
@@ -7133,6 +7320,7 @@ Object.assign(recettes, {
     ]
   },
   cubano: {
+    nom: "Sandwich Cubano",
     cat: "plats", pays: "cuba",
     dateAjout: "2026-06-03",
     base: 4,
@@ -7169,6 +7357,7 @@ Object.assign(recettes, {
     ]
   },
   chilicrab: {
+    nom: "Chili Crab",
     cat: "plats", pays: "singapour",
     dateAjout: "2026-06-03",
     base: 4,
@@ -7206,6 +7395,7 @@ Object.assign(recettes, {
     ]
   },
   tibs: {
+    nom: "Tibs",
     cat: "plats", pays: "ethiopie",
     dateAjout: "2026-06-03",
     base: 4,

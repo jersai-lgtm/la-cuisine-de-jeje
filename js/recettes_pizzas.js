@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   pizzamargherita: {
+    nom: "Pizza Margherita",
     cat: "pizzas", saisons: ["ete"], pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -39,6 +40,7 @@ Object.assign(recettes, {
     ]
   },
   pizzareine: {
+    nom: "Pizza Reine",
     cat: "pizzas", saisons: ["automne","ete"], pays: "france",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -72,6 +74,7 @@ Object.assign(recettes, {
     ]
   },
   pizza4fromages: {
+    nom: "Pizza 4 Fromages",
     cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -105,6 +108,7 @@ Object.assign(recettes, {
     ]
   },
   pizzadiavola: {
+    nom: "Pizza Diavola",
     cat: "pizzas", saisons: ["ete"], pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -137,6 +141,7 @@ Object.assign(recettes, {
     ]
   },
   pizzasaumonepinards: {
+    nom: "Pizza Saumon Épinards",
     cat: "pizzas", pays: "france",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -169,6 +174,7 @@ Object.assign(recettes, {
     ]
   },
   pizzavegetarienne: {
+    nom: "Pizza Végétarienne",
     cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -201,6 +207,7 @@ Object.assign(recettes, {
     ]
   },
   pizzaprosciuttoroquette: {
+    nom: "Pizza Prosciutto Roquette",
     cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -233,6 +240,7 @@ Object.assign(recettes, {
     ]
   },
   pizzatruffe: {
+    nom: "Pizza à la Truffe",
     cat: "pizzas", saisons: ["automne"], pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -265,6 +273,7 @@ Object.assign(recettes, {
     ]
   },
   pizzabiancoverdure: {
+    nom: "Pizza Bianca aux Légumes",
     cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -297,6 +306,7 @@ Object.assign(recettes, {
     ]
   },
   pizzacalzone: {
+    nom: "Pizza Calzone",
     cat: "pizzas", saisons: ["ete"], pays: "italie",
     base: 2,
     temps: "25 min + 48h pâte",
@@ -330,6 +340,7 @@ Object.assign(recettes, {
     ]
   },
   pizzapoivrons: {
+    nom: "Pizza aux Poivrons",
     cat: "pizzas", saisons: ["automne","ete"], pays: "italie",
     base: 2,
     temps: "30 min + 48h pâte",
@@ -362,6 +373,7 @@ Object.assign(recettes, {
     ]
   },
   pizzapatate: {
+    nom: "Pizza à la Patate",
     cat: "pizzas", pays: "italie",
     base: 2,
     temps: "30 min + 48h pâte",
@@ -395,6 +407,7 @@ Object.assign(recettes, {
     ]
   },
   pizzabresilienne: {
+    nom: "Pizza Brésilienne",
     cat: "pizzas", saisons: ["ete"], pays: "bresil",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -427,6 +440,7 @@ Object.assign(recettes, {
     ]
   },
   pizzachorizo: {
+    nom: "Pizza Chorizo",
     cat: "pizzas", saisons: ["automne","ete"], pays: "italie",
     base: 2,
     temps: "20 min + 48h pâte",
@@ -460,6 +474,7 @@ Object.assign(recettes, {
     ]
   },
   pizzahawaienne: {
+    nom: "Pizza Hawaïenne",
     cat: "pizzas", saisons: ["ete"], pays: "italie",
     base: 2,
     temps: "20 min",
@@ -492,6 +507,7 @@ Object.assign(recettes, {
     ]
   },
   pizzanduja: {
+    nom: "Pizza Nduja",
     cat: "pizzas", pays: "italie",
     base: 4,
     temps: "30 min",
@@ -526,6 +542,7 @@ Object.assign(recettes, {
     ]
   },
   pizzafiguechevre: {
+    nom: "Pizza Figue-Chèvre",
     cat: "pizzas", saisons: ["automne"], pays: "italie",
     base: 4,
     temps: "30 min",
@@ -560,6 +577,7 @@ Object.assign(recettes, {
     ]
   },
   pizzapestopignons: {
+    nom: "Pizza Pesto-Pignons",
     cat: "pizzas", saisons: ["ete"], pays: "italie",
     base: 4,
     temps: "25 min",
@@ -594,6 +612,7 @@ Object.assign(recettes, {
     ]
   },
   pizzamarinara: {
+    nom: "Pizza marinara",
     cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + repos",
@@ -626,6 +645,7 @@ Object.assign(recettes, {
     ]
   },
   pizzanapolitaine: {
+    nom: "Pizza napolitaine",
     cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + repos",
@@ -658,6 +678,7 @@ Object.assign(recettes, {
     ]
   },
   pizzaburrata: {
+    nom: "Pizza burrata",
     cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + repos",
@@ -690,6 +711,7 @@ Object.assign(recettes, {
     ]
   },
   pizzamortadelle: {
+    nom: "Pizza mortadelle-pistache",
     cat: "pizzas", pays: "italie",
     base: 2,
     temps: "20 min + repos",

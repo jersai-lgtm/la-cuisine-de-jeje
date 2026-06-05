@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   saumongravlax: {
+    nom: "Saumon Gravlax",
     cat: "entrees", pays: "france",
     base: 4,
     temps: "15 min + 24h marinade",
@@ -37,6 +38,7 @@ Object.assign(recettes, {
     ]
   },
   crevettespilpil: {
+    nom: "Crevettes Pil Pil",
     cat: "entrees", pays: "espagne",
     base: 4,
     temps: "15 min",
@@ -69,6 +71,7 @@ Object.assign(recettes, {
     ]
   },
   terrinecampagne: {
+    nom: "Terrine de Campagne",
     cat: "entrees", pays: "france",
     base: 8,
     temps: "1h30 + repos",
@@ -102,6 +105,7 @@ Object.assign(recettes, {
     ]
   },
   tartareSaumon: {
+    nom: "Tartare de Saumon",
     cat: "entrees", pays: "france",
     base: 4,
     temps: "20 min",
@@ -134,6 +138,7 @@ Object.assign(recettes, {
     ]
   },
   poireauVinaigrette: {
+    nom: "Poireaux Vinaigrette",
     cat: "entrees", saisons: ["automne","hiver"], pays: "france",
     base: 4,
     temps: "30 min",
@@ -166,6 +171,7 @@ Object.assign(recettes, {
     ]
   },
   gazpachoMelon: {
+    nom: "Gaspacho de Melon",
     cat: "entrees", saisons: ["ete"], pays: "espagne",
     base: 4,
     temps: "15 min + repos",
@@ -197,6 +203,7 @@ Object.assign(recettes, {
     ]
   },
   calamarsRomaine: {
+    nom: "Calamars à la Romaine",
     cat: "entrees", pays: "espagne",
     base: 4,
     temps: "20 min",
@@ -229,6 +236,7 @@ Object.assign(recettes, {
     ]
   },
   saladecaprese: {
+    nom: "Salade Caprese",
     cat: "entrees", saisons: ["ete"], pays: "italie",
     base: 4,
     temps: "10 min",
@@ -260,6 +268,7 @@ Object.assign(recettes, {
     ]
   },
   gaspacho: {
+    nom: "Gaspacho",
     cat: "entrees", saisons: ["automne","ete"], pays: "espagne",
     base: 4,
     temps: "15 min + 2h frigo",
@@ -292,6 +301,7 @@ Object.assign(recettes, {
     ]
   },
   burratapeche: {
+    nom: "Burrata Pêche-Basilic",
     cat: "entrees", saisons: ["ete"], pays: "italie",
     base: 4,
     temps: "15 min",
@@ -325,6 +335,7 @@ Object.assign(recettes, {
     ]
   },
   vitellotonnato: {
+    nom: "Vitello Tonnato",
     cat: "entrees", saisons: ["ete"], pays: "italie",
     base: 4,
     temps: "45 min + repos",
@@ -358,6 +369,7 @@ Object.assign(recettes, {
     ]
   },
   cevicheperou: {
+    nom: "Ceviche Péruvien",
     cat: "entrees", saisons: ["ete"], pays: "perou",
     base: 4,
     temps: "25 min",
@@ -391,6 +403,7 @@ Object.assign(recettes, {
     ]
   },
   dolma: {
+    nom: "Dolmas",
     cat: "entrees", saisons: ["ete"], pays: "grece",
     base: 4,
     temps: "1h30",
@@ -424,6 +437,7 @@ Object.assign(recettes, {
     ]
   },
   spanakopita: {
+    nom: "Spanakopita Grecque",
     cat: "entrees", saisons: ["printemps","hiver"], pays: "grece",
     base: 6,
     temps: "1h30",
@@ -462,6 +476,7 @@ Object.assign(recettes, {
     ]
   },
   caponatasicile: {
+    nom: "Caponata Sicilienne",
     cat: "entrees", saisons: ["ete","automne"], pays: "italie",
     base: 4,
     temps: "50 min",
@@ -500,6 +515,7 @@ Object.assign(recettes, {
     ]
   },
   carpacciodeboeuf: {
+    nom: "Carpaccio de Bœuf",
     cat: "entrees", pays: "italie",
     base: 4,
     temps: "15 min + 30 min frigo",
@@ -537,6 +553,7 @@ Object.assign(recettes, {
     ]
   },
   saintjacquespoelees: {
+    nom: "Saint-Jacques",
     cat: "entrees", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "20 min",
@@ -607,6 +624,7 @@ oeufmayo: {
     ]
   },
   melonjambon: {
+    nom: "Melon & jambon cru",
     cat: "entrees", pays: "italie",
     base: 4,
     temps: "10 min",
@@ -639,6 +657,7 @@ oeufmayo: {
     ]
   },
   feuilletechevremiel: {
+    nom: "Feuilletés chèvre-miel",
     cat: "entrees", pays: "france",
     base: 4,
     temps: "25 min",
@@ -671,6 +690,7 @@ oeufmayo: {
     ]
   },
   escargots: {
+    nom: "Escargots de Bourgogne",
     cat: "entrees", pays: "france",
     base: 6,
     temps: "40 min",
@@ -704,6 +724,7 @@ oeufmayo: {
     ]
   },
   oeufsmeurette: {
+    nom: "Œufs en meurette",
     cat: "entrees", pays: "france",
     base: 4,
     temps: "45 min",
@@ -737,6 +758,7 @@ oeufmayo: {
     ]
   },
   goicuon: {
+    nom: "Gỏi cuốn",
     cat: "entrees", pays: "vietnam",
     dateAjout: "2026-06-01",
     base: 4,
@@ -773,6 +795,7 @@ oeufmayo: {
     ]
   },
   blinis: {
+    nom: "Blinis",
     cat: "entrees", pays: "russie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -845,6 +868,7 @@ oeufmayo: {
     ]
   },
   causalimena: {
+    nom: "Causa Limeña",
     cat: "entrees", pays: "perou",
     dateAjout: "2026-06-03",
     base: 4,

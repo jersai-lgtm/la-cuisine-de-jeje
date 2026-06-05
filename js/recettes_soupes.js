@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   soupeaoignon: {
+    nom: "Soupe à l'Oignon",
     cat: "soupes", saisons: ["hiver","automne"], pays: "france",
     base: 4,
     temps: "1h",
@@ -38,6 +39,7 @@ Object.assign(recettes, {
     ]
   },
   tom_yam: {
+    nom: "Tom Yam",
     cat: "soupes", pays: "thailande",
     base: 4,
     temps: "30 min",
@@ -70,6 +72,7 @@ Object.assign(recettes, {
     ]
   },
   misoramenleger: {
+    nom: "Miso Ramen Léger",
     cat: "soupes", pays: "japon",
     base: 2,
     temps: "25 min",
@@ -103,6 +106,7 @@ Object.assign(recettes, {
     ]
   },
   veloutepatatepoireaux: {
+    nom: "Velouté Patate Poireaux",
     cat: "soupes", saisons: ["automne","hiver"], pays: "france",
     base: 4,
     temps: "35 min",
@@ -136,6 +140,7 @@ Object.assign(recettes, {
     ]
   },
   soupeAziatique: {
+    nom: "Soupe Asiatique",
     cat: "soupes", pays: "japon",
     base: 4,
     temps: "25 min",
@@ -168,6 +173,7 @@ Object.assign(recettes, {
     ]
   },
   soupeMinestrone: {
+    nom: "Minestrone",
     cat: "soupes", pays: "italie",
     base: 4,
     temps: "45 min",
@@ -201,6 +207,7 @@ Object.assign(recettes, {
     ]
   },
   veloutePoiron: {
+    nom: "Velouté de Potiron",
     cat: "soupes", saisons: ["automne","hiver"], pays: "france",
     base: 4,
     temps: "40 min",
@@ -234,6 +241,7 @@ Object.assign(recettes, {
     ]
   },
   veloutecourgette: {
+    nom: "Velouté de Courgettes",
     cat: "soupes", pays: "france",
     base: 4,
     temps: "30 min",
@@ -265,6 +273,7 @@ Object.assign(recettes, {
     ]
   },
   soupeharira: {
+    nom: "Harira Marocaine",
     cat: "soupes", saisons: ["hiver","automne"], pays: "maroc",
     base: 6,
     temps: "1h",
@@ -297,6 +306,7 @@ Object.assign(recettes, {
     ]
   },
   veloutelegumes: {
+    nom: "Velouté de légumes",
     cat: "soupes", saisons: ["automne","hiver"], pays: "france",
     base: 4,
     temps: "35 min",
@@ -330,6 +340,7 @@ Object.assign(recettes, {
     ]
   },
   soupemiso: {
+    nom: "Soupe Miso",
     cat: "soupes", pays: "japon",
     base: 2,
     temps: "15 min",
@@ -363,6 +374,7 @@ Object.assign(recettes, {
     ]
   },
   soupeLentillesCorail: {
+    nom: "Soupe Lentilles Corail",
     cat: "soupes", saisons: ["ete"], pays: "monde",
     base: 4,
     temps: "30 min",
@@ -395,6 +407,7 @@ Object.assign(recettes, {
     ]
   },
   soupeDetox: {
+    nom: "Soupe Détox Verte",
     cat: "soupes", pays: "monde",
     base: 4,
     temps: "30 min",
@@ -427,6 +440,7 @@ Object.assign(recettes, {
     ]
   },
   velouteAsperges: {
+    nom: "Velouté d'Asperges",
     cat: "soupes", saisons: ["printemps"], pays: "france",
     base: 4,
     temps: "30 min",
@@ -459,6 +473,7 @@ Object.assign(recettes, {
     ]
   },
   solyanka: {
+    nom: "Solyanka Russe",
     cat: "soupes", saisons: ["hiver","automne"], pays: "russie",
     base: 4,
     temps: "1h30",
@@ -492,6 +507,7 @@ Object.assign(recettes, {
     ]
   },
   tomyumkungspicy: {
+    nom: "Tom Yum Kung Épicé",
     cat: "soupes", pays: "thailande",
     base: 4,
     temps: "35 min",
@@ -525,6 +541,7 @@ Object.assign(recettes, {
     ]
   },
   ajiaco: {
+    nom: "Ajiaco Colombien",
     cat: "soupes", pays: "colombie",
     base: 4,
     temps: "1h15",
@@ -559,6 +576,7 @@ Object.assign(recettes, {
     ]
   },
   misoramencanard: {
+    nom: "Ramen Miso au Canard",
     cat: "soupes", saisons: ["hiver","automne"], pays: "japon",
     base: 4,
     temps: "50 min",
@@ -592,6 +610,7 @@ Object.assign(recettes, {
     ]
   },
   kharcho: {
+    nom: "Kharcho Géorgien",
     cat: "soupes", saisons: ["hiver","automne"], pays: "georgie",
     base: 4,
     temps: "1h45",
@@ -626,6 +645,7 @@ Object.assign(recettes, {
     ]
   },
   soupeaupistou: {
+    nom: "Soupe au Pistou",
     cat: "soupes", saisons: ["ete"], pays: "france",
     base: 6,
     temps: "1h30",
@@ -661,6 +681,7 @@ Object.assign(recettes, {
     ]
   },
   soupewonton: {
+    nom: "Soupe Wonton",
     cat: "soupes", pays: "chine",
     base: 4,
     temps: "50 min",
@@ -699,6 +720,7 @@ Object.assign(recettes, {
     ]
   },
   bortsch: {
+    nom: "Bortsch Russe",
     cat: "soupes", saisons: ["hiver","automne"], pays: "russie",
     base: 6,
     temps: "2h",
@@ -736,6 +758,7 @@ Object.assign(recettes, {
     ]
   },
   caldoverde: {
+    nom: "Caldo Verde",
     cat: "soupes", saisons: ["automne","hiver"], pays: "portugal",
     base: 6,
     temps: "45 min",
@@ -773,6 +796,7 @@ Object.assign(recettes, {
     ]
   },
   soupepoissonroche: {
+    nom: "Soupe de Poisson",
     cat: "soupes", pays: "france",
     base: 6,
     temps: "1h30",
@@ -813,6 +837,7 @@ Object.assign(recettes, {
     ]
   },
   tomkhagai: {
+    nom: "Tom Kha Gai",
     cat: "soupes", pays: "thailande",
     base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🍲",
     description: "La soupe thaïe au lait de coco, poulet et galanga. Parfumée à la citronnelle, citron vert et coriandre — réconfortante et exotique.",
@@ -845,6 +870,7 @@ Object.assign(recettes, {
     ]
   },
   veloutebutternut: {
+    nom: "Velouté butternut",
     cat: "soupes", pays: "france",
     base: 4, temps: "50 min", niveau: "⭐ Facile", emoji: "🎃",
     description: "Velouté de butternut soyeux et réconfortant, parfumé au gingembre et lait de coco. Le soin d'automne par excellence !",
@@ -876,6 +902,7 @@ Object.assign(recettes, {
     ]
   },
   thukpa: {
+    nom: "Thukpa",
     cat: "soupes", pays: "tibet",
     dateAjout: "2026-06-01",
     base: 4,
@@ -912,6 +939,7 @@ Object.assign(recettes, {
     ]
   },
   soupjoumou: {
+    nom: "Soup Joumou",
     cat: "soupes", pays: "haiti",
     dateAjout: "2026-06-01",
     base: 4,
@@ -948,6 +976,7 @@ Object.assign(recettes, {
     ]
   },
   egusi: {
+    nom: "Egusi",
     cat: "soupes", pays: "nigeria",
     dateAjout: "2026-06-01",
     base: 4,
@@ -984,6 +1013,7 @@ Object.assign(recettes, {
     ]
   },
   laksa: {
+    nom: "Laksa",
     cat: "soupes", pays: "singapour",
     dateAjout: "2026-06-01",
     base: 4,
@@ -1020,6 +1050,7 @@ Object.assign(recettes, {
     ]
   },
   blaffpoisson: {
+    nom: "Blaff de poisson",
     cat: "soupes", pays: "antilles",
     dateAjout: "2026-06-01",
     base: 4,
@@ -1164,6 +1195,7 @@ Object.assign(recettes, {
     ]
   },
   zurek: {
+    nom: "Żurek",
     cat: "soupes", pays: "pologne",
     dateAjout: "2026-06-03",
     base: 4,

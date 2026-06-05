@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   semoulecourgette: {
+    nom: "Semoule aux Courgettes",
     cat: "healthy", pays: "france",
     base: 4,
     temps: "20 min",
@@ -37,6 +38,7 @@ Object.assign(recettes, {
     ]
   },
   tofusaute: {
+    nom: "Tofu Sauté Teriyaki",
     cat: "healthy", pays: "japon",
     base: 4,
     temps: "25 min",
@@ -69,6 +71,7 @@ Object.assign(recettes, {
     ]
   },
   buddhaBowl: {
+    nom: "Buddha Bowl",
     cat: "healthy", pays: "usa",
     base: 2,
     temps: "30 min",
@@ -102,6 +105,7 @@ Object.assign(recettes, {
     ]
   },
   bowlacai: {
+    nom: "Bowl Açaï",
     cat: "healthy", saisons: ["ete","printemps"], pays: "bresil",
     base: 2,
     temps: "10 min",
@@ -139,6 +143,7 @@ Object.assign(recettes, {
     ]
   },
   saladepoischiches: {
+    nom: "Salade de Pois Chiches",
     cat: "healthy", saisons: ["ete"], pays: "liban",
     base: 4,
     temps: "15 min",
@@ -171,6 +176,7 @@ Object.assign(recettes, {
     ]
   },
   curryledumes: {
+    nom: "Curry de Légumes",
     cat: "healthy", saisons: ["ete"], pays: "inde",
     base: 4,
     temps: "35 min",
@@ -204,6 +210,7 @@ Object.assign(recettes, {
     ]
   },
   smoothiebowl: {
+    nom: "Smoothie Bowl",
     cat: "healthy", pays: "usa",
     base: 2,
     temps: "10 min",
@@ -236,6 +243,7 @@ Object.assign(recettes, {
     ]
   },
   saladequinoa: {
+    nom: "Salade de quinoa",
     cat: "healthy", saisons: ["automne","ete"], pays: "usa",
     base: 4,
     temps: "25 min",
@@ -269,6 +277,7 @@ Object.assign(recettes, {
     ]
   },
   yaourt: {
+    nom: "Yaourt maison",
     cat: "healthy", pays: "france",
     base: 8,
     temps: "10 min + 8h repos",
@@ -302,6 +311,7 @@ Object.assign(recettes, {
     ]
   },
   bowlProteineVege: {
+    nom: "Bowl Protéiné Végétarien",
     cat: "healthy", pays: "monde",
     base: 4,
     temps: "25 min",
@@ -334,6 +344,7 @@ Object.assign(recettes, {
     ]
   },
   saladeKale: {
+    nom: "Salade de Kale",
     cat: "healthy", saisons: ["automne","hiver"], pays: "monde",
     base: 4,
     temps: "15 min",
@@ -366,6 +377,7 @@ Object.assign(recettes, {
     ]
   },
   sobejaponais: {
+    nom: "Soba Japonais",
     cat: "healthy", pays: "japon",
     base: 2,
     temps: "15 min",
@@ -397,6 +409,7 @@ Object.assign(recettes, {
     ]
   },
   tartarethon: {
+    nom: "Tartare de Thon",
     cat: "healthy", pays: "france",
     base: 4,
     temps: "15 min",
@@ -428,6 +441,7 @@ Object.assign(recettes, {
     ]
   },
   pouletcitroncitronelle: {
+    nom: "Poulet Citron Citronnelle",
     cat: "healthy", pays: "asie",
     base: 4,
     temps: "30 min",
@@ -459,6 +473,7 @@ Object.assign(recettes, {
     ]
   },
   saladeLegsRoasted: {
+    nom: "Salade de Légumes Rôtis",
     cat: "healthy", pays: "monde",
     base: 4,
     temps: "35 min",
@@ -489,6 +504,7 @@ Object.assign(recettes, {
     ]
   },
   quinoalegumes: {
+    nom: "Quinoa aux Légumes",
     cat: "healthy", pays: "monde",
     base: 4,
     temps: "25 min",
@@ -520,6 +536,7 @@ Object.assign(recettes, {
     ]
   },
   patatesdoucesCurry: {
+    nom: "Patates Douces au Curry",
     cat: "healthy", pays: "inde",
     base: 4,
     temps: "35 min",
@@ -552,6 +569,7 @@ Object.assign(recettes, {
     ]
   },
   falafelbaked: {
+    nom: "Falafel au Four",
     cat: "healthy", pays: "monde",
     base: 4,
     temps: "40 min",
@@ -584,6 +602,7 @@ Object.assign(recettes, {
     ]
   },
   assiettepouletpatate: {
+    nom: "Assiette Healthy Poulet",
     cat: "healthy", saisons: ["automne","hiver"], pays: "monde",
     base: 4,
     temps: "30 min",
@@ -615,6 +634,7 @@ Object.assign(recettes, {
     ]
   },
   poketuna: {
+    nom: "Poké Thon-Avocat",
     cat: "healthy", saisons: ["ete"], pays: "hawaii",
     base: 4,
     temps: "25 min",
@@ -648,6 +668,7 @@ Object.assign(recettes, {
     ]
   },
   buddhabowlazteque: {
+    nom: "Buddha Bowl Aztèque",
     cat: "healthy", saisons: ["ete","automne"], pays: "mexique",
     base: 4,
     temps: "40 min",
@@ -681,6 +702,7 @@ Object.assign(recettes, {
     ]
   },
   dahllentillescorail: {
+    nom: "Dal Indien",
     cat: "healthy", saisons: ["hiver","automne"], pays: "inde",
     base: 4,
     temps: "35 min",
@@ -715,6 +737,7 @@ Object.assign(recettes, {
     ]
   },
   saumonteriyakimiel: {
+    nom: "Saumon Teriyaki au Miel",
     cat: "healthy", pays: "japon",
     base: 4,
     temps: "25 min",
@@ -748,6 +771,7 @@ Object.assign(recettes, {
     ]
   },
   bowlsaumonquinoa: {
+    nom: "Bowl Saumon-Quinoa",
     cat: "healthy", pays: "international",
     base: 2,
     temps: "30 min",
@@ -785,6 +809,7 @@ Object.assign(recettes, {
     ]
   },
   avocadotoast: {
+    nom: "Tartine avocat & œuf poché",
     cat: "healthy", pays: "usa",
     base: 2,
     temps: "15 min",
@@ -817,6 +842,7 @@ Object.assign(recettes, {
     ]
   },
   chiapudding: {
+    nom: "Chia pudding",
     cat: "healthy", pays: "usa",
     base: 2,
     temps: "5 min + repos",
@@ -849,6 +875,7 @@ Object.assign(recettes, {
     ]
   },
   wrapveggie: {
+    nom: "Wrap végétarien",
     cat: "healthy", pays: "monde",
     base: 2,
     temps: "15 min",

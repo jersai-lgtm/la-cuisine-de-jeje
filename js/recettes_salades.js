@@ -38,6 +38,7 @@ Object.assign(recettes, {
     ]
   },
   saladecesar: {
+    nom: "Salade César",
     cat: "salades", pays: "usa",
     base: 4,
     temps: "20 min",
@@ -70,6 +71,7 @@ Object.assign(recettes, {
     ]
   },
   saladegreque: {
+    nom: "Salade grecque",
     cat: "salades", saisons: ["ete"], pays: "grece",
     base: 4,
     temps: "15 min",
@@ -103,6 +105,7 @@ Object.assign(recettes, {
     ]
   },
   saladepatasthon: {
+    nom: "Salade pâtes thon",
     cat: "salades", saisons: ["ete"], pays: "france",
     base: 4,
     temps: "20 min",
@@ -135,6 +138,7 @@ Object.assign(recettes, {
     ]
   },
   saladerizmediterranee: {
+    nom: "Salade riz méditerranéenne",
     cat: "salades", pays: "france",
     base: 4,
     temps: "25 min",
@@ -167,6 +171,7 @@ Object.assign(recettes, {
     ]
   },
   tabulemaison: {
+    nom: "Taboulé maison",
     cat: "salades", saisons: ["ete"], pays: "liban",
     base: 4,
     temps: "20 min + repos",
@@ -199,6 +204,7 @@ Object.assign(recettes, {
     ]
   },
   saladelentilles: {
+    nom: "Salade de lentilles",
     cat: "salades", pays: "france",
     base: 4,
     temps: "30 min",
@@ -231,6 +237,7 @@ Object.assign(recettes, {
     ]
   },
   saladeavocatcrevettes: {
+    nom: "Salade avocat crevettes",
     cat: "salades", pays: "france",
     base: 4,
     temps: "15 min",
@@ -263,6 +270,7 @@ Object.assign(recettes, {
     ]
   },
   saladeThai: {
+    nom: "Salade Thaï",
     cat: "salades", saisons: ["ete"], pays: "asie",
     base: 4,
     temps: "20 min",
@@ -295,6 +303,7 @@ Object.assign(recettes, {
     ]
   },
   saladeHaricotsVerts: {
+    nom: "Salade Haricots Verts",
     cat: "salades", pays: "france",
     base: 4,
     temps: "20 min",
@@ -327,6 +336,7 @@ Object.assign(recettes, {
     ]
   },
   saladeFruitsMer: {
+    nom: "Salade Fruits de Mer",
     cat: "salades", pays: "france",
     base: 4,
     temps: "25 min",
@@ -359,6 +369,7 @@ Object.assign(recettes, {
     ]
   },
   saladePoulpe: {
+    nom: "Salade de Poulpe",
     cat: "salades", pays: "grece",
     base: 4,
     temps: "1h30",
@@ -391,6 +402,7 @@ Object.assign(recettes, {
     ]
   },
   saladechorizofeves: {
+    nom: "Salade Chorizo-Fèves",
     cat: "salades", saisons: ["printemps"], pays: "espagne",
     base: 4,
     temps: "20 min",
@@ -423,6 +435,7 @@ Object.assign(recettes, {
     ]
   },
   tabboulehlibanais: {
+    nom: "Taboulé Libanais",
     cat: "salades", saisons: ["ete"], pays: "liban",
     base: 4,
     temps: "30 min",
@@ -456,6 +469,7 @@ Object.assign(recettes, {
     ]
   },
   poissoncrutahitien: {
+    nom: "Poisson Cru Tahitien",
     cat: "salades", saisons: ["ete"], pays: "polynesie",
     base: 4,
     temps: "30 min",
@@ -489,6 +503,7 @@ Object.assign(recettes, {
     ]
   },
   saladewasabi: {
+    nom: "Salade Concombre-Wasabi",
     cat: "salades", saisons: ["ete"], pays: "japon",
     base: 4,
     temps: "15 min",
@@ -522,6 +537,7 @@ Object.assign(recettes, {
     ]
   },
   saladeburrata: {
+    nom: "Salade Burrata",
     cat: "salades", saisons: ["ete","printemps"], pays: "italie",
     base: 2,
     temps: "10 min",
@@ -560,6 +576,7 @@ Object.assign(recettes, {
     ]
   },
   coleslaw: {
+    nom: "Coleslaw",
     cat: "salades", pays: "usa",
     base: 6,
     temps: "20 min",
@@ -592,6 +609,7 @@ Object.assign(recettes, {
     ]
   },
   saladewaldorf: {
+    nom: "Salade Waldorf",
     cat: "salades", pays: "usa",
     base: 4,
     temps: "15 min",
@@ -624,6 +642,7 @@ Object.assign(recettes, {
     ]
   },
   saladebetteravechevre: {
+    nom: "Salade betterave & chèvre",
     cat: "salades", pays: "france",
     base: 4,
     temps: "15 min",
@@ -656,6 +675,7 @@ Object.assign(recettes, {
     ]
   },
   saladefiguejambon: {
+    nom: "Salade figues & jambon cru",
     cat: "salades", pays: "italie",
     base: 4,
     temps: "15 min",
@@ -688,6 +708,7 @@ Object.assign(recettes, {
     ]
   },
   saladeroquetteparmesan: {
+    nom: "Salade roquette-parmesan",
     cat: "salades", pays: "italie",
     base: 4,
     temps: "10 min",
@@ -720,6 +741,7 @@ Object.assign(recettes, {
     ]
   },
   saladeolivier: {
+    nom: "Salade Olivier",
     cat: "salades", pays: "russie",
     dateAjout: "2026-06-01",
     base: 4,

@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   houmous: {
+    nom: "Houmous maison",
     cat: "aperitifs", pays: "liban",
     base: 6,
     temps: "10 min",
@@ -37,6 +38,7 @@ Object.assign(recettes, {
     ]
   },
   babaganoush: {
+    nom: "Baba Ganoush",
     cat: "aperitifs", saisons: ["ete","automne"], pays: "liban",
     base: 4,
     temps: "45 min",
@@ -70,6 +72,7 @@ Object.assign(recettes, {
     ]
   },
   rillettessaumonfume: {
+    nom: "Rillettes Saumon Fumé",
     cat: "aperitifs", pays: "france",
     base: 6,
     temps: "15 min + 2h frigo",
@@ -106,6 +109,7 @@ Object.assign(recettes, {
     ]
   },
   patatasbravas: {
+    nom: "Patatas Bravas",
     cat: "aperitifs", pays: "espagne",
     base: 4,
     temps: "40 min",
@@ -142,6 +146,7 @@ Object.assign(recettes, {
     ]
   },
   guacamole: {
+    nom: "Guacamole",
     cat: "aperitifs", pays: "mexique",
     base: 6,
     temps: "15 min",
@@ -212,6 +217,7 @@ tapenade: {
     ]
   },
   tzatziki: {
+    nom: "Tzatziki",
     cat: "aperitifs", pays: "grece",
     base: 6,
     temps: "15 min",
@@ -245,6 +251,7 @@ tapenade: {
     ]
   },
   gougeres: {
+    nom: "Gougères au comté",
     cat: "aperitifs", pays: "france",
     base: 8,
     temps: "40 min",
@@ -279,6 +286,7 @@ tapenade: {
     ]
   },
   blinissaumon: {
+    nom: "Blinis saumon & crème",
     cat: "aperitifs", pays: "france",
     base: 8,
     temps: "30 min",
@@ -312,6 +320,7 @@ tapenade: {
     ]
   },
   cakeolivesjambon: {
+    nom: "Cake salé olives & jambon",
     cat: "aperitifs", pays: "france",
     base: 8,
     temps: "55 min",
@@ -345,6 +354,7 @@ tapenade: {
     ]
   },
   cakechorizofeta: {
+    nom: "Cake chorizo-feta",
     cat: "aperitifs", pays: "france",
     base: 8,
     temps: "55 min",
@@ -378,6 +388,7 @@ tapenade: {
     ]
   },
   feuilletessaucisse: {
+    nom: "Feuilletés à la saucisse",
     cat: "aperitifs", pays: "france",
     base: 8,
     temps: "30 min",
@@ -411,6 +422,7 @@ tapenade: {
     ]
   },
   palmierspesto: {
+    nom: "Palmiers feuilletés au pesto",
     cat: "aperitifs", pays: "italie",
     base: 8,
     temps: "25 min",
@@ -443,6 +455,7 @@ tapenade: {
     ]
   },
   oeufsmimosa: {
+    nom: "Œufs mimosa",
     cat: "aperitifs", pays: "france",
     base: 6,
     temps: "20 min",
@@ -476,6 +489,7 @@ tapenade: {
     ]
   },
   brochettecaprese: {
+    nom: "Brochettes tomate-mozza-basilic",
     cat: "aperitifs", pays: "italie",
     base: 6,
     temps: "10 min",
@@ -507,6 +521,7 @@ tapenade: {
     ]
   },
   nachosgratines: {
+    nom: "Nachos gratinés",
     cat: "aperitifs", pays: "mexique",
     base: 6,
     temps: "20 min",
@@ -539,6 +554,7 @@ tapenade: {
     ]
   },
   accrasmorue: {
+    nom: "Accras de morue",
     cat: "aperitifs", pays: "antilles",
     base: 8,
     temps: "40 min",
@@ -572,6 +588,7 @@ tapenade: {
     ]
   },
   boulettesfetaepinard: {
+    nom: "Boulettes feta-épinards",
     cat: "aperitifs", pays: "grece",
     base: 8,
     temps: "35 min",
@@ -605,6 +622,7 @@ tapenade: {
     ]
   },
   samoussaslegumes: {
+    nom: "Samoussas aux légumes",
     cat: "aperitifs", pays: "inde",
     base: 8,
     temps: "45 min",
@@ -638,6 +656,7 @@ tapenade: {
     ]
   },
   grissiniparme: {
+    nom: "Grissini au parmesan",
     cat: "aperitifs", pays: "italie",
     base: 10,
     temps: "40 min",
@@ -670,6 +689,7 @@ tapenade: {
     ]
   },
   dipfetapoivron: {
+    nom: "Dip feta-poivron grillé",
     cat: "aperitifs", pays: "grece",
     base: 6,
     temps: "15 min",
@@ -702,6 +722,7 @@ tapenade: {
     ]
   },
   rillettesthon: {
+    nom: "Rillettes de thon",
     cat: "aperitifs", pays: "france",
     base: 6,
     temps: "10 min",
@@ -734,6 +755,7 @@ tapenade: {
     ]
   },
   crackersgraines: {
+    nom: "Crackers maison aux graines",
     cat: "aperitifs", pays: "france",
     base: 10,
     temps: "35 min",
@@ -766,6 +788,7 @@ tapenade: {
     ]
   },
   verrineavocatcrevette: {
+    nom: "Verrine avocat-crevette",
     cat: "aperitifs", pays: "france",
     base: 6,
     temps: "15 min",
@@ -799,6 +822,7 @@ tapenade: {
     ]
   },
   tortillaespagnola: {
+    nom: "Tortilla española",
     cat: "aperitifs", pays: "espagne",
     base: 6,
     temps: "40 min",
@@ -832,6 +856,7 @@ tapenade: {
     ]
   },
   croquetasjamon: {
+    nom: "Croquetas au jambon",
     cat: "aperitifs", pays: "espagne",
     base: 8,
     temps: "50 min",
@@ -865,6 +890,7 @@ tapenade: {
     ]
   },
   nemsvietnam: {
+    nom: "Nems",
     cat: "aperitifs", pays: "vietnam",
     dateAjout: "2026-06-01",
     base: 4,
@@ -973,6 +999,7 @@ tapenade: {
     ]
   },
   patacones: {
+    nom: "Patacones",
     cat: "aperitifs", pays: "colombie",
     dateAjout: "2026-06-03",
     base: 4,

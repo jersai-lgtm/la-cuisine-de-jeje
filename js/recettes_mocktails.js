@@ -7,6 +7,7 @@
 
 Object.assign(recettes, {
   virginmojito: {
+    nom: "Virgin Mojito",
     cat: "mocktails", pays: "france",
     base: 1,
     temps: "5 min",
@@ -40,6 +41,7 @@ Object.assign(recettes, {
     ]
   },
   limonademaison: {
+    nom: "Limonade Maison",
     cat: "mocktails", pays: "france",
     base: 4,
     temps: "10 min",
@@ -72,6 +74,7 @@ Object.assign(recettes, {
     ]
   },
   smoothiemangopassion: {
+    nom: "Smoothie Mangue Passion",
     cat: "mocktails", pays: "france",
     base: 2,
     temps: "5 min",
@@ -103,6 +106,7 @@ Object.assign(recettes, {
     ]
   },
   citronadementhe: {
+    nom: "Citronnade à la Menthe",
     cat: "mocktails", pays: "france",
     base: 4,
     temps: "10 min",
@@ -135,6 +139,7 @@ Object.assign(recettes, {
     ]
   },
   jusPastequeMenuthe: {
+    nom: "Jus Pastèque Menthe",
     cat: "mocktails", saisons: ["ete"], pays: "france",
     base: 4,
     temps: "10 min",
@@ -166,6 +171,7 @@ Object.assign(recettes, {
     ]
   },
   virginpinacolada: {
+    nom: "Virgin Piña Colada",
     cat: "mocktails", pays: "france",
     base: 1,
     temps: "5 min",
@@ -197,6 +203,7 @@ Object.assign(recettes, {
     ]
   },
   cherryblossommocktail: {
+    nom: "Cherry Blossom",
     cat: "mocktails", pays: "france",
     base: 1,
     temps: "5 min",
@@ -229,6 +236,7 @@ Object.assign(recettes, {
     ]
   },
   shrubframboisebasilic: {
+    nom: "Shrub Framboise Basilic",
     cat: "mocktails", saisons: ["ete"], pays: "france",
     base: 4,
     temps: "10 min",
@@ -261,6 +269,7 @@ Object.assign(recettes, {
     ]
   },
   mocktailcoconananas: {
+    nom: "Mocktail Coco Ananas",
     cat: "mocktails", pays: "france",
     base: 2,
     temps: "5 min",
@@ -292,6 +301,7 @@ Object.assign(recettes, {
     ]
   },
   mocktailberrybliss: {
+    nom: "Mocktail Berry Bliss",
     cat: "mocktails", saisons: ["ete"], pays: "france",
     base: 1,
     temps: "5 min",
@@ -325,6 +335,7 @@ Object.assign(recettes, {
     ]
   },
   mocktailcoconorchidee: {
+    nom: "Mocktail Coco Orchidée",
     cat: "mocktails", saisons: ["hiver"], pays: "france",
     base: 2,
     temps: "5 min",
@@ -358,6 +369,7 @@ Object.assign(recettes, {
     ]
   },
   mocktailmentheagume: {
+    nom: "Mocktail Menthe Concombre",
     cat: "mocktails", saisons: ["ete"], pays: "france",
     base: 1,
     temps: "5 min",
@@ -391,6 +403,7 @@ Object.assign(recettes, {
     ]
   },
   mocktailframboisementhe: {
+    nom: "Mocktail Framboise Menthe",
     cat: "mocktails", saisons: ["ete","printemps"], pays: "monde",
     base: 1,
     temps: "5 min",
@@ -408,6 +421,7 @@ Object.assign(recettes, {
     ]
   },
   mocktailpassionsoleil: {
+    nom: "Mocktail Passion Soleil",
     cat: "mocktails", saisons: ["hiver"], pays: "monde",
     base: 1,
     temps: "5 min",
@@ -423,6 +437,7 @@ Object.assign(recettes, {
     ]
   },
   mocktailconcombrecitr: {
+    nom: "Mocktail Concombre Citron",
     cat: "mocktails", saisons: ["ete"], pays: "monde",
     base: 1,
     temps: "5 min",
@@ -440,6 +455,7 @@ Object.assign(recettes, {
     ]
   },
   mocktailgingembre: {
+    nom: "Ginger Mocktail",
     cat: "mocktails", pays: "monde",
     base: 1,
     temps: "5 min",
@@ -456,6 +472,7 @@ Object.assign(recettes, {
     ]
   },
   mocktailfraisesvanille: {
+    nom: "Mocktail Fraises Vanille",
     cat: "mocktails", saisons: ["ete","printemps"], pays: "monde",
     base: 1,
     temps: "5 min",
@@ -473,6 +490,7 @@ Object.assign(recettes, {
     ]
   },
   mangolassi: {
+    nom: "Mango Lassi",
     cat: "mocktails", pays: "inde",
     base: 4,
     temps: "5 min",
@@ -509,6 +527,7 @@ Object.assign(recettes, {
     ]
   },
   matchalattewi: {
+    nom: "Matcha Latte",
     cat: "mocktails", pays: "japon",
     base: 2,
     temps: "5 min",
@@ -546,6 +565,7 @@ Object.assign(recettes, {
     ]
   },
   bieraubeurre: {
+    nom: "Bière au Beurre",
     cat: "mocktails", pays: "angleterre",
     dateAjout: "2026-06-01",
     base: 1,

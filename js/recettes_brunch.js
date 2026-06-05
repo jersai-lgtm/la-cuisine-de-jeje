@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   crepes: {
+    nom: "Crêpes",
     cat: "brunch", pays: "france",
     base: 4,
     temps: "20 min + 1h repos",
@@ -45,6 +46,7 @@ Object.assign(recettes, {
     ]
   },
   gaufres: {
+    nom: "Gaufres",
     cat: "brunch", pays: "france",
     base: 1,
     temps: "25 min",
@@ -87,6 +89,7 @@ Object.assign(recettes, {
     ]
   },
   shakshuka: {
+    nom: "Shakshuka",
     cat: "brunch", saisons: ["automne","ete"], pays: "liban",
     base: 2,
     temps: "25 min",
@@ -120,6 +123,7 @@ Object.assign(recettes, {
     ]
   },
   shakshukaverte: {
+    nom: "Shakshuka Verte",
     cat: "brunch", saisons: ["automne","ete"], pays: "liban",
     base: 2,
     temps: "25 min",
@@ -152,6 +156,7 @@ Object.assign(recettes, {
     ]
   },
   dosakerdosai: {
+    nom: "Dosa / Dosai",
     cat: "brunch", pays: "inde",
     base: 4,
     temps: "30 min + 12h fermentation",
@@ -216,6 +221,7 @@ Object.assign(recettes, {
     ]
   },
   sconeBritish: {
+    nom: "Scones Britanniques",
     cat: "brunch", pays: "france",
     base: 8,
     temps: "25 min",
@@ -249,6 +255,7 @@ Object.assign(recettes, {
     ]
   },
   eggsBenedict: {
+    nom: "Œufs Bénédicte",
     cat: "brunch", pays: "usa",
     base: 2,
     temps: "30 min",
@@ -281,6 +288,7 @@ Object.assign(recettes, {
     ]
   },
   chocolatChaud: {
+    nom: "Chocolat Chaud",
     cat: "brunch", pays: "france",
     base: 2,
     temps: "10 min",
@@ -313,6 +321,7 @@ Object.assign(recettes, {
     ]
   },
   granolaMaison: {
+    nom: "Granola Maison",
     cat: "brunch", saisons: ["automne"], pays: "france",
     base: 6,
     temps: "30 min",
@@ -345,6 +354,7 @@ Object.assign(recettes, {
     ]
   },
   financiers: {
+    nom: "Financiers aux Amandes",
     cat: "brunch", pays: "france",
     base: 12,
     temps: "25 min",
@@ -377,6 +387,7 @@ Object.assign(recettes, {
     ]
   },
   bananabread: {
+    nom: "Cake à la Banane",
     cat: "brunch", pays: "usa",
     base: 8,
     temps: "15 min + 1h four",
@@ -410,6 +421,7 @@ Object.assign(recettes, {
     ]
   },
   overnightoats: {
+    nom: "Porridge de Nuit",
     cat: "brunch", pays: "usa",
     base: 1,
     temps: "5 min + nuit repos",
@@ -442,6 +454,7 @@ Object.assign(recettes, {
     ]
   },
   pancakesproteine: {
+    nom: "Pancakes Protéinés",
     cat: "brunch", pays: "usa",
     base: 2,
     temps: "15 min",
@@ -474,6 +487,7 @@ Object.assign(recettes, {
     ]
   },
   pancakes: {
+    nom: "Pancakes",
     cat: "brunch", pays: "usa",
     base: 4,
     temps: "20 min",
@@ -512,6 +526,7 @@ Object.assign(recettes, {
     ]
   },
   muffins: {
+    nom: "Muffins",
     cat: "brunch", pays: "usa",
     base: 12,
     temps: "25 min",
@@ -554,6 +569,7 @@ Object.assign(recettes, {
     ]
   },
   smoothievert: {
+    nom: "Smoothie Vert Détox",
     cat: "brunch", saisons: ["ete"], pays: "monde",
     base: 2,
     temps: "5 min",
@@ -585,6 +601,7 @@ Object.assign(recettes, {
     ]
   },
   huevosrancheros: {
+    nom: "Huevos Rancheros",
     cat: "brunch", pays: "mexique",
     base: 4,
     temps: "30 min",
@@ -619,6 +636,7 @@ Object.assign(recettes, {
     ]
   },
   chilaquilesrojos: {
+    nom: "Chilaquiles Rojos",
     cat: "brunch", pays: "mexique",
     base: 4,
     temps: "35 min",
@@ -652,6 +670,7 @@ Object.assign(recettes, {
     ]
   },
   kayatoast: {
+    nom: "Kaya Toast",
     cat: "brunch", pays: "singapour",
     base: 4,
     temps: "15 min",
@@ -686,6 +705,7 @@ Object.assign(recettes, {
     ]
   },
   painperdubrioche: {
+    nom: "Pain Perdu Brioché",
     cat: "brunch", pays: "france",
     base: 4,
     temps: "20 min",
@@ -723,6 +743,7 @@ Object.assign(recettes, {
     ]
   },
   croquemadame: {
+    nom: "Croque-Madame",
     cat: "brunch", pays: "france",
     base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🍞",
     description: "Le croque-monsieur surmonté d'un œuf au plat — la version 'madame'. Béchamel onctueuse, jambon, gruyère et œuf coulant.",
@@ -755,6 +776,7 @@ Object.assign(recettes, {
     ]
   },
   muffinkinder: {
+    nom: "Muffin Kinder Bueno",
     cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins moelleux fourrés et garnis de Kinder Bueno fondu — chocolat au lait, noisette croustillante.",
@@ -788,6 +810,7 @@ Object.assign(recettes, {
     ]
   },
   muffinmars: {
+    nom: "Muffin Mars caramel",
     cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins gourmands au cœur de Mars fondu : chocolat, caramel coulant et nougat fondant.",
@@ -821,6 +844,7 @@ Object.assign(recettes, {
     ]
   },
   muffinkitkat: {
+    nom: "Muffin Kit Kat",
     cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins au chocolat avec morceaux croquants de Kit Kat dedans et entiers en topping.",
@@ -854,6 +878,7 @@ Object.assign(recettes, {
     ]
   },
   muffinraffaello: {
+    nom: "Muffin Raffaello coco",
     cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins blanc-coco délicats avec Raffaello fondants au cœur. Noix de coco, amande et chocolat blanc !",
@@ -886,6 +911,7 @@ Object.assign(recettes, {
     ]
   },
   muffinsnickers: {
+    nom: "Muffin Snickers",
     cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins ultra gourmands au Snickers : chocolat, caramel, cacahuète et nougat. Combo sucré-salé !",
@@ -920,6 +946,7 @@ Object.assign(recettes, {
     ]
   },
   muffinoreo: {
+    nom: "Muffin Oreo",
     cat: "brunch", pays: "usa",
     base: 12, temps: "45 min", niveau: "⭐ Facile", emoji: "🧁",
     description: "Muffins vanille avec Oreo concassés dans la pâte et chocolat blanc fondant. Le contraste noir-blanc !",
@@ -1025,6 +1052,7 @@ Object.assign(recettes, {
     ]
   },
   birchermuesli: {
+    nom: "Birchermüesli",
     cat: "brunch", pays: "suisse",
     dateAjout: "2026-06-03",
     base: 4,
@@ -1060,6 +1088,7 @@ Object.assign(recettes, {
     ]
   },
   menemen: {
+    nom: "Menemen",
     cat: "brunch", pays: "turquie",
     dateAjout: "2026-06-03",
     base: 4,

@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   naan: {
+    nom: "Naans",
     cat: "encas", pays: "inde",
     base: 4,
     temps: "1h30",
@@ -38,6 +39,7 @@ Object.assign(recettes, {
     ]
   },
   gyoza: {
+    nom: "Gyoza",
     cat: "encas", saisons: ["automne","hiver"], pays: "japon",
     base: 20,
     temps: "45 min",
@@ -85,6 +87,7 @@ Object.assign(recettes, {
     ]
   },
   falafel: {
+    nom: "Falafel",
     cat: "encas", pays: "liban",
     base: 4,
     temps: "30 min + trempage",
@@ -127,6 +130,7 @@ Object.assign(recettes, {
     ]
   },
   momos: {
+    nom: "Momos Tibétains",
     cat: "encas", saisons: ["automne","hiver"], pays: "tibet",
     base: 4,
     temps: "1h",
@@ -169,6 +173,7 @@ Object.assign(recettes, {
     ]
   },
   pintxosbasques: {
+    nom: "Pintxos Basques",
     cat: "encas", saisons: ["automne","ete"], pays: "espagne",
     base: 4,
     temps: "20 min",
@@ -214,6 +219,7 @@ Object.assign(recettes, {
     ]
   },
   camembertRoti: {
+    nom: "Camembert Rôti",
     cat: "encas", saisons: ["automne"], pays: "france",
     base: 2,
     temps: "20 min",
@@ -246,6 +252,7 @@ Object.assign(recettes, {
     ]
   },
   wafflesSales: {
+    nom: "Gaufres Salées",
     cat: "encas", pays: "france",
     base: 4,
     temps: "25 min",
@@ -278,6 +285,7 @@ Object.assign(recettes, {
     ]
   },
   energyballs: {
+    nom: "Boules d\'Énergie",
     cat: "encas", pays: "usa",
     base: 12,
     temps: "15 min + 30 min frigo",
@@ -310,6 +318,7 @@ Object.assign(recettes, {
     ]
   },
   croquemonsieur: {
+    nom: "Croque-monsieur",
     cat: "encas", pays: "france",
     base: 4,
     temps: "20 min",
@@ -343,6 +352,7 @@ Object.assign(recettes, {
     ]
   },
   bruschetta: {
+    nom: "Bruschetta Tomate Basilic",
     cat: "encas", saisons: ["ete"], pays: "italie",
     base: 4,
     temps: "15 min",
@@ -375,6 +385,7 @@ Object.assign(recettes, {
     ]
   },
   samosas: {
+    nom: "Samosas aux Légumes",
     cat: "encas", saisons: ["ete","printemps"], pays: "inde",
     base: 4,
     temps: "45 min",
@@ -407,6 +418,7 @@ Object.assign(recettes, {
     ]
   },
   springRolls: {
+    nom: "Spring Rolls Frais",
     cat: "encas", pays: "asie",
     base: 4,
     temps: "30 min",
@@ -439,6 +451,7 @@ Object.assign(recettes, {
     ]
   },
   oeufsCocotte: {
+    nom: "Œufs Cocotte",
     cat: "encas", pays: "france",
     base: 4,
     temps: "25 min",
@@ -471,6 +484,7 @@ Object.assign(recettes, {
     ]
   },
   samossasagneau: {
+    nom: "Samossas à l&#39;Agneau",
     cat: "encas", pays: "inde",
     base: 4,
     temps: "1h",
@@ -505,6 +519,7 @@ Object.assign(recettes, {
     ]
   },
   empanadasargentines: {
+    nom: "Empanadas Argentines",
     cat: "encas", pays: "argentine",
     base: 4,
     temps: "1h30",
@@ -539,6 +554,7 @@ Object.assign(recettes, {
     ]
   },
   baoporccarmelise: {
+    nom: "Bao au Porc",
     cat: "encas", pays: "chine",
     base: 4,
     temps: "2h",
@@ -573,6 +589,7 @@ Object.assign(recettes, {
     ]
   },
   arancinissicilien: {
+    nom: "Arancini Siciliens",
     cat: "encas", pays: "italie",
     base: 4,
     temps: "1h30 + 2h refroidissement",
@@ -608,6 +625,7 @@ Object.assign(recettes, {
     ]
   },
   quesadillas: {
+    nom: "Quesadillas",
     cat: "encas", pays: "mexique",
     base: 4,
     temps: "25 min",
@@ -645,6 +663,7 @@ Object.assign(recettes, {
     ]
   },
   samosaslegumes: {
+    nom: "Samosas Légumes",
     cat: "encas", pays: "inde",
     base: 4,
     temps: "1h",
@@ -682,6 +701,7 @@ Object.assign(recettes, {
     ]
   },
   bagelsaumon: {
+    nom: "Bagel saumon",
     cat: "encas", pays: "usa",
     base: 4,
     temps: "15 min",
@@ -714,6 +734,7 @@ Object.assign(recettes, {
     ]
   },
   clubsandwich: {
+    nom: "Club sandwich",
     cat: "encas", pays: "usa",
     base: 2,
     temps: "20 min",
@@ -746,6 +767,7 @@ Object.assign(recettes, {
     ]
   },
   paninimozza: {
+    nom: "Panini tomate-mozza",
     cat: "encas", pays: "italie",
     base: 2,
     temps: "15 min",
@@ -778,6 +800,7 @@ Object.assign(recettes, {
     ]
   },
   nuggetspoulet: {
+    nom: "Nuggets de poulet maison",
     cat: "encas", pays: "usa",
     base: 4,
     temps: "30 min",
@@ -810,6 +833,7 @@ Object.assign(recettes, {
     ]
   },
   plackiziemniaczane: {
+    nom: "Placki (galettes de pdt)",
     cat: "encas", pays: "pologne",
     dateAjout: "2026-06-01",
     base: 4,
@@ -846,6 +870,7 @@ Object.assign(recettes, {
     ]
   },
   arepas: {
+    nom: "Arepas",
     cat: "encas", pays: "colombie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -882,6 +907,7 @@ Object.assign(recettes, {
     ]
   },
   langos: {
+    nom: "Lángos",
     cat: "encas", pays: "hongrie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -918,6 +944,7 @@ Object.assign(recettes, {
     ]
   },
   paodequeijo: {
+    nom: "Pão de queijo",
     cat: "encas", pays: "bresil",
     dateAjout: "2026-06-01",
     base: 4,
@@ -954,6 +981,7 @@ Object.assign(recettes, {
     ]
   },
   borekturc: {
+    nom: "Börek",
     cat: "encas", pays: "turquie",
     dateAjout: "2026-06-01",
     base: 4,
@@ -1026,6 +1054,7 @@ Object.assign(recettes, {
     ]
   },
   choripan: {
+    nom: "Choripán",
     cat: "encas", pays: "argentine",
     dateAjout: "2026-06-03",
     base: 4,

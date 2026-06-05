@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   pizza: {
+    nom: "Pâte à pizza",
     cat: "boulangerie", pays: "italie",
     base: 4,
     temps: "48h fermentation",
@@ -52,6 +53,7 @@ Object.assign(recettes, {
     ]
   },
   painbaguette: {
+    nom: "Pain — Baguette",
     cat: "boulangerie", pays: "france",
     base: 6,
     temps: "3h",
@@ -78,6 +80,7 @@ Object.assign(recettes, {
     ]
   },
   paindemie: {
+    nom: "Pain de mie",
     cat: "boulangerie", pays: "france",
     base: 20,
     temps: "2h30",
@@ -118,6 +121,7 @@ Object.assign(recettes, {
     ]
   },
   patefeuilletee: {
+    nom: "Pâte feuilletée",
     cat: "boulangerie", pays: "france",
     base: 6,
     temps: "2h + repos",
@@ -142,6 +146,7 @@ Object.assign(recettes, {
     ]
   },
   patebrisee: {
+    nom: "Pâte brisée",
     cat: "boulangerie", pays: "france",
     base: 6,
     temps: "15 min + repos",
@@ -165,6 +170,7 @@ Object.assign(recettes, {
     ]
   },
   patesablee: {
+    nom: "Pâte sablée",
     cat: "boulangerie", pays: "france",
     base: 6,
     temps: "15 min + repos",
@@ -189,6 +195,7 @@ Object.assign(recettes, {
     ]
   },
   painburger: {
+    nom: "Pain Burger (Buns)",
     cat: "boulangerie", pays: "usa",
     base: 6,
     temps: "2h30 (dont 1h30 levée)",
@@ -225,6 +232,7 @@ Object.assign(recettes, {
     ]
   },
   galettetacos: {
+    nom: "Galette à Tacos",
     cat: "boulangerie", pays: "mexique",
     base: 8,
     temps: "45 min (dont 30 min repos)",
@@ -260,6 +268,7 @@ Object.assign(recettes, {
     ]
   },
   brioche: {
+    nom: "Brioche",
     cat: "boulangerie", pays: "france",
     base: 1,
     temps: "~2h + 35 min cuisson",
@@ -294,6 +303,7 @@ Object.assign(recettes, {
     ]
   },
   lasagne: {
+    nom: "Pâte à Lasagne",
     cat: "boulangerie", pays: "italie",
     base: 1,
     temps: "1h30",
@@ -331,6 +341,7 @@ Object.assign(recettes, {
     ]
   },
   painauchocolat: {
+    nom: "Pain au Chocolat",
     cat: "boulangerie", pays: "france",
     base: 8,
     temps: "3h + repos",
@@ -364,6 +375,7 @@ Object.assign(recettes, {
     ]
   },
   croissant: {
+    nom: "Croissants au Beurre",
     cat: "boulangerie", pays: "france",
     base: 8,
     temps: "3h + 12h repos",
@@ -397,6 +409,7 @@ Object.assign(recettes, {
     ]
   },
   focacciaolives: {
+    nom: "Focaccia Olives-Romarin",
     cat: "boulangerie", saisons: ["ete"], pays: "italie",
     base: 6,
     temps: "2h30",
@@ -431,6 +444,7 @@ Object.assign(recettes, {
     ]
   },
   khachapuri: {
+    nom: "Khachapuri",
     cat: "boulangerie", pays: "georgie",
     base: 4,
     temps: "1h30",
@@ -465,6 +479,7 @@ Object.assign(recettes, {
     ]
   },
   painpita: {
+    nom: "Pain Pita",
     cat: "boulangerie", pays: "liban",
     base: 6,
     temps: "2h",
@@ -499,6 +514,7 @@ Object.assign(recettes, {
     ]
   },
   painsigle: {
+    nom: "Pain de Seigle",
     cat: "boulangerie", pays: "france",
     base: 1,
     temps: "2h30",
@@ -536,6 +552,7 @@ Object.assign(recettes, {
     ]
   },
   paincampagne: {
+    nom: "Pain de Campagne",
     cat: "boulangerie", pays: "france",
     base: 1,
     temps: "3h",
@@ -573,6 +590,7 @@ Object.assign(recettes, {
     ]
   },
   bretzelallemand: {
+    nom: "Bretzel Allemand",
     cat: "boulangerie", pays: "allemagne",
     base: 6,
     temps: "2h",
@@ -610,6 +628,7 @@ Object.assign(recettes, {
     ]
   },
   fougasse: {
+    nom: "Fougasse aux olives",
     cat: "boulangerie", pays: "france",
     base: 6,
     temps: "30 min + repos",
@@ -643,6 +662,7 @@ Object.assign(recettes, {
     ]
   },
   painauxraisins: {
+    nom: "Pain aux raisins",
     cat: "boulangerie", pays: "france",
     base: 6,
     temps: "40 min + repos",
@@ -677,6 +697,7 @@ Object.assign(recettes, {
     ]
   },
   chaussonpommes: {
+    nom: "Chausson aux pommes",
     cat: "boulangerie", pays: "france",
     base: 6,
     temps: "35 min",
@@ -710,6 +731,7 @@ Object.assign(recettes, {
     ]
   },
   ciabatta: {
+    nom: "Ciabatta",
     cat: "boulangerie", pays: "italie",
     base: 4,
     temps: "30 min + repos",
@@ -744,6 +766,7 @@ Object.assign(recettes, {
     ]
   },
   injera: {
+    nom: "Injera",
     cat: "boulangerie", pays: "ethiopie",
     dateAjout: "2026-06-01",
     base: 4,
