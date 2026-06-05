@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "1.3.24",
+    titre: "🍱 Le batch cooking est arrivé !",
+    texte: "Le principe : cuisiner toute sa semaine en une seule session, au lieu de s'y remettre chaque soir. Dans Cuisine → Liste de courses, choisis tes recettes : tu vois le temps total de prép, ta liste de courses regroupée par rayon, et surtout le nouveau « 📋 Plan de prep » qui rassemble les étapes de toutes tes recettes par phase (mise en place → cuissons → assemblage → repos & conservation). Tu coupes tout d'un coup, tu lances les cuissons ensemble : un vrai gain de temps !"
+  },
+  {
     v: "1.3.0",
     titre: "📷 Les photos sont arrivées !",
     texte: "Tu peux maintenant ajouter tes photos de plats sur chaque recette et admirer celles de la communauté. Avec les commentaires, place à la cuisine collaborative !"

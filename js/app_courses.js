@@ -290,9 +290,14 @@ function lcGenererListe() {
   const liste = window.userProfile?.listeCourses || [];
   const zone = document.getElementById("lc-liste");
   if (!zone) return;
-  
+
+  const toggle = document.getElementById("lc-vue-toggle");
+  if (toggle) toggle.style.display = liste.length ? "flex" : "none";
+
   if (liste.length === 0) {
     zone.style.display = "none";
+    const prepZ = document.getElementById("lc-plan-prep");
+    if (prepZ) prepZ.style.display = "none";
     return;
   }
   
@@ -394,7 +399,110 @@ function lcGenererListe() {
   
   document.getElementById("lc-rayons").innerHTML = html;
   document.getElementById("lc-progress").textContent = `${nbCoches} / ${nbTotal} cochés`;
-  zone.style.display = "block";
+  // Respecter la vue active (Liste de courses / Plan de prep)
+  if (window._lcVue === "prep") {
+    zone.style.display = "none";
+    lcGenererPlanPrep();
+  } else {
+    zone.style.display = "block";
+    const prepZ = document.getElementById("lc-plan-prep");
+    if (prepZ) prepZ.style.display = "none";
+  }
+}
+
+window._lcVue = window._lcVue || "courses";
+
+// Bascule entre la liste de courses et le plan de prep (batch cooking)
+function lcAfficherVue(vue) {
+  window._lcVue = vue;
+  const showPrep = (vue === "prep");
+  const courses = document.getElementById("lc-liste");
+  const prep = document.getElementById("lc-plan-prep");
+  const bC = document.getElementById("lc-vue-courses");
+  const bP = document.getElementById("lc-vue-prep");
+  const liste = window.userProfile?.listeCourses || [];
+  if (bC) { bC.style.background = showPrep ? "transparent" : "#ff4d88"; bC.style.borderColor = showPrep ? "rgba(255,255,255,.18)" : "#ff4d88"; }
+  if (bP) { bP.style.background = showPrep ? "#ff4d88" : "transparent"; bP.style.borderColor = showPrep ? "#ff4d88" : "rgba(255,255,255,.18)"; }
+  if (showPrep) {
+    if (courses) courses.style.display = "none";
+    if (prep) prep.style.display = "block";
+    lcGenererPlanPrep();
+  } else {
+    if (prep) prep.style.display = "none";
+    if (courses) courses.style.display = liste.length ? "block" : "none";
+  }
+}
+
+// Les phases du plan de prep (batch cooking)
+const PREP_PHASES = [
+  { id: "prep",     icone: "🔪", titre: "Mise en place",         note: "Épluche, coupe et prépare tout ça en une seule fois, pour toutes les recettes." },
+  { id: "cuisson",  icone: "🔥", titre: "Cuissons",              note: "Lance ensemble ce qui peut cuire en même temps, et enchaîne pendant les temps de cuisson." },
+  { id: "finition", icone: "🥄", titre: "Assemblage & finition", note: "On monte les plats, on assaisonne et on dresse." },
+  { id: "repos",    icone: "❄️", titre: "Repos & conservation",  note: "Marinades, repos et refroidissement, puis on range au frais ou au congélateur." },
+];
+
+function _prepStrip(s) {
+  return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+// Classe une étape dans une phase, d'après son titre/détail + son icône
+function lcClasserEtape(et) {
+  const t = _prepStrip((et.titre || "") + " " + (et.detail || ""));
+  const ic = et.icone || "";
+  const a = (...mots) => mots.some(m => t.includes(m));
+  if (/❄️/.test(ic) || a("repos", "repose", "marin", "refroid", "au frais", "frigo", "pousse", "fermenter", "refriger", "congel", "raffermir", "tiedir", "figer", "prendre au frais")) return "repos";
+  if (/[🔥♨🍳🍲🧇]/u.test(ic) || a("cuire", "cuisson", "enfourn", "au four", "mijot", "braiser", "rotir", "bouill", "ebullition", "pocher", "frire", "friture", "saisir", "dorer", "griller", "rissol", "compot", "infus", "chauffer", "blanchir", "revenir", "faire suer", "fondre", "poele", "sauter", "flamber", "gratiner")) return "cuisson";
+  if (/[🥄🍽🧀🌿🍫🥗🍯🥥]/u.test(ic) || a("assembl", "dresser", "napper", "garnir", "lier", "monter", "incorpor", "servir", "service", "sauce", "deglac", "ajuster", "gouter", "parsem", "decorer", "emulsion", "presenter", "finir", "melange", "remuer", "filtrer", "frapper")) return "finition";
+  return "prep";
+}
+
+// Génère le plan de prep regroupé par phases (batch cooking)
+function lcGenererPlanPrep() {
+  const liste = window.userProfile?.listeCourses || [];
+  const zone = document.getElementById("lc-plan-prep");
+  if (!zone) return;
+  if (liste.length === 0) { zone.innerHTML = ""; return; }
+
+  const buckets = { prep: [], cuisson: [], finition: [], repos: [] };
+  let totalMin = 0;
+  liste.forEach(({ cle }) => {
+    const r = recettes[cle];
+    if (!r) return;
+    totalMin += lcPrepMinutes(r.temps);
+    if (!Array.isArray(r.etapes)) return;
+    const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
+    r.etapes.forEach(et => { buckets[lcClasserEtape(et)].push({ nom, et }); });
+  });
+
+  const ech = s => String(s || "").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+  const phasesHTML = PREP_PHASES.map((phase, i) => {
+    const items = buckets[phase.id];
+    if (!items.length) return "";
+    const steps = items.map(({ nom, et }) => `
+      <div style="background:#1a1620;border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:9px 11px">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:3px">
+          <span style="font-size:11px;color:#ff8fb3;background:rgba(255,77,136,.15);padding:2px 8px;border-radius:999px;max-width:70%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${ech(nom)}</span>
+          ${et.badge ? `<span style="font-size:11px;color:#d7d5db;background:rgba(255,255,255,.07);padding:2px 8px;border-radius:999px;white-space:nowrap">${ech(et.badge)}</span>` : ""}
+        </div>
+        <div style="font-size:13px;color:#fff;font-weight:500">${ech(et.icone || "")} ${ech(et.titre || "")}</div>
+        ${et.detail ? `<div style="font-size:12px;color:#b3b0b8;line-height:1.5;margin-top:3px">${ech(et.detail)}</div>` : ""}
+      </div>`).join("");
+    return `<div style="margin-bottom:16px">
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:4px">
+        <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#ff4d88;color:#fff;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center">${i + 1}</span>
+        <span style="font-size:15px;font-weight:500;color:#fff;flex:1">${phase.icone} ${phase.titre}</span>
+        <span style="font-size:11px;color:#88858f">${items.length} étape${items.length > 1 ? "s" : ""}</span>
+      </div>
+      <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">${phase.note}</div>
+      <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${steps}</div>
+    </div>`;
+  }).join("");
+
+  zone.innerHTML = `
+    <h3>📋 Ton plan de prep</h3>
+    <p class="plan-subtitle" style="margin-top:-4px">Les étapes de tes ${liste.length} recette${liste.length > 1 ? "s" : ""} regroupées par phase — fais chaque phase d'un coup. ⏱ ≈ ${lcFmtDuree(totalMin)} de travail actif.</p>
+    ${phasesHTML}`;
 }
 
 function lcToggleItem(label, checkbox) {
