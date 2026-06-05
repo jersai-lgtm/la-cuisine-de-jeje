@@ -500,23 +500,37 @@ function lcGenererPlanPrep() {
 
   const ech = s => String(s || "").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
+  const norm = s => _prepStrip(s).replace(/\s+/g, " ").trim();
+
   const phasesHTML = PREP_PHASES.map((phase, i) => {
     const items = buckets[phase.id];
     if (!items.length) return "";
-    const steps = items.map(({ nom, et }) => `
-      <div style="background:#1a1620;border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:9px 11px">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:3px">
-          <span style="font-size:11px;color:#ff8fb3;background:rgba(255,77,136,.15);padding:2px 8px;border-radius:999px;max-width:70%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${ech(nom)}</span>
-          ${et.badge ? `<span style="font-size:11px;color:#d7d5db;background:rgba(255,255,255,.07);padding:2px 8px;border-radius:999px;white-space:nowrap">${ech(et.badge)}</span>` : ""}
+    // Déduplication : étapes identiques (même titre + même détail) → 1 ligne, recettes cumulées
+    const groupes = new Map();
+    items.forEach(({ nom, et }) => {
+      const key = norm(et.titre) + "||" + norm(et.detail);
+      if (!groupes.has(key)) groupes.set(key, { icone: et.icone || "", titre: et.titre || "", detail: et.detail || "", badge: et.badge || null, recettes: [] });
+      const g = groupes.get(key);
+      if (!g.recettes.includes(nom)) g.recettes.push(nom);
+    });
+    const groupesArr = [...groupes.values()];
+    const steps = groupesArr.map(g => {
+      const chips = g.recettes.map(n => `<span class="prep-rec">${ech(n)}</span>`).join("");
+      return `<div class="prep-step" onclick="this.classList.toggle('prep-open')">
+        <div class="prep-step-head">
+          <span class="prep-chev">▸</span>
+          <span class="prep-step-titre">${ech(g.icone)} ${ech(g.titre)}</span>
+          ${g.badge ? `<span class="prep-tb">${ech(g.badge)}</span>` : ""}
         </div>
-        <div style="font-size:13px;color:#fff;font-weight:500">${ech(et.icone || "")} ${ech(et.titre || "")}</div>
-        ${et.detail ? `<div style="font-size:12px;color:#b3b0b8;line-height:1.5;margin-top:3px">${ech(et.detail)}</div>` : ""}
-      </div>`).join("");
+        <div class="prep-recs">${chips}</div>
+        ${g.detail ? `<div class="prep-step-detail">${ech(g.detail)}</div>` : ""}
+      </div>`;
+    }).join("");
     return `<div style="margin-bottom:16px">
       <div style="display:flex;align-items:center;gap:9px;margin-bottom:4px">
         <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#ff4d88;color:#fff;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center">${i + 1}</span>
         <span style="font-size:15px;font-weight:500;color:#fff;flex:1">${phase.icone} ${phase.titre}</span>
-        <span style="font-size:11px;color:#88858f">${items.length} étape${items.length > 1 ? "s" : ""}</span>
+        <span style="font-size:11px;color:#88858f">${groupesArr.length} étape${groupesArr.length > 1 ? "s" : ""}</span>
       </div>
       <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">${phase.note}</div>
       <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${steps}</div>
@@ -546,9 +560,22 @@ function lcGenererPlanPrep() {
       <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${consHTML}</div>
     </div>`;
 
-  zone.innerHTML = `
+  const styleBloc = `<style>
+    #lc-plan-prep .prep-step{background:#1a1620;border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:9px 11px;cursor:pointer}
+    #lc-plan-prep .prep-step-head{display:flex;align-items:center;gap:7px}
+    #lc-plan-prep .prep-chev{font-size:11px;color:#88858f;transition:transform .15s ease;flex:none}
+    #lc-plan-prep .prep-step.prep-open .prep-chev{transform:rotate(90deg)}
+    #lc-plan-prep .prep-step-titre{font-size:13px;color:#fff;font-weight:500;flex:1}
+    #lc-plan-prep .prep-tb{font-size:11px;color:#d7d5db;background:rgba(255,255,255,.07);padding:2px 8px;border-radius:999px;white-space:nowrap}
+    #lc-plan-prep .prep-recs{display:flex;flex-wrap:wrap;gap:4px;margin:5px 0 0 18px}
+    #lc-plan-prep .prep-rec{font-size:10px;color:#ff8fb3;background:rgba(255,77,136,.13);padding:1px 7px;border-radius:999px}
+    #lc-plan-prep .prep-step-detail{display:none;font-size:12px;color:#b3b0b8;line-height:1.5;margin:6px 0 0 18px}
+    #lc-plan-prep .prep-step.prep-open .prep-step-detail{display:block}
+  </style>`;
+
+  zone.innerHTML = `${styleBloc}
     <h3>📋 Ton plan de prep</h3>
-    <p class="plan-subtitle" style="margin-top:-4px">Les étapes de tes ${liste.length} recette${liste.length > 1 ? "s" : ""} regroupées par phase — fais chaque phase d'un coup. ⏱ ≈ ${lcFmtDuree(totalMin)} de travail actif.</p>
+    <p class="plan-subtitle" style="margin-top:-4px">Les étapes de tes ${liste.length} recette${liste.length > 1 ? "s" : ""} regroupées par phase — fais chaque phase d'un coup. ⏱ ≈ ${lcFmtDuree(totalMin)} de travail actif. <span style="color:#88858f">Touche une étape pour voir le détail.</span></p>
     ${phasesHTML}
     ${conservationBloc}`;
 }
