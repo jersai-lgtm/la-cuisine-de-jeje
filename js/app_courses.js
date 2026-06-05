@@ -539,6 +539,25 @@ function lcMenuParJour() {
   return map;
 }
 
+// Détail par jour : index -> [{ cle, creneau, role }] (pour la vue « Chaque soir »)
+function lcMenuParJourDetail() {
+  const m = window._derniersMenus;
+  const out = {};
+  if (!m || !Array.isArray(m.semaine)) return out;
+  m.semaine.forEach(jour => {
+    const idx = LC_JOURS.indexOf(jour.jour);
+    if (idx < 0) return;
+    ["midi", "soir"].forEach(cr => {
+      const slot = jour[cr];
+      if (!slot) return;
+      const push = (cle, role) => { if (!cle) return; (out[idx] = out[idx] || []).push({ cle, creneau: cr, role: role || null }); };
+      if (slot.recette) push(slot.recette, null);
+      ["entree", "plat", "dessert"].forEach(role => { if (slot[role] && slot[role].recette) push(slot[role].recette, role); });
+    });
+  });
+  return out;
+}
+
 // Génère le plan de prep regroupé par phases (batch cooking)
 function lcGenererPlanPrep() {
   const liste = window.userProfile?.listeCourses || [];
@@ -567,9 +586,9 @@ function lcGenererPlanPrep() {
   if (!window._lcJourPrep) window._lcJourPrep = joursMenu.length ? LC_JOURS[Math.min.apply(null, joursMenu)] : "Dimanche";
   const jourPrepIdx = LC_JOURS.indexOf(window._lcJourPrep);
 
-  const phasesHTML = PREP_PHASES.map((phase, i) => {
+  const phasesAffichees = PREP_PHASES.filter(p => buckets[p.id].length && !(aMenu && p.id === "finition"));
+  const phasesHTML = phasesAffichees.map((phase, i) => {
     const items = buckets[phase.id];
-    if (!items.length) return "";
     // Déduplication : étapes identiques (même titre + même détail) → 1 ligne, recettes cumulées
     const groupes = new Map();
     items.forEach(({ nom, et }) => {
@@ -704,12 +723,55 @@ function lcGenererPlanPrep() {
       </select>
     </div>` : "";
 
+  // Vue « Chaque soir » (façon livre de batch cooking) — seulement si un menu daté existe
+  let soirHTML = "";
+  if (aMenu) {
+    const nomDe = cle => (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
+    const detail = lcMenuParJourDetail();
+    const joursPresents = Object.keys(detail).map(Number).sort((a, b) => a - b);
+    const estCongele = (cle, idx) => {
+      const c = lcConseilConservation(cle);
+      return (idx - jourPrepIdx > c.frigo) && c.congel !== "non";
+    };
+    const cards = joursPresents.map(idx => {
+      const demain = detail[idx + 1] || [];
+      const aSortir = [...new Set(demain.filter(p => estCongele(p.cle, idx + 1)).map(p => nomDe(p.cle)))];
+      const rappel = aSortir.length ? `<div style="background:rgba(143,184,255,.1);border:1px solid rgba(143,184,255,.3);border-radius:9px;padding:7px 10px;margin-bottom:7px;font-size:11px;color:#9ec1ff">🔔 Ce soir, sors du congélateur pour demain : ${aSortir.map(ech).join(", ")}</div>` : "";
+      const plats = (detail[idx] || []).map(p => {
+        const r = recettes[p.cle]; if (!r) return "";
+        const emo = (typeof getEmoji === "function") ? getEmoji(p.cle) : "🍽️";
+        const crLbl = p.creneau === "midi" ? "midi" : "soir";
+        const fins = Array.isArray(r.etapes) ? r.etapes.filter(et => lcClasserEtape(et) === "finition") : [];
+        const gestes = fins.length
+          ? fins.map(et => `<li>${ech(et.titre)}${et.detail ? ` — <span style="color:#9a97a0">${ech(et.detail)}</span>` : ""}</li>`).join("")
+          : `<li>Réchauffe et sers.</li>`;
+        return `<div style="margin-top:7px">
+          <div style="font-size:13px;color:#fff;font-weight:500">${emo} ${ech(nomDe(p.cle))} <span style="color:#88858f;font-weight:400;font-size:11px">· ${crLbl}</span></div>
+          <ul style="margin:4px 0 0;padding-left:18px;font-size:12px;color:#b3b0b8;line-height:1.5">${gestes}</ul>
+        </div>`;
+      }).join("");
+      return `<div style="background:#1a1620;border:1px solid rgba(255,255,255,.07);border-left:3px solid #7a5cff;border-radius:11px;padding:10px 12px">
+          <div style="font-size:14px;font-weight:600;color:#fff;margin-bottom:2px">${LC_JOURS[idx]}</div>
+          ${rappel}${plats}
+        </div>`;
+    }).join("");
+    if (cards) soirHTML = `<div style="margin:4px 0 16px">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:4px">
+          <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#7a5cff;color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center">🍽️</span>
+          <span style="font-size:15px;font-weight:500;color:#fff;flex:1">Chaque soir</span>
+        </div>
+        <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">Le gros est déjà fait : chaque jour, il ne reste qu'à réchauffer et finir. 😊</div>
+        <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${cards}</div>
+      </div>`;
+  }
+
   zone.innerHTML = `${styleBloc}
     <h3>📋 Ton plan de prep</h3>
     <p class="plan-subtitle" style="margin-top:-4px">Les étapes de tes ${liste.length} recette${liste.length > 1 ? "s" : ""} regroupées par phase — fais chaque phase d'un coup. ⏱ ≈ ${lcFmtDuree(actifMin)} de travail actif <span style="color:#88858f">(les cuissons tournent en parallèle).</span> <span style="color:#88858f">Coche les étapes au fur et à mesure ✓</span></p>
     ${selecteurHTML}
     ${phasesHTML}
-    ${conservationBloc}`;
+    ${conservationBloc}
+    ${soirHTML}`;
 }
 
 // Coche / décoche une étape du plan de prep (persiste comme la liste de courses)
