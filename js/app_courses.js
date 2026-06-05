@@ -213,6 +213,42 @@ window.lcFmtDuree = function (min) {
   return m + " min";
 };
 
+// Temps de travail ACTIF d'une recette (manuel) : on somme les étapes prep + finition
+// (on ignore cuisson & repos, qui sont passifs et tournent en parallèle).
+// Si les étapes n'ont pas de durée exploitable, on retombe sur ~45 % du temps total (plafonné).
+window.lcActiveMinutes = function (r) {
+  if (!r) return 0;
+  if (Array.isArray(r.etapes) && r.etapes.length) {
+    let act = 0, aDesTemps = false;
+    r.etapes.forEach(et => {
+      const ph = (typeof lcClasserEtape === "function") ? lcClasserEtape(et) : "prep";
+      if (ph === "cuisson" || ph === "repos") return; // passif
+      const b = String(et.badge || "");
+      const mh = b.match(/(\d+)\s*h\s*(\d+)?/);
+      const mm = b.match(/(\d+)\s*min/);
+      let mins = 0;
+      if (mh) mins = (parseInt(mh[1]) || 0) * 60 + (parseInt(mh[2] || "0") || 0);
+      else if (mm) mins = parseInt(mm[1]) || 0;
+      if (mins > 0) { act += mins; aDesTemps = true; }
+    });
+    if (aDesTemps) return act;
+  }
+  return Math.min(Math.round(lcPrepMinutes(r.temps) * 0.45), 35);
+};
+
+// Temps actif TOTAL d'une session de batch : 1re recette à plein, les suivantes décotées
+// (mutualisation : on lave/épluche/coupe en commun, le four cuit plusieurs choses à la fois).
+window.lcBatchActif = function (liste) {
+  const actives = (liste || [])
+    .map(({ cle }) => { const r = recettes[cle]; return r ? lcActiveMinutes(r) : 0; })
+    .filter(x => x > 0)
+    .sort((a, b) => b - a);
+  if (!actives.length) return 0;
+  let total = 0;
+  actives.forEach((a, i) => { total += (i === 0 ? a : a * 0.6); });
+  return Math.round(total);
+};
+
 // === Afficher le panier de recettes (zone du haut) ===
 function lcAfficherPanier() {
   const panier = document.getElementById("lc-panier");
@@ -227,11 +263,10 @@ function lcAfficherPanier() {
   }
   if (btnReset) btnReset.style.display = "inline-flex";
 
-  let totalMin = 0;
-  liste.forEach(({ cle }) => { const r = recettes[cle]; if (r) totalMin += lcPrepMinutes(r.temps); });
+  const totalMin = lcBatchActif(liste);
   const totalTxt = lcFmtDuree(totalMin);
 
-  panier.innerHTML = `<h3 class="lc-panier-titre">🍽️ ${liste.length} recette${liste.length > 1 ? "s" : ""} sélectionnée${liste.length > 1 ? "s" : ""}${totalMin > 0 ? ` <span style="font-size:13px;color:#9a97a0;font-weight:400">· ⏱ ≈ ${totalTxt} de prép.</span>` : ""}</h3>
+  panier.innerHTML = `<h3 class="lc-panier-titre">🍽️ ${liste.length} recette${liste.length > 1 ? "s" : ""} sélectionnée${liste.length > 1 ? "s" : ""}${totalMin > 0 ? ` <span style="font-size:13px;color:#9a97a0;font-weight:400">· ⏱ ≈ ${totalTxt} de prépa en batch</span>` : ""}</h3>
     <div class="lc-panier-recettes">${liste.map(({cle, personnes}) => {
       const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
       const r = recettes[cle];
@@ -488,15 +523,14 @@ function lcGenererPlanPrep() {
   if (liste.length === 0) { zone.innerHTML = ""; return; }
 
   const buckets = { prep: [], cuisson: [], finition: [], repos: [] };
-  let totalMin = 0;
   liste.forEach(({ cle }) => {
     const r = recettes[cle];
     if (!r) return;
-    totalMin += lcPrepMinutes(r.temps);
     if (!Array.isArray(r.etapes)) return;
     const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
     r.etapes.forEach(et => { buckets[lcClasserEtape(et)].push({ nom, et }); });
   });
+  const actifMin = lcBatchActif(liste);
 
   const ech = s => String(s || "").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -575,7 +609,7 @@ function lcGenererPlanPrep() {
 
   zone.innerHTML = `${styleBloc}
     <h3>📋 Ton plan de prep</h3>
-    <p class="plan-subtitle" style="margin-top:-4px">Les étapes de tes ${liste.length} recette${liste.length > 1 ? "s" : ""} regroupées par phase — fais chaque phase d'un coup. ⏱ ≈ ${lcFmtDuree(totalMin)} de travail actif. <span style="color:#88858f">Touche une étape pour voir le détail.</span></p>
+    <p class="plan-subtitle" style="margin-top:-4px">Les étapes de tes ${liste.length} recette${liste.length > 1 ? "s" : ""} regroupées par phase — fais chaque phase d'un coup. ⏱ ≈ ${lcFmtDuree(actifMin)} de travail actif <span style="color:#88858f">(les cuissons tournent en parallèle).</span> <span style="color:#88858f">Touche une étape pour voir le détail.</span></p>
     ${phasesHTML}
     ${conservationBloc}`;
 }
