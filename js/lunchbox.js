@@ -177,7 +177,7 @@ function afficherLunchbox(menus, personnes) {
       '<h3 class="plan-jour-titre" style="color:' + couleur + '">' + jour.jour + '</h3>' +
       '<div class="plan-repas-row" style="grid-template-columns:1fr">' +
         '<div class="plan-repas" onclick="ouvrirRecettePlan(\'' + key + '\', ' + personnes + ')">' +
-          '<div class="plan-repas-label">🥡 Lunch <button class="plan-regen-btn" onclick="event.stopPropagation();regenLunchbox(\'' + jour.jour + '\')" title="Remplacer ce plat">🔄</button></div>' +
+          '<div class="plan-repas-label">🥡 Lunch <button class="plan-regen-btn" onclick="event.stopPropagation();regenLunchbox(\'' + jour.jour + '\')" title="Remplacer ce plat">🔄</button><button class="plan-regen-btn" onclick="event.stopPropagation();maChoisir(\'' + jour.jour + '\',\'midi\')" title="Choisir une recette">🔍</button></div>' +
           '<div class="plan-repas-emoji">' + emoji + '</div>' +
           '<div class="plan-repas-nom">' + drap + nom + '</div>' +
           '<div class="plan-repas-note">' + note + '</div>' +
