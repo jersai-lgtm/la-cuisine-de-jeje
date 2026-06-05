@@ -188,6 +188,7 @@ async function lcSauvegarder() {
     await _db.collection("utilisateurs").doc(window.currentUser.uid).set({
       listeCourses: window.userProfile.listeCourses || [],
       listeCoursesCoches: window.userProfile.listeCoursesCoches || [],
+      planPrepCoches: window.userProfile.planPrepCoches || [],
     }, { merge: true });
   } catch (e) { console.warn("Sauvegarde liste courses échouée :", e); }
 }
@@ -515,6 +516,29 @@ function lcConseilConservation(cle) {
   return { frigo: 3, congel: "oui", note: "se congèle bien, idéal pour faire du rab" };
 }
 
+// Jours de la semaine (ordre pour les calculs d'écart prep -> conso)
+const LC_JOURS = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+
+// Mappe chaque recette du menu courant daté à ses jours (index 0=Lundi).
+// Gère semaine simple/complet et lunch box. Le menu thématique est ignoré (pas de jours).
+function lcMenuParJour() {
+  const m = window._derniersMenus;
+  const map = {};
+  if (!m || !Array.isArray(m.semaine)) return map;
+  const add = (cle, idx) => { if (!cle) return; (map[cle] = map[cle] || []); if (!map[cle].includes(idx)) map[cle].push(idx); };
+  m.semaine.forEach(jour => {
+    const idx = LC_JOURS.indexOf(jour.jour);
+    if (idx < 0) return;
+    ["midi", "soir"].forEach(cr => {
+      const slot = jour[cr];
+      if (!slot) return;
+      if (slot.recette) add(slot.recette, idx);                              // simple / lunch box
+      ["entree", "plat", "dessert"].forEach(role => { if (slot[role] && slot[role].recette) add(slot[role].recette, idx); }); // complet
+    });
+  });
+  return map;
+}
+
 // Génère le plan de prep regroupé par phases (batch cooking)
 function lcGenererPlanPrep() {
   const liste = window.userProfile?.listeCourses || [];
@@ -533,8 +557,15 @@ function lcGenererPlanPrep() {
   const actifMin = lcBatchActif(liste);
 
   const ech = s => String(s || "").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const ah = s => ech(s).replace(/"/g, "&quot;");
 
   const norm = s => _prepStrip(s).replace(/\s+/g, " ").trim();
+  const coches = new Set(window.userProfile?.planPrepCoches || []);
+  const menuMap = lcMenuParJour();
+  const aMenu = Object.keys(menuMap).length > 0;
+  const joursMenu = Object.values(menuMap).reduce((a, b) => a.concat(b), []);
+  if (!window._lcJourPrep) window._lcJourPrep = joursMenu.length ? LC_JOURS[Math.min.apply(null, joursMenu)] : "Dimanche";
+  const jourPrepIdx = LC_JOURS.indexOf(window._lcJourPrep);
 
   const phasesHTML = PREP_PHASES.map((phase, i) => {
     const items = buckets[phase.id];
@@ -543,21 +574,25 @@ function lcGenererPlanPrep() {
     const groupes = new Map();
     items.forEach(({ nom, et }) => {
       const key = norm(et.titre) + "||" + norm(et.detail);
-      if (!groupes.has(key)) groupes.set(key, { icone: et.icone || "", titre: et.titre || "", detail: et.detail || "", badge: et.badge || null, recettes: [] });
+      if (!groupes.has(key)) groupes.set(key, { key: key, icone: et.icone || "", titre: et.titre || "", detail: et.detail || "", badge: et.badge || null, recettes: [] });
       const g = groupes.get(key);
       if (!g.recettes.includes(nom)) g.recettes.push(nom);
     });
     const groupesArr = [...groupes.values()];
     const steps = groupesArr.map(g => {
+      const done = coches.has(g.key);
       const chips = g.recettes.map(n => `<span class="prep-rec">${ech(n)}</span>`).join("");
-      return `<div class="prep-step" onclick="this.classList.toggle('prep-open')">
-        <div class="prep-step-head">
-          <span class="prep-chev">▸</span>
-          <span class="prep-step-titre">${ech(g.icone)} ${ech(g.titre)}</span>
-          ${g.badge ? `<span class="prep-tb">${ech(g.badge)}</span>` : ""}
+      return `<div class="prep-step${done ? " prep-done" : ""}">
+        <input type="checkbox" class="prep-check" ${done ? "checked" : ""} onclick="event.stopPropagation();lcTogglePrep(this)" data-k="${ah(g.key)}">
+        <div class="prep-step-body" onclick="this.closest('.prep-step').classList.toggle('prep-open')">
+          <div class="prep-step-head">
+            <span class="prep-chev">▸</span>
+            <span class="prep-step-titre">${ech(g.icone)} ${ech(g.titre)}</span>
+            ${g.badge ? `<span class="prep-tb">${ech(g.badge)}</span>` : ""}
+          </div>
+          <div class="prep-recs">${chips}</div>
+          ${g.detail ? `<div class="prep-step-detail">${ech(g.detail)}</div>` : ""}
         </div>
-        <div class="prep-recs">${chips}</div>
-        ${g.detail ? `<div class="prep-step-detail">${ech(g.detail)}</div>` : ""}
       </div>`;
     }).join("");
     return `<div style="margin-bottom:16px">
@@ -571,25 +606,44 @@ function lcGenererPlanPrep() {
     </div>`;
   }).join("");
 
-  // Conservation — enrichi : niveau de risque + tri (le plus fragile en haut) + portions
+  // Conservation — datée si un menu courant existe (écart prep -> conso), sinon générique
   const consData = liste.map(({ cle, personnes }) => {
     const r = recettes[cle];
     if (!r) return null;
     const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
     const c = lcConseilConservation(cle);
-    let risque = "bas";
-    if (c.congel === "non" && c.frigo <= 2) risque = "haut";
-    else if (c.frigo <= 2 || c.congel !== "oui") risque = "moyen";
-    return { nom, personnes: personnes || null, frigo: c.frigo, congel: c.congel, note: c.note, risque };
+    const jours = (menuMap[cle] || []).slice().sort((a, b) => a - b);
+    let risque, dateInfo = null, joursTxt = "";
+    if (jours.length && jourPrepIdx >= 0) {
+      joursTxt = jours.map(i => LC_JOURS[i]).join(", ");
+      const last = jours[jours.length - 1];
+      let ecart = last - jourPrepIdx; if (ecart < 0) ecart = 0;
+      if (ecart <= c.frigo) {
+        risque = "bas";
+        dateInfo = { type: "frigo", txt: `🟢 Prépare-le le ${window._lcJourPrep} : il tiendra au frigo jusqu'à ${LC_JOURS[last]}.` };
+      } else if (c.congel !== "non") {
+        risque = "moyen";
+        dateInfo = { type: "congel", txt: `🔵 Mangé ${LC_JOURS[last]} (J+${ecart}) : congèle-le le ${window._lcJourPrep}, sors-le au frigo la veille.` };
+      } else {
+        risque = "haut";
+        const dPrep = Math.max(jourPrepIdx, last - c.frigo);
+        dateInfo = { type: "tard", txt: `🔴 Mangé ${LC_JOURS[last]} (J+${ecart}) mais il ne tient que ${c.frigo} j et ne se congèle pas → prépare-le plutôt le ${LC_JOURS[dPrep]}.` };
+      }
+    } else {
+      risque = (c.congel === "non" && c.frigo <= 2) ? "haut" : (c.frigo <= 2 || c.congel !== "oui") ? "moyen" : "bas";
+    }
+    return { nom, personnes: personnes || null, frigo: c.frigo, congel: c.congel, note: c.note, risque, jours, joursTxt, dateInfo };
   }).filter(Boolean);
   const rang = { haut: 0, moyen: 1, bas: 2 };
   consData.sort((a, b) => (rang[a.risque] - rang[b.risque]) || (a.frigo - b.frigo));
 
   const fragiles = consData.filter(x => x.risque === "haut");
   const plur = fragiles.length > 1;
+  const lesle = plur ? "les" : "le";
+  const bannerAdvice = aMenu ? `Prépare-${lesle} au plus tard dans la semaine, ou mange-${lesle} en premier.` : `N'en prépare pas plus que ce que tu mangeras en 1-2 jours.`;
   const alerteHTML = fragiles.length ? `<div style="background:rgba(255,90,90,.1);border:1px solid rgba(255,90,90,.35);border-radius:11px;padding:9px 11px;margin:0 0 9px 33px">
-      <div style="font-size:12px;color:#ff8f8f;font-weight:600;margin-bottom:2px">⚠️ À manger en début de semaine</div>
-      <div style="font-size:11px;color:#d7b3b3">${fragiles.map(x => ech(x.nom)).join(", ")} — se garde${plur ? "nt" : ""} peu et ne se congèle${plur ? "nt" : ""} pas. N'en prépare pas plus que ce que tu mangeras en 1-2 jours.</div>
+      <div style="font-size:12px;color:#ff8f8f;font-weight:600;margin-bottom:2px">⚠️ Attention à ${plur ? "ces plats" : "ce plat"}</div>
+      <div style="font-size:11px;color:#d7b3b3">${fragiles.map(x => ech(x.nom)).join(", ")} — se garde${plur ? "nt" : ""} peu et ne se congèle${plur ? "nt" : ""} pas. ${bannerAdvice}</div>
     </div>` : "";
 
   const consHTML = consData.map(x => {
@@ -598,27 +652,40 @@ function lcGenererPlanPrep() {
     const congTxt = x.congel === "oui" ? "❄️ se congèle bien" : x.congel === "moyen" ? "❄️ congélation possible" : "⛔ ne se congèle pas";
     const congColor = x.congel === "oui" ? "#7fdca8" : x.congel === "moyen" ? "#ffb27a" : "#ff8f8f";
     const portionTxt = x.personnes ? ` · 🍽️ ${x.personnes} pers.` : "";
-    const avert = (x.risque === "haut" && x.personnes && x.personnes >= 4)
-      ? `<div style="font-size:11px;color:#ff8f8f;margin-top:3px">⚠️ ${x.personnes} portions d'un plat qui ne tient que ${x.frigo} j et ne se congèle pas : prévois de le manger vite, ou réduis la quantité pour éviter le gaspillage.</div>` : "";
+    const joursLigne = x.joursTxt ? `<div style="font-size:11px;color:#9a97a0;margin-top:3px">📅 mangé : ${ech(x.joursTxt)}</div>` : "";
+    const conseilColor = x.dateInfo ? (x.dateInfo.type === "tard" ? "#ff8f8f" : x.dateInfo.type === "congel" ? "#8fb8ff" : "#9adcb0") : "#88858f";
+    const conseil = x.dateInfo
+      ? `<div style="font-size:11px;color:${conseilColor};margin-top:3px">${ech(x.dateInfo.txt)}</div>`
+      : (x.note ? `<div style="font-size:11px;color:#88858f;margin-top:2px">${ech(x.note)}</div>` : "");
+    const avert = (!x.dateInfo && x.risque === "haut" && x.personnes && x.personnes >= 4)
+      ? `<div style="font-size:11px;color:#ff8f8f;margin-top:3px">⚠️ ${x.personnes} portions d'un plat qui ne tient que ${x.frigo} j et ne se congèle pas : mange-le vite ou réduis la quantité.</div>` : "";
     return `<div style="background:#1a1620;border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:9px 11px">
         <div style="font-size:13px;color:#fff;font-weight:500;margin-bottom:3px">${pastille} ${ech(x.nom)}<span style="color:#88858f;font-weight:400">${portionTxt}</span></div>
         <div style="font-size:12px;color:#b3b0b8">${frigoTxt} · <span style="color:${congColor}">${congTxt}</span></div>
-        ${x.note ? `<div style="font-size:11px;color:#88858f;margin-top:2px">${ech(x.note)}</div>` : ""}
+        ${joursLigne}
+        ${conseil}
         ${avert}
       </div>`;
   }).join("");
+  const consIntro = aMenu
+    ? `Calculé pour une prép le <strong style="color:#fff">${window._lcJourPrep}</strong> · 🟢 frigo OK · 🔵 à congeler · 🔴 à préparer plus tard.`
+    : `🔴 à manger en premier · 🟠 assez vite · 🟢 se garde bien / se congèle. Congèle ce que tu ne finiras pas à temps. 😊`;
   const conservationBloc = `<div style="margin-bottom:4px">
       <div style="display:flex;align-items:center;gap:9px;margin-bottom:4px">
         <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#3a6ea5;color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center">🥶</span>
         <span style="font-size:15px;font-weight:500;color:#fff;flex:1">Conservation & congélation</span>
       </div>
-      <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">🔴 à manger en premier · 🟠 assez vite · 🟢 se garde bien / se congèle. Congèle les portions que tu ne finiras pas à temps : tu auras du rab. 😊</div>
+      <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">${consIntro}</div>
       ${alerteHTML}
       <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${consHTML}</div>
     </div>`;
 
   const styleBloc = `<style>
-    #lc-plan-prep .prep-step{background:#1a1620;border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:9px 11px;cursor:pointer}
+    #lc-plan-prep .prep-step{background:#1a1620;border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:9px 11px;display:flex;gap:9px;align-items:flex-start}
+    #lc-plan-prep .prep-check{flex:none;width:18px;height:18px;margin:1px 0 0;accent-color:#ff4d88;cursor:pointer}
+    #lc-plan-prep .prep-step-body{flex:1;min-width:0;cursor:pointer}
+    #lc-plan-prep .prep-step.prep-done{opacity:.5}
+    #lc-plan-prep .prep-step.prep-done .prep-step-titre{text-decoration:line-through}
     #lc-plan-prep .prep-step-head{display:flex;align-items:center;gap:7px}
     #lc-plan-prep .prep-chev{font-size:11px;color:#88858f;transition:transform .15s ease;flex:none}
     #lc-plan-prep .prep-step.prep-open .prep-chev{transform:rotate(90deg)}
@@ -630,11 +697,40 @@ function lcGenererPlanPrep() {
     #lc-plan-prep .prep-step.prep-open .prep-step-detail{display:block}
   </style>`;
 
+  const selecteurHTML = aMenu ? `<div style="display:flex;align-items:center;gap:8px;margin:0 0 14px;flex-wrap:wrap">
+      <span style="font-size:13px;color:#b3b0b8">🍳 Je cuisine le :</span>
+      <select onchange="lcSetJourPrep(this.value)" style="background:#15121a;color:#fff;border:1px solid rgba(255,255,255,.18);border-radius:9px;padding:6px 10px;font-size:13px">
+        ${LC_JOURS.map(j => `<option value="${j}"${j === window._lcJourPrep ? " selected" : ""}>${j}</option>`).join("")}
+      </select>
+    </div>` : "";
+
   zone.innerHTML = `${styleBloc}
     <h3>📋 Ton plan de prep</h3>
-    <p class="plan-subtitle" style="margin-top:-4px">Les étapes de tes ${liste.length} recette${liste.length > 1 ? "s" : ""} regroupées par phase — fais chaque phase d'un coup. ⏱ ≈ ${lcFmtDuree(actifMin)} de travail actif <span style="color:#88858f">(les cuissons tournent en parallèle).</span> <span style="color:#88858f">Touche une étape pour voir le détail.</span></p>
+    <p class="plan-subtitle" style="margin-top:-4px">Les étapes de tes ${liste.length} recette${liste.length > 1 ? "s" : ""} regroupées par phase — fais chaque phase d'un coup. ⏱ ≈ ${lcFmtDuree(actifMin)} de travail actif <span style="color:#88858f">(les cuissons tournent en parallèle).</span> <span style="color:#88858f">Coche les étapes au fur et à mesure ✓</span></p>
+    ${selecteurHTML}
     ${phasesHTML}
     ${conservationBloc}`;
+}
+
+// Coche / décoche une étape du plan de prep (persiste comme la liste de courses)
+function lcTogglePrep(cb) {
+  if (!window.userProfile) return;
+  if (!window.userProfile.planPrepCoches) window.userProfile.planPrepCoches = [];
+  const k = cb.dataset.k || "";
+  const step = cb.closest(".prep-step");
+  if (cb.checked) {
+    if (!window.userProfile.planPrepCoches.includes(k)) window.userProfile.planPrepCoches.push(k);
+  } else {
+    window.userProfile.planPrepCoches = window.userProfile.planPrepCoches.filter(x => x !== k);
+  }
+  if (step) step.classList.toggle("prep-done", cb.checked);
+  if (typeof lcSauvegarder === "function") lcSauvegarder();
+}
+
+// Change le jour de prep et recalcule la conservation datée
+function lcSetJourPrep(j) {
+  window._lcJourPrep = j;
+  if (typeof lcGenererPlanPrep === "function") lcGenererPlanPrep();
 }
 
 function lcToggleItem(label, checkbox) {
