@@ -1454,7 +1454,7 @@ Object.assign(recettes, {
     cat: "soupes", pays: "france",
     base: 4,
     temps: "1 h",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🦞",
     description: "Un velouté de fête, riche et parfumé, préparé à partir de carcasses de homard, relevé de cognac et lié à la crème.",
     tableauBisquehomard: [

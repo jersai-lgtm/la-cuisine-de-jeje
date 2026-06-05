@@ -949,7 +949,7 @@ oeufmayo: {
     cat: "entrees", pays: "france",
     base: 6,
     temps: "1 h + repos",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🍄",
     description: "Une terrine maison parfumée aux champignons, idéale en entrée avec des cornichons et du pain grillé.",
     tableauTerrineforestiere: [

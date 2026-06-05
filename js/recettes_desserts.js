@@ -2602,7 +2602,7 @@ Object.assign(recettes, {
     cat: "desserts", pays: "france",
     base: 6,
     temps: "2 h",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🧈",
     description: "Le gâteau breton ultra-gourmand : une pâte feuilletée au beurre demi-sel et au sucre qui caramélise à la cuisson. Croustillant dessus, fondant dedans.",
     tableauKouignamann: [
@@ -2675,7 +2675,7 @@ Object.assign(recettes, {
     cat: "desserts", pays: "france",
     base: 6,
     temps: "40 min",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🌰",
     description: "Le dessert d'automne raffiné : une meringue croquante, une généreuse crème de marrons en vermicelles et un nuage de chantilly.",
     tableauMontblanc: [
@@ -2712,7 +2712,7 @@ Object.assign(recettes, {
     cat: "desserts", pays: "france",
     base: 4,
     temps: "30 min",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🥞",
     description: "Le grand classique de la gastronomie française : des crêpes fines nappées d'un beurre d'orange caramélisé, flambées à table.",
     tableauCrepessuzette: [
@@ -2748,7 +2748,7 @@ Object.assign(recettes, {
     cat: "desserts", pays: "france",
     base: 8,
     temps: "1 h + repos",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🍮",
     description: "La spécialité de Saint-Tropez : une brioche moelleuse au sucre perlé, fourrée d'une crème mousseline légère et parfumée.",
     tableauTropezienne: [
@@ -2785,7 +2785,7 @@ Object.assign(recettes, {
     cat: "desserts", pays: "france",
     base: 4,
     temps: "1 h 30",
-    niveau: "⭐ Difficile",
+    niveau: "⭐⭐⭐ Difficile",
     emoji: "🍓",
     description: "Le gâteau star du printemps : génoise imbibée, crème mousseline et fraises bien rangées contre le cercle.",
     tableauFraisier: [
@@ -2859,7 +2859,7 @@ Object.assign(recettes, {
     cat: "desserts", pays: "france",
     base: 4,
     temps: "1 h 30",
-    niveau: "⭐ Difficile",
+    niveau: "⭐⭐⭐ Difficile",
     emoji: "🍰",
     description: "La version framboise du fraisier : génoise moelleuse, crème mousseline et framboises acidulées rangées contre le cercle.",
     tableauFramboisier: [

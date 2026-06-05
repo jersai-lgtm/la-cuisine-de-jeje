@@ -8237,7 +8237,7 @@ Object.assign(recettes, {
     cat: "plats", pays: "france",
     base: 4,
     temps: "2 h 30",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🥕",
     description: "Un grand classique de la cuisine familiale : du bœuf fondant mijoté longuement avec des carottes, du vin rouge et un bouquet garni.",
     tableauBoeufcarottes: [
@@ -8345,7 +8345,7 @@ Object.assign(recettes, {
     cat: "plats", pays: "russie",
     base: 4,
     temps: "40 min",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🥩",
     description: "Émincé de bœuf et champignons dans une sauce crémeuse à la moutarde et au paprika. Un grand classique russe servi avec du riz ou des pâtes.",
     tableauBoeufstroganoff: [
@@ -8417,7 +8417,7 @@ Object.assign(recettes, {
     cat: "plats", pays: "france",
     base: 4,
     temps: "1 h 30",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🥖",
     description: "La spécialité lyonnaise : un saucisson à cuire enveloppé dans une pâte à brioche dorée et moelleuse, servi tiède en tranches.",
     tableauSaucissonbrioche: [
@@ -8490,7 +8490,7 @@ Object.assign(recettes, {
     cat: "plats", pays: "italie",
     base: 4,
     temps: "1 h",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🍝",
     description: "Des tubes de pâte garnis de bœuf et ricotta aux épinards, nappés de sauce tomate et gratinés. Un grand classique italien généreux.",
     tableauCannelloni: [
@@ -8670,7 +8670,7 @@ Object.assign(recettes, {
     cat: "plats", pays: "france",
     base: 4,
     temps: "1 h 15",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🍗",
     description: "La spécialité alsacienne : du poulet mijoté dans du vin blanc Riesling avec des champignons et de la crème. Élégant, parfumé et réconfortant.",
     tableauCoqauriesling: [
@@ -8743,7 +8743,7 @@ Object.assign(recettes, {
     cat: "plats", pays: "france",
     base: 4,
     temps: "1 h",
-    niveau: "⭐ Moyen",
+    niveau: "⭐⭐ Moyen",
     emoji: "🐰",
     description: "Un grand classique français : lapin doré puis mijoté dans une sauce crémeuse à la moutarde et au vin blanc.",
     tableauLapinmoutarde: [
