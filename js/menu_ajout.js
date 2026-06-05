@@ -35,12 +35,26 @@ function injecterBoutonMenu(key) {
   setTimeout(function () {
     const zone = document.getElementById("modal-resultat");
     if (!zone || document.getElementById("ma-btn-fiche")) return;
+    // Bouton repris du MÊME style que "Ajouter aux courses" (couleurs de l'appli)
     const btn = document.createElement("button");
     btn.id = "ma-btn-fiche";
-    btn.textContent = "📅 Ajouter à un menu";
-    btn.style.cssText = "display:flex;align-items:center;justify-content:center;gap:7px;width:100%;margin:0 0 14px;padding:11px;border:none;border-radius:12px;background:#ff4d88;color:#fff;font-size:14px;font-weight:600;cursor:pointer";
+    btn.className = "btn-courses-recette";
+    btn.innerHTML = "📅 Ajouter à un menu";
     btn.onclick = function () { ouvrirAjoutMenu(key); };
-    zone.insertBefore(btn, zone.firstChild);
+    const coursesBtn = zone.querySelector(".btn-courses-recette");
+    if (coursesBtn && coursesBtn.parentNode) {
+      // Les deux boutons côte à côte (50/50), à l'emplacement du bouton courses
+      const row = document.createElement("div");
+      row.style.cssText = "display:flex;gap:10px;align-items:stretch;margin:14px 0";
+      coursesBtn.parentNode.insertBefore(row, coursesBtn);
+      row.appendChild(coursesBtn);
+      row.appendChild(btn);
+      coursesBtn.style.flex = "1"; coursesBtn.style.margin = "0";
+      btn.style.flex = "1"; btn.style.margin = "0";
+    } else {
+      btn.style.width = "100%";
+      zone.appendChild(btn);
+    }
   }, 0);
 }
 
