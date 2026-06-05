@@ -15,19 +15,34 @@ function maPersonnes() {
 }
 
 // Récupère le menu semaine courant (format simple) ou en crée un vide.
-// Renvoie null si un menu "complet" (Entrée/Plat/Dessert) est actif (géré en tranche 2).
-function maMenuCourant() {
+function maEnsureDays(m, lunchbox) {
+  const noms = m.semaine.map(j => j.jour);
+  MA_JOURS.forEach(j => { if (!noms.includes(j)) m.semaine.push(lunchbox ? { jour: j, midi: null } : { jour: j, midi: null, soir: null }); });
+  m.semaine.sort((a, b) => MA_JOURS.indexOf(a.jour) - MA_JOURS.indexOf(b.jour));
+}
+// Récupère (ou crée) le menu adapté à la destination : semaine (simple/complet) ou lunch box.
+function maGetMenu(dest) {
   let m = window._derniersMenus;
-  if (m && m.mode === "lunchbox") m = null;              // lunch box : tranche 2
-  if (m && window._formatRepas === "complet") return "complet"; // tranche 2
-  if (!m || !Array.isArray(m.semaine)) {
-    m = { semaine: MA_JOURS.map(j => ({ jour: j, midi: null, soir: null })) };
-  } else {
-    const noms = m.semaine.map(j => j.jour);
-    MA_JOURS.forEach(j => { if (!noms.includes(j)) m.semaine.push({ jour: j, midi: null, soir: null }); });
-    m.semaine.sort((a, b) => MA_JOURS.indexOf(a.jour) - MA_JOURS.indexOf(b.jour));
+  if (dest === "lunchbox") {
+    if (!m || m.mode !== "lunchbox" || !Array.isArray(m.semaine)) m = { mode: "lunchbox", semaine: MA_JOURS.map(j => ({ jour: j, midi: null })) };
+    else maEnsureDays(m, true);
+    return m;
   }
+  if (!m || m.mode === "lunchbox" || !Array.isArray(m.semaine)) m = { semaine: MA_JOURS.map(j => ({ jour: j, midi: null, soir: null })) };
+  else maEnsureDays(m, false);
   return m;
+}
+// Rôle par défaut selon la catégorie de la recette
+function maRoleParCat(key) {
+  const c = (recettes[key] && recettes[key].cat) || "";
+  if (c === "desserts") return "dessert";
+  if (c === "entrees" || c === "soupes" || c === "salades" || c === "aperitifs") return "entree";
+  return "plat";
+}
+function maConfirmRemp(jour, lbl, actuelKey, newKey) {
+  const a = (typeof getNomRecette === "function") ? getNomRecette(actuelKey) : actuelKey;
+  const n = (typeof getNomRecette === "function") ? getNomRecette(newKey) : newKey;
+  return confirm(jour + " " + lbl + " contient déjà « " + a + " ».\n\nLe remplacer par « " + n + " » ?");
 }
 
 // Bouton injecté en haut de la fiche recette
@@ -73,7 +88,11 @@ function maModalEl() {
 
 function ouvrirAjoutMenu(key) {
   const today = (new Date().getDay() + 6) % 7; // Lundi = 0
-  window._maSel = { key: key, jour: today, creneau: "midi" };
+  const m = window._derniersMenus;
+  let dest = "simple";
+  if (m && m.mode === "lunchbox") dest = "lunchbox";
+  else if (m && window._formatRepas === "complet") dest = "complet";
+  window._maSel = { key: key, jour: today, creneau: "midi", dest: dest, role: maRoleParCat(key) };
   maModalEl();          // crée d'abord le panneau (#ma-sheet) …
   maRenderSheet();      // … puis on le remplit
   maModalEl().style.display = "flex";
@@ -86,58 +105,113 @@ function fermerAjoutMenu() {
 
 function maSelJour(i) { window._maSel.jour = i; maRenderSheet(); }
 function maSelCreneau(c) { window._maSel.creneau = c; maRenderSheet(); }
+function maSelDest(d) { window._maSel.dest = d; maRenderSheet(); }
+function maSelRole(r) { window._maSel.role = r; maRenderSheet(); }
 
 function maRenderSheet() {
   const s = window._maSel;
   const nom = (typeof getNomRecette === "function") ? getNomRecette(s.key) : s.key;
+  const segBtn = function (active, onclick, label) {
+    return '<span onclick="' + onclick + '" style="flex:1;text-align:center;padding:8px 0;border-radius:10px;cursor:pointer;font-size:13px;'
+      + (active ? 'background:#ff4d88;color:#fff;font-weight:600' : 'color:#b3b0b8;border:1px solid rgba(255,255,255,.12)') + '">' + label + '</span>';
+  };
+  const dests = segBtn(s.dest === "simple", "maSelDest('simple')", "Semaine")
+    + segBtn(s.dest === "complet", "maSelDest('complet')", "Repas complet")
+    + segBtn(s.dest === "lunchbox", "maSelDest('lunchbox')", "Lunch box");
   const chips = MA_JOURS.map(function (j, i) {
     const on = i === s.jour;
     return '<span onclick="maSelJour(' + i + ')" style="flex:1;text-align:center;padding:8px 0;border-radius:10px;cursor:pointer;font-size:13px;'
       + (on ? 'background:#ff4d88;color:#fff;font-weight:600' : 'color:#b3b0b8;border:1px solid rgba(255,255,255,.12)') + '">' + j.slice(0, 3) + '</span>';
   }).join("");
-  const seg = function (c, lbl) {
-    const on = s.creneau === c;
-    return '<span onclick="maSelCreneau(\'' + c + '\')" style="flex:1;text-align:center;padding:9px 0;border-radius:10px;cursor:pointer;font-size:14px;'
-      + (on ? 'background:#ff4d88;color:#fff;font-weight:600' : 'color:#b3b0b8;border:1px solid rgba(255,255,255,.12)') + '">' + lbl + '</span>';
-  };
+  let creneauBlock = "";
+  if (s.dest !== "lunchbox") {
+    creneauBlock = '<p style="margin:0 0 7px;color:#b3b0b8;font-size:12px;font-weight:500">Quel repas ?</p>'
+      + '<div style="display:flex;gap:8px;margin-bottom:16px">'
+      + segBtn(s.creneau === "midi", "maSelCreneau('midi')", "☀️ Midi")
+      + segBtn(s.creneau === "soir", "maSelCreneau('soir')", "🌙 Soir") + '</div>';
+  }
+  let roleBlock = "";
+  if (s.dest === "complet") {
+    roleBlock = '<p style="margin:0 0 7px;color:#b3b0b8;font-size:12px;font-weight:500">Quel rôle ?</p>'
+      + '<div style="display:flex;gap:8px;margin-bottom:16px">'
+      + segBtn(s.role === "entree", "maSelRole('entree')", "🥗 Entrée")
+      + segBtn(s.role === "plat", "maSelRole('plat')", "🍽️ Plat")
+      + segBtn(s.role === "dessert", "maSelRole('dessert')", "🍰 Dessert") + '</div>';
+  }
+  let lbl = "Ajouter au " + MA_JOURS[s.jour];
+  lbl += s.dest === "lunchbox" ? " (lunch box)" : " " + (s.creneau === "midi" ? "midi" : "soir");
+  if (s.dest === "complet") lbl += " — " + (s.role === "entree" ? "entrée" : s.role);
   document.getElementById("ma-sheet").innerHTML =
     '<div style="width:40px;height:4px;border-radius:99px;background:rgba(255,255,255,.2);margin:0 auto 14px"></div>'
     + '<p style="margin:0 0 2px;color:#fff;font-size:16px;font-weight:600">Ajouter à un menu</p>'
-    + '<p style="margin:0 0 16px;color:#9a97a0;font-size:13px">« ' + nom +' » — menu de la semaine</p>'
+    + '<p style="margin:0 0 16px;color:#9a97a0;font-size:13px">« ' + nom + ' »</p>'
+    + '<p style="margin:0 0 7px;color:#b3b0b8;font-size:12px;font-weight:500">Où ?</p>'
+    + '<div style="display:flex;gap:6px;margin-bottom:16px">' + dests + '</div>'
     + '<p style="margin:0 0 7px;color:#b3b0b8;font-size:12px;font-weight:500">Quel jour ?</p>'
     + '<div style="display:flex;gap:5px;margin-bottom:16px">' + chips + '</div>'
-    + '<p style="margin:0 0 7px;color:#b3b0b8;font-size:12px;font-weight:500">Quel repas ?</p>'
-    + '<div style="display:flex;gap:8px;margin-bottom:20px">' + seg("midi", "☀️ Midi") + seg("soir", "🌙 Soir") + '</div>'
-    + '<button onclick="maValider()" style="width:100%;padding:12px;border:none;border-radius:12px;background:#ff4d88;color:#fff;font-size:15px;font-weight:600;cursor:pointer">Ajouter au ' + MA_JOURS[s.jour] + ' ' + (s.creneau === "midi" ? "midi" : "soir") + '</button>'
-    + '<button onclick="fermerAjoutMenu()" style="width:100%;margin-top:8px;padding:10px;border:none;border-radius:12px;background:transparent;color:#9a97a0;font-size:13px;cursor:pointer">Annuler</button>'
-    + '<p style="margin:14px 0 0;color:#6e6b75;font-size:11px;text-align:center">Repas complet (entrée/plat/dessert) &amp; lunch box : bientôt.</p>';
+    + creneauBlock + roleBlock
+    + '<button onclick="maValider()" style="width:100%;padding:12px;border:none;border-radius:12px;background:#ff4d88;color:#fff;font-size:15px;font-weight:600;cursor:pointer">' + lbl + '</button>'
+    + '<button onclick="fermerAjoutMenu()" style="width:100%;margin-top:8px;padding:10px;border:none;border-radius:12px;background:transparent;color:#9a97a0;font-size:13px;cursor:pointer">Annuler</button>';
 }
 
 function maValider() {
   const s = window._maSel;
-  const m = maMenuCourant();
-  if (m === "complet") {
-    alert("Ton menu actuel est au format Entrée / Plat / Dessert.\nL'ajout direct dans ce format arrive très bientôt (prochaine tranche).");
-    return;
-  }
-  const jour = m.semaine.find(function (x) { return x.jour === MA_JOURS[s.jour]; });
-  const actuel = jour[s.creneau] && (jour[s.creneau].recette || (typeof jour[s.creneau] === "string" ? jour[s.creneau] : null));
-  if (actuel) {
-    const nomA = (typeof getNomRecette === "function") ? getNomRecette(actuel) : actuel;
-    const nomN = (typeof getNomRecette === "function") ? getNomRecette(s.key) : s.key;
-    if (!confirm(MA_JOURS[s.jour] + " " + (s.creneau === "midi" ? "midi" : "soir") + " contient déjà « " + nomA + " ».\n\nLe remplacer par « " + nomN + " » ?")) return;
-  }
-  jour[s.creneau] = { recette: s.key, note: "" };
-
   const personnes = maPersonnes();
+  const jourNom = MA_JOURS[s.jour];
+  const cur = window._derniersMenus;
+  const curType = (cur && cur.mode === "lunchbox") ? "lunchbox" : (cur && cur.semaine ? "semaine" : null);
+  const newType = s.dest === "lunchbox" ? "lunchbox" : "semaine";
+
+  // Avertir si on bascule entre semaine <-> lunch box avec du contenu existant
+  if (curType && newType !== curType) {
+    const rempli = (cur.semaine || []).some(function (j) {
+      return (j.midi && (j.midi.recette || j.midi.plat || j.midi.entree || j.midi.dessert)) || (j.soir && (j.soir.recette || j.soir.plat));
+    });
+    if (rempli && !confirm("Ton menu actuel (" + (curType === "lunchbox" ? "lunch box" : "semaine") + ") sera remplacé par un menu " + (newType === "lunchbox" ? "lunch box" : "semaine") + ".\n\nContinuer ?")) return;
+  }
+
+  const m = maGetMenu(s.dest);
+  const jour = m.semaine.find(function (x) { return x.jour === jourNom; });
+
+  if (s.dest === "lunchbox") {
+    if (jour.midi && jour.midi.recette && !maConfirmRemp(jourNom, "(lunch box)", jour.midi.recette, s.key)) return;
+    jour.midi = { recette: s.key, note: "" };
+    window._lunchboxActif = true; window._planMode = "lunchbox";
+  } else if (s.dest === "simple") {
+    if (window._formatRepas === "complet" && curType === "semaine") {
+      alert("Ton menu de la semaine est au format Entrée / Plat / Dessert.\nUtilise « Repas complet », ou régénère un menu simple depuis le planificateur.");
+      return;
+    }
+    const actuel = jour[s.creneau] && jour[s.creneau].recette;
+    if (actuel && !maConfirmRemp(jourNom, s.creneau === "midi" ? "midi" : "soir", actuel, s.key)) return;
+    jour[s.creneau] = { recette: s.key, note: "" };
+    window._formatRepas = "simple"; window._lunchboxActif = false; window._planMode = "semaine";
+  } else { // complet
+    // Convertir tout le menu simple -> complet si nécessaire (le plat simple devient « Plat »)
+    if (window._formatRepas !== "complet") {
+      m.semaine.forEach(function (j) {
+        ["midi", "soir"].forEach(function (cr) {
+          if (j[cr] && j[cr].recette && !j[cr].plat) j[cr] = { plat: { recette: j[cr].recette, note: "" } };
+        });
+      });
+    }
+    if (!jour[s.creneau] || jour[s.creneau].recette) jour[s.creneau] = {};
+    const slot = jour[s.creneau];
+    const actuel = slot[s.role] && slot[s.role].recette;
+    if (actuel && !maConfirmRemp(jourNom, (s.creneau === "midi" ? "midi" : "soir") + " " + (s.role === "entree" ? "entrée" : s.role), actuel, s.key)) return;
+    slot[s.role] = { recette: s.key, note: "" };
+    window._formatRepas = "complet"; window._lunchboxActif = false; window._planMode = "semaine";
+  }
+
   window._derniersMenus = m;
   window._dernierMenuGenere = m;
-  if (window._formatRepas === "complet") window._formatRepas = "simple";
   if (typeof sauvegarderMenus === "function") sauvegarderMenus(m, personnes, m.semaine);
   if (typeof window.reafficherMenuCourant === "function") window.reafficherMenuCourant(m, personnes);
 
   fermerAjoutMenu();
-  maToast("Ajouté au " + MA_JOURS[s.jour] + " " + (s.creneau === "midi" ? "midi" : "soir") + " ✅");
+  let suff = s.dest === "lunchbox" ? " (lunch box)" : " " + (s.creneau === "midi" ? "midi" : "soir");
+  if (s.dest === "complet") suff += " — " + (s.role === "entree" ? "entrée" : s.role);
+  maToast("Ajouté au " + jourNom + suff + " ✅");
 }
 
 function maToast(msg) {
