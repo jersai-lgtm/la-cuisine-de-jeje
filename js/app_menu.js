@@ -292,12 +292,20 @@ function afficherMenuFestif(menu, personnes) {
     const div = document.createElement("div");
     div.className = "plan-jour";
 
+    const catL = (item.categorie || "").toLowerCase();
+    const roleFestif = (catL.includes("apéritif") || catL.includes("aperitif")) ? "aperitif"
+      : (catL.includes("apéro") || catL.includes("apero")) ? "apero"
+      : (catL.includes("entrée") || catL.includes("entree")) ? "entree"
+      : catL.includes("plat") ? "plat"
+      : catL.includes("dessert") ? "dessert" : "plat";
+    const chBtn = `<button class="plan-regen-btn" onclick="event.stopPropagation();maChoisirFestif(${idx},'${roleFestif}')" title="Choisir une recette">🔍</button>`;
+
     // Sécurité : aucune recette compatible avec les filtres → message clair, jamais un plat à risque
     if (!item.recette) {
       div.innerHTML = `
       <div class="plan-repas-row" style="grid-template-columns:1fr">
         <div class="plan-repas" style="border-left:3px solid #ff9900;background:rgba(255,153,0,.08);text-align:left">
-          <div class="plan-repas-label">${item.categorie}</div>
+          <div class="plan-repas-label">${item.categorie} ${chBtn}</div>
           <div class="plan-repas-nom" style="font-size:15px">Aucune recette compatible</div>
           <div class="plan-repas-note">${item.note}</div>
         </div>
@@ -332,7 +340,7 @@ function afficherMenuFestif(menu, personnes) {
         <div class="plan-repas" onclick="ouvrirRecettePlan('${item.recette}', ${personnes})" style="${styleBloc};text-align:left;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
           <div style="font-size:32px">${getEmoji(item.recette)}</div>
           <div style="flex:1;min-width:0">
-            <div class="plan-repas-label">${item.categorie} ${badge}${btn}</div>
+            <div class="plan-repas-label">${item.categorie} ${badge}${btn}${chBtn}</div>
             <div class="plan-repas-nom" style="font-size:16px">${typeof drapeau === "function" ? drapeau(recettes[item.recette]?.pays, 14) + " " : ""}${getNomRecette(item.recette)}</div>
             <div class="plan-repas-note">${item.note}</div>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(item.recette, "inline") : ""}

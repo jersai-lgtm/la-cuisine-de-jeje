@@ -281,20 +281,32 @@ function maFiltreRecettes(role) {
   });
 }
 
-function maChoisir(jour, creneau, role) {
-  window._maCible = { jour: jour, creneau: creneau, role: role || null };
-  maModalEl();
-  const roleLbl = role === "entree" ? "entrée" : role === "plat" ? "plat" : role === "dessert" ? "dessert"
+function maRoleLbl(role, creneau) {
+  return role === "entree" ? "entrée" : role === "plat" ? "plat" : role === "dessert" ? "dessert"
     : role === "apero" ? "apéro" : role === "aperitif" ? "apéritif" : (creneau === "midi" ? "midi" : "soir");
+}
+
+function maOuvrirRecherche(titre) {
+  maModalEl();
   document.getElementById("ma-sheet").innerHTML =
     '<div style="width:40px;height:4px;border-radius:99px;background:rgba(255,255,255,.2);margin:0 auto 14px"></div>'
     + '<p style="margin:0 0 2px;color:#fff;font-size:16px;font-weight:600">Choisir une recette</p>'
-    + '<p style="margin:0 0 14px;color:#9a97a0;font-size:13px">' + jour + ' — ' + roleLbl + '</p>'
+    + '<p style="margin:0 0 14px;color:#9a97a0;font-size:13px">' + titre + '</p>'
     + '<input id="ma-cible-srch" type="text" placeholder="Rechercher…" oninput="maRechercheCible(this.value)" style="width:100%;box-sizing:border-box;padding:11px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:#15121a;color:#fff;font-size:14px" />'
     + '<div id="ma-cible-res" style="margin-top:8px;max-height:46vh;overflow:auto"></div>'
     + '<button onclick="fermerAjoutMenu()" style="width:100%;margin-top:10px;padding:10px;border:none;border-radius:12px;background:transparent;color:#9a97a0;font-size:13px;cursor:pointer">Annuler</button>';
   maModalEl().style.display = "flex";
   maRechercheCible("");
+}
+
+function maChoisir(jour, creneau, role) {
+  window._maCible = { jour: jour, creneau: creneau, role: role || null };
+  maOuvrirRecherche(jour + " — " + maRoleLbl(role, creneau));
+}
+
+function maChoisirFestif(idx, role) {
+  window._maCible = { festif: true, idx: idx, role: role || null };
+  maOuvrirRecherche("Menu thématique — " + maRoleLbl(role, null));
 }
 
 function maRechercheCible(q) {
@@ -316,6 +328,7 @@ function maRechercheCible(q) {
 
 function maPlacer(key) {
   const c = window._maCible;
+  if (c && c.festif) { maPlacerFestif(key); return; }
   const m = window._derniersMenus;
   if (!c || !m || !Array.isArray(m.semaine)) { fermerAjoutMenu(); return; }
   const jour = m.semaine.find(function (x) { return x.jour === c.jour; });
@@ -330,6 +343,28 @@ function maPlacer(key) {
   window._derniersMenus = m; window._dernierMenuGenere = m;
   if (typeof sauvegarderMenus === "function") sauvegarderMenus(m, personnes, m.semaine);
   if (typeof window.reafficherMenuCourant === "function") window.reafficherMenuCourant(m, personnes);
+  fermerAjoutMenu();
+  maToast("Recette placée ✅");
+}
+
+// Placement d'une recette choisie dans un emplacement du MENU THÉMATIQUE (festif)
+function maPlacerFestif(key) {
+  const c = window._maCible;
+  const m = (typeof menuFestifActuel !== "undefined" && menuFestifActuel) ? menuFestifActuel : window._dernierMenuGenere;
+  if (!c || !m || !Array.isArray(m.menu) || !m.menu[c.idx]) { fermerAjoutMenu(); return; }
+  const notesMap = {
+    apero: "Pour bien commencer la soirée ! 🥂",
+    aperitif: "À picorer avant de passer à table 🥨",
+    entree: "Le parfait début de repas ✨",
+    plat: "Le plat star de la soirée ! 🌟",
+    dessert: "Une touche sucrée pour finir 🍰"
+  };
+  m.menu[c.idx].recette = key;
+  if (notesMap[c.role]) m.menu[c.idx].note = notesMap[c.role];
+  const personnes = m.personnes || maPersonnes();
+  if (typeof menuFestifActuel !== "undefined") menuFestifActuel = m;
+  window._dernierMenuGenere = m;
+  if (typeof afficherMenuFestif === "function") afficherMenuFestif(m, personnes);
   fermerAjoutMenu();
   maToast("Recette placée ✅");
 }
