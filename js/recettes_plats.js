@@ -5971,11 +5971,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔨", titre: "Aplatir", detail: "Aplatir l'escalope (veau ou porc) entre deux films pour qu'elle soit fine.", badge: null },
-      { icone: "🍞", titre: "Paner", detail: "Passer dans farine, œuf battu puis chapelure en pressant bien.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire dans un beurre/huile bien chaud jusqu'à doré des deux côtés.", badge: "⏱ 6 min" },
+      { icone: "🔨", titre: "Aplatir", detail: "Aplatir les escalopes entre deux films jusqu'à une finesse régulière.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler et poivrer les deux faces.", badge: null },
+      { icone: "🍽️", titre: "Préparer la panure", detail: "Disposer trois assiettes : farine, œuf battu, chapelure.", badge: null },
+      { icone: "🥚", titre: "Paner", detail: "Passer chaque escalope dans la farine, puis l'œuf, puis la chapelure.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Frire dans un bain de beurre et d'huile chaud jusqu'à doré.", badge: "⏱ 4 min" },
       { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur papier absorbant.", badge: null },
-      { icone: "🍋", titre: "Service", detail: "Servir avec un quartier de citron et une salade de pommes de terre.", badge: null }
+      { icone: "🍋", titre: "Service", detail: "Servir avec un quartier de citron. ASTUCE CHEF : secouez la poêle pendant la friture pour que le gras nappe l'escalope et la rende ondulée, comme le vrai Wiener Schnitzel.", badge: null }
     ]
   },
   sauerbraten: {
@@ -6005,11 +6007,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍷", titre: "Mariner", detail: "Mariner le bœuf plusieurs jours au frais dans vinaigre + eau, oignon, carotte, laurier, clou de girofle, baies de genièvre.", badge: "⏱ 2-3 j" },
-      { icone: "🔥", titre: "Saisir", detail: "Égoutter (garder la marinade) et saisir la viande de tous côtés.", badge: "⏱ 8 min" },
-      { icone: "⏳", titre: "Braiser", detail: "Mouiller avec la marinade filtrée, couvrir et braiser longuement à feu doux.", badge: "⏱ 2 h" },
-      { icone: "🍯", titre: "Sauce", detail: "Lier la sauce avec du pain d'épices émietté (épaissit et adoucit).", badge: null },
-      { icone: "🍽️", titre: "Service", detail: "Trancher et napper. Servir avec des Knödel ou du chou rouge.", badge: null }
+      { icone: "🍷", titre: "Mariner", detail: "Mariner le bœuf plusieurs jours dans vinaigre, vin, oignon et épices.", badge: "⏱ 3 j" },
+      { icone: "🧻", titre: "Sécher", detail: "Égoutter et sécher la viande, en conservant la marinade.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisir le bœuf sur toutes les faces.", badge: null },
+      { icone: "⏳", titre: "Braiser", detail: "Ajouter carotte, oignon et la marinade filtrée, puis braiser longuement.", badge: "⏱ 2 h" },
+      { icone: "🍪", titre: "Sauce", detail: "Lier la sauce avec le pain d'épices émietté.", badge: null },
+      { icone: "🥄", titre: "Filtrer", detail: "Mixer ou filtrer la sauce et rectifier l'aigre-doux.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir avec chou rouge et knödel. ASTUCE CHEF : le pain d'épices épaissit ET parfume la sauce d'un aigre-doux unique, c'est la signature du Sauerbraten.", badge: null }
     ]
   },
   doner: {
@@ -6039,11 +6043,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Mariner", detail: "Émincer la viande (agneau/poulet) et mariner avec yaourt, ail, cumin, paprika, origan.", badge: "⏱ 20 min" },
-      { icone: "🔥", titre: "Griller", detail: "Griller la viande à feu vif jusqu'à caramélisation.", badge: "⏱ 8 min" },
-      { icone: "🥒", titre: "Crudités", detail: "Préparer tomate, oignon, salade et une sauce yaourt-ail.", badge: null },
-      { icone: "🫓", titre: "Garnir", detail: "Réchauffer le pita, garnir de viande, crudités et sauce.", badge: null },
-      { icone: "🍟", titre: "Service", detail: "Servir aussitôt, éventuellement avec des frites.", badge: null }
+      { icone: "🌿", titre: "Mariner", detail: "Mariner l'agneau émincé avec épices, ail et yaourt.", badge: "⏱ 1 h" },
+      { icone: "🔥", titre: "Griller", detail: "Griller l'agneau à feu vif jusqu'à belle coloration.", badge: "⏱ 8 min" },
+      { icone: "🥬", titre: "Crudités", detail: "Émincer la tomate, l'oignon et la salade.", badge: null },
+      { icone: "🥛", titre: "Sauce", detail: "Préparer une sauce au yaourt à l'ail.", badge: null },
+      { icone: "🫓", titre: "Pain", detail: "Tiédir et ouvrir le pain pita.", badge: null },
+      { icone: "🥙", titre: "Garnir", detail: "Garnir d'agneau, de crudités et de sauce.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir aussitôt. ASTUCE CHEF : le yaourt dans la marinade attendrit l'agneau et le garde bien moelleux à la cuisson.", badge: null }
     ]
   },
   kofteturc: {
@@ -6073,11 +6079,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mélange", detail: "Mélanger viande hachée, oignon râpé, ail, cumin, paprika, persil et un peu de chapelure. Bien pétrir.", badge: null },
-      { icone: "✋", titre: "Façonner", detail: "Former des quenelles allongées (ou boulettes), idéalement autour de pics.", badge: null },
-      { icone: "⏳", titre: "Reposer", detail: "Laisser reposer au frais pour qu'elles se tiennent.", badge: "⏱ 20 min" },
-      { icone: "🔥", titre: "Griller", detail: "Griller au barbecue ou à la poêle jusqu'à bien dorées.", badge: "⏱ 10 min" },
-      { icone: "🍽️", titre: "Service", detail: "Servir avec riz pilaf, salade et sauce au yaourt.", badge: null }
+      { icone: "🥣", titre: "Mélange", detail: "Mélanger le bœuf haché, l'oignon râpé, le cumin et la chapelure.", badge: null },
+      { icone: "💪", titre: "Pétrir", detail: "Pétrir longuement la viande pour qu'elle devienne liée et homogène.", badge: null },
+      { icone: "🤲", titre: "Façonner", detail: "Façonner des boulettes allongées (köfte).", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laisser reposer au frais pour qu'elles se tiennent.", badge: "⏱ 30 min" },
+      { icone: "🔥", titre: "Griller", detail: "Griller au barbecue ou à la poêle en retournant.", badge: "⏱ 10 min" },
+      { icone: "🥗", titre: "Garnir", detail: "Servir avec salade, oignon rouge et sumac.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Accompagner de riz ou de pain. ASTUCE CHEF : pétrir longuement la viande, presque comme une pâte, est le secret de köfte qui ne se cassent pas à la cuisson.", badge: null }
     ]
   },
   dorowat: {
@@ -6107,11 +6115,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Oignons", detail: "Faire fondre une grande quantité d'oignons très finement émincés, à sec puis avec le beurre, jusqu'à compotée dorée.", badge: "⏱ 20 min" },
-      { icone: "🌶️", titre: "Berbéré", detail: "Ajouter le berbéré, l'ail et le gingembre, cuire pour développer les arômes.", badge: "⏱ 5 min" },
-      { icone: "🍗", titre: "Poulet", detail: "Ajouter le poulet et un peu d'eau, mijoter doucement.", badge: "⏱ 25 min" },
-      { icone: "🥚", titre: "Œuf", detail: "Ajouter un œuf dur entier en fin de cuisson.", badge: null },
-      { icone: "🫓", titre: "Service", detail: "Servir avec de l'injera pour saucer.", badge: null }
+      { icone: "🧅", titre: "Oignons", detail: "Faire fondre une grande quantité d'oignons à sec, longuement, sans les brûler.", badge: null },
+      { icone: "🧈", titre: "Beurre", detail: "Ajouter le beurre clarifié (niter kibbeh) avec ail et gingembre.", badge: null },
+      { icone: "🌶️", titre: "Berbéré", detail: "Incorporer le mélange d'épices berbéré et le cuire pour le révéler.", badge: null },
+      { icone: "🍗", titre: "Poulet", detail: "Ajouter le poulet et l'enrober de sauce.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Laisser mijoter doucement jusqu'à tendreté.", badge: "⏱ 40 min" },
+      { icone: "🥚", titre: "Œuf", detail: "Ajouter des œufs durs entiers dans la sauce.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir avec de l'injera. ASTUCE CHEF : la patience sur les oignons, fondus très longtemps à sec, fait toute la profondeur du doro wat.", badge: null }
     ]
   },
   misirwat: {
@@ -6141,11 +6151,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Oignons", detail: "Faire fondre les oignons émincés jusqu'à tendres.", badge: "⏱ 8 min" },
-      { icone: "🌶️", titre: "Berbéré", detail: "Ajouter ail, gingembre, tomate et berbéré, cuire 2 min.", badge: null },
-      { icone: "🫘", titre: "Lentilles", detail: "Ajouter les lentilles corail rincées et de l'eau.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Mijoter jusqu'à ce que les lentilles soient fondantes et la sauce épaisse.", badge: "⏱ 25 min" },
-      { icone: "🫓", titre: "Service", detail: "Servir avec de l'injera ou du riz.", badge: null }
+      { icone: "🧅", titre: "Oignons", detail: "Faire fondre les oignons longuement à sec.", badge: null },
+      { icone: "🧈", titre: "Gras", detail: "Ajouter de l'huile (ou du beurre clarifié) avec ail et gingembre.", badge: null },
+      { icone: "🌶️", titre: "Berbéré", detail: "Incorporer le berbéré et le cuire pour le révéler.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Ajouter la tomate et laisser réduire.", badge: null },
+      { icone: "🫘", titre: "Lentilles", detail: "Ajouter les lentilles corail et de l'eau.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Laisser mijoter jusqu'à ce que les lentilles fondent.", badge: "⏱ 25 min" },
+      { icone: "🍽️", titre: "Service", detail: "Servir avec de l'injera. ASTUCE CHEF : ajoutez l'eau peu à peu, le misir wat doit être nappant, ni soupe ni purée sèche.", badge: null }
     ]
   },
   kottbullar: {
@@ -6175,11 +6187,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mêlée", detail: "Mélanger bœuf et porc hachés, chapelure trempée dans un peu de lait, oignon râpé, œuf, muscade.", badge: null },
-      { icone: "⚪", titre: "Bouler", detail: "Former de petites boulettes régulières.", badge: null },
-      { icone: "🍳", titre: "Dorer", detail: "Dorer les boulettes dans le beurre de tous côtés. Réserver.", badge: "⏱ 8 min" },
-      { icone: "🥄", titre: "Sauce", detail: "Déglacer avec un fond de bœuf, ajouter la crème, laisser épaissir, remettre les boulettes.", badge: "⏱ 5 min" },
-      { icone: "🍽️", titre: "Service", detail: "Servir avec purée de pommes de terre et confiture d'airelles.", badge: null }
+      { icone: "🥣", titre: "Mêlée", detail: "Mélanger bœuf, porc, oignon râpé, chapelure trempée dans le lait et épices.", badge: null },
+      { icone: "🤲", titre: "Bouler", detail: "Façonner de petites boulettes régulières.", badge: null },
+      { icone: "❄️", titre: "Raffermir", detail: "Réserver au frais quelques minutes pour qu'elles se tiennent.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Dorer les boulettes dans le beurre sur toutes les faces.", badge: null },
+      { icone: "🥛", titre: "Sauce", detail: "Déglacer, ajouter la crème (et un peu de bouillon) pour une sauce onctueuse.", badge: null },
+      { icone: "🥄", titre: "Mijoter", detail: "Remettre les boulettes et laisser mijoter dans la sauce.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir avec purée et confiture d'airelles. ASTUCE CHEF : la chapelure trempée dans le lait (panade) rend les boulettes suédoises incroyablement moelleuses.", badge: null }
     ]
   },
   bulgogi: {

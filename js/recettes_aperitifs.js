@@ -891,11 +891,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥢", titre: "Farce", detail: "Mélanger porc haché, crevettes hachées, vermicelles réhydratés, carotte râpée, champignons noirs, oignon, sauce nuoc-mâm.", badge: null },
+      { icone: "🥢", titre: "Farce", detail: "Mélanger porc haché, crevettes hachées, vermicelles réhydratés et carotte râpée.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Assaisonner de nuoc-mâm, ail et poivre.", badge: null },
       { icone: "💧", titre: "Galettes", detail: "Humidifier les galettes de riz pour les assouplir.", badge: null },
-      { icone: "🌯", titre: "Rouler", detail: "Garnir et rouler serré en repliant les côtés.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire dans l'huile à 170°C jusqu'à doré et croustillant.", badge: "⏱ 6 min" },
-      { icone: "🥬", titre: "Service", detail: "Servir avec laitue, menthe, coriandre et sauce nuoc-cham.", badge: null }
+      { icone: "🌯", titre: "Rouler", detail: "Déposer la farce et rouler bien serré en repliant les côtés.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Frire dans l'huile à 170 °C jusqu'à doré et croustillant.", badge: "⏱ 8 min" },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur papier absorbant.", badge: null },
+      { icone: "🥬", titre: "Service", detail: "Servir avec salade, herbes et nuoc-cham. ASTUCE CHEF : roulez bien serré et frire à température modérée pour des nems dorés dehors et cuits dedans, sans éclater.", badge: null }
     ]
   },
   satay: {

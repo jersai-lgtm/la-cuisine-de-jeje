@@ -2049,11 +2049,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💨", titre: "Mil", detail: "Cuire/vaporiser la semoule de mil (thiakry) jusqu'à tendreté, puis laisser refroidir.", badge: "⏱ 15 min" },
+      { icone: "💧", titre: "Mil", detail: "Humidifier la semoule de mil (thiakry) et la cuire à la vapeur jusqu'à tendreté.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Égrener et laisser refroidir la semoule.", badge: null },
       { icone: "🥛", titre: "Crème", detail: "Mélanger yaourt, lait concentré, sucre et vanille.", badge: null },
-      { icone: "🥣", titre: "Assembler", detail: "Incorporer le mil refroidi à la crème.", badge: null },
-      { icone: "❄️", titre: "Frais", detail: "Réserver au frais.", badge: "⏱ 1 h" },
-      { icone: "🍓", titre: "Service", detail: "Servir bien frais, éventuellement avec quelques fruits ou raisins secs.", badge: null }
+      { icone: "🥣", titre: "Assembler", detail: "Incorporer la semoule à la crème.", badge: null },
+      { icone: "😋", titre: "Goûter", detail: "Ajuster le sucre et la consistance, qui doit être onctueuse.", badge: null },
+      { icone: "❄️", titre: "Frais", detail: "Réserver au frais au moins 1 heure.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir frais, éventuellement avec des fruits. ASTUCE CHEF : une touche de fleur d'oranger ou des raisins secs rendent le thiakry encore plus parfumé.", badge: null }
     ]
   },
   brigadeiro: {
@@ -2083,11 +2085,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍫", titre: "Cuire", detail: "Cuire le lait concentré, le cacao et le beurre à feu moyen en remuant sans cesse.", badge: "⏱ 10 min" },
-      { icone: "🥄", titre: "Texture", detail: "Arrêter quand la masse se décolle du fond de la casserole.", badge: null },
-      { icone: "❄️", titre: "Refroidir", detail: "Verser dans une assiette beurrée et laisser refroidir.", badge: "⏱ 30 min" },
-      { icone: "⚪", titre: "Rouler", detail: "Former de petites boules avec les mains beurrées.", badge: null },
-      { icone: "✨", titre: "Enrober", detail: "Rouler dans les vermicelles de chocolat. Servir en caissettes.", badge: null }
+      { icone: "🍫", titre: "Mélanger", detail: "Réunir lait concentré, cacao et beurre dans une casserole.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire à feu doux en remuant constamment.", badge: null },
+      { icone: "🥄", titre: "Texture", detail: "Continuer jusqu'à ce que le mélange se décolle du fond.", badge: "⏱ 10 min" },
+      { icone: "❄️", titre: "Refroidir", detail: "Verser dans un plat beurré et laisser refroidir complètement.", badge: null },
+      { icone: "🤲", titre: "Rouler", detail: "Former de petites boules avec les mains beurrées.", badge: null },
+      { icone: "✨", titre: "Enrober", detail: "Rouler dans le vermicelle de chocolat.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir en caissettes. ASTUCE CHEF : le brigadeiro est prêt quand, en inclinant la casserole, la masse glisse d'un bloc en laissant le fond propre.", badge: null }
     ]
   },
   scones: {
@@ -2117,11 +2121,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧈", titre: "Sabler", detail: "Sabler farine + levure + sucre avec le beurre froid du bout des doigts.", badge: null },
-      { icone: "🥛", titre: "Lier", detail: "Ajouter le lait pour former une pâte juste amalgamée (ne pas trop travailler).", badge: null },
-      { icone: "⚪", titre: "Découper", detail: "Étaler sur 2-3 cm et découper à l'emporte-pièce.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Dorer au lait et cuire au four à 200°C jusqu'à gonflés et dorés.", badge: "⏱ 12 min" },
-      { icone: "🍓", titre: "Service", detail: "Tiédes, fendus en deux, avec clotted cream et confiture de fraises.", badge: null }
+      { icone: "🥣", titre: "Mélange sec", detail: "Mélanger farine, levure, sucre et sel.", badge: null },
+      { icone: "🧈", titre: "Sabler", detail: "Sabler le beurre froid du bout des doigts jusqu'à une texture sableuse.", badge: null },
+      { icone: "🥛", titre: "Lier", detail: "Ajouter le lait et mélanger juste assez pour rassembler la pâte.", badge: null },
+      { icone: "✋", titre: "Étaler", detail: "Étaler sans trop travailler et découper des disques.", badge: null },
+      { icone: "🥚", titre: "Dorer", detail: "Badigeonner le dessus de lait ou d'œuf.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200 °C jusqu'à dorés et bien levés.", badge: "⏱ 12 min" },
+      { icone: "🍽️", titre: "Service", detail: "Servir tièdes avec clotted cream et confiture. ASTUCE CHEF : ne travaillez surtout pas trop la pâte, c'est ce qui garde les scones légers et aérés.", badge: null }
     ]
   },
   stickytoffee: {
@@ -2151,11 +2157,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌰", titre: "Dattes", detail: "Faire ramollir les dattes hachées dans de l'eau chaude + bicarbonate, mixer.", badge: null },
-      { icone: "🥣", titre: "Pâte", detail: "Crémer beurre + sucre, ajouter œuf, farine + levure, puis la purée de dattes.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Verser dans des ramequins et cuire au four à 180°C.", badge: "⏱ 25 min" },
-      { icone: "🍯", titre: "Sauce toffee", detail: "Faire fondre beurre, sucre roux et crème jusqu'à un caramel onctueux.", badge: "⏱ 5 min" },
-      { icone: "🥄", titre: "Service", detail: "Démouler, napper généreusement de sauce toffee chaude. Servir tiède.", badge: null }
+      { icone: "🌰", titre: "Dattes", detail: "Faire ramollir les dattes dans de l'eau chaude, puis les réduire en purée.", badge: null },
+      { icone: "🥣", titre: "Pâte", detail: "Crémer beurre et sucre, ajouter les œufs, la farine puis la purée de dattes.", badge: null },
+      { icone: "🍽️", titre: "Mouler", detail: "Verser dans un moule beurré.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180 °C jusqu'à ce que le gâteau soit cuit.", badge: "⏱ 30 min" },
+      { icone: "🍮", titre: "Sauce toffee", detail: "Faire fondre beurre, sucre et crème pour un caramel toffee.", badge: null },
+      { icone: "🕳️", titre: "Imbiber", detail: "Piquer le gâteau chaud et l'arroser d'une partie du toffee.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir tiède, nappé de sauce toffee. ASTUCE CHEF : imbibez le gâteau encore chaud, il absorbe le toffee et devient ultra moelleux et collant.", badge: null }
     ]
   },
   kanelbullar: {
@@ -2185,11 +2193,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Pétrir farine, levure, lait tiède, sucre, beurre, une pointe de cardamome moulue. Pétrir une pâte souple.", badge: null },
-      { icone: "⏳", titre: "Pousse", detail: "Laisser doubler de volume.", badge: "⏱ 1 h" },
-      { icone: "🟤", titre: "Garniture", detail: "Étaler la pâte, tartiner de beurre mou mélangé au sucre et à la cannelle.", badge: null },
-      { icone: "🌀", titre: "Rouler", detail: "Rouler, découper des tronçons, déposer dans des caissettes.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Dorer à l'œuf, parsemer de sucre perlé et cuire à 200°C.", badge: "⏱ 12 min" }
+      { icone: "🥣", titre: "Pâte", detail: "Pétrir farine, levure, lait tiède, sucre, beurre et cardamome en pâte souple.", badge: null },
+      { icone: "⏳", titre: "Pousse", detail: "Laisser pousser jusqu'à doubler de volume.", badge: "⏱ 1 h" },
+      { icone: "🧈", titre: "Garniture", detail: "Mélanger beurre mou, sucre et cannelle.", badge: null },
+      { icone: "📐", titre: "Étaler", detail: "Étaler la pâte et la tartiner de garniture.", badge: null },
+      { icone: "🌀", titre: "Rouler", detail: "Rouler, découper et façonner les brioches.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Dorer à l'œuf, parsemer de sucre perlé et enfourner.", badge: "⏱ 12 min" },
+      { icone: "🍽️", titre: "Service", detail: "Servir tièdes pour le fika suédois. ASTUCE CHEF : une pointe de cardamome dans la pâte est la signature scandinave qui distingue les vrais kanelbullar.", badge: null }
     ]
   },
   arrozdoce: {

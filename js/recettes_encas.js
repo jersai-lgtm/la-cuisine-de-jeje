@@ -836,11 +836,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Râper", detail: "Râper finement les pommes de terre et l'oignon. Astuce : l'oignon évite que les patates noircissent.", badge: null },
-      { icone: "💧", titre: "Essorer", detail: "Bien presser le mélange dans un torchon pour retirer un maximum d'eau — c'est la clé du croustillant.", badge: null },
-      { icone: "🥣", titre: "Appareil", detail: "Mélanger avec l'œuf, la farine, sel et poivre jusqu'à une pâte épaisse.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Déposer des petits tas dans une poêle d'huile chaude, aplatir, dorer 3-4 min de chaque côté.", badge: "⏱ 4 min/face" },
-      { icone: "🥄", titre: "Service", detail: "Servir bien chaud avec de la crème fraîche et de la ciboulette, ou de la compote de pommes.", badge: null }
+      { icone: "🥔", titre: "Râper", detail: "Râper finement les pommes de terre et l'oignon.", badge: null },
+      { icone: "💧", titre: "Essorer", detail: "Presser fortement pour retirer un maximum d'eau.", badge: null },
+      { icone: "🥣", titre: "Appareil", detail: "Mélanger avec l'œuf, la farine, sel et poivre.", badge: null },
+      { icone: "🍳", titre: "Former", detail: "Déposer des petits tas aplatis dans l'huile chaude.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Frire jusqu'à doré et croustillant des deux côtés.", badge: "⏱ 6 min" },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur papier absorbant.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir avec de la crème ou du sucre. ASTUCE CHEF : essorez vraiment les pommes de terre râpées, c'est l'eau retenue qui empêche les placki d'être croustillants.", badge: null }
     ]
   },
   arepas: {
@@ -870,11 +872,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "La pâte", detail: "Mélanger la farine de maïs précuite (masarepa) avec l'eau tiède et le sel. Pétrir jusqu'à une pâte souple non collante. Laisser reposer 5 min.", badge: "⏱ 5 min" },
-      { icone: "⚪", titre: "Former", detail: "Former des boules puis aplatir en galettes d'environ 1 cm d'épaisseur.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire à la poêle/plancha avec un filet d'huile, 4-5 min par face, jusqu'à une belle croûte dorée.", badge: "⏱ 5 min/face" },
-      { icone: "🧀", titre: "Garnir", detail: "Ouvrir en deux et garnir : fromage fondu, œufs brouillés, avocat, poulet effiloché…", badge: null },
-      { icone: "🍽️", titre: "Service", detail: "Servir bien chaudes, au petit-déjeuner ou en encas.", badge: null }
+      { icone: "🥣", titre: "La pâte", detail: "Mélanger la farine de maïs précuite (masarepa) avec l'eau et le sel.", badge: null },
+      { icone: "✋", titre: "Pétrir", detail: "Pétrir jusqu'à une pâte souple qui ne colle pas.", badge: null },
+      { icone: "⚪", titre: "Former", detail: "Former des galettes épaisses et régulières.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Laisser reposer la pâte 5 minutes pour qu'elle s'hydrate.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire à la plancha jusqu'à une croûte dorée des deux faces.", badge: "⏱ 10 min" },
+      { icone: "🧀", titre: "Garnir", detail: "Fendre les arepas en poche et les garnir de fromage.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir bien chaudes. ASTUCE CHEF : le repos de la pâte avant cuisson évite que les bords des arepas ne craquellent.", badge: null }
     ]
   },
   langos: {
@@ -904,11 +908,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte levée", detail: "Mélanger farine, levure délayée dans le lait tiède, un peu de sel. Pétrir une pâte souple.", badge: null },
+      { icone: "🥣", titre: "Pâte levée", detail: "Mélanger farine, levure, lait tiède et sel en une pâte souple.", badge: null },
       { icone: "⏳", titre: "Pousse", detail: "Couvrir et laisser doubler de volume.", badge: "⏱ 1 h" },
-      { icone: "⚪", titre: "Façonner", detail: "Étaler des disques fins.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire dans l'huile chaude 1-2 min par face jusqu'à ce qu'ils gonflent et dorent.", badge: "⏱ 2 min/face" },
-      { icone: "🧄", titre: "Garnir", detail: "Frotter d'ail, tartiner de crème et parsemer de fromage râpé. Servir chaud.", badge: null }
+      { icone: "✋", titre: "Façonner", detail: "Étirer des disques de pâte, plus fins au centre.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Frire dans l'huile chaude jusqu'à gonflé et doré.", badge: "⏱ 3 min" },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur papier absorbant.", badge: null },
+      { icone: "🧄", titre: "Garnir", detail: "Frotter d'ail, tartiner de crème et de fromage râpé.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir aussitôt, bien chaud. ASTUCE CHEF : affinez bien le centre du disque, le lángos doit gonfler sur les bords et rester fin au milieu.", badge: null }
     ]
   },
   paodequeijo: {
@@ -938,11 +944,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Ébouillanter", detail: "Chauffer lait + huile + sel jusqu'à frémissement.", badge: null },
-      { icone: "🥣", titre: "Tapioca", detail: "Verser sur la fécule de tapioca, mélanger (la pâte est grumeleuse, c'est normal).", badge: null },
-      { icone: "🧀", titre: "Fromage & œuf", detail: "Quand c'est tiède, incorporer l'œuf puis le fromage râpé. Pétrir.", badge: null },
-      { icone: "⚪", titre: "Bouler", detail: "Former de petites boules (pâte collante : huiler ses mains).", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire au four à 180°C jusqu'à gonflés et légèrement dorés.", badge: "⏱ 20 min" }
+      { icone: "🥛", titre: "Ébouillanter", detail: "Porter à ébullition le lait avec l'huile et le sel.", badge: null },
+      { icone: "🥣", titre: "Tapioca", detail: "Verser sur la fécule de tapioca et mélanger (pâte ébouillantée).", badge: null },
+      { icone: "❄️", titre: "Tiédir", detail: "Laisser tiédir la pâte.", badge: null },
+      { icone: "🧀", titre: "Fromage & œuf", detail: "Incorporer les œufs puis le fromage râpé.", badge: null },
+      { icone: "🤲", titre: "Bouler", detail: "Former de petites boules avec les mains huilées.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180 °C jusqu'à gonflé et doré.", badge: "⏱ 20 min" },
+      { icone: "🍽️", titre: "Service", detail: "Servir tièdes. ASTUCE CHEF : ébouillanter le tapioca avant d'ajouter le fromage donne ce moelleux élastique typique du pão de queijo.", badge: null }
     ]
   },
   borekturc: {
@@ -972,11 +980,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Garniture", detail: "Mélanger feta émiettée, épinards (préalablement fondus et essorés), persil et un peu d'œuf.", badge: null },
+      { icone: "🥬", titre: "Garniture", detail: "Mélanger feta émiettée, épinards et œuf.", badge: null },
       { icone: "🧈", titre: "Beurrer", detail: "Badigeonner les feuilles de filo de beurre fondu.", badge: null },
-      { icone: "🌯", titre: "Façonner", detail: "Garnir et rouler en cigares ou en spirale.", badge: null },
-      { icone: "🥚", titre: "Dorer", detail: "Badigeonner d'œuf battu, parsemer de sésame.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire au four à 190°C jusqu'à doré et croustillant.", badge: "⏱ 25 min" }
+      { icone: "🥄", titre: "Garnir", detail: "Répartir la garniture sur les feuilles.", badge: null },
+      { icone: "🌀", titre: "Façonner", detail: "Rouler ou plier en triangles ou en spirale.", badge: null },
+      { icone: "🥚", titre: "Dorer", detail: "Badigeonner d'œuf battu et parsemer de graines de sésame.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180 °C jusqu'à doré et croustillant.", badge: "⏱ 30 min" },
+      { icone: "🍽️", titre: "Service", detail: "Servir tiède. ASTUCE CHEF : beurrez généreusement chaque feuille de filo, c'est ce qui rend le börek feuilleté et croustillant.", badge: null }
     ]
   },
   bifana: {

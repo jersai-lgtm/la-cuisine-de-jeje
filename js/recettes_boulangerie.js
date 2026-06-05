@@ -770,11 +770,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Mélanger la farine de teff avec l'eau jusqu'à une pâte fluide.", badge: null },
-      { icone: "⏳", titre: "Fermenter", detail: "Couvrir et laisser fermenter à température ambiante 1 à 3 jours (elle bulle et acidifie).", badge: "⏱ 1-3 j" },
-      { icone: "🔥", titre: "Cuire", detail: "Verser une louche sur une grande poêle chaude, couvrir SANS retourner : des bulles se forment.", badge: "⏱ 3 min" },
-      { icone: "💨", titre: "Texture", detail: "La surface devient spongieuse et criblée de petits trous.", badge: null },
-      { icone: "🍽️", titre: "Service", detail: "Disposer les ragoûts (wat) dessus et déchirer des morceaux pour saucer.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger la farine de teff avec l'eau en une pâte liquide.", badge: null },
+      { icone: "🫧", titre: "Fermenter", detail: "Couvrir et laisser fermenter plusieurs jours jusqu'à ce qu'elle bulle et aigrisse.", badge: "⏱ 3 j" },
+      { icone: "🥄", titre: "Détendre", detail: "Détendre éventuellement avec un peu d'eau pour une pâte fluide.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Chauffer une grande plaque (ou poêle) sans matière grasse.", badge: null },
+      { icone: "🌀", titre: "Cuire", detail: "Verser la pâte en spirale et couvrir, sans la retourner.", badge: null },
+      { icone: "🫧", titre: "Texture", detail: "Cuire jusqu'à ce que la surface soit criblée de petits trous.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir comme base et assiette pour les wat. ASTUCE CHEF : la fermentation est essentielle, c'est elle qui donne à l'injera son goût acidulé et ses bulles caractéristiques.", badge: null }
     ]
   },
 });
