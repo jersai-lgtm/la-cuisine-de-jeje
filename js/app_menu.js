@@ -1974,11 +1974,12 @@ function ajouterMenuAuxCourses(type) {
   if (typeof sauvegarderProfil === "function") {
     sauvegarderProfil({ listeCourses: window.userProfile.listeCourses });
   }
-  if (typeof afficherToast === "function") {
-    afficherToast(ajout > 0
-      ? `🛒 ${ajout} recette${ajout > 1 ? "s" : ""} ajoutée${ajout > 1 ? "s" : ""} aux courses`
-      : "Ces recettes sont déjà dans vos courses ✓");
-  }
+  // Même comportement que sur une fiche recette : toast CLIQUABLE qui mène à la liste
+  const msg = ajout > 0
+    ? `🛒 ${ajout} recette${ajout > 1 ? "s" : ""} ajoutée${ajout > 1 ? "s" : ""} aux courses`
+    : "🛒 Déjà dans tes courses ✓";
+  if (typeof afficherToastCourses === "function") afficherToastCourses(msg);
+  else if (typeof afficherToast === "function") afficherToast(msg);
 }
 window.ajouterMenuAuxCourses = ajouterMenuAuxCourses;
 
