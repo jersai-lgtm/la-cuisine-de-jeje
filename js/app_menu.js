@@ -1983,3 +1983,14 @@ function ajouterMenuAuxCourses(type) {
 }
 window.ajouterMenuAuxCourses = ajouterMenuAuxCourses;
 
+// Ré-affiche le menu courant en respectant son mode : lunch box = 1 plat/jour (Midi seul),
+// sinon le format semaine (Midi + Soir). Évite le "Soir fantôme" sur les lunch box.
+window.reafficherMenuCourant = function (menus, personnes) {
+  if (!menus) return;
+  if (menus.mode === "lunchbox" && typeof afficherLunchbox === "function") {
+    afficherLunchbox(menus, personnes);
+  } else if (typeof afficherMenusSemaine === "function") {
+    afficherMenusSemaine(menus, personnes);
+  }
+};
+

@@ -37,7 +37,7 @@ window.rafraichirNotesMenus = function() {
     const pr = document.getElementById("plan-result");
     if (pr && pr.style.display !== "none" && window._derniersMenus && typeof afficherMenusSemaine === "function") {
       const pers = window._derniersMenus.personnes || parseInt(document.getElementById("plan-personnes")?.value) || 4;
-      afficherMenusSemaine(window._derniersMenus, pers);
+      (window.reafficherMenuCourant || afficherMenusSemaine)(window._derniersMenus, pers);
     }
   } catch (e) {}
   // Menu festif / thématique si affiché

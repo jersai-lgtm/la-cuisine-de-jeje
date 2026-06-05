@@ -459,6 +459,27 @@ function lcClasserEtape(et) {
   return "prep";
 }
 
+// Conseil de conservation par recette (heuristique : catégorie + mots-clés)
+// Retourne { frigo: nbJours, congel: "oui"|"moyen"|"non", note: "" }
+function lcConseilConservation(cle) {
+  const r = recettes[cle] || {};
+  const cat = r.cat || "";
+  const t = _prepStrip((r.nom || cle) + " " + (r.description || ""));
+  const a = (...m) => m.some(x => t.includes(x));
+  if (cat === "cocktails" || cat === "mocktails") return { frigo: 0, congel: "non", note: "à préparer au moment, ne se conserve pas" };
+  if (a("poisson", "saumon", "cabillaud", "crevette", "fruits de mer", "tartare", "carpaccio", "ceviche", "huitre", "moule", "saint-jacques")) return { frigo: 1, congel: "moyen", note: "à manger en premier ; congélation possible mais qualité moindre" };
+  if (cat === "salades" || a("salade", "crudite")) return { frigo: 2, congel: "non", note: "légumes crus : ne se congèle pas, à manger en début de semaine" };
+  if (cat === "sauces") return { frigo: 4, congel: "oui", note: "se congèle très bien, en portions" };
+  if (cat === "soupes" || a("soupe", "veloute", "potage", "bisque")) return { frigo: 3, congel: "oui", note: "se congèle parfaitement" };
+  if (cat === "boulangerie" || cat === "pizzas" || a("pain", "brioche", "pizza", "gaufre", "pate ")) return { frigo: 2, congel: "oui", note: "se congèle bien (bien emballé), réchauffe au four" };
+  if (cat === "desserts") {
+    if (a("creme", "mousse", "tiramisu", "panna", "bavarois", "cheesecake", "ile flottante", "meringue", "chantilly", "flan")) return { frigo: 2, congel: "non", note: "à base de crème/œufs : ne se congèle pas, à consommer vite" };
+    return { frigo: 3, congel: "oui", note: "se congèle bien en parts" };
+  }
+  if (a("friture", "frite", "beignet", "pane", "croustill", "tempura", "nem", "pakora", "rosti")) return { frigo: 2, congel: "moyen", note: "perd son croustillant ; meilleur frais" };
+  return { frigo: 3, congel: "oui", note: "se congèle bien, idéal pour faire du rab" };
+}
+
 // Génère le plan de prep regroupé par phases (batch cooking)
 function lcGenererPlanPrep() {
   const liste = window.userProfile?.listeCourses || [];
@@ -502,10 +523,34 @@ function lcGenererPlanPrep() {
     </div>`;
   }).join("");
 
+  const consHTML = liste.map(({ cle }) => {
+    const r = recettes[cle];
+    if (!r) return "";
+    const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
+    const c = lcConseilConservation(cle);
+    const frigoTxt = c.frigo > 0 ? `🧊 Frigo ${c.frigo} j` : "🥤 à préparer minute";
+    const congTxt = c.congel === "oui" ? "❄️ se congèle bien" : c.congel === "moyen" ? "❄️ congélation possible" : "⛔ ne se congèle pas";
+    const congColor = c.congel === "oui" ? "#7fdca8" : c.congel === "moyen" ? "#ffb27a" : "#ff8f8f";
+    return `<div style="background:#1a1620;border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:9px 11px">
+        <div style="font-size:13px;color:#fff;font-weight:500;margin-bottom:3px">${ech(nom)}</div>
+        <div style="font-size:12px;color:#b3b0b8">${frigoTxt} · <span style="color:${congColor}">${congTxt}</span></div>
+        ${c.note ? `<div style="font-size:11px;color:#88858f;margin-top:2px">${ech(c.note)}</div>` : ""}
+      </div>`;
+  }).join("");
+  const conservationBloc = `<div style="margin-bottom:4px">
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:4px">
+        <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#3a6ea5;color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center">🥶</span>
+        <span style="font-size:15px;font-weight:500;color:#fff;flex:1">Conservation & congélation</span>
+      </div>
+      <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">Mange en premier ce qui se garde le moins longtemps, et congèle les portions que tu ne finiras pas à temps : tu auras du rab pour plus tard. 😊</div>
+      <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${consHTML}</div>
+    </div>`;
+
   zone.innerHTML = `
     <h3>📋 Ton plan de prep</h3>
     <p class="plan-subtitle" style="margin-top:-4px">Les étapes de tes ${liste.length} recette${liste.length > 1 ? "s" : ""} regroupées par phase — fais chaque phase d'un coup. ⏱ ≈ ${lcFmtDuree(totalMin)} de travail actif.</p>
-    ${phasesHTML}`;
+    ${phasesHTML}
+    ${conservationBloc}`;
 }
 
 function lcToggleItem(label, checkbox) {

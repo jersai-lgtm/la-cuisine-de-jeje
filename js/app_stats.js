@@ -1001,7 +1001,9 @@ window.addEventListener('profilMisAJour', () => {
   // Ré-afficher les menus avec badges famille si un menu est actif
   if (window._derniersMenus) {
     const p = parseInt(document.getElementById("plan-personnes")?.value) || 4;
-    if (typeof afficherMenusSemaine === "function") {
+    if (typeof window.reafficherMenuCourant === "function") {
+      window.reafficherMenuCourant(window._derniersMenus, p);
+    } else if (typeof afficherMenusSemaine === "function") {
       afficherMenusSemaine(window._derniersMenus, p);
     }
   }
