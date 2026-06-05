@@ -303,7 +303,7 @@ function maRechercheCible(q) {
   const v = maNorm(q).trim();
   let hits = maFiltreRecettes(window._maCible && window._maCible.role);
   if (v.length >= 1) hits = hits.filter(function (k) { return maNorm(getNomRecette(k)).indexOf(v) >= 0; });
-  hits = hits.slice(0, 30);
+  hits.sort(function (a, b) { return getNomRecette(a).localeCompare(getNomRecette(b)); });
   if (!hits.length) { res.innerHTML = '<p style="margin:8px 0;color:#88858f;font-size:12px">Aucune recette.</p>'; return; }
   res.innerHTML = hits.map(function (k) {
     const nom = getNomRecette(k);

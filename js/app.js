@@ -691,8 +691,10 @@ function estNouveaute(key) {
   if (!d) return false;
   const t = new Date(d).getTime();
   if (isNaN(t)) return false;
+  const DAY = 24 * 60 * 60 * 1000;
   const diff = Date.now() - t;
-  return diff >= 0 && diff <= 7 * 24 * 60 * 60 * 1000;
+  // tolère une date légèrement dans le futur (horodatage du jour) jusqu'à 1 jour
+  return diff >= -DAY && diff <= 7 * DAY;
 }
 
 // ==============================
@@ -3205,6 +3207,7 @@ const _MODALS_SURVEILLEES = [
   { id: "modal-auth",        close: () => typeof fermerModalAuth === "function" && fermerModalAuth() },
   { id: "modal-profil",      close: () => typeof fermerModalProfil === "function" && fermerModalProfil() },
   { id: "modal-onboarding",  close: () => typeof fermerOnboarding === "function" && fermerOnboarding() },
+  { id: "ma-modal",          close: () => typeof fermerAjoutMenu === "function" && fermerAjoutMenu() },
 ];
 
 // Vérifie si un élément est actuellement visible (modal ouverte)
