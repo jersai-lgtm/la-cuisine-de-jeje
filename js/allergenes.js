@@ -198,8 +198,6 @@ window._recentsVus = JSON.parse(localStorage.getItem("recentsVus") || "[]");
 function ajouterRecent(key) {
   window._recentsVus = [key, ...window._recentsVus.filter(k => k !== key)].slice(0, 20);
   try { localStorage.setItem("recentsVus", JSON.stringify(window._recentsVus)); } catch(e) {}
-  // Mettre à jour l'accueil si visible
-  if (document.getElementById("section-accueil")?.style.display !== "none") {
-    chargerAccueilRecents();
-  }
+  // Toujours rafraîchir "Dernières recettes vues" (même si l'accueil est masqué derrière une fiche)
+  if (typeof chargerAccueilRecents === "function") chargerAccueilRecents();
 }

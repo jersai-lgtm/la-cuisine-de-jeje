@@ -591,7 +591,7 @@ function chargerAccueilRecents() {
     row.innerHTML = `<div class="accueil-empty">Aucune recette vue récemment</div>`;
     return;
   }
-  row.innerHTML = recents.slice(0, 20).map(key => miniCarte(key)).join("");
+  row.innerHTML = recents.slice(0, 20).map(key => miniCarte(key, null, { noRegen: true })).join("");
 }
 
 function effacerHistoriqueMenus() {

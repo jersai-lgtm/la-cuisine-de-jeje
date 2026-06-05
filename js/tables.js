@@ -770,6 +770,8 @@ function choisirRecette(nom, personnesOverride) {
     window._recentsVus = recents;
     localStorage.setItem("recentsVus", JSON.stringify(recents));
   } catch(e) {}
+  // Rafraîchir la rubrique "Dernières recettes vues" de l'accueil
+  if (typeof chargerAccueilRecents === "function") chargerAccueilRecents();
 
   const inputPersonnes = document.getElementById("personnes");
 
