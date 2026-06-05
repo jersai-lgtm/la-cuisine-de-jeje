@@ -298,6 +298,18 @@ function chargerMenusAuDemarrage() {
   const saved = chargerMenusSauvegardes();
   if (saved && saved.menus) {
     menusSemaine = saved.menus;
+    // Mode Lunch box (1 plat/jour) : renderer dédié, surtout PAS le format Midi + Soir
+    if (menusSemaine.mode === "lunchbox" && typeof afficherLunchbox === "function") {
+      window._lunchboxActif = true;
+      window._planMode = "lunchbox";
+      window._planTabActif = "lunchbox";
+      window._derniersMenus = menusSemaine;
+      window._dernierMenuGenere = menusSemaine;
+      const f = document.getElementById("plan-form"); if (f) f.style.display = "none";
+      afficherLunchbox(menusSemaine, saved.personnes || 4);
+      const ip = document.getElementById("plan-personnes"); if (ip) ip.value = saved.personnes || 4;
+      return;
+    }
     // Auto-nettoyage : remplacer toute recette non-repas par un vrai plat
     // (cas des menus sauvegardés AVANT les corrections de catégories)
     menusSemaine = nettoyerMenusNonRepas(menusSemaine);
