@@ -17,9 +17,9 @@ window.ouvrirAmelioration = function () {
     modal.innerHTML =
       '<div style="background:#211e26;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px;max-width:440px;width:100%;box-sizing:border-box">' +
         '<h3 style="color:#fff;font-size:17px;margin:0 0 4px">💡 Suggérer une amélioration</h3>' +
-        '<p style="color:#b3b0b8;font-size:13px;margin:0 0 12px;line-height:1.45">Une photo à changer, une faute, une recette à corriger ou une publication à retirer ? Dis-moi tout, ça part direct sur ma boîte mail.</p>' +
-        '<label style="color:#d7d5db;font-size:12px;display:block;margin:0 0 4px">Recette ou page concernée <span style="color:#88858f">(facultatif)</span></label>' +
-        '<input id="amelioration-sujet" type="text" maxlength="120" placeholder="Ex : Tarte Tatin, page Favoris…" style="width:100%;box-sizing:border-box;background:#17151c;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:10px;font-size:14px;margin:0 0 12px">' +
+        '<p style="color:#b3b0b8;font-size:13px;margin:0 0 12px;line-height:1.45">Une idée pour améliorer l\'appli, une modification à apporter, une photo à changer, une faute à corriger ou une publication à retirer ? Dis-moi tout, ça part direct sur ma boîte mail.</p>' +
+        '<label style="color:#d7d5db;font-size:12px;display:block;margin:0 0 4px">Sujet concerné <span style="color:#88858f">(appli, recette, photo… — facultatif)</span></label>' +
+        '<input id="amelioration-sujet" type="text" maxlength="120" placeholder="Ex : l\'appli en général, la recette Tarte Tatin, une photo…" style="width:100%;box-sizing:border-box;background:#17151c;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:10px;font-size:14px;margin:0 0 12px">' +
         '<label style="color:#d7d5db;font-size:12px;display:block;margin:0 0 4px">Ton message</label>' +
         '<textarea id="amelioration-texte" maxlength="800" rows="4" placeholder="Décris ce qu\'il faudrait modifier, ajouter ou supprimer…" oninput="majCompteurAmelioration()" style="width:100%;box-sizing:border-box;background:#17151c;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:10px;font-size:14px;resize:vertical"></textarea>' +
         '<div id="amelioration-compteur" style="text-align:right;color:#88858f;font-size:11px;margin-top:4px">0 / 800</div>' +
