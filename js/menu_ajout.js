@@ -74,7 +74,8 @@ function maModalEl() {
 function ouvrirAjoutMenu(key) {
   const today = (new Date().getDay() + 6) % 7; // Lundi = 0
   window._maSel = { key: key, jour: today, creneau: "midi" };
-  maRenderSheet();
+  maModalEl();          // crée d'abord le panneau (#ma-sheet) …
+  maRenderSheet();      // … puis on le remplit
   maModalEl().style.display = "flex";
 }
 
