@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   "saladeniçoise": {
+    nom: "Salade niçoise",
     cat: "salades", saisons: ["ete"], pays: "france",
     base: 4,
     temps: "25 min",
@@ -887,7 +888,7 @@ Object.assign(recettes, {
   },
   saladepiemontaise: {
     nom: "Salade piémontaise",
-    dateAjout: "2026-06-05",
+    dateAjout: "2026-06-05T21:00:00",
     cat: "salades", pays: "france",
     base: 4,
     temps: "30 min",

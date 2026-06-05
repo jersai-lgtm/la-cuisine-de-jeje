@@ -189,6 +189,7 @@ Object.assign(recettes, {
     ]
   },
   "crepesSucrées": {
+    nom: "Crêpes Sucrées",
     cat: "brunch", pays: "france",
     base: 4,
     temps: "30 min",

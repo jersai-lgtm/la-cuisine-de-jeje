@@ -2781,7 +2781,7 @@ Object.assign(recettes, {
   },
   fraisier: {
     nom: "Fraisier",
-    dateAjout: "2026-06-05",
+    dateAjout: "2026-06-05T21:00:00",
     cat: "desserts", pays: "france",
     base: 4,
     temps: "1 h 30",
@@ -2819,7 +2819,7 @@ Object.assign(recettes, {
   },
   bananeflambee: {
     nom: "Bananes flambées",
-    dateAjout: "2026-06-05",
+    dateAjout: "2026-06-05T21:00:00",
     cat: "desserts", pays: "france",
     base: 4,
     temps: "15 min",
@@ -2855,7 +2855,7 @@ Object.assign(recettes, {
   },
   framboisier: {
     nom: "Framboisier",
-    dateAjout: "2026-06-05",
+    dateAjout: "2026-06-05T21:00:00",
     cat: "desserts", pays: "france",
     base: 4,
     temps: "1 h 30",

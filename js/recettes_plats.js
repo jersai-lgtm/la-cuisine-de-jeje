@@ -8739,7 +8739,7 @@ Object.assign(recettes, {
   },
   lapinmoutarde: {
     nom: "Lapin à la moutarde",
-    dateAjout: "2026-06-05",
+    dateAjout: "2026-06-05T21:00:00",
     cat: "plats", pays: "france",
     base: 4,
     temps: "1 h",
@@ -8776,7 +8776,7 @@ Object.assign(recettes, {
   },
   paupiettesveau: {
     nom: "Paupiettes de veau",
-    dateAjout: "2026-06-05",
+    dateAjout: "2026-06-05T21:00:00",
     cat: "plats", pays: "france",
     base: 4,
     temps: "50 min",

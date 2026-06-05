@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
 mayonnaise: {
+    nom: "Mayonnaise maison",
     cat: "sauces", pays: "france",
     base: 4,
     temps: "10 min",

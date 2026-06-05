@@ -592,6 +592,7 @@ Object.assign(recettes, {
     ]
   },
 oeufmayo: {
+    nom: "Œufs mayonnaise",
     cat: "entrees", pays: "france",
     base: 6,
     temps: "15 min",
