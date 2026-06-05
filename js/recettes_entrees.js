@@ -877,4 +877,110 @@ oeufmayo: {
       { icone: "✨", titre: "Démouler", detail: "Démouler délicatement et servir bien frais, en entrée.", badge: null }
     ]
   },
+  saladechevrechaud: {
+    nom: "Salade de chèvre chaud",
+    dateAjout: "2026-06-05",
+    cat: "entrees", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "L'entrée bistrot incontournable : des toasts de chèvre chaud et miel posés sur une salade croquante aux noix.",
+    tableauSaladechevrechaud: [
+      { nb: 1, chevre: "½", painbaguette: "2 tranches", salade: "40 g", miel: "1 c.à.c", noix: "10 g", vinaigrette: "1 c.à.s" },
+      { nb: 2, chevre: "1", painbaguette: "4 tranches", salade: "80 g", miel: "2 c.à.c", noix: "20 g", vinaigrette: "2 c.à.s" },
+      { nb: 3, chevre: "1½", painbaguette: "6 tranches", salade: "120 g", miel: "3 c.à.c", noix: "30 g", vinaigrette: "3 c.à.s" },
+      { nb: 4, chevre: "2", painbaguette: "8 tranches", salade: "160 g", miel: "4 c.à.c", noix: "40 g", vinaigrette: "4 c.à.s" },
+      { nb: 5, chevre: "2½", painbaguette: "10 tranches", salade: "200 g", miel: "5 c.à.c", noix: "50 g", vinaigrette: "5 c.à.s" },
+      { nb: 6, chevre: "3", painbaguette: "12 tranches", salade: "240 g", miel: "6 c.à.c", noix: "60 g", vinaigrette: "6 c.à.s" },
+      { nb: 7, chevre: "3½", painbaguette: "14 tranches", salade: "280 g", miel: "7 c.à.c", noix: "70 g", vinaigrette: "7 c.à.s" },
+      { nb: 8, chevre: "4", painbaguette: "16 tranches", salade: "320 g", miel: "8 c.à.c", noix: "80 g", vinaigrette: "8 c.à.s" },
+      { nb: 9, chevre: "4½", painbaguette: "18 tranches", salade: "360 g", miel: "9 c.à.c", noix: "90 g", vinaigrette: "9 c.à.s" },
+      { nb: 10, chevre: "5", painbaguette: "20 tranches", salade: "400 g", miel: "10 c.à.c", noix: "100 g", vinaigrette: "10 c.à.s" },
+      { nb: 11, chevre: "5½", painbaguette: "22 tranches", salade: "440 g", miel: "11 c.à.c", noix: "110 g", vinaigrette: "11 c.à.s" },
+      { nb: 12, chevre: "6", painbaguette: "24 tranches", salade: "480 g", miel: "12 c.à.c", noix: "120 g", vinaigrette: "12 c.à.s" },
+      { nb: 13, chevre: "6½", painbaguette: "26 tranches", salade: "520 g", miel: "13 c.à.c", noix: "130 g", vinaigrette: "13 c.à.s" },
+      { nb: 14, chevre: "7", painbaguette: "28 tranches", salade: "560 g", miel: "14 c.à.c", noix: "140 g", vinaigrette: "14 c.à.s" },
+      { nb: 15, chevre: "7½", painbaguette: "30 tranches", salade: "600 g", miel: "15 c.à.c", noix: "150 g", vinaigrette: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥗", titre: "Salade", detail: "Laver la salade et la répartir dans les assiettes. Parsemer de noix concassées.", badge: null },
+      { icone: "🍞", titre: "Toasts", detail: "Déposer une rondelle de chèvre sur chaque tranche de pain.", badge: null },
+      { icone: "🍯", titre: "Miel", detail: "Arroser le chèvre d'un filet de miel.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Passer les toasts sous le gril 4 à 5 minutes jusqu'à ce que le chèvre soit doré et fondant.", badge: "⏱ 5 min" },
+      { icone: "🍽️", titre: "Dresser", detail: "Déposer les toasts chauds sur la salade, arroser de vinaigrette. ASTUCE CHEF : un trait de vinaigre balsamique dans la vinaigrette équilibre parfaitement le sucré du miel et l'acidité du chèvre.", badge: null }
+    ]
+  },
+  terrineforestiere: {
+    nom: "Terrine forestière",
+    dateAjout: "2026-06-05",
+    cat: "entrees", pays: "france",
+    base: 6,
+    temps: "1 h + repos",
+    niveau: "⭐ Moyen",
+    emoji: "🍄",
+    description: "Une terrine maison parfumée aux champignons, idéale en entrée avec des cornichons et du pain grillé.",
+    tableauTerrineforestiere: [
+      { nb: 1, champignon: "80 g", chairsaucisse: "60 g", oeufs: "½", oignon: "0", persil: "1 c.à.c", cognac: "0,5 cl" },
+      { nb: 2, champignon: "160 g", chairsaucisse: "120 g", oeufs: "1", oignon: "½", persil: "2 c.à.c", cognac: "1 cl" },
+      { nb: 3, champignon: "240 g", chairsaucisse: "180 g", oeufs: "1½", oignon: "1", persil: "3 c.à.c", cognac: "1,5 cl" },
+      { nb: 4, champignon: "320 g", chairsaucisse: "240 g", oeufs: "2", oignon: "1", persil: "4 c.à.c", cognac: "2 cl" },
+      { nb: 5, champignon: "400 g", chairsaucisse: "300 g", oeufs: "2½", oignon: "1", persil: "5 c.à.c", cognac: "2,5 cl" },
+      { nb: 6, champignon: "480 g", chairsaucisse: "360 g", oeufs: "3", oignon: "1½", persil: "6 c.à.c", cognac: "3 cl" },
+      { nb: 7, champignon: "560 g", chairsaucisse: "420 g", oeufs: "3½", oignon: "2", persil: "7 c.à.c", cognac: "3,5 cl" },
+      { nb: 8, champignon: "640 g", chairsaucisse: "480 g", oeufs: "4", oignon: "2", persil: "8 c.à.c", cognac: "4 cl" },
+      { nb: 9, champignon: "720 g", chairsaucisse: "540 g", oeufs: "4½", oignon: "2", persil: "9 c.à.c", cognac: "4,5 cl" },
+      { nb: 10, champignon: "800 g", chairsaucisse: "600 g", oeufs: "5", oignon: "2½", persil: "10 c.à.c", cognac: "5 cl" },
+      { nb: 11, champignon: "880 g", chairsaucisse: "660 g", oeufs: "5½", oignon: "3", persil: "11 c.à.c", cognac: "5,5 cl" },
+      { nb: 12, champignon: "960 g", chairsaucisse: "720 g", oeufs: "6", oignon: "3", persil: "12 c.à.c", cognac: "6 cl" },
+      { nb: 13, champignon: "1040 g", chairsaucisse: "780 g", oeufs: "6½", oignon: "3", persil: "13 c.à.c", cognac: "6,5 cl" },
+      { nb: 14, champignon: "1120 g", chairsaucisse: "840 g", oeufs: "7", oignon: "3½", persil: "14 c.à.c", cognac: "7 cl" },
+      { nb: 15, champignon: "1200 g", chairsaucisse: "900 g", oeufs: "7½", oignon: "4", persil: "15 c.à.c", cognac: "7,5 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍄", titre: "Champignons", detail: "Émincer et faire revenir les champignons avec l'oignon jusqu'à évaporation complète de l'eau.", badge: null },
+      { icone: "🥣", titre: "Mélange", detail: "Mélanger la chair à saucisse, les champignons tiédis, les œufs, le persil et le cognac. Assaisonner.", badge: null },
+      { icone: "🍞", titre: "Mouler", detail: "Tasser dans une terrine, lisser le dessus.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire au bain-marie à 160 °C pendant 1 heure.", badge: "⏱ 1 h" },
+      { icone: "❄️", titre: "Reposer", detail: "Laisser refroidir puis réfrigérer au moins 12 heures, idéalement 24 h.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir en tranches avec cornichons et pain grillé. ASTUCE CHEF : une terrine est toujours meilleure préparée 2 jours à l'avance, le temps que les saveurs se marient et se fondent.", badge: null }
+    ]
+  },
+  aspergesmimosa: {
+    nom: "Asperges mimosa",
+    dateAjout: "2026-06-05",
+    cat: "entrees", pays: "france",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥚",
+    description: "Une entrée de printemps fraîche et élégante : asperges tièdes recouvertes d'œuf dur émietté façon mimosa et d'une vinaigrette légère.",
+    tableauAspergesmimosa: [
+      { nb: 1, asperge: "4", oeufs: "1", vinaigrette: "1 c.à.s", ciboulette: "1 c.à.c" },
+      { nb: 2, asperge: "8", oeufs: "2", vinaigrette: "2 c.à.s", ciboulette: "2 c.à.c" },
+      { nb: 3, asperge: "12", oeufs: "3", vinaigrette: "3 c.à.s", ciboulette: "3 c.à.c" },
+      { nb: 4, asperge: "16", oeufs: "4", vinaigrette: "4 c.à.s", ciboulette: "4 c.à.c" },
+      { nb: 5, asperge: "20", oeufs: "5", vinaigrette: "5 c.à.s", ciboulette: "5 c.à.c" },
+      { nb: 6, asperge: "24", oeufs: "6", vinaigrette: "6 c.à.s", ciboulette: "6 c.à.c" },
+      { nb: 7, asperge: "28", oeufs: "7", vinaigrette: "7 c.à.s", ciboulette: "7 c.à.c" },
+      { nb: 8, asperge: "32", oeufs: "8", vinaigrette: "8 c.à.s", ciboulette: "8 c.à.c" },
+      { nb: 9, asperge: "36", oeufs: "9", vinaigrette: "9 c.à.s", ciboulette: "9 c.à.c" },
+      { nb: 10, asperge: "40", oeufs: "10", vinaigrette: "10 c.à.s", ciboulette: "10 c.à.c" },
+      { nb: 11, asperge: "44", oeufs: "11", vinaigrette: "11 c.à.s", ciboulette: "11 c.à.c" },
+      { nb: 12, asperge: "48", oeufs: "12", vinaigrette: "12 c.à.s", ciboulette: "12 c.à.c" },
+      { nb: 13, asperge: "52", oeufs: "13", vinaigrette: "13 c.à.s", ciboulette: "13 c.à.c" },
+      { nb: 14, asperge: "56", oeufs: "14", vinaigrette: "14 c.à.s", ciboulette: "14 c.à.c" },
+      { nb: 15, asperge: "60", oeufs: "15", vinaigrette: "15 c.à.s", ciboulette: "15 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher le pied des asperges et les attacher en botte.", badge: null },
+      { icone: "💧", titre: "Cuire", detail: "Cuire les asperges 10 à 12 minutes dans l'eau bouillante salée : elles doivent rester légèrement fermes.", badge: "⏱ 12 min" },
+      { icone: "🥚", titre: "Œufs durs", detail: "Cuire les œufs 9 minutes, les refroidir, les écaler et les émietter à la fourchette (le « mimosa »).", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer les asperges égouttées dans les assiettes, napper de vinaigrette.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Parsemer généreusement d'œuf mimosa et de ciboulette ciselée. ASTUCE CHEF : plongez les asperges dans l'eau glacée dès la fin de la cuisson pour fixer leur belle couleur verte.", badge: null }
+    ]
+  },
 });

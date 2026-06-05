@@ -1076,4 +1076,74 @@ tapenade: {
       { icone: "🔪", titre: "Servir", detail: "Laisser tiédir avant de démouler et trancher. ASTUCE CHEF : pour un cake bien aéré, sortez les œufs et le lait du réfrigérateur à l'avance et ne travaillez pas trop la pâte.", badge: null }
     ]
   },
+  crostini: {
+    nom: "Crostini tomate-mozzarella",
+    dateAjout: "2026-06-05",
+    cat: "aperitifs", pays: "italie",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Très facile",
+    emoji: "🥖",
+    description: "De fines tranches de pain grillé frottées à l'ail et garnies de tomate, mozzarella et basilic. L'apéritif italien express.",
+    tableauCrostini: [
+      { nb: 1, painbaguette: "3 tranches", tomate: "1", ail: "½", basilic: "2 feuilles", huileolive: "1 c.à.s", mozzarella: "20 g" },
+      { nb: 2, painbaguette: "6 tranches", tomate: "2", ail: "1", basilic: "4 feuilles", huileolive: "2 c.à.s", mozzarella: "40 g" },
+      { nb: 3, painbaguette: "9 tranches", tomate: "3", ail: "1½", basilic: "6 feuilles", huileolive: "3 c.à.s", mozzarella: "60 g" },
+      { nb: 4, painbaguette: "12 tranches", tomate: "4", ail: "2", basilic: "8 feuilles", huileolive: "4 c.à.s", mozzarella: "80 g" },
+      { nb: 5, painbaguette: "15 tranches", tomate: "5", ail: "2½", basilic: "10 feuilles", huileolive: "5 c.à.s", mozzarella: "100 g" },
+      { nb: 6, painbaguette: "18 tranches", tomate: "6", ail: "3", basilic: "12 feuilles", huileolive: "6 c.à.s", mozzarella: "120 g" },
+      { nb: 7, painbaguette: "21 tranches", tomate: "7", ail: "3½", basilic: "14 feuilles", huileolive: "7 c.à.s", mozzarella: "140 g" },
+      { nb: 8, painbaguette: "24 tranches", tomate: "8", ail: "4", basilic: "16 feuilles", huileolive: "8 c.à.s", mozzarella: "160 g" },
+      { nb: 9, painbaguette: "27 tranches", tomate: "9", ail: "4½", basilic: "18 feuilles", huileolive: "9 c.à.s", mozzarella: "180 g" },
+      { nb: 10, painbaguette: "30 tranches", tomate: "10", ail: "5", basilic: "20 feuilles", huileolive: "10 c.à.s", mozzarella: "200 g" },
+      { nb: 11, painbaguette: "33 tranches", tomate: "11", ail: "5½", basilic: "22 feuilles", huileolive: "11 c.à.s", mozzarella: "220 g" },
+      { nb: 12, painbaguette: "36 tranches", tomate: "12", ail: "6", basilic: "24 feuilles", huileolive: "12 c.à.s", mozzarella: "240 g" },
+      { nb: 13, painbaguette: "39 tranches", tomate: "13", ail: "6½", basilic: "26 feuilles", huileolive: "13 c.à.s", mozzarella: "260 g" },
+      { nb: 14, painbaguette: "42 tranches", tomate: "14", ail: "7", basilic: "28 feuilles", huileolive: "14 c.à.s", mozzarella: "280 g" },
+      { nb: 15, painbaguette: "45 tranches", tomate: "15", ail: "7½", basilic: "30 feuilles", huileolive: "15 c.à.s", mozzarella: "300 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Griller", detail: "Toaster les tranches de pain jusqu'à ce qu'elles soient dorées et croustillantes.", badge: null },
+      { icone: "🧄", titre: "Aïl", detail: "Frotter chaque tranche encore chaude avec une gousse d'ail coupée.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Couper les tomates en petits dés, assaisonner d'huile d'olive, sel et poivre.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Répartir la tomate et des éclats de mozzarella sur les toasts.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Décorer d'une feuille de basilic et d'un filet d'huile. ASTUCE CHEF : garnissez les crostini juste avant de servir, sinon le pain ramollit et perd tout son croustillant.", badge: null }
+    ]
+  },
+  antipasti: {
+    nom: "Assiette d'antipasti",
+    dateAjout: "2026-06-05",
+    cat: "aperitifs", pays: "italie",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🫒",
+    description: "Le plateau apéritif à l'italienne : charcuterie, mozzarella, légumes marinés et olives joliment disposés. Convivial et sans cuisson.",
+    tableauAntipasti: [
+      { nb: 1, jamboncru: "2 tranches", mozzarella: "30 g", olivemixte: "30 g", tomateseche: "20 g", artichautmarine: "30 g", roquette: "15 g", huileolive: "1 c.à.s" },
+      { nb: 2, jamboncru: "4 tranches", mozzarella: "60 g", olivemixte: "60 g", tomateseche: "40 g", artichautmarine: "60 g", roquette: "30 g", huileolive: "2 c.à.s" },
+      { nb: 3, jamboncru: "6 tranches", mozzarella: "90 g", olivemixte: "90 g", tomateseche: "60 g", artichautmarine: "90 g", roquette: "45 g", huileolive: "3 c.à.s" },
+      { nb: 4, jamboncru: "8 tranches", mozzarella: "120 g", olivemixte: "120 g", tomateseche: "80 g", artichautmarine: "120 g", roquette: "60 g", huileolive: "4 c.à.s" },
+      { nb: 5, jamboncru: "10 tranches", mozzarella: "150 g", olivemixte: "150 g", tomateseche: "100 g", artichautmarine: "150 g", roquette: "75 g", huileolive: "5 c.à.s" },
+      { nb: 6, jamboncru: "12 tranches", mozzarella: "180 g", olivemixte: "180 g", tomateseche: "120 g", artichautmarine: "180 g", roquette: "90 g", huileolive: "6 c.à.s" },
+      { nb: 7, jamboncru: "14 tranches", mozzarella: "210 g", olivemixte: "210 g", tomateseche: "140 g", artichautmarine: "210 g", roquette: "105 g", huileolive: "7 c.à.s" },
+      { nb: 8, jamboncru: "16 tranches", mozzarella: "240 g", olivemixte: "240 g", tomateseche: "160 g", artichautmarine: "240 g", roquette: "120 g", huileolive: "8 c.à.s" },
+      { nb: 9, jamboncru: "18 tranches", mozzarella: "270 g", olivemixte: "270 g", tomateseche: "180 g", artichautmarine: "270 g", roquette: "135 g", huileolive: "9 c.à.s" },
+      { nb: 10, jamboncru: "20 tranches", mozzarella: "300 g", olivemixte: "300 g", tomateseche: "200 g", artichautmarine: "300 g", roquette: "150 g", huileolive: "10 c.à.s" },
+      { nb: 11, jamboncru: "22 tranches", mozzarella: "330 g", olivemixte: "330 g", tomateseche: "220 g", artichautmarine: "330 g", roquette: "165 g", huileolive: "11 c.à.s" },
+      { nb: 12, jamboncru: "24 tranches", mozzarella: "360 g", olivemixte: "360 g", tomateseche: "240 g", artichautmarine: "360 g", roquette: "180 g", huileolive: "12 c.à.s" },
+      { nb: 13, jamboncru: "26 tranches", mozzarella: "390 g", olivemixte: "390 g", tomateseche: "260 g", artichautmarine: "390 g", roquette: "195 g", huileolive: "13 c.à.s" },
+      { nb: 14, jamboncru: "28 tranches", mozzarella: "420 g", olivemixte: "420 g", tomateseche: "280 g", artichautmarine: "420 g", roquette: "210 g", huileolive: "14 c.à.s" },
+      { nb: 15, jamboncru: "30 tranches", mozzarella: "450 g", olivemixte: "450 g", tomateseche: "300 g", artichautmarine: "450 g", roquette: "225 g", huileolive: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍖", titre: "Charcuterie", detail: "Disposer joliment les tranches de jambon cru en rosaces sur un grand plat.", badge: null },
+      { icone: "🧀", titre: "Fromage", detail: "Ajouter la mozzarella (ou de la burrata) au centre.", badge: null },
+      { icone: "🫒", titre: "Légumes", detail: "Répartir les olives, tomates séchées et artichauts marinés en petits tas séparés.", badge: null },
+      { icone: "🌿", titre: "Roquette", detail: "Garnir les espaces de roquette pour la couleur et la fraîcheur.", badge: null },
+      { icone: "🫒", titre: "Finir", detail: "Arroser d'un filet d'huile d'olive et d'un tour de poivre. ASTUCE CHEF : jouez sur les contrastes de couleurs et de textures, et sortez la charcuterie 15 minutes avant pour qu'elle révèle tous ses arômes.", badge: null }
+    ]
+  },
 });

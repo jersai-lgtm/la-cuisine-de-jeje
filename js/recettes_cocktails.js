@@ -1025,4 +1025,74 @@ Object.assign(recettes, {
       { icone: "🥃", titre: "Servir", detail: "Servir tel quel pour l'effet visuel, ou remuer avant de boire. ASTUCE CHEF : utilisez de la crème légèrement fouettée pour une texture encore plus onctueuse.", badge: "⏱ 3 min" }
     ]
   },
+  french75: {
+    nom: "French 75",
+    dateAjout: "2026-06-05",
+    cat: "cocktails", pays: "france",
+    base: 1,
+    temps: "4 min",
+    niveau: "⭐ Facile",
+    emoji: "🍾",
+    description: "Un cocktail élégant et pétillant : gin et citron frappés, allongés au champagne. Festif et raffiné.",
+    tableauFrench75: [
+      { nb: 1, gin: "3 cl", juscitron: "1,5 cl", siropsucre: "1 cl", champagne: "8 cl" },
+      { nb: 2, gin: "6 cl", juscitron: "3 cl", siropsucre: "2 cl", champagne: "16 cl" },
+      { nb: 3, gin: "9 cl", juscitron: "4,5 cl", siropsucre: "3 cl", champagne: "24 cl" },
+      { nb: 4, gin: "12 cl", juscitron: "6 cl", siropsucre: "4 cl", champagne: "32 cl" },
+      { nb: 5, gin: "15 cl", juscitron: "7,5 cl", siropsucre: "5 cl", champagne: "40 cl" },
+      { nb: 6, gin: "18 cl", juscitron: "9 cl", siropsucre: "6 cl", champagne: "48 cl" },
+      { nb: 7, gin: "21 cl", juscitron: "10,5 cl", siropsucre: "7 cl", champagne: "56 cl" },
+      { nb: 8, gin: "24 cl", juscitron: "12 cl", siropsucre: "8 cl", champagne: "64 cl" },
+      { nb: 9, gin: "27 cl", juscitron: "13,5 cl", siropsucre: "9 cl", champagne: "72 cl" },
+      { nb: 10, gin: "30 cl", juscitron: "15 cl", siropsucre: "10 cl", champagne: "80 cl" },
+      { nb: 11, gin: "33 cl", juscitron: "16,5 cl", siropsucre: "11 cl", champagne: "88 cl" },
+      { nb: 12, gin: "36 cl", juscitron: "18 cl", siropsucre: "12 cl", champagne: "96 cl" },
+      { nb: 13, gin: "39 cl", juscitron: "19,5 cl", siropsucre: "13 cl", champagne: "1,04 L" },
+      { nb: 14, gin: "42 cl", juscitron: "21 cl", siropsucre: "14 cl", champagne: "1,12 L" },
+      { nb: 15, gin: "45 cl", juscitron: "22,5 cl", siropsucre: "15 cl", champagne: "1,2 L" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥃", titre: "Au shaker", detail: "Verser le gin, le jus de citron et le sirop de sucre dans un shaker rempli de glaçons.", badge: null },
+      { icone: "🤝", titre: "Frapper", detail: "Secouer vigoureusement une dizaine de secondes.", badge: null },
+      { icone: "🥂", titre: "Filtrer", detail: "Filtrer dans une flûte à champagne.", badge: null },
+      { icone: "🍾", titre: "Allonger", detail: "Compléter doucement avec le champagne bien frais.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Décorer d'un zeste de citron. ASTUCE CHEF : utilisez une flûte glacée et un champagne brut bien froid pour préserver les bulles le plus longtemps possible.", badge: "⏱ 4 min" }
+    ]
+  },
+  paloma: {
+    nom: "Paloma",
+    dateAjout: "2026-06-05",
+    cat: "cocktails", pays: "mexique",
+    base: 1,
+    temps: "4 min",
+    niveau: "⭐ Facile",
+    emoji: "🍹",
+    description: "Le cocktail mexicain le plus populaire après la margarita : tequila et pamplemousse pétillant, avec un bord de verre salé.",
+    tableauPaloma: [
+      { nb: 1, tequila: "5 cl", juspamplemousse: "8 cl", juscitronvert: "1 cl", sodapamplemousse: "6 cl", sel: "1 pincée" },
+      { nb: 2, tequila: "10 cl", juspamplemousse: "16 cl", juscitronvert: "2 cl", sodapamplemousse: "12 cl", sel: "2 pincées" },
+      { nb: 3, tequila: "15 cl", juspamplemousse: "24 cl", juscitronvert: "3 cl", sodapamplemousse: "18 cl", sel: "3 pincées" },
+      { nb: 4, tequila: "20 cl", juspamplemousse: "32 cl", juscitronvert: "4 cl", sodapamplemousse: "24 cl", sel: "4 pincées" },
+      { nb: 5, tequila: "25 cl", juspamplemousse: "40 cl", juscitronvert: "5 cl", sodapamplemousse: "30 cl", sel: "5 pincées" },
+      { nb: 6, tequila: "30 cl", juspamplemousse: "48 cl", juscitronvert: "6 cl", sodapamplemousse: "36 cl", sel: "6 pincées" },
+      { nb: 7, tequila: "35 cl", juspamplemousse: "56 cl", juscitronvert: "7 cl", sodapamplemousse: "42 cl", sel: "7 pincées" },
+      { nb: 8, tequila: "40 cl", juspamplemousse: "64 cl", juscitronvert: "8 cl", sodapamplemousse: "48 cl", sel: "8 pincées" },
+      { nb: 9, tequila: "45 cl", juspamplemousse: "72 cl", juscitronvert: "9 cl", sodapamplemousse: "54 cl", sel: "9 pincées" },
+      { nb: 10, tequila: "50 cl", juspamplemousse: "80 cl", juscitronvert: "10 cl", sodapamplemousse: "60 cl", sel: "10 pincées" },
+      { nb: 11, tequila: "55 cl", juspamplemousse: "88 cl", juscitronvert: "11 cl", sodapamplemousse: "66 cl", sel: "11 pincées" },
+      { nb: 12, tequila: "60 cl", juspamplemousse: "96 cl", juscitronvert: "12 cl", sodapamplemousse: "72 cl", sel: "12 pincées" },
+      { nb: 13, tequila: "65 cl", juspamplemousse: "1,04 L", juscitronvert: "13 cl", sodapamplemousse: "78 cl", sel: "13 pincées" },
+      { nb: 14, tequila: "70 cl", juspamplemousse: "1,12 L", juscitronvert: "14 cl", sodapamplemousse: "84 cl", sel: "14 pincées" },
+      { nb: 15, tequila: "75 cl", juspamplemousse: "1,2 L", juscitronvert: "15 cl", sodapamplemousse: "90 cl", sel: "15 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧂", titre: "Givrer", detail: "Frotter le bord du verre avec du citron vert et le tremper dans du sel.", badge: null },
+      { icone: "🧊", titre: "Glace", detail: "Remplir le verre de glaçons.", badge: null },
+      { icone: "🍹", titre: "Assembler", detail: "Verser la tequila, le jus de pamplemousse et le jus de citron vert.", badge: null },
+      { icone: "💧", titre: "Pétiller", detail: "Compléter avec le soda au pamplemousse et remuer délicatement.", badge: null },
+      { icone: "🍊", titre: "Servir", detail: "Décorer d'une tranche de pamplemousse. ASTUCE CHEF : un jus de pamplemousse rose pressé minute, plutôt qu'un soda seul, donne une Paloma bien plus fraîche et parfumée.", badge: "⏱ 4 min" }
+    ]
+  },
 });

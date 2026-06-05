@@ -1094,4 +1094,39 @@ Object.assign(recettes, {
       { icone: "🍞", titre: "Servir", detail: "Servir brûlant dans la poêle, avec du pain frais pour saucer.", badge: null }
     ]
   },
+  oeufbrouille: {
+    nom: "Œufs brouillés crémeux",
+    dateAjout: "2026-06-05",
+    cat: "brunch", pays: "france",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Très facile",
+    emoji: "🍳",
+    description: "Des œufs brouillés fondants et crémeux, cuits tout doucement. La base d'un brunch réussi, sur une tranche de pain grillé.",
+    tableauOeufbrouille: [
+      { nb: 1, oeufs: "2", beurre: "8 g", creme: "1 cl", ciboulette: "1 c.à.c" },
+      { nb: 2, oeufs: "4", beurre: "16 g", creme: "2 cl", ciboulette: "2 c.à.c" },
+      { nb: 3, oeufs: "6", beurre: "24 g", creme: "3 cl", ciboulette: "3 c.à.c" },
+      { nb: 4, oeufs: "8", beurre: "32 g", creme: "4 cl", ciboulette: "4 c.à.c" },
+      { nb: 5, oeufs: "10", beurre: "40 g", creme: "5 cl", ciboulette: "5 c.à.c" },
+      { nb: 6, oeufs: "12", beurre: "48 g", creme: "6 cl", ciboulette: "6 c.à.c" },
+      { nb: 7, oeufs: "14", beurre: "56 g", creme: "7 cl", ciboulette: "7 c.à.c" },
+      { nb: 8, oeufs: "16", beurre: "64 g", creme: "8 cl", ciboulette: "8 c.à.c" },
+      { nb: 9, oeufs: "18", beurre: "72 g", creme: "9 cl", ciboulette: "9 c.à.c" },
+      { nb: 10, oeufs: "20", beurre: "80 g", creme: "10 cl", ciboulette: "10 c.à.c" },
+      { nb: 11, oeufs: "22", beurre: "88 g", creme: "11 cl", ciboulette: "11 c.à.c" },
+      { nb: 12, oeufs: "24", beurre: "96 g", creme: "12 cl", ciboulette: "12 c.à.c" },
+      { nb: 13, oeufs: "26", beurre: "104 g", creme: "13 cl", ciboulette: "13 c.à.c" },
+      { nb: 14, oeufs: "28", beurre: "112 g", creme: "14 cl", ciboulette: "14 c.à.c" },
+      { nb: 15, oeufs: "30", beurre: "120 g", creme: "15 cl", ciboulette: "15 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Battre", detail: "Battre les œufs en omelette avec une pincée de sel.", badge: null },
+      { icone: "🧈", titre: "Beurre", detail: "Faire fondre le beurre dans une poêle à feu très doux.", badge: null },
+      { icone: "🍳", titre: "Brouiller", detail: "Verser les œufs et remuer constamment à la spatule, à feu doux, sans jamais les laisser attacher.", badge: "⏱ 4 min" },
+      { icone: "🥛", titre: "Crémer", detail: "Retirer du feu quand les œufs sont encore baveux, ajouter la crème froide pour stopper la cuisson.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de ciboulette et servir aussitôt sur du pain grillé. ASTUCE CHEF : les œufs continuent de cuire dans la poêle chaude ; coupez le feu quand ils semblent encore un peu trop baveux, ils seront parfaits dans l'assiette.", badge: null }
+    ]
+  },
 });

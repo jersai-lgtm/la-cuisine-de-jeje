@@ -1406,4 +1406,75 @@ Object.assign(recettes, {
       { icone: "🍲", titre: "Servir", detail: "Servir chaud. ASTUCE CHEF : un peu de fromage râpé fondu par-dessus, et les enfants adorent.", badge: null }
     ]
   },
+  bisquehomard: {
+    nom: "Bisque de homard",
+    dateAjout: "2026-06-05",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐ Moyen",
+    emoji: "🦞",
+    description: "Un velouté de fête, riche et parfumé, préparé à partir de carcasses de homard, relevé de cognac et lié à la crème.",
+    tableauBisquehomard: [
+      { nb: 1, carcassehomard: "150 g", tomate: "1", oignon: "0", carotte: "½", creme: "4 cl", cognac: "1 cl", riz: "10 g" },
+      { nb: 2, carcassehomard: "300 g", tomate: "2", oignon: "½", carotte: "1", creme: "8 cl", cognac: "2 cl", riz: "20 g" },
+      { nb: 3, carcassehomard: "450 g", tomate: "3", oignon: "1", carotte: "1½", creme: "12 cl", cognac: "3 cl", riz: "30 g" },
+      { nb: 4, carcassehomard: "600 g", tomate: "4", oignon: "1", carotte: "2", creme: "16 cl", cognac: "4 cl", riz: "40 g" },
+      { nb: 5, carcassehomard: "750 g", tomate: "5", oignon: "1", carotte: "2½", creme: "20 cl", cognac: "5 cl", riz: "50 g" },
+      { nb: 6, carcassehomard: "900 g", tomate: "6", oignon: "1½", carotte: "3", creme: "24 cl", cognac: "6 cl", riz: "60 g" },
+      { nb: 7, carcassehomard: "1050 g", tomate: "7", oignon: "2", carotte: "3½", creme: "28 cl", cognac: "7 cl", riz: "70 g" },
+      { nb: 8, carcassehomard: "1200 g", tomate: "8", oignon: "2", carotte: "4", creme: "32 cl", cognac: "8 cl", riz: "80 g" },
+      { nb: 9, carcassehomard: "1350 g", tomate: "9", oignon: "2", carotte: "4½", creme: "36 cl", cognac: "9 cl", riz: "90 g" },
+      { nb: 10, carcassehomard: "1500 g", tomate: "10", oignon: "2½", carotte: "5", creme: "40 cl", cognac: "10 cl", riz: "100 g" },
+      { nb: 11, carcassehomard: "1650 g", tomate: "11", oignon: "3", carotte: "5½", creme: "44 cl", cognac: "11 cl", riz: "110 g" },
+      { nb: 12, carcassehomard: "1800 g", tomate: "12", oignon: "3", carotte: "6", creme: "48 cl", cognac: "12 cl", riz: "120 g" },
+      { nb: 13, carcassehomard: "1950 g", tomate: "13", oignon: "3", carotte: "6½", creme: "52 cl", cognac: "13 cl", riz: "130 g" },
+      { nb: 14, carcassehomard: "2100 g", tomate: "14", oignon: "3½", carotte: "7", creme: "56 cl", cognac: "14 cl", riz: "140 g" },
+      { nb: 15, carcassehomard: "2250 g", tomate: "15", oignon: "4", carotte: "7½", creme: "60 cl", cognac: "15 cl", riz: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦞", titre: "Saisir", detail: "Faire revenir les carcasses de homard concassées dans un peu de beurre jusqu'à ce qu'elles rougissent.", badge: "⏱ 5 min" },
+      { icone: "🔥", titre: "Flamber", detail: "Flamber au cognac, puis ajouter oignon et carotte taillés.", badge: null },
+      { icone: "🍅", titre: "Mijoter", detail: "Ajouter les tomates, le riz (qui liera la soupe) et de l'eau. Laisser mijoter 30 minutes.", badge: "⏱ 30 min" },
+      { icone: "🥄", titre: "Filtrer", detail: "Retirer les carcasses, mixer finement puis passer au chinois pour une texture veloutée.", badge: null },
+      { icone: "🥛", titre: "Crémer", detail: "Remettre sur le feu, ajouter la crème et rectifier l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud. ASTUCE CHEF : conservez les carcasses de homard ou de crevettes au congélateur ; il suffit d'en avoir assez pour réaliser une bisque maison sans rien gâcher.", badge: null }
+    ]
+  },
+  veloutecresson: {
+    nom: "Velouté de cresson",
+    dateAjout: "2026-06-05",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "Un velouté vert vif au goût légèrement poivré du cresson, adouci par la pomme de terre et la crème.",
+    tableauVeloutecresson: [
+      { nb: 1, cresson: "60 g", pdterre: "100 g", oignon: "0", bouillon: "20 cl", creme: "3 cl" },
+      { nb: 2, cresson: "120 g", pdterre: "200 g", oignon: "½", bouillon: "40 cl", creme: "6 cl" },
+      { nb: 3, cresson: "180 g", pdterre: "300 g", oignon: "1", bouillon: "60 cl", creme: "9 cl" },
+      { nb: 4, cresson: "240 g", pdterre: "400 g", oignon: "1", bouillon: "80 cl", creme: "12 cl" },
+      { nb: 5, cresson: "300 g", pdterre: "500 g", oignon: "1", bouillon: "1 L", creme: "15 cl" },
+      { nb: 6, cresson: "360 g", pdterre: "600 g", oignon: "1½", bouillon: "1,2 L", creme: "18 cl" },
+      { nb: 7, cresson: "420 g", pdterre: "700 g", oignon: "2", bouillon: "1,4 L", creme: "21 cl" },
+      { nb: 8, cresson: "480 g", pdterre: "800 g", oignon: "2", bouillon: "1,6 L", creme: "24 cl" },
+      { nb: 9, cresson: "540 g", pdterre: "900 g", oignon: "2", bouillon: "1,8 L", creme: "27 cl" },
+      { nb: 10, cresson: "600 g", pdterre: "1000 g", oignon: "2½", bouillon: "2 L", creme: "30 cl" },
+      { nb: 11, cresson: "660 g", pdterre: "1100 g", oignon: "3", bouillon: "2,2 L", creme: "33 cl" },
+      { nb: 12, cresson: "720 g", pdterre: "1200 g", oignon: "3", bouillon: "2,4 L", creme: "36 cl" },
+      { nb: 13, cresson: "780 g", pdterre: "1300 g", oignon: "3", bouillon: "2,6 L", creme: "39 cl" },
+      { nb: 14, cresson: "840 g", pdterre: "1400 g", oignon: "3½", bouillon: "2,8 L", creme: "42 cl" },
+      { nb: 15, cresson: "900 g", pdterre: "1500 g", oignon: "4", bouillon: "3 L", creme: "45 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Suer", detail: "Faire suer l'oignon émincé dans un peu de beurre sans coloration.", badge: null },
+      { icone: "🥔", titre: "Pommes de terre", detail: "Ajouter les pommes de terre en dés et le bouillon. Cuire 15 minutes.", badge: "⏱ 15 min" },
+      { icone: "🌿", titre: "Cresson", detail: "Ajouter le cresson lavé et cuire seulement 3 minutes pour garder sa couleur.", badge: "⏱ 3 min" },
+      { icone: "🥄", titre: "Mixer", detail: "Mixer finement jusqu'à obtenir un velouté lisse.", badge: null },
+      { icone: "🥛", titre: "Crémer et servir", detail: "Incorporer la crème, assaisonner et servir. ASTUCE CHEF : gardez quelques feuilles de cresson crues pour la déco et ajoutez-les au dernier moment, elles apportent fraîcheur et croquant.", badge: null }
+    ]
+  },
 });

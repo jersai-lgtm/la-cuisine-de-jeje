@@ -718,4 +718,39 @@ Object.assign(recettes, {
       { icone: "💧", titre: "Finir", detail: "Allonger d'un trait d'eau gazeuse et remuer. ASTUCE CHEF : remplacez le sirop d'agave par du miel liquide légèrement détendu à l'eau chaude pour une douceur plus parfumée.", badge: "⏱ 4 min" }
     ]
   },
+  gingerbeer: {
+    nom: "Ginger beer maison",
+    dateAjout: "2026-06-05",
+    cat: "mocktails", pays: "angleterre",
+    base: 1,
+    temps: "15 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🫚",
+    description: "Une limonade pétillante et relevée au gingembre frais, sans alcool. Piquante, désaltérante et naturellement parfumée.",
+    tableauGingerbeer: [
+      { nb: 1, gingembre: "15 g", juscitron: "2 cl", sucrecanne: "2 c.à.c", eauGaz: "18 cl" },
+      { nb: 2, gingembre: "30 g", juscitron: "4 cl", sucrecanne: "4 c.à.c", eauGaz: "36 cl" },
+      { nb: 3, gingembre: "45 g", juscitron: "6 cl", sucrecanne: "6 c.à.c", eauGaz: "54 cl" },
+      { nb: 4, gingembre: "60 g", juscitron: "8 cl", sucrecanne: "8 c.à.c", eauGaz: "72 cl" },
+      { nb: 5, gingembre: "75 g", juscitron: "10 cl", sucrecanne: "10 c.à.c", eauGaz: "90 cl" },
+      { nb: 6, gingembre: "90 g", juscitron: "12 cl", sucrecanne: "12 c.à.c", eauGaz: "1,08 L" },
+      { nb: 7, gingembre: "105 g", juscitron: "14 cl", sucrecanne: "14 c.à.c", eauGaz: "1,26 L" },
+      { nb: 8, gingembre: "120 g", juscitron: "16 cl", sucrecanne: "16 c.à.c", eauGaz: "1,44 L" },
+      { nb: 9, gingembre: "135 g", juscitron: "18 cl", sucrecanne: "18 c.à.c", eauGaz: "1,62 L" },
+      { nb: 10, gingembre: "150 g", juscitron: "20 cl", sucrecanne: "20 c.à.c", eauGaz: "1,8 L" },
+      { nb: 11, gingembre: "165 g", juscitron: "22 cl", sucrecanne: "22 c.à.c", eauGaz: "1,98 L" },
+      { nb: 12, gingembre: "180 g", juscitron: "24 cl", sucrecanne: "24 c.à.c", eauGaz: "2,16 L" },
+      { nb: 13, gingembre: "195 g", juscitron: "26 cl", sucrecanne: "26 c.à.c", eauGaz: "2,34 L" },
+      { nb: 14, gingembre: "210 g", juscitron: "28 cl", sucrecanne: "28 c.à.c", eauGaz: "2,52 L" },
+      { nb: 15, gingembre: "225 g", juscitron: "30 cl", sucrecanne: "30 c.à.c", eauGaz: "2,7 L" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫚", titre: "Râper", detail: "Râper finement le gingembre frais (avec la peau, bien lavé).", badge: null },
+      { icone: "🍯", titre: "Sirop", detail: "Faire chauffer le gingembre avec le sucre et un peu d'eau 5 minutes pour obtenir un sirop parfumé.", badge: "⏱ 5 min" },
+      { icone: "⏳", titre: "Infuser", detail: "Laisser infuser hors du feu puis filtrer.", badge: null },
+      { icone: "🧊", titre: "Assembler", detail: "Dans un verre rempli de glaçons, verser le sirop de gingembre et le jus de citron.", badge: null },
+      { icone: "💧", titre: "Pétiller", detail: "Compléter avec l'eau gazeuse bien fraîche et remuer. ASTUCE CHEF : ajustez la quantité de sirop de gingembre selon vos goûts ; plus vous en mettez, plus ça pique délicieusement en fin de bouche.", badge: null }
+    ]
+  },
 });

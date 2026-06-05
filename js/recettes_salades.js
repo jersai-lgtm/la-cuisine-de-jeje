@@ -861,4 +861,74 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir frais.", badge: null }
     ]
   },
+  saladenicoise: {
+    nom: "Salade niçoise",
+    dateAjout: "2026-06-05",
+    cat: "salades", pays: "france",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "La grande salade composée du Sud : thon, œufs, tomates, haricots verts, olives et anchois. Un plat complet, coloré et ensoleillé.",
+    tableauSaladenicoise: [
+      { nb: 1, thon: "60 g", oeufs: "1", tomate: "1", haricotvert: "50 g", olivenoire: "25 g", salade: "40 g", anchois: "1", pdterre: "80 g" },
+      { nb: 2, thon: "120 g", oeufs: "2", tomate: "2", haricotvert: "100 g", olivenoire: "50 g", salade: "80 g", anchois: "2", pdterre: "160 g" },
+      { nb: 3, thon: "180 g", oeufs: "3", tomate: "3", haricotvert: "150 g", olivenoire: "75 g", salade: "120 g", anchois: "3", pdterre: "240 g" },
+      { nb: 4, thon: "240 g", oeufs: "4", tomate: "4", haricotvert: "200 g", olivenoire: "100 g", salade: "160 g", anchois: "4", pdterre: "320 g" },
+      { nb: 5, thon: "300 g", oeufs: "5", tomate: "5", haricotvert: "250 g", olivenoire: "125 g", salade: "200 g", anchois: "5", pdterre: "400 g" },
+      { nb: 6, thon: "360 g", oeufs: "6", tomate: "6", haricotvert: "300 g", olivenoire: "150 g", salade: "240 g", anchois: "6", pdterre: "480 g" },
+      { nb: 7, thon: "420 g", oeufs: "7", tomate: "7", haricotvert: "350 g", olivenoire: "175 g", salade: "280 g", anchois: "7", pdterre: "560 g" },
+      { nb: 8, thon: "480 g", oeufs: "8", tomate: "8", haricotvert: "400 g", olivenoire: "200 g", salade: "320 g", anchois: "8", pdterre: "640 g" },
+      { nb: 9, thon: "540 g", oeufs: "9", tomate: "9", haricotvert: "450 g", olivenoire: "225 g", salade: "360 g", anchois: "9", pdterre: "720 g" },
+      { nb: 10, thon: "600 g", oeufs: "10", tomate: "10", haricotvert: "500 g", olivenoire: "250 g", salade: "400 g", anchois: "10", pdterre: "800 g" },
+      { nb: 11, thon: "660 g", oeufs: "11", tomate: "11", haricotvert: "550 g", olivenoire: "275 g", salade: "440 g", anchois: "11", pdterre: "880 g" },
+      { nb: 12, thon: "720 g", oeufs: "12", tomate: "12", haricotvert: "600 g", olivenoire: "300 g", salade: "480 g", anchois: "12", pdterre: "960 g" },
+      { nb: 13, thon: "780 g", oeufs: "13", tomate: "13", haricotvert: "650 g", olivenoire: "325 g", salade: "520 g", anchois: "13", pdterre: "1040 g" },
+      { nb: 14, thon: "840 g", oeufs: "14", tomate: "14", haricotvert: "700 g", olivenoire: "350 g", salade: "560 g", anchois: "14", pdterre: "1120 g" },
+      { nb: 15, thon: "900 g", oeufs: "15", tomate: "15", haricotvert: "750 g", olivenoire: "375 g", salade: "600 g", anchois: "15", pdterre: "1200 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Cuissons", detail: "Cuire les pommes de terre et les haricots verts, les œufs durs 9 minutes. Tout refroidir.", badge: "⏱ 15 min" },
+      { icone: "🔪", titre: "Tailler", detail: "Couper les tomates en quartiers, les pommes de terre et les œufs en rondelles.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer la salade au fond, puis répartir harmonieusement tous les éléments.", badge: null },
+      { icone: "🐟", titre: "Garnir", detail: "Ajouter le thon émietté, les olives et les filets d'anchois.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Arroser d'une vinaigrette à l'huile d'olive juste avant de servir. ASTUCE CHEF : assaisonnez la salade niçoise au tout dernier moment pour que rien ne ramollisse et que les couleurs restent éclatantes.", badge: null }
+    ]
+  },
+  saladegrecque: {
+    nom: "Salade grecque",
+    dateAjout: "2026-06-05",
+    cat: "salades", pays: "grece",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Très facile",
+    emoji: "🥗",
+    description: "La fraîcheur méditerranéenne en assiette : tomates, concombre, feta, olives et oignon rouge, simplement assaisonnés d'huile d'olive et d'origan.",
+    tableauSaladegrecque: [
+      { nb: 1, tomate: "1½", concombre: "½", feta: "50 g", olivenoire: "25 g", oignonrouge: "0", huileolive: "1 c.à.s", origan: "0,5 c.à.c" },
+      { nb: 2, tomate: "3", concombre: "1", feta: "100 g", olivenoire: "50 g", oignonrouge: "½", huileolive: "2 c.à.s", origan: "1 c.à.c" },
+      { nb: 3, tomate: "4½", concombre: "1½", feta: "150 g", olivenoire: "75 g", oignonrouge: "1", huileolive: "3 c.à.s", origan: "1,5 c.à.c" },
+      { nb: 4, tomate: "6", concombre: "2", feta: "200 g", olivenoire: "100 g", oignonrouge: "1", huileolive: "4 c.à.s", origan: "2 c.à.c" },
+      { nb: 5, tomate: "7½", concombre: "2½", feta: "250 g", olivenoire: "125 g", oignonrouge: "1", huileolive: "5 c.à.s", origan: "2,5 c.à.c" },
+      { nb: 6, tomate: "9", concombre: "3", feta: "300 g", olivenoire: "150 g", oignonrouge: "1½", huileolive: "6 c.à.s", origan: "3 c.à.c" },
+      { nb: 7, tomate: "10½", concombre: "3½", feta: "350 g", olivenoire: "175 g", oignonrouge: "2", huileolive: "7 c.à.s", origan: "3,5 c.à.c" },
+      { nb: 8, tomate: "12", concombre: "4", feta: "400 g", olivenoire: "200 g", oignonrouge: "2", huileolive: "8 c.à.s", origan: "4 c.à.c" },
+      { nb: 9, tomate: "13½", concombre: "4½", feta: "450 g", olivenoire: "225 g", oignonrouge: "2", huileolive: "9 c.à.s", origan: "4,5 c.à.c" },
+      { nb: 10, tomate: "15", concombre: "5", feta: "500 g", olivenoire: "250 g", oignonrouge: "2½", huileolive: "10 c.à.s", origan: "5 c.à.c" },
+      { nb: 11, tomate: "16½", concombre: "5½", feta: "550 g", olivenoire: "275 g", oignonrouge: "3", huileolive: "11 c.à.s", origan: "5,5 c.à.c" },
+      { nb: 12, tomate: "18", concombre: "6", feta: "600 g", olivenoire: "300 g", oignonrouge: "3", huileolive: "12 c.à.s", origan: "6 c.à.c" },
+      { nb: 13, tomate: "19½", concombre: "6½", feta: "650 g", olivenoire: "325 g", oignonrouge: "3", huileolive: "13 c.à.s", origan: "6,5 c.à.c" },
+      { nb: 14, tomate: "21", concombre: "7", feta: "700 g", olivenoire: "350 g", oignonrouge: "3½", huileolive: "14 c.à.s", origan: "7 c.à.c" },
+      { nb: 15, tomate: "22½", concombre: "7½", feta: "750 g", olivenoire: "375 g", oignonrouge: "4", huileolive: "15 c.à.s", origan: "7,5 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Tailler", detail: "Couper les tomates en quartiers et le concombre en demi-rondelles épaisses.", badge: null },
+      { icone: "🧅", titre: "Oignon", detail: "Émincer finement l'oignon rouge.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Réunir les légumes dans un saladier avec les olives.", badge: null },
+      { icone: "🧀", titre: "Feta", detail: "Poser la feta en gros cubes (ou un bloc entier, à la grecque) sur le dessus.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Arroser d'huile d'olive, parsemer d'origan, poivrer (pas besoin de sel, la feta en apporte). ASTUCE CHEF : ne coupez pas la feta en petits dés ; un beau morceau posé entier sur la salade, c'est la vraie présentation grecque.", badge: null }
+    ]
+  },
 });
