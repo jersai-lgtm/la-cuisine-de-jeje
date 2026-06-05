@@ -192,6 +192,27 @@ async function lcSauvegarder() {
   } catch (e) { console.warn("Sauvegarde liste courses échouée :", e); }
 }
 
+// Temps de prep ACTIF d'une recette : on ne garde que la partie avant le "+"
+// (marinade, repos, frigo, "48h pâte"… = attente passive, exclue du total).
+window.lcPrepMinutes = function (temps) {
+  if (!temps) return 0;
+  const s = String(temps).split("+")[0].replace("~", "").trim().toLowerCase();
+  const mh = s.match(/(\d+)\s*h\s*(\d+)?/);
+  if (mh) return (parseInt(mh[1]) || 0) * 60 + (parseInt(mh[2] || "0") || 0);
+  const mm = s.match(/(\d+)\s*min/);
+  if (mm) return parseInt(mm[1]) || 0;
+  const mn = s.match(/(\d+)/);
+  return mn ? parseInt(mn[1]) : 0;
+};
+window.lcFmtDuree = function (min) {
+  min = Math.round(min);
+  if (min <= 0) return "—";
+  const h = Math.floor(min / 60), m = min % 60;
+  if (h && m) return h + " h " + (m < 10 ? "0" + m : m);
+  if (h) return h + " h";
+  return m + " min";
+};
+
 // === Afficher le panier de recettes (zone du haut) ===
 function lcAfficherPanier() {
   const panier = document.getElementById("lc-panier");
@@ -205,12 +226,21 @@ function lcAfficherPanier() {
     return;
   }
   if (btnReset) btnReset.style.display = "inline-flex";
-  
-  panier.innerHTML = `<h3 class="lc-panier-titre">🍽️ ${liste.length} recette${liste.length > 1 ? "s" : ""} sélectionnée${liste.length > 1 ? "s" : ""}</h3>
+
+  let totalMin = 0;
+  liste.forEach(({ cle }) => { const r = recettes[cle]; if (r) totalMin += lcPrepMinutes(r.temps); });
+  const totalTxt = lcFmtDuree(totalMin);
+
+  panier.innerHTML = `<h3 class="lc-panier-titre">🍽️ ${liste.length} recette${liste.length > 1 ? "s" : ""} sélectionnée${liste.length > 1 ? "s" : ""}${totalMin > 0 ? ` <span style="font-size:13px;color:#9a97a0;font-weight:400">· ⏱ ≈ ${totalTxt} de prép.</span>` : ""}</h3>
     <div class="lc-panier-recettes">${liste.map(({cle, personnes}) => {
       const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
+      const r = recettes[cle];
+      const tempsTxt = (r && r.temps) ? r.temps : "";
       return `<div class="lc-recette-card">
-        <span class="lc-recette-nom">${nom}</span>
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px">
+          <span class="lc-recette-nom" style="flex:none;width:100%">${nom}</span>
+          ${tempsTxt ? `<span style="font-size:11px;color:#9a97a0;white-space:nowrap">⏱ ${tempsTxt}</span>` : ""}
+        </div>
         <div class="lc-recette-pers">
           <button onclick="lcChangerPersonnes('${cle}', -1)">−</button>
           <span>${personnes} pers.</span>
