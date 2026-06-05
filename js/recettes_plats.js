@@ -5251,11 +5251,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Base aromatique", detail: "Faire revenir les lardons puis l'oignon émincé dans une grande cocotte jusqu'à coloration.", badge: "⏱ 8 min" },
-      { icone: "🍖", titre: "Saisir les viandes", detail: "Ajouter le porc en morceaux et la saucisse fumée tranchée. Faire dorer sur toutes les faces.", badge: "⏱ 8 min" },
-      { icone: "🥬", titre: "Les choux", detail: "Ajouter la choucroute rincée, le chou frais émincé, les pruneaux, 2 feuilles de laurier, quelques baies de genièvre et du poivre. Mouiller d'un peu d'eau ou bouillon.", badge: null },
-      { icone: "⏳", titre: "Long mijotage", detail: "Couvrir et laisser mijoter à feu très doux au moins 1h30 en remuant de temps en temps. Plus c'est long, meilleur c'est.", badge: "⏱ 1h30" },
-      { icone: "🔁", titre: "Le secret", detail: "IDÉAL : laisser refroidir et réchauffer le lendemain — le bigos développe tous ses arômes au réchauffage.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le porc et les saucisses en morceaux, émincer l'oignon et rincer la choucroute.", badge: null },
+      { icone: "🧅", titre: "Base aromatique", detail: "Faire revenir l'oignon et les lardons.", badge: null },
+      { icone: "🥩", titre: "Saisir les viandes", detail: "Ajouter le porc et les saucisses fumées, les faire dorer.", badge: null },
+      { icone: "🥬", titre: "Les choux", detail: "Ajouter la choucroute et le chou frais émincé.", badge: null },
+      { icone: "⏳", titre: "Long mijotage", detail: "Mouiller, ajouter les pruneaux et laisser mijoter longuement.", badge: "⏱ 2 h" },
+      { icone: "🍷", titre: "Le secret", detail: "Un verre de vin rouge et le repos d'une nuit intensifient les saveurs.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud avec du pain. ASTUCE CHEF : le bigos est meilleur réchauffé 2-3 fois ; préparez-le à l'avance, c'est la tradition polonaise.", badge: null }
     ]
   },
   shaptatibet: {
@@ -5285,11 +5287,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Mariner", detail: "Émincer le bœuf finement. Mariner 15 min avec sauce soja, gingembre râpé et une pincée de Maïzena.", badge: "⏱ 15 min" },
-      { icone: "🔥", titre: "Saisir", detail: "Saisir le bœuf à feu vif dans un wok très chaud jusqu'à coloration. Réserver.", badge: "⏱ 4 min" },
-      { icone: "🫑", titre: "Légumes", detail: "Faire sauter poivrons, oignons et piment émincés en gardant du croquant.", badge: "⏱ 5 min" },
-      { icone: "🥩", titre: "Réunir", detail: "Remettre le bœuf, ajouter l'ail, un peu de bouillon et de sauce soja. Laisser napper.", badge: "⏱ 3 min" },
-      { icone: "🍚", titre: "Service", detail: "Servir bien chaud avec du riz, coriandre par-dessus.", badge: null }
+      { icone: "🔪", titre: "Émincer", detail: "Tailler le bœuf en fines lanières, émincer poivrons, oignon, ail et piment.", badge: null },
+      { icone: "🌶️", titre: "Mariner", detail: "Mariner le bœuf avec ail, sauce soja et piment.", badge: "⏱ 20 min" },
+      { icone: "🔥", titre: "Saisir", detail: "Saisir le bœuf à feu très vif pour qu'il reste tendre. Réserver.", badge: null },
+      { icone: "🫑", titre: "Légumes", detail: "Faire sauter poivrons et oignon en gardant du croquant.", badge: null },
+      { icone: "🥢", titre: "Réunir", detail: "Remettre le bœuf, ajouter le piment et lier rapidement.", badge: null },
+      { icone: "😋", titre: "Ajuster", detail: "Rectifier l'assaisonnement (sauce soja, sel).", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir bien chaud avec du riz. ASTUCE CHEF : cuisez à feu maximal et rapidement, comme au wok, pour garder le bœuf juteux et les légumes croquants.", badge: null }
     ]
   },
   rizdjondjon: {
@@ -5319,11 +5323,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍄", titre: "Réhydrater", detail: "Faire bouillir les champignons djon djon dans de l'eau, puis filtrer : on garde le JUS NOIR (on jette les champignons).", badge: "⏱ 15 min" },
-      { icone: "🧅", titre: "Aromates", detail: "Faire revenir échalote, ail et épices (thym, clou de girofle, piment) dans l'huile.", badge: "⏱ 5 min" },
-      { icone: "🫛", titre: "Pois", detail: "Ajouter les pois, faire revenir 2 min.", badge: null },
-      { icone: "🍚", titre: "Cuisson du riz", detail: "Ajouter le riz rincé puis le jus noir des champignons (à hauteur). Couvrir et cuire à feu doux sans remuer.", badge: "⏱ 20 min" },
-      { icone: "🍽️", titre: "Repos", detail: "Laisser reposer 5 min couvert, puis aérer à la fourchette. Le riz est noir et parfumé.", badge: null }
+      { icone: "🍄", titre: "Réhydrater", detail: "Faire tremper les champignons djon-djon, puis filtrer l'eau noire parfumée (à conserver).", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Faire revenir échalote et ail dans un peu d'huile.", badge: null },
+      { icone: "🫛", titre: "Pois", detail: "Ajouter les pois et les faire revenir.", badge: null },
+      { icone: "🍚", titre: "Le riz", detail: "Ajouter le riz, l'enrober, puis verser l'eau de djon-djon.", badge: null },
+      { icone: "⏳", titre: "Cuisson", detail: "Couvrir et cuire à feu doux jusqu'à absorption.", badge: "⏱ 20 min" },
+      { icone: "😴", titre: "Repos", detail: "Laisser reposer hors du feu 5 minutes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égrainer à la fourchette et servir. ASTUCE CHEF : c'est l'eau de trempage des djon-djon qui donne la couleur noire et le goût unique ; ne la jetez surtout pas.", badge: null }
     ]
   },
   suya: {
@@ -5353,11 +5359,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥜", titre: "Yaji", detail: "Mixer/piler les cacahuètes grillées en poudre, mélanger avec paprika, gingembre, piment, ail en poudre, bouillon et sel. C'est le yaji.", badge: null },
-      { icone: "🔪", titre: "Émincer", detail: "Couper le bœuf en fines lamelles et les enfiler sur des brochettes.", badge: null },
-      { icone: "🌶️", titre: "Enrober", detail: "Badigeonner les brochettes d'un peu d'huile, puis les rouler généreusement dans le yaji.", badge: "⏱ 10 min" },
-      { icone: "🔥", titre: "Griller", detail: "Griller au barbecue, gril ou poêle bien chaude, en retournant, jusqu'à caramélisation.", badge: "⏱ 8 min" },
-      { icone: "🧅", titre: "Service", detail: "Saupoudrer encore un peu de yaji, servir avec oignon cru, tomate et quartiers de citron.", badge: null }
+      { icone: "🥜", titre: "Yaji", detail: "Mixer les cacahuètes grillées avec paprika, gingembre, piment et sel pour le mélange yaji.", badge: null },
+      { icone: "🔪", titre: "Émincer", detail: "Tailler le bœuf en fines lanières.", badge: null },
+      { icone: "🍢", titre: "Brochettes", detail: "Enfiler le bœuf sur des brochettes.", badge: null },
+      { icone: "🌶️", titre: "Enrober", detail: "Enrober généreusement les brochettes de yaji.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller au barbecue ou au four en retournant régulièrement.", badge: "⏱ 10 min" },
+      { icone: "🥜", titre: "Resaupoudrer", detail: "Saupoudrer encore de yaji à la sortie du gril.", badge: null },
+      { icone: "🧅", titre: "Service", detail: "Servir avec oignon cru et tomate. ASTUCE CHEF : dégraissez bien les cacahuètes après mouture pour que le yaji adhère à la viande sans être gras.", badge: null }
     ]
   },
   jerkchicken: {
@@ -5387,11 +5395,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Marinade jerk", detail: "Mixer oignon, scotch bonnet (avec parcimonie !), ail, thym, piment de la Jamaïque, cannelle, gingembre, sauce soja, jus de citron vert et un peu d'huile.", badge: null },
-      { icone: "🍗", titre: "Enrober", detail: "Inciser le poulet et l'enrober généreusement de marinade.", badge: null },
-      { icone: "⏳", titre: "Mariner", detail: "Laisser mariner au frais le plus longtemps possible (idéalement une nuit).", badge: "⏱ 2h+" },
-      { icone: "🔥", titre: "Griller", detail: "Cuire au barbecue ou au four à 200°C en retournant et badigeonnant, jusqu'à caramélisation.", badge: "⏱ 35 min" },
-      { icone: "🍚", titre: "Service", detail: "Servir avec du riz aux pois (rice and peas) et des rondelles de banane plantain.", badge: null }
+      { icone: "🌶️", titre: "Marinade jerk", detail: "Mixer oignon, piment scotch bonnet, ail, thym et épices jerk en pâte.", badge: null },
+      { icone: "🍗", titre: "Préparer", detail: "Inciser le poulet pour que la marinade pénètre bien.", badge: null },
+      { icone: "🧤", titre: "Enrober", detail: "Enrober le poulet de marinade (avec des gants, le scotch bonnet est très fort).", badge: null },
+      { icone: "⏳", titre: "Mariner", detail: "Laisser mariner plusieurs heures, idéalement une nuit.", badge: "⏱ 4 h" },
+      { icone: "🔥", titre: "Griller", detail: "Griller lentement au barbecue ou au four en retournant.", badge: "⏱ 35 min" },
+      { icone: "🖌️", titre: "Badigeonner", detail: "Badigeonner du reste de marinade pendant la cuisson.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir avec du riz coco. ASTUCE CHEF : cuisson lente et marinade d'une nuit sont les deux secrets d'un vrai jerk fumé et parfumé.", badge: null }
     ]
   },
   lomosaltado: {
@@ -5421,11 +5431,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Saisir le bœuf", detail: "Couper le bœuf en lamelles. Saisir à feu TRÈS vif dans un wok bien chaud, en plusieurs fois. Réserver.", badge: "⏱ 4 min" },
-      { icone: "🧅", titre: "Légumes", detail: "Faire sauter l'oignon rouge en quartiers et la tomate, en gardant du croquant.", badge: "⏱ 3 min" },
-      { icone: "🥄", titre: "Déglacer", detail: "Déglacer avec sauce soja, vinaigre et un peu de bouillon. Remettre le bœuf, mélanger sans trop cuire.", badge: "⏱ 2 min" },
-      { icone: "🍟", titre: "Frites", detail: "Incorporer des frites maison bien dorées juste avant de servir (elles s'imprègnent de sauce).", badge: null },
-      { icone: "🍚", titre: "Service", detail: "Servir aussitôt avec du riz blanc et de la coriandre.", badge: null }
+      { icone: "🍚", titre: "Riz & frites", detail: "Cuire le riz et préparer les frites.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Tailler le bœuf en lanières, l'oignon rouge et les tomates en quartiers.", badge: null },
+      { icone: "🔥", titre: "Saisir le bœuf", detail: "Saisir le bœuf à feu très vif au wok. Réserver.", badge: null },
+      { icone: "🧅", titre: "Légumes", detail: "Faire sauter l'oignon et la tomate en gardant du croquant.", badge: null },
+      { icone: "🥢", titre: "Déglacer", detail: "Remettre le bœuf, déglacer à la sauce soja et au vinaigre.", badge: null },
+      { icone: "🍟", titre: "Frites", detail: "Ajouter les frites et mélanger juste avant de servir.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir aussitôt avec le riz. ASTUCE CHEF : ajoutez les frites à la toute fin pour qu'elles s'imprègnent du jus sans ramollir.", badge: null }
     ]
   },
   ajidegallina: {
@@ -5455,11 +5467,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Pocher", detail: "Pocher le poulet dans un bouillon, puis l'effilocher finement. Garder le bouillon.", badge: "⏱ 20 min" },
-      { icone: "🍞", titre: "Base crémeuse", detail: "Faire tremper le pain dans le lait. Mixer avec les noix et la pâte d'ají amarillo.", badge: null },
-      { icone: "🧅", titre: "Sauce", detail: "Faire revenir oignon et ail, ajouter la purée d'ají, puis la base pain/lait/noix. Détendre avec du bouillon.", badge: "⏱ 10 min" },
-      { icone: "🧀", titre: "Réunir", detail: "Incorporer le poulet effiloché et le parmesan. La sauce doit être onctueuse et nappante.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Service", detail: "Servir sur du riz blanc avec une pomme de terre, des olives noires et un demi-œuf dur.", badge: null }
+      { icone: "🍗", titre: "Pocher", detail: "Pocher le poulet dans un bouillon, puis l'effilocher (garder le bouillon).", badge: null },
+      { icone: "🍞", titre: "Base crémeuse", detail: "Faire tremper le pain de mie dans le lait.", badge: null },
+      { icone: "🌶️", titre: "Sauce", detail: "Faire revenir oignon et ají amarillo, ajouter le pain trempé et mixer.", badge: null },
+      { icone: "🥜", titre: "Lier", detail: "Incorporer les noix et le parmesan pour une sauce onctueuse.", badge: null },
+      { icone: "🍗", titre: "Réunir", detail: "Ajouter le poulet effiloché, détendre avec un peu de bouillon.", badge: null },
+      { icone: "😋", titre: "Ajuster", detail: "Rectifier l'assaisonnement et la consistance.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir sur du riz avec œuf dur et olives. ASTUCE CHEF : l'ají amarillo fait la couleur et le goût ; à défaut, une purée de poivron + curcuma en approche.", badge: null }
     ]
   },
   bandejapaisa: {
@@ -5489,11 +5503,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Haricots", detail: "Cuire les haricots rouges avec oignon, ail et un peu de plantain jusqu'à ce qu'ils soient fondants (ou en conserve pour gagner du temps).", badge: "⏱ 30 min" },
-      { icone: "🍚", titre: "Riz & viande", detail: "Cuire le riz blanc. Faire revenir le bœuf haché assaisonné (cumin, oignon).", badge: "⏱ 15 min" },
-      { icone: "🌭", titre: "Grillades", detail: "Griller le chorizo et la poitrine de porc jusqu'à ce qu'ils soient bien dorés et croustillants.", badge: "⏱ 10 min" },
-      { icone: "🍌", titre: "Plantain & œuf", detail: "Frire les tranches de banane plantain. Cuire les œufs au plat.", badge: "⏱ 8 min" },
-      { icone: "🍽️", titre: "Dresser", detail: "Tout disposer sur une grande assiette (l'abondance fait partie du plat), avec de l'avocat et une arepa.", badge: null }
+      { icone: "🫘", titre: "Haricots", detail: "Cuire les haricots rouges jusqu'à ce qu'ils soient fondants.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz blanc.", badge: null },
+      { icone: "🥩", titre: "Viande", detail: "Cuire le bœuf haché assaisonné.", badge: null },
+      { icone: "🔥", titre: "Grillades", detail: "Griller le chorizo et la poitrine de porc.", badge: null },
+      { icone: "🍌", titre: "Plantain", detail: "Frire les tranches de plantain mûr.", badge: null },
+      { icone: "🍳", titre: "Œuf", detail: "Cuire un œuf au plat.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposer tous les éléments côte à côte dans une grande assiette. ASTUCE CHEF : la bandeja paisa est un plat de partage généreux ; ne mélangez pas, chaque composant se déguste séparément.", badge: null }
     ]
   },
   pouletfafa: {
@@ -5523,11 +5539,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Saisir", detail: "Faire dorer les morceaux de poulet assaisonnés dans une cocotte.", badge: "⏱ 8 min" },
-      { icone: "🧅", titre: "Aromates", detail: "Ajouter oignon émincé et gingembre, faire revenir.", badge: "⏱ 3 min" },
-      { icone: "🥬", titre: "Les feuilles", detail: "Ajouter les épinards (ou feuilles de taro/fafa) et un peu d'eau. Laisser tomber les feuilles.", badge: "⏱ 5 min" },
-      { icone: "🥥", titre: "Lait de coco", detail: "Verser le lait de coco, saler, et laisser mijoter à feu doux jusqu'à ce que le poulet soit tendre.", badge: "⏱ 25 min" },
-      { icone: "🍚", titre: "Service", detail: "Servir avec du riz blanc.", badge: null }
+      { icone: "🍗", titre: "Saisir", detail: "Faire dorer les morceaux de poulet. Réserver.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Faire revenir l'oignon et le gingembre.", badge: null },
+      { icone: "🍗", titre: "Remettre", detail: "Remettre le poulet avec les aromates.", badge: null },
+      { icone: "🥬", titre: "Les feuilles", detail: "Ajouter les épinards (fafa) et les laisser tomber.", badge: null },
+      { icone: "🥥", titre: "Lait de coco", detail: "Verser le lait de coco et laisser mijoter.", badge: "⏱ 25 min" },
+      { icone: "😋", titre: "Ajuster", detail: "Rectifier l'assaisonnement.", badge: null },
+      { icone: "🍚", titre: "Service", detail: "Servir avec du riz. ASTUCE CHEF : ajoutez le lait de coco en fin de cuisson sans le faire bouillir fort, il reste ainsi bien onctueux.", badge: null }
     ]
   },
   riceandpeas: {
@@ -5557,11 +5575,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Aromates", detail: "Faire revenir l'oignon émincé, l'ail et le thym dans un filet d'huile au fond d'une casserole.", badge: "⏱ 3 min" },
-      { icone: "🥥", titre: "Coco & haricots", detail: "Ajouter les haricots rouges (cuits/égouttés), le lait de coco, autant d'eau, un piment entier (non percé) et du sel.", badge: null },
-      { icone: "🍚", titre: "Le riz", detail: "Porter à frémissement, ajouter le riz rincé. Le liquide doit dépasser le riz d'environ 1 cm.", badge: null },
-      { icone: "⏳", titre: "Cuisson", detail: "Couvrir et cuire à feu doux sans remuer jusqu'à absorption complète du liquide.", badge: "⏱ 18 min" },
-      { icone: "🍴", titre: "Repos", detail: "Retirer le piment, laisser reposer 5 min couvert, puis aérer à la fourchette. Servir avec un jerk chicken !", badge: null }
+      { icone: "🧅", titre: "Aromates", detail: "Faire revenir oignon, ail et thym.", badge: null },
+      { icone: "🥥", titre: "Coco & haricots", detail: "Ajouter le lait de coco, les haricots rouges et de l'eau.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler et ajouter un piment entier (non percé) pour parfumer.", badge: null },
+      { icone: "🍚", titre: "Le riz", detail: "Ajouter le riz rincé et mélanger.", badge: null },
+      { icone: "⏳", titre: "Cuisson", detail: "Couvrir et cuire à feu doux jusqu'à absorption.", badge: "⏱ 20 min" },
+      { icone: "😴", titre: "Repos", detail: "Laisser reposer 5 minutes hors du feu.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Retirer le piment, égrainer et servir. ASTUCE CHEF : laissez le scotch bonnet entier et intact, il parfume sans rendre fort ; retirez-le avant de servir.", badge: null }
     ]
   },
   locomoco: {
@@ -5591,11 +5611,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz blanc bien moelleux.", badge: "⏱ 15 min" },
-      { icone: "🥩", titre: "Steak", detail: "Former des steaks hachés assaisonnés et les saisir à la poêle. Réserver.", badge: "⏱ 6 min" },
-      { icone: "🍛", titre: "Gravy", detail: "Dans la même poêle, faire revenir l'oignon, ajouter un peu de farine, mouiller de bouillon + sauce soja et laisser épaissir.", badge: "⏱ 5 min" },
-      { icone: "🍳", titre: "Œuf", detail: "Cuire les œufs au plat (jaune coulant, c'est la tradition).", badge: "⏱ 3 min" },
-      { icone: "🍽️", titre: "Dresser", detail: "Riz au fond, steak dessus, nappé de gravy, puis l'œuf au plat par-dessus. Servir aussitôt.", badge: null }
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz blanc.", badge: null },
+      { icone: "🍔", titre: "Steak", detail: "Former des steaks de bœuf haché et les saisir.", badge: null },
+      { icone: "🥘", titre: "Gravy", detail: "Préparer une sauce gravy avec les sucs et un peu de bouillon.", badge: null },
+      { icone: "🧅", titre: "Oignon", detail: "Faire revenir l'oignon dans le gravy.", badge: null },
+      { icone: "🍳", titre: "Œuf", detail: "Cuire un œuf au plat.", badge: null },
+      { icone: "🥣", titre: "Dresser", detail: "Disposer riz, steak et gravy, puis l'œuf au plat par-dessus.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, jaune coulant. ASTUCE CHEF : gardez le jaune bien coulant, il se mêle au gravy et lie tout le plat.", badge: null }
     ]
   },
   hainanchicken: {
@@ -5625,11 +5647,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Pocher", detail: "Pocher le poulet à frémissement avec gingembre, ail et ciboule, jusqu'à juste cuit. GARDER le bouillon.", badge: "⏱ 30 min" },
-      { icone: "🧊", titre: "Eau glacée", detail: "Plonger le poulet dans l'eau glacée : la peau reste soyeuse et la chair juteuse.", badge: null },
-      { icone: "🍚", titre: "Riz parfumé", detail: "Faire revenir riz, ail et gingembre, puis cuire avec le bouillon du poulet à la place de l'eau.", badge: "⏱ 18 min" },
-      { icone: "🌶️", titre: "Sauces", detail: "Préparer la sauce piment-ail-citron vert et la sauce gingembre râpé-huile.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Découper le poulet, servir sur/à côté du riz avec concombre, sauces et un bol de bouillon clair.", badge: null }
+      { icone: "🍗", titre: "Pocher", detail: "Pocher le poulet doucement dans un bouillon au gingembre.", badge: "⏱ 35 min" },
+      { icone: "❄️", titre: "Eau glacée", detail: "Plonger le poulet dans l'eau glacée pour une peau tendue et une chair moelleuse.", badge: null },
+      { icone: "🍚", titre: "Riz parfumé", detail: "Cuire le riz dans le bouillon de pochage avec ail et gingembre.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Découper le poulet en morceaux.", badge: null },
+      { icone: "🥢", titre: "Sauces", detail: "Préparer les sauces (gingembre-oignon, soja).", badge: null },
+      { icone: "🥒", titre: "Garnir", detail: "Ajouter des tranches de concombre.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Servir poulet, riz, bouillon et sauces. ASTUCE CHEF : le choc thermique dans l'eau glacée est essentiel pour une peau ferme et une chair soyeuse.", badge: null }
     ]
   },
   waterzooi: {
@@ -5659,11 +5683,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Pocher", detail: "Pocher le poulet dans un bouillon avec un bouquet garni jusqu'à tendreté. Réserver, garder le bouillon.", badge: "⏱ 25 min" },
-      { icone: "🥕", titre: "Légumes", detail: "Cuire dans le bouillon les légumes taillés en julienne/morceaux : poireau, carotte, céleri, pomme de terre.", badge: "⏱ 15 min" },
-      { icone: "🥚", titre: "Liaison", detail: "HORS DU FEU, fouetter crème + jaunes d'œufs avec une louche de bouillon chaud, puis reverser. NE PLUS faire bouillir (sinon ça tranche).", badge: null },
-      { icone: "🍲", titre: "Assembler", detail: "Remettre le poulet effiloché, réchauffer doucement sans ébullition.", badge: "⏱ 3 min" },
-      { icone: "🌿", titre: "Service", detail: "Parsemer de persil et servir avec du pain ou des pommes de terre vapeur.", badge: null }
+      { icone: "🍗", titre: "Pocher", detail: "Pocher le poulet dans un bouillon aromatique.", badge: "⏱ 30 min" },
+      { icone: "🥕", titre: "Légumes", detail: "Tailler poireau, carotte et pomme de terre, et les cuire dans le bouillon.", badge: null },
+      { icone: "🍗", titre: "Effilocher", detail: "Retirer le poulet, le désosser et le réserver.", badge: null },
+      { icone: "🥚", titre: "Liaison", detail: "Mélanger crème et jaunes d'œufs, détendre avec du bouillon chaud.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Incorporer la liaison hors du feu, sans faire bouillir.", badge: null },
+      { icone: "🍲", titre: "Assembler", detail: "Réunir poulet, légumes et bouillon lié.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir bien chaud. ASTUCE CHEF : n'ajoutez jamais la liaison crème-jaunes sur feu vif, elle trancherait ; hors du feu, elle nappe parfaitement.", badge: null }
     ]
   },
   lecso: {
@@ -5693,11 +5719,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Oignon", detail: "Faire fondre l'oignon émincé dans un peu d'huile ou de saindoux.", badge: "⏱ 5 min" },
-      { icone: "🌭", titre: "Saucisse", detail: "Ajouter la saucisse fumée en rondelles, faire colorer.", badge: "⏱ 3 min" },
-      { icone: "🫑", titre: "Poivrons", detail: "Ajouter les poivrons en lanières, cuire quelques minutes.", badge: "⏱ 5 min" },
-      { icone: "🍅", titre: "Tomates & paprika", detail: "Ajouter les tomates et le paprika doux. Mijoter à couvert.", badge: "⏱ 15 min" },
-      { icone: "🍳", titre: "Option", detail: "Casser un œuf dans le lecsó en fin de cuisson pour un plat complet.", badge: null }
+      { icone: "🧅", titre: "Oignon", detail: "Faire revenir l'oignon émincé dans un peu d'huile.", badge: null },
+      { icone: "🌭", titre: "Saucisse", detail: "Ajouter la saucisse fumée en rondelles et la faire dorer.", badge: null },
+      { icone: "🫑", titre: "Poivrons", detail: "Ajouter les poivrons en lanières et les faire fondre.", badge: null },
+      { icone: "🌶️", titre: "Paprika", detail: "Ajouter le paprika hors du feu pour qu'il ne brûle pas.", badge: null },
+      { icone: "🍅", titre: "Tomates", detail: "Ajouter les tomates et laisser compoter.", badge: "⏱ 20 min" },
+      { icone: "🥚", titre: "Option", detail: "Casser un œuf dans le lecsó en fin de cuisson (version traditionnelle).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec du pain. ASTUCE CHEF : ajoutez toujours le paprika hors du feu, il devient vite amer s'il brûle.", badge: null }
     ]
   },
   khinkali: {
@@ -5727,11 +5755,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Pétrir farine, eau et sel en pâte ferme. Laisser reposer.", badge: "⏱ 20 min" },
-      { icone: "🥩", titre: "Farce juteuse", detail: "Mélanger les viandes hachées, l'oignon, ail, cumin, beaucoup de poivre et le bouillon froid (c'est lui qui fait le jus).", badge: null },
-      { icone: "⚪", titre: "Découper", detail: "Étaler la pâte, découper des disques.", badge: null },
-      { icone: "👜", titre: "Plier", detail: "Garnir, plisser les bords en bourse et torsader le sommet.", badge: null },
-      { icone: "💧", titre: "Pocher", detail: "Pocher à l'eau frémissante 10-12 min. Manger à la main, sans percer le jus !", badge: "⏱ 12 min" }
+      { icone: "🥣", titre: "Pâte", detail: "Pétrir farine, eau et sel en une pâte ferme, puis laisser reposer.", badge: null },
+      { icone: "🥩", titre: "Farce juteuse", detail: "Mélanger bœuf, porc, oignon haché et bouillon froid (le futur jus).", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Étaler la pâte et découper des disques.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Déposer une boule de farce au centre de chaque disque.", badge: null },
+      { icone: "🤏", titre: "Plier", detail: "Plisser les bords en bourse et pincer le sommet.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Pocher dans l'eau frémissante jusqu'à ce qu'ils remontent.", badge: "⏱ 10 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir poivrés, à manger à la main. ASTUCE CHEF : le bouillon froid dans la farce devient jus à la cuisson ; mordez délicatement pour ne pas le perdre.", badge: null }
     ]
   },
   lobio: {
@@ -5761,11 +5791,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Haricots", detail: "Faire chauffer les haricots rouges cuits avec un peu de leur jus.", badge: "⏱ 10 min" },
-      { icone: "🧅", titre: "Aromates", detail: "Faire revenir oignon et ail, ajouter aux haricots.", badge: "⏱ 5 min" },
-      { icone: "🥄", titre: "Écraser", detail: "Écraser une partie des haricots pour épaissir.", badge: null },
-      { icone: "🌰", titre: "Noix & épices", detail: "Incorporer les noix moulues, coriandre fraîche, fenugrec moulu, vinaigre. Mijoter.", badge: "⏱ 15 min" },
-      { icone: "🍽️", titre: "Service", detail: "Servir tiède avec du pain géorgien ou de la polenta.", badge: null }
+      { icone: "🫘", titre: "Haricots", detail: "Cuire les haricots rouges jusqu'à ce qu'ils soient bien tendres.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Faire revenir l'oignon émincé.", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "Écraser une partie des haricots pour une texture crémeuse.", badge: null },
+      { icone: "🥜", titre: "Noix & épices", detail: "Mixer les noix avec l'ail et les épices géorgiennes, puis incorporer.", badge: null },
+      { icone: "🌿", titre: "Herbes", detail: "Ajouter de la coriandre fraîche et un trait de vinaigre.", badge: null },
+      { icone: "😋", titre: "Ajuster", detail: "Rectifier l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir tiède avec du pain de maïs (mchadi). ASTUCE CHEF : n'écrasez qu'une partie des haricots pour garder à la fois du fondant et de la mâche.", badge: null }
     ]
   },
   colombopoulet: {
@@ -5795,11 +5827,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Mariner", detail: "Mariner le poulet avec ail, citron vert et un peu de colombo.", badge: "⏱ 15 min" },
-      { icone: "🧅", titre: "Base", detail: "Faire revenir oignon puis la poudre de colombo dans l'huile (réveille les arômes).", badge: "⏱ 3 min" },
-      { icone: "🍗", titre: "Saisir", detail: "Ajouter le poulet, faire dorer.", badge: "⏱ 5 min" },
-      { icone: "🥔", titre: "Mijoter", detail: "Ajouter pommes de terre, eau et lait de coco. Mijoter à couvert.", badge: "⏱ 25 min" },
-      { icone: "🍚", titre: "Service", detail: "Servir avec du riz créole.", badge: null }
+      { icone: "🌿", titre: "Mariner", detail: "Mariner le poulet avec la poudre de colombo, ail et citron.", badge: "⏱ 30 min" },
+      { icone: "🧅", titre: "Base", detail: "Faire revenir l'oignon.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Ajouter le poulet mariné et le faire dorer.", badge: null },
+      { icone: "🥔", titre: "Légumes", detail: "Ajouter les pommes de terre en morceaux.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Mouiller, ajouter le lait de coco et laisser mijoter.", badge: "⏱ 30 min" },
+      { icone: "😋", titre: "Ajuster", detail: "Rectifier l'assaisonnement.", badge: null },
+      { icone: "🍚", titre: "Service", detail: "Servir avec du riz. ASTUCE CHEF : faites torréfier la poudre de colombo quelques secondes à sec avant de l'utiliser, ses arômes explosent.", badge: null }
     ]
   },
   dibisenegal: {
@@ -5829,11 +5863,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Mariner", detail: "Mariner l'agneau avec ail, oignon, moutarde, huile, citron et poivre.", badge: "⏱ 20 min" },
-      { icone: "🔥", titre: "Griller", detail: "Griller la viande au barbecue ou à la poêle bien chaude jusqu'à caramélisation.", badge: "⏱ 12 min" },
-      { icone: "🧅", titre: "Oignons yassa", detail: "À part, fondre beaucoup d'oignons avec moutarde et citron jusqu'à confits.", badge: "⏱ 15 min" },
-      { icone: "🍽️", titre: "Dresser", detail: "Servir l'agneau recouvert d'oignons confits.", badge: null },
-      { icone: "🥖", titre: "Accompagnement", detail: "Accompagner de pain ou de frites de manioc.", badge: null }
+      { icone: "🌿", titre: "Mariner", detail: "Mariner l'agneau avec oignon, moutarde, citron et épices.", badge: "⏱ 1 h" },
+      { icone: "🔥", titre: "Griller", detail: "Griller l'agneau au feu de bois ou au four jusqu'à coloration.", badge: "⏱ 20 min" },
+      { icone: "🧅", titre: "Oignons yassa", detail: "Faire fondre longuement les oignons avec moutarde et citron.", badge: null },
+      { icone: "🥄", titre: "Confire", detail: "Laisser les oignons confire jusqu'à tendreté.", badge: null },
+      { icone: "🍖", titre: "Réunir", detail: "Mélanger l'agneau grillé aux oignons.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dresser l'agneau nappé d'oignons.", badge: null },
+      { icone: "🍞", titre: "Accompagnement", detail: "Servir avec du pain ou des frites de manioc. ASTUCE CHEF : faites bien compoter les oignons, leur fondu acidulé est l'âme du dibi sénégalais.", badge: null }
     ]
   },
   morosycristianos: {
@@ -5863,11 +5899,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Sofrito", detail: "Faire revenir oignon, poivron et ail avec cumin et origan.", badge: "⏱ 5 min" },
-      { icone: "🫘", titre: "Haricots", detail: "Ajouter les haricots noirs avec un peu de leur jus.", badge: null },
-      { icone: "🍚", titre: "Riz", detail: "Ajouter le riz rincé et de l'eau (à hauteur + 1 cm), une feuille de laurier.", badge: null },
-      { icone: "⏳", titre: "Cuisson", detail: "Couvrir et cuire à feu doux sans remuer jusqu'à absorption.", badge: "⏱ 20 min" },
-      { icone: "🍴", titre: "Service", detail: "Aérer à la fourchette et servir.", badge: null }
+      { icone: "🧅", titre: "Sofrito", detail: "Faire revenir oignon, poivron et ail en sofrito.", badge: null },
+      { icone: "🫘", titre: "Haricots", detail: "Ajouter les haricots noirs avec un peu de leur eau de cuisson.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Ajouter le riz et l'enrober du sofrito.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Verser l'eau (ou bouillon), saler et ajouter le cumin.", badge: null },
+      { icone: "⏳", titre: "Cuisson", detail: "Couvrir et cuire à feu doux jusqu'à absorption.", badge: "⏱ 20 min" },
+      { icone: "😴", titre: "Repos", detail: "Laisser reposer 5 minutes.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Égrainer et servir. ASTUCE CHEF : cuisez le riz avec l'eau des haricots noirs, c'est elle qui donne couleur et goût aux « maures et chrétiens ».", badge: null }
     ]
   },
   picadillo: {
@@ -5897,11 +5935,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Sofrito", detail: "Faire revenir oignon, ail et poivron.", badge: "⏱ 5 min" },
-      { icone: "🥩", titre: "Bœuf", detail: "Ajouter le bœuf haché, faire colorer en l'émiettant.", badge: "⏱ 6 min" },
-      { icone: "🍅", titre: "Tomate", detail: "Ajouter tomate, cumin et origan.", badge: null },
-      { icone: "🫒", titre: "Salé-sucré", detail: "Incorporer olives et raisins secs, mijoter à couvert.", badge: "⏱ 15 min" },
-      { icone: "🍚", titre: "Service", detail: "Servir avec riz blanc et bananes plantain frites.", badge: null }
+      { icone: "🧅", titre: "Sofrito", detail: "Faire revenir oignon et poivron en sofrito.", badge: null },
+      { icone: "🥩", titre: "Bœuf", detail: "Ajouter le bœuf haché et le faire colorer.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Ajouter la tomate et laisser réduire.", badge: null },
+      { icone: "🫒", titre: "Salé-sucré", detail: "Ajouter les olives et les raisins secs (l'équilibre cubain typique).", badge: null },
+      { icone: "🌿", titre: "Épices", detail: "Assaisonner de cumin, origan et un trait de vinaigre.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Laisser mijoter pour concentrer les saveurs.", badge: "⏱ 15 min" },
+      { icone: "🍚", titre: "Service", detail: "Servir avec riz blanc et plantain. ASTUCE CHEF : le mariage olives-raisins secs est la signature du picadillo cubain ; ne l'omettez pas.", badge: null }
     ]
   },
   schnitzel: {
@@ -8240,42 +8280,6 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Dorer et servir", detail: "Faire dorer 1 minute par face à la poêle pour les rendre croustillants. ASTUCE CHEF : tiédissez les tortillas 10 secondes avant de les rouler, elles deviennent souples et ne craquent plus.", badge: "⏱ 2 min" }
     ]
   },
-  carbonnadeflamande: {
-    nom: "Carbonnade flamande",
-    dateAjout: "2026-06-05",
-    cat: "plats", pays: "belgique",
-    base: 4,
-    temps: "2 h 30",
-    niveau: "⭐ Moyen",
-    emoji: "🍺",
-    description: "Le mijoté emblématique du Nord : du bœuf fondant cuit longuement à la bière brune avec du pain d'épices à la moutarde. Doux-amer et réconfortant.",
-    tableauCarbonnadeflamande: [
-      { nb: 1, boeuf: "200 g", oignon: "1", biere: "8 cl", paindepices: "1 tranche", cassonade: "1 c.à.c", moutarde: "0,5 c.à.s" },
-      { nb: 2, boeuf: "400 g", oignon: "2", biere: "16 cl", paindepices: "2 tranches", cassonade: "2 c.à.c", moutarde: "1 c.à.s" },
-      { nb: 3, boeuf: "600 g", oignon: "3", biere: "24 cl", paindepices: "3 tranches", cassonade: "3 c.à.c", moutarde: "1,5 c.à.s" },
-      { nb: 4, boeuf: "800 g", oignon: "4", biere: "32 cl", paindepices: "4 tranches", cassonade: "4 c.à.c", moutarde: "2 c.à.s" },
-      { nb: 5, boeuf: "1000 g", oignon: "5", biere: "40 cl", paindepices: "5 tranches", cassonade: "5 c.à.c", moutarde: "2,5 c.à.s" },
-      { nb: 6, boeuf: "1200 g", oignon: "6", biere: "48 cl", paindepices: "6 tranches", cassonade: "6 c.à.c", moutarde: "3 c.à.s" },
-      { nb: 7, boeuf: "1400 g", oignon: "7", biere: "56 cl", paindepices: "7 tranches", cassonade: "7 c.à.c", moutarde: "3,5 c.à.s" },
-      { nb: 8, boeuf: "1600 g", oignon: "8", biere: "64 cl", paindepices: "8 tranches", cassonade: "8 c.à.c", moutarde: "4 c.à.s" },
-      { nb: 9, boeuf: "1800 g", oignon: "9", biere: "72 cl", paindepices: "9 tranches", cassonade: "9 c.à.c", moutarde: "4,5 c.à.s" },
-      { nb: 10, boeuf: "2000 g", oignon: "10", biere: "80 cl", paindepices: "10 tranches", cassonade: "10 c.à.c", moutarde: "5 c.à.s" },
-      { nb: 11, boeuf: "2200 g", oignon: "11", biere: "88 cl", paindepices: "11 tranches", cassonade: "11 c.à.c", moutarde: "5,5 c.à.s" },
-      { nb: 12, boeuf: "2400 g", oignon: "12", biere: "96 cl", paindepices: "12 tranches", cassonade: "12 c.à.c", moutarde: "6 c.à.s" },
-      { nb: 13, boeuf: "2600 g", oignon: "13", biere: "1,04 L", paindepices: "13 tranches", cassonade: "13 c.à.c", moutarde: "6,5 c.à.s" },
-      { nb: 14, boeuf: "2800 g", oignon: "14", biere: "1,12 L", paindepices: "14 tranches", cassonade: "14 c.à.c", moutarde: "7 c.à.s" },
-      { nb: 15, boeuf: "3000 g", oignon: "15", biere: "1,2 L", paindepices: "15 tranches", cassonade: "15 c.à.c", moutarde: "7,5 c.à.s" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🔪", titre: "Préparer", detail: "Couper le bœuf en gros cubes et émincer les oignons.", badge: null },
-      { icone: "🔥", titre: "Saisir", detail: "Faire dorer la viande sur toutes les faces dans une cocotte, puis réserver.", badge: "⏱ 8 min" },
-      { icone: "🧅", titre: "Oignons", detail: "Faire fondre les oignons dans la même cocotte avec la cassonade jusqu'à légère caramélisation.", badge: null },
-      { icone: "🍺", titre: "Bière", detail: "Remettre la viande, verser la bière brune pour couvrir. Tartiner le pain d'épices de moutarde et le déposer dessus.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Couvrir et laisser mijoter à feu très doux 2 heures : le pain d'épices fond et lie la sauce.", badge: "⏱ 2 h" },
-      { icone: "🍽️", titre: "Servir", detail: "Servir avec des frites ou des pommes vapeur. ASTUCE CHEF : choisissez une bière brune d'abbaye plutôt qu'une blonde, son amertume ronde fait toute la profondeur du plat.", badge: null }
-    ]
-  },
   cannelloni: {
     nom: "Cannelloni",
     dateAjout: "2026-06-05",
@@ -8454,6 +8458,79 @@ Object.assign(recettes, {
       { icone: "🍤", titre: "Crevettes", detail: "Ajouter les crevettes décortiquées et cuire seulement 3 à 4 minutes, jusqu'à ce qu'elles soient roses.", badge: "⏱ 4 min" },
       { icone: "🌿", titre: "Finir", detail: "Rectifier l'assaisonnement, ajouter de la coriandre fraîche.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Servir sur le riz. ASTUCE CHEF : ne cuisez jamais les crevettes trop longtemps, elles deviennent caoutchouteuses ; dès qu'elles sont roses, c'est prêt.", badge: null }
+    ]
+  },
+  coqauriesling: {
+    nom: "Coq au Riesling",
+    dateAjout: "2026-06-05",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "1 h 15",
+    niveau: "⭐ Moyen",
+    emoji: "🍗",
+    description: "La spécialité alsacienne : du poulet mijoté dans du vin blanc Riesling avec des champignons et de la crème. Élégant, parfumé et réconfortant.",
+    tableauCoqauriesling: [
+      { nb: 1, poulet: "200 g", champignon: "75 g", riesling: "8 cl", creme: "4 cl", oignon: "0", beurre: "8 g", farine: "0,5 c.à.c" },
+      { nb: 2, poulet: "400 g", champignon: "150 g", riesling: "16 cl", creme: "8 cl", oignon: "½", beurre: "16 g", farine: "1 c.à.c" },
+      { nb: 3, poulet: "600 g", champignon: "225 g", riesling: "24 cl", creme: "12 cl", oignon: "1", beurre: "24 g", farine: "1,5 c.à.c" },
+      { nb: 4, poulet: "800 g", champignon: "300 g", riesling: "32 cl", creme: "16 cl", oignon: "1", beurre: "32 g", farine: "2 c.à.c" },
+      { nb: 5, poulet: "1000 g", champignon: "375 g", riesling: "40 cl", creme: "20 cl", oignon: "1", beurre: "40 g", farine: "2,5 c.à.c" },
+      { nb: 6, poulet: "1200 g", champignon: "450 g", riesling: "48 cl", creme: "24 cl", oignon: "1½", beurre: "48 g", farine: "3 c.à.c" },
+      { nb: 7, poulet: "1400 g", champignon: "525 g", riesling: "56 cl", creme: "28 cl", oignon: "2", beurre: "56 g", farine: "3,5 c.à.c" },
+      { nb: 8, poulet: "1600 g", champignon: "600 g", riesling: "64 cl", creme: "32 cl", oignon: "2", beurre: "64 g", farine: "4 c.à.c" },
+      { nb: 9, poulet: "1800 g", champignon: "675 g", riesling: "72 cl", creme: "36 cl", oignon: "2", beurre: "72 g", farine: "4,5 c.à.c" },
+      { nb: 10, poulet: "2000 g", champignon: "750 g", riesling: "80 cl", creme: "40 cl", oignon: "2½", beurre: "80 g", farine: "5 c.à.c" },
+      { nb: 11, poulet: "2200 g", champignon: "825 g", riesling: "88 cl", creme: "44 cl", oignon: "3", beurre: "88 g", farine: "5,5 c.à.c" },
+      { nb: 12, poulet: "2400 g", champignon: "900 g", riesling: "96 cl", creme: "48 cl", oignon: "3", beurre: "96 g", farine: "6 c.à.c" },
+      { nb: 13, poulet: "2600 g", champignon: "975 g", riesling: "1,04 L", creme: "52 cl", oignon: "3", beurre: "104 g", farine: "6,5 c.à.c" },
+      { nb: 14, poulet: "2800 g", champignon: "1050 g", riesling: "1,12 L", creme: "56 cl", oignon: "3½", beurre: "112 g", farine: "7 c.à.c" },
+      { nb: 15, poulet: "3000 g", champignon: "1125 g", riesling: "1,2 L", creme: "60 cl", oignon: "4", beurre: "120 g", farine: "7,5 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Dorer le poulet", detail: "Faire dorer les morceaux de poulet dans le beurre sur toutes les faces. Réserver.", badge: "⏱ 8 min" },
+      { icone: "🧅", titre: "Suer", detail: "Faire revenir l'oignon émincé, ajouter les champignons et les faire colorer.", badge: null },
+      { icone: "🌾", titre: "Singer", detail: "Saupoudrer de farine, mélanger 1 minute pour qu'elle cuise.", badge: null },
+      { icone: "🍷", titre: "Riesling", detail: "Remettre le poulet, déglacer au Riesling et laisser réduire légèrement.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Couvrir et laisser mijoter 35 minutes à feu doux.", badge: "⏱ 35 min" },
+      { icone: "🥛", titre: "Crémer", detail: "Ajouter la crème en fin de cuisson, réchauffer sans bouillir et rectifier l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec des spätzle ou du riz. ASTUCE CHEF : utilisez un vrai Riesling sec d'Alsace, jamais un vin doux ; son acidité fine équilibre parfaitement la crème.", badge: null }
+    ]
+  },
+  gratinchouxfleur: {
+    nom: "Gratin de chou-fleur",
+    dateAjout: "2026-06-05",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🥦",
+    description: "Des bouquets de chou-fleur fondants nappés d'une béchamel onctueuse et gratinés au fromage. Le gratin réconfortant de l'hiver.",
+    tableauGratinchouxfleur: [
+      { nb: 1, chouxfleur: "250 g", lait: "12 cl", beurre: "12 g", farine: "12 g", fromagerape: "30 g" },
+      { nb: 2, chouxfleur: "500 g", lait: "24 cl", beurre: "24 g", farine: "24 g", fromagerape: "60 g" },
+      { nb: 3, chouxfleur: "750 g", lait: "36 cl", beurre: "36 g", farine: "36 g", fromagerape: "90 g" },
+      { nb: 4, chouxfleur: "1000 g", lait: "48 cl", beurre: "48 g", farine: "48 g", fromagerape: "120 g" },
+      { nb: 5, chouxfleur: "1250 g", lait: "60 cl", beurre: "60 g", farine: "60 g", fromagerape: "150 g" },
+      { nb: 6, chouxfleur: "1500 g", lait: "72 cl", beurre: "72 g", farine: "72 g", fromagerape: "180 g" },
+      { nb: 7, chouxfleur: "1750 g", lait: "84 cl", beurre: "84 g", farine: "84 g", fromagerape: "210 g" },
+      { nb: 8, chouxfleur: "2000 g", lait: "96 cl", beurre: "96 g", farine: "96 g", fromagerape: "240 g" },
+      { nb: 9, chouxfleur: "2250 g", lait: "1,08 L", beurre: "108 g", farine: "108 g", fromagerape: "270 g" },
+      { nb: 10, chouxfleur: "2500 g", lait: "1,2 L", beurre: "120 g", farine: "120 g", fromagerape: "300 g" },
+      { nb: 11, chouxfleur: "2750 g", lait: "1,32 L", beurre: "132 g", farine: "132 g", fromagerape: "330 g" },
+      { nb: 12, chouxfleur: "3000 g", lait: "1,44 L", beurre: "144 g", farine: "144 g", fromagerape: "360 g" },
+      { nb: 13, chouxfleur: "3250 g", lait: "1,56 L", beurre: "156 g", farine: "156 g", fromagerape: "390 g" },
+      { nb: 14, chouxfleur: "3500 g", lait: "1,68 L", beurre: "168 g", farine: "168 g", fromagerape: "420 g" },
+      { nb: 15, chouxfleur: "3750 g", lait: "1,8 L", beurre: "180 g", farine: "180 g", fromagerape: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥦", titre: "Cuire le chou-fleur", detail: "Détailler le chou-fleur en bouquets et les cuire 10 minutes à l'eau bouillante salée : ils doivent rester un peu fermes.", badge: "⏱ 10 min" },
+      { icone: "🧈", titre: "Béchamel", detail: "Faire un roux avec le beurre et la farine, verser le lait peu à peu en fouettant jusqu'à épaississement. Saler, poivrer, muscader.", badge: null },
+      { icone: "🍮", titre: "Monter", detail: "Égoutter le chou-fleur et le disposer dans un plat beurré.", badge: null },
+      { icone: "🥛", titre: "Napper", detail: "Verser la béchamel sur le chou-fleur.", badge: null },
+      { icone: "🧀", titre: "Gratiner", detail: "Parsemer de fromage râpé et enfourner à 200 °C pendant 25 minutes.", badge: "⏱ 25 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien doré et bouillonnant. ASTUCE CHEF : égouttez très bien le chou-fleur et épongez-le, sinon il rend de l'eau et délaye la béchamel pendant la cuisson.", badge: null }
     ]
   },
 });
