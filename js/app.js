@@ -3123,6 +3123,7 @@ function onInputCalcChange(inputId, _recetteCle) {
 // Ouvrir la fiche recette depuis une carte en lisant son input
 function ouvrirFiche(recette, inputId) {
   window._ficheOuverte = recette; // mémorise la recette ouverte (formulaire Amélioration)
+  if (typeof injecterBoutonMenu === "function") injecterBoutonMenu(recette);
   // v241 : Tracker la vue de cette recette (persistant)
   if (typeof ajouterRecent === "function") ajouterRecent(recette);
   
