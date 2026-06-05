@@ -1606,9 +1606,10 @@ function afficherMenusSemaine(menus, personnes) {
           const badge = lvl === "bebe"   ? `<span title="${tip}" style="margin-left:4px">🍼</span>`
                       : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px">🧒</span>` : "";
           const btn = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepasSous('${jour.jour}','${moment}','${cleType}')" title="Remplacer ce plat">🔄</button>`;
+          const btnCh = `<button class="plan-regen-btn" onclick="event.stopPropagation();maChoisir('${jour.jour}','${moment}','${cleType}')" title="Choisir une recette">🔍</button>`;
           const motif = lvl ? `<div class="plan-motif-famille" title="${tip}">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
           return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${personnes})">
-            <span class="plan-sous-label">${icone} ${type} ${badge}${btn}</span>
+            <span class="plan-sous-label">${icone} ${type} ${badge}${btn}${btnCh}</span>
             <span style="font-size:22px">${getEmoji(key)}</span>
             <span class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[key]?.pays, 13) + " " : ""}${getNomRecette(key)}</span>
             <span class="plan-repas-note">${data.note || ""}</span>
@@ -1654,6 +1655,8 @@ function afficherMenusSemaine(menus, personnes) {
                   : lvlS === "enfant" ? `<span title="${tipS}" style="margin-left:4px">🧒</span>` : "";
       const btnMidi = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','midi')" title="Remplacer ce plat">🔄</button>`;
       const btnSoir = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','soir')" title="Remplacer ce plat">🔄</button>`;
+      const chMidi = `<button class="plan-regen-btn" onclick="event.stopPropagation();maChoisir('${jour.jour}','midi')" title="Choisir une recette">🔍</button>`;
+      const chSoir = `<button class="plan-regen-btn" onclick="event.stopPropagation();maChoisir('${jour.jour}','soir')" title="Choisir une recette">🔍</button>`;
       const motifM = lvlM ? `<div class="plan-motif-famille" title="${tipM}">${lvlM === "bebe" ? "🍼" : "🌶️"} ${raisonM}</div>` : "";
       const motifS = lvlS ? `<div class="plan-motif-famille" title="${tipS}">${lvlS === "bebe" ? "🍼" : "🌶️"} ${raisonS}</div>` : "";
 
@@ -1661,7 +1664,7 @@ function afficherMenusSemaine(menus, personnes) {
         <h3 class="plan-jour-titre" style="color:${couleurJour}">${jour.jour}</h3>
         <div class="plan-repas-row">
           <div class="plan-repas" style="${sMidi}" onclick="ouvrirRecettePlan('${midi}', ${personnes})">
-            <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}</div>
+            <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}${chMidi}</div>
             <div class="plan-repas-emoji">${getEmoji(midi)}</div>
             <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[midi]?.pays, 13) + " " : ""}${getNomRecette(midi)}</div>
             <div class="plan-repas-note">${midiNote}</div>
@@ -1669,7 +1672,7 @@ function afficherMenusSemaine(menus, personnes) {
             ${motifM}
           </div>
           <div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
-            <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}</div>
+            <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}${chSoir}</div>
             <div class="plan-repas-emoji">${getEmoji(soir)}</div>
             <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[soir]?.pays, 13) + " " : ""}${getNomRecette(soir)}</div>
             <div class="plan-repas-note">${soirNote}</div>

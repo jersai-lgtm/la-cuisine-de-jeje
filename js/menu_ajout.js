@@ -264,3 +264,72 @@ document.addEventListener("DOMContentLoaded", function () {
     + '<div id="ma-srch-res" style="margin-top:6px"></div>';
   form.parentNode.insertBefore(box, form);
 });
+
+// ============================================================
+//  Bouton 🔍 « choisir une recette » sur un emplacement de menu
+// ============================================================
+function maFiltreRecettes(role) {
+  return Object.keys(recettes).filter(function (k) {
+    const c = (recettes[k] && recettes[k].cat) || "";
+    if (role === "entree") return c === "entrees" || c === "salades" || c === "soupes";
+    if (role === "plat") return c === "plats" || c === "healthy" || c === "pizzas";
+    if (role === "dessert") return c === "desserts";
+    if (role === "apero") return c === "cocktails" || c === "mocktails";
+    if (role === "aperitif") return c === "aperitifs";
+    // repas simple (pas de rôle) : vrais repas, on exclut le hors-repas
+    return ["plats", "healthy", "soupes", "salades", "entrees", "pizzas"].indexOf(c) >= 0;
+  });
+}
+
+function maChoisir(jour, creneau, role) {
+  window._maCible = { jour: jour, creneau: creneau, role: role || null };
+  maModalEl();
+  const roleLbl = role === "entree" ? "entrée" : role === "plat" ? "plat" : role === "dessert" ? "dessert"
+    : role === "apero" ? "apéro" : role === "aperitif" ? "apéritif" : (creneau === "midi" ? "midi" : "soir");
+  document.getElementById("ma-sheet").innerHTML =
+    '<div style="width:40px;height:4px;border-radius:99px;background:rgba(255,255,255,.2);margin:0 auto 14px"></div>'
+    + '<p style="margin:0 0 2px;color:#fff;font-size:16px;font-weight:600">Choisir une recette</p>'
+    + '<p style="margin:0 0 14px;color:#9a97a0;font-size:13px">' + jour + ' — ' + roleLbl + '</p>'
+    + '<input id="ma-cible-srch" type="text" placeholder="Rechercher…" oninput="maRechercheCible(this.value)" style="width:100%;box-sizing:border-box;padding:11px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:#15121a;color:#fff;font-size:14px" />'
+    + '<div id="ma-cible-res" style="margin-top:8px;max-height:46vh;overflow:auto"></div>'
+    + '<button onclick="fermerAjoutMenu()" style="width:100%;margin-top:10px;padding:10px;border:none;border-radius:12px;background:transparent;color:#9a97a0;font-size:13px;cursor:pointer">Annuler</button>';
+  maModalEl().style.display = "flex";
+  maRechercheCible("");
+}
+
+function maRechercheCible(q) {
+  const res = document.getElementById("ma-cible-res");
+  if (!res) return;
+  const v = maNorm(q).trim();
+  let hits = maFiltreRecettes(window._maCible && window._maCible.role);
+  if (v.length >= 1) hits = hits.filter(function (k) { return maNorm(getNomRecette(k)).indexOf(v) >= 0; });
+  hits = hits.slice(0, 30);
+  if (!hits.length) { res.innerHTML = '<p style="margin:8px 0;color:#88858f;font-size:12px">Aucune recette.</p>'; return; }
+  res.innerHTML = hits.map(function (k) {
+    const nom = getNomRecette(k);
+    const emo = typeof getEmoji === "function" ? getEmoji(k) : "🍽️";
+    return '<div onclick="maPlacer(\'' + k + '\')" style="display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;background:#1a1620;border:1px solid rgba(255,255,255,.07);margin-top:6px;cursor:pointer">'
+      + '<span style="font-size:20px">' + emo + '</span>'
+      + '<span style="flex:1;color:#fff;font-size:13px">' + nom + '</span></div>';
+  }).join("");
+}
+
+function maPlacer(key) {
+  const c = window._maCible;
+  const m = window._derniersMenus;
+  if (!c || !m || !Array.isArray(m.semaine)) { fermerAjoutMenu(); return; }
+  const jour = m.semaine.find(function (x) { return x.jour === c.jour; });
+  if (!jour) { fermerAjoutMenu(); return; }
+  if (c.role && ["entree", "plat", "dessert", "apero", "aperitif"].indexOf(c.role) >= 0 && c.creneau) {
+    if (!jour[c.creneau] || jour[c.creneau].recette) jour[c.creneau] = jour[c.creneau] && !jour[c.creneau].recette ? jour[c.creneau] : {};
+    jour[c.creneau][c.role] = { recette: key, note: "" };
+  } else {
+    jour[c.creneau] = { recette: key, note: "" };
+  }
+  const personnes = maPersonnes();
+  window._derniersMenus = m; window._dernierMenuGenere = m;
+  if (typeof sauvegarderMenus === "function") sauvegarderMenus(m, personnes, m.semaine);
+  if (typeof window.reafficherMenuCourant === "function") window.reafficherMenuCourant(m, personnes);
+  fermerAjoutMenu();
+  maToast("Recette placée ✅");
+}
