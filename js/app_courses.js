@@ -516,6 +516,23 @@ function lcConseilConservation(cle) {
   return { frigo: 3, congel: "oui", note: "se congèle bien, idéal pour faire du rab" };
 }
 
+// Interrupteur : passe à false pour masquer partout les temps de réchauffage (s'ils ne conviennent pas)
+const LC_AFFICHER_RECHAUFFE = true;
+
+// Temps de réchauffage ESTIMÉ (indicatif) en minutes. 0 = à servir frais (rien à réchauffer).
+function lcTempsRechauffe(cle) {
+  const r = recettes[cle] || {};
+  const cat = r.cat || "";
+  const t = _prepStrip((r.nom || cle) + " " + (r.description || ""));
+  const a = (...m) => m.some(x => t.includes(x));
+  if (cat === "cocktails" || cat === "mocktails" || cat === "salades" || cat === "desserts") return 0;
+  if (a("salade", "crudite", "tartare", "carpaccio", "ceviche", "gaspacho", "smoothie", "tiramisu", "mousse", "panna", "cheesecake", "glace", "sorbet")) return 0;
+  if (cat === "soupes" || a("soupe", "veloute", "potage", "bisque")) return 5;
+  if (a("gratin", "lasagne", "hachis", "tian", "tarte", "quiche", "roti", "enfourn", "au four")) return 15;
+  if (cat === "pizzas" || cat === "boulangerie" || a("pizza", "pain", "feuillete")) return 10;
+  return 8; // plat classique : poêle/casserole/micro-ondes
+}
+
 // Jours de la semaine (ordre pour les calculs d'écart prep -> conso)
 const LC_JOURS = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
 
@@ -741,12 +758,14 @@ function lcGenererPlanPrep() {
         const r = recettes[p.cle]; if (!r) return "";
         const emo = (typeof getEmoji === "function") ? getEmoji(p.cle) : "🍽️";
         const crLbl = p.creneau === "midi" ? "midi" : "soir";
+        const rech = LC_AFFICHER_RECHAUFFE ? lcTempsRechauffe(p.cle) : null;
+        const rechTxt = (rech && rech > 0) ? ` · ♨️ ≈ ${rech} min` : (rech === 0 ? " · 🧊 servir frais" : "");
         const fins = Array.isArray(r.etapes) ? r.etapes.filter(et => lcClasserEtape(et) === "finition") : [];
         const gestes = fins.length
           ? fins.map(et => `<li>${ech(et.titre)}${et.detail ? ` — <span style="color:#9a97a0">${ech(et.detail)}</span>` : ""}</li>`).join("")
           : `<li>Réchauffe et sers.</li>`;
         return `<div style="margin-top:7px">
-          <div style="font-size:13px;color:#fff;font-weight:500">${emo} ${ech(nomDe(p.cle))} <span style="color:#88858f;font-weight:400;font-size:11px">· ${crLbl}</span></div>
+          <div style="font-size:13px;color:#fff;font-weight:500">${emo} ${ech(nomDe(p.cle))} <span style="color:#88858f;font-weight:400;font-size:11px">· ${crLbl}${rechTxt}</span></div>
           <ul style="margin:4px 0 0;padding-left:18px;font-size:12px;color:#b3b0b8;line-height:1.5">${gestes}</ul>
         </div>`;
       }).join("");
@@ -760,7 +779,7 @@ function lcGenererPlanPrep() {
           <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#7a5cff;color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center">🍽️</span>
           <span style="font-size:15px;font-weight:500;color:#fff;flex:1">Chaque soir</span>
         </div>
-        <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">Le gros est déjà fait : chaque jour, il ne reste qu'à réchauffer et finir. 😊</div>
+        <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">Le gros est déjà fait : chaque jour, il ne reste qu'à réchauffer et finir. 😊${LC_AFFICHER_RECHAUFFE ? " <span style=\"color:#6e6b75\">Temps de réchauffage indicatifs ⏱</span>" : ""}</div>
         <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${cards}</div>
       </div>`;
   }
