@@ -611,16 +611,22 @@ function afficherRecettes() {
   document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
   document.getElementById("btn-recettes")?.classList.add("active");
   
-  // Afficher la barre de chips
+  // Afficher la barre de chips Recettes et masquer celle des Favoris
   const chips = document.getElementById("filtres-chips");
   if (chips) chips.style.display = "block";
+  const chipsFav = document.getElementById("filtres-favoris-chips");
+  if (chipsFav) chipsFav.style.display = "none";
   
-  // Réinitialiser les chips : "Tout" actif sur chaque ligne
-  document.querySelectorAll(".filtres-chips .chip").forEach(c => c.classList.remove("active"));
-  document.querySelectorAll(".chips-row").forEach(row => {
+  // Réinitialiser les chips : "Tout" actif sur les lignes Catégorie + Pays uniquement
+  document.querySelectorAll("#filtres-chips .chip").forEach(c => c.classList.remove("active"));
+  document.querySelectorAll("#filtres-chips .chips-row").forEach(row => {
+    if (row.querySelector("#chip-tri-note")) return; // ne pas réactiver la ligne de tri
     const premiereChip = row.querySelector(".chip");
     if (premiereChip) premiereChip.classList.add("active");
   });
+  // "Mieux notées" : désactivé par défaut
+  window._triNoteActif = false;
+  document.getElementById("chip-tri-note")?.classList.remove("active");
   
   // Réinitialiser les filtres internes
   window._filtreCategorie = "all";
