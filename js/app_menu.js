@@ -1944,8 +1944,8 @@ function _collecterClesMenu(source, acc) {
         const repas = jour && jour[moment];
         if (!repas) return;
         if (typeof repas === "string") { if (okRec(repas)) acc.add(repas); return; }
-        if (okRec(repas.recette)) acc.add(repas.recette);            // format simple
-        ["entree", "plat", "dessert"].forEach(c => {                 // format complet
+        if (okRec(repas.recette)) { acc.add(repas.recette); return; }  // format simple : on prend et on s'arrête (ignore les sous-rôles résiduels)
+        ["entree", "plat", "dessert"].forEach(c => {                    // format complet (uniquement si pas de plat simple)
           if (repas[c] && okRec(repas[c].recette)) acc.add(repas[c].recette);
         });
       });

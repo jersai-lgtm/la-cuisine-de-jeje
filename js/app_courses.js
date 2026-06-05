@@ -549,7 +549,7 @@ function lcMenuParJour() {
     ["midi", "soir"].forEach(cr => {
       const slot = jour[cr];
       if (!slot) return;
-      if (slot.recette) add(slot.recette, idx);                              // simple / lunch box
+      if (slot.recette) { add(slot.recette, idx); return; }                  // simple / lunch box
       ["entree", "plat", "dessert"].forEach(role => { if (slot[role] && slot[role].recette) add(slot[role].recette, idx); }); // complet
     });
   });
@@ -568,7 +568,7 @@ function lcMenuParJourDetail() {
       const slot = jour[cr];
       if (!slot) return;
       const push = (cle, role) => { if (!cle) return; (out[idx] = out[idx] || []).push({ cle, creneau: cr, role: role || null }); };
-      if (slot.recette) push(slot.recette, null);
+      if (slot.recette) { push(slot.recette, null); return; }
       ["entree", "plat", "dessert"].forEach(role => { if (slot[role] && slot[role].recette) push(slot[role].recette, role); });
     });
   });
