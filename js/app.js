@@ -1310,6 +1310,7 @@ function filtrerFavoris() {
   } else {
     if (msg) msg.remove();
   }
+  if (typeof appliquerTriNoteSiActif === "function") appliquerTriNoteSiActif();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -1354,6 +1355,7 @@ function filtrerMesRecettes() {
   } else if (msg) {
     msg.remove();
   }
+  if (typeof appliquerTriNoteSiActif === "function") appliquerTriNoteSiActif();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 

@@ -259,3 +259,33 @@ window.toggleTriNote = function(btn) {
   }
   tri.forEach(c => grid.appendChild(c));
 };
+
+// Applique le tri par note SANS changer l'état (utile après un changement de vue Favoris)
+window.appliquerTriNoteSiActif = function () {
+  if (!window._triNoteActif) return;
+  const grid = document.getElementById("section-cartes");
+  if (!grid) return;
+  const cartes = [...grid.querySelectorAll(".carte")];
+  if (cartes.length === 0) return;
+  cartes.forEach((c, i) => { if (c.dataset.ordre === undefined) c.dataset.ordre = String(i); });
+  const moyDe = c => {
+    const cle = (typeof extraireCleRecetteCarte === "function") ? extraireCleRecetteCarte(c) : null;
+    const com = cle ? window.getNoteCommunaute(cle) : null;
+    return com ? com.moyenne : -1;
+  };
+  cartes.sort((a, b) => {
+    const d = moyDe(b) - moyDe(a);
+    return d !== 0 ? d : (+a.dataset.ordre) - (+b.dataset.ordre);
+  }).forEach(c => grid.appendChild(c));
+};
+
+// Réinitialise le tri "Mieux notées" : état OFF, boutons éteints, ordre d'origine restauré
+window.reinitTriNote = function () {
+  window._triNoteActif = false;
+  document.getElementById("chip-tri-note")?.classList.remove("active");
+  document.getElementById("chip-fav-tri-note")?.classList.remove("active");
+  const grid = document.getElementById("section-cartes");
+  if (!grid) return;
+  const cartes = [...grid.querySelectorAll(".carte")].filter(c => c.dataset.ordre !== undefined);
+  cartes.sort((a, b) => (+a.dataset.ordre) - (+b.dataset.ordre)).forEach(c => grid.appendChild(c));
+};

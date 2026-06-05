@@ -624,9 +624,8 @@ function afficherRecettes() {
     const premiereChip = row.querySelector(".chip");
     if (premiereChip) premiereChip.classList.add("active");
   });
-  // "Mieux notées" : désactivé par défaut
-  window._triNoteActif = false;
-  document.getElementById("chip-tri-note")?.classList.remove("active");
+  // "Mieux notées" : remis à zéro (état OFF + ordre d'origine restauré)
+  if (typeof reinitTriNote === "function") reinitTriNote();
   
   // Réinitialiser les filtres internes
   window._filtreCategorie = "all";
@@ -720,6 +719,10 @@ function afficherFavorisAvecChips() {
   document.getElementById("chip-fav-menus")?.classList.remove("active");
   document.getElementById("chip-fav-mesrecettes")?.classList.remove("active");
   document.getElementById("msg-no-mesrecettes")?.remove();
+  // Tri "Mieux notées" : remis à zéro et visible (vue Recettes favorites par défaut)
+  if (typeof reinitTriNote === "function") reinitTriNote();
+  const triRow = document.getElementById("favoris-tri-row");
+  if (triRow) triRow.style.display = "";
   
   // Afficher les recettes favorites par défaut
   filtrerFavoris();
@@ -735,6 +738,7 @@ function chipFavorisRecettes(btn) {
   // Re-afficher la barre de chips Favoris (filtrerFavoris la cache)
   const chipsFav = document.getElementById("filtres-favoris-chips");
   if (chipsFav) chipsFav.style.display = "block";
+  document.getElementById("favoris-tri-row")?.style.removeProperty("display");
   document.getElementById('msg-no-mesrecettes')?.remove();
 }
 
@@ -748,6 +752,7 @@ function chipFavorisMenus(btn) {
   // Re-afficher la barre de chips Favoris (filtrerMenusFavoris la cache)
   const chipsFav = document.getElementById("filtres-favoris-chips");
   if (chipsFav) chipsFav.style.display = "block";
+  document.getElementById("favoris-tri-row")?.style.setProperty("display", "none");
   document.getElementById('msg-no-mesrecettes')?.remove();
 }
 
@@ -760,6 +765,7 @@ function chipFavorisMesRecettes(btn) {
   if (typeof filtrerMesRecettes === "function") filtrerMesRecettes();
   const chipsFav = document.getElementById("filtres-favoris-chips");
   if (chipsFav) chipsFav.style.display = "block";
+  document.getElementById("favoris-tri-row")?.style.removeProperty("display");
 }
 
 // === Compatibilité : afficherTout() → afficherRecettes() ===
