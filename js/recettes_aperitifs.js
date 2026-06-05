@@ -1033,11 +1033,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫒", titre: "Dénoyauter", detail: "Vérifier que les olives sont bien dénoyautées et les égoutter.", badge: null },
-      { icone: "🐟", titre: "Réunir", detail: "Mettre les olives, les anchois, les câpres et l'ail dans le bol d'un mixeur.", badge: null },
-      { icone: "🌿", titre: "Mixer", detail: "Mixer par à-coups en ajoutant l'huile d'olive en filet, jusqu'à obtenir une pâte encore un peu texturée.", badge: null },
+      { icone: "🫒", titre: "Préparer", detail: "Égoutter les olives dénoyautées, les câpres et les anchois.", badge: null },
+      { icone: "🧄", titre: "Ail", detail: "Éplucher et dégermer la gousse d'ail.", badge: null },
+      { icone: "🔪", titre: "Réunir", detail: "Mettre les olives, les anchois, les câpres et l'ail dans le bol d'un mixeur.", badge: null },
+      { icone: "🌿", titre: "Mixer", detail: "Mixer par à-coups en ajoutant l'huile d'olive en filet, jusqu'à une pâte encore un peu texturée.", badge: null },
       { icone: "🍋", titre: "Ajuster", detail: "Ajouter le jus de citron, poivrer et goûter (le sel est souvent inutile grâce aux anchois et câpres).", badge: null },
-      { icone: "🥖", titre: "Servir", detail: "Servir sur des toasts grillés. ASTUCE CHEF : laissez reposer la tapenade au frais 1 heure avant de servir, les saveurs n'en seront que meilleures.", badge: null }
+      { icone: "⏳", titre: "Reposer", detail: "Laisser reposer la tapenade au frais au moins 1 heure.", badge: "⏱ 1 h" },
+      { icone: "🥖", titre: "Servir", detail: "Servir sur des toasts grillés. ASTUCE CHEF : le repos au frais développe les saveurs, ne sautez pas cette étape.", badge: null }
     ]
   },
   cakesalejambon: {
@@ -1104,11 +1106,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍞", titre: "Griller", detail: "Toaster les tranches de pain jusqu'à ce qu'elles soient dorées et croustillantes.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Couper le pain en fines tranches régulières.", badge: null },
+      { icone: "🍞", titre: "Griller", detail: "Toaster les tranches jusqu'à ce qu'elles soient dorées et croustillantes.", badge: null },
       { icone: "🧄", titre: "Aïl", detail: "Frotter chaque tranche encore chaude avec une gousse d'ail coupée.", badge: null },
-      { icone: "🍅", titre: "Tomate", detail: "Couper les tomates en petits dés, assaisonner d'huile d'olive, sel et poivre.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Couper les tomates en petits dés et les assaisonner d'huile d'olive, sel et poivre.", badge: null },
       { icone: "🧀", titre: "Garnir", detail: "Répartir la tomate et des éclats de mozzarella sur les toasts.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Décorer d'une feuille de basilic et d'un filet d'huile. ASTUCE CHEF : garnissez les crostini juste avant de servir, sinon le pain ramollit et perd tout son croustillant.", badge: null }
+      { icone: "🌿", titre: "Finir", detail: "Décorer d'une feuille de basilic et d'un filet d'huile.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt. ASTUCE CHEF : garnissez les crostini juste avant de servir, sinon le pain ramollit et perd son croustillant.", badge: null }
     ]
   },
   antipasti: {
@@ -1139,11 +1143,50 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
+      { icone: "🍽️", titre: "Préparer", detail: "Sortir la charcuterie du frais 15 minutes avant pour qu'elle révèle ses arômes.", badge: null },
       { icone: "🍖", titre: "Charcuterie", detail: "Disposer joliment les tranches de jambon cru en rosaces sur un grand plat.", badge: null },
       { icone: "🧀", titre: "Fromage", detail: "Ajouter la mozzarella (ou de la burrata) au centre.", badge: null },
       { icone: "🫒", titre: "Légumes", detail: "Répartir les olives, tomates séchées et artichauts marinés en petits tas séparés.", badge: null },
       { icone: "🌿", titre: "Roquette", detail: "Garnir les espaces de roquette pour la couleur et la fraîcheur.", badge: null },
-      { icone: "🫒", titre: "Finir", detail: "Arroser d'un filet d'huile d'olive et d'un tour de poivre. ASTUCE CHEF : jouez sur les contrastes de couleurs et de textures, et sortez la charcuterie 15 minutes avant pour qu'elle révèle tous ses arômes.", badge: null }
+      { icone: "🫒", titre: "Assaisonner", detail: "Arroser d'un filet d'huile d'olive et d'un tour de poivre.", badge: null },
+      { icone: "🥖", titre: "Servir", detail: "Servir avec du bon pain. ASTUCE CHEF : jouez sur les contrastes de couleurs et de textures pour un plateau vraiment appétissant.", badge: null }
+    ]
+  },
+  pakoras: {
+    nom: "Pakoras de légumes",
+    dateAjout: "2026-06-05",
+    cat: "aperitifs", pays: "inde",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🧆",
+    description: "Des beignets indiens croustillants de légumes liés à la farine de pois chiche et relevés d'épices. Parfaits à l'apéritif avec une sauce yaourt.",
+    tableauPakoras: [
+      { nb: 1, farinepoischiche: "40 g", oignon: "½", pdterre: "50 g", epinard: "20 g", currypoudre: "1 c.à.c", eau: "3 cl" },
+      { nb: 2, farinepoischiche: "80 g", oignon: "1", pdterre: "100 g", epinard: "40 g", currypoudre: "2 c.à.c", eau: "6 cl" },
+      { nb: 3, farinepoischiche: "120 g", oignon: "1½", pdterre: "150 g", epinard: "60 g", currypoudre: "3 c.à.c", eau: "9 cl" },
+      { nb: 4, farinepoischiche: "160 g", oignon: "2", pdterre: "200 g", epinard: "80 g", currypoudre: "4 c.à.c", eau: "12 cl" },
+      { nb: 5, farinepoischiche: "200 g", oignon: "2½", pdterre: "250 g", epinard: "100 g", currypoudre: "5 c.à.c", eau: "15 cl" },
+      { nb: 6, farinepoischiche: "240 g", oignon: "3", pdterre: "300 g", epinard: "120 g", currypoudre: "6 c.à.c", eau: "18 cl" },
+      { nb: 7, farinepoischiche: "280 g", oignon: "3½", pdterre: "350 g", epinard: "140 g", currypoudre: "7 c.à.c", eau: "21 cl" },
+      { nb: 8, farinepoischiche: "320 g", oignon: "4", pdterre: "400 g", epinard: "160 g", currypoudre: "8 c.à.c", eau: "24 cl" },
+      { nb: 9, farinepoischiche: "360 g", oignon: "4½", pdterre: "450 g", epinard: "180 g", currypoudre: "9 c.à.c", eau: "27 cl" },
+      { nb: 10, farinepoischiche: "400 g", oignon: "5", pdterre: "500 g", epinard: "200 g", currypoudre: "10 c.à.c", eau: "30 cl" },
+      { nb: 11, farinepoischiche: "440 g", oignon: "5½", pdterre: "550 g", epinard: "220 g", currypoudre: "11 c.à.c", eau: "33 cl" },
+      { nb: 12, farinepoischiche: "480 g", oignon: "6", pdterre: "600 g", epinard: "240 g", currypoudre: "12 c.à.c", eau: "36 cl" },
+      { nb: 13, farinepoischiche: "520 g", oignon: "6½", pdterre: "650 g", epinard: "260 g", currypoudre: "13 c.à.c", eau: "39 cl" },
+      { nb: 14, farinepoischiche: "560 g", oignon: "7", pdterre: "700 g", epinard: "280 g", currypoudre: "14 c.à.c", eau: "42 cl" },
+      { nb: 15, farinepoischiche: "600 g", oignon: "7½", pdterre: "750 g", epinard: "300 g", currypoudre: "15 c.à.c", eau: "45 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger la farine de pois chiche avec les épices et l'eau pour obtenir une pâte épaisse.", badge: null },
+      { icone: "🥔", titre: "Légumes", detail: "Râper la pomme de terre, émincer l'oignon et les épinards.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Incorporer les légumes à la pâte (juste de quoi les enrober).", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faire chauffer un bain d'huile à 170 °C.", badge: null },
+      { icone: "🧆", titre: "Frire", detail: "Déposer des petits tas dans l'huile et frire 3 à 4 minutes jusqu'à doré et croustillant.", badge: "⏱ 4 min" },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur du papier absorbant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud avec une sauce au yaourt. ASTUCE CHEF : une pâte trop liquide donne des pakoras gras et mous ; elle doit juste enrober les légumes.", badge: null }
     ]
   },
 });

@@ -1124,9 +1124,48 @@ Object.assign(recettes, {
     etapes: [
       { icone: "🥚", titre: "Battre", detail: "Battre les œufs en omelette avec une pincée de sel.", badge: null },
       { icone: "🧈", titre: "Beurre", detail: "Faire fondre le beurre dans une poêle à feu très doux.", badge: null },
-      { icone: "🍳", titre: "Brouiller", detail: "Verser les œufs et remuer constamment à la spatule, à feu doux, sans jamais les laisser attacher.", badge: "⏱ 4 min" },
-      { icone: "🥛", titre: "Crémer", detail: "Retirer du feu quand les œufs sont encore baveux, ajouter la crème froide pour stopper la cuisson.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Parsemer de ciboulette et servir aussitôt sur du pain grillé. ASTUCE CHEF : les œufs continuent de cuire dans la poêle chaude ; coupez le feu quand ils semblent encore un peu trop baveux, ils seront parfaits dans l'assiette.", badge: null }
+      { icone: "🍳", titre: "Brouiller", detail: "Verser les œufs et remuer constamment à la spatule, à feu doux, sans jamais les laisser attacher.", badge: null },
+      { icone: "👀", titre: "Surveiller", detail: "Poursuivre jusqu'à une texture crémeuse, encore baveuse.", badge: null },
+      { icone: "🥛", titre: "Crémer", detail: "Hors du feu, ajouter la crème froide pour stopper la cuisson.", badge: null },
+      { icone: "🌿", titre: "Assaisonner", detail: "Poivrer et parsemer de ciboulette ciselée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt sur du pain grillé. ASTUCE CHEF : coupez le feu quand les œufs semblent encore un peu trop baveux, ils finissent de cuire dans la poêle chaude.", badge: null }
+    ]
+  },
+  hashbrowns: {
+    nom: "Hash browns",
+    dateAjout: "2026-06-05",
+    cat: "brunch", pays: "usa",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Les galettes de pommes de terre râpées américaines, dorées et ultra-croustillantes. L'incontournable du brunch.",
+    tableauHashbrowns: [
+      { nb: 1, pdterre: "150 g", oignon: "0", farine: "1 c.à.c", beurre: "5 g" },
+      { nb: 2, pdterre: "300 g", oignon: "½", farine: "2 c.à.c", beurre: "10 g" },
+      { nb: 3, pdterre: "450 g", oignon: "1", farine: "3 c.à.c", beurre: "15 g" },
+      { nb: 4, pdterre: "600 g", oignon: "1", farine: "4 c.à.c", beurre: "20 g" },
+      { nb: 5, pdterre: "750 g", oignon: "1", farine: "5 c.à.c", beurre: "25 g" },
+      { nb: 6, pdterre: "900 g", oignon: "1½", farine: "6 c.à.c", beurre: "30 g" },
+      { nb: 7, pdterre: "1050 g", oignon: "2", farine: "7 c.à.c", beurre: "35 g" },
+      { nb: 8, pdterre: "1200 g", oignon: "2", farine: "8 c.à.c", beurre: "40 g" },
+      { nb: 9, pdterre: "1350 g", oignon: "2", farine: "9 c.à.c", beurre: "45 g" },
+      { nb: 10, pdterre: "1500 g", oignon: "2½", farine: "10 c.à.c", beurre: "50 g" },
+      { nb: 11, pdterre: "1650 g", oignon: "3", farine: "11 c.à.c", beurre: "55 g" },
+      { nb: 12, pdterre: "1800 g", oignon: "3", farine: "12 c.à.c", beurre: "60 g" },
+      { nb: 13, pdterre: "1950 g", oignon: "3", farine: "13 c.à.c", beurre: "65 g" },
+      { nb: 14, pdterre: "2100 g", oignon: "3½", farine: "14 c.à.c", beurre: "70 g" },
+      { nb: 15, pdterre: "2250 g", oignon: "4", farine: "15 c.à.c", beurre: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Râper", detail: "Râper les pommes de terre crues et l'oignon à la grosse grille.", badge: null },
+      { icone: "💧", titre: "Essorer", detail: "Presser fortement dans un torchon pour retirer un maximum d'eau : c'est le secret du croustillant.", badge: null },
+      { icone: "🥣", titre: "Lier", detail: "Mélanger avec la farine, du sel et du poivre.", badge: null },
+      { icone: "🤲", titre: "Former", detail: "Façonner des galettes régulières.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire dans le beurre 4 à 5 minutes par face, sans trop les bouger.", badge: "⏱ 10 min" },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter brièvement sur papier absorbant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien doré et croustillant, avec des œufs ou du bacon. ASTUCE CHEF : ne tassez pas trop les galettes et laissez-les bien colorer avant de les retourner, sinon elles se cassent.", badge: null }
     ]
   },
 });

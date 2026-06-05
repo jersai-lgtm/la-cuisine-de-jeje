@@ -880,11 +880,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Couper le citron", detail: "Laver le citron vert, retirer les deux extrémités et le couper en quartiers. Retirer la petite membrane blanche centrale qui apporte de l'amertume.", badge: null },
-      { icone: "🥄", titre: "Sucrer", detail: "Déposer les quartiers de citron dans un verre court (type old fashioned) avec le sucre de canne.", badge: null },
+      { icone: "🧼", titre: "Préparer", detail: "Laver le citron vert et préparer un verre court ainsi que de la glace pilée.", badge: null },
+      { icone: "🔪", titre: "Couper", detail: "Couper le citron vert en quartiers et retirer la petite membrane blanche centrale, qui apporte de l'amertume.", badge: null },
+      { icone: "🥄", titre: "Sucrer", detail: "Déposer les quartiers de citron dans le verre avec le sucre de canne.", badge: null },
       { icone: "💪", titre: "Piler", detail: "Écraser au pilon pour libérer le jus et les huiles essentielles du zeste, sans réduire en bouillie.", badge: null },
-      { icone: "🧊", titre: "Glace et cachaça", detail: "Remplir le verre de glace pilée puis verser la cachaça par-dessus.", badge: null },
-      { icone: "🍹", titre: "Mélanger et servir", detail: "Remuer énergiquement quelques secondes avec une cuillère. ASTUCE CHEF : remplacez la cachaça par de la vodka pour une caïpiroska, ou par du rhum ambré pour une version plus ronde.", badge: "⏱ 5 min" }
+      { icone: "🧊", titre: "Glace", detail: "Remplir le verre de glace pilée.", badge: null },
+      { icone: "🍶", titre: "Cachaça", detail: "Verser la cachaça par-dessus la glace.", badge: null },
+      { icone: "🍹", titre: "Mélanger & servir", detail: "Remuer énergiquement et servir avec une paille. ASTUCE CHEF : remplacez la cachaça par de la vodka pour une caïpiroska, ou par du rhum ambré pour une version plus ronde.", badge: null }
     ]
   },
   ginfizz: {
@@ -915,11 +917,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
+      { icone: "🧊", titre: "Préparer", detail: "Préparer un verre tumbler et des glaçons.", badge: null },
       { icone: "🥃", titre: "Au shaker", detail: "Verser le gin, le jus de citron et le sirop de sucre dans un shaker rempli de glaçons.", badge: null },
       { icone: "🤝", titre: "Frapper", detail: "Secouer vigoureusement une dizaine de secondes jusqu'à ce que le shaker soit givré.", badge: null },
-      { icone: "🧊", titre: "Filtrer", detail: "Filtrer dans un verre type tumbler rempli de glaçons frais.", badge: null },
+      { icone: "🧊", titre: "Filtrer", detail: "Filtrer dans le verre rempli de glaçons frais.", badge: null },
       { icone: "💧", titre: "Allonger", detail: "Compléter doucement avec l'eau gazeuse bien fraîche pour garder les bulles.", badge: null },
-      { icone: "🍋", titre: "Servir", detail: "Remuer une fois et décorer d'une rondelle de citron. ASTUCE CHEF : pour un Gin Fizz mousseux, ajoutez un blanc d'œuf au shaker et frappez d'abord sans glace (dry shake).", badge: "⏱ 5 min" }
+      { icone: "🥄", titre: "Mélanger", detail: "Remuer une seule fois, délicatement.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Décorer d'une rondelle de citron. ASTUCE CHEF : pour un Gin Fizz mousseux, ajoutez un blanc d'œuf et faites d'abord un dry shake (sans glace).", badge: null }
     ]
   },
   cubalibre: {
@@ -950,10 +954,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
+      { icone: "🍋", titre: "Citron", detail: "Couper le citron vert en quartiers.", badge: null },
       { icone: "🧊", titre: "Glace", detail: "Remplir un grand verre (highball) de glaçons.", badge: null },
       { icone: "🍶", titre: "Rhum", detail: "Verser le rhum sur la glace.", badge: null },
-      { icone: "🍋", titre: "Citron vert", detail: "Presser le demi-citron vert directement dans le verre, puis y déposer le morceau pressé.", badge: null },
-      { icone: "🥤", titre: "Cola", detail: "Compléter avec le cola bien frais et remuer délicatement. ASTUCE CHEF : utilisez un rhum ambré et un trait d'angostura pour une version plus complexe et adulte.", badge: "⏱ 3 min" }
+      { icone: "🍋", titre: "Presser", detail: "Presser le demi-citron vert dans le verre, puis y déposer les morceaux pressés.", badge: null },
+      { icone: "🥤", titre: "Cola", detail: "Compléter avec le cola bien frais.", badge: null },
+      { icone: "🥄", titre: "Mélanger & servir", detail: "Remuer délicatement et servir avec une paille. ASTUCE CHEF : un rhum ambré et un trait d'angostura donnent une version plus complexe et adulte.", badge: null }
     ]
   },
   bloodymary: {
@@ -984,11 +990,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧊", titre: "Préparer le verre", detail: "Remplir un grand verre de glaçons.", badge: null },
-      { icone: "🍅", titre: "Assembler", detail: "Verser la vodka, le jus de tomate et le jus de citron.", badge: null },
-      { icone: "🌶️", titre: "Assaisonner", detail: "Ajouter la sauce Worcestershire, le Tabasco, le sel et un tour de poivre.", badge: null },
+      { icone: "🧂", titre: "Verre", detail: "Givrer si besoin le bord du verre avec du sel de céleri, puis le remplir de glaçons.", badge: null },
+      { icone: "🍅", titre: "Base", detail: "Verser la vodka et le jus de tomate.", badge: null },
+      { icone: "🍋", titre: "Acidité", detail: "Ajouter le jus de citron.", badge: null },
+      { icone: "🌶️", titre: "Épices", detail: "Ajouter la sauce Worcestershire, le Tabasco, le sel et un tour de poivre.", badge: null },
       { icone: "🥄", titre: "Mélanger", detail: "Remuer longuement pour bien homogénéiser les épices.", badge: null },
-      { icone: "🥬", titre: "Garnir et servir", detail: "Décorer d'une branche de céleri. ASTUCE CHEF : remplacez la vodka par du jus de tomate seul pour une version sans alcool (Virgin Mary) tout aussi savoureuse.", badge: "⏱ 5 min" }
+      { icone: "🥬", titre: "Garnir", detail: "Décorer d'une branche de céleri et d'une tranche de citron.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien frais. ASTUCE CHEF : sans la vodka, c'est un Virgin Mary tout aussi savoureux.", badge: null }
     ]
   },
   whiterussian: {
@@ -1020,9 +1028,11 @@ Object.assign(recettes, {
     ingredients: {},
     etapes: [
       { icone: "🧊", titre: "Glace", detail: "Remplir un verre court de gros glaçons.", badge: null },
-      { icone: "🍶", titre: "Alcools", detail: "Verser la vodka puis la liqueur de café sur la glace.", badge: null },
-      { icone: "🥛", titre: "Crème", detail: "Verser doucement la crème liquide par-dessus, sur le dos d'une cuillère, pour créer un joli dégradé.", badge: null },
-      { icone: "🥃", titre: "Servir", detail: "Servir tel quel pour l'effet visuel, ou remuer avant de boire. ASTUCE CHEF : utilisez de la crème légèrement fouettée pour une texture encore plus onctueuse.", badge: "⏱ 3 min" }
+      { icone: "🍶", titre: "Vodka", detail: "Verser la vodka sur la glace.", badge: null },
+      { icone: "☕", titre: "Liqueur", detail: "Ajouter la liqueur de café.", badge: null },
+      { icone: "🥛", titre: "Crème", detail: "Verser doucement la crème sur le dos d'une cuillère pour créer un joli dégradé.", badge: null },
+      { icone: "🥃", titre: "Présenter", detail: "Laisser le dégradé visible quelques instants pour l'effet.", badge: null },
+      { icone: "🥄", titre: "Servir", detail: "Remuer juste avant de boire. ASTUCE CHEF : une crème légèrement fouettée rend le cocktail encore plus onctueux.", badge: null }
     ]
   },
   french75: {
@@ -1053,11 +1063,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥃", titre: "Au shaker", detail: "Verser le gin, le jus de citron et le sirop de sucre dans un shaker rempli de glaçons.", badge: null },
+      { icone: "🥂", titre: "Préparer", detail: "Placer une flûte à champagne au frais.", badge: null },
+      { icone: "🥃", titre: "Au shaker", detail: "Verser le gin, le jus de citron et le sirop de sucre dans un shaker avec des glaçons.", badge: null },
       { icone: "🤝", titre: "Frapper", detail: "Secouer vigoureusement une dizaine de secondes.", badge: null },
-      { icone: "🥂", titre: "Filtrer", detail: "Filtrer dans une flûte à champagne.", badge: null },
-      { icone: "🍾", titre: "Allonger", detail: "Compléter doucement avec le champagne bien frais.", badge: null },
-      { icone: "🍋", titre: "Servir", detail: "Décorer d'un zeste de citron. ASTUCE CHEF : utilisez une flûte glacée et un champagne brut bien froid pour préserver les bulles le plus longtemps possible.", badge: "⏱ 4 min" }
+      { icone: "🥂", titre: "Filtrer", detail: "Filtrer dans la flûte glacée.", badge: null },
+      { icone: "🍾", titre: "Champagne", detail: "Compléter doucement avec le champagne bien frais.", badge: null },
+      { icone: "🍋", titre: "Garnir", detail: "Décorer d'un zeste de citron.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt. ASTUCE CHEF : champagne brut très froid et flûte glacée préservent les bulles bien plus longtemps.", badge: null }
     ]
   },
   paloma: {
@@ -1090,9 +1102,48 @@ Object.assign(recettes, {
     etapes: [
       { icone: "🧂", titre: "Givrer", detail: "Frotter le bord du verre avec du citron vert et le tremper dans du sel.", badge: null },
       { icone: "🧊", titre: "Glace", detail: "Remplir le verre de glaçons.", badge: null },
-      { icone: "🍹", titre: "Assembler", detail: "Verser la tequila, le jus de pamplemousse et le jus de citron vert.", badge: null },
-      { icone: "💧", titre: "Pétiller", detail: "Compléter avec le soda au pamplemousse et remuer délicatement.", badge: null },
-      { icone: "🍊", titre: "Servir", detail: "Décorer d'une tranche de pamplemousse. ASTUCE CHEF : un jus de pamplemousse rose pressé minute, plutôt qu'un soda seul, donne une Paloma bien plus fraîche et parfumée.", badge: "⏱ 4 min" }
+      { icone: "🍹", titre: "Tequila", detail: "Verser la tequila.", badge: null },
+      { icone: "🍊", titre: "Agrumes", detail: "Ajouter le jus de pamplemousse et le jus de citron vert.", badge: null },
+      { icone: "💧", titre: "Pétiller", detail: "Compléter avec le soda au pamplemousse.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Remuer délicatement.", badge: null },
+      { icone: "🍊", titre: "Servir", detail: "Décorer d'une tranche de pamplemousse. ASTUCE CHEF : un jus de pamplemousse rose pressé minute rend la Paloma bien plus fraîche et parfumée.", badge: null }
+    ]
+  },
+  manhattan: {
+    nom: "Manhattan",
+    dateAjout: "2026-06-05",
+    cat: "cocktails", pays: "usa",
+    base: 1,
+    temps: "4 min",
+    niveau: "⭐ Facile",
+    emoji: "🥃",
+    description: "Le grand classique new-yorkais : whiskey, vermouth rouge et angostura, remués et servis avec une cerise. Puissant et élégant.",
+    tableauManhattan: [
+      { nb: 1, whiskey: "5 cl", vermouthrouge: "2 cl", angostura: "2 traits", cerise: "1" },
+      { nb: 2, whiskey: "10 cl", vermouthrouge: "4 cl", angostura: "4 traits", cerise: "2" },
+      { nb: 3, whiskey: "15 cl", vermouthrouge: "6 cl", angostura: "6 traits", cerise: "3" },
+      { nb: 4, whiskey: "20 cl", vermouthrouge: "8 cl", angostura: "8 traits", cerise: "4" },
+      { nb: 5, whiskey: "25 cl", vermouthrouge: "10 cl", angostura: "10 traits", cerise: "5" },
+      { nb: 6, whiskey: "30 cl", vermouthrouge: "12 cl", angostura: "12 traits", cerise: "6" },
+      { nb: 7, whiskey: "35 cl", vermouthrouge: "14 cl", angostura: "14 traits", cerise: "7" },
+      { nb: 8, whiskey: "40 cl", vermouthrouge: "16 cl", angostura: "16 traits", cerise: "8" },
+      { nb: 9, whiskey: "45 cl", vermouthrouge: "18 cl", angostura: "18 traits", cerise: "9" },
+      { nb: 10, whiskey: "50 cl", vermouthrouge: "20 cl", angostura: "20 traits", cerise: "10" },
+      { nb: 11, whiskey: "55 cl", vermouthrouge: "22 cl", angostura: "22 traits", cerise: "11" },
+      { nb: 12, whiskey: "60 cl", vermouthrouge: "24 cl", angostura: "24 traits", cerise: "12" },
+      { nb: 13, whiskey: "65 cl", vermouthrouge: "26 cl", angostura: "26 traits", cerise: "13" },
+      { nb: 14, whiskey: "70 cl", vermouthrouge: "28 cl", angostura: "28 traits", cerise: "14" },
+      { nb: 15, whiskey: "75 cl", vermouthrouge: "30 cl", angostura: "30 traits", cerise: "15" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍸", titre: "Préparer", detail: "Placer un verre à cocktail au congélateur une dizaine de minutes.", badge: null },
+      { icone: "🧊", titre: "Verre à mélange", detail: "Remplir un verre à mélange de glaçons.", badge: null },
+      { icone: "🥃", titre: "Assembler", detail: "Verser le whiskey, le vermouth rouge et l'angostura.", badge: null },
+      { icone: "🥄", titre: "Remuer", detail: "Remuer à la cuillère une vingtaine de secondes (un Manhattan se remue, ne se secoue pas).", badge: null },
+      { icone: "🍸", titre: "Filtrer", detail: "Filtrer dans le verre à cocktail bien froid.", badge: null },
+      { icone: "🍒", titre: "Garnir", detail: "Déposer une cerise au marasquin.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt. ASTUCE CHEF : le verre glacé garde le cocktail frais sans le diluer davantage.", badge: null }
     ]
   },
 });

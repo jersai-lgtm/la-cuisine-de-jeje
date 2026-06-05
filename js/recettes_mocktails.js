@@ -611,7 +611,9 @@ Object.assign(recettes, {
       { icone: "🧊", titre: "Glace", detail: "Remplir un grand verre de glaçons.", badge: null },
       { icone: "🍒", titre: "Grenadine", detail: "Verser le sirop de grenadine au fond du verre.", badge: null },
       { icone: "🥤", titre: "Limonade", detail: "Compléter doucement avec la limonade bien fraîche pour conserver les bulles.", badge: null },
-      { icone: "🍋", titre: "Finir", detail: "Presser le demi-citron vert, remuer une fois et garnir d'une cerise. ASTUCE CHEF : versez la grenadine en dernier sur le dos d'une cuillère pour un dégradé rouge spectaculaire.", badge: "⏱ 3 min" }
+      { icone: "🍋", titre: "Citron", detail: "Presser le demi-citron vert.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Remuer délicatement une fois.", badge: null },
+      { icone: "🍒", titre: "Garnir & servir", detail: "Décorer d'une cerise et d'une paille. ASTUCE CHEF : versez la grenadine en dernier sur le dos d'une cuillère pour un dégradé rouge spectaculaire.", badge: null }
     ]
   },
   virginspritz: {
@@ -643,9 +645,11 @@ Object.assign(recettes, {
     ingredients: {},
     etapes: [
       { icone: "🧊", titre: "Glace", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
-      { icone: "🍊", titre: "Base orange", detail: "Verser le jus d'orange et le soda amer sans alcool.", badge: null },
-      { icone: "💧", titre: "Bulles", detail: "Compléter avec l'eau gazeuse et remuer délicatement.", badge: null },
-      { icone: "🍊", titre: "Garnir", detail: "Décorer d'une tranche d'orange et, si vous aimez, d'une olive verte. ASTUCE CHEF : un soupçon de jus de pamplemousse apporte l'amertume typique du spritz original.", badge: "⏱ 4 min" }
+      { icone: "🍊", titre: "Jus", detail: "Verser le jus d'orange.", badge: null },
+      { icone: "🌿", titre: "Amer", detail: "Ajouter le soda amer sans alcool.", badge: null },
+      { icone: "💧", titre: "Bulles", detail: "Compléter avec l'eau gazeuse.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Remuer délicatement.", badge: null },
+      { icone: "🍊", titre: "Garnir & servir", detail: "Décorer d'une tranche d'orange et d'une olive verte. ASTUCE CHEF : un soupçon de jus de pamplemousse apporte l'amertume typique du spritz.", badge: null }
     ]
   },
   thepechemaison: {
@@ -676,11 +680,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫖", titre: "Infuser", detail: "Faire infuser le thé noir 4 minutes dans de l'eau frémissante, pas plus, pour éviter l'amertume.", badge: null },
-      { icone: "❄️", titre: "Refroidir", detail: "Retirer le sachet, sucrer légèrement et laisser refroidir complètement.", badge: null },
-      { icone: "🍑", titre: "Pêche", detail: "Couper la pêche en fines lamelles et les déposer dans le verre.", badge: null },
+      { icone: "🫖", titre: "Infuser", detail: "Faire infuser le thé noir 4 minutes dans une eau frémissante, pas plus, pour éviter l'amertume.", badge: "⏱ 4 min" },
+      { icone: "🍯", titre: "Sucrer", detail: "Retirer le sachet et sucrer légèrement l'infusion.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir complètement.", badge: null },
+      { icone: "🍑", titre: "Pêche", detail: "Couper la pêche en fines lamelles et en déposer dans le verre.", badge: null },
       { icone: "🧊", titre: "Assembler", detail: "Remplir de glaçons, verser le thé froid et le jus de citron.", badge: null },
-      { icone: "🥄", titre: "Servir", detail: "Remuer et goûter pour ajuster le sucre. ASTUCE CHEF : écrasez quelques morceaux de pêche au fond du verre pour un thé glacé naturellement parfumé, sans arôme artificiel.", badge: "⏱ 10 min" }
+      { icone: "🥄", titre: "Mélanger", detail: "Remuer et goûter pour ajuster le sucre.", badge: null },
+      { icone: "🍑", titre: "Servir", detail: "Servir bien frais. ASTUCE CHEF : écrasez quelques morceaux de pêche au fond du verre pour un thé glacé naturellement parfumé.", badge: null }
     ]
   },
   virginmargarita: {
@@ -711,11 +717,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧂", titre: "Givrer le verre", detail: "Passer un quartier de citron sur le bord du verre puis le tremper dans une assiette de sel fin.", badge: null },
+      { icone: "🧂", titre: "Givrer", detail: "Passer un quartier de citron sur le bord du verre puis le tremper dans le sel fin.", badge: null },
       { icone: "🥃", titre: "Au shaker", detail: "Verser le jus de citron vert, le jus d'orange et le sirop d'agave dans un shaker avec des glaçons.", badge: null },
       { icone: "🤝", titre: "Frapper", detail: "Secouer une dizaine de secondes.", badge: null },
       { icone: "🍸", titre: "Verser", detail: "Filtrer dans le verre givré rempli de glace.", badge: null },
-      { icone: "💧", titre: "Finir", detail: "Allonger d'un trait d'eau gazeuse et remuer. ASTUCE CHEF : remplacez le sirop d'agave par du miel liquide légèrement détendu à l'eau chaude pour une douceur plus parfumée.", badge: "⏱ 4 min" }
+      { icone: "💧", titre: "Allonger", detail: "Compléter d'un trait d'eau gazeuse.", badge: null },
+      { icone: "🥄", titre: "Mélanger & servir", detail: "Remuer délicatement et servir. ASTUCE CHEF : remplacez le sirop d'agave par du miel détendu à l'eau chaude pour une douceur plus parfumée.", badge: null }
     ]
   },
   gingerbeer: {
@@ -746,11 +753,50 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫚", titre: "Râper", detail: "Râper finement le gingembre frais (avec la peau, bien lavé).", badge: null },
+      { icone: "🫚", titre: "Râper", detail: "Râper finement le gingembre frais, bien lavé (avec la peau).", badge: null },
       { icone: "🍯", titre: "Sirop", detail: "Faire chauffer le gingembre avec le sucre et un peu d'eau 5 minutes pour obtenir un sirop parfumé.", badge: "⏱ 5 min" },
-      { icone: "⏳", titre: "Infuser", detail: "Laisser infuser hors du feu puis filtrer.", badge: null },
+      { icone: "⏳", titre: "Infuser", detail: "Laisser infuser hors du feu, puis filtrer.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser tiédir le sirop.", badge: null },
       { icone: "🧊", titre: "Assembler", detail: "Dans un verre rempli de glaçons, verser le sirop de gingembre et le jus de citron.", badge: null },
-      { icone: "💧", titre: "Pétiller", detail: "Compléter avec l'eau gazeuse bien fraîche et remuer. ASTUCE CHEF : ajustez la quantité de sirop de gingembre selon vos goûts ; plus vous en mettez, plus ça pique délicieusement en fin de bouche.", badge: null }
+      { icone: "💧", titre: "Pétiller", detail: "Compléter avec l'eau gazeuse bien fraîche.", badge: null },
+      { icone: "🥄", titre: "Servir", detail: "Remuer et servir. ASTUCE CHEF : ajustez la dose de sirop ; plus vous en mettez, plus ça pique délicieusement en fin de bouche.", badge: null }
+    ]
+  },
+  hibiscuscooler: {
+    nom: "Hibiscus cooler",
+    dateAjout: "2026-06-05",
+    cat: "mocktails", pays: "mexique",
+    base: 1,
+    temps: "10 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🌺",
+    description: "Une boisson rouge rubis sans alcool à base d'infusion d'hibiscus, citron vert et menthe, allongée d'eau pétillante. Acidulée et rafraîchissante.",
+    tableauHibiscuscooler: [
+      { nb: 1, hibiscusseche: "2 g", eau: "12 cl", juscitronvert: "1,5 cl", sucrecanne: "2 c.à.c", eauGaz: "5 cl", menthe: "3 feuilles" },
+      { nb: 2, hibiscusseche: "4 g", eau: "24 cl", juscitronvert: "3 cl", sucrecanne: "4 c.à.c", eauGaz: "10 cl", menthe: "6 feuilles" },
+      { nb: 3, hibiscusseche: "6 g", eau: "36 cl", juscitronvert: "4,5 cl", sucrecanne: "6 c.à.c", eauGaz: "15 cl", menthe: "9 feuilles" },
+      { nb: 4, hibiscusseche: "8 g", eau: "48 cl", juscitronvert: "6 cl", sucrecanne: "8 c.à.c", eauGaz: "20 cl", menthe: "12 feuilles" },
+      { nb: 5, hibiscusseche: "10 g", eau: "60 cl", juscitronvert: "7,5 cl", sucrecanne: "10 c.à.c", eauGaz: "25 cl", menthe: "15 feuilles" },
+      { nb: 6, hibiscusseche: "12 g", eau: "72 cl", juscitronvert: "9 cl", sucrecanne: "12 c.à.c", eauGaz: "30 cl", menthe: "18 feuilles" },
+      { nb: 7, hibiscusseche: "14 g", eau: "84 cl", juscitronvert: "10,5 cl", sucrecanne: "14 c.à.c", eauGaz: "35 cl", menthe: "21 feuilles" },
+      { nb: 8, hibiscusseche: "16 g", eau: "96 cl", juscitronvert: "12 cl", sucrecanne: "16 c.à.c", eauGaz: "40 cl", menthe: "24 feuilles" },
+      { nb: 9, hibiscusseche: "18 g", eau: "1,08 L", juscitronvert: "13,5 cl", sucrecanne: "18 c.à.c", eauGaz: "45 cl", menthe: "27 feuilles" },
+      { nb: 10, hibiscusseche: "20 g", eau: "1,2 L", juscitronvert: "15 cl", sucrecanne: "20 c.à.c", eauGaz: "50 cl", menthe: "30 feuilles" },
+      { nb: 11, hibiscusseche: "22 g", eau: "1,32 L", juscitronvert: "16,5 cl", sucrecanne: "22 c.à.c", eauGaz: "55 cl", menthe: "33 feuilles" },
+      { nb: 12, hibiscusseche: "24 g", eau: "1,44 L", juscitronvert: "18 cl", sucrecanne: "24 c.à.c", eauGaz: "60 cl", menthe: "36 feuilles" },
+      { nb: 13, hibiscusseche: "26 g", eau: "1,56 L", juscitronvert: "19,5 cl", sucrecanne: "26 c.à.c", eauGaz: "65 cl", menthe: "39 feuilles" },
+      { nb: 14, hibiscusseche: "28 g", eau: "1,68 L", juscitronvert: "21 cl", sucrecanne: "28 c.à.c", eauGaz: "70 cl", menthe: "42 feuilles" },
+      { nb: 15, hibiscusseche: "30 g", eau: "1,8 L", juscitronvert: "22,5 cl", sucrecanne: "30 c.à.c", eauGaz: "75 cl", menthe: "45 feuilles" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌺", titre: "Infuser", detail: "Faire infuser les fleurs d'hibiscus séchées 5 minutes dans l'eau chaude, puis filtrer.", badge: "⏱ 5 min" },
+      { icone: "🍯", titre: "Sucrer", detail: "Sucrer l'infusion encore chaude.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir complètement.", badge: null },
+      { icone: "🧊", titre: "Glace", detail: "Remplir un verre de glaçons.", badge: null },
+      { icone: "🍷", titre: "Assembler", detail: "Verser l'infusion d'hibiscus et le jus de citron vert.", badge: null },
+      { icone: "💧", titre: "Pétiller", detail: "Compléter avec l'eau gazeuse et remuer délicatement.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Décorer de feuilles de menthe fraîche. ASTUCE CHEF : ne dépassez pas 5 minutes d'infusion, l'hibiscus devient amer ; mieux vaut court et corsé.", badge: null }
     ]
   },
 });
