@@ -902,11 +902,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧄", titre: "Aromates", detail: "Faire revenir ail, gingembre râpé et oignon émincé dans un filet d'huile.", badge: "⏱ 3 min" },
-      { icone: "🍖", titre: "Viande", detail: "Ajouter la viande émincée, saisir. Assaisonner (cumin, paprika, sauce soja).", badge: "⏱ 5 min" },
-      { icone: "🍲", titre: "Bouillon", detail: "Verser le bouillon, ajouter les légumes en lamelles (carotte, chou, poivron). Laisser frémir.", badge: "⏱ 10 min" },
-      { icone: "🍜", titre: "Nouilles", detail: "Plonger les nouilles et cuire selon le paquet.", badge: "⏱ 5 min" },
-      { icone: "🌿", titre: "Service", detail: "Servir fumant, parsemé de coriandre fraîche et d'un trait de citron.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer la viande, les légumes, le gingembre et l'ail.", badge: null },
+      { icone: "🧄", titre: "Aromates", detail: "Faire revenir le gingembre et l'ail dans un peu d'huile.", badge: null },
+      { icone: "🥩", titre: "Viande", detail: "Ajouter la viande et la faire colorer.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Ajouter les légumes et les faire sauter brièvement.", badge: null },
+      { icone: "💧", titre: "Bouillon", detail: "Verser le bouillon et laisser mijoter.", badge: "⏱ 15 min" },
+      { icone: "🍜", titre: "Nouilles", detail: "Ajouter les nouilles et cuire jusqu'à tendreté.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir bien chaud avec de la coriandre. ASTUCE CHEF : un trait de sauce soja et de piment en fin de cuisson réveille tout le bouillon.", badge: null }
     ]
   },
   soupjoumou: {
@@ -936,11 +938,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Mariner & saisir", detail: "Mariner le bœuf (citron, ail, épices « épis »), puis saisir les morceaux dans la cocotte.", badge: "⏱ 10 min" },
-      { icone: "🎃", titre: "Le giraumon", detail: "Cuire le potiron dans l'eau jusqu'à tendreté, mixer en purée. C'est la base veloutée de la soupe.", badge: "⏱ 20 min" },
-      { icone: "🍲", titre: "Le bouillon", detail: "Ajouter la purée de giraumon, de l'eau, et les légumes coupés (carotte, pomme de terre, chou, navet).", badge: "⏱ 20 min" },
-      { icone: "🍝", titre: "Pâtes & épices", detail: "Ajouter les pâtes, du citron, du piment, persil et thym. Laisser mijoter jusqu'à ce que tout soit fondant.", badge: "⏱ 20 min" },
-      { icone: "🥣", titre: "Service", detail: "Servir bien chaud, traditionnellement le 1er janvier — mais bon toute l'année !", badge: null }
+      { icone: "🌿", titre: "Mariner & saisir", detail: "Mariner le bœuf avec épices et citron, puis le faire saisir.", badge: null },
+      { icone: "🎃", titre: "Le giraumon", detail: "Cuire le giraumon jusqu'à tendreté et le réduire en purée.", badge: null },
+      { icone: "💧", titre: "Le bouillon", detail: "Remettre la viande, ajouter la purée de giraumon et de l'eau.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Ajouter carotte, pomme de terre et chou en morceaux.", badge: null },
+      { icone: "🍝", titre: "Pâtes & épices", detail: "Ajouter les pâtes et les épices, laisser cuire.", badge: "⏱ 20 min" },
+      { icone: "😋", titre: "Ajuster", detail: "Rectifier l'assaisonnement (sel, piment, muscade).", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir bien chaud. ASTUCE CHEF : la soup joumou est encore meilleure réchauffée le lendemain, le temps que les saveurs se marient.", badge: null }
     ]
   },
   egusi: {
@@ -970,11 +974,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍲", titre: "Bouillon", detail: "Cuire la viande avec oignon, sel et épices pour obtenir un bouillon parfumé. Réserver viande + bouillon.", badge: "⏱ 20 min" },
-      { icone: "🥣", titre: "Pâte d'egusi", detail: "Mélanger les graines d'egusi moulues avec un peu d'eau pour former une pâte épaisse.", badge: null },
-      { icone: "🔥", titre: "Huile de palme", detail: "Chauffer l'huile de palme, y faire revenir oignon et tomate mixée. Ajouter des cuillerées de pâte d'egusi et laisser « grainer ».", badge: "⏱ 10 min" },
-      { icone: "💧", titre: "Mijoter", detail: "Verser le bouillon, ajouter crevettes séchées et piment. Laisser mijoter jusqu'à ce que l'huile remonte.", badge: "⏱ 15 min" },
-      { icone: "🥬", titre: "Épinards", detail: "Incorporer les épinards et la viande, cuire encore 5 min. Servir avec fufu, igname ou riz.", badge: "⏱ 5 min" }
+      { icone: "🥩", titre: "Bouillon", detail: "Cuire la viande avec oignon et épices pour obtenir un bouillon parfumé.", badge: null },
+      { icone: "🌰", titre: "Pâte d'egusi", detail: "Moudre les graines d'egusi et les délayer en pâte avec un peu d'eau.", badge: null },
+      { icone: "🔥", titre: "Huile de palme", detail: "Faire chauffer l'huile de palme, y ajouter la tomate et les crevettes séchées.", badge: null },
+      { icone: "🥣", titre: "Egusi", detail: "Incorporer la pâte d'egusi et la laisser cuire en formant des grumeaux.", badge: null },
+      { icone: "💧", titre: "Mijoter", detail: "Ajouter le bouillon et laisser mijoter.", badge: "⏱ 20 min" },
+      { icone: "🥬", titre: "Épinards", detail: "Ajouter les épinards en fin de cuisson.", badge: null },
+      { icone: "🍽️", titre: "Service", detail: "Servir avec du fufu ou du riz. ASTUCE CHEF : ne remuez pas trop pendant la cuisson, les petits grumeaux d'egusi font justement la texture typique de la soupe.", badge: null }
     ]
   },
   laksa: {
@@ -1004,11 +1010,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Pâte laksa", detail: "Faire revenir la pâte de curry laksa dans un peu d'huile jusqu'à ce qu'elle soit parfumée.", badge: "⏱ 3 min" },
-      { icone: "🥥", titre: "Bouillon", detail: "Ajouter le bouillon et le lait de coco, laisser frémir.", badge: "⏱ 10 min" },
-      { icone: "🍤", titre: "Garnitures", detail: "Pocher les crevettes et réchauffer le tofu frit dans le bouillon.", badge: "⏱ 5 min" },
-      { icone: "🍜", titre: "Nouilles", detail: "Cuire les nouilles à part, les répartir dans les bols.", badge: null },
-      { icone: "🌿", titre: "Service", detail: "Verser le bouillon brûlant, ajouter germes de soja, coriandre, citron vert et une cuillère de sambal.", badge: null }
+      { icone: "🌶️", titre: "Pâte laksa", detail: "Faire revenir la pâte laksa dans un peu d'huile pour libérer ses arômes.", badge: null },
+      { icone: "🥥", titre: "Bouillon", detail: "Ajouter le lait de coco et du bouillon, porter à frémissement.", badge: null },
+      { icone: "🍤", titre: "Crevettes", detail: "Pocher les crevettes dans le bouillon jusqu'à ce qu'elles soient roses.", badge: null },
+      { icone: "🧈", titre: "Tofu", detail: "Ajouter le tofu coupé en dés.", badge: null },
+      { icone: "🍜", titre: "Nouilles", detail: "Cuire les nouilles à part et les répartir dans les bols.", badge: null },
+      { icone: "🥄", titre: "Assembler", detail: "Verser le bouillon brûlant sur les nouilles.", badge: null },
+      { icone: "🌿", titre: "Service", detail: "Garnir de germes de soja, herbes et citron vert. ASTUCE CHEF : faites toujours revenir la pâte laksa à sec avant d'ajouter le liquide, c'est ce qui développe son parfum.", badge: null }
     ]
   },
   blaffpoisson: {
@@ -1038,11 +1046,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Mariner", detail: "Faire mariner le poisson avec citron vert, ail écrasé et sel (trempage).", badge: "⏱ 20 min" },
-      { icone: "🍲", titre: "Court-bouillon", detail: "Préparer un bouillon avec oignon, ail, thym, piment entier, clou de girofle et citron vert.", badge: "⏱ 10 min" },
-      { icone: "💧", titre: "Pocher", detail: "Plonger le poisson dans le bouillon frémissant et pocher délicatement.", badge: "⏱ 8 min" },
-      { icone: "🌿", titre: "Finir", detail: "Parsemer de persil/cive. Servir le poisson dans son bouillon.", badge: null },
-      { icone: "🍚", titre: "Accompagnement", detail: "Accompagner de riz blanc ou d'igname.", badge: null }
+      { icone: "🐟", titre: "Préparer", detail: "Nettoyer le poisson et le citronner.", badge: null },
+      { icone: "🌶️", titre: "Mariner", detail: "Mariner avec ail, citron vert et piment écrasés.", badge: "⏱ 30 min" },
+      { icone: "💧", titre: "Court-bouillon", detail: "Préparer un court-bouillon avec oignon, ail, herbes et piment.", badge: null },
+      { icone: "🐟", titre: "Pocher", detail: "Plonger le poisson dans le court-bouillon frémissant et pocher doucement.", badge: "⏱ 10 min" },
+      { icone: "🍋", titre: "Finir", detail: "Ajouter un trait de citron vert en fin de cuisson.", badge: null },
+      { icone: "😋", titre: "Goûter", detail: "Rectifier l'assaisonnement.", badge: null },
+      { icone: "🍚", titre: "Accompagnement", detail: "Servir avec du riz et des racines. ASTUCE CHEF : ne faites jamais bouillir le court-bouillon avec le poisson, un frémissement doux garde la chair moelleuse.", badge: null }
     ]
   },
   pozole: {
@@ -1470,11 +1480,50 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
+      { icone: "🌿", titre: "Préparer", detail: "Laver le cresson, retirer les grosses tiges et réserver quelques feuilles pour la déco.", badge: null },
       { icone: "🧅", titre: "Suer", detail: "Faire suer l'oignon émincé dans un peu de beurre sans coloration.", badge: null },
       { icone: "🥔", titre: "Pommes de terre", detail: "Ajouter les pommes de terre en dés et le bouillon. Cuire 15 minutes.", badge: "⏱ 15 min" },
-      { icone: "🌿", titre: "Cresson", detail: "Ajouter le cresson lavé et cuire seulement 3 minutes pour garder sa couleur.", badge: "⏱ 3 min" },
+      { icone: "🌿", titre: "Cresson", detail: "Ajouter le cresson et cuire seulement 3 minutes pour garder sa couleur.", badge: "⏱ 3 min" },
       { icone: "🥄", titre: "Mixer", detail: "Mixer finement jusqu'à obtenir un velouté lisse.", badge: null },
-      { icone: "🥛", titre: "Crémer et servir", detail: "Incorporer la crème, assaisonner et servir. ASTUCE CHEF : gardez quelques feuilles de cresson crues pour la déco et ajoutez-les au dernier moment, elles apportent fraîcheur et croquant.", badge: null }
+      { icone: "🥛", titre: "Crémer", detail: "Incorporer la crème et rectifier l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec les feuilles de cresson réservées. ASTUCE CHEF : ajoutez le cresson au dernier moment, une cuisson trop longue le fait virer au kaki.", badge: null }
+    ]
+  },
+  veloutepanais: {
+    nom: "Velouté de panais",
+    dateAjout: "2026-06-05",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    description: "Un velouté doux et délicatement sucré de panais, adouci par la pomme de terre et la crème. Tout en rondeur.",
+    tableauVeloutepanais: [
+      { nb: 1, panais: "150 g", pdterre: "50 g", oignon: "0", bouillon: "20 cl", creme: "3 cl" },
+      { nb: 2, panais: "300 g", pdterre: "100 g", oignon: "½", bouillon: "40 cl", creme: "6 cl" },
+      { nb: 3, panais: "450 g", pdterre: "150 g", oignon: "1", bouillon: "60 cl", creme: "9 cl" },
+      { nb: 4, panais: "600 g", pdterre: "200 g", oignon: "1", bouillon: "80 cl", creme: "12 cl" },
+      { nb: 5, panais: "750 g", pdterre: "250 g", oignon: "1", bouillon: "1 L", creme: "15 cl" },
+      { nb: 6, panais: "900 g", pdterre: "300 g", oignon: "1½", bouillon: "1,2 L", creme: "18 cl" },
+      { nb: 7, panais: "1050 g", pdterre: "350 g", oignon: "2", bouillon: "1,4 L", creme: "21 cl" },
+      { nb: 8, panais: "1200 g", pdterre: "400 g", oignon: "2", bouillon: "1,6 L", creme: "24 cl" },
+      { nb: 9, panais: "1350 g", pdterre: "450 g", oignon: "2", bouillon: "1,8 L", creme: "27 cl" },
+      { nb: 10, panais: "1500 g", pdterre: "500 g", oignon: "2½", bouillon: "2 L", creme: "30 cl" },
+      { nb: 11, panais: "1650 g", pdterre: "550 g", oignon: "3", bouillon: "2,2 L", creme: "33 cl" },
+      { nb: 12, panais: "1800 g", pdterre: "600 g", oignon: "3", bouillon: "2,4 L", creme: "36 cl" },
+      { nb: 13, panais: "1950 g", pdterre: "650 g", oignon: "3", bouillon: "2,6 L", creme: "39 cl" },
+      { nb: 14, panais: "2100 g", pdterre: "700 g", oignon: "3½", bouillon: "2,8 L", creme: "42 cl" },
+      { nb: 15, panais: "2250 g", pdterre: "750 g", oignon: "4", bouillon: "3 L", creme: "45 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher et couper le panais et la pomme de terre en dés.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire suer l'oignon émincé dans un peu de beurre sans le colorer.", badge: null },
+      { icone: "🥣", titre: "Légumes", detail: "Ajouter le panais et la pomme de terre, puis le bouillon. Couvrir.", badge: null },
+      { icone: "⏳", titre: "Cuire", detail: "Laisser cuire 20 minutes jusqu'à ce que les légumes soient bien tendres.", badge: "⏱ 20 min" },
+      { icone: "🥄", titre: "Mixer", detail: "Mixer finement pour un velouté lisse.", badge: null },
+      { icone: "🥛", titre: "Crémer", detail: "Incorporer la crème et assaisonner.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Servir avec quelques copeaux de noisette torréfiée. ASTUCE CHEF : la noisette sublime le côté doux et sucré du panais.", badge: null }
     ]
   },
 });

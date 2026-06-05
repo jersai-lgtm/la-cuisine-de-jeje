@@ -1941,11 +1941,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍌", titre: "Purée", detail: "Écraser les bananes bien mûres en purée lisse.", badge: null },
-      { icone: "🥣", titre: "Mélange", detail: "Incorporer l'amidon (Maïzena ou tapioca), le sucre, une pointe de vanille et un peu d'eau jusqu'à une pâte épaisse.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Verser dans un plat huilé et cuire au four à 180°C jusqu'à ce que ce soit pris et légèrement caramélisé.", badge: "⏱ 30 min" },
-      { icone: "❄️", titre: "Refroidir", detail: "Laisser tiédir puis découper en parts.", badge: "⏱ 20 min" },
-      { icone: "🥥", titre: "Napper", detail: "Servir nappé de lait de coco frais légèrement sucré.", badge: null }
+      { icone: "🍌", titre: "Purée", detail: "Écraser les bananes bien mûres en purée.", badge: null },
+      { icone: "🥣", titre: "Mélange", detail: "Mélanger la purée avec l'amidon et le sucre.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire à feu doux en remuant jusqu'à épaississement.", badge: "⏱ 10 min" },
+      { icone: "🍽️", titre: "Mouler", detail: "Verser dans un plat et lisser la surface.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser prendre au frais.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Découper en cubes.", badge: null },
+      { icone: "🥥", titre: "Napper & servir", detail: "Napper de lait de coco frais. ASTUCE CHEF : choisissez des bananes très mûres, presque noires, pour un poé naturellement sucré et parfumé.", badge: null }
     ]
   },
   haupia: {
@@ -1975,11 +1977,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥥", titre: "Chauffer", detail: "Chauffer le lait de coco avec le sucre à feu doux (sans bouillir).", badge: "⏱ 3 min" },
-      { icone: "🥣", titre: "Délayer", detail: "Délayer la Maïzena dans un peu de lait de coco froid, puis verser dans la casserole.", badge: null },
-      { icone: "🔥", titre: "Épaissir", detail: "Cuire en remuant sans cesse jusqu'à ce que le mélange épaississe nettement.", badge: "⏱ 5 min" },
-      { icone: "🧊", titre: "Prendre", detail: "Verser dans un petit plat carré et lisser. Réfrigérer au moins 2-3 h.", badge: "⏱ 3 h" },
-      { icone: "🔪", titre: "Découper", detail: "Découper en petits carrés et servir bien frais.", badge: null }
+      { icone: "🥥", titre: "Chauffer", detail: "Faire chauffer le lait de coco avec le sucre sans le faire bouillir.", badge: null },
+      { icone: "🥣", titre: "Délayer", detail: "Délayer la maïzena dans un peu de lait de coco froid.", badge: null },
+      { icone: "🔥", titre: "Épaissir", detail: "Verser dans le lait chaud et cuire en fouettant jusqu'à épaississement.", badge: "⏱ 5 min" },
+      { icone: "🍽️", titre: "Mouler", detail: "Verser dans un plat carré et lisser.", badge: null },
+      { icone: "❄️", titre: "Prendre", detail: "Laisser prendre au frais plusieurs heures.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Découper en carrés réguliers.", badge: null },
+      { icone: "🥥", titre: "Servir", detail: "Servir frais. ASTUCE CHEF : la haupia doit être bien ferme pour se découper proprement ; forcez un peu sur la maïzena si besoin.", badge: null }
     ]
   },
   gaufresliege: {
@@ -2009,11 +2013,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte levée", detail: "Mélanger farine, levure de boulanger délayée dans le lait tiède, œuf, une pincée de sel. Incorporer le beurre mou. Pétrir jusqu'à une pâte souple.", badge: null },
+      { icone: "🥣", titre: "Pâte levée", detail: "Mélanger farine, levure, œuf, lait tiède et beurre mou en une pâte épaisse.", badge: null },
       { icone: "⏳", titre: "Pousse", detail: "Couvrir et laisser pousser jusqu'à ce que la pâte double de volume.", badge: "⏱ 1 h" },
-      { icone: "🍬", titre: "Sucre perlé", detail: "Incorporer délicatement le sucre perlé à la pâte (sans trop travailler).", badge: null },
-      { icone: "⚪", titre: "Pâtons", detail: "Former des pâtons et les laisser détendre 15 min.", badge: "⏱ 15 min" },
-      { icone: "🧇", titre: "Cuire", detail: "Cuire au gaufrier chaud 4-5 min : le sucre perlé fond et caramélise. Déguster tiède, nature.", badge: "⏱ 5 min" }
+      { icone: "🍬", titre: "Sucre perlé", detail: "Incorporer le sucre perlé à la pâte.", badge: null },
+      { icone: "✋", titre: "Pâtons", detail: "Façonner des boules de pâte régulières.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Préchauffer le gaufrier.", badge: null },
+      { icone: "🧇", titre: "Cuire", detail: "Cuire les pâtons jusqu'à ce que les gaufres soient dorées et caramélisées.", badge: "⏱ 4 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Déguster tièdes. ASTUCE CHEF : le sucre perlé caramélise au contact du gaufrier en formant des éclats croquants ; ne le remplacez jamais par du sucre normal.", badge: null }
     ]
   },
   thiakry: {
@@ -2360,11 +2366,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💧", titre: "Blanchir le riz", detail: "Plonger le riz 2 minutes dans l'eau bouillante puis l'égoutter : il sera plus digeste et plus crémeux.", badge: null },
+      { icone: "💧", titre: "Blanchir", detail: "Plonger le riz 2 minutes dans l'eau bouillante puis l'égoutter : il sera plus digeste et crémeux.", badge: null },
       { icone: "🥛", titre: "Lait vanillé", detail: "Porter le lait à frémissement avec la gousse de vanille fendue et grattée.", badge: null },
-      { icone: "🍚", titre: "Cuire", detail: "Ajouter le riz et laisser cuire à feu très doux en remuant souvent, environ 30 minutes.", badge: "⏱ 30 min" },
+      { icone: "🍚", titre: "Cuire", detail: "Ajouter le riz et cuire à feu très doux en remuant souvent.", badge: "⏱ 30 min" },
+      { icone: "👀", titre: "Surveiller", detail: "Remuer régulièrement pour éviter que le riz n'attache au fond.", badge: null },
       { icone: "🍯", titre: "Sucrer", detail: "Ajouter le sucre en fin de cuisson et mélanger.", badge: null },
-      { icone: "🥄", titre: "Servir", detail: "Servir tiède ou frais. ASTUCE CHEF : le riz au lait épaissit en refroidissant ; arrêtez la cuisson quand il est encore un peu liquide pour une texture parfaite une fois froid.", badge: null }
+      { icone: "🥄", titre: "Texture", detail: "Arrêter quand le riz est encore un peu liquide, il épaissit en refroidissant.", badge: null },
+      { icone: "🍮", titre: "Servir", detail: "Servir tiède ou frais. ASTUCE CHEF : un peu de zeste d'orange ou une pincée de fleur d'oranger parfume délicieusement le riz au lait.", badge: null }
     ]
   },
   gateauyaourt: {
@@ -2467,11 +2475,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍎", titre: "Préparer", detail: "Éplucher les pommes, retirer le cœur et les couper en morceaux. Les citronner pour éviter qu'elles noircissent.", badge: null },
-      { icone: "🍲", titre: "Cuire", detail: "Mettre les pommes dans une casserole avec un fond d'eau, le sucre et la cannelle. Couvrir.", badge: null },
-      { icone: "⏳", titre: "Compoter", detail: "Laisser cuire à feu doux 15 minutes en remuant, jusqu'à ce que les pommes s'écrasent facilement.", badge: "⏱ 15 min" },
-      { icone: "🥄", titre: "Mixer ou écraser", detail: "Écraser à la fourchette pour une compote rustique, ou mixer pour une texture lisse.", badge: null },
-      { icone: "🍮", titre: "Servir", detail: "Déguster tiède ou froide. ASTUCE CHEF : gardez une pomme un peu acidulée comme la Granny Smith parmi les autres pour une compote moins sucrée et plus parfumée.", badge: null }
+      { icone: "🍎", titre: "Préparer", detail: "Éplucher les pommes, retirer le cœur et les couper en morceaux.", badge: null },
+      { icone: "🍋", titre: "Citronner", detail: "Les arroser de jus de citron pour éviter qu'elles noircissent.", badge: null },
+      { icone: "🍲", titre: "Démarrer", detail: "Mettre les pommes dans une casserole avec un fond d'eau, le sucre et la cannelle.", badge: null },
+      { icone: "⏳", titre: "Compoter", detail: "Couvrir et cuire à feu doux 15 minutes en remuant.", badge: "⏱ 15 min" },
+      { icone: "🥄", titre: "Écraser", detail: "Écraser à la fourchette pour une compote rustique, ou mixer pour une texture lisse.", badge: null },
+      { icone: "😋", titre: "Goûter", detail: "Rectifier le sucre selon l'acidité des pommes.", badge: null },
+      { icone: "🍮", titre: "Servir", detail: "Déguster tiède ou froide. ASTUCE CHEF : gardez une pomme acidulée (Granny Smith) parmi les autres pour une compote moins sucrée et plus parfumée.", badge: null }
     ]
   },
   poirehelene: {
@@ -2502,11 +2512,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍐", titre: "Pocher", detail: "Éplucher les poires et les pocher 15 minutes dans un sirop léger (eau + sucre) jusqu'à ce qu'elles soient tendres.", badge: "⏱ 15 min" },
+      { icone: "🍐", titre: "Préparer", detail: "Éplucher les poires en gardant la queue.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Pocher 15 minutes dans un sirop léger (eau + sucre) jusqu'à ce qu'elles soient tendres.", badge: "⏱ 15 min" },
       { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir les poires dans leur sirop.", badge: null },
-      { icone: "🍫", titre: "Sauce chocolat", detail: "Faire fondre le chocolat avec la crème chaude pour obtenir une sauce lisse et brillante.", badge: null },
-      { icone: "🥄", titre: "Dresser", detail: "Déposer une poire dans chaque coupe avec une boule de glace vanille.", badge: null },
-      { icone: "🌰", titre: "Finir", detail: "Napper de sauce chocolat chaude et parsemer d'amandes effilées grillées. ASTUCE CHEF : versez la sauce chocolat chaude juste au moment de servir, le contraste chaud-froid avec la glace est tout l'intérêt du dessert.", badge: null }
+      { icone: "🌰", titre: "Amandes", detail: "Faire torréfier les amandes effilées à sec dans une poêle.", badge: null },
+      { icone: "🍫", titre: "Sauce chocolat", detail: "Faire fondre le chocolat avec la crème chaude pour une sauce lisse et brillante.", badge: null },
+      { icone: "🥄", titre: "Dresser", detail: "Déposer une poire et une boule de glace vanille dans chaque coupe.", badge: null },
+      { icone: "🍫", titre: "Servir", detail: "Napper de sauce chocolat chaude et parsemer d'amandes. ASTUCE CHEF : versez le chocolat chaud à la dernière seconde, le contraste chaud-froid avec la glace fait tout le dessert.", badge: null }
     ]
   },
   kouignamann: {
@@ -2612,9 +2624,84 @@ Object.assign(recettes, {
     etapes: [
       { icone: "🍦", titre: "Chantilly", detail: "Monter la crème bien froide en chantilly avec le sucre glace.", badge: null },
       { icone: "🌰", titre: "Crème de marrons", detail: "Détendre la crème de marrons avec un peu de beurre pommade pour la rendre souple.", badge: null },
+      { icone: "🎒", titre: "Poche", detail: "Garnir une poche à douille de crème de marrons (douille à vermicelles).", badge: null },
       { icone: "🥧", titre: "Base", detail: "Déposer une meringue dans chaque assiette.", badge: null },
-      { icone: "⛰️", titre: "Monter", detail: "Garnir d'un dôme de chantilly, puis recouvrir de vermicelles de crème de marrons à l'aide d'une poche.", badge: null },
-      { icone: "❄️", titre: "Finir", detail: "Saupoudrer de sucre glace et décorer d'un éclat de marron glacé. ASTUCE CHEF : montez les Mont-blanc juste avant de servir pour que la meringue reste bien croquante sous la crème.", badge: null }
+      { icone: "⛰️", titre: "Dôme", detail: "Garnir d'un dôme de chantilly.", badge: null },
+      { icone: "🍝", titre: "Vermicelles", detail: "Recouvrir de vermicelles de crème de marrons à la poche.", badge: null },
+      { icone: "❄️", titre: "Finir", detail: "Saupoudrer de sucre glace et décorer d'un éclat de marron glacé. ASTUCE CHEF : montez les Mont-blanc juste avant de servir pour garder la meringue croquante.", badge: null }
+    ]
+  },
+  crepessuzette: {
+    nom: "Crêpes Suzette",
+    dateAjout: "2026-06-05",
+    cat: "desserts", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Moyen",
+    emoji: "🥞",
+    description: "Le grand classique de la gastronomie française : des crêpes fines nappées d'un beurre d'orange caramélisé, flambées à table.",
+    tableauCrepessuzette: [
+      { nb: 1, farine: "30 g", lait: "12 cl", oeufs: "½", beurre: "15 g", orange: "½", sucre: "15 g", grandmarnier: "1 cl" },
+      { nb: 2, farine: "60 g", lait: "24 cl", oeufs: "1", beurre: "30 g", orange: "1", sucre: "30 g", grandmarnier: "2 cl" },
+      { nb: 3, farine: "90 g", lait: "36 cl", oeufs: "1½", beurre: "45 g", orange: "1½", sucre: "45 g", grandmarnier: "3 cl" },
+      { nb: 4, farine: "120 g", lait: "48 cl", oeufs: "2", beurre: "60 g", orange: "2", sucre: "60 g", grandmarnier: "4 cl" },
+      { nb: 5, farine: "150 g", lait: "60 cl", oeufs: "2½", beurre: "75 g", orange: "2½", sucre: "75 g", grandmarnier: "5 cl" },
+      { nb: 6, farine: "180 g", lait: "72 cl", oeufs: "3", beurre: "90 g", orange: "3", sucre: "90 g", grandmarnier: "6 cl" },
+      { nb: 7, farine: "210 g", lait: "84 cl", oeufs: "3½", beurre: "105 g", orange: "3½", sucre: "105 g", grandmarnier: "7 cl" },
+      { nb: 8, farine: "240 g", lait: "96 cl", oeufs: "4", beurre: "120 g", orange: "4", sucre: "120 g", grandmarnier: "8 cl" },
+      { nb: 9, farine: "270 g", lait: "1,08 L", oeufs: "4½", beurre: "135 g", orange: "4½", sucre: "135 g", grandmarnier: "9 cl" },
+      { nb: 10, farine: "300 g", lait: "1,2 L", oeufs: "5", beurre: "150 g", orange: "5", sucre: "150 g", grandmarnier: "10 cl" },
+      { nb: 11, farine: "330 g", lait: "1,32 L", oeufs: "5½", beurre: "165 g", orange: "5½", sucre: "165 g", grandmarnier: "11 cl" },
+      { nb: 12, farine: "360 g", lait: "1,44 L", oeufs: "6", beurre: "180 g", orange: "6", sucre: "180 g", grandmarnier: "12 cl" },
+      { nb: 13, farine: "390 g", lait: "1,56 L", oeufs: "6½", beurre: "195 g", orange: "6½", sucre: "195 g", grandmarnier: "13 cl" },
+      { nb: 14, farine: "420 g", lait: "1,68 L", oeufs: "7", beurre: "210 g", orange: "7", sucre: "210 g", grandmarnier: "14 cl" },
+      { nb: 15, farine: "450 g", lait: "1,8 L", oeufs: "7½", beurre: "225 g", orange: "7½", sucre: "225 g", grandmarnier: "15 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger la farine, les œufs et le lait pour une pâte lisse. Laisser reposer.", badge: null },
+      { icone: "🥞", titre: "Crêpes", detail: "Cuire des crêpes fines et les réserver pliées en quatre.", badge: null },
+      { icone: "🍊", titre: "Beurre d'orange", detail: "Faire fondre le sucre en caramel léger, ajouter le beurre et le jus d'orange pour une sauce sirupeuse.", badge: null },
+      { icone: "🔥", titre: "Enrober", detail: "Faire glisser les crêpes pliées dans la sauce chaude pour bien les imprégner.", badge: null },
+      { icone: "🔥", titre: "Flamber", detail: "Verser le Grand Marnier et flamber délicatement.", badge: "⏱ 2 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt avec un peu de sauce et de zeste. ASTUCE CHEF : réchauffez l'alcool quelques secondes avant de l'enflammer, il prend feu bien plus facilement et le flambage est spectaculaire.", badge: null }
+    ]
+  },
+  tropezienne: {
+    nom: "Tarte tropézienne",
+    dateAjout: "2026-06-05",
+    cat: "desserts", pays: "france",
+    base: 8,
+    temps: "1 h + repos",
+    niveau: "⭐ Moyen",
+    emoji: "🍮",
+    description: "La spécialité de Saint-Tropez : une brioche moelleuse au sucre perlé, fourrée d'une crème mousseline légère et parfumée.",
+    tableauTropezienne: [
+      { nb: 1, farine: "40 g", beurre: "20 g", oeufs: "½", lait: "2 cl", sucre: "12 g", levureboulanger: "2 g", cremepatissiere: "40 g", sucreperle: "5 g" },
+      { nb: 2, farine: "80 g", beurre: "40 g", oeufs: "1", lait: "4 cl", sucre: "24 g", levureboulanger: "4 g", cremepatissiere: "80 g", sucreperle: "10 g" },
+      { nb: 3, farine: "120 g", beurre: "60 g", oeufs: "1½", lait: "6 cl", sucre: "36 g", levureboulanger: "6 g", cremepatissiere: "120 g", sucreperle: "15 g" },
+      { nb: 4, farine: "160 g", beurre: "80 g", oeufs: "2", lait: "8 cl", sucre: "48 g", levureboulanger: "8 g", cremepatissiere: "160 g", sucreperle: "20 g" },
+      { nb: 5, farine: "200 g", beurre: "100 g", oeufs: "2½", lait: "10 cl", sucre: "60 g", levureboulanger: "10 g", cremepatissiere: "200 g", sucreperle: "25 g" },
+      { nb: 6, farine: "240 g", beurre: "120 g", oeufs: "3", lait: "12 cl", sucre: "72 g", levureboulanger: "12 g", cremepatissiere: "240 g", sucreperle: "30 g" },
+      { nb: 7, farine: "280 g", beurre: "140 g", oeufs: "3½", lait: "14 cl", sucre: "84 g", levureboulanger: "14 g", cremepatissiere: "280 g", sucreperle: "35 g" },
+      { nb: 8, farine: "320 g", beurre: "160 g", oeufs: "4", lait: "16 cl", sucre: "96 g", levureboulanger: "16 g", cremepatissiere: "320 g", sucreperle: "40 g" },
+      { nb: 9, farine: "360 g", beurre: "180 g", oeufs: "4½", lait: "18 cl", sucre: "108 g", levureboulanger: "18 g", cremepatissiere: "360 g", sucreperle: "45 g" },
+      { nb: 10, farine: "400 g", beurre: "200 g", oeufs: "5", lait: "20 cl", sucre: "120 g", levureboulanger: "20 g", cremepatissiere: "400 g", sucreperle: "50 g" },
+      { nb: 11, farine: "440 g", beurre: "220 g", oeufs: "5½", lait: "22 cl", sucre: "132 g", levureboulanger: "22 g", cremepatissiere: "440 g", sucreperle: "55 g" },
+      { nb: 12, farine: "480 g", beurre: "240 g", oeufs: "6", lait: "24 cl", sucre: "144 g", levureboulanger: "24 g", cremepatissiere: "480 g", sucreperle: "60 g" },
+      { nb: 13, farine: "520 g", beurre: "260 g", oeufs: "6½", lait: "26 cl", sucre: "156 g", levureboulanger: "26 g", cremepatissiere: "520 g", sucreperle: "65 g" },
+      { nb: 14, farine: "560 g", beurre: "280 g", oeufs: "7", lait: "28 cl", sucre: "168 g", levureboulanger: "28 g", cremepatissiere: "560 g", sucreperle: "70 g" },
+      { nb: 15, farine: "600 g", beurre: "300 g", oeufs: "7½", lait: "30 cl", sucre: "180 g", levureboulanger: "30 g", cremepatissiere: "600 g", sucreperle: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Brioche", detail: "Pétrir farine, levure, sucre, œufs et lait, puis incorporer le beurre mou. Laisser pousser jusqu'à doubler de volume.", badge: "⏱ 1 h" },
+      { icone: "🔵", titre: "Façonner", detail: "Étaler en disque, dorer à l'œuf et parsemer généreusement de sucre perlé.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180 °C pendant 20 minutes jusqu'à belle dorure. Laisser refroidir.", badge: "⏱ 20 min" },
+      { icone: "🍮", titre: "Mousseline", detail: "Détendre la crème pâtissière froide et la monter avec du beurre pommade pour une mousseline légère.", badge: null },
+      { icone: "🔪", titre: "Couper", detail: "Couper la brioche refroidie en deux dans l'épaisseur.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Pocher généreusement la crème mousseline sur la base, refermer avec le chapeau.", badge: null },
+      { icone: "❄️", titre: "Servir", detail: "Réserver au frais et servir bien frais. ASTUCE CHEF : la mousseline doit être à la même température que le beurre pour ne pas trancher ; sortez tout à l'avance pour une crème parfaitement lisse.", badge: null }
     ]
   },
 });

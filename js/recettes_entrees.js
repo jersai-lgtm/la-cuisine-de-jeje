@@ -763,11 +763,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍤", titre: "Préparer", detail: "Cuire les vermicelles et les crevettes (coupées en deux dans la longueur).", badge: "⏱ 8 min" },
-      { icone: "💧", titre: "Galette", detail: "Tremper une galette de riz dans l'eau tiède pour l'assouplir.", badge: null },
-      { icone: "🌿", titre: "Garnir", detail: "Déposer salade, vermicelles, herbes (menthe, coriandre) et crevettes côté visible.", badge: null },
-      { icone: "🌯", titre: "Rouler", detail: "Rouler serré en repliant les bords.", badge: null },
-      { icone: "🥜", titre: "Sauce", detail: "Servir frais avec une sauce hoisin-beurre de cacahuète.", badge: null }
+      { icone: "🍤", titre: "Crevettes", detail: "Cuire les crevettes, les égoutter et les couper en deux dans la longueur.", badge: null },
+      { icone: "🍜", titre: "Vermicelles", detail: "Cuire les vermicelles de riz, les rafraîchir et bien les égoutter.", badge: null },
+      { icone: "🥬", titre: "Préparer", detail: "Laver la salade et préparer les herbes fraîches (menthe, coriandre).", badge: null },
+      { icone: "💧", titre: "Galette", detail: "Tremper une galette de riz quelques secondes dans l'eau tiède pour l'assouplir.", badge: null },
+      { icone: "🥢", titre: "Garnir", detail: "Disposer salade, vermicelles, crevettes et herbes sur le tiers inférieur de la galette.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Replier les côtés puis rouler bien serré.", badge: null },
+      { icone: "🥜", titre: "Sauce & servir", detail: "Servir avec une sauce hoisin-cacahuète ou un nuoc-cham. ASTUCE CHEF : ne trempez pas trop la galette, elle continue de ramollir à l'air et se déchire si elle est détrempée.", badge: null }
     ]
   },
   blinis: {
@@ -797,11 +799,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Délayer la levure dans le lait tiède, ajouter farine, jaune d'œuf et sel. Laisser reposer.", badge: "⏱ 30 min" },
-      { icone: "🥚", titre: "Blanc", detail: "Incorporer délicatement le blanc monté en neige pour des blinis aériens.", badge: null },
-      { icone: "🍳", titre: "Cuire", detail: "Cuire de petites louches dans une poêle beurrée jusqu'à bulles, puis retourner.", badge: "⏱ 2 min" },
-      { icone: "🧈", titre: "Tenir au chaud", detail: "Empiler et couvrir.", badge: null },
-      { icone: "🐟", titre: "Service", detail: "Servir tièdes avec crème fraîche et saumon fumé.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger la farine, les jaunes, le lait tiède et le beurre fondu en une pâte lisse.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Laisser reposer la pâte pour qu'elle s'aère.", badge: null },
+      { icone: "🥚", titre: "Blancs", detail: "Monter les blancs en neige et les incorporer délicatement à la pâte.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Chauffer une poêle (ou poêle à blinis) légèrement beurrée.", badge: null },
+      { icone: "🥞", titre: "Cuire", detail: "Verser de petites louches et cuire jusqu'à l'apparition de bulles, puis retourner.", badge: "⏱ 2 min" },
+      { icone: "♨️", titre: "Tenir au chaud", detail: "Réserver les blinis au chaud sous un linge.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir tièdes avec saumon fumé, crème et aneth. ASTUCE CHEF : incorporez les blancs en deux fois sans les écraser, c'est ce qui rend les blinis bien moelleux.", badge: null }
     ]
   },
   gambasajillo: {
@@ -905,11 +909,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥗", titre: "Salade", detail: "Laver la salade et la répartir dans les assiettes. Parsemer de noix concassées.", badge: null },
+      { icone: "🥗", titre: "Salade", detail: "Laver la salade, l'essorer et la répartir dans les assiettes.", badge: null },
+      { icone: "🌰", titre: "Noix", detail: "Concasser grossièrement les noix et les parsemer sur la salade.", badge: null },
       { icone: "🍞", titre: "Toasts", detail: "Déposer une rondelle de chèvre sur chaque tranche de pain.", badge: null },
       { icone: "🍯", titre: "Miel", detail: "Arroser le chèvre d'un filet de miel.", badge: null },
       { icone: "🔥", titre: "Gratiner", detail: "Passer les toasts sous le gril 4 à 5 minutes jusqu'à ce que le chèvre soit doré et fondant.", badge: "⏱ 5 min" },
-      { icone: "🍽️", titre: "Dresser", detail: "Déposer les toasts chauds sur la salade, arroser de vinaigrette. ASTUCE CHEF : un trait de vinaigre balsamique dans la vinaigrette équilibre parfaitement le sucré du miel et l'acidité du chèvre.", badge: null }
+      { icone: "🥗", titre: "Dresser", detail: "Déposer les toasts chauds sur la salade.", badge: null },
+      { icone: "🫒", titre: "Servir", detail: "Arroser de vinaigrette et servir aussitôt. ASTUCE CHEF : un trait de balsamique équilibre parfaitement le sucré du miel et l'acidité du chèvre.", badge: null }
     ]
   },
   terrineforestiere: {
@@ -977,10 +983,49 @@ oeufmayo: {
     ingredients: {},
     etapes: [
       { icone: "🔪", titre: "Préparer", detail: "Éplucher le pied des asperges et les attacher en botte.", badge: null },
-      { icone: "💧", titre: "Cuire", detail: "Cuire les asperges 10 à 12 minutes dans l'eau bouillante salée : elles doivent rester légèrement fermes.", badge: "⏱ 12 min" },
-      { icone: "🥚", titre: "Œufs durs", detail: "Cuire les œufs 9 minutes, les refroidir, les écaler et les émietter à la fourchette (le « mimosa »).", badge: null },
-      { icone: "🥗", titre: "Dresser", detail: "Disposer les asperges égouttées dans les assiettes, napper de vinaigrette.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Parsemer généreusement d'œuf mimosa et de ciboulette ciselée. ASTUCE CHEF : plongez les asperges dans l'eau glacée dès la fin de la cuisson pour fixer leur belle couleur verte.", badge: null }
+      { icone: "💧", titre: "Cuire", detail: "Cuire 10 à 12 minutes dans l'eau bouillante salée : elles doivent rester un peu fermes.", badge: "⏱ 12 min" },
+      { icone: "❄️", titre: "Rafraîchir", detail: "Plonger les asperges dans l'eau glacée pour fixer leur couleur, puis égoutter.", badge: null },
+      { icone: "🥚", titre: "Œufs durs", detail: "Cuire les œufs 9 minutes, les écaler et les émietter à la fourchette (le mimosa).", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer les asperges dans les assiettes.", badge: null },
+      { icone: "🥄", titre: "Vinaigrette", detail: "Napper d'une vinaigrette légère.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Parsemer d'œuf mimosa et de ciboulette ciselée. ASTUCE CHEF : l'eau glacée juste après cuisson garde les asperges bien vertes.", badge: null }
+    ]
+  },
+  halloumigrille: {
+    nom: "Halloumi grillé",
+    dateAjout: "2026-06-05",
+    cat: "entrees", pays: "chypre",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Très facile",
+    emoji: "🧀",
+    description: "Des tranches de halloumi grillées, dorées et fondantes, relevées de citron, miel et menthe. Une entrée chypriote express.",
+    tableauHalloumigrille: [
+      { nb: 1, halloumi: "80 g", citron: "0", miel: "0,5 c.à.c", menthe: "2 feuilles", huileolive: "1 c.à.c" },
+      { nb: 2, halloumi: "160 g", citron: "½", miel: "1 c.à.c", menthe: "4 feuilles", huileolive: "2 c.à.c" },
+      { nb: 3, halloumi: "240 g", citron: "1", miel: "1,5 c.à.c", menthe: "6 feuilles", huileolive: "3 c.à.c" },
+      { nb: 4, halloumi: "320 g", citron: "1", miel: "2 c.à.c", menthe: "8 feuilles", huileolive: "4 c.à.c" },
+      { nb: 5, halloumi: "400 g", citron: "1", miel: "2,5 c.à.c", menthe: "10 feuilles", huileolive: "5 c.à.c" },
+      { nb: 6, halloumi: "480 g", citron: "1½", miel: "3 c.à.c", menthe: "12 feuilles", huileolive: "6 c.à.c" },
+      { nb: 7, halloumi: "560 g", citron: "2", miel: "3,5 c.à.c", menthe: "14 feuilles", huileolive: "7 c.à.c" },
+      { nb: 8, halloumi: "640 g", citron: "2", miel: "4 c.à.c", menthe: "16 feuilles", huileolive: "8 c.à.c" },
+      { nb: 9, halloumi: "720 g", citron: "2", miel: "4,5 c.à.c", menthe: "18 feuilles", huileolive: "9 c.à.c" },
+      { nb: 10, halloumi: "800 g", citron: "2½", miel: "5 c.à.c", menthe: "20 feuilles", huileolive: "10 c.à.c" },
+      { nb: 11, halloumi: "880 g", citron: "3", miel: "5,5 c.à.c", menthe: "22 feuilles", huileolive: "11 c.à.c" },
+      { nb: 12, halloumi: "960 g", citron: "3", miel: "6 c.à.c", menthe: "24 feuilles", huileolive: "12 c.à.c" },
+      { nb: 13, halloumi: "1040 g", citron: "3", miel: "6,5 c.à.c", menthe: "26 feuilles", huileolive: "13 c.à.c" },
+      { nb: 14, halloumi: "1120 g", citron: "3½", miel: "7 c.à.c", menthe: "28 feuilles", huileolive: "14 c.à.c" },
+      { nb: 15, halloumi: "1200 g", citron: "4", miel: "7,5 c.à.c", menthe: "30 feuilles", huileolive: "15 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Trancher", detail: "Couper le halloumi en tranches d'environ 1 cm d'épaisseur.", badge: null },
+      { icone: "🌡️", titre: "Préparer", detail: "Chauffer une poêle à peine huilée jusqu'à ce qu'elle soit bien chaude.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Faire dorer les tranches 2 minutes par face.", badge: "⏱ 4 min" },
+      { icone: "🍽️", titre: "Dresser", detail: "Déposer le halloumi dans les assiettes.", badge: null },
+      { icone: "🍋", titre: "Citron", detail: "Arroser d'un trait de jus de citron.", badge: null },
+      { icone: "🍯", titre: "Finir", detail: "Napper d'un filet de miel et parsemer de menthe ciselée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, tant que le halloumi est chaud et moelleux. ASTUCE CHEF : ne salez jamais le halloumi, il l'est déjà beaucoup ; miel et citron suffisent à l'équilibrer.", badge: null }
     ]
   },
 });
