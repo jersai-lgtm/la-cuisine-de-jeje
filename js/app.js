@@ -813,7 +813,7 @@ function chargerAccueilNouveautes() {
     return;
   }
   sec.style.display = "";
-  row.innerHTML = recents.map(key => miniCarte(key)).join("");
+  row.innerHTML = recents.map(key => miniCarte(key, null, { noRegen: true })).join("");
 }
 
 // Charge la mini-tuile "Plats fétiches du foyer" sur l'accueil
@@ -1109,7 +1109,7 @@ function chargerAccueilSuggestions() {
 }
 
 // Mini carte pour les scrolls horizontaux
-function miniCarte(key, raisonHTML) {
+function miniCarte(key, raisonHTML, opts) {
   if (!key || !recettes[key]) return "";
   const r    = recettes[key];
   const nom  = getNomRecette(key);
@@ -1132,8 +1132,8 @@ function miniCarte(key, raisonHTML) {
                                      : "border:2px solid #ff9900;box-shadow:0 0 8px rgba(255,153,0,.3)";
         const emoji = lvl === "bebe" ? "🍼" : "🧒";
         badgeFam = `<span class="mini-carte-famille" title="${titleAlerte}">${emoji}</span>`;
-        // Bouton régénérer
-        btnRegen = `<button class="mini-carte-regen" onclick="event.stopPropagation();regenererSuggestion('${key}')" title="Régénérer cette suggestion">🔄</button>`;
+        // Bouton régénérer (masqué dans les rubriques non régénérables, ex. "Dernières recettes ajoutées")
+        btnRegen = (opts && opts.noRegen) ? "" : `<button class="mini-carte-regen" onclick="event.stopPropagation();regenererSuggestion('${key}')" title="Régénérer cette suggestion">🔄</button>`;
       } else {
         // Recette 100% adaptée famille → badge positif
         badgeFam = `<span class="mini-carte-famille mini-carte-famille-ok" title="Adapté à toute la famille">🏠</span>`;

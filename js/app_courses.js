@@ -445,8 +445,11 @@ function _prepStrip(s) {
   return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
-// Classe une étape dans une phase, d'après son titre/détail + son icône
+// Classe une étape dans une phase, d'après son titre/détail + son icône.
+// Si l'étape a un champ "phase" explicite ("prep"|"cuisson"|"finition"|"repos"),
+// il est prioritaire (classement 100 % maîtrisé).
 function lcClasserEtape(et) {
+  if (et.phase && ["prep", "cuisson", "finition", "repos"].includes(et.phase)) return et.phase;
   const t = _prepStrip((et.titre || "") + " " + (et.detail || ""));
   const ic = et.icone || "";
   const a = (...mots) => mots.some(m => t.includes(m));
