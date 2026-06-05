@@ -863,4 +863,40 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir frais.", badge: null }
     ]
   },
+  saladepiemontaise: {
+    nom: "Salade piémontaise",
+    dateAjout: "2026-06-05",
+    cat: "salades", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "La salade conviviale des buffets : pommes de terre, œufs, jambon et cornichons liés à la mayonnaise.",
+    tableauSaladepiemontaise: [
+      { nb: 1, pommeDeTerre: "150 g", oeuf: "½", jambon: "30 g", cornichons: "15 g", tomate: "50 g", mayonnaise: "1 c.à.s" },
+      { nb: 2, pommeDeTerre: "300 g", oeuf: "1", jambon: "60 g", cornichons: "30 g", tomate: "100 g", mayonnaise: "2 c.à.s" },
+      { nb: 3, pommeDeTerre: "450 g", oeuf: "1½", jambon: "90 g", cornichons: "45 g", tomate: "150 g", mayonnaise: "3 c.à.s" },
+      { nb: 4, pommeDeTerre: "600 g", oeuf: "2", jambon: "120 g", cornichons: "60 g", tomate: "200 g", mayonnaise: "4 c.à.s" },
+      { nb: 5, pommeDeTerre: "750 g", oeuf: "2½", jambon: "150 g", cornichons: "75 g", tomate: "250 g", mayonnaise: "5 c.à.s" },
+      { nb: 6, pommeDeTerre: "900 g", oeuf: "3", jambon: "180 g", cornichons: "90 g", tomate: "300 g", mayonnaise: "6 c.à.s" },
+      { nb: 7, pommeDeTerre: "1050 g", oeuf: "3½", jambon: "210 g", cornichons: "105 g", tomate: "350 g", mayonnaise: "7 c.à.s" },
+      { nb: 8, pommeDeTerre: "1200 g", oeuf: "4", jambon: "240 g", cornichons: "120 g", tomate: "400 g", mayonnaise: "8 c.à.s" },
+      { nb: 9, pommeDeTerre: "1350 g", oeuf: "4½", jambon: "270 g", cornichons: "135 g", tomate: "450 g", mayonnaise: "9 c.à.s" },
+      { nb: 10, pommeDeTerre: "1500 g", oeuf: "5", jambon: "300 g", cornichons: "150 g", tomate: "500 g", mayonnaise: "10 c.à.s" },
+      { nb: 11, pommeDeTerre: "1650 g", oeuf: "5½", jambon: "330 g", cornichons: "165 g", tomate: "550 g", mayonnaise: "11 c.à.s" },
+      { nb: 12, pommeDeTerre: "1800 g", oeuf: "6", jambon: "360 g", cornichons: "180 g", tomate: "600 g", mayonnaise: "12 c.à.s" },
+      { nb: 13, pommeDeTerre: "1950 g", oeuf: "6½", jambon: "390 g", cornichons: "195 g", tomate: "650 g", mayonnaise: "13 c.à.s" },
+      { nb: 14, pommeDeTerre: "2100 g", oeuf: "7", jambon: "420 g", cornichons: "210 g", tomate: "700 g", mayonnaise: "14 c.à.s" },
+      { nb: 15, pommeDeTerre: "2250 g", oeuf: "7½", jambon: "450 g", cornichons: "225 g", tomate: "750 g", mayonnaise: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Cuire", detail: "Cuire les pommes de terre et les œufs durs, puis laisser refroidir.", badge: "⏱ 15 min" },
+      { icone: "🔪", titre: "Tailler", detail: "Couper pommes de terre, œufs, jambon, cornichons et tomates en dés.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Réunir le tout dans un saladier.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Lier à la mayonnaise, saler et poivrer.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Réserver au frais au moins 1 heure. ASTUCE CHEF : ajoutez les tomates juste avant de servir pour qu'elles ne détrempent pas la salade.", badge: "⏱ 1 h" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien frais, décoré d'œuf.", badge: null }
+    ]
+  },
 });

@@ -8547,4 +8547,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir bien doré et bouillonnant. ASTUCE CHEF : égouttez très bien le chou-fleur et épongez-le, sinon il rend de l'eau et délaye la béchamel pendant la cuisson.", badge: null }
     ]
   },
+  lapinmoutarde: {
+    nom: "Lapin à la moutarde",
+    dateAjout: "2026-06-05",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐ Moyen",
+    emoji: "🐰",
+    description: "Un grand classique français : lapin doré puis mijoté dans une sauce crémeuse à la moutarde et au vin blanc.",
+    tableauLapinmoutarde: [
+      { nb: 1, lapin: "200 g", moutarde: "1 c.à.c", creme: "5 cl", vinblanc: "5 cl", oignon: "¼", lardons: "20 g", beurre: "8 g" },
+      { nb: 2, lapin: "400 g", moutarde: "2 c.à.c", creme: "10 cl", vinblanc: "10 cl", oignon: "½", lardons: "40 g", beurre: "16 g" },
+      { nb: 3, lapin: "600 g", moutarde: "3 c.à.c", creme: "15 cl", vinblanc: "15 cl", oignon: "¾", lardons: "60 g", beurre: "24 g" },
+      { nb: 4, lapin: "800 g", moutarde: "4 c.à.c", creme: "20 cl", vinblanc: "20 cl", oignon: "1", lardons: "80 g", beurre: "32 g" },
+      { nb: 5, lapin: "1000 g", moutarde: "5 c.à.c", creme: "25 cl", vinblanc: "25 cl", oignon: "1¼", lardons: "100 g", beurre: "40 g" },
+      { nb: 6, lapin: "1200 g", moutarde: "6 c.à.c", creme: "30 cl", vinblanc: "30 cl", oignon: "1½", lardons: "120 g", beurre: "48 g" },
+      { nb: 7, lapin: "1400 g", moutarde: "7 c.à.c", creme: "35 cl", vinblanc: "35 cl", oignon: "1¾", lardons: "140 g", beurre: "56 g" },
+      { nb: 8, lapin: "1600 g", moutarde: "8 c.à.c", creme: "40 cl", vinblanc: "40 cl", oignon: "2", lardons: "160 g", beurre: "64 g" },
+      { nb: 9, lapin: "1800 g", moutarde: "9 c.à.c", creme: "45 cl", vinblanc: "45 cl", oignon: "2¼", lardons: "180 g", beurre: "72 g" },
+      { nb: 10, lapin: "2000 g", moutarde: "10 c.à.c", creme: "50 cl", vinblanc: "50 cl", oignon: "2½", lardons: "200 g", beurre: "80 g" },
+      { nb: 11, lapin: "2200 g", moutarde: "11 c.à.c", creme: "55 cl", vinblanc: "55 cl", oignon: "2¾", lardons: "220 g", beurre: "88 g" },
+      { nb: 12, lapin: "2400 g", moutarde: "12 c.à.c", creme: "60 cl", vinblanc: "60 cl", oignon: "3", lardons: "240 g", beurre: "96 g" },
+      { nb: 13, lapin: "2600 g", moutarde: "13 c.à.c", creme: "65 cl", vinblanc: "65 cl", oignon: "3¼", lardons: "260 g", beurre: "104 g" },
+      { nb: 14, lapin: "2800 g", moutarde: "14 c.à.c", creme: "70 cl", vinblanc: "70 cl", oignon: "3½", lardons: "280 g", beurre: "112 g" },
+      { nb: 15, lapin: "3000 g", moutarde: "15 c.à.c", creme: "75 cl", vinblanc: "75 cl", oignon: "3¾", lardons: "300 g", beurre: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍖", titre: "Moutarder", detail: "Badigeonner les morceaux de lapin de moutarde.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Faire dorer le lapin dans le beurre.", badge: "⏱ 8 min" },
+      { icone: "🥓", titre: "Aromates", detail: "Ajouter l'oignon et les lardons, faire revenir.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Déglacer au vin blanc.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Couvrir et laisser mijoter à feu doux.", badge: "⏱ 35 min" },
+      { icone: "🥛", titre: "Crémer", detail: "Ajouter la crème et un peu de moutarde, réchauffer sans bouillir. ASTUCE CHEF : n'ajoutez jamais la moutarde en pleine ébullition, elle deviendrait amère ; hors gros bouillon elle reste douce.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec des tagliatelles.", badge: null }
+    ]
+  },
+  paupiettesveau: {
+    nom: "Paupiettes de veau",
+    dateAjout: "2026-06-05",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🥩",
+    description: "Des paupiettes de veau dorées puis mijotées avec légumes et vin blanc, nappées d'une sauce crémeuse.",
+    tableauPaupiettesveau: [
+      { nb: 1, veau: "1", carotte: "½", oignon: "¼", champignon: "40 g", vinblanc: "5 cl", bouillon: "8 cl", creme: "3 cl" },
+      { nb: 2, veau: "2", carotte: "1", oignon: "½", champignon: "80 g", vinblanc: "10 cl", bouillon: "16 cl", creme: "6 cl" },
+      { nb: 3, veau: "3", carotte: "1½", oignon: "¾", champignon: "120 g", vinblanc: "15 cl", bouillon: "24 cl", creme: "9 cl" },
+      { nb: 4, veau: "4", carotte: "2", oignon: "1", champignon: "160 g", vinblanc: "20 cl", bouillon: "32 cl", creme: "12 cl" },
+      { nb: 5, veau: "5", carotte: "2½", oignon: "1¼", champignon: "200 g", vinblanc: "25 cl", bouillon: "40 cl", creme: "15 cl" },
+      { nb: 6, veau: "6", carotte: "3", oignon: "1½", champignon: "240 g", vinblanc: "30 cl", bouillon: "48 cl", creme: "18 cl" },
+      { nb: 7, veau: "7", carotte: "3½", oignon: "1¾", champignon: "280 g", vinblanc: "35 cl", bouillon: "56 cl", creme: "21 cl" },
+      { nb: 8, veau: "8", carotte: "4", oignon: "2", champignon: "320 g", vinblanc: "40 cl", bouillon: "64 cl", creme: "24 cl" },
+      { nb: 9, veau: "9", carotte: "4½", oignon: "2¼", champignon: "360 g", vinblanc: "45 cl", bouillon: "72 cl", creme: "27 cl" },
+      { nb: 10, veau: "10", carotte: "5", oignon: "2½", champignon: "400 g", vinblanc: "50 cl", bouillon: "80 cl", creme: "30 cl" },
+      { nb: 11, veau: "11", carotte: "5½", oignon: "2¾", champignon: "440 g", vinblanc: "55 cl", bouillon: "88 cl", creme: "33 cl" },
+      { nb: 12, veau: "12", carotte: "6", oignon: "3", champignon: "480 g", vinblanc: "60 cl", bouillon: "96 cl", creme: "36 cl" },
+      { nb: 13, veau: "13", carotte: "6½", oignon: "3¼", champignon: "520 g", vinblanc: "65 cl", bouillon: "1,04 L", creme: "39 cl" },
+      { nb: 14, veau: "14", carotte: "7", oignon: "3½", champignon: "560 g", vinblanc: "70 cl", bouillon: "1,12 L", creme: "42 cl" },
+      { nb: 15, veau: "15", carotte: "7½", oignon: "3¾", champignon: "600 g", vinblanc: "75 cl", bouillon: "1,2 L", creme: "45 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Dorer", detail: "Faire dorer les paupiettes sur toutes les faces.", badge: "⏱ 8 min" },
+      { icone: "🥕", titre: "Légumes", detail: "Ajouter carottes, oignon et champignons, faire revenir.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Déglacer au vin blanc.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Ajouter le bouillon.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Couvrir et laisser mijoter doucement.", badge: "⏱ 35 min" },
+      { icone: "🥛", titre: "Lier", detail: "Ajouter la crème et réduire légèrement la sauce. ASTUCE CHEF : retirez les paupiettes avant de faire réduire la sauce, elles resteront moelleuses sans se dessécher.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec une purée ou du riz.", badge: null }
+    ]
+  },
 });
