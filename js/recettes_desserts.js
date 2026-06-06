@@ -109,12 +109,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Crème mascarpone", detail: "Séparer les blancs des jaunes. Fouetter jaunes + sucre jusqu'à blanchiment. Incorporer le mascarpone. Monter les blancs en neige ferme et les incorporer délicatement. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🍓", titre: "Tremper les biscuits", detail: "Diluer le sirop de fraise dans 100ml d'eau. Y tremper rapidement les biscuits roses.", badge: null },
-      { icone: "🥂", titre: "Monter les verrines", detail: "Dans chaque verrine : couche de biscuits, coulis de fraises, crème mascarpone. Répéter les couches.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Couvrir et placer au réfrigérateur.", badge: "⏱ 4h minimum" },
-      { icone: "🍓", titre: "Décorer et servir", detail: "Au moment de servir, saupoudrer de cacao amer et décorer avec une fraise fraîche.", badge: null }
-    ]
+        { icone: "🥚", titre: "Crème mascarpone", detail: "Fouetter les jaunes avec le sucre jusqu'à blanchiment, puis incorporer le mascarpone.", badge: null },
+        { icone: "🌨️", titre: "Blancs en neige", detail: "Monter les blancs en neige ferme et les incorporer délicatement à la crème. ASTUCE CHEF : incorporez en soulevant à la maryse pour garder une crème mousseuse.", badge: null },
+        { icone: "🍓", titre: "Tremper les biscuits", detail: "Diluer le sirop de fraise dans l'eau et y tremper rapidement les biscuits roses.", badge: null },
+        { icone: "🥂", titre: "Monter les verrines", detail: "Alterner biscuits, coulis de fraises et crème mascarpone, en couches.", badge: null },
+        { icone: "❄️", titre: "Réfrigérer", detail: "Couvrir et réserver au frais pour que le dessert prenne.", badge: "⏱ 4h minimum" },
+        { icone: "🍫", titre: "Décorer", detail: "Au moment de servir, saupoudrer de cacao amer et décorer d'une fraise fraîche.", badge: null }
+      ]
   },
   churros: {
     nom: "Churros",
@@ -143,12 +144,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💧", titre: "Préparer la pâte", detail: "Porter l'eau à ébullition avec une pincée de sel et 1 c.à.s d'huile. Hors du feu, verser la farine d'un coup et mélanger vigoureusement jusqu'à pâte lisse qui se décolle.", badge: null },
-      { icone: "🌡️", titre: "Chauffer l'huile", detail: "Chauffer l'huile à 180°C dans une casserole profonde. Vérifier avec un morceau de pâte — il doit remonter aussitôt.", badge: null },
-      { icone: "🍩", titre: "Former et frire", detail: "Mettre la pâte dans une poche avec douille étoilée. Dresser des bâtons de 15cm directement dans l'huile chaude. Frire jusqu'à dorure. Température idéale 170-180°C. Test : cube de pain dore en 30s.", badge: "⏱ 3-4 min" },
-      { icone: "🍬", titre: "Sucre cannelle", detail: "Égoutter sur papier absorbant. Rouler immédiatement dans le mélange sucre + cannelle.", badge: null },
-      { icone: "🍫", titre: "Chocolat chaud", detail: "Faire fondre le chocolat noir avec 100ml de crème chaude. Servir les churros chauds avec le chocolat pour tremper.", badge: null }
-    ]
+        { icone: "💧", titre: "La pâte", detail: "Porter l'eau à ébullition avec une pincée de sel et un filet d'huile, puis hors du feu verser la farine d'un coup et mélanger jusqu'à une pâte lisse qui se décolle.", badge: null },
+        { icone: "🌡️", titre: "Chauffer l'huile", detail: "Chauffer l'huile à 180°C : un morceau de pâte doit y remonter aussitôt.", badge: null },
+        { icone: "🍩", titre: "Dresser", detail: "Mettre la pâte dans une poche à douille étoilée et dresser des bâtons de 15 cm directement dans l'huile.", badge: null },
+        { icone: "🔥", titre: "Frire", detail: "Frire jusqu'à dorure. ASTUCE CHEF : la douille étoilée n'est pas qu'esthétique, ses cannelures rendent les churros plus croustillants.", badge: "⏱ 3-4 min" },
+        { icone: "🍬", titre: "Sucre cannelle", detail: "Égoutter et rouler aussitôt dans le mélange sucre-cannelle.", badge: null },
+        { icone: "🍫", titre: "Chocolat", detail: "Faire fondre le chocolat avec un peu de crème chaude et servir les churros chauds pour tremper.", badge: null }
+      ]
   },
   parisbrestreinterpretation: {
     nom: "Paris-Brest",
@@ -177,12 +179,15 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Pâte à choux", detail: "Porter eau, lait, beurre, sel et sucre à ébullition. Hors du feu, verser farine d'un coup. Remuer vigoureusement pour dessécher la pâte 2 min sur le feu. Incorporer les œufs un à un hors du feu. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "⭕", titre: "Dresser la couronne", detail: "Préchauffer le four à 180°C. Sur une plaque recouverte de papier, dresser deux couronnes superposées avec une poche à douille. Parsemer d'amandes effilées. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner sans ouvrir le four les 20 premières minutes. Chaleur tournante pour une cuisson uniforme.", badge: "⏱ 30-35 min à 180°C" },
-      { icone: "🌰", titre: "Crème mousseline pralinée", detail: "Préparer une crème pâtissière. Laisser refroidir. Fouetter le beurre mou, incorporer la crème pâtissière froide et le pralin. Fouetter jusqu'à texture légère. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🍰", titre: "Monter le Paris-Brest", detail: "Couper la couronne en deux. Garnir généreusement de crème pralinée avec une poche à douille cannelée. Refermer et saupoudrer de sucre glace. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
-    ]
+        { icone: "🔥", titre: "Pâte à choux", detail: "Porter eau, lait, beurre, sel et sucre à ébullition, verser la farine d'un coup et dessécher la pâte 2 min sur le feu.", badge: null },
+        { icone: "🥚", titre: "Les œufs", detail: "Hors du feu, incorporer les œufs un à un jusqu'à une pâte lisse et brillante. ASTUCE CHEF : ajoutez le dernier œuf petit à petit, la pâte doit former un ruban qui retombe lentement.", badge: null },
+        { icone: "⭕", titre: "Dresser la couronne", detail: "Dresser deux couronnes superposées à la poche et parsemer d'amandes effilées.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Enfourner sans ouvrir le four les 20 premières minutes, jusqu'à ce que la couronne soit bien dorée et sèche.", badge: "⏱ 30-35 min à 180°C" },
+        { icone: "🥛", titre: "Crème pâtissière", detail: "Préparer une crème pâtissière et la laisser refroidir complètement.", badge: null },
+        { icone: "🌰", titre: "Mousseline pralinée", detail: "Fouetter le beurre mou, incorporer la crème pâtissière froide et le pralin jusqu'à une texture légère.", badge: null },
+        { icone: "✂️", titre: "Couper", detail: "Couper la couronne refroidie en deux dans l'épaisseur.", badge: null },
+        { icone: "🍰", titre: "Garnir", detail: "Garnir généreusement de crème pralinée à la poche cannelée, refermer et saupoudrer de sucre glace.", badge: null }
+      ]
   },
   moelleuxchocolat: {
     nom: "Moelleux au Chocolat",
@@ -211,12 +216,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍫", titre: "Fondre chocolat + beurre", detail: "Faire fondre ensemble au bain-marie ou micro-ondes. Laisser tiédir.", badge: null },
-      { icone: "🥚", titre: "Fouetter œufs + sucre", detail: "Fouetter vigoureusement jusqu'à ce que le mélange blanchisse et double de volume.", badge: "⏱ 3 min" },
-      { icone: "🌾", titre: "Incorporer farine", detail: "Ajouter la farine tamisée. Puis le chocolat fondu tiédi. Mélanger délicatement.", badge: null },
-      { icone: "🥧", titre: "Beurrer et remplir", detail: "Beurrer et fariner des moules individuels. Remplir aux ¾. Mettre au congélateur 20 min.", badge: "⏱ 20 min congélateur" },
-      { icone: "🔥", titre: "Cuire et servir immédiatement", detail: "Four préchauffé à 200°C. Sortir du congélateur direct. Le cœur doit rester liquide — surveiller ! Démouler et servir avec glace vanille.", badge: "⏱ 10-12 min à 200°C" }
-    ]
+        { icone: "🍫", titre: "Fondre chocolat et beurre", detail: "Faire fondre ensemble au bain-marie ou au micro-ondes, puis laisser tiédir.", badge: null },
+        { icone: "🥚", titre: "Œufs et sucre", detail: "Fouetter vigoureusement jusqu'à ce que le mélange blanchisse et double de volume.", badge: "⏱ 3 min" },
+        { icone: "🌾", titre: "Farine", detail: "Incorporer la farine tamisée délicatement.", badge: null },
+        { icone: "🍫", titre: "Chocolat", detail: "Ajouter le chocolat fondu tiédi et mélanger sans casser la masse.", badge: null },
+        { icone: "🥧", titre: "Mouler", detail: "Beurrer et fariner des moules individuels, remplir aux trois quarts et placer au congélateur. ASTUCE CHEF : le passage au froid avant cuisson garantit le cœur coulant.", badge: "⏱ 20 min" },
+        { icone: "🔥", titre: "Cuire", detail: "Enfourner les moules froids dans un four très chaud et sortir dès que le cœur tremblote. Servir aussitôt avec une glace vanille.", badge: "⏱ 10-12 min à 200°C" }
+      ]
   },
   cheesecake: {
     nom: "Cheesecake",
@@ -245,12 +251,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍪", titre: "Base biscuitée", detail: "Écraser les biscuits digestifs en miettes fines. Mélanger avec le beurre fondu. Tasser dans un moule à charnière. Réfrigérer 15 min.", badge: "⏱ 15 min frigo" },
-      { icone: "🧀", titre: "Appareil cream cheese", detail: "Fouetter le Philadelphia ramolli avec le sucre. Ajouter les œufs un à un. Incorporer la crème fraîche et la vanille. Ne pas trop fouetter. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🔥", titre: "Cuire au bain-marie", detail: "Verser l'appareil sur la base. Cuire au bain-marie à 160°C. Le centre doit être encore légèrement tremblotant.", badge: "⏱ 55-65 min à 160°C" },
-      { icone: "❄️", titre: "Refroidir lentement", detail: "Éteindre le four, entrouvrir la porte. Laisser refroidir 1h dans le four puis 4h minimum au réfrigérateur.", badge: "⏱ 4h+ au frigo" },
-      { icone: "🍓", titre: "Coulis et service", detail: "Servir avec coulis de fruits rouges ou fraises fraîches.", badge: null }
-    ]
+        { icone: "🍪", titre: "Base biscuitée", detail: "Écraser les biscuits en miettes fines, mélanger au beurre fondu et tasser dans un moule à charnière. Réfrigérer.", badge: "⏱ 15 min" },
+        { icone: "🧀", titre: "L'appareil", detail: "Fouetter le cream cheese ramolli avec le sucre, ajouter les œufs un à un, puis la crème et la vanille. ASTUCE CHEF : ne fouettez pas trop, trop d'air fait gonfler puis craqueler le cheesecake.", badge: null },
+        { icone: "🔥", titre: "Cuire au bain-marie", detail: "Verser sur la base et cuire au bain-marie : le centre doit rester légèrement tremblotant.", badge: "⏱ 55-65 min à 160°C" },
+        { icone: "🚪", titre: "Refroidir dans le four", detail: "Éteindre le four, entrouvrir la porte et laisser refroidir 1h pour éviter le choc thermique.", badge: "⏱ 1h" },
+        { icone: "❄️", titre: "Réfrigérer", detail: "Réfrigérer plusieurs heures pour qu'il prenne complètement.", badge: "⏱ 4h+" },
+        { icone: "🍓", titre: "Servir", detail: "Servir avec un coulis de fruits rouges ou des fraises fraîches.", badge: null }
+      ]
   },
   gateaubasque: {
     nom: "Gâteau Basque",
@@ -279,12 +286,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte sablée basque", detail: "Travailler beurre pommade avec sucre. Ajouter œufs et vanille. Incorporer farine, levure et poudre d'amande. Former deux disques. Réfrigérer. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: "⏱ 1h frigo" },
-      { icone: "🥛", titre: "Crème pâtissière", detail: "Chauffer lait + crème + vanille. Fouetter jaunes + sucre + maïzena. Verser le lait chaud dessus. Recuire jusqu'à épaississement. Refroidir.", badge: null },
-      { icone: "🏗️", titre: "Monter le gâteau", detail: "Étaler un disque de pâte dans le moule beurré. Garnir de crème pâtissière. Couvrir du deuxième disque. Souder les bords.", badge: null },
-      { icone: "🖌️", titre: "Décorer", detail: "Badigeonner de jaune d'œuf. Tracer le motif traditionnel basque avec une fourchette.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner jusqu'à belle couleur dorée uniforme. Laisser refroidir avant de démouler. Chaleur tournante pour une cuisson uniforme.", badge: "⏱ 35-40 min à 180°C" }
-    ]
+        { icone: "🌾", titre: "Pâte sablée", detail: "Travailler le beurre pommade avec le sucre, ajouter œufs et vanille, puis farine, levure et poudre d'amande.", badge: null },
+        { icone: "❄️", titre: "Reposer", detail: "Former deux disques et réfrigérer pour raffermir la pâte.", badge: "⏱ 1h" },
+        { icone: "🥛", titre: "Crème pâtissière", detail: "Chauffer lait, crème et vanille, verser sur les jaunes blanchis avec sucre et maïzena, puis recuire jusqu'à épaississement. Refroidir.", badge: null },
+        { icone: "🏗️", titre: "Foncer", detail: "Étaler un disque dans le moule beurré.", badge: null },
+        { icone: "🥄", titre: "Garnir", detail: "Garnir de crème pâtissière, couvrir du deuxième disque et bien souder les bords. ASTUCE CHEF : soudez bien, sinon la crème s'échappe à la cuisson.", badge: null },
+        { icone: "🖌️", titre: "Décorer", detail: "Badigeonner de jaune d'œuf et tracer le motif basque à la fourchette.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Cuire jusqu'à une belle couleur dorée uniforme, puis laisser refroidir avant de démouler.", badge: "⏱ 35-40 min à 180°C" }
+      ]
   },
   canelebordelais: {
     nom: "Cannelés Bordelais",
@@ -322,12 +331,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥛", titre: "Préparer l'appareil", detail: "Chauffer lait + beurre + vanille jusqu'à ébullition. Dans un bol, mélanger sucre + farine. Verser le lait chaud progressivement en fouettant. Ajouter œufs et rhum. Passer au chinois.", badge: null },
-      { icone: "❄️", titre: "Repos indispensable", detail: "Filmer et réfrigérer la pâte. Ce repos développe les arômes et donne la texture caractéristique.", badge: "⏱ 24h au frigo" },
-      { icone: "🍯", titre: "Préparer les moules", detail: "Préchauffer le four à 250°C. Badigeonner les moules en cuivre (ou silicone) de beurre d'abeille ou beurre + cire d'abeille pour une croûte parfaite. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
-      { icone: "🔥", titre: "Cuisson en deux temps", detail: "Remplir les moules aux ¾. Cuire 15 min à 250°C pour la croûte, puis baisser à 180°C pour le reste. Les cannelés doivent être très sombres (presque noirs) à l'extérieur.", badge: "⏱ 15 min à 250°C + 45 min à 180°C" },
-      { icone: "⏳", titre: "Démouler tiède", detail: "Démouler après 5 min. Déguster tiède pour le contraste croustillant/moelleux maximal. Se conservent 24h.", badge: null }
-    ]
+        { icone: "🥛", titre: "L'appareil", detail: "Chauffer lait, beurre et vanille jusqu'à ébullition. Mélanger sucre et farine, verser le lait chaud en fouettant, ajouter œufs et rhum, puis passer au chinois.", badge: null },
+        { icone: "❄️", titre: "Repos indispensable", detail: "Filmer et réfrigérer la pâte : ce repos développe les arômes et la texture. ASTUCE CHEF : ne sautez jamais ce repos, c'est lui qui fait le vrai cannelé.", badge: "⏱ 24h" },
+        { icone: "🍯", titre: "Préparer les moules", detail: "Beurrer généreusement les moules (cire d'abeille pour une croûte parfaite).", badge: null },
+        { icone: "🔥", titre: "Cuisson en deux temps", detail: "Remplir aux trois quarts et cuire d'abord très chaud pour la croûte, puis baisser le four.", badge: "⏱ 15 min à 250°C + 45 min à 180°C" },
+        { icone: "🌰", titre: "Coloration", detail: "Les cannelés doivent être très sombres, presque noirs à l'extérieur.", badge: null },
+        { icone: "⏳", titre: "Démouler", detail: "Démouler après 5 min et déguster tiède pour le contraste croûte-moelleux.", badge: null }
+      ]
   },
   crumblefruits: {
     nom: "Crumble aux Fruits",
@@ -356,12 +366,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍎", titre: "Préparer les fruits", detail: "Éplucher et couper les fruits en morceaux. Mélanger avec sucre, cannelle et vanille. Disposer dans un plat beurré. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌾", titre: "Pâte à crumble", detail: "Mélanger farine, sucre, amandes effilées et une pincée de sel. Ajouter le beurre froid en dés. Sabler entre les doigts jusqu'à miettes grossières. Ne pas trop travailler !", badge: null },
-      { icone: "🏗️", titre: "Recouvrir", detail: "Étaler le crumble uniformément sur les fruits.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner jusqu'à ce que le crumble soit doré et les fruits bouillonnent sur les bords. Chaleur tournante pour une cuisson uniforme.", badge: "⏱ 30-35 min à 180°C" },
-      { icone: "🍦", titre: "Servir", detail: "Servir tiède avec une boule de glace vanille ou crème fraîche épaisse.", badge: null }
-    ]
+        { icone: "🍎", titre: "Les fruits", detail: "Éplucher et couper les fruits, les mélanger avec sucre, cannelle et vanille, puis les disposer dans un plat beurré.", badge: null },
+        { icone: "🌾", titre: "La pâte", detail: "Mélanger farine, sucre, amandes effilées et une pincée de sel.", badge: null },
+        { icone: "🧈", titre: "Sabler", detail: "Ajouter le beurre froid en dés et sabler entre les doigts jusqu'à des miettes grossières. ASTUCE CHEF : ne travaillez pas trop, des grosses miettes donnent un crumble bien croustillant.", badge: null },
+        { icone: "🏗️", titre: "Recouvrir", detail: "Étaler le crumble uniformément sur les fruits.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Cuire jusqu'à ce que le crumble soit doré et que les fruits bouillonnent sur les bords.", badge: "⏱ 30-35 min à 180°C" },
+        { icone: "🍦", titre: "Servir", detail: "Servir tiède avec une boule de glace vanille ou de la crème épaisse.", badge: null }
+      ]
   },
   millefeuille: {
     nom: "Mille-feuille",
@@ -390,12 +401,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥐", titre: "Cuire la pâte feuilletée", detail: "Découper la pâte feuilletée en 3 rectangles égaux. Piquer, couvrir d'une plaque pour l'empêcher de trop gonfler. Cuire jusqu'à dorure. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 20 min à 180°C" },
-      { icone: "🥛", titre: "Crème pâtissière", detail: "Chauffer le lait. Fouetter jaunes + sucre + maïzena. Verser le lait chaud en filet. Recuire en fouettant jusqu'à épaississement. Incorporer le beurre et vanille. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "❄️", titre: "Refroidir la crème", detail: "Filmer au contact. Réfrigérer 1h. Fouetter avant utilisation pour la rendre lisse.", badge: "⏱ 1h" },
-      { icone: "🏗️", titre: "Monter le mille-feuille", detail: "Couche de feuilletage, crème pâtissière en poche, feuilletage, crème, feuilletage.", badge: null },
-      { icone: "🎨", titre: "Glaçage", detail: "Glacer le dessus au fondant blanc. Tracer des traits de chocolat fondu. Passer un cure-dent pour créer le motif marbré.", badge: null }
-    ]
+        { icone: "🥐", titre: "Cuire le feuilletage", detail: "Découper la pâte en 3 rectangles égaux, piquer et couvrir d'une plaque pour limiter le gonflement. ASTUCE CHEF : la plaque par-dessus garde un feuilletage régulier et net.", badge: "⏱ 20 min à 180°C" },
+        { icone: "🥛", titre: "Crème pâtissière", detail: "Chauffer le lait, verser sur les jaunes blanchis avec sucre et maïzena, recuire en fouettant jusqu'à épaississement, puis incorporer beurre et vanille.", badge: null },
+        { icone: "❄️", titre: "Refroidir", detail: "Filmer au contact et réfrigérer, puis fouetter pour lisser.", badge: "⏱ 1h" },
+        { icone: "🟫", titre: "Premier étage", detail: "Poser un rectangle de feuilletage et pocher la crème dessus.", badge: null },
+        { icone: "🏗️", titre: "Monter", detail: "Ajouter un rectangle, à nouveau de la crème, puis le dernier rectangle.", badge: null },
+        { icone: "🎨", titre: "Glaçage", detail: "Glacer le dessus au fondant blanc et tracer des traits de chocolat fondu.", badge: null },
+        { icone: "🍴", titre: "Marbrer", detail: "Passer une pointe de couteau dans le glaçage pour créer le motif marbré. Réfrigérer avant de servir.", badge: null }
+      ]
   },
   tiramisufraise: {
     nom: "Tiramisu aux Fraises",
@@ -424,12 +437,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍓", titre: "Coulis de fraises", detail: "Mixer la moitié des fraises avec sucre et jus de citron. Couper le reste en tranches. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥚", titre: "Crème mascarpone", detail: "Séparer les jaunes et blancs. Fouetter jaunes + sucre. Incorporer le mascarpone. Monter les blancs en neige ferme. Incorporer délicatement. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🍪", titre: "Montage", detail: "Tremper rapidement les biscuits dans le coulis dilué. Alterner : biscuits, crème, fraises fraîches. Répéter.", badge: null },
-      { icone: "❄️", titre: "Repos", detail: "Couvrir et réfrigérer. Les saveurs se développent avec le temps.", badge: "⏱ 4h minimum, 12h idéal" },
-      { icone: "🍓", titre: "Décorer", detail: "Avant de servir, décorer de fraises fraîches et saupoudrer de sucre glace.", badge: null }
-    ]
+        { icone: "🍓", titre: "Coulis de fraises", detail: "Mixer la moitié des fraises avec sucre et jus de citron, et couper le reste en tranches.", badge: null },
+        { icone: "🥚", titre: "Crème mascarpone", detail: "Fouetter les jaunes avec le sucre, puis incorporer le mascarpone.", badge: null },
+        { icone: "🌨️", titre: "Blancs en neige", detail: "Monter les blancs en neige ferme et les incorporer délicatement. ASTUCE CHEF : soulevez la masse à la maryse pour ne pas casser les blancs.", badge: null },
+        { icone: "🍪", titre: "Montage", detail: "Tremper rapidement les biscuits dans le coulis dilué et alterner biscuits, crème et fraises fraîches.", badge: null },
+        { icone: "❄️", titre: "Repos", detail: "Couvrir et réfrigérer pour que les saveurs se développent.", badge: "⏱ 4h minimum, 12h idéal" },
+        { icone: "🍓", titre: "Décorer", detail: "Avant de servir, décorer de fraises fraîches et de sucre glace.", badge: null }
+      ]
   },
   baklava: {
     nom: "Baklava",
@@ -458,12 +472,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌰", titre: "Hacher les pistaches", detail: "Hacher grossièrement les pistaches non salées. Mélanger avec sucre et cannelle.", badge: null },
-      { icone: "🥙", titre: "Monter le baklava", detail: "Beurrer le plat. Alterner 2 feuilles de filo beurrées + une couche de pistaches. Répéter. Terminer par 3-4 feuilles de filo.", badge: null },
-      { icone: "🔪", titre: "Découper avant cuisson", detail: "Découper en losanges ou carrés avant d'enfourner. Important : couper jusqu'en bas.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire jusqu'à belle couleur dorée.", badge: "⏱ 35-40 min à 160°C" },
-      { icone: "🍯", titre: "Sirop", detail: "Verser immédiatement le sirop (eau + sucre + miel + eau de rose) sur le baklava chaud. Laisser absorber.", badge: "⏱ 2h repos" }
-    ]
+        { icone: "🌰", titre: "Les pistaches", detail: "Hacher grossièrement les pistaches non salées et les mélanger avec sucre et cannelle.", badge: null },
+        { icone: "🥙", titre: "Monter", detail: "Beurrer le plat, alterner deux feuilles de filo beurrées et une couche de pistaches, et terminer par plusieurs feuilles. ASTUCE CHEF : beurrez chaque feuille, c'est le secret du feuilletage croustillant.", badge: null },
+        { icone: "🔪", titre: "Découper", detail: "Découper en losanges jusqu'au fond avant d'enfourner, c'est impossible après.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Cuire jusqu'à une belle couleur dorée.", badge: "⏱ 35-40 min à 160°C" },
+        { icone: "🍯", titre: "Sirop", detail: "Verser le sirop (eau, sucre, miel, eau de rose) sur le baklava chaud.", badge: null },
+        { icone: "⏳", titre: "Absorber", detail: "Laisser absorber et refroidir avant de déguster.", badge: "⏱ 2h" }
+      ]
   },
   tartetatinpommes: {
     nom: "Tarte Tatin aux Pommes",
@@ -492,12 +507,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍎", titre: "Préparer les pommes", detail: "Éplucher et couper les pommes en quartiers épais. Utiliser des pommes fermes (Granny Smith ou Reinettes).", badge: null },
-      { icone: "🍯", titre: "Caramel", detail: "Dans une poêle allant au four, fondre beurre + sucre jusqu'à caramel doré ambré. Attention à ne pas brûler.", badge: "⏱ 8 min" },
-      { icone: "🍎", titre: "Disposer les pommes", detail: "Disposer les quartiers debout dans le caramel, très serrés. Cuire à feu moyen pour compoter.", badge: "⏱ 15 min" },
-      { icone: "🥙", titre: "Couvrir de pâte", detail: "Recouvrir les pommes de pâte feuilletée. Rentrer les bords. Piquer.", badge: null },
-      { icone: "🔥", titre: "Cuire et retourner", detail: "Enfourner. Laisser reposer 5 min hors du four puis retourner sur un plat d'un coup sec. Servir tiède avec crème fraîche.", badge: "⏱ 25 min à 200°C" }
-    ]
+        { icone: "🍎", titre: "Les pommes", detail: "Éplucher et couper en quartiers épais des pommes fermes (Granny ou Reinette).", badge: null },
+        { icone: "🍯", titre: "Le caramel", detail: "Dans une poêle allant au four, fondre beurre et sucre jusqu'à un caramel ambré, sans le brûler.", badge: "⏱ 8 min" },
+        { icone: "🍎", titre: "Disposer", detail: "Ranger les quartiers serrés debout dans le caramel.", badge: null },
+        { icone: "⏲️", titre: "Compoter", detail: "Cuire à feu moyen pour que les pommes compotent légèrement. ASTUCE CHEF : des pommes bien serrées ne s'affaissent pas et la tatin se tient mieux au démoulage.", badge: "⏱ 15 min" },
+        { icone: "🥙", titre: "Couvrir", detail: "Recouvrir de pâte feuilletée, rentrer les bords à l'intérieur et piquer.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Enfourner jusqu'à ce que la pâte soit dorée.", badge: "⏱ 25 min à 200°C" },
+        { icone: "🔄", titre: "Retourner", detail: "Laisser reposer 5 min puis retourner d'un coup sec sur un plat. Servir tiède avec de la crème.", badge: null }
+      ]
   },
   verrineframboisechocolat: {
     nom: "Verrines Framboise Chocolat",
@@ -526,11 +543,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍫", titre: "Mousse chocolat", detail: "Fondre le chocolat au bain-marie. Séparer les œufs. Incorporer les jaunes au chocolat tiède. Monter les blancs en neige ferme. Incorporer délicatement. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🍓", titre: "Coulis framboise", detail: "Mixer les framboises avec le sucre et un jus de citron. Filtrer les pépins. Réserver.", badge: null },
-      { icone: "🥛", titre: "Montage", detail: "Dans chaque verrine : coulis de framboise → mousse chocolat → repos au frigo.", badge: "⏱ 2h frigo" },
-      { icone: "🍦", titre: "Finir", detail: "Au moment de servir, fouetter la crème en chantilly. Déposer sur la mousse. Décorer de framboises fraîches.", badge: null }
-    ]
+        { icone: "🍫", titre: "Mousse chocolat", detail: "Fondre le chocolat, puis incorporer les jaunes au chocolat tiède.", badge: null },
+        { icone: "🌨️", titre: "Blancs", detail: "Monter les blancs en neige ferme et les incorporer délicatement. ASTUCE CHEF : un tiers des blancs d'abord pour détendre, puis le reste en soulevant.", badge: null },
+        { icone: "🍓", titre: "Coulis framboise", detail: "Mixer les framboises avec sucre et jus de citron, puis filtrer les pépins.", badge: null },
+        { icone: "🥛", titre: "Montage", detail: "Dans chaque verrine : coulis de framboise puis mousse chocolat.", badge: null },
+        { icone: "❄️", titre: "Réfrigérer", detail: "Réserver au frais pour que la mousse prenne.", badge: "⏱ 2h" },
+        { icone: "🍦", titre: "Finir", detail: "Au moment de servir, ajouter une chantilly et des framboises fraîches.", badge: null }
+      ]
   },
   tartepistache: {
     nom: "Tarte à la Pistache",
@@ -559,11 +578,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Foncer et cuire à blanc", detail: "Étaler la pâte sablée dans le moule. Piquer. Papier + billes. Cuire à blanc puis 5 min sans billes.", badge: "⏱ 20 min à 180°C" },
-      { icone: "🟢", titre: "Crème pistache", detail: "Mixer pistaches non salées en pâte. Crémer beurre + sucre. Ajouter les œufs, puis la pâte de pistache et la farine.", badge: null },
-      { icone: "🔥", titre: "Cuire la tarte", detail: "Verser la crème pistache dans le fond cuit. Recuire jusqu'à crème prise et légèrement dorée.", badge: "⏱ 25 min à 170°C" },
-      { icone: "❄️", titre: "Refroidir et décorer", detail: "Laisser refroidir complètement puis réfrigérer. Décorer de framboises et sucre glace au moment de servir.", badge: "⏱ 3h frigo" }
-    ]
+        { icone: "🥙", titre: "Foncer et cuire à blanc", detail: "Étaler la pâte sablée, piquer, couvrir de papier et de billes et cuire à blanc.", badge: "⏱ 20 min à 180°C" },
+        { icone: "🟢", titre: "Pâte de pistache", detail: "Mixer les pistaches non salées en une pâte.", badge: null },
+        { icone: "🧈", titre: "Crème pistache", detail: "Crémer beurre et sucre, ajouter les œufs, puis la pâte de pistache et la farine. ASTUCE CHEF : pistaches non salées impérativement, sinon la crème vire au salé.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Verser la crème dans le fond cuit et recuire jusqu'à ce qu'elle soit prise et légèrement dorée.", badge: "⏱ 25 min à 170°C" },
+        { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir puis réfrigérer.", badge: "⏱ 3h" },
+        { icone: "🍓", titre: "Décorer", detail: "Décorer de framboises et de sucre glace au moment de servir.", badge: null }
+      ]
   },
   tartechocolatcaramel: {
     nom: "Tarte Chocolat Caramel",
@@ -592,11 +613,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Foncer et cuire à blanc", detail: "Foncer la pâte sablée dans le moule. Cuire à blanc.", badge: "⏱ 20 min à 180°C" },
-      { icone: "🍯", titre: "Caramel beurre salé", detail: "Faire un caramel à sec avec le sucre. Décuire avec la crème chaude. Incorporer le beurre et le sel. Verser dans le fond de tarte. Réfrigérer. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: "⏱ 1h frigo" },
-      { icone: "🍫", titre: "Ganache chocolat", detail: "Chauffer la crème restante. Verser sur le chocolat haché. Mélanger jusqu'à brillant. Verser sur le caramel refroidi.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Laisser prendre au frigo. Décorer de fleur de sel et d'éclats de caramel.", badge: "⏱ 2h frigo" }
-    ]
+        { icone: "🥙", titre: "Foncer et cuire à blanc", detail: "Foncer la pâte sablée et la cuire à blanc.", badge: "⏱ 20 min à 180°C" },
+        { icone: "🍯", titre: "Caramel beurre salé", detail: "Faire un caramel à sec, décuire avec la crème chaude, incorporer beurre et sel. ASTUCE CHEF : versez la crème chaude, jamais froide, pour éviter les projections.", badge: null },
+        { icone: "🫗", titre: "Couler le caramel", detail: "Verser le caramel dans le fond de tarte et réfrigérer.", badge: "⏱ 1h" },
+        { icone: "🍫", titre: "Ganache", detail: "Chauffer la crème, verser sur le chocolat haché et mélanger jusqu'à brillant.", badge: null },
+        { icone: "🫗", titre: "Couler la ganache", detail: "Verser la ganache sur le caramel refroidi.", badge: null },
+        { icone: "❄️", titre: "Prendre", detail: "Réfrigérer, puis décorer de fleur de sel et d'éclats de caramel.", badge: "⏱ 2h" }
+      ]
   },
   cremebrulee: {
     nom: "Crème Brûlée",
@@ -660,12 +683,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍫", titre: "Faire fondre le chocolat", detail: "Casser le chocolat en morceaux. Le faire fondre au bain-marie ou au micro-ondes par tranches de 30 secondes. Laisser tiédir.", badge: null },
-      { icone: "🥚", titre: "Séparer les œufs", detail: "Séparer les blancs des jaunes. Incorporer les jaunes un à un au chocolat fondu tiédi en mélangeant rapidement. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🌨️", titre: "Monter les blancs", detail: "Battre les blancs en neige avec la pincée de sel. Quand ils commencent à être fermes, ajouter le sucre et continuer à battre jusqu'à obtenir des blancs bien fermes.", badge: null },
-      { icone: "🥄", titre: "Incorporer délicatement", detail: "Incorporer un tiers des blancs au chocolat et mélanger vigoureusement pour détendre. Puis ajouter le reste en soulevant délicatement pour ne pas casser les blancs. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Verser dans des verrines ou un grand plat. Placer au réfrigérateur jusqu'à ce que la mousse soit prise.", badge: "⏱ 2h minimum" }
-    ]
+        { icone: "🍫", titre: "Fondre le chocolat", detail: "Faire fondre le chocolat au bain-marie ou au micro-ondes, puis laisser tiédir.", badge: null },
+        { icone: "🥚", titre: "Les jaunes", detail: "Incorporer les jaunes un à un au chocolat tiède en mélangeant rapidement.", badge: null },
+        { icone: "🌨️", titre: "Monter les blancs", detail: "Monter les blancs en neige avec une pincée de sel, serrer avec le sucre.", badge: null },
+        { icone: "🥄", titre: "Détendre", detail: "Incorporer un tiers des blancs au chocolat en mélangeant vivement pour détendre. ASTUCE CHEF : ce premier tiers énergique facilite l'incorporation du reste sans casser les blancs.", badge: null },
+        { icone: "🪶", titre: "Incorporer", detail: "Ajouter le reste des blancs en soulevant délicatement.", badge: null },
+        { icone: "❄️", titre: "Réfrigérer", detail: "Verser en verrines et réserver au frais jusqu'à prise.", badge: "⏱ 2h minimum" }
+      ]
   },
   ileflottante: {
     nom: "Île Flottante",
@@ -729,12 +753,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍫", titre: "Faire fondre chocolat + beurre", detail: "Faire fondre le chocolat et le beurre ensemble au bain-marie ou au micro-ondes. Mélanger jusqu'à obtenir une ganache lisse. Laisser tiédir.", badge: null },
-      { icone: "🥚", titre: "Fouetter œufs + sucre", detail: "Fouetter les œufs entiers avec le sucre jusqu'à ce que le mélange blanchisse et double de volume.", badge: "⏱ 3–4 min au batteur" },
-      { icone: "🌾", titre: "Incorporer farine + chocolat", detail: "Ajouter la farine tamisée au mélange œufs-sucre. Puis incorporer le chocolat fondu tiédi. Mélanger délicatement.", badge: null },
-      { icone: "🥧", titre: "Remplir et réfrigérer", detail: "Beurrer et fariner des ramequins individuels. Remplir aux 3/4. Réfrigérer au moins 1h (ou toute une nuit — c'est le secret du cœur coulant !).", badge: "⏱ 1h au frigo minimum" },
-      { icone: "🔥", titre: "Cuire et servir", detail: "Enfourner les ramequins froids dans un four très chaud préchauffé. Sortir dès que les bords sont cuits mais que le centre est encore tremblotant. Démouler et servir immédiatement avec une boule de glace vanille.", badge: "⏱ 11–12 min à 220 °C" }
-    ]
+        { icone: "🍫", titre: "Fondre chocolat et beurre", detail: "Faire fondre ensemble jusqu'à une ganache lisse, puis laisser tiédir.", badge: null },
+        { icone: "🥚", titre: "Œufs et sucre", detail: "Fouetter les œufs entiers avec le sucre jusqu'à blanchiment et doublement de volume.", badge: "⏱ 3-4 min" },
+        { icone: "🌾", titre: "Farine", detail: "Incorporer la farine tamisée.", badge: null },
+        { icone: "🍫", titre: "Chocolat", detail: "Ajouter le chocolat fondu tiédi et mélanger délicatement.", badge: null },
+        { icone: "🥧", titre: "Mouler et réfrigérer", detail: "Beurrer et fariner des ramequins, remplir aux trois quarts et réfrigérer. ASTUCE CHEF : un long passage au frais, jusqu'à une nuit, garantit le cœur coulant.", badge: "⏱ 1h minimum" },
+        { icone: "🔥", titre: "Cuire", detail: "Enfourner les ramequins froids dans un four très chaud et sortir dès que les bords sont pris et le centre tremblotant. Servir aussitôt.", badge: "⏱ 11-12 min à 220°C" }
+      ]
   },
   madeleine: {
     nom: "Madeleines",
@@ -768,12 +793,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧈", titre: "Faire fondre le beurre", detail: "Faire fondre le beurre et le laisser refroidir. Il doit être fondu mais pas chaud.", badge: null },
-      { icone: "🥚", titre: "Fouetter œufs + sucre", detail: "Fouetter les œufs avec le sucre et le miel jusqu'à blanchiment. Ajouter le zeste de citron.", badge: "⏱ 3 min au batteur" },
-      { icone: "🌾", titre: "Incorporer farine + levure", detail: "Ajouter la farine tamisée avec la levure. Mélanger. Incorporer le beurre fondu refroidi. La pâte doit être lisse.", badge: null },
-      { icone: "❄️", titre: "Repos au frigo", detail: "Couvrir la pâte et laisser reposer au réfrigérateur. Ce choc thermique est le secret de la bosse !", badge: "⏱ 1h minimum au frigo" },
-      { icone: "🔥", titre: "Cuire", detail: "Préchauffer le four à 220 °C. Beurrer les moules à madeleines. Remplir aux 3/4. Enfourner et baisser immédiatement à 180 °C. Les madeleines sont prêtes quand la bosse est formée et les bords dorés.", badge: "⏱ 11–13 min" }
-    ]
+        { icone: "🧈", titre: "Beurre fondu", detail: "Faire fondre le beurre et le laisser refroidir, fondu mais pas chaud.", badge: null },
+        { icone: "🥚", titre: "Œufs et sucre", detail: "Fouetter les œufs avec le sucre et le miel jusqu'à blanchiment, ajouter le zeste de citron.", badge: "⏱ 3 min" },
+        { icone: "🌾", titre: "Farine", detail: "Incorporer la farine tamisée avec la levure, puis le beurre fondu, jusqu'à une pâte lisse.", badge: null },
+        { icone: "❄️", titre: "Repos au frais", detail: "Couvrir et réfrigérer la pâte. ASTUCE CHEF : ce choc thermique entre pâte froide et four chaud, c'est tout le secret de la bosse.", badge: "⏱ 1h minimum" },
+        { icone: "🥧", titre: "Mouler", detail: "Beurrer les moules et les remplir aux trois quarts.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Enfourner très chaud puis baisser aussitôt le four : prêtes quand la bosse est formée et les bords dorés.", badge: "⏱ 11-13 min" }
+      ]
   },
   clafoutis: {
     nom: "Clafoutis",
@@ -1005,11 +1031,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥐", titre: "Faire la pâte sablée", detail: "Sabler farine, beurre froid, sucre glace. Ajouter œuf et former une boule. Réfrigérer 30 min.", badge: "⏱ 30 min" },
-      { icone: "🔥", titre: "Cuire à blanc", detail: "Foncer le moule avec la pâte. Piquer et cuire à blanc avec billes de cuisson à 180°C.", badge: "⏱ 20 min" },
-      { icone: "🥛", titre: "Faire la crème pâtissière", detail: "Chauffer lait et vanille. Mélanger jaunes, sucre, maïzena. Verser le lait chaud en fouettant. Cuire jusqu'à épaississement.", badge: "⏱ 10 min" },
-      { icone: "🍓", titre: "Garnir et dresser", detail: "Garnir le fond refroidi de crème pâtissière froide. Disposer les fraises équeutées. Badigeonner de nappage.", badge: null }
-    ]
+        { icone: "🥐", titre: "La pâte sablée", detail: "Sabler farine, beurre froid et sucre glace, ajouter l'œuf et former une boule. Réfrigérer.", badge: "⏱ 30 min" },
+        { icone: "🔥", titre: "Cuire à blanc", detail: "Foncer le moule, piquer et cuire à blanc avec des billes.", badge: "⏱ 20 min à 180°C" },
+        { icone: "🥛", titre: "Crème pâtissière", detail: "Chauffer lait et vanille, verser sur les jaunes blanchis avec sucre et maïzena, puis cuire jusqu'à épaississement.", badge: "⏱ 10 min" },
+        { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir le fond et la crème séparément.", badge: null },
+        { icone: "🍓", titre: "Garnir", detail: "Garnir le fond de crème pâtissière et disposer les fraises équeutées. ASTUCE CHEF : rangez les fraises serrées, pointe vers le haut, pour une tarte qui en jette.", badge: null },
+        { icone: "✨", titre: "Lustrer", detail: "Badigeonner les fraises de nappage pour les faire briller.", badge: null }
+      ]
   },
   pannaCotta: {
     nom: "Panna Cotta Vanille",
@@ -1038,11 +1066,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌸", titre: "Faire tremper la gélatine", detail: "Faire tremper les feuilles de gélatine dans l'eau froide 5 min.", badge: "⏱ 5 min" },
-      { icone: "🍯", titre: "Chauffer la crème", detail: "Chauffer crème, sucre et gousse de vanille fendue jusqu'à frémissement. Ne pas bouillir.", badge: "⏱ 5 min" },
-      { icone: "🍮", titre: "Incorporer la gélatine", detail: "Hors du feu, incorporer la gélatine essorée. Mélanger. Filtrer. Verser dans les moules. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Réfrigérer au moins 4h. Démouler sur les assiettes. Napper de coulis de fruits rouges.", badge: "⏱ 4h" }
-    ]
+        { icone: "🌸", titre: "La gélatine", detail: "Faire tremper les feuilles de gélatine dans l'eau froide.", badge: "⏱ 5 min" },
+        { icone: "🍯", titre: "Chauffer la crème", detail: "Chauffer crème, sucre et gousse de vanille fendue jusqu'à frémissement, sans bouillir.", badge: "⏱ 5 min" },
+        { icone: "🍮", titre: "Incorporer la gélatine", detail: "Hors du feu, incorporer la gélatine essorée et mélanger jusqu'à dissolution.", badge: null },
+        { icone: "🫗", titre: "Mouler", detail: "Filtrer et verser dans les moules. ASTUCE CHEF : un filtrage chasse la gousse et donne une panna cotta parfaitement lisse.", badge: null },
+        { icone: "❄️", titre: "Réfrigérer", detail: "Réserver au frais jusqu'à ce qu'elle soit prise et tremblante.", badge: "⏱ 4h" },
+        { icone: "🍓", titre: "Servir", detail: "Démouler sur assiette et napper de coulis de fruits rouges.", badge: null }
+      ]
   },
   eclair: {
     nom: "Éclairs au Chocolat",
@@ -1071,11 +1101,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💧", titre: "Faire la pâte à choux", detail: "Bouillir eau, beurre, sel. Hors du feu, ajouter farine d'un coup. Dessécher 2 min. Incorporer les œufs un à un. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🔥", titre: "Cuire les éclairs", detail: "Dresser des bâtons de 12 cm à la poche à douille. Cuire à 200°C sans ouvrir le four.", badge: "⏱ 25 min" },
-      { icone: "🍫", titre: "Faire la crème", detail: "Faire une crème pâtissière. Y ajouter le chocolat fondu hors du feu. Refroidir.", badge: null },
-      { icone: "⚡", titre: "Garnir et glacer", detail: "Garnir les éclairs de crème chocolat à la poche. Tremper dans le fondant au chocolat chaud.", badge: null }
-    ]
+        { icone: "💧", titre: "Pâte à choux", detail: "Bouillir eau, beurre et sel, ajouter la farine d'un coup et dessécher 2 min.", badge: null },
+        { icone: "🥚", titre: "Les œufs", detail: "Incorporer les œufs un à un jusqu'à une pâte lisse et brillante. ASTUCE CHEF : la pâte doit former un V souple au bout de la spatule.", badge: null },
+        { icone: "🔥", titre: "Dresser et cuire", detail: "Pocher des bâtons de 12 cm et cuire sans ouvrir le four.", badge: "⏱ 25 min à 200°C" },
+        { icone: "🍫", titre: "Crème chocolat", detail: "Faire une crème pâtissière, y ajouter le chocolat fondu hors du feu, puis refroidir.", badge: null },
+        { icone: "⚡", titre: "Garnir", detail: "Garnir les éclairs de crème au chocolat à la poche.", badge: null },
+        { icone: "🎨", titre: "Glacer", detail: "Tremper le dessus dans le fondant au chocolat.", badge: null }
+      ]
   },
   pavlova: {
     nom: "Pavlova aux Fruits",
@@ -1104,11 +1136,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Monter les blancs", detail: "Monter les blancs en neige ferme. Incorporer le sucre progressivement. Ajouter vinaigre blanc et maïzena.", badge: null },
-      { icone: "🔥", titre: "Cuire la meringue", detail: "Dresser un disque de meringue sur papier cuisson. Creuser le centre. Cuire au four très doux.", badge: "⏱ 1h15" },
-      { icone: "🍦", titre: "Monter la chantilly", detail: "Fouetter la crème très froide avec sucre glace et vanille jusqu'à tenue ferme.", badge: null },
-      { icone: "🍓", titre: "Garnir", detail: "Laisser refroidir la meringue. Garnir de chantilly. Disposer les fruits frais colorés. Servir immédiatement.", badge: null }
-    ]
+        { icone: "🥚", titre: "Monter les blancs", detail: "Monter les blancs en neige ferme et incorporer le sucre progressivement jusqu'à une meringue lisse et brillante.", badge: null },
+        { icone: "🥄", titre: "Stabiliser", detail: "Ajouter le vinaigre blanc et la maïzena. ASTUCE CHEF : ce duo donne le contraste signature, croustillant dehors et guimauve dedans.", badge: null },
+        { icone: "⭕", titre: "Dresser", detail: "Dresser un disque de meringue sur papier cuisson en creusant légèrement le centre.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Cuire au four très doux puis laisser sécher dans le four éteint.", badge: "⏱ 1h15" },
+        { icone: "🍦", titre: "Chantilly", detail: "Fouetter la crème très froide avec sucre glace et vanille jusqu'à tenue ferme.", badge: null },
+        { icone: "🍓", titre: "Garnir", detail: "Garnir la meringue refroidie de chantilly et de fruits frais. Servir aussitôt.", badge: null }
+      ]
   },
   profiteroles: {
     nom: "Profiteroles",
@@ -1137,11 +1171,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💧", titre: "Faire les choux", detail: "Bouillir eau, beurre, sel, sucre. Incorporer farine, dessécher. Ajouter œufs un à un. Pocher des petites boules. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire à 200°C. Ne pas ouvrir le four pendant la cuisson.", badge: "⏱ 25 min" },
-      { icone: "🍫", titre: "Sauce chocolat", detail: "Faire fondre chocolat noir avec crème chaude et sucre. Mélanger jusqu'à consistance lisse.", badge: null },
-      { icone: "🍨", titre: "Garnir et servir", detail: "Couper les choux refroidis. Garnir d'une boule de glace vanille. Napper de sauce chocolat chaude au moment de servir. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
-    ]
+        { icone: "💧", titre: "Pâte à choux", detail: "Bouillir eau, beurre, sel et sucre, ajouter la farine et dessécher, puis incorporer les œufs un à un.", badge: null },
+        { icone: "⚪", titre: "Dresser", detail: "Pocher de petites boules régulières sur une plaque. ASTUCE CHEF : un peu d'eau lissée au doigt sur le dessus évite les pointes qui brûlent.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Cuire sans ouvrir le four, jusqu'à ce que les choux soient dorés et secs.", badge: "⏱ 25 min à 200°C" },
+        { icone: "🍫", titre: "Sauce chocolat", detail: "Faire fondre le chocolat avec de la crème chaude et un peu de sucre jusqu'à une sauce lisse.", badge: null },
+        { icone: "🍨", titre: "Garnir", detail: "Couper les choux refroidis et les garnir d'une boule de glace vanille.", badge: null },
+        { icone: "🍽️", titre: "Servir", detail: "Napper de sauce chocolat chaude au moment de servir.", badge: null }
+      ]
   },
   tarteNormande: {
     nom: "Tarte Normande",
@@ -1170,11 +1206,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥐", titre: "Faire la pâte brisée", detail: "Sabler farine et beurre froid. Ajouter œuf et eau froide. Former une boule sans trop travailler. Réfrigérer 30 min.", badge: "⏱ 30 min" },
-      { icone: "🍎", titre: "Préparer les pommes", detail: "Éplucher et couper les pommes en fines tranches. Les faire revenir dans le beurre avec le sucre et la cannelle. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 5 min" },
-      { icone: "🥛", titre: "Faire l'appareil", detail: "Mélanger crème, œufs, sucre, calvados (facultatif). Fouetter.", badge: null },
-      { icone: "🔥", titre: "Cuire la tarte", detail: "Foncer le moule. Disposer les pommes. Verser l'appareil. Cuire à 180°C.", badge: "⏱ 35 min" }
-    ]
+        { icone: "🥐", titre: "Pâte brisée", detail: "Sabler farine et beurre froid, ajouter œuf et eau froide, former une boule sans trop travailler. Réfrigérer.", badge: "⏱ 30 min" },
+        { icone: "🍎", titre: "Les pommes", detail: "Éplucher et couper les pommes en fines tranches et les faire revenir au beurre avec sucre et cannelle.", badge: "⏱ 5 min" },
+        { icone: "🥛", titre: "L'appareil", detail: "Mélanger crème, œufs, sucre et calvados (facultatif).", badge: null },
+        { icone: "🥧", titre: "Foncer", detail: "Foncer le moule avec la pâte et disposer les pommes.", badge: null },
+        { icone: "🫗", titre: "Garnir", detail: "Verser l'appareil sur les pommes. ASTUCE CHEF : l'appareil doit napper les pommes sans les noyer, sinon il ne prend pas.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Cuire jusqu'à ce que l'appareil soit pris et doré.", badge: "⏱ 35 min à 180°C" }
+      ]
   },
   pasteldenata: {
     nom: "Pastéis de Nata",
@@ -2889,6 +2927,188 @@ Object.assign(recettes, {
       { icone: "🎂", titre: "Fermer", detail: "Poser le second disque et lisser une fine couche de crème.", badge: null },
       { icone: "❄️", titre: "Reposer", detail: "Réserver au frais plusieurs heures.", badge: "⏱ 2 h" },
       { icone: "🍽️", titre: "Servir", detail: "Décorer de framboises et de sucre glace, servir frais.", badge: null }
+    ]
+  },
+  mousseaucitron: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T12:58:00",
+    cat: "desserts", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍋",
+    description: "Une mousse aérienne et acidulée au citron, montée aux blancs en neige, fraîche et légère.",
+    tableauMousseaucitron: [
+      { nb: 1, citron: "½", oeuf: "1", sucre: "25 g", mascarpone: "30 g" },
+      { nb: 2, citron: "1", oeuf: "2", sucre: "50 g", mascarpone: "60 g" },
+      { nb: 3, citron: "1½", oeuf: "3", sucre: "75 g", mascarpone: "90 g" },
+      { nb: 4, citron: "2", oeuf: "4", sucre: "100 g", mascarpone: "120 g" },
+      { nb: 5, citron: "2½", oeuf: "5", sucre: "125 g", mascarpone: "150 g" },
+      { nb: 6, citron: "3", oeuf: "6", sucre: "150 g", mascarpone: "180 g" },
+      { nb: 7, citron: "3½", oeuf: "7", sucre: "175 g", mascarpone: "210 g" },
+      { nb: 8, citron: "4", oeuf: "8", sucre: "200 g", mascarpone: "240 g" },
+      { nb: 9, citron: "4½", oeuf: "9", sucre: "225 g", mascarpone: "270 g" },
+      { nb: 10, citron: "5", oeuf: "10", sucre: "250 g", mascarpone: "300 g" },
+      { nb: 11, citron: "5½", oeuf: "11", sucre: "275 g", mascarpone: "330 g" },
+      { nb: 12, citron: "6", oeuf: "12", sucre: "300 g", mascarpone: "360 g" },
+      { nb: 13, citron: "6½", oeuf: "13", sucre: "325 g", mascarpone: "390 g" },
+      { nb: 14, citron: "7", oeuf: "14", sucre: "350 g", mascarpone: "420 g" },
+      { nb: 15, citron: "7½", oeuf: "15", sucre: "375 g", mascarpone: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍋", titre: "Zester", detail: "Zester et presser les citrons.", badge: null },
+      { icone: "🥚", titre: "Séparer", detail: "Séparer les blancs des jaunes.", badge: null },
+      { icone: "🥣", titre: "Crème citron", detail: "Fouetter les jaunes avec le sucre, ajouter jus, zeste et mascarpone.", badge: null },
+      { icone: "🥚", titre: "Blancs en neige", detail: "Monter les blancs en neige ferme avec une pincée de sel. ASTUCE CHEF : saladier bien propre et sans trace de jaune, sinon les blancs ne montent pas.", badge: null },
+      { icone: "🌀", titre: "Incorporer", detail: "Incorporer délicatement les blancs à la crème en soulevant la masse.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Répartir en verrines et réfrigérer au moins 2 h.", badge: "⏱ 2 h" }
+    ]
+  },
+  gateaucarotte: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T12:57:00",
+    cat: "desserts", pays: "etats-unis",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥕",
+    description: "Le carrot cake moelleux et épicé à la cannelle, garni d'un glaçage onctueux au fromage frais.",
+    tableauGateaucarotte: [
+      { nb: 1, carotte: "½", farine: "40 g", sucre: "35 g", oeuf: "½", huile: "4 cl", cannelle: "½ c.à.c", fromagefrais: "25 g", sucreglace: "15 g", noix: "10 g" },
+      { nb: 2, carotte: "1", farine: "80 g", sucre: "70 g", oeuf: "1", huile: "8 cl", cannelle: "1 c.à.c", fromagefrais: "50 g", sucreglace: "30 g", noix: "20 g" },
+      { nb: 3, carotte: "1½", farine: "120 g", sucre: "105 g", oeuf: "1½", huile: "12 cl", cannelle: "1½ c.à.c", fromagefrais: "75 g", sucreglace: "45 g", noix: "30 g" },
+      { nb: 4, carotte: "2", farine: "160 g", sucre: "140 g", oeuf: "2", huile: "16 cl", cannelle: "2 c.à.c", fromagefrais: "100 g", sucreglace: "60 g", noix: "40 g" },
+      { nb: 5, carotte: "2½", farine: "200 g", sucre: "175 g", oeuf: "2½", huile: "20 cl", cannelle: "2½ c.à.c", fromagefrais: "125 g", sucreglace: "75 g", noix: "50 g" },
+      { nb: 6, carotte: "3", farine: "240 g", sucre: "210 g", oeuf: "3", huile: "24 cl", cannelle: "3 c.à.c", fromagefrais: "150 g", sucreglace: "90 g", noix: "60 g" },
+      { nb: 7, carotte: "3½", farine: "280 g", sucre: "245 g", oeuf: "3½", huile: "28 cl", cannelle: "3½ c.à.c", fromagefrais: "175 g", sucreglace: "105 g", noix: "70 g" },
+      { nb: 8, carotte: "4", farine: "320 g", sucre: "280 g", oeuf: "4", huile: "32 cl", cannelle: "4 c.à.c", fromagefrais: "200 g", sucreglace: "120 g", noix: "80 g" },
+      { nb: 9, carotte: "4½", farine: "360 g", sucre: "315 g", oeuf: "4½", huile: "36 cl", cannelle: "4½ c.à.c", fromagefrais: "225 g", sucreglace: "135 g", noix: "90 g" },
+      { nb: 10, carotte: "5", farine: "400 g", sucre: "350 g", oeuf: "5", huile: "40 cl", cannelle: "5 c.à.c", fromagefrais: "250 g", sucreglace: "150 g", noix: "100 g" },
+      { nb: 11, carotte: "5½", farine: "440 g", sucre: "385 g", oeuf: "5½", huile: "44 cl", cannelle: "5½ c.à.c", fromagefrais: "275 g", sucreglace: "165 g", noix: "110 g" },
+      { nb: 12, carotte: "6", farine: "480 g", sucre: "420 g", oeuf: "6", huile: "48 cl", cannelle: "6 c.à.c", fromagefrais: "300 g", sucreglace: "180 g", noix: "120 g" },
+      { nb: 13, carotte: "6½", farine: "520 g", sucre: "455 g", oeuf: "6½", huile: "52 cl", cannelle: "6½ c.à.c", fromagefrais: "325 g", sucreglace: "195 g", noix: "130 g" },
+      { nb: 14, carotte: "7", farine: "560 g", sucre: "490 g", oeuf: "7", huile: "56 cl", cannelle: "7 c.à.c", fromagefrais: "350 g", sucreglace: "210 g", noix: "140 g" },
+      { nb: 15, carotte: "7½", farine: "600 g", sucre: "525 g", oeuf: "7½", huile: "60 cl", cannelle: "7½ c.à.c", fromagefrais: "375 g", sucreglace: "225 g", noix: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥕", titre: "Râper", detail: "Éplucher et râper finement les carottes.", badge: null },
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger œufs, sucre et huile, puis farine, levure et cannelle.", badge: null },
+      { icone: "🥕", titre: "Incorporer", detail: "Ajouter les carottes râpées et les noix concassées.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Verser dans un moule et enfourner. ASTUCE CHEF : ne sur-cuisez pas, le carrot cake doit rester très moelleux, la lame ressort à peine sèche.", badge: "⏱ 40 min à 170°C" },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser totalement refroidir avant de glacer.", badge: null },
+      { icone: "🧀", titre: "Glaçage", detail: "Fouetter fromage frais et sucre glace, étaler sur le gâteau froid.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Décorer de noix et servir frais.", badge: null }
+    ]
+  },
+  mugcakechoco: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T12:56:00",
+    cat: "desserts", pays: "etats-unis",
+    base: 4,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "☕",
+    description: "Un gâteau au chocolat fondant cuit en 2 minutes au micro-ondes, directement dans la tasse.",
+    tableauMugcakechoco: [
+      { nb: 1, farine: "4 c.à.s", sucre: "2 c.à.s", cacao: "1 c.à.s", lait: "3 c.à.s", huile: "1 c.à.s", chocolat: "15 g", levure: "1 pincée" },
+      { nb: 2, farine: "8 c.à.s", sucre: "4 c.à.s", cacao: "2 c.à.s", lait: "6 c.à.s", huile: "2 c.à.s", chocolat: "30 g", levure: "1 pincée" },
+      { nb: 3, farine: "12 c.à.s", sucre: "6 c.à.s", cacao: "3 c.à.s", lait: "9 c.à.s", huile: "3 c.à.s", chocolat: "45 g", levure: "1 pincée" },
+      { nb: 4, farine: "16 c.à.s", sucre: "8 c.à.s", cacao: "4 c.à.s", lait: "12 c.à.s", huile: "4 c.à.s", chocolat: "60 g", levure: "1 pincée" },
+      { nb: 5, farine: "20 c.à.s", sucre: "10 c.à.s", cacao: "5 c.à.s", lait: "15 c.à.s", huile: "5 c.à.s", chocolat: "75 g", levure: "1 pincée" },
+      { nb: 6, farine: "24 c.à.s", sucre: "12 c.à.s", cacao: "6 c.à.s", lait: "18 c.à.s", huile: "6 c.à.s", chocolat: "90 g", levure: "1 pincée" },
+      { nb: 7, farine: "28 c.à.s", sucre: "14 c.à.s", cacao: "7 c.à.s", lait: "21 c.à.s", huile: "7 c.à.s", chocolat: "105 g", levure: "1 pincée" },
+      { nb: 8, farine: "32 c.à.s", sucre: "16 c.à.s", cacao: "8 c.à.s", lait: "24 c.à.s", huile: "8 c.à.s", chocolat: "120 g", levure: "1 pincée" },
+      { nb: 9, farine: "36 c.à.s", sucre: "18 c.à.s", cacao: "9 c.à.s", lait: "27 c.à.s", huile: "9 c.à.s", chocolat: "135 g", levure: "1 pincée" },
+      { nb: 10, farine: "40 c.à.s", sucre: "20 c.à.s", cacao: "10 c.à.s", lait: "30 c.à.s", huile: "10 c.à.s", chocolat: "150 g", levure: "1 pincée" },
+      { nb: 11, farine: "44 c.à.s", sucre: "22 c.à.s", cacao: "11 c.à.s", lait: "33 c.à.s", huile: "11 c.à.s", chocolat: "165 g", levure: "1 pincée" },
+      { nb: 12, farine: "48 c.à.s", sucre: "24 c.à.s", cacao: "12 c.à.s", lait: "36 c.à.s", huile: "12 c.à.s", chocolat: "180 g", levure: "1 pincée" },
+      { nb: 13, farine: "52 c.à.s", sucre: "26 c.à.s", cacao: "13 c.à.s", lait: "39 c.à.s", huile: "13 c.à.s", chocolat: "195 g", levure: "1 pincée" },
+      { nb: 14, farine: "56 c.à.s", sucre: "28 c.à.s", cacao: "14 c.à.s", lait: "42 c.à.s", huile: "14 c.à.s", chocolat: "210 g", levure: "1 pincée" },
+      { nb: 15, farine: "60 c.à.s", sucre: "30 c.à.s", cacao: "15 c.à.s", lait: "45 c.à.s", huile: "15 c.à.s", chocolat: "225 g", levure: "1 pincée" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "☕", titre: "Mélanger le sec", detail: "Dans une grande tasse, mélanger farine, sucre, cacao et levure.", badge: null },
+      { icone: "🥛", titre: "Liquide", detail: "Incorporer le lait et l'huile, lisser la pâte.", badge: null },
+      { icone: "🍫", titre: "Cœur coulant", detail: "Enfoncer quelques carrés de chocolat au centre. ASTUCE CHEF : le carré au cœur fond et crée un centre coulant, c'est tout l'intérêt du mug cake.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire au micro-ondes à pleine puissance.", badge: "⏱ 90 s" },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 1 min, le gâteau finit de prendre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Déguster tiède dans la tasse, avec une boule de glace si envie.", badge: null }
+    ]
+  },
+  sabayonfruitsrouges: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T12:55:00",
+    cat: "desserts", pays: "italie",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍓",
+    description: "Une crème mousseuse de jaunes d'œufs montés au marsala sur bain-marie, nappée sur des fruits rouges frais.",
+    tableauSabayonfruitsrouges: [
+      { nb: 1, jauneoeuf: "1½", sucre: "20 g", marsala: "2 cl", fruitsrouges: "80 g" },
+      { nb: 2, jauneoeuf: "3", sucre: "40 g", marsala: "4 cl", fruitsrouges: "160 g" },
+      { nb: 3, jauneoeuf: "4½", sucre: "60 g", marsala: "6 cl", fruitsrouges: "240 g" },
+      { nb: 4, jauneoeuf: "6", sucre: "80 g", marsala: "8 cl", fruitsrouges: "320 g" },
+      { nb: 5, jauneoeuf: "7½", sucre: "100 g", marsala: "10 cl", fruitsrouges: "400 g" },
+      { nb: 6, jauneoeuf: "9", sucre: "120 g", marsala: "12 cl", fruitsrouges: "480 g" },
+      { nb: 7, jauneoeuf: "10½", sucre: "140 g", marsala: "14 cl", fruitsrouges: "560 g" },
+      { nb: 8, jauneoeuf: "12", sucre: "160 g", marsala: "16 cl", fruitsrouges: "640 g" },
+      { nb: 9, jauneoeuf: "13½", sucre: "180 g", marsala: "18 cl", fruitsrouges: "720 g" },
+      { nb: 10, jauneoeuf: "15", sucre: "200 g", marsala: "20 cl", fruitsrouges: "800 g" },
+      { nb: 11, jauneoeuf: "16½", sucre: "220 g", marsala: "22 cl", fruitsrouges: "880 g" },
+      { nb: 12, jauneoeuf: "18", sucre: "240 g", marsala: "24 cl", fruitsrouges: "960 g" },
+      { nb: 13, jauneoeuf: "19½", sucre: "260 g", marsala: "26 cl", fruitsrouges: "1040 g" },
+      { nb: 14, jauneoeuf: "21", sucre: "280 g", marsala: "28 cl", fruitsrouges: "1120 g" },
+      { nb: 15, jauneoeuf: "22½", sucre: "300 g", marsala: "30 cl", fruitsrouges: "1200 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍓", titre: "Préparer les fruits", detail: "Laver et répartir les fruits rouges dans des coupes.", badge: null },
+      { icone: "🥚", titre: "Séparer les œufs", detail: "Séparer les jaunes des blancs, réserver les jaunes.", badge: null },
+      { icone: "🍶", titre: "Bain-marie", detail: "Préparer une casserole d'eau frémissante (pas bouillante).", badge: null },
+      { icone: "🥄", titre: "Monter le sabayon", detail: "Fouetter jaunes, sucre et marsala au bain-marie sans arrêt, jusqu'à ce que le mélange triple de volume. ASTUCE CHEF : eau frémissante et fouet constant, sinon les jaunes coagulent en omelette sucrée.", badge: "⏱ 8 min" },
+      { icone: "🌡️", titre: "Vérifier", detail: "Le sabayon est prêt quand il est mousseux, pâle et tient au ruban.", badge: null },
+      { icone: "🍮", titre: "Napper", detail: "Verser le sabayon tiède sur les fruits.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, éventuellement gratiné quelques secondes sous le grill.", badge: null }
+    ]
+  },
+  saladefruits: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T12:54:00",
+    cat: "desserts", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍉",
+    description: "Une salade de fruits frais de saison, relevée d'un sirop léger au citron vert et à la menthe.",
+    tableauSaladefruits: [
+      { nb: 1, fruitsfrais: "200 g", citronvert: "¼", sucre: "1 c.à.s", menthe: "qs" },
+      { nb: 2, fruitsfrais: "400 g", citronvert: "½", sucre: "2 c.à.s", menthe: "qs" },
+      { nb: 3, fruitsfrais: "600 g", citronvert: "¾", sucre: "3 c.à.s", menthe: "qs" },
+      { nb: 4, fruitsfrais: "800 g", citronvert: "1", sucre: "4 c.à.s", menthe: "qs" },
+      { nb: 5, fruitsfrais: "1000 g", citronvert: "1¼", sucre: "5 c.à.s", menthe: "qs" },
+      { nb: 6, fruitsfrais: "1200 g", citronvert: "1½", sucre: "6 c.à.s", menthe: "qs" },
+      { nb: 7, fruitsfrais: "1400 g", citronvert: "1¾", sucre: "7 c.à.s", menthe: "qs" },
+      { nb: 8, fruitsfrais: "1600 g", citronvert: "2", sucre: "8 c.à.s", menthe: "qs" },
+      { nb: 9, fruitsfrais: "1800 g", citronvert: "2¼", sucre: "9 c.à.s", menthe: "qs" },
+      { nb: 10, fruitsfrais: "2000 g", citronvert: "2½", sucre: "10 c.à.s", menthe: "qs" },
+      { nb: 11, fruitsfrais: "2200 g", citronvert: "2¾", sucre: "11 c.à.s", menthe: "qs" },
+      { nb: 12, fruitsfrais: "2400 g", citronvert: "3", sucre: "12 c.à.s", menthe: "qs" },
+      { nb: 13, fruitsfrais: "2600 g", citronvert: "3¼", sucre: "13 c.à.s", menthe: "qs" },
+      { nb: 14, fruitsfrais: "2800 g", citronvert: "3½", sucre: "14 c.à.s", menthe: "qs" },
+      { nb: 15, fruitsfrais: "3000 g", citronvert: "3¾", sucre: "15 c.à.s", menthe: "qs" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍯", titre: "Sirop", detail: "Faire un sirop léger avec un peu d'eau, le sucre et le zeste de citron vert, laisser refroidir.", badge: null },
+      { icone: "🍓", titre: "Couper les fruits", detail: "Laver et couper tous les fruits en morceaux réguliers. ASTUCE CHEF : ajoutez les fruits qui s'oxydent (pomme, banane, poire) en dernier et citronnez-les pour qu'ils ne noircissent pas.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Réunir les fruits dans un saladier.", badge: null },
+      { icone: "💧", titre: "Arroser", detail: "Verser le sirop refroidi et le jus de citron vert.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Réserver au frais au moins 30 min.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de menthe ciselée juste avant de servir.", badge: null }
     ]
   },
 });
