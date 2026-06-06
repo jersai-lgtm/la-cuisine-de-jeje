@@ -653,7 +653,7 @@ function lcGenererPlanPrep() {
     if (jours.length && jourPrepIdx >= 0) {
       joursTxt = jours.map(i => LC_JOURS[i]).join(", ");
       const last = jours[jours.length - 1];
-      let ecart = last - jourPrepIdx; if (ecart < 0) ecart = 0;
+      const ecart = (last - jourPrepIdx + 7) % 7;
       if (ecart <= c.frigo) {
         risque = "bas";
         dateInfo = { type: "frigo", txt: `🟢 Prépare-le le ${window._lcJourPrep} : il tiendra au frigo jusqu'à ${LC_JOURS[last]}.` };
@@ -662,7 +662,7 @@ function lcGenererPlanPrep() {
         dateInfo = { type: "congel", txt: `🔵 Mangé ${LC_JOURS[last]} (J+${ecart}) : congèle-le le ${window._lcJourPrep}, sors-le au frigo la veille.` };
       } else {
         risque = "haut";
-        const dPrep = Math.max(jourPrepIdx, last - c.frigo);
+        const dPrep = (last - c.frigo + 7) % 7;
         dateInfo = { type: "tard", txt: `🔴 Mangé ${LC_JOURS[last]} (J+${ecart}) mais il ne tient que ${c.frigo} j et ne se congèle pas → prépare-le plutôt le ${LC_JOURS[dPrep]}.` };
       }
     } else {
@@ -706,15 +706,19 @@ function lcGenererPlanPrep() {
   const consIntro = aMenu
     ? `Calculé pour une prép le <strong style="color:#fff">${window._lcJourPrep}</strong> · 🟢 frigo OK · 🔵 à congeler · 🔴 à préparer plus tard.`
     : `🔴 à manger en premier · 🟠 assez vite · 🟢 se garde bien / se congèle. Congèle ce que tu ne finiras pas à temps. 😊`;
-  const conservationBloc = `<div style="margin-bottom:4px">
-      <div style="display:flex;align-items:center;gap:9px;margin-bottom:4px">
+  const conservationBloc = `<details class="lc-acc"${fragiles.length ? " open" : ""} style="margin-bottom:4px">
+      <summary>
         <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#3a6ea5;color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center">🥶</span>
-        <span style="font-size:15px;font-weight:500;color:#fff;flex:1">Conservation & congélation</span>
+        <span style="font-size:15px;font-weight:500;color:#fff">Conservation & congélation</span>
+        <span class="lc-acc-count">${consData.length}</span>
+        <span class="lc-acc-chev">▸</span>
+      </summary>
+      <div style="margin-top:8px">
+        <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">${consIntro}</div>
+        ${alerteHTML}
+        <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${consHTML}</div>
       </div>
-      <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">${consIntro}</div>
-      ${alerteHTML}
-      <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${consHTML}</div>
-    </div>`;
+    </details>`;
 
   const styleBloc = `<style>
     #lc-plan-prep .prep-step{background:#1a1620;border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:9px 11px;display:flex;gap:9px;align-items:flex-start}
@@ -731,6 +735,11 @@ function lcGenererPlanPrep() {
     #lc-plan-prep .prep-rec{font-size:10px;color:#ff8fb3;background:rgba(255,77,136,.13);padding:1px 7px;border-radius:999px}
     #lc-plan-prep .prep-step-detail{display:none;font-size:12px;color:#b3b0b8;line-height:1.5;margin:6px 0 0 18px}
     #lc-plan-prep .prep-step.prep-open .prep-step-detail{display:block}
+    #lc-plan-prep .lc-acc>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:9px;padding:5px 0}
+    #lc-plan-prep .lc-acc>summary::-webkit-details-marker{display:none}
+    #lc-plan-prep .lc-acc-count{font-size:11px;color:#88858f;background:rgba(255,255,255,.06);padding:1px 8px;border-radius:999px}
+    #lc-plan-prep .lc-acc-chev{margin-left:auto;color:#88858f;font-size:12px;transition:transform .15s ease}
+    #lc-plan-prep .lc-acc[open]>summary .lc-acc-chev{transform:rotate(90deg)}
   </style>`;
 
   const selecteurHTML = aMenu ? `<div style="display:flex;align-items:center;gap:8px;margin:0 0 14px;flex-wrap:wrap">
@@ -748,7 +757,7 @@ function lcGenererPlanPrep() {
     const joursPresents = Object.keys(detail).map(Number).sort((a, b) => a - b);
     const estCongele = (cle, idx) => {
       const c = lcConseilConservation(cle);
-      return (idx - jourPrepIdx > c.frigo) && c.congel !== "non";
+      return (((idx - jourPrepIdx + 7) % 7) > c.frigo) && c.congel !== "non";
     };
     const cards = joursPresents.map(idx => {
       const demain = detail[idx + 1] || [];
@@ -774,14 +783,18 @@ function lcGenererPlanPrep() {
           ${rappel}${plats}
         </div>`;
     }).join("");
-    if (cards) soirHTML = `<div style="margin:4px 0 16px">
-        <div style="display:flex;align-items:center;gap:9px;margin-bottom:4px">
+    if (cards) soirHTML = `<details class="lc-acc" style="margin:4px 0 16px">
+        <summary>
           <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#7a5cff;color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center">🍽️</span>
-          <span style="font-size:15px;font-weight:500;color:#fff;flex:1">Chaque soir</span>
+          <span style="font-size:15px;font-weight:500;color:#fff">Chaque soir</span>
+          <span class="lc-acc-count">${joursPresents.length} j</span>
+          <span class="lc-acc-chev">▸</span>
+        </summary>
+        <div style="margin-top:8px">
+          <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">Le gros est déjà fait : chaque jour, il ne reste qu'à réchauffer et finir. 😊${LC_AFFICHER_RECHAUFFE ? " <span style=\"color:#6e6b75\">Temps de réchauffage indicatifs ⏱</span>" : ""}</div>
+          <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${cards}</div>
         </div>
-        <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">Le gros est déjà fait : chaque jour, il ne reste qu'à réchauffer et finir. 😊${LC_AFFICHER_RECHAUFFE ? " <span style=\"color:#6e6b75\">Temps de réchauffage indicatifs ⏱</span>" : ""}</div>
-        <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${cards}</div>
-      </div>`;
+      </details>`;
   }
 
   zone.innerHTML = `${styleBloc}
