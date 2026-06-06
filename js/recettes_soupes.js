@@ -1558,4 +1558,112 @@ Object.assign(recettes, {
       { icone: "🌰", titre: "Servir", detail: "Servir avec quelques copeaux de noisette torréfiée. ASTUCE CHEF : la noisette sublime le côté doux et sucré du panais.", badge: null }
     ]
   },
+  soupepotimarronchataigne: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T11:53:00",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🎃",
+    description: "Un velouté d'automne onctueux où le potimarron et les châtaignes se marient en une soupe douce et veloutée.",
+    tableauSoupepotimarronchataigne: [
+      { nb: 1, potimarron: "200 g", chataignescuites: "40 g", oignon: "½", bouillon: "25 cl", cremefraiche: "1 c.à.s", muscade: "qs" },
+      { nb: 2, potimarron: "400 g", chataignescuites: "80 g", oignon: "1", bouillon: "50 cl", cremefraiche: "2 c.à.s", muscade: "qs" },
+      { nb: 3, potimarron: "600 g", chataignescuites: "120 g", oignon: "1½", bouillon: "75 cl", cremefraiche: "3 c.à.s", muscade: "qs" },
+      { nb: 4, potimarron: "800 g", chataignescuites: "160 g", oignon: "2", bouillon: "100 cl", cremefraiche: "4 c.à.s", muscade: "qs" },
+      { nb: 5, potimarron: "1000 g", chataignescuites: "200 g", oignon: "2½", bouillon: "125 cl", cremefraiche: "5 c.à.s", muscade: "qs" },
+      { nb: 6, potimarron: "1200 g", chataignescuites: "240 g", oignon: "3", bouillon: "150 cl", cremefraiche: "6 c.à.s", muscade: "qs" },
+      { nb: 7, potimarron: "1400 g", chataignescuites: "280 g", oignon: "3½", bouillon: "175 cl", cremefraiche: "7 c.à.s", muscade: "qs" },
+      { nb: 8, potimarron: "1600 g", chataignescuites: "320 g", oignon: "4", bouillon: "200 cl", cremefraiche: "8 c.à.s", muscade: "qs" },
+      { nb: 9, potimarron: "1800 g", chataignescuites: "360 g", oignon: "4½", bouillon: "225 cl", cremefraiche: "9 c.à.s", muscade: "qs" },
+      { nb: 10, potimarron: "2000 g", chataignescuites: "400 g", oignon: "5", bouillon: "250 cl", cremefraiche: "10 c.à.s", muscade: "qs" },
+      { nb: 11, potimarron: "2200 g", chataignescuites: "440 g", oignon: "5½", bouillon: "275 cl", cremefraiche: "11 c.à.s", muscade: "qs" },
+      { nb: 12, potimarron: "2400 g", chataignescuites: "480 g", oignon: "6", bouillon: "300 cl", cremefraiche: "12 c.à.s", muscade: "qs" },
+      { nb: 13, potimarron: "2600 g", chataignescuites: "520 g", oignon: "6½", bouillon: "325 cl", cremefraiche: "13 c.à.s", muscade: "qs" },
+      { nb: 14, potimarron: "2800 g", chataignescuites: "560 g", oignon: "7", bouillon: "350 cl", cremefraiche: "14 c.à.s", muscade: "qs" },
+      { nb: 15, potimarron: "3000 g", chataignescuites: "600 g", oignon: "7½", bouillon: "375 cl", cremefraiche: "15 c.à.s", muscade: "qs" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🎃", titre: "Préparer le potimarron", detail: "Laver le potimarron, retirer les graines, couper en cubes. ASTUCE CHEF : inutile d'éplucher le potimarron, sa peau fond à la cuisson et tient le velouté.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire suer l'oignon dans un peu de beurre.", badge: null },
+      { icone: "🥔", titre: "Réunir", detail: "Ajouter potimarron et châtaignes, couvrir de bouillon.", badge: null },
+      { icone: "⏳", titre: "Cuire", detail: "Cuire jusqu'à ce que le potimarron soit fondant.", badge: "⏱ 20 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement, ajouter la crème, rectifier, une pointe de muscade.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec quelques brisures de châtaignes et un filet d'huile de noisette.", badge: null }
+    ]
+  },
+  veloutetomaterotie: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T11:52:00",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "Un velouté intense de tomates rôties au four avec ail et thym, qui concentre toute leur douceur.",
+    tableauVeloutetomaterotie: [
+      { nb: 1, tomate: "250 g", ail: "1", oignon: "½", bouillon: "15 cl", huileolive: "1 c.à.s", thym: "qs", cremefraiche: "1 c.à.s" },
+      { nb: 2, tomate: "500 g", ail: "2", oignon: "1", bouillon: "30 cl", huileolive: "2 c.à.s", thym: "qs", cremefraiche: "2 c.à.s" },
+      { nb: 3, tomate: "750 g", ail: "3", oignon: "1½", bouillon: "45 cl", huileolive: "3 c.à.s", thym: "qs", cremefraiche: "3 c.à.s" },
+      { nb: 4, tomate: "1000 g", ail: "4", oignon: "2", bouillon: "60 cl", huileolive: "4 c.à.s", thym: "qs", cremefraiche: "4 c.à.s" },
+      { nb: 5, tomate: "1250 g", ail: "5", oignon: "2½", bouillon: "75 cl", huileolive: "5 c.à.s", thym: "qs", cremefraiche: "5 c.à.s" },
+      { nb: 6, tomate: "1500 g", ail: "6", oignon: "3", bouillon: "90 cl", huileolive: "6 c.à.s", thym: "qs", cremefraiche: "6 c.à.s" },
+      { nb: 7, tomate: "1750 g", ail: "7", oignon: "3½", bouillon: "105 cl", huileolive: "7 c.à.s", thym: "qs", cremefraiche: "7 c.à.s" },
+      { nb: 8, tomate: "2000 g", ail: "8", oignon: "4", bouillon: "120 cl", huileolive: "8 c.à.s", thym: "qs", cremefraiche: "8 c.à.s" },
+      { nb: 9, tomate: "2250 g", ail: "9", oignon: "4½", bouillon: "135 cl", huileolive: "9 c.à.s", thym: "qs", cremefraiche: "9 c.à.s" },
+      { nb: 10, tomate: "2500 g", ail: "10", oignon: "5", bouillon: "150 cl", huileolive: "10 c.à.s", thym: "qs", cremefraiche: "10 c.à.s" },
+      { nb: 11, tomate: "2750 g", ail: "11", oignon: "5½", bouillon: "165 cl", huileolive: "11 c.à.s", thym: "qs", cremefraiche: "11 c.à.s" },
+      { nb: 12, tomate: "3000 g", ail: "12", oignon: "6", bouillon: "180 cl", huileolive: "12 c.à.s", thym: "qs", cremefraiche: "12 c.à.s" },
+      { nb: 13, tomate: "3250 g", ail: "13", oignon: "6½", bouillon: "195 cl", huileolive: "13 c.à.s", thym: "qs", cremefraiche: "13 c.à.s" },
+      { nb: 14, tomate: "3500 g", ail: "14", oignon: "7", bouillon: "210 cl", huileolive: "14 c.à.s", thym: "qs", cremefraiche: "14 c.à.s" },
+      { nb: 15, tomate: "3750 g", ail: "15", oignon: "7½", bouillon: "225 cl", huileolive: "15 c.à.s", thym: "qs", cremefraiche: "15 c.à.s" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Rôtir les tomates", detail: "Couper les tomates en deux, disposer avec ail, oignon, thym, huile et sel, rôtir au four. ASTUCE CHEF : la torréfaction caramélise les sucres des tomates, c'est tout le secret du goût.", badge: "⏱ 30 min à 200°C" },
+      { icone: "🧄", titre: "Récupérer", detail: "Presser l'ail rôti hors de sa peau, récupérer tomates et jus.", badge: null },
+      { icone: "🥣", titre: "Réunir", detail: "Mettre le tout en casserole, ajouter le bouillon.", badge: null },
+      { icone: "⏳", titre: "Frémir", detail: "Laisser frémir quelques minutes.", badge: "⏱ 5 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement, passer au tamis pour une texture soyeuse, ajouter la crème.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec du basilic frais et des croûtons.", badge: null }
+    ]
+  },
+  veloutechoufleur: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T11:51:00",
+    cat: "soupes", pays: "france",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥬",
+    description: "Un velouté tout doux de chou-fleur et pomme de terre, crémeux à souhait, relevé d'une pointe de muscade.",
+    tableauVeloutechoufleur: [
+      { nb: 1, choufleur: "180 g", pdterre: "60 g", oignon: "½", bouillon: "25 cl", lait: "5 cl", cremefraiche: "1 c.à.s", muscade: "qs" },
+      { nb: 2, choufleur: "360 g", pdterre: "120 g", oignon: "1", bouillon: "50 cl", lait: "10 cl", cremefraiche: "2 c.à.s", muscade: "qs" },
+      { nb: 3, choufleur: "540 g", pdterre: "180 g", oignon: "1½", bouillon: "75 cl", lait: "15 cl", cremefraiche: "3 c.à.s", muscade: "qs" },
+      { nb: 4, choufleur: "720 g", pdterre: "240 g", oignon: "2", bouillon: "100 cl", lait: "20 cl", cremefraiche: "4 c.à.s", muscade: "qs" },
+      { nb: 5, choufleur: "900 g", pdterre: "300 g", oignon: "2½", bouillon: "125 cl", lait: "25 cl", cremefraiche: "5 c.à.s", muscade: "qs" },
+      { nb: 6, choufleur: "1080 g", pdterre: "360 g", oignon: "3", bouillon: "150 cl", lait: "30 cl", cremefraiche: "6 c.à.s", muscade: "qs" },
+      { nb: 7, choufleur: "1260 g", pdterre: "420 g", oignon: "3½", bouillon: "175 cl", lait: "35 cl", cremefraiche: "7 c.à.s", muscade: "qs" },
+      { nb: 8, choufleur: "1440 g", pdterre: "480 g", oignon: "4", bouillon: "200 cl", lait: "40 cl", cremefraiche: "8 c.à.s", muscade: "qs" },
+      { nb: 9, choufleur: "1620 g", pdterre: "540 g", oignon: "4½", bouillon: "225 cl", lait: "45 cl", cremefraiche: "9 c.à.s", muscade: "qs" },
+      { nb: 10, choufleur: "1800 g", pdterre: "600 g", oignon: "5", bouillon: "250 cl", lait: "50 cl", cremefraiche: "10 c.à.s", muscade: "qs" },
+      { nb: 11, choufleur: "1980 g", pdterre: "660 g", oignon: "5½", bouillon: "275 cl", lait: "55 cl", cremefraiche: "11 c.à.s", muscade: "qs" },
+      { nb: 12, choufleur: "2160 g", pdterre: "720 g", oignon: "6", bouillon: "300 cl", lait: "60 cl", cremefraiche: "12 c.à.s", muscade: "qs" },
+      { nb: 13, choufleur: "2340 g", pdterre: "780 g", oignon: "6½", bouillon: "325 cl", lait: "65 cl", cremefraiche: "13 c.à.s", muscade: "qs" },
+      { nb: 14, choufleur: "2520 g", pdterre: "840 g", oignon: "7", bouillon: "350 cl", lait: "70 cl", cremefraiche: "14 c.à.s", muscade: "qs" },
+      { nb: 15, choufleur: "2700 g", pdterre: "900 g", oignon: "7½", bouillon: "375 cl", lait: "75 cl", cremefraiche: "15 c.à.s", muscade: "qs" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Préparer", detail: "Détailler le chou-fleur en bouquets, couper la pomme de terre en cubes.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire suer l'oignon dans le beurre sans coloration.", badge: null },
+      { icone: "🥔", titre: "Cuire", detail: "Ajouter chou-fleur et pomme de terre, couvrir de bouillon et de lait.", badge: "⏱ 20 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer très finement avec la crème. ASTUCE CHEF : gardez quelques petits bouquets juste poêlés pour la garniture, ça apporte du contraste.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Rectifier, ajouter une pointe de muscade.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec les bouquets dorés et de la ciboulette.", badge: null }
+    ]
+  },
 });
