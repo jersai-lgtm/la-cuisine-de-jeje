@@ -31,11 +31,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧂", titre: "Préparer la marinade", detail: "Mélanger sel, sucre, poivre blanc et aneth ciselé grossièrement.", badge: null },
-      { icone: "🐟", titre: "Enrober le saumon", detail: "Poser le filet côté peau sur un film alimentaire. Recouvrir généreusement du mélange sel-sucre-aneth. Ajouter la vodka si souhaité.", badge: null },
-      { icone: "🌯", titre: "Filmer et presser", detail: "Emballer hermétiquement dans le film. Poser un poids dessus (boîte de conserve). Placer au réfrigérateur.", badge: "⏱ 24h minimum" },
-      { icone: "🔪", titre: "Trancher et servir", detail: "Rincer le saumon sous l'eau froide et sécher. Trancher en fines lamelles à 45°. Servir avec sauce moutarde-aneth et pain de seigle. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
-    ]
+        { icone: "🧂", titre: "La marinade", detail: "Mélanger le gros sel, le sucre, le poivre blanc concassé et l'aneth ciselé.", badge: null },
+        { icone: "🐟", titre: "Préparer le filet", detail: "Vérifier l'absence d'arêtes (passer les doigts à rebrousse-poil, retirer à la pince). Poser le filet côté peau sur une grande feuille de film.", badge: null },
+        { icone: "❄️", titre: "Enrober", detail: "Recouvrir généreusement la chair du mélange sel-sucre-aneth sur toute la surface. Arroser d'un trait de vodka si vous en utilisez.", badge: null },
+        { icone: "🌯", titre: "Filmer et presser", detail: "Emballer hermétiquement, poser sur un plat et placer un poids dessus (une boîte de conserve). Mettre au frais. ASTUCE CHEF : le poids chasse l'eau et raffermit la chair pour de belles tranches.", badge: "⏱ 24h minimum" },
+        { icone: "🚿", titre: "Rincer", detail: "Rincer le saumon sous l'eau froide pour ôter l'excédent de sel, puis bien le sécher dans un linge propre.", badge: null },
+        { icone: "🔪", titre: "Trancher", detail: "Avec un couteau bien aiguisé, trancher en fines lamelles en biais (45°), en partant de la queue.", badge: null },
+        { icone: "🍽️", titre: "Servir", detail: "Dresser les tranches et accompagner d'une sauce moutarde-aneth et de pain de seigle.", badge: null }
+      ]
   },
   crevettespilpil: {
     nom: "Crevettes Pil Pil",
@@ -64,11 +67,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍯", titre: "Poêle en terre cuite", detail: "Idéalement utiliser une cazuela (poêle en terre cuite). Verser l'huile d'olive généreusement.", badge: null },
-      { icone: "🧄", titre: "Infuser ail et piment", detail: "À feu moyen, faire revenir l'ail tranché et le piment séché jusqu'à légère dorure. Ne pas brûler !", badge: "⏱ 2 min" },
-      { icone: "🦐", titre: "Sauter les crevettes", detail: "Augmenter le feu. Ajouter les crevettes. Cuire 1-2 min de chaque côté — elles cuisent très vite !", badge: "⏱ 2-3 min" },
-      { icone: "🌿", titre: "Servir immédiatement", detail: "Parsemer de persil haché. Servir bouillant dans la poêle avec pain croustillant pour saucer. Le Pil Pil c'est l'huile qui grésille !", badge: null }
-    ]
+        { icone: "🦐", titre: "Préparer les crevettes", detail: "Décortiquer les crevettes si besoin et les sécher au papier absorbant. ASTUCE CHEF : des crevettes bien sèches saisissent au lieu de bouillir dans l'huile.", badge: null },
+        { icone: "🧄", titre: "Émincer l'ail", detail: "Trancher l'ail finement et émietter le piment séché.", badge: null },
+        { icone: "🍳", titre: "Chauffer l'huile", detail: "Verser une bonne quantité d'huile d'olive dans une poêle (idéalement une cazuela en terre cuite) et la faire chauffer à feu moyen.", badge: null },
+        { icone: "🌶️", titre: "Infuser ail et piment", detail: "Faire revenir l'ail et le piment jusqu'à légère coloration, sans les brûler, pour parfumer l'huile.", badge: "⏱ 2 min" },
+        { icone: "🔥", titre: "Saisir les crevettes", detail: "Monter le feu, ajouter les crevettes et les cuire 1 à 2 min de chaque côté : elles cuisent très vite.", badge: "⏱ 2-3 min" },
+        { icone: "🌿", titre: "Servir grésillant", detail: "Parsemer de persil haché et servir aussitôt, bouillant dans la poêle, avec du pain croustillant pour saucer.", badge: null }
+      ]
   },
   terrinecampagne: {
     nom: "Terrine de Campagne",
@@ -97,12 +102,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Préparer les viandes", detail: "Hacher grossièrement le porc et les foies de volaille. Faire mariner avec cognac, thym, laurier, sel, poivre et 4 épices une nuit. ASTUCE CHEF : hacher au couteau plutôt qu'au robot pour préserver la texture.", badge: "⏱ 1 nuit marinade" },
-      { icone: "🥚", titre: "Lier l'appareil", detail: "Ajouter œufs, crème fraîche, ail et échalotes aux viandes. Bien mélanger.", badge: null },
-      { icone: "🥓", titre: "Tapisser la terrine", detail: "Tapisser le moule de bardes de lard ou de film alimentaire. Verser l'appareil. Tasser.", badge: null },
-      { icone: "🔥", titre: "Cuire au bain-marie", detail: "Couvrir d'alu. Cuire au bain-marie au four. La terrine est cuite quand elle atteint 70°C à cœur.", badge: "⏱ 1h15 à 160°C" },
-      { icone: "❄️", titre: "Repos au frigo", detail: "Laisser refroidir avec un poids dessus. Réfrigérer. Servir avec cornichons, pain de campagne et beurre.", badge: "⏱ 24h minimum" }
-    ]
+        { icone: "🥩", titre: "Mariner les viandes", detail: "Hacher grossièrement le porc et les foies de volaille. Mettre à mariner avec cognac, thym, laurier, sel, poivre et quatre-épices. ASTUCE CHEF : un hachage au couteau plutôt qu'au robot préserve la texture rustique.", badge: "⏱ 1 nuit" },
+        { icone: "🥚", titre: "Lier l'appareil", detail: "Le lendemain, ajouter les œufs, la crème, l'ail et les échalotes hachées. Bien mélanger pour une farce homogène.", badge: null },
+        { icone: "🍳", titre: "Tester l'assaisonnement", detail: "Cuire une petite boulette de farce à la poêle et la goûter, puis rectifier sel et poivre avant de cuire toute la terrine.", badge: null },
+        { icone: "🥓", titre: "Garnir le moule", detail: "Tapisser le moule de fines bardes de lard, verser la farce et bien tasser pour chasser l'air. Replier les bardes par-dessus.", badge: null },
+        { icone: "🔥", titre: "Cuire au bain-marie", detail: "Couvrir d'aluminium et cuire au bain-marie. La terrine est cuite lorsqu'elle atteint 70°C à cœur.", badge: "⏱ 1h15 à 160°C" },
+        { icone: "⚖️", titre: "Presser", detail: "Laisser tiédir puis poser un poids sur la terrine pendant qu'elle refroidit, pour une tranche bien compacte.", badge: null },
+        { icone: "❄️", titre: "Repos au frais", detail: "Réfrigérer avant de déguster, le temps que les saveurs se développent. Servir avec cornichons, pain de campagne et beurre.", badge: "⏱ 24h minimum" }
+      ]
   },
   tartareSaumon: {
     nom: "Tartare de Saumon",
@@ -131,11 +138,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Couper le saumon", detail: "Utiliser du saumon sashimi-grade. Couper en petits cubes réguliers au couteau (ne jamais hacher). ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥑", titre: "Avocat", detail: "Couper l'avocat en petits dés. Arroser immédiatement de jus de citron pour éviter l'oxydation. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌿", titre: "Assaisonner", detail: "Mélanger saumon, avocat, ciboulette, échalote, jus de citron, huile d'olive, sel et poivre. Optionnel : wasabi, sauce soja, câpres.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Former dans un emporte-pièce ou en quenelle. Servir immédiatement avec toast, blinis ou salade. Ne pas préparer plus de 2h à l'avance.", badge: null }
-    ]
+        { icone: "🐟", titre: "Couper le saumon", detail: "Avec un saumon extra-frais (qualité sashimi), tailler la chair en petits cubes réguliers au couteau. ASTUCE CHEF : on coupe, on ne hache jamais — le tartare doit garder du mâché.", badge: null },
+        { icone: "🥑", titre: "Préparer l'avocat", detail: "Couper l'avocat en petits dés et l'arroser aussitôt de jus de citron pour éviter qu'il noircisse.", badge: null },
+        { icone: "🌿", titre: "Ciseler les aromates", detail: "Ciseler finement la ciboulette et l'échalote.", badge: null },
+        { icone: "🥣", titre: "Assaisonner", detail: "Mélanger délicatement le saumon avec l'huile d'olive, le jus de citron, sel et poivre. En option : wasabi, sauce soja ou câpres.", badge: null },
+        { icone: "🥑", titre: "Incorporer l'avocat", detail: "Ajouter l'avocat et les aromates, mélanger d'un geste léger pour ne pas écraser.", badge: null },
+        { icone: "🍽️", titre: "Dresser", detail: "Mouler dans un emporte-pièce ou former une quenelle, servir aussitôt avec toasts ou blinis. À préparer au maximum 2h à l'avance.", badge: null }
+      ]
   },
   poireauVinaigrette: {
     nom: "Poireaux Vinaigrette",
@@ -164,11 +173,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Cuire les poireaux", detail: "Laver et couper les poireaux. Cuire à l'eau bouillante salée jusqu'à tendreté. Égoutter soigneusement. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 15 min" },
-      { icone: "🥚", titre: "Œufs durs", detail: "Cuire les œufs durs 10 min. Refroidir et écaler.", badge: "⏱ 10 min" },
-      { icone: "🟡", titre: "Vinaigrette moutardée", detail: "Fouetter moutarde + vinaigre. Incorporer l'huile en filet. Ajouter sel, poivre et ciboulette. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Disposer les poireaux refroidis. Napper de vinaigrette. Émietter les jaunes d'œufs en mimosa et hacher les blancs. Servir tiède ou froid. ASTUCE CHEF : hacher au couteau plutôt qu'au robot pour préserver la texture.", badge: null }
-    ]
+        { icone: "🥬", titre: "Préparer les poireaux", detail: "Retirer le vert dur, fendre les poireaux et les laver soigneusement entre les feuilles pour ôter la terre.", badge: null },
+        { icone: "💧", titre: "Cuire les poireaux", detail: "Cuire à l'eau bouillante salée jusqu'à ce qu'une lame les transperce sans résistance, puis égoutter et bien presser. ASTUCE CHEF : pressez-les pour chasser l'eau, sinon ils détrempent la vinaigrette.", badge: "⏱ 15 min" },
+        { icone: "🥚", titre: "Œufs durs", detail: "Cuire les œufs durs, les refroidir dans l'eau froide et les écaler.", badge: "⏱ 10 min" },
+        { icone: "🟡", titre: "La vinaigrette", detail: "Fouetter la moutarde et le vinaigre, monter à l'huile en filet, saler, poivrer et ajouter la ciboulette.", badge: null },
+        { icone: "🍽️", titre: "Dresser", detail: "Disposer les poireaux tièdes ou froids dans le plat et les napper de vinaigrette.", badge: null },
+        { icone: "🌼", titre: "Façon mimosa", detail: "Séparer jaunes et blancs des œufs : émietter les jaunes au tamis (effet mimosa), hacher les blancs, parsemer sur les poireaux.", badge: null }
+      ]
   },
   gazpachoMelon: {
     nom: "Gaspacho de Melon",
@@ -197,10 +208,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍈", titre: "Mixer le melon", detail: "Éplucher et mixer le melon avec jus de citron, sel, poivre et quelques feuilles de menthe.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Réfrigérer au moins 1h. La soupe doit être très froide.", badge: "⏱ 1h frigo" },
-      { icone: "🍖", titre: "Servir", detail: "Verser dans les assiettes ou verres. Déposer le jambon de Parme en chips (rôti 5 min au four). Huile d'olive et menthe fraîche.", badge: null }
-    ]
+        { icone: "🍈", titre: "Préparer le melon", detail: "Choisir un melon bien mûr et parfumé, l'éplucher, l'épépiner et le couper en morceaux.", badge: null },
+        { icone: "🌀", titre: "Mixer", detail: "Mixer le melon avec un trait de jus de citron, sel, poivre et quelques feuilles de menthe jusqu'à une texture lisse.", badge: null },
+        { icone: "🧂", titre: "Ajuster", detail: "Goûter et rectifier : une pointe de sel relève le sucré du melon. ASTUCE CHEF : un melon très mûr peut se passer de sucre, fiez-vous à votre palais.", badge: null },
+        { icone: "❄️", titre: "Réfrigérer", detail: "Placer au frais : le gaspacho doit être servi très froid.", badge: "⏱ 1h minimum" },
+        { icone: "🍖", titre: "Chips de jambon", detail: "Étaler les tranches de jambon de Parme sur une plaque et les passer au four jusqu'à ce qu'elles deviennent croustillantes.", badge: "⏱ 5 min" },
+        { icone: "🍽️", titre: "Servir", detail: "Verser le gaspacho glacé dans des verres ou assiettes, déposer les chips de jambon, un filet d'huile d'olive et une feuille de menthe.", badge: null }
+      ]
   },
   calamarsRomaine: {
     nom: "Calamars à la Romaine",
@@ -229,11 +243,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🦑", titre: "Préparer les calamars", detail: "Couper les encornets en anneaux de 1cm. Sécher soigneusement avec du papier absorbant. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌾", titre: "Fariner", detail: "Assaisonner la farine de sel, poivre et paprika. Enrober les anneaux. Secouer l'excès. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
-      { icone: "🔥", titre: "Frire", detail: "Frire en petites quantités dans huile à 180°C jusqu'à dorure et croustillant. Température idéale 170-180°C. Test : cube de pain dore en 30s.", badge: "⏱ 2-3 min" },
-      { icone: "🧄", titre: "Aïoli et service", detail: "Égoutter sur papier absorbant. Servir immédiatement avec aïoli, persil haché et quartiers de citron.", badge: null }
-    ]
+        { icone: "🦑", titre: "Préparer les calamars", detail: "Couper les encornets en anneaux d'environ 1 cm et les sécher soigneusement au papier absorbant. ASTUCE CHEF : bien secs, ils ne font pas éclater l'huile et restent croustillants.", badge: null },
+        { icone: "🌾", titre: "La farine assaisonnée", detail: "Mélanger la farine avec sel, poivre et paprika.", badge: null },
+        { icone: "🐙", titre: "Fariner", detail: "Enrober les anneaux de farine et secouer pour ôter l'excédent.", badge: null },
+        { icone: "🌡️", titre: "Chauffer l'huile", detail: "Faire chauffer l'huile de friture à 170-180°C — un cube de pain doit y dorer en 30 secondes.", badge: null },
+        { icone: "🔥", titre: "Frire", detail: "Plonger les calamars par petites quantités et frire jusqu'à ce qu'ils soient dorés et croustillants. Égoutter sur papier absorbant.", badge: "⏱ 2-3 min" },
+        { icone: "🧄", titre: "Servir", detail: "Servir aussitôt avec une sauce aïoli, du persil haché et des quartiers de citron.", badge: null }
+      ]
   },
   saladecaprese: {
     nom: "Salade Caprese",
@@ -262,10 +278,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Trancher", detail: "Couper les tomates et la mozzarella en tranches de même épaisseur. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🏗️", titre: "Dresser", detail: "Alterner une tranche de tomate, une de mozzarella. Disposer en rosace ou en ligne.", badge: null },
-      { icone: "🌿", titre: "Assaisonner", detail: "Déposer les feuilles de basilic. Arroser généreusement d'huile d'olive. Sel, poivre. Optionnel : vinaigre balsamique.", badge: null }
-    ]
+        { icone: "🍅", titre: "Choisir les tomates", detail: "Utiliser des tomates mûres et parfumées, à température ambiante. ASTUCE CHEF : jamais de tomate sortie du frigo, le froid tue son goût.", badge: null },
+        { icone: "🔪", titre: "Trancher", detail: "Couper les tomates et la mozzarella di bufala en tranches de même épaisseur.", badge: null },
+        { icone: "💧", titre: "Égoutter la mozzarella", detail: "Poser les tranches de mozzarella quelques instants sur du papier absorbant pour retirer l'excès de petit-lait.", badge: null },
+        { icone: "🏗️", titre: "Dresser", detail: "Alterner tranches de tomate et de mozzarella, en rosace ou en ligne.", badge: null },
+        { icone: "🌿", titre: "Le basilic", detail: "Glisser des feuilles de basilic frais entre les tranches.", badge: null },
+        { icone: "🫒", titre: "Assaisonner", detail: "Arroser généreusement d'huile d'olive, saler, poivrer. En option, un trait de balsamique. Servir aussitôt.", badge: null }
+      ]
   },
   gaspacho: {
     nom: "Gaspacho",
@@ -294,11 +313,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Préparer les légumes", detail: "Laver les tomates et les couper en quartiers. Éplucher et épépiner le concombre. Épépiner le poivron rouge. Faire tremper le pain rassis dans l'eau 5 min, essorer. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer ensemble tomates, concombre, poivron, pain, ail et un filet d'huile d'olive jusqu'à obtenir une soupe lisse.", badge: "⏱ 2 min mixer" },
-      { icone: "🧂", titre: "Assaisonner", detail: "Ajouter vinaigre de Xérès (ou de vin), sel, poivre. Mixer encore. Goûter et ajuster l'assaisonnement.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Placer au réfrigérateur jusqu'à ce que le gaspacho soit bien froid. Servir avec une garniture de dés de légumes et un filet d'huile d'olive.", badge: "⏱ 2h minimum" }
-    ]
+        { icone: "🍅", titre: "Préparer les légumes", detail: "Couper les tomates en quartiers, éplucher et épépiner le concombre, épépiner le poivron rouge.", badge: null },
+        { icone: "🍞", titre: "Tremper le pain", detail: "Faire tremper le pain rassis dans un peu d'eau, puis l'essorer.", badge: null },
+        { icone: "🌀", titre: "Mixer", detail: "Mixer tomates, concombre, poivron, pain, ail et un filet d'huile d'olive jusqu'à une soupe parfaitement lisse.", badge: "⏱ 2 min" },
+        { icone: "🧂", titre: "Assaisonner", detail: "Ajouter le vinaigre de Xérès, sel et poivre, mixer encore, goûter et ajuster. ASTUCE CHEF : pour une texture veloutée, passez au chinois après le mixage.", badge: null },
+        { icone: "❄️", titre: "Réfrigérer", detail: "Placer au frais jusqu'à ce que le gaspacho soit bien glacé.", badge: "⏱ 2h minimum" },
+        { icone: "🥗", titre: "Servir", detail: "Servir frais avec une garniture de petits dés de légumes et un filet d'huile d'olive.", badge: null }
+      ]
   },
   burratapeche: {
     nom: "Burrata Pêche-Basilic",
@@ -327,12 +348,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌰", titre: "Toaster les pignons", detail: "Faire dorer les pignons à sec dans une poêle 2 min. Réserver. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 2 min" },
-      { icone: "🍑", titre: "Couper les pêches", detail: "Couper les pêches jaunes bien mûres en quartiers. Optionnel : les saisir 1 min à la poêle pour intensifier les arômes. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🧀", titre: "Dresser", detail: "Disposer la burrata bien fraîche entière au centre des assiettes. Disposer les quartiers de pêche autour. Ajouter le prosciutto en fines tranches.", badge: null },
-      { icone: "🌿", titre: "Finition", detail: "Parsemer de feuilles de basilic frais, pignons toastés. Arroser d'huile d'olive première pression et de balsamique réduit.", badge: null },
-      { icone: "🧂", titre: "Servir", detail: "Saler à la fleur de sel, poivre du moulin. À déguster immédiatement.", badge: null }
-    ]
+        { icone: "🌰", titre: "Toaster les pignons", detail: "Faire dorer les pignons à sec dans une poêle, en surveillant pour ne pas les brûler. Réserver.", badge: "⏱ 2 min" },
+        { icone: "🍑", titre: "Préparer les pêches", detail: "Couper les pêches jaunes bien mûres en quartiers. En option, les saisir 1 min à la poêle pour intensifier leurs arômes.", badge: null },
+        { icone: "🧀", titre: "Dresser la burrata", detail: "Déposer la burrata bien fraîche entière au centre de chaque assiette. ASTUCE CHEF : sortez-la 10 min avant pour qu'elle livre tout son crémeux à cœur.", badge: null },
+        { icone: "🍑", titre: "Disposer les pêches", detail: "Répartir les quartiers de pêche autour de la burrata et ajouter de fines tranches de prosciutto.", badge: null },
+        { icone: "🌿", titre: "Finition", detail: "Parsemer de basilic frais et de pignons toastés, arroser d'huile d'olive et de quelques gouttes de balsamique réduit.", badge: null },
+        { icone: "🧂", titre: "Servir", detail: "Saler à la fleur de sel, donner un tour de moulin à poivre et déguster aussitôt.", badge: null }
+      ]
   },
   vitellotonnato: {
     nom: "Vitello Tonnato",
@@ -361,12 +383,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Cuire le veau", detail: "Pocher la noix de veau dans un bouillon parfumé (oignon, carotte, laurier, vin blanc) 30 min à frémissement. Refroidir dans le bouillon.", badge: "⏱ 30 min" },
-      { icone: "🐟", titre: "Sauce tonnato", detail: "Mixer le thon à l'huile, anchois, câpres, jus de citron, mayonnaise. La sauce doit être lisse et soyeuse.", badge: null },
-      { icone: "🔪", titre: "Trancher", detail: "Trancher le veau froid en très fines lamelles à l'aide d'un trancheur ou couteau bien affûté. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Disposer les tranches en éventail sur assiette froide. Napper généreusement de sauce tonnato.", badge: null },
-      { icone: "🌿", titre: "Finition", detail: "Garnir de câpres entières, anchois en filet, persil, fines lamelles de cornichons.", badge: null }
-    ]
+        { icone: "🥩", titre: "Pocher le veau", detail: "Pocher la noix de veau dans un bouillon parfumé (oignon, carotte, laurier, vin blanc) à frémissement.", badge: "⏱ 30 min" },
+        { icone: "❄️", titre: "Refroidir dans le bouillon", detail: "Laisser le veau refroidir complètement dans son bouillon pour qu'il reste moelleux. ASTUCE CHEF : refroidi dans son jus, il se tranche bien plus finement.", badge: null },
+        { icone: "🐟", titre: "La sauce tonnato", detail: "Mixer le thon à l'huile, les anchois, les câpres, le jus de citron et la mayonnaise jusqu'à une sauce lisse et soyeuse.", badge: null },
+        { icone: "🔪", titre: "Trancher le veau", detail: "Trancher le veau froid en lamelles très fines, au trancheur ou au couteau bien affûté.", badge: null },
+        { icone: "🍽️", titre: "Dresser", detail: "Disposer les tranches en éventail sur une assiette froide.", badge: null },
+        { icone: "🥄", titre: "Napper", detail: "Napper généreusement de sauce tonnato pour couvrir le veau.", badge: null },
+        { icone: "🌿", titre: "Finition", detail: "Garnir de câpres, de filets d'anchois, de persil et de fines lamelles de cornichon.", badge: null }
+      ]
   },
   cevicheperou: {
     nom: "Ceviche Péruvien",
@@ -395,12 +419,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍠", titre: "Patate douce", detail: "Cuire la patate douce en cubes 15 min à l'eau. Réserver.", badge: "⏱ 15 min" },
-      { icone: "🐟", titre: "Préparer le poisson", detail: "Couper en dés réguliers du poisson blanc très frais (bar, daurade ou cabillaud). Saler généreusement. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍋", titre: "Leche de tigre", detail: "Mélanger jus de citron vert, gingembre râpé, ail, piment, coriandre, glaçons (2 min pour refroidir). Filtrer.", badge: null },
-      { icone: "⏰", titre: "\"Cuisson\" express", detail: "Verser le leche de tigre sur le poisson. Mélanger 3 min seulement (pas plus !). Le poisson doit rester translucide à cœur.", badge: "⏱ 3 min" },
-      { icone: "🌽", titre: "Dresser", detail: "Servir immédiatement avec oignon rouge émincé très fin, maïs grillé, patate douce, coriandre.", badge: null }
-    ]
+        { icone: "🍠", titre: "Patate douce", detail: "Cuire la patate douce en cubes à l'eau jusqu'à tendreté, puis réserver.", badge: "⏱ 15 min" },
+        { icone: "🐟", titre: "Préparer le poisson", detail: "Tailler un poisson blanc très frais (bar, daurade, cabillaud) en dés réguliers. ASTUCE CHEF : le poisson doit être d'une fraîcheur irréprochable, c'est non négociable pour un cru.", badge: null },
+        { icone: "🧂", titre: "Saler", detail: "Saler le poisson et le réserver au frais le temps de préparer le reste.", badge: null },
+        { icone: "🍋", titre: "Leche de tigre", detail: "Mélanger jus de citron vert, gingembre râpé, ail, piment et coriandre avec quelques glaçons pour bien refroidir, puis filtrer.", badge: null },
+        { icone: "⏰", titre: "Cuisson au citron", detail: "Verser le leche de tigre sur le poisson et mélanger 3 min seulement : la chair doit rester translucide à cœur.", badge: "⏱ 3 min" },
+        { icone: "🧅", titre: "Oignon rouge", detail: "Émincer l'oignon rouge très finement et l'ajouter au dernier moment.", badge: null },
+        { icone: "🌽", titre: "Dresser", detail: "Servir aussitôt avec le maïs grillé, la patate douce et de la coriandre fraîche.", badge: null }
+      ]
   },
   dolma: {
     nom: "Dolmas",
@@ -429,12 +455,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Préparer feuilles", detail: "Si feuilles fraîches : blanchir 2 min. Si en saumure : rincer à grande eau et égoutter. ASTUCE PRO : eau bouillante salée 2-3 min puis eau glacée. Arrête la cuisson et garde la couleur vive.", badge: null },
-      { icone: "🍚", titre: "Farce", detail: "Faire revenir oignon, ajouter riz, herbes (menthe, aneth, persil), pignons toastés, jus de citron, huile d'olive. Refroidir.", badge: "⏱ 10 min" },
-      { icone: "🖐️", titre: "Rouler", detail: "Disposer une feuille à plat, déposer 1 cc de farce, replier les côtés et rouler serré (comme nem). Patience zen.", badge: "⏱ 25 min" },
-      { icone: "🍋", titre: "Cuire", detail: "Disposer les dolmas serrés dans une casserole. Couvrir d'eau et jus de citron. Poser une assiette dessus pour maintenir. Cuire 45 min à feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 45 min" },
-      { icone: "❄️", titre: "Servir froid", detail: "Laisser refroidir dans le bouillon. Servir froid avec yaourt grec à l'ail et menthe.", badge: null }
-    ]
+        { icone: "🌿", titre: "Préparer les feuilles", detail: "Feuilles fraîches : blanchir 2 min puis refroidir. Feuilles en saumure : rincer à grande eau et égoutter.", badge: null },
+        { icone: "🧅", titre: "Base de la farce", detail: "Faire revenir l'oignon émincé dans l'huile d'olive jusqu'à ce qu'il soit fondant.", badge: null },
+        { icone: "🍚", titre: "Compléter la farce", detail: "Ajouter le riz, les herbes (menthe, aneth, persil), les pignons toastés et le jus de citron, puis laisser refroidir.", badge: "⏱ 10 min" },
+        { icone: "🖐️", titre: "Rouler", detail: "Poser une feuille à plat, déposer une cuillère de farce, replier les côtés et rouler bien serré, comme un nem. ASTUCE CHEF : ne pas trop garnir, le riz gonfle à la cuisson.", badge: "⏱ 25 min" },
+        { icone: "🥘", titre: "Ranger", detail: "Tasser les dolmas serrés au fond d'une casserole pour qu'ils ne se déroulent pas.", badge: null },
+        { icone: "🍋", titre: "Cuire", detail: "Couvrir d'eau et de jus de citron, poser une assiette dessus pour les maintenir et cuire à feu doux.", badge: "⏱ 45 min" },
+        { icone: "❄️", titre: "Servir frais", detail: "Laisser refroidir dans le bouillon, puis servir froid avec un yaourt grec à l'ail et à la menthe.", badge: null }
+      ]
   },
   spanakopita: {
     nom: "Spanakopita Grecque",
@@ -618,11 +646,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Cuire dur", detail: "Œufs 9 min à l'eau bouillante. ASTUCE : un filet de vinaigre dans l'eau facilite l'écalage.", badge: "⏱ 12 min" },
-      { icone: "❄️", titre: "Refroidir", detail: "SECRET : eau glacée dès la sortie — stoppe la cuisson, évite le cerne vert, écalage net.", badge: "⏱ 3 min" },
-      { icone: "🥄", titre: "Mayonnaise", detail: "Monter une mayo maison (jaune + moutarde + huile en filet). ASTUCE CHEF : ingrédients à température ambiante pour qu'elle prenne.", badge: "⏱ 5 min" },
-      { icone: "🍽️", titre: "Dresser", detail: "Œufs coupés en deux sur un lit de salade, napper généreusement de mayo. Ciboulette, poivre.", badge: null }
-    ]
+        { icone: "🥚", titre: "Cuire les œufs", detail: "Cuire les œufs durs à l'eau bouillante. ASTUCE CHEF : un filet de vinaigre dans l'eau facilite l'écalage.", badge: "⏱ 9 min" },
+        { icone: "❄️", titre: "Refroidir", detail: "Plonger aussitôt dans l'eau glacée : la cuisson s'arrête, le cerne vert est évité et l'écalage devient net.", badge: "⏱ 3 min" },
+        { icone: "🥄", titre: "La mayonnaise", detail: "Monter une mayonnaise maison : jaune d'œuf et moutarde, puis l'huile en filet en fouettant. Ingrédients à température ambiante pour qu'elle prenne.", badge: "⏱ 5 min" },
+        { icone: "🧂", titre: "Relever", detail: "Saler, poivrer et relever la mayonnaise selon le goût : une pointe de moutarde en plus ou un trait de citron.", badge: null },
+        { icone: "🔪", titre: "Dresser les œufs", detail: "Écaler les œufs, les couper en deux et les disposer sur un lit de salade.", badge: null },
+        { icone: "🌿", titre: "Finir", detail: "Napper généreusement de mayonnaise, parsemer de ciboulette et donner un tour de poivre.", badge: null }
+      ]
   },
   melonjambon: {
     nom: "Melon & jambon cru",
@@ -651,11 +681,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍈", titre: "Choisir", detail: "CLÉ : un melon BIEN MÛR (parfumé au pédoncule, lourd en main). C'est lui la star.", badge: "⏱ 2 min" },
-      { icone: "🔪", titre: "Couper", detail: "Couper le melon en deux, épépiner, détailler en quartiers et retirer l'écorce.", badge: "⏱ 4 min" },
-      { icone: "🍖", titre: "Jambon", detail: "Draper des tranches FINES de jambon cru (Parme ou Serrano) sur le melon.", badge: "⏱ 2 min" },
-      { icone: "🌿", titre: "Finir", detail: "ASTUCE CHEF : un tour de poivre + un trait d'huile d'olive réveillent le contraste. Menthe fraîche.", badge: null }
-    ]
+        { icone: "🍈", titre: "Choisir le melon", detail: "Choisir un melon bien mûr : parfumé au pédoncule et lourd en main. ASTUCE CHEF : c'est lui la vedette, tout repose sur sa maturité.", badge: null },
+        { icone: "🔪", titre: "Couper", detail: "Couper le melon en deux, l'épépiner et le détailler en quartiers.", badge: null },
+        { icone: "🍈", titre: "Retirer l'écorce", detail: "Passer la lame entre la chair et l'écorce pour lever des quartiers nets.", badge: null },
+        { icone: "🍽️", titre: "Dresser", detail: "Disposer les quartiers de melon sur les assiettes.", badge: null },
+        { icone: "🍖", titre: "Le jambon", detail: "Draper des tranches fines de jambon cru (Parme ou Serrano) sur le melon.", badge: null },
+        { icone: "🌿", titre: "Finir", detail: "Donner un tour de poivre, ajouter un filet d'huile d'olive et quelques feuilles de menthe pour réveiller le contraste.", badge: null }
+      ]
   },
   feuilletechevremiel: {
     nom: "Feuilletés chèvre-miel",
@@ -1051,6 +1083,79 @@ oeufmayo: {
       { icone: "🍋", titre: "Citron", detail: "Arroser d'un trait de jus de citron.", badge: null },
       { icone: "🍯", titre: "Finir", detail: "Napper d'un filet de miel et parsemer de menthe ciselée.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, tant que le halloumi est chaud et moelleux. ASTUCE CHEF : ne salez jamais le halloumi, il l'est déjà beaucoup ; miel et citron suffisent à l'équilibrer.", badge: null }
+    ]
+  },
+  carpacciobetterave: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T13:00:00",
+    cat: "entrees", pays: "france",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍠",
+    description: "Fines tranches de betterave, chèvre frais, noisettes torréfiées et roquette, relevées d'une vinaigrette au miel et au citron.",
+    tableauCarpacciobetterave: [
+      { nb: 1, betterave: "½", chevrefrais: "30 g", noisettes: "15 g", citron: "¼", huileolive: "1 c.à.s", miel: "½ c.à.c", roquette: "qs" },
+      { nb: 2, betterave: "1", chevrefrais: "60 g", noisettes: "30 g", citron: "½", huileolive: "2 c.à.s", miel: "1 c.à.c", roquette: "qs" },
+      { nb: 3, betterave: "1½", chevrefrais: "90 g", noisettes: "45 g", citron: "¾", huileolive: "3 c.à.s", miel: "1½ c.à.c", roquette: "qs" },
+      { nb: 4, betterave: "2", chevrefrais: "120 g", noisettes: "60 g", citron: "1", huileolive: "4 c.à.s", miel: "2 c.à.c", roquette: "qs" },
+      { nb: 5, betterave: "2½", chevrefrais: "150 g", noisettes: "75 g", citron: "1¼", huileolive: "5 c.à.s", miel: "2½ c.à.c", roquette: "qs" },
+      { nb: 6, betterave: "3", chevrefrais: "180 g", noisettes: "90 g", citron: "1½", huileolive: "6 c.à.s", miel: "3 c.à.c", roquette: "qs" },
+      { nb: 7, betterave: "3½", chevrefrais: "210 g", noisettes: "105 g", citron: "1¾", huileolive: "7 c.à.s", miel: "3½ c.à.c", roquette: "qs" },
+      { nb: 8, betterave: "4", chevrefrais: "240 g", noisettes: "120 g", citron: "2", huileolive: "8 c.à.s", miel: "4 c.à.c", roquette: "qs" },
+      { nb: 9, betterave: "4½", chevrefrais: "270 g", noisettes: "135 g", citron: "2¼", huileolive: "9 c.à.s", miel: "4½ c.à.c", roquette: "qs" },
+      { nb: 10, betterave: "5", chevrefrais: "300 g", noisettes: "150 g", citron: "2½", huileolive: "10 c.à.s", miel: "5 c.à.c", roquette: "qs" },
+      { nb: 11, betterave: "5½", chevrefrais: "330 g", noisettes: "165 g", citron: "2¾", huileolive: "11 c.à.s", miel: "5½ c.à.c", roquette: "qs" },
+      { nb: 12, betterave: "6", chevrefrais: "360 g", noisettes: "180 g", citron: "3", huileolive: "12 c.à.s", miel: "6 c.à.c", roquette: "qs" },
+      { nb: 13, betterave: "6½", chevrefrais: "390 g", noisettes: "195 g", citron: "3¼", huileolive: "13 c.à.s", miel: "6½ c.à.c", roquette: "qs" },
+      { nb: 14, betterave: "7", chevrefrais: "420 g", noisettes: "210 g", citron: "3½", huileolive: "14 c.à.s", miel: "7 c.à.c", roquette: "qs" },
+      { nb: 15, betterave: "7½", chevrefrais: "450 g", noisettes: "225 g", citron: "3¾", huileolive: "15 c.à.s", miel: "7½ c.à.c", roquette: "qs" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "Trancher la betterave", detail: "Éplucher la betterave (cuite ou crue) et la trancher très finement à la mandoline. ASTUCE CHEF : portez des gants, la betterave tache, et la mandoline donne des tranches régulières et translucides.", badge: null },
+      { icone: "🥣", titre: "Vinaigrette", detail: "Mélanger huile d'olive, jus de citron, miel, sel et poivre.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposer les tranches en rosace sur l'assiette.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Parsemer de chèvre frais émietté et de roquette.", badge: null },
+      { icone: "🌰", titre: "Noisettes", detail: "Concasser les noisettes torréfiées et les répartir dessus.", badge: null },
+      { icone: "💧", titre: "Assaisonner", detail: "Napper de vinaigrette juste avant de servir.", badge: null }
+    ]
+  },
+  rouleauxprintemps: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T12:59:00",
+    cat: "entrees", pays: "vietnam",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥬",
+    description: "Galettes de riz garnies de crevettes, vermicelles, crudités et herbes fraîches, roulées à froid et servies avec une sauce cacahuète.",
+    tableauRouleauxprintemps: [
+      { nb: 1, galetteriz: "3", crevettes: "4", vermicelles: "30 g", carotte: "½", concombre: "40 g", saucecacahuete: "2 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 2, galetteriz: "6", crevettes: "8", vermicelles: "60 g", carotte: "1", concombre: "80 g", saucecacahuete: "4 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 3, galetteriz: "9", crevettes: "12", vermicelles: "90 g", carotte: "1½", concombre: "120 g", saucecacahuete: "6 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 4, galetteriz: "12", crevettes: "16", vermicelles: "120 g", carotte: "2", concombre: "160 g", saucecacahuete: "8 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 5, galetteriz: "15", crevettes: "20", vermicelles: "150 g", carotte: "2½", concombre: "200 g", saucecacahuete: "10 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 6, galetteriz: "18", crevettes: "24", vermicelles: "180 g", carotte: "3", concombre: "240 g", saucecacahuete: "12 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 7, galetteriz: "21", crevettes: "28", vermicelles: "210 g", carotte: "3½", concombre: "280 g", saucecacahuete: "14 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 8, galetteriz: "24", crevettes: "32", vermicelles: "240 g", carotte: "4", concombre: "320 g", saucecacahuete: "16 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 9, galetteriz: "27", crevettes: "36", vermicelles: "270 g", carotte: "4½", concombre: "360 g", saucecacahuete: "18 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 10, galetteriz: "30", crevettes: "40", vermicelles: "300 g", carotte: "5", concombre: "400 g", saucecacahuete: "20 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 11, galetteriz: "33", crevettes: "44", vermicelles: "330 g", carotte: "5½", concombre: "440 g", saucecacahuete: "22 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 12, galetteriz: "36", crevettes: "48", vermicelles: "360 g", carotte: "6", concombre: "480 g", saucecacahuete: "24 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 13, galetteriz: "39", crevettes: "52", vermicelles: "390 g", carotte: "6½", concombre: "520 g", saucecacahuete: "26 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 14, galetteriz: "42", crevettes: "56", vermicelles: "420 g", carotte: "7", concombre: "560 g", saucecacahuete: "28 c.à.s", menthe: "qs", salade: "qs" },
+      { nb: 15, galetteriz: "45", crevettes: "60", vermicelles: "450 g", carotte: "7½", concombre: "600 g", saucecacahuete: "30 c.à.s", menthe: "qs", salade: "qs" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍜", titre: "Vermicelles", detail: "Réhydrater les vermicelles de riz à l'eau chaude, égoutter.", badge: null },
+      { icone: "🔪", titre: "Crudités", detail: "Tailler carotte et concombre en fins bâtonnets, laver les herbes.", badge: null },
+      { icone: "🍤", titre: "Crevettes", detail: "Couper les crevettes cuites en deux dans la longueur.", badge: null },
+      { icone: "💧", titre: "Tremper la galette", detail: "Tremper une galette de riz dans l'eau tiède quelques secondes jusqu'à souplesse. ASTUCE CHEF : ne trempez pas trop la galette, elle continue de ramollir à l'air et doit rester un peu ferme au montage.", badge: null },
+      { icone: "🥬", titre: "Garnir", detail: "Déposer salade, vermicelles, crudités et herbes au centre.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Replier les côtés et rouler bien serré, crevettes côté visible.", badge: null },
+      { icone: "🥜", titre: "Servir", detail: "Servir frais avec la sauce cacahuète.", badge: null }
     ]
   },
 });
