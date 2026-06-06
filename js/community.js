@@ -466,11 +466,22 @@ window.ouvrirPhotoPleinEcran = function (id) {
   var arr = window._photosFiche || [];
   var p = arr.filter(function (x) { return x.id === id; })[0];
   if (!p) return;
+  // Retirer une éventuelle visionneuse déjà ouverte
+  var anc = document.getElementById("photo-plein-ecran");
+  if (anc) anc.remove();
   var ov = document.createElement("div");
+  ov.id = "photo-plein-ecran";
   ov.setAttribute("style", "position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;padding:16px");
-  ov.onclick = function () { ov.remove(); };
+  ov.onclick = function () { window.fermerPhotoPleinEcran(); };
   ov.innerHTML = '<img src="' + p.url + '" alt="" style="max-width:100%;max-height:100%;border-radius:12px">';
   document.body.appendChild(ov);
+  // Intercepter le bouton retour Android : le 1er retour ferme la photo au lieu de naviguer
+  if (typeof window._backGuardPush === "function") window._backGuardPush();
+};
+
+window.fermerPhotoPleinEcran = function () {
+  var el = document.getElementById("photo-plein-ecran");
+  if (el) el.remove();
 };
 
 // --------- Modération photos (admin) ---------

@@ -3208,6 +3208,7 @@ const _MODALS_SURVEILLEES = [
   { id: "modal-profil",      close: () => typeof fermerModalProfil === "function" && fermerModalProfil() },
   { id: "modal-onboarding",  close: () => typeof fermerOnboarding === "function" && fermerOnboarding() },
   { id: "ma-modal",          close: () => typeof fermerAjoutMenu === "function" && fermerAjoutMenu() },
+  { id: "photo-plein-ecran", close: () => typeof fermerPhotoPleinEcran === "function" && fermerPhotoPleinEcran() },
 ];
 
 // Vérifie si un élément est actuellement visible (modal ouverte)
