@@ -82,11 +82,13 @@ Object.assign(recettes, {
       "Lait (cl)": 7,
     },
     etapes: [
-      { icone: "🥣", titre: "Base de la pâte", detail: "Mettre la farine dans un saladier, y ajouter le sucre, les jaunes d'œufs et le beurre ramolli.", badge: null },
-      { icone: "🥛", titre: "Délayer avec le lait", detail: "Ajouter le lait peu à peu en mélangeant pour éviter les grumeaux. La pâte doit être lisse et homogène.", badge: null },
-      { icone: "🌨️", titre: "Blancs en neige", detail: "Battre les blancs en neige avec une pincée de sel. Les incorporer délicatement à la pâte en soulevant pour ne pas les casser. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🧇", titre: "Cuire au gaufrier", detail: "Cuire dans un gaufrier légèrement beurré jusqu'à ce que les gaufres soient bien dorées et croustillantes.", badge: "⏱ Cuisson : 3–5 min" }
-    ]
+        { icone: "🥣", titre: "Base de la pâte", detail: "Verser la farine dans un saladier, ajouter le sucre, les jaunes d'œufs et le beurre ramolli.", badge: null },
+        { icone: "🥛", titre: "Délayer", detail: "Incorporer le lait peu à peu en mélangeant pour éviter les grumeaux, jusqu'à une pâte lisse et homogène.", badge: null },
+        { icone: "🌨️", titre: "Blancs en neige", detail: "Monter les blancs en neige avec une pincée de sel. ASTUCE CHEF : incorporez-les en soulevant délicatement à la maryse pour garder une pâte aérée.", badge: null },
+        { icone: "⏳", titre: "Repos", detail: "Laisser reposer la pâte quelques minutes pour qu'elle se détende.", badge: null },
+        { icone: "🧇", titre: "Cuire", detail: "Cuire dans un gaufrier légèrement beurré jusqu'à ce que les gaufres soient dorées et croustillantes.", badge: "⏱ 3-5 min" },
+        { icone: "🍓", titre: "Servir", detail: "Servir tièdes, saupoudrées de sucre glace, avec des fruits ou de la pâte à tartiner.", badge: null }
+      ]
   },
   shakshuka: {
     nom: "Shakshuka",
@@ -115,12 +117,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire revenir les légumes", detail: "Dans une grande poêle, faire revenir l'oignon émincé et le poivron en dés dans l'huile d'olive jusqu'à tendreté.", badge: "⏱ 7 min" },
-      { icone: "🌶️", titre: "Ajouter les épices", detail: "Ajouter cumin, paprika fumé, curcuma et harissa selon goût. Faire revenir 1 min pour torréfier les épices.", badge: null },
-      { icone: "🍅", titre: "Ajouter les tomates", detail: "Verser les tomates concassées. Saler, poivrer et laisser mijoter à feu moyen jusqu'à réduction. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 10 min" },
-      { icone: "🥚", titre: "Pocher les œufs", detail: "Faire des petits puits dans la sauce avec une cuillère. Y casser les œufs délicatement. Couvrir et laisser cuire selon préférence.", badge: "⏱ 5 min (mollet)" },
-      { icone: "🌿", titre: "Servir", detail: "Parsemer de feta émiettée, persil et coriandre. Servir directement dans la poêle avec pain pita ou pain de campagne.", badge: null }
-    ]
+        { icone: "🧅", titre: "Légumes", detail: "Faire revenir l'oignon émincé et le poivron en dés dans l'huile d'olive jusqu'à tendreté.", badge: "⏱ 7 min" },
+        { icone: "🧄", titre: "Ail", detail: "Ajouter l'ail et laisser revenir quelques secondes.", badge: null },
+        { icone: "🌶️", titre: "Épices", detail: "Ajouter cumin, paprika fumé, curcuma et harissa, et torréfier 1 min.", badge: null },
+        { icone: "🍅", titre: "Tomates", detail: "Verser les tomates concassées, saler, poivrer et laisser mijoter jusqu'à réduction. ASTUCE CHEF : couvercle entrouvert, la sauce doit épaissir avant d'accueillir les œufs.", badge: "⏱ 10 min" },
+        { icone: "🥚", titre: "Pocher les œufs", detail: "Creuser des puits dans la sauce et y casser les œufs délicatement. Couvrir et cuire.", badge: "⏱ 5 min (mollet)" },
+        { icone: "🧀", titre: "Garnir", detail: "Parsemer de feta émiettée, persil et coriandre.", badge: null },
+        { icone: "🍞", titre: "Servir", detail: "Servir directement dans la poêle avec du pain pita ou de campagne.", badge: null }
+      ]
   },
   shakshukaverte: {
     nom: "Shakshuka Verte",
@@ -149,11 +153,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire revenir", detail: "Faire revenir oignon et poivron vert dans l'huile d'olive 5 min. Ajouter ail, cumin et piment.", badge: null },
-      { icone: "🥬", titre: "Ajouter les épinards", detail: "Ajouter les épinards frais, coriandre et persil. Cuire jusqu'à ce qu'ils réduisent. Assaisonner. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Pocher les œufs", detail: "Faire des puits dans la sauce verte. Casser les œufs délicatement. Couvrir et cuire selon la préférence.", badge: "⏱ 5 min (mollet)" },
-      { icone: "🧀", titre: "Servir", detail: "Parsemer de feta émiettée, herbes fraîches et graines de sésame. Servir avec pain pita.", badge: null }
-    ]
+        { icone: "🧅", titre: "Légumes", detail: "Faire revenir l'oignon et le poivron vert dans l'huile d'olive.", badge: "⏱ 5 min" },
+        { icone: "🌶️", titre: "Aromates", detail: "Ajouter l'ail, le cumin et le piment, faire revenir 1 min.", badge: null },
+        { icone: "🥬", titre: "Épinards et herbes", detail: "Ajouter les épinards, la coriandre et le persil, et cuire jusqu'à ce qu'ils réduisent. Assaisonner. ASTUCE CHEF : goûtez la sauce avant de pocher, c'est elle qui porte tout le plat.", badge: "⏱ 5 min" },
+        { icone: "🥚", titre: "Pocher les œufs", detail: "Creuser des puits dans la sauce verte et y casser les œufs. Couvrir et cuire.", badge: "⏱ 5 min (mollet)" },
+        { icone: "🧀", titre: "Garnir", detail: "Parsemer de feta émiettée, d'herbes fraîches et de graines de sésame.", badge: null },
+        { icone: "🍞", titre: "Servir", detail: "Servir aussitôt avec du pain pita.", badge: null }
+      ]
   },
   dosakerdosai: {
     nom: "Dosa / Dosai",
@@ -182,11 +188,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💧", titre: "Tremper riz et lentilles", detail: "Faire tremper séparément riz et lentilles urad dal 8h. Égoutter.", badge: "⏱ 8h trempage" },
-      { icone: "🌀", titre: "Mixer et fermenter", detail: "Mixer séparément puis mélanger. Ajouter sel. Laisser fermenter à température ambiante. La pâte doit légèrement gonfler.", badge: "⏱ 8-12h fermentation" },
-      { icone: "🍳", titre: "Cuire les dosa", detail: "Chauffer une poêle antiadhésive à feu moyen. Verser une louche de pâte au centre et étaler en spirale très fine. Huiler les bords.", badge: "⏱ 2-3 min" },
-      { icone: "🌿", titre: "Servir", detail: "Servir chaud avec sambar (soupe lentilles épicée), chutney de coco et chutney tomate.", badge: null }
-    ]
+        { icone: "💧", titre: "Tremper", detail: "Faire tremper séparément le riz et les lentilles urad dal, puis égoutter.", badge: "⏱ 8h" },
+        { icone: "🌀", titre: "Mixer", detail: "Mixer séparément riz et lentilles, puis mélanger les deux pâtes et saler.", badge: null },
+        { icone: "🫧", titre: "Fermenter", detail: "Laisser fermenter à température ambiante : la pâte doit gonfler légèrement et sentir l'acidulé. ASTUCE CHEF : dans un endroit tiède, la fermentation est plus rapide et plus régulière.", badge: "⏱ 8-12h" },
+        { icone: "🍳", titre: "Première dosa", detail: "Chauffer une poêle antiadhésive à feu moyen, verser une louche de pâte au centre et l'étaler en spirale très fine.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Huiler les bords et cuire jusqu'à ce que la dosa soit dorée et croustillante.", badge: "⏱ 2-3 min" },
+        { icone: "🌿", titre: "Servir", detail: "Servir chaud avec sambar, chutney de coco et chutney de tomate.", badge: null }
+      ]
   },
   "crepesSucrées": {
     nom: "Crêpes Sucrées",
@@ -215,11 +223,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte à crêpes", detail: "Mélanger farine et sucre. Creuser un puits, ajouter les œufs. Incorporer le lait progressivement pour éviter les grumeaux. Ajouter beurre fondu. Reposer 30 min.", badge: "⏱ 30 min repos" },
-      { icone: "🍳", titre: "Cuire les crêpes", detail: "Poêle bien chaude légèrement beurrée. Verser une louche, incliner pour étaler. Cuire 1 min par face.", badge: "⏱ 2 min/crêpe" },
-      { icone: "🧈", titre: "Garnitures", detail: "Beurre + sucre, Nutella, confiture de fraises, confiture + citron, ou caramel au beurre salé.", badge: null },
-      { icone: "🍊", titre: "Crêpes à l'orange (option)", detail: "Faire un caramel au beurre avec jus d'orange et zeste. Y plonger les crêpes pliées en 4. ASTUCE CHEF : pour version sans alcool, le caramel à l'orange suffit largement à parfumer.", badge: null }
-    ]
+        { icone: "🌾", titre: "La pâte", detail: "Mélanger farine et sucre, creuser un puits, ajouter les œufs puis le lait progressivement pour éviter les grumeaux. Ajouter le beurre fondu.", badge: null },
+        { icone: "⏳", titre: "Repos", detail: "Laisser reposer la pâte. ASTUCE CHEF : ce repos assouplit la pâte et donne des crêpes plus fines et moelleuses.", badge: "⏱ 30 min" },
+        { icone: "🍳", titre: "Première crêpe", detail: "Chauffer une poêle légèrement beurrée, verser une louche et incliner pour étaler finement.", badge: null },
+        { icone: "🔄", titre: "Cuire", detail: "Cuire environ 1 min par face, jusqu'à ce que les bords se décollent.", badge: "⏱ 2 min/crêpe" },
+        { icone: "🧈", titre: "Garnir", detail: "Garnir au choix : beurre-sucre, pâte à tartiner, confiture ou caramel au beurre salé.", badge: null },
+        { icone: "🍊", titre: "Variante à l'orange", detail: "Pour une version festive, faire un caramel au beurre avec jus et zeste d'orange et y plonger les crêpes pliées en quatre.", badge: null }
+      ]
   },
   sconeBritish: {
     nom: "Scones Britanniques",
@@ -248,12 +258,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Sabler la pâte", detail: "Mélanger farine, levure, sel et sucre. Incorporer le beurre froid en dés du bout des doigts jusqu'à consistance sableuse. Ne pas trop travailler. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🥛", titre: "Lier avec le lait", detail: "Ajouter le lait et mélanger rapidement jusqu'à pâte homogène. Déposer sur un plan fariné.", badge: null },
-      { icone: "✂️", titre: "Découper", detail: "Étaler doucement à 2cm d'épaisseur. Découper avec un emporte-pièce rond en appuyant sans tourner. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥚", titre: "Dorer et cuire", detail: "Badigeonner de jaune d'œuf. Cuire jusqu'à belle couleur dorée.", badge: "⏱ 12-15 min à 200°C" },
-      { icone: "🍓", titre: "Servir", detail: "Couper en deux. Garnir de clotted cream (ou crème fraîche épaisse) et confiture de fraises. Servir avec thé Earl Grey. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
-    ]
+        { icone: "🌾", titre: "Sabler", detail: "Mélanger farine, levure, sel et sucre, puis incorporer le beurre froid en dés du bout des doigts jusqu'à une texture sableuse. ASTUCE CHEF : travaillez vite et peu, un beurre encore froid donne des scones bien levés.", badge: null },
+        { icone: "🥛", titre: "Lier", detail: "Ajouter le lait et mélanger rapidement jusqu'à une pâte homogène.", badge: null },
+        { icone: "📏", titre: "Étaler", detail: "Déposer sur un plan fariné et étaler doucement à 2 cm d'épaisseur.", badge: null },
+        { icone: "✂️", titre: "Découper", detail: "Découper à l'emporte-pièce rond en appuyant sans tourner, sinon les scones lèvent de travers.", badge: null },
+        { icone: "🥚", titre: "Dorer et cuire", detail: "Badigeonner de jaune d'œuf et cuire jusqu'à belle couleur dorée.", badge: "⏱ 12-15 min à 200°C" },
+        { icone: "🍓", titre: "Servir", detail: "Couper en deux, garnir de clotted cream et de confiture de fraises, avec un thé.", badge: null }
+      ]
   },
   eggsBenedict: {
     nom: "Œufs Bénédicte",
@@ -282,11 +293,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥛", titre: "Sauce hollandaise", detail: "Au bain-marie, fouetter jaunes + eau jusqu'à épaississement. Incorporer le beurre clarifié en filet en fouettant. Assaisonner de jus de citron, sel et Cayenne. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: "⏱ 10 min" },
-      { icone: "🥚", titre: "Œufs pochés", detail: "Eau frémissante vinaigrée. Créer un tourbillon. Casser l'œuf au centre. Cuire 3 min. Égoutter sur papier absorbant.", badge: "⏱ 3 min/œuf" },
-      { icone: "🍞", titre: "Toaster les muffins", detail: "Couper et toaster les muffins anglais. Poser le jambon de pays. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Poser l'œuf poché sur le jambon. Napper généreusement de hollandaise. Paprika fumé et ciboulette.", badge: null }
-    ]
+        { icone: "🥛", titre: "Hollandaise", detail: "Au bain-marie, fouetter les jaunes avec un peu d'eau jusqu'à épaississement, puis monter au beurre clarifié en filet. Assaisonner de citron, sel et Cayenne. ASTUCE CHEF : bain-marie pas trop chaud, sinon les jaunes coagulent et la sauce tranche.", badge: "⏱ 10 min" },
+        { icone: "💧", titre: "Eau à pocher", detail: "Porter une casserole d'eau à frémissement avec un trait de vinaigre.", badge: null },
+        { icone: "🥚", titre: "Pocher les œufs", detail: "Créer un tourbillon, y casser l'œuf au centre et pocher. Égoutter sur papier absorbant.", badge: "⏱ 3 min/œuf" },
+        { icone: "🍞", titre: "Toaster", detail: "Couper et toaster les muffins anglais.", badge: null },
+        { icone: "🥓", titre: "Le jambon", detail: "Poser une tranche de jambon (poêlé si on aime) sur chaque demi-muffin.", badge: null },
+        { icone: "🍽️", titre: "Dresser", detail: "Déposer l'œuf poché sur le jambon et napper généreusement de hollandaise.", badge: null },
+        { icone: "🌿", titre: "Finir", detail: "Saupoudrer de paprika fumé et de ciboulette. Servir aussitôt.", badge: null }
+      ]
   },
   chocolatChaud: {
     nom: "Chocolat Chaud",
@@ -315,11 +329,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍫", titre: "Fondre le chocolat", detail: "Hacher finement le chocolat noir (minimum 70%). Réserver. ASTUCE CHEF : hacher au couteau plutôt qu'au robot pour préserver la texture.", badge: null },
-      { icone: "🥛", titre: "Chauffer le lait", detail: "Porter le lait et la crème à frémissement avec le sucre. Ne pas bouillir.", badge: null },
-      { icone: "🌀", titre: "Incorporer", detail: "Verser le lait chaud sur le chocolat haché. Laisser fondre 1 min sans toucher. Fouetter jusqu'à consistance lisse et brillante.", badge: null },
-      { icone: "☕", titre: "Servir", detail: "Verser dans des tasses chaudes. Garnir de chantilly, cacao en poudre ou guimauves. Déguster immédiatement.", badge: null }
-    ]
+        { icone: "🍫", titre: "Hacher le chocolat", detail: "Hacher finement le chocolat noir (minimum 70%) et le réserver dans un bol.", badge: null },
+        { icone: "🥛", titre: "Chauffer le lait", detail: "Porter le lait et la crème à frémissement avec le sucre, sans faire bouillir.", badge: null },
+        { icone: "🌀", titre: "Faire fondre", detail: "Verser le lait chaud sur le chocolat et laisser fondre 1 min sans remuer.", badge: null },
+        { icone: "🥄", titre: "Émulsionner", detail: "Fouetter jusqu'à une texture lisse et brillante. ASTUCE CHEF : un coup de mixeur plongeant rend le chocolat encore plus mousseux et onctueux.", badge: null },
+        { icone: "☕", titre: "Servir", detail: "Verser dans des tasses chaudes.", badge: null },
+        { icone: "🍦", titre: "Garnir", detail: "Garnir de chantilly, cacao ou guimauves et déguster aussitôt.", badge: null }
+      ]
   },
   granolaMaison: {
     nom: "Granola Maison",
@@ -348,11 +364,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Mélanger", detail: "Mélanger flocons, noix concassées (amandes, noix de cajou, noisettes), graines (tournesol, courge, lin), cannelle et sel.", badge: null },
-      { icone: "🍯", titre: "Lier", detail: "Mélanger miel, huile de coco fondue et extrait de vanille. Verser sur les flocons. Mélanger pour bien enrober.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Étaler sur plaque. Cuire en mélangeant toutes les 10 min pour une cuisson homogène.", badge: "⏱ 25-30 min à 160°C" },
-      { icone: "🍓", titre: "Ajouter les fruits secs", detail: "Laisser refroidir complètement avant d'ajouter raisins secs, cranberries ou abricots. Se conserve 3 semaines.", badge: null }
-    ]
+        { icone: "🌾", titre: "Les secs", detail: "Mélanger flocons, noix concassées (amandes, cajou, noisettes), graines (tournesol, courge, lin), cannelle et sel.", badge: null },
+        { icone: "🍯", titre: "Le liant", detail: "Mélanger miel, huile de coco fondue et vanille.", badge: null },
+        { icone: "🥣", titre: "Enrober", detail: "Verser le liant sur les flocons et bien mélanger pour tout enrober.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Étaler sur une plaque et cuire en remuant toutes les 10 min pour une coloration homogène. ASTUCE CHEF : ne remuez pas trop si vous aimez les gros amas croustillants.", badge: "⏱ 25-30 min à 160°C" },
+        { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir complètement sur la plaque : c'est en refroidissant que le granola devient croustillant.", badge: null },
+        { icone: "🍓", titre: "Fruits secs", detail: "Ajouter raisins, cranberries ou abricots une fois le granola froid. Se conserve 3 semaines.", badge: null }
+      ]
   },
   financiers: {
     nom: "Financiers aux Amandes",
@@ -381,11 +399,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧈", titre: "Beurre noisette", detail: "Faire fondre le beurre jusqu'à couleur noisette et odeur de noix. Filtrer et laisser tiédir.", badge: "⏱ 5 min" },
-      { icone: "🌾", titre: "Appareil", detail: "Mélanger poudre d'amande, sucre glace et farine. Ajouter les blancs d'œufs (non montés). Incorporer le beurre noisette tiède. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🟡", titre: "Mouler et garnir", detail: "Remplir les moules à financiers aux ¾. Optionnel : poser une framboise ou amande effilée.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire jusqu'à bords dorés et centre légèrement bombé. Démouler chaud.", badge: "⏱ 12-15 min à 200°C" }
-    ]
+        { icone: "🧈", titre: "Beurre noisette", detail: "Faire fondre le beurre jusqu'à couleur noisette et odeur de noisette, puis filtrer et laisser tiédir. ASTUCE CHEF : c'est le beurre noisette qui donne aux financiers tout leur parfum, ne sautez pas cette étape.", badge: "⏱ 5 min" },
+        { icone: "🌾", titre: "Les poudres", detail: "Mélanger poudre d'amande, sucre glace et farine.", badge: null },
+        { icone: "🥚", titre: "Les blancs", detail: "Ajouter les blancs d'œufs non montés et mélanger.", badge: null },
+        { icone: "🧈", titre: "Le beurre", detail: "Incorporer le beurre noisette tiède à l'appareil.", badge: null },
+        { icone: "🟡", titre: "Mouler", detail: "Remplir les moules aux trois quarts. En option, une framboise ou des amandes effilées sur le dessus.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Cuire jusqu'à bords dorés et centre légèrement bombé. Démouler chaud.", badge: "⏱ 12-15 min à 200°C" }
+      ]
   },
   bananabread: {
     nom: "Cake à la Banane",
@@ -414,12 +434,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍌", titre: "Écraser les bananes", detail: "Préchauffer le four à 180 °C. Écraser les bananes à la fourchette jusqu'à obtenir une purée. Plus elles sont mûres, plus le gâteau sera sucré et parfumé. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
-      { icone: "🥚", titre: "Mélanger les liquides", detail: "Ajouter aux bananes : les œufs battus, le beurre fondu, le lait (ou yaourt) et la vanille. Bien mélanger.", badge: null },
-      { icone: "🌾", titre: "Incorporer les secs", detail: "Ajouter la farine, le sucre, la levure et le sel. Mélanger jusqu'à incorporation. Ne pas trop travailler la pâte. Ajouter les pépites de chocolat si souhaité.", badge: null },
-      { icone: "🥧", titre: "Verser dans le moule", detail: "Verser dans un moule à cake beurré et fariné. Lisser la surface. Décorer éventuellement avec une banane coupée en deux dans le sens de la longueur.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180 °C. Le cake est prêt quand un couteau planté au centre ressort propre. Laisser refroidir 10 min avant de démouler.", badge: "⏱ 55–65 min à 180 °C" }
-    ]
+        { icone: "🍌", titre: "Écraser les bananes", detail: "Écraser à la fourchette des bananes bien mûres jusqu'à obtenir une purée. ASTUCE CHEF : plus les bananes sont tachetées, plus le cake sera sucré et parfumé.", badge: null },
+        { icone: "🥚", titre: "Les liquides", detail: "Ajouter les œufs battus, le beurre fondu, le lait (ou yaourt) et la vanille, puis mélanger.", badge: null },
+        { icone: "🌾", titre: "Les secs", detail: "Incorporer la farine, le sucre, la levure et le sel, sans trop travailler la pâte.", badge: null },
+        { icone: "🍫", titre: "Option", detail: "Ajouter des pépites de chocolat ou des noix si vous le souhaitez.", badge: null },
+        { icone: "🥧", titre: "Mouler", detail: "Verser dans un moule à cake beurré et fariné, lisser la surface.", badge: null },
+        { icone: "🍌", titre: "Décorer", detail: "Poser éventuellement une demi-banane fendue dans la longueur sur le dessus.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Cuire jusqu'à ce qu'une lame plantée au centre ressorte propre. Attendre 10 min avant de démouler.", badge: "⏱ 55-65 min à 180°C" }
+      ]
   },
   overnightoats: {
     nom: "Porridge de Nuit",
@@ -448,11 +470,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Mélanger dans un pot", detail: "Dans un pot ou bol, mélanger les flocons d'avoine, les graines de chia, le lait végétal (ou lait normal), le yaourt grec et le miel.", badge: null },
-      { icone: "🥄", titre: "Bien mélanger", detail: "Mélanger jusqu'à ce que tout soit bien incorporé. Les graines de chia vont gonfler et épaissir la préparation.", badge: null },
-      { icone: "❄️", titre: "Repos au frigo", detail: "Couvrir et placer au réfrigérateur. Le lendemain matin, les oats sont prêts !", badge: "⏱ Toute la nuit (min 6h)" },
-      { icone: "🎨", titre: "Ajouter les toppings", detail: "Au moment de servir, ajouter les toppings : fruits frais, fruits secs, granola, beurre d'amande, cacao... Personnaliser selon l'envie !", badge: null }
-    ]
+        { icone: "🌾", titre: "Dans un pot", detail: "Mettre les flocons d'avoine et les graines de chia dans un pot ou un bocal.", badge: null },
+        { icone: "🥛", titre: "Les liquides", detail: "Ajouter le lait (végétal ou non), le yaourt grec et le miel.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Bien mélanger pour répartir les graines de chia, qui vont gonfler et épaissir.", badge: null },
+        { icone: "❄️", titre: "Repos", detail: "Couvrir et placer au réfrigérateur toute la nuit. ASTUCE CHEF : préparez plusieurs pots d'avance, ça se garde 3-4 jours au frais.", badge: "⏱ 1 nuit (min 6h)" },
+        { icone: "🥄", titre: "Vérifier la texture", detail: "Le matin, mélanger et ajuster avec un peu de lait si c'est trop épais.", badge: null },
+        { icone: "🎨", titre: "Toppings", detail: "Ajouter fruits frais, fruits secs, granola, beurre d'amande ou cacao au moment de servir.", badge: null }
+      ]
   },
   pancakesproteine: {
     nom: "Pancakes Protéinés",
@@ -481,11 +505,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍌", titre: "Écraser les bananes", detail: "Écraser les bananes très mûres à la fourchette jusqu'à obtenir une purée lisse.", badge: null },
-      { icone: "🥚", titre: "Ajouter les œufs", detail: "Ajouter les œufs battus et la poudre de protéines (optionnelle). Mélanger jusqu'à obtenir une pâte homogène. Ajouter le lait si la pâte est trop épaisse.", badge: null },
-      { icone: "🍳", titre: "Cuire", detail: "Faire chauffer une poêle antiadhésive à feu moyen-doux sans matière grasse. Verser une petite louche de pâte. Cuire jusqu'à ce que des bulles apparaissent, retourner et cuire 1 min.", badge: "⏱ 2–3 min par face" },
-      { icone: "🍓", titre: "Servir", detail: "Servir avec fruits frais, miel, beurre d'amande ou yaourt grec.", badge: null }
-    ]
+        { icone: "🍌", titre: "Écraser les bananes", detail: "Écraser des bananes très mûres à la fourchette jusqu'à une purée lisse.", badge: null },
+        { icone: "🥚", titre: "Les œufs", detail: "Ajouter les œufs battus et, en option, la poudre de protéines. Mélanger jusqu'à une pâte homogène.", badge: null },
+        { icone: "💧", titre: "Ajuster", detail: "Ajouter un peu de lait si la pâte est trop épaisse. ASTUCE CHEF : une pâte un peu épaisse donne des pancakes plus moelleux qui se retournent facilement.", badge: null },
+        { icone: "🍳", titre: "Première fournée", detail: "Chauffer une poêle antiadhésive à feu moyen-doux, sans matière grasse, et verser une petite louche.", badge: null },
+        { icone: "🔄", titre: "Cuire", detail: "Cuire jusqu'à apparition de bulles, retourner et cuire 1 min.", badge: "⏱ 2-3 min/face" },
+        { icone: "🍓", titre: "Servir", detail: "Servir avec fruits frais, miel, beurre d'amande ou yaourt grec.", badge: null }
+      ]
   },
   pancakes: {
     nom: "Pancakes",
@@ -519,12 +545,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Mélanger les secs", detail: "Dans un grand bol, mélanger la farine, le sucre, la levure chimique et le sel.", badge: null },
-      { icone: "🥛", titre: "Mélanger les liquides", detail: "Dans un autre bol, battre les œufs, ajouter le lait et le beurre fondu. Fouetter jusqu'à ce que ce soit homogène.", badge: null },
-      { icone: "🥣", titre: "Incorporer", detail: "Verser les liquides dans les secs et mélanger juste assez pour incorporer. La pâte doit rester légèrement grumeleuse — ne pas trop mélanger ! ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🍳", titre: "Cuire", detail: "Chauffer une poêle antiadhésive à feu moyen-doux, graisser légèrement. Verser une louche de pâte. Quand des bulles apparaissent en surface, retourner et cuire 1 min de l'autre côté.", badge: "⏱ 2–3 min par face" },
-      { icone: "🍁", titre: "Servir", detail: "Servir chauds avec du sirop d'érable, des fruits frais ou de la chantilly.", badge: null }
-    ]
+        { icone: "🌾", titre: "Les secs", detail: "Mélanger la farine, le sucre, la levure chimique et le sel.", badge: null },
+        { icone: "🥛", titre: "Les liquides", detail: "Battre les œufs, ajouter le lait et le beurre fondu, fouetter jusqu'à homogénéité.", badge: null },
+        { icone: "🥣", titre: "Incorporer", detail: "Verser les liquides dans les secs et mélanger juste assez : la pâte doit rester légèrement grumeleuse. ASTUCE CHEF : ne lissez surtout pas la pâte, c'est ce qui rend les pancakes gonflés et moelleux.", badge: null },
+        { icone: "⏳", titre: "Repos", detail: "Laisser reposer la pâte quelques minutes, le temps que la levure agisse.", badge: null },
+        { icone: "🍳", titre: "Cuire", detail: "Chauffer une poêle légèrement graissée, verser une louche, retourner dès que des bulles apparaissent et cuire 1 min.", badge: "⏱ 2-3 min/face" },
+        { icone: "🍁", titre: "Servir", detail: "Servir chauds avec sirop d'érable, fruits frais ou chantilly.", badge: null }
+      ]
   },
   muffins: {
     nom: "Muffins",
@@ -562,12 +589,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Préchauffer le four", detail: "Préchauffer à 180 °C. Préparer un moule à 12 muffins avec des caissettes en papier. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
-      { icone: "🌾", titre: "Mélanger les secs", detail: "Dans un grand bol, tamiser la farine, le cacao, le sucre, la levure et le sel. Bien mélanger. ÉTAPE INDISPENSABLE pour éviter les grumeaux et avoir une texture lisse.", badge: null },
-      { icone: "🥚", titre: "Mélanger les liquides", detail: "Dans un autre bol, battre les œufs, ajouter le lait et l'huile. Mélanger.", badge: null },
-      { icone: "🥣", titre: "Incorporer", detail: "Verser les liquides dans les secs. Mélanger juste assez — la pâte doit rester grumeleuse. Ajouter les pépites de chocolat et mélanger délicatement.", badge: null },
-      { icone: "🧁", titre: "Remplir et cuire", detail: "Remplir les caissettes aux 2/3. Enfourner jusqu'à ce que les muffins soient gonflés et qu'un couteau en ressorte propre. Laisser tiédir 5 min avant de démouler.", badge: "⏱ 15–18 min à 180 °C" }
-    ]
+        { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four et garnir un moule de caissettes en papier.", badge: null },
+        { icone: "🌾", titre: "Les secs", detail: "Tamiser farine, cacao, sucre, levure et sel, puis bien mélanger. ASTUCE CHEF : tamiser évite les grumeaux de cacao et donne une mie lisse.", badge: null },
+        { icone: "🥚", titre: "Les liquides", detail: "Battre les œufs, ajouter le lait et l'huile, mélanger.", badge: null },
+        { icone: "🥣", titre: "Incorporer", detail: "Verser les liquides dans les secs et mélanger juste assez : la pâte reste grumeleuse.", badge: null },
+        { icone: "🍫", titre: "Les pépites", detail: "Ajouter les pépites de chocolat et mélanger délicatement.", badge: null },
+        { icone: "🧁", titre: "Cuire", detail: "Remplir les caissettes aux deux tiers et cuire jusqu'à ce qu'une lame ressorte propre. Tiédir 5 min avant de démouler.", badge: "⏱ 15-18 min à 180°C" }
+      ]
   },
   smoothievert: {
     nom: "Smoothie Vert Détox",
@@ -596,10 +624,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Préparer les ingrédients", detail: "Laver épinards et concombre. Éplucher gingembre. Épépiner la pomme.", badge: null },
-      { icone: "🌀", titre: "Mixer", detail: "Tout mettre dans le blender avec 200ml d'eau froide ou glaçons. Mixer jusqu'à consistance lisse.", badge: "⏱ 2 min" },
-      { icone: "🍋", titre: "Ajuster et servir", detail: "Ajouter jus de citron, ajuster la texture avec eau ou glaçons. Servir immédiatement.", badge: null }
-    ]
+        { icone: "🥬", titre: "Préparer", detail: "Laver les épinards et le concombre, éplucher le gingembre et épépiner la pomme.", badge: null },
+        { icone: "🔪", titre: "Couper", detail: "Couper le concombre et la pomme en morceaux pour faciliter le mixage.", badge: null },
+        { icone: "🌀", titre: "Mixer", detail: "Mettre tous les ingrédients dans le blender avec de l'eau froide ou des glaçons et mixer jusqu'à une texture lisse.", badge: "⏱ 2 min" },
+        { icone: "🍋", titre: "Citron", detail: "Ajouter le jus de citron, qui réveille le smoothie et préserve sa couleur.", badge: null },
+        { icone: "💧", titre: "Ajuster", detail: "Ajuster la texture avec un peu d'eau ou de glaçons selon l'envie. ASTUCE CHEF : un demi-avocat le rend plus crémeux et plus rassasiant.", badge: null },
+        { icone: "🥤", titre: "Servir", detail: "Servir immédiatement, bien frais.", badge: null }
+      ]
   },
   huevosrancheros: {
     nom: "Huevos Rancheros",
@@ -663,12 +694,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌽", titre: "Chips de tortilla", detail: "Couper les tortillas en triangles. Frire ou cuire au four 200°C 10 min avec un peu d'huile, en remuant. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 10 min" },
-      { icone: "🌶️", titre: "Sauce rouge", detail: "Faire griller tomates et piments séchés (guajillo, ancho) à sec. Mixer avec ail, oignon, eau, sel. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 8 min" },
-      { icone: "🍳", titre: "Œufs", detail: "Cuire les œufs au plat avec jaune coulant.", badge: "⏱ 4 min" },
-      { icone: "🥄", titre: "Sauce + chips", detail: "Verser la sauce rouge chaude sur les chips juste avant de servir (sinon ils ramollissent trop).", badge: null },
-      { icone: "🧀", titre: "Finition", detail: "Topping : œuf au plat, crème mexicaine (ou crème fraîche), queso fresco émietté, oignon rouge ciselé, coriandre. Servir immédiatement !", badge: null }
-    ]
+        { icone: "🌽", titre: "Chips de tortilla", detail: "Couper les tortillas en triangles et les frire (ou les cuire au four avec un peu d'huile en remuant) jusqu'à ce qu'elles soient croustillantes.", badge: "⏱ 10 min" },
+        { icone: "🌶️", titre: "Griller pour la sauce", detail: "Faire griller à sec les tomates et les piments séchés (guajillo, ancho).", badge: "⏱ 8 min" },
+        { icone: "🌀", titre: "Mixer la sauce", detail: "Mixer les tomates et piments avec ail, oignon, un peu d'eau et du sel.", badge: null },
+        { icone: "🍳", titre: "Les œufs", detail: "Cuire les œufs au plat en gardant le jaune coulant.", badge: "⏱ 4 min" },
+        { icone: "🥄", titre: "Sauce sur les chips", detail: "Verser la sauce rouge chaude sur les chips juste avant de servir. ASTUCE CHEF : nappez au dernier moment, sinon les chips ramollissent trop.", badge: null },
+        { icone: "🧀", titre: "Garnir", detail: "Ajouter crème mexicaine, queso fresco émietté, oignon rouge ciselé et coriandre.", badge: null },
+        { icone: "🍽️", titre: "Servir", detail: "Couronner de l'œuf au plat et servir immédiatement.", badge: null }
+      ]
   },
   kayatoast: {
     nom: "Kaya Toast",
