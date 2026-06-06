@@ -4,6 +4,44 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  buchenoelchocolat: {
+    nom: "Bûche de Noël au Chocolat",
+    cat: "desserts", pays: "france",
+    dateAjout: "2026-06-06T23:34:00",
+    base: 8,
+    temps: "1 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🎄",
+    description: "La bûche roulée traditionnelle : un biscuit génoise moelleux garni d'une ganache au chocolat, roulé puis glacé et strié à la fourchette pour imiter l'écorce. Le dessert incontournable de Noël.",
+    tableauBucheNoelChocolat: [
+      { nb: 1, oeufs: "½ œuf", sucre: "15 g", farine: "12 g", chocolat: "30 g", creme: "25 ml", beurre: "8 g", cacao: "1 c.à.c" },
+      { nb: 2, oeufs: "1 œuf", sucre: "30 g", farine: "24 g", chocolat: "60 g", creme: "50 ml", beurre: "16 g", cacao: "2 c.à.c" },
+      { nb: 3, oeufs: "1½ œufs", sucre: "45 g", farine: "36 g", chocolat: "90 g", creme: "75 ml", beurre: "24 g", cacao: "3 c.à.c" },
+      { nb: 4, oeufs: "2 œufs", sucre: "60 g", farine: "48 g", chocolat: "120 g", creme: "100 ml", beurre: "32 g", cacao: "4 c.à.c" },
+      { nb: 5, oeufs: "2½ œufs", sucre: "75 g", farine: "60 g", chocolat: "150 g", creme: "125 ml", beurre: "40 g", cacao: "5 c.à.c" },
+      { nb: 6, oeufs: "3 œufs", sucre: "90 g", farine: "72 g", chocolat: "180 g", creme: "150 ml", beurre: "48 g", cacao: "6 c.à.c" },
+      { nb: 7, oeufs: "3½ œufs", sucre: "105 g", farine: "84 g", chocolat: "210 g", creme: "175 ml", beurre: "56 g", cacao: "7 c.à.c" },
+      { nb: 8, oeufs: "4 œufs", sucre: "120 g", farine: "96 g", chocolat: "240 g", creme: "200 ml", beurre: "64 g", cacao: "8 c.à.c" },
+      { nb: 9, oeufs: "4½ œufs", sucre: "135 g", farine: "108 g", chocolat: "270 g", creme: "225 ml", beurre: "72 g", cacao: "9 c.à.c" },
+      { nb: 10, oeufs: "5 œufs", sucre: "150 g", farine: "120 g", chocolat: "300 g", creme: "250 ml", beurre: "80 g", cacao: "10 c.à.c" },
+      { nb: 11, oeufs: "5½ œufs", sucre: "165 g", farine: "132 g", chocolat: "330 g", creme: "275 ml", beurre: "88 g", cacao: "11 c.à.c" },
+      { nb: 12, oeufs: "6 œufs", sucre: "180 g", farine: "144 g", chocolat: "360 g", creme: "300 ml", beurre: "96 g", cacao: "12 c.à.c" },
+      { nb: 13, oeufs: "6½ œufs", sucre: "195 g", farine: "156 g", chocolat: "390 g", creme: "325 ml", beurre: "104 g", cacao: "13 c.à.c" },
+      { nb: 14, oeufs: "7 œufs", sucre: "210 g", farine: "168 g", chocolat: "420 g", creme: "350 ml", beurre: "112 g", cacao: "14 c.à.c" },
+      { nb: 15, oeufs: "7½ œufs", sucre: "225 g", farine: "180 g", chocolat: "450 g", creme: "375 ml", beurre: "120 g", cacao: "15 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Génoise", detail: "Fouetter longuement les œufs avec le sucre jusqu'à ce que le mélange triple de volume et blanchisse, puis incorporer la farine délicatement.", badge: "⏱ 12 min" },
+      { icone: "📏", titre: "Étaler", detail: "Verser la pâte sur une plaque recouverte de papier cuisson et l'étaler en une couche régulière et fine.", badge: "⏱ 4 min" },
+      { icone: "♨️", titre: "Cuire", detail: "Four à 180°C, 10 à 12 minutes : le biscuit doit rester souple, pas sec, sinon il casse au roulage.", badge: "⏱ 12 min" },
+      { icone: "🌀", titre: "Rouler à chaud", detail: "ASTUCE CHEF : rouler le biscuit encore tiède dans un torchon humide dès la sortie du four — il prend la forme et ne se fendra pas ensuite.", badge: "⏱ 5 min" },
+      { icone: "🍫", titre: "Ganache", detail: "Faire fondre le chocolat dans la crème chaude, ajouter le beurre, lisser. Laisser épaissir à température ambiante.", badge: "⏱ 15 min" },
+      { icone: "🎁", titre: "Garnir et rouler", detail: "Dérouler le biscuit, étaler une couche de ganache, puis rouler de nouveau bien serré.", badge: "⏱ 8 min" },
+      { icone: "🍴", titre: "Glacer et strier", detail: "Couvrir la bûche du reste de ganache et strier à la fourchette pour imiter l'écorce d'un tronc.", badge: "⏱ 8 min" },
+      { icone: "❄️", titre: "Repos au frais", detail: "Réserver au moins 2 heures au réfrigérateur, saupoudrer de cacao ou de sucre glace façon neige avant de servir.", badge: "⏱ 2 h" }
+    ]
+  },
   goumeau: {
     nom: "Galette de Goumeau",
     cat: "desserts", pays: "france",

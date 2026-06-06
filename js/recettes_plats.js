@@ -4,6 +4,82 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  dindenoelmarrons: {
+    nom: "Dinde de Noël aux Marrons",
+    cat: "plats", pays: "france",
+    dateAjout: "2026-06-06T23:32:00",
+    base: 8,
+    temps: "3 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🦃",
+    description: "La pièce maîtresse du réveillon : dinde farcie d'une chair à saucisse aux marrons, rôtie lentement et arrosée jusqu'à une peau dorée et croustillante, chair moelleuse à cœur.",
+    tableauDindeNoelMarrons: [
+      { nb: 1, dinde: "250 g", marrons: "60 g", chairsaucisse: "50 g", oignon: "25 g", beurre: "10 g", bouillon: "60 ml", sel: "1 pincée" },
+      { nb: 2, dinde: "500 g", marrons: "120 g", chairsaucisse: "100 g", oignon: "50 g", beurre: "20 g", bouillon: "120 ml", sel: "1 pincée" },
+      { nb: 3, dinde: "750 g", marrons: "180 g", chairsaucisse: "150 g", oignon: "75 g", beurre: "30 g", bouillon: "180 ml", sel: "1 pincée" },
+      { nb: 4, dinde: "1000 g", marrons: "240 g", chairsaucisse: "200 g", oignon: "100 g", beurre: "40 g", bouillon: "240 ml", sel: "1 pincée" },
+      { nb: 5, dinde: "1250 g", marrons: "300 g", chairsaucisse: "250 g", oignon: "125 g", beurre: "50 g", bouillon: "300 ml", sel: "1 pincée" },
+      { nb: 6, dinde: "1500 g", marrons: "360 g", chairsaucisse: "300 g", oignon: "150 g", beurre: "60 g", bouillon: "360 ml", sel: "1 pincée" },
+      { nb: 7, dinde: "1750 g", marrons: "420 g", chairsaucisse: "350 g", oignon: "175 g", beurre: "70 g", bouillon: "420 ml", sel: "2 pincées" },
+      { nb: 8, dinde: "2000 g", marrons: "480 g", chairsaucisse: "400 g", oignon: "200 g", beurre: "80 g", bouillon: "480 ml", sel: "2 pincées" },
+      { nb: 9, dinde: "2250 g", marrons: "540 g", chairsaucisse: "450 g", oignon: "225 g", beurre: "90 g", bouillon: "540 ml", sel: "2 pincées" },
+      { nb: 10, dinde: "2500 g", marrons: "600 g", chairsaucisse: "500 g", oignon: "250 g", beurre: "100 g", bouillon: "600 ml", sel: "2 pincées" },
+      { nb: 11, dinde: "2750 g", marrons: "660 g", chairsaucisse: "550 g", oignon: "275 g", beurre: "110 g", bouillon: "660 ml", sel: "2 pincées" },
+      { nb: 12, dinde: "3000 g", marrons: "720 g", chairsaucisse: "600 g", oignon: "300 g", beurre: "120 g", bouillon: "720 ml", sel: "2 pincées" },
+      { nb: 13, dinde: "3250 g", marrons: "780 g", chairsaucisse: "650 g", oignon: "325 g", beurre: "130 g", bouillon: "780 ml", sel: "3 pincées" },
+      { nb: 14, dinde: "3500 g", marrons: "840 g", chairsaucisse: "700 g", oignon: "350 g", beurre: "140 g", bouillon: "840 ml", sel: "3 pincées" },
+      { nb: 15, dinde: "3750 g", marrons: "900 g", chairsaucisse: "750 g", oignon: "375 g", beurre: "150 g", bouillon: "900 ml", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Farce aux marrons", detail: "Faire suer l'oignon, mêler à la chair à saucisse et aux marrons grossièrement concassés. Assaisonner avec persil, sel et poivre.", badge: "⏱ 15 min" },
+      { icone: "🦃", titre: "Farcir et brider", detail: "Garnir l'intérieur de la dinde de farce, puis brider à la ficelle. ASTUCE CHEF : ne pas trop tasser la farce, elle gonfle à la cuisson.", badge: "⏱ 15 min" },
+      { icone: "🧈", titre: "Beurrer", detail: "Badigeonner toute la peau de beurre mou, saler et poivrer. Verser un peu de bouillon au fond du plat.", badge: "⏱ 5 min" },
+      { icone: "🔥", titre: "Colorer", detail: "Enfourner à 210°C pendant 20 minutes pour saisir la peau et lui donner sa couleur dorée.", badge: "⏱ 20 min" },
+      { icone: "⏲️", titre: "Cuisson lente", detail: "Baisser à 160°C et compter environ 45 min par kilo. CLÉ : arroser toutes les 30 minutes avec le jus du plat pour une chair fondante.", badge: "⏱ 2 h" },
+      { icone: "🌡️", titre: "Cuisson à cœur", detail: "Viser 72 à 75°C à cœur au thermomètre. ASTUCE : couvrir de papier alu si la peau dore trop vite.", badge: null },
+      { icone: "😴", titre: "Repos", detail: "Laisser reposer 20 à 30 minutes sous une feuille d'alu avant de découper : les jus se répartissent et la viande reste juteuse.", badge: "⏱ 25 min" },
+      { icone: "🍽️", titre: "Sauce et service", detail: "Déglacer le plat avec le reste de bouillon pour un jus corsé. Servir la dinde tranchée avec sa farce et les marrons.", badge: null }
+    ]
+  },
+  chaponfarci: {
+    nom: "Chapon Farci aux Champignons",
+    cat: "plats", pays: "france",
+    dateAjout: "2026-06-06T23:33:00",
+    base: 8,
+    temps: "3 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍗",
+    description: "Chapon rôti farci d'une duxelles de champignons relevée au cognac et liée au pain de mie. Une volaille des fêtes plus tendre que la dinde, à la chair généreuse.",
+    tableauChaponFarci: [
+      { nb: 1, chapon: "280 g", champignons: "60 g", chairsaucisse: "40 g", pain: "20 g", oignon: "20 g", cognac: "1 c.à.c", beurre: "10 g", sel: "1 pincée" },
+      { nb: 2, chapon: "560 g", champignons: "120 g", chairsaucisse: "80 g", pain: "40 g", oignon: "40 g", cognac: "2 c.à.c", beurre: "20 g", sel: "1 pincée" },
+      { nb: 3, chapon: "840 g", champignons: "180 g", chairsaucisse: "120 g", pain: "60 g", oignon: "60 g", cognac: "3 c.à.c", beurre: "30 g", sel: "1 pincée" },
+      { nb: 4, chapon: "1120 g", champignons: "240 g", chairsaucisse: "160 g", pain: "80 g", oignon: "80 g", cognac: "4 c.à.c", beurre: "40 g", sel: "1 pincée" },
+      { nb: 5, chapon: "1400 g", champignons: "300 g", chairsaucisse: "200 g", pain: "100 g", oignon: "100 g", cognac: "5 c.à.c", beurre: "50 g", sel: "1 pincée" },
+      { nb: 6, chapon: "1680 g", champignons: "360 g", chairsaucisse: "240 g", pain: "120 g", oignon: "120 g", cognac: "6 c.à.c", beurre: "60 g", sel: "1 pincée" },
+      { nb: 7, chapon: "1960 g", champignons: "420 g", chairsaucisse: "280 g", pain: "140 g", oignon: "140 g", cognac: "7 c.à.c", beurre: "70 g", sel: "2 pincées" },
+      { nb: 8, chapon: "2240 g", champignons: "480 g", chairsaucisse: "320 g", pain: "160 g", oignon: "160 g", cognac: "8 c.à.c", beurre: "80 g", sel: "2 pincées" },
+      { nb: 9, chapon: "2520 g", champignons: "540 g", chairsaucisse: "360 g", pain: "180 g", oignon: "180 g", cognac: "9 c.à.c", beurre: "90 g", sel: "2 pincées" },
+      { nb: 10, chapon: "2800 g", champignons: "600 g", chairsaucisse: "400 g", pain: "200 g", oignon: "200 g", cognac: "10 c.à.c", beurre: "100 g", sel: "2 pincées" },
+      { nb: 11, chapon: "3080 g", champignons: "660 g", chairsaucisse: "440 g", pain: "220 g", oignon: "220 g", cognac: "11 c.à.c", beurre: "110 g", sel: "2 pincées" },
+      { nb: 12, chapon: "3360 g", champignons: "720 g", chairsaucisse: "480 g", pain: "240 g", oignon: "240 g", cognac: "12 c.à.c", beurre: "120 g", sel: "2 pincées" },
+      { nb: 13, chapon: "3640 g", champignons: "780 g", chairsaucisse: "520 g", pain: "260 g", oignon: "260 g", cognac: "13 c.à.c", beurre: "130 g", sel: "3 pincées" },
+      { nb: 14, chapon: "3920 g", champignons: "840 g", chairsaucisse: "560 g", pain: "280 g", oignon: "280 g", cognac: "14 c.à.c", beurre: "140 g", sel: "3 pincées" },
+      { nb: 15, chapon: "4200 g", champignons: "900 g", chairsaucisse: "600 g", pain: "300 g", oignon: "300 g", cognac: "15 c.à.c", beurre: "150 g", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍄", titre: "Duxelles", detail: "Hacher finement champignons et oignon, les faire revenir au beurre jusqu'à ce que toute l'eau soit évaporée. C'est la base de la farce.", badge: "⏱ 12 min" },
+      { icone: "🥩", titre: "Farce", detail: "Mélanger la duxelles, la chair à saucisse, le pain trempé dans un peu de lait et essoré, et le cognac. ASTUCE CHEF : le pain garde la farce moelleuse au lieu de sèche.", badge: "⏱ 8 min" },
+      { icone: "🍗", titre: "Farcir et brider", detail: "Garnir le chapon de farce et le brider soigneusement pour qu'il garde une jolie forme à la cuisson.", badge: "⏱ 12 min" },
+      { icone: "🧈", titre: "Beurrer", detail: "Enduire la peau de beurre, saler, poivrer. Déposer dans un plat avec un fond d'eau.", badge: "⏱ 5 min" },
+      { icone: "🔥", titre: "Saisir", detail: "Départ four à 200°C, 20 minutes, pour dorer la peau avant la cuisson douce.", badge: "⏱ 20 min" },
+      { icone: "⏲️", titre: "Rôtir doucement", detail: "Poursuivre à 160°C, environ 40 min par kilo, en arrosant régulièrement. CLÉ : un chapon arrosé reste fondant.", badge: "⏱ 2 h" },
+      { icone: "😴", titre: "Repos", detail: "Reposer 20 minutes sous alu avant de découper pour ne pas perdre les jus.", badge: "⏱ 20 min" },
+      { icone: "🍽️", titre: "Service", detail: "Découper, napper du jus de cuisson dégraissé et servir avec une purée ou des pommes fondantes.", badge: null }
+    ]
+  },
   pouletcitronthym: {
     nom: "Poulet Citron & Thym",
     cat: "plats", pays: "france",

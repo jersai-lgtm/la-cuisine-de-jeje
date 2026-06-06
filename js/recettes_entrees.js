@@ -4,6 +4,80 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  foiegraspoele: {
+    nom: "Foie Gras Poêlé aux Pommes",
+    cat: "entrees", pays: "france",
+    dateAjout: "2026-06-06T23:30:00",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🦆",
+    description: "Foie gras frais poêlé minute, escalopes saisies à la croûte dorée et cœur fondant, posées sur des pommes caramélisées au miel et déglacées au balsamique. La grande entrée chaude des fêtes.",
+    tableauFoieGrasPoele: [
+      { nb: 1, foiegras: "70 g", pomme: "½ pomme", miel: "1 c.à.c", balsamique: "1 c.à.c", painepices: "1 tranche", beurre: "5 g", sel: "1 pincée" },
+      { nb: 2, foiegras: "140 g", pomme: "1 pomme", miel: "2 c.à.c", balsamique: "2 c.à.c", painepices: "2 tranches", beurre: "10 g", sel: "1 pincée" },
+      { nb: 3, foiegras: "210 g", pomme: "1½ pommes", miel: "3 c.à.c", balsamique: "3 c.à.c", painepices: "3 tranches", beurre: "15 g", sel: "1 pincée" },
+      { nb: 4, foiegras: "280 g", pomme: "2 pommes", miel: "4 c.à.c", balsamique: "4 c.à.c", painepices: "4 tranches", beurre: "20 g", sel: "1 pincée" },
+      { nb: 5, foiegras: "350 g", pomme: "2½ pommes", miel: "5 c.à.c", balsamique: "5 c.à.c", painepices: "5 tranches", beurre: "25 g", sel: "1 pincée" },
+      { nb: 6, foiegras: "420 g", pomme: "3 pommes", miel: "6 c.à.c", balsamique: "6 c.à.c", painepices: "6 tranches", beurre: "30 g", sel: "1 pincée" },
+      { nb: 7, foiegras: "490 g", pomme: "3½ pommes", miel: "7 c.à.c", balsamique: "7 c.à.c", painepices: "7 tranches", beurre: "35 g", sel: "2 pincées" },
+      { nb: 8, foiegras: "560 g", pomme: "4 pommes", miel: "8 c.à.c", balsamique: "8 c.à.c", painepices: "8 tranches", beurre: "40 g", sel: "2 pincées" },
+      { nb: 9, foiegras: "630 g", pomme: "4½ pommes", miel: "9 c.à.c", balsamique: "9 c.à.c", painepices: "9 tranches", beurre: "45 g", sel: "2 pincées" },
+      { nb: 10, foiegras: "700 g", pomme: "5 pommes", miel: "10 c.à.c", balsamique: "10 c.à.c", painepices: "10 tranches", beurre: "50 g", sel: "2 pincées" },
+      { nb: 11, foiegras: "770 g", pomme: "5½ pommes", miel: "11 c.à.c", balsamique: "11 c.à.c", painepices: "11 tranches", beurre: "55 g", sel: "2 pincées" },
+      { nb: 12, foiegras: "840 g", pomme: "6 pommes", miel: "12 c.à.c", balsamique: "12 c.à.c", painepices: "12 tranches", beurre: "60 g", sel: "2 pincées" },
+      { nb: 13, foiegras: "910 g", pomme: "6½ pommes", miel: "13 c.à.c", balsamique: "13 c.à.c", painepices: "13 tranches", beurre: "65 g", sel: "3 pincées" },
+      { nb: 14, foiegras: "980 g", pomme: "7 pommes", miel: "14 c.à.c", balsamique: "14 c.à.c", painepices: "14 tranches", beurre: "70 g", sel: "3 pincées" },
+      { nb: 15, foiegras: "1050 g", pomme: "7½ pommes", miel: "15 c.à.c", balsamique: "15 c.à.c", painepices: "15 tranches", beurre: "75 g", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍎", titre: "Pommes caramélisées", detail: "Peler les pommes, tailler en quartiers et les poêler au beurre avec le miel jusqu'à ce qu'elles soient dorées et fondantes. Réserver au chaud.", badge: "⏱ 8 min" },
+      { icone: "🔪", titre: "Tailler le foie gras", detail: "Détailler des escalopes d'environ 1,5 cm. Les garder au réfrigérateur jusqu'au dernier moment : un foie gras froid tient à la cuisson au lieu de fondre.", badge: "⏱ 5 min" },
+      { icone: "🔥", titre: "Saisir à sec", detail: "Poêle bien chaude, SANS matière grasse : le foie gras rend la sienne. Saisir 30 à 45 secondes par face pour une belle croûte ambrée.", badge: "⏱ 3 min" },
+      { icone: "🧂", titre: "Assaisonner", detail: "ASTUCE CHEF : saler et poivrer APRÈS la cuisson, jamais avant — le sel fait dégorger le foie gras et le fait fondre dans la poêle.", badge: null },
+      { icone: "🍯", titre: "Déglacer", detail: "Jeter l'excédent de graisse, déglacer la poêle au vinaigre balsamique et une pointe de miel pour obtenir un glaçage brillant.", badge: "⏱ 2 min" },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposer les pommes, poser l'escalope dessus, napper d'un filet de réduction et ajouter une tranche de pain d'épices toastée.", badge: "⏱ 2 min" },
+      { icone: "🥂", titre: "Servir aussitôt", detail: "Le foie gras poêlé se déguste IMMÉDIATEMENT, tiède. Un trait de fleur de sel au moment de servir réveille tout le plat.", badge: null }
+    ]
+  },
+  huitresgratinees: {
+    nom: "Huîtres Gratinées au Champagne",
+    cat: "entrees", pays: "france",
+    dateAjout: "2026-06-06T23:31:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🦪",
+    description: "Huîtres chaudes nappées d'un sabayon au champagne et à l'échalote, gratinées au four jusqu'à coloration. Une version festive et raffinée pour ceux qui les préfèrent cuites.",
+    tableauHuitresGratinees: [
+      { nb: 1, huitres: "3 huîtres", champagne: "30 ml", creme: "20 ml", echalote: "10 g", beurre: "8 g", gruyere: "10 g", poivre: "1 pincée" },
+      { nb: 2, huitres: "6 huîtres", champagne: "60 ml", creme: "40 ml", echalote: "20 g", beurre: "16 g", gruyere: "20 g", poivre: "1 pincée" },
+      { nb: 3, huitres: "9 huîtres", champagne: "90 ml", creme: "60 ml", echalote: "30 g", beurre: "24 g", gruyere: "30 g", poivre: "1 pincée" },
+      { nb: 4, huitres: "12 huîtres", champagne: "120 ml", creme: "80 ml", echalote: "40 g", beurre: "32 g", gruyere: "40 g", poivre: "1 pincée" },
+      { nb: 5, huitres: "15 huîtres", champagne: "150 ml", creme: "100 ml", echalote: "50 g", beurre: "40 g", gruyere: "50 g", poivre: "1 pincée" },
+      { nb: 6, huitres: "18 huîtres", champagne: "180 ml", creme: "120 ml", echalote: "60 g", beurre: "48 g", gruyere: "60 g", poivre: "1 pincée" },
+      { nb: 7, huitres: "21 huîtres", champagne: "210 ml", creme: "140 ml", echalote: "70 g", beurre: "56 g", gruyere: "70 g", poivre: "2 pincées" },
+      { nb: 8, huitres: "24 huîtres", champagne: "240 ml", creme: "160 ml", echalote: "80 g", beurre: "64 g", gruyere: "80 g", poivre: "2 pincées" },
+      { nb: 9, huitres: "27 huîtres", champagne: "270 ml", creme: "180 ml", echalote: "90 g", beurre: "72 g", gruyere: "90 g", poivre: "2 pincées" },
+      { nb: 10, huitres: "30 huîtres", champagne: "300 ml", creme: "200 ml", echalote: "100 g", beurre: "80 g", gruyere: "100 g", poivre: "2 pincées" },
+      { nb: 11, huitres: "33 huîtres", champagne: "330 ml", creme: "220 ml", echalote: "110 g", beurre: "88 g", gruyere: "110 g", poivre: "2 pincées" },
+      { nb: 12, huitres: "36 huîtres", champagne: "360 ml", creme: "240 ml", echalote: "120 g", beurre: "96 g", gruyere: "120 g", poivre: "2 pincées" },
+      { nb: 13, huitres: "39 huîtres", champagne: "390 ml", creme: "260 ml", echalote: "130 g", beurre: "104 g", gruyere: "130 g", poivre: "3 pincées" },
+      { nb: 14, huitres: "42 huîtres", champagne: "420 ml", creme: "280 ml", echalote: "140 g", beurre: "112 g", gruyere: "140 g", poivre: "3 pincées" },
+      { nb: 15, huitres: "45 huîtres", champagne: "450 ml", creme: "300 ml", echalote: "150 g", beurre: "120 g", gruyere: "150 g", poivre: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦪", titre: "Ouvrir les huîtres", detail: "Ouvrir les huîtres, détacher la noix de la coquille et filtrer leur eau dans un bol : on s'en sert pour la sauce.", badge: "⏱ 10 min" },
+      { icone: "💧", titre: "Pocher légèrement", detail: "Pocher les noix 30 secondes dans leur eau frémissante pour les raffermir, puis les égoutter. Conserver les coquilles creuses.", badge: "⏱ 3 min" },
+      { icone: "🧅", titre: "Sabayon au champagne", detail: "Suer l'échalote au beurre, déglacer au champagne, réduire de moitié, ajouter la crème. ASTUCE CHEF : hors du feu, monter au fouet avec un jaune d'œuf pour un sabayon nappant.", badge: "⏱ 6 min" },
+      { icone: "🥄", titre: "Garnir", detail: "Reposer chaque huître dans sa coquille, napper de sauce et parsemer d'une pointe de gruyère râpé.", badge: "⏱ 4 min" },
+      { icone: "🧂", titre: "Lit de gros sel", detail: "Caler les coquilles sur un lit de gros sel dans le plat : elles ne basculent pas et ne perdent pas leur sauce.", badge: null },
+      { icone: "♨️", titre: "Gratiner", detail: "Four position gril à 220°C, 4 à 6 minutes, jusqu'à ce que le dessus soit doré et grésillant.", badge: "⏱ 6 min" },
+      { icone: "🍋", titre: "Servir chaud", detail: "Servir sans attendre, très chaud, avec un quartier de citron et du pain de seigle beurré.", badge: null }
+    ]
+  },
   saumongravlax: {
     nom: "Saumon Gravlax",
     cat: "entrees", pays: "france",

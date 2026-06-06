@@ -6,6 +6,43 @@
 // =============================================================================
 
 Object.assign(recettes, {
+  vinchaud: {
+    nom: "Vin Chaud de Noël",
+    cat: "cocktails", pays: "france",
+    dateAjout: "2026-06-06T23:35:00",
+    base: 6,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍷",
+    description: "Le vin chaud des marchés de Noël : vin rouge infusé aux agrumes, cannelle, girofle et badiane, sucré juste ce qu'il faut. Parfumé, réconfortant, à servir fumant.",
+    tableauVinChaud: [
+      { nb: 1, vinrouge: "150 ml", sucre: "15 g", orange: "¼ orange", cannelle: "¼ bâton", girofle: "1 clou", badiane: "¼ étoile" },
+      { nb: 2, vinrouge: "300 ml", sucre: "30 g", orange: "½ orange", cannelle: "½ bâton", girofle: "2 clous", badiane: "½ étoile" },
+      { nb: 3, vinrouge: "450 ml", sucre: "45 g", orange: "¾ orange", cannelle: "¾ bâton", girofle: "3 clous", badiane: "¾ étoile" },
+      { nb: 4, vinrouge: "600 ml", sucre: "60 g", orange: "1 orange", cannelle: "1 bâton", girofle: "4 clous", badiane: "1 étoile" },
+      { nb: 5, vinrouge: "750 ml", sucre: "75 g", orange: "1¼ oranges", cannelle: "1¼ bâtons", girofle: "5 clous", badiane: "1¼ étoiles" },
+      { nb: 6, vinrouge: "900 ml", sucre: "90 g", orange: "1½ oranges", cannelle: "1½ bâtons", girofle: "6 clous", badiane: "1½ étoiles" },
+      { nb: 7, vinrouge: "1050 ml", sucre: "105 g", orange: "1¾ oranges", cannelle: "1¾ bâtons", girofle: "7 clous", badiane: "1¾ étoiles" },
+      { nb: 8, vinrouge: "1200 ml", sucre: "120 g", orange: "2 oranges", cannelle: "2 bâtons", girofle: "8 clous", badiane: "2 étoiles" },
+      { nb: 9, vinrouge: "1350 ml", sucre: "135 g", orange: "2¼ oranges", cannelle: "2¼ bâtons", girofle: "9 clous", badiane: "2¼ étoiles" },
+      { nb: 10, vinrouge: "1500 ml", sucre: "150 g", orange: "2½ oranges", cannelle: "2½ bâtons", girofle: "10 clous", badiane: "2½ étoiles" },
+      { nb: 11, vinrouge: "1650 ml", sucre: "165 g", orange: "2¾ oranges", cannelle: "2¾ bâtons", girofle: "11 clous", badiane: "2¾ étoiles" },
+      { nb: 12, vinrouge: "1800 ml", sucre: "180 g", orange: "3 oranges", cannelle: "3 bâtons", girofle: "12 clous", badiane: "3 étoiles" },
+      { nb: 13, vinrouge: "1950 ml", sucre: "195 g", orange: "3¼ oranges", cannelle: "3¼ bâtons", girofle: "13 clous", badiane: "3¼ étoiles" },
+      { nb: 14, vinrouge: "2100 ml", sucre: "210 g", orange: "3½ oranges", cannelle: "3½ bâtons", girofle: "14 clous", badiane: "3½ étoiles" },
+      { nb: 15, vinrouge: "2250 ml", sucre: "225 g", orange: "3¾ oranges", cannelle: "3¾ bâtons", girofle: "15 clous", badiane: "3¾ étoiles" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍊", titre: "Préparer les agrumes", detail: "Laver l'orange et la trancher en rondelles avec la peau : c'est elle qui parfume le plus le vin.", badge: "⏱ 4 min" },
+      { icone: "🫙", titre: "Réunir", detail: "Verser le vin dans une casserole avec le sucre, les rondelles d'orange, la cannelle, les clous de girofle et la badiane.", badge: "⏱ 3 min" },
+      { icone: "🔥", titre: "Chauffer doucement", detail: "ASTUCE CHEF : chauffer SANS jamais faire bouillir — au-delà de 80°C l'alcool s'évapore et le vin devient amer.", badge: "⏱ 5 min" },
+      { icone: "⏳", titre: "Infuser", detail: "Maintenir à léger frémissement 15 minutes pour que les épices libèrent tous leurs arômes.", badge: "⏱ 15 min" },
+      { icone: "🥄", titre: "Goûter et ajuster", detail: "Rectifier le sucre selon le vin : un rouge tannique en demande un peu plus, un trait de miel adoucit joliment.", badge: null },
+      { icone: "🍵", titre: "Filtrer", detail: "Passer le vin pour retirer les épices et les agrumes avant de servir, afin d'éviter l'amertume si ça repose.", badge: "⏱ 2 min" },
+      { icone: "🍷", titre: "Servir fumant", detail: "Servir bien chaud dans des mugs ou verres résistants, décoré d'une rondelle d'orange et d'un bâton de cannelle.", badge: null }
+    ]
+  },
   mojito: {
     nom: "Mojito",
     cat: "cocktails", pays: "cuba",

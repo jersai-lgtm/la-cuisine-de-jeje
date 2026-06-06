@@ -99,7 +99,7 @@
       menuZone: { top: "50%", bottom: "24%", left: "27%", right: "27%" },
       menuColor: "#3a5a3f",
       menuShadow: "none",
-      recettes: ["blinissaumon", "escargots", "saintjacquespoelees", "saumongravlax", "magretcanard", "bellini"],
+      recettes: ["huitresgratinees", "foiegraspoele", "escargots", "dindenoelmarrons", "buchenoelchocolat", "vinchaud"],
       estActif: function (now) {
         var y = now.getFullYear();
         return entre(now, dateA(y, 12, 20), dateA(y, 12, 26, 23)); // 20 -> 26 déc
