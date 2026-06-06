@@ -31,12 +31,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Préparer la pâte", detail: "Mélanger farine, levure, sel et sucre. Ajouter yaourt, lait tiède et huile. Pétrir 8-10 min jusqu'à pâte lisse et élastique. Pétrir 10 min à la main ou 7 min au robot — la pâte doit être lisse et élastique.", badge: null },
-      { icone: "⏳", titre: "Laisser lever", detail: "Couvrir et laisser lever dans un endroit chaud. La pâte doit DOUBLER de volume dans un endroit tiède (25°C, four éteint avec lampe allumée).", badge: "⏱ 1h" },
-      { icone: "📏", titre: "Former les naans", detail: "Diviser en boules. Étaler chaque boule en ovale fin (3-4 mm). Parsemer de graines de nigelle ou sésame si souhaité.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire dans une poêle sèche très chaude ou sous le gril du four. Dès que des bulles apparaissent, retourner et cuire 1 min.", badge: "⏱ 2-3 min par face" },
-      { icone: "🧈", titre: "Beurrer et servir", detail: "Badigeonner immédiatement de beurre fondu et d'ail émincé. Parsemer de coriandre fraîche.", badge: null }
-    ]
+        { icone: "🌾", titre: "La pâte", detail: "Mélanger farine, levure, sel et sucre. Ajouter le yaourt, le lait tiède et l'huile, puis pétrir jusqu'à une pâte lisse et élastique.", badge: null },
+        { icone: "⏳", titre: "Lever", detail: "Couvrir et laisser doubler de volume dans un endroit tiède (four éteint, lampe allumée).", badge: "⏱ 1h" },
+        { icone: "✂️", titre: "Diviser", detail: "Dégazer la pâte et la diviser en boules égales.", badge: null },
+        { icone: "📏", titre: "Étaler", detail: "Étaler chaque boule en ovale fin de 3-4 mm. En option, parsemer de graines de nigelle ou de sésame.", badge: null },
+        { icone: "🔥", titre: "Cuire", detail: "Cuire dans une poêle sèche très chaude ou sous le gril : dès que des bulles gonflent, retourner. ASTUCE CHEF : une poêle bien chaude fait cloquer le naan, c'est ce qui le rend moelleux.", badge: "⏱ 2-3 min/face" },
+        { icone: "🧈", titre: "Beurre à l'ail", detail: "Badigeonner aussitôt de beurre fondu mélangé à l'ail émincé.", badge: null },
+        { icone: "🌿", titre: "Servir", detail: "Parsemer de coriandre fraîche et servir chaud avec un curry.", badge: null }
+      ]
   },
   gyoza: {
     nom: "Gyoza",
@@ -80,11 +82,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Préparer la farce", detail: "Ciseler finement le chou. Saler et laisser dégorger 10 min. Presser pour enlever l'eau. Mélanger avec porc haché, ail et gingembre râpés, sauce soja, huile de sésame, sel. Saler et laisser 30 min pour enlever l'amertume et l'eau.", badge: null },
-      { icone: "🥟", titre: "Plier les gyoza", detail: "Déposer une petite cuillerée de farce au centre de chaque feuille. Humidifier le bord avec de l'eau. Plier en demi-lune en faisant des petits plis sur le côté.", badge: null },
-      { icone: "🍳", titre: "Cuire — yaki-gyoza", detail: "Chauffer de l'huile dans une poêle. Dorer les gyoza côté plat 2-3 min. Verser 100ml d'eau, couvrir immédiatement. Cuire à la vapeur jusqu'à évaporation. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 6-8 min total" },
-      { icone: "🍶", titre: "Sauce ponzu", detail: "Mélanger sauce soja, vinaigre de riz et huile de sésame. Ajouter piment et gingembre selon goût.", badge: null }
-    ]
+        { icone: "🥬", titre: "Dégorger le chou", detail: "Ciseler finement le chou, le saler et le laisser dégorger, puis bien le presser pour en extraire l'eau. ASTUCE CHEF : ce pressage est essentiel, sinon la farce rend de l'eau et détrempe les gyoza.", badge: "⏱ 10 min" },
+        { icone: "🥩", titre: "La farce", detail: "Mélanger le chou avec le porc haché, l'ail et le gingembre râpés, la sauce soja, l'huile de sésame et le sel.", badge: null },
+        { icone: "🥟", titre: "Garnir", detail: "Déposer une petite cuillerée de farce au centre de chaque feuille et humidifier le bord à l'eau.", badge: null },
+        { icone: "🤏", titre: "Plier", detail: "Replier en demi-lune en formant de petits plis sur un seul côté.", badge: null },
+        { icone: "🍳", titre: "Dorer", detail: "Chauffer un peu d'huile et dorer les gyoza sur leur face plate.", badge: "⏱ 2-3 min" },
+        { icone: "💨", titre: "Vapeur", detail: "Verser un fond d'eau, couvrir aussitôt et laisser cuire à la vapeur jusqu'à évaporation complète.", badge: "⏱ 4-5 min" },
+        { icone: "🍶", titre: "Sauce ponzu", detail: "Mélanger sauce soja, vinaigre de riz et huile de sésame (piment et gingembre selon le goût). Servir avec les gyoza.", badge: null }
+      ]
   },
   falafel: {
     nom: "Falafel",
@@ -122,12 +127,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥜", titre: "Tremper les pois chiches", detail: "Faire tremper les pois chiches CRUS (pas en boîte !) dans eau froide. Égoutter et sécher.", badge: "⏱ 12h trempage" },
-      { icone: "🌀", titre: "Mixer la farce", detail: "Mixer pois chiches, persil, coriandre, ail, oignon, cumin, coriandre moulue, sel, poivre, bicarbonate. La texture doit être granuleuse — pas une purée.", badge: null },
-      { icone: "⚽", titre: "Former les boulettes", detail: "Former des boules de 3cm ou utiliser une cuillère à glace. Les réfrigérer 30 min pour qu'elles tiennent.", badge: "⏱ 30 min frigo" },
-      { icone: "🔥", titre: "Frire", detail: "Frire dans huile chaude (180°C) jusqu'à belle couleur dorée et croustillante. Température idéale 170-180°C. Test : cube de pain dore en 30s.", badge: "⏱ 3-4 min" },
-      { icone: "🥙", titre: "Servir", detail: "Servir dans pita avec houmous, tahini, tomates, concombre, oignon rouge et herbes fraîches.", badge: null }
-    ]
+        { icone: "🥜", titre: "Tremper les pois chiches", detail: "Faire tremper les pois chiches crus (jamais en boîte) dans l'eau froide, puis égoutter et sécher. ASTUCE CHEF : crus et trempés uniquement — les pois chiches en conserve donnent des falafels qui se délitent à la cuisson.", badge: "⏱ 12h" },
+        { icone: "🌀", titre: "Mixer la farce", detail: "Mixer pois chiches, persil, coriandre, ail, oignon, cumin, coriandre moulue, sel et poivre en une texture granuleuse, pas en purée.", badge: null },
+        { icone: "🫧", titre: "Bicarbonate", detail: "Ajouter le bicarbonate juste avant de former, pour des falafels légers à l'intérieur.", badge: null },
+        { icone: "⚽", titre: "Former", detail: "Façonner des boules de 3 cm ou utiliser une cuillère à glace.", badge: null },
+        { icone: "❄️", titre: "Raffermir", detail: "Réfrigérer les boules pour qu'elles tiennent à la friture.", badge: "⏱ 30 min" },
+        { icone: "🔥", titre: "Frire", detail: "Frire dans l'huile à 170-180°C jusqu'à une belle couleur dorée et croustillante.", badge: "⏱ 3-4 min" },
+        { icone: "🥙", titre: "Servir", detail: "Glisser dans un pita avec houmous, tahini, tomates, concombre, oignon rouge et herbes.", badge: null }
+      ]
   },
   momos: {
     nom: "Momos Tibétains",
@@ -165,12 +172,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte simple", detail: "Mélanger farine et eau chaude progressivement. Pétrir jusqu'à pâte souple et non collante. Reposer 20 min.", badge: "⏱ 20 min repos" },
-      { icone: "🥩", titre: "Farce", detail: "Mélanger viande hachée, chou finement cisélé, oignon, gingembre et ail râpés, sauce soja, huile de sésame, sel.", badge: null },
-      { icone: "🥟", titre: "Former les momos", detail: "Étaler des petits disques de pâte fine. Déposer la farce au centre. Plier et plisser en une belle rosette.", badge: null },
-      { icone: "♨️", titre: "Cuire vapeur", detail: "Huiler le panier vapeur. Cuire à vapeur vive.", badge: "⏱ 15-18 min" },
-      { icone: "🌶️", titre: "Sauce pimentée", detail: "Servir avec sauce tomate-piment maison : tomates rôties, piment, ail et gingembre mixés.", badge: null }
-    ]
+        { icone: "🌾", titre: "La pâte", detail: "Mélanger la farine avec l'eau chaude progressivement et pétrir jusqu'à une pâte souple et non collante.", badge: null },
+        { icone: "⏳", titre: "Repos", detail: "Couvrir et laisser reposer la pâte.", badge: "⏱ 20 min" },
+        { icone: "🥩", titre: "La farce", detail: "Mélanger viande hachée, chou finement ciselé, oignon, gingembre et ail râpés, sauce soja, huile de sésame et sel.", badge: null },
+        { icone: "📏", titre: "Abaisser", detail: "Étaler de petits disques de pâte fine.", badge: null },
+        { icone: "🥟", titre: "Façonner", detail: "Déposer la farce au centre, puis plier et plisser en rosette bien fermée. ASTUCE CHEF : soudez bien les plis, sinon les momos s'ouvrent à la vapeur.", badge: null },
+        { icone: "♨️", titre: "Cuire vapeur", detail: "Huiler le panier vapeur et cuire à vapeur vive.", badge: "⏱ 15-18 min" },
+        { icone: "🌶️", titre: "Sauce", detail: "Servir avec une sauce tomate-piment maison : tomates rôties, piment, ail et gingembre mixés.", badge: null }
+      ]
   },
   pintxosbasques: {
     nom: "Pintxos Basques",
@@ -212,11 +221,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥖", titre: "Préparer le pain", detail: "Couper une baguette en tranches de 1cm. Toaster légèrement au four ou à la poêle. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🫑", titre: "Piperade rapide", detail: "Faire sauter poivrons en brunoise avec ail et huile d'olive 5 min.", badge: "⏱ 5 min" },
-      { icone: "🏗️", titre: "Garnir les pintxos", detail: "Variante 1 : jambon de Bayonne + manchego. Variante 2 : piperade + anchois. Variante 3 : tortilla espagnole + olive. Piquer avec un cure-dent.", badge: null },
-      { icone: "🥂", titre: "Servir", detail: "Disposer sur un plateau. Servir avec txakoli (vin blanc basque) ou cidre basque.", badge: null }
-    ]
+        { icone: "🥖", titre: "Le pain", detail: "Couper une baguette en tranches d'environ 1 cm.", badge: null },
+        { icone: "🔥", titre: "Toaster", detail: "Toaster légèrement les tranches au four ou à la poêle.", badge: null },
+        { icone: "🫑", titre: "Piperade express", detail: "Faire sauter des poivrons en brunoise avec ail et huile d'olive.", badge: "⏱ 5 min" },
+        { icone: "🏗️", titre: "Garnir", detail: "Composer plusieurs variantes : jambon de Bayonne et manchego ; piperade et anchois ; tortilla et olive. ASTUCE CHEF : variez les hauteurs et les couleurs, le pintxo se mange autant des yeux.", badge: null },
+        { icone: "📌", titre: "Piquer", detail: "Maintenir chaque garniture avec un cure-dent.", badge: null },
+        { icone: "🥂", titre: "Servir", detail: "Disposer sur un plateau et servir avec un txakoli ou un cidre basque.", badge: null }
+      ]
   },
   camembertRoti: {
     nom: "Camembert Rôti",
@@ -245,11 +256,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Préparer le camembert", detail: "Quadriller le dessus du camembert dans sa boite (ôter le plastique). Inciser en croix.", badge: null },
-      { icone: "🍯", titre: "Garnitures", detail: "Verser le miel, enfoncer les feuilles de romarin dans les incisions, poser les noix concassées.", badge: null },
-      { icone: "🔥", titre: "Rôtir", detail: "Enfourner le camembert dans sa boite en bois (ou papier alu). Cuire jusqu'à ce qu'il soit coulant. Chaleur tournante pour une cuisson uniforme.", badge: "⏱ 15-18 min à 180°C" },
-      { icone: "🥖", titre: "Servir", detail: "Poser au centre de la table avec pain tranché, crudités et charcuterie. Tremper directement !", badge: null }
-    ]
+        { icone: "📦", titre: "Préparer la boîte", detail: "Ôter l'emballage plastique et remettre le camembert dans sa boîte en bois (ou l'envelopper d'aluminium).", badge: null },
+        { icone: "🔪", titre: "Inciser", detail: "Quadriller ou inciser le dessus en croix pour laisser pénétrer les arômes.", badge: null },
+        { icone: "🍯", titre: "Garnir", detail: "Arroser de miel, glisser des feuilles de romarin dans les incisions et parsemer de noix concassées.", badge: null },
+        { icone: "🔥", titre: "Rôtir", detail: "Enfourner jusqu'à ce que le cœur soit bien coulant. ASTUCE CHEF : il est prêt quand il tremblote au centre sous le doigt.", badge: "⏱ 15-18 min à 180°C" },
+        { icone: "🥖", titre: "Accompagnements", detail: "Pendant la cuisson, préparer pain tranché, crudités et charcuterie.", badge: null },
+        { icone: "🫕", titre: "Servir", detail: "Poser au centre de la table et tremper directement dans le fromage coulant.", badge: null }
+      ]
   },
   wafflesSales: {
     nom: "Gaufres Salées",
@@ -278,11 +291,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte salée", detail: "Mélanger farine, levure, sel et fromage râpé. Ajouter œufs, lait et beurre fondu. Incorporer herbes fraîches. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🧇", titre: "Cuire", detail: "Chauffer le gaufrier huilé. Verser la pâte et cuire jusqu'à dorure.", badge: "⏱ 4-5 min/gaufre" },
-      { icone: "🐟", titre: "Garnitures", detail: "Servir avec crème fraîche + aneth, saumon fumé, œufs de truite. Ou version chaude avec jambon et fromage fondu.", badge: null },
-      { icone: "🍽️", titre: "Service à déguster", detail: "Servir tiède ou chaud selon le plat. Idéal à l'apéritif ou en encas gourmand.", badge: null }
-    ]
+        { icone: "🌾", titre: "Les secs", detail: "Mélanger la farine, la levure, le sel et le fromage râpé.", badge: null },
+        { icone: "🥛", titre: "Les liquides", detail: "Ajouter les œufs, le lait et le beurre fondu, puis mélanger jusqu'à une pâte homogène.", badge: null },
+        { icone: "🌿", titre: "Les herbes", detail: "Incorporer les herbes fraîches ciselées. ASTUCE CHEF : ne mélangez pas trop une fois la levure ajoutée, pour garder des gaufres aériennes.", badge: null },
+        { icone: "🧇", titre: "Cuire", detail: "Chauffer le gaufrier huilé, verser la pâte et cuire jusqu'à belle dorure.", badge: "⏱ 4-5 min/gaufre" },
+        { icone: "🐟", titre: "Garnir", detail: "Garnir de crème fraîche et aneth, saumon fumé, œufs de truite, ou version chaude jambon-fromage.", badge: null },
+        { icone: "🍽️", titre: "Servir", detail: "Servir tiède ou chaud, à l'apéritif ou en encas gourmand.", badge: null }
+      ]
   },
   energyballs: {
     nom: "Boules d\'Énergie",
@@ -311,11 +326,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌴", titre: "Dénoyauter les dattes", detail: "Dénoyauter les dattes Medjool. Si elles sont trop sèches, les tremper 10 min dans l'eau chaude puis bien égoutter.", badge: null },
-      { icone: "🌀", titre: "Mixer", detail: "Placer dattes, amandes, flocons d'avoine et cacao dans un robot. Mixer jusqu'à obtenir une pâte qui se tient. Si trop sèche, ajouter 1 c.à.s d'eau.", badge: null },
-      { icone: "⚡", titre: "Former les boules", detail: "Prendre une petite quantité de pâte (environ 20g) et rouler entre les paumes pour former une boule. Rouler dans la noix de coco râpée, le cacao ou les graines de sésame.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Placer sur une assiette et mettre au réfrigérateur. Se conservent 2 semaines au frigo ou 3 mois au congélateur.", badge: "⏱ 30 min au frigo" }
-    ]
+        { icone: "🌴", titre: "Dénoyauter", detail: "Dénoyauter les dattes Medjool. Si elles sont sèches, les tremper 10 min dans l'eau chaude puis bien égoutter.", badge: null },
+        { icone: "🌀", titre: "Mixer", detail: "Mixer dattes, amandes, flocons d'avoine et cacao jusqu'à une pâte qui se tient.", badge: null },
+        { icone: "💧", titre: "Ajuster", detail: "Si la pâte est trop sèche, ajouter une cuillère d'eau ; trop collante, un peu de flocons. ASTUCE CHEF : elle est prête quand elle forme une boule sans coller aux doigts.", badge: null },
+        { icone: "⚡", titre: "Former", detail: "Prélever environ 20 g et rouler en boule entre les paumes.", badge: null },
+        { icone: "🥥", titre: "Enrober", detail: "Rouler les boules dans la noix de coco râpée, le cacao ou les graines de sésame.", badge: null },
+        { icone: "❄️", titre: "Réfrigérer", detail: "Réserver au frais pour qu'elles raffermissent. Se conservent 2 semaines au frigo ou 3 mois au congélateur.", badge: "⏱ 30 min" }
+      ]
   },
   croquemonsieur: {
     nom: "Croque-monsieur",
@@ -344,12 +361,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Préchauffer le four", detail: "Préchauffer le four à 200 °C en mode grill. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
-      { icone: "🥛", titre: "Préparer la béchamel", detail: "Faire fondre le beurre dans une casserole. Ajouter la farine et remuer 1 min. Verser le lait progressivement en fouettant jusqu'à épaississement. Saler, poivrer, ajouter la muscade.", badge: "⏱ 5 min" },
-      { icone: "🍞", titre: "Tartiner le pain", detail: "Tartiner une face de chaque tranche de pain avec un peu de moutarde et une couche de béchamel.", badge: null },
-      { icone: "🥪", titre: "Monter les sandwichs", detail: "Poser le jambon sur une tranche, ajouter du gruyère râpé, refermer avec l'autre tranche. Étaler de la béchamel sur le dessus et parsemer du gruyère restant.", badge: null },
-      { icone: "🌡️", titre: "Gratiner", detail: "Disposer dans un plat allant au four. Gratiner jusqu'à ce que le fromage soit fondu et doré.", badge: "⏱ 10–12 min" }
-    ]
+        { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four en mode gril.", badge: null },
+        { icone: "🥛", titre: "La béchamel", detail: "Fondre le beurre, ajouter la farine et remuer 1 min, puis verser le lait en fouettant jusqu'à épaississement. Saler, poivrer, muscade.", badge: "⏱ 5 min" },
+        { icone: "🍞", titre: "Tartiner", detail: "Tartiner une face de chaque tranche d'un peu de moutarde et d'une couche de béchamel.", badge: null },
+        { icone: "🥪", titre: "Monter", detail: "Garnir de jambon et de gruyère râpé, refermer, puis napper le dessus de béchamel et du reste de gruyère. ASTUCE CHEF : un peu de béchamel et de fromage sur le dessus, c'est ce qui donne le gratiné doré.", badge: null },
+        { icone: "🌡️", titre: "Gratiner", detail: "Enfourner jusqu'à ce que le fromage soit fondu et bien doré.", badge: "⏱ 10-12 min" },
+        { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud, éventuellement avec une salade verte.", badge: null }
+      ]
   },
   bruschetta: {
     nom: "Bruschetta Tomate Basilic",
@@ -378,11 +396,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Préparer les tomates", detail: "Épépiner et couper les tomates en dés. Mélanger avec basilic ciselé, huile d'olive, sel, poivre. Laisser mariner. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 10 min" },
-      { icone: "🔥", titre: "Griller le pain", detail: "Griller les tranches de pain au gril ou au four jusqu'à dorure. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 3 min" },
-      { icone: "🧄", titre: "Frotter à l'ail", detail: "Frotter immédiatement chaque tranche avec une gousse d'ail coupée. Arroser d'huile d'olive.", badge: null },
-      { icone: "🍽️", titre: "Garnir et servir", detail: "Répartir les tomates marinées sur le pain. Servir immédiatement.", badge: null }
-    ]
+        { icone: "🍅", titre: "Mariner les tomates", detail: "Épépiner et couper les tomates en dés, mélanger avec basilic ciselé, huile d'olive, sel et poivre, puis laisser mariner. ASTUCE CHEF : épépinez bien les tomates pour que le pain ne se détrempe pas.", badge: "⏱ 10 min" },
+        { icone: "🔪", titre: "Trancher le pain", detail: "Couper le pain en tranches régulières.", badge: null },
+        { icone: "🔥", titre: "Griller", detail: "Griller les tranches au gril ou au four jusqu'à belle dorure.", badge: "⏱ 3 min" },
+        { icone: "🧄", titre: "Frotter à l'ail", detail: "Frotter immédiatement chaque tranche chaude avec une gousse d'ail coupée.", badge: null },
+        { icone: "🫒", titre: "Huiler", detail: "Arroser les tranches d'un filet d'huile d'olive.", badge: null },
+        { icone: "🍽️", titre: "Garnir", detail: "Répartir les tomates marinées sur le pain et servir immédiatement.", badge: null }
+      ]
   },
   samosas: {
     nom: "Samosas aux Légumes",
@@ -411,11 +431,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Préparer la farce", detail: "Cuire pommes de terre et petits pois. Écraser grossièrement. Ajouter oignons revenus, épices (curry, cumin, coriandre, piment). Mélanger.", badge: null },
-      { icone: "🥙", titre: "Faire la pâte", detail: "Mélanger farine, sel, huile et eau tiède pour former une pâte souple. Pétrir 5 min. Laisser reposer 20 min. Pétrir 10 min à la main ou 7 min au robot — la pâte doit être lisse et élastique.", badge: "⏱ 20 min" },
-      { icone: "🥟", titre: "Former les samosas", detail: "Abaisser la pâte finement. Découper en cercles. Garnir de farce et plier en triangle. Sceller les bords. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🔥", titre: "Frire", detail: "Frire dans l'huile chaude (175°C) jusqu'à dorure. Égoutter sur papier absorbant. Température idéale 170-180°C. Test : cube de pain dore en 30s.", badge: "⏱ 4 min" }
-    ]
+        { icone: "🥔", titre: "La farce", detail: "Cuire pommes de terre et petits pois, les écraser grossièrement, puis ajouter les oignons revenus et les épices (curry, cumin, coriandre, piment).", badge: null },
+        { icone: "🌾", titre: "La pâte", detail: "Mélanger farine, sel, huile et eau tiède en une pâte souple, et pétrir.", badge: null },
+        { icone: "⏳", titre: "Repos", detail: "Couvrir et laisser reposer la pâte.", badge: "⏱ 20 min" },
+        { icone: "📏", titre: "Abaisser", detail: "Étaler la pâte finement et découper des disques ou demi-cercles.", badge: null },
+        { icone: "🥟", titre: "Former", detail: "Garnir de farce, plier en triangle et bien sceller les bords. ASTUCE CHEF : humidifiez les bords et pressez fermement, sinon ils s'ouvrent dans l'huile.", badge: null },
+        { icone: "🔥", titre: "Frire", detail: "Frire dans l'huile à 175-180°C jusqu'à dorure, puis égoutter sur papier absorbant.", badge: "⏱ 4 min" },
+        { icone: "🍽️", titre: "Servir", detail: "Servir chaud avec un chutney ou une sauce yaourt-menthe.", badge: null }
+      ]
   },
   springRolls: {
     nom: "Spring Rolls Frais",
@@ -444,11 +467,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍜", titre: "Préparer les ingrédients", detail: "Tremper les vermicelles 5 min. Cuire les crevettes. Râper les carottes. Ciseler herbes et salade. ASTUCE CHEF : râper à la dernière minute pour conserver tous les arômes.", badge: "⏱ 5 min" },
-      { icone: "💧", titre: "Tremper les galettes", detail: "Tremper une galette de riz dans l'eau tiède 20 secondes jusqu'à souplesse.", badge: "⏱ 20 sec" },
-      { icone: "🌿", titre: "Garnir et rouler", detail: "Disposer crevettes, vermicelles, crudités, herbes au centre. Replier les côtés et rouler serré.", badge: null },
-      { icone: "🍯", titre: "Servir avec la sauce", detail: "Servir avec sauce nuoc-mâm citronnée ou sauce cacahuète. Consommer rapidement.", badge: null }
-    ]
+        { icone: "🍜", titre: "Préparer la garniture", detail: "Tremper les vermicelles, cuire les crevettes, râper les carottes et ciseler herbes et salade.", badge: "⏱ 5 min" },
+        { icone: "💧", titre: "Assouplir la galette", detail: "Tremper une galette de riz dans l'eau tiède jusqu'à souplesse. ASTUCE CHEF : sortez-la encore un peu ferme, elle finit de s'assouplir pendant le garnissage.", badge: "⏱ 20 sec" },
+        { icone: "🦐", titre: "Poser les crevettes", detail: "Aligner les demi-crevettes contre la galette, côté présentation, pour qu'elles apparaissent par transparence.", badge: null },
+        { icone: "🌿", titre: "Garnir", detail: "Ajouter vermicelles, crudités et herbes au centre.", badge: null },
+        { icone: "🌯", titre: "Rouler", detail: "Replier les côtés puis rouler bien serré.", badge: null },
+        { icone: "🍯", titre: "Servir", detail: "Servir avec une sauce nuoc-mâm citronnée ou une sauce cacahuète. À consommer rapidement.", badge: null }
+      ]
   },
   oeufsCocotte: {
     nom: "Œufs Cocotte",
@@ -477,11 +502,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Préchauffer le four", detail: "Préchauffer le four à 180°C. Beurrer les petites cocottes ou ramequins. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
-      { icone: "🍦", titre: "Garnir les cocottes", detail: "Verser la crème fraîche dans chaque cocotte. Casser délicatement l'œuf par-dessus. Saler, poivrer.", badge: null },
-      { icone: "🧀", titre: "Parsemer", detail: "Ajouter gruyère râpé et ciboulette ciselée. Optionnel : quelques lardons ou saumon fumé.", badge: null },
-      { icone: "💧", titre: "Cuire au bain-marie", detail: "Placer les cocottes dans un plat rempli d'eau chaude. Cuire au four. Le blanc doit être pris, le jaune coulant.", badge: "⏱ 12 min" }
-    ]
+        { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four et beurrer les cocottes ou ramequins.", badge: null },
+        { icone: "🍦", titre: "La crème", detail: "Verser une cuillère de crème fraîche au fond de chaque cocotte.", badge: null },
+        { icone: "🥚", titre: "L'œuf", detail: "Casser délicatement un œuf par-dessus, saler et poivrer. ASTUCE CHEF : cassez l'œuf dans une tasse d'abord, puis glissez-le, pour ne pas crever le jaune.", badge: null },
+        { icone: "🧀", titre: "Garnir", detail: "Parsemer de gruyère râpé et de ciboulette. En option, lardons ou saumon fumé.", badge: null },
+        { icone: "💧", titre: "Bain-marie", detail: "Disposer les cocottes dans un plat rempli d'eau chaude et enfourner.", badge: null },
+        { icone: "🍽️", titre: "Cuire et servir", detail: "Cuire jusqu'à ce que le blanc soit pris et le jaune encore coulant. Servir aussitôt avec des mouillettes.", badge: "⏱ 12 min" }
+      ]
   },
   samossasagneau: {
     nom: "Samossas à l&#39;Agneau",
@@ -727,11 +754,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥯", titre: "Toaster", detail: "Couper le bagel en deux et le toaster légèrement. ASTUCE : à peine doré, il reste moelleux.", badge: "⏱ 3 min" },
-      { icone: "🧀", titre: "Tartiner", detail: "Tartiner généreusement de cream cheese (fromage frais) les deux faces.", badge: "⏱ 2 min" },
-      { icone: "🐟", titre: "Garnir", detail: "Saumon fumé, fines rondelles d'oignon rouge, câpres, aneth, tour de poivre.", badge: "⏱ 4 min" },
-      { icone: "🍋", titre: "Finir", detail: "ASTUCE CHEF : quelques gouttes de citron sur le saumon réveillent l'ensemble. Refermer.", badge: null }
-    ]
+        { icone: "🥯", titre: "Toaster", detail: "Couper le bagel en deux et le toaster légèrement. ASTUCE CHEF : à peine doré, il reste moelleux à cœur.", badge: "⏱ 3 min" },
+        { icone: "🧀", titre: "Tartiner", detail: "Tartiner généreusement les deux faces de cream cheese.", badge: null },
+        { icone: "🐟", titre: "Le saumon", detail: "Disposer les tranches de saumon fumé.", badge: null },
+        { icone: "🧅", titre: "Garnir", detail: "Ajouter de fines rondelles d'oignon rouge, des câpres et de l'aneth.", badge: null },
+        { icone: "🍋", titre: "Relever", detail: "Quelques gouttes de citron sur le saumon et un tour de poivre.", badge: null },
+        { icone: "🥪", titre: "Refermer", detail: "Refermer le bagel et servir aussitôt.", badge: null }
+      ]
   },
   clubsandwich: {
     nom: "Club sandwich",
@@ -760,11 +789,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍞", titre: "Toaster", detail: "Toaster 3 tranches de pain de mie par sandwich.", badge: "⏱ 4 min" },
-      { icone: "🥓", titre: "Garnitures", detail: "Cuire le bacon croustillant et le poulet. ASTUCE : œuf dur ou tranché en option pour la version complète.", badge: "⏱ 10 min" },
-      { icone: "🥪", titre: "Monter", detail: "CLÉ : 2 étages — pain/mayo/poulet/salade, pain, bacon/tomate/œuf, pain. Tartiner chaque face de mayo.", badge: "⏱ 4 min" },
-      { icone: "🔪", titre: "Couper", detail: "SECRET : planter 4 pics, couper en 4 triangles. Servir aussitôt, tant que c'est croustillant.", badge: null }
-    ]
+        { icone: "🍞", titre: "Toaster", detail: "Toaster trois tranches de pain de mie par sandwich.", badge: "⏱ 4 min" },
+        { icone: "🍗", titre: "Cuire les garnitures", detail: "Cuire le poulet et faire dorer le bacon bien croustillant. En option, un œuf dur pour la version complète.", badge: "⏱ 10 min" },
+        { icone: "🥄", titre: "La mayo", detail: "Tartiner chaque face de mayonnaise.", badge: null },
+        { icone: "🥪", titre: "Premier étage", detail: "Sur une tranche : poulet et salade, puis recouvrir d'une deuxième tranche.", badge: null },
+        { icone: "🥓", titre: "Deuxième étage", detail: "Ajouter bacon, tomate et œuf, puis fermer avec la troisième tranche. ASTUCE CHEF : plantez quatre pics avant de couper, ça maintient les étages.", badge: null },
+        { icone: "🔪", titre: "Couper", detail: "Couper en quatre triangles et servir aussitôt, tant que c'est croustillant.", badge: null }
+      ]
   },
   paninimozza: {
     nom: "Panini tomate-mozza",
@@ -793,11 +824,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Garnir", detail: "Ouvrir le pain, tartiner de pesto, garnir de mozzarella égouttée, tomate en rondelles, basilic.", badge: "⏱ 4 min" },
-      { icone: "💧", titre: "Égoutter", detail: "ASTUCE : bien éponger mozza et tomate, sinon le panini est détrempé.", badge: "⏱ 1 min" },
-      { icone: "🔥", titre: "Presser", detail: "Griller au grill/panini press 4-5 min en pressant. SECRET : un voile d'huile dessus pour bien dorer.", badge: "⏱ 5 min" },
-      { icone: "🍽️", titre: "Servir", detail: "CLÉ : la mozzarella doit être fondante et filante. Servir chaud, coupé en deux.", badge: null }
-    ]
+        { icone: "🫓", titre: "Garnir", detail: "Ouvrir le pain, tartiner de pesto, garnir de mozzarella, de rondelles de tomate et de basilic.", badge: null },
+        { icone: "💧", titre: "Égoutter", detail: "Bien éponger la mozzarella et les tomates. ASTUCE CHEF : sans cette étape, le panini rend de l'eau et devient mou.", badge: null },
+        { icone: "🧂", titre: "Assaisonner", detail: "Saler et poivrer légèrement la garniture.", badge: null },
+        { icone: "🫒", titre: "Huiler", detail: "Passer un voile d'huile d'olive sur l'extérieur du pain pour qu'il dore bien.", badge: null },
+        { icone: "🔥", titre: "Presser", detail: "Griller au panini press (ou poêle avec un poids) en pressant jusqu'à ce que le pain soit doré et la mozzarella fondante.", badge: "⏱ 5 min" },
+        { icone: "🍽️", titre: "Servir", detail: "Couper en deux et servir chaud, quand le fromage file.", badge: null }
+      ]
   },
   nuggetspoulet: {
     nom: "Nuggets de poulet maison",
@@ -826,11 +859,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Découper", detail: "Couper le poulet en bouchées régulières. ASTUCE : du blanc ou du haut de cuisse (plus moelleux).", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Paner", detail: "Panure à l'anglaise : farine, œuf battu, chapelure (+ paprika dans la chapelure). SECRET : double passage pour une croûte épaisse.", badge: "⏱ 10 min" },
-      { icone: "🍳", titre: "Cuire", detail: "Friture 170°C 4-5 min OU four 200°C 18-20 min en retournant. CLÉ : bien dorés et cuits à cœur.", badge: "⏱ 12 min" },
-      { icone: "🍽️", titre: "Servir", detail: "ASTUCE CHEF : servir avec sauce barbecue ou ketchup maison. Égoutter sur papier.", badge: null }
-    ]
+        { icone: "🔪", titre: "Découper", detail: "Couper le poulet (blanc ou haut de cuisse) en bouchées régulières.", badge: "⏱ 5 min" },
+        { icone: "🧂", titre: "Assaisonner", detail: "Saler et poivrer les morceaux.", badge: null },
+        { icone: "🥚", titre: "Préparer la panure", detail: "Trois assiettes : farine, œuf battu, chapelure additionnée de paprika.", badge: null },
+        { icone: "🍤", titre: "Paner", detail: "Passer chaque bouchée dans la farine, l'œuf puis la chapelure. ASTUCE CHEF : un double passage œuf et chapelure donne une croûte épaisse et bien croustillante.", badge: "⏱ 10 min" },
+        { icone: "🍳", titre: "Cuire", detail: "Frire à 170°C, ou cuire au four à 200°C en retournant à mi-cuisson, jusqu'à ce qu'ils soient dorés et cuits à cœur.", badge: "⏱ 12 min" },
+        { icone: "🍽️", titre: "Servir", detail: "Égoutter sur papier absorbant et servir avec ketchup ou sauce barbecue maison.", badge: null }
+      ]
   },
   plackiziemniaczane: {
     nom: "Placki (galettes de pdt)",
