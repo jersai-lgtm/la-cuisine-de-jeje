@@ -991,7 +991,13 @@ window._formatRepas = "midi-soir"; // défaut
 
 function setFormatRepas(format, btn) {
   window._formatRepas = format;
-  document.querySelectorAll("#format-midi-soir, #format-complet").forEach(b => b.classList.remove("plan-tag-active"));
+  document.querySelectorAll("#format-simple, #format-complet").forEach(b => b.classList.remove("plan-tag-active"));
+  btn.classList.add("plan-tag-active");
+}
+
+function setCreneaux(val, btn) {
+  window._reposCreneaux = val;
+  document.querySelectorAll("#creneau-midi, #creneau-midi-soir").forEach(b => b.classList.remove("plan-tag-active"));
   btn.classList.add("plan-tag-active");
 }
 

@@ -973,28 +973,31 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
     return r ? { recette: r, note: "Pour bien commencer ! 🥗" } : null;
   };
 
+  const midiSeul = (window._reposCreneaux || "midi-soir") === "midi";
   return {
     semaine: jours.map(jour => {
       if (isComplet) {
-        return {
+        const j = {
           jour,
           midi: {
             entree:  pickEntree() || { recette: pick(), note: "En entrée 🥗" },
             plat:    { recette: pick(), note: "Bon appétit ! 🍽️" },
             dessert: { recette: pickDessert(), note: "Pour finir ! 🍰" }
-          },
-          soir: {
-            entree:  pickEntree() || { recette: pick(), note: "En entrée 🥗" },
-            plat:    { recette: pick(), note: "Régal assuré ! ✨" },
-            dessert: { recette: pickDessert(), note: "Bonne nuit ! 🍰" }
           }
         };
+        if (!midiSeul) j.soir = {
+          entree:  pickEntree() || { recette: pick(), note: "En entrée 🥗" },
+          plat:    { recette: pick(), note: "Régal assuré ! ✨" },
+          dessert: { recette: pickDessert(), note: "Bonne nuit ! 🍰" }
+        };
+        return j;
       }
-      return {
+      const j = {
         jour,
-        midi: { recette: pick(), note: "Bon appétit ! 🍽️" },
-        soir: { recette: pick(), note: "Régal assuré ! ✨" }
+        midi: { recette: pick(), note: "Bon appétit ! 🍽️" }
       };
+      if (!midiSeul) j.soir = { recette: pick(), note: "Régal assuré ! ✨" };
+      return j;
     })
   };
 }
@@ -1668,6 +1671,15 @@ function afficherMenusSemaine(menus, personnes) {
       const motifM = lvlM ? `<div class="plan-motif-famille" title="${tipM}">${lvlM === "bebe" ? "🍼" : "🌶️"} ${raisonM}</div>` : "";
       const motifS = lvlS ? `<div class="plan-motif-famille" title="${tipS}">${lvlS === "bebe" ? "🍼" : "🌶️"} ${raisonS}</div>` : "";
 
+      const soirBlocHTML = jour.soir ? `<div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
+            <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}${chSoir}</div>
+            <div class="plan-repas-emoji">${getEmoji(soir)}</div>
+            <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[soir]?.pays, 13) + " " : ""}${getNomRecette(soir)}</div>
+            <div class="plan-repas-note">${soirNote}</div>
+            ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(soir, "inline") : ""}
+            ${motifS}
+          </div>` : "";
+
       div.innerHTML = `
         <h3 class="plan-jour-titre" style="color:${couleurJour}">${jour.jour}</h3>
         <div class="plan-repas-row">
@@ -1679,14 +1691,7 @@ function afficherMenusSemaine(menus, personnes) {
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(midi, "inline") : ""}
             ${motifM}
           </div>
-          <div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
-            <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}${chSoir}</div>
-            <div class="plan-repas-emoji">${getEmoji(soir)}</div>
-            <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[soir]?.pays, 13) + " " : ""}${getNomRecette(soir)}</div>
-            <div class="plan-repas-note">${soirNote}</div>
-            ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(soir, "inline") : ""}
-            ${motifS}
-          </div>
+          ${soirBlocHTML}
         </div>`;
     }
     container.appendChild(div);
