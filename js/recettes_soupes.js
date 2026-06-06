@@ -1559,7 +1559,7 @@ Object.assign(recettes, {
     ]
   },
   soupepotimarronchataigne: {
-    nom: "undefined",
+    nom: "Soupe Potimarron-Châtaigne",
     dateAjout: "2026-06-06T11:53:00",
     cat: "soupes", pays: "france",
     base: 4,
@@ -1595,7 +1595,7 @@ Object.assign(recettes, {
     ]
   },
   veloutetomaterotie: {
-    nom: "undefined",
+    nom: "Velouté de Tomate Rôtie",
     dateAjout: "2026-06-06T11:52:00",
     cat: "soupes", pays: "france",
     base: 4,
@@ -1631,7 +1631,7 @@ Object.assign(recettes, {
     ]
   },
   veloutechoufleur: {
-    nom: "undefined",
+    nom: "Velouté de Chou-fleur",
     dateAjout: "2026-06-06T11:51:00",
     cat: "soupes", pays: "france",
     base: 4,

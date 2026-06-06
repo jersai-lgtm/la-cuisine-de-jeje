@@ -2930,7 +2930,7 @@ Object.assign(recettes, {
     ]
   },
   mousseaucitron: {
-    nom: "undefined",
+    nom: "Mousse au Citron",
     dateAjout: "2026-06-06T12:58:00",
     cat: "desserts", pays: "france",
     base: 4,
@@ -2966,7 +2966,7 @@ Object.assign(recettes, {
     ]
   },
   gateaucarotte: {
-    nom: "undefined",
+    nom: "Gâteau aux Carottes",
     dateAjout: "2026-06-06T12:57:00",
     cat: "desserts", pays: "etats-unis",
     base: 4,
@@ -3003,7 +3003,7 @@ Object.assign(recettes, {
     ]
   },
   mugcakechoco: {
-    nom: "undefined",
+    nom: "Mug Cake au Chocolat",
     dateAjout: "2026-06-06T12:56:00",
     cat: "desserts", pays: "etats-unis",
     base: 4,
@@ -3039,7 +3039,7 @@ Object.assign(recettes, {
     ]
   },
   sabayonfruitsrouges: {
-    nom: "undefined",
+    nom: "Sabayon aux Fruits Rouges",
     dateAjout: "2026-06-06T12:55:00",
     cat: "desserts", pays: "italie",
     base: 4,
@@ -3076,7 +3076,7 @@ Object.assign(recettes, {
     ]
   },
   saladefruits: {
-    nom: "undefined",
+    nom: "Salade de Fruits Frais",
     dateAjout: "2026-06-06T12:54:00",
     cat: "desserts", pays: "france",
     base: 4,

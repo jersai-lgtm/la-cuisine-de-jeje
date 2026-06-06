@@ -1086,7 +1086,7 @@ oeufmayo: {
     ]
   },
   carpacciobetterave: {
-    nom: "undefined",
+    nom: "Carpaccio de Betterave",
     dateAjout: "2026-06-06T13:00:00",
     cat: "entrees", pays: "france",
     base: 4,
@@ -1122,7 +1122,7 @@ oeufmayo: {
     ]
   },
   rouleauxprintemps: {
-    nom: "undefined",
+    nom: "Rouleaux de Printemps",
     dateAjout: "2026-06-06T12:59:00",
     cat: "entrees", pays: "vietnam",
     base: 4,

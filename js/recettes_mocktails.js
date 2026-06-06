@@ -819,4 +819,76 @@ Object.assign(recettes, {
       { icone: "🌿", titre: "Servir", detail: "Décorer de feuilles de menthe fraîche. ASTUCE CHEF : ne dépassez pas 5 minutes d'infusion, l'hibiscus devient amer ; mieux vaut court et corsé.", badge: null }
     ]
   },
+  milkshakefraise: {
+    nom: "Milkshake à la Fraise",
+    dateAjout: "2026-06-06T12:51:00",
+    cat: "mocktails", pays: "etats-unis",
+    base: 4,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥤",
+    description: "Un milkshake crémeux et gourmand à la fraise : fraises fraîches mixées avec du lait bien froid et une boule de glace vanille.",
+    tableauMilkshakefraise: [
+      { nb: 1, fraises: "80 g", lait: "15 cl", glacevanille: "1", sucre: "qs" },
+      { nb: 2, fraises: "160 g", lait: "30 cl", glacevanille: "2", sucre: "qs" },
+      { nb: 3, fraises: "240 g", lait: "45 cl", glacevanille: "3", sucre: "qs" },
+      { nb: 4, fraises: "320 g", lait: "60 cl", glacevanille: "4", sucre: "qs" },
+      { nb: 5, fraises: "400 g", lait: "75 cl", glacevanille: "5", sucre: "qs" },
+      { nb: 6, fraises: "480 g", lait: "90 cl", glacevanille: "6", sucre: "qs" },
+      { nb: 7, fraises: "560 g", lait: "105 cl", glacevanille: "7", sucre: "qs" },
+      { nb: 8, fraises: "640 g", lait: "120 cl", glacevanille: "8", sucre: "qs" },
+      { nb: 9, fraises: "720 g", lait: "135 cl", glacevanille: "9", sucre: "qs" },
+      { nb: 10, fraises: "800 g", lait: "150 cl", glacevanille: "10", sucre: "qs" },
+      { nb: 11, fraises: "880 g", lait: "165 cl", glacevanille: "11", sucre: "qs" },
+      { nb: 12, fraises: "960 g", lait: "180 cl", glacevanille: "12", sucre: "qs" },
+      { nb: 13, fraises: "1040 g", lait: "195 cl", glacevanille: "13", sucre: "qs" },
+      { nb: 14, fraises: "1120 g", lait: "210 cl", glacevanille: "14", sucre: "qs" },
+      { nb: 15, fraises: "1200 g", lait: "225 cl", glacevanille: "15", sucre: "qs" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍓", titre: "Préparer les fraises", detail: "Équeuter et couper les fraises. ASTUCE CHEF : des fraises bien mûres, voire un peu trop, apportent assez de sucre pour ne pas en rajouter.", badge: null },
+      { icone: "❄️", titre: "Tout au frais", detail: "Mettre lait et verre au frais pour un résultat bien glacé.", badge: null },
+      { icone: "🥤", titre: "Mixer", detail: "Mixer fraises, lait et glace vanille jusqu'à onctuosité.", badge: null },
+      { icone: "🍯", titre: "Ajuster", detail: "Goûter et ajuster le sucre si besoin.", badge: null },
+      { icone: "🥛", titre: "Verser", detail: "Verser dans un grand verre.", badge: null },
+      { icone: "🍓", titre: "Servir", detail: "Décorer d'une fraise et servir aussitôt avec une paille.", badge: null }
+    ]
+  },
+  frappefraise: {
+    nom: "Frappé à la Fraise",
+    dateAjout: "2026-06-06T12:50:00",
+    cat: "mocktails", pays: "france",
+    base: 4,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🧊",
+    description: "Un frappé glacé et désaltérant à la fraise et à la menthe, sans alcool, mixé avec de la glace pilée.",
+    tableauFrappefraise: [
+      { nb: 1, fraises: "80 g", glacons: "6", citronvert: "¼", sucre: "1 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 2, fraises: "160 g", glacons: "12", citronvert: "½", sucre: "2 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 3, fraises: "240 g", glacons: "18", citronvert: "¾", sucre: "3 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 4, fraises: "320 g", glacons: "24", citronvert: "1", sucre: "4 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 5, fraises: "400 g", glacons: "30", citronvert: "1¼", sucre: "5 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 6, fraises: "480 g", glacons: "36", citronvert: "1½", sucre: "6 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 7, fraises: "560 g", glacons: "42", citronvert: "1¾", sucre: "7 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 8, fraises: "640 g", glacons: "48", citronvert: "2", sucre: "8 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 9, fraises: "720 g", glacons: "54", citronvert: "2¼", sucre: "9 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 10, fraises: "800 g", glacons: "60", citronvert: "2½", sucre: "10 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 11, fraises: "880 g", glacons: "66", citronvert: "2¾", sucre: "11 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 12, fraises: "960 g", glacons: "72", citronvert: "3", sucre: "12 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 13, fraises: "1040 g", glacons: "78", citronvert: "3¼", sucre: "13 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 14, fraises: "1120 g", glacons: "84", citronvert: "3½", sucre: "14 c.à.c", menthe: "qs", eaupetillante: "trait" },
+      { nb: 15, fraises: "1200 g", glacons: "90", citronvert: "3¾", sucre: "15 c.à.c", menthe: "qs", eaupetillante: "trait" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍓", titre: "Fraises", detail: "Équeuter les fraises.", badge: null },
+      { icone: "🧊", titre: "Mixer", detail: "Mixer fraises, glaçons, citron vert, sucre et menthe en granité. ASTUCE CHEF : mixez par à-coups pour casser la glace sans la liquéfier, le frappé doit rester neigeux.", badge: null },
+      { icone: "🥄", titre: "Texture", detail: "Vérifier la texture, ajouter un glaçon si trop liquide.", badge: null },
+      { icone: "🥤", titre: "Verser", detail: "Verser dans un verre bien froid.", badge: null },
+      { icone: "🫧", titre: "Pétillant", detail: "Compléter d'un trait d'eau pétillante.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Décorer de menthe et d'une fraise, servir avec une paille.", badge: null }
+    ]
+  },
 });

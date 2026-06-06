@@ -908,7 +908,7 @@ Object.assign(recettes, {
     ]
   },
   chilisincarne: {
-    nom: "undefined",
+    nom: "Chili sin Carne",
     dateAjout: "2026-06-06T11:56:00",
     cat: "healthy", pays: "mexique",
     base: 4,
@@ -945,7 +945,7 @@ Object.assign(recettes, {
     ]
   },
   pokebowlsaumon: {
-    nom: "undefined",
+    nom: "Poke Bowl au Saumon",
     dateAjout: "2026-06-06T11:54:00",
     cat: "healthy", pays: "hawai",
     base: 4,
@@ -982,7 +982,7 @@ Object.assign(recettes, {
     ]
   },
   boulgourfeta: {
-    nom: "undefined",
+    nom: "Boulgour Feta & Légumes",
     dateAjout: "2026-06-06T11:55:00",
     cat: "healthy", pays: "liban",
     base: 4,

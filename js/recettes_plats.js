@@ -8812,7 +8812,7 @@ Object.assign(recettes, {
     ]
   },
   parmentiercanard: {
-    nom: "undefined",
+    nom: "Parmentier de Canard",
     dateAjout: "2026-06-06T12:00:00",
     cat: "plats", pays: "france",
     base: 4,
@@ -8849,7 +8849,7 @@ Object.assign(recettes, {
     ]
   },
   fajitaspoulet: {
-    nom: "undefined",
+    nom: "Fajitas au Poulet",
     dateAjout: "2026-06-06T11:59:00",
     cat: "plats", pays: "mexique",
     base: 4,
@@ -8886,7 +8886,7 @@ Object.assign(recettes, {
     ]
   },
   wokboeuf: {
-    nom: "undefined",
+    nom: "Wok de Bœuf",
     dateAjout: "2026-06-06T11:58:00",
     cat: "plats", pays: "chine",
     base: 4,
@@ -8923,7 +8923,7 @@ Object.assign(recettes, {
     ]
   },
   risottoasperges: {
-    nom: "undefined",
+    nom: "Risotto aux Asperges",
     dateAjout: "2026-06-06T11:57:00",
     cat: "plats", pays: "italie",
     base: 4,

@@ -1236,7 +1236,7 @@ Object.assign(recettes, {
     ]
   },
   rossini: {
-    nom: "undefined",
+    nom: "Rossini",
     dateAjout: "2026-06-06T12:53:00",
     cat: "cocktails", pays: "italie",
     base: 4,
@@ -1272,7 +1272,7 @@ Object.assign(recettes, {
     ]
   },
   fraisebasilicsmash: {
-    nom: "undefined",
+    nom: "Fraise Basilic Smash",
     dateAjout: "2026-06-06T12:52:00",
     cat: "cocktails", pays: "etats-unis",
     base: 4,
