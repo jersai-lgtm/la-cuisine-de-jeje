@@ -31,11 +31,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥜", titre: "Préparer les pois chiches", detail: "Égoutter et rincer les pois chiches. Garder un peu d'eau de la boîte. Pour un houmous ultra-lisse, retirer la peau de chaque pois chiche (facultatif mais ça change tout !). Rincer abondamment à l'eau froide.", badge: null },
-      { icone: "🌀", titre: "Mixer", detail: "Placer tous les ingrédients dans le mixeur : pois chiches, tahini, jus de citron, ail, huile d'olive, cumin et sel. Mixer 2 min à puissance maximale.", badge: "⏱ 2 min mixer" },
-      { icone: "💧", titre: "Ajuster la texture", detail: "Ajouter l'eau froide cuillère par cuillère tout en mixant jusqu'à obtenir la consistance souhaitée — lisse et crémeuse. Goûter et ajuster le sel et le citron.", badge: null },
-      { icone: "🍽️", titre: "Dresser et servir", detail: "Verser dans un bol. Creuser un puits au centre avec le dos d'une cuillère. Verser un filet d'huile d'olive, saupoudrer de paprika et de cumin. Servir avec du pain pita, des légumes crus ou des crackers.", badge: null }
-    ]
+        { icone: "🥜", titre: "Préparer les pois chiches", detail: "Égoutter et rincer les pois chiches, en gardant un peu de leur eau. ASTUCE CHEF : retirez la peau de chaque pois chiche pour un houmous ultra-lisse, ça change tout.", badge: null },
+        { icone: "🌀", titre: "Mixer la base", detail: "Mettre pois chiches, tahini, jus de citron, ail, huile d'olive, cumin et sel dans le mixeur. Mixer à pleine puissance.", badge: "⏱ 2 min" },
+        { icone: "💧", titre: "Détendre", detail: "Ajouter l'eau froide cuillère par cuillère en mixant, jusqu'à une texture lisse et crémeuse.", badge: null },
+        { icone: "👅", titre: "Ajuster", detail: "Goûter et rectifier le sel et le citron.", badge: null },
+        { icone: "🍽️", titre: "Dresser", detail: "Verser dans un bol et creuser un puits au centre avec le dos d'une cuillère.", badge: null },
+        { icone: "🫒", titre: "Finir", detail: "Filet d'huile d'olive, paprika et cumin. Servir avec pita, légumes crus ou crackers.", badge: null }
+      ]
   },
   babaganoush: {
     nom: "Baba Ganoush",
@@ -64,12 +66,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Griller l'aubergine", detail: "Cuire les aubergines entières sur flamme vive ou au four à 220°C jusqu'à ce que la peau noircisse et que la chair soit fondante. Saveur fumée essentielle !", badge: "⏱ 30 min" },
-      { icone: "🥄", titre: "Égoutter", detail: "Inciser, laisser tiédir, prélever la chair à la cuillère. Laisser égoutter 10 min dans une passoire (très important).", badge: "⏱ 10 min" },
-      { icone: "🥣", titre: "Mélanger", detail: "Écraser la chair à la fourchette (pas mixeur, garder la texture). Ajouter tahini, jus de citron, ail pressé, cumin. Saler.", badge: null },
-      { icone: "🌿", titre: "Présenter", detail: "Étaler dans un plat creux, faire des sillons à la cuillère, arroser d'huile d'olive, parsemer de sumac et persil.", badge: null },
-      { icone: "🥖", titre: "Servir", detail: "Servir frais avec du pain pita chaud, des crudités, et des olives.", badge: null }
-    ]
+        { icone: "🔥", titre: "Griller l'aubergine", detail: "Cuire les aubergines entières sur flamme vive ou au four jusqu'à peau noircie et chair fondante. ASTUCE CHEF : ce passage au feu vif donne le goût fumé, c'est la signature du plat.", badge: "⏱ 30 min" },
+        { icone: "🥄", titre: "Égoutter", detail: "Inciser, laisser tiédir, prélever la chair à la cuillère et la laisser égoutter dans une passoire.", badge: "⏱ 10 min" },
+        { icone: "🥣", titre: "Écraser", detail: "Écraser la chair à la fourchette, pas au mixeur, pour garder la texture.", badge: null },
+        { icone: "🍋", titre: "Assaisonner", detail: "Ajouter tahini, jus de citron, ail pressé, cumin et sel, puis mélanger.", badge: null },
+        { icone: "🌿", titre: "Présenter", detail: "Étaler dans un plat creux, faire des sillons, arroser d'huile d'olive, parsemer de sumac et de persil.", badge: null },
+        { icone: "🥖", titre: "Servir", detail: "Servir frais avec du pita chaud, des crudités et des olives.", badge: null }
+      ]
   },
   rillettessaumonfume: {
     nom: "Rillettes Saumon Fumé",
@@ -243,12 +246,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥒", titre: "Râper & dégorger", detail: "Râper le concombre (garder la peau pour la couleur), saler et laisser dégorger 10 min dans une passoire.", badge: "⏱ 10 min" },
-      { icone: "💧", titre: "Essorer", detail: "SECRET DU VRAI TZATZIKI : presser FORT le concombre entre les mains (ou dans un torchon). Sinon il rend de l'eau et le tzatziki tourne liquide.", badge: "⏱ 2 min" },
-      { icone: "🧄", titre: "Ail", detail: "Écraser l'ail en purée. ASTUCE : pour un goût plus doux, le blanchir 1 min à l'eau bouillante avant.", badge: "⏱ 2 min" },
-      { icone: "🥛", titre: "Mélanger", detail: "Mélanger yaourt grec, concombre, ail, menthe ciselée et huile d'olive. Saler, poivrer.", badge: "⏱ 2 min" },
-      { icone: "🧊", titre: "Reposer", detail: "CLÉ : laisser reposer 30 min au frais, les saveurs se lient. Servir frais avec pita ou crudités.", badge: null }
-    ]
+        { icone: "🥒", titre: "Râper et dégorger", detail: "Râper le concombre (peau gardée pour la couleur), saler et laisser dégorger dans une passoire.", badge: "⏱ 10 min" },
+        { icone: "💧", titre: "Essorer", detail: "Presser fort le concombre entre les mains ou dans un torchon. ASTUCE CHEF : c'est l'étape clé — mal essoré, il rend de l'eau et le tzatziki tourne liquide.", badge: null },
+        { icone: "🧄", titre: "L'ail", detail: "Écraser l'ail en purée (le blanchir 1 min pour un goût plus doux).", badge: null },
+        { icone: "🥛", titre: "Mélanger", detail: "Mélanger yaourt grec, concombre, ail, menthe ciselée et huile d'olive. Saler, poivrer.", badge: null },
+        { icone: "🧊", titre: "Reposer", detail: "Laisser reposer au frais pour que les saveurs se lient.", badge: "⏱ 30 min" },
+        { icone: "🥖", titre: "Servir", detail: "Servir frais avec pita ou crudités.", badge: null }
+      ]
   },
   gougeres: {
     nom: "Gougères au comté",
@@ -312,12 +316,14 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, lait, jaune d'œuf. SECRET MOELLEUX : monter le blanc en neige et l'incorporer délicatement à la fin.", badge: "⏱ 8 min" },
-      { icone: "🥞", titre: "Cuire", detail: "Cuire de petits blinis (1 c.à.s de pâte) à feu moyen. ASTUCE : retourner quand des bulles apparaissent en surface.", badge: "⏱ 10 min" },
-      { icone: "❄️", titre: "Refroidir", detail: "CLÉ : laisser tiédir les blinis avant de garnir, sinon la crème fond.", badge: "⏱ 3 min" },
-      { icone: "🐟", titre: "Garnir", detail: "Une noisette de crème fraîche, un morceau de saumon fumé roulé en rose.", badge: "⏱ 5 min" },
-      { icone: "🌿", titre: "Finir", detail: "Aneth, tour de poivre, zeste de citron. ASTUCE CHEF : un trait de jus de citron réveille le saumon.", badge: null }
-    ]
+        { icone: "🥣", titre: "La pâte", detail: "Mélanger farine, lait et jaune d'œuf en une pâte lisse.", badge: null },
+        { icone: "🌨️", titre: "Blancs en neige", detail: "Monter le blanc en neige et l'incorporer délicatement. ASTUCE CHEF : c'est le blanc monté qui rend les blinis aériens.", badge: null },
+        { icone: "🥞", titre: "Cuire", detail: "Cuire de petits blinis (1 cuillère à soupe de pâte) à feu moyen, retourner quand des bulles apparaissent.", badge: "⏱ 10 min" },
+        { icone: "❄️", titre: "Refroidir", detail: "Laisser tiédir les blinis avant de garnir, sinon la crème fond.", badge: null },
+        { icone: "🥄", titre: "La crème", detail: "Déposer une noisette de crème fraîche sur chaque blini.", badge: null },
+        { icone: "🐟", titre: "Le saumon", detail: "Poser un morceau de saumon fumé roulé en rose.", badge: null },
+        { icone: "🌿", titre: "Finir", detail: "Aneth, tour de poivre, zeste et un trait de citron pour réveiller le saumon.", badge: null }
+      ]
   },
   cakeolivesjambon: {
     nom: "Cake salé olives & jambon",
@@ -346,12 +352,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Appareil", detail: "Mélanger farine + levure, puis œufs, lait tiède et huile. ASTUCE : lait + huile tièdes = cake plus moelleux.", badge: "⏱ 5 min" },
-      { icone: "🫒", titre: "Garniture", detail: "Jambon en dés, olives égouttées coupées en deux, fromage râpé. SECRET : fariner légèrement les olives pour qu'elles ne tombent pas au fond.", badge: "⏱ 4 min" },
-      { icone: "🥄", titre: "Mélanger", detail: "Incorporer sans trop travailler la pâte. Poivrer. ASTUCE CHEF : peu ou pas de sel (jambon + olives salent).", badge: "⏱ 2 min" },
-      { icone: "🍞", titre: "Moule", detail: "Verser dans un moule à cake beurré et fariné aux 3/4 (le cake gonfle).", badge: "⏱ 2 min" },
-      { icone: "♨️", titre: "Cuire", detail: "Four 180°C 40-45 min, lame sèche. CLÉ : laisser tiédir avant de démouler, sinon il casse.", badge: "⏱ 45 min" }
-    ]
+        { icone: "🥣", titre: "L'appareil", detail: "Mélanger farine et levure, puis les œufs, le lait tiède et l'huile. ASTUCE CHEF : lait et huile tièdes donnent un cake plus moelleux.", badge: "⏱ 5 min" },
+        { icone: "🫒", titre: "La garniture", detail: "Préparer le jambon en dés, les olives égouttées coupées et le fromage râpé.", badge: null },
+        { icone: "🌾", titre: "Fariner les olives", detail: "Rouler légèrement les olives dans la farine pour qu'elles ne tombent pas au fond.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Incorporer la garniture sans trop travailler la pâte. Poivrer, très peu de sel (jambon et olives salent).", badge: null },
+        { icone: "🍞", titre: "Mouler", detail: "Verser dans un moule à cake beurré et fariné, aux trois quarts.", badge: null },
+        { icone: "♨️", titre: "Cuire", detail: "Cuire jusqu'à ce qu'une lame ressorte sèche, puis tiédir avant de démouler.", badge: "⏱ 40-45 min à 180°C" }
+      ]
   },
   cakechorizofeta: {
     nom: "Cake chorizo-feta",
@@ -380,12 +387,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Appareil", detail: "Farine + levure, puis œufs, lait tiède et huile. Pâte lisse.", badge: "⏱ 5 min" },
-      { icone: "🌶️", titre: "Garniture", detail: "Chorizo en petits dés, feta émiettée. ASTUCE : faire revenir 1 min le chorizo pour libérer son huile parfumée (et l'ajouter à la pâte).", badge: "⏱ 5 min" },
-      { icone: "🥄", titre: "Mélanger", detail: "Incorporer sans trop mélanger. SECRET : NE PAS saler (chorizo + feta très salés).", badge: "⏱ 2 min" },
-      { icone: "🍞", titre: "Moule", detail: "Verser dans un moule beurré. Parsemer éventuellement quelques dés de feta sur le dessus.", badge: "⏱ 2 min" },
-      { icone: "♨️", titre: "Cuire", detail: "Four 180°C 40-45 min, belle coloration. Tiédir avant de couper en cubes apéro.", badge: "⏱ 45 min" }
-    ]
+        { icone: "🥣", titre: "L'appareil", detail: "Mélanger farine et levure, puis les œufs, le lait tiède et l'huile en une pâte lisse.", badge: "⏱ 5 min" },
+        { icone: "🌶️", titre: "Le chorizo", detail: "Couper le chorizo en dés et le faire revenir 1 min. ASTUCE CHEF : ajoutez aussi son huile parfumée à la pâte, c'est tout le goût.", badge: null },
+        { icone: "🧀", titre: "La feta", detail: "Émietter la feta.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Incorporer chorizo et feta sans trop mélanger. Ne pas saler (chorizo et feta très salés).", badge: null },
+        { icone: "🍞", titre: "Mouler", detail: "Verser dans un moule beurré, parsemer éventuellement de dés de feta sur le dessus.", badge: null },
+        { icone: "♨️", titre: "Cuire", detail: "Cuire jusqu'à belle coloration, puis tiédir avant de couper en cubes apéro.", badge: "⏱ 40-45 min à 180°C" }
+      ]
   },
   feuilletessaucisse: {
     nom: "Feuilletés à la saucisse",
@@ -414,12 +422,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥐", titre: "Préparer", detail: "Dérouler la pâte feuilletée bien froide. ASTUCE CHEF : pâte froide = meilleur feuilletage.", badge: "⏱ 3 min" },
-      { icone: "🌭", titre: "Garnir", detail: "Étaler un voile de moutarde, déposer la chair à saucisse en boudin sur un bord, rouler serré et souder.", badge: "⏱ 5 min" },
-      { icone: "🔪", titre: "Découper", detail: "Couper en tronçons de 3-4 cm. ASTUCE : inciser le dessus en biais pour une jolie ouverture à la cuisson.", badge: "⏱ 3 min" },
-      { icone: "🥚", titre: "Dorer", detail: "Badigeonner d'œuf battu (le jaune seul dore encore plus). Parsemer de sésame si envie.", badge: "⏱ 2 min" },
-      { icone: "♨️", titre: "Cuire", detail: "Four 200°C 18-20 min, doré et feuilleté. CLÉ : four bien chaud, la pâte gonfle mieux.", badge: "⏱ 20 min" }
-    ]
+        { icone: "🥐", titre: "Préparer la pâte", detail: "Dérouler la pâte feuilletée bien froide. ASTUCE CHEF : une pâte froide donne un bien meilleur feuilletage.", badge: null },
+        { icone: "🌭", titre: "Garnir", detail: "Étaler un voile de moutarde, déposer la chair à saucisse en boudin sur un bord.", badge: null },
+        { icone: "🌯", titre: "Rouler", detail: "Rouler bien serré et souder le bord.", badge: null },
+        { icone: "🔪", titre: "Découper", detail: "Couper en tronçons de 3-4 cm et inciser le dessus en biais.", badge: null },
+        { icone: "🥚", titre: "Dorer", detail: "Badigeonner d'œuf battu (le jaune seul dore davantage) et parsemer de sésame si envie.", badge: null },
+        { icone: "♨️", titre: "Cuire", detail: "Cuire au four bien chaud jusqu'à doré et feuilleté.", badge: "⏱ 18-20 min à 200°C" }
+      ]
   },
   palmierspesto: {
     nom: "Palmiers feuilletés au pesto",
@@ -448,11 +457,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥐", titre: "Étaler", detail: "Dérouler la pâte. Étaler une FINE couche de pesto (trop = ça glisse) et parsemer de parmesan.", badge: "⏱ 4 min" },
-      { icone: "🌀", titre: "Rouler", detail: "Rouler les deux bords vers le centre pour former le double cœur. SECRET : 15 min au congélateur pour trancher net.", badge: "⏱ 15 min" },
-      { icone: "🔪", titre: "Trancher", detail: "Couper des tranches d'1 cm au couteau bien aiguisé. Poser à plat, espacées (ça s'étale).", badge: "⏱ 4 min" },
-      { icone: "♨️", titre: "Cuire", detail: "Four 200°C 12-15 min. ASTUCE CHEF : retourner à mi-cuisson pour caraméliser les deux faces.", badge: "⏱ 15 min" }
-    ]
+        { icone: "🥐", titre: "Étaler", detail: "Dérouler la pâte et étaler une fine couche de pesto. ASTUCE CHEF : couche fine impérative, sinon les palmiers se déroulent à la cuisson.", badge: null },
+        { icone: "🧀", titre: "Parmesan", detail: "Parsemer de parmesan râpé.", badge: null },
+        { icone: "🌀", titre: "Rouler", detail: "Rouler les deux bords vers le centre pour former le double cœur.", badge: null },
+        { icone: "❄️", titre: "Raffermir", detail: "Placer 15 min au congélateur pour pouvoir trancher net.", badge: "⏱ 15 min" },
+        { icone: "🔪", titre: "Trancher", detail: "Couper des tranches d'1 cm et les poser à plat, bien espacées.", badge: null },
+        { icone: "♨️", titre: "Cuire", detail: "Cuire au four en retournant à mi-cuisson pour caraméliser les deux faces.", badge: "⏱ 12-15 min à 200°C" }
+      ]
   },
   oeufsmimosa: {
     nom: "Œufs mimosa",
@@ -481,12 +492,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Cuire dur", detail: "Œufs 9 min à l'eau bouillante. ASTUCE : démarrer eau froide + un filet de vinaigre = écalage plus facile.", badge: "⏱ 12 min" },
-      { icone: "❄️", titre: "Refroidir", detail: "SECRET : plonger dans l'eau glacée dès la sortie — stoppe la cuisson et évite le cerne vert autour du jaune.", badge: "⏱ 3 min" },
-      { icone: "🔪", titre: "Couper", detail: "Écaler, couper en deux dans la longueur, retirer délicatement les jaunes.", badge: "⏱ 3 min" },
-      { icone: "🥄", titre: "Farce", detail: "Écraser les jaunes avec mayonnaise et moutarde en crème lisse. Saler, poivrer, ajouter la ciboulette.", badge: "⏱ 3 min" },
-      { icone: "🌸", titre: "Garnir", detail: "Garnir les blancs à la POCHE (plus net). ASTUCE CHEF : le 'mimosa' = un peu de jaune râpé fin par-dessus, puis paprika.", badge: null }
-    ]
+        { icone: "🥚", titre: "Cuire dur", detail: "Cuire les œufs durs (départ eau froide et filet de vinaigre pour un écalage facile).", badge: "⏱ 9 min" },
+        { icone: "❄️", titre: "Refroidir", detail: "Plonger dans l'eau glacée dès la sortie pour stopper la cuisson et éviter le cerne vert.", badge: "⏱ 3 min" },
+        { icone: "🔪", titre: "Couper", detail: "Écaler, couper en deux dans la longueur et retirer délicatement les jaunes.", badge: null },
+        { icone: "🥄", titre: "La farce", detail: "Écraser les jaunes avec mayonnaise et moutarde en crème lisse. Saler, poivrer, ajouter la ciboulette.", badge: null },
+        { icone: "🌸", titre: "Garnir", detail: "Garnir les blancs à la poche pour un rendu net. ASTUCE CHEF : réservez un peu de jaune à râper finement par-dessus, c'est l'effet mimosa.", badge: null },
+        { icone: "🌶️", titre: "Finir", detail: "Saupoudrer d'une pointe de paprika et servir frais.", badge: null }
+      ]
   },
   brochettecaprese: {
     nom: "Brochettes tomate-mozza-basilic",
@@ -515,10 +527,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Préparer", detail: "Laver les tomates cerises, égoutter les billes de mozzarella (idéalement mozza di bufala mini).", badge: "⏱ 3 min" },
-      { icone: "🍢", titre: "Monter", detail: "Sur de petits piques : tomate, feuille de basilic pliée, mozzarella. ASTUCE : alterner pour la couleur.", badge: "⏱ 4 min" },
-      { icone: "🫒", titre: "Assaisonner", detail: "Filet d'huile d'olive, fleur de sel, poivre. SECRET : une goutte de crème de balsamique juste avant de servir.", badge: null }
-    ]
+        { icone: "🍅", titre: "Préparer", detail: "Laver les tomates cerises et égoutter les billes de mozzarella (idéalement mini di bufala).", badge: null },
+        { icone: "🌿", titre: "Le basilic", detail: "Laver les feuilles de basilic et les plier en deux.", badge: null },
+        { icone: "🍢", titre: "Monter", detail: "Sur de petits piques, alterner tomate, basilic plié et mozzarella. ASTUCE CHEF : alternez les couleurs, ces brochettes se mangent d'abord des yeux.", badge: null },
+        { icone: "🫒", titre: "Assaisonner", detail: "Filet d'huile d'olive, fleur de sel et poivre.", badge: null },
+        { icone: "🍯", titre: "Touche finale", detail: "Une goutte de crème de balsamique juste avant de servir.", badge: null },
+        { icone: "🍽️", titre: "Servir", detail: "Disposer sur un plat et servir frais.", badge: null }
+      ]
   },
   nachosgratines: {
     nom: "Nachos gratinés",
@@ -547,11 +562,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Disposer", detail: "Étaler les chips dans un plat, parsemer généreusement de cheddar. ASTUCE : faire 2 couches chips+fromage pour que tout soit nappé.", badge: "⏱ 4 min" },
-      { icone: "♨️", titre: "Gratiner", detail: "Four 180°C 6-8 min, fromage fondu et bouillonnant. CLÉ : surveiller, ça brûle vite.", badge: "⏱ 8 min" },
-      { icone: "🍅", titre: "Garnir", detail: "Parsemer de dés de tomate, oignon rouge, jalapeño et coriandre À CRU (pour le croquant et la fraîcheur).", badge: "⏱ 3 min" },
-      { icone: "🥑", titre: "Servir", detail: "Servir IMMÉDIATEMENT avec guacamole et crème (voir nos recettes !). ASTUCE CHEF : tiède, jamais froid.", badge: null }
-    ]
+        { icone: "🌽", titre: "Disposer", detail: "Étaler les chips de maïs dans un plat.", badge: null },
+        { icone: "🧀", titre: "Fromager", detail: "Parsemer généreusement de cheddar. ASTUCE CHEF : faites deux couches chips et fromage pour que tout soit bien nappé.", badge: null },
+        { icone: "♨️", titre: "Gratiner", detail: "Enfourner jusqu'à ce que le fromage soit fondu et bouillonnant, en surveillant car ça brûle vite.", badge: "⏱ 6-8 min à 180°C" },
+        { icone: "🍅", titre: "Garnir à cru", detail: "Parsemer de dés de tomate, oignon rouge, jalapeño et coriandre, pour le croquant.", badge: null },
+        { icone: "🥑", titre: "Accompagner", detail: "Préparer guacamole et crème pour servir à côté.", badge: null },
+        { icone: "🍽️", titre: "Servir", detail: "Servir immédiatement, bien chaud et jamais froid.", badge: null }
+      ]
   },
   accrasmorue: {
     nom: "Accras de morue",
@@ -580,12 +597,14 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Dessaler", detail: "CLÉ : dessaler la morue 12h à l'eau froide en changeant l'eau 3-4 fois. Pocher 10 min, égoutter, émietter (retirer arêtes et peau).", badge: "⏱ 15 min" },
-      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine + levure, œuf, oignon/ail hachés fin, persil. Ajouter la morue émiettée.", badge: "⏱ 6 min" },
-      { icone: "🌶️", titre: "Relever", detail: "Poivrer, un peu de piment. ASTUCE : la pâte doit être souple et coller à la cuillère (ajuster eau/farine).", badge: "⏱ 2 min" },
-      { icone: "⏲️", titre: "Reposer", detail: "SECRET DES ACCRAS AÉRIENS : laisser reposer la pâte 30 min, le temps que la levure travaille.", badge: "⏱ 30 min" },
-      { icone: "🍳", titre: "Frire", detail: "Frire des cuillerées dans l'huile à 170°C, 2-3 min, dorées et gonflées. Égoutter sur papier. Servir chaud.", badge: "⏱ 12 min" }
-    ]
+        { icone: "🐟", titre: "Dessaler", detail: "Dessaler la morue 12h à l'eau froide en changeant l'eau plusieurs fois. ASTUCE CHEF : goûtez un petit morceau cru, il doit être juste salé, pas plus.", badge: null },
+        { icone: "🍲", titre: "Pocher", detail: "Pocher la morue, l'égoutter et l'émietter en retirant arêtes et peau.", badge: "⏱ 10 min" },
+        { icone: "🥣", titre: "La pâte", detail: "Mélanger farine et levure, l'œuf, l'oignon et l'ail hachés fin et le persil.", badge: null },
+        { icone: "🐟", titre: "Ajouter la morue", detail: "Incorporer la morue émiettée à la pâte.", badge: null },
+        { icone: "🌶️", titre: "Relever", detail: "Poivrer et ajouter un peu de piment. La pâte doit être souple et coller à la cuillère.", badge: null },
+        { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer la pâte, le temps que la levure travaille, pour des accras aériens.", badge: "⏱ 30 min" },
+        { icone: "🍳", titre: "Frire", detail: "Frire des cuillerées à 170°C jusqu'à dorées et gonflées. Égoutter et servir chaud.", badge: "⏱ 2-3 min" }
+      ]
   },
   boulettesfetaepinard: {
     nom: "Boulettes feta-épinards",
@@ -614,12 +633,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Épinards", detail: "Faire tomber les épinards à la poêle. SECRET : bien les ESSORER (presser fort) puis hacher — sinon les boulettes se délitent.", badge: "⏱ 6 min" },
-      { icone: "🧀", titre: "Mélange", detail: "Mélanger épinards, feta émiettée, œuf, oignon, menthe et chapelure. Poivrer (peu de sel : feta salée).", badge: "⏱ 5 min" },
-      { icone: "⏲️", titre: "Reposer", detail: "ASTUCE : 15 min au frais, le mélange se raffermit et se façonne plus facilement.", badge: "⏱ 15 min" },
-      { icone: "🤲", titre: "Façonner", detail: "Former de petites boulettes, mains légèrement humides pour ne pas coller.", badge: "⏱ 6 min" },
-      { icone: "♨️", titre: "Cuire", detail: "Four 190°C 18-20 min (ou poêlées), dorées. ASTUCE CHEF : servir avec le tzatziki maison.", badge: "⏱ 20 min" }
-    ]
+        { icone: "🥬", titre: "Les épinards", detail: "Faire tomber les épinards à la poêle, bien les essorer puis les hacher. ASTUCE CHEF : essorez-les vraiment fort, sinon les boulettes se délitent.", badge: "⏱ 6 min" },
+        { icone: "🧀", titre: "Le mélange", detail: "Mélanger épinards, feta émiettée, œuf, oignon, menthe et chapelure. Poivrer (peu de sel).", badge: null },
+        { icone: "⏲️", titre: "Reposer", detail: "Réserver au frais : le mélange se raffermit et se façonne mieux.", badge: "⏱ 15 min" },
+        { icone: "🤲", titre: "Façonner", detail: "Former de petites boulettes, mains légèrement humides pour ne pas coller.", badge: null },
+        { icone: "♨️", titre: "Cuire", detail: "Cuire au four ou poêlées jusqu'à ce qu'elles soient dorées.", badge: "⏱ 18-20 min à 190°C" },
+        { icone: "🥗", titre: "Servir", detail: "Servir avec un tzatziki maison.", badge: null }
+      ]
   },
   samoussaslegumes: {
     nom: "Samoussas aux légumes",
@@ -648,12 +668,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Farce", detail: "Cuire et écraser grossièrement les pommes de terre. Revenir oignon + curry, ajouter petits pois et coriandre.", badge: "⏱ 15 min" },
-      { icone: "❄️", titre: "Refroidir", detail: "CLÉ : laisser refroidir la farce avant de plier — chaude, elle déchire la feuille de brick.", badge: "⏱ 5 min" },
-      { icone: "📐", titre: "Plier", detail: "Couper les feuilles en bandes. Déposer la farce dans un coin, plier en triangles (technique du drapeau).", badge: "⏱ 12 min" },
-      { icone: "🖌️", titre: "Souder", detail: "ASTUCE : badigeonner de beurre fondu ou d'huile pour souder et bien dorer.", badge: "⏱ 3 min" },
-      { icone: "♨️", titre: "Cuire", detail: "Four 200°C 15 min (plus sain) ou friture (plus croustillant), dorés. Servir chaud avec sauce menthe-yaourt.", badge: "⏱ 15 min" }
-    ]
+        { icone: "🥔", titre: "La farce", detail: "Cuire et écraser grossièrement les pommes de terre, faire revenir oignon et curry, ajouter petits pois et coriandre.", badge: "⏱ 15 min" },
+        { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir la farce. ASTUCE CHEF : chaude, elle déchire la feuille de brick — un peu de patience.", badge: "⏱ 5 min" },
+        { icone: "📐", titre: "Plier", detail: "Couper les feuilles en bandes, déposer la farce dans un coin et plier en triangles (technique du drapeau).", badge: null },
+        { icone: "🖌️", titre: "Souder", detail: "Badigeonner de beurre fondu ou d'huile pour souder et bien dorer.", badge: null },
+        { icone: "♨️", titre: "Cuire", detail: "Cuire au four (plus sain) ou en friture (plus croustillant) jusqu'à dorés.", badge: "⏱ 15 min à 200°C" },
+        { icone: "🌿", titre: "Servir", detail: "Servir chaud avec une sauce menthe-yaourt.", badge: null }
+      ]
   },
   grissiniparme: {
     nom: "Grissini au parmesan",
@@ -682,11 +703,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, levure, sel. Ajouter eau tiède + huile, pétrir 5 min en pâte lisse et souple.", badge: "⏱ 8 min" },
-      { icone: "⏲️", titre: "Pousse", detail: "Laisser lever 30 min sous un linge, à l'abri des courants d'air (la pâte double).", badge: "⏱ 30 min" },
-      { icone: "🥖", titre: "Façonner", detail: "Étaler, parsemer de parmesan + sel, replier et couper en bâtonnets fins. SECRET : rouler chaque bâtonnet à la main pour l'aspect artisanal.", badge: "⏱ 8 min" },
-      { icone: "♨️", titre: "Cuire", detail: "Four 200°C 12-15 min, dorés et CASSANTS. ASTUCE CHEF : refroidir sur grille pour qu'ils restent croustillants.", badge: "⏱ 15 min" }
-    ]
+        { icone: "🥣", titre: "La pâte", detail: "Mélanger farine, levure et sel, ajouter l'eau tiède et l'huile, puis pétrir en une pâte lisse et souple.", badge: null },
+        { icone: "⏲️", titre: "Pousse", detail: "Laisser lever sous un linge jusqu'à ce que la pâte double.", badge: "⏱ 30 min" },
+        { icone: "🧀", titre: "Parmesan", detail: "Étaler, parsemer de parmesan et de sel, puis replier la pâte.", badge: null },
+        { icone: "🥖", titre: "Façonner", detail: "Couper en bâtonnets fins et les rouler à la main pour l'aspect artisanal. ASTUCE CHEF : plus le bâtonnet est fin, plus le grissini sera cassant.", badge: null },
+        { icone: "♨️", titre: "Cuire", detail: "Cuire jusqu'à dorés et cassants.", badge: "⏱ 12-15 min à 200°C" },
+        { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir sur une grille pour qu'ils restent croustillants.", badge: null }
+      ]
   },
   dipfetapoivron: {
     nom: "Dip feta-poivron grillé",
@@ -715,11 +738,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫑", titre: "Griller", detail: "Griller le poivron (four 220°C ou flamme) jusqu'à peau bien noircie. SECRET : l'enfermer 10 min dans un sachet, la peau s'enlève toute seule.", badge: "⏱ 12 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer feta, poivron pelé, yaourt grec, ail et huile. ASTUCE : garder un peu de grain, ce n'est pas une purée lisse.", badge: "⏱ 3 min" },
-      { icone: "🌶️", titre: "Relever", detail: "Paprika (fumé, c'est encore mieux), un trait d'huile. Goûter avant de saler (feta salée).", badge: "⏱ 1 min" },
-      { icone: "🥖", titre: "Servir", detail: "Servir frais avec pita grillé ou bâtonnets de légumes. ASTUCE CHEF : filet d'huile + paprika sur le dessus pour la présentation.", badge: null }
-    ]
+        { icone: "🫑", titre: "Griller le poivron", detail: "Griller le poivron (four ou flamme) jusqu'à peau bien noircie.", badge: "⏱ 12 min" },
+        { icone: "🧖", titre: "Peler", detail: "Enfermer 10 min dans un sachet, la peau s'enlève toute seule, puis peler. ASTUCE CHEF : ne le passez pas sous l'eau, vous perdriez tout le goût fumé.", badge: null },
+        { icone: "🌀", titre: "Mixer", detail: "Mixer feta, poivron, yaourt grec, ail et huile, en gardant un peu de grain.", badge: null },
+        { icone: "🌶️", titre: "Relever", detail: "Ajouter du paprika (fumé de préférence) et un trait d'huile. Goûter avant de saler.", badge: null },
+        { icone: "🍽️", titre: "Dresser", detail: "Verser dans un bol, filet d'huile et paprika sur le dessus.", badge: null },
+        { icone: "🥖", titre: "Servir", detail: "Servir frais avec pita grillé ou bâtonnets de légumes.", badge: null }
+      ]
   },
   rillettesthon: {
     nom: "Rillettes de thon",
@@ -748,11 +773,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Égoutter", detail: "Bien égoutter le thon et l'émietter à la fourchette.", badge: "⏱ 2 min" },
-      { icone: "🥄", titre: "Mélanger", detail: "Mélanger avec fromage frais, échalote ciselée fin, jus de citron et ciboulette. ASTUCE : un peu de moutarde réveille le tout.", badge: "⏱ 4 min" },
-      { icone: "🌶️", titre: "Assaisonner", detail: "Poivrer généreusement, goûter (peu de sel). SECRET CRÉMEUX : une noisette de beurre mou pour la texture rillettes.", badge: "⏱ 1 min" },
-      { icone: "🧊", titre: "Reposer", detail: "CLÉ : 30 min au frais minimum, les saveurs se développent. Tartiner sur pain grillé ou blinis.", badge: null }
-    ]
+        { icone: "🐟", titre: "Égoutter", detail: "Bien égoutter le thon et l'émietter à la fourchette.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Mélanger avec fromage frais, échalote ciselée fin, jus de citron et ciboulette.", badge: null },
+        { icone: "🌭", titre: "Moutarde", detail: "Ajouter une pointe de moutarde qui réveille l'ensemble.", badge: null },
+        { icone: "🧈", titre: "Texture rillettes", detail: "Incorporer une noisette de beurre mou pour le côté crémeux. ASTUCE CHEF : poivrez généreusement et salez à peine, le fromage frais suffit souvent.", badge: null },
+        { icone: "🧊", titre: "Reposer", detail: "Réserver au frais pour que les saveurs se développent.", badge: "⏱ 30 min" },
+        { icone: "🥖", titre: "Servir", detail: "Tartiner sur pain grillé ou blinis.", badge: null }
+      ]
   },
   crackersgraines: {
     nom: "Crackers maison aux graines",
@@ -781,11 +808,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, graines (sésame, pavot, tournesol, lin), sel. Ajouter huile et eau, pétrir en pâte ferme.", badge: "⏱ 6 min" },
-      { icone: "🥖", titre: "Étaler", detail: "SECRET DU CROUSTILLANT : étaler TRÈS finement entre deux papiers cuisson (2-3 mm). Plus c'est fin, plus c'est croquant.", badge: "⏱ 6 min" },
-      { icone: "🔪", titre: "Découper", detail: "Découper en carrés ou losanges (un coupe-pizza est parfait). Piquer à la fourchette, parsemer de fleur de sel.", badge: "⏱ 4 min" },
-      { icone: "♨️", titre: "Cuire", detail: "Four 180°C 12-15 min, dorés. ASTUCE CHEF : ils durcissent en refroidissant, donc sortir dès qu'ils sont dorés.", badge: "⏱ 15 min" }
-    ]
+        { icone: "🥣", titre: "La pâte", detail: "Mélanger farine, graines (sésame, pavot, tournesol, lin) et sel, ajouter huile et eau, puis pétrir en une pâte ferme.", badge: null },
+        { icone: "🥖", titre: "Étaler fin", detail: "Étaler très finement (2-3 mm) entre deux feuilles de papier cuisson. ASTUCE CHEF : plus c'est fin, plus c'est croquant, ne lésinez pas.", badge: null },
+        { icone: "🔪", titre: "Découper", detail: "Découper en carrés ou losanges (un coupe-pizza est idéal).", badge: null },
+        { icone: "🧂", titre: "Finir", detail: "Piquer à la fourchette et parsemer de fleur de sel.", badge: null },
+        { icone: "♨️", titre: "Cuire", detail: "Cuire jusqu'à dorés.", badge: "⏱ 12-15 min à 180°C" },
+        { icone: "❄️", titre: "Refroidir", detail: "Sortir dès qu'ils sont dorés : ils durcissent en refroidissant.", badge: null }
+      ]
   },
   verrineavocatcrevette: {
     nom: "Verrine avocat-crevette",
@@ -814,12 +843,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥑", titre: "Mousse", detail: "Écraser l'avocat avec jus de citron vert et mayonnaise. SECRET ANTI-OXYDATION : le citron vert tout de suite pour garder la couleur verte.", badge: "⏱ 5 min" },
-      { icone: "🦐", titre: "Crevettes", detail: "Décortiquer les crevettes cuites. ASTUCE : en garder quelques-unes entières pour décorer le bord du verre.", badge: "⏱ 4 min" },
-      { icone: "🍅", titre: "Tomate", detail: "Couper la tomate en petits dés, retirer les graines (sinon ça rend de l'eau).", badge: "⏱ 3 min" },
-      { icone: "🥃", titre: "Monter", detail: "Dans des verrines : mousse d'avocat, dés de tomate, crevettes. ASTUCE CHEF : monter au dernier moment pour la fraîcheur.", badge: "⏱ 4 min" },
-      { icone: "🌿", titre: "Finir", detail: "Crevette accrochée au bord, ciboulette, tour de poivre. Servir bien frais.", badge: null }
-    ]
+        { icone: "🥑", titre: "La mousse", detail: "Écraser l'avocat avec jus de citron vert et mayonnaise. ASTUCE CHEF : le citron tout de suite, pour garder une belle couleur verte.", badge: null },
+        { icone: "🦐", titre: "Les crevettes", detail: "Décortiquer les crevettes cuites, en gardant quelques-unes pour le décor.", badge: null },
+        { icone: "🍅", titre: "La tomate", detail: "Couper la tomate en petits dés et retirer les graines, sinon ça rend de l'eau.", badge: null },
+        { icone: "🥃", titre: "Monter", detail: "Dans des verrines : mousse d'avocat, dés de tomate, crevettes.", badge: null },
+        { icone: "🌿", titre: "Finir", detail: "Accrocher une crevette au bord, ajouter ciboulette et poivre.", badge: null },
+        { icone: "🧊", titre: "Servir", detail: "Monter au dernier moment et servir bien frais.", badge: null }
+      ]
   },
   tortillaespagnola: {
     nom: "Tortilla española",
@@ -848,12 +878,14 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Émincer", detail: "Éplucher et couper les pommes de terre en fines lamelles, émincer l'oignon.", badge: "⏱ 8 min" },
-      { icone: "🍳", titre: "Confire", detail: "SECRET DE LA VRAIE TORTILLA : CONFIRE (pas frire) pommes de terre + oignon dans l'huile d'olive à feu DOUX 18 min, fondants et pas colorés. Égoutter.", badge: "⏱ 18 min" },
-      { icone: "🥚", titre: "Mélanger", detail: "Battre les œufs, saler. Ajouter pommes de terre et oignon. ASTUCE : laisser reposer 5 min, les pommes de terre s'imprègnent.", badge: "⏱ 6 min" },
-      { icone: "🔥", titre: "Cuire & retourner", detail: "Cuire à la poêle feu moyen 5 min. CLÉ : retourner à l'aide d'une assiette, puis 4 min de l'autre côté.", badge: "⏱ 10 min" },
-      { icone: "🍴", titre: "Servir", detail: "ASTUCE CHEF : cœur légèrement baveux (jugosa) pour les puristes. Tiédir, couper en cubes ou en parts.", badge: null }
-    ]
+        { icone: "🥔", titre: "Émincer", detail: "Éplucher et couper les pommes de terre en fines lamelles, émincer l'oignon.", badge: null },
+        { icone: "🍳", titre: "Confire", detail: "Confire, et non frire, pommes de terre et oignon dans l'huile d'olive à feu doux, fondants et non colorés. ASTUCE CHEF : à feu doux uniquement, c'est ce qui fait la vraie tortilla.", badge: "⏱ 18 min" },
+        { icone: "🫗", titre: "Égoutter", detail: "Égoutter pommes de terre et oignon de leur huile.", badge: null },
+        { icone: "🥚", titre: "Mélanger", detail: "Battre les œufs, saler, puis ajouter les pommes de terre et laisser reposer 5 min.", badge: null },
+        { icone: "🔥", titre: "Première face", detail: "Cuire à la poêle à feu moyen jusqu'à ce que le dessous prenne.", badge: "⏱ 5 min" },
+        { icone: "🔄", titre: "Retourner", detail: "Retourner à l'aide d'une assiette, puis cuire l'autre côté.", badge: "⏱ 4 min" },
+        { icone: "🍴", titre: "Servir", detail: "Cœur légèrement baveux pour les puristes. Tiédir et couper en cubes ou en parts.", badge: null }
+      ]
   },
   croquetasjamon: {
     nom: "Croquetas au jambon",
@@ -882,12 +914,14 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥛", titre: "Béchamel", detail: "Roux beurre + farine, ajouter le lait CHAUD en fouettant. Cuire jusqu'à une béchamel TRÈS épaisse.", badge: "⏱ 8 min" },
-      { icone: "🍖", titre: "Jambon", detail: "Incorporer le jambon haché. Étaler en plat, filmer au contact.", badge: "⏱ 5 min" },
-      { icone: "❄️", titre: "Réfrigérer", detail: "CLÉ ABSOLUE : 2h au frigo minimum (idéal une nuit). La pâte doit être bien froide et ferme, sinon impossible de façonner.", badge: "⏱ 5 min" },
-      { icone: "🤲", titre: "Paner", detail: "Former des boudins. Paner : farine, œuf battu, chapelure. SECRET : double passage œuf+chapelure = panure qui ne craque pas.", badge: "⏱ 12 min" },
-      { icone: "🍳", titre: "Frire", detail: "Frire à 175°C 2-3 min, dorées. Égoutter sur papier. ASTUCE CHEF : peu à la fois, l'huile ne doit pas refroidir.", badge: "⏱ 10 min" }
-    ]
+        { icone: "🥛", titre: "La béchamel", detail: "Faire un roux beurre-farine, ajouter le lait chaud en fouettant et cuire jusqu'à une béchamel très épaisse.", badge: "⏱ 8 min" },
+        { icone: "🍖", titre: "Le jambon", detail: "Incorporer le jambon haché à la béchamel.", badge: null },
+        { icone: "🍫", titre: "Étaler", detail: "Étaler la masse dans un plat et filmer au contact.", badge: null },
+        { icone: "❄️", titre: "Réfrigérer", detail: "Réfrigérer longuement, idéalement une nuit. ASTUCE CHEF : la masse doit être bien froide et ferme, sinon impossible de façonner.", badge: "⏱ 2h minimum" },
+        { icone: "🤲", titre: "Façonner", detail: "Former des boudins réguliers.", badge: null },
+        { icone: "🍤", titre: "Paner", detail: "Passer dans la farine, l'œuf puis la chapelure (double passage œuf et chapelure pour une panure qui ne craque pas).", badge: null },
+        { icone: "🍳", titre: "Frire", detail: "Frire à 175°C par petites quantités jusqu'à dorées. Égoutter sur papier.", badge: "⏱ 2-3 min" }
+      ]
   },
   nemsvietnam: {
     nom: "Nems",
