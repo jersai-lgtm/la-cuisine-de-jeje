@@ -47,6 +47,10 @@
   // --- Configuration des événements --------------------------------------
   // accent : couleur d'accent de la fête (utilisée pour le bandeau, la déco, le theme-color)
   // estActif(now) : true si "now" est dans la fenêtre de la fête
+  // Zone d'écriture par défaut sur l'ardoise (insets en % du visuel).
+  // Surchargée par event.menuZone pour chaque visuel.
+  var ZONE_DEFAUT = { top: "42%", bottom: "33%", left: "24%", right: "33%" };
+
   var EVENEMENTS = {
     halloween: {
       nom: "Halloween",
@@ -56,6 +60,7 @@
       image: "images/event-halloween.webp",
       emojis: ["🎃", "🦇", "🕷️", "👻", "🕸️"],
       cta: "Voir le menu 🎃",
+      menuZone: { top: "42%", bottom: "33%", left: "24%", right: "33%" },
       recettes: ["soupepotimarronchataigne", "chilisincarne", "veloutetomaterotie", "darkStormyCocktail", "blueLagoon", "moelleuxchocolat"],
       estActif: function (now) {
         var y = now.getFullYear();
@@ -183,8 +188,11 @@
     st.textContent = [
       "#event-splash{position:fixed;inset:0;z-index:100050;background:radial-gradient(circle at 50% 30%,#241a12 0%,#0d0a0f 75%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;opacity:0;transition:opacity .35s ease}",
       "#event-splash.visible{opacity:1}",
-      "#event-splash .ev-board{position:relative;max-width:520px;width:100%;max-height:82vh;border-radius:16px;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.6)}",
-      "#event-splash .ev-board img{display:block;width:100%;height:100%;object-fit:contain;max-height:82vh}",
+      "#event-splash .ev-board{position:relative;width:min(460px,92vw);max-height:88vh;aspect-ratio:1086/1448;border-radius:14px;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.6);container-type:inline-size}",
+      "#event-splash .ev-board img{display:block;width:100%;height:100%;object-fit:cover}",
+      "#event-splash .ev-menu{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.6cqw;overflow-y:auto;text-align:center}",
+      "#event-splash .ev-menu-item{font-family:Georgia,'Times New Roman',serif;color:var(--ev-accent,#ff7518);font-weight:600;font-size:3.6cqw;line-height:1.25;cursor:pointer;text-shadow:0 1px 3px rgba(0,0,0,.75)}",
+      "#event-splash .ev-menu-item:active{opacity:.55}",
       "#event-splash .ev-fallback{display:flex;align-items:center;justify-content:center;min-height:60vh;background:#15121a;color:var(--ev-accent,#ff7518);font-weight:800;font-size:34px;text-align:center;letter-spacing:1px;padding:30px;border:2px solid var(--ev-accent,#ff7518)}",
       "#event-splash .ev-close{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(255,255,255,.5);background:rgba(0,0,0,.45);color:#fff;font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}",
       "#event-splash .ev-cta{margin-top:18px;background:var(--ev-accent,#ff7518);color:#fff;border:none;border-radius:50px;padding:14px 26px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.4)}",
@@ -288,10 +296,25 @@
     var imgBlock = ev.image
       ? '<img src="' + ev.image + '" alt="' + ev.nom + '" onerror="this.closest(\'.ev-board\').innerHTML=\'<div class=&quot;ev-fallback&quot;>' + ev.titre.replace(/'/g, "") + '</div>\'">'
       : '<div class="ev-fallback">' + ev.titre + "</div>";
+    // Menu "écrit" sur l'ardoise (chaque ligne ouvre la recette)
+    var R = window.recettes || {};
+    var menuKeys = (ev.recettes || []).filter(function (k) { return R[k]; }).slice(0, 6);
+    var menuHtml = "";
+    if (ev.image && menuKeys.length) {
+      var z = ev.menuZone || ZONE_DEFAUT;
+      var items = menuKeys.map(function (k) {
+        var r = R[k] || {};
+        var nom = (r.nom || k).replace(/"/g, "&quot;");
+        var emo = r.emoji ? (r.emoji + " ") : "";
+        var cat = (r.cat || "").replace(/'/g, "\\'");
+        return '<div class="ev-menu-item" onclick="lcFermerEventSplash();lcEventOuvrir(\'' + k + "','" + cat + '\')">' + emo + nom + "</div>";
+      }).join("");
+      menuHtml = '<div class="ev-menu" style="top:' + z.top + ";bottom:" + z.bottom + ";left:" + z.left + ";right:" + z.right + '">' + items + "</div>";
+    }
     ov.innerHTML =
       '<div class="ev-board">' +
         '<button class="ev-close" aria-label="Fermer" onclick="lcFermerEventSplash()">✕</button>' +
-        imgBlock +
+        imgBlock + menuHtml +
       "</div>" +
       '<button class="ev-cta" onclick="lcEventCTA()">' + (ev.cta || "Découvrir") + "</button>" +
       '<button class="ev-skip" onclick="lcFermerEventSplash()">Passer</button>';
