@@ -33,11 +33,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍋", titre: "Préparer le verre", detail: "Dans un grand verre, mettre les feuilles de menthe et le sucre de canne. Ajouter le jus du citron vert. Piler doucement (pas trop fort — juste pour libérer les arômes).", badge: null },
-      { icone: "🧊", titre: "Ajouter la glace", detail: "Remplir le verre de glace pilée ou de glaçons.", badge: null },
-      { icone: "🍶", titre: "Verser le rhum", detail: "Verser le rhum blanc sur la glace.", badge: null },
-      { icone: "💧", titre: "Compléter et servir", detail: "Compléter avec l'eau gazeuse. Mélanger délicatement avec une cuillère longue. Garnir d'une branche de menthe et d'une rondelle de citron vert.", badge: null }
-    ]
+        { icone: "🌿", titre: "Préparer la menthe", detail: "Mettre les feuilles de menthe et le sucre de canne dans un grand verre.", badge: null },
+        { icone: "🥄", titre: "Piler", detail: "Presser le jus de citron vert dessus et piler doucement. ASTUCE CHEF : pilez juste pour libérer les huiles de la menthe sans la déchirer, sinon ça devient amer.", badge: null },
+        { icone: "🧊", titre: "Glace", detail: "Remplir le verre de glace pilée.", badge: null },
+        { icone: "🍶", titre: "Rhum", detail: "Verser le rhum blanc sur la glace.", badge: null },
+        { icone: "💧", titre: "Allonger", detail: "Compléter avec l'eau gazeuse et mélanger délicatement à la cuillère.", badge: null },
+        { icone: "🌱", titre: "Garnir", detail: "Garnir d'une branche de menthe et d'une rondelle de citron vert.", badge: null }
+      ]
   },
   margarita: {
     nom: "Margarita",
@@ -66,10 +68,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧂", titre: "Givrer le verre", detail: "Frotter le bord du verre avec un quartier de citron vert. Tremper dans du sel fin pour givrer.", badge: null },
-      { icone: "🍹", titre: "Shaker", detail: "Dans un shaker avec de la glace, verser tequila, triple sec et jus de citron vert. Shaker vigoureusement 10-15 secondes.", badge: "⏱ 15 sec" },
-      { icone: "🍸", titre: "Servir", detail: "Filtrer dans le verre givré. Garnir d'une rondelle de citron vert.", badge: null }
-    ]
+        { icone: "🧂", titre: "Givrer le verre", detail: "Frotter le bord du verre avec un quartier de citron vert et le tremper dans du sel fin.", badge: null },
+        { icone: "🧊", titre: "Glace au shaker", detail: "Remplir le shaker de glace.", badge: null },
+        { icone: "🍶", titre: "Doser", detail: "Verser tequila, triple sec et jus de citron vert frais. ASTUCE CHEF : un citron vert pressé minute fait toute la différence avec un jus en bouteille.", badge: null },
+        { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement pour bien refroidir.", badge: "⏱ 15 sec" },
+        { icone: "🍸", titre: "Filtrer", detail: "Filtrer dans le verre givré, sur glace ou nature.", badge: null },
+        { icone: "🍈", titre: "Garnir", detail: "Garnir d'une rondelle de citron vert.", badge: null }
+      ]
   },
   cosmopolitan: {
     nom: "Cosmopolitan",
@@ -98,11 +103,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🍹", titre: "Shaker avec glace", detail: "Mettre de la glace dans le shaker. Ajouter vodka citronnée, Cointreau, jus de cranberry et jus de citron vert.", badge: null },
-      { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement une quinzaine de secondes.", badge: "⏱ 15 sec" },
-      { icone: "🍸", titre: "Filtrer et servir", detail: "Filtrer dans un verre à cocktail refroidi. Garnir d'un zeste de citron vert.", badge: null }
-    ]
+        { icone: "❄️", titre: "Refroidir le verre", detail: "Placer le verre à cocktail au congélateur. ASTUCE CHEF : un verre glacé garde le cocktail à bonne température bien plus longtemps.", badge: "⏱ 10 min" },
+        { icone: "🧊", titre: "Glace au shaker", detail: "Remplir le shaker de glace.", badge: null },
+        { icone: "🍸", titre: "Doser", detail: "Verser vodka citronnée, Cointreau, jus de cranberry et jus de citron vert.", badge: null },
+        { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement.", badge: "⏱ 15 sec" },
+        { icone: "🍸", titre: "Filtrer", detail: "Filtrer dans le verre refroidi.", badge: null },
+        { icone: "🍊", titre: "Garnir", detail: "Garnir d'un zeste de citron vert.", badge: null }
+      ]
   },
   spritz: {
     nom: "Spritz Aperol",
@@ -131,10 +138,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧊", titre: "Préparer le verre", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
-      { icone: "🥂", titre: "Verser dans l'ordre", detail: "Verser d'abord le prosecco, puis l'Aperol, puis l'eau gazeuse. Cet ordre préserve les bulles.", badge: null },
-      { icone: "🍊", titre: "Garnir et servir", detail: "Garnir d'une rondelle d'orange et d'une olive verte. Mélanger très délicatement.", badge: null }
-    ]
+        { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
+        { icone: "🥂", titre: "Prosecco", detail: "Verser d'abord le prosecco.", badge: null },
+        { icone: "🍊", titre: "Aperol", detail: "Ajouter l'Aperol. ASTUCE CHEF : prosecco avant Aperol, cet ordre préserve les bulles et la jolie teinte orangée.", badge: null },
+        { icone: "💧", titre: "Eau gazeuse", detail: "Compléter d'un trait d'eau gazeuse.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Remuer très délicatement.", badge: null },
+        { icone: "🍊", titre: "Garnir", detail: "Garnir d'une rondelle d'orange et d'une olive verte.", badge: null }
+      ]
   },
   sangria: {
     nom: "Sangria",
@@ -163,11 +173,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍊", titre: "Préparer les fruits", detail: "Couper orange, citron et pêche en tranches ou en dés. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍷", titre: "Mélanger", detail: "Dans un grand pichet, verser le vin rouge, le brandy, le jus d'orange et le sucre. Bien mélanger pour dissoudre le sucre.", badge: null },
-      { icone: "🍑", titre: "Ajouter les fruits", detail: "Ajouter les fruits coupés. Mélanger.", badge: null },
-      { icone: "❄️", titre: "Repos au frigo", detail: "Réfrigérer au moins 2h pour que les saveurs se mélangent. Servir avec des glaçons et compléter avec du jus d'orange si trop fort.", badge: "⏱ 2h minimum" }
-    ]
+        { icone: "🍊", titre: "Les fruits", detail: "Couper orange, citron et pêche en tranches ou en dés.", badge: null },
+        { icone: "🍷", titre: "La base", detail: "Dans un grand pichet, mélanger le vin rouge, le brandy, le jus d'orange et le sucre jusqu'à dissolution.", badge: null },
+        { icone: "🍑", titre: "Macérer les fruits", detail: "Ajouter les fruits coupés.", badge: null },
+        { icone: "❄️", titre: "Repos", detail: "Réfrigérer pour que les saveurs se marient. ASTUCE CHEF : préparez-la la veille, elle n'en sera que meilleure.", badge: "⏱ 2h minimum" },
+        { icone: "🧊", titre: "Au service", detail: "Servir avec des glaçons.", badge: null },
+        { icone: "🍹", titre: "Ajuster", detail: "Allonger d'un peu de jus d'orange si elle est trop forte.", badge: null }
+      ]
   },
   pinacolada: {
     nom: "Piña Colada",
@@ -196,10 +208,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mettre tous les ingrédients dans un blender avec la glace pilée. Mixer jusqu'à obtenir une texture lisse et crémeuse.", badge: "⏱ 30 sec blender" },
-      { icone: "🥥", titre: "Servir", detail: "Verser dans un grand verre. Garnir d'une tranche d'ananas et d'une cerise. Servir avec une paille.", badge: null }
-    ]
+        { icone: "❄️", titre: "Refroidir le verre", detail: "Placer le grand verre au congélateur.", badge: "⏱ 10 min" },
+        { icone: "🍍", titre: "Préparer", detail: "Réunir rhum blanc, crème de coco, jus d'ananas et glace pilée. ASTUCE CHEF : du jus d'ananas bien frais (ou des morceaux congelés) donne une texture plus onctueuse.", badge: null },
+        { icone: "🌀", titre: "Mixer", detail: "Mixer le tout au blender jusqu'à une texture lisse et crémeuse.", badge: "⏱ 30 sec" },
+        { icone: "🥥", titre: "Verser", detail: "Verser dans le verre glacé.", badge: null },
+        { icone: "🍒", titre: "Garnir", detail: "Garnir d'une tranche d'ananas et d'une cerise.", badge: null },
+        { icone: "🥤", titre: "Servir", detail: "Servir avec une paille.", badge: null }
+      ]
   },
   daiquiri: {
     nom: "Daiquiri",
@@ -228,11 +243,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🍹", titre: "Shaker avec glace", detail: "Mettre de la glace dans le shaker. Ajouter rhum blanc, jus de citron vert fraîchement pressé et sirop de sucre de canne.", badge: null },
-      { icone: "🥶", titre: "Shaker vigoureusement", detail: "Shaker fort pendant 15 secondes pour bien refroidir et diluer légèrement.", badge: "⏱ 15 sec" },
-      { icone: "🍸", titre: "Filtrer et servir", detail: "Filtrer dans un verre à cocktail refroidi. Garnir d'un zeste de citron vert.", badge: null }
-    ]
+        { icone: "❄️", titre: "Refroidir le verre", detail: "Placer le verre à cocktail au congélateur.", badge: "⏱ 10 min" },
+        { icone: "🧊", titre: "Glace au shaker", detail: "Remplir le shaker de glace.", badge: null },
+        { icone: "🍋", titre: "Doser", detail: "Verser rhum blanc, jus de citron vert pressé minute et sirop de sucre de canne. ASTUCE CHEF : l'équilibre acide-sucre est tout, goûtez et ajustez le sirop.", badge: null },
+        { icone: "🥶", titre: "Shaker", detail: "Shaker fort pour refroidir et diluer légèrement.", badge: "⏱ 15 sec" },
+        { icone: "🍸", titre: "Filtrer", detail: "Filtrer dans le verre refroidi.", badge: null },
+        { icone: "🍈", titre: "Garnir", detail: "Garnir d'un zeste de citron vert.", badge: null }
+      ]
   },
   whiskysour: {
     nom: "Whisky Sour",
@@ -261,11 +278,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🥚", titre: "Dry shake", detail: "Mettre tous les ingrédients dans le shaker SANS glace. Shaker fort 10 sec pour émulsionner le blanc d'œuf.", badge: "⏱ 10 sec sans glace" },
-      { icone: "🧊", titre: "Wet shake", detail: "Ajouter de la glace et shaker à nouveau vigoureusement.", badge: "⏱ 15 sec avec glace" },
-      { icone: "🥃", titre: "Servir", detail: "Filtrer dans un verre avec glaçons. Garnir d'une cerise et d'une rondelle de citron. La mousse de blanc d'œuf doit être belle et onctueuse.", badge: null }
-    ]
+        { icone: "❄️", titre: "Refroidir le verre", detail: "Placer le verre au congélateur.", badge: "⏱ 10 min" },
+        { icone: "🍶", titre: "Doser", detail: "Mettre bourbon, jus de citron, sirop de sucre et blanc d'œuf dans le shaker.", badge: null },
+        { icone: "🥚", titre: "Dry shake", detail: "Shaker sans glace pour émulsionner le blanc d'œuf. ASTUCE CHEF : ce premier shake à sec est la clé d'une belle mousse onctueuse.", badge: "⏱ 10 sec" },
+        { icone: "🧊", titre: "Wet shake", detail: "Ajouter de la glace et shaker à nouveau vigoureusement.", badge: "⏱ 15 sec" },
+        { icone: "🥃", titre: "Servir", detail: "Filtrer dans un verre avec glaçons.", badge: null },
+        { icone: "🍒", titre: "Garnir", detail: "Décorer d'une cerise et d'une rondelle de citron.", badge: null }
+      ]
   },
   mojitorose: {
     nom: "Mojito Rosé",
@@ -294,11 +313,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍓", titre: "Écraser les fraises", detail: "Couper les fraises en deux et les placer dans le verre avec le sucre. Écraser doucement pour libérer le jus. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌿", titre: "Ajouter menthe et citron", detail: "Ajouter les feuilles de menthe et le jus de citron vert. Piler légèrement.", badge: null },
-      { icone: "🧊", titre: "Glace et rhum", detail: "Remplir de glace pilée. Verser le rhum blanc.", badge: null },
-      { icone: "💧", titre: "Compléter", detail: "Compléter avec l'eau gazeuse. Mélanger délicatement. Décorer d'une fraise et de menthe fraîche.", badge: null }
-    ]
+        { icone: "🍓", titre: "Écraser les fraises", detail: "Couper les fraises et les placer dans le verre avec le sucre, puis écraser doucement pour libérer le jus.", badge: null },
+        { icone: "🌿", titre: "Menthe et citron", detail: "Ajouter la menthe et le jus de citron vert, et piler légèrement. ASTUCE CHEF : pilez la menthe avec retenue, juste pour parfumer.", badge: null },
+        { icone: "🧊", titre: "Glace", detail: "Remplir de glace pilée.", badge: null },
+        { icone: "🍶", titre: "Rhum", detail: "Verser le rhum blanc.", badge: null },
+        { icone: "💧", titre: "Allonger", detail: "Compléter avec l'eau gazeuse et mélanger délicatement.", badge: null },
+        { icone: "🍓", titre: "Garnir", detail: "Décorer d'une fraise et de menthe fraîche.", badge: null }
+      ]
   },
   negroni: {
     nom: "Negroni",
@@ -327,11 +348,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧊", titre: "Verre plein de glace", detail: "Remplir un verre old-fashioned ou à vin de glaçons.", badge: null },
-      { icone: "🍶", titre: "Verser les 3 spiritueux", detail: "Verser gin, Campari et vermouth rouge en proportions égales. Mélanger doucement avec une cuillère longue pendant 30 secondes.", badge: "⏱ 30 sec mélange" },
-      { icone: "🍊", titre: "Zeste d'orange", detail: "Presser un zeste d'orange au-dessus du verre pour libérer les huiles essentielles. Frotter le rebord avec le zeste et déposer dans le verre.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
+        { icone: "🧊", titre: "Verre et glace", detail: "Remplir un verre old-fashioned de glaçons.", badge: null },
+        { icone: "🍶", titre: "Les trois spiritueux", detail: "Verser gin, Campari et vermouth rouge à parts égales.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Remuer doucement à la cuillère pour refroidir et lier. ASTUCE CHEF : on mélange, on ne shake pas, pour garder une texture limpide.", badge: "⏱ 30 sec" },
+        { icone: "🍊", titre: "Zeste d'orange", detail: "Presser un zeste d'orange au-dessus du verre pour libérer les huiles.", badge: null },
+        { icone: "🍶", titre: "Parfumer le bord", detail: "Frotter le rebord avec le zeste puis le déposer dans le verre.", badge: null },
+        { icone: "🍹", titre: "Servir", detail: "Servir bien frais, à déguster lentement.", badge: null }
+      ]
   },
   moscowmule: {
     nom: "Moscow Mule",
@@ -360,11 +383,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧊", titre: "Tasse en cuivre et glace", detail: "Remplir une tasse en cuivre (ou grand verre) de glace pilée.", badge: null },
-      { icone: "🍶", titre: "Vodka et citron", detail: "Verser la vodka. Presser le jus du citron vert par-dessus.", badge: null },
-      { icone: "💧", titre: "Ginger beer", detail: "Compléter avec la ginger beer bien froide. Mélanger délicatement.", badge: null },
-      { icone: "🌿", titre: "Garnir", detail: "Garnir de feuilles de menthe fraîche et d'une rondelle de citron vert.", badge: null }
-    ]
+        { icone: "🧊", titre: "Tasse en cuivre", detail: "Remplir une tasse en cuivre (ou un grand verre) de glace pilée.", badge: null },
+        { icone: "🍶", titre: "Vodka", detail: "Verser la vodka.", badge: null },
+        { icone: "🍋", titre: "Citron vert", detail: "Presser le jus de citron vert par-dessus.", badge: null },
+        { icone: "💧", titre: "Ginger beer", detail: "Compléter avec la ginger beer bien froide. ASTUCE CHEF : la tasse en cuivre garde le cocktail glacé plus longtemps, c'est sa raison d'être.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Remuer délicatement.", badge: null },
+        { icone: "🌿", titre: "Garnir", detail: "Garnir de menthe fraîche et d'une rondelle de citron vert.", badge: null }
+      ]
   },
   pornstarmartini: {
     nom: "Porn Star Martini",
@@ -393,11 +418,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍹", titre: "Shaker avec glace", detail: "Mettre de la glace dans le shaker. Ajouter vodka vanille, Passoa, jus de fruit de la passion et sirop de vanille.", badge: null },
-      { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement 15 secondes.", badge: "⏱ 15 sec" },
-      { icone: "🍸", titre: "Filtrer", detail: "Filtrer dans un verre à martini. Déposer une demi-passion flottante sur le dessus.", badge: null },
-      { icone: "🥂", titre: "Prosecco à part", detail: "Servir le prosecco dans un shot verre à côté — on l'ajoute au cocktail ou on le boit en une gorgée entre deux sips !", badge: null }
-    ]
+        { icone: "🧊", titre: "Glace au shaker", detail: "Remplir le shaker de glace.", badge: null },
+        { icone: "🍸", titre: "Doser", detail: "Verser vodka vanille, Passoa, jus de fruit de la passion et sirop de vanille.", badge: null },
+        { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement.", badge: "⏱ 15 sec" },
+        { icone: "🍸", titre: "Filtrer", detail: "Filtrer dans un verre à martini.", badge: null },
+        { icone: "🥭", titre: "Garnir", detail: "Déposer une demi-passion flottante sur le dessus. ASTUCE CHEF : choisissez un fruit de la passion bien ridé, signe de maturité et de douceur.", badge: null },
+        { icone: "🥂", titre: "Prosecco à part", detail: "Servir le prosecco dans un petit shot à côté, à boire entre deux gorgées.", badge: null }
+      ]
   },
   hugospritz: {
     nom: "Hugo Spritz",
@@ -426,11 +453,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
-      { icone: "🌸", titre: "Sirop de sureau", detail: "Verser le sirop de fleur de sureau (St. Germain ou autre).", badge: null },
-      { icone: "🍾", titre: "Prosecco et eau gazeuse", detail: "Verser le prosecco puis l'eau gazeuse. Mélanger très délicatement.", badge: null },
-      { icone: "🌿", titre: "Garnir", detail: "Ajouter menthe fraîche et rondelle de citron vert. Servir immédiatement.", badge: null }
-    ]
+        { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
+        { icone: "🌸", titre: "Sirop de sureau", detail: "Verser le sirop de fleur de sureau.", badge: null },
+        { icone: "🍾", titre: "Prosecco", detail: "Ajouter le prosecco. ASTUCE CHEF : versez le prosecco le long du verre incliné pour préserver les bulles.", badge: null },
+        { icone: "💧", titre: "Eau gazeuse", detail: "Compléter d'un trait d'eau gazeuse.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Remuer très délicatement.", badge: null },
+        { icone: "🌿", titre: "Garnir", detail: "Ajouter menthe fraîche et rondelle de citron vert. Servir aussitôt.", badge: null }
+      ]
   },
   oldFashioned: {
     nom: "Old Fashioned",
@@ -459,11 +488,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍬", titre: "Dissoudre le sucre", detail: "Placer le morceau de sucre dans le verre. Ajouter les Angostura bitters et une cuillère à café d'eau. Écraser et dissoudre complètement.", badge: null },
-      { icone: "🧊", titre: "Grande glace", detail: "Ajouter un gros glaçon ou plusieurs glaçons. Le format gros glaçon est important — il fond moins vite.", badge: null },
-      { icone: "🥃", titre: "Verser le bourbon", detail: "Verser le bourbon. Mélanger lentement avec une cuillère longue pendant 30 secondes.", badge: "⏱ 30 sec mélange" },
-      { icone: "🍊", titre: "Zeste d'orange", detail: "Exprimer le zeste d'orange au-dessus du verre pour libérer les huiles. Frotter le bord et déposer ou suspendre sur le verre.", badge: null }
-    ]
+        { icone: "🍬", titre: "Le sucre", detail: "Placer le morceau de sucre dans le verre, ajouter les Angostura et un peu d'eau.", badge: null },
+        { icone: "🥄", titre: "Dissoudre", detail: "Écraser et dissoudre complètement le sucre.", badge: null },
+        { icone: "🧊", titre: "Gros glaçon", detail: "Ajouter un gros glaçon. ASTUCE CHEF : un gros glaçon fond lentement et dilue moins le cocktail.", badge: null },
+        { icone: "🥃", titre: "Bourbon", detail: "Verser le bourbon et mélanger lentement.", badge: "⏱ 30 sec" },
+        { icone: "🍊", titre: "Zeste d'orange", detail: "Exprimer le zeste d'orange au-dessus du verre pour libérer les huiles.", badge: null },
+        { icone: "🍶", titre: "Finir", detail: "Frotter le bord avec le zeste et le déposer dans le verre.", badge: null }
+      ]
   },
   gintoniqmaison: {
     nom: "Gin Tonic Maison",
@@ -492,11 +523,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍯", titre: "Verre ballon et glace", detail: "Utiliser un grand verre ballon (Copa glass). Remplir de glaçons jusqu'en haut.", badge: null },
-      { icone: "🌿", titre: "Aromates d'abord", detail: "Déposer les garnitures choisies sur la glace : rondelle de citron vert, grains de poivre rose, romarin, concombre... selon le style de gin.", badge: null },
-      { icone: "🍶", titre: "Verser le gin", detail: "Verser le gin sur la glace.", badge: null },
-      { icone: "💧", titre: "Tonic premium", detail: "Verser le tonic froid en filet contre le bord du verre pour préserver les bulles. Ne jamais remuer !", badge: null }
-    ]
+        { icone: "🍯", titre: "Verre ballon", detail: "Utiliser un grand verre ballon rempli de glaçons jusqu'en haut. ASTUCE CHEF : beaucoup de glace fond moins vite et dilue moins le gin.", badge: null },
+        { icone: "🌿", titre: "Aromates", detail: "Déposer les garnitures sur la glace (citron vert, poivre rose, romarin, concombre) selon le gin.", badge: null },
+        { icone: "🍶", titre: "Gin", detail: "Verser le gin sur la glace.", badge: null },
+        { icone: "💧", titre: "Tonic", detail: "Verser le tonic froid en filet contre le bord pour préserver les bulles.", badge: null },
+        { icone: "🥄", titre: "Ne pas remuer", detail: "Laisser les arômes infuser sans remuer.", badge: null },
+        { icone: "🍋", titre: "Servir", detail: "Servir aussitôt, bien frais.", badge: null }
+      ]
   },
   tequilasunrise: {
     nom: "Tequila Sunrise",
@@ -525,11 +558,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre de glaçons.", badge: null },
-      { icone: "🍊", titre: "Verser tequila et orange", detail: "Verser la tequila puis le jus d'orange. Mélanger légèrement.", badge: null },
-      { icone: "🌅", titre: "Grenadine", detail: "Verser doucement la grenadine le long du verre — elle va couler au fond et créer le dégradé. NE PAS mélanger ! Garnir d'une tranche d'orange.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
+        { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre de glaçons.", badge: null },
+        { icone: "🍶", titre: "Tequila", detail: "Verser la tequila.", badge: null },
+        { icone: "🍊", titre: "Jus d'orange", detail: "Compléter avec le jus d'orange et mélanger légèrement.", badge: null },
+        { icone: "🌅", titre: "Grenadine", detail: "Verser doucement la grenadine le long du verre : elle coule au fond et crée le dégradé. ASTUCE CHEF : versez-la sur le dos d'une cuillère pour un dégradé net.", badge: null },
+        { icone: "🍊", titre: "Garnir", detail: "Garnir d'une tranche d'orange, sans remuer.", badge: null },
+        { icone: "🍹", titre: "Servir", detail: "Servir aussitôt, bien frais.", badge: null }
+      ]
   },
   aperolspritzrosa: {
     nom: "Spritz Aperol Rosé",
@@ -558,11 +593,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
-      { icone: "🌸", titre: "Aperol et rosé", detail: "Verser l'Aperol puis le rosé pétillant. Compléter avec l'eau gazeuse.", badge: null },
-      { icone: "🍓", titre: "Garnir", detail: "Garnir d'une fraise et mélanger très délicatement.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
+        { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre à vin de glaçons.", badge: null },
+        { icone: "🍊", titre: "Aperol", detail: "Verser l'Aperol.", badge: null },
+        { icone: "🌸", titre: "Rosé pétillant", detail: "Ajouter le rosé pétillant. ASTUCE CHEF : tout bien frais au départ, sinon la glace fond et dilue trop vite.", badge: null },
+        { icone: "💧", titre: "Eau gazeuse", detail: "Compléter d'un trait d'eau gazeuse.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Remuer très délicatement.", badge: null },
+        { icone: "🍓", titre: "Garnir", detail: "Garnir d'une fraise.", badge: null }
+      ]
   },
   espressoMartini: {
     nom: "Espresso Martini",
@@ -591,11 +628,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "☕", titre: "Préparer l'espresso", detail: "Faire un espresso serré et le laisser refroidir légèrement.", badge: null },
-      { icone: "🍹", titre: "Shaker avec glace", detail: "Dans un shaker avec beaucoup de glace, verser vodka, Kahlúa, espresso et sirop de sucre.", badge: null },
-      { icone: "🥶", titre: "Shaker fort", detail: "Shaker très vigoureusement 15-20 secondes — plus c'est fort, plus la mousse est belle.", badge: "⏱ 20 sec" },
-      { icone: "☕", titre: "Filtrer", detail: "Filtrer dans un verre à martini. La belle mousse crémeuse doit se former en surface. Décorer de 3 grains de café.", badge: null }
-    ]
+        { icone: "☕", titre: "L'espresso", detail: "Faire un espresso serré et le laisser tiédir. ASTUCE CHEF : un café tiède, pas chaud, shaké fort donne la plus belle mousse.", badge: null },
+        { icone: "🧊", titre: "Glace au shaker", detail: "Remplir le shaker de beaucoup de glace.", badge: null },
+        { icone: "🍸", titre: "Doser", detail: "Verser vodka, liqueur de café, espresso et sirop de sucre.", badge: null },
+        { icone: "🥶", titre: "Shaker fort", detail: "Shaker très vigoureusement pour créer la mousse.", badge: "⏱ 20 sec" },
+        { icone: "🍸", titre: "Filtrer", detail: "Filtrer dans un verre à martini : la mousse crémeuse se forme en surface.", badge: null },
+        { icone: "☕", titre: "Garnir", detail: "Décorer de trois grains de café.", badge: null }
+      ]
   },
   punchfruitsrouges: {
     nom: "Punch aux Fruits Rouges",
@@ -624,11 +663,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍓", titre: "Écraser les fruits", detail: "Écraser légèrement fraises et framboises dans le pichet. Ajouter sucre et jus de citron vert.", badge: null },
-      { icone: "🍶", titre: "Ajouter les liquides", detail: "Verser rhum, jus de fruits rouges et jus d'orange. Mélanger.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Mettre au frigo 1h pour que les saveurs se mélangent.", badge: "⏱ 1h frigo" },
-      { icone: "🥂", titre: "Servir", detail: "Au moment de servir, ajouter ginger beer et glaçons. Garnir de fruits frais.", badge: null }
-    ]
+        { icone: "🍓", titre: "Écraser les fruits", detail: "Écraser légèrement fraises et framboises dans un pichet avec le sucre et le jus de citron vert.", badge: null },
+        { icone: "🍶", titre: "Les alcools et jus", detail: "Verser le rhum, le jus de fruits rouges et le jus d'orange, puis mélanger.", badge: null },
+        { icone: "❄️", titre: "Réfrigérer", detail: "Réfrigérer pour que les saveurs se marient. ASTUCE CHEF : préparez tout sauf la ginger beer à l'avance, vous la verserez au dernier moment.", badge: "⏱ 1h" },
+        { icone: "🧊", titre: "Glaçons", detail: "Au service, ajouter des glaçons.", badge: null },
+        { icone: "💧", titre: "Ginger beer", detail: "Compléter avec la ginger beer bien froide.", badge: null },
+        { icone: "🍓", titre: "Garnir", detail: "Garnir de fruits frais.", badge: null }
+      ]
   },
   blueLagoon: {
     nom: "Blue Lagoon",
@@ -657,11 +698,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre de glaçons.", badge: null },
-      { icone: "🫐", titre: "Vodka et curaçao", detail: "Verser la vodka et le curaçao bleu.", badge: null },
-      { icone: "💧", titre: "Limonade", detail: "Compléter avec la limonade et le jus de citron. Mélanger délicatement. Garnir d'une rondelle de citron.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
+        { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre de glaçons.", badge: null },
+        { icone: "🍶", titre: "Vodka", detail: "Verser la vodka.", badge: null },
+        { icone: "🫐", titre: "Curaçao bleu", detail: "Ajouter le curaçao bleu. ASTUCE CHEF : dosez le curaçao avec mesure, il colore vite et sucre beaucoup.", badge: null },
+        { icone: "💧", titre: "Limonade", detail: "Compléter avec la limonade et le jus de citron.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Remuer délicatement.", badge: null },
+        { icone: "🍋", titre: "Garnir", detail: "Garnir d'une rondelle de citron.", badge: null }
+      ]
   },
   mimosa: {
     nom: "Mimosa",
@@ -690,12 +733,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🍊", titre: "Presser les oranges", detail: "Presser des oranges fraîches. Filtrer le jus.", badge: null },
-      { icone: "🍾", titre: "Champagne d'abord", detail: "Verser d'abord le champagne bien froid dans la flûte.", badge: null },
-      { icone: "🍊", titre: "Jus d'orange", detail: "Compléter doucement avec le jus d'orange. Ne pas mélanger — laisser les couches naturelles. Garnir d'un zeste d'orange.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
+        { icone: "❄️", titre: "Refroidir la flûte", detail: "Placer la flûte au congélateur.", badge: "⏱ 10 min" },
+        { icone: "🍊", titre: "Presser les oranges", detail: "Presser des oranges fraîches et filtrer le jus. ASTUCE CHEF : un jus pressé minute change tout face à un jus industriel.", badge: null },
+        { icone: "🍾", titre: "Champagne", detail: "Verser d'abord le champagne bien froid dans la flûte.", badge: null },
+        { icone: "🍊", titre: "Jus d'orange", detail: "Compléter doucement avec le jus d'orange.", badge: null },
+        { icone: "🥄", titre: "Laisser les couches", detail: "Ne pas mélanger pour garder les couches naturelles.", badge: null },
+        { icone: "🍊", titre: "Garnir", detail: "Garnir d'un zeste d'orange et servir aussitôt.", badge: null }
+      ]
   },
   sidecarvintage: {
     nom: "Sidecar",
@@ -724,11 +768,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍬", titre: "Givrer au sucre", detail: "Frotter le rebord du verre avec un quartier de citron. Tremper dans le sucre fin.", badge: null },
-      { icone: "🍹", titre: "Shaker avec glace", detail: "Dans un shaker avec glace, verser cognac, Cointreau et jus de citron frais.", badge: null },
-      { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement 15 secondes.", badge: "⏱ 15 sec" },
-      { icone: "🥃", titre: "Filtrer et servir", detail: "Filtrer dans le verre givré. Garnir d'un zeste de citron.", badge: null }
-    ]
+        { icone: "🍬", titre: "Givrer au sucre", detail: "Frotter le rebord du verre avec un quartier de citron et le tremper dans le sucre fin.", badge: null },
+        { icone: "🧊", titre: "Glace au shaker", detail: "Remplir le shaker de glace.", badge: null },
+        { icone: "🍹", titre: "Doser", detail: "Verser cognac, Cointreau et jus de citron frais. ASTUCE CHEF : l'équilibre classique tourne autour de 2-1-1, ajustez selon votre goût.", badge: null },
+        { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement.", badge: "⏱ 15 sec" },
+        { icone: "🥃", titre: "Filtrer", detail: "Filtrer dans le verre givré.", badge: null },
+        { icone: "🍋", titre: "Garnir", detail: "Garnir d'un zeste de citron.", badge: null }
+      ]
   },
   gingerlemondrop: {
     nom: "Ginger Lemon Drop",
@@ -757,11 +803,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍋", titre: "Givrer au sucre", detail: "Frotter le rebord d'un verre avec citron. Tremper dans le sucre fin.", badge: null },
-      { icone: "🍹", titre: "Shaker", detail: "Dans un shaker avec glace, verser vodka citronnée, jus de citron frais, sirop de gingembre et sirop de sucre.", badge: null },
-      { icone: "🥶", titre: "Shaker fort", detail: "Shaker 15 secondes.", badge: "⏱ 15 sec" },
-      { icone: "🍋", titre: "Filtrer et servir", detail: "Filtrer dans le verre givré. Garnir d'un zeste de citron et d'une tranche de gingembre confit.", badge: null }
-    ]
+        { icone: "🍬", titre: "Givrer au sucre", detail: "Frotter le rebord du verre avec du citron et le tremper dans le sucre fin.", badge: null },
+        { icone: "🧊", titre: "Glace au shaker", detail: "Remplir le shaker de glace.", badge: null },
+        { icone: "🍋", titre: "Doser", detail: "Verser vodka citronnée, jus de citron frais, sirop de gingembre et sirop de sucre. ASTUCE CHEF : un sirop de gingembre maison relève bien plus le cocktail qu'un sirop tout prêt.", badge: null },
+        { icone: "🥶", titre: "Shaker", detail: "Shaker fort.", badge: "⏱ 15 sec" },
+        { icone: "🍸", titre: "Filtrer", detail: "Filtrer dans le verre givré.", badge: null },
+        { icone: "🫚", titre: "Garnir", detail: "Garnir d'un zeste de citron et d'une tranche de gingembre confit.", badge: null }
+      ]
   },
   coktailcosmopolitan: {
     nom: "Sex on the Beach",
@@ -790,11 +838,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre de glaçons.", badge: null },
-      { icone: "🍸", titre: "Verser", detail: "Verser vodka, liqueur de pêche et jus d'orange. Mélanger.", badge: null },
-      { icone: "🍒", titre: "Cranberry", detail: "Verser doucement le jus de cranberry. Il va couler au fond. Garnir d'une tranche d'orange.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
+        { icone: "🧊", titre: "Verre et glace", detail: "Remplir un grand verre de glaçons.", badge: null },
+        { icone: "🍑", titre: "Doser", detail: "Verser vodka, liqueur de pêche et jus d'orange, puis mélanger.", badge: null },
+        { icone: "🍒", titre: "Cranberry", detail: "Verser doucement le jus de cranberry : il coule au fond et crée le dégradé. ASTUCE CHEF : versez-le sur le dos d'une cuillère pour un effet bicolore net.", badge: null },
+        { icone: "🍊", titre: "Garnir", detail: "Garnir d'une tranche d'orange.", badge: null },
+        { icone: "🥤", titre: "Paille", detail: "Servir avec une paille pour mélanger à la dégustation.", badge: null },
+        { icone: "🍹", titre: "Servir", detail: "Servir aussitôt, bien frais.", badge: null }
+      ]
   },
   bellini: {
     nom: "Bellini Pêche",
@@ -807,10 +857,13 @@ Object.assign(recettes, {
     fixe: true,
     ingredientsFixes: [["prosecco","100 ml"],["peche","1 pêche"],["sucre","½ c.à.c"]],
     etapes: [
-      { icone: "🍑", titre: "Préparer la purée", detail: "Mixer la pêche blanche pelée avec le sucre et quelques gouttes de jus de citron jusqu'à consistance lisse.", badge: null },
-      { icone: "🍾", titre: "Verser le prosecco", detail: "Verser 2 cuillères à soupe de purée dans une flûte bien froide. Verser délicatement le prosecco froid.", badge: null },
-      { icone: "🥂", titre: "Mélanger et servir", detail: "Mélanger délicatement avec une cuillère longue. Décorer avec un quartier de pêche.", badge: null }
-    ]
+        { icone: "🍑", titre: "La purée", detail: "Mixer la pêche blanche pelée avec le sucre et quelques gouttes de jus de citron jusqu'à une purée lisse. ASTUCE CHEF : la pêche blanche bien mûre est l'âme du Bellini, ne la remplacez pas par une jaune.", badge: null },
+        { icone: "🫗", titre: "Filtrer", detail: "Passer la purée pour une texture parfaitement lisse (facultatif).", badge: null },
+        { icone: "🥂", titre: "Dans la flûte", detail: "Verser deux cuillères de purée dans une flûte bien froide.", badge: null },
+        { icone: "🍾", titre: "Prosecco", detail: "Verser délicatement le prosecco froid.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Remuer doucement à la cuillère longue.", badge: null },
+        { icone: "🍑", titre: "Garnir", detail: "Décorer d'un quartier de pêche.", badge: null }
+      ]
   },
   frenchMartini: {
     nom: "French Martini",
@@ -823,11 +876,13 @@ Object.assign(recettes, {
     fixe: true,
     ingredientsFixes: [["vodka","45 ml"],["ananas","45 ml"],["sirop","15 ml (Chambord)"],["glace","glaçons"]],
     etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🧊", titre: "Remplir le shaker", detail: "Remplir le shaker de glaçons. Verser vodka, jus d'ananas et Chambord.", badge: null },
-      { icone: "🍸", titre: "Shaker vigoureusement", detail: "Shaker 15 secondes vigoureusement pour créer la mousse caractéristique.", badge: "⏱ 15 sec" },
-      { icone: "🍷", titre: "Servir", detail: "Double filtration dans une coupe Martini froide. La mousse se forme en surface.", badge: null }
-    ]
+        { icone: "❄️", titre: "Refroidir la coupe", detail: "Placer la coupe à martini au congélateur.", badge: "⏱ 10 min" },
+        { icone: "🧊", titre: "Glace au shaker", detail: "Remplir le shaker de glaçons.", badge: null },
+        { icone: "🍍", titre: "Doser", detail: "Verser vodka, jus d'ananas et Chambord. ASTUCE CHEF : c'est le jus d'ananas, shaké fort, qui crée la fine mousse en surface.", badge: null },
+        { icone: "🥶", titre: "Shaker", detail: "Shaker vigoureusement.", badge: "⏱ 15 sec" },
+        { icone: "🍸", titre: "Double filtration", detail: "Filtrer deux fois dans la coupe refroidie.", badge: null },
+        { icone: "🍷", titre: "Servir", detail: "Servir aussitôt, la mousse en surface.", badge: null }
+      ]
   },
   darkStormyCocktail: {
     nom: "Dark & Stormy",
@@ -840,11 +895,13 @@ Object.assign(recettes, {
     fixe: true,
     ingredientsFixes: [["rhum","60 ml (rhum brun)"],["gingerBeer","120 ml"],["citrons","1 rondelle"],["glace","glaçons"]],
     etapes: [
-      { icone: "🧊", titre: "Remplir le verre", detail: "Remplir un verre highball de glaçons. Verser le ginger beer.", badge: null },
-      { icone: "⛈️", titre: "Ajouter le rhum", detail: "Verser délicatement le rhum brun par-dessus sans mélanger pour créer l'effet nuage.", badge: null },
-      { icone: "🍋", titre: "Garnir", detail: "Presser et déposer la rondelle de citron vert. Servir avec une paille.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
+        { icone: "🧊", titre: "Verre et glace", detail: "Remplir un verre highball de glaçons.", badge: null },
+        { icone: "💧", titre: "Ginger beer", detail: "Verser la ginger beer bien froide.", badge: null },
+        { icone: "⛈️", titre: "Le rhum", detail: "Verser délicatement le rhum brun par-dessus sans mélanger. ASTUCE CHEF : versez le rhum sur le dos d'une cuillère pour l'effet nuage d'orage en surface.", badge: null },
+        { icone: "🍋", titre: "Citron vert", detail: "Presser et déposer une rondelle de citron vert.", badge: null },
+        { icone: "🥤", titre: "Paille", detail: "Servir avec une paille, on mélange à la dégustation.", badge: null },
+        { icone: "🍹", titre: "Servir", detail: "Servir aussitôt, bien frais.", badge: null }
+      ]
   },
   amarettoSour: {
     nom: "Amaretto Sour",
@@ -857,11 +914,13 @@ Object.assign(recettes, {
     fixe: true,
     ingredientsFixes: [["cognac","50 ml (amaretto)"],["citrons","25 ml jus"],["sucre","10 ml sirop"],["blanc","15 ml"],["glace","glaçons"]],
     etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🥚", titre: "Dry shake", detail: "Mettre amaretto, jus de citron, sirop et blanc d'œuf dans le shaker SANS glaçons. Shaker 10 sec.", badge: "⏱ 10 sec" },
-      { icone: "🧊", titre: "Wet shake", detail: "Ajouter les glaçons. Shaker à nouveau vigoureusement 15 secondes.", badge: "⏱ 15 sec" },
-      { icone: "🍊", titre: "Servir", detail: "Filtrer dans un verre rocks sur glaçons. Décorer avec une cerise et un twist d'orange.", badge: null }
-    ]
+        { icone: "❄️", titre: "Refroidir le verre", detail: "Placer le verre au congélateur.", badge: "⏱ 10 min" },
+        { icone: "🥚", titre: "Dry shake", detail: "Mettre amaretto, jus de citron, sirop et blanc d'œuf dans le shaker sans glace, et shaker. ASTUCE CHEF : ce shake à sec monte le blanc d'œuf en une mousse veloutée.", badge: "⏱ 10 sec" },
+        { icone: "🧊", titre: "Wet shake", detail: "Ajouter les glaçons et shaker à nouveau vigoureusement.", badge: "⏱ 15 sec" },
+        { icone: "🥃", titre: "Servir", detail: "Filtrer dans un verre rocks sur glaçons.", badge: null },
+        { icone: "🍒", titre: "Garnir", detail: "Décorer d'une cerise.", badge: null },
+        { icone: "🍊", titre: "Twist", detail: "Ajouter un twist d'orange.", badge: null }
+      ]
   },
   aperolPamplemousse: {
     nom: "Aperol Pamplemousse",
@@ -874,12 +933,13 @@ Object.assign(recettes, {
     fixe: true,
     ingredientsFixes: [["campari","40 ml (Aperol)"],["orange","60 ml jus pamplemousse"],["tonic","60 ml prosecco"],["glace","glaçons"],["citrons","1 rondelle"]],
     etapes: [
-      { icone: "❄️", titre: "Préparer le verre", detail: "Mettre le verre au congélateur 10 min avant. ASTUCE BARTENDER : un verre froid garde le cocktail à bonne température plus longtemps et sublime l'expérience.", badge: "⏱ 10 min" },
-      { icone: "🧊", titre: "Remplir", detail: "Remplir un grand verre de glaçons.", badge: null },
-      { icone: "🍊", titre: "Verser", detail: "Verser l'Aperol, le jus de pamplemousse rose puis le prosecco.", badge: null },
-      { icone: "🌿", titre: "Garnir", detail: "Remuer délicatement. Décorer avec une rondelle de pamplemousse et un brin de romarin.", badge: null },
-      { icone: "🍹", titre: "Service final", detail: "Servir IMMÉDIATEMENT bien frais. À déguster lentement. Variante : adapter les proportions selon vos goûts. À votre santé !", badge: null }
-    ]
+        { icone: "❄️", titre: "Refroidir le verre", detail: "Placer le verre au congélateur.", badge: "⏱ 10 min" },
+        { icone: "🧊", titre: "Glace", detail: "Remplir un grand verre de glaçons.", badge: null },
+        { icone: "🍊", titre: "Doser", detail: "Verser l'Aperol, le jus de pamplemousse rose puis le prosecco. ASTUCE CHEF : le pamplemousse rose apporte juste ce qu'il faut d'amertume, prenez-le bien mûr.", badge: null },
+        { icone: "🥄", titre: "Mélanger", detail: "Remuer délicatement.", badge: null },
+        { icone: "🌿", titre: "Garnir", detail: "Décorer d'une rondelle de pamplemousse et d'un brin de romarin.", badge: null },
+        { icone: "🍹", titre: "Servir", detail: "Servir aussitôt, bien frais.", badge: null }
+      ]
   },
   caipirinha: {
     nom: "Caïpirinha",
@@ -1173,6 +1233,78 @@ Object.assign(recettes, {
       { icone: "🍸", titre: "Filtrer", detail: "Filtrer dans le verre à cocktail bien froid.", badge: null },
       { icone: "🍒", titre: "Garnir", detail: "Déposer une cerise au marasquin.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt. ASTUCE CHEF : le verre glacé garde le cocktail frais sans le diluer davantage.", badge: null }
+    ]
+  },
+  rossini: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T12:53:00",
+    cat: "cocktails", pays: "italie",
+    base: 4,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🍓",
+    description: "La version fraise du Bellini : une purée de fraises fraîches allongée de prosecco bien frais, pétillante et fruitée.",
+    tableauRossini: [
+      { nb: 1, fraises: "60 g", prosecco: "10 cl", sucre: "1 c.à.c" },
+      { nb: 2, fraises: "120 g", prosecco: "20 cl", sucre: "2 c.à.c" },
+      { nb: 3, fraises: "180 g", prosecco: "30 cl", sucre: "3 c.à.c" },
+      { nb: 4, fraises: "240 g", prosecco: "40 cl", sucre: "4 c.à.c" },
+      { nb: 5, fraises: "300 g", prosecco: "50 cl", sucre: "5 c.à.c" },
+      { nb: 6, fraises: "360 g", prosecco: "60 cl", sucre: "6 c.à.c" },
+      { nb: 7, fraises: "420 g", prosecco: "70 cl", sucre: "7 c.à.c" },
+      { nb: 8, fraises: "480 g", prosecco: "80 cl", sucre: "8 c.à.c" },
+      { nb: 9, fraises: "540 g", prosecco: "90 cl", sucre: "9 c.à.c" },
+      { nb: 10, fraises: "600 g", prosecco: "100 cl", sucre: "10 c.à.c" },
+      { nb: 11, fraises: "660 g", prosecco: "110 cl", sucre: "11 c.à.c" },
+      { nb: 12, fraises: "720 g", prosecco: "120 cl", sucre: "12 c.à.c" },
+      { nb: 13, fraises: "780 g", prosecco: "130 cl", sucre: "13 c.à.c" },
+      { nb: 14, fraises: "840 g", prosecco: "140 cl", sucre: "14 c.à.c" },
+      { nb: 15, fraises: "900 g", prosecco: "150 cl", sucre: "15 c.à.c" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍓", titre: "Purée", detail: "Mixer les fraises avec un peu de sucre jusqu'à un coulis lisse.", badge: null },
+      { icone: "🥣", titre: "Filtrer", detail: "Passer la purée au tamis. ASTUCE CHEF : filtrez la purée, sinon les pépins troublent le cocktail et cassent les bulles.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Réserver purée et prosecco bien au frais.", badge: null },
+      { icone: "🥂", titre: "Monter", detail: "Verser la purée de fraises au fond de la flûte.", badge: null },
+      { icone: "🍾", titre: "Allonger", detail: "Compléter doucement avec le prosecco frais.", badge: null },
+      { icone: "🥄", titre: "Servir", detail: "Remuer délicatement et servir aussitôt.", badge: null }
+    ]
+  },
+  fraisebasilicsmash: {
+    nom: "undefined",
+    dateAjout: "2026-06-06T12:52:00",
+    cat: "cocktails", pays: "etats-unis",
+    base: 4,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "Un smash frais et herbacé : fraises et basilic pilés, gin, citron, allongé d'un trait de soda.",
+    tableauFraisebasilicsmash: [
+      { nb: 1, fraises: "50 g", basilic: "2", gin: "5 cl", citron: "½", sucre: "½ c.à.c", soda: "trait" },
+      { nb: 2, fraises: "100 g", basilic: "4", gin: "10 cl", citron: "1", sucre: "1 c.à.c", soda: "trait" },
+      { nb: 3, fraises: "150 g", basilic: "6", gin: "15 cl", citron: "1½", sucre: "1½ c.à.c", soda: "trait" },
+      { nb: 4, fraises: "200 g", basilic: "8", gin: "20 cl", citron: "2", sucre: "2 c.à.c", soda: "trait" },
+      { nb: 5, fraises: "250 g", basilic: "10", gin: "25 cl", citron: "2½", sucre: "2½ c.à.c", soda: "trait" },
+      { nb: 6, fraises: "300 g", basilic: "12", gin: "30 cl", citron: "3", sucre: "3 c.à.c", soda: "trait" },
+      { nb: 7, fraises: "350 g", basilic: "14", gin: "35 cl", citron: "3½", sucre: "3½ c.à.c", soda: "trait" },
+      { nb: 8, fraises: "400 g", basilic: "16", gin: "40 cl", citron: "4", sucre: "4 c.à.c", soda: "trait" },
+      { nb: 9, fraises: "450 g", basilic: "18", gin: "45 cl", citron: "4½", sucre: "4½ c.à.c", soda: "trait" },
+      { nb: 10, fraises: "500 g", basilic: "20", gin: "50 cl", citron: "5", sucre: "5 c.à.c", soda: "trait" },
+      { nb: 11, fraises: "550 g", basilic: "22", gin: "55 cl", citron: "5½", sucre: "5½ c.à.c", soda: "trait" },
+      { nb: 12, fraises: "600 g", basilic: "24", gin: "60 cl", citron: "6", sucre: "6 c.à.c", soda: "trait" },
+      { nb: 13, fraises: "650 g", basilic: "26", gin: "65 cl", citron: "6½", sucre: "6½ c.à.c", soda: "trait" },
+      { nb: 14, fraises: "700 g", basilic: "28", gin: "70 cl", citron: "7", sucre: "7 c.à.c", soda: "trait" },
+      { nb: 15, fraises: "750 g", basilic: "30", gin: "75 cl", citron: "7½", sucre: "7½ c.à.c", soda: "trait" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍓", titre: "Piler", detail: "Piler fraises, basilic et sucre dans le verre pour libérer les arômes. ASTUCE CHEF : pilez le basilic juste assez pour qu'il parfume, trop pilé il devient amer.", badge: null },
+      { icone: "🍋", titre: "Citron", detail: "Ajouter le jus de citron.", badge: null },
+      { icone: "🍸", titre: "Gin", detail: "Verser le gin.", badge: null },
+      { icone: "🧊", titre: "Glace", detail: "Remplir de glace pilée.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Remuer pour bien rafraîchir.", badge: null },
+      { icone: "🫧", titre: "Allonger", detail: "Compléter d'un trait de soda, décorer d'une fraise et de basilic.", badge: null }
     ]
   },
 });
