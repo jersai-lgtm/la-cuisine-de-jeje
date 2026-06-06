@@ -225,7 +225,6 @@
       "#event-splash .ev-fallback{display:flex;align-items:center;justify-content:center;min-height:60vh;background:#15121a;color:var(--ev-accent,#ff7518);font-weight:800;font-size:34px;text-align:center;letter-spacing:1px;padding:30px;border:2px solid var(--ev-accent,#ff7518)}",
       "#event-splash .ev-close{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(255,255,255,.5);background:rgba(0,0,0,.45);color:#fff;font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}",
       "#event-splash .ev-cta{margin-top:18px;background:var(--ev-accent,#ff7518);color:#fff;border:none;border-radius:50px;padding:14px 26px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.4)}",
-      "#event-splash .ev-skip{margin-top:12px;background:none;border:none;color:#b3b0b8;font-size:13px;cursor:pointer;text-decoration:underline}",
       ".lc-event-decor{position:fixed;inset:0;pointer-events:none;z-index:40;overflow:hidden}",
       ".lc-event-decor span{position:absolute;top:-8%;font-size:22px;opacity:.45;animation:lcEvFall linear infinite}",
       "@keyframes lcEvFall{0%{transform:translateY(-10vh) rotate(0)}100%{transform:translateY(110vh) rotate(360deg)}}",
@@ -371,8 +370,7 @@
         '<button class="ev-close" aria-label="Fermer" onclick="lcFermerEventSplash()">✕</button>' +
         imgBlock + menuHtml +
       "</div>" +
-      '<button class="ev-cta" onclick="lcEventCTA()">' + (ev.cta || "Découvrir") + "</button>" +
-      '<button class="ev-skip" onclick="lcFermerEventSplash()">Passer</button>';
+      '<button class="ev-cta" onclick="lcEventCTA()">' + (ev.cta || "Découvrir") + "</button>";
     document.body.appendChild(ov);
     requestAnimationFrame(function () { ov.classList.add("visible"); });
     lsSet(clefVue(ev), "1");
