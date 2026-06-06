@@ -26,6 +26,9 @@
   function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   function lsDel(k) { try { localStorage.removeItem(k); } catch (e) {} }
 
+  // Accès au catalogue : `recettes` est un const global (pas attaché à window)
+  function lcRecettes() { try { if (typeof recettes !== "undefined" && recettes) return recettes; } catch (e) {} return window.recettes || {}; }
+
   // hex -> "r,g,b"
   function hexRgb(h) {
     h = String(h).replace("#", "");
@@ -93,7 +96,10 @@
       image: "images/event-noel.webp",
       emojis: ["🎄", "❄️", "⭐", "🎁", "🦌"],
       cta: "Voir le menu de Noël 🎄",
-      recettes: ["blinissaumon", "bellini", "mimosa", "chocolatChaud", "fondantchocolat", "millefeuille"],
+      menuZone: { top: "50%", bottom: "24%", left: "27%", right: "27%" },
+      menuColor: "#3a5a3f",
+      menuShadow: "none",
+      recettes: ["blinissaumon", "escargots", "saintjacquespoelees", "saumongravlax", "magretcanard", "bellini"],
       estActif: function (now) {
         var y = now.getFullYear();
         return entre(now, dateA(y, 12, 20), dateA(y, 12, 26, 23)); // 20 -> 26 déc
@@ -209,7 +215,7 @@
       "#event-splash .ev-board{position:relative;width:min(460px,92vw);max-height:88vh;aspect-ratio:1086/1448;border-radius:14px;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.6);container-type:inline-size}",
       "#event-splash .ev-board img{display:block;width:100%;height:100%;object-fit:cover}",
       "#event-splash .ev-menu{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.6cqw;overflow-y:auto;text-align:center}",
-      "#event-splash .ev-menu-item{font-family:Georgia,'Times New Roman',serif;color:var(--ev-accent,#ff7518);font-weight:600;font-size:3.6cqw;line-height:1.25;cursor:pointer;text-shadow:0 1px 3px rgba(0,0,0,.75)}",
+      "#event-splash .ev-menu-item{font-family:Georgia,'Times New Roman',serif;color:var(--ev-menu-color,var(--ev-accent,#ff7518));font-weight:600;font-size:3.6cqw;line-height:1.25;cursor:pointer;text-shadow:var(--ev-menu-shadow,0 1px 3px rgba(0,0,0,.75))}",
       "#event-splash .ev-menu-item:active{opacity:.55}",
       "#event-splash .ev-fallback{display:flex;align-items:center;justify-content:center;min-height:60vh;background:#15121a;color:var(--ev-accent,#ff7518);font-weight:800;font-size:34px;text-align:center;letter-spacing:1px;padding:30px;border:2px solid var(--ev-accent,#ff7518)}",
       "#event-splash .ev-close{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(255,255,255,.5);background:rgba(0,0,0,.45);color:#fff;font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}",
@@ -238,6 +244,8 @@
     root.style.setProperty("--accent-pale", ev.accentPale || eclaircir(ev.accent, 0.45));
     root.style.setProperty("--accent-light", ev.accentLight || eclaircir(ev.accent, 0.12));
     root.style.setProperty("--accent-rgb", hexRgb(ev.accent));
+    root.style.setProperty("--ev-menu-color", ev.menuColor || ev.accent);
+    root.style.setProperty("--ev-menu-shadow", ev.menuShadow || "0 1px 3px rgba(0,0,0,.75)");
     document.body.setAttribute("data-event", ev._id);
     // theme-color (barre système)
     try {
@@ -283,12 +291,12 @@
     var section = document.getElementById("section-accueil");
     if (!section) return;
     if (document.getElementById("lc-event-bloc")) return;
-    var R = window.recettes || {};
+    var R = lcRecettes();
     var cles = (ev.recettes || []).filter(function (k) { return R[k]; });
     if (!cles.length) return;
     var cards = cles.map(function (k) {
       var r = R[k] || {};
-      var nom = (r.nom || k).replace(/"/g, "&quot;");
+      var nom = (typeof getNomRecette==="function"?getNomRecette(k):(r.nom||k)).replace(/"/g, "&quot;");
       var cat = (r.cat || "").replace(/'/g, "\\'");
       return '<div class="lc-event-card" onclick="lcEventOuvrir(\'' + k + "','" + cat + '\')">' +
         '<img loading="lazy" src="images/' + k + '.webp" alt="" onerror="this.style.visibility=\'hidden\'">' +
@@ -303,7 +311,7 @@
   }
   window.lcEventOuvrir = function (cle, cat) {
     if (typeof ouvrirRecetteEtCategorie === "function") ouvrirRecetteEtCategorie(cle, cat);
-    else if (typeof ouvrirFiche === "function" && window.recettes && window.recettes[cle]) ouvrirFiche(window.recettes[cle]);
+    else if (typeof ouvrirFiche === "function" && lcRecettes()[cle]) ouvrirFiche(lcRecettes()[cle]);
   };
 
   // --- Splash plein écran -------------------------------------------------
@@ -322,14 +330,14 @@
       ? '<img src="' + ev.image + '" alt="' + ev.nom + '" onerror="this.closest(\'.ev-board\').innerHTML=\'<div class=&quot;ev-fallback&quot;>' + ev.titre.replace(/'/g, "") + '</div>\'">'
       : '<div class="ev-fallback">' + ev.titre + "</div>";
     // Menu "écrit" sur l'ardoise (chaque ligne ouvre la recette)
-    var R = window.recettes || {};
+    var R = lcRecettes();
     var menuKeys = (ev.recettes || []).filter(function (k) { return R[k]; }).slice(0, 6);
     var menuHtml = "";
     if (ev.image && menuKeys.length) {
       var z = ev.menuZone || ZONE_DEFAUT;
       var items = menuKeys.map(function (k) {
         var r = R[k] || {};
-        var nom = (r.nom || k).replace(/"/g, "&quot;");
+        var nom = (typeof getNomRecette==="function"?getNomRecette(k):(r.nom||k)).replace(/"/g, "&quot;");
         var emo = r.emoji ? (r.emoji + " ") : "";
         var cat = (r.cat || "").replace(/'/g, "\\'");
         return '<div class="ev-menu-item" onclick="lcFermerEventSplash();lcEventOuvrir(\'' + k + "','" + cat + '\')">' + emo + nom + "</div>";
