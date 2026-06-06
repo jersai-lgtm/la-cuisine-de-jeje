@@ -539,7 +539,11 @@ const LC_JOURS = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "
 // Mappe chaque recette du menu courant daté à ses jours (index 0=Lundi).
 // Gère semaine simple/complet et lunch box. Le menu thématique est ignoré (pas de jours).
 function lcMenuParJour() {
-  const m = window._derniersMenus;
+  let m = window._derniersMenus;
+  if ((!m || !Array.isArray(m.semaine)) && typeof chargerMenusSauvegardes === "function") {
+    const saved = chargerMenusSauvegardes();
+    if (saved && saved.menus) m = saved.menus;
+  }
   const map = {};
   if (!m || !Array.isArray(m.semaine)) return map;
   const add = (cle, idx) => { if (!cle) return; (map[cle] = map[cle] || []); if (!map[cle].includes(idx)) map[cle].push(idx); };
@@ -558,7 +562,11 @@ function lcMenuParJour() {
 
 // Détail par jour : index -> [{ cle, creneau, role }] (pour la vue « Chaque soir »)
 function lcMenuParJourDetail() {
-  const m = window._derniersMenus;
+  let m = window._derniersMenus;
+  if ((!m || !Array.isArray(m.semaine)) && typeof chargerMenusSauvegardes === "function") {
+    const saved = chargerMenusSauvegardes();
+    if (saved && saved.menus) m = saved.menus;
+  }
   const out = {};
   if (!m || !Array.isArray(m.semaine)) return out;
   m.semaine.forEach(jour => {
@@ -631,15 +639,18 @@ function lcGenererPlanPrep() {
         </div>
       </div>`;
     }).join("");
-    return `<div style="margin-bottom:16px">
-      <div style="display:flex;align-items:center;gap:9px;margin-bottom:4px">
+    return `<details class="lc-acc" style="margin-bottom:10px">
+      <summary>
         <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#ff4d88;color:#fff;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center">${i + 1}</span>
-        <span style="font-size:15px;font-weight:500;color:#fff;flex:1">${phase.icone} ${phase.titre}</span>
-        <span style="font-size:11px;color:#88858f">${groupesArr.length} étape${groupesArr.length > 1 ? "s" : ""}</span>
+        <span style="font-size:15px;font-weight:500;color:#fff">${phase.icone} ${phase.titre}</span>
+        <span class="lc-acc-count">${groupesArr.length} étape${groupesArr.length > 1 ? "s" : ""}</span>
+        <span class="lc-acc-chev">▸</span>
+      </summary>
+      <div style="margin-top:8px">
+        <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">${phase.note}</div>
+        <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${steps}</div>
       </div>
-      <div style="font-size:12px;color:#9a97a0;margin:0 0 9px 33px">${phase.note}</div>
-      <div style="display:flex;flex-direction:column;gap:7px;margin-left:33px">${steps}</div>
-    </div>`;
+    </details>`;
   }).join("");
 
   // Conservation — datée si un menu courant existe (écart prep -> conso), sinon générique
@@ -706,10 +717,11 @@ function lcGenererPlanPrep() {
   const consIntro = aMenu
     ? `Calculé pour une prép le <strong style="color:#fff">${window._lcJourPrep}</strong> · 🟢 frigo OK · 🔵 à congeler · 🔴 à préparer plus tard.`
     : `🔴 à manger en premier · 🟠 assez vite · 🟢 se garde bien / se congèle. Congèle ce que tu ne finiras pas à temps. 😊`;
-  const conservationBloc = `<details class="lc-acc"${fragiles.length ? " open" : ""} style="margin-bottom:4px">
+  const conservationBloc = `<details class="lc-acc" style="margin-bottom:10px">
       <summary>
         <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#3a6ea5;color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center">🥶</span>
         <span style="font-size:15px;font-weight:500;color:#fff">Conservation & congélation</span>
+        ${fragiles.length ? `<span style="font-size:11px;color:#ff8f8f;font-weight:600">⚠️ ${fragiles.length}</span>` : ""}
         <span class="lc-acc-count">${consData.length}</span>
         <span class="lc-acc-chev">▸</span>
       </summary>
@@ -737,8 +749,8 @@ function lcGenererPlanPrep() {
     #lc-plan-prep .prep-step.prep-open .prep-step-detail{display:block}
     #lc-plan-prep .lc-acc>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:9px;padding:5px 0}
     #lc-plan-prep .lc-acc>summary::-webkit-details-marker{display:none}
-    #lc-plan-prep .lc-acc-count{font-size:11px;color:#88858f;background:rgba(255,255,255,.06);padding:1px 8px;border-radius:999px}
-    #lc-plan-prep .lc-acc-chev{margin-left:auto;color:#88858f;font-size:12px;transition:transform .15s ease}
+    #lc-plan-prep .lc-acc-count{font-size:11px;color:#88858f;background:rgba(255,255,255,.06);padding:1px 8px;border-radius:999px;margin-left:auto}
+    #lc-plan-prep .lc-acc-chev{color:#88858f;font-size:12px;transition:transform .15s ease;margin-left:8px}
     #lc-plan-prep .lc-acc[open]>summary .lc-acc-chev{transform:rotate(90deg)}
   </style>`;
 
