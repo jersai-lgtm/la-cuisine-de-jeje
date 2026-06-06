@@ -233,8 +233,8 @@
       cta: "Entrer 🕊️",
       menuZone: { top: "49%", bottom: "28%", left: "30%", right: "30%" },
       menuColor: "#efe8d6",
-      menuNoms: { bruschetta: "Bruschetta", saladeniçoise: "Salade Niçoise", brochettecaprese: "Brochettes Caprese", tartecitron: "Tarte au Citron", pavlova: "Pavlova", saladefruits: "Salade de Fruits" },
-      recettes: ["bruschetta", "saladeniçoise", "brochettecaprese", "tartecitron", "pavlova", "saladefruits"],
+      menuNoms: { bruschetta: "Bruschetta", saladeniçoise: "Salade Niçoise", ratatouille: "Ratatouille Provençale", tartecitron: "Tarte au Citron", pavlova: "Pavlova", saladefruits: "Salade de Fruits" },
+      recettes: ["bruschetta", "saladeniçoise", "ratatouille", "tartecitron", "pavlova", "saladefruits"],
       estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 8, 15), dateA(y, 8, 15, 23)); }
     },
     halloween: {
