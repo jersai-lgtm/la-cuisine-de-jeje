@@ -89,7 +89,7 @@
       image: "images/event-mardigras.webp",
       emojis: ["🎭", "🎉", "🍩", "🎊"],
       cta: "Entrer 🎭",
-      menuZone: { top: "51%", bottom: "30%", left: "23%", right: "23%" },
+      menuZone: { top: "49%", bottom: "30%", left: "26%", right: "26%" },
       menuColor: "#f4d35e",
       menuNoms: { churros: "Churros", gaufresliege: "Gaufres de Liège", crepessuzette: "Crêpes Suzette", "crepesSucrées": "Crêpes Sucrées", gaufres: "Gaufres", crepesbretonnes: "Galettes Bretonnes" },
       recettes: ["churros", "gaufresliege", "crepessuzette", "crepesSucrées", "gaufres", "crepesbretonnes"],
@@ -105,6 +105,8 @@
       image: "images/event-chinois.webp",
       emojis: ["🥟", "🐉", "🧧", "🏮"],
       cta: "Entrer 🥟",
+      menuZone: { top: "49%", bottom: "28%", left: "25%", right: "25%" },
+      menuColor: "#b3211a", menuShadow: "none",
       menuNoms: { gyoza: "Gyoza", nemsvietnam: "Nems", baoporccarmelise: "Bao au Porc", pekinduckeasy: "Canard Laqué", rizcantonais: "Riz Cantonais", noodlesWok: "Nouilles Wok" },
       recettes: ["gyoza", "nemsvietnam", "baoporccarmelise", "pekinduckeasy", "rizcantonais", "noodlesWok"],
       estActif: function (now) {
@@ -121,6 +123,8 @@
       image: "images/event-patrick.webp",
       emojis: ["☘️", "🍀", "🍺", "💚"],
       cta: "Entrer ☘️",
+      menuZone: { top: "44%", bottom: "25%", left: "25%", right: "25%" },
+      menuColor: "#1b5e34", menuShadow: "none",
       menuNoms: { guacamole: "Guacamole", patespesto: "Pâtes au Pesto", boulettesfetaepinard: "Boulettes Feta-Épinards", gratinbrocolis: "Gratin de Brocolis", tarteepinardfeta: "Tarte Épinards-Feta", palmierspesto: "Palmiers Pesto" },
       recettes: ["guacamole", "patespesto", "boulettesfetaepinard", "gratinbrocolis", "tarteepinardfeta", "palmierspesto"],
       estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 3, 16), dateA(y, 3, 17, 23)); }
@@ -131,6 +135,8 @@
       image: "images/event-fetemeres.webp",
       emojis: ["💐", "🌷", "💕", "🌸"],
       cta: "Entrer 💐",
+      menuZone: { top: "46%", bottom: "25%", left: "25%", right: "25%" },
+      menuColor: "#c2185b", menuShadow: "none",
       menuNoms: { eggsBenedict: "Œufs Bénédicte", pancakes: "Pancakes", financiers: "Financiers", gaufresliege: "Gaufres de Liège", saintjacquespoelees: "Saint-Jacques", risottoprimavera: "Risotto Primavera" },
       recettes: ["eggsBenedict", "pancakes", "financiers", "gaufresliege", "saintjacquespoelees", "risottoprimavera"],
       estActif: function (now) { var y = now.getFullYear(); var d = lastWeekday(y, 5, 0); return entre(now, new Date(d.getTime() - 3 * 864e5), new Date(d.getTime() + 864e5)); }
@@ -141,6 +147,8 @@
       image: "images/event-feteperes.webp",
       emojis: ["👔", "🍖", "🎁", "🥃"],
       cta: "Entrer 👔",
+      menuZone: { top: "45%", bottom: "28%", left: "24%", right: "24%" },
+      menuColor: "#1b3a6b", menuShadow: "none",
       menuNoms: { magretcanard: "Magret de Canard", saintjacquespoelees: "Saint-Jacques", daubeProvencale: "Daube Provençale", gratindauphinois: "Gratin Dauphinois", risottoMilanese: "Risotto Milanese", moelleuxchocolat: "Moelleux Chocolat" },
       recettes: ["magretcanard", "saintjacquespoelees", "daubeProvencale", "gratindauphinois", "risottoMilanese", "moelleuxchocolat"],
       estActif: function (now) { var y = now.getFullYear(); var d = nthWeekday(y, 6, 0, 3); return entre(now, new Date(d.getTime() - 3 * 864e5), new Date(d.getTime() + 864e5)); }
@@ -151,9 +159,8 @@
       image: "images/event-musique.webp",
       emojis: ["🎵", "🎸", "🎤", "🎉"],
       cta: "Entrer 🎵",
-      menuZone: { top: "46%", bottom: "33%", left: "20%", right: "20%" },
-      menuColor: "#3a2f6e",
-      menuShadow: "none",
+      menuZone: { top: "43%", bottom: "28%", left: "25%", right: "25%" },
+      menuColor: "#f4f1e8",
       menuNoms: { houmous: "Houmous", guacamole: "Guacamole", nachosgratines: "Nachos Gratinés", brochettecaprese: "Brochettes Caprese", accrasmorue: "Accras de Morue", samoussaslegumes: "Samoussas" },
       recettes: ["houmous", "guacamole", "nachosgratines", "brochettecaprese", "accrasmorue", "samoussaslegumes"],
       estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 6, 20), dateA(y, 6, 21, 23)); }
@@ -164,9 +171,8 @@
       image: "images/event-fetenationale.webp",
       emojis: ["🇫🇷", "🎆", "🍉", "🥖"],
       cta: "Entrer 🇫🇷",
-      menuZone: { top: "49%", bottom: "27%", left: "20%", right: "20%" },
-      menuColor: "#1b3a8a",
-      menuShadow: "none",
+      menuZone: { top: "45%", bottom: "27%", left: "25%", right: "25%" },
+      menuColor: "#f4f1e8",
       menuNoms: { brochettecaprese: "Brochettes Caprese", halloumigrille: "Halloumi Grillé", saladequinoa: "Salade Quinoa", bruschetta: "Bruschetta", crostini: "Crostini", saladefruits: "Salade de Fruits" },
       recettes: ["brochettecaprese", "halloumigrille", "saladequinoa", "bruschetta", "crostini", "saladefruits"],
       estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 7, 13), dateA(y, 7, 14, 23)); }
@@ -177,6 +183,8 @@
       image: "images/event-beaujolais.webp",
       emojis: ["🍷", "🍇", "🧀"],
       cta: "Entrer 🍷",
+      menuZone: { top: "48%", bottom: "30%", left: "22%", right: "22%" },
+      menuColor: "#7a1f3a", menuShadow: "none",
       menuNoms: { gougeres: "Gougères", terrinecampagne: "Terrine de Campagne", quichelorraine: "Quiche Lorraine", rillettesthon: "Rillettes de Thon", terrineforestiere: "Terrine Forestière", gratindauphinois: "Gratin Dauphinois" },
       recettes: ["gougeres", "terrinecampagne", "quichelorraine", "rillettesthon", "terrineforestiere", "gratindauphinois"],
       estActif: function (now) { var y = now.getFullYear(); var thu = nthWeekday(y, 11, 4, 3); return entre(now, thu, new Date(thu.getTime() + 4 * 864e5)); }
@@ -187,9 +195,47 @@
       image: "images/event-toussaint.webp",
       emojis: ["🍂", "🍁", "🌰", "🕯️"],
       cta: "Entrer 🍂",
+      menuZone: { top: "40%", bottom: "27%", left: "25%", right: "25%" },
+      menuColor: "#4a2c5a", menuShadow: "none",
       menuNoms: { soupepotimarronchataigne: "Soupe Potimarron", potaufeu: "Pot-au-Feu", daubeProvencale: "Daube Provençale", gratindauphinois: "Gratin Dauphinois", tartiflettesavoyarde: "Tartiflette", raclette: "Raclette" },
       recettes: ["soupepotimarronchataigne", "potaufeu", "daubeProvencale", "gratindauphinois", "tartiflettesavoyarde", "raclette"],
       estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 11, 1), dateA(y, 11, 2, 23)); }
+    },
+    premiermai: {
+      nom: "Fête du Travail", titre: "🛠️ Menu du 1er Mai",
+      accent: "#2667b8", accent2: "#ef4135",
+      image: "images/event-premiermai.webp",
+      emojis: ["🌿", "🛠️", "⚙️", "🌼"],
+      cta: "Entrer 🌿",
+      menuZone: { top: "49%", bottom: "26%", left: "24%", right: "24%" },
+      menuColor: "#f4f1e8",
+      menuNoms: { gougeres: "Gougères", quichelorraine: "Quiche Lorraine", brochettecaprese: "Brochettes Caprese", saladequinoa: "Salade Quinoa", crumblefruits: "Crumble aux Fruits", tartepistache: "Tarte Pistache" },
+      recettes: ["gougeres", "quichelorraine", "brochettecaprese", "saladequinoa", "crumblefruits", "tartepistache"],
+      estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 5, 1), dateA(y, 5, 1, 23)); }
+    },
+    huitmai: {
+      nom: "Victoire 1945", titre: "🇫🇷 Menu du 8 Mai",
+      accent: "#2667b8", accent2: "#ef4135",
+      image: "images/event-huitmai.webp",
+      emojis: ["🇫🇷", "🕊️", "🎖️", "⭐"],
+      cta: "Entrer 🇫🇷",
+      menuZone: { top: "51%", bottom: "25%", left: "25%", right: "25%" },
+      menuColor: "#f4f1e8",
+      menuNoms: { escargots: "Escargots", quichelorraine: "Quiche Lorraine", boeufbourguignon: "Bœuf Bourguignon", gratindauphinois: "Gratin Dauphinois", tarteaupommes: "Tarte aux Pommes", ileflottante: "Île Flottante" },
+      recettes: ["escargots", "quichelorraine", "boeufbourguignon", "gratindauphinois", "tarteaupommes", "ileflottante"],
+      estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 5, 8), dateA(y, 5, 8, 23)); }
+    },
+    assomption: {
+      nom: "Assomption", titre: "🕊️ Menu de l'Assomption",
+      accent: "#3f6fb0", accent2: "#d4af37",
+      image: "images/event-assomption.webp",
+      emojis: ["🕊️", "⛪", "🌸", "✨"],
+      cta: "Entrer 🕊️",
+      menuZone: { top: "49%", bottom: "28%", left: "30%", right: "30%" },
+      menuColor: "#efe8d6",
+      menuNoms: { bruschetta: "Bruschetta", saladeniçoise: "Salade Niçoise", brochettecaprese: "Brochettes Caprese", tartecitron: "Tarte au Citron", pavlova: "Pavlova", saladefruits: "Salade de Fruits" },
+      recettes: ["bruschetta", "saladeniçoise", "brochettecaprese", "tartecitron", "pavlova", "saladefruits"],
+      estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 8, 15), dateA(y, 8, 15, 23)); }
     },
     halloween: {
       nom: "Halloween",
@@ -321,7 +367,7 @@
   };
 
   // Ordre d'évaluation (priorité au plus spécifique)
-  var ORDRE = ["nouvelan", "galette", "chinois", "mardigras", "chandeleur", "valentin", "patrick", "paques", "fetemeres", "musique", "feteperes", "fetenationale", "beaujolais", "halloween", "toussaint", "noel"];
+  var ORDRE = ["nouvelan", "galette", "chinois", "mardigras", "chandeleur", "valentin", "patrick", "paques", "premiermai", "huitmai", "fetemeres", "musique", "feteperes", "fetenationale", "assomption", "beaujolais", "halloween", "toussaint", "noel"];
 
   // --- Détection de l'événement actif ------------------------------------
   function evenementActif() {
