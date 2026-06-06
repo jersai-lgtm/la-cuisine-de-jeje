@@ -62,6 +62,18 @@
   }
   function entre(now, start, end) { return now >= start && now <= end; }
   function dateA(y, m, d, hh) { return new Date(y, m - 1, d, hh || 0, 0, 0, 0); }
+  // n-ième jour de semaine du mois (wd: 0=dim..6=sam, n>=1) ; m 1-based
+  function nthWeekday(y, m, wd, n) {
+    var d = new Date(y, m - 1, 1);
+    var shift = (wd - d.getDay() + 7) % 7;
+    return new Date(y, m - 1, 1 + shift + (n - 1) * 7);
+  }
+  // dernier jour de semaine du mois
+  function lastWeekday(y, m, wd) {
+    var last = new Date(y, m, 0);
+    var shift = (last.getDay() - wd + 7) % 7;
+    return new Date(y, m - 1, last.getDate() - shift);
+  }
 
   // --- Configuration des événements --------------------------------------
   // accent : couleur d'accent de la fête (utilisée pour le bandeau, la déco, le theme-color)
@@ -71,6 +83,114 @@
   var ZONE_DEFAUT = { top: "42%", bottom: "33%", left: "24%", right: "33%" };
 
   var EVENEMENTS = {
+    mardigras: {
+      nom: "Mardi Gras", titre: "🎭 Menu Mardi Gras",
+      accent: "#9b59b6", accent2: "#f1c40f",
+      image: "images/event-mardigras.webp",
+      emojis: ["🎭", "🎉", "🍩", "🎊"],
+      cta: "Entrer 🎭",
+      menuZone: { top: "51%", bottom: "30%", left: "23%", right: "23%" },
+      menuColor: "#f4d35e",
+      menuNoms: { churros: "Churros", gaufresliege: "Gaufres de Liège", crepessuzette: "Crêpes Suzette", "crepesSucrées": "Crêpes Sucrées", gaufres: "Gaufres", crepesbretonnes: "Galettes Bretonnes" },
+      recettes: ["churros", "gaufresliege", "crepessuzette", "crepesSucrées", "gaufres", "crepesbretonnes"],
+      estActif: function (now) {
+        var p = paques(now.getFullYear());
+        var mg = new Date(p.getTime() - 47 * 864e5);
+        return entre(now, new Date(mg.getTime() - 4 * 864e5), new Date(mg.getTime() + 864e5));
+      }
+    },
+    chinois: {
+      nom: "Nouvel An Chinois", titre: "🥟 Nouvel An Chinois",
+      accent: "#e0241a", accent2: "#ffcc00",
+      image: "images/event-chinois.webp",
+      emojis: ["🥟", "🐉", "🧧", "🏮"],
+      cta: "Entrer 🥟",
+      menuNoms: { gyoza: "Gyoza", nemsvietnam: "Nems", baoporccarmelise: "Bao au Porc", pekinduckeasy: "Canard Laqué", rizcantonais: "Riz Cantonais", noodlesWok: "Nouilles Wok" },
+      recettes: ["gyoza", "nemsvietnam", "baoporccarmelise", "pekinduckeasy", "rizcantonais", "noodlesWok"],
+      estActif: function (now) {
+        var y = now.getFullYear();
+        var NAC = { 2026: [2, 17], 2027: [2, 6], 2028: [1, 26], 2029: [2, 13], 2030: [2, 3], 2031: [1, 23], 2032: [2, 11], 2033: [1, 31] };
+        if (!NAC[y]) return false;
+        var d = dateA(y, NAC[y][0], NAC[y][1]);
+        return entre(now, new Date(d.getTime() - 2 * 864e5), new Date(d.getTime() + 4 * 864e5));
+      }
+    },
+    patrick: {
+      nom: "Saint-Patrick", titre: "☘️ Menu Saint-Patrick",
+      accent: "#1faf53", accent2: "#f1c40f",
+      image: "images/event-patrick.webp",
+      emojis: ["☘️", "🍀", "🍺", "💚"],
+      cta: "Entrer ☘️",
+      menuNoms: { guacamole: "Guacamole", patespesto: "Pâtes au Pesto", boulettesfetaepinard: "Boulettes Feta-Épinards", gratinbrocolis: "Gratin de Brocolis", tarteepinardfeta: "Tarte Épinards-Feta", palmierspesto: "Palmiers Pesto" },
+      recettes: ["guacamole", "patespesto", "boulettesfetaepinard", "gratinbrocolis", "tarteepinardfeta", "palmierspesto"],
+      estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 3, 16), dateA(y, 3, 17, 23)); }
+    },
+    fetemeres: {
+      nom: "Fête des Mères", titre: "💐 Menu Fête des Mères",
+      accent: "#ff6fa5", accent2: "#e84393",
+      image: "images/event-fetemeres.webp",
+      emojis: ["💐", "🌷", "💕", "🌸"],
+      cta: "Entrer 💐",
+      menuNoms: { eggsBenedict: "Œufs Bénédicte", pancakes: "Pancakes", financiers: "Financiers", gaufresliege: "Gaufres de Liège", saintjacquespoelees: "Saint-Jacques", risottoprimavera: "Risotto Primavera" },
+      recettes: ["eggsBenedict", "pancakes", "financiers", "gaufresliege", "saintjacquespoelees", "risottoprimavera"],
+      estActif: function (now) { var y = now.getFullYear(); var d = lastWeekday(y, 5, 0); return entre(now, new Date(d.getTime() - 3 * 864e5), new Date(d.getTime() + 864e5)); }
+    },
+    feteperes: {
+      nom: "Fête des Pères", titre: "👔 Menu Fête des Pères",
+      accent: "#4a82c4", accent2: "#2c3e50",
+      image: "images/event-feteperes.webp",
+      emojis: ["👔", "🍖", "🎁", "🥃"],
+      cta: "Entrer 👔",
+      menuNoms: { magretcanard: "Magret de Canard", saintjacquespoelees: "Saint-Jacques", daubeProvencale: "Daube Provençale", gratindauphinois: "Gratin Dauphinois", risottoMilanese: "Risotto Milanese", moelleuxchocolat: "Moelleux Chocolat" },
+      recettes: ["magretcanard", "saintjacquespoelees", "daubeProvencale", "gratindauphinois", "risottoMilanese", "moelleuxchocolat"],
+      estActif: function (now) { var y = now.getFullYear(); var d = nthWeekday(y, 6, 0, 3); return entre(now, new Date(d.getTime() - 3 * 864e5), new Date(d.getTime() + 864e5)); }
+    },
+    musique: {
+      nom: "Fête de la Musique", titre: "🎵 Apéro Fête de la Musique",
+      accent: "#e84393", accent2: "#6c5ce7",
+      image: "images/event-musique.webp",
+      emojis: ["🎵", "🎸", "🎤", "🎉"],
+      cta: "Entrer 🎵",
+      menuZone: { top: "46%", bottom: "33%", left: "20%", right: "20%" },
+      menuColor: "#3a2f6e",
+      menuShadow: "none",
+      menuNoms: { houmous: "Houmous", guacamole: "Guacamole", nachosgratines: "Nachos Gratinés", brochettecaprese: "Brochettes Caprese", accrasmorue: "Accras de Morue", samoussaslegumes: "Samoussas" },
+      recettes: ["houmous", "guacamole", "nachosgratines", "brochettecaprese", "accrasmorue", "samoussaslegumes"],
+      estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 6, 20), dateA(y, 6, 21, 23)); }
+    },
+    fetenationale: {
+      nom: "14 Juillet", titre: "🇫🇷 Menu du 14 Juillet",
+      accent: "#2667b8", accent2: "#ef4135",
+      image: "images/event-fetenationale.webp",
+      emojis: ["🇫🇷", "🎆", "🍉", "🥖"],
+      cta: "Entrer 🇫🇷",
+      menuZone: { top: "49%", bottom: "27%", left: "20%", right: "20%" },
+      menuColor: "#1b3a8a",
+      menuShadow: "none",
+      menuNoms: { brochettecaprese: "Brochettes Caprese", halloumigrille: "Halloumi Grillé", saladequinoa: "Salade Quinoa", bruschetta: "Bruschetta", crostini: "Crostini", saladefruits: "Salade de Fruits" },
+      recettes: ["brochettecaprese", "halloumigrille", "saladequinoa", "bruschetta", "crostini", "saladefruits"],
+      estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 7, 13), dateA(y, 7, 14, 23)); }
+    },
+    beaujolais: {
+      nom: "Beaujolais Nouveau", titre: "🍷 Soirée Beaujolais",
+      accent: "#b3294e", accent2: "#7b1f3a",
+      image: "images/event-beaujolais.webp",
+      emojis: ["🍷", "🍇", "🧀"],
+      cta: "Entrer 🍷",
+      menuNoms: { gougeres: "Gougères", terrinecampagne: "Terrine de Campagne", quichelorraine: "Quiche Lorraine", rillettesthon: "Rillettes de Thon", terrineforestiere: "Terrine Forestière", gratindauphinois: "Gratin Dauphinois" },
+      recettes: ["gougeres", "terrinecampagne", "quichelorraine", "rillettesthon", "terrineforestiere", "gratindauphinois"],
+      estActif: function (now) { var y = now.getFullYear(); var thu = nthWeekday(y, 11, 4, 3); return entre(now, thu, new Date(thu.getTime() + 4 * 864e5)); }
+    },
+    toussaint: {
+      nom: "Toussaint", titre: "🍂 Menu de la Toussaint",
+      accent: "#c9772e", accent2: "#8a5a2b",
+      image: "images/event-toussaint.webp",
+      emojis: ["🍂", "🍁", "🌰", "🕯️"],
+      cta: "Entrer 🍂",
+      menuNoms: { soupepotimarronchataigne: "Soupe Potimarron", potaufeu: "Pot-au-Feu", daubeProvencale: "Daube Provençale", gratindauphinois: "Gratin Dauphinois", tartiflettesavoyarde: "Tartiflette", raclette: "Raclette" },
+      recettes: ["soupepotimarronchataigne", "potaufeu", "daubeProvencale", "gratindauphinois", "tartiflettesavoyarde", "raclette"],
+      estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 11, 1), dateA(y, 11, 2, 23)); }
+    },
     halloween: {
       nom: "Halloween",
       titre: "🎃 Menu Fête Halloween",
@@ -114,7 +234,10 @@
       accent2: "#c0c0c0",
       image: "images/event-nouvelan.webp",
       emojis: ["🎆", "🥂", "✨", "🍾", "🎉"],
-      cta: "Voir le menu festif 🥂",
+      cta: "Entrer 🥂",
+      menuZone: { top: "46%", bottom: "24%", left: "22%", right: "22%" },
+      menuColor: "#e6c25a",
+      menuNoms: { blinissaumon: "Blinis Saumon", croquetasjamon: "Croquetas", accrasmorue: "Accras de Morue", mimosa: "Mimosa", pornstarmartini: "Porn Star Martini", verrineavocatcrevette: "Verrine Avocat-Crevette" },
       recettes: ["blinissaumon", "croquetasjamon", "accrasmorue", "mimosa", "pornstarmartini", "verrineavocatcrevette"],
       estActif: function (now) {
         var y = now.getFullYear();
@@ -129,7 +252,10 @@
       accent2: "#8b5e3c",
       image: "images/event-galette.webp",
       emojis: ["👑", "🥧", "✨"],
-      cta: "Voir les recettes 👑",
+      cta: "Entrer 👑",
+      menuZone: { top: "55%", bottom: "24%", left: "22%", right: "22%" },
+      menuColor: "#e6c25a",
+      menuNoms: { millefeuille: "Mille-feuille", patefeuilletee: "Pâte Feuilletée", financiers: "Financiers" },
       recettes: ["millefeuille", "patefeuilletee", "financiers"],
       estActif: function (now) {
         var y = now.getFullYear();
@@ -143,7 +269,11 @@
       accent2: "#ff4d88",
       image: "images/event-chandeleur.webp",
       emojis: ["🥞", "🍯", "🍋"],
-      cta: "Voir les crêpes 🥞",
+      cta: "Entrer 🥞",
+      menuZone: { top: "61%", bottom: "22%", left: "20%", right: "20%" },
+      menuColor: "#b5172a",
+      menuShadow: "none",
+      menuNoms: { "crepesSucrées": "Crêpes Sucrées", pancakes: "Pancakes", gaufres: "Gaufres" },
       recettes: ["crepesSucrées", "pancakes", "gaufres"],
       estActif: function (now) {
         var y = now.getFullYear();
@@ -157,7 +287,11 @@
       accent2: "#ff1f5a",
       image: "images/event-valentin.webp",
       emojis: ["❤️", "🌹", "🍫", "✨"],
-      cta: "Voir le menu pour deux ❤️",
+      cta: "Entrer ❤️",
+      menuZone: { top: "49%", bottom: "23%", left: "22%", right: "22%" },
+      menuColor: "#fff0f5",
+      menuShadow: "0 1px 3px rgba(120,0,40,.35)",
+      menuNoms: { fondantchocolat: "Fondant Chocolat", moelleuxchocolat: "Moelleux Chocolat", mousseauchocolat: "Mousse au Chocolat", tiramisufraise: "Tiramisu Fraises", frenchMartini: "French Martini", burratapeche: "Burrata Pêche" },
       recettes: ["fondantchocolat", "moelleuxchocolat", "mousseauchocolat", "tiramisufraise", "frenchMartini", "burratapeche"],
       estActif: function (now) {
         var y = now.getFullYear();
@@ -171,7 +305,11 @@
       accent2: "#7fc1e3",
       image: "images/event-paques.webp",
       emojis: ["🐣", "🥚", "🐰", "🌷"],
-      cta: "Voir le menu 🐣",
+      cta: "Entrer 🐣",
+      menuZone: { top: "50%", bottom: "22%", left: "26%", right: "26%" },
+      menuColor: "#c43e80",
+      menuShadow: "none",
+      menuNoms: { gateaubasque: "Gâteau Basque", crumblefruits: "Crumble aux Fruits", pavlova: "Pavlova", tartepistache: "Tarte Pistache" },
       recettes: ["gateaubasque", "crumblefruits", "pavlova", "tartepistache"],
       estActif: function (now) {
         var p = paques(now.getFullYear());
@@ -183,7 +321,7 @@
   };
 
   // Ordre d'évaluation (priorité au plus spécifique)
-  var ORDRE = ["nouvelan", "galette", "chandeleur", "valentin", "paques", "halloween", "noel"];
+  var ORDRE = ["nouvelan", "galette", "chinois", "mardigras", "chandeleur", "valentin", "patrick", "paques", "fetemeres", "musique", "feteperes", "fetenationale", "beaujolais", "halloween", "toussaint", "noel"];
 
   // --- Détection de l'événement actif ------------------------------------
   function evenementActif() {
