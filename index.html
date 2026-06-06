@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=1.3.74">
+<link rel="stylesheet" href="style.css?v=1.3.75">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -40,7 +40,7 @@ gtag('config', 'G-390C5MY2SS');
               // Afficher un toast discret en bas de l'écran
               const toast = document.createElement("div");
               toast.id = "toast-maj";
-              toast.style.cssText = "position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#ff4d88 0%,#ff6ba1 100%);color:white;padding:14px 22px;border-radius:50px;font-weight:600;font-size:14px;box-shadow:0 4px 20px rgba(0,0,0,.4);z-index:9999;cursor:pointer;display:flex;align-items:center;gap:10px;animation:slideUpToast .4s ease;";
+              toast.style.cssText = "position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--accent,#ff4d88) 0%,var(--accent-light,#ff6ba1) 100%);color:white;padding:14px 22px;border-radius:50px;font-weight:600;font-size:14px;box-shadow:0 4px 20px rgba(0,0,0,.4);z-index:9999;cursor:pointer;display:flex;align-items:center;gap:10px;animation:slideUpToast .4s ease;";
               toast.innerHTML = "🔄 Nouvelle version dispo — cliquez pour mettre à jour";
               toast.onclick = () => {
                 // Demander au SW de prendre le contrôle immédiatement
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=1.3.74">
+<link rel="stylesheet" href="style.css?v=1.3.75">
 </head>
 
 <body>
@@ -87,7 +87,7 @@ gtag('config', 'G-390C5MY2SS');
 </div>
 <style>
   #app-splash .splash-dots{display:flex;gap:6px}
-  #app-splash .splash-dots span{width:8px;height:8px;border-radius:50%;background:#ff4d88;display:inline-block;animation:splashPulse 1s infinite ease-in-out}
+  #app-splash .splash-dots span{width:8px;height:8px;border-radius:50%;background:var(--accent,#ff4d88);display:inline-block;animation:splashPulse 1s infinite ease-in-out}
   #app-splash .splash-dots span:nth-child(2){animation-delay:.15s}
   #app-splash .splash-dots span:nth-child(3){animation-delay:.3s}
   @keyframes splashPulse{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
@@ -4785,7 +4785,7 @@ gtag('config', 'G-390C5MY2SS');
 
 <!-- ESPACE ADMIN (réservé à l'admin, affiché via estAdmin) -->
 <section id="section-admin" style="display:none">
-  <h2 style="color:#ff8fb3;margin:8px 0 14px;font-size:20px">🛡️ Espace admin</h2>
+  <h2 style="color:var(--accent-soft,#ff8fb3);margin:8px 0 14px;font-size:20px">🛡️ Espace admin</h2>
   <style>
     #badge-modo{display:none!important}
     .admin-acc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;margin-bottom:12px}
@@ -5102,7 +5102,7 @@ gtag('config', 'G-390C5MY2SS');
 
     <!-- Bascule Liste de courses / Plan de prep (batch cooking) -->
     <div id="lc-vue-toggle" style="display:none;gap:8px;margin:2px 0 14px">
-      <button id="lc-vue-courses" onclick="lcAfficherVue('courses')" style="flex:1;background:#ff4d88;color:#fff;border:1.5px solid #ff4d88;border-radius:12px;padding:9px;font-size:13px;font-weight:500;cursor:pointer">🛒 Liste de courses</button>
+      <button id="lc-vue-courses" onclick="lcAfficherVue('courses')" style="flex:1;background:var(--accent,#ff4d88);color:#fff;border:1.5px solid var(--accent,#ff4d88);border-radius:12px;padding:9px;font-size:13px;font-weight:500;cursor:pointer">🛒 Liste de courses</button>
       <button id="lc-vue-prep" onclick="lcAfficherVue('prep')" style="flex:1;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.18);border-radius:12px;padding:9px;font-size:13px;font-weight:500;cursor:pointer">📋 Plan de prep</button>
     </div>
 
@@ -5244,40 +5244,40 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=1.3.74"></script>
-<script src="js/allergenes.js?v=1.3.74"></script>
-<script src="js/exceptions.js?v=1.3.74"></script>
-<script src="js/recettes.js?v=1.3.74"></script>
-<script src="js/recettes_plats.js?v=1.3.74"></script>
-<script src="js/recettes_desserts.js?v=1.3.74"></script>
-<script src="js/recettes_soupes.js?v=1.3.74"></script>
-<script src="js/recettes_brunch.js?v=1.3.74"></script>
-<script src="js/recettes_encas.js?v=1.3.74"></script>
-<script src="js/recettes_aperitifs.js?v=1.3.74"></script>
-<script src="js/recettes_healthy.js?v=1.3.74"></script>
-<script src="js/recettes_entrees.js?v=1.3.74"></script>
-<script src="js/recettes_sauces.js?v=1.3.74"></script>
-<script src="js/recettes_boulangerie.js?v=1.3.74"></script>
-<script src="js/recettes_salades.js?v=1.3.74"></script>
-<script src="js/recettes_pizzas.js?v=1.3.74"></script>
-<script src="js/recettes_cocktails.js?v=1.3.74"></script>
-<script src="js/recettes_mocktails.js?v=1.3.74"></script>
-<script src="js/recettes_batch.js?v=1.3.74"></script>
-<script src="js/ingredients_prix.js?v=1.3.74"></script>
-<script src="js/drapeaux.js?v=1.3.74"></script>
-<script src="js/tables.js?v=1.3.74"></script>
-<script src="js/app.js?v=1.3.74"></script>
-<script src="js/emojis.js?v=1.3.74"></script>
-<script src="js/app_avis.js?v=1.3.74"></script>
-<script src="js/app_admin.js?v=1.3.74"></script>
-<script src="js/app_menu.js?v=1.3.74"></script>
-<script src="js/lunchbox.js?v=1.3.74"></script>
-<script src="js/app_courses_impr.js?v=1.3.74"></script>
-<script src="js/app_recherche.js?v=1.3.74"></script>
-<script src="js/app_garde_manger.js?v=1.3.74"></script>
-<script src="js/app_modal_confirm.js?v=1.3.74"></script>
-<script src="js/app_courses.js?v=1.3.74"></script>
-<script src="js/app_stats.js?v=1.3.74"></script>
+<script src="js/version.js?v=1.3.75"></script>
+<script src="js/allergenes.js?v=1.3.75"></script>
+<script src="js/exceptions.js?v=1.3.75"></script>
+<script src="js/recettes.js?v=1.3.75"></script>
+<script src="js/recettes_plats.js?v=1.3.75"></script>
+<script src="js/recettes_desserts.js?v=1.3.75"></script>
+<script src="js/recettes_soupes.js?v=1.3.75"></script>
+<script src="js/recettes_brunch.js?v=1.3.75"></script>
+<script src="js/recettes_encas.js?v=1.3.75"></script>
+<script src="js/recettes_aperitifs.js?v=1.3.75"></script>
+<script src="js/recettes_healthy.js?v=1.3.75"></script>
+<script src="js/recettes_entrees.js?v=1.3.75"></script>
+<script src="js/recettes_sauces.js?v=1.3.75"></script>
+<script src="js/recettes_boulangerie.js?v=1.3.75"></script>
+<script src="js/recettes_salades.js?v=1.3.75"></script>
+<script src="js/recettes_pizzas.js?v=1.3.75"></script>
+<script src="js/recettes_cocktails.js?v=1.3.75"></script>
+<script src="js/recettes_mocktails.js?v=1.3.75"></script>
+<script src="js/recettes_batch.js?v=1.3.75"></script>
+<script src="js/ingredients_prix.js?v=1.3.75"></script>
+<script src="js/drapeaux.js?v=1.3.75"></script>
+<script src="js/tables.js?v=1.3.75"></script>
+<script src="js/app.js?v=1.3.75"></script>
+<script src="js/emojis.js?v=1.3.75"></script>
+<script src="js/app_avis.js?v=1.3.75"></script>
+<script src="js/app_admin.js?v=1.3.75"></script>
+<script src="js/app_menu.js?v=1.3.75"></script>
+<script src="js/lunchbox.js?v=1.3.75"></script>
+<script src="js/app_courses_impr.js?v=1.3.75"></script>
+<script src="js/app_recherche.js?v=1.3.75"></script>
+<script src="js/app_garde_manger.js?v=1.3.75"></script>
+<script src="js/app_modal_confirm.js?v=1.3.75"></script>
+<script src="js/app_courses.js?v=1.3.75"></script>
+<script src="js/app_stats.js?v=1.3.75"></script>
 
 
 
@@ -5464,7 +5464,7 @@ gtag('config', 'G-390C5MY2SS');
       🍽️ Commencer à cuisiner !
     </button>
     <p style="text-align:center;margin-top:10px;font-size:12px;color:#888">
-      <a onclick="fermerOnboarding()" style="cursor:pointer;color:#ff8fb3">Passer pour l'instant</a>
+      <a onclick="fermerOnboarding()" style="cursor:pointer;color:var(--accent-soft,#ff8fb3)">Passer pour l'instant</a>
     </p>
   </div>
 </div>
@@ -5692,14 +5692,14 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
-<script src="auth.js?v=1.3.74"></script>
-<script src="js/note_recettes.js?v=1.3.74"></script>
-<script src="js/app_contribution.js?v=1.3.74"></script>
-<script src="js/community.js?v=1.3.74"></script>
-<script src="js/whatsnew.js?v=1.3.74"></script>
-<script src="js/amelioration.js?v=1.3.74"></script>
-<script src="js/menu_ajout.js?v=1.3.74"></script>
-<script src="js/app_evenements.js?v=1.3.74"></script>
+<script src="auth.js?v=1.3.75"></script>
+<script src="js/note_recettes.js?v=1.3.75"></script>
+<script src="js/app_contribution.js?v=1.3.75"></script>
+<script src="js/community.js?v=1.3.75"></script>
+<script src="js/whatsnew.js?v=1.3.75"></script>
+<script src="js/amelioration.js?v=1.3.75"></script>
+<script src="js/menu_ajout.js?v=1.3.75"></script>
+<script src="js/app_evenements.js?v=1.3.75"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
