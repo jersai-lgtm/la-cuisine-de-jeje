@@ -131,8 +131,8 @@ function afficherToastCourses(message) {
   t.innerHTML = message + ' <span style="font-weight:800;margin-left:6px;white-space:nowrap">— Voir la liste 👉</span>';
   t.style.cssText =
     "position:fixed;bottom:84px;left:50%;transform:translateX(-50%) translateY(60px);" +
-    "background:linear-gradient(135deg,#ff5e9a,#ff8fb3);color:#fff;" +
-    "padding:13px 22px;border-radius:24px;box-shadow:0 6px 26px rgba(255,77,136,.5);" +
+    "background:linear-gradient(135deg,#ff5e9a,var(--accent-soft,#ff8fb3));color:#fff;" +
+    "padding:13px 22px;border-radius:24px;box-shadow:0 6px 26px rgba(var(--accent-rgb),.5);" +
     "z-index:100000;font-size:14px;font-weight:600;max-width:92%;text-align:center;" +
     "cursor:pointer;opacity:0;transition:opacity .3s ease,transform .3s ease;pointer-events:auto;" +
     "font-family:system-ui,-apple-system,sans-serif";
@@ -457,8 +457,8 @@ function lcAfficherVue(vue) {
   const bC = document.getElementById("lc-vue-courses");
   const bP = document.getElementById("lc-vue-prep");
   const liste = window.userProfile?.listeCourses || [];
-  if (bC) { bC.style.background = showPrep ? "transparent" : "#ff4d88"; bC.style.borderColor = showPrep ? "rgba(255,255,255,.18)" : "#ff4d88"; }
-  if (bP) { bP.style.background = showPrep ? "#ff4d88" : "transparent"; bP.style.borderColor = showPrep ? "#ff4d88" : "rgba(255,255,255,.18)"; }
+  if (bC) { bC.style.background = showPrep ? "transparent" : "var(--accent,#ff4d88)"; bC.style.borderColor = showPrep ? "rgba(255,255,255,.18)" : "var(--accent,#ff4d88)"; }
+  if (bP) { bP.style.background = showPrep ? "var(--accent,#ff4d88)" : "transparent"; bP.style.borderColor = showPrep ? "var(--accent,#ff4d88)" : "rgba(255,255,255,.18)"; }
   if (showPrep) {
     if (courses) courses.style.display = "none";
     if (prep) prep.style.display = "block";
@@ -662,7 +662,7 @@ function lcGenererPlanPrep() {
     }).join("");
     return `<details class="lc-acc" style="margin-bottom:10px">
       <summary>
-        <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#ff4d88;color:#fff;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center">${i + 1}</span>
+        <span style="flex:none;width:24px;height:24px;border-radius:50%;background:var(--accent,#ff4d88);color:#fff;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center">${i + 1}</span>
         <span style="font-size:15px;font-weight:500;color:#fff">${phase.icone} ${phase.titre}</span>
         <span class="lc-acc-count">${groupesArr.length} étape${groupesArr.length > 1 ? "s" : ""}</span>
         <span class="lc-acc-chev">▸</span>
@@ -755,7 +755,7 @@ function lcGenererPlanPrep() {
 
   const styleBloc = `<style>
     #lc-plan-prep .prep-step{background:#1a1620;border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:9px 11px;display:flex;gap:9px;align-items:flex-start}
-    #lc-plan-prep .prep-check{flex:none;width:18px;height:18px;margin:1px 0 0;accent-color:#ff4d88;cursor:pointer}
+    #lc-plan-prep .prep-check{flex:none;width:18px;height:18px;margin:1px 0 0;accent-color:var(--accent,#ff4d88);cursor:pointer}
     #lc-plan-prep .prep-step-body{flex:1;min-width:0;cursor:pointer}
     #lc-plan-prep .prep-step.prep-done{opacity:.5}
     #lc-plan-prep .prep-step.prep-done .prep-step-titre{text-decoration:line-through}
@@ -765,7 +765,7 @@ function lcGenererPlanPrep() {
     #lc-plan-prep .prep-step-titre{font-size:13px;color:#fff;font-weight:500;flex:1}
     #lc-plan-prep .prep-tb{font-size:11px;color:#d7d5db;background:rgba(255,255,255,.07);padding:2px 8px;border-radius:999px;white-space:nowrap}
     #lc-plan-prep .prep-recs{display:flex;flex-wrap:wrap;gap:4px;margin:5px 0 0 18px}
-    #lc-plan-prep .prep-rec{font-size:10px;color:#ff8fb3;background:rgba(255,77,136,.13);padding:1px 7px;border-radius:999px}
+    #lc-plan-prep .prep-rec{font-size:10px;color:var(--accent-soft,#ff8fb3);background:rgba(var(--accent-rgb),.13);padding:1px 7px;border-radius:999px}
     #lc-plan-prep .prep-step-detail{display:none;font-size:12px;color:#b3b0b8;line-height:1.5;margin:6px 0 0 18px}
     #lc-plan-prep .prep-step.prep-open .prep-step-detail{display:block}
     #lc-plan-prep .lc-acc>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:9px;padding:5px 0}

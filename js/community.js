@@ -69,7 +69,7 @@ function ouvrirModalAstuce(recetteKey) {
         '<div id="astuce-compteur" style="text-align:right;color:#88858f;font-size:11px;margin-top:4px">0 / 500</div>' +
         '<div style="display:flex;gap:10px;margin-top:12px">' +
           '<button onclick="fermerModalAstuce()" style="flex:1;background:rgba(255,255,255,.08);color:#fff;border:none;border-radius:12px;padding:11px;font-size:14px;font-weight:500">Annuler</button>' +
-          '<button onclick="envoyerAstuce()" style="flex:1;background:#ff4d88;color:#fff;border:none;border-radius:12px;padding:11px;font-size:14px;font-weight:500">Envoyer</button>' +
+          '<button onclick="envoyerAstuce()" style="flex:1;background:var(--accent,#ff4d88);color:#fff;border:none;border-radius:12px;padding:11px;font-size:14px;font-weight:500">Envoyer</button>' +
         '</div>' +
       '</div>';
     document.body.appendChild(modal);
@@ -122,10 +122,10 @@ function htmlSectionAstuces(recetteKey) {
     '<div id="astuces-fiche" style="margin-top:22px;border-top:1px solid rgba(255,255,255,.1);padding-top:16px">' +
       '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">' +
         '<span style="font-size:16px;font-weight:600;color:#fff">💬 Commentaires de la communauté</span>' +
-        '<span id="astuces-compte" style="font-size:12px;color:#ff8fb3;background:rgba(255,77,136,.18);padding:2px 8px;border-radius:20px">0</span>' +
+        '<span id="astuces-compte" style="font-size:12px;color:var(--accent-soft,#ff8fb3);background:rgba(var(--accent-rgb),.18);padding:2px 8px;border-radius:20px">0</span>' +
       '</div>' +
       '<div style="display:flex;gap:8px;margin-bottom:12px">' +
-        '<button onclick="ouvrirModalAstuce(\'' + recetteKey + '\')" style="flex:1;background:linear-gradient(135deg,#ff4d88,#ff8fb3);color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:5px">✍️ Commentaire</button>' +
+        '<button onclick="ouvrirModalAstuce(\'' + recetteKey + '\')" style="flex:1;background:linear-gradient(135deg,var(--accent,#ff4d88),var(--accent-soft,#ff8fb3));color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:5px">✍️ Commentaire</button>' +
         '<button onclick="ouvrirSelecteurPhoto(\'' + recetteKey + '\')" style="flex:1;background:linear-gradient(135deg,#5a6ee0,#8a9bf0);color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:5px">📷 Photo</button>' +
       '</div>' +
       '<div id="photos-galerie" style="margin-bottom:12px"></div>' +
@@ -214,7 +214,7 @@ async function chargerAstucesModeration() {
     z.innerHTML = arr.map(a => {
       const nomRec = (typeof getNomRecette === "function" ? getNomRecette(a.recetteKey) : "") || a.recetteKey;
       return '<div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px">' +
-        '<div style="font-size:12px;color:#88858f;margin-bottom:6px">' + _echapCom(a.pseudo || "Gourmand") + ' · sur <strong style="color:#ff8fb3">' + _echapCom(nomRec) + '</strong></div>' +
+        '<div style="font-size:12px;color:#88858f;margin-bottom:6px">' + _echapCom(a.pseudo || "Gourmand") + ' · sur <strong style="color:var(--accent-soft,#ff8fb3)">' + _echapCom(nomRec) + '</strong></div>' +
         '<p style="font-size:14px;color:#fff;margin:0 0 10px;line-height:1.5">' + _echapCom(a.texte) + '</p>' +
         '<div style="display:flex;gap:8px">' +
           '<button onclick="approuverAstuce(\'' + a.id + '\')" style="flex:1;background:rgba(76,175,80,.18);color:#7fc783;border:1px solid rgba(76,175,80,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">✅ Approuver</button>' +
@@ -296,7 +296,7 @@ async function chargerAstucesPubliesAdmin() {
     zone.innerHTML = arr.map(a => {
       const nomRec = (typeof getNomRecette === "function" ? getNomRecette(a.recetteKey) : "") || a.recetteKey;
       return '<div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px">' +
-        '<div style="font-size:12px;color:#88858f;margin-bottom:6px">' + _echapCom(a.pseudo || "Gourmand") + ' · sur <strong style="color:#ff8fb3">' + _echapCom(nomRec) + '</strong></div>' +
+        '<div style="font-size:12px;color:#88858f;margin-bottom:6px">' + _echapCom(a.pseudo || "Gourmand") + ' · sur <strong style="color:var(--accent-soft,#ff8fb3)">' + _echapCom(nomRec) + '</strong></div>' +
         '<p style="font-size:14px;color:#fff;margin:0 0 10px;line-height:1.5">' + _echapCom(a.texte) + '</p>' +
         '<button onclick="supprimerAstuce(\'' + a.id + '\')" style="background:rgba(226,87,76,.15);color:#e8867d;border:1px solid rgba(226,87,76,.5);border-radius:10px;padding:8px 14px;font-size:13px;font-weight:500;cursor:pointer">🗑️ Supprimer</button>' +
       '</div>';
@@ -505,7 +505,7 @@ async function chargerPhotosModeration() {
     z.innerHTML = arr.map(function (p) {
       var nomRec = (typeof getNomRecette === "function" ? getNomRecette(p.recetteKey) : "") || p.recetteKey;
       return '<div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px">' +
-        '<div style="font-size:12px;color:#88858f;margin-bottom:8px">' + _echapCom(p.pseudo || "Gourmand") + ' · sur <strong style="color:#ff8fb3">' + _echapCom(nomRec) + '</strong></div>' +
+        '<div style="font-size:12px;color:#88858f;margin-bottom:8px">' + _echapCom(p.pseudo || "Gourmand") + ' · sur <strong style="color:var(--accent-soft,#ff8fb3)">' + _echapCom(nomRec) + '</strong></div>' +
         '<img src="' + p.url + '" alt="" style="width:100%;max-height:280px;object-fit:contain;border-radius:10px;background:#17151c;margin-bottom:10px">' +
         '<div style="display:flex;gap:8px">' +
           '<button onclick="approuverPhoto(\'' + p.id + '\')" style="flex:1;background:rgba(76,175,80,.18);color:#7fc783;border:1px solid rgba(76,175,80,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">✅ Approuver</button>' +

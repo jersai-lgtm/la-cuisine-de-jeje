@@ -1818,7 +1818,7 @@ function afficherToast(message, type) {
 
   const couleur = type === "success" ? "#22c55e"
                 : type === "error"   ? "#ef4444"
-                : "#ff8fb3";
+                : "var(--accent-soft,#ff8fb3)";
   const toast = document.createElement("div");
   toast.id = "app-toast";
   toast.style.cssText = `

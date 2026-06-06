@@ -25,7 +25,7 @@ window.ouvrirAmelioration = function () {
         '<div id="amelioration-compteur" style="text-align:right;color:#88858f;font-size:11px;margin-top:4px">0 / 800</div>' +
         '<div style="display:flex;gap:10px;margin-top:12px">' +
           '<button onclick="fermerAmelioration()" style="flex:1;background:rgba(255,255,255,.08);color:#fff;border:none;border-radius:12px;padding:11px;font-size:14px;font-weight:500;cursor:pointer">Annuler</button>' +
-          '<button onclick="envoyerAmelioration()" style="flex:1;background:#ff4d88;color:#fff;border:none;border-radius:12px;padding:11px;font-size:14px;font-weight:600;cursor:pointer">✉️ Envoyer</button>' +
+          '<button onclick="envoyerAmelioration()" style="flex:1;background:var(--accent,#ff4d88);color:#fff;border:none;border-radius:12px;padding:11px;font-size:14px;font-weight:600;cursor:pointer">✉️ Envoyer</button>' +
         '</div>' +
       '</div>';
     document.body.appendChild(modal);

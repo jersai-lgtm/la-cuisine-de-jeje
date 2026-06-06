@@ -113,7 +113,7 @@ function maRenderSheet() {
   const nom = (typeof getNomRecette === "function") ? getNomRecette(s.key) : s.key;
   const segBtn = function (active, onclick, label) {
     return '<span onclick="' + onclick + '" style="flex:1;text-align:center;padding:8px 0;border-radius:10px;cursor:pointer;font-size:13px;'
-      + (active ? 'background:#ff4d88;color:#fff;font-weight:600' : 'color:#b3b0b8;border:1px solid rgba(255,255,255,.12)') + '">' + label + '</span>';
+      + (active ? 'background:var(--accent,#ff4d88);color:#fff;font-weight:600' : 'color:#b3b0b8;border:1px solid rgba(255,255,255,.12)') + '">' + label + '</span>';
   };
   const dests = segBtn(s.dest === "simple", "maSelDest('simple')", "Semaine")
     + segBtn(s.dest === "complet", "maSelDest('complet')", "Repas complet")
@@ -121,7 +121,7 @@ function maRenderSheet() {
   const chips = MA_JOURS.map(function (j, i) {
     const on = i === s.jour;
     return '<span onclick="maSelJour(' + i + ')" style="flex:1;text-align:center;padding:8px 0;border-radius:10px;cursor:pointer;font-size:13px;'
-      + (on ? 'background:#ff4d88;color:#fff;font-weight:600' : 'color:#b3b0b8;border:1px solid rgba(255,255,255,.12)') + '">' + j.slice(0, 3) + '</span>';
+      + (on ? 'background:var(--accent,#ff4d88);color:#fff;font-weight:600' : 'color:#b3b0b8;border:1px solid rgba(255,255,255,.12)') + '">' + j.slice(0, 3) + '</span>';
   }).join("");
   let creneauBlock = "";
   if (s.dest !== "lunchbox") {
@@ -150,7 +150,7 @@ function maRenderSheet() {
     + '<p style="margin:0 0 7px;color:#b3b0b8;font-size:12px;font-weight:500">Quel jour ?</p>'
     + '<div style="display:flex;gap:5px;margin-bottom:16px">' + chips + '</div>'
     + creneauBlock + roleBlock
-    + '<button onclick="maValider()" style="width:100%;padding:12px;border:none;border-radius:12px;background:#ff4d88;color:#fff;font-size:15px;font-weight:600;cursor:pointer">' + lbl + '</button>'
+    + '<button onclick="maValider()" style="width:100%;padding:12px;border:none;border-radius:12px;background:var(--accent,#ff4d88);color:#fff;font-size:15px;font-weight:600;cursor:pointer">' + lbl + '</button>'
     + '<button onclick="fermerAjoutMenu()" style="width:100%;margin-top:8px;padding:10px;border:none;border-radius:12px;background:transparent;color:#9a97a0;font-size:13px;cursor:pointer">Annuler</button>';
 }
 
@@ -248,7 +248,7 @@ function maRechercheMenu(q) {
     return '<div onclick="ouvrirAjoutMenu(\'' + k + '\')" style="display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;background:#1a1620;border:1px solid rgba(255,255,255,.07);margin-top:6px;cursor:pointer">'
       + '<span style="font-size:20px">' + emo + '</span>'
       + '<span style="flex:1;color:#fff;font-size:13px">' + nom + '</span>'
-      + '<span style="font-size:12px;color:#ff4d88;font-weight:600">+ menu</span></div>';
+      + '<span style="font-size:12px;color:var(--accent,#ff4d88);font-weight:600">+ menu</span></div>';
   }).join("");
 }
 

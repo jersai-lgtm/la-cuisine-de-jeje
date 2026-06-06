@@ -26,6 +26,22 @@
   function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   function lsDel(k) { try { localStorage.removeItem(k); } catch (e) {} }
 
+  // hex -> "r,g,b"
+  function hexRgb(h) {
+    h = String(h).replace("#", "");
+    if (h.length === 3) h = h.split("").map(function (c) { return c + c; }).join("");
+    var n = parseInt(h, 16);
+    return ((n >> 16) & 255) + "," + ((n >> 8) & 255) + "," + (n & 255);
+  }
+  // éclaircit une couleur vers le blanc (amt 0..1)
+  function eclaircir(h, amt) {
+    h = String(h).replace("#", "");
+    if (h.length === 3) h = h.split("").map(function (c) { return c + c; }).join("");
+    var n = parseInt(h, 16), r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+    r = Math.round(r + (255 - r) * amt); g = Math.round(g + (255 - g) * amt); b = Math.round(b + (255 - b) * amt);
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+  }
+
   // --- Date utils ---------------------------------------------------------
   function ymd(d) {
     return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
@@ -57,6 +73,8 @@
       titre: "🎃 Menu Fête Halloween",
       accent: "#ff7518",
       accent2: "#7b2ff7",
+      accentSoft: "#ff9d4d",
+      accentPale: "#ffcf9e",
       image: "images/event-halloween.webp",
       emojis: ["🎃", "🦇", "🕷️", "👻", "🕸️"],
       cta: "Voir le menu 🎃",
@@ -213,6 +231,13 @@
     injecterStyle();
     document.documentElement.style.setProperty("--ev-accent", ev.accent);
     document.documentElement.style.setProperty("--ev-accent2", ev.accent2 || ev.accent);
+    // Recolorage global de l'appli (les couleurs sont passées en var(--accent…))
+    var root = document.documentElement;
+    root.style.setProperty("--accent", ev.accent);
+    root.style.setProperty("--accent-soft", ev.accentSoft || eclaircir(ev.accent, 0.22));
+    root.style.setProperty("--accent-pale", ev.accentPale || eclaircir(ev.accent, 0.45));
+    root.style.setProperty("--accent-light", ev.accentLight || eclaircir(ev.accent, 0.12));
+    root.style.setProperty("--accent-rgb", hexRgb(ev.accent));
     document.body.setAttribute("data-event", ev._id);
     // theme-color (barre système)
     try {

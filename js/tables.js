@@ -1667,7 +1667,7 @@ function col(lignes) {
 function htmlTableauPizzaColonnes(l) {
   return col(`
     <tr><th>🍕 Pâtons</th><td><b>${l.patons}</b></td></tr>
-    <tr><th>⚖️ Poids total pâte</th><td><b style="color:#ff8fb3">${l.total}</b></td></tr>
+    <tr><th>⚖️ Poids total pâte</th><td><b style="color:var(--accent-soft,#ff8fb3)">${l.total}</b></td></tr>
     <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
     <tr><th>💧 Eau (65% hydratation)</th><td>${l.eau}</td></tr>
     <tr><th>🧂 Sel (~3%)</th><td>${l.sel}</td></tr>
@@ -1718,7 +1718,7 @@ function htmlTableauSmoothieColonnes(l) {
     <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
     <tr><th>🥥 Lait végétal</th><td>${l.lait}</td></tr>
     <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;padding-top:12px">🎨 Toppings (selon goût)</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);padding-top:12px">🎨 Toppings (selon goût)</th></tr>
     <tr><th>🫐 Fruits frais</th><td>1 poignée / bol</td></tr>
     <tr><th>🌾 Granola / flocons avoine</th><td>2 c.à.s / bol</td></tr>
     <tr><th>🌱 Graines de chia</th><td>1 c.à.c / bol</td></tr>
@@ -1730,7 +1730,7 @@ function htmlTableauYaourtColonnes(l) {
     <tr><th>🥛 Yaourts</th><td><b>${l.nb}</b></td></tr>
     <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
     <tr><th>🧫 Ferment (yaourt nature)</th><td>${l.ferment}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;padding-top:12px">🍯 Pour servir (optionnel)</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);padding-top:12px">🍯 Pour servir (optionnel)</th></tr>
     <tr><th>🍯 Miel / confiture</th><td>selon goût</td></tr>
     <tr><th>🍓 Fruits frais</th><td>selon goût</td></tr>`);
 }
@@ -1866,7 +1866,7 @@ function htmlTableauAvocatCrevettesColonnes(l) {
 function htmlTableauGoumeauColonnes(l) {
   return col(`
     <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🥙 Pâte</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🥙 Pâte</th></tr>
     <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
     <tr><th>🟨 Levure de bière</th><td>${l.levure}</td></tr>
     <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
@@ -1874,7 +1874,7 @@ function htmlTableauGoumeauColonnes(l) {
     <tr><th>🍦 Crème épaisse</th><td>${l.creme}</td></tr>
     <tr><th>🥛 Lait tiède</th><td>${l.lait}</td></tr>
     <tr><th>🌸 Eau de fleur d'oranger</th><td>selon quantité</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🍮 Goumeau (nappage)</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🍮 Goumeau (nappage)</th></tr>
     <tr><th>🍦 Crème fraîche épaisse</th><td>${l.gCreme}</td></tr>
     <tr><th>🍬 Sucre</th><td>${l.gSucre}</td></tr>
     <tr><th>🥚 Jaune d'œuf</th><td>${l.gJaune}</td></tr>`);
@@ -1901,7 +1901,7 @@ function htmlTableauPainBurgerColonnes(l) {
     <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
     <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
     <tr><th>🧂 Sel</th><td>${l.sel}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">✨ Finition</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">✨ Finition</th></tr>
     <tr><th>🥛 Lait (dorure)</th><td>pour badigeonner</td></tr>
     <tr><th>⚪ Graines de sésame</th><td>selon goût</td></tr>`);
 }
@@ -1925,7 +1925,7 @@ function htmlTableauOvernightOatsColonnes(l) {
     <tr><th>🥛 Yaourt grec</th><td>${l.yaourt}</td></tr>
     <tr><th>🌱 Graines de chia</th><td>${l.chia}</td></tr>
     <tr><th>🍯 Miel / sirop d'érable</th><td>${l.miel}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🎨 Toppings (selon goût)</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🎨 Toppings (selon goût)</th></tr>
     <tr><th>🍓 Fruits frais</th><td>1 poignée / pot</td></tr>
     <tr><th>🌰 Noix / amandes</th><td>selon goût</td></tr>`);
 }
@@ -2309,13 +2309,13 @@ function htmlTableauVirginPinaColonnes(l) {
 function htmlTableauParisBrestColonnes(l) {
   return col(`
     <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🥧 Pâte à choux</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🥧 Pâte à choux</th></tr>
     <tr><th>💧 Eau</th><td>${l.eauChoux}</td></tr>
     <tr><th>🥛 Lait</th><td>${l.laitChoux}</td></tr>
     <tr><th>🧈 Beurre</th><td>${l.beurrChoux}</td></tr>
     <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
     <tr><th>🥚 Œufs</th><td>${l.oeufChoux}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌰 Crème mousseline pralinée</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🌰 Crème mousseline pralinée</th></tr>
     <tr><th>🥛 Lait entier</th><td>${l.laitCreme}</td></tr>
     <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunesCreme}</td></tr>
     <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
@@ -3159,7 +3159,7 @@ function htmlTableauGravlaxColonnes(l) {
     <tr><th>🍬 Sucre en poudre</th><td>${l.sucre}</td></tr>
     <tr><th>🌿 Aneth frais</th><td>${l.aneth}</td></tr>
     <tr><th>🥃 Vodka (optionnel)</th><td>${l.vodka}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌿 Sauce moutarde aneth</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🌿 Sauce moutarde aneth</th></tr>
     <tr><th>🌿 Moutarde douce</th><td>3 c.à.s / 4 pers.</td></tr>
     <tr><th>🫒 Huile neutre</th><td>3 c.à.s / 4 pers.</td></tr>`);
 }
@@ -3449,15 +3449,15 @@ function htmlTableauMousseColonnes(l) {
 function htmlTableauIleFlottanteColonnes(l) {
   return col(`
     <tr><th>👥 Personnes</th><td><b>${l.nb}</b></td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🥛 Crème anglaise</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🥛 Crème anglaise</th></tr>
     <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
     <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunesCreme}</td></tr>
     <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
     <tr><th>🌿 Vanille</th><td>${l.vanille} gousse</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🌨️ Îles (meringue)</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🌨️ Îles (meringue)</th></tr>
     <tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr>
     <tr><th>🍬 Sucre</th><td>${l.sucreIles}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:12px;padding:8px 14px 4px">🍯 Caramel</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🍯 Caramel</th></tr>
     <tr><th>🍬 Sucre</th><td>${l.sucreCaramel}</td></tr>`);
 }
 
@@ -3557,19 +3557,19 @@ function htmlTableauVelouteLegumesColonnes(l) {
 
 function htmlTableauTarteCitronColonnes(l) {
   return col(`
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🥧 Pâte sablée</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:13px;padding:10px 14px 6px">🥧 Pâte sablée</th></tr>
     <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
     <tr><th>🧈 Beurre froid</th><td>${l.beurrePate}</td></tr>
     <tr><th>🍬 Sucre glace</th><td>${l.sucreGlace}</td></tr>
     <tr><th>🌰 Poudre d'amande</th><td>${l.poudreAmande}</td></tr>
     <tr><th>🥚 Œuf</th><td>${l.oeufPate}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🍋 Crème citron</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:13px;padding:10px 14px 6px">🍋 Crème citron</th></tr>
     <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
     <tr><th>🥚 Œufs</th><td>${l.oeufCreme}</td></tr>
     <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
     <tr><th>🧈 Beurre</th><td>${l.beurreCreme}</td></tr>
     <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
-    <tr><th colspan="2" style="color:#ffb3cc;font-size:13px;padding:10px 14px 6px">🌨️ Meringue</th></tr>
+    <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:13px;padding:10px 14px 6px">🌨️ Meringue</th></tr>
     <tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr>
     <tr><th>🍬 Sucre</th><td>${l.sucreMeringue}</td></tr>`);
 }
@@ -3597,7 +3597,7 @@ function htmlTableauLasagneColonnes(l) {
 function htmlTableauBriocheColonnes(l) {
   return col(`
     <tr><th>🍞 Brioches</th><td><b>${l.nb}</b></td></tr>
-    <tr><th>⚖️ Poids total pâte</th><td><b style="color:#ff8fb3">${l.total}</b></td></tr>
+    <tr><th>⚖️ Poids total pâte</th><td><b style="color:var(--accent-soft,#ff8fb3)">${l.total}</b></td></tr>
     <tr><th>🌾 Farine</th><td>${l.farine}</td></tr>
     <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
     <tr><th>🥛 Lait</th><td>${l.lait}</td></tr>

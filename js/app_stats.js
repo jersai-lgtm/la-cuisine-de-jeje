@@ -18,7 +18,7 @@ function chargerMesStats() {
   
   // Si pas connecté
   if (!user || !user.uid) {
-    if (subtitle) subtitle.innerHTML = `👤 <a onclick="ouvrirModalAuth()" style="color:#ff8fb3;cursor:pointer;text-decoration:underline">Connectez-vous</a> pour voir vos statistiques personnelles`;
+    if (subtitle) subtitle.innerHTML = `👤 <a onclick="ouvrirModalAuth()" style="color:var(--accent-soft,#ff8fb3);cursor:pointer;text-decoration:underline">Connectez-vous</a> pour voir vos statistiques personnelles`;
     document.getElementById("stats-overview").innerHTML = "";
     document.getElementById("stats-records").innerHTML = "";
     document.getElementById("stats-evolution").innerHTML = "";
@@ -774,7 +774,7 @@ function genererBlocEvolutionNutri() {
       <div class="nutri-evol-graphique">
         <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" class="nutri-evol-svg">
           ${reperes}
-          <path d="${path}" fill="none" stroke="#ff4d88" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="${path}" fill="none" style="stroke:var(--accent,#ff4d88)" stroke-width="2.5" stroke-linejoin="round"/>
           ${dots}
           ${xLabels}
         </svg>

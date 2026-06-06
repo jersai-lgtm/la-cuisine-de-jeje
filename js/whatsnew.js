@@ -57,7 +57,7 @@ function ouvrirQuoiDeNeuf() {
     const recent = (i === 0);
     return '<div style="background:rgba(255,255,255,' + (recent ? '.05' : '.03') + ');border-radius:12px;padding:12px;margin-bottom:10px' + (recent ? '' : ';opacity:.7') + '">' +
       '<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">' +
-        '<span style="font-size:11px;font-weight:600;color:' + (recent ? '#ff8fb3' : '#b3b0b8') + ';background:' + (recent ? 'rgba(255,77,136,.18)' : 'rgba(255,255,255,.08)') + ';padding:2px 8px;border-radius:20px">v' + _qdnEchap(n.v) + '</span>' +
+        '<span style="font-size:11px;font-weight:600;color:' + (recent ? 'var(--accent-soft,#ff8fb3)' : '#b3b0b8') + ';background:' + (recent ? 'rgba(var(--accent-rgb),.18)' : 'rgba(255,255,255,.08)') + ';padding:2px 8px;border-radius:20px">v' + _qdnEchap(n.v) + '</span>' +
         (recent ? '<span style="font-size:11px;color:#88858f">nouveau</span>' : '') +
       '</div>' +
       '<div style="font-size:14px;font-weight:600;color:#fff;margin-bottom:3px">' + _qdnEchap(n.titre) + '</div>' +
