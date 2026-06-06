@@ -495,9 +495,23 @@ function lcClasserEtape(et) {
   return "prep";
 }
 
+// Une étape est-elle "minute" (au tout dernier moment) ? Priorité aux métadonnées
+// batch (etapesBatch / etapesMinute, index 1-based). Fallback : la phase "finition".
+function lcEstMinute(cle, idx1, et) {
+  const meta = (window.RECETTES_BATCH || {})[cle];
+  if (meta && (Array.isArray(meta.etapesMinute) || Array.isArray(meta.etapesBatch))) {
+    if (Array.isArray(meta.etapesMinute) && meta.etapesMinute.includes(idx1)) return true;
+    if (Array.isArray(meta.etapesBatch) && meta.etapesBatch.includes(idx1)) return false;
+    return false; // index non classé par le modèle → batch par défaut
+  }
+  return lcClasserEtape(et) === "finition";
+}
+
 // Conseil de conservation par recette (heuristique : catégorie + mots-clés)
 // Retourne { frigo: nbJours, congel: "oui"|"moyen"|"non", note: "" }
 function lcConseilConservation(cle) {
+  const meta = (window.RECETTES_BATCH || {})[cle];
+  if (meta && meta.conservation && ["oui", "moyen", "non"].includes(meta.conservation.congel)) return meta.conservation;
   const r = recettes[cle] || {};
   const cat = r.cat || "";
   const t = _prepStrip((r.nom || cle) + " " + (r.description || ""));
@@ -521,6 +535,8 @@ const LC_AFFICHER_RECHAUFFE = true;
 
 // Temps de réchauffage ESTIMÉ (indicatif) en minutes. 0 = à servir frais (rien à réchauffer).
 function lcTempsRechauffe(cle) {
+  const meta = (window.RECETTES_BATCH || {})[cle];
+  if (meta && Number.isFinite(meta.rechauffe)) return meta.rechauffe;
   const r = recettes[cle] || {};
   const cat = r.cat || "";
   const t = _prepStrip((r.nom || cle) + " " + (r.description || ""));
@@ -590,13 +606,20 @@ function lcGenererPlanPrep() {
   if (!zone) return;
   if (liste.length === 0) { zone.innerHTML = ""; return; }
 
+  const menuMap = lcMenuParJour();
+  const aMenu = Object.keys(menuMap).length > 0;
+
   const buckets = { prep: [], cuisson: [], finition: [], repos: [] };
   liste.forEach(({ cle }) => {
     const r = recettes[cle];
     if (!r) return;
     if (!Array.isArray(r.etapes)) return;
     const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : cle;
-    r.etapes.forEach(et => { buckets[lcClasserEtape(et)].push({ nom, et }); });
+    r.etapes.forEach((et, idx) => {
+      const minute = lcEstMinute(cle, idx + 1, et);
+      if (aMenu && minute) return;                 // étapes "minute" → vue « Chaque soir »
+      buckets[minute ? "finition" : lcClasserEtape(et)].push({ nom, et });
+    });
   });
   const actifMin = lcBatchActif(liste);
 
@@ -605,13 +628,11 @@ function lcGenererPlanPrep() {
 
   const norm = s => _prepStrip(s).replace(/\s+/g, " ").trim();
   const coches = new Set(window.userProfile?.planPrepCoches || []);
-  const menuMap = lcMenuParJour();
-  const aMenu = Object.keys(menuMap).length > 0;
   const joursMenu = Object.values(menuMap).reduce((a, b) => a.concat(b), []);
   if (!window._lcJourPrep) window._lcJourPrep = joursMenu.length ? LC_JOURS[Math.min.apply(null, joursMenu)] : "Dimanche";
   const jourPrepIdx = LC_JOURS.indexOf(window._lcJourPrep);
 
-  const phasesAffichees = PREP_PHASES.filter(p => buckets[p.id].length && !(aMenu && p.id === "finition"));
+  const phasesAffichees = PREP_PHASES.filter(p => buckets[p.id].length);
   const phasesHTML = phasesAffichees.map((phase, i) => {
     const items = buckets[phase.id];
     // Déduplication : étapes identiques (même titre + même détail) → 1 ligne, recettes cumulées
@@ -781,12 +802,22 @@ function lcGenererPlanPrep() {
         const crLbl = p.creneau === "midi" ? "midi" : "soir";
         const rech = LC_AFFICHER_RECHAUFFE ? lcTempsRechauffe(p.cle) : null;
         const rechTxt = (rech && rech > 0) ? ` · ♨️ ≈ ${rech} min` : (rech === 0 ? " · 🧊 servir frais" : "");
-        const fins = Array.isArray(r.etapes) ? r.etapes.filter(et => lcClasserEtape(et) === "finition") : [];
-        const gestes = fins.length
-          ? fins.map(et => `<li>${ech(et.titre)}${et.detail ? ` — <span style="color:#9a97a0">${ech(et.detail)}</span>` : ""}</li>`).join("")
-          : `<li>Réchauffe et sers.</li>`;
+        const meta = (window.RECETTES_BATCH || {})[p.cle];
+        const sauceTag = (meta && meta.sauceAPart) ? ` · <span style="color:#ffb38f">🥄 sauce à part</span>` : "";
+        let gestes;
+        if (meta && meta.conseilSoir) {
+          const mins = (Array.isArray(r.etapes) && Array.isArray(meta.etapesMinute))
+            ? r.etapes.filter((et, idx) => meta.etapesMinute.includes(idx + 1)) : [];
+          const minLis = mins.map(et => `<li>${ech(et.titre)}${et.detail ? ` — <span style="color:#9a97a0">${ech(et.detail)}</span>` : ""}</li>`).join("");
+          gestes = minLis + `<li style="color:#ffd9a8">💡 ${ech(meta.conseilSoir)}</li>`;
+        } else {
+          const fins = Array.isArray(r.etapes) ? r.etapes.filter(et => lcClasserEtape(et) === "finition") : [];
+          gestes = fins.length
+            ? fins.map(et => `<li>${ech(et.titre)}${et.detail ? ` — <span style="color:#9a97a0">${ech(et.detail)}</span>` : ""}</li>`).join("")
+            : `<li>Réchauffe et sers.</li>`;
+        }
         return `<div style="margin-top:7px">
-          <div style="font-size:13px;color:#fff;font-weight:500">${emo} ${ech(nomDe(p.cle))} <span style="color:#88858f;font-weight:400;font-size:11px">· ${crLbl}${rechTxt}</span></div>
+          <div style="font-size:13px;color:#fff;font-weight:500">${emo} ${ech(nomDe(p.cle))} <span style="color:#88858f;font-weight:400;font-size:11px">· ${crLbl}${rechTxt}${sauceTag}</span></div>
           <ul style="margin:4px 0 0;padding-left:18px;font-size:12px;color:#b3b0b8;line-height:1.5">${gestes}</ul>
         </div>`;
       }).join("");
