@@ -80,8 +80,9 @@
       accentPale: "#ffcf9e",
       image: "images/event-halloween.webp",
       emojis: ["🎃", "🦇", "🕷️", "👻", "🕸️"],
-      cta: "Voir le menu 🎃",
-      menuZone: { top: "42%", bottom: "33%", left: "24%", right: "33%" },
+      cta: "Entrer 🎃",
+      menuZone: { top: "45%", bottom: "33%", left: "24%", right: "30%" },
+      menuNoms: { soupepotimarronchataigne: "Soupe Potimarron", chilisincarne: "Chili sin Carne", veloutetomaterotie: "Velouté Tomate Rôtie", darkStormyCocktail: "Dark & Stormy", blueLagoon: "Blue Lagoon", moelleuxchocolat: "Moelleux Chocolat" },
       recettes: ["soupepotimarronchataigne", "chilisincarne", "veloutetomaterotie", "darkStormyCocktail", "blueLagoon", "moelleuxchocolat"],
       estActif: function (now) {
         var y = now.getFullYear();
@@ -95,10 +96,11 @@
       accent2: "#d4af37",
       image: "images/event-noel.webp",
       emojis: ["🎄", "❄️", "⭐", "🎁", "🦌"],
-      cta: "Voir le menu de Noël 🎄",
+      cta: "Entrer 🎄",
       menuZone: { top: "50%", bottom: "24%", left: "27%", right: "27%" },
       menuColor: "#3a5a3f",
       menuShadow: "none",
+      menuNoms: { huitresgratinees: "Huîtres Gratinées", foiegraspoele: "Foie Gras Poêlé", escargots: "Escargots", dindenoelmarrons: "Dinde aux Marrons", buchenoelchocolat: "Bûche au Chocolat", vinchaud: "Vin Chaud" },
       recettes: ["huitresgratinees", "foiegraspoele", "escargots", "dindenoelmarrons", "buchenoelchocolat", "vinchaud"],
       estActif: function (now) {
         var y = now.getFullYear();
@@ -214,9 +216,12 @@
       "#event-splash.visible{opacity:1}",
       "#event-splash .ev-board{position:relative;width:min(460px,92vw);max-height:88vh;aspect-ratio:1086/1448;border-radius:14px;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.6);container-type:inline-size}",
       "#event-splash .ev-board img{display:block;width:100%;height:100%;object-fit:cover}",
-      "#event-splash .ev-menu{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.6cqw;overflow-y:auto;text-align:center}",
-      "#event-splash .ev-menu-item{font-family:Georgia,'Times New Roman',serif;color:var(--ev-menu-color,var(--ev-accent,#ff7518));font-weight:600;font-size:3.6cqw;line-height:1.25;cursor:pointer;text-shadow:var(--ev-menu-shadow,0 1px 3px rgba(0,0,0,.75))}",
+      "#event-splash .ev-menu{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.1cqw;overflow-y:auto;text-align:center;scrollbar-width:none}",
+      "#event-splash .ev-menu::-webkit-scrollbar{display:none}",
+      "#event-splash .ev-menu-item{font-family:Georgia,'Times New Roman',serif;color:var(--ev-menu-color,var(--ev-accent,#ff7518));font-weight:600;font-size:3.3cqw;line-height:1.25;cursor:pointer;text-shadow:var(--ev-menu-shadow,0 1px 3px rgba(0,0,0,.75))}",
       "#event-splash .ev-menu-item:active{opacity:.55}",
+      ".lc-event-fab{position:fixed;right:16px;bottom:90px;width:54px;height:54px;border-radius:50%;border:none;background:var(--ev-accent,#ff7518);color:#fff;font-size:26px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:9000;box-shadow:0 6px 20px rgba(0,0,0,.45)}",
+      ".lc-event-fab:active{transform:scale(.92)}",
       "#event-splash .ev-fallback{display:flex;align-items:center;justify-content:center;min-height:60vh;background:#15121a;color:var(--ev-accent,#ff7518);font-weight:800;font-size:34px;text-align:center;letter-spacing:1px;padding:30px;border:2px solid var(--ev-accent,#ff7518)}",
       "#event-splash .ev-close{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(255,255,255,.5);background:rgba(0,0,0,.45);color:#fff;font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}",
       "#event-splash .ev-cta{margin-top:18px;background:var(--ev-accent,#ff7518);color:#fff;border:none;border-radius:50px;padding:14px 26px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.4)}",
@@ -254,6 +259,7 @@
     } catch (e) {}
     poserDecor(ev);
     injecterBlocAccueil(ev);
+    poserFab(ev);
   }
 
   // --- Déco flottante -----------------------------------------------------
@@ -286,6 +292,22 @@
     if (ev) { if (on) poserDecor(ev); else enleverDecor(); }
   };
 
+  // Bouton flottant permanent pour ré-ouvrir l'ardoise-menu à tout moment
+  function poserFab(ev) {
+    var old = document.getElementById("lc-event-fab");
+    if (old) old.remove();
+    var b = document.createElement("button");
+    b.id = "lc-event-fab";
+    b.className = "lc-event-fab";
+    b.setAttribute("aria-label", "Menu " + ev.nom);
+    b.textContent = (ev.emojis && ev.emojis[0]) || "🎉";
+    b.onclick = function () { window.lcRouvrirMenu(); };
+    document.body.appendChild(b);
+  }
+  window.lcRouvrirMenu = function () {
+    if (currentEv) montrerSplash(currentEv, true);
+  };
+
   // --- Bloc "Menu de fête" sur l'accueil ----------------------------------
   function injecterBlocAccueil(ev) {
     var section = document.getElementById("section-accueil");
@@ -296,7 +318,7 @@
     if (!cles.length) return;
     var cards = cles.map(function (k) {
       var r = R[k] || {};
-      var nom = (typeof getNomRecette==="function"?getNomRecette(k):(r.nom||k)).replace(/"/g, "&quot;");
+      var nom = ((ev.menuNoms&&ev.menuNoms[k])||(typeof getNomRecette==="function"?getNomRecette(k):(r.nom||k))).replace(/"/g, "&quot;");
       var cat = (r.cat || "").replace(/'/g, "\\'");
       return '<div class="lc-event-card" onclick="lcEventOuvrir(\'' + k + "','" + cat + '\')">' +
         '<img loading="lazy" src="images/' + k + '.webp" alt="" onerror="this.style.visibility=\'hidden\'">' +
@@ -337,7 +359,7 @@
       var z = ev.menuZone || ZONE_DEFAUT;
       var items = menuKeys.map(function (k) {
         var r = R[k] || {};
-        var nom = (typeof getNomRecette==="function"?getNomRecette(k):(r.nom||k)).replace(/"/g, "&quot;");
+        var nom = ((ev.menuNoms&&ev.menuNoms[k])||(typeof getNomRecette==="function"?getNomRecette(k):(r.nom||k))).replace(/"/g, "&quot;");
         var emo = r.emoji ? (r.emoji + " ") : "";
         var cat = (r.cat || "").replace(/'/g, "\\'");
         return '<div class="ev-menu-item" onclick="lcFermerEventSplash();lcEventOuvrir(\'' + k + "','" + cat + '\')">' + emo + nom + "</div>";
@@ -367,10 +389,6 @@
   window.lcEventCTA = function () {
     window.lcFermerEventSplash();
     try { if (typeof afficherAccueil === "function") afficherAccueil(); } catch (e) {}
-    setTimeout(function () {
-      var b = document.getElementById("lc-event-bloc");
-      if (b && b.scrollIntoView) b.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 250);
   };
 
   // Enregistrer le splash dans le système de retour Android (comme les autres modals)
