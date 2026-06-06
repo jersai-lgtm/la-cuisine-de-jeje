@@ -138,12 +138,14 @@ Object.assign(recettes, {
       { nb: 6, farine: "1500 g", beurre: "1230 g", eau: "750 ml", sel: "30 g" }
     ],
     etapes: [
-      { icone: "🌾", titre: "La détrempe", detail: "Mélanger la farine, le sel et une petite part du beurre fondu (~15 % ; le reste servira au tourage). Ajouter l'eau froide progressivement. Former une boule sans trop pétrir. Inciser en croix. Filmer et reposer au frigo.", badge: "⏱ 30 min au frigo" },
-      { icone: "🧈", titre: "Préparer le beurre", detail: "Aplatir le beurre de tourage froid en carré de 1cm d'épaisseur entre deux feuilles de papier. Il doit avoir la même consistance que la détrempe.", badge: null },
-      { icone: "📏", titre: "Premier tourage", detail: "Étaler la détrempe en croix. Envelopper le beurre dedans comme une enveloppe. Étaler en rectangle et faire 1 tour double. Filmer et reposer. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 30 min au frigo" },
-      { icone: "📏", titre: "Tourages suivants", detail: "Répéter l'opération 2 fois en faisant 2 tours doubles à chaque fois, en reposant 30 min au frigo entre chaque. Au total : 3 × 2 tours doubles.", badge: "⏱ 3 × 30 min repos" },
-      { icone: "✅", titre: "Prête à utiliser", detail: "Après le dernier repos, étaler la pâte à l'épaisseur souhaitée. Elle se conserve 3 jours au frigo ou 3 mois au congélateur.", badge: null }
-    ]
+        { icone: "🌾", titre: "La détrempe", detail: "Mélanger la farine et le sel. Ajouter l'eau froide petit à petit jusqu'à former une boule souple, sans trop pétrir. Inciser une croix sur le dessus, filmer et réserver au frais.", badge: "⏱ 30 min au frigo" },
+        { icone: "🧈", titre: "Le beurre de tourage", detail: "Placer le beurre froid entre deux feuilles de papier et l'aplatir au rouleau en un carré régulier d'environ 1 cm. ASTUCE CHEF : le beurre doit avoir la même souplesse que la détrempe, ni dur ni fondu, sinon il transperce la pâte au tourage.", badge: null },
+        { icone: "📦", titre: "Enfermer le beurre", detail: "Étaler la détrempe en croix, poser le carré de beurre au centre et replier les quatre rabats par-dessus pour l'enfermer complètement, comme une enveloppe.", badge: null },
+        { icone: "📏", titre: "Premier tour double", detail: "Étaler en un long rectangle régulier, puis replier en portefeuille (les deux extrémités vers le centre, puis plier en deux). Filmer et reposer au frais.", badge: "⏱ 30 min au frigo" },
+        { icone: "📏", titre: "Deuxième tour double", detail: "Tourner la pâte d'un quart de tour, étaler de nouveau en rectangle et replier en portefeuille. Filmer et remettre au frais.", badge: "⏱ 30 min au frigo" },
+        { icone: "📏", titre: "Troisième tour double", detail: "Répéter une dernière fois le quart de tour, l'étalage et le pliage en portefeuille. Trois tours doubles au total : ce repos final fixe le feuilletage.", badge: "⏱ 30 min au frigo" },
+        { icone: "✅", titre: "Étaler et conserver", detail: "Étaler à l'épaisseur voulue, prête à foncer ou découper. Elle se garde 3 jours au frais, ou 3 mois au congélateur bien filmée.", badge: null }
+      ]
   },
   patebrisee: {
     nom: "Pâte brisée",
@@ -163,11 +165,13 @@ Object.assign(recettes, {
       { nb: 6, farine: "1200 g", beurre: "600 g", eau: "300 ml", sel: "24 g" }
     ],
     etapes: [
-      { icone: "🌾", titre: "Sabler", detail: "Couper le beurre froid en petits dés. L'incorporer à la farine et au sel du bout des doigts en frottant jusqu'à obtenir une texture sableuse. Ne pas trop travailler. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "💧", titre: "Hydrater", detail: "Ajouter l'eau froide cuillère par cuillère. Mélanger jusqu'à ce que la pâte s'amalgame. S'arrêter dès qu'elle forme une boule — ne pas trop pétrir. Pétrir 10 min à la main ou 7 min au robot — la pâte doit être lisse et élastique.", badge: null },
-      { icone: "❄️", titre: "Repos", detail: "Aplatir en disque, filmer et laisser reposer au réfrigérateur. Ce repos est indispensable pour une pâte non rétractable. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 30 min minimum" },
-      { icone: "📏", titre: "Étaler et foncer", detail: "Étaler sur un plan fariné et foncer le moule. Piquer le fond à la fourchette. Prête à garnir et cuire.", badge: null }
-    ]
+        { icone: "🌾", titre: "Sabler la farine", detail: "Verser la farine et le sel dans un saladier. Ajouter le beurre froid en petits dés et le frotter du bout des doigts avec la farine jusqu'à une texture sableuse et granuleuse.", badge: null },
+        { icone: "💧", titre: "Ajouter l'eau", detail: "Verser l'eau froide cuillère par cuillère en mélangeant, juste assez pour que la pâte commence à s'amalgamer. ASTUCE CHEF : on arrête dès qu'elle se rassemble — trop d'eau ou trop de travail rend la pâte dure.", badge: null },
+        { icone: "👐", titre: "Former la boule", detail: "Rassembler la pâte à la main, en l'écrasant une ou deux fois avec la paume (fraisage) pour répartir le beurre, puis former une boule sans pétrir.", badge: null },
+        { icone: "❄️", titre: "Repos au frais", detail: "Aplatir en disque, filmer et laisser reposer au réfrigérateur. Ce repos détend le gluten et évite que la pâte se rétracte à la cuisson.", badge: "⏱ 30 min minimum" },
+        { icone: "📏", titre: "Étaler et foncer", detail: "Étaler sur un plan fariné en un disque régulier, puis foncer le moule en chassant l'air sur les bords. Couper l'excédent de pâte.", badge: null },
+        { icone: "🍴", titre: "Piquer le fond", detail: "Piquer le fond à la fourchette pour éviter qu'il ne gonfle. La pâte est prête à garnir et à cuire selon la recette.", badge: null }
+      ]
   },
   patesablee: {
     nom: "Pâte sablée",
@@ -187,12 +191,13 @@ Object.assign(recettes, {
       { nb: 6, farine: "1200 g", beurre: "600 g", sucre: "480 g", oeufs: "6", amande: "120 g", sel: "6 g" }
     ],
     etapes: [
-      { icone: "🧈", titre: "Crémer beurre + sucre", detail: "Travailler le beurre mou avec le sucre glace jusqu'à obtenir un mélange crémeux.", badge: null },
-      { icone: "🥚", titre: "Ajouter l'œuf", detail: "Incorporer l'œuf et mélanger. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🌾", titre: "Ajouter farine + amande", detail: "Ajouter la farine, la poudre d'amande et le sel. Mélanger sans trop travailler jusqu'à formation d'une boule.", badge: null },
-      { icone: "❄️", titre: "Repos", detail: "Aplatir en disque, filmer et laisser reposer au réfrigérateur. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 1h minimum" },
-      { icone: "📏", titre: "Étaler et foncer", detail: "Étaler délicatement (pâte fragile) et foncer le moule. Cuire à blanc 15 min à 170°C avant de garnir.", badge: "⏱ 15 min à 170°C à blanc" }
-    ]
+        { icone: "🧈", titre: "Crémer beurre et sucre", detail: "Travailler le beurre mou avec le sucre glace au fouet ou à la spatule jusqu'à un mélange lisse et crémeux.", badge: null },
+        { icone: "🥚", titre: "Incorporer l'œuf", detail: "Ajouter l'œuf et mélanger jusqu'à ce qu'il soit complètement absorbé et le mélange homogène.", badge: null },
+        { icone: "🌾", titre: "Ajouter les poudres", detail: "Verser la farine, la poudre d'amande et le sel. Mélanger juste assez pour rassembler. ASTUCE CHEF : dès que la pâte forme une boule, on arrête — trop travaillée, elle perd son côté friable.", badge: null },
+        { icone: "❄️", titre: "Repos au frais", detail: "Aplatir en disque, filmer et laisser reposer au réfrigérateur. Le froid raffermit le beurre et facilite l'étalage.", badge: "⏱ 1h minimum" },
+        { icone: "📏", titre: "Étaler et foncer", detail: "Étaler délicatement (la pâte est fragile), entre deux feuilles de papier si besoin, puis foncer le moule.", badge: null },
+        { icone: "♨️", titre: "Cuisson à blanc", detail: "Piquer le fond, couvrir de papier et de billes de cuisson (ou légumes secs) et cuire à blanc avant de garnir.", badge: "⏱ 15 min à 170°C" }
+      ]
   },
   painburger: {
     nom: "Pain Burger (Buns)",
@@ -367,12 +372,15 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Détrempe", detail: "Mélanger farine, sel, sucre, levure et lait tiède. Pétrir 8 min. Ajouter beurre mou. Former un rectangle, filmer et réfrigérer. Pétrir 10 min à la main ou 7 min au robot — la pâte doit être lisse et élastique.", badge: "⏱ 1h frigo" },
-      { icone: "🧈", titre: "Beurrage", detail: "Aplatir le beurre de tourage froid en carré de 1cm. Il doit avoir la même consistance que la détrempe.", badge: null },
-      { icone: "📏", titre: "Tourage (3 tours simples)", detail: "Envelopper le beurre dans la détrempe. Étaler en rectangle, plier en 3. Tourner 90°. Répéter 3 fois en laissant reposer 30 min au frigo entre chaque tour. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 3 × 30 min repos" },
-      { icone: "🔪", titre: "Découper et façonner", detail: "Étaler la pâte en rectangle de 3mm. Découper en rectangles. Poser 2 barres de chocolat. Rouler en serrant bien. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🔥", titre: "Lever et cuire", detail: "Laisser lever 2h à température ambiante. Dorer au jaune d'œuf. Cuire jusqu'à belle coloration dorée. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 2h levée + 15-18 min à 180°C" }
-    ]
+        { icone: "🌾", titre: "La détrempe", detail: "Mélanger la farine, le sel, le sucre, la levure et le lait tiède. Pétrir jusqu'à une pâte lisse et souple, puis incorporer un peu de beurre mou. Former un rectangle, filmer et réfrigérer.", badge: "⏱ 1h au frigo" },
+        { icone: "🧈", titre: "Le beurre de tourage", detail: "Aplatir le beurre froid au rouleau en un carré régulier d'environ 1 cm. ASTUCE CHEF : il doit être souple mais froid, à la consistance de la détrempe, sinon il casse au lieu de s'étaler.", badge: null },
+        { icone: "📦", titre: "Enfermer le beurre", detail: "Étaler la détrempe, poser le beurre au centre et l'envelopper complètement dedans.", badge: null },
+        { icone: "📏", titre: "Les tourages", detail: "Étaler en rectangle et plier en trois (tour simple). Tourner d'un quart de tour et répéter, en reposant au frais entre chaque tour. Trois tours au total.", badge: "⏱ 3 × 30 min repos" },
+        { icone: "🔪", titre: "Découper", detail: "Étaler la pâte en un rectangle de 3 mm d'épaisseur, puis découper des rectangles réguliers.", badge: null },
+        { icone: "🍫", titre: "Façonner", detail: "Déposer 1 à 2 barres de chocolat sur chaque rectangle et rouler bien serré, la soudure dessous.", badge: null },
+        { icone: "⏲️", titre: "La pousse", detail: "Laisser lever à température ambiante jusqu'à ce que les pains doublent de volume et deviennent moelleux au toucher.", badge: "⏱ environ 2h" },
+        { icone: "🔥", titre: "Dorure et cuisson", detail: "Dorer au jaune d'œuf battu et enfourner. Surveiller la coloration : dès que c'est doré uniforme, c'est prêt.", badge: "⏱ 15-18 min à 180°C" }
+      ]
   },
   croissant: {
     nom: "Croissants au Beurre",
@@ -401,12 +409,15 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Détrempe", detail: "Mélanger farine, sucre, sel, levure, lait tiède et beurre fondu (40g). Pétrir 5 min. Laisser pousser 1h à température ambiante puis 12h au frigo. Pétrir 10 min à la main ou 7 min au robot — la pâte doit être lisse et élastique.", badge: "⏱ 13h repos" },
-      { icone: "🧈", titre: "Beurrage", detail: "Former un carré de beurre froid (beurre de tourage). Incorporer dans la détrempe froide. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "📏", titre: "Tourage (3 fois)", detail: "3 tours simples avec 30 min de repos au frigo entre chaque. Ne jamais laisser le beurre fondre.", badge: "⏱ 2h" },
-      { icone: "✂️", titre: "Façonnage", detail: "Étaler en rectangle. Découper des triangles. Rouler de la base vers la pointe. Courber les extrémités. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🔥", titre: "Pousse et cuisson", detail: "Pousser 2h à température ambiante. Dorer à l'œuf. Cuire jusqu'à belle couleur dorée. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 2h pousse + 15 min à 200°C" }
-    ]
+        { icone: "🌾", titre: "La détrempe", detail: "Mélanger farine, sucre, sel, levure, lait tiède et un peu de beurre fondu. Pétrir jusqu'à obtenir une pâte lisse.", badge: null },
+        { icone: "⏲️", titre: "Première pousse", detail: "Laisser pousser 1h à température ambiante, puis filmer et placer une nuit au frais pour développer les arômes.", badge: "⏱ 1h + 12h au froid" },
+        { icone: "🧈", titre: "Le beurre de tourage", detail: "Aplatir le beurre froid en un carré régulier. ASTUCE CHEF : travaillez toujours au frais — si le beurre commence à fondre, remettez tout au frigo, c'est la clé d'un feuilletage net.", badge: null },
+        { icone: "📦", titre: "Enfermer le beurre", detail: "Étaler la détrempe froide et envelopper le beurre complètement dedans.", badge: null },
+        { icone: "📏", titre: "Les tourages", detail: "Trois tours simples : étaler en rectangle, plier en trois, tourner d'un quart de tour, avec un repos au frais entre chaque tour.", badge: "⏱ 3 × 30 min" },
+        { icone: "✂️", titre: "Façonnage", detail: "Étaler en un grand rectangle fin, découper des triangles, puis rouler chacun de la base vers la pointe et courber légèrement les extrémités.", badge: null },
+        { icone: "⏲️", titre: "La pousse", detail: "Laisser pousser à température ambiante jusqu'à ce que les croissants soient bien gonflés et souples.", badge: "⏱ environ 2h" },
+        { icone: "🔥", titre: "Dorure et cuisson", detail: "Dorer à l'œuf battu et enfourner jusqu'à belle couleur dorée et feuilletage croustillant.", badge: "⏱ 15 min à 200°C" }
+      ]
   },
   focacciaolives: {
     nom: "Focaccia Olives-Romarin",
@@ -654,12 +665,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pétrir", detail: "Pétrir farine, eau tiède, levure, sel et huile 8-10 min. SECRET : pâte souple et un peu collante = mie aérée.", badge: "⏱ 10 min" },
-      { icone: "⏲️", titre: "Pousse", detail: "Laisser doubler de volume 1h sous un linge, à l'abri des courants d'air.", badge: "⏱ 60 min" },
-      { icone: "🫒", titre: "Façonner", detail: "Étaler en ovale plat sur la plaque, parsemer d'olives et de romarin en les enfonçant un peu.", badge: "⏱ 6 min" },
-      { icone: "🔪", titre: "Inciser", detail: "CLÉ : entailler en épi (nervures d'une feuille) et BIEN écarter les fentes avec les doigts, sinon elles se referment à la cuisson.", badge: "⏱ 3 min" },
-      { icone: "♨️", titre: "Cuire", detail: "Four 220°C 18-20 min, dorée. ASTUCE CHEF : badigeonner d'huile d'olive + fleur de sel à la sortie, encore chaude.", badge: "⏱ 20 min" }
-    ]
+        { icone: "🥣", titre: "Pétrir la pâte", detail: "Pétrir la farine, l'eau tiède, la levure, le sel et l'huile d'olive 8 à 10 min. ASTUCE CHEF : la pâte doit rester souple et légèrement collante, c'est ce qui donne une mie aérée.", badge: "⏱ 10 min" },
+        { icone: "⏲️", titre: "Première pousse", detail: "Couvrir d'un linge et laisser doubler de volume à l'abri des courants d'air.", badge: "⏱ environ 1h" },
+        { icone: "🫒", titre: "Façonner", detail: "Dégazer la pâte et l'étaler en un ovale plat directement sur la plaque. Parsemer d'olives et de romarin en les enfonçant légèrement.", badge: null },
+        { icone: "🔪", titre: "Inciser en épi", detail: "Entailler la pâte de coups obliques pour dessiner les nervures d'une feuille, puis écarter franchement les fentes avec les doigts pour qu'elles ne se referment pas à la cuisson.", badge: null },
+        { icone: "♨️", titre: "Cuisson", detail: "Enfourner four bien chaud jusqu'à ce que la fougasse soit dorée et croustillante.", badge: "⏱ 18-20 min à 220°C" },
+        { icone: "✨", titre: "Finition", detail: "À la sortie du four, badigeonner d'huile d'olive et parsemer de fleur de sel pendant que c'est encore chaud.", badge: null }
+      ]
   },
   painauxraisins: {
     nom: "Pain aux raisins",
@@ -723,12 +735,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍎", titre: "Compote", detail: "Cuire les pommes en dés avec sucre, beurre et cannelle 10-12 min. CLÉ : compote ÉPAISSE (sinon elle coule et perce la pâte). Refroidir complètement.", badge: "⏱ 14 min" },
-      { icone: "🥐", titre: "Découper", detail: "Découper des disques/ovales dans la pâte feuilletée bien froide.", badge: "⏱ 5 min" },
-      { icone: "🥄", titre: "Garnir", detail: "Déposer la compote sur une moitié en laissant un bord libre. Humidifier le bord au pinceau.", badge: "⏱ 4 min" },
-      { icone: "🔒", titre: "Souder & dorer", detail: "Replier, souder en pressant à la fourchette. ASTUCE : dorer à l'œuf puis rayer le dessus au couteau pour le décor.", badge: "⏱ 5 min" },
-      { icone: "♨️", titre: "Cuire", detail: "SECRET ANTI-ÉCLATEMENT : un petit trou au centre pour la vapeur. Four 200°C 18-20 min, doré et gonflé.", badge: "⏱ 20 min" }
-    ]
+        { icone: "🍎", titre: "La compote", detail: "Cuire les pommes en dés avec le sucre, le beurre et la cannelle. ASTUCE CHEF : visez une compote bien épaisse — trop liquide, elle détrempe et perce la pâte.", badge: "⏱ 10-12 min" },
+        { icone: "❄️", titre: "Refroidir", detail: "Laisser la compote refroidir complètement avant de garnir, sinon elle fait fondre le beurre du feuilletage.", badge: null },
+        { icone: "🥐", titre: "Découper la pâte", detail: "Découper des ovales réguliers dans la pâte feuilletée bien froide.", badge: null },
+        { icone: "🥄", titre: "Garnir", detail: "Déposer une cuillère de compote sur une moitié de chaque ovale en laissant un bord libre. Humidifier ce bord au pinceau.", badge: null },
+        { icone: "🔒", titre: "Souder", detail: "Replier la pâte sur la garniture et souder fermement les bords en pressant avec les dents d'une fourchette.", badge: null },
+        { icone: "🖌️", titre: "Dorer et décorer", detail: "Dorer le dessus à l'œuf battu, rayer délicatement la surface au couteau pour le décor, et percer un petit trou au centre pour laisser s'échapper la vapeur.", badge: null },
+        { icone: "♨️", titre: "Cuisson", detail: "Enfourner jusqu'à ce que les chaussons soient bien dorés et gonflés.", badge: "⏱ 18-20 min à 200°C" }
+      ]
   },
   ciabatta: {
     nom: "Ciabatta",
