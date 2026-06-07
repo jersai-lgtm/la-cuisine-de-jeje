@@ -871,8 +871,7 @@ function miniCarteFetiche(key, count) {
     ${badgeFam}
     ${badgeFreq}
     <div class="mini-carte-info">
-      <span class="mini-carte-entete"><span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}</span>
-      <span class="mini-carte-nom">${nom}</span>
+      <div class="mini-carte-titre"><span class="mini-carte-entete"><span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}</span><span class="mini-carte-nom">${nom}</span></div>
       <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
     </div>
   </div>`;
@@ -1184,8 +1183,7 @@ function miniCarte(key, raisonHTML, opts) {
     ${btnRegen}
     <div class="mini-carte-info">
       ${badgeNote}
-      <span class="mini-carte-entete"><span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}</span>
-      <span class="mini-carte-nom">${nom}</span>
+      <div class="mini-carte-titre"><span class="mini-carte-entete"><span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}</span><span class="mini-carte-nom">${nom}</span></div>
       <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
       ${raisonHTML || ""}
     </div>
