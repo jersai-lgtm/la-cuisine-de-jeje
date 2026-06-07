@@ -871,7 +871,7 @@ function miniCarteFetiche(key, count) {
     ${badgeFam}
     ${badgeFreq}
     <div class="mini-carte-info">
-      <span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>
+      <span class="mini-carte-entete"><span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}</span>
       <span class="mini-carte-nom">${nom}</span>
       <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
     </div>
