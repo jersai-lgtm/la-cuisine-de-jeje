@@ -1742,4 +1742,41 @@ Object.assign(recettes, {
       { icone: "🌿", titre: "Servir", detail: "Servir en bol frais, filet de crème et ciboulette ciselée sur le dessus.", badge: null }
     ]
   },
+  salmorejo: {
+    nom: "Salmorejo",
+    cat: "soupes",
+    pays: "espagne",
+    dateAjout: "2026-06-07T23:09:00",
+    base: 4,
+    temps: "20 min + frais",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "Le cousin crémeux du gaspacho, venu de Cordoue : une soupe froide de tomates et de pain liée à l'huile d'olive, garnie d'œuf dur et de jambon. Onctueuse et fraîche.",
+    tableauSalmorejo: [
+      { nb: 1, tomate: "150 g", pain: "30 g", huileolive: "15 ml", ail: "1", vinaigre: "5 ml", oeuf: "1", jambon: "12 g" },
+      { nb: 2, tomate: "300 g", pain: "60 g", huileolive: "30 ml", ail: "1", vinaigre: "10 ml", oeuf: "1", jambon: "24 g" },
+      { nb: 3, tomate: "450 g", pain: "90 g", huileolive: "45 ml", ail: "1", vinaigre: "15 ml", oeuf: "1", jambon: "36 g" },
+      { nb: 4, tomate: "600 g", pain: "120 g", huileolive: "60 ml", ail: "1", vinaigre: "20 ml", oeuf: "2", jambon: "48 g" },
+      { nb: 5, tomate: "750 g", pain: "150 g", huileolive: "75 ml", ail: "2", vinaigre: "25 ml", oeuf: "2", jambon: "60 g" },
+      { nb: 6, tomate: "900 g", pain: "180 g", huileolive: "90 ml", ail: "2", vinaigre: "30 ml", oeuf: "2", jambon: "72 g" },
+      { nb: 7, tomate: "1050 g", pain: "210 g", huileolive: "105 ml", ail: "2", vinaigre: "35 ml", oeuf: "3", jambon: "84 g" },
+      { nb: 8, tomate: "1200 g", pain: "240 g", huileolive: "120 ml", ail: "2", vinaigre: "40 ml", oeuf: "3", jambon: "96 g" },
+      { nb: 9, tomate: "1350 g", pain: "270 g", huileolive: "135 ml", ail: "3", vinaigre: "45 ml", oeuf: "4", jambon: "108 g" },
+      { nb: 10, tomate: "1500 g", pain: "300 g", huileolive: "150 ml", ail: "3", vinaigre: "50 ml", oeuf: "4", jambon: "120 g" },
+      { nb: 11, tomate: "1650 g", pain: "330 g", huileolive: "165 ml", ail: "3", vinaigre: "55 ml", oeuf: "4", jambon: "132 g" },
+      { nb: 12, tomate: "1800 g", pain: "360 g", huileolive: "180 ml", ail: "4", vinaigre: "60 ml", oeuf: "5", jambon: "144 g" },
+      { nb: 13, tomate: "1950 g", pain: "390 g", huileolive: "195 ml", ail: "4", vinaigre: "65 ml", oeuf: "5", jambon: "156 g" },
+      { nb: 14, tomate: "2100 g", pain: "420 g", huileolive: "210 ml", ail: "4", vinaigre: "70 ml", oeuf: "6", jambon: "168 g" },
+      { nb: 15, tomate: "2250 g", pain: "450 g", huileolive: "225 ml", ail: "5", vinaigre: "75 ml", oeuf: "6", jambon: "180 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Mixer les tomates", detail: "Mixer les tomates bien mûres avec l'ail jusqu'à un jus lisse.", badge: "⏱ 4 min" },
+      { icone: "🍞", titre: "Pain", detail: "Ajouter le pain rassis et laisser s'imbiber quelques minutes.", badge: "⏱ 5 min" },
+      { icone: "🌀", titre: "Émulsionner", detail: "Mixer de nouveau en versant l'huile d'olive en filet pour émulsionner. ASTUCE CHEF : verser l'huile en filet, moteur en marche, monte le salmorejo comme une mayonnaise, d'où sa texture veloutée et sa belle couleur orangée.", badge: "⏱ 3 min" },
+      { icone: "🧂", titre: "Assaisonner", detail: "Ajouter le vinaigre, le sel, rectifier la consistance avec un peu d'eau glacée.", badge: "⏱ 2 min" },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Placer au frais : le salmorejo se sert bien froid.", badge: "⏱ 2 h" },
+      { icone: "🥚", titre: "Garnir", detail: "Servir en bol, garnir d'œuf dur haché, de dés de jambon et d'un filet d'huile.", badge: null }
+    ]
+  },
 });

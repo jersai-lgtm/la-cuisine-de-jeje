@@ -1125,4 +1125,81 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, bien chaud, avec le reste de chimichurri à côté.", badge: null }
     ]
   },
+  sabich: {
+    nom: "Sabich",
+    cat: "encas",
+    pays: "israel",
+    dateAjout: "2026-06-07T23:16:00",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥙",
+    description: "Le sandwich israélien d'origine irakienne : un pita garni d'aubergine frite, d'œuf dur, de houmous, de salade et de sauce amba. Généreux, fondant et plein de fraîcheur.",
+    tableauSabich: [
+      { nb: 1, pita: "1", aubergine: "60 g", oeuf: "1", houmous: "25 g", tomate: "40 g", persil: "QS" },
+      { nb: 2, pita: "2", aubergine: "120 g", oeuf: "2", houmous: "50 g", tomate: "80 g", persil: "QS" },
+      { nb: 3, pita: "3", aubergine: "180 g", oeuf: "3", houmous: "75 g", tomate: "120 g", persil: "QS" },
+      { nb: 4, pita: "4", aubergine: "240 g", oeuf: "4", houmous: "100 g", tomate: "160 g", persil: "QS" },
+      { nb: 5, pita: "5", aubergine: "300 g", oeuf: "5", houmous: "125 g", tomate: "200 g", persil: "QS" },
+      { nb: 6, pita: "6", aubergine: "360 g", oeuf: "6", houmous: "150 g", tomate: "240 g", persil: "QS" },
+      { nb: 7, pita: "7", aubergine: "420 g", oeuf: "7", houmous: "175 g", tomate: "280 g", persil: "QS" },
+      { nb: 8, pita: "8", aubergine: "480 g", oeuf: "8", houmous: "200 g", tomate: "320 g", persil: "QS" },
+      { nb: 9, pita: "9", aubergine: "540 g", oeuf: "9", houmous: "225 g", tomate: "360 g", persil: "QS" },
+      { nb: 10, pita: "10", aubergine: "600 g", oeuf: "10", houmous: "250 g", tomate: "400 g", persil: "QS" },
+      { nb: 11, pita: "11", aubergine: "660 g", oeuf: "11", houmous: "275 g", tomate: "440 g", persil: "QS" },
+      { nb: 12, pita: "12", aubergine: "720 g", oeuf: "12", houmous: "300 g", tomate: "480 g", persil: "QS" },
+      { nb: 13, pita: "13", aubergine: "780 g", oeuf: "13", houmous: "325 g", tomate: "520 g", persil: "QS" },
+      { nb: 14, pita: "14", aubergine: "840 g", oeuf: "14", houmous: "350 g", tomate: "560 g", persil: "QS" },
+      { nb: 15, pita: "15", aubergine: "900 g", oeuf: "15", houmous: "375 g", tomate: "600 g", persil: "QS" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍆", titre: "Frire l'aubergine", detail: "Frire ou rôtir des tranches d'aubergine jusqu'à fondantes et dorées. ASTUCE CHEF : saler les tranches 15 minutes et les éponger avant cuisson leur évite de boire l'huile.", badge: "⏱ 12 min" },
+      { icone: "🥚", titre: "Œuf dur", detail: "Cuire les œufs durs, les écaler et les trancher.", badge: "⏱ 10 min" },
+      { icone: "🥗", titre: "Salade", detail: "Couper tomate et concombre en petits dés, assaisonner.", badge: "⏱ 5 min" },
+      { icone: "🫓", titre: "Ouvrir le pita", detail: "Ouvrir le pain pita en poche et le tartiner de houmous à l'intérieur.", badge: "⏱ 2 min" },
+      { icone: "🥙", titre: "Garnir", detail: "Glisser aubergine, œuf et salade dans le pita.", badge: "⏱ 3 min" },
+      { icone: "🌿", titre: "Sauces", detail: "Arroser de tahini, d'amba (sauce mangue épicée) et de persil.", badge: "⏱ 2 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, tant que l'aubergine est tiède.", badge: null }
+    ]
+  },
+  rotinanai: {
+    nom: "Roti Canai",
+    cat: "encas",
+    pays: "malaisie",
+    dateAjout: "2026-06-07T23:17:00",
+    base: 4,
+    temps: "40 min + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🫓",
+    description: "Le pain plat feuilleté malaisien : une pâte étirée à l'extrême puis pliée et poêlée, croustillante dehors et moelleuse dedans. Servi avec un curry pour y tremper.",
+    tableauRotiCanai: [
+      { nb: 1, farine: "60 g", eau: "30 ml", beurre: "15 g", lait: "10 ml", sucre: "3 g", sel: "1 pincée" },
+      { nb: 2, farine: "120 g", eau: "60 ml", beurre: "30 g", lait: "20 ml", sucre: "6 g", sel: "1 pincée" },
+      { nb: 3, farine: "180 g", eau: "90 ml", beurre: "45 g", lait: "30 ml", sucre: "9 g", sel: "1 pincée" },
+      { nb: 4, farine: "240 g", eau: "120 ml", beurre: "60 g", lait: "40 ml", sucre: "12 g", sel: "1 pincée" },
+      { nb: 5, farine: "300 g", eau: "150 ml", beurre: "75 g", lait: "50 ml", sucre: "15 g", sel: "1 pincée" },
+      { nb: 6, farine: "360 g", eau: "180 ml", beurre: "90 g", lait: "60 ml", sucre: "18 g", sel: "2 pincées" },
+      { nb: 7, farine: "420 g", eau: "210 ml", beurre: "105 g", lait: "70 ml", sucre: "21 g", sel: "2 pincées" },
+      { nb: 8, farine: "480 g", eau: "240 ml", beurre: "120 g", lait: "80 ml", sucre: "24 g", sel: "2 pincées" },
+      { nb: 9, farine: "540 g", eau: "270 ml", beurre: "135 g", lait: "90 ml", sucre: "27 g", sel: "2 pincées" },
+      { nb: 10, farine: "600 g", eau: "300 ml", beurre: "150 g", lait: "100 ml", sucre: "30 g", sel: "2 pincées" },
+      { nb: 11, farine: "660 g", eau: "330 ml", beurre: "165 g", lait: "110 ml", sucre: "33 g", sel: "3 pincées" },
+      { nb: 12, farine: "720 g", eau: "360 ml", beurre: "180 g", lait: "120 ml", sucre: "36 g", sel: "3 pincées" },
+      { nb: 13, farine: "780 g", eau: "390 ml", beurre: "195 g", lait: "130 ml", sucre: "39 g", sel: "3 pincées" },
+      { nb: 14, farine: "840 g", eau: "420 ml", beurre: "210 g", lait: "140 ml", sucre: "42 g", sel: "3 pincées" },
+      { nb: 15, farine: "900 g", eau: "450 ml", beurre: "225 g", lait: "150 ml", sucre: "45 g", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Pétrir farine, eau, lait, sucre et sel en une pâte souple et élastique.", badge: "⏱ 10 min" },
+      { icone: "🛢️", titre: "Huiler", detail: "Diviser en boules, les enrober d'huile et laisser reposer couvert. ASTUCE CHEF : un long repos huilé détend le gluten, c'est ce qui permet d'étirer la pâte jusqu'à la transparence sans qu'elle se déchire.", badge: "⏱ 2 h" },
+      { icone: "👐", titre: "Étirer", detail: "Étaler puis étirer chaque boule en une feuille très fine, presque transparente.", badge: "⏱ 8 min" },
+      { icone: "🌀", titre: "Plier", detail: "Replier la feuille sur elle-même en accordéon puis en spirale pour créer les couches.", badge: "⏱ 5 min" },
+      { icone: "🔄", titre: "Aplatir", detail: "Réétaler légèrement la spirale pour former la galette.", badge: "⏱ 3 min" },
+      { icone: "🔥", titre: "Poêler", detail: "Cuire à la poêle beurrée jusqu'à ce que les couches gonflent et dorent.", badge: "⏱ 6 min" },
+      { icone: "🙌", titre: "Froisser", detail: "Froisser la galette chaude entre les mains pour décoller les feuillets.", badge: "⏱ 1 min" },
+      { icone: "🍛", titre: "Servir", detail: "Servir avec un curry ou du dhal pour tremper.", badge: null }
+    ]
+  },
 });

@@ -855,4 +855,42 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C jusqu'à ce que la cramique soit bien dorée et sonne creux.", badge: "⏱ 30 min" }
     ]
   },
+  cornbread: {
+    nom: "Cornbread",
+    cat: "boulangerie",
+    pays: "usa",
+    dateAjout: "2026-06-07T23:18:00",
+    base: 8,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🌽",
+    description: "Le pain de maïs américain : moelleux, légèrement sucré et doré, à la mie dense et au bon goût de maïs. L'accompagnement parfait d'un chili ou d'un barbecue.",
+    tableauCornbread: [
+      { nb: 1, farinemais: "40 g", farine: "30 g", lait: "40 ml", oeuf: "1", beurre: "12 g", sucre: "8 g", levure: "2 g" },
+      { nb: 2, farinemais: "80 g", farine: "60 g", lait: "80 ml", oeuf: "1", beurre: "24 g", sucre: "16 g", levure: "4 g" },
+      { nb: 3, farinemais: "120 g", farine: "90 g", lait: "120 ml", oeuf: "1", beurre: "36 g", sucre: "24 g", levure: "6 g" },
+      { nb: 4, farinemais: "160 g", farine: "120 g", lait: "160 ml", oeuf: "2", beurre: "48 g", sucre: "32 g", levure: "8 g" },
+      { nb: 5, farinemais: "200 g", farine: "150 g", lait: "200 ml", oeuf: "2", beurre: "60 g", sucre: "40 g", levure: "10 g" },
+      { nb: 6, farinemais: "240 g", farine: "180 g", lait: "240 ml", oeuf: "2", beurre: "72 g", sucre: "48 g", levure: "12 g" },
+      { nb: 7, farinemais: "280 g", farine: "210 g", lait: "280 ml", oeuf: "3", beurre: "84 g", sucre: "56 g", levure: "14 g" },
+      { nb: 8, farinemais: "320 g", farine: "240 g", lait: "320 ml", oeuf: "3", beurre: "96 g", sucre: "64 g", levure: "16 g" },
+      { nb: 9, farinemais: "360 g", farine: "270 g", lait: "360 ml", oeuf: "4", beurre: "108 g", sucre: "72 g", levure: "18 g" },
+      { nb: 10, farinemais: "400 g", farine: "300 g", lait: "400 ml", oeuf: "4", beurre: "120 g", sucre: "80 g", levure: "20 g" },
+      { nb: 11, farinemais: "440 g", farine: "330 g", lait: "440 ml", oeuf: "4", beurre: "132 g", sucre: "88 g", levure: "22 g" },
+      { nb: 12, farinemais: "480 g", farine: "360 g", lait: "480 ml", oeuf: "5", beurre: "144 g", sucre: "96 g", levure: "24 g" },
+      { nb: 13, farinemais: "520 g", farine: "390 g", lait: "520 ml", oeuf: "5", beurre: "156 g", sucre: "104 g", levure: "26 g" },
+      { nb: 14, farinemais: "560 g", farine: "420 g", lait: "560 ml", oeuf: "6", beurre: "168 g", sucre: "112 g", levure: "28 g" },
+      { nb: 15, farinemais: "600 g", farine: "450 g", lait: "600 ml", oeuf: "6", beurre: "180 g", sucre: "120 g", levure: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Secs", detail: "Mélanger farine de maïs, farine, sucre, levure et sel.", badge: "⏱ 4 min" },
+      { icone: "🥛", titre: "Liquides", detail: "Battre à part le lait, les œufs et le beurre fondu.", badge: "⏱ 3 min" },
+      { icone: "🌀", titre: "Réunir", detail: "Verser les liquides sur les secs et mélanger juste ce qu'il faut. ASTUCE CHEF : ne pas trop travailler la pâte, quelques grumeaux sont normaux et garantissent un cornbread moelleux et non caoutchouteux.", badge: "⏱ 2 min" },
+      { icone: "🔥", titre: "Préchauffer le moule", detail: "Faire chauffer le moule beurré au four : la pâte versée dedans formera une croûte dorée.", badge: "⏱ 5 min" },
+      { icone: "🥄", titre: "Verser", detail: "Verser la pâte dans le moule chaud.", badge: "⏱ 1 min" },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C jusqu'à ce que le dessus soit doré et qu'un couteau ressorte sec.", badge: "⏱ 22 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir tiède, coupé en carrés, avec du beurre.", badge: null }
+    ]
+  },
 });

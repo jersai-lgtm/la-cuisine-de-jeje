@@ -1309,4 +1309,78 @@ oeufmayo: {
       { icone: "❄️", titre: "Reposer", detail: "Réfrigérer 24 h avant de trancher : la gelée prend et les saveurs se développent.", badge: "⏱ 24 h" }
     ]
   },
+  smorrebrod: {
+    nom: "Smørrebrød",
+    cat: "entrees",
+    pays: "danemark",
+    dateAjout: "2026-06-07T23:10:00",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥪",
+    description: "La tartine ouverte danoise : une tranche de pain de seigle beurrée, généreusement garnie (saumon, œuf, crevettes…) et joliment dressée. Un art du déjeuner scandinave.",
+    tableauSmorrebrod: [
+      { nb: 1, painseigle: "1 tranche", beurre: "6 g", saumonfume: "25 g", oeuf: "1", concombre: "20 g", aneth: "QS" },
+      { nb: 2, painseigle: "2 tranches", beurre: "12 g", saumonfume: "50 g", oeuf: "1", concombre: "40 g", aneth: "QS" },
+      { nb: 3, painseigle: "3 tranches", beurre: "18 g", saumonfume: "75 g", oeuf: "2", concombre: "60 g", aneth: "QS" },
+      { nb: 4, painseigle: "4 tranches", beurre: "24 g", saumonfume: "100 g", oeuf: "2", concombre: "80 g", aneth: "QS" },
+      { nb: 5, painseigle: "5 tranches", beurre: "30 g", saumonfume: "125 g", oeuf: "3", concombre: "100 g", aneth: "QS" },
+      { nb: 6, painseigle: "6 tranches", beurre: "36 g", saumonfume: "150 g", oeuf: "3", concombre: "120 g", aneth: "QS" },
+      { nb: 7, painseigle: "7 tranches", beurre: "42 g", saumonfume: "175 g", oeuf: "4", concombre: "140 g", aneth: "QS" },
+      { nb: 8, painseigle: "8 tranches", beurre: "48 g", saumonfume: "200 g", oeuf: "4", concombre: "160 g", aneth: "QS" },
+      { nb: 9, painseigle: "9 tranches", beurre: "54 g", saumonfume: "225 g", oeuf: "5", concombre: "180 g", aneth: "QS" },
+      { nb: 10, painseigle: "10 tranches", beurre: "60 g", saumonfume: "250 g", oeuf: "5", concombre: "200 g", aneth: "QS" },
+      { nb: 11, painseigle: "11 tranches", beurre: "66 g", saumonfume: "275 g", oeuf: "6", concombre: "220 g", aneth: "QS" },
+      { nb: 12, painseigle: "12 tranches", beurre: "72 g", saumonfume: "300 g", oeuf: "6", concombre: "240 g", aneth: "QS" },
+      { nb: 13, painseigle: "13 tranches", beurre: "78 g", saumonfume: "325 g", oeuf: "7", concombre: "260 g", aneth: "QS" },
+      { nb: 14, painseigle: "14 tranches", beurre: "84 g", saumonfume: "350 g", oeuf: "7", concombre: "280 g", aneth: "QS" },
+      { nb: 15, painseigle: "15 tranches", beurre: "90 g", saumonfume: "375 g", oeuf: "8", concombre: "300 g", aneth: "QS" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "La base", detail: "Choisir un pain de seigle dense et le tartiner généreusement de beurre. ASTUCE CHEF : le beurre n'est pas un détail, il imperméabilise le pain et l'empêche de se détremper sous la garniture.", badge: "⏱ 3 min" },
+      { icone: "🐟", titre: "Garniture", detail: "Disposer le saumon fumé en rosace ou en plis sur le pain.", badge: "⏱ 4 min" },
+      { icone: "🥚", titre: "Compléter", detail: "Ajouter des tranches d'œuf dur et de fines lamelles de concombre.", badge: "⏱ 4 min" },
+      { icone: "🌿", titre: "Toucher final", detail: "Parsemer d'aneth, d'un tour de poivre et éventuellement d'oignon frit.", badge: "⏱ 2 min" },
+      { icone: "🍋", titre: "Acidité", detail: "Un trait de citron ou une pointe de crème acidulée pour relever.", badge: "⏱ 1 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir à plat, à manger à la fourchette et au couteau.", badge: null }
+    ]
+  },
+  escalivada: {
+    nom: "Escalivada",
+    cat: "entrees",
+    pays: "espagne",
+    dateAjout: "2026-06-07T23:11:00",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🫑",
+    description: "La spécialité catalane de légumes rôtis : poivrons et aubergines grillés jusqu'à l'attendrissement, pelés, assaisonnés d'huile d'olive et d'ail. Fumé, doux et fondant.",
+    tableauEscalivada: [
+      { nb: 1, poivron: "80 g", aubergine: "80 g", oignon: "40 g", ail: "1", huileolive: "12 ml", vinaigre: "4 ml" },
+      { nb: 2, poivron: "160 g", aubergine: "160 g", oignon: "80 g", ail: "1", huileolive: "24 ml", vinaigre: "8 ml" },
+      { nb: 3, poivron: "240 g", aubergine: "240 g", oignon: "120 g", ail: "1", huileolive: "36 ml", vinaigre: "12 ml" },
+      { nb: 4, poivron: "320 g", aubergine: "320 g", oignon: "160 g", ail: "1", huileolive: "48 ml", vinaigre: "16 ml" },
+      { nb: 5, poivron: "400 g", aubergine: "400 g", oignon: "200 g", ail: "2", huileolive: "60 ml", vinaigre: "20 ml" },
+      { nb: 6, poivron: "480 g", aubergine: "480 g", oignon: "240 g", ail: "2", huileolive: "72 ml", vinaigre: "24 ml" },
+      { nb: 7, poivron: "560 g", aubergine: "560 g", oignon: "280 g", ail: "2", huileolive: "84 ml", vinaigre: "28 ml" },
+      { nb: 8, poivron: "640 g", aubergine: "640 g", oignon: "320 g", ail: "2", huileolive: "96 ml", vinaigre: "32 ml" },
+      { nb: 9, poivron: "720 g", aubergine: "720 g", oignon: "360 g", ail: "3", huileolive: "108 ml", vinaigre: "36 ml" },
+      { nb: 10, poivron: "800 g", aubergine: "800 g", oignon: "400 g", ail: "3", huileolive: "120 ml", vinaigre: "40 ml" },
+      { nb: 11, poivron: "880 g", aubergine: "880 g", oignon: "440 g", ail: "3", huileolive: "132 ml", vinaigre: "44 ml" },
+      { nb: 12, poivron: "960 g", aubergine: "960 g", oignon: "480 g", ail: "4", huileolive: "144 ml", vinaigre: "48 ml" },
+      { nb: 13, poivron: "1040 g", aubergine: "1040 g", oignon: "520 g", ail: "4", huileolive: "156 ml", vinaigre: "52 ml" },
+      { nb: 14, poivron: "1120 g", aubergine: "1120 g", oignon: "560 g", ail: "4", huileolive: "168 ml", vinaigre: "56 ml" },
+      { nb: 15, poivron: "1200 g", aubergine: "1200 g", oignon: "600 g", ail: "5", huileolive: "180 ml", vinaigre: "60 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Rôtir", detail: "Rôtir poivrons, aubergines et oignons entiers au four très chaud jusqu'à ce que la peau cloque et noircisse.", badge: "⏱ 40 min" },
+      { icone: "💨", titre: "Suer", detail: "Enfermer les légumes chauds dans un sac ou un saladier couvert. ASTUCE CHEF : ce passage à l'étouffée décolle la peau toute seule, on l'enlève ensuite sans la rincer pour garder le goût fumé.", badge: "⏱ 10 min" },
+      { icone: "🧤", titre: "Peler", detail: "Peler les légumes et retirer pédoncules et graines des poivrons.", badge: "⏱ 8 min" },
+      { icone: "🔪", titre: "Effilocher", detail: "Détailler poivrons et aubergines en lanières à la main.", badge: "⏱ 5 min" },
+      { icone: "🫒", titre: "Assaisonner", detail: "Arroser d'huile d'olive, d'ail haché, d'un trait de vinaigre et de sel.", badge: "⏱ 3 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir tiède ou froid, avec du bon pain grillé.", badge: null }
+    ]
+  },
 });
