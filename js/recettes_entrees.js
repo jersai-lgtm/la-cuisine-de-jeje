@@ -1232,4 +1232,81 @@ oeufmayo: {
       { icone: "🥜", titre: "Servir", detail: "Servir frais avec la sauce cacahuète.", badge: null }
     ]
   },
+  terrinesaumon: {
+    nom: "Terrine de Saumon",
+    cat: "entrees",
+    pays: "france",
+    dateAjout: "2026-06-07T22:10:00",
+    base: 6,
+    temps: "40 min + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "Une terrine fraîche et fondante de saumon à l'aneth, mêlant saumon cuit et saumon fumé, prise au frais et servie en tranches avec une sauce citronnée.",
+    tableauTerrineSaumon: [
+      { nb: 1, saumon: "90 g", saumonfume: "25 g", oeuf: "1", creme: "40 ml", aneth: "QS", citron: "1", sel: "1 pincée" },
+      { nb: 2, saumon: "180 g", saumonfume: "50 g", oeuf: "1", creme: "80 ml", aneth: "QS", citron: "1", sel: "1 pincée" },
+      { nb: 3, saumon: "270 g", saumonfume: "75 g", oeuf: "2", creme: "120 ml", aneth: "QS", citron: "1", sel: "1 pincée" },
+      { nb: 4, saumon: "360 g", saumonfume: "100 g", oeuf: "2", creme: "160 ml", aneth: "QS", citron: "1", sel: "1 pincée" },
+      { nb: 5, saumon: "450 g", saumonfume: "125 g", oeuf: "3", creme: "200 ml", aneth: "QS", citron: "1", sel: "1 pincée" },
+      { nb: 6, saumon: "540 g", saumonfume: "150 g", oeuf: "3", creme: "240 ml", aneth: "QS", citron: "1", sel: "2 pincées" },
+      { nb: 7, saumon: "630 g", saumonfume: "175 g", oeuf: "4", creme: "280 ml", aneth: "QS", citron: "1", sel: "2 pincées" },
+      { nb: 8, saumon: "720 g", saumonfume: "200 g", oeuf: "4", creme: "320 ml", aneth: "QS", citron: "2", sel: "2 pincées" },
+      { nb: 9, saumon: "810 g", saumonfume: "225 g", oeuf: "5", creme: "360 ml", aneth: "QS", citron: "2", sel: "2 pincées" },
+      { nb: 10, saumon: "900 g", saumonfume: "250 g", oeuf: "5", creme: "400 ml", aneth: "QS", citron: "2", sel: "2 pincées" },
+      { nb: 11, saumon: "990 g", saumonfume: "275 g", oeuf: "6", creme: "440 ml", aneth: "QS", citron: "2", sel: "3 pincées" },
+      { nb: 12, saumon: "1080 g", saumonfume: "300 g", oeuf: "6", creme: "480 ml", aneth: "QS", citron: "2", sel: "3 pincées" },
+      { nb: 13, saumon: "1170 g", saumonfume: "325 g", oeuf: "7", creme: "520 ml", aneth: "QS", citron: "3", sel: "3 pincées" },
+      { nb: 14, saumon: "1260 g", saumonfume: "350 g", oeuf: "7", creme: "560 ml", aneth: "QS", citron: "3", sel: "3 pincées" },
+      { nb: 15, saumon: "1350 g", saumonfume: "375 g", oeuf: "8", creme: "600 ml", aneth: "QS", citron: "3", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Cuire le saumon", detail: "Pocher le saumon frais quelques minutes dans un bouillon citronné, puis l'égoutter et l'émietter.", badge: "⏱ 8 min" },
+      { icone: "🥚", titre: "Appareil", detail: "Mixer une partie du saumon avec les œufs, la crème, le jus de citron, sel et poivre.", badge: "⏱ 5 min" },
+      { icone: "🌿", titre: "Mêler", detail: "Mélanger l'appareil avec le reste de saumon émietté et l'aneth ciselé pour garder de la mâche.", badge: "⏱ 4 min" },
+      { icone: "🧱", titre: "Monter la terrine", detail: "Chemiser un moule de film, alterner appareil et lanières de saumon fumé. ASTUCE CHEF : tapisser le moule de saumon fumé avant de garnir, le démoulage est net et la terrine joliment marbrée.", badge: "⏱ 8 min" },
+      { icone: "♨️", titre: "Cuire au bain-marie", detail: "Cuire au four à 160°C au bain-marie jusqu'à ce que la terrine soit prise.", badge: "⏱ 30 min" },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir puis réfrigérer plusieurs heures, idéalement une nuit, sous un léger poids.", badge: "⏱ 4 h" },
+      { icone: "🍋", titre: "Servir", detail: "Démouler, trancher au couteau trempé dans l'eau chaude et servir avec une sauce crème-citron.", badge: null }
+    ]
+  },
+  pateencroute: {
+    nom: "Pâté en Croûte",
+    cat: "entrees",
+    pays: "france",
+    dateAjout: "2026-06-07T22:11:00",
+    base: 8,
+    temps: "2 h + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥧",
+    description: "Le monument de la charcuterie française : une farce de porc et de volaille parfumée, enfermée dans une pâte dorée, prise en gelée. Un travail d'orfèvre récompensé.",
+    tableauPateEnCroute: [
+      { nb: 1, porchache: "80 g", volaille: "50 g", lardgras: "20 g", patebrisee: "60 g", oeuf: "1", porto: "10 ml", gelee: "40 ml", sel: "1 pincée" },
+      { nb: 2, porchache: "160 g", volaille: "100 g", lardgras: "40 g", patebrisee: "120 g", oeuf: "1", porto: "20 ml", gelee: "80 ml", sel: "1 pincée" },
+      { nb: 3, porchache: "240 g", volaille: "150 g", lardgras: "60 g", patebrisee: "180 g", oeuf: "1", porto: "30 ml", gelee: "120 ml", sel: "1 pincée" },
+      { nb: 4, porchache: "320 g", volaille: "200 g", lardgras: "80 g", patebrisee: "240 g", oeuf: "2", porto: "40 ml", gelee: "160 ml", sel: "1 pincée" },
+      { nb: 5, porchache: "400 g", volaille: "250 g", lardgras: "100 g", patebrisee: "300 g", oeuf: "2", porto: "50 ml", gelee: "200 ml", sel: "1 pincée" },
+      { nb: 6, porchache: "480 g", volaille: "300 g", lardgras: "120 g", patebrisee: "360 g", oeuf: "2", porto: "60 ml", gelee: "240 ml", sel: "2 pincées" },
+      { nb: 7, porchache: "560 g", volaille: "350 g", lardgras: "140 g", patebrisee: "420 g", oeuf: "3", porto: "70 ml", gelee: "280 ml", sel: "2 pincées" },
+      { nb: 8, porchache: "640 g", volaille: "400 g", lardgras: "160 g", patebrisee: "480 g", oeuf: "3", porto: "80 ml", gelee: "320 ml", sel: "2 pincées" },
+      { nb: 9, porchache: "720 g", volaille: "450 g", lardgras: "180 g", patebrisee: "540 g", oeuf: "4", porto: "90 ml", gelee: "360 ml", sel: "2 pincées" },
+      { nb: 10, porchache: "800 g", volaille: "500 g", lardgras: "200 g", patebrisee: "600 g", oeuf: "4", porto: "100 ml", gelee: "400 ml", sel: "2 pincées" },
+      { nb: 11, porchache: "880 g", volaille: "550 g", lardgras: "220 g", patebrisee: "660 g", oeuf: "4", porto: "110 ml", gelee: "440 ml", sel: "3 pincées" },
+      { nb: 12, porchache: "960 g", volaille: "600 g", lardgras: "240 g", patebrisee: "720 g", oeuf: "5", porto: "120 ml", gelee: "480 ml", sel: "3 pincées" },
+      { nb: 13, porchache: "1040 g", volaille: "650 g", lardgras: "260 g", patebrisee: "780 g", oeuf: "5", porto: "130 ml", gelee: "520 ml", sel: "3 pincées" },
+      { nb: 14, porchache: "1120 g", volaille: "700 g", lardgras: "280 g", patebrisee: "840 g", oeuf: "6", porto: "140 ml", gelee: "560 ml", sel: "3 pincées" },
+      { nb: 15, porchache: "1200 g", volaille: "750 g", lardgras: "300 g", patebrisee: "900 g", oeuf: "6", porto: "150 ml", gelee: "600 ml", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍷", titre: "Mariner", detail: "La veille, mariner les viandes coupées avec le porto, les épices, sel et poivre.", badge: "⏱ 15 min" },
+      { icone: "🥩", titre: "Farce", detail: "Hacher une partie des viandes et garder l'autre en gros dés, mélanger avec le lard et un œuf.", badge: "⏱ 15 min" },
+      { icone: "🥧", titre: "Foncer le moule", detail: "Abaisser la pâte et en chemiser un moule à pâté beurré, en laissant déborder les bords.", badge: "⏱ 15 min" },
+      { icone: "🧱", titre: "Garnir", detail: "Tasser la farce dans le moule en couches régulières, sans laisser de poches d'air.", badge: "⏱ 10 min" },
+      { icone: "🎩", titre: "Couvrir", detail: "Refermer avec une abaisse, souder, dorer à l'œuf et percer des cheminées. ASTUCE CHEF : enfoncer un petit rouleau d'alu dans chaque cheminée pour qu'elle reste ouverte et évacue la vapeur sans détremper la croûte.", badge: "⏱ 10 min" },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C puis baisser à 170°C, jusqu'à 65°C à cœur et croûte bien dorée.", badge: "⏱ 1 h 15" },
+      { icone: "💧", titre: "Couler la gelée", detail: "Tiédir le pâté, couler la gelée encore liquide par les cheminées pour combler le vide.", badge: "⏱ 10 min" },
+      { icone: "❄️", titre: "Reposer", detail: "Réfrigérer 24 h avant de trancher : la gelée prend et les saveurs se développent.", badge: "⏱ 24 h" }
+    ]
+  },
 });

@@ -922,4 +922,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir bien frais, décoré d'œuf.", badge: null }
     ]
   },
+  saladelandaise: {
+    nom: "Salade Landaise",
+    cat: "salades",
+    pays: "france",
+    dateAjout: "2026-06-07T22:12:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "La généreuse salade du Sud-Ouest : gésiers confits, magret fumé et pignons sur un lit de salade, le tout relevé d'une vinaigrette à l'huile de noix.",
+    tableauSaladeLandaise: [
+      { nb: 1, salade: "40 g", gesiers: "45 g", magretfume: "25 g", tomate: "50 g", pignons: "8 g", huilenoix: "10 ml", vinaigre: "5 ml" },
+      { nb: 2, salade: "80 g", gesiers: "90 g", magretfume: "50 g", tomate: "100 g", pignons: "16 g", huilenoix: "20 ml", vinaigre: "10 ml" },
+      { nb: 3, salade: "120 g", gesiers: "135 g", magretfume: "75 g", tomate: "150 g", pignons: "24 g", huilenoix: "30 ml", vinaigre: "15 ml" },
+      { nb: 4, salade: "160 g", gesiers: "180 g", magretfume: "100 g", tomate: "200 g", pignons: "32 g", huilenoix: "40 ml", vinaigre: "20 ml" },
+      { nb: 5, salade: "200 g", gesiers: "225 g", magretfume: "125 g", tomate: "250 g", pignons: "40 g", huilenoix: "50 ml", vinaigre: "25 ml" },
+      { nb: 6, salade: "240 g", gesiers: "270 g", magretfume: "150 g", tomate: "300 g", pignons: "48 g", huilenoix: "60 ml", vinaigre: "30 ml" },
+      { nb: 7, salade: "280 g", gesiers: "315 g", magretfume: "175 g", tomate: "350 g", pignons: "56 g", huilenoix: "70 ml", vinaigre: "35 ml" },
+      { nb: 8, salade: "320 g", gesiers: "360 g", magretfume: "200 g", tomate: "400 g", pignons: "64 g", huilenoix: "80 ml", vinaigre: "40 ml" },
+      { nb: 9, salade: "360 g", gesiers: "405 g", magretfume: "225 g", tomate: "450 g", pignons: "72 g", huilenoix: "90 ml", vinaigre: "45 ml" },
+      { nb: 10, salade: "400 g", gesiers: "450 g", magretfume: "250 g", tomate: "500 g", pignons: "80 g", huilenoix: "100 ml", vinaigre: "50 ml" },
+      { nb: 11, salade: "440 g", gesiers: "495 g", magretfume: "275 g", tomate: "550 g", pignons: "88 g", huilenoix: "110 ml", vinaigre: "55 ml" },
+      { nb: 12, salade: "480 g", gesiers: "540 g", magretfume: "300 g", tomate: "600 g", pignons: "96 g", huilenoix: "120 ml", vinaigre: "60 ml" },
+      { nb: 13, salade: "520 g", gesiers: "585 g", magretfume: "325 g", tomate: "650 g", pignons: "104 g", huilenoix: "130 ml", vinaigre: "65 ml" },
+      { nb: 14, salade: "560 g", gesiers: "630 g", magretfume: "350 g", tomate: "700 g", pignons: "112 g", huilenoix: "140 ml", vinaigre: "70 ml" },
+      { nb: 15, salade: "600 g", gesiers: "675 g", magretfume: "375 g", tomate: "750 g", pignons: "120 g", huilenoix: "150 ml", vinaigre: "75 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Préparer la salade", detail: "Laver et essorer la salade, la répartir dans les assiettes ou un grand saladier.", badge: "⏱ 5 min" },
+      { icone: "🍅", titre: "Garnitures", detail: "Couper les tomates en quartiers et déposer les tranches de magret fumé.", badge: "⏱ 5 min" },
+      { icone: "🔥", titre: "Réchauffer les gésiers", detail: "Faire revenir les gésiers confits quelques minutes à la poêle pour les rendre tièdes et dorés.", badge: "⏱ 5 min" },
+      { icone: "🌰", titre: "Torréfier les pignons", detail: "Faire dorer les pignons à sec dans une poêle, en surveillant. ASTUCE CHEF : les pignons brûlent en un clin d'œil, on les sort dès qu'ils blondissent et embaument.", badge: "⏱ 3 min" },
+      { icone: "🫗", titre: "Vinaigrette", detail: "Émulsionner huile de noix, vinaigre, sel et poivre, avec une pointe de moutarde.", badge: "⏱ 3 min" },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer gésiers tièdes et pignons sur la salade, arroser de vinaigrette à l'instant de servir.", badge: null }
+    ]
+  },
+  saladeperigourdine: {
+    nom: "Salade Périgourdine",
+    cat: "salades",
+    pays: "france",
+    dateAjout: "2026-06-07T22:13:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "L'élégance du Périgord dans l'assiette : salade, gésiers, magret fumé et noix, rehaussée de croûtons à l'ail et d'une vinaigrette à l'huile de noix.",
+    tableauSaladePerigourdine: [
+      { nb: 1, salade: "40 g", gesiers: "40 g", magretfume: "25 g", noix: "10 g", pain: "20 g", huilenoix: "10 ml", ail: "1" },
+      { nb: 2, salade: "80 g", gesiers: "80 g", magretfume: "50 g", noix: "20 g", pain: "40 g", huilenoix: "20 ml", ail: "1" },
+      { nb: 3, salade: "120 g", gesiers: "120 g", magretfume: "75 g", noix: "30 g", pain: "60 g", huilenoix: "30 ml", ail: "1" },
+      { nb: 4, salade: "160 g", gesiers: "160 g", magretfume: "100 g", noix: "40 g", pain: "80 g", huilenoix: "40 ml", ail: "1" },
+      { nb: 5, salade: "200 g", gesiers: "200 g", magretfume: "125 g", noix: "50 g", pain: "100 g", huilenoix: "50 ml", ail: "1" },
+      { nb: 6, salade: "240 g", gesiers: "240 g", magretfume: "150 g", noix: "60 g", pain: "120 g", huilenoix: "60 ml", ail: "1" },
+      { nb: 7, salade: "280 g", gesiers: "280 g", magretfume: "175 g", noix: "70 g", pain: "140 g", huilenoix: "70 ml", ail: "1" },
+      { nb: 8, salade: "320 g", gesiers: "320 g", magretfume: "200 g", noix: "80 g", pain: "160 g", huilenoix: "80 ml", ail: "2" },
+      { nb: 9, salade: "360 g", gesiers: "360 g", magretfume: "225 g", noix: "90 g", pain: "180 g", huilenoix: "90 ml", ail: "2" },
+      { nb: 10, salade: "400 g", gesiers: "400 g", magretfume: "250 g", noix: "100 g", pain: "200 g", huilenoix: "100 ml", ail: "2" },
+      { nb: 11, salade: "440 g", gesiers: "440 g", magretfume: "275 g", noix: "110 g", pain: "220 g", huilenoix: "110 ml", ail: "2" },
+      { nb: 12, salade: "480 g", gesiers: "480 g", magretfume: "300 g", noix: "120 g", pain: "240 g", huilenoix: "120 ml", ail: "2" },
+      { nb: 13, salade: "520 g", gesiers: "520 g", magretfume: "325 g", noix: "130 g", pain: "260 g", huilenoix: "130 ml", ail: "3" },
+      { nb: 14, salade: "560 g", gesiers: "560 g", magretfume: "350 g", noix: "140 g", pain: "280 g", huilenoix: "140 ml", ail: "3" },
+      { nb: 15, salade: "600 g", gesiers: "600 g", magretfume: "375 g", noix: "150 g", pain: "300 g", huilenoix: "150 ml", ail: "3" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Lit de salade", detail: "Laver et essorer la salade, la dresser dans les assiettes.", badge: "⏱ 5 min" },
+      { icone: "🍞", titre: "Croûtons à l'ail", detail: "Dorer des dés de pain à la poêle puis les frotter d'ail. ASTUCE CHEF : frotter l'ail sur le pain encore chaud parfume sans agresser, bien mieux que de l'ail haché dans l'huile.", badge: "⏱ 5 min" },
+      { icone: "🔥", titre: "Gésiers tièdes", detail: "Réchauffer les gésiers confits à la poêle jusqu'à ce qu'ils soient dorés et tièdes.", badge: "⏱ 5 min" },
+      { icone: "🌰", titre: "Noix", detail: "Concasser grossièrement les cerneaux de noix.", badge: "⏱ 2 min" },
+      { icone: "🫗", titre: "Vinaigrette", detail: "Émulsionner huile de noix, vinaigre, moutarde, sel et poivre.", badge: "⏱ 3 min" },
+      { icone: "🥗", titre: "Dresser", detail: "Répartir magret, gésiers, noix et croûtons sur la salade et napper de vinaigrette.", badge: null }
+    ]
+  },
 });

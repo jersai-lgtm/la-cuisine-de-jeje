@@ -743,4 +743,78 @@ Object.assign(recettes, {
       { icone: "🌰", titre: "Finir", detail: "ASTUCE CHEF : pistaches concassées + roquette + filet d'huile. La crème de pistache en plus, c'est le luxe.", badge: null }
     ]
   },
+  pizza4saisons: {
+    nom: "Pizza Quatre Saisons",
+    cat: "pizzas",
+    pays: "italie",
+    dateAjout: "2026-06-07T22:17:00",
+    base: 2,
+    temps: "30 min (hors pâte)",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍕",
+    description: "La pizza qui réunit tout : un quart champignons, un quart jambon, un quart artichauts, un quart olives, sur une base tomate-mozzarella. Chaque part, une saison.",
+    tableauPizza4Saisons: [
+      { nb: 1, patepizza: "125 g", saucetomate: "60 g", mozzarella: "60 g", champignons: "30 g", jambon: "20 g", artichauts: "30 g", olives: "15 g" },
+      { nb: 2, patepizza: "250 g", saucetomate: "120 g", mozzarella: "120 g", champignons: "60 g", jambon: "40 g", artichauts: "60 g", olives: "30 g" },
+      { nb: 3, patepizza: "375 g", saucetomate: "180 g", mozzarella: "180 g", champignons: "90 g", jambon: "60 g", artichauts: "90 g", olives: "45 g" },
+      { nb: 4, patepizza: "500 g", saucetomate: "240 g", mozzarella: "240 g", champignons: "120 g", jambon: "80 g", artichauts: "120 g", olives: "60 g" },
+      { nb: 5, patepizza: "625 g", saucetomate: "300 g", mozzarella: "300 g", champignons: "150 g", jambon: "100 g", artichauts: "150 g", olives: "75 g" },
+      { nb: 6, patepizza: "750 g", saucetomate: "360 g", mozzarella: "360 g", champignons: "180 g", jambon: "120 g", artichauts: "180 g", olives: "90 g" },
+      { nb: 7, patepizza: "875 g", saucetomate: "420 g", mozzarella: "420 g", champignons: "210 g", jambon: "140 g", artichauts: "210 g", olives: "105 g" },
+      { nb: 8, patepizza: "1000 g", saucetomate: "480 g", mozzarella: "480 g", champignons: "240 g", jambon: "160 g", artichauts: "240 g", olives: "120 g" },
+      { nb: 9, patepizza: "1125 g", saucetomate: "540 g", mozzarella: "540 g", champignons: "270 g", jambon: "180 g", artichauts: "270 g", olives: "135 g" },
+      { nb: 10, patepizza: "1250 g", saucetomate: "600 g", mozzarella: "600 g", champignons: "300 g", jambon: "200 g", artichauts: "300 g", olives: "150 g" },
+      { nb: 11, patepizza: "1375 g", saucetomate: "660 g", mozzarella: "660 g", champignons: "330 g", jambon: "220 g", artichauts: "330 g", olives: "165 g" },
+      { nb: 12, patepizza: "1500 g", saucetomate: "720 g", mozzarella: "720 g", champignons: "360 g", jambon: "240 g", artichauts: "360 g", olives: "180 g" },
+      { nb: 13, patepizza: "1625 g", saucetomate: "780 g", mozzarella: "780 g", champignons: "390 g", jambon: "260 g", artichauts: "390 g", olives: "195 g" },
+      { nb: 14, patepizza: "1750 g", saucetomate: "840 g", mozzarella: "840 g", champignons: "420 g", jambon: "280 g", artichauts: "420 g", olives: "210 g" },
+      { nb: 15, patepizza: "1875 g", saucetomate: "900 g", mozzarella: "900 g", champignons: "450 g", jambon: "300 g", artichauts: "450 g", olives: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Base", detail: "Étaler la pâte finement et la napper de sauce tomate jusqu'aux bords.", badge: "⏱ 5 min" },
+      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella égouttée sur toute la surface.", badge: "⏱ 2 min" },
+      { icone: "🍄", titre: "Quatre quartiers", detail: "Garnir mentalement la pizza en 4 secteurs : champignons, jambon, artichauts, olives. ASTUCE CHEF : bien égoutter champignons et artichauts marinés, sinon leur jus détrempe la pâte et le quartier ne croustille pas.", badge: "⏱ 6 min" },
+      { icone: "🌡️", titre: "Four très chaud", detail: "Préchauffer le four au maximum (250-280°C) avec la plaque ou la pierre à l'intérieur.", badge: "⏱ 10 min" },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner sur la plaque brûlante jusqu'à ce que la croûte gonfle et dore.", badge: "⏱ 9 min" },
+      { icone: "🌿", titre: "Finir", detail: "À la sortie, filet d'huile d'olive et basilic frais. Servir aussitôt.", badge: null }
+    ]
+  },
+  pizzapepperoni: {
+    nom: "Pizza Pepperoni",
+    cat: "pizzas",
+    pays: "usa",
+    dateAjout: "2026-06-07T22:18:00",
+    base: 2,
+    temps: "25 min (hors pâte)",
+    niveau: "⭐ Facile",
+    emoji: "🍕",
+    description: "La pizza américaine star : une base tomate-mozzarella généreusement couverte de pepperoni qui dorent et se creusent en petites coupelles croustillantes au four.",
+    tableauPizzaPepperoni: [
+      { nb: 1, patepizza: "125 g", saucetomate: "60 g", mozzarella: "70 g", pepperoni: "35 g", origan: "QS", huileolive: "5 ml" },
+      { nb: 2, patepizza: "250 g", saucetomate: "120 g", mozzarella: "140 g", pepperoni: "70 g", origan: "QS", huileolive: "10 ml" },
+      { nb: 3, patepizza: "375 g", saucetomate: "180 g", mozzarella: "210 g", pepperoni: "105 g", origan: "QS", huileolive: "15 ml" },
+      { nb: 4, patepizza: "500 g", saucetomate: "240 g", mozzarella: "280 g", pepperoni: "140 g", origan: "QS", huileolive: "20 ml" },
+      { nb: 5, patepizza: "625 g", saucetomate: "300 g", mozzarella: "350 g", pepperoni: "175 g", origan: "QS", huileolive: "25 ml" },
+      { nb: 6, patepizza: "750 g", saucetomate: "360 g", mozzarella: "420 g", pepperoni: "210 g", origan: "QS", huileolive: "30 ml" },
+      { nb: 7, patepizza: "875 g", saucetomate: "420 g", mozzarella: "490 g", pepperoni: "245 g", origan: "QS", huileolive: "35 ml" },
+      { nb: 8, patepizza: "1000 g", saucetomate: "480 g", mozzarella: "560 g", pepperoni: "280 g", origan: "QS", huileolive: "40 ml" },
+      { nb: 9, patepizza: "1125 g", saucetomate: "540 g", mozzarella: "630 g", pepperoni: "315 g", origan: "QS", huileolive: "45 ml" },
+      { nb: 10, patepizza: "1250 g", saucetomate: "600 g", mozzarella: "700 g", pepperoni: "350 g", origan: "QS", huileolive: "50 ml" },
+      { nb: 11, patepizza: "1375 g", saucetomate: "660 g", mozzarella: "770 g", pepperoni: "385 g", origan: "QS", huileolive: "55 ml" },
+      { nb: 12, patepizza: "1500 g", saucetomate: "720 g", mozzarella: "840 g", pepperoni: "420 g", origan: "QS", huileolive: "60 ml" },
+      { nb: 13, patepizza: "1625 g", saucetomate: "780 g", mozzarella: "910 g", pepperoni: "455 g", origan: "QS", huileolive: "65 ml" },
+      { nb: 14, patepizza: "1750 g", saucetomate: "840 g", mozzarella: "980 g", pepperoni: "490 g", origan: "QS", huileolive: "70 ml" },
+      { nb: 15, patepizza: "1875 g", saucetomate: "900 g", mozzarella: "1050 g", pepperoni: "525 g", origan: "QS", huileolive: "75 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Base tomate", detail: "Étaler la pâte, napper de sauce tomate et saupoudrer d'origan.", badge: "⏱ 5 min" },
+      { icone: "🧀", titre: "Fromage", detail: "Couvrir de mozzarella en laissant un bord libre pour la croûte.", badge: "⏱ 2 min" },
+      { icone: "🍕", titre: "Pepperoni", detail: "Disposer les tranches de pepperoni en les espaçant. ASTUCE CHEF : choisir un pepperoni à fort taux de gras, ce sont elles qui se recroquevillent en petites coupelles dorées et croustillantes.", badge: "⏱ 3 min" },
+      { icone: "🌡️", titre: "Four brûlant", detail: "Préchauffer au maximum avec la plaque dedans pour une base bien cuite.", badge: "⏱ 10 min" },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner jusqu'à ce que les bords gonflent, dorent et que le pepperoni grésille.", badge: "⏱ 9 min" },
+      { icone: "🫒", titre: "Servir", detail: "Filet d'huile d'olive à la sortie et servir immédiatement, bien chaude.", badge: null }
+    ]
+  },
 });

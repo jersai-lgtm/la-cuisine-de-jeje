@@ -816,4 +816,43 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Service", detail: "Servir comme base et assiette pour les wat. ASTUCE CHEF : la fermentation est essentielle, c'est elle qui donne à l'injera son goût acidulé et ses bulles caractéristiques.", badge: null }
     ]
   },
+  cramique: {
+    nom: "Cramique",
+    cat: "boulangerie",
+    pays: "belgique",
+    dateAjout: "2026-06-07T22:19:00",
+    base: 8,
+    temps: "3 h (avec pousse)",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍞",
+    description: "La brioche belge moelleuse aux raisins, dorée et filante. Parfaite au petit-déjeuner ou au goûter, tartinée de beurre tant qu'elle est encore tiède.",
+    tableauCramique: [
+      { nb: 1, farine: "60 g", lait: "30 ml", beurre: "18 g", sucre: "8 g", oeuf: "1", raisinssecs: "18 g", levure: "2 g", sel: "1 pincée" },
+      { nb: 2, farine: "120 g", lait: "60 ml", beurre: "36 g", sucre: "16 g", oeuf: "1", raisinssecs: "36 g", levure: "4 g", sel: "1 pincée" },
+      { nb: 3, farine: "180 g", lait: "90 ml", beurre: "54 g", sucre: "24 g", oeuf: "1", raisinssecs: "54 g", levure: "6 g", sel: "1 pincée" },
+      { nb: 4, farine: "240 g", lait: "120 ml", beurre: "72 g", sucre: "32 g", oeuf: "1", raisinssecs: "72 g", levure: "8 g", sel: "1 pincée" },
+      { nb: 5, farine: "300 g", lait: "150 ml", beurre: "90 g", sucre: "40 g", oeuf: "2", raisinssecs: "90 g", levure: "10 g", sel: "1 pincée" },
+      { nb: 6, farine: "360 g", lait: "180 ml", beurre: "108 g", sucre: "48 g", oeuf: "2", raisinssecs: "108 g", levure: "12 g", sel: "2 pincées" },
+      { nb: 7, farine: "420 g", lait: "210 ml", beurre: "126 g", sucre: "56 g", oeuf: "2", raisinssecs: "126 g", levure: "14 g", sel: "2 pincées" },
+      { nb: 8, farine: "480 g", lait: "240 ml", beurre: "144 g", sucre: "64 g", oeuf: "2", raisinssecs: "144 g", levure: "16 g", sel: "2 pincées" },
+      { nb: 9, farine: "540 g", lait: "270 ml", beurre: "162 g", sucre: "72 g", oeuf: "3", raisinssecs: "162 g", levure: "18 g", sel: "2 pincées" },
+      { nb: 10, farine: "600 g", lait: "300 ml", beurre: "180 g", sucre: "80 g", oeuf: "3", raisinssecs: "180 g", levure: "20 g", sel: "2 pincées" },
+      { nb: 11, farine: "660 g", lait: "330 ml", beurre: "198 g", sucre: "88 g", oeuf: "3", raisinssecs: "198 g", levure: "22 g", sel: "3 pincées" },
+      { nb: 12, farine: "720 g", lait: "360 ml", beurre: "216 g", sucre: "96 g", oeuf: "4", raisinssecs: "216 g", levure: "24 g", sel: "3 pincées" },
+      { nb: 13, farine: "780 g", lait: "390 ml", beurre: "234 g", sucre: "104 g", oeuf: "4", raisinssecs: "234 g", levure: "26 g", sel: "3 pincées" },
+      { nb: 14, farine: "840 g", lait: "420 ml", beurre: "252 g", sucre: "112 g", oeuf: "4", raisinssecs: "252 g", levure: "28 g", sel: "3 pincées" },
+      { nb: 15, farine: "900 g", lait: "450 ml", beurre: "270 g", sucre: "120 g", oeuf: "5", raisinssecs: "270 g", levure: "30 g", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍇", titre: "Tremper les raisins", detail: "Faire gonfler les raisins secs dans un peu d'eau tiède (ou de thé), puis les égoutter.", badge: "⏱ 15 min" },
+      { icone: "🥛", titre: "Levain", detail: "Délayer la levure dans le lait tiède avec une pincée de sucre, laisser mousser.", badge: "⏱ 10 min" },
+      { icone: "🥣", titre: "Pétrir", detail: "Pétrir farine, sucre, sel, œuf et levain jusqu'à une pâte souple, puis incorporer le beurre mou. ASTUCE CHEF : pétrir longuement jusqu'à ce que la pâte se décolle du bol et devienne élastique, c'est ce qui donne le moelleux filant.", badge: "⏱ 15 min" },
+      { icone: "🍇", titre: "Ajouter les raisins", detail: "Incorporer délicatement les raisins égouttés en fin de pétrissage.", badge: "⏱ 3 min" },
+      { icone: "⏳", titre: "Première pousse", detail: "Couvrir et laisser doubler de volume dans un endroit tiède.", badge: "⏱ 1 h 30" },
+      { icone: "🍞", titre: "Façonner", detail: "Dégazer, façonner en pain et déposer dans un moule à cake beurré.", badge: "⏱ 8 min" },
+      { icone: "⏳", titre: "Seconde pousse", detail: "Laisser de nouveau gonfler jusqu'au bord du moule, puis dorer à l'œuf.", badge: "⏱ 45 min" },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C jusqu'à ce que la cramique soit bien dorée et sonne creux.", badge: "⏱ 30 min" }
+    ]
+  },
 });

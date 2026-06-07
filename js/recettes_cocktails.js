@@ -1344,4 +1344,79 @@ Object.assign(recettes, {
       { icone: "🫧", titre: "Allonger", detail: "Compléter d'un trait de soda, décorer d'une fraise et de basilic.", badge: null }
     ]
   },
+  maitai: {
+    nom: "Mai Tai",
+    cat: "cocktails",
+    pays: "usa",
+    dateAjout: "2026-06-07T22:23:00",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🍹",
+    description: "Le cocktail tiki par excellence : rhum ambré et blanc, curaçao orange, sirop d'orgeat et citron vert, servi sur glace pilée. Une parenthèse polynésienne.",
+    tableauMaiTai: [
+      { nb: 1, rhumambre: "4 cl", rhumblanc: "2 cl", curacao: "1.5 cl", orgeat: "1.5 cl", citronvert: "2 cl", menthe: "QS" },
+      { nb: 2, rhumambre: "8 cl", rhumblanc: "4 cl", curacao: "3 cl", orgeat: "3 cl", citronvert: "4 cl", menthe: "QS" },
+      { nb: 3, rhumambre: "12 cl", rhumblanc: "6 cl", curacao: "4.5 cl", orgeat: "4.5 cl", citronvert: "6 cl", menthe: "QS" },
+      { nb: 4, rhumambre: "16 cl", rhumblanc: "8 cl", curacao: "6 cl", orgeat: "6 cl", citronvert: "8 cl", menthe: "QS" },
+      { nb: 5, rhumambre: "20 cl", rhumblanc: "10 cl", curacao: "7.5 cl", orgeat: "7.5 cl", citronvert: "10 cl", menthe: "QS" },
+      { nb: 6, rhumambre: "24 cl", rhumblanc: "12 cl", curacao: "9 cl", orgeat: "9 cl", citronvert: "12 cl", menthe: "QS" },
+      { nb: 7, rhumambre: "28 cl", rhumblanc: "14 cl", curacao: "10.5 cl", orgeat: "10.5 cl", citronvert: "14 cl", menthe: "QS" },
+      { nb: 8, rhumambre: "32 cl", rhumblanc: "16 cl", curacao: "12 cl", orgeat: "12 cl", citronvert: "16 cl", menthe: "QS" },
+      { nb: 9, rhumambre: "36 cl", rhumblanc: "18 cl", curacao: "13.5 cl", orgeat: "13.5 cl", citronvert: "18 cl", menthe: "QS" },
+      { nb: 10, rhumambre: "40 cl", rhumblanc: "20 cl", curacao: "15 cl", orgeat: "15 cl", citronvert: "20 cl", menthe: "QS" },
+      { nb: 11, rhumambre: "44 cl", rhumblanc: "22 cl", curacao: "16.5 cl", orgeat: "16.5 cl", citronvert: "22 cl", menthe: "QS" },
+      { nb: 12, rhumambre: "48 cl", rhumblanc: "24 cl", curacao: "18 cl", orgeat: "18 cl", citronvert: "24 cl", menthe: "QS" },
+      { nb: 13, rhumambre: "52 cl", rhumblanc: "26 cl", curacao: "19.5 cl", orgeat: "19.5 cl", citronvert: "26 cl", menthe: "QS" },
+      { nb: 14, rhumambre: "56 cl", rhumblanc: "28 cl", curacao: "21 cl", orgeat: "21 cl", citronvert: "28 cl", menthe: "QS" },
+      { nb: 15, rhumambre: "60 cl", rhumblanc: "30 cl", curacao: "22.5 cl", orgeat: "22.5 cl", citronvert: "30 cl", menthe: "QS" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧊", titre: "Glace", detail: "Remplir un verre old fashioned de glace pilée bien froide.", badge: null },
+      { icone: "🥃", titre: "Verser les rhums", detail: "Verser le rhum ambré et le rhum blanc dans un shaker.", badge: null },
+      { icone: "🍊", titre: "Liqueurs & sirop", detail: "Ajouter le curaçao orange et le sirop d'orgeat.", badge: null },
+      { icone: "🍋", titre: "Citron vert", detail: "Presser le jus de citron vert frais dans le shaker.", badge: null },
+      { icone: "🌀", titre: "Shaker", detail: "Remplir de glace et shaker énergiquement jusqu'à ce que le shaker givre. ASTUCE CHEF : l'orgeat (sirop d'amande) est l'âme du Mai Tai, ne le remplacez pas par du sucre simple, c'est lui qui donne ce goût rond et exotique.", badge: null },
+      { icone: "🍹", titre: "Dresser", detail: "Verser le tout, glace comprise, dans le verre.", badge: null },
+      { icone: "🌿", titre: "Décorer", detail: "Garnir d'une branche de menthe et d'un quartier de citron vert.", badge: null }
+    ]
+  },
+  kirroyal: {
+    nom: "Kir Royal",
+    cat: "cocktails",
+    pays: "france",
+    dateAjout: "2026-06-07T22:24:00",
+    base: 1,
+    temps: "3 min",
+    niveau: "⭐ Facile",
+    emoji: "🥂",
+    description: "L'apéritif chic à la française : une larme de crème de cassis sublimée par un champagne brut bien frais. Élégant, festif et terriblement simple.",
+    tableauKirRoyal: [
+      { nb: 1, champagne: "12 cl", cremecassis: "1.5 cl" },
+      { nb: 2, champagne: "24 cl", cremecassis: "3 cl" },
+      { nb: 3, champagne: "36 cl", cremecassis: "4.5 cl" },
+      { nb: 4, champagne: "48 cl", cremecassis: "6 cl" },
+      { nb: 5, champagne: "60 cl", cremecassis: "7.5 cl" },
+      { nb: 6, champagne: "72 cl", cremecassis: "9 cl" },
+      { nb: 7, champagne: "84 cl", cremecassis: "10.5 cl" },
+      { nb: 8, champagne: "96 cl", cremecassis: "12 cl" },
+      { nb: 9, champagne: "108 cl", cremecassis: "13.5 cl" },
+      { nb: 10, champagne: "120 cl", cremecassis: "15 cl" },
+      { nb: 11, champagne: "132 cl", cremecassis: "16.5 cl" },
+      { nb: 12, champagne: "144 cl", cremecassis: "18 cl" },
+      { nb: 13, champagne: "156 cl", cremecassis: "19.5 cl" },
+      { nb: 14, champagne: "168 cl", cremecassis: "21 cl" },
+      { nb: 15, champagne: "180 cl", cremecassis: "22.5 cl" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "❄️", titre: "Tout au frais", detail: "S'assurer que la flûte et le champagne sont bien glacés.", badge: null },
+      { icone: "🍷", titre: "Crème de cassis", detail: "Verser la crème de cassis au fond de la flûte.", badge: null },
+      { icone: "🥂", titre: "Champagne", detail: "Compléter doucement avec le champagne brut, en inclinant la flûte. ASTUCE CHEF : verser le champagne lentement le long de la paroi préserve les bulles et évite que la mousse ne déborde.", badge: null },
+      { icone: "🌀", titre: "Ne pas remuer", detail: "Laisser le cassis remonter naturellement : inutile de mélanger, le dégradé est plus joli.", badge: null },
+      { icone: "🍋", titre: "Touche finale", detail: "Un zeste de citron en option pour la fraîcheur.", badge: null },
+      { icone: "🥂", titre: "Servir", detail: "Servir immédiatement, bien frais, à l'apéritif.", badge: null }
+    ]
+  },
 });

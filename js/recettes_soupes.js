@@ -1666,4 +1666,80 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir avec les bouquets dorés et de la ciboulette.", badge: null }
     ]
   },
+  garbure: {
+    nom: "Garbure Béarnaise",
+    cat: "soupes",
+    pays: "france",
+    dateAjout: "2026-06-07T22:08:00",
+    base: 6,
+    temps: "1 h 45",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "La grande soupe paysanne du Sud-Ouest : chou, haricots, légumes et confit de canard mijotés longuement en un plat-soupe nourrissant et généreux.",
+    tableauGarbure: [
+      { nb: 1, confitcanard: "1", chouvert: "80 g", haricotsblancs: "40 g", pommedeterre: "70 g", carotte: "40 g", poireau: "40 g", bouillon: "300 ml", sel: "1 pincée" },
+      { nb: 2, confitcanard: "1", chouvert: "160 g", haricotsblancs: "80 g", pommedeterre: "140 g", carotte: "80 g", poireau: "80 g", bouillon: "600 ml", sel: "1 pincée" },
+      { nb: 3, confitcanard: "2", chouvert: "240 g", haricotsblancs: "120 g", pommedeterre: "210 g", carotte: "120 g", poireau: "120 g", bouillon: "900 ml", sel: "1 pincée" },
+      { nb: 4, confitcanard: "2", chouvert: "320 g", haricotsblancs: "160 g", pommedeterre: "280 g", carotte: "160 g", poireau: "160 g", bouillon: "1200 ml", sel: "1 pincée" },
+      { nb: 5, confitcanard: "3", chouvert: "400 g", haricotsblancs: "200 g", pommedeterre: "350 g", carotte: "200 g", poireau: "200 g", bouillon: "1500 ml", sel: "1 pincée" },
+      { nb: 6, confitcanard: "3", chouvert: "480 g", haricotsblancs: "240 g", pommedeterre: "420 g", carotte: "240 g", poireau: "240 g", bouillon: "1800 ml", sel: "2 pincées" },
+      { nb: 7, confitcanard: "4", chouvert: "560 g", haricotsblancs: "280 g", pommedeterre: "490 g", carotte: "280 g", poireau: "280 g", bouillon: "2100 ml", sel: "2 pincées" },
+      { nb: 8, confitcanard: "4", chouvert: "640 g", haricotsblancs: "320 g", pommedeterre: "560 g", carotte: "320 g", poireau: "320 g", bouillon: "2400 ml", sel: "2 pincées" },
+      { nb: 9, confitcanard: "5", chouvert: "720 g", haricotsblancs: "360 g", pommedeterre: "630 g", carotte: "360 g", poireau: "360 g", bouillon: "2700 ml", sel: "2 pincées" },
+      { nb: 10, confitcanard: "5", chouvert: "800 g", haricotsblancs: "400 g", pommedeterre: "700 g", carotte: "400 g", poireau: "400 g", bouillon: "3000 ml", sel: "2 pincées" },
+      { nb: 11, confitcanard: "6", chouvert: "880 g", haricotsblancs: "440 g", pommedeterre: "770 g", carotte: "440 g", poireau: "440 g", bouillon: "3300 ml", sel: "3 pincées" },
+      { nb: 12, confitcanard: "6", chouvert: "960 g", haricotsblancs: "480 g", pommedeterre: "840 g", carotte: "480 g", poireau: "480 g", bouillon: "3600 ml", sel: "3 pincées" },
+      { nb: 13, confitcanard: "7", chouvert: "1040 g", haricotsblancs: "520 g", pommedeterre: "910 g", carotte: "520 g", poireau: "520 g", bouillon: "3900 ml", sel: "3 pincées" },
+      { nb: 14, confitcanard: "7", chouvert: "1120 g", haricotsblancs: "560 g", pommedeterre: "980 g", carotte: "560 g", poireau: "560 g", bouillon: "4200 ml", sel: "3 pincées" },
+      { nb: 15, confitcanard: "8", chouvert: "1200 g", haricotsblancs: "600 g", pommedeterre: "1050 g", carotte: "600 g", poireau: "600 g", bouillon: "4500 ml", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Tremper les haricots", detail: "Faire tremper les haricots blancs la veille, puis les égoutter (ou utiliser des haricots déjà cuits).", badge: "⏱ 5 min" },
+      { icone: "🦆", titre: "Suer au gras de canard", detail: "Faire fondre un peu de graisse de confit et y faire revenir carotte, poireau et oignon.", badge: "⏱ 8 min" },
+      { icone: "💧", titre: "Mouiller", detail: "Ajouter le bouillon, les haricots et les pommes de terre en gros morceaux, porter à frémissement.", badge: "⏱ 5 min" },
+      { icone: "⏲️", titre: "Mijoter", detail: "Laisser cuire à couvert et à feu doux jusqu'à ce que les légumes soient tendres.", badge: "⏱ 1 h" },
+      { icone: "🥬", titre: "Ajouter le chou", detail: "Incorporer le chou émincé et poursuivre la cuisson. ASTUCE CHEF : on ajoute le chou en seconde partie de cuisson pour qu'il reste vert et fondant sans devenir amer.", badge: "⏱ 25 min" },
+      { icone: "🦆", titre: "Confit", detail: "Déposer les cuisses de confit réchauffées dans la soupe juste avant de servir.", badge: "⏱ 8 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir très chaud, avec une tranche de pain de campagne grillée frottée d'ail.", badge: null }
+    ]
+  },
+  vichyssoise: {
+    nom: "Vichyssoise",
+    cat: "soupes",
+    pays: "france",
+    dateAjout: "2026-06-07T22:09:00",
+    base: 4,
+    temps: "40 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    description: "Le velouté froid chic à base de poireaux et de pommes de terre, lié à la crème, servi glacé et parsemé de ciboulette. Parfait en entrée d'été.",
+    tableauVichyssoise: [
+      { nb: 1, poireau: "90 g", pommedeterre: "80 g", oignon: "30 g", creme: "50 ml", beurre: "10 g", bouillon: "250 ml", ciboulette: "QS" },
+      { nb: 2, poireau: "180 g", pommedeterre: "160 g", oignon: "60 g", creme: "100 ml", beurre: "20 g", bouillon: "500 ml", ciboulette: "QS" },
+      { nb: 3, poireau: "270 g", pommedeterre: "240 g", oignon: "90 g", creme: "150 ml", beurre: "30 g", bouillon: "750 ml", ciboulette: "QS" },
+      { nb: 4, poireau: "360 g", pommedeterre: "320 g", oignon: "120 g", creme: "200 ml", beurre: "40 g", bouillon: "1000 ml", ciboulette: "QS" },
+      { nb: 5, poireau: "450 g", pommedeterre: "400 g", oignon: "150 g", creme: "250 ml", beurre: "50 g", bouillon: "1250 ml", ciboulette: "QS" },
+      { nb: 6, poireau: "540 g", pommedeterre: "480 g", oignon: "180 g", creme: "300 ml", beurre: "60 g", bouillon: "1500 ml", ciboulette: "QS" },
+      { nb: 7, poireau: "630 g", pommedeterre: "560 g", oignon: "210 g", creme: "350 ml", beurre: "70 g", bouillon: "1750 ml", ciboulette: "QS" },
+      { nb: 8, poireau: "720 g", pommedeterre: "640 g", oignon: "240 g", creme: "400 ml", beurre: "80 g", bouillon: "2000 ml", ciboulette: "QS" },
+      { nb: 9, poireau: "810 g", pommedeterre: "720 g", oignon: "270 g", creme: "450 ml", beurre: "90 g", bouillon: "2250 ml", ciboulette: "QS" },
+      { nb: 10, poireau: "900 g", pommedeterre: "800 g", oignon: "300 g", creme: "500 ml", beurre: "100 g", bouillon: "2500 ml", ciboulette: "QS" },
+      { nb: 11, poireau: "990 g", pommedeterre: "880 g", oignon: "330 g", creme: "550 ml", beurre: "110 g", bouillon: "2750 ml", ciboulette: "QS" },
+      { nb: 12, poireau: "1080 g", pommedeterre: "960 g", oignon: "360 g", creme: "600 ml", beurre: "120 g", bouillon: "3000 ml", ciboulette: "QS" },
+      { nb: 13, poireau: "1170 g", pommedeterre: "1040 g", oignon: "390 g", creme: "650 ml", beurre: "130 g", bouillon: "3250 ml", ciboulette: "QS" },
+      { nb: 14, poireau: "1260 g", pommedeterre: "1120 g", oignon: "420 g", creme: "700 ml", beurre: "140 g", bouillon: "3500 ml", ciboulette: "QS" },
+      { nb: 15, poireau: "1350 g", pommedeterre: "1200 g", oignon: "450 g", creme: "750 ml", beurre: "150 g", bouillon: "3750 ml", ciboulette: "QS" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Suer les blancs", detail: "Fondre les blancs de poireaux et l'oignon dans le beurre sans coloration, à couvert.", badge: "⏱ 10 min" },
+      { icone: "🥔", titre: "Pommes de terre", detail: "Ajouter les pommes de terre en dés et le bouillon, porter à frémissement.", badge: "⏱ 5 min" },
+      { icone: "⏲️", titre: "Cuire", detail: "Laisser cuire jusqu'à ce que les pommes de terre soient bien fondantes.", badge: "⏱ 20 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement jusqu'à un velouté parfaitement lisse. ASTUCE CHEF : passer la soupe au chinois pour une texture ultra soyeuse, c'est ce qui fait la signature de la vichyssoise.", badge: "⏱ 3 min" },
+      { icone: "🥛", titre: "Crémer", detail: "Incorporer la crème, rectifier sel et poivre, puis laisser refroidir.", badge: "⏱ 3 min" },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Placer au frais plusieurs heures : la vichyssoise se sert bien glacée.", badge: "⏱ 3 h" },
+      { icone: "🌿", titre: "Servir", detail: "Servir en bol frais, filet de crème et ciboulette ciselée sur le dessus.", badge: null }
+    ]
+  },
 });
