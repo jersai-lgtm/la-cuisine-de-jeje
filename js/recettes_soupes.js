@@ -1931,7 +1931,7 @@ Object.assign(recettes, {
     ]
   },
   sopadelima: {
-    nom: "undefined",
+    nom: "Sopa de Lima",
     cat: "soupes",
     pays: "mexique",
     dateAjout: "2026-06-08T18:22:00",
@@ -1968,7 +1968,7 @@ Object.assign(recettes, {
     ]
   },
   sotoayam: {
-    nom: "undefined",
+    nom: "Soto Ayam",
     cat: "soupes",
     pays: "indonesie",
     dateAjout: "2026-06-08T18:23:00",
@@ -2005,7 +2005,7 @@ Object.assign(recettes, {
     ]
   },
   chorba: {
-    nom: "undefined",
+    nom: "Chorba",
     cat: "soupes",
     pays: "algerie",
     dateAjout: "2026-06-08T18:24:00",
@@ -2042,7 +2042,7 @@ Object.assign(recettes, {
     ]
   },
   caldopollo: {
-    nom: "undefined",
+    nom: "Caldo de Pollo",
     cat: "soupes",
     pays: "mexique",
     dateAjout: "2026-06-08T18:25:00",

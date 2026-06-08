@@ -1496,7 +1496,7 @@ oeufmayo: {
     ]
   },
   pissaladiere: {
-    nom: "undefined",
+    nom: "Pissaladière",
     cat: "entrees",
     pays: "france",
     dateAjout: "2026-06-08T18:26:00",

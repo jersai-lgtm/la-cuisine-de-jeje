@@ -10143,7 +10143,7 @@ Object.assign(recettes, {
     ]
   },
   mafe: {
-    nom: "undefined",
+    nom: "Mafé",
     cat: "plats",
     pays: "senegal",
     dateAjout: "2026-06-08T18:27:00",
@@ -10180,7 +10180,7 @@ Object.assign(recettes, {
     ]
   },
   attieke: {
-    nom: "undefined",
+    nom: "Attiéké",
     cat: "plats",
     pays: "cotedivoire",
     dateAjout: "2026-06-08T18:28:00",
@@ -10217,7 +10217,7 @@ Object.assign(recettes, {
     ]
   },
   charsiu: {
-    nom: "undefined",
+    nom: "Char Siu",
     cat: "plats",
     pays: "chine",
     dateAjout: "2026-06-08T18:29:00",
@@ -10254,7 +10254,7 @@ Object.assign(recettes, {
     ]
   },
   pouletdg: {
-    nom: "undefined",
+    nom: "Poulet DG",
     cat: "plats",
     pays: "cameroun",
     dateAjout: "2026-06-08T18:30:00",
@@ -10291,7 +10291,7 @@ Object.assign(recettes, {
     ]
   },
   baobuns: {
-    nom: "undefined",
+    nom: "Bao Buns",
     cat: "plats",
     pays: "chine",
     dateAjout: "2026-06-08T18:31:00",

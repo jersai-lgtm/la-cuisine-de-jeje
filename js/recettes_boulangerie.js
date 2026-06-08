@@ -894,7 +894,7 @@ Object.assign(recettes, {
     ]
   },
   painaulait: {
-    nom: "undefined",
+    nom: "Pain au Lait",
     cat: "boulangerie",
     pays: "france",
     dateAjout: "2026-06-08T18:10:00",
@@ -931,7 +931,7 @@ Object.assign(recettes, {
     ]
   },
   sodabread: {
-    nom: "undefined",
+    nom: "Soda Bread Irlandais",
     cat: "boulangerie",
     pays: "irlande",
     dateAjout: "2026-06-08T18:11:00",
@@ -968,7 +968,7 @@ Object.assign(recettes, {
     ]
   },
   painnoix: {
-    nom: "undefined",
+    nom: "Pain aux Noix",
     cat: "boulangerie",
     pays: "france",
     dateAjout: "2026-06-08T18:12:00",
@@ -1005,7 +1005,7 @@ Object.assign(recettes, {
     ]
   },
   challah: {
-    nom: "undefined",
+    nom: "Challah",
     cat: "boulangerie",
     pays: "monde",
     dateAjout: "2026-06-08T18:13:00",

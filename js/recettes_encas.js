@@ -1241,7 +1241,7 @@ Object.assign(recettes, {
     ]
   },
   barrescereales: {
-    nom: "undefined",
+    nom: "Barres de Céréales",
     cat: "encas",
     pays: "france",
     dateAjout: "2026-06-08T18:14:00",
@@ -1278,7 +1278,7 @@ Object.assign(recettes, {
     ]
   },
   sables: {
-    nom: "undefined",
+    nom: "Sablés",
     cat: "encas",
     pays: "france",
     dateAjout: "2026-06-08T18:15:00",
@@ -1315,7 +1315,7 @@ Object.assign(recettes, {
     ]
   },
   cakemarbre: {
-    nom: "undefined",
+    nom: "Cake Marbré",
     cat: "encas",
     pays: "france",
     dateAjout: "2026-06-08T18:16:00",
@@ -1352,7 +1352,7 @@ Object.assign(recettes, {
     ]
   },
   chouquettes: {
-    nom: "undefined",
+    nom: "Chouquettes",
     cat: "encas",
     pays: "france",
     dateAjout: "2026-06-08T18:17:00",
@@ -1389,7 +1389,7 @@ Object.assign(recettes, {
     ]
   },
   tuilesamandes: {
-    nom: "undefined",
+    nom: "Tuiles aux Amandes",
     cat: "encas",
     pays: "france",
     dateAjout: "2026-06-08T18:18:00",
@@ -1426,7 +1426,7 @@ Object.assign(recettes, {
     ]
   },
   rocherscoco: {
-    nom: "undefined",
+    nom: "Rochers Coco",
     cat: "encas",
     pays: "france",
     dateAjout: "2026-06-08T18:19:00",

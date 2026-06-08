@@ -1232,7 +1232,7 @@ Object.assign(recettes, {
     ]
   },
   congee: {
-    nom: "undefined",
+    nom: "Congee",
     cat: "brunch",
     pays: "chine",
     dateAjout: "2026-06-08T18:20:00",
@@ -1269,7 +1269,7 @@ Object.assign(recettes, {
     ]
   },
   frittata: {
-    nom: "undefined",
+    nom: "Frittata",
     cat: "brunch",
     pays: "italie",
     dateAjout: "2026-06-08T18:21:00",

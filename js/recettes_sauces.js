@@ -975,7 +975,7 @@ mayonnaise: {
     ]
   },
   romesco: {
-    nom: "undefined",
+    nom: "Sauce Romesco",
     cat: "sauces",
     pays: "espagne",
     dateAjout: "2026-06-08T18:04:00",
@@ -1012,7 +1012,7 @@ mayonnaise: {
     ]
   },
   gribiche: {
-    nom: "undefined",
+    nom: "Sauce Gribiche",
     cat: "sauces",
     pays: "france",
     dateAjout: "2026-06-08T18:05:00",
@@ -1049,7 +1049,7 @@ mayonnaise: {
     ]
   },
   saucevierge: {
-    nom: "undefined",
+    nom: "Sauce Vierge",
     cat: "sauces",
     pays: "france",
     dateAjout: "2026-06-08T18:06:00",
@@ -1086,7 +1086,7 @@ mayonnaise: {
     ]
   },
   nuoccham: {
-    nom: "undefined",
+    nom: "Sauce Nuoc Cham",
     cat: "sauces",
     pays: "vietnam",
     dateAjout: "2026-06-08T18:07:00",
@@ -1123,7 +1123,7 @@ mayonnaise: {
     ]
   },
   toum: {
-    nom: "undefined",
+    nom: "Toum",
     cat: "sauces",
     pays: "liban",
     dateAjout: "2026-06-08T18:08:00",
@@ -1160,7 +1160,7 @@ mayonnaise: {
     ]
   },
   skordalia: {
-    nom: "undefined",
+    nom: "Skordalia",
     cat: "sauces",
     pays: "grece",
     dateAjout: "2026-06-08T18:09:00",

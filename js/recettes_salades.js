@@ -997,7 +997,7 @@ Object.assign(recettes, {
     ]
   },
   saladecobb: {
-    nom: "undefined",
+    nom: "Salade Cobb",
     cat: "salades",
     pays: "usa",
     dateAjout: "2026-06-08T18:00:00",
@@ -1034,7 +1034,7 @@ Object.assign(recettes, {
     ]
   },
   fattouche: {
-    nom: "undefined",
+    nom: "Salade Fattouche",
     cat: "salades",
     pays: "liban",
     dateAjout: "2026-06-08T18:01:00",
@@ -1071,7 +1071,7 @@ Object.assign(recettes, {
     ]
   },
   panzanella: {
-    nom: "undefined",
+    nom: "Panzanella",
     cat: "salades",
     pays: "italie",
     dateAjout: "2026-06-08T18:02:00",
@@ -1108,7 +1108,7 @@ Object.assign(recettes, {
     ]
   },
   saladeconcombre: {
-    nom: "undefined",
+    nom: "Salade de Concombre Asiatique",
     cat: "salades",
     pays: "chine",
     dateAjout: "2026-06-08T18:03:00",
