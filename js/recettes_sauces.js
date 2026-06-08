@@ -1344,4 +1344,78 @@ mayonnaise: {
       { icone: "🫙", titre: "Servir", detail: "Servir avec grillades, falafels, œufs ou en tartine.", badge: null }
     ]
   },
+  chakalaka: {
+    nom: "Chakalaka",
+    cat: "sauces",
+    pays: "afriquedusud",
+    dateAjout: "2026-06-08T20:08:00",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥫",
+    description: "Le relish sud-africain épicé de légumes et haricots, qui accompagne braais et pap.",
+    tableauChakalaka: [
+      { nb: 1, carotte: "40 g", poivron: "30 g", oignon: "25 g", tomate: "40 g", haricotsrouges: "30 g", curry: "3 g", piment: "2 g" },
+      { nb: 2, carotte: "80 g", poivron: "60 g", oignon: "50 g", tomate: "80 g", haricotsrouges: "60 g", curry: "6 g", piment: "4 g" },
+      { nb: 3, carotte: "120 g", poivron: "90 g", oignon: "75 g", tomate: "120 g", haricotsrouges: "90 g", curry: "9 g", piment: "6 g" },
+      { nb: 4, carotte: "160 g", poivron: "120 g", oignon: "100 g", tomate: "160 g", haricotsrouges: "120 g", curry: "12 g", piment: "8 g" },
+      { nb: 5, carotte: "200 g", poivron: "150 g", oignon: "125 g", tomate: "200 g", haricotsrouges: "150 g", curry: "15 g", piment: "10 g" },
+      { nb: 6, carotte: "240 g", poivron: "180 g", oignon: "150 g", tomate: "240 g", haricotsrouges: "180 g", curry: "18 g", piment: "12 g" },
+      { nb: 7, carotte: "280 g", poivron: "210 g", oignon: "175 g", tomate: "280 g", haricotsrouges: "210 g", curry: "21 g", piment: "14 g" },
+      { nb: 8, carotte: "320 g", poivron: "240 g", oignon: "200 g", tomate: "320 g", haricotsrouges: "240 g", curry: "24 g", piment: "16 g" },
+      { nb: 9, carotte: "360 g", poivron: "270 g", oignon: "225 g", tomate: "360 g", haricotsrouges: "270 g", curry: "27 g", piment: "18 g" },
+      { nb: 10, carotte: "400 g", poivron: "300 g", oignon: "250 g", tomate: "400 g", haricotsrouges: "300 g", curry: "30 g", piment: "20 g" },
+      { nb: 11, carotte: "440 g", poivron: "330 g", oignon: "275 g", tomate: "440 g", haricotsrouges: "330 g", curry: "33 g", piment: "22 g" },
+      { nb: 12, carotte: "480 g", poivron: "360 g", oignon: "300 g", tomate: "480 g", haricotsrouges: "360 g", curry: "36 g", piment: "24 g" },
+      { nb: 13, carotte: "520 g", poivron: "390 g", oignon: "325 g", tomate: "520 g", haricotsrouges: "390 g", curry: "39 g", piment: "26 g" },
+      { nb: 14, carotte: "560 g", poivron: "420 g", oignon: "350 g", tomate: "560 g", haricotsrouges: "420 g", curry: "42 g", piment: "28 g" },
+      { nb: 15, carotte: "600 g", poivron: "450 g", oignon: "375 g", tomate: "600 g", haricotsrouges: "450 g", curry: "45 g", piment: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Base", detail: "Faire revenir oignon, curry et piment.", badge: "⏱ 4 min" },
+      { icone: "🥕", titre: "Carottes", detail: "Ajouter les carottes râpées et le poivron.", badge: "⏱ 5 min" },
+      { icone: "🍅", titre: "Tomate", detail: "Ajouter les tomates et laisser compoter. ASTUCE CHEF : râpe les carottes finement pour qu'elles fondent dans la sauce et lui donnent son liant.", badge: "⏱ 10 min" },
+      { icone: "🫘", titre: "Haricots", detail: "Incorporer les haricots rouges.", badge: "⏱ 5 min" },
+      { icone: "♨️", titre: "Mijoter", detail: "Laisser mijoter pour lier les saveurs.", badge: "⏱ 5 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir tiède ou froid, en accompagnement.", badge: null }
+    ]
+  },
+  ajvar: {
+    nom: "Ajvar",
+    cat: "sauces",
+    pays: "serbie",
+    dateAjout: "2026-06-08T20:14:00",
+    base: 6,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥫",
+    description: "Le caviar de poivrons rôtis des Balkans, doux et fumé, à tartiner ou en condiment.",
+    tableauAjvar: [
+      { nb: 1, poivron: "80 g", aubergine: "30 g", ail: "1", huileOlive: "15 ml", vinaigre: "5 ml", piment: "1 g" },
+      { nb: 2, poivron: "160 g", aubergine: "60 g", ail: "1", huileOlive: "30 ml", vinaigre: "10 ml", piment: "2 g" },
+      { nb: 3, poivron: "240 g", aubergine: "90 g", ail: "2", huileOlive: "45 ml", vinaigre: "15 ml", piment: "3 g" },
+      { nb: 4, poivron: "320 g", aubergine: "120 g", ail: "2", huileOlive: "60 ml", vinaigre: "20 ml", piment: "4 g" },
+      { nb: 5, poivron: "400 g", aubergine: "150 g", ail: "3", huileOlive: "75 ml", vinaigre: "25 ml", piment: "5 g" },
+      { nb: 6, poivron: "480 g", aubergine: "180 g", ail: "3", huileOlive: "90 ml", vinaigre: "30 ml", piment: "6 g" },
+      { nb: 7, poivron: "560 g", aubergine: "210 g", ail: "4", huileOlive: "105 ml", vinaigre: "35 ml", piment: "7 g" },
+      { nb: 8, poivron: "640 g", aubergine: "240 g", ail: "4", huileOlive: "120 ml", vinaigre: "40 ml", piment: "8 g" },
+      { nb: 9, poivron: "720 g", aubergine: "270 g", ail: "5", huileOlive: "135 ml", vinaigre: "45 ml", piment: "9 g" },
+      { nb: 10, poivron: "800 g", aubergine: "300 g", ail: "5", huileOlive: "150 ml", vinaigre: "50 ml", piment: "10 g" },
+      { nb: 11, poivron: "880 g", aubergine: "330 g", ail: "6", huileOlive: "165 ml", vinaigre: "55 ml", piment: "11 g" },
+      { nb: 12, poivron: "960 g", aubergine: "360 g", ail: "6", huileOlive: "180 ml", vinaigre: "60 ml", piment: "12 g" },
+      { nb: 13, poivron: "1040 g", aubergine: "390 g", ail: "7", huileOlive: "195 ml", vinaigre: "65 ml", piment: "13 g" },
+      { nb: 14, poivron: "1120 g", aubergine: "420 g", ail: "7", huileOlive: "210 ml", vinaigre: "70 ml", piment: "14 g" },
+      { nb: 15, poivron: "1200 g", aubergine: "450 g", ail: "8", huileOlive: "225 ml", vinaigre: "75 ml", piment: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Rôtir", detail: "Rôtir les poivrons (et l'aubergine) jusqu'à ce que la peau noircisse.", badge: "⏱ 30 min" },
+      { icone: "🫙", titre: "Peler", detail: "Enfermer les poivrons chauds puis les peler. ASTUCE CHEF : laisse-les suer 10 min couverts, la peau se retire alors sans effort.", badge: "⏱ 10 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer la chair avec l'ail.", badge: null },
+      { icone: "♨️", titre: "Réduire", detail: "Cuire à feu doux pour évaporer l'eau.", badge: "⏱ 15 min" },
+      { icone: "🫒", titre: "Lier", detail: "Ajouter huile et vinaigre, mélanger.", badge: null },
+      { icone: "🫙", titre: "Servir", detail: "Mettre en pot ; se tartine ou accompagne les grillades.", badge: null }
+    ]
+  },
 });

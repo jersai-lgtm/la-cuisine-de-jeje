@@ -1041,4 +1041,41 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Cuire à 180°C jusqu'à une belle couleur dorée.", badge: "⏱ 25 min" }
     ]
   },
+  manakish: {
+    nom: "Manakish",
+    cat: "boulangerie",
+    pays: "liban",
+    dateAjout: "2026-06-08T20:29:00",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Les galettes libanaises levées garnies de za'atar et huile d'olive, dorées au four.",
+    tableauManakish: [
+      { nb: 1, farine: "70 g", levureboulanger: "3 g", huileOlive: "20 ml", zaatar: "8 g", sel: "1 g" },
+      { nb: 2, farine: "140 g", levureboulanger: "6 g", huileOlive: "40 ml", zaatar: "16 g", sel: "2 g" },
+      { nb: 3, farine: "210 g", levureboulanger: "9 g", huileOlive: "60 ml", zaatar: "24 g", sel: "3 g" },
+      { nb: 4, farine: "280 g", levureboulanger: "12 g", huileOlive: "80 ml", zaatar: "32 g", sel: "4 g" },
+      { nb: 5, farine: "350 g", levureboulanger: "15 g", huileOlive: "100 ml", zaatar: "40 g", sel: "5 g" },
+      { nb: 6, farine: "420 g", levureboulanger: "18 g", huileOlive: "120 ml", zaatar: "48 g", sel: "6 g" },
+      { nb: 7, farine: "490 g", levureboulanger: "21 g", huileOlive: "140 ml", zaatar: "56 g", sel: "7 g" },
+      { nb: 8, farine: "560 g", levureboulanger: "24 g", huileOlive: "160 ml", zaatar: "64 g", sel: "8 g" },
+      { nb: 9, farine: "630 g", levureboulanger: "27 g", huileOlive: "180 ml", zaatar: "72 g", sel: "9 g" },
+      { nb: 10, farine: "700 g", levureboulanger: "30 g", huileOlive: "200 ml", zaatar: "80 g", sel: "10 g" },
+      { nb: 11, farine: "770 g", levureboulanger: "33 g", huileOlive: "220 ml", zaatar: "88 g", sel: "11 g" },
+      { nb: 12, farine: "840 g", levureboulanger: "36 g", huileOlive: "240 ml", zaatar: "96 g", sel: "12 g" },
+      { nb: 13, farine: "910 g", levureboulanger: "39 g", huileOlive: "260 ml", zaatar: "104 g", sel: "13 g" },
+      { nb: 14, farine: "980 g", levureboulanger: "42 g", huileOlive: "280 ml", zaatar: "112 g", sel: "14 g" },
+      { nb: 15, farine: "1050 g", levureboulanger: "45 g", huileOlive: "300 ml", zaatar: "120 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Pétrir une pâte levée souple.", badge: "⏱ 10 min" },
+      { icone: "⏳", titre: "Pousse", detail: "Laisser doubler de volume.", badge: "⏱ 1 h" },
+      { icone: "🫓", titre: "Étaler", detail: "Étaler des disques de pâte assez fins.", badge: null },
+      { icone: "🌿", titre: "Za'atar", detail: "Mélanger za'atar et huile d'olive en pâte, étaler dessus. ASTUCE CHEF : détrempe le za'atar dans l'huile d'olive avant d'étaler, il ne brûlera pas et restera parfumé.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire à four très chaud jusqu'à ce que les bords dorent.", badge: "⏱ 10 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir tiède, roulé, au petit-déjeuner.", badge: null }
+    ]
+  },
 });

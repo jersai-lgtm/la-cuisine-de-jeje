@@ -1305,4 +1305,78 @@ Object.assign(recettes, {
       { icone: "🌿", titre: "Servir", detail: "Parsemer de basilic, servir tiède ou froid en parts.", badge: null }
     ]
   },
+  syrniki: {
+    nom: "Syrniki",
+    cat: "brunch",
+    pays: "russie",
+    dateAjout: "2026-06-08T20:15:00",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥞",
+    description: "Les galettes russes au fromage blanc, dorées à la poêle, servies avec confiture ou crème.",
+    tableauSyrniki: [
+      { nb: 1, fromagefrais: "80 g", farine: "20 g", oeuf: "1", sucre: "10 g", vanille: "1 pincée", beurre: "10 g" },
+      { nb: 2, fromagefrais: "160 g", farine: "40 g", oeuf: "1", sucre: "20 g", vanille: "1 pincée", beurre: "20 g" },
+      { nb: 3, fromagefrais: "240 g", farine: "60 g", oeuf: "2", sucre: "30 g", vanille: "1 pincée", beurre: "30 g" },
+      { nb: 4, fromagefrais: "320 g", farine: "80 g", oeuf: "2", sucre: "40 g", vanille: "1 pincée", beurre: "40 g" },
+      { nb: 5, fromagefrais: "400 g", farine: "100 g", oeuf: "3", sucre: "50 g", vanille: "1 pincée", beurre: "50 g" },
+      { nb: 6, fromagefrais: "480 g", farine: "120 g", oeuf: "3", sucre: "60 g", vanille: "2 pincées", beurre: "60 g" },
+      { nb: 7, fromagefrais: "560 g", farine: "140 g", oeuf: "4", sucre: "70 g", vanille: "2 pincées", beurre: "70 g" },
+      { nb: 8, fromagefrais: "640 g", farine: "160 g", oeuf: "4", sucre: "80 g", vanille: "2 pincées", beurre: "80 g" },
+      { nb: 9, fromagefrais: "720 g", farine: "180 g", oeuf: "5", sucre: "90 g", vanille: "2 pincées", beurre: "90 g" },
+      { nb: 10, fromagefrais: "800 g", farine: "200 g", oeuf: "5", sucre: "100 g", vanille: "2 pincées", beurre: "100 g" },
+      { nb: 11, fromagefrais: "880 g", farine: "220 g", oeuf: "6", sucre: "110 g", vanille: "3 pincées", beurre: "110 g" },
+      { nb: 12, fromagefrais: "960 g", farine: "240 g", oeuf: "6", sucre: "120 g", vanille: "3 pincées", beurre: "120 g" },
+      { nb: 13, fromagefrais: "1040 g", farine: "260 g", oeuf: "7", sucre: "130 g", vanille: "3 pincées", beurre: "130 g" },
+      { nb: 14, fromagefrais: "1120 g", farine: "280 g", oeuf: "7", sucre: "140 g", vanille: "3 pincées", beurre: "140 g" },
+      { nb: 15, fromagefrais: "1200 g", farine: "300 g", oeuf: "8", sucre: "150 g", vanille: "3 pincées", beurre: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Pâte", detail: "Mélanger fromage blanc égoutté, œuf, sucre et farine. ASTUCE CHEF : égoutte bien le fromage blanc, une pâte trop humide donnerait des galettes qui s'étalent.", badge: null },
+      { icone: "🟡", titre: "Former", detail: "Façonner de petits palets et fariner légèrement.", badge: null },
+      { icone: "🍳", titre: "Dorer", detail: "Dorer à la poêle dans le beurre, des deux côtés.", badge: "⏱ 8 min" },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur papier absorbant.", badge: null },
+      { icone: "🍓", titre: "Garnir", detail: "Servir avec confiture, miel ou crème.", badge: null },
+      { icone: "🍽️", titre: "Déguster", detail: "Déguster chaud au petit-déjeuner.", badge: null }
+    ]
+  },
+  idli: {
+    nom: "Idli",
+    cat: "brunch",
+    pays: "inde",
+    dateAjout: "2026-06-08T20:48:00",
+    base: 4,
+    temps: "30 min + fermentation",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍚",
+    description: "Les galettes de riz vapeur du sud de l'Inde, moelleuses et légèrement acidulées, servies avec chutney.",
+    tableauIdli: [
+      { nb: 1, riz: "40 g", lentillesnoires: "20 g", fenugrec: "1 g", sel: "1 pincée" },
+      { nb: 2, riz: "80 g", lentillesnoires: "40 g", fenugrec: "2 g", sel: "1 pincée" },
+      { nb: 3, riz: "120 g", lentillesnoires: "60 g", fenugrec: "3 g", sel: "1 pincée" },
+      { nb: 4, riz: "160 g", lentillesnoires: "80 g", fenugrec: "4 g", sel: "1 pincée" },
+      { nb: 5, riz: "200 g", lentillesnoires: "100 g", fenugrec: "5 g", sel: "1 pincée" },
+      { nb: 6, riz: "240 g", lentillesnoires: "120 g", fenugrec: "6 g", sel: "2 pincées" },
+      { nb: 7, riz: "280 g", lentillesnoires: "140 g", fenugrec: "7 g", sel: "2 pincées" },
+      { nb: 8, riz: "320 g", lentillesnoires: "160 g", fenugrec: "8 g", sel: "2 pincées" },
+      { nb: 9, riz: "360 g", lentillesnoires: "180 g", fenugrec: "9 g", sel: "2 pincées" },
+      { nb: 10, riz: "400 g", lentillesnoires: "200 g", fenugrec: "10 g", sel: "2 pincées" },
+      { nb: 11, riz: "440 g", lentillesnoires: "220 g", fenugrec: "11 g", sel: "3 pincées" },
+      { nb: 12, riz: "480 g", lentillesnoires: "240 g", fenugrec: "12 g", sel: "3 pincées" },
+      { nb: 13, riz: "520 g", lentillesnoires: "260 g", fenugrec: "13 g", sel: "3 pincées" },
+      { nb: 14, riz: "560 g", lentillesnoires: "280 g", fenugrec: "14 g", sel: "3 pincées" },
+      { nb: 15, riz: "600 g", lentillesnoires: "300 g", fenugrec: "15 g", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Tremper", detail: "Tremper riz et lentilles séparément.", badge: "⏱ 6 h" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer en pâte lisse, mélanger.", badge: null },
+      { icone: "🫧", titre: "Fermenter", detail: "Laisser fermenter la pâte jusqu'à ce qu'elle double. ASTUCE CHEF : la fermentation (une nuit au chaud) est essentielle : c'est elle qui rend les idli aérés et légèrement acidulés.", badge: "⏱ 8 h" },
+      { icone: "🧂", titre: "Saler", detail: "Saler la pâte fermentée.", badge: null },
+      { icone: "♨️", titre: "Vapeur", detail: "Verser dans les moules et cuire à la vapeur.", badge: "⏱ 12 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Démouler et servir avec chutney et sambar.", badge: null }
+    ]
+  },
 });

@@ -2078,4 +2078,41 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Servir", detail: "Servir avec quartiers de citron vert.", badge: null }
     ]
   },
+  bunbohue: {
+    nom: "Bún Bò Huế",
+    cat: "soupes",
+    pays: "vietnam",
+    dateAjout: "2026-06-08T20:40:00",
+    base: 4,
+    temps: "1 h 30",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍜",
+    description: "La soupe de nouilles épicée de Hué, au bœuf et à la citronnelle, plus relevée que le pho.",
+    tableauBunBoHue: [
+      { nb: 1, boeuf: "90 g", vermicelle: "60 g", citronnelle: "4 g", oignon: "30 g", piment: "3 g", saucePoisson: "10 ml", germes: "30 g" },
+      { nb: 2, boeuf: "180 g", vermicelle: "120 g", citronnelle: "8 g", oignon: "60 g", piment: "6 g", saucePoisson: "20 ml", germes: "60 g" },
+      { nb: 3, boeuf: "270 g", vermicelle: "180 g", citronnelle: "12 g", oignon: "90 g", piment: "9 g", saucePoisson: "30 ml", germes: "90 g" },
+      { nb: 4, boeuf: "360 g", vermicelle: "240 g", citronnelle: "16 g", oignon: "120 g", piment: "12 g", saucePoisson: "40 ml", germes: "120 g" },
+      { nb: 5, boeuf: "450 g", vermicelle: "300 g", citronnelle: "20 g", oignon: "150 g", piment: "15 g", saucePoisson: "50 ml", germes: "150 g" },
+      { nb: 6, boeuf: "540 g", vermicelle: "360 g", citronnelle: "24 g", oignon: "180 g", piment: "18 g", saucePoisson: "60 ml", germes: "180 g" },
+      { nb: 7, boeuf: "630 g", vermicelle: "420 g", citronnelle: "28 g", oignon: "210 g", piment: "21 g", saucePoisson: "70 ml", germes: "210 g" },
+      { nb: 8, boeuf: "720 g", vermicelle: "480 g", citronnelle: "32 g", oignon: "240 g", piment: "24 g", saucePoisson: "80 ml", germes: "240 g" },
+      { nb: 9, boeuf: "810 g", vermicelle: "540 g", citronnelle: "36 g", oignon: "270 g", piment: "27 g", saucePoisson: "90 ml", germes: "270 g" },
+      { nb: 10, boeuf: "900 g", vermicelle: "600 g", citronnelle: "40 g", oignon: "300 g", piment: "30 g", saucePoisson: "100 ml", germes: "300 g" },
+      { nb: 11, boeuf: "990 g", vermicelle: "660 g", citronnelle: "44 g", oignon: "330 g", piment: "33 g", saucePoisson: "110 ml", germes: "330 g" },
+      { nb: 12, boeuf: "1080 g", vermicelle: "720 g", citronnelle: "48 g", oignon: "360 g", piment: "36 g", saucePoisson: "120 ml", germes: "360 g" },
+      { nb: 13, boeuf: "1170 g", vermicelle: "780 g", citronnelle: "52 g", oignon: "390 g", piment: "39 g", saucePoisson: "130 ml", germes: "390 g" },
+      { nb: 14, boeuf: "1260 g", vermicelle: "840 g", citronnelle: "56 g", oignon: "420 g", piment: "42 g", saucePoisson: "140 ml", germes: "420 g" },
+      { nb: 15, boeuf: "1350 g", vermicelle: "900 g", citronnelle: "60 g", oignon: "450 g", piment: "45 g", saucePoisson: "150 ml", germes: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Bouillon", detail: "Mijoter longuement le bœuf avec citronnelle et oignon.", badge: "⏱ 1 h" },
+      { icone: "🌶️", titre: "Pimenter", detail: "Préparer une huile de piment-citronnelle. ASTUCE CHEF : la couche d'huile rouge de piment et citronnelle en surface est la signature visuelle et gustative du bún bò Huế.", badge: null },
+      { icone: "🍜", titre: "Nouilles", detail: "Cuire les vermicelles épais.", badge: "⏱ 8 min" },
+      { icone: "🥩", titre: "Trancher", detail: "Trancher le bœuf cuit.", badge: null },
+      { icone: "🥣", titre: "Dresser", detail: "Répartir nouilles et bœuf dans les bols.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Verser le bouillon, ajouter germes et herbes.", badge: null }
+    ]
+  },
 });
