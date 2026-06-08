@@ -10327,4 +10327,78 @@ Object.assign(recettes, {
       { icone: "🥪", titre: "Garnir", detail: "Garnir les baos de porc, concombre et oignon nouveau.", badge: null }
     ]
   },
+  nasilemak: {
+    nom: "Nasi Lemak",
+    cat: "plats",
+    pays: "malaisie",
+    dateAjout: "2026-06-08T19:06:00",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍚",
+    description: "Le plat national malaisien : riz parfumé au lait de coco servi avec sambal, anchois croustillants, cacahuètes et œuf.",
+    tableauNasiLemak: [
+      { nb: 1, riz: "60 g", laitcoco: "40 ml", anchois: "10 g", cacahuete: "10 g", oeuf: "1", concombre: "30 g", sambal: "15 g", oignon: "20 g", citronnelle: "2 g" },
+      { nb: 2, riz: "120 g", laitcoco: "80 ml", anchois: "20 g", cacahuete: "20 g", oeuf: "1", concombre: "60 g", sambal: "30 g", oignon: "40 g", citronnelle: "4 g" },
+      { nb: 3, riz: "180 g", laitcoco: "120 ml", anchois: "30 g", cacahuete: "30 g", oeuf: "2", concombre: "90 g", sambal: "45 g", oignon: "60 g", citronnelle: "6 g" },
+      { nb: 4, riz: "240 g", laitcoco: "160 ml", anchois: "40 g", cacahuete: "40 g", oeuf: "2", concombre: "120 g", sambal: "60 g", oignon: "80 g", citronnelle: "8 g" },
+      { nb: 5, riz: "300 g", laitcoco: "200 ml", anchois: "50 g", cacahuete: "50 g", oeuf: "3", concombre: "150 g", sambal: "75 g", oignon: "100 g", citronnelle: "10 g" },
+      { nb: 6, riz: "360 g", laitcoco: "240 ml", anchois: "60 g", cacahuete: "60 g", oeuf: "3", concombre: "180 g", sambal: "90 g", oignon: "120 g", citronnelle: "12 g" },
+      { nb: 7, riz: "420 g", laitcoco: "280 ml", anchois: "70 g", cacahuete: "70 g", oeuf: "4", concombre: "210 g", sambal: "105 g", oignon: "140 g", citronnelle: "14 g" },
+      { nb: 8, riz: "480 g", laitcoco: "320 ml", anchois: "80 g", cacahuete: "80 g", oeuf: "4", concombre: "240 g", sambal: "120 g", oignon: "160 g", citronnelle: "16 g" },
+      { nb: 9, riz: "540 g", laitcoco: "360 ml", anchois: "90 g", cacahuete: "90 g", oeuf: "5", concombre: "270 g", sambal: "135 g", oignon: "180 g", citronnelle: "18 g" },
+      { nb: 10, riz: "600 g", laitcoco: "400 ml", anchois: "100 g", cacahuete: "100 g", oeuf: "5", concombre: "300 g", sambal: "150 g", oignon: "200 g", citronnelle: "20 g" },
+      { nb: 11, riz: "660 g", laitcoco: "440 ml", anchois: "110 g", cacahuete: "110 g", oeuf: "6", concombre: "330 g", sambal: "165 g", oignon: "220 g", citronnelle: "22 g" },
+      { nb: 12, riz: "720 g", laitcoco: "480 ml", anchois: "120 g", cacahuete: "120 g", oeuf: "6", concombre: "360 g", sambal: "180 g", oignon: "240 g", citronnelle: "24 g" },
+      { nb: 13, riz: "780 g", laitcoco: "520 ml", anchois: "130 g", cacahuete: "130 g", oeuf: "7", concombre: "390 g", sambal: "195 g", oignon: "260 g", citronnelle: "26 g" },
+      { nb: 14, riz: "840 g", laitcoco: "560 ml", anchois: "140 g", cacahuete: "140 g", oeuf: "7", concombre: "420 g", sambal: "210 g", oignon: "280 g", citronnelle: "28 g" },
+      { nb: 15, riz: "900 g", laitcoco: "600 ml", anchois: "150 g", cacahuete: "150 g", oeuf: "8", concombre: "450 g", sambal: "225 g", oignon: "300 g", citronnelle: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz coco", detail: "Cuire le riz dans l'eau et le lait de coco avec la citronnelle. ASTUCE CHEF : ajoute un brin de citronnelle écrasé et une lichette de lait de coco en fin de cuisson pour un riz ultra-parfumé.", badge: "⏱ 20 min" },
+      { icone: "🌶️", titre: "Sambal", detail: "Faire revenir le sambal (pâte de piment) avec l'oignon.", badge: "⏱ 8 min" },
+      { icone: "🐟", titre: "Anchois", detail: "Frire les petits anchois et les cacahuètes jusqu'au croustillant.", badge: "⏱ 6 min" },
+      { icone: "🥚", titre: "Œuf", detail: "Cuire un œuf (dur ou au plat).", badge: "⏱ 8 min" },
+      { icone: "🥒", titre: "Garnitures", detail: "Couper le concombre en tranches.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dresser le riz entouré de sambal, anchois, cacahuètes, œuf et concombre.", badge: null }
+    ]
+  },
+  buncha: {
+    nom: "Bun Cha",
+    cat: "plats",
+    pays: "vietnam",
+    dateAjout: "2026-06-08T19:07:00",
+    base: 4,
+    temps: "40 min + marinade",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍜",
+    description: "Le plat hanoïen de boulettes de porc grillées, vermicelles de riz et sauce nuoc cham, avec herbes fraîches.",
+    tableauBunCha: [
+      { nb: 1, porc: "90 g", vermicelle: "50 g", saucePoisson: "12 ml", citronvert: "10 ml", sucre: "10 g", ail: "1", carotte: "30 g", menthe: "5 g", salade: "30 g", citronnelle: "2 g" },
+      { nb: 2, porc: "180 g", vermicelle: "100 g", saucePoisson: "24 ml", citronvert: "20 ml", sucre: "20 g", ail: "1", carotte: "60 g", menthe: "10 g", salade: "60 g", citronnelle: "4 g" },
+      { nb: 3, porc: "270 g", vermicelle: "150 g", saucePoisson: "36 ml", citronvert: "30 ml", sucre: "30 g", ail: "2", carotte: "90 g", menthe: "15 g", salade: "90 g", citronnelle: "6 g" },
+      { nb: 4, porc: "360 g", vermicelle: "200 g", saucePoisson: "48 ml", citronvert: "40 ml", sucre: "40 g", ail: "2", carotte: "120 g", menthe: "20 g", salade: "120 g", citronnelle: "8 g" },
+      { nb: 5, porc: "450 g", vermicelle: "250 g", saucePoisson: "60 ml", citronvert: "50 ml", sucre: "50 g", ail: "3", carotte: "150 g", menthe: "25 g", salade: "150 g", citronnelle: "10 g" },
+      { nb: 6, porc: "540 g", vermicelle: "300 g", saucePoisson: "72 ml", citronvert: "60 ml", sucre: "60 g", ail: "3", carotte: "180 g", menthe: "30 g", salade: "180 g", citronnelle: "12 g" },
+      { nb: 7, porc: "630 g", vermicelle: "350 g", saucePoisson: "84 ml", citronvert: "70 ml", sucre: "70 g", ail: "4", carotte: "210 g", menthe: "35 g", salade: "210 g", citronnelle: "14 g" },
+      { nb: 8, porc: "720 g", vermicelle: "400 g", saucePoisson: "96 ml", citronvert: "80 ml", sucre: "80 g", ail: "4", carotte: "240 g", menthe: "40 g", salade: "240 g", citronnelle: "16 g" },
+      { nb: 9, porc: "810 g", vermicelle: "450 g", saucePoisson: "108 ml", citronvert: "90 ml", sucre: "90 g", ail: "5", carotte: "270 g", menthe: "45 g", salade: "270 g", citronnelle: "18 g" },
+      { nb: 10, porc: "900 g", vermicelle: "500 g", saucePoisson: "120 ml", citronvert: "100 ml", sucre: "100 g", ail: "5", carotte: "300 g", menthe: "50 g", salade: "300 g", citronnelle: "20 g" },
+      { nb: 11, porc: "990 g", vermicelle: "550 g", saucePoisson: "132 ml", citronvert: "110 ml", sucre: "110 g", ail: "6", carotte: "330 g", menthe: "55 g", salade: "330 g", citronnelle: "22 g" },
+      { nb: 12, porc: "1080 g", vermicelle: "600 g", saucePoisson: "144 ml", citronvert: "120 ml", sucre: "120 g", ail: "6", carotte: "360 g", menthe: "60 g", salade: "360 g", citronnelle: "24 g" },
+      { nb: 13, porc: "1170 g", vermicelle: "650 g", saucePoisson: "156 ml", citronvert: "130 ml", sucre: "130 g", ail: "7", carotte: "390 g", menthe: "65 g", salade: "390 g", citronnelle: "26 g" },
+      { nb: 14, porc: "1260 g", vermicelle: "700 g", saucePoisson: "168 ml", citronvert: "140 ml", sucre: "140 g", ail: "7", carotte: "420 g", menthe: "70 g", salade: "420 g", citronnelle: "28 g" },
+      { nb: 15, porc: "1350 g", vermicelle: "750 g", saucePoisson: "180 ml", citronvert: "150 ml", sucre: "150 g", ail: "8", carotte: "450 g", menthe: "75 g", salade: "450 g", citronnelle: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐖", titre: "Mariner", detail: "Mariner le porc haché avec ail, citronnelle, sucre et sauce poisson. ASTUCE CHEF : laisse mariner au moins 30 min — c'est ce qui caramélise et parfume les boulettes à la cuisson.", badge: "⏱ 30 min" },
+      { icone: "🍢", titre: "Façonner", detail: "Former de petites boulettes ou galettes.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller le porc jusqu'à ce qu'il caramélise.", badge: "⏱ 10 min" },
+      { icone: "🍜", titre: "Vermicelles", detail: "Cuire les vermicelles de riz et les rincer à l'eau froide.", badge: "⏱ 6 min" },
+      { icone: "🥣", titre: "Nuoc cham", detail: "Préparer la sauce : eau, sucre, sauce poisson, citron vert, ail, carotte râpée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir le porc dans la sauce, avec vermicelles, salade et herbes à côté.", badge: null }
+    ]
+  },
 });

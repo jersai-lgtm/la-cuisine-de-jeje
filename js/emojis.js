@@ -268,7 +268,8 @@ const NOMS_PROPRES_INGR = {
   whiskey: "Whiskey",
   worcestershire: "Sauce Worcestershire",
   // === Ajouts (recettes mix juin) ===
-  attieke: "Attiéké", bacon: "Bacon", cinqepices: "Cinq-épices", fromagebleu: "Fromage bleu", pateArachide: "Pâte d\u0027arachide", radis: "Radis"
+  attieke: "Attiéké", bacon: "Bacon", cinqepices: "Cinq-épices", fromagebleu: "Fromage bleu", pateArachide: "Pâte d\u0027arachide", radis: "Radis",
+  melassegrenade: "Mélasse de grenade", zaatar: "Za\u0027atar"
 };
 
 // Renvoie TOUJOURS un émoji pour un nom/clé d'ingrédient (jamais vide)

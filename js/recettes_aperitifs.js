@@ -1594,4 +1594,78 @@ tapenade: {
       { icone: "🍽️", titre: "Servir", detail: "Servir tièdes, avec une sauce ranch ou yaourt.", badge: null }
     ]
   },
+  labneh: {
+    nom: "Labneh",
+    cat: "aperitifs",
+    pays: "liban",
+    dateAjout: "2026-06-08T19:04:00",
+    base: 4,
+    temps: "15 min + égouttage",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Le fromage frais libanais de yaourt égoutté, crémeux, arrosé d'huile d'olive et de za'atar.",
+    tableauLabneh: [
+      { nb: 1, yaourt: "90 g", huileOlive: "10 ml", ail: "1", menthe: "2 g", sel: "1 pincée", zaatar: "2 g" },
+      { nb: 2, yaourt: "180 g", huileOlive: "20 ml", ail: "1", menthe: "4 g", sel: "1 pincée", zaatar: "4 g" },
+      { nb: 3, yaourt: "270 g", huileOlive: "30 ml", ail: "1", menthe: "6 g", sel: "1 pincée", zaatar: "6 g" },
+      { nb: 4, yaourt: "360 g", huileOlive: "40 ml", ail: "1", menthe: "8 g", sel: "1 pincée", zaatar: "8 g" },
+      { nb: 5, yaourt: "450 g", huileOlive: "50 ml", ail: "2", menthe: "10 g", sel: "1 pincée", zaatar: "10 g" },
+      { nb: 6, yaourt: "540 g", huileOlive: "60 ml", ail: "2", menthe: "12 g", sel: "2 pincées", zaatar: "12 g" },
+      { nb: 7, yaourt: "630 g", huileOlive: "70 ml", ail: "2", menthe: "14 g", sel: "2 pincées", zaatar: "14 g" },
+      { nb: 8, yaourt: "720 g", huileOlive: "80 ml", ail: "2", menthe: "16 g", sel: "2 pincées", zaatar: "16 g" },
+      { nb: 9, yaourt: "810 g", huileOlive: "90 ml", ail: "3", menthe: "18 g", sel: "2 pincées", zaatar: "18 g" },
+      { nb: 10, yaourt: "900 g", huileOlive: "100 ml", ail: "3", menthe: "20 g", sel: "2 pincées", zaatar: "20 g" },
+      { nb: 11, yaourt: "990 g", huileOlive: "110 ml", ail: "3", menthe: "22 g", sel: "3 pincées", zaatar: "22 g" },
+      { nb: 12, yaourt: "1080 g", huileOlive: "120 ml", ail: "4", menthe: "24 g", sel: "3 pincées", zaatar: "24 g" },
+      { nb: 13, yaourt: "1170 g", huileOlive: "130 ml", ail: "4", menthe: "26 g", sel: "3 pincées", zaatar: "26 g" },
+      { nb: 14, yaourt: "1260 g", huileOlive: "140 ml", ail: "4", menthe: "28 g", sel: "3 pincées", zaatar: "28 g" },
+      { nb: 15, yaourt: "1350 g", huileOlive: "150 ml", ail: "5", menthe: "30 g", sel: "3 pincées", zaatar: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧂", titre: "Saler", detail: "Mélanger le yaourt (idéalement grec) avec le sel.", badge: null },
+      { icone: "🫗", titre: "Égoutter", detail: "Verser dans une étamine et laisser égoutter au frais. ASTUCE CHEF : plus tu laisses égoutter longtemps (jusqu'à 24 h), plus le labneh devient ferme — on peut alors en faire des boules à rouler dans les herbes.", badge: "⏱ 12 h" },
+      { icone: "🧄", titre: "Aromatiser", detail: "Incorporer un peu d'ail râpé et la menthe.", badge: null },
+      { icone: "🍥", titre: "Dresser", detail: "Étaler le labneh dans une assiette en formant un creux.", badge: null },
+      { icone: "🫒", titre: "Garnir", detail: "Arroser d'huile d'olive et saupoudrer de za'atar.", badge: null },
+      { icone: "🫓", titre: "Servir", detail: "Servir frais avec du pain pita.", badge: null }
+    ]
+  },
+  muhammara: {
+    nom: "Muhammara",
+    cat: "aperitifs",
+    pays: "monde",
+    dateAjout: "2026-06-08T19:05:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌶️",
+    description: "Le dip syrien aux poivrons rôtis et noix, relevé de mélasse de grenade — doux, fumé et légèrement piquant.",
+    tableauMuhammara: [
+      { nb: 1, poivron: "50 g", noix: "25 g", chapelure: "10 g", ail: "1", melassegrenade: "8 ml", huileOlive: "15 ml", cumin: "1 g", piment: "1 g" },
+      { nb: 2, poivron: "100 g", noix: "50 g", chapelure: "20 g", ail: "1", melassegrenade: "16 ml", huileOlive: "30 ml", cumin: "2 g", piment: "2 g" },
+      { nb: 3, poivron: "150 g", noix: "75 g", chapelure: "30 g", ail: "2", melassegrenade: "24 ml", huileOlive: "45 ml", cumin: "3 g", piment: "3 g" },
+      { nb: 4, poivron: "200 g", noix: "100 g", chapelure: "40 g", ail: "2", melassegrenade: "32 ml", huileOlive: "60 ml", cumin: "4 g", piment: "4 g" },
+      { nb: 5, poivron: "250 g", noix: "125 g", chapelure: "50 g", ail: "3", melassegrenade: "40 ml", huileOlive: "75 ml", cumin: "5 g", piment: "5 g" },
+      { nb: 6, poivron: "300 g", noix: "150 g", chapelure: "60 g", ail: "3", melassegrenade: "48 ml", huileOlive: "90 ml", cumin: "6 g", piment: "6 g" },
+      { nb: 7, poivron: "350 g", noix: "175 g", chapelure: "70 g", ail: "4", melassegrenade: "56 ml", huileOlive: "105 ml", cumin: "7 g", piment: "7 g" },
+      { nb: 8, poivron: "400 g", noix: "200 g", chapelure: "80 g", ail: "4", melassegrenade: "64 ml", huileOlive: "120 ml", cumin: "8 g", piment: "8 g" },
+      { nb: 9, poivron: "450 g", noix: "225 g", chapelure: "90 g", ail: "5", melassegrenade: "72 ml", huileOlive: "135 ml", cumin: "9 g", piment: "9 g" },
+      { nb: 10, poivron: "500 g", noix: "250 g", chapelure: "100 g", ail: "5", melassegrenade: "80 ml", huileOlive: "150 ml", cumin: "10 g", piment: "10 g" },
+      { nb: 11, poivron: "550 g", noix: "275 g", chapelure: "110 g", ail: "6", melassegrenade: "88 ml", huileOlive: "165 ml", cumin: "11 g", piment: "11 g" },
+      { nb: 12, poivron: "600 g", noix: "300 g", chapelure: "120 g", ail: "6", melassegrenade: "96 ml", huileOlive: "180 ml", cumin: "12 g", piment: "12 g" },
+      { nb: 13, poivron: "650 g", noix: "325 g", chapelure: "130 g", ail: "7", melassegrenade: "104 ml", huileOlive: "195 ml", cumin: "13 g", piment: "13 g" },
+      { nb: 14, poivron: "700 g", noix: "350 g", chapelure: "140 g", ail: "7", melassegrenade: "112 ml", huileOlive: "210 ml", cumin: "14 g", piment: "14 g" },
+      { nb: 15, poivron: "750 g", noix: "375 g", chapelure: "150 g", ail: "8", melassegrenade: "120 ml", huileOlive: "225 ml", cumin: "15 g", piment: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Rôtir", detail: "Rôtir les poivrons rouges jusqu'à ce que la peau noircisse, puis les peler.", badge: "⏱ 25 min" },
+      { icone: "🌰", titre: "Noix", detail: "Torréfier les noix pour intensifier leur goût. ASTUCE CHEF : garde quelques éclats de noix pour les ajouter à la fin — ça apporte du croquant au dip.", badge: "⏱ 5 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer poivrons, noix, ail, chapelure et épices.", badge: null },
+      { icone: "🍷", titre: "Grenade", detail: "Ajouter la mélasse de grenade pour l'aigre-doux.", badge: null },
+      { icone: "🫒", titre: "Monter", detail: "Détendre avec l'huile d'olive jusqu'à onctueux.", badge: null },
+      { icone: "🫓", titre: "Servir", detail: "Servir avec du pain pita et un filet d'huile.", badge: null }
+    ]
+  },
 });
