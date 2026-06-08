@@ -1518,4 +1518,43 @@ tapenade: {
       { icone: "🌿", titre: "Servir", detail: "Saupoudrer d'origan et servir aussitôt, bien chaud et fondant.", badge: null }
     ]
   },
+  panisses: {
+    nom: "Panisses",
+    cat: "aperitifs",
+    pays: "france",
+    dateAjout: "2026-06-08T10:14:00",
+    base: 4,
+    temps: "30 min + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍟",
+    description: "Les frites de pois chiche marseillaises : une polenta de farine de pois chiche prise, découpée en bâtonnets et frite jusqu'au croustillant doré. Croquant dehors, fondant dedans.",
+    tableauPanisses: [
+      { nb: 1, farinepoischiche: "40 g", eau: "120 ml", huileolive: "6 ml", sel: "1 pincée" },
+      { nb: 2, farinepoischiche: "80 g", eau: "240 ml", huileolive: "12 ml", sel: "1 pincée" },
+      { nb: 3, farinepoischiche: "120 g", eau: "360 ml", huileolive: "18 ml", sel: "1 pincée" },
+      { nb: 4, farinepoischiche: "160 g", eau: "480 ml", huileolive: "24 ml", sel: "1 pincée" },
+      { nb: 5, farinepoischiche: "200 g", eau: "600 ml", huileolive: "30 ml", sel: "1 pincée" },
+      { nb: 6, farinepoischiche: "240 g", eau: "720 ml", huileolive: "36 ml", sel: "2 pincées" },
+      { nb: 7, farinepoischiche: "280 g", eau: "840 ml", huileolive: "42 ml", sel: "2 pincées" },
+      { nb: 8, farinepoischiche: "320 g", eau: "960 ml", huileolive: "48 ml", sel: "2 pincées" },
+      { nb: 9, farinepoischiche: "360 g", eau: "1080 ml", huileolive: "54 ml", sel: "2 pincées" },
+      { nb: 10, farinepoischiche: "400 g", eau: "1200 ml", huileolive: "60 ml", sel: "2 pincées" },
+      { nb: 11, farinepoischiche: "440 g", eau: "1320 ml", huileolive: "66 ml", sel: "3 pincées" },
+      { nb: 12, farinepoischiche: "480 g", eau: "1440 ml", huileolive: "72 ml", sel: "3 pincées" },
+      { nb: 13, farinepoischiche: "520 g", eau: "1560 ml", huileolive: "78 ml", sel: "3 pincées" },
+      { nb: 14, farinepoischiche: "560 g", eau: "1680 ml", huileolive: "84 ml", sel: "3 pincées" },
+      { nb: 15, farinepoischiche: "600 g", eau: "1800 ml", huileolive: "90 ml", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Délayer", detail: "Délayer la farine de pois chiche dans l'eau froide en fouettant pour éviter les grumeaux.", badge: "⏱ 4 min" },
+      { icone: "♨️", titre: "Cuire", detail: "Cuire à feu moyen sans cesser de remuer jusqu'à une pâte très épaisse. ASTUCE CHEF : remuer sans arrêt avec une cuillère en bois, la pâte attache vite ; elle est prête quand elle se décolle des parois.", badge: "⏱ 8 min" },
+      { icone: "📏", titre: "Étaler", detail: "Étaler la pâte chaude sur une plaque huilée, lisser sur 1 cm.", badge: "⏱ 4 min" },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser prendre et refroidir complètement.", badge: "⏱ 30 min" },
+      { icone: "🔪", titre: "Couper", detail: "Détailler en bâtonnets type grosses frites.", badge: "⏱ 5 min" },
+      { icone: "🌡️", titre: "Chauffer l'huile", detail: "Porter l'huile de friture à 180°C.", badge: "⏱ 5 min" },
+      { icone: "🔥", titre: "Frire", detail: "Frire les panisses jusqu'à doré et croustillant.", badge: "⏱ 5 min" },
+      { icone: "🧂", titre: "Servir", detail: "Égoutter, saler et servir aussitôt, bien chaud.", badge: null }
+    ]
+  },
 });
