@@ -3720,42 +3720,4 @@ Object.assign(recettes, {
       { icone: "⏳", titre: "Reposer", detail: "Laisser durcir plusieurs heures avant de couper en tranches.", badge: "⏱ 4 h" }
     ]
   },
-  patetartiner: {
-    nom: "Pâte à Tartiner Choco-Noisette",
-    cat: "desserts",
-    pays: "france",
-    dateAjout: "2026-06-08T15:30:00",
-    base: 6,
-    temps: "30 min",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🍫",
-    description: "La pâte à tartiner choco-noisette maison : noisettes torréfiées mixées en praliné, mariées au chocolat pour une texture onctueuse, sans huile de palme ni additifs. Bien plus parfumée que celle du commerce.",
-    tableauPateTartiner: [
-      { nb: 1, noisettes: "35 g", chocolatlait: "30 g", sucreglace: "18 g", huile: "10 ml", laitpoudre: "8 g", cacao: "5 g" },
-      { nb: 2, noisettes: "70 g", chocolatlait: "60 g", sucreglace: "36 g", huile: "20 ml", laitpoudre: "16 g", cacao: "10 g" },
-      { nb: 3, noisettes: "105 g", chocolatlait: "90 g", sucreglace: "54 g", huile: "30 ml", laitpoudre: "24 g", cacao: "15 g" },
-      { nb: 4, noisettes: "140 g", chocolatlait: "120 g", sucreglace: "72 g", huile: "40 ml", laitpoudre: "32 g", cacao: "20 g" },
-      { nb: 5, noisettes: "175 g", chocolatlait: "150 g", sucreglace: "90 g", huile: "50 ml", laitpoudre: "40 g", cacao: "25 g" },
-      { nb: 6, noisettes: "210 g", chocolatlait: "180 g", sucreglace: "108 g", huile: "60 ml", laitpoudre: "48 g", cacao: "30 g" },
-      { nb: 7, noisettes: "245 g", chocolatlait: "210 g", sucreglace: "126 g", huile: "70 ml", laitpoudre: "56 g", cacao: "35 g" },
-      { nb: 8, noisettes: "280 g", chocolatlait: "240 g", sucreglace: "144 g", huile: "80 ml", laitpoudre: "64 g", cacao: "40 g" },
-      { nb: 9, noisettes: "315 g", chocolatlait: "270 g", sucreglace: "162 g", huile: "90 ml", laitpoudre: "72 g", cacao: "45 g" },
-      { nb: 10, noisettes: "350 g", chocolatlait: "300 g", sucreglace: "180 g", huile: "100 ml", laitpoudre: "80 g", cacao: "50 g" },
-      { nb: 11, noisettes: "385 g", chocolatlait: "330 g", sucreglace: "198 g", huile: "110 ml", laitpoudre: "88 g", cacao: "55 g" },
-      { nb: 12, noisettes: "420 g", chocolatlait: "360 g", sucreglace: "216 g", huile: "120 ml", laitpoudre: "96 g", cacao: "60 g" },
-      { nb: 13, noisettes: "455 g", chocolatlait: "390 g", sucreglace: "234 g", huile: "130 ml", laitpoudre: "104 g", cacao: "65 g" },
-      { nb: 14, noisettes: "490 g", chocolatlait: "420 g", sucreglace: "252 g", huile: "140 ml", laitpoudre: "112 g", cacao: "70 g" },
-      { nb: 15, noisettes: "525 g", chocolatlait: "450 g", sucreglace: "270 g", huile: "150 ml", laitpoudre: "120 g", cacao: "75 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🔥", titre: "Torréfier", detail: "Faire torréfier les noisettes au four à 160°C jusqu'à ce qu'elles dorent et embaument.", badge: "⏱ 12 min" },
-      { icone: "🤚", titre: "Émonder", detail: "Frotter les noisettes tièdes dans un torchon pour retirer un maximum de peau.", badge: "⏱ 4 min" },
-      { icone: "🌀", titre: "Praliné", detail: "Mixer longuement les noisettes seules jusqu'à obtenir une purée lisse et coulante. ASTUCE CHEF : continuer à mixer bien au-delà de la poudre : les noisettes vont relâcher leur huile et se transformer en pâte liquide, c'est ce praliné maison qui fait tout le parfum.", badge: "⏱ 6 min" },
-      { icone: "🍫", titre: "Fondre", detail: "Faire fondre le chocolat au lait doucement au bain-marie.", badge: "⏱ 4 min" },
-      { icone: "🥣", titre: "Mélanger", detail: "Réunir purée de noisettes, chocolat fondu, sucre glace, lait en poudre et cacao.", badge: "⏱ 3 min" },
-      { icone: "💧", titre: "Lisser", detail: "Ajouter l'huile neutre et mixer jusqu'à une texture lisse et brillante.", badge: "⏱ 2 min" },
-      { icone: "🫙", titre: "Mettre en pot", detail: "Verser dans un pot propre. Conserver à température ambiante (le froid la fige).", badge: "⏱ 2 min" }
-    ]
-  },
 });

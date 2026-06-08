@@ -510,6 +510,7 @@ function remplirRecords(s) {
   
   if (s.topCat) {
     const catEmojis = {
+      tartinables: "🍯",
       plats: "🍽️", desserts: "🍰", salades: "🥗", healthy: "💚", brunch: "🍳",
       boulangerie: "🥖", pizzas: "🍕", soupes: "🍲", entrees: "🫕", encas: "🥪",
     };
