@@ -326,11 +326,11 @@ Object.assign(recettes, {
       { nb: 8, farine: "800 g", oeufs: 8, sel: "1 pincée" },
       { nb: 9, farine: "900 g", oeufs: 9, sel: "1 pincée" },
       { nb: 10, farine: "1000 g", oeufs: 10, sel: "1 pincée" },
-      { nb: 11, farine: "1100 g", sel: "2.8 pincée" },
-      { nb: 12, farine: "1200 g", sel: "3 pincée" },
-      { nb: 13, farine: "1300 g", sel: "3.2 pincée" },
-      { nb: 14, farine: "1400 g", sel: "3.5 pincée" },
-      { nb: 15, farine: "1500 g", sel: "3.8 pincée" }
+      { nb: 11, farine: "1100 g", oeufs: 11, sel: "2.8 pincée" },
+      { nb: 12, farine: "1200 g", oeufs: 12, sel: "3 pincée" },
+      { nb: 13, farine: "1300 g", oeufs: 13, sel: "3.2 pincée" },
+      { nb: 14, farine: "1400 g", oeufs: 14, sel: "3.5 pincée" },
+      { nb: 15, farine: "1500 g", oeufs: 15, sel: "3.8 pincée" }
     ],
     ingredients: {
       "Farine (g)": 100,

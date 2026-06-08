@@ -1983,7 +1983,7 @@ function _collecterClesMenu(source, acc) {
 }
 
 // Ajoute toutes les recettes du menu courant (type "semaine" ou "thematique") à la liste de courses
-function ajouterMenuAuxCourses(type) {
+async function ajouterMenuAuxCourses(type) {
   if (!window.currentUser) { if (typeof ouvrirModalAuth === "function") ouvrirModalAuth(); return; }
 
   let source = null, personnes = 4;
@@ -2003,6 +2003,17 @@ function ajouterMenuAuxCourses(type) {
   if (cles.size === 0) { if (typeof afficherToast === "function") afficherToast("Aucune recette trouvée dans le menu."); return; }
 
   if (!window.userProfile.listeCourses) window.userProfile.listeCourses = [];
+
+  // Pop-up si la liste de courses contient déjà des recettes (évite d'empiler 2 menus)
+  if (window.userProfile.listeCourses.length > 0 && typeof confirmer === "function") {
+    const n = window.userProfile.listeCourses.length;
+    const vider = await confirmer(
+      `Votre liste de courses contient déjà ${n} recette${n > 1 ? "s" : ""}. Voulez-vous la vider avant d'ajouter ce menu ?`,
+      { titre: "🛒 Liste de courses", boutonOui: "Vider et ajouter", boutonNon: "Cumuler", dangereux: true }
+    );
+    if (vider) window.userProfile.listeCourses = [];
+  }
+
   let ajout = 0;
   cles.forEach(cle => {
     if (!window.userProfile.listeCourses.some(x => x.cle === cle)) {

@@ -23,11 +23,11 @@ Object.assign(recettes, {
       { nb: 8, farine: "500 g", oeufs: "8", lait: "1000 ml", eau: "200 ml", beurre: "100 g", sel: "1 pincée" },
       { nb: 9, farine: "560 g", oeufs: "9", lait: "1125 ml", eau: "225 ml", beurre: "110 g", sel: "1 pincée" },
       { nb: 10, farine: "625 g", oeufs: "10", lait: "1250 ml", eau: "250 ml", beurre: "125 g", sel: "1 pincée" },
-      { nb: 11, farine: "688 g", lait: "1375 ml", eau: "275 ml", beurre: "138 g", sel: "2.8 pincée" },
-      { nb: 12, farine: "750 g", lait: "1500 ml", eau: "300 ml", beurre: "150 g", sel: "3 pincée" },
-      { nb: 13, farine: "812 g", lait: "1625 ml", eau: "325 ml", beurre: "162 g", sel: "3.2 pincée" },
-      { nb: 14, farine: "875 g", lait: "1750 ml", eau: "350 ml", beurre: "175 g", sel: "3.5 pincée" },
-      { nb: 15, farine: "938 g", lait: "1875 ml", eau: "375 ml", beurre: "188 g", sel: "3.8 pincée" }
+      { nb: 11, farine: "688 g", oeufs: "11", lait: "1375 ml", eau: "275 ml", beurre: "138 g", sel: "2.8 pincée" },
+      { nb: 12, farine: "750 g", oeufs: "12", lait: "1500 ml", eau: "300 ml", beurre: "150 g", sel: "3 pincée" },
+      { nb: 13, farine: "812 g", oeufs: "13", lait: "1625 ml", eau: "325 ml", beurre: "162 g", sel: "3.2 pincée" },
+      { nb: 14, farine: "875 g", oeufs: "14", lait: "1750 ml", eau: "350 ml", beurre: "175 g", sel: "3.5 pincée" },
+      { nb: 15, farine: "938 g", oeufs: "15", lait: "1875 ml", eau: "375 ml", beurre: "188 g", sel: "3.8 pincée" }
     ],
     ingredients: {
       "Farine (g)": 250,
