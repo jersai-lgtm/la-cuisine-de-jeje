@@ -1231,4 +1231,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir bien doré et croustillant, avec des œufs ou du bacon. ASTUCE CHEF : ne tassez pas trop les galettes et laissez-les bien colorer avant de les retourner, sinon elles se cassent.", badge: null }
     ]
   },
+  congee: {
+    nom: "undefined",
+    cat: "brunch",
+    pays: "chine",
+    dateAjout: "2026-06-08T18:20:00",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🍚",
+    description: "Le porridge de riz chinois réconfortant, mijoté longuement et garni d'œuf, gingembre et oignon nouveau.",
+    tableauCongee: [
+      { nb: 1, rizrond: "40 g", eau: "250 ml", gingembre: "3 g", oignonNouveau: "8 g", saucesoja: "5 ml", oeuf: "1", sesame: "2 g" },
+      { nb: 2, rizrond: "80 g", eau: "500 ml", gingembre: "6 g", oignonNouveau: "16 g", saucesoja: "10 ml", oeuf: "1", sesame: "4 g" },
+      { nb: 3, rizrond: "120 g", eau: "750 ml", gingembre: "9 g", oignonNouveau: "24 g", saucesoja: "15 ml", oeuf: "2", sesame: "6 g" },
+      { nb: 4, rizrond: "160 g", eau: "1000 ml", gingembre: "12 g", oignonNouveau: "32 g", saucesoja: "20 ml", oeuf: "2", sesame: "8 g" },
+      { nb: 5, rizrond: "200 g", eau: "1250 ml", gingembre: "15 g", oignonNouveau: "40 g", saucesoja: "25 ml", oeuf: "3", sesame: "10 g" },
+      { nb: 6, rizrond: "240 g", eau: "1500 ml", gingembre: "18 g", oignonNouveau: "48 g", saucesoja: "30 ml", oeuf: "3", sesame: "12 g" },
+      { nb: 7, rizrond: "280 g", eau: "1750 ml", gingembre: "21 g", oignonNouveau: "56 g", saucesoja: "35 ml", oeuf: "4", sesame: "14 g" },
+      { nb: 8, rizrond: "320 g", eau: "2000 ml", gingembre: "24 g", oignonNouveau: "64 g", saucesoja: "40 ml", oeuf: "4", sesame: "16 g" },
+      { nb: 9, rizrond: "360 g", eau: "2250 ml", gingembre: "27 g", oignonNouveau: "72 g", saucesoja: "45 ml", oeuf: "5", sesame: "18 g" },
+      { nb: 10, rizrond: "400 g", eau: "2500 ml", gingembre: "30 g", oignonNouveau: "80 g", saucesoja: "50 ml", oeuf: "5", sesame: "20 g" },
+      { nb: 11, rizrond: "440 g", eau: "2750 ml", gingembre: "33 g", oignonNouveau: "88 g", saucesoja: "55 ml", oeuf: "6", sesame: "22 g" },
+      { nb: 12, rizrond: "480 g", eau: "3000 ml", gingembre: "36 g", oignonNouveau: "96 g", saucesoja: "60 ml", oeuf: "6", sesame: "24 g" },
+      { nb: 13, rizrond: "520 g", eau: "3250 ml", gingembre: "39 g", oignonNouveau: "104 g", saucesoja: "65 ml", oeuf: "7", sesame: "26 g" },
+      { nb: 14, rizrond: "560 g", eau: "3500 ml", gingembre: "42 g", oignonNouveau: "112 g", saucesoja: "70 ml", oeuf: "7", sesame: "28 g" },
+      { nb: 15, rizrond: "600 g", eau: "3750 ml", gingembre: "45 g", oignonNouveau: "120 g", saucesoja: "75 ml", oeuf: "8", sesame: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Rincer", detail: "Rincer le riz jusqu'à ce que l'eau soit claire.", badge: null },
+      { icone: "💧", titre: "Mijoter", detail: "Cuire le riz dans beaucoup d'eau à feu doux, en remuant. ASTUCE CHEF : remue de temps en temps et laisse mijoter au moins 45 min — c'est la lente libération de l'amidon qui donne la texture crémeuse.", badge: "⏱ 45 min" },
+      { icone: "🫚", titre: "Gingembre", detail: "Ajouter le gingembre râpé en cours de cuisson.", badge: null },
+      { icone: "🥚", titre: "Œuf", detail: "Incorporer un œuf battu en filet ou poser un œuf mollet dessus.", badge: null },
+      { icone: "🌿", titre: "Garnir", detail: "Parsemer d'oignon nouveau et de sésame.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arroser de sauce soja et servir bien chaud.", badge: null }
+    ]
+  },
+  frittata: {
+    nom: "undefined",
+    cat: "brunch",
+    pays: "italie",
+    dateAjout: "2026-06-08T18:21:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    description: "L'omelette italienne épaisse aux légumes et parmesan, finie au four — parfaite tiède ou froide.",
+    tableauFrittata: [
+      { nb: 1, oeuf: "2", courgette: "40 g", tomate: "30 g", oignon: "20 g", parmesan: "12 g", huileOlive: "8 ml", basilic: "2 g" },
+      { nb: 2, oeuf: "4", courgette: "80 g", tomate: "60 g", oignon: "40 g", parmesan: "24 g", huileOlive: "16 ml", basilic: "4 g" },
+      { nb: 3, oeuf: "6", courgette: "120 g", tomate: "90 g", oignon: "60 g", parmesan: "36 g", huileOlive: "24 ml", basilic: "6 g" },
+      { nb: 4, oeuf: "8", courgette: "160 g", tomate: "120 g", oignon: "80 g", parmesan: "48 g", huileOlive: "32 ml", basilic: "8 g" },
+      { nb: 5, oeuf: "10", courgette: "200 g", tomate: "150 g", oignon: "100 g", parmesan: "60 g", huileOlive: "40 ml", basilic: "10 g" },
+      { nb: 6, oeuf: "12", courgette: "240 g", tomate: "180 g", oignon: "120 g", parmesan: "72 g", huileOlive: "48 ml", basilic: "12 g" },
+      { nb: 7, oeuf: "14", courgette: "280 g", tomate: "210 g", oignon: "140 g", parmesan: "84 g", huileOlive: "56 ml", basilic: "14 g" },
+      { nb: 8, oeuf: "16", courgette: "320 g", tomate: "240 g", oignon: "160 g", parmesan: "96 g", huileOlive: "64 ml", basilic: "16 g" },
+      { nb: 9, oeuf: "18", courgette: "360 g", tomate: "270 g", oignon: "180 g", parmesan: "108 g", huileOlive: "72 ml", basilic: "18 g" },
+      { nb: 10, oeuf: "20", courgette: "400 g", tomate: "300 g", oignon: "200 g", parmesan: "120 g", huileOlive: "80 ml", basilic: "20 g" },
+      { nb: 11, oeuf: "22", courgette: "440 g", tomate: "330 g", oignon: "220 g", parmesan: "132 g", huileOlive: "88 ml", basilic: "22 g" },
+      { nb: 12, oeuf: "24", courgette: "480 g", tomate: "360 g", oignon: "240 g", parmesan: "144 g", huileOlive: "96 ml", basilic: "24 g" },
+      { nb: 13, oeuf: "26", courgette: "520 g", tomate: "390 g", oignon: "260 g", parmesan: "156 g", huileOlive: "104 ml", basilic: "26 g" },
+      { nb: 14, oeuf: "28", courgette: "560 g", tomate: "420 g", oignon: "280 g", parmesan: "168 g", huileOlive: "112 ml", basilic: "28 g" },
+      { nb: 15, oeuf: "30", courgette: "600 g", tomate: "450 g", oignon: "300 g", parmesan: "180 g", huileOlive: "120 ml", basilic: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Légumes", detail: "Faire revenir oignon et courgette dans l'huile.", badge: "⏱ 6 min" },
+      { icone: "🥚", titre: "Œufs", detail: "Battre les œufs avec le parmesan et l'assaisonnement.", badge: null },
+      { icone: "🍳", titre: "Verser", detail: "Verser les œufs sur les légumes, ajouter les tomates.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Cuire à feu doux sans remuer jusqu'à prise des bords. ASTUCE CHEF : feu doux et patience — une frittata réussie cuit lentement, elle reste moelleuse au centre.", badge: "⏱ 6 min" },
+      { icone: "♨️", titre: "Finir au four", detail: "Terminer la cuisson au four pour figer le dessus.", badge: "⏱ 6 min" },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de basilic, servir tiède ou froid en parts.", badge: null }
+    ]
+  },
 });

@@ -1495,4 +1495,41 @@ oeufmayo: {
       { icone: "🌿", titre: "Garnir", detail: "Parsemer de ciboule, gingembre râpé et servir aussitôt.", badge: null }
     ]
   },
+  pissaladiere: {
+    nom: "undefined",
+    cat: "entrees",
+    pays: "france",
+    dateAjout: "2026-06-08T18:26:00",
+    base: 4,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "La tarte niçoise aux oignons fondants, anchois et olives noires sur une pâte fine.",
+    tableauPissaladiere: [
+      { nb: 1, patepizza: "60 g", oignon: "120 g", anchois: "12 g", olivenoire: "15 g", huileOlive: "12 ml", thym: "1 g", ail: "1" },
+      { nb: 2, patepizza: "120 g", oignon: "240 g", anchois: "24 g", olivenoire: "30 g", huileOlive: "24 ml", thym: "2 g", ail: "1" },
+      { nb: 3, patepizza: "180 g", oignon: "360 g", anchois: "36 g", olivenoire: "45 g", huileOlive: "36 ml", thym: "3 g", ail: "1" },
+      { nb: 4, patepizza: "240 g", oignon: "480 g", anchois: "48 g", olivenoire: "60 g", huileOlive: "48 ml", thym: "4 g", ail: "1" },
+      { nb: 5, patepizza: "300 g", oignon: "600 g", anchois: "60 g", olivenoire: "75 g", huileOlive: "60 ml", thym: "5 g", ail: "2" },
+      { nb: 6, patepizza: "360 g", oignon: "720 g", anchois: "72 g", olivenoire: "90 g", huileOlive: "72 ml", thym: "6 g", ail: "2" },
+      { nb: 7, patepizza: "420 g", oignon: "840 g", anchois: "84 g", olivenoire: "105 g", huileOlive: "84 ml", thym: "7 g", ail: "2" },
+      { nb: 8, patepizza: "480 g", oignon: "960 g", anchois: "96 g", olivenoire: "120 g", huileOlive: "96 ml", thym: "8 g", ail: "2" },
+      { nb: 9, patepizza: "540 g", oignon: "1080 g", anchois: "108 g", olivenoire: "135 g", huileOlive: "108 ml", thym: "9 g", ail: "3" },
+      { nb: 10, patepizza: "600 g", oignon: "1200 g", anchois: "120 g", olivenoire: "150 g", huileOlive: "120 ml", thym: "10 g", ail: "3" },
+      { nb: 11, patepizza: "660 g", oignon: "1320 g", anchois: "132 g", olivenoire: "165 g", huileOlive: "132 ml", thym: "11 g", ail: "3" },
+      { nb: 12, patepizza: "720 g", oignon: "1440 g", anchois: "144 g", olivenoire: "180 g", huileOlive: "144 ml", thym: "12 g", ail: "4" },
+      { nb: 13, patepizza: "780 g", oignon: "1560 g", anchois: "156 g", olivenoire: "195 g", huileOlive: "156 ml", thym: "13 g", ail: "4" },
+      { nb: 14, patepizza: "840 g", oignon: "1680 g", anchois: "168 g", olivenoire: "210 g", huileOlive: "168 ml", thym: "14 g", ail: "4" },
+      { nb: 15, patepizza: "900 g", oignon: "1800 g", anchois: "180 g", olivenoire: "225 g", huileOlive: "180 ml", thym: "15 g", ail: "5" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Confire", detail: "Faire fondre les oignons émincés à feu très doux jusqu'à confiture. ASTUCE CHEF : les oignons doivent compoter 30 min à feu doux SANS colorer — c'est leur douceur fondante qui fait toute la pissaladière.", badge: "⏱ 30 min" },
+      { icone: "🫓", titre: "Étaler", detail: "Étaler la pâte finement sur une plaque.", badge: null },
+      { icone: "🧅", titre: "Garnir", detail: "Répartir les oignons confits sur la pâte.", badge: null },
+      { icone: "🐟", titre: "Décorer", detail: "Disposer les anchois en croisillons et les olives.", badge: null },
+      { icone: "🌿", titre: "Thym", detail: "Parsemer de thym et d'un filet d'huile.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire à 200°C jusqu'à ce que la pâte soit dorée.", badge: "⏱ 20 min" }
+    ]
+  },
 });
