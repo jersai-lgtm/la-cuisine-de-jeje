@@ -47,6 +47,9 @@ function switchPlanTab(tab) {
   const lb = (tab === "lunchbox");
   const fmt = document.getElementById("plan-field-format");
   if (fmt) fmt.style.display = lb ? "none" : "";
+  // Lunch box = un seul déjeuner à emporter : pas de choix Midi seul / Midi & Soir
+  const cren = document.getElementById("plan-field-creneaux");
+  if (cren) cren.style.display = lb ? "none" : "";
   const titre = document.querySelector("#plan-form h2");
   if (titre) titre.textContent = lb ? "🥡 Lunch box de la semaine" : "📅 Planificateur de menus";
   const sub = document.querySelector("#plan-form .plan-subtitle");
