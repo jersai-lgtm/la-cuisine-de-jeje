@@ -270,7 +270,8 @@ const NOMS_PROPRES_INGR = {
   // === Ajouts (recettes mix juin) ===
   attieke: "Attiéké", bacon: "Bacon", cinqepices: "Cinq-épices", fromagebleu: "Fromage bleu", pateArachide: "Pâte d\u0027arachide", radis: "Radis",
   melassegrenade: "Mélasse de grenade", zaatar: "Za\u0027atar",
-  algue: "Feuille de nori", fleuroranger: "Eau de fleur d\u0027oranger"
+  algue: "Feuille de nori", fleuroranger: "Eau de fleur d\u0027oranger",
+  fruitpassion: "Fruit de la passion", fruitsconfits: "Fruits confits", jaunedoeuf: "Jaune d\u0027œuf"
 };
 
 // Renvoie TOUJOURS un émoji pour un nom/clé d'ingrédient (jamais vide)

@@ -84,6 +84,7 @@ const SYNONYMES_REGIME = {
 
 const LABELS_CATEGORIE = {
   tartinables: "🍯 Pâtes à tartiner",
+  glaces: "🍨 Glaces & Sorbets",
   cocktails: "🍸 Cocktails", mocktails: "🧃 Mocktails", salades: "🥗 Salades",
   desserts: "🍰 Desserts", soupes: "🍲 Soupes", entrees: "🫕 Entrées",
   healthy: "💚 Healthy", brunch: "🍳 Brunch", encas: "🥪 Encas",
