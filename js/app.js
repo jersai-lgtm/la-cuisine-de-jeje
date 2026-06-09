@@ -871,7 +871,8 @@ function miniCarteFetiche(key, count) {
     ${badgeFam}
     ${badgeFreq}
     <div class="mini-carte-info">
-      <div class="mini-carte-titre"><span class="mini-carte-entete"><span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}</span><span class="mini-carte-nom">${nom}</span></div>
+      <span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>
+      <span class="mini-carte-nom">${nom}</span>
       <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
     </div>
   </div>`;
@@ -1183,7 +1184,8 @@ function miniCarte(key, raisonHTML, opts) {
     ${btnRegen}
     <div class="mini-carte-info">
       ${badgeNote}
-      <div class="mini-carte-titre"><span class="mini-carte-entete"><span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}</span><span class="mini-carte-nom">${nom}</span></div>
+      <span class="mini-carte-entete"><span class="mini-carte-emoji">${r.emoji || "🍽️"}</span>${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}</span>
+      <span class="mini-carte-nom">${nom}</span>
       <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
       ${raisonHTML || ""}
     </div>
@@ -3185,18 +3187,18 @@ window._backGuardPush = function() {
   } catch (e) { /* PWA peut bloquer */ }
 };
 
-// Au chargement initial, on initialise le buffer
-if (typeof window !== "undefined") {
-  // Quand l'app démarre, on ajoute un état tampon à l'historique
-  // De cette façon, le 1er bouton retour déclenche popstate au lieu de fermer
-  setTimeout(() => {
-    try {
-      // Marquer l'état actuel comme racine
-      history.replaceState({ appRoot: true }, "");
-      // Pousser un état tampon (l'utilisateur est dessus)
-      history.pushState({ tampon: true }, "");
-    } catch (e) {}
-  }, 100);
+// Le tampon d'historique est posé au PREMIER geste utilisateur (voir plus bas).
+// Chrome ignore les entrées d'historique créées sans interaction (anti-piège
+// du bouton retour) : un setTimeout au chargement était donc "sauté" et le 1er
+// retour fermait l'appli. On pose le tampon dans un vrai geste (clic/tap).
+window._bufferPret = false;
+function _assurerBuffer() {
+  if (window._bufferPret) return;
+  window._bufferPret = true;
+  try {
+    history.replaceState({ appRoot: true }, "");
+    history.pushState({ tampon: true }, "");
+  } catch (e) {}
 }
 
 // Liste des modals à surveiller (id du DOM + fonction de fermeture)
@@ -3207,6 +3209,7 @@ const _MODALS_SURVEILLEES = [
   { id: "modal-onboarding",  close: () => typeof fermerOnboarding === "function" && fermerOnboarding() },
   { id: "ma-modal",          close: () => typeof fermerAjoutMenu === "function" && fermerAjoutMenu() },
   { id: "photo-plein-ecran", close: () => typeof fermerPhotoPleinEcran === "function" && fermerPhotoPleinEcran() },
+  { id: "modal-contribution", close: () => typeof fermerContribution === "function" && fermerContribution() },
 ];
 
 // Vérifie si un élément est actuellement visible (modal ouverte)
@@ -3221,6 +3224,83 @@ function _modalEstVisible(el) {
     if (cs.display !== "none" && cs.visibility !== "hidden") return true;
   }
   return false;
+}
+
+// =============================================================================
+// 🧭 PILE DE NAVIGATION (onglets) — le bouton retour rejoue l'historique
+// =============================================================================
+// Chaque changement d'onglet/section mémorise la vue quittée et pousse un état
+// d'historique. Au retour, on dépile pour réafficher la vue précédente. Quand la
+// pile est vide → retour à l'accueil ; depuis l'accueil → double-retour = quitter.
+window._vueCourante = "accueil";
+window._navStack = [];
+window._navRetourEnCours = false;
+
+// Enregistre un changement de vue. Si déclenché PAR un retour, on ne ré-empile pas.
+function _enregistrerVue(viewId) {
+  if (!viewId) return;
+  if (window._navRetourEnCours) { window._vueCourante = viewId; return; }
+  if (viewId === window._vueCourante) return;          // pas de réel changement
+  window._navStack.push(window._vueCourante);           // mémorise la vue quittée
+  window._vueCourante = viewId;
+  try { history.pushState({ nav: viewId }, ""); } catch (e) {}
+}
+
+// Réaffiche une vue donnée lors d'un retour (sans ré-empiler).
+function _afficherVue(viewId) {
+  window._navRetourEnCours = true;
+  try {
+    if (viewId === "accueil") { if (typeof afficherAccueil === "function") afficherAccueil(); }
+    else if (viewId === "recettes") { if (typeof afficherRecettes === "function") afficherRecettes(); }
+    else if (viewId === "favoris") { if (typeof afficherFavorisAvecChips === "function") afficherFavorisAvecChips(); }
+    else if (viewId === "profil") { if (typeof filtrerMonProfil === "function") filtrerMonProfil(); }
+    else if (viewId && viewId.indexOf("section:") === 0 && typeof afficherSection === "function") {
+      const sec = viewId.slice(8);
+      const btn = document.querySelector('.nav-btn[onclick*="afficherSection(\'' + sec + '\'"]') || document.querySelector(".nav-btn");
+      afficherSection(sec, btn);
+    } else if (typeof afficherAccueil === "function") { afficherAccueil(); }
+    window._vueCourante = viewId;
+  } catch (e) { console.warn("Erreur _afficherVue:", e); }
+  finally { window._navRetourEnCours = false; }
+}
+
+// Détermine la vue cible à partir de l'élément cliqué (onglets haut + nav bas).
+function _vueDepuisElement(el) {
+  let cur = el;
+  while (cur && cur.getAttribute) {
+    if (cur.id === "btn-accueil") return "accueil";
+    if (cur.id === "btn-recettes") return "recettes";
+    if (cur.id === "btn-favoris") return "favoris";
+    if (cur.id === "btn-mon-profil") return "profil";
+    const oc = cur.getAttribute("onclick");
+    if (oc) {
+      if (/afficherAccueil\s*\(/.test(oc)) return "accueil";
+      if (/afficherRecettes\s*\(/.test(oc)) return "recettes";
+      if (/afficherFavorisAvecChips\s*\(/.test(oc)) return "favoris";
+      if (/filtrerMonProfil\s*\(/.test(oc)) return "profil";
+      const m = oc.match(/afficherSection\(\s*'([^']+)'/);
+      if (m) return m[1] === "accueil" ? "accueil" : "section:" + m[1];
+    }
+    cur = cur.parentElement;
+  }
+  return null;
+}
+
+// On capture les clics AVANT l'action (phase capture) : 1) on garantit le tampon
+// dans un vrai geste utilisateur (l'entrée d'historique est alors valide pour
+// Chrome), 2) on enregistre la navigation d'onglet pour que le retour la rejoue.
+if (typeof document !== "undefined") {
+  document.addEventListener("click", function (e) {
+    _assurerBuffer();
+    try {
+      const vid = _vueDepuisElement(e.target);
+      if (vid) _enregistrerVue(vid);
+    } catch (err) {}
+  }, true);
+  // Filet de sécurité : poser le tampon dès le tout premier geste (tap/touche).
+  ["touchstart", "pointerdown", "keydown"].forEach(function (ev) {
+    document.addEventListener(ev, _assurerBuffer, { capture: true });
+  });
 }
 
 // Quand le user appuie sur le bouton retour du téléphone
@@ -3242,9 +3322,27 @@ window.addEventListener("popstate", function(e) {
   // Sinon le user aurait besoin de 2 clics retour à chaque fois
   if (modalFermee) {
     window._backGuardPush();
+    return;
   }
-  // Si aucune modal n'était ouverte, on laisse le browser quitter naturellement
-  // (l'historique se vide normalement)
+
+  // 🧭 Pas de modal : rejouer l'historique de navigation des onglets
+  if (window._navStack && window._navStack.length > 0) {
+    const prev = window._navStack.pop();
+    _afficherVue(prev);   // affiche la vue précédente (sans ré-empiler)
+    return;               // les états "nav" servent d'historique → pas de re-push
+  }
+
+  // Plus d'historique : si on n'est pas déjà sur l'accueil, y revenir
+  const _secAccueil = document.getElementById("section-accueil");
+  const _surAccueil = _secAccueil && _modalEstVisible(_secAccueil);
+  if (!_surAccueil) {
+    _afficherVue("accueil");
+    window._backGuardPush();   // tampon → il faudra un 2e retour pour quitter
+    return;
+  }
+
+  // Sur l'accueil, historique vide : on laisse quitter (le tampon impose un
+  // second retour, ce qui évite de fermer l'appli par accident).
 });
 
 // Compat : on garde modalPush/modalPop comme no-ops pour le code existant
