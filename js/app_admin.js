@@ -22,7 +22,7 @@ async function chargerStatsAdminComplet() {
   zoneStats.innerHTML = `<p class="avis-empty">Chargement des stats utilisateurs...</p>`;
   
   try {
-    const snap = await _db.collection("utilisateurs").get();
+    const snap = await _db.collection("utilisateurs").get({ source: "server" });
     const users = snap.docs.map(d => d.data());
     console.log("👑 [Admin] Utilisateurs chargés :", users.length);
     
@@ -31,6 +31,11 @@ async function chargerStatsAdminComplet() {
     afficherAdminEngagement(users);
     afficherAdminPreferences(users);
     afficherAdminListeUsers(users);
+    const _horo = new Date().toLocaleTimeString("fr-FR");
+    zoneStats.insertAdjacentHTML("afterbegin", `<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 12px">
+      <button onclick="chargerStatsAdminComplet()" style="background:var(--accent,#ff4d88);color:#fff;border:none;border-radius:8px;padding:7px 14px;font-weight:600;cursor:pointer">🔄 Rafraîchir</button>
+      <span style="font-size:0.74rem;opacity:0.6">Mis à jour à ${_horo}</span>
+    </div>`);
   } catch (e) {
     console.error("❌ Erreur stats admin complet:", e);
     if (e?.code === "permission-denied") {
