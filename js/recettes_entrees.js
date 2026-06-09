@@ -1532,4 +1532,78 @@ oeufmayo: {
       { icone: "🔥", titre: "Cuire", detail: "Cuire à 200°C jusqu'à ce que la pâte soit dorée.", badge: "⏱ 20 min" }
     ]
   },
+  pkhali: {
+    nom: "Pkhali",
+    cat: "entrees",
+    pays: "georgie",
+    dateAjout: "2026-06-09T09:14:00",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Les bouchées géorgiennes de légumes (épinards ou betterave) liées d'une pâte de noix parfumée.",
+    tableauPkhali: [
+      { nb: 1, epinard: "100 g", noix: "30 g", ail: "1", coriandre: "4 g", vinaigre: "6 ml", grenade: "10 g" },
+      { nb: 2, epinard: "200 g", noix: "60 g", ail: "1", coriandre: "8 g", vinaigre: "12 ml", grenade: "20 g" },
+      { nb: 3, epinard: "300 g", noix: "90 g", ail: "2", coriandre: "12 g", vinaigre: "18 ml", grenade: "30 g" },
+      { nb: 4, epinard: "400 g", noix: "120 g", ail: "2", coriandre: "16 g", vinaigre: "24 ml", grenade: "40 g" },
+      { nb: 5, epinard: "500 g", noix: "150 g", ail: "3", coriandre: "20 g", vinaigre: "30 ml", grenade: "50 g" },
+      { nb: 6, epinard: "600 g", noix: "180 g", ail: "3", coriandre: "24 g", vinaigre: "36 ml", grenade: "60 g" },
+      { nb: 7, epinard: "700 g", noix: "210 g", ail: "4", coriandre: "28 g", vinaigre: "42 ml", grenade: "70 g" },
+      { nb: 8, epinard: "800 g", noix: "240 g", ail: "4", coriandre: "32 g", vinaigre: "48 ml", grenade: "80 g" },
+      { nb: 9, epinard: "900 g", noix: "270 g", ail: "5", coriandre: "36 g", vinaigre: "54 ml", grenade: "90 g" },
+      { nb: 10, epinard: "1000 g", noix: "300 g", ail: "5", coriandre: "40 g", vinaigre: "60 ml", grenade: "100 g" },
+      { nb: 11, epinard: "1100 g", noix: "330 g", ail: "6", coriandre: "44 g", vinaigre: "66 ml", grenade: "110 g" },
+      { nb: 12, epinard: "1200 g", noix: "360 g", ail: "6", coriandre: "48 g", vinaigre: "72 ml", grenade: "120 g" },
+      { nb: 13, epinard: "1300 g", noix: "390 g", ail: "7", coriandre: "52 g", vinaigre: "78 ml", grenade: "130 g" },
+      { nb: 14, epinard: "1400 g", noix: "420 g", ail: "7", coriandre: "56 g", vinaigre: "84 ml", grenade: "140 g" },
+      { nb: 15, epinard: "1500 g", noix: "450 g", ail: "8", coriandre: "60 g", vinaigre: "90 ml", grenade: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Blanchir", detail: "Blanchir les épinards puis bien les essorer. ASTUCE CHEF : presse fortement les épinards pour retirer toute l'eau, sinon les boulettes ne tiennent pas.", badge: "⏱ 4 min" },
+      { icone: "🌰", titre: "Pâte de noix", detail: "Mixer noix, ail, coriandre et vinaigre en pâte.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Hacher les épinards et les lier à la pâte de noix.", badge: null },
+      { icone: "⚪", titre: "Former", detail: "Façonner de petites quenelles.", badge: null },
+      { icone: "🔴", titre: "Grenade", detail: "Décorer de graines de grenade.", badge: null },
+      { icone: "❄️", titre: "Servir", detail: "Servir frais en entrée ou mezze.", badge: null }
+    ]
+  },
+  chawanmushi: {
+    nom: "Chawanmushi",
+    cat: "entrees",
+    pays: "japon",
+    dateAjout: "2026-06-09T09:15:00",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍮",
+    description: "Le flan salé japonais à la vapeur, soyeux, au dashi, garni de crevette et champignon.",
+    tableauChawanmushi: [
+      { nb: 1, oeuf: "1", dashi: "80 ml", crevette: "20 g", champignon: "20 g", saucesoja: "4 ml", ciboule: "5 g" },
+      { nb: 2, oeuf: "2", dashi: "160 ml", crevette: "40 g", champignon: "40 g", saucesoja: "8 ml", ciboule: "10 g" },
+      { nb: 3, oeuf: "3", dashi: "240 ml", crevette: "60 g", champignon: "60 g", saucesoja: "12 ml", ciboule: "15 g" },
+      { nb: 4, oeuf: "4", dashi: "320 ml", crevette: "80 g", champignon: "80 g", saucesoja: "16 ml", ciboule: "20 g" },
+      { nb: 5, oeuf: "5", dashi: "400 ml", crevette: "100 g", champignon: "100 g", saucesoja: "20 ml", ciboule: "25 g" },
+      { nb: 6, oeuf: "6", dashi: "480 ml", crevette: "120 g", champignon: "120 g", saucesoja: "24 ml", ciboule: "30 g" },
+      { nb: 7, oeuf: "7", dashi: "560 ml", crevette: "140 g", champignon: "140 g", saucesoja: "28 ml", ciboule: "35 g" },
+      { nb: 8, oeuf: "8", dashi: "640 ml", crevette: "160 g", champignon: "160 g", saucesoja: "32 ml", ciboule: "40 g" },
+      { nb: 9, oeuf: "9", dashi: "720 ml", crevette: "180 g", champignon: "180 g", saucesoja: "36 ml", ciboule: "45 g" },
+      { nb: 10, oeuf: "10", dashi: "800 ml", crevette: "200 g", champignon: "200 g", saucesoja: "40 ml", ciboule: "50 g" },
+      { nb: 11, oeuf: "11", dashi: "880 ml", crevette: "220 g", champignon: "220 g", saucesoja: "44 ml", ciboule: "55 g" },
+      { nb: 12, oeuf: "12", dashi: "960 ml", crevette: "240 g", champignon: "240 g", saucesoja: "48 ml", ciboule: "60 g" },
+      { nb: 13, oeuf: "13", dashi: "1040 ml", crevette: "260 g", champignon: "260 g", saucesoja: "52 ml", ciboule: "65 g" },
+      { nb: 14, oeuf: "14", dashi: "1120 ml", crevette: "280 g", champignon: "280 g", saucesoja: "56 ml", ciboule: "70 g" },
+      { nb: 15, oeuf: "15", dashi: "1200 ml", crevette: "300 g", champignon: "300 g", saucesoja: "60 ml", ciboule: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Appareil", detail: "Battre l'œuf avec le dashi tiède et la sauce soja. ASTUCE CHEF : passe l'appareil au tamis avant cuisson : c'est le secret de la texture lisse comme un flan.", badge: null },
+      { icone: "🍤", titre: "Garniture", detail: "Répartir crevette et champignon dans les bols.", badge: null },
+      { icone: "🥣", titre: "Verser", detail: "Verser l'appareil filtré.", badge: null },
+      { icone: "♨️", titre: "Vapeur", detail: "Cuire à la vapeur douce, couvert.", badge: "⏱ 15 min" },
+      { icone: "🔍", titre: "Vérifier", detail: "La crème est prise mais encore tremblotante.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de ciboule, servir tiède.", badge: null }
+    ]
+  },
 });

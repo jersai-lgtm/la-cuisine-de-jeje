@@ -1078,4 +1078,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir tiède, roulé, au petit-déjeuner.", badge: null }
     ]
   },
+  socca: {
+    nom: "Socca",
+    cat: "boulangerie",
+    pays: "france",
+    dateAjout: "2026-06-09T09:29:00",
+    base: 4,
+    temps: "20 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "La galette niçoise à la farine de pois chiche, fine et croustillante, cuite au four très chaud.",
+    tableauSocca: [
+      { nb: 1, farinepoischiche: "50 g", eau: "90 ml", huileOlive: "15 ml", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 2, farinepoischiche: "100 g", eau: "180 ml", huileOlive: "30 ml", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 3, farinepoischiche: "150 g", eau: "270 ml", huileOlive: "45 ml", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 4, farinepoischiche: "200 g", eau: "360 ml", huileOlive: "60 ml", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 5, farinepoischiche: "250 g", eau: "450 ml", huileOlive: "75 ml", sel: "1 pincée", poivre: "1 pincée" },
+      { nb: 6, farinepoischiche: "300 g", eau: "540 ml", huileOlive: "90 ml", sel: "2 pincées", poivre: "2 pincées" },
+      { nb: 7, farinepoischiche: "350 g", eau: "630 ml", huileOlive: "105 ml", sel: "2 pincées", poivre: "2 pincées" },
+      { nb: 8, farinepoischiche: "400 g", eau: "720 ml", huileOlive: "120 ml", sel: "2 pincées", poivre: "2 pincées" },
+      { nb: 9, farinepoischiche: "450 g", eau: "810 ml", huileOlive: "135 ml", sel: "2 pincées", poivre: "2 pincées" },
+      { nb: 10, farinepoischiche: "500 g", eau: "900 ml", huileOlive: "150 ml", sel: "2 pincées", poivre: "2 pincées" },
+      { nb: 11, farinepoischiche: "550 g", eau: "990 ml", huileOlive: "165 ml", sel: "3 pincées", poivre: "3 pincées" },
+      { nb: 12, farinepoischiche: "600 g", eau: "1080 ml", huileOlive: "180 ml", sel: "3 pincées", poivre: "3 pincées" },
+      { nb: 13, farinepoischiche: "650 g", eau: "1170 ml", huileOlive: "195 ml", sel: "3 pincées", poivre: "3 pincées" },
+      { nb: 14, farinepoischiche: "700 g", eau: "1260 ml", huileOlive: "210 ml", sel: "3 pincées", poivre: "3 pincées" },
+      { nb: 15, farinepoischiche: "750 g", eau: "1350 ml", huileOlive: "225 ml", sel: "3 pincées", poivre: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine de pois chiche, eau, huile et sel sans grumeaux.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Laisser reposer la pâte. ASTUCE CHEF : le repos (au moins 30 min) hydrate la farine et donne une socca plus moelleuse à cœur, croustillante dessus.", badge: "⏱ 30 min" },
+      { icone: "🔥", titre: "Préchauffer", detail: "Chauffer le four au maximum avec la plaque huilée.", badge: null },
+      { icone: "🫓", titre: "Verser", detail: "Verser une fine couche de pâte sur la plaque brûlante.", badge: null },
+      { icone: "🌡️", titre: "Cuire", detail: "Cuire jusqu'à ce que les bords dorent et cloquent.", badge: "⏱ 8 min" },
+      { icone: "🌶️", titre: "Servir", detail: "Servir brûlant, très poivré, en parts.", badge: null }
+    ]
+  },
 });

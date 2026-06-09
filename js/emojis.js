@@ -271,7 +271,8 @@ const NOMS_PROPRES_INGR = {
   attieke: "Attiéké", bacon: "Bacon", cinqepices: "Cinq-épices", fromagebleu: "Fromage bleu", pateArachide: "Pâte d\u0027arachide", radis: "Radis",
   melassegrenade: "Mélasse de grenade", zaatar: "Za\u0027atar",
   algue: "Feuille de nori", fleuroranger: "Eau de fleur d\u0027oranger",
-  fruitpassion: "Fruit de la passion", fruitsconfits: "Fruits confits", jaunedoeuf: "Jaune d\u0027œuf"
+  fruitpassion: "Fruit de la passion", fruitsconfits: "Fruits confits", jaunedoeuf: "Jaune d\u0027œuf",
+  anisetoile: "Anis étoilé", grenade: "Grenade", jacque: "Jacque (fruit du jacquier)", noixcoco: "Noix de coco", painfeuillete: "Pâte feuilletée"
 };
 
 // Renvoie TOUJOURS un émoji pour un nom/clé d'ingrédient (jamais vide)

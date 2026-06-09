@@ -1379,4 +1379,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Démouler et servir avec chutney et sambar.", badge: null }
     ]
   },
+  raggmunk: {
+    nom: "Raggmunk",
+    cat: "brunch",
+    pays: "suede",
+    dateAjout: "2026-06-09T09:22:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Les galettes de pommes de terre râpées suédoises, dorées au beurre, servies avec lard et confiture d'airelles.",
+    tableauRaggmunk: [
+      { nb: 1, pommedeterre: "120 g", farine: "15 g", lait: "40 ml", oeuf: "1", lard: "25 g", beurre: "12 g" },
+      { nb: 2, pommedeterre: "240 g", farine: "30 g", lait: "80 ml", oeuf: "1", lard: "50 g", beurre: "24 g" },
+      { nb: 3, pommedeterre: "360 g", farine: "45 g", lait: "120 ml", oeuf: "2", lard: "75 g", beurre: "36 g" },
+      { nb: 4, pommedeterre: "480 g", farine: "60 g", lait: "160 ml", oeuf: "2", lard: "100 g", beurre: "48 g" },
+      { nb: 5, pommedeterre: "600 g", farine: "75 g", lait: "200 ml", oeuf: "3", lard: "125 g", beurre: "60 g" },
+      { nb: 6, pommedeterre: "720 g", farine: "90 g", lait: "240 ml", oeuf: "3", lard: "150 g", beurre: "72 g" },
+      { nb: 7, pommedeterre: "840 g", farine: "105 g", lait: "280 ml", oeuf: "4", lard: "175 g", beurre: "84 g" },
+      { nb: 8, pommedeterre: "960 g", farine: "120 g", lait: "320 ml", oeuf: "4", lard: "200 g", beurre: "96 g" },
+      { nb: 9, pommedeterre: "1080 g", farine: "135 g", lait: "360 ml", oeuf: "5", lard: "225 g", beurre: "108 g" },
+      { nb: 10, pommedeterre: "1200 g", farine: "150 g", lait: "400 ml", oeuf: "5", lard: "250 g", beurre: "120 g" },
+      { nb: 11, pommedeterre: "1320 g", farine: "165 g", lait: "440 ml", oeuf: "6", lard: "275 g", beurre: "132 g" },
+      { nb: 12, pommedeterre: "1440 g", farine: "180 g", lait: "480 ml", oeuf: "6", lard: "300 g", beurre: "144 g" },
+      { nb: 13, pommedeterre: "1560 g", farine: "195 g", lait: "520 ml", oeuf: "7", lard: "325 g", beurre: "156 g" },
+      { nb: 14, pommedeterre: "1680 g", farine: "210 g", lait: "560 ml", oeuf: "7", lard: "350 g", beurre: "168 g" },
+      { nb: 15, pommedeterre: "1800 g", farine: "225 g", lait: "600 ml", oeuf: "8", lard: "375 g", beurre: "180 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Râper", detail: "Râper les pommes de terre crues. ASTUCE CHEF : ne rince pas les pommes de terre râpées : leur amidon lie la galette et la rend croustillante.", badge: null },
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger avec lait, farine et œuf en pâte fluide.", badge: null },
+      { icone: "🥓", titre: "Lard", detail: "Faire dorer le lard à part.", badge: "⏱ 5 min" },
+      { icone: "🍳", titre: "Cuire", detail: "Cuire des galettes fines au beurre, bien dorées.", badge: "⏱ 10 min" },
+      { icone: "🍓", titre: "Airelles", detail: "Servir avec confiture d'airelles.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dresser galettes + lard croustillant.", badge: null }
+    ]
+  },
+  tamagoyaki: {
+    nom: "Tamagoyaki",
+    cat: "brunch",
+    pays: "japon",
+    dateAjout: "2026-06-09T09:23:00",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍳",
+    description: "L'omelette roulée japonaise légèrement sucrée, cuite en couches, moelleuse et joliment striée.",
+    tableauTamagoyaki: [
+      { nb: 1, oeuf: "2", dashi: "15 ml", sucre: "4 g", saucesoja: "3 ml", huile: "6 ml" },
+      { nb: 2, oeuf: "4", dashi: "30 ml", sucre: "8 g", saucesoja: "6 ml", huile: "12 ml" },
+      { nb: 3, oeuf: "6", dashi: "45 ml", sucre: "12 g", saucesoja: "9 ml", huile: "18 ml" },
+      { nb: 4, oeuf: "8", dashi: "60 ml", sucre: "16 g", saucesoja: "12 ml", huile: "24 ml" },
+      { nb: 5, oeuf: "10", dashi: "75 ml", sucre: "20 g", saucesoja: "15 ml", huile: "30 ml" },
+      { nb: 6, oeuf: "12", dashi: "90 ml", sucre: "24 g", saucesoja: "18 ml", huile: "36 ml" },
+      { nb: 7, oeuf: "14", dashi: "105 ml", sucre: "28 g", saucesoja: "21 ml", huile: "42 ml" },
+      { nb: 8, oeuf: "16", dashi: "120 ml", sucre: "32 g", saucesoja: "24 ml", huile: "48 ml" },
+      { nb: 9, oeuf: "18", dashi: "135 ml", sucre: "36 g", saucesoja: "27 ml", huile: "54 ml" },
+      { nb: 10, oeuf: "20", dashi: "150 ml", sucre: "40 g", saucesoja: "30 ml", huile: "60 ml" },
+      { nb: 11, oeuf: "22", dashi: "165 ml", sucre: "44 g", saucesoja: "33 ml", huile: "66 ml" },
+      { nb: 12, oeuf: "24", dashi: "180 ml", sucre: "48 g", saucesoja: "36 ml", huile: "72 ml" },
+      { nb: 13, oeuf: "26", dashi: "195 ml", sucre: "52 g", saucesoja: "39 ml", huile: "78 ml" },
+      { nb: 14, oeuf: "28", dashi: "210 ml", sucre: "56 g", saucesoja: "42 ml", huile: "84 ml" },
+      { nb: 15, oeuf: "30", dashi: "225 ml", sucre: "60 g", saucesoja: "45 ml", huile: "90 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Appareil", detail: "Battre les œufs avec dashi, sucre et sauce soja.", badge: null },
+      { icone: "🔥", titre: "Première couche", detail: "Verser une fine couche dans la poêle huilée.", badge: "⏱ 1 min" },
+      { icone: "🌯", titre: "Rouler", detail: "Rouler l'omelette à demi-prise vers soi. ASTUCE CHEF : roule chaque couche encore légèrement baveuse : les couches se soudent et l'omelette reste moelleuse.", badge: null },
+      { icone: "➕", titre: "Couches", detail: "Verser une nouvelle couche, soulever, rouler à nouveau.", badge: "⏱ 6 min" },
+      { icone: "🟨", titre: "Façonner", detail: "Presser le rouleau pour une forme nette.", badge: null },
+      { icone: "🔪", titre: "Servir", detail: "Trancher et servir tiède.", badge: null }
+    ]
+  },
 });
