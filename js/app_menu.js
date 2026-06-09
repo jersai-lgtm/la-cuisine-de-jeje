@@ -47,9 +47,6 @@ function switchPlanTab(tab) {
   const lb = (tab === "lunchbox");
   const fmt = document.getElementById("plan-field-format");
   if (fmt) fmt.style.display = lb ? "none" : "";
-  // Lunch box = un seul déjeuner à emporter : pas de choix Midi seul / Midi & Soir
-  const cren = document.getElementById("plan-field-creneaux");
-  if (cren) cren.style.display = lb ? "none" : "";
   const titre = document.querySelector("#plan-form h2");
   if (titre) titre.textContent = lb ? "🥡 Lunch box de la semaine" : "📅 Planificateur de menus";
   const sub = document.querySelector("#plan-form .plan-subtitle");
@@ -123,7 +120,7 @@ const menusFestifs = {
     apero:   [...TOUS_LES_APEROS_SANS, "spritz","mojito","daiquiri"],
     entree:  ["gaspacho","saladeniçoise","tabulemaison","saladeavocatcrevettes","saladegreque","saladecesar","saladepoischiches","saladepatasthon","smoothiebowl","houmous","saladerizmediterranee"],
     plat:    ["paella","salmonteriyaki","souvlakiagneau","saladecesar","wrappoulet","padthai","shakshuka","burgermaison","tacosmaison","saladeniçoise","saumongravlax"],
-    dessert: ["tartecitron","smoothiebowl","bowlacai","clafoutis","verrinetiramisu","granolaMaison","yaourt","bananabread"],
+    dessert: ["tartecitron","smoothiebowl","bowlacai","clafoutis","verrinetiramisu","granola","yaourt","bananabread"],
   },
   hivernal: {
     label: "❄️ Menu Hivernal",
@@ -134,24 +131,24 @@ const menusFestifs = {
   },
   mexicain: {
     label: "🇲🇽 Soirée Mexicaine",
-    apero:   ["margarita","tequilasunrise","paloma","virginmargarita","hibiscuscooler"],
-    entree:  ["guacamole","nachosgratines","pozole","quesadillas"],
-    plat:    ["tacosmaison","tacoshijosepastor","birriatacos","enchiladas","chilesrellenos","cochinita","burritos","fajitaspoulet","molepoblano","chilisincarne"],
-    dessert: ["treslecheas","churros","flan"],
+    apero:   ["margarita","virginmojito","limonademaison","mojito","sangria"],
+    entree:  ["houmous","gaspacho","saladepoischiches","tabulemaison","saladeniçoise"],
+    plat:    ["tacosmaison","currypouletcoco","bolognaisemaison","padthai","burgermaison","shakshuka"],
+    dessert: ["churros","mousseauchocolat","bananabread","muffins","madeleine"],
   },
   italien: {
     label: "🇮🇹 Soirée Italienne",
-    apero:   ["spritz","hugospritz","negroni","limonademaison","citronadementhe"],
-    entree:  ["soupeMinestrone","saladecaprese","burratapeche","vitellotonnato","caponatasicile","carpacciodeboeuf","melonjambon","saladeburrata","saladefiguejambon","saladeroquetteparmesan","antipasti","brochettecaprese","crostini"],
-    plat:    ["carbonara","bolognaisemaison","lasagneviande","lasagneverdure","risottoMilanese","risotto","ossobuco","saltimbocca","spaghettivongole","gnocchismaison","tagliatellestruffe","pastapomodoro","cacioepepe","parmigiana","agnellocacciatore","pizzamargherita","pizzadiavola","pizza4fromages","pizzanapolitaine","pizzaburrata"],
-    dessert: ["tiramisu","tiramisufraise","pannaCotta","cannolisicilien","affogatoglace","sabayonfruitsrouges"],
+    apero:   ["spritz","sangria","cosmopolitan","daiquiri"],
+    entree:  ["saladecesar","saladeniçoise","saladegreque","saladepatasthon","houmous"],
+    plat:    ["risotto","bolognaisemaison","risottoprimavera","lasagne","paella","moussaka"],
+    dessert: ["tiramisu","verrinetiramisu","mousseauchocolat","pannacotta","cremebrulee","parisbrestreinterpretation"],
   },
   healthy: {
     label: "🥗 Menu Healthy",
     apero:   [...TOUS_LES_APEROS_SANS],
     entree:  ["saladequinoa","houmous","gaspacho","smoothiebowl","bowlacai","overnightoats","buddhaBowl","saladepoischiches","tabulemaison"],
     plat:    ["buddhaBowl","wrappoulet","curryledumes","salmonteriyaki","padthai","dahllentillescorail","soupemiso","veloutelegumes","shakshuka","saladeniçoise"],
-    dessert: ["smoothiebowl","bowlacai","yaourt","granolaMaison","bananabread","madeleine"],
+    dessert: ["smoothiebowl","bowlacai","yaourt","granola","bananabread","madeleine"],
   },
   romantique: {
     label: "💑 Dîner Romantique",
@@ -162,31 +159,10 @@ const menusFestifs = {
   },
   brunch: {
     label: "☀️ Brunch Dominical",
-    apero:   ["limonademaison","smoothiemangopassion","citronadementhe","jusPastequeMenuthe","virginmojito","chocolatChaud","smoothievert"],
-    entree:  ["overnightoats","birchermuesli","granolaMaison","smoothievert","financiers","painperdubrioche","smoothiemangopassion"],
-    plat:    ["pancakes","pancakesproteine","gaufres","crepes","eggsBenedict","croquemadame","croquemonsieur","shakshuka","huevosrancheros","menemen","oeufbrouille","hashbrowns","rosti","kayatoast"],
-    dessert: ["muffins","madeleine","bananabread","financiers","crepesSucrées","painperdubrioche","gaufres"],
-  },
-  asiatique: {
-    label: "🍜 Soirée Asiatique",
-    apero:   ["maitai","virginmojito","limonademaison","citronadementhe","smoothiemangopassion"],
-    entree:  ["gyoza","nemsvietnam","baoporccarmelise","satay","takoyaki","beignetscrevettes","lumpia","mandu","goicuon","rouleauxprintemps","soupemiso","tom_yam","tomkhagai","laksa","somtam","saladewasabi"],
-    plat:    ["padthai","salmonteriyaki","currypouletcoco","ramenjaponais","phovietnambien","pekinduckeasy","bibimbap","rendangboeuf","sushimaison","curryverthai","koreanfriedchicken","bobun","galbicoreen","nasigoreng","banhmiviet","mapotofu","okonomiyaki","bulgogi","katsudon","dandan","khaosoi","massamancurry"],
-    dessert: ["mochiglace","dorayaki","saladefruits","bananeflambee"],
-  },
-  mediterraneen: {
-    label: "🫒 Menu Méditerranéen",
-    apero:   ["sangria","spritz","limonademaison","citronadementhe","virginmojito"],
-    entree:  ["houmous","babaganoush","falafel","tzatziki","dolma","tabulemaison","tabboulehlibanais","fattehlibanaise","saganaki","spanakopita","patatasbravas","croquetasjamon","pintxosbasques","gambasajillo","escalivada","salmorejo","gaspacho","saladegreque","borekturc"],
-    plat:    ["couscous","moussaka","paella","tajinemouton","tajinepoulet","souvlakiagneau","kibbeh","sayadieh","keftamarocaine","pastillapoulet","tortillaespagnole","kofteturc","shawarma","lahmacun","fabada","gyrosgrec","fideua","kebabmaison"],
-    dessert: ["baklava","knafehlibanais","kunefe","loukoumades","basquecheesecake","cremecatalane","churros"],
-  },
-  monde: {
-    label: "🌍 Menu du Monde",
-    apero:   ["maitai","margarita","caipirinha","mojito","pinacolada","sangria","virginmojito","limonademaison"],
-    entree:  ["coxinha","lumpia","gyoza","falafel","houmous","guacamole","saganaki","smorrebrod","nemsvietnam"],
-    plat:    ["padthai","butterchicken","paella","rendangboeuf","bobotie","thieboudienne","pouletboucane","molepoblano","bibimbap","curryverthai","ramenjaponais","tacosmaison","couscous","moussaka","pekinduckeasy","adobopoulet","dandan","fideua","frikadeller","janssonfrestelse"],
-    dessert: ["baklava","mochiglace","dorayaki","churros","treslecheas","gulabjamun","loukoumades","malasadas","kunefe","babka"],
+    apero:   ["limonademaison","smoothiemangopassion","citronadementhe","jusPastequeMenuthe","virginmojito"],
+    entree:  ["smoothiebowl","bowlacai","overnightoats","saladequinoa","smoothiemangopassion","yaourt","granola"],
+    plat:    ["pancakes","pancakesproteine","shakshuka","croquemonsieur","muffins","overnightoats","bruschetta"],
+    dessert: ["muffins","madeleine","bananabread","granola","verrinetiramisu","goumeau"],
   },
 };
 
@@ -1661,7 +1637,7 @@ function afficherMenusSemaine(menus, personnes) {
       };
       div.innerHTML = `
         <h3 class="plan-jour-titre" style="color:${couleurJour}">${jour.jour}</h3>
-        <div class="plan-repas-row">
+        <div class="plan-repas-row"${jour.soir ? "" : ' style="grid-template-columns:1fr"'}>
           ${genMoment("midi", "☀️", "Midi")}
           ${genMoment("soir", "🌙", "Soir")}
         </div>`;
@@ -1706,7 +1682,7 @@ function afficherMenusSemaine(menus, personnes) {
 
       div.innerHTML = `
         <h3 class="plan-jour-titre" style="color:${couleurJour}">${jour.jour}</h3>
-        <div class="plan-repas-row">
+        <div class="plan-repas-row"${jour.soir ? "" : ' style="grid-template-columns:1fr"'}>
           <div class="plan-repas" style="${sMidi}" onclick="ouvrirRecettePlan('${midi}', ${personnes})">
             <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}${chMidi}</div>
             <div class="plan-repas-emoji">${getEmoji(midi)}</div>
@@ -1983,7 +1959,7 @@ function _collecterClesMenu(source, acc) {
 }
 
 // Ajoute toutes les recettes du menu courant (type "semaine" ou "thematique") à la liste de courses
-async function ajouterMenuAuxCourses(type) {
+function ajouterMenuAuxCourses(type) {
   if (!window.currentUser) { if (typeof ouvrirModalAuth === "function") ouvrirModalAuth(); return; }
 
   let source = null, personnes = 4;
@@ -2003,17 +1979,6 @@ async function ajouterMenuAuxCourses(type) {
   if (cles.size === 0) { if (typeof afficherToast === "function") afficherToast("Aucune recette trouvée dans le menu."); return; }
 
   if (!window.userProfile.listeCourses) window.userProfile.listeCourses = [];
-
-  // Pop-up si la liste de courses contient déjà des recettes (évite d'empiler 2 menus)
-  if (window.userProfile.listeCourses.length > 0 && typeof confirmer === "function") {
-    const n = window.userProfile.listeCourses.length;
-    const vider = await confirmer(
-      `Votre liste de courses contient déjà ${n} recette${n > 1 ? "s" : ""}. Voulez-vous la vider avant d'ajouter ce menu ?`,
-      { titre: "🛒 Liste de courses", boutonOui: "Vider et ajouter", boutonNon: "Cumuler", dangereux: true }
-    );
-    if (vider) window.userProfile.listeCourses = [];
-  }
-
   let ajout = 0;
   cles.forEach(cle => {
     if (!window.userProfile.listeCourses.some(x => x.cle === cle)) {
