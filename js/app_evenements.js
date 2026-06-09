@@ -233,8 +233,8 @@
       cta: "Entrer 🕊️",
       menuZone: { top: "49%", bottom: "28%", left: "30%", right: "30%" },
       menuColor: "#efe8d6",
-      menuNoms: { bruschetta: "Bruschetta", saladeniçoise: "Salade Niçoise", ratatouille: "Ratatouille Provençale", tartecitron: "Tarte au Citron", pavlova: "Pavlova", saladefruits: "Salade de Fruits" },
-      recettes: ["bruschetta", "saladeniçoise", "ratatouille", "tartecitron", "pavlova", "saladefruits"],
+      menuNoms: { bruschetta: "Bruschetta", saladeniçoise: "Salade Niçoise", brochettecaprese: "Brochettes Caprese", tartecitron: "Tarte au Citron", pavlova: "Pavlova", saladefruits: "Salade de Fruits" },
+      recettes: ["bruschetta", "saladeniçoise", "brochettecaprese", "tartecitron", "pavlova", "saladefruits"],
       estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 8, 15), dateA(y, 8, 15, 23)); }
     },
     halloween: {
@@ -270,7 +270,7 @@
       recettes: ["huitresgratinees", "foiegraspoele", "escargots", "dindenoelmarrons", "buchenoelchocolat", "vinchaud"],
       estActif: function (now) {
         var y = now.getFullYear();
-        return entre(now, dateA(y, 12, 20), dateA(y, 12, 26, 23)); // 20 -> 26 déc
+        return entre(now, dateA(y, 12, 15), dateA(y, 12, 25, 23)); // 15 -> 25 déc
       }
     },
     nouvelan: {
@@ -287,8 +287,8 @@
       recettes: ["blinissaumon", "croquetasjamon", "accrasmorue", "mimosa", "pornstarmartini", "verrineavocatcrevette"],
       estActif: function (now) {
         var y = now.getFullYear();
-        // 30 déc -> 1er jan (gère le passage d'année)
-        return now >= dateA(y, 12, 30) || now <= dateA(y, 1, 1, 23);
+        // 26 déc -> 1er jan (gère le passage d'année)
+        return now >= dateA(y, 12, 26) || now <= dateA(y, 1, 1, 23);
       }
     },
     galette: {
