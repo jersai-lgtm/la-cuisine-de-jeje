@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=1.4.1">
+<link rel="stylesheet" href="style.css?v=1.4.3">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=1.4.1">
+<link rel="stylesheet" href="style.css?v=1.4.3">
 </head>
 
 <body>
@@ -149,6 +149,7 @@ gtag('config', 'G-390C5MY2SS');
     <button class="chip" onclick="filtrerChipCategorie('sauces', this)">🥫 Sauces</button>
     <button class="chip" onclick="filtrerChipCategorie('tartinables', this)">🍯 Pâtes à tartiner</button>
     <button class="chip" onclick="filtrerChipCategorie('desserts', this)">🍰 Desserts</button>
+    <button class="chip" onclick="filtrerChipCategorie('glaces', this)">🍨 Glaces & Sorbets</button>
     <button class="chip" onclick="filtrerChipCategorie('cocktails', this)">🍸 Cocktails</button>
     <button class="chip" onclick="filtrerChipCategorie('mocktails', this)">🧃 Mocktails</button>
   </div>
@@ -1111,6 +1112,166 @@ gtag('config', 'G-390C5MY2SS');
     <div class="carte-info">
       <h2>🍮 Pâte à Tartiner Choco-Caramel</h2>
       <p>⏱ 25 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="glaces" onclick="ouvrirFiche('glacevanille')">
+    <img loading="lazy" decoding="async" src="images/glacevanille.webp" alt="Glace Vanille">
+    <div class="carte-info">
+      <h2>🍦 Glace Vanille</h2>
+      <p>⏱ 30 min + turbinage • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="glaces" onclick="ouvrirFiche('glacechocolat')">
+    <img loading="lazy" decoding="async" src="images/glacechocolat.webp" alt="Glace Chocolat">
+    <div class="carte-info">
+      <h2>🍫 Glace Chocolat</h2>
+      <p>⏱ 30 min + turbinage • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="italie" data-cat="glaces" onclick="ouvrirFiche('glacepistache')">
+    <img loading="lazy" decoding="async" src="images/glacepistache.webp" alt="Glace Pistache">
+    <div class="carte-info">
+      <h2>🍨 Glace Pistache</h2>
+      <p>⏱ 30 min + turbinage • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="italie" data-cat="glaces" onclick="ouvrirFiche('glacecafe')">
+    <img loading="lazy" decoding="async" src="images/glacecafe.webp" alt="Glace Café">
+    <div class="carte-info">
+      <h2>☕ Glace Café</h2>
+      <p>⏱ 30 min + turbinage • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="glaces" onclick="ouvrirFiche('glacecaramel')">
+    <img loading="lazy" decoding="async" src="images/glacecaramel.webp" alt="Glace Caramel Beurre Salé">
+    <div class="carte-info">
+      <h2>🍮 Glace Caramel Beurre Salé</h2>
+      <p>⏱ 35 min + turbinage • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="italie" data-cat="glaces" onclick="ouvrirFiche('glacestracciatella')">
+    <img loading="lazy" decoding="async" src="images/glacestracciatella.webp" alt="Glace Stracciatella">
+    <div class="carte-info">
+      <h2>🍨 Glace Stracciatella</h2>
+      <p>⏱ 30 min + turbinage • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="usa" data-cat="glaces" onclick="ouvrirFiche('glacementhe')">
+    <img loading="lazy" decoding="async" src="images/glacementhe.webp" alt="Glace Menthe-Chocolat">
+    <div class="carte-info">
+      <h2>🌿 Glace Menthe-Chocolat</h2>
+      <p>⏱ 30 min + turbinage • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="glaces" onclick="ouvrirFiche('glacerhumraisin')">
+    <img loading="lazy" decoding="async" src="images/glacerhumraisin.webp" alt="Glace Rhum-Raisin">
+    <div class="carte-info">
+      <h2>🍦 Glace Rhum-Raisin</h2>
+      <p>⏱ 30 min + macération • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="glaces" onclick="ouvrirFiche('sorbetcitron')">
+    <img loading="lazy" decoding="async" src="images/sorbetcitron.webp" alt="Sorbet Citron">
+    <div class="carte-info">
+      <h2>🍋 Sorbet Citron</h2>
+      <p>⏱ 15 min + turbinage • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="glaces" onclick="ouvrirFiche('sorbetframboise')">
+    <img loading="lazy" decoding="async" src="images/sorbetframboise.webp" alt="Sorbet Framboise">
+    <div class="carte-info">
+      <h2>🍧 Sorbet Framboise</h2>
+      <p>⏱ 15 min + turbinage • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="monde" data-cat="glaces" onclick="ouvrirFiche('sorbetmangue')">
+    <img loading="lazy" decoding="async" src="images/sorbetmangue.webp" alt="Sorbet Mangue">
+    <div class="carte-info">
+      <h2>🥭 Sorbet Mangue</h2>
+      <p>⏱ 15 min + turbinage • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="monde" data-cat="glaces" onclick="ouvrirFiche('sorbetpassion')">
+    <img loading="lazy" decoding="async" src="images/sorbetpassion.webp" alt="Sorbet Fruit de la Passion">
+    <div class="carte-info">
+      <h2>🍧 Sorbet Fruit de la Passion</h2>
+      <p>⏱ 15 min + turbinage • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="glaces" onclick="ouvrirFiche('sorbetpoire')">
+    <img loading="lazy" decoding="async" src="images/sorbetpoire.webp" alt="Sorbet Poire">
+    <div class="carte-info">
+      <h2>🍐 Sorbet Poire</h2>
+      <p>⏱ 20 min + turbinage • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="glaces" onclick="ouvrirFiche('sorbetfraise')">
+    <img loading="lazy" decoding="async" src="images/sorbetfraise.webp" alt="Sorbet Fraise">
+    <div class="carte-info">
+      <h2>🍓 Sorbet Fraise</h2>
+      <p>⏱ 15 min + turbinage • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="glaces" onclick="ouvrirFiche('vacheringlace')">
+    <img loading="lazy" decoding="async" src="images/vacheringlace.webp" alt="Vacherin Glacé">
+    <div class="carte-info">
+      <h2>🍰 Vacherin Glacé</h2>
+      <p>⏱ 30 min + congélation • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="glaces" onclick="ouvrirFiche('nougatglace')">
+    <img loading="lazy" decoding="async" src="images/nougatglace.webp" alt="Nougat Glacé">
+    <div class="carte-info">
+      <h2>🍯 Nougat Glacé</h2>
+      <p>⏱ 30 min + congélation • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="usa" data-cat="glaces" onclick="ouvrirFiche('bananasplit')">
+    <img loading="lazy" decoding="async" src="images/bananasplit.webp" alt="Banana Split">
+    <div class="carte-info">
+      <h2>🍌 Banana Split</h2>
+      <p>⏱ 15 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="italie" data-cat="glaces" onclick="ouvrirFiche('gelato')">
+    <img loading="lazy" decoding="async" src="images/gelato.webp" alt="Gelato Fior di Latte">
+    <div class="carte-info">
+      <h2>🍨 Gelato Fior di Latte</h2>
+      <p>⏱ 25 min + turbinage • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="inde" data-cat="glaces" onclick="ouvrirFiche('kulfi')">
+    <img loading="lazy" decoding="async" src="images/kulfi.webp" alt="Kulfi">
+    <div class="carte-info">
+      <h2>🍦 Kulfi</h2>
+      <p>⏱ 40 min + congélation • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="italie" data-cat="glaces" onclick="ouvrirFiche('granite')">
+    <img loading="lazy" decoding="async" src="images/granite.webp" alt="Granité Citron">
+    <div class="carte-info">
+      <h2>🧊 Granité Citron</h2>
+      <p>⏱ 10 min + congélation • ⭐ Facile</p>
     </div>
   </div>
 
@@ -6060,41 +6221,42 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=1.4.1"></script>
-<script src="js/allergenes.js?v=1.4.1"></script>
-<script src="js/exceptions.js?v=1.4.1"></script>
-<script src="js/recettes.js?v=1.4.1"></script>
-<script src="js/recettes_plats.js?v=1.4.1"></script>
-<script src="js/recettes_desserts.js?v=1.4.1"></script>
-<script src="js/recettes_soupes.js?v=1.4.1"></script>
-<script src="js/recettes_brunch.js?v=1.4.1"></script>
-<script src="js/recettes_encas.js?v=1.4.1"></script>
-<script src="js/recettes_aperitifs.js?v=1.4.1"></script>
-<script src="js/recettes_healthy.js?v=1.4.1"></script>
-<script src="js/recettes_entrees.js?v=1.4.1"></script>
-<script src="js/recettes_sauces.js?v=1.4.1"></script>
-<script src="js/recettes_tartinables.js?v=1.4.1"></script>
-<script src="js/recettes_boulangerie.js?v=1.4.1"></script>
-<script src="js/recettes_salades.js?v=1.4.1"></script>
-<script src="js/recettes_pizzas.js?v=1.4.1"></script>
-<script src="js/recettes_cocktails.js?v=1.4.1"></script>
-<script src="js/recettes_mocktails.js?v=1.4.1"></script>
-<script src="js/recettes_batch.js?v=1.4.1"></script>
-<script src="js/ingredients_prix.js?v=1.4.1"></script>
-<script src="js/drapeaux.js?v=1.4.1"></script>
-<script src="js/tables.js?v=1.4.1"></script>
-<script src="js/app.js?v=1.4.1"></script>
-<script src="js/emojis.js?v=1.4.1"></script>
-<script src="js/app_avis.js?v=1.4.1"></script>
-<script src="js/app_admin.js?v=1.4.1"></script>
-<script src="js/app_menu.js?v=1.4.1"></script>
-<script src="js/lunchbox.js?v=1.4.1"></script>
-<script src="js/app_courses_impr.js?v=1.4.1"></script>
-<script src="js/app_recherche.js?v=1.4.1"></script>
-<script src="js/app_garde_manger.js?v=1.4.1"></script>
-<script src="js/app_modal_confirm.js?v=1.4.1"></script>
-<script src="js/app_courses.js?v=1.4.1"></script>
-<script src="js/app_stats.js?v=1.4.1"></script>
+<script src="js/version.js?v=1.4.3"></script>
+<script src="js/allergenes.js?v=1.4.3"></script>
+<script src="js/exceptions.js?v=1.4.3"></script>
+<script src="js/recettes.js?v=1.4.3"></script>
+<script src="js/recettes_plats.js?v=1.4.3"></script>
+<script src="js/recettes_desserts.js?v=1.4.3"></script>
+<script src="js/recettes_soupes.js?v=1.4.3"></script>
+<script src="js/recettes_brunch.js?v=1.4.3"></script>
+<script src="js/recettes_encas.js?v=1.4.3"></script>
+<script src="js/recettes_aperitifs.js?v=1.4.3"></script>
+<script src="js/recettes_healthy.js?v=1.4.3"></script>
+<script src="js/recettes_entrees.js?v=1.4.3"></script>
+<script src="js/recettes_sauces.js?v=1.4.3"></script>
+<script src="js/recettes_tartinables.js?v=1.4.3"></script>
+<script src="js/recettes_glaces.js?v=1.4.3"></script>
+<script src="js/recettes_boulangerie.js?v=1.4.3"></script>
+<script src="js/recettes_salades.js?v=1.4.3"></script>
+<script src="js/recettes_pizzas.js?v=1.4.3"></script>
+<script src="js/recettes_cocktails.js?v=1.4.3"></script>
+<script src="js/recettes_mocktails.js?v=1.4.3"></script>
+<script src="js/recettes_batch.js?v=1.4.3"></script>
+<script src="js/ingredients_prix.js?v=1.4.3"></script>
+<script src="js/drapeaux.js?v=1.4.3"></script>
+<script src="js/tables.js?v=1.4.3"></script>
+<script src="js/app.js?v=1.4.3"></script>
+<script src="js/emojis.js?v=1.4.3"></script>
+<script src="js/app_avis.js?v=1.4.3"></script>
+<script src="js/app_admin.js?v=1.4.3"></script>
+<script src="js/app_menu.js?v=1.4.3"></script>
+<script src="js/lunchbox.js?v=1.4.3"></script>
+<script src="js/app_courses_impr.js?v=1.4.3"></script>
+<script src="js/app_recherche.js?v=1.4.3"></script>
+<script src="js/app_garde_manger.js?v=1.4.3"></script>
+<script src="js/app_modal_confirm.js?v=1.4.3"></script>
+<script src="js/app_courses.js?v=1.4.3"></script>
+<script src="js/app_stats.js?v=1.4.3"></script>
 
 
 
@@ -6509,15 +6671,15 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
-<script src="auth.js?v=1.4.1"></script>
-<script src="js/note_recettes.js?v=1.4.1"></script>
-<script src="js/app_contribution.js?v=1.4.1"></script>
-<script src="js/community.js?v=1.4.1"></script>
-<script src="js/whatsnew.js?v=1.4.1"></script>
-<script src="js/amelioration.js?v=1.4.1"></script>
-<script src="js/menu_ajout.js?v=1.4.1"></script>
-<script src="js/app_evenements.js?v=1.4.1"></script>
-<script src="js/app_install_ios.js?v=1.4.1"></script>
+<script src="auth.js?v=1.4.3"></script>
+<script src="js/note_recettes.js?v=1.4.3"></script>
+<script src="js/app_contribution.js?v=1.4.3"></script>
+<script src="js/community.js?v=1.4.3"></script>
+<script src="js/whatsnew.js?v=1.4.3"></script>
+<script src="js/amelioration.js?v=1.4.3"></script>
+<script src="js/menu_ajout.js?v=1.4.3"></script>
+<script src="js/app_evenements.js?v=1.4.3"></script>
+<script src="js/app_install_ios.js?v=1.4.3"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
