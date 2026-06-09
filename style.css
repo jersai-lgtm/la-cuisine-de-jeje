@@ -146,11 +146,6 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 .carte img { width: 100%; height: 160px; object-fit: cover; display: block; }
 .carte-info { padding: 10px 12px 12px; position: relative; }
 .carte-info h2 { margin: 0 0 3px; font-size: 16px; }
-/* Émoji de recette : sur la MÊME ligne que le drapeau + nom (au lieu de passer
-   tout seul à la ligne au-dessus). Ciblé uniquement sur les cartes qui ont un
-   émoji, sans impacter les autres cartes ni les mini-cartes. */
-.carte-info .carte-emoji { display: inline; margin-right: 5px; vertical-align: baseline; }
-.carte-info .carte-emoji + h2 { display: inline; }
 .carte-info > p { margin: 0 0 8px; color: #ddd; font-size: 12px; }
 
 /* ==========================
@@ -1596,11 +1591,6 @@ select, input[type="number"] {
 }
 .mini-carte-emoji { font-size: 14px; }
 .mini-carte-entete { display: flex; align-items: center; gap: 5px; }
-/* Émoji + drapeau sur la MÊME ligne que le nom (émoji ➜ nom, et non émoji puis
-   nom dessous). Le nom reste limité à 2 lignes via son line-clamp. */
-.mini-carte-titre { display: flex; align-items: flex-start; gap: 5px; }
-.mini-carte-titre .mini-carte-entete { flex: none; margin-top: 1px; }
-.mini-carte-titre .mini-carte-nom { flex: 1 1 auto; min-width: 0; }
 .mini-carte-nom {
   font-size: 11px;
   font-weight: 600;
@@ -3011,6 +3001,12 @@ select, input[type="number"] {
   max-width: 900px;
   margin: 0 auto;
   padding-bottom: 100px;
+}
+
+/* L'onglet Admin doit aussi dégager la barre de navigation fixe du bas,
+   sinon les derniers avis passent sous la barre. */
+#section-admin {
+  padding-bottom: 110px;
 }
 
 .cuisine-section h2 {
