@@ -1324,7 +1324,7 @@ Object.assign(recettes, {
   },
   mochiglace: {
     nom: "Mochis Glacés",
-    cat: "desserts", saisons: ["ete"], pays: "japon",
+    cat: "glaces", saisons: ["ete"], pays: "japon",
     base: 4,
     temps: "45 min + congélation",
     niveau: "⭐⭐⭐ Élevé",
@@ -1582,7 +1582,7 @@ Object.assign(recettes, {
   },
   affogatoglace: {
     nom: "Affogato al Caffè",
-    cat: "desserts", pays: "italie",
+    cat: "glaces", pays: "italie",
     base: 2,
     temps: "5 min",
     niveau: "⭐ Facile",
