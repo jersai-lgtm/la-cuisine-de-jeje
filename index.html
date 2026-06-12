@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=1.5.7">
+<link rel="stylesheet" href="style.css?v=1.5.8">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=1.5.7">
+<link rel="stylesheet" href="style.css?v=1.5.8">
 </head>
 
 <body>
@@ -304,6 +304,95 @@ gtag('config', 'G-390C5MY2SS');
 
 <!-- CARTES RECETTES -->
 <section class="cartes" id="section-cartes" style="display:none">
+
+  <div class="carte" data-pays="senegal" data-cat="plats" onclick="ouvrirFiche('yassapoulet')">
+    <img loading="lazy" decoding="async" src="images/y/yassapoulet.webp" alt="Yassa Poulet">
+    <div class="carte-info">
+      <h2>🍗 Yassa Poulet</h2>
+      <p>⏱ 50 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="iran" data-cat="plats" onclick="ouvrirFiche('fesenjan')">
+    <img loading="lazy" decoding="async" src="images/f/fesenjan.webp" alt="Khoresh Fesenjan">
+    <div class="carte-info">
+      <h2>🍗 Khoresh Fesenjan</h2>
+      <p>⏱ 1h30 • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="turquie" data-cat="plats" onclick="ouvrirFiche('iskender')">
+    <img loading="lazy" decoding="async" src="images/i/iskender.webp" alt="İskender Kebab">
+    <div class="carte-info">
+      <h2>🥙 İskender Kebab</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="turquie" data-cat="entrees" onclick="ouvrirFiche('gozleme')">
+    <img loading="lazy" decoding="async" src="images/g/gozleme.webp" alt="Gözleme Épinards-Feta">
+    <div class="carte-info">
+      <h2>🫓 Gözleme Épinards-Feta</h2>
+      <p>⏱ 45 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="venezuela" data-cat="encas" onclick="ouvrirFiche('arepa')">
+    <img loading="lazy" decoding="async" src="images/a/arepa.webp" alt="Arepa Reina Pepiada">
+    <div class="carte-info">
+      <h2>🫓 Arepa Reina Pepiada</h2>
+      <p>⏱ 35 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="colombie" data-cat="soupes" onclick="ouvrirFiche('sancocho')">
+    <img loading="lazy" decoding="async" src="images/s/sancocho.webp" alt="Sancocho">
+    <div class="carte-info">
+      <h2>🍲 Sancocho</h2>
+      <p>⏱ 1h15 • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="turquie" data-cat="soupes" onclick="ouvrirFiche('mercimek')">
+    <img loading="lazy" decoding="async" src="images/m/mercimek.webp" alt="Mercimek Çorbası">
+    <div class="carte-info">
+      <h2>🍲 Mercimek Çorbası</h2>
+      <p>⏱ 35 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="thailande" data-cat="salades" onclick="ouvrirFiche('larb')">
+    <img loading="lazy" decoding="async" src="images/l/larb.webp" alt="Larb">
+    <div class="carte-info">
+      <h2>🥗 Larb</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="liban" data-cat="salades" onclick="ouvrirFiche('fattoush')">
+    <img loading="lazy" decoding="async" src="images/f/fattoush.webp" alt="Fattoush">
+    <div class="carte-info">
+      <h2>🥗 Fattoush</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="turquie" data-cat="desserts" onclick="ouvrirFiche('sutlac')">
+    <img loading="lazy" decoding="async" src="images/s/sutlac.webp" alt="Sütlaç">
+    <div class="carte-info">
+      <h2>🍮 Sütlaç</h2>
+      <p>⏱ 50 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="perou" data-cat="desserts" onclick="ouvrirFiche('picarones')">
+    <img loading="lazy" decoding="async" src="images/p/picarones.webp" alt="Picarones">
+    <div class="carte-info">
+      <h2>🍩 Picarones</h2>
+      <p>⏱ 1h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
 
   <div class="carte" data-pays="france" data-cat="aperitifs" onclick="ouvrirFiche('cakesalejambon')">
     <img loading="lazy" decoding="async" src="images/c/cakesalejambon.webp" alt="Cake salé jambon-olives">
@@ -8418,42 +8507,42 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=1.5.7"></script>
-<script src="js/allergenes.js?v=1.5.7"></script>
-<script src="js/exceptions.js?v=1.5.7"></script>
-<script src="js/recettes.js?v=1.5.7"></script>
-<script src="js/recettes_plats.js?v=1.5.7"></script>
-<script src="js/recettes_desserts.js?v=1.5.7"></script>
-<script src="js/recettes_soupes.js?v=1.5.7"></script>
-<script src="js/recettes_brunch.js?v=1.5.7"></script>
-<script src="js/recettes_encas.js?v=1.5.7"></script>
-<script src="js/recettes_aperitifs.js?v=1.5.7"></script>
-<script src="js/recettes_healthy.js?v=1.5.7"></script>
-<script src="js/recettes_entrees.js?v=1.5.7"></script>
-<script src="js/recettes_sauces.js?v=1.5.7"></script>
-<script src="js/recettes_tartinables.js?v=1.5.7"></script>
-<script src="js/recettes_glaces.js?v=1.5.7"></script>
-<script src="js/recettes_boulangerie.js?v=1.5.7"></script>
-<script src="js/recettes_salades.js?v=1.5.7"></script>
-<script src="js/recettes_pizzas.js?v=1.5.7"></script>
-<script src="js/recettes_cocktails.js?v=1.5.7"></script>
-<script src="js/recettes_mocktails.js?v=1.5.7"></script>
-<script src="js/recettes_batch.js?v=1.5.7"></script>
-<script src="js/ingredients_prix.js?v=1.5.7"></script>
-<script src="js/drapeaux.js?v=1.5.7"></script>
-<script src="js/tables.js?v=1.5.7"></script>
-<script src="js/app.js?v=1.5.7"></script>
-<script src="js/emojis.js?v=1.5.7"></script>
-<script src="js/app_avis.js?v=1.5.7"></script>
-<script src="js/app_admin.js?v=1.5.7"></script>
-<script src="js/app_menu.js?v=1.5.7"></script>
-<script src="js/lunchbox.js?v=1.5.7"></script>
-<script src="js/app_courses_impr.js?v=1.5.7"></script>
-<script src="js/app_recherche.js?v=1.5.7"></script>
-<script src="js/app_garde_manger.js?v=1.5.7"></script>
-<script src="js/app_modal_confirm.js?v=1.5.7"></script>
-<script src="js/app_courses.js?v=1.5.7"></script>
-<script src="js/app_stats.js?v=1.5.7"></script>
+<script src="js/version.js?v=1.5.8"></script>
+<script src="js/allergenes.js?v=1.5.8"></script>
+<script src="js/exceptions.js?v=1.5.8"></script>
+<script src="js/recettes.js?v=1.5.8"></script>
+<script src="js/recettes_plats.js?v=1.5.8"></script>
+<script src="js/recettes_desserts.js?v=1.5.8"></script>
+<script src="js/recettes_soupes.js?v=1.5.8"></script>
+<script src="js/recettes_brunch.js?v=1.5.8"></script>
+<script src="js/recettes_encas.js?v=1.5.8"></script>
+<script src="js/recettes_aperitifs.js?v=1.5.8"></script>
+<script src="js/recettes_healthy.js?v=1.5.8"></script>
+<script src="js/recettes_entrees.js?v=1.5.8"></script>
+<script src="js/recettes_sauces.js?v=1.5.8"></script>
+<script src="js/recettes_tartinables.js?v=1.5.8"></script>
+<script src="js/recettes_glaces.js?v=1.5.8"></script>
+<script src="js/recettes_boulangerie.js?v=1.5.8"></script>
+<script src="js/recettes_salades.js?v=1.5.8"></script>
+<script src="js/recettes_pizzas.js?v=1.5.8"></script>
+<script src="js/recettes_cocktails.js?v=1.5.8"></script>
+<script src="js/recettes_mocktails.js?v=1.5.8"></script>
+<script src="js/recettes_batch.js?v=1.5.8"></script>
+<script src="js/ingredients_prix.js?v=1.5.8"></script>
+<script src="js/drapeaux.js?v=1.5.8"></script>
+<script src="js/tables.js?v=1.5.8"></script>
+<script src="js/app.js?v=1.5.8"></script>
+<script src="js/emojis.js?v=1.5.8"></script>
+<script src="js/app_avis.js?v=1.5.8"></script>
+<script src="js/app_admin.js?v=1.5.8"></script>
+<script src="js/app_menu.js?v=1.5.8"></script>
+<script src="js/lunchbox.js?v=1.5.8"></script>
+<script src="js/app_courses_impr.js?v=1.5.8"></script>
+<script src="js/app_recherche.js?v=1.5.8"></script>
+<script src="js/app_garde_manger.js?v=1.5.8"></script>
+<script src="js/app_modal_confirm.js?v=1.5.8"></script>
+<script src="js/app_courses.js?v=1.5.8"></script>
+<script src="js/app_stats.js?v=1.5.8"></script>
 
 
 
@@ -8868,16 +8957,16 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
-<script src="auth.js?v=1.5.7"></script>
-<script src="js/note_recettes.js?v=1.5.7"></script>
-<script src="js/app_contribution.js?v=1.5.7"></script>
-<script src="js/community.js?v=1.5.7"></script>
-<script src="js/whatsnew.js?v=1.5.7"></script>
-<script src="js/amelioration.js?v=1.5.7"></script>
-<script src="js/menu_ajout.js?v=1.5.7"></script>
-<script src="js/app_evenements.js?v=1.5.7"></script>
-<script src="js/app_aide.js?v=1.5.7"></script>
-<script src="js/app_install_ios.js?v=1.5.7"></script>
+<script src="auth.js?v=1.5.8"></script>
+<script src="js/note_recettes.js?v=1.5.8"></script>
+<script src="js/app_contribution.js?v=1.5.8"></script>
+<script src="js/community.js?v=1.5.8"></script>
+<script src="js/whatsnew.js?v=1.5.8"></script>
+<script src="js/amelioration.js?v=1.5.8"></script>
+<script src="js/menu_ajout.js?v=1.5.8"></script>
+<script src="js/app_evenements.js?v=1.5.8"></script>
+<script src="js/app_aide.js?v=1.5.8"></script>
+<script src="js/app_install_ios.js?v=1.5.8"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
