@@ -867,7 +867,7 @@ function miniCarteFetiche(key, count) {
   const emoji = count >= 4 ? "🔥" : "⭐";
   const label = count >= 4 ? "Plat fétiche" : "Favori du foyer";
   const badgeFreq = `<span class="mini-carte-saison" style="background:rgba(255,140,0,.75)" title="${label} — ${count} fois">${emoji}${count}</span>`;
-  return `<div class="mini-carte" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
+  return `<div class="mini-carte" onclick="ouvrirFiche('${key}','')">
     <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
     ${badgeFam}
     ${badgeFreq}
@@ -1176,7 +1176,7 @@ function miniCarte(key, raisonHTML, opts) {
   // Badge note communautaire (bas-gauche)
   const badgeNote = (typeof noteCommunauteBadgeHTML === "function") ? noteCommunauteBadgeHTML(key, "mini") : "";
 
-  return `<div class="mini-carte" style="${styleAlerte}" title="${titleAlerte}" onclick="ajouterRecent('${key}');ouvrirFiche('${key}','')">
+  return `<div class="mini-carte" style="${styleAlerte}" title="${titleAlerte}" onclick="ouvrirFiche('${key}','')">
     <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
     ${badgeNutri}
     ${badgeNouveau}
