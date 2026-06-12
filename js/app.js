@@ -852,7 +852,8 @@ const IMAGE_EXCEPTIONS = {
 };
 function getImagePath(key) {
   const nom = IMAGE_EXCEPTIONS[key] || key;
-  return `images/${nom}.webp`;
+  const sous = (nom.charAt(0) || "_").toLowerCase();
+  return `images/${sous}/${nom}.webp`;
 }
 
 function miniCarteFetiche(key, count) {

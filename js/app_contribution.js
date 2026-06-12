@@ -30,7 +30,7 @@ window.injecterCartesPerso = function () {
     carte.setAttribute("data-pays", r.pays || "france");
     carte.setAttribute("onclick", `ouvrirFiche('${key}', null)`);
     carte.innerHTML =
-      `<img src="${r.image || "images/" + key + ".webp"}" alt="${r.nom || key}" onerror="this.style.display='none'">
+      `<img src="${r.image || "images/" + (key.charAt(0)||"_").toLowerCase() + "/" + key + ".webp"}" alt="${r.nom || key}" onerror="this.style.display='none'">
       <span class="carte-badge-perso" title="Ta recette perso">👤 Perso</span>
       <div class="carte-info">
         <h2>${r.emoji || "🍽️"} ${r.nom || key}</h2>
@@ -261,7 +261,7 @@ window.injecterCartesCommunaute = function () {
     carte.setAttribute("data-pays", r.pays || "france");
     carte.setAttribute("onclick", `ouvrirFiche('${key}', null)`);
     carte.innerHTML =
-      `<img src="${r.image || "images/" + key + ".webp"}" alt="${r.nom || key}" onerror="this.style.display='none'">
+      `<img src="${r.image || "images/" + (key.charAt(0)||"_").toLowerCase() + "/" + key + ".webp"}" alt="${r.nom || key}" onerror="this.style.display='none'">
       <span class="carte-badge-com" title="Recette de la communauté — par ${r.prenom || "un membre"}">🌍 ${r.prenom || "Communauté"}</span>
       <div class="carte-info">
         <h2>${r.emoji || "🍽️"} ${r.nom || key}</h2>

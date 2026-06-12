@@ -130,7 +130,7 @@ function genererCartesManquantes() {
     if (!r) return;
     const nom    = (typeof getNomRecette === "function") ? getNomRecette(key) : key;
     const emoji  = r.emoji || "🍽️";
-    const img    = (typeof getImagePath === "function") ? getImagePath(key) : ("images/" + key + ".webp");
+    const img    = (typeof getImagePath === "function") ? getImagePath(key) : ("images/" + (key.charAt(0)||"_").toLowerCase() + "/" + key + ".webp");
     const cat    = r.cat || "";
     const pays   = r.pays || "";
     const meta   = [r.temps ? ("⏱ " + r.temps) : "", r.niveau || ""].filter(Boolean).join(" • ");
