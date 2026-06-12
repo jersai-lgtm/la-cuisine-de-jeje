@@ -1754,4 +1754,40 @@ oeufmayo: {
       { icone: "🍽️", titre: "Servir", detail: "Servir tiède en entrée ou mezze.", badge: null }
     ]
   },
+  gozleme: {
+    nom: "Gözleme Épinards-Feta",
+    dateAjout: "2026-06-12T14:03:00",
+    cat: "entrees", pays: "turquie",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Galette turque très fine, pliée et dorée à la poêle, garnie d'épinards et de feta.",
+    tableauGozleme: [
+      {nb:1, farine:"75 g", epinards:"60 g", feta:"40 g", oignon:"1", beurre:"5 g", sel:"selon envie"},
+      {nb:2, farine:"150 g", epinards:"120 g", feta:"80 g", oignon:"1", beurre:"10 g", sel:"selon envie"},
+      {nb:3, farine:"225 g", epinards:"180 g", feta:"120 g", oignon:"2", beurre:"15 g", sel:"selon envie"},
+      {nb:4, farine:"300 g", epinards:"240 g", feta:"160 g", oignon:"2", beurre:"20 g", sel:"selon envie"},
+      {nb:5, farine:"375 g", epinards:"300 g", feta:"200 g", oignon:"3", beurre:"25 g", sel:"selon envie"},
+      {nb:6, farine:"450 g", epinards:"360 g", feta:"240 g", oignon:"3", beurre:"30 g", sel:"selon envie"},
+      {nb:7, farine:"525 g", epinards:"420 g", feta:"280 g", oignon:"4", beurre:"35 g", sel:"selon envie"},
+      {nb:8, farine:"600 g", epinards:"480 g", feta:"320 g", oignon:"4", beurre:"40 g", sel:"selon envie"},
+      {nb:9, farine:"675 g", epinards:"540 g", feta:"360 g", oignon:"5", beurre:"45 g", sel:"selon envie"},
+      {nb:10, farine:"750 g", epinards:"600 g", feta:"400 g", oignon:"5", beurre:"50 g", sel:"selon envie"},
+      {nb:11, farine:"825 g", epinards:"660 g", feta:"440 g", oignon:"6", beurre:"55 g", sel:"selon envie"},
+      {nb:12, farine:"900 g", epinards:"720 g", feta:"480 g", oignon:"6", beurre:"60 g", sel:"selon envie"},
+      {nb:13, farine:"975 g", epinards:"780 g", feta:"520 g", oignon:"7", beurre:"65 g", sel:"selon envie"},
+      {nb:14, farine:"1050 g", epinards:"840 g", feta:"560 g", oignon:"7", beurre:"70 g", sel:"selon envie"},
+      {nb:15, farine:"1125 g", epinards:"900 g", feta:"600 g", oignon:"8", beurre:"75 g", sel:"selon envie"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🥣", titre:"Pâte", detail:"Pétrir farine, eau et sel en une pâte souple, puis laisser reposer 20 min sous un linge.", badge:"⏱ 20 min"},
+      {icone:"🥬", titre:"Garniture", detail:"Faire tomber les épinards avec l'oignon, laisser refroidir puis mélanger à la feta émiettée.", badge:"🥬 Farce"},
+      {icone:"🌀", titre:"Étaler finement", detail:"Abaisser la pâte le plus finement possible en un grand disque. ASTUCE CHEF : plus la galette est fine, plus elle sera croustillante — n'hésitez pas à la rendre presque translucide.", badge:"🌀 Façonnage"},
+      {icone:"📦", titre:"Garnir et plier", detail:"Répartir la garniture sur une moitié et replier en rabattant les bords pour former un carré.", badge:"📦 Pliage"},
+      {icone:"🍳", titre:"Cuire", detail:"Cuire à la poêle sèche 2-3 min par face jusqu'à ce que la galette soit dorée et croustillante.", badge:"🔥 Cuisson"},
+      {icone:"🧈", titre:"Servir", detail:"Badigeonner d'un voile de beurre fondu et servir chaud, coupé en parts.", badge:"🍽️ Dressage"}
+    ]
+  },
 });

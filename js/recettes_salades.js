@@ -1181,4 +1181,77 @@ Object.assign(recettes, {
       { icone: "🥒", titre: "Servir", detail: "Servir froid avec concombre.", badge: null }
     ]
   },
+  larb: {
+    nom: "Larb",
+    dateAjout: "2026-06-12T14:07:00",
+    cat: "salades", pays: "thailande",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Salade thaï-lao de viande hachée sautée, vibrante d'herbes fraîches et de citron vert.",
+    tableauLarb: [
+      {nb:1, viandehachee:"150 g", echalote:"1", citronvert:"1", rizgrille:"1 c.à.c", nuocmam:"1 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:2, viandehachee:"300 g", echalote:"2", citronvert:"1", rizgrille:"2 c.à.c", nuocmam:"2 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:3, viandehachee:"450 g", echalote:"3", citronvert:"2", rizgrille:"3 c.à.c", nuocmam:"3 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:4, viandehachee:"600 g", echalote:"4", citronvert:"2", rizgrille:"4 c.à.c", nuocmam:"4 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:5, viandehachee:"750 g", echalote:"5", citronvert:"3", rizgrille:"5 c.à.c", nuocmam:"5 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:6, viandehachee:"900 g", echalote:"6", citronvert:"3", rizgrille:"6 c.à.c", nuocmam:"6 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:7, viandehachee:"1050 g", echalote:"7", citronvert:"4", rizgrille:"7 c.à.c", nuocmam:"7 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:8, viandehachee:"1200 g", echalote:"8", citronvert:"4", rizgrille:"8 c.à.c", nuocmam:"8 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:9, viandehachee:"1350 g", echalote:"9", citronvert:"5", rizgrille:"9 c.à.c", nuocmam:"9 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:10, viandehachee:"1500 g", echalote:"10", citronvert:"5", rizgrille:"10 c.à.c", nuocmam:"10 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:11, viandehachee:"1650 g", echalote:"11", citronvert:"6", rizgrille:"11 c.à.c", nuocmam:"11 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:12, viandehachee:"1800 g", echalote:"12", citronvert:"6", rizgrille:"12 c.à.c", nuocmam:"12 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:13, viandehachee:"1950 g", echalote:"13", citronvert:"7", rizgrille:"13 c.à.c", nuocmam:"13 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:14, viandehachee:"2100 g", echalote:"14", citronvert:"7", rizgrille:"14 c.à.c", nuocmam:"14 c.à.c", menthe:"selon envie", coriandre:"selon envie"},
+      {nb:15, viandehachee:"2250 g", echalote:"15", citronvert:"8", rizgrille:"15 c.à.c", nuocmam:"15 c.à.c", menthe:"selon envie", coriandre:"selon envie"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🍚", titre:"Riz grillé", detail:"Torréfier du riz cru à sec puis le piler grossièrement en poudre. ASTUCE CHEF : ce riz grillé moulu (khao khua) est l'âme du larb — il apporte le parfum noisette et la texture typiques.", badge:"🍚 Khao khua"},
+      {icone:"🔥", titre:"Saisir la viande", detail:"Cuire la viande hachée à feu vif en l'émiettant, sans matière grasse.", badge:"🔥 Cuisson"},
+      {icone:"💧", titre:"Assaisonner", detail:"Hors du feu, assaisonner avec le nuoc-mâm et le jus de citron vert.", badge:"🍋 Assaisonnement"},
+      {icone:"🌿", titre:"Herbes", detail:"Ajouter l'échalote émincée, la menthe et la coriandre ciselées en abondance.", badge:"🌿 Fraîcheur"},
+      {icone:"🥄", titre:"Riz grillé", detail:"Incorporer le riz grillé moulu qui va absorber les jus et lier la salade.", badge:"🥄 Liant"},
+      {icone:"🥬", titre:"Servir", detail:"Servir tiède avec des feuilles de salade ou de chou pour s'en faire des bouchées.", badge:"🍽️ Dressage"}
+    ]
+  },
+
+  fattoush: {
+    nom: "Fattoush",
+    dateAjout: "2026-06-12T14:08:00",
+    cat: "salades", pays: "liban",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Salade libanaise croquante au pain pita grillé et vinaigrette au sumac acidulé.",
+    tableauFattoush: [
+      {nb:1, painpita:"1", tomate:"1", concombre:"1", radis:"2", laitue:"30 g", sumac:"selon envie", huileolive:"1 c.à.s", menthe:"selon envie"},
+      {nb:2, painpita:"1", tomate:"2", concombre:"1", radis:"4", laitue:"60 g", sumac:"selon envie", huileolive:"2 c.à.s", menthe:"selon envie"},
+      {nb:3, painpita:"2", tomate:"3", concombre:"2", radis:"6", laitue:"90 g", sumac:"selon envie", huileolive:"3 c.à.s", menthe:"selon envie"},
+      {nb:4, painpita:"2", tomate:"4", concombre:"2", radis:"8", laitue:"120 g", sumac:"selon envie", huileolive:"4 c.à.s", menthe:"selon envie"},
+      {nb:5, painpita:"3", tomate:"5", concombre:"3", radis:"10", laitue:"150 g", sumac:"selon envie", huileolive:"5 c.à.s", menthe:"selon envie"},
+      {nb:6, painpita:"3", tomate:"6", concombre:"3", radis:"12", laitue:"180 g", sumac:"selon envie", huileolive:"6 c.à.s", menthe:"selon envie"},
+      {nb:7, painpita:"4", tomate:"7", concombre:"4", radis:"14", laitue:"210 g", sumac:"selon envie", huileolive:"7 c.à.s", menthe:"selon envie"},
+      {nb:8, painpita:"4", tomate:"8", concombre:"4", radis:"16", laitue:"240 g", sumac:"selon envie", huileolive:"8 c.à.s", menthe:"selon envie"},
+      {nb:9, painpita:"5", tomate:"9", concombre:"5", radis:"18", laitue:"270 g", sumac:"selon envie", huileolive:"9 c.à.s", menthe:"selon envie"},
+      {nb:10, painpita:"5", tomate:"10", concombre:"5", radis:"20", laitue:"300 g", sumac:"selon envie", huileolive:"10 c.à.s", menthe:"selon envie"},
+      {nb:11, painpita:"6", tomate:"11", concombre:"6", radis:"22", laitue:"330 g", sumac:"selon envie", huileolive:"11 c.à.s", menthe:"selon envie"},
+      {nb:12, painpita:"6", tomate:"12", concombre:"6", radis:"24", laitue:"360 g", sumac:"selon envie", huileolive:"12 c.à.s", menthe:"selon envie"},
+      {nb:13, painpita:"7", tomate:"13", concombre:"7", radis:"26", laitue:"390 g", sumac:"selon envie", huileolive:"13 c.à.s", menthe:"selon envie"},
+      {nb:14, painpita:"7", tomate:"14", concombre:"7", radis:"28", laitue:"420 g", sumac:"selon envie", huileolive:"14 c.à.s", menthe:"selon envie"},
+      {nb:15, painpita:"8", tomate:"15", concombre:"8", radis:"30", laitue:"450 g", sumac:"selon envie", huileolive:"15 c.à.s", menthe:"selon envie"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🥖", titre:"Pain grillé", detail:"Toaster le pain pita jusqu'à ce qu'il soit doré et bien croustillant, puis le briser en morceaux.", badge:"🔥 Toast"},
+      {icone:"🔪", titre:"Légumes", detail:"Couper tomates, concombre et radis en morceaux, ciseler la laitue.", badge:"🔪 Découpe"},
+      {icone:"🍶", titre:"Vinaigrette", detail:"Préparer une vinaigrette huile d'olive, citron et sumac généreux.", badge:"🍶 Sauce"},
+      {icone:"🥗", titre:"Mélanger", detail:"Réunir les légumes, la menthe et la vinaigrette et mélanger délicatement.", badge:"🥗 Assemblage"},
+      {icone:"🥖", titre:"Ajouter le pain", detail:"Ajouter le pain pita au tout dernier moment. ASTUCE CHEF : incorporé juste avant de servir, il garde son croustillant — ajouté trop tôt, il ramollit.", badge:"⏱ Au dernier moment"},
+      {icone:"🍽️", titre:"Servir", detail:"Saupoudrer d'un voile de sumac supplémentaire et servir aussitôt.", badge:"🍽️ Dressage"}
+    ]
+  },
 });

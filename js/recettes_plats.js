@@ -12069,4 +12069,114 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir avec du pain plat.", badge: null }
     ]
   },
+  yassapoulet: {
+    nom: "Yassa Poulet",
+    dateAjout: "2026-06-12T14:00:00",
+    cat: "plats", pays: "senegal",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍗",
+    description: "Le grand classique sénégalais : poulet mariné au citron et fondue généreuse d'oignons confits.",
+    tableauYassapoulet: [
+      {nb:1, poulet:"200 g", oignon:"2", citron:"1", moutarde:"1 c.à.c", ail:"1", riz:"80 g", huileolive:"1 c.à.s"},
+      {nb:2, poulet:"400 g", oignon:"3", citron:"1", moutarde:"2 c.à.c", ail:"2", riz:"160 g", huileolive:"2 c.à.s"},
+      {nb:3, poulet:"600 g", oignon:"5", citron:"2", moutarde:"3 c.à.c", ail:"3", riz:"240 g", huileolive:"3 c.à.s"},
+      {nb:4, poulet:"800 g", oignon:"6", citron:"2", moutarde:"4 c.à.c", ail:"4", riz:"320 g", huileolive:"4 c.à.s"},
+      {nb:5, poulet:"1000 g", oignon:"8", citron:"3", moutarde:"5 c.à.c", ail:"5", riz:"400 g", huileolive:"5 c.à.s"},
+      {nb:6, poulet:"1200 g", oignon:"9", citron:"3", moutarde:"6 c.à.c", ail:"6", riz:"480 g", huileolive:"6 c.à.s"},
+      {nb:7, poulet:"1400 g", oignon:"11", citron:"4", moutarde:"7 c.à.c", ail:"7", riz:"560 g", huileolive:"7 c.à.s"},
+      {nb:8, poulet:"1600 g", oignon:"12", citron:"4", moutarde:"8 c.à.c", ail:"8", riz:"640 g", huileolive:"8 c.à.s"},
+      {nb:9, poulet:"1800 g", oignon:"14", citron:"5", moutarde:"9 c.à.c", ail:"9", riz:"720 g", huileolive:"9 c.à.s"},
+      {nb:10, poulet:"2000 g", oignon:"15", citron:"5", moutarde:"10 c.à.c", ail:"10", riz:"800 g", huileolive:"10 c.à.s"},
+      {nb:11, poulet:"2200 g", oignon:"17", citron:"6", moutarde:"11 c.à.c", ail:"11", riz:"880 g", huileolive:"11 c.à.s"},
+      {nb:12, poulet:"2400 g", oignon:"18", citron:"6", moutarde:"12 c.à.c", ail:"12", riz:"960 g", huileolive:"12 c.à.s"},
+      {nb:13, poulet:"2600 g", oignon:"20", citron:"7", moutarde:"13 c.à.c", ail:"13", riz:"1040 g", huileolive:"13 c.à.s"},
+      {nb:14, poulet:"2800 g", oignon:"21", citron:"7", moutarde:"14 c.à.c", ail:"14", riz:"1120 g", huileolive:"14 c.à.s"},
+      {nb:15, poulet:"3000 g", oignon:"23", citron:"8", moutarde:"15 c.à.c", ail:"15", riz:"1200 g", huileolive:"15 c.à.s"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🍋", titre:"Mariner le poulet", detail:"Mélanger jus de citron, moutarde, ail et oignon émincé, et y faire mariner les morceaux de poulet au moins 30 min. ASTUCE CHEF : une marinade d'une nuit au frigo décuple le parfum citronné.", badge:"⏱ 30 min"},
+      {icone:"🔥", titre:"Saisir le poulet", detail:"Égoutter le poulet (réserver la marinade) et le colorer sur toutes les faces dans un peu d'huile. Réserver.", badge:"🔥 Cuisson"},
+      {icone:"🧅", titre:"Confire les oignons", detail:"Dans la même cocotte, faire fondre tous les oignons à feu doux jusqu'à ce qu'ils deviennent translucides et dorés, 15 min.", badge:"⏱ 15 min"},
+      {icone:"🥄", titre:"Déglacer", detail:"Ajouter la marinade réservée et laisser réduire quelques minutes pour adoucir l'acidité du citron.", badge:"🍋 Sauce"},
+      {icone:"🍲", titre:"Mijoter", detail:"Remettre le poulet, couvrir d'un peu d'eau ou de bouillon et laisser mijoter 20 min jusqu'à ce que la viande soit fondante.", badge:"⏱ 20 min"},
+      {icone:"🍚", titre:"Servir", detail:"Servir le yassa nappé d'oignons sur un riz blanc bien chaud.", badge:"🍽️ Dressage"}
+    ]
+  },
+
+  fesenjan: {
+    nom: "Khoresh Fesenjan",
+    dateAjout: "2026-06-12T14:01:00",
+    cat: "plats", pays: "iran",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍗",
+    description: "Ragoût persan emblématique : poulet mijoté dans une sauce onctueuse de noix et mélasse de grenade.",
+    tableauFesenjan: [
+      {nb:1, poulet:"200 g", noixmoulues:"60 g", melassegrenade:"2 c.à.s", oignon:"1", sucre:"1 c.à.c", riz:"80 g"},
+      {nb:2, poulet:"400 g", noixmoulues:"120 g", melassegrenade:"4 c.à.s", oignon:"2", sucre:"2 c.à.c", riz:"160 g"},
+      {nb:3, poulet:"600 g", noixmoulues:"180 g", melassegrenade:"6 c.à.s", oignon:"3", sucre:"3 c.à.c", riz:"240 g"},
+      {nb:4, poulet:"800 g", noixmoulues:"240 g", melassegrenade:"8 c.à.s", oignon:"4", sucre:"4 c.à.c", riz:"320 g"},
+      {nb:5, poulet:"1000 g", noixmoulues:"300 g", melassegrenade:"10 c.à.s", oignon:"5", sucre:"5 c.à.c", riz:"400 g"},
+      {nb:6, poulet:"1200 g", noixmoulues:"360 g", melassegrenade:"12 c.à.s", oignon:"6", sucre:"6 c.à.c", riz:"480 g"},
+      {nb:7, poulet:"1400 g", noixmoulues:"420 g", melassegrenade:"14 c.à.s", oignon:"7", sucre:"7 c.à.c", riz:"560 g"},
+      {nb:8, poulet:"1600 g", noixmoulues:"480 g", melassegrenade:"16 c.à.s", oignon:"8", sucre:"8 c.à.c", riz:"640 g"},
+      {nb:9, poulet:"1800 g", noixmoulues:"540 g", melassegrenade:"18 c.à.s", oignon:"9", sucre:"9 c.à.c", riz:"720 g"},
+      {nb:10, poulet:"2000 g", noixmoulues:"600 g", melassegrenade:"20 c.à.s", oignon:"10", sucre:"10 c.à.c", riz:"800 g"},
+      {nb:11, poulet:"2200 g", noixmoulues:"660 g", melassegrenade:"22 c.à.s", oignon:"11", sucre:"11 c.à.c", riz:"880 g"},
+      {nb:12, poulet:"2400 g", noixmoulues:"720 g", melassegrenade:"24 c.à.s", oignon:"12", sucre:"12 c.à.c", riz:"960 g"},
+      {nb:13, poulet:"2600 g", noixmoulues:"780 g", melassegrenade:"26 c.à.s", oignon:"13", sucre:"13 c.à.c", riz:"1040 g"},
+      {nb:14, poulet:"2800 g", noixmoulues:"840 g", melassegrenade:"28 c.à.s", oignon:"14", sucre:"14 c.à.c", riz:"1120 g"},
+      {nb:15, poulet:"3000 g", noixmoulues:"900 g", melassegrenade:"30 c.à.s", oignon:"15", sucre:"15 c.à.c", riz:"1200 g"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🥜", titre:"Torréfier les noix", detail:"Faire torréfier les noix moulues à sec quelques minutes jusqu'à ce qu'elles embaument, puis réserver.", badge:"🔥 Torréfaction"},
+      {icone:"🧅", titre:"Fondre l'oignon", detail:"Faire revenir l'oignon émincé jusqu'à coloration, puis ajouter le poulet et le saisir.", badge:"⏱ 10 min"},
+      {icone:"🥣", titre:"Monter la sauce", detail:"Ajouter les noix, la mélasse de grenade et de l'eau pour couvrir. La sauce va épaissir et brunir doucement.", badge:"🍶 Sauce"},
+      {icone:"⏳", titre:"Mijoter longuement", detail:"Laisser mijoter à couvert au moins 1 h à feu très doux en remuant. ASTUCE CHEF : plus le fesenjan mijote, plus la sauce fonce et devient soyeuse — ne précipitez rien.", badge:"⏱ 60 min"},
+      {icone:"⚖️", titre:"Équilibrer", detail:"Goûter et ajuster l'équilibre aigre-doux avec le sucre selon l'acidité de la mélasse.", badge:"⚖️ Équilibre"},
+      {icone:"🍚", titre:"Servir", detail:"Servir bien chaud sur un riz basmati vapeur.", badge:"🍽️ Dressage"}
+    ]
+  },
+
+  iskender: {
+    nom: "İskender Kebab",
+    dateAjout: "2026-06-12T14:02:00",
+    cat: "plats", pays: "turquie",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥙",
+    description: "Spécialité de Bursa : lamelles de viande sur pain pita, nappées de sauce tomate, beurre noisette et yaourt.",
+    tableauIskender: [
+      {nb:1, viandehachee:"180 g", painpita:"1", saucetomate:"100 g", yaourt:"80 g", beurre:"15 g", persil:"selon envie"},
+      {nb:2, viandehachee:"360 g", painpita:"2", saucetomate:"200 g", yaourt:"160 g", beurre:"30 g", persil:"selon envie"},
+      {nb:3, viandehachee:"540 g", painpita:"3", saucetomate:"300 g", yaourt:"240 g", beurre:"45 g", persil:"selon envie"},
+      {nb:4, viandehachee:"720 g", painpita:"4", saucetomate:"400 g", yaourt:"320 g", beurre:"60 g", persil:"selon envie"},
+      {nb:5, viandehachee:"900 g", painpita:"5", saucetomate:"500 g", yaourt:"400 g", beurre:"75 g", persil:"selon envie"},
+      {nb:6, viandehachee:"1080 g", painpita:"6", saucetomate:"600 g", yaourt:"480 g", beurre:"90 g", persil:"selon envie"},
+      {nb:7, viandehachee:"1260 g", painpita:"7", saucetomate:"700 g", yaourt:"560 g", beurre:"105 g", persil:"selon envie"},
+      {nb:8, viandehachee:"1440 g", painpita:"8", saucetomate:"800 g", yaourt:"640 g", beurre:"120 g", persil:"selon envie"},
+      {nb:9, viandehachee:"1620 g", painpita:"9", saucetomate:"900 g", yaourt:"720 g", beurre:"135 g", persil:"selon envie"},
+      {nb:10, viandehachee:"1800 g", painpita:"10", saucetomate:"1000 g", yaourt:"800 g", beurre:"150 g", persil:"selon envie"},
+      {nb:11, viandehachee:"1980 g", painpita:"11", saucetomate:"1100 g", yaourt:"880 g", beurre:"165 g", persil:"selon envie"},
+      {nb:12, viandehachee:"2160 g", painpita:"12", saucetomate:"1200 g", yaourt:"960 g", beurre:"180 g", persil:"selon envie"},
+      {nb:13, viandehachee:"2340 g", painpita:"13", saucetomate:"1300 g", yaourt:"1040 g", beurre:"195 g", persil:"selon envie"},
+      {nb:14, viandehachee:"2520 g", painpita:"14", saucetomate:"1400 g", yaourt:"1120 g", beurre:"210 g", persil:"selon envie"},
+      {nb:15, viandehachee:"2700 g", painpita:"15", saucetomate:"1500 g", yaourt:"1200 g", beurre:"225 g", persil:"selon envie"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🔪", titre:"Préparer le pain", detail:"Couper le pain pita en petits dés et les disposer au fond des assiettes.", badge:"🔪 Découpe"},
+      {icone:"🔥", titre:"Griller la viande", detail:"Saisir la viande en fines lamelles bien dorées et juteuses.", badge:"🔥 Cuisson"},
+      {icone:"🍅", titre:"Sauce tomate", detail:"Réchauffer la sauce tomate et en napper généreusement le pain et la viande.", badge:"🍅 Sauce"},
+      {icone:"🧈", titre:"Beurre noisette", detail:"Faire mousser le beurre jusqu'à couleur noisette. ASTUCE CHEF : versé brûlant sur l'assiette, le beurre noisette fait grésiller le plat et libère tout son arôme.", badge:"🧈 Finition"},
+      {icone:"🥄", titre:"Yaourt", detail:"Ajouter une cuillère de yaourt nature frais sur le côté.", badge:"🥛 Fraîcheur"},
+      {icone:"🌿", titre:"Servir", detail:"Parsemer de persil et servir aussitôt, bien chaud.", badge:"🍽️ Dressage"}
+    ]
+  },
 });

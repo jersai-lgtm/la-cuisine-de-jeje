@@ -2485,4 +2485,77 @@ Object.assign(recettes, {
       { icone: "🥣", titre: "Servir", detail: "Servir tel quel ou sur du riz.", badge: null }
     ]
   },
+  sancocho: {
+    nom: "Sancocho",
+    dateAjout: "2026-06-12T14:05:00",
+    cat: "soupes", pays: "colombie",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Soupe-repas latino-américaine, généreuse de poulet, maïs et tubercules.",
+    tableauSancocho: [
+      {nb:1, poulet:"150 g", maisepi:"1", pommedeterre:"120 g", manioc:"80 g", plantain:"1", oignon:"1", coriandre:"selon envie"},
+      {nb:2, poulet:"300 g", maisepi:"1", pommedeterre:"240 g", manioc:"160 g", plantain:"1", oignon:"1", coriandre:"selon envie"},
+      {nb:3, poulet:"450 g", maisepi:"2", pommedeterre:"360 g", manioc:"240 g", plantain:"2", oignon:"2", coriandre:"selon envie"},
+      {nb:4, poulet:"600 g", maisepi:"2", pommedeterre:"480 g", manioc:"320 g", plantain:"2", oignon:"2", coriandre:"selon envie"},
+      {nb:5, poulet:"750 g", maisepi:"3", pommedeterre:"600 g", manioc:"400 g", plantain:"3", oignon:"3", coriandre:"selon envie"},
+      {nb:6, poulet:"900 g", maisepi:"3", pommedeterre:"720 g", manioc:"480 g", plantain:"3", oignon:"3", coriandre:"selon envie"},
+      {nb:7, poulet:"1050 g", maisepi:"4", pommedeterre:"840 g", manioc:"560 g", plantain:"4", oignon:"4", coriandre:"selon envie"},
+      {nb:8, poulet:"1200 g", maisepi:"4", pommedeterre:"960 g", manioc:"640 g", plantain:"4", oignon:"4", coriandre:"selon envie"},
+      {nb:9, poulet:"1350 g", maisepi:"5", pommedeterre:"1080 g", manioc:"720 g", plantain:"5", oignon:"5", coriandre:"selon envie"},
+      {nb:10, poulet:"1500 g", maisepi:"5", pommedeterre:"1200 g", manioc:"800 g", plantain:"5", oignon:"5", coriandre:"selon envie"},
+      {nb:11, poulet:"1650 g", maisepi:"6", pommedeterre:"1320 g", manioc:"880 g", plantain:"6", oignon:"6", coriandre:"selon envie"},
+      {nb:12, poulet:"1800 g", maisepi:"6", pommedeterre:"1440 g", manioc:"960 g", plantain:"6", oignon:"6", coriandre:"selon envie"},
+      {nb:13, poulet:"1950 g", maisepi:"7", pommedeterre:"1560 g", manioc:"1040 g", plantain:"7", oignon:"7", coriandre:"selon envie"},
+      {nb:14, poulet:"2100 g", maisepi:"7", pommedeterre:"1680 g", manioc:"1120 g", plantain:"7", oignon:"7", coriandre:"selon envie"},
+      {nb:15, poulet:"2250 g", maisepi:"8", pommedeterre:"1800 g", manioc:"1200 g", plantain:"8", oignon:"8", coriandre:"selon envie"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🍗", titre:"Bouillon", detail:"Faire frémir le poulet avec l'oignon dans une grande marmite d'eau, écumer.", badge:"⏱ 20 min"},
+      {icone:"🌽", titre:"Maïs", detail:"Ajouter les tronçons de maïs et poursuivre la cuisson 15 min.", badge:"🌽 Cuisson"},
+      {icone:"🥔", titre:"Tubercules", detail:"Incorporer pomme de terre, manioc et plantain, et laisser cuire jusqu'à tendreté.", badge:"⏱ 25 min"},
+      {icone:"⏳", titre:"Mijoter", detail:"Laisser mijoter à découvert pour que le bouillon s'enrichisse. ASTUCE CHEF : un morceau de plantain bien mûr fond légèrement et donne un bouillon naturellement velouté et sucré.", badge:"⏱ 15 min"},
+      {icone:"🌿", titre:"Herbes", detail:"Ajouter la coriandre fraîche en fin de cuisson et rectifier l'assaisonnement.", badge:"🌿 Parfum"},
+      {icone:"🍽️", titre:"Servir", detail:"Servir le bouillon et les morceaux ensemble, accompagnés de riz si désiré.", badge:"🍽️ Dressage"}
+    ]
+  },
+
+  mercimek: {
+    nom: "Mercimek Çorbası",
+    dateAjout: "2026-06-12T14:06:00",
+    cat: "soupes", pays: "turquie",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "Velouté turc de lentilles corail, parfumé au cumin et relevé d'un trait de citron.",
+    tableauMercimek: [
+      {nb:1, lentillescorail:"50 g", oignon:"1", carotte:"1", pommedeterre:"40 g", beurre:"5 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:2, lentillescorail:"100 g", oignon:"1", carotte:"1", pommedeterre:"80 g", beurre:"10 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:3, lentillescorail:"150 g", oignon:"2", carotte:"2", pommedeterre:"120 g", beurre:"15 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:4, lentillescorail:"200 g", oignon:"2", carotte:"2", pommedeterre:"160 g", beurre:"20 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:5, lentillescorail:"250 g", oignon:"3", carotte:"3", pommedeterre:"200 g", beurre:"25 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:6, lentillescorail:"300 g", oignon:"3", carotte:"3", pommedeterre:"240 g", beurre:"30 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:7, lentillescorail:"350 g", oignon:"4", carotte:"4", pommedeterre:"280 g", beurre:"35 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:8, lentillescorail:"400 g", oignon:"4", carotte:"4", pommedeterre:"320 g", beurre:"40 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:9, lentillescorail:"450 g", oignon:"5", carotte:"5", pommedeterre:"360 g", beurre:"45 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:10, lentillescorail:"500 g", oignon:"5", carotte:"5", pommedeterre:"400 g", beurre:"50 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:11, lentillescorail:"550 g", oignon:"6", carotte:"6", pommedeterre:"440 g", beurre:"55 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:12, lentillescorail:"600 g", oignon:"6", carotte:"6", pommedeterre:"480 g", beurre:"60 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:13, lentillescorail:"650 g", oignon:"7", carotte:"7", pommedeterre:"520 g", beurre:"65 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:14, lentillescorail:"700 g", oignon:"7", carotte:"7", pommedeterre:"560 g", beurre:"70 g", cumin:"selon envie", citron:"selon envie"},
+      {nb:15, lentillescorail:"750 g", oignon:"8", carotte:"8", pommedeterre:"600 g", beurre:"75 g", cumin:"selon envie", citron:"selon envie"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🧅", titre:"Revenir les légumes", detail:"Faire suer l'oignon, la carotte et la pomme de terre en dés dans un peu de matière grasse.", badge:"⏱ 5 min"},
+      {icone:"🫘", titre:"Lentilles", detail:"Ajouter les lentilles corail rincées et couvrir d'eau ou de bouillon.", badge:"🫘 Cuisson"},
+      {icone:"⏳", titre:"Mijoter", detail:"Laisser cuire 20 min jusqu'à ce que lentilles et légumes soient bien tendres.", badge:"⏱ 20 min"},
+      {icone:"🌀", titre:"Mixer", detail:"Mixer finement pour obtenir un velouté parfaitement lisse. ASTUCE CHEF : pour la touche turque, faites fondre le beurre avec une pointe de paprika et versez-le en filet sur la soupe.", badge:"🌀 Texture"},
+      {icone:"🧈", titre:"Beurre-paprika", detail:"Arroser chaque bol du beurre fondu coloré pour le décor et le goût.", badge:"🧈 Finition"},
+      {icone:"🍋", titre:"Servir", detail:"Servir bien chaud avec des quartiers de citron à presser.", badge:"🍽️ Dressage"}
+    ]
+  },
 });

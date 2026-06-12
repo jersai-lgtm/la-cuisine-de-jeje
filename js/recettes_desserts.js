@@ -4608,4 +4608,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir bien frais.", badge: null }
     ]
   },
+  sutlac: {
+    nom: "Sütlaç",
+    dateAjout: "2026-06-12T14:09:00",
+    cat: "desserts", pays: "turquie",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🍮",
+    description: "Riz au lait turc crémeux, traditionnellement gratiné au four et parfumé à la vanille.",
+    tableauSutlac: [
+      {nb:1, lait:"200 ml", riz:"25 g", sucre:"30 g", maizena:"1 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:2, lait:"400 ml", riz:"50 g", sucre:"60 g", maizena:"2 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:3, lait:"600 ml", riz:"75 g", sucre:"90 g", maizena:"3 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:4, lait:"800 ml", riz:"100 g", sucre:"120 g", maizena:"4 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:5, lait:"1000 ml", riz:"125 g", sucre:"150 g", maizena:"5 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:6, lait:"1200 ml", riz:"150 g", sucre:"180 g", maizena:"6 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:7, lait:"1400 ml", riz:"175 g", sucre:"210 g", maizena:"7 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:8, lait:"1600 ml", riz:"200 g", sucre:"240 g", maizena:"8 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:9, lait:"1800 ml", riz:"225 g", sucre:"270 g", maizena:"9 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:10, lait:"2000 ml", riz:"250 g", sucre:"300 g", maizena:"10 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:11, lait:"2200 ml", riz:"275 g", sucre:"330 g", maizena:"11 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:12, lait:"2400 ml", riz:"300 g", sucre:"360 g", maizena:"12 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:13, lait:"2600 ml", riz:"325 g", sucre:"390 g", maizena:"13 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:14, lait:"2800 ml", riz:"350 g", sucre:"420 g", maizena:"14 c.à.c", vanille:"selon envie", cannelle:"selon envie"},
+      {nb:15, lait:"3000 ml", riz:"375 g", sucre:"450 g", maizena:"15 c.à.c", vanille:"selon envie", cannelle:"selon envie"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🍚", titre:"Cuire le riz", detail:"Cuire le riz dans un peu d'eau jusqu'à ce qu'il soit tendre et que l'eau soit absorbée.", badge:"⏱ 15 min"},
+      {icone:"🥛", titre:"Lait sucré", detail:"Ajouter le lait, le sucre et la vanille, et laisser frémir doucement.", badge:"🥛 Cuisson"},
+      {icone:"🌀", titre:"Épaissir", detail:"Délayer la maïzena dans un peu de lait froid et l'incorporer pour épaissir la crème.", badge:"🌀 Texture"},
+      {icone:"🥣", titre:"Ramequins", detail:"Répartir dans des ramequins allant au four.", badge:"🥣 Dressage"},
+      {icone:"🔥", titre:"Gratiner", detail:"Passer sous le gril jusqu'à ce que le dessus se tache de brun. ASTUCE CHEF : c'est cette peau caramélisée tigrée sur le dessus qui signe le vrai sütlaç turc.", badge:"🔥 Gril"},
+      {icone:"❄️", titre:"Servir", detail:"Laisser refroidir, saupoudrer de cannelle et servir bien frais.", badge:"❄️ Frais"}
+    ]
+  },
+
+  picarones: {
+    nom: "Picarones",
+    dateAjout: "2026-06-12T14:10:00",
+    cat: "desserts", pays: "perou",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍩",
+    description: "Beignets péruviens à la courge et patate douce, nappés d'un sirop épicé de chancaca.",
+    tableauPicarones: [
+      {nb:1, courge:"80 g", patatedouce:"80 g", farine:"70 g", chancaca:"40 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:2, courge:"160 g", patatedouce:"160 g", farine:"140 g", chancaca:"80 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:3, courge:"240 g", patatedouce:"240 g", farine:"210 g", chancaca:"120 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:4, courge:"320 g", patatedouce:"320 g", farine:"280 g", chancaca:"160 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:5, courge:"400 g", patatedouce:"400 g", farine:"350 g", chancaca:"200 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:6, courge:"480 g", patatedouce:"480 g", farine:"420 g", chancaca:"240 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:7, courge:"560 g", patatedouce:"560 g", farine:"490 g", chancaca:"280 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:8, courge:"640 g", patatedouce:"640 g", farine:"560 g", chancaca:"320 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:9, courge:"720 g", patatedouce:"720 g", farine:"630 g", chancaca:"360 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:10, courge:"800 g", patatedouce:"800 g", farine:"700 g", chancaca:"400 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:11, courge:"880 g", patatedouce:"880 g", farine:"770 g", chancaca:"440 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:12, courge:"960 g", patatedouce:"960 g", farine:"840 g", chancaca:"480 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:13, courge:"1040 g", patatedouce:"1040 g", farine:"910 g", chancaca:"520 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:14, courge:"1120 g", patatedouce:"1120 g", farine:"980 g", chancaca:"560 g", levure:"selon envie", cannelle:"selon envie"},
+      {nb:15, courge:"1200 g", patatedouce:"1200 g", farine:"1050 g", chancaca:"600 g", levure:"selon envie", cannelle:"selon envie"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🎃", titre:"Cuire les légumes", detail:"Cuire la courge et la patate douce à l'eau jusqu'à tendreté, puis les réduire en purée.", badge:"⏱ 20 min"},
+      {icone:"🥣", titre:"Pâte levée", detail:"Mélanger la purée tiède avec la farine et la levure jusqu'à une pâte molle et collante.", badge:"🥣 Pâte"},
+      {icone:"⏳", titre:"Pousser", detail:"Laisser lever la pâte au chaud jusqu'à ce qu'elle double de volume.", badge:"⏱ 60 min"},
+      {icone:"💍", titre:"Former les anneaux", detail:"Former des anneaux à la main, doigts mouillés. ASTUCE CHEF : gardez les mains humides pour façonner cette pâte très souple sans qu'elle colle.", badge:"💍 Façonnage"},
+      {icone:"🍳", titre:"Frire", detail:"Frire dans l'huile chaude jusqu'à ce que les beignets soient dorés et gonflés.", badge:"🔥 Friture"},
+      {icone:"🍯", titre:"Sirop", detail:"Faire fondre la chancaca avec un peu d'eau et de cannelle en un sirop épais.", badge:"🍯 Sirop"},
+      {icone:"🍽️", titre:"Servir", detail:"Napper les picarones chauds de sirop de chancaca et servir aussitôt.", badge:"🍽️ Dressage"}
+    ]
+  },
 });

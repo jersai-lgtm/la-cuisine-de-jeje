@@ -2017,4 +2017,40 @@ Object.assign(recettes, {
       { icone: "🥤", titre: "Servir", detail: "Servir en gobelet, à la cuillère.", badge: null }
     ]
   },
+  arepa: {
+    nom: "Arepa Reina Pepiada",
+    dateAjout: "2026-06-12T14:04:00",
+    cat: "encas", pays: "venezuela",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Galette de maïs vénézuélienne fourrée d'une crème de poulet et avocat, street-food par excellence.",
+    tableauArepa: [
+      {nb:1, farinemais:"60 g", poulet:"80 g", avocat:"1", mayo:"1 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:2, farinemais:"120 g", poulet:"160 g", avocat:"1", mayo:"2 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:3, farinemais:"180 g", poulet:"240 g", avocat:"2", mayo:"3 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:4, farinemais:"240 g", poulet:"320 g", avocat:"2", mayo:"4 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:5, farinemais:"300 g", poulet:"400 g", avocat:"3", mayo:"5 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:6, farinemais:"360 g", poulet:"480 g", avocat:"3", mayo:"6 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:7, farinemais:"420 g", poulet:"560 g", avocat:"4", mayo:"7 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:8, farinemais:"480 g", poulet:"640 g", avocat:"4", mayo:"8 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:9, farinemais:"540 g", poulet:"720 g", avocat:"5", mayo:"9 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:10, farinemais:"600 g", poulet:"800 g", avocat:"5", mayo:"10 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:11, farinemais:"660 g", poulet:"880 g", avocat:"6", mayo:"11 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:12, farinemais:"720 g", poulet:"960 g", avocat:"6", mayo:"12 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:13, farinemais:"780 g", poulet:"1040 g", avocat:"7", mayo:"13 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:14, farinemais:"840 g", poulet:"1120 g", avocat:"7", mayo:"14 c.à.c", coriandre:"selon envie", citronvert:"selon envie"},
+      {nb:15, farinemais:"900 g", poulet:"1200 g", avocat:"8", mayo:"15 c.à.c", coriandre:"selon envie", citronvert:"selon envie"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🌽", titre:"Pâte de maïs", detail:"Mélanger la farine de maïs précuite avec de l'eau tiède et un peu de sel jusqu'à une pâte souple. ASTUCE CHEF : utilisez de la farine type P.A.N. (maïs précuit), c'est elle qui donne la vraie texture de l'arepa.", badge:"🌽 Pâte"},
+      {icone:"⚪", titre:"Former", detail:"Façonner des galettes épaisses d'environ 1,5 cm et laisser reposer 5 min.", badge:"⚪ Façonnage"},
+      {icone:"🍳", titre:"Cuire", detail:"Saisir les arepas à la poêle puis finir au four jusqu'à ce qu'elles sonnent creux.", badge:"🔥 Cuisson"},
+      {icone:"🥑", titre:"Garniture", detail:"Écraser l'avocat avec le poulet effiloché, la mayo, la coriandre et un trait de citron vert.", badge:"🥑 Reina pepiada"},
+      {icone:"🔪", titre:"Ouvrir", detail:"Fendre chaque arepa encore chaude en deux comme une poche.", badge:"🔪 Découpe"},
+      {icone:"🥪", titre:"Servir", detail:"Garnir généreusement de crème de poulet-avocat et servir aussitôt.", badge:"🍽️ Dressage"}
+    ]
+  },
 });
