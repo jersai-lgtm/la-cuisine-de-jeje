@@ -39,6 +39,9 @@ function lcTrouverRayon(label) {
 }
 
 // === Ouvrir l'écran de sélection des recettes ===
+// Ingrédients "garde-manger" qu'on ne met JAMAIS dans la liste de courses (eau du robinet, glaçons…)
+const LC_NON_ACHAT = new Set(["eau","eaubouillante","eauchaude","eaufroide","glacons","glacon","glace"]);
+
 function lcOuvrirSelectionRecettes() {
   const grille = document.getElementById("lc-grille-selection");
   if (!grille) return;
@@ -358,6 +361,7 @@ function lcGenererListe() {
     
     Object.entries(ligne).forEach(([ing, val]) => {
       if (ing === "nb" || ing === "patons" || ing === "total" || ing === "label") return;
+      if (LC_NON_ACHAT.has(ing)) return; // eau & co : jamais dans les courses
       if (val === "—" || val === "" || !val) return;
       
       // Label affiché (commun aux variantes)
