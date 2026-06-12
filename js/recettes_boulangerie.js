@@ -1115,4 +1115,78 @@ Object.assign(recettes, {
       { icone: "🌶️", titre: "Servir", detail: "Servir brûlant, très poivré, en parts.", badge: null }
     ]
   },
+  hotteok: {
+    nom: "Hotteok",
+    cat: "boulangerie",
+    pays: "coree",
+    dateAjout: "2026-06-09T10:47:00",
+    base: 6,
+    temps: "1 h 30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥞",
+    description: "Les crêpes-pancakes coréennes farcies d'un cœur de cassonade-cannelle-noix qui coule, street food d'hiver.",
+    tableauHotteok: [
+      { nb: 1, farine: "50 g", sucre: "20 g", cannelle: "1 g", noix: "10 g", levureboulangere: "2 g", lait: "40 ml" },
+      { nb: 2, farine: "100 g", sucre: "40 g", cannelle: "2 g", noix: "20 g", levureboulangere: "4 g", lait: "80 ml" },
+      { nb: 3, farine: "150 g", sucre: "60 g", cannelle: "3 g", noix: "30 g", levureboulangere: "6 g", lait: "120 ml" },
+      { nb: 4, farine: "200 g", sucre: "80 g", cannelle: "4 g", noix: "40 g", levureboulangere: "8 g", lait: "160 ml" },
+      { nb: 5, farine: "250 g", sucre: "100 g", cannelle: "5 g", noix: "50 g", levureboulangere: "10 g", lait: "200 ml" },
+      { nb: 6, farine: "300 g", sucre: "120 g", cannelle: "6 g", noix: "60 g", levureboulangere: "12 g", lait: "240 ml" },
+      { nb: 7, farine: "350 g", sucre: "140 g", cannelle: "7 g", noix: "70 g", levureboulangere: "14 g", lait: "280 ml" },
+      { nb: 8, farine: "400 g", sucre: "160 g", cannelle: "8 g", noix: "80 g", levureboulangere: "16 g", lait: "320 ml" },
+      { nb: 9, farine: "450 g", sucre: "180 g", cannelle: "9 g", noix: "90 g", levureboulangere: "18 g", lait: "360 ml" },
+      { nb: 10, farine: "500 g", sucre: "200 g", cannelle: "10 g", noix: "100 g", levureboulangere: "20 g", lait: "400 ml" },
+      { nb: 11, farine: "550 g", sucre: "220 g", cannelle: "11 g", noix: "110 g", levureboulangere: "22 g", lait: "440 ml" },
+      { nb: 12, farine: "600 g", sucre: "240 g", cannelle: "12 g", noix: "120 g", levureboulangere: "24 g", lait: "480 ml" },
+      { nb: 13, farine: "650 g", sucre: "260 g", cannelle: "13 g", noix: "130 g", levureboulangere: "26 g", lait: "520 ml" },
+      { nb: 14, farine: "700 g", sucre: "280 g", cannelle: "14 g", noix: "140 g", levureboulangere: "28 g", lait: "560 ml" },
+      { nb: 15, farine: "750 g", sucre: "300 g", cannelle: "15 g", noix: "150 g", levureboulangere: "30 g", lait: "600 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Pétrir une pâte levée souple. ASTUCE CHEF : huile-toi légèrement les mains pour manipuler cette pâte collante : le façonnage devient facile.", badge: null },
+      { icone: "⏳", titre: "Pousser", detail: "Laisser lever.", badge: "⏱ 1 h" },
+      { icone: "🍯", titre: "Farce", detail: "Mélanger cassonade, cannelle et noix.", badge: null },
+      { icone: "🥟", titre: "Farcir", detail: "Emprisonner la farce dans une boule de pâte.", badge: null },
+      { icone: "🥞", titre: "Aplatir", detail: "Aplatir à la poêle huilée en cuisant.", badge: "⏱ 6 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud, le cœur coule.", badge: null }
+    ]
+  },
+  congyoubing: {
+    nom: "Cong You Bing",
+    cat: "boulangerie",
+    pays: "chine",
+    dateAjout: "2026-06-09T10:48:00",
+    base: 6,
+    temps: "1 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Les galettes chinoises feuilletées à la ciboule, croustillantes et moelleuses, cuites à la poêle.",
+    tableauCongyoubing: [
+      { nb: 1, farine: "55 g", ciboule: "20 g", huile: "12 ml", sesame: "2 g", eau: "35 ml", sel: "1 pincée" },
+      { nb: 2, farine: "110 g", ciboule: "40 g", huile: "24 ml", sesame: "4 g", eau: "70 ml", sel: "1 pincée" },
+      { nb: 3, farine: "165 g", ciboule: "60 g", huile: "36 ml", sesame: "6 g", eau: "105 ml", sel: "1 pincée" },
+      { nb: 4, farine: "220 g", ciboule: "80 g", huile: "48 ml", sesame: "8 g", eau: "140 ml", sel: "1 pincée" },
+      { nb: 5, farine: "275 g", ciboule: "100 g", huile: "60 ml", sesame: "10 g", eau: "175 ml", sel: "1 pincée" },
+      { nb: 6, farine: "330 g", ciboule: "120 g", huile: "72 ml", sesame: "12 g", eau: "210 ml", sel: "2 pincées" },
+      { nb: 7, farine: "385 g", ciboule: "140 g", huile: "84 ml", sesame: "14 g", eau: "245 ml", sel: "2 pincées" },
+      { nb: 8, farine: "440 g", ciboule: "160 g", huile: "96 ml", sesame: "16 g", eau: "280 ml", sel: "2 pincées" },
+      { nb: 9, farine: "495 g", ciboule: "180 g", huile: "108 ml", sesame: "18 g", eau: "315 ml", sel: "2 pincées" },
+      { nb: 10, farine: "550 g", ciboule: "200 g", huile: "120 ml", sesame: "20 g", eau: "350 ml", sel: "2 pincées" },
+      { nb: 11, farine: "605 g", ciboule: "220 g", huile: "132 ml", sesame: "22 g", eau: "385 ml", sel: "3 pincées" },
+      { nb: 12, farine: "660 g", ciboule: "240 g", huile: "144 ml", sesame: "24 g", eau: "420 ml", sel: "3 pincées" },
+      { nb: 13, farine: "715 g", ciboule: "260 g", huile: "156 ml", sesame: "26 g", eau: "455 ml", sel: "3 pincées" },
+      { nb: 14, farine: "770 g", ciboule: "280 g", huile: "168 ml", sesame: "28 g", eau: "490 ml", sel: "3 pincées" },
+      { nb: 15, farine: "825 g", ciboule: "300 g", huile: "180 ml", sesame: "30 g", eau: "525 ml", sel: "3 pincées" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Pétrir une pâte à l'eau chaude, laisser reposer. ASTUCE CHEF : pâte à l'eau chaude = galette plus tendre ; laisse-la reposer 30 min pour qu'elle s'étale sans se déchirer.", badge: "⏱ 30 min" },
+      { icone: "🌀", titre: "Feuilleter", detail: "Étaler, huiler, parsemer de ciboule, rouler en escargot.", badge: null },
+      { icone: "⚪", titre: "Aplatir", detail: "Aplatir l'escargot en galette.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Cuire à la poêle des deux côtés.", badge: "⏱ 8 min" },
+      { icone: "🔪", titre: "Couper", detail: "Couper en parts.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud et croustillant.", badge: null }
+    ]
+  },
 });

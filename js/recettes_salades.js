@@ -1144,4 +1144,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir bien frais en accompagnement.", badge: null }
     ]
   },
+  liangpi: {
+    nom: "Liangpi",
+    cat: "salades",
+    pays: "chine",
+    dateAjout: "2026-06-09T10:49:00",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍜",
+    description: "Les nouilles froides translucides de Xi'an, sauce épicée au vinaigre, sésame et ail, rafraîchissantes.",
+    tableauLiangpi: [
+      { nb: 1, farine: "60 g", concombre: "40 g", vinaigre: "12 ml", sesame: "4 g", ail: "1", piment: "2 g" },
+      { nb: 2, farine: "120 g", concombre: "80 g", vinaigre: "24 ml", sesame: "8 g", ail: "1", piment: "4 g" },
+      { nb: 3, farine: "180 g", concombre: "120 g", vinaigre: "36 ml", sesame: "12 g", ail: "2", piment: "6 g" },
+      { nb: 4, farine: "240 g", concombre: "160 g", vinaigre: "48 ml", sesame: "16 g", ail: "2", piment: "8 g" },
+      { nb: 5, farine: "300 g", concombre: "200 g", vinaigre: "60 ml", sesame: "20 g", ail: "3", piment: "10 g" },
+      { nb: 6, farine: "360 g", concombre: "240 g", vinaigre: "72 ml", sesame: "24 g", ail: "3", piment: "12 g" },
+      { nb: 7, farine: "420 g", concombre: "280 g", vinaigre: "84 ml", sesame: "28 g", ail: "4", piment: "14 g" },
+      { nb: 8, farine: "480 g", concombre: "320 g", vinaigre: "96 ml", sesame: "32 g", ail: "4", piment: "16 g" },
+      { nb: 9, farine: "540 g", concombre: "360 g", vinaigre: "108 ml", sesame: "36 g", ail: "5", piment: "18 g" },
+      { nb: 10, farine: "600 g", concombre: "400 g", vinaigre: "120 ml", sesame: "40 g", ail: "5", piment: "20 g" },
+      { nb: 11, farine: "660 g", concombre: "440 g", vinaigre: "132 ml", sesame: "44 g", ail: "6", piment: "22 g" },
+      { nb: 12, farine: "720 g", concombre: "480 g", vinaigre: "144 ml", sesame: "48 g", ail: "6", piment: "24 g" },
+      { nb: 13, farine: "780 g", concombre: "520 g", vinaigre: "156 ml", sesame: "52 g", ail: "7", piment: "26 g" },
+      { nb: 14, farine: "840 g", concombre: "560 g", vinaigre: "168 ml", sesame: "56 g", ail: "7", piment: "28 g" },
+      { nb: 15, farine: "900 g", concombre: "600 g", vinaigre: "180 ml", sesame: "60 g", ail: "8", piment: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Laver une pâte de farine pour séparer l'amidon. ASTUCE CHEF : « laver » la pâte à l'eau sépare l'amidon (pour les nouilles) du gluten (le seitan, qu'on garde en garniture) : ne jette rien.", badge: null },
+      { icone: "💧", titre: "Reposer", detail: "Laisser décanter l'amidon.", badge: "⏱ 2 h" },
+      { icone: "♨️", titre: "Cuire", detail: "Cuire l'amidon en fines feuilles vapeur.", badge: "⏱ 5 min" },
+      { icone: "🔪", titre: "Tailler", detail: "Tailler les feuilles en larges nouilles.", badge: null },
+      { icone: "🥗", titre: "Sauce", detail: "Mélanger vinaigre, ail, sésame, piment.", badge: null },
+      { icone: "🥒", titre: "Servir", detail: "Servir froid avec concombre.", badge: null }
+    ]
+  },
 });
