@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="style.css?v=1.5.3">
+<link rel="stylesheet" href="style.css?v=1.5.4">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
 <script>
@@ -74,7 +74,7 @@ gtag('config', 'G-390C5MY2SS');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Cuisine de Jéjé</title>
-<link rel="stylesheet" href="style.css?v=1.5.3">
+<link rel="stylesheet" href="style.css?v=1.5.4">
 </head>
 
 <body>
@@ -104,10 +104,10 @@ gtag('config', 'G-390C5MY2SS');
       <div id="zone-utilisateur">
         <button class="btn-connexion" onclick="ouvrirModalAuth()">👤 Connexion</button>
       </div>
-      <div style="display:flex;align-items:center;gap:7px">
+      <div style="display:flex;align-items:center;gap:13px">
         <button id="btn-amelioration" onclick="ouvrirAmelioration()" aria-label="Suggérer une amélioration" title="Suggérer une amélioration" style="border:1.5px solid rgba(255,255,255,.45);background:transparent;color:#fff;font-size:12px;font-weight:600;border-radius:999px;padding:5px 11px;display:inline-flex;align-items:center;gap:5px;cursor:pointer;line-height:1;white-space:nowrap">💡 Amélioration</button>
-        <button id="btn-aide" onclick="ouvrirAide()" aria-label="Besoin d'aide" title="Besoin d'aide" style="width:26px;height:26px;border-radius:50%;border:1.5px solid rgba(255,255,255,.45);background:transparent;color:#fff;font-size:14px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0;flex:none">?</button>
-        <button id="btn-quoi-de-neuf" onclick="ouvrirQuoiDeNeuf()" aria-label="Quoi de neuf" style="position:relative;width:26px;height:26px;border-radius:50%;border:1.5px solid rgba(255,255,255,.45);background:transparent;color:#fff;font-size:14px;font-style:italic;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0;flex:none">i<span id="qdn-dot" style="display:none;position:absolute;top:-3px;right:-3px;width:9px;height:9px;border-radius:50%;background:#e2574c;border:2px solid #1a1620"></span></button>
+        <button id="btn-aide" onclick="ouvrirAide()" aria-label="Besoin d'aide" title="Besoin d'aide" style="width:26px;height:26px;border-radius:50%;border:1.5px solid var(--accent,#ff4d88);background:rgba(var(--accent-rgb),.12);color:var(--accent,#ff4d88);font-size:14px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0;flex:none">?</button>
+        <button id="btn-quoi-de-neuf" onclick="ouvrirQuoiDeNeuf()" aria-label="Quoi de neuf" style="position:relative;width:26px;height:26px;border-radius:50%;border:1.5px solid #4aa3ff;background:rgba(74,163,255,.12);color:#4aa3ff;font-size:14px;font-style:italic;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0;flex:none">i<span id="qdn-dot" style="display:none;position:absolute;top:-3px;right:-3px;width:9px;height:9px;border-radius:50%;background:#e2574c;border:2px solid #1a1620"></span></button>
       </div>
     </div>
   </div>
@@ -304,6 +304,407 @@ gtag('config', 'G-390C5MY2SS');
 
 <!-- CARTES RECETTES -->
 <section class="cartes" id="section-cartes" style="display:none">
+
+  <div class="carte" data-pays="ouzbekistan" data-cat="plats" onclick="ouvrirFiche('plov')">
+    <img loading="lazy" decoding="async" src="images/plov.webp" alt="Plov">
+    <div class="carte-info">
+      <h2>🍚 Plov</h2>
+      <p>⏱ 1 h 30 • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="ouzbekistan" data-cat="plats" onclick="ouvrirFiche('lagman')">
+    <img loading="lazy" decoding="async" src="images/lagman.webp" alt="Lagman">
+    <div class="carte-info">
+      <h2>🍜 Lagman</h2>
+      <p>⏱ 1 h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="ouzbekistan" data-cat="plats" onclick="ouvrirFiche('dimlama')">
+    <img loading="lazy" decoding="async" src="images/dimlama.webp" alt="Dimlama">
+    <div class="carte-info">
+      <h2>🥘 Dimlama</h2>
+      <p>⏱ 2 h • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="coree" data-cat="plats" onclick="ouvrirFiche('jjimdak')">
+    <img loading="lazy" decoding="async" src="images/jjimdak.webp" alt="Jjimdak">
+    <div class="carte-info">
+      <h2>🍗 Jjimdak</h2>
+      <p>⏱ 50 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="japon" data-cat="plats" onclick="ouvrirFiche('nikujaga')">
+    <img loading="lazy" decoding="async" src="images/nikujaga.webp" alt="Nikujaga">
+    <div class="carte-info">
+      <h2>🥔 Nikujaga</h2>
+      <p>⏱ 45 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="chine" data-cat="plats" onclick="ouvrirFiche('zhajiangmian')">
+    <img loading="lazy" decoding="async" src="images/zhajiangmian.webp" alt="Zhajiangmian">
+    <div class="carte-info">
+      <h2>🍜 Zhajiangmian</h2>
+      <p>⏱ 35 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="vietnam" data-cat="plats" onclick="ouvrirFiche('comtam')">
+    <img loading="lazy" decoding="async" src="images/comtam.webp" alt="Cơm Tấm">
+    <div class="carte-info">
+      <h2>🍚 Cơm Tấm</h2>
+      <p>⏱ 40 min + marinade • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="inde" data-cat="plats" onclick="ouvrirFiche('rajma')">
+    <img loading="lazy" decoding="async" src="images/rajma.webp" alt="Rajma">
+    <div class="carte-info">
+      <h2>🍛 Rajma</h2>
+      <p>⏱ 50 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="inde" data-cat="plats" onclick="ouvrirFiche('malaikofta')">
+    <img loading="lazy" decoding="async" src="images/malaikofta.webp" alt="Malai Kofta">
+    <div class="carte-info">
+      <h2>🍢 Malai Kofta</h2>
+      <p>⏱ 1 h • ⭐⭐⭐ Difficile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="espagne" data-cat="plats" onclick="ouvrirFiche('marmitako')">
+    <img loading="lazy" decoding="async" src="images/marmitako.webp" alt="Marmitako">
+    <div class="carte-info">
+      <h2>🐟 Marmitako</h2>
+      <p>⏱ 45 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="plats" onclick="ouvrirFiche('estouffade')">
+    <img loading="lazy" decoding="async" src="images/estouffade.webp" alt="Estouffade Provençale">
+    <div class="carte-info">
+      <h2>🥩 Estouffade Provençale</h2>
+      <p>⏱ 3 h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="hongrie" data-cat="plats" onclick="ouvrirFiche('toltottkaposzta')">
+    <img loading="lazy" decoding="async" src="images/toltottkaposzta.webp" alt="Töltött Káposzta">
+    <div class="carte-info">
+      <h2>🥬 Töltött Káposzta</h2>
+      <p>⏱ 2 h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="ukraine" data-cat="plats" onclick="ouvrirFiche('holubtsi')">
+    <img loading="lazy" decoding="async" src="images/holubtsi.webp" alt="Holubtsi">
+    <div class="carte-info">
+      <h2>🥬 Holubtsi</h2>
+      <p>⏱ 1 h 45 • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="russie" data-cat="plats" onclick="ouvrirFiche('shashlik')">
+    <img loading="lazy" decoding="async" src="images/shashlik.webp" alt="Shashlik">
+    <div class="carte-info">
+      <h2>🍢 Shashlik</h2>
+      <p>⏱ 30 min + marinade • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="russie" data-cat="soupes" onclick="ouvrirFiche('shchi')">
+    <img loading="lazy" decoding="async" src="images/shchi.webp" alt="Shchi">
+    <div class="carte-info">
+      <h2>🥬 Shchi</h2>
+      <p>⏱ 1 h • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="coree" data-cat="soupes" onclick="ouvrirFiche('naengmyeon')">
+    <img loading="lazy" decoding="async" src="images/naengmyeon.webp" alt="Naengmyeon">
+    <div class="carte-info">
+      <h2>🍜 Naengmyeon</h2>
+      <p>⏱ 40 min + froid • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="coree" data-cat="soupes" onclick="ouvrirFiche('sundubu')">
+    <img loading="lazy" decoding="async" src="images/sundubu.webp" alt="Sundubu Jjigae">
+    <div class="carte-info">
+      <h2>🌶️ Sundubu Jjigae</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="hongrie" data-cat="soupes" onclick="ouvrirFiche('halaszle')">
+    <img loading="lazy" decoding="async" src="images/halaszle.webp" alt="Halászlé">
+    <div class="carte-info">
+      <h2>🐟 Halászlé</h2>
+      <p>⏱ 1 h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="france" data-cat="soupes" onclick="ouvrirFiche('brejaude')">
+    <img loading="lazy" decoding="async" src="images/brejaude.webp" alt="Bréjaude">
+    <div class="carte-info">
+      <h2>🥬 Bréjaude</h2>
+      <p>⏱ 1 h 15 • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="inde" data-cat="soupes" onclick="ouvrirFiche('rasam')">
+    <img loading="lazy" decoding="async" src="images/rasam.webp" alt="Rasam">
+    <div class="carte-info">
+      <h2>🍲 Rasam</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="georgie" data-cat="entrees" onclick="ouvrirFiche('satsivi')">
+    <img loading="lazy" decoding="async" src="images/satsivi.webp" alt="Satsivi">
+    <div class="carte-info">
+      <h2>🍗 Satsivi</h2>
+      <p>⏱ 45 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="georgie" data-cat="entrees" onclick="ouvrirFiche('badrijani')">
+    <img loading="lazy" decoding="async" src="images/badrijani.webp" alt="Badrijani">
+    <div class="carte-info">
+      <h2>🍆 Badrijani</h2>
+      <p>⏱ 40 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="liban" data-cat="entrees" onclick="ouvrirFiche('warakenab')">
+    <img loading="lazy" decoding="async" src="images/warakenab.webp" alt="Warak Enab">
+    <div class="carte-info">
+      <h2>🍃 Warak Enab</h2>
+      <p>⏱ 1 h 15 • ⭐⭐⭐ Difficile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="georgie" data-cat="entrees" onclick="ouvrirFiche('ajapsandali')">
+    <img loading="lazy" decoding="async" src="images/ajapsandali.webp" alt="Ajapsandali">
+    <div class="carte-info">
+      <h2>🍆 Ajapsandali</h2>
+      <p>⏱ 45 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="liban" data-cat="aperitifs" onclick="ouvrirFiche('sambousek')">
+    <img loading="lazy" decoding="async" src="images/sambousek.webp" alt="Sambousek">
+    <div class="carte-info">
+      <h2>🥟 Sambousek</h2>
+      <p>⏱ 50 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="nigeria" data-cat="aperitifs" onclick="ouvrirFiche('kilishi')">
+    <img loading="lazy" decoding="async" src="images/kilishi.webp" alt="Kilishi">
+    <div class="carte-info">
+      <h2>🥩 Kilishi</h2>
+      <p>⏱ 30 min + séchage • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="afriquedusud" data-cat="aperitifs" onclick="ouvrirFiche('sosaties')">
+    <img loading="lazy" decoding="async" src="images/sosaties.webp" alt="Sosaties">
+    <div class="carte-info">
+      <h2>🍢 Sosaties</h2>
+      <p>⏱ 30 min + marinade • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="chine" data-cat="aperitifs" onclick="ouvrirFiche('baozi')">
+    <img loading="lazy" decoding="async" src="images/baozi.webp" alt="Baozi">
+    <div class="carte-info">
+      <h2>🥟 Baozi</h2>
+      <p>⏱ 2 h • ⭐⭐⭐ Difficile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="thailande" data-cat="aperitifs" onclick="ouvrirFiche('mooping')">
+    <img loading="lazy" decoding="async" src="images/mooping.webp" alt="Moo Ping">
+    <div class="carte-info">
+      <h2>🍢 Moo Ping</h2>
+      <p>⏱ 30 min + marinade • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="nigeria" data-cat="encas" onclick="ouvrirFiche('puffpuff')">
+    <img loading="lazy" decoding="async" src="images/puffpuff.webp" alt="Puff-Puff">
+    <div class="carte-info">
+      <h2>🍩 Puff-Puff</h2>
+      <p>⏱ 1 h • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="afriquedusud" data-cat="encas" onclick="ouvrirFiche('vetkoek')">
+    <img loading="lazy" decoding="async" src="images/vetkoek.webp" alt="Vetkoek">
+    <div class="carte-info">
+      <h2>🍞 Vetkoek</h2>
+      <p>⏱ 1 h • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="japon" data-cat="encas" onclick="ouvrirFiche('korokke')">
+    <img loading="lazy" decoding="async" src="images/korokke.webp" alt="Korokke">
+    <div class="carte-info">
+      <h2>🥔 Korokke</h2>
+      <p>⏱ 50 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="indonesie" data-cat="encas" onclick="ouvrirFiche('bakso')">
+    <img loading="lazy" decoding="async" src="images/bakso.webp" alt="Bakso">
+    <div class="carte-info">
+      <h2>🍲 Bakso</h2>
+      <p>⏱ 1 h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="indonesie" data-cat="encas" onclick="ouvrirFiche('pempek')">
+    <img loading="lazy" decoding="async" src="images/pempek.webp" alt="Pempek">
+    <div class="carte-info">
+      <h2>🐟 Pempek</h2>
+      <p>⏱ 1 h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="perou" data-cat="encas" onclick="ouvrirFiche('anticuchos')">
+    <img loading="lazy" decoding="async" src="images/anticuchos.webp" alt="Anticuchos">
+    <div class="carte-info">
+      <h2>🍢 Anticuchos</h2>
+      <p>⏱ 30 min + marinade • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="mexique" data-cat="encas" onclick="ouvrirFiche('esquites')">
+    <img loading="lazy" decoding="async" src="images/esquites.webp" alt="Esquites">
+    <div class="carte-info">
+      <h2>🌽 Esquites</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="coree" data-cat="brunch" onclick="ouvrirFiche('gyeranjjim')">
+    <img loading="lazy" decoding="async" src="images/gyeranjjim.webp" alt="Gyeranjjim">
+    <div class="carte-info">
+      <h2>🥚 Gyeranjjim</h2>
+      <p>⏱ 20 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="japon" data-cat="brunch" onclick="ouvrirFiche('ochazuke')">
+    <img loading="lazy" decoding="async" src="images/ochazuke.webp" alt="Ochazuke">
+    <div class="carte-info">
+      <h2>🍵 Ochazuke</h2>
+      <p>⏱ 10 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="chine" data-cat="brunch" onclick="ouvrirFiche('jianbing')">
+    <img loading="lazy" decoding="async" src="images/jianbing.webp" alt="Jianbing">
+    <div class="carte-info">
+      <h2>🥞 Jianbing</h2>
+      <p>⏱ 30 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="inde" data-cat="brunch" onclick="ouvrirFiche('upma')">
+    <img loading="lazy" decoding="async" src="images/upma.webp" alt="Upma">
+    <div class="carte-info">
+      <h2>🥣 Upma</h2>
+      <p>⏱ 25 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="bielorussie" data-cat="brunch" onclick="ouvrirFiche('draniki')">
+    <img loading="lazy" decoding="async" src="images/draniki.webp" alt="Draniki">
+    <div class="carte-info">
+      <h2>🥔 Draniki</h2>
+      <p>⏱ 30 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="afriquedusud" data-cat="desserts" onclick="ouvrirFiche('koeksister')">
+    <img loading="lazy" decoding="async" src="images/koeksister.webp" alt="Koeksister">
+    <div class="carte-info">
+      <h2>🍯 Koeksister</h2>
+      <p>⏱ 1 h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="nigeria" data-cat="desserts" onclick="ouvrirFiche('chinchin')">
+    <img loading="lazy" decoding="async" src="images/chinchin.webp" alt="Chin Chin">
+    <div class="carte-info">
+      <h2>🍪 Chin Chin</h2>
+      <p>⏱ 45 min • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="georgie" data-cat="desserts" onclick="ouvrirFiche('churchkhela')">
+    <img loading="lazy" decoding="async" src="images/churchkhela.webp" alt="Churchkhela">
+    <div class="carte-info">
+      <h2>🍇 Churchkhela</h2>
+      <p>⏱ 45 min + séchage • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="indonesie" data-cat="desserts" onclick="ouvrirFiche('klepon')">
+    <img loading="lazy" decoding="async" src="images/klepon.webp" alt="Klepon">
+    <div class="carte-info">
+      <h2>🍡 Klepon</h2>
+      <p>⏱ 40 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="bresil" data-cat="desserts" onclick="ouvrirFiche('canjica')">
+    <img loading="lazy" decoding="async" src="images/canjica.webp" alt="Canjica">
+    <div class="carte-info">
+      <h2>🌽 Canjica</h2>
+      <p>⏱ 1 h 30 • ⭐ Facile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="inde" data-cat="desserts" onclick="ouvrirFiche('rasgulla')">
+    <img loading="lazy" decoding="async" src="images/rasgulla.webp" alt="Rasgulla">
+    <div class="carte-info">
+      <h2>⚪ Rasgulla</h2>
+      <p>⏱ 1 h • ⭐⭐⭐ Difficile</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="coree" data-cat="boulangerie" onclick="ouvrirFiche('hotteok')">
+    <img loading="lazy" decoding="async" src="images/hotteok.webp" alt="Hotteok">
+    <div class="carte-info">
+      <h2>🥞 Hotteok</h2>
+      <p>⏱ 1 h 30 • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="chine" data-cat="boulangerie" onclick="ouvrirFiche('congyoubing')">
+    <img loading="lazy" decoding="async" src="images/congyoubing.webp" alt="Cong You Bing">
+    <div class="carte-info">
+      <h2>🫓 Cong You Bing</h2>
+      <p>⏱ 1 h • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
+  <div class="carte" data-pays="chine" data-cat="salades" onclick="ouvrirFiche('liangpi')">
+    <img loading="lazy" decoding="async" src="images/liangpi.webp" alt="Liangpi">
+    <div class="carte-info">
+      <h2>🍜 Liangpi</h2>
+      <p>⏱ 45 min • ⭐⭐ Moyen</p>
+    </div>
+  </div>
+
 
   <div class="carte" data-pays="venezuela" data-cat="plats" onclick="ouvrirFiche('pabellon')">
     <img loading="lazy" decoding="async" src="images/pabellon.webp" alt="Pabellón Criollo">
@@ -6463,42 +6864,42 @@ gtag('config', 'G-390C5MY2SS');
 </section>
 
 <!-- Scripts découpés pour performance -->
-<script src="js/version.js?v=1.5.3"></script>
-<script src="js/allergenes.js?v=1.5.3"></script>
-<script src="js/exceptions.js?v=1.5.3"></script>
-<script src="js/recettes.js?v=1.5.3"></script>
-<script src="js/recettes_plats.js?v=1.5.3"></script>
-<script src="js/recettes_desserts.js?v=1.5.3"></script>
-<script src="js/recettes_soupes.js?v=1.5.3"></script>
-<script src="js/recettes_brunch.js?v=1.5.3"></script>
-<script src="js/recettes_encas.js?v=1.5.3"></script>
-<script src="js/recettes_aperitifs.js?v=1.5.3"></script>
-<script src="js/recettes_healthy.js?v=1.5.3"></script>
-<script src="js/recettes_entrees.js?v=1.5.3"></script>
-<script src="js/recettes_sauces.js?v=1.5.3"></script>
-<script src="js/recettes_tartinables.js?v=1.5.3"></script>
-<script src="js/recettes_glaces.js?v=1.5.3"></script>
-<script src="js/recettes_boulangerie.js?v=1.5.3"></script>
-<script src="js/recettes_salades.js?v=1.5.3"></script>
-<script src="js/recettes_pizzas.js?v=1.5.3"></script>
-<script src="js/recettes_cocktails.js?v=1.5.3"></script>
-<script src="js/recettes_mocktails.js?v=1.5.3"></script>
-<script src="js/recettes_batch.js?v=1.5.3"></script>
-<script src="js/ingredients_prix.js?v=1.5.3"></script>
-<script src="js/drapeaux.js?v=1.5.3"></script>
-<script src="js/tables.js?v=1.5.3"></script>
-<script src="js/app.js?v=1.5.3"></script>
-<script src="js/emojis.js?v=1.5.3"></script>
-<script src="js/app_avis.js?v=1.5.3"></script>
-<script src="js/app_admin.js?v=1.5.3"></script>
-<script src="js/app_menu.js?v=1.5.3"></script>
-<script src="js/lunchbox.js?v=1.5.3"></script>
-<script src="js/app_courses_impr.js?v=1.5.3"></script>
-<script src="js/app_recherche.js?v=1.5.3"></script>
-<script src="js/app_garde_manger.js?v=1.5.3"></script>
-<script src="js/app_modal_confirm.js?v=1.5.3"></script>
-<script src="js/app_courses.js?v=1.5.3"></script>
-<script src="js/app_stats.js?v=1.5.3"></script>
+<script src="js/version.js?v=1.5.4"></script>
+<script src="js/allergenes.js?v=1.5.4"></script>
+<script src="js/exceptions.js?v=1.5.4"></script>
+<script src="js/recettes.js?v=1.5.4"></script>
+<script src="js/recettes_plats.js?v=1.5.4"></script>
+<script src="js/recettes_desserts.js?v=1.5.4"></script>
+<script src="js/recettes_soupes.js?v=1.5.4"></script>
+<script src="js/recettes_brunch.js?v=1.5.4"></script>
+<script src="js/recettes_encas.js?v=1.5.4"></script>
+<script src="js/recettes_aperitifs.js?v=1.5.4"></script>
+<script src="js/recettes_healthy.js?v=1.5.4"></script>
+<script src="js/recettes_entrees.js?v=1.5.4"></script>
+<script src="js/recettes_sauces.js?v=1.5.4"></script>
+<script src="js/recettes_tartinables.js?v=1.5.4"></script>
+<script src="js/recettes_glaces.js?v=1.5.4"></script>
+<script src="js/recettes_boulangerie.js?v=1.5.4"></script>
+<script src="js/recettes_salades.js?v=1.5.4"></script>
+<script src="js/recettes_pizzas.js?v=1.5.4"></script>
+<script src="js/recettes_cocktails.js?v=1.5.4"></script>
+<script src="js/recettes_mocktails.js?v=1.5.4"></script>
+<script src="js/recettes_batch.js?v=1.5.4"></script>
+<script src="js/ingredients_prix.js?v=1.5.4"></script>
+<script src="js/drapeaux.js?v=1.5.4"></script>
+<script src="js/tables.js?v=1.5.4"></script>
+<script src="js/app.js?v=1.5.4"></script>
+<script src="js/emojis.js?v=1.5.4"></script>
+<script src="js/app_avis.js?v=1.5.4"></script>
+<script src="js/app_admin.js?v=1.5.4"></script>
+<script src="js/app_menu.js?v=1.5.4"></script>
+<script src="js/lunchbox.js?v=1.5.4"></script>
+<script src="js/app_courses_impr.js?v=1.5.4"></script>
+<script src="js/app_recherche.js?v=1.5.4"></script>
+<script src="js/app_garde_manger.js?v=1.5.4"></script>
+<script src="js/app_modal_confirm.js?v=1.5.4"></script>
+<script src="js/app_courses.js?v=1.5.4"></script>
+<script src="js/app_stats.js?v=1.5.4"></script>
 
 
 
@@ -6913,16 +7314,16 @@ gtag('config', 'G-390C5MY2SS');
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
-<script src="auth.js?v=1.5.3"></script>
-<script src="js/note_recettes.js?v=1.5.3"></script>
-<script src="js/app_contribution.js?v=1.5.3"></script>
-<script src="js/community.js?v=1.5.3"></script>
-<script src="js/whatsnew.js?v=1.5.3"></script>
-<script src="js/amelioration.js?v=1.5.3"></script>
-<script src="js/menu_ajout.js?v=1.5.3"></script>
-<script src="js/app_evenements.js?v=1.5.3"></script>
-<script src="js/app_aide.js?v=1.5.3"></script>
-<script src="js/app_install_ios.js?v=1.5.3"></script>
+<script src="auth.js?v=1.5.4"></script>
+<script src="js/note_recettes.js?v=1.5.4"></script>
+<script src="js/app_contribution.js?v=1.5.4"></script>
+<script src="js/community.js?v=1.5.4"></script>
+<script src="js/whatsnew.js?v=1.5.4"></script>
+<script src="js/amelioration.js?v=1.5.4"></script>
+<script src="js/menu_ajout.js?v=1.5.4"></script>
+<script src="js/app_evenements.js?v=1.5.4"></script>
+<script src="js/app_aide.js?v=1.5.4"></script>
+<script src="js/app_install_ios.js?v=1.5.4"></script>
 <script>
 // Fallback si module pas encore chargé
 function ouvrirModalAuthFallback() {
