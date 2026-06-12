@@ -1589,7 +1589,8 @@ select, input[type="number"] {
   gap: 2px;
   position: relative;
 }
-.mini-carte-emoji { font-size: 14px; }
+.mini-carte-emoji { font-size: 14px; vertical-align: middle; margin: 0 3px 0 1px; }
+.mini-carte-nom .drapeau-pays { vertical-align: middle; margin-right: 1px; }
 .mini-carte-entete { display: flex; align-items: center; gap: 5px; }
 .mini-carte-nom {
   font-size: 11px;
