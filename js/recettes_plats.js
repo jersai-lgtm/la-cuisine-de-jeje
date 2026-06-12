@@ -489,40 +489,6 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C jusqu'à ce que l'appareil soit pris et légèrement doré. Laisser tiédir 5 min avant de couper. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 30-35 min" }
     ]
   },
-  rizcantonnais: {
-    nom: "Riz Cantonnais",
-    cat: "plats", saisons: ["ete","printemps"], pays: "chine",
-    base: 4,
-    temps: "20 min",
-    niveau: "⭐ Facile",
-    emoji: "🍳",
-    description: "Le riz cantonnais authentique — riz sauté aux œufs brouillés, jambon, petits pois et sauce soja. Le classique de la cuisine chinoise.",
-    tableauRizCantonnais: [
-      { nb: 1, riz: "80 g", oeufs: "1", jambon: "30 g", petitspois: "30 g", sojaS: "1 c.à.s", huile: "1 c.à.s" },
-      { nb: 2, riz: "160 g", oeufs: "2", jambon: "60 g", petitspois: "60 g", sojaS: "2 c.à.s", huile: "2 c.à.s" },
-      { nb: 3, riz: "240 g", oeufs: "3", jambon: "90 g", petitspois: "90 g", sojaS: "3 c.à.s", huile: "3 c.à.s" },
-      { nb: 4, riz: "320 g", oeufs: "4", jambon: "120 g", petitspois: "120 g", sojaS: "4 c.à.s", huile: "4 c.à.s" },
-      { nb: 5, riz: "400 g", oeufs: "5", jambon: "150 g", petitspois: "150 g", sojaS: "5 c.à.s", huile: "5 c.à.s" },
-      { nb: 6, riz: "480 g", oeufs: "6", jambon: "180 g", petitspois: "180 g", sojaS: "6 c.à.s", huile: "6 c.à.s" },
-      { nb: 7, riz: "560 g", oeufs: "7", jambon: "210 g", petitspois: "210 g", sojaS: "7 c.à.s", huile: "7 c.à.s" },
-      { nb: 8, riz: "640 g", oeufs: "8", jambon: "240 g", petitspois: "240 g", sojaS: "8 c.à.s", huile: "8 c.à.s" },
-      { nb: 9, riz: "720 g", oeufs: "9", jambon: "270 g", petitspois: "270 g", sojaS: "9 c.à.s", huile: "9 c.à.s" },
-      { nb: 10, riz: "800 g", oeufs: "10", jambon: "300 g", petitspois: "300 g", sojaS: "10 c.à.s", huile: "10 c.à.s" },
-      { nb: 11, riz: "880 g", oeufs: "11", jambon: "330 g", petitspois: "330 g", sojaS: "11 c.à.s", huile: "11 c.à.s" },
-      { nb: 12, riz: "960 g", oeufs: "12", jambon: "360 g", petitspois: "360 g", sojaS: "12 c.à.s", huile: "12 c.à.s" },
-      { nb: 13, riz: "1040 g", oeufs: "13", jambon: "390 g", petitspois: "390 g", sojaS: "13 c.à.s", huile: "13 c.à.s" },
-      { nb: 14, riz: "1120 g", oeufs: "14", jambon: "420 g", petitspois: "420 g", sojaS: "14 c.à.s", huile: "14 c.à.s" },
-      { nb: 15, riz: "1200 g", oeufs: "15", jambon: "450 g", petitspois: "450 g", sojaS: "15 c.à.s", huile: "15 c.à.s" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍚", titre: "Riz de la veille", detail: "Idéalement utiliser du riz cuit la veille et réfrigéré — il est plus sec et saute mieux. Sinon cuire le riz et laisser refroidir complètement.", badge: null },
-      { icone: "🥚", titre: "Brouiller les œufs", detail: "Dans un wok très chaud avec huile, verser les œufs battus. Les brouiller rapidement et réserver.", badge: null },
-      { icone: "🍳", titre: "Sauter le riz", detail: "Dans le même wok, ajouter huile et riz froid. Faire sauter à feu maximum en remuant constamment 3-4 min.", badge: "⏱ 4 min" },
-      { icone: "🥓", titre: "Ajouter garnitures", detail: "Ajouter le jambon en dés, les petits pois, les œufs brouillés. Mélanger à feu vif. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: null },
-      { icone: "🍶", titre: "Assaisonner", detail: "Ajouter la sauce soja et l'huile de sésame. Mélanger rapidement. Servir immédiatement.", badge: null }
-    ]
-  },
   potaufeu: {
     nom: "Pot-au-Feu",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
@@ -7656,7 +7622,7 @@ Object.assign(recettes, {
     nom: "Riz cantonais",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "chine",
-    base: 2,
+    base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",
     emoji: "🍚",
