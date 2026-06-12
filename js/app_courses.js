@@ -40,7 +40,7 @@ function lcTrouverRayon(label) {
 
 // === Ouvrir l'écran de sélection des recettes ===
 // Ingrédients "garde-manger" qu'on ne met JAMAIS dans la liste de courses (eau du robinet, glaçons…)
-const LC_NON_ACHAT = new Set(["eau","eaubouillante","eauchaude","eaufroide","glacons","glacon","glace"]);
+const LC_NON_ACHAT = new Set(["eau","eaubouillante","eauchaude","eaufroide","eaudurobinet","eautiede","glacons","glacon"]);
 
 function lcOuvrirSelectionRecettes() {
   const grille = document.getElementById("lc-grille-selection");
