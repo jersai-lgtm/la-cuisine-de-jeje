@@ -301,6 +301,7 @@ mayonnaise: {
     ]
   },
   saucecesar: {
+    liees: ["mayonnaise"],
     nom: "Sauce César",
     cat: "sauces", pays: "usa",
     base: 6,
@@ -464,6 +465,7 @@ mayonnaise: {
     ]
   },
   saucesamourai: {
+    liees: ["mayonnaise","ketchup"],
     nom: "Sauce samouraï",
     cat: "sauces", pays: "france",
     base: 6,
@@ -496,6 +498,7 @@ mayonnaise: {
     ]
   },
   saucetartare: {
+    liees: ["mayonnaise"],
     nom: "Sauce tartare",
     cat: "sauces", pays: "france",
     base: 6,
@@ -593,6 +596,7 @@ mayonnaise: {
     ]
   },
   saucecocktail: {
+    liees: ["mayonnaise","ketchup"],
     nom: "Sauce cocktail",
     cat: "sauces", pays: "france",
     base: 6,
@@ -625,6 +629,7 @@ mayonnaise: {
     ]
   },
   sauceaigredouce: {
+    liees: ["ketchup"],
     nom: "Sauce aigre-douce",
     cat: "sauces", pays: "chine",
     base: 6,

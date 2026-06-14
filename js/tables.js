@@ -777,6 +777,20 @@ function nutriLettreRecette(key) {
   return ns ? ns.lettre : null;
 }
 
+// Section "Recettes liées" : composants de la recette (buns, pâtes, sauces, compote…) cliquables.
+function recettesLieesHTML(key) {
+  const r = recettes[key];
+  const liste = (r && Array.isArray(r.liees)) ? r.liees.filter(c => recettes[c]) : [];
+  if (!liste.length) return "";
+  const items = liste.map(c => {
+    const rc = recettes[c];
+    const nomC = (typeof getNomRecette === "function") ? getNomRecette(c) : (rc.nom || c);
+    const emo = rc.emoji || "🍽️";
+    return `<div class="liee-item" onclick="choisirRecette('${c}')"><span class="liee-emoji">${emo}</span><span class="liee-nom">${nomC}</span><span class="liee-fleche">›</span></div>`;
+  }).join("");
+  return `<div class="fiche-liees"><div class="fiche-liees-titre">🔗 Recettes liées</div><div class="fiche-liees-liste">${items}</div></div>`;
+}
+
 function choisirRecette(nom, personnesOverride) {
   const data = recettes[nom];
   if (!data) return;
@@ -1618,6 +1632,7 @@ function choisirRecette(nom, personnesOverride) {
       <p class="fiche-desc">${data.description}</p>
     </div>
     ${htmlPrixCalories(nom, personnes)}
+    ${typeof recettesLieesHTML === "function" ? recettesLieesHTML(nom) : ""}
     <div class="fiche-meta">
       <span>⏱ ${data.temps}</span>
       <span>${data.niveau}</span>

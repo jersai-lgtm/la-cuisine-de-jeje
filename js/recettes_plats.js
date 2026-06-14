@@ -184,6 +184,7 @@ Object.assign(recettes, {
     ]
   },
   tacosmaison: {
+    liees: ["galettetacos"],
     nom: "Tacos Maison",
     cat: "plats", saisons: ["ete"], pays: "mexique",
     base: 2,
@@ -286,6 +287,7 @@ Object.assign(recettes, {
     ]
   },
   burgermaison: {
+    liees: ["painburger","sauceburger"],
     nom: "Burger Maison",
     cat: "plats", saisons: ["ete"], pays: "usa",
     base: 2,
@@ -354,6 +356,7 @@ Object.assign(recettes, {
     ]
   },
   moussaka: {
+    liees: ["bechamel"],
     nom: "Moussaka",
     cat: "plats", saisons: ["automne","ete"], pays: "grece",
     base: 6,
@@ -456,6 +459,7 @@ Object.assign(recettes, {
     ]
   },
   quichelorraine: {
+    liees: ["patebrisee"],
     nom: "Quiche Lorraine",
     cat: "plats", pays: "france",
     base: 6,
@@ -896,6 +900,7 @@ Object.assign(recettes, {
     ]
   },
   souvlakiagneau: {
+    liees: ["painpita"],
     nom: "Souvlaki d\'Agneau",
     cat: "plats", pays: "grece",
     base: 4,
@@ -1263,6 +1268,7 @@ Object.assign(recettes, {
     ]
   },
   tacoshijosepastor: {
+    liees: ["galettetacos"],
     nom: "Tacos al Pastor",
     cat: "plats", pays: "mexique",
     base: 2,
@@ -1443,6 +1449,7 @@ Object.assign(recettes, {
     ]
   },
   lasagneverdure: {
+    liees: ["bechamel","saucetomate"],
     nom: "Lasagnes aux Légumes",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 6,
@@ -1579,6 +1586,7 @@ Object.assign(recettes, {
     ]
   },
   lasagneviande: {
+    liees: ["bechamel","saucetomate"],
     nom: "Lasagnes Bolognaise",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 6,
@@ -1883,6 +1891,7 @@ Object.assign(recettes, {
     ]
   },
   wagyuBurger: {
+    liees: ["painburger","sauceburger"],
     nom: "Burger Wagyu",
     cat: "plats", saisons: ["ete"], pays: "usa",
     base: 2,
@@ -2019,6 +2028,7 @@ Object.assign(recettes, {
     ]
   },
   tarteFlambee: {
+    liees: ["patebrisee"],
     nom: "Tarte Flambée",
     cat: "plats", pays: "france",
     base: 4,
@@ -2286,6 +2296,7 @@ Object.assign(recettes, {
     ]
   },
   choufleurgratin: {
+    liees: ["bechamel"],
     nom: "Gratin de Chou-fleur",
     cat: "plats", saisons: ["automne","hiver"], pays: "france",
     base: 4,
@@ -2922,6 +2933,7 @@ Object.assign(recettes, {
     ]
   },
   volauVent: {
+    liees: ["patefeuilletee"],
     nom: "Vol-au-Vent",
     cat: "plats", saisons: ["automne"], pays: "france",
     base: 4,
@@ -3219,6 +3231,7 @@ Object.assign(recettes, {
     ]
   },
   tarteepinardfeta: {
+    liees: ["patebrisee"],
     nom: "Tarte Épinards Feta",
     cat: "plats", pays: "france",
     base: 6,
@@ -3252,6 +3265,7 @@ Object.assign(recettes, {
     ]
   },
   veggieburger: {
+    liees: ["painburger","sauceburger"],
     nom: "Burger Végétarien",
     cat: "plats", pays: "monde",
     base: 4,
@@ -3556,6 +3570,7 @@ Object.assign(recettes, {
     ]
   },
   birriatacos: {
+    liees: ["galettetacos"],
     nom: "Tacos Birria",
     cat: "plats", pays: "mexique",
     base: 4,
@@ -4158,6 +4173,7 @@ Object.assign(recettes, {
     ]
   },
   banhmiviet: {
+    liees: ["mayonnaise"],
     nom: "Bánh Mì Vietnamien",
     cat: "plats", pays: "vietnam",
     base: 2,
@@ -4375,6 +4391,7 @@ Object.assign(recettes, {
     ]
   },
   fattehlibanaise: {
+    liees: ["painpita"],
     nom: "Fatteh Libanaise",
     cat: "plats", pays: "liban",
     base: 4,
@@ -4559,6 +4576,7 @@ Object.assign(recettes, {
     ]
   },
   quichepoireaux: {
+    liees: ["patebrisee"],
     nom: "Quiche aux Poireaux",
     cat: "plats", saisons: ["hiver","printemps","automne"], pays: "france",
     base: 6,
@@ -4635,6 +4653,7 @@ Object.assign(recettes, {
     ]
   },
   currywurst: {
+    liees: ["ketchup"],
     nom: "Currywurst",
     cat: "plats", pays: "allemagne",
     base: 4,
@@ -6236,6 +6255,7 @@ Object.assign(recettes, {
     ]
   },
   doner: {
+    liees: ["painpita","sauceblanche"],
     nom: "Döner Kebab",
     cat: "plats", pays: "turquie",
     dateAjout: "2026-06-01",
@@ -6493,6 +6513,7 @@ Object.assign(recettes, {
     ]
   },
   shawarma: {
+    liees: ["painpita","sauceblanche"],
     cat: "plats", pays: "liban",
     dateAjout: "2026-06-01",
     base: 4,
@@ -6565,6 +6586,7 @@ Object.assign(recettes, {
     ]
   },
   enchiladas: {
+    liees: ["galettetacos"],
     cat: "plats", pays: "mexique",
     dateAjout: "2026-06-01",
     base: 4,
@@ -7033,6 +7055,7 @@ Object.assign(recettes, {
     ]
   },
   beefwellington: {
+    liees: ["patefeuilletee"],
     cat: "plats", pays: "angleterre",
     dateAjout: "2026-06-02",
     base: 4,
@@ -7213,6 +7236,7 @@ Object.assign(recettes, {
     ]
   },
   tourtiere: {
+    liees: ["patebrisee"],
     nom: "Tourtière",
     cat: "plats", pays: "canada",
     dateAjout: "2026-06-03",
@@ -7547,6 +7571,7 @@ Object.assign(recettes, {
     ]
   },
   patespesto: {
+    liees: ["pestomaison"],
     nom: "Pâtes au pesto",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "italie",
@@ -8020,6 +8045,7 @@ Object.assign(recettes, {
     ]
   },
   quichethon: {
+    liees: ["patebrisee"],
     nom: "Quiche au thon",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
@@ -8057,6 +8083,7 @@ Object.assign(recettes, {
     ]
   },
   tartetomate: {
+    liees: ["patefeuilletee","patebrisee"],
     nom: "Tarte à la tomate",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
@@ -8093,6 +8120,7 @@ Object.assign(recettes, {
     ]
   },
   tartecourgettes: {
+    liees: ["patefeuilletee","patebrisee"],
     nom: "Tarte aux courgettes",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
@@ -8491,6 +8519,7 @@ Object.assign(recettes, {
     ]
   },
   burritos: {
+    liees: ["galettetacos"],
     nom: "Burritos",
     dateAjout: "2026-06-05",
     cat: "plats", pays: "mexique",
@@ -8527,6 +8556,7 @@ Object.assign(recettes, {
     ]
   },
   cannelloni: {
+    liees: ["bechamel","saucetomate"],
     nom: "Cannelloni",
     dateAjout: "2026-06-05",
     cat: "plats", pays: "italie",
@@ -8599,6 +8629,7 @@ Object.assign(recettes, {
     ]
   },
   kebabmaison: {
+    liees: ["painpita","sauceblanche"],
     nom: "Kebab maison",
     dateAjout: "2026-06-05",
     cat: "plats", pays: "turquie",
@@ -8635,6 +8666,7 @@ Object.assign(recettes, {
     ]
   },
   gyrosgrec: {
+    liees: ["painpita"],
     nom: "Gyros grec",
     dateAjout: "2026-06-05",
     cat: "plats", pays: "grece",
@@ -8891,6 +8923,7 @@ Object.assign(recettes, {
     ]
   },
   fajitaspoulet: {
+    liees: ["galettetacos"],
     nom: "Fajitas au Poulet",
     dateAjout: "2026-06-06T11:59:00",
     cat: "plats", pays: "mexique",
@@ -10886,6 +10919,7 @@ Object.assign(recettes, {
     ]
   },
   musakhan: {
+    liees: ["painpita"],
     nom: "Musakhan",
     cat: "plats",
     pays: "palestine",
@@ -12144,6 +12178,7 @@ Object.assign(recettes, {
   },
 
   iskender: {
+    liees: ["painpita","saucetomate","sauceblanche"],
     nom: "İskender Kebab",
     dateAjout: "2026-06-12T14:02:00",
     cat: "plats", pays: "turquie",

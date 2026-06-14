@@ -709,6 +709,7 @@ Object.assign(recettes, {
     ]
   },
   chaussonpommes: {
+    liees: ["patefeuilletee","compotepommes"],
     nom: "Chausson aux pommes",
     cat: "boulangerie", pays: "france",
     base: 6,

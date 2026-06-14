@@ -538,6 +538,7 @@ Object.assign(recettes, {
     ]
   },
   saladeburrata: {
+    liees: ["pestomaison"],
     nom: "Salade Burrata",
     cat: "salades", saisons: ["ete","printemps"], pays: "italie",
     base: 2,
@@ -577,6 +578,7 @@ Object.assign(recettes, {
     ]
   },
   coleslaw: {
+    liees: ["mayonnaise"],
     nom: "Coleslaw",
     cat: "salades", pays: "usa",
     base: 6,
@@ -610,6 +612,7 @@ Object.assign(recettes, {
     ]
   },
   saladewaldorf: {
+    liees: ["mayonnaise"],
     nom: "Salade Waldorf",
     cat: "salades", pays: "usa",
     base: 4,
@@ -742,6 +745,7 @@ Object.assign(recettes, {
     ]
   },
   saladeolivier: {
+    liees: ["mayonnaise"],
     nom: "Salade Olivier",
     cat: "salades", pays: "russie",
     dateAjout: "2026-06-01",
@@ -887,6 +891,7 @@ Object.assign(recettes, {
     ]
   },
   saladepiemontaise: {
+    liees: ["mayonnaise"],
     nom: "Salade piémontaise",
     dateAjout: "2026-06-05T21:00:00",
     cat: "salades", pays: "france",
@@ -1034,6 +1039,7 @@ Object.assign(recettes, {
     ]
   },
   fattouche: {
+    liees: ["painpita"],
     nom: "Salade Fattouche",
     cat: "salades",
     pays: "liban",
@@ -1219,6 +1225,7 @@ Object.assign(recettes, {
   },
 
   fattoush: {
+    liees: ["painpita"],
     nom: "Fattoush",
     dateAjout: "2026-06-12T14:08:00",
     cat: "salades", pays: "liban",

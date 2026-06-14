@@ -5,6 +5,7 @@
 // ============================================================
 Object.assign(recettes, {
   pizzamargherita: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Margherita",
     cat: "pizzas", saisons: ["ete"], pays: "italie",
     base: 2,
@@ -40,6 +41,7 @@ Object.assign(recettes, {
     ]
   },
   pizzareine: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Reine",
     cat: "pizzas", saisons: ["automne","ete"], pays: "france",
     base: 2,
@@ -74,6 +76,7 @@ Object.assign(recettes, {
     ]
   },
   pizza4fromages: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza 4 Fromages",
     cat: "pizzas", pays: "italie",
     base: 2,
@@ -108,6 +111,7 @@ Object.assign(recettes, {
     ]
   },
   pizzadiavola: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Diavola",
     cat: "pizzas", saisons: ["ete"], pays: "italie",
     base: 2,
@@ -141,6 +145,7 @@ Object.assign(recettes, {
     ]
   },
   pizzasaumonepinards: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Saumon Épinards",
     cat: "pizzas", pays: "france",
     base: 2,
@@ -174,6 +179,7 @@ Object.assign(recettes, {
     ]
   },
   pizzavegetarienne: {
+    liees: ["pestomaison","pizza","saucetomate"],
     nom: "Pizza Végétarienne",
     cat: "pizzas", pays: "italie",
     base: 2,
@@ -207,6 +213,7 @@ Object.assign(recettes, {
     ]
   },
   pizzaprosciuttoroquette: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Prosciutto Roquette",
     cat: "pizzas", pays: "italie",
     base: 2,
@@ -240,6 +247,7 @@ Object.assign(recettes, {
     ]
   },
   pizzatruffe: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza à la Truffe",
     cat: "pizzas", saisons: ["automne"], pays: "italie",
     base: 2,
@@ -273,6 +281,7 @@ Object.assign(recettes, {
     ]
   },
   pizzabiancoverdure: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Bianca aux Légumes",
     cat: "pizzas", pays: "italie",
     base: 2,
@@ -306,6 +315,7 @@ Object.assign(recettes, {
     ]
   },
   pizzacalzone: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Calzone",
     cat: "pizzas", saisons: ["ete"], pays: "italie",
     base: 2,
@@ -340,6 +350,7 @@ Object.assign(recettes, {
     ]
   },
   pizzapoivrons: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza aux Poivrons",
     cat: "pizzas", saisons: ["automne","ete"], pays: "italie",
     base: 2,
@@ -373,6 +384,7 @@ Object.assign(recettes, {
     ]
   },
   pizzapatate: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza à la Patate",
     cat: "pizzas", pays: "italie",
     base: 2,
@@ -407,6 +419,7 @@ Object.assign(recettes, {
     ]
   },
   pizzabresilienne: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Brésilienne",
     cat: "pizzas", saisons: ["ete"], pays: "bresil",
     base: 2,
@@ -440,6 +453,7 @@ Object.assign(recettes, {
     ]
   },
   pizzachorizo: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Chorizo",
     cat: "pizzas", saisons: ["automne","ete"], pays: "italie",
     base: 2,
@@ -474,6 +488,7 @@ Object.assign(recettes, {
     ]
   },
   pizzahawaienne: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Hawaïenne",
     cat: "pizzas", saisons: ["ete"], pays: "italie",
     base: 2,
@@ -507,6 +522,7 @@ Object.assign(recettes, {
     ]
   },
   pizzanduja: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Nduja",
     cat: "pizzas", pays: "italie",
     base: 4,
@@ -542,6 +558,7 @@ Object.assign(recettes, {
     ]
   },
   pizzafiguechevre: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza Figue-Chèvre",
     cat: "pizzas", saisons: ["automne"], pays: "italie",
     base: 4,
@@ -577,6 +594,7 @@ Object.assign(recettes, {
     ]
   },
   pizzapestopignons: {
+    liees: ["pestomaison","pizza","saucetomate"],
     nom: "Pizza Pesto-Pignons",
     cat: "pizzas", saisons: ["ete"], pays: "italie",
     base: 4,
@@ -612,6 +630,7 @@ Object.assign(recettes, {
     ]
   },
   pizzamarinara: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza marinara",
     cat: "pizzas", pays: "italie",
     base: 2,
@@ -645,6 +664,7 @@ Object.assign(recettes, {
     ]
   },
   pizzanapolitaine: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza napolitaine",
     cat: "pizzas", pays: "italie",
     base: 2,
@@ -678,6 +698,7 @@ Object.assign(recettes, {
     ]
   },
   pizzaburrata: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza burrata",
     cat: "pizzas", pays: "italie",
     base: 2,
@@ -711,6 +732,7 @@ Object.assign(recettes, {
     ]
   },
   pizzamortadelle: {
+    liees: ["pizza","saucetomate"],
     nom: "Pizza mortadelle-pistache",
     cat: "pizzas", pays: "italie",
     base: 2,
@@ -744,6 +766,7 @@ Object.assign(recettes, {
     ]
   },
   pizza4saisons: {
+    liees: ["saucetomate","pizza"],
     nom: "Pizza Quatre Saisons",
     cat: "pizzas",
     pays: "italie",
@@ -781,6 +804,7 @@ Object.assign(recettes, {
     ]
   },
   pizzapepperoni: {
+    liees: ["saucetomate","pizza"],
     nom: "Pizza Pepperoni",
     cat: "pizzas",
     pays: "usa",

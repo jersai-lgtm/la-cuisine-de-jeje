@@ -431,6 +431,7 @@ Object.assign(recettes, {
       ]
   },
   vitellotonnato: {
+    liees: ["mayonnaise"],
     nom: "Vitello Tonnato",
     cat: "entrees", saisons: ["ete"], pays: "italie",
     base: 4,
@@ -694,6 +695,7 @@ Object.assign(recettes, {
     ]
   },
 oeufmayo: {
+    liees: ["mayonnaise"],
     nom: "Œufs mayonnaise",
     cat: "entrees", pays: "france",
     base: 6,
@@ -764,6 +766,7 @@ oeufmayo: {
       ]
   },
   feuilletechevremiel: {
+    liees: ["patefeuilletee"],
     nom: "Feuilletés chèvre-miel",
     cat: "entrees", pays: "france",
     base: 4,
@@ -975,6 +978,7 @@ oeufmayo: {
     ]
   },
   causalimena: {
+    liees: ["mayonnaise"],
     nom: "Causa Limeña",
     cat: "entrees", pays: "perou",
     dateAjout: "2026-06-03",
@@ -1271,6 +1275,7 @@ oeufmayo: {
     ]
   },
   pateencroute: {
+    liees: ["patebrisee"],
     nom: "Pâté en Croûte",
     cat: "entrees",
     pays: "france",

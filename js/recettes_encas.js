@@ -92,6 +92,7 @@ Object.assign(recettes, {
       ]
   },
   falafel: {
+    liees: ["painpita"],
     nom: "Falafel",
     cat: "encas", pays: "liban",
     base: 4,
@@ -652,6 +653,7 @@ Object.assign(recettes, {
     ]
   },
   quesadillas: {
+    liees: ["galettetacos"],
     nom: "Quesadillas",
     cat: "encas", pays: "mexique",
     base: 4,
@@ -763,6 +765,7 @@ Object.assign(recettes, {
       ]
   },
   clubsandwich: {
+    liees: ["mayonnaise"],
     nom: "Club sandwich",
     cat: "encas", pays: "usa",
     base: 2,
@@ -798,6 +801,7 @@ Object.assign(recettes, {
       ]
   },
   paninimozza: {
+    liees: ["pestomaison"],
     nom: "Panini tomate-mozza",
     cat: "encas", pays: "italie",
     base: 2,
@@ -1126,6 +1130,7 @@ Object.assign(recettes, {
     ]
   },
   sabich: {
+    liees: ["painpita"],
     nom: "Sabich",
     cat: "encas",
     pays: "israel",
@@ -1500,6 +1505,7 @@ Object.assign(recettes, {
     ]
   },
   zapiekanka: {
+    liees: ["ketchup"],
     nom: "Zapiekanka",
     cat: "encas",
     pays: "pologne",
@@ -2018,6 +2024,7 @@ Object.assign(recettes, {
     ]
   },
   arepa: {
+    liees: ["mayonnaise"],
     nom: "Arepa Reina Pepiada",
     dateAjout: "2026-06-12T14:04:00",
     cat: "encas", pays: "venezuela",

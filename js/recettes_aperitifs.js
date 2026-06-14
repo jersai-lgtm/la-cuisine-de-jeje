@@ -112,6 +112,7 @@ Object.assign(recettes, {
     ]
   },
   patatasbravas: {
+    liees: ["mayonnaise"],
     nom: "Patatas Bravas",
     cat: "aperitifs", pays: "espagne",
     base: 4,
@@ -396,6 +397,7 @@ tapenade: {
       ]
   },
   feuilletessaucisse: {
+    liees: ["patefeuilletee"],
     nom: "Feuilletés à la saucisse",
     cat: "aperitifs", pays: "france",
     base: 8,
@@ -431,6 +433,7 @@ tapenade: {
       ]
   },
   palmierspesto: {
+    liees: ["patefeuilletee","pestomaison"],
     nom: "Palmiers feuilletés au pesto",
     cat: "aperitifs", pays: "italie",
     base: 8,
@@ -466,6 +469,7 @@ tapenade: {
       ]
   },
   oeufsmimosa: {
+    liees: ["mayonnaise"],
     nom: "Œufs mimosa",
     cat: "aperitifs", pays: "france",
     base: 6,
@@ -817,6 +821,7 @@ tapenade: {
       ]
   },
   verrineavocatcrevette: {
+    liees: ["mayonnaise"],
     nom: "Verrine avocat-crevette",
     cat: "aperitifs", pays: "france",
     base: 6,
@@ -1291,6 +1296,7 @@ tapenade: {
     ]
   },
   mozzasticks: {
+    liees: ["saucetomate"],
     nom: "Mozzarella Sticks",
     cat: "aperitifs",
     pays: "usa",

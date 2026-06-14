@@ -413,6 +413,7 @@ Object.assign(recettes, {
       ]
   },
   millefeuille: {
+    liees: ["patefeuilletee"],
     nom: "Mille-feuille",
     cat: "desserts", pays: "france",
     base: 8,
@@ -519,6 +520,7 @@ Object.assign(recettes, {
       ]
   },
   tartetatinpommes: {
+    liees: ["patebrisee","compotepommes"],
     nom: "Tarte Tatin aux Pommes",
     cat: "desserts", pays: "france",
     base: 6,
@@ -590,6 +592,7 @@ Object.assign(recettes, {
       ]
   },
   tartepistache: {
+    liees: ["patesablee"],
     nom: "Tarte à la Pistache",
     cat: "desserts", saisons: ["ete"], pays: "france",
     base: 8,
@@ -625,6 +628,7 @@ Object.assign(recettes, {
       ]
   },
   tartechocolatcaramel: {
+    liees: ["patesablee"],
     nom: "Tarte Chocolat Caramel",
     cat: "desserts", pays: "france",
     base: 8,
@@ -886,6 +890,7 @@ Object.assign(recettes, {
     ]
   },
   tartecitron: {
+    liees: ["patesablee"],
     nom: "Tarte au Citron",
     cat: "desserts", pays: "france",
     base: 6,
@@ -921,6 +926,7 @@ Object.assign(recettes, {
     ]
   },
   tarteaupommes: {
+    liees: ["patebrisee","compotepommes"],
     nom: "Tarte aux Pommes",
     cat: "desserts", pays: "france",
     base: 6,
@@ -1043,6 +1049,7 @@ Object.assign(recettes, {
     ]
   },
   tarteFragoles: {
+    liees: ["patesablee"],
     nom: "Tarte aux Fraises",
     cat: "desserts", saisons: ["ete","printemps"], pays: "france",
     base: 6,
@@ -1218,6 +1225,7 @@ Object.assign(recettes, {
       ]
   },
   tarteNormande: {
+    liees: ["patebrisee","compotepommes"],
     nom: "Tarte Normande",
     cat: "desserts", pays: "france",
     base: 6,
@@ -1253,6 +1261,7 @@ Object.assign(recettes, {
       ]
   },
   pasteldenata: {
+    liees: ["patefeuilletee"],
     nom: "Pastéis de Nata",
     cat: "desserts", pays: "portugal",
     base: 4,
@@ -1503,6 +1512,7 @@ Object.assign(recettes, {
     ]
   },
   galettedesrois: {
+    liees: ["patefeuilletee"],
     nom: "Galette des Rois",
     cat: "desserts", saisons: ["hiver"], pays: "france",
     base: 8,
@@ -1655,6 +1665,7 @@ Object.assign(recettes, {
     ]
   },
   sainthonore: {
+    liees: ["patefeuilletee"],
     nom: "Saint-Honoré",
     cat: "desserts", pays: "france",
     base: 8,
