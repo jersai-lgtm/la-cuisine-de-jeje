@@ -487,6 +487,8 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 .liee-emoji { font-size: 20px; }
 .liee-nom { flex: 1; font-size: 13px; font-weight: 600; color: #fff; }
 .liee-fleche { color: var(--accent, #f48fb1); font-size: 18px; font-weight: 700; }
+.fiche-retour { background: none; border: none; color: var(--accent, #f48fb1); font-size: 15px; font-weight: 600; padding: 4px 6px; margin: 0 0 2px -2px; cursor: pointer; display: inline-flex; align-items: center; }
+.fiche-retour:active { transform: scale(.97); }
 .fiche-modal-header .fiche-titre { font-size: 26px; margin: 0 0 8px; }
 .fiche-modal-header .fiche-desc  { color: #ccc; font-size: 13px; line-height: 1.5; margin-bottom: 10px; }
 .fiche-meta {
