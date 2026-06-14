@@ -478,6 +478,15 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 .fiche-photo-fallback { display: none; font-size: 60px; text-align: center; padding: 38px 0; }
 .fiche-photo-bloc.noimg .fiche-photo { display: none; }
 .fiche-photo-bloc.noimg .fiche-photo-fallback { display: block; }
+.fiche-liees { background: var(--accent-soft, #1b1622); background: #1b1622; border: 1px solid #2f2838; border-radius: 14px; padding: 12px 13px; margin: 4px 0 14px; }
+.fiche-liees-titre { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 10px; }
+.fiche-liees-liste { display: flex; flex-direction: column; gap: 8px; }
+.liee-item { display: flex; align-items: center; gap: 10px; background: #241d2e; border: 1px solid #3a3147; border-radius: 11px; padding: 9px 11px; cursor: pointer; transition: background .15s, transform .1s; }
+.liee-item:hover { background: #2e2538; }
+.liee-item:active { transform: scale(.98); }
+.liee-emoji { font-size: 20px; }
+.liee-nom { flex: 1; font-size: 13px; font-weight: 600; color: #fff; }
+.liee-fleche { color: var(--accent, #f48fb1); font-size: 18px; font-weight: 700; }
 .fiche-modal-header .fiche-titre { font-size: 26px; margin: 0 0 8px; }
 .fiche-modal-header .fiche-desc  { color: #ccc; font-size: 13px; line-height: 1.5; margin-bottom: 10px; }
 .fiche-meta {
