@@ -685,6 +685,15 @@ function estDeSaison(key) {
   return s.includes(getSaisonActuelle());
 }
 
+// Recette EXPLICITEMENT hors-saison : taguée avec des saisons qui n'incluent pas la saison courante.
+// Les recettes non taguées sont considérées neutres (toutes saisons) → renvoie false.
+function estHorsSaison(key) {
+  const s = recettes[key]?.saisons;
+  if (!s || !Array.isArray(s) || !s.length) return false; // non tagué = neutre, on garde
+  const sa = (typeof getSaisonActuelle === "function") ? getSaisonActuelle() : null;
+  return sa ? !s.includes(sa) : false;
+}
+
 // Recette ajoutée il y a ≤ 7 jours (réutilise dateAjout) → badge 🆕 app-wide
 function estNouveaute(key) {
   const d = recettes?.[key]?.dateAjout;

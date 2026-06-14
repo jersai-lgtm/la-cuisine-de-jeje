@@ -849,7 +849,7 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   });
 
   // Catégories à exclure des menus
-  const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts"]);
+  const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts","tartinables","sauces"]);
   // Recettes à exclure spécifiquement des repas
   const _recExclues2 = new Set([
     // Boulangerie
@@ -884,6 +884,13 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
     const texte = texteRecette(key);
     return ![...motsInterdits].some(m => texte.includes(m));
   });
+
+  // 🗓️ Filtre saison (soft) : écarte les recettes explicitement hors-saison (chou-fleur en été, soupe d'hiver…).
+  // Les recettes non taguées restent (neutres). Relâché s'il reste trop peu de choix.
+  if (typeof estHorsSaison === "function") {
+    const poolSaison = pool.filter(key => !estHorsSaison(key));
+    if (poolSaison.length >= 20) pool = poolSaison;
+  }
 
   // Anti-répétition récente : exclure les recettes faites depuis moins de 7 jours
   // Soft : si après filtre il reste moins de 30 recettes, on relâche cette contrainte.
@@ -1451,9 +1458,9 @@ function regenRepas(jourNom, moment) {
   if (!jour) return;
 
   // Construire pool compatible
-  const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts","brunch"]);
+  const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts","brunch","tartinables","sauces"]);
   const motsExclus = motsExclusProfil();
-  const pool = Object.keys(recettes).filter(key => {
+  let pool = Object.keys(recettes).filter(key => {
     // Exclure les non-repas via la liste fiable (ne dépend pas du DOM)
     if (RECETTES_NON_REPAS.has(key)) return false;
     // Garder uniquement les vrais plats (catégorie depuis la donnée)
@@ -1467,6 +1474,12 @@ function regenRepas(jourNom, moment) {
     const niveau = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
     return niveau === null;
   });
+
+  // 🗓️ Filtre saison (soft) : écarte les recettes hors-saison, garde les non-taguées.
+  if (typeof estHorsSaison === "function") {
+    const poolSaison = pool.filter(key => !estHorsSaison(key));
+    if (poolSaison.length >= 8) pool = poolSaison;
+  }
 
   if (pool.length === 0) return;
 
@@ -1621,7 +1634,7 @@ function afficherMenusSemaine(menus, personnes) {
           const motif = lvl ? `<div class="plan-motif-famille" title="${tip}">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
           return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${personnes})">
             <span class="plan-sous-label">${icone} ${type} ${badge}${btn}${btnCh}</span>
-            <span style="font-size:22px">${getEmoji(key)}</span>
+            <span class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getImagePath === "function" ? getImagePath(key) : ""}" alt="" loading="lazy" onerror="this.closest('.plan-repas-visuel').classList.add('noimg')"><span class="plan-repas-emoji-fallback">${getEmoji(key)}</span></span>
             <span class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[key]?.pays, 13) + " " : ""}${getNomRecette(key)}</span>
             <span class="plan-repas-note">${data.note || ""}</span>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(key, "inline") : ""}
@@ -1673,7 +1686,7 @@ function afficherMenusSemaine(menus, personnes) {
 
       const soirBlocHTML = jour.soir ? `<div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
             <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}${chSoir}</div>
-            <div class="plan-repas-emoji">${getEmoji(soir)}</div>
+            <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getImagePath === "function" ? getImagePath(soir) : ""}" alt="" loading="lazy" onerror="this.closest('.plan-repas-visuel').classList.add('noimg')"><span class="plan-repas-emoji-fallback">${getEmoji(soir)}</span></div>
             <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[soir]?.pays, 13) + " " : ""}${getNomRecette(soir)}</div>
             <div class="plan-repas-note">${soirNote}</div>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(soir, "inline") : ""}
@@ -1685,7 +1698,7 @@ function afficherMenusSemaine(menus, personnes) {
         <div class="plan-repas-row"${jour.soir ? "" : ' style="grid-template-columns:1fr"'}>
           <div class="plan-repas" style="${sMidi}" onclick="ouvrirRecettePlan('${midi}', ${personnes})">
             <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}${chMidi}</div>
-            <div class="plan-repas-emoji">${getEmoji(midi)}</div>
+            <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getImagePath === "function" ? getImagePath(midi) : ""}" alt="" loading="lazy" onerror="this.closest('.plan-repas-visuel').classList.add('noimg')"><span class="plan-repas-emoji-fallback">${getEmoji(midi)}</span></div>
             <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[midi]?.pays, 13) + " " : ""}${getNomRecette(midi)}</div>
             <div class="plan-repas-note">${midiNote}</div>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(midi, "inline") : ""}
