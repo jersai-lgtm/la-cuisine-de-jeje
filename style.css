@@ -465,6 +465,19 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
 ========================== */
 .fiche-modal-header { text-align: center; margin-bottom: 16px; }
 .fiche-modal-header .fiche-emoji { font-size: 48px; display: block; margin-bottom: 6px; }
+.fiche-modal-header .fiche-nutri-top { display: flex; flex-direction: column; align-items: center; margin-bottom: 8px; }
+.fiche-nutri-badge { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 800; color: #fff; line-height: 1; box-shadow: 0 2px 8px rgba(0,0,0,.3); }
+.fiche-nutri-top.nutri-A .fiche-nutri-badge { background: #038141; }
+.fiche-nutri-top.nutri-B .fiche-nutri-badge { background: #85bb2f; }
+.fiche-nutri-top.nutri-C .fiche-nutri-badge { background: #fecb02; color: #5a3e00; }
+.fiche-nutri-top.nutri-D .fiche-nutri-badge { background: #ee8100; }
+.fiche-nutri-top.nutri-E .fiche-nutri-badge { background: #e63e11; }
+.fiche-nutri-label { font-size: 10px; font-weight: 700; letter-spacing: .6px; color: var(--accent, #f48fb1); margin-top: 4px; }
+.fiche-photo-bloc { margin: 4px 0 14px; border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,.08); background: #221c28; }
+.fiche-photo { width: 100%; height: 180px; object-fit: cover; display: block; }
+.fiche-photo-fallback { display: none; font-size: 60px; text-align: center; padding: 38px 0; }
+.fiche-photo-bloc.noimg .fiche-photo { display: none; }
+.fiche-photo-bloc.noimg .fiche-photo-fallback { display: block; }
 .fiche-modal-header .fiche-titre { font-size: 26px; margin: 0 0 8px; }
 .fiche-modal-header .fiche-desc  { color: #ccc; font-size: 13px; line-height: 1.5; margin-bottom: 10px; }
 .fiche-meta {
