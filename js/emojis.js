@@ -90,6 +90,8 @@ const EMOJI_ALIMENTS = {
 
 // Jolis noms pour quelques clés "collées" (sinon repli automatique)
 const NOMS_PROPRES_INGR = {
+  jusananas: "Jus d'ananas",
+  grenadine: "Grenadine",
   abricot: "Abricot",
   cajou: "Noix de cajou",
   levureboulangere: "Levure de boulanger",

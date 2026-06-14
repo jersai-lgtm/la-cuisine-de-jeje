@@ -6,6 +6,45 @@
 // =============================================================================
 
 Object.assign(recettes, {
+  punchplanteur: {
+    nom: "Punch Planteur",
+    dateAjout: "2026-06-14T11:30:00",
+    cat: "cocktails",
+    pays: "antilles",
+    base: 6,
+    temps: "10 min",
+    niveau: "Facile",
+    emoji: "🍹",
+    description: "Le punch antillais par excellence : rhum ambré, jus de fruits exotiques, sirop de canne et une râpée de muscade.",
+    tableauPunchPlanteur: [
+      {nb:1, rhumambre:"4 cl", jusorange:"6 cl", jusananas:"4 cl", sucrecanne:"1,5 cl", citronvert:"1 cl", grenadine:"1 cl"},
+      {nb:2, rhumambre:"8 cl", jusorange:"12 cl", jusananas:"8 cl", sucrecanne:"3 cl", citronvert:"2 cl", grenadine:"2 cl"},
+      {nb:3, rhumambre:"12 cl", jusorange:"18 cl", jusananas:"12 cl", sucrecanne:"4,5 cl", citronvert:"3 cl", grenadine:"3 cl"},
+      {nb:4, rhumambre:"16 cl", jusorange:"24 cl", jusananas:"16 cl", sucrecanne:"6 cl", citronvert:"4 cl", grenadine:"4 cl"},
+      {nb:5, rhumambre:"20 cl", jusorange:"30 cl", jusananas:"20 cl", sucrecanne:"7,5 cl", citronvert:"5 cl", grenadine:"5 cl"},
+      {nb:6, rhumambre:"24 cl", jusorange:"36 cl", jusananas:"24 cl", sucrecanne:"9 cl", citronvert:"6 cl", grenadine:"6 cl"},
+      {nb:7, rhumambre:"28 cl", jusorange:"42 cl", jusananas:"28 cl", sucrecanne:"10,5 cl", citronvert:"7 cl", grenadine:"7 cl"},
+      {nb:8, rhumambre:"32 cl", jusorange:"48 cl", jusananas:"32 cl", sucrecanne:"12 cl", citronvert:"8 cl", grenadine:"8 cl"},
+      {nb:9, rhumambre:"36 cl", jusorange:"54 cl", jusananas:"36 cl", sucrecanne:"13,5 cl", citronvert:"9 cl", grenadine:"9 cl"},
+      {nb:10, rhumambre:"40 cl", jusorange:"60 cl", jusananas:"40 cl", sucrecanne:"15 cl", citronvert:"10 cl", grenadine:"10 cl"},
+      {nb:11, rhumambre:"44 cl", jusorange:"66 cl", jusananas:"44 cl", sucrecanne:"16,5 cl", citronvert:"11 cl", grenadine:"11 cl"},
+      {nb:12, rhumambre:"48 cl", jusorange:"72 cl", jusananas:"48 cl", sucrecanne:"18 cl", citronvert:"12 cl", grenadine:"12 cl"},
+      {nb:13, rhumambre:"52 cl", jusorange:"78 cl", jusananas:"52 cl", sucrecanne:"19,5 cl", citronvert:"13 cl", grenadine:"13 cl"},
+      {nb:14, rhumambre:"56 cl", jusorange:"84 cl", jusananas:"56 cl", sucrecanne:"21 cl", citronvert:"14 cl", grenadine:"14 cl"},
+      {nb:15, rhumambre:"60 cl", jusorange:"90 cl", jusananas:"60 cl", sucrecanne:"22,5 cl", citronvert:"15 cl", grenadine:"15 cl"}
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🥃", titre:"Choisir le rhum", detail:"Utiliser un bon rhum ambré des Antilles (Martinique, Guadeloupe) : c'est lui qui donne tout le caractère du planteur.", badge:"🥃"},
+      {icone:"🧊", titre:"Base sucrée-acidulée", detail:"Dans un grand pichet, mélanger le rhum ambré, le sirop de canne et le jus de citron vert.", badge:"⏱ 2 min"},
+      {icone:"🍊", titre:"Les jus exotiques", detail:"Ajouter le jus d'orange et le jus d'ananas bien frais, puis remuer pour homogénéiser.", badge:"⏱ 2 min"},
+      {icone:"🌺", titre:"La grenadine", detail:"Verser la grenadine qui colore et adoucit le punch ; goûter et ajuster le sirop de canne selon l'acidité des jus.", badge:"🍯"},
+      {icone:"🌰", titre:"Muscade râpée", detail:"Râper un peu de muscade fraîche à la surface : c'est la signature aromatique du planteur. ASTUCE CHEF : ajoute une pincée de cannelle pour une rondeur épicée très antillaise.", badge:"👨‍🍳 ASTUCE"},
+      {icone:"❄️", titre:"Repos au frais", detail:"Placer au réfrigérateur au moins 1 h (idéalement une nuit) pour que les saveurs se marient.", badge:"⏱ 1 h repos"},
+      {icone:"🍹", titre:"Service", detail:"Servir sur glaçons dans de grands verres, décoré d'une rondelle d'orange ou d'un quartier d'ananas.", badge:"🥂"}
+    ],
+  },
+
   vinchaud: {
     nom: "Vin Chaud de Noël",
     cat: "cocktails", pays: "france",
