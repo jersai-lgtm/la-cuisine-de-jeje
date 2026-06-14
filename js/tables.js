@@ -778,6 +778,14 @@ function nutriLettreRecette(key) {
 }
 
 // Section "Recettes liées" : composants de la recette (buns, pâtes, sauces, compote…) cliquables.
+// Ouvre une recette liée en empilant la recette parente (pour le bouton retour).
+function ouvrirRecetteLiee(child, parent) {
+  window._ficheNavStack = window._ficheNavStack || [];
+  if (parent) window._ficheNavStack.push(parent);
+  if (typeof window._backGuardPush === "function") window._backGuardPush(); // état d'historique → le bouton retour reviendra ici
+  choisirRecette(child, null, true);
+}
+
 function recettesLieesHTML(key) {
   const r = recettes[key];
   const liste = (r && Array.isArray(r.liees)) ? r.liees.filter(c => recettes[c]) : [];
@@ -786,12 +794,13 @@ function recettesLieesHTML(key) {
     const rc = recettes[c];
     const nomC = (typeof getNomRecette === "function") ? getNomRecette(c) : (rc.nom || c);
     const emo = rc.emoji || "🍽️";
-    return `<div class="liee-item" onclick="choisirRecette('${c}')"><span class="liee-emoji">${emo}</span><span class="liee-nom">${nomC}</span><span class="liee-fleche">›</span></div>`;
+    return `<div class="liee-item" onclick="ouvrirRecetteLiee('${c}','${key}')"><span class="liee-emoji">${emo}</span><span class="liee-nom">${nomC}</span><span class="liee-fleche">›</span></div>`;
   }).join("");
   return `<div class="fiche-liees"><div class="fiche-liees-titre">🔗 Recettes liées</div><div class="fiche-liees-liste">${items}</div></div>`;
 }
 
-function choisirRecette(nom, personnesOverride) {
+function choisirRecette(nom, personnesOverride, fromLiee) {
+  if (!fromLiee) window._ficheNavStack = []; // ouverture neuve → on repart de zéro
   const data = recettes[nom];
   if (!data) return;
 
@@ -1626,6 +1635,7 @@ function choisirRecette(nom, personnesOverride) {
     : `<div class="fiche-emoji">${data.emoji}</div>`;
 
   document.getElementById("modal-resultat").innerHTML = `
+    ${(window._ficheNavStack && window._ficheNavStack.length) ? `<button class="fiche-retour" onclick="history.back()">‹ Retour</button>` : ""}
     <div class="fiche-modal-header">
       ${enteteVisuelHTML}
       <h2 class="fiche-titre">${typeof drapeau === "function" ? drapeau(data.pays, 22) + " " : ""}${nomPropre}</h2>

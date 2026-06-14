@@ -3313,6 +3313,15 @@ if (typeof document !== "undefined") {
 
 // Quand le user appuie sur le bouton retour du téléphone
 window.addEventListener("popstate", function(e) {
+  // 🔗 Recettes liées : si on est dans une fiche atteinte via un lien, revenir à
+  // la recette parente au lieu de fermer la modale.
+  const _elFiche = document.getElementById("modal-calc");
+  if (_modalEstVisible(_elFiche) && window._ficheNavStack && window._ficheNavStack.length > 0) {
+    const _parent = window._ficheNavStack.pop();
+    if (typeof choisirRecette === "function") choisirRecette(_parent, null, true);
+    window._backGuardPush();
+    return;
+  }
   // Trouver la modal du dessus actuellement visible
   let modalFermee = false;
   // On parcourt en ordre inverse (la dernière ouverte = la plus haute z-index)
@@ -3358,6 +3367,7 @@ window.modalPush = function() {};
 window.modalPop = function() {};
 
 function fermerModal() {
+  window._ficheNavStack = []; // on quitte la fiche → pile vidée
   const inputP = document.getElementById("personnes");
   if (inputP) delete inputP.dataset.modified;
   document.getElementById("modal-calc").classList.remove("visible");
