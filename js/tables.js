@@ -695,7 +695,10 @@ function htmlPrixCalories(nom, quantite) {
                 <div class="pc-valeur">${calParUnite} kcal</div>
                 <div class="pc-label">Par ${unite}</div>
               </div>
-              ${nutriHtml}
+            </div>
+            <div class="fiche-photo-bloc">
+              <img class="fiche-photo" src="${typeof getImagePath === "function" ? getImagePath(nom) : ""}" alt="${nom}" loading="lazy" onerror="this.closest('.fiche-photo-bloc').classList.add('noimg')">
+              <span class="fiche-photo-fallback">${data.emoji || "🍽️"}</span>
             </div>
             <button class="btn-courses-recette" onclick="ajouterRecetteAuxCourses('${nom}')">
               🛒 Ajouter aux courses
@@ -758,6 +761,21 @@ function htmlPrixCalories(nom, quantite) {
 // =============================
 // FICHE PLEINE PAGE
 // =============================
+
+// Lettre Nutri-Score d'une recette (même calcul que la carte : ligne de base), ou null si non applicable.
+function nutriLettreRecette(key) {
+  if (typeof calculerNutriScoreRecette !== "function") return null;
+  const r = recettes[key];
+  if (!r) return null;
+  if (r.cat === "cocktails" || r.cat === "mocktails") return null; // pas de Nutri-Score sur les boissons
+  const tk = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+  if (!tk) return null;
+  const base = r.base || 4;
+  const ligne = r[tk].find(l => l.nb === base || l.patons === base) || r[tk][0];
+  if (!ligne) return null;
+  const ns = calculerNutriScoreRecette(ligne);
+  return ns ? ns.lettre : null;
+}
 
 function choisirRecette(nom, personnesOverride) {
   const data = recettes[nom];
@@ -1587,9 +1605,15 @@ function choisirRecette(nom, personnesOverride) {
     infoSaison = `<span class="fiche-saison" title="De saison : ${inf.label}">${inf.emoji} De saison</span>`;
   }
 
+  // En-tête : Nutri-Score en vedette si disponible, sinon emoji (repli)
+  const _nutriLettre = (typeof nutriLettreRecette === "function") ? nutriLettreRecette(nom) : null;
+  const enteteVisuelHTML = _nutriLettre
+    ? `<div class="fiche-nutri-top nutri-${_nutriLettre}" title="Nutri-Score ${_nutriLettre} — qualité nutritionnelle"><div class="fiche-nutri-badge">${_nutriLettre}</div><div class="fiche-nutri-label">NUTRI-SCORE</div></div>`
+    : `<div class="fiche-emoji">${data.emoji}</div>`;
+
   document.getElementById("modal-resultat").innerHTML = `
     <div class="fiche-modal-header">
-      <div class="fiche-emoji">${data.emoji}</div>
+      ${enteteVisuelHTML}
       <h2 class="fiche-titre">${typeof drapeau === "function" ? drapeau(data.pays, 22) + " " : ""}${nomPropre}</h2>
       <p class="fiche-desc">${data.description}</p>
     </div>
