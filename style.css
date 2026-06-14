@@ -1074,6 +1074,12 @@ select, input[type="number"] {
 .plan-repas:hover       { background: rgba(var(--accent-rgb),.15); transform: scale(1.02); }
 .plan-repas-label       { font-size: 11px; color: #888; margin-bottom: 6px; display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
 .plan-repas-emoji       { font-size: 28px; margin-bottom: 6px; }
+.plan-repas-visuel      { display: block; }
+.plan-repas-img         { width: 100%; max-width: 150px; height: 84px; object-fit: cover; border-radius: 8px; margin: 0 auto 6px; display: block; }
+.plan-repas-sous .plan-repas-img { height: 62px; max-width: 120px; }
+.plan-repas-emoji-fallback { display: none; font-size: 28px; margin-bottom: 6px; }
+.plan-repas-visuel.noimg .plan-repas-img { display: none; }
+.plan-repas-visuel.noimg .plan-repas-emoji-fallback { display: inline-block; }
 .plan-repas-nom         { font-size: 13px; font-weight: bold; color: #fff; margin-bottom: 4px; line-height: 1.3; }
 .plan-repas-note        { font-size: 11px; color: #aaa; font-style: italic; }
 
