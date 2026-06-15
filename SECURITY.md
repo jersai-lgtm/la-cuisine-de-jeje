@@ -53,13 +53,20 @@ L'**UID admin** est codé en dur dans les règles
 ## En-têtes HTTP (Vercel)
 
 `vercel.json` ajoute des en-têtes de sécurité (anti-clickjacking, nosniff,
-referrer, permissions). La **CSP est volontairement en `Report-Only`** : elle
-ne bloque rien mais journalise les violations.
+referrer, permissions) et une **CSP désormais en mode bloquant**
+(`Content-Security-Policy`).
 
-➡️ **Pour activer le blocage** : déployer, ouvrir la console sur les parcours
-clés (connexion Google, envoi d'avis, upload photo, chat IA), vérifier qu'aucune
-violation légitime n'apparaît, puis renommer dans `vercel.json` la clé
-`Content-Security-Policy-Report-Only` en `Content-Security-Policy`.
+La politique a été **testée localement** (chargement, scripts gstatic/gtag,
+styles inline, lecture Firestore, images) sans aucune violation. Le seul parcours
+non testable en local est la **connexion Google** (popup `accounts.google.com` /
+`apis.google.com` + iframe `cuisine-jeje.firebaseapp.com`) — ces origines sont
+incluses dans la politique.
+
+➡️ **Vérification finale recommandée** : sur le **déploiement preview Vercel de
+la branche** (créé automatiquement pour la PR), tester connexion Google + envoi
+d'un message à l'assistant + upload photo, console ouverte. Si une ressource est
+bloquée, ajouter son origine à la directive concernée. **Rollback immédiat** si
+besoin : renommer la clé en `Content-Security-Policy-Report-Only`.
 
 > Tant que le HTML contient des `onclick="…"` et `style="…"` *inline*, la
 > directive `'unsafe-inline'` reste nécessaire. Pour une CSP réellement stricte
@@ -77,24 +84,30 @@ injection en `innerHTML` :
 - `js/app.js` : réponses du chat IA échappées avant le rendu markdown.
 - `js/app_avis.js` & `js/community.js` : déjà échappés (`escapeHTML` / `_echapCom`).
 
+## ✅ Proxy IA — protégé
+
+`worker/index.js` durcit le proxy Cloudflare : CORS restreint, **jeton Firebase
+obligatoire et vérifié** (signature RS256 via les clés Google), **quota par
+utilisateur** (KV), et **paramètres imposés** côté serveur (model/max_tokens
+fixes, system/messages bornés). Le client n'appelle le proxy que connecté et
+joint son jeton. ➡️ **À déployer** : voir `worker/README.md`
+(`wrangler deploy` + secret `ANTHROPIC_API_KEY` + binding KV `RATE_LIMIT`).
+
 ## ⚠️ Risques résiduels à traiter
 
-1. **Proxy IA ouvert** — `https://la-cuisine-de-jeje.jerome-sainthot.workers.dev`
-   est appelé sans authentification. N'importe qui peut le marteler et **brûler
-   ton quota Anthropic**. À protéger : vérifier le jeton Firebase de l'appelant
-   côté Worker (App Check ou ID token), + rate-limiting / quota par utilisateur.
-2. **Données personnelles en lecture** — `avis` et `notesEtoiles` exposent le
+1. **Données personnelles en lecture** — `avis` et `notesEtoiles` exposent le
    prénom (et `utilisateurs` est lisible par l'admin). L'email n'est plus écrit
    dans `avis` (minimisation). Pour aller plus loin : ne pas stocker le prénom
    dans les notes publiques, ou exposer une **agrégation** (moyenne précalculée)
    plutôt que la collection brute.
-3. **Validation de contenu côté serveur** — `astuces`/`photos` bornent déjà
+2. **Validation de contenu côté serveur** — `astuces`/`photos` bornent déjà
    leurs champs (texte 1..500, `recetteKey`/`url` typés). À répliquer sur `avis`
    (`commentaire`) et `recettesProposees` pour la cohérence
    (`request.resource.data.commentaire is string && ...size() <= 500`).
-4. **App Check** — activer Firebase App Check (reCAPTCHA) pour limiter l'usage
-   de la base/Storage aux instances légitimes de l'app.
-5. **Collection `presence`** — écriture ouverte aux visiteurs anonymes (4 champs
+3. **App Check** — activer Firebase App Check (reCAPTCHA) pour limiter l'usage
+   de la base/Storage aux instances légitimes de l'app (en complément du jeton
+   utilisateur côté proxy).
+4. **Collection `presence`** — écriture ouverte aux visiteurs anonymes (4 champs
    bornés). Vestige non utilisé par le code v1.6.7 (la présence passe par
    `utilisateurs/{uid}.lastSeen`). À supprimer des règles si plus aucune version
    ne s'en sert.

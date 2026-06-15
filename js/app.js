@@ -3449,6 +3449,14 @@ async function envoyerQuestionClaude(nom) {
   const question = input?.value?.trim();
   if (!question) return;
 
+  // Sécurité : l'assistant passe par un proxy protégé. Il faut être connecté
+  // (le proxy exige un jeton Firebase valide → empêche l'abus de la clé API).
+  if (!window.currentUser) {
+    if (typeof afficherToast === "function") afficherToast("Connecte-toi pour utiliser l'assistant 🤖");
+    if (typeof ouvrirModalAuth === "function") ouvrirModalAuth();
+    return;
+  }
+
   // Vérifier quota
   const hist = window._claudeHistoires[nom] || { messages: [], count: 0 };
   if (hist.count >= CLAUDE_MAX_QUESTIONS) {
@@ -3495,18 +3503,35 @@ Réponds en français.`;
   container.scrollTop = container.scrollHeight;
 
   try {
-    // Proxy Cloudflare Worker (évite le blocage CORS de GitHub Pages)
+    // Proxy Cloudflare Worker (évite le blocage CORS + protège la clé API).
+    // On envoie le jeton d'identité Firebase : le Worker le vérifie et applique
+    // un quota par utilisateur (voir worker/index.js).
     const CLAUDE_PROXY = "https://la-cuisine-de-jeje.jerome-sainthot.workers.dev";
+    const idToken = await window.currentUser.getIdToken();
     const response = await fetch(CLAUDE_PROXY, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + idToken
+      },
       body: JSON.stringify({
-        model: "claude-sonnet-4-5",
-        max_tokens: 400,
+        // On n'envoie plus model/max_tokens : le Worker les impose côté serveur.
         system: systemPrompt,
         messages: hist.messages
       })
     });
+
+    // Erreurs spécifiques au proxy protégé (avant de parser le JSON).
+    if (response.status === 401) {
+      document.getElementById(loadingId)?.remove();
+      afficherMessageClaude(nom, "assistant", "Ta session a expiré — reconnecte-toi puis réessaie 🙏");
+      return;
+    }
+    if (response.status === 429) {
+      document.getElementById(loadingId)?.remove();
+      afficherMessageClaude(nom, "assistant", "Tu as posé beaucoup de questions 😅 Réessaie un peu plus tard.");
+      return;
+    }
 
     const data2 = await response.json();
     // Vérifier si l'API a retourné une erreur
