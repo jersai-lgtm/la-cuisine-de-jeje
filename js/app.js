@@ -3515,7 +3515,11 @@ Réponds en français.`;
         "Authorization": "Bearer " + idToken
       },
       body: JSON.stringify({
-        // On n'envoie plus model/max_tokens : le Worker les impose côté serveur.
+        // model/max_tokens gardés pour rester compatible avec l'ancien proxy
+        // tant qu'il n'est pas redéployé. Le Worker durci les IGNORE et impose
+        // ses propres valeurs côté serveur (worker/index.js) → sécurité intacte.
+        model: "claude-sonnet-4-5",
+        max_tokens: 400,
         system: systemPrompt,
         messages: hist.messages
       })

@@ -12,6 +12,16 @@ et en empêchant l'abus du quota. Il remplace l'ancien proxy ouvert.
 - **Paramètres imposés** : `model` et `max_tokens` fixés côté serveur ; `system`
   et `messages` bornés en taille → le proxy ne peut servir qu'à l'assistant recettes.
 
+## ⚠️ Ordre de déploiement (important)
+
+**Déployer ce Worker AVANT (ou en même temps que) le merge du front en prod.**
+Le client envoie maintenant l'en-tête `Authorization: Bearer …`, ce qui déclenche
+un preflight CORS que seul ce Worker durci autorise
+(`Access-Control-Allow-Headers: Authorization`). Si l'ancien proxy est encore en
+place au moment du merge, l'assistant pourrait cesser de répondre. Séquence sûre :
+**1.** déployer le Worker → **2.** merger la branche (déploiement Vercel) →
+**3.** tester connexion + assistant.
+
 ## Déploiement
 
 Prérequis : compte Cloudflare + `npx wrangler login`.
