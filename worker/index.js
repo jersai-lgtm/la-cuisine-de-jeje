@@ -20,10 +20,9 @@
 // =============================================================================
 
 const ALLOWED_ORIGINS = [
-  "https://la-cuisine-de-jeje.vercel.app",
-  "https://jersai-lgtm.github.io",
-  "http://localhost:5599",
-  "http://localhost",
+  "https://jersai-lgtm.github.io", // GitHub Pages (origine de prod)
+  "http://localhost:5599",         // preview locale
+  "http://localhost",              // XAMPP local
 ];
 
 // Paramètres imposés (le client ne peut plus les choisir).

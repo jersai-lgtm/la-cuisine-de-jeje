@@ -50,23 +50,26 @@ L'**UID admin** est codé en dur dans les règles
 `firestore.rules`, `storage.rules`, `js/app_avis.js` (`ADMIN_UIDS`) et
 `js/app_contribution.js` (`CONTRIB_ADMIN_UID`).
 
-## En-têtes HTTP (Vercel)
+## CSP (GitHub Pages)
 
-`vercel.json` ajoute des en-têtes de sécurité (anti-clickjacking, nosniff,
-referrer, permissions) et une **CSP désormais en mode bloquant**
-(`Content-Security-Policy`).
+L'app est servie par **GitHub Pages**, qui ne permet pas de définir d'en-têtes
+HTTP. La **CSP est donc posée en `<meta http-equiv>`** tout en haut de
+`index.html` (mode bloquant). Elle restreint les origines de scripts, connexions,
+images et iframes → réduit fortement l'impact d'une éventuelle injection.
 
-La politique a été **testée localement** (chargement, scripts gstatic/gtag,
-styles inline, lecture Firestore, images) sans aucune violation. Le seul parcours
-non testable en local est la **connexion Google** (popup `accounts.google.com` /
-`apis.google.com` + iframe `cuisine-jeje.firebaseapp.com`) — ces origines sont
-incluses dans la politique.
+Testée localement (scripts gstatic/gtag, styles inline, lecture Firestore,
+images) sans violation. Le seul parcours non testable hors-ligne est la
+**connexion Google** (popup `accounts.google.com`/`apis.google.com` + iframe
+`cuisine-jeje.firebaseapp.com`) — ces origines sont incluses.
 
-➡️ **Vérification finale recommandée** : sur le **déploiement preview Vercel de
-la branche** (créé automatiquement pour la PR), tester connexion Google + envoi
-d'un message à l'assistant + upload photo, console ouverte. Si une ressource est
-bloquée, ajouter son origine à la directive concernée. **Rollback immédiat** si
-besoin : renommer la clé en `Content-Security-Policy-Report-Only`.
+➡️ **Après mise en ligne** : ouvrir l'app, console ouverte, tester connexion
+Google + assistant + upload photo. Si une ressource est bloquée (« Refused
+to… »), ajouter son origine à la directive concernée dans le `<meta>`.
+
+> Limites du `<meta>` : `frame-ancestors`, `X-Frame-Options`,
+> `X-Content-Type-Options`, `Permissions-Policy` ne sont **pas** applicables sur
+> GitHub Pages (en-têtes seulement). Si un jour l'app passe derrière Cloudflare
+> (Pages/proxy), on pourra ajouter ces en-têtes via un fichier `_headers`.
 
 > Tant que le HTML contient des `onclick="…"` et `style="…"` *inline*, la
 > directive `'unsafe-inline'` reste nécessaire. Pour une CSP réellement stricte

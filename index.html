@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+<!-- Sécurité : CSP en <meta> (GitHub Pages ne permet pas les en-têtes HTTP).
+     Limite les origines de scripts/connexions/images → réduit fortement l'impact
+     d'une éventuelle injection. Doit rester en TÊTE (avant tout script/ressource).
+     'unsafe-inline' requis tant que le HTML utilise des onclick=/style= inline. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.gstatic.com https://apis.google.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://firebasestorage.googleapis.com https://www.google-analytics.com https://*.google-analytics.com https://la-cuisine-de-jeje.jerome-sainthot.workers.dev; frame-src https://cuisine-jeje.firebaseapp.com https://accounts.google.com https://apis.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="stylesheet" href="style.css?v=1.6.7">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-390C5MY2SS"></script>
