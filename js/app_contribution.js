@@ -6,6 +6,30 @@
    La structure utilise fixe:true + ingredientsFixes (format simple, pas d'échelle/coût).
    ============================================================ */
 
+// --- Sécurité : échappe tout contenu utilisateur injecté en innerHTML (anti-XSS).
+//     Utilise le escapeHTML global (app.js) si dispo, sinon un repli local identique.
+//     Indispensable ici car nom/prénom/description/ingrédients viennent d'utilisateurs
+//     tiers et sont rendus, entre autres, dans le panneau de modération de l'admin. ---
+const _e = (s) => (typeof escapeHTML === "function")
+  ? escapeHTML(s)
+  : String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+
+// --- Sécurité : assainit en profondeur une recette d'origine NON fiable
+//     (communauté / proposée) avant de la fusionner dans le catalogue `recettes`.
+//     La fiche est rendue via innerHTML : on échappe donc toutes les CHAÎNES
+//     (titre, étapes, ingrédients…). On ne touche pas aux nombres/booléens
+//     (ex. `base`, `nb`) pour ne pas casser le calcul des portions. ---
+function _sanitizeRecetteUntrusted(v) {
+  if (typeof v === "string") return _e(v);
+  if (Array.isArray(v)) return v.map(_sanitizeRecetteUntrusted);
+  if (v && typeof v === "object") {
+    const o = {};
+    for (const k in v) if (Object.prototype.hasOwnProperty.call(v, k)) o[k] = _sanitizeRecetteUntrusted(v[k]);
+    return o;
+  }
+  return v; // nombre, booléen, null, undefined : inchangés
+}
+
 // --- Fusionne les recettes perso dans le catalogue global + injecte les cartes ---
 window.fusionnerRecettesPerso = function () {
   if (typeof recettes === "undefined") return;
@@ -30,11 +54,11 @@ window.injecterCartesPerso = function () {
     carte.setAttribute("data-pays", r.pays || "france");
     carte.setAttribute("onclick", `ouvrirFiche('${key}', null)`);
     carte.innerHTML =
-      `<img src="${r.image || "images/" + (key.charAt(0)||"_").toLowerCase() + "/" + key + ".webp"}" alt="${r.nom || key}" onerror="this.style.display='none'">
+      `<img loading="lazy" decoding="async" src="${_e(r.image || "images/" + (key.charAt(0)||"_").toLowerCase() + "/" + key + ".webp")}" alt="${_e(r.nom || key)}" onerror="this.style.display='none'">
       <span class="carte-badge-perso" title="Ta recette perso">👤 Perso</span>
       <div class="carte-info">
-        <h2>${r.emoji || "🍽️"} ${r.nom || key}</h2>
-        <p>⏱ ${r.temps || ""}${r.niveau ? " • " + r.niveau : ""}</p>
+        <h2>${_e(r.emoji || "🍽️")} ${_e(r.nom || key)}</h2>
+        <p>⏱ ${_e(r.temps || "")}${r.niveau ? " • " + _e(r.niveau) : ""}</p>
       </div>`;
     section.appendChild(carte);
   });
@@ -171,7 +195,7 @@ window.contribAfficherMesRecettes = function () {
   box.innerHTML = cles.map(k => {
     const r = perso[k];
     return `<div class="contrib-item">
-      <span class="contrib-item-nom">${r.emoji || "🍽️"} ${r.nom || k}</span>
+      <span class="contrib-item-nom">${_e(r.emoji || "🍽️")} ${_e(r.nom || k)}</span>
       <span class="contrib-item-actions">
         <button onclick="fermerContribution();ouvrirFiche('${k}', null)" title="Voir la fiche">👁️</button>
         <button onclick="supprimerRecettePerso('${k}')" title="Supprimer">🗑️</button>
@@ -242,8 +266,9 @@ window.chargerRecettesCommunaute = async function () {
     const snap = await _db.collection("recettesCommunaute").get();
     const map = {};
     snap.forEach(doc => { const d = doc.data(); if (d) map[doc.id] = d; });
-    window._recettesCommunaute = map;
-    if (typeof recettes !== "undefined") Object.keys(map).forEach(k => { recettes[k] = map[k]; });
+    window._recettesCommunaute = map; // brut : les cartes échappent via _e()
+    // Catalogue (ouvert via la fiche en innerHTML) : on stocke une copie assainie.
+    if (typeof recettes !== "undefined") Object.keys(map).forEach(k => { recettes[k] = _sanitizeRecetteUntrusted(map[k]); });
     injecterCartesCommunaute();
   } catch (e) { console.warn("Chargement recettes communauté échoué :", e); }
 };
@@ -261,11 +286,11 @@ window.injecterCartesCommunaute = function () {
     carte.setAttribute("data-pays", r.pays || "france");
     carte.setAttribute("onclick", `ouvrirFiche('${key}', null)`);
     carte.innerHTML =
-      `<img src="${r.image || "images/" + (key.charAt(0)||"_").toLowerCase() + "/" + key + ".webp"}" alt="${r.nom || key}" onerror="this.style.display='none'">
-      <span class="carte-badge-com" title="Recette de la communauté — par ${r.prenom || "un membre"}">🌍 ${r.prenom || "Communauté"}</span>
+      `<img loading="lazy" decoding="async" src="${_e(r.image || "images/" + (key.charAt(0)||"_").toLowerCase() + "/" + key + ".webp")}" alt="${_e(r.nom || key)}" onerror="this.style.display='none'">
+      <span class="carte-badge-com" title="Recette de la communauté — par ${_e(r.prenom || "un membre")}">🌍 ${_e(r.prenom || "Communauté")}</span>
       <div class="carte-info">
-        <h2>${r.emoji || "🍽️"} ${r.nom || key}</h2>
-        <p>⏱ ${r.temps || ""}${r.niveau ? " • " + r.niveau : ""}</p>
+        <h2>${_e(r.emoji || "🍽️")} ${_e(r.nom || key)}</h2>
+        <p>⏱ ${_e(r.temps || "")}${r.niveau ? " • " + _e(r.niveau) : ""}</p>
       </div>`;
     section.appendChild(carte);
   });
@@ -286,12 +311,12 @@ window.contribAfficherMesPropositions = async function () {
       const r = doc.data(); const k = doc.id;
       const precision = r.statut === "precision" && r.questionAdmin;
       html += `<div class="contrib-item">
-        <span class="contrib-item-nom">${r.emoji || "🍽️"} ${r.nom || k}</span>
+        <span class="contrib-item-nom">${_e(r.emoji || "🍽️")} ${_e(r.nom || k)}</span>
         <span class="contrib-statut ${precision ? "statut-precision" : "statut-attente"}">${precision ? "💬 Précision demandée" : "⏳ En attente"}</span>
       </div>`;
       if (precision) {
         html += `<div class="contrib-precision">
-          <div class="contrib-question">💬 <b>Question de l'admin :</b> ${r.questionAdmin}</div>
+          <div class="contrib-question">💬 <b>Question de l'admin :</b> ${_e(r.questionAdmin)}</div>
           <textarea id="c-rep-${k}" class="contrib-rep-input" rows="2" placeholder="Ta réponse (ex : c'est pour 4 personnes)…"></textarea>
           <button class="contrib-rep-btn" onclick="repondrePrecision('${k}')">↩️ Répondre</button>
         </div>`;
@@ -330,14 +355,15 @@ window.chargerModeration = async function () {
     let html = "";
     snap.forEach(doc => {
       const r = doc.data(); const k = doc.id;
-      // Fusionner pour permettre l'aperçu via la fiche (admin uniquement)
-      if (typeof recettes !== "undefined") recettes[k] = r;
-      const ingr = (r.ingredientsFixes || []).map(p => { const a = Array.isArray(p), n = a ? p[0] : (p && p.k), q = a ? p[1] : (p && p.v); return (n || "") + (q ? " (" + q + ")" : ""); }).join(", ");
-      const conv = `${r.questionAdmin ? `<div class="contrib-modo-q">💬 Tu as demandé : <i>${r.questionAdmin}</i></div>` : ""}${r.reponseAuteur ? `<div class="contrib-modo-r">↩️ Réponse de l'auteur : <b>${r.reponseAuteur}</b></div>` : ""}`;
+      // Aperçu via la fiche (innerHTML) : on stocke une copie assainie au catalogue.
+      // `r` reste brut pour le rendu de la carte de modération ci-dessous (échappé par _e).
+      if (typeof recettes !== "undefined") recettes[k] = _sanitizeRecetteUntrusted(r);
+      const ingr = (r.ingredientsFixes || []).map(p => { const a = Array.isArray(p), n = a ? p[0] : (p && p.k), q = a ? p[1] : (p && p.v); return _e(n || "") + (q ? " (" + _e(q) + ")" : ""); }).join(", ");
+      const conv = `${r.questionAdmin ? `<div class="contrib-modo-q">💬 Tu as demandé : <i>${_e(r.questionAdmin)}</i></div>` : ""}${r.reponseAuteur ? `<div class="contrib-modo-r">↩️ Réponse de l'auteur : <b>${_e(r.reponseAuteur)}</b></div>` : ""}`;
       const badge = r.reponseAuteur ? ` <span class="contrib-statut statut-attente">↩️ a répondu</span>` : (r.statut === "precision" ? ` <span class="contrib-statut statut-precision">💬 en attente de l'auteur</span>` : "");
       html += `<div class="contrib-modo-item">
-        <div class="contrib-modo-head">${r.emoji || "🍽️"} <b>${r.nom || k}</b> <span class="contrib-modo-auteur">par ${r.prenom || "?"}</span>${badge}</div>
-        ${r.description ? `<div class="contrib-modo-desc">${r.description}</div>` : ""}
+        <div class="contrib-modo-head">${_e(r.emoji || "🍽️")} <b>${_e(r.nom || k)}</b> <span class="contrib-modo-auteur">par ${_e(r.prenom || "?")}</span>${badge}</div>
+        ${r.description ? `<div class="contrib-modo-desc">${_e(r.description)}</div>` : ""}
         <div class="contrib-modo-ingr">🛒 ${ingr || "—"}</div>
         ${conv}
         <div class="contrib-modo-actions">

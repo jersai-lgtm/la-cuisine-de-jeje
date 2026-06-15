@@ -1,0 +1,128 @@
+rules_version = '2';
+
+// =============================================================================
+// Règles de sécurité Firestore — La Cuisine de Jéjé
+// -----------------------------------------------------------------------------
+// ⚠️ C'EST LE VRAI REMPART DE SÉCURITÉ. La config Firebase (apiKey…) est publique
+//    par conception : tout le contrôle d'accès se joue ICI, côté serveur. Le test
+//    `estAdmin()` du JS client n'est qu'un confort d'interface, contournable.
+//
+// Ce fichier reflète les règles DÉPLOYÉES (vérifiées sûres, pas en mode test).
+// Seule différence avec l'historique inline : l'UID admin et les contrôles
+// récurrents sont factorisés dans des fonctions (même comportement, plus lisible
+// et un seul endroit à changer). Voir SECURITY.md pour le déploiement.
+// =============================================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- Helpers --------------------------------------------------------------
+    function estConnecte() {
+      return request.auth != null;
+    }
+    function estProprietaire(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+    // Admin = Jérôme. Doit correspondre à ADMIN_UIDS (js/app_avis.js) et
+    // CONTRIB_ADMIN_UID (js/app_contribution.js).
+    function estAdmin() {
+      return request.auth != null
+        && request.auth.uid == 'sQWjiKrOIsdzWr0nCspn3WSkY5D3';
+    }
+
+    // 👤 Utilisateurs : chacun lit/écrit son profil ; l'admin lit tout
+    // (stats + présence "en ligne" via le champ lastSeen).
+    match /utilisateurs/{userId} {
+      allow read, write: if estProprietaire(userId);
+      allow read:        if estAdmin();
+    }
+
+    // ⭐ Avis sur l'appli (1 doc par user, id = uid) : lecture publique
+    // (moyenne affichée à tous), écriture de son seul avis.
+    match /avis/{userId} {
+      allow read:  if true;
+      allow write: if estProprietaire(userId);
+    }
+
+    // ⭐ Notes étoiles par recette (id = "{uid}__{recetteKey}") :
+    // lecture publique (badges sur les cartes), gestion de ses seules notes.
+    match /notesEtoiles/{docId} {
+      allow read:           if true;
+      allow create, update: if estConnecte()
+                            && request.resource.data.uid == request.auth.uid;
+      allow delete:         if estProprietaire(resource.data.uid);
+    }
+
+    // 🟢 Présence (compteur de visiteurs en ligne).
+    // ⚠️ Vestige : le code v1.6.7 gère la présence via utilisateurs/{uid}.lastSeen
+    //    et n'écrit PAS ici. Conservé tel que déployé (inoffensif). Candidat à la
+    //    suppression si plus aucune version ne l'utilise. Écriture volontairement
+    //    ouverte (visiteurs anonymes) mais bornée aux 4 champs attendus.
+    match /presence/{visitorId} {
+      allow create, update: if request.resource.data.keys().hasOnly(['lastSeen','connecte','uid','maj'])
+                            && request.resource.data.lastSeen is timestamp;
+      allow read, delete:   if estAdmin();
+    }
+
+    // 🌍 Propositions de recettes (file de modération).
+    // Création : connecté, en s'attribuant comme auteur. Lecture/MàJ/Suppression :
+    // l'auteur ou l'admin.
+    match /recettesProposees/{docId} {
+      allow create: if estConnecte()
+                    && request.resource.data.uid == request.auth.uid;
+      allow read:   if estAdmin() || estProprietaire(resource.data.uid);
+      allow update: if estAdmin() || estProprietaire(resource.data.uid);
+      allow delete: if estAdmin() || estProprietaire(resource.data.uid);
+    }
+
+    // 🌍 Recettes validées, publiques : lecture par tous, écriture (publication)
+    // réservée à l'admin, suppression par l'admin OU l'auteur d'origine.
+    match /recettesCommunaute/{docId} {
+      allow read:           if true;
+      allow create, update: if estAdmin();
+      allow delete:         if estAdmin() || estProprietaire(resource.data.uid);
+    }
+
+    // 💬 Astuces / commentaires communautaires (modération avant publication).
+    match /astuces/{docId} {
+      // Lecture : astuces publiées (tous) · l'auteur voit les siennes · admin voit tout.
+      allow read:   if resource.data.statut == 'publie'
+                    || estProprietaire(resource.data.uid)
+                    || estAdmin();
+      // Création : connecté · auteur = soi · statut forcé "en_attente" (pas d'auto-publi)
+      //            · texte 1..500 caractères · recetteKey présent.
+      allow create: if estConnecte()
+                    && request.resource.data.uid == request.auth.uid
+                    && request.resource.data.statut == 'en_attente'
+                    && request.resource.data.texte is string
+                    && request.resource.data.texte.size() >= 1
+                    && request.resource.data.texte.size() <= 500
+                    && request.resource.data.recetteKey is string;
+      // Validation (passage en "publie") : admin uniquement.
+      allow update: if estAdmin();
+      // Suppression : admin (refus) OU l'auteur (retire la sienne).
+      allow delete: if estAdmin() || estProprietaire(resource.data.uid);
+    }
+
+    // 📷 Photos communautaires (méta ; binaire dans Storage). Même logique.
+    match /photos/{docId} {
+      allow read:   if resource.data.statut == 'publie'
+                    || estProprietaire(resource.data.uid)
+                    || estAdmin();
+      allow create: if estConnecte()
+                    && request.resource.data.uid == request.auth.uid
+                    && request.resource.data.statut == 'en_attente'
+                    && request.resource.data.recetteKey is string
+                    && request.resource.data.url is string;
+      allow update: if estAdmin();
+      allow delete: if estAdmin() || estProprietaire(resource.data.uid);
+    }
+
+    // --- Filet : tout chemin non listé est interdit ---------------------------
+    // (Firestore refuse déjà par défaut ; ce bloc le rend explicite. Il ne peut
+    //  PAS révoquer un accès accordé plus haut — un `allow` l'emporte toujours.)
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

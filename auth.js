@@ -586,13 +586,22 @@ function afficherBoutonConnexion() {
   if (z) z.innerHTML = `<button class="btn-connexion" onclick="ouvrirModalAuth()">👤 Connexion</button>`;
 }
 
+// Sécurité : displayName/email sont contrôlés par l'utilisateur (saisis à l'inscription).
+// On échappe avant injection en innerHTML (anti-XSS). Repli local si escapeHTML (app.js) absent.
+function _escAuth(s) {
+  if (typeof escapeHTML === "function") return escapeHTML(s);
+  return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+}
+
 function afficherUtilisateurConnecte(user) {
   const z = document.getElementById("zone-utilisateur");
   if (!z) return;
+  const initiale = (user.displayName || user.email || "U")[0].toUpperCase();
   const photo = user.photoURL
-    ? `<img src="${user.photoURL}" class="avatar-photo" referrerpolicy="no-referrer">`
-    : `<div class="avatar-initiales">${(user.displayName || user.email || "U")[0].toUpperCase()}</div>`;
-  z.innerHTML = `<div class="avatar-btn" onclick="ouvrirModalProfil()">${photo}<span class="avatar-prenom">${(user.displayName || "Mon compte").split(" ")[0]}</span></div>`;
+    ? `<img src="${_escAuth(user.photoURL)}" class="avatar-photo" referrerpolicy="no-referrer">`
+    : `<div class="avatar-initiales">${_escAuth(initiale)}</div>`;
+  const prenom = (user.displayName || "Mon compte").split(" ")[0];
+  z.innerHTML = `<div class="avatar-btn" onclick="ouvrirModalProfil()">${photo}<span class="avatar-prenom">${_escAuth(prenom)}</span></div>`;
 }
 
 function afficherOnboarding() {

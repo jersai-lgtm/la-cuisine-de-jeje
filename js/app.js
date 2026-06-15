@@ -877,7 +877,7 @@ function miniCarteFetiche(key, count) {
   const label = count >= 4 ? "Plat fétiche" : "Favori du foyer";
   const badgeFreq = `<span class="mini-carte-saison" style="background:rgba(255,140,0,.75)" title="${label} — ${count} fois">${emoji}${count}</span>`;
   return `<div class="mini-carte" onclick="ouvrirFiche('${key}','')">
-    <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
+    <img loading="lazy" decoding="async" src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
     ${badgeFam}
     ${badgeFreq}
     <div class="mini-carte-info">
@@ -1185,7 +1185,7 @@ function miniCarte(key, raisonHTML, opts) {
   const badgeNote = (typeof noteCommunauteBadgeHTML === "function") ? noteCommunauteBadgeHTML(key, "mini") : "";
 
   return `<div class="mini-carte" style="${styleAlerte}" title="${titleAlerte}" onclick="ouvrirFiche('${key}','')">
-    <img src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
+    <img loading="lazy" decoding="async" src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
     ${badgeNutri}
     ${badgeNouveau}
     ${badgeFam}
@@ -3430,8 +3430,10 @@ function afficherMessageClaude(nom, role, texte) {
   if (!container) return;
   const div = document.createElement("div");
   div.className = `claude-msg claude-msg-${role}`;
-  // Markdown basique : **gras**, *italique*, \`code\`
-  const html = texte
+  // Sécurité : on échappe d'abord (le texte vient de l'utilisateur ET du modèle),
+  // PUIS on applique le markdown basique. escapeHTML ne touche pas à * ` \n,
+  // donc le formatage fonctionne toujours sans laisser passer de HTML injecté.
+  const html = escapeHTML(texte)
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/\*([^*]+)\*/g, "<em>$1</em>")
     .replace(/`([^`]+)`/g, "<code>$1</code>")
