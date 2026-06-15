@@ -109,7 +109,7 @@ async function envoyerAvis() {
     await _db.collection("avis").doc(window.currentUser.uid).set({
       uid: window.currentUser.uid,
       prenom: window.userProfile?.prenom || window.currentUser.displayName || "Anonyme",
-      email: window.currentUser.email || "",
+      // Pas d'email : inutile à l'affichage (vue admin = prénom/note/commentaire) → minimisation des données.
       etoiles: n,
       commentaire: commentaire,
       dateMaj: new Date().toISOString(),

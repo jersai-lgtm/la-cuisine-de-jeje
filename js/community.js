@@ -506,7 +506,7 @@ async function chargerPhotosModeration() {
       var nomRec = (typeof getNomRecette === "function" ? getNomRecette(p.recetteKey) : "") || p.recetteKey;
       return '<div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px">' +
         '<div style="font-size:12px;color:#88858f;margin-bottom:8px">' + _echapCom(p.pseudo || "Gourmand") + ' · sur <strong style="color:var(--accent-soft,#ff8fb3)">' + _echapCom(nomRec) + '</strong></div>' +
-        '<img src="' + p.url + '" alt="" style="width:100%;max-height:280px;object-fit:contain;border-radius:10px;background:#17151c;margin-bottom:10px">' +
+        '<img loading="lazy" src="' + _echapCom(p.url) + '" alt="" style="width:100%;max-height:280px;object-fit:contain;border-radius:10px;background:#17151c;margin-bottom:10px">' +
         '<div style="display:flex;gap:8px">' +
           '<button onclick="approuverPhoto(\'' + p.id + '\')" style="flex:1;background:rgba(76,175,80,.18);color:#7fc783;border:1px solid rgba(76,175,80,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">✅ Approuver</button>' +
           '<button onclick="refuserPhoto(\'' + p.id + '\')" style="flex:1;background:rgba(226,87,76,.15);color:#e8867d;border:1px solid rgba(226,87,76,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">❌ Refuser</button>' +

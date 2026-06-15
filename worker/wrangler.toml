@@ -1,0 +1,17 @@
+name = "la-cuisine-de-jeje"
+main = "index.js"
+compatibility_date = "2024-11-01"
+
+# ID du projet Firebase (sert à valider l'audience/issuer des jetons).
+[vars]
+FIREBASE_PROJECT_ID = "cuisine-jeje"
+
+# Quota par utilisateur (KV). Crée l'espace puis colle son id ci-dessous :
+#   npx wrangler kv namespace create RATE_LIMIT
+# Décommente et renseigne l'id retourné :
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# ⚠️ Le secret ANTHROPIC_API_KEY ne se met PAS ici (ce fichier est versionné).
+#    Il se définit hors du repo :  npx wrangler secret put ANTHROPIC_API_KEY

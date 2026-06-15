@@ -1,0 +1,45 @@
+rules_version = '2';
+
+// =============================================================================
+// Règles de sécurité Cloud Storage — La Cuisine de Jéjé
+// -----------------------------------------------------------------------------
+// Reflète les règles DÉPLOYÉES (vérifiées saines). Seul ajout : l'UID admin est
+// factorisé dans une fonction (même comportement). Voir SECURITY.md.
+//
+// Photos rangées sous : astuces-photos/{recetteKey}/{uid}/{fichier}
+// (voir js/community.js). 👉 Déploiement : firebase deploy --only storage
+// =============================================================================
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function estAdmin() {
+      return request.auth != null
+        && request.auth.uid == 'sQWjiKrOIsdzWr0nCspn3WSkY5D3';
+    }
+
+    // 📷 Photos communautaires des recettes
+    match /astuces-photos/{recetteKey}/{uid}/{fichier} {
+
+      // Lecture publique : l'URL n'est connue que via le document Firestore
+      // (lui-même protégé : "en attente" = auteur + admin uniquement).
+      allow read: if true;
+
+      // Envoi : connecté, sur SON propre dossier, IMAGE uniquement, < 5 Mo.
+      // (pas d'`update` : les noms de fichiers sont uniques, jamais écrasés.)
+      allow create: if request.auth != null
+                    && request.auth.uid == uid
+                    && request.resource.contentType.matches('image/.*')
+                    && request.resource.size < 5 * 1024 * 1024;
+
+      // Suppression : l'auteur (retire la sienne) OU l'admin.
+      allow delete: if (request.auth != null && request.auth.uid == uid) || estAdmin();
+    }
+
+    // Filet : tout chemin non listé est interdit (Storage refuse déjà par
+    // défaut ; explicite ici, ne peut pas révoquer un `allow` accordé plus haut).
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}
