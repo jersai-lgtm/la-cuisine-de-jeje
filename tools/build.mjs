@@ -23,6 +23,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { transform } from "esbuild";
 import { genererSEO } from "./seo.mjs";
+import { genererMiniatures } from "./thumbs.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = join(ROOT, "dist");
@@ -97,7 +98,14 @@ async function main() {
     if (remplacement[i] !== undefined) out.push(remplacement[i]);
     else if (!lignesASupprimer.has(i)) out.push(line);
   });
-  writeFileSync(join(DIST, "index.html"), out.join("\n"));
+  let htmlFinal = out.join("\n");
+
+  // 4bis) Miniatures : alléger les images de la grille de cartes
+  const mini = await genererMiniatures(htmlFinal, ROOT, DIST);
+  htmlFinal = mini.html;
+  console.log(`   Miniatures : ${mini.count} images de cartes → thumbs/ (~400px, ~90% plus légères)`);
+
+  writeFileSync(join(DIST, "index.html"), htmlFinal);
 
   // 5) Copier les fichiers statiques nécessaires au runtime
   const statiques = ["style.css", "manifest.json", "favicon.ico"];
