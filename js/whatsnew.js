@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "1.7.0",
+    titre: "👨‍🍳 Le mode cuisson est arrivé !",
+    texte: "Sur n'importe quelle recette, appuie sur « 👨‍🍳 Lancer le mode cuisson » : les étapes s'affichent une par une en plein écran, en gros caractères, et l'écran ne s'éteint plus pendant que tu cuisines. Un minuteur se propose automatiquement quand une étape a une durée (« ⏱ Lancer le minuteur ») et te prévient quand c'est prêt. Mains pleines de farine ? Tout est lisible et à portée de pouce !"
+  },
+  {
     v: "1.3.24",
     titre: "🍱 Le batch cooking est arrivé !",
     texte: "Le principe : cuisiner toute sa semaine en une seule session, au lieu de s'y remettre chaque soir. Dans Garde-manger → Liste de courses, choisis tes recettes : tu vois le temps total de prép, ta liste de courses regroupée par rayon, et surtout le nouveau « 📋 Plan de prep » qui rassemble les étapes de toutes tes recettes par phase (mise en place → cuissons → assemblage → repos & conservation). Tu coupes tout d'un coup, tu lances les cuissons ensemble : un vrai gain de temps !"

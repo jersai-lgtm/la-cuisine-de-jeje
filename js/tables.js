@@ -1656,6 +1656,7 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
     </div>
     <div class="fiche-section">
       <h2 class="fiche-section-titre">📋 Étapes</h2>
+      <button type="button" onclick="ouvrirModeCuisson('${nom}')" aria-label="Lancer le mode cuisson pas à pas" style="display:block;width:100%;box-sizing:border-box;margin:0 0 14px;background:rgba(255,107,161,.14);color:#ff8fb3;border:1.5px solid rgba(255,107,161,.5);border-radius:14px;padding:13px;font-size:16px;font-weight:600;cursor:pointer">👨‍🍳 Lancer le mode cuisson</button>
       <div class="fiche-etapes-liste">${listeEtapes}</div>
     </div>
     <div class="fiche-claude-section" id="fiche-claude-${nom}">
