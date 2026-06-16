@@ -38,6 +38,10 @@ jobs:
           fi
           echo "👍 Tous les fichiers .js sont valides."
 
+      # --- 1bis. Intégrité des données de recettes --------------------------
+      - name: Vérifier l'intégrité des données
+        run: node tools/verifier-donnees.mjs
+
       # --- 2. Les fichiers référencés dans index.html existent ---------------
       - name: Vérifier que les fichiers de index.html existent
         run: |

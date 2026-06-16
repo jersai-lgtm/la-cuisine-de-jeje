@@ -70,6 +70,7 @@ async function main() {
   // 3) Construire un bundle minifié par bloc + mémoriser le tag de remplacement
   const remplacement = {}; // index de ligne de début → tag bundle ; lignes à supprimer
   const lignesASupprimer = new Set();
+  const bundles = [];      // noms des bundles produits (pour le précache du SW)
   let totalBrut = 0, totalMin = 0;
   for (let g = 0; g < groups.length; g++) {
     const grp = groups[g];
@@ -83,6 +84,7 @@ async function main() {
     const min = await minifyJs(concat);
     totalMin += Buffer.byteLength(min);
     const name = `assets/bundle${g + 1}.${hash(min)}.min.js`;
+    bundles.push(name);
     writeFileSync(join(DIST, name), min);
     console.log(`   bloc ${g + 1} : ${grp.files.length} fichiers → ${name} (${(Buffer.byteLength(min) / 1024).toFixed(0)} Ko)`);
     remplacement[grp.start] = `<script defer src="${name}"></script>`;
@@ -98,10 +100,25 @@ async function main() {
   writeFileSync(join(DIST, "index.html"), out.join("\n"));
 
   // 5) Copier les fichiers statiques nécessaires au runtime
-  const statiques = ["style.css", "manifest.json", "favicon.ico", "service-worker.js"];
+  const statiques = ["style.css", "manifest.json", "favicon.ico"];
   for (const f of statiques) if (existsSync(p(f))) cpSync(p(f), join(DIST, f));
   if (existsSync(p("images"))) cpSync(p("images"), join(DIST, "images"), { recursive: true });
   writeFileSync(join(DIST, ".nojekyll"), ""); // Pages : ne pas passer par Jekyll
+
+  // 5bis) Service worker : on régénère son précache pour qu'il colle au build
+  // (bundles hashés + bons fichiers) et on auto-versionne le cache (= maj fiable).
+  if (existsSync(p("service-worker.js"))) {
+    const SCOPE = "/la-cuisine-de-jeje/";
+    const precache = [
+      SCOPE, SCOPE + "index.html", SCOPE + "style.css", SCOPE + "manifest.json",
+      SCOPE + "favicon.ico", SCOPE + "images/icon-192.png", SCOPE + "images/icon-512.png",
+      ...bundles.map((b) => SCOPE + b),
+    ];
+    let sw = readFileSync(p("service-worker.js"), "utf8");
+    sw = sw.replace(/const CACHE_NAME = "[^"]*";/, `const CACHE_NAME = "cuisine-jeje-${hash(bundles.join("|"))}";`);
+    sw = sw.replace(/const FICHIERS = \[[\s\S]*?\];/, "const FICHIERS = " + JSON.stringify(precache, null, 2) + ";");
+    writeFileSync(join(DIST, "service-worker.js"), sw);
+  }
 
   // 6) SEO : pages par recette + sitemap + robots
   const seo = genererSEO(ROOT, DIST);
