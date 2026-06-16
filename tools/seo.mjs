@@ -13,7 +13,7 @@
 
 import { writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { chargerCatalogue, chargerImageExceptions, cheminImage } from "./recettes-data.mjs";
+import { chargerCatalogue, chargerImageExceptions, cheminImage, chargerLabelsIngredients } from "./recettes-data.mjs";
 
 const BASE = "https://jersai-lgtm.github.io/la-cuisine-de-jeje";
 
@@ -33,31 +33,33 @@ function minutes(temps) {
 const iso8601 = (min) => min > 0 ? "PT" + (min >= 60 ? Math.floor(min / 60) + "H" : "") + (min % 60 ? (min % 60) + "M" : "") : "";
 
 // Liste d'ingrédients "quantité nom" depuis les 3 formes possibles.
-function ingredients(r) {
+// `labels` : slug → joli nom (sinon on garde le slug).
+function ingredients(r, labels) {
+  const joli = (n) => (labels && labels[n]) || n;
   if (r.ingredients && Object.keys(r.ingredients).length) {
-    return Object.entries(r.ingredients).map(([n, q]) => (q ? q + " " : "") + n);
+    return Object.entries(r.ingredients).map(([n, q]) => (q ? q + " " : "") + joli(n));
   }
   if (Array.isArray(r.ingredientsFixes) && r.ingredientsFixes.length) {
     return r.ingredientsFixes.map((p) => {
       const a = Array.isArray(p), n = a ? p[0] : (p && p.k), q = a ? p[1] : (p && p.v);
-      return (q ? q + " " : "") + (n || "");
+      return (q ? q + " " : "") + joli(n || "");
     });
   }
   const tabKey = Object.keys(r).find((k) => k.startsWith("tableau"));
   if (tabKey && Array.isArray(r[tabKey])) {
     const row = r[tabKey].find((x) => x && x.nb === 1) || r[tabKey][0] || {};
-    return Object.entries(row).filter(([k]) => k !== "nb").map(([n, q]) => (q ? q + " " : "") + n);
+    return Object.entries(row).filter(([k]) => k !== "nb").map(([n, q]) => (q ? q + " " : "") + joli(n));
   }
   return [];
 }
 
-function pageRecette(key, r, imgRel) {
+function pageRecette(key, r, imgRel, labels) {
   const nom = r.nom || key;
   const desc = (r.description || `Recette ${nom} : ingrédients, étapes et temps de préparation sur La Cuisine de Jéjé.`).slice(0, 300);
   const descCourte = desc.slice(0, 160);
   const urlPage = `${BASE}/recette/${key}.html`;
   const urlImg = `${BASE}/${imgRel}`;
-  const ingr = ingredients(r);
+  const ingr = ingredients(r, labels);
   const etapes = (r.etapes || []).map((e) => ({ titre: e.titre || "", detail: e.detail || "" }));
   const min = minutes(r.temps);
 
@@ -115,6 +117,7 @@ ${liEtapes ? `<h2>📋 Étapes</h2><ol>${liEtapes}</ol>` : ""}
 export function genererSEO(root, dist) {
   const recettes = chargerCatalogue(root);
   const imgExc = chargerImageExceptions(root);
+  const labels = chargerLabelsIngredients(root);
   const keys = Object.keys(recettes);
   mkdirSync(join(dist, "recette"), { recursive: true });
 
@@ -125,8 +128,8 @@ export function genererSEO(root, dist) {
     if (!r || !Array.isArray(r.etapes) || !r.etapes.length) continue;
     const imgRel = cheminImage(key, r, imgExc);
     if (!existsSync(join(root, imgRel))) continue; // pas d'image → on saute (OG/rich result cassés sinon)
-    if (ingredients(r).length) avecIngr++;
-    writeFileSync(join(dist, "recette", key + ".html"), pageRecette(key, r, imgRel));
+    if (ingredients(r, labels).length) avecIngr++;
+    writeFileSync(join(dist, "recette", key + ".html"), pageRecette(key, r, imgRel, labels));
     urls.push(`${BASE}/recette/${key}.html`);
   }
 
