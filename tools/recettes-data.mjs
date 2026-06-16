@@ -37,3 +37,25 @@ export function cheminImage(key, r, imgExc) {
   const nom = (imgExc && imgExc[key]) || key;
   return "images/" + (nom.charAt(0) || "_").toLowerCase() + "/" + nom + ".webp";
 }
+
+// Mapping slug d'ingrédient → joli nom, fusionné depuis INGREDIENTS_LABELS
+// (ingredients_prix.js) et NOMS_PROPRES_INGR (emojis.js), emoji retiré.
+export function chargerLabelsIngredients(root) {
+  const ctx = { Object, console: { log() {} }, document: { addEventListener() {}, readyState: "complete" }, setTimeout() {} };
+  ctx.window = ctx;
+  vm.createContext(ctx);
+  const lire = (fichier, nomVar) => {
+    try {
+      vm.runInContext(readFileSync(join(root, "js", fichier), "utf8")
+        + `\n;globalThis.__cap=(typeof ${nomVar}!=='undefined')?${nomVar}:{};`, ctx);
+      return ctx.__cap || {};
+    } catch (e) { return ctx.__cap || {}; }
+  };
+  const a = lire("ingredients_prix.js", "INGREDIENTS_LABELS");
+  const b = lire("emojis.js", "NOMS_PROPRES_INGR");
+  const fusion = Object.assign({}, a, b);
+  const strip = (s) => String(s || "").replace(/^[^\p{L}]+/u, "").trim(); // retire emoji/symbole en tête
+  const out = {};
+  for (const k in fusion) out[k] = strip(fusion[k]) || k;
+  return out;
+}

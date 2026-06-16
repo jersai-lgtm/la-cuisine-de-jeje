@@ -118,6 +118,15 @@ service cloud.firestore {
       allow delete: if estAdmin() || estProprietaire(resource.data.uid);
     }
 
+    // 🐞 Remontée d'erreurs : création par tous (bornée aux champs attendus,
+    // message ≤ 500), lecture/suppression réservées à l'admin.
+    match /erreurs/{id} {
+      allow create: if request.resource.data.keys().hasOnly(['type','message','stack','url','ua','version','uid','date'])
+                    && request.resource.data.message is string
+                    && request.resource.data.message.size() <= 500;
+      allow read, delete: if estAdmin();
+    }
+
     // --- Filet : tout chemin non listé est interdit ---------------------------
     // (Firestore refuse déjà par défaut ; ce bloc le rend explicite. Il ne peut
     //  PAS révoquer un accès accordé plus haut — un `allow` l'emporte toujours.)
