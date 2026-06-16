@@ -11,25 +11,14 @@
 // Plus un sitemap.xml et un robots.txt.
 // =============================================================================
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import vm from "node:vm";
+import { chargerCatalogue, chargerImageExceptions, cheminImage } from "./recettes-data.mjs";
 
 const BASE = "https://jersai-lgtm.github.io/la-cuisine-de-jeje";
 
 const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const jstr = (o) => JSON.stringify(o).replace(/</g, "\\u003c"); // sûr dans <script>
-
-// Charge le catalogue de recettes en exécutant les fichiers de données.
-function chargerRecettes(root) {
-  const ctx = { recettes: {}, Object, Array, Math, JSON, console: { log() {} } };
-  ctx.window = ctx;
-  vm.createContext(ctx);
-  for (const f of readdirSync(join(root, "js")).filter((f) => /^recettes(_|\.)/.test(f))) {
-    try { vm.runInContext(readFileSync(join(root, "js", f), "utf8"), ctx); } catch (e) { /* fichier non-données */ }
-  }
-  return ctx.recettes;
-}
 
 // "3 h" / "20 min" / "1 h 30" → minutes
 function minutes(temps) {
@@ -60,11 +49,6 @@ function ingredients(r) {
     return Object.entries(row).filter(([k]) => k !== "nb").map(([n, q]) => (q ? q + " " : "") + n);
   }
   return [];
-}
-
-function imagePath(key, r) {
-  if (r.image) return r.image.replace(/^\//, "");
-  return "images/" + (key.charAt(0) || "_").toLowerCase() + "/" + key + ".webp";
 }
 
 function pageRecette(key, r, imgRel) {
@@ -129,7 +113,8 @@ ${liEtapes ? `<h2>📋 Étapes</h2><ol>${liEtapes}</ol>` : ""}
 }
 
 export function genererSEO(root, dist) {
-  const recettes = chargerRecettes(root);
+  const recettes = chargerCatalogue(root);
+  const imgExc = chargerImageExceptions(root);
   const keys = Object.keys(recettes);
   mkdirSync(join(dist, "recette"), { recursive: true });
 
@@ -138,7 +123,7 @@ export function genererSEO(root, dist) {
   for (const key of keys) {
     const r = recettes[key];
     if (!r || !Array.isArray(r.etapes) || !r.etapes.length) continue;
-    const imgRel = imagePath(key, r);
+    const imgRel = cheminImage(key, r, imgExc);
     if (!existsSync(join(root, imgRel))) continue; // pas d'image → on saute (OG/rich result cassés sinon)
     if (ingredients(r).length) avecIngr++;
     writeFileSync(join(dist, "recette", key + ".html"), pageRecette(key, r, imgRel));
