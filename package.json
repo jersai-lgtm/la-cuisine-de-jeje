@@ -1,0 +1,11 @@
+{
+  "name": "la-cuisine-de-jeje",
+  "version": "1.6.8",
+  "private": true,
+  "scripts": {
+    "build": "node tools/build.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}
