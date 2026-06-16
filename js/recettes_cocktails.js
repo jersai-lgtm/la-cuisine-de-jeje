@@ -1570,7 +1570,7 @@ Object.assign(recettes, {
     ]
   },
   grog: {
-    nom: "Grog", cat: "cocktails", pays: "france",
+    nom: "Grog", cat: "cocktails", pays: "france", dateAjout: "2026-06-17T10:00:00",
     base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🥃",
     description: "Le remède réconfortant des soirs d'hiver : rhum ambré, eau chaude, citron, miel et épices. Idéal pour se réchauffer (et tenir tête à un rhume).",
     ingredients: { "Rhum ambré (ml)": 50, "Eau chaude (ml)": 150, "Miel (g)": 20, "Citron (pièce)": 0.5, "Bâton de cannelle (pièce)": 1, "Clou de girofle (pièce)": 2 },

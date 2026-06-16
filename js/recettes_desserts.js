@@ -4694,7 +4694,7 @@ Object.assign(recettes, {
     ]
   },
   cookieskillet: {
-    nom: "Cookie skillet", cat: "desserts", pays: "usa",
+    nom: "Cookie skillet", cat: "desserts", pays: "usa", dateAjout: "2026-06-17T10:00:00", liees: ["glacevanille"],
     base: 6, temps: "30 min", niveau: "⭐ Facile", emoji: "🍪",
     description: "Un cookie géant moelleux et coulant, cuit et servi directement à la poêle, à partager à la cuillère avec une boule de glace qui fond dessus. Pur réconfort.",
     ingredients: { "Beurre (g)": 120, "Sucre roux (g)": 100, "Sucre (g)": 50, "Œuf (pièce)": 1, "Farine (g)": 200, "Levure chimique (g)": 5, "Pépites de chocolat (g)": 150, "Vanille (g)": 5, "Sel (g)": 2 },
@@ -4708,7 +4708,7 @@ Object.assign(recettes, {
     ]
   },
   brookie: {
-    nom: "Brookie", cat: "desserts", pays: "usa",
+    nom: "Brookie", cat: "desserts", pays: "usa", dateAjout: "2026-06-17T10:00:00",
     base: 8, temps: "45 min", niveau: "⭐⭐ Moyen", emoji: "🍫",
     description: "Le meilleur des deux mondes : une couche de brownie fondant surmontée d'une couche de cookie croustillant aux pépites. Impossible de choisir, alors on prend les deux.",
     ingredients: { "Chocolat noir (g)": 200, "Beurre (g)": 175, "Sucre (g)": 200, "Œuf (pièce)": 4, "Farine (g)": 230, "Sucre roux (g)": 80, "Pépites de chocolat (g)": 120, "Levure chimique (g)": 3, "Sel (g)": 2 },
@@ -4722,7 +4722,7 @@ Object.assign(recettes, {
     ]
   },
   opera: {
-    nom: "Opéra", cat: "desserts", pays: "france",
+    nom: "Opéra", cat: "desserts", pays: "france", dateAjout: "2026-06-17T10:00:00",
     base: 8, temps: "2 h", niveau: "⭐⭐⭐ Difficile", emoji: "🍰",
     description: "Le grand classique de la pâtisserie française : fines couches de biscuit joconde imbibé de café, crème au beurre au café et ganache au chocolat, glacé d'un miroir brillant.",
     ingredients: { "Poudre d'amandes (g)": 125, "Sucre glace (g)": 125, "Œuf (pièce)": 4, "Blanc d'œuf (pièce)": 4, "Farine (g)": 35, "Beurre (g)": 200, "Sucre (g)": 200, "Café fort (ml)": 150, "Chocolat noir (g)": 150, "Crème liquide (ml)": 150 },
@@ -4737,7 +4737,7 @@ Object.assign(recettes, {
     ]
   },
   numbercake: {
-    nom: "Number cake", cat: "desserts", pays: "monde",
+    nom: "Number cake", cat: "desserts", pays: "monde", dateAjout: "2026-06-17T10:00:00", liees: ["macarons"],
     base: 8, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🔢",
     description: "Le gâteau-chiffre tendance des anniversaires : deux couches de sablé en forme de chiffre, garnies d'une chantilly mascarpone pochée, fruits frais et macarons.",
     ingredients: { "Farine (g)": 250, "Beurre (g)": 125, "Sucre (g)": 100, "Œuf (pièce)": 1, "Mascarpone (g)": 250, "Crème liquide (ml)": 200, "Sucre glace (g)": 50, "Fruits frais (g)": 200, "Macarons (pièce)": 8 },

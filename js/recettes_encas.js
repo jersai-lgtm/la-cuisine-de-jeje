@@ -2061,7 +2061,7 @@ Object.assign(recettes, {
     ]
   },
   corndogcoreen: {
-    nom: "Korean corn dog", cat: "encas", pays: "coree",
+    nom: "Korean corn dog", cat: "encas", pays: "coree", dateAjout: "2026-06-17T10:00:00", liees: ["ketchup", "mayonnaise"],
     base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🌭",
     description: "Le hot-dog coréen viral : saucisse et mozzarella enrobées d'une pâte épaisse, panées au panko et frites jusqu'à ultra-croustillant, puis saupoudrées de sucre. Effet fromage filant garanti.",
     ingredients: { "Saucisses (pièce)": 4, "Mozzarella (g)": 200, "Farine (g)": 200, "Levure chimique (g)": 5, "Lait (ml)": 150, "Œuf (pièce)": 1, "Chapelure panko (g)": 150, "Sucre (g)": 30, "Huile de friture (ml)": 1000 },

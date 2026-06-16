@@ -1191,7 +1191,7 @@ Object.assign(recettes, {
     ]
   },
   cinnamonroll: {
-    nom: "Cinnamon roll", cat: "boulangerie", pays: "suede",
+    nom: "Cinnamon roll", cat: "boulangerie", pays: "suede", dateAjout: "2026-06-17T10:00:00",
     base: 8, temps: "2 h 30", niveau: "⭐⭐ Moyen", emoji: "🌀",
     description: "La brioche roulée à la cannelle, moelleuse et généreuse, nappée d'un glaçage au fromage frais. Le parfum de cannelle qui embaume toute la maison.",
     ingredients: { "Farine (g)": 500, "Lait (ml)": 250, "Beurre (g)": 80, "Sucre (g)": 80, "Œuf (pièce)": 1, "Levure de boulanger (g)": 10, "Sucre roux (g)": 120, "Cannelle (g)": 15, "Fromage frais (g)": 100, "Sucre glace (g)": 80 },
@@ -1205,7 +1205,7 @@ Object.assign(recettes, {
     ]
   },
   cruffin: {
-    nom: "Cruffin", cat: "boulangerie", pays: "monde",
+    nom: "Cruffin", cat: "boulangerie", pays: "monde", dateAjout: "2026-06-17T10:00:00", liees: ["confiturefraise"],
     base: 6, temps: "1 h", niveau: "⭐⭐⭐ Difficile", emoji: "🥐",
     description: "L'hybride irrésistible : un croissant feuilleté façonné comme un muffin, tout en couches croustillantes, souvent fourré de crème ou roulé dans le sucre.",
     ingredients: { "Pâte feuilletée levée (g)": 500, "Beurre de tourage (g)": 150, "Sucre (g)": 60, "Sucre glace (g)": 40, "Confiture ou crème (g)": 150 },

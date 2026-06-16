@@ -1639,7 +1639,7 @@ Object.assign(recettes, {
     ]
   },
   msemen: {
-    nom: "Msemen", cat: "brunch", pays: "maroc",
+    nom: "Msemen", cat: "brunch", pays: "maroc", dateAjout: "2026-06-17T10:00:00",
     base: 4, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🫓",
     description: "La crêpe feuilletée carrée du Maghreb, croustillante dehors et moelleuse dedans. Parfaite au petit-déjeuner avec du miel ou du fromage frais.",
     ingredients: { "Farine (g)": 300, "Semoule fine (g)": 100, "Eau tiède (ml)": 220, "Huile (ml)": 80, "Beurre fondu (g)": 50, "Sel (g)": 6, "Sucre (g)": 5 },
@@ -1653,7 +1653,7 @@ Object.assign(recettes, {
     ]
   },
   baghrir: {
-    nom: "Baghrir", cat: "brunch", pays: "maroc",
+    nom: "Baghrir", cat: "brunch", pays: "maroc", dateAjout: "2026-06-17T10:00:00",
     base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🥞",
     description: "La crêpe « mille trous » du Maghreb : moelleuse et spongieuse, ses milliers d'alvéoles boivent le miel et le beurre fondu. Un régal de petit-déjeuner.",
     ingredients: { "Semoule fine (g)": 250, "Farine (g)": 50, "Eau tiède (ml)": 600, "Levure de boulanger (g)": 8, "Levure chimique (g)": 5, "Sel (g)": 4, "Sucre (g)": 10 },

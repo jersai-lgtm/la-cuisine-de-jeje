@@ -12215,7 +12215,7 @@ Object.assign(recettes, {
     ]
   },
   pouleaupot: {
-    nom: "Poule au pot", cat: "plats", pays: "france",
+    nom: "Poule au pot", cat: "plats", pays: "france", dateAjout: "2026-06-17T10:00:00",
     base: 6, temps: "2 h 30", niveau: "⭐⭐ Moyen", emoji: "🍗",
     description: "Le plat mijoté préféré d'Henri IV : une poule fondante pochée avec ses légumes dans un bouillon parfumé. Le réconfort dominical par excellence.",
     ingredients: { "Poule (g)": 1500, "Carottes (g)": 400, "Poireaux (g)": 300, "Navets (g)": 250, "Céleri branche (g)": 150, "Oignon (g)": 100, "Clou de girofle (pièce)": 2, "Bouquet garni (pièce)": 1, "Gros sel (g)": 15, "Poivre en grains (g)": 5 },
@@ -12229,7 +12229,7 @@ Object.assign(recettes, {
     ]
   },
   tempura: {
-    nom: "Tempura", cat: "plats", pays: "japon",
+    nom: "Tempura", cat: "plats", pays: "japon", dateAjout: "2026-06-17T10:00:00",
     base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🍤",
     description: "Beignets japonais ultra-légers et croustillants : crevettes et légumes enrobés d'une pâte glacée, frits à la minute. Le secret : une pâte à peine mélangée et bien froide.",
     ingredients: { "Crevettes crues (pièce)": 12, "Patate douce (g)": 150, "Courgette (g)": 150, "Poivron (g)": 100, "Farine (g)": 120, "Maïzena (g)": 30, "Eau glacée (ml)": 200, "Jaune d'œuf (pièce)": 1, "Huile de friture (ml)": 1000, "Sauce soja (ml)": 50 },
@@ -12243,7 +12243,7 @@ Object.assign(recettes, {
     ]
   },
   fetapasta: {
-    nom: "Baked feta pasta", cat: "plats", pays: "monde",
+    nom: "Baked feta pasta", cat: "plats", pays: "monde", dateAjout: "2026-06-17T10:00:00",
     base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🍝",
     description: "La recette virale : un bloc de feta rôti au four avec des tomates cerises, écrasé en sauce crémeuse et mélangé aux pâtes. Bluffant de simplicité.",
     ingredients: { "Feta (g)": 200, "Tomates cerises (g)": 500, "Pâtes courtes (g)": 400, "Huile d'olive (ml)": 60, "Ail (gousse)": 2, "Basilic frais (g)": 10, "Sel (g)": 5, "Poivre (g)": 2 },
@@ -12257,7 +12257,7 @@ Object.assign(recettes, {
     ]
   },
   fishburger: {
-    nom: "Fish burger", cat: "plats", pays: "usa",
+    nom: "Fish burger", cat: "plats", pays: "usa", dateAjout: "2026-06-17T10:00:00", liees: ["painburger", "saucetartare"],
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍔",
     description: "Le burger de poisson façon fast-food, version maison : filet pané bien croustillant, cheddar fondant et sauce tartare. Imbattable avec des frites.",
     ingredients: { "Filet de cabillaud (g)": 500, "Pain à burger (pièce)": 4, "Cheddar (tranche)": 4, "Farine (g)": 60, "Œuf (pièce)": 2, "Chapelure (g)": 120, "Sauce tartare (g)": 100, "Salade (g)": 60, "Huile de friture (ml)": 500, "Sel (g)": 5 },

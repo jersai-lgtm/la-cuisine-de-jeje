@@ -745,7 +745,7 @@ Object.assign(recettes, {
     ]
   },
   frozenyogurt: {
-    nom: "Frozen yogurt", cat: "glaces", pays: "usa",
+    nom: "Frozen yogurt", cat: "glaces", pays: "usa", dateAjout: "2026-06-17T10:00:00",
     base: 4, temps: "10 min + congélation", niveau: "⭐ Facile", emoji: "🍦",
     description: "L'alternative légère et acidulée à la glace : un yaourt grec onctueux glacé aux fruits rouges. Plus frais et moins sucré qu'une crème glacée.",
     ingredients: { "Yaourt grec (g)": 500, "Sucre glace (g)": 80, "Miel (g)": 40, "Jus de citron (ml)": 20, "Fruits rouges (g)": 150 },

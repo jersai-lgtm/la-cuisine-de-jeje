@@ -412,7 +412,7 @@ Object.assign(recettes, {
     ]
   },
   caviaraubergine: {
-    nom: "Caviar d'aubergine", cat: "tartinables", pays: "france",
+    nom: "Caviar d'aubergine", cat: "tartinables", pays: "france", dateAjout: "2026-06-17T10:00:00",
     base: 4, temps: "45 min", niveau: "⭐ Facile", emoji: "🍆",
     description: "Une tartinade méditerranéenne fondante : la chair d'aubergines rôties au four, fouettée avec ail, citron, tahin et huile d'olive. Parfait à l'apéro sur du pain grillé.",
     ingredients: { "Aubergine (g)": 600, "Ail (gousse)": 1, "Huile d'olive (ml)": 40, "Jus de citron (ml)": 15, "Tahin (g)": 20, "Cumin (g)": 2, "Sel (g)": 4, "Persil (g)": 10 },
@@ -426,7 +426,7 @@ Object.assign(recettes, {
     ]
   },
   confiturefraise: {
-    nom: "Confiture de fraises", cat: "tartinables", pays: "france",
+    nom: "Confiture de fraises", cat: "tartinables", pays: "france", dateAjout: "2026-06-17T10:00:00",
     base: 6, temps: "40 min", niveau: "⭐ Facile", emoji: "🍓",
     description: "La confiture maison comme à la ferme : des fraises gorgées de soleil, juste assez de sucre et un trait de citron pour une prise parfaite. Le goût de l'été en pot.",
     ingredients: { "Fraises (g)": 1000, "Sucre (g)": 800, "Jus de citron (ml)": 30 },
