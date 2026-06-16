@@ -744,4 +744,17 @@ Object.assign(recettes, {
       { icone: "🥄", titre: "Servir", detail: "Servir aussitôt en verrines givrées.", badge: null }
     ]
   },
+  frozenyogurt: {
+    nom: "Frozen yogurt", cat: "glaces", pays: "usa",
+    base: 4, temps: "10 min + congélation", niveau: "⭐ Facile", emoji: "🍦",
+    description: "L'alternative légère et acidulée à la glace : un yaourt grec onctueux glacé aux fruits rouges. Plus frais et moins sucré qu'une crème glacée.",
+    ingredients: { "Yaourt grec (g)": 500, "Sucre glace (g)": 80, "Miel (g)": 40, "Jus de citron (ml)": 20, "Fruits rouges (g)": 150 },
+    etapes: [
+      { icone: "🥣", titre: "Mélanger", detail: "Fouetter le yaourt grec avec le sucre glace, le miel et le jus de citron.", badge: null },
+      { icone: "🍓", titre: "Fruits", detail: "Incorporer les fruits rouges, écrasés ou entiers selon l'envie.", badge: null },
+      { icone: "🧊", titre: "Turbiner", detail: "Verser en sorbetière jusqu'à une texture crémeuse, ou placer au congélateur.", badge: "⏱ 30 min" },
+      { icone: "🥄", titre: "Lisser", detail: "Sans sorbetière, mélanger toutes les 30 min pour éviter les cristaux.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Servir en boules, légèrement souple, avec quelques fruits frais.", badge: null }
+    ]
+  },
 });

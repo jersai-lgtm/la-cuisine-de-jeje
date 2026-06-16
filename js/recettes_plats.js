@@ -12214,4 +12214,60 @@ Object.assign(recettes, {
       {icone:"🌿", titre:"Servir", detail:"Parsemer de persil et servir aussitôt, bien chaud.", badge:"🍽️ Dressage"}
     ]
   },
+  pouleaupot: {
+    nom: "Poule au pot", cat: "plats", pays: "france",
+    base: 6, temps: "2 h 30", niveau: "⭐⭐ Moyen", emoji: "🍗",
+    description: "Le plat mijoté préféré d'Henri IV : une poule fondante pochée avec ses légumes dans un bouillon parfumé. Le réconfort dominical par excellence.",
+    ingredients: { "Poule (g)": 1500, "Carottes (g)": 400, "Poireaux (g)": 300, "Navets (g)": 250, "Céleri branche (g)": 150, "Oignon (g)": 100, "Clou de girofle (pièce)": 2, "Bouquet garni (pièce)": 1, "Gros sel (g)": 15, "Poivre en grains (g)": 5 },
+    etapes: [
+      { icone: "🍗", titre: "Préparer la poule", detail: "Brider la poule et la déposer dans une grande marmite. Couvrir largement d'eau froide.", badge: "⏱ 10 min" },
+      { icone: "🔥", titre: "Écumer", detail: "Porter doucement à frémissement et écumer soigneusement la mousse qui remonte à la surface.", badge: "⏱ 15 min" },
+      { icone: "🧅", titre: "Aromates", detail: "Piquer l'oignon des clous de girofle. Ajouter l'oignon, le bouquet garni, le gros sel et le poivre.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Cuire à tout petits frémissements, à couvert, pour attendrir la chair.", badge: "⏱ 1 h 30" },
+      { icone: "🥕", titre: "Légumes", detail: "Ajouter les carottes, poireaux, navets et céleri. Poursuivre la cuisson jusqu'à ce qu'ils soient fondants.", badge: "⏱ 45 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir la poule entourée de ses légumes, avec un bol de bouillon, du gros sel et des cornichons.", badge: null }
+    ]
+  },
+  tempura: {
+    nom: "Tempura", cat: "plats", pays: "japon",
+    base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🍤",
+    description: "Beignets japonais ultra-légers et croustillants : crevettes et légumes enrobés d'une pâte glacée, frits à la minute. Le secret : une pâte à peine mélangée et bien froide.",
+    ingredients: { "Crevettes crues (pièce)": 12, "Patate douce (g)": 150, "Courgette (g)": 150, "Poivron (g)": 100, "Farine (g)": 120, "Maïzena (g)": 30, "Eau glacée (ml)": 200, "Jaune d'œuf (pièce)": 1, "Huile de friture (ml)": 1000, "Sauce soja (ml)": 50 },
+    etapes: [
+      { icone: "🍤", titre: "Préparer", detail: "Décortiquer les crevettes en gardant la queue. Couper les légumes en bâtonnets fins et réguliers.", badge: "⏱ 10 min" },
+      { icone: "🧊", titre: "Pâte glacée", detail: "Mélanger très rapidement la farine, la maïzena, le jaune d'œuf et l'eau GLACÉE. Laisser des grumeaux : surtout ne pas trop travailler la pâte.", badge: null },
+      { icone: "🌡️", titre: "Chauffer l'huile", detail: "Chauffer l'huile de friture à 175°C.", badge: "⏱ 5 min" },
+      { icone: "💧", titre: "Tremper", detail: "Tremper crevettes et légumes dans la pâte et laisser égoutter l'excédent.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Frire 2 à 3 minutes jusqu'à une pâte pâle et croustillante. Égoutter sur du papier absorbant.", badge: "⏱ 3 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt avec de la sauce soja ou une sauce tentsuyu.", badge: null }
+    ]
+  },
+  fetapasta: {
+    nom: "Baked feta pasta", cat: "plats", pays: "monde",
+    base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🍝",
+    description: "La recette virale : un bloc de feta rôti au four avec des tomates cerises, écrasé en sauce crémeuse et mélangé aux pâtes. Bluffant de simplicité.",
+    ingredients: { "Feta (g)": 200, "Tomates cerises (g)": 500, "Pâtes courtes (g)": 400, "Huile d'olive (ml)": 60, "Ail (gousse)": 2, "Basilic frais (g)": 10, "Sel (g)": 5, "Poivre (g)": 2 },
+    etapes: [
+      { icone: "🧀", titre: "Préparer le plat", detail: "Déposer les tomates cerises dans un plat à four, poser le bloc de feta au centre. Arroser d'huile d'olive, saler, poivrer.", badge: "⏱ 5 min" },
+      { icone: "🔥", titre: "Rôtir", detail: "Enfourner à 200°C jusqu'à ce que les tomates éclatent et que la feta soit dorée.", badge: "⏱ 30 min" },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Pendant ce temps, cuire les pâtes al dente. Réserver un peu d'eau de cuisson.", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "À la sortie du four, ajouter l'ail pressé et écraser le tout à la fourchette pour obtenir une sauce crémeuse.", badge: null },
+      { icone: "🌿", titre: "Mélanger", detail: "Ajouter les pâtes et un peu d'eau de cuisson, bien mélanger. Parsemer de basilic ciselé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, bien chaud.", badge: null }
+    ]
+  },
+  fishburger: {
+    nom: "Fish burger", cat: "plats", pays: "usa",
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍔",
+    description: "Le burger de poisson façon fast-food, version maison : filet pané bien croustillant, cheddar fondant et sauce tartare. Imbattable avec des frites.",
+    ingredients: { "Filet de cabillaud (g)": 500, "Pain à burger (pièce)": 4, "Cheddar (tranche)": 4, "Farine (g)": 60, "Œuf (pièce)": 2, "Chapelure (g)": 120, "Sauce tartare (g)": 100, "Salade (g)": 60, "Huile de friture (ml)": 500, "Sel (g)": 5 },
+    etapes: [
+      { icone: "🐟", titre: "Préparer le poisson", detail: "Couper les filets en portions de la taille des pains. Saler légèrement.", badge: null },
+      { icone: "🍳", titre: "Paner", detail: "Passer chaque filet dans la farine, puis l'œuf battu, puis la chapelure.", badge: "⏱ 10 min" },
+      { icone: "🔥", titre: "Frire", detail: "Frire à 180°C 4 à 5 minutes jusqu'à doré et croustillant. Égoutter.", badge: "⏱ 5 min" },
+      { icone: "🧀", titre: "Fondre le cheddar", detail: "Toaster les pains. Poser une tranche de cheddar sur le poisson encore chaud pour la faire fondre.", badge: null },
+      { icone: "🥪", titre: "Monter", detail: "Tartiner le pain de sauce tartare, ajouter la salade, le poisson pané et le cheddar.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt avec des frites maison.", badge: null }
+    ]
+  },
 });

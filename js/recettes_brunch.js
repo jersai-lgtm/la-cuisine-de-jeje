@@ -1638,4 +1638,31 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Déguster bien chaud.", badge: null }
     ]
   },
+  msemen: {
+    nom: "Msemen", cat: "brunch", pays: "maroc",
+    base: 4, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🫓",
+    description: "La crêpe feuilletée carrée du Maghreb, croustillante dehors et moelleuse dedans. Parfaite au petit-déjeuner avec du miel ou du fromage frais.",
+    ingredients: { "Farine (g)": 300, "Semoule fine (g)": 100, "Eau tiède (ml)": 220, "Huile (ml)": 80, "Beurre fondu (g)": 50, "Sel (g)": 6, "Sucre (g)": 5 },
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, semoule, sel et sucre, puis pétrir avec l'eau tiède en une pâte souple et élastique.", badge: "⏱ 10 min" },
+      { icone: "⚪", titre: "Bouler", detail: "Former de petites boules, les huiler et laisser reposer.", badge: "⏱ 20 min" },
+      { icone: "🤲", titre: "Étaler", detail: "Étaler chaque boule très finement sur un plan huilé, badigeonner de beurre fondu et d'huile.", badge: null },
+      { icone: "🔲", titre: "Plier", detail: "Replier les bords vers le centre pour former un carré feuilleté.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Cuire à la poêle chaude des deux côtés jusqu'à doré et croustillant.", badge: "⏱ 4 min" },
+      { icone: "🍯", titre: "Servir", detail: "Servir chaud avec du miel, du beurre ou du fromage frais.", badge: null }
+    ]
+  },
+  baghrir: {
+    nom: "Baghrir", cat: "brunch", pays: "maroc",
+    base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🥞",
+    description: "La crêpe « mille trous » du Maghreb : moelleuse et spongieuse, ses milliers d'alvéoles boivent le miel et le beurre fondu. Un régal de petit-déjeuner.",
+    ingredients: { "Semoule fine (g)": 250, "Farine (g)": 50, "Eau tiède (ml)": 600, "Levure de boulanger (g)": 8, "Levure chimique (g)": 5, "Sel (g)": 4, "Sucre (g)": 10 },
+    etapes: [
+      { icone: "🌀", titre: "Mixer", detail: "Mixer tous les ingrédients avec l'eau tiède en une pâte liquide et lisse.", badge: null },
+      { icone: "⏳", titre: "Repos", detail: "Laisser reposer jusqu'à ce que la pâte mousse et bulle en surface.", badge: "⏱ 20 min" },
+      { icone: "🍳", titre: "Cuire", detail: "Verser des louches dans une poêle chaude SANS matière grasse. Cuire d'un seul côté : les trous se forment tout seuls.", badge: "⏱ 3 min" },
+      { icone: "🫓", titre: "Réserver", detail: "Retirer dès que la surface est sèche et criblée de trous. Ne pas retourner.", badge: null },
+      { icone: "🍯", titre: "Servir", detail: "Arroser de miel mélangé à du beurre fondu, servir tiède.", badge: null }
+    ]
+  },
 });

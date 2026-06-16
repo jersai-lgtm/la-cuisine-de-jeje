@@ -411,4 +411,31 @@ Object.assign(recettes, {
       { icone: "🫙", titre: "Mettre en pot", detail: "Verser en pot et laisser prendre.", badge: "⏱ 5 min" }
     ]
   },
+  caviaraubergine: {
+    nom: "Caviar d'aubergine", cat: "tartinables", pays: "france",
+    base: 4, temps: "45 min", niveau: "⭐ Facile", emoji: "🍆",
+    description: "Une tartinade méditerranéenne fondante : la chair d'aubergines rôties au four, fouettée avec ail, citron, tahin et huile d'olive. Parfait à l'apéro sur du pain grillé.",
+    ingredients: { "Aubergine (g)": 600, "Ail (gousse)": 1, "Huile d'olive (ml)": 40, "Jus de citron (ml)": 15, "Tahin (g)": 20, "Cumin (g)": 2, "Sel (g)": 4, "Persil (g)": 10 },
+    etapes: [
+      { icone: "🔥", titre: "Rôtir", detail: "Piquer les aubergines et les rôtir au four jusqu'à ce que la peau soit boursouflée et la chair fondante.", badge: "⏱ 35 min" },
+      { icone: "🥄", titre: "Évider", detail: "Laisser tiédir, fendre les aubergines et récupérer la chair à la cuillère.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer la chair avec l'ail, le jus de citron, le tahin, l'huile d'olive et le cumin.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler et ajuster en citron. Incorporer le persil ciselé.", badge: null },
+      { icone: "❄️", titre: "Réserver", detail: "Réserver au frais au moins 30 min pour développer les saveurs.", badge: "⏱ 30 min" },
+      { icone: "🍞", titre: "Servir", detail: "Servir frais, filé d'huile d'olive, avec du pain grillé.", badge: null }
+    ]
+  },
+  confiturefraise: {
+    nom: "Confiture de fraises", cat: "tartinables", pays: "france",
+    base: 6, temps: "40 min", niveau: "⭐ Facile", emoji: "🍓",
+    description: "La confiture maison comme à la ferme : des fraises gorgées de soleil, juste assez de sucre et un trait de citron pour une prise parfaite. Le goût de l'été en pot.",
+    ingredients: { "Fraises (g)": 1000, "Sucre (g)": 800, "Jus de citron (ml)": 30 },
+    etapes: [
+      { icone: "🍓", titre: "Macérer", detail: "Équeuter et couper les fraises. Les mélanger au sucre et au jus de citron, laisser dégorger quelques heures.", badge: "⏱ 2 h" },
+      { icone: "🔥", titre: "Cuire", detail: "Porter à ébullition puis laisser cuire à feu vif en remuant.", badge: "⏱ 25 min" },
+      { icone: "🥄", titre: "Écumer", detail: "Écumer la mousse rose qui se forme en surface.", badge: null },
+      { icone: "💧", titre: "Tester", detail: "Test de la goutte : une goutte déposée sur une assiette froide doit figer.", badge: null },
+      { icone: "🫙", titre: "Mettre en pot", detail: "Verser brûlant dans des pots stérilisés, fermer et retourner jusqu'à refroidissement.", badge: null }
+    ]
+  },
 });

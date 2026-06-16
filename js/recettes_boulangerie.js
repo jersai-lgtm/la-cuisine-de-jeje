@@ -1190,4 +1190,32 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir chaud et croustillant.", badge: null }
     ]
   },
+  cinnamonroll: {
+    nom: "Cinnamon roll", cat: "boulangerie", pays: "suede",
+    base: 8, temps: "2 h 30", niveau: "⭐⭐ Moyen", emoji: "🌀",
+    description: "La brioche roulée à la cannelle, moelleuse et généreuse, nappée d'un glaçage au fromage frais. Le parfum de cannelle qui embaume toute la maison.",
+    ingredients: { "Farine (g)": 500, "Lait (ml)": 250, "Beurre (g)": 80, "Sucre (g)": 80, "Œuf (pièce)": 1, "Levure de boulanger (g)": 10, "Sucre roux (g)": 120, "Cannelle (g)": 15, "Fromage frais (g)": 100, "Sucre glace (g)": 80 },
+    etapes: [
+      { icone: "🥛", titre: "Pâte", detail: "Pétrir la farine, le lait tiède, le sucre, l'œuf, la levure et une partie du beurre en une pâte souple.", badge: "⏱ 10 min" },
+      { icone: "⏳", titre: "Pousse", detail: "Laisser doubler de volume sous un linge, au chaud.", badge: "⏱ 1 h" },
+      { icone: "🍂", titre: "Garniture", detail: "Étaler la pâte en rectangle, badigeonner du beurre restant, saupoudrer du sucre roux et de la cannelle.", badge: null },
+      { icone: "🌀", titre: "Rouler", detail: "Rouler serré et couper en tronçons. Disposer dans un moule.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Laisser repousser 30 min puis enfourner à 180°C jusqu'à doré.", badge: "⏱ 25 min" },
+      { icone: "🧁", titre: "Glaçage", detail: "Mélanger le fromage frais et le sucre glace, napper les rouleaux encore tièdes.", badge: null }
+    ]
+  },
+  cruffin: {
+    nom: "Cruffin", cat: "boulangerie", pays: "monde",
+    base: 6, temps: "1 h", niveau: "⭐⭐⭐ Difficile", emoji: "🥐",
+    description: "L'hybride irrésistible : un croissant feuilleté façonné comme un muffin, tout en couches croustillantes, souvent fourré de crème ou roulé dans le sucre.",
+    ingredients: { "Pâte feuilletée levée (g)": 500, "Beurre de tourage (g)": 150, "Sucre (g)": 60, "Sucre glace (g)": 40, "Confiture ou crème (g)": 150 },
+    etapes: [
+      { icone: "🧈", titre: "Tourer", detail: "Incorporer le beurre de tourage à la pâte par plis successifs pour créer le feuilletage.", badge: "⏱ 30 min" },
+      { icone: "📏", titre: "Étaler", detail: "Étaler la pâte très finement et la détailler en longues bandes.", badge: null },
+      { icone: "🌀", titre: "Rouler", detail: "Enrouler chaque bande sur elle-même puis dresser à la verticale dans un moule à muffins.", badge: null },
+      { icone: "⏳", titre: "Pousse", detail: "Laisser pousser jusqu'à ce que les cruffins gonflent bien.", badge: "⏱ 45 min" },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 190°C jusqu'à un feuilletage doré et croustillant.", badge: "⏱ 20 min" },
+      { icone: "🍓", titre: "Garnir", detail: "Garnir de crème ou de confiture à la poche, rouler dans le sucre et saupoudrer de sucre glace.", badge: null }
+    ]
+  },
 });

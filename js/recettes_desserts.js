@@ -4693,4 +4693,61 @@ Object.assign(recettes, {
       {icone:"🍽️", titre:"Servir", detail:"Napper les picarones chauds de sirop de chancaca et servir aussitôt.", badge:"🍽️ Dressage"}
     ]
   },
+  cookieskillet: {
+    nom: "Cookie skillet", cat: "desserts", pays: "usa",
+    base: 6, temps: "30 min", niveau: "⭐ Facile", emoji: "🍪",
+    description: "Un cookie géant moelleux et coulant, cuit et servi directement à la poêle, à partager à la cuillère avec une boule de glace qui fond dessus. Pur réconfort.",
+    ingredients: { "Beurre (g)": 120, "Sucre roux (g)": 100, "Sucre (g)": 50, "Œuf (pièce)": 1, "Farine (g)": 200, "Levure chimique (g)": 5, "Pépites de chocolat (g)": 150, "Vanille (g)": 5, "Sel (g)": 2 },
+    etapes: [
+      { icone: "🧈", titre: "Crémer", detail: "Fouetter le beurre fondu avec les deux sucres et la vanille.", badge: null },
+      { icone: "🥚", titre: "Œuf", detail: "Ajouter l'œuf et bien mélanger jusqu'à une pâte lisse.", badge: null },
+      { icone: "🌾", titre: "Sec", detail: "Incorporer la farine, la levure et le sel, puis les pépites de chocolat.", badge: null },
+      { icone: "🍪", titre: "Garnir", detail: "Étaler la pâte dans une poêle beurrée allant au four.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C : les bords doivent être dorés et le centre encore moelleux.", badge: "⏱ 20 min" },
+      { icone: "🍨", titre: "Servir", detail: "Servir tiède dans la poêle avec une boule de glace vanille.", badge: null }
+    ]
+  },
+  brookie: {
+    nom: "Brookie", cat: "desserts", pays: "usa",
+    base: 8, temps: "45 min", niveau: "⭐⭐ Moyen", emoji: "🍫",
+    description: "Le meilleur des deux mondes : une couche de brownie fondant surmontée d'une couche de cookie croustillant aux pépites. Impossible de choisir, alors on prend les deux.",
+    ingredients: { "Chocolat noir (g)": 200, "Beurre (g)": 175, "Sucre (g)": 200, "Œuf (pièce)": 4, "Farine (g)": 230, "Sucre roux (g)": 80, "Pépites de chocolat (g)": 120, "Levure chimique (g)": 3, "Sel (g)": 2 },
+    etapes: [
+      { icone: "🍫", titre: "Pâte à brownie", detail: "Faire fondre le chocolat avec une partie du beurre. Ajouter une partie du sucre, des œufs et de la farine pour obtenir une pâte fondante. Verser dans un moule.", badge: null },
+      { icone: "🍪", titre: "Pâte à cookie", detail: "Mélanger le reste de beurre mou avec le sucre roux et le sucre restant, les œufs, puis la farine, la levure, le sel et les pépites.", badge: null },
+      { icone: "🥄", titre: "Superposer", detail: "Déposer la pâte à cookie en morceaux sur la couche de brownie.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C jusqu'à ce que le cookie soit doré.", badge: "⏱ 30 min" },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser complètement tiédir avant de couper en carrés nets.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Déguster tiède ou à température ambiante.", badge: null }
+    ]
+  },
+  opera: {
+    nom: "Opéra", cat: "desserts", pays: "france",
+    base: 8, temps: "2 h", niveau: "⭐⭐⭐ Difficile", emoji: "🍰",
+    description: "Le grand classique de la pâtisserie française : fines couches de biscuit joconde imbibé de café, crème au beurre au café et ganache au chocolat, glacé d'un miroir brillant.",
+    ingredients: { "Poudre d'amandes (g)": 125, "Sucre glace (g)": 125, "Œuf (pièce)": 4, "Blanc d'œuf (pièce)": 4, "Farine (g)": 35, "Beurre (g)": 200, "Sucre (g)": 200, "Café fort (ml)": 150, "Chocolat noir (g)": 150, "Crème liquide (ml)": 150 },
+    etapes: [
+      { icone: "🍰", titre: "Biscuit joconde", detail: "Monter la poudre d'amandes, le sucre glace et les œufs, alléger avec les blancs montés et la farine. Étaler finement et cuire en plaques.", badge: "⏱ 12 min" },
+      { icone: "☕", titre: "Sirop café", detail: "Préparer un sirop avec une partie du café et du sucre, pour imbiber les biscuits.", badge: null },
+      { icone: "🧈", titre: "Crème au beurre café", detail: "Foisonner le beurre avec un sirop de sucre et le café restant jusqu'à une crème lisse et aérienne.", badge: null },
+      { icone: "🍫", titre: "Ganache", detail: "Faire fondre le chocolat dans la crème chaude pour une ganache brillante.", badge: null },
+      { icone: "🥞", titre: "Montage", detail: "Alterner biscuit imbibé, crème au beurre, biscuit, ganache, biscuit, crème — en couches bien régulières.", badge: "⏱ 20 min" },
+      { icone: "✨", titre: "Glaçage", detail: "Couvrir d'un glaçage chocolat lisse. Réserver au frais.", badge: null },
+      { icone: "❄️", titre: "Repos", detail: "Laisser prendre au réfrigérateur, puis détailler en parts nettes au couteau chaud.", badge: "⏱ 1 h" }
+    ]
+  },
+  numbercake: {
+    nom: "Number cake", cat: "desserts", pays: "monde",
+    base: 8, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🔢",
+    description: "Le gâteau-chiffre tendance des anniversaires : deux couches de sablé en forme de chiffre, garnies d'une chantilly mascarpone pochée, fruits frais et macarons.",
+    ingredients: { "Farine (g)": 250, "Beurre (g)": 125, "Sucre (g)": 100, "Œuf (pièce)": 1, "Mascarpone (g)": 250, "Crème liquide (ml)": 200, "Sucre glace (g)": 50, "Fruits frais (g)": 200, "Macarons (pièce)": 8 },
+    etapes: [
+      { icone: "🍪", titre: "Pâte sablée", detail: "Sabler le beurre froid avec la farine et le sucre, lier avec l'œuf. Filmer et réserver au frais 30 min.", badge: "⏱ 30 min" },
+      { icone: "🔢", titre: "Découper", detail: "Étaler la pâte et découper deux fois le chiffre voulu à l'aide d'un gabarit en papier.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C jusqu'à ce que les sablés soient dorés. Laisser refroidir.", badge: "⏱ 12 min" },
+      { icone: "🥛", titre: "Chantilly mascarpone", detail: "Fouetter le mascarpone, la crème bien froide et le sucre glace en une chantilly ferme.", badge: null },
+      { icone: "🌸", titre: "Pocher", detail: "Pocher de jolies boules de chantilly sur le premier sablé, poser le second et pocher à nouveau.", badge: null },
+      { icone: "🍓", titre: "Décorer", detail: "Décorer de fruits frais, macarons et fleurs comestibles.", badge: null }
+    ]
+  },
 });

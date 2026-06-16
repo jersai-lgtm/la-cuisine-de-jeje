@@ -1569,4 +1569,18 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir sans remuer : on boit le café chaud à travers la crème fraîche.", badge: null }
     ]
   },
+  grog: {
+    nom: "Grog", cat: "cocktails", pays: "france",
+    base: 1, temps: "5 min", niveau: "⭐ Facile", emoji: "🥃",
+    description: "Le remède réconfortant des soirs d'hiver : rhum ambré, eau chaude, citron, miel et épices. Idéal pour se réchauffer (et tenir tête à un rhume).",
+    ingredients: { "Rhum ambré (ml)": 50, "Eau chaude (ml)": 150, "Miel (g)": 20, "Citron (pièce)": 0.5, "Bâton de cannelle (pièce)": 1, "Clou de girofle (pièce)": 2 },
+    etapes: [
+      { icone: "💧", titre: "Chauffer l'eau", detail: "Faire chauffer l'eau sans la faire bouillir.", badge: null },
+      { icone: "🍋", titre: "Citron", detail: "Presser le demi-citron pour en récupérer le jus.", badge: null },
+      { icone: "🥃", titre: "Mélanger", detail: "Dans un verre résistant à la chaleur, verser le rhum, le miel et le jus de citron.", badge: null },
+      { icone: "♨️", titre: "Allonger", detail: "Compléter avec l'eau chaude et remuer pour dissoudre le miel.", badge: null },
+      { icone: "🌿", titre: "Épices", detail: "Ajouter le bâton de cannelle et les clous de girofle, laisser infuser 2 minutes.", badge: "⏱ 2 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud. À consommer avec modération.", badge: null }
+    ]
+  },
 });

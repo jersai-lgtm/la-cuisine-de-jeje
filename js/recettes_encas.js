@@ -2060,4 +2060,18 @@ Object.assign(recettes, {
       {icone:"🥪", titre:"Servir", detail:"Garnir généreusement de crème de poulet-avocat et servir aussitôt.", badge:"🍽️ Dressage"}
     ]
   },
+  corndogcoreen: {
+    nom: "Korean corn dog", cat: "encas", pays: "coree",
+    base: 4, temps: "30 min", niveau: "⭐⭐ Moyen", emoji: "🌭",
+    description: "Le hot-dog coréen viral : saucisse et mozzarella enrobées d'une pâte épaisse, panées au panko et frites jusqu'à ultra-croustillant, puis saupoudrées de sucre. Effet fromage filant garanti.",
+    ingredients: { "Saucisses (pièce)": 4, "Mozzarella (g)": 200, "Farine (g)": 200, "Levure chimique (g)": 5, "Lait (ml)": 150, "Œuf (pièce)": 1, "Chapelure panko (g)": 150, "Sucre (g)": 30, "Huile de friture (ml)": 1000 },
+    etapes: [
+      { icone: "🍢", titre: "Embrocher", detail: "Piquer sur des pics en bois une demi-saucisse et un bâtonnet de mozzarella (ou tout mozza).", badge: null },
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, levure, lait, œuf et un peu de sucre en une pâte épaisse, à verser dans un grand verre.", badge: null },
+      { icone: "🌽", titre: "Enrober", detail: "Plonger chaque brochette dans la pâte pour l'enrober entièrement, puis rouler dans le panko.", badge: "⏱ 10 min" },
+      { icone: "🔥", titre: "Frire", detail: "Frire à 175°C en tournant, jusqu'à un panko bien doré et croustillant.", badge: "⏱ 4 min" },
+      { icone: "🍬", titre: "Sucrer", detail: "Égoutter et saupoudrer généreusement de sucre, façon street-food coréenne.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud avec ketchup et moutarde, pour profiter du fromage filant.", badge: null }
+    ]
+  },
 });
