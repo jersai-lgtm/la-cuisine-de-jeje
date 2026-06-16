@@ -7,4 +7,4 @@
 // Chacun fait  Object.assign(recettes, { ... }).
 // 👉 Pour AJOUTER une recette : ouvre le fichier de SA catégorie.
 // ============================================================
-const recettes = {};
+var recettes = {}; // var (et non const) : évite la TDZ quand les scripts sont bundlés en un seul fichier (le code d'init qui fait `typeof recettes` doit obtenir 'undefined', pas une exception)

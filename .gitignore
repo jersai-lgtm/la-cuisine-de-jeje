@@ -1,0 +1,7 @@
+# Dépendances et artefacts de build (régénérés par le workflow)
+node_modules/
+dist/
+
+# État local de wrangler (Cloudflare Worker)
+.wrangler/
+worker/.wrangler/
