@@ -22,6 +22,7 @@ import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { transform } from "esbuild";
+import { genererSEO } from "./seo.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = join(ROOT, "dist");
@@ -101,6 +102,10 @@ async function main() {
   for (const f of statiques) if (existsSync(p(f))) cpSync(p(f), join(DIST, f));
   if (existsSync(p("images"))) cpSync(p("images"), join(DIST, "images"), { recursive: true });
   writeFileSync(join(DIST, ".nojekyll"), ""); // Pages : ne pas passer par Jekyll
+
+  // 6) SEO : pages par recette + sitemap + robots
+  const seo = genererSEO(ROOT, DIST);
+  console.log(`   SEO : ${seo.pages} pages recette générées (${seo.avecIngredients} avec ingrédients) + sitemap.xml + robots.txt`);
 
   console.log(`✅ Build OK → dist/`);
   console.log(`   JS : ${(totalBrut / 1024 / 1024).toFixed(2)} Mo brut → ${(totalMin / 1024 / 1024).toFixed(2)} Mo minifié (${(100 * (1 - totalMin / totalBrut)).toFixed(0)} % en moins)`);
