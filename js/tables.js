@@ -1640,6 +1640,7 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
       ${enteteVisuelHTML}
       <h2 class="fiche-titre">${typeof drapeau === "function" ? drapeau(data.pays, 22) + " " : ""}${nomPropre}</h2>
       <p class="fiche-desc">${data.description}</p>
+      <button type="button" onclick="partagerRecette('${nom}')" aria-label="Partager cette recette" style="background:rgba(255,255,255,.08);color:#d7d5db;border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:8px 16px;font-size:14px;font-weight:600;cursor:pointer;margin-top:4px">📤 Partager</button>
     </div>
     ${htmlPrixCalories(nom, personnes)}
     ${typeof recettesLieesHTML === "function" ? recettesLieesHTML(nom) : ""}
