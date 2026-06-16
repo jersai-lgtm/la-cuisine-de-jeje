@@ -34,6 +34,10 @@ firebase login              # une fois
 firebase deploy --only firestore:rules,storage
 ```
 
+> ℹ️ La collection **`erreurs`** (remontée d'erreurs JS des utilisateurs, lisible
+> par l'admin dans la console Firebase) nécessite que `firestore.rules` soit
+> redéployé. Sans ça, le logging échoue en silence (aucune casse).
+
 `firestore.rules` applique le principe « **tout interdit sauf exception** » :
 - `utilisateurs/{uid}` : lecture par soi-même ou l'admin ; écriture par soi-même.
 - `avis/{uid}` : écriture de son seul avis ; lecture par les comptes connectés.

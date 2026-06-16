@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "1.8.0",
+    titre: "📤 Partage tes recettes préférées",
+    texte: "Un nouveau bouton « 📤 Partager » est apparu sur chaque recette ! Envoie-la à tes proches sur WhatsApp, Messages ou par mail en un clic — avec un joli aperçu (photo + description). Pratique pour proposer le menu du week-end ou transmettre LA recette qui a fait l'unanimité. 😋"
+  },
+  {
     v: "1.7.0",
     titre: "👨‍🍳 Le mode cuisson est arrivé !",
     texte: "Sur n'importe quelle recette, appuie sur « 👨‍🍳 Lancer le mode cuisson » : les étapes s'affichent une par une en plein écran, en gros caractères, et l'écran ne s'éteint plus pendant que tu cuisines. Un minuteur se propose automatiquement quand une étape a une durée (« ⏱ Lancer le minuteur ») et te prévient quand c'est prêt. Mains pleines de farine ? Tout est lisible et à portée de pouce !"
