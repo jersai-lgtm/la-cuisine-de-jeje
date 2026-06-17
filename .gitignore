@@ -5,3 +5,6 @@ dist/
 # État local de wrangler (Cloudflare Worker)
 .wrangler/
 worker/.wrangler/
+
+# Dossier de dépôt des photos à convertir (outil tools/convertir-images.py)
+_photos-a-convertir/
