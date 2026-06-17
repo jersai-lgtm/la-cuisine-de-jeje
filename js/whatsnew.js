@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "1.11.2",
+    titre: "🍽️ Menus modulables repas par repas",
+    texte: "Ton planning de la semaine devient sur-mesure ! Sur chaque repas : un sélecteur 👥 pour le nombre de convives (lundi midi seul à 1, mardi soir à 4…), et un bouton ⚙️ pour le passer en simple ou en complet (entrée/plat/dessert), le remplacer ou le retirer. La liste de courses cumule automatiquement les bonnes portions. À toi de composer ta semaine ! 👨‍🍳"
+  },
+  {
     v: "1.11.0",
     titre: "🎤 Vocal, bilan de la semaine & recettes similaires",
     texte: "Trois nouveautés ! 1) Un 🎤 micro dans la barre de recherche : dicte ta recherche, mains libres. 2) Sur ton menu de la semaine, un 📊 bilan s'affiche en tête : calories par jour, coût total et équilibre Nutri-Score. 3) En bas de chaque recette, une section « 🍽️ Tu aimeras aussi » te suggère automatiquement des plats proches. Bon appétit ! 👨‍🍳"

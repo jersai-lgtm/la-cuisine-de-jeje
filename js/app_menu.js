@@ -1666,6 +1666,62 @@ function changerPersRepas(jn, m, delta) {
 }
 window.changerPersRepas = changerPersRepas;
 
+// === Phase B : format & présence PAR repas (édition après génération) ===
+// Bouton ⚙️ sur chaque repas → menu (Simple / Complet / Retirer).
+function menuMomentMenu(jn, m) {
+  return '<button class="plan-regen-btn" onclick="event.stopPropagation();ouvrirMenuRepas(\'' + jn + '\',\'' + m + '\',this)" title="Format ou retirer ce repas">⚙️</button>';
+}
+function _pickRecetteCat(cat, exclure) {
+  const cles = Object.keys(recettes).filter(k => recettes[k] && recettes[k].cat === cat && !(exclure && exclure.has(k)));
+  return cles.length ? cles[Math.floor(Math.random() * cles.length)] : null;
+}
+window.fermerMenuRepas = function () { const p = document.getElementById("menu-repas-popup"); if (p) p.remove(); };
+window.ouvrirMenuRepas = function (jn, m, btn) {
+  fermerMenuRepas();
+  const menus = window._derniersMenus; if (!menus) return;
+  const jour = (menus.semaine || []).find(j => j.jour === jn); if (!jour) return;
+  const slot = jour[m];
+  const estComp = slot && typeof slot === "object" && !slot.recette && (slot.entree || slot.plat || slot.dessert);
+  const pop = document.createElement("div");
+  pop.id = "menu-repas-popup";
+  pop.setAttribute("style", "position:fixed;z-index:10001;background:#262130;border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:6px;box-shadow:0 10px 30px rgba(0,0,0,.5);display:flex;flex-direction:column;gap:2px;min-width:170px");
+  const opt = (txt, action) => '<button onclick="event.stopPropagation();' + action + '" style="background:transparent;border:none;color:#e7e4ec;text-align:left;padding:9px 11px;border-radius:8px;cursor:pointer;font-size:13px" onmouseover="this.style.background=\'rgba(255,255,255,.08)\'" onmouseout="this.style.background=\'transparent\'">' + txt + '</button>';
+  pop.innerHTML =
+    (estComp ? "" : opt("🥗 Passer en complet", "setFormatRepasSlot('" + jn + "','" + m + "','complet')")) +
+    (estComp ? opt("🍽️ Passer en simple", "setFormatRepasSlot('" + jn + "','" + m + "','simple')") : "") +
+    opt("🔁 Remplacer le repas", "regenRepas('" + jn + "','" + m + "');fermerMenuRepas()") +
+    opt("✕ Retirer ce repas", "retirerRepasSlot('" + jn + "','" + m + "')");
+  document.body.appendChild(pop);
+  const r = btn.getBoundingClientRect();
+  pop.style.top = Math.min(r.bottom + 4, window.innerHeight - pop.offsetHeight - 8) + "px";
+  pop.style.left = Math.min(r.left, window.innerWidth - pop.offsetWidth - 8) + "px";
+  setTimeout(() => document.addEventListener("click", fermerMenuRepas, { once: true }), 0);
+};
+window.setFormatRepasSlot = function (jn, m, format) {
+  const menus = window._derniersMenus; if (!menus) return;
+  const jour = (menus.semaine || []).find(j => j.jour === jn); if (!jour) return;
+  const slot = jour[m];
+  const platKey = (slot && (slot.recette || (typeof slot === "string" ? slot : (slot.plat && slot.plat.recette)))) || _pickRecetteCat("plats");
+  if (format === "complet") {
+    jour[m] = {
+      entree: { recette: (slot && slot.entree && slot.entree.recette) || _pickRecetteCat("entrees") || platKey },
+      plat: { recette: platKey },
+      dessert: { recette: (slot && slot.dessert && slot.dessert.recette) || _pickRecetteCat("desserts") || platKey }
+    };
+  } else {
+    jour[m] = { recette: platKey };
+  }
+  fermerMenuRepas();
+  afficherMenusSemaine(menus, menus.personnes || 4);
+};
+window.retirerRepasSlot = function (jn, m) {
+  const menus = window._derniersMenus; if (!menus) return;
+  const jour = (menus.semaine || []).find(j => j.jour === jn); if (!jour) return;
+  jour[m] = null;
+  fermerMenuRepas();
+  afficherMenusSemaine(menus, menus.personnes || 4);
+};
+
 function afficherMenusSemaine(menus, personnes) {
   const container = document.getElementById("plan-jours");
   container.innerHTML = "";
@@ -1722,27 +1778,28 @@ function afficherMenusSemaine(menus, personnes) {
     // Teinte (Moyen) de la couleur du jour sur tout le bloc (adoucit le noir)
     div.style.background = "linear-gradient(180deg, " + couleurJour + "33, " + couleurJour + "0d 55%, #17151c)";
 
-    if (isComplet) {
-      // Format entrée/plat/dessert
-      const genMoment = (moment, emoji, label) => {
-        const r = jour[moment];
-        if (!r) return "";
-        const genSous = (type, icone, data, cleType) => {
-          if (!data?.recette) return "";
-          const key = data.recette;
-          // Alerte famille (rouge bébé / orange enfant) + raison
-          const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
-          const lvl = niv?.niveau;
-          const raison = niv?.raison || "";
-          const tip = lvl === "bebe" ? `${raison} — déconseillé bébé` : lvl === "enfant" ? `${raison} — déconseillé enfant` : "";
-          const styleAlerte = lvl === "bebe"   ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
-                            : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
-          const badge = lvl === "bebe"   ? `<span title="${tip}" style="margin-left:4px">🍼</span>`
-                      : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px">🧒</span>` : "";
-          const btn = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepasSous('${jour.jour}','${moment}','${cleType}')" title="Remplacer ce plat">🔄</button>`;
-          const btnCh = `<button class="plan-regen-btn" onclick="event.stopPropagation();maChoisir('${jour.jour}','${moment}','${cleType}')" title="Choisir une recette">🔍</button>`;
-          const motif = lvl ? `<div class="plan-motif-famille" title="${tip}">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
-          return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${persDe(jour.jour, moment)})">
+    // Phase B : rendu PAR REPAS selon la forme du slot (format mixte possible).
+    // complet = objet avec entree/plat/dessert ; simple = chaîne ou {recette} ; absent = falsy.
+    const estComplet = (rr) => rr && typeof rr === "object" && !rr.recette && (rr.entree || rr.plat || rr.dessert);
+
+    // --- Rendu d'un moment au format COMPLET (colonne entrée/plat/dessert) ---
+    const renderComplet = (moment, emoji, label) => {
+      const r = jour[moment];
+      if (!r) return "";
+      const genSous = (type, icone, data, cleType) => {
+        if (!data?.recette) return "";
+        const key = data.recette;
+        const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
+        const lvl = niv?.niveau, raison = niv?.raison || "";
+        const tip = lvl === "bebe" ? `${raison} — déconseillé bébé` : lvl === "enfant" ? `${raison} — déconseillé enfant` : "";
+        const styleAlerte = lvl === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
+                          : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
+        const badge = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px">🍼</span>`
+                    : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px">🧒</span>` : "";
+        const btn = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepasSous('${jour.jour}','${moment}','${cleType}')" title="Remplacer ce plat">🔄</button>`;
+        const btnCh = `<button class="plan-regen-btn" onclick="event.stopPropagation();maChoisir('${jour.jour}','${moment}','${cleType}')" title="Choisir une recette">🔍</button>`;
+        const motif = lvl ? `<div class="plan-motif-famille" title="${tip}">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
+        return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${persDe(jour.jour, moment)})">
             <span class="plan-sous-label">${icone} ${type} ${badge}${btn}${btnCh}</span>
             <span class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getThumbPath === "function" ? getThumbPath(key) : ""}" alt="" loading="lazy" onerror="if(this.src.indexOf('thumbs/')>-1){this.src='${typeof getImagePath === "function" ? getImagePath(key) : ""}'}else{this.closest('.plan-repas-visuel').classList.add('noimg')}"><span class="plan-repas-emoji-fallback">${getEmoji(key)}</span></span>
             <span class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[key]?.pays, 13) + " " : ""}${getNomRecette(key)}</span>
@@ -1750,73 +1807,54 @@ function afficherMenusSemaine(menus, personnes) {
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(key, "inline") : ""}
             ${motif}
           </div>`;
-        };
-        return `<div class="plan-repas-col">
-          <div class="plan-repas-label">${emoji} ${label}${stepperPers(jour.jour, moment)}</div>
+      };
+      return `<div class="plan-repas-col">
+          <div class="plan-repas-label">${emoji} ${label}${menuMomentMenu(jour.jour, moment)}${stepperPers(jour.jour, moment)}</div>
           ${genSous("Entrée", "🥗", r.entree, "entree")}
           ${genSous("Plat", "🍽️", r.plat, "plat")}
           ${genSous("Dessert", "🍰", r.dessert, "dessert")}
         </div>`;
-      };
-      div.innerHTML = `
+    };
+
+    // --- Rendu d'un moment au format SIMPLE (carte unique) ---
+    const renderSimple = (moment, emoji, label) => {
+      const r = jour[moment];
+      const key = (r && (r.recette || (typeof r === "string" ? r : ""))) || "";
+      if (!key) return "";
+      const note = (r && r.note) || "";
+      const niv = typeof getNiveauFamille === "function" ? getNiveauFamille(key) : null;
+      const lvl = niv?.niveau, raison = niv?.raison || "";
+      const tip = lvl === "bebe" ? `${raison} — déconseillé bébé` : lvl === "enfant" ? `${raison} — déconseillé enfant` : "";
+      const styleAl = lvl === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
+                    : lvl === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
+      const bAl = lvl === "bebe" ? `<span title="${tip}" style="margin-left:4px">🍼</span>`
+                : lvl === "enfant" ? `<span title="${tip}" style="margin-left:4px">🧒</span>` : "";
+      const btn = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','${moment}')" title="Remplacer ce plat">🔄</button>`;
+      const btnCh = `<button class="plan-regen-btn" onclick="event.stopPropagation();maChoisir('${jour.jour}','${moment}')" title="Choisir une recette">🔍</button>`;
+      const motif = lvl ? `<div class="plan-motif-famille" title="${tip}">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
+      return `<div class="plan-repas" style="${styleAl}" onclick="ouvrirRecettePlan('${key}', ${persDe(jour.jour, moment)})">
+            <div class="plan-repas-label">${emoji} ${label} ${bAl}${btn}${btnCh}${menuMomentMenu(jour.jour, moment)}${stepperPers(jour.jour, moment)}</div>
+            <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getThumbPath === "function" ? getThumbPath(key) : ""}" alt="" loading="lazy" onerror="if(this.src.indexOf('thumbs/')>-1){this.src='${typeof getImagePath === "function" ? getImagePath(key) : ""}'}else{this.closest('.plan-repas-visuel').classList.add('noimg')}"><span class="plan-repas-emoji-fallback">${getEmoji(key)}</span></div>
+            <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[key]?.pays, 13) + " " : ""}${getNomRecette(key)}</div>
+            <div class="plan-repas-note">${note}</div>
+            ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(key, "inline") : ""}
+            ${motif}
+          </div>`;
+    };
+
+    const renderMoment = (moment, emoji, label) => {
+      if (!jour[moment]) return "";
+      return estComplet(jour[moment]) ? renderComplet(moment, emoji, label) : renderSimple(moment, emoji, label);
+    };
+
+    const nMoments = (jour.midi ? 1 : 0) + (jour.soir ? 1 : 0);
+    const gridStyle = nMoments <= 1 ? ' style="grid-template-columns:1fr"' : "";
+    div.innerHTML = `
         <h3 class="plan-jour-titre" style="color:${couleurJour}">${jour.jour}</h3>
-        <div class="plan-repas-row"${jour.soir ? "" : ' style="grid-template-columns:1fr"'}>
-          ${genMoment("midi", "☀️", "Midi")}
-          ${genMoment("soir", "🌙", "Soir")}
+        <div class="plan-repas-row"${gridStyle}>
+          ${renderMoment("midi", "☀️", "Midi")}
+          ${renderMoment("soir", "🌙", "Soir")}
         </div>`;
-    } else {
-      // Format simple midi/soir
-      const midi = jour.midi?.recette || jour.midi || "";
-      const soir = jour.soir?.recette || jour.soir || "";
-      const midiNote = jour.midi?.note || "";
-      const soirNote = jour.soir?.note || "";
-
-      // Couleur famille + raison
-      const nMidi = typeof getNiveauFamille === "function" ? getNiveauFamille(midi) : null;
-      const nSoir = typeof getNiveauFamille === "function" ? getNiveauFamille(soir) : null;
-      const lvlM = nMidi?.niveau, lvlS = nSoir?.niveau;
-      const raisonM = nMidi?.raison || "";
-      const raisonS = nSoir?.raison || "";
-      const tipM = lvlM === "bebe" ? `${raisonM} — déconseillé bébé` : lvlM === "enfant" ? `${raisonM} — déconseillé enfant` : "";
-      const tipS = lvlS === "bebe" ? `${raisonS} — déconseillé bébé` : lvlS === "enfant" ? `${raisonS} — déconseillé enfant` : "";
-      const sMidi = lvlM === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
-                  : lvlM === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
-      const sSoir = lvlS === "bebe" ? "border-left:3px solid #ff4444;background:rgba(255,68,68,.1)"
-                  : lvlS === "enfant" ? "border-left:3px solid #ff9900;background:rgba(255,153,0,.08)" : "";
-      const bMidi = lvlM === "bebe" ? `<span title="${tipM}" style="margin-left:4px">🍼</span>`
-                  : lvlM === "enfant" ? `<span title="${tipM}" style="margin-left:4px">🧒</span>` : "";
-      const bSoir = lvlS === "bebe" ? `<span title="${tipS}" style="margin-left:4px">🍼</span>`
-                  : lvlS === "enfant" ? `<span title="${tipS}" style="margin-left:4px">🧒</span>` : "";
-      const btnMidi = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','midi')" title="Remplacer ce plat">🔄</button>`;
-      const btnSoir = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepas('${jour.jour}','soir')" title="Remplacer ce plat">🔄</button>`;
-      const chMidi = `<button class="plan-regen-btn" onclick="event.stopPropagation();maChoisir('${jour.jour}','midi')" title="Choisir une recette">🔍</button>`;
-      const chSoir = `<button class="plan-regen-btn" onclick="event.stopPropagation();maChoisir('${jour.jour}','soir')" title="Choisir une recette">🔍</button>`;
-      const motifM = lvlM ? `<div class="plan-motif-famille" title="${tipM}">${lvlM === "bebe" ? "🍼" : "🌶️"} ${raisonM}</div>` : "";
-      const motifS = lvlS ? `<div class="plan-motif-famille" title="${tipS}">${lvlS === "bebe" ? "🍼" : "🌶️"} ${raisonS}</div>` : "";
-
-      const soirBlocHTML = jour.soir ? `<div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${persDe(jour.jour, 'soir')})">
-            <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}${chSoir}${stepperPers(jour.jour, 'soir')}</div>
-            <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getThumbPath === "function" ? getThumbPath(soir) : ""}" alt="" loading="lazy" onerror="if(this.src.indexOf('thumbs/')>-1){this.src='${typeof getImagePath === "function" ? getImagePath(soir) : ""}'}else{this.closest('.plan-repas-visuel').classList.add('noimg')}"><span class="plan-repas-emoji-fallback">${getEmoji(soir)}</span></div>
-            <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[soir]?.pays, 13) + " " : ""}${getNomRecette(soir)}</div>
-            <div class="plan-repas-note">${soirNote}</div>
-            ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(soir, "inline") : ""}
-            ${motifS}
-          </div>` : "";
-
-      div.innerHTML = `
-        <h3 class="plan-jour-titre" style="color:${couleurJour}">${jour.jour}</h3>
-        <div class="plan-repas-row"${jour.soir ? "" : ' style="grid-template-columns:1fr"'}>
-          <div class="plan-repas" style="${sMidi}" onclick="ouvrirRecettePlan('${midi}', ${persDe(jour.jour, 'midi')})">
-            <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}${chMidi}${stepperPers(jour.jour, 'midi')}</div>
-            <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getThumbPath === "function" ? getThumbPath(midi) : ""}" alt="" loading="lazy" onerror="if(this.src.indexOf('thumbs/')>-1){this.src='${typeof getImagePath === "function" ? getImagePath(midi) : ""}'}else{this.closest('.plan-repas-visuel').classList.add('noimg')}"><span class="plan-repas-emoji-fallback">${getEmoji(midi)}</span></div>
-            <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[midi]?.pays, 13) + " " : ""}${getNomRecette(midi)}</div>
-            <div class="plan-repas-note">${midiNote}</div>
-            ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(midi, "inline") : ""}
-            ${motifM}
-          </div>
-          ${soirBlocHTML}
-        </div>`;
-    }
     container.appendChild(div);
   });
 
