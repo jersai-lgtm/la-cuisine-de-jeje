@@ -986,31 +986,36 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   };
 
   const midiSeul = (window._reposCreneaux || "midi-soir") === "midi";
+
+  // Construit un slot au format demandé (un repas du planning)
+  const slotComplet = (notePlat, noteDes) => ({
+    entree:  pickEntree() || { recette: pick(), note: "En entrée 🥗" },
+    plat:    { recette: pick(), note: notePlat },
+    dessert: { recette: pickDessert(), note: noteDes }
+  });
+  const genSlot = (format, moment) => {
+    const notePlat = moment === "midi" ? "Bon appétit ! 🍽️" : "Régal assuré ! ✨";
+    if (format === "complet") return slotComplet(notePlat, moment === "midi" ? "Pour finir ! 🍰" : "Bonne nuit ! 🍰");
+    if (format === "simple")  return { recette: pick(), note: notePlat };
+    return undefined; // "off" → pas de repas
+  };
+
   return {
     semaine: jours.map(jour => {
-      if (isComplet) {
-        const j = {
-          jour,
-          midi: {
-            entree:  pickEntree() || { recette: pick(), note: "En entrée 🥗" },
-            plat:    { recette: pick(), note: "Bon appétit ! 🍽️" },
-            dessert: { recette: pickDessert(), note: "Pour finir ! 🍰" }
-          }
-        };
-        if (!midiSeul) j.soir = {
-          entree:  pickEntree() || { recette: pick(), note: "En entrée 🥗" },
-          plat:    { recette: pick(), note: "Régal assuré ! ✨" },
-          dessert: { recette: pickDessert(), note: "Bonne nuit ! 🍰" }
-        };
+      // Mode "Personnaliser par repas" (grille pré-génération) : config par slot
+      const cfg = (window._planPersoActif && window._planConfig && window._planConfig[jour]) || null;
+      if (cfg) {
+        const j = { jour };
+        const mid = genSlot(cfg.midi, "midi"); if (mid) j.midi = mid;
+        const soi = genSlot(cfg.soir, "soir"); if (soi) j.soir = soi;
         return j;
       }
-      const j = {
-        jour,
-        midi: { recette: pick(), note: "Bon appétit ! 🍽️" }
-      };
-      if (!midiSeul) j.soir = { recette: pick(), note: "Régal assuré ! ✨" };
+      // Mode global (format + créneaux identiques toute la semaine)
+      const fmt = isComplet ? "complet" : "simple";
+      const j = { jour, midi: genSlot(fmt, "midi") };
+      if (!midiSeul) j.soir = genSlot(fmt, "soir");
       return j;
-    })
+    }).filter(j => j.midi || j.soir) // retire les jours entièrement vides (perso)
   };
 }
 
