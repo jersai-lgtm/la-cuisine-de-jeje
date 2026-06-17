@@ -15,11 +15,6 @@ const QUOI_DE_NEUF = [
     texte: "Dans Garde-manger → Liste de courses, une nouvelle section « 🧺 Mes articles » te laisse ajouter tout ce qui n'est pas lié à une recette — sopalin, couches, lessive… — avec les mêmes cases à cocher que les ingrédients. Ta liste de courses devient enfin complète et bonne pour tout le caddie !"
   },
   {
-    v: "1.8.5",
-    titre: "📐 Des quantités encore plus claires",
-    texte: "Fini les « 0,5 oignon » ou les fractions de cuillère : toutes les quantités sont désormais affichées en grammes et millilitres, dans chaque recette. Plus simple à peser, à doubler, et ta liste de courses tombe juste."
-  },
-  {
     v: "1.8.0",
     titre: "📤 Partage tes recettes préférées",
     texte: "Un nouveau bouton « 📤 Partager » est apparu sur chaque recette ! Envoie-la à tes proches sur WhatsApp, Messages ou par mail en un clic — avec un joli aperçu (photo + description). Pratique pour proposer le menu du week-end ou transmettre LA recette qui a fait l'unanimité. 😋"
