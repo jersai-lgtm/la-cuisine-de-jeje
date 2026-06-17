@@ -865,6 +865,18 @@ function getImagePath(key) {
   return `images/${sous}/${nom}.webp`;
 }
 
+// Miniature 400px (générée au build) pour les CARTES — bien plus légère que
+// l'image pleine. Repli automatique sur l'image pleine via onerror (utile en
+// dev où thumbs/ n'existe pas, ou si une miniature manque). Les fiches, elles,
+// utilisent getImagePath (pleine résolution).
+function getThumbPath(key) {
+  return getImagePath(key).replace(/^images\//, "thumbs/");
+}
+// onerror prêt à l'emploi : miniature → image pleine → masquage.
+function imgCarteOnerror(key) {
+  return "if(this.src.indexOf('thumbs/')>-1){this.src='" + getImagePath(key) + "'}else{this.style.display='none'}";
+}
+
 function miniCarteFetiche(key, count) {
   if (!key || !recettes[key]) return "";
   const r    = recettes[key];
@@ -877,7 +889,7 @@ function miniCarteFetiche(key, count) {
   const label = count >= 4 ? "Plat fétiche" : "Favori du foyer";
   const badgeFreq = `<span class="mini-carte-saison" style="background:rgba(255,140,0,.75)" title="${label} — ${count} fois">${emoji}${count}</span>`;
   return `<div class="mini-carte" onclick="ouvrirFiche('${key}','')">
-    <img loading="lazy" decoding="async" src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
+    <img loading="lazy" decoding="async" src="${getThumbPath(key)}" alt="${nom}" onerror="${imgCarteOnerror(key)}">
     ${badgeFam}
     ${badgeFreq}
     <div class="mini-carte-info">
@@ -1185,7 +1197,7 @@ function miniCarte(key, raisonHTML, opts) {
   const badgeNote = (typeof noteCommunauteBadgeHTML === "function") ? noteCommunauteBadgeHTML(key, "mini") : "";
 
   return `<div class="mini-carte" style="${styleAlerte}" title="${titleAlerte}" onclick="ouvrirFiche('${key}','')">
-    <img loading="lazy" decoding="async" src="${getImagePath(key)}" alt="${nom}" onerror="this.style.display='none'">
+    <img loading="lazy" decoding="async" src="${getThumbPath(key)}" alt="${nom}" onerror="${imgCarteOnerror(key)}">
     ${badgeNutri}
     ${badgeNouveau}
     ${badgeFam}
