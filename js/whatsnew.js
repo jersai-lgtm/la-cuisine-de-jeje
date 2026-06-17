@@ -12,7 +12,7 @@ const QUOI_DE_NEUF = [
   {
     v: "1.11.2",
     titre: "🍽️ Menus modulables repas par repas",
-    texte: "Ton planning de la semaine devient sur-mesure ! Sur chaque repas : un sélecteur 👥 pour le nombre de convives (lundi midi seul à 1, mardi soir à 4…), et un bouton ⚙️ pour le passer en simple ou en complet (entrée/plat/dessert), le remplacer ou le retirer. La liste de courses cumule automatiquement les bonnes portions. À toi de composer ta semaine ! 👨‍🍳"
+    texte: "Ton planning de la semaine devient sur-mesure ! Dès le formulaire, le bouton « ⚙️ Personnaliser par repas » te laisse choisir, pour chaque jour, si Midi et Soir sont absents, simples (1 plat) ou complets (entrée/plat/dessert). Et sur le planning : un sélecteur 👥 par repas pour le nombre de convives (lundi midi seul à 1, mardi soir à 4…) et un ⚙️ pour changer son format, le remplacer ou le retirer. La liste de courses cumule automatiquement les bonnes portions. À toi de composer ta semaine ! 👨‍🍳"
   },
   {
     v: "1.11.0",
