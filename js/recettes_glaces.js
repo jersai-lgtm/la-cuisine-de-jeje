@@ -744,4 +744,35 @@ Object.assign(recettes, {
       { icone: "🥄", titre: "Servir", detail: "Servir aussitôt en verrines givrées.", badge: null }
     ]
   },
+  frozenyogurt: {
+    nom: "Frozen yogurt", cat: "glaces", pays: "usa", dateAjout: "2026-06-17T10:00:00",
+    base: 4, temps: "10 min + congélation", niveau: "⭐ Facile", emoji: "🍦",
+    description: "L'alternative légère et acidulée à la glace : un yaourt grec onctueux glacé aux fruits rouges. Plus frais et moins sucré qu'une crème glacée.",
+    saisons: ["ete"],
+    ingredients: {},
+    tableauFrozenYogurt: [
+      { nb: 1, yaourtgrec: "125 g", sucreglace: "20 g", miel: "10 g", citron: "5 ml", fraise: "38 g" },
+      { nb: 2, yaourtgrec: "250 g", sucreglace: "40 g", miel: "20 g", citron: "10 ml", fraise: "75 g" },
+      { nb: 3, yaourtgrec: "375 g", sucreglace: "60 g", miel: "30 g", citron: "15 ml", fraise: "113 g" },
+      { nb: 4, yaourtgrec: "500 g", sucreglace: "80 g", miel: "40 g", citron: "20 ml", fraise: "150 g" },
+      { nb: 5, yaourtgrec: "625 g", sucreglace: "100 g", miel: "50 g", citron: "25 ml", fraise: "188 g" },
+      { nb: 6, yaourtgrec: "750 g", sucreglace: "120 g", miel: "60 g", citron: "30 ml", fraise: "225 g" },
+      { nb: 7, yaourtgrec: "875 g", sucreglace: "140 g", miel: "70 g", citron: "35 ml", fraise: "263 g" },
+      { nb: 8, yaourtgrec: "1000 g", sucreglace: "160 g", miel: "80 g", citron: "40 ml", fraise: "300 g" },
+      { nb: 9, yaourtgrec: "1125 g", sucreglace: "180 g", miel: "90 g", citron: "45 ml", fraise: "338 g" },
+      { nb: 10, yaourtgrec: "1250 g", sucreglace: "200 g", miel: "100 g", citron: "50 ml", fraise: "375 g" },
+      { nb: 11, yaourtgrec: "1375 g", sucreglace: "220 g", miel: "110 g", citron: "55 ml", fraise: "413 g" },
+      { nb: 12, yaourtgrec: "1500 g", sucreglace: "240 g", miel: "120 g", citron: "60 ml", fraise: "450 g" },
+      { nb: 13, yaourtgrec: "1625 g", sucreglace: "260 g", miel: "130 g", citron: "65 ml", fraise: "488 g" },
+      { nb: 14, yaourtgrec: "1750 g", sucreglace: "280 g", miel: "140 g", citron: "70 ml", fraise: "525 g" },
+      { nb: 15, yaourtgrec: "1875 g", sucreglace: "300 g", miel: "150 g", citron: "75 ml", fraise: "563 g" }
+    ],
+    etapes: [
+      { icone: "🥣", titre: "Mélanger", detail: "Fouetter le yaourt grec avec le sucre glace, le miel et le jus de citron.", badge: null },
+      { icone: "🍓", titre: "Fruits", detail: "Incorporer les fruits rouges, écrasés ou entiers selon l'envie.", badge: null },
+      { icone: "🧊", titre: "Turbiner", detail: "Verser en sorbetière jusqu'à une texture crémeuse, ou placer au congélateur.", badge: "⏱ 30 min" },
+      { icone: "🥄", titre: "Lisser", detail: "Sans sorbetière, mélanger toutes les 30 min pour éviter les cristaux.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Servir en boules, légèrement souple, avec quelques fruits frais.", badge: null }
+    ]
+  },
 });

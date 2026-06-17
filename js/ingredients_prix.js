@@ -1128,6 +1128,8 @@ if (typeof module !== "undefined") {
 // ============================================================
 // Mapping des clés de colonnes vers labels affichables
 const INGREDIENTS_LABELS = {
+  clougirofle: "🟤 Clou de girofle", crevette: "🦐 Crevettes", saucetartare: "🥣 Sauce tartare",
+  blancoeuf: "🥚 Blanc d'œuf", macarons: "🌈 Macarons", yaourtgrec: "🥛 Yaourt grec", panko: "🍞 Chapelure panko",
   champignon: "🍄 Champignons", potimarron: "🎃 Potimarron",
   painmie: "🍞 Pain de mie", poireau: "🥬 Poireau",
   // == v257 — Muffins & Pâtisserie ==
