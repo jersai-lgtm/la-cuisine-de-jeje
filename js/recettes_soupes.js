@@ -4,6 +4,69 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  soupefroideconcombre: {
+    nom: "Soupe froide de concombre", cat: "soupes", pays: "grece", dateAjout: "2026-06-17T14:00:00",
+    base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🍵",
+    description: "Une soupe glacée ultra-rafraîchissante : concombre, yaourt grec, ail, menthe et huile d'olive, mixés en velouté. Parfaite par grosse chaleur.",
+    saisons: ["ete"],
+    liees: [],
+    ingredients: {},
+    tableauSoupefroideconcombre: [
+      { nb: 1, concombre: "200 g", yaourtgrec: "60 g", ail: "3 g", menthe: "3 g", huileolive: "5 ml", citron: "5 g" },
+      { nb: 2, concombre: "400 g", yaourtgrec: "120 g", ail: "6 g", menthe: "6 g", huileolive: "10 ml", citron: "10 g" },
+      { nb: 3, concombre: "600 g", yaourtgrec: "180 g", ail: "9 g", menthe: "9 g", huileolive: "15 ml", citron: "15 g" },
+      { nb: 4, concombre: "800 g", yaourtgrec: "240 g", ail: "12 g", menthe: "12 g", huileolive: "20 ml", citron: "20 g" },
+      { nb: 5, concombre: "1000 g", yaourtgrec: "300 g", ail: "15 g", menthe: "15 g", huileolive: "25 ml", citron: "25 g" },
+      { nb: 6, concombre: "1200 g", yaourtgrec: "360 g", ail: "18 g", menthe: "18 g", huileolive: "30 ml", citron: "30 g" },
+      { nb: 7, concombre: "1400 g", yaourtgrec: "420 g", ail: "21 g", menthe: "21 g", huileolive: "35 ml", citron: "35 g" },
+      { nb: 8, concombre: "1600 g", yaourtgrec: "480 g", ail: "24 g", menthe: "24 g", huileolive: "40 ml", citron: "40 g" },
+      { nb: 9, concombre: "1800 g", yaourtgrec: "540 g", ail: "27 g", menthe: "27 g", huileolive: "45 ml", citron: "45 g" },
+      { nb: 10, concombre: "2000 g", yaourtgrec: "600 g", ail: "30 g", menthe: "30 g", huileolive: "50 ml", citron: "50 g" },
+      { nb: 11, concombre: "2200 g", yaourtgrec: "660 g", ail: "33 g", menthe: "33 g", huileolive: "55 ml", citron: "55 g" },
+      { nb: 12, concombre: "2400 g", yaourtgrec: "720 g", ail: "36 g", menthe: "36 g", huileolive: "60 ml", citron: "60 g" },
+      { nb: 13, concombre: "2600 g", yaourtgrec: "780 g", ail: "39 g", menthe: "39 g", huileolive: "65 ml", citron: "65 g" },
+      { nb: 14, concombre: "2800 g", yaourtgrec: "840 g", ail: "42 g", menthe: "42 g", huileolive: "70 ml", citron: "70 g" },
+      { nb: 15, concombre: "3000 g", yaourtgrec: "900 g", ail: "45 g", menthe: "45 g", huileolive: "75 ml", citron: "75 g" }
+    ],
+    etapes: [
+      { icone: "🥒", titre: "Préparer", detail: "Éplucher et couper grossièrement les concombres.", badge: "⏱ 6 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer concombre, yaourt grec, ail, menthe, huile et citron jusqu'à un velouté lisse.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer, rectifier l'acidité au citron.", badge: null },
+      { icone: "❄️", titre: "Réserver au froid", detail: "Réserver au moins 1 h au réfrigérateur. Servir bien glacé.", badge: "💡 Glacé" }
+    ]
+  },
+  veloutepetitspois: {
+    nom: "Velouté de petits pois", cat: "soupes", pays: "france", dateAjout: "2026-06-17T14:00:00",
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🟢",
+    description: "Un velouté vert tendre et soyeux : petits pois, échalote et une touche de crème, relevé de menthe. Frais au printemps, doux toute l'année.",
+    saisons: ["printemps","ete"],
+    liees: [],
+    ingredients: {},
+    tableauVeloutepetitspois: [
+      { nb: 1, petitspois: "150 g", echalote: "30 g", bouillon: "250 ml", creme: "30 ml", beurre: "8 g", menthe: "2 g" },
+      { nb: 2, petitspois: "300 g", echalote: "60 g", bouillon: "500 ml", creme: "60 ml", beurre: "16 g", menthe: "4 g" },
+      { nb: 3, petitspois: "450 g", echalote: "90 g", bouillon: "750 ml", creme: "90 ml", beurre: "24 g", menthe: "6 g" },
+      { nb: 4, petitspois: "600 g", echalote: "120 g", bouillon: "1000 ml", creme: "120 ml", beurre: "32 g", menthe: "8 g" },
+      { nb: 5, petitspois: "750 g", echalote: "150 g", bouillon: "1250 ml", creme: "150 ml", beurre: "40 g", menthe: "10 g" },
+      { nb: 6, petitspois: "900 g", echalote: "180 g", bouillon: "1500 ml", creme: "180 ml", beurre: "48 g", menthe: "12 g" },
+      { nb: 7, petitspois: "1050 g", echalote: "210 g", bouillon: "1750 ml", creme: "210 ml", beurre: "56 g", menthe: "14 g" },
+      { nb: 8, petitspois: "1200 g", echalote: "240 g", bouillon: "2000 ml", creme: "240 ml", beurre: "64 g", menthe: "16 g" },
+      { nb: 9, petitspois: "1350 g", echalote: "270 g", bouillon: "2250 ml", creme: "270 ml", beurre: "72 g", menthe: "18 g" },
+      { nb: 10, petitspois: "1500 g", echalote: "300 g", bouillon: "2500 ml", creme: "300 ml", beurre: "80 g", menthe: "20 g" },
+      { nb: 11, petitspois: "1650 g", echalote: "330 g", bouillon: "2750 ml", creme: "330 ml", beurre: "88 g", menthe: "22 g" },
+      { nb: 12, petitspois: "1800 g", echalote: "360 g", bouillon: "3000 ml", creme: "360 ml", beurre: "96 g", menthe: "24 g" },
+      { nb: 13, petitspois: "1950 g", echalote: "390 g", bouillon: "3250 ml", creme: "390 ml", beurre: "104 g", menthe: "26 g" },
+      { nb: 14, petitspois: "2100 g", echalote: "420 g", bouillon: "3500 ml", creme: "420 ml", beurre: "112 g", menthe: "28 g" },
+      { nb: 15, petitspois: "2250 g", echalote: "450 g", bouillon: "3750 ml", creme: "450 ml", beurre: "120 g", menthe: "30 g" }
+    ],
+    etapes: [
+      { icone: "🧅", titre: "Faire suer", detail: "Faire suer l'échalote émincée dans le beurre, sans coloration.", badge: "⏱ 5 min" },
+      { icone: "🟢", titre: "Cuire les pois", detail: "Ajouter les petits pois et le bouillon, laisser mijoter 12 min.", badge: "⏱ 12 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement, ajouter la crème et la menthe, mixer à nouveau.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Saler, poivrer. Passer au chinois pour un velouté ultra-lisse (facultatif).", badge: null },
+      { icone: "🍵", titre: "Servir", detail: "Servir chaud, ou bien frais en été, avec un filet de crème.", badge: "💡 Chaud ou froid" }
+    ]
+  },
   soupeaoignon: {
     nom: "Soupe à l'Oignon",
     cat: "soupes", saisons: ["hiver","automne"], pays: "france",

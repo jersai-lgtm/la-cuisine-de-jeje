@@ -4,6 +4,38 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  panbagnat: {
+    nom: "Pan-bagnat", cat: "encas", pays: "france", dateAjout: "2026-06-17T14:00:00",
+    base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🥪",
+    description: "Le sandwich niçois qui sent les vacances : pain rond imbibé d'huile d'olive, thon, œuf, tomate, poivron, olives et anchois. À préparer à l'avance.",
+    saisons: ["ete"],
+    liees: [],
+    ingredients: {},
+    tableauPanbagnat: [
+      { nb: 1, pain: "100 g", thon: "40 g", oeuf: "50 g", tomate: "60 g", poivron: "30 g", oignon: "20 g", olivenoire: "15 g", huileolive: "8 ml", anchois: "5 g" },
+      { nb: 2, pain: "200 g", thon: "80 g", oeuf: "100 g", tomate: "120 g", poivron: "60 g", oignon: "40 g", olivenoire: "30 g", huileolive: "16 ml", anchois: "10 g" },
+      { nb: 3, pain: "300 g", thon: "120 g", oeuf: "150 g", tomate: "180 g", poivron: "90 g", oignon: "60 g", olivenoire: "45 g", huileolive: "24 ml", anchois: "15 g" },
+      { nb: 4, pain: "400 g", thon: "160 g", oeuf: "200 g", tomate: "240 g", poivron: "120 g", oignon: "80 g", olivenoire: "60 g", huileolive: "32 ml", anchois: "20 g" },
+      { nb: 5, pain: "500 g", thon: "200 g", oeuf: "250 g", tomate: "300 g", poivron: "150 g", oignon: "100 g", olivenoire: "75 g", huileolive: "40 ml", anchois: "25 g" },
+      { nb: 6, pain: "600 g", thon: "240 g", oeuf: "300 g", tomate: "360 g", poivron: "180 g", oignon: "120 g", olivenoire: "90 g", huileolive: "48 ml", anchois: "30 g" },
+      { nb: 7, pain: "700 g", thon: "280 g", oeuf: "350 g", tomate: "420 g", poivron: "210 g", oignon: "140 g", olivenoire: "105 g", huileolive: "56 ml", anchois: "35 g" },
+      { nb: 8, pain: "800 g", thon: "320 g", oeuf: "400 g", tomate: "480 g", poivron: "240 g", oignon: "160 g", olivenoire: "120 g", huileolive: "64 ml", anchois: "40 g" },
+      { nb: 9, pain: "900 g", thon: "360 g", oeuf: "450 g", tomate: "540 g", poivron: "270 g", oignon: "180 g", olivenoire: "135 g", huileolive: "72 ml", anchois: "45 g" },
+      { nb: 10, pain: "1000 g", thon: "400 g", oeuf: "500 g", tomate: "600 g", poivron: "300 g", oignon: "200 g", olivenoire: "150 g", huileolive: "80 ml", anchois: "50 g" },
+      { nb: 11, pain: "1100 g", thon: "440 g", oeuf: "550 g", tomate: "660 g", poivron: "330 g", oignon: "220 g", olivenoire: "165 g", huileolive: "88 ml", anchois: "55 g" },
+      { nb: 12, pain: "1200 g", thon: "480 g", oeuf: "600 g", tomate: "720 g", poivron: "360 g", oignon: "240 g", olivenoire: "180 g", huileolive: "96 ml", anchois: "60 g" },
+      { nb: 13, pain: "1300 g", thon: "520 g", oeuf: "650 g", tomate: "780 g", poivron: "390 g", oignon: "260 g", olivenoire: "195 g", huileolive: "104 ml", anchois: "65 g" },
+      { nb: 14, pain: "1400 g", thon: "560 g", oeuf: "700 g", tomate: "840 g", poivron: "420 g", oignon: "280 g", olivenoire: "210 g", huileolive: "112 ml", anchois: "70 g" },
+      { nb: 15, pain: "1500 g", thon: "600 g", oeuf: "750 g", tomate: "900 g", poivron: "450 g", oignon: "300 g", olivenoire: "225 g", huileolive: "120 ml", anchois: "75 g" }
+    ],
+    etapes: [
+      { icone: "🥚", titre: "Cuire les œufs", detail: "Cuire les œufs durs 9 min, les écaler et les couper en rondelles.", badge: "⏱ 9 min" },
+      { icone: "🍅", titre: "Préparer la garniture", detail: "Émincer tomate, poivron et oignon, égoutter le thon.", badge: null },
+      { icone: "🥖", titre: "Imbiber le pain", detail: "Couper les pains ronds en deux, arroser la mie d'huile d'olive.", badge: null },
+      { icone: "🥪", titre: "Garnir", detail: "Garnir de thon, œuf, tomate, poivron, oignon, olives et anchois.", badge: null },
+      { icone: "⏲️", titre: "Presser", detail: "Refermer, emballer et presser 30 min au frais : le pain s'imbibe et tout se tient.", badge: "💡 À l'avance" }
+    ]
+  },
   naan: {
     nom: "Naans",
     cat: "encas", pays: "inde",

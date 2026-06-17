@@ -22,6 +22,7 @@
 
 const INGREDIENTS_PRIX = {
   potimarron:    { prixKg: 2.20, calPer100g: 32, lipSat: 0.1, sucre: 4, sel: 0, fibres: 2.2, prot: 1.4, flv: 100 },
+  epinard:       { prixKg: 3.00, calPer100g: 23, lipSat: 0.1, sucre: 0.4, sel: 0.08, fibres: 2.2, prot: 2.9, flv: 100 },
   // ===== BASES =====
   sel:           { prixKg: 0.85, calPer100g: 0,    lipSat: 0,    sucre: 0,    sel: 100,  fibres: 0,   prot: 0,    flv: 0 },
   huile:         { prixKg: 4.50, calPer100g: 884,  lipSat: 14,   sucre: 0,    sel: 0,    fibres: 0,   prot: 0,    flv: 0 },
@@ -1131,6 +1132,7 @@ const INGREDIENTS_LABELS = {
   clougirofle: "🟤 Clou de girofle", crevette: "🦐 Crevettes", saucetartare: "🥣 Sauce tartare",
   blancoeuf: "🥚 Blanc d'œuf", macarons: "🌈 Macarons", yaourtgrec: "🥛 Yaourt grec", panko: "🍞 Chapelure panko",
   champignon: "🍄 Champignons", potimarron: "🎃 Potimarron",
+  epinard: "🥬 Épinards", olivenoire: "🫒 Olives noires",
   painmie: "🍞 Pain de mie", poireau: "🥬 Poireau",
   // == v257 — Muffins & Pâtisserie ==
   chocolatBlanc: "🤍 Chocolat blanc", chocolatLait: "🍫 Chocolat au lait",

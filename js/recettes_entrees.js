@@ -4,6 +4,68 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  carottesrapees: {
+    nom: "Carottes râpées", cat: "entrees", pays: "france", dateAjout: "2026-06-17T14:00:00",
+    base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🥕",
+    description: "L'entrée fraîcheur indémodable : carottes finement râpées, vinaigrette légère au citron et persil. Croquante, vitaminée et prête en 15 minutes.",
+    saisons: ["printemps","ete"],
+    liees: [],
+    ingredients: {},
+    tableauCarottesrapees: [
+      { nb: 1, carotte: "120 g", citron: "10 g", huileolive: "8 ml", persil: "3 g", sucre: "2 g" },
+      { nb: 2, carotte: "240 g", citron: "20 g", huileolive: "16 ml", persil: "6 g", sucre: "4 g" },
+      { nb: 3, carotte: "360 g", citron: "30 g", huileolive: "24 ml", persil: "9 g", sucre: "6 g" },
+      { nb: 4, carotte: "480 g", citron: "40 g", huileolive: "32 ml", persil: "12 g", sucre: "8 g" },
+      { nb: 5, carotte: "600 g", citron: "50 g", huileolive: "40 ml", persil: "15 g", sucre: "10 g" },
+      { nb: 6, carotte: "720 g", citron: "60 g", huileolive: "48 ml", persil: "18 g", sucre: "12 g" },
+      { nb: 7, carotte: "840 g", citron: "70 g", huileolive: "56 ml", persil: "21 g", sucre: "14 g" },
+      { nb: 8, carotte: "960 g", citron: "80 g", huileolive: "64 ml", persil: "24 g", sucre: "16 g" },
+      { nb: 9, carotte: "1080 g", citron: "90 g", huileolive: "72 ml", persil: "27 g", sucre: "18 g" },
+      { nb: 10, carotte: "1200 g", citron: "100 g", huileolive: "80 ml", persil: "30 g", sucre: "20 g" },
+      { nb: 11, carotte: "1320 g", citron: "110 g", huileolive: "88 ml", persil: "33 g", sucre: "22 g" },
+      { nb: 12, carotte: "1440 g", citron: "120 g", huileolive: "96 ml", persil: "36 g", sucre: "24 g" },
+      { nb: 13, carotte: "1560 g", citron: "130 g", huileolive: "104 ml", persil: "39 g", sucre: "26 g" },
+      { nb: 14, carotte: "1680 g", citron: "140 g", huileolive: "112 ml", persil: "42 g", sucre: "28 g" },
+      { nb: 15, carotte: "1800 g", citron: "150 g", huileolive: "120 ml", persil: "45 g", sucre: "30 g" }
+    ],
+    etapes: [
+      { icone: "🥕", titre: "Râper", detail: "Éplucher et râper finement les carottes.", badge: "⏱ 8 min" },
+      { icone: "🍋", titre: "Vinaigrette", detail: "Mélanger jus de citron, huile d'olive, une pincée de sucre, sel et poivre.", badge: null },
+      { icone: "🥗", titre: "Assaisonner", detail: "Verser la vinaigrette sur les carottes et bien mélanger.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Parsemer de persil ciselé. Laisser reposer 15 min au frais.", badge: "💡 Frais" }
+    ]
+  },
+  saladmelonfeta: {
+    nom: "Salade melon-feta", cat: "entrees", pays: "grece", dateAjout: "2026-06-17T14:00:00",
+    base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🍈",
+    description: "Le sucré-salé parfait de l'été : billes de melon juteux, feta crémeuse, menthe fraîche et filet d'huile d'olive. Rafraîchissant et addictif.",
+    saisons: ["ete"],
+    liees: [],
+    ingredients: {},
+    tableauSaladmelonfeta: [
+      { nb: 1, melon: "200 g", feta: "40 g", menthe: "2 g", huileolive: "6 ml", citron: "5 g" },
+      { nb: 2, melon: "400 g", feta: "80 g", menthe: "4 g", huileolive: "12 ml", citron: "10 g" },
+      { nb: 3, melon: "600 g", feta: "120 g", menthe: "6 g", huileolive: "18 ml", citron: "15 g" },
+      { nb: 4, melon: "800 g", feta: "160 g", menthe: "8 g", huileolive: "24 ml", citron: "20 g" },
+      { nb: 5, melon: "1000 g", feta: "200 g", menthe: "10 g", huileolive: "30 ml", citron: "25 g" },
+      { nb: 6, melon: "1200 g", feta: "240 g", menthe: "12 g", huileolive: "36 ml", citron: "30 g" },
+      { nb: 7, melon: "1400 g", feta: "280 g", menthe: "14 g", huileolive: "42 ml", citron: "35 g" },
+      { nb: 8, melon: "1600 g", feta: "320 g", menthe: "16 g", huileolive: "48 ml", citron: "40 g" },
+      { nb: 9, melon: "1800 g", feta: "360 g", menthe: "18 g", huileolive: "54 ml", citron: "45 g" },
+      { nb: 10, melon: "2000 g", feta: "400 g", menthe: "20 g", huileolive: "60 ml", citron: "50 g" },
+      { nb: 11, melon: "2200 g", feta: "440 g", menthe: "22 g", huileolive: "66 ml", citron: "55 g" },
+      { nb: 12, melon: "2400 g", feta: "480 g", menthe: "24 g", huileolive: "72 ml", citron: "60 g" },
+      { nb: 13, melon: "2600 g", feta: "520 g", menthe: "26 g", huileolive: "78 ml", citron: "65 g" },
+      { nb: 14, melon: "2800 g", feta: "560 g", menthe: "28 g", huileolive: "84 ml", citron: "70 g" },
+      { nb: 15, melon: "3000 g", feta: "600 g", menthe: "30 g", huileolive: "90 ml", citron: "75 g" }
+    ],
+    etapes: [
+      { icone: "🍈", titre: "Préparer le melon", detail: "Couper le melon en billes ou en cubes, retirer les pépins.", badge: "⏱ 8 min" },
+      { icone: "🧀", titre: "Émietter la feta", detail: "Couper ou émietter la feta en dés.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mélanger melon et feta, arroser d'huile d'olive et d'un trait de citron.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Parsemer de menthe ciselée, un tour de moulin à poivre. Servir bien frais.", badge: "💡 Frais" }
+    ]
+  },
   foiegraspoele: {
     nom: "Foie Gras Poêlé aux Pommes",
     cat: "entrees", pays: "france",

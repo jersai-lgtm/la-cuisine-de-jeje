@@ -4,6 +4,38 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  cakecitron: {
+    nom: "Cake au citron", cat: "boulangerie", pays: "france", dateAjout: "2026-06-17T14:00:00",
+    base: 8, temps: "1 h", niveau: "⭐ Facile", emoji: "🍋",
+    description: "Un cake moelleux et acidulé, parfumé au zeste de citron et lustré d'un glaçage. Parfait pour le goûter ou le brunch.",
+    saisons: [],
+    liees: ["tartecitron"],
+    ingredients: {},
+    tableauCakecitron: [
+      { nb: 1, farine: "25 g", oeuf: "25 g", sucre: "22 g", beurre: "20 g", citron: "20 g", yaourt: "12 g", levurechimique: "1 g" },
+      { nb: 2, farine: "50 g", oeuf: "50 g", sucre: "44 g", beurre: "40 g", citron: "40 g", yaourt: "24 g", levurechimique: "2 g" },
+      { nb: 3, farine: "75 g", oeuf: "75 g", sucre: "66 g", beurre: "60 g", citron: "60 g", yaourt: "36 g", levurechimique: "3 g" },
+      { nb: 4, farine: "100 g", oeuf: "100 g", sucre: "88 g", beurre: "80 g", citron: "80 g", yaourt: "48 g", levurechimique: "4 g" },
+      { nb: 5, farine: "125 g", oeuf: "125 g", sucre: "110 g", beurre: "100 g", citron: "100 g", yaourt: "60 g", levurechimique: "5 g" },
+      { nb: 6, farine: "150 g", oeuf: "150 g", sucre: "132 g", beurre: "120 g", citron: "120 g", yaourt: "72 g", levurechimique: "6 g" },
+      { nb: 7, farine: "175 g", oeuf: "175 g", sucre: "154 g", beurre: "140 g", citron: "140 g", yaourt: "84 g", levurechimique: "7 g" },
+      { nb: 8, farine: "200 g", oeuf: "200 g", sucre: "176 g", beurre: "160 g", citron: "160 g", yaourt: "96 g", levurechimique: "8 g" },
+      { nb: 9, farine: "225 g", oeuf: "225 g", sucre: "198 g", beurre: "180 g", citron: "180 g", yaourt: "108 g", levurechimique: "9 g" },
+      { nb: 10, farine: "250 g", oeuf: "250 g", sucre: "220 g", beurre: "200 g", citron: "200 g", yaourt: "120 g", levurechimique: "10 g" },
+      { nb: 11, farine: "275 g", oeuf: "275 g", sucre: "242 g", beurre: "220 g", citron: "220 g", yaourt: "132 g", levurechimique: "11 g" },
+      { nb: 12, farine: "300 g", oeuf: "300 g", sucre: "264 g", beurre: "240 g", citron: "240 g", yaourt: "144 g", levurechimique: "12 g" },
+      { nb: 13, farine: "325 g", oeuf: "325 g", sucre: "286 g", beurre: "260 g", citron: "260 g", yaourt: "156 g", levurechimique: "13 g" },
+      { nb: 14, farine: "350 g", oeuf: "350 g", sucre: "308 g", beurre: "280 g", citron: "280 g", yaourt: "168 g", levurechimique: "14 g" },
+      { nb: 15, farine: "375 g", oeuf: "375 g", sucre: "330 g", beurre: "300 g", citron: "300 g", yaourt: "180 g", levurechimique: "15 g" }
+    ],
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 170°C, beurrer un moule à cake.", badge: "⏱ 5 min" },
+      { icone: "🍋", titre: "Parfumer", detail: "Prélever le zeste des citrons et presser le jus.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Fouetter œufs et sucre, ajouter yaourt, beurre fondu, zeste et jus de citron.", badge: null },
+      { icone: "🌾", titre: "Incorporer", detail: "Ajouter farine et levure tamisées, mélanger sans trop travailler.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Verser dans le moule, enfourner 40-45 min. Glacer avec sucre glace + jus de citron.", badge: "⏱ 45 min" }
+    ]
+  },
   pizza: {
     nom: "Pâte à pizza",
     cat: "boulangerie", pays: "italie",
