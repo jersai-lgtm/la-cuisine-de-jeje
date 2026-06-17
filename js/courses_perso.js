@@ -61,7 +61,7 @@
     z.innerHTML = `<div class="lc-rayon">
       <h4 class="lc-rayon-titre">🧺 Mes articles${perso.length ? ` <span class="lc-rayon-count">${perso.length}</span>` : ""}</h4>
       <div class="lc-perso-add">
-        <input type="text" id="lc-perso-input" maxlength="60" placeholder="Sopalin, couches, papier toilette…" aria-label="Ajouter un article à ma liste"
+        <input type="text" id="lc-perso-input" maxlength="60" placeholder="Ajoute tes propres courses…" aria-label="Ajouter un article à ma liste"
                onkeydown="if(event.key==='Enter'){event.preventDefault();lcAjouterArticlePerso();}">
         <button type="button" onclick="lcAjouterArticlePerso()" aria-label="Ajouter l'article">➕</button>
       </div>
