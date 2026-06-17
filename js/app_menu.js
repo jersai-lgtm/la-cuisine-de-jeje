@@ -1623,7 +1623,10 @@ function htmlBilanSemaine(menus, personnes) {
   const jours = (menus.semaine && menus.semaine.length) || 1;
   const pers = personnes || 1;
   const kcalJour = nCal ? Math.round(calP / jours) : null;
-  const coutTotal = coutP * pers;
+  // Coût total : tient compte du nb de personnes PAR repas (Phase A)
+  let coutTotal = 0;
+  const persParCleBilan = _clesMenuAvecPers(menus, pers);
+  Object.keys(persParCleBilan).forEach(k => { const mm = _metriqueRecetteBilan(k); if (mm && mm.cout != null) coutTotal += mm.cout * persParCleBilan[k]; });
   const MAPN = { A: 1, B: 2, C: 3, D: 4, E: 5 }, INV = ["", "A", "B", "C", "D", "E"];
   let moy = null;
   if (nNutri) { let s = 0; Object.keys(nc).forEach(l => s += MAPN[l] * nc[l]); moy = INV[Math.round(s / nNutri)] || null; }
@@ -1651,10 +1654,40 @@ function htmlBilanSemaine(menus, personnes) {
   return '<div class="plan-bilan"><div class="plan-bilan-titre">📊 Bilan de la semaine</div><div class="plan-bilan-grid">' + cases.join("") + '</div>' + detail + '</div>';
 }
 
+// Nombre de personnes PAR repas (Phase A) — map parallèle menus._pers["Jour-moment"].
+// Par défaut = le nombre global. Permet "lundi midi seul à 1, mardi soir à 4".
+function changerPersRepas(jn, m, delta) {
+  const menus = window._derniersMenus;
+  if (!menus) return;
+  menus._pers = menus._pers || {};
+  const cur = menus._pers[jn + "-" + m] || (menus.personnes || 4);
+  menus._pers[jn + "-" + m] = Math.max(1, Math.min(20, cur + delta));
+  afficherMenusSemaine(menus, menus.personnes || 4);
+}
+window.changerPersRepas = changerPersRepas;
+
 function afficherMenusSemaine(menus, personnes) {
   const container = document.getElementById("plan-jours");
   container.innerHTML = "";
   const isComplet = window._formatRepas === "complet";
+
+  // Phase A : nb de personnes par repas
+  menus._pers = menus._pers || {};
+  const persDe = (jn, m) => menus._pers[jn + "-" + m] || personnes;
+  const stepperPers = (jn, m) => '<span class="repas-pers" onclick="event.stopPropagation()">' +
+    '<button type="button" class="repas-pers-btn" onclick="event.stopPropagation();changerPersRepas(\'' + jn + '\',\'' + m + '\',-1)" aria-label="Moins de convives">−</button>' +
+    '<span class="repas-pers-n">👥 ' + persDe(jn, m) + '</span>' +
+    '<button type="button" class="repas-pers-btn" onclick="event.stopPropagation();changerPersRepas(\'' + jn + '\',\'' + m + '\',1)" aria-label="Plus de convives">+</button></span>';
+  if (!document.getElementById("repas-pers-style")) {
+    const st = document.createElement("style");
+    st.id = "repas-pers-style";
+    st.textContent =
+      ".repas-pers{display:inline-flex;align-items:center;gap:5px;margin-left:6px;vertical-align:middle}" +
+      ".repas-pers-btn{width:21px;height:21px;border:none;border-radius:50%;background:rgba(255,255,255,.13);color:#fff;font-size:14px;line-height:1;cursor:pointer;padding:0;display:inline-flex;align-items:center;justify-content:center}" +
+      ".repas-pers-btn:hover{background:var(--accent,#ff4d88)}" +
+      ".repas-pers-n{font-size:12px;color:#e7e4ec;min-width:30px;text-align:center;font-weight:600}";
+    document.head.appendChild(st);
+  }
 
   // Couleur par jour de la semaine
   const COULEURS_JOURS = {
@@ -1709,7 +1742,7 @@ function afficherMenusSemaine(menus, personnes) {
           const btn = `<button class="plan-regen-btn" onclick="event.stopPropagation();regenRepasSous('${jour.jour}','${moment}','${cleType}')" title="Remplacer ce plat">🔄</button>`;
           const btnCh = `<button class="plan-regen-btn" onclick="event.stopPropagation();maChoisir('${jour.jour}','${moment}','${cleType}')" title="Choisir une recette">🔍</button>`;
           const motif = lvl ? `<div class="plan-motif-famille" title="${tip}">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
-          return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${personnes})">
+          return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${persDe(jour.jour, moment)})">
             <span class="plan-sous-label">${icone} ${type} ${badge}${btn}${btnCh}</span>
             <span class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getThumbPath === "function" ? getThumbPath(key) : ""}" alt="" loading="lazy" onerror="if(this.src.indexOf('thumbs/')>-1){this.src='${typeof getImagePath === "function" ? getImagePath(key) : ""}'}else{this.closest('.plan-repas-visuel').classList.add('noimg')}"><span class="plan-repas-emoji-fallback">${getEmoji(key)}</span></span>
             <span class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[key]?.pays, 13) + " " : ""}${getNomRecette(key)}</span>
@@ -1719,7 +1752,7 @@ function afficherMenusSemaine(menus, personnes) {
           </div>`;
         };
         return `<div class="plan-repas-col">
-          <div class="plan-repas-label">${emoji} ${label}</div>
+          <div class="plan-repas-label">${emoji} ${label}${stepperPers(jour.jour, moment)}</div>
           ${genSous("Entrée", "🥗", r.entree, "entree")}
           ${genSous("Plat", "🍽️", r.plat, "plat")}
           ${genSous("Dessert", "🍰", r.dessert, "dessert")}
@@ -1761,8 +1794,8 @@ function afficherMenusSemaine(menus, personnes) {
       const motifM = lvlM ? `<div class="plan-motif-famille" title="${tipM}">${lvlM === "bebe" ? "🍼" : "🌶️"} ${raisonM}</div>` : "";
       const motifS = lvlS ? `<div class="plan-motif-famille" title="${tipS}">${lvlS === "bebe" ? "🍼" : "🌶️"} ${raisonS}</div>` : "";
 
-      const soirBlocHTML = jour.soir ? `<div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
-            <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}${chSoir}</div>
+      const soirBlocHTML = jour.soir ? `<div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${persDe(jour.jour, 'soir')})">
+            <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}${chSoir}${stepperPers(jour.jour, 'soir')}</div>
             <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getThumbPath === "function" ? getThumbPath(soir) : ""}" alt="" loading="lazy" onerror="if(this.src.indexOf('thumbs/')>-1){this.src='${typeof getImagePath === "function" ? getImagePath(soir) : ""}'}else{this.closest('.plan-repas-visuel').classList.add('noimg')}"><span class="plan-repas-emoji-fallback">${getEmoji(soir)}</span></div>
             <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[soir]?.pays, 13) + " " : ""}${getNomRecette(soir)}</div>
             <div class="plan-repas-note">${soirNote}</div>
@@ -1773,8 +1806,8 @@ function afficherMenusSemaine(menus, personnes) {
       div.innerHTML = `
         <h3 class="plan-jour-titre" style="color:${couleurJour}">${jour.jour}</h3>
         <div class="plan-repas-row"${jour.soir ? "" : ' style="grid-template-columns:1fr"'}>
-          <div class="plan-repas" style="${sMidi}" onclick="ouvrirRecettePlan('${midi}', ${personnes})">
-            <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}${chMidi}</div>
+          <div class="plan-repas" style="${sMidi}" onclick="ouvrirRecettePlan('${midi}', ${persDe(jour.jour, 'midi')})">
+            <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}${chMidi}${stepperPers(jour.jour, 'midi')}</div>
             <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getThumbPath === "function" ? getThumbPath(midi) : ""}" alt="" loading="lazy" onerror="if(this.src.indexOf('thumbs/')>-1){this.src='${typeof getImagePath === "function" ? getImagePath(midi) : ""}'}else{this.closest('.plan-repas-visuel').classList.add('noimg')}"><span class="plan-repas-emoji-fallback">${getEmoji(midi)}</span></div>
             <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[midi]?.pays, 13) + " " : ""}${getNomRecette(midi)}</div>
             <div class="plan-repas-note">${midiNote}</div>
@@ -2048,6 +2081,32 @@ function _collecterClesMenu(source, acc) {
   }
 }
 
+// Phase A : map recette -> total de personnes (cumule les répétitions, ex. midi 2 + soir 4 = 6),
+// en tenant compte du nombre de personnes PAR repas (source._pers).
+function _clesMenuAvecPers(source, persGlobal) {
+  const map = {};
+  const pers = (source && source._pers) || {};
+  const okRec = k => k && typeof recettes !== "undefined" && recettes[k];
+  if (source && Array.isArray(source.semaine)) {
+    source.semaine.forEach(jour => {
+      ["midi", "soir"].forEach(moment => {
+        const repas = jour && jour[moment];
+        if (!repas) return;
+        const p = pers[jour.jour + "-" + moment] || persGlobal;
+        const cles = [];
+        if (typeof repas === "string") cles.push(repas);
+        else if (repas.recette) cles.push(repas.recette);
+        else ["entree", "plat", "dessert"].forEach(c => { if (repas[c] && repas[c].recette) cles.push(repas[c].recette); });
+        cles.forEach(k => { if (okRec(k)) map[k] = (map[k] || 0) + p; });
+      });
+    });
+  }
+  if (source && Array.isArray(source.menu)) {
+    source.menu.forEach(it => { if (it && okRec(it.recette)) map[it.recette] = (map[it.recette] || 0) + persGlobal; });
+  }
+  return map;
+}
+
 // Ajoute toutes les recettes du menu courant (type "semaine" ou "thematique") à la liste de courses
 function ajouterMenuAuxCourses(type) {
   if (!window.currentUser) { if (typeof ouvrirModalAuth === "function") ouvrirModalAuth(); return; }
@@ -2064,15 +2123,16 @@ function ajouterMenuAuxCourses(type) {
   }
   if (!source) { if (typeof afficherToast === "function") afficherToast("Aucun menu à ajouter."); return; }
 
-  const cles = new Set();
-  _collecterClesMenu(source, cles);
-  if (cles.size === 0) { if (typeof afficherToast === "function") afficherToast("Aucune recette trouvée dans le menu."); return; }
+  // Phase A : cumul des personnes par recette (repas multiples → portions additionnées)
+  const persParCle = _clesMenuAvecPers(source, personnes);
+  const clesMenu = Object.keys(persParCle);
+  if (clesMenu.length === 0) { if (typeof afficherToast === "function") afficherToast("Aucune recette trouvée dans le menu."); return; }
 
   if (!window.userProfile.listeCourses) window.userProfile.listeCourses = [];
   let ajout = 0;
-  cles.forEach(cle => {
+  clesMenu.forEach(cle => {
     if (!window.userProfile.listeCourses.some(x => x.cle === cle)) {
-      window.userProfile.listeCourses.push({ cle, personnes });
+      window.userProfile.listeCourses.push({ cle, personnes: persParCle[cle] });
       ajout++;
     }
   });
