@@ -1578,6 +1578,79 @@ function regenRepasSous(jourNom, moment, type) {
   sauvegarderMenus(menus, personnes, menus.semaine.map(j => j.jour));
 }
 
+// === 📊 BILAN DE LA SEMAINE (calories / jour, coût total, équilibre Nutri) ===
+// Récupère toutes les clés de recettes d'un planning (midi/soir, simple OU
+// complet entrée/plat/dessert).
+function clesSemaine(menus) {
+  const keys = [];
+  (menus?.semaine || []).forEach(j => {
+    ["midi", "soir"].forEach(m => {
+      const r = j[m];
+      if (!r) return;
+      if (typeof r === "string") keys.push(r);
+      else if (r.recette) keys.push(r.recette);
+      else ["entree", "plat", "dessert"].forEach(s => { if (r[s] && r[s].recette) keys.push(r[s].recette); });
+    });
+  });
+  return keys;
+}
+// Métriques par personne d'une recette (calories, coût, Nutri) sur sa ligne de base.
+function _metriqueRecetteBilan(key) {
+  const r = (typeof recettes !== "undefined") ? recettes[key] : null;
+  if (!r) return null;
+  const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+  if (!tabKey) return null;
+  const base = r.base || 4;
+  const ligne = r[tabKey].find(l => l.nb === base || l.patons === base) || r[tabKey][0];
+  if (!ligne) return null;
+  let cal = null, cout = null, nutri = null;
+  try { if (typeof calculerPrixCaloriesRecette === "function") { const pc = calculerPrixCaloriesRecette(ligne); if (pc) { if (pc.cal != null) cal = pc.cal / base; if (pc.prix != null) cout = pc.prix / base; } } } catch (e) {}
+  try { if (typeof calculerNutriScoreRecette === "function") { const ns = calculerNutriScoreRecette(ligne); if (ns && ns.lettre) nutri = ns.lettre; } } catch (e) {}
+  return { cal, cout, nutri };
+}
+function htmlBilanSemaine(menus, personnes) {
+  const cles = clesSemaine(menus);
+  if (!cles.length) return "";
+  let calP = 0, coutP = 0, nCal = 0, nCout = 0, nNutri = 0;
+  const nc = { A: 0, B: 0, C: 0, D: 0, E: 0 };
+  cles.forEach(k => {
+    const m = _metriqueRecetteBilan(k);
+    if (!m) return;
+    if (m.cal != null) { calP += m.cal; nCal++; }
+    if (m.cout != null) { coutP += m.cout; nCout++; }
+    if (m.nutri && nc[m.nutri] != null) { nc[m.nutri]++; nNutri++; }
+  });
+  const jours = (menus.semaine && menus.semaine.length) || 1;
+  const pers = personnes || 1;
+  const kcalJour = nCal ? Math.round(calP / jours) : null;
+  const coutTotal = coutP * pers;
+  const MAPN = { A: 1, B: 2, C: 3, D: 4, E: 5 }, INV = ["", "A", "B", "C", "D", "E"];
+  let moy = null;
+  if (nNutri) { let s = 0; Object.keys(nc).forEach(l => s += MAPN[l] * nc[l]); moy = INV[Math.round(s / nNutri)] || null; }
+  const COULN = { A: "#1e8f4e", B: "#7ac547", C: "#f6c026", D: "#ef8a2b", E: "#e63946" };
+  const bon = nc.A + nc.B, moyc = nc.C, mauv = nc.D + nc.E;
+  if (!document.getElementById("plan-bilan-style")) {
+    const st = document.createElement("style");
+    st.id = "plan-bilan-style";
+    st.textContent =
+      ".plan-bilan{background:linear-gradient(135deg,rgba(255,77,136,.12),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:14px 16px;margin:0 0 14px}" +
+      ".plan-bilan-titre{font-weight:700;color:#fff;font-size:.98rem;margin-bottom:10px}" +
+      ".plan-bilan-grid{display:flex;gap:10px;flex-wrap:wrap}" +
+      ".plan-bilan-grid>div{flex:1;min-width:90px;background:rgba(0,0,0,.25);border-radius:12px;padding:9px 10px;text-align:center}" +
+      ".bilan-val{display:block;font-size:1.25rem;font-weight:800;color:#fff;line-height:1.1}" +
+      ".bilan-lbl{display:block;font-size:.72rem;color:#b3b0b8;margin-top:3px}" +
+      ".bilan-nutri-detail{font-size:.8rem;color:#cfccd4;margin-top:9px;text-align:center}";
+    document.head.appendChild(st);
+  }
+  const cases = [];
+  if (kcalJour != null) cases.push('<div><span class="bilan-val">~' + kcalJour + '</span><span class="bilan-lbl">kcal / jour / pers.</span></div>');
+  if (nCout) cases.push('<div><span class="bilan-val">' + coutTotal.toFixed(2).replace(".", ",") + ' €</span><span class="bilan-lbl">total · ' + pers + ' pers. · ' + jours + ' j</span></div>');
+  if (moy) cases.push('<div><span class="bilan-val" style="color:' + (COULN[moy] || "#fff") + '">' + moy + '</span><span class="bilan-lbl">Nutri moyen</span></div>');
+  if (!cases.length) return "";
+  const detail = nNutri ? '<div class="bilan-nutri-detail">🟢 ' + bon + ' bon' + (bon > 1 ? 's' : '') + ' · 🟡 ' + moyc + ' · 🔴 ' + mauv + '</div>' : "";
+  return '<div class="plan-bilan"><div class="plan-bilan-titre">📊 Bilan de la semaine</div><div class="plan-bilan-grid">' + cases.join("") + '</div>' + detail + '</div>';
+}
+
 function afficherMenusSemaine(menus, personnes) {
   const container = document.getElementById("plan-jours");
   container.innerHTML = "";
@@ -1601,6 +1674,10 @@ function afficherMenusSemaine(menus, personnes) {
     legende.innerHTML = parts.join("");
     container.appendChild(legende);
   }
+
+  // 📊 Bilan nutritionnel & budget de la semaine
+  const bilanHTML = htmlBilanSemaine(menus, personnes);
+  if (bilanHTML) container.insertAdjacentHTML("beforeend", bilanHTML);
 
   menus.semaine.forEach(jour => {
     const div = document.createElement("div");

@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "1.11.0",
+    titre: "🎤 Vocal, bilan de la semaine & recettes similaires",
+    texte: "Trois nouveautés ! 1) Un 🎤 micro dans la barre de recherche : dicte ta recherche, mains libres. 2) Sur ton menu de la semaine, un 📊 bilan s'affiche en tête : calories par jour, coût total et équilibre Nutri-Score. 3) En bas de chaque recette, une section « 🍽️ Tu aimeras aussi » te suggère automatiquement des plats proches. Bon appétit ! 👨‍🍳"
+  },
+  {
     v: "1.10.0",
     titre: "🔍 Filtres, collections & substitutions",
     texte: "Trois nouveautés d'un coup ! 1) Dans les recettes, filtre par ⏱ rapide, 💰 éco, 🥗 Nutri A/B, ⭐ facile ou 🌞 de saison — et trie par temps, coût ou calories. 2) Range tes favoris en collections (Noël, Healthy, Rapide…) pour t'y retrouver. 3) Sur chaque recette, un bloc « 💡 Pas d'un ingrédient ? » te propose des remplacements malins (beurre → huile, œuf → banane…). Bonne cuisine ! 👨‍🍳"

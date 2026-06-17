@@ -859,6 +859,12 @@ function remplirBadges(s) {
   });
   const ggBadge = badges.find(b => b.id === "globetrotter");
   if (ggBadge) ggBadge.debloque = paysSet.size >= 5;
+  // Paliers "pays goûtés" supplémentaires — la carte du monde se débloque
+  badges.push(
+    { id: "grand-voyageur", emoji: "✈️", titre: "Grand Voyageur", desc: "10 pays différents", debloque: paysSet.size >= 10 },
+    { id: "tour-du-monde", emoji: "🧳", titre: "Tour du Monde", desc: "20 pays différents", debloque: paysSet.size >= 20 },
+    { id: "ambassadeur", emoji: "🗺️", titre: "Ambassadeur des Saveurs", desc: "30 pays différents", debloque: paysSet.size >= 30 }
+  );
   
   const html = badges.map(b => `
     <div class="badge-card ${b.debloque ? 'badge-debloque' : 'badge-verrou'}">
