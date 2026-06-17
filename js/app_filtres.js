@@ -14,10 +14,12 @@
 // =============================================================================
 
 (function () {
-  const F = { rapide: false, eco: false, nutri: false, facile: false, saison: false };
+  const F = { rapide: false, eco: false, nutri: false, facile: false, saison: false, vege: false, vegan: false };
   let tri = "";
   const cache = new Map();      // cle -> métriques
+  const regimeCache = {};       // regime -> Set(cles compatibles)
   let ordreInitial = null;      // [.carte] dans l'ordre d'origine (pour le tri "défaut")
+  const LSKEY = "lcj_filtres_avances"; // mémorisation entre visites
 
   const SAISONS = ["hiver","hiver","printemps","printemps","printemps","ete","ete","ete","automne","automne","automne","hiver"];
   const SAISON_DECO = { printemps:["🌱","Printemps"], ete:["🌞","Été"], automne:["🍂","Automne"], hiver:["❄️","Hiver"] };
@@ -76,9 +78,22 @@
     if (F.nutri && !(m.nutri === "A" || m.nutri === "B")) return false;
     if (F.facile && !m.facile) return false;
     if (F.saison && !m.saison) return false;
+    if (F.vege) { const s = regimeSet("végétarien"); if (s && !s.has(cle)) return false; }
+    if (F.vegan) { const s = regimeSet("vegan"); if (s && !s.has(cle)) return false; }
     return true;
   }
-  const actif = () => F.rapide || F.eco || F.nutri || F.facile || F.saison;
+  // Réutilise la détection de régime de la recherche (exclusion par ingrédients)
+  function regimeSet(regime) {
+    if (regimeCache[regime]) return regimeCache[regime];
+    if (typeof getCartesPourRegime !== "function") return null;
+    if (!window._searchIndex && typeof construireIndexRecherche === "function") {
+      try { construireIndexRecherche(); } catch (e) { return null; }
+    }
+    try { regimeCache[regime] = new Set(getCartesPourRegime(regime).map(e => e.cle)); }
+    catch (e) { return null; }
+    return regimeCache[regime];
+  }
+  const actif = () => Object.keys(F).some(k => F[k]);
 
   function appliquer() {
     const on = actif();
@@ -131,16 +146,36 @@
     el.textContent = n + (n > 1 ? " recettes" : " recette");
   }
 
+  // ---- Mémorisation entre visites ----
+  function persister() { try { localStorage.setItem(LSKEY, JSON.stringify({ F, tri })); } catch (e) {} }
+  function majUIetat() {
+    document.querySelectorAll("#chips-row-filtres .chip").forEach(btn => {
+      const m = (btn.getAttribute("onclick") || "").match(/toggleFiltreAvance\('(\w+)'/);
+      if (m) btn.classList.toggle("active", !!F[m[1]]);
+    });
+    const sel = document.getElementById("f-tri"); if (sel) sel.value = tri || "";
+  }
+  function chargerEtat() {
+    let data = null;
+    try { data = JSON.parse(localStorage.getItem(LSKEY) || "null"); } catch (e) {}
+    const fSaved = (data && data.F) || {};
+    Object.keys(F).forEach(k => F[k] = !!fSaved[k]);
+    tri = (data && data.tri) || "";
+  }
+  function restaurer() { chargerEtat(); majUIetat(); appliquer(); } // appliqué quand la grille est prête
+
   // ---- API globale (onclick) ----
   window.toggleFiltreAvance = function (cle, btn) {
     F[cle] = !F[cle];
     if (btn) btn.classList.toggle("active", F[cle]);
     appliquer();
+    persister();
   };
   window.trierRecettes = function (valeur) {
     tri = valeur || "";
     appliquerTri();
     majCompteur();
+    persister();
   };
   window.reinitFiltresAvances = function () {
     Object.keys(F).forEach(k => F[k] = false);
@@ -150,6 +185,7 @@
     document.querySelectorAll(".carte--filtre-off").forEach(c => c.classList.remove("carte--filtre-off"));
     appliquerTri();
     majCompteur();
+    persister();
   };
 
   function injecter() {
@@ -179,6 +215,8 @@
       '<button class="chip" onclick="toggleFiltreAvance(\'nutri\',this)">🥗 Nutri A/B</button>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'facile\',this)">⭐ Facile</button>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'saison\',this)" title="Ingrédients de saison (' + lib + ')">' + emo + ' De saison</button>' +
+      '<button class="chip" onclick="toggleFiltreAvance(\'vege\',this)" title="Sans viande ni poisson">🌱 Végé</button>' +
+      '<button class="chip" onclick="toggleFiltreAvance(\'vegan\',this)" title="Sans produit animal">🌿 Vegan</button>' +
       '<select id="f-tri" class="filtre-tri" onchange="trierRecettes(this.value)" aria-label="Trier les recettes">' +
         '<option value="">↕ Trier…</option>' +
         '<option value="note">⭐ Mieux notées</option>' +
@@ -207,17 +245,17 @@
     window[nom] = w;
   }
   function installerCoherence() {
-    // Entrer dans Recettes = repartir d'une grille fraîche. On reset APRÈS l'original :
-    // afficherRecettes active la 1ère chip de chaque ligne (logique "Tout" cat/pays),
-    // ce qui activerait à tort notre 1ère chip — reinit la désactive après coup.
-    enrober("afficherRecettes", (o) => function () { const r = o.apply(this, arguments); reinitFiltresAvances(); return r; });
+    // Entrer dans Recettes = restaurer les filtres mémorisés. On le fait APRÈS
+    // l'original : afficherRecettes active la 1ère chip de chaque ligne (logique
+    // "Tout" cat/pays) — restaurer() remet l'état (chips + tri) correct par-dessus.
+    enrober("afficherRecettes", (o) => function () { const r = o.apply(this, arguments); restaurer(); return r; });
     // Changer catégorie/pays dans Recettes = recalculer puis ré-appliquer les filtres actifs
     enrober("appliquerFiltresChips", (o) => function () { const r = o.apply(this, arguments); if (actif()) appliquer(); return r; });
     // Entrer dans Favoris = retirer le calque (les filtres avancés ne s'y appliquent pas)
     enrober("filtrerFavoris", (o) => function () { const r = o.apply(this, arguments); clearClasse(); return r; });
   }
 
-  function demarrer() { injecter(); installerCoherence(); }
+  function demarrer() { injecter(); installerCoherence(); chargerEtat(); majUIetat(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", demarrer);
   else demarrer();
 })();
