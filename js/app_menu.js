@@ -576,7 +576,12 @@ async function genererMenus() {
     mots.forEach(m => motsExclusion.add(m.toLowerCase()));
   });
 
+  // Catégories hors d'un repas de semaine (l'apéro/encas restent réservés au menu THÉMATIQUE).
+  const catsHorsRepas = new Set(["aperitifs", "encas", "cocktails", "mocktails", "tartinables", "sauces", "boulangerie"]);
   const recettesFiltrees = Object.keys(recettes).filter(key => {
+    const c = (typeof categorieRecette === "function") ? categorieRecette(key) : (recettes[key] && recettes[key].cat);
+    if (catsHorsRepas.has(c)) return false;
+    if (typeof RECETTES_NON_REPAS !== "undefined" && RECETTES_NON_REPAS.has(key)) return false;
     if (motsExclusion.size === 0) return true;
     const texte = texteRecette(key);
     return ![...motsExclusion].some(mot => texte.includes(mot));
@@ -849,7 +854,7 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   });
 
   // Catégories à exclure des menus
-  const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts","tartinables","sauces"]);
+  const catsExclues = new Set(["boulangerie","cocktails","mocktails","desserts","tartinables","sauces","aperitifs","encas"]);
   // Recettes à exclure spécifiquement des repas
   const _recExclues2 = new Set([
     // Boulangerie
