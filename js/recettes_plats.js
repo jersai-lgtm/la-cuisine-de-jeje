@@ -4,6 +4,38 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  courgettesfarcies: {
+    nom: "Courgettes farcies", cat: "plats", pays: "france", dateAjout: "2026-06-17T14:00:00",
+    base: 4, temps: "55 min", niveau: "⭐⭐ Moyen", emoji: "🥒",
+    description: "Des courgettes évidées et garnies d'un riz parfumé aux tomates, oignon et basilic, gratinées au parmesan. Un plat d'été complet et coloré.",
+    saisons: ["ete"],
+    liees: [],
+    ingredients: {},
+    tableauCourgettesfarcies: [
+      { nb: 1, courgette: "200 g", riz: "40 g", tomate: "60 g", oignon: "30 g", parmesan: "15 g", huileolive: "8 ml", ail: "4 g", basilic: "3 g" },
+      { nb: 2, courgette: "400 g", riz: "80 g", tomate: "120 g", oignon: "60 g", parmesan: "30 g", huileolive: "16 ml", ail: "8 g", basilic: "6 g" },
+      { nb: 3, courgette: "600 g", riz: "120 g", tomate: "180 g", oignon: "90 g", parmesan: "45 g", huileolive: "24 ml", ail: "12 g", basilic: "9 g" },
+      { nb: 4, courgette: "800 g", riz: "160 g", tomate: "240 g", oignon: "120 g", parmesan: "60 g", huileolive: "32 ml", ail: "16 g", basilic: "12 g" },
+      { nb: 5, courgette: "1000 g", riz: "200 g", tomate: "300 g", oignon: "150 g", parmesan: "75 g", huileolive: "40 ml", ail: "20 g", basilic: "15 g" },
+      { nb: 6, courgette: "1200 g", riz: "240 g", tomate: "360 g", oignon: "180 g", parmesan: "90 g", huileolive: "48 ml", ail: "24 g", basilic: "18 g" },
+      { nb: 7, courgette: "1400 g", riz: "280 g", tomate: "420 g", oignon: "210 g", parmesan: "105 g", huileolive: "56 ml", ail: "28 g", basilic: "21 g" },
+      { nb: 8, courgette: "1600 g", riz: "320 g", tomate: "480 g", oignon: "240 g", parmesan: "120 g", huileolive: "64 ml", ail: "32 g", basilic: "24 g" },
+      { nb: 9, courgette: "1800 g", riz: "360 g", tomate: "540 g", oignon: "270 g", parmesan: "135 g", huileolive: "72 ml", ail: "36 g", basilic: "27 g" },
+      { nb: 10, courgette: "2000 g", riz: "400 g", tomate: "600 g", oignon: "300 g", parmesan: "150 g", huileolive: "80 ml", ail: "40 g", basilic: "30 g" },
+      { nb: 11, courgette: "2200 g", riz: "440 g", tomate: "660 g", oignon: "330 g", parmesan: "165 g", huileolive: "88 ml", ail: "44 g", basilic: "33 g" },
+      { nb: 12, courgette: "2400 g", riz: "480 g", tomate: "720 g", oignon: "360 g", parmesan: "180 g", huileolive: "96 ml", ail: "48 g", basilic: "36 g" },
+      { nb: 13, courgette: "2600 g", riz: "520 g", tomate: "780 g", oignon: "390 g", parmesan: "195 g", huileolive: "104 ml", ail: "52 g", basilic: "39 g" },
+      { nb: 14, courgette: "2800 g", riz: "560 g", tomate: "840 g", oignon: "420 g", parmesan: "210 g", huileolive: "112 ml", ail: "56 g", basilic: "42 g" },
+      { nb: 15, courgette: "3000 g", riz: "600 g", tomate: "900 g", oignon: "450 g", parmesan: "225 g", huileolive: "120 ml", ail: "60 g", basilic: "45 g" }
+    ],
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 190°C.", badge: "⏱ 5 min" },
+      { icone: "🥒", titre: "Évider", detail: "Couper les courgettes en deux dans la longueur et les évider à la cuillère.", badge: null },
+      { icone: "🍚", titre: "Garniture", detail: "Faire revenir oignon et ail, ajouter la chair de courgette, les tomates et le riz cuit. Parfumer au basilic.", badge: "⏱ 12 min" },
+      { icone: "🧀", titre: "Garnir", detail: "Farcir les courgettes, parsemer de parmesan, filet d'huile d'olive.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfourner 30-35 min jusqu'à ce que les courgettes soient tendres et gratinées.", badge: "⏱ 35 min" }
+    ]
+  },
   dindenoelmarrons: {
     nom: "Dinde de Noël aux Marrons",
     cat: "plats", pays: "france",

@@ -4,6 +4,101 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  saladefruitsexotiques: {
+    nom: "Salade de fruits exotiques", cat: "desserts", pays: "monde", dateAjout: "2026-06-17T14:00:00",
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥭",
+    description: "Mangue, ananas, kiwi et fruit de la passion, réveillés d'un trait de citron vert, de miel et de menthe. Fraîche, parfumée, ensoleillée.",
+    saisons: ["ete"],
+    liees: ["saladefruits"],
+    ingredients: {},
+    tableauSaladefruitsexotiques: [
+      { nb: 1, mangue: "80 g", ananas: "70 g", kiwi: "50 g", banane: "50 g", passion: "15 g", citronvert: "8 g", miel: "6 g", menthe: "2 g" },
+      { nb: 2, mangue: "160 g", ananas: "140 g", kiwi: "100 g", banane: "100 g", passion: "30 g", citronvert: "16 g", miel: "12 g", menthe: "4 g" },
+      { nb: 3, mangue: "240 g", ananas: "210 g", kiwi: "150 g", banane: "150 g", passion: "45 g", citronvert: "24 g", miel: "18 g", menthe: "6 g" },
+      { nb: 4, mangue: "320 g", ananas: "280 g", kiwi: "200 g", banane: "200 g", passion: "60 g", citronvert: "32 g", miel: "24 g", menthe: "8 g" },
+      { nb: 5, mangue: "400 g", ananas: "350 g", kiwi: "250 g", banane: "250 g", passion: "75 g", citronvert: "40 g", miel: "30 g", menthe: "10 g" },
+      { nb: 6, mangue: "480 g", ananas: "420 g", kiwi: "300 g", banane: "300 g", passion: "90 g", citronvert: "48 g", miel: "36 g", menthe: "12 g" },
+      { nb: 7, mangue: "560 g", ananas: "490 g", kiwi: "350 g", banane: "350 g", passion: "105 g", citronvert: "56 g", miel: "42 g", menthe: "14 g" },
+      { nb: 8, mangue: "640 g", ananas: "560 g", kiwi: "400 g", banane: "400 g", passion: "120 g", citronvert: "64 g", miel: "48 g", menthe: "16 g" },
+      { nb: 9, mangue: "720 g", ananas: "630 g", kiwi: "450 g", banane: "450 g", passion: "135 g", citronvert: "72 g", miel: "54 g", menthe: "18 g" },
+      { nb: 10, mangue: "800 g", ananas: "700 g", kiwi: "500 g", banane: "500 g", passion: "150 g", citronvert: "80 g", miel: "60 g", menthe: "20 g" },
+      { nb: 11, mangue: "880 g", ananas: "770 g", kiwi: "550 g", banane: "550 g", passion: "165 g", citronvert: "88 g", miel: "66 g", menthe: "22 g" },
+      { nb: 12, mangue: "960 g", ananas: "840 g", kiwi: "600 g", banane: "600 g", passion: "180 g", citronvert: "96 g", miel: "72 g", menthe: "24 g" },
+      { nb: 13, mangue: "1040 g", ananas: "910 g", kiwi: "650 g", banane: "650 g", passion: "195 g", citronvert: "104 g", miel: "78 g", menthe: "26 g" },
+      { nb: 14, mangue: "1120 g", ananas: "980 g", kiwi: "700 g", banane: "700 g", passion: "210 g", citronvert: "112 g", miel: "84 g", menthe: "28 g" },
+      { nb: 15, mangue: "1200 g", ananas: "1050 g", kiwi: "750 g", banane: "750 g", passion: "225 g", citronvert: "120 g", miel: "90 g", menthe: "30 g" }
+    ],
+    etapes: [
+      { icone: "🔪", titre: "Préparer les fruits", detail: "Éplucher mangue, ananas, kiwi et banane. Couper en cubes réguliers.", badge: "⏱ 12 min" },
+      { icone: "🥄", titre: "Récupérer la passion", detail: "Couper les fruits de la passion en deux et récupérer la pulpe à la cuillère.", badge: null },
+      { icone: "🍯", titre: "Sirop express", detail: "Mélanger le jus de citron vert et le miel jusqu'à dissolution.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Verser le sirop sur les fruits, ajouter la pulpe de passion, mélanger délicatement.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de menthe ciselée. Réserver 30 min au frais avant de servir.", badge: "💡 Frais" }
+    ]
+  },
+  ananasroti: {
+    nom: "Ananas rôti au miel", cat: "desserts", pays: "monde", dateAjout: "2026-06-17T14:00:00",
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍍",
+    description: "Des tranches d'ananas caramélisées au beurre, au miel et à la vanille, avec une pointe de rhum. Un dessert exotique express et bluffant.",
+    saisons: ["ete"],
+    liees: [],
+    ingredients: {},
+    tableauAnanasroti: [
+      { nb: 1, ananas: "150 g", miel: "15 g", beurre: "8 g", rhum: "5 ml", cannelle: "1 g", vanille: "1 g" },
+      { nb: 2, ananas: "300 g", miel: "30 g", beurre: "16 g", rhum: "10 ml", cannelle: "2 g", vanille: "2 g" },
+      { nb: 3, ananas: "450 g", miel: "45 g", beurre: "24 g", rhum: "15 ml", cannelle: "3 g", vanille: "3 g" },
+      { nb: 4, ananas: "600 g", miel: "60 g", beurre: "32 g", rhum: "20 ml", cannelle: "4 g", vanille: "4 g" },
+      { nb: 5, ananas: "750 g", miel: "75 g", beurre: "40 g", rhum: "25 ml", cannelle: "5 g", vanille: "5 g" },
+      { nb: 6, ananas: "900 g", miel: "90 g", beurre: "48 g", rhum: "30 ml", cannelle: "6 g", vanille: "6 g" },
+      { nb: 7, ananas: "1050 g", miel: "105 g", beurre: "56 g", rhum: "35 ml", cannelle: "7 g", vanille: "7 g" },
+      { nb: 8, ananas: "1200 g", miel: "120 g", beurre: "64 g", rhum: "40 ml", cannelle: "8 g", vanille: "8 g" },
+      { nb: 9, ananas: "1350 g", miel: "135 g", beurre: "72 g", rhum: "45 ml", cannelle: "9 g", vanille: "9 g" },
+      { nb: 10, ananas: "1500 g", miel: "150 g", beurre: "80 g", rhum: "50 ml", cannelle: "10 g", vanille: "10 g" },
+      { nb: 11, ananas: "1650 g", miel: "165 g", beurre: "88 g", rhum: "55 ml", cannelle: "11 g", vanille: "11 g" },
+      { nb: 12, ananas: "1800 g", miel: "180 g", beurre: "96 g", rhum: "60 ml", cannelle: "12 g", vanille: "12 g" },
+      { nb: 13, ananas: "1950 g", miel: "195 g", beurre: "104 g", rhum: "65 ml", cannelle: "13 g", vanille: "13 g" },
+      { nb: 14, ananas: "2100 g", miel: "210 g", beurre: "112 g", rhum: "70 ml", cannelle: "14 g", vanille: "14 g" },
+      { nb: 15, ananas: "2250 g", miel: "225 g", beurre: "120 g", rhum: "75 ml", cannelle: "15 g", vanille: "15 g" }
+    ],
+    etapes: [
+      { icone: "🍍", titre: "Tailler l'ananas", detail: "Éplucher l'ananas et le couper en tranches ou en gros cubes.", badge: "⏱ 8 min" },
+      { icone: "🧈", titre: "Caraméliser", detail: "Faire fondre beurre et miel dans une poêle, y dorer l'ananas 3 min par face.", badge: "⏱ 8 min" },
+      { icone: "🥃", titre: "Parfumer", detail: "Ajouter cannelle et vanille, déglacer au rhum.", badge: null },
+      { icone: "🍯", titre: "Napper", detail: "Laisser le jus réduire en caramel nappant, arroser l'ananas.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Servir tiède, éventuellement avec une boule de glace vanille.", badge: "💡 Tiède" }
+    ]
+  },
+  verrinefraisechantilly: {
+    nom: "Verrine fraises chantilly", cat: "desserts", pays: "france", dateAjout: "2026-06-17T14:00:00",
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🍓",
+    description: "Fraises fraîches, crème fouettée vanillée et mascarpone montés en verrine. Un dessert d'été léger, frais et élégant, prêt en 20 minutes.",
+    saisons: ["printemps","ete"],
+    liees: [],
+    ingredients: {},
+    tableauVerrinefraisechantilly: [
+      { nb: 1, fraise: "100 g", creme: "40 ml", mascarpone: "30 g", sucre: "15 g", menthe: "1 g" },
+      { nb: 2, fraise: "200 g", creme: "80 ml", mascarpone: "60 g", sucre: "30 g", menthe: "2 g" },
+      { nb: 3, fraise: "300 g", creme: "120 ml", mascarpone: "90 g", sucre: "45 g", menthe: "3 g" },
+      { nb: 4, fraise: "400 g", creme: "160 ml", mascarpone: "120 g", sucre: "60 g", menthe: "4 g" },
+      { nb: 5, fraise: "500 g", creme: "200 ml", mascarpone: "150 g", sucre: "75 g", menthe: "5 g" },
+      { nb: 6, fraise: "600 g", creme: "240 ml", mascarpone: "180 g", sucre: "90 g", menthe: "6 g" },
+      { nb: 7, fraise: "700 g", creme: "280 ml", mascarpone: "210 g", sucre: "105 g", menthe: "7 g" },
+      { nb: 8, fraise: "800 g", creme: "320 ml", mascarpone: "240 g", sucre: "120 g", menthe: "8 g" },
+      { nb: 9, fraise: "900 g", creme: "360 ml", mascarpone: "270 g", sucre: "135 g", menthe: "9 g" },
+      { nb: 10, fraise: "1000 g", creme: "400 ml", mascarpone: "300 g", sucre: "150 g", menthe: "10 g" },
+      { nb: 11, fraise: "1100 g", creme: "440 ml", mascarpone: "330 g", sucre: "165 g", menthe: "11 g" },
+      { nb: 12, fraise: "1200 g", creme: "480 ml", mascarpone: "360 g", sucre: "180 g", menthe: "12 g" },
+      { nb: 13, fraise: "1300 g", creme: "520 ml", mascarpone: "390 g", sucre: "195 g", menthe: "13 g" },
+      { nb: 14, fraise: "1400 g", creme: "560 ml", mascarpone: "420 g", sucre: "210 g", menthe: "14 g" },
+      { nb: 15, fraise: "1500 g", creme: "600 ml", mascarpone: "450 g", sucre: "225 g", menthe: "15 g" }
+    ],
+    etapes: [
+      { icone: "🍓", titre: "Préparer les fraises", detail: "Laver, équeuter et couper les fraises en morceaux. En réserver pour le décor.", badge: "⏱ 8 min" },
+      { icone: "🥣", titre: "Monter la chantilly", detail: "Fouetter la crème très froide avec le mascarpone et le sucre jusqu'à une chantilly ferme.", badge: null },
+      { icone: "🥄", titre: "Dresser", detail: "Alterner fraises et chantilly dans les verrines.", badge: null },
+      { icone: "🌿", titre: "Décorer", detail: "Terminer par une fraise et une feuille de menthe. Réserver au frais.", badge: "💡 Frais" }
+    ]
+  },
   buchenoelchocolat: {
     nom: "Bûche de Noël au Chocolat",
     cat: "desserts", pays: "france",
