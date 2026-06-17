@@ -184,6 +184,31 @@
     else conteneur.appendChild(row);
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", injecter);
-  else injecter();
+  // --- Cohérence inter-vues : le calque .carte--filtre-off ne doit valoir que
+  // dans la vue Recettes (sinon il cacherait des favoris). On enrobe les points
+  // d'entrée des vues (sans modifier leur code).
+  function clearClasse() {
+    document.querySelectorAll(".carte--filtre-off").forEach(c => c.classList.remove("carte--filtre-off"));
+  }
+  function enrober(nom, fabrique) {
+    const o = window[nom];
+    if (typeof o !== "function" || o._wrapFiltres) return;
+    const w = fabrique(o);
+    w._wrapFiltres = true;
+    window[nom] = w;
+  }
+  function installerCoherence() {
+    // Entrer dans Recettes = repartir d'une grille fraîche. On reset APRÈS l'original :
+    // afficherRecettes active la 1ère chip de chaque ligne (logique "Tout" cat/pays),
+    // ce qui activerait à tort notre 1ère chip — reinit la désactive après coup.
+    enrober("afficherRecettes", (o) => function () { const r = o.apply(this, arguments); reinitFiltresAvances(); return r; });
+    // Changer catégorie/pays dans Recettes = recalculer puis ré-appliquer les filtres actifs
+    enrober("appliquerFiltresChips", (o) => function () { const r = o.apply(this, arguments); if (actif()) appliquer(); return r; });
+    // Entrer dans Favoris = retirer le calque (les filtres avancés ne s'y appliquent pas)
+    enrober("filtrerFavoris", (o) => function () { const r = o.apply(this, arguments); clearClasse(); return r; });
+  }
+
+  function demarrer() { injecter(); installerCoherence(); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", demarrer);
+  else demarrer();
 })();
