@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "1.10.0",
+    titre: "🔍 Filtres, collections & substitutions",
+    texte: "Trois nouveautés d'un coup ! 1) Dans les recettes, filtre par ⏱ rapide, 💰 éco, 🥗 Nutri A/B, ⭐ facile ou 🌞 de saison — et trie par temps, coût ou calories. 2) Range tes favoris en collections (Noël, Healthy, Rapide…) pour t'y retrouver. 3) Sur chaque recette, un bloc « 💡 Pas d'un ingrédient ? » te propose des remplacements malins (beurre → huile, œuf → banane…). Bonne cuisine ! 👨‍🍳"
+  },
+  {
     v: "1.9.0",
     titre: "🧺 Ajoute tes propres courses",
     texte: "Dans Garde-manger → Liste de courses, une nouvelle section « 🧺 Mes articles » te laisse ajouter tout ce qui n'est pas lié à une recette — sopalin, couches, lessive… — avec les mêmes cases à cocher que les ingrédients. Ta liste de courses devient enfin complète et bonne pour tout le caddie !"
