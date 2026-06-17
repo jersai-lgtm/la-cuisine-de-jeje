@@ -131,12 +131,15 @@ function genererCartesManquantes() {
     const nom    = (typeof getNomRecette === "function") ? getNomRecette(key) : key;
     const emoji  = r.emoji || "🍽️";
     const img    = (typeof getImagePath === "function") ? getImagePath(key) : ("images/" + (key.charAt(0)||"_").toLowerCase() + "/" + key + ".webp");
+    const thumb  = (typeof getThumbPath === "function") ? getThumbPath(key) : img.replace(/^images\//, "thumbs/");
     const cat    = r.cat || "";
     const pays   = r.pays || "";
     const meta   = [r.temps ? ("⏱ " + r.temps) : "", r.niveau || ""].filter(Boolean).join(" • ");
+    // Miniature d'abord, repli sur l'image pleine (dev/sans build), puis masquage.
+    const onerr  = "if(this.src.indexOf('thumbs/')>-1){this.src='" + img + "'}else{this.style.display='none'}";
     html += '<div class="carte" data-cat="' + echap(cat) + '" data-pays="' + echap(pays) + '" '
           + "onclick=\"ouvrirFiche('" + key + "', '')\">"
-          + '<img loading="lazy" decoding="async" src="' + echap(img) + '" alt="' + echap(nom) + '" onerror="this.style.display=\'none\'">'
+          + '<img loading="lazy" decoding="async" src="' + echap(thumb) + '" alt="' + echap(nom) + '" onerror="' + echap(onerr) + '">'
           + '<div class="carte-info"><h2>' + emoji + " " + echap(nom) + "</h2><p>" + echap(meta) + "</p></div></div>";
     ajout++;
   });

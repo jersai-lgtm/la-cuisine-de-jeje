@@ -1634,7 +1634,7 @@ function afficherMenusSemaine(menus, personnes) {
           const motif = lvl ? `<div class="plan-motif-famille" title="${tip}">${lvl === "bebe" ? "🍼" : "🌶️"} ${raison}</div>` : "";
           return `<div class="plan-repas-sous" style="${styleAlerte}" onclick="ouvrirRecettePlan('${key}', ${personnes})">
             <span class="plan-sous-label">${icone} ${type} ${badge}${btn}${btnCh}</span>
-            <span class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getImagePath === "function" ? getImagePath(key) : ""}" alt="" loading="lazy" onerror="this.closest('.plan-repas-visuel').classList.add('noimg')"><span class="plan-repas-emoji-fallback">${getEmoji(key)}</span></span>
+            <span class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getThumbPath === "function" ? getThumbPath(key) : ""}" alt="" loading="lazy" onerror="if(this.src.indexOf('thumbs/')>-1){this.src='${typeof getImagePath === "function" ? getImagePath(key) : ""}'}else{this.closest('.plan-repas-visuel').classList.add('noimg')}"><span class="plan-repas-emoji-fallback">${getEmoji(key)}</span></span>
             <span class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[key]?.pays, 13) + " " : ""}${getNomRecette(key)}</span>
             <span class="plan-repas-note">${data.note || ""}</span>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(key, "inline") : ""}
@@ -1686,7 +1686,7 @@ function afficherMenusSemaine(menus, personnes) {
 
       const soirBlocHTML = jour.soir ? `<div class="plan-repas" style="${sSoir}" onclick="ouvrirRecettePlan('${soir}', ${personnes})">
             <div class="plan-repas-label">🌙 Soir ${bSoir}${btnSoir}${chSoir}</div>
-            <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getImagePath === "function" ? getImagePath(soir) : ""}" alt="" loading="lazy" onerror="this.closest('.plan-repas-visuel').classList.add('noimg')"><span class="plan-repas-emoji-fallback">${getEmoji(soir)}</span></div>
+            <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getThumbPath === "function" ? getThumbPath(soir) : ""}" alt="" loading="lazy" onerror="if(this.src.indexOf('thumbs/')>-1){this.src='${typeof getImagePath === "function" ? getImagePath(soir) : ""}'}else{this.closest('.plan-repas-visuel').classList.add('noimg')}"><span class="plan-repas-emoji-fallback">${getEmoji(soir)}</span></div>
             <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[soir]?.pays, 13) + " " : ""}${getNomRecette(soir)}</div>
             <div class="plan-repas-note">${soirNote}</div>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(soir, "inline") : ""}
@@ -1698,7 +1698,7 @@ function afficherMenusSemaine(menus, personnes) {
         <div class="plan-repas-row"${jour.soir ? "" : ' style="grid-template-columns:1fr"'}>
           <div class="plan-repas" style="${sMidi}" onclick="ouvrirRecettePlan('${midi}', ${personnes})">
             <div class="plan-repas-label">☀️ Midi ${bMidi}${btnMidi}${chMidi}</div>
-            <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getImagePath === "function" ? getImagePath(midi) : ""}" alt="" loading="lazy" onerror="this.closest('.plan-repas-visuel').classList.add('noimg')"><span class="plan-repas-emoji-fallback">${getEmoji(midi)}</span></div>
+            <div class="plan-repas-visuel"><img class="plan-repas-img" src="${typeof getThumbPath === "function" ? getThumbPath(midi) : ""}" alt="" loading="lazy" onerror="if(this.src.indexOf('thumbs/')>-1){this.src='${typeof getImagePath === "function" ? getImagePath(midi) : ""}'}else{this.closest('.plan-repas-visuel').classList.add('noimg')}"><span class="plan-repas-emoji-fallback">${getEmoji(midi)}</span></div>
             <div class="plan-repas-nom">${typeof drapeau === "function" ? drapeau(recettes[midi]?.pays, 13) + " " : ""}${getNomRecette(midi)}</div>
             <div class="plan-repas-note">${midiNote}</div>
             ${typeof noteCommunauteBadgeHTML === "function" ? noteCommunauteBadgeHTML(midi, "inline") : ""}
