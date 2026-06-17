@@ -99,6 +99,14 @@
     let liste;
     if (!tri) {
       liste = ordreInitial.filter(c => c.isConnected);
+    } else if (tri === "note") {
+      // Tri par note de la communauté (décroissant, non notées en dernier)
+      const moy = (c) => {
+        const cle = cleDe(c);
+        const com = (cle && typeof getNoteCommunaute === "function") ? getNoteCommunaute(cle) : null;
+        return com ? com.moyenne : -1;
+      };
+      liste = [...cont.querySelectorAll(".carte")].sort((a, b) => moy(b) - moy(a));
     } else {
       const val = (c) => {
         const m = metriques(cleDe(c));
@@ -173,6 +181,7 @@
       '<button class="chip" onclick="toggleFiltreAvance(\'saison\',this)" title="Ingrédients de saison (' + lib + ')">' + emo + ' De saison</button>' +
       '<select id="f-tri" class="filtre-tri" onchange="trierRecettes(this.value)" aria-label="Trier les recettes">' +
         '<option value="">↕ Trier…</option>' +
+        '<option value="note">⭐ Mieux notées</option>' +
         '<option value="temps">⏱ Plus rapide</option>' +
         '<option value="cout">💰 Moins cher</option>' +
         '<option value="cal">🔥 Moins calorique</option>' +
