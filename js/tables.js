@@ -1771,9 +1771,9 @@ function htmlTableauSmoothieColonnes(l) {
     <tr><th>🍯 Miel</th><td>${l.miel}</td></tr>
     <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);padding-top:12px">🎨 Toppings (selon goût)</th></tr>
     <tr><th>🫐 Fruits frais</th><td>1 poignée / bol</td></tr>
-    <tr><th>🌾 Granola / flocons avoine</th><td>2 c.à.s / bol</td></tr>
-    <tr><th>🌱 Graines de chia</th><td>1 c.à.c / bol</td></tr>
-    <tr><th>🥥 Noix de coco râpée</th><td>1 c.à.s / bol</td></tr>`);
+    <tr><th>🌾 Granola / flocons avoine</th><td>30 g / bol</td></tr>
+    <tr><th>🌱 Graines de chia</th><td>5 g / bol</td></tr>
+    <tr><th>🥥 Noix de coco râpée</th><td>15 g / bol</td></tr>`);
 }
 
 function htmlTableauYaourtColonnes(l) {
@@ -1901,7 +1901,7 @@ function htmlTableauSaladeLentillesColonnes(l) {
     <tr><th>🧅 Oignon</th><td>${l.oignon}</td></tr>
     <tr><th>🥓 Lardons (optionnel)</th><td>${l.lardons}</td></tr>
     <tr><th>🌿 Bouquet garni</th><td>1</td></tr>
-    <tr><th>🥣 Moutarde (vinaigrette)</th><td>1 c.à.s / 4 pers.</td></tr>`);
+    <tr><th>🥣 Moutarde (vinaigrette)</th><td>15 g / 4 pers.</td></tr>`);
 }
 
 function htmlTableauAvocatCrevettesColonnes(l) {
@@ -1911,7 +1911,7 @@ function htmlTableauAvocatCrevettesColonnes(l) {
     <tr><th>🦐 Crevettes roses cuites</th><td>${l.crevettes}</td></tr>
     <tr><th>🥬 Salade verte</th><td>${l.salade}</td></tr>
     <tr><th>🍋 Citron</th><td>${l.citron}</td></tr>
-    <tr><th>🍶 Mayonnaise (sauce cocktail)</th><td>3 c.à.s / 4 pers.</td></tr>`);
+    <tr><th>🍶 Mayonnaise (sauce cocktail)</th><td>45 g / 4 pers.</td></tr>`);
 }
 
 function htmlTableauGoumeauColonnes(l) {
@@ -3211,8 +3211,8 @@ function htmlTableauGravlaxColonnes(l) {
     <tr><th>🌿 Aneth frais</th><td>${l.aneth}</td></tr>
     <tr><th>🥃 Vodka (optionnel)</th><td>${l.vodka}</td></tr>
     <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🌿 Sauce moutarde aneth</th></tr>
-    <tr><th>🌿 Moutarde douce</th><td>3 c.à.s / 4 pers.</td></tr>
-    <tr><th>🫒 Huile neutre</th><td>3 c.à.s / 4 pers.</td></tr>`);
+    <tr><th>🌿 Moutarde douce</th><td>45 g / 4 pers.</td></tr>
+    <tr><th>🫒 Huile neutre</th><td>45 ml / 4 pers.</td></tr>`);
 }
 
 function htmlTableauVerrineTiramisuColonnes(l) {
@@ -3475,7 +3475,7 @@ function htmlTableauGratinColonnes(l) {
     <tr><th>🍦 Crème liquide</th><td>${l.creme}</td></tr>
     <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
     <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
-    <tr><th>🍯 Noix de muscade</th><td>1 pincée</td></tr>`);
+    <tr><th>🍯 Noix de muscade</th><td>1 g</td></tr>`);
 }
 
 function htmlTableauCremeBruleeColonnes(l) {
@@ -3494,7 +3494,7 @@ function htmlTableauMousseColonnes(l) {
     <tr><th>🍫 Chocolat noir (70%)</th><td>${l.chocolat}</td></tr>
     <tr><th>🥚 Œufs entiers</th><td>${l.oeufs}</td></tr>
     <tr><th>🍬 Sucre</th><td>${l.sucre}</td></tr>
-    <tr><th>🧂 Sel</th><td>1 pincée</td></tr>`);
+    <tr><th>🧂 Sel</th><td>1 g</td></tr>`);
 }
 
 function htmlTableauIleFlottanteColonnes(l) {
@@ -3546,7 +3546,7 @@ function htmlTableauHoumousColonnes(l) {
     <tr><th>🍋 Citron (jus)</th><td>${l.citron}</td></tr>
     <tr><th>🧄 Ail</th><td>${l.ail}</td></tr>
     <tr><th>🫒 Huile d'olive</th><td>${l.huile}</td></tr>
-    <tr><th>💧 Eau froide</th><td>3–4 c.à.s</td></tr>`);
+    <tr><th>💧 Eau froide</th><td>≈ 50 ml</td></tr>`);
 }
 
 function htmlTableauRisottoColonnes(l) {
@@ -3578,7 +3578,7 @@ function htmlTableauMadeleineColonnes(l) {
     <tr><th>🧈 Beurre</th><td>${l.beurre}</td></tr>
     <tr><th>🥚 Œufs</th><td>${l.oeufs}</td></tr>
     <tr><th>🧪 Levure chimique</th><td>${l.levure}</td></tr>
-    <tr><th>🍯 Miel</th><td>1 c.à.s / 12</td></tr>
+    <tr><th>🍯 Miel</th><td>15 g / 12</td></tr>
     <tr><th>🍋 Zeste citron</th><td>1 / 12</td></tr>`);
 }
 
