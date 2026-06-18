@@ -507,6 +507,7 @@ const INGREDIENTS_PRIX = {
   
   // ===== SAUCES & CONDIMENTS =====
   vinaigre:       { prixKg: 2.50, calPer100g: 21,   lipSat: 0,    sucre: 0.4,  sel: 0,    fibres: 0,   prot: 0,    flv: 0 },
+  presure:        { prixUnite: 4.00, cal: 0,         lipSat: 0,    sucre: 0,    sel: 0,    fibres: 0,   prot: 0,    flv: 0 },
   vinaigreBalsamique:{prixKg:8.0, calPer100g: 88,   lipSat: 0,    sucre: 15,   sel: 0,    fibres: 0,   prot: 0.5,  flv: 0 },
   balsamique:     { prixKg: 8.00, calPer100g: 88,   lipSat: 0,    sucre: 15,   sel: 0,    fibres: 0,   prot: 0.5,  flv: 0 },
   vinaigreRiz:    { prixKg: 5.00, calPer100g: 30,   lipSat: 0,    sucre: 5,    sel: 0,    fibres: 0,   prot: 0,    flv: 0 },
@@ -1327,7 +1328,7 @@ const INGREDIENTS_LABELS = {
   // == Condiments & sauces ==
   sojaS: "🍶 Sauce soja", mirin: "🍶 Mirin", saké: "🍶 Saké", hoisin: "🍶 Sauce hoisin",
   bbqSauce: "🍖 Sauce BBQ", rub: "🌶️ Rub BBQ", tahini: "🫒 Tahini",
-  miso: "🌿 Miso", gochujang: "🌶️ Gochujang", vinaigre: "🍶 Vinaigre",
+  miso: "🌿 Miso", gochujang: "🌶️ Gochujang", vinaigre: "🍶 Vinaigre", presure: "🧪 Présure",
   // == Divers cuisine ==
   bouillon: "🍲 Bouillon", dashi: "💧 Dashi", cafe: "☕ Café expresso",
   nori: "🌿 Nori", tofu: "🧀 Tofu", wakame: "🌊 Wakamé",
