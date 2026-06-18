@@ -96,7 +96,7 @@
       estActif: function (now) {
         var p = paques(now.getFullYear());
         var mg = new Date(p.getTime() - 47 * 864e5);
-        return entre(now, new Date(mg.getTime() - 4 * 864e5), new Date(mg.getTime() + 864e5));
+        return entre(now, new Date(mg.getTime() - 1 * 864e5), new Date(mg.getTime() + 864e5));
       }
     },
     chinois: {
@@ -114,7 +114,7 @@
         var NAC = { 2026: [2, 17], 2027: [2, 6], 2028: [1, 26], 2029: [2, 13], 2030: [2, 3], 2031: [1, 23], 2032: [2, 11], 2033: [1, 31] };
         if (!NAC[y]) return false;
         var d = dateA(y, NAC[y][0], NAC[y][1]);
-        return entre(now, new Date(d.getTime() - 2 * 864e5), new Date(d.getTime() + 4 * 864e5));
+        return entre(now, new Date(d.getTime() - 1 * 864e5), new Date(d.getTime() + 4 * 864e5));
       }
     },
     patrick: {
@@ -139,7 +139,7 @@
       menuColor: "#c2185b", menuShadow: "none",
       menuNoms: { eggsBenedict: "Œufs Bénédicte", pancakes: "Pancakes", financiers: "Financiers", gaufresliege: "Gaufres de Liège", saintjacquespoelees: "Saint-Jacques", risottoprimavera: "Risotto Primavera" },
       recettes: ["eggsBenedict", "pancakes", "financiers", "gaufresliege", "saintjacquespoelees", "risottoprimavera"],
-      estActif: function (now) { var y = now.getFullYear(); var d = lastWeekday(y, 5, 0); return entre(now, new Date(d.getTime() - 3 * 864e5), new Date(d.getTime() + 864e5)); }
+      estActif: function (now) { var y = now.getFullYear(); var d = lastWeekday(y, 5, 0); return entre(now, new Date(d.getTime() - 1 * 864e5), new Date(d.getTime() + 864e5)); }
     },
     feteperes: {
       nom: "Fête des Pères", titre: "👔 Menu Fête des Pères",
@@ -149,9 +149,9 @@
       cta: "Entrer 👔",
       menuZone: { top: "45%", bottom: "28%", left: "24%", right: "24%" },
       menuColor: "#1b3a6b", menuShadow: "none",
-      menuNoms: { magretcanard: "Magret de Canard", saintjacquespoelees: "Saint-Jacques", daubeProvencale: "Daube Provençale", gratindauphinois: "Gratin Dauphinois", risottoMilanese: "Risotto Milanese", moelleuxchocolat: "Moelleux Chocolat" },
-      recettes: ["magretcanard", "saintjacquespoelees", "daubeProvencale", "gratindauphinois", "risottoMilanese", "moelleuxchocolat"],
-      estActif: function (now) { var y = now.getFullYear(); var d = nthWeekday(y, 6, 0, 3); return entre(now, new Date(d.getTime() - 3 * 864e5), new Date(d.getTime() + 864e5)); }
+      menuNoms: { melonjambon: "Melon & Jambon cru", magretcanard: "Magret de Canard", grilladelamnocciole: "Grillades d'Agneau", salmongrillee: "Saumon Grillé", fraisier: "Fraisier", moelleuxchocolat: "Moelleux Chocolat" },
+      recettes: ["melonjambon", "magretcanard", "grilladelamnocciole", "salmongrillee", "fraisier", "moelleuxchocolat"],
+      estActif: function (now) { var y = now.getFullYear(); var d = nthWeekday(y, 6, 0, 3); return entre(now, new Date(d.getTime() - 1 * 864e5), new Date(d.getTime() + 864e5)); }
     },
     musique: {
       nom: "Fête de la Musique", titre: "🎵 Apéro Fête de la Musique",
@@ -221,8 +221,8 @@
       cta: "Entrer 🇫🇷",
       menuZone: { top: "51%", bottom: "25%", left: "25%", right: "25%" },
       menuColor: "#f4f1e8",
-      menuNoms: { escargots: "Escargots", quichelorraine: "Quiche Lorraine", boeufbourguignon: "Bœuf Bourguignon", gratindauphinois: "Gratin Dauphinois", tarteaupommes: "Tarte aux Pommes", ileflottante: "Île Flottante" },
-      recettes: ["escargots", "quichelorraine", "boeufbourguignon", "gratindauphinois", "tarteaupommes", "ileflottante"],
+      menuNoms: { escargots: "Escargots", quichelorraine: "Quiche Lorraine", salmongrillee: "Saumon Grillé", saladechevrechaud: "Salade de Chèvre Chaud", tarteaupommes: "Tarte aux Pommes", ileflottante: "Île Flottante" },
+      recettes: ["escargots", "quichelorraine", "salmongrillee", "saladechevrechaud", "tarteaupommes", "ileflottante"],
       estActif: function (now) { var y = now.getFullYear(); return entre(now, dateA(y, 5, 8), dateA(y, 5, 8, 23)); }
     },
     assomption: {
@@ -252,7 +252,7 @@
       recettes: ["soupepotimarronchataigne", "chilisincarne", "veloutetomaterotie", "darkStormyCocktail", "blueLagoon", "moelleuxchocolat"],
       estActif: function (now) {
         var y = now.getFullYear();
-        return entre(now, dateA(y, 10, 28), dateA(y, 11, 1, 6)); // 28 oct -> 31 oct (jusqu'au 1er nov 6h)
+        return entre(now, dateA(y, 10, 30), dateA(y, 11, 1, 6)); // 28 oct -> 31 oct (jusqu'au 1er nov 6h)
       }
     },
     noel: {
@@ -288,7 +288,7 @@
       estActif: function (now) {
         var y = now.getFullYear();
         // 26 déc -> 1er jan (gère le passage d'année)
-        return now >= dateA(y, 12, 26) || now <= dateA(y, 1, 1, 23);
+        return now >= dateA(y, 12, 28) || now <= dateA(y, 1, 1, 23);
       }
     },
     galette: {
@@ -301,8 +301,8 @@
       cta: "Entrer 👑",
       menuZone: { top: "55%", bottom: "24%", left: "22%", right: "22%" },
       menuColor: "#e6c25a",
-      menuNoms: { millefeuille: "Mille-feuille", patefeuilletee: "Pâte Feuilletée", financiers: "Financiers" },
-      recettes: ["millefeuille", "patefeuilletee", "financiers"],
+      menuNoms: { galettedesrois: "Galette des Rois", financiers: "Financiers", millefeuille: "Mille-feuille" },
+      recettes: ["galettedesrois", "financiers", "millefeuille"],
       estActif: function (now) {
         var y = now.getFullYear();
         return entre(now, dateA(y, 1, 2), dateA(y, 1, 6, 23)); // 2 -> 6 jan
@@ -341,7 +341,7 @@
       recettes: ["fondantchocolat", "moelleuxchocolat", "mousseauchocolat", "tiramisufraise", "frenchMartini", "burratapeche"],
       estActif: function (now) {
         var y = now.getFullYear();
-        return entre(now, dateA(y, 2, 11), dateA(y, 2, 14, 23)); // 11 -> 14 fév
+        return entre(now, dateA(y, 2, 13), dateA(y, 2, 14, 23)); // 11 -> 14 fév
       }
     },
     paques: {
@@ -359,7 +359,7 @@
       recettes: ["gateaubasque", "crumblefruits", "pavlova", "tartepistache"],
       estActif: function (now) {
         var p = paques(now.getFullYear());
-        var debut = new Date(p.getTime() - 4 * 86400000); // J-4
+        var debut = new Date(p.getTime() - 1 * 86400000); // J-4
         var fin = new Date(p.getFullYear(), p.getMonth(), p.getDate(), 23, 59, 59);
         return entre(now, debut, fin);
       }
