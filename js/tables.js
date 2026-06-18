@@ -600,6 +600,20 @@ function getUniteRecette(nom, n) {
     "pizzamortadelle":        ["pizza", "pizzas"],
     "pizza4saisons":          ["pizza", "pizzas"],
     "pizzapepperoni":         ["pizza", "pizzas"],
+    // — Pâtes à tartiner & confitures : faites en pot (rendement ≈ 1 pot par unité) —
+    "patetartiner":         ["pot", "pots"],
+    "tartinerspeculoos":    ["pot", "pots"],
+    "tartinerpistache":     ["pot", "pots"],
+    "tartinerchocoblanc":   ["pot", "pots"],
+    "caramelbeurresale":    ["pot", "pots"],
+    "lemoncurd":            ["pot", "pots"],
+    "tartinerchococo":      ["pot", "pots"],
+    "tartinerchocoorange":  ["pot", "pots"],
+    "pralinerose":          ["pot", "pots"],
+    "tartineramandecacao":  ["pot", "pots"],
+    "tartinerchococaramel": ["pot", "pots"],
+    "caviaraubergine":      ["pot", "pots"],
+    "confiturefraise":      ["pot", "pots"],
   };
   const [sing, plur] = unites[nom] || ["personne", "personnes"];
   return n > 1 ? plur : sing;
