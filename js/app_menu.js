@@ -1909,6 +1909,9 @@ function afficherMenusSemaine(menus, personnes) {
 
   // Bouton "Sauvegarder en favori"
   injecterBoutonMenuFavori("plan-result", "semaine", menus, personnes);
+
+  // Bouton "Partager le menu" (lien cochable + repli texte)
+  if (typeof injecterBoutonPartageMenu === "function") injecterBoutonPartageMenu("plan-result", menus);
 }
 
 // Injecte un bouton ❤️ dans le header d'un écran menu (semaine ou thématique)
