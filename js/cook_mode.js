@@ -16,6 +16,8 @@
   let _etapes = [];
   let _idx = 0;
   let _nomRecette = "";
+  let _lectureVocale = false; // 🔊 lecture vocale des étapes (TTS)
+  const _ttsOK = ("speechSynthesis" in window) && ("SpeechSynthesisUtterance" in window);
 
   // --- Wake Lock ------------------------------------------------------------
   async function acquerirWakeLock() {
@@ -120,6 +122,34 @@
   window._cmStopTimer = () => { arreterMinuteur(); majMinuteurUI(); };
   window._cmTogglePause = () => { if (_timer) { _timer.paused = !_timer.paused; majMinuteurUI(); } };
 
+  // --- Lecture vocale (TTS, sans fichier ni réseau) -------------------------
+  function lireEtape() {
+    if (!_ttsOK) return;
+    try { speechSynthesis.cancel(); } catch (e) {}
+    const e = _etapes[_idx]; if (!e) return;
+    const txt = ((e.titre || "") + ". " + (e.detail || "")).trim();
+    if (!txt) return;
+    try {
+      const u = new SpeechSynthesisUtterance(txt);
+      u.lang = "fr-FR"; u.rate = 1; u.pitch = 1;
+      speechSynthesis.speak(u);
+    } catch (e2) {}
+  }
+  function arreterLecture() { try { if (_ttsOK) speechSynthesis.cancel(); } catch (e) {} }
+  function majBoutonVoix() {
+    const b = document.getElementById("cookmode-voix");
+    if (!b) return;
+    b.textContent = _lectureVocale ? "🔊" : "🔇";
+    b.setAttribute("aria-label", _lectureVocale ? "Lecture vocale activée — toucher pour couper" : "Lecture vocale coupée — toucher pour activer");
+    b.classList.toggle("cm-voix-on", _lectureVocale);
+  }
+  window._cmToggleVoix = function () {
+    _lectureVocale = !_lectureVocale;
+    try { localStorage.setItem("cm_voix", _lectureVocale ? "1" : "0"); } catch (e) {}
+    majBoutonVoix();
+    if (_lectureVocale) lireEtape(); else arreterLecture();
+  };
+
   // --- Rendu d'une étape ----------------------------------------------------
   function rendreEtape() {
     const e = _etapes[_idx];
@@ -139,6 +169,7 @@
     prec.disabled = _idx === 0;
     suiv.textContent = _idx === n - 1 ? "Terminé ✓" : "Suivant →";
     suiv.focus();
+    if (_lectureVocale) lireEtape();
   }
   function aller(delta) {
     if (!document.getElementById("cookmode-overlay")) return; // sécurité : overlay fermé
@@ -169,7 +200,9 @@
       .cm-top{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.1)}
       .cm-top h1{font-size:15px;font-weight:600;margin:0;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#fff}
       .cm-close{background:rgba(255,255,255,.12);color:#fff;border:none;border-radius:50%;width:40px;height:40px;font-size:18px;cursor:pointer;flex:0 0 auto}
-      .cm-close:focus-visible,.cm-nav-btn:focus-visible,.cm-timer-lancer:focus-visible{outline:3px solid #ff8fb3;outline-offset:2px}
+      .cm-voix{background:rgba(255,255,255,.12);color:#fff;border:none;border-radius:50%;width:40px;height:40px;font-size:18px;cursor:pointer;flex:0 0 auto}
+      .cm-voix.cm-voix-on{background:rgba(255,107,161,.35);box-shadow:0 0 0 1.5px rgba(255,107,161,.6) inset}
+      .cm-close:focus-visible,.cm-voix:focus-visible,.cm-nav-btn:focus-visible,.cm-timer-lancer:focus-visible{outline:3px solid #ff8fb3;outline-offset:2px}
       .cm-progress{height:6px;background:rgba(255,255,255,.12)}
       #cookmode-progress-bar{height:100%;background:linear-gradient(90deg,#ff6ba1,#ff8fb3);transition:width .3s;border-radius:0 3px 3px 0}
       #cookmode-progress-txt{font-size:13px;color:#b9b5c2;font-weight:600}
@@ -206,6 +239,7 @@
     if (document.getElementById("cookmode-overlay")) return;
     _etapes = r.etapes; _idx = 0;
     _nomRecette = (typeof getNomRecette === "function" ? getNomRecette(key) : "") || r.nom || "";
+    try { _lectureVocale = _ttsOK && localStorage.getItem("cm_voix") === "1"; } catch (e) { _lectureVocale = false; }
     injecterStyle();
 
     const esc = (typeof escapeHTML === "function") ? escapeHTML : (s) => String(s == null ? "" : s);
@@ -218,6 +252,7 @@
       <div class="cm-top">
         <button class="cm-close" onclick="fermerModeCuisson()" aria-label="Quitter le mode cuisson">✕</button>
         <h1>👨‍🍳 ${esc(_nomRecette)}</h1>
+        ${_ttsOK ? '<button class="cm-voix" id="cookmode-voix" onclick="_cmToggleVoix()">🔇</button>' : ""}
         <span id="cookmode-progress-txt"></span>
       </div>
       <div class="cm-progress"><div id="cookmode-progress-bar"></div></div>
@@ -233,11 +268,13 @@
     document.addEventListener("visibilitychange", onVisibilite);
     acquerirWakeLock();
     rendreEtape();
+    majBoutonVoix();
     if (typeof window._backGuardPush === "function") window._backGuardPush();
   };
 
   window.fermerModeCuisson = function () {
     arreterMinuteur();
+    arreterLecture();
     libererWakeLock();
     document.removeEventListener("keydown", onClavier);
     document.removeEventListener("visibilitychange", onVisibilite);
