@@ -12,7 +12,8 @@
 
 (function () {
   let _wakeLock = null;
-  let _timer = null;        // { id, restant, total, paused }
+  let _timers = [];         // plusieurs minuteurs en parallèle
+  let _timerSeq = 0;
   let _etapes = [];
   let _idx = 0;
   let _nomRecette = "";
@@ -79,48 +80,59 @@
     const m = Math.floor(sec / 60), s = sec % 60;
     return m + ":" + String(s).padStart(2, "0");
   }
-  function lancerMinuteur(minutes) {
-    arreterMinuteur();
-    _timer = { restant: minutes * 60, total: minutes * 60, paused: false };
-    majMinuteurUI();
-    _timer.id = setInterval(() => {
-      if (_timer.paused) return;
-      _timer.restant--;
-      if (_timer.restant <= 0) {
-        arreterMinuteur();
-        majMinuteurUI(true);
+  const _escT = (s) => (typeof escapeHTML === "function") ? escapeHTML(s) : String(s == null ? "" : s);
+
+  // Plusieurs minuteurs en parallèle — ils persistent quand on change d'étape.
+  function ajouterMinuteur(minutes, label) {
+    const key = "t" + (++_timerSeq);
+    const t = { key, restant: minutes * 60, total: minutes * 60, paused: false, label: label || "", id: null, fini: false };
+    t.id = setInterval(() => {
+      if (t.paused) return;
+      t.restant--;
+      if (t.restant <= 0) {
+        clearInterval(t.id); t.id = null; t.fini = true; t.restant = 0;
         const live = document.getElementById("cookmode-live");
-        if (live) live.textContent = "Minuteur terminé !";
+        if (live) live.textContent = (t.label ? t.label + " : " : "") + "minuteur terminé !";
         bip();
-        return;
       }
-      majMinuteurUI();
+      majBarreTimers();
     }, 1000);
+    _timers.push(t);
+    majBarreTimers();
   }
-  function arreterMinuteur() { if (_timer && _timer.id) clearInterval(_timer.id); _timer = null; }
-  function majMinuteurUI(fini) {
-    const zone = document.getElementById("cookmode-timer");
-    if (!zone) return;
-    if (!_timer && !fini) { zone.innerHTML = boutonTimerHTML(); return; }
-    if (fini) {
-      zone.innerHTML = `<div class="cm-timer-fini" role="status">⏰ Minuteur terminé !</div>` + boutonTimerHTML();
-      return;
-    }
-    zone.innerHTML = `
-      <div class="cm-timer-actif">
-        <span class="cm-timer-chiffre" aria-live="off">${fmt(_timer.restant)}</span>
-        <button class="cm-timer-btn" onclick="_cmTogglePause()" aria-label="${_timer.paused ? "Reprendre" : "Pause"} le minuteur">${_timer.paused ? "▶︎" : "⏸"}</button>
-        <button class="cm-timer-btn" onclick="_cmStopTimer()" aria-label="Arrêter le minuteur">✕</button>
-      </div>`;
+  function arreterTousTimers() { _timers.forEach(t => { if (t.id) clearInterval(t.id); }); _timers = []; }
+  window._cmTimerPause = (key) => { const t = _timers.find(x => x.key === key); if (t && !t.fini) { t.paused = !t.paused; majBarreTimers(); } };
+  window._cmTimerStop = (key) => { const t = _timers.find(x => x.key === key); if (t) { if (t.id) clearInterval(t.id); _timers = _timers.filter(x => x.key !== key); majBarreTimers(); } };
+
+  function majBarreTimers() {
+    const bar = document.getElementById("cookmode-timers-bar");
+    if (!bar) return;
+    if (!_timers.length) { bar.innerHTML = ""; bar.style.display = "none"; return; }
+    bar.style.display = "flex";
+    bar.innerHTML = _timers.map(t => {
+      const label = t.label ? `<span class="cm-tchip-label">${_escT(t.label)}</span>` : "";
+      if (t.fini) {
+        return `<div class="cm-tchip fini" role="status">⏰ ${label}<span class="cm-tchip-time">terminé</span>` +
+          `<button class="cm-tchip-btn" onclick="_cmTimerStop('${t.key}')" aria-label="Fermer le minuteur terminé">✓</button></div>`;
+      }
+      return `<div class="cm-tchip">${label}<span class="cm-tchip-time">${fmt(t.restant)}</span>` +
+        `<button class="cm-tchip-btn" onclick="_cmTimerPause('${t.key}')" aria-label="${t.paused ? "Reprendre" : "Pause"}">${t.paused ? "▶︎" : "⏸"}</button>` +
+        `<button class="cm-tchip-btn" onclick="_cmTimerStop('${t.key}')" aria-label="Arrêter">✕</button></div>`;
+    }).join("");
   }
+
   function boutonTimerHTML() {
     const d = dureeEtape(_etapes[_idx]);
-    if (!d) return "";
-    return `<button class="cm-timer-lancer" onclick="_cmStartTimer(${d})">⏱ Lancer le minuteur (${d} min)</button>`;
+    const btnStep = d ? `<button class="cm-timer-lancer" onclick="_cmAddStepTimer()">⏱ Lancer le minuteur (${d} min)</button>` : "";
+    const btnCustom = `<button class="cm-timer-plus" onclick="_cmAddCustomTimer()">➕ Autre minuteur</button>`;
+    return btnStep + btnCustom;
   }
-  window._cmStartTimer = (min) => lancerMinuteur(min);
-  window._cmStopTimer = () => { arreterMinuteur(); majMinuteurUI(); };
-  window._cmTogglePause = () => { if (_timer) { _timer.paused = !_timer.paused; majMinuteurUI(); } };
+  window._cmAddStepTimer = () => { const d = dureeEtape(_etapes[_idx]); if (d) ajouterMinuteur(d, (_etapes[_idx] && _etapes[_idx].titre) || ""); };
+  window._cmAddCustomTimer = () => {
+    let v; try { v = prompt("Minuteur — combien de minutes ?", "10"); } catch (e) { return; }
+    const min = parseInt(v, 10);
+    if (min > 0 && min <= 600) ajouterMinuteur(min, "");
+  };
 
   // --- Lecture vocale (TTS, sans fichier ni réseau) -------------------------
   function lireEtape() {
@@ -173,7 +185,7 @@
   }
   function aller(delta) {
     if (!document.getElementById("cookmode-overlay")) return; // sécurité : overlay fermé
-    arreterMinuteur();
+    // Les minuteurs continuent quand on change d'étape (cuissons en parallèle).
     const n = _etapes.length;
     if (_idx === n - 1 && delta > 0) { fermerModeCuisson(); return; }
     _idx = Math.max(0, Math.min(n - 1, _idx + delta));
@@ -212,6 +224,15 @@
       .cm-etape-detail{font-size:20px;line-height:1.6;color:#e7e4ee;margin:0;max-width:680px}
       .cm-timer{margin-top:6px;min-height:54px;display:flex;justify-content:center;align-items:center}
       .cm-timer-lancer{background:rgba(255,107,161,.16);color:#ff9ec2;border:1.5px solid rgba(255,107,161,.55);border-radius:14px;padding:13px 20px;font-size:17px;font-weight:600;cursor:pointer}
+      .cm-timer-plus{background:rgba(255,255,255,.08);color:#cfccd4;border:1.5px solid rgba(255,255,255,.18);border-radius:14px;padding:13px 18px;font-size:15px;font-weight:600;cursor:pointer;margin-left:8px}
+      .cm-timers-bar{display:flex;flex-wrap:wrap;gap:8px;padding:10px 14px;justify-content:center;border-top:1px solid rgba(255,255,255,.08);background:rgba(0,0,0,.18)}
+      .cm-tchip{display:flex;align-items:center;gap:8px;background:rgba(255,107,161,.14);border:1px solid rgba(255,107,161,.4);border-radius:999px;padding:6px 8px 6px 14px}
+      .cm-tchip.fini{background:rgba(124,252,154,.16);border-color:rgba(124,252,154,.5);animation:cmpulse 1s ease-in-out infinite}
+      .cm-tchip-label{font-size:12px;color:#e7e4ee;max-width:120px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+      .cm-tchip-time{font-size:18px;font-weight:800;font-variant-numeric:tabular-nums;color:#fff}
+      .cm-tchip.fini .cm-tchip-time{color:#7CFC9A}
+      .cm-tchip-btn{background:rgba(255,255,255,.14);color:#fff;border:none;border-radius:50%;width:30px;height:30px;font-size:13px;cursor:pointer;flex:0 0 auto}
+      .cm-tchip-btn:focus-visible,.cm-timer-plus:focus-visible{outline:3px solid #ff8fb3;outline-offset:2px}
       .cm-timer-actif{display:flex;align-items:center;gap:14px}
       .cm-timer-chiffre{font-size:40px;font-weight:800;font-variant-numeric:tabular-nums;color:#fff}
       .cm-timer-btn{background:rgba(255,255,255,.12);color:#fff;border:none;border-radius:12px;width:48px;height:48px;font-size:18px;cursor:pointer}
@@ -237,7 +258,7 @@
       return;
     }
     if (document.getElementById("cookmode-overlay")) return;
-    _etapes = r.etapes; _idx = 0;
+    _etapes = r.etapes; _idx = 0; _timers = [];
     _nomRecette = (typeof getNomRecette === "function" ? getNomRecette(key) : "") || r.nom || "";
     try { _lectureVocale = _ttsOK && localStorage.getItem("cm_voix") === "1"; } catch (e) { _lectureVocale = false; }
     injecterStyle();
@@ -257,6 +278,7 @@
       </div>
       <div class="cm-progress"><div id="cookmode-progress-bar"></div></div>
       <div id="cookmode-corps"></div>
+      <div id="cookmode-timers-bar" class="cm-timers-bar" style="display:none"></div>
       <div class="cm-bottom">
         <button class="cm-nav-btn cm-prec" id="cookmode-prec" onclick="_cmPrec()">← Précédent</button>
         <button class="cm-nav-btn cm-suiv" id="cookmode-suiv" onclick="_cmSuiv()">Suivant →</button>
@@ -273,7 +295,7 @@
   };
 
   window.fermerModeCuisson = function () {
-    arreterMinuteur();
+    arreterTousTimers();
     arreterLecture();
     libererWakeLock();
     document.removeEventListener("keydown", onClavier);
