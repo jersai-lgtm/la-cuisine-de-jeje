@@ -349,7 +349,8 @@ function lcGenererListe() {
   
   // Map { label : { quantites: [{val, unite}], rayon } }
   const consolidation = {};
-  
+  let coutTotal = 0;
+
   liste.forEach(({cle, personnes}) => {
     const r = recettes[cle];
     if (!r) return;
@@ -365,7 +366,13 @@ function lcGenererListe() {
       ligne = r[tabKey].find(l => l.nb === base || l.patons === base) || r[tabKey][0];
       ratio = personnes / base;
     }
-    
+
+    // Budget : coût de cette recette à la portion choisie
+    if (typeof calculerPrixCaloriesRecette === "function") {
+      const pc = calculerPrixCaloriesRecette(ligne);
+      if (pc && pc.prix > 0) coutTotal += pc.prix * ratio;
+    }
+
     Object.entries(ligne).forEach(([ing, val]) => {
       if (ing === "nb" || ing === "patons" || ing === "total" || ing === "label") return;
       if (LC_NON_ACHAT.has(ing)) return; // eau & co : jamais dans les courses
@@ -446,6 +453,26 @@ function lcGenererListe() {
   
   document.getElementById("lc-rayons").innerHTML = html;
   document.getElementById("lc-progress").textContent = `${nbCoches} / ${nbTotal} cochés`;
+
+  // 💰 Budget estimé du caddie (somme du coût des ingrédients des recettes)
+  (function () {
+    const prog = document.getElementById("lc-progress");
+    if (!prog) return;
+    let b = document.getElementById("lc-budget");
+    if (!b) {
+      b = document.createElement("div");
+      b.id = "lc-budget";
+      b.style.cssText = "font-size:13px;color:#7CFC9A;font-weight:600;margin:0 0 6px";
+      prog.parentNode.insertBefore(b, prog.nextSibling);
+    }
+    if (coutTotal > 0) {
+      b.textContent = `💰 ~${coutTotal.toFixed(2).replace(".", ",")} € de courses (ingrédients des recettes)`;
+      b.style.display = "";
+    } else {
+      b.style.display = "none";
+    }
+  })();
+
   // Respecter la vue active (Liste de courses / Plan de prep)
   if (window._lcVue === "prep") {
     zone.style.display = "none";
