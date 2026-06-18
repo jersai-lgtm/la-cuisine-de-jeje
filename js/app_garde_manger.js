@@ -118,6 +118,10 @@ function vfToggleLabel(label, btn) {
 
 // Retourne l'ensemble des "ingrédients canoniques" actuellement sélectionnés
 // (un label peut couvrir plusieurs variants : beurre, beurrPate, beurrCreme...)
+// Basiques du placard : supposés toujours dispo → on ne les compte pas dans le
+// match ni dans les "manquants" (sinon « il te manque : sel » sur tout).
+const VF_STAPLES = new Set(["sel", "poivre", "huile", "huileolive", "huiledolive", "eau", "sucre", "vinaigre"]);
+
 function vfGetIngredientsCanoniques() {
   const result = new Set();
   if (!window._vfIngredients) return result;
@@ -168,9 +172,11 @@ function vfMettreAJourSelection() {
     // Convertir les ingrédients de la recette en LABELS uniques (pour ne pas compter beurre+beurrPate 2 fois)
     const labelsRecette = new Set();
     ingredients.forEach(ing => {
+      if (VF_STAPLES.has(ing)) return; // basique du placard : supposé dispo
       const label = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
       labelsRecette.add(label);
     });
+    if (labelsRecette.size === 0) return;
     const labelsArr = Array.from(labelsRecette);
     
     // Combien de labels sont sélectionnés ?
@@ -205,6 +211,7 @@ function vfMettreAJourSelection() {
         <div class="vf-result-info">
           <div class="vf-result-nom">${nom}</div>
           <div class="vf-result-manquants">${manquantsTxt}</div>
+          ${manquants.length > 0 ? `<button onclick="event.stopPropagation();vfAjouterManquants('${cle}')" style="margin-top:8px;background:rgba(255,107,161,.16);color:#ff9ec2;border:1px solid rgba(255,107,161,.5);border-radius:10px;padding:7px 12px;font-size:12px;font-weight:600;cursor:pointer">➕ Manquants → liste de courses</button>` : ""}
         </div>
       </div>`;
     }).join("");
@@ -212,6 +219,35 @@ function vfMettreAJourSelection() {
   
   resultatsBox.style.display = "block";
 }
+
+// ➕ Ajoute les ingrédients manquants d'une recette à « Mes articles » (liste de courses)
+async function vfAjouterManquants(cle) {
+  if (!window.currentUser) { if (typeof ouvrirModalAuth === "function") ouvrirModalAuth(); return; }
+  const r = recettes[cle];
+  if (!r || !window.userProfile) return;
+  const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+  if (!tabKey || !r[tabKey][0]) return;
+  const ingredients = Object.keys(r[tabKey][0]).filter(k => k !== "nb" && k !== "patons" && k !== "total" && k !== "label");
+  const manquants = [];
+  const vus = new Set();
+  ingredients.forEach(ing => {
+    if (VF_STAPLES.has(ing)) return;
+    const label = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
+    if (vus.has(label)) return; vus.add(label);
+    if (!window._vfSelection.has(label)) manquants.push(label);
+  });
+  if (!manquants.length) { if (typeof afficherToast === "function") afficherToast("Tu as déjà tout 🙂"); return; }
+  if (!window.userProfile.listeCoursesPerso) window.userProfile.listeCoursesPerso = [];
+  let added = 0;
+  manquants.forEach(lbl => {
+    if (!window.userProfile.listeCoursesPerso.some(x => x.toLowerCase() === lbl.toLowerCase())) {
+      window.userProfile.listeCoursesPerso.push(lbl); added++;
+    }
+  });
+  if (typeof sauvegarderProfil === "function") await sauvegarderProfil({ listeCoursesPerso: window.userProfile.listeCoursesPerso });
+  if (typeof afficherToast === "function") afficherToast(added ? `${added} ingrédient${added > 1 ? "s" : ""} ajouté${added > 1 ? "s" : ""} à ta liste 🛒` : "Déjà dans ta liste 🙂");
+}
+window.vfAjouterManquants = vfAjouterManquants;
 
 // Filtre les chips selon une recherche
 // Normalise un texte pour recherche : minuscule, sans accent, sans ligature (œ→oe)
