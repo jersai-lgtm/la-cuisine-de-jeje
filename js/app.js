@@ -2841,7 +2841,7 @@ function calculer(recetteArg, personnesArg) {
     const ligne = tableau.find(l => l.nb === personnes) || tableau[Math.min(personnes-1, tableau.length-1)];
     if (ligne) {
       document.getElementById("resultat").innerHTML =
-        `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>` +
+        `<h3>Pour ${personnes} ${getUniteRecette(recette, personnes)}</h3>` +
         htmlTableauGenerique(ligne) +
         htmlPrixCalories(recette, personnes);
       return;
@@ -2850,7 +2850,7 @@ function calculer(recetteArg, personnesArg) {
 
   // Autres recettes : calcul proportionnel classique
   const ratio = personnes / data.base;
-  let html = `<h3>Pour ${personnes} personne${personnes > 1 ? "s" : ""}</h3>`;
+  let html = `<h3>Pour ${personnes} ${getUniteRecette(recette, personnes)}</h3>`;
   for (const [nom, qte] of Object.entries(data.ingredients)) {
     const qteCalculee = (qte * ratio).toFixed(1);
     html += `<div class="ingredient"><span>${nom}</span><b>${qteCalculee}</b></div>`;

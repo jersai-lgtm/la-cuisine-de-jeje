@@ -526,6 +526,11 @@ function getUniteRecette(nom, n) {
     "smoothiebowl":    ["bol", "bols"],
     "bowlacai":        ["bol", "bols"],
     "pancakes":        ["pancake", "pancakes"],
+    "naan":            ["naan", "naans"],
+    "eclair":          ["éclair", "éclairs"],
+    "energyballs":     ["boule", "boules"],
+    "mozzarellamaison":   ["boule", "boules"],
+    "fromagefraismaison": ["pièce", "pièces"],
   };
   const [sing, plur] = unites[nom] || ["personne", "personnes"];
   return n > 1 ? plur : sing;
@@ -645,17 +650,9 @@ function htmlPrixCalories(nom, quantite) {
       if (ligne) {
         const res = calculerPrixCaloriesRecette(ligne);
         if (res.prix > 0) {
-          // Déterminer l'unité d'affichage
-          const unites = {
-            pizza: "pâton", brioche: "brioche", gaufres: "gaufre", cookies: "cookie",
-            galettetacos: "galette", painburger: "bun", paindemie: "tranche",
-            overnightoats: "pot", buddhaBowl: "bol", smoothiebowl: "bol", bowlacai: "bol",
-            madeleine: "madeleine", muffins: "muffin", financiers: "financier", macarons: "macaron",
-            gyoza: "gyoza", momos: "momo", falafel: "falafel", canelebordelais: "canelé",
-            sushimaison: "sushi", pintxosbasques: "pintxo", croissant: "croissant",
-            fondantchocolat: "fondant", pancakes: "pancake", crepes: "personne",
-          };
-          const unite = unites[nom] || "personne";
+          // Unité d'affichage : source unique = getUniteRecette (au singulier ici,
+          // car le coût/les calories sont exprimés PAR unité).
+          const unite = getUniteRecette(nom, 1);
           const calParUnite = Math.round(res.cal / quantite);
           
           // === NUTRI-SCORE (calcul auto) ===
