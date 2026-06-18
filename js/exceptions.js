@@ -14,7 +14,24 @@ window.EXCEPTIONS = {
   //                          le foyer). Limite max basse (5 max).
   // -------------------------------------------------------------------------
   unites: [
-    "brioche"           // 🍞 1 brioche (sélecteur spécial dédié)
+    "brioche",          // 🍞 1 brioche (sélecteur spécial dédié)
+    // 🧀 Fromages maison (1 boule / 1 pièce)
+    "mozzarellamaison", "fromagefraismaison",
+    // 🫙 Sauces en pot (tableau rescalé : 1 pot = 1 fournée)
+    "mayonnaise", "ketchup", "saucebarbecue", "harissa", "saucetomate", "vinaigrette",
+    "bechamel", "pestomaison", "aioli", "saucecesar", "chimichurri", "saucecurrycoco",
+    "teriyaki", "sauceblanche", "saucesamourai", "saucetartare", "saucehollandaise",
+    "saucesoja", "saucecocktail", "sauceaigredouce", "saucemoutardemiel", "saucepoivre",
+    "sauceburger", "saucechampignon", "veloute", "sauceespagnole", "bearnaise",
+    "beurreblanc", "saucebordelaise", "romesco", "gribiche", "saucevierge", "nuoccham",
+    "toum", "skordalia", "mojoverde", "raita", "ponzu", "zhoug", "chakalaka", "ajvar",
+    // 🍨 Glaces / sorbets en bac
+    "glacevanille", "glacechocolat", "glacepistache", "glacecafe", "glacecaramel",
+    "glacestracciatella", "glacementhe", "glacerhumraisin", "sorbetcitron", "sorbetframboise",
+    "sorbetmangue", "sorbetpassion", "sorbetpoire", "sorbetfraise", "gelato", "granite", "frozenyogurt",
+    // 🥣 Dips apéritif en bol / pot
+    "houmous", "babaganoush", "guacamole", "tzatziki", "muhammara", "dipfetapoivron",
+    "obatzda", "tapenade", "rillettessaumonfume", "rillettesthon"
   ],
 
   // -------------------------------------------------------------------------
