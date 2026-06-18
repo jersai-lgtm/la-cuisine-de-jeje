@@ -1,0 +1,144 @@
+// =============================================================================
+// 📦 MON GARDE-MANGER DATÉ — aliments avec date de péremption
+// -----------------------------------------------------------------------------
+// L'utilisateur ajoute ses aliments + une date limite (DLC). La liste est triée
+// par urgence (périmé → bientôt → ok), avec une pastille de rappel sur l'onglet
+// (et la nav) tant qu'il reste des aliments à consommer vite (≤ 3 jours).
+// Stockage : window.userProfile.gardeManger = [{ id, nom, dlc:"YYYY-MM-DD" }]
+// =============================================================================
+
+(function () {
+  const esc = (s) => (typeof escapeHTML === "function") ? escapeHTML(s) : String(s == null ? "" : s);
+
+  function injecterStyle() {
+    if (document.getElementById("gm-style")) return;
+    const st = document.createElement("style");
+    st.id = "gm-style";
+    st.textContent = `
+      .gm-add{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}
+      .gm-add input[type=text]{flex:1;min-width:140px;background:#17151c;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:11px;padding:10px 12px;font-size:14px}
+      .gm-add input[type=date]{background:#17151c;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:11px;padding:10px 12px;font-size:14px}
+      .gm-add button{background:var(--accent,#ff4d88);color:#fff;border:none;border-radius:11px;padding:0 16px;font-size:18px;font-weight:700;cursor:pointer}
+      .gm-item{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:12px;margin-bottom:8px;background:rgba(255,255,255,.04);border-left:4px solid #555}
+      .gm-item.gm-perime{border-left-color:#ff4444;background:rgba(255,68,68,.10)}
+      .gm-item.gm-urgent{border-left-color:#ffa000;background:rgba(255,160,0,.08)}
+      .gm-item.gm-ok{border-left-color:#7CFC9A}
+      .gm-item-main{flex:1;min-width:0}
+      .gm-item-nom{display:block;color:#fff;font-size:15px;font-weight:600}
+      .gm-item-dlc{display:block;font-size:12.5px;margin-top:2px}
+      .gm-perime .gm-item-dlc{color:#ff8a8a}
+      .gm-urgent .gm-item-dlc{color:#ffc266}
+      .gm-ok .gm-item-dlc{color:#9fdcb0}
+      .gm-suppr{background:transparent;border:none;color:#ff7a7a;font-size:16px;cursor:pointer;padding:4px 6px;flex:0 0 auto}
+      .gm-vide{text-align:center;color:#88858f;font-size:14px;padding:24px 10px;line-height:1.6}
+      #gm-badge{display:none;background:#ff4444;color:#fff;font-size:11px;font-weight:700;border-radius:20px;padding:1px 6px;margin-left:4px;vertical-align:middle}
+      #gm-nav-badge{display:none;position:absolute;top:-3px;right:-7px;background:#ff4444;color:#fff;font-size:10px;font-weight:700;border-radius:20px;min-width:16px;height:16px;line-height:16px;text-align:center;padding:0 4px;box-shadow:0 0 0 2px #14121a}
+      .nav-icone-wrap{position:relative}
+      .gm-recettes-lien{display:inline-block;margin-top:14px;color:var(--accent-soft,#ff8fb3);font-size:13px;cursor:pointer;background:none;border:none}
+    `;
+    (document.head || document.documentElement).appendChild(st);
+  }
+
+  function liste() { return (window.userProfile && window.userProfile.gardeManger) || []; }
+
+  // Jours restants avant la DLC (0 = aujourd'hui, négatif = périmé)
+  function joursRestants(dlc) {
+    if (!dlc) return null;
+    const d = new Date(dlc + "T00:00:00");
+    if (isNaN(d)) return null;
+    const now = new Date();
+    const t0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    return Math.round((d - t0) / 86400000);
+  }
+  function fmtDate(dlc) {
+    const d = new Date(dlc + "T00:00:00");
+    if (isNaN(d)) return dlc;
+    return String(d.getDate()).padStart(2, "0") + "/" + String(d.getMonth() + 1).padStart(2, "0");
+  }
+  function niveau(j) {
+    if (j == null) return "ok";
+    if (j < 0) return "perime";
+    if (j <= 3) return "urgent";
+    return "ok";
+  }
+  function texteDlc(j, dlc) {
+    if (j == null) return "Sans date";
+    if (j < 0) return `⚠️ Périmé depuis ${-j} j (le ${fmtDate(dlc)})`;
+    if (j === 0) return `⏰ À consommer aujourd'hui`;
+    if (j === 1) return `🟠 Demain (${fmtDate(dlc)})`;
+    if (j <= 3) return `🟠 Dans ${j} jours (${fmtDate(dlc)})`;
+    return `🟢 Le ${fmtDate(dlc)} (dans ${j} j)`;
+  }
+
+  // Nombre d'aliments urgents (≤ 3 j ou périmés) — pour la pastille
+  function nbUrgents() {
+    return liste().filter(it => { const j = joursRestants(it.dlc); return j != null && j <= 3; }).length;
+  }
+
+  function majBadge() {
+    injecterStyle();
+    const n = nbUrgents();
+    ["gm-badge", "gm-nav-badge"].forEach(id => {
+      const b = document.getElementById(id);
+      if (b) { b.textContent = n; b.style.display = n > 0 ? "inline-block" : "none"; }
+    });
+  }
+
+  function render() {
+    injecterStyle();
+    majBadge();
+    const cont = document.getElementById("gm-liste");
+    if (!cont) return;
+    const items = liste().slice().sort((a, b) => {
+      const ja = joursRestants(a.dlc), jb = joursRestants(b.dlc);
+      if (ja == null) return 1; if (jb == null) return -1;
+      return ja - jb;
+    });
+    if (!items.length) {
+      cont.innerHTML = `<div class="gm-vide">Ton garde-manger est vide.<br>Ajoute tes aliments avec leur date de péremption — on te préviendra quand ça approche 🔔</div>`;
+      return;
+    }
+    cont.innerHTML = items.map(it => {
+      const j = joursRestants(it.dlc);
+      const niv = niveau(j);
+      return `<div class="gm-item gm-${niv}">
+        <div class="gm-item-main">
+          <span class="gm-item-nom">${esc(it.nom)}</span>
+          <span class="gm-item-dlc">${texteDlc(j, it.dlc)}</span>
+        </div>
+        <button class="gm-suppr" aria-label="Retirer ${esc(it.nom)}" onclick="gmSupprimer('${it.id}')">✕</button>
+      </div>`;
+    }).join("");
+  }
+
+  window.gmAjouter = async function () {
+    if (!window.currentUser) { if (typeof ouvrirModalAuth === "function") ouvrirModalAuth(); return; }
+    const inom = document.getElementById("gm-nom");
+    const idate = document.getElementById("gm-date");
+    if (!inom) return;
+    const nom = (inom.value || "").trim();
+    const dlc = (idate && idate.value) || "";
+    if (!nom) { if (typeof afficherToast === "function") afficherToast("Donne un nom à l'aliment 🙂"); return; }
+    if (!window.userProfile.gardeManger) window.userProfile.gardeManger = [];
+    const id = "g" + Date.now().toString(36) + Math.floor(Math.random() * 1e4).toString(36);
+    window.userProfile.gardeManger.push({ id, nom, dlc });
+    inom.value = ""; if (idate) idate.value = "";
+    if (typeof sauvegarderProfil === "function") await sauvegarderProfil({ gardeManger: window.userProfile.gardeManger });
+    render();
+    inom.focus();
+  };
+
+  window.gmSupprimer = async function (id) {
+    if (!window.userProfile) return;
+    window.userProfile.gardeManger = (window.userProfile.gardeManger || []).filter(x => x.id !== id);
+    if (typeof sauvegarderProfil === "function") await sauvegarderProfil({ gardeManger: window.userProfile.gardeManger });
+    render();
+  };
+
+  window.gmRender = render;
+  window.gmMajBadge = majBadge;
+
+  window.addEventListener("profilMisAJour", majBadge);
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", majBadge);
+  else majBadge();
+})();

@@ -936,16 +936,20 @@ function lcToggleItem(label, checkbox) {
 function switchCuisineTab(tab) {
   document.getElementById("tab-videfrigo")?.classList.toggle("active", tab === "videfrigo");
   document.getElementById("tab-courses")?.classList.toggle("active", tab === "courses");
+  document.getElementById("tab-pantry")?.classList.toggle("active", tab === "pantry");
   const ongletVF = document.getElementById("cuisine-onglet-videfrigo");
   const ongletC  = document.getElementById("cuisine-onglet-courses");
+  const ongletP  = document.getElementById("cuisine-onglet-pantry");
   if (ongletVF) ongletVF.style.display = tab === "videfrigo" ? "block" : "none";
   if (ongletC)  ongletC.style.display  = tab === "courses"   ? "block" : "none";
-  
+  if (ongletP)  ongletP.style.display  = tab === "pantry"    ? "block" : "none";
+
   // Si on bascule sur Courses, rafraîchir l'affichage
   if (tab === "courses") {
     lcAfficherPanier();
     lcGenererListe();
   }
+  if (tab === "pantry" && typeof gmRender === "function") gmRender();
 }
 
 // === v247 : Génère un prompt + copie + affiche les options IA ===
