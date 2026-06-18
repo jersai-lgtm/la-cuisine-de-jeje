@@ -1,5 +1,5 @@
 // ============================================================
-// recettes_entrees.js — Recettes de catégorie "entrees" (Entrées) — 26 recettes
+// recettes_entrees.js — Recettes de catégorie "entrees" (Entrées) — 28 recettes
 // 👉 Pour AJOUTER une recette Entrées : place-la juste avant le  });  final.
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
@@ -1855,6 +1855,73 @@ oeufmayo: {
       {icone:"📦", titre:"Garnir et plier", detail:"Répartir la garniture sur une moitié et replier en rabattant les bords pour former un carré.", badge:"📦 Pliage"},
       {icone:"🍳", titre:"Cuire", detail:"Cuire à la poêle sèche 2-3 min par face jusqu'à ce que la galette soit dorée et croustillante.", badge:"🔥 Cuisson"},
       {icone:"🧈", titre:"Servir", detail:"Badigeonner d'un voile de beurre fondu et servir chaud, coupé en parts.", badge:"🍽️ Dressage"}
+    ]
+  },
+  mozzarellamaison: {
+    nom: "Mozzarella maison", cat: "entrees", pays: "italie", dateAjout: "2026-06-18T10:00:00",
+    base: 1, temps: "45 min", niveau: "⭐⭐ Moyen", emoji: "🧀",
+    description: "La vraie mozzarella filée maison : le lait caille avec le jus de citron et la présure, puis la pâte est étirée à chaud jusqu'à devenir souple et brillante. Le thermomètre est indispensable — et surtout pas de lait UHT !",
+    saisons: ["printemps","ete","automne","hiver"],
+    liees: [],
+    tableauMozzarellamaison: [
+      { nb: 1, lait: "1 L", citron: "1", presure: "8 gouttes", sel: "12 g" },
+      { nb: 2, lait: "2 L", citron: "2", presure: "16 gouttes", sel: "24 g" },
+      { nb: 3, lait: "3 L", citron: "3", presure: "24 gouttes", sel: "36 g" },
+      { nb: 4, lait: "4 L", citron: "4", presure: "32 gouttes", sel: "48 g" },
+      { nb: 5, lait: "5 L", citron: "5", presure: "40 gouttes", sel: "60 g" },
+      { nb: 6, lait: "6 L", citron: "6", presure: "48 gouttes", sel: "72 g" },
+      { nb: 7, lait: "7 L", citron: "7", presure: "56 gouttes", sel: "84 g" },
+      { nb: 8, lait: "8 L", citron: "8", presure: "64 gouttes", sel: "96 g" },
+      { nb: 9, lait: "9 L", citron: "9", presure: "72 gouttes", sel: "108 g" },
+      { nb: 10, lait: "10 L", citron: "10", presure: "80 gouttes", sel: "120 g" },
+      { nb: 11, lait: "11 L", citron: "11", presure: "88 gouttes", sel: "132 g" },
+      { nb: 12, lait: "12 L", citron: "12", presure: "96 gouttes", sel: "144 g" },
+      { nb: 13, lait: "13 L", citron: "13", presure: "104 gouttes", sel: "156 g" },
+      { nb: 14, lait: "14 L", citron: "14", presure: "112 gouttes", sel: "168 g" },
+      { nb: 15, lait: "15 L", citron: "15", presure: "120 gouttes", sel: "180 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🍋", titre:"Acidifier", detail:"Verser le lait FROID (jamais UHT) dans une grande marmite, ajouter le jus de citron et bien mélanger.", badge:"⏱ 5 min"},
+      {icone:"🌡️", titre:"Chauffer à 32 °C", detail:"Chauffer doucement jusqu'à 32 °C en remuant, puis couper le feu. CLÉ : le thermomètre est indispensable.", badge:"🌡️ 32 °C"},
+      {icone:"💧", titre:"Emprésurer", detail:"Ajouter la présure diluée dans un peu d'eau non chlorée, remuer 30 s, puis ne plus toucher 5 à 10 min : le caillé prend (la surface se fend nettement).", badge:"⏱ 10 min"},
+      {icone:"🔪", titre:"Couper le caillé", detail:"Couper le caillé en cubes de 2 cm. Chauffer à nouveau doucement jusqu'à 41-42 °C en remuant délicatement : le caillé se sépare du petit-lait.", badge:"🌡️ 42 °C"},
+      {icone:"🥄", titre:"Égoutter", detail:"Récupérer le caillé à l'écumoire dans une passoire, presser doucement pour retirer le maximum de petit-lait.", badge:"⏱ 5 min"},
+      {icone:"♨️", titre:"Filer", detail:"Plonger le caillé par portions dans une eau à 80-85 °C jusqu'à ce qu'il devienne souple et élastique (~60 °C à cœur). Gants conseillés, c'est chaud !", badge:"🌡️ 80 °C"},
+      {icone:"✨", titre:"Étirer et bouler", detail:"Étirer et replier la pâte plusieurs fois jusqu'à ce qu'elle soit lisse et brillante. Saler, puis former des boules.", badge:"⏱ 5 min"},
+      {icone:"🧊", titre:"Raffermir et conserver", detail:"Plonger les boules dans de l'eau glacée 10-15 min. Conserver au frais dans un peu de petit-lait salé. Meilleure sous 2-3 jours.", badge:null}
+    ]
+  },
+  fromagefraismaison: {
+    nom: "Fromage frais maison", cat: "entrees", pays: "france", dateAjout: "2026-06-18T10:05:00",
+    base: 2, temps: "15 min", niveau: "⭐ Facile", emoji: "🧀",
+    description: "Le fromage frais maison façon paneer, en 15 minutes et sans présure : le lait chaud tranché au vinaigre blanc, égoutté dans un torchon. À tartiner, ou pressé pour le découper et le poêler.",
+    saisons: ["printemps","ete","automne","hiver"],
+    liees: [],
+    tableauFromagefraismaison: [
+      { nb: 1, lait: "1 L", vinaigre: "30 ml", sel: "2 g" },
+      { nb: 2, lait: "2 L", vinaigre: "60 ml", sel: "4 g" },
+      { nb: 3, lait: "3 L", vinaigre: "90 ml", sel: "6 g" },
+      { nb: 4, lait: "4 L", vinaigre: "120 ml", sel: "8 g" },
+      { nb: 5, lait: "5 L", vinaigre: "150 ml", sel: "10 g" },
+      { nb: 6, lait: "6 L", vinaigre: "180 ml", sel: "12 g" },
+      { nb: 7, lait: "7 L", vinaigre: "210 ml", sel: "14 g" },
+      { nb: 8, lait: "8 L", vinaigre: "240 ml", sel: "16 g" },
+      { nb: 9, lait: "9 L", vinaigre: "270 ml", sel: "18 g" },
+      { nb: 10, lait: "10 L", vinaigre: "300 ml", sel: "20 g" },
+      { nb: 11, lait: "11 L", vinaigre: "330 ml", sel: "22 g" },
+      { nb: 12, lait: "12 L", vinaigre: "360 ml", sel: "24 g" },
+      { nb: 13, lait: "13 L", vinaigre: "390 ml", sel: "26 g" },
+      { nb: 14, lait: "14 L", vinaigre: "420 ml", sel: "28 g" },
+      { nb: 15, lait: "15 L", vinaigre: "450 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      {icone:"🥛", titre:"Chauffer le lait", detail:"Porter le lait (UHT accepté ici) à frémissement : petites bulles sur les bords, sans ébullition franche.", badge:"⏱ 8 min"},
+      {icone:"🍶", titre:"Trancher au vinaigre", detail:"Hors du feu, verser le vinaigre petit à petit en remuant : le lait tranche (caillé blanc + petit-lait translucide). Ajouter un filet de vinaigre s'il ne caille pas assez.", badge:"⏱ 2 min"},
+      {icone:"⏳", titre:"Repos", detail:"Laisser reposer 5 min pour que le caillé se rassemble.", badge:"⏱ 5 min"},
+      {icone:"🧺", titre:"Égoutter", detail:"Verser dans une passoire tapissée d'un torchon propre. Rincer à l'eau froide pour ôter le goût de vinaigre, puis saler.", badge:"⏱ 3 min"},
+      {icone:"🧱", titre:"Presser", detail:"Presser le torchon pour évacuer le liquide. Pour un fromage ferme à découper : sous un poids 30 min à 1 h. Pour tartiner : laisser plus mou.", badge:null}
     ]
   },
 });
