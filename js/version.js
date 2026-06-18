@@ -7,7 +7,7 @@
 // 👉 À CHAQUE déploiement : mets ce numéro À JOUR (le même que le ?v= dans
 //    index.html et que CACHE_NAME dans service-worker.js).
 // ============================================================
-const APP_VERSION = "1.11.5";
+const APP_VERSION = "1.11.6";
 
 console.log("%c🍳 La Cuisine de Jéjé — version " + APP_VERSION,
             "color:#ff6ba1;font-weight:bold;font-size:14px");
