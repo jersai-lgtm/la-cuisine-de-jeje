@@ -1666,6 +1666,22 @@ function htmlBilanSemaine(menus, personnes) {
 
 // Nombre de personnes PAR repas (Phase A) — map parallèle menus._pers["Jour-moment"].
 // Par défaut = le nombre global. Permet "lundi midi seul à 1, mardi soir à 4".
+// Re-sauvegarde le menu courant après une édition par repas, pour que les
+// modifs (personnes, format, retrait) survivent à la navigation. Débounce pour
+// ne pas spammer Firebase quand on clique vite sur les steppers.
+let _persistMenuTimer = null;
+function _persisterMenuCourant(immediat) {
+  clearTimeout(_persistMenuTimer);
+  const save = () => {
+    const m = window._derniersMenus;
+    if (m && Array.isArray(m.semaine) && typeof sauvegarderMenus === "function") {
+      try { sauvegarderMenus(m, m.personnes || 4, m.semaine.map(j => j.jour)); } catch (e) {}
+    }
+  };
+  if (immediat) save();
+  else _persistMenuTimer = setTimeout(save, 500);
+}
+
 function changerPersRepas(jn, m, delta) {
   const menus = window._derniersMenus;
   if (!menus) return;
@@ -1673,6 +1689,7 @@ function changerPersRepas(jn, m, delta) {
   const cur = menus._pers[jn + "-" + m] || (menus.personnes || 4);
   menus._pers[jn + "-" + m] = Math.max(1, Math.min(20, cur + delta));
   afficherMenusSemaine(menus, menus.personnes || 4);
+  _persisterMenuCourant();
 }
 window.changerPersRepas = changerPersRepas;
 
@@ -1723,6 +1740,7 @@ window.setFormatRepasSlot = function (jn, m, format) {
   }
   fermerMenuRepas();
   afficherMenusSemaine(menus, menus.personnes || 4);
+  _persisterMenuCourant(true);
 };
 window.retirerRepasSlot = function (jn, m) {
   const menus = window._derniersMenus; if (!menus) return;
@@ -1730,6 +1748,7 @@ window.retirerRepasSlot = function (jn, m) {
   jour[m] = null;
   fermerMenuRepas();
   afficherMenusSemaine(menus, menus.personnes || 4);
+  _persisterMenuCourant(true);
 };
 
 function afficherMenusSemaine(menus, personnes) {
