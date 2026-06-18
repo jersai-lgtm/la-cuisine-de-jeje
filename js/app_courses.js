@@ -334,7 +334,14 @@ function lcGenererListe() {
   if (toggle) toggle.style.display = liste.length ? "flex" : "none";
 
   if (liste.length === 0) {
-    zone.style.display = "none";
+    // Pas de recette sélectionnée : on garde « Ta liste de courses » affichée
+    // pour que « Mes articles » (ancré dans #lc-liste) reste visible, ajoutable
+    // et partageable même sans recette.
+    const rayonsEl = document.getElementById("lc-rayons");
+    if (rayonsEl) rayonsEl.innerHTML = '<p style="text-align:center;color:#88858f;font-size:13px;padding:8px 4px 2px;margin:0">Aucune recette sélectionnée — ajoute des recettes ci-dessus, ou tes propres articles ci-dessous. 👇</p>';
+    const prog = document.getElementById("lc-progress");
+    if (prog) prog.textContent = "";
+    zone.style.display = "block";
     const prepZ = document.getElementById("lc-plan-prep");
     if (prepZ) prepZ.style.display = "none";
     return;

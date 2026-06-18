@@ -32,9 +32,10 @@
   function zone() {
     let z = document.getElementById("lc-perso-zone");
     if (!z) {
-      // Ancré après le panier de recettes (#lc-panier) : toujours visible dans
-      // l'onglet courses, même sans recette sélectionnée. Repli sur #lc-rayons.
-      const ancre = document.getElementById("lc-panier") || document.getElementById("lc-rayons");
+      // Ancré DANS la liste, juste après les rayons de recettes (#lc-rayons) :
+      // « Mes articles » devient la dernière section de « Ta liste de courses »,
+      // donc clairement incluse dans le partage. Repli sur #lc-panier.
+      const ancre = document.getElementById("lc-rayons") || document.getElementById("lc-panier");
       if (!ancre) return null;
       z = document.createElement("div");
       z.id = "lc-perso-zone";
