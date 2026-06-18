@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "1.11.21",
+    titre: "🆕 Vocal, minuteurs, budget, garde-manger…",
+    texte: "Grosse mise à jour ! 🔊 En mode cuisson, les étapes se lisent à voix haute (mains libres) et tu peux lancer plusieurs minuteurs en parallèle. 💰 Ta liste de courses affiche son budget estimé. 📤 Partage ton menu de la semaine comme ta liste. 🥕 Le vide-frigo ignore les basiques (sel, huile…) et ajoute les ingrédients manquants à ta liste en un clic. 📦 Et un nouveau garde-manger te prévient avant que tes aliments ne périment ! 👨‍🍳"
+  },
+  {
     v: "1.11.7",
     titre: "📤 Partage ta liste de courses",
     texte: "Tu es à la maison et quelqu'un fait les courses ? Sur ta liste, le bouton « 📤 Partager la liste » envoie un lien (WhatsApp, SMS, mail…). La personne l'ouvre et voit ta liste rangée par rayon, avec des cases à cocher au fur et à mesure — sans compte ni appli à installer. Les articles que tu as déjà cochés arrivent déjà barrés. Pratique pour faire les courses à deux ! 🛒"
