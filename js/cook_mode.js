@@ -149,6 +149,27 @@
     return enPause;
   };
   window._cmNbTimers = () => _timers.filter(t => !t.fini).length;
+  // Aller directement à l'étape n (1-based). Renvoie n si OK, sinon null.
+  window._cmAllerEtape = (n) => {
+    if (!document.getElementById("cookmode-overlay")) return null;
+    n = parseInt(n, 10);
+    if (!(n >= 1 && n <= _etapes.length)) return null;
+    _idx = n - 1; rendreEtape(); return n;
+  };
+  window._cmTotalEtapes = () => _etapes.length;
+  // Temps restant des minuteurs actifs : [{label, restant(sec)}]
+  window._cmTempsRestant = () => _timers.filter(t => !t.fini).map(t => ({ label: t.label, restant: t.restant }));
+  // Ajoute min minutes au dernier minuteur actif. Renvoie min si OK, sinon null.
+  window._cmAjouterMinutes = (min) => {
+    min = parseInt(min, 10);
+    if (!(min > 0)) return null;
+    const actifs = _timers.filter(t => !t.fini);
+    const t = actifs[actifs.length - 1];
+    if (!t) return null;
+    t.restant += min * 60; t.total += min * 60; t.paused = false;
+    majBarreTimers();
+    return min;
+  };
 
   // --- Lecture vocale (TTS, sans fichier ni réseau) -------------------------
   function lireEtape() {
