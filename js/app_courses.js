@@ -160,7 +160,7 @@ function afficherToastCourses(message) {
 // ingrédients déjà visibles sur la fiche.
 function ajouterRecetteAuxCourses(cle) {
   if (!window.userProfile) {
-    if (typeof afficherToast === "function") afficherToast("⚠️ Connecte-toi pour utiliser la liste de courses");
+    if (typeof afficherToast === "function") afficherToast("🛒 Connecte-toi (gratuit) pour garder ta liste de courses sur tous tes appareils");
     return;
   }
   if (typeof recettes !== "undefined" && !recettes[cle]) return;

@@ -53,7 +53,7 @@ function majCompteurAvis() {
 
 async function ouvrirModalAvis() {
   if (!window.currentUser) {
-    if (typeof afficherToast === "function") afficherToast("Connecte-toi pour donner ton avis 🙏");
+    if (typeof afficherToast === "function") afficherToast("Connecte-toi (gratuit) pour partager ton avis avec la communauté 🙏");
     if (typeof ouvrirModalAuth === "function") ouvrirModalAuth();
     return;
   }

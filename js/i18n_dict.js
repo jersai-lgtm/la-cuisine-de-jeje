@@ -275,6 +275,7 @@ window.I18N_DICT = {
   "🌿 Vegan": "🌿 Vegan", "Sans produit animal": "No animal products",
   "Occasions": "Occasions", "🥂 Apéro": "🥂 Apéritif", "🧺 Pique-nique": "🧺 Picnic", "🎄 Fêtes": "🎄 Festive",
   "🎲 Surprends-moi": "🎲 Surprise me",
+  "Gratuit — garde tes favoris ⭐, ta liste de courses 🛒 et ton garde-manger 📦, synchronisés sur tous tes appareils.": "Free — keep your favorites ⭐, shopping list 🛒 and pantry 📦, synced across all your devices.",
   "Trier les recettes": "Sort recipes", "↕ Trier…": "↕ Sort…",
   "⏱ Plus rapide": "⏱ Fastest", "💰 Moins cher": "💰 Cheapest", "🔥 Moins calorique": "🔥 Fewest calories",
   "🌱 Printemps": "🌱 Spring", "🌞 Été": "🌞 Summer", "🍂 Automne": "🍂 Autumn", "❄️ Hiver": "❄️ Winter",
