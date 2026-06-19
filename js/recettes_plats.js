@@ -75,6 +75,7 @@ Object.assign(recettes, {
     ]
   },
   chaponfarci: {
+    liees: ["paindemie"],
     nom: "Chapon Farci aux Champignons",
     cat: "plats", pays: "france",
     dateAjout: "2026-06-06T23:33:00",
@@ -147,6 +148,7 @@ Object.assign(recettes, {
     ]
   },
   salmonteriyaki: {
+    liees: ["teriyaki"],
     nom: "Saumon Teriyaki",
     cat: "plats", pays: "japon",
     base: 2,
@@ -319,7 +321,7 @@ Object.assign(recettes, {
     ]
   },
   burgermaison: {
-    liees: ["painburger","sauceburger"],
+    liees: ["painburger", "sauceburger", "mayonnaise", "ketchup"],
     nom: "Burger Maison",
     cat: "plats", saisons: ["ete"], pays: "usa",
     base: 2,
@@ -354,6 +356,7 @@ Object.assign(recettes, {
     ]
   },
   couscous: {
+    liees: ["harissa"],
     nom: "Couscous Royal",
     cat: "plats", pays: "maroc",
     base: 6,
@@ -457,6 +460,7 @@ Object.assign(recettes, {
     ]
   },
   butterchicken: {
+    liees: ["saucetomate"],
     nom: "Poulet Beurre",
     cat: "plats", saisons: ["ete"], pays: "inde",
     base: 4,
@@ -594,6 +598,7 @@ Object.assign(recettes, {
     ]
   },
   tikamasala: {
+    liees: ["saucetomate"],
     nom: "Poulet Tikka Masala",
     cat: "plats", saisons: ["ete"], pays: "inde",
     base: 4,
@@ -797,6 +802,7 @@ Object.assign(recettes, {
     ]
   },
   poulettandoori: {
+    liees: ["raita"],
     nom: "Poulet Tandoori",
     cat: "plats", pays: "inde",
     base: 4,
@@ -1687,6 +1693,7 @@ Object.assign(recettes, {
     ]
   },
   pouletteriyaki: {
+    liees: ["teriyaki"],
     nom: "Poulet Teriyaki",
     cat: "plats", pays: "japon",
     base: 4,
@@ -1923,7 +1930,7 @@ Object.assign(recettes, {
     ]
   },
   wagyuBurger: {
-    liees: ["painburger","sauceburger"],
+    liees: ["painburger", "sauceburger", "mayonnaise", "ketchup"],
     nom: "Burger Wagyu",
     cat: "plats", saisons: ["ete"], pays: "usa",
     base: 2,
@@ -2026,6 +2033,7 @@ Object.assign(recettes, {
     ]
   },
   navarin: {
+    liees: ["paincampagne"],
     nom: "Navarin d\'Agneau",
     cat: "plats", saisons: ["printemps"], pays: "france",
     base: 4,
@@ -2527,6 +2535,7 @@ Object.assign(recettes, {
     ]
   },
   moulesmarinieres: {
+    liees: ["paincampagne"],
     nom: "Moules Marinières",
     cat: "plats", pays: "france",
     base: 4,
@@ -3032,6 +3041,7 @@ Object.assign(recettes, {
     ]
   },
   boulettesViande: {
+    liees: ["saucetomate"],
     nom: "Boulettes Sauce Tomate",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 4,
@@ -3534,6 +3544,7 @@ Object.assign(recettes, {
     ]
   },
   jollofrice: {
+    liees: ["saucetomate"],
     nom: "Jollof Rice Nigérian",
     cat: "plats", pays: "nigeria",
     base: 4,
@@ -3739,6 +3750,7 @@ Object.assign(recettes, {
     ]
   },
   paneertikkamasala: {
+    liees: ["saucetomate"],
     nom: "Paneer Tikka Masala",
     cat: "plats", pays: "inde",
     base: 4,
@@ -4168,6 +4180,7 @@ Object.assign(recettes, {
     ]
   },
   bunbonamoo: {
+    liees: ["nuoccham"],
     nom: "Bún Bò Nam Bộ",
     cat: "plats", saisons: ["ete","printemps"], pays: "vietnam",
     base: 4,
@@ -4460,6 +4473,7 @@ Object.assign(recettes, {
     ]
   },
   keftamarocaine: {
+    liees: ["saucetomate"],
     nom: "Kefta Marocaine",
     cat: "plats", pays: "maroc",
     base: 4,
@@ -4608,7 +4622,7 @@ Object.assign(recettes, {
     ]
   },
   quichepoireaux: {
-    liees: ["patebrisee"],
+    liees: ["patebrisee", "vinaigrette"],
     nom: "Quiche aux Poireaux",
     cat: "plats", saisons: ["hiver","printemps","automne"], pays: "france",
     base: 6,
@@ -4685,7 +4699,7 @@ Object.assign(recettes, {
     ]
   },
   currywurst: {
-    liees: ["ketchup"],
+    liees: ["ketchup", "painsigle", "saucetomate"],
     nom: "Currywurst",
     cat: "plats", pays: "allemagne",
     base: 4,
@@ -4761,6 +4775,7 @@ Object.assign(recettes, {
     ]
   },
   karaagepoulet: {
+    liees: ["mayonnaise"],
     nom: "Karaage Japonais",
     cat: "plats", pays: "japon",
     base: 4,
@@ -4955,6 +4970,7 @@ Object.assign(recettes, {
     ]
   },
   raclette: {
+    liees: ["vinaigrette"],
     nom: "Raclette Savoyarde",
     cat: "plats", saisons: ["hiver","automne"], pays: "france",
     base: 4,
@@ -5032,6 +5048,7 @@ Object.assign(recettes, {
     ]
   },
   tartareboeuf: {
+    liees: ["paincampagne", "ketchup", "vinaigrette", "saucetartare"],
     nom: "Tartare de Bœuf",
     cat: "plats", pays: "france",
     base: 4,
@@ -5070,6 +5087,7 @@ Object.assign(recettes, {
     ]
   },
   okonomiyaki: {
+    liees: ["mayonnaise"],
     nom: "Okonomiyaki",
     cat: "plats", pays: "japon",
     base: 4,
@@ -5110,6 +5128,7 @@ Object.assign(recettes, {
     ]
   },
   biryanipoulet: {
+    liees: ["raita"],
     nom: "Biryani Poulet",
     cat: "plats", pays: "inde",
     base: 6,
@@ -5273,6 +5292,7 @@ Object.assign(recettes, {
     ]
   },
   fishandchips: {
+    liees: ["saucetartare"],
     nom: "Fish and Chips",
     cat: "plats", pays: "angleterre",
     base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🐟",
@@ -5695,6 +5715,7 @@ Object.assign(recettes, {
     ]
   },
   ajidegallina: {
+    liees: ["paindemie"],
     nom: "Ají de Gallina",
     cat: "plats", pays: "perou",
     dateAjout: "2026-06-01",
@@ -6618,7 +6639,7 @@ Object.assign(recettes, {
     ]
   },
   enchiladas: {
-    liees: ["galettetacos"],
+    liees: ["galettetacos", "saucetomate"],
     cat: "plats", pays: "mexique",
     dateAjout: "2026-06-01",
     base: 4,
@@ -6763,6 +6784,7 @@ Object.assign(recettes, {
     ]
   },
   francesinha: {
+    liees: ["paindemie", "saucetomate"],
     cat: "plats", pays: "portugal",
     dateAjout: "2026-06-01",
     base: 2,
@@ -7015,6 +7037,7 @@ Object.assign(recettes, {
     ]
   },
   chilesrellenos: {
+    liees: ["saucetomate"],
     cat: "plats", pays: "mexique",
     dateAjout: "2026-06-02",
     base: 4,
@@ -7160,6 +7183,7 @@ Object.assign(recettes, {
     ]
   },
   parmigiana: {
+    liees: ["saucetomate"],
     cat: "plats", pays: "italie",
     dateAjout: "2026-06-02",
     base: 4,
@@ -7455,6 +7479,7 @@ Object.assign(recettes, {
     ]
   },
   chilicrab: {
+    liees: ["saucetomate"],
     nom: "Chili Crab",
     cat: "plats", pays: "singapour",
     dateAjout: "2026-06-03",
@@ -8406,6 +8431,7 @@ Object.assign(recettes, {
     ]
   },
   poivronsfarcis: {
+    liees: ["saucetomate"],
     nom: "Poivrons farcis",
     dateAjout: "2026-06-04",
     cat: "plats", pays: "france",
@@ -8625,6 +8651,7 @@ Object.assign(recettes, {
     ]
   },
   rougailsaucisse: {
+    liees: ["saucetomate"],
     nom: "Rougail saucisse",
     dateAjout: "2026-06-05",
     cat: "plats", pays: "reunion",
@@ -9184,6 +9211,7 @@ Object.assign(recettes, {
     ]
   },
   choufarci: {
+    liees: ["saucetomate"],
     nom: "Chou Farci",
     cat: "plats",
     pays: "france",
@@ -9603,6 +9631,7 @@ Object.assign(recettes, {
     ]
   },
   fideua: {
+    liees: ["aioli"],
     nom: "Fideuà",
     cat: "plats",
     pays: "espagne",
@@ -9717,6 +9746,7 @@ Object.assign(recettes, {
     ]
   },
   channamasala: {
+    liees: ["saucetomate"],
     nom: "Chana Masala",
     cat: "plats",
     pays: "inde",
@@ -9869,6 +9899,7 @@ Object.assign(recettes, {
     ]
   },
   koshari: {
+    liees: ["saucetomate"],
     nom: "Koshari",
     cat: "plats",
     pays: "egypte",
@@ -10396,6 +10427,7 @@ Object.assign(recettes, {
     ]
   },
   buncha: {
+    liees: ["nuoccham"],
     nom: "Bun Cha",
     cat: "plats",
     pays: "vietnam",
@@ -10507,6 +10539,7 @@ Object.assign(recettes, {
     ]
   },
   bunnychow: {
+    liees: ["paindemie"],
     nom: "Bunny Chow",
     cat: "plats",
     pays: "afriquedusud",
@@ -10581,6 +10614,7 @@ Object.assign(recettes, {
     ]
   },
   golabki: {
+    liees: ["saucetomate"],
     nom: "Gołąbki",
     cat: "plats",
     pays: "pologne",
@@ -10655,6 +10689,7 @@ Object.assign(recettes, {
     ]
   },
   cevapi: {
+    liees: ["ajvar"],
     nom: "Ćevapi",
     cat: "plats",
     pays: "serbie",
@@ -10914,6 +10949,7 @@ Object.assign(recettes, {
     ]
   },
   kabsa: {
+    liees: ["saucetomate"],
     nom: "Kabsa",
     cat: "plats",
     pays: "arabiesaoudite",
@@ -11581,6 +11617,7 @@ Object.assign(recettes, {
     ]
   },
   tinga: {
+    liees: ["saucetomate"],
     nom: "Tinga de Poulet",
     cat: "plats",
     pays: "mexique",
@@ -11840,6 +11877,7 @@ Object.assign(recettes, {
     ]
   },
   comtam: {
+    liees: ["nuoccham"],
     nom: "Cơm Tấm",
     cat: "plats",
     pays: "vietnam",
@@ -11877,6 +11915,7 @@ Object.assign(recettes, {
     ]
   },
   rajma: {
+    liees: ["saucetomate"],
     nom: "Rajma",
     cat: "plats",
     pays: "inde",
@@ -12062,6 +12101,7 @@ Object.assign(recettes, {
     ]
   },
   holubtsi: {
+    liees: ["saucetomate"],
     nom: "Holubtsi",
     cat: "plats",
     pays: "ukraine",

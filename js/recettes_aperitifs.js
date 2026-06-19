@@ -35,6 +35,7 @@ Object.assign(recettes, {
       ]
   },
   babaganoush: {
+    liees: ["painpita"],
     nom: "Baba Ganoush",
     cat: "aperitifs", saisons: ["ete","automne"], pays: "liban",
     base: 1,
@@ -65,6 +66,7 @@ Object.assign(recettes, {
       ]
   },
   rillettessaumonfume: {
+    liees: ["painsigle", "paincampagne"],
     nom: "Rillettes Saumon Fumé",
     cat: "aperitifs", pays: "france",
     base: 1,
@@ -97,7 +99,7 @@ Object.assign(recettes, {
     ]
   },
   patatasbravas: {
-    liees: ["mayonnaise"],
+    liees: ["mayonnaise", "saucetomate", "aioli"],
     nom: "Patatas Bravas",
     cat: "aperitifs", pays: "espagne",
     base: 4,
@@ -196,6 +198,7 @@ tapenade: {
     ]
   },
   tzatziki: {
+    liees: ["painpita"],
     nom: "Tzatziki",
     cat: "aperitifs", pays: "grece",
     base: 1,
@@ -1107,6 +1110,7 @@ tapenade: {
     ]
   },
   crostini: {
+    liees: ["painbaguette"],
     nom: "Crostini tomate-mozzarella",
     dateAjout: "2026-06-05",
     cat: "aperitifs", pays: "italie",
@@ -1218,6 +1222,7 @@ tapenade: {
     ]
   },
   beignetscrevettes: {
+    liees: ["sauceaigredouce"],
     nom: "Beignets de Crevettes",
     cat: "aperitifs",
     pays: "chine",
@@ -1372,6 +1377,7 @@ tapenade: {
     ]
   },
   lumpia: {
+    liees: ["sauceaigredouce"],
     nom: "Lumpia",
     cat: "aperitifs",
     pays: "philippines",
@@ -1561,6 +1567,7 @@ tapenade: {
     ]
   },
   labneh: {
+    liees: ["painpita"],
     nom: "Labneh",
     cat: "aperitifs",
     pays: "liban",
@@ -1598,6 +1605,7 @@ tapenade: {
     ]
   },
   muhammara: {
+    liees: ["painpita"],
     nom: "Muhammara",
     cat: "aperitifs",
     pays: "monde",
@@ -1778,6 +1786,7 @@ tapenade: {
     ]
   },
   obatzda: {
+    liees: ["painsigle"],
     nom: "Obatzda",
     cat: "aperitifs",
     pays: "allemagne",

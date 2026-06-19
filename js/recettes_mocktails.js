@@ -820,6 +820,7 @@ Object.assign(recettes, {
     ]
   },
   milkshakefraise: {
+    liees: ["glacevanille"],
     nom: "Milkshake à la Fraise",
     dateAjout: "2026-06-06T12:51:00",
     cat: "mocktails", pays: "etats-unis",

@@ -91,6 +91,7 @@ Object.assign(recettes, {
       ]
   },
   shakshuka: {
+    liees: ["painpita", "harissa", "saucetomate"],
     nom: "Shakshuka",
     cat: "brunch", saisons: ["automne","ete"], pays: "liban",
     base: 2,
@@ -127,6 +128,7 @@ Object.assign(recettes, {
       ]
   },
   shakshukaverte: {
+    liees: ["painpita"],
     nom: "Shakshuka Verte",
     cat: "brunch", saisons: ["automne","ete"], pays: "liban",
     base: 2,
@@ -232,6 +234,7 @@ Object.assign(recettes, {
       ]
   },
   sconeBritish: {
+    liees: ["confiturefraise"],
     nom: "Scones Britanniques",
     cat: "brunch", pays: "france",
     base: 8,
@@ -267,6 +270,7 @@ Object.assign(recettes, {
       ]
   },
   eggsBenedict: {
+    liees: ["saucehollandaise"],
     nom: "Œufs Bénédicte",
     cat: "brunch", pays: "usa",
     base: 2,
@@ -704,6 +708,7 @@ Object.assign(recettes, {
       ]
   },
   kayatoast: {
+    liees: ["paindemie"],
     nom: "Kaya Toast",
     cat: "brunch", pays: "singapour",
     base: 4,

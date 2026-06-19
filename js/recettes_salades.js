@@ -39,6 +39,7 @@ Object.assign(recettes, {
     ]
   },
   saladecesar: {
+    liees: ["saucecesar"],
     nom: "Salade César",
     cat: "salades", pays: "usa",
     base: 4,
@@ -72,6 +73,7 @@ Object.assign(recettes, {
     ]
   },
   saladegreque: {
+    liees: ["vinaigrette"],
     nom: "Salade grecque",
     cat: "salades", saisons: ["ete"], pays: "grece",
     base: 4,
@@ -205,6 +207,7 @@ Object.assign(recettes, {
     ]
   },
   saladelentilles: {
+    liees: ["vinaigrette"],
     nom: "Salade de lentilles",
     cat: "salades", pays: "france",
     base: 4,
@@ -238,6 +241,7 @@ Object.assign(recettes, {
     ]
   },
   saladeavocatcrevettes: {
+    liees: ["mayonnaise", "ketchup", "saucecocktail"],
     nom: "Salade avocat crevettes",
     cat: "salades", pays: "france",
     base: 4,
@@ -271,6 +275,7 @@ Object.assign(recettes, {
     ]
   },
   saladeThai: {
+    liees: ["vinaigrette"],
     nom: "Salade Thaï",
     cat: "salades", saisons: ["ete"], pays: "asie",
     base: 4,
@@ -304,6 +309,7 @@ Object.assign(recettes, {
     ]
   },
   saladeHaricotsVerts: {
+    liees: ["vinaigrette"],
     nom: "Salade Haricots Verts",
     cat: "salades", pays: "france",
     base: 4,
@@ -646,6 +652,7 @@ Object.assign(recettes, {
     ]
   },
   saladebetteravechevre: {
+    liees: ["vinaigrette"],
     nom: "Salade betterave & chèvre",
     cat: "salades", pays: "france",
     base: 4,
@@ -712,6 +719,7 @@ Object.assign(recettes, {
     ]
   },
   saladeroquetteparmesan: {
+    liees: ["vinaigrette"],
     nom: "Salade roquette-parmesan",
     cat: "salades", pays: "italie",
     base: 4,
@@ -855,6 +863,7 @@ Object.assign(recettes, {
     ]
   },
   saladecomposee: {
+    liees: ["vinaigrette"],
     nom: "Salade composée",
     dateAjout: "2026-06-04",
     cat: "salades", pays: "france",
@@ -928,6 +937,7 @@ Object.assign(recettes, {
     ]
   },
   saladelandaise: {
+    liees: ["vinaigrette"],
     nom: "Salade Landaise",
     cat: "salades",
     pays: "france",
@@ -965,6 +975,7 @@ Object.assign(recettes, {
     ]
   },
   saladeperigourdine: {
+    liees: ["vinaigrette"],
     nom: "Salade Périgourdine",
     cat: "salades",
     pays: "france",
@@ -1002,6 +1013,7 @@ Object.assign(recettes, {
     ]
   },
   saladecobb: {
+    liees: ["vinaigrette"],
     nom: "Salade Cobb",
     cat: "salades",
     pays: "usa",
@@ -1039,7 +1051,7 @@ Object.assign(recettes, {
     ]
   },
   fattouche: {
-    liees: ["painpita"],
+    liees: ["painpita", "vinaigrette"],
     nom: "Salade Fattouche",
     cat: "salades",
     pays: "liban",
@@ -1077,6 +1089,7 @@ Object.assign(recettes, {
     ]
   },
   panzanella: {
+    liees: ["vinaigrette"],
     nom: "Panzanella",
     cat: "salades",
     pays: "italie",
@@ -1225,7 +1238,7 @@ Object.assign(recettes, {
   },
 
   fattoush: {
-    liees: ["painpita"],
+    liees: ["painpita", "vinaigrette"],
     nom: "Fattoush",
     dateAjout: "2026-06-12T14:08:00",
     cat: "salades", pays: "liban",

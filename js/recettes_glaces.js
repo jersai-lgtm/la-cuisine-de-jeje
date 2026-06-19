@@ -453,6 +453,7 @@ Object.assign(recettes, {
     ]
   },
   vacheringlace: {
+    liees: ["glacevanille"],
     nom: "Vacherin Glacé",
     cat: "glaces",
     pays: "france",
