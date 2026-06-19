@@ -351,4 +351,7 @@ window.I18N_DICT = {
   "➕ Ajouter une recette précise": "➕ Add a specific recipe",
   "Click sur \"Ajouter des recettes\" ci-dessus": "Click \"Add recipes\" above",
   "Ajoute tes aliments avec leur date de péremption — on te préviendra quand ça approche 🔔": "Add your food with its expiry date — we'll warn you when it's getting close 🔔",
+  "Sans compte": "No account",
+  "Suppression définitive du compte et de toutes les données associées.": "Permanent deletion of the account and all associated data.",
+  "Plus de 1000 recettes maison, des menus de la semaine générés en un clic et ta liste de courses rangée automatiquement par rayon.": "Over 1000 homemade recipes, weekly menus generated in one tap, and your shopping list automatically sorted by aisle.",
 };
