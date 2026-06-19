@@ -72,6 +72,13 @@
     return out;
   }
 
+  // Lookup générique d'un substitut par slug d'ingrédient (utilisé par l'assistant vocal).
+  window.substitutionDe = function (slug) {
+    if (!slug) return null;
+    const s = String(slug).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z]/g, "");
+    return SUBS[s] || (s.endsWith("s") ? SUBS[s.slice(0, -1)] : null) || SUBS[s + "s"] || null;
+  };
+
   function injecterStyle() {
     if (document.getElementById("subs-style")) return;
     const st = document.createElement("style");

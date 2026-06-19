@@ -10,9 +10,9 @@
 
 const QUOI_DE_NEUF = [
   {
-    v: "1.11.44",
+    v: "1.11.48",
     titre: "🎙️ Assistant vocal — parle, il agit",
-    texte: "Nouveau ! Un bouton 🎙️ en bas à droite : appuie et parle (en français ou en anglais). Dis « ouvre la recette de crêpes », « propose-moi une recette italienne sans miel » ou « un dessert au chocolat sans gluten » et l'appli filtre pour toi. En mode cuisson, pilote tout sans toucher l'écran — mains pleines de farine ! : « suivant », « précédent », « répète », « minuteur 10 minutes », « pause », « ferme ». Tu peux même demander « combien de farine ? » 👨‍🍳"
+    texte: "Le micro 🎙️ de la barre de recherche devient un vrai assistant : appuie et parle (français ou anglais). Ouvre une recette (« ouvre les crêpes »), demande une idée (« une recette italienne rapide sans miel », « un dessert pas cher »), navigue (« va aux favoris », « ma liste de courses »), ajoute à ta liste (« ajoute des œufs »), mets en favori ou génère un menu — à la voix. Et en mode cuisson, pilote tout sans toucher l'écran : « suivant », « va à l'étape 3 », « minuteur 10 minutes », « ajoute 5 minutes », « temps restant », « lis les ingrédients », « remplace le beurre ». 👨‍🍳"
   },
   {
     v: "1.11.21",

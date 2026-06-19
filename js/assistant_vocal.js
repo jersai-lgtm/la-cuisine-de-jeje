@@ -108,7 +108,7 @@
   // === EXTRACTION DE CRITÈRES (pays / catégorie / régime / avec / sans) =====
   function extraireCriteres(qNorm) {
     const mots = qNorm.split(/\s+/).filter(Boolean);
-    const crit = { pays: null, paysLabel: "", cat: null, catLabel: "", regime: null, avec: [], sans: [] };
+    const crit = { pays: null, paysLabel: "", cat: null, catLabel: "", regime: null, avec: [], sans: [], tempsMax: null, eco: false, healthy: false, facile: false, saison: false };
     // Dicos fusionnés FR + EN (fonctionnent quelle que soit la langue)
     const PAYS = Object.assign({}, (typeof SYNONYMES_PAYS !== "undefined" ? SYNONYMES_PAYS : {}), EN_PAYS);
     const CAT = Object.assign({}, (typeof SYNONYMES_CATEGORIE !== "undefined" ? SYNONYMES_CATEGORIE : {}), EN_CAT);
@@ -143,12 +143,66 @@
     }
     // « avec X » / « au/à la/aux X » / « with X » → inclusion
     const reAvec = EN() ? /\bwith ([a-zà-ÿ]+)/g : /\b(?:avec|au|aux|a la|a l)\s+(?:du |de la |des |d |le |la |les )?([a-zà-ÿ]+)/g;
-    const stop = ["recette", "recettes", "plat", "midi", "soir", "moi", "place", "four", "frais", "maison", "recipe"];
+    const stop = ["recette", "recettes", "plat", "midi", "soir", "moi", "place", "four", "frais", "maison", "recipe",
+      "favoris", "favorites", "favori", "menu", "menus", "accueil", "stats", "statistiques",
+      "courses", "liste", "garde", "manger", "pantry", "frigo", "cuisine", "section"];
     while ((m = reAvec.exec(qNorm))) {
       const ing = m[1];
       if (ing.length >= 3 && !stop.includes(ing)) crit.avec.push(formes(ing));
     }
+    // Critères « pratiques »
+    if (/\b(rapide|vite|express|quick|fast)\b/.test(qNorm)) crit.tempsMax = Math.min(crit.tempsMax || 999, 30);
+    const tm = qNorm.match(/(?:moins de|en|max|maxi|under|less than|in)\s*(\d+)\s*(?:min|minute)/);
+    if (tm) crit.tempsMax = Math.min(crit.tempsMax || 999, parseInt(tm[1], 10));
+    if (/\b(pas cher|pas chere|eco|economique|economiques|cheap|budget|abordable)\b/.test(qNorm)) crit.eco = true;
+    if (/\b(sain|saine|leger|legere|light|equilibre|equilibree|healthy)\b/.test(qNorm)) crit.healthy = true;
+    if (/\b(facile|faciles|simple|simples|easy|debutant)\b/.test(qNorm)) crit.facile = true;
+    if (/\b(de saison|saison|seasonal|in season)\b/.test(qNorm)) crit.saison = true;
     return crit;
+  }
+
+  // --- Helpers données recette (pour les critères pratiques) ---------------
+  function tempsMinutes(str) {
+    if (!str) return 0;
+    const t = String(str).toLowerCase();
+    let tot = 0;
+    const h = t.match(/(\d+)\s*h(?:eures?)?\s*(\d+)?/);
+    if (h) tot += parseInt(h[1], 10) * 60 + (h[2] ? parseInt(h[2], 10) : 0);
+    const mm = t.match(/(\d+)\s*min/);
+    if (mm && !h) tot += parseInt(mm[1], 10);
+    return tot;
+  }
+  function ligneBase(cle) {
+    const r = (typeof recettes !== "undefined") ? recettes[cle] : null;
+    if (!r) return null;
+    const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (!tabKey) return null;
+    const base = r.base || (r[tabKey][0] && r[tabKey][0].nb) || 1;
+    return { r, ligne: r[tabKey].find(l => l.nb === base) || r[tabKey][0], base };
+  }
+  function critPratiquesOK(e, crit) {
+    const r = (typeof recettes !== "undefined") ? recettes[e.cle] : null;
+    if (crit.tempsMax) { const mn = tempsMinutes(r && r.temps); if (!mn || mn > crit.tempsMax) return false; }
+    if (crit.facile && !/facile/i.test((r && r.niveau) || "")) return false;
+    if (crit.saison && typeof scoreSaisonRecette === "function" && !(scoreSaisonRecette(e.cle) > 0)) return false;
+    if (crit.eco) {
+      const b = ligneBase(e.cle);
+      if (!b || typeof calculerPrixCaloriesRecette !== "function") return false;
+      const res = calculerPrixCaloriesRecette(b.ligne);
+      const parPers = res && res.prix ? res.prix / (b.ligne.nb || b.base || 1) : 999;
+      if (parPers > 2.5) return false;
+    }
+    if (crit.healthy) {
+      const b = ligneBase(e.cle);
+      if (!b || typeof calculerNutriScoreRecette !== "function") return false;
+      const ns = calculerNutriScoreRecette(b.ligne);
+      if (!ns || (ns.lettre !== "A" && ns.lettre !== "B")) return false;
+    }
+    return true;
+  }
+  function aDesCritPratiques(crit) { return !!(crit.tempsMax || crit.eco || crit.healthy || crit.facile || crit.saison); }
+  function aDesCriteres(crit) {
+    return !!(crit.pays || crit.cat || crit.regime || crit.avec.length || crit.sans.length || aDesCritPratiques(crit));
   }
 
   // Un groupe de formes est « présent » si l'une des formes apparaît dans la recette
@@ -165,13 +219,17 @@
       const ok = new Set(getCartesPourRegime(crit.regime).map(e => e.cle));
       set = set.filter(e => ok.has(e.cle));
     }
-    return set.filter(e => {
+    // Filtres « bon marché » d'abord
+    set = set.filter(e => {
       if (crit.pays && e.pays !== crit.pays) return false;
       if (crit.cat && e.cat !== crit.cat) return false;
       if (!crit.avec.every(g => groupePresent(e, g))) return false;      // toutes les inclusions
       if (crit.sans.some(g => groupePresent(e, g))) return false;        // aucune exclusion
       return true;
     });
+    // Filtres « coûteux » (prix / nutri / temps / saison) seulement sur les survivants
+    if (aDesCritPratiques(crit)) set = set.filter(e => critPratiquesOK(e, crit));
+    return set;
   }
 
   function criteresEnMots(crit) {
@@ -182,6 +240,11 @@
     if (crit.regime) bouts.push(crit.regime.replace("-", " "));
     crit.avec.forEach(g => bouts.push((EN() ? "with " : "avec ") + g[0]));
     crit.sans.forEach(g => bouts.push((EN() ? "without " : "sans ") + g[0]));
+    if (crit.tempsMax) bouts.push((EN() ? "< " : "moins de ") + crit.tempsMax + " min");
+    if (crit.eco) bouts.push(EN() ? "cheap" : "pas cher");
+    if (crit.healthy) bouts.push(EN() ? "healthy" : "équilibré");
+    if (crit.facile) bouts.push(EN() ? "easy" : "facile");
+    if (crit.saison) bouts.push(EN() ? "in season" : "de saison");
     return bouts.join(" · ");
   }
 
@@ -211,6 +274,38 @@
 
   function gererCuisson(q) {
     const has = (...a) => a.some(x => q.includes(x));
+    // Aller à une étape précise : « va à l'étape 3 »
+    const me = q.match(/(?:etape|step)\s*(\d+)/);
+    if (me && !has("suivant", "precedent", "minuteur", "timer")) {
+      if (typeof window._cmAllerEtape === "function") {
+        const ok = window._cmAllerEtape(parseInt(me[1], 10));
+        if (ok) { lireEtapeCourante(); return true; }
+        repondre(EN() ? `There's no step ${me[1]}.` : `Il n'y a pas d'étape ${me[1]}.`); return true;
+      }
+    }
+    // Temps restant des minuteurs
+    if (has("temps restant", "reste t il", "reste-t-il", "combien de temps", "time left", "how much time", "how long left", "time remaining")) {
+      const ts = (typeof window._cmTempsRestant === "function") ? window._cmTempsRestant() : [];
+      if (!ts.length) { repondre(EN() ? "No timer running." : "Aucun minuteur en cours."); return true; }
+      const dire = ts.map(t => {
+        const mn = Math.floor(t.restant / 60), s = t.restant % 60;
+        const d = (mn ? mn + (EN() ? " min " : " min ") : "") + (s ? s + " s" : "");
+        return (t.label ? t.label + " : " : "") + d.trim();
+      }).join(", ");
+      parler((EN() ? "Time left: " : "Temps restant : ") + dire);
+      return true;
+    }
+    // +N minutes au minuteur en cours
+    const ma = q.match(/(?:ajoute|rajoute|add|encore|plus de)\s+(\d+)\s*(?:min|minute)/);
+    if (ma) {
+      const n = (typeof window._cmAjouterMinutes === "function") ? window._cmAjouterMinutes(parseInt(ma[1], 10)) : null;
+      if (n) { repondre((EN() ? `Added ${n} minutes.` : `+${n} minutes ajoutées.`), "success"); return true; }
+      repondre(EN() ? "No timer to extend." : "Aucun minuteur à prolonger."); return true;
+    }
+    // Lire les ingrédients
+    if (has("lis les ingredient", "les ingredients", "read the ingredient", "read ingredient")) { lireIngredients(); return true; }
+    // Substitution
+    if (has("remplace", "remplacer", "substitut", "replace", "substitute", "par quoi remplacer")) { return remplacer(q); }
     // Fermer
     if (has("ferme", "quitte", "quitter", "arrete la cuisson", "stop cuisson", "exit", "close", "quit")) {
       repondre(EN() ? "Closing cook mode." : "Je ferme le mode cuisson.");
@@ -314,8 +409,161 @@
 
   function aide() {
     repondre(EN()
-      ? "Try: open the crêpes recipe, suggest an Italian recipe without honey, start cooking mode, next, timer 10 minutes, pause, close."
-      : "Essaie : ouvre la recette de crêpes, propose une recette italienne sans miel, lance le mode cuisson, suivant, minuteur 10 minutes, pause, ferme.");
+      ? "Try: open the crêpes recipe, suggest a quick Italian recipe without honey, add eggs to my list, go to favorites, start cooking mode, next, timer 10 minutes, what's left, replace butter."
+      : "Essaie : ouvre la recette de crêpes, propose une recette italienne rapide sans miel, ajoute des œufs à ma liste, va aux favoris, lance le mode cuisson, suivant, minuteur 10 minutes, temps restant, remplace le beurre.");
+  }
+
+  // --- Navigation entre sections -------------------------------------------
+  function allerSection(section) {
+    const btn = document.querySelector(`.nav-bottom .nav-btn[onclick*="'${section}'"]`);
+    if (typeof afficherSection === "function") afficherSection(section, btn || null);
+  }
+  function naviguer(q) {
+    const has = (...a) => a.some(x => q.includes(x));
+    if (has("accueil", "page d accueil", "home", "menu principal", "accueille")) { repondre(EN() ? "Home." : "Accueil.", "success"); allerSection("accueil"); return true; }
+    if (has("favoris", "favorites", "mes favoris", "favourites")) { repondre(EN() ? "Your favorites." : "Tes favoris.", "success"); if (typeof afficherFavorisAvecChips === "function") afficherFavorisAvecChips(); return true; }
+    if (has("liste de courses", "mes courses", "shopping list", "ma liste")) { repondre(EN() ? "Shopping list." : "Ta liste de courses.", "success"); allerSection("cuisine"); if (typeof switchCuisineTab === "function") switchCuisineTab("courses"); return true; }
+    if (has("vide frigo", "vide-frigo", "videfrigo", "fridge")) { repondre(EN() ? "Fridge clearer." : "Le vide-frigo.", "success"); allerSection("cuisine"); if (typeof switchCuisineTab === "function") switchCuisineTab("videfrigo"); return true; }
+    if (has("garde manger", "garde-manger", "pantry")) { repondre(EN() ? "Pantry." : "Garde-manger.", "success"); allerSection("cuisine"); if (typeof switchCuisineTab === "function") switchCuisineTab("pantry"); return true; }
+    if (has("menus", "planning", "planificateur", "planner", "mes menus")) { repondre(EN() ? "Your menus." : "Tes menus.", "success"); allerSection("planificateur"); return true; }
+    if (has("statistiques", "mes stats", "stats", "statistics")) { repondre(EN() ? "Your stats." : "Tes stats.", "success"); allerSection("stats"); return true; }
+    if (has("toutes les recettes", "page recettes", "les recettes", "all recipes", "recipe list", "catalogue") && !aDesCriteres(extraireCriteres(q))) {
+      repondre(EN() ? "Recipes." : "Les recettes.", "success"); if (typeof afficherRecettes === "function") afficherRecettes(); return true;
+    }
+    return false;
+  }
+
+  // --- Courses / favoris / menu --------------------------------------------
+  function ajouterCoursePerso(label) {
+    if (!window.currentUser) { repondre(EN() ? "Log in to use your list." : "Connecte-toi pour utiliser ta liste."); return; }
+    label = label.charAt(0).toUpperCase() + label.slice(1);
+    if (!window.userProfile.listeCoursesPerso) window.userProfile.listeCoursesPerso = [];
+    if (!window.userProfile.listeCoursesPerso.some(x => x.toLowerCase() === label.toLowerCase())) window.userProfile.listeCoursesPerso.push(label);
+    if (typeof sauvegarderProfil === "function") sauvegarderProfil({ listeCoursesPerso: window.userProfile.listeCoursesPerso });
+    try { window.dispatchEvent(new Event("profilMisAJour")); } catch (e) {}
+    repondre((EN() ? "Added to your list: " : "Ajouté à ta liste : ") + label, "success");
+  }
+  function ajouterRecetteCourante() {
+    const cle = window._assistantCle;
+    if (!cle) { repondre(EN() ? "Open a recipe first." : "Ouvre d'abord une recette."); return; }
+    if (typeof ajouterRecetteAuxCourses === "function") ajouterRecetteAuxCourses(cle);
+    repondre((EN() ? "Added to your shopping list: " : "Ajouté à ta liste de courses : ") + nomLisible(cle), "success");
+  }
+  function actionsApp(q) {
+    const has = (...a) => a.some(x => q.includes(x));
+    // Générer un menu
+    if (has("menu") && has("genere", "génère", "generer", "fais moi un menu", "fais un menu", "generate", "make a menu", "create a menu")) {
+      repondre(EN() ? "Generating a menu." : "Je génère un menu.", "success");
+      allerSection("planificateur");
+      setTimeout(() => { if (typeof genererMenus === "function") genererMenus(); }, 200);
+      return true;
+    }
+    // Favori
+    if (has("favori", "favorite", "favoris", "aux favoris", "en favori", "bookmark") && has("ajoute", "ajouter", "mets", "met", "add", "save", "enregistre", "marque")) {
+      const cle = window._assistantCle;
+      if (!cle) { repondre(EN() ? "Open a recipe first." : "Ouvre d'abord une recette."); return true; }
+      if (typeof toggleFavori === "function") toggleFavori(cle);
+      const fav = (typeof estFavori === "function") ? estFavori(cle) : true;
+      repondre(fav ? (EN() ? "Added to favorites." : "Ajouté aux favoris.") : (EN() ? "Removed from favorites." : "Retiré des favoris."), "success");
+      return true;
+    }
+    // Ajouter aux courses (recette ou article perso)
+    if (has("ajoute", "ajouter", "add", "mets ", "met ")) {
+      const versListe = has("a ma liste", "à ma liste", "dans ma liste", "aux courses", "a la liste", "à la liste", "shopping list", "to my list", "to the list");
+      const recetteCible = has("cette recette", "la recette", "this recipe", "the recipe");
+      if (recetteCible || (has("aux courses", "to my shopping") && !versListe)) { ajouterRecetteCourante(); return true; }
+      if (versListe) {
+        let item = q.replace(/.*\b(ajoute|ajouter|add|mets|met)\b/, "")
+          .replace(/\b(a|à|dans|sur|to)\s+(ma|mon|mes|the|my)\s+(shopping\s+)?(liste|list)\b.*/, "")
+          .replace(/\baux?\s+courses\b.*/, "")
+          .replace(/\b(a|à) la liste\b.*/, "")
+          .replace(/\b(my |the )?shopping list\b.*/, "")
+          .replace(/\b(moi|me|du|de la|des|de l|un|une|le|la|les|some|d)\b/g, " ")
+          .replace(/\s+/g, " ").trim();
+        if (item) { ajouterCoursePerso(item); return true; }
+        ajouterRecetteCourante(); return true;
+      }
+    }
+    return false;
+  }
+
+  // --- Lecture des ingrédients / substitution ------------------------------
+  function lireIngredients() {
+    const cle = window._assistantCle;
+    const b = cle ? ligneBase(cle) : null;
+    if (!b) { repondre(EN() ? "Open a recipe first." : "Ouvre d'abord une recette."); return; }
+    const parts = [];
+    for (const col in b.ligne) {
+      if (col === "nb") continue;
+      const lbl = (typeof INGREDIENTS_LABELS !== "undefined" && INGREDIENTS_LABELS[col]) ? INGREDIENTS_LABELS[col] : col;
+      const t = String(lbl).replace(/^[^\p{L}]+/u, "").trim();
+      if (b.ligne[col]) parts.push(b.ligne[col] + (EN() ? " of " : " de ") + t);
+    }
+    if (!parts.length) { repondre(EN() ? "No ingredient list." : "Pas de liste d'ingrédients."); return; }
+    if (typeof afficherToast === "function") afficherToast(EN() ? "Reading ingredients aloud." : "Lecture des ingrédients.");
+    parler((EN() ? `Ingredients for ${b.base} servings: ` : `Ingrédients pour ${b.base} : `) + parts.join(", "));
+  }
+  function remplacer(q) {
+    let cible = q.replace(/.*\b(remplace[rz]?|substitut\w*|replace|substitute)\b/, "")
+      .replace(/\b(le|la|les|du|de la|des|l|the|by|par|avec|with|d)\b/g, " ").replace(/\?/g, " ").trim();
+    cible = (cible.split(/\s+/).filter(Boolean)[0] || "");
+    if (!cible) { repondre(EN() ? "Replace what?" : "Remplacer quoi ?"); return true; }
+    let slug = cible; if (EN() && EN_ING[cible]) slug = EN_ING[cible];
+    const sub = (typeof window.substitutionDe === "function") ? window.substitutionDe(slug) : null;
+    if (sub) repondre((EN() ? `Instead of ${cible}: ` : `À la place — ${cible} : `) + sub, "success");
+    else repondre(EN() ? `No known substitute for ${cible}.` : `Pas de substitut connu pour ${cible}.`);
+    return true;
+  }
+
+  // --- Suggestion (mutualisée) + suivi de contexte -------------------------
+  function proposer(crit, transcript) {
+    const cartes = cartesPourCriteres(crit);
+    const desc = criteresEnMots(crit);
+    if (!cartes.length) { repondre((EN() ? "No recipe found" : "Aucune recette trouvée") + (desc ? ` ${desc}.` : "."), "error"); window._avDernier = null; return true; }
+    if (cartes.length === 1) {
+      repondre((EN() ? "Found one: " : "J'en ai une : ") + cartes[0].nom + ".", "success");
+      if (typeof ouvrirFiche === "function") ouvrirFiche(cartes[0].cle, "");
+      window._assistantCle = cartes[0].cle; window._avDernier = null; return true;
+    }
+    montrerSelection(cartes);
+    const idx = (String(transcript || "").length + cartes.length) % cartes.length;
+    window._avDernier = { crit, cartes, idx };
+    const pick = cartes[idx];
+    repondre((EN() ? `${cartes.length} recipes` : `${cartes.length} recettes`) + (desc ? ` ${desc}` : "") +
+      (EN() ? `. How about ${pick.nom}?` : `. Et pourquoi pas ${nomLisible(pick.cle)} ?`), "success");
+    return true;
+  }
+  function fusionCrit(a, b) {
+    return {
+      pays: b.pays || a.pays, paysLabel: b.pays ? b.paysLabel : a.paysLabel,
+      cat: b.cat || a.cat, catLabel: b.cat ? b.catLabel : a.catLabel,
+      regime: b.regime || a.regime,
+      avec: a.avec.concat(b.avec), sans: a.sans.concat(b.sans),
+      tempsMax: b.tempsMax || a.tempsMax, eco: a.eco || b.eco, healthy: a.healthy || b.healthy, facile: a.facile || b.facile, saison: a.saison || b.saison,
+    };
+  }
+  function suivi(q) {
+    const d = window._avDernier;
+    if (!d) return false;
+    const has = (...a) => a.some(x => q.includes(x));
+    // Affiner : « et sans miel », « plutôt mexicaine », « et rapide »
+    if (/^(et |plutot |plutôt |and |rather |aussi )/.test(q + " ")) {
+      return proposer(fusionCrit(d.crit, extraireCriteres(q)), q);
+    }
+    // Ouvrir la suggestion mise en avant
+    if (!/recette de|recipe (for|of)/.test(q) && (has("la premiere", "celle la", "celle ci", "celle-ci", "vas y", "vas-y", "c est parti", "open it", "open that", "open the first", "ouvre la") || q === "ouvre" || q === "ok" || q === "oui" || q === "yes")) {
+      const e = d.cartes[d.idx] || d.cartes[0];
+      if (e) { repondre((EN() ? `Opening ${e.nom}.` : `J'ouvre ${nomLisible(e.cle)}.`), "success"); if (typeof ouvrirFiche === "function") ouvrirFiche(e.cle, ""); window._assistantCle = e.cle; }
+      return true;
+    }
+    // Suggestion suivante
+    if (has("suivante", "une autre", "autre chose", "autre recette", "next one", "another", "other one", "change", "autre idee")) {
+      d.idx = (d.idx + 1) % d.cartes.length;
+      const e = d.cartes[d.idx];
+      repondre((EN() ? `How about ${e.nom}?` : `Et pourquoi pas ${nomLisible(e.cle)} ?`), "success");
+      return true;
+    }
+    return false;
   }
 
   // =========================================================================
@@ -356,34 +604,30 @@
     // 5) Question quantité
     if (has("combien de", "combien d", "how much", "how many")) { if (repondreQuantite(q)) return; }
 
+    // 5b) Lire les ingrédients / substitution (hors cuisson aussi)
+    if (has("lis les ingredient", "read the ingredient", "read ingredient")) { lireIngredients(); return; }
+    if (has("remplace", "remplacer", "par quoi remplacer", "substitut", "replace", "substitute")) { remplacer(q); return; }
+
+    // 5c) Actions : courses / favoris / générer un menu
+    if (actionsApp(q)) return;
+
+    // 5d) Suivi de contexte après une suggestion (« la suivante », « ouvre la », « et sans miel »)
+    if (suivi(q)) return;
+
+    // 5e) Navigation entre sections
+    if (naviguer(q)) return;
+
     // 6) Ouvrir une recette précise : « ouvre la recette de X », « ouvre X »
     let m = q.match(/\b(?:ouvre|ouvrir|montre|montre moi|affiche|open|show)\b(?:\s+(?:moi|me))?\s+(?:la\s+|the\s+)?(?:recette\s+(?:de\s+|du\s+|d\s+|des\s+)?|recipe\s+(?:for\s+)?)?(.+)/);
-    if (m && m[1] && !has("propose", "suggere", "suggest", "idee")) {
+    if (m && m[1] && !has("propose", "suggere", "suggest", "idee") &&
+        !/^(les |des |mes |the |all )?(recettes|recipes)\b/.test(m[1].trim())) {
       ouvrirRecetteParNom(m[1].trim());
       return;
     }
 
     // 7) Proposer / suggérer une recette filtrée
-    if (has("propose", "suggere", "suggest", "idee", "envie", "je veux", "i want", "i d like", "trouve", "cherche", "find", "donne moi", "une recette", "a recipe", "des recettes")) {
-      const crit = extraireCriteres(q);
-      const cartes = cartesPourCriteres(crit);
-      const desc = criteresEnMots(crit);
-      if (!cartes.length) {
-        repondre((EN() ? "No recipe found" : "Aucune recette trouvée") + (desc ? (EN() ? ` ${desc}.` : ` ${desc}.`) : "."), "error");
-        return;
-      }
-      if (cartes.length === 1) {
-        repondre((EN() ? "Found one: " : "J'en ai une : ") + cartes[0].nom + ".", "success");
-        if (typeof ouvrirFiche === "function") ouvrirFiche(cartes[0].cle, "");
-        window._assistantCle = cartes[0].cle;
-        return;
-      }
-      montrerSelection(cartes);
-      // suggestion mise en avant (variée selon la longueur du transcript pour éviter Math.random)
-      const pick = cartes[(transcript.length + cartes.length) % cartes.length];
-      repondre((EN() ? `${cartes.length} recipes` : `${cartes.length} recettes`) + (desc ? ` ${desc}` : "") +
-        (EN() ? `. How about ${pick.nom}?` : `. Et pourquoi pas ${nomLisible(pick.cle)} ?`), "success");
-      return;
+    if (has("propose", "suggere", "suggest", "idee", "envie", "je veux", "i want", "i d like", "trouve", "cherche", "find", "donne moi", "une recette", "a recipe", "des recettes") || aDesCriteres(extraireCriteres(q))) {
+      return void proposer(extraireCriteres(q), transcript);
     }
 
     // 8) Repli : nom de recette fort → on ouvre ; sinon recherche dans la grille
