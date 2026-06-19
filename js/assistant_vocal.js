@@ -415,22 +415,21 @@
     const s = document.createElement("style");
     s.id = "assistant-vocal-style";
     s.textContent = `
-      #assistant-fab{position:fixed;right:18px;bottom:84px;z-index:100050;width:56px;height:56px;border-radius:50%;
-        border:none;cursor:pointer;font-size:24px;color:#fff;background:linear-gradient(135deg,#ff6ba1,#ff4d88);
-        box-shadow:0 6px 18px rgba(255,77,136,.45);display:flex;align-items:center;justify-content:center;
-        transition:transform .15s,box-shadow .15s}
-      #assistant-fab:hover{transform:scale(1.06)}
-      #assistant-fab:focus-visible{outline:3px solid #ff8fb3;outline-offset:3px}
-      #assistant-fab.ecoute{animation:avPulse 1.1s ease-in-out infinite}
-      @keyframes avPulse{0%,100%{box-shadow:0 6px 18px rgba(255,77,136,.45),0 0 0 0 rgba(255,77,136,.55)}50%{box-shadow:0 6px 18px rgba(255,77,136,.45),0 0 0 16px rgba(255,77,136,0)}}
-      #assistant-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:154px;z-index:100051;max-width:90vw;
+      #assistant-mic{background:rgba(255,255,255,.1);border:none;color:#cfccd4;border-radius:50%;width:30px;height:30px;
+        font-size:15px;flex-shrink:0;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;
+        transition:background .15s,color .15s,box-shadow .15s}
+      #assistant-mic:hover{background:var(--accent,#ff4d88);color:#fff}
+      #assistant-mic:focus-visible{outline:2px solid var(--accent-soft,#ff8fb3);outline-offset:2px}
+      [data-av-mic].av-ecoute{background:var(--accent,#ff4d88) !important;color:#fff !important;animation:avPulse 1s ease-in-out infinite}
+      @keyframes avPulse{0%,100%{box-shadow:0 0 0 0 rgba(255,77,136,.5)}50%{box-shadow:0 0 0 8px rgba(255,77,136,0)}}
+      #assistant-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:90px;z-index:100061;max-width:90vw;
         background:#14121a;color:#fff;border:1px solid rgba(255,107,161,.5);border-radius:16px;padding:14px 20px;
         font-family:system-ui,-apple-system,sans-serif;font-size:16px;text-align:center;box-shadow:0 8px 28px rgba(0,0,0,.4);
         display:none;min-width:200px}
       #assistant-banner .av-pastille{display:inline-block;width:10px;height:10px;border-radius:50%;background:#ff4d88;margin-right:8px;animation:avBlink 1s infinite}
       #assistant-banner .av-txt{color:#e7e4ee;min-height:1.2em}
       @keyframes avBlink{50%{opacity:.3}}
-      @media(max-width:480px){#assistant-fab{width:52px;height:52px;font-size:22px;bottom:78px}}
+      @media(max-width:480px){#assistant-banner{bottom:84px}}
     `;
     document.head.appendChild(s);
   }
@@ -445,10 +444,14 @@
 
   function arreter() { try { if (reco) reco.stop(); } catch (e) {} }
 
+  const micsAll = () => document.querySelectorAll("[data-av-mic]");
+  function etatMics(actif) {
+    micsAll().forEach(b => { b.classList.toggle("av-ecoute", actif); b.textContent = actif ? "🔴" : "🎙️"; });
+  }
+
   function demarrer() {
     if (ecoute) { arreter(); return; }
     try { if (TTS_OK) speechSynthesis.cancel(); } catch (e) {} // coupe une réponse en cours
-    const fab = document.getElementById("assistant-fab");
     reco = new SR();
     reco.lang = EN() ? "en-US" : "fr-FR";
     reco.interimResults = true;
@@ -457,7 +460,7 @@
     let dernier = "";
     reco.onstart = () => {
       ecoute = true;
-      if (fab) { fab.classList.add("ecoute"); fab.textContent = "🔴"; }
+      etatMics(true);
       banniere(`<span class="av-pastille"></span><span class="av-txt">${EN() ? "Listening…" : "Je t'écoute…"}</span>`, true);
     };
     reco.onresult = (e) => {
@@ -469,7 +472,7 @@
     };
     const fin = () => {
       ecoute = false;
-      if (fab) { fab.classList.remove("ecoute"); fab.textContent = "🎙️"; }
+      etatMics(false);
     };
     reco.onerror = (ev) => {
       fin();
@@ -503,22 +506,30 @@
   }
 
   function injecter() {
-    if (document.getElementById("assistant-fab")) return;
+    if (document.getElementById("assistant-mic")) return;
     suivreFicheOuverte();
     injecterStyle();
-    const fab = document.createElement("button");
-    fab.id = "assistant-fab";
-    fab.type = "button";
-    fab.textContent = "🎙️";
-    fab.title = EN() ? "Voice assistant — tap and speak" : "Assistant vocal — appuie et parle";
-    fab.setAttribute("aria-label", fab.title);
-    fab.addEventListener("click", demarrer);
-    document.body.appendChild(fab);
-    const banner = document.createElement("div");
-    banner.id = "assistant-banner";
-    banner.setAttribute("role", "status");
-    banner.setAttribute("aria-live", "polite");
-    document.body.appendChild(banner);
+    // Micro dans la barre de recherche (remplace l'ancien micro de recherche)
+    const bar = document.querySelector(".search-bar");
+    if (bar) {
+      const btn = document.createElement("button");
+      btn.id = "assistant-mic";
+      btn.type = "button";
+      btn.setAttribute("data-av-mic", "");
+      btn.textContent = "🎙️";
+      btn.title = EN() ? "Voice assistant — tap and speak" : "Assistant vocal — appuie et parle";
+      btn.setAttribute("aria-label", btn.title);
+      btn.addEventListener("click", demarrer);
+      const clr = document.getElementById("search-clear");
+      bar.insertBefore(btn, clr || document.getElementById("search-suggestions") || null);
+    }
+    if (!document.getElementById("assistant-banner")) {
+      const banner = document.createElement("div");
+      banner.id = "assistant-banner";
+      banner.setAttribute("role", "status");
+      banner.setAttribute("aria-live", "polite");
+      document.body.appendChild(banner);
+    }
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", injecter);
