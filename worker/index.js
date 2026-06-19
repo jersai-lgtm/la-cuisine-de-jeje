@@ -61,12 +61,39 @@ export default {
     if (!token) {
       return json({ error: { message: "Authentification requise" } }, 401, cors);
     }
-    let uid;
+    let uid, claims;
     try {
-      const claims = await verifierJetonFirebase(token, env.FIREBASE_PROJECT_ID);
+      claims = await verifierJetonFirebase(token, env.FIREBASE_PROJECT_ID);
       uid = claims.sub;
     } catch (e) {
       return json({ error: { message: "Jeton invalide" } }, 401, cors);
+    }
+
+    // --- Route /notif : alerte Telegram « quelqu'un s'est connecté » ---------
+    // Placée AVANT le quota/Anthropic : ne consomme pas le quota IA. Le nom vient
+    // du jeton vérifié (non falsifiable). Dédupliqué (1×/12 h/utilisateur via KV).
+    if (new URL(request.url).pathname === "/notif") {
+      if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) {
+        return json({ ok: false, raison: "non configuré" }, 200, cors);
+      }
+      if (env.RATE_LIMIT) {
+        const fen = Math.floor(Date.now() / 43_200_000); // tranche de 12 h
+        const k = `notif:${uid}:${fen}`;
+        if (await env.RATE_LIMIT.get(k)) return json({ ok: true, deja: true }, 200, cors);
+        await env.RATE_LIMIT.put(k, "1", { expirationTtl: 46_800 }); // 13 h
+      }
+      let nouveau = false;
+      try { const b = await request.json(); nouveau = !!(b && b.nouveau); } catch (e) {}
+      const qui = claims.name || claims.email || "Quelqu'un";
+      const texte = `🍳 La Cuisine de Jéjé\n👤 ${qui} ${nouveau ? "vient de CRÉER un compte 🆕" : "s'est connecté(e)"}`;
+      try {
+        await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, text: texte }),
+        });
+      } catch (e) {}
+      return json({ ok: true }, 200, cors);
     }
 
     // --- 2. Quota par utilisateur (KV) --------------------------------------

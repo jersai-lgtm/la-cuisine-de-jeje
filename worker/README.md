@@ -53,6 +53,36 @@ curl -i -X POST https://la-cuisine-de-jeje.jerome-sainthot.workers.dev \
 Dans l'app, l'assistant n'apparaît que pour les utilisateurs connectés (le client
 envoie automatiquement le jeton via `Authorization: Bearer …`).
 
+## 🔔 Notification Telegram à la connexion (route `/notif`)
+
+Le Worker expose une route `POST /notif` : quand quelqu'un se connecte, l'app
+l'appelle (avec le jeton Firebase) et le Worker t'envoie un message **Telegram**.
+Le nom vient du jeton vérifié (non falsifiable) ; c'est **dédupliqué** à 1×/12 h
+par utilisateur (via KV) ; et ça **ne consomme pas** le quota IA.
+
+### Mise en place (≈ 5 min)
+
+1. **Créer un bot** : dans Telegram, parle à **@BotFather** → `/newbot` → choisis un
+   nom → il te donne un **token** (genre `123456:ABC-...`).
+2. **Récupérer ton chat id** : envoie un message à ton bot, puis ouvre
+   `https://api.telegram.org/bot<TOKEN>/getUpdates` dans un navigateur et repère
+   `"chat":{"id":<TON_ID>}`. (Ou parle à **@userinfobot** qui te donne ton id.)
+3. **Configurer le Worker** :
+   ```bash
+   cd worker
+   npx wrangler secret put TELEGRAM_BOT_TOKEN   # colle le token du bot
+   npx wrangler secret put TELEGRAM_CHAT_ID     # colle ton chat id
+   npx wrangler deploy
+   ```
+   (Le KV `RATE_LIMIT` doit être branché pour la déduplication — déjà recommandé
+   pour le quota.)
+4. **Tester** : déconnecte-toi puis reconnecte-toi dans l'app → tu dois recevoir
+   un message Telegram. Tant que les deux secrets ne sont pas définis, la route
+   répond simplement `{"ok":false,"raison":"non configuré"}` (rien ne casse).
+
+> Sans cette configuration, l'app appelle quand même `/notif` mais il ne se passe
+> rien (réponse « non configuré », avalée côté client). À déployer quand tu veux.
+
 ## Notes
 
 - Sans binding KV, le Worker fonctionne mais **sans quota** (il l'ignore). Le KV

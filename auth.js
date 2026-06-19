@@ -26,6 +26,7 @@ _auth.onAuthStateChanged(async function(user) {
     await chargerProfil(user);
     afficherUtilisateurConnecte(user);
     demarrerPresence();
+    notifierConnexion(user);
     // Purger le cache menus/suggestions pour appliquer le profil
     try {
       Object.keys(localStorage).forEach(k => {
@@ -74,6 +75,24 @@ function demarrerPresence() {
 function arreterPresence() {
   if (_presenceTimer) { clearInterval(_presenceTimer); _presenceTimer = null; }
   document.removeEventListener("visibilitychange", _onVisiblePing);
+}
+
+// Prévient le Worker (→ Telegram) qu'un utilisateur s'est connecté. Best-effort,
+// 1×/session côté client (le Worker re-déduplique à 1×/12 h/utilisateur).
+const CLAUDE_PROXY_NOTIF = "https://la-cuisine-de-jeje.jerome-sainthot.workers.dev/notif";
+async function notifierConnexion(user) {
+  try {
+    if (sessionStorage.getItem("notif_login_sent")) return;
+    sessionStorage.setItem("notif_login_sent", "1");
+    const idToken = await user.getIdToken();
+    const md = user.metadata || {};
+    const nouveau = !!(md.creationTime && md.lastSignInTime && md.creationTime === md.lastSignInTime);
+    fetch(CLAUDE_PROXY_NOTIF, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + idToken },
+      body: JSON.stringify({ type: "login", nouveau }),
+    }).catch(function () {});
+  } catch (e) {}
 }
 
 // ==============================
