@@ -26,7 +26,7 @@
       if (!en) continue;
       const r = recettes[k];
       if (!r) continue;
-      if (en.nom) r.nom = en.nom;
+      if (en.nom) { if (!r._nomFr) r._nomFr = r.nom; r.nom = en.nom; } // garde le nom FR (filtres par mots-clés)
       if (en.description) r.description = en.description;
       if (Array.isArray(en.etapes) && Array.isArray(r.etapes)) {
         for (let i = 0; i < r.etapes.length && i < en.etapes.length; i++) {
