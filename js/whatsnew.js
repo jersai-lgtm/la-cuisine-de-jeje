@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "1.11.44",
+    titre: "🎙️ Assistant vocal — parle, il agit",
+    texte: "Nouveau ! Un bouton 🎙️ en bas à droite : appuie et parle (en français ou en anglais). Dis « ouvre la recette de crêpes », « propose-moi une recette italienne sans miel » ou « un dessert au chocolat sans gluten » et l'appli filtre pour toi. En mode cuisson, pilote tout sans toucher l'écran — mains pleines de farine ! : « suivant », « précédent », « répète », « minuteur 10 minutes », « pause », « ferme ». Tu peux même demander « combien de farine ? » 👨‍🍳"
+  },
+  {
     v: "1.11.21",
     titre: "🆕 Vocal, minuteurs, budget, garde-manger…",
     texte: "Grosse mise à jour ! 🔊 En mode cuisson, les étapes se lisent à voix haute (mains libres) et tu peux lancer plusieurs minuteurs en parallèle. 💰 Ta liste de courses affiche son budget estimé. 📤 Partage ton menu de la semaine comme ta liste. 🥕 Le vide-frigo ignore les basiques (sel, huile…) et ajoute les ingrédients manquants à ta liste en un clic. 📦 Et un nouveau garde-manger te prévient avant que tes aliments ne périment ! 👨‍🍳"

@@ -133,6 +133,22 @@
     const min = parseInt(v, 10);
     if (min > 0 && min <= 600) ajouterMinuteur(min, "");
   };
+  // Hooks programmables (utilisés par l'assistant vocal)
+  window._cmAddTimerMinutes = (min, label) => {
+    min = parseInt(min, 10);
+    if (min > 0 && min <= 600) { ajouterMinuteur(min, label || ""); return min; }
+    return 0;
+  };
+  // Met en pause / relance TOUS les minuteurs actifs. Renvoie true si désormais en pause.
+  window._cmPauseToggleAll = () => {
+    const actifs = _timers.filter(t => !t.fini);
+    if (!actifs.length) return null;
+    const enPause = actifs.some(t => !t.paused); // s'il en reste un qui tourne → on met tout en pause
+    actifs.forEach(t => { t.paused = enPause; });
+    majBarreTimers();
+    return enPause;
+  };
+  window._cmNbTimers = () => _timers.filter(t => !t.fini).length;
 
   // --- Lecture vocale (TTS, sans fichier ni réseau) -------------------------
   function lireEtape() {
