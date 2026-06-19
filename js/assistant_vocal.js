@@ -690,7 +690,7 @@
     if (naviguer(q)) return;
 
     // 6) Ouvrir une recette précise : « ouvre la recette de X », « ouvre X »
-    let m = q.match(/\b(?:ouvre|ouvrir|montre|montre moi|affiche|open|show)\b(?:\s+(?:moi|me))?\s+(?:la\s+|the\s+)?(?:recette\s+(?:de\s+|du\s+|d\s+|des\s+)?|recipe\s+(?:for\s+)?)?(.+)/);
+    let m = q.match(/\b(?:ouvre|ouvrir|montre|montre moi|affiche|open|show|lance|lancer)\b(?:\s+(?:moi|me))?\s+(?:la\s+|le\s+|les\s+|the\s+)?(?:recette\s+(?:de\s+|du\s+|d\s+|des\s+|la\s+|le\s+)?|recipe\s+(?:for\s+)?)?(.+)/);
     if (m && m[1] && !has("propose", "suggere", "suggest", "idee") &&
         !/^(les |des |mes |the |all )?(recettes|recipes)\b/.test(m[1].trim())) {
       ouvrirRecetteParNom(m[1].trim());
