@@ -57,7 +57,7 @@
     "Ajouter aux favoris": "Add to favorites", "personnes": "servings", "personne": "serving",
     "Effacer": "Clear", "Tout vider": "Clear all", "Partager": "Share",
   };
-  const DICT = Object.assign({}, SEED, window.I18N_DICT || {}, window.I18N_ING || {}, window.I18N_NOMS || {});
+  const DICT = Object.assign({}, SEED, window.I18N_DICT || {}, window.I18N_ING || {}, window.I18N_NOMS || {}, window.I18N_AIDE || {});
 
   // Niveaux de difficulté + parenthèses FR dans les méta de carte "⏱ X • ⭐ Niveau".
   // (ordre important : "Très facile" avant "Facile")
