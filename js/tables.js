@@ -674,6 +674,9 @@ function getUniteRecette(nom, n) {
     "gelato":               ["bac", "bacs"],
     "granite":              ["bac", "bacs"],
     "frozenyogurt":         ["bac", "bacs"],
+    // — Desserts glacés tranchés (servis en parts) —
+    "vacheringlace":        ["part", "parts"],
+    "nougatglace":          ["part", "parts"],
     // — Dips / tartinables apéritif → bol ou pot (1 = 1 fournée) —
     "houmous":              ["bol", "bols"],
     "babaganoush":          ["bol", "bols"],

@@ -29,6 +29,7 @@
       .gm-perime .gm-item-dlc{color:#ff8a8a}
       .gm-urgent .gm-item-dlc{color:#ffc266}
       .gm-ok .gm-item-dlc{color:#9fdcb0}
+      .gm-cook{background:rgba(255,107,161,.16);border:1px solid rgba(255,107,161,.45);color:#ff9ec2;font-size:15px;cursor:pointer;padding:5px 9px;border-radius:9px;flex:0 0 auto}
       .gm-suppr{background:transparent;border:none;color:#ff7a7a;font-size:16px;cursor:pointer;padding:4px 6px;flex:0 0 auto}
       .gm-vide{text-align:center;color:#88858f;font-size:14px;padding:24px 10px;line-height:1.6}
       #gm-badge{display:none;background:#ff4444;color:#fff;font-size:11px;font-weight:700;border-radius:20px;padding:1px 6px;margin-left:4px;vertical-align:middle}
@@ -106,6 +107,7 @@
           <span class="gm-item-nom">${esc(it.nom)}</span>
           <span class="gm-item-dlc">${texteDlc(j, it.dlc)}</span>
         </div>
+        <button class="gm-cook" title="Voir les recettes possibles" aria-label="Voir les recettes avec ${esc(it.nom)}" onclick="gmVoirRecettes('${it.id}')">🍳</button>
         <button class="gm-suppr" aria-label="Retirer ${esc(it.nom)}" onclick="gmSupprimer('${it.id}')">✕</button>
       </div>`;
     }).join("");
@@ -133,6 +135,38 @@
     window.userProfile.gardeManger = (window.userProfile.gardeManger || []).filter(x => x.id !== id);
     if (typeof sauvegarderProfil === "function") await sauvegarderProfil({ gardeManger: window.userProfile.gardeManger });
     render();
+  };
+
+  // 🍳 Ouvre le vide-frigo en pré-sélectionnant l'aliment → recettes possibles
+  window.gmVoirRecettes = function (id) {
+    const it = liste().find(x => x.id === id);
+    if (!it) return;
+    if (typeof switchCuisineTab === "function") switchCuisineTab("videfrigo");
+    if (!window._vfIngredients && typeof vfChargerIngredients === "function") { try { vfChargerIngredients(); } catch (e) {} }
+    const clean = (s) => (typeof vfNormalize === "function" ? vfNormalize(s) : String(s).toLowerCase()).replace(/[^a-z0-9]/g, "");
+    const nomN = clean(it.nom);
+    // Meilleur libellé : exact d'abord, sinon la correspondance la plus courte
+    let label = null, bestLen = Infinity;
+    if (nomN && window._vfIngredients) {
+      window._vfIngredients.forEach(en => {
+        const l = clean(en.label);
+        if (!l) return;
+        if (l === nomN) { label = en.label; bestLen = -1; }
+        else if (bestLen >= 0 && (l.includes(nomN) || nomN.includes(l)) && l.length < bestLen) { label = en.label; bestLen = l.length; }
+      });
+    }
+    if (!label) { if (typeof afficherToast === "function") afficherToast(`« ${it.nom} » n'est pas dans la liste du vide-frigo 🙂`); return; }
+    if (window._vfSelection && !window._vfSelection.has(label)) {
+      window._vfSelection.add(label);
+      try { const chip = document.querySelector('.vf-chip[data-label="' + (window.CSS && CSS.escape ? CSS.escape(label) : label) + '"]'); if (chip) chip.classList.add("vf-chip-active"); } catch (e) {}
+    }
+    if (typeof vfMettreAJourSelection === "function") vfMettreAJourSelection();
+    setTimeout(() => {
+      const r = document.getElementById("vf-resultats");
+      if (r) r.scrollIntoView({ behavior: "smooth", block: "start" });
+      const n = document.querySelectorAll(".vf-result-card").length;
+      if (n === 0 && typeof afficherToast === "function") afficherToast(`« ${it.nom} » coché — ajoute d'autres ingrédients pour voir tes recettes 🥕`);
+    }, 150);
   };
 
   window.gmRender = render;
