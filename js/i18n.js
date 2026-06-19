@@ -66,6 +66,8 @@
     ["Facile", "Easy"], ["Moyen", "Medium"], ["Élevé", "High"],
     ["(avec pousse)", "(with proofing)"], ["(hors pâte)", "(excl. dough)"],
     ["(hors repos)", "(excl. resting)"], ["(repos)", "(resting)"], ["(facultatif)", "(optional)"],
+    ["frigo", "fridge"], ["réfrigération", "chilling"], ["pousse", "proofing"],
+    [" repos", " rest"], ["marinade", "marinating"], ["cuisson", "cooking"], ["attente", "wait"],
   ];
 
   // Unités (sing+plur FR → EN) pour traduire les en-têtes "Pour N unité".
