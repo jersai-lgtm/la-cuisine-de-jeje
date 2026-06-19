@@ -1172,10 +1172,10 @@ const INGREDIENTS_LABELS = {
   pita: "🫓 Pains pita", crepesP: "🫓 Crêpes pékinoises",
   feuilletee: "🥐 Pâte feuilletée", pate: "🫓 Pâton(s)", patons: "🫓 Pâton(s)",
   // == Produits laitiers ==
-  lait: "🥛 Lait", laitChoux: "🥛 Lait", laitCreme: "🥛 Lait",
-  creme: "🍦 Crème fraîche", gCreme: "🍦 Crème fraîche", beurreCreme: "🍦 Crème fraîche",
+  lait: "🥛 Lait", laitChoux: "🥛 Lait (choux)", laitCreme: "🥛 Lait (crème)",
+  creme: "🍦 Crème fraîche", gCreme: "🍦 Crème (goumeau)", beurreCreme: "🧈 Beurre (crème)",
   yaourt: "🥛 Yaourt grec",
-  beurre: "🧈 Beurre", beurrChoux: "🧈 Beurre", beurrCreme: "🧈 Beurre", beurrePate: "🧈 Beurre",
+  beurre: "🧈 Beurre", beurrChoux: "🧈 Beurre (choux)", beurrCreme: "🧈 Beurre (crème)", beurrePate: "🧈 Beurre (pâte)",
   huile: "🫒 Huile", huileOlive: "🫒 Huile d'olive", huileTruffe: "🍄 Huile de truffe",
   mascarpone: "🧀 Mascarpone", parmesan: "🧀 Parmesan", gruyere: "🧀 Gruyère",
   feta: "🧀 Feta", fetaOpt: "🧀 Feta (optionnel)", gorgonzola: "🧀 Gorgonzola",
@@ -1184,13 +1184,13 @@ const INGREDIENTS_LABELS = {
   laitCoco: "🥥 Lait de coco", cremeCoco: "🥥 Crème de coco", coco: "🥥 Lait de coco",
   confiture: "🍓 Confiture", moutarde: "🟡 Moutarde",
   // == Œufs ==
-  oeufs: "🥚 Œufs", oeuf: "🥚 Œuf", oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs",
-  oeufPate: "🥚 Œufs", jaunes: "🥚 Jaunes d'œufs", jaunesCreme: "🥚 Jaunes d'œufs",
+  oeufs: "🥚 Œufs", oeuf: "🥚 Œuf", oeufChoux: "🥚 Œufs", oeufCreme: "🥚 Œufs (crème)",
+  oeufPate: "🥚 Œufs (pâte)", jaunes: "🥚 Jaunes d'œufs", jaunesCreme: "🥚 Jaunes d'œufs",
   blancs: "🥚 Blancs d'œufs", blanc: "🥚 Blancs d'œufs",
   // == Sucre & levure ==
   sucre: "🍬 Sucre", sucreGlace: "🍬 Sucre glace", cassonade: "🍬 Cassonade",
-  gSucre: "🍬 Sucre", sucreCreme: "🍬 Sucre", sucreCaramel: "🍬 Sucre",
-  sucreMeringue: "🍬 Sucre", sucreIles: "🍬 Sucre de coco",
+  gSucre: "🍬 Sucre (goumeau)", sucreCreme: "🍬 Sucre (crème)", sucreCaramel: "🍬 Sucre (caramel)",
+  sucreMeringue: "🍬 Sucre (meringue)", sucreIles: "🍬 Sucre de coco",
   miel: "🍯 Miel", sirop: "🍬 Sirop de sucre", selRebord: "🧂 Sucre/sel (rebord)",
   siropderable: "🍁 Sirop d'érable", noisettes: "🌰 Noisettes", plantain: "🍌 Banane plantain", crabe: "🦀 Crabe", cornichon: "🥒 Cornichon", estragon: "🌿 Estragon",
   levure: "🟨 Levure fraîche", ferment: "🟨 Ferments lactiques",
@@ -1373,7 +1373,7 @@ const INGREDIENTS_LABELS = {
   // Produits laitiers / œufs
   chevre: "🐐 Fromage de chèvre", camembert: "🧀 Camembert", gJaune: "🥚 Jaune d'œuf",
   // Fruits
-  banane: "🍌 Banane", pomme: "🍎 Pomme", kiwi: "🥝 Kiwi", citronC: "🍋 Citron",
+  banane: "🍌 Banane", pomme: "🍎 Pomme", kiwi: "🥝 Kiwi", citronC: "🍋 Citron confit",
   // Fruits secs & graines
   pistaches: "🌰 Pistaches", arachide: "🥜 Arachide",
   sesame: "🫘 Graines de sésame", cacahetes: "🥜 Cacahuètes grillées",
