@@ -4994,6 +4994,7 @@ Object.assign(recettes, {
     ]
   },
   tarteabricots: {
+    liees: ["patesablee", "patebrisee"],
     nom: "Tarte aux Abricots",
     cat: "desserts", saisons: ["ete"], pays: "france", dateAjout: "2026-06-19T11:00:00",
     base: 8, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🥧",
@@ -5026,6 +5027,7 @@ Object.assign(recettes, {
     ]
   },
   brochettesfruits: {
+    liees: ["glacevanille"],
     nom: "Brochettes de Fruits Grillés",
     cat: "desserts", saisons: ["ete"], pays: "france", dateAjout: "2026-06-19T11:00:00",
     base: 6, temps: "20 min", niveau: "⭐ Facile", emoji: "🍢",

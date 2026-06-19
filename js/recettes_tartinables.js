@@ -475,6 +475,7 @@ Object.assign(recettes, {
     ]
   },
   houmousbetterave: {
+    liees: ["painpita"],
     nom: "Houmous de Betterave",
     cat: "tartinables", saisons: ["printemps","ete","automne"], pays: "liban", dateAjout: "2026-06-19T10:00:00",
     base: 1, temps: "10 min", niveau: "⭐ Facile", emoji: "💜",
@@ -502,6 +503,7 @@ Object.assign(recettes, {
     ]
   },
   ecrasepetitspois: {
+    liees: ["painpita"],
     nom: "Écrasé de Petits Pois, Feta & Menthe",
     cat: "tartinables", saisons: ["printemps","ete"], pays: "grece", dateAjout: "2026-06-19T10:01:00",
     base: 1, temps: "10 min", niveau: "⭐ Facile", emoji: "🟢",
