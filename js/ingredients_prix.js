@@ -221,6 +221,8 @@ const INGREDIENTS_PRIX = {
   pommes:         { prixUnite: 0.50, cal: 52,        lipSat: 0,    sucre: 10.4, sel: 0,    fibres: 2.4, prot: 0.3,  flv: 100 },
   poire:          { prixUnite: 0.50, cal: 57,        lipSat: 0,    sucre: 9.8,  sel: 0,    fibres: 3.1, prot: 0.4,  flv: 100 },
   peche:          { prixUnite: 0.60, cal: 39,        lipSat: 0,    sucre: 8.4,  sel: 0,    fibres: 1.5, prot: 0.9,  flv: 100 },
+  abricot:        { prixKg: 4.00,    calPer100g: 48, lipSat: 0,    sucre: 9,    sel: 0,    fibres: 2,   prot: 1.4,  flv: 100 },
+  abricots:       { prixKg: 4.00,    calPer100g: 48, lipSat: 0,    sucre: 9,    sel: 0,    fibres: 2,   prot: 1.4,  flv: 100 },
   pasteque:       { prixKg: 1.50, calPer100g: 30,   lipSat: 0,    sucre: 6.2,  sel: 0,    fibres: 0.4, prot: 0.6,  flv: 100 },
   fraise:         { prixKg: 8.00, calPer100g: 32,   lipSat: 0,    sucre: 4.9,  sel: 0,    fibres: 2,   prot: 0.7,  flv: 100 },
   fraises:        { prixKg: 8.00, calPer100g: 32,   lipSat: 0,    sucre: 4.9,  sel: 0,    fibres: 2,   prot: 0.7,  flv: 100 },
@@ -1029,9 +1031,11 @@ function calculerPrixCaloriesRecette(ligneTableau) {
           poire: 150,
           oignon: 100,
           concombre: 200,
+          melon: 1000,                  // 1 melon ≈ 1 kg
+          pasteque: 3000,               // 1 pastèque ≈ 3 kg
           ail: 3,                       // 1 gousse ≈ 3g
         };
-        const pu = poidsUnitaire[cle] || 100;
+        const pu = poidsUnitaire[cle] || POIDS_UNITAIRE[cle] || 100;
         const nbUnites = qte.valeur / pu;
         prixTotal += nbUnites * info.prixUnite;
         calTotal += nbUnites * info.cal;
@@ -1226,6 +1230,7 @@ const INGREDIENTS_LABELS = {
   citron: "🍋 Citron", citrons: "🍋 Citrons", orange: "🍊 Orange", orangeJus: "🍊 Jus d'orange",
   pommes: "🍎 Pommes", bananes: "🍌 Bananes", fraise: "🍓 Fraise", fraises: "🍓 Fraises",
   framboises: "🫐 Framboises", myrtilles: "🫐 Myrtilles", peche: "🍑 Pêche",
+  abricot: "🍑 Abricots", abricots: "🍑 Abricots",
   pruneaux: "🫐 Pruneaux", fruits: "🍎 Fruits", passion: "🌺 Fruits de la passion",
   mangue: "🥭 Mangue", pasteque: "🍉 Pastèque", cerises: "🍒 Cerises", cerise: "🍒 Cerise",
   fraise: "🍓 Fraise", avocats: "🥑 Avocats", ananas: "🍍 Ananas",

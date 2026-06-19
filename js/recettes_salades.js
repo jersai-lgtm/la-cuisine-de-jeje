@@ -1261,4 +1261,66 @@ Object.assign(recettes, {
       {icone:"🍽️", titre:"Servir", detail:"Saupoudrer d'un voile de sumac supplémentaire et servir aussitôt.", badge:"🍽️ Dressage"}
     ]
   },
+  saladepasteque: {
+    nom: "Salade Pastèque, Feta & Menthe",
+    cat: "salades", saisons: ["ete"], pays: "grece", dateAjout: "2026-06-19T10:02:00",
+    base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🍉",
+    description: "Le contraste parfait de l'été : pastèque juteuse et sucrée, feta salée et crémeuse, menthe fraîche et un filet d'huile d'olive. Ultra-rafraîchissant et prêt en 15 minutes.",
+    ingredients: {},
+    tableauSaladePasteque: [
+      { nb: 1, pasteque: "200 g", feta: "50 g", menthe: "2 g", olives: "20 g", huileolive: "10 ml", citron: "5 g", sel: "1 g" },
+      { nb: 2, pasteque: "400 g", feta: "100 g", menthe: "4 g", olives: "40 g", huileolive: "20 ml", citron: "10 g", sel: "2 g" },
+      { nb: 3, pasteque: "600 g", feta: "150 g", menthe: "6 g", olives: "60 g", huileolive: "30 ml", citron: "15 g", sel: "3 g" },
+      { nb: 4, pasteque: "800 g", feta: "200 g", menthe: "8 g", olives: "80 g", huileolive: "40 ml", citron: "20 g", sel: "4 g" },
+      { nb: 5, pasteque: "1000 g", feta: "250 g", menthe: "10 g", olives: "100 g", huileolive: "50 ml", citron: "25 g", sel: "5 g" },
+      { nb: 6, pasteque: "1200 g", feta: "300 g", menthe: "12 g", olives: "120 g", huileolive: "60 ml", citron: "30 g", sel: "6 g" },
+      { nb: 7, pasteque: "1400 g", feta: "350 g", menthe: "14 g", olives: "140 g", huileolive: "70 ml", citron: "35 g", sel: "7 g" },
+      { nb: 8, pasteque: "1600 g", feta: "400 g", menthe: "16 g", olives: "160 g", huileolive: "80 ml", citron: "40 g", sel: "8 g" },
+      { nb: 9, pasteque: "1800 g", feta: "450 g", menthe: "18 g", olives: "180 g", huileolive: "90 ml", citron: "45 g", sel: "9 g" },
+      { nb: 10, pasteque: "2000 g", feta: "500 g", menthe: "20 g", olives: "200 g", huileolive: "100 ml", citron: "50 g", sel: "10 g" },
+      { nb: 11, pasteque: "2200 g", feta: "550 g", menthe: "22 g", olives: "220 g", huileolive: "110 ml", citron: "55 g", sel: "11 g" },
+      { nb: 12, pasteque: "2400 g", feta: "600 g", menthe: "24 g", olives: "240 g", huileolive: "120 ml", citron: "60 g", sel: "12 g" },
+      { nb: 13, pasteque: "2600 g", feta: "650 g", menthe: "26 g", olives: "260 g", huileolive: "130 ml", citron: "65 g", sel: "13 g" },
+      { nb: 14, pasteque: "2800 g", feta: "700 g", menthe: "28 g", olives: "280 g", huileolive: "140 ml", citron: "70 g", sel: "14 g" },
+      { nb: 15, pasteque: "3000 g", feta: "750 g", menthe: "30 g", olives: "300 g", huileolive: "150 ml", citron: "75 g", sel: "15 g" }
+    ],
+    etapes: [
+      { icone: "🍉", titre: "Couper la pastèque", detail: "Retirer l'écorce et les pépins, couper la pastèque en cubes généreux. Réserver au frais.", badge: null },
+      { icone: "🧀", titre: "Préparer la feta", detail: "Couper ou émietter la feta en gros morceaux.", badge: null },
+      { icone: "🌿", titre: "Assembler", detail: "Disposer la pastèque et la feta dans un grand plat, parsemer de menthe ciselée et d'olives.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Arroser d'huile d'olive et d'un trait de jus de citron, poivrer généreusement.", badge: null },
+      { icone: "❄️", titre: "Servir", detail: "Servir bien frais, idéalement aussitôt pour garder le croquant de la pastèque.", badge: null }
+    ]
+  },
+  saladermelonmozza: {
+    nom: "Salade Melon, Mozzarella & Basilic",
+    cat: "salades", saisons: ["ete"], pays: "italie", dateAjout: "2026-06-19T10:03:00",
+    base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🍈",
+    description: "Une caprese revisitée façon estivale : billes de melon sucré, mozzarella crémeuse, basilic et un filet d'huile d'olive. Fraîche, élégante et terriblement simple.",
+    ingredients: {},
+    tableauSaladeMelonMozza: [
+      { nb: 1, melon: "200 g", mozza: "60 g", basilic: "2 g", huileolive: "10 ml", jambon: "20 g", sel: "1 g" },
+      { nb: 2, melon: "400 g", mozza: "120 g", basilic: "4 g", huileolive: "20 ml", jambon: "40 g", sel: "2 g" },
+      { nb: 3, melon: "600 g", mozza: "180 g", basilic: "6 g", huileolive: "30 ml", jambon: "60 g", sel: "3 g" },
+      { nb: 4, melon: "800 g", mozza: "240 g", basilic: "8 g", huileolive: "40 ml", jambon: "80 g", sel: "4 g" },
+      { nb: 5, melon: "1000 g", mozza: "300 g", basilic: "10 g", huileolive: "50 ml", jambon: "100 g", sel: "5 g" },
+      { nb: 6, melon: "1200 g", mozza: "360 g", basilic: "12 g", huileolive: "60 ml", jambon: "120 g", sel: "6 g" },
+      { nb: 7, melon: "1400 g", mozza: "420 g", basilic: "14 g", huileolive: "70 ml", jambon: "140 g", sel: "7 g" },
+      { nb: 8, melon: "1600 g", mozza: "480 g", basilic: "16 g", huileolive: "80 ml", jambon: "160 g", sel: "8 g" },
+      { nb: 9, melon: "1800 g", mozza: "540 g", basilic: "18 g", huileolive: "90 ml", jambon: "180 g", sel: "9 g" },
+      { nb: 10, melon: "2000 g", mozza: "600 g", basilic: "20 g", huileolive: "100 ml", jambon: "200 g", sel: "10 g" },
+      { nb: 11, melon: "2200 g", mozza: "660 g", basilic: "22 g", huileolive: "110 ml", jambon: "220 g", sel: "11 g" },
+      { nb: 12, melon: "2400 g", mozza: "720 g", basilic: "24 g", huileolive: "120 ml", jambon: "240 g", sel: "12 g" },
+      { nb: 13, melon: "2600 g", mozza: "780 g", basilic: "26 g", huileolive: "130 ml", jambon: "260 g", sel: "13 g" },
+      { nb: 14, melon: "2800 g", mozza: "840 g", basilic: "28 g", huileolive: "140 ml", jambon: "280 g", sel: "14 g" },
+      { nb: 15, melon: "3000 g", mozza: "900 g", basilic: "30 g", huileolive: "150 ml", jambon: "300 g", sel: "15 g" }
+    ],
+    etapes: [
+      { icone: "🍈", titre: "Préparer le melon", detail: "Couper le melon en deux, retirer les graines, prélever des billes ou des cubes.", badge: null },
+      { icone: "🧀", titre: "Mozzarella", detail: "Égoutter la mozzarella et la couper en morceaux (ou utiliser des billes).", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Alterner melon, mozzarella et éventuellement de fines tranches de jambon cru dans l'assiette.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Parsemer de basilic frais et arroser d'un filet d'huile d'olive.", badge: null },
+      { icone: "🧂", titre: "Finir", detail: "Une pincée de fleur de sel, un tour de poivre, et servir aussitôt bien frais.", badge: null }
+    ]
+  },
 });

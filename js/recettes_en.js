@@ -31676,5 +31676,277 @@ window.RECETTES_EN = {
     "detail": "Pour into jars and let set."
    }
   ]
+ },
+ "houmousbetterave": {
+  "nom": "Beetroot Hummus",
+  "description": "A vibrant pink, tangy hummus: the earthy sweetness of cooked beetroot meets creamy chickpeas and tahini. As pretty as it is tasty — perfect as a dip with raw veggies.",
+  "etapes": [
+   {
+    "titre": "Cook the beetroot",
+    "detail": "Use pre-cooked beetroot, or boil/roast it then peel and cut into chunks."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Put the drained chickpeas, beetroot, tahini, lemon juice, garlic, cumin and salt in a blender. Blend at full power."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Add the olive oil and a little cold water until smooth and creamy."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust salt and lemon: beetroot needs a good hit of acidity."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pour into a bowl, smooth it out and make a well in the centre."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Drizzle of olive oil, seeds (sesame, pumpkin) and a few mint leaves. Serve cold with pita bread or raw veggies."
+   }
+  ]
+ },
+ "ecrasepetitspois": {
+  "nom": "Crushed Peas, Feta & Mint",
+  "description": "A fresh, springy spread: crushed peas, crumbled feta, mint and lemon. On a slice of toasted bread, it's the perfect warm-weather appetiser.",
+  "etapes": [
+   {
+    "titre": "Cook the peas",
+    "detail": "Cook the peas (fresh or frozen) for a few minutes in boiling salted water, then drain and refresh."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Roughly crush the peas with a fork, keeping some texture."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Add the crumbled feta, chopped mint, lemon juice and olive oil."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt lightly (careful, feta is already salty) and add pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spread on toasted bread rubbed with garlic, or serve as a dip with breadsticks."
+   }
+  ]
+ },
+ "saladepasteque": {
+  "nom": "Watermelon, Feta & Mint Salad",
+  "description": "The perfect summer contrast: juicy sweet watermelon, salty creamy feta, fresh mint and a drizzle of olive oil. Ultra-refreshing and ready in 15 minutes.",
+  "etapes": [
+   {
+    "titre": "Cut the watermelon",
+    "detail": "Remove the rind and seeds, cut the watermelon into generous cubes. Keep cold."
+   },
+   {
+    "titre": "Prepare the feta",
+    "detail": "Cut or crumble the feta into large pieces."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Arrange the watermelon and feta in a large dish, scatter with chopped mint and olives."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with olive oil and a dash of lemon juice, pepper generously."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, ideally right away to keep the watermelon crunchy."
+   }
+  ]
+ },
+ "saladermelonmozza": {
+  "nom": "Melon, Mozzarella & Basil Salad",
+  "description": "A summery twist on the caprese: sweet melon balls, creamy mozzarella, basil and a drizzle of olive oil. Fresh, elegant and wonderfully simple.",
+  "etapes": [
+   {
+    "titre": "Prepare the melon",
+    "detail": "Halve the melon, remove the seeds, scoop into balls or cubes."
+   },
+   {
+    "titre": "Mozzarella",
+    "detail": "Drain the mozzarella and cut into pieces (or use bocconcini)."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Alternate melon, mozzarella and, if you like, thin slices of cured ham on the plate."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Scatter with fresh basil and drizzle with olive oil."
+   },
+   {
+    "titre": "Finish",
+    "detail": "A pinch of fleur de sel, a twist of pepper, and serve right away well chilled."
+   }
+  ]
+ },
+ "soupefroideavocat": {
+  "nom": "Chilled Avocado Soup",
+  "description": "An icy, ultra-velvety soup: avocado, cucumber, yogurt, lime and coriander, blended in two minutes. The perfect creamy cool-down for heatwave days.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Peel the avocado and cucumber, remove the pit and roughly chop."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Put avocado, cucumber, yogurt, lime juice, garlic, coriander and a little cold water in the blender. Blend until smooth and velvety."
+   },
+   {
+    "titre": "Adjust the texture",
+    "detail": "Add iced water until you reach the desired consistency."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper and adjust the lime to wake up the avocado."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate for at least 30 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve ice-cold, with a drizzle of olive oil, diced cucumber and coriander."
+   }
+  ]
+ },
+ "sorbetpasteque": {
+  "nom": "Watermelon Sorbet",
+  "description": "The most refreshing sorbet of the summer: blended watermelon, barely sweetened and brightened with a dash of lime. A handful of ingredients, zero fat, maximum freshness.",
+  "etapes": [
+   {
+    "titre": "Blend the watermelon",
+    "detail": "Remove the rind and as many seeds as possible, blend the flesh into juice."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Heat the water with the sugar until dissolved, then let it cool."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the watermelon juice, the syrup and the lime juice."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate the mixture until well chilled."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn in an ice-cream maker, or without: freeze in a tub and whisk every 30-40 min."
+   },
+   {
+    "titre": "Set",
+    "detail": "Keep in the freezer for 1 hour to firm up."
+   }
+  ]
+ },
+ "nicecreambanane": {
+  "nom": "Banana Nice Cream",
+  "description": "The healthiest instant ice cream there is: ripe bananas frozen then blended, and that's it. Soft-serve texture, with no added sugar or cream.",
+  "etapes": [
+   {
+    "titre": "Freeze the bananas",
+    "detail": "Peel very ripe bananas, slice them and freeze for at least 3 hours."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the frozen slices with a splash of milk, scraping down the sides, until creamy."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the vanilla (or cocoa, peanut butter, berries as you like)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Enjoy right away soft-serve, or freeze for 1 hour for a firmer ice cream."
+   }
+  ]
+ },
+ "esquimauxfraise": {
+  "nom": "Strawberry-Yogurt Ice Pops",
+  "description": "Super simple homemade ice pops: blended strawberries, yogurt and a little honey, poured into moulds. Soft, fruity and additive-free — kids love them.",
+  "etapes": [
+   {
+    "titre": "Blend the strawberries",
+    "detail": "Hull and blend the strawberries into a coulis (keep a few chunks for texture if you like)."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix the strawberry coulis, the yogurt and the honey."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into ice-pop moulds and insert the sticks."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Freeze for at least 4 hours, ideally overnight."
+   },
+   {
+    "titre": "Unmould",
+    "detail": "Quickly run the moulds under warm water to release easily."
+   }
+  ]
+ },
+ "tarteabricots": {
+  "nom": "Apricot Tart",
+  "description": "The summer apricot tart: crisp shortcrust pastry, fresh slightly caramelised apricots and just the right amount of sugar. The taste of sunshine in every slice.",
+  "etapes": [
+   {
+    "titre": "Shortcrust pastry",
+    "detail": "Rub the flour with the cold butter, add the sugar, the egg and a pinch of salt. Form a ball, wrap and chill."
+   },
+   {
+    "titre": "Line the tin",
+    "detail": "Roll out the pastry and line a tart tin. Prick the base with a fork."
+   },
+   {
+    "titre": "Apricots",
+    "detail": "Wash, pit and quarter the apricots. Arrange them in a rosette, rounded side up."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Sprinkle with brown sugar (and a little ground almond on the base to soak up the juice, if you have some)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C until the pastry is golden and the apricots tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool, optionally glaze with a little apricot jam for shine. Enjoy warm or cold."
+   }
+  ]
+ },
+ "brochettesfruits": {
+  "nom": "Grilled Fruit Skewers",
+  "description": "Summer fruit skewers on the grill: the heat caramelises the sugars and concentrates the flavours. Honey, lime and mint — a light, spectacular dessert.",
+  "etapes": [
+   {
+    "titre": "Cut the fruit",
+    "detail": "Cut firm fruit into large chunks: pineapple, peach, strawberries, slightly underripe banana…"
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the fruit onto skewers (wooden ones, soaked in water beforehand)."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with a mix of honey and lime juice."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Cook 2-3 min on each side on a hot grill (barbecue or griddle), until nicely caramelised."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with chopped mint and serve warm, optionally with a scoop of vanilla ice cream or yogurt."
+   }
+  ]
  }
 };

@@ -474,4 +474,57 @@ Object.assign(recettes, {
       { icone: "🫙", titre: "Mettre en pot", detail: "Verser brûlant dans des pots stérilisés, fermer et retourner jusqu'à refroidissement.", badge: null }
     ]
   },
+  houmousbetterave: {
+    nom: "Houmous de Betterave",
+    cat: "tartinables", saisons: ["printemps","ete","automne"], pays: "liban", dateAjout: "2026-06-19T10:00:00",
+    base: 1, temps: "10 min", niveau: "⭐ Facile", emoji: "💜",
+    description: "Un houmous rose vif et acidulé : la douceur terreuse de la betterave cuite mariée au crémeux des pois chiches et du tahini. Aussi joli que bon, parfait à l'apéro avec des crudités.",
+    ingredients: {},
+    tableauHoumousBetterave: [
+      { nb: 1, poischiches: "250 g", betterave: "150 g", tahini: "30 g", citron: "1", ail: "5 g", huileolive: "30 ml", cumin: "2 g", sel: "2 g" },
+      { nb: 2, poischiches: "500 g", betterave: "300 g", tahini: "60 g", citron: "2", ail: "10 g", huileolive: "60 ml", cumin: "4 g", sel: "4 g" },
+      { nb: 3, poischiches: "750 g", betterave: "450 g", tahini: "90 g", citron: "3", ail: "15 g", huileolive: "90 ml", cumin: "6 g", sel: "6 g" },
+      { nb: 4, poischiches: "1000 g", betterave: "600 g", tahini: "120 g", citron: "4", ail: "20 g", huileolive: "120 ml", cumin: "8 g", sel: "8 g" },
+      { nb: 5, poischiches: "1250 g", betterave: "750 g", tahini: "150 g", citron: "5", ail: "25 g", huileolive: "150 ml", cumin: "10 g", sel: "10 g" },
+      { nb: 6, poischiches: "1500 g", betterave: "900 g", tahini: "180 g", citron: "6", ail: "30 g", huileolive: "180 ml", cumin: "12 g", sel: "12 g" },
+      { nb: 7, poischiches: "1750 g", betterave: "1050 g", tahini: "210 g", citron: "7", ail: "35 g", huileolive: "210 ml", cumin: "14 g", sel: "14 g" },
+      { nb: 8, poischiches: "2000 g", betterave: "1200 g", tahini: "240 g", citron: "8", ail: "40 g", huileolive: "240 ml", cumin: "16 g", sel: "16 g" },
+      { nb: 9, poischiches: "2250 g", betterave: "1350 g", tahini: "270 g", citron: "9", ail: "45 g", huileolive: "270 ml", cumin: "18 g", sel: "18 g" },
+      { nb: 10, poischiches: "2500 g", betterave: "1500 g", tahini: "300 g", citron: "10", ail: "50 g", huileolive: "300 ml", cumin: "20 g", sel: "20 g" }
+    ],
+    etapes: [
+      { icone: "🫐", titre: "Cuire la betterave", detail: "Utiliser de la betterave déjà cuite, ou la cuire à l'eau/au four puis la peler et la couper en morceaux.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mettre pois chiches égouttés, betterave, tahini, jus de citron, ail, cumin et sel au mixeur. Mixer à pleine puissance.", badge: "⏱ 2 min" },
+      { icone: "💧", titre: "Détendre", detail: "Ajouter l'huile d'olive et un peu d'eau froide jusqu'à une texture lisse et crémeuse.", badge: null },
+      { icone: "👅", titre: "Ajuster", detail: "Goûter et rectifier sel et citron : la betterave demande un bon coup d'acidité.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Verser dans un bol, lisser et creuser un puits au centre.", badge: null },
+      { icone: "🫒", titre: "Finir", detail: "Filet d'huile d'olive, graines (sésame, courge) et quelques feuilles de menthe. Servir frais avec pain pita ou crudités.", badge: null }
+    ]
+  },
+  ecrasepetitspois: {
+    nom: "Écrasé de Petits Pois, Feta & Menthe",
+    cat: "tartinables", saisons: ["printemps","ete"], pays: "grece", dateAjout: "2026-06-19T10:01:00",
+    base: 1, temps: "10 min", niveau: "⭐ Facile", emoji: "🟢",
+    description: "Une tartinade fraîche et printanière : petits pois écrasés, feta émiettée, menthe et citron. Sur une tartine de pain grillé, c'est l'apéro parfait des beaux jours.",
+    ingredients: {},
+    tableauEcrasePetitsPois: [
+      { nb: 1, petitspois: "200 g", feta: "60 g", menthe: "5 g", citron: "1", huileolive: "15 ml", sel: "1 g" },
+      { nb: 2, petitspois: "400 g", feta: "120 g", menthe: "10 g", citron: "2", huileolive: "30 ml", sel: "2 g" },
+      { nb: 3, petitspois: "600 g", feta: "180 g", menthe: "15 g", citron: "3", huileolive: "45 ml", sel: "3 g" },
+      { nb: 4, petitspois: "800 g", feta: "240 g", menthe: "20 g", citron: "4", huileolive: "60 ml", sel: "4 g" },
+      { nb: 5, petitspois: "1000 g", feta: "300 g", menthe: "25 g", citron: "5", huileolive: "75 ml", sel: "5 g" },
+      { nb: 6, petitspois: "1200 g", feta: "360 g", menthe: "30 g", citron: "6", huileolive: "90 ml", sel: "6 g" },
+      { nb: 7, petitspois: "1400 g", feta: "420 g", menthe: "35 g", citron: "7", huileolive: "105 ml", sel: "7 g" },
+      { nb: 8, petitspois: "1600 g", feta: "480 g", menthe: "40 g", citron: "8", huileolive: "120 ml", sel: "8 g" },
+      { nb: 9, petitspois: "1800 g", feta: "540 g", menthe: "45 g", citron: "9", huileolive: "135 ml", sel: "9 g" },
+      { nb: 10, petitspois: "2000 g", feta: "600 g", menthe: "50 g", citron: "10", huileolive: "150 ml", sel: "10 g" }
+    ],
+    etapes: [
+      { icone: "🟢", titre: "Cuire les petits pois", detail: "Cuire les petits pois (frais ou surgelés) quelques minutes à l'eau bouillante salée, puis égoutter et rafraîchir.", badge: "⏱ 4 min" },
+      { icone: "🥄", titre: "Écraser", detail: "Écraser grossièrement les petits pois à la fourchette en gardant de la texture.", badge: null },
+      { icone: "🧀", titre: "Mélanger", detail: "Ajouter la feta émiettée, la menthe ciselée, le jus de citron et l'huile d'olive.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Saler légèrement (attention, la feta est déjà salée) et poivrer.", badge: null },
+      { icone: "🍞", titre: "Servir", detail: "Tartiner sur du pain grillé frotté à l'ail, ou servir en dip avec des gressins.", badge: null }
+    ]
+  },
 });

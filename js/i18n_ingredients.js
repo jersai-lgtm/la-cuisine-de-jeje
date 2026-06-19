@@ -36,7 +36,7 @@ window.I18N_ING = {
   "🥚 Œufs (crème)": "🥚 Eggs (cream)", "🥚 Œufs (pâte)": "🥚 Eggs (pastry)",
   "🍬 Sucre (goumeau)": "🍬 Sugar (goumeau)", "🍬 Sucre (crème)": "🍬 Sugar (cream)",
   "🍬 Sucre (caramel)": "🍬 Sugar (caramel)", "🍬 Sucre (meringue)": "🍬 Sugar (meringue)",
-  "🍋 Citron confit": "🍋 Preserved lemon",
+  "🍋 Citron confit": "🍋 Preserved lemon", "🍑 Abricots": "🍑 Apricots",
   "🍦 Crème fraîche": "🍦 Crème fraîche", "🧈 Beurre": "🧈 Butter", "🫒 Huile": "🫒 Oil", "🫒 Huile d'olive": "🫒 Olive oil",
   "🍄 Huile de truffe": "🍄 Truffle oil", "🧀 Mascarpone": "🧀 Mascarpone", "🧀 Parmesan": "🧀 Parmesan", "🧀 Gruyère": "🧀 Gruyère",
   "🧀 Feta": "🧀 Feta", "🧀 Feta (optionnel)": "🧀 Feta (optional)", "🧀 Gorgonzola": "🧀 Gorgonzola", "🧀 Ricotta": "🧀 Ricotta",
