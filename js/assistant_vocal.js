@@ -473,7 +473,7 @@
 
   // --- Courses / favoris / menu --------------------------------------------
   function ajouterCoursePerso(label) {
-    if (!window.currentUser) { repondre(EN() ? "Log in to use your list." : "Connecte-toi pour utiliser ta liste."); return; }
+    if (!window.currentUser || !window.userProfile) { repondre(EN() ? "Log in to use your list." : "Connecte-toi pour utiliser ta liste."); return; }
     label = label.charAt(0).toUpperCase() + label.slice(1);
     if (!window.userProfile.listeCoursesPerso) window.userProfile.listeCoursesPerso = [];
     if (!window.userProfile.listeCoursesPerso.some(x => x.toLowerCase() === label.toLowerCase())) window.userProfile.listeCoursesPerso.push(label);
@@ -625,6 +625,7 @@
   // =========================================================================
   function executer(transcript) {
     const q = motsEnChiffres(norm(transcript));
+    window._avUnhandled = false;
     if (!q) return;
 
     // 1) Mode cuisson : priorité aux commandes de pilotage
@@ -637,9 +638,9 @@
 
     const has = (...a) => a.some(x => q.includes(x));
 
-    // 2) Aide
-    if (has("aide", "peux tu faire", "tu peux faire", "peux faire", "sais tu faire", "tu sais faire",
-            "que peux", "que sais", "comment ca marche", "commandes", "help", "what can you do", "what can i say")) { aide(); return; }
+    // 2) Aide (formes « tu » uniquement, pour ne pas capter « ce que JE peux faire »)
+    if (has("aide", "peux tu faire", "tu peux faire", "sais tu faire", "tu sais faire", "que peux tu", "que sais tu",
+            "comment ca marche", "commandes", "help", "what can you do", "what can i say")) { aide(); return; }
 
     // 3) Lancer le mode cuisson sur la recette ouverte
     if (has("mode cuisson", "lance la cuisson", "commence la cuisson", "cuisinons", "on cuisine", "start cooking", "cooking mode", "let s cook")) {
@@ -654,6 +655,11 @@
       // « ferme la recette », « retour », « ferme »
       if (!/\bouvr|\bopen/.test(q)) { fermerCourant(); return; }
     }
+
+    // 4.5) Question / tournure conversationnelle → on laisse Claude (repli).
+    // Placé après les commandes explicites (aide/cuisson/fermer) mais avant
+    // l'ouverture/suggestion, qui captureraient à tort « je peux… ? », « c'est quoi… ».
+    if (estConversationnel(q)) { window._avUnhandled = true; return; }
 
     // 5a) Régler les portions : « pour 6 personnes »
     const mp = q.match(/\bpour (\d+)\s*(personne|personnes|people|serving|servings|convive|convives|gens|part|parts)\b/);
@@ -696,7 +702,7 @@
       return void proposer(extraireCriteres(q), transcript);
     }
 
-    // 8) Repli : nom de recette fort → on ouvre ; sinon recherche dans la grille
+    // 8) Repli : nom de recette fort → on ouvre
     let fort = null;
     if (typeof scorerCartes === "function") { const r = scorerCartes(q); if (r && r.length && r[0].score >= 120) fort = r[0].entry; }
     if (fort) {
@@ -705,16 +711,23 @@
       window._assistantCle = fort.cle;
       return;
     }
-    // sinon : si des résultats SOLIDES (pas du bruit fuzzy), on filtre la grille
+    // Question / tournure conversationnelle → on laisse Claude répondre (repli)
+    if (estConversationnel(q)) { window._avUnhandled = true; return; }
+    // sinon : recherche d'ingrédient SOLIDE (match franc, pas du bruit fuzzy)
     if (typeof scorerCartes === "function") {
       const r = scorerCartes(q).filter(x => x.score >= 40);
-      if (r.length && r[0].score >= 50) {
+      if (r.length && r[0].score >= 100) {
         montrerSelection(r.map(x => x.entry));
         repondre((EN() ? `${r.length} results for “${transcript}”.` : `${r.length} résultats pour « ${transcript} ».`), "success");
         return;
       }
     }
-    repondre(EN() ? "Sorry, I didn't get that. Say “help”." : "Désolé, je n'ai pas compris. Dis « aide ».");
+    // Local n'a pas compris → l'appelant tentera Claude (sinon excuse)
+    window._avUnhandled = true;
+  }
+  function estConversationnel(q) {
+    return /^(c est quoi|qu est|qu y a|pourquoi|comment|est ce que|peux tu|peut on|puis je|je peux|raconte|explique|dis moi|conseille|que penses|aide moi a|how |why |what |can i|can you|could you|should i|tell me|explain|is it ok|do i)/.test(q)
+      || /\?\s*$/.test(q);
   }
 
   // =========================================================================
@@ -794,7 +807,7 @@
       if (dernier) {
         banniere(`<span class="av-txt">“${(typeof escapeHTML === "function" ? escapeHTML(dernier) : dernier)}”</span>`, true);
         setTimeout(() => banniere("", false), 1600);
-        try { executer(dernier); } catch (e) { repondre(EN() ? "Something went wrong." : "Une erreur est survenue.", "error"); }
+        try { traiter(dernier); } catch (e) { repondre(EN() ? "Something went wrong." : "Une erreur est survenue.", "error"); }
       } else {
         banniere("", false);
       }
@@ -826,8 +839,123 @@
     else if (!continu) { try { if (reco) reco.stop(); } catch (e) {} }
     return continu;
   };
-  // Exécute une commande sous forme de texte (debug / tests / accessibilité clavier).
-  window.assistantVocalCommande = function (txt) { try { executer(String(txt || "")); } catch (e) {} };
+  // =========================================================================
+  // REPLI CLAUDE (hybride) — quand les règles locales ne comprennent pas, on
+  // demande à Claude via le Worker Cloudflare (clé protégée + quota par user).
+  // Claude renvoie une ACTION structurée (exécutée localement) ou une réponse.
+  // =========================================================================
+  const CLAUDE_PROXY = "https://la-cuisine-de-jeje.jerome-sainthot.workers.dev";
+  function peutClaude() {
+    return !!(window.currentUser && typeof window.currentUser.getIdToken === "function" && (typeof navigator === "undefined" || navigator.onLine !== false));
+  }
+  function contexteCourant() {
+    const c = {};
+    if (window._assistantCle) c.recetteOuverte = nomLisible(window._assistantCle);
+    if (enModeCuisson()) { c.modeCuisson = true; const p = document.getElementById("cookmode-progress-txt"); if (p) c.etape = p.textContent; }
+    return c;
+  }
+  function promptSysteme(ctx) {
+    return [
+      "Tu es l'assistant vocal de l'app de recettes « La Cuisine de Jéjé » (~1040 recettes). L'utilisateur parle en français ou en anglais.",
+      "Réponds UNIQUEMENT par un objet JSON valide (pas de markdown, pas de texte autour).",
+      "Champs : \"action\" (obligatoire) et \"dire\" (obligatoire : 1 à 2 phrases à lire à voix haute, dans LA LANGUE de l'utilisateur).",
+      "Valeurs possibles de action :",
+      "- \"ouvrir\" : ouvrir une recette précise → ajoute \"recette\" (nom approximatif).",
+      "- \"proposer\" : suggérer des recettes. Champs optionnels : \"pays\" (italie, mexique, france, japon, inde, espagne, maroc, usa, grece, liban, chine, thailande…), \"categorie\" (desserts, plats, entrees, soupes, salades, pizzas, cocktails, mocktails, healthy, brunch, encas, boulangerie, sauces, aperitifs, glaces, tartinables), \"regime\" (vegan, vegetarien, sans-gluten, sans-lactose), \"avec\" (liste d'ingrédients en français), \"sans\" (liste d'ingrédients en français), \"rapide\" (bool), \"eco\" (bool, pas cher), \"healthy\" (bool), \"facile\" (bool), \"saison\" (bool).",
+      "- \"naviguer\" : \"section\" parmi accueil, recettes, favoris, courses, garde-manger, menus, stats.",
+      "- \"cuisson\" : \"commande\" parmi suivant, precedent, etape (+ \"n\"), minuteur (+ \"minutes\"), pause, fermer, temps, ingredients.",
+      "- \"portions\" : \"n\" (nombre de personnes) pour la recette ouverte.",
+      "- \"reponse\" : pour répondre à une QUESTION de cuisine (technique, substitution, conseil, « c'est quoi… », « pourquoi… »). Mets la réponse complète dans \"dire\" (2 phrases max).",
+      "- \"rien\" : si vraiment incompréhensible.",
+      "Pour pays/catégorie/ingrédients, utilise toujours le vocabulaire français ci-dessus même si l'utilisateur parle anglais.",
+      ctx.recetteOuverte ? ("Recette actuellement ouverte : " + ctx.recetteOuverte + ".") : "Aucune recette ouverte.",
+      ctx.modeCuisson ? ("Mode cuisson actif (" + (ctx.etape || "") + ").") : "",
+    ].filter(Boolean).join("\n");
+  }
+  function critDepuisObj(o) {
+    const crit = { pays: o.pays || null, paysLabel: "", cat: o.categorie || null, catLabel: "", regime: o.regime || null, avec: [], sans: [], tempsMax: o.rapide ? 30 : (o.tempsMax || null), eco: !!o.eco, healthy: !!o.healthy, facile: !!o.facile, saison: !!o.saison };
+    (o.avec || []).forEach(w => { const n = norm(w); if (n) crit.avec.push([n]); });
+    (o.sans || []).forEach(w => { const n = norm(w); if (n) crit.sans.push([n]); });
+    if (crit.pays && typeof LABELS_PAYS !== "undefined") crit.paysLabel = LABELS_PAYS[crit.pays] || crit.pays;
+    if (crit.cat && typeof LABELS_CATEGORIE !== "undefined") crit.catLabel = LABELS_CATEGORIE[crit.cat] || crit.cat;
+    return crit;
+  }
+  function executerAction(obj) {
+    const dire = obj && obj.dire ? String(obj.dire) : "";
+    switch (obj && obj.action) {
+      case "ouvrir": {
+        const e = obj.recette ? trouverRecette(obj.recette) : null;
+        if (e) { repondre(dire || (EN() ? `Opening ${e.nom}.` : `J'ouvre ${nomLisible(e.cle)}.`), "success"); if (typeof ouvrirFiche === "function") ouvrirFiche(e.cle, ""); window._assistantCle = e.cle; window._avDernier = null; return; }
+        repondre(dire || (EN() ? "I couldn't find that recipe." : "Je n'ai pas trouvé cette recette."), "error"); return;
+      }
+      case "proposer": {
+        const crit = critDepuisObj(obj);
+        const cartes = cartesPourCriteres(crit);
+        if (!cartes.length) { repondre(dire || (EN() ? "No recipe found." : "Aucune recette trouvée."), "error"); window._avDernier = null; return; }
+        montrerSelection(cartes); window._avDernier = { crit, cartes, idx: 0 };
+        repondre(dire || (EN() ? `${cartes.length} recipes.` : `${cartes.length} recettes.`), "success"); return;
+      }
+      case "naviguer": {
+        const map = { accueil: "accueil", recettes: "les recettes", favoris: "favoris", courses: "ma liste de courses", "garde-manger": "garde manger", gardemanger: "garde manger", pantry: "garde manger", menus: "menus", stats: "mes stats" };
+        if (!naviguer(norm(map[obj.section] || obj.section || ""))) repondre(dire || (EN() ? "Done." : "C'est fait."));
+        return;
+      }
+      case "cuisson": {
+        if (!enModeCuisson()) { repondre(EN() ? "Cook mode isn't open." : "Le mode cuisson n'est pas ouvert."); return; }
+        const m = { suivant: "suivant", precedent: "precedent", pause: "pause", fermer: "ferme", temps: "temps restant", ingredients: "lis les ingredients" };
+        let phrase = m[obj.commande] || obj.commande || "";
+        if (obj.commande === "etape" && obj.n) phrase = "etape " + obj.n;
+        if (obj.commande === "minuteur" && obj.minutes) phrase = "minuteur " + obj.minutes + " minutes";
+        gererCuisson(norm(String(phrase))); return;
+      }
+      case "portions": {
+        const n = parseInt(obj.n, 10);
+        if (window._assistantCle && ficheOuverte() && n > 0 && n <= 50 && typeof rerendreFiche === "function") { rerendreFiche(window._assistantCle, n); repondre(dire || (EN() ? `Set to ${n} servings.` : `Réglé pour ${n} personnes.`), "success"); }
+        else repondre(dire || (EN() ? "Open a recipe first." : "Ouvre d'abord une recette."));
+        return;
+      }
+      default: repondre(dire || (EN() ? "Sorry, I didn't get that." : "Désolé, je n'ai pas compris."));
+    }
+  }
+  async function demanderClaude(transcript) {
+    banniere(`<span class="av-pastille"></span><span class="av-txt">${EN() ? "Thinking…" : "Je réfléchis…"}</span>`, true);
+    try {
+      const idToken = await window.currentUser.getIdToken();
+      const resp = await fetch(CLAUDE_PROXY, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + idToken },
+        body: JSON.stringify({ model: "claude-sonnet-4-5", max_tokens: 320, system: promptSysteme(contexteCourant()), messages: [{ role: "user", content: String(transcript) }] }),
+      });
+      banniere("", false);
+      if (resp.status === 401) { repondre(EN() ? "Session expired — log in again." : "Session expirée — reconnecte-toi."); return; }
+      if (resp.status === 429) { repondre(EN() ? "Too many requests, try again later." : "Trop de demandes, réessaie un peu plus tard."); return; }
+      const data = await resp.json();
+      if (data.error) { repondre(EN() ? "Sorry, I couldn't process that." : "Désolé, je n'ai pas pu traiter ça."); return; }
+      const txt = (data.content && data.content[0] && data.content[0].text) ? data.content[0].text : "";
+      let obj = null;
+      try { obj = JSON.parse(txt.replace(/```json|```/g, "").trim()); } catch (e) {}
+      if (obj && obj.action) executerAction(obj);
+      else repondre(txt.trim() || (EN() ? "Sorry, I didn't get that." : "Désolé, je n'ai pas compris."));
+    } catch (e) {
+      banniere("", false);
+      repondre(EN() ? "Network error — try again." : "Erreur réseau — réessaie.");
+    }
+  }
+  // Point d'entrée : local d'abord, Claude en repli si dispo (connecté + en ligne).
+  function traiter(transcript) {
+    let threw = false;
+    try { executer(transcript); } catch (e) { threw = true; }
+    if (threw) return;            // une commande a tourné mais planté → pas de repli Claude (évite la double action)
+    if (!window._avUnhandled) return;
+    if (peutClaude()) demanderClaude(transcript);
+    else repondre(EN() ? "Sorry, I didn't get that. Say “help”." : "Désolé, je n'ai pas compris. Dis « aide ».");
+  }
+  window.assistantVocalTraiter = traiter;
+  // Commande texte (debug/tests/accessibilité). Local seul par défaut ;
+  // passe true en 2e argument pour autoriser le repli Claude.
+  window.assistantVocalCommande = function (txt, avecClaude) {
+    try { if (avecClaude) traiter(String(txt || "")); else executer(String(txt || "")); } catch (e) {}
+  };
 
   // Suit la recette actuellement ouverte (clic carte OU voix) pour « lance le
   // mode cuisson » / « combien de X » sans avoir à la nommer.
