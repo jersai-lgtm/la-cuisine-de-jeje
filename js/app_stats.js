@@ -1051,7 +1051,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       const nbR = (typeof recettes !== "undefined") ? Object.keys(recettes).length : 0;
       const el = document.getElementById("nb-recettes");
-      if (el && nbR > 0) el.textContent = `🍽️ ${nbR} recettes`;
+      if (el && nbR > 0) el.textContent = `🍽️ ${nbR} ${window.LANG === "en" ? "recipes" : "recettes"}`;
     } catch (e) {}
     // v257.9 : Init des inputs calc-* selon la catégorie de la recette
     //   - Cocktails (alcool) → adultes uniquement

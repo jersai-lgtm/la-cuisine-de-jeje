@@ -159,4 +159,8 @@ window.I18N_ING = {
   // — Variantes "De saison" (emoji saisonnier collé au libellé) —
   "🌱 De saison": "🌱 In season", "🌞 De saison": "🌞 In season",
   "🍂 De saison": "🍂 In season", "❄️ De saison": "❄️ In season",
+
+  // — Jours de la semaine (menus générés ; la couleur par jour utilise la clé FR) —
+  "Lundi": "Monday", "Mardi": "Tuesday", "Mercredi": "Wednesday", "Jeudi": "Thursday",
+  "Vendredi": "Friday", "Samedi": "Saturday", "Dimanche": "Sunday",
 };
