@@ -4913,4 +4913,144 @@ Object.assign(recettes, {
       { icone: "🍓", titre: "Décorer", detail: "Décorer de fruits frais, macarons et fleurs comestibles.", badge: null }
     ]
   },
+  sorbetpasteque: {
+    nom: "Sorbet Pastèque",
+    cat: "glaces", saisons: ["ete"], pays: "france", dateAjout: "2026-06-19T11:00:00",
+    base: 1, temps: "20 min + turbinage", niveau: "⭐ Facile", emoji: "🍉",
+    description: "Le sorbet le plus rafraîchissant de l'été : pastèque mixée, à peine sucrée et relevée d'un trait de citron vert. Quelques ingrédients, zéro matière grasse, un maximum de fraîcheur.",
+    ingredients: {},
+    tableauSorbetPasteque: [
+      { nb: 1, pasteque: "500 g", sucre: "60 g", citronvert: "15 g", eau: "50 ml" },
+      { nb: 2, pasteque: "1000 g", sucre: "120 g", citronvert: "30 g", eau: "100 ml" },
+      { nb: 3, pasteque: "1500 g", sucre: "180 g", citronvert: "45 g", eau: "150 ml" },
+      { nb: 4, pasteque: "2000 g", sucre: "240 g", citronvert: "60 g", eau: "200 ml" },
+      { nb: 5, pasteque: "2500 g", sucre: "300 g", citronvert: "75 g", eau: "250 ml" },
+      { nb: 6, pasteque: "3000 g", sucre: "360 g", citronvert: "90 g", eau: "300 ml" },
+      { nb: 7, pasteque: "3500 g", sucre: "420 g", citronvert: "105 g", eau: "350 ml" },
+      { nb: 8, pasteque: "4000 g", sucre: "480 g", citronvert: "120 g", eau: "400 ml" },
+      { nb: 9, pasteque: "4500 g", sucre: "540 g", citronvert: "135 g", eau: "450 ml" },
+      { nb: 10, pasteque: "5000 g", sucre: "600 g", citronvert: "150 g", eau: "500 ml" }
+    ],
+    etapes: [
+      { icone: "🍉", titre: "Mixer la pastèque", detail: "Retirer l'écorce et un maximum de pépins, mixer la chair en jus.", badge: null },
+      { icone: "🍯", titre: "Sirop", detail: "Faire chauffer l'eau avec le sucre jusqu'à dissolution, laisser tiédir.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Mélanger le jus de pastèque, le sirop et le jus de citron vert.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Réfrigérer le mélange jusqu'à ce qu'il soit bien froid.", badge: "⏱ 1 h" },
+      { icone: "🌀", titre: "Turbiner", detail: "Turbiner en sorbetière, ou méthode sans : congeler dans un bac et fouetter toutes les 30-40 min.", badge: "⏱ 30 min" },
+      { icone: "🍦", titre: "Prendre", detail: "Réserver au congélateur 1 h pour raffermir.", badge: "⏱ 1 h" }
+    ]
+  },
+  nicecreambanane: {
+    nom: "Nice Cream Banane",
+    cat: "glaces", saisons: ["printemps","ete","automne","hiver"], pays: "usa", dateAjout: "2026-06-19T11:00:00",
+    base: 2, temps: "5 min", niveau: "⭐ Facile", emoji: "🍌",
+    description: "La glace minute la plus saine qui soit : des bananes bien mûres congelées puis mixées, et c'est tout. Texture de glace à l'italienne, sans sucre ajouté ni crème.",
+    ingredients: {},
+    tableauNiceCreamBanane: [
+      { nb: 1, bananes: "130 g", lait: "15 ml", vanille: "1 g" },
+      { nb: 2, bananes: "260 g", lait: "30 ml", vanille: "2 g" },
+      { nb: 3, bananes: "390 g", lait: "45 ml", vanille: "3 g" },
+      { nb: 4, bananes: "520 g", lait: "60 ml", vanille: "4 g" },
+      { nb: 5, bananes: "650 g", lait: "75 ml", vanille: "5 g" },
+      { nb: 6, bananes: "780 g", lait: "90 ml", vanille: "6 g" },
+      { nb: 7, bananes: "910 g", lait: "105 ml", vanille: "7 g" },
+      { nb: 8, bananes: "1040 g", lait: "120 ml", vanille: "8 g" },
+      { nb: 9, bananes: "1170 g", lait: "135 ml", vanille: "9 g" },
+      { nb: 10, bananes: "1300 g", lait: "150 ml", vanille: "10 g" }
+    ],
+    etapes: [
+      { icone: "🍌", titre: "Congeler les bananes", detail: "Éplucher des bananes bien mûres, les couper en rondelles et les congeler au moins 3 h.", badge: "⏱ 3 h" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer les rondelles congelées avec un filet de lait, en raclant les bords, jusqu'à une texture crémeuse.", badge: "⏱ 3 min" },
+      { icone: "✨", titre: "Parfumer", detail: "Ajouter la vanille (ou cacao, beurre de cacahuète, fruits rouges selon l'envie).", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Déguster aussitôt en texture soft, ou placer 1 h au congélateur pour une glace plus ferme.", badge: null }
+    ]
+  },
+  esquimauxfraise: {
+    nom: "Esquimaux Fraise-Yaourt",
+    cat: "glaces", saisons: ["printemps","ete"], pays: "france", dateAjout: "2026-06-19T11:00:00",
+    base: 6, temps: "10 min + congélation", niveau: "⭐ Facile", emoji: "🧊",
+    description: "Des esquimaux maison tout simples : fraises mixées, yaourt et un peu de miel, coulés dans des moules. Fondants, fruités et sans additifs — les enfants adorent.",
+    ingredients: {},
+    tableauEsquimauxFraise: [
+      { nb: 1, fraises: "40 g", yaourt: "25 g", miel: "5 g" },
+      { nb: 2, fraises: "80 g", yaourt: "50 g", miel: "10 g" },
+      { nb: 3, fraises: "120 g", yaourt: "75 g", miel: "15 g" },
+      { nb: 4, fraises: "160 g", yaourt: "100 g", miel: "20 g" },
+      { nb: 5, fraises: "200 g", yaourt: "125 g", miel: "25 g" },
+      { nb: 6, fraises: "240 g", yaourt: "150 g", miel: "30 g" },
+      { nb: 7, fraises: "280 g", yaourt: "175 g", miel: "35 g" },
+      { nb: 8, fraises: "320 g", yaourt: "200 g", miel: "40 g" },
+      { nb: 9, fraises: "360 g", yaourt: "225 g", miel: "45 g" },
+      { nb: 10, fraises: "400 g", yaourt: "250 g", miel: "50 g" },
+      { nb: 11, fraises: "440 g", yaourt: "275 g", miel: "55 g" },
+      { nb: 12, fraises: "480 g", yaourt: "300 g", miel: "60 g" }
+    ],
+    etapes: [
+      { icone: "🍓", titre: "Mixer les fraises", detail: "Équeuter et mixer les fraises en coulis (garder quelques morceaux pour la texture si on aime).", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Mélanger le coulis de fraises, le yaourt et le miel.", badge: null },
+      { icone: "🧊", titre: "Mouler", detail: "Verser dans des moules à esquimaux et planter les bâtonnets.", badge: null },
+      { icone: "❄️", titre: "Congeler", detail: "Congeler au moins 4 h, idéalement une nuit.", badge: "⏱ 4 h" },
+      { icone: "🍦", titre: "Démouler", detail: "Passer rapidement les moules sous l'eau tiède pour démouler facilement.", badge: null }
+    ]
+  },
+  tarteabricots: {
+    nom: "Tarte aux Abricots",
+    cat: "desserts", saisons: ["ete"], pays: "france", dateAjout: "2026-06-19T11:00:00",
+    base: 8, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🥧",
+    description: "La tarte aux abricots de l'été : pâte sablée croustillante, abricots frais légèrement caramélisés et juste ce qu'il faut de sucre. Le goût du soleil dans chaque part.",
+    ingredients: {},
+    tableauTarteAbricots: [
+      { nb: 1, farine: "31 g", beurre: "16 g", sucre: "10 g", oeuf: "6 g", abricots: "85 g", sucreroux: "8 g" },
+      { nb: 2, farine: "62 g", beurre: "32 g", sucre: "20 g", oeuf: "12 g", abricots: "170 g", sucreroux: "16 g" },
+      { nb: 3, farine: "93 g", beurre: "48 g", sucre: "30 g", oeuf: "18 g", abricots: "255 g", sucreroux: "24 g" },
+      { nb: 4, farine: "124 g", beurre: "64 g", sucre: "40 g", oeuf: "24 g", abricots: "340 g", sucreroux: "32 g" },
+      { nb: 5, farine: "155 g", beurre: "80 g", sucre: "50 g", oeuf: "30 g", abricots: "425 g", sucreroux: "40 g" },
+      { nb: 6, farine: "186 g", beurre: "96 g", sucre: "60 g", oeuf: "36 g", abricots: "510 g", sucreroux: "48 g" },
+      { nb: 7, farine: "217 g", beurre: "112 g", sucre: "70 g", oeuf: "42 g", abricots: "595 g", sucreroux: "56 g" },
+      { nb: 8, farine: "248 g", beurre: "128 g", sucre: "80 g", oeuf: "48 g", abricots: "680 g", sucreroux: "64 g" },
+      { nb: 9, farine: "279 g", beurre: "144 g", sucre: "90 g", oeuf: "54 g", abricots: "765 g", sucreroux: "72 g" },
+      { nb: 10, farine: "310 g", beurre: "160 g", sucre: "100 g", oeuf: "60 g", abricots: "850 g", sucreroux: "80 g" },
+      { nb: 11, farine: "341 g", beurre: "176 g", sucre: "110 g", oeuf: "66 g", abricots: "935 g", sucreroux: "88 g" },
+      { nb: 12, farine: "372 g", beurre: "192 g", sucre: "120 g", oeuf: "72 g", abricots: "1020 g", sucreroux: "96 g" },
+      { nb: 13, farine: "403 g", beurre: "208 g", sucre: "130 g", oeuf: "78 g", abricots: "1105 g", sucreroux: "104 g" },
+      { nb: 14, farine: "434 g", beurre: "224 g", sucre: "140 g", oeuf: "84 g", abricots: "1190 g", sucreroux: "112 g" },
+      { nb: 15, farine: "465 g", beurre: "240 g", sucre: "150 g", oeuf: "90 g", abricots: "1275 g", sucreroux: "120 g" }
+    ],
+    etapes: [
+      { icone: "🧈", titre: "Pâte sablée", detail: "Sabler la farine avec le beurre froid, ajouter le sucre, l'œuf et une pincée de sel. Former une boule, filmer et réserver au frais.", badge: "⏱ 30 min" },
+      { icone: "🥧", titre: "Foncer", detail: "Étaler la pâte et en foncer un moule à tarte. Piquer le fond à la fourchette.", badge: null },
+      { icone: "🍑", titre: "Abricots", detail: "Laver, dénoyauter et couper les abricots en quartiers. Les disposer en rosace, face bombée vers le haut.", badge: null },
+      { icone: "🍯", titre: "Sucrer", detail: "Saupoudrer de sucre roux (et d'un peu de poudre d'amande au fond pour absorber le jus, si on en a).", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C jusqu'à ce que la pâte soit dorée et les abricots fondants.", badge: "⏱ 35 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser tiédir, napper éventuellement d'un peu de confiture d'abricot pour le brillant. Déguster tiède ou froid.", badge: null }
+    ]
+  },
+  brochettesfruits: {
+    nom: "Brochettes de Fruits Grillés",
+    cat: "desserts", saisons: ["ete"], pays: "france", dateAjout: "2026-06-19T11:00:00",
+    base: 6, temps: "20 min", niveau: "⭐ Facile", emoji: "🍢",
+    description: "Des brochettes de fruits d'été passées au gril : la chaleur caramélise les sucres et concentre les saveurs. Miel, citron vert et menthe — un dessert léger et spectaculaire.",
+    ingredients: {},
+    tableauBrochettesFruits: [
+      { nb: 1, ananas: "60 g", peche: "50 g", fraises: "40 g", banane: "40 g", miel: "5 g", citronvert: "5 g", menthe: "1 g" },
+      { nb: 2, ananas: "120 g", peche: "100 g", fraises: "80 g", banane: "80 g", miel: "10 g", citronvert: "10 g", menthe: "2 g" },
+      { nb: 3, ananas: "180 g", peche: "150 g", fraises: "120 g", banane: "120 g", miel: "15 g", citronvert: "15 g", menthe: "3 g" },
+      { nb: 4, ananas: "240 g", peche: "200 g", fraises: "160 g", banane: "160 g", miel: "20 g", citronvert: "20 g", menthe: "4 g" },
+      { nb: 5, ananas: "300 g", peche: "250 g", fraises: "200 g", banane: "200 g", miel: "25 g", citronvert: "25 g", menthe: "5 g" },
+      { nb: 6, ananas: "360 g", peche: "300 g", fraises: "240 g", banane: "240 g", miel: "30 g", citronvert: "30 g", menthe: "6 g" },
+      { nb: 7, ananas: "420 g", peche: "350 g", fraises: "280 g", banane: "280 g", miel: "35 g", citronvert: "35 g", menthe: "7 g" },
+      { nb: 8, ananas: "480 g", peche: "400 g", fraises: "320 g", banane: "320 g", miel: "40 g", citronvert: "40 g", menthe: "8 g" },
+      { nb: 9, ananas: "540 g", peche: "450 g", fraises: "360 g", banane: "360 g", miel: "45 g", citronvert: "45 g", menthe: "9 g" },
+      { nb: 10, ananas: "600 g", peche: "500 g", fraises: "400 g", banane: "400 g", miel: "50 g", citronvert: "50 g", menthe: "10 g" },
+      { nb: 11, ananas: "660 g", peche: "550 g", fraises: "440 g", banane: "440 g", miel: "55 g", citronvert: "55 g", menthe: "11 g" },
+      { nb: 12, ananas: "720 g", peche: "600 g", fraises: "480 g", banane: "480 g", miel: "60 g", citronvert: "60 g", menthe: "12 g" }
+    ],
+    etapes: [
+      { icone: "🔪", titre: "Couper les fruits", detail: "Couper en gros morceaux des fruits fermes : ananas, pêche, fraises, banane peu mûre…", badge: null },
+      { icone: "🍢", titre: "Embrocher", detail: "Alterner les fruits sur des piques (en bois, préalablement trempées dans l'eau).", badge: null },
+      { icone: "🍯", titre: "Glacer", detail: "Badigeonner d'un mélange miel + jus de citron vert.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Cuire 2-3 min de chaque côté sur un gril chaud (barbecue ou plancha), jusqu'à de belles marques caramélisées.", badge: "⏱ 6 min" },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de menthe ciselée et servir tiède, éventuellement avec une boule de glace vanille ou un yaourt.", badge: null }
+    ]
+  },
 });

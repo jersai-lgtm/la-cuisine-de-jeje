@@ -79,6 +79,7 @@
     "tranche": "slice", "tranches": "slices", "gaufre": "waffle", "gaufres": "waffles",
     "galette": "flatbread", "galettes": "flatbreads", "tartelette": "tartlet", "tartelettes": "tartlets",
     "fondant": "fondant", "fondants": "fondants", "croque-monsieur": "croque-monsieur",
+    "esquimau": "ice pop", "esquimaux": "ice pops", "brochette": "skewer", "brochettes": "skewers",
   };
 
   function trad(s) {

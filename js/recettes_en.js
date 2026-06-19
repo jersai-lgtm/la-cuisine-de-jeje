@@ -31814,5 +31814,139 @@ window.RECETTES_EN = {
     "detail": "Serve ice-cold, with a drizzle of olive oil, diced cucumber and coriander."
    }
   ]
+ },
+ "sorbetpasteque": {
+  "nom": "Watermelon Sorbet",
+  "description": "The most refreshing sorbet of the summer: blended watermelon, barely sweetened and brightened with a dash of lime. A handful of ingredients, zero fat, maximum freshness.",
+  "etapes": [
+   {
+    "titre": "Blend the watermelon",
+    "detail": "Remove the rind and as many seeds as possible, blend the flesh into juice."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Heat the water with the sugar until dissolved, then let it cool."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the watermelon juice, the syrup and the lime juice."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate the mixture until well chilled."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn in an ice-cream maker, or without: freeze in a tub and whisk every 30-40 min."
+   },
+   {
+    "titre": "Set",
+    "detail": "Keep in the freezer for 1 hour to firm up."
+   }
+  ]
+ },
+ "nicecreambanane": {
+  "nom": "Banana Nice Cream",
+  "description": "The healthiest instant ice cream there is: ripe bananas frozen then blended, and that's it. Soft-serve texture, with no added sugar or cream.",
+  "etapes": [
+   {
+    "titre": "Freeze the bananas",
+    "detail": "Peel very ripe bananas, slice them and freeze for at least 3 hours."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the frozen slices with a splash of milk, scraping down the sides, until creamy."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the vanilla (or cocoa, peanut butter, berries as you like)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Enjoy right away soft-serve, or freeze for 1 hour for a firmer ice cream."
+   }
+  ]
+ },
+ "esquimauxfraise": {
+  "nom": "Strawberry-Yogurt Ice Pops",
+  "description": "Super simple homemade ice pops: blended strawberries, yogurt and a little honey, poured into moulds. Soft, fruity and additive-free — kids love them.",
+  "etapes": [
+   {
+    "titre": "Blend the strawberries",
+    "detail": "Hull and blend the strawberries into a coulis (keep a few chunks for texture if you like)."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix the strawberry coulis, the yogurt and the honey."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into ice-pop moulds and insert the sticks."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Freeze for at least 4 hours, ideally overnight."
+   },
+   {
+    "titre": "Unmould",
+    "detail": "Quickly run the moulds under warm water to release easily."
+   }
+  ]
+ },
+ "tarteabricots": {
+  "nom": "Apricot Tart",
+  "description": "The summer apricot tart: crisp shortcrust pastry, fresh slightly caramelised apricots and just the right amount of sugar. The taste of sunshine in every slice.",
+  "etapes": [
+   {
+    "titre": "Shortcrust pastry",
+    "detail": "Rub the flour with the cold butter, add the sugar, the egg and a pinch of salt. Form a ball, wrap and chill."
+   },
+   {
+    "titre": "Line the tin",
+    "detail": "Roll out the pastry and line a tart tin. Prick the base with a fork."
+   },
+   {
+    "titre": "Apricots",
+    "detail": "Wash, pit and quarter the apricots. Arrange them in a rosette, rounded side up."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Sprinkle with brown sugar (and a little ground almond on the base to soak up the juice, if you have some)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C until the pastry is golden and the apricots tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool, optionally glaze with a little apricot jam for shine. Enjoy warm or cold."
+   }
+  ]
+ },
+ "brochettesfruits": {
+  "nom": "Grilled Fruit Skewers",
+  "description": "Summer fruit skewers on the grill: the heat caramelises the sugars and concentrates the flavours. Honey, lime and mint — a light, spectacular dessert.",
+  "etapes": [
+   {
+    "titre": "Cut the fruit",
+    "detail": "Cut firm fruit into large chunks: pineapple, peach, strawberries, slightly underripe banana…"
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the fruit onto skewers (wooden ones, soaked in water beforehand)."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with a mix of honey and lime juice."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Cook 2-3 min on each side on a hot grill (barbecue or griddle), until nicely caramelised."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with chopped mint and serve warm, optionally with a scoop of vanilla ice cream or yogurt."
+   }
+  ]
  }
 };

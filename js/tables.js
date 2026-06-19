@@ -527,6 +527,10 @@ function getUniteRecette(nom, n) {
     "bowlacai":        ["bol", "bols"],
     "houmousbetterave": ["bol", "bols"],
     "ecrasepetitspois": ["bol", "bols"],
+    "sorbetpasteque":   ["bac", "bacs"],
+    "nicecreambanane":  ["bol", "bols"],
+    "esquimauxfraise":  ["esquimau", "esquimaux"],
+    "brochettesfruits": ["brochette", "brochettes"],
     "pancakes":        ["pancake", "pancakes"],
     "naan":            ["naan", "naans"],
     "eclair":          ["éclair", "éclairs"],
@@ -706,6 +710,7 @@ function getUniteRecette(nom, n) {
       "pain au chocolat": ["pain au chocolat", "pains au chocolat"], "pain aux raisins": ["raisin bun", "raisin buns"],
       "kanelbulle": ["cinnamon bun", "cinnamon buns"], "éclair": ["eclair", "eclairs"],
       "cannolo": ["cannolo", "cannoli"], "cookie": ["cookie", "cookies"],
+      "esquimau": ["ice pop", "ice pops"], "brochette": ["skewer", "skewers"],
       // Termes gardés tels quels (mêmes en EN) : on n'a pas besoin de les mapper,
       // sauf pour le pluriel régulier — fallback ci-dessous.
     };
