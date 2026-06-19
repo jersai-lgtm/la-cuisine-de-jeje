@@ -289,6 +289,7 @@
       <div class="cm-top">
         <button class="cm-close" onclick="fermerModeCuisson()" aria-label="Quitter le mode cuisson">✕</button>
         <h1>👨‍🍳 ${esc(_nomRecette)}</h1>
+        ${(window.SpeechRecognition || window.webkitSpeechRecognition) ? '<button class="cm-voix" id="cookmode-mic" data-av-mic onclick="window.demarrerAssistantVocal&&window.demarrerAssistantVocal()" aria-label="Commande vocale — appuie et parle">🎙️</button>' : ""}
         ${_ttsOK ? '<button class="cm-voix" id="cookmode-voix" onclick="_cmToggleVoix()">🔇</button>' : ""}
         <span id="cookmode-progress-txt"></span>
       </div>
