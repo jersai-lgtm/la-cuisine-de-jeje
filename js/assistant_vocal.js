@@ -18,7 +18,7 @@
   if (!SR) return; // pas de reconnaissance vocale → on n'injecte rien
   const TTS_OK = ("speechSynthesis" in window) && ("SpeechSynthesisUtterance" in window);
 
-  let reco = null, ecoute = false;
+  let reco = null, ecoute = false, continu = false;
   const EN = () => (window.LANG === "en");
 
   // --- Correspondances anglaises (les dicos de app_recherche.js sont en FR) ---
@@ -66,6 +66,33 @@
     cinnamon: "cannelle", banana: "banane", apple: "pomme", strawberry: "fraise",
     coffee: "cafe", mustard: "moutarde", soy: "soja", basil: "basilic", mint: "menthe", ginger: "gingembre",
   };
+
+  // --- Nombres en lettres → chiffres (FR + EN), pour minuteurs/étapes/portions ---
+  const NB_UNITS = {
+    deux: 2, trois: 3, quatre: 4, cinq: 5, six: 6, sept: 7, huit: 8, neuf: 9, dix: 10,
+    onze: 11, douze: 12, treize: 13, quatorze: 14, quinze: 15, seize: 16,
+    two: 2, three: 3, four: 4, five: 5, six_: 6, seven: 7, eight: 8, nine: 9, ten: 10,
+    eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19,
+  };
+  const NB_TENS = { vingt: 20, trente: 30, quarante: 40, cinquante: 50, soixante: 60, twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60 };
+  const NB_UNIT9 = { un: 1, une: 1, deux: 2, trois: 3, quatre: 4, cinq: 5, six: 6, sept: 7, huit: 8, neuf: 9, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9 };
+  function motsEnChiffres(s) {
+    const toks = s.split(/\s+/);
+    const out = [];
+    for (let i = 0; i < toks.length; i++) {
+      const t = toks[i], nx = toks[i + 1];
+      // « dix-sept/huit/neuf », « seventeen »… déjà dans NB_UNITS
+      if (t === "dix" && nx && NB_UNIT9[nx] >= 7 && NB_UNIT9[nx] <= 9) { out.push(String(10 + NB_UNIT9[nx])); i++; continue; }
+      if (NB_TENS[t] != null) {
+        let v = NB_TENS[t];
+        if (nx && NB_UNIT9[nx] >= 1 && NB_UNIT9[nx] <= 9) { v += NB_UNIT9[nx]; i++; }
+        out.push(String(v)); continue;
+      }
+      if (NB_UNITS[t] != null) { out.push(String(NB_UNITS[t])); continue; }
+      out.push(t);
+    }
+    return out.join(" ");
+  }
   const norm = (s) => (typeof normalizeText === "function") ? normalizeText(s)
     : String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
 
@@ -356,11 +383,22 @@
   // INTENTIONS — GLOBALES
   // =========================================================================
   function ouvrirRecetteParNom(reste) {
-    const e = trouverRecette(reste);
-    if (!e) { repondre(EN() ? `I couldn't find “${reste}”.` : `Je n'ai pas trouvé « ${reste} ».`, "error"); return; }
-    repondre(EN() ? `Opening ${e.nom}.` : `J'ouvre ${nomLisible(e.cle)}.`, "success");
+    reste = String(reste || "").replace(/^(le |la |les |l |un |une |des |du |the |a |an )+/i, "").trim();
+    const qn = norm(reste);
+    const res = (typeof scorerCartes === "function") ? scorerCartes(qn) : [];
+    const e = res.length && res[0].score >= 40 ? res[0].entry : trouverRecette(reste);
+    if (!e) { repondre(EN() ? `I couldn't find “${reste}”.` : `Je n'ai pas trouvé « ${reste} ».`, "error"); window._avDernier = null; return; }
     if (typeof ouvrirFiche === "function") ouvrirFiche(e.cle, "");
     window._assistantCle = e.cle;
+    // Désambiguïsation : plusieurs candidats proches → on permet « une autre »
+    const proches = res.filter(x => x.score >= (res[0] ? res[0].score : 0) * 0.9).map(x => x.entry);
+    if (proches.length > 1) {
+      window._avDernier = { crit: null, cartes: proches, idx: 0 };
+      repondre((EN() ? `Opening ${e.nom}. Say “another one” for a different match.` : `J'ouvre ${nomLisible(e.cle)}. Dis « une autre » pour une autre.`), "success");
+    } else {
+      window._avDernier = null;
+      repondre(EN() ? `Opening ${e.nom}.` : `J'ouvre ${nomLisible(e.cle)}.`, "success");
+    }
   }
 
   function ficheOuverte() {
@@ -467,6 +505,21 @@
       repondre(fav ? (EN() ? "Added to favorites." : "Ajouté aux favoris.") : (EN() ? "Removed from favorites." : "Retiré des favoris."), "success");
       return true;
     }
+    // Retirer un article de la liste de courses
+    if (has("retire", "retirer", "enleve", "enlève", "supprime", "remove", "delete")) {
+      let item = q.replace(/.*\b(retire|retirer|enleve|enlève|supprime|remove|delete)\b/, "")
+        .replace(/\b(de|from|of)\s+(ma|mon|the|my)\s+(liste|list)\b.*/, "")
+        .replace(/\b(de|from) la liste\b.*/, "")
+        .replace(/\baux?\s+courses\b.*/, "")
+        .replace(/\b(my |the )?shopping list\b.*/, "")
+        .replace(/\b(moi|me|du|de la|des|de l|un|une|le|la|les|d)\b/g, " ").replace(/\s+/g, " ").trim();
+      if (item) {
+        const liste = (window.userProfile && window.userProfile.listeCoursesPerso) || [];
+        const cible = liste.find(x => x.toLowerCase().includes(item.toLowerCase()) || item.toLowerCase().includes(x.toLowerCase()));
+        if (cible && typeof lcSupprimerArticlePerso === "function") { lcSupprimerArticlePerso(cible); repondre((EN() ? "Removed: " : "Retiré : ") + cible, "success"); return true; }
+        repondre(EN() ? `“${item}” isn't in your list.` : `« ${item} » n'est pas dans ta liste.`); return true;
+      }
+    }
     // Ajouter aux courses (recette ou article perso)
     if (has("ajoute", "ajouter", "add", "mets ", "met ")) {
       const versListe = has("a ma liste", "à ma liste", "dans ma liste", "aux courses", "a la liste", "à la liste", "shopping list", "to my list", "to the list");
@@ -550,8 +603,9 @@
     if (/^(et |plutot |plutôt |and |rather |aussi )/.test(q + " ")) {
       return proposer(fusionCrit(d.crit, extraireCriteres(q)), q);
     }
-    // Ouvrir la suggestion mise en avant
-    if (!/recette de|recipe (for|of)/.test(q) && (has("la premiere", "celle la", "celle ci", "celle-ci", "vas y", "vas-y", "c est parti", "open it", "open that", "open the first", "ouvre la") || q === "ouvre" || q === "ok" || q === "oui" || q === "yes")) {
+    // Ouvrir la suggestion mise en avant (phrase « terminale », pas « ouvre la pizza »)
+    if (/^(ouvre|ouvrir|open)( (la|le|les|ca|ça|it|that|the first|first one))?$/.test(q) ||
+        /^(la premiere|celle la|celle ci|celle-ci|vas y|vas-y|c est parti|ok|oui|yes|go|that one|the first one)$/.test(q)) {
       const e = d.cartes[d.idx] || d.cartes[0];
       if (e) { repondre((EN() ? `Opening ${e.nom}.` : `J'ouvre ${nomLisible(e.cle)}.`), "success"); if (typeof ouvrirFiche === "function") ouvrirFiche(e.cle, ""); window._assistantCle = e.cle; }
       return true;
@@ -570,7 +624,7 @@
   // ROUTEUR D'INTENTIONS
   // =========================================================================
   function executer(transcript) {
-    const q = norm(transcript);
+    const q = motsEnChiffres(norm(transcript));
     if (!q) return;
 
     // 1) Mode cuisson : priorité aux commandes de pilotage
@@ -599,6 +653,18 @@
     if (has("ferme", "fermer", "quitte", "quitter", "retour", "reviens", "annule", "close", "go back", "cancel")) {
       // « ferme la recette », « retour », « ferme »
       if (!/\bouvr|\bopen/.test(q)) { fermerCourant(); return; }
+    }
+
+    // 5a) Régler les portions : « pour 6 personnes »
+    const mp = q.match(/\bpour (\d+)\s*(personne|personnes|people|serving|servings|convive|convives|gens|part|parts)\b/);
+    if (mp && !has("propose", "suggere", "suggest", "idee", "envie", "je veux", "i want", "trouve", "cherche", "find", "une recette", "a recipe")) {
+      const n = parseInt(mp[1], 10);
+      const cle = window._assistantCle;
+      if (cle && ficheOuverte() && typeof rerendreFiche === "function" && n > 0 && n <= 50) {
+        rerendreFiche(cle, n);
+        repondre((EN() ? `Set to ${n} servings.` : `Réglé pour ${n} personnes.`), "success");
+        return;
+      }
     }
 
     // 5) Question quantité
@@ -732,10 +798,34 @@
       } else {
         banniere("", false);
       }
+      // Écoute continue (mode cuisson) : on relance après la réponse vocale
+      if (continu && !enModeCuisson()) majBoutonContinu(continu = false);
+      if (continu && enModeCuisson()) {
+        const relance = () => {
+          if (!continu || !enModeCuisson() || ecoute) return;
+          if (TTS_OK && speechSynthesis.speaking) { setTimeout(relance, 300); return; }
+          demarrer();
+        };
+        setTimeout(relance, 500);
+      }
     };
     try { reco.start(); } catch (e) { fin(); banniere("", false); }
   }
   window.demarrerAssistantVocal = demarrer;
+
+  // Écoute continue mains-libres (mode cuisson) : on/off
+  function majBoutonContinu(on) {
+    const b = document.getElementById("cookmode-continu");
+    if (b) { b.classList.toggle("cm-voix-on", !!on); b.setAttribute("aria-label", on ? "Écoute mains-libres activée — couper" : "Écoute mains-libres — activer"); }
+  }
+  window.assistantContinu = function () {
+    continu = !continu;
+    majBoutonContinu(continu);
+    if (typeof afficherToast === "function") afficherToast(continu ? (EN() ? "Hands-free listening on." : "Écoute mains-libres activée 👂") : (EN() ? "Hands-free off." : "Écoute mains-libres coupée."));
+    if (continu && !ecoute) demarrer();
+    else if (!continu) { try { if (reco) reco.stop(); } catch (e) {} }
+    return continu;
+  };
   // Exécute une commande sous forme de texte (debug / tests / accessibilité clavier).
   window.assistantVocalCommande = function (txt) { try { executer(String(txt || "")); } catch (e) {} };
 
