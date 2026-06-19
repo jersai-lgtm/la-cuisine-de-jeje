@@ -1,15 +1,15 @@
 // =============================================================================
-// 🌍 i18n.js — Bascule FR / EN
+// 🌍 i18n.js — Bascule FR / EN (recettes + interface)
 // -----------------------------------------------------------------------------
-// Approche : quand la langue choisie est EN, on FUSIONNE les traductions de
-// window.RECETTES_EN (généré par tools/traduire_batch.mjs) dans les objets
-// `recettes` EN MÉMOIRE. Du coup les noms, descriptions et étapes s'affichent
-// en anglais PARTOUT (cartes, recherche, menus, fiches, mode cuisson) sans
-// modifier chaque écran. Le changement de langue recharge la page.
+// 1) RECETTES : quand LANG = en, on fusionne window.RECETTES_EN dans `recettes`
+//    en mémoire → noms / descriptions / étapes en anglais PARTOUT.
+// 2) INTERFACE (« chrome ») : un dictionnaire FR→EN + un observateur de
+//    mutations traduisent les textes / placeholders / titres au fur et à mesure
+//    qu'ils apparaissent (statique ET généré par JS). Pour ajouter une chaîne,
+//    il suffit de l'ajouter au dictionnaire DICT ci-dessous.
+// Le changement de langue recharge la page.
 //
 // ⚠️ Doit être chargé APRÈS recettes_*.js + recettes_en.js et AVANT app.js.
-//
-// Phase 2b (à venir) : libellés d'ingrédients, unités et reste du « chrome » UI.
 // =============================================================================
 
 (function () {
@@ -18,7 +18,7 @@
   if (lang !== "en") lang = "fr";
   window.LANG = lang;
 
-  // Fusionne les champs EN dans `recettes` (si LANG === "en").
+  // --- 1) Fusion des recettes EN -------------------------------------------
   function appliquerLangue() {
     if (window.LANG !== "en" || typeof recettes === "undefined" || !window.RECETTES_EN) return;
     for (const k in recettes) {
@@ -31,16 +31,12 @@
       if (Array.isArray(en.etapes) && Array.isArray(r.etapes)) {
         for (let i = 0; i < r.etapes.length && i < en.etapes.length; i++) {
           const e = en.etapes[i];
-          if (e) {
-            if (e.titre) r.etapes[i].titre = e.titre;
-            if (e.detail) r.etapes[i].detail = e.detail;
-          }
+          if (e) { if (e.titre) r.etapes[i].titre = e.titre; if (e.detail) r.etapes[i].detail = e.detail; }
         }
       }
     }
   }
-  // Synchrone : recettes + RECETTES_EN sont déjà chargés (scripts placés avant app.js)
-  appliquerLangue();
+  appliquerLangue(); // synchrone (recettes + RECETTES_EN déjà chargés)
 
   window.setLang = function (l) {
     l = (l === "en") ? "en" : "fr";
@@ -49,28 +45,99 @@
     location.reload();
   };
 
-  // --- Chrome traduit (éléments [data-i18n] + bouton de langue) ---
-  const UI = {
-    "nav.accueil": { fr: "Accueil",      en: "Home" },
-    "nav.garde":   { fr: "Garde-manger", en: "Pantry" },
-    "nav.menus":   { fr: "Menus",        en: "Menus" },
-    "nav.stats":   { fr: "Mes Stats",    en: "My Stats" },
-    "nav.admin":   { fr: "Admin",        en: "Admin" },
-  };
-  window.t = function (key) {
-    const e = UI[key];
-    if (!e) return key;
-    return (window.LANG === "en" && e.en) ? e.en : e.fr;
+  // --- 2) Dictionnaire d'interface FR → EN ---------------------------------
+  // (seed : accueil + nav + boutons communs ; enrichi par lots)
+  const DICT = {
+    // Navigation du bas
+    "Accueil": "Home", "Garde-manger": "Pantry", "Menus": "Menus", "Mes Stats": "My Stats", "Admin": "Admin",
+    // Onglets du haut
+    "Recettes": "Recipes", "Favoris": "Favorites", "Ajouter": "Add",
+    // Header
+    "👤 Connexion": "👤 Log in", "Connexion": "Log in", "💡 Amélioration": "💡 Feedback", "Amélioration": "Feedback",
+    "Déconnexion": "Log out", "Mon compte": "My account",
+    // Recherche
+    "Rechercher une recette, ingrédient, cocktail...": "Search a recipe, ingredient, cocktail...",
+    "🔍 Chercher un ingrédient...": "🔍 Search an ingredient...",
+    // Accueil — sections
+    "Dernières recettes ajoutées": "Recently added recipes",
+    "Dernières recettes vues": "Recently viewed",
+    "Aucune recette vue récemment": "No recipes viewed recently",
+    "Suggestions du jour": "Today's suggestions",
+    "Tout voir →": "See all →", "Voir tout →": "See all →",
+    "Effacer": "Clear", "Tout vider": "Clear all", "Réinitialiser": "Reset",
+    // Boutons communs
+    "Fermer": "Close", "Annuler": "Cancel", "Valider": "Confirm", "Enregistrer": "Save",
+    "Supprimer": "Delete", "Modifier": "Edit", "Retour": "Back", "Suivant →": "Next →", "← Précédent": "← Previous",
+    "Partager": "Share", "Copier": "Copy", "Ajouter aux favoris": "Add to favorites",
+    "Oui": "Yes", "Non": "No", "OK": "OK", "Terminé": "Done", "Continuer": "Continue",
+    // Cuisine / courses
+    "🥶 Vide-frigo": "🥶 Use it up", "🛒 Liste de courses": "🛒 Shopping list", "📦 Mon placard": "📦 My pantry",
+    "Liste de courses": "Shopping list", "Vide-frigo": "Use it up",
+    "Ajouter des recettes": "Add recipes", "Plan de prep": "Prep plan",
+    // Menus
+    "Générer un menu": "Generate a menu", "Menu de la semaine": "Weekly menu",
+    "Midi": "Lunch", "Soir": "Dinner",
+    // Divers fréquents
+    "Connecte-toi": "Log in", "Chargement...": "Loading...", "personnes": "servings", "personne": "serving",
   };
 
-  function appliquerChrome() {
-    document.querySelectorAll("[data-i18n]").forEach((el) => {
-      const e = UI[el.getAttribute("data-i18n")];
-      if (e) el.textContent = (window.LANG === "en" && e.en) ? e.en : e.fr;
-    });
-    const b = document.getElementById("btn-lang");
-    if (b) b.textContent = (window.LANG === "en") ? "FR" : "EN";
+  function trad(s) {
+    if (s == null) return null;
+    const k = s.trim();
+    if (!k) return null;
+    const en = DICT[k];
+    return (en == null) ? null : s.replace(k, en);
   }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", appliquerChrome);
-  else appliquerChrome();
+
+  // Traduit récursivement les textes + attributs d'un sous-arbre (LANG=en)
+  function traduireArbre(root) {
+    if (window.LANG !== "en" || !root) return;
+    // Textes
+    if (root.nodeType === 3) { const r = trad(root.nodeValue); if (r !== null) root.nodeValue = r; return; }
+    if (root.nodeType !== 1 && root.nodeType !== 9 && root.nodeType !== 11) return;
+    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+    const lots = []; let n;
+    while ((n = w.nextNode())) lots.push(n);
+    for (const node of lots) { const r = trad(node.nodeValue); if (r !== null) node.nodeValue = r; }
+    // Attributs visibles
+    const sel = "[placeholder],[title],[aria-label],[value]";
+    const els = root.querySelectorAll ? root.querySelectorAll(sel) : [];
+    els.forEach((el) => {
+      ["placeholder", "title", "aria-label"].forEach((a) => {
+        if (!el.hasAttribute(a)) return;
+        const v = el.getAttribute(a), t = DICT[(v || "").trim()];
+        if (t) el.setAttribute(a, t);
+      });
+      // value uniquement pour les boutons (pas les inputs texte de l'utilisateur)
+      if ((el.tagName === "BUTTON" || el.type === "button" || el.type === "submit") && el.hasAttribute("value")) {
+        const t = DICT[(el.getAttribute("value") || "").trim()];
+        if (t) el.setAttribute("value", t);
+      }
+    });
+  }
+  window.tradArbre = traduireArbre; // exposé pour re-traduire après un rendu si besoin
+
+  function demarrer() {
+    if (window.LANG !== "en") {
+      const b = document.getElementById("btn-lang"); if (b) b.textContent = "EN";
+      return;
+    }
+    document.documentElement.lang = "en";
+    traduireArbre(document.body);
+    const b = document.getElementById("btn-lang"); if (b) b.textContent = "FR";
+    // Observateur : traduit les nœuds ajoutés dynamiquement
+    try {
+      const obs = new MutationObserver((muts) => {
+        for (const m of muts) {
+          m.addedNodes.forEach((node) => {
+            if (node.nodeType === 1) traduireArbre(node);
+            else if (node.nodeType === 3) { const r = trad(node.nodeValue); if (r !== null) node.nodeValue = r; }
+          });
+        }
+      });
+      obs.observe(document.body, { childList: true, subtree: true });
+    } catch (e) {}
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", demarrer);
+  else demarrer();
 })();
