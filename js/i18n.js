@@ -57,7 +57,7 @@
     "Ajouter aux favoris": "Add to favorites", "personnes": "servings", "personne": "serving",
     "Effacer": "Clear", "Tout vider": "Clear all", "Partager": "Share",
   };
-  const DICT = Object.assign({}, SEED, window.I18N_DICT || {});
+  const DICT = Object.assign({}, SEED, window.I18N_DICT || {}, window.I18N_ING || {});
 
   function trad(s) {
     if (s == null) return null;

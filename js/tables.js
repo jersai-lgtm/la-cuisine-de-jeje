@@ -689,7 +689,29 @@ function getUniteRecette(nom, n) {
     "rillettessaumonfume":  ["pot", "pots"],
     "rillettesthon":        ["pot", "pots"],
   };
-  const [sing, plur] = unites[nom] || ["personne", "personnes"];
+  let [sing, plur] = unites[nom] || ["personne", "personnes"];
+  // Traduction EN de l'unité (clé = singulier FR)
+  if (window.LANG === "en") {
+    const UNITES_EN = {
+      "personne": ["serving", "servings"], "part": ["serving", "servings"],
+      "pâton": ["dough ball", "dough balls"], "pâte": ["dough", "doughs"],
+      "boule": ["ball", "balls"], "pièce": ["piece", "pieces"],
+      "pot": ["jar", "jars"], "bol": ["bowl", "bowls"], "bac": ["tub", "tubs"],
+      "tranche": ["slice", "slices"], "pain": ["loaf", "loaves"], "barre": ["bar", "bars"],
+      "galette": ["flatbread", "flatbreads"], "gaufre": ["waffle", "waffles"],
+      "sablé": ["shortbread", "shortbreads"], "rocher": ["cluster", "clusters"],
+      "chausson": ["turnover", "turnovers"], "roulé": ["roll", "rolls"], "bretzel": ["pretzel", "pretzels"],
+      "pain au chocolat": ["pain au chocolat", "pains au chocolat"], "pain aux raisins": ["raisin bun", "raisin buns"],
+      "kanelbulle": ["cinnamon bun", "cinnamon buns"], "éclair": ["eclair", "eclairs"],
+      "cannolo": ["cannolo", "cannoli"], "cookie": ["cookie", "cookies"],
+      // Termes gardés tels quels (mêmes en EN) : on n'a pas besoin de les mapper,
+      // sauf pour le pluriel régulier — fallback ci-dessous.
+    };
+    const m = UNITES_EN[sing];
+    if (m) { sing = m[0]; plur = m[1]; }
+    else if (sing === plur) { /* invariable */ }
+    else { /* pluriel régulier +s déjà géré par le FR, on garde tel quel */ }
+  }
   return n > 1 ? plur : sing;
 }
 
