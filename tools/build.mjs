@@ -113,6 +113,16 @@ async function main() {
   if (existsSync(p("images"))) cpSync(p("images"), join(DIST, "images"), { recursive: true });
   writeFileSync(join(DIST, ".nojekyll"), ""); // Pages : ne pas passer par Jekyll
 
+  // 5ter) recettes_en.js (traductions EN, ~1,1 Mo) : chargé À LA DEMANDE (seulement
+  // si la langue = anglais, via le petit loader inline en <head>). On le sort donc
+  // du bundle et on l'émet minifié à part, dans dist/js/, hors précache du SW.
+  if (existsSync(p("js/recettes_en.js"))) {
+    const enMin = await minifyJs(readFileSync(p("js/recettes_en.js"), "utf8"));
+    mkdirSync(join(DIST, "js"), { recursive: true });
+    writeFileSync(join(DIST, "js", "recettes_en.js"), enMin);
+    console.log(`   EN (lazy) : js/recettes_en.js → ${(Buffer.byteLength(enMin) / 1024).toFixed(0)} Ko (chargé uniquement en anglais)`);
+  }
+
   // 5bis) Service worker : on régénère son précache pour qu'il colle au build
   // (bundles hashés + bons fichiers) et on auto-versionne le cache (= maj fiable).
   if (existsSync(p("service-worker.js"))) {
