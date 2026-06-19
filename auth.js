@@ -163,6 +163,20 @@ async function chargerProfil(user) {
     window._recentsVus = [];
   window.dispatchEvent(new Event('profilMisAJour'));
   }
+  // Migration des favoris ajoutés HORS connexion → on les fusionne dans le compte.
+  try {
+    const loc = JSON.parse(localStorage.getItem("favoris_locaux") || "[]");
+    if (Array.isArray(loc) && loc.length && window.userProfile) {
+      const avant = (window.userProfile.favoris || []).length;
+      const fusion = [...new Set([...(window.userProfile.favoris || []), ...loc])];
+      if (fusion.length !== avant) { window.userProfile.favoris = fusion; await ref.update({ favoris: fusion }); }
+      localStorage.removeItem("favoris_locaux");
+      window.dispatchEvent(new Event('profilMisAJour'));
+      if (typeof afficherToast === "function") afficherToast(window.LANG === "en"
+        ? `❤️ Your ${loc.length} favorite${loc.length > 1 ? "s have" : " has"} been saved to your account!`
+        : `❤️ Tes ${loc.length} favori${loc.length > 1 ? "s ont" : " a"} été sauvegardé${loc.length > 1 ? "s" : ""} dans ton compte !`, "success");
+    }
+  } catch (e) {}
 }
 
 window.sauvegarderProfil = async function(data) {
@@ -172,23 +186,46 @@ window.sauvegarderProfil = async function(data) {
   window.dispatchEvent(new Event('profilMisAJour'));
 };
 
+// --- Favoris LOCAUX (hors connexion) : on laisse l'utilisateur mettre en favori
+// sans le bloquer ; à la connexion, ces favoris sont migrés dans son compte
+// (chargerProfil). Aversion à la perte = meilleur levier pour inciter à créer
+// un compte (« tu as déjà X favoris, connecte-toi pour les garder partout »).
+function _favLocaux() { try { return JSON.parse(localStorage.getItem("favoris_locaux") || "[]"); } catch (e) { return []; } }
+function _setFavLocaux(a) { try { localStorage.setItem("favoris_locaux", JSON.stringify(a)); } catch (e) {} }
+function _majCoeurs(key, actif) {
+  ["btn-favori-" + key, "btn-favori-modal"].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = actif ? "❤️" : "🤍"; });
+}
+
 window.toggleFavori = async function(key) {
-  if (!window.currentUser) { ouvrirModalAuth(); return; }
+  // Hors connexion : on stocke en LOCAL (pas de mur) + invite douce.
+  if (!window.currentUser) {
+    const loc = _favLocaux();
+    const i = loc.indexOf(key);
+    const ajoute = i < 0;
+    if (ajoute) loc.push(key); else loc.splice(i, 1);
+    _setFavLocaux(loc);
+    _majCoeurs(key, ajoute);
+    window.dispatchEvent(new Event("profilMisAJour"));
+    if (ajoute && typeof afficherToast === "function") {
+      const _en = window.LANG === "en";
+      afficherToast(loc.length === 1
+        ? (_en ? "❤️ Saved! Sign in (free) to keep it on all your devices" : "❤️ Favori ajouté ! Connecte-toi (gratuit) pour le retrouver sur tous tes appareils")
+        : (_en ? `❤️ ${loc.length} favorites — sign in (free) to keep them everywhere` : `❤️ ${loc.length} favoris — connecte-toi (gratuit) pour les garder partout`));
+    }
+    return;
+  }
   const favs   = window.userProfile?.favoris || [];
   const isFav  = favs.includes(key);
   const newFavs = isFav ? favs.filter(f => f !== key) : [...favs, key];
   await _db.collection("utilisateurs").doc(window.currentUser.uid).update({ favoris: newFavs });
   window.userProfile.favoris = newFavs;
-  // Mettre à jour les boutons cœur visibles
-  ["btn-favori-" + key, "btn-favori-modal"].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.textContent = newFavs.includes(key) ? "❤️" : "🤍";
-  });
+  _majCoeurs(key, newFavs.includes(key));
   // Rafraîchir l'UI (accueil + onglets favoris si ouverts)
   window.dispatchEvent(new Event("profilMisAJour"));
 };
 
 window.estFavori = function(key) {
+  if (!window.currentUser) return _favLocaux().includes(key);
   return (window.userProfile?.favoris || []).includes(key);
 };
 

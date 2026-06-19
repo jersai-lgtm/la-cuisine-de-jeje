@@ -1298,12 +1298,20 @@ function filtrerFavoris() {
   const btn = document.getElementById('btn-favoris');
   if (btn) btn.classList.add('active');
 
-  if (!window.currentUser) { ouvrirModalAuth(); return; }
+  // Hors connexion : si des favoris LOCAUX existent, on les affiche (avec une
+  // invite douce à se connecter pour les garder) ; sinon, on propose de se connecter.
+  let _favLoc = []; try { _favLoc = JSON.parse(localStorage.getItem("favoris_locaux") || "[]"); } catch (e) {}
+  if (!window.currentUser) {
+    if (!_favLoc.length) { ouvrirModalAuth(); return; }
+    if (typeof afficherToast === "function") afficherToast(window.LANG === "en"
+      ? `❤️ ${_favLoc.length} favorite${_favLoc.length > 1 ? "s" : ""} — sign in (free) to keep them on all your devices`
+      : `❤️ ${_favLoc.length} favori${_favLoc.length > 1 ? "s" : ""} — connecte-toi (gratuit) pour les garder sur tous tes appareils`);
+  }
 
   // Basculer vers la grille
   if (typeof basculeVersGrille === "function") basculeVersGrille();
 
-  const favs = window.userProfile?.favoris || [];
+  const favs = window.currentUser ? (window.userProfile?.favoris || []) : _favLoc;
   const cartes = document.querySelectorAll('.carte');
   let count = 0;
   cartes.forEach(c => {

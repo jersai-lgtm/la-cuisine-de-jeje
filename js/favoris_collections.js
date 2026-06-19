@@ -14,7 +14,11 @@
   const esc = (s) => (typeof escapeHTML === "function") ? escapeHTML(s) : String(s == null ? "" : s);
 
   function cols() { return (window.userProfile && Array.isArray(window.userProfile.collections)) ? window.userProfile.collections : []; }
-  function favoris() { return (window.userProfile && Array.isArray(window.userProfile.favoris)) ? window.userProfile.favoris : []; }
+  function favoris() {
+    if (window.userProfile && Array.isArray(window.userProfile.favoris)) return window.userProfile.favoris;
+    // Hors connexion : on affiche les favoris stockés en local (migrés à la connexion).
+    try { return JSON.parse(localStorage.getItem("favoris_locaux") || "[]"); } catch (e) { return []; }
+  }
   function trouver(nom) { return cols().find(c => c.nom === nom); }
   function cleDe(c) { return (typeof extraireCleRecetteCarte === "function") ? extraireCleRecetteCarte(c) : null; }
   function nomRecette(cle) { return (typeof getNomRecette === "function") ? getNomRecette(cle) : cle; }
