@@ -9,9 +9,10 @@ worker/.wrangler/
 # Dossier de dépôt des photos à convertir (outil tools/convertir-images.py)
 _photos-a-convertir/
 
-# === SÉCURITÉ : ne JAMAIS commiter de secrets ni le script d'enrichissement ===
+# === SÉCURITÉ : ne JAMAIS commiter de secrets ni les scripts batch (clé API) ===
 # (le dépôt est public — tout fichier commité devient lisible sur github.com)
 .env
 .env.*
 *.key
 **/enrichir_batch.js
+tools/traduire_batch.mjs
