@@ -31676,5 +31676,143 @@ window.RECETTES_EN = {
     "detail": "Pour into jars and let set."
    }
   ]
+ },
+ "houmousbetterave": {
+  "nom": "Beetroot Hummus",
+  "description": "A vibrant pink, tangy hummus: the earthy sweetness of cooked beetroot meets creamy chickpeas and tahini. As pretty as it is tasty — perfect as a dip with raw veggies.",
+  "etapes": [
+   {
+    "titre": "Cook the beetroot",
+    "detail": "Use pre-cooked beetroot, or boil/roast it then peel and cut into chunks."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Put the drained chickpeas, beetroot, tahini, lemon juice, garlic, cumin and salt in a blender. Blend at full power."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Add the olive oil and a little cold water until smooth and creamy."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust salt and lemon: beetroot needs a good hit of acidity."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pour into a bowl, smooth it out and make a well in the centre."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Drizzle of olive oil, seeds (sesame, pumpkin) and a few mint leaves. Serve cold with pita bread or raw veggies."
+   }
+  ]
+ },
+ "ecrasepetitspois": {
+  "nom": "Crushed Peas, Feta & Mint",
+  "description": "A fresh, springy spread: crushed peas, crumbled feta, mint and lemon. On a slice of toasted bread, it's the perfect warm-weather appetiser.",
+  "etapes": [
+   {
+    "titre": "Cook the peas",
+    "detail": "Cook the peas (fresh or frozen) for a few minutes in boiling salted water, then drain and refresh."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Roughly crush the peas with a fork, keeping some texture."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Add the crumbled feta, chopped mint, lemon juice and olive oil."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt lightly (careful, feta is already salty) and add pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spread on toasted bread rubbed with garlic, or serve as a dip with breadsticks."
+   }
+  ]
+ },
+ "saladepasteque": {
+  "nom": "Watermelon, Feta & Mint Salad",
+  "description": "The perfect summer contrast: juicy sweet watermelon, salty creamy feta, fresh mint and a drizzle of olive oil. Ultra-refreshing and ready in 15 minutes.",
+  "etapes": [
+   {
+    "titre": "Cut the watermelon",
+    "detail": "Remove the rind and seeds, cut the watermelon into generous cubes. Keep cold."
+   },
+   {
+    "titre": "Prepare the feta",
+    "detail": "Cut or crumble the feta into large pieces."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Arrange the watermelon and feta in a large dish, scatter with chopped mint and olives."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with olive oil and a dash of lemon juice, pepper generously."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, ideally right away to keep the watermelon crunchy."
+   }
+  ]
+ },
+ "saladermelonmozza": {
+  "nom": "Melon, Mozzarella & Basil Salad",
+  "description": "A summery twist on the caprese: sweet melon balls, creamy mozzarella, basil and a drizzle of olive oil. Fresh, elegant and wonderfully simple.",
+  "etapes": [
+   {
+    "titre": "Prepare the melon",
+    "detail": "Halve the melon, remove the seeds, scoop into balls or cubes."
+   },
+   {
+    "titre": "Mozzarella",
+    "detail": "Drain the mozzarella and cut into pieces (or use bocconcini)."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Alternate melon, mozzarella and, if you like, thin slices of cured ham on the plate."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Scatter with fresh basil and drizzle with olive oil."
+   },
+   {
+    "titre": "Finish",
+    "detail": "A pinch of fleur de sel, a twist of pepper, and serve right away well chilled."
+   }
+  ]
+ },
+ "soupefroideavocat": {
+  "nom": "Chilled Avocado Soup",
+  "description": "An icy, ultra-velvety soup: avocado, cucumber, yogurt, lime and coriander, blended in two minutes. The perfect creamy cool-down for heatwave days.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Peel the avocado and cucumber, remove the pit and roughly chop."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Put avocado, cucumber, yogurt, lime juice, garlic, coriander and a little cold water in the blender. Blend until smooth and velvety."
+   },
+   {
+    "titre": "Adjust the texture",
+    "detail": "Add iced water until you reach the desired consistency."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper and adjust the lime to wake up the avocado."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate for at least 30 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve ice-cold, with a drizzle of olive oil, diced cucumber and coriander."
+   }
+  ]
  }
 };

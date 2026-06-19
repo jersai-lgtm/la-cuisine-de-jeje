@@ -2621,4 +2621,31 @@ Object.assign(recettes, {
       {icone:"🍋", titre:"Servir", detail:"Servir bien chaud avec des quartiers de citron à presser.", badge:"🍽️ Dressage"}
     ]
   },
+  soupefroideavocat: {
+    nom: "Soupe Froide d'Avocat",
+    cat: "soupes", saisons: ["ete"], pays: "mexique", dateAjout: "2026-06-19T10:04:00",
+    base: 4, temps: "10 min", niveau: "⭐ Facile", emoji: "🥑",
+    description: "Un velouté glacé et velouté à souhait : avocat, concombre, yaourt, citron vert et coriandre, mixés en deux minutes. La fraîcheur crémeuse parfaite pour les jours de canicule.",
+    ingredients: {},
+    tableauSoupeFroideAvocat: [
+      { nb: 1, avocat: "120 g", concombre: "150 g", yaourtgrec: "60 g", citron: "10 g", coriandre: "3 g", ail: "3 g", huileolive: "5 ml", sel: "2 g" },
+      { nb: 2, avocat: "240 g", concombre: "300 g", yaourtgrec: "120 g", citron: "20 g", coriandre: "6 g", ail: "6 g", huileolive: "10 ml", sel: "4 g" },
+      { nb: 3, avocat: "360 g", concombre: "450 g", yaourtgrec: "180 g", citron: "30 g", coriandre: "9 g", ail: "9 g", huileolive: "15 ml", sel: "6 g" },
+      { nb: 4, avocat: "480 g", concombre: "600 g", yaourtgrec: "240 g", citron: "40 g", coriandre: "12 g", ail: "12 g", huileolive: "20 ml", sel: "8 g" },
+      { nb: 5, avocat: "600 g", concombre: "750 g", yaourtgrec: "300 g", citron: "50 g", coriandre: "15 g", ail: "15 g", huileolive: "25 ml", sel: "10 g" },
+      { nb: 6, avocat: "720 g", concombre: "900 g", yaourtgrec: "360 g", citron: "60 g", coriandre: "18 g", ail: "18 g", huileolive: "30 ml", sel: "12 g" },
+      { nb: 7, avocat: "840 g", concombre: "1050 g", yaourtgrec: "420 g", citron: "70 g", coriandre: "21 g", ail: "21 g", huileolive: "35 ml", sel: "14 g" },
+      { nb: 8, avocat: "960 g", concombre: "1200 g", yaourtgrec: "480 g", citron: "80 g", coriandre: "24 g", ail: "24 g", huileolive: "40 ml", sel: "16 g" },
+      { nb: 9, avocat: "1080 g", concombre: "1350 g", yaourtgrec: "540 g", citron: "90 g", coriandre: "27 g", ail: "27 g", huileolive: "45 ml", sel: "18 g" },
+      { nb: 10, avocat: "1200 g", concombre: "1500 g", yaourtgrec: "600 g", citron: "100 g", coriandre: "30 g", ail: "30 g", huileolive: "50 ml", sel: "20 g" }
+    ],
+    etapes: [
+      { icone: "🥑", titre: "Préparer", detail: "Éplucher l'avocat et le concombre, retirer le noyau et les couper grossièrement.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mettre avocat, concombre, yaourt, jus de citron vert, ail, coriandre et un peu d'eau froide au blender. Mixer jusqu'à un velouté lisse.", badge: "⏱ 2 min" },
+      { icone: "💧", titre: "Ajuster la texture", detail: "Ajouter de l'eau glacée jusqu'à la consistance souhaitée.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Saler, poivrer et rectifier en citron pour réveiller l'avocat.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Réserver au moins 30 minutes au frais.", badge: "⏱ 30 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir glacé, avec un filet d'huile d'olive, des dés de concombre et de la coriandre.", badge: null }
+    ]
+  },
 });

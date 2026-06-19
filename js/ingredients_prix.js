@@ -1029,9 +1029,11 @@ function calculerPrixCaloriesRecette(ligneTableau) {
           poire: 150,
           oignon: 100,
           concombre: 200,
+          melon: 1000,                  // 1 melon ≈ 1 kg
+          pasteque: 3000,               // 1 pastèque ≈ 3 kg
           ail: 3,                       // 1 gousse ≈ 3g
         };
-        const pu = poidsUnitaire[cle] || 100;
+        const pu = poidsUnitaire[cle] || POIDS_UNITAIRE[cle] || 100;
         const nbUnites = qte.valeur / pu;
         prixTotal += nbUnites * info.prixUnite;
         calTotal += nbUnites * info.cal;

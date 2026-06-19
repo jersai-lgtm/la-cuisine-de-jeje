@@ -525,6 +525,8 @@ function getUniteRecette(nom, n) {
     "buddhaBowl":      ["bol", "bols"],
     "smoothiebowl":    ["bol", "bols"],
     "bowlacai":        ["bol", "bols"],
+    "houmousbetterave": ["bol", "bols"],
+    "ecrasepetitspois": ["bol", "bols"],
     "pancakes":        ["pancake", "pancakes"],
     "naan":            ["naan", "naans"],
     "eclair":          ["éclair", "éclairs"],
