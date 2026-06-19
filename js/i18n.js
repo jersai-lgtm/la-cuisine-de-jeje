@@ -46,40 +46,18 @@
   };
 
   // --- 2) Dictionnaire d'interface FR → EN ---------------------------------
-  // (seed : accueil + nav + boutons communs ; enrichi par lots)
-  const DICT = {
-    // Navigation du bas
-    "Accueil": "Home", "Garde-manger": "Pantry", "Menus": "Menus", "Mes Stats": "My Stats", "Admin": "Admin",
-    // Onglets du haut
-    "Recettes": "Recipes", "Favoris": "Favorites", "Ajouter": "Add",
-    // Header
-    "👤 Connexion": "👤 Log in", "Connexion": "Log in", "💡 Amélioration": "💡 Feedback", "Amélioration": "Feedback",
-    "Déconnexion": "Log out", "Mon compte": "My account",
-    // Recherche
-    "Rechercher une recette, ingrédient, cocktail...": "Search a recipe, ingredient, cocktail...",
-    "🔍 Chercher un ingrédient...": "🔍 Search an ingredient...",
-    // Accueil — sections
-    "Dernières recettes ajoutées": "Recently added recipes",
-    "Dernières recettes vues": "Recently viewed",
-    "Aucune recette vue récemment": "No recipes viewed recently",
-    "Suggestions du jour": "Today's suggestions",
-    "Tout voir →": "See all →", "Voir tout →": "See all →",
-    "Effacer": "Clear", "Tout vider": "Clear all", "Réinitialiser": "Reset",
-    // Boutons communs
-    "Fermer": "Close", "Annuler": "Cancel", "Valider": "Confirm", "Enregistrer": "Save",
-    "Supprimer": "Delete", "Modifier": "Edit", "Retour": "Back", "Suivant →": "Next →", "← Précédent": "← Previous",
-    "Partager": "Share", "Copier": "Copy", "Ajouter aux favoris": "Add to favorites",
-    "Oui": "Yes", "Non": "No", "OK": "OK", "Terminé": "Done", "Continuer": "Continue",
-    // Cuisine / courses
-    "🥶 Vide-frigo": "🥶 Use it up", "🛒 Liste de courses": "🛒 Shopping list", "📦 Mon placard": "📦 My pantry",
-    "Liste de courses": "Shopping list", "Vide-frigo": "Use it up",
+  // Le gros du dico vit dans js/i18n_dict.js (window.I18N_DICT). Ici, juste
+  // quelques génériques de secours ; I18N_DICT a priorité.
+  const SEED = {
+    "Annuler": "Cancel", "Valider": "Confirm", "Enregistrer": "Save", "Modifier": "Edit",
+    "Retour": "Back", "Copier": "Copy", "Oui": "Yes", "Non": "No", "Continuer": "Continue",
+    "Réinitialiser": "Reset", "Déconnexion": "Log out", "Amélioration": "Feedback",
+    "💡 Amélioration": "💡 Feedback", "Générer un menu": "Generate a menu",
     "Ajouter des recettes": "Add recipes", "Plan de prep": "Prep plan",
-    // Menus
-    "Générer un menu": "Generate a menu", "Menu de la semaine": "Weekly menu",
-    "Midi": "Lunch", "Soir": "Dinner",
-    // Divers fréquents
-    "Connecte-toi": "Log in", "Chargement...": "Loading...", "personnes": "servings", "personne": "serving",
+    "Ajouter aux favoris": "Add to favorites", "personnes": "servings", "personne": "serving",
+    "Effacer": "Clear", "Tout vider": "Clear all", "Partager": "Share",
   };
+  const DICT = Object.assign({}, SEED, window.I18N_DICT || {});
 
   function trad(s) {
     if (s == null) return null;
