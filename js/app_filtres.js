@@ -16,6 +16,29 @@
 (function () {
   const F = { rapide: false, eco: false, nutri: false, facile: false, saison: false, vege: false, vegan: false };
   let tri = "";
+  let occ = "";                 // occasion active (single-select) : "" = aucune
+
+  // Occasions : dérivées de la catégorie + mots-clés (nom/description). Pas de
+  // tag manuel sur 1050 recettes ; détection à la volée comme les régimes.
+  // Détection sur le NOM (titre) + catégorie uniquement — pas la description,
+  // qui contient trop de mots-clés incidents (« grillé », « purée »…) → bruit.
+  const OCCASIONS = {
+    apero:      { emoji: "🥂", lib: "Apéro",       cats: ["aperitifs", "tartinables", "cocktails", "mocktails"], re: /\b(apero|toast|dip|verrine|gougere|tapas|amuse|feuillete|tartinade|houmous|tapenade|guacamole|nacho|gressin|cake sale|bruschetta|crostini|rillette)\b/ },
+    barbecue:   { emoji: "🔥", lib: "Barbecue",    cats: [], re: /\b(barbecue|grillade|grille|brochette|merguez|cotelette|travers|ribs|chipolata|saucisse|plancha|sate|yakitori|spareribs|kebab|chiche|chimichurri|marinade)\b/ },
+    piquenique: { emoji: "🧺", lib: "Pique-nique", cats: ["salades"], re: /\b(sandwich|wrap|cake sale|quiche|taboule|pan bagnat|club|tarte salee|focaccia|frittata|muffin sale|roule|pin ?cho)\b/ },
+    fetes:      { emoji: "🎄", lib: "Fêtes",       cats: [], re: /\b(buche|foie gras|dinde|chapon|marron|huitre|saumon fume|magret|saint ?jacques|pain d epice|champagne|truffe|tournedos)\b/ },
+  };
+  const _normTxt = (s) => (typeof normalizeText === "function") ? normalizeText(s) : String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  function occasionMatch(cle) {
+    if (!occ) return true;
+    const r = (typeof recettes !== "undefined") ? recettes[cle] : null;
+    if (!r) return false;
+    const o = OCCASIONS[occ];
+    if (!o) return true;
+    if (o.cats.includes(r.cat)) return true;
+    if (o.re.test(_normTxt(r._nomFr || r.nom || ""))) return true;  // nom FR (même en EN)
+    return false;
+  }
   const cache = new Map();      // cle -> métriques
   const regimeCache = {};       // regime -> Set(cles compatibles)
   let ordreInitial = null;      // [.carte] dans l'ordre d'origine (pour le tri "défaut")
@@ -80,6 +103,7 @@
     if (F.saison && !m.saison) return false;
     if (F.vege) { const s = regimeSet("végétarien"); if (s && !s.has(cle)) return false; }
     if (F.vegan) { const s = regimeSet("vegan"); if (s && !s.has(cle)) return false; }
+    if (occ && !occasionMatch(cle)) return false;
     return true;
   }
   // Réutilise la détection de régime de la recherche (exclusion par ingrédients)
@@ -93,7 +117,7 @@
     catch (e) { return null; }
     return regimeCache[regime];
   }
-  const actif = () => Object.keys(F).some(k => F[k]);
+  const actif = () => Object.keys(F).some(k => F[k]) || !!occ;
 
   function appliquer() {
     const on = actif();
@@ -147,11 +171,15 @@
   }
 
   // ---- Mémorisation entre visites ----
-  function persister() { try { localStorage.setItem(LSKEY, JSON.stringify({ F, tri })); } catch (e) {} }
+  function persister() { try { localStorage.setItem(LSKEY, JSON.stringify({ F, tri, occ })); } catch (e) {} }
   function majUIetat() {
     document.querySelectorAll("#chips-row-filtres .chip").forEach(btn => {
       const m = (btn.getAttribute("onclick") || "").match(/toggleFiltreAvance\('(\w+)'/);
       if (m) btn.classList.toggle("active", !!F[m[1]]);
+    });
+    document.querySelectorAll("#chips-row-occasions .chip").forEach(btn => {
+      const m = (btn.getAttribute("onclick") || "").match(/filtrerOccasion\('(\w+)'/);
+      if (m) btn.classList.toggle("active", occ === m[1]);
     });
     const sel = document.getElementById("f-tri"); if (sel) sel.value = tri || "";
   }
@@ -161,6 +189,7 @@
     const fSaved = (data && data.F) || {};
     Object.keys(F).forEach(k => F[k] = !!fSaved[k]);
     tri = (data && data.tri) || "";
+    occ = (data && data.occ && OCCASIONS[data.occ]) ? data.occ : "";
   }
   function restaurer() { chargerEtat(); majUIetat(); appliquer(); } // appliqué quand la grille est prête
 
@@ -177,9 +206,19 @@
     majCompteur();
     persister();
   };
+  // Occasions : single-select (re-clic = désactive)
+  window.filtrerOccasion = function (key, btn) {
+    occ = (occ === key) ? "" : key;
+    document.querySelectorAll("#chips-row-occasions .chip").forEach(c => c.classList.remove("active"));
+    if (occ && btn) btn.classList.add("active");
+    appliquer();
+    persister();
+  };
   window.reinitFiltresAvances = function () {
     Object.keys(F).forEach(k => F[k] = false);
     tri = "";
+    occ = "";
+    document.querySelectorAll("#chips-row-occasions .chip.active").forEach(c => c.classList.remove("active"));
     document.querySelectorAll("#chips-row-filtres .chip.active").forEach(c => c.classList.remove("active"));
     const sel = document.getElementById("f-tri"); if (sel) sel.value = "";
     document.querySelectorAll(".carte--filtre-off").forEach(c => c.classList.remove("carte--filtre-off"));
@@ -229,6 +268,16 @@
     const premiere = conteneur.querySelector(".chips-row");
     if (premiere && premiere.nextSibling) conteneur.insertBefore(row, premiere.nextSibling);
     else conteneur.appendChild(row);
+
+    // Ligne « occasions » (juste après la ligne filtres)
+    const rowOcc = document.createElement("div");
+    rowOcc.className = "chips-row";
+    rowOcc.id = "chips-row-occasions";
+    rowOcc.innerHTML = '<span class="chips-label" title="Occasions">🎉</span>' +
+      Object.entries(OCCASIONS).map(([k, o]) =>
+        `<button class="chip" onclick="filtrerOccasion('${k}',this)">${o.emoji} ${o.lib}</button>`).join("");
+    if (row.nextSibling) conteneur.insertBefore(rowOcc, row.nextSibling);
+    else conteneur.appendChild(rowOcc);
   }
 
   // --- Cohérence inter-vues : le calque .carte--filtre-off ne doit valoir que

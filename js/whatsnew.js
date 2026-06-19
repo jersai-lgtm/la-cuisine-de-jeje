@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "2.0.6",
+    titre: "🎉 Filtre par occasion",
+    texte: "Dans les Recettes, une nouvelle ligne de filtres « occasions » : 🥂 Apéro, 🔥 Barbecue, 🧺 Pique-nique, 🎄 Fêtes. Un clic et tu ne vois que les recettes qui collent au moment — pratique pour préparer ton barbecue du week-end ou ton repas de fête. Bonus : l'app démarre plus vite (les traductions anglaises ne se chargent que si tu passes en anglais). 👨‍🍳"
+  },
+  {
     v: "1.11.55",
     titre: "🤖 L'assistant vocal répond à tes questions",
     texte: "Le micro 🎙️ de la barre de recherche est un vrai assistant : appuie et parle (français ou anglais). Ouvre une recette, demande une idée (« une recette italienne rapide sans miel », « un dessert pas cher »), navigue, ajoute à ta liste ou génère un menu — à la voix. En cuisson, pilote tout sans toucher l'écran (« suivant », « va à l'étape 3 », « minuteur dix minutes », « temps restant ») et active l'écoute mains-libres 👂. Nouveau : pose-lui tes questions de cuisine — « c'est quoi un bain-marie ? », « par quoi remplacer le mascarpone ? », « qu'est-ce que je fais avec du poulet et des courgettes ? » — il te répond. 🤖 (réponses IA quand tu es connecté·e)"
