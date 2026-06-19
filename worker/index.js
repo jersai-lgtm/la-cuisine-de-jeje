@@ -86,11 +86,15 @@ export default {
       try { const b = await request.json(); nouveau = !!(b && b.nouveau); } catch (e) {}
       const qui = claims.name || claims.email || "Quelqu'un";
       const texte = `🍳 La Cuisine de Jéjé\n👤 ${qui} ${nouveau ? "vient de CRÉER un compte 🆕" : "s'est connecté(e)"}`;
+      // .trim() : enlève un éventuel retour-ligne dans le secret (selon le shell
+      // utilisé pour `wrangler secret put`, ex. PowerShell ajoute un \n).
+      const tok = (env.TELEGRAM_BOT_TOKEN || "").trim();
+      const chat = (env.TELEGRAM_CHAT_ID || "").trim();
       try {
-        await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+        await fetch(`https://api.telegram.org/bot${tok}/sendMessage`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, text: texte }),
+          body: JSON.stringify({ chat_id: chat, text: texte }),
         });
       } catch (e) {}
       return json({ ok: true }, 200, cors);
