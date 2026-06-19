@@ -9,7 +9,7 @@ Object.assign(recettes, {
     base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🥕",
     description: "L'entrée fraîcheur indémodable : carottes finement râpées, vinaigrette légère au citron et persil. Croquante, vitaminée et prête en 15 minutes.",
     saisons: ["printemps","ete"],
-    liees: [],
+    liees: ["vinaigrette"],
     ingredients: {},
     tableauCarottesrapees: [
       { nb: 1, carotte: "120 g", citron: "10 g", huileolive: "8 ml", persil: "3 g", sucre: "2 g" },
@@ -104,6 +104,7 @@ Object.assign(recettes, {
     ]
   },
   huitresgratinees: {
+    liees: ["painsigle"],
     nom: "Huîtres Gratinées au Champagne",
     cat: "entrees", pays: "france",
     dateAjout: "2026-06-06T23:31:00",
@@ -141,6 +142,7 @@ Object.assign(recettes, {
     ]
   },
   saumongravlax: {
+    liees: ["painsigle"],
     nom: "Saumon Gravlax",
     cat: "entrees", pays: "france",
     base: 4,
@@ -212,6 +214,7 @@ Object.assign(recettes, {
       ]
   },
   terrinecampagne: {
+    liees: ["paincampagne"],
     nom: "Terrine de Campagne",
     cat: "entrees", pays: "france",
     base: 8,
@@ -283,6 +286,7 @@ Object.assign(recettes, {
       ]
   },
   poireauVinaigrette: {
+    liees: ["vinaigrette"],
     nom: "Poireaux Vinaigrette",
     cat: "entrees", saisons: ["automne","hiver"], pays: "france",
     base: 4,
@@ -353,6 +357,7 @@ Object.assign(recettes, {
       ]
   },
   calamarsRomaine: {
+    liees: ["aioli"],
     nom: "Calamars à la Romaine",
     cat: "entrees", pays: "espagne",
     base: 4,
@@ -641,6 +646,7 @@ Object.assign(recettes, {
     ]
   },
   caponatasicile: {
+    liees: ["sauceaigredouce"],
     nom: "Caponata Sicilienne",
     cat: "entrees", saisons: ["ete","automne"], pays: "italie",
     base: 4,
@@ -757,7 +763,7 @@ Object.assign(recettes, {
     ]
   },
 oeufmayo: {
-    liees: ["mayonnaise"],
+    liees: ["mayonnaise", "paincampagne"],
     nom: "Œufs mayonnaise",
     cat: "entrees", pays: "france",
     base: 6,
@@ -1079,6 +1085,7 @@ oeufmayo: {
     ]
   },
   saladechevrechaud: {
+    liees: ["painbaguette", "vinaigrette"],
     nom: "Salade de chèvre chaud",
     dateAjout: "2026-06-05",
     cat: "entrees", pays: "france",
@@ -1152,6 +1159,7 @@ oeufmayo: {
     ]
   },
   aspergesmimosa: {
+    liees: ["vinaigrette"],
     nom: "Asperges mimosa",
     dateAjout: "2026-06-05",
     cat: "entrees", pays: "france",
@@ -1226,6 +1234,7 @@ oeufmayo: {
     ]
   },
   carpacciobetterave: {
+    liees: ["vinaigrette"],
     nom: "Carpaccio de Betterave",
     dateAjout: "2026-06-06T13:00:00",
     cat: "entrees", pays: "france",
@@ -1377,6 +1386,7 @@ oeufmayo: {
     ]
   },
   smorrebrod: {
+    liees: ["painsigle"],
     nom: "Smørrebrød",
     cat: "entrees",
     pays: "danemark",
@@ -1451,6 +1461,7 @@ oeufmayo: {
     ]
   },
   fulmedames: {
+    liees: ["painpita"],
     nom: "Ful Medames",
     cat: "entrees",
     pays: "egypte",
@@ -1488,6 +1499,7 @@ oeufmayo: {
     ]
   },
   gigantesplaki: {
+    liees: ["saucetomate"],
     nom: "Gigantes Plaki",
     cat: "entrees",
     pays: "grece",

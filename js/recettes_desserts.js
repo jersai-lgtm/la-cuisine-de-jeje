@@ -41,7 +41,7 @@ Object.assign(recettes, {
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍍",
     description: "Des tranches d'ananas caramélisées au beurre, au miel et à la vanille, avec une pointe de rhum. Un dessert exotique express et bluffant.",
     saisons: ["ete"],
-    liees: [],
+    liees: ["glacevanille"],
     ingredients: {},
     tableauAnanasroti: [
       { nb: 1, ananas: "150 g", miel: "15 g", beurre: "8 g", rhum: "5 ml", cannelle: "1 g", vanille: "1 g" },
@@ -323,6 +323,7 @@ Object.assign(recettes, {
       ]
   },
   moelleuxchocolat: {
+    liees: ["glacevanille"],
     nom: "Moelleux au Chocolat",
     cat: "desserts", pays: "france",
     base: 6,
@@ -393,6 +394,7 @@ Object.assign(recettes, {
       ]
   },
   gateaubasque: {
+    liees: ["patesablee"],
     nom: "Gâteau Basque",
     cat: "desserts", pays: "france",
     base: 8,
@@ -473,6 +475,7 @@ Object.assign(recettes, {
       ]
   },
   crumblefruits: {
+    liees: ["glacevanille"],
     nom: "Crumble aux Fruits",
     cat: "desserts", pays: "france",
     base: 6,
@@ -615,7 +618,7 @@ Object.assign(recettes, {
       ]
   },
   tartetatinpommes: {
-    liees: ["patebrisee","compotepommes"],
+    liees: ["patebrisee", "compotepommes", "patefeuilletee"],
     nom: "Tarte Tatin aux Pommes",
     cat: "desserts", pays: "france",
     base: 6,
@@ -1021,7 +1024,7 @@ Object.assign(recettes, {
     ]
   },
   tarteaupommes: {
-    liees: ["patebrisee","compotepommes"],
+    liees: ["patebrisee", "compotepommes", "glacevanille"],
     nom: "Tarte aux Pommes",
     cat: "desserts", pays: "france",
     base: 6,
@@ -1096,6 +1099,7 @@ Object.assign(recettes, {
     ]
   },
   flan: {
+    liees: ["patefeuilletee"],
     nom: "Flan",
     cat: "desserts", pays: "france",
     base: 6,
@@ -1215,6 +1219,7 @@ Object.assign(recettes, {
       ]
   },
   eclair: {
+    liees: ["fondantchocolat"],
     nom: "Éclairs au Chocolat",
     cat: "desserts", saisons: ["automne","hiver"], pays: "france",
     base: 4,
@@ -1285,6 +1290,7 @@ Object.assign(recettes, {
       ]
   },
   profiteroles: {
+    liees: ["glacevanille"],
     nom: "Profiteroles",
     cat: "desserts", saisons: ["automne","hiver"], pays: "france",
     base: 4,
@@ -1427,6 +1433,7 @@ Object.assign(recettes, {
     ]
   },
   mochiglace: {
+    liees: ["glacevanille"],
     nom: "Mochis Glacés",
     cat: "glaces", saisons: ["ete"], pays: "japon",
     base: 4,
@@ -1686,6 +1693,7 @@ Object.assign(recettes, {
     ]
   },
   affogatoglace: {
+    liees: ["glacevanille"],
     nom: "Affogato al Caffè",
     cat: "glaces", pays: "italie",
     base: 2,
@@ -1879,6 +1887,7 @@ Object.assign(recettes, {
     ]
   },
   apfelstrudel: {
+    liees: ["glacevanille"],
     nom: "Apfelstrudel",
     cat: "desserts", saisons: ["automne","hiver"], pays: "allemagne",
     base: 8,
@@ -1956,6 +1965,7 @@ Object.assign(recettes, {
     ]
   },
   treslecheas: {
+    liees: ["glacevanille"],
     nom: "Tres Leches",
     cat: "desserts", pays: "mexique",
     base: 10,
@@ -2483,6 +2493,7 @@ Object.assign(recettes, {
     ]
   },
   poudingchomeur: {
+    liees: ["glacevanille"],
     nom: "Pouding Chômeur",
     cat: "desserts", pays: "canada",
     dateAjout: "2026-06-03",
@@ -2742,6 +2753,7 @@ Object.assign(recettes, {
     ]
   },
   poirehelene: {
+    liees: ["glacevanille"],
     nom: "Poire belle-Hélène",
     dateAjout: "2026-06-05",
     cat: "desserts", pays: "france",
@@ -2779,6 +2791,7 @@ Object.assign(recettes, {
     ]
   },
   kouignamann: {
+    liees: ["patefeuilletee"],
     nom: "Kouign-amann",
     dateAjout: "2026-06-05",
     cat: "desserts", pays: "france",
@@ -3000,6 +3013,7 @@ Object.assign(recettes, {
     ]
   },
   bananeflambee: {
+    liees: ["glacevanille"],
     nom: "Bananes flambées",
     dateAjout: "2026-06-05T21:00:00",
     cat: "desserts", pays: "france",
@@ -4345,6 +4359,7 @@ Object.assign(recettes, {
     ]
   },
   ummali: {
+    liees: ["patefeuilletee"],
     nom: "Umm Ali",
     cat: "desserts",
     pays: "egypte",
@@ -4883,7 +4898,7 @@ Object.assign(recettes, {
     ]
   },
   numbercake: {
-    nom: "Number cake", cat: "desserts", pays: "monde", dateAjout: "2026-06-17T10:00:00", liees: ["macarons"],
+    nom: "Number cake", cat: "desserts", pays: "monde", dateAjout: "2026-06-17T10:00:00", liees: ["macarons", "patesablee"],
     base: 8, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🔢",
     description: "Le gâteau-chiffre tendance des anniversaires : deux couches de sablé en forme de chiffre, garnies d'une chantilly mascarpone pochée, fruits frais et macarons.",
     ingredients: {},

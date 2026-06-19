@@ -38,6 +38,7 @@ Object.assign(recettes, {
     ]
   },
   tofusaute: {
+    liees: ["teriyaki"],
     nom: "Tofu Sauté Teriyaki",
     cat: "healthy", pays: "japon",
     base: 4,
@@ -143,6 +144,7 @@ Object.assign(recettes, {
     ]
   },
   saladepoischiches: {
+    liees: ["vinaigrette"],
     nom: "Salade de Pois Chiches",
     cat: "healthy", saisons: ["ete"], pays: "liban",
     base: 4,
@@ -243,6 +245,7 @@ Object.assign(recettes, {
     ]
   },
   saladequinoa: {
+    liees: ["vinaigrette"],
     nom: "Salade de quinoa",
     cat: "healthy", saisons: ["automne","ete"], pays: "usa",
     base: 4,
@@ -344,6 +347,7 @@ Object.assign(recettes, {
     ]
   },
   saladeKale: {
+    liees: ["vinaigrette"],
     nom: "Salade de Kale",
     cat: "healthy", saisons: ["automne","hiver"], pays: "monde",
     base: 4,
@@ -473,6 +477,7 @@ Object.assign(recettes, {
     ]
   },
   saladeLegsRoasted: {
+    liees: ["vinaigrette"],
     nom: "Salade de Légumes Rôtis",
     cat: "healthy", pays: "monde",
     base: 4,
@@ -569,6 +574,7 @@ Object.assign(recettes, {
     ]
   },
   falafelbaked: {
+    liees: ["painpita"],
     nom: "Falafel au Four",
     cat: "healthy", pays: "monde",
     base: 4,
@@ -634,6 +640,7 @@ Object.assign(recettes, {
     ]
   },
   poketuna: {
+    liees: ["ponzu"],
     nom: "Poké Thon-Avocat",
     cat: "healthy", saisons: ["ete"], pays: "hawaii",
     base: 4,
@@ -737,6 +744,7 @@ Object.assign(recettes, {
     ]
   },
   saumonteriyakimiel: {
+    liees: ["teriyaki"],
     nom: "Saumon Teriyaki au Miel",
     cat: "healthy", pays: "japon",
     base: 4,

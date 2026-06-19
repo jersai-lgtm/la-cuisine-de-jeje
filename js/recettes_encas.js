@@ -73,6 +73,7 @@ Object.assign(recettes, {
       ]
   },
   gyoza: {
+    liees: ["ponzu"],
     nom: "Gyoza",
     cat: "encas", saisons: ["automne","hiver"], pays: "japon",
     base: 20,
@@ -170,6 +171,7 @@ Object.assign(recettes, {
       ]
   },
   momos: {
+    liees: ["saucetomate"],
     nom: "Momos Tibétains",
     cat: "encas", saisons: ["automne","hiver"], pays: "tibet",
     base: 4,
@@ -368,6 +370,7 @@ Object.assign(recettes, {
       ]
   },
   croquemonsieur: {
+    liees: ["paindemie"],
     nom: "Croque-monsieur",
     cat: "encas", pays: "france",
     base: 4,
@@ -579,6 +582,7 @@ Object.assign(recettes, {
     ]
   },
   empanadasargentines: {
+    liees: ["chimichurri"],
     nom: "Empanadas Argentines",
     cat: "encas", pays: "argentine",
     base: 4,
@@ -724,6 +728,7 @@ Object.assign(recettes, {
     ]
   },
   samosaslegumes: {
+    liees: ["ketchup"],
     nom: "Samosas Légumes",
     cat: "encas", pays: "inde",
     base: 4,
@@ -797,7 +802,7 @@ Object.assign(recettes, {
       ]
   },
   clubsandwich: {
-    liees: ["mayonnaise"],
+    liees: ["mayonnaise", "paindemie"],
     nom: "Club sandwich",
     cat: "encas", pays: "usa",
     base: 2,
@@ -869,6 +874,7 @@ Object.assign(recettes, {
       ]
   },
   nuggetspoulet: {
+    liees: ["ketchup", "saucebarbecue"],
     nom: "Nuggets de poulet maison",
     cat: "encas", pays: "usa",
     base: 4,
@@ -1125,6 +1131,7 @@ Object.assign(recettes, {
     ]
   },
   choripan: {
+    liees: ["chimichurri"],
     nom: "Choripán",
     cat: "encas", pays: "argentine",
     dateAjout: "2026-06-03",
@@ -1537,7 +1544,7 @@ Object.assign(recettes, {
     ]
   },
   zapiekanka: {
-    liees: ["ketchup"],
+    liees: ["ketchup", "painbaguette"],
     nom: "Zapiekanka",
     cat: "encas",
     pays: "pologne",
@@ -1686,6 +1693,7 @@ Object.assign(recettes, {
     ]
   },
   pupusa: {
+    liees: ["saucetomate"],
     nom: "Pupusa",
     cat: "encas",
     pays: "salvador",
@@ -1945,6 +1953,7 @@ Object.assign(recettes, {
     ]
   },
   pempek: {
+    liees: ["sauceaigredouce"],
     nom: "Pempek",
     cat: "encas",
     pays: "indonesie",

@@ -708,6 +708,7 @@ Object.assign(recettes, {
     ]
   },
   soupeaupistou: {
+    liees: ["mayonnaise"],
     nom: "Soupe au Pistou",
     cat: "soupes", saisons: ["ete"], pays: "france",
     base: 6,
@@ -783,6 +784,7 @@ Object.assign(recettes, {
     ]
   },
   bortsch: {
+    liees: ["painsigle"],
     nom: "Bortsch Russe",
     cat: "soupes", saisons: ["hiver","automne"], pays: "russie",
     base: 6,
@@ -859,6 +861,7 @@ Object.assign(recettes, {
     ]
   },
   soupepoissonroche: {
+    liees: ["mayonnaise"],
     nom: "Soupe de Poisson",
     cat: "soupes", pays: "france",
     base: 6,
@@ -1730,6 +1733,7 @@ Object.assign(recettes, {
     ]
   },
   garbure: {
+    liees: ["paincampagne"],
     nom: "Garbure Béarnaise",
     cat: "soupes",
     pays: "france",
@@ -1806,6 +1810,7 @@ Object.assign(recettes, {
     ]
   },
   salmorejo: {
+    liees: ["mayonnaise"],
     nom: "Salmorejo",
     cat: "soupes",
     pays: "espagne",
@@ -2475,6 +2480,7 @@ Object.assign(recettes, {
     ]
   },
   brejaude: {
+    liees: ["paincampagne"],
     nom: "Bréjaude",
     cat: "soupes",
     pays: "france",
