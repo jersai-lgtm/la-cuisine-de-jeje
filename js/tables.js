@@ -2103,7 +2103,7 @@ function htmlTableauGoumeauColonnes(l) {
     <tr><th>🌸 Eau de fleur d'oranger</th><td>selon quantité</td></tr>
     <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🍮 Goumeau (nappage)</th></tr>
     <tr><th>🍦 Crème fraîche épaisse</th><td>${l.gCreme}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.gSucre}</td></tr>
+    <tr><th>🍬 Sucre (nappage)</th><td>${l.gSucre}</td></tr>
     <tr><th>🥚 Jaune d'œuf</th><td>${l.gJaune}</td></tr>`);
 }
 
@@ -2545,7 +2545,7 @@ function htmlTableauParisBrestColonnes(l) {
     <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🌰 Crème mousseline pralinée</th></tr>
     <tr><th>🥛 Lait entier</th><td>${l.laitCreme}</td></tr>
     <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunesCreme}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
+    <tr><th>🍬 Sucre (crème)</th><td>${l.sucreCreme}</td></tr>
     <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
     <tr><th>🧈 Beurre mou</th><td>${l.beurrCreme}</td></tr>
     <tr><th>🌰 Pâte de pralin</th><td>${l.pralin}</td></tr>`);
@@ -3679,13 +3679,13 @@ function htmlTableauIleFlottanteColonnes(l) {
     <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🥛 Crème anglaise</th></tr>
     <tr><th>🥛 Lait entier</th><td>${l.lait}</td></tr>
     <tr><th>🥚 Jaunes d'œufs</th><td>${l.jaunesCreme}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
+    <tr><th>🍬 Sucre (crème)</th><td>${l.sucreCreme}</td></tr>
     <tr><th>🌿 Vanille</th><td>${l.vanille} gousse</td></tr>
     <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🌨️ Îles (meringue)</th></tr>
     <tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreIles}</td></tr>
+    <tr><th>🍬 Sucre (meringue)</th><td>${l.sucreIles}</td></tr>
     <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:12px;padding:8px 14px 4px">🍯 Caramel</th></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreCaramel}</td></tr>`);
+    <tr><th>🍬 Sucre (caramel)</th><td>${l.sucreCaramel}</td></tr>`);
 }
 
 function htmlTableauBananaBreadColonnes(l) {
@@ -3793,12 +3793,12 @@ function htmlTableauTarteCitronColonnes(l) {
     <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:13px;padding:10px 14px 6px">🍋 Crème citron</th></tr>
     <tr><th>🍋 Citrons</th><td>${l.citrons}</td></tr>
     <tr><th>🥚 Œufs</th><td>${l.oeufCreme}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreCreme}</td></tr>
+    <tr><th>🍬 Sucre (crème)</th><td>${l.sucreCreme}</td></tr>
     <tr><th>🧈 Beurre</th><td>${l.beurreCreme}</td></tr>
     <tr><th>🌾 Maïzena</th><td>${l.maizena}</td></tr>
     <tr><th colspan="2" style="color:var(--accent-pale,#ffb3cc);font-size:13px;padding:10px 14px 6px">🌨️ Meringue</th></tr>
     <tr><th>🥚 Blancs d'œufs</th><td>${l.blancs}</td></tr>
-    <tr><th>🍬 Sucre</th><td>${l.sucreMeringue}</td></tr>`);
+    <tr><th>🍬 Sucre (meringue)</th><td>${l.sucreMeringue}</td></tr>`);
 }
 
 function htmlTableauQuinoaColonnes(l) {
