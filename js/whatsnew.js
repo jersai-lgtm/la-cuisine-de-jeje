@@ -10,9 +10,9 @@
 
 const QUOI_DE_NEUF = [
   {
-    v: "1.11.48",
-    titre: "🎙️ Assistant vocal — parle, il agit",
-    texte: "Le micro 🎙️ de la barre de recherche devient un vrai assistant : appuie et parle (français ou anglais). Ouvre une recette (« ouvre les crêpes »), demande une idée (« une recette italienne rapide sans miel », « un dessert pas cher »), navigue (« va aux favoris », « ma liste de courses »), ajoute à ta liste (« ajoute des œufs »), mets en favori ou génère un menu — à la voix. Et en mode cuisson, pilote tout sans toucher l'écran : « suivant », « va à l'étape 3 », « minuteur 10 minutes », « ajoute 5 minutes », « temps restant », « lis les ingrédients », « remplace le beurre ». 👨‍🍳"
+    v: "1.11.55",
+    titre: "🤖 L'assistant vocal répond à tes questions",
+    texte: "Le micro 🎙️ de la barre de recherche est un vrai assistant : appuie et parle (français ou anglais). Ouvre une recette, demande une idée (« une recette italienne rapide sans miel », « un dessert pas cher »), navigue, ajoute à ta liste ou génère un menu — à la voix. En cuisson, pilote tout sans toucher l'écran (« suivant », « va à l'étape 3 », « minuteur dix minutes », « temps restant ») et active l'écoute mains-libres 👂. Nouveau : pose-lui tes questions de cuisine — « c'est quoi un bain-marie ? », « par quoi remplacer le mascarpone ? », « qu'est-ce que je fais avec du poulet et des courgettes ? » — il te répond. 🤖 (réponses IA quand tu es connecté·e)"
   },
   {
     v: "1.11.21",
