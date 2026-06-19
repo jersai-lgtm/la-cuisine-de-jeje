@@ -206,6 +206,21 @@
     majCompteur();
     persister();
   };
+  // 🎲 Surprends-moi : ouvre une recette au hasard parmi celles VISIBLES
+  // (donc en respectant filtres, occasion, catégorie/pays et recherche en cours).
+  window.surprendsMoi = function () {
+    const visibles = [...document.querySelectorAll("#section-cartes .carte")]
+      .filter(c => c.offsetParent !== null && c.style.display !== "none" && !c.classList.contains("carte--filtre-off"));
+    let cle = null;
+    if (visibles.length) {
+      const c = visibles[Math.floor(Math.random() * visibles.length)];
+      cle = cleDe(c);
+    } else if (window._searchIndex && window._searchIndex.cartes && window._searchIndex.cartes.length) {
+      cle = window._searchIndex.cartes[Math.floor(Math.random() * window._searchIndex.cartes.length)].cle;
+    }
+    if (cle && typeof ouvrirFiche === "function") ouvrirFiche(cle, "");
+  };
+
   // Occasions : single-select (re-clic = désactive)
   window.filtrerOccasion = function (key, btn) {
     occ = (occ === key) ? "" : key;
@@ -263,6 +278,7 @@
         '<option value="cout">💰 Moins cher</option>' +
         '<option value="cal">🔥 Moins calorique</option>' +
       '</select>' +
+      '<button class="chip" onclick="surprendsMoi()" title="Une recette au hasard (selon les filtres actifs)">🎲 Surprends-moi</button>' +
       '<span id="f-compteur" class="filtre-compteur"></span>';
     // Inséré juste après la 1ère ligne (catégories), avant la ligne pays
     const premiere = conteneur.querySelector(".chips-row");

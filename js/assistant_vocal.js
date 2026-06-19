@@ -642,6 +642,13 @@
     if (has("aide", "peux tu faire", "tu peux faire", "sais tu faire", "tu sais faire", "que peux tu", "que sais tu",
             "comment ca marche", "commandes", "help", "what can you do", "what can i say")) { aide(); return; }
 
+    // 2b) Surprends-moi : une recette au hasard (selon les filtres actifs)
+    if (has("surprends moi", "surprends-moi", "au hasard", "une au hasard", "surprise me", "random recipe", "i m feeling lucky", "n importe quoi")) {
+      if (typeof surprendsMoi === "function") { repondre(EN() ? "Here's a random pick!" : "Voilà une surprise !", "success"); surprendsMoi(); }
+      else repondre(EN() ? "Couldn't pick one." : "Je n'ai pas pu choisir.");
+      return;
+    }
+
     // 3) Lancer le mode cuisson sur la recette ouverte
     if (has("mode cuisson", "lance la cuisson", "commence la cuisson", "cuisinons", "on cuisine", "start cooking", "cooking mode", "let s cook")) {
       const cle = window._assistantCle;
