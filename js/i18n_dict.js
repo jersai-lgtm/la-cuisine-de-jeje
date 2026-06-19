@@ -345,4 +345,10 @@ window.I18N_DICT = {
   "📤 Partager": "📤 Share", "🛒 Ingrédients": "🛒 Ingredients", "📋 Étapes": "📋 Steps",
   "Lancer le mode cuisson pas à pas": "Start step-by-step cooking mode", "👨‍🍳 Lancer le mode cuisson": "👨‍🍳 Start cooking mode",
   "🤖 Demander à Claude": "🤖 Ask Claude", "Pose ta question sur cette recette...": "Ask your question about this recipe...",
+  "⚙️ Personnaliser par repas": "⚙️ Customize per meal", "Personnaliser par repas": "Customize per meal",
+  "Tu peux en supprimer une à tout moment (ex. validée par erreur).": "You can delete one at any time (e.g. approved by mistake).",
+  "Tu peux en supprimer une à tout moment.": "You can delete one at any time.",
+  "➕ Ajouter une recette précise": "➕ Add a specific recipe",
+  "Click sur \"Ajouter des recettes\" ci-dessus": "Click \"Add recipes\" above",
+  "Ajoute tes aliments avec leur date de péremption — on te préviendra quand ça approche 🔔": "Add your food with its expiry date — we'll warn you when it's getting close 🔔",
 };
