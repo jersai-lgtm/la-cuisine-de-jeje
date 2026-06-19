@@ -1655,13 +1655,14 @@ function htmlBilanSemaine(menus, personnes) {
       ".bilan-nutri-detail{font-size:.8rem;color:#cfccd4;margin-top:9px;text-align:center}";
     document.head.appendChild(st);
   }
+  const _en = window.LANG === "en";
   const cases = [];
-  if (kcalJour != null) cases.push('<div><span class="bilan-val">~' + kcalJour + '</span><span class="bilan-lbl">kcal / jour / pers.</span></div>');
-  if (nCout) cases.push('<div><span class="bilan-val">' + coutTotal.toFixed(2).replace(".", ",") + ' €</span><span class="bilan-lbl">total · ' + pers + ' pers. · ' + jours + ' j</span></div>');
-  if (moy) cases.push('<div><span class="bilan-val" style="color:' + (COULN[moy] || "#fff") + '">' + moy + '</span><span class="bilan-lbl">Nutri moyen</span></div>');
+  if (kcalJour != null) cases.push('<div><span class="bilan-val">~' + kcalJour + '</span><span class="bilan-lbl">' + (_en ? "kcal / day / serving" : "kcal / jour / pers.") + '</span></div>');
+  if (nCout) cases.push('<div><span class="bilan-val">' + coutTotal.toFixed(2).replace(".", _en ? "." : ",") + ' €</span><span class="bilan-lbl">' + (_en ? ("total · " + pers + " serving" + (pers > 1 ? "s" : "") + " · " + jours + " d") : ("total · " + pers + " pers. · " + jours + " j")) + '</span></div>');
+  if (moy) cases.push('<div><span class="bilan-val" style="color:' + (COULN[moy] || "#fff") + '">' + moy + '</span><span class="bilan-lbl">' + (_en ? "Avg Nutri" : "Nutri moyen") + '</span></div>');
   if (!cases.length) return "";
-  const detail = nNutri ? '<div class="bilan-nutri-detail">🟢 ' + bon + ' bon' + (bon > 1 ? 's' : '') + ' · 🟡 ' + moyc + ' · 🔴 ' + mauv + '</div>' : "";
-  return '<div class="plan-bilan"><div class="plan-bilan-titre">📊 Bilan de la semaine</div><div class="plan-bilan-grid">' + cases.join("") + '</div>' + detail + '</div>';
+  const detail = nNutri ? '<div class="bilan-nutri-detail">🟢 ' + bon + (_en ? " good" : (" bon" + (bon > 1 ? "s" : ""))) + ' · 🟡 ' + moyc + ' · 🔴 ' + mauv + '</div>' : "";
+  return '<div class="plan-bilan"><div class="plan-bilan-titre">' + (_en ? "📊 Weekly overview" : "📊 Bilan de la semaine") + '</div><div class="plan-bilan-grid">' + cases.join("") + '</div>' + detail + '</div>';
 }
 
 // Nombre de personnes PAR repas (Phase A) — map parallèle menus._pers["Jour-moment"].

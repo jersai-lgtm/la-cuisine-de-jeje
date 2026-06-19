@@ -59,12 +59,32 @@
   };
   const DICT = Object.assign({}, SEED, window.I18N_DICT || {}, window.I18N_ING || {});
 
+  // Unités (sing+plur FR → EN) pour traduire les en-têtes "Pour N unité".
+  const UNIT_EN = {
+    "personne": "serving", "personnes": "servings", "part": "serving", "parts": "servings",
+    "pâton": "dough ball", "pâtons": "dough balls", "pâte": "dough", "pâtes": "doughs",
+    "boule": "ball", "boules": "balls", "pièce": "piece", "pièces": "pieces",
+    "pot": "jar", "pots": "jars", "bol": "bowl", "bols": "bowls", "bac": "tub", "bacs": "tubs",
+    "tranche": "slice", "tranches": "slices", "gaufre": "waffle", "gaufres": "waffles",
+    "galette": "flatbread", "galettes": "flatbreads", "tartelette": "tartlet", "tartelettes": "tartlets",
+    "fondant": "fondant", "fondants": "fondants", "croque-monsieur": "croque-monsieur",
+  };
+
   function trad(s) {
     if (s == null) return null;
     const k = s.trim();
     if (!k) return null;
     const en = DICT[k];
-    return (en == null) ? null : s.replace(k, en);
+    if (en != null) return s.replace(k, en);
+    if (window.LANG === "en") {
+      // "Pour N unité(s)" → "For N unit(s)"
+      let m = /^Pour (\d+) (.+)$/.exec(k);
+      if (m) return s.replace(k, "For " + m[1] + " " + (UNIT_EN[m[2]] || m[2]));
+      // "N unité(s)" → "N unit(s)" (uniquement si l'unité est connue, pour ne pas toucher "200 g", "15 min"...)
+      m = /^(\d+) (.+)$/.exec(k);
+      if (m && UNIT_EN[m[2]]) return s.replace(k, m[1] + " " + UNIT_EN[m[2]]);
+    }
+    return null;
   }
 
   // Traduit récursivement les textes + attributs d'un sous-arbre (LANG=en)
