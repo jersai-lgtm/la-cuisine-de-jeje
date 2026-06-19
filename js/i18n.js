@@ -57,7 +57,16 @@
     "Ajouter aux favoris": "Add to favorites", "personnes": "servings", "personne": "serving",
     "Effacer": "Clear", "Tout vider": "Clear all", "Partager": "Share",
   };
-  const DICT = Object.assign({}, SEED, window.I18N_DICT || {}, window.I18N_ING || {});
+  const DICT = Object.assign({}, SEED, window.I18N_DICT || {}, window.I18N_ING || {}, window.I18N_NOMS || {});
+
+  // Niveaux de difficulté + parenthèses FR dans les méta de carte "⏱ X • ⭐ Niveau".
+  // (ordre important : "Très facile" avant "Facile")
+  const DIFF_REPL = [
+    ["Très facile", "Very easy"], ["Intermédiaire", "Intermediate"], ["Difficile", "Hard"],
+    ["Facile", "Easy"], ["Moyen", "Medium"], ["Élevé", "High"],
+    ["(avec pousse)", "(with proofing)"], ["(hors pâte)", "(excl. dough)"],
+    ["(hors repos)", "(excl. resting)"], ["(repos)", "(resting)"], ["(facultatif)", "(optional)"],
+  ];
 
   // Unités (sing+plur FR → EN) pour traduire les en-têtes "Pour N unité".
   const UNIT_EN = {
@@ -77,6 +86,12 @@
     const en = DICT[k];
     if (en != null) return s.replace(k, en);
     if (window.LANG === "en") {
+      // Méta de carte "⏱ X min • ⭐ Niveau" : remplace niveaux + parenthèses FR
+      if (k.indexOf("⭐") !== -1) {
+        let r = k;
+        for (const [a, b] of DIFF_REPL) r = r.split(a).join(b);
+        if (r !== k) return s.replace(k, r);
+      }
       // "Pour N unité(s)" → "For N unit(s)"
       let m = /^Pour (\d+) (.+)$/.exec(k);
       if (m) return s.replace(k, "For " + m[1] + " " + (UNIT_EN[m[2]] || m[2]));
