@@ -43,9 +43,6 @@
       #accueil-dujour-bloc .dujour-hero:hover img{transform:scale(1.04)}
       #accueil-dujour-bloc .dujour-grad{position:absolute;inset:0;
         background:linear-gradient(to top,rgba(0,0,0,.78) 0%,rgba(0,0,0,.15) 55%,rgba(0,0,0,0) 100%)}
-      #accueil-dujour-bloc .dujour-tag{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.92);
-        color:#1c1a22;font-weight:800;font-size:12px;letter-spacing:.3px;padding:5px 11px;border-radius:999px;
-        box-shadow:0 2px 8px rgba(0,0,0,.25)}
       #accueil-dujour-bloc .dujour-cap{position:absolute;left:14px;right:14px;bottom:12px;color:#fff}
       #accueil-dujour-bloc .dujour-nom{font-size:21px;font-weight:800;line-height:1.2;
         text-shadow:0 2px 6px rgba(0,0,0,.6);display:block}
@@ -77,7 +74,6 @@
     const onerr = (typeof imgCarteOnerror === "function") ? imgCarteOnerror(key) : "";
     const dra = (typeof drapeau === "function") ? drapeau(r.pays, 14) : "";
     const titre = EN() ? "🗓️ Recipe of the day" : "🗓️ La recette du jour";
-    const tag = EN() ? "TODAY" : "DU JOUR";
     const temps = r.temps ? ("⏱ " + r.temps) : "";
 
     bloc.innerHTML =
@@ -85,7 +81,6 @@
       '<div class="dujour-hero" onclick="ouvrirFiche(\'' + key + '\',\'\')">' +
         '<img loading="lazy" decoding="async" src="' + img + '" alt="' + nom + '" onerror="' + onerr + '">' +
         '<div class="dujour-grad"></div>' +
-        '<span class="dujour-tag">' + tag + '</span>' +
         '<div class="dujour-cap">' +
           '<span class="dujour-nom">' + dra + (r.emoji || "🍽️") + ' ' + nom + '</span>' +
           '<span class="dujour-meta">' + temps + '</span>' +
