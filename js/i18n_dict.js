@@ -56,7 +56,7 @@ window.I18N_DICT = {
   "🕐 Dernières recettes vues": "🕐 Recently viewed recipes", "🗑️ Effacer": "🗑️ Clear",
   "Tout voir →": "See all →", "Voir tout →": "See all →",
   "Aucune recette vue récemment": "No recipes viewed recently",
-  "✨ Suggestions du jour": "✨ Today's suggestions", "Nouvelles suggestions": "New suggestions",
+  "✨ Suggestions pour toi": "✨ Suggestions for you", "Nouvelles suggestions": "New suggestions",
   "Chargement...": "Loading...", "🌱 Le top du mois": "🌱 Top of the month",
   "📅 Dernier menu généré": "📅 Last menu generated",
   "Générez votre premier menu dans l'onglet Menus !": "Create your first menu in the Menus tab!",
