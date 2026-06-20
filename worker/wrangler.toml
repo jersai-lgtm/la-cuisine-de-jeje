@@ -17,12 +17,11 @@ FIREBASE_PROJECT_ID = "cuisine-jeje"
 #    Il se définit hors du repo :  npx wrangler secret put ANTHROPIC_API_KEY
 
 # --- 🔔 Notifications push ---------------------------------------------------
-# 1) Abonnements push (KV). Crée l'espace, DÉCOMMENTE et colle l'id retourné :
-#      npx wrangler kv namespace create PUSH_SUBS
-# [[kv_namespaces]]
-# binding = "PUSH_SUBS"
-# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-#
+# 1) Abonnements push (KV) :
+[[kv_namespaces]]
+binding = "PUSH_SUBS"
+id = "c16e7ab18d5d47379ee468b851884ea2"
+
 # 2) Secrets VAPID (hors repo) :
 #      npx wrangler secret put VAPID_PUBLIC_KEY
 #      npx wrangler secret put VAPID_PRIVATE_KEY
