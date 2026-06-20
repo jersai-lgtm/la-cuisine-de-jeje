@@ -63,8 +63,9 @@ export default {
       const ep = b && b.subscription && b.subscription.endpoint;
       if (!ep) return json({ error: { message: "endpoint manquant" } }, 400, cors);
       if (!env.PUSH_SUBS) return json({ ok: false, raison: "non configuré" }, 200, cors);
-      await env.PUSH_SUBS.put("sub:" + (await hashEndpoint(ep)),
-        JSON.stringify({ endpoint: ep, listeNonVide: !!b.listeNonVide, ts: Date.now() }));
+      const cleSub = "sub:" + (await hashEndpoint(ep));
+      await env.PUSH_SUBS.put(cleSub, JSON.stringify({ endpoint: ep, listeNonVide: !!b.listeNonVide, ts: Date.now() }));
+      console.log("[push] abonnement stocké clé=" + cleSub + " endpoint=" + ep.slice(0, 50));
       return json({ ok: true }, 200, cors);
     }
     if (chemin === "/push/unsubscribe") {
@@ -370,8 +371,12 @@ async function listerSubs(env) {
 // Dépose le message à afficher pour chaque abonné ciblé puis envoie le tickle.
 // Nettoie les abonnements morts (404/410). Renvoie le nombre d'envois.
 async function diffuserPush(env, msg, filtre) {
-  if (!env.PUSH_SUBS || !env.VAPID_PRIVATE_KEY) return 0;
+  if (!env.PUSH_SUBS || !env.VAPID_PRIVATE_KEY) {
+    console.log("[push] STOP — PUSH_SUBS=" + !!env.PUSH_SUBS + " VAPID_PRIVATE_KEY=" + !!env.VAPID_PRIVATE_KEY);
+    return 0;
+  }
   const subs = await listerSubs(env);
+  console.log("[push] diffuser type=" + (msg && msg.type) + " — abonnés trouvés=" + subs.length);
   let n = 0;
   for (const s of subs) {
     if (filtre && !filtre(s)) continue;
@@ -379,9 +384,10 @@ async function diffuserPush(env, msg, filtre) {
     await env.PUSH_SUBS.put("pending:" + h, JSON.stringify(msg), { expirationTtl: 7200 });
     try {
       const r = await envoyerUnPush(s.endpoint, env);
+      console.log("[push] envoi -> " + (s.endpoint || "").slice(0, 50) + " status=" + r.status);
       if (r.status === 404 || r.status === 410) await env.PUSH_SUBS.delete("sub:" + h);
       else n++;
-    } catch (e) { /* on ignore l'échec ponctuel */ }
+    } catch (e) { console.log("[push] ERREUR envoi: " + (e && e.message)); }
   }
   return n;
 }
