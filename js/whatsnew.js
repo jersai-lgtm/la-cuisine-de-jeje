@@ -15,11 +15,6 @@ const QUOI_DE_NEUF = [
     texte: "Deux nouveautés ! 🗓️ En haut de l'accueil, une « recette du jour » mise en avant — elle change chaque jour, de quoi trouver l'inspiration sans réfléchir. Et dans les Recettes, 3 nouveaux filtres rapides : 🌾 Sans gluten, 🪶 Léger (moins de 500 kcal/portion) et 💪 Protéiné (au moins 20 g de protéines/portion). Un clic et tu ne vois que ce qui te convient. Bon appétit ! 👨‍🍳"
   },
   {
-    v: "2.1.3",
-    titre: "🌍 20 nouvelles recettes — Tour du Monde",
-    texte: "Une grande fournée venue d'ailleurs ! 🇲🇦 Maroc (Zaalouk, Chebakia, Briouates, Bessara), 🇹🇳 Tunisie (Lablabi, Ojja merguez, Slata Mechouia), 🇮🇳 Inde (Korma de poulet, Porc Vindaloo), 🇲🇽 Mexique (Elote, Tamales), 🇬🇷 Grèce (Pastitsio, Dolmades, Galaktoboureko, Gemista), 🇪🇸 Espagne (Pulpo a la Gallega, Pisto Manchego, Ajoblanco), 🇯🇵 Japon (Tonkatsu) et 🇩🇪 Allemagne (Salade de pommes de terre). 20 plats emblématiques, avec tableaux de quantités, prix et traduction anglaise. Bon voyage en cuisine ! 👨‍🍳"
-  },
-  {
     v: "2.0.6",
     titre: "🎉 Filtre par occasion",
     texte: "Dans les Recettes, une nouvelle ligne de filtres « occasions » : 🥂 Apéro, 🔥 Barbecue, 🧺 Pique-nique, 🎄 Fêtes. Un clic et tu ne vois que les recettes qui collent au moment — pratique pour préparer ton barbecue du week-end ou ton repas de fête. Bonus : l'app démarre plus vite (les traductions anglaises ne se chargent que si tu passes en anglais). 👨‍🍳"
