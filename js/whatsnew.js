@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "2.1.7",
+    titre: "📸 Partage une recette en image",
+    texte: "Nouveau bouton 📸 Image dans chaque recette : il crée une jolie carte (photo, titre, temps, niveau) prête à poster en story ou en feed Instagram, ou à envoyer à tes amis. Un clic et c'est partagé (ou enregistré). Fais voir tes plats ! 🤳"
+  },
+  {
     v: "2.1.6",
     titre: "⚖️ Mesures américaines (oz, cups, °F)",
     texte: "Dans chaque recette, un bouton ⚖️ convertit les quantités en mesures impériales : grammes → oz/lb, ml → fl oz/cups, et les températures °C → °F. Pratique pour cuisiner avec des mesures américaines (ou pour nos amis anglophones). Un clic pour basculer, un clic pour revenir. 👨‍🍳"
