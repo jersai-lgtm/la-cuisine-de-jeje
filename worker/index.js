@@ -294,7 +294,8 @@ async function verifierJetonFirebase(token, projectId) {
 }
 
 function b64urlToBytes(s) {
-  s = s.replace(/-/g, "+").replace(/_/g, "/");
+  // Blindé : on ne garde QUE l'alphabet base64url (vire \n, espaces, \r où qu'ils soient).
+  s = String(s).replace(/[^A-Za-z0-9_-]/g, "").replace(/-/g, "+").replace(/_/g, "/");
   while (s.length % 4) s += "=";
   const bin = atob(s);
   const bytes = new Uint8Array(bin.length);
@@ -344,6 +345,8 @@ async function vapidHeaders(endpoint, env) {
   const pub = (env.VAPID_PUBLIC_KEY || "").trim();
   const priv = (env.VAPID_PRIVATE_KEY || "").trim();
   const sujet = (env.VAPID_SUBJECT || "mailto:jerome.sainthot@gmail.com").trim();
+  // Diag : longueurs attendues priv≈43, pub≈87 (base64url). Sujet doit commencer par mailto:
+  console.log("[push] VAPID priv.len=" + priv.length + " pub.len=" + pub.length + " sujet=" + JSON.stringify(sujet.slice(0, 30)));
   const enc = (o) => bytesToB64url(new TextEncoder().encode(JSON.stringify(o)));
   const signingInput = enc({ typ: "JWT", alg: "ES256" }) + "." +
     enc({ aud, exp: now + 12 * 3600, sub: sujet });
