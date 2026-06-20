@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "2.1.10",
+    titre: "🔔 Reçois la recette du jour",
+    texte: "Tu peux maintenant activer les notifications : chaque jour à 11h30, une idée de recette du jour t'attend directement sur ton téléphone (un clic et la recette s'ouvre) ! Et le samedi, un petit rappel si tu as une liste de courses en cours. Pour activer : accepte la petite invitation 🔔 qui apparaît, ou recharge l'appli. Tu peux refuser, c'est sans engagement. 👨‍🍳"
+  },
+  {
     v: "2.1.7",
     titre: "📸 Partage une recette en image",
     texte: "Nouveau bouton 📸 Image dans chaque recette : il crée une jolie carte (photo, titre, temps, niveau) prête à poster en story ou en feed Instagram, ou à envoyer à tes amis. Un clic et c'est partagé (ou enregistré). Fais voir tes plats ! 🤳"
