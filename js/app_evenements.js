@@ -503,8 +503,13 @@
       var r = R[k] || {};
       var nom = ((ev.menuNoms&&ev.menuNoms[k])||(typeof getNomRecette==="function"?getNomRecette(k):(r.nom||k))).replace(/"/g, "&quot;");
       var cat = (r.cat || "").replace(/'/g, "\\'");
+      // Chemin correct : images/<1re lettre>/<clé>.webp (et miniature + repli image pleine).
+      var prem = (k.charAt(0) || "_").toLowerCase();
+      var imgFull = (typeof getImagePath === "function") ? getImagePath(k) : ("images/" + prem + "/" + k + ".webp");
+      var imgThumb = (typeof getThumbPath === "function") ? getThumbPath(k) : ("thumbs/" + prem + "/" + k + ".webp");
+      var onerr = "if(this.src.indexOf('thumbs/')>-1){this.src='" + imgFull + "'}else{this.style.visibility='hidden'}";
       return '<div class="lc-event-card" onclick="lcEventOuvrir(\'' + k + "','" + cat + '\')">' +
-        '<img loading="lazy" src="images/' + k + '.webp" alt="" onerror="this.style.visibility=\'hidden\'">' +
+        '<img loading="lazy" src="' + imgThumb + '" alt="" onerror="' + onerr + '">' +
         '<div class="lc-ec-nom">' + nom + "</div></div>";
     }).join("");
     var html =
