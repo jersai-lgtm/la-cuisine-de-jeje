@@ -76,6 +76,13 @@ export default {
       if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) {
         return json({ ok: false, raison: "non configuré" }, 200, cors);
       }
+      // On n'alerte pas pour le·s compte·s propriétaire (inutile de se notifier
+      // soi-même). Liste d'e-mails séparés par des virgules dans NOTIF_IGNORER.
+      const ignorer = (env.NOTIF_IGNORER || "jerome.sainthot@gmail.com")
+        .toLowerCase().split(",").map((s) => s.trim()).filter(Boolean);
+      if (claims.email && ignorer.includes(claims.email.toLowerCase())) {
+        return json({ ok: true, ignore: true }, 200, cors);
+      }
       if (env.RATE_LIMIT) {
         const fen = Math.floor(Date.now() / 43_200_000); // tranche de 12 h
         const k = `notif:${uid}:${fen}`;
