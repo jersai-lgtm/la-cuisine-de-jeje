@@ -994,6 +994,7 @@ function calculerNutriScoreRecette(ligne) {
 function calculerPrixCaloriesRecette(ligneTableau) {
   let prixTotal = 0;
   let calTotal = 0;
+  let protTotal = 0;
   let ingredientsManquants = [];
   
   for (const [cle, valeur] of Object.entries(ligneTableau)) {
@@ -1019,6 +1020,7 @@ function calculerPrixCaloriesRecette(ligneTableau) {
       const kgOuL = qte.valeur / 1000;
       prixTotal += kgOuL * info.prixKg;
       calTotal += (qte.valeur / 100) * info.calPer100g;
+      protTotal += (qte.valeur / 100) * (info.prot || 0);
     } else if (info.prixUnite !== undefined) {
       if (estPoids) {
         // Cas spécial : œufs en grammes (200g = ~4 œufs de 50g)
@@ -1040,10 +1042,12 @@ function calculerPrixCaloriesRecette(ligneTableau) {
         const nbUnites = qte.valeur / pu;
         prixTotal += nbUnites * info.prixUnite;
         calTotal += nbUnites * info.cal;
+        protTotal += nbUnites * (info.prot || 0);
       } else {
         // Ingrédient compté normalement (œuf, citron, banane...)
         prixTotal += qte.valeur * info.prixUnite;
         calTotal += qte.valeur * info.cal;
+        protTotal += qte.valeur * (info.prot || 0);
       }
     }
   }
@@ -1051,6 +1055,7 @@ function calculerPrixCaloriesRecette(ligneTableau) {
   return {
     prix: Math.round(prixTotal * 100) / 100,
     cal: Math.round(calTotal),
+    prot: Math.round(protTotal * 10) / 10,
     manquants: ingredientsManquants
   };
 }

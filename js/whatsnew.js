@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "2.1.4",
+    titre: "🗓️ Recette du jour + nouveaux filtres",
+    texte: "Deux nouveautés ! 🗓️ En haut de l'accueil, une « recette du jour » mise en avant — elle change chaque jour, de quoi trouver l'inspiration sans réfléchir. Et dans les Recettes, 3 nouveaux filtres rapides : 🌾 Sans gluten, 🪶 Léger (moins de 500 kcal/portion) et 💪 Protéiné (au moins 20 g de protéines/portion). Un clic et tu ne vois que ce qui te convient. Bon appétit ! 👨‍🍳"
+  },
+  {
     v: "2.1.3",
     titre: "🌍 20 nouvelles recettes — Tour du Monde",
     texte: "Une grande fournée venue d'ailleurs ! 🇲🇦 Maroc (Zaalouk, Chebakia, Briouates, Bessara), 🇹🇳 Tunisie (Lablabi, Ojja merguez, Slata Mechouia), 🇮🇳 Inde (Korma de poulet, Porc Vindaloo), 🇲🇽 Mexique (Elote, Tamales), 🇬🇷 Grèce (Pastitsio, Dolmades, Galaktoboureko, Gemista), 🇪🇸 Espagne (Pulpo a la Gallega, Pisto Manchego, Ajoblanco), 🇯🇵 Japon (Tonkatsu) et 🇩🇪 Allemagne (Salade de pommes de terre). 20 plats emblématiques, avec tableaux de quantités, prix et traduction anglaise. Bon voyage en cuisine ! 👨‍🍳"

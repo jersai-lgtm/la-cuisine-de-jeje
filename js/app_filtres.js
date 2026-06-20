@@ -14,7 +14,7 @@
 // =============================================================================
 
 (function () {
-  const F = { rapide: false, eco: false, nutri: false, facile: false, saison: false, vege: false, vegan: false };
+  const F = { rapide: false, eco: false, nutri: false, facile: false, saison: false, vege: false, vegan: false, sansgluten: false, leger: false, proteine: false };
   let tri = "";
   let occ = "";                 // occasion active (single-select) : "" = aucune
 
@@ -64,7 +64,7 @@
   function metriques(cle) {
     if (cache.has(cle)) return cache.get(cle);
     const r = (typeof recettes !== "undefined") ? recettes[cle] : null;
-    const m = { min: null, coutPers: null, cal: null, nutri: null, facile: false, saison: false };
+    const m = { min: null, coutPers: null, cal: null, prot: null, nutri: null, facile: false, saison: false };
     if (r) {
       m.min = tempsMin(r.temps);
       m.facile = /facile/i.test(r.niveau || "");
@@ -78,6 +78,7 @@
             if (pc) {
               if (pc.prix != null) m.coutPers = pc.prix / (base || 4);
               if (pc.cal != null) m.cal = pc.cal / (base || 4);
+              if (pc.prot != null) m.prot = pc.prot / (base || 4);
             }
           } catch (e) {}
         }
@@ -103,6 +104,9 @@
     if (F.saison && !m.saison) return false;
     if (F.vege) { const s = regimeSet("végétarien"); if (s && !s.has(cle)) return false; }
     if (F.vegan) { const s = regimeSet("vegan"); if (s && !s.has(cle)) return false; }
+    if (F.sansgluten) { const s = regimeSet("sans-gluten"); if (s && !s.has(cle)) return false; }
+    if (F.leger && !(m.cal != null && m.cal <= 500)) return false;
+    if (F.proteine && !(m.prot != null && m.prot >= 20)) return false;
     if (occ && !occasionMatch(cle)) return false;
     return true;
   }
@@ -271,6 +275,9 @@
       '<button class="chip" onclick="toggleFiltreAvance(\'saison\',this)" title="Ingrédients de saison (' + lib + ')">' + emo + ' De saison</button>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'vege\',this)" title="Sans viande ni poisson">🌱 Végé</button>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'vegan\',this)" title="Sans produit animal">🌿 Vegan</button>' +
+      '<button class="chip" onclick="toggleFiltreAvance(\'sansgluten\',this)" title="Sans blé ni gluten">🌾 Sans gluten</button>' +
+      '<button class="chip" onclick="toggleFiltreAvance(\'leger\',this)" title="Moins de 500 kcal par portion">🪶 Léger</button>' +
+      '<button class="chip" onclick="toggleFiltreAvance(\'proteine\',this)" title="Au moins 20 g de protéines par portion">💪 Protéiné</button>' +
       '<select id="f-tri" class="filtre-tri" onchange="trierRecettes(this.value)" aria-label="Trier les recettes">' +
         '<option value="">↕ Trier…</option>' +
         '<option value="note">⭐ Mieux notées</option>' +
