@@ -15,3 +15,21 @@ FIREBASE_PROJECT_ID = "cuisine-jeje"
 
 # ⚠️ Le secret ANTHROPIC_API_KEY ne se met PAS ici (ce fichier est versionné).
 #    Il se définit hors du repo :  npx wrangler secret put ANTHROPIC_API_KEY
+
+# --- 🔔 Notifications push ---------------------------------------------------
+# 1) Abonnements push (KV). Crée l'espace, DÉCOMMENTE et colle l'id retourné :
+#      npx wrangler kv namespace create PUSH_SUBS
+# [[kv_namespaces]]
+# binding = "PUSH_SUBS"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+#
+# 2) Secrets VAPID (hors repo) :
+#      npx wrangler secret put VAPID_PUBLIC_KEY
+#      npx wrangler secret put VAPID_PRIVATE_KEY
+#      npx wrangler secret put VAPID_SUBJECT      (ex. mailto:jerome.sainthot@gmail.com)
+
+# 3) Crons (UTC) — le worker ne diffuse qu'au bon créneau Paris (été/hiver) :
+#    09h30 + 10h30 UTC → 11h30 Paris (recette du jour, tous les jours) ;
+#    08h00 + 09h00 UTC samedi → 10h00 Paris (rappel liste de courses).
+[triggers]
+crons = ["30 9 * * *", "30 10 * * *", "0 8 * * 6", "0 9 * * 6"]

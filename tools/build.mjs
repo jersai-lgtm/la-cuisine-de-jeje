@@ -24,6 +24,7 @@ import { fileURLToPath } from "node:url";
 import { transform } from "esbuild";
 import { genererSEO } from "./seo.mjs";
 import { genererMiniatures } from "./thumbs.mjs";
+import { chargerCatalogue } from "./recettes-data.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = join(ROOT, "dist");
@@ -141,6 +142,18 @@ async function main() {
   // 6) SEO : pages par recette + sitemap + robots
   const seo = genererSEO(ROOT, DIST);
   console.log(`   SEO : ${seo.pages} pages recette générées (${seo.avecIngredients} avec ingrédients) + sitemap.xml + robots.txt`);
+
+  // 6bis) Index léger pour les notifs push : le service worker calcule lui-même
+  // la « recette du jour » à partir de ce JSON (clé, nom, emoji). Doit rester
+  // aligné avec js/recette_du_jour.js (mêmes catégories exclues + tri par clé).
+  const cat = chargerCatalogue(ROOT);
+  const EXCL = new Set(["sauces", "tartinables"]);
+  const idxPush = Object.keys(cat)
+    .filter((k) => cat[k] && cat[k].nom && !EXCL.has(cat[k].cat))
+    .sort()
+    .map((k) => ({ k, n: cat[k].nom, e: cat[k].emoji || "🍽️" }));
+  writeFileSync(join(DIST, "recettes-index.json"), JSON.stringify(idxPush));
+  console.log(`   Push : recettes-index.json (${idxPush.length} recettes éligibles)`);
 
   console.log(`✅ Build OK → dist/`);
   console.log(`   JS : ${(totalBrut / 1024 / 1024).toFixed(2)} Mo brut → ${(totalMin / 1024 / 1024).toFixed(2)} Mo minifié (${(100 * (1 - totalMin / totalBrut)).toFixed(0)} % en moins)`);

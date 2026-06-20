@@ -39,7 +39,7 @@ const JWK_URL =
   "https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com";
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const origin = request.headers.get("Origin") || "";
     const cors = corsHeaders(origin);
 
@@ -53,6 +53,34 @@ export default {
     // On n'accepte que les origines connues (et les appels same-origin sans Origin).
     if (origin && !ALLOWED_ORIGINS.includes(origin)) {
       return json({ error: { message: "Origine non autorisée" } }, 403, cors);
+    }
+
+    // --- Routes PUSH publiques (pas de jeton : un visiteur non connecté peut
+    //     s'abonner aux notifs) -------------------------------------------------
+    const chemin = new URL(request.url).pathname;
+    if (chemin === "/push/subscribe") {
+      let b; try { b = await request.json(); } catch (e) { return json({ error: { message: "JSON invalide" } }, 400, cors); }
+      const ep = b && b.subscription && b.subscription.endpoint;
+      if (!ep) return json({ error: { message: "endpoint manquant" } }, 400, cors);
+      if (!env.PUSH_SUBS) return json({ ok: false, raison: "non configuré" }, 200, cors);
+      await env.PUSH_SUBS.put("sub:" + (await hashEndpoint(ep)),
+        JSON.stringify({ endpoint: ep, listeNonVide: !!b.listeNonVide, ts: Date.now() }));
+      return json({ ok: true }, 200, cors);
+    }
+    if (chemin === "/push/unsubscribe") {
+      let b; try { b = await request.json(); } catch (e) { b = {}; }
+      if (b && b.endpoint && env.PUSH_SUBS) await env.PUSH_SUBS.delete("sub:" + (await hashEndpoint(b.endpoint)));
+      return json({ ok: true }, 200, cors);
+    }
+    if (chemin === "/push/pending") {
+      let b; try { b = await request.json(); } catch (e) { b = {}; }
+      let msg = { type: "daily" };
+      if (b && b.endpoint && env.PUSH_SUBS) {
+        const hk = "pending:" + (await hashEndpoint(b.endpoint));
+        const v = await env.PUSH_SUBS.get(hk);
+        if (v) { try { msg = JSON.parse(v); } catch (e) {} await env.PUSH_SUBS.delete(hk); }
+      }
+      return json(msg, 200, cors);
     }
 
     // --- 1. Authentification : jeton Firebase obligatoire --------------------
@@ -105,6 +133,19 @@ export default {
         });
       } catch (e) {}
       return json({ ok: true }, 200, cors);
+    }
+
+    // --- Route /push/new : diffuse une notif (réservée au propriétaire) -------
+    // Sert à annoncer une fournée de recettes, ou à TESTER (ex. {type:"daily"}).
+    if (chemin === "/push/new") {
+      const email = (claims.email || "").toLowerCase();
+      const proprios = (env.NOTIF_IGNORER || "jerome.sainthot@gmail.com")
+        .toLowerCase().split(",").map((s) => s.trim());
+      if (!proprios.includes(email)) return json({ error: { message: "non autorisé" } }, 403, cors);
+      let b; try { b = await request.json(); } catch (e) { b = {}; }
+      const msg = { type: b.type || "new", title: b.title, body: b.body };
+      const n = await diffuserPush(env, msg, () => true);
+      return json({ ok: true, envoyes: n }, 200, cors);
     }
 
     // --- 2. Quota par utilisateur (KV) --------------------------------------
@@ -163,6 +204,21 @@ export default {
 
     const data = await upstream.json();
     return json(data, upstream.status, cors);
+  },
+
+  // --- Cron : notifs planifiées (heure de Paris, gérée toute l'année) --------
+  // Crons UTC déclarés dans wrangler.toml ; on ne diffuse qu'au bon créneau
+  // Paris pour absorber le décalage été/hiver.
+  async scheduled(event, env, ctx) {
+    const t = partsParis(new Date(event.scheduledTime));
+    // Recette du jour : 11h30 Paris (tous les jours)
+    if (t.h === 11 && t.m === 30) {
+      ctx.waitUntil(diffuserPush(env, { type: "daily" }, () => true));
+    }
+    // Rappel liste de courses : samedi 10h00 Paris (uniquement listes non vides)
+    if (t.dow === 6 && t.h === 10 && t.m === 0) {
+      ctx.waitUntil(diffuserPush(env, { type: "liste" }, (s) => !!s.listeNonVide));
+    }
   },
 };
 
@@ -247,4 +303,97 @@ function b64urlToBytes(s) {
 
 function b64urlToString(s) {
   return new TextDecoder().decode(b64urlToBytes(s));
+}
+
+// ============================================================================
+// 🔔 Helpers PUSH (Web Push « sans payload » : on n'a besoin que de signer le
+// VAPID, pas de chiffrer de charge utile). Le SW va chercher quoi afficher via
+// /push/pending.
+// ============================================================================
+
+function bytesToB64url(bytes) {
+  let s = "";
+  for (const b of bytes) s += String.fromCharCode(b);
+  return btoa(s).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+async function hashEndpoint(ep) {
+  const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(ep));
+  return bytesToB64url(new Uint8Array(d)).slice(0, 24);
+}
+
+async function importerCleVapid(privB64, pubB64) {
+  const d = b64urlToBytes(privB64);
+  const pub = b64urlToBytes(pubB64); // 65 octets : 0x04 | X(32) | Y(32)
+  const jwk = {
+    kty: "EC", crv: "P-256",
+    d: bytesToB64url(d),
+    x: bytesToB64url(pub.slice(1, 33)),
+    y: bytesToB64url(pub.slice(33, 65)),
+    ext: true,
+  };
+  return crypto.subtle.importKey("jwk", jwk, { name: "ECDSA", namedCurve: "P-256" }, false, ["sign"]);
+}
+
+async function vapidHeaders(endpoint, env) {
+  const aud = new URL(endpoint).origin;
+  const now = Math.floor(Date.now() / 1000);
+  const enc = (o) => bytesToB64url(new TextEncoder().encode(JSON.stringify(o)));
+  const signingInput = enc({ typ: "JWT", alg: "ES256" }) + "." +
+    enc({ aud, exp: now + 12 * 3600, sub: env.VAPID_SUBJECT || "mailto:jerome.sainthot@gmail.com" });
+  const key = await importerCleVapid(env.VAPID_PRIVATE_KEY, env.VAPID_PUBLIC_KEY);
+  const sig = await crypto.subtle.sign({ name: "ECDSA", hash: "SHA-256" }, key, new TextEncoder().encode(signingInput));
+  const jwt = signingInput + "." + bytesToB64url(new Uint8Array(sig));
+  return { "Authorization": "vapid t=" + jwt + ", k=" + env.VAPID_PUBLIC_KEY, "TTL": "43200" };
+}
+
+async function envoyerUnPush(endpoint, env) {
+  const headers = await vapidHeaders(endpoint, env);
+  return fetch(endpoint, { method: "POST", headers });
+}
+
+async function listerSubs(env) {
+  const out = [];
+  let cursor;
+  do {
+    const r = await env.PUSH_SUBS.list({ prefix: "sub:", cursor });
+    for (const k of r.keys) {
+      const v = await env.PUSH_SUBS.get(k.name);
+      if (v) { try { out.push(JSON.parse(v)); } catch (e) {} }
+    }
+    cursor = r.cursor;
+    if (r.list_complete) break;
+  } while (cursor);
+  return out;
+}
+
+// Dépose le message à afficher pour chaque abonné ciblé puis envoie le tickle.
+// Nettoie les abonnements morts (404/410). Renvoie le nombre d'envois.
+async function diffuserPush(env, msg, filtre) {
+  if (!env.PUSH_SUBS || !env.VAPID_PRIVATE_KEY) return 0;
+  const subs = await listerSubs(env);
+  let n = 0;
+  for (const s of subs) {
+    if (filtre && !filtre(s)) continue;
+    const h = await hashEndpoint(s.endpoint);
+    await env.PUSH_SUBS.put("pending:" + h, JSON.stringify(msg), { expirationTtl: 7200 });
+    try {
+      const r = await envoyerUnPush(s.endpoint, env);
+      if (r.status === 404 || r.status === 410) await env.PUSH_SUBS.delete("sub:" + h);
+      else n++;
+    } catch (e) { /* on ignore l'échec ponctuel */ }
+  }
+  return n;
+}
+
+// Heure de Paris (gère l'été/hiver via Intl) → { h, m, dow(0=dim) }.
+function partsParis(d) {
+  const f = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Paris", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false,
+  });
+  const p = {};
+  for (const part of f.formatToParts(d)) p[part.type] = part.value;
+  let h = parseInt(p.hour, 10);
+  if (h === 24) h = 0;
+  return { h, m: parseInt(p.minute, 10), dow: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday) };
 }

@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v2.1.7";
+const CACHE_NAME = "cuisine-jeje-v2.1.8";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
@@ -201,4 +201,82 @@ self.addEventListener("fetch", e => {
       })
       .catch(() => caches.match(e.request))
   );
+});
+
+// =============================================================================
+// 🔔 Notifications push
+// -----------------------------------------------------------------------------
+// Le serveur (Worker) n'envoie qu'un « tickle » sans données. Au réveil, le SW
+// demande au Worker le type de notif en attente (/push/pending), puis :
+//   • daily → calcule la recette du jour à partir de recettes-index.json
+//   • liste → rappel liste de courses
+//   • new   → annonce d'une fournée de recettes (titre/texte fournis)
+// =============================================================================
+const PUSH_WORKER = "https://la-cuisine-de-jeje.jerome-sainthot.workers.dev";
+const PUSH_SITE = "https://jersai-lgtm.github.io/la-cuisine-de-jeje";
+
+function pushRecetteDuJour(idx) {
+  if (!idx || !idx.length) return null;
+  const d = new Date();
+  const j = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+  let h = 0;
+  for (let i = 0; i < j.length; i++) h = (h * 31 + j.charCodeAt(i)) >>> 0;
+  return idx[h % idx.length];
+}
+
+async function gererPush() {
+  let msg = { type: "daily" };
+  try {
+    const sub = await self.registration.pushManager.getSubscription();
+    if (sub) {
+      const r = await fetch(PUSH_WORKER + "/push/pending", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ endpoint: sub.endpoint }),
+      });
+      if (r.ok) msg = await r.json();
+    }
+  } catch (e) { /* repli sur daily */ }
+
+  let title = "La Cuisine de Jéjé", body = "Une idée recette t'attend 🍽️";
+  let url = PUSH_SITE + "/", image;
+  const icon = PUSH_SITE + "/icon-192.png";
+
+  if (!msg || msg.type === "daily") {
+    try {
+      const idx = await (await fetch(PUSH_SITE + "/recettes-index.json", { cache: "no-store" })).json();
+      const r = pushRecetteDuJour(idx);
+      if (r) {
+        title = "🗓️ La recette du jour";
+        body = r.e + " " + r.n;
+        url = PUSH_SITE + "/?recette=" + encodeURIComponent(r.k);
+        image = PUSH_SITE + "/images/" + (r.k.charAt(0) || "_").toLowerCase() + "/" + r.k + ".webp";
+      }
+    } catch (e) { /* notif générique */ }
+  } else if (msg.type === "liste") {
+    title = "🛒 Tes courses du week-end";
+    body = "Pense à ta liste de courses 😉";
+  } else if (msg.type === "new") {
+    title = msg.title || "🆕 Nouvelles recettes";
+    body = msg.body || "De nouvelles recettes viennent d'arriver !";
+  }
+
+  await self.registration.showNotification(title, {
+    body, icon, badge: icon, image,
+    data: { url }, tag: (msg && msg.type) || "daily", renotify: true,
+  });
+}
+
+self.addEventListener("push", (e) => { e.waitUntil(gererPush()); });
+
+self.addEventListener("notificationclick", (e) => {
+  e.notification.close();
+  const url = (e.notification.data && e.notification.data.url) || (PUSH_SITE + "/");
+  e.waitUntil((async () => {
+    const cs = await clients.matchAll({ type: "window", includeUncontrolled: true });
+    for (const c of cs) {
+      if ("focus" in c) { try { await c.navigate(url); } catch (e) {} return c.focus(); }
+    }
+    return clients.openWindow(url);
+  })());
 });
