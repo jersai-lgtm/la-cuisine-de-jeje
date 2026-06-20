@@ -1336,4 +1336,67 @@ Object.assign(recettes, {
       { icone: "🧂", titre: "Finir", detail: "Une pincée de fleur de sel, un tour de poivre, et servir aussitôt bien frais.", badge: null }
     ]
   },
+  slatamechouia: {
+    nom: "Slata Mechouia", cat: "salades", pays: "tunisie", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🫑",
+    description: "La salade tunisienne de poivrons et tomates grillés, pelés et hachés au couteau, relevée d'ail, de harissa et d'huile d'olive. Fumée et ensoleillée.",
+    saisons: ["ete"],
+    liees: ["painpita"],
+    ingredients: {},
+    tableauSlatamechouia: [
+      { nb: 1, poivron: "120 g", tomate: "90 g", ail: "5 g", huileolive: "12 ml", harissa: "5 g", citron: "5 ml", cumin: "1 g" },
+      { nb: 2, poivron: "240 g", tomate: "180 g", ail: "10 g", huileolive: "24 ml", harissa: "10 g", citron: "10 ml", cumin: "2 g" },
+      { nb: 3, poivron: "360 g", tomate: "270 g", ail: "15 g", huileolive: "36 ml", harissa: "15 g", citron: "15 ml", cumin: "3 g" },
+      { nb: 4, poivron: "480 g", tomate: "360 g", ail: "20 g", huileolive: "48 ml", harissa: "20 g", citron: "20 ml", cumin: "4 g" },
+      { nb: 5, poivron: "600 g", tomate: "450 g", ail: "25 g", huileolive: "60 ml", harissa: "25 g", citron: "25 ml", cumin: "5 g" },
+      { nb: 6, poivron: "720 g", tomate: "540 g", ail: "30 g", huileolive: "72 ml", harissa: "30 g", citron: "30 ml", cumin: "6 g" },
+      { nb: 7, poivron: "840 g", tomate: "630 g", ail: "35 g", huileolive: "84 ml", harissa: "35 g", citron: "35 ml", cumin: "7 g" },
+      { nb: 8, poivron: "960 g", tomate: "720 g", ail: "40 g", huileolive: "96 ml", harissa: "40 g", citron: "40 ml", cumin: "8 g" },
+      { nb: 9, poivron: "1080 g", tomate: "810 g", ail: "45 g", huileolive: "108 ml", harissa: "45 g", citron: "45 ml", cumin: "9 g" },
+      { nb: 10, poivron: "1200 g", tomate: "900 g", ail: "50 g", huileolive: "120 ml", harissa: "50 g", citron: "50 ml", cumin: "10 g" },
+      { nb: 11, poivron: "1320 g", tomate: "990 g", ail: "55 g", huileolive: "132 ml", harissa: "55 g", citron: "55 ml", cumin: "11 g" },
+      { nb: 12, poivron: "1440 g", tomate: "1080 g", ail: "60 g", huileolive: "144 ml", harissa: "60 g", citron: "60 ml", cumin: "12 g" },
+      { nb: 13, poivron: "1560 g", tomate: "1170 g", ail: "65 g", huileolive: "156 ml", harissa: "65 g", citron: "65 ml", cumin: "13 g" },
+      { nb: 14, poivron: "1680 g", tomate: "1260 g", ail: "70 g", huileolive: "168 ml", harissa: "70 g", citron: "70 ml", cumin: "14 g" },
+      { nb: 15, poivron: "1800 g", tomate: "1350 g", ail: "75 g", huileolive: "180 ml", harissa: "75 g", citron: "75 ml", cumin: "15 g" }
+    ],
+    etapes: [
+      { icone: "🔥", titre: "Griller", detail: "Griller poivrons et tomates entiers jusqu'à ce que la peau noircisse, au four ou à la flamme.", badge: "⏱ 20 min" },
+      { icone: "🧼", titre: "Peler", detail: "Laisser tiédir sous un torchon, puis retirer peaux et pépins.", badge: null },
+      { icone: "🔪", titre: "Hacher", detail: "Hacher finement les légumes au couteau avec l'ail.", badge: null },
+      { icone: "🥗", titre: "Assaisonner", detail: "Mélanger avec harissa, huile d'olive, cumin, sel et citron.", badge: null },
+      { icone: "🫒", titre: "Servir", detail: "Servir frais, garni de thon, d'olives ou d'un œuf dur selon l'envie.", badge: "💡 Mezze" }
+    ]
+  },
+  kartoffelsalat: {
+    nom: "Salade de Pommes de Terre Allemande", cat: "salades", pays: "allemagne", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🥔",
+    description: "La vraie salade de pommes de terre allemande, sans mayonnaise : pommes de terre tièdes imbibées d'un bouillon vinaigré à la moutarde, lardons et cornichons.",
+    liees: [],
+    ingredients: {},
+    tableauKartoffelsalat: [
+      { nb: 1, pommedeterre: "200 g", oignon: "30 g", vinaigre: "12 ml", moutarde: "8 g", bouillon: "30 ml", lardons: "30 g", cornichon: "20 g", persil: "3 g" },
+      { nb: 2, pommedeterre: "400 g", oignon: "60 g", vinaigre: "24 ml", moutarde: "16 g", bouillon: "60 ml", lardons: "60 g", cornichon: "40 g", persil: "6 g" },
+      { nb: 3, pommedeterre: "600 g", oignon: "90 g", vinaigre: "36 ml", moutarde: "24 g", bouillon: "90 ml", lardons: "90 g", cornichon: "60 g", persil: "9 g" },
+      { nb: 4, pommedeterre: "800 g", oignon: "120 g", vinaigre: "48 ml", moutarde: "32 g", bouillon: "120 ml", lardons: "120 g", cornichon: "80 g", persil: "12 g" },
+      { nb: 5, pommedeterre: "1000 g", oignon: "150 g", vinaigre: "60 ml", moutarde: "40 g", bouillon: "150 ml", lardons: "150 g", cornichon: "100 g", persil: "15 g" },
+      { nb: 6, pommedeterre: "1200 g", oignon: "180 g", vinaigre: "72 ml", moutarde: "48 g", bouillon: "180 ml", lardons: "180 g", cornichon: "120 g", persil: "18 g" },
+      { nb: 7, pommedeterre: "1400 g", oignon: "210 g", vinaigre: "84 ml", moutarde: "56 g", bouillon: "210 ml", lardons: "210 g", cornichon: "140 g", persil: "21 g" },
+      { nb: 8, pommedeterre: "1600 g", oignon: "240 g", vinaigre: "96 ml", moutarde: "64 g", bouillon: "240 ml", lardons: "240 g", cornichon: "160 g", persil: "24 g" },
+      { nb: 9, pommedeterre: "1800 g", oignon: "270 g", vinaigre: "108 ml", moutarde: "72 g", bouillon: "270 ml", lardons: "270 g", cornichon: "180 g", persil: "27 g" },
+      { nb: 10, pommedeterre: "2000 g", oignon: "300 g", vinaigre: "120 ml", moutarde: "80 g", bouillon: "300 ml", lardons: "300 g", cornichon: "200 g", persil: "30 g" },
+      { nb: 11, pommedeterre: "2200 g", oignon: "330 g", vinaigre: "132 ml", moutarde: "88 g", bouillon: "330 ml", lardons: "330 g", cornichon: "220 g", persil: "33 g" },
+      { nb: 12, pommedeterre: "2400 g", oignon: "360 g", vinaigre: "144 ml", moutarde: "96 g", bouillon: "360 ml", lardons: "360 g", cornichon: "240 g", persil: "36 g" },
+      { nb: 13, pommedeterre: "2600 g", oignon: "390 g", vinaigre: "156 ml", moutarde: "104 g", bouillon: "390 ml", lardons: "390 g", cornichon: "260 g", persil: "39 g" },
+      { nb: 14, pommedeterre: "2800 g", oignon: "420 g", vinaigre: "168 ml", moutarde: "112 g", bouillon: "420 ml", lardons: "420 g", cornichon: "280 g", persil: "42 g" },
+      { nb: 15, pommedeterre: "3000 g", oignon: "450 g", vinaigre: "180 ml", moutarde: "120 g", bouillon: "450 ml", lardons: "450 g", cornichon: "300 g", persil: "45 g" }
+    ],
+    etapes: [
+      { icone: "🥔", titre: "Cuire", detail: "Cuire les pommes de terre en robe des champs, les peler tièdes et les couper en rondelles.", badge: "⏱ 25 min" },
+      { icone: "🥓", titre: "Les lardons", detail: "Faire dorer les lardons, ajouter l'oignon émincé et le faire suer.", badge: null },
+      { icone: "🥣", titre: "La vinaigrette chaude", detail: "Déglacer avec le bouillon chaud, le vinaigre et la moutarde. Saler, poivrer.", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Verser la vinaigrette chaude sur les pommes de terre tièdes, ajouter les cornichons. Mélanger délicatement.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 30 min pour que les pommes de terre s'imprègnent. Parsemer de persil.", badge: "💡 Tiède" }
+    ]
+  }
 });

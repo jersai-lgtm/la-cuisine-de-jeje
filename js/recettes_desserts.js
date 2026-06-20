@@ -5070,4 +5070,66 @@ Object.assign(recettes, {
       { icone: "🌿", titre: "Servir", detail: "Parsemer de menthe ciselée et servir tiède, éventuellement avec une boule de glace vanille ou un yaourt.", badge: null }
     ]
   },
+  chebakia: {
+    nom: "Chebakia", cat: "desserts", pays: "maroc", dateAjout: "2026-06-20T10:00:00",
+    base: 6, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🍯",
+    description: "La fleur de pâte frite du Ramadan : pétales croustillants trempés dans le miel chaud et roulés dans le sésame. Parfumée à l'anis et à la cannelle.",
+    liees: [],
+    ingredients: {},
+    tableauChebakia: [
+      { nb: 1, farine: "45 g", beurre: "10 g", oeuf: "12 g", miel: "35 g", sesame: "12 g", sucre: "8 g", anis: "1 g", cannelle: "1 g" },
+      { nb: 2, farine: "90 g", beurre: "20 g", oeuf: "24 g", miel: "70 g", sesame: "24 g", sucre: "16 g", anis: "2 g", cannelle: "2 g" },
+      { nb: 3, farine: "135 g", beurre: "30 g", oeuf: "36 g", miel: "105 g", sesame: "36 g", sucre: "24 g", anis: "3 g", cannelle: "3 g" },
+      { nb: 4, farine: "180 g", beurre: "40 g", oeuf: "48 g", miel: "140 g", sesame: "48 g", sucre: "32 g", anis: "4 g", cannelle: "4 g" },
+      { nb: 5, farine: "225 g", beurre: "50 g", oeuf: "60 g", miel: "175 g", sesame: "60 g", sucre: "40 g", anis: "5 g", cannelle: "5 g" },
+      { nb: 6, farine: "270 g", beurre: "60 g", oeuf: "72 g", miel: "210 g", sesame: "72 g", sucre: "48 g", anis: "6 g", cannelle: "6 g" },
+      { nb: 7, farine: "315 g", beurre: "70 g", oeuf: "84 g", miel: "245 g", sesame: "84 g", sucre: "56 g", anis: "7 g", cannelle: "7 g" },
+      { nb: 8, farine: "360 g", beurre: "80 g", oeuf: "96 g", miel: "280 g", sesame: "96 g", sucre: "64 g", anis: "8 g", cannelle: "8 g" },
+      { nb: 9, farine: "405 g", beurre: "90 g", oeuf: "108 g", miel: "315 g", sesame: "108 g", sucre: "72 g", anis: "9 g", cannelle: "9 g" },
+      { nb: 10, farine: "450 g", beurre: "100 g", oeuf: "120 g", miel: "350 g", sesame: "120 g", sucre: "80 g", anis: "10 g", cannelle: "10 g" },
+      { nb: 11, farine: "495 g", beurre: "110 g", oeuf: "132 g", miel: "385 g", sesame: "132 g", sucre: "88 g", anis: "11 g", cannelle: "11 g" },
+      { nb: 12, farine: "540 g", beurre: "120 g", oeuf: "144 g", miel: "420 g", sesame: "144 g", sucre: "96 g", anis: "12 g", cannelle: "12 g" },
+      { nb: 13, farine: "585 g", beurre: "130 g", oeuf: "156 g", miel: "455 g", sesame: "156 g", sucre: "104 g", anis: "13 g", cannelle: "13 g" },
+      { nb: 14, farine: "630 g", beurre: "140 g", oeuf: "168 g", miel: "490 g", sesame: "168 g", sucre: "112 g", anis: "14 g", cannelle: "14 g" },
+      { nb: 15, farine: "675 g", beurre: "150 g", oeuf: "180 g", miel: "525 g", sesame: "180 g", sucre: "120 g", anis: "15 g", cannelle: "15 g" }
+    ],
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélanger farine, beurre fondu, œuf, sésame moulu, anis et cannelle. Pétrir une pâte souple, laisser reposer 30 min.", badge: "⏱ 30 min" },
+      { icone: "🌸", titre: "Former les fleurs", detail: "Étaler finement, découper des rectangles entaillés, puis pincer et retourner pour former la rosace.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire dans l'huile chaude jusqu'à ce qu'elles soient dorées et croustillantes. Égoutter.", badge: null },
+      { icone: "🍯", titre: "Tremper dans le miel", detail: "Plonger aussitôt les chebakias dans le miel chaud parfumé, laisser s'imbiber 2 min.", badge: null },
+      { icone: "✨", titre: "Sésame", detail: "Égoutter, rouler dans le sésame grillé et laisser sécher sur une grille.", badge: "💡 Se garde 2 sem." }
+    ]
+  },
+  galaktoboureko: {
+    nom: "Galaktoboureko", cat: "desserts", pays: "grece", dateAjout: "2026-06-20T10:00:00",
+    base: 8, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🍮",
+    description: "Le dessert grec ultime : crème de semoule onctueuse emprisonnée dans une pâte filo croustillante, le tout imbibé de sirop citronné. Croustillant et fondant.",
+    liees: [],
+    ingredients: {},
+    tableauGalaktoboureko: [
+      { nb: 1, filo: "25 g", semoule: "25 g", lait: "120 ml", sucre: "30 g", oeuf: "25 g", beurre: "20 g", citron: "5 ml", miel: "18 g" },
+      { nb: 2, filo: "50 g", semoule: "50 g", lait: "240 ml", sucre: "60 g", oeuf: "50 g", beurre: "40 g", citron: "10 ml", miel: "36 g" },
+      { nb: 3, filo: "75 g", semoule: "75 g", lait: "360 ml", sucre: "90 g", oeuf: "75 g", beurre: "60 g", citron: "15 ml", miel: "54 g" },
+      { nb: 4, filo: "100 g", semoule: "100 g", lait: "480 ml", sucre: "120 g", oeuf: "100 g", beurre: "80 g", citron: "20 ml", miel: "72 g" },
+      { nb: 5, filo: "125 g", semoule: "125 g", lait: "600 ml", sucre: "150 g", oeuf: "125 g", beurre: "100 g", citron: "25 ml", miel: "90 g" },
+      { nb: 6, filo: "150 g", semoule: "150 g", lait: "720 ml", sucre: "180 g", oeuf: "150 g", beurre: "120 g", citron: "30 ml", miel: "108 g" },
+      { nb: 7, filo: "175 g", semoule: "175 g", lait: "840 ml", sucre: "210 g", oeuf: "175 g", beurre: "140 g", citron: "35 ml", miel: "126 g" },
+      { nb: 8, filo: "200 g", semoule: "200 g", lait: "960 ml", sucre: "240 g", oeuf: "200 g", beurre: "160 g", citron: "40 ml", miel: "144 g" },
+      { nb: 9, filo: "225 g", semoule: "225 g", lait: "1080 ml", sucre: "270 g", oeuf: "225 g", beurre: "180 g", citron: "45 ml", miel: "162 g" },
+      { nb: 10, filo: "250 g", semoule: "250 g", lait: "1200 ml", sucre: "300 g", oeuf: "250 g", beurre: "200 g", citron: "50 ml", miel: "180 g" },
+      { nb: 11, filo: "275 g", semoule: "275 g", lait: "1320 ml", sucre: "330 g", oeuf: "275 g", beurre: "220 g", citron: "55 ml", miel: "198 g" },
+      { nb: 12, filo: "300 g", semoule: "300 g", lait: "1440 ml", sucre: "360 g", oeuf: "300 g", beurre: "240 g", citron: "60 ml", miel: "216 g" },
+      { nb: 13, filo: "325 g", semoule: "325 g", lait: "1560 ml", sucre: "390 g", oeuf: "325 g", beurre: "260 g", citron: "65 ml", miel: "234 g" },
+      { nb: 14, filo: "350 g", semoule: "350 g", lait: "1680 ml", sucre: "420 g", oeuf: "350 g", beurre: "280 g", citron: "70 ml", miel: "252 g" },
+      { nb: 15, filo: "375 g", semoule: "375 g", lait: "1800 ml", sucre: "450 g", oeuf: "375 g", beurre: "300 g", citron: "75 ml", miel: "270 g" }
+    ],
+    etapes: [
+      { icone: "🥛", titre: "La crème", detail: "Chauffer le lait, verser la semoule en pluie et cuire en crème épaisse. Hors du feu, ajouter œufs, sucre et zeste.", badge: null },
+      { icone: "🧈", titre: "Le filo", detail: "Beurrer les feuilles de filo une à une et en tapisser un plat, en laissant déborder.", badge: null },
+      { icone: "🥧", titre: "Garnir", detail: "Verser la crème, replier le filo dessus et beurrer la surface.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C 40 min jusqu'à ce que le dessus soit doré et croustillant.", badge: "🔥 180°C" },
+      { icone: "🍯", titre: "Sirop", detail: "Arroser le gâteau chaud de sirop citronné froid (sucre, miel, citron) et laisser imbiber.", badge: "💡 Sirop froid" }
+    ]
+  }
 });

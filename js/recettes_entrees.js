@@ -1936,4 +1936,96 @@ oeufmayo: {
       {icone:"🧱", titre:"Presser", detail:"Presser le torchon pour évacuer le liquide. Pour un fromage ferme à découper : sous un poids 30 min à 1 h. Pour tartiner : laisser plus mou.", badge:null}
     ]
   },
+  zaalouk: {
+    nom: "Zaalouk", cat: "entrees", pays: "maroc", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🍆",
+    description: "Le caviar d'aubergine marocain : aubergines et tomates fondues, ail, cumin et paprika, relevées d'une pointe de coriandre. Tiède ou froid, avec du bon pain.",
+    liees: ["painpita"],
+    ingredients: {},
+    tableauZaalouk: [
+      { nb: 1, aubergine: "150 g", tomate: "90 g", ail: "5 g", huileolive: "12 ml", paprika: "2 g", cumin: "1 g", coriandre: "4 g", citron: "5 ml" },
+      { nb: 2, aubergine: "300 g", tomate: "180 g", ail: "10 g", huileolive: "24 ml", paprika: "4 g", cumin: "2 g", coriandre: "8 g", citron: "10 ml" },
+      { nb: 3, aubergine: "450 g", tomate: "270 g", ail: "15 g", huileolive: "36 ml", paprika: "6 g", cumin: "3 g", coriandre: "12 g", citron: "15 ml" },
+      { nb: 4, aubergine: "600 g", tomate: "360 g", ail: "20 g", huileolive: "48 ml", paprika: "8 g", cumin: "4 g", coriandre: "16 g", citron: "20 ml" },
+      { nb: 5, aubergine: "750 g", tomate: "450 g", ail: "25 g", huileolive: "60 ml", paprika: "10 g", cumin: "5 g", coriandre: "20 g", citron: "25 ml" },
+      { nb: 6, aubergine: "900 g", tomate: "540 g", ail: "30 g", huileolive: "72 ml", paprika: "12 g", cumin: "6 g", coriandre: "24 g", citron: "30 ml" },
+      { nb: 7, aubergine: "1050 g", tomate: "630 g", ail: "35 g", huileolive: "84 ml", paprika: "14 g", cumin: "7 g", coriandre: "28 g", citron: "35 ml" },
+      { nb: 8, aubergine: "1200 g", tomate: "720 g", ail: "40 g", huileolive: "96 ml", paprika: "16 g", cumin: "8 g", coriandre: "32 g", citron: "40 ml" },
+      { nb: 9, aubergine: "1350 g", tomate: "810 g", ail: "45 g", huileolive: "108 ml", paprika: "18 g", cumin: "9 g", coriandre: "36 g", citron: "45 ml" },
+      { nb: 10, aubergine: "1500 g", tomate: "900 g", ail: "50 g", huileolive: "120 ml", paprika: "20 g", cumin: "10 g", coriandre: "40 g", citron: "50 ml" },
+      { nb: 11, aubergine: "1650 g", tomate: "990 g", ail: "55 g", huileolive: "132 ml", paprika: "22 g", cumin: "11 g", coriandre: "44 g", citron: "55 ml" },
+      { nb: 12, aubergine: "1800 g", tomate: "1080 g", ail: "60 g", huileolive: "144 ml", paprika: "24 g", cumin: "12 g", coriandre: "48 g", citron: "60 ml" },
+      { nb: 13, aubergine: "1950 g", tomate: "1170 g", ail: "65 g", huileolive: "156 ml", paprika: "26 g", cumin: "13 g", coriandre: "52 g", citron: "65 ml" },
+      { nb: 14, aubergine: "2100 g", tomate: "1260 g", ail: "70 g", huileolive: "168 ml", paprika: "28 g", cumin: "14 g", coriandre: "56 g", citron: "70 ml" },
+      { nb: 15, aubergine: "2250 g", tomate: "1350 g", ail: "75 g", huileolive: "180 ml", paprika: "30 g", cumin: "15 g", coriandre: "60 g", citron: "75 ml" }
+    ],
+    etapes: [
+      { icone: "🍆", titre: "Cuire les aubergines", detail: "Éplucher en partie et couper les aubergines en cubes. Les faire fondre à la poêle avec un peu d'eau et d'huile, à couvert, 15 min.", badge: "⏱ 15 min" },
+      { icone: "🍅", titre: "Ajouter les tomates", detail: "Incorporer les tomates concassées et l'ail écrasé. Laisser compoter 10 min en écrasant à la fourchette.", badge: null },
+      { icone: "🌶️", titre: "Épices", detail: "Ajouter paprika, cumin, sel et un trait d'huile d'olive. Cuire encore 5 min jusqu'à une purée fondante.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Hors du feu, ajouter la coriandre ciselée et un filet de citron. Servir tiède ou frais.", badge: "💡 Avec du pain" }
+    ]
+  },
+  dolmades: {
+    nom: "Dolmades", cat: "entrees", pays: "grece", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🍃",
+    description: "Les feuilles de vigne farcies de Grèce : riz parfumé à la menthe, à l'aneth et au citron, roulé serré et mijoté à l'huile d'olive. Servies froides.",
+    liees: [],
+    ingredients: {},
+    tableauDolmades: [
+      { nb: 1, feuillevigne: "30 g", riz: "40 g", oignon: "25 g", huileolive: "14 ml", citron: "8 ml", menthe: "3 g", aneth: "3 g" },
+      { nb: 2, feuillevigne: "60 g", riz: "80 g", oignon: "50 g", huileolive: "28 ml", citron: "16 ml", menthe: "6 g", aneth: "6 g" },
+      { nb: 3, feuillevigne: "90 g", riz: "120 g", oignon: "75 g", huileolive: "42 ml", citron: "24 ml", menthe: "9 g", aneth: "9 g" },
+      { nb: 4, feuillevigne: "120 g", riz: "160 g", oignon: "100 g", huileolive: "56 ml", citron: "32 ml", menthe: "12 g", aneth: "12 g" },
+      { nb: 5, feuillevigne: "150 g", riz: "200 g", oignon: "125 g", huileolive: "70 ml", citron: "40 ml", menthe: "15 g", aneth: "15 g" },
+      { nb: 6, feuillevigne: "180 g", riz: "240 g", oignon: "150 g", huileolive: "84 ml", citron: "48 ml", menthe: "18 g", aneth: "18 g" },
+      { nb: 7, feuillevigne: "210 g", riz: "280 g", oignon: "175 g", huileolive: "98 ml", citron: "56 ml", menthe: "21 g", aneth: "21 g" },
+      { nb: 8, feuillevigne: "240 g", riz: "320 g", oignon: "200 g", huileolive: "112 ml", citron: "64 ml", menthe: "24 g", aneth: "24 g" },
+      { nb: 9, feuillevigne: "270 g", riz: "360 g", oignon: "225 g", huileolive: "126 ml", citron: "72 ml", menthe: "27 g", aneth: "27 g" },
+      { nb: 10, feuillevigne: "300 g", riz: "400 g", oignon: "250 g", huileolive: "140 ml", citron: "80 ml", menthe: "30 g", aneth: "30 g" },
+      { nb: 11, feuillevigne: "330 g", riz: "440 g", oignon: "275 g", huileolive: "154 ml", citron: "88 ml", menthe: "33 g", aneth: "33 g" },
+      { nb: 12, feuillevigne: "360 g", riz: "480 g", oignon: "300 g", huileolive: "168 ml", citron: "96 ml", menthe: "36 g", aneth: "36 g" },
+      { nb: 13, feuillevigne: "390 g", riz: "520 g", oignon: "325 g", huileolive: "182 ml", citron: "104 ml", menthe: "39 g", aneth: "39 g" },
+      { nb: 14, feuillevigne: "420 g", riz: "560 g", oignon: "350 g", huileolive: "196 ml", citron: "112 ml", menthe: "42 g", aneth: "42 g" },
+      { nb: 15, feuillevigne: "450 g", riz: "600 g", oignon: "375 g", huileolive: "210 ml", citron: "120 ml", menthe: "45 g", aneth: "45 g" }
+    ],
+    etapes: [
+      { icone: "🍃", titre: "Préparer les feuilles", detail: "Blanchir les feuilles de vigne pour les assouplir, retirer les tiges.", badge: null },
+      { icone: "🍚", titre: "La farce", detail: "Faire revenir l'oignon, ajouter le riz, la menthe, l'aneth et un peu d'eau. Cuire à demi.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Déposer une cuillère de farce sur chaque feuille et rouler serré en repliant les côtés.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Ranger serrés dans une casserole, arroser d'huile, citron et eau. Cuire à couvert 40 min.", badge: "⏱ 40 min" },
+      { icone: "🍋", titre: "Servir", detail: "Laisser refroidir et servir froids avec un filet de citron.", badge: "💡 Froid" }
+    ]
+  },
+  pulpogallega: {
+    nom: "Pulpo a la Gallega", cat: "entrees", pays: "espagne", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "1 h", niveau: "⭐⭐ Moyen", emoji: "🐙",
+    description: "Le poulpe à la galicienne : tranches de poulpe tendre sur lit de pommes de terre, généreusement saupoudrées de paprika fumé et arrosées d'huile d'olive.",
+    liees: [],
+    ingredients: {},
+    tableauPulpogallega: [
+      { nb: 1, poulpe: "150 g", pommedeterre: "120 g", huileolive: "14 ml", paprika: "3 g", sel: "1 g" },
+      { nb: 2, poulpe: "300 g", pommedeterre: "240 g", huileolive: "28 ml", paprika: "6 g", sel: "2 g" },
+      { nb: 3, poulpe: "450 g", pommedeterre: "360 g", huileolive: "42 ml", paprika: "9 g", sel: "3 g" },
+      { nb: 4, poulpe: "600 g", pommedeterre: "480 g", huileolive: "56 ml", paprika: "12 g", sel: "4 g" },
+      { nb: 5, poulpe: "750 g", pommedeterre: "600 g", huileolive: "70 ml", paprika: "15 g", sel: "5 g" },
+      { nb: 6, poulpe: "900 g", pommedeterre: "720 g", huileolive: "84 ml", paprika: "18 g", sel: "6 g" },
+      { nb: 7, poulpe: "1050 g", pommedeterre: "840 g", huileolive: "98 ml", paprika: "21 g", sel: "7 g" },
+      { nb: 8, poulpe: "1200 g", pommedeterre: "960 g", huileolive: "112 ml", paprika: "24 g", sel: "8 g" },
+      { nb: 9, poulpe: "1350 g", pommedeterre: "1080 g", huileolive: "126 ml", paprika: "27 g", sel: "9 g" },
+      { nb: 10, poulpe: "1500 g", pommedeterre: "1200 g", huileolive: "140 ml", paprika: "30 g", sel: "10 g" },
+      { nb: 11, poulpe: "1650 g", pommedeterre: "1320 g", huileolive: "154 ml", paprika: "33 g", sel: "11 g" },
+      { nb: 12, poulpe: "1800 g", pommedeterre: "1440 g", huileolive: "168 ml", paprika: "36 g", sel: "12 g" },
+      { nb: 13, poulpe: "1950 g", pommedeterre: "1560 g", huileolive: "182 ml", paprika: "39 g", sel: "13 g" },
+      { nb: 14, poulpe: "2100 g", pommedeterre: "1680 g", huileolive: "196 ml", paprika: "42 g", sel: "14 g" },
+      { nb: 15, poulpe: "2250 g", pommedeterre: "1800 g", huileolive: "210 ml", paprika: "45 g", sel: "15 g" }
+    ],
+    etapes: [
+      { icone: "🐙", titre: "Cuire le poulpe", detail: "Plonger le poulpe dans l'eau bouillante par trois fois, puis cuire 40 min jusqu'à ce qu'il soit tendre.", badge: "⏱ 40 min" },
+      { icone: "🥔", titre: "Les pommes de terre", detail: "Cuire les pommes de terre dans la même eau, puis les couper en rondelles.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Couper les tentacules de poulpe en tranches d'1 cm aux ciseaux.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposer les pommes de terre, le poulpe par-dessus, sur une assiette en bois si possible.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Saupoudrer de paprika fumé, de gros sel et arroser d'huile d'olive.", badge: "💡 Tapa" }
+    ]
+  }
 });

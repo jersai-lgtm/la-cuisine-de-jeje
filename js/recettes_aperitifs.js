@@ -2077,4 +2077,67 @@ tapenade: {
       { icone: "🍚", titre: "Servir", detail: "Servir avec du riz gluant.", badge: null }
     ]
   },
+  briouates: {
+    nom: "Briouates à la viande", cat: "aperitifs", pays: "maroc", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "45 min", niveau: "⭐⭐ Moyen", emoji: "🥟",
+    description: "Les petits triangles croustillants du Maghreb : feuille de brick dorée garnie de viande épicée à l'oignon et au persil. Imbattables à l'apéro.",
+    liees: [],
+    ingredients: {},
+    tableauBriouates: [
+      { nb: 1, feuillebrick: "30 g", boeuf: "70 g", oignon: "25 g", persil: "5 g", huileolive: "8 ml", cumin: "1 g", paprika: "1 g", oeuf: "8 g" },
+      { nb: 2, feuillebrick: "60 g", boeuf: "140 g", oignon: "50 g", persil: "10 g", huileolive: "16 ml", cumin: "2 g", paprika: "2 g", oeuf: "16 g" },
+      { nb: 3, feuillebrick: "90 g", boeuf: "210 g", oignon: "75 g", persil: "15 g", huileolive: "24 ml", cumin: "3 g", paprika: "3 g", oeuf: "24 g" },
+      { nb: 4, feuillebrick: "120 g", boeuf: "280 g", oignon: "100 g", persil: "20 g", huileolive: "32 ml", cumin: "4 g", paprika: "4 g", oeuf: "32 g" },
+      { nb: 5, feuillebrick: "150 g", boeuf: "350 g", oignon: "125 g", persil: "25 g", huileolive: "40 ml", cumin: "5 g", paprika: "5 g", oeuf: "40 g" },
+      { nb: 6, feuillebrick: "180 g", boeuf: "420 g", oignon: "150 g", persil: "30 g", huileolive: "48 ml", cumin: "6 g", paprika: "6 g", oeuf: "48 g" },
+      { nb: 7, feuillebrick: "210 g", boeuf: "490 g", oignon: "175 g", persil: "35 g", huileolive: "56 ml", cumin: "7 g", paprika: "7 g", oeuf: "56 g" },
+      { nb: 8, feuillebrick: "240 g", boeuf: "560 g", oignon: "200 g", persil: "40 g", huileolive: "64 ml", cumin: "8 g", paprika: "8 g", oeuf: "64 g" },
+      { nb: 9, feuillebrick: "270 g", boeuf: "630 g", oignon: "225 g", persil: "45 g", huileolive: "72 ml", cumin: "9 g", paprika: "9 g", oeuf: "72 g" },
+      { nb: 10, feuillebrick: "300 g", boeuf: "700 g", oignon: "250 g", persil: "50 g", huileolive: "80 ml", cumin: "10 g", paprika: "10 g", oeuf: "80 g" },
+      { nb: 11, feuillebrick: "330 g", boeuf: "770 g", oignon: "275 g", persil: "55 g", huileolive: "88 ml", cumin: "11 g", paprika: "11 g", oeuf: "88 g" },
+      { nb: 12, feuillebrick: "360 g", boeuf: "840 g", oignon: "300 g", persil: "60 g", huileolive: "96 ml", cumin: "12 g", paprika: "12 g", oeuf: "96 g" },
+      { nb: 13, feuillebrick: "390 g", boeuf: "910 g", oignon: "325 g", persil: "65 g", huileolive: "104 ml", cumin: "13 g", paprika: "13 g", oeuf: "104 g" },
+      { nb: 14, feuillebrick: "420 g", boeuf: "980 g", oignon: "350 g", persil: "70 g", huileolive: "112 ml", cumin: "14 g", paprika: "14 g", oeuf: "112 g" },
+      { nb: 15, feuillebrick: "450 g", boeuf: "1050 g", oignon: "375 g", persil: "75 g", huileolive: "120 ml", cumin: "15 g", paprika: "15 g", oeuf: "120 g" }
+    ],
+    etapes: [
+      { icone: "🍳", titre: "La farce", detail: "Faire revenir l'oignon haché, ajouter la viande, cumin, paprika, sel. Cuire 8 min, puis ajouter le persil.", badge: "⏱ 8 min" },
+      { icone: "📐", titre: "Plier", detail: "Couper les feuilles de brick en bandes, déposer une cuillère de farce et plier en triangles serrés.", badge: null },
+      { icone: "🖌️", titre: "Sceller", detail: "Coller le dernier rabat avec un peu d'œuf battu pour bien fermer.", badge: null },
+      { icone: "🍳", titre: "Dorer", detail: "Frire ou cuire au four à 200°C jusqu'à ce qu'elles soient bien dorées et croustillantes.", badge: "🔥 200°C" },
+      { icone: "🍋", titre: "Servir", detail: "Servir chaud avec un quartier de citron.", badge: null }
+    ]
+  },
+  elote: {
+    nom: "Elote", cat: "aperitifs", pays: "mexique", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🌽",
+    description: "Le maïs grillé des rues de Mexico : épi rôti, enrobé de crème citronnée, roulé dans le fromage et saupoudré de paprika. Réconfortant et addictif.",
+    saisons: ["ete"],
+    liees: [],
+    ingredients: {},
+    tableauElote: [
+      { nb: 1, mais: "150 g", mayonnaise: "15 g", creme: "15 ml", parmesan: "15 g", citron: "5 ml", paprika: "2 g", coriandre: "3 g" },
+      { nb: 2, mais: "300 g", mayonnaise: "30 g", creme: "30 ml", parmesan: "30 g", citron: "10 ml", paprika: "4 g", coriandre: "6 g" },
+      { nb: 3, mais: "450 g", mayonnaise: "45 g", creme: "45 ml", parmesan: "45 g", citron: "15 ml", paprika: "6 g", coriandre: "9 g" },
+      { nb: 4, mais: "600 g", mayonnaise: "60 g", creme: "60 ml", parmesan: "60 g", citron: "20 ml", paprika: "8 g", coriandre: "12 g" },
+      { nb: 5, mais: "750 g", mayonnaise: "75 g", creme: "75 ml", parmesan: "75 g", citron: "25 ml", paprika: "10 g", coriandre: "15 g" },
+      { nb: 6, mais: "900 g", mayonnaise: "90 g", creme: "90 ml", parmesan: "90 g", citron: "30 ml", paprika: "12 g", coriandre: "18 g" },
+      { nb: 7, mais: "1050 g", mayonnaise: "105 g", creme: "105 ml", parmesan: "105 g", citron: "35 ml", paprika: "14 g", coriandre: "21 g" },
+      { nb: 8, mais: "1200 g", mayonnaise: "120 g", creme: "120 ml", parmesan: "120 g", citron: "40 ml", paprika: "16 g", coriandre: "24 g" },
+      { nb: 9, mais: "1350 g", mayonnaise: "135 g", creme: "135 ml", parmesan: "135 g", citron: "45 ml", paprika: "18 g", coriandre: "27 g" },
+      { nb: 10, mais: "1500 g", mayonnaise: "150 g", creme: "150 ml", parmesan: "150 g", citron: "50 ml", paprika: "20 g", coriandre: "30 g" },
+      { nb: 11, mais: "1650 g", mayonnaise: "165 g", creme: "165 ml", parmesan: "165 g", citron: "55 ml", paprika: "22 g", coriandre: "33 g" },
+      { nb: 12, mais: "1800 g", mayonnaise: "180 g", creme: "180 ml", parmesan: "180 g", citron: "60 ml", paprika: "24 g", coriandre: "36 g" },
+      { nb: 13, mais: "1950 g", mayonnaise: "195 g", creme: "195 ml", parmesan: "195 g", citron: "65 ml", paprika: "26 g", coriandre: "39 g" },
+      { nb: 14, mais: "2100 g", mayonnaise: "210 g", creme: "210 ml", parmesan: "210 g", citron: "70 ml", paprika: "28 g", coriandre: "42 g" },
+      { nb: 15, mais: "2250 g", mayonnaise: "225 g", creme: "225 ml", parmesan: "225 g", citron: "75 ml", paprika: "30 g", coriandre: "45 g" }
+    ],
+    etapes: [
+      { icone: "🔥", titre: "Griller le maïs", detail: "Faire griller les épis de maïs jusqu'à ce qu'ils soient dorés et légèrement charbonnés.", badge: "⏱ 12 min" },
+      { icone: "🥣", titre: "La crème", detail: "Mélanger mayonnaise, crème et un trait de citron vert.", badge: null },
+      { icone: "🖌️", titre: "Enrober", detail: "Badigeonner les épis chauds de crème citronnée sur toute leur surface.", badge: null },
+      { icone: "🧀", titre: "Fromage & épices", detail: "Rouler dans le fromage râpé, saupoudrer de paprika et de coriandre.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servir aussitôt avec un quartier de citron vert.", badge: "💡 Street food" }
+    ]
+  }
 });

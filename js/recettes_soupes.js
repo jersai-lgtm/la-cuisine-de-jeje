@@ -2654,4 +2654,97 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir glacé, avec un filet d'huile d'olive, des dés de concombre et de la coriandre.", badge: null }
     ]
   },
+  bessara: {
+    nom: "Bessara", cat: "soupes", pays: "maroc", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "40 min", niveau: "⭐ Facile", emoji: "🫘",
+    description: "La soupe de fèves veloutée du Maroc, plat du matin par excellence : fèves fondues à l'ail et au cumin, nappées d'huile d'olive et de paprika.",
+    liees: ["painpita"],
+    ingredients: {},
+    tableauBessara: [
+      { nb: 1, feve: "90 g", ail: "6 g", cumin: "2 g", paprika: "2 g", huileolive: "12 ml", citron: "5 ml" },
+      { nb: 2, feve: "180 g", ail: "12 g", cumin: "4 g", paprika: "4 g", huileolive: "24 ml", citron: "10 ml" },
+      { nb: 3, feve: "270 g", ail: "18 g", cumin: "6 g", paprika: "6 g", huileolive: "36 ml", citron: "15 ml" },
+      { nb: 4, feve: "360 g", ail: "24 g", cumin: "8 g", paprika: "8 g", huileolive: "48 ml", citron: "20 ml" },
+      { nb: 5, feve: "450 g", ail: "30 g", cumin: "10 g", paprika: "10 g", huileolive: "60 ml", citron: "25 ml" },
+      { nb: 6, feve: "540 g", ail: "36 g", cumin: "12 g", paprika: "12 g", huileolive: "72 ml", citron: "30 ml" },
+      { nb: 7, feve: "630 g", ail: "42 g", cumin: "14 g", paprika: "14 g", huileolive: "84 ml", citron: "35 ml" },
+      { nb: 8, feve: "720 g", ail: "48 g", cumin: "16 g", paprika: "16 g", huileolive: "96 ml", citron: "40 ml" },
+      { nb: 9, feve: "810 g", ail: "54 g", cumin: "18 g", paprika: "18 g", huileolive: "108 ml", citron: "45 ml" },
+      { nb: 10, feve: "900 g", ail: "60 g", cumin: "20 g", paprika: "20 g", huileolive: "120 ml", citron: "50 ml" },
+      { nb: 11, feve: "990 g", ail: "66 g", cumin: "22 g", paprika: "22 g", huileolive: "132 ml", citron: "55 ml" },
+      { nb: 12, feve: "1080 g", ail: "72 g", cumin: "24 g", paprika: "24 g", huileolive: "144 ml", citron: "60 ml" },
+      { nb: 13, feve: "1170 g", ail: "78 g", cumin: "26 g", paprika: "26 g", huileolive: "156 ml", citron: "65 ml" },
+      { nb: 14, feve: "1260 g", ail: "84 g", cumin: "28 g", paprika: "28 g", huileolive: "168 ml", citron: "70 ml" },
+      { nb: 15, feve: "1350 g", ail: "90 g", cumin: "30 g", paprika: "30 g", huileolive: "180 ml", citron: "75 ml" }
+    ],
+    etapes: [
+      { icone: "💧", titre: "Tremper", detail: "Faire tremper les fèves sèches décortiquées plusieurs heures (ou utiliser des fèves cuites).", badge: "💡 La veille" },
+      { icone: "🍲", titre: "Cuire", detail: "Cuire les fèves avec l'ail dans l'eau salée jusqu'à ce qu'elles se défassent, 25-30 min.", badge: "⏱ 30 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer en velouté lisse avec le cumin. Ajouter de l'eau de cuisson pour la texture voulue.", badge: null },
+      { icone: "🫒", titre: "Servir", detail: "Verser dans un bol, arroser d'huile d'olive, saupoudrer de paprika et de cumin, citron à part.", badge: "💡 Avec du pain" }
+    ]
+  },
+  lablabi: {
+    nom: "Lablabi", cat: "soupes", pays: "tunisie", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍲",
+    description: "La soupe de pois chiches tunisienne sur lit de pain rassis : bouillon à l'ail et au cumin, harissa, œuf poché et filet d'huile d'olive. Réconfortant et bon marché.",
+    liees: ["painpita"],
+    ingredients: {},
+    tableauLablabi: [
+      { nb: 1, poischiches: "90 g", pain: "40 g", ail: "6 g", cumin: "2 g", harissa: "8 g", oeuf: "50 g", huileolive: "10 ml", citron: "5 ml" },
+      { nb: 2, poischiches: "180 g", pain: "80 g", ail: "12 g", cumin: "4 g", harissa: "16 g", oeuf: "100 g", huileolive: "20 ml", citron: "10 ml" },
+      { nb: 3, poischiches: "270 g", pain: "120 g", ail: "18 g", cumin: "6 g", harissa: "24 g", oeuf: "150 g", huileolive: "30 ml", citron: "15 ml" },
+      { nb: 4, poischiches: "360 g", pain: "160 g", ail: "24 g", cumin: "8 g", harissa: "32 g", oeuf: "200 g", huileolive: "40 ml", citron: "20 ml" },
+      { nb: 5, poischiches: "450 g", pain: "200 g", ail: "30 g", cumin: "10 g", harissa: "40 g", oeuf: "250 g", huileolive: "50 ml", citron: "25 ml" },
+      { nb: 6, poischiches: "540 g", pain: "240 g", ail: "36 g", cumin: "12 g", harissa: "48 g", oeuf: "300 g", huileolive: "60 ml", citron: "30 ml" },
+      { nb: 7, poischiches: "630 g", pain: "280 g", ail: "42 g", cumin: "14 g", harissa: "56 g", oeuf: "350 g", huileolive: "70 ml", citron: "35 ml" },
+      { nb: 8, poischiches: "720 g", pain: "320 g", ail: "48 g", cumin: "16 g", harissa: "64 g", oeuf: "400 g", huileolive: "80 ml", citron: "40 ml" },
+      { nb: 9, poischiches: "810 g", pain: "360 g", ail: "54 g", cumin: "18 g", harissa: "72 g", oeuf: "450 g", huileolive: "90 ml", citron: "45 ml" },
+      { nb: 10, poischiches: "900 g", pain: "400 g", ail: "60 g", cumin: "20 g", harissa: "80 g", oeuf: "500 g", huileolive: "100 ml", citron: "50 ml" },
+      { nb: 11, poischiches: "990 g", pain: "440 g", ail: "66 g", cumin: "22 g", harissa: "88 g", oeuf: "550 g", huileolive: "110 ml", citron: "55 ml" },
+      { nb: 12, poischiches: "1080 g", pain: "480 g", ail: "72 g", cumin: "24 g", harissa: "96 g", oeuf: "600 g", huileolive: "120 ml", citron: "60 ml" },
+      { nb: 13, poischiches: "1170 g", pain: "520 g", ail: "78 g", cumin: "26 g", harissa: "104 g", oeuf: "650 g", huileolive: "130 ml", citron: "65 ml" },
+      { nb: 14, poischiches: "1260 g", pain: "560 g", ail: "84 g", cumin: "28 g", harissa: "112 g", oeuf: "700 g", huileolive: "140 ml", citron: "70 ml" },
+      { nb: 15, poischiches: "1350 g", pain: "600 g", ail: "90 g", cumin: "30 g", harissa: "120 g", oeuf: "750 g", huileolive: "150 ml", citron: "75 ml" }
+    ],
+    etapes: [
+      { icone: "🍲", titre: "Le bouillon", detail: "Réchauffer les pois chiches cuits dans leur eau avec l'ail écrasé, le cumin et le sel, 10 min.", badge: "⏱ 10 min" },
+      { icone: "🥖", titre: "Le pain", detail: "Déchirer du pain rassis au fond des bols.", badge: null },
+      { icone: "🥚", titre: "Pocher l'œuf", detail: "Pocher les œufs directement dans le bouillon frémissant 3 min.", badge: null },
+      { icone: "🍜", titre: "Dresser", detail: "Verser bouillon et pois chiches sur le pain, poser l'œuf dessus.", badge: null },
+      { icone: "🌶️", titre: "Garnir", detail: "Ajouter une cuillère de harissa, un trait d'huile d'olive, du cumin et un filet de citron.", badge: "🌶️ Relevé" }
+    ]
+  },
+  ajoblanco: {
+    nom: "Ajoblanco", cat: "soupes", pays: "espagne", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥣",
+    description: "Le gaspacho blanc d'Andalousie : velouté glacé d'amandes, ail et pain, lié à l'huile d'olive et au vinaigre. Servi frais avec des raisins.",
+    saisons: ["ete"],
+    liees: [],
+    ingredients: {},
+    tableauAjoblanco: [
+      { nb: 1, amande: "50 g", pain: "30 g", ail: "4 g", huileolive: "20 ml", vinaigre: "8 ml", raisinsec: "25 g" },
+      { nb: 2, amande: "100 g", pain: "60 g", ail: "8 g", huileolive: "40 ml", vinaigre: "16 ml", raisinsec: "50 g" },
+      { nb: 3, amande: "150 g", pain: "90 g", ail: "12 g", huileolive: "60 ml", vinaigre: "24 ml", raisinsec: "75 g" },
+      { nb: 4, amande: "200 g", pain: "120 g", ail: "16 g", huileolive: "80 ml", vinaigre: "32 ml", raisinsec: "100 g" },
+      { nb: 5, amande: "250 g", pain: "150 g", ail: "20 g", huileolive: "100 ml", vinaigre: "40 ml", raisinsec: "125 g" },
+      { nb: 6, amande: "300 g", pain: "180 g", ail: "24 g", huileolive: "120 ml", vinaigre: "48 ml", raisinsec: "150 g" },
+      { nb: 7, amande: "350 g", pain: "210 g", ail: "28 g", huileolive: "140 ml", vinaigre: "56 ml", raisinsec: "175 g" },
+      { nb: 8, amande: "400 g", pain: "240 g", ail: "32 g", huileolive: "160 ml", vinaigre: "64 ml", raisinsec: "200 g" },
+      { nb: 9, amande: "450 g", pain: "270 g", ail: "36 g", huileolive: "180 ml", vinaigre: "72 ml", raisinsec: "225 g" },
+      { nb: 10, amande: "500 g", pain: "300 g", ail: "40 g", huileolive: "200 ml", vinaigre: "80 ml", raisinsec: "250 g" },
+      { nb: 11, amande: "550 g", pain: "330 g", ail: "44 g", huileolive: "220 ml", vinaigre: "88 ml", raisinsec: "275 g" },
+      { nb: 12, amande: "600 g", pain: "360 g", ail: "48 g", huileolive: "240 ml", vinaigre: "96 ml", raisinsec: "300 g" },
+      { nb: 13, amande: "650 g", pain: "390 g", ail: "52 g", huileolive: "260 ml", vinaigre: "104 ml", raisinsec: "325 g" },
+      { nb: 14, amande: "700 g", pain: "420 g", ail: "56 g", huileolive: "280 ml", vinaigre: "112 ml", raisinsec: "350 g" },
+      { nb: 15, amande: "750 g", pain: "450 g", ail: "60 g", huileolive: "300 ml", vinaigre: "120 ml", raisinsec: "375 g" }
+    ],
+    etapes: [
+      { icone: "💧", titre: "Tremper", detail: "Faire tremper la mie de pain dans un peu d'eau froide.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer amandes, ail, pain trempé et eau glacée jusqu'à un velouté lisse.", badge: null },
+      { icone: "🫒", titre: "Émulsionner", detail: "Verser l'huile d'olive en filet, moteur en marche, puis le vinaigre et le sel.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Réserver au frais au moins 2 h pour servir bien glacé.", badge: "💡 Très froid" },
+      { icone: "🍇", titre: "Servir", detail: "Servir garni de raisins et d'un filet d'huile d'olive.", badge: null }
+    ]
+  }
 });

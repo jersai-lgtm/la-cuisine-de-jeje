@@ -31948,5 +31948,517 @@ window.RECETTES_EN = {
     "detail": "Scatter with chopped mint and serve warm, optionally with a scoop of vanilla ice cream or yogurt."
    }
   ]
+ },
+ "zaalouk": {
+  "nom": "Zaalouk",
+  "description": "The Moroccan eggplant dip: eggplant and tomato cooked down with garlic, cumin and paprika, brightened with fresh cilantro. Serve warm or cold with good bread.",
+  "etapes": [
+   {
+    "titre": "Cook the eggplant",
+    "detail": "Partly peel and dice the eggplant. Soften in a pan with a little water and oil, covered, for 15 minutes."
+   },
+   {
+    "titre": "Add the tomatoes",
+    "detail": "Stir in the chopped tomatoes and crushed garlic. Let it stew for 10 minutes, mashing with a fork."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add paprika, cumin, salt and a drizzle of olive oil. Cook 5 more minutes until a soft purée forms."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Off the heat, add chopped cilantro and a squeeze of lemon. Serve warm or chilled."
+   }
+  ]
+ },
+ "chebakia": {
+  "nom": "Chebakia",
+  "description": "The fried flower of Ramadan: crisp petals dipped in warm honey and rolled in sesame. Scented with anise and cinnamon.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix flour, melted butter, egg, ground sesame, anise and cinnamon. Knead into a smooth dough and rest for 30 minutes."
+   },
+   {
+    "titre": "Shape the flowers",
+    "detail": "Roll out thin, cut slit rectangles, then pinch and fold to form the rosette shape."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in hot oil until golden and crisp. Drain."
+   },
+   {
+    "titre": "Dip in honey",
+    "detail": "Plunge the hot chebakia straight into warm scented honey and let them soak for 2 minutes."
+   },
+   {
+    "titre": "Sesame",
+    "detail": "Drain, roll in toasted sesame and let dry on a rack."
+   }
+  ]
+ },
+ "briouates": {
+  "nom": "Meat Briouates",
+  "description": "The crisp little triangles of the Maghreb: golden brick pastry filled with spiced onion-and-parsley meat. Unbeatable party bites.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Sauté the chopped onion, add the meat, cumin, paprika and salt. Cook 8 minutes, then stir in the parsley."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Cut the brick sheets into strips, add a spoon of filling and fold into tight triangles."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Seal the final flap with a little beaten egg to close them well."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Fry or bake at 200°C/400°F until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a lemon wedge."
+   }
+  ]
+ },
+ "bessara": {
+  "nom": "Bessara",
+  "description": "Morocco's velvety fava bean soup, the classic breakfast dish: favas simmered with garlic and cumin, finished with olive oil and paprika.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the dried split favas for several hours (or use cooked favas)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the favas with garlic in salted water until they fall apart, 25-30 minutes."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend smooth with the cumin. Add cooking water to reach the texture you like."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour into a bowl, drizzle with olive oil, dust with paprika and cumin, lemon on the side."
+   }
+  ]
+ },
+ "lablabi": {
+  "nom": "Lablabi",
+  "description": "Tunisia's chickpea soup over torn stale bread: a garlic-and-cumin broth with harissa, a poached egg and a drizzle of olive oil. Comforting and cheap.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Warm the cooked chickpeas in their water with crushed garlic, cumin and salt for 10 minutes."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Tear stale bread into the bottom of the bowls."
+   },
+   {
+    "titre": "Poach the egg",
+    "detail": "Poach the eggs directly in the simmering broth for 3 minutes."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Ladle broth and chickpeas over the bread, set the egg on top."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Add a spoon of harissa, a drizzle of olive oil, cumin and a squeeze of lemon."
+   }
+  ]
+ },
+ "ojja": {
+  "nom": "Ojja Merguez",
+  "description": "The Tunisian skillet of eggs scrambled into a spicy harissa tomato sauce with merguez and peppers. Made for mopping up with bread.",
+  "etapes": [
+   {
+    "titre": "Sear the merguez",
+    "detail": "Brown the merguez cut into chunks in the oil, then set aside."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the pepper and garlic, add the harissa then the tomatoes. Reduce for 12 minutes."
+   },
+   {
+    "titre": "Return the merguez",
+    "detail": "Return the merguez to the sauce and reheat for 3 minutes."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Crack the eggs over the sauce, scramble lightly and cook to the texture you like."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot from the pan, with plenty of bread."
+   }
+  ]
+ },
+ "slatamechouia": {
+  "nom": "Slata Mechouia",
+  "description": "The Tunisian salad of grilled peppers and tomatoes, peeled and hand-chopped, lifted with garlic, harissa and olive oil. Smoky and sun-filled.",
+  "etapes": [
+   {
+    "titre": "Grill",
+    "detail": "Grill whole peppers and tomatoes until the skin blackens, in the oven or over a flame."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Let cool under a cloth, then remove the skins and seeds."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Finely chop the vegetables with the garlic by knife."
+   },
+   {
+    "titre": "Season",
+    "detail": "Mix with harissa, olive oil, cumin, salt and lemon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold, topped with tuna, olives or a hard-boiled egg as you like."
+   }
+  ]
+ },
+ "korma": {
+  "nom": "Chicken Korma",
+  "description": "The gentle Indian curry: chicken simmered in a creamy yogurt-and-almond sauce, scented with ginger and mild spices. No heat.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Soften the onion, garlic and ginger. Add the spices and toast for 1 minute."
+   },
+   {
+    "titre": "Sear the chicken",
+    "detail": "Add the chicken pieces and brown them on all sides."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Stir in the ground almonds, yogurt and a little water. Simmer covered for 20 minutes."
+   },
+   {
+    "titre": "Add cream",
+    "detail": "Add the cream, adjust the salt and warm gently without boiling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with cilantro and serve with rice or naan."
+   }
+  ]
+ },
+ "vindaloo": {
+  "nom": "Pork Vindaloo",
+  "description": "The curry of Goa, a Portuguese legacy: pork marinated in vinegar, garlic and spices, then slow-simmered. Tangy, fiery and deep.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Toss the diced pork with vinegar, garlic, ginger and spices. Marinate for at least 1 hour."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Fry the onions until deeply caramelized."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Add the marinated pork and sear it over high heat for a few minutes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the tomatoes and a little water. Cover and simmer 35 minutes until the pork is tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the tang and salt, serve with basmati rice."
+   }
+  ]
+ },
+ "elote": {
+  "nom": "Elote",
+  "description": "Mexico City's street corn: roasted cob slathered in lime crema, rolled in cheese and dusted with paprika. Comforting and addictive.",
+  "etapes": [
+   {
+    "titre": "Grill the corn",
+    "detail": "Grill the corn cobs until golden and lightly charred."
+   },
+   {
+    "titre": "The crema",
+    "detail": "Mix the mayonnaise, cream and a squeeze of lime."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Brush the hot cobs all over with the lime crema."
+   },
+   {
+    "titre": "Cheese & spice",
+    "detail": "Roll in the grated cheese, dust with paprika and cilantro."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away with a lime wedge."
+   }
+  ]
+ },
+ "tamales": {
+  "nom": "Chicken Tamales",
+  "description": "The Mexican steamed parcels: tender corn dough filled with tomato chicken, cooked in their wrapper. A festive classic, unwrapped hot.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Simmer the shredded chicken with tomato, garlic and paprika until the sauce thickens."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Whip the butter, add the fine cornmeal and warm broth until a soft dough forms."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the dough onto soaked corn husks, place the filling in the center."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Fold the husks into parcels and stand them upright in the steamer."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 45 minutes until the dough pulls away from the husk."
+   }
+  ]
+ },
+ "pastitsio": {
+  "nom": "Pastitsio",
+  "description": "The upright Greek lasagna: thick macaroni, cinnamon-spiced tomato meat, all crowned with golden béchamel. Generous and comforting.",
+  "etapes": [
+   {
+    "titre": "The pasta",
+    "detail": "Cook the thick macaroni al dente, drain and line the bottom of a buttered dish."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Sauté the onion and meat, add tomato and cinnamon. Simmer for 20 minutes."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Make a butter-flour roux, whisk in the milk and cook to a thick sauce. Bind with a little cheese."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Spread the meat over the pasta, coat with béchamel, sprinkle with grated cheese."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C/350°F for 35 minutes until the top is well browned. Rest before slicing."
+   }
+  ]
+ },
+ "dolmades": {
+  "nom": "Dolmades",
+  "description": "Greece's stuffed vine leaves: rice scented with mint, dill and lemon, rolled tight and simmered in olive oil. Served cold.",
+  "etapes": [
+   {
+    "titre": "Prepare the leaves",
+    "detail": "Blanch the vine leaves to soften them and remove the stems."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Sauté the onion, add the rice, mint, dill and a little water. Cook halfway."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Place a spoon of filling on each leaf and roll tightly, folding in the sides."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pack tightly in a pot, add oil, lemon and water. Cook covered for 40 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool and serve cold with a squeeze of lemon."
+   }
+  ]
+ },
+ "galaktoboureko": {
+  "nom": "Galaktoboureko",
+  "description": "The ultimate Greek dessert: silky semolina custard wrapped in crisp filo, soaked in lemon syrup. Crunchy and melting at once.",
+  "etapes": [
+   {
+    "titre": "The custard",
+    "detail": "Heat the milk, rain in the semolina and cook to a thick custard. Off the heat, add eggs, sugar and zest."
+   },
+   {
+    "titre": "The filo",
+    "detail": "Butter the filo sheets one by one and line a dish, letting them overhang."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour in the custard, fold the filo over and butter the top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C/350°F for 40 minutes until the top is golden and crisp."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Drench the hot cake with cold lemon syrup (sugar, honey, lemon) and let it soak."
+   }
+  ]
+ },
+ "gemista": {
+  "nom": "Gemista",
+  "description": "The Greek Sunday stuffed vegetables: tomatoes and peppers filled with herbed rice, roasted with potatoes. Vegetarian and full of sun.",
+  "etapes": [
+   {
+    "titre": "Hollow out",
+    "detail": "Cut a cap off the tomatoes and peppers, hollow them out and keep the tomato flesh."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Sauté onion and garlic, add the rice, tomato flesh and parsley. Cook halfway."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the vegetables two-thirds full (the rice swells), set the caps back on."
+   },
+   {
+    "titre": "In the dish",
+    "detail": "Arrange in a dish with potato wedges, drizzle with olive oil."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast at 180°C/350°F for about 1 hour, basting, until everything is tender and golden."
+   }
+  ]
+ },
+ "pulpogallega": {
+  "nom": "Pulpo a la Gallega",
+  "description": "Galician-style octopus: slices of tender octopus over potatoes, generously dusted with smoked paprika and drizzled with olive oil.",
+  "etapes": [
+   {
+    "titre": "Cook the octopus",
+    "detail": "Dip the octopus into boiling water three times, then cook for 40 minutes until tender."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Cook the potatoes in the same water, then slice into rounds."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the octopus tentacles into 1 cm slices with scissors."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the potatoes, octopus on top, on a wooden plate if possible."
+   },
+   {
+    "titre": "Season",
+    "detail": "Dust with smoked paprika, coarse salt and drizzle with olive oil."
+   }
+  ]
+ },
+ "pistomanchego": {
+  "nom": "Pisto Manchego",
+  "description": "The Spanish ratatouille of La Mancha: eggplant, zucchini, pepper and tomato stewed in olive oil. Served with a fried egg on top.",
+  "etapes": [
+   {
+    "titre": "The sofrito",
+    "detail": "Sweat the onion and garlic in olive oil over low heat."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the diced pepper, eggplant and zucchini. Cook 15 minutes, stirring."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Stir in the chopped tomatoes and let stew for 20 minutes over low heat."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and pepper and reduce until soft and jammy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, topped with a fried egg and country bread."
+   }
+  ]
+ },
+ "ajoblanco": {
+  "nom": "Ajoblanco",
+  "description": "Andalusia's white gazpacho: a chilled velvety soup of almonds, garlic and bread, bound with olive oil and vinegar. Served cold with grapes.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the bread crumb in a little cold water."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the almonds, garlic, soaked bread and iced water until silky smooth."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Pour in the olive oil in a thin stream while blending, then the vinegar and salt."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Chill for at least 2 hours to serve ice-cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve garnished with grapes and a drizzle of olive oil."
+   }
+  ]
+ },
+ "tonkatsu": {
+  "nom": "Tonkatsu",
+  "description": "The Japanese breaded pork cutlet: an ultra-crisp panko crust over a tender, juicy center. Sliced and served on raw cabbage with rice.",
+  "etapes": [
+   {
+    "titre": "Prepare the pork",
+    "detail": "Score the edges of the pork chops and flatten them slightly. Season with salt and pepper."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat the pork in flour, beaten egg, then panko, pressing firmly."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in oil at 170°C/340°F for 3-4 minutes per side until golden. Drain."
+   },
+   {
+    "titre": "The cabbage",
+    "detail": "Shred the cabbage very finely and rinse in iced water so it stays crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice the tonkatsu into strips, serve on the cabbage with rice and tonkatsu sauce."
+   }
+  ]
+ },
+ "kartoffelsalat": {
+  "nom": "German Potato Salad",
+  "description": "The real German potato salad, no mayonnaise: warm potatoes soaked in a mustardy vinegar broth, with bacon and pickles.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Boil the potatoes in their skins, peel while warm and slice into rounds."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Brown the bacon, add the diced onion and sweat it."
+   },
+   {
+    "titre": "The warm dressing",
+    "detail": "Deglaze with the warm broth, vinegar and mustard. Season with salt and pepper."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Pour the warm dressing over the warm potatoes, add the pickles. Toss gently."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 30 minutes so the potatoes soak it all up. Sprinkle with parsley."
+   }
+  ]
  }
 };

@@ -12412,4 +12412,254 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt avec des frites maison.", badge: null }
     ]
   },
+  ojja: {
+    nom: "Ojja Merguez", cat: "plats", pays: "tunisie", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍳",
+    description: "La poêlée tunisienne d'œufs brouillés dans une sauce tomate épicée à la harissa, avec merguez et poivrons. À saucer généreusement avec du pain.",
+    liees: ["painpita"],
+    ingredients: {},
+    tableauOjja: [
+      { nb: 1, oeuf: "100 g", merguez: "80 g", tomate: "100 g", poivron: "50 g", ail: "5 g", harissa: "10 g", huileolive: "10 ml" },
+      { nb: 2, oeuf: "200 g", merguez: "160 g", tomate: "200 g", poivron: "100 g", ail: "10 g", harissa: "20 g", huileolive: "20 ml" },
+      { nb: 3, oeuf: "300 g", merguez: "240 g", tomate: "300 g", poivron: "150 g", ail: "15 g", harissa: "30 g", huileolive: "30 ml" },
+      { nb: 4, oeuf: "400 g", merguez: "320 g", tomate: "400 g", poivron: "200 g", ail: "20 g", harissa: "40 g", huileolive: "40 ml" },
+      { nb: 5, oeuf: "500 g", merguez: "400 g", tomate: "500 g", poivron: "250 g", ail: "25 g", harissa: "50 g", huileolive: "50 ml" },
+      { nb: 6, oeuf: "600 g", merguez: "480 g", tomate: "600 g", poivron: "300 g", ail: "30 g", harissa: "60 g", huileolive: "60 ml" },
+      { nb: 7, oeuf: "700 g", merguez: "560 g", tomate: "700 g", poivron: "350 g", ail: "35 g", harissa: "70 g", huileolive: "70 ml" },
+      { nb: 8, oeuf: "800 g", merguez: "640 g", tomate: "800 g", poivron: "400 g", ail: "40 g", harissa: "80 g", huileolive: "80 ml" },
+      { nb: 9, oeuf: "900 g", merguez: "720 g", tomate: "900 g", poivron: "450 g", ail: "45 g", harissa: "90 g", huileolive: "90 ml" },
+      { nb: 10, oeuf: "1000 g", merguez: "800 g", tomate: "1000 g", poivron: "500 g", ail: "50 g", harissa: "100 g", huileolive: "100 ml" },
+      { nb: 11, oeuf: "1100 g", merguez: "880 g", tomate: "1100 g", poivron: "550 g", ail: "55 g", harissa: "110 g", huileolive: "110 ml" },
+      { nb: 12, oeuf: "1200 g", merguez: "960 g", tomate: "1200 g", poivron: "600 g", ail: "60 g", harissa: "120 g", huileolive: "120 ml" },
+      { nb: 13, oeuf: "1300 g", merguez: "1040 g", tomate: "1300 g", poivron: "650 g", ail: "65 g", harissa: "130 g", huileolive: "130 ml" },
+      { nb: 14, oeuf: "1400 g", merguez: "1120 g", tomate: "1400 g", poivron: "700 g", ail: "70 g", harissa: "140 g", huileolive: "140 ml" },
+      { nb: 15, oeuf: "1500 g", merguez: "1200 g", tomate: "1500 g", poivron: "750 g", ail: "75 g", harissa: "150 g", huileolive: "150 ml" }
+    ],
+    etapes: [
+      { icone: "🌭", titre: "Saisir les merguez", detail: "Faire dorer les merguez coupées en tronçons dans l'huile, réserver.", badge: null },
+      { icone: "🫑", titre: "La sauce", detail: "Faire revenir poivron et ail, ajouter la harissa puis les tomates. Laisser réduire 12 min.", badge: "⏱ 12 min" },
+      { icone: "🌭", titre: "Remettre les merguez", detail: "Replonger les merguez dans la sauce et réchauffer 3 min.", badge: null },
+      { icone: "🥚", titre: "Les œufs", detail: "Casser les œufs sur la sauce, brouiller légèrement et cuire jusqu'à la texture désirée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bouillant dans la poêle, avec beaucoup de pain.", badge: "🌶️ Épicé" }
+    ]
+  },
+  korma: {
+    nom: "Korma de Poulet", cat: "plats", pays: "inde", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "45 min", niveau: "⭐⭐ Moyen", emoji: "🍛",
+    description: "Le curry indien tout en douceur : poulet mijoté dans une sauce crémeuse au yaourt et aux amandes, parfumée au gingembre et aux épices douces. Sans piquant.",
+    liees: ["naan"],
+    ingredients: {},
+    tableauKorma: [
+      { nb: 1, poulet: "150 g", yaourt: "40 g", creme: "30 ml", amande: "20 g", oignon: "50 g", ail: "5 g", gingembre: "5 g", curcuma: "1 g", cumin: "2 g", coriandre: "3 g" },
+      { nb: 2, poulet: "300 g", yaourt: "80 g", creme: "60 ml", amande: "40 g", oignon: "100 g", ail: "10 g", gingembre: "10 g", curcuma: "2 g", cumin: "4 g", coriandre: "6 g" },
+      { nb: 3, poulet: "450 g", yaourt: "120 g", creme: "90 ml", amande: "60 g", oignon: "150 g", ail: "15 g", gingembre: "15 g", curcuma: "3 g", cumin: "6 g", coriandre: "9 g" },
+      { nb: 4, poulet: "600 g", yaourt: "160 g", creme: "120 ml", amande: "80 g", oignon: "200 g", ail: "20 g", gingembre: "20 g", curcuma: "4 g", cumin: "8 g", coriandre: "12 g" },
+      { nb: 5, poulet: "750 g", yaourt: "200 g", creme: "150 ml", amande: "100 g", oignon: "250 g", ail: "25 g", gingembre: "25 g", curcuma: "5 g", cumin: "10 g", coriandre: "15 g" },
+      { nb: 6, poulet: "900 g", yaourt: "240 g", creme: "180 ml", amande: "120 g", oignon: "300 g", ail: "30 g", gingembre: "30 g", curcuma: "6 g", cumin: "12 g", coriandre: "18 g" },
+      { nb: 7, poulet: "1050 g", yaourt: "280 g", creme: "210 ml", amande: "140 g", oignon: "350 g", ail: "35 g", gingembre: "35 g", curcuma: "7 g", cumin: "14 g", coriandre: "21 g" },
+      { nb: 8, poulet: "1200 g", yaourt: "320 g", creme: "240 ml", amande: "160 g", oignon: "400 g", ail: "40 g", gingembre: "40 g", curcuma: "8 g", cumin: "16 g", coriandre: "24 g" },
+      { nb: 9, poulet: "1350 g", yaourt: "360 g", creme: "270 ml", amande: "180 g", oignon: "450 g", ail: "45 g", gingembre: "45 g", curcuma: "9 g", cumin: "18 g", coriandre: "27 g" },
+      { nb: 10, poulet: "1500 g", yaourt: "400 g", creme: "300 ml", amande: "200 g", oignon: "500 g", ail: "50 g", gingembre: "50 g", curcuma: "10 g", cumin: "20 g", coriandre: "30 g" },
+      { nb: 11, poulet: "1650 g", yaourt: "440 g", creme: "330 ml", amande: "220 g", oignon: "550 g", ail: "55 g", gingembre: "55 g", curcuma: "11 g", cumin: "22 g", coriandre: "33 g" },
+      { nb: 12, poulet: "1800 g", yaourt: "480 g", creme: "360 ml", amande: "240 g", oignon: "600 g", ail: "60 g", gingembre: "60 g", curcuma: "12 g", cumin: "24 g", coriandre: "36 g" },
+      { nb: 13, poulet: "1950 g", yaourt: "520 g", creme: "390 ml", amande: "260 g", oignon: "650 g", ail: "65 g", gingembre: "65 g", curcuma: "13 g", cumin: "26 g", coriandre: "39 g" },
+      { nb: 14, poulet: "2100 g", yaourt: "560 g", creme: "420 ml", amande: "280 g", oignon: "700 g", ail: "70 g", gingembre: "70 g", curcuma: "14 g", cumin: "28 g", coriandre: "42 g" },
+      { nb: 15, poulet: "2250 g", yaourt: "600 g", creme: "450 ml", amande: "300 g", oignon: "750 g", ail: "75 g", gingembre: "75 g", curcuma: "15 g", cumin: "30 g", coriandre: "45 g" }
+    ],
+    etapes: [
+      { icone: "🧅", titre: "La base", detail: "Faire blondir l'oignon, l'ail et le gingembre. Ajouter les épices et torréfier 1 min.", badge: null },
+      { icone: "🍗", titre: "Saisir le poulet", detail: "Ajouter les morceaux de poulet et les colorer sur toutes les faces.", badge: null },
+      { icone: "🥥", titre: "La sauce", detail: "Incorporer la poudre d'amandes, le yaourt et un peu d'eau. Mijoter à couvert 20 min.", badge: "⏱ 20 min" },
+      { icone: "🥛", titre: "Crémer", detail: "Ajouter la crème, rectifier le sel et réchauffer doucement sans bouillir.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de coriandre et servir avec du riz ou un naan.", badge: "💡 Avec naan" }
+    ]
+  },
+  vindaloo: {
+    nom: "Porc Vindaloo", cat: "plats", pays: "inde", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "50 min", niveau: "⭐⭐ Moyen", emoji: "🌶️",
+    description: "Le curry de Goa, héritage portugais : porc mariné au vinaigre, à l'ail et aux épices, puis longuement mijoté. Acidulé, ardent et profond.",
+    liees: ["naan"],
+    ingredients: {},
+    tableauVindaloo: [
+      { nb: 1, porc: "150 g", vinaigre: "15 ml", ail: "8 g", gingembre: "6 g", oignon: "50 g", tomate: "60 g", paprika: "3 g", cumin: "2 g", curcuma: "1 g" },
+      { nb: 2, porc: "300 g", vinaigre: "30 ml", ail: "16 g", gingembre: "12 g", oignon: "100 g", tomate: "120 g", paprika: "6 g", cumin: "4 g", curcuma: "2 g" },
+      { nb: 3, porc: "450 g", vinaigre: "45 ml", ail: "24 g", gingembre: "18 g", oignon: "150 g", tomate: "180 g", paprika: "9 g", cumin: "6 g", curcuma: "3 g" },
+      { nb: 4, porc: "600 g", vinaigre: "60 ml", ail: "32 g", gingembre: "24 g", oignon: "200 g", tomate: "240 g", paprika: "12 g", cumin: "8 g", curcuma: "4 g" },
+      { nb: 5, porc: "750 g", vinaigre: "75 ml", ail: "40 g", gingembre: "30 g", oignon: "250 g", tomate: "300 g", paprika: "15 g", cumin: "10 g", curcuma: "5 g" },
+      { nb: 6, porc: "900 g", vinaigre: "90 ml", ail: "48 g", gingembre: "36 g", oignon: "300 g", tomate: "360 g", paprika: "18 g", cumin: "12 g", curcuma: "6 g" },
+      { nb: 7, porc: "1050 g", vinaigre: "105 ml", ail: "56 g", gingembre: "42 g", oignon: "350 g", tomate: "420 g", paprika: "21 g", cumin: "14 g", curcuma: "7 g" },
+      { nb: 8, porc: "1200 g", vinaigre: "120 ml", ail: "64 g", gingembre: "48 g", oignon: "400 g", tomate: "480 g", paprika: "24 g", cumin: "16 g", curcuma: "8 g" },
+      { nb: 9, porc: "1350 g", vinaigre: "135 ml", ail: "72 g", gingembre: "54 g", oignon: "450 g", tomate: "540 g", paprika: "27 g", cumin: "18 g", curcuma: "9 g" },
+      { nb: 10, porc: "1500 g", vinaigre: "150 ml", ail: "80 g", gingembre: "60 g", oignon: "500 g", tomate: "600 g", paprika: "30 g", cumin: "20 g", curcuma: "10 g" },
+      { nb: 11, porc: "1650 g", vinaigre: "165 ml", ail: "88 g", gingembre: "66 g", oignon: "550 g", tomate: "660 g", paprika: "33 g", cumin: "22 g", curcuma: "11 g" },
+      { nb: 12, porc: "1800 g", vinaigre: "180 ml", ail: "96 g", gingembre: "72 g", oignon: "600 g", tomate: "720 g", paprika: "36 g", cumin: "24 g", curcuma: "12 g" },
+      { nb: 13, porc: "1950 g", vinaigre: "195 ml", ail: "104 g", gingembre: "78 g", oignon: "650 g", tomate: "780 g", paprika: "39 g", cumin: "26 g", curcuma: "13 g" },
+      { nb: 14, porc: "2100 g", vinaigre: "210 ml", ail: "112 g", gingembre: "84 g", oignon: "700 g", tomate: "840 g", paprika: "42 g", cumin: "28 g", curcuma: "14 g" },
+      { nb: 15, porc: "2250 g", vinaigre: "225 ml", ail: "120 g", gingembre: "90 g", oignon: "750 g", tomate: "900 g", paprika: "45 g", cumin: "30 g", curcuma: "15 g" }
+    ],
+    etapes: [
+      { icone: "🥣", titre: "Mariner", detail: "Mélanger le porc en cubes avec vinaigre, ail, gingembre et épices. Laisser mariner 1 h minimum.", badge: "💡 1 h mini" },
+      { icone: "🧅", titre: "Les oignons", detail: "Faire dorer les oignons jusqu'à ce qu'ils soient bien caramélisés.", badge: null },
+      { icone: "🍖", titre: "Saisir", detail: "Ajouter le porc mariné et le saisir à feu vif quelques minutes.", badge: null },
+      { icone: "🍅", titre: "Mijoter", detail: "Ajouter les tomates et un peu d'eau. Couvrir et laisser mijoter 35 min jusqu'à ce que le porc soit fondant.", badge: "⏱ 35 min" },
+      { icone: "🍚", titre: "Servir", detail: "Rectifier l'acidité et le sel, servir avec du riz basmati.", badge: "🌶️ Très épicé" }
+    ]
+  },
+  tamales: {
+    nom: "Tamales au Poulet", cat: "plats", pays: "mexique", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "1 h 15", niveau: "⭐⭐⭐ Difficile", emoji: "🫔",
+    description: "Les papillotes mexicaines vapeur : pâte de maïs moelleuse garnie de poulet à la tomate, cuite enveloppée. Un classique des fêtes, à déballer chaud.",
+    liees: [],
+    ingredients: {},
+    tableauTamales: [
+      { nb: 1, polenta: "90 g", beurre: "25 g", bouillon: "60 ml", poulet: "70 g", tomate: "35 g", paprika: "2 g", ail: "4 g" },
+      { nb: 2, polenta: "180 g", beurre: "50 g", bouillon: "120 ml", poulet: "140 g", tomate: "70 g", paprika: "4 g", ail: "8 g" },
+      { nb: 3, polenta: "270 g", beurre: "75 g", bouillon: "180 ml", poulet: "210 g", tomate: "105 g", paprika: "6 g", ail: "12 g" },
+      { nb: 4, polenta: "360 g", beurre: "100 g", bouillon: "240 ml", poulet: "280 g", tomate: "140 g", paprika: "8 g", ail: "16 g" },
+      { nb: 5, polenta: "450 g", beurre: "125 g", bouillon: "300 ml", poulet: "350 g", tomate: "175 g", paprika: "10 g", ail: "20 g" },
+      { nb: 6, polenta: "540 g", beurre: "150 g", bouillon: "360 ml", poulet: "420 g", tomate: "210 g", paprika: "12 g", ail: "24 g" },
+      { nb: 7, polenta: "630 g", beurre: "175 g", bouillon: "420 ml", poulet: "490 g", tomate: "245 g", paprika: "14 g", ail: "28 g" },
+      { nb: 8, polenta: "720 g", beurre: "200 g", bouillon: "480 ml", poulet: "560 g", tomate: "280 g", paprika: "16 g", ail: "32 g" },
+      { nb: 9, polenta: "810 g", beurre: "225 g", bouillon: "540 ml", poulet: "630 g", tomate: "315 g", paprika: "18 g", ail: "36 g" },
+      { nb: 10, polenta: "900 g", beurre: "250 g", bouillon: "600 ml", poulet: "700 g", tomate: "350 g", paprika: "20 g", ail: "40 g" },
+      { nb: 11, polenta: "990 g", beurre: "275 g", bouillon: "660 ml", poulet: "770 g", tomate: "385 g", paprika: "22 g", ail: "44 g" },
+      { nb: 12, polenta: "1080 g", beurre: "300 g", bouillon: "720 ml", poulet: "840 g", tomate: "420 g", paprika: "24 g", ail: "48 g" },
+      { nb: 13, polenta: "1170 g", beurre: "325 g", bouillon: "780 ml", poulet: "910 g", tomate: "455 g", paprika: "26 g", ail: "52 g" },
+      { nb: 14, polenta: "1260 g", beurre: "350 g", bouillon: "840 ml", poulet: "980 g", tomate: "490 g", paprika: "28 g", ail: "56 g" },
+      { nb: 15, polenta: "1350 g", beurre: "375 g", bouillon: "900 ml", poulet: "1050 g", tomate: "525 g", paprika: "30 g", ail: "60 g" }
+    ],
+    etapes: [
+      { icone: "🍗", titre: "La garniture", detail: "Mijoter le poulet effiloché avec tomate, ail et paprika jusqu'à une sauce épaisse.", badge: null },
+      { icone: "🌽", titre: "La pâte", detail: "Fouetter le beurre, ajouter la polenta fine et le bouillon chaud jusqu'à une pâte souple.", badge: null },
+      { icone: "🫔", titre: "Garnir", detail: "Étaler la pâte sur des feuilles de maïs trempées, déposer la garniture au centre.", badge: null },
+      { icone: "📦", titre: "Plier", detail: "Replier les feuilles en papillotes et les dresser debout dans le panier vapeur.", badge: null },
+      { icone: "♨️", titre: "Cuire vapeur", detail: "Cuire à la vapeur 45 min jusqu'à ce que la pâte se détache de la feuille.", badge: "⏱ 45 min" }
+    ]
+  },
+  pastitsio: {
+    nom: "Pastitsio", cat: "plats", pays: "grece", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "1 h 10", niveau: "⭐⭐ Moyen", emoji: "🍝",
+    description: "La lasagne grecque verticale : gros macaronis, viande à la tomate et à la cannelle, le tout coiffé d'une béchamel dorée. Généreux et réconfortant.",
+    liees: ["bechamel"],
+    ingredients: {},
+    tableauPastitsio: [
+      { nb: 1, pates: "90 g", boeuf: "90 g", tomate: "80 g", oignon: "40 g", beurre: "15 g", farine: "12 g", lait: "90 ml", fromage: "25 g", cannelle: "1 g" },
+      { nb: 2, pates: "180 g", boeuf: "180 g", tomate: "160 g", oignon: "80 g", beurre: "30 g", farine: "24 g", lait: "180 ml", fromage: "50 g", cannelle: "2 g" },
+      { nb: 3, pates: "270 g", boeuf: "270 g", tomate: "240 g", oignon: "120 g", beurre: "45 g", farine: "36 g", lait: "270 ml", fromage: "75 g", cannelle: "3 g" },
+      { nb: 4, pates: "360 g", boeuf: "360 g", tomate: "320 g", oignon: "160 g", beurre: "60 g", farine: "48 g", lait: "360 ml", fromage: "100 g", cannelle: "4 g" },
+      { nb: 5, pates: "450 g", boeuf: "450 g", tomate: "400 g", oignon: "200 g", beurre: "75 g", farine: "60 g", lait: "450 ml", fromage: "125 g", cannelle: "5 g" },
+      { nb: 6, pates: "540 g", boeuf: "540 g", tomate: "480 g", oignon: "240 g", beurre: "90 g", farine: "72 g", lait: "540 ml", fromage: "150 g", cannelle: "6 g" },
+      { nb: 7, pates: "630 g", boeuf: "630 g", tomate: "560 g", oignon: "280 g", beurre: "105 g", farine: "84 g", lait: "630 ml", fromage: "175 g", cannelle: "7 g" },
+      { nb: 8, pates: "720 g", boeuf: "720 g", tomate: "640 g", oignon: "320 g", beurre: "120 g", farine: "96 g", lait: "720 ml", fromage: "200 g", cannelle: "8 g" },
+      { nb: 9, pates: "810 g", boeuf: "810 g", tomate: "720 g", oignon: "360 g", beurre: "135 g", farine: "108 g", lait: "810 ml", fromage: "225 g", cannelle: "9 g" },
+      { nb: 10, pates: "900 g", boeuf: "900 g", tomate: "800 g", oignon: "400 g", beurre: "150 g", farine: "120 g", lait: "900 ml", fromage: "250 g", cannelle: "10 g" },
+      { nb: 11, pates: "990 g", boeuf: "990 g", tomate: "880 g", oignon: "440 g", beurre: "165 g", farine: "132 g", lait: "990 ml", fromage: "275 g", cannelle: "11 g" },
+      { nb: 12, pates: "1080 g", boeuf: "1080 g", tomate: "960 g", oignon: "480 g", beurre: "180 g", farine: "144 g", lait: "1080 ml", fromage: "300 g", cannelle: "12 g" },
+      { nb: 13, pates: "1170 g", boeuf: "1170 g", tomate: "1040 g", oignon: "520 g", beurre: "195 g", farine: "156 g", lait: "1170 ml", fromage: "325 g", cannelle: "13 g" },
+      { nb: 14, pates: "1260 g", boeuf: "1260 g", tomate: "1120 g", oignon: "560 g", beurre: "210 g", farine: "168 g", lait: "1260 ml", fromage: "350 g", cannelle: "14 g" },
+      { nb: 15, pates: "1350 g", boeuf: "1350 g", tomate: "1200 g", oignon: "600 g", beurre: "225 g", farine: "180 g", lait: "1350 ml", fromage: "375 g", cannelle: "15 g" }
+    ],
+    etapes: [
+      { icone: "🍝", titre: "Les pâtes", detail: "Cuire les gros macaronis al dente, égoutter et tapisser le fond d'un plat beurré.", badge: null },
+      { icone: "🍖", titre: "La viande", detail: "Faire revenir oignon et viande, ajouter tomate et cannelle. Mijoter 20 min.", badge: "⏱ 20 min" },
+      { icone: "🥛", titre: "La béchamel", detail: "Réaliser un roux beurre-farine, mouiller au lait et cuire en sauce épaisse. Lier avec un peu de fromage.", badge: null },
+      { icone: "🥘", titre: "Monter", detail: "Étaler la viande sur les pâtes, napper de béchamel, parsemer de fromage râpé.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner à 180°C 35 min jusqu'à une surface bien dorée. Laisser reposer avant de couper.", badge: "🔥 180°C" }
+    ]
+  },
+  gemista: {
+    nom: "Gemista", cat: "plats", pays: "grece", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "1 h 15", niveau: "⭐⭐ Moyen", emoji: "🍅",
+    description: "Les légumes farcis du dimanche grec : tomates et poivrons garnis de riz aux herbes, rôtis au four avec des pommes de terre. Végétarien et plein de soleil.",
+    saisons: ["ete"],
+    liees: [],
+    ingredients: {},
+    tableauGemista: [
+      { nb: 1, tomate: "200 g", poivron: "80 g", riz: "50 g", oignon: "40 g", huileolive: "15 ml", persil: "4 g", ail: "4 g", pommedeterre: "60 g" },
+      { nb: 2, tomate: "400 g", poivron: "160 g", riz: "100 g", oignon: "80 g", huileolive: "30 ml", persil: "8 g", ail: "8 g", pommedeterre: "120 g" },
+      { nb: 3, tomate: "600 g", poivron: "240 g", riz: "150 g", oignon: "120 g", huileolive: "45 ml", persil: "12 g", ail: "12 g", pommedeterre: "180 g" },
+      { nb: 4, tomate: "800 g", poivron: "320 g", riz: "200 g", oignon: "160 g", huileolive: "60 ml", persil: "16 g", ail: "16 g", pommedeterre: "240 g" },
+      { nb: 5, tomate: "1000 g", poivron: "400 g", riz: "250 g", oignon: "200 g", huileolive: "75 ml", persil: "20 g", ail: "20 g", pommedeterre: "300 g" },
+      { nb: 6, tomate: "1200 g", poivron: "480 g", riz: "300 g", oignon: "240 g", huileolive: "90 ml", persil: "24 g", ail: "24 g", pommedeterre: "360 g" },
+      { nb: 7, tomate: "1400 g", poivron: "560 g", riz: "350 g", oignon: "280 g", huileolive: "105 ml", persil: "28 g", ail: "28 g", pommedeterre: "420 g" },
+      { nb: 8, tomate: "1600 g", poivron: "640 g", riz: "400 g", oignon: "320 g", huileolive: "120 ml", persil: "32 g", ail: "32 g", pommedeterre: "480 g" },
+      { nb: 9, tomate: "1800 g", poivron: "720 g", riz: "450 g", oignon: "360 g", huileolive: "135 ml", persil: "36 g", ail: "36 g", pommedeterre: "540 g" },
+      { nb: 10, tomate: "2000 g", poivron: "800 g", riz: "500 g", oignon: "400 g", huileolive: "150 ml", persil: "40 g", ail: "40 g", pommedeterre: "600 g" },
+      { nb: 11, tomate: "2200 g", poivron: "880 g", riz: "550 g", oignon: "440 g", huileolive: "165 ml", persil: "44 g", ail: "44 g", pommedeterre: "660 g" },
+      { nb: 12, tomate: "2400 g", poivron: "960 g", riz: "600 g", oignon: "480 g", huileolive: "180 ml", persil: "48 g", ail: "48 g", pommedeterre: "720 g" },
+      { nb: 13, tomate: "2600 g", poivron: "1040 g", riz: "650 g", oignon: "520 g", huileolive: "195 ml", persil: "52 g", ail: "52 g", pommedeterre: "780 g" },
+      { nb: 14, tomate: "2800 g", poivron: "1120 g", riz: "700 g", oignon: "560 g", huileolive: "210 ml", persil: "56 g", ail: "56 g", pommedeterre: "840 g" },
+      { nb: 15, tomate: "3000 g", poivron: "1200 g", riz: "750 g", oignon: "600 g", huileolive: "225 ml", persil: "60 g", ail: "60 g", pommedeterre: "900 g" }
+    ],
+    etapes: [
+      { icone: "🍅", titre: "Évider", detail: "Couper un chapeau aux tomates et poivrons, les évider et réserver la chair des tomates.", badge: null },
+      { icone: "🍚", titre: "La farce", detail: "Faire revenir oignon et ail, ajouter le riz, la chair de tomate, le persil. Cuire à demi.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Remplir les légumes aux deux tiers (le riz gonfle), replacer les chapeaux.", badge: null },
+      { icone: "🥔", titre: "Au plat", detail: "Disposer dans un plat avec des quartiers de pomme de terre, arroser d'huile d'olive.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Enfourner à 180°C environ 1 h, en arrosant, jusqu'à ce que tout soit tendre et doré.", badge: "⏱ 1 h" }
+    ]
+  },
+  pistomanchego: {
+    nom: "Pisto Manchego", cat: "plats", pays: "espagne", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "45 min", niveau: "⭐ Facile", emoji: "🍆",
+    description: "La ratatouille espagnole de la Manche : aubergine, courgette, poivron et tomate mijotés à l'huile d'olive. Servie avec un œuf au plat par-dessus.",
+    saisons: ["ete"],
+    liees: [],
+    ingredients: {},
+    tableauPistomanchego: [
+      { nb: 1, aubergine: "80 g", courgette: "80 g", poivron: "80 g", tomate: "120 g", oignon: "50 g", huileolive: "15 ml", ail: "5 g" },
+      { nb: 2, aubergine: "160 g", courgette: "160 g", poivron: "160 g", tomate: "240 g", oignon: "100 g", huileolive: "30 ml", ail: "10 g" },
+      { nb: 3, aubergine: "240 g", courgette: "240 g", poivron: "240 g", tomate: "360 g", oignon: "150 g", huileolive: "45 ml", ail: "15 g" },
+      { nb: 4, aubergine: "320 g", courgette: "320 g", poivron: "320 g", tomate: "480 g", oignon: "200 g", huileolive: "60 ml", ail: "20 g" },
+      { nb: 5, aubergine: "400 g", courgette: "400 g", poivron: "400 g", tomate: "600 g", oignon: "250 g", huileolive: "75 ml", ail: "25 g" },
+      { nb: 6, aubergine: "480 g", courgette: "480 g", poivron: "480 g", tomate: "720 g", oignon: "300 g", huileolive: "90 ml", ail: "30 g" },
+      { nb: 7, aubergine: "560 g", courgette: "560 g", poivron: "560 g", tomate: "840 g", oignon: "350 g", huileolive: "105 ml", ail: "35 g" },
+      { nb: 8, aubergine: "640 g", courgette: "640 g", poivron: "640 g", tomate: "960 g", oignon: "400 g", huileolive: "120 ml", ail: "40 g" },
+      { nb: 9, aubergine: "720 g", courgette: "720 g", poivron: "720 g", tomate: "1080 g", oignon: "450 g", huileolive: "135 ml", ail: "45 g" },
+      { nb: 10, aubergine: "800 g", courgette: "800 g", poivron: "800 g", tomate: "1200 g", oignon: "500 g", huileolive: "150 ml", ail: "50 g" },
+      { nb: 11, aubergine: "880 g", courgette: "880 g", poivron: "880 g", tomate: "1320 g", oignon: "550 g", huileolive: "165 ml", ail: "55 g" },
+      { nb: 12, aubergine: "960 g", courgette: "960 g", poivron: "960 g", tomate: "1440 g", oignon: "600 g", huileolive: "180 ml", ail: "60 g" },
+      { nb: 13, aubergine: "1040 g", courgette: "1040 g", poivron: "1040 g", tomate: "1560 g", oignon: "650 g", huileolive: "195 ml", ail: "65 g" },
+      { nb: 14, aubergine: "1120 g", courgette: "1120 g", poivron: "1120 g", tomate: "1680 g", oignon: "700 g", huileolive: "210 ml", ail: "70 g" },
+      { nb: 15, aubergine: "1200 g", courgette: "1200 g", poivron: "1200 g", tomate: "1800 g", oignon: "750 g", huileolive: "225 ml", ail: "75 g" }
+    ],
+    etapes: [
+      { icone: "🧅", titre: "Le sofrito", detail: "Faire suer l'oignon et l'ail dans l'huile d'olive à feu doux.", badge: null },
+      { icone: "🫑", titre: "Les légumes", detail: "Ajouter poivron, aubergine et courgette en dés. Cuire 15 min en remuant.", badge: "⏱ 15 min" },
+      { icone: "🍅", titre: "La tomate", detail: "Incorporer les tomates concassées et laisser compoter 20 min à feu doux.", badge: "⏱ 20 min" },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et laisser réduire jusqu'à une compotée fondante.", badge: null },
+      { icone: "🍳", titre: "Servir", detail: "Servir chaud, couronné d'un œuf au plat, avec du pain de campagne.", badge: "💡 Avec un œuf" }
+    ]
+  },
+  tonkatsu: {
+    nom: "Tonkatsu", cat: "plats", pays: "japon", dateAjout: "2026-06-20T10:00:00",
+    base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍖",
+    description: "L'escalope de porc panée japonaise : croûte de panko ultra-croustillante, cœur tendre et juteux. Tranchée et servie sur du chou cru, avec du riz.",
+    liees: [],
+    ingredients: {},
+    tableauTonkatsu: [
+      { nb: 1, porc: "150 g", chapelure: "30 g", oeuf: "25 g", farine: "15 g", chou: "60 g", huile: "20 ml" },
+      { nb: 2, porc: "300 g", chapelure: "60 g", oeuf: "50 g", farine: "30 g", chou: "120 g", huile: "40 ml" },
+      { nb: 3, porc: "450 g", chapelure: "90 g", oeuf: "75 g", farine: "45 g", chou: "180 g", huile: "60 ml" },
+      { nb: 4, porc: "600 g", chapelure: "120 g", oeuf: "100 g", farine: "60 g", chou: "240 g", huile: "80 ml" },
+      { nb: 5, porc: "750 g", chapelure: "150 g", oeuf: "125 g", farine: "75 g", chou: "300 g", huile: "100 ml" },
+      { nb: 6, porc: "900 g", chapelure: "180 g", oeuf: "150 g", farine: "90 g", chou: "360 g", huile: "120 ml" },
+      { nb: 7, porc: "1050 g", chapelure: "210 g", oeuf: "175 g", farine: "105 g", chou: "420 g", huile: "140 ml" },
+      { nb: 8, porc: "1200 g", chapelure: "240 g", oeuf: "200 g", farine: "120 g", chou: "480 g", huile: "160 ml" },
+      { nb: 9, porc: "1350 g", chapelure: "270 g", oeuf: "225 g", farine: "135 g", chou: "540 g", huile: "180 ml" },
+      { nb: 10, porc: "1500 g", chapelure: "300 g", oeuf: "250 g", farine: "150 g", chou: "600 g", huile: "200 ml" },
+      { nb: 11, porc: "1650 g", chapelure: "330 g", oeuf: "275 g", farine: "165 g", chou: "660 g", huile: "220 ml" },
+      { nb: 12, porc: "1800 g", chapelure: "360 g", oeuf: "300 g", farine: "180 g", chou: "720 g", huile: "240 ml" },
+      { nb: 13, porc: "1950 g", chapelure: "390 g", oeuf: "325 g", farine: "195 g", chou: "780 g", huile: "260 ml" },
+      { nb: 14, porc: "2100 g", chapelure: "420 g", oeuf: "350 g", farine: "210 g", chou: "840 g", huile: "280 ml" },
+      { nb: 15, porc: "2250 g", chapelure: "450 g", oeuf: "375 g", farine: "225 g", chou: "900 g", huile: "300 ml" }
+    ],
+    etapes: [
+      { icone: "🔨", titre: "Préparer le porc", detail: "Inciser les bords des côtes de porc et les aplatir légèrement. Saler et poivrer.", badge: null },
+      { icone: "🍞", titre: "Paner", detail: "Passer le porc dans la farine, l'œuf battu puis le panko en pressant bien.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire dans l'huile à 170°C 3-4 min par face jusqu'à une croûte dorée. Égoutter.", badge: "🔥 170°C" },
+      { icone: "🥬", titre: "Le chou", detail: "Émincer le chou très finement et le rincer à l'eau glacée pour qu'il soit croquant.", badge: null },
+      { icone: "🔪", titre: "Servir", detail: "Trancher le tonkatsu en lamelles, servir sur le chou avec du riz et une sauce tonkatsu.", badge: "💡 Avec du riz" }
+    ]
+  }
 });

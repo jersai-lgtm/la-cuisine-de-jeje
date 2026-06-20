@@ -213,7 +213,8 @@ const INGREDIENTS_PRIX = {
   truffenoire:    { prixKg: 800.0,calPer100g: 92,   lipSat: 0.2,  sucre: 1.4,  sel: 0.2,  fibres: 7.2, prot: 6.6,  flv: 100 },
   guascas:        { prixKg: 80.0, calPer100g: 22,   lipSat: 0,    sucre: 1,    sel: 0,    fibres: 3.6, prot: 2.8,  flv: 100 },
   crudités:       { prixKg: 3.50, calPer100g: 20,   lipSat: 0,    sucre: 2.5,  sel: 0,    fibres: 1.8, prot: 1,    flv: 100 },
-  
+  feuillevigne:   { prixKg: 12.0, calPer100g: 69,   lipSat: 0.1,  sucre: 0.4,  sel: 1.5,  fibres: 11,  prot: 5.4,  flv: 100 },
+
   // ===== FRUITS =====
   banane:         { prixUnite: 0.30, cal: 89,        lipSat: 0.1,  sucre: 12.2, sel: 0,    fibres: 2.6, prot: 1.1,  flv: 100 },
   bananes:        { prixUnite: 0.30, cal: 89,        lipSat: 0.1,  sucre: 12.2, sel: 0,    fibres: 2.6, prot: 1.1,  flv: 100 },
@@ -1246,7 +1247,7 @@ const INGREDIENTS_LABELS = {
   haricotsblancs: "🫘 Haricots blancs", vinrouge: "🍷 Vin rouge",
   patefeuilletee: "🥧 Pâte feuilletée", poudreamandes: "🥥 Poudre d'amandes",
   cremepatissiere: "🍮 Crème pâtissière", sucrecaramel: "🍯 Sucre (caramel)",
-  feve: "🪙 Fève",
+  feve: "🪙 Fève", feuillevigne: "🍃 Feuilles de vigne",
   // === Lot 2 — Ingrédients cuisines du monde ===
   baguette: "🥖 Baguette", painpita: "🫓 Pain pita",
   haricotsverts: "🫛 Haricots verts", saucissefumee: "🌭 Saucisse fumée",
