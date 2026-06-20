@@ -339,13 +339,18 @@ async function importerCleVapid(privB64, pubB64) {
 async function vapidHeaders(endpoint, env) {
   const aud = new URL(endpoint).origin;
   const now = Math.floor(Date.now() / 1000);
+  // .trim() : selon le shell utilisé pour `wrangler secret put` (ex. PowerShell),
+  // un retour-ligne peut se glisser dans le secret → atob() planterait dessus.
+  const pub = (env.VAPID_PUBLIC_KEY || "").trim();
+  const priv = (env.VAPID_PRIVATE_KEY || "").trim();
+  const sujet = (env.VAPID_SUBJECT || "mailto:jerome.sainthot@gmail.com").trim();
   const enc = (o) => bytesToB64url(new TextEncoder().encode(JSON.stringify(o)));
   const signingInput = enc({ typ: "JWT", alg: "ES256" }) + "." +
-    enc({ aud, exp: now + 12 * 3600, sub: env.VAPID_SUBJECT || "mailto:jerome.sainthot@gmail.com" });
-  const key = await importerCleVapid(env.VAPID_PRIVATE_KEY, env.VAPID_PUBLIC_KEY);
+    enc({ aud, exp: now + 12 * 3600, sub: sujet });
+  const key = await importerCleVapid(priv, pub);
   const sig = await crypto.subtle.sign({ name: "ECDSA", hash: "SHA-256" }, key, new TextEncoder().encode(signingInput));
   const jwt = signingInput + "." + bytesToB64url(new Uint8Array(sig));
-  return { "Authorization": "vapid t=" + jwt + ", k=" + env.VAPID_PUBLIC_KEY, "TTL": "43200" };
+  return { "Authorization": "vapid t=" + jwt + ", k=" + pub, "TTL": "43200" };
 }
 
 async function envoyerUnPush(endpoint, env) {
