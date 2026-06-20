@@ -19,12 +19,25 @@
     return h;
   }
 
-  // Clé du jour : déterministe par date locale (même résultat toute la journée).
+  // Saison courante (identique à getSaisonActuelle de l'app + au service worker).
+  function saison() {
+    if (typeof getSaisonActuelle === "function") return getSaisonActuelle();
+    const m = new Date().getMonth() + 1;
+    if (m >= 3 && m <= 5) return "printemps";
+    if (m >= 6 && m <= 8) return "ete";
+    if (m >= 9 && m <= 11) return "automne";
+    return "hiver";
+  }
+
+  // Clé du jour : déterministe par date locale (même résultat toute la journée),
+  // AU GOÛT DE SAISON (on écarte les recettes hors-saison, comme les suggestions).
   function cleDuJour() {
     if (typeof recettes === "undefined") return null;
-    const cles = Object.keys(recettes)
-      .filter((k) => { const r = recettes[k]; return r && r.nom && !EXCLURE_CAT.has(r.cat); })
-      .sort(); // tri = ordre stable indépendant de l'ordre de chargement
+    const s = saison();
+    const eligible = (k) => { const r = recettes[k]; return r && r.nom && !EXCLURE_CAT.has(r.cat); };
+    const deSaison = (k) => { const sa = recettes[k] && recettes[k].saisons; return !sa || !sa.length || sa.indexOf(s) > -1; };
+    let cles = Object.keys(recettes).filter((k) => eligible(k) && deSaison(k)).sort();
+    if (!cles.length) cles = Object.keys(recettes).filter(eligible).sort(); // repli : aucune de saison
     if (!cles.length) return null;
     const d = new Date();
     const jour = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();

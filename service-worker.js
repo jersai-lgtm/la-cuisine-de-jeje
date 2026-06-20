@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v2.2.1";
+const CACHE_NAME = "cuisine-jeje-v2.2.2";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
@@ -215,13 +215,25 @@ self.addEventListener("fetch", e => {
 const PUSH_WORKER = "https://la-cuisine-de-jeje.jerome-sainthot.workers.dev";
 const PUSH_SITE = "https://jersai-lgtm.github.io/la-cuisine-de-jeje";
 
+function pushSaisonDuMois() {
+  const m = new Date().getMonth() + 1;
+  if (m >= 3 && m <= 5) return "printemps";
+  if (m >= 6 && m <= 8) return "ete";
+  if (m >= 9 && m <= 11) return "automne";
+  return "hiver";
+}
+
 function pushRecetteDuJour(idx) {
   if (!idx || !idx.length) return null;
+  const s = pushSaisonDuMois();
+  // Au goût de saison : on écarte les recettes hors-saison (mêmes règles que l'app).
+  const pool = idx.filter((r) => !r.s || !r.s.length || r.s.indexOf(s) > -1);
+  const liste = pool.length ? pool : idx;
   const d = new Date();
   const j = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
   let h = 0;
   for (let i = 0; i < j.length; i++) h = (h * 31 + j.charCodeAt(i)) >>> 0;
-  return idx[h % idx.length];
+  return liste[h % liste.length];
 }
 
 async function gererPush() {

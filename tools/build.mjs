@@ -151,7 +151,11 @@ async function main() {
   const idxPush = Object.keys(cat)
     .filter((k) => cat[k] && cat[k].nom && !EXCL.has(cat[k].cat))
     .sort()
-    .map((k) => ({ k, n: cat[k].nom, e: cat[k].emoji || "🍽️" }));
+    .map((k) => {
+      const e = { k, n: cat[k].nom, e: cat[k].emoji || "🍽️" };
+      if (Array.isArray(cat[k].saisons) && cat[k].saisons.length) e.s = cat[k].saisons; // pour le filtre saison côté SW
+      return e;
+    });
   writeFileSync(join(DIST, "recettes-index.json"), JSON.stringify(idxPush));
   console.log(`   Push : recettes-index.json (${idxPush.length} recettes éligibles)`);
 
