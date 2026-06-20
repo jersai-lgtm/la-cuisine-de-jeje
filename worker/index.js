@@ -63,9 +63,8 @@ export default {
       const ep = b && b.subscription && b.subscription.endpoint;
       if (!ep) return json({ error: { message: "endpoint manquant" } }, 400, cors);
       if (!env.PUSH_SUBS) return json({ ok: false, raison: "non configuré" }, 200, cors);
-      const cleSub = "sub:" + (await hashEndpoint(ep));
-      await env.PUSH_SUBS.put(cleSub, JSON.stringify({ endpoint: ep, listeNonVide: !!b.listeNonVide, ts: Date.now() }));
-      console.log("[push] abonnement stocké clé=" + cleSub + " endpoint=" + ep.slice(0, 50));
+      await env.PUSH_SUBS.put("sub:" + (await hashEndpoint(ep)),
+        JSON.stringify({ endpoint: ep, listeNonVide: !!b.listeNonVide, ts: Date.now() }));
       return json({ ok: true }, 200, cors);
     }
     if (chemin === "/push/unsubscribe") {
@@ -345,8 +344,6 @@ async function vapidHeaders(endpoint, env) {
   const pub = (env.VAPID_PUBLIC_KEY || "").trim();
   const priv = (env.VAPID_PRIVATE_KEY || "").trim();
   const sujet = (env.VAPID_SUBJECT || "mailto:jerome.sainthot@gmail.com").trim();
-  // Diag : longueurs attendues priv≈43, pub≈87 (base64url). Sujet doit commencer par mailto:
-  console.log("[push] VAPID priv.len=" + priv.length + " pub.len=" + pub.length + " sujet=" + JSON.stringify(sujet.slice(0, 30)));
   const enc = (o) => bytesToB64url(new TextEncoder().encode(JSON.stringify(o)));
   const signingInput = enc({ typ: "JWT", alg: "ES256" }) + "." +
     enc({ aud, exp: now + 12 * 3600, sub: sujet });
@@ -384,7 +381,6 @@ async function diffuserPush(env, msg, filtre) {
     return 0;
   }
   const subs = await listerSubs(env);
-  console.log("[push] diffuser type=" + (msg && msg.type) + " — abonnés trouvés=" + subs.length);
   let n = 0;
   for (const s of subs) {
     if (filtre && !filtre(s)) continue;
@@ -392,11 +388,11 @@ async function diffuserPush(env, msg, filtre) {
     await env.PUSH_SUBS.put("pending:" + h, JSON.stringify(msg), { expirationTtl: 7200 });
     try {
       const r = await envoyerUnPush(s.endpoint, env);
-      console.log("[push] envoi -> " + (s.endpoint || "").slice(0, 50) + " status=" + r.status);
-      if (r.status === 404 || r.status === 410) await env.PUSH_SUBS.delete("sub:" + h);
+      if (r.status === 404 || r.status === 410) await env.PUSH_SUBS.delete("sub:" + h); // abonnement mort → purge
       else n++;
-    } catch (e) { console.log("[push] ERREUR envoi: " + (e && e.message)); }
+    } catch (e) { /* échec ponctuel ignoré */ }
   }
+  console.log("[push] type=" + (msg && msg.type) + " abonnés=" + subs.length + " envoyés=" + n);
   return n;
 }
 
