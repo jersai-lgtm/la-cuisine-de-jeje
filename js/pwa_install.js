@@ -24,15 +24,15 @@
     s.id = "pwa-install-style";
     s.textContent = `
       #pwa-install-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:88px;z-index:9000;
-        max-width:92vw;display:flex;align-items:center;gap:10px;background:#17151c;color:#fff;
+        max-width:92vw;display:flex;align-items:center;gap:10px;background:var(--panel-solid);color:var(--text);
         border:1px solid rgba(255,107,161,.5);border-radius:14px;padding:10px 12px 10px 16px;
         box-shadow:0 8px 28px rgba(0,0,0,.45);font-family:system-ui,-apple-system,sans-serif;
         animation:pwaUp .25s ease}
       @keyframes pwaUp{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
       #pwa-install-banner .pwa-txt{font-size:14px;line-height:1.3;max-width:60vw}
-      #pwa-install-banner .pwa-ok{background:linear-gradient(90deg,#ff6ba1,#ff4d88);color:#fff;border:none;
+      #pwa-install-banner .pwa-ok{background:linear-gradient(90deg,#ff6ba1,#ff4d88);color:var(--text);border:none;
         border-radius:10px;padding:9px 14px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
-      #pwa-install-banner .pwa-no{background:rgba(255,255,255,.12);color:#fff;border:none;border-radius:50%;
+      #pwa-install-banner .pwa-no{background:rgba(var(--w),.12);color:var(--text);border:none;border-radius:50%;
         width:30px;height:30px;font-size:13px;cursor:pointer;flex:0 0 auto}
       #pwa-install-banner .pwa-ok:focus-visible,#pwa-install-banner .pwa-no:focus-visible{outline:2px solid #ff8fb3;outline-offset:2px}
       @media(max-width:480px){#pwa-install-banner{bottom:82px}}

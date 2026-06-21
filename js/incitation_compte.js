@@ -24,14 +24,14 @@
     s.id = "incit-style";
     s.textContent = `
       #incit-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:88px;z-index:8990;max-width:92vw;
-        display:flex;align-items:center;gap:10px;background:#17151c;color:#fff;border:1px solid rgba(124,200,255,.4);
+        display:flex;align-items:center;gap:10px;background:var(--panel-solid);color:var(--text);border:1px solid rgba(124,200,255,.4);
         border-radius:14px;padding:10px 12px 10px 16px;box-shadow:0 8px 28px rgba(0,0,0,.45);
         font-family:system-ui,-apple-system,sans-serif;animation:incitUp .25s ease}
       @keyframes incitUp{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
       #incit-banner .incit-txt{font-size:14px;line-height:1.35;max-width:62vw}
-      #incit-banner .incit-ok{background:linear-gradient(90deg,#6ba1ff,#4d88ff);color:#fff;border:none;border-radius:10px;
+      #incit-banner .incit-ok{background:linear-gradient(90deg,#6ba1ff,#4d88ff);color:var(--text);border:none;border-radius:10px;
         padding:9px 14px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
-      #incit-banner .incit-no{background:rgba(255,255,255,.12);color:#fff;border:none;border-radius:50%;width:30px;height:30px;
+      #incit-banner .incit-no{background:rgba(var(--w),.12);color:var(--text);border:none;border-radius:50%;width:30px;height:30px;
         font-size:13px;cursor:pointer;flex:0 0 auto}
       #incit-banner .incit-ok:focus-visible,#incit-banner .incit-no:focus-visible{outline:2px solid #8fbfff;outline-offset:2px}
       @media(max-width:480px){#incit-banner{bottom:82px}}

@@ -103,14 +103,14 @@
     s.id = "push-style";
     s.textContent = `
       #push-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:88px;z-index:8985;max-width:92vw;
-        display:flex;align-items:center;gap:10px;background:#17151c;color:#fff;border:1px solid rgba(255,196,120,.4);
+        display:flex;align-items:center;gap:10px;background:var(--panel-solid);color:var(--text);border:1px solid rgba(255,196,120,.4);
         border-radius:14px;padding:10px 12px 10px 16px;box-shadow:0 8px 28px rgba(0,0,0,.45);
         font-family:system-ui,-apple-system,sans-serif;animation:pushUp .25s ease}
       @keyframes pushUp{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
       #push-banner .push-txt{font-size:14px;line-height:1.35;max-width:60vw}
       #push-banner .push-ok{background:linear-gradient(90deg,#ffb259,#ff9330);color:#1b1206;border:none;border-radius:10px;
         padding:9px 14px;font-size:14px;font-weight:800;cursor:pointer;white-space:nowrap}
-      #push-banner .push-no{background:rgba(255,255,255,.12);color:#fff;border:none;border-radius:50%;width:30px;height:30px;
+      #push-banner .push-no{background:rgba(var(--w),.12);color:var(--text);border:none;border-radius:50%;width:30px;height:30px;
         font-size:13px;cursor:pointer;flex:0 0 auto}
       @media(max-width:480px){#push-banner{bottom:82px}}
     `;

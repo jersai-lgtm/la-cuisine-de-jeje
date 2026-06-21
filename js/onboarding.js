@@ -50,16 +50,16 @@
     s.id = "onb-style";
     s.textContent = `
       #onb-overlay{position:fixed;inset:0;z-index:100002;background:rgba(10,8,14,.92);display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
-      .onb-card{background:#211e26;border:1px solid rgba(255,255,255,.12);border-radius:22px;max-width:400px;width:100%;padding:28px 24px 22px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+      .onb-card{background:#211e26;border:1px solid rgba(var(--w),.12);border-radius:22px;max-width:400px;width:100%;padding:28px 24px 22px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.5)}
       .onb-emoji{font-size:60px;line-height:1;margin-bottom:14px}
-      .onb-titre{font-size:21px;font-weight:800;color:#fff;margin:0 0 10px}
+      .onb-titre{font-size:21px;font-weight:800;color:var(--text);margin:0 0 10px}
       .onb-texte{font-size:15px;line-height:1.6;color:#cfccd4;margin:0 0 22px;min-height:96px}
       .onb-dots{display:flex;gap:8px;justify-content:center;margin-bottom:20px}
-      .onb-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);transition:all .25s}
+      .onb-dot{width:8px;height:8px;border-radius:50%;background:rgba(var(--w),.25);transition:all .25s}
       .onb-dot.on{background:var(--accent,#ff4d88);width:22px;border-radius:5px}
       .onb-actions{display:flex;align-items:center;gap:12px}
-      .onb-skip{background:none;border:none;color:#88858f;font-size:14px;cursor:pointer;padding:8px}
-      .onb-next{flex:1;background:linear-gradient(90deg,#ff6ba1,#ff5b95);color:#fff;border:none;border-radius:14px;padding:14px;font-size:16px;font-weight:700;cursor:pointer}
+      .onb-skip{background:none;border:none;color:var(--text-3);font-size:14px;cursor:pointer;padding:8px}
+      .onb-next{flex:1;background:linear-gradient(90deg,#ff6ba1,#ff5b95);color:var(--text);border:none;border-radius:14px;padding:14px;font-size:16px;font-weight:700;cursor:pointer}
       .onb-next:focus-visible,.onb-skip:focus-visible{outline:3px solid #ff8fb3;outline-offset:2px}
     `;
     document.head.appendChild(s);
