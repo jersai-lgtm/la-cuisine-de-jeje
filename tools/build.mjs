@@ -109,7 +109,7 @@ async function main() {
   writeFileSync(join(DIST, "index.html"), htmlFinal);
 
   // 5) Copier les fichiers statiques nécessaires au runtime
-  const statiques = ["style.css", "manifest.json", "favicon.ico"];
+  const statiques = ["style.css", "manifest.json", "favicon.ico", "testeur.html"];
   for (const f of statiques) if (existsSync(p(f))) cpSync(p(f), join(DIST, f));
   if (existsSync(p("images"))) cpSync(p("images"), join(DIST, "images"), { recursive: true });
   writeFileSync(join(DIST, ".nojekyll"), ""); // Pages : ne pas passer par Jekyll
