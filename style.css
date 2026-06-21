@@ -313,6 +313,20 @@ header p  { color: #ddd; font-size: 15px; margin: 8px 0 0; }
   backdrop-filter: blur(4px);
 }
 
+/* CTA « Qu'est-ce qu'on mange ? » (ouvre le mode swipe) */
+.swipe-cta {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  width: 100%; box-sizing: border-box; margin: 0 0 16px;
+  background: linear-gradient(95deg, #ff5fa2, #ff9330);
+  color: #1a0e14; border: none; border-radius: 16px;
+  padding: 14px 16px; font-size: 17px; font-weight: 800; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(255,95,162,.30); transition: transform .12s, filter .12s;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.swipe-cta:hover { filter: brightness(1.05); }
+.swipe-cta:active { transform: translateY(1px); }
+.swipe-cta .swipe-cta-sub { font-size: 12.5px; font-weight: 600; opacity: .8; }
+
 /* Sélecteur de personnes intégré dans la fiche (à la place du badge "4 pâtons") */
 .fiche-selecteur-personnes {
   display: inline-flex;

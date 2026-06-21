@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "2.2.4",
+    titre: "🍽️ « Qu'est-ce qu'on mange ? »",
+    texte: "Plus d'inspiration en panne ! En haut de l'accueil, un nouveau bouton ouvre un mode découverte façon swipe : fais défiler des recettes (👈 passer, 👉 voir), et quand une te fait envie, hop, la fiche s'ouvre. Ça suit ton profil (allergènes, régime) et la saison. Parfait pour décider du dîner en 30 secondes. 😋"
+  },
+  {
     v: "2.1.10",
     titre: "🔔 Reçois la recette du jour",
     texte: "Tu peux maintenant activer les notifications : chaque jour à 11h30, une idée de recette du jour t'attend directement sur ton téléphone (un clic et la recette s'ouvre) ! Et le samedi, un petit rappel si tu as une liste de courses en cours. Pour activer : accepte la petite invitation 🔔 qui apparaît, ou recharge l'appli. Tu peux refuser, c'est sans engagement. 👨‍🍳"
