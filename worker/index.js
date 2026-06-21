@@ -148,6 +148,27 @@ export default {
       return json({ ok: true, envoyes: n }, 200, cors);
     }
 
+    // --- Route /photo : alerte Telegram « une photo est à valider » ----------
+    // Appelée (best-effort) par le client après un upload. Le nom vient du jeton
+    // vérifié. Ne consomme pas le quota IA.
+    if (chemin === "/photo") {
+      if (env.TELEGRAM_BOT_TOKEN && env.TELEGRAM_CHAT_ID) {
+        let b; try { b = await request.json(); } catch (e) { b = {}; }
+        const qui = claims.name || claims.email || "Quelqu'un";
+        const recette = (b && b.nom) ? String(b.nom).slice(0, 80) : "une recette";
+        const texte = `📷 La Cuisine de Jéjé\n${qui} a ajouté une photo sur « ${recette} » — à valider 👀`;
+        const tok = (env.TELEGRAM_BOT_TOKEN || "").trim();
+        const chat = (env.TELEGRAM_CHAT_ID || "").trim();
+        try {
+          await fetch(`https://api.telegram.org/bot${tok}/sendMessage`, {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ chat_id: chat, text: texte }),
+          });
+        } catch (e) {}
+      }
+      return json({ ok: true }, 200, cors);
+    }
+
     // --- 2. Quota par utilisateur (KV) --------------------------------------
     if (env.RATE_LIMIT) {
       const fenetre = Math.floor(Date.now() / 3_600_000); // heure courante

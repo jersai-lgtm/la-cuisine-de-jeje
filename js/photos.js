@@ -1,22 +1,27 @@
 // =============================================================================
-// 📸 photos.js — Photos des plats par les utilisateurs (preuve sociale)
+// 📸 photos.js — Photos des plats par les utilisateurs (MODÉRÉES avant publication)
 // -----------------------------------------------------------------------------
-// Sur chaque fiche : galerie des photos « j'ai testé » + bouton pour ajouter la
-// sienne. Stockage : Firebase Storage (photos compressées) + métadonnées dans
-// Firestore (collection photos_recettes). Modération : suppression par l'auteur
-// ou l'admin, et signalement (masqué après signalement, l'admin garde la main).
-// Nécessite : Storage activé + règles Storage/Firestore (voir worker?/README).
-// Bilingue + thème clair/sombre.
+// Schéma (aligné sur les règles Firebase de Jérôme) :
+//   • Storage : astuces-photos/{recetteKey}/{uid}/{fichier}.jpg (image compressée)
+//   • Firestore collection "photos" : { recetteKey, uid, url, path, nom,
+//       statut: "en_attente" | "publie", date }
+//   • Lecture publique uniquement si statut == "publie". L'auteur voit sa photo
+//     en attente ; l'admin voit tout et peut ✅ publier / 🗑️ supprimer.
+// Réglages Firebase requis : voir firebase-photos-setup.md. Bilingue + thème.
 // =============================================================================
 
 (function () {
+  const ADMIN_UID = "sQWjiKrOIsdzWr0nCspn3WSkY5D3";
   const EN = () => window.LANG === "en";
   const T = (fr, en) => (EN() ? en : fr);
-  const admin = () => { try { return typeof estAdmin === "function" && estAdmin(); } catch (e) { return false; } };
+  const admin = () => {
+    if (typeof estAdmin === "function") { try { if (estAdmin()) return true; } catch (e) {} }
+    return !!(window.currentUser && window.currentUser.uid === ADMIN_UID);
+  };
   const db = () => firebase.firestore();
   const storage = () => firebase.storage();
+  const WORKER = "https://la-cuisine-de-jeje.jerome-sainthot.workers.dev";
 
-  // Compresse une image (File) → Blob JPEG (≤ maxDim px).
   function compresser(file, maxDim, q) {
     maxDim = maxDim || 1280; q = q || 0.82;
     return new Promise((res, rej) => {
@@ -46,12 +51,15 @@
       .photos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
       .photo-item{position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;background:rgba(var(--w),.06)}
       .photo-item img{width:100%;height:100%;object-fit:cover;display:block}
+      .photo-item.attente img{filter:brightness(.6)}
       .photo-item .photo-auteur{position:absolute;left:0;right:0;bottom:0;font-size:11px;color:#fff;
         background:linear-gradient(transparent,rgba(0,0,0,.7));padding:10px 6px 4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-      .photo-item .photo-del,.photo-item .photo-sig{position:absolute;top:5px;border:none;border-radius:50%;
-        width:26px;height:26px;font-size:12px;cursor:pointer;background:rgba(0,0,0,.55);color:#fff;line-height:1}
-      .photo-item .photo-del{right:5px}.photo-item .photo-sig{left:5px;opacity:.85}
-      .photo-item .photo-flagged{position:absolute;top:5px;left:5px;font-size:13px}
+      .photo-item .photo-attente{position:absolute;top:6px;left:6px;right:6px;text-align:center;font-size:10.5px;color:#fff;
+        background:rgba(0,0,0,.55);border-radius:8px;padding:3px 4px}
+      .photo-item .photo-btns{position:absolute;top:5px;right:5px;display:flex;gap:5px}
+      .photo-item .photo-btn{border:none;border-radius:50%;width:26px;height:26px;font-size:12px;cursor:pointer;
+        background:rgba(0,0,0,.6);color:#fff;line-height:1}
+      .photo-item .photo-btn.ok{background:rgba(76,175,80,.9)}
       .photos-vide{color:var(--text-3);font-size:13px;padding:6px 0}
     `;
     document.head.appendChild(s);
@@ -61,46 +69,60 @@
     const grid = conteneur.querySelector(".photos-grid");
     if (!grid) return;
     grid.innerHTML = '<div class="photos-vide">' + T("Chargement…", "Loading…") + "</div>";
-    let docs = [];
+    const col = db().collection("photos");
+    const map = {};
+    const ajoute = (snap) => snap.forEach((d) => { map[d.id] = Object.assign({ id: d.id }, d.data()); });
     try {
-      const q = await db().collection("photos_recettes").where("cle", "==", cle).orderBy("ts", "desc").limit(30).get();
-      q.forEach((d) => docs.push(Object.assign({ id: d.id }, d.data())));
+      if (admin()) {
+        ajoute(await col.where("recetteKey", "==", cle).get());           // admin voit tout
+      } else {
+        ajoute(await col.where("recetteKey", "==", cle).where("statut", "==", "publie").get()); // publiées
+        if (window.currentUser) {
+          ajoute(await col.where("recetteKey", "==", cle).where("uid", "==", window.currentUser.uid).get()); // + mes photos
+        }
+      }
     } catch (e) {
-      // Repli si l'index composite n'existe pas encore : tri côté client.
-      try {
-        const q = await db().collection("photos_recettes").where("cle", "==", cle).limit(30).get();
-        q.forEach((d) => docs.push(Object.assign({ id: d.id }, d.data())));
-        docs.sort((a, b) => (b.ts || 0) - (a.ts || 0));
-      } catch (e2) { grid.innerHTML = '<div class="photos-vide">' + T("Photos indisponibles pour le moment.", "Photos unavailable right now.") + "</div>"; return; }
+      grid.innerHTML = '<div class="photos-vide">' + T("Galerie indisponible (config Firebase ?).", "Gallery unavailable (Firebase config?).") + "</div>";
+      return;
     }
+    const docs = Object.values(map).sort((a, b) => (b.date || 0) - (a.date || 0));
+    if (!docs.length) { grid.innerHTML = '<div class="photos-vide">' + T("Sois le premier à partager ta photo ! 📸", "Be the first to share your photo! 📸") + "</div>"; return; }
     const adm = admin();
-    const visibles = docs.filter((d) => adm || !d.signale);
-    if (!visibles.length) { grid.innerHTML = '<div class="photos-vide">' + T("Sois le premier à partager ta photo ! 📸", "Be the first to share your photo! 📸") + "</div>"; return; }
-    grid.innerHTML = visibles.map((d) => {
+    grid.innerHTML = docs.map((d) => {
       const moi = window.currentUser && d.uid === window.currentUser.uid;
-      const del = (moi || adm) ? '<button class="photo-del" data-id="' + d.id + '" data-path="' + (d.path || "") + '" title="' + T("Supprimer", "Delete") + '">🗑️</button>' : "";
-      const sig = (!moi && !d.signale) ? '<button class="photo-sig" data-id="' + d.id + '" title="' + T("Signaler", "Report") + '">🚩</button>' : "";
-      const flag = (adm && d.signale) ? '<span class="photo-flagged" title="' + T("Signalée", "Reported") + '">🚩</span>' : "";
-      return '<div class="photo-item"><img loading="lazy" src="' + d.url + '" alt="photo">' + flag + del + sig +
+      const enAttente = d.statut !== "publie";
+      let btns = "";
+      if (adm && enAttente) btns += '<button class="photo-btn ok" data-act="ok" data-id="' + d.id + '" title="' + T("Publier", "Approve") + '">✓</button>';
+      if (moi || adm) btns += '<button class="photo-btn" data-act="del" data-id="' + d.id + '" data-path="' + (d.path || "") + '" title="' + T("Supprimer", "Delete") + '">🗑️</button>';
+      const badge = enAttente ? '<div class="photo-attente">' + (moi && !adm ? T("⏳ en validation", "⏳ pending") : T("⏳ à valider", "⏳ to review")) + "</div>" : "";
+      return '<div class="photo-item' + (enAttente ? " attente" : "") + '"><img loading="lazy" src="' + d.url + '" alt="photo">' +
+        badge + (btns ? '<div class="photo-btns">' + btns + "</div>" : "") +
         (d.nom ? '<span class="photo-auteur">' + d.nom + "</span>" : "") + "</div>";
     }).join("");
-    grid.querySelectorAll(".photo-del").forEach((b) => b.addEventListener("click", async (e) => {
+    grid.querySelectorAll(".photo-btn").forEach((b) => b.addEventListener("click", async (e) => {
       e.stopPropagation();
-      if (!confirm(T("Supprimer cette photo ?", "Delete this photo?"))) return;
-      await supprimer(b.dataset.id, b.dataset.path);
-      charger(cle, conteneur);
-    }));
-    grid.querySelectorAll(".photo-sig").forEach((b) => b.addEventListener("click", async (e) => {
-      e.stopPropagation();
-      try { await db().collection("photos_recettes").doc(b.dataset.id).update({ signale: true }); } catch (e2) {}
-      if (typeof afficherToast === "function") afficherToast(T("Merci, la photo a été signalée 🚩", "Thanks, the photo was reported 🚩"));
+      if (b.dataset.act === "ok") {
+        try { await db().collection("photos").doc(b.dataset.id).update({ statut: "publie" }); } catch (e2) {}
+        if (typeof afficherToast === "function") afficherToast(T("✅ Photo publiée", "✅ Photo published"));
+      } else {
+        if (!confirm(T("Supprimer cette photo ?", "Delete this photo?"))) return;
+        try { if (b.dataset.path) await storage().ref(b.dataset.path).delete(); } catch (e2) {}
+        try { await db().collection("photos").doc(b.dataset.id).delete(); } catch (e2) {}
+      }
       charger(cle, conteneur);
     }));
   }
 
-  async function supprimer(id, path) {
-    try { if (path) await storage().ref(path).delete(); } catch (e) {}
-    try { await db().collection("photos_recettes").doc(id).delete(); } catch (e) {}
+  async function pingAdmin(cle) {
+    // Alerte Telegram best-effort (si le worker a la route /photo). Non bloquant.
+    try {
+      if (!window.currentUser || !firebase.auth().currentUser) return;
+      const tok = await firebase.auth().currentUser.getIdToken();
+      await fetch(WORKER + "/photo", {
+        method: "POST", headers: { "Content-Type": "application/json", "Authorization": "Bearer " + tok },
+        body: JSON.stringify({ recetteKey: cle, nom: (typeof getNomRecette === "function" ? getNomRecette(cle) : cle) }),
+      });
+    } catch (e) {}
   }
 
   async function envoyer(cle, file, conteneur) {
@@ -109,21 +131,22 @@
     if (typeof afficherToast === "function") afficherToast(T("Envoi de ta photo… 📤", "Uploading your photo… 📤"));
     try {
       const blob = await compresser(file);
-      const path = "photos/" + cle + "/" + window.currentUser.uid + "_" + Date.now() + ".jpg";
+      const uid = window.currentUser.uid;
+      const path = "astuces-photos/" + cle + "/" + uid + "/" + Date.now() + ".jpg";
       const ref = storage().ref(path);
       await ref.put(blob, { contentType: "image/jpeg" });
       const url = await ref.getDownloadURL();
       const prof = window.userProfile || {};
       const nom = prof.prenom || prof.pseudo || window.currentUser.displayName || (window.currentUser.email || "").split("@")[0] || "Chef";
-      await db().collection("photos_recettes").add({ cle: cle, uid: window.currentUser.uid, nom: nom, url: url, path: path, signale: false, ts: Date.now() });
-      if (typeof afficherToast === "function") afficherToast(T("📸 Merci pour ta photo !", "📸 Thanks for your photo!"));
+      await db().collection("photos").add({ recetteKey: cle, uid: uid, url: url, path: path, nom: nom, statut: "en_attente", date: Date.now() });
+      if (typeof afficherToast === "function") afficherToast(T("📸 Merci ! Ta photo sera visible après validation.", "📸 Thanks! Your photo will appear once approved."));
+      pingAdmin(cle);
       charger(cle, conteneur);
     } catch (e) {
       if (typeof afficherToast === "function") afficherToast(T("Échec de l'envoi 😕 (réessaie)", "Upload failed 😕 (try again)"));
     }
   }
 
-  // Coquille injectée dans la fiche (peuplée après le rendu).
   window.photosRecetteHTML = function (cle) {
     return '<div class="fiche-section photos-recette" data-cle="' + cle + '">' +
       '<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap">' +

@@ -1,56 +1,37 @@
-# 📸 Photos des plats — réglages Firebase
+# 📸 Photos des plats — réglages Firebase (modération avant publication)
 
-La fonctionnalité « Vos photos » (js/photos.js) stocke les photos dans **Firebase
-Storage** et leurs métadonnées dans **Firestore** (collection `photos_recettes`).
-3 réglages à faire une fois dans la console Firebase (projet **cuisine-jeje**).
+js/photos.js stocke les photos dans **Firebase Storage** et leurs métadonnées
+dans **Firestore**. Modèle **modéré** : une photo envoyée est `en_attente` et
+n'est publique qu'une fois passée à `publie` par l'admin.
 
-## 1) Activer Storage
-Console Firebase → **Storage** → *Commencer* (si ce n'est pas déjà fait).
+## Schéma (déjà en place côté Jérôme)
+- **Storage** : `astuces-photos/{recetteKey}/{uid}/{fichier}.jpg`
+- **Firestore** collection `photos` : `{ recetteKey, uid, url, path, nom,
+  statut: "en_attente" | "publie", date }`
+- **Admin** : UID `sQWjiKrOIsdzWr0nCspn3WSkY5D3`
 
-## 2) Règles Storage
-Console → Storage → onglet **Rules** → colle, puis **Publier** :
-
-```
-rules_version = '2';
-service firebase.storage {
-  match /b/{bucket}/o {
-    match /photos/{cle}/{fichier} {
-      allow read: if true;                                   // photos publiques
-      allow write: if request.auth != null
-                   && request.resource.size < 5 * 1024 * 1024 // ≤ 5 Mo
-                   && request.resource.contentType.matches('image/.*');
-      allow delete: if request.auth != null
-                    && (fichier.matches(request.auth.uid + '_.*')        // l'auteur
-                        || request.auth.token.email == 'jerome.sainthot@gmail.com'); // admin
-    }
-  }
-}
-```
-
-## 3) Règles Firestore
-Console → **Firestore Database** → onglet **Rules**. **AJOUTE** ce bloc à
-l'intérieur de `match /databases/{database}/documents { … }`, SANS supprimer tes
-règles existantes (ex. `utilisateurs`) :
-
-```
-    match /photos_recettes/{id} {
-      allow read: if true;                                   // galerie publique
-      allow create: if request.auth != null
-                    && request.resource.data.uid == request.auth.uid;
-      allow update: if request.auth != null;                 // signalement (signale:true)
-      allow delete: if request.auth != null
-                    && (resource.data.uid == request.auth.uid
-                        || request.auth.token.email == 'jerome.sainthot@gmail.com');
-    }
-```
-
-Puis **Publier**.
-
-> Index : la galerie trie par date. Si Firestore réclame un index composite
-> (`cle` + `ts`), le code a un repli (tri côté client) donc ce n'est pas bloquant ;
-> tu peux créer l'index via le lien que Firestore propose pour un tri plus rapide.
+## Règles (déjà publiées)
+- Storage : lecture publique ; envoi = connecté + sur son dossier `{uid}` + image
+  `< 5 Mo` ; suppression = auteur ou admin.
+- Firestore `photos` : lecture si `statut == "publie"` (ou auteur, ou admin) ;
+  création = connecté + `uid` propre + `statut == "en_attente"` ; mise à jour =
+  admin (pour publier) ; suppression = auteur ou admin.
 
 ## Modération
-- Chaque photo a 🗑️ pour **son auteur** et pour **l'admin** (toi).
-- 🚩 **Signaler** sur les photos des autres → la photo est masquée pour tout le
-  monde (l'admin la voit encore, marquée 🚩, et peut la supprimer).
+- L'auteur voit sa photo avec « ⏳ en validation ».
+- L'**admin** voit toutes les photos en attente sur la fiche, avec **✓ Publier**
+  et **🗑️ Supprimer**.
+
+## (Optionnel) Alerte Telegram « photo à valider »
+Le client appelle `POST /photo` sur le Worker après chaque upload. Pour activer
+l'alerte, **redéploie le Worker** (la route /photo est déjà dans worker/index.js,
+réutilise tes secrets Telegram existants) :
+```
+cd worker && npx wrangler deploy
+```
+Sans ça, pas d'alerte — tu modères en ouvrant la recette concernée.
+
+## Index Firestore
+Les requêtes n'utilisent que des filtres d'égalité (tri par date côté client),
+donc **aucun index composite** n'est normalement nécessaire. Si Firestore en
+réclame un, clique simplement le lien proposé dans l'erreur (console F12).
