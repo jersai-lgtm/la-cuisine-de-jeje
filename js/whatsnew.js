@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "2.3.1",
+    titre: "🎭 De quoi t'as envie ? + Quiz de goûts",
+    texte: "Deux façons ludiques de trouver quoi cuisiner ! En haut de l'accueil, choisis une envie — 🍲 Réconfortant, 🥗 Léger, 😋 Gourmand, 🌶️ Épicé, ⚡ Rapide, 🌍 Exotique — et hop, des recettes qui collent à ton humeur. Et le 🎯 Quiz de goûts (4 petites questions) te recommande des recettes faites pour toi. Bon appétit ! 👨‍🍳"
+  },
+  {
     v: "2.2.6",
     titre: "🍷 Accords boissons + 🎯 objectif nutri",
     texte: "Deux nouveautés dans chaque recette ! 🍷 Une suggestion d'accord boisson (vin, bière… toujours avec une option sans alcool). Et 🎯 tu peux fixer un objectif nutritionnel (calories/jour + un focus comme léger ou protéiné) : la fiche te montre alors quelle part de ta journée représente la recette, et si elle colle à ton objectif. Bon appétit ! 👨‍🍳"
