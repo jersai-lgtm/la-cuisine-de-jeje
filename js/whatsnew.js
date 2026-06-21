@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "2.2.5",
+    titre: "🌗 Thème clair",
+    texte: "Tu préfères le clair ? Un nouveau bouton 🌙 / ☀️ en haut de l'appli bascule entre le mode sombre (par défaut) et un tout nouveau mode clair, tout doux pour les yeux en journée. Ton choix est mémorisé. 🎨"
+  },
+  {
     v: "2.2.4",
     titre: "🍽️ « Qu'est-ce qu'on mange ? »",
     texte: "Plus d'inspiration en panne ! En haut de l'accueil, un nouveau bouton ouvre un mode découverte façon swipe : fais défiler des recettes (👈 passer, 👉 voir), et quand une te fait envie, hop, la fiche s'ouvre. Ça suit ton profil (allergènes, régime) et la saison. Parfait pour décider du dîner en 30 secondes. 😋"
