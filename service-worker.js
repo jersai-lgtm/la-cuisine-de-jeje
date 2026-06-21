@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v2.2.2";
+const CACHE_NAME = "cuisine-jeje-v2.2.3";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
@@ -286,9 +286,16 @@ self.addEventListener("notificationclick", (e) => {
   const url = (e.notification.data && e.notification.data.url) || (PUSH_SITE + "/");
   e.waitUntil((async () => {
     const cs = await clients.matchAll({ type: "window", includeUncontrolled: true });
+    // 1) Un onglet de l'appli est déjà ouvert → on le met au premier plan et on
+    //    lui DEMANDE d'ouvrir la recette (SPA : un simple navigate ne recharge pas).
     for (const c of cs) {
-      if ("focus" in c) { try { await c.navigate(url); } catch (e) {} return c.focus(); }
+      if (c.url && c.url.indexOf(PUSH_SITE) === 0) {
+        try { c.postMessage({ type: "ouvrir-recette", url: url }); } catch (e) {}
+        if ("focus" in c) return c.focus();
+        return;
+      }
     }
+    // 2) Aucun onglet ouvert → nouvelle fenêtre sur ?recette= (l'appli lira le param au chargement).
     return clients.openWindow(url);
   })());
 });

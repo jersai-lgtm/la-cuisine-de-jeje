@@ -142,8 +142,22 @@
     return v >= SEUIL;
   }
 
+  // Clic sur une notif quand l'appli est DÉJÀ ouverte : le service worker nous
+  // envoie l'URL → on ouvre la fiche directement (la SPA ne se recharge pas).
+  function ecouterSW() {
+    if (!("serviceWorker" in navigator)) return;
+    navigator.serviceWorker.addEventListener("message", (e) => {
+      try {
+        if (!e.data || e.data.type !== "ouvrir-recette") return;
+        const m = String(e.data.url || "").match(/[?&]recette=([^&]+)/);
+        if (m && typeof ouvrirFiche === "function") ouvrirFiche(decodeURIComponent(m[1]), "");
+      } catch (err) {}
+    });
+  }
+
   function demarrer() {
     deepLink();
+    ecouterSW();
     rafraichirFlag();
     if (peutProposer()) setTimeout(banniere, 6000); // après 6 s, sans gêner
   }
