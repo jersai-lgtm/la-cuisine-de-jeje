@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "2.2.6",
+    titre: "🍷 Accords boissons + 🎯 objectif nutri",
+    texte: "Deux nouveautés dans chaque recette ! 🍷 Une suggestion d'accord boisson (vin, bière… toujours avec une option sans alcool). Et 🎯 tu peux fixer un objectif nutritionnel (calories/jour + un focus comme léger ou protéiné) : la fiche te montre alors quelle part de ta journée représente la recette, et si elle colle à ton objectif. Bon appétit ! 👨‍🍳"
+  },
+  {
     v: "2.2.5",
     titre: "🌗 Thème clair",
     texte: "Tu préfères le clair ? Un nouveau bouton 🌙 / ☀️ en haut de l'appli bascule entre le mode sombre (par défaut) et un tout nouveau mode clair, tout doux pour les yeux en journée. Ton choix est mémorisé. 🎨"
