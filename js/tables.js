@@ -1848,7 +1848,6 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
       <button type="button" onclick="ouvrirModeCuisson('${nom}')" aria-label="Lancer le mode cuisson pas à pas" style="display:block;width:100%;box-sizing:border-box;margin:0 0 14px;background:rgba(255,107,161,.14);color:#ff8fb3;border:1.5px solid rgba(255,107,161,.5);border-radius:14px;padding:13px;font-size:16px;font-weight:600;cursor:pointer">👨‍🍳 Lancer le mode cuisson</button>
       <div class="fiche-etapes-liste">${listeEtapes}</div>
     </div>
-    ${typeof photosRecetteHTML === "function" ? photosRecetteHTML(nom) : ""}
     <div class="fiche-claude-section" id="fiche-claude-${nom}">
       <button class="fiche-claude-btn" onclick="ouvrirChatClaude('${nom}')">
         🤖 Demander à Claude
