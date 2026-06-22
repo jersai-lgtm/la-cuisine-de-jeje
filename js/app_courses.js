@@ -801,7 +801,7 @@ function lcGenererPlanPrep() {
     #lc-plan-prep .prep-chev{font-size:11px;color:#88858f;transition:transform .15s ease;flex:none}
     #lc-plan-prep .prep-step.prep-open .prep-chev{transform:rotate(90deg)}
     #lc-plan-prep .prep-step-titre{font-size:13px;color:#fff;font-weight:500;flex:1}
-    #lc-plan-prep .prep-tb{font-size:11px;color:#d7d5db;background:rgba(255,255,255,.07);padding:2px 8px;border-radius:999px;white-space:nowrap}
+    #lc-plan-prep .prep-tb{font-size:11px;color:var(--text-2);background:rgba(255,255,255,.07);padding:2px 8px;border-radius:999px;white-space:nowrap}
     #lc-plan-prep .prep-recs{display:flex;flex-wrap:wrap;gap:4px;margin:5px 0 0 18px}
     #lc-plan-prep .prep-rec{font-size:10px;color:var(--accent-soft,#ff8fb3);background:rgba(var(--accent-rgb),.13);padding:1px 7px;border-radius:999px}
     #lc-plan-prep .prep-step-detail{display:none;font-size:12px;color:#b3b0b8;line-height:1.5;margin:6px 0 0 18px}
@@ -833,7 +833,7 @@ function lcGenererPlanPrep() {
     const cards = joursPresents.map(idx => {
       const demain = detail[idx + 1] || [];
       const aSortir = [...new Set(demain.filter(p => estCongele(p.cle, idx + 1)).map(p => nomDe(p.cle)))];
-      const rappel = aSortir.length ? `<div style="background:rgba(143,184,255,.1);border:1px solid rgba(143,184,255,.3);border-radius:9px;padding:7px 10px;margin-bottom:7px;font-size:11px;color:#9ec1ff">🔔 Ce soir, sors du congélateur pour demain : ${aSortir.map(ech).join(", ")}</div>` : "";
+      const rappel = aSortir.length ? `<div style="background:rgba(143,184,255,.1);border:1px solid rgba(143,184,255,.3);border-radius:9px;padding:7px 10px;margin-bottom:7px;font-size:11px;color:var(--bleu)">🔔 Ce soir, sors du congélateur pour demain : ${aSortir.map(ech).join(", ")}</div>` : "";
       const plats = (detail[idx] || []).map(p => {
         const r = recettes[p.cle]; if (!r) return "";
         const emo = (typeof getEmoji === "function") ? getEmoji(p.cle) : "🍽️";

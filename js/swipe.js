@@ -191,9 +191,9 @@
       .swipe-btn.skip{width:60px;height:60px;font-size:24px;background:#26222e;color:#fff}
       .swipe-btn.fav{width:50px;height:50px;font-size:20px;background:#26222e}
       .swipe-btn.like{width:68px;height:68px;font-size:26px;background:linear-gradient(135deg,#ff5fa2,#ff9330)}
-      .swipe-hint{text-align:center;color:#b6b1c2;font-size:12.5px;padding:6px 0 14px;font-family:system-ui,sans-serif}
+      .swipe-hint{text-align:center;color:var(--text-2);font-size:12.5px;padding:6px 0 14px;font-family:system-ui,sans-serif}
       .swipe-vide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;
-        color:#b6b1c2;padding:30px;font-family:system-ui,sans-serif}
+        color:var(--text-2);padding:30px;font-family:system-ui,sans-serif}
       @media(min-width:560px){.swipe-stack{max-width:460px;margin:8px auto;width:100%}.swipe-actions,.swipe-head{max-width:460px;margin-left:auto;margin-right:auto;width:100%}}
     `;
     document.head.appendChild(s);

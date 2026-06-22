@@ -27,9 +27,9 @@
       .gm-item-nom{display:block;color:#fff;font-size:15px;font-weight:600}
       .gm-item-dlc{display:block;font-size:12.5px;margin-top:2px}
       .gm-perime .gm-item-dlc{color:#ff8a8a}
-      .gm-urgent .gm-item-dlc{color:#ffc266}
+      .gm-urgent .gm-item-dlc{color:var(--or)}
       .gm-ok .gm-item-dlc{color:#9fdcb0}
-      .gm-cook{background:rgba(255,107,161,.16);border:1px solid rgba(255,107,161,.45);color:#ff9ec2;font-size:15px;cursor:pointer;padding:5px 9px;border-radius:9px;flex:0 0 auto}
+      .gm-cook{background:rgba(255,107,161,.16);border:1px solid rgba(255,107,161,.45);color:var(--accent-soft);font-size:15px;cursor:pointer;padding:5px 9px;border-radius:9px;flex:0 0 auto}
       .gm-suppr{background:transparent;border:none;color:#ff7a7a;font-size:16px;cursor:pointer;padding:4px 6px;flex:0 0 auto}
       .gm-vide{text-align:center;color:#88858f;font-size:14px;padding:24px 10px;line-height:1.6}
       #gm-badge{display:none;background:#ff4444;color:#fff;font-size:11px;font-weight:700;border-radius:20px;padding:1px 6px;margin-left:4px;vertical-align:middle}

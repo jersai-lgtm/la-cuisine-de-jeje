@@ -170,7 +170,7 @@ function chargerAstucesPubliees(recetteKey) {
           '<div style="width:28px;height:28px;border-radius:50%;background:#5a6ee0;color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;flex:none">' + init + '</div>' +
           '<span style="font-size:13px;font-weight:600;color:#fff">' + _echapCom(a.pseudo || "Gourmand") + '</span>' + delBtn +
         '</div>' +
-        '<p style="font-size:13px;color:#cfccd4;margin:8px 0 0;line-height:1.5">' + texte + '</p>' +
+        '<p style="font-size:13px;color:var(--text-2);margin:8px 0 0;line-height:1.5">' + texte + '</p>' +
       '</div>';
     }).join("");
   };
@@ -208,7 +208,7 @@ async function chargerAstucesModeration() {
     const z = document.getElementById("admin-moderation-astuces");
     if (!z) return;
     if (arr.length === 0) {
-      z.innerHTML = '<p style="color:#7fc783;font-size:13px">✅ Aucun commentaire à valider — tout est propre !</p>';
+      z.innerHTML = '<p style="color:var(--vert);font-size:13px">✅ Aucun commentaire à valider — tout est propre !</p>';
       return;
     }
     z.innerHTML = arr.map(a => {
@@ -217,7 +217,7 @@ async function chargerAstucesModeration() {
         '<div style="font-size:12px;color:#88858f;margin-bottom:6px">' + _echapCom(a.pseudo || "Gourmand") + ' · sur <strong style="color:var(--accent-soft,#ff8fb3)">' + _echapCom(nomRec) + '</strong></div>' +
         '<p style="font-size:14px;color:#fff;margin:0 0 10px;line-height:1.5">' + _echapCom(a.texte) + '</p>' +
         '<div style="display:flex;gap:8px">' +
-          '<button onclick="approuverAstuce(\'' + a.id + '\')" style="flex:1;background:rgba(76,175,80,.18);color:#7fc783;border:1px solid rgba(76,175,80,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">✅ Approuver</button>' +
+          '<button onclick="approuverAstuce(\'' + a.id + '\')" style="flex:1;background:rgba(76,175,80,.18);color:var(--vert);border:1px solid rgba(76,175,80,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">✅ Approuver</button>' +
           '<button onclick="refuserAstuce(\'' + a.id + '\')" style="flex:1;background:rgba(226,87,76,.15);color:#e8867d;border:1px solid rgba(226,87,76,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">❌ Refuser</button>' +
         '</div>' +
       '</div>';
@@ -501,14 +501,14 @@ async function chargerPhotosModeration() {
   var rendre = function (arr) {
     var z = document.getElementById("admin-moderation-photos");
     if (!z) return;
-    if (arr.length === 0) { z.innerHTML = '<p style="color:#7fc783;font-size:13px">✅ Aucune photo à valider.</p>'; return; }
+    if (arr.length === 0) { z.innerHTML = '<p style="color:var(--vert);font-size:13px">✅ Aucune photo à valider.</p>'; return; }
     z.innerHTML = arr.map(function (p) {
       var nomRec = (typeof getNomRecette === "function" ? getNomRecette(p.recetteKey) : "") || p.recetteKey;
       return '<div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px">' +
         '<div style="font-size:12px;color:#88858f;margin-bottom:8px">' + _echapCom(p.pseudo || "Gourmand") + ' · sur <strong style="color:var(--accent-soft,#ff8fb3)">' + _echapCom(nomRec) + '</strong></div>' +
         '<img loading="lazy" src="' + _echapCom(p.url) + '" alt="" style="width:100%;max-height:280px;object-fit:contain;border-radius:10px;background:#17151c;margin-bottom:10px">' +
         '<div style="display:flex;gap:8px">' +
-          '<button onclick="approuverPhoto(\'' + p.id + '\')" style="flex:1;background:rgba(76,175,80,.18);color:#7fc783;border:1px solid rgba(76,175,80,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">✅ Approuver</button>' +
+          '<button onclick="approuverPhoto(\'' + p.id + '\')" style="flex:1;background:rgba(76,175,80,.18);color:var(--vert);border:1px solid rgba(76,175,80,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">✅ Approuver</button>' +
           '<button onclick="refuserPhoto(\'' + p.id + '\')" style="flex:1;background:rgba(226,87,76,.15);color:#e8867d;border:1px solid rgba(226,87,76,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">❌ Refuser</button>' +
         '</div>' +
       '</div>';

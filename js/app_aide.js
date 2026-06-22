@@ -84,7 +84,7 @@ function _tourRender() {
       '<button onclick="_tourPasser()" aria-label="Fermer" style="position:absolute;top:12px;right:14px;background:transparent;border:none;color:#9b97a3;font-size:20px;cursor:pointer;line-height:1">✕</button>' +
       '<div style="text-align:center;font-size:46px;line-height:1;margin:6px 0 12px">' + s.emoji + '</div>' +
       '<h3 style="text-align:center;margin:0 0 10px;color:#fff;font-size:1.2rem">' + _aideEchap(s.titre) + '</h3>' +
-      '<p style="text-align:center;color:#cfcbd6;font-size:.95rem;line-height:1.5;margin:0 0 18px">' + _aideEchap(s.texte) + '</p>' +
+      '<p style="text-align:center;color:var(--text-2);font-size:.95rem;line-height:1.5;margin:0 0 18px">' + _aideEchap(s.texte) + '</p>' +
       '<div style="display:flex;justify-content:center;gap:7px;margin-bottom:16px">' + dots + '</div>' +
       '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px">' +
         '<button onclick="_tourPasser()" style="background:transparent;border:none;color:#9b97a3;font-size:.86rem;cursor:pointer;padding:8px 4px">Passer</button>' +
@@ -118,7 +118,7 @@ function ouvrirAide() {
         '<span style="font-size:20px;line-height:1">' + s.emoji + '</span>' +
         '<span style="font-weight:700;color:#fff;font-size:.98rem">' + _aideEchap(s.titre) + '</span>' +
       '</div>' +
-      '<p style="margin:0;color:#c7c3ce;font-size:.88rem;line-height:1.5">' + _aideEchap(s.texte) + '</p>' +
+      '<p style="margin:0;color:var(--text-2);font-size:.88rem;line-height:1.5">' + _aideEchap(s.texte) + '</p>' +
     '</div>'
   ).join("");
   m.innerHTML =

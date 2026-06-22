@@ -90,7 +90,7 @@
       "#fiche-substitutions>summary::after{content:'▾';float:right;opacity:.6;transition:transform .2s}" +
       "#fiche-substitutions[open]>summary::after{transform:rotate(180deg)}" +
       "#fiche-substitutions .subs-corps{padding:0 14px 12px}" +
-      "#fiche-substitutions .subs-item{padding:8px 0;border-top:1px solid rgba(255,255,255,.06);font-size:13px;color:#cfccd4;line-height:1.45}" +
+      "#fiche-substitutions .subs-item{padding:8px 0;border-top:1px solid rgba(255,255,255,.06);font-size:13px;color:var(--text-2);line-height:1.45}" +
       "#fiche-substitutions .subs-item b{color:#fff}" +
       "#fiche-substitutions .subs-fleche{color:var(--accent-soft,#ff8fb3);margin:0 4px}";
     document.head.appendChild(st);

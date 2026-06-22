@@ -260,8 +260,8 @@
       .cm-etape-titre{font-size:26px;font-weight:700;margin:0;color:#fff;max-width:680px}
       .cm-etape-detail{font-size:20px;line-height:1.6;color:#e7e4ee;margin:0;max-width:680px}
       .cm-timer{margin-top:6px;min-height:54px;display:flex;justify-content:center;align-items:center}
-      .cm-timer-lancer{background:rgba(255,107,161,.16);color:#ff9ec2;border:1.5px solid rgba(255,107,161,.55);border-radius:14px;padding:13px 20px;font-size:17px;font-weight:600;cursor:pointer}
-      .cm-timer-plus{background:rgba(255,255,255,.08);color:#cfccd4;border:1.5px solid rgba(255,255,255,.18);border-radius:14px;padding:13px 18px;font-size:15px;font-weight:600;cursor:pointer;margin-left:8px}
+      .cm-timer-lancer{background:rgba(255,107,161,.16);color:var(--accent-soft);border:1.5px solid rgba(255,107,161,.55);border-radius:14px;padding:13px 20px;font-size:17px;font-weight:600;cursor:pointer}
+      .cm-timer-plus{background:rgba(255,255,255,.08);color:var(--text-2);border:1.5px solid rgba(255,255,255,.18);border-radius:14px;padding:13px 18px;font-size:15px;font-weight:600;cursor:pointer;margin-left:8px}
       .cm-timers-bar{display:flex;flex-wrap:wrap;gap:8px;padding:10px 14px;justify-content:center;border-top:1px solid rgba(255,255,255,.08);background:rgba(0,0,0,.18)}
       .cm-tchip{display:flex;align-items:center;gap:8px;background:rgba(255,107,161,.14);border:1px solid rgba(255,107,161,.4);border-radius:999px;padding:6px 8px 6px 14px}
       .cm-tchip.fini{background:rgba(124,252,154,.16);border-color:rgba(124,252,154,.5);animation:cmpulse 1s ease-in-out infinite}

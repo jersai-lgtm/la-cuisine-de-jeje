@@ -1652,7 +1652,7 @@ function htmlBilanSemaine(menus, personnes) {
       ".plan-bilan-grid>div{flex:1;min-width:90px;background:rgba(0,0,0,.25);border-radius:12px;padding:9px 10px;text-align:center}" +
       ".bilan-val{display:block;font-size:1.25rem;font-weight:800;color:#fff;line-height:1.1}" +
       ".bilan-lbl{display:block;font-size:.72rem;color:#b3b0b8;margin-top:3px}" +
-      ".bilan-nutri-detail{font-size:.8rem;color:#cfccd4;margin-top:9px;text-align:center}";
+      ".bilan-nutri-detail{font-size:.8rem;color:var(--text-2);margin-top:9px;text-align:center}";
     document.head.appendChild(st);
   }
   const _en = window.LANG === "en";

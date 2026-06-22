@@ -211,7 +211,7 @@ function vfMettreAJourSelection() {
         <div class="vf-result-info">
           <div class="vf-result-nom">${nom}</div>
           <div class="vf-result-manquants">${manquantsTxt}</div>
-          ${manquants.length > 0 ? `<button onclick="event.stopPropagation();vfAjouterManquants('${cle}')" style="margin-top:8px;background:rgba(255,107,161,.16);color:#ff9ec2;border:1px solid rgba(255,107,161,.5);border-radius:10px;padding:7px 12px;font-size:12px;font-weight:600;cursor:pointer">➕ Manquants → liste de courses</button>` : ""}
+          ${manquants.length > 0 ? `<button onclick="event.stopPropagation();vfAjouterManquants('${cle}')" style="margin-top:8px;background:rgba(255,107,161,.16);color:var(--accent-soft);border:1px solid rgba(255,107,161,.5);border-radius:10px;padding:7px 12px;font-size:12px;font-weight:600;cursor:pointer">➕ Manquants → liste de courses</button>` : ""}
         </div>
       </div>`;
     }).join("");

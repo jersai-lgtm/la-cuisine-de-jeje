@@ -53,7 +53,7 @@
       .onb-card{background:#211e26;border:1px solid rgba(var(--w),.12);border-radius:22px;max-width:400px;width:100%;padding:28px 24px 22px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.5)}
       .onb-emoji{font-size:60px;line-height:1;margin-bottom:14px}
       .onb-titre{font-size:21px;font-weight:800;color:var(--text);margin:0 0 10px}
-      .onb-texte{font-size:15px;line-height:1.6;color:#cfccd4;margin:0 0 22px;min-height:96px}
+      .onb-texte{font-size:15px;line-height:1.6;color:var(--text-2);margin:0 0 22px;min-height:96px}
       .onb-dots{display:flex;gap:8px;justify-content:center;margin-bottom:20px}
       .onb-dot{width:8px;height:8px;border-radius:50%;background:rgba(var(--w),.25);transition:all .25s}
       .onb-dot.on{background:var(--accent,#ff4d88);width:22px;border-radius:5px}

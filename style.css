@@ -8,7 +8,12 @@
   --text-4:#666666;                /* texte discret */
   --body-bg:linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("images/fond.webp");
   --panel:10,10,10;                /* panneaux foncés translucides (barre, nav…) */
-  --panel-solid:var(--panel-solid);           /* panneaux/modales foncés opaques */
+  --panel-solid:#1a1a2e;           /* panneaux/modales foncés opaques */
+  --vert:#a5d6a7;                  /* texte vert (succès/positif) — pâle sur sombre */
+  --bleu:#9ec1ff;                  /* texte bleu (info/profil) — pâle sur sombre */
+  --or:#ffd54f;                    /* texte or/ambre (étoiles, prix, alertes douces) */
+  --rouge:#ff8888;                 /* texte rouge/saumon (erreurs, fort) */
+  --mauve:#ce93d8;                 /* texte mauve */
 }
 html[data-theme="light"]{
   --w:0,0,0;
@@ -19,6 +24,14 @@ html[data-theme="light"]{
   --body-bg:linear-gradient(180deg,#fbf7f3 0%,#f2ece4 100%);
   --panel:248,243,236;
   --panel-solid:#ffffff;
+  /* Teintes lisibles sur fond clair (versions foncées) */
+  --accent-soft:#d12d74;
+  --accent-pale:#c2185b;
+  --vert:#2e7d32;
+  --bleu:#1565c0;
+  --or:#a06a00;
+  --rouge:#c62828;
+  --mauve:#7b1fa2;
 }
 html[data-theme="light"] body{ background-attachment:scroll; }
 /* ==========================
@@ -85,7 +98,7 @@ header p  { color: var(--text-2); font-size: 15px; margin: 8px 0 0; }
 #btn-mon-profil {
   background: rgba(38,198,218,.12);
   border-color: rgba(38,198,218,.4);
-  color: #80deea;
+  color:var(--bleu);
 }
 #btn-mon-profil:hover {
   background: rgba(38,198,218,.25);
@@ -547,27 +560,27 @@ header p  { color: var(--text-2); font-size: 15px; margin: 8px 0 0; }
 .fiche-meta > span:nth-child(1) {
   background: rgba(76,175,80,.18);
   border-color: rgba(76,175,80,.4);
-  color: #a5d6a7;
+  color:var(--vert);
 }
 
 /* ⭐ Deuxième badge : niveau (jaune doré) */
 .fiche-meta > span:nth-child(2) {
   background: rgba(255,193,7,.18);
   border-color: rgba(255,193,7,.4);
-  color: #ffd54f;
+  color:var(--or);
 }
 
 /* Badge saison : vert tendre (force la priorité avec sa classe) */
 .fiche-meta .fiche-saison {
   background: rgba(76,175,80,.2);
   border: 1px solid rgba(76,175,80,.4);
-  color: #a5d6a7;
+  color:var(--vert);
 }
 /* Badge historique : bleu doux */
 .fiche-meta .fiche-historique {
   background: rgba(100,149,237,.18);
   border: 1px solid rgba(100,149,237,.4);
-  color: #a8c7ed;
+  color:var(--bleu);
 }
 
 /* ==========================
@@ -735,21 +748,21 @@ header p  { color: var(--text-2); font-size: 15px; margin: 8px 0 0; }
   background: linear-gradient(135deg, rgba(255,193,7,.18) 0%, rgba(255,160,0,.10) 100%);
   border-color: rgba(255,193,7,.4);
 }
-.prix-cal-item:nth-child(1) .pc-label { color: #ffd54f; }
+.prix-cal-item:nth-child(1) .pc-label { color:var(--or); }
 
 /* 🔥 Orange chaud : pour les calories totales */
 .prix-cal-item:nth-child(2) {
   background: linear-gradient(135deg, rgba(255,112,67,.18) 0%, rgba(255,87,34,.10) 100%);
   border-color: rgba(255,112,67,.4);
 }
-.prix-cal-item:nth-child(2) .pc-label { color: #ffab91; }
+.prix-cal-item:nth-child(2) .pc-label { color:var(--rouge); }
 
 /* 👤 Turquoise : pour calories par personne */
 .prix-cal-item:nth-child(3) {
   background: linear-gradient(135deg, rgba(38,198,218,.18) 0%, rgba(0,151,167,.10) 100%);
   border-color: rgba(38,198,218,.4);
 }
-.prix-cal-item:nth-child(3) .pc-label { color: #80deea; }
+.prix-cal-item:nth-child(3) .pc-label { color:var(--bleu); }
 
 .pc-icone  { font-size: 20px; }
 .pc-valeur { font-size: 15px; font-weight: bold; color: var(--text); }
@@ -1354,7 +1367,7 @@ select, input[type="number"] {
 }
 .auth-input:focus { outline: none; border-color: var(--accent-soft,#ff8fb3); }
 /* Options des menus déroulants : fond sombre + texte clair (sinon blanc sur blanc, illisible) */
-.auth-input option { background: #26222e; color: #f5f5f5; }
+.auth-input option { background: #26222e; color:var(--text); }
 
 /* Bouton Google */
 .btn-google {
@@ -1560,7 +1573,7 @@ select, input[type="number"] {
   left: 50%;
   transform: translateX(-50%);
   background: rgba(var(--panel),.88);
-  color: #ffb347;
+  color:var(--or);
   border: 1px solid rgba(255,179,71,.5);
   border-radius: 20px;
   padding: 3px 10px;
@@ -1674,7 +1687,7 @@ select, input[type="number"] {
 }
 .mini-carte-raison {
   display: inline-block; margin-top: 3px; font-size: 9.5px; font-weight: 700;
-  color: #cfe2ff; background: rgba(90,160,245,.16); border-radius: 6px;
+  color:var(--bleu); background: rgba(90,160,245,.16); border-radius: 6px;
   padding: 1px 6px; line-height: 1.5; white-space: nowrap;
 }
 .mini-carte-raison + .mini-carte-raison { margin-left: 4px; }
@@ -2059,7 +2072,7 @@ select, input[type="number"] {
   background: rgba(var(--w),.06);
   font-size: 11px;
   font-weight: 600;
-  color: #ffd6db;
+  color:var(--accent-soft);
   text-align: center;
   letter-spacing: .2px;
 }
@@ -2415,17 +2428,17 @@ select, input[type="number"] {
 
 /* Couleurs des cartes stat */
 .stat-card-or       { background: linear-gradient(135deg, rgba(255,193,7,.15), rgba(255,160,0,.08)); border-color: rgba(255,193,7,.3); }
-.stat-card-or .stat-label { color: #ffd54f; }
+.stat-card-or .stat-label { color:var(--or); }
 .stat-card-rose     { background: linear-gradient(135deg, rgba(var(--accent-rgb),.15), rgba(255,107,161,.08)); border-color: rgba(var(--accent-rgb),.3); }
 .stat-card-rose .stat-label { color: var(--accent-soft,#ff8fb3); }
 .stat-card-violet   { background: linear-gradient(135deg, rgba(186,104,200,.15), rgba(142,68,173,.08)); border-color: rgba(186,104,200,.3); }
-.stat-card-violet .stat-label { color: #ce93d8; }
+.stat-card-violet .stat-label { color:var(--mauve); }
 .stat-card-vert     { background: linear-gradient(135deg, rgba(76,175,80,.15), rgba(56,142,60,.08)); border-color: rgba(76,175,80,.3); }
-.stat-card-vert .stat-label { color: #a5d6a7; }
+.stat-card-vert .stat-label { color:var(--vert); }
 .stat-card-orange   { background: linear-gradient(135deg, rgba(255,112,67,.15), rgba(255,87,34,.08)); border-color: rgba(255,112,67,.3); }
-.stat-card-orange .stat-label { color: #ffab91; }
+.stat-card-orange .stat-label { color:var(--rouge); }
 .stat-card-turquoise { background: linear-gradient(135deg, rgba(38,198,218,.15), rgba(0,151,167,.08)); border-color: rgba(38,198,218,.3); }
-.stat-card-turquoise .stat-label { color: #80deea; }
+.stat-card-turquoise .stat-label { color:var(--bleu); }
 
 /* Records */
 .stats-records {
@@ -3111,7 +3124,7 @@ select, input[type="number"] {
 .vf-reset-btn {
   background: rgba(255,68,68,.2);
   border: 1px solid rgba(255,68,68,.5);
-  color: #ff8888;
+  color:var(--rouge);
   border-radius: 50px;
   padding: 8px 14px;
   cursor: pointer;
@@ -3132,7 +3145,7 @@ select, input[type="number"] {
   padding: 10px 16px;
   margin-bottom: 16px;
   font-size: 14px;
-  color: #aaffcc;
+  color:var(--vert);
   text-align: center;
 }
 
@@ -3319,7 +3332,7 @@ select, input[type="number"] {
   flex: 1;
   font-weight: 600;
   font-size: 15px;
-  color: #ffd54f;
+  color:var(--or);
 }
 
 .notes-badge {
@@ -3417,7 +3430,7 @@ select, input[type="number"] {
 .vf-ia-titre {
   font-size: 16px;
   font-weight: 600;
-  color: #e9c4ff;
+  color:var(--mauve);
   margin-bottom: 6px;
 }
 
@@ -3613,7 +3626,7 @@ select, input[type="number"] {
 
 .lc-btn-reset {
   background: rgba(255,68,68,.15);
-  color: #ff8888;
+  color:var(--rouge);
   border: 1px solid rgba(255,68,68,.4);
   border-radius: 50px;
   padding: 12px 18px;
@@ -3693,7 +3706,7 @@ select, input[type="number"] {
 .lc-recette-retirer {
   background: rgba(255,68,68,.15);
   border: 1px solid rgba(255,68,68,.4);
-  color: #ff8888;
+  color:var(--rouge);
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -3719,7 +3732,7 @@ select, input[type="number"] {
 .lc-progress {
   background: linear-gradient(135deg, rgba(76,175,80,.15), rgba(76,175,80,.05));
   border: 1px solid rgba(76,175,80,.3);
-  color: #aaffcc;
+  color:var(--vert);
   padding: 8px 14px;
   border-radius: 50px;
   font-size: 13px;
@@ -3738,7 +3751,7 @@ select, input[type="number"] {
 .lc-rayon-titre {
   margin: 0 0 10px;
   font-size: 14px;
-  color: #ffd54f;
+  color:var(--or);
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -3746,7 +3759,7 @@ select, input[type="number"] {
 }
 .lc-rayon-count {
   background: rgba(255,193,7,.2);
-  color: #ffc107;
+  color:var(--or);
   padding: 1px 8px;
   border-radius: 50px;
   font-size: 11px;
@@ -4094,7 +4107,7 @@ select, input[type="number"] {
   text-align: center;
   font-weight: 600;
   font-size: 15px;
-  color: #ffd54f;
+  color:var(--or);
   margin-bottom: 14px;
 }
 
@@ -4182,7 +4195,7 @@ select, input[type="number"] {
 
 .top10-stat {
   font-size: 12px;
-  color: #ffd54f;
+  color:var(--or);
   font-weight: 600;
   margin-top: 2px;
 }
@@ -4300,7 +4313,7 @@ select, input[type="number"] {
 .nutri-evol-resume-nb {
   font-size: 24px;
   font-weight: 800;
-  color: #ffd54f;
+  color:var(--or);
 }
 
 /* Cas avec UN seul mois : on affiche juste un gros indicateur */
@@ -4454,7 +4467,7 @@ select, input[type="number"] {
 }
 .avis-moyenne-etoiles {
   font-size: 24px;
-  color: #ffc107;
+  color:var(--or);
   letter-spacing: 2px;
 }
 .avis-moyenne-chiffre {
@@ -4497,7 +4510,7 @@ select, input[type="number"] {
   gap: 10px;
 }
 .mon-avis-deja > span {
-  color: #aaffcc;
+  color:var(--vert);
   font-size: 14px;
   font-weight: 600;
 }
@@ -4559,17 +4572,17 @@ select, input[type="number"] {
 }
 .avis-etoile:hover {
   transform: scale(1.2) rotate(-5deg);
-  color: #ffc107;
+  color:var(--or);
 }
 .avis-etoile.active {
-  color: #ffc107;
+  color:var(--or);
   text-shadow: 0 0 12px rgba(255,193,7,.6);
 }
 
 .avis-note-text {
   text-align: center;
   font-size: 14px;
-  color: #ffd54f;
+  color:var(--or);
   font-weight: 600;
   margin-bottom: 16px;
   min-height: 20px;
@@ -4637,7 +4650,7 @@ select, input[type="number"] {
 }
 .avis-admin-titre {
   text-align: center;
-  color: #ffd54f;
+  color:var(--or);
   margin: 0 0 16px;
   font-size: 16px;
 }
@@ -4658,7 +4671,7 @@ select, input[type="number"] {
 .avis-distrib-label {
   width: 30px;
   font-size: 12px;
-  color: #ffd54f;
+  color:var(--or);
   font-weight: 600;
 }
 .avis-distrib-bar {
@@ -4740,7 +4753,7 @@ select, input[type="number"] {
 /* ============================================================ */
 .admin-section { margin: 24px 0; padding: 16px 0; border-top: 1px solid rgba(var(--w),0.08); }
 .admin-section-titre {
-  color: #ffd700; font-size: 16px; font-weight: 700;
+  color:var(--or); font-size: 16px; font-weight: 700;
   margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
 }
 .admin-mini-titre {
@@ -4748,7 +4761,7 @@ select, input[type="number"] {
 }
 .admin-error {
   background: rgba(255, 99, 99, 0.1); border: 1px solid rgba(255, 99, 99, 0.3);
-  border-radius: 12px; padding: 16px; color: #ffaaaa;
+  border-radius: 12px; padding: 16px; color:var(--rouge);
 }
 .admin-error h5 { color: #ff6363; margin-bottom: 8px; font-size: 14px; }
 .admin-error p { font-size: 13px; line-height: 1.5; }
@@ -4765,13 +4778,13 @@ select, input[type="number"] {
 .admin-carte-val { font-size: 22px; font-weight: 700; color: var(--text); }
 .admin-carte-lbl { font-size: 11px; color: var(--text-3); margin-top: 4px; }
 .admin-carte-vert { background: rgba(76, 175, 80, 0.12); border-color: rgba(76,175,80,0.3); }
-.admin-carte-vert .admin-carte-val { color: #81c784; }
+.admin-carte-vert .admin-carte-val { color:var(--vert); }
 .admin-carte-bleu { background: rgba(33, 150, 243, 0.12); border-color: rgba(33,150,243,0.3); }
-.admin-carte-bleu .admin-carte-val { color: #64b5f6; }
+.admin-carte-bleu .admin-carte-val { color:var(--bleu); }
 .admin-carte-orange { background: rgba(255, 152, 0, 0.12); border-color: rgba(255,152,0,0.3); }
-.admin-carte-orange .admin-carte-val { color: #ffb74d; }
+.admin-carte-orange .admin-carte-val { color:var(--or); }
 .admin-carte-rose { background: rgba(233, 30, 99, 0.12); border-color: rgba(233,30,99,0.3); }
-.admin-carte-rose .admin-carte-val { color: #f48fb1; }
+.admin-carte-rose .admin-carte-val { color:var(--accent-soft); }
 
 /* Foyer moyen */
 .admin-foyer-moy {
@@ -4790,7 +4803,7 @@ select, input[type="number"] {
   background: rgba(var(--w),0.03); border-radius: 12px; padding: 12px;
 }
 .admin-top-titre {
-  color: #ffd700; font-size: 13px; font-weight: 600;
+  color:var(--or); font-size: 13px; font-weight: 600;
   margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid rgba(var(--w),0.08);
 }
 .admin-top-ligne {
@@ -4799,7 +4812,7 @@ select, input[type="number"] {
 }
 .admin-top-rang { color: var(--text-3); font-weight: 700; }
 .admin-top-nom { color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.admin-top-val { color: #ffd700; font-weight: 700; }
+.admin-top-val { color:var(--or); font-weight: 700; }
 
 /* Préférences agrégées */
 .admin-prefs-grille {
@@ -4810,7 +4823,7 @@ select, input[type="number"] {
   background: rgba(var(--w),0.03); border-radius: 12px; padding: 12px;
 }
 .admin-pref-titre {
-  color: #ffd700; font-size: 13px; font-weight: 600;
+  color:var(--or); font-size: 13px; font-weight: 600;
   margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid rgba(var(--w),0.08);
 }
 .admin-pref-ligne {
@@ -4827,7 +4840,7 @@ select, input[type="number"] {
 .admin-pref-fill {
   background: linear-gradient(90deg, var(--accent-soft,#ff8fb3), #ffd700); height: 100%; border-radius: 4px;
 }
-.admin-pref-count { color: #ffd700; font-weight: 700; font-size: 12px; text-align: right; }
+.admin-pref-count { color:var(--or); font-weight: 700; font-size: 12px; text-align: right; }
 
 /* Tableau utilisateurs */
 .admin-tab-wrap {
@@ -4838,7 +4851,7 @@ select, input[type="number"] {
   width: 100%; border-collapse: collapse; font-size: 11px;
 }
 .admin-tab th {
-  background: rgba(255,215,0,0.1); color: #ffd700; padding: 8px 6px;
+  background: rgba(255,215,0,0.1); color:var(--or); padding: 8px 6px;
   font-weight: 600; text-align: left; border-bottom: 1px solid rgba(255,215,0,0.2);
   white-space: nowrap;
 }
@@ -4879,18 +4892,18 @@ select, input[type="number"] {
 /* Étiquette famille (ex: "⛔ Miel interdit < 1 an") : on enlève le fond blanc et on passe en rouge sombre, cohérent avec "Contient". Le cadre rouge de la carte (carte-alerte-bebe) est conservé. */
 .carte-etiquette-famille { background: rgba(28,12,14,.92); box-shadow: 0 2px 8px rgba(0,0,0,.55); }
 .carte-etiquette-bebe { color: #ff5a5a; border: 1px solid rgba(255,68,68,.6); }
-.carte-etiquette-enfant { color: #ffb04d; border: 1px solid rgba(255,153,0,.6); }
+.carte-etiquette-enfant { color:var(--or); border: 1px solid rgba(255,153,0,.6); }
 
 /* ===== Zone "Contient : …" enrichie : allergènes majeurs + allergies perso (ananas) + régime végan/végétarien + alerte famille ===== */
 .carte-indicateurs { margin-top: 6px; display: flex; flex-direction: column; gap: 3px; }
-.carte-allergenes { font-size: 11px; color: #b9b3ad; line-height: 1.35; }
+.carte-allergenes { font-size: 11px; color:var(--text-2); line-height: 1.35; }
 .carte-allergenes .alg-label { color: #8d8780; font-weight: 600; }
 .carte-allergenes .alg-perso { color: #ff5a5a; font-weight: 700; }
-.carte-allergenes-none { font-size: 11px; color: #6fcf8e; }
-.carte-regime-conflit { font-size: 11px; font-weight: 600; color: #ffb04d; }
+.carte-allergenes-none { font-size: 11px; color:var(--vert); }
+.carte-regime-conflit { font-size: 11px; font-weight: 600; color:var(--or); }
 .carte-famille-ligne { font-size: 11px; font-weight: 600; line-height: 1.3; }
 .carte-famille-ligne.fam-bebe { color: #ff5a5a; }
-.carte-famille-ligne.fam-enfant { color: #ffb04d; }
+.carte-famille-ligne.fam-enfant { color:var(--or); }
 
 /* ===== Note communautaire en étoiles par recette (v259.41) ===== */
 .etoiles-section {
@@ -4898,9 +4911,9 @@ select, input[type="number"] {
   background: #1c1922; border: 1px solid #2a2630; border-radius: 14px;
   padding: 14px 16px; margin: 16px 0 8px;
 }
-.etoiles-com-titre { font-weight: 700; color: #f5f5f5; font-size: 14px; }
+.etoiles-com-titre { font-weight: 700; color:var(--text); font-size: 14px; }
 .etoiles-com { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.etoiles-com-stars { color: #f5b301; font-size: 22px; letter-spacing: 1px; }
+.etoiles-com-stars { color:var(--or); font-size: 22px; letter-spacing: 1px; }
 .etoiles-com-moy { color: var(--text); font-size: 18px; }
 .etoiles-com-nb { color: #9b94a3; font-size: 13px; }
 .etoiles-com-vide { color: #9b94a3; font-size: 14px; font-style: italic; }
@@ -4908,15 +4921,15 @@ select, input[type="number"] {
   display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
   border-top: 1px solid #2a2630; padding-top: 10px; margin-top: 2px;
 }
-.etoiles-titre { font-weight: 700; color: #f5f5f5; }
+.etoiles-titre { font-weight: 700; color:var(--text); }
 .fiche-etoiles { display: flex; gap: 4px; }
 .fiche-etoile {
   font-size: 28px; line-height: 1; cursor: pointer; color: #56505e;
   transition: transform .1s ease, color .1s ease; user-select: none;
 }
-.fiche-etoile:hover { transform: scale(1.18); color: #f5b301; }
-.fiche-etoile.active { color: #f5b301; }
-.etoiles-valeur { color: #b9b3c0; font-size: 14px; }
+.fiche-etoile:hover { transform: scale(1.18); color:var(--or); }
+.fiche-etoile.active { color:var(--or); }
+.etoiles-valeur { color:var(--text-2); font-size: 14px; }
 .etoiles-clear {
   margin-left: auto; background: #2a2630; color: var(--accent-soft,#ff8fb3); border: none;
   border-radius: 8px; padding: 5px 11px; cursor: pointer; font-weight: 700; font-size: 13px;
@@ -4941,7 +4954,7 @@ select, input[type="number"] {
 .mini-carte-note.mini-note-sur-image { bottom: calc(100% + 4px); } /* bas-droite de la photo */
 .mini-carte-note.mini-note-sur-info  { bottom: 6px; }              /* repli sans photo : coin carte */
 .note-inline {
-  display: inline-block; background: rgba(245,179,1,.15); color: #f5b301;
+  display: inline-block; background: rgba(245,179,1,.15); color:var(--or);
   font-weight: 800; font-size: 12px; padding: 0 6px; border-radius: 8px; margin-left: 6px;
 }
 
@@ -4999,7 +5012,7 @@ select, input[type="number"] {
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .contrib-statut { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 8px; }
-.statut-attente { background: rgba(245,179,1,.18); color: #f5b301; }
+.statut-attente { background: rgba(245,179,1,.18); color:var(--or); }
 .contrib-moderation { margin-top: 22px; border-top: 2px solid rgba(34,160,120,.4); padding-top: 14px; }
 .contrib-modo-item {
   background: rgba(var(--w),.05); border-radius: 12px; padding: 12px; margin-bottom: 10px;
@@ -5019,9 +5032,9 @@ select, input[type="number"] {
 /* Échange de précisions admin <-> auteur */
 .statut-precision { background: rgba(90,160,245,.18); color: #5aa0f5; }
 .contrib-precision { background: rgba(90,160,245,.08); border: 1px solid rgba(90,160,245,.25); border-radius: 10px; padding: 10px; margin: 6px 0 12px; }
-.contrib-question { color: #cfe2ff; font-size: 13px; margin-bottom: 8px; }
-.contrib-modo-q { color: #9bc1ff; font-size: 12.5px; margin: 4px 0; }
-.contrib-modo-r { color: #d8f5e2; font-size: 13px; margin: 4px 0 8px; }
+.contrib-question { color:var(--bleu); font-size: 13px; margin-bottom: 8px; }
+.contrib-modo-q { color:var(--bleu); font-size: 12.5px; margin: 4px 0; }
+.contrib-modo-r { color:var(--vert); font-size: 13px; margin: 4px 0 8px; }
 .contrib-modo-qbox { margin-top: 8px; }
 .contrib-rep-input {
   width: 100%; box-sizing: border-box; border-radius: 10px; border: 1px solid rgba(var(--w),.15);

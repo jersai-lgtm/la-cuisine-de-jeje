@@ -745,7 +745,7 @@
     const s = document.createElement("style");
     s.id = "assistant-vocal-style";
     s.textContent = `
-      #assistant-mic{background:rgba(255,255,255,.1);border:none;color:#cfccd4;border-radius:50%;width:30px;height:30px;
+      #assistant-mic{background:rgba(255,255,255,.1);border:none;color:var(--text-2);border-radius:50%;width:30px;height:30px;
         font-size:15px;flex-shrink:0;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;
         transition:background .15s,color .15s,box-shadow .15s}
       #assistant-mic:hover{background:var(--accent,#ff4d88);color:#fff}

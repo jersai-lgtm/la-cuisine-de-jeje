@@ -151,7 +151,7 @@ function ouvrirQuoiDeNeuf() {
         (recent ? '<span style="font-size:11px;color:#88858f">nouveau</span>' : '') +
       '</div>' +
       '<div style="font-size:14px;font-weight:600;color:#fff;margin-bottom:3px">' + _qdnEchap(n.titre) + '</div>' +
-      '<p style="font-size:13px;color:#cfccd4;margin:0;line-height:1.5">' + _qdnEchap(n.texte) + '</p>' +
+      '<p style="font-size:13px;color:var(--text-2);margin:0;line-height:1.5">' + _qdnEchap(n.texte) + '</p>' +
     '</div>';
   }).join("");
   m.innerHTML = '<div style="background:#211e26;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px;max-width:420px;width:100%;max-height:80vh;overflow:auto">' +

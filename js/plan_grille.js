@@ -78,7 +78,7 @@
     st.id = "plan-grille-style";
     st.textContent =
       "#plan-grille-perso .grille-jour{display:flex;align-items:center;gap:6px;margin-bottom:7px;flex-wrap:wrap}" +
-      "#plan-grille-perso .grille-jour-nom{min-width:74px;font-size:13px;color:#cfccd4;font-weight:600}" +
+      "#plan-grille-perso .grille-jour-nom{min-width:74px;font-size:13px;color:var(--text-2);font-weight:600}" +
       "#plan-grille-perso .grille-slot{flex:1;min-width:108px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.05);color:#e7e4ec;border-radius:10px;padding:9px 6px;font-size:12px;cursor:pointer;transition:.12s}" +
       "#plan-grille-perso .grille-off{opacity:.5}" +
       "#plan-grille-perso .grille-simple{border-color:#5a9bd4;background:rgba(90,155,212,.16);color:#fff}" +
