@@ -10,7 +10,9 @@
 
 (function () {
   const EN = () => window.LANG === "en";
-  const EXCL_CAT = new Set(["boulangerie", "cocktails", "mocktails", "sauces", "tartinables"]);
+  // Liste BLANCHE des catégories "repas" : on ne propose que des plats du midi/soir
+  // (pas de desserts, sorbets, apéros, entrées… → c'est « qu'est-ce qu'on mange »).
+  const INCL_CAT = new Set(["plats", "salades", "soupes", "pizzas", "healthy"]);
   let pool = [], idx = 0, _actif = false;
 
   // ---- Construction du deck : profil + saison (réutilise la logique suggestions) ----
@@ -26,7 +28,7 @@
     const saison = (typeof getSaisonActuelle === "function") ? getSaisonActuelle() : null;
     let p = Object.keys(recettes).filter((k) => {
       const r = recettes[k];
-      if (!r || !r.nom || EXCL_CAT.has(r.cat)) return false;
+      if (!r || !r.nom || !INCL_CAT.has(r.cat)) return false;
       if (typeof RECETTES_NON_REPAS !== "undefined" && RECETTES_NON_REPAS.has && RECETTES_NON_REPAS.has(k)) return false;
       if (saison && Array.isArray(r.saisons) && r.saisons.length && r.saisons.indexOf(saison) === -1) return false;
       if (motsExclus.size) {
@@ -206,7 +208,7 @@
       ov = document.createElement("div");
       ov.id = "swipe-overlay";
       ov.innerHTML =
-        `<div class="swipe-head"><span class="swipe-titre">${EN() ? "🍽️ What's for dinner?" : "🍽️ Qu'est-ce qu'on mange ?"}</span>` +
+        `<div class="swipe-head"><span class="swipe-titre">${EN() ? "🍽️ What shall we eat?" : "🍽️ Qu'est-ce qu'on mange ?"}</span>` +
         `<button class="swipe-close" aria-label="Fermer">✕</button></div>` +
         `<div class="swipe-stack" id="swipe-stack"></div>` +
         `<div class="swipe-actions">` +

@@ -278,7 +278,7 @@ window.I18N_DICT = {
   "💪 Protéiné": "💪 High-protein", "Au moins 20 g de protéines par portion": "At least 20 g of protein per serving",
   "Occasions": "Occasions", "🥂 Apéro": "🥂 Apéritif", "🧺 Pique-nique": "🧺 Picnic", "🎄 Fêtes": "🎄 Festive",
   "🎲 Surprends-moi": "🎲 Surprise me",
-  "🍽️ Qu'est-ce qu'on mange ce soir ?": "🍽️ What's for dinner tonight?",
+  "🍽️ Qu'est-ce qu'on mange ?": "🍽️ What shall we eat?",
   "Découvre en swipant 👉": "Swipe to discover 👉",
   "Gratuit — garde tes favoris ⭐, ta liste de courses 🛒 et ton garde-manger 📦, synchronisés sur tous tes appareils.": "Free — keep your favorites ⭐, shopping list 🛒 and pantry 📦, synced across all your devices.",
   "Trier les recettes": "Sort recipes", "↕ Trier…": "↕ Sort…",
