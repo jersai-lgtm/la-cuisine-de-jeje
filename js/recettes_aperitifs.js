@@ -2139,5 +2139,75 @@ tapenade: {
       { icone: "🧀", titre: "Fromage & épices", detail: "Rouler dans le fromage râpé, saupoudrer de paprika et de coriandre.", badge: null },
       { icone: "🍋", titre: "Servir", detail: "Servir aussitôt avec un quartier de citron vert.", badge: "💡 Street food" }
     ]
-  }
+  },
+  olivesmarinees: {
+    nom: "Olives Marinées",
+    cat: "aperitifs",
+    pays: "espagne",
+    dateAjout: "2026-06-22T11:00:00",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🫒",
+    description: "L'apéritif méditerranéen en deux minutes : des olives réveillées par l'ail, le citron, les herbes et un trait d'huile d'olive. À préparer la veille pour plus de goût.",
+    tableauOlivesmarinees: [
+      { nb: 1, olives: "60 g", huileolive: "15 ml", ail: "3 g", citron: "5 ml", herbes: "2 g", piment: "1 g" },
+      { nb: 2, olives: "120 g", huileolive: "30 ml", ail: "6 g", citron: "10 ml", herbes: "4 g", piment: "1 g" },
+      { nb: 3, olives: "180 g", huileolive: "45 ml", ail: "9 g", citron: "15 ml", herbes: "6 g", piment: "2 g" },
+      { nb: 4, olives: "240 g", huileolive: "60 ml", ail: "12 g", citron: "20 ml", herbes: "8 g", piment: "2 g" },
+      { nb: 5, olives: "300 g", huileolive: "75 ml", ail: "15 g", citron: "25 ml", herbes: "10 g", piment: "3 g" },
+      { nb: 6, olives: "360 g", huileolive: "90 ml", ail: "18 g", citron: "30 ml", herbes: "12 g", piment: "3 g" },
+      { nb: 7, olives: "420 g", huileolive: "105 ml", ail: "21 g", citron: "35 ml", herbes: "14 g", piment: "4 g" },
+      { nb: 8, olives: "480 g", huileolive: "120 ml", ail: "24 g", citron: "40 ml", herbes: "16 g", piment: "4 g" },
+      { nb: 9, olives: "540 g", huileolive: "135 ml", ail: "27 g", citron: "45 ml", herbes: "18 g", piment: "5 g" },
+      { nb: 10, olives: "600 g", huileolive: "150 ml", ail: "30 g", citron: "50 ml", herbes: "20 g", piment: "5 g" },
+      { nb: 11, olives: "660 g", huileolive: "165 ml", ail: "33 g", citron: "55 ml", herbes: "22 g", piment: "6 g" },
+      { nb: 12, olives: "720 g", huileolive: "180 ml", ail: "36 g", citron: "60 ml", herbes: "24 g", piment: "6 g" },
+      { nb: 13, olives: "780 g", huileolive: "195 ml", ail: "39 g", citron: "65 ml", herbes: "26 g", piment: "7 g" },
+      { nb: 14, olives: "840 g", huileolive: "210 ml", ail: "42 g", citron: "70 ml", herbes: "28 g", piment: "7 g" },
+      { nb: 15, olives: "900 g", huileolive: "225 ml", ail: "45 g", citron: "75 ml", herbes: "30 g", piment: "8 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫒", titre: "Égoutter", detail: "Égoutter et rincer les olives.", badge: null },
+      { icone: "🧄", titre: "Aromates", detail: "Mélanger ail écrasé, zeste et jus de citron, herbes et piment.", badge: null },
+      { icone: "🫗", titre: "Mariner", detail: "Verser sur les olives avec l'huile et mélanger. ASTUCE CHEF : prépare-les la veille — les olives ont besoin de quelques heures pour s'imprégner des aromates.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Réserver au frais au moins 2 h, sortir 30 min avant de servir.", badge: "⏱ 2 h" }
+    ]
+  },
+  muffinssales: {
+    nom: "Muffins Salés Jambon-Fromage",
+    cat: "aperitifs",
+    pays: "france",
+    dateAjout: "2026-06-22T11:00:00",
+    base: 12,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🧁",
+    description: "Les muffins salés moelleux de l'apéro : jambon, gruyère et une pâte aérée. Parfaits tièdes pour un buffet, un pique-nique ou la lunchbox.",
+    tableauMuffinssales: [
+      { nb: 1, farine: "30 g", oeufs: "1", lait: "20 ml", huile: "10 ml", gruyere: "15 g", jambon: "15 g", levure: "2 g", sel: "1 g" },
+      { nb: 2, farine: "60 g", oeufs: "1", lait: "40 ml", huile: "20 ml", gruyere: "30 g", jambon: "30 g", levure: "4 g", sel: "1 g" },
+      { nb: 3, farine: "90 g", oeufs: "1", lait: "60 ml", huile: "30 ml", gruyere: "45 g", jambon: "45 g", levure: "6 g", sel: "2 g" },
+      { nb: 4, farine: "120 g", oeufs: "2", lait: "80 ml", huile: "40 ml", gruyere: "60 g", jambon: "60 g", levure: "8 g", sel: "2 g" },
+      { nb: 5, farine: "150 g", oeufs: "2", lait: "100 ml", huile: "50 ml", gruyere: "75 g", jambon: "75 g", levure: "10 g", sel: "3 g" },
+      { nb: 6, farine: "180 g", oeufs: "2", lait: "120 ml", huile: "60 ml", gruyere: "90 g", jambon: "90 g", levure: "12 g", sel: "3 g" },
+      { nb: 7, farine: "210 g", oeufs: "3", lait: "140 ml", huile: "70 ml", gruyere: "105 g", jambon: "105 g", levure: "14 g", sel: "4 g" },
+      { nb: 8, farine: "240 g", oeufs: "3", lait: "160 ml", huile: "80 ml", gruyere: "120 g", jambon: "120 g", levure: "16 g", sel: "4 g" },
+      { nb: 9, farine: "270 g", oeufs: "4", lait: "180 ml", huile: "90 ml", gruyere: "135 g", jambon: "135 g", levure: "18 g", sel: "5 g" },
+      { nb: 10, farine: "300 g", oeufs: "4", lait: "200 ml", huile: "100 ml", gruyere: "150 g", jambon: "150 g", levure: "20 g", sel: "5 g" },
+      { nb: 11, farine: "330 g", oeufs: "4", lait: "220 ml", huile: "110 ml", gruyere: "165 g", jambon: "165 g", levure: "22 g", sel: "6 g" },
+      { nb: 12, farine: "360 g", oeufs: "5", lait: "240 ml", huile: "120 ml", gruyere: "180 g", jambon: "180 g", levure: "24 g", sel: "6 g" },
+      { nb: 13, farine: "390 g", oeufs: "5", lait: "260 ml", huile: "130 ml", gruyere: "195 g", jambon: "195 g", levure: "26 g", sel: "7 g" },
+      { nb: 14, farine: "420 g", oeufs: "6", lait: "280 ml", huile: "140 ml", gruyere: "210 g", jambon: "210 g", levure: "28 g", sel: "7 g" },
+      { nb: 15, farine: "450 g", oeufs: "6", lait: "300 ml", huile: "150 ml", gruyere: "225 g", jambon: "225 g", levure: "30 g", sel: "8 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, levure et sel, puis incorporer œufs, lait et huile.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Ajouter le gruyère râpé et le jambon en dés. ASTUCE CHEF : ne mélange pas trop la pâte une fois la farine ajoutée — quelques grumeaux garantissent des muffins moelleux, pas caoutchouteux.", badge: null },
+      { icone: "🧁", titre: "Mouler", detail: "Répartir dans des moules à muffins aux 3/4.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire à 180°C jusqu'à ce qu'ils soient dorés et gonflés.", badge: "⏱ 20 min" }
+    ]
+  },
 });

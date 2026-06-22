@@ -1398,5 +1398,41 @@ Object.assign(recettes, {
       { icone: "🥗", titre: "Mélanger", detail: "Verser la vinaigrette chaude sur les pommes de terre tièdes, ajouter les cornichons. Mélanger délicatement.", badge: null },
       { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 30 min pour que les pommes de terre s'imprègnent. Parsemer de persil.", badge: "💡 Tiède" }
     ]
-  }
+  },
+  saladepatatedouce: {
+    nom: "Salade de Patate Douce Rôtie & Feta",
+    cat: "salades",
+    pays: "etats-unis",
+    dateAjout: "2026-06-22T11:00:00",
+    saisons: ["automne", "hiver"],
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Une salade d'automne réconfortante et chic : patate douce rôtie au four, feta crémeuse, roquette poivrée et noix croquantes, le tout lié au miel.",
+    tableauSaladepatatedouce: [
+      { nb: 1, patatedouce: "150 g", feta: "40 g", roquette: "30 g", noix: "15 g", huileolive: "10 ml", miel: "5 g", citron: "5 ml" },
+      { nb: 2, patatedouce: "300 g", feta: "80 g", roquette: "60 g", noix: "30 g", huileolive: "20 ml", miel: "10 g", citron: "10 ml" },
+      { nb: 3, patatedouce: "450 g", feta: "120 g", roquette: "90 g", noix: "45 g", huileolive: "30 ml", miel: "15 g", citron: "15 ml" },
+      { nb: 4, patatedouce: "600 g", feta: "160 g", roquette: "120 g", noix: "60 g", huileolive: "40 ml", miel: "20 g", citron: "20 ml" },
+      { nb: 5, patatedouce: "750 g", feta: "200 g", roquette: "150 g", noix: "75 g", huileolive: "50 ml", miel: "25 g", citron: "25 ml" },
+      { nb: 6, patatedouce: "900 g", feta: "240 g", roquette: "180 g", noix: "90 g", huileolive: "60 ml", miel: "30 g", citron: "30 ml" },
+      { nb: 7, patatedouce: "1050 g", feta: "280 g", roquette: "210 g", noix: "105 g", huileolive: "70 ml", miel: "35 g", citron: "35 ml" },
+      { nb: 8, patatedouce: "1200 g", feta: "320 g", roquette: "240 g", noix: "120 g", huileolive: "80 ml", miel: "40 g", citron: "40 ml" },
+      { nb: 9, patatedouce: "1350 g", feta: "360 g", roquette: "270 g", noix: "135 g", huileolive: "90 ml", miel: "45 g", citron: "45 ml" },
+      { nb: 10, patatedouce: "1500 g", feta: "400 g", roquette: "300 g", noix: "150 g", huileolive: "100 ml", miel: "50 g", citron: "50 ml" },
+      { nb: 11, patatedouce: "1650 g", feta: "440 g", roquette: "330 g", noix: "165 g", huileolive: "110 ml", miel: "55 g", citron: "55 ml" },
+      { nb: 12, patatedouce: "1800 g", feta: "480 g", roquette: "360 g", noix: "180 g", huileolive: "120 ml", miel: "60 g", citron: "60 ml" },
+      { nb: 13, patatedouce: "1950 g", feta: "520 g", roquette: "390 g", noix: "195 g", huileolive: "130 ml", miel: "65 g", citron: "65 ml" },
+      { nb: 14, patatedouce: "2100 g", feta: "560 g", roquette: "420 g", noix: "210 g", huileolive: "140 ml", miel: "70 g", citron: "70 ml" },
+      { nb: 15, patatedouce: "2250 g", feta: "600 g", roquette: "450 g", noix: "225 g", huileolive: "150 ml", miel: "75 g", citron: "75 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "Rôtir", detail: "Couper la patate douce en cubes, enrober d'huile et rôtir à 200°C jusqu'à tendreté et bords dorés.", badge: "⏱ 25 min" },
+      { icone: "🥄", titre: "Vinaigrette", detail: "Fouetter huile d'olive, citron et miel.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mêler patate douce tiède, roquette, feta émiettée et noix. ASTUCE CHEF : ajoute la roquette quand la patate douce est juste tiède — trop chaude, elle la ferait flétrir.", badge: null },
+      { icone: "🍯", titre: "Assaisonner", detail: "Arroser de vinaigrette et servir aussitôt.", badge: null }
+    ]
+  },
 });

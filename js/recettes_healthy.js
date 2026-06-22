@@ -1026,4 +1026,75 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Ajouter la féta et les herbes juste avant de servir.", badge: null }
     ]
   },
+  pokebowlpoulet: {
+    nom: "Poke Bowl Poulet",
+    cat: "healthy",
+    pays: "etats-unis",
+    dateAjout: "2026-06-22T11:00:00",
+    saisons: ["ete"],
+    base: 2,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Le bowl hawaïen version poulet : riz vinaigré, poulet mariné, avocat, concombre, carotte et edamame. Frais, complet et coloré.",
+    tableauPokebowlpoulet: [
+      { nb: 1, riz: "80 g", poulet: "100 g", avocat: "50 g", concombre: "50 g", carotte: "40 g", edamame: "40 g", saucesoja: "15 ml", sesame: "3 g", citronvert: "5 ml" },
+      { nb: 2, riz: "160 g", poulet: "200 g", avocat: "100 g", concombre: "100 g", carotte: "80 g", edamame: "80 g", saucesoja: "30 ml", sesame: "6 g", citronvert: "10 ml" },
+      { nb: 3, riz: "240 g", poulet: "300 g", avocat: "150 g", concombre: "150 g", carotte: "120 g", edamame: "120 g", saucesoja: "45 ml", sesame: "9 g", citronvert: "15 ml" },
+      { nb: 4, riz: "320 g", poulet: "400 g", avocat: "200 g", concombre: "200 g", carotte: "160 g", edamame: "160 g", saucesoja: "60 ml", sesame: "12 g", citronvert: "20 ml" },
+      { nb: 5, riz: "400 g", poulet: "500 g", avocat: "250 g", concombre: "250 g", carotte: "200 g", edamame: "200 g", saucesoja: "75 ml", sesame: "15 g", citronvert: "25 ml" },
+      { nb: 6, riz: "480 g", poulet: "600 g", avocat: "300 g", concombre: "300 g", carotte: "240 g", edamame: "240 g", saucesoja: "90 ml", sesame: "18 g", citronvert: "30 ml" },
+      { nb: 7, riz: "560 g", poulet: "700 g", avocat: "350 g", concombre: "350 g", carotte: "280 g", edamame: "280 g", saucesoja: "105 ml", sesame: "21 g", citronvert: "35 ml" },
+      { nb: 8, riz: "640 g", poulet: "800 g", avocat: "400 g", concombre: "400 g", carotte: "320 g", edamame: "320 g", saucesoja: "120 ml", sesame: "24 g", citronvert: "40 ml" },
+      { nb: 9, riz: "720 g", poulet: "900 g", avocat: "450 g", concombre: "450 g", carotte: "360 g", edamame: "360 g", saucesoja: "135 ml", sesame: "27 g", citronvert: "45 ml" },
+      { nb: 10, riz: "800 g", poulet: "1000 g", avocat: "500 g", concombre: "500 g", carotte: "400 g", edamame: "400 g", saucesoja: "150 ml", sesame: "30 g", citronvert: "50 ml" },
+      { nb: 11, riz: "880 g", poulet: "1100 g", avocat: "550 g", concombre: "550 g", carotte: "440 g", edamame: "440 g", saucesoja: "165 ml", sesame: "33 g", citronvert: "55 ml" },
+      { nb: 12, riz: "960 g", poulet: "1200 g", avocat: "600 g", concombre: "600 g", carotte: "480 g", edamame: "480 g", saucesoja: "180 ml", sesame: "36 g", citronvert: "60 ml" },
+      { nb: 13, riz: "1040 g", poulet: "1300 g", avocat: "650 g", concombre: "650 g", carotte: "520 g", edamame: "520 g", saucesoja: "195 ml", sesame: "39 g", citronvert: "65 ml" },
+      { nb: 14, riz: "1120 g", poulet: "1400 g", avocat: "700 g", concombre: "700 g", carotte: "560 g", edamame: "560 g", saucesoja: "210 ml", sesame: "42 g", citronvert: "70 ml" },
+      { nb: 15, riz: "1200 g", poulet: "1500 g", avocat: "750 g", concombre: "750 g", carotte: "600 g", edamame: "600 g", saucesoja: "225 ml", sesame: "45 g", citronvert: "75 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz et l'assaisonner d'un trait de vinaigre de riz tiède.", badge: "⏱ 15 min" },
+      { icone: "🍗", titre: "Poulet", detail: "Mariner le poulet dans la sauce soja et le citron vert, puis le poêler.", badge: "⏱ 8 min" },
+      { icone: "🔪", titre: "Tailler", detail: "Couper avocat, concombre et carotte en lamelles régulières.", badge: null },
+      { icone: "🥣", titre: "Dresser", detail: "Disposer riz, poulet et légumes en secteurs. ASTUCE CHEF : range chaque ingrédient en quartiers nets dans le bol — un poke se mange autant avec les yeux qu'avec la bouche.", badge: null }
+    ]
+  },
+  cremebudwig: {
+    nom: "Crème Budwig",
+    cat: "healthy",
+    pays: "suisse",
+    dateAjout: "2026-06-22T11:00:00",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    description: "Le petit-déjeuner santé du Dr Kousmine : fromage blanc et huile riche en oméga, banane écrasée, céréales, graines et fruits frais. Énergie complète du matin.",
+    tableauCremebudwig: [
+      { nb: 1, fromageblanc: "100 g", banane: "60 g", citron: "10 ml", flocons: "20 g", graines: "10 g", huileolive: "5 ml", miel: "8 g", framboise: "40 g" },
+      { nb: 2, fromageblanc: "200 g", banane: "120 g", citron: "20 ml", flocons: "40 g", graines: "20 g", huileolive: "10 ml", miel: "16 g", framboise: "80 g" },
+      { nb: 3, fromageblanc: "300 g", banane: "180 g", citron: "30 ml", flocons: "60 g", graines: "30 g", huileolive: "15 ml", miel: "24 g", framboise: "120 g" },
+      { nb: 4, fromageblanc: "400 g", banane: "240 g", citron: "40 ml", flocons: "80 g", graines: "40 g", huileolive: "20 ml", miel: "32 g", framboise: "160 g" },
+      { nb: 5, fromageblanc: "500 g", banane: "300 g", citron: "50 ml", flocons: "100 g", graines: "50 g", huileolive: "25 ml", miel: "40 g", framboise: "200 g" },
+      { nb: 6, fromageblanc: "600 g", banane: "360 g", citron: "60 ml", flocons: "120 g", graines: "60 g", huileolive: "30 ml", miel: "48 g", framboise: "240 g" },
+      { nb: 7, fromageblanc: "700 g", banane: "420 g", citron: "70 ml", flocons: "140 g", graines: "70 g", huileolive: "35 ml", miel: "56 g", framboise: "280 g" },
+      { nb: 8, fromageblanc: "800 g", banane: "480 g", citron: "80 ml", flocons: "160 g", graines: "80 g", huileolive: "40 ml", miel: "64 g", framboise: "320 g" },
+      { nb: 9, fromageblanc: "900 g", banane: "540 g", citron: "90 ml", flocons: "180 g", graines: "90 g", huileolive: "45 ml", miel: "72 g", framboise: "360 g" },
+      { nb: 10, fromageblanc: "1000 g", banane: "600 g", citron: "100 ml", flocons: "200 g", graines: "100 g", huileolive: "50 ml", miel: "80 g", framboise: "400 g" },
+      { nb: 11, fromageblanc: "1100 g", banane: "660 g", citron: "110 ml", flocons: "220 g", graines: "110 g", huileolive: "55 ml", miel: "88 g", framboise: "440 g" },
+      { nb: 12, fromageblanc: "1200 g", banane: "720 g", citron: "120 ml", flocons: "240 g", graines: "120 g", huileolive: "60 ml", miel: "96 g", framboise: "480 g" },
+      { nb: 13, fromageblanc: "1300 g", banane: "780 g", citron: "130 ml", flocons: "260 g", graines: "130 g", huileolive: "65 ml", miel: "104 g", framboise: "520 g" },
+      { nb: 14, fromageblanc: "1400 g", banane: "840 g", citron: "140 ml", flocons: "280 g", graines: "140 g", huileolive: "70 ml", miel: "112 g", framboise: "560 g" },
+      { nb: 15, fromageblanc: "1500 g", banane: "900 g", citron: "150 ml", flocons: "300 g", graines: "150 g", huileolive: "75 ml", miel: "120 g", framboise: "600 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥄", titre: "Base", detail: "Fouetter le fromage blanc avec l'huile et le jus de citron jusqu'à émulsion lisse.", badge: null },
+      { icone: "🍌", titre: "Banane", detail: "Écraser la banane et l'incorporer avec le miel.", badge: null },
+      { icone: "🌾", titre: "Céréales", detail: "Ajouter les flocons et les graines fraîchement moulus. ASTUCE CHEF : mouds les graines juste avant de servir — entières, leurs oméga restent enfermés et peu assimilables.", badge: null },
+      { icone: "🫐", titre: "Garnir", detail: "Couronner de framboises fraîches.", badge: null }
+    ]
+  },
 });

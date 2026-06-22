@@ -1,6 +1,122 @@
 // Généré par tools/traduire_batch.mjs — NE PAS éditer à la main.
 // Traductions EN des recettes : { cle: { nom, description, etapes:[{titre,detail}] } }
 window.RECETTES_EN = {
+ "pizzacapricciosa": {
+  "nom": "Capricciosa Pizza",
+  "description": "The whim pizza: tomato sauce, mozzarella, ham, mushrooms, artichoke hearts and olives. A generous, balanced Italian classic."
+ },
+ "pizzaortolana": {
+  "nom": "Ortolana Pizza",
+  "description": "The garden pizza: grilled zucchini, eggplant and pepper on a tomato-mozzarella base. Vegetarian, colorful and full of sunshine."
+ },
+ "pizzatonno": {
+  "nom": "Tuna & Onion Pizza",
+  "description": "The fisherman's pizza: tuna, red onion and olives on tomato sauce and mozzarella. Simple, briny and always a hit."
+ },
+ "pizzasalsiccia": {
+  "nom": "Salsiccia Pizza",
+  "description": "The rustic Italian pizza: golden sausage meat, arugula and parmesan shavings. Indulgent and full of character."
+ },
+ "pizzaboscaiola": {
+  "nom": "Boscaiola Pizza",
+  "description": "The woodcutter's white pizza: cream, mushrooms and sausage, no tomato sauce. Creamy, woodsy and comforting."
+ },
+ "pizzanapoli": {
+  "nom": "Napoli Pizza",
+  "description": "The authentic Neapolitan: anchovies, capers and olives on tomato and mozzarella. Bold, briny and typical of the South."
+ },
+ "glacenoixpecan": {
+  "nom": "Pecan Ice Cream",
+  "description": "A nostalgic American ice cream: brown-sugar caramel custard with butter-roasted pecan pieces. Real butter pecan."
+ },
+ "glacecookiedough": {
+  "nom": "Cookie Dough Ice Cream",
+  "description": "The ultimate treat ice cream: a vanilla base studded with chunks of raw (egg-free) chocolate-chip cookie dough."
+ },
+ "glacetiramisu": {
+  "nom": "Tiramisu Ice Cream",
+  "description": "Tiramisu in frozen form: mascarpone, coffee and soaked ladyfingers, dusted with cocoa. The Italian dessert in a scoop."
+ },
+ "sorbetmelon": {
+  "nom": "Melon Sorbet",
+  "description": "Summer's most refreshing sorbet: ripe melon, a dash of lemon and just enough sugar. 100% fruit."
+ },
+ "sorbetlitchi": {
+  "nom": "Lychee Sorbet",
+  "description": "A floral, delicate sorbet: fragrant lychees brightened with a touch of lime. Light, exotic and elegant after a meal."
+ },
+ "sorbetcassis": {
+  "nom": "Blackcurrant Sorbet",
+  "description": "An intense, tangy sorbet: blackcurrant at its aromatic peak, barely sweetened. A spectacular purple color."
+ },
+ "beurreamande": {
+  "nom": "Almond Butter",
+  "description": "Homemade almond butter: just roasted almonds blended for a long time until they release their oil, with a touch of honey and salt. Rich and creamy."
+ },
+ "confitureabricot": {
+  "nom": "Apricot Jam",
+  "description": "The quintessential summer jam: ripe apricots, a dash of lemon and just enough sugar for a perfect set and bright flavor."
+ },
+ "confituremyrtille": {
+  "nom": "Blueberry Jam",
+  "description": "An intense, velvety jam: sugar-soaked blueberries, barely brightened with lemon. Sublime on fresh bread or yogurt."
+ },
+ "marmeladeorange": {
+  "nom": "Orange Marmalade",
+  "description": "The English breakfast marmalade: oranges, candied peel and an elegant bitterness balanced by sugar. A winter toast wake-up call."
+ },
+ "geleecoing": {
+  "nom": "Quince Jelly",
+  "description": "Grandmother's translucent jelly: quince juice, naturally rich in pectin, sets on its own into a fragrant amber jelly."
+ },
+ "kouglof": {
+  "nom": "Kouglof",
+  "description": "The Alsatian brioche in its fluted mold: a rich buttery leavened dough, dotted with soaked raisins and almonds, dusted with icing sugar."
+ },
+ "tarteausucre": {
+  "nom": "Sugar Tart",
+  "description": "The tart of northern France and Belgium: a soft brioche dough topped with a melting brown-sugar-and-cream filling, caramelized in the oven."
+ },
+ "tartecitronmeringuee": {
+  "nom": "Lemon Meringue Pie",
+  "description": "The great classic: crisp shortcrust, tangy lemon curd and a generous golden meringue. The perfect balance of sharp and sweet."
+ },
+ "quatrequarts": {
+  "nom": "Pound Cake",
+  "description": "The simple Breton cake: four ingredients in equal weights — butter, sugar, flour, eggs. Moist, buttery and foolproof."
+ },
+ "pokebowlpoulet": {
+  "nom": "Chicken Poke Bowl",
+  "description": "The Hawaiian bowl, chicken version: vinegared rice, marinated chicken, avocado, cucumber, carrot and edamame. Fresh, complete and colorful."
+ },
+ "cremebudwig": {
+  "nom": "Budwig Cream",
+  "description": "Dr Kousmine's healthy breakfast: fromage blanc with omega-rich oil, mashed banana, cereals, seeds and fresh fruit. Complete morning energy."
+ },
+ "popcornmaison": {
+  "nom": "Homemade Popcorn",
+  "description": "Sweet-and-salty homemade popcorn, made in 5 minutes in a pot: kernels popped in hot oil, coated with butter and caramelized sugar."
+ },
+ "proteinballcacao": {
+  "nom": "Cacao Protein Balls",
+  "description": "No-bake energy bites: dates, oats, cacao and peanuts blended and rolled into balls. The healthy snack before or after sport."
+ },
+ "olivesmarinees": {
+  "nom": "Marinated Olives",
+  "description": "The Mediterranean appetizer in two minutes: olives livened up with garlic, lemon, herbs and a drizzle of olive oil. Best made the day before."
+ },
+ "muffinssales": {
+  "nom": "Savory Ham & Cheese Muffins",
+  "description": "Soft savory aperitif muffins: ham, gruyère and an airy batter. Perfect warm for a buffet, picnic or lunchbox."
+ },
+ "saladepatatedouce": {
+  "nom": "Roasted Sweet Potato & Feta Salad",
+  "description": "A comforting, chic autumn salad: oven-roasted sweet potato, creamy feta, peppery arugula and crunchy walnuts, brought together with honey."
+ },
+ "soupecourgecoco": {
+  "nom": "Squash-Coconut Soup with Ginger",
+  "description": "A smooth, fragrant velouté: the sweetness of roasted squash meets coconut milk and the kick of ginger. Autumn comfort with Thai accents."
+ },
  "babaganoush": {
   "nom": "Baba Ganoush",
   "description": "Baba Ganoush — Lebanese eggplant caviar. Smoked eggplant mashed with tahini, lemon and garlic. Served with pita bread.",

@@ -2132,4 +2132,74 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir chaud avec ketchup et moutarde, pour profiter du fromage filant.", badge: null }
     ]
   },
+  popcornmaison: {
+    nom: "Popcorn Maison",
+    cat: "encas",
+    pays: "etats-unis",
+    dateAjout: "2026-06-22T11:00:00",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍿",
+    description: "Le pop-corn maison sucré-salé, fait en 5 minutes à la casserole : des grains qui éclatent dans l'huile chaude, nappés de beurre et de sucre caramélisé.",
+    tableauPopcornmaison: [
+      { nb: 1, mais: "30 g", huile: "8 ml", beurre: "10 g", sucre: "8 g", sel: "1 g" },
+      { nb: 2, mais: "60 g", huile: "16 ml", beurre: "20 g", sucre: "16 g", sel: "2 g" },
+      { nb: 3, mais: "90 g", huile: "24 ml", beurre: "30 g", sucre: "24 g", sel: "3 g" },
+      { nb: 4, mais: "120 g", huile: "32 ml", beurre: "40 g", sucre: "32 g", sel: "4 g" },
+      { nb: 5, mais: "150 g", huile: "40 ml", beurre: "50 g", sucre: "40 g", sel: "5 g" },
+      { nb: 6, mais: "180 g", huile: "48 ml", beurre: "60 g", sucre: "48 g", sel: "6 g" },
+      { nb: 7, mais: "210 g", huile: "56 ml", beurre: "70 g", sucre: "56 g", sel: "7 g" },
+      { nb: 8, mais: "240 g", huile: "64 ml", beurre: "80 g", sucre: "64 g", sel: "8 g" },
+      { nb: 9, mais: "270 g", huile: "72 ml", beurre: "90 g", sucre: "72 g", sel: "9 g" },
+      { nb: 10, mais: "300 g", huile: "80 ml", beurre: "100 g", sucre: "80 g", sel: "10 g" },
+      { nb: 11, mais: "330 g", huile: "88 ml", beurre: "110 g", sucre: "88 g", sel: "11 g" },
+      { nb: 12, mais: "360 g", huile: "96 ml", beurre: "120 g", sucre: "96 g", sel: "12 g" },
+      { nb: 13, mais: "390 g", huile: "104 ml", beurre: "130 g", sucre: "104 g", sel: "13 g" },
+      { nb: 14, mais: "420 g", huile: "112 ml", beurre: "140 g", sucre: "112 g", sel: "14 g" },
+      { nb: 15, mais: "450 g", huile: "120 ml", beurre: "150 g", sucre: "120 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌽", titre: "Chauffer", detail: "Chauffer l'huile dans une grande casserole avec 2-3 grains témoins, couvercle posé.", badge: "⏱ 2 min" },
+      { icone: "💥", titre: "Éclater", detail: "Quand les témoins éclatent, verser le reste du maïs, couvrir et secouer jusqu'à la fin des éclats. ASTUCE CHEF : retire du feu dès que les éclats s'espacent à 2-3 secondes — une seconde de trop et ça brûle.", badge: "⏱ 3 min" },
+      { icone: "🧈", titre: "Napper", detail: "Faire fondre beurre et sucre, verser sur le pop-corn et mélanger.", badge: null },
+      { icone: "🧂", titre: "Saler", detail: "Saler légèrement et déguster aussitôt.", badge: null }
+    ]
+  },
+  proteinballcacao: {
+    nom: "Protein Balls Cacao",
+    cat: "encas",
+    pays: "etats-unis",
+    dateAjout: "2026-06-22T11:00:00",
+    base: 12,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "⚡",
+    description: "Les bouchées énergétiques sans cuisson : dattes, flocons d'avoine, cacao et cacahuètes mixés et roulés en boules. L'encas sain avant ou après le sport.",
+    tableauProteinballcacao: [
+      { nb: 1, dattes: "15 g", flocons: "10 g", cacao: "3 g", cacahuetes: "8 g", miel: "3 g", sesame: "1 g" },
+      { nb: 2, dattes: "30 g", flocons: "20 g", cacao: "6 g", cacahuetes: "16 g", miel: "6 g", sesame: "2 g" },
+      { nb: 3, dattes: "45 g", flocons: "30 g", cacao: "9 g", cacahuetes: "24 g", miel: "9 g", sesame: "3 g" },
+      { nb: 4, dattes: "60 g", flocons: "40 g", cacao: "12 g", cacahuetes: "32 g", miel: "12 g", sesame: "4 g" },
+      { nb: 5, dattes: "75 g", flocons: "50 g", cacao: "15 g", cacahuetes: "40 g", miel: "15 g", sesame: "5 g" },
+      { nb: 6, dattes: "90 g", flocons: "60 g", cacao: "18 g", cacahuetes: "48 g", miel: "18 g", sesame: "6 g" },
+      { nb: 7, dattes: "105 g", flocons: "70 g", cacao: "21 g", cacahuetes: "56 g", miel: "21 g", sesame: "7 g" },
+      { nb: 8, dattes: "120 g", flocons: "80 g", cacao: "24 g", cacahuetes: "64 g", miel: "24 g", sesame: "8 g" },
+      { nb: 9, dattes: "135 g", flocons: "90 g", cacao: "27 g", cacahuetes: "72 g", miel: "27 g", sesame: "9 g" },
+      { nb: 10, dattes: "150 g", flocons: "100 g", cacao: "30 g", cacahuetes: "80 g", miel: "30 g", sesame: "10 g" },
+      { nb: 11, dattes: "165 g", flocons: "110 g", cacao: "33 g", cacahuetes: "88 g", miel: "33 g", sesame: "11 g" },
+      { nb: 12, dattes: "180 g", flocons: "120 g", cacao: "36 g", cacahuetes: "96 g", miel: "36 g", sesame: "12 g" },
+      { nb: 13, dattes: "195 g", flocons: "130 g", cacao: "39 g", cacahuetes: "104 g", miel: "39 g", sesame: "13 g" },
+      { nb: 14, dattes: "210 g", flocons: "140 g", cacao: "42 g", cacahuetes: "112 g", miel: "42 g", sesame: "14 g" },
+      { nb: 15, dattes: "225 g", flocons: "150 g", cacao: "45 g", cacahuetes: "120 g", miel: "45 g", sesame: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌀", titre: "Mixer", detail: "Mixer les dattes dénoyautées jusqu'à obtenir une pâte collante.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Ajouter flocons, cacao, cacahuètes concassées et miel, mixer par à-coups.", badge: null },
+      { icone: "🤏", titre: "Rouler", detail: "Façonner des petites boules à la main. ASTUCE CHEF : si la pâte colle trop, humidifie légèrement tes mains — elle se roule sans accrocher.", badge: null },
+      { icone: "❄️", titre: "Raffermir", detail: "Rouler dans le sésame et réserver 30 min au frais.", badge: "⏱ 30 min" }
+    ]
+  },
 });

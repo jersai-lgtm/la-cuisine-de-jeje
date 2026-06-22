@@ -5136,5 +5136,146 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C 40 min jusqu'à ce que le dessus soit doré et croustillant.", badge: "🔥 180°C" },
       { icone: "🍯", titre: "Sirop", detail: "Arroser le gâteau chaud de sirop citronné froid (sucre, miel, citron) et laisser imbiber.", badge: "💡 Sirop froid" }
     ]
-  }
+  },
+  kouglof: {
+    nom: "Kouglof",
+    cat: "desserts",
+    pays: "france",
+    dateAjout: "2026-06-22T11:00:00",
+    base: 8,
+    temps: "3 h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍩",
+    description: "La brioche alsacienne dans son moule cannelé : une pâte levée riche en beurre, parsemée de raisins macérés et d'amandes, poudrée de sucre glace.",
+    tableauKouglof: [
+      { nb: 1, farine: "45 g", beurre: "22 g", oeufs: "1", lait: "20 ml", sucre: "12 g", levureboulanger: "3 g", raisinssecs: "15 g", amandes: "5 g", sel: "1 g" },
+      { nb: 2, farine: "90 g", beurre: "44 g", oeufs: "1", lait: "40 ml", sucre: "24 g", levureboulanger: "6 g", raisinssecs: "30 g", amandes: "10 g", sel: "1 g" },
+      { nb: 3, farine: "135 g", beurre: "66 g", oeufs: "1", lait: "60 ml", sucre: "36 g", levureboulanger: "9 g", raisinssecs: "45 g", amandes: "15 g", sel: "2 g" },
+      { nb: 4, farine: "180 g", beurre: "88 g", oeufs: "2", lait: "80 ml", sucre: "48 g", levureboulanger: "12 g", raisinssecs: "60 g", amandes: "20 g", sel: "2 g" },
+      { nb: 5, farine: "225 g", beurre: "110 g", oeufs: "2", lait: "100 ml", sucre: "60 g", levureboulanger: "15 g", raisinssecs: "75 g", amandes: "25 g", sel: "3 g" },
+      { nb: 6, farine: "270 g", beurre: "132 g", oeufs: "2", lait: "120 ml", sucre: "72 g", levureboulanger: "18 g", raisinssecs: "90 g", amandes: "30 g", sel: "3 g" },
+      { nb: 7, farine: "315 g", beurre: "154 g", oeufs: "3", lait: "140 ml", sucre: "84 g", levureboulanger: "21 g", raisinssecs: "105 g", amandes: "35 g", sel: "4 g" },
+      { nb: 8, farine: "360 g", beurre: "176 g", oeufs: "3", lait: "160 ml", sucre: "96 g", levureboulanger: "24 g", raisinssecs: "120 g", amandes: "40 g", sel: "4 g" },
+      { nb: 9, farine: "405 g", beurre: "198 g", oeufs: "4", lait: "180 ml", sucre: "108 g", levureboulanger: "27 g", raisinssecs: "135 g", amandes: "45 g", sel: "5 g" },
+      { nb: 10, farine: "450 g", beurre: "220 g", oeufs: "4", lait: "200 ml", sucre: "120 g", levureboulanger: "30 g", raisinssecs: "150 g", amandes: "50 g", sel: "5 g" },
+      { nb: 11, farine: "495 g", beurre: "242 g", oeufs: "4", lait: "220 ml", sucre: "132 g", levureboulanger: "33 g", raisinssecs: "165 g", amandes: "55 g", sel: "6 g" },
+      { nb: 12, farine: "540 g", beurre: "264 g", oeufs: "5", lait: "240 ml", sucre: "144 g", levureboulanger: "36 g", raisinssecs: "180 g", amandes: "60 g", sel: "6 g" },
+      { nb: 13, farine: "585 g", beurre: "286 g", oeufs: "5", lait: "260 ml", sucre: "156 g", levureboulanger: "39 g", raisinssecs: "195 g", amandes: "65 g", sel: "7 g" },
+      { nb: 14, farine: "630 g", beurre: "308 g", oeufs: "6", lait: "280 ml", sucre: "168 g", levureboulanger: "42 g", raisinssecs: "210 g", amandes: "70 g", sel: "7 g" },
+      { nb: 15, farine: "675 g", beurre: "330 g", oeufs: "6", lait: "300 ml", sucre: "180 g", levureboulanger: "45 g", raisinssecs: "225 g", amandes: "75 g", sel: "8 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍇", titre: "Macérer", detail: "Faire macérer les raisins secs dans un peu d'eau tiède (ou de rhum).", badge: "⏱ 30 min" },
+      { icone: "🥣", titre: "Pétrir", detail: "Pétrir farine, levure, lait, œufs, sucre et sel, puis incorporer le beurre mou.", badge: "⏱ 15 min" },
+      { icone: "⏳", titre: "Pousser", detail: "Laisser doubler de volume, dégazer, ajouter les raisins. ASTUCE CHEF : beurre le moule et dépose une amande dans chaque cannelure avant de verser la pâte — elles décoreront le dessus démoulé.", badge: "⏱ 1 h 30" },
+      { icone: "🔥", titre: "Cuire", detail: "Verser dans le moule, laisser pousser encore, cuire à 180°C puis poudrer de sucre glace.", badge: "⏱ 40 min" }
+    ]
+  },
+  tarteausucre: {
+    nom: "Tarte au Sucre",
+    cat: "desserts",
+    pays: "belgique",
+    dateAjout: "2026-06-22T11:00:00",
+    base: 6,
+    temps: "2 h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥧",
+    description: "La tarte du Nord et de Belgique : une pâte briochée moelleuse garnie d'un appareil fondant à la cassonade et à la crème, caramélisé au four.",
+    tableauTarteausucre: [
+      { nb: 1, farine: "40 g", beurre: "20 g", oeufs: "1", lait: "15 ml", levureboulanger: "2 g", cassonade: "30 g", creme: "25 ml", sel: "1 g" },
+      { nb: 2, farine: "80 g", beurre: "40 g", oeufs: "1", lait: "30 ml", levureboulanger: "4 g", cassonade: "60 g", creme: "50 ml", sel: "1 g" },
+      { nb: 3, farine: "120 g", beurre: "60 g", oeufs: "1", lait: "45 ml", levureboulanger: "6 g", cassonade: "90 g", creme: "75 ml", sel: "1 g" },
+      { nb: 4, farine: "160 g", beurre: "80 g", oeufs: "1", lait: "60 ml", levureboulanger: "8 g", cassonade: "120 g", creme: "100 ml", sel: "1 g" },
+      { nb: 5, farine: "200 g", beurre: "100 g", oeufs: "2", lait: "75 ml", levureboulanger: "10 g", cassonade: "150 g", creme: "125 ml", sel: "2 g" },
+      { nb: 6, farine: "240 g", beurre: "120 g", oeufs: "2", lait: "90 ml", levureboulanger: "12 g", cassonade: "180 g", creme: "150 ml", sel: "2 g" },
+      { nb: 7, farine: "280 g", beurre: "140 g", oeufs: "2", lait: "105 ml", levureboulanger: "14 g", cassonade: "210 g", creme: "175 ml", sel: "2 g" },
+      { nb: 8, farine: "320 g", beurre: "160 g", oeufs: "2", lait: "120 ml", levureboulanger: "16 g", cassonade: "240 g", creme: "200 ml", sel: "2 g" },
+      { nb: 9, farine: "360 g", beurre: "180 g", oeufs: "3", lait: "135 ml", levureboulanger: "18 g", cassonade: "270 g", creme: "225 ml", sel: "3 g" },
+      { nb: 10, farine: "400 g", beurre: "200 g", oeufs: "3", lait: "150 ml", levureboulanger: "20 g", cassonade: "300 g", creme: "250 ml", sel: "3 g" },
+      { nb: 11, farine: "440 g", beurre: "220 g", oeufs: "3", lait: "165 ml", levureboulanger: "22 g", cassonade: "330 g", creme: "275 ml", sel: "3 g" },
+      { nb: 12, farine: "480 g", beurre: "240 g", oeufs: "4", lait: "180 ml", levureboulanger: "24 g", cassonade: "360 g", creme: "300 ml", sel: "4 g" },
+      { nb: 13, farine: "520 g", beurre: "260 g", oeufs: "4", lait: "195 ml", levureboulanger: "26 g", cassonade: "390 g", creme: "325 ml", sel: "4 g" },
+      { nb: 14, farine: "560 g", beurre: "280 g", oeufs: "4", lait: "210 ml", levureboulanger: "28 g", cassonade: "420 g", creme: "350 ml", sel: "4 g" },
+      { nb: 15, farine: "600 g", beurre: "300 g", oeufs: "5", lait: "225 ml", levureboulanger: "30 g", cassonade: "450 g", creme: "375 ml", sel: "5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte levée", detail: "Pétrir farine, levure, lait, œuf, beurre et sel en pâte briochée, laisser pousser.", badge: "⏱ 1 h" },
+      { icone: "🫓", titre: "Foncer", detail: "Étaler la pâte dans un moule et faire des trous avec le doigt.", badge: null },
+      { icone: "🍯", titre: "Garnir", detail: "Répartir la cassonade dans les trous, verser la crème dessus. ASTUCE CHEF : les trous au doigt retiennent la crème et la cassonade pour créer des puits fondants et caramélisés.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire à 200°C jusqu'à ce que le dessus caramélise.", badge: "⏱ 20 min" }
+    ]
+  },
+  tartecitronmeringuee: {
+    liees: ["patesablee", "lemoncurd"],
+    nom: "Tarte au Citron Meringuée",
+    cat: "desserts",
+    pays: "france",
+    dateAjout: "2026-06-22T11:00:00",
+    base: 6,
+    temps: "1 h 30",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍋",
+    description: "Le grand classique : une pâte sablée croustillante, une crème au citron acidulée et une meringue dorée généreuse. L'équilibre parfait entre le piquant et le sucré.",
+    tableauTartecitronmeringuee: [
+      { nb: 1, farine: "25 g", beurre: "18 g", citron: "25 ml", oeufs: "1", sucre: "30 g", maizena: "6 g", blancsoeufs: "1" },
+      { nb: 2, farine: "50 g", beurre: "36 g", citron: "50 ml", oeufs: "2", sucre: "60 g", maizena: "12 g", blancsoeufs: "1" },
+      { nb: 3, farine: "75 g", beurre: "54 g", citron: "75 ml", oeufs: "2", sucre: "90 g", maizena: "18 g", blancsoeufs: "2" },
+      { nb: 4, farine: "100 g", beurre: "72 g", citron: "100 ml", oeufs: "3", sucre: "120 g", maizena: "24 g", blancsoeufs: "3" },
+      { nb: 5, farine: "125 g", beurre: "90 g", citron: "125 ml", oeufs: "4", sucre: "150 g", maizena: "30 g", blancsoeufs: "4" },
+      { nb: 6, farine: "150 g", beurre: "108 g", citron: "150 ml", oeufs: "5", sucre: "180 g", maizena: "36 g", blancsoeufs: "4" },
+      { nb: 7, farine: "175 g", beurre: "126 g", citron: "175 ml", oeufs: "6", sucre: "210 g", maizena: "42 g", blancsoeufs: "5" },
+      { nb: 8, farine: "200 g", beurre: "144 g", citron: "200 ml", oeufs: "6", sucre: "240 g", maizena: "48 g", blancsoeufs: "6" },
+      { nb: 9, farine: "225 g", beurre: "162 g", citron: "225 ml", oeufs: "7", sucre: "270 g", maizena: "54 g", blancsoeufs: "6" },
+      { nb: 10, farine: "250 g", beurre: "180 g", citron: "250 ml", oeufs: "8", sucre: "300 g", maizena: "60 g", blancsoeufs: "7" },
+      { nb: 11, farine: "275 g", beurre: "198 g", citron: "275 ml", oeufs: "9", sucre: "330 g", maizena: "66 g", blancsoeufs: "8" },
+      { nb: 12, farine: "300 g", beurre: "216 g", citron: "300 ml", oeufs: "10", sucre: "360 g", maizena: "72 g", blancsoeufs: "8" },
+      { nb: 13, farine: "325 g", beurre: "234 g", citron: "325 ml", oeufs: "10", sucre: "390 g", maizena: "78 g", blancsoeufs: "9" },
+      { nb: 14, farine: "350 g", beurre: "252 g", citron: "350 ml", oeufs: "11", sucre: "420 g", maizena: "84 g", blancsoeufs: "10" },
+      { nb: 15, farine: "375 g", beurre: "270 g", citron: "375 ml", oeufs: "12", sucre: "450 g", maizena: "90 g", blancsoeufs: "11" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Pâte sablée", detail: "Sabler farine et beurre, ajouter un peu de sucre, foncer un moule et cuire à blanc.", badge: "⏱ 25 min" },
+      { icone: "🍋", titre: "Crème citron", detail: "Cuire jus de citron, œufs, sucre et maïzena jusqu'à épaississement, garnir le fond.", badge: "⏱ 10 min" },
+      { icone: "☁️", titre: "Meringue", detail: "Monter les blancs en meringue avec le sucre restant. ASTUCE CHEF : étale la meringue jusqu'aux bords de la pâte — bien soudée, elle ne se rétracte pas et ne pleure pas à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Pocher la meringue sur la crème et dorer au four ou au chalumeau.", badge: "⏱ 8 min" }
+    ]
+  },
+  quatrequarts: {
+    nom: "Quatre-Quarts",
+    cat: "desserts",
+    pays: "france",
+    dateAjout: "2026-06-22T11:00:00",
+    base: 8,
+    temps: "1 h",
+    niveau: "⭐ Facile",
+    emoji: "🍰",
+    description: "Le gâteau breton tout simple : quatre ingrédients à poids égal — beurre, sucre, farine, œufs. Moelleux, beurré et inratable.",
+    tableauQuatrequarts: [
+      { nb: 1, farine: "30 g", beurre: "30 g", sucre: "30 g", oeufs: "1", levure: "1 g", sel: "1 g" },
+      { nb: 2, farine: "60 g", beurre: "60 g", sucre: "60 g", oeufs: "1", levure: "2 g", sel: "1 g" },
+      { nb: 3, farine: "90 g", beurre: "90 g", sucre: "90 g", oeufs: "2", levure: "3 g", sel: "1 g" },
+      { nb: 4, farine: "120 g", beurre: "120 g", sucre: "120 g", oeufs: "2", levure: "4 g", sel: "1 g" },
+      { nb: 5, farine: "150 g", beurre: "150 g", sucre: "150 g", oeufs: "3", levure: "5 g", sel: "1 g" },
+      { nb: 6, farine: "180 g", beurre: "180 g", sucre: "180 g", oeufs: "3", levure: "6 g", sel: "1 g" },
+      { nb: 7, farine: "210 g", beurre: "210 g", sucre: "210 g", oeufs: "4", levure: "7 g", sel: "1 g" },
+      { nb: 8, farine: "240 g", beurre: "240 g", sucre: "240 g", oeufs: "4", levure: "8 g", sel: "2 g" },
+      { nb: 9, farine: "270 g", beurre: "270 g", sucre: "270 g", oeufs: "5", levure: "9 g", sel: "2 g" },
+      { nb: 10, farine: "300 g", beurre: "300 g", sucre: "300 g", oeufs: "5", levure: "10 g", sel: "2 g" },
+      { nb: 11, farine: "330 g", beurre: "330 g", sucre: "330 g", oeufs: "6", levure: "11 g", sel: "2 g" },
+      { nb: 12, farine: "360 g", beurre: "360 g", sucre: "360 g", oeufs: "6", levure: "12 g", sel: "2 g" },
+      { nb: 13, farine: "390 g", beurre: "390 g", sucre: "390 g", oeufs: "7", levure: "13 g", sel: "3 g" },
+      { nb: 14, farine: "420 g", beurre: "420 g", sucre: "420 g", oeufs: "7", levure: "14 g", sel: "3 g" },
+      { nb: 15, farine: "450 g", beurre: "450 g", sucre: "450 g", oeufs: "8", levure: "15 g", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Crémer", detail: "Battre le beurre mou avec le sucre jusqu'à blanchiment.", badge: "⏱ 4 min" },
+      { icone: "🥚", titre: "Œufs", detail: "Incorporer les œufs un à un en fouettant bien.", badge: null },
+      { icone: "🌾", titre: "Farine", detail: "Ajouter farine, levure et sel délicatement. ASTUCE CHEF : sépare les blancs et monte-les en neige pour les incorporer à la fin — le quatre-quarts en sort bien plus aérien.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Verser dans un moule à cake et cuire à 170°C.", badge: "⏱ 40 min" }
+    ]
+  },
 });

@@ -2746,5 +2746,41 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Réfrigérer", detail: "Réserver au frais au moins 2 h pour servir bien glacé.", badge: "💡 Très froid" },
       { icone: "🍇", titre: "Servir", detail: "Servir garni de raisins et d'un filet d'huile d'olive.", badge: null }
     ]
-  }
+  },
+  soupecourgecoco: {
+    nom: "Soupe Courge-Coco au Gingembre",
+    cat: "soupes",
+    pays: "thailande",
+    dateAjout: "2026-06-22T11:00:00",
+    saisons: ["automne", "hiver"],
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    description: "Un velouté onctueux et parfumé : la douceur de la courge rôtie rencontre le lait de coco et le piquant du gingembre. Réconfort d'automne aux accents thaï.",
+    tableauSoupecourgecoco: [
+      { nb: 1, courge: "200 g", oignon: "40 g", laitCoco: "60 ml", gingembre: "5 g", bouillon: "150 ml", huileolive: "5 ml", curry: "2 g" },
+      { nb: 2, courge: "400 g", oignon: "80 g", laitCoco: "120 ml", gingembre: "10 g", bouillon: "300 ml", huileolive: "10 ml", curry: "4 g" },
+      { nb: 3, courge: "600 g", oignon: "120 g", laitCoco: "180 ml", gingembre: "15 g", bouillon: "450 ml", huileolive: "15 ml", curry: "6 g" },
+      { nb: 4, courge: "800 g", oignon: "160 g", laitCoco: "240 ml", gingembre: "20 g", bouillon: "600 ml", huileolive: "20 ml", curry: "8 g" },
+      { nb: 5, courge: "1000 g", oignon: "200 g", laitCoco: "300 ml", gingembre: "25 g", bouillon: "750 ml", huileolive: "25 ml", curry: "10 g" },
+      { nb: 6, courge: "1200 g", oignon: "240 g", laitCoco: "360 ml", gingembre: "30 g", bouillon: "900 ml", huileolive: "30 ml", curry: "12 g" },
+      { nb: 7, courge: "1400 g", oignon: "280 g", laitCoco: "420 ml", gingembre: "35 g", bouillon: "1050 ml", huileolive: "35 ml", curry: "14 g" },
+      { nb: 8, courge: "1600 g", oignon: "320 g", laitCoco: "480 ml", gingembre: "40 g", bouillon: "1200 ml", huileolive: "40 ml", curry: "16 g" },
+      { nb: 9, courge: "1800 g", oignon: "360 g", laitCoco: "540 ml", gingembre: "45 g", bouillon: "1350 ml", huileolive: "45 ml", curry: "18 g" },
+      { nb: 10, courge: "2000 g", oignon: "400 g", laitCoco: "600 ml", gingembre: "50 g", bouillon: "1500 ml", huileolive: "50 ml", curry: "20 g" },
+      { nb: 11, courge: "2200 g", oignon: "440 g", laitCoco: "660 ml", gingembre: "55 g", bouillon: "1650 ml", huileolive: "55 ml", curry: "22 g" },
+      { nb: 12, courge: "2400 g", oignon: "480 g", laitCoco: "720 ml", gingembre: "60 g", bouillon: "1800 ml", huileolive: "60 ml", curry: "24 g" },
+      { nb: 13, courge: "2600 g", oignon: "520 g", laitCoco: "780 ml", gingembre: "65 g", bouillon: "1950 ml", huileolive: "65 ml", curry: "26 g" },
+      { nb: 14, courge: "2800 g", oignon: "560 g", laitCoco: "840 ml", gingembre: "70 g", bouillon: "2100 ml", huileolive: "70 ml", curry: "28 g" },
+      { nb: 15, courge: "3000 g", oignon: "600 g", laitCoco: "900 ml", gingembre: "75 g", bouillon: "2250 ml", huileolive: "75 ml", curry: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🎃", titre: "Revenir", detail: "Faire suer l'oignon et le gingembre râpé dans l'huile, ajouter le curry.", badge: "⏱ 5 min" },
+      { icone: "💧", titre: "Mijoter", detail: "Ajouter la courge en cubes et le bouillon, cuire jusqu'à tendreté.", badge: "⏱ 25 min" },
+      { icone: "🥥", titre: "Mixer", detail: "Verser le lait de coco et mixer finement. ASTUCE CHEF : garde une cuillère de lait de coco pour le dressage — un trait en spirale sur le velouté, c'est joli et ça équilibre le gingembre.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Rectifier l'assaisonnement et servir bien chaud.", badge: null }
+    ]
+  },
 });
