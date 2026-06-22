@@ -19,10 +19,8 @@ window.EXCEPTIONS = {
     "mozzarellamaison", "fromagefraismaison",
     // 🫙 Les sauces sont désormais dosées PAR PERSONNE (nb = convives, 1→15) et
     //    suivent le foyer comme un plat normal → elles ne sont plus "à l'unité".
-    // 🍨 Glaces / sorbets en bac
-    "glacevanille", "glacechocolat", "glacepistache", "glacecafe", "glacecaramel",
-    "glacestracciatella", "glacementhe", "glacerhumraisin", "sorbetcitron", "sorbetframboise",
-    "sorbetmangue", "sorbetpassion", "sorbetpoire", "sorbetfraise", "gelato", "granite", "frozenyogurt",
+    // 🍨 Les glaces / sorbets « en bac » sont désormais dosés PAR BOULE (1→15) et
+    //    suivent le foyer → ils ne sont plus "à l'unité" (cap 5 retiré).
     // 🥣 Dips apéritif en bol / pot
     "houmous", "babaganoush", "guacamole", "tzatziki", "muhammara", "dipfetapoivron",
     "obatzda", "tapenade", "rillettessaumonfume", "rillettesthon"
