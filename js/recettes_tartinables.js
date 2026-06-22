@@ -4,7 +4,7 @@
 // ============================================================
 Object.assign(recettes, {
   patetartiner: {
-    nom: "Pâte à Tartiner Choco-Noisette",
+    nom: "Pâte à Tartiner façon Nutella Maison",
     cat: "tartinables",
     pays: "france",
     dateAjout: "2026-06-08T16:00:00",
@@ -12,7 +12,7 @@ Object.assign(recettes, {
     temps: "30 min",
     niveau: "⭐⭐ Moyen",
     emoji: "🍫",
-    description: "La pâte à tartiner choco-noisette maison : noisettes torréfiées mixées en praliné, mariées au chocolat pour une texture onctueuse, sans huile de palme ni additifs. Bien plus parfumée que celle du commerce.",
+    description: "Le Nutella maison, en bien meilleur : noisettes torréfiées mixées en praliné, mariées au chocolat au lait pour une texture onctueuse, sans huile de palme ni additifs. Le fameux goût choco-noisette, fait maison et plus parfumé que celui du commerce.",
     tableauPateTartiner: [
       { nb: 1, noisettes: "35 g", chocolatLait: "30 g", sucreglace: "18 g", huile: "10 ml", laitpoudre: "8 g", cacao: "5 g" },
       { nb: 2, noisettes: "70 g", chocolatLait: "60 g", sucreglace: "36 g", huile: "20 ml", laitpoudre: "16 g", cacao: "10 g" },
@@ -537,6 +537,41 @@ Object.assign(recettes, {
       { icone: "🧀", titre: "Mélanger", detail: "Ajouter la feta émiettée, la menthe ciselée, le jus de citron et l'huile d'olive.", badge: null },
       { icone: "👅", titre: "Assaisonner", detail: "Saler légèrement (attention, la feta est déjà salée) et poivrer.", badge: null },
       { icone: "🍞", titre: "Servir", detail: "Tartiner sur du pain grillé frotté à l'ail, ou servir en dip avec des gressins.", badge: null }
+    ]
+  },
+  beurrecacahuete: {
+    nom: "Beurre de Cacahuète",
+    cat: "tartinables",
+    pays: "usa",
+    dateAjout: "2026-06-22T10:00:00",
+    base: 6,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥜",
+    description: "Le beurre de cacahuète maison : juste des cacahuètes torréfiées mixées longuement jusqu'à libérer leur huile, relevées d'une pointe de miel et de sel. Onctueux, sans huile de palme ni sucre ajouté inutile — bien meilleur (et moins cher) que celui du commerce.",
+    tableauBeurreCacahuete: [
+      { nb: 1, cacahuetes: "150 g", huile: "10 ml", miel: "10 g", sel: "2 g" },
+      { nb: 2, cacahuetes: "300 g", huile: "20 ml", miel: "20 g", sel: "4 g" },
+      { nb: 3, cacahuetes: "450 g", huile: "30 ml", miel: "30 g", sel: "6 g" },
+      { nb: 4, cacahuetes: "600 g", huile: "40 ml", miel: "40 g", sel: "8 g" },
+      { nb: 5, cacahuetes: "750 g", huile: "50 ml", miel: "50 g", sel: "10 g" },
+      { nb: 6, cacahuetes: "900 g", huile: "60 ml", miel: "60 g", sel: "12 g" },
+      { nb: 7, cacahuetes: "1050 g", huile: "70 ml", miel: "70 g", sel: "14 g" },
+      { nb: 8, cacahuetes: "1200 g", huile: "80 ml", miel: "80 g", sel: "16 g" },
+      { nb: 9, cacahuetes: "1350 g", huile: "90 ml", miel: "90 g", sel: "18 g" },
+      { nb: 10, cacahuetes: "1500 g", huile: "100 ml", miel: "100 g", sel: "20 g" },
+      { nb: 11, cacahuetes: "1650 g", huile: "110 ml", miel: "110 g", sel: "22 g" },
+      { nb: 12, cacahuetes: "1800 g", huile: "120 ml", miel: "120 g", sel: "24 g" },
+      { nb: 13, cacahuetes: "1950 g", huile: "130 ml", miel: "130 g", sel: "26 g" },
+      { nb: 14, cacahuetes: "2100 g", huile: "140 ml", miel: "140 g", sel: "28 g" },
+      { nb: 15, cacahuetes: "2250 g", huile: "150 ml", miel: "150 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Torréfier", detail: "Torréfier les cacahuètes non salées au four à 160°C jusqu'à ce qu'elles dorent et embaument (saute cette étape si elles sont déjà grillées).", badge: "⏱ 8 min" },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer longuement les cacahuètes seules : elles passent de la poudre à une purée. ASTUCE CHEF : continue bien au-delà du stade poudre, les cacahuètes relâchent leur huile et deviennent crème — c'est ce qui donne la texture lisse sans rien ajouter.", badge: "⏱ 5 min" },
+      { icone: "🍯", titre: "Assaisonner", detail: "Ajouter le miel, le sel et l'huile neutre, puis mixer encore pour lisser. Goûter et ajuster (plus salé pour un goût américain, plus de miel pour une version sucrée).", badge: "⏱ 2 min" },
+      { icone: "🫙", titre: "Mettre en pot", detail: "Verser dans un pot hermétique. Se conserve 3-4 semaines au frais (l'huile peut remonter : un coup de cuillère et c'est reparti).", badge: null }
     ]
   },
 });

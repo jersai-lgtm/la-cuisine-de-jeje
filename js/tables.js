@@ -620,6 +620,7 @@ function getUniteRecette(nom, n) {
     "tartinerchococaramel": ["pot", "pots"],
     "caviaraubergine":      ["pot", "pots"],
     "confiturefraise":      ["pot", "pots"],
+    "beurrecacahuete":      ["pot", "pots"],
     // — Sauces faites en lot → pot (tableaux rescalés : 1 pot = 1 fournée) —
     "mayonnaise":           ["personne", "personnes"],
     "ketchup":              ["personne", "personnes"],

@@ -31288,8 +31288,8 @@ window.RECETTES_EN = {
   ]
  },
  "patetartiner": {
-  "nom": "Chocolate Hazelnut Spread",
-  "description": "Homemade chocolate hazelnut spread: roasted hazelnuts blended into praliné and married with chocolate for a silky texture, without palm oil or additives. Far more fragrant than store-bought versions.",
+  "nom": "Homemade Nutella-Style Spread",
+  "description": "Homemade Nutella-style spread, only better: roasted hazelnuts blended into praliné and married with milk chocolate for a silky texture, without palm oil or additives. The famous choco-hazelnut taste, homemade and far more fragrant than store-bought.",
   "etapes": [
    {
     "titre": "Roast",
@@ -31318,6 +31318,28 @@ window.RECETTES_EN = {
    {
     "titre": "Jar",
     "detail": "Pour into a jar. Store at room temperature (cold will thicken it)."
+   }
+  ]
+ },
+ "beurrecacahuete": {
+  "nom": "Homemade Peanut Butter",
+  "description": "Homemade peanut butter: just roasted peanuts blended for a long time until they release their oil, with a touch of honey and salt. Creamy, with no palm oil or needless added sugar—far better (and cheaper) than store-bought.",
+  "etapes": [
+   {
+    "titre": "Roast",
+    "detail": "Roast the unsalted peanuts in the oven at 160°C until they brown and become fragrant (skip this step if they are already roasted)."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the peanuts alone for a long time: they go from powder to a paste. CHEF'S TIP: keep going well past the powder stage—the peanuts release their oil and turn into cream, which gives the smooth texture without adding anything."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the honey, salt and neutral oil, then blend again until smooth. Taste and adjust (saltier for an American taste, more honey for a sweeter version)."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pour into an airtight jar. Keeps 3-4 weeks refrigerated (the oil may rise: a quick stir and it's good as new)."
    }
   ]
  },
