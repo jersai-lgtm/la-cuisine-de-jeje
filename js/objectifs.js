@@ -127,7 +127,8 @@
       ecrire({ kcal: selK || null, focus: selF || null });
       fermer();
       if (typeof afficherToast === "function") afficherToast(T("🎯 Objectif enregistré !", "🎯 Goal saved!"));
-      rerenderFiche();
+      // Propose directement des recettes qui collent à l'objectif (zone « De quoi t'as envie »).
+      if (typeof window.proposerSelonObjectif === "function") window.proposerSelonObjectif();
     });
   };
 

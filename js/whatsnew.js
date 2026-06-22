@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "2.3.5",
+    titre: "🌡️ Suggestions selon la météo + objectif kcal",
+    texte: "« Qu'est-ce qu'on mange ? » s'adapte maintenant à la météo : par forte chaleur 🥵, on te remonte les plats frais (salades, taboulé…) ; par grand froid 🥶, les plats réconfortants. Et l'objectif nutritionnel a déménagé : sous « 🎭 De quoi t'as envie ? », fixe tes calories/jour (ex. 2200) et l'appli te propose direct des repas qui rentrent dedans. 👨‍🍳"
+  },
+  {
     v: "2.3.1",
     titre: "🎭 De quoi t'as envie ? + Quiz de goûts",
     texte: "Deux façons ludiques de trouver quoi cuisiner ! En haut de l'accueil, choisis une envie — 🍲 Réconfortant, 🥗 Léger, 😋 Gourmand, 🌶️ Épicé, ⚡ Rapide, 🌍 Exotique — et hop, des recettes qui collent à ton humeur. Et le 🎯 Quiz de goûts (4 petites questions) te recommande des recettes faites pour toi. Bon appétit ! 👨‍🍳"

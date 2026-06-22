@@ -1829,7 +1829,6 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
       </div>
     </div>
     ${htmlPrixCalories(nom, personnes)}
-    ${typeof objectifFicheHTML === "function" ? objectifFicheHTML(nom) : ""}
     ${typeof recettesLieesHTML === "function" ? recettesLieesHTML(nom) : ""}
     <div class="fiche-meta">
       <span>⏱ ${data.temps}</span>

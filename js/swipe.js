@@ -12,7 +12,7 @@
   const EN = () => window.LANG === "en";
   // Liste BLANCHE des catégories "repas" : on ne propose que des plats du midi/soir
   // (pas de desserts, sorbets, apéros, entrées… → c'est « qu'est-ce qu'on mange »).
-  const INCL_CAT = new Set(["plats", "salades", "soupes", "pizzas", "healthy"]);
+  const INCL_CAT = new Set(["plats", "salades", "soupes", "pizzas", "healthy", "encas"]);
   let pool = [], idx = 0, _actif = false;
 
   // ---- Construction du deck : profil + saison (réutilise la logique suggestions) ----
@@ -39,7 +39,31 @@
     });
     // Mélange (Fisher-Yates) — Math.random OK côté navigateur.
     for (let i = p.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = p[i]; p[i] = p[j]; p[j] = t; }
+    // Biais météo : canicule → on remonte le frais ; grand froid → le réconfortant.
+    const M = window._meteo;
+    if (M && (M.chaud || M.froid)) p.sort((a, b) => scoreMeteo(b, M) - scoreMeteo(a, M)); // tri stable : garde l'ordre mélangé à score égal
     return p;
+  }
+
+  function meteoHint() {
+    const M = window._meteo;
+    if (!M) return "";
+    if (M.chaud) return (EN() ? "🥵 It's hot (" + Math.round(M.temp) + "°) → fresh dishes first. " : "🥵 Il fait chaud (" + Math.round(M.temp) + "°) → on remonte le frais. ");
+    if (M.froid) return (EN() ? "🥶 It's cold (" + Math.round(M.temp) + "°) → comforting first. " : "🥶 Il fait froid (" + Math.round(M.temp) + "°) → on remonte le réconfortant. ");
+    return "";
+  }
+
+  // Score d'adéquation à la météo (frais quand il fait chaud, réconfortant quand il fait froid).
+  function scoreMeteo(key, M) {
+    const r = recettes[key];
+    if (!r) return 0;
+    const nom = (r.nom || "").toLowerCase();
+    const frais = r.cat === "salades" || /salade|gaspacho|gazpacho|ajoblanco|froid|taboul|ceviche|carpaccio|tartare|vitello|poke|melon|concombre|wrap|tzatziki|rouleau|nem|sushi|maki|smoothie/.test(nom);
+    const lourd = r.cat === "soupes" || /gratin|mijot|raclette|fondue|tartiflette|pot.?au.?feu|veloute|ragout|blanquette|cassoulet|fondu|roti|braise|pot.?ee|chili|curry|tajine|hachis|lasagne/.test(nom);
+    let s = 0;
+    if (M.chaud) { if (frais) s += 2; if (lourd) s -= 2; }
+    else if (M.froid) { if (lourd) s += 2; if (frais) s -= 1; }
+    return s;
   }
 
   function nutriBadge(key) {
@@ -216,7 +240,7 @@
           `<button class="swipe-btn fav" title="${EN() ? "Favorite" : "Favori"}">🤍</button>` +
           `<button class="swipe-btn like" title="${EN() ? "See recipe" : "Voir la recette"}">😍</button>` +
         `</div>` +
-        `<div class="swipe-hint">${EN() ? "Swipe 👈 skip · 👉 see — or use the buttons" : "Glisse 👈 passer · 👉 voir — ou les boutons"}</div>`;
+        `<div class="swipe-hint">${meteoHint()}${EN() ? "Swipe 👈 skip · 👉 see — or use the buttons" : "Glisse 👈 passer · 👉 voir — ou les boutons"}</div>`;
       document.body.appendChild(ov);
       ov.querySelector(".swipe-close").addEventListener("click", () => { _actif = false; ov.style.display = "none"; });
       ov.querySelector(".skip").addEventListener("click", passer);

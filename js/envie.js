@@ -75,7 +75,8 @@
       .envie-bloc{background:rgba(var(--w),.05);border:1px solid rgba(var(--w),.1);border-radius:16px;padding:12px 14px;margin:0 0 16px}
       .envie-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
       .envie-head b{color:var(--text);font-size:15px}
-      .envie-quiz{background:rgba(var(--accent-rgb),.15);color:var(--accent);border:1px solid rgba(var(--accent-rgb),.5);
+      .envie-actions{display:flex;gap:6px;flex-wrap:wrap}
+      .envie-act{background:rgba(var(--accent-rgb),.15);color:var(--accent);border:1px solid rgba(var(--accent-rgb),.5);
         border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer}
       .envie-chips{display:flex;flex-wrap:wrap;gap:7px}
       .envie-chip{background:rgba(var(--w),.08);color:var(--text);border:1px solid rgba(var(--w),.14);
@@ -142,7 +143,8 @@
     bloc.className = "envie-bloc"; bloc.id = "envie-bloc";
     bloc.innerHTML =
       '<div class="envie-head"><b>' + T("🎭 De quoi t'as envie ?", "🎭 What are you craving?") + "</b>" +
-      '<button class="envie-quiz">🎯 ' + T("Quiz goûts", "Taste quiz") + "</button></div>" +
+      '<span class="envie-actions"><button class="envie-quiz envie-act">🧩 ' + T("Quiz", "Quiz") + "</button>" +
+      '<button class="envie-obj envie-act">🎯 ' + T("Objectif kcal", "Calorie goal") + "</button></span></div>" +
       '<div class="envie-chips">' + MOODS.map((m, i) => '<button class="envie-chip" data-i="' + i + '">' + m.e + " " + T(m.fr, m.en) + "</button>").join("") + "</div>";
     // Placé juste après le bouton swipe (zone "découverte" groupée), sinon en tête.
     if (cta && cta.parentNode) cta.parentNode.insertBefore(bloc, cta.nextSibling);
@@ -152,7 +154,35 @@
       montrerResultats(m.e + " " + T(m.fr, m.en), collecter(m.test, 24));
     }));
     bloc.querySelector(".envie-quiz").addEventListener("click", () => window.ouvrirQuizGouts());
+    bloc.querySelector(".envie-obj").addEventListener("click", () => { if (typeof ouvrirObjectifs === "function") ouvrirObjectifs(); });
   }
+
+  // Propose des recettes-repas qui collent à l'objectif calorique (≈ 1/3 de la
+  // journée par repas) + au focus. Appelé après réglage de l'objectif.
+  window.proposerSelonObjectif = function () {
+    let o = {};
+    try { o = JSON.parse(localStorage.getItem("objectif_nutri") || "{}") || {}; } catch (e) {}
+    if (!o.kcal && !o.focus) { if (typeof ouvrirObjectifs === "function") ouvrirObjectifs(); return; }
+    const cible = o.kcal ? o.kcal / 3 : null;             // un repas ≈ 1/3 de l'objectif du jour
+    const MEAL = new Set(["plats", "salades", "soupes", "pizzas", "healthy", "encas"]);
+    const exclus = motsExclus();
+    const cand = [];
+    for (const k of Object.keys(recettes)) {
+      const r = recettes[k];
+      if (!r || !r.nom || !MEAL.has(r.cat)) continue;
+      if (!compatible(k, exclus)) continue;
+      const cal = calPortion(r);
+      if (cal == null) continue;
+      if (o.focus === "leger" && cal > 500) continue;
+      if (cible != null) { if (cal < cible * 0.5 || cal > cible * 1.35) continue; }
+      cand.push({ k, cal });
+    }
+    // tri par proximité à la cible (ou par calories croissantes si pas de cible)
+    cand.sort((a, b) => cible != null ? Math.abs(a.cal - cible) - Math.abs(b.cal - cible) : a.cal - b.cal);
+    const cles = cand.slice(0, 18).map((x) => x.k);
+    const titre = o.kcal ? ("🎯 " + T("Pour ~", "For ~") + o.kcal + " kcal/jour") : ("🎯 " + T("Pour ton objectif", "For your goal"));
+    montrerResultats(titre, cles);
+  };
 
   // ---- B) Quiz de goûts ----
   const QUIZ = [
