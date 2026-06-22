@@ -65,7 +65,7 @@ function ouvrirModalAstuce(recetteKey) {
       '<div style="background:#211e26;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px;max-width:420px;width:100%">' +
         '<h3 style="color:#fff;font-size:17px;margin:0 0 4px">✍️ Partager mon commentaire</h3>' +
         '<p style="color:#b3b0b8;font-size:13px;margin:0 0 12px">Ton commentaire sera visible après validation. Sois sympa et utile 🙂</p>' +
-        '<textarea id="astuce-texte" maxlength="500" rows="4" placeholder="Ex : j\'ai mis moins de sucre et un peu de cannelle, top !" oninput="majCompteurAstuce()" style="width:100%;box-sizing:border-box;background:#17151c;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:10px;font-size:14px;resize:vertical"></textarea>' +
+        '<textarea id="astuce-texte" maxlength="500" rows="4" placeholder="Ex : j\'ai mis moins de sucre et un peu de cannelle, top !" oninput="majCompteurAstuce()" style="width:100%;box-sizing:border-box;background:var(--surface-1);color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:10px;font-size:14px;resize:vertical"></textarea>' +
         '<div id="astuce-compteur" style="text-align:right;color:#88858f;font-size:11px;margin-top:4px">0 / 500</div>' +
         '<div style="display:flex;gap:10px;margin-top:12px">' +
           '<button onclick="fermerModalAstuce()" style="flex:1;background:rgba(255,255,255,.08);color:#fff;border:none;border-radius:12px;padding:11px;font-size:14px;font-weight:500">Annuler</button>' +
@@ -444,7 +444,7 @@ function chargerPhotosPubliees(recetteKey) {
         var del = _estAdminCom()
           ? '<button onclick="event.stopPropagation();supprimerPhoto(\'' + p.id + '\')" title="Supprimer (admin)" style="position:absolute;top:4px;right:4px;background:rgba(0,0,0,.55);color:#fff;border:none;border-radius:8px;padding:2px 6px;font-size:12px;cursor:pointer">🗑️</button>'
           : '';
-        return '<div style="position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;background:#17151c">' +
+        return '<div style="position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;background:var(--surface-1)">' +
           '<img src="' + p.url + '" loading="lazy" alt="Photo de ' + _echapCom(p.pseudo || "Gourmand") + '" onclick="ouvrirPhotoPleinEcran(\'' + p.id + '\')" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in">' +
           del +
         '</div>';
@@ -506,7 +506,7 @@ async function chargerPhotosModeration() {
       var nomRec = (typeof getNomRecette === "function" ? getNomRecette(p.recetteKey) : "") || p.recetteKey;
       return '<div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px">' +
         '<div style="font-size:12px;color:#88858f;margin-bottom:8px">' + _echapCom(p.pseudo || "Gourmand") + ' · sur <strong style="color:var(--accent-soft,#ff8fb3)">' + _echapCom(nomRec) + '</strong></div>' +
-        '<img loading="lazy" src="' + _echapCom(p.url) + '" alt="" style="width:100%;max-height:280px;object-fit:contain;border-radius:10px;background:#17151c;margin-bottom:10px">' +
+        '<img loading="lazy" src="' + _echapCom(p.url) + '" alt="" style="width:100%;max-height:280px;object-fit:contain;border-radius:10px;background:var(--surface-1);margin-bottom:10px">' +
         '<div style="display:flex;gap:8px">' +
           '<button onclick="approuverPhoto(\'' + p.id + '\')" style="flex:1;background:rgba(76,175,80,.18);color:var(--vert);border:1px solid rgba(76,175,80,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">✅ Approuver</button>' +
           '<button onclick="refuserPhoto(\'' + p.id + '\')" style="flex:1;background:rgba(226,87,76,.15);color:#e8867d;border:1px solid rgba(226,87,76,.5);border-radius:10px;padding:9px;font-size:13px;font-weight:500">❌ Refuser</button>' +
@@ -593,7 +593,7 @@ async function chargerPhotosPubliesAdmin() {
       '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px">' +
       arr.map(function (p) {
         var nomRec = (typeof getNomRecette === "function" ? getNomRecette(p.recetteKey) : "") || p.recetteKey;
-        return '<div style="position:relative;border-radius:12px;overflow:hidden;background:#17151c">' +
+        return '<div style="position:relative;border-radius:12px;overflow:hidden;background:var(--surface-1)">' +
           '<img src="' + p.url + '" loading="lazy" alt="" style="width:100%;aspect-ratio:1;object-fit:cover;display:block">' +
           '<div style="font-size:10px;color:#b3b0b8;padding:3px 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + _echapCom(nomRec) + '</div>' +
           '<button onclick="supprimerPhoto(\'' + p.id + '\')" title="Supprimer" style="position:absolute;top:4px;right:4px;background:rgba(0,0,0,.55);color:#fff;border:none;border-radius:8px;padding:2px 6px;font-size:12px;cursor:pointer">🗑️</button>' +

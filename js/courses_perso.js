@@ -18,7 +18,7 @@
     st.id = "lc-perso-style";
     st.textContent = `
       .lc-perso-add{display:flex;gap:8px;margin:6px 0 10px}
-      .lc-perso-add input{flex:1;min-width:0;box-sizing:border-box;background:#17151c;color:#fff;
+      .lc-perso-add input{flex:1;min-width:0;box-sizing:border-box;background:var(--surface-1);color:#fff;
         border:1px solid rgba(255,255,255,.15);border-radius:11px;padding:10px 12px;font-size:14px}
       .lc-perso-add button{flex:0 0 auto;background:var(--accent,#ff4d88);color:#fff;border:none;
         border-radius:11px;padding:0 16px;font-size:18px;font-weight:700;cursor:pointer}

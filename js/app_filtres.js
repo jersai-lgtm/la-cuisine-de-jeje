@@ -256,7 +256,7 @@
       st.id = "filtres-avances-style";
       st.textContent =
         ".carte.carte--filtre-off{display:none !important}" +
-        "#chips-row-filtres .filtre-tri{background:#17151c;color:#fff;border:1px solid rgba(255,255,255,.15);" +
+        "#chips-row-filtres .filtre-tri{background:var(--surface-1);color:#fff;border:1px solid rgba(255,255,255,.15);" +
         "border-radius:20px;padding:6px 12px;font-size:13px;cursor:pointer;margin-left:4px}" +
         "#chips-row-filtres .filtre-compteur{color:#b3b0b8;font-size:12px;margin-left:8px;white-space:nowrap;align-self:center}";
       document.head.appendChild(st);

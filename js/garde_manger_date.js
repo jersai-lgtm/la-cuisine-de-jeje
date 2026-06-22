@@ -16,8 +16,8 @@
     st.id = "gm-style";
     st.textContent = `
       .gm-add{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}
-      .gm-add input[type=text]{flex:1;min-width:140px;background:#17151c;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:11px;padding:10px 12px;font-size:14px}
-      .gm-add input[type=date]{background:#17151c;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:11px;padding:10px 12px;font-size:14px}
+      .gm-add input[type=text]{flex:1;min-width:140px;background:var(--surface-1);color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:11px;padding:10px 12px;font-size:14px}
+      .gm-add input[type=date]{background:var(--surface-1);color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:11px;padding:10px 12px;font-size:14px}
       .gm-add button{background:var(--accent,#ff4d88);color:#fff;border:none;border-radius:11px;padding:0 16px;font-size:18px;font-weight:700;cursor:pointer}
       .gm-item{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:12px;margin-bottom:8px;background:rgba(255,255,255,.04);border-left:4px solid #555}
       .gm-item.gm-perime{border-left-color:#ff4444;background:rgba(255,68,68,.10)}

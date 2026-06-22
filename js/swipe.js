@@ -172,7 +172,7 @@
       .swipe-head .swipe-close{background:rgba(255,255,255,.1);color:#fff;border:none;border-radius:50%;
         width:38px;height:38px;font-size:16px;cursor:pointer}
       .swipe-stack{position:relative;flex:1;margin:8px 18px;min-height:0}
-      .swipe-card{position:absolute;inset:0;border-radius:22px;overflow:hidden;background:#191720;
+      .swipe-card{position:absolute;inset:0;border-radius:22px;overflow:hidden;background:var(--surface-1);
         box-shadow:0 14px 40px rgba(0,0,0,.5);user-select:none;-webkit-user-select:none;touch-action:pan-y;will-change:transform}
       .swipe-card.swipe-dessous{transform:scale(.94) translateY(10px);filter:brightness(.7)}
       .swipe-card img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
@@ -188,8 +188,8 @@
       .swipe-btn{border:none;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;
         box-shadow:0 6px 18px rgba(0,0,0,.4);transition:transform .12s}
       .swipe-btn:active{transform:scale(.92)}
-      .swipe-btn.skip{width:60px;height:60px;font-size:24px;background:#26222e;color:#fff}
-      .swipe-btn.fav{width:50px;height:50px;font-size:20px;background:#26222e}
+      .swipe-btn.skip{width:60px;height:60px;font-size:24px;background:var(--surface-2);color:#fff}
+      .swipe-btn.fav{width:50px;height:50px;font-size:20px;background:var(--surface-2)}
       .swipe-btn.like{width:68px;height:68px;font-size:26px;background:linear-gradient(135deg,#ff5fa2,#ff9330)}
       .swipe-hint{text-align:center;color:var(--text-2);font-size:12.5px;padding:6px 0 14px;font-family:system-ui,sans-serif}
       .swipe-vide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;

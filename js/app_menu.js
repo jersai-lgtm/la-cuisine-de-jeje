@@ -2020,7 +2020,7 @@ function afficherToast(message, type) {
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%) translateY(60px);
-    background: rgba(20,20,30,.96);
+    background: rgba(var(--panel),.96);
     color: #fff;
     padding: 14px 22px;
     border-radius: 12px;

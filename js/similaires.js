@@ -73,7 +73,7 @@
       "#fiche-similaires .sim-carte{flex:0 0 122px;scroll-snap-align:start;background:rgba(255,255,255,.04);" +
       "border:1px solid rgba(255,255,255,.08);border-radius:13px;overflow:hidden;cursor:pointer;transition:transform .12s}" +
       "#fiche-similaires .sim-carte:hover{transform:translateY(-2px)}" +
-      "#fiche-similaires .sim-img{width:100%;height:78px;object-fit:cover;display:block;background:#17151c}" +
+      "#fiche-similaires .sim-img{width:100%;height:78px;object-fit:cover;display:block;background:var(--surface-1)}" +
       "#fiche-similaires .sim-nom{display:block;padding:7px 8px;font-size:12px;color:#e7e4ec;line-height:1.3}";
     document.head.appendChild(st);
   }

@@ -219,7 +219,7 @@ function maToast(msg) {
   if (!t) {
     t = document.createElement("div");
     t.id = "ma-toast";
-    t.style.cssText = "position:fixed;left:50%;bottom:90px;transform:translateX(-50%);z-index:100001;background:#2a2630;color:#fff;padding:11px 18px;border-radius:12px;font-size:14px;box-shadow:0 6px 20px rgba(0,0,0,.4);opacity:0;transition:opacity .25s";
+    t.style.cssText = "position:fixed;left:50%;bottom:90px;transform:translateX(-50%);z-index:100001;background:var(--surface-2);color:#fff;padding:11px 18px;border-radius:12px;font-size:14px;box-shadow:0 6px 20px rgba(0,0,0,.4);opacity:0;transition:opacity .25s";
     document.body.appendChild(t);
   }
   t.textContent = msg;
