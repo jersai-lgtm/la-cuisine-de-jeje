@@ -768,7 +768,15 @@ function getSelecteurPersonnesHTML(nom, personnes) {
   
   const val = Math.max(min, Math.min(max, personnes));
   const unite = getUniteRecette(nom, val);
-  
+  // Pour les sauces / pâtes à tartiner (rendement « pot »), on précise la quantité
+  // approximative en ml/g (sinon « 1 pot » est trop vague).
+  let qteInfo = "";
+  const r0 = (typeof recettes !== "undefined") ? recettes[nom] : null;
+  if (/pot\b/i.test(unite) || (r0 && (r0.cat === "sauces" || r0.cat === "tartinables"))) {
+    const q = quantiteTotaleRecette(nom, val);
+    if (q) qteInfo = ` <span class="selecteur-qte" id="selecteur-qte-fiche" style="color:var(--text-3);font-size:12.5px">(≈ ${q >= 1000 ? (q / 1000).toFixed(1).replace(/\.0$/, "") + " l" : q + " ml"})</span>`;
+  }
+
   return `
     <span class="fiche-selecteur-personnes">
       <span class="selecteur-pre">Pour</span>
@@ -777,9 +785,32 @@ function getSelecteurPersonnesHTML(nom, personnes) {
         <input type="number" value="${val}" min="${min}" max="${max}" class="calc-input" id="fiche-personnes-input" onchange="onChangePersonnesFiche('${nom}')" onclick="this.select()">
         <button type="button" class="calc-btn-plus" onclick="changerPersonnesFiche('${nom}', 1)" ${val >= max ? 'disabled' : ''} aria-label="Plus">+</button>
       </span>
-      <span class="selecteur-post" id="selecteur-unite-fiche">${unite}</span>
+      <span class="selecteur-post" id="selecteur-unite-fiche">${unite}</span>${qteInfo}
     </span>
   `;
+}
+
+// Somme approximative des quantités (g/ml) d'une recette pour n unités → volume total.
+function quantiteTotaleRecette(nom, n) {
+  try {
+    const r = recettes[nom];
+    if (!r) return null;
+    const tk = Object.keys(r).find((k) => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (!tk) return null;
+    const ligne = r[tk].find((l) => l.nb === n || l.patons === n) || r[tk][0];
+    if (!ligne) return null;
+    let total = 0;
+    for (const [k, v] of Object.entries(ligne)) {
+      if (["nb", "label", "patons", "total"].includes(k)) continue;
+      const m = String(v).match(/([\d.,]+)\s*(kg|cl|ml|l|g)\b/i);
+      if (!m) continue;
+      let val = parseFloat(m[1].replace(",", "."));
+      const u = m[2].toLowerCase();
+      if (u === "kg") val *= 1000; else if (u === "cl") val *= 10; else if (u === "l") val *= 1000;
+      total += val; // g ≈ ml pour une estimation de volume
+    }
+    return total > 0 ? Math.round(total) : null;
+  } catch (e) { return null; }
 }
 
 function afficherCoursesRecette(nom, personnes) {

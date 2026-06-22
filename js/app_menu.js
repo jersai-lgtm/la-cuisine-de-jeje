@@ -1752,7 +1752,52 @@ window.retirerRepasSlot = function (jn, m) {
   _persisterMenuCourant(true);
 };
 
+// 🧹 Auto-nettoyage : remplace dans un menu (souvent un ANCIEN sauvegardé) toute
+// recette qui n'a rien à faire là — sauce/apéro/non-repas en plat, ou hors-saison.
+// Idempotent : sans souci sur un menu fraîchement généré (déjà propre).
+function nettoyerMenu(menus) {
+  if (!menus || !menus.semaine || typeof recettes === "undefined") return menus;
+  const nonRepas = new Set(["sauces", "tartinables", "cocktails", "mocktails", "aperitifs", "boulangerie"]);
+  const horsSaison = (k) => (typeof estHorsSaison === "function") ? estHorsSaison(k) : false;
+  const nonRepasListe = (typeof RECETTES_NON_REPAS !== "undefined") ? RECETTES_NON_REPAS : new Set();
+  const valide = (cle, role) => {
+    const r = recettes[cle];
+    if (!r) return false;
+    if (role === "dessert") return r.cat === "desserts" && !horsSaison(cle);
+    if (nonRepas.has(r.cat)) return false;
+    if (nonRepasListe.has && nonRepasListe.has(cle)) return false;
+    if (horsSaison(cle)) return false;
+    return true;
+  };
+  const poolPlat = Object.keys(recettes).filter((k) => valide(k, "plat")).sort();
+  const poolDes = Object.keys(recettes).filter((k) => valide(k, "dessert")).sort();
+  // Remplacement DÉTERMINISTE (même résultat à chaque affichage du même menu).
+  const hash = (s) => { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; };
+  const pick = (pool, seed) => pool.length ? pool[hash(seed) % pool.length] : null;
+  const corrige = (item, role) => {
+    if (!item) return item;
+    const cle = (typeof item === "object") ? item.recette : item;
+    if (typeof cle !== "string" || valide(cle, role)) return item;
+    const np = pick(role === "dessert" ? poolDes : poolPlat, cle + ":" + role);
+    if (!np) return item;
+    if (typeof item === "object") { item.recette = np; return item; }
+    return np;
+  };
+  menus.semaine.forEach((j) => {
+    ["midi", "soir"].forEach((slot) => {
+      const s = j[slot];
+      if (!s) return;
+      if (s.recette && !s.plat) s.recette = (corrige(s.recette, "plat")); // format simple
+      if (s.entree) s.entree = corrige(s.entree, "entree");
+      if (s.plat) s.plat = corrige(s.plat, "plat");
+      if (s.dessert) s.dessert = corrige(s.dessert, "dessert");
+    });
+  });
+  return menus;
+}
+
 function afficherMenusSemaine(menus, personnes) {
+  nettoyerMenu(menus); // auto-corrige les anciens menus (sauces, hors-saison…)
   const container = document.getElementById("plan-jours");
   container.innerHTML = "";
   const isComplet = window._formatRepas === "complet";
