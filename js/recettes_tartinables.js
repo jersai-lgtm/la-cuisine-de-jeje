@@ -491,7 +491,12 @@ Object.assign(recettes, {
       { nb: 7, poischiches: "1750 g", betterave: "1050 g", tahini: "210 g", citron: "7", ail: "35 g", huileolive: "210 ml", cumin: "14 g", sel: "14 g" },
       { nb: 8, poischiches: "2000 g", betterave: "1200 g", tahini: "240 g", citron: "8", ail: "40 g", huileolive: "240 ml", cumin: "16 g", sel: "16 g" },
       { nb: 9, poischiches: "2250 g", betterave: "1350 g", tahini: "270 g", citron: "9", ail: "45 g", huileolive: "270 ml", cumin: "18 g", sel: "18 g" },
-      { nb: 10, poischiches: "2500 g", betterave: "1500 g", tahini: "300 g", citron: "10", ail: "50 g", huileolive: "300 ml", cumin: "20 g", sel: "20 g" }
+      { nb: 10, poischiches: "2500 g", betterave: "1500 g", tahini: "300 g", citron: "10", ail: "50 g", huileolive: "300 ml", cumin: "20 g", sel: "20 g" },
+      { nb: 11, poischiches: "2750 g", betterave: "1650 g", tahini: "330 g", citron: "11", ail: "55 g", huileolive: "330 ml", cumin: "22 g", sel: "22 g" },
+      { nb: 12, poischiches: "3000 g", betterave: "1800 g", tahini: "360 g", citron: "12", ail: "60 g", huileolive: "360 ml", cumin: "24 g", sel: "24 g" },
+      { nb: 13, poischiches: "3250 g", betterave: "1950 g", tahini: "390 g", citron: "13", ail: "65 g", huileolive: "390 ml", cumin: "26 g", sel: "26 g" },
+      { nb: 14, poischiches: "3500 g", betterave: "2100 g", tahini: "420 g", citron: "14", ail: "70 g", huileolive: "420 ml", cumin: "28 g", sel: "28 g" },
+      { nb: 15, poischiches: "3750 g", betterave: "2250 g", tahini: "450 g", citron: "15", ail: "75 g", huileolive: "450 ml", cumin: "30 g", sel: "30 g" }
     ],
     etapes: [
       { icone: "🫐", titre: "Cuire la betterave", detail: "Utiliser de la betterave déjà cuite, ou la cuire à l'eau/au four puis la peler et la couper en morceaux.", badge: null },
@@ -519,7 +524,12 @@ Object.assign(recettes, {
       { nb: 7, petitspois: "1400 g", feta: "420 g", menthe: "35 g", citron: "7", huileolive: "105 ml", sel: "7 g" },
       { nb: 8, petitspois: "1600 g", feta: "480 g", menthe: "40 g", citron: "8", huileolive: "120 ml", sel: "8 g" },
       { nb: 9, petitspois: "1800 g", feta: "540 g", menthe: "45 g", citron: "9", huileolive: "135 ml", sel: "9 g" },
-      { nb: 10, petitspois: "2000 g", feta: "600 g", menthe: "50 g", citron: "10", huileolive: "150 ml", sel: "10 g" }
+      { nb: 10, petitspois: "2000 g", feta: "600 g", menthe: "50 g", citron: "10", huileolive: "150 ml", sel: "10 g" },
+      { nb: 11, petitspois: "2200 g", feta: "660 g", menthe: "55 g", citron: "11", huileolive: "165 ml", sel: "11 g" },
+      { nb: 12, petitspois: "2400 g", feta: "720 g", menthe: "60 g", citron: "12", huileolive: "180 ml", sel: "12 g" },
+      { nb: 13, petitspois: "2600 g", feta: "780 g", menthe: "65 g", citron: "13", huileolive: "195 ml", sel: "13 g" },
+      { nb: 14, petitspois: "2800 g", feta: "840 g", menthe: "70 g", citron: "14", huileolive: "210 ml", sel: "14 g" },
+      { nb: 15, petitspois: "3000 g", feta: "900 g", menthe: "75 g", citron: "15", huileolive: "225 ml", sel: "15 g" }
     ],
     etapes: [
       { icone: "🟢", titre: "Cuire les petits pois", detail: "Cuire les petits pois (frais ou surgelés) quelques minutes à l'eau bouillante salée, puis égoutter et rafraîchir.", badge: "⏱ 4 min" },

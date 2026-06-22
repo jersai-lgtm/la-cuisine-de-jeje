@@ -1,7 +1,7 @@
 // =============================================================================
 // 🍽️ swipe.js — « Qu'est-ce qu'on mange ce soir ? » (mode découverte façon swipe)
 // -----------------------------------------------------------------------------
-// Un deck de recettes qu'on parcourt : 👈 précédente / 👉 suivante, et tap pour
+// Un deck de recettes qu'on parcourt : 👈 suivante / 👉 précédente, et tap pour
 // ouvrir la fiche (navigation réversible, on peut revenir en arrière). Respecte le
 // profil (allergènes, régime) et la saison, comme les suggestions. Le deck est
 // au-dessus de tout (z-index 9000) ; au clic « Voir », on MASQUE le deck pendant
@@ -122,15 +122,15 @@
     setTimeout(cb, 230);
   }
 
-  // Navigation : 👉 suivante (sort à droite, idx++) / 👈 précédente (sort à gauche, idx--).
-  function suivant() { animerSortie(1, () => { idx++; rendre(); }); }
+  // Navigation : 👈 suivante (sort à gauche, idx++) / 👉 précédente (sort à droite, idx--).
+  function suivant() { animerSortie(-1, () => { idx++; rendre(); }); }
   function precedent() {
-    if (idx <= 0) { // déjà au début → petit rebond, on ne sort pas
+    if (idx <= 0) { // déjà au début → petit rebond à droite, on ne sort pas
       const c = document.querySelector("#swipe-stack .swipe-active");
       if (c) { c.style.transition = "transform .18s ease"; c.style.transform = "translateX(26px)"; setTimeout(() => { c.style.transform = ""; }, 160); }
       return;
     }
-    animerSortie(-1, () => { idx--; rendre(); });
+    animerSortie(1, () => { idx--; rendre(); });
   }
   // Attend l'ouverture PUIS la fermeture de la fiche, et rappelle cb.
   function observerFicheClose(cb) {
@@ -182,8 +182,8 @@
       card.classList.remove("vers-oui", "vers-non");
       card.style.transition = "transform .2s ease";
       if (Math.abs(dx) < 10) { card.style.transform = ""; voir(); }   // tap → ouvrir la recette
-      else if (dx > 110) { suivant(); }                               // glisse droite → suivante
-      else if (dx < -110) { precedent(); }                            // glisse gauche → précédente
+      else if (dx < -110) { suivant(); }                              // glisse gauche → suivante
+      else if (dx > 110) { precedent(); }                             // glisse droite → précédente
       else { card.style.transform = ""; }                             // pas assez loin → on revient
     };
     card.addEventListener("touchstart", down, { passive: true });
@@ -254,7 +254,7 @@
           `<button class="swipe-btn like" title="${EN() ? "See recipe" : "Voir la recette"}">😍</button>` +
           `<button class="swipe-btn next" title="${EN() ? "Next" : "Suivante"}">➡️</button>` +
         `</div>` +
-        `<div class="swipe-hint">${meteoHint()}${EN() ? "Swipe 👈 previous · 👉 next · tap to open" : "Glisse 👈 précédente · 👉 suivante · tape pour ouvrir"}</div>`;
+        `<div class="swipe-hint">${meteoHint()}${EN() ? "Swipe 👈 next · 👉 previous · tap to open" : "Glisse 👈 suivante · 👉 précédente · tape pour ouvrir"}</div>`;
       document.body.appendChild(ov);
       ov.querySelector(".swipe-close").addEventListener("click", () => window.fermerSwipe());
       ov.querySelector(".prev").addEventListener("click", precedent);
