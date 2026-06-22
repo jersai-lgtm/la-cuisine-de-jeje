@@ -1043,7 +1043,13 @@ function recettesLieesHTML(key, personnes) {
         const u = m[2].toLowerCase();
         if (u === "kg") need *= 1000; else if (u === "cl") need *= 10; else if (u === "l") need *= 1000;
         const parUnite = quantiteTotaleRecette(c, 1);
-        if (parUnite > 0) scaleArg = String(Math.max(1, Math.round(need / parUnite)));
+        if (parUnite > 0) {
+          // Arrondi au plus proche, mais on monte d'un cran si on resterait à court de >10 %
+          // (mieux vaut un léger surplus de sauce que d'en manquer en plein montage).
+          let pots = Math.max(1, Math.round(need / parUnite));
+          if (pots * parUnite < need * 0.9) pots++;
+          scaleArg = String(pots);
+        }
       }
     }
     return `<div class="liee-item" onclick="ouvrirRecetteLiee('${c}','${key}','${scaleArg}')"><span class="liee-emoji">${emo}</span><span class="liee-nom">${nomC}</span>${besoinHTML}<span class="liee-fleche">›</span></div>`;
