@@ -101,8 +101,10 @@
   }
 
   function fermerModal() { const m = document.getElementById("envie-modal"); if (m) m.remove(); }
+  window.fermerEnvieModal = fermerModal; // pour le bouton retour du téléphone
   function ouvrirSheet(titreHTML, contenuHTML) {
     injecterStyle();
+    const dejaOuvert = !!document.getElementById("envie-modal");
     fermerModal();
     const m = document.createElement("div");
     m.id = "envie-modal";
@@ -111,6 +113,9 @@
     document.body.appendChild(m);
     m.addEventListener("click", (e) => { if (e.target === m) fermerModal(); });
     m.querySelector(".envie-x").addEventListener("click", fermerModal);
+    // Bouton retour ferme la feuille (guard posé uniquement à la 1re ouverture,
+    // pas aux re-rendus internes du quiz).
+    if (!dejaOuvert && typeof window._backGuardPush === "function") window._backGuardPush();
     return m;
   }
   function montrerResultats(titre, cles) {

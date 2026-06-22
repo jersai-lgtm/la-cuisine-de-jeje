@@ -242,7 +242,7 @@
         `</div>` +
         `<div class="swipe-hint">${meteoHint()}${EN() ? "Swipe 👈 skip · 👉 see — or use the buttons" : "Glisse 👈 passer · 👉 voir — ou les boutons"}</div>`;
       document.body.appendChild(ov);
-      ov.querySelector(".swipe-close").addEventListener("click", () => { _actif = false; ov.style.display = "none"; });
+      ov.querySelector(".swipe-close").addEventListener("click", () => window.fermerSwipe());
       ov.querySelector(".skip").addEventListener("click", passer);
       ov.querySelector(".like").addEventListener("click", voir);
       ov.querySelector(".fav").addEventListener("click", favori);
@@ -251,5 +251,13 @@
     _actif = true;
     pool = construirePool(); idx = 0;
     rendre();
+    if (typeof window._backGuardPush === "function") window._backGuardPush(); // bouton retour ferme le deck
+  };
+
+  // Fermeture (bouton ✕ ou retour téléphone).
+  window.fermerSwipe = function () {
+    _actif = false;
+    const ov = document.getElementById("swipe-overlay");
+    if (ov) ov.style.display = "none";
   };
 })();

@@ -3238,6 +3238,9 @@ const _MODALS_SURVEILLEES = [
   { id: "ma-modal",          close: () => typeof fermerAjoutMenu === "function" && fermerAjoutMenu() },
   { id: "photo-plein-ecran", close: () => typeof fermerPhotoPleinEcran === "function" && fermerPhotoPleinEcran() },
   { id: "modal-contribution", close: () => typeof fermerContribution === "function" && fermerContribution() },
+  { id: "swipe-overlay",     close: () => typeof fermerSwipe === "function" && fermerSwipe() },
+  { id: "envie-modal",       close: () => typeof fermerEnvieModal === "function" && fermerEnvieModal() },
+  { id: "modal-objectifs",   close: () => typeof fermerObjectifs === "function" && fermerObjectifs() },
 ];
 
 // Vérifie si un élément est actuellement visible (modal ouverte)

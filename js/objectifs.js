@@ -116,11 +116,13 @@
       '<div style="display:flex;flex-wrap:wrap;gap:8px">' + btnF + "</div>" +
       '<button type="button" id="obj-save" style="width:100%;margin-top:18px;background:linear-gradient(90deg,var(--accent),#ff9330);color:#1a0e14;border:none;border-radius:12px;padding:12px;font-size:15px;font-weight:800;cursor:pointer">' + T("Enregistrer", "Save") + "</button></div>";
     document.body.appendChild(modal);
+    if (typeof window._backGuardPush === "function") window._backGuardPush(); // bouton retour ferme la modale
 
     let selK = o.kcal || 0, selF = o.focus || "";
     modal.querySelectorAll(".obj-k").forEach((b) => b.addEventListener("click", () => { selK = parseInt(b.dataset.kcal) || 0; modal.querySelectorAll(".obj-k").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); }));
     modal.querySelectorAll(".obj-f").forEach((b) => b.addEventListener("click", () => { selF = b.dataset.focus; modal.querySelectorAll(".obj-f").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); }));
     const fermer = () => modal.remove();
+    window.fermerObjectifs = fermer; // pour le bouton retour du téléphone
     modal.querySelector("#obj-close").addEventListener("click", fermer);
     modal.addEventListener("click", (e) => { if (e.target === modal) fermer(); });
     modal.querySelector("#obj-save").addEventListener("click", () => {
