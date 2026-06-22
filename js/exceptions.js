@@ -17,14 +17,8 @@ window.EXCEPTIONS = {
     "brioche",          // 🍞 1 brioche (sélecteur spécial dédié)
     // 🧀 Fromages maison (1 boule / 1 pièce)
     "mozzarellamaison", "fromagefraismaison",
-    // 🫙 Sauces en pot (tableau rescalé : 1 pot = 1 fournée)
-    "mayonnaise", "ketchup", "saucebarbecue", "harissa", "saucetomate", "vinaigrette",
-    "bechamel", "pestomaison", "aioli", "saucecesar", "chimichurri", "saucecurrycoco",
-    "teriyaki", "sauceblanche", "saucesamourai", "saucetartare", "saucehollandaise",
-    "saucesoja", "saucecocktail", "sauceaigredouce", "saucemoutardemiel", "saucepoivre",
-    "sauceburger", "saucechampignon", "veloute", "sauceespagnole", "bearnaise",
-    "beurreblanc", "saucebordelaise", "romesco", "gribiche", "saucevierge", "nuoccham",
-    "toum", "skordalia", "mojoverde", "raita", "ponzu", "zhoug", "chakalaka", "ajvar",
+    // 🫙 Les sauces sont désormais dosées PAR PERSONNE (nb = convives, 1→15) et
+    //    suivent le foyer comme un plat normal → elles ne sont plus "à l'unité".
     // 🍨 Glaces / sorbets en bac
     "glacevanille", "glacechocolat", "glacepistache", "glacecafe", "glacecaramel",
     "glacestracciatella", "glacementhe", "glacerhumraisin", "sorbetcitron", "sorbetframboise",

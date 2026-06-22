@@ -621,47 +621,47 @@ function getUniteRecette(nom, n) {
     "caviaraubergine":      ["pot", "pots"],
     "confiturefraise":      ["pot", "pots"],
     // — Sauces faites en lot → pot (tableaux rescalés : 1 pot = 1 fournée) —
-    "mayonnaise":           ["pot", "pots"],
-    "ketchup":              ["pot", "pots"],
-    "saucebarbecue":        ["pot", "pots"],
-    "harissa":              ["pot", "pots"],
-    "saucetomate":          ["pot", "pots"],
-    "vinaigrette":          ["pot", "pots"],
-    "bechamel":             ["pot", "pots"],
-    "pestomaison":          ["pot", "pots"],
-    "aioli":                ["pot", "pots"],
-    "saucecesar":           ["pot", "pots"],
-    "chimichurri":          ["pot", "pots"],
-    "saucecurrycoco":       ["pot", "pots"],
-    "teriyaki":             ["pot", "pots"],
-    "sauceblanche":         ["pot", "pots"],
-    "saucesamourai":        ["pot", "pots"],
-    "saucetartare":         ["pot", "pots"],
-    "saucehollandaise":     ["pot", "pots"],
-    "saucesoja":            ["pot", "pots"],
-    "saucecocktail":        ["pot", "pots"],
-    "sauceaigredouce":      ["pot", "pots"],
-    "saucemoutardemiel":    ["pot", "pots"],
-    "saucepoivre":          ["pot", "pots"],
-    "sauceburger":          ["pot", "pots"],
-    "saucechampignon":      ["pot", "pots"],
-    "veloute":              ["pot", "pots"],
-    "sauceespagnole":       ["pot", "pots"],
-    "bearnaise":            ["pot", "pots"],
-    "beurreblanc":          ["pot", "pots"],
-    "saucebordelaise":      ["pot", "pots"],
-    "romesco":              ["pot", "pots"],
-    "gribiche":             ["pot", "pots"],
-    "saucevierge":          ["pot", "pots"],
-    "nuoccham":             ["pot", "pots"],
-    "toum":                 ["pot", "pots"],
-    "skordalia":            ["pot", "pots"],
-    "mojoverde":            ["pot", "pots"],
-    "raita":                ["pot", "pots"],
-    "ponzu":                ["pot", "pots"],
-    "zhoug":                ["pot", "pots"],
-    "chakalaka":            ["pot", "pots"],
-    "ajvar":                ["pot", "pots"],
+    "mayonnaise":           ["personne", "personnes"],
+    "ketchup":              ["personne", "personnes"],
+    "saucebarbecue":        ["personne", "personnes"],
+    "harissa":              ["personne", "personnes"],
+    "saucetomate":          ["personne", "personnes"],
+    "vinaigrette":          ["personne", "personnes"],
+    "bechamel":             ["personne", "personnes"],
+    "pestomaison":          ["personne", "personnes"],
+    "aioli":                ["personne", "personnes"],
+    "saucecesar":           ["personne", "personnes"],
+    "chimichurri":          ["personne", "personnes"],
+    "saucecurrycoco":       ["personne", "personnes"],
+    "teriyaki":             ["personne", "personnes"],
+    "sauceblanche":         ["personne", "personnes"],
+    "saucesamourai":        ["personne", "personnes"],
+    "saucetartare":         ["personne", "personnes"],
+    "saucehollandaise":     ["personne", "personnes"],
+    "saucesoja":            ["personne", "personnes"],
+    "saucecocktail":        ["personne", "personnes"],
+    "sauceaigredouce":      ["personne", "personnes"],
+    "saucemoutardemiel":    ["personne", "personnes"],
+    "saucepoivre":          ["personne", "personnes"],
+    "sauceburger":          ["personne", "personnes"],
+    "saucechampignon":      ["personne", "personnes"],
+    "veloute":              ["personne", "personnes"],
+    "sauceespagnole":       ["personne", "personnes"],
+    "bearnaise":            ["personne", "personnes"],
+    "beurreblanc":          ["personne", "personnes"],
+    "saucebordelaise":      ["personne", "personnes"],
+    "romesco":              ["personne", "personnes"],
+    "gribiche":             ["personne", "personnes"],
+    "saucevierge":          ["personne", "personnes"],
+    "nuoccham":             ["personne", "personnes"],
+    "toum":                 ["personne", "personnes"],
+    "skordalia":            ["personne", "personnes"],
+    "mojoverde":            ["personne", "personnes"],
+    "raita":                ["personne", "personnes"],
+    "ponzu":                ["personne", "personnes"],
+    "zhoug":                ["personne", "personnes"],
+    "chakalaka":            ["personne", "personnes"],
+    "ajvar":                ["personne", "personnes"],
     // — Glaces / sorbets → bac (1 bac = 1 fournée) —
     "glacevanille":         ["bac", "bacs"],
     "glacechocolat":        ["bac", "bacs"],
@@ -776,13 +776,9 @@ function getSelecteurPersonnesHTML(nom, personnes) {
     const q = quantiteTotaleRecette(nom, val);
     if (q) {
       const vol = q >= 1000 ? (q / 1000).toFixed(1).replace(/\.0$/, "") + " l" : q + " ml";
-      let extra = "";
-      if (r0 && r0.cat === "sauces") {
-        const dose = (typeof ML_PAR_PORTION !== "undefined" && ML_PAR_PORTION[nom]) || 25; // ml par usage/personne
-        const np = Math.max(1, Math.round(q / dose));
-        extra = " · " + (window.LANG === "en" ? ("~" + np + " serving" + (np > 1 ? "s" : "")) : ("pour ~" + np + " portion" + (np > 1 ? "s" : "")));
-      }
-      qteInfo = ` <span class="selecteur-qte" id="selecteur-qte-fiche" style="color:var(--text-3);font-size:12.5px">(≈ ${vol}${extra})</span>`;
+      // Les sauces sont désormais dosées par personne (nb = convives) → on indique juste
+      // le volume total obtenu. Les tartinables restent en « pot ».
+      qteInfo = ` <span class="selecteur-qte" id="selecteur-qte-fiche" style="color:var(--text-3);font-size:12.5px">(≈ ${vol})</span>`;
     }
   }
 
@@ -1031,24 +1027,37 @@ function recettesLieesHTML(key, personnes) {
     const rc = recettes[c];
     const nomC = (typeof getNomRecette === "function") ? getNomRecette(c) : (rc.nom || c);
     const emo = rc.emoji || "🍽️";
-    // Le parent liste-t-il ce composant comme ingrédient (avec une quantité) ?
     let besoinHTML = "", scaleArg = "null";
-    const q = ligne && ligne[c] ? String(ligne[c]) : "";
-    if (q) {
-      besoinHTML = `<span class="liee-qte">${q}</span>`;
-      // Combien d'unités de la liée pour couvrir ce besoin (si quantité en volume/poids) ?
-      const m = q.match(/([\d.,]+)\s*(kg|cl|ml|l|g)\b/i);
-      if (m && typeof quantiteTotaleRecette === "function") {
-        let need = parseFloat(m[1].replace(",", "."));
-        const u = m[2].toLowerCase();
-        if (u === "kg") need *= 1000; else if (u === "cl") need *= 10; else if (u === "l") need *= 1000;
-        const parUnite = quantiteTotaleRecette(c, 1);
-        if (parUnite > 0) {
-          // Arrondi au plus proche, mais on monte d'un cran si on resterait à court de >10 %
-          // (mieux vaut un léger surplus de sauce que d'en manquer en plein montage).
-          let pots = Math.max(1, Math.round(need / parUnite));
-          if (pots * parUnite < need * 0.9) pots++;
-          scaleArg = String(pots);
+    if (rc.cat === "sauces") {
+      // Sauces dosées par personne (nb = convives) → on ouvre la sauce au même nombre
+      // de convives que le plat. La quantité affichée est le volume total obtenu.
+      const np = Math.max(1, Math.min(15, base));
+      scaleArg = String(np);
+      if (typeof quantiteTotaleRecette === "function") {
+        const vol = quantiteTotaleRecette(c, np);
+        if (vol) {
+          const txt = vol >= 1000 ? (vol / 1000).toFixed(1).replace(/\.0$/, "") + " l" : vol + " ml";
+          besoinHTML = `<span class="liee-qte">≈ ${txt}</span>`;
+        }
+      }
+    } else {
+      // Autres composants (pâtes, pains…) : si le parent donne une quantité, on pré-calcule
+      // combien d'unités ouvrir pour la couvrir.
+      const q = ligne && ligne[c] ? String(ligne[c]) : "";
+      if (q) {
+        besoinHTML = `<span class="liee-qte">${q}</span>`;
+        const m = q.match(/([\d.,]+)\s*(kg|cl|ml|l|g)\b/i);
+        if (m && typeof quantiteTotaleRecette === "function") {
+          let need = parseFloat(m[1].replace(",", "."));
+          const u = m[2].toLowerCase();
+          if (u === "kg") need *= 1000; else if (u === "cl") need *= 10; else if (u === "l") need *= 1000;
+          const parUnite = quantiteTotaleRecette(c, 1);
+          if (parUnite > 0) {
+            // Arrondi au plus proche, mais on monte d'un cran si on resterait à court de >10 %.
+            let pots = Math.max(1, Math.round(need / parUnite));
+            if (pots * parUnite < need * 0.9) pots++;
+            scaleArg = String(pots);
+          }
         }
       }
     }
