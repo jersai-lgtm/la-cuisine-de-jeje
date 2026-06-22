@@ -774,7 +774,16 @@ function getSelecteurPersonnesHTML(nom, personnes) {
   const r0 = (typeof recettes !== "undefined") ? recettes[nom] : null;
   if (/pot\b/i.test(unite) || (r0 && (r0.cat === "sauces" || r0.cat === "tartinables"))) {
     const q = quantiteTotaleRecette(nom, val);
-    if (q) qteInfo = ` <span class="selecteur-qte" id="selecteur-qte-fiche" style="color:var(--text-3);font-size:12.5px">(≈ ${q >= 1000 ? (q / 1000).toFixed(1).replace(/\.0$/, "") + " l" : q + " ml"})</span>`;
+    if (q) {
+      const vol = q >= 1000 ? (q / 1000).toFixed(1).replace(/\.0$/, "") + " l" : q + " ml";
+      let extra = "";
+      if (r0 && r0.cat === "sauces") {
+        const dose = (typeof ML_PAR_PORTION !== "undefined" && ML_PAR_PORTION[nom]) || 25; // ml par usage/personne
+        const np = Math.max(1, Math.round(q / dose));
+        extra = " · " + (window.LANG === "en" ? ("~" + np + " serving" + (np > 1 ? "s" : "")) : ("pour ~" + np + " portion" + (np > 1 ? "s" : "")));
+      }
+      qteInfo = ` <span class="selecteur-qte" id="selecteur-qte-fiche" style="color:var(--text-3);font-size:12.5px">(≈ ${vol}${extra})</span>`;
+    }
   }
 
   return `
@@ -789,6 +798,14 @@ function getSelecteurPersonnesHTML(nom, personnes) {
     </span>
   `;
 }
+
+// Dose de sauce par usage/personne (ml). Défaut condiment = 25 ml ; les sauces de
+// cuisson/nappage en demandent bien plus par personne.
+const ML_PAR_PORTION = {
+  bechamel: 120, saucetomate: 120, saucecurrycoco: 110, saucechampignon: 90,
+  saucehollandaise: 50, saucepoivre: 60, sauceblanche: 60, saucearomb: 80,
+  vinaigrette: 15, saucecesar: 25, chimichurri: 20, pestomaison: 30,
+};
 
 // Somme approximative des quantités (g/ml) d'une recette pour n unités → volume total.
 function quantiteTotaleRecette(nom, n) {
