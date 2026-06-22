@@ -1,7 +1,8 @@
 // =============================================================================
 // 🍽️ swipe.js — « Qu'est-ce qu'on mange ce soir ? » (mode découverte façon swipe)
 // -----------------------------------------------------------------------------
-// Un deck de recettes qu'on fait défiler : 👈 passer / 👉 voir. Respecte le
+// Un deck de recettes qu'on parcourt : 👈 précédente / 👉 suivante, et tap pour
+// ouvrir la fiche (navigation réversible, on peut revenir en arrière). Respecte le
 // profil (allergènes, régime) et la saison, comme les suggestions. Le deck est
 // au-dessus de tout (z-index 9000) ; au clic « Voir », on MASQUE le deck pendant
 // l'affichage de la fiche puis on le ré-affiche à sa fermeture (évite les
@@ -90,8 +91,8 @@
       <img loading="lazy" decoding="async" src="${img}" alt="${nom}" onerror="${onerr}">
       <div class="swipe-grad"></div>
       ${nutriBadge(key)}
-      <div class="swipe-yes">😍</div>
-      <div class="swipe-no">👎</div>
+      <div class="swipe-yes">➡️</div>
+      <div class="swipe-no">⬅️</div>
       <div class="swipe-cap">
         <span class="swipe-nom">${dra}<span class="swipe-emoji">${r.emoji || "🍽️"}</span> ${nom}</span>
         <span class="swipe-meta">${meta}</span>
@@ -121,7 +122,16 @@
     setTimeout(cb, 230);
   }
 
-  function passer() { animerSortie(-1, () => { idx++; rendre(); }); }
+  // Navigation : 👉 suivante (sort à droite, idx++) / 👈 précédente (sort à gauche, idx--).
+  function suivant() { animerSortie(1, () => { idx++; rendre(); }); }
+  function precedent() {
+    if (idx <= 0) { // déjà au début → petit rebond, on ne sort pas
+      const c = document.querySelector("#swipe-stack .swipe-active");
+      if (c) { c.style.transition = "transform .18s ease"; c.style.transform = "translateX(26px)"; setTimeout(() => { c.style.transform = ""; }, 160); }
+      return;
+    }
+    animerSortie(-1, () => { idx--; rendre(); });
+  }
   // Attend l'ouverture PUIS la fermeture de la fiche, et rappelle cb.
   function observerFicheClose(cb) {
     const m = document.getElementById("modal-calc");
@@ -139,7 +149,7 @@
     if (!key) return;
     const ov = document.getElementById("swipe-overlay");
     if (ov) ov.style.display = "none"; // on masque le deck pendant la fiche…
-    observerFicheClose(() => { if (ov && _actif) { ov.style.display = "flex"; } idx++; rendre(); }); // …et on le ré-affiche en fermant
+    observerFicheClose(() => { if (ov && _actif) { ov.style.display = "flex"; } rendre(); }); // …et on le ré-affiche en fermant (on reste sur la même recette, pas d'avance auto)
     if (typeof ouvrirFiche === "function") ouvrirFiche(key, "");
   }
   function favori() {
@@ -171,9 +181,10 @@
       if (!drag) return; drag = false;
       card.classList.remove("vers-oui", "vers-non");
       card.style.transition = "transform .2s ease";
-      if (dx > 110) { voir(); }
-      else if (dx < -110) { passer(); }
-      else { card.style.transform = ""; }
+      if (Math.abs(dx) < 10) { card.style.transform = ""; voir(); }   // tap → ouvrir la recette
+      else if (dx > 110) { suivant(); }                               // glisse droite → suivante
+      else if (dx < -110) { precedent(); }                            // glisse gauche → précédente
+      else { card.style.transform = ""; }                             // pas assez loin → on revient
     };
     card.addEventListener("touchstart", down, { passive: true });
     card.addEventListener("touchmove", move, { passive: false });
@@ -210,11 +221,13 @@
       .swipe-yes,.swipe-no{position:absolute;top:20px;font-size:46px;opacity:0;transition:opacity .1s;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
       .swipe-yes{right:20px}.swipe-no{left:20px}
       .swipe-card.vers-oui .swipe-yes{opacity:1}.swipe-card.vers-non .swipe-no{opacity:1}
-      .swipe-actions{display:flex;align-items:center;justify-content:center;gap:18px;padding:8px 18px 4px}
+      .swipe-actions{display:flex;align-items:center;justify-content:center;gap:14px;padding:8px 18px 4px}
       .swipe-btn{border:none;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;
         box-shadow:0 6px 18px rgba(0,0,0,.4);transition:transform .12s}
       .swipe-btn:active{transform:scale(.92)}
       .swipe-btn.skip{width:60px;height:60px;font-size:24px;background:var(--surface-2);color:#fff}
+      .swipe-btn.prev,.swipe-btn.next{width:58px;height:58px;font-size:22px;background:var(--surface-2);color:#fff}
+      .swipe-card.swipe-active{cursor:pointer}
       .swipe-btn.fav{width:50px;height:50px;font-size:20px;background:var(--surface-2)}
       .swipe-btn.like{width:68px;height:68px;font-size:26px;background:linear-gradient(135deg,#ff5fa2,#ff9330)}
       .swipe-hint{text-align:center;color:var(--text-2);font-size:12.5px;padding:6px 0 14px;font-family:system-ui,sans-serif}
@@ -236,16 +249,18 @@
         `<button class="swipe-close" aria-label="Fermer">✕</button></div>` +
         `<div class="swipe-stack" id="swipe-stack"></div>` +
         `<div class="swipe-actions">` +
-          `<button class="swipe-btn skip" title="${EN() ? "Skip" : "Passer"}">👎</button>` +
+          `<button class="swipe-btn prev" title="${EN() ? "Previous" : "Précédente"}">⬅️</button>` +
           `<button class="swipe-btn fav" title="${EN() ? "Favorite" : "Favori"}">🤍</button>` +
           `<button class="swipe-btn like" title="${EN() ? "See recipe" : "Voir la recette"}">😍</button>` +
+          `<button class="swipe-btn next" title="${EN() ? "Next" : "Suivante"}">➡️</button>` +
         `</div>` +
-        `<div class="swipe-hint">${meteoHint()}${EN() ? "Swipe 👈 skip · 👉 see — or use the buttons" : "Glisse 👈 passer · 👉 voir — ou les boutons"}</div>`;
+        `<div class="swipe-hint">${meteoHint()}${EN() ? "Swipe 👈 previous · 👉 next · tap to open" : "Glisse 👈 précédente · 👉 suivante · tape pour ouvrir"}</div>`;
       document.body.appendChild(ov);
       ov.querySelector(".swipe-close").addEventListener("click", () => window.fermerSwipe());
-      ov.querySelector(".skip").addEventListener("click", passer);
-      ov.querySelector(".like").addEventListener("click", voir);
+      ov.querySelector(".prev").addEventListener("click", precedent);
       ov.querySelector(".fav").addEventListener("click", favori);
+      ov.querySelector(".like").addEventListener("click", voir);
+      ov.querySelector(".next").addEventListener("click", suivant);
     }
     ov.style.display = "flex";
     _actif = true;
