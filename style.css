@@ -541,6 +541,8 @@ header p  { color: var(--text-2); font-size: 15px; margin: 8px 0 0; }
 .liee-item:active { transform: scale(.98); }
 .liee-emoji { font-size: 20px; }
 .liee-nom { flex: 1; font-size: 13px; font-weight: 600; color: var(--text); }
+.liee-qte { font-size: 12px; font-weight: 700; color: var(--accent, #f48fb1); background: rgba(var(--accent-rgb),.12); border-radius: 8px; padding: 2px 7px; white-space: nowrap; }
+.liee-hint { font-size: 11px; font-weight: 400; color: var(--text-3); }
 .liee-fleche { color: var(--accent, #f48fb1); font-size: 18px; font-weight: 700; }
 .fiche-retour { background: none; border: none; color: var(--accent, #f48fb1); font-size: 15px; font-weight: 600; padding: 4px 6px; margin: 0 0 2px -2px; cursor: pointer; display: inline-flex; align-items: center; }
 .fiche-retour:active { transform: scale(.97); }

@@ -1010,24 +1010,45 @@ function nutriLettreRecette(key) {
 
 // Section "Recettes liées" : composants de la recette (buns, pâtes, sauces, compote…) cliquables.
 // Ouvre une recette liée en empilant la recette parente (pour le bouton retour).
-function ouvrirRecetteLiee(child, parent) {
+function ouvrirRecetteLiee(child, parent, scale) {
   window._ficheNavStack = window._ficheNavStack || [];
   if (parent) window._ficheNavStack.push(parent);
   if (typeof window._backGuardPush === "function") window._backGuardPush(); // état d'historique → le bouton retour reviendra ici
-  choisirRecette(child, null, true);
+  // scale (optionnel) : nb d'unités de la liée pour couvrir le besoin du parent
+  choisirRecette(child, (scale && scale !== "null") ? parseInt(scale, 10) : null, true);
 }
 
-function recettesLieesHTML(key) {
+function recettesLieesHTML(key, personnes) {
   const r = recettes[key];
   const liste = (r && Array.isArray(r.liees)) ? r.liees.filter(c => recettes[c]) : [];
   if (!liste.length) return "";
+  // Ligne du tableau parent au nb de portions courant → quantités des composants.
+  const tk = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+  const base = personnes || r.base || 4;
+  const ligne = tk ? (r[tk].find(l => l.nb === base || l.patons === base) || r[tk][0]) : null;
+
   const items = liste.map(c => {
     const rc = recettes[c];
     const nomC = (typeof getNomRecette === "function") ? getNomRecette(c) : (rc.nom || c);
     const emo = rc.emoji || "🍽️";
-    return `<div class="liee-item" onclick="ouvrirRecetteLiee('${c}','${key}')"><span class="liee-emoji">${emo}</span><span class="liee-nom">${nomC}</span><span class="liee-fleche">›</span></div>`;
+    // Le parent liste-t-il ce composant comme ingrédient (avec une quantité) ?
+    let besoinHTML = "", scaleArg = "null";
+    const q = ligne && ligne[c] ? String(ligne[c]) : "";
+    if (q) {
+      besoinHTML = `<span class="liee-qte">${q}</span>`;
+      // Combien d'unités de la liée pour couvrir ce besoin (si quantité en volume/poids) ?
+      const m = q.match(/([\d.,]+)\s*(kg|cl|ml|l|g)\b/i);
+      if (m && typeof quantiteTotaleRecette === "function") {
+        let need = parseFloat(m[1].replace(",", "."));
+        const u = m[2].toLowerCase();
+        if (u === "kg") need *= 1000; else if (u === "cl") need *= 10; else if (u === "l") need *= 1000;
+        const parUnite = quantiteTotaleRecette(c, 1);
+        if (parUnite > 0) scaleArg = String(Math.max(1, Math.round(need / parUnite)));
+      }
+    }
+    return `<div class="liee-item" onclick="ouvrirRecetteLiee('${c}','${key}','${scaleArg}')"><span class="liee-emoji">${emo}</span><span class="liee-nom">${nomC}</span>${besoinHTML}<span class="liee-fleche">›</span></div>`;
   }).join("");
-  return `<div class="fiche-liees"><div class="fiche-liees-titre">🔗 Recettes liées</div><div class="fiche-liees-liste">${items}</div></div>`;
+  return `<div class="fiche-liees"><div class="fiche-liees-titre">🔗 Recettes liées <span class="liee-hint">(quantité pour cette recette)</span></div><div class="fiche-liees-liste">${items}</div></div>`;
 }
 
 function choisirRecette(nom, personnesOverride, fromLiee) {
@@ -1877,7 +1898,7 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
       </div>
     </div>
     ${htmlPrixCalories(nom, personnes)}
-    ${typeof recettesLieesHTML === "function" ? recettesLieesHTML(nom) : ""}
+    ${typeof recettesLieesHTML === "function" ? recettesLieesHTML(nom, personnes) : ""}
     <div class="fiche-meta">
       <span>⏱ ${data.temps}</span>
       <span>${data.niveau}</span>
