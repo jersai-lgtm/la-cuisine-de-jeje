@@ -2167,39 +2167,39 @@ Object.assign(recettes, {
       { icone: "🧂", titre: "Saler", detail: "Saler légèrement et déguster aussitôt.", badge: null }
     ]
   },
-  proteinballcacao: {
-    nom: "Protein Balls Cacao",
+  chipslegumes: {
+    nom: "Chips de Légumes Maison",
     cat: "encas",
-    pays: "etats-unis",
-    dateAjout: "2026-06-22T11:00:00",
-    base: 12,
-    temps: "15 min",
+    pays: "france",
+    dateAjout: "2026-06-23T10:00:00",
+    base: 4,
+    temps: "30 min",
     niveau: "⭐ Facile",
-    emoji: "⚡",
-    description: "Les bouchées énergétiques sans cuisson : dattes, flocons d'avoine, cacao et cacahuètes mixés et roulés en boules. L'encas sain avant ou après le sport.",
-    tableauProteinballcacao: [
-      { nb: 1, dattes: "15 g", flocons: "10 g", cacao: "3 g", cacahuetes: "8 g", miel: "3 g", sesame: "1 g" },
-      { nb: 2, dattes: "30 g", flocons: "20 g", cacao: "6 g", cacahuetes: "16 g", miel: "6 g", sesame: "2 g" },
-      { nb: 3, dattes: "45 g", flocons: "30 g", cacao: "9 g", cacahuetes: "24 g", miel: "9 g", sesame: "3 g" },
-      { nb: 4, dattes: "60 g", flocons: "40 g", cacao: "12 g", cacahuetes: "32 g", miel: "12 g", sesame: "4 g" },
-      { nb: 5, dattes: "75 g", flocons: "50 g", cacao: "15 g", cacahuetes: "40 g", miel: "15 g", sesame: "5 g" },
-      { nb: 6, dattes: "90 g", flocons: "60 g", cacao: "18 g", cacahuetes: "48 g", miel: "18 g", sesame: "6 g" },
-      { nb: 7, dattes: "105 g", flocons: "70 g", cacao: "21 g", cacahuetes: "56 g", miel: "21 g", sesame: "7 g" },
-      { nb: 8, dattes: "120 g", flocons: "80 g", cacao: "24 g", cacahuetes: "64 g", miel: "24 g", sesame: "8 g" },
-      { nb: 9, dattes: "135 g", flocons: "90 g", cacao: "27 g", cacahuetes: "72 g", miel: "27 g", sesame: "9 g" },
-      { nb: 10, dattes: "150 g", flocons: "100 g", cacao: "30 g", cacahuetes: "80 g", miel: "30 g", sesame: "10 g" },
-      { nb: 11, dattes: "165 g", flocons: "110 g", cacao: "33 g", cacahuetes: "88 g", miel: "33 g", sesame: "11 g" },
-      { nb: 12, dattes: "180 g", flocons: "120 g", cacao: "36 g", cacahuetes: "96 g", miel: "36 g", sesame: "12 g" },
-      { nb: 13, dattes: "195 g", flocons: "130 g", cacao: "39 g", cacahuetes: "104 g", miel: "39 g", sesame: "13 g" },
-      { nb: 14, dattes: "210 g", flocons: "140 g", cacao: "42 g", cacahuetes: "112 g", miel: "42 g", sesame: "14 g" },
-      { nb: 15, dattes: "225 g", flocons: "150 g", cacao: "45 g", cacahuetes: "120 g", miel: "45 g", sesame: "15 g" }
+    emoji: "🥔",
+    description: "L'apéro croustillant et coloré : de fines lamelles de patate douce, betterave et carotte rôties au four jusqu'au croquant. Bien plus saines que les chips du commerce.",
+    tableauChipslegumes: [
+      { nb: 1, patatedouce: "60 g", betterave: "40 g", carotte: "40 g", huileolive: "8 ml", sel: "1 g", paprika: "1 g" },
+      { nb: 2, patatedouce: "120 g", betterave: "80 g", carotte: "80 g", huileolive: "16 ml", sel: "2 g", paprika: "2 g" },
+      { nb: 3, patatedouce: "180 g", betterave: "120 g", carotte: "120 g", huileolive: "24 ml", sel: "3 g", paprika: "3 g" },
+      { nb: 4, patatedouce: "240 g", betterave: "160 g", carotte: "160 g", huileolive: "32 ml", sel: "4 g", paprika: "4 g" },
+      { nb: 5, patatedouce: "300 g", betterave: "200 g", carotte: "200 g", huileolive: "40 ml", sel: "5 g", paprika: "5 g" },
+      { nb: 6, patatedouce: "360 g", betterave: "240 g", carotte: "240 g", huileolive: "48 ml", sel: "6 g", paprika: "6 g" },
+      { nb: 7, patatedouce: "420 g", betterave: "280 g", carotte: "280 g", huileolive: "56 ml", sel: "7 g", paprika: "7 g" },
+      { nb: 8, patatedouce: "480 g", betterave: "320 g", carotte: "320 g", huileolive: "64 ml", sel: "8 g", paprika: "8 g" },
+      { nb: 9, patatedouce: "540 g", betterave: "360 g", carotte: "360 g", huileolive: "72 ml", sel: "9 g", paprika: "9 g" },
+      { nb: 10, patatedouce: "600 g", betterave: "400 g", carotte: "400 g", huileolive: "80 ml", sel: "10 g", paprika: "10 g" },
+      { nb: 11, patatedouce: "660 g", betterave: "440 g", carotte: "440 g", huileolive: "88 ml", sel: "11 g", paprika: "11 g" },
+      { nb: 12, patatedouce: "720 g", betterave: "480 g", carotte: "480 g", huileolive: "96 ml", sel: "12 g", paprika: "12 g" },
+      { nb: 13, patatedouce: "780 g", betterave: "520 g", carotte: "520 g", huileolive: "104 ml", sel: "13 g", paprika: "13 g" },
+      { nb: 14, patatedouce: "840 g", betterave: "560 g", carotte: "560 g", huileolive: "112 ml", sel: "14 g", paprika: "14 g" },
+      { nb: 15, patatedouce: "900 g", betterave: "600 g", carotte: "600 g", huileolive: "120 ml", sel: "15 g", paprika: "15 g" }
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌀", titre: "Mixer", detail: "Mixer les dattes dénoyautées jusqu'à obtenir une pâte collante.", badge: null },
-      { icone: "🥣", titre: "Mélanger", detail: "Ajouter flocons, cacao, cacahuètes concassées et miel, mixer par à-coups.", badge: null },
-      { icone: "🤏", titre: "Rouler", detail: "Façonner des petites boules à la main. ASTUCE CHEF : si la pâte colle trop, humidifie légèrement tes mains — elle se roule sans accrocher.", badge: null },
-      { icone: "❄️", titre: "Raffermir", detail: "Rouler dans le sésame et réserver 30 min au frais.", badge: "⏱ 30 min" }
+      { icone: "🔪", titre: "Trancher", detail: "Couper les légumes en lamelles très fines à la mandoline.", badge: null },
+      { icone: "🧻", titre: "Sécher", detail: "Éponger soigneusement les lamelles dans un torchon propre.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Enrober d'un filet d'huile, de sel et de paprika. ASTUCE CHEF : sèche bien les lamelles avant cuisson — l'humidité résiduelle empêche les chips de devenir croustillantes.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Étaler en une seule couche et rôtir à 150°C jusqu'au croquant, en surveillant.", badge: "⏱ 20 min" }
     ]
   },
 });

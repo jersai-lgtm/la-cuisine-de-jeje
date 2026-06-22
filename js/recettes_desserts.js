@@ -5207,42 +5207,6 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Cuire à 200°C jusqu'à ce que le dessus caramélise.", badge: "⏱ 20 min" }
     ]
   },
-  tartecitronmeringuee: {
-    liees: ["patesablee", "lemoncurd"],
-    nom: "Tarte au Citron Meringuée",
-    cat: "desserts",
-    pays: "france",
-    dateAjout: "2026-06-22T11:00:00",
-    base: 6,
-    temps: "1 h 30",
-    niveau: "⭐⭐⭐ Difficile",
-    emoji: "🍋",
-    description: "Le grand classique : une pâte sablée croustillante, une crème au citron acidulée et une meringue dorée généreuse. L'équilibre parfait entre le piquant et le sucré.",
-    tableauTartecitronmeringuee: [
-      { nb: 1, farine: "25 g", beurre: "18 g", citron: "25 ml", oeufs: "1", sucre: "30 g", maizena: "6 g", blancsoeufs: "1" },
-      { nb: 2, farine: "50 g", beurre: "36 g", citron: "50 ml", oeufs: "2", sucre: "60 g", maizena: "12 g", blancsoeufs: "1" },
-      { nb: 3, farine: "75 g", beurre: "54 g", citron: "75 ml", oeufs: "2", sucre: "90 g", maizena: "18 g", blancsoeufs: "2" },
-      { nb: 4, farine: "100 g", beurre: "72 g", citron: "100 ml", oeufs: "3", sucre: "120 g", maizena: "24 g", blancsoeufs: "3" },
-      { nb: 5, farine: "125 g", beurre: "90 g", citron: "125 ml", oeufs: "4", sucre: "150 g", maizena: "30 g", blancsoeufs: "4" },
-      { nb: 6, farine: "150 g", beurre: "108 g", citron: "150 ml", oeufs: "5", sucre: "180 g", maizena: "36 g", blancsoeufs: "4" },
-      { nb: 7, farine: "175 g", beurre: "126 g", citron: "175 ml", oeufs: "6", sucre: "210 g", maizena: "42 g", blancsoeufs: "5" },
-      { nb: 8, farine: "200 g", beurre: "144 g", citron: "200 ml", oeufs: "6", sucre: "240 g", maizena: "48 g", blancsoeufs: "6" },
-      { nb: 9, farine: "225 g", beurre: "162 g", citron: "225 ml", oeufs: "7", sucre: "270 g", maizena: "54 g", blancsoeufs: "6" },
-      { nb: 10, farine: "250 g", beurre: "180 g", citron: "250 ml", oeufs: "8", sucre: "300 g", maizena: "60 g", blancsoeufs: "7" },
-      { nb: 11, farine: "275 g", beurre: "198 g", citron: "275 ml", oeufs: "9", sucre: "330 g", maizena: "66 g", blancsoeufs: "8" },
-      { nb: 12, farine: "300 g", beurre: "216 g", citron: "300 ml", oeufs: "10", sucre: "360 g", maizena: "72 g", blancsoeufs: "8" },
-      { nb: 13, farine: "325 g", beurre: "234 g", citron: "325 ml", oeufs: "10", sucre: "390 g", maizena: "78 g", blancsoeufs: "9" },
-      { nb: 14, farine: "350 g", beurre: "252 g", citron: "350 ml", oeufs: "11", sucre: "420 g", maizena: "84 g", blancsoeufs: "10" },
-      { nb: 15, farine: "375 g", beurre: "270 g", citron: "375 ml", oeufs: "12", sucre: "450 g", maizena: "90 g", blancsoeufs: "11" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🫓", titre: "Pâte sablée", detail: "Sabler farine et beurre, ajouter un peu de sucre, foncer un moule et cuire à blanc.", badge: "⏱ 25 min" },
-      { icone: "🍋", titre: "Crème citron", detail: "Cuire jus de citron, œufs, sucre et maïzena jusqu'à épaississement, garnir le fond.", badge: "⏱ 10 min" },
-      { icone: "☁️", titre: "Meringue", detail: "Monter les blancs en meringue avec le sucre restant. ASTUCE CHEF : étale la meringue jusqu'aux bords de la pâte — bien soudée, elle ne se rétracte pas et ne pleure pas à la cuisson.", badge: null },
-      { icone: "🔥", titre: "Dorer", detail: "Pocher la meringue sur la crème et dorer au four ou au chalumeau.", badge: "⏱ 8 min" }
-    ]
-  },
   quatrequarts: {
     nom: "Quatre-Quarts",
     cat: "desserts",
@@ -5276,6 +5240,42 @@ Object.assign(recettes, {
       { icone: "🥚", titre: "Œufs", detail: "Incorporer les œufs un à un en fouettant bien.", badge: null },
       { icone: "🌾", titre: "Farine", detail: "Ajouter farine, levure et sel délicatement. ASTUCE CHEF : sépare les blancs et monte-les en neige pour les incorporer à la fin — le quatre-quarts en sort bien plus aérien.", badge: null },
       { icone: "🔥", titre: "Cuire", detail: "Verser dans un moule à cake et cuire à 170°C.", badge: "⏱ 40 min" }
+    ]
+  },
+  gateausavoie: {
+    nom: "Gâteau de Savoie",
+    cat: "desserts",
+    pays: "france",
+    dateAjout: "2026-06-23T10:00:00",
+    base: 8,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍰",
+    description: "Le biscuit aérien des montagnes savoyardes : une génoise ultra-légère gonflée aux blancs en neige, à peine sucrée et fondante. Parfait nature ou avec une crème anglaise.",
+    tableauGateausavoie: [
+      { nb: 1, oeufs: "1", sucre: "22 g", farine: "15 g", maizena: "10 g", vanille: "1 g", beurre: "3 g", sel: "1 g" },
+      { nb: 2, oeufs: "1", sucre: "44 g", farine: "30 g", maizena: "20 g", vanille: "1 g", beurre: "6 g", sel: "1 g" },
+      { nb: 3, oeufs: "1", sucre: "66 g", farine: "45 g", maizena: "30 g", vanille: "2 g", beurre: "9 g", sel: "1 g" },
+      { nb: 4, oeufs: "2", sucre: "88 g", farine: "60 g", maizena: "40 g", vanille: "2 g", beurre: "12 g", sel: "1 g" },
+      { nb: 5, oeufs: "2", sucre: "110 g", farine: "75 g", maizena: "50 g", vanille: "3 g", beurre: "15 g", sel: "1 g" },
+      { nb: 6, oeufs: "2", sucre: "132 g", farine: "90 g", maizena: "60 g", vanille: "3 g", beurre: "18 g", sel: "1 g" },
+      { nb: 7, oeufs: "3", sucre: "154 g", farine: "105 g", maizena: "70 g", vanille: "4 g", beurre: "21 g", sel: "1 g" },
+      { nb: 8, oeufs: "3", sucre: "176 g", farine: "120 g", maizena: "80 g", vanille: "4 g", beurre: "24 g", sel: "2 g" },
+      { nb: 9, oeufs: "4", sucre: "198 g", farine: "135 g", maizena: "90 g", vanille: "5 g", beurre: "27 g", sel: "2 g" },
+      { nb: 10, oeufs: "4", sucre: "220 g", farine: "150 g", maizena: "100 g", vanille: "5 g", beurre: "30 g", sel: "2 g" },
+      { nb: 11, oeufs: "4", sucre: "242 g", farine: "165 g", maizena: "110 g", vanille: "6 g", beurre: "33 g", sel: "2 g" },
+      { nb: 12, oeufs: "5", sucre: "264 g", farine: "180 g", maizena: "120 g", vanille: "6 g", beurre: "36 g", sel: "2 g" },
+      { nb: 13, oeufs: "5", sucre: "286 g", farine: "195 g", maizena: "130 g", vanille: "7 g", beurre: "39 g", sel: "3 g" },
+      { nb: 14, oeufs: "6", sucre: "308 g", farine: "210 g", maizena: "140 g", vanille: "7 g", beurre: "42 g", sel: "3 g" },
+      { nb: 15, oeufs: "6", sucre: "330 g", farine: "225 g", maizena: "150 g", vanille: "8 g", beurre: "45 g", sel: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Séparer", detail: "Séparer les blancs des jaunes.", badge: null },
+      { icone: "🍶", titre: "Blanchir", detail: "Fouetter les jaunes avec le sucre et la vanille jusqu'à ce que le mélange blanchisse et triple de volume.", badge: "⏱ 5 min" },
+      { icone: "🌾", titre: "Farines", detail: "Incorporer délicatement la farine et la maïzena tamisées.", badge: null },
+      { icone: "☁️", titre: "Monter", detail: "Monter les blancs en neige ferme avec le sel, les incorporer en soulevant la masse. ASTUCE CHEF : beurre puis sucre le moule (au lieu de fariner) — la croûte sera fine, caramélisée, et le gâteau se démoule tout seul.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Verser dans un moule à cheminée et cuire à 160°C sans ouvrir le four.", badge: "⏱ 35 min" }
     ]
   },
 });

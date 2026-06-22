@@ -498,12 +498,12 @@ function getIngredientsCourses(nom, personnes) {
 // Détermine l'unité (singulier/pluriel) selon la recette
 function getUniteRecette(nom, n) {
   const unites = {
-    "pizzacapricciosa": ["pizza","pizzas"],
-    "pizzaortolana": ["pizza","pizzas"],
+    "pizzaamatriciana": ["pizza","pizzas"],
+    "pizzagreca": ["pizza","pizzas"],
+    "pizzapollobbq": ["pizza","pizzas"],
     "pizzatonno": ["pizza","pizzas"],
     "pizzasalsiccia": ["pizza","pizzas"],
     "pizzaboscaiola": ["pizza","pizzas"],
-    "pizzanapoli": ["pizza","pizzas"],
     "glacenoixpecan": ["boule","boules"],
     "glacecookiedough": ["boule","boules"],
     "glacetiramisu": ["boule","boules"],
@@ -515,7 +515,6 @@ function getUniteRecette(nom, n) {
     "confituremyrtille": ["pot","pots"],
     "marmeladeorange": ["pot","pots"],
     "geleecoing": ["pot","pots"],
-    "proteinballcacao": ["boule","boules"],
     "muffinssales": ["muffin","muffins"],
     "galettetacos":    ["galette", "galettes"],
     "painburger":      ["bun", "buns"],

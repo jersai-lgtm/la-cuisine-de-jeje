@@ -1,13 +1,29 @@
 // Généré par tools/traduire_batch.mjs — NE PAS éditer à la main.
 // Traductions EN des recettes : { cle: { nom, description, etapes:[{titre,detail}] } }
 window.RECETTES_EN = {
- "pizzacapricciosa": {
-  "nom": "Capricciosa Pizza",
-  "description": "The whim pizza: tomato sauce, mozzarella, ham, mushrooms, artichoke hearts and olives. A generous, balanced Italian classic."
+ "gateausavoie": {
+  "nom": "Savoy Sponge Cake",
+  "description": "The airy sponge from the Savoy mountains: an ultra-light cake raised with whipped egg whites, barely sweet and melting. Perfect plain or with custard."
  },
- "pizzaortolana": {
-  "nom": "Ortolana Pizza",
-  "description": "The garden pizza: grilled zucchini, eggplant and pepper on a tomato-mozzarella base. Vegetarian, colorful and full of sunshine."
+ "pizzaamatriciana": {
+  "nom": "Amatriciana Pizza",
+  "description": "The pizza inspired by the Roman pasta: tomato, crispy pancetta, onion and parmesan shavings. Rustic, smoky and savory."
+ },
+ "pizzagreca": {
+  "nom": "Greek Pizza",
+  "description": "A taste of the Mediterranean: tomato, mozzarella, crumbled feta, olives and red onion. Fresh, sunny and easy."
+ },
+ "pizzapollobbq": {
+  "nom": "BBQ Chicken Pizza",
+  "description": "The indulgent American pizza: chicken, red onion and corn on a smoky barbecue base. Sweet, savory and generous."
+ },
+ "chipslegumes": {
+  "nom": "Homemade Vegetable Chips",
+  "description": "The crunchy, colorful snack: thin slices of sweet potato, beet and carrot oven-roasted until crisp. Far healthier than store-bought chips."
+ },
+ "soupeauxchoux": {
+  "nom": "Cabbage Soup",
+  "description": "The comforting country soup: cabbage, potatoes, carrots and onion slow-simmered. Rustic, light and full of good sense."
  },
  "pizzatonno": {
   "nom": "Tuna & Onion Pizza",
@@ -20,10 +36,6 @@ window.RECETTES_EN = {
  "pizzaboscaiola": {
   "nom": "Boscaiola Pizza",
   "description": "The woodcutter's white pizza: cream, mushrooms and sausage, no tomato sauce. Creamy, woodsy and comforting."
- },
- "pizzanapoli": {
-  "nom": "Napoli Pizza",
-  "description": "The authentic Neapolitan: anchovies, capers and olives on tomato and mozzarella. Bold, briny and typical of the South."
  },
  "glacenoixpecan": {
   "nom": "Pecan Ice Cream",
@@ -77,10 +89,6 @@ window.RECETTES_EN = {
   "nom": "Sugar Tart",
   "description": "The tart of northern France and Belgium: a soft brioche dough topped with a melting brown-sugar-and-cream filling, caramelized in the oven."
  },
- "tartecitronmeringuee": {
-  "nom": "Lemon Meringue Pie",
-  "description": "The great classic: crisp shortcrust, tangy lemon curd and a generous golden meringue. The perfect balance of sharp and sweet."
- },
  "quatrequarts": {
   "nom": "Pound Cake",
   "description": "The simple Breton cake: four ingredients in equal weights — butter, sugar, flour, eggs. Moist, buttery and foolproof."
@@ -97,10 +105,6 @@ window.RECETTES_EN = {
   "nom": "Homemade Popcorn",
   "description": "Sweet-and-salty homemade popcorn, made in 5 minutes in a pot: kernels popped in hot oil, coated with butter and caramelized sugar."
  },
- "proteinballcacao": {
-  "nom": "Cacao Protein Balls",
-  "description": "No-bake energy bites: dates, oats, cacao and peanuts blended and rolled into balls. The healthy snack before or after sport."
- },
  "olivesmarinees": {
   "nom": "Marinated Olives",
   "description": "The Mediterranean appetizer in two minutes: olives livened up with garlic, lemon, herbs and a drizzle of olive oil. Best made the day before."
@@ -112,10 +116,6 @@ window.RECETTES_EN = {
  "saladepatatedouce": {
   "nom": "Roasted Sweet Potato & Feta Salad",
   "description": "A comforting, chic autumn salad: oven-roasted sweet potato, creamy feta, peppery arugula and crunchy walnuts, brought together with honey."
- },
- "soupecourgecoco": {
-  "nom": "Squash-Coconut Soup with Ginger",
-  "description": "A smooth, fragrant velouté: the sweetness of roasted squash meets coconut milk and the kick of ginger. Autumn comfort with Thai accents."
  },
  "babaganoush": {
   "nom": "Baba Ganoush",
