@@ -1089,6 +1089,7 @@ Object.assign(recettes, {
     ]
   },
   panzanella: {
+    saisons: ["printemps", "ete"],
     liees: ["vinaigrette"],
     nom: "Panzanella",
     cat: "salades",
@@ -1238,6 +1239,7 @@ Object.assign(recettes, {
   },
 
   fattoush: {
+    saisons: ["printemps", "ete"],
     liees: ["painpita", "vinaigrette"],
     nom: "Fattoush",
     dateAjout: "2026-06-12T14:08:00",

@@ -2303,6 +2303,7 @@ Object.assign(recettes, {
     ]
   },
   ratatouille: {
+    saisons: ["printemps", "ete"],
     nom: "Ratatouille Provençale",
     cat: "plats", pays: "france",
     base: 4,
@@ -2639,6 +2640,7 @@ Object.assign(recettes, {
     ]
   },
   gratindauphinois: {
+    saisons: ["automne", "hiver"],
     nom: "Gratin dauphinois",
     cat: "plats", pays: "france",
     base: 6,
@@ -2740,6 +2742,7 @@ Object.assign(recettes, {
     ]
   },
   hachisparmentier: {
+    saisons: ["automne", "hiver"],
     nom: "Hachis Parmentier",
     cat: "plats", pays: "france",
     base: 4,
@@ -5493,6 +5496,7 @@ Object.assign(recettes, {
     ]
   },
   bigos: {
+    saisons: ["automne", "hiver"],
     nom: "Bigos",
     cat: "plats", pays: "pologne",
     dateAjout: "2026-06-01",
@@ -9057,6 +9061,7 @@ Object.assign(recettes, {
     ]
   },
   risottoasperges: {
+    saisons: ["printemps", "ete"],
     nom: "Risotto aux Asperges",
     dateAjout: "2026-06-06T11:57:00",
     cat: "plats", pays: "italie",
@@ -10091,6 +10096,7 @@ Object.assign(recettes, {
     ]
   },
   tianprovencal: {
+    saisons: ["printemps", "ete"],
     nom: "Tian Provençal",
     cat: "plats",
     pays: "france",

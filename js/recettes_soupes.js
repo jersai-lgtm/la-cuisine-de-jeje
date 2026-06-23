@@ -936,6 +936,7 @@ Object.assign(recettes, {
     ]
   },
   veloutebutternut: {
+    saisons: ["automne", "hiver"],
     nom: "Velouté butternut",
     cat: "soupes", pays: "france",
     base: 4, temps: "50 min", niveau: "⭐ Facile", emoji: "🎃",
@@ -1371,6 +1372,7 @@ Object.assign(recettes, {
     ]
   },
   soupepotimarron: {
+    saisons: ["automne", "hiver"],
     nom: "Soupe de potimarron",
     dateAjout: "2026-06-04",
     cat: "soupes", pays: "france",
@@ -1588,6 +1590,7 @@ Object.assign(recettes, {
     ]
   },
   veloutepanais: {
+    saisons: ["automne", "hiver"],
     nom: "Velouté de panais",
     dateAjout: "2026-06-05",
     cat: "soupes", pays: "france",
@@ -1625,6 +1628,7 @@ Object.assign(recettes, {
     ]
   },
   soupepotimarronchataigne: {
+    saisons: ["automne", "hiver"],
     nom: "Soupe Potimarron-Châtaigne",
     dateAjout: "2026-06-06T11:53:00",
     cat: "soupes", pays: "france",
@@ -1733,6 +1737,7 @@ Object.assign(recettes, {
     ]
   },
   garbure: {
+    saisons: ["automne", "hiver"],
     liees: ["paincampagne"],
     nom: "Garbure Béarnaise",
     cat: "soupes",
@@ -1810,6 +1815,7 @@ Object.assign(recettes, {
     ]
   },
   salmorejo: {
+    saisons: ["ete"],
     liees: ["mayonnaise"],
     nom: "Salmorejo",
     cat: "soupes",
