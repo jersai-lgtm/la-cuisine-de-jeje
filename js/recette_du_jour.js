@@ -34,7 +34,14 @@
   function cleDuJour() {
     if (typeof recettes === "undefined") return null;
     const s = saison();
-    const eligible = (k) => { const r = recettes[k]; return r && r.nom && !EXCLURE_CAT.has(r.cat); };
+    const periodeFetes = (typeof moisFetes === "function") && moisFetes();
+    const eligible = (k) => {
+      const r = recettes[k];
+      if (!r || !r.nom || EXCLURE_CAT.has(r.cat)) return false;
+      // 🎄 Pas de bûche / plat de Noël comme « recette du jour » hors décembre.
+      if (!periodeFetes && typeof estPlatFetes === "function" && estPlatFetes(k)) return false;
+      return true;
+    };
     const deSaison = (k) => { const sa = recettes[k] && recettes[k].saisons; return !sa || !sa.length || sa.indexOf(s) > -1; };
     let cles = Object.keys(recettes).filter((k) => eligible(k) && deSaison(k)).sort();
     if (!cles.length) cles = Object.keys(recettes).filter(eligible).sort(); // repli : aucune de saison

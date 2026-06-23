@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v2.5.4";
+const CACHE_NAME = "cuisine-jeje-v2.5.5";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
@@ -223,11 +223,18 @@ function pushSaisonDuMois() {
   return "hiver";
 }
 
+// 🎄 Plat de fêtes (Noël) détecté sur le nom — même logique que estPlatFetes côté app.
+function pushEstFetes(r) {
+  const t = (r.n || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  return /\b(noel|reveillon|buche|chapon|foie ?gras|huitres?|dinde)\b/.test(t);
+}
 function pushRecetteDuJour(idx) {
   if (!idx || !idx.length) return null;
   const s = pushSaisonDuMois();
-  // Au goût de saison : on écarte les recettes hors-saison (mêmes règles que l'app).
-  const pool = idx.filter((r) => !r.s || !r.s.length || r.s.indexOf(s) > -1);
+  const fetes = new Date().getMonth() === 11; // décembre uniquement
+  // Au goût de saison + jamais de plat de fêtes hors décembre (bûche, dinde…).
+  let pool = idx.filter((r) => (!r.s || !r.s.length || r.s.indexOf(s) > -1) && (fetes || !pushEstFetes(r)));
+  if (!pool.length) pool = idx.filter((r) => fetes || !pushEstFetes(r));
   const liste = pool.length ? pool : idx;
   const d = new Date();
   const j = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
