@@ -13123,4 +13123,107 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Servir", detail: "Citron vert, coriandre et riz.", badge: null }
     ]
   },
+  cuissepouletestragon: {
+    nom: "Cuisse de Poulet à l'Estragon",
+    cat: "plats",
+    pays: "france",
+    dateAjout: "2026-06-23T14:00:00",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Un classique bistrot : cuisse de poulet rôtie nappée d'une sauce crémeuse à l'estragon. Fondant, parfumé et réconfortant, avec un riz ou des légumes.",
+    tableauCuissepouletestragon: [
+      { nb: 1, poulet: "130 g", estragon: "2 g", creme: "30 ml", oignon: "30 g", bouillon: "60 ml", huileolive: "8 ml", riz: "50 g" },
+      { nb: 2, poulet: "260 g", estragon: "4 g", creme: "60 ml", oignon: "60 g", bouillon: "120 ml", huileolive: "16 ml", riz: "100 g" },
+      { nb: 3, poulet: "390 g", estragon: "6 g", creme: "90 ml", oignon: "90 g", bouillon: "180 ml", huileolive: "24 ml", riz: "150 g" },
+      { nb: 4, poulet: "520 g", estragon: "8 g", creme: "120 ml", oignon: "120 g", bouillon: "240 ml", huileolive: "32 ml", riz: "200 g" },
+      { nb: 5, poulet: "650 g", estragon: "10 g", creme: "150 ml", oignon: "150 g", bouillon: "300 ml", huileolive: "40 ml", riz: "250 g" },
+      { nb: 6, poulet: "780 g", estragon: "12 g", creme: "180 ml", oignon: "180 g", bouillon: "360 ml", huileolive: "48 ml", riz: "300 g" },
+      { nb: 7, poulet: "910 g", estragon: "14 g", creme: "210 ml", oignon: "210 g", bouillon: "420 ml", huileolive: "56 ml", riz: "350 g" },
+      { nb: 8, poulet: "1040 g", estragon: "16 g", creme: "240 ml", oignon: "240 g", bouillon: "480 ml", huileolive: "64 ml", riz: "400 g" },
+      { nb: 9, poulet: "1170 g", estragon: "18 g", creme: "270 ml", oignon: "270 g", bouillon: "540 ml", huileolive: "72 ml", riz: "450 g" },
+      { nb: 10, poulet: "1300 g", estragon: "20 g", creme: "300 ml", oignon: "300 g", bouillon: "600 ml", huileolive: "80 ml", riz: "500 g" },
+      { nb: 11, poulet: "1430 g", estragon: "22 g", creme: "330 ml", oignon: "330 g", bouillon: "660 ml", huileolive: "88 ml", riz: "550 g" },
+      { nb: 12, poulet: "1560 g", estragon: "24 g", creme: "360 ml", oignon: "360 g", bouillon: "720 ml", huileolive: "96 ml", riz: "600 g" },
+      { nb: 13, poulet: "1690 g", estragon: "26 g", creme: "390 ml", oignon: "390 g", bouillon: "780 ml", huileolive: "104 ml", riz: "650 g" },
+      { nb: 14, poulet: "1820 g", estragon: "28 g", creme: "420 ml", oignon: "420 g", bouillon: "840 ml", huileolive: "112 ml", riz: "700 g" },
+      { nb: 15, poulet: "1950 g", estragon: "30 g", creme: "450 ml", oignon: "450 g", bouillon: "900 ml", huileolive: "120 ml", riz: "750 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Dorer", detail: "Dorer la cuisse de poulet de tous les côtés.", badge: "⏱ 8 min" },
+      { icone: "🧅", titre: "Sauce", detail: "Faire revenir l'oignon, déglacer au bouillon, ajouter la crème et l'estragon.", badge: null },
+      { icone: "💧", titre: "Mijoter", detail: "Remettre le poulet et laisser mijoter à couvert. ASTUCE CHEF : ajoute la moitié de l'estragon en fin de cuisson — cuit longtemps il s'évente, frais il parfume.", badge: "⏱ 25 min" },
+      { icone: "🍚", titre: "Servir", detail: "Servir nappé de sauce avec du riz.", badge: null }
+    ]
+  },
+  pilonspouletmiso: {
+    nom: "Pilons de Poulet au Miso & Érable",
+    cat: "plats",
+    pays: "japon",
+    dateAjout: "2026-06-23T14:00:00",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Des pilons laqués d'une marinade miso-érable irrésistible : salé, sucré et umami, caramélisés au four. Gourmands, collants et parfaits avec du riz.",
+    tableauPilonspouletmiso: [
+      { nb: 1, poulet: "130 g", miso: "12 g", miel: "10 g", saucesoja: "8 ml", gingembre: "3 g", riz: "60 g", sesame: "3 g" },
+      { nb: 2, poulet: "260 g", miso: "24 g", miel: "20 g", saucesoja: "16 ml", gingembre: "6 g", riz: "120 g", sesame: "6 g" },
+      { nb: 3, poulet: "390 g", miso: "36 g", miel: "30 g", saucesoja: "24 ml", gingembre: "9 g", riz: "180 g", sesame: "9 g" },
+      { nb: 4, poulet: "520 g", miso: "48 g", miel: "40 g", saucesoja: "32 ml", gingembre: "12 g", riz: "240 g", sesame: "12 g" },
+      { nb: 5, poulet: "650 g", miso: "60 g", miel: "50 g", saucesoja: "40 ml", gingembre: "15 g", riz: "300 g", sesame: "15 g" },
+      { nb: 6, poulet: "780 g", miso: "72 g", miel: "60 g", saucesoja: "48 ml", gingembre: "18 g", riz: "360 g", sesame: "18 g" },
+      { nb: 7, poulet: "910 g", miso: "84 g", miel: "70 g", saucesoja: "56 ml", gingembre: "21 g", riz: "420 g", sesame: "21 g" },
+      { nb: 8, poulet: "1040 g", miso: "96 g", miel: "80 g", saucesoja: "64 ml", gingembre: "24 g", riz: "480 g", sesame: "24 g" },
+      { nb: 9, poulet: "1170 g", miso: "108 g", miel: "90 g", saucesoja: "72 ml", gingembre: "27 g", riz: "540 g", sesame: "27 g" },
+      { nb: 10, poulet: "1300 g", miso: "120 g", miel: "100 g", saucesoja: "80 ml", gingembre: "30 g", riz: "600 g", sesame: "30 g" },
+      { nb: 11, poulet: "1430 g", miso: "132 g", miel: "110 g", saucesoja: "88 ml", gingembre: "33 g", riz: "660 g", sesame: "33 g" },
+      { nb: 12, poulet: "1560 g", miso: "144 g", miel: "120 g", saucesoja: "96 ml", gingembre: "36 g", riz: "720 g", sesame: "36 g" },
+      { nb: 13, poulet: "1690 g", miso: "156 g", miel: "130 g", saucesoja: "104 ml", gingembre: "39 g", riz: "780 g", sesame: "39 g" },
+      { nb: 14, poulet: "1820 g", miso: "168 g", miel: "140 g", saucesoja: "112 ml", gingembre: "42 g", riz: "840 g", sesame: "42 g" },
+      { nb: 15, poulet: "1950 g", miso: "180 g", miel: "150 g", saucesoja: "120 ml", gingembre: "45 g", riz: "900 g", sesame: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥢", titre: "Mariner", detail: "Mélanger miso, miel (façon érable), soja et gingembre, en enrober les pilons.", badge: "⏱ 15 min" },
+      { icone: "🔥", titre: "Rôtir", detail: "Rôtir au four en arrosant de marinade à mi-cuisson. ASTUCE CHEF : badigeonne de marinade en plusieurs fois pendant la cuisson — chaque couche caramélise et construit la laque brillante.", badge: "⏱ 30 min" },
+      { icone: "🍚", titre: "Servir", detail: "Parsemer de sésame et servir sur du riz.", badge: null }
+    ]
+  },
+  saumontrappeur: {
+    nom: "Saumon aux Épices du Trappeur",
+    cat: "plats",
+    pays: "canada",
+    dateAjout: "2026-06-23T14:00:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Un pavé de saumon enrobé d'un mélange d'épices fumées façon cajun, juste saisi pour rester moelleux à cœur, avec du riz. Épicé, fondant et express.",
+    tableauSaumontrappeur: [
+      { nb: 1, saumon: "110 g", paprika: "2 g", cumin: "1 g", ail: "2 g", riz: "60 g", citron: "5 ml", huileolive: "8 ml" },
+      { nb: 2, saumon: "220 g", paprika: "4 g", cumin: "2 g", ail: "4 g", riz: "120 g", citron: "10 ml", huileolive: "16 ml" },
+      { nb: 3, saumon: "330 g", paprika: "6 g", cumin: "3 g", ail: "6 g", riz: "180 g", citron: "15 ml", huileolive: "24 ml" },
+      { nb: 4, saumon: "440 g", paprika: "8 g", cumin: "4 g", ail: "8 g", riz: "240 g", citron: "20 ml", huileolive: "32 ml" },
+      { nb: 5, saumon: "550 g", paprika: "10 g", cumin: "5 g", ail: "10 g", riz: "300 g", citron: "25 ml", huileolive: "40 ml" },
+      { nb: 6, saumon: "660 g", paprika: "12 g", cumin: "6 g", ail: "12 g", riz: "360 g", citron: "30 ml", huileolive: "48 ml" },
+      { nb: 7, saumon: "770 g", paprika: "14 g", cumin: "7 g", ail: "14 g", riz: "420 g", citron: "35 ml", huileolive: "56 ml" },
+      { nb: 8, saumon: "880 g", paprika: "16 g", cumin: "8 g", ail: "16 g", riz: "480 g", citron: "40 ml", huileolive: "64 ml" },
+      { nb: 9, saumon: "990 g", paprika: "18 g", cumin: "9 g", ail: "18 g", riz: "540 g", citron: "45 ml", huileolive: "72 ml" },
+      { nb: 10, saumon: "1100 g", paprika: "20 g", cumin: "10 g", ail: "20 g", riz: "600 g", citron: "50 ml", huileolive: "80 ml" },
+      { nb: 11, saumon: "1210 g", paprika: "22 g", cumin: "11 g", ail: "22 g", riz: "660 g", citron: "55 ml", huileolive: "88 ml" },
+      { nb: 12, saumon: "1320 g", paprika: "24 g", cumin: "12 g", ail: "24 g", riz: "720 g", citron: "60 ml", huileolive: "96 ml" },
+      { nb: 13, saumon: "1430 g", paprika: "26 g", cumin: "13 g", ail: "26 g", riz: "780 g", citron: "65 ml", huileolive: "104 ml" },
+      { nb: 14, saumon: "1540 g", paprika: "28 g", cumin: "14 g", ail: "28 g", riz: "840 g", citron: "70 ml", huileolive: "112 ml" },
+      { nb: 15, saumon: "1650 g", paprika: "30 g", cumin: "15 g", ail: "30 g", riz: "900 g", citron: "75 ml", huileolive: "120 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "Enrober", detail: "Mélanger paprika fumé, cumin, ail et un peu de sel, en enrober le saumon.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisir le saumon côté peau d'abord, à feu vif. ASTUCE CHEF : commence côté peau et ne retourne qu'une fois — la peau protège la chair qui reste nacrée et moelleuse au cœur.", badge: "⏱ 6 min" },
+      { icone: "🍋", titre: "Servir", detail: "Trait de citron et riz.", badge: null }
+    ]
+  },
 });

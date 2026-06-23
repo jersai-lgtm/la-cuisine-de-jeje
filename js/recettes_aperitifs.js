@@ -2314,4 +2314,38 @@ tapenade: {
       { icone: "🧂", titre: "Servir", detail: "Saler les frites et servir avec la sauce.", badge: null }
     ]
   },
+  cervellecanut: {
+    nom: "Cervelle de Canut",
+    cat: "aperitifs",
+    pays: "france",
+    dateAjout: "2026-06-23T14:00:00",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "La spécialité lyonnaise : un fromage blanc battu aux herbes fraîches, échalote, ail et vinaigre. Frais, herbacé et parfait à tartiner à l'apéro.",
+    tableauCervellecanut: [
+      { nb: 1, fromageblanc: "100 g", persil: "5 g", ail: "2 g", oignonrouge: "15 g", huileolive: "8 ml", vinaigre: "5 ml", ciboulette: "3 g" },
+      { nb: 2, fromageblanc: "200 g", persil: "10 g", ail: "4 g", oignonrouge: "30 g", huileolive: "16 ml", vinaigre: "10 ml", ciboulette: "6 g" },
+      { nb: 3, fromageblanc: "300 g", persil: "15 g", ail: "6 g", oignonrouge: "45 g", huileolive: "24 ml", vinaigre: "15 ml", ciboulette: "9 g" },
+      { nb: 4, fromageblanc: "400 g", persil: "20 g", ail: "8 g", oignonrouge: "60 g", huileolive: "32 ml", vinaigre: "20 ml", ciboulette: "12 g" },
+      { nb: 5, fromageblanc: "500 g", persil: "25 g", ail: "10 g", oignonrouge: "75 g", huileolive: "40 ml", vinaigre: "25 ml", ciboulette: "15 g" },
+      { nb: 6, fromageblanc: "600 g", persil: "30 g", ail: "12 g", oignonrouge: "90 g", huileolive: "48 ml", vinaigre: "30 ml", ciboulette: "18 g" },
+      { nb: 7, fromageblanc: "700 g", persil: "35 g", ail: "14 g", oignonrouge: "105 g", huileolive: "56 ml", vinaigre: "35 ml", ciboulette: "21 g" },
+      { nb: 8, fromageblanc: "800 g", persil: "40 g", ail: "16 g", oignonrouge: "120 g", huileolive: "64 ml", vinaigre: "40 ml", ciboulette: "24 g" },
+      { nb: 9, fromageblanc: "900 g", persil: "45 g", ail: "18 g", oignonrouge: "135 g", huileolive: "72 ml", vinaigre: "45 ml", ciboulette: "27 g" },
+      { nb: 10, fromageblanc: "1000 g", persil: "50 g", ail: "20 g", oignonrouge: "150 g", huileolive: "80 ml", vinaigre: "50 ml", ciboulette: "30 g" },
+      { nb: 11, fromageblanc: "1100 g", persil: "55 g", ail: "22 g", oignonrouge: "165 g", huileolive: "88 ml", vinaigre: "55 ml", ciboulette: "33 g" },
+      { nb: 12, fromageblanc: "1200 g", persil: "60 g", ail: "24 g", oignonrouge: "180 g", huileolive: "96 ml", vinaigre: "60 ml", ciboulette: "36 g" },
+      { nb: 13, fromageblanc: "1300 g", persil: "65 g", ail: "26 g", oignonrouge: "195 g", huileolive: "104 ml", vinaigre: "65 ml", ciboulette: "39 g" },
+      { nb: 14, fromageblanc: "1400 g", persil: "70 g", ail: "28 g", oignonrouge: "210 g", huileolive: "112 ml", vinaigre: "70 ml", ciboulette: "42 g" },
+      { nb: 15, fromageblanc: "1500 g", persil: "75 g", ail: "30 g", oignonrouge: "225 g", huileolive: "120 ml", vinaigre: "75 ml", ciboulette: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥄", titre: "Battre", detail: "Battre le fromage blanc avec l'huile et le vinaigre jusqu'à lisse.", badge: null },
+      { icone: "🌿", titre: "Herbes", detail: "Incorporer persil, ciboulette, ail et échalote finement hachés. ASTUCE CHEF : prépare-la la veille — les herbes et l'ail infusent le fromage et le goût est bien plus marqué.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Réserver au frais, servir avec du pain ou des crudités.", badge: "⏱ 2 h" }
+    ]
+  },
 });

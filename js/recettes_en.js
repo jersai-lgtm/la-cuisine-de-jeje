@@ -1,6 +1,110 @@
 // Généré par tools/traduire_batch.mjs — NE PAS éditer à la main.
 // Traductions EN des recettes : { cle: { nom, description, etapes:[{titre,detail}] } }
 window.RECETTES_EN = {
+ "choufleurzaatar": {
+  "nom": "Za'atar Roasted Cauliflower",
+  "description": "Cauliflower roasted until crisp, scented with za'atar and served with a lemon-yogurt sauce. A simple, golden, characterful Lebanese vegetarian dish."
+ },
+ "tajinelegumesdattes": {
+  "nom": "Vegetable Tagine with Dates",
+  "description": "A sweet-savory vegetarian tagine: melting vegetables simmered with dates and preserved lemon, over semolina. Fragrant, comforting and sunny."
+ },
+ "woklegumescurry": {
+  "nom": "Vegetable Wok with Yellow Curry",
+  "description": "A quick, colorful wok: crisp turnip, carrot and zucchini coated in a coconut yellow curry, over rice. Light, fragrant and ready in 25 minutes."
+ },
+ "currylegumesthai": {
+  "nom": "Thai Coconut Vegetable Curry",
+  "description": "A creamy vegetarian curry: vegetables simmered in coconut milk fragrant with lemongrass and curry paste. Comforting, exotic and nourishing."
+ },
+ "aubergineteriyaki": {
+  "nom": "Teriyaki Eggplant",
+  "description": "Melting eggplant glazed in a glossy homemade teriyaki sauce, sprinkled with sesame, over rice. Vegetarian, indulgent and surprisingly satisfying."
+ },
+ "orgerisotto": {
+  "nom": "Barley 'Risotto' with Feta",
+  "description": "A creamy orzotto: pearl barley cooked risotto-style, bound with parmesan and topped with feta. More rustic and wholesome than a rice risotto."
+ },
+ "rizrougeorange": {
+  "nom": "Red Rice with Orange & Pistachios",
+  "description": "A fragrant, festive rice: red rice coated in orange juice, scattered with pistachios and mint. A colorful, original side (or vegetarian dish)."
+ },
+ "poeleekasha": {
+  "nom": "Buckwheat (Kasha) & Feta Skillet",
+  "description": "A rustic, gluten-free skillet: toasted buckwheat (kasha) sautéed with zucchini, tomatoes and feta. Nutty, nourishing and full of flavor."
+ },
+ "bowlmelonfeta": {
+  "nom": "Summer Melon, Cucumber & Feta Bowl",
+  "description": "Summer's most refreshing bowl: juicy melon, crisp cucumber and feta, lifted with mint and a drizzle of olive oil. Sweet-savory and thirst-quenching."
+ },
+ "bowlguacamolecourgette": {
+  "nom": "Zucchini Guacamole Bowl",
+  "description": "A fresh, clever bowl: a lightened zucchini guacamole, quinoa and raw veggies. Creamy, green and nutritious, without the heaviness of all-avocado."
+ },
+ "poischichescitron": {
+  "nom": "Lemony Cumin Chickpeas",
+  "description": "Chickpeas sautéed with cumin and brightened with lemon: a quick, protein-rich vegetarian dish, great warm or cold as a salad. Cheap and filling."
+ },
+ "onepotcitronconfit": {
+  "nom": "One-Pot Chicken, Preserved Lemon & Olives",
+  "description": "Everything in one pot: chicken, rice, preserved lemon and olives simmered together. The rice soaks up all the juices — a complete, fragrant, no-fuss dish."
+ },
+ "saladesarde": {
+  "nom": "Sardinian Mackerel & Feta Salad",
+  "description": "A complete Mediterranean salad: mackerel, feta, tomatoes and olives over semolina, all lemony. Briny, fresh and full of healthy fats."
+ },
+ "saladeepeautreburrata": {
+  "nom": "Spelt & Burrata Salad",
+  "description": "An indulgent grain salad: nutty spelt, creamy burrata, tomatoes and arugula, drizzled with olive oil. The contrast of chewy and melting."
+ },
+ "saladefenouil": {
+  "nom": "Fennel & Orange Salad",
+  "description": "A crisp, tangy winter salad: thinly sliced fennel, orange segments and olives, drizzled with olive oil. Fresh, aniseedy and refreshing."
+ },
+ "saladechoucajou": {
+  "nom": "Cabbage, Coriander & Cashew Salad",
+  "description": "A crunchy, fresh Asian salad: shredded cabbage, carrot, coriander and toasted cashews, in a lime dressing. Vitamin-packed and addictive."
+ },
+ "champignonsfarcis": {
+  "nom": "Cheese & Walnut Stuffed Mushrooms",
+  "description": "Roasted mushrooms stuffed with a creamy mix of fresh cheese, walnuts and garlic. A melting, crunchy, easy autumn starter."
+ },
+ "ricottarotiezaatar": {
+  "nom": "Za'atar Roasted Ricotta",
+  "description": "A chic, easy starter: a block of ricotta roasted until golden, scented with za'atar and honey, to spread on toast. Melting, sweet-savory and impressive."
+ },
+ "tartarebetterave": {
+  "nom": "Beetroot Tartare",
+  "description": "A clever vegetarian faux-tartare: knife-cut cooked beetroot, seasoned with shallot, capers and mustard like a real tartare. Colorful, fresh and surprising."
+ },
+ "veloutefenouilmascarpone": {
+  "nom": "Fennel Velouté with Mascarpone",
+  "description": "A delicate, aniseedy velouté: melted fennel blended with a touch of mascarpone for creaminess. Elegant, mild and comforting."
+ },
+ "veloutepoireau": {
+  "nom": "Leek Velouté with Savory Shortbread",
+  "description": "A silky leek velouté, served with little parmesan savory shortbreads to dip. Winter comfort with a playful crunchy twist."
+ },
+ "bouillonthaicitronnelle": {
+  "nom": "Thai Shiitake & Lemongrass Broth",
+  "description": "A fragrant, light broth: shiitakes, lemongrass and ginger infused in a coconut-milk broth. Comforting, exotic and full of umami."
+ },
+ "cuissepouletestragon": {
+  "nom": "Tarragon Chicken Thigh",
+  "description": "A bistro classic: roasted chicken thigh in a creamy tarragon sauce. Tender, fragrant and comforting, with rice or vegetables."
+ },
+ "pilonspouletmiso": {
+  "nom": "Miso-Maple Chicken Drumsticks",
+  "description": "Drumsticks glazed in an irresistible miso-maple marinade: salty, sweet and umami, caramelized in the oven. Indulgent, sticky and perfect with rice."
+ },
+ "saumontrappeur": {
+  "nom": "Trapper-Spiced Salmon",
+  "description": "A salmon fillet coated in a smoky cajun-style spice blend, just seared to stay moist inside, with rice. Spicy, melting and quick."
+ },
+ "cervellecanut": {
+  "nom": "Cervelle de Canut (Lyon Herb Cheese)",
+  "description": "The Lyon specialty: fromage blanc whipped with fresh herbs, shallot, garlic and vinegar. Fresh, herby and perfect for spreading at aperitif."
+ },
  "pouletdukkah": {
   "nom": "Dukkah Chicken & Vegetables",
   "description": "Chicken coated in dukkah, the Egyptian blend of toasted nuts and spices, served with crisp vegetables. Crunchy, fragrant and full of zing."

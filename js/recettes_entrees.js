@@ -2203,4 +2203,108 @@ oeufmayo: {
       { icone: "🧀", titre: "Garnir", detail: "Garnir de feta, tomates en dés et menthe.", badge: null }
     ]
   },
+  champignonsfarcis: {
+    nom: "Champignons Farcis Fromage & Noix",
+    cat: "entrees",
+    pays: "france",
+    dateAjout: "2026-06-23T14:00:00",
+    saisons: ["automne"],
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍄",
+    description: "Des champignons rôtis farcis d'un mélange crémeux de fromage frais, noix et ail. Une entrée d'automne fondante, croquante et facile à préparer.",
+    tableauChampignonsfarcis: [
+      { nb: 1, champignons: "120 g", chevre: "40 g", noix: "15 g", ail: "3 g", persil: "3 g", huileolive: "8 ml", pain: "15 g" },
+      { nb: 2, champignons: "240 g", chevre: "80 g", noix: "30 g", ail: "6 g", persil: "6 g", huileolive: "16 ml", pain: "30 g" },
+      { nb: 3, champignons: "360 g", chevre: "120 g", noix: "45 g", ail: "9 g", persil: "9 g", huileolive: "24 ml", pain: "45 g" },
+      { nb: 4, champignons: "480 g", chevre: "160 g", noix: "60 g", ail: "12 g", persil: "12 g", huileolive: "32 ml", pain: "60 g" },
+      { nb: 5, champignons: "600 g", chevre: "200 g", noix: "75 g", ail: "15 g", persil: "15 g", huileolive: "40 ml", pain: "75 g" },
+      { nb: 6, champignons: "720 g", chevre: "240 g", noix: "90 g", ail: "18 g", persil: "18 g", huileolive: "48 ml", pain: "90 g" },
+      { nb: 7, champignons: "840 g", chevre: "280 g", noix: "105 g", ail: "21 g", persil: "21 g", huileolive: "56 ml", pain: "105 g" },
+      { nb: 8, champignons: "960 g", chevre: "320 g", noix: "120 g", ail: "24 g", persil: "24 g", huileolive: "64 ml", pain: "120 g" },
+      { nb: 9, champignons: "1080 g", chevre: "360 g", noix: "135 g", ail: "27 g", persil: "27 g", huileolive: "72 ml", pain: "135 g" },
+      { nb: 10, champignons: "1200 g", chevre: "400 g", noix: "150 g", ail: "30 g", persil: "30 g", huileolive: "80 ml", pain: "150 g" },
+      { nb: 11, champignons: "1320 g", chevre: "440 g", noix: "165 g", ail: "33 g", persil: "33 g", huileolive: "88 ml", pain: "165 g" },
+      { nb: 12, champignons: "1440 g", chevre: "480 g", noix: "180 g", ail: "36 g", persil: "36 g", huileolive: "96 ml", pain: "180 g" },
+      { nb: 13, champignons: "1560 g", chevre: "520 g", noix: "195 g", ail: "39 g", persil: "39 g", huileolive: "104 ml", pain: "195 g" },
+      { nb: 14, champignons: "1680 g", chevre: "560 g", noix: "210 g", ail: "42 g", persil: "42 g", huileolive: "112 ml", pain: "210 g" },
+      { nb: 15, champignons: "1800 g", chevre: "600 g", noix: "225 g", ail: "45 g", persil: "45 g", huileolive: "120 ml", pain: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍄", titre: "Préparer", detail: "Retirer les pieds des champignons et les hacher.", badge: null },
+      { icone: "🧀", titre: "Farce", detail: "Mélanger pieds hachés, fromage frais, noix, ail et chapelure.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Garnir les chapeaux de champignons de farce. ASTUCE CHEF : fais dégorger les champignons 10 min au four à vide avant de les farcir — ils rendent leur eau et ne détrempent pas la farce.", badge: "⏱ 10 min" },
+      { icone: "🔥", titre: "Rôtir", detail: "Rôtir au four jusqu'à doré.", badge: "⏱ 15 min" }
+    ]
+  },
+  ricottarotiezaatar: {
+    nom: "Ricotta Rôtie au Za'atar",
+    cat: "entrees",
+    pays: "liban",
+    dateAjout: "2026-06-23T14:00:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Une entrée chic et facile : un bloc de ricotta rôti au four jusqu'à doré, parfumé au za'atar et au miel, à tartiner sur du pain grillé. Fondant, sucré-salé et bluffant.",
+    tableauRicottarotiezaatar: [
+      { nb: 1, ricotta: "80 g", zaatar: "4 g", miel: "8 g", huileolive: "8 ml", tomates: "40 g", pain: "30 g" },
+      { nb: 2, ricotta: "160 g", zaatar: "8 g", miel: "16 g", huileolive: "16 ml", tomates: "80 g", pain: "60 g" },
+      { nb: 3, ricotta: "240 g", zaatar: "12 g", miel: "24 g", huileolive: "24 ml", tomates: "120 g", pain: "90 g" },
+      { nb: 4, ricotta: "320 g", zaatar: "16 g", miel: "32 g", huileolive: "32 ml", tomates: "160 g", pain: "120 g" },
+      { nb: 5, ricotta: "400 g", zaatar: "20 g", miel: "40 g", huileolive: "40 ml", tomates: "200 g", pain: "150 g" },
+      { nb: 6, ricotta: "480 g", zaatar: "24 g", miel: "48 g", huileolive: "48 ml", tomates: "240 g", pain: "180 g" },
+      { nb: 7, ricotta: "560 g", zaatar: "28 g", miel: "56 g", huileolive: "56 ml", tomates: "280 g", pain: "210 g" },
+      { nb: 8, ricotta: "640 g", zaatar: "32 g", miel: "64 g", huileolive: "64 ml", tomates: "320 g", pain: "240 g" },
+      { nb: 9, ricotta: "720 g", zaatar: "36 g", miel: "72 g", huileolive: "72 ml", tomates: "360 g", pain: "270 g" },
+      { nb: 10, ricotta: "800 g", zaatar: "40 g", miel: "80 g", huileolive: "80 ml", tomates: "400 g", pain: "300 g" },
+      { nb: 11, ricotta: "880 g", zaatar: "44 g", miel: "88 g", huileolive: "88 ml", tomates: "440 g", pain: "330 g" },
+      { nb: 12, ricotta: "960 g", zaatar: "48 g", miel: "96 g", huileolive: "96 ml", tomates: "480 g", pain: "360 g" },
+      { nb: 13, ricotta: "1040 g", zaatar: "52 g", miel: "104 g", huileolive: "104 ml", tomates: "520 g", pain: "390 g" },
+      { nb: 14, ricotta: "1120 g", zaatar: "56 g", miel: "112 g", huileolive: "112 ml", tomates: "560 g", pain: "420 g" },
+      { nb: 15, ricotta: "1200 g", zaatar: "60 g", miel: "120 g", huileolive: "120 ml", tomates: "600 g", pain: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Préparer", detail: "Déposer la ricotta dans un petit plat, arroser d'huile et de za'atar.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Rôtir au four à 200°C jusqu'à ce que le dessus dore. ASTUCE CHEF : égoutte la ricotta 10 min dans une passoire avant — moins d'eau, elle dore au lieu de bouillir.", badge: "⏱ 18 min" },
+      { icone: "🍯", titre: "Finir", detail: "Filet de miel à la sortie, servir avec tomates et pain grillé.", badge: null }
+    ]
+  },
+  tartarebetterave: {
+    nom: "Tartare de Betterave",
+    cat: "entrees",
+    pays: "france",
+    dateAjout: "2026-06-23T14:00:00",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🫐",
+    description: "Un faux-tartare végétarien malin : betterave cuite taillée au couteau, relevée d'échalote, câpres et moutarde comme un vrai tartare. Coloré, frais et bluffant.",
+    tableauTartarebetterave: [
+      { nb: 1, betterave: "100 g", oignonrouge: "20 g", capres: "8 g", moutarde: "5 g", huileolive: "8 ml", citron: "5 ml", persil: "3 g" },
+      { nb: 2, betterave: "200 g", oignonrouge: "40 g", capres: "16 g", moutarde: "10 g", huileolive: "16 ml", citron: "10 ml", persil: "6 g" },
+      { nb: 3, betterave: "300 g", oignonrouge: "60 g", capres: "24 g", moutarde: "15 g", huileolive: "24 ml", citron: "15 ml", persil: "9 g" },
+      { nb: 4, betterave: "400 g", oignonrouge: "80 g", capres: "32 g", moutarde: "20 g", huileolive: "32 ml", citron: "20 ml", persil: "12 g" },
+      { nb: 5, betterave: "500 g", oignonrouge: "100 g", capres: "40 g", moutarde: "25 g", huileolive: "40 ml", citron: "25 ml", persil: "15 g" },
+      { nb: 6, betterave: "600 g", oignonrouge: "120 g", capres: "48 g", moutarde: "30 g", huileolive: "48 ml", citron: "30 ml", persil: "18 g" },
+      { nb: 7, betterave: "700 g", oignonrouge: "140 g", capres: "56 g", moutarde: "35 g", huileolive: "56 ml", citron: "35 ml", persil: "21 g" },
+      { nb: 8, betterave: "800 g", oignonrouge: "160 g", capres: "64 g", moutarde: "40 g", huileolive: "64 ml", citron: "40 ml", persil: "24 g" },
+      { nb: 9, betterave: "900 g", oignonrouge: "180 g", capres: "72 g", moutarde: "45 g", huileolive: "72 ml", citron: "45 ml", persil: "27 g" },
+      { nb: 10, betterave: "1000 g", oignonrouge: "200 g", capres: "80 g", moutarde: "50 g", huileolive: "80 ml", citron: "50 ml", persil: "30 g" },
+      { nb: 11, betterave: "1100 g", oignonrouge: "220 g", capres: "88 g", moutarde: "55 g", huileolive: "88 ml", citron: "55 ml", persil: "33 g" },
+      { nb: 12, betterave: "1200 g", oignonrouge: "240 g", capres: "96 g", moutarde: "60 g", huileolive: "96 ml", citron: "60 ml", persil: "36 g" },
+      { nb: 13, betterave: "1300 g", oignonrouge: "260 g", capres: "104 g", moutarde: "65 g", huileolive: "104 ml", citron: "65 ml", persil: "39 g" },
+      { nb: 14, betterave: "1400 g", oignonrouge: "280 g", capres: "112 g", moutarde: "70 g", huileolive: "112 ml", citron: "70 ml", persil: "42 g" },
+      { nb: 15, betterave: "1500 g", oignonrouge: "300 g", capres: "120 g", moutarde: "75 g", huileolive: "120 ml", citron: "75 ml", persil: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Tailler", detail: "Tailler la betterave cuite en très petits dés au couteau (pas au mixeur).", badge: null },
+      { icone: "🥄", titre: "Assaisonner", detail: "Mélanger avec échalote, câpres, moutarde, citron et huile. ASTUCE CHEF : taille au couteau, jamais au mixeur — c'est la texture en dés nets qui fait illusion de tartare.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Mouler à l'emporte-pièce et servir frais avec du pain grillé.", badge: null }
+    ]
+  },
 });

@@ -2860,4 +2860,109 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Finir", detail: "Réveiller au citron vert et parsemer de coriandre.", badge: null }
     ]
   },
+  veloutefenouilmascarpone: {
+    nom: "Velouté de Fenouil Mascarpone",
+    cat: "soupes",
+    pays: "france",
+    dateAjout: "2026-06-23T14:00:00",
+    saisons: ["hiver"],
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "Un velouté délicat et anisé : fenouil fondu mixé avec une touche de mascarpone pour l'onctuosité. Élégant, doux et réconfortant.",
+    tableauVeloutefenouilmascarpone: [
+      { nb: 1, fenouil: "120 g", mascarpone: "20 g", oignon: "30 g", bouillon: "180 ml", huileolive: "6 ml" },
+      { nb: 2, fenouil: "240 g", mascarpone: "40 g", oignon: "60 g", bouillon: "360 ml", huileolive: "12 ml" },
+      { nb: 3, fenouil: "360 g", mascarpone: "60 g", oignon: "90 g", bouillon: "540 ml", huileolive: "18 ml" },
+      { nb: 4, fenouil: "480 g", mascarpone: "80 g", oignon: "120 g", bouillon: "720 ml", huileolive: "24 ml" },
+      { nb: 5, fenouil: "600 g", mascarpone: "100 g", oignon: "150 g", bouillon: "900 ml", huileolive: "30 ml" },
+      { nb: 6, fenouil: "720 g", mascarpone: "120 g", oignon: "180 g", bouillon: "1080 ml", huileolive: "36 ml" },
+      { nb: 7, fenouil: "840 g", mascarpone: "140 g", oignon: "210 g", bouillon: "1260 ml", huileolive: "42 ml" },
+      { nb: 8, fenouil: "960 g", mascarpone: "160 g", oignon: "240 g", bouillon: "1440 ml", huileolive: "48 ml" },
+      { nb: 9, fenouil: "1080 g", mascarpone: "180 g", oignon: "270 g", bouillon: "1620 ml", huileolive: "54 ml" },
+      { nb: 10, fenouil: "1200 g", mascarpone: "200 g", oignon: "300 g", bouillon: "1800 ml", huileolive: "60 ml" },
+      { nb: 11, fenouil: "1320 g", mascarpone: "220 g", oignon: "330 g", bouillon: "1980 ml", huileolive: "66 ml" },
+      { nb: 12, fenouil: "1440 g", mascarpone: "240 g", oignon: "360 g", bouillon: "2160 ml", huileolive: "72 ml" },
+      { nb: 13, fenouil: "1560 g", mascarpone: "260 g", oignon: "390 g", bouillon: "2340 ml", huileolive: "78 ml" },
+      { nb: 14, fenouil: "1680 g", mascarpone: "280 g", oignon: "420 g", bouillon: "2520 ml", huileolive: "84 ml" },
+      { nb: 15, fenouil: "1800 g", mascarpone: "300 g", oignon: "450 g", bouillon: "2700 ml", huileolive: "90 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Suer", detail: "Faire suer oignon et fenouil émincés dans l'huile.", badge: "⏱ 6 min" },
+      { icone: "💧", titre: "Mijoter", detail: "Couvrir de bouillon et cuire jusqu'à tendreté.", badge: "⏱ 18 min" },
+      { icone: "🥛", titre: "Lier", detail: "Mixer avec le mascarpone en velouté lisse. ASTUCE CHEF : garde quelques pluches de fenouil crues pour le dressage — elles rappellent le goût et apportent du croquant.", badge: null }
+    ]
+  },
+  veloutepoireau: {
+    nom: "Velouté de Poireau & Petits Sablés",
+    cat: "soupes",
+    pays: "france",
+    dateAjout: "2026-06-23T14:00:00",
+    saisons: ["hiver"],
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "Un velouté de poireau tout doux, servi avec des petits sablés salés au parmesan à tremper. Le réconfort de l'hiver avec un côté croquant ludique.",
+    tableauVeloutepoireau: [
+      { nb: 1, poireau: "100 g", pommedeterre: "60 g", bouillon: "180 ml", creme: "20 ml", farine: "20 g", beurre: "10 g", parmesan: "10 g" },
+      { nb: 2, poireau: "200 g", pommedeterre: "120 g", bouillon: "360 ml", creme: "40 ml", farine: "40 g", beurre: "20 g", parmesan: "20 g" },
+      { nb: 3, poireau: "300 g", pommedeterre: "180 g", bouillon: "540 ml", creme: "60 ml", farine: "60 g", beurre: "30 g", parmesan: "30 g" },
+      { nb: 4, poireau: "400 g", pommedeterre: "240 g", bouillon: "720 ml", creme: "80 ml", farine: "80 g", beurre: "40 g", parmesan: "40 g" },
+      { nb: 5, poireau: "500 g", pommedeterre: "300 g", bouillon: "900 ml", creme: "100 ml", farine: "100 g", beurre: "50 g", parmesan: "50 g" },
+      { nb: 6, poireau: "600 g", pommedeterre: "360 g", bouillon: "1080 ml", creme: "120 ml", farine: "120 g", beurre: "60 g", parmesan: "60 g" },
+      { nb: 7, poireau: "700 g", pommedeterre: "420 g", bouillon: "1260 ml", creme: "140 ml", farine: "140 g", beurre: "70 g", parmesan: "70 g" },
+      { nb: 8, poireau: "800 g", pommedeterre: "480 g", bouillon: "1440 ml", creme: "160 ml", farine: "160 g", beurre: "80 g", parmesan: "80 g" },
+      { nb: 9, poireau: "900 g", pommedeterre: "540 g", bouillon: "1620 ml", creme: "180 ml", farine: "180 g", beurre: "90 g", parmesan: "90 g" },
+      { nb: 10, poireau: "1000 g", pommedeterre: "600 g", bouillon: "1800 ml", creme: "200 ml", farine: "200 g", beurre: "100 g", parmesan: "100 g" },
+      { nb: 11, poireau: "1100 g", pommedeterre: "660 g", bouillon: "1980 ml", creme: "220 ml", farine: "220 g", beurre: "110 g", parmesan: "110 g" },
+      { nb: 12, poireau: "1200 g", pommedeterre: "720 g", bouillon: "2160 ml", creme: "240 ml", farine: "240 g", beurre: "120 g", parmesan: "120 g" },
+      { nb: 13, poireau: "1300 g", pommedeterre: "780 g", bouillon: "2340 ml", creme: "260 ml", farine: "260 g", beurre: "130 g", parmesan: "130 g" },
+      { nb: 14, poireau: "1400 g", pommedeterre: "840 g", bouillon: "2520 ml", creme: "280 ml", farine: "280 g", beurre: "140 g", parmesan: "140 g" },
+      { nb: 15, poireau: "1500 g", pommedeterre: "900 g", bouillon: "2700 ml", creme: "300 ml", farine: "300 g", beurre: "150 g", parmesan: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Suer", detail: "Faire suer le poireau émincé.", badge: "⏱ 6 min" },
+      { icone: "💧", titre: "Mijoter", detail: "Ajouter pomme de terre et bouillon, cuire et mixer avec la crème.", badge: "⏱ 20 min" },
+      { icone: "🍪", titre: "Sablés", detail: "Sabler farine, beurre et parmesan, cuire de petits sablés. ASTUCE CHEF : garde le beurre froid pour les sablés — ils restent friables et croustillants, parfaits à tremper.", badge: "⏱ 12 min" },
+      { icone: "🍲", titre: "Servir", detail: "Servir le velouté avec les sablés à part.", badge: null }
+    ]
+  },
+  bouillonthaicitronnelle: {
+    nom: "Bouillon Thaï Shiitakés & Citronnelle",
+    cat: "soupes",
+    pays: "thailande",
+    dateAjout: "2026-06-23T14:00:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍜",
+    description: "Un bouillon parfumé et léger : shiitakés, citronnelle et gingembre infusés dans un bouillon au lait de coco. Réconfortant, exotique et plein d'umami.",
+    tableauBouillonthaicitronnelle: [
+      { nb: 1, shiitake: "60 g", bouillon: "180 ml", citronnelle: "3 g", gingembre: "3 g", laitCoco: "40 ml", citronvert: "5 ml", coriandre: "2 g" },
+      { nb: 2, shiitake: "120 g", bouillon: "360 ml", citronnelle: "6 g", gingembre: "6 g", laitCoco: "80 ml", citronvert: "10 ml", coriandre: "4 g" },
+      { nb: 3, shiitake: "180 g", bouillon: "540 ml", citronnelle: "9 g", gingembre: "9 g", laitCoco: "120 ml", citronvert: "15 ml", coriandre: "6 g" },
+      { nb: 4, shiitake: "240 g", bouillon: "720 ml", citronnelle: "12 g", gingembre: "12 g", laitCoco: "160 ml", citronvert: "20 ml", coriandre: "8 g" },
+      { nb: 5, shiitake: "300 g", bouillon: "900 ml", citronnelle: "15 g", gingembre: "15 g", laitCoco: "200 ml", citronvert: "25 ml", coriandre: "10 g" },
+      { nb: 6, shiitake: "360 g", bouillon: "1080 ml", citronnelle: "18 g", gingembre: "18 g", laitCoco: "240 ml", citronvert: "30 ml", coriandre: "12 g" },
+      { nb: 7, shiitake: "420 g", bouillon: "1260 ml", citronnelle: "21 g", gingembre: "21 g", laitCoco: "280 ml", citronvert: "35 ml", coriandre: "14 g" },
+      { nb: 8, shiitake: "480 g", bouillon: "1440 ml", citronnelle: "24 g", gingembre: "24 g", laitCoco: "320 ml", citronvert: "40 ml", coriandre: "16 g" },
+      { nb: 9, shiitake: "540 g", bouillon: "1620 ml", citronnelle: "27 g", gingembre: "27 g", laitCoco: "360 ml", citronvert: "45 ml", coriandre: "18 g" },
+      { nb: 10, shiitake: "600 g", bouillon: "1800 ml", citronnelle: "30 g", gingembre: "30 g", laitCoco: "400 ml", citronvert: "50 ml", coriandre: "20 g" },
+      { nb: 11, shiitake: "660 g", bouillon: "1980 ml", citronnelle: "33 g", gingembre: "33 g", laitCoco: "440 ml", citronvert: "55 ml", coriandre: "22 g" },
+      { nb: 12, shiitake: "720 g", bouillon: "2160 ml", citronnelle: "36 g", gingembre: "36 g", laitCoco: "480 ml", citronvert: "60 ml", coriandre: "24 g" },
+      { nb: 13, shiitake: "780 g", bouillon: "2340 ml", citronnelle: "39 g", gingembre: "39 g", laitCoco: "520 ml", citronvert: "65 ml", coriandre: "26 g" },
+      { nb: 14, shiitake: "840 g", bouillon: "2520 ml", citronnelle: "42 g", gingembre: "42 g", laitCoco: "560 ml", citronvert: "70 ml", coriandre: "28 g" },
+      { nb: 15, shiitake: "900 g", bouillon: "2700 ml", citronnelle: "45 g", gingembre: "45 g", laitCoco: "600 ml", citronvert: "75 ml", coriandre: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Infuser", detail: "Infuser citronnelle et gingembre dans le bouillon chaud.", badge: "⏱ 8 min" },
+      { icone: "🍄", titre: "Champignons", detail: "Ajouter les shiitakés émincés et le lait de coco. ASTUCE CHEF : ne fais que frémir après le lait de coco — bouilli, il tranche et le bouillon devient gras au lieu de soyeux.", badge: "⏱ 6 min" },
+      { icone: "🍋", titre: "Finir", detail: "Réveiller au citron vert et à la coriandre.", badge: null }
+    ]
+  },
 });
