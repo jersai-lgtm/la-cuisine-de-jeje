@@ -692,6 +692,149 @@ async function genererMenus() {
   btn.disabled = false;
 }
 
+// ============================================================
+// ✨ MENU INTELLIGENT (IA) — compose la semaine via Claude, à partir d'une
+// liste DÉJÀ filtrée (saison + fêtes + régime) → zéro hallucination possible.
+// Tout échec (hors-ligne, non connecté, quota, réponse invalide) → repli
+// automatique sur le générateur déterministe. L'IA ne peut donc jamais casser.
+// ============================================================
+function _saisonCouranteLabel() {
+  const s = (typeof getSaisonActuelle === "function") ? getSaisonActuelle() : null;
+  return ({ printemps: "printemps", ete: "été", automne: "automne", hiver: "hiver" })[s] || "";
+}
+
+// Valide la réponse JSON de l'IA : chaque clé doit exister dans la shortlist.
+// Les clés inconnues sont retirées (slot → null). Renvoie null si trop d'invalides.
+function _parserMenusIA(txt, clesValides) {
+  if (!txt) return null;
+  let obj;
+  try { const m = txt.match(/\{[\s\S]*\}/); obj = JSON.parse(m ? m[0] : txt); } catch (e) { return null; }
+  if (!obj || !Array.isArray(obj.semaine) || !obj.semaine.length) return null;
+  let total = 0, ok = 0;
+  const checkSlot = (s) => {
+    if (!s || typeof s !== "object") return;
+    ["entree", "plat", "dessert"].forEach((part) => {
+      if (s[part] && s[part].recette) { total++; if (clesValides.has(s[part].recette)) ok++; else s[part] = null; }
+    });
+    if (s.recette) { total++; if (clesValides.has(s.recette)) ok++; else return true; }
+    return false;
+  };
+  obj.semaine.forEach((j) => { ["midi", "soir"].forEach((m) => { if (checkSlot(j[m]) === true) j[m] = null; }); });
+  if (total === 0 || ok < total * 0.5) return null; // trop d'invalides → on jette, repli déterministe
+  return obj;
+}
+
+async function genererMenusIA() {
+  // Le proxy IA exige un jeton Firebase → connexion obligatoire.
+  if (!window.currentUser || typeof window.currentUser.getIdToken !== "function") {
+    if (typeof afficherToast === "function") afficherToast("Connecte-toi pour utiliser le menu intelligent ✨");
+    else alert("Connecte-toi pour utiliser le menu intelligent.");
+    return;
+  }
+  const joursSelectionnes = [...document.querySelectorAll("#plan-jours-choix .plan-tag-active")].map((b) => b.dataset.val);
+  if (!joursSelectionnes.length) { alert("Sélectionnez au moins un jour !"); return; }
+  const personnes = document.getElementById("plan-personnes").value;
+  const allergiesInput = (document.getElementById("plan-allergies").value || "");
+  const tags = [...document.querySelectorAll(".plan-tags:not(#plan-jours-choix) .plan-tag-active")].map((b) => b.dataset.val);
+
+  let allergiesFinales = allergiesInput ? allergiesInput.split(",").map((a) => a.trim()).filter(Boolean) : [];
+  let tagsFinaux = [...tags];
+  if (window.userProfile && window.userProfile.preferences) {
+    const p = window.userProfile.preferences;
+    if (p.regimes && p.regimes.length) tagsFinaux = [...new Set([...tagsFinaux, ...p.regimes])];
+    if (p.allergies && p.allergies.length) allergiesFinales = [...new Set([...allergiesFinales, ...p.allergies])];
+    if (p.allergiesCustom && p.allergiesCustom.length) allergiesFinales = [...new Set([...allergiesFinales, ...p.allergiesCustom])];
+  }
+  const motsExclusion = new Set();
+  [...allergiesFinales, ...tagsFinaux].forEach((a) => ((typeof ALLERGENES_MOTS !== "undefined" ? ALLERGENES_MOTS[a] : null) || [a]).forEach((m) => motsExclusion.add(String(m).toLowerCase())));
+
+  const fetes = (typeof moisFetes === "function") && moisFetes();
+  const okRecette = (key, autoriserDessert) => {
+    const c = (typeof categorieRecette === "function") ? categorieRecette(key) : (recettes[key] && recettes[key].cat);
+    const horsRepas = new Set(["aperitifs", "encas", "cocktails", "mocktails", "tartinables", "sauces", "boulangerie"]);
+    if (autoriserDessert ? (c !== "desserts") : (horsRepas.has(c) || c === "desserts")) return false;
+    if (typeof RECETTES_NON_REPAS !== "undefined" && RECETTES_NON_REPAS.has(key)) return false;
+    if (typeof estHorsSaison === "function" && estHorsSaison(key)) return false;        // 🗓️ saison
+    if (!fetes && typeof estPlatFetes === "function" && estPlatFetes(key)) return false;  // 🎄 hors décembre
+    if (motsExclusion.size && [...motsExclusion].some((m) => texteRecette(key).includes(m))) return false;
+    return true;
+  };
+  const isComplet = (window._formatRepas === "complet");
+  const platsKeys = Object.keys(recettes).filter((k) => okRecette(k, false));
+  const dessertsKeys = isComplet ? Object.keys(recettes).filter((k) => okRecette(k, true)) : [];
+  const clesValides = new Set([...platsKeys, ...dessertsKeys]);
+  if (platsKeys.length < 10) { // pas assez de choix → déterministe direct
+    return _menuIAFallback(joursSelectionnes, tagsFinaux, allergiesFinales, personnes, "Pas assez de recettes en saison — menu classique");
+  }
+  const lib = (k) => `${k} (${(typeof getNomRecette === "function") ? getNomRecette(k) : k})`;
+  const platsTxt = shuffleArray(platsKeys).slice(0, 110).map(lib).join(", ");
+  const dessertsTxt = isComplet ? shuffleArray(dessertsKeys).slice(0, 40).map(lib).join(", ") : "";
+
+  const saison = _saisonCouranteLabel();
+  const regimeStr = tagsFinaux.length ? `Préférences/régime à respecter : ${tagsFinaux.join(", ")}.` : "";
+  const eviter = allergiesFinales.length ? `NE JAMAIS proposer : ${allergiesFinales.join(", ")}.` : "";
+  const struct = isComplet
+    ? `{"semaine":[{"jour":"Lundi","midi":{"entree":{"recette":"cle","note":"x"},"plat":{"recette":"cle","note":"x"},"dessert":{"recette":"cle","note":"x"}},"soir":{...}}]}`
+    : `{"semaine":[{"jour":"Lundi","midi":{"recette":"cle","note":"note courte"},"soir":{"recette":"cle","note":"note courte"}}]}`;
+  const prompt =
+    `Tu es un chef. Compose un plan de menus COHÉRENT et VARIÉ pour : ${joursSelectionnes.join(", ")} (midi et soir) pour ${personnes} personne(s).\n` +
+    `Saison actuelle : ${saison}. ${regimeStr} ${eviter}\n` +
+    `Plats disponibles (clés) : ${platsTxt}\n` +
+    (isComplet ? `Desserts disponibles (clés) : ${dessertsTxt}\n` : "") +
+    `RÈGLES STRICTES :\n` +
+    `- Utilise UNIQUEMENT des clés des listes ci-dessus. N'invente JAMAIS de recette.\n` +
+    `- Le champ "recette" = la CLÉ exacte (ex: "wrappoulet", pas "Wrap au Poulet").\n` +
+    `- Aucune répétition sur la semaine.\n` +
+    `- VARIE les protéines : jamais 2 repas de suite la même (volaille / bœuf / porc / poisson / végé), 3 volailles max sur la semaine.\n` +
+    `- ÉQUILIBRE : midi plutôt léger/frais, soir plus consistant ; évite que tout soit riche.\n` +
+    `- Cohérent avec la saison (${saison}).\n` +
+    (isComplet ? `- Format complet : chaque repas = une entrée + un plat + un dessert (dessert depuis la liste desserts).\n` : "") +
+    `Réponds UNIQUEMENT en JSON valide, sans texte autour :\n${struct}`;
+
+  const btn = document.getElementById("btn-generer-ia");
+  const old = btn ? btn.textContent : "";
+  if (btn) { btn.textContent = "✨ L'IA compose ton menu..."; btn.disabled = true; }
+
+  let menus = null, errMsg = "";
+  try {
+    const idToken = await window.currentUser.getIdToken();
+    const resp = await fetch("https://la-cuisine-de-jeje.jerome-sainthot.workers.dev", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + idToken },
+      body: JSON.stringify({ model: "claude-sonnet-4-5", max_tokens: 1600, messages: [{ role: "user", content: prompt }] })
+    });
+    if (resp.status === 401) { errMsg = "Session expirée — reconnecte-toi 🙏"; throw 0; }
+    if (resp.status === 429) { errMsg = "Quota IA atteint, réessaie un peu plus tard 😅"; throw 0; }
+    if (!resp.ok) throw 0;
+    const data = await resp.json();
+    const txt = (data && data.content && data.content[0] && data.content[0].text) || data.text || "";
+    menus = _parserMenusIA(txt, clesValides);
+  } catch (e) { menus = null; }
+  if (btn) { btn.textContent = old; btn.disabled = false; }
+
+  if (!menus) {
+    return _menuIAFallback(joursSelectionnes, tagsFinaux, allergiesFinales, personnes, errMsg || "IA indisponible — menu généré classiquement");
+  }
+  if (typeof afficherToast === "function") afficherToast("✨ Menu composé par l'IA !");
+  menus = validerRegimeMenus(menus, tagsFinaux, allergiesFinales);
+  sauvegarderMenus(menus, personnes, joursSelectionnes);
+  afficherMenusSemaine(menus, parseInt(personnes)); // nettoyerMenu y refait un filet de sécurité saison/fêtes
+  menus.personnes = parseInt(personnes);
+  window._dernierMenuGenere = menus; menusSemaine = menus;
+  if (typeof window.incrementerMenusGeneres === "function") window.incrementerMenusGeneres();
+}
+
+function _menuIAFallback(jours, tags, allergies, personnes, msg) {
+  if (msg && typeof afficherToast === "function") afficherToast(msg);
+  let menus = genererMenusAleatoires(jours, tags, allergies);
+  menus = validerRegimeMenus(menus, tags, allergies);
+  sauvegarderMenus(menus, personnes, jours);
+  afficherMenusSemaine(menus, parseInt(personnes));
+  menus.personnes = parseInt(personnes);
+  window._dernierMenuGenere = menus; menusSemaine = menus;
+  if (typeof window.incrementerMenusGeneres === "function") window.incrementerMenusGeneres();
+}
+
 function shuffleArray(arr) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
