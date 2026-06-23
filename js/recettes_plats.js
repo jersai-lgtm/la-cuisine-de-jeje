@@ -12667,5 +12667,109 @@ Object.assign(recettes, {
       { icone: "🥬", titre: "Le chou", detail: "Émincer le chou très finement et le rincer à l'eau glacée pour qu'il soit croquant.", badge: null },
       { icone: "🔪", titre: "Servir", detail: "Trancher le tonkatsu en lamelles, servir sur le chou avec du riz et une sauce tonkatsu.", badge: "💡 Avec du riz" }
     ]
-  }
+  },
+  wokpoulet: {
+    nom: "Wok de Poulet aux Légumes",
+    cat: "plats",
+    pays: "chine",
+    dateAjout: "2026-06-23T12:00:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Un wok express et coloré : poulet doré, légumes croquants et riz, le tout sauté à feu vif avec soja et gingembre. Le repas complet de la semaine en 25 minutes.",
+    tableauWokpoulet: [
+      { nb: 1, poulet: "100 g", riz: "70 g", brocoli: "50 g", poivron: "50 g", carotte: "40 g", saucesoja: "12 ml", gingembre: "3 g", huileolive: "8 ml" },
+      { nb: 2, poulet: "200 g", riz: "140 g", brocoli: "100 g", poivron: "100 g", carotte: "80 g", saucesoja: "24 ml", gingembre: "6 g", huileolive: "16 ml" },
+      { nb: 3, poulet: "300 g", riz: "210 g", brocoli: "150 g", poivron: "150 g", carotte: "120 g", saucesoja: "36 ml", gingembre: "9 g", huileolive: "24 ml" },
+      { nb: 4, poulet: "400 g", riz: "280 g", brocoli: "200 g", poivron: "200 g", carotte: "160 g", saucesoja: "48 ml", gingembre: "12 g", huileolive: "32 ml" },
+      { nb: 5, poulet: "500 g", riz: "350 g", brocoli: "250 g", poivron: "250 g", carotte: "200 g", saucesoja: "60 ml", gingembre: "15 g", huileolive: "40 ml" },
+      { nb: 6, poulet: "600 g", riz: "420 g", brocoli: "300 g", poivron: "300 g", carotte: "240 g", saucesoja: "72 ml", gingembre: "18 g", huileolive: "48 ml" },
+      { nb: 7, poulet: "700 g", riz: "490 g", brocoli: "350 g", poivron: "350 g", carotte: "280 g", saucesoja: "84 ml", gingembre: "21 g", huileolive: "56 ml" },
+      { nb: 8, poulet: "800 g", riz: "560 g", brocoli: "400 g", poivron: "400 g", carotte: "320 g", saucesoja: "96 ml", gingembre: "24 g", huileolive: "64 ml" },
+      { nb: 9, poulet: "900 g", riz: "630 g", brocoli: "450 g", poivron: "450 g", carotte: "360 g", saucesoja: "108 ml", gingembre: "27 g", huileolive: "72 ml" },
+      { nb: 10, poulet: "1000 g", riz: "700 g", brocoli: "500 g", poivron: "500 g", carotte: "400 g", saucesoja: "120 ml", gingembre: "30 g", huileolive: "80 ml" },
+      { nb: 11, poulet: "1100 g", riz: "770 g", brocoli: "550 g", poivron: "550 g", carotte: "440 g", saucesoja: "132 ml", gingembre: "33 g", huileolive: "88 ml" },
+      { nb: 12, poulet: "1200 g", riz: "840 g", brocoli: "600 g", poivron: "600 g", carotte: "480 g", saucesoja: "144 ml", gingembre: "36 g", huileolive: "96 ml" },
+      { nb: 13, poulet: "1300 g", riz: "910 g", brocoli: "650 g", poivron: "650 g", carotte: "520 g", saucesoja: "156 ml", gingembre: "39 g", huileolive: "104 ml" },
+      { nb: 14, poulet: "1400 g", riz: "980 g", brocoli: "700 g", poivron: "700 g", carotte: "560 g", saucesoja: "168 ml", gingembre: "42 g", huileolive: "112 ml" },
+      { nb: 15, poulet: "1500 g", riz: "1050 g", brocoli: "750 g", poivron: "750 g", carotte: "600 g", saucesoja: "180 ml", gingembre: "45 g", huileolive: "120 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz à l'avance et le laisser refroidir.", badge: "⏱ 15 min" },
+      { icone: "🍗", titre: "Saisir", detail: "Saisir le poulet en lamelles à feu vif dans le wok, réserver.", badge: "⏱ 5 min" },
+      { icone: "🥦", titre: "Sauter", detail: "Sauter les légumes croquants avec le gingembre, remettre le poulet et le riz. ASTUCE CHEF : wok bien chaud et ingrédients secs — un wok tiède fait bouillir au lieu de saisir, et les légumes ramollissent.", badge: "⏱ 6 min" },
+      { icone: "🥢", titre: "Assaisonner", detail: "Déglacer au soja et servir aussitôt.", badge: null }
+    ]
+  },
+  curryrougepoulet: {
+    nom: "Curry Rouge de Poulet aux Lentilles Corail",
+    cat: "plats",
+    pays: "thailande",
+    dateAjout: "2026-06-23T12:00:00",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍛",
+    description: "Un curry rouge thaï réconfortant : poulet et lentilles corail mijotés dans un lait de coco parfumé à la pâte de curry. Onctueux, épicé et nourrissant.",
+    tableauCurryrougepoulet: [
+      { nb: 1, poulet: "100 g", lentillescorail: "40 g", laitCoco: "60 ml", pateCurry: "12 g", oignon: "30 g", riz: "60 g", coriandre: "2 g" },
+      { nb: 2, poulet: "200 g", lentillescorail: "80 g", laitCoco: "120 ml", pateCurry: "24 g", oignon: "60 g", riz: "120 g", coriandre: "4 g" },
+      { nb: 3, poulet: "300 g", lentillescorail: "120 g", laitCoco: "180 ml", pateCurry: "36 g", oignon: "90 g", riz: "180 g", coriandre: "6 g" },
+      { nb: 4, poulet: "400 g", lentillescorail: "160 g", laitCoco: "240 ml", pateCurry: "48 g", oignon: "120 g", riz: "240 g", coriandre: "8 g" },
+      { nb: 5, poulet: "500 g", lentillescorail: "200 g", laitCoco: "300 ml", pateCurry: "60 g", oignon: "150 g", riz: "300 g", coriandre: "10 g" },
+      { nb: 6, poulet: "600 g", lentillescorail: "240 g", laitCoco: "360 ml", pateCurry: "72 g", oignon: "180 g", riz: "360 g", coriandre: "12 g" },
+      { nb: 7, poulet: "700 g", lentillescorail: "280 g", laitCoco: "420 ml", pateCurry: "84 g", oignon: "210 g", riz: "420 g", coriandre: "14 g" },
+      { nb: 8, poulet: "800 g", lentillescorail: "320 g", laitCoco: "480 ml", pateCurry: "96 g", oignon: "240 g", riz: "480 g", coriandre: "16 g" },
+      { nb: 9, poulet: "900 g", lentillescorail: "360 g", laitCoco: "540 ml", pateCurry: "108 g", oignon: "270 g", riz: "540 g", coriandre: "18 g" },
+      { nb: 10, poulet: "1000 g", lentillescorail: "400 g", laitCoco: "600 ml", pateCurry: "120 g", oignon: "300 g", riz: "600 g", coriandre: "20 g" },
+      { nb: 11, poulet: "1100 g", lentillescorail: "440 g", laitCoco: "660 ml", pateCurry: "132 g", oignon: "330 g", riz: "660 g", coriandre: "22 g" },
+      { nb: 12, poulet: "1200 g", lentillescorail: "480 g", laitCoco: "720 ml", pateCurry: "144 g", oignon: "360 g", riz: "720 g", coriandre: "24 g" },
+      { nb: 13, poulet: "1300 g", lentillescorail: "520 g", laitCoco: "780 ml", pateCurry: "156 g", oignon: "390 g", riz: "780 g", coriandre: "26 g" },
+      { nb: 14, poulet: "1400 g", lentillescorail: "560 g", laitCoco: "840 ml", pateCurry: "168 g", oignon: "420 g", riz: "840 g", coriandre: "28 g" },
+      { nb: 15, poulet: "1500 g", lentillescorail: "600 g", laitCoco: "900 ml", pateCurry: "180 g", oignon: "450 g", riz: "900 g", coriandre: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "Pâte de curry", detail: "Faire revenir la pâte de curry rouge avec l'oignon jusqu'à ce qu'elle embaume.", badge: "⏱ 3 min" },
+      { icone: "🍗", titre: "Poulet", detail: "Ajouter le poulet en morceaux et le saisir.", badge: "⏱ 4 min" },
+      { icone: "🥥", titre: "Mijoter", detail: "Verser lait de coco et lentilles corail, laisser mijoter jusqu'à épaississement. ASTUCE CHEF : les lentilles corail cuisent en 15 min et épaississent le curry toutes seules — pas besoin de farine ni de maïzena.", badge: "⏱ 18 min" },
+      { icone: "🍚", titre: "Servir", detail: "Parsemer de coriandre et servir sur du riz.", badge: null }
+    ]
+  },
+  sauteporcromarin: {
+    nom: "Sauté de Porc au Romarin & Brocoli",
+    cat: "plats",
+    pays: "france",
+    dateAjout: "2026-06-23T12:00:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥩",
+    description: "Un sauté parfumé : porc doré au romarin, brocoli croquant et une touche d'abricot pour un contraste sucré-salé surprenant et équilibré.",
+    tableauSauteporcromarin: [
+      { nb: 1, porc: "110 g", brocoli: "80 g", abricot: "40 g", romarin: "1 g", oignon: "30 g", huileolive: "8 ml", ail: "3 g" },
+      { nb: 2, porc: "220 g", brocoli: "160 g", abricot: "80 g", romarin: "2 g", oignon: "60 g", huileolive: "16 ml", ail: "6 g" },
+      { nb: 3, porc: "330 g", brocoli: "240 g", abricot: "120 g", romarin: "3 g", oignon: "90 g", huileolive: "24 ml", ail: "9 g" },
+      { nb: 4, porc: "440 g", brocoli: "320 g", abricot: "160 g", romarin: "4 g", oignon: "120 g", huileolive: "32 ml", ail: "12 g" },
+      { nb: 5, porc: "550 g", brocoli: "400 g", abricot: "200 g", romarin: "5 g", oignon: "150 g", huileolive: "40 ml", ail: "15 g" },
+      { nb: 6, porc: "660 g", brocoli: "480 g", abricot: "240 g", romarin: "6 g", oignon: "180 g", huileolive: "48 ml", ail: "18 g" },
+      { nb: 7, porc: "770 g", brocoli: "560 g", abricot: "280 g", romarin: "7 g", oignon: "210 g", huileolive: "56 ml", ail: "21 g" },
+      { nb: 8, porc: "880 g", brocoli: "640 g", abricot: "320 g", romarin: "8 g", oignon: "240 g", huileolive: "64 ml", ail: "24 g" },
+      { nb: 9, porc: "990 g", brocoli: "720 g", abricot: "360 g", romarin: "9 g", oignon: "270 g", huileolive: "72 ml", ail: "27 g" },
+      { nb: 10, porc: "1100 g", brocoli: "800 g", abricot: "400 g", romarin: "10 g", oignon: "300 g", huileolive: "80 ml", ail: "30 g" },
+      { nb: 11, porc: "1210 g", brocoli: "880 g", abricot: "440 g", romarin: "11 g", oignon: "330 g", huileolive: "88 ml", ail: "33 g" },
+      { nb: 12, porc: "1320 g", brocoli: "960 g", abricot: "480 g", romarin: "12 g", oignon: "360 g", huileolive: "96 ml", ail: "36 g" },
+      { nb: 13, porc: "1430 g", brocoli: "1040 g", abricot: "520 g", romarin: "13 g", oignon: "390 g", huileolive: "104 ml", ail: "39 g" },
+      { nb: 14, porc: "1540 g", brocoli: "1120 g", abricot: "560 g", romarin: "14 g", oignon: "420 g", huileolive: "112 ml", ail: "42 g" },
+      { nb: 15, porc: "1650 g", brocoli: "1200 g", abricot: "600 g", romarin: "15 g", oignon: "450 g", huileolive: "120 ml", ail: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Saisir", detail: "Saisir le porc en lamelles avec le romarin et l'ail, réserver.", badge: "⏱ 5 min" },
+      { icone: "🥦", titre: "Brocoli", detail: "Sauter le brocoli et l'oignon pour les garder croquants.", badge: "⏱ 6 min" },
+      { icone: "🍑", titre: "Abricot", detail: "Ajouter l'abricot en morceaux, remettre le porc et réchauffer. ASTUCE CHEF : ajoute l'abricot en toute fin — il fond juste assez pour napper sans se transformer en compote.", badge: "⏱ 3 min" }
+    ]
+  },
 });

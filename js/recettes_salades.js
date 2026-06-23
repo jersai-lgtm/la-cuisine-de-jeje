@@ -1437,4 +1437,39 @@ Object.assign(recettes, {
       { icone: "🍯", titre: "Assaisonner", detail: "Arroser de vinaigrette et servir aussitôt.", badge: null }
     ]
   },
+  saladebrocoli: {
+    nom: "Salade Énergisante Brocoli & Fruits Secs",
+    cat: "salades",
+    pays: "france",
+    dateAjout: "2026-06-23T12:00:00",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥦",
+    description: "Une salade qui réveille : brocoli croquant, raisins secs moelleux, amandes torréfiées et feta, liés à une vinaigrette citron-miel. Vitaminée et rassasiante.",
+    tableauSaladebrocoli: [
+      { nb: 1, brocoli: "100 g", raisinssecs: "15 g", amandes: "15 g", feta: "30 g", huileolive: "10 ml", citron: "5 ml", miel: "4 g" },
+      { nb: 2, brocoli: "200 g", raisinssecs: "30 g", amandes: "30 g", feta: "60 g", huileolive: "20 ml", citron: "10 ml", miel: "8 g" },
+      { nb: 3, brocoli: "300 g", raisinssecs: "45 g", amandes: "45 g", feta: "90 g", huileolive: "30 ml", citron: "15 ml", miel: "12 g" },
+      { nb: 4, brocoli: "400 g", raisinssecs: "60 g", amandes: "60 g", feta: "120 g", huileolive: "40 ml", citron: "20 ml", miel: "16 g" },
+      { nb: 5, brocoli: "500 g", raisinssecs: "75 g", amandes: "75 g", feta: "150 g", huileolive: "50 ml", citron: "25 ml", miel: "20 g" },
+      { nb: 6, brocoli: "600 g", raisinssecs: "90 g", amandes: "90 g", feta: "180 g", huileolive: "60 ml", citron: "30 ml", miel: "24 g" },
+      { nb: 7, brocoli: "700 g", raisinssecs: "105 g", amandes: "105 g", feta: "210 g", huileolive: "70 ml", citron: "35 ml", miel: "28 g" },
+      { nb: 8, brocoli: "800 g", raisinssecs: "120 g", amandes: "120 g", feta: "240 g", huileolive: "80 ml", citron: "40 ml", miel: "32 g" },
+      { nb: 9, brocoli: "900 g", raisinssecs: "135 g", amandes: "135 g", feta: "270 g", huileolive: "90 ml", citron: "45 ml", miel: "36 g" },
+      { nb: 10, brocoli: "1000 g", raisinssecs: "150 g", amandes: "150 g", feta: "300 g", huileolive: "100 ml", citron: "50 ml", miel: "40 g" },
+      { nb: 11, brocoli: "1100 g", raisinssecs: "165 g", amandes: "165 g", feta: "330 g", huileolive: "110 ml", citron: "55 ml", miel: "44 g" },
+      { nb: 12, brocoli: "1200 g", raisinssecs: "180 g", amandes: "180 g", feta: "360 g", huileolive: "120 ml", citron: "60 ml", miel: "48 g" },
+      { nb: 13, brocoli: "1300 g", raisinssecs: "195 g", amandes: "195 g", feta: "390 g", huileolive: "130 ml", citron: "65 ml", miel: "52 g" },
+      { nb: 14, brocoli: "1400 g", raisinssecs: "210 g", amandes: "210 g", feta: "420 g", huileolive: "140 ml", citron: "70 ml", miel: "56 g" },
+      { nb: 15, brocoli: "1500 g", raisinssecs: "225 g", amandes: "225 g", feta: "450 g", huileolive: "150 ml", citron: "75 ml", miel: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥦", titre: "Blanchir", detail: "Blanchir le brocoli 2 min puis le rafraîchir à l'eau glacée pour garder le croquant et la couleur.", badge: "⏱ 2 min" },
+      { icone: "🌰", titre: "Torréfier", detail: "Torréfier les amandes concassées à sec.", badge: "⏱ 3 min" },
+      { icone: "🥗", titre: "Assembler", detail: "Mêler brocoli, raisins, amandes et feta émiettée. ASTUCE CHEF : le choc à l'eau glacée fixe le vert éclatant du brocoli et stoppe net la cuisson — il reste croquant.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Fouetter huile, citron et miel, verser sur la salade.", badge: null }
+    ]
+  },
 });

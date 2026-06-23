@@ -2789,4 +2789,40 @@ Object.assign(recettes, {
       { icone: "🍲", titre: "Servir", detail: "Rectifier l'assaisonnement et servir bien chaud.", badge: null }
     ]
   },
+  cotriade: {
+    nom: "Cotriade Bretonne",
+    cat: "soupes",
+    pays: "france",
+    dateAjout: "2026-06-23T12:00:00",
+    saisons: ["automne", "hiver"],
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "La bouillabaisse bretonne : un bouillon parfumé aux poireaux et pommes de terre, dans lequel pochent des morceaux de poisson. Rustique, réconfortant et iodé.",
+    tableauCotriade: [
+      { nb: 1, cabillaud: "100 g", pommedeterre: "100 g", poireau: "50 g", oignon: "40 g", carotte: "40 g", bouillon: "200 ml", huileolive: "8 ml", thym: "1 g" },
+      { nb: 2, cabillaud: "200 g", pommedeterre: "200 g", poireau: "100 g", oignon: "80 g", carotte: "80 g", bouillon: "400 ml", huileolive: "16 ml", thym: "2 g" },
+      { nb: 3, cabillaud: "300 g", pommedeterre: "300 g", poireau: "150 g", oignon: "120 g", carotte: "120 g", bouillon: "600 ml", huileolive: "24 ml", thym: "3 g" },
+      { nb: 4, cabillaud: "400 g", pommedeterre: "400 g", poireau: "200 g", oignon: "160 g", carotte: "160 g", bouillon: "800 ml", huileolive: "32 ml", thym: "4 g" },
+      { nb: 5, cabillaud: "500 g", pommedeterre: "500 g", poireau: "250 g", oignon: "200 g", carotte: "200 g", bouillon: "1000 ml", huileolive: "40 ml", thym: "5 g" },
+      { nb: 6, cabillaud: "600 g", pommedeterre: "600 g", poireau: "300 g", oignon: "240 g", carotte: "240 g", bouillon: "1200 ml", huileolive: "48 ml", thym: "6 g" },
+      { nb: 7, cabillaud: "700 g", pommedeterre: "700 g", poireau: "350 g", oignon: "280 g", carotte: "280 g", bouillon: "1400 ml", huileolive: "56 ml", thym: "7 g" },
+      { nb: 8, cabillaud: "800 g", pommedeterre: "800 g", poireau: "400 g", oignon: "320 g", carotte: "320 g", bouillon: "1600 ml", huileolive: "64 ml", thym: "8 g" },
+      { nb: 9, cabillaud: "900 g", pommedeterre: "900 g", poireau: "450 g", oignon: "360 g", carotte: "360 g", bouillon: "1800 ml", huileolive: "72 ml", thym: "9 g" },
+      { nb: 10, cabillaud: "1000 g", pommedeterre: "1000 g", poireau: "500 g", oignon: "400 g", carotte: "400 g", bouillon: "2000 ml", huileolive: "80 ml", thym: "10 g" },
+      { nb: 11, cabillaud: "1100 g", pommedeterre: "1100 g", poireau: "550 g", oignon: "440 g", carotte: "440 g", bouillon: "2200 ml", huileolive: "88 ml", thym: "11 g" },
+      { nb: 12, cabillaud: "1200 g", pommedeterre: "1200 g", poireau: "600 g", oignon: "480 g", carotte: "480 g", bouillon: "2400 ml", huileolive: "96 ml", thym: "12 g" },
+      { nb: 13, cabillaud: "1300 g", pommedeterre: "1300 g", poireau: "650 g", oignon: "520 g", carotte: "520 g", bouillon: "2600 ml", huileolive: "104 ml", thym: "13 g" },
+      { nb: 14, cabillaud: "1400 g", pommedeterre: "1400 g", poireau: "700 g", oignon: "560 g", carotte: "560 g", bouillon: "2800 ml", huileolive: "112 ml", thym: "14 g" },
+      { nb: 15, cabillaud: "1500 g", pommedeterre: "1500 g", poireau: "750 g", oignon: "600 g", carotte: "600 g", bouillon: "3000 ml", huileolive: "120 ml", thym: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Suer", detail: "Faire suer poireau et oignon dans l'huile.", badge: "⏱ 5 min" },
+      { icone: "🥔", titre: "Bouillon", detail: "Ajouter pommes de terre, carotte, thym et bouillon, cuire jusqu'à tendreté.", badge: "⏱ 20 min" },
+      { icone: "🐟", titre: "Pocher", detail: "Déposer le poisson et le pocher doucement hors gros bouillon. ASTUCE CHEF : ajoute le poisson en dernier et coupe le feu vif — il poche en 5 min et reste moelleux ; trop bouilli, il se défait.", badge: "⏱ 6 min" },
+      { icone: "🍲", titre: "Servir", detail: "Servir le bouillon et le poisson, traditionnellement avec du pain.", badge: null }
+    ]
+  },
 });

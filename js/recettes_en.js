@@ -1,6 +1,66 @@
 // Généré par tools/traduire_batch.mjs — NE PAS éditer à la main.
 // Traductions EN des recettes : { cle: { nom, description, etapes:[{titre,detail}] } }
 window.RECETTES_EN = {
+ "oeufsturque": {
+  "nom": "Turkish Eggs (Çılbır)",
+  "description": "The iconic Turkish breakfast: poached eggs over garlicky yogurt, drizzled with paprika butter, on a bed of spinach. Comforting yet surprisingly light."
+ },
+ "mafeaubergine": {
+  "nom": "Eggplant Mafé",
+  "description": "The vegetarian take on Senegalese mafé: melting eggplant simmered in a creamy peanut-and-tomato sauce, served with rice. Comforting and budget-friendly."
+ },
+ "couscousfalafels": {
+  "nom": "Couscous with Falafels",
+  "description": "A colorful vegetarian couscous: fluffy semolina, simmered vegetables and golden chickpea falafels, lifted with a touch of harissa. Complete and full of flavor."
+ },
+ "carottesconfites": {
+  "nom": "Confit Carrots with Chimichurri",
+  "description": "Carrots roasted slowly until meltingly tender, brightened by a herby, tangy chimichurri. A simple side (or veggie main) full of zing."
+ },
+ "carotteslaquees": {
+  "nom": "Soy-Glazed Carrots",
+  "description": "Carrots glazed in a glossy soy-honey lacquer, sprinkled with sesame and spiked with ginger. An irresistible sweet-savory Asian side."
+ },
+ "tomatesgratinees": {
+  "nom": "Gratinéed Tomatoes & Roasted Mushrooms",
+  "description": "Persillade-gratinéed tomatoes and golden roasted mushrooms: a simple, fragrant, comforting seasonal vegetarian dish."
+ },
+ "rizjaponaiscacahuete": {
+  "nom": "Rice & Veggies, Peanut Sauce",
+  "description": "A balanced bowl: Japanese rice, crisp just-sautéed vegetables, all coated in a lime-peanut sauce. Fresh, indulgent and complete."
+ },
+ "saladebrocoli": {
+  "nom": "Energizing Broccoli & Dried Fruit Salad",
+  "description": "A salad that wakes you up: crunchy broccoli, soft raisins, toasted almonds and feta, tossed in a lemon-honey dressing. Vitamin-packed and filling."
+ },
+ "wokpoulet": {
+  "nom": "Chicken & Vegetable Wok",
+  "description": "A quick, colorful wok: golden chicken, crisp vegetables and rice, stir-fried over high heat with soy and ginger. The complete weeknight meal in 25 minutes."
+ },
+ "curryrougepoulet": {
+  "nom": "Red Chicken Curry with Coral Lentils",
+  "description": "A comforting Thai red curry: chicken and coral lentils simmered in coconut milk fragrant with curry paste. Creamy, spicy and nourishing."
+ },
+ "sauteporcromarin": {
+  "nom": "Rosemary Pork Sauté with Broccoli",
+  "description": "A fragrant sauté: rosemary-seared pork, crisp broccoli and a touch of apricot for a surprising, balanced sweet-savory contrast."
+ },
+ "cotriade": {
+  "nom": "Breton Fish Stew (Cotriade)",
+  "description": "Brittany's answer to bouillabaisse: a leek-and-potato broth in which chunks of fish gently poach. Rustic, comforting and briny."
+ },
+ "clafoutistomate": {
+  "nom": "Savory Cherry Tomato Clafoutis",
+  "description": "Clafoutis gone savory: melting cherry tomatoes set in a soft cheese-and-basil batter. Perfect warm as a starter or appetizer."
+ },
+ "bruschettapoiscasses": {
+  "nom": "Split Pea & Mackerel Bruschetta",
+  "description": "A clever, budget-friendly bruschetta: a lemony split-pea spread topped with mackerel and a drizzle of oil. Briny, original and full of good nutrients."
+ },
+ "guacamolebrocoli": {
+  "nom": "Broccoli Guacamole",
+  "description": "A clever, lighter guacamole: some of the avocado is swapped for blended steamed broccoli. Just as creamy, greener, less fatty — no one will notice."
+ },
  "gateausavoie": {
   "nom": "Savoy Sponge Cake",
   "description": "The airy sponge from the Savoy mountains: an ultra-light cake raised with whipped egg whites, barely sweet and melting. Perfect plain or with custard."

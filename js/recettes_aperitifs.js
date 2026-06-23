@@ -2210,4 +2210,73 @@ tapenade: {
       { icone: "🔥", titre: "Cuire", detail: "Cuire à 180°C jusqu'à ce qu'ils soient dorés et gonflés.", badge: "⏱ 20 min" }
     ]
   },
+  bruschettapoiscasses: {
+    nom: "Bruschetta Pois Cassés & Maquereau",
+    cat: "aperitifs",
+    pays: "france",
+    dateAjout: "2026-06-23T12:00:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Une bruschetta maligne et économique : un crémeux de pois cassés citronné, surmonté de maquereau et d'un filet d'huile. Iodée, originale et pleine de bons nutriments.",
+    tableauBruschettapoiscasses: [
+      { nb: 1, pain: "40 g", poiscasses: "50 g", maquereau: "40 g", citron: "5 ml", huileolive: "8 ml", ail: "2 g", persil: "2 g" },
+      { nb: 2, pain: "80 g", poiscasses: "100 g", maquereau: "80 g", citron: "10 ml", huileolive: "16 ml", ail: "4 g", persil: "4 g" },
+      { nb: 3, pain: "120 g", poiscasses: "150 g", maquereau: "120 g", citron: "15 ml", huileolive: "24 ml", ail: "6 g", persil: "6 g" },
+      { nb: 4, pain: "160 g", poiscasses: "200 g", maquereau: "160 g", citron: "20 ml", huileolive: "32 ml", ail: "8 g", persil: "8 g" },
+      { nb: 5, pain: "200 g", poiscasses: "250 g", maquereau: "200 g", citron: "25 ml", huileolive: "40 ml", ail: "10 g", persil: "10 g" },
+      { nb: 6, pain: "240 g", poiscasses: "300 g", maquereau: "240 g", citron: "30 ml", huileolive: "48 ml", ail: "12 g", persil: "12 g" },
+      { nb: 7, pain: "280 g", poiscasses: "350 g", maquereau: "280 g", citron: "35 ml", huileolive: "56 ml", ail: "14 g", persil: "14 g" },
+      { nb: 8, pain: "320 g", poiscasses: "400 g", maquereau: "320 g", citron: "40 ml", huileolive: "64 ml", ail: "16 g", persil: "16 g" },
+      { nb: 9, pain: "360 g", poiscasses: "450 g", maquereau: "360 g", citron: "45 ml", huileolive: "72 ml", ail: "18 g", persil: "18 g" },
+      { nb: 10, pain: "400 g", poiscasses: "500 g", maquereau: "400 g", citron: "50 ml", huileolive: "80 ml", ail: "20 g", persil: "20 g" },
+      { nb: 11, pain: "440 g", poiscasses: "550 g", maquereau: "440 g", citron: "55 ml", huileolive: "88 ml", ail: "22 g", persil: "22 g" },
+      { nb: 12, pain: "480 g", poiscasses: "600 g", maquereau: "480 g", citron: "60 ml", huileolive: "96 ml", ail: "24 g", persil: "24 g" },
+      { nb: 13, pain: "520 g", poiscasses: "650 g", maquereau: "520 g", citron: "65 ml", huileolive: "104 ml", ail: "26 g", persil: "26 g" },
+      { nb: 14, pain: "560 g", poiscasses: "700 g", maquereau: "560 g", citron: "70 ml", huileolive: "112 ml", ail: "28 g", persil: "28 g" },
+      { nb: 15, pain: "600 g", poiscasses: "750 g", maquereau: "600 g", citron: "75 ml", huileolive: "120 ml", ail: "30 g", persil: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🟢", titre: "Pois cassés", detail: "Cuire les pois cassés jusqu'à tendreté, les écraser avec ail, citron et huile en crémeux.", badge: "⏱ 18 min" },
+      { icone: "🍞", titre: "Toaster", detail: "Griller les tranches de pain et les frotter à l'ail.", badge: null },
+      { icone: "🐟", titre: "Garnir", detail: "Tartiner le crémeux, déposer le maquereau émietté. ASTUCE CHEF : garde le crémeux de pois cassés un peu épais — trop liquide, il détrempe le pain grillé en quelques minutes.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Filet d'huile, persil et un tour de poivre.", badge: null }
+    ]
+  },
+  guacamolebrocoli: {
+    nom: "Guacamole au Brocoli",
+    cat: "aperitifs",
+    pays: "mexique",
+    dateAjout: "2026-06-23T12:00:00",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥑",
+    description: "Un guacamole malin et plus léger : une partie de l'avocat est remplacée par du brocoli vapeur mixé. Aussi crémeux, plus vert, moins gras — personne ne voit la différence.",
+    tableauGuacamolebrocoli: [
+      { nb: 1, avocat: "60 g", brocoli: "50 g", citronvert: "8 ml", oignonrouge: "20 g", coriandre: "3 g", piment: "1 g", sel: "1 g" },
+      { nb: 2, avocat: "120 g", brocoli: "100 g", citronvert: "16 ml", oignonrouge: "40 g", coriandre: "6 g", piment: "1 g", sel: "2 g" },
+      { nb: 3, avocat: "180 g", brocoli: "150 g", citronvert: "24 ml", oignonrouge: "60 g", coriandre: "9 g", piment: "2 g", sel: "3 g" },
+      { nb: 4, avocat: "240 g", brocoli: "200 g", citronvert: "32 ml", oignonrouge: "80 g", coriandre: "12 g", piment: "2 g", sel: "4 g" },
+      { nb: 5, avocat: "300 g", brocoli: "250 g", citronvert: "40 ml", oignonrouge: "100 g", coriandre: "15 g", piment: "3 g", sel: "5 g" },
+      { nb: 6, avocat: "360 g", brocoli: "300 g", citronvert: "48 ml", oignonrouge: "120 g", coriandre: "18 g", piment: "3 g", sel: "6 g" },
+      { nb: 7, avocat: "420 g", brocoli: "350 g", citronvert: "56 ml", oignonrouge: "140 g", coriandre: "21 g", piment: "4 g", sel: "7 g" },
+      { nb: 8, avocat: "480 g", brocoli: "400 g", citronvert: "64 ml", oignonrouge: "160 g", coriandre: "24 g", piment: "4 g", sel: "8 g" },
+      { nb: 9, avocat: "540 g", brocoli: "450 g", citronvert: "72 ml", oignonrouge: "180 g", coriandre: "27 g", piment: "5 g", sel: "9 g" },
+      { nb: 10, avocat: "600 g", brocoli: "500 g", citronvert: "80 ml", oignonrouge: "200 g", coriandre: "30 g", piment: "5 g", sel: "10 g" },
+      { nb: 11, avocat: "660 g", brocoli: "550 g", citronvert: "88 ml", oignonrouge: "220 g", coriandre: "33 g", piment: "6 g", sel: "11 g" },
+      { nb: 12, avocat: "720 g", brocoli: "600 g", citronvert: "96 ml", oignonrouge: "240 g", coriandre: "36 g", piment: "6 g", sel: "12 g" },
+      { nb: 13, avocat: "780 g", brocoli: "650 g", citronvert: "104 ml", oignonrouge: "260 g", coriandre: "39 g", piment: "7 g", sel: "13 g" },
+      { nb: 14, avocat: "840 g", brocoli: "700 g", citronvert: "112 ml", oignonrouge: "280 g", coriandre: "42 g", piment: "7 g", sel: "14 g" },
+      { nb: 15, avocat: "900 g", brocoli: "750 g", citronvert: "120 ml", oignonrouge: "300 g", coriandre: "45 g", piment: "8 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥦", titre: "Vapeur", detail: "Cuire le brocoli à la vapeur jusqu'à tendreté, puis le mixer en purée.", badge: "⏱ 6 min" },
+      { icone: "🥑", titre: "Écraser", detail: "Écraser l'avocat à la fourchette et l'incorporer à la purée de brocoli.", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajouter oignon rouge, coriandre, citron vert, piment et sel. ASTUCE CHEF : presse le citron vert généreusement dès le début — l'acide empêche l'avocat de noircir et garde le guacamole bien vert.", badge: null }
+    ]
+  },
 });

@@ -2027,5 +2027,40 @@ oeufmayo: {
       { icone: "🍽️", titre: "Dresser", detail: "Disposer les pommes de terre, le poulpe par-dessus, sur une assiette en bois si possible.", badge: null },
       { icone: "🌶️", titre: "Assaisonner", detail: "Saupoudrer de paprika fumé, de gros sel et arroser d'huile d'olive.", badge: "💡 Tapa" }
     ]
-  }
+  },
+  clafoutistomate: {
+    nom: "Clafoutis Salé aux Tomates Cerises",
+    cat: "entrees",
+    pays: "france",
+    dateAjout: "2026-06-23T12:00:00",
+    saisons: ["ete"],
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "Le clafoutis en version salée : des tomates cerises fondantes prises dans un appareil moelleux au fromage et au basilic. Parfait tiède en entrée ou à l'apéro.",
+    tableauClafoutistomate: [
+      { nb: 1, tomates: "100 g", oeufs: "1", lait: "50 ml", farine: "25 g", gruyere: "20 g", huileolive: "5 ml", basilic: "3 feuilles", sel: "1 g" },
+      { nb: 2, tomates: "200 g", oeufs: "2", lait: "100 ml", farine: "50 g", gruyere: "40 g", huileolive: "10 ml", basilic: "6 feuilles", sel: "2 g" },
+      { nb: 3, tomates: "300 g", oeufs: "3", lait: "150 ml", farine: "75 g", gruyere: "60 g", huileolive: "15 ml", basilic: "9 feuilles", sel: "3 g" },
+      { nb: 4, tomates: "400 g", oeufs: "4", lait: "200 ml", farine: "100 g", gruyere: "80 g", huileolive: "20 ml", basilic: "12 feuilles", sel: "4 g" },
+      { nb: 5, tomates: "500 g", oeufs: "5", lait: "250 ml", farine: "125 g", gruyere: "100 g", huileolive: "25 ml", basilic: "15 feuilles", sel: "5 g" },
+      { nb: 6, tomates: "600 g", oeufs: "6", lait: "300 ml", farine: "150 g", gruyere: "120 g", huileolive: "30 ml", basilic: "18 feuilles", sel: "6 g" },
+      { nb: 7, tomates: "700 g", oeufs: "7", lait: "350 ml", farine: "175 g", gruyere: "140 g", huileolive: "35 ml", basilic: "21 feuilles", sel: "7 g" },
+      { nb: 8, tomates: "800 g", oeufs: "8", lait: "400 ml", farine: "200 g", gruyere: "160 g", huileolive: "40 ml", basilic: "24 feuilles", sel: "8 g" },
+      { nb: 9, tomates: "900 g", oeufs: "9", lait: "450 ml", farine: "225 g", gruyere: "180 g", huileolive: "45 ml", basilic: "27 feuilles", sel: "9 g" },
+      { nb: 10, tomates: "1000 g", oeufs: "10", lait: "500 ml", farine: "250 g", gruyere: "200 g", huileolive: "50 ml", basilic: "30 feuilles", sel: "10 g" },
+      { nb: 11, tomates: "1100 g", oeufs: "11", lait: "550 ml", farine: "275 g", gruyere: "220 g", huileolive: "55 ml", basilic: "33 feuilles", sel: "11 g" },
+      { nb: 12, tomates: "1200 g", oeufs: "12", lait: "600 ml", farine: "300 g", gruyere: "240 g", huileolive: "60 ml", basilic: "36 feuilles", sel: "12 g" },
+      { nb: 13, tomates: "1300 g", oeufs: "13", lait: "650 ml", farine: "325 g", gruyere: "260 g", huileolive: "65 ml", basilic: "39 feuilles", sel: "13 g" },
+      { nb: 14, tomates: "1400 g", oeufs: "14", lait: "700 ml", farine: "350 g", gruyere: "280 g", huileolive: "70 ml", basilic: "42 feuilles", sel: "14 g" },
+      { nb: 15, tomates: "1500 g", oeufs: "15", lait: "750 ml", farine: "375 g", gruyere: "300 g", huileolive: "75 ml", basilic: "45 feuilles", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Tomates", detail: "Disposer les tomates cerises dans un plat huilé.", badge: null },
+      { icone: "🥣", titre: "Appareil", detail: "Fouetter œufs, lait, farine, gruyère, basilic et sel.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Verser sur les tomates et cuire à 180°C jusqu'à ce que le clafoutis soit pris et doré. ASTUCE CHEF : fais rôtir les tomates 10 min seules avant de verser l'appareil — elles rendent leur eau au four au lieu de détremper le clafoutis.", badge: "⏱ 30 min" }
+    ]
+  },
 });
