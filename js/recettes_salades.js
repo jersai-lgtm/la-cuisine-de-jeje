@@ -1472,4 +1472,75 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Assaisonner", detail: "Fouetter huile, citron et miel, verser sur la salade.", badge: null }
     ]
   },
+  saladelentillesbeluga: {
+    nom: "Salade de Lentilles Beluga & Pomme",
+    cat: "salades",
+    pays: "france",
+    dateAjout: "2026-06-23T13:00:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Une salade nourrissante et croquante : lentilles beluga, pomme acidulée, feta et oignon rouge, le tout vinaigré. Fraîche et pleine de protéines.",
+    tableauSaladelentillesbeluga: [
+      { nb: 1, lentilles: "80 g", pomme: "50 g", feta: "30 g", oignonrouge: "20 g", huileolive: "10 ml", vinaigre: "5 ml", persil: "3 g" },
+      { nb: 2, lentilles: "160 g", pomme: "100 g", feta: "60 g", oignonrouge: "40 g", huileolive: "20 ml", vinaigre: "10 ml", persil: "6 g" },
+      { nb: 3, lentilles: "240 g", pomme: "150 g", feta: "90 g", oignonrouge: "60 g", huileolive: "30 ml", vinaigre: "15 ml", persil: "9 g" },
+      { nb: 4, lentilles: "320 g", pomme: "200 g", feta: "120 g", oignonrouge: "80 g", huileolive: "40 ml", vinaigre: "20 ml", persil: "12 g" },
+      { nb: 5, lentilles: "400 g", pomme: "250 g", feta: "150 g", oignonrouge: "100 g", huileolive: "50 ml", vinaigre: "25 ml", persil: "15 g" },
+      { nb: 6, lentilles: "480 g", pomme: "300 g", feta: "180 g", oignonrouge: "120 g", huileolive: "60 ml", vinaigre: "30 ml", persil: "18 g" },
+      { nb: 7, lentilles: "560 g", pomme: "350 g", feta: "210 g", oignonrouge: "140 g", huileolive: "70 ml", vinaigre: "35 ml", persil: "21 g" },
+      { nb: 8, lentilles: "640 g", pomme: "400 g", feta: "240 g", oignonrouge: "160 g", huileolive: "80 ml", vinaigre: "40 ml", persil: "24 g" },
+      { nb: 9, lentilles: "720 g", pomme: "450 g", feta: "270 g", oignonrouge: "180 g", huileolive: "90 ml", vinaigre: "45 ml", persil: "27 g" },
+      { nb: 10, lentilles: "800 g", pomme: "500 g", feta: "300 g", oignonrouge: "200 g", huileolive: "100 ml", vinaigre: "50 ml", persil: "30 g" },
+      { nb: 11, lentilles: "880 g", pomme: "550 g", feta: "330 g", oignonrouge: "220 g", huileolive: "110 ml", vinaigre: "55 ml", persil: "33 g" },
+      { nb: 12, lentilles: "960 g", pomme: "600 g", feta: "360 g", oignonrouge: "240 g", huileolive: "120 ml", vinaigre: "60 ml", persil: "36 g" },
+      { nb: 13, lentilles: "1040 g", pomme: "650 g", feta: "390 g", oignonrouge: "260 g", huileolive: "130 ml", vinaigre: "65 ml", persil: "39 g" },
+      { nb: 14, lentilles: "1120 g", pomme: "700 g", feta: "420 g", oignonrouge: "280 g", huileolive: "140 ml", vinaigre: "70 ml", persil: "42 g" },
+      { nb: 15, lentilles: "1200 g", pomme: "750 g", feta: "450 g", oignonrouge: "300 g", huileolive: "150 ml", vinaigre: "75 ml", persil: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🟣", titre: "Lentilles", detail: "Cuire les lentilles beluga al dente puis les rafraîchir.", badge: "⏱ 18 min" },
+      { icone: "🍏", titre: "Tailler", detail: "Couper la pomme en petits dés et l'oignon rouge finement.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mêler lentilles, pomme, feta et oignon. ASTUCE CHEF : citronne les dés de pomme dès la découpe — ils ne noircissent pas et apportent un peu d'acidité.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Vinaigrette huile-vinaigre et persil.", badge: null }
+    ]
+  },
+  saladefourme: {
+    nom: "Salade Fourme d'Ambert, Noix & Pomme",
+    cat: "salades",
+    pays: "france",
+    dateAjout: "2026-06-23T13:00:00",
+    saisons: ["automne"],
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Une salade automnale gourmande : roquette, fourme d'Ambert, noix et pomme, liées au miel. Le contraste du bleu et du sucré, irrésistible.",
+    tableauSaladefourme: [
+      { nb: 1, roquette: "40 g", fourme: "30 g", noix: "15 g", pomme: "40 g", huileolive: "10 ml", vinaigre: "5 ml", miel: "4 g" },
+      { nb: 2, roquette: "80 g", fourme: "60 g", noix: "30 g", pomme: "80 g", huileolive: "20 ml", vinaigre: "10 ml", miel: "8 g" },
+      { nb: 3, roquette: "120 g", fourme: "90 g", noix: "45 g", pomme: "120 g", huileolive: "30 ml", vinaigre: "15 ml", miel: "12 g" },
+      { nb: 4, roquette: "160 g", fourme: "120 g", noix: "60 g", pomme: "160 g", huileolive: "40 ml", vinaigre: "20 ml", miel: "16 g" },
+      { nb: 5, roquette: "200 g", fourme: "150 g", noix: "75 g", pomme: "200 g", huileolive: "50 ml", vinaigre: "25 ml", miel: "20 g" },
+      { nb: 6, roquette: "240 g", fourme: "180 g", noix: "90 g", pomme: "240 g", huileolive: "60 ml", vinaigre: "30 ml", miel: "24 g" },
+      { nb: 7, roquette: "280 g", fourme: "210 g", noix: "105 g", pomme: "280 g", huileolive: "70 ml", vinaigre: "35 ml", miel: "28 g" },
+      { nb: 8, roquette: "320 g", fourme: "240 g", noix: "120 g", pomme: "320 g", huileolive: "80 ml", vinaigre: "40 ml", miel: "32 g" },
+      { nb: 9, roquette: "360 g", fourme: "270 g", noix: "135 g", pomme: "360 g", huileolive: "90 ml", vinaigre: "45 ml", miel: "36 g" },
+      { nb: 10, roquette: "400 g", fourme: "300 g", noix: "150 g", pomme: "400 g", huileolive: "100 ml", vinaigre: "50 ml", miel: "40 g" },
+      { nb: 11, roquette: "440 g", fourme: "330 g", noix: "165 g", pomme: "440 g", huileolive: "110 ml", vinaigre: "55 ml", miel: "44 g" },
+      { nb: 12, roquette: "480 g", fourme: "360 g", noix: "180 g", pomme: "480 g", huileolive: "120 ml", vinaigre: "60 ml", miel: "48 g" },
+      { nb: 13, roquette: "520 g", fourme: "390 g", noix: "195 g", pomme: "520 g", huileolive: "130 ml", vinaigre: "65 ml", miel: "52 g" },
+      { nb: 14, roquette: "560 g", fourme: "420 g", noix: "210 g", pomme: "560 g", huileolive: "140 ml", vinaigre: "70 ml", miel: "56 g" },
+      { nb: 15, roquette: "600 g", fourme: "450 g", noix: "225 g", pomme: "600 g", huileolive: "150 ml", vinaigre: "75 ml", miel: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Torréfier", detail: "Torréfier légèrement les noix à sec.", badge: null },
+      { icone: "🧀", titre: "Préparer", detail: "Émietter la fourme, couper la pomme en lamelles.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Dresser roquette, fourme, noix et pomme. ASTUCE CHEF : le miel dans la vinaigrette équilibre l'amertume du bleu — un blue cheese sans touche sucrée paraît agressif.", badge: null },
+      { icone: "🍯", titre: "Assaisonner", detail: "Vinaigrette huile-vinaigre-miel.", badge: null }
+    ]
+  },
 });

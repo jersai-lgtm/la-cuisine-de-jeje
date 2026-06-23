@@ -1341,4 +1341,108 @@ Object.assign(recettes, {
       { icone: "🥣", titre: "Dresser", detail: "Verser la sauce sur le riz et les légumes, parsemer de sésame.", badge: null }
     ]
   },
+  pouletdukkah: {
+    nom: "Poulet Dukkah & Légumes",
+    cat: "healthy",
+    pays: "egypte",
+    dateAjout: "2026-06-23T13:00:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Du poulet enrobé de dukkah, ce mélange égyptien de noisettes et d'épices torréfiées, servi avec des légumes croquants. Croustillant, parfumé et plein de peps.",
+    tableauPouletdukkah: [
+      { nb: 1, poulet: "110 g", dukkah: "8 g", courgette: "60 g", carotte: "50 g", huileolive: "8 ml", citron: "5 ml", coriandre: "2 g" },
+      { nb: 2, poulet: "220 g", dukkah: "16 g", courgette: "120 g", carotte: "100 g", huileolive: "16 ml", citron: "10 ml", coriandre: "4 g" },
+      { nb: 3, poulet: "330 g", dukkah: "24 g", courgette: "180 g", carotte: "150 g", huileolive: "24 ml", citron: "15 ml", coriandre: "6 g" },
+      { nb: 4, poulet: "440 g", dukkah: "32 g", courgette: "240 g", carotte: "200 g", huileolive: "32 ml", citron: "20 ml", coriandre: "8 g" },
+      { nb: 5, poulet: "550 g", dukkah: "40 g", courgette: "300 g", carotte: "250 g", huileolive: "40 ml", citron: "25 ml", coriandre: "10 g" },
+      { nb: 6, poulet: "660 g", dukkah: "48 g", courgette: "360 g", carotte: "300 g", huileolive: "48 ml", citron: "30 ml", coriandre: "12 g" },
+      { nb: 7, poulet: "770 g", dukkah: "56 g", courgette: "420 g", carotte: "350 g", huileolive: "56 ml", citron: "35 ml", coriandre: "14 g" },
+      { nb: 8, poulet: "880 g", dukkah: "64 g", courgette: "480 g", carotte: "400 g", huileolive: "64 ml", citron: "40 ml", coriandre: "16 g" },
+      { nb: 9, poulet: "990 g", dukkah: "72 g", courgette: "540 g", carotte: "450 g", huileolive: "72 ml", citron: "45 ml", coriandre: "18 g" },
+      { nb: 10, poulet: "1100 g", dukkah: "80 g", courgette: "600 g", carotte: "500 g", huileolive: "80 ml", citron: "50 ml", coriandre: "20 g" },
+      { nb: 11, poulet: "1210 g", dukkah: "88 g", courgette: "660 g", carotte: "550 g", huileolive: "88 ml", citron: "55 ml", coriandre: "22 g" },
+      { nb: 12, poulet: "1320 g", dukkah: "96 g", courgette: "720 g", carotte: "600 g", huileolive: "96 ml", citron: "60 ml", coriandre: "24 g" },
+      { nb: 13, poulet: "1430 g", dukkah: "104 g", courgette: "780 g", carotte: "650 g", huileolive: "104 ml", citron: "65 ml", coriandre: "26 g" },
+      { nb: 14, poulet: "1540 g", dukkah: "112 g", courgette: "840 g", carotte: "700 g", huileolive: "112 ml", citron: "70 ml", coriandre: "28 g" },
+      { nb: 15, poulet: "1650 g", dukkah: "120 g", courgette: "900 g", carotte: "750 g", huileolive: "120 ml", citron: "75 ml", coriandre: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Enrober", detail: "Rouler les morceaux de poulet dans le dukkah pour bien les enrober.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisir le poulet à la poêle jusqu'à ce que le dukkah dore. ASTUCE CHEF : le dukkah brûle vite — feu moyen et surveille, la croûte doit dorer sans noircir.", badge: "⏱ 7 min" },
+      { icone: "🥕", titre: "Légumes", detail: "Sauter courgette et carotte pour les garder croquantes.", badge: "⏱ 6 min" },
+      { icone: "🍋", titre: "Servir", detail: "Arroser de citron et parsemer de coriandre.", badge: null }
+    ]
+  },
+  crumblelegumes: {
+    nom: "Crumble de Légumes d'Été",
+    cat: "healthy",
+    pays: "france",
+    dateAjout: "2026-06-23T13:00:00",
+    saisons: ["ete"],
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🥧",
+    description: "Un crumble salé et estival : courgette, aubergine, poivron et tomate fondants sous une pâte sablée au parmesan. Réconfortant mais léger.",
+    tableauCrumblelegumes: [
+      { nb: 1, courgette: "60 g", aubergine: "50 g", tomates: "60 g", poivron: "40 g", farine: "25 g", beurre: "15 g", parmesan: "15 g", thym: "1 g" },
+      { nb: 2, courgette: "120 g", aubergine: "100 g", tomates: "120 g", poivron: "80 g", farine: "50 g", beurre: "30 g", parmesan: "30 g", thym: "2 g" },
+      { nb: 3, courgette: "180 g", aubergine: "150 g", tomates: "180 g", poivron: "120 g", farine: "75 g", beurre: "45 g", parmesan: "45 g", thym: "3 g" },
+      { nb: 4, courgette: "240 g", aubergine: "200 g", tomates: "240 g", poivron: "160 g", farine: "100 g", beurre: "60 g", parmesan: "60 g", thym: "4 g" },
+      { nb: 5, courgette: "300 g", aubergine: "250 g", tomates: "300 g", poivron: "200 g", farine: "125 g", beurre: "75 g", parmesan: "75 g", thym: "5 g" },
+      { nb: 6, courgette: "360 g", aubergine: "300 g", tomates: "360 g", poivron: "240 g", farine: "150 g", beurre: "90 g", parmesan: "90 g", thym: "6 g" },
+      { nb: 7, courgette: "420 g", aubergine: "350 g", tomates: "420 g", poivron: "280 g", farine: "175 g", beurre: "105 g", parmesan: "105 g", thym: "7 g" },
+      { nb: 8, courgette: "480 g", aubergine: "400 g", tomates: "480 g", poivron: "320 g", farine: "200 g", beurre: "120 g", parmesan: "120 g", thym: "8 g" },
+      { nb: 9, courgette: "540 g", aubergine: "450 g", tomates: "540 g", poivron: "360 g", farine: "225 g", beurre: "135 g", parmesan: "135 g", thym: "9 g" },
+      { nb: 10, courgette: "600 g", aubergine: "500 g", tomates: "600 g", poivron: "400 g", farine: "250 g", beurre: "150 g", parmesan: "150 g", thym: "10 g" },
+      { nb: 11, courgette: "660 g", aubergine: "550 g", tomates: "660 g", poivron: "440 g", farine: "275 g", beurre: "165 g", parmesan: "165 g", thym: "11 g" },
+      { nb: 12, courgette: "720 g", aubergine: "600 g", tomates: "720 g", poivron: "480 g", farine: "300 g", beurre: "180 g", parmesan: "180 g", thym: "12 g" },
+      { nb: 13, courgette: "780 g", aubergine: "650 g", tomates: "780 g", poivron: "520 g", farine: "325 g", beurre: "195 g", parmesan: "195 g", thym: "13 g" },
+      { nb: 14, courgette: "840 g", aubergine: "700 g", tomates: "840 g", poivron: "560 g", farine: "350 g", beurre: "210 g", parmesan: "210 g", thym: "14 g" },
+      { nb: 15, courgette: "900 g", aubergine: "750 g", tomates: "900 g", poivron: "600 g", farine: "375 g", beurre: "225 g", parmesan: "225 g", thym: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍆", titre: "Légumes", detail: "Couper et faire revenir les légumes avec le thym jusqu'à tendreté.", badge: "⏱ 12 min" },
+      { icone: "🧈", titre: "Crumble", detail: "Sabler farine, beurre et parmesan du bout des doigts en grosse semoule. ASTUCE CHEF : garde le beurre bien froid et ne malaxe pas trop — c'est ce qui donne le crumble friable, pas une pâte.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Répartir les légumes dans un plat, couvrir de crumble et cuire à 180°C jusqu'à doré.", badge: "⏱ 25 min" }
+    ]
+  },
+  bowlmarocain: {
+    nom: "Bowl Marocain",
+    cat: "healthy",
+    pays: "maroc",
+    dateAjout: "2026-06-23T13:00:00",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Un bowl ensoleillé : semoule, pois chiches, patate douce rôtie et carottes, relevés de cumin et adoucis par les raisins secs et les amandes. Complet et parfumé.",
+    tableauBowlmarocain: [
+      { nb: 1, semoule: "60 g", poischiches: "60 g", carotte: "50 g", patatedouce: "60 g", raisinssecs: "15 g", amandes: "10 g", cumin: "1 g", huileolive: "8 ml" },
+      { nb: 2, semoule: "120 g", poischiches: "120 g", carotte: "100 g", patatedouce: "120 g", raisinssecs: "30 g", amandes: "20 g", cumin: "2 g", huileolive: "16 ml" },
+      { nb: 3, semoule: "180 g", poischiches: "180 g", carotte: "150 g", patatedouce: "180 g", raisinssecs: "45 g", amandes: "30 g", cumin: "3 g", huileolive: "24 ml" },
+      { nb: 4, semoule: "240 g", poischiches: "240 g", carotte: "200 g", patatedouce: "240 g", raisinssecs: "60 g", amandes: "40 g", cumin: "4 g", huileolive: "32 ml" },
+      { nb: 5, semoule: "300 g", poischiches: "300 g", carotte: "250 g", patatedouce: "300 g", raisinssecs: "75 g", amandes: "50 g", cumin: "5 g", huileolive: "40 ml" },
+      { nb: 6, semoule: "360 g", poischiches: "360 g", carotte: "300 g", patatedouce: "360 g", raisinssecs: "90 g", amandes: "60 g", cumin: "6 g", huileolive: "48 ml" },
+      { nb: 7, semoule: "420 g", poischiches: "420 g", carotte: "350 g", patatedouce: "420 g", raisinssecs: "105 g", amandes: "70 g", cumin: "7 g", huileolive: "56 ml" },
+      { nb: 8, semoule: "480 g", poischiches: "480 g", carotte: "400 g", patatedouce: "480 g", raisinssecs: "120 g", amandes: "80 g", cumin: "8 g", huileolive: "64 ml" },
+      { nb: 9, semoule: "540 g", poischiches: "540 g", carotte: "450 g", patatedouce: "540 g", raisinssecs: "135 g", amandes: "90 g", cumin: "9 g", huileolive: "72 ml" },
+      { nb: 10, semoule: "600 g", poischiches: "600 g", carotte: "500 g", patatedouce: "600 g", raisinssecs: "150 g", amandes: "100 g", cumin: "10 g", huileolive: "80 ml" },
+      { nb: 11, semoule: "660 g", poischiches: "660 g", carotte: "550 g", patatedouce: "660 g", raisinssecs: "165 g", amandes: "110 g", cumin: "11 g", huileolive: "88 ml" },
+      { nb: 12, semoule: "720 g", poischiches: "720 g", carotte: "600 g", patatedouce: "720 g", raisinssecs: "180 g", amandes: "120 g", cumin: "12 g", huileolive: "96 ml" },
+      { nb: 13, semoule: "780 g", poischiches: "780 g", carotte: "650 g", patatedouce: "780 g", raisinssecs: "195 g", amandes: "130 g", cumin: "13 g", huileolive: "104 ml" },
+      { nb: 14, semoule: "840 g", poischiches: "840 g", carotte: "700 g", patatedouce: "840 g", raisinssecs: "210 g", amandes: "140 g", cumin: "14 g", huileolive: "112 ml" },
+      { nb: 15, semoule: "900 g", poischiches: "900 g", carotte: "750 g", patatedouce: "900 g", raisinssecs: "225 g", amandes: "150 g", cumin: "15 g", huileolive: "120 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "Rôtir", detail: "Rôtir patate douce et carotte au four avec le cumin et l'huile.", badge: "⏱ 20 min" },
+      { icone: "🌾", titre: "Semoule", detail: "Hydrater la semoule à l'eau bouillante salée puis l'égrainer.", badge: null },
+      { icone: "🥣", titre: "Assembler", detail: "Dresser semoule, pois chiches, légumes rôtis, raisins et amandes. ASTUCE CHEF : torréfie les amandes à sec 2 min avant — elles deviennent croquantes et bien plus parfumées.", badge: null }
+    ]
+  },
 });

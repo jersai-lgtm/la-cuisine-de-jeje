@@ -1704,4 +1704,38 @@ Object.assign(recettes, {
       { icone: "🍯", titre: "Servir", detail: "Arroser de miel mélangé à du beurre fondu, servir tiède.", badge: null }
     ]
   },
+  oeufsbrouilleshaddock: {
+    nom: "Œufs Brouillés au Haddock",
+    cat: "brunch",
+    pays: "royaume-uni",
+    dateAjout: "2026-06-23T13:00:00",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    description: "Le brunch écossais réconfortant : des œufs brouillés crémeux mêlés de haddock fumé effiloché, sur une tartine grillée. Iodé et fondant.",
+    tableauOeufsbrouilleshaddock: [
+      { nb: 1, oeufs: "2", haddock: "50 g", creme: "15 ml", beurre: "8 g", persil: "2 g", pain: "30 g" },
+      { nb: 2, oeufs: "4", haddock: "100 g", creme: "30 ml", beurre: "16 g", persil: "4 g", pain: "60 g" },
+      { nb: 3, oeufs: "6", haddock: "150 g", creme: "45 ml", beurre: "24 g", persil: "6 g", pain: "90 g" },
+      { nb: 4, oeufs: "8", haddock: "200 g", creme: "60 ml", beurre: "32 g", persil: "8 g", pain: "120 g" },
+      { nb: 5, oeufs: "10", haddock: "250 g", creme: "75 ml", beurre: "40 g", persil: "10 g", pain: "150 g" },
+      { nb: 6, oeufs: "12", haddock: "300 g", creme: "90 ml", beurre: "48 g", persil: "12 g", pain: "180 g" },
+      { nb: 7, oeufs: "14", haddock: "350 g", creme: "105 ml", beurre: "56 g", persil: "14 g", pain: "210 g" },
+      { nb: 8, oeufs: "16", haddock: "400 g", creme: "120 ml", beurre: "64 g", persil: "16 g", pain: "240 g" },
+      { nb: 9, oeufs: "18", haddock: "450 g", creme: "135 ml", beurre: "72 g", persil: "18 g", pain: "270 g" },
+      { nb: 10, oeufs: "20", haddock: "500 g", creme: "150 ml", beurre: "80 g", persil: "20 g", pain: "300 g" },
+      { nb: 11, oeufs: "22", haddock: "550 g", creme: "165 ml", beurre: "88 g", persil: "22 g", pain: "330 g" },
+      { nb: 12, oeufs: "24", haddock: "600 g", creme: "180 ml", beurre: "96 g", persil: "24 g", pain: "360 g" },
+      { nb: 13, oeufs: "26", haddock: "650 g", creme: "195 ml", beurre: "104 g", persil: "26 g", pain: "390 g" },
+      { nb: 14, oeufs: "28", haddock: "700 g", creme: "210 ml", beurre: "112 g", persil: "28 g", pain: "420 g" },
+      { nb: 15, oeufs: "30", haddock: "750 g", creme: "225 ml", beurre: "120 g", persil: "30 g", pain: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Haddock", detail: "Pocher rapidement le haddock dans un peu de lait, puis l'effilocher.", badge: "⏱ 5 min" },
+      { icone: "🥚", titre: "Brouiller", detail: "Brouiller les œufs avec la crème à feu doux. ASTUCE CHEF : feu très doux et retire la poêle du feu avant la fin — les œufs finissent de cuire sur leur chaleur et restent baveux, pas secs.", badge: "⏱ 4 min" },
+      { icone: "🍞", titre: "Servir", detail: "Incorporer le haddock, servir sur une tartine grillée avec du persil.", badge: null }
+    ]
+  },
 });

@@ -2279,4 +2279,39 @@ tapenade: {
       { icone: "🌶️", titre: "Relever", detail: "Ajouter oignon rouge, coriandre, citron vert, piment et sel. ASTUCE CHEF : presse le citron vert généreusement dès le début — l'acide empêche l'avocat de noircir et garde le guacamole bien vert.", badge: null }
     ]
   },
+  fritesceleri: {
+    nom: "Frites de Céleri au Raifort",
+    cat: "aperitifs",
+    pays: "france",
+    dateAjout: "2026-06-23T13:00:00",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🌿",
+    description: "Des frites de céleri-rave rôties au four, croustillantes dehors et fondantes dedans, servies avec une sauce yaourt au raifort piquante. L'apéro malin et léger.",
+    tableauFritesceleri: [
+      { nb: 1, celeri: "150 g", raifort: "5 g", huileolive: "10 ml", paprika: "1 g", sel: "1 g", yaourt: "30 g" },
+      { nb: 2, celeri: "300 g", raifort: "10 g", huileolive: "20 ml", paprika: "2 g", sel: "2 g", yaourt: "60 g" },
+      { nb: 3, celeri: "450 g", raifort: "15 g", huileolive: "30 ml", paprika: "3 g", sel: "3 g", yaourt: "90 g" },
+      { nb: 4, celeri: "600 g", raifort: "20 g", huileolive: "40 ml", paprika: "4 g", sel: "4 g", yaourt: "120 g" },
+      { nb: 5, celeri: "750 g", raifort: "25 g", huileolive: "50 ml", paprika: "5 g", sel: "5 g", yaourt: "150 g" },
+      { nb: 6, celeri: "900 g", raifort: "30 g", huileolive: "60 ml", paprika: "6 g", sel: "6 g", yaourt: "180 g" },
+      { nb: 7, celeri: "1050 g", raifort: "35 g", huileolive: "70 ml", paprika: "7 g", sel: "7 g", yaourt: "210 g" },
+      { nb: 8, celeri: "1200 g", raifort: "40 g", huileolive: "80 ml", paprika: "8 g", sel: "8 g", yaourt: "240 g" },
+      { nb: 9, celeri: "1350 g", raifort: "45 g", huileolive: "90 ml", paprika: "9 g", sel: "9 g", yaourt: "270 g" },
+      { nb: 10, celeri: "1500 g", raifort: "50 g", huileolive: "100 ml", paprika: "10 g", sel: "10 g", yaourt: "300 g" },
+      { nb: 11, celeri: "1650 g", raifort: "55 g", huileolive: "110 ml", paprika: "11 g", sel: "11 g", yaourt: "330 g" },
+      { nb: 12, celeri: "1800 g", raifort: "60 g", huileolive: "120 ml", paprika: "12 g", sel: "12 g", yaourt: "360 g" },
+      { nb: 13, celeri: "1950 g", raifort: "65 g", huileolive: "130 ml", paprika: "13 g", sel: "13 g", yaourt: "390 g" },
+      { nb: 14, celeri: "2100 g", raifort: "70 g", huileolive: "140 ml", paprika: "14 g", sel: "14 g", yaourt: "420 g" },
+      { nb: 15, celeri: "2250 g", raifort: "75 g", huileolive: "150 ml", paprika: "15 g", sel: "15 g", yaourt: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Tailler", detail: "Couper le céleri-rave en bâtonnets type frites.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Enrober d'huile et de paprika, rôtir au four jusqu'à doré et croustillant. ASTUCE CHEF : ne surcharge pas la plaque — des bâtonnets serrés cuisent à la vapeur et restent mous au lieu de croustiller.", badge: "⏱ 25 min" },
+      { icone: "🌶️", titre: "Sauce", detail: "Mélanger yaourt et raifort pour une sauce piquante.", badge: null },
+      { icone: "🧂", titre: "Servir", detail: "Saler les frites et servir avec la sauce.", badge: null }
+    ]
+  },
 });

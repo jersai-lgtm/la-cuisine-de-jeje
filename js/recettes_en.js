@@ -1,6 +1,94 @@
 // Généré par tools/traduire_batch.mjs — NE PAS éditer à la main.
 // Traductions EN des recettes : { cle: { nom, description, etapes:[{titre,detail}] } }
 window.RECETTES_EN = {
+ "pouletdukkah": {
+  "nom": "Dukkah Chicken & Vegetables",
+  "description": "Chicken coated in dukkah, the Egyptian blend of toasted nuts and spices, served with crisp vegetables. Crunchy, fragrant and full of zing."
+ },
+ "crumblelegumes": {
+  "nom": "Summer Vegetable Crumble",
+  "description": "A savory summer crumble: melting zucchini, eggplant, pepper and tomato under a parmesan crumble topping. Comforting yet light."
+ },
+ "bowlmarocain": {
+  "nom": "Moroccan Bowl",
+  "description": "A sunny bowl: semolina, chickpeas, roasted sweet potato and carrots, spiced with cumin and softened by raisins and almonds. Complete and fragrant."
+ },
+ "veloutethaicrevettes": {
+  "nom": "Thai Shrimp Velouté",
+  "description": "A velouté fragrant with coconut milk, lemongrass and ginger, topped with shrimp. Creamy, exotic and comforting like a tom kha."
+ },
+ "curryhaddock": {
+  "nom": "Smoked Haddock Curry",
+  "description": "A mild curry where smoked haddock melts into a spiced coconut milk, over rice and spinach. The smoky fish makes all the difference."
+ },
+ "pouletmielmangue": {
+  "nom": "Honey Chicken with Mango Sauce",
+  "description": "Honey-glazed chicken topped with a fruity, tangy mango sauce, over rice. An exotic, indulgent sweet-and-savory dish."
+ },
+ "orecchiettegrecque": {
+  "nom": "Greek-Style Orecchiette",
+  "description": "Orecchiette pasta with Greek flavors: feta, tomatoes, olives and zucchini, drizzled with olive oil and oregano. Mediterranean and comforting."
+ },
+ "currychoufleur": {
+  "nom": "Cauliflower Curry",
+  "description": "A generous vegetarian curry: cauliflower and chickpeas simmered in spiced coconut milk, over rice. Creamy, nourishing and budget-friendly."
+ },
+ "pennepestonoixfigues": {
+  "nom": "Penne with Walnut Pesto & Figs",
+  "description": "Penne coated in homemade walnut pesto, topped with roasted figs and arugula. Autumnal, original and deliciously creamy."
+ },
+ "tagliatelleslentillescorail": {
+  "nom": "Tagliatelle, Coral Lentils & Broccoli Cream",
+  "description": "Tagliatelle in a smooth broccoli cream, enriched with coral lentils for protein. Vegetarian, complete and all green."
+ },
+ "raviolescarottecumin": {
+  "nom": "Carrot-Cumin & Ricotta Ravioli",
+  "description": "Tender ravioli filled with ricotta and cumin-spiced carrot, finished with a brown butter. Delicate and comforting."
+ },
+ "currycarottesananas": {
+  "nom": "Carrot & Pineapple Curry",
+  "description": "A sweet-and-savory vegetarian curry: tender carrots and pineapple in spiced coconut milk, over rice. Original, mild and sunny."
+ },
+ "mijotepoischichesepinards": {
+  "nom": "Chickpea & Spinach Stew with Coconut Milk",
+  "description": "A comforting vegan stew: chickpeas and spinach in a cumin-spiced tomato-coconut milk. Creamy, nourishing and packed with plant protein."
+ },
+ "pouletthaicitronnelle": {
+  "nom": "Thai Lemongrass Chicken",
+  "description": "Chicken sautéed with lemongrass and coconut milk, lifted with lime and ginger, over rice. Fragrant, fresh and quick."
+ },
+ "saladelentillesbeluga": {
+  "nom": "Beluga Lentil & Apple Salad",
+  "description": "A hearty, crunchy salad: beluga lentils, tart apple, feta and red onion, all vinaigrette-dressed. Fresh and protein-rich."
+ },
+ "saladefourme": {
+  "nom": "Fourme d'Ambert, Walnut & Apple Salad",
+  "description": "An indulgent autumn salad: arugula, Fourme d'Ambert blue cheese, walnuts and apple, tied together with honey. The blue-and-sweet contrast is irresistible."
+ },
+ "gaspachomelonabricot": {
+  "nom": "Melon-Apricot Gazpacho",
+  "description": "A fruity, ice-cold gazpacho: ripe melon and apricot, a touch of cucumber and mint. The most refreshing starter for hot days."
+ },
+ "gaspachobetterave": {
+  "nom": "Beetroot & Coconut Gazpacho",
+  "description": "A vivid pink, original gazpacho: cooked beetroot blended with coconut milk, brightened with lemon and mint. Mild, earthy and spectacular."
+ },
+ "millefeuillebetterave": {
+  "nom": "Beetroot & Goat Cheese Millefeuille",
+  "description": "A chic, easy starter: beetroot discs layered with fresh goat cheese, walnuts and a drizzle of honey. Elegant, fresh and colorful."
+ },
+ "auberginesrotiesfeta": {
+  "nom": "Roasted Eggplant & Feta",
+  "description": "Eggplant roasted until meltingly tender, topped with crumbled feta, tomatoes and mint. A simple, sun-filled Mediterranean starter."
+ },
+ "oeufsbrouilleshaddock": {
+  "nom": "Scrambled Eggs with Smoked Haddock",
+  "description": "The comforting Scottish brunch: creamy scrambled eggs folded with flaked smoked haddock, on toast. Briny and melting."
+ },
+ "fritesceleri": {
+  "nom": "Celeriac Fries with Horseradish",
+  "description": "Oven-roasted celeriac fries, crisp outside and tender inside, served with a punchy horseradish-yogurt dip. The clever, light appetizer."
+ },
  "oeufsturque": {
   "nom": "Turkish Eggs (Çılbır)",
   "description": "The iconic Turkish breakfast: poached eggs over garlicky yogurt, drizzled with paprika butter, on a bed of spinach. Comforting yet surprisingly light."

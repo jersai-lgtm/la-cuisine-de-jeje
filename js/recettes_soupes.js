@@ -2825,4 +2825,39 @@ Object.assign(recettes, {
       { icone: "🍲", titre: "Servir", detail: "Servir le bouillon et le poisson, traditionnellement avec du pain.", badge: null }
     ]
   },
+  veloutethaicrevettes: {
+    nom: "Velouté Thaï aux Crevettes",
+    cat: "soupes",
+    pays: "thailande",
+    dateAjout: "2026-06-23T13:00:00",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "Un velouté parfumé au lait de coco, citronnelle et gingembre, garni de crevettes. Onctueux, exotique et réconfortant comme un tom kha.",
+    tableauVeloutethaicrevettes: [
+      { nb: 1, crevettes: "60 g", laitCoco: "60 ml", bouillon: "150 ml", citronnelle: "3 g", gingembre: "3 g", carotte: "40 g", citronvert: "5 ml", coriandre: "2 g" },
+      { nb: 2, crevettes: "120 g", laitCoco: "120 ml", bouillon: "300 ml", citronnelle: "6 g", gingembre: "6 g", carotte: "80 g", citronvert: "10 ml", coriandre: "4 g" },
+      { nb: 3, crevettes: "180 g", laitCoco: "180 ml", bouillon: "450 ml", citronnelle: "9 g", gingembre: "9 g", carotte: "120 g", citronvert: "15 ml", coriandre: "6 g" },
+      { nb: 4, crevettes: "240 g", laitCoco: "240 ml", bouillon: "600 ml", citronnelle: "12 g", gingembre: "12 g", carotte: "160 g", citronvert: "20 ml", coriandre: "8 g" },
+      { nb: 5, crevettes: "300 g", laitCoco: "300 ml", bouillon: "750 ml", citronnelle: "15 g", gingembre: "15 g", carotte: "200 g", citronvert: "25 ml", coriandre: "10 g" },
+      { nb: 6, crevettes: "360 g", laitCoco: "360 ml", bouillon: "900 ml", citronnelle: "18 g", gingembre: "18 g", carotte: "240 g", citronvert: "30 ml", coriandre: "12 g" },
+      { nb: 7, crevettes: "420 g", laitCoco: "420 ml", bouillon: "1050 ml", citronnelle: "21 g", gingembre: "21 g", carotte: "280 g", citronvert: "35 ml", coriandre: "14 g" },
+      { nb: 8, crevettes: "480 g", laitCoco: "480 ml", bouillon: "1200 ml", citronnelle: "24 g", gingembre: "24 g", carotte: "320 g", citronvert: "40 ml", coriandre: "16 g" },
+      { nb: 9, crevettes: "540 g", laitCoco: "540 ml", bouillon: "1350 ml", citronnelle: "27 g", gingembre: "27 g", carotte: "360 g", citronvert: "45 ml", coriandre: "18 g" },
+      { nb: 10, crevettes: "600 g", laitCoco: "600 ml", bouillon: "1500 ml", citronnelle: "30 g", gingembre: "30 g", carotte: "400 g", citronvert: "50 ml", coriandre: "20 g" },
+      { nb: 11, crevettes: "660 g", laitCoco: "660 ml", bouillon: "1650 ml", citronnelle: "33 g", gingembre: "33 g", carotte: "440 g", citronvert: "55 ml", coriandre: "22 g" },
+      { nb: 12, crevettes: "720 g", laitCoco: "720 ml", bouillon: "1800 ml", citronnelle: "36 g", gingembre: "36 g", carotte: "480 g", citronvert: "60 ml", coriandre: "24 g" },
+      { nb: 13, crevettes: "780 g", laitCoco: "780 ml", bouillon: "1950 ml", citronnelle: "39 g", gingembre: "39 g", carotte: "520 g", citronvert: "65 ml", coriandre: "26 g" },
+      { nb: 14, crevettes: "840 g", laitCoco: "840 ml", bouillon: "2100 ml", citronnelle: "42 g", gingembre: "42 g", carotte: "560 g", citronvert: "70 ml", coriandre: "28 g" },
+      { nb: 15, crevettes: "900 g", laitCoco: "900 ml", bouillon: "2250 ml", citronnelle: "45 g", gingembre: "45 g", carotte: "600 g", citronvert: "75 ml", coriandre: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Infuser", detail: "Faire infuser citronnelle et gingembre dans le bouillon chaud.", badge: "⏱ 8 min" },
+      { icone: "🥥", titre: "Lier", detail: "Ajouter le lait de coco et la carotte, mixer en velouté lisse.", badge: null },
+      { icone: "🦐", titre: "Crevettes", detail: "Pocher les crevettes dans le velouté quelques minutes. ASTUCE CHEF : ne fais pas bouillir le lait de coco — à gros bouillons il tranche ; un frémissement suffit.", badge: "⏱ 4 min" },
+      { icone: "🍋", titre: "Finir", detail: "Réveiller au citron vert et parsemer de coriandre.", badge: null }
+    ]
+  },
 });
