@@ -1455,6 +1455,10 @@ select, input[type="number"] {
 .profil-tab-btn { flex: 1; padding: 8px 4px; border: 1px solid rgba(var(--w),.1); background: rgba(var(--w),.05); color: var(--text-3); border-radius: 10px; font-size: 12px; font-weight: 600; cursor: pointer; transition: .2s; }
 .profil-tab-btn.active { border-color: var(--accent-soft,#ff8fb3); color: var(--accent-soft,#ff8fb3); background: rgba(var(--accent-rgb),.15); }
 .profil-tab-content { min-height: 200px; }
+.btn-notifs-profil { width: 100%; margin-top: 18px; background: rgba(var(--accent-rgb),.12); color: var(--accent); border: 1px solid rgba(var(--accent-rgb),.4); border-radius: 12px; padding: 12px; font-size: 14px; font-weight: 700; cursor: pointer; transition: .2s; }
+.btn-notifs-profil:hover { background: rgba(var(--accent-rgb),.2); }
+.btn-notifs-profil:disabled { opacity: .55; cursor: default; }
+.notifs-profil-aide { margin: 7px 2px 0; font-size: 12.5px; line-height: 1.4; color: var(--text-3); }
 .profil-footer { display: flex; gap: 10px; margin-top: 20px; }
 .btn-deconnexion { flex: 1; background: rgba(var(--w),.06); color: var(--text-3); border: 1px solid rgba(var(--w),.1); border-radius: 12px; padding: 12px; font-size: 14px; cursor: pointer; transition: .2s; }
 .btn-deconnexion:hover { background: rgba(255,50,50,.15); color: #ff6b6b; border-color: rgba(255,50,50,.3); }

@@ -68,6 +68,54 @@
     } catch (e) {}
   };
 
+  // --- Réglage notifs dans le profil (toujours accessible) -------------------
+  // Permet de (ré)activer ou désactiver les notifs à tout moment — utile si on
+  // les a refusées/supprimées (la bannière, elle, ne réapparaît plus).
+  window.gererNotifsProfil = async function () {
+    if (!supporte()) { toast("Notifications non supportées sur cet appareil.", "Notifications aren't supported on this device."); return; }
+    if (Notification.permission === "denied") {
+      // Bloquées au niveau du navigateur/téléphone → l'appli ne peut PAS réautoriser seule.
+      toast("🔕 Notifs bloquées dans les réglages du téléphone — réautorise-les là-bas, puis reviens.",
+            "🔕 Notifications are blocked in your phone settings — re-allow them there, then come back.");
+      window.majBoutonNotifs();
+      return;
+    }
+    const r = await reg();
+    const sub = r && await r.pushManager.getSubscription();
+    if (sub && Notification.permission === "granted") {
+      await window.desactiverNotifs();
+    } else {
+      try { localStorage.removeItem(LS_OFF); } catch (e) {}
+      await window.activerNotifs();
+    }
+    setTimeout(function () { try { window.majBoutonNotifs(); } catch (e) {} }, 400);
+  };
+
+  // Met à jour le libellé + l'aide du bouton selon l'état réel.
+  window.majBoutonNotifs = async function () {
+    const btn = document.getElementById("btn-notifs-profil");
+    const aide = document.getElementById("notifs-profil-aide");
+    if (!btn) return;
+    btn.disabled = false;
+    if (!supporte()) { btn.textContent = EN() ? "🔔 Notifications unsupported" : "🔔 Notifications non supportées"; btn.disabled = true; if (aide) aide.textContent = ""; return; }
+    if (Notification.permission === "denied") {
+      btn.textContent = EN() ? "🔔 Notifications blocked — re-enable" : "🔔 Notifs bloquées — réactiver";
+      if (aide) aide.innerHTML = EN()
+        ? "They're blocked in your phone settings. Open <b>Settings → Notifications → La Cuisine de Jéjé</b> (or the site settings in your browser) to allow them, then come back."
+        : "Elles sont bloquées dans les réglages du téléphone. Va dans <b>Réglages → Notifications → La Cuisine de Jéjé</b> (ou les réglages du site dans le navigateur) pour les réautoriser, puis reviens ici.";
+      return;
+    }
+    let sub = null;
+    try { const r = await reg(); sub = r && await r.pushManager.getSubscription(); } catch (e) {}
+    if (sub && Notification.permission === "granted") {
+      btn.textContent = EN() ? "🔕 Turn off notifications" : "🔕 Désactiver les notifications";
+      if (aide) aide.textContent = EN() ? "You get the recipe of the day every day. 🔔" : "Tu reçois la recette du jour chaque jour. 🔔";
+    } else {
+      btn.textContent = EN() ? "🔔 Enable notifications" : "🔔 Activer les notifications";
+      if (aide) aide.textContent = EN() ? "Get the recipe of the day, every day on your phone." : "Reçois la recette du jour chaque jour sur ton téléphone.";
+    }
+  };
+
   // Si déjà abonné, on rafraîchit le drapeau « liste non vide » à chaque visite.
   async function rafraichirFlag() {
     try {
@@ -160,6 +208,16 @@
     ecouterSW();
     rafraichirFlag();
     if (peutProposer()) setTimeout(banniere, 6000); // après 6 s, sans gêner
+    // Met à jour l'état du bouton notifs à chaque ouverture du profil.
+    if (typeof window.ouvrirModalProfil === "function" && !window.ouvrirModalProfil._notif) {
+      const orig = window.ouvrirModalProfil;
+      window.ouvrirModalProfil = function () {
+        const res = orig.apply(this, arguments);
+        setTimeout(function () { try { window.majBoutonNotifs(); } catch (e) {} }, 120);
+        return res;
+      };
+      window.ouvrirModalProfil._notif = true;
+    }
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => setTimeout(demarrer, 0));
