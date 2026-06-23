@@ -934,6 +934,19 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   // Pool global mélangé
   const melange = shuffleArray([...pool]);
   const utilises = new Set();
+
+  // 🍗 Variété des protéines : pas 2× la même protéine d'affilée + plafond hebdo.
+  const compteProt = {}; let lastProt = null;
+  const CAP = { volaille: 3, boeuf: 3, porc: 3, poisson: 4, agneau: 2, oeuf: 2 };
+  const protDe = (k) => (typeof proteineFamille === "function") ? proteineFamille(k) : null;
+  const protOK = (k) => {
+    const p = protDe(k);
+    if (!p) return true;                                          // neutre / végé → toujours ok
+    if (p === lastProt) return false;                             // pas 2× la même d'affilée
+    if (CAP[p] && (compteProt[p] || 0) >= CAP[p]) return false;   // plafond hebdomadaire
+    return true;
+  };
+  const noterProt = (k) => { const p = protDe(k); lastProt = p; if (p) compteProt[p] = (compteProt[p] || 0) + 1; };
   
   // Alterner les cuisines
   let cuisineIdx = { francaise:0, italienne:0, asiatique:0, mondiale:0 };
@@ -941,19 +954,20 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   let cuisineCount = 0;
   
   const pick = () => {
-    // Essayer d'alterner les cuisines
+    let r;
+    // Essayer d'alterner les cuisines, en privilégiant une protéine variée
     if (cuisineCount < cuisineOrder.length) {
       const cuisine = cuisineOrder[cuisineCount];
       cuisineCount++;
       const arr = cuisines[cuisine];
       if (arr) {
-        const r = arr.find(k => !utilises.has(k));
-        if (r) { utilises.add(r); return r; }
+        r = arr.find(k => !utilises.has(k) && protOK(k)) || arr.find(k => !utilises.has(k));
+        if (r) { utilises.add(r); noterProt(r); return r; }
       }
     }
-    // Fallback : pool global
-    const r = melange.find(k => !utilises.has(k));
-    if (r) utilises.add(r);
+    // Fallback : pool global — protéine variée d'abord, sinon n'importe quelle dispo
+    r = melange.find(k => !utilises.has(k) && protOK(k)) || melange.find(k => !utilises.has(k));
+    if (r) { utilises.add(r); noterProt(r); }
     return r || melange[0] || "risotto";
   };
 

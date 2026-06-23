@@ -707,6 +707,22 @@ function moisFetes() {
   return new Date().getMonth() === 11; // 11 = décembre
 }
 
+// 🍗 Famille de protéine dominante d'un plat (pour varier les menus).
+// Renvoie volaille / boeuf / porc / agneau / poisson / oeuf / vegetarien, ou null (neutre).
+function proteineFamille(key) {
+  const r = recettes[key];
+  if (!r) return null;
+  const t = (r.nom + " " + (r.description || "")).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  if (/\b(poisson|saumon|thon|cabillaud|morue|colin|lieu|dorade|bar |truite|maquereau|sardine|fish|crevette|gambas|moule|calmar|calamar|poulpe|fruits de mer|saint.?jacques|ceviche|sushi|poke|tartare de thon|tartare de saumon|anchois)\b/.test(t)) return "poisson";
+  if (/\b(poulet|volaille|dinde|chapon|canard|magret|pintade|\bcoq\b|escalope de poulet|chicken|tandoori|yassa|teriyaki|nuggets|tikka|karaage|wings|aile de poulet)\b/.test(t)) return "volaille";
+  if (/\b(porc|jambon|lardon|saucisse|chorizo|bacon|echine|travers|ribs|pulled pork|choucroute|cochon|porchetta|saucisson|salsiccia|mortadelle)\b/.test(t)) return "porc";
+  if (/\b(agneau|mouton|gigot|navarin|souvlaki|merguez|kefta|kofte|tajine d.?agneau)\b/.test(t)) return "agneau";
+  if (/\b(boeuf|bœuf|steak|bourguignon|bavette|entrecote|tartare de boeuf|hachis|bolognaise|stroganov|rendang|ropa vieja|picadillo|carne|burger|wagyu|cheeseburger|rosbif|pot.?au.?feu|daube)\b/.test(t)) return "boeuf";
+  if (/\b(oeuf|omelette|shakshuka|frittata|quiche|brouillade)\b/.test(t)) return "oeuf";
+  if (/\b(vegetarien|vegan|falafel|houmous|dahl|dal |lentille|pois chiche|tofu|tempeh|seitan|legumineuse|veggie)\b/.test(t)) return "vegetarien";
+  return null;
+}
+
 // Recette ajoutée il y a ≤ 7 jours (réutilise dateAjout) → badge 🆕 app-wide
 function estNouveaute(key) {
   const d = recettes?.[key]?.dateAjout;
