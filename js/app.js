@@ -694,6 +694,19 @@ function estHorsSaison(key) {
   return sa ? !s.includes(sa) : false;
 }
 
+// 🎄 Plat « de fêtes » (Noël/réveillon) — détecté via mots-clés sans ambiguïté.
+// Sert à NE PAS proposer ces plats dans les menus hors période des fêtes.
+function estPlatFetes(key) {
+  const r = recettes[key];
+  if (!r) return false;
+  const t = (r.nom + " " + (r.description || "")).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  return /\b(noel|reveillon|buche|chapon|foie ?gras|huitres?|dinde)\b/.test(t);
+}
+// Vrai uniquement pendant la période des fêtes (décembre) → on tolère alors ces plats.
+function moisFetes() {
+  return new Date().getMonth() === 11; // 11 = décembre
+}
+
 // Recette ajoutée il y a ≤ 7 jours (réutilise dateAjout) → badge 🆕 app-wide
 function estNouveaute(key) {
   const d = recettes?.[key]?.dateAjout;

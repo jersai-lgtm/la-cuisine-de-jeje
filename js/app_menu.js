@@ -880,11 +880,14 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   ]);
 
   // Filtrer les recettes compatibles
+  const periodeFetes = (typeof moisFetes === "function") && moisFetes();
   let pool = Object.keys(recettes).filter(key => {
     // Exclure les non-repas (boulangerie/desserts/cocktails/brunch) — liste fiable
     if (RECETTES_NON_REPAS.has(key)) return false;
     // Sécurité supplémentaire via la catégorie (depuis la donnée, pas le DOM)
     if (catsExclues.has(categorieRecette(key))) return false;
+    // 🎄 Pas de plats de fêtes (dinde de Noël, chapon, foie gras…) hors décembre
+    if (!periodeFetes && typeof estPlatFetes === "function" && estPlatFetes(key)) return false;
     if (motsInterdits.size === 0) return true;
     const texte = texteRecette(key);
     return ![...motsInterdits].some(m => texte.includes(m));
@@ -1759,10 +1762,13 @@ function nettoyerMenu(menus) {
   if (!menus || !menus.semaine || typeof recettes === "undefined") return menus;
   const nonRepas = new Set(["sauces", "tartinables", "cocktails", "mocktails", "aperitifs", "boulangerie"]);
   const horsSaison = (k) => (typeof estHorsSaison === "function") ? estHorsSaison(k) : false;
+  const periodeFetes = (typeof moisFetes === "function") && moisFetes();
+  const platFetes = (k) => !periodeFetes && (typeof estPlatFetes === "function") && estPlatFetes(k);
   const nonRepasListe = (typeof RECETTES_NON_REPAS !== "undefined") ? RECETTES_NON_REPAS : new Set();
   const valide = (cle, role) => {
     const r = recettes[cle];
     if (!r) return false;
+    if (platFetes(cle)) return false; // 🎄 pas de plats de fêtes hors décembre
     if (role === "dessert") return r.cat === "desserts" && !horsSaison(cle);
     if (nonRepas.has(r.cat)) return false;
     if (nonRepasListe.has && nonRepasListe.has(cle)) return false;
