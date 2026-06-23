@@ -901,11 +901,19 @@ function validerRegimeMenus(menus, regimes, allergies) {
 
   if (motsInterdits.size === 0) return menus;
 
-  // Tester une recette
-  function recetteCompatible(key) {
+  const horsSaison = (k) => (typeof estHorsSaison === "function") ? estHorsSaison(k) : false;
+  const periodeFetes = (typeof moisFetes === "function") && moisFetes();
+  const platFetes = (k) => !periodeFetes && (typeof estPlatFetes === "function") && estPlatFetes(k);
+
+  // Une recette est-elle compatible (régime + saison + pas de fête + bon rôle) ?
+  function recetteCompatible(key, role) {
     if (!key) return false;
     const r = recettes[key];
-    if (!r) return false; // clé inconnue = invalide
+    if (!r) return false;                                   // clé inconnue
+    if (platFetes(key)) return false;                       // 🎄 pas de plat de fête hors décembre
+    if (horsSaison(key)) return false;                      // 🗓️ pas de hors-saison
+    if (role === "dessert") { if (r.cat !== "desserts") return false; }
+    else if (r.cat === "desserts") return false;            // un dessert ne va pas en entrée/plat
     let texte = (key + " " + (r.description || "")).toLowerCase();
     Object.keys(r).forEach(k => {
       if (k.startsWith("tableau") && Array.isArray(r[k]) && r[k].length > 0) {
@@ -915,32 +923,44 @@ function validerRegimeMenus(menus, regimes, allergies) {
     return ![...motsInterdits].some(m => texte.includes(m));
   }
 
-  // Pool de recettes valides non utilisées
+  // Pools valides MÉLANGÉS (pas l'ordre du catalogue → varie à chaque génération).
+  const poolPlat = shuffleArray(Object.keys(recettes).filter(k => recetteCompatible(k, "plat")));
+  const poolDes  = shuffleArray(Object.keys(recettes).filter(k => recetteCompatible(k, "dessert")));
+
+  // Clés déjà présentes (tous formats) pour éviter les doublons.
   const utilisees = new Set();
-  menus.semaine.forEach(j => {
-    if (j.midi?.recette) utilisees.add(j.midi.recette);
-    if (j.soir?.recette) utilisees.add(j.soir.recette);
-  });
+  const collecter = (s) => {
+    if (!s) return;
+    if (s.recette) utilisees.add(s.recette);
+    ["entree", "plat", "dessert"].forEach(p => { if (s[p] && s[p].recette) utilisees.add(s[p].recette); });
+  };
+  menus.semaine.forEach(j => { collecter(j.midi); collecter(j.soir); });
 
-  const recettesValides = Object.keys(recettes).filter(k => recetteCompatible(k));
+  // Corrige une référence {recette,note} si incompatible.
+  const corriger = (obj, role) => {
+    if (!obj) return;
+    if (recetteCompatible(obj.recette, role)) return;
+    const pool = role === "dessert" ? poolDes : poolPlat;
+    const alt = pool.find(k => !utilisees.has(k));
+    if (alt) {
+      if (obj.recette) utilisees.delete(obj.recette);
+      utilisees.add(alt);
+      obj.recette = alt;
+      obj.note = "✅ Adapté à votre régime";
+    }
+  };
 
-  // Remplacer toute recette incompatible OU inconnue
   menus.semaine.forEach(jour => {
     ["midi", "soir"].forEach(moment => {
-      const repas = jour[moment];
-      if (!repas) return;
-      const key = repas.recette;
-
-      if (!recetteCompatible(key)) {
-        // Trouver alternative valide non encore utilisée
-        const alt = recettesValides.find(k => !utilisees.has(k));
-        if (alt) {
-          console.log(`[Régime] ${key} → remplacé par ${alt}`);
-          utilisees.delete(key);
-          utilisees.add(alt);
-          repas.recette = alt;
-          repas.note = "✅ Adapté à votre régime";
-        }
+      const s = jour[moment];
+      if (!s) return;
+      // Format complet (entrée/plat/dessert) vs simple ({recette}).
+      if (s.entree || s.plat || s.dessert) {
+        corriger(s.entree, "entree");
+        corriger(s.plat, "plat");
+        corriger(s.dessert, "dessert");
+      } else {
+        corriger(s, "plat");
       }
     });
   });
