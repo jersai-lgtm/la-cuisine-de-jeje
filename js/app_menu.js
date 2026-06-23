@@ -705,22 +705,26 @@ function _saisonCouranteLabel() {
 
 // Valide la réponse JSON de l'IA : chaque clé doit exister dans la shortlist.
 // Les clés inconnues sont retirées (slot → null). Renvoie null si trop d'invalides.
-function _parserMenusIA(txt, clesValides) {
+function _parserMenusIA(txt, clesValides, isComplet) {
   if (!txt) return null;
   let obj;
   try { const m = txt.match(/\{[\s\S]*\}/); obj = JSON.parse(m ? m[0] : txt); } catch (e) { return null; }
   if (!obj || !Array.isArray(obj.semaine) || !obj.semaine.length) return null;
-  let total = 0, ok = 0;
+  let total = 0, ok = 0, slotsComplets = 0, slotsSimples = 0;
   const checkSlot = (s) => {
     if (!s || typeof s !== "object") return;
+    let aComplet = false;
     ["entree", "plat", "dessert"].forEach((part) => {
-      if (s[part] && s[part].recette) { total++; if (clesValides.has(s[part].recette)) ok++; else s[part] = null; }
+      if (s[part] && s[part].recette) { aComplet = true; total++; if (clesValides.has(s[part].recette)) ok++; else s[part] = null; }
     });
-    if (s.recette) { total++; if (clesValides.has(s.recette)) ok++; else return true; }
+    if (aComplet) slotsComplets++;
+    if (s.recette) { slotsSimples++; total++; if (clesValides.has(s.recette)) ok++; else return true; }
     return false;
   };
   obj.semaine.forEach((j) => { ["midi", "soir"].forEach((m) => { if (checkSlot(j[m]) === true) j[m] = null; }); });
   if (total === 0 || ok < total * 0.5) return null; // trop d'invalides → on jette, repli déterministe
+  // Format complet demandé mais l'IA a renvoyé du simple (juste les plats) → on rejette → repli déterministe complet.
+  if (isComplet && slotsComplets < slotsSimples) return null;
   return obj;
 }
 
@@ -808,7 +812,7 @@ async function genererMenusIA() {
     if (!resp.ok) throw 0;
     const data = await resp.json();
     const txt = (data && data.content && data.content[0] && data.content[0].text) || data.text || "";
-    menus = _parserMenusIA(txt, clesValides);
+    menus = _parserMenusIA(txt, clesValides, isComplet);
   } catch (e) { menus = null; }
   if (btn) { btn.textContent = old; btn.disabled = false; }
 
@@ -1927,6 +1931,7 @@ function nettoyerMenu(menus) {
     if (!r) return false;
     if (platFetes(cle)) return false; // 🎄 pas de plats de fêtes hors décembre
     if (role === "dessert") return r.cat === "desserts" && !horsSaison(cle);
+    if (r.cat === "desserts") return false; // un dessert ne remplace jamais une entrée/un plat
     if (nonRepas.has(r.cat)) return false;
     if (nonRepasListe.has && nonRepasListe.has(cle)) return false;
     if (horsSaison(cle)) return false;
