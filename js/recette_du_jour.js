@@ -58,7 +58,7 @@
     s.textContent = `
       #accueil-dujour-bloc .dujour-hero{cursor:pointer;position:relative;border-radius:16px;overflow:hidden;
         box-shadow:0 6px 22px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.08)}
-      #accueil-dujour-bloc .dujour-hero img{width:100%;height:200px;object-fit:cover;display:block;
+      #accueil-dujour-bloc .dujour-hero img{width:100%;height:auto;object-fit:contain;display:block;
         transition:transform .4s ease}
       #accueil-dujour-bloc .dujour-hero:hover img{transform:scale(1.04)}
       #accueil-dujour-bloc .dujour-grad{position:absolute;inset:0;
@@ -68,7 +68,6 @@
         text-shadow:0 2px 6px rgba(0,0,0,.6);display:block}
       #accueil-dujour-bloc .dujour-meta{font-size:13px;opacity:.95;margin-top:4px;
         text-shadow:0 1px 4px rgba(0,0,0,.6)}
-      @media(min-width:560px){#accueil-dujour-bloc .dujour-hero img{height:260px}}
     `;
     document.head.appendChild(s);
   }
