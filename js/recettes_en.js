@@ -1,6 +1,82 @@
 // Généré par tools/traduire_batch.mjs — NE PAS éditer à la main.
 // Traductions EN des recettes : { cle: { nom, description, etapes:[{titre,detail}] } }
 window.RECETTES_EN = {
+ "verrineconcombrechevre": {
+  "nom": "Cucumber & Fresh Goat Cheese Verrine",
+  "description": "A fresh, creamy aperitif verrine: a minty fresh-goat-cheese mousse topped with crunchy cucumber. Light, elegant and ready in 15 minutes."
+ },
+ "soupefroidemelon": {
+  "nom": "Chilled Melon Soup",
+  "description": "A refreshing sweet-savory starter: ripe melon blended, brightened with mint and lemon, topped with a little cured ham. Elegant and summery."
+ },
+ "gaspachopasteque": {
+  "nom": "Watermelon Gazpacho",
+  "description": "A vivid red, thirst-quenching gazpacho: watermelon and tomato blended with cucumber, pepper and basil. Spanish freshness with a fruity twist."
+ },
+ "carpacciocourgette": {
+  "nom": "Zucchini Carpaccio",
+  "description": "A light raw starter: thin slices of raw zucchini marinated in lemon, scattered with parmesan and pine nuts. Crunchy, fresh and elegant."
+ },
+ "carpacciomelon": {
+  "nom": "Melon & Prosciutto Carpaccio",
+  "description": "Melon and ham reimagined as carpaccio: thin slices of melon and prosciutto, arugula and parmesan, a drizzle of oil. Sweet-savory, fresh and chic."
+ },
+ "carpacciotomate": {
+  "nom": "Tomato Carpaccio",
+  "description": "Summer's perfect simplicity: lovely thinly sliced tomatoes, basil, red onion and a good drizzle of olive oil. It all rests on the quality of the tomato."
+ },
+ "tartaretomate": {
+  "nom": "Tomato & Avocado Tartare",
+  "description": "A fresh, colorful plant-based tartare: knife-cut tomatoes and avocado, seasoned with red onion, basil and lemon. Light, pretty to plate and full of zing."
+ },
+ "tartaredorade": {
+  "nom": "Sea Bream Tartare",
+  "description": "An ultra-fresh raw fish tartare: knife-cut sea bream, lime, avocado and coriander. Briny, melting and refined, perfect for a summer starter."
+ },
+ "tiradito": {
+  "nom": "Peruvian Tiradito",
+  "description": "Peru's cousin of sashimi: thin slices of raw fish in a citrusy, spicy leche de tigre. Fresh, sharp and elegant, between ceviche and carpaccio."
+ },
+ "verrinemelonmozza": {
+  "nom": "Melon-Mozzarella Verrine",
+  "description": "A fresh aperitif verrine: melon balls, mozzarella and prosciutto, basil and olive oil. Sweet-savory, colorful and ready in 10 minutes."
+ },
+ "saladepastequeconcombre": {
+  "nom": "Watermelon, Cucumber & Feta Salad",
+  "description": "The hydrating salad: crisp watermelon and cucumber, feta and mint, a drizzle of oil and lemon. Sweet-savory, thirst-quenching and spectacularly colorful."
+ },
+ "saladeriznicoise": {
+  "nom": "Niçoise Rice Salad",
+  "description": "The niçoise in rice form, perfect for a picnic: rice, tuna, egg, tomatoes, olives and pepper, all vinaigrette-dressed. Complete, portable and sunny."
+ },
+ "mizeria": {
+  "nom": "Mizeria (Creamed Cucumber Salad)",
+  "description": "The Polish cucumber salad: thin cucumber slices in a tangy dill cream. Ultra-fresh and thirst-quenching, perfect with grilled food."
+ },
+ "patesfroidespesto": {
+  "nom": "Cold Pesto Pasta",
+  "description": "Summer's pasta salad: cold pasta coated in homemade pesto, cherry tomatoes and mozzarella. Fresh, indulgent and perfect for a picnic."
+ },
+ "sardinesgrillees": {
+  "nom": "Grilled Sardines",
+  "description": "The taste of summer by the sea: fresh sardines grilled, simply lemoned and garlicked. Simple, briny and cheap, perfect on the barbecue."
+ },
+ "courgettesgrillees": {
+  "nom": "Marinated Grilled Zucchini",
+  "description": "The quintessential summer antipasto: grilled zucchini marinated with garlic, mint and lemon. Tender, fragrant, even better made ahead."
+ },
+ "auberginesgrillees": {
+  "nom": "Marinated Grilled Eggplant",
+  "description": "Grilled eggplant slices marinated with garlic, parsley and lemon. Tender and fragrant, an irresistible summer antipasto for aperitif or as a side."
+ },
+ "poivronsmarines": {
+  "nom": "Marinated Peppers",
+  "description": "Peppers roasted, peeled and marinated with garlic and parsley in olive oil. Sweet, tender and fragrant, the summer antipasto that keeps and improves."
+ },
+ "houmouscourgette": {
+  "nom": "Zucchini Hummus",
+  "description": "A lighter, all-green summer hummus: zucchini replaces part of the chickpeas for a creamy, fresh tahini dip. Ideal with crudités."
+ },
  "phillycheesesteak": {
   "nom": "Philly Cheesesteak",
   "description": "Philadelphia's iconic sandwich: a roll filled with seared sliced beef, soft onions and peppers, smothered in melted cheddar. Generous and indulgent."

@@ -13330,4 +13330,39 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Cuire au four jusqu'à doré, frotter à l'ail et l'huile à la sortie.", badge: "⏱ 25 min" }
     ]
   },
+  sardinesgrillees: {
+    nom: "Sardines Grillées",
+    cat: "plats",
+    pays: "portugal",
+    dateAjout: "2026-06-24T10:00:00",
+    saisons: ["ete"],
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Le goût de l'été au bord de mer : des sardines fraîches grillées, juste citronnées et aillées. Simples, iodées et économiques, parfaites au barbecue.",
+    tableauSardinesgrillees: [
+      { nb: 1, sardine: "100 g", citron: "8 ml", huileolive: "10 ml", ail: "3 g", persil: "3 g" },
+      { nb: 2, sardine: "200 g", citron: "16 ml", huileolive: "20 ml", ail: "6 g", persil: "6 g" },
+      { nb: 3, sardine: "300 g", citron: "24 ml", huileolive: "30 ml", ail: "9 g", persil: "9 g" },
+      { nb: 4, sardine: "400 g", citron: "32 ml", huileolive: "40 ml", ail: "12 g", persil: "12 g" },
+      { nb: 5, sardine: "500 g", citron: "40 ml", huileolive: "50 ml", ail: "15 g", persil: "15 g" },
+      { nb: 6, sardine: "600 g", citron: "48 ml", huileolive: "60 ml", ail: "18 g", persil: "18 g" },
+      { nb: 7, sardine: "700 g", citron: "56 ml", huileolive: "70 ml", ail: "21 g", persil: "21 g" },
+      { nb: 8, sardine: "800 g", citron: "64 ml", huileolive: "80 ml", ail: "24 g", persil: "24 g" },
+      { nb: 9, sardine: "900 g", citron: "72 ml", huileolive: "90 ml", ail: "27 g", persil: "27 g" },
+      { nb: 10, sardine: "1000 g", citron: "80 ml", huileolive: "100 ml", ail: "30 g", persil: "30 g" },
+      { nb: 11, sardine: "1100 g", citron: "88 ml", huileolive: "110 ml", ail: "33 g", persil: "33 g" },
+      { nb: 12, sardine: "1200 g", citron: "96 ml", huileolive: "120 ml", ail: "36 g", persil: "36 g" },
+      { nb: 13, sardine: "1300 g", citron: "104 ml", huileolive: "130 ml", ail: "39 g", persil: "39 g" },
+      { nb: 14, sardine: "1400 g", citron: "112 ml", huileolive: "140 ml", ail: "42 g", persil: "42 g" },
+      { nb: 15, sardine: "1500 g", citron: "120 ml", huileolive: "150 ml", ail: "45 g", persil: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Préparer", detail: "Vider et écailler les sardines, les sécher.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller à feu vif quelques minutes par face. ASTUCE CHEF : huile la grille (pas le poisson) et ne retourne qu'une fois — la peau accroche moins et les sardines restent entières.", badge: "⏱ 6 min" },
+      { icone: "🍋", titre: "Finir", detail: "Arroser de citron, d'huile à l'ail et de persil.", badge: null }
+    ]
+  },
 });
