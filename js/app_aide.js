@@ -7,7 +7,7 @@
 
 const AIDE_TOUR = [
   { emoji: "👋", titre: "Bienvenue chez Jéjé !",
-    texte: "Plus de 1000 recettes du monde entier, des menus tout prêts et plein d'outils pour cuisiner sans prise de tête. On fait un tour rapide ? (Tu peux passer à tout moment.)" },
+    texte: "Plus de 1200 recettes du monde entier, des menus tout prêts et plein d'outils pour cuisiner sans prise de tête. On fait un tour rapide ? (Tu peux passer à tout moment.)" },
   { emoji: "🔍", titre: "Trouver & filtrer",
     texte: "Cherche par nom, ingrédient ou pays. Et affine d'un geste : filtres ⏱ rapide, 💰 éco, 🥗 Nutri A/B, ⭐ facile, 🌞 de saison, 🌱 végé/vegan — et tri par note, temps, coût ou calories. Tes filtres sont même mémorisés." },
   { emoji: "📐", titre: "Des quantités qui s'adaptent",
@@ -25,8 +25,8 @@ const AIDE_TOUR = [
 ];
 
 const AIDE_SECTIONS = [
-  { emoji: "🏠", titre: "Accueil & recherche",
-    texte: "L'accueil met en avant les dernières recettes, les suggestions du jour (de saison) et tes favoris. La barre de recherche trouve une recette par nom, par ingrédient (« courgette ») ou par pays. Les puces de catégories et de pays filtrent rapidement." },
+  { emoji: "🏠", titre: "Accueil & inspiration",
+    texte: "L'accueil met en avant la 🗓️ recette du jour (elle change chaque jour), les dernières recettes, les suggestions de saison — qui s'adaptent même à la météo : du frais quand il fait chaud ! 🥵 — et tes favoris. Deux boutons pour trouver l'idée : « 🍽️ Qu'est-ce qu'on mange ? » (fais défiler les plats — 👈 suivant, 👉 précédent, tape pour ouvrir la fiche) et « 🍳 De quoi t'as envie ? » (propose selon ton humeur, un quiz ou ton objectif calories). La recherche trouve par nom, ingrédient (« courgette ») ou pays." },
   { emoji: "⚙️", titre: "Filtres & tri",
     texte: "Dans les recettes, affine avec les filtres ⏱ rapide (≤ 30 min), 💰 éco, 🥗 Nutri A/B, ⭐ facile, 🌞 de saison, 🌱 végé et 🌿 vegan — ils se combinent entre eux et avec les catégories. Le menu « Trier » classe par note, temps, coût ou calories. Tes filtres sont mémorisés d'une visite à l'autre." },
   { emoji: "📖", titre: "Les fiches recettes",
@@ -34,11 +34,13 @@ const AIDE_SECTIONS = [
   { emoji: "❤️", titre: "Favoris & collections",
     texte: "Le cœur ajoute une recette à tes favoris. Dans l'onglet Favoris, range-les en collections (Noël, Healthy, Rapide…) pour t'y retrouver : barre 📚 Collections, bouton ➕ pour en créer et ⚙️ pour gérer leur contenu." },
   { emoji: "📅", titre: "Menus de la semaine",
-    texte: "L'onglet Menus génère un planning hebdo (repas simple = un plat, ou complet = entrée/plat/dessert), des menus festifs et thématiques, ou des lunch box. Chaque repas est régénérable individuellement, et tu peux envoyer un menu vers ta liste de courses." },
+    texte: "L'onglet Menus compose ton planning : « 🎲 Générer » (instantané) ou « ✨ Menu intelligent » (composé par l'IA à partir d'une liste pré-filtrée — connexion requise). Au choix repas simple (un plat) ou complet (entrée/plat/dessert). Les menus tiennent compte de la saison, varient les protéines et n'affichent pas de plats de fêtes hors période. Tu peux aussi faire des menus festifs, thématiques ou des lunch box. Chaque repas est régénérable, et le menu s'envoie vers ta liste de courses." },
   { emoji: "🛒", titre: "Garde-manger & liste de courses",
     texte: "Le garde-manger te laisse cuisiner avec ce que tu as (vide-frigo). La liste de courses se construit à partir des recettes choisies, par rayon, avec le temps total et un « plan de prep » qui regroupe les étapes par phase pour le batch cooking. Tu peux aussi ajouter tes propres articles (🧺 Mes articles : sopalin, couches, lessive…)." },
   { emoji: "👨‍👩‍👧‍👦", titre: "Profil & famille",
-    texte: "Dans le Profil, indique la composition de ton foyer et tes allergènes. L'appli adapte les portions par défaut et signale les plats déconseillés aux tout-petits avec des pastilles 🔴 (bébé) et 🟠 (enfant) — des repères visuels, jamais des blocages." },
+    texte: "Dans le Profil, indique la composition de ton foyer et tes allergènes : l'appli adapte les portions par défaut et signale les plats déconseillés aux tout-petits avec des pastilles 🔴 (bébé) et 🟠 (enfant) — des repères visuels, jamais des blocages. Tu y trouves aussi 🔔 Notifications (recevoir la recette du jour ; si le bouton indique « bloquées », réautorise-les dans les réglages du téléphone) et 🔄 Forcer la mise à jour (recharge la dernière version si l'appli semble figée)." },
+  { emoji: "🎨", titre: "Thème & langue",
+    texte: "En haut de l'écran, le bouton 🌙 bascule le thème : sombre, clair ou auto (qui suit ton téléphone). Le bouton EN/FR passe l'appli en anglais et inversement." },
   { emoji: "🤖", titre: "Assistant IA",
     texte: "Sur une recette, l'assistant culinaire répond à tes questions (substitution d'un ingrédient, adaptation, conseil de cuisson…) directement dans le contexte du plat." },
   { emoji: "📊", titre: "Mes stats",
