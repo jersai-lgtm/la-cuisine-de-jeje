@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v2.6.10";
+const CACHE_NAME = "cuisine-jeje-v2.7.1";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
@@ -238,9 +238,12 @@ function pushRecetteDuJour(idx) {
   const liste = pool.length ? pool : idx;
   const d = new Date();
   const j = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
-  let h = 0;
-  for (let i = 0; i < j.length; i++) h = (h * 31 + j.charCodeAt(i)) >>> 0;
-  return liste[h % liste.length];
+  // Tirage INDÉPENDANT du nombre de recettes (stable quand le catalogue grandit) :
+  // score hash(date + clé), on garde la plus haute — même algo que recette_du_jour.js.
+  const _h = (str) => { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0; return h; };
+  let best = liste[0], bestH = -1;
+  for (const r of liste) { const hh = _h(j + ":" + r.k); if (hh > bestH) { bestH = hh; best = r; } }
+  return best;
 }
 
 async function gererPush() {

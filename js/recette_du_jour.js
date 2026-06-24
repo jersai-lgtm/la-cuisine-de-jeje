@@ -43,12 +43,18 @@
       return true;
     };
     const deSaison = (k) => { const sa = recettes[k] && recettes[k].saisons; return !sa || !sa.length || sa.indexOf(s) > -1; };
-    let cles = Object.keys(recettes).filter((k) => eligible(k) && deSaison(k)).sort();
-    if (!cles.length) cles = Object.keys(recettes).filter(eligible).sort(); // repli : aucune de saison
+    let cles = Object.keys(recettes).filter((k) => eligible(k) && deSaison(k));
+    if (!cles.length) cles = Object.keys(recettes).filter(eligible); // repli : aucune de saison
     if (!cles.length) return null;
     const d = new Date();
     const jour = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
-    return cles[hash(jour) % cles.length];
+    // Tirage INDÉPENDANT du nombre de recettes : on score chaque recette par
+    // hash(date + clé) et on garde la plus haute. Ajouter des recettes ne change
+    // donc le résultat que si une nouvelle « gagne » ce jour-là (rare) → la
+    // recette du jour reste stable même quand le catalogue grandit (déploiements).
+    let best = null, bestH = -1;
+    for (const k of cles) { const h = hash(jour + ":" + k); if (h > bestH) { bestH = h; best = k; } }
+    return best;
   }
 
   function injecterStyle() {
