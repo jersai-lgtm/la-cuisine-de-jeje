@@ -1,6 +1,78 @@
 // Généré par tools/traduire_batch.mjs — NE PAS éditer à la main.
 // Traductions EN des recettes : { cle: { nom, description, etapes:[{titre,detail}] } }
 window.RECETTES_EN = {
+ "phillycheesesteak": {
+  "nom": "Philly Cheesesteak",
+  "description": "Philadelphia's iconic sandwich: a roll filled with seared sliced beef, soft onions and peppers, smothered in melted cheddar. Generous and indulgent."
+ },
+ "lobsterroll": {
+  "nom": "Lobster Roll",
+  "description": "New England's chic sandwich: lobster meat in a lemony mayonnaise, in a butter-toasted brioche roll. Briny, fresh and luxurious."
+ },
+ "poboy": {
+  "nom": "Shrimp Po'Boy",
+  "description": "Louisiana's sandwich: crispy breaded shrimp, lettuce and tomato in a soft roll with a zingy sauce. Crunchy, generous and full of cajun kick."
+ },
+ "sloppyjoe": {
+  "nom": "Sloppy Joe",
+  "description": "The American 'spoon burger': ground beef simmered in a sweet-spicy tomato sauce, served in a soft bun. Comforting, indulgent and gloriously messy."
+ },
+ "katiroll": {
+  "nom": "Chicken Kati Roll",
+  "description": "India's street wrap: an egg-coated flatbread filled with garam-masala-spiced chicken, onions and coriander. Fragrant, portable and addictive."
+ },
+ "baopouletcroustillant": {
+  "nom": "Crispy Chicken Bao Bun",
+  "description": "An ultra-soft steamed bao bun filled with crispy chicken, cucumber and a sweet-savory sauce. The cloud-meets-crunch contrast is irresistible."
+ },
+ "katsusando": {
+  "nom": "Pork Katsu Sando",
+  "description": "The cult Japanese sandwich: crispy breaded pork (tonkatsu) with sauce, between two slices of ultra-soft crustless white bread. Indulgent and perfect."
+ },
+ "onigirazu": {
+  "nom": "Onigirazu",
+  "description": "The Japanese 'onigiri sandwich': rice and a filling (tuna, avocado) wrapped in a nori sheet, pressed and halved. Pretty, portable and healthy."
+ },
+ "falafelwrap": {
+  "nom": "Falafel Wrap",
+  "description": "The Middle Eastern vegetarian wrap: crispy chickpea falafels, raw veggies and tahini sauce, rolled in pita bread. Fresh, complete and protein-rich."
+ },
+ "chimichanga": {
+  "nom": "Chimichanga",
+  "description": "The Tex-Mex fried burrito: a tortilla filled with chicken, red beans, rice and cheese, rolled then fried until crisp. Crunchy outside, melting inside."
+ },
+ "loadedfries": {
+  "nom": "Loaded Fries",
+  "description": "Street-food loaded fries: crispy homemade fries, melted cheddar, bacon bits and onion, topped with cream and chives. The ultimate indulgent appetizer."
+ },
+ "halloumifries": {
+  "nom": "Halloumi Fries",
+  "description": "Halloumi sticks, golden and crisp outside, melting inside, drizzled with honey and sesame. The crowd-pleasing vegetarian appetizer."
+ },
+ "bretzelgarni": {
+  "nom": "Homemade Pretzel & Cheddar Sauce",
+  "description": "The real homemade pretzel with its brown salted crust, soft inside, served with a melty cheddar dip. The convivial German appetizer."
+ },
+ "tornadopotato": {
+  "nom": "Tornado Potato",
+  "description": "The viral Korean spiral potato on a stick: cut accordion-style, roasted crisp and dusted with parmesan and paprika. Spectacular and addictive."
+ },
+ "salchipapas": {
+  "nom": "Salchipapas",
+  "description": "Peru's hugely popular street food: homemade fries and golden sausage slices, served with mayo and ketchup. Simple, generous and made for sharing."
+ },
+ "pavbhaji": {
+  "nom": "Pav Bhaji",
+  "description": "Mumbai's street food: a spiced mashed-vegetable curry (garam masala), served with butter-toasted soft rolls (pav). Comforting, fragrant and vegetarian."
+ },
+ "cachapa": {
+  "nom": "Cachapa",
+  "description": "The Venezuelan corn pancake: thick, golden and slightly sweet, folded over melting cheese. A comforting street food between a crepe and a pancake."
+ },
+ "soparnik": {
+  "nom": "Soparnik (Swiss Chard Pie)",
+  "description": "The Croatian pie from the Dalmatian coast: thin dough filled with chard, onion and garlic, baked crisp and rubbed with garlic. Rustic, vegan and savory."
+ },
  "choufleurzaatar": {
   "nom": "Za'atar Roasted Cauliflower",
   "description": "Cauliflower roasted until crisp, scented with za'atar and served with a lemon-yogurt sauce. A simple, golden, characterful Lebanese vegetarian dish."

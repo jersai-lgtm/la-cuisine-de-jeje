@@ -13226,4 +13226,108 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Servir", detail: "Trait de citron et riz.", badge: null }
     ]
   },
+  pavbhaji: {
+    nom: "Pav Bhaji",
+    cat: "plats",
+    pays: "inde",
+    dateAjout: "2026-06-23T15:00:00",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍛",
+    description: "Le street food de Mumbai : une purée de légumes épicée au garam masala, servie avec des petits pains briochés (pav) dorés au beurre. Réconfortant, parfumé et végétarien.",
+    tableauPavbhaji: [
+      { nb: 1, pain: "50 g", pommedeterre: "100 g", petitspois: "40 g", poivron: "40 g", tomates: "60 g", oignon: "30 g", beurre: "12 g", garammasala: "2 g", coriandre: "2 g" },
+      { nb: 2, pain: "100 g", pommedeterre: "200 g", petitspois: "80 g", poivron: "80 g", tomates: "120 g", oignon: "60 g", beurre: "24 g", garammasala: "4 g", coriandre: "4 g" },
+      { nb: 3, pain: "150 g", pommedeterre: "300 g", petitspois: "120 g", poivron: "120 g", tomates: "180 g", oignon: "90 g", beurre: "36 g", garammasala: "6 g", coriandre: "6 g" },
+      { nb: 4, pain: "200 g", pommedeterre: "400 g", petitspois: "160 g", poivron: "160 g", tomates: "240 g", oignon: "120 g", beurre: "48 g", garammasala: "8 g", coriandre: "8 g" },
+      { nb: 5, pain: "250 g", pommedeterre: "500 g", petitspois: "200 g", poivron: "200 g", tomates: "300 g", oignon: "150 g", beurre: "60 g", garammasala: "10 g", coriandre: "10 g" },
+      { nb: 6, pain: "300 g", pommedeterre: "600 g", petitspois: "240 g", poivron: "240 g", tomates: "360 g", oignon: "180 g", beurre: "72 g", garammasala: "12 g", coriandre: "12 g" },
+      { nb: 7, pain: "350 g", pommedeterre: "700 g", petitspois: "280 g", poivron: "280 g", tomates: "420 g", oignon: "210 g", beurre: "84 g", garammasala: "14 g", coriandre: "14 g" },
+      { nb: 8, pain: "400 g", pommedeterre: "800 g", petitspois: "320 g", poivron: "320 g", tomates: "480 g", oignon: "240 g", beurre: "96 g", garammasala: "16 g", coriandre: "16 g" },
+      { nb: 9, pain: "450 g", pommedeterre: "900 g", petitspois: "360 g", poivron: "360 g", tomates: "540 g", oignon: "270 g", beurre: "108 g", garammasala: "18 g", coriandre: "18 g" },
+      { nb: 10, pain: "500 g", pommedeterre: "1000 g", petitspois: "400 g", poivron: "400 g", tomates: "600 g", oignon: "300 g", beurre: "120 g", garammasala: "20 g", coriandre: "20 g" },
+      { nb: 11, pain: "550 g", pommedeterre: "1100 g", petitspois: "440 g", poivron: "440 g", tomates: "660 g", oignon: "330 g", beurre: "132 g", garammasala: "22 g", coriandre: "22 g" },
+      { nb: 12, pain: "600 g", pommedeterre: "1200 g", petitspois: "480 g", poivron: "480 g", tomates: "720 g", oignon: "360 g", beurre: "144 g", garammasala: "24 g", coriandre: "24 g" },
+      { nb: 13, pain: "650 g", pommedeterre: "1300 g", petitspois: "520 g", poivron: "520 g", tomates: "780 g", oignon: "390 g", beurre: "156 g", garammasala: "26 g", coriandre: "26 g" },
+      { nb: 14, pain: "700 g", pommedeterre: "1400 g", petitspois: "560 g", poivron: "560 g", tomates: "840 g", oignon: "420 g", beurre: "168 g", garammasala: "28 g", coriandre: "28 g" },
+      { nb: 15, pain: "750 g", pommedeterre: "1500 g", petitspois: "600 g", poivron: "600 g", tomates: "900 g", oignon: "450 g", beurre: "180 g", garammasala: "30 g", coriandre: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire", detail: "Cuire et écraser pommes de terre et petits pois.", badge: null },
+      { icone: "🍅", titre: "Bhaji", detail: "Faire revenir oignon, poivron, tomates et garam masala, ajouter la purée et mijoter.", badge: "⏱ 15 min" },
+      { icone: "🧈", titre: "Pav", detail: "Toaster les petits pains dans du beurre fondu. ASTUCE CHEF : termine le bhaji avec une noix de beurre — c'est ce qui lui donne sa brillance et son goût riche de street food authentique.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Servir le bhaji avec les pains, coriandre et oignon cru.", badge: null }
+    ]
+  },
+  cachapa: {
+    nom: "Cachapa",
+    cat: "plats",
+    pays: "venezuela",
+    dateAjout: "2026-06-23T15:00:00",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🌽",
+    description: "La crêpe de maïs vénézuélienne : épaisse, dorée et légèrement sucrée, pliée sur du fromage fondant. Un street food réconfortant entre la crêpe et le pancake.",
+    tableauCachapa: [
+      { nb: 1, mais: "100 g", farine: "20 g", fromage: "40 g", beurre: "8 g", sucre: "3 g", lait: "20 ml" },
+      { nb: 2, mais: "200 g", farine: "40 g", fromage: "80 g", beurre: "16 g", sucre: "6 g", lait: "40 ml" },
+      { nb: 3, mais: "300 g", farine: "60 g", fromage: "120 g", beurre: "24 g", sucre: "9 g", lait: "60 ml" },
+      { nb: 4, mais: "400 g", farine: "80 g", fromage: "160 g", beurre: "32 g", sucre: "12 g", lait: "80 ml" },
+      { nb: 5, mais: "500 g", farine: "100 g", fromage: "200 g", beurre: "40 g", sucre: "15 g", lait: "100 ml" },
+      { nb: 6, mais: "600 g", farine: "120 g", fromage: "240 g", beurre: "48 g", sucre: "18 g", lait: "120 ml" },
+      { nb: 7, mais: "700 g", farine: "140 g", fromage: "280 g", beurre: "56 g", sucre: "21 g", lait: "140 ml" },
+      { nb: 8, mais: "800 g", farine: "160 g", fromage: "320 g", beurre: "64 g", sucre: "24 g", lait: "160 ml" },
+      { nb: 9, mais: "900 g", farine: "180 g", fromage: "360 g", beurre: "72 g", sucre: "27 g", lait: "180 ml" },
+      { nb: 10, mais: "1000 g", farine: "200 g", fromage: "400 g", beurre: "80 g", sucre: "30 g", lait: "200 ml" },
+      { nb: 11, mais: "1100 g", farine: "220 g", fromage: "440 g", beurre: "88 g", sucre: "33 g", lait: "220 ml" },
+      { nb: 12, mais: "1200 g", farine: "240 g", fromage: "480 g", beurre: "96 g", sucre: "36 g", lait: "240 ml" },
+      { nb: 13, mais: "1300 g", farine: "260 g", fromage: "520 g", beurre: "104 g", sucre: "39 g", lait: "260 ml" },
+      { nb: 14, mais: "1400 g", farine: "280 g", fromage: "560 g", beurre: "112 g", sucre: "42 g", lait: "280 ml" },
+      { nb: 15, mais: "1500 g", farine: "300 g", fromage: "600 g", beurre: "120 g", sucre: "45 g", lait: "300 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌽", titre: "Pâte", detail: "Mixer le maïs avec la farine, le lait et le sucre en pâte épaisse.", badge: null },
+      { icone: "🥞", titre: "Cuire", detail: "Cuire des galettes épaisses à la poêle beurrée. ASTUCE CHEF : pâte épaisse et feu moyen — trop liquide ou trop chaud, la cachapa se déchire au pliage au lieu de rester moelleuse.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Garnir de fromage, plier en deux et laisser fondre.", badge: null }
+    ]
+  },
+  soparnik: {
+    nom: "Soparnik (Tourte aux Blettes)",
+    cat: "plats",
+    pays: "croatie",
+    dateAjout: "2026-06-23T15:00:00",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥬",
+    description: "La tourte croate de la côte dalmate : une fine pâte garnie de blettes, oignon et ail, cuite jusqu'au croustillant et frottée à l'ail. Rustique, végétalien et savoureux.",
+    tableauSoparnik: [
+      { nb: 1, farine: "50 g", blettes: "100 g", oignon: "30 g", huileolive: "10 ml", ail: "3 g" },
+      { nb: 2, farine: "100 g", blettes: "200 g", oignon: "60 g", huileolive: "20 ml", ail: "6 g" },
+      { nb: 3, farine: "150 g", blettes: "300 g", oignon: "90 g", huileolive: "30 ml", ail: "9 g" },
+      { nb: 4, farine: "200 g", blettes: "400 g", oignon: "120 g", huileolive: "40 ml", ail: "12 g" },
+      { nb: 5, farine: "250 g", blettes: "500 g", oignon: "150 g", huileolive: "50 ml", ail: "15 g" },
+      { nb: 6, farine: "300 g", blettes: "600 g", oignon: "180 g", huileolive: "60 ml", ail: "18 g" },
+      { nb: 7, farine: "350 g", blettes: "700 g", oignon: "210 g", huileolive: "70 ml", ail: "21 g" },
+      { nb: 8, farine: "400 g", blettes: "800 g", oignon: "240 g", huileolive: "80 ml", ail: "24 g" },
+      { nb: 9, farine: "450 g", blettes: "900 g", oignon: "270 g", huileolive: "90 ml", ail: "27 g" },
+      { nb: 10, farine: "500 g", blettes: "1000 g", oignon: "300 g", huileolive: "100 ml", ail: "30 g" },
+      { nb: 11, farine: "550 g", blettes: "1100 g", oignon: "330 g", huileolive: "110 ml", ail: "33 g" },
+      { nb: 12, farine: "600 g", blettes: "1200 g", oignon: "360 g", huileolive: "120 ml", ail: "36 g" },
+      { nb: 13, farine: "650 g", blettes: "1300 g", oignon: "390 g", huileolive: "130 ml", ail: "39 g" },
+      { nb: 14, farine: "700 g", blettes: "1400 g", oignon: "420 g", huileolive: "140 ml", ail: "42 g" },
+      { nb: 15, farine: "750 g", blettes: "1500 g", oignon: "450 g", huileolive: "150 ml", ail: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Pâte", detail: "Pétrir farine, eau et huile en pâte souple, laisser reposer.", badge: null },
+      { icone: "🥬", titre: "Garniture", detail: "Émincer les blettes crues avec oignon, ail et huile.", badge: null },
+      { icone: "📦", titre: "Monter", detail: "Étaler deux fines abaisses, garnir et souder les bords. ASTUCE CHEF : étale la pâte très finement — le soparnik traditionnel est presque translucide, c'est ce qui le rend croustillant.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire au four jusqu'à doré, frotter à l'ail et l'huile à la sortie.", badge: "⏱ 25 min" }
+    ]
+  },
 });
