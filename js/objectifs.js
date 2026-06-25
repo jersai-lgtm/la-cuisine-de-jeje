@@ -248,6 +248,8 @@
       if (s) txt += "⚡ " + T("Dépense estimée : ", "Estimated burn: ") + "<b>~" + s.tdee + " kcal/" + T("jour", "day") + "</b> (" + T(ACTIVITES[selA].fr, ACTIVITES[selA].en) + ")<br>";
       if (s) txt += "🎯 " + T("Calories conseillées : ", "Recommended calories: ") + "<b>~" + s.kcal + " kcal/" + T("jour", "day") + "</b>" + (selF ? " (" + T(FOCUS[selF].fr, FOCUS[selF].en) + ")" : "") + "<br>";
       txt += "💪 " + T("Protéines : ", "Protein: ") + "<b>~" + protG + " g/" + T("jour", "day") + "</b> (" + protKg + " g/kg)";
+      const eauL = (Math.round(selP * 35 / 100) / 10).toFixed(1).replace(".", ",");
+      txt += "<br>💧 " + T("Eau : ", "Water: ") + "<b>~" + eauL + " L/" + T("jour", "day") + "</b>";
       suggText.innerHTML = txt;
       suggUse.style.display = (s && s.kcal) ? "block" : "none";
     };
@@ -346,6 +348,10 @@
     if (protJour) {
       const gkg = o.poids ? " (" + (window.OBJ_protKg ? window.OBJ_protKg(o) : 1.8) + " g/kg)" : "";
       stats += '<span class="obj-stat">💪 <b>~' + protJour + "</b> g " + T("protéines/jour", "protein/day") + gkg + "</span>";
+    }
+    if (o.poids) {
+      const eauL = (Math.round(o.poids * 35 / 100) / 10).toFixed(1).replace(".", ",");
+      stats += '<span class="obj-stat">💧 <b>~' + eauL + "</b> L " + T("eau/jour", "water/day") + "</span>";
     }
     if (focus) stats += '<span class="obj-stat">' + focus.e + " " + T(focus.fr, focus.en) + "</span>";
     stats += "</div>";
