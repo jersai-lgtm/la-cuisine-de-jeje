@@ -354,7 +354,8 @@
     // chaque moment cliquable propose des recettes qui rentrent dans SA part.
     let corps;
     if (o.kcal) {
-      corps = '<div class="obj-jour-label">' + T("Ta journée — touche un moment pour des idées :", "Your day — tap a moment for ideas:") + "</div>" +
+      corps = '<button type="button" class="obj-cta" onclick="composerJournee()" style="margin-bottom:11px">' + T("🍽️ Composer ma journée", "🍽️ Plan my day") + "</button>" +
+        '<div class="obj-jour-label">' + T("ou touche un moment :", "or tap a moment:") + "</div>" +
         '<div class="obj-moments">' +
         MOMENTS.map((m) => '<button type="button" class="obj-moment" onclick="proposerSelonObjectif(\'' + m.k + '\')">' +
           "<span>" + m.e + " " + T(m.fr, m.en) + "</span><b>~" + Math.round(o.kcal * m.pct) + "</b></button>").join("") +

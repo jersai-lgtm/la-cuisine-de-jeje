@@ -115,6 +115,21 @@
         border-radius:12px;padding:11px 14px;font-size:14px;font-weight:600;cursor:pointer;flex:1 1 40%}
       #envie-modal .envie-opt:hover{border-color:var(--accent)}
       @media(min-width:520px){#envie-modal .envie-grid{grid-template-columns:repeat(3,1fr)}}
+      /* « Composer ma journée » : totaux + liste de repas du jour */
+      #envie-modal .jr-totaux{background:rgba(var(--w),.06);border:1px solid rgba(var(--w),.12);border-radius:14px;padding:12px 14px;margin:0 14px 12px}
+      #envie-modal .jr-tot-line{display:flex;justify-content:space-between;align-items:center;font-size:13.5px;color:var(--text)}
+      #envie-modal .jr-tot-line b{font-size:15px}
+      #envie-modal .jr-bar{height:7px;border-radius:99px;background:rgba(var(--w),.12);overflow:hidden;margin:4px 0 10px}
+      #envie-modal .jr-bar i{display:block;height:100%;border-radius:99px}
+      #envie-modal .jr-list{padding:0 14px 6px;display:flex;flex-direction:column;gap:9px}
+      #envie-modal .jr-repas{display:flex;gap:11px;align-items:center;background:rgba(var(--w),.05);border:1px solid rgba(var(--w),.1);border-radius:14px;padding:9px;cursor:pointer}
+      #envie-modal .jr-repas:hover{border-color:rgba(var(--accent-rgb),.45)}
+      #envie-modal .jr-thumb{width:74px;height:74px;border-radius:11px;object-fit:cover;flex:none;background:rgba(var(--w),.1)}
+      #envie-modal .jr-info{min-width:0;flex:1}
+      #envie-modal .jr-moment{font-size:11.5px;color:var(--accent);font-weight:800;margin-bottom:1px}
+      #envie-modal .jr-nom{font-size:14px;font-weight:700;color:var(--text);line-height:1.25;margin-bottom:3px}
+      #envie-modal .jr-nut{font-size:12px;color:var(--text-2)}
+      #envie-modal .jr-regen{margin:6px 14px 16px;width:calc(100% - 28px);background:rgba(var(--accent-rgb),.15);color:var(--accent);border:1px solid rgba(var(--accent-rgb),.5);border-radius:12px;padding:11px;font-size:13.5px;font-weight:700;cursor:pointer}
     `;
     document.head.appendChild(s);
   }
@@ -227,6 +242,87 @@
     if (calCible) titre += " · ~" + calCible + " kcal";
     if (f && f.prot && protCible) titre += " · ~" + protCible + " g " + T("prot", "protein");
     montrerResultats(titre, cles, raisonFn);
+  };
+
+  // ---- « Composer ma journée » : un repas par moment qui atteint les cibles ----
+  // Choisit, pour un moment, la meilleure recette (proche de la cible kcal, et bien
+  // protéinée pour les profils muscu), avec un peu d'aléatoire pour varier.
+  function choisirRepas(m, dayKcal, dayProt, focus, used, exclus) {
+    const calCible = Math.round(dayKcal * m.pct);
+    const protCible = dayProt ? Math.round(dayProt * m.pct) : null;
+    const cats = new Set(m.cats);
+    const cand = [];
+    for (const k of Object.keys(recettes)) {
+      if (used.has(k)) continue;
+      const r = recettes[k];
+      if (!r || !r.nom || !cats.has(r.cat)) continue;
+      if (!compatible(k, exclus)) continue;
+      const nu = nutPortion(r);
+      if (!nu || nu.cal == null) continue;
+      let score = Math.abs(nu.cal - calCible) / Math.max(1, calCible);          // écart calorique relatif
+      if (focus && focus.prot && protCible && nu.prot != null) {
+        score += Math.max(0, protCible - nu.prot) / Math.max(1, protCible) * 0.8; // pénalise le manque de protéines
+      }
+      cand.push({ k, cal: nu.cal, prot: nu.prot, score });
+    }
+    cand.sort((a, b) => a.score - b.score);
+    const top = cand.slice(0, 6);
+    return top.length ? top[Math.floor(Math.random() * top.length)] : null;
+  }
+
+  window.composerJournee = function () {
+    let o = {};
+    try { o = JSON.parse(localStorage.getItem("objectif_nutri") || "{}") || {}; } catch (e) {}
+    if (!o.kcal) { if (typeof ouvrirObjectifs === "function") ouvrirObjectifs(); return; }
+    const MOMENTS = window.OBJ_MOMENTS || [];
+    const FOCUS = window.OBJ_FOCUS || {};
+    const focus = o.focus && FOCUS[o.focus];
+    const dayKcal = o.kcal;
+    const dayProt = window.OBJ_protJour ? window.OBJ_protJour(o) : null;
+    const exclus = motsExclus();
+    const used = new Set();
+    const plan = MOMENTS.map((m) => ({ m, p: choisirRepas(m, dayKcal, dayProt, focus, used, exclus) }));
+    plan.forEach((x) => { if (x.p) used.add(x.p.k); });
+
+    let totK = 0, totP = 0, anyP = false;
+    plan.forEach((x) => { if (x.p) { totK += x.p.cal || 0; if (x.p.prot != null) { totP += x.p.prot; anyP = true; } } });
+    totK = Math.round(totK); totP = Math.round(totP);
+
+    const couleur = (pct) => (pct >= 90 && pct <= 112) ? "#4caf50" : (pct >= 70 && pct <= 135) ? "#ffb300" : "#ff6b6b";
+    const barre = (val, cible) => {
+      if (!cible) return "";
+      const pct = Math.round((val / cible) * 100);
+      return '<div class="jr-bar"><i style="width:' + Math.min(100, pct) + "%;background:" + couleur(pct) + '"></i></div>';
+    };
+    let tot = '<div class="jr-totaux">';
+    tot += '<div class="jr-tot-line"><span>🔥 ' + T("Calories", "Calories") + '</span><span><b>' + totK + "</b> / " + dayKcal + " kcal</span></div>" + barre(totK, dayKcal);
+    if (dayProt && anyP) tot += '<div class="jr-tot-line"><span>💪 ' + T("Protéines", "Protein") + '</span><span><b>' + totP + "</b> / " + dayProt + " g</span></div>" + barre(totP, dayProt);
+    tot += "</div>";
+
+    const lignes = plan.filter((x) => x.p).map((x) => {
+      const k = x.p.k, r = recettes[k];
+      const img = (typeof getThumbPath === "function") ? getThumbPath(k) : ("images/" + (k[0] || "_").toLowerCase() + "/" + k + ".webp");
+      const onerr = (typeof imgCarteOnerror === "function") ? imgCarteOnerror(k) : "";
+      const dra = (typeof drapeau === "function") ? drapeau(r.pays, 13) : "";
+      const nom = (typeof getNomRecette === "function") ? getNomRecette(k) : (r.nom || k);
+      return '<div class="jr-repas" data-k="' + k + '">' +
+        '<img class="jr-thumb" loading="lazy" decoding="async" src="' + img + '" alt="" onerror="' + onerr + '">' +
+        '<div class="jr-info">' +
+          '<div class="jr-moment">' + x.m.e + " " + T(x.m.fr, x.m.en) + "</div>" +
+          '<div class="jr-nom">' + dra + (r.emoji || "🍽️") + " " + nom + "</div>" +
+          '<div class="jr-nut">🔥 ' + Math.round(x.p.cal) + " kcal" + (x.p.prot != null ? " · 💪 " + Math.round(x.p.prot) + " g" : "") + (r.temps ? " · ⏱ " + r.temps : "") + "</div>" +
+        "</div></div>";
+    }).join("");
+
+    const html = tot + '<div class="jr-list">' + lignes + "</div>" +
+      '<button type="button" class="jr-regen">🔄 ' + T("Régénérer la journée", "Regenerate the day") + "</button>";
+    const sheet = ouvrirSheet("🍽️ " + T("Ta journée", "Your day"), html);
+    const regen = sheet.querySelector(".jr-regen");
+    if (regen) regen.addEventListener("click", () => window.composerJournee());
+    sheet.querySelectorAll(".jr-repas").forEach((el) => el.addEventListener("click", () => {
+      const k = el.dataset.k;
+      if (k && typeof ouvrirFiche === "function") { ouvrirFiche(k, ""); setTimeout(fermerModal, 50); }
+    }));
   };
 
   // ---- B) Quiz de goûts ----
