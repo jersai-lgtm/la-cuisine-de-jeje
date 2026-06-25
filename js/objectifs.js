@@ -29,20 +29,29 @@
   };
   window.OBJ_FOCUS = FOCUS;
 
-  // Niveaux d'activité → dépense ≈ kcal par kg de poids et par jour.
+  // Niveaux d'activité → multiplicateur du métabolisme de base (pour le TDEE).
   const ACTIVITES = {
-    sedentaire: { fr: "Sédentaire", en: "Sedentary", e: "🛋️", kcalKg: 28 },
-    actif: { fr: "Actif", en: "Active", e: "🚶", kcalKg: 33 },
-    sportif: { fr: "Sportif", en: "Athletic", e: "🏃", kcalKg: 38 },
+    sedentaire: { fr: "Sédentaire", en: "Sedentary", e: "🛋️", pal: 1.2 },
+    actif: { fr: "Actif", en: "Active", e: "🚶", pal: 1.55 },
+    sportif: { fr: "Sportif", en: "Athletic", e: "🏃", pal: 1.8 },
   };
 
-  // Suggestion de calories/jour : poids × dépense(activité) × ajustement(but).
-  function suggererKcal(poids, activiteK, focusK) {
-    const a = ACTIVITES[activiteK];
-    if (!poids || !a) return null;
-    const f = focusK && FOCUS[focusK];
-    return Math.round((poids * a.kcalKg * ((f && f.kcalAdj) || 1)) / 10) * 10;
+  // Métabolisme de base (Mifflin-St Jeor) — kcal au repos.
+  function calcMB(poids, taille, age, sexe) {
+    if (!poids || !taille || !age) return null;
+    return Math.round(10 * poids + 6.25 * taille - 5 * age + (sexe === "femme" ? -161 : 5));
   }
+  // Suggestion calories : MB × activité (= TDEE) × ajustement du but.
+  // Renvoie { mb, tdee, kcal }. Repli ~poids×33 si taille/âge manquent.
+  function suggererKcal(p) {
+    const a = ACTIVITES[p && p.activite];
+    if (!p || !p.poids || !a) return null;
+    const mb = calcMB(p.poids, p.taille, p.age, p.sexe);
+    const tdee = mb ? Math.round(mb * a.pal) : Math.round(p.poids * 33 * (a.pal / 1.55));
+    const f = p.focus && FOCUS[p.focus];
+    return { mb: mb, tdee: tdee, kcal: Math.round((tdee * ((f && f.kcalAdj) || 1)) / 10) * 10 };
+  }
+  window.OBJ_calcMB = calcMB;
 
   // Cible protéines/jour (g) : depuis le poids (g/kg) si connu, sinon depuis les kcal.
   window.OBJ_protJour = function (o) {
@@ -159,6 +168,9 @@
     const sansKcal = !!(o.focus && !o.kcal);
     const pStart = o.poids || 75;
     const aStart = o.activite || "actif";
+    const tStart = o.taille || 175;
+    const ageStart = o.age || 30;
+    const sexeStart = o.sexe || "homme";
     const poidsOn = !!o.poids;
     const btnF = Object.keys(FOCUS).map((f) => '<button type="button" data-focus="' + f + '" class="obj-f" style="' + chip(o.focus === f) + '">' + FOCUS[f].e + " " + T(FOCUS[f].fr, FOCUS[f].en) + "</button>").join("") +
       '<button type="button" data-focus="" class="obj-f" style="' + chip(!o.focus) + '">' + T("Aucun", "None") + "</button>";
@@ -178,7 +190,18 @@
           '<button type="button" id="obj-p-minus" class="obj-step">−</button>' +
           '<input type="range" id="obj-poids" min="40" max="150" step="1" value="' + pStart + '" style="flex:1;height:6px;accent-color:var(--accent);cursor:pointer">' +
           '<button type="button" id="obj-p-plus" class="obj-step">+</button></div>' +
-        '<p style="color:var(--text-2);font-size:13px;margin:12px 0 6px">' + T("Mon activité", "My activity") + "</p>" +
+        // Sexe
+        '<p style="color:var(--text-2);font-size:13px;margin:12px 0 6px">' + T("Sexe", "Sex") + "</p>" +
+        '<div style="display:flex;gap:8px">' +
+          '<button type="button" data-sexe="homme" class="obj-sexe" style="' + chip(sexeStart === "homme") + '">♂ ' + T("Homme", "Male") + "</button>" +
+          '<button type="button" data-sexe="femme" class="obj-sexe" style="' + chip(sexeStart === "femme") + '">♀ ' + T("Femme", "Female") + "</button></div>" +
+        // Taille
+        '<div style="display:flex;align-items:center;justify-content:space-between;margin:14px 0 4px;font-size:13px;color:var(--text-2)"><span>' + T("Taille", "Height") + '</span><span><b id="obj-tval" style="color:var(--accent)">' + tStart + "</b> cm</span></div>" +
+        '<input type="range" id="obj-taille" min="140" max="210" step="1" value="' + tStart + '" style="width:100%;accent-color:var(--accent);height:6px;cursor:pointer">' +
+        // Âge
+        '<div style="display:flex;align-items:center;justify-content:space-between;margin:12px 0 4px;font-size:13px;color:var(--text-2)"><span>' + T("Âge", "Age") + '</span><span><b id="obj-aval" style="color:var(--accent)">' + ageStart + "</b> " + T("ans", "yrs") + "</span></div>" +
+        '<input type="range" id="obj-age" min="14" max="90" step="1" value="' + ageStart + '" style="width:100%;accent-color:var(--accent);height:6px;cursor:pointer">' +
+        '<p style="color:var(--text-2);font-size:13px;margin:14px 0 6px">' + T("Mon activité", "My activity") + "</p>" +
         '<div style="display:flex;flex-wrap:wrap;gap:8px">' + btnA + "</div>" +
         '<div id="obj-suggestion" style="margin-top:12px;background:rgba(var(--accent-rgb),.1);border:1px solid rgba(var(--accent-rgb),.3);border-radius:12px;padding:11px 13px">' +
           '<div id="obj-sugg-text" style="font-size:13px;color:var(--text);line-height:1.5"></div>' +
@@ -197,7 +220,7 @@
     document.body.appendChild(modal);
     if (typeof window._backGuardPush === "function") window._backGuardPush();
 
-    let selK = kStart, selF = o.focus || "", selP = pStart, selA = aStart, suggKcal = null;
+    let selK = kStart, selF = o.focus || "", selP = pStart, selA = aStart, selT = tStart, selAge = ageStart, selSexe = sexeStart, suggKcal = null;
     const valEl = modal.querySelector("#obj-kval");
     const range = modal.querySelector("#obj-k-range");
     const none = modal.querySelector("#obj-k-none");
@@ -212,19 +235,21 @@
 
     const setK = (v) => { selK = Math.max(500, Math.min(3500, Math.round(v))); range.value = selK; valEl.textContent = selK; };
     const majSansKcal = () => { const off = none.checked; range.disabled = off; minus.disabled = off; plus.disabled = off; valEl.style.opacity = off ? ".3" : "1"; };
-    // Recalcule la suggestion (calories conseillées + protéines g/kg) selon poids/activité/but.
+    // Recalcule MB (Mifflin-St Jeor) → TDEE → calories conseillées + protéines g/kg.
     const recompute = () => {
       if (!poidsOnEl.checked) return;
       const f = selF && FOCUS[selF];
-      const sk = suggererKcal(selP, selA, selF);
-      suggKcal = sk;
+      const s = suggererKcal({ poids: selP, taille: selT, age: selAge, sexe: selSexe, activite: selA, focus: selF });
+      suggKcal = s ? s.kcal : null;
       const protKg = (f && f.protKg) || 1.8;
       const protG = Math.round(selP * protKg);
-      let txt = "💪 " + T("Protéines conseillées : ", "Recommended protein: ") + "<b>~" + protG + " g/" + T("jour", "day") + "</b> (" + protKg + " g/kg)";
-      if (sk) txt += "<br>🔥 " + T("Calories conseillées : ", "Recommended calories: ") + "<b>~" + sk + " kcal/" + T("jour", "day") + "</b>" + (selF ? " (" + T(FOCUS[selF].fr, FOCUS[selF].en) + ")" : "");
-      else txt += "<br>" + T("Choisis ton but et ton activité pour les calories conseillées.", "Pick your goal and activity for recommended calories.");
+      let txt = "";
+      if (s && s.mb) txt += "🔥 " + T("Métabolisme de base : ", "Basal metabolism: ") + "<b>~" + s.mb + " kcal</b><br>";
+      if (s) txt += "⚡ " + T("Dépense estimée : ", "Estimated burn: ") + "<b>~" + s.tdee + " kcal/" + T("jour", "day") + "</b> (" + T(ACTIVITES[selA].fr, ACTIVITES[selA].en) + ")<br>";
+      if (s) txt += "🎯 " + T("Calories conseillées : ", "Recommended calories: ") + "<b>~" + s.kcal + " kcal/" + T("jour", "day") + "</b>" + (selF ? " (" + T(FOCUS[selF].fr, FOCUS[selF].en) + ")" : "") + "<br>";
+      txt += "💪 " + T("Protéines : ", "Protein: ") + "<b>~" + protG + " g/" + T("jour", "day") + "</b> (" + protKg + " g/kg)";
       suggText.innerHTML = txt;
-      suggUse.style.display = sk ? "block" : "none";
+      suggUse.style.display = (s && s.kcal) ? "block" : "none";
     };
     range.addEventListener("input", () => setK(parseInt(range.value) || 1));
     minus.addEventListener("click", () => setK(selK - 10));
@@ -240,6 +265,12 @@
     pRange.addEventListener("input", () => setP(parseInt(pRange.value) || 40));
     modal.querySelector("#obj-p-minus").addEventListener("click", () => setP(selP - 1));
     modal.querySelector("#obj-p-plus").addEventListener("click", () => setP(selP + 1));
+    // Sexe / Taille / Âge
+    modal.querySelectorAll(".obj-sexe").forEach((b) => b.addEventListener("click", () => { selSexe = b.dataset.sexe; modal.querySelectorAll(".obj-sexe").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); recompute(); }));
+    const tRange = modal.querySelector("#obj-taille"), tVal = modal.querySelector("#obj-tval");
+    tRange.addEventListener("input", () => { selT = parseInt(tRange.value) || 175; tVal.textContent = selT; recompute(); });
+    const ageRange = modal.querySelector("#obj-age"), ageVal = modal.querySelector("#obj-aval");
+    ageRange.addEventListener("input", () => { selAge = parseInt(ageRange.value) || 30; ageVal.textContent = selAge; recompute(); });
     poidsOnEl.addEventListener("change", () => { poidsBox.style.display = poidsOnEl.checked ? "" : "none"; recompute(); });
     suggUse.addEventListener("click", () => { if (suggKcal) { none.checked = false; majSansKcal(); setK(suggKcal); } });
     recompute();
@@ -249,7 +280,9 @@
     modal.querySelector("#obj-close").addEventListener("click", fermer);
     modal.addEventListener("click", (e) => { if (e.target === modal) fermer(); });
     modal.querySelector("#obj-save").addEventListener("click", () => {
-      ecrire({ kcal: none.checked ? null : selK, focus: selF || null, poids: poidsOnEl.checked ? selP : null, activite: poidsOnEl.checked ? selA : null });
+      ecrire({ kcal: none.checked ? null : selK, focus: selF || null,
+        poids: poidsOnEl.checked ? selP : null, activite: poidsOnEl.checked ? selA : null,
+        taille: poidsOnEl.checked ? selT : null, age: poidsOnEl.checked ? selAge : null, sexe: poidsOnEl.checked ? selSexe : null });
       fermer();
       if (typeof window._refreshObjectifBloc === "function") window._refreshObjectifBloc();
       if (typeof afficherToast === "function") afficherToast(T("🎯 Objectif enregistré !", "🎯 Goal saved!"));
