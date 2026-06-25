@@ -4,10 +4,12 @@
 // Lancé en CI (et en local : `node tools/verifier-donnees.mjs`). Vérifie que les
 // données de recettes sont cohérentes AVANT déploiement :
 //   • chaque recette a nom / étapes / temps
-//   • l'image de chaque recette existe sur le disque
+//   • l'image de chaque recette existe sur le disque (AVERTISSEMENT seulement —
+//     les recettes sont souvent publiées avant la conversion des images)
 //   • pas de clé de recette définie en double (un fichier en écraserait un autre)
 //   • les clés de recettes_batch.js référencent bien des recettes existantes
-// Sort en erreur (code 1) si un problème est trouvé → bloque le déploiement.
+// Sort en erreur (code 1) pour les vraies erreurs de données (nom/étapes manquants,
+// clé en double…) ; les images manquantes ne sont qu'un avertissement.
 // =============================================================================
 
 import { readFileSync, readdirSync, existsSync } from "node:fs";
@@ -52,7 +54,10 @@ for (const k of cles) {
   if (!Array.isArray(r.etapes) || r.etapes.length === 0) erreurs.push(`${k} : "etapes" manquantes ou vides`);
   if (!r.temps) avert.push(`${k} : "temps" manquant`);
   const img = cheminImage(k, r, imgExc);
-  if (!existsSync(join(ROOT, img))) erreurs.push(`${k} : image introuvable (${img})`);
+  // Image manquante = AVERTISSEMENT (pas une erreur bloquante) : les recettes sont souvent
+  // publiées avant que les images soient converties → on ne casse pas le CI pour ça.
+  // (Le site masque proprement une image absente via onerror.)
+  if (!existsSync(join(ROOT, img))) avert.push(`${k} : image manquante (${img})`);
 }
 
 // 4) Cohérence de recettes_batch.js
