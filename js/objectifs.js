@@ -288,7 +288,7 @@
       fermer();
       if (typeof window._refreshObjectifBloc === "function") window._refreshObjectifBloc();
       if (typeof afficherToast === "function") afficherToast(T("🎯 Objectif enregistré !", "🎯 Goal saved!"));
-      if (typeof window.proposerSelonObjectif === "function") window.proposerSelonObjectif();
+      // Pas d'ouverture auto : l'utilisateur clique ensuite « Composer ma journée » ou un moment.
     });
   };
 
