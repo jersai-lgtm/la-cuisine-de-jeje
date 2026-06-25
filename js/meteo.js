@@ -19,13 +19,34 @@
     try { const c = JSON.parse(localStorage.getItem(LS) || "null"); if (c && (Date.now() - c.t) < 3 * 3600e3) return c; } catch (e) {}
     return null;
   }
+  // Géoloc par IP — plusieurs sources (ipapi.co est souvent rate-limité) → on essaie
+  // l'une après l'autre jusqu'à obtenir une lat/lon valide.
+  async function getLatLon() {
+    // 1) ipapi.co (texte "lat,lon")
+    try {
+      const t = await fetch("https://ipapi.co/latlong/").then((r) => (r.ok ? r.text() : ""));
+      const [a, b] = String(t).trim().split(",");
+      if (a && b && !isNaN(parseFloat(a)) && !isNaN(parseFloat(b))) return [a, b];
+    } catch (e) {}
+    // 2) ipwho.is (JSON {latitude, longitude})
+    try {
+      const j = await fetch("https://ipwho.is/").then((r) => r.json());
+      if (j && typeof j.latitude === "number") return [j.latitude, j.longitude];
+    } catch (e) {}
+    // 3) geojs.io (JSON {latitude, longitude} en chaînes)
+    try {
+      const j = await fetch("https://get.geojs.io/v1/ip/geo.json").then((r) => r.json());
+      if (j && j.latitude && !isNaN(parseFloat(j.latitude))) return [j.latitude, j.longitude];
+    } catch (e) {}
+    return null;
+  }
   async function charger() {
     const c = lireCache();
     if (c) { poser(c.temp); return; }
     try {
-      const ll = await fetch("https://ipapi.co/latlong/").then((r) => (r.ok ? r.text() : ""));
-      const [lat, lon] = String(ll).trim().split(",");
-      if (!lat || !lon || isNaN(parseFloat(lat))) return;
+      const ll = await getLatLon();
+      if (!ll) return;
+      const [lat, lon] = ll;
       const w = await fetch("https://api.open-meteo.com/v1/forecast?latitude=" + encodeURIComponent(lat) + "&longitude=" + encodeURIComponent(lon) + "&current=temperature_2m").then((r) => r.json());
       const temp = w && w.current && w.current.temperature_2m;
       if (typeof temp === "number") {

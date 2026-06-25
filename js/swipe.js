@@ -46,12 +46,23 @@
     return p;
   }
 
+  // Emoji gradué selon la température (toujours un emoji, pas seulement aux extrêmes).
+  function meteoEmoji(t) {
+    if (t >= 30) return "🥵";
+    if (t >= 24) return "☀️";
+    if (t >= 17) return "🌤️";
+    if (t >= 10) return "⛅";
+    if (t >= 3) return "🧥";
+    return "🥶";
+  }
   function meteoHint() {
     const M = window._meteo;
-    if (!M) return "";
-    if (M.chaud) return (EN() ? "🥵 It's hot (" + Math.round(M.temp) + "°) → fresh dishes first. " : "🥵 Il fait chaud (" + Math.round(M.temp) + "°) → on remonte le frais. ");
-    if (M.froid) return (EN() ? "🥶 It's cold (" + Math.round(M.temp) + "°) → comforting first. " : "🥶 Il fait froid (" + Math.round(M.temp) + "°) → on remonte le réconfortant. ");
-    return "";
+    if (!M || typeof M.temp !== "number") return "";
+    const t = Math.round(M.temp);
+    const e = meteoEmoji(M.temp);
+    if (M.chaud) return (EN() ? e + " It's hot (" + t + "°) → fresh dishes first. " : e + " Il fait chaud (" + t + "°) → on remonte le frais. ");
+    if (M.froid) return (EN() ? e + " It's cold (" + t + "°) → comforting first. " : e + " Il fait froid (" + t + "°) → on remonte le réconfortant. ");
+    return (EN() ? e + " " + t + "° today. " : e + " " + t + "° aujourd'hui. ");
   }
 
   // Score d'adéquation à la météo (frais quand il fait chaud, réconfortant quand il fait froid).
