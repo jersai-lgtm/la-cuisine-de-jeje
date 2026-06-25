@@ -15,24 +15,45 @@
   const lire = () => { try { return JSON.parse(localStorage.getItem(LS) || "{}") || {}; } catch (e) { return {}; } };
   const ecrire = (o) => { try { localStorage.setItem(LS, JSON.stringify(o)); } catch (e) {} };
 
-  // Profils. protPct = part des calories venant des protéines → sert à déduire une
-  // cible protéines/jour (g = kcal × protPct ÷ 4). prot = on priorise le protéiné dans
-  // les suggestions ; cap = repas plus légers ; surplus = on autorise plus calorique.
+  // Profils. protPct = part des calories venant des protéines (repli sans poids).
+  // protKg = protéines en g par kg de poids (le standard muscu, prioritaire si poids connu).
+  // kcalAdj = ajustement du maintien pour ce but (sèche = déficit, masse = surplus).
+  // prot = priorise le protéiné ; cap = repas plus légers ; surplus = autorise plus calorique.
   const FOCUS = {
-    equilibre: { fr: "Équilibré", en: "Balanced", e: "⚖️", protPct: 0.20 },
-    leger: { fr: "Léger", en: "Light", e: "🪶", protPct: 0.22, cap: true },
-    proteine: { fr: "Protéiné", en: "High-protein", e: "💪", protPct: 0.30, prot: true },
-    seche: { fr: "Sèche", en: "Cutting", e: "🔥", protPct: 0.40, prot: true, cap: true },
-    prisedemasse: { fr: "Prise de masse", en: "Bulking", e: "🏋️", protPct: 0.30, prot: true, surplus: true },
-    gourmand: { fr: "Plaisir", en: "Indulgent", e: "😋", protPct: 0.18 },
+    equilibre: { fr: "Équilibré", en: "Balanced", e: "⚖️", protPct: 0.20, protKg: 1.8, kcalAdj: 1.00 },
+    leger: { fr: "Léger", en: "Light", e: "🪶", protPct: 0.22, protKg: 1.8, kcalAdj: 0.90, cap: true },
+    proteine: { fr: "Protéiné", en: "High-protein", e: "💪", protPct: 0.30, protKg: 2.0, kcalAdj: 1.00, prot: true },
+    seche: { fr: "Sèche", en: "Cutting", e: "🔥", protPct: 0.40, protKg: 2.2, kcalAdj: 0.80, prot: true, cap: true },
+    prisedemasse: { fr: "Prise de masse", en: "Bulking", e: "🏋️", protPct: 0.30, protKg: 2.0, kcalAdj: 1.12, prot: true, surplus: true },
+    gourmand: { fr: "Plaisir", en: "Indulgent", e: "😋", protPct: 0.18, protKg: 1.6, kcalAdj: 1.00 },
   };
   window.OBJ_FOCUS = FOCUS;
-  // Cible protéines/jour (g) déduite de l'objectif kcal + du profil.
-  window.OBJ_protJour = function (o) {
-    if (!o || !o.kcal) return null;
-    const f = o.focus && FOCUS[o.focus];
-    return Math.round((o.kcal * ((f && f.protPct) || 0.20)) / 4);
+
+  // Niveaux d'activité → dépense ≈ kcal par kg de poids et par jour.
+  const ACTIVITES = {
+    sedentaire: { fr: "Sédentaire", en: "Sedentary", e: "🛋️", kcalKg: 28 },
+    actif: { fr: "Actif", en: "Active", e: "🚶", kcalKg: 33 },
+    sportif: { fr: "Sportif", en: "Athletic", e: "🏃", kcalKg: 38 },
   };
+
+  // Suggestion de calories/jour : poids × dépense(activité) × ajustement(but).
+  function suggererKcal(poids, activiteK, focusK) {
+    const a = ACTIVITES[activiteK];
+    if (!poids || !a) return null;
+    const f = focusK && FOCUS[focusK];
+    return Math.round((poids * a.kcalKg * ((f && f.kcalAdj) || 1)) / 10) * 10;
+  }
+
+  // Cible protéines/jour (g) : depuis le poids (g/kg) si connu, sinon depuis les kcal.
+  window.OBJ_protJour = function (o) {
+    if (!o) return null;
+    const f = o.focus && FOCUS[o.focus];
+    if (o.poids) return Math.round(o.poids * ((f && f.protKg) || 1.8));
+    if (o.kcal) return Math.round((o.kcal * ((f && f.protPct) || 0.20)) / 4);
+    return null;
+  };
+  // g de protéines par kg (pour l'affichage « 2.2 g/kg »).
+  window.OBJ_protKg = function (o) { const f = o && o.focus && FOCUS[o.focus]; return (f && f.protKg) || 1.8; };
 
   // Répartition d'une journée : l'objectif kcal se répartit sur les moments (le matin
   // et les collations comptent !). pct = part du budget du jour ; cats = catégories de
@@ -134,17 +155,37 @@
     modal = document.createElement("div");
     modal.id = "modal-objectifs";
     modal.style.cssText = "position:fixed;inset:0;z-index:9100;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;padding:18px";
-    const kStart = o.kcal || 2000;          // valeur de départ du compteur
-    // « focus seul » coché UNIQUEMENT si l'utilisateur avait déjà choisi un focus sans
-    // kcal (sinon, nouvel utilisateur → case décochée pour qu'il puisse régler le compteur).
+    const kStart = o.kcal || 2000;
     const sansKcal = !!(o.focus && !o.kcal);
+    const pStart = o.poids || 75;
+    const aStart = o.activite || "actif";
+    const poidsOn = !!o.poids;
     const btnF = Object.keys(FOCUS).map((f) => '<button type="button" data-focus="' + f + '" class="obj-f" style="' + chip(o.focus === f) + '">' + FOCUS[f].e + " " + T(FOCUS[f].fr, FOCUS[f].en) + "</button>").join("") +
       '<button type="button" data-focus="" class="obj-f" style="' + chip(!o.focus) + '">' + T("Aucun", "None") + "</button>";
+    const btnA = Object.keys(ACTIVITES).map((a) => '<button type="button" data-act="' + a + '" class="obj-act" style="' + chip(aStart === a) + '">' + ACTIVITES[a].e + " " + T(ACTIVITES[a].fr, ACTIVITES[a].en) + "</button>").join("");
     modal.innerHTML =
-      '<div style="background:var(--panel-solid,#1a1a2e);color:var(--text);border:1px solid rgba(var(--w),.12);border-radius:18px;max-width:420px;width:100%;padding:20px;font-family:system-ui,sans-serif;max-height:90vh;overflow:auto">' +
+      '<div style="background:var(--panel-solid,#1a1a2e);color:var(--text);border:1px solid rgba(var(--w),.12);border-radius:18px;max-width:430px;width:100%;padding:20px;font-family:system-ui,sans-serif;max-height:92vh;overflow:auto">' +
       '<div style="display:flex;align-items:center;justify-content:space-between"><h2 style="margin:0;font-size:19px">' + T("🎯 Mon objectif nutritionnel", "🎯 My nutrition goal") + "</h2>" +
       '<button type="button" id="obj-close" style="background:rgba(var(--w),.1);color:var(--text);border:none;border-radius:50%;width:34px;height:34px;font-size:15px;cursor:pointer">✕</button></div>' +
-      '<p style="color:var(--text-2);font-size:14px;margin:14px 0 6px">' + T("Calories par jour", "Calories per day") + "</p>" +
+      // 1) But
+      '<p style="color:var(--text-2);font-size:14px;margin:14px 0 6px">' + T("Mon but", "My goal") + "</p>" +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' + btnF + "</div>" +
+      // 2) Poids / activité (optionnel) → calcul g/kg + suggestion calories
+      '<label style="display:flex;align-items:center;gap:8px;margin:18px 0 0;font-size:13.5px;color:var(--text);cursor:pointer;font-weight:600"><input type="checkbox" id="obj-poids-on"' + (poidsOn ? " checked" : "") + ' style="accent-color:var(--accent);width:17px;height:17px"> 💪 ' + T("Calculer selon mon poids", "Calculate from my weight") + "</label>" +
+      '<div id="obj-poids-box" style="margin-top:10px;' + (poidsOn ? "" : "display:none") + '">' +
+        '<div style="text-align:center"><span class="obj-kval" id="obj-pval" style="font-size:30px">' + pStart + '</span><span style="font-size:14px;color:var(--text-2)"> kg</span></div>' +
+        '<div style="display:flex;align-items:center;gap:10px;margin-top:6px">' +
+          '<button type="button" id="obj-p-minus" class="obj-step">−</button>' +
+          '<input type="range" id="obj-poids" min="40" max="150" step="1" value="' + pStart + '" style="flex:1;height:6px;accent-color:var(--accent);cursor:pointer">' +
+          '<button type="button" id="obj-p-plus" class="obj-step">+</button></div>' +
+        '<p style="color:var(--text-2);font-size:13px;margin:12px 0 6px">' + T("Mon activité", "My activity") + "</p>" +
+        '<div style="display:flex;flex-wrap:wrap;gap:8px">' + btnA + "</div>" +
+        '<div id="obj-suggestion" style="margin-top:12px;background:rgba(var(--accent-rgb),.1);border:1px solid rgba(var(--accent-rgb),.3);border-radius:12px;padding:11px 13px">' +
+          '<div id="obj-sugg-text" style="font-size:13px;color:var(--text);line-height:1.5"></div>' +
+          '<button type="button" id="obj-sugg-use" class="obj-cta" style="margin-top:9px;display:none">' + T("Utiliser ces calories", "Use these calories") + "</button></div>" +
+      "</div>" +
+      // 3) Calories par jour
+      '<p style="color:var(--text-2);font-size:14px;margin:18px 0 6px">' + T("Calories par jour", "Calories per day") + "</p>" +
       '<div style="text-align:center"><span class="obj-kval" id="obj-kval">' + kStart + '</span><span style="font-size:14px;color:var(--text-2)"> kcal</span></div>' +
       '<div style="display:flex;align-items:center;gap:10px;margin-top:8px">' +
         '<button type="button" id="obj-k-minus" class="obj-step">−</button>' +
@@ -152,40 +193,66 @@
         '<button type="button" id="obj-k-plus" class="obj-step">+</button></div>' +
       '<div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-3);margin-top:3px"><span>500</span><span>3500</span></div>' +
       '<label style="display:flex;align-items:center;gap:8px;margin-top:11px;font-size:13px;color:var(--text-2);cursor:pointer"><input type="checkbox" id="obj-k-none"' + (sansKcal ? " checked" : "") + ' style="accent-color:var(--accent);width:17px;height:17px"> ' + T("Pas d'objectif calorique (focus seul)", "No calorie goal (focus only)") + "</label>" +
-      '<p style="color:var(--text-2);font-size:14px;margin:18px 0 6px">' + T("Mon focus", "My focus") + "</p>" +
-      '<div style="display:flex;flex-wrap:wrap;gap:8px">' + btnF + "</div>" +
       '<button type="button" id="obj-save" style="width:100%;margin-top:18px;background:linear-gradient(90deg,var(--accent),#ff9330);color:#1a0e14;border:none;border-radius:12px;padding:12px;font-size:15px;font-weight:800;cursor:pointer">' + T("Enregistrer", "Save") + "</button></div>";
     document.body.appendChild(modal);
-    if (typeof window._backGuardPush === "function") window._backGuardPush(); // bouton retour ferme la modale
+    if (typeof window._backGuardPush === "function") window._backGuardPush();
 
-    let selK = kStart, selF = o.focus || "";
+    let selK = kStart, selF = o.focus || "", selP = pStart, selA = aStart, suggKcal = null;
     const valEl = modal.querySelector("#obj-kval");
     const range = modal.querySelector("#obj-k-range");
     const none = modal.querySelector("#obj-k-none");
     const minus = modal.querySelector("#obj-k-minus");
     const plus = modal.querySelector("#obj-k-plus");
+    const poidsOnEl = modal.querySelector("#obj-poids-on");
+    const poidsBox = modal.querySelector("#obj-poids-box");
+    const pRange = modal.querySelector("#obj-poids");
+    const pVal = modal.querySelector("#obj-pval");
+    const suggText = modal.querySelector("#obj-sugg-text");
+    const suggUse = modal.querySelector("#obj-sugg-use");
+
     const setK = (v) => { selK = Math.max(500, Math.min(3500, Math.round(v))); range.value = selK; valEl.textContent = selK; };
-    const majSansKcal = () => {
-      const off = none.checked;
-      range.disabled = off; minus.disabled = off; plus.disabled = off;
-      valEl.style.opacity = off ? ".3" : "1";
+    const majSansKcal = () => { const off = none.checked; range.disabled = off; minus.disabled = off; plus.disabled = off; valEl.style.opacity = off ? ".3" : "1"; };
+    // Recalcule la suggestion (calories conseillées + protéines g/kg) selon poids/activité/but.
+    const recompute = () => {
+      if (!poidsOnEl.checked) return;
+      const f = selF && FOCUS[selF];
+      const sk = suggererKcal(selP, selA, selF);
+      suggKcal = sk;
+      const protKg = (f && f.protKg) || 1.8;
+      const protG = Math.round(selP * protKg);
+      let txt = "💪 " + T("Protéines conseillées : ", "Recommended protein: ") + "<b>~" + protG + " g/" + T("jour", "day") + "</b> (" + protKg + " g/kg)";
+      if (sk) txt += "<br>🔥 " + T("Calories conseillées : ", "Recommended calories: ") + "<b>~" + sk + " kcal/" + T("jour", "day") + "</b>" + (selF ? " (" + T(FOCUS[selF].fr, FOCUS[selF].en) + ")" : "");
+      else txt += "<br>" + T("Choisis ton but et ton activité pour les calories conseillées.", "Pick your goal and activity for recommended calories.");
+      suggText.innerHTML = txt;
+      suggUse.style.display = sk ? "block" : "none";
     };
     range.addEventListener("input", () => setK(parseInt(range.value) || 1));
-    minus.addEventListener("click", () => { setK(selK - 10); });
-    plus.addEventListener("click", () => { setK(selK + 10); });
+    minus.addEventListener("click", () => setK(selK - 10));
+    plus.addEventListener("click", () => setK(selK + 10));
     none.addEventListener("change", majSansKcal);
     majSansKcal();
-    modal.querySelectorAll(".obj-f").forEach((b) => b.addEventListener("click", () => { selF = b.dataset.focus; modal.querySelectorAll(".obj-f").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); }));
+    // But
+    modal.querySelectorAll(".obj-f").forEach((b) => b.addEventListener("click", () => { selF = b.dataset.focus; modal.querySelectorAll(".obj-f").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); recompute(); }));
+    // Activité
+    modal.querySelectorAll(".obj-act").forEach((b) => b.addEventListener("click", () => { selA = b.dataset.act; modal.querySelectorAll(".obj-act").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); recompute(); }));
+    // Poids
+    const setP = (v) => { selP = Math.max(40, Math.min(150, Math.round(v))); pRange.value = selP; pVal.textContent = selP; recompute(); };
+    pRange.addEventListener("input", () => setP(parseInt(pRange.value) || 40));
+    modal.querySelector("#obj-p-minus").addEventListener("click", () => setP(selP - 1));
+    modal.querySelector("#obj-p-plus").addEventListener("click", () => setP(selP + 1));
+    poidsOnEl.addEventListener("change", () => { poidsBox.style.display = poidsOnEl.checked ? "" : "none"; recompute(); });
+    suggUse.addEventListener("click", () => { if (suggKcal) { none.checked = false; majSansKcal(); setK(suggKcal); } });
+    recompute();
+
     const fermer = () => modal.remove();
-    window.fermerObjectifs = fermer; // pour le bouton retour du téléphone
+    window.fermerObjectifs = fermer;
     modal.querySelector("#obj-close").addEventListener("click", fermer);
     modal.addEventListener("click", (e) => { if (e.target === modal) fermer(); });
     modal.querySelector("#obj-save").addEventListener("click", () => {
-      ecrire({ kcal: none.checked ? null : selK, focus: selF || null });
+      ecrire({ kcal: none.checked ? null : selK, focus: selF || null, poids: poidsOnEl.checked ? selP : null, activite: poidsOnEl.checked ? selA : null });
       fermer();
-      if (typeof window._refreshObjectifBloc === "function") window._refreshObjectifBloc(); // maj du bloc accueil
+      if (typeof window._refreshObjectifBloc === "function") window._refreshObjectifBloc();
       if (typeof afficherToast === "function") afficherToast(T("🎯 Objectif enregistré !", "🎯 Goal saved!"));
-      // Propose directement des recettes qui collent à l'objectif (zone « De quoi t'as envie »).
       if (typeof window.proposerSelonObjectif === "function") window.proposerSelonObjectif();
     });
   };
@@ -243,7 +310,10 @@
     const protJour = window.OBJ_protJour ? window.OBJ_protJour(o) : null;
     let stats = '<div class="obj-stats">';
     if (o.kcal) stats += '<span class="obj-stat"><b>' + o.kcal + "</b> kcal/" + T("jour", "day") + "</span>";
-    if (protJour) stats += '<span class="obj-stat">💪 <b>~' + protJour + "</b> g " + T("protéines/jour", "protein/day") + "</span>";
+    if (protJour) {
+      const gkg = o.poids ? " (" + (window.OBJ_protKg ? window.OBJ_protKg(o) : 1.8) + " g/kg)" : "";
+      stats += '<span class="obj-stat">💪 <b>~' + protJour + "</b> g " + T("protéines/jour", "protein/day") + gkg + "</span>";
+    }
     if (focus) stats += '<span class="obj-stat">' + focus.e + " " + T(focus.fr, focus.en) + "</span>";
     stats += "</div>";
 
