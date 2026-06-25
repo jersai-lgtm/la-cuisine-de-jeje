@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "2.9.6",
+    titre: "💪 Objectif : ton coach nutrition sportive",
+    texte: "La catégorie « 🎯 Objectif kcal » (sur l'accueil) devient un vrai coach fitness ! Calcule tes calories à partir de ton métabolisme de base + activité (Mifflin-St Jeor), fixe ta cible protéines en g/kg, ton hydratation, et choisis ton but : 🔥 sèche, 🏋️ prise de masse, 💪 protéiné… Puis « 🍽️ Composer ma journée » te génère un menu complet (matin → soir) qui atteint pile tes calories et tes protéines, avec verrouillage des repas que tu aimes. Et 22 nouvelles recettes protéinées : skyr bowl, omelette de blancs, poulet/poisson maigres, boules protéinées, shake… 🏋️"
+  },
+  {
     v: "2.3.5",
     titre: "🌡️ Suggestions selon la météo + objectif kcal",
     texte: "« Qu'est-ce qu'on mange ? » s'adapte maintenant à la météo : par forte chaleur 🥵, on te remonte les plats frais (salades, taboulé…) ; par grand froid 🥶, les plats réconfortants. Et l'objectif nutritionnel a déménagé : sous « 🎭 De quoi t'as envie ? », fixe tes calories/jour (ex. 2200) et l'appli te propose direct des repas qui rentrent dedans. 👨‍🍳"

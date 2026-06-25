@@ -498,6 +498,9 @@ function getIngredientsCourses(nom, personnes) {
 // Détermine l'unité (singulier/pluriel) selon la recette
 function getUniteRecette(nom, n) {
   const unites = {
+    // 💪 Recettes sport dosées par unité individuelle (shaker / boule)
+    "shakeproteinemaison": ["shaker","shakers"],
+    "boulesproteinees": ["boule","boules"],
     "pizzaamatriciana": ["pizza","pizzas"],
     "pizzagreca": ["pizza","pizzas"],
     "pizzapollobbq": ["pizza","pizzas"],

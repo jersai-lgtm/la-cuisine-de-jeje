@@ -46,6 +46,16 @@ const RECETTES_DESSERTS = [
   "cremecaramel","farbreton","galettedesrois"
 ];
 
+// 💪 Recettes "sport/fitness" — catégorie À PART : dosées par PERSONNE (l'athlète),
+// jamais au foyer (on ne fait pas un shaker à un enfant), et SANS accord boisson (vin).
+const RECETTES_SPORT = new Set([
+  "skyrbowlproteine","omeletteblancs","porridgewhey","oeufsbrouillesavocat","fbgranolaproteine",
+  "pouletrizbrocoli","dindelegumeswok","bowlpouletpatatedouce","colinquinoabrocoli","saladethonharicotsblancs","tempehpoelelegumes",
+  "steakhachepatatedouce","eminceboeufharicotsverts","crevettessauteesriz","pouletmarineyaourt","cabillaudvapeurcourgette","bowlthonrizavocat",
+  "boulesproteinees","cottagecheesefruits","oeufsdurspaprika","edamamepimentes","shakeproteinemaison"
+]);
+window.RECETTES_SPORT = RECETTES_SPORT;
+
 // Catégorie d'une recette, lue depuis la DONNÉE (recettes.js), pas le DOM.
 // Fiable même si les cartes ne sont pas (encore) rendues.
 function categorieRecette(key) {
@@ -1938,6 +1948,8 @@ function calculerPersonnesPourRecette(nom) {
   const base = (data && data.base) ? data.base : 4;
   const foyer = window.userProfile?.foyer;
   if (!foyer) return base;
+  // 💪 Recettes sport/fitness : dosage par PERSONNE (l'athlète), jamais au foyer.
+  if (typeof RECETTES_SPORT !== "undefined" && RECETTES_SPORT.has(nom)) return base;
   // Recettes "à l'unité" (pâtes, brioche, baguette…) : on garde leur base
   const exceptionsUnites = (window.EXCEPTIONS && window.EXCEPTIONS.unites) || [];
   if (exceptionsUnites.includes(nom)) return base;

@@ -29,6 +29,7 @@
     if (!r) return null;
     const cat = r.cat, pays = r.pays;
     if (cat === "cocktails" || cat === "mocktails") return null; // c'est déjà une boisson
+    if (typeof RECETTES_SPORT !== "undefined" && RECETTES_SPORT.has(key)) return null; // 💪 pas d'accord vin sur le sport
     const ing = ingredientsDe(key);
     const a = (arr) => arr.some((x) => ing.has(x));
 
