@@ -173,28 +173,38 @@
 
   // Propose des recettes-repas qui collent à l'objectif calorique (≈ 1/3 de la
   // journée par repas) + au focus. Appelé après réglage de l'objectif.
-  window.proposerSelonObjectif = function () {
+  // Propose des recettes pour UN moment de la journée (matin/midi/collation/soir) :
+  // chaque moment a sa part du budget kcal du jour (le matin et les collations comptent).
+  // Sans momentKey : repli sur « midi » si objectif kcal, sinon focus seul.
+  window.proposerSelonObjectif = function (momentKey) {
     let o = {};
     try { o = JSON.parse(localStorage.getItem("objectif_nutri") || "{}") || {}; } catch (e) {}
     if (!o.kcal && !o.focus) { if (typeof ouvrirObjectifs === "function") ouvrirObjectifs(); return; }
-    const cible = o.kcal ? o.kcal / 3 : null;             // un repas ≈ 1/3 de l'objectif du jour
-    const MEAL = new Set(["plats", "salades", "soupes", "pizzas", "healthy", "encas"]);
+    const MOMENTS = window.OBJ_MOMENTS || [];
+    const moment = MOMENTS.find((m) => m.k === momentKey) || (o.kcal ? MOMENTS.find((m) => m.k === "midi") : null);
+    const cats = moment ? new Set(moment.cats) : new Set(["plats", "salades", "soupes", "pizzas", "healthy", "encas"]);
+    const cible = (o.kcal && moment) ? Math.round(o.kcal * moment.pct) : (o.kcal ? Math.round(o.kcal / 3) : null);
     const exclus = motsExclus();
     const cand = [];
     for (const k of Object.keys(recettes)) {
       const r = recettes[k];
-      if (!r || !r.nom || !MEAL.has(r.cat)) continue;
+      if (!r || !r.nom || !cats.has(r.cat)) continue;
       if (!compatible(k, exclus)) continue;
       const cal = calPortion(r);
       if (cal == null) continue;
-      if (o.focus === "leger" && cal > 500) continue;
-      if (cible != null) { if (cal < cible * 0.5 || cal > cible * 1.35) continue; }
+      if (cible != null) {
+        const bas = cible * (o.focus === "leger" ? 0.4 : 0.55);
+        const haut = cible * (o.focus === "leger" ? 1.1 : 1.4);
+        if (cal < bas || cal > haut) continue;
+      }
       cand.push({ k, cal });
     }
     // tri par proximité à la cible (ou par calories croissantes si pas de cible)
     cand.sort((a, b) => cible != null ? Math.abs(a.cal - cible) - Math.abs(b.cal - cible) : a.cal - b.cal);
     const cles = cand.slice(0, 18).map((x) => x.k);
-    const titre = o.kcal ? ("🎯 " + T("Pour ~", "For ~") + o.kcal + " kcal/jour") : ("🎯 " + T("Pour ton objectif", "For your goal"));
+    const titre = moment
+      ? (moment.e + " " + T(moment.fr, moment.en) + (cible ? " · ~" + cible + " kcal" : ""))
+      : ("🎯 " + (o.kcal ? T("Pour ~", "For ~") + o.kcal + " kcal/jour" : T("Pour ton objectif", "For your goal")));
     montrerResultats(titre, cles);
   };
 

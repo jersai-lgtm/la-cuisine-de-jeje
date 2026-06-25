@@ -22,6 +22,17 @@
     gourmand: { fr: "Gourmand", en: "Indulgent", e: "😋" },
   };
 
+  // Répartition d'une journée : l'objectif kcal se répartit sur les moments (le matin
+  // et les collations comptent !). pct = part du budget du jour ; cats = catégories de
+  // recettes adaptées à ce moment. Somme des pct = 1. Exposé pour envie.js (suggestions).
+  const MOMENTS = [
+    { k: "matin", e: "🌅", fr: "Matin", en: "Morning", pct: 0.25, cats: ["brunch", "boulangerie", "tartinables"] },
+    { k: "midi", e: "☀️", fr: "Midi", en: "Lunch", pct: 0.35, cats: ["plats", "salades", "pizzas", "healthy", "soupes"] },
+    { k: "collation", e: "🍎", fr: "Collation", en: "Snack", pct: 0.10, cats: ["encas", "tartinables", "boulangerie", "desserts"] },
+    { k: "soir", e: "🌙", fr: "Soir", en: "Dinner", pct: 0.30, cats: ["plats", "salades", "soupes", "healthy"] },
+  ];
+  window.OBJ_MOMENTS = MOMENTS;
+
   // Nutrition par portion (réutilise calculerPrixCaloriesRecette).
   function nutriPortion(key) {
     const r = recettes[key];
@@ -188,6 +199,11 @@
       .obj-step:active{transform:scale(.94)}
       .obj-step:disabled{opacity:.3;cursor:default}
       #obj-k-range{flex:1;height:6px;accent-color:var(--accent);cursor:pointer}
+      .obj-jour-label{color:var(--text-2);font-size:12.5px;margin:2px 0 8px}
+      .obj-moments{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+      .obj-moment{display:flex;align-items:center;justify-content:space-between;gap:6px;background:rgba(var(--w),.06);border:1px solid rgba(var(--w),.14);border-radius:11px;padding:9px 11px;font-size:12.5px;color:var(--text);cursor:pointer;text-align:left}
+      .obj-moment b{color:var(--accent);font-weight:800;white-space:nowrap}
+      .obj-moment:hover{border-color:rgba(var(--accent-rgb),.5);background:rgba(var(--accent-rgb),.1)}
     `;
     document.head.appendChild(s);
   }
@@ -203,14 +219,25 @@
         '<button type="button" class="obj-cta" onclick="ouvrirObjectifs()">' + T("🎯 Définir mon objectif", "🎯 Set my goal") + "</button>";
     }
     const focus = o.focus && FOCUS[o.focus];
-    const parRepas = o.kcal ? Math.round(o.kcal / 3) : null;
     let stats = '<div class="obj-stats">';
     if (o.kcal) stats += '<span class="obj-stat"><b>' + o.kcal + "</b> kcal/" + T("jour", "day") + "</span>";
-    if (parRepas) stats += '<span class="obj-stat">≈ <b>' + parRepas + "</b> kcal/" + T("repas", "meal") + "</span>";
     if (focus) stats += '<span class="obj-stat">' + focus.e + " " + T(focus.fr, focus.en) + "</span>";
     stats += "</div>";
-    return head + stats +
-      '<button type="button" class="obj-cta" onclick="proposerSelonObjectif()">' + T("🍽️ Voir des repas qui rentrent", "🍽️ See meals that fit") + "</button>";
+
+    // Avec objectif kcal → on répartit sur la journée (matin/midi/collation/soir),
+    // chaque moment cliquable propose des recettes qui rentrent dans SA part.
+    let corps;
+    if (o.kcal) {
+      corps = '<div class="obj-jour-label">' + T("Ta journée — touche un moment pour des idées :", "Your day — tap a moment for ideas:") + "</div>" +
+        '<div class="obj-moments">' +
+        MOMENTS.map((m) => '<button type="button" class="obj-moment" onclick="proposerSelonObjectif(\'' + m.k + '\')">' +
+          "<span>" + m.e + " " + T(m.fr, m.en) + "</span><b>~" + Math.round(o.kcal * m.pct) + "</b></button>").join("") +
+        "</div>";
+    } else {
+      // focus seul (sans kcal) → un seul bouton « voir des repas »
+      corps = '<button type="button" class="obj-cta" onclick="proposerSelonObjectif()">' + T("🍽️ Voir des repas qui collent", "🍽️ See meals that fit") + "</button>";
+    }
+    return head + stats + corps;
   }
 
   function injecterBlocObjectif() {
