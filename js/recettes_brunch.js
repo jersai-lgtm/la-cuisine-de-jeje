@@ -1738,4 +1738,169 @@ Object.assign(recettes, {
       { icone: "🍞", titre: "Servir", detail: "Incorporer le haddock, servir sur une tartine grillée avec du persil.", badge: null }
     ]
   },
+  skyrbowlproteine: {
+    nom: "Skyr Bowl Protéiné",
+    cat: "brunch", pays: "monde",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "💪",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Skyr riche en protéines, banane, fruits rouges, flocons et beurre de cacahuète. Le petit-déj des sportifs, prêt en 5 minutes.",
+    tableauSkyrbowlproteine: [
+      { nb: 1, skyr: "200 g", banane: "60 g", fruitsrouges: "60 g", flocons: "30 g", beurrecacahuete: "15 g", miel: "10 g" },
+      { nb: 2, skyr: "400 g", banane: "120 g", fruitsrouges: "120 g", flocons: "60 g", beurrecacahuete: "30 g", miel: "20 g" },
+      { nb: 3, skyr: "600 g", banane: "180 g", fruitsrouges: "180 g", flocons: "90 g", beurrecacahuete: "45 g", miel: "30 g" },
+      { nb: 4, skyr: "800 g", banane: "240 g", fruitsrouges: "240 g", flocons: "120 g", beurrecacahuete: "60 g", miel: "40 g" },
+      { nb: 5, skyr: "1000 g", banane: "300 g", fruitsrouges: "300 g", flocons: "150 g", beurrecacahuete: "75 g", miel: "50 g" },
+      { nb: 6, skyr: "1200 g", banane: "360 g", fruitsrouges: "360 g", flocons: "180 g", beurrecacahuete: "90 g", miel: "60 g" },
+      { nb: 7, skyr: "1400 g", banane: "420 g", fruitsrouges: "420 g", flocons: "210 g", beurrecacahuete: "105 g", miel: "70 g" },
+      { nb: 8, skyr: "1600 g", banane: "480 g", fruitsrouges: "480 g", flocons: "240 g", beurrecacahuete: "120 g", miel: "80 g" },
+      { nb: 9, skyr: "1800 g", banane: "540 g", fruitsrouges: "540 g", flocons: "270 g", beurrecacahuete: "135 g", miel: "90 g" },
+      { nb: 10, skyr: "2000 g", banane: "600 g", fruitsrouges: "600 g", flocons: "300 g", beurrecacahuete: "150 g", miel: "100 g" },
+      { nb: 11, skyr: "2200 g", banane: "660 g", fruitsrouges: "660 g", flocons: "330 g", beurrecacahuete: "165 g", miel: "110 g" },
+      { nb: 12, skyr: "2400 g", banane: "720 g", fruitsrouges: "720 g", flocons: "360 g", beurrecacahuete: "180 g", miel: "120 g" },
+      { nb: 13, skyr: "2600 g", banane: "780 g", fruitsrouges: "780 g", flocons: "390 g", beurrecacahuete: "195 g", miel: "130 g" },
+      { nb: 14, skyr: "2800 g", banane: "840 g", fruitsrouges: "840 g", flocons: "420 g", beurrecacahuete: "210 g", miel: "140 g" },
+      { nb: 15, skyr: "3000 g", banane: "900 g", fruitsrouges: "900 g", flocons: "450 g", beurrecacahuete: "225 g", miel: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Base", detail: "Verser le skyr dans un bol.", badge: null },
+      { icone: "🍌", titre: "Garnir", detail: "Ajouter banane en rondelles, fruits rouges et flocons.", badge: null },
+      { icone: "🥜", titre: "Topping", detail: "Napper de beurre de cacahuète et d'un filet de miel.", badge: null }
+    ]
+  },
+  omeletteblancs: {
+    nom: "Omelette de Blancs aux Épinards",
+    cat: "brunch", pays: "monde",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Omelette ultra-protéinée et pauvre en gras : blancs d'œufs, épinards et fromage blanc. Idéale en sèche.",
+    tableauOmeletteblancs: [
+      { nb: 1, blancoeuf: "150 g", epinards: "60 g", fromageblanc: "40 g", huileOlive: "5 ml", sel: "1 g", poivre: "1 g" },
+      { nb: 2, blancoeuf: "300 g", epinards: "120 g", fromageblanc: "80 g", huileOlive: "10 ml", sel: "2 g", poivre: "2 g" },
+      { nb: 3, blancoeuf: "450 g", epinards: "180 g", fromageblanc: "120 g", huileOlive: "15 ml", sel: "3 g", poivre: "3 g" },
+      { nb: 4, blancoeuf: "600 g", epinards: "240 g", fromageblanc: "160 g", huileOlive: "20 ml", sel: "4 g", poivre: "4 g" },
+      { nb: 5, blancoeuf: "750 g", epinards: "300 g", fromageblanc: "200 g", huileOlive: "25 ml", sel: "5 g", poivre: "5 g" },
+      { nb: 6, blancoeuf: "900 g", epinards: "360 g", fromageblanc: "240 g", huileOlive: "30 ml", sel: "6 g", poivre: "6 g" },
+      { nb: 7, blancoeuf: "1050 g", epinards: "420 g", fromageblanc: "280 g", huileOlive: "35 ml", sel: "7 g", poivre: "7 g" },
+      { nb: 8, blancoeuf: "1200 g", epinards: "480 g", fromageblanc: "320 g", huileOlive: "40 ml", sel: "8 g", poivre: "8 g" },
+      { nb: 9, blancoeuf: "1350 g", epinards: "540 g", fromageblanc: "360 g", huileOlive: "45 ml", sel: "9 g", poivre: "9 g" },
+      { nb: 10, blancoeuf: "1500 g", epinards: "600 g", fromageblanc: "400 g", huileOlive: "50 ml", sel: "10 g", poivre: "10 g" },
+      { nb: 11, blancoeuf: "1650 g", epinards: "660 g", fromageblanc: "440 g", huileOlive: "55 ml", sel: "11 g", poivre: "11 g" },
+      { nb: 12, blancoeuf: "1800 g", epinards: "720 g", fromageblanc: "480 g", huileOlive: "60 ml", sel: "12 g", poivre: "12 g" },
+      { nb: 13, blancoeuf: "1950 g", epinards: "780 g", fromageblanc: "520 g", huileOlive: "65 ml", sel: "13 g", poivre: "13 g" },
+      { nb: 14, blancoeuf: "2100 g", epinards: "840 g", fromageblanc: "560 g", huileOlive: "70 ml", sel: "14 g", poivre: "14 g" },
+      { nb: 15, blancoeuf: "2250 g", epinards: "900 g", fromageblanc: "600 g", huileOlive: "75 ml", sel: "15 g", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Épinards", detail: "Faire tomber les épinards à la poêle avec un filet d'huile.", badge: null },
+      { icone: "🥚", titre: "Blancs", detail: "Verser les blancs battus, saler, poivrer.", badge: null },
+      { icone: "🧀", titre: "Plier", detail: "Ajouter le fromage blanc, plier et servir baveux.", badge: null }
+    ]
+  },
+  porridgewhey: {
+    nom: "Porridge Protéiné à la Whey",
+    cat: "brunch", pays: "monde",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Porridge de flocons d'avoine enrichi en whey, banane et beurre de cacahuète. Carburant parfait avant l'entraînement.",
+    tableauPorridgewhey: [
+      { nb: 1, flocons: "50 g", lait: "200 ml", whey: "25 g", banane: "60 g", beurrecacahuete: "10 g" },
+      { nb: 2, flocons: "100 g", lait: "400 ml", whey: "50 g", banane: "120 g", beurrecacahuete: "20 g" },
+      { nb: 3, flocons: "150 g", lait: "600 ml", whey: "75 g", banane: "180 g", beurrecacahuete: "30 g" },
+      { nb: 4, flocons: "200 g", lait: "800 ml", whey: "100 g", banane: "240 g", beurrecacahuete: "40 g" },
+      { nb: 5, flocons: "250 g", lait: "1000 ml", whey: "125 g", banane: "300 g", beurrecacahuete: "50 g" },
+      { nb: 6, flocons: "300 g", lait: "1200 ml", whey: "150 g", banane: "360 g", beurrecacahuete: "60 g" },
+      { nb: 7, flocons: "350 g", lait: "1400 ml", whey: "175 g", banane: "420 g", beurrecacahuete: "70 g" },
+      { nb: 8, flocons: "400 g", lait: "1600 ml", whey: "200 g", banane: "480 g", beurrecacahuete: "80 g" },
+      { nb: 9, flocons: "450 g", lait: "1800 ml", whey: "225 g", banane: "540 g", beurrecacahuete: "90 g" },
+      { nb: 10, flocons: "500 g", lait: "2000 ml", whey: "250 g", banane: "600 g", beurrecacahuete: "100 g" },
+      { nb: 11, flocons: "550 g", lait: "2200 ml", whey: "275 g", banane: "660 g", beurrecacahuete: "110 g" },
+      { nb: 12, flocons: "600 g", lait: "2400 ml", whey: "300 g", banane: "720 g", beurrecacahuete: "120 g" },
+      { nb: 13, flocons: "650 g", lait: "2600 ml", whey: "325 g", banane: "780 g", beurrecacahuete: "130 g" },
+      { nb: 14, flocons: "700 g", lait: "2800 ml", whey: "350 g", banane: "840 g", beurrecacahuete: "140 g" },
+      { nb: 15, flocons: "750 g", lait: "3000 ml", whey: "375 g", banane: "900 g", beurrecacahuete: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Cuire", detail: "Cuire les flocons dans le lait 5 min en remuant.", badge: null },
+      { icone: "💪", titre: "Whey", detail: "Hors du feu, incorporer la whey (pour ne pas la cuire).", badge: null },
+      { icone: "🍌", titre: "Servir", detail: "Ajouter banane et beurre de cacahuète.", badge: null }
+    ]
+  },
+  oeufsbrouillesavocat: {
+    nom: "Œufs Brouillés & Avocat",
+    cat: "brunch", pays: "monde",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🥑",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Œufs brouillés crémeux, avocat et pain complet. Protéines et bons gras pour bien démarrer.",
+    tableauOeufsbrouillesavocat: [
+      { nb: 1, oeuf: "120 g", avocat: "50 g", paincomplet: "60 g", huileOlive: "5 ml", sel: "1 g" },
+      { nb: 2, oeuf: "240 g", avocat: "100 g", paincomplet: "120 g", huileOlive: "10 ml", sel: "2 g" },
+      { nb: 3, oeuf: "360 g", avocat: "150 g", paincomplet: "180 g", huileOlive: "15 ml", sel: "3 g" },
+      { nb: 4, oeuf: "480 g", avocat: "200 g", paincomplet: "240 g", huileOlive: "20 ml", sel: "4 g" },
+      { nb: 5, oeuf: "600 g", avocat: "250 g", paincomplet: "300 g", huileOlive: "25 ml", sel: "5 g" },
+      { nb: 6, oeuf: "720 g", avocat: "300 g", paincomplet: "360 g", huileOlive: "30 ml", sel: "6 g" },
+      { nb: 7, oeuf: "840 g", avocat: "350 g", paincomplet: "420 g", huileOlive: "35 ml", sel: "7 g" },
+      { nb: 8, oeuf: "960 g", avocat: "400 g", paincomplet: "480 g", huileOlive: "40 ml", sel: "8 g" },
+      { nb: 9, oeuf: "1080 g", avocat: "450 g", paincomplet: "540 g", huileOlive: "45 ml", sel: "9 g" },
+      { nb: 10, oeuf: "1200 g", avocat: "500 g", paincomplet: "600 g", huileOlive: "50 ml", sel: "10 g" },
+      { nb: 11, oeuf: "1320 g", avocat: "550 g", paincomplet: "660 g", huileOlive: "55 ml", sel: "11 g" },
+      { nb: 12, oeuf: "1440 g", avocat: "600 g", paincomplet: "720 g", huileOlive: "60 ml", sel: "12 g" },
+      { nb: 13, oeuf: "1560 g", avocat: "650 g", paincomplet: "780 g", huileOlive: "65 ml", sel: "13 g" },
+      { nb: 14, oeuf: "1680 g", avocat: "700 g", paincomplet: "840 g", huileOlive: "70 ml", sel: "14 g" },
+      { nb: 15, oeuf: "1800 g", avocat: "750 g", paincomplet: "900 g", huileOlive: "75 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Brouiller", detail: "Cuire les œufs à feu doux en remuant pour garder le crémeux.", badge: null },
+      { icone: "🥑", titre: "Avocat", detail: "Écraser l'avocat sur le pain complet toasté.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Déposer les œufs sur le pain, saler.", badge: null }
+    ]
+  },
+  fbgranolaproteine: {
+    nom: "Fromage Blanc Granola Protéiné",
+    cat: "brunch", pays: "monde",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🥛",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Fromage blanc battu avec une dose de whey, granola croustillant et fruits rouges. Rassasiant et gourmand.",
+    tableauFbgranolaproteine: [
+      { nb: 1, fromageblanc: "200 g", whey: "15 g", granola: "40 g", fruitsrouges: "60 g", miel: "10 g" },
+      { nb: 2, fromageblanc: "400 g", whey: "30 g", granola: "80 g", fruitsrouges: "120 g", miel: "20 g" },
+      { nb: 3, fromageblanc: "600 g", whey: "45 g", granola: "120 g", fruitsrouges: "180 g", miel: "30 g" },
+      { nb: 4, fromageblanc: "800 g", whey: "60 g", granola: "160 g", fruitsrouges: "240 g", miel: "40 g" },
+      { nb: 5, fromageblanc: "1000 g", whey: "75 g", granola: "200 g", fruitsrouges: "300 g", miel: "50 g" },
+      { nb: 6, fromageblanc: "1200 g", whey: "90 g", granola: "240 g", fruitsrouges: "360 g", miel: "60 g" },
+      { nb: 7, fromageblanc: "1400 g", whey: "105 g", granola: "280 g", fruitsrouges: "420 g", miel: "70 g" },
+      { nb: 8, fromageblanc: "1600 g", whey: "120 g", granola: "320 g", fruitsrouges: "480 g", miel: "80 g" },
+      { nb: 9, fromageblanc: "1800 g", whey: "135 g", granola: "360 g", fruitsrouges: "540 g", miel: "90 g" },
+      { nb: 10, fromageblanc: "2000 g", whey: "150 g", granola: "400 g", fruitsrouges: "600 g", miel: "100 g" },
+      { nb: 11, fromageblanc: "2200 g", whey: "165 g", granola: "440 g", fruitsrouges: "660 g", miel: "110 g" },
+      { nb: 12, fromageblanc: "2400 g", whey: "180 g", granola: "480 g", fruitsrouges: "720 g", miel: "120 g" },
+      { nb: 13, fromageblanc: "2600 g", whey: "195 g", granola: "520 g", fruitsrouges: "780 g", miel: "130 g" },
+      { nb: 14, fromageblanc: "2800 g", whey: "210 g", granola: "560 g", fruitsrouges: "840 g", miel: "140 g" },
+      { nb: 15, fromageblanc: "3000 g", whey: "225 g", granola: "600 g", fruitsrouges: "900 g", miel: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Mélanger", detail: "Fouetter le fromage blanc avec la whey.", badge: null },
+      { icone: "🥣", titre: "Garnir", detail: "Ajouter granola et fruits rouges.", badge: null },
+      { icone: "🍯", titre: "Miel", detail: "Filet de miel et c'est prêt.", badge: null }
+    ]
+  }
 });

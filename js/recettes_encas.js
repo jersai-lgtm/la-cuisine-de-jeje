@@ -2545,4 +2545,167 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Dorer", detail: "Dorer la chimichanga dans un peu d'huile chaude sur toutes les faces. ASTUCE CHEF : ferme bien le rouleau côté pli en dessous au début de la cuisson — l'huile chaude le soude et il ne s'ouvre pas.", badge: "⏱ 6 min" }
     ]
   },
+  boulesproteinees: {
+    nom: "Boules Protéinées Avoine-Whey",
+    cat: "encas", pays: "monde",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "💪",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Boules d'énergie sans cuisson : flocons, whey, beurre de cacahuète et miel. La collation post-training à emporter.",
+    tableauBoulesproteinees: [
+      { nb: 1, flocons: "40 g", whey: "20 g", beurrecacahuete: "20 g", banane: "30 g", miel: "15 g" },
+      { nb: 2, flocons: "80 g", whey: "40 g", beurrecacahuete: "40 g", banane: "60 g", miel: "30 g" },
+      { nb: 3, flocons: "120 g", whey: "60 g", beurrecacahuete: "60 g", banane: "90 g", miel: "45 g" },
+      { nb: 4, flocons: "160 g", whey: "80 g", beurrecacahuete: "80 g", banane: "120 g", miel: "60 g" },
+      { nb: 5, flocons: "200 g", whey: "100 g", beurrecacahuete: "100 g", banane: "150 g", miel: "75 g" },
+      { nb: 6, flocons: "240 g", whey: "120 g", beurrecacahuete: "120 g", banane: "180 g", miel: "90 g" },
+      { nb: 7, flocons: "280 g", whey: "140 g", beurrecacahuete: "140 g", banane: "210 g", miel: "105 g" },
+      { nb: 8, flocons: "320 g", whey: "160 g", beurrecacahuete: "160 g", banane: "240 g", miel: "120 g" },
+      { nb: 9, flocons: "360 g", whey: "180 g", beurrecacahuete: "180 g", banane: "270 g", miel: "135 g" },
+      { nb: 10, flocons: "400 g", whey: "200 g", beurrecacahuete: "200 g", banane: "300 g", miel: "150 g" },
+      { nb: 11, flocons: "440 g", whey: "220 g", beurrecacahuete: "220 g", banane: "330 g", miel: "165 g" },
+      { nb: 12, flocons: "480 g", whey: "240 g", beurrecacahuete: "240 g", banane: "360 g", miel: "180 g" },
+      { nb: 13, flocons: "520 g", whey: "260 g", beurrecacahuete: "260 g", banane: "390 g", miel: "195 g" },
+      { nb: 14, flocons: "560 g", whey: "280 g", beurrecacahuete: "280 g", banane: "420 g", miel: "210 g" },
+      { nb: 15, flocons: "600 g", whey: "300 g", beurrecacahuete: "300 g", banane: "450 g", miel: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Mélanger", detail: "Mélanger tous les ingrédients en pâte.", badge: null },
+      { icone: "🟤", titre: "Façonner", detail: "Former des petites boules.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Réserver 30 min au frais.", badge: "⏱ 30 min" }
+    ]
+  },
+  cottagecheesefruits: {
+    nom: "Cottage Cheese aux Fruits",
+    cat: "encas", pays: "monde",
+    base: 1,
+    temps: "5 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Cottage cheese riche en caséine, fruits rouges et flocons. La collation idéale avant la nuit.",
+    tableauCottagecheesefruits: [
+      { nb: 1, cottage: "150 g", fruitsrouges: "60 g", flocons: "15 g", miel: "10 g" },
+      { nb: 2, cottage: "300 g", fruitsrouges: "120 g", flocons: "30 g", miel: "20 g" },
+      { nb: 3, cottage: "450 g", fruitsrouges: "180 g", flocons: "45 g", miel: "30 g" },
+      { nb: 4, cottage: "600 g", fruitsrouges: "240 g", flocons: "60 g", miel: "40 g" },
+      { nb: 5, cottage: "750 g", fruitsrouges: "300 g", flocons: "75 g", miel: "50 g" },
+      { nb: 6, cottage: "900 g", fruitsrouges: "360 g", flocons: "90 g", miel: "60 g" },
+      { nb: 7, cottage: "1050 g", fruitsrouges: "420 g", flocons: "105 g", miel: "70 g" },
+      { nb: 8, cottage: "1200 g", fruitsrouges: "480 g", flocons: "120 g", miel: "80 g" },
+      { nb: 9, cottage: "1350 g", fruitsrouges: "540 g", flocons: "135 g", miel: "90 g" },
+      { nb: 10, cottage: "1500 g", fruitsrouges: "600 g", flocons: "150 g", miel: "100 g" },
+      { nb: 11, cottage: "1650 g", fruitsrouges: "660 g", flocons: "165 g", miel: "110 g" },
+      { nb: 12, cottage: "1800 g", fruitsrouges: "720 g", flocons: "180 g", miel: "120 g" },
+      { nb: 13, cottage: "1950 g", fruitsrouges: "780 g", flocons: "195 g", miel: "130 g" },
+      { nb: 14, cottage: "2100 g", fruitsrouges: "840 g", flocons: "210 g", miel: "140 g" },
+      { nb: 15, cottage: "2250 g", fruitsrouges: "900 g", flocons: "225 g", miel: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Base", detail: "Verser le cottage cheese dans un bol.", badge: null },
+      { icone: "🍓", titre: "Garnir", detail: "Ajouter fruits rouges et flocons.", badge: null },
+      { icone: "🍯", titre: "Miel", detail: "Filet de miel.", badge: null }
+    ]
+  },
+  oeufsdurspaprika: {
+    nom: "Œufs Durs au Paprika",
+    cat: "encas", pays: "monde",
+    base: 1,
+    temps: "12 min",
+    niveau: "⭐ Facile",
+    emoji: "🥚",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Le snack protéiné le plus simple : œufs durs saupoudrés de paprika. Pratique et économique.",
+    tableauOeufsdurspaprika: [
+      { nb: 1, oeuf: "120 g", paprika: "2 g", sel: "1 g" },
+      { nb: 2, oeuf: "240 g", paprika: "4 g", sel: "2 g" },
+      { nb: 3, oeuf: "360 g", paprika: "6 g", sel: "3 g" },
+      { nb: 4, oeuf: "480 g", paprika: "8 g", sel: "4 g" },
+      { nb: 5, oeuf: "600 g", paprika: "10 g", sel: "5 g" },
+      { nb: 6, oeuf: "720 g", paprika: "12 g", sel: "6 g" },
+      { nb: 7, oeuf: "840 g", paprika: "14 g", sel: "7 g" },
+      { nb: 8, oeuf: "960 g", paprika: "16 g", sel: "8 g" },
+      { nb: 9, oeuf: "1080 g", paprika: "18 g", sel: "9 g" },
+      { nb: 10, oeuf: "1200 g", paprika: "20 g", sel: "10 g" },
+      { nb: 11, oeuf: "1320 g", paprika: "22 g", sel: "11 g" },
+      { nb: 12, oeuf: "1440 g", paprika: "24 g", sel: "12 g" },
+      { nb: 13, oeuf: "1560 g", paprika: "26 g", sel: "13 g" },
+      { nb: 14, oeuf: "1680 g", paprika: "28 g", sel: "14 g" },
+      { nb: 15, oeuf: "1800 g", paprika: "30 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Cuire", detail: "Cuire les œufs 9 min dans l'eau bouillante.", badge: "⏱ 9 min" },
+      { icone: "❄️", titre: "Refroidir", detail: "Refroidir et écaler.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Saupoudrer de paprika et de sel.", badge: null }
+    ]
+  },
+  edamamepimentes: {
+    nom: "Edamame Pimentés",
+    cat: "encas", pays: "japon",
+    base: 1,
+    temps: "8 min",
+    niveau: "⭐ Facile",
+    emoji: "🟢",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Fèves d'edamame riches en protéines végétales, relevées au piment et à la sauce soja. À grignoter sans culpabiliser.",
+    tableauEdamamepimentes: [
+      { nb: 1, edamame: "150 g", saucesoja: "5 ml", piment: "1 g", sel: "2 g" },
+      { nb: 2, edamame: "300 g", saucesoja: "10 ml", piment: "2 g", sel: "4 g" },
+      { nb: 3, edamame: "450 g", saucesoja: "15 ml", piment: "3 g", sel: "6 g" },
+      { nb: 4, edamame: "600 g", saucesoja: "20 ml", piment: "4 g", sel: "8 g" },
+      { nb: 5, edamame: "750 g", saucesoja: "25 ml", piment: "5 g", sel: "10 g" },
+      { nb: 6, edamame: "900 g", saucesoja: "30 ml", piment: "6 g", sel: "12 g" },
+      { nb: 7, edamame: "1050 g", saucesoja: "35 ml", piment: "7 g", sel: "14 g" },
+      { nb: 8, edamame: "1200 g", saucesoja: "40 ml", piment: "8 g", sel: "16 g" },
+      { nb: 9, edamame: "1350 g", saucesoja: "45 ml", piment: "9 g", sel: "18 g" },
+      { nb: 10, edamame: "1500 g", saucesoja: "50 ml", piment: "10 g", sel: "20 g" },
+      { nb: 11, edamame: "1650 g", saucesoja: "55 ml", piment: "11 g", sel: "22 g" },
+      { nb: 12, edamame: "1800 g", saucesoja: "60 ml", piment: "12 g", sel: "24 g" },
+      { nb: 13, edamame: "1950 g", saucesoja: "65 ml", piment: "13 g", sel: "26 g" },
+      { nb: 14, edamame: "2100 g", saucesoja: "70 ml", piment: "14 g", sel: "28 g" },
+      { nb: 15, edamame: "2250 g", saucesoja: "75 ml", piment: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Cuire", detail: "Cuire les edamame 5 min dans l'eau salée.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Égoutter, mélanger sauce soja, piment et sel.", badge: null }
+    ]
+  },
+  shakeproteinemaison: {
+    nom: "Shake Protéiné Maison",
+    cat: "encas", pays: "monde",
+    base: 1,
+    temps: "3 min",
+    niveau: "⭐ Facile",
+    emoji: "🥤",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Shake post-training : whey, lait, banane et beurre de cacahuète. Récupération et plaisir en un verre.",
+    tableauShakeproteinemaison: [
+      { nb: 1, whey: "30 g", lait: "250 ml", banane: "80 g", beurrecacahuete: "15 g" },
+      { nb: 2, whey: "60 g", lait: "500 ml", banane: "160 g", beurrecacahuete: "30 g" },
+      { nb: 3, whey: "90 g", lait: "750 ml", banane: "240 g", beurrecacahuete: "45 g" },
+      { nb: 4, whey: "120 g", lait: "1000 ml", banane: "320 g", beurrecacahuete: "60 g" },
+      { nb: 5, whey: "150 g", lait: "1250 ml", banane: "400 g", beurrecacahuete: "75 g" },
+      { nb: 6, whey: "180 g", lait: "1500 ml", banane: "480 g", beurrecacahuete: "90 g" },
+      { nb: 7, whey: "210 g", lait: "1750 ml", banane: "560 g", beurrecacahuete: "105 g" },
+      { nb: 8, whey: "240 g", lait: "2000 ml", banane: "640 g", beurrecacahuete: "120 g" },
+      { nb: 9, whey: "270 g", lait: "2250 ml", banane: "720 g", beurrecacahuete: "135 g" },
+      { nb: 10, whey: "300 g", lait: "2500 ml", banane: "800 g", beurrecacahuete: "150 g" },
+      { nb: 11, whey: "330 g", lait: "2750 ml", banane: "880 g", beurrecacahuete: "165 g" },
+      { nb: 12, whey: "360 g", lait: "3000 ml", banane: "960 g", beurrecacahuete: "180 g" },
+      { nb: 13, whey: "390 g", lait: "3250 ml", banane: "1040 g", beurrecacahuete: "195 g" },
+      { nb: 14, whey: "420 g", lait: "3500 ml", banane: "1120 g", beurrecacahuete: "210 g" },
+      { nb: 15, whey: "450 g", lait: "3750 ml", banane: "1200 g", beurrecacahuete: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥤", titre: "Mixer", detail: "Mixer tous les ingrédients 30 secondes.", badge: null },
+      { icone: "🧊", titre: "Servir", detail: "Servir frais, éventuellement avec des glaçons.", badge: null }
+    ]
+  }
 });

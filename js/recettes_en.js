@@ -32998,5 +32998,27 @@ window.RECETTES_EN = {
     "detail": "Let rest 30 minutes so the potatoes soak it all up. Sprinkle with parsley."
    }
   ]
- }
+ },
+  skyrbowlproteine: { nom: "Protein Skyr Bowl", description: "High-protein skyr, banana, berries, oats and peanut butter. The athlete's breakfast, ready in 5 minutes." },
+  omeletteblancs: { nom: "Egg-White & Spinach Omelette", description: "Ultra-high-protein, low-fat omelette: egg whites, spinach and fromage blanc. Perfect for cutting." },
+  porridgewhey: { nom: "Whey Protein Porridge", description: "Oat porridge boosted with whey, banana and peanut butter. Perfect pre-workout fuel." },
+  oeufsbrouillesavocat: { nom: "Scrambled Eggs & Avocado", description: "Creamy scrambled eggs, avocado and wholegrain bread. Protein and healthy fats to start the day." },
+  fbgranolaproteine: { nom: "Protein Fromage Blanc & Granola", description: "Fromage blanc whipped with a scoop of whey, crunchy granola and berries. Filling and tasty." },
+  pouletrizbrocoli: { nom: "Grilled Chicken, Rice & Broccoli", description: "The lean-bulking classic: grilled chicken breast, rice and steamed broccoli. Simple, clean, effective." },
+  dindelegumeswok: { nom: "Stir-Fried Turkey & Veggies", description: "Lean turkey strips stir-fried with zucchini and pepper, soy sauce and ginger. Light and high in protein." },
+  bowlpouletpatatedouce: { nom: "Chicken & Sweet Potato Bowl", description: "Complete bowl: roasted chicken, sweet potato, spinach and avocado. Slow carbs and protein to power your day." },
+  colinquinoabrocoli: { nom: "Pollock Fillet, Quinoa & Broccoli", description: "Lean white fish, protein-rich quinoa and broccoli. A light, complete meal, perfect for dinner." },
+  saladethonharicotsblancs: { nom: "Tuna & White Bean Salad", description: "High-protein cold salad: tuna, white beans, tomato and red onion. Ready in 10 minutes, great for meal-prep." },
+  tempehpoelelegumes: { nom: "Pan-Fried Tempeh & Veggies", description: "Tempeh, a complete plant protein, pan-fried with broccoli and pepper, soy-ginger sauce. Vegan and filling." },
+  steakhachepatatedouce: { nom: "Lean Beef Patty & Sweet Potato", description: "5%-fat beef patty, sweet potato and green beans. Lean protein and slow carbs." },
+  eminceboeufharicotsverts: { nom: "Beef Strips & Green Beans", description: "Lean beef strips stir-fried with green beans, garlic and ginger. Rich in protein and iron." },
+  crevettessauteesriz: { nom: "Stir-Fried Shrimp & Rice", description: "Lean, high-protein shrimp stir-fried with broccoli, garlic and ginger. Light and quick." },
+  pouletmarineyaourt: { nom: "Yogurt-Marinated Spiced Chicken", description: "Chicken marinated in yogurt, paprika and cumin then grilled, served with rice. Tender, fragrant and high-protein." },
+  cabillaudvapeurcourgette: { nom: "Steamed Cod, Rice & Zucchini", description: "Ultra-lean steamed cod, rice and lemony zucchini. The perfect cutting dinner." },
+  bowlthonrizavocat: { nom: "Tuna, Rice & Avocado Bowl", description: "Poke-style bowl: tuna, rice, avocado, cucumber and edamame, soy sauce. Fresh, high-protein and filling." },
+  boulesproteinees: { nom: "Oat-Whey Protein Balls", description: "No-bake energy balls: oats, whey, peanut butter and honey. The grab-and-go post-workout snack." },
+  cottagecheesefruits: { nom: "Cottage Cheese & Fruit", description: "Casein-rich cottage cheese, berries and oats. The ideal bedtime snack." },
+  oeufsdurspaprika: { nom: "Paprika Hard-Boiled Eggs", description: "The simplest protein snack: hard-boiled eggs dusted with paprika. Handy and cheap." },
+  edamamepimentes: { nom: "Spicy Edamame", description: "Protein-rich edamame beans spiced with chilli and soy sauce. Guilt-free snacking." },
+  shakeproteinemaison: { nom: "Homemade Protein Shake", description: "Post-workout shake: whey, milk, banana and peanut butter. Recovery and pleasure in one glass." }
 };

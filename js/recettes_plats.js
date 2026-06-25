@@ -13365,4 +13365,202 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Finir", detail: "Arroser de citron, d'huile à l'ail et de persil.", badge: null }
     ]
   },
+  steakhachepatatedouce: {
+    nom: "Steak Haché 5% & Patate Douce",
+    cat: "plats", pays: "monde",
+    base: 1,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥩",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Steak haché 5% de matière grasse, patate douce et haricots verts. Protéines maigres et glucides lents.",
+    tableauSteakhachepatatedouce: [
+      { nb: 1, steakhache5: "150 g", patatedouce: "150 g", haricotsverts: "100 g", huileOlive: "8 ml", ail: "3 g" },
+      { nb: 2, steakhache5: "300 g", patatedouce: "300 g", haricotsverts: "200 g", huileOlive: "16 ml", ail: "6 g" },
+      { nb: 3, steakhache5: "450 g", patatedouce: "450 g", haricotsverts: "300 g", huileOlive: "24 ml", ail: "9 g" },
+      { nb: 4, steakhache5: "600 g", patatedouce: "600 g", haricotsverts: "400 g", huileOlive: "32 ml", ail: "12 g" },
+      { nb: 5, steakhache5: "750 g", patatedouce: "750 g", haricotsverts: "500 g", huileOlive: "40 ml", ail: "15 g" },
+      { nb: 6, steakhache5: "900 g", patatedouce: "900 g", haricotsverts: "600 g", huileOlive: "48 ml", ail: "18 g" },
+      { nb: 7, steakhache5: "1050 g", patatedouce: "1050 g", haricotsverts: "700 g", huileOlive: "56 ml", ail: "21 g" },
+      { nb: 8, steakhache5: "1200 g", patatedouce: "1200 g", haricotsverts: "800 g", huileOlive: "64 ml", ail: "24 g" },
+      { nb: 9, steakhache5: "1350 g", patatedouce: "1350 g", haricotsverts: "900 g", huileOlive: "72 ml", ail: "27 g" },
+      { nb: 10, steakhache5: "1500 g", patatedouce: "1500 g", haricotsverts: "1000 g", huileOlive: "80 ml", ail: "30 g" },
+      { nb: 11, steakhache5: "1650 g", patatedouce: "1650 g", haricotsverts: "1100 g", huileOlive: "88 ml", ail: "33 g" },
+      { nb: 12, steakhache5: "1800 g", patatedouce: "1800 g", haricotsverts: "1200 g", huileOlive: "96 ml", ail: "36 g" },
+      { nb: 13, steakhache5: "1950 g", patatedouce: "1950 g", haricotsverts: "1300 g", huileOlive: "104 ml", ail: "39 g" },
+      { nb: 14, steakhache5: "2100 g", patatedouce: "2100 g", haricotsverts: "1400 g", huileOlive: "112 ml", ail: "42 g" },
+      { nb: 15, steakhache5: "2250 g", patatedouce: "2250 g", haricotsverts: "1500 g", huileOlive: "120 ml", ail: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "Patate douce", detail: "Rôtir en dés 25 min à 200°C.", badge: null },
+      { icone: "🫘", titre: "Haricots", detail: "Cuire les haricots verts vapeur.", badge: null },
+      { icone: "🥩", titre: "Steak", detail: "Saisir le steak 2-3 min par face.", badge: null }
+    ]
+  },
+  eminceboeufharicotsverts: {
+    nom: "Émincé de Bœuf & Haricots Verts",
+    cat: "plats", pays: "monde",
+    base: 1,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥩",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Bœuf maigre émincé sauté au wok avec haricots verts, ail et gingembre. Riche en protéines et en fer.",
+    tableauEminceboeufharicotsverts: [
+      { nb: 1, boeuf: "150 g", haricotsverts: "150 g", riz: "60 g", saucesoja: "12 ml", ail: "4 g", gingembre: "4 g", huileOlive: "8 ml" },
+      { nb: 2, boeuf: "300 g", haricotsverts: "300 g", riz: "120 g", saucesoja: "24 ml", ail: "8 g", gingembre: "8 g", huileOlive: "16 ml" },
+      { nb: 3, boeuf: "450 g", haricotsverts: "450 g", riz: "180 g", saucesoja: "36 ml", ail: "12 g", gingembre: "12 g", huileOlive: "24 ml" },
+      { nb: 4, boeuf: "600 g", haricotsverts: "600 g", riz: "240 g", saucesoja: "48 ml", ail: "16 g", gingembre: "16 g", huileOlive: "32 ml" },
+      { nb: 5, boeuf: "750 g", haricotsverts: "750 g", riz: "300 g", saucesoja: "60 ml", ail: "20 g", gingembre: "20 g", huileOlive: "40 ml" },
+      { nb: 6, boeuf: "900 g", haricotsverts: "900 g", riz: "360 g", saucesoja: "72 ml", ail: "24 g", gingembre: "24 g", huileOlive: "48 ml" },
+      { nb: 7, boeuf: "1050 g", haricotsverts: "1050 g", riz: "420 g", saucesoja: "84 ml", ail: "28 g", gingembre: "28 g", huileOlive: "56 ml" },
+      { nb: 8, boeuf: "1200 g", haricotsverts: "1200 g", riz: "480 g", saucesoja: "96 ml", ail: "32 g", gingembre: "32 g", huileOlive: "64 ml" },
+      { nb: 9, boeuf: "1350 g", haricotsverts: "1350 g", riz: "540 g", saucesoja: "108 ml", ail: "36 g", gingembre: "36 g", huileOlive: "72 ml" },
+      { nb: 10, boeuf: "1500 g", haricotsverts: "1500 g", riz: "600 g", saucesoja: "120 ml", ail: "40 g", gingembre: "40 g", huileOlive: "80 ml" },
+      { nb: 11, boeuf: "1650 g", haricotsverts: "1650 g", riz: "660 g", saucesoja: "132 ml", ail: "44 g", gingembre: "44 g", huileOlive: "88 ml" },
+      { nb: 12, boeuf: "1800 g", haricotsverts: "1800 g", riz: "720 g", saucesoja: "144 ml", ail: "48 g", gingembre: "48 g", huileOlive: "96 ml" },
+      { nb: 13, boeuf: "1950 g", haricotsverts: "1950 g", riz: "780 g", saucesoja: "156 ml", ail: "52 g", gingembre: "52 g", huileOlive: "104 ml" },
+      { nb: 14, boeuf: "2100 g", haricotsverts: "2100 g", riz: "840 g", saucesoja: "168 ml", ail: "56 g", gingembre: "56 g", huileOlive: "112 ml" },
+      { nb: 15, boeuf: "2250 g", haricotsverts: "2250 g", riz: "900 g", saucesoja: "180 ml", ail: "60 g", gingembre: "60 g", huileOlive: "120 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
+      { icone: "🥩", titre: "Bœuf", detail: "Saisir l'émincé à feu vif 2 min.", badge: null },
+      { icone: "🫘", titre: "Légumes", detail: "Ajouter haricots, ail, gingembre, sauce soja.", badge: null }
+    ]
+  },
+  crevettessauteesriz: {
+    nom: "Crevettes Sautées au Riz",
+    cat: "plats", pays: "monde",
+    base: 1,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍤",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Crevettes maigres et riches en protéines, sautées avec brocoli, ail et gingembre. Léger et rapide.",
+    tableauCrevettessauteesriz: [
+      { nb: 1, crevettes: "120 g", riz: "70 g", brocoli: "80 g", ail: "4 g", gingembre: "4 g", saucesoja: "10 ml", huileOlive: "8 ml" },
+      { nb: 2, crevettes: "240 g", riz: "140 g", brocoli: "160 g", ail: "8 g", gingembre: "8 g", saucesoja: "20 ml", huileOlive: "16 ml" },
+      { nb: 3, crevettes: "360 g", riz: "210 g", brocoli: "240 g", ail: "12 g", gingembre: "12 g", saucesoja: "30 ml", huileOlive: "24 ml" },
+      { nb: 4, crevettes: "480 g", riz: "280 g", brocoli: "320 g", ail: "16 g", gingembre: "16 g", saucesoja: "40 ml", huileOlive: "32 ml" },
+      { nb: 5, crevettes: "600 g", riz: "350 g", brocoli: "400 g", ail: "20 g", gingembre: "20 g", saucesoja: "50 ml", huileOlive: "40 ml" },
+      { nb: 6, crevettes: "720 g", riz: "420 g", brocoli: "480 g", ail: "24 g", gingembre: "24 g", saucesoja: "60 ml", huileOlive: "48 ml" },
+      { nb: 7, crevettes: "840 g", riz: "490 g", brocoli: "560 g", ail: "28 g", gingembre: "28 g", saucesoja: "70 ml", huileOlive: "56 ml" },
+      { nb: 8, crevettes: "960 g", riz: "560 g", brocoli: "640 g", ail: "32 g", gingembre: "32 g", saucesoja: "80 ml", huileOlive: "64 ml" },
+      { nb: 9, crevettes: "1080 g", riz: "630 g", brocoli: "720 g", ail: "36 g", gingembre: "36 g", saucesoja: "90 ml", huileOlive: "72 ml" },
+      { nb: 10, crevettes: "1200 g", riz: "700 g", brocoli: "800 g", ail: "40 g", gingembre: "40 g", saucesoja: "100 ml", huileOlive: "80 ml" },
+      { nb: 11, crevettes: "1320 g", riz: "770 g", brocoli: "880 g", ail: "44 g", gingembre: "44 g", saucesoja: "110 ml", huileOlive: "88 ml" },
+      { nb: 12, crevettes: "1440 g", riz: "840 g", brocoli: "960 g", ail: "48 g", gingembre: "48 g", saucesoja: "120 ml", huileOlive: "96 ml" },
+      { nb: 13, crevettes: "1560 g", riz: "910 g", brocoli: "1040 g", ail: "52 g", gingembre: "52 g", saucesoja: "130 ml", huileOlive: "104 ml" },
+      { nb: 14, crevettes: "1680 g", riz: "980 g", brocoli: "1120 g", ail: "56 g", gingembre: "56 g", saucesoja: "140 ml", huileOlive: "112 ml" },
+      { nb: 15, crevettes: "1800 g", riz: "1050 g", brocoli: "1200 g", ail: "60 g", gingembre: "60 g", saucesoja: "150 ml", huileOlive: "120 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
+      { icone: "🥦", titre: "Brocoli", detail: "Sauter le brocoli 4 min.", badge: null },
+      { icone: "🍤", titre: "Crevettes", detail: "Ajouter crevettes, ail, gingembre, sauce soja, 3 min.", badge: null }
+    ]
+  },
+  pouletmarineyaourt: {
+    nom: "Poulet Mariné Yaourt & Épices",
+    cat: "plats", pays: "monde",
+    base: 1,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Poulet mariné au yaourt, paprika et cumin puis grillé, servi avec du riz. Tendre, parfumé et protéiné.",
+    tableauPouletmarineyaourt: [
+      { nb: 1, poulet: "160 g", yaourt: "60 g", riz: "60 g", paprika: "3 g", cumin: "2 g", ail: "4 g", citron: "15 g" },
+      { nb: 2, poulet: "320 g", yaourt: "120 g", riz: "120 g", paprika: "6 g", cumin: "4 g", ail: "8 g", citron: "30 g" },
+      { nb: 3, poulet: "480 g", yaourt: "180 g", riz: "180 g", paprika: "9 g", cumin: "6 g", ail: "12 g", citron: "45 g" },
+      { nb: 4, poulet: "640 g", yaourt: "240 g", riz: "240 g", paprika: "12 g", cumin: "8 g", ail: "16 g", citron: "60 g" },
+      { nb: 5, poulet: "800 g", yaourt: "300 g", riz: "300 g", paprika: "15 g", cumin: "10 g", ail: "20 g", citron: "75 g" },
+      { nb: 6, poulet: "960 g", yaourt: "360 g", riz: "360 g", paprika: "18 g", cumin: "12 g", ail: "24 g", citron: "90 g" },
+      { nb: 7, poulet: "1120 g", yaourt: "420 g", riz: "420 g", paprika: "21 g", cumin: "14 g", ail: "28 g", citron: "105 g" },
+      { nb: 8, poulet: "1280 g", yaourt: "480 g", riz: "480 g", paprika: "24 g", cumin: "16 g", ail: "32 g", citron: "120 g" },
+      { nb: 9, poulet: "1440 g", yaourt: "540 g", riz: "540 g", paprika: "27 g", cumin: "18 g", ail: "36 g", citron: "135 g" },
+      { nb: 10, poulet: "1600 g", yaourt: "600 g", riz: "600 g", paprika: "30 g", cumin: "20 g", ail: "40 g", citron: "150 g" },
+      { nb: 11, poulet: "1760 g", yaourt: "660 g", riz: "660 g", paprika: "33 g", cumin: "22 g", ail: "44 g", citron: "165 g" },
+      { nb: 12, poulet: "1920 g", yaourt: "720 g", riz: "720 g", paprika: "36 g", cumin: "24 g", ail: "48 g", citron: "180 g" },
+      { nb: 13, poulet: "2080 g", yaourt: "780 g", riz: "780 g", paprika: "39 g", cumin: "26 g", ail: "52 g", citron: "195 g" },
+      { nb: 14, poulet: "2240 g", yaourt: "840 g", riz: "840 g", paprika: "42 g", cumin: "28 g", ail: "56 g", citron: "210 g" },
+      { nb: 15, poulet: "2400 g", yaourt: "900 g", riz: "900 g", paprika: "45 g", cumin: "30 g", ail: "60 g", citron: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Mariner", detail: "Mélanger yaourt, paprika, cumin, ail ; enrober le poulet 15 min.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
+      { icone: "🍗", titre: "Griller", detail: "Griller le poulet mariné 5 min par face.", badge: null }
+    ]
+  },
+  cabillaudvapeurcourgette: {
+    nom: "Cabillaud Vapeur, Riz & Courgette",
+    cat: "plats", pays: "monde",
+    base: 1,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Cabillaud vapeur ultra-maigre, riz et courgette au citron. Le repas du soir parfait en sèche.",
+    tableauCabillaudvapeurcourgette: [
+      { nb: 1, cabillaud: "150 g", riz: "60 g", courgette: "100 g", citron: "20 g", huileOlive: "6 ml", ail: "3 g" },
+      { nb: 2, cabillaud: "300 g", riz: "120 g", courgette: "200 g", citron: "40 g", huileOlive: "12 ml", ail: "6 g" },
+      { nb: 3, cabillaud: "450 g", riz: "180 g", courgette: "300 g", citron: "60 g", huileOlive: "18 ml", ail: "9 g" },
+      { nb: 4, cabillaud: "600 g", riz: "240 g", courgette: "400 g", citron: "80 g", huileOlive: "24 ml", ail: "12 g" },
+      { nb: 5, cabillaud: "750 g", riz: "300 g", courgette: "500 g", citron: "100 g", huileOlive: "30 ml", ail: "15 g" },
+      { nb: 6, cabillaud: "900 g", riz: "360 g", courgette: "600 g", citron: "120 g", huileOlive: "36 ml", ail: "18 g" },
+      { nb: 7, cabillaud: "1050 g", riz: "420 g", courgette: "700 g", citron: "140 g", huileOlive: "42 ml", ail: "21 g" },
+      { nb: 8, cabillaud: "1200 g", riz: "480 g", courgette: "800 g", citron: "160 g", huileOlive: "48 ml", ail: "24 g" },
+      { nb: 9, cabillaud: "1350 g", riz: "540 g", courgette: "900 g", citron: "180 g", huileOlive: "54 ml", ail: "27 g" },
+      { nb: 10, cabillaud: "1500 g", riz: "600 g", courgette: "1000 g", citron: "200 g", huileOlive: "60 ml", ail: "30 g" },
+      { nb: 11, cabillaud: "1650 g", riz: "660 g", courgette: "1100 g", citron: "220 g", huileOlive: "66 ml", ail: "33 g" },
+      { nb: 12, cabillaud: "1800 g", riz: "720 g", courgette: "1200 g", citron: "240 g", huileOlive: "72 ml", ail: "36 g" },
+      { nb: 13, cabillaud: "1950 g", riz: "780 g", courgette: "1300 g", citron: "260 g", huileOlive: "78 ml", ail: "39 g" },
+      { nb: 14, cabillaud: "2100 g", riz: "840 g", courgette: "1400 g", citron: "280 g", huileOlive: "84 ml", ail: "42 g" },
+      { nb: 15, cabillaud: "2250 g", riz: "900 g", courgette: "1500 g", citron: "300 g", huileOlive: "90 ml", ail: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
+      { icone: "🐟", titre: "Cabillaud", detail: "Cuire le cabillaud vapeur 8 min.", badge: null },
+      { icone: "🥒", titre: "Courgette", detail: "Poêler la courgette à l'ail et au citron.", badge: null }
+    ]
+  },
+  bowlthonrizavocat: {
+    nom: "Bowl Thon, Riz & Avocat",
+    cat: "plats", pays: "monde",
+    base: 1,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🍣",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Bowl façon poké : thon, riz, avocat, concombre et edamame, sauce soja. Frais, protéiné et rassasiant.",
+    tableauBowlthonrizavocat: [
+      { nb: 1, thon: "110 g", riz: "70 g", avocat: "40 g", concombre: "50 g", edamame: "40 g", saucesoja: "10 ml" },
+      { nb: 2, thon: "220 g", riz: "140 g", avocat: "80 g", concombre: "100 g", edamame: "80 g", saucesoja: "20 ml" },
+      { nb: 3, thon: "330 g", riz: "210 g", avocat: "120 g", concombre: "150 g", edamame: "120 g", saucesoja: "30 ml" },
+      { nb: 4, thon: "440 g", riz: "280 g", avocat: "160 g", concombre: "200 g", edamame: "160 g", saucesoja: "40 ml" },
+      { nb: 5, thon: "550 g", riz: "350 g", avocat: "200 g", concombre: "250 g", edamame: "200 g", saucesoja: "50 ml" },
+      { nb: 6, thon: "660 g", riz: "420 g", avocat: "240 g", concombre: "300 g", edamame: "240 g", saucesoja: "60 ml" },
+      { nb: 7, thon: "770 g", riz: "490 g", avocat: "280 g", concombre: "350 g", edamame: "280 g", saucesoja: "70 ml" },
+      { nb: 8, thon: "880 g", riz: "560 g", avocat: "320 g", concombre: "400 g", edamame: "320 g", saucesoja: "80 ml" },
+      { nb: 9, thon: "990 g", riz: "630 g", avocat: "360 g", concombre: "450 g", edamame: "360 g", saucesoja: "90 ml" },
+      { nb: 10, thon: "1100 g", riz: "700 g", avocat: "400 g", concombre: "500 g", edamame: "400 g", saucesoja: "100 ml" },
+      { nb: 11, thon: "1210 g", riz: "770 g", avocat: "440 g", concombre: "550 g", edamame: "440 g", saucesoja: "110 ml" },
+      { nb: 12, thon: "1320 g", riz: "840 g", avocat: "480 g", concombre: "600 g", edamame: "480 g", saucesoja: "120 ml" },
+      { nb: 13, thon: "1430 g", riz: "910 g", avocat: "520 g", concombre: "650 g", edamame: "520 g", saucesoja: "130 ml" },
+      { nb: 14, thon: "1540 g", riz: "980 g", avocat: "560 g", concombre: "700 g", edamame: "560 g", saucesoja: "140 ml" },
+      { nb: 15, thon: "1650 g", riz: "1050 g", avocat: "600 g", concombre: "750 g", edamame: "600 g", saucesoja: "150 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz, laisser tiédir.", badge: null },
+      { icone: "🥑", titre: "Garnir", detail: "Disposer thon, avocat, concombre et edamame sur le riz.", badge: null },
+      { icone: "🍶", titre: "Sauce", detail: "Napper de sauce soja.", badge: null }
+    ]
+  }
 });

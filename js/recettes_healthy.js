@@ -1861,4 +1861,203 @@ Object.assign(recettes, {
       { icone: "💧", titre: "Mijoter", detail: "Remettre le poulet, ajouter citron confit, olives et bouillon, cuire à couvert. ASTUCE CHEF : ne soulève pas le couvercle pendant la cuisson du riz — la vapeur emprisonnée le cuit uniformément.", badge: "⏱ 20 min" }
     ]
   },
+  pouletrizbrocoli: {
+    nom: "Poulet Grillé, Riz & Brocoli",
+    cat: "healthy", pays: "monde",
+    base: 1,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Le grand classique de la prise de masse maigre : blanc de poulet grillé, riz et brocoli vapeur. Simple, propre, efficace.",
+    tableauPouletrizbrocoli: [
+      { nb: 1, poulet: "150 g", riz: "60 g", brocoli: "120 g", huileOlive: "8 ml", citron: "20 g", ail: "4 g", sel: "1 g" },
+      { nb: 2, poulet: "300 g", riz: "120 g", brocoli: "240 g", huileOlive: "16 ml", citron: "40 g", ail: "8 g", sel: "2 g" },
+      { nb: 3, poulet: "450 g", riz: "180 g", brocoli: "360 g", huileOlive: "24 ml", citron: "60 g", ail: "12 g", sel: "3 g" },
+      { nb: 4, poulet: "600 g", riz: "240 g", brocoli: "480 g", huileOlive: "32 ml", citron: "80 g", ail: "16 g", sel: "4 g" },
+      { nb: 5, poulet: "750 g", riz: "300 g", brocoli: "600 g", huileOlive: "40 ml", citron: "100 g", ail: "20 g", sel: "5 g" },
+      { nb: 6, poulet: "900 g", riz: "360 g", brocoli: "720 g", huileOlive: "48 ml", citron: "120 g", ail: "24 g", sel: "6 g" },
+      { nb: 7, poulet: "1050 g", riz: "420 g", brocoli: "840 g", huileOlive: "56 ml", citron: "140 g", ail: "28 g", sel: "7 g" },
+      { nb: 8, poulet: "1200 g", riz: "480 g", brocoli: "960 g", huileOlive: "64 ml", citron: "160 g", ail: "32 g", sel: "8 g" },
+      { nb: 9, poulet: "1350 g", riz: "540 g", brocoli: "1080 g", huileOlive: "72 ml", citron: "180 g", ail: "36 g", sel: "9 g" },
+      { nb: 10, poulet: "1500 g", riz: "600 g", brocoli: "1200 g", huileOlive: "80 ml", citron: "200 g", ail: "40 g", sel: "10 g" },
+      { nb: 11, poulet: "1650 g", riz: "660 g", brocoli: "1320 g", huileOlive: "88 ml", citron: "220 g", ail: "44 g", sel: "11 g" },
+      { nb: 12, poulet: "1800 g", riz: "720 g", brocoli: "1440 g", huileOlive: "96 ml", citron: "240 g", ail: "48 g", sel: "12 g" },
+      { nb: 13, poulet: "1950 g", riz: "780 g", brocoli: "1560 g", huileOlive: "104 ml", citron: "260 g", ail: "52 g", sel: "13 g" },
+      { nb: 14, poulet: "2100 g", riz: "840 g", brocoli: "1680 g", huileOlive: "112 ml", citron: "280 g", ail: "56 g", sel: "14 g" },
+      { nb: 15, poulet: "2250 g", riz: "900 g", brocoli: "1800 g", huileOlive: "120 ml", citron: "300 g", ail: "60 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz dans l'eau salée.", badge: null },
+      { icone: "🥦", titre: "Brocoli", detail: "Cuire le brocoli vapeur 8 min, garder croquant.", badge: null },
+      { icone: "🍗", titre: "Poulet", detail: "Griller le poulet avec ail et citron, 5 min par face.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Assembler, filet d'huile d'olive.", badge: null }
+    ]
+  },
+  dindelegumeswok: {
+    nom: "Dinde Sautée aux Légumes",
+    cat: "healthy", pays: "monde",
+    base: 1,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🦃",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Émincé de dinde maigre sauté au wok avec courgette et poivron, sauce soja et gingembre. Léger et plein de protéines.",
+    tableauDindelegumeswok: [
+      { nb: 1, dinde: "150 g", courgette: "100 g", poivron: "80 g", riz: "60 g", saucesoja: "10 ml", gingembre: "4 g", huileOlive: "8 ml" },
+      { nb: 2, dinde: "300 g", courgette: "200 g", poivron: "160 g", riz: "120 g", saucesoja: "20 ml", gingembre: "8 g", huileOlive: "16 ml" },
+      { nb: 3, dinde: "450 g", courgette: "300 g", poivron: "240 g", riz: "180 g", saucesoja: "30 ml", gingembre: "12 g", huileOlive: "24 ml" },
+      { nb: 4, dinde: "600 g", courgette: "400 g", poivron: "320 g", riz: "240 g", saucesoja: "40 ml", gingembre: "16 g", huileOlive: "32 ml" },
+      { nb: 5, dinde: "750 g", courgette: "500 g", poivron: "400 g", riz: "300 g", saucesoja: "50 ml", gingembre: "20 g", huileOlive: "40 ml" },
+      { nb: 6, dinde: "900 g", courgette: "600 g", poivron: "480 g", riz: "360 g", saucesoja: "60 ml", gingembre: "24 g", huileOlive: "48 ml" },
+      { nb: 7, dinde: "1050 g", courgette: "700 g", poivron: "560 g", riz: "420 g", saucesoja: "70 ml", gingembre: "28 g", huileOlive: "56 ml" },
+      { nb: 8, dinde: "1200 g", courgette: "800 g", poivron: "640 g", riz: "480 g", saucesoja: "80 ml", gingembre: "32 g", huileOlive: "64 ml" },
+      { nb: 9, dinde: "1350 g", courgette: "900 g", poivron: "720 g", riz: "540 g", saucesoja: "90 ml", gingembre: "36 g", huileOlive: "72 ml" },
+      { nb: 10, dinde: "1500 g", courgette: "1000 g", poivron: "800 g", riz: "600 g", saucesoja: "100 ml", gingembre: "40 g", huileOlive: "80 ml" },
+      { nb: 11, dinde: "1650 g", courgette: "1100 g", poivron: "880 g", riz: "660 g", saucesoja: "110 ml", gingembre: "44 g", huileOlive: "88 ml" },
+      { nb: 12, dinde: "1800 g", courgette: "1200 g", poivron: "960 g", riz: "720 g", saucesoja: "120 ml", gingembre: "48 g", huileOlive: "96 ml" },
+      { nb: 13, dinde: "1950 g", courgette: "1300 g", poivron: "1040 g", riz: "780 g", saucesoja: "130 ml", gingembre: "52 g", huileOlive: "104 ml" },
+      { nb: 14, dinde: "2100 g", courgette: "1400 g", poivron: "1120 g", riz: "840 g", saucesoja: "140 ml", gingembre: "56 g", huileOlive: "112 ml" },
+      { nb: 15, dinde: "2250 g", courgette: "1500 g", poivron: "1200 g", riz: "900 g", saucesoja: "150 ml", gingembre: "60 g", huileOlive: "120 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
+      { icone: "🦃", titre: "Dinde", detail: "Saisir la dinde au wok à feu vif.", badge: null },
+      { icone: "🥦", titre: "Légumes", detail: "Ajouter courgette, poivron, gingembre, sauce soja.", badge: null }
+    ]
+  },
+  bowlpouletpatatedouce: {
+    nom: "Bowl Poulet & Patate Douce",
+    cat: "healthy", pays: "monde",
+    base: 1,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "💪",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Bowl complet : poulet rôti, patate douce, épinards et avocat. Glucides lents et protéines pour tenir la journée.",
+    tableauBowlpouletpatatedouce: [
+      { nb: 1, poulet: "140 g", patatedouce: "150 g", epinards: "50 g", avocat: "40 g", huileOlive: "8 ml", citron: "20 g" },
+      { nb: 2, poulet: "280 g", patatedouce: "300 g", epinards: "100 g", avocat: "80 g", huileOlive: "16 ml", citron: "40 g" },
+      { nb: 3, poulet: "420 g", patatedouce: "450 g", epinards: "150 g", avocat: "120 g", huileOlive: "24 ml", citron: "60 g" },
+      { nb: 4, poulet: "560 g", patatedouce: "600 g", epinards: "200 g", avocat: "160 g", huileOlive: "32 ml", citron: "80 g" },
+      { nb: 5, poulet: "700 g", patatedouce: "750 g", epinards: "250 g", avocat: "200 g", huileOlive: "40 ml", citron: "100 g" },
+      { nb: 6, poulet: "840 g", patatedouce: "900 g", epinards: "300 g", avocat: "240 g", huileOlive: "48 ml", citron: "120 g" },
+      { nb: 7, poulet: "980 g", patatedouce: "1050 g", epinards: "350 g", avocat: "280 g", huileOlive: "56 ml", citron: "140 g" },
+      { nb: 8, poulet: "1120 g", patatedouce: "1200 g", epinards: "400 g", avocat: "320 g", huileOlive: "64 ml", citron: "160 g" },
+      { nb: 9, poulet: "1260 g", patatedouce: "1350 g", epinards: "450 g", avocat: "360 g", huileOlive: "72 ml", citron: "180 g" },
+      { nb: 10, poulet: "1400 g", patatedouce: "1500 g", epinards: "500 g", avocat: "400 g", huileOlive: "80 ml", citron: "200 g" },
+      { nb: 11, poulet: "1540 g", patatedouce: "1650 g", epinards: "550 g", avocat: "440 g", huileOlive: "88 ml", citron: "220 g" },
+      { nb: 12, poulet: "1680 g", patatedouce: "1800 g", epinards: "600 g", avocat: "480 g", huileOlive: "96 ml", citron: "240 g" },
+      { nb: 13, poulet: "1820 g", patatedouce: "1950 g", epinards: "650 g", avocat: "520 g", huileOlive: "104 ml", citron: "260 g" },
+      { nb: 14, poulet: "1960 g", patatedouce: "2100 g", epinards: "700 g", avocat: "560 g", huileOlive: "112 ml", citron: "280 g" },
+      { nb: 15, poulet: "2100 g", patatedouce: "2250 g", epinards: "750 g", avocat: "600 g", huileOlive: "120 ml", citron: "300 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "Patate douce", detail: "Rôtir la patate douce en dés 25 min à 200°C.", badge: null },
+      { icone: "🍗", titre: "Poulet", detail: "Cuire le poulet à la poêle.", badge: null },
+      { icone: "🥑", titre: "Assembler", detail: "Dresser sur épinards, ajouter avocat et citron.", badge: null }
+    ]
+  },
+  colinquinoabrocoli: {
+    nom: "Filet de Colin, Quinoa & Brocoli",
+    cat: "healthy", pays: "monde",
+    base: 1,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Poisson blanc maigre, quinoa riche en protéines et brocoli. Un repas léger et complet, parfait le soir.",
+    tableauColinquinoabrocoli: [
+      { nb: 1, colin: "150 g", quinoa: "60 g", brocoli: "100 g", citron: "20 g", huileOlive: "8 ml", ail: "3 g" },
+      { nb: 2, colin: "300 g", quinoa: "120 g", brocoli: "200 g", citron: "40 g", huileOlive: "16 ml", ail: "6 g" },
+      { nb: 3, colin: "450 g", quinoa: "180 g", brocoli: "300 g", citron: "60 g", huileOlive: "24 ml", ail: "9 g" },
+      { nb: 4, colin: "600 g", quinoa: "240 g", brocoli: "400 g", citron: "80 g", huileOlive: "32 ml", ail: "12 g" },
+      { nb: 5, colin: "750 g", quinoa: "300 g", brocoli: "500 g", citron: "100 g", huileOlive: "40 ml", ail: "15 g" },
+      { nb: 6, colin: "900 g", quinoa: "360 g", brocoli: "600 g", citron: "120 g", huileOlive: "48 ml", ail: "18 g" },
+      { nb: 7, colin: "1050 g", quinoa: "420 g", brocoli: "700 g", citron: "140 g", huileOlive: "56 ml", ail: "21 g" },
+      { nb: 8, colin: "1200 g", quinoa: "480 g", brocoli: "800 g", citron: "160 g", huileOlive: "64 ml", ail: "24 g" },
+      { nb: 9, colin: "1350 g", quinoa: "540 g", brocoli: "900 g", citron: "180 g", huileOlive: "72 ml", ail: "27 g" },
+      { nb: 10, colin: "1500 g", quinoa: "600 g", brocoli: "1000 g", citron: "200 g", huileOlive: "80 ml", ail: "30 g" },
+      { nb: 11, colin: "1650 g", quinoa: "660 g", brocoli: "1100 g", citron: "220 g", huileOlive: "88 ml", ail: "33 g" },
+      { nb: 12, colin: "1800 g", quinoa: "720 g", brocoli: "1200 g", citron: "240 g", huileOlive: "96 ml", ail: "36 g" },
+      { nb: 13, colin: "1950 g", quinoa: "780 g", brocoli: "1300 g", citron: "260 g", huileOlive: "104 ml", ail: "39 g" },
+      { nb: 14, colin: "2100 g", quinoa: "840 g", brocoli: "1400 g", citron: "280 g", huileOlive: "112 ml", ail: "42 g" },
+      { nb: 15, colin: "2250 g", quinoa: "900 g", brocoli: "1500 g", citron: "300 g", huileOlive: "120 ml", ail: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Quinoa", detail: "Cuire le quinoa 15 min, rincer.", badge: null },
+      { icone: "🥦", titre: "Brocoli", detail: "Vapeur 8 min.", badge: null },
+      { icone: "🐟", titre: "Colin", detail: "Poêler le colin 3 min par face avec ail et citron.", badge: null }
+    ]
+  },
+  saladethonharicotsblancs: {
+    nom: "Salade Thon & Haricots Blancs",
+    cat: "healthy", pays: "monde", saisons: ["ete"],
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Salade froide protéinée : thon, haricots blancs, tomate et oignon rouge. Prête en 10 minutes, idéale en meal-prep.",
+    tableauSaladethonharicotsblancs: [
+      { nb: 1, thon: "100 g", haricotsblancs: "120 g", tomate: "80 g", oignonrouge: "30 g", huileOlive: "10 ml", citron: "15 g", persil: "5 g" },
+      { nb: 2, thon: "200 g", haricotsblancs: "240 g", tomate: "160 g", oignonrouge: "60 g", huileOlive: "20 ml", citron: "30 g", persil: "10 g" },
+      { nb: 3, thon: "300 g", haricotsblancs: "360 g", tomate: "240 g", oignonrouge: "90 g", huileOlive: "30 ml", citron: "45 g", persil: "15 g" },
+      { nb: 4, thon: "400 g", haricotsblancs: "480 g", tomate: "320 g", oignonrouge: "120 g", huileOlive: "40 ml", citron: "60 g", persil: "20 g" },
+      { nb: 5, thon: "500 g", haricotsblancs: "600 g", tomate: "400 g", oignonrouge: "150 g", huileOlive: "50 ml", citron: "75 g", persil: "25 g" },
+      { nb: 6, thon: "600 g", haricotsblancs: "720 g", tomate: "480 g", oignonrouge: "180 g", huileOlive: "60 ml", citron: "90 g", persil: "30 g" },
+      { nb: 7, thon: "700 g", haricotsblancs: "840 g", tomate: "560 g", oignonrouge: "210 g", huileOlive: "70 ml", citron: "105 g", persil: "35 g" },
+      { nb: 8, thon: "800 g", haricotsblancs: "960 g", tomate: "640 g", oignonrouge: "240 g", huileOlive: "80 ml", citron: "120 g", persil: "40 g" },
+      { nb: 9, thon: "900 g", haricotsblancs: "1080 g", tomate: "720 g", oignonrouge: "270 g", huileOlive: "90 ml", citron: "135 g", persil: "45 g" },
+      { nb: 10, thon: "1000 g", haricotsblancs: "1200 g", tomate: "800 g", oignonrouge: "300 g", huileOlive: "100 ml", citron: "150 g", persil: "50 g" },
+      { nb: 11, thon: "1100 g", haricotsblancs: "1320 g", tomate: "880 g", oignonrouge: "330 g", huileOlive: "110 ml", citron: "165 g", persil: "55 g" },
+      { nb: 12, thon: "1200 g", haricotsblancs: "1440 g", tomate: "960 g", oignonrouge: "360 g", huileOlive: "120 ml", citron: "180 g", persil: "60 g" },
+      { nb: 13, thon: "1300 g", haricotsblancs: "1560 g", tomate: "1040 g", oignonrouge: "390 g", huileOlive: "130 ml", citron: "195 g", persil: "65 g" },
+      { nb: 14, thon: "1400 g", haricotsblancs: "1680 g", tomate: "1120 g", oignonrouge: "420 g", huileOlive: "140 ml", citron: "210 g", persil: "70 g" },
+      { nb: 15, thon: "1500 g", haricotsblancs: "1800 g", tomate: "1200 g", oignonrouge: "450 g", huileOlive: "150 ml", citron: "225 g", persil: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥫", titre: "Mélanger", detail: "Égoutter thon et haricots, mélanger.", badge: null },
+      { icone: "🍅", titre: "Légumes", detail: "Ajouter tomate en dés et oignon rouge émincé.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Huile d'olive, citron, persil.", badge: null }
+    ]
+  },
+  tempehpoelelegumes: {
+    nom: "Tempeh Poêlé aux Légumes",
+    cat: "healthy", pays: "indonesie",
+    base: 1,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🟨",
+    dateAjout: "2026-06-25T10:00:00",
+    description: "Tempeh, source de protéines végétales complètes, poêlé avec brocoli et poivron, sauce soja-gingembre. Vegan et rassasiant.",
+    tableauTempehpoelelegumes: [
+      { nb: 1, tempeh: "120 g", brocoli: "100 g", poivron: "70 g", riz: "60 g", saucesoja: "12 ml", ail: "4 g", gingembre: "4 g" },
+      { nb: 2, tempeh: "240 g", brocoli: "200 g", poivron: "140 g", riz: "120 g", saucesoja: "24 ml", ail: "8 g", gingembre: "8 g" },
+      { nb: 3, tempeh: "360 g", brocoli: "300 g", poivron: "210 g", riz: "180 g", saucesoja: "36 ml", ail: "12 g", gingembre: "12 g" },
+      { nb: 4, tempeh: "480 g", brocoli: "400 g", poivron: "280 g", riz: "240 g", saucesoja: "48 ml", ail: "16 g", gingembre: "16 g" },
+      { nb: 5, tempeh: "600 g", brocoli: "500 g", poivron: "350 g", riz: "300 g", saucesoja: "60 ml", ail: "20 g", gingembre: "20 g" },
+      { nb: 6, tempeh: "720 g", brocoli: "600 g", poivron: "420 g", riz: "360 g", saucesoja: "72 ml", ail: "24 g", gingembre: "24 g" },
+      { nb: 7, tempeh: "840 g", brocoli: "700 g", poivron: "490 g", riz: "420 g", saucesoja: "84 ml", ail: "28 g", gingembre: "28 g" },
+      { nb: 8, tempeh: "960 g", brocoli: "800 g", poivron: "560 g", riz: "480 g", saucesoja: "96 ml", ail: "32 g", gingembre: "32 g" },
+      { nb: 9, tempeh: "1080 g", brocoli: "900 g", poivron: "630 g", riz: "540 g", saucesoja: "108 ml", ail: "36 g", gingembre: "36 g" },
+      { nb: 10, tempeh: "1200 g", brocoli: "1000 g", poivron: "700 g", riz: "600 g", saucesoja: "120 ml", ail: "40 g", gingembre: "40 g" },
+      { nb: 11, tempeh: "1320 g", brocoli: "1100 g", poivron: "770 g", riz: "660 g", saucesoja: "132 ml", ail: "44 g", gingembre: "44 g" },
+      { nb: 12, tempeh: "1440 g", brocoli: "1200 g", poivron: "840 g", riz: "720 g", saucesoja: "144 ml", ail: "48 g", gingembre: "48 g" },
+      { nb: 13, tempeh: "1560 g", brocoli: "1300 g", poivron: "910 g", riz: "780 g", saucesoja: "156 ml", ail: "52 g", gingembre: "52 g" },
+      { nb: 14, tempeh: "1680 g", brocoli: "1400 g", poivron: "980 g", riz: "840 g", saucesoja: "168 ml", ail: "56 g", gingembre: "56 g" },
+      { nb: 15, tempeh: "1800 g", brocoli: "1500 g", poivron: "1050 g", riz: "900 g", saucesoja: "180 ml", ail: "60 g", gingembre: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
+      { icone: "🟨", titre: "Tempeh", detail: "Dorer le tempeh en dés à la poêle.", badge: null },
+      { icone: "🥦", titre: "Légumes", detail: "Ajouter légumes, ail, gingembre, sauce soja.", badge: null }
+    ]
+  }
 });
