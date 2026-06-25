@@ -371,7 +371,7 @@ function regenItemFestif(idx) {
     "🥂 Apéro":   ["cocktails","mocktails"],
     "🥗 Entrée":  ["entrees","soupes","salades"],
     "🍽️ Plat":   ["plats","pizzas","healthy"],
-    "🍰 Dessert": ["desserts","glaces"],
+    "🍰 Dessert": ["desserts"],
   };
   const allowedCats = cats[item.categorie] || ["plats"];
 
@@ -756,7 +756,7 @@ async function genererMenusIA() {
   const okRecette = (key, autoriserDessert) => {
     const c = (typeof categorieRecette === "function") ? categorieRecette(key) : (recettes[key] && recettes[key].cat);
     const horsRepas = new Set(["aperitifs", "encas", "cocktails", "mocktails", "tartinables", "sauces", "boulangerie"]);
-    if (autoriserDessert ? (c !== "desserts" && c !== "glaces") : (horsRepas.has(c) || c === "desserts" || c === "glaces")) return false;
+    if (autoriserDessert ? (c !== "desserts") : (horsRepas.has(c) || c === "desserts" || c === "glaces")) return false;
     if (typeof RECETTES_NON_REPAS !== "undefined" && RECETTES_NON_REPAS.has(key)) return false;
     if (typeof estHorsSaison === "function" && estHorsSaison(key)) return false;        // 🗓️ saison
     if (!fetes && typeof estPlatFetes === "function" && estPlatFetes(key)) return false;  // 🎄 hors décembre
@@ -912,7 +912,7 @@ function validerRegimeMenus(menus, regimes, allergies) {
     if (!r) return false;                                   // clé inconnue
     if (platFetes(key)) return false;                       // 🎄 pas de plat de fête hors décembre
     if (horsSaison(key)) return false;                      // 🗓️ pas de hors-saison
-    if (role === "dessert") { if (r.cat !== "desserts" && r.cat !== "glaces") return false; }
+    if (role === "dessert") { if (r.cat !== "desserts") return false; }
     else if (r.cat === "desserts" || r.cat === "glaces") return false;  // dessert/glace ne va pas en entrée/plat
     let texte = (key + " " + (r.description || "")).toLowerCase();
     Object.keys(r).forEach(k => {
@@ -1142,7 +1142,7 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
   const isComplet = window._formatRepas === "complet";
 
   // Pool séparé pour desserts
-  let poolDesserts = Object.keys(recettes).filter(key => categorieRecette(key) === "desserts" || categorieRecette(key) === "glaces");
+  let poolDesserts = Object.keys(recettes).filter(key => categorieRecette(key) === "desserts");
   // Fallback ultime si jamais cat manquait
   if (poolDesserts.length === 0) {
     poolDesserts = RECETTES_DESSERTS.filter(k => recettes[k]);
@@ -1725,7 +1725,7 @@ function regenRepasSous(jourNom, moment, type) {
   const catsParType = {
     entree:  new Set(["entrees","soupes","salades"]),
     plat:    new Set(["plats","pizzas","healthy"]),
-    dessert: new Set(["desserts","glaces"]),
+    dessert: new Set(["desserts"]),
   };
   const catsOK = catsParType[type];
   if (!catsOK) return;
@@ -1950,7 +1950,7 @@ function nettoyerMenu(menus) {
     const r = recettes[cle];
     if (!r) return false;
     if (platFetes(cle)) return false; // 🎄 pas de plats de fêtes hors décembre
-    if (role === "dessert") return (r.cat === "desserts" || r.cat === "glaces") && !horsSaison(cle);
+    if (role === "dessert") return r.cat === "desserts" && !horsSaison(cle);
     if (r.cat === "desserts") return false; // un dessert ne remplace jamais une entrée/un plat
     if (nonRepas.has(r.cat)) return false;
     if (nonRepasListe.has && nonRepasListe.has(cle)) return false;
