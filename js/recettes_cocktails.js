@@ -47,7 +47,7 @@ Object.assign(recettes, {
 
   vinchaud: {
     nom: "Vin Chaud de Noël",
-    cat: "cocktails", pays: "france",
+    cat: "cocktails", pays: "france", saisons: ["automne", "hiver"],
     dateAjout: "2026-06-06T23:35:00",
     base: 6,
     temps: "20 min",

@@ -308,7 +308,7 @@ Object.assign(recettes, {
   },
   chocolatChaud: {
     nom: "Chocolat Chaud",
-    cat: "brunch", pays: "france",
+    cat: "brunch", pays: "france", saisons: ["automne", "hiver"],
     base: 2,
     temps: "10 min",
     niveau: "⭐ Facile",
