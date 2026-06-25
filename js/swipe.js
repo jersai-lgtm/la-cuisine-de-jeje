@@ -88,6 +88,7 @@
     const dra = (typeof drapeau === "function") ? drapeau(r.pays, 16) : "";
     const meta = ["⏱ " + (r.temps || ""), r.niveau || ""].filter((s) => String(s).trim()).join("  ·  ");
     return `
+      <div class="swipe-bg" style="background-image:url('${img}')"></div>
       <img loading="lazy" decoding="async" src="${img}" alt="${nom}" onerror="${onerr}">
       <div class="swipe-grad"></div>
       ${nutriBadge(key)}
@@ -212,13 +213,16 @@
       .swipe-card{position:absolute;inset:0;border-radius:22px;overflow:hidden;background:var(--surface-1);
         box-shadow:0 14px 40px rgba(0,0,0,.5);user-select:none;-webkit-user-select:none;touch-action:pan-y;will-change:transform}
       .swipe-card.swipe-dessous{transform:scale(.94) translateY(10px);filter:brightness(.7)}
-      .swipe-card img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
-      .swipe-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,6,12,.92) 4%,rgba(8,6,12,.25) 42%,rgba(8,6,12,0) 70%)}
-      .swipe-cap{position:absolute;left:18px;right:18px;bottom:18px;color:#fff}
+      /* Fond flou de la même photo : on voit TOUT le plat (contain) sans bandes noires. */
+      .swipe-card .swipe-bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;
+        filter:blur(20px) brightness(.5);transform:scale(1.15)}
+      .swipe-card img{width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;position:relative;z-index:1}
+      .swipe-grad{position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(8,6,12,.92) 4%,rgba(8,6,12,.25) 42%,rgba(8,6,12,0) 70%)}
+      .swipe-cap{position:absolute;left:18px;right:18px;bottom:18px;color:#fff;z-index:3}
       .swipe-nom{display:block;font-size:23px;font-weight:800;line-height:1.18;text-shadow:0 2px 8px rgba(0,0,0,.6);font-family:system-ui,sans-serif}
       .swipe-meta{display:block;font-size:14px;opacity:.95;margin-top:6px;text-shadow:0 1px 4px rgba(0,0,0,.6)}
-      .swipe-nutri{position:absolute;top:14px;left:14px}
-      .swipe-yes,.swipe-no{position:absolute;top:20px;font-size:46px;opacity:0;transition:opacity .1s;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
+      .swipe-nutri{position:absolute;top:14px;left:14px;z-index:3}
+      .swipe-yes,.swipe-no{position:absolute;top:20px;z-index:3;font-size:46px;opacity:0;transition:opacity .1s;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
       .swipe-yes{right:20px}.swipe-no{left:20px}
       .swipe-card.vers-oui .swipe-yes{opacity:1}.swipe-card.vers-non .swipe-no{opacity:1}
       .swipe-actions{display:flex;align-items:center;justify-content:center;gap:14px;padding:8px 18px 4px}
