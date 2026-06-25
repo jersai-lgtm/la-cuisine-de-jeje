@@ -13,7 +13,7 @@
     {
       emoji: "🍳",
       titre: "Bienvenue dans La Cuisine de Jéjé",
-      texte: "Plus de 1000 recettes maison, des menus de la semaine générés en un clic et ta liste de courses rangée automatiquement par rayon."
+      texte: "Plus de 1200 recettes maison, des menus de la semaine générés en un clic et ta liste de courses rangée automatiquement par rayon."
     },
     {
       emoji: "👨‍🍳",

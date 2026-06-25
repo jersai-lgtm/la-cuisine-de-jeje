@@ -90,11 +90,12 @@
       #envie-modal .envie-x{background:rgba(var(--w),.1);color:var(--text);border:none;border-radius:50%;width:34px;height:34px;font-size:15px;cursor:pointer}
       #envie-modal .envie-grid{overflow:auto;padding:6px 14px 20px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
       /* Cartes en grille (et non en rangée scroll) → image plus haute, pas une bande fine.
-         Carte en BLOC (display par défaut) + hauteur DÉFINIE sur l'image : c'est le seul
-         combo fiable. aspect-ratio cassait la track de grille (image coupée) ; flex-column
-         transformait l'image en flex-item qui se comprimait (écrasé). On reste simple. */
-      #envie-modal .envie-grid .mini-carte{flex:initial;width:auto;display:block}
-      #envie-modal .envie-grid .mini-carte img{height:128px;min-height:128px;aspect-ratio:auto;object-fit:cover}
+         VRAIE cause de l'effet « écrasé » : .mini-carte a overflow:hidden, ce qui fait
+         collapser la track auto de la grille à la hauteur du seul texte (~40px) → l'image
+         (128px) débordait et était COUPÉE. Le min-height sur la carte force la track à
+         s'ouvrir ; on garde overflow:hidden pour les coins arrondis. */
+      #envie-modal .envie-grid .mini-carte{flex:initial;width:auto;min-height:176px}
+      #envie-modal .envie-grid .mini-carte img{height:128px;aspect-ratio:auto;object-fit:cover}
       #envie-modal .envie-q{padding:8px 18px 4px}
       #envie-modal .envie-q p{font-size:16px;font-weight:700;margin:10px 0 10px}
       #envie-modal .envie-opts{display:flex;flex-wrap:wrap;gap:8px;padding:0 14px 8px}
