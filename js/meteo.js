@@ -8,7 +8,7 @@
 // =============================================================================
 
 (function () {
-  const LS = "meteo_cache";
+  const LS = "meteo_cache_v2";  // v2 : passage au GPS prioritaire → on ignore l'ancien cache IP
   const SEUIL_CHAUD = 28;  // ≥ 28°C → on penche vers le frais
   const SEUIL_FROID = 7;   // ≤ 7°C  → on penche vers le réconfortant
 
@@ -19,9 +19,23 @@
     try { const c = JSON.parse(localStorage.getItem(LS) || "null"); if (c && (Date.now() - c.t) < 3 * 3600e3) return c; } catch (e) {}
     return null;
   }
-  // Géoloc par IP — plusieurs sources (ipapi.co est souvent rate-limité) → on essaie
-  // l'une après l'autre jusqu'à obtenir une lat/lon valide.
+  // GPS précis du téléphone (autorisation demandée une fois). Repli silencieux
+  // (null) si refusé, indisponible ou trop lent → on bascule alors sur l'IP.
+  function gpsLatLon() {
+    return new Promise((res) => {
+      if (!navigator.geolocation) return res(null);
+      navigator.geolocation.getCurrentPosition(
+        (p) => res([p.coords.latitude, p.coords.longitude]),
+        () => res(null),
+        { enableHighAccuracy: false, timeout: 8000, maximumAge: 3 * 3600e3 }
+      );
+    });
+  }
+  // Localisation : GPS d'abord (précis), puis plusieurs sources IP en repli
+  // (ipapi.co est souvent rate-limité) → on essaie jusqu'à une lat/lon valide.
   async function getLatLon() {
+    // 0) GPS précis
+    try { const g = await gpsLatLon(); if (g) return g; } catch (e) {}
     // 1) ipapi.co (texte "lat,lon")
     try {
       const t = await fetch("https://ipapi.co/latlong/").then((r) => (r.ok ? r.text() : ""));
