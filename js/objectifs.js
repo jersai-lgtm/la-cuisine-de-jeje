@@ -68,9 +68,9 @@
   // et les collations comptent !). pct = part du budget du jour ; cats = catégories de
   // recettes adaptées à ce moment. Somme des pct = 1. Exposé pour envie.js (suggestions).
   const MOMENTS = [
-    { k: "matin", e: "🌅", fr: "Matin", en: "Morning", pct: 0.25, cats: ["brunch", "boulangerie", "tartinables"] },
+    { k: "matin", e: "🌅", fr: "Matin", en: "Morning", pct: 0.25, cats: ["brunch"] },
     { k: "midi", e: "☀️", fr: "Midi", en: "Lunch", pct: 0.35, cats: ["plats", "salades", "pizzas", "healthy", "soupes"] },
-    { k: "collation", e: "🍎", fr: "Collation", en: "Snack", pct: 0.10, cats: ["encas", "tartinables", "boulangerie", "desserts"] },
+    { k: "collation", e: "🍎", fr: "Collation", en: "Snack", pct: 0.10, cats: ["encas", "desserts"] },
     { k: "soir", e: "🌙", fr: "Soir", en: "Dinner", pct: 0.30, cats: ["plats", "salades", "soupes", "healthy"] },
   ];
   window.OBJ_MOMENTS = MOMENTS;

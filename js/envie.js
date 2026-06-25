@@ -220,10 +220,12 @@
     const protJour = window.OBJ_protJour ? window.OBJ_protJour(o) : null;
     const protCible = (protJour && moment) ? Math.round(protJour * moment.pct) : null;
     const exclus = motsExclus();
+    const filtreNonRepas = moment && (moment.k === "midi" || moment.k === "soir") && typeof RECETTES_NON_REPAS !== "undefined";
     const cand = [];
     for (const k of Object.keys(recettes)) {
       const r = recettes[k];
       if (!r || !r.nom || !cats.has(r.cat)) continue;
+      if (filtreNonRepas && RECETTES_NON_REPAS.has(k)) continue; // pas de non-repas en plat midi/soir
       if (!compatible(k, exclus)) continue;
       const nu = nutPortion(r);
       if (!nu || nu.cal == null) continue;
@@ -256,10 +258,12 @@
     const protCible = dayProt ? Math.round(dayProt * m.pct) : null;
     const cats = new Set(m.cats);
     const cand = [];
+    const filtreNonRepas = (m.k === "midi" || m.k === "soir") && typeof RECETTES_NON_REPAS !== "undefined";
     for (const k of Object.keys(recettes)) {
       if (used.has(k)) continue;
       const r = recettes[k];
       if (!r || !r.nom || !cats.has(r.cat)) continue;
+      if (filtreNonRepas && RECETTES_NON_REPAS.has(k)) continue; // pas de non-repas (smoothie bowl…) en plat
       if (!compatible(k, exclus)) continue;
       const nu = nutPortion(r);
       if (!nu || nu.cal == null) continue;
