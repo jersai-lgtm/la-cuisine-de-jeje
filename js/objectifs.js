@@ -63,6 +63,12 @@
   };
   // g de protéines par kg (pour l'affichage « 2.2 g/kg »).
   window.OBJ_protKg = function (o) { const f = o && o.focus && FOCUS[o.focus]; return (f && f.protKg) || 1.8; };
+  // Eau conseillée (litres/jour) : 35 ml/kg si poids connu, sinon ~1 ml/kcal.
+  window.OBJ_eauJour = function (o) {
+    if (!o) return null;
+    const ml = o.poids ? o.poids * 35 : (o.kcal ? o.kcal : null);
+    return ml ? Math.round(ml / 100) / 10 : null;
+  };
 
   // Répartition d'une journée : l'objectif kcal se répartit sur les moments (le matin
   // et les collations comptent !). pct = part du budget du jour ; cats = catégories de
@@ -349,9 +355,9 @@
       const gkg = o.poids ? " (" + (window.OBJ_protKg ? window.OBJ_protKg(o) : 1.8) + " g/kg)" : "";
       stats += '<span class="obj-stat">💪 <b>~' + protJour + "</b> g " + T("protéines/jour", "protein/day") + gkg + "</span>";
     }
-    if (o.poids) {
-      const eauL = (Math.round(o.poids * 35 / 100) / 10).toFixed(1).replace(".", ",");
-      stats += '<span class="obj-stat">💧 <b>~' + eauL + "</b> L " + T("eau/jour", "water/day") + "</span>";
+    const eau = window.OBJ_eauJour ? window.OBJ_eauJour(o) : null;
+    if (eau) {
+      stats += '<span class="obj-stat">💧 <b>~' + eau.toFixed(1).replace(".", ",") + "</b> L " + T("eau/jour", "water/day") + "</span>";
     }
     if (focus) stats += '<span class="obj-stat">' + focus.e + " " + T(focus.fr, focus.en) + "</span>";
     stats += "</div>";

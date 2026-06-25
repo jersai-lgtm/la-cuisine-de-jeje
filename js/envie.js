@@ -305,6 +305,8 @@
     let tot = '<div class="jr-totaux">';
     tot += '<div class="jr-tot-line"><span>🔥 ' + T("Calories", "Calories") + '</span><span><b>' + totK + "</b> / " + o.kcal + " kcal</span></div>" + barre(totK, o.kcal);
     if (dayProt && anyP) tot += '<div class="jr-tot-line"><span>💪 ' + T("Protéines", "Protein") + '</span><span><b>' + totP + "</b> / " + dayProt + " g</span></div>" + barre(totP, dayProt);
+    const eau = window.OBJ_eauJour ? window.OBJ_eauJour(o) : null;
+    if (eau) tot += '<div class="jr-tot-line" style="margin-top:4px"><span>💧 ' + T("Eau à boire", "Water to drink") + '</span><span><b>~' + eau.toFixed(1).replace(".", ",") + "</b> L</span></div>";
     tot += "</div>";
     const lignes = _jrPlan.filter((it) => it.p).map((it) => {
       const k = it.p.k, r = recettes[k];
