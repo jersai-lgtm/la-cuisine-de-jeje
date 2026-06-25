@@ -29,6 +29,18 @@
       return pc && pc.cal != null ? pc.cal / base : null;
     } catch (e) { return null; }
   }
+  // Nutrition par portion (calories + protéines) — pour l'objectif (profils muscu).
+  function nutPortion(r) {
+    try {
+      const tk = Object.keys(r).find((k) => k.startsWith("tableau") && Array.isArray(r[k]));
+      if (!tk || typeof calculerPrixCaloriesRecette !== "function") return null;
+      const base = r.base || 4;
+      const ligne = r[tk].find((l) => l.nb === base || l.patons === base) || r[tk][0];
+      const pc = ligne && calculerPrixCaloriesRecette(ligne);
+      if (!pc) return null;
+      return { cal: pc.cal != null ? pc.cal / base : null, prot: pc.prot != null ? pc.prot / base : null };
+    } catch (e) { return null; }
+  }
   // Mots exclus selon le profil (allergènes + régime), comme les suggestions.
   function motsExclus() {
     const set = new Set();
@@ -125,12 +137,12 @@
     if (!dejaOuvert && typeof window._backGuardPush === "function") window._backGuardPush();
     return m;
   }
-  function montrerResultats(titre, cles) {
+  function montrerResultats(titre, cles, raisonFn) {
     if (!cles.length) {
       ouvrirSheet(titre, '<div class="envie-q"><p style="font-weight:400;color:var(--text-2)">' + T("Aucune recette trouvée pour ça. Réessaie !", "No recipe found for that. Try again!") + "</p></div>");
       return;
     }
-    const grid = '<div class="envie-grid">' + cles.map((k) => (typeof miniCarte === "function") ? miniCarte(k) : "").join("") + "</div>";
+    const grid = '<div class="envie-grid">' + cles.map((k) => (typeof miniCarte === "function") ? miniCarte(k, raisonFn ? raisonFn(k) : null) : "").join("") + "</div>";
     const m = ouvrirSheet(titre, grid);
     // Fermer la feuille quand on ouvre une fiche
     m.querySelectorAll('.envie-grid [onclick*="ouvrirFiche"]').forEach((c) => c.addEventListener("click", () => setTimeout(fermerModal, 50)));
@@ -181,31 +193,40 @@
     try { o = JSON.parse(localStorage.getItem("objectif_nutri") || "{}") || {}; } catch (e) {}
     if (!o.kcal && !o.focus) { if (typeof ouvrirObjectifs === "function") ouvrirObjectifs(); return; }
     const MOMENTS = window.OBJ_MOMENTS || [];
+    const FOCUS = window.OBJ_FOCUS || {};
     const moment = MOMENTS.find((m) => m.k === momentKey) || (o.kcal ? MOMENTS.find((m) => m.k === "midi") : null);
+    const f = o.focus && FOCUS[o.focus];
     const cats = moment ? new Set(moment.cats) : new Set(["plats", "salades", "soupes", "pizzas", "healthy", "encas"]);
-    const cible = (o.kcal && moment) ? Math.round(o.kcal * moment.pct) : (o.kcal ? Math.round(o.kcal / 3) : null);
+    const calCible = (o.kcal && moment) ? Math.round(o.kcal * moment.pct) : (o.kcal ? Math.round(o.kcal / 3) : null);
+    const protJour = window.OBJ_protJour ? window.OBJ_protJour(o) : null;
+    const protCible = (protJour && moment) ? Math.round(protJour * moment.pct) : null;
     const exclus = motsExclus();
     const cand = [];
     for (const k of Object.keys(recettes)) {
       const r = recettes[k];
       if (!r || !r.nom || !cats.has(r.cat)) continue;
       if (!compatible(k, exclus)) continue;
-      const cal = calPortion(r);
-      if (cal == null) continue;
-      if (cible != null) {
-        const bas = cible * (o.focus === "leger" ? 0.4 : 0.55);
-        const haut = cible * (o.focus === "leger" ? 1.1 : 1.4);
-        if (cal < bas || cal > haut) continue;
+      const nu = nutPortion(r);
+      if (!nu || nu.cal == null) continue;
+      if (calCible != null) {
+        const bas = calCible * (f && f.cap ? 0.4 : 0.55);
+        const haut = calCible * (f && f.surplus ? 1.7 : f && f.cap ? 1.15 : 1.4);
+        if (nu.cal < bas || nu.cal > haut) continue;
       }
-      cand.push({ k, cal });
+      // Profils protéinés (protéiné/sèche/prise de masse) : on écarte les plats vraiment pauvres en protéines.
+      if (f && f.prot && protCible && nu.prot != null && nu.prot < protCible * 0.5) continue;
+      cand.push({ k, cal: nu.cal, prot: nu.prot });
     }
-    // tri par proximité à la cible (ou par calories croissantes si pas de cible)
-    cand.sort((a, b) => cible != null ? Math.abs(a.cal - cible) - Math.abs(b.cal - cible) : a.cal - b.cal);
+    // Tri : profils protéinés → protéines décroissantes ; sinon proximité calorique.
+    if (f && f.prot) cand.sort((a, b) => (b.prot || 0) - (a.prot || 0));
+    else cand.sort((a, b) => calCible != null ? Math.abs(a.cal - calCible) - Math.abs(b.cal - calCible) : a.cal - b.cal);
     const cles = cand.slice(0, 18).map((x) => x.k);
-    const titre = moment
-      ? (moment.e + " " + T(moment.fr, moment.en) + (cible ? " · ~" + cible + " kcal" : ""))
-      : ("🎯 " + (o.kcal ? T("Pour ~", "For ~") + o.kcal + " kcal/jour" : T("Pour ton objectif", "For your goal")));
-    montrerResultats(titre, cles);
+    // Badge protéines sur chaque carte pour les profils muscu.
+    const raisonFn = (f && f.prot) ? (k) => { const nu = nutPortion(recettes[k]); return (nu && nu.prot != null) ? '<span class="mini-carte-raison">💪 ' + Math.round(nu.prot) + " g</span>" : ""; } : null;
+    let titre = moment ? (moment.e + " " + T(moment.fr, moment.en)) : ("🎯 " + T("Objectif", "Goal"));
+    if (calCible) titre += " · ~" + calCible + " kcal";
+    if (f && f.prot && protCible) titre += " · ~" + protCible + " g " + T("prot", "protein");
+    montrerResultats(titre, cles, raisonFn);
   };
 
   // ---- B) Quiz de goûts ----

@@ -15,11 +15,23 @@
   const lire = () => { try { return JSON.parse(localStorage.getItem(LS) || "{}") || {}; } catch (e) { return {}; } };
   const ecrire = (o) => { try { localStorage.setItem(LS, JSON.stringify(o)); } catch (e) {} };
 
+  // Profils. protPct = part des calories venant des protéines → sert à déduire une
+  // cible protéines/jour (g = kcal × protPct ÷ 4). prot = on priorise le protéiné dans
+  // les suggestions ; cap = repas plus légers ; surplus = on autorise plus calorique.
   const FOCUS = {
-    equilibre: { fr: "Équilibré", en: "Balanced", e: "⚖️" },
-    leger: { fr: "Léger", en: "Light", e: "🪶" },
-    proteine: { fr: "Protéiné", en: "High-protein", e: "💪" },
-    gourmand: { fr: "Gourmand", en: "Indulgent", e: "😋" },
+    equilibre: { fr: "Équilibré", en: "Balanced", e: "⚖️", protPct: 0.20 },
+    leger: { fr: "Léger", en: "Light", e: "🪶", protPct: 0.22, cap: true },
+    proteine: { fr: "Protéiné", en: "High-protein", e: "💪", protPct: 0.30, prot: true },
+    seche: { fr: "Sèche", en: "Cutting", e: "🔥", protPct: 0.40, prot: true, cap: true },
+    prisedemasse: { fr: "Prise de masse", en: "Bulking", e: "🏋️", protPct: 0.30, prot: true, surplus: true },
+    gourmand: { fr: "Plaisir", en: "Indulgent", e: "😋", protPct: 0.18 },
+  };
+  window.OBJ_FOCUS = FOCUS;
+  // Cible protéines/jour (g) déduite de l'objectif kcal + du profil.
+  window.OBJ_protJour = function (o) {
+    if (!o || !o.kcal) return null;
+    const f = o.focus && FOCUS[o.focus];
+    return Math.round((o.kcal * ((f && f.protPct) || 0.20)) / 4);
   };
 
   // Répartition d'une journée : l'objectif kcal se répartit sur les moments (le matin
@@ -92,14 +104,23 @@
         '<div style="height:100%;width:' + Math.min(100, pct) + '%;background:' + col + '"></div></div>';
     }
 
+    // Protéines de la portion (utile pour les profils muscu).
+    if (n && n.prot != null) {
+      parts += '<div style="margin-top:8px;color:var(--text);font-size:13.5px">💪 ' +
+        T("Protéines : ", "Protein: ") + "<b>" + n.prot + " g</b>/" + T("portion", "serving") + "</div>";
+    }
     // Adéquation au focus
     if (o.focus && n) {
+      const richeProt = n.prot != null && n.prot >= 25;
+      const legere = n.cal != null && n.cal <= 500;
       let msg = "";
-      if (o.focus === "leger") msg = (n.cal != null && n.cal <= 500) ? T("✅ Colle à ton objectif léger", "✅ Fits your light goal") : T("⚠️ Plutôt copieux pour un objectif léger", "⚠️ A bit rich for a light goal");
-      else if (o.focus === "proteine") msg = (n.prot != null && n.prot >= 20) ? T("💪 Riche en protéines, parfait", "💪 High in protein, perfect") : T("ℹ️ Peu protéiné", "ℹ️ Low in protein");
+      if (o.focus === "leger") msg = legere ? T("✅ Colle à ton objectif léger", "✅ Fits your light goal") : T("⚠️ Plutôt copieux pour un objectif léger", "⚠️ A bit rich for a light goal");
+      else if (o.focus === "proteine") msg = richeProt ? T("💪 Riche en protéines, parfait", "💪 High in protein, perfect") : T("ℹ️ Peu protéiné pour ton objectif", "ℹ️ Low in protein for your goal");
+      else if (o.focus === "seche") msg = (richeProt && (n.cal == null || n.cal <= 550)) ? T("🔥 Protéiné et raisonnable — idéal sèche", "🔥 High-protein and lean — great for cutting") : (richeProt ? T("💪 Bien protéiné, surveille les calories", "💪 Good protein, watch the calories") : T("⚠️ Peu protéiné pour une sèche", "⚠️ Low in protein for cutting"));
+      else if (o.focus === "prisedemasse") msg = richeProt ? T("🏋️ Calorique et protéiné — parfait prise de masse", "🏋️ Calorie-dense and high-protein — great for bulking") : T("ℹ️ Ajoute une source de protéines", "ℹ️ Add a protein source");
       else if (o.focus === "gourmand") msg = T("😋 Profite, c'est permis !", "😋 Enjoy, you've earned it!");
       else msg = T("⚖️ À intégrer dans une journée équilibrée", "⚖️ Fits a balanced day");
-      if (msg) parts += '<div style="margin-top:8px;color:var(--text-2);font-size:13.5px">' + msg + "</div>";
+      if (msg) parts += '<div style="margin-top:6px;color:var(--text-2);font-size:13.5px">' + msg + "</div>";
     }
     return wrap(parts);
   };
@@ -219,8 +240,10 @@
         '<button type="button" class="obj-cta" onclick="ouvrirObjectifs()">' + T("🎯 Définir mon objectif", "🎯 Set my goal") + "</button>";
     }
     const focus = o.focus && FOCUS[o.focus];
+    const protJour = window.OBJ_protJour ? window.OBJ_protJour(o) : null;
     let stats = '<div class="obj-stats">';
     if (o.kcal) stats += '<span class="obj-stat"><b>' + o.kcal + "</b> kcal/" + T("jour", "day") + "</span>";
+    if (protJour) stats += '<span class="obj-stat">💪 <b>~' + protJour + "</b> g " + T("protéines/jour", "protein/day") + "</span>";
     if (focus) stats += '<span class="obj-stat">' + focus.e + " " + T(focus.fr, focus.en) + "</span>";
     stats += "</div>";
 
