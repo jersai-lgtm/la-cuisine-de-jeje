@@ -95,38 +95,61 @@
 
   // ---- Modale de réglage ----
   window.ouvrirObjectifs = function () {
+    injecterStyleBloc();
     const o = lire();
     let modal = document.getElementById("modal-objectifs");
     if (modal) modal.remove();
     modal = document.createElement("div");
     modal.id = "modal-objectifs";
     modal.style.cssText = "position:fixed;inset:0;z-index:9100;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;padding:18px";
-    const kcals = [1500, 1800, 2000, 2200, 2500];
-    const btnK = kcals.map((k) => '<button type="button" data-kcal="' + k + '" class="obj-k" style="' + chip(o.kcal === k) + '">' + k + "</button>").join("") +
-      '<button type="button" data-kcal="0" class="obj-k" style="' + chip(!o.kcal) + '">' + T("Aucun", "None") + "</button>";
+    const kStart = o.kcal || 2000;          // valeur de départ du compteur
+    // « focus seul » coché UNIQUEMENT si l'utilisateur avait déjà choisi un focus sans
+    // kcal (sinon, nouvel utilisateur → case décochée pour qu'il puisse régler le compteur).
+    const sansKcal = !!(o.focus && !o.kcal);
     const btnF = Object.keys(FOCUS).map((f) => '<button type="button" data-focus="' + f + '" class="obj-f" style="' + chip(o.focus === f) + '">' + FOCUS[f].e + " " + T(FOCUS[f].fr, FOCUS[f].en) + "</button>").join("") +
       '<button type="button" data-focus="" class="obj-f" style="' + chip(!o.focus) + '">' + T("Aucun", "None") + "</button>";
     modal.innerHTML =
       '<div style="background:var(--panel-solid,#1a1a2e);color:var(--text);border:1px solid rgba(var(--w),.12);border-radius:18px;max-width:420px;width:100%;padding:20px;font-family:system-ui,sans-serif;max-height:90vh;overflow:auto">' +
       '<div style="display:flex;align-items:center;justify-content:space-between"><h2 style="margin:0;font-size:19px">' + T("🎯 Mon objectif nutritionnel", "🎯 My nutrition goal") + "</h2>" +
       '<button type="button" id="obj-close" style="background:rgba(var(--w),.1);color:var(--text);border:none;border-radius:50%;width:34px;height:34px;font-size:15px;cursor:pointer">✕</button></div>' +
-      '<p style="color:var(--text-2);font-size:14px;margin:12px 0 6px">' + T("Calories par jour", "Calories per day") + "</p>" +
-      '<div style="display:flex;flex-wrap:wrap;gap:8px">' + btnK + "</div>" +
-      '<p style="color:var(--text-2);font-size:14px;margin:16px 0 6px">' + T("Mon focus", "My focus") + "</p>" +
+      '<p style="color:var(--text-2);font-size:14px;margin:14px 0 6px">' + T("Calories par jour", "Calories per day") + "</p>" +
+      '<div style="text-align:center"><span class="obj-kval" id="obj-kval">' + kStart + '</span><span style="font-size:14px;color:var(--text-2)"> kcal</span></div>' +
+      '<div style="display:flex;align-items:center;gap:10px;margin-top:8px">' +
+        '<button type="button" id="obj-k-minus" class="obj-step">−</button>' +
+        '<input type="range" id="obj-k-range" min="500" max="3500" step="10" value="' + kStart + '">' +
+        '<button type="button" id="obj-k-plus" class="obj-step">+</button></div>' +
+      '<div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-3);margin-top:3px"><span>500</span><span>3500</span></div>' +
+      '<label style="display:flex;align-items:center;gap:8px;margin-top:11px;font-size:13px;color:var(--text-2);cursor:pointer"><input type="checkbox" id="obj-k-none"' + (sansKcal ? " checked" : "") + ' style="accent-color:var(--accent);width:17px;height:17px"> ' + T("Pas d'objectif calorique (focus seul)", "No calorie goal (focus only)") + "</label>" +
+      '<p style="color:var(--text-2);font-size:14px;margin:18px 0 6px">' + T("Mon focus", "My focus") + "</p>" +
       '<div style="display:flex;flex-wrap:wrap;gap:8px">' + btnF + "</div>" +
       '<button type="button" id="obj-save" style="width:100%;margin-top:18px;background:linear-gradient(90deg,var(--accent),#ff9330);color:#1a0e14;border:none;border-radius:12px;padding:12px;font-size:15px;font-weight:800;cursor:pointer">' + T("Enregistrer", "Save") + "</button></div>";
     document.body.appendChild(modal);
     if (typeof window._backGuardPush === "function") window._backGuardPush(); // bouton retour ferme la modale
 
-    let selK = o.kcal || 0, selF = o.focus || "";
-    modal.querySelectorAll(".obj-k").forEach((b) => b.addEventListener("click", () => { selK = parseInt(b.dataset.kcal) || 0; modal.querySelectorAll(".obj-k").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); }));
+    let selK = kStart, selF = o.focus || "";
+    const valEl = modal.querySelector("#obj-kval");
+    const range = modal.querySelector("#obj-k-range");
+    const none = modal.querySelector("#obj-k-none");
+    const minus = modal.querySelector("#obj-k-minus");
+    const plus = modal.querySelector("#obj-k-plus");
+    const setK = (v) => { selK = Math.max(500, Math.min(3500, Math.round(v))); range.value = selK; valEl.textContent = selK; };
+    const majSansKcal = () => {
+      const off = none.checked;
+      range.disabled = off; minus.disabled = off; plus.disabled = off;
+      valEl.style.opacity = off ? ".3" : "1";
+    };
+    range.addEventListener("input", () => setK(parseInt(range.value) || 1));
+    minus.addEventListener("click", () => { setK(selK - 10); });
+    plus.addEventListener("click", () => { setK(selK + 10); });
+    none.addEventListener("change", majSansKcal);
+    majSansKcal();
     modal.querySelectorAll(".obj-f").forEach((b) => b.addEventListener("click", () => { selF = b.dataset.focus; modal.querySelectorAll(".obj-f").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); }));
     const fermer = () => modal.remove();
     window.fermerObjectifs = fermer; // pour le bouton retour du téléphone
     modal.querySelector("#obj-close").addEventListener("click", fermer);
     modal.addEventListener("click", (e) => { if (e.target === modal) fermer(); });
     modal.querySelector("#obj-save").addEventListener("click", () => {
-      ecrire({ kcal: selK || null, focus: selF || null });
+      ecrire({ kcal: none.checked ? null : selK, focus: selF || null });
       fermer();
       if (typeof window._refreshObjectifBloc === "function") window._refreshObjectifBloc(); // maj du bloc accueil
       if (typeof afficherToast === "function") afficherToast(T("🎯 Objectif enregistré !", "🎯 Goal saved!"));
@@ -160,6 +183,11 @@
       .obj-stat b{color:var(--accent);font-weight:800}
       .obj-cta{width:100%;background:rgba(var(--accent-rgb),.15);color:var(--accent);border:1px solid rgba(var(--accent-rgb),.5);border-radius:12px;padding:10px;font-size:13.5px;font-weight:700;cursor:pointer}
       .obj-cta:hover{background:rgba(var(--accent-rgb),.22)}
+      .obj-kval{font-size:36px;font-weight:800;color:var(--accent);line-height:1}
+      .obj-step{width:40px;height:40px;border-radius:11px;border:1.5px solid rgba(var(--w),.2);background:rgba(var(--w),.06);color:var(--text);font-size:22px;font-weight:700;cursor:pointer;flex:none;line-height:1}
+      .obj-step:active{transform:scale(.94)}
+      .obj-step:disabled{opacity:.3;cursor:default}
+      #obj-k-range{flex:1;height:6px;accent-color:var(--accent);cursor:pointer}
     `;
     document.head.appendChild(s);
   }
