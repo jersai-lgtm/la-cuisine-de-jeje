@@ -128,6 +128,7 @@
     modal.querySelector("#obj-save").addEventListener("click", () => {
       ecrire({ kcal: selK || null, focus: selF || null });
       fermer();
+      if (typeof window._refreshObjectifBloc === "function") window._refreshObjectifBloc(); // maj du bloc accueil
       if (typeof afficherToast === "function") afficherToast(T("🎯 Objectif enregistré !", "🎯 Goal saved!"));
       // Propose directement des recettes qui collent à l'objectif (zone « De quoi t'as envie »).
       if (typeof window.proposerSelonObjectif === "function") window.proposerSelonObjectif();
@@ -139,4 +140,78 @@
       (actif ? "var(--accent)" : "rgba(var(--w),.2)") + ";background:" + (actif ? "rgba(var(--accent-rgb),.18)" : "transparent") +
       ";color:" + (actif ? "var(--accent)" : "var(--text)") + ";font-family:system-ui,sans-serif";
   }
+
+  // ===========================================================================
+  // Bloc d'accueil « 🎯 Objectif kcal » — sa propre catégorie, entre le swipe
+  // « Qu'est-ce qu'on mange ? » et « De quoi t'as envie ? ».
+  // ===========================================================================
+  function injecterStyleBloc() {
+    if (document.getElementById("objectif-bloc-style")) return;
+    const s = document.createElement("style");
+    s.id = "objectif-bloc-style";
+    s.textContent = `
+      .obj-bloc{background:rgba(var(--w),.05);border:1px solid rgba(var(--w),.1);border-radius:16px;padding:12px 14px;margin:0 0 16px;font-family:system-ui,sans-serif}
+      .obj-bloc-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px}
+      .obj-bloc-head b{color:var(--text);font-size:15px}
+      .obj-bloc .obj-edit{background:none;border:none;color:var(--text-3);font-size:13px;cursor:pointer;text-decoration:underline;padding:0}
+      .obj-bloc .obj-intro{color:var(--text-2);font-size:13.5px;line-height:1.5;margin-bottom:11px}
+      .obj-stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:11px}
+      .obj-stat{background:rgba(var(--w),.07);border:1px solid rgba(var(--w),.12);border-radius:999px;padding:6px 12px;font-size:13px;color:var(--text)}
+      .obj-stat b{color:var(--accent);font-weight:800}
+      .obj-cta{width:100%;background:rgba(var(--accent-rgb),.15);color:var(--accent);border:1px solid rgba(var(--accent-rgb),.5);border-radius:12px;padding:10px;font-size:13.5px;font-weight:700;cursor:pointer}
+      .obj-cta:hover{background:rgba(var(--accent-rgb),.22)}
+    `;
+    document.head.appendChild(s);
+  }
+
+  function blocHTML() {
+    const o = lire();
+    const aGoal = o.kcal || o.focus;
+    let head = '<div class="obj-bloc-head"><b>' + T("🎯 Objectif kcal", "🎯 Calorie goal") + "</b>" +
+      (aGoal ? '<button type="button" class="obj-edit" onclick="ouvrirObjectifs()">' + T("modifier", "edit") + "</button>" : "") + "</div>";
+    if (!aGoal) {
+      return head +
+        '<div class="obj-intro">' + T("Fixe tes calories du jour : l'appli te propose direct des repas qui rentrent dans ton objectif (et chaque recette te dit la part qu'elle représente).", "Set your daily calories: the app suggests meals that fit your goal (and each recipe shows the share it represents).") + "</div>" +
+        '<button type="button" class="obj-cta" onclick="ouvrirObjectifs()">' + T("🎯 Définir mon objectif", "🎯 Set my goal") + "</button>";
+    }
+    const focus = o.focus && FOCUS[o.focus];
+    const parRepas = o.kcal ? Math.round(o.kcal / 3) : null;
+    let stats = '<div class="obj-stats">';
+    if (o.kcal) stats += '<span class="obj-stat"><b>' + o.kcal + "</b> kcal/" + T("jour", "day") + "</span>";
+    if (parRepas) stats += '<span class="obj-stat">≈ <b>' + parRepas + "</b> kcal/" + T("repas", "meal") + "</span>";
+    if (focus) stats += '<span class="obj-stat">' + focus.e + " " + T(focus.fr, focus.en) + "</span>";
+    stats += "</div>";
+    return head + stats +
+      '<button type="button" class="obj-cta" onclick="proposerSelonObjectif()">' + T("🍽️ Voir des repas qui rentrent", "🍽️ See meals that fit") + "</button>";
+  }
+
+  function injecterBlocObjectif() {
+    const sec = document.getElementById("section-accueil");
+    if (!sec) return;
+    injecterStyleBloc();
+    let bloc = document.getElementById("objectif-bloc");
+    if (!bloc) {
+      bloc = document.createElement("div");
+      bloc.id = "objectif-bloc";
+      bloc.className = "obj-bloc";
+      const cta = document.querySelector(".swipe-cta");
+      if (cta && cta.parentNode) cta.parentNode.insertBefore(bloc, cta.nextSibling);
+      else sec.insertBefore(bloc, sec.firstChild);
+    }
+    bloc.innerHTML = blocHTML();
+  }
+  // Exposé pour rafraîchir le bloc après enregistrement / changement de langue.
+  window._refreshObjectifBloc = injecterBlocObjectif;
+
+  function brancherBloc() {
+    if (typeof window.afficherAccueil === "function" && !window.afficherAccueil._objbloc) {
+      const orig = window.afficherAccueil;
+      window.afficherAccueil = function () { const r = orig.apply(this, arguments); try { injecterBlocObjectif(); } catch (e) {} return r; };
+      window.afficherAccueil._objbloc = true;
+    }
+    try { injecterBlocObjectif(); } catch (e) {}
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => setTimeout(brancherBloc, 0));
+  else setTimeout(brancherBloc, 0);
+  window.addEventListener("languechange", () => { try { injecterBlocObjectif(); } catch (e) {} });
 })();

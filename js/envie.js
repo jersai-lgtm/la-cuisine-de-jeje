@@ -155,18 +155,20 @@
     bloc.className = "envie-bloc"; bloc.id = "envie-bloc";
     bloc.innerHTML =
       '<div class="envie-head"><b>' + T("🎭 De quoi t'as envie ?", "🎭 What are you craving?") + "</b>" +
-      '<span class="envie-actions"><button class="envie-quiz envie-act">🧩 ' + T("Quiz", "Quiz") + "</button>" +
-      '<button class="envie-obj envie-act">🎯 ' + T("Objectif kcal", "Calorie goal") + "</button></span></div>" +
+      '<span class="envie-actions"><button class="envie-quiz envie-act">🧩 ' + T("Quiz", "Quiz") + "</button></span></div>" +
       '<div class="envie-chips">' + MOODS.map((m, i) => '<button class="envie-chip" data-i="' + i + '">' + m.e + " " + T(m.fr, m.en) + "</button>").join("") + "</div>";
-    // Placé juste après le bouton swipe (zone "découverte" groupée), sinon en tête.
-    if (cta && cta.parentNode) cta.parentNode.insertBefore(bloc, cta.nextSibling);
+    // Ordre voulu : swipe → 🎯 Objectif → 🎭 De quoi t'as envie. On se place après
+    // le bloc Objectif s'il est déjà là, sinon juste après le bouton swipe (le bloc
+    // Objectif viendra alors s'insérer entre les deux).
+    const objBloc = document.getElementById("objectif-bloc");
+    const ancre = objBloc || cta;
+    if (ancre && ancre.parentNode) ancre.parentNode.insertBefore(bloc, ancre.nextSibling);
     else sec.insertBefore(bloc, sec.firstChild);
     bloc.querySelectorAll(".envie-chip").forEach((b) => b.addEventListener("click", () => {
       const m = MOODS[parseInt(b.dataset.i)];
       montrerResultats(m.e + " " + T(m.fr, m.en), collecter(m.test, 24));
     }));
     bloc.querySelector(".envie-quiz").addEventListener("click", () => window.ouvrirQuizGouts());
-    bloc.querySelector(".envie-obj").addEventListener("click", () => { if (typeof ouvrirObjectifs === "function") ouvrirObjectifs(); });
   }
 
   // Propose des recettes-repas qui collent à l'objectif calorique (≈ 1/3 de la
