@@ -1902,5 +1902,38 @@ Object.assign(recettes, {
       { icone: "🥣", titre: "Garnir", detail: "Ajouter granola et fruits rouges.", badge: null },
       { icone: "🍯", titre: "Miel", detail: "Filet de miel et c'est prêt.", badge: null }
     ]
+  },
+  tofubrouille: {
+    nom: "Tofu Brouillé (Vegan)",
+    cat: "brunch", pays: "monde",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    dateAjout: "2026-06-25T12:00:00",
+    description: "L'alternative vegan aux œufs brouillés : tofu émietté au curcuma, épinards et tomate. Protéiné et prêt en 10 minutes.",
+    tableauTofubrouille: [
+      { nb: 1, tofu: "150 g", epinards: "50 g", tomate: "60 g", oignon: "30 g", curcuma: "2 g", huileOlive: "6 ml" },
+      { nb: 2, tofu: "300 g", epinards: "100 g", tomate: "120 g", oignon: "60 g", curcuma: "4 g", huileOlive: "12 ml" },
+      { nb: 3, tofu: "450 g", epinards: "150 g", tomate: "180 g", oignon: "90 g", curcuma: "6 g", huileOlive: "18 ml" },
+      { nb: 4, tofu: "600 g", epinards: "200 g", tomate: "240 g", oignon: "120 g", curcuma: "8 g", huileOlive: "24 ml" },
+      { nb: 5, tofu: "750 g", epinards: "250 g", tomate: "300 g", oignon: "150 g", curcuma: "10 g", huileOlive: "30 ml" },
+      { nb: 6, tofu: "900 g", epinards: "300 g", tomate: "360 g", oignon: "180 g", curcuma: "12 g", huileOlive: "36 ml" },
+      { nb: 7, tofu: "1050 g", epinards: "350 g", tomate: "420 g", oignon: "210 g", curcuma: "14 g", huileOlive: "42 ml" },
+      { nb: 8, tofu: "1200 g", epinards: "400 g", tomate: "480 g", oignon: "240 g", curcuma: "16 g", huileOlive: "48 ml" },
+      { nb: 9, tofu: "1350 g", epinards: "450 g", tomate: "540 g", oignon: "270 g", curcuma: "18 g", huileOlive: "54 ml" },
+      { nb: 10, tofu: "1500 g", epinards: "500 g", tomate: "600 g", oignon: "300 g", curcuma: "20 g", huileOlive: "60 ml" },
+      { nb: 11, tofu: "1650 g", epinards: "550 g", tomate: "660 g", oignon: "330 g", curcuma: "22 g", huileOlive: "66 ml" },
+      { nb: 12, tofu: "1800 g", epinards: "600 g", tomate: "720 g", oignon: "360 g", curcuma: "24 g", huileOlive: "72 ml" },
+      { nb: 13, tofu: "1950 g", epinards: "650 g", tomate: "780 g", oignon: "390 g", curcuma: "26 g", huileOlive: "78 ml" },
+      { nb: 14, tofu: "2100 g", epinards: "700 g", tomate: "840 g", oignon: "420 g", curcuma: "28 g", huileOlive: "84 ml" },
+      { nb: 15, tofu: "2250 g", epinards: "750 g", tomate: "900 g", oignon: "450 g", curcuma: "30 g", huileOlive: "90 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Tofu", detail: "Émietter le tofu et le poêler avec le curcuma.", badge: null },
+      { icone: "🥬", titre: "Légumes", detail: "Ajouter oignon, tomate et épinards.", badge: null },
+      { icone: "🍳", titre: "Servir", detail: "Cuire 5 min en remuant, servir chaud.", badge: null }
+    ]
   }
 });

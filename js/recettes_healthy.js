@@ -2059,5 +2059,104 @@ Object.assign(recettes, {
       { icone: "🟨", titre: "Tempeh", detail: "Dorer le tempeh en dés à la poêle.", badge: null },
       { icone: "🥦", titre: "Légumes", detail: "Ajouter légumes, ail, gingembre, sauce soja.", badge: null }
     ]
+  },
+  tempehcurrycoco: {
+    nom: "Curry de Tempeh au Lait de Coco",
+    cat: "healthy", pays: "monde",
+    base: 1,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍛",
+    dateAjout: "2026-06-25T12:00:00",
+    description: "Tempeh mijoté dans un curry crémeux au lait de coco et épinards, servi sur du riz. Protéines végétales complètes et plein de saveurs.",
+    tableauTempehcurrycoco: [
+      { nb: 1, tempeh: "120 g", laitcoco: "80 ml", epinards: "50 g", riz: "60 g", oignon: "40 g", curry: "5 g" },
+      { nb: 2, tempeh: "240 g", laitcoco: "160 ml", epinards: "100 g", riz: "120 g", oignon: "80 g", curry: "10 g" },
+      { nb: 3, tempeh: "360 g", laitcoco: "240 ml", epinards: "150 g", riz: "180 g", oignon: "120 g", curry: "15 g" },
+      { nb: 4, tempeh: "480 g", laitcoco: "320 ml", epinards: "200 g", riz: "240 g", oignon: "160 g", curry: "20 g" },
+      { nb: 5, tempeh: "600 g", laitcoco: "400 ml", epinards: "250 g", riz: "300 g", oignon: "200 g", curry: "25 g" },
+      { nb: 6, tempeh: "720 g", laitcoco: "480 ml", epinards: "300 g", riz: "360 g", oignon: "240 g", curry: "30 g" },
+      { nb: 7, tempeh: "840 g", laitcoco: "560 ml", epinards: "350 g", riz: "420 g", oignon: "280 g", curry: "35 g" },
+      { nb: 8, tempeh: "960 g", laitcoco: "640 ml", epinards: "400 g", riz: "480 g", oignon: "320 g", curry: "40 g" },
+      { nb: 9, tempeh: "1080 g", laitcoco: "720 ml", epinards: "450 g", riz: "540 g", oignon: "360 g", curry: "45 g" },
+      { nb: 10, tempeh: "1200 g", laitcoco: "800 ml", epinards: "500 g", riz: "600 g", oignon: "400 g", curry: "50 g" },
+      { nb: 11, tempeh: "1320 g", laitcoco: "880 ml", epinards: "550 g", riz: "660 g", oignon: "440 g", curry: "55 g" },
+      { nb: 12, tempeh: "1440 g", laitcoco: "960 ml", epinards: "600 g", riz: "720 g", oignon: "480 g", curry: "60 g" },
+      { nb: 13, tempeh: "1560 g", laitcoco: "1040 ml", epinards: "650 g", riz: "780 g", oignon: "520 g", curry: "65 g" },
+      { nb: 14, tempeh: "1680 g", laitcoco: "1120 ml", epinards: "700 g", riz: "840 g", oignon: "560 g", curry: "70 g" },
+      { nb: 15, tempeh: "1800 g", laitcoco: "1200 ml", epinards: "750 g", riz: "900 g", oignon: "600 g", curry: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
+      { icone: "🟨", titre: "Tempeh", detail: "Dorer le tempeh en dés.", badge: null },
+      { icone: "🥥", titre: "Curry", detail: "Ajouter curry, lait de coco et épinards, mijoter 10 min.", badge: null }
+    ]
+  },
+  bowledamamequinoa: {
+    nom: "Bowl Edamame-Quinoa",
+    cat: "healthy", pays: "monde",
+    base: 1,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "💪",
+    dateAjout: "2026-06-25T12:00:00",
+    description: "Bowl frais et protéiné : edamame, quinoa, avocat et crudités, sauce soja. Vegan, complet et idéal en meal-prep.",
+    tableauBowledamamequinoa: [
+      { nb: 1, edamame: "80 g", quinoa: "60 g", avocat: "40 g", concombre: "50 g", carottes: "40 g", saucesoja: "10 ml" },
+      { nb: 2, edamame: "160 g", quinoa: "120 g", avocat: "80 g", concombre: "100 g", carottes: "80 g", saucesoja: "20 ml" },
+      { nb: 3, edamame: "240 g", quinoa: "180 g", avocat: "120 g", concombre: "150 g", carottes: "120 g", saucesoja: "30 ml" },
+      { nb: 4, edamame: "320 g", quinoa: "240 g", avocat: "160 g", concombre: "200 g", carottes: "160 g", saucesoja: "40 ml" },
+      { nb: 5, edamame: "400 g", quinoa: "300 g", avocat: "200 g", concombre: "250 g", carottes: "200 g", saucesoja: "50 ml" },
+      { nb: 6, edamame: "480 g", quinoa: "360 g", avocat: "240 g", concombre: "300 g", carottes: "240 g", saucesoja: "60 ml" },
+      { nb: 7, edamame: "560 g", quinoa: "420 g", avocat: "280 g", concombre: "350 g", carottes: "280 g", saucesoja: "70 ml" },
+      { nb: 8, edamame: "640 g", quinoa: "480 g", avocat: "320 g", concombre: "400 g", carottes: "320 g", saucesoja: "80 ml" },
+      { nb: 9, edamame: "720 g", quinoa: "540 g", avocat: "360 g", concombre: "450 g", carottes: "360 g", saucesoja: "90 ml" },
+      { nb: 10, edamame: "800 g", quinoa: "600 g", avocat: "400 g", concombre: "500 g", carottes: "400 g", saucesoja: "100 ml" },
+      { nb: 11, edamame: "880 g", quinoa: "660 g", avocat: "440 g", concombre: "550 g", carottes: "440 g", saucesoja: "110 ml" },
+      { nb: 12, edamame: "960 g", quinoa: "720 g", avocat: "480 g", concombre: "600 g", carottes: "480 g", saucesoja: "120 ml" },
+      { nb: 13, edamame: "1040 g", quinoa: "780 g", avocat: "520 g", concombre: "650 g", carottes: "520 g", saucesoja: "130 ml" },
+      { nb: 14, edamame: "1120 g", quinoa: "840 g", avocat: "560 g", concombre: "700 g", carottes: "560 g", saucesoja: "140 ml" },
+      { nb: 15, edamame: "1200 g", quinoa: "900 g", avocat: "600 g", concombre: "750 g", carottes: "600 g", saucesoja: "150 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Quinoa", detail: "Cuire le quinoa, laisser tiédir.", badge: null },
+      { icone: "🟢", titre: "Edamame", detail: "Cuire les edamame 5 min.", badge: null },
+      { icone: "🥑", titre: "Dresser", detail: "Disposer le tout, napper de sauce soja.", badge: null }
+    ]
+  },
+  legumesplancha: {
+    nom: "Légumes à la Plancha",
+    cat: "healthy", pays: "espagne", saisons: ["ete"],
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🫑",
+    dateAjout: "2026-06-25T12:00:00",
+    description: "Courgette, poivron, aubergine et oignon saisis à la plancha à l'huile d'olive et à l'ail. Léger, coloré et plein de soleil.",
+    tableauLegumesplancha: [
+      { nb: 1, courgette: "100 g", poivron: "80 g", aubergine: "80 g", oignon: "40 g", huileOlive: "10 ml", ail: "4 g" },
+      { nb: 2, courgette: "200 g", poivron: "160 g", aubergine: "160 g", oignon: "80 g", huileOlive: "20 ml", ail: "8 g" },
+      { nb: 3, courgette: "300 g", poivron: "240 g", aubergine: "240 g", oignon: "120 g", huileOlive: "30 ml", ail: "12 g" },
+      { nb: 4, courgette: "400 g", poivron: "320 g", aubergine: "320 g", oignon: "160 g", huileOlive: "40 ml", ail: "16 g" },
+      { nb: 5, courgette: "500 g", poivron: "400 g", aubergine: "400 g", oignon: "200 g", huileOlive: "50 ml", ail: "20 g" },
+      { nb: 6, courgette: "600 g", poivron: "480 g", aubergine: "480 g", oignon: "240 g", huileOlive: "60 ml", ail: "24 g" },
+      { nb: 7, courgette: "700 g", poivron: "560 g", aubergine: "560 g", oignon: "280 g", huileOlive: "70 ml", ail: "28 g" },
+      { nb: 8, courgette: "800 g", poivron: "640 g", aubergine: "640 g", oignon: "320 g", huileOlive: "80 ml", ail: "32 g" },
+      { nb: 9, courgette: "900 g", poivron: "720 g", aubergine: "720 g", oignon: "360 g", huileOlive: "90 ml", ail: "36 g" },
+      { nb: 10, courgette: "1000 g", poivron: "800 g", aubergine: "800 g", oignon: "400 g", huileOlive: "100 ml", ail: "40 g" },
+      { nb: 11, courgette: "1100 g", poivron: "880 g", aubergine: "880 g", oignon: "440 g", huileOlive: "110 ml", ail: "44 g" },
+      { nb: 12, courgette: "1200 g", poivron: "960 g", aubergine: "960 g", oignon: "480 g", huileOlive: "120 ml", ail: "48 g" },
+      { nb: 13, courgette: "1300 g", poivron: "1040 g", aubergine: "1040 g", oignon: "520 g", huileOlive: "130 ml", ail: "52 g" },
+      { nb: 14, courgette: "1400 g", poivron: "1120 g", aubergine: "1120 g", oignon: "560 g", huileOlive: "140 ml", ail: "56 g" },
+      { nb: 15, courgette: "1500 g", poivron: "1200 g", aubergine: "1200 g", oignon: "600 g", huileOlive: "150 ml", ail: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Tailler", detail: "Couper tous les légumes en lamelles.", badge: null },
+      { icone: "🔥", titre: "Plancha", detail: "Saisir à la plancha bien chaude avec l'ail.", badge: null },
+      { icone: "🫒", titre: "Finir", detail: "Filet d'huile d'olive et de sel en fin de cuisson.", badge: null }
+    ]
   }
 });

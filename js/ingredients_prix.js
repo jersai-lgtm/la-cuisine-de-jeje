@@ -651,6 +651,7 @@ const INGREDIENTS_PRIX = {
   tofu:           { prixKg: 6.00, calPer100g: 76,   lipSat: 0.7,  sucre: 0.7,  sel: 0,    fibres: 0.3, prot: 8.1,  flv: 100 },
   tofusoie:       { prixKg: 7.00, calPer100g: 55,   lipSat: 0.4,  sucre: 0.7,  sel: 0,    fibres: 0.2, prot: 5,    flv: 100 },
   tempeh:         { prixKg: 8.00, calPer100g: 192,  lipSat: 2.2,  sucre: 0,    sel: 0,    fibres: 0,   prot: 19,   flv: 100 },
+  seitan:         { prixKg: 10.0, calPer100g: 130,  lipSat: 0.4,  sucre: 2,    sel: 0.4,  fibres: 0.6, prot: 24,   flv: 0 },
   proteine:       { prixKg: 25.0, calPer100g: 380,  lipSat: 1,    sucre: 3,    sel: 0.5,  fibres: 2,   prot: 80,   flv: 0 },
   levure:         { prixKg: 10.0, calPer100g: 105,  lipSat: 0.1,  sucre: 0,    sel: 0.05, fibres: 0,   prot: 12,   flv: 0 },
   levurechimique: { prixKg: 12.0, calPer100g: 0,    lipSat: 0,    sucre: 0,    sel: 25,   fibres: 0,   prot: 0,    flv: 0 },
@@ -1305,7 +1306,7 @@ const INGREDIENTS_LABELS = {
   pouletHache: "🍗 Poulet haché", rizGrillé: "🌾 Riz grillé concassé",
   oignonrouge: "🧅 Oignon rouge", nouillesoeuf: "🍜 Nouilles aux œufs",
   pateCurry: "🌶️ Pâte de curry", cacahuetespurée: "🥜 Purée de cacahuètes",
-  lait_coco: "🥥 Lait de coco", tempeh: "🟨 Tempeh",
+  lait_coco: "🥥 Lait de coco", tempeh: "🟨 Tempeh", seitan: "🌾 Seitan",
   piniots: "🌰 Pignons de pin", feuillesBrick: "📜 Feuilles de brick",
   feuillesFilo: "📜 Feuilles de filo", sucreglace: "❄️ Sucre glace",
   // === Mega-Lot — Italie / Pâtisserie / Healthy ===

@@ -2658,4 +2658,103 @@ oeufmayo: {
       { icone: "🌿", titre: "Finir", detail: "Filet d'huile, ciboulette et tour de poivre.", badge: null }
     ]
   },
+  brochetteshalloumi: {
+    nom: "Brochettes Halloumi & Légumes",
+    cat: "entrees", pays: "chypre", saisons: ["ete"],
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    dateAjout: "2026-06-25T12:00:00",
+    description: "Halloumi grillé qui ne fond pas, alterné de courgette, poivron et tomate cerise. Végétarien, doré et parfait au barbecue.",
+    tableauBrochetteshalloumi: [
+      { nb: 1, halloumi: "100 g", courgette: "80 g", poivron: "70 g", tomate: "60 g", huileOlive: "8 ml", origan: "2 g" },
+      { nb: 2, halloumi: "200 g", courgette: "160 g", poivron: "140 g", tomate: "120 g", huileOlive: "16 ml", origan: "4 g" },
+      { nb: 3, halloumi: "300 g", courgette: "240 g", poivron: "210 g", tomate: "180 g", huileOlive: "24 ml", origan: "6 g" },
+      { nb: 4, halloumi: "400 g", courgette: "320 g", poivron: "280 g", tomate: "240 g", huileOlive: "32 ml", origan: "8 g" },
+      { nb: 5, halloumi: "500 g", courgette: "400 g", poivron: "350 g", tomate: "300 g", huileOlive: "40 ml", origan: "10 g" },
+      { nb: 6, halloumi: "600 g", courgette: "480 g", poivron: "420 g", tomate: "360 g", huileOlive: "48 ml", origan: "12 g" },
+      { nb: 7, halloumi: "700 g", courgette: "560 g", poivron: "490 g", tomate: "420 g", huileOlive: "56 ml", origan: "14 g" },
+      { nb: 8, halloumi: "800 g", courgette: "640 g", poivron: "560 g", tomate: "480 g", huileOlive: "64 ml", origan: "16 g" },
+      { nb: 9, halloumi: "900 g", courgette: "720 g", poivron: "630 g", tomate: "540 g", huileOlive: "72 ml", origan: "18 g" },
+      { nb: 10, halloumi: "1000 g", courgette: "800 g", poivron: "700 g", tomate: "600 g", huileOlive: "80 ml", origan: "20 g" },
+      { nb: 11, halloumi: "1100 g", courgette: "880 g", poivron: "770 g", tomate: "660 g", huileOlive: "88 ml", origan: "22 g" },
+      { nb: 12, halloumi: "1200 g", courgette: "960 g", poivron: "840 g", tomate: "720 g", huileOlive: "96 ml", origan: "24 g" },
+      { nb: 13, halloumi: "1300 g", courgette: "1040 g", poivron: "910 g", tomate: "780 g", huileOlive: "104 ml", origan: "26 g" },
+      { nb: 14, halloumi: "1400 g", courgette: "1120 g", poivron: "980 g", tomate: "840 g", huileOlive: "112 ml", origan: "28 g" },
+      { nb: 15, halloumi: "1500 g", courgette: "1200 g", poivron: "1050 g", tomate: "900 g", huileOlive: "120 ml", origan: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Monter", detail: "Alterner halloumi et légumes sur les pics.", badge: null },
+      { icone: "🌿", titre: "Assaisonner", detail: "Badigeonner d'huile et d'origan.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller 8 min en tournant jusqu'à coloration.", badge: null }
+    ]
+  },
+  saladetomateburrata: {
+    nom: "Salade Tomates & Burrata",
+    cat: "entrees", pays: "italie", saisons: ["ete"],
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    dateAjout: "2026-06-25T12:00:00",
+    description: "Tomates bien mûres, burrata crémeuse, basilic et huile d'olive. La simplicité italienne au sommet, en plein été.",
+    tableauSaladetomateburrata: [
+      { nb: 1, tomate: "150 g", burrata: "75 g", basilic: "5 g", huileOlive: "10 ml", oignonrouge: "20 g" },
+      { nb: 2, tomate: "300 g", burrata: "150 g", basilic: "10 g", huileOlive: "20 ml", oignonrouge: "40 g" },
+      { nb: 3, tomate: "450 g", burrata: "225 g", basilic: "15 g", huileOlive: "30 ml", oignonrouge: "60 g" },
+      { nb: 4, tomate: "600 g", burrata: "300 g", basilic: "20 g", huileOlive: "40 ml", oignonrouge: "80 g" },
+      { nb: 5, tomate: "750 g", burrata: "375 g", basilic: "25 g", huileOlive: "50 ml", oignonrouge: "100 g" },
+      { nb: 6, tomate: "900 g", burrata: "450 g", basilic: "30 g", huileOlive: "60 ml", oignonrouge: "120 g" },
+      { nb: 7, tomate: "1050 g", burrata: "525 g", basilic: "35 g", huileOlive: "70 ml", oignonrouge: "140 g" },
+      { nb: 8, tomate: "1200 g", burrata: "600 g", basilic: "40 g", huileOlive: "80 ml", oignonrouge: "160 g" },
+      { nb: 9, tomate: "1350 g", burrata: "675 g", basilic: "45 g", huileOlive: "90 ml", oignonrouge: "180 g" },
+      { nb: 10, tomate: "1500 g", burrata: "750 g", basilic: "50 g", huileOlive: "100 ml", oignonrouge: "200 g" },
+      { nb: 11, tomate: "1650 g", burrata: "825 g", basilic: "55 g", huileOlive: "110 ml", oignonrouge: "220 g" },
+      { nb: 12, tomate: "1800 g", burrata: "900 g", basilic: "60 g", huileOlive: "120 ml", oignonrouge: "240 g" },
+      { nb: 13, tomate: "1950 g", burrata: "975 g", basilic: "65 g", huileOlive: "130 ml", oignonrouge: "260 g" },
+      { nb: 14, tomate: "2100 g", burrata: "1050 g", basilic: "70 g", huileOlive: "140 ml", oignonrouge: "280 g" },
+      { nb: 15, tomate: "2250 g", burrata: "1125 g", basilic: "75 g", huileOlive: "150 ml", oignonrouge: "300 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Tomates", detail: "Couper les tomates en quartiers.", badge: null },
+      { icone: "🧀", titre: "Burrata", detail: "Déposer la burrata au centre.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Basilic, oignon rouge, huile d'olive et sel.", badge: null }
+    ]
+  },
+  kukusabzi: {
+    nom: "Kuku Sabzi",
+    cat: "entrees", pays: "iran",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    dateAjout: "2026-06-25T12:00:00",
+    description: "Frittata iranienne aux herbes : œufs, épinards, persil et coriandre en abondance. Verte, parfumée et pleine de fraîcheur.",
+    tableauKukusabzi: [
+      { nb: 1, oeuf: "120 g", epinards: "60 g", persil: "15 g", coriandre: "10 g", oignon: "30 g", huileOlive: "6 ml" },
+      { nb: 2, oeuf: "240 g", epinards: "120 g", persil: "30 g", coriandre: "20 g", oignon: "60 g", huileOlive: "12 ml" },
+      { nb: 3, oeuf: "360 g", epinards: "180 g", persil: "45 g", coriandre: "30 g", oignon: "90 g", huileOlive: "18 ml" },
+      { nb: 4, oeuf: "480 g", epinards: "240 g", persil: "60 g", coriandre: "40 g", oignon: "120 g", huileOlive: "24 ml" },
+      { nb: 5, oeuf: "600 g", epinards: "300 g", persil: "75 g", coriandre: "50 g", oignon: "150 g", huileOlive: "30 ml" },
+      { nb: 6, oeuf: "720 g", epinards: "360 g", persil: "90 g", coriandre: "60 g", oignon: "180 g", huileOlive: "36 ml" },
+      { nb: 7, oeuf: "840 g", epinards: "420 g", persil: "105 g", coriandre: "70 g", oignon: "210 g", huileOlive: "42 ml" },
+      { nb: 8, oeuf: "960 g", epinards: "480 g", persil: "120 g", coriandre: "80 g", oignon: "240 g", huileOlive: "48 ml" },
+      { nb: 9, oeuf: "1080 g", epinards: "540 g", persil: "135 g", coriandre: "90 g", oignon: "270 g", huileOlive: "54 ml" },
+      { nb: 10, oeuf: "1200 g", epinards: "600 g", persil: "150 g", coriandre: "100 g", oignon: "300 g", huileOlive: "60 ml" },
+      { nb: 11, oeuf: "1320 g", epinards: "660 g", persil: "165 g", coriandre: "110 g", oignon: "330 g", huileOlive: "66 ml" },
+      { nb: 12, oeuf: "1440 g", epinards: "720 g", persil: "180 g", coriandre: "120 g", oignon: "360 g", huileOlive: "72 ml" },
+      { nb: 13, oeuf: "1560 g", epinards: "780 g", persil: "195 g", coriandre: "130 g", oignon: "390 g", huileOlive: "78 ml" },
+      { nb: 14, oeuf: "1680 g", epinards: "840 g", persil: "210 g", coriandre: "140 g", oignon: "420 g", huileOlive: "84 ml" },
+      { nb: 15, oeuf: "1800 g", epinards: "900 g", persil: "225 g", coriandre: "150 g", oignon: "450 g", huileOlive: "90 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Herbes", detail: "Hacher finement épinards, persil et coriandre.", badge: null },
+      { icone: "🥚", titre: "Mélange", detail: "Battre les œufs, incorporer les herbes et l'oignon.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Cuire à la poêle à couvert 12 min à feu doux.", badge: null }
+    ]
+  }
 });

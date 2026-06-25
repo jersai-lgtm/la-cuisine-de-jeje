@@ -78,7 +78,7 @@ window.I18N_ING = {
   "🪙 Fève": "🪙 Trinket (fève)", "🥖 Baguette": "🥖 Baguette", "🫓 Pain pita": "🫓 Pita bread", "🌭 Saucisse fumée": "🌭 Smoked sausage",
   "🍗 Poulet haché": "🍗 Ground chicken", "🌾 Riz grillé concassé": "🌾 Toasted ground rice", "🧅 Oignon rouge": "🧅 Red onion",
   "🍜 Nouilles aux œufs": "🍜 Egg noodles", "🌶️ Pâte de curry": "🌶️ Curry paste", "🥜 Purée de cacahuètes": "🥜 Peanut butter",
-  "🟨 Tempeh": "🟨 Tempeh", "🌰 Pignons de pin": "🌰 Pine nuts", "📜 Feuilles de brick": "📜 Brick pastry sheets",
+  "🟨 Tempeh": "🟨 Tempeh", "🌾 Seitan": "🌾 Seitan", "🌰 Pignons de pin": "🌰 Pine nuts", "📜 Feuilles de brick": "📜 Brick pastry sheets",
   "📜 Feuilles de filo": "📜 Phyllo sheets", "❄️ Sucre glace": "❄️ Powdered sugar", "🦪 Palourdes": "🦪 Clams",
   "🌽 Polenta": "🌽 Polenta", "🍝 Ragù (sauce bolognaise)": "🍝 Ragù (Bolognese sauce)", "🛢️ Huile de friture": "🛢️ Frying oil",
   "🍷 Marsala": "🍷 Marsala", "🍯 Caramel": "🍯 Caramel", "🥃 Amaretto": "🥃 Amaretto", "🍬 Fondant pâtissier": "🍬 Fondant icing",

@@ -52,7 +52,9 @@ const RECETTES_SPORT = new Set([
   "skyrbowlproteine","omeletteblancs","porridgewhey","oeufsbrouillesavocat","fbgranolaproteine",
   "pouletrizbrocoli","dindelegumeswok","bowlpouletpatatedouce","colinquinoabrocoli","saladethonharicotsblancs","tempehpoelelegumes",
   "steakhachepatatedouce","eminceboeufharicotsverts","crevettessauteesriz","pouletmarineyaourt","cabillaudvapeurcourgette","bowlthonrizavocat",
-  "boulesproteinees","cottagecheesefruits","oeufsdurspaprika","edamamepimentes","shakeproteinemaison"
+  "boulesproteinees","cottagecheesefruits","oeufsdurspaprika","edamamepimentes","shakeproteinemaison",
+  // Lot 2 — sport végé/vegan protéiné
+  "steakseitan","tofubrouille","lentillesbolo","tempehcurrycoco","boulettesvege","bowledamamequinoa"
 ]);
 window.RECETTES_SPORT = RECETTES_SPORT;
 
