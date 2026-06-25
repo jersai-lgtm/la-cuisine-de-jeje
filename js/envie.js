@@ -89,9 +89,11 @@
       #envie-modal .envie-sheet-head h2{margin:0;font-size:18px}
       #envie-modal .envie-x{background:rgba(var(--w),.1);color:var(--text);border:none;border-radius:50%;width:34px;height:34px;font-size:15px;cursor:pointer}
       #envie-modal .envie-grid{overflow:auto;padding:6px 14px 20px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-      /* Cartes en grille (et non en rangée scroll) → image bien proportionnée, pas une bande fine */
-      #envie-modal .envie-grid .mini-carte{flex:initial;width:auto}
-      #envie-modal .envie-grid .mini-carte img{height:auto;aspect-ratio:4/3}
+      /* Cartes en grille (et non en rangée scroll) → image plus haute, pas une bande fine.
+         Hauteur DÉFINIE (pas aspect-ratio) : sinon la track auto de la grille se réduit au
+         texte et l'image dépasse puis est coupée par overflow:hidden (effet « écrasé »). */
+      #envie-modal .envie-grid .mini-carte{flex:initial;width:auto;display:flex;flex-direction:column}
+      #envie-modal .envie-grid .mini-carte img{height:130px;aspect-ratio:auto}
       #envie-modal .envie-q{padding:8px 18px 4px}
       #envie-modal .envie-q p{font-size:16px;font-weight:700;margin:10px 0 10px}
       #envie-modal .envie-opts{display:flex;flex-wrap:wrap;gap:8px;padding:0 14px 8px}
