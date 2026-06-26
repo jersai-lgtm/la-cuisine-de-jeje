@@ -415,6 +415,9 @@ const INGREDIENTS_PRIX = {
   poischiches:    { prixKg: 3.50, calPer100g: 364,  lipSat: 0.7,  sucre: 11,   sel: 0,    fibres: 17,  prot: 19,   flv: 100 },
   farinepoischiche: { prixKg: 4.50, calPer100g: 387, lipSat: 0.6, sucre: 11,   sel: 0,    fibres: 11,  prot: 22,   flv: 50 },
   mloukhia:       { prixKg: 30.0, calPer100g: 210,  lipSat: 0.5,  sucre: 2,    sel: 0.1,  fibres: 30,  prot: 25,   flv: 70 },
+  igname:         { prixKg: 3.00, calPer100g: 118,  lipSat: 0,    sucre: 0.5,  sel: 0,    fibres: 4,   prot: 1.5,  flv: 0 },
+  gombo:          { prixKg: 6.00, calPer100g: 33,   lipSat: 0,    sucre: 1.5,  sel: 0,    fibres: 3.2, prot: 1.9,  flv: 80 },
+  attieke:        { prixKg: 5.00, calPer100g: 165,  lipSat: 0,    sucre: 1,    sel: 0,    fibres: 2,   prot: 1,    flv: 60 },
   
   // ===== PAINS & BOULANGERIE =====
   pain:           { prixKg: 4.50, calPer100g: 265,  lipSat: 0.7,  sucre: 5.7,  sel: 1.4,  fibres: 4,   prot: 9,    flv: 0 },
@@ -1277,6 +1280,7 @@ const INGREDIENTS_LABELS = {
   // == Légumineuses ==
   poischiches: "🫘 Pois chiches", lentilles: "🫘 Lentilles",
   farinepoischiche: "🌾 Farine de pois chiche", mloukhia: "🌿 Mloukhia",
+  igname: "🍠 Igname", gombo: "🌿 Gombo", attieke: "🍚 Attiéké",
   // == Fruits ==
   citron: "🍋 Citron", citrons: "🍋 Citrons", orange: "🍊 Orange", orangeJus: "🍊 Jus d'orange",
   pommes: "🍎 Pommes", bananes: "🍌 Bananes", fraise: "🍓 Fraise", fraises: "🍓 Fraises",
