@@ -134,6 +134,14 @@
       #envie-modal .jr-lock,#envie-modal .jr-reroll{width:34px;height:34px;border-radius:9px;border:1px solid rgba(var(--w),.16);background:rgba(var(--w),.07);color:var(--text);font-size:15px;cursor:pointer;line-height:1}
       #envie-modal .jr-lock:active,#envie-modal .jr-reroll:active{transform:scale(.92)}
       #envie-modal .jr-repas.locked{border-color:rgba(var(--accent-rgb),.55);background:rgba(var(--accent-rgb),.08)}
+      #envie-modal .jr-eat{width:34px;height:34px;border-radius:9px;border:1px solid rgba(var(--w),.16);background:rgba(var(--w),.07);color:var(--text);font-size:15px;cursor:pointer;line-height:1}
+      #envie-modal .jr-repas.eaten{opacity:.6}
+      #envie-modal .jr-repas.eaten .jr-nom{text-decoration:line-through}
+      #envie-modal .jr-repas.eaten .jr-eat{background:rgba(76,175,80,.2);border-color:rgba(76,175,80,.6)}
+      #envie-modal .jr-reste{font-size:12.5px;color:var(--text-2);text-align:center;margin-top:8px}
+      #envie-modal .jr-eau-ctrl{display:flex;align-items:center;gap:8px}
+      #envie-modal .jr-eau-btn{width:26px;height:26px;border-radius:7px;border:1px solid rgba(var(--w),.2);background:rgba(var(--w),.08);color:var(--text);font-size:16px;font-weight:700;cursor:pointer;line-height:1}
+      #envie-modal .jr-courses{margin:0 14px 16px;width:calc(100% - 28px);background:rgba(var(--w),.08);color:var(--text);border:1px solid rgba(var(--w),.16);border-radius:12px;padding:11px;font-size:13.5px;font-weight:700;cursor:pointer}
     `;
     document.head.appendChild(s);
   }
@@ -280,7 +288,8 @@
 
   // État de la journée composée → permet de VERROUILLER un repas et de n'en
   // régénérer qu'une partie (on garde ce qu'on aime, on relance le reste).
-  let _jrPlan = null, _jrO = null;
+  let _jrPlan = null, _jrO = null, _jrEau = 0;
+  const VERRE = 0.25; // 1 verre = 25 cl
   function _jrUsed(m) {
     const s = new Set();
     (_jrPlan || []).forEach((it) => { if (it.p && it.m.k !== m.k) s.add(it.p.k); });
@@ -294,19 +303,44 @@
     const dayProt = window.OBJ_protJour ? window.OBJ_protJour(_jrO) : null;
     return choisirRepas(m, _jrO.kcal, dayProt, focus, _jrUsed(m), motsExclus());
   }
+  // — Persistance : la journée (plats + repas mangés + eau) est mémorisée PAR JOUR —
+  function _jrDate() { const d = new Date(); return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
+  function _jrSave() {
+    try {
+      const plan = _jrPlan.map((it) => ({ mk: it.m.k, k: it.p ? it.p.k : null, lock: !!it.lock, eaten: !!it.eaten }));
+      localStorage.setItem("obj_journee", JSON.stringify({ date: _jrDate(), plan: plan, eau: _jrEau || 0 }));
+    } catch (e) {}
+  }
+  function _jrCharger() {
+    try { const s = JSON.parse(localStorage.getItem("obj_journee") || "null"); if (s && s.date === _jrDate()) return s; } catch (e) {}
+    return null;
+  }
+  function _jrItemDe(sv) {
+    const m = (window.OBJ_MOMENTS || []).find((x) => x.k === sv.mk);
+    if (!m) return null;
+    let p = null;
+    if (sv.k && recettes[sv.k]) { const nu = nutPortion(recettes[sv.k]); if (nu && nu.cal != null) p = { k: sv.k, cal: nu.cal, prot: nu.prot }; }
+    return { m: m, p: p, lock: !!sv.lock, eaten: !!sv.eaten };
+  }
   function _jrInner() {
     const o = _jrO;
     const dayProt = window.OBJ_protJour ? window.OBJ_protJour(o) : null;
-    let totK = 0, totP = 0, anyP = false;
-    _jrPlan.forEach((it) => { if (it.p) { totK += it.p.cal || 0; if (it.p.prot != null) { totP += it.p.prot; anyP = true; } } });
-    totK = Math.round(totK); totP = Math.round(totP);
-    const couleur = (pct) => (pct >= 90 && pct <= 112) ? "#4caf50" : (pct >= 70 && pct <= 135) ? "#ffb300" : "#ff6b6b";
+    const eauCible = window.OBJ_eauJour ? window.OBJ_eauJour(o) : null;
+    let eatK = 0, eatP = 0; // consommé (repas cochés "mangé")
+    _jrPlan.forEach((it) => { if (it.p && it.eaten) { eatK += it.p.cal || 0; if (it.p.prot != null) eatP += it.p.prot; } });
+    eatK = Math.round(eatK); eatP = Math.round(eatP);
+    const couleur = (pct) => (pct >= 90 && pct <= 112) ? "#4caf50" : (pct >= 60) ? "#ffb300" : "#5aa0f5";
     const barre = (val, cible) => { if (!cible) return ""; const pct = Math.round((val / cible) * 100); return '<div class="jr-bar"><i style="width:' + Math.min(100, pct) + "%;background:" + couleur(pct) + '"></i></div>'; };
     let tot = '<div class="jr-totaux">';
-    tot += '<div class="jr-tot-line"><span>🔥 ' + T("Calories", "Calories") + '</span><span><b>' + totK + "</b> / " + o.kcal + " kcal</span></div>" + barre(totK, o.kcal);
-    if (dayProt && anyP) tot += '<div class="jr-tot-line"><span>💪 ' + T("Protéines", "Protein") + '</span><span><b>' + totP + "</b> / " + dayProt + " g</span></div>" + barre(totP, dayProt);
-    const eau = window.OBJ_eauJour ? window.OBJ_eauJour(o) : null;
-    if (eau) tot += '<div class="jr-tot-line" style="margin-top:4px"><span>💧 ' + T("Eau à boire", "Water to drink") + '</span><span><b>~' + eau.toFixed(1).replace(".", ",") + "</b> L</span></div>";
+    tot += '<div class="jr-tot-line"><span>🔥 ' + T("Mangé", "Eaten") + '</span><span><b>' + eatK + "</b> / " + o.kcal + " kcal</span></div>" + barre(eatK, o.kcal);
+    if (dayProt) tot += '<div class="jr-tot-line"><span>💪 ' + T("Protéines", "Protein") + '</span><span><b>' + eatP + "</b> / " + dayProt + " g</span></div>" + barre(eatP, dayProt);
+    if (eauCible) {
+      const eauPct = Math.round((_jrEau / eauCible) * 100);
+      tot += '<div class="jr-tot-line"><span>💧 ' + T("Eau", "Water") + '</span><span class="jr-eau-ctrl"><button type="button" class="jr-eau-btn jr-eau-minus">−</button><b>' + _jrEau.toFixed(2).replace(".", ",") + "</b> / " + eauCible.toFixed(1).replace(".", ",") + ' L<button type="button" class="jr-eau-btn jr-eau-plus">+</button></span></div>' +
+        '<div class="jr-bar"><i style="width:' + Math.min(100, eauPct) + "%;background:#5aa0f5\"></i></div>";
+    }
+    const resteK = Math.max(0, o.kcal - eatK), resteP = dayProt ? Math.max(0, dayProt - eatP) : null;
+    tot += '<div class="jr-reste">' + T("Reste : ~", "Left: ~") + resteK + " kcal" + (resteP != null ? " · " + resteP + " g " + T("prot", "protein") : "") + "</div>";
     tot += "</div>";
     const lignes = _jrPlan.filter((it) => it.p).map((it) => {
       const k = it.p.k, r = recettes[k];
@@ -314,7 +348,7 @@
       const onerr = (typeof imgCarteOnerror === "function") ? imgCarteOnerror(k) : "";
       const dra = (typeof drapeau === "function") ? drapeau(r.pays, 13) : "";
       const nom = (typeof getNomRecette === "function") ? getNomRecette(k) : (r.nom || k);
-      return '<div class="jr-repas' + (it.lock ? " locked" : "") + '" data-mk="' + it.m.k + '">' +
+      return '<div class="jr-repas' + (it.lock ? " locked" : "") + (it.eaten ? " eaten" : "") + '" data-mk="' + it.m.k + '">' +
         '<img class="jr-thumb" data-open="' + k + '" loading="lazy" decoding="async" src="' + img + '" alt="" onerror="' + onerr + '">' +
         '<div class="jr-info" data-open="' + k + '">' +
           '<div class="jr-moment">' + it.m.e + " " + T(it.m.fr, it.m.en) + "</div>" +
@@ -322,31 +356,68 @@
           '<div class="jr-nut">🔥 ' + Math.round(it.p.cal) + " kcal" + (it.p.prot != null ? " · 💪 " + Math.round(it.p.prot) + " g" : "") + (r.temps ? " · ⏱ " + r.temps : "") + "</div>" +
         "</div>" +
         '<div class="jr-actions">' +
+          '<button type="button" class="jr-eat" title="' + (it.eaten ? T("Pas mangé", "Not eaten") : T("J\'ai mangé", "I ate this")) + '">' + (it.eaten ? "✅" : "⬜") + "</button>" +
           '<button type="button" class="jr-lock" title="' + (it.lock ? T("Déverrouiller", "Unlock") : T("Verrouiller", "Lock")) + '">' + (it.lock ? "🔒" : "🔓") + "</button>" +
           '<button type="button" class="jr-reroll" title="' + T("Changer ce repas", "Swap this meal") + '">🔄</button>' +
         "</div></div>";
     }).join("");
     return tot + '<div class="jr-list">' + lignes + "</div>" +
-      '<button type="button" class="jr-regen">🔄 ' + T("Régénérer (sauf 🔒)", "Regenerate (except 🔒)") + "</button>";
+      '<button type="button" class="jr-courses">🛒 ' + T("Ajouter ma journée aux courses", "Add my day to the shopping list") + "</button>" +
+      '<button type="button" class="jr-regen">🔄 ' + T("Régénérer (sauf 🔒 et ✅)", "Regenerate (except 🔒 and ✅)") + "</button>";
   }
-  function _jrRefresh() { const root = document.getElementById("jr-root"); if (root) { root.innerHTML = _jrInner(); _jrAttach(); } }
+  function _jrRefresh() { _jrSave(); const root = document.getElementById("jr-root"); if (root) { root.innerHTML = _jrInner(); _jrAttach(); } }
+  function _jrAjouterCourses() {
+    if (!window.userProfile) { if (typeof afficherToast === "function") afficherToast(T("🛒 Connecte-toi (gratuit) pour ta liste de courses", "🛒 Sign in (free) for your shopping list")); return; }
+    window.userProfile.listeCourses = window.userProfile.listeCourses || [];
+    const liste = window.userProfile.listeCourses;
+    let n = 0;
+    _jrPlan.forEach((it) => {
+      if (!it.p || !recettes[it.p.k]) return;
+      const nb = (typeof calculerPersonnesPourRecette === "function") ? calculerPersonnesPourRecette(it.p.k) : 1;
+      const i = liste.findIndex((p) => p.cle === it.p.k);
+      if (i >= 0) liste[i].personnes = nb; else { liste.push({ cle: it.p.k, personnes: nb }); n++; }
+    });
+    if (typeof lcSauvegarder === "function") lcSauvegarder();
+    if (typeof lcGenererListe === "function") lcGenererListe();
+    if (typeof lcAfficherPanier === "function") lcAfficherPanier();
+    if (typeof afficherToast === "function") afficherToast("🛒 " + (n ? T("Journée ajoutée aux courses", "Day added to shopping list") : T("Déjà dans ta liste", "Already in your list")));
+  }
   function _jrAttach() {
     const root = document.getElementById("jr-root");
     if (!root) return;
+    const itDe = (b) => _jrPlan.find((x) => x.m.k === b.closest(".jr-repas").dataset.mk);
     root.querySelectorAll("[data-open]").forEach((el) => el.addEventListener("click", () => { const k = el.dataset.open; if (k && typeof ouvrirFiche === "function") { ouvrirFiche(k, ""); setTimeout(fermerModal, 50); } }));
-    root.querySelectorAll(".jr-lock").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); const it = _jrPlan.find((x) => x.m.k === b.closest(".jr-repas").dataset.mk); if (it) { it.lock = !it.lock; _jrRefresh(); } }));
-    root.querySelectorAll(".jr-reroll").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); const it = _jrPlan.find((x) => x.m.k === b.closest(".jr-repas").dataset.mk); if (it) { it.p = _jrPick(it.m) || it.p; _jrRefresh(); } }));
+    root.querySelectorAll(".jr-eat").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); const it = itDe(b); if (it) { it.eaten = !it.eaten; _jrRefresh(); } }));
+    root.querySelectorAll(".jr-lock").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); const it = itDe(b); if (it) { it.lock = !it.lock; _jrRefresh(); } }));
+    root.querySelectorAll(".jr-reroll").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); const it = itDe(b); if (it) { it.p = _jrPick(it.m) || it.p; it.eaten = false; _jrRefresh(); } }));
+    const minus = root.querySelector(".jr-eau-minus"); if (minus) minus.addEventListener("click", () => { _jrEau = Math.max(0, Math.round((_jrEau - VERRE) * 100) / 100); _jrRefresh(); });
+    const plus = root.querySelector(".jr-eau-plus"); if (plus) plus.addEventListener("click", () => { _jrEau = Math.round((_jrEau + VERRE) * 100) / 100; _jrRefresh(); });
+    const courses = root.querySelector(".jr-courses"); if (courses) courses.addEventListener("click", _jrAjouterCourses);
     const regen = root.querySelector(".jr-regen");
-    if (regen) regen.addEventListener("click", () => { _jrPlan.forEach((it) => { if (!it.lock) it.p = _jrPick(it.m) || it.p; }); _jrRefresh(); });
+    if (regen) regen.addEventListener("click", () => { _jrPlan.forEach((it) => { if (!it.lock && !it.eaten) { it.p = _jrPick(it.m) || it.p; } }); _jrRefresh(); });
   }
   window.composerJournee = function () {
     let o = {};
     try { o = JSON.parse(localStorage.getItem("objectif_nutri") || "{}") || {}; } catch (e) {}
     if (!o.kcal) { if (typeof ouvrirObjectifs === "function") ouvrirObjectifs(); return; }
     _jrO = o;
-    _jrPlan = (window.OBJ_MOMENTS || []).map((m) => ({ m: m, p: null, lock: false }));
-    _jrPlan.forEach((it) => { it.p = _jrPick(it.m); });
-    ouvrirSheet("🍽️ " + T("Ta journée", "Your day"), '<div id="jr-root">' + _jrInner() + "</div>");
+    const saved = _jrCharger();
+    if (saved && Array.isArray(saved.plan) && saved.plan.length) {
+      // Reprendre la journée du jour (plats + repas cochés + eau)
+      _jrPlan = saved.plan.map(_jrItemDe).filter(Boolean);
+      _jrEau = saved.eau || 0;
+      // Compléter un éventuel repas vide
+      _jrPlan.forEach((it) => { if (!it.p) it.p = _jrPick(it.m); });
+    } else {
+      // Nouvelle journée
+      _jrPlan = (window.OBJ_MOMENTS || []).map((m) => ({ m: m, p: null, lock: false, eaten: false }));
+      _jrPlan.forEach((it) => { it.p = _jrPick(it.m); });
+      _jrEau = 0;
+      _jrSave();
+    }
+    const d = new Date();
+    const titre = "🍽️ " + T("Ta journée", "Your day") + " — " + d.getDate() + "/" + (d.getMonth() + 1);
+    ouvrirSheet(titre, '<div id="jr-root">' + _jrInner() + "</div>");
     _jrAttach();
   };
 
