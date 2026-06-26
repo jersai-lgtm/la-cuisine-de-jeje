@@ -28,7 +28,7 @@ if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
 //   3. Vérifie que l'app marche (connexion, lecture, upload) AVANT d'activer
 //      l'« enforcement » dans la console (sinon tout est bloqué).
 // ==============================
-const RECAPTCHA_V3_SITE_KEY = ""; // ← colle ta clé de site reCAPTCHA v3 ici
+const RECAPTCHA_V3_SITE_KEY = "6Ld75TUtAAAAAHTGq9VwHqeNWdBD2oQOp7RnRA4Y"; // clé de site reCAPTCHA v3 (publique)
 if (RECAPTCHA_V3_SITE_KEY && typeof firebase !== "undefined" && firebase.appCheck) {
   try { firebase.appCheck().activate(RECAPTCHA_V3_SITE_KEY, /* autoRefresh */ true); }
   catch (e) { console.warn("App Check : activation échouée —", e); }
