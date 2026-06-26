@@ -14678,9 +14678,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Semoule", detail: "Rouler et cuire la semoule à la vapeur, l'égrainer au beurre.", badge: null },
-      { icone: "🥩", titre: "Bouillon", detail: "Mijoter l'agneau avec oignon, légumes et pois chiches.", badge: null },
-      { icone: "🍲", titre: "Dresser", detail: "Napper la semoule de bouillon et de viande.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper l'agneau en morceaux, émincer l'oignon, tailler carottes et courgettes.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Faire revenir l'agneau avec l'oignon dans un filet d'huile.", badge: null },
+      { icone: "🌶️", titre: "Parfumer", detail: "Ajouter concentré de tomate et ras-el-hanout, mouiller à l'eau.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Ajouter carottes et pois chiches, mijoter 30 min.", badge: null },
+      { icone: "🥒", titre: "Compléter", detail: "Ajouter les courgettes en fin de cuisson pour qu'elles restent fermes.", badge: null },
+      { icone: "🌾", titre: "Semoule", detail: "Rouler la semoule et la cuire à la vapeur en 2-3 passages.", badge: null },
+      { icone: "🧈", titre: "Égrainer", detail: "Égrainer la semoule au beurre entre chaque cuisson vapeur.", badge: null },
+      { icone: "🍲", titre: "Dresser", detail: "Dresser la semoule, napper de bouillon, viande et légumes.", badge: null }
     ]
   },
   tajinezitoune: {
@@ -14711,9 +14716,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Dorer", detail: "Faire revenir le poulet avec l'oignon.", badge: null },
-      { icone: "🫒", titre: "Mijoter", detail: "Ajouter olives, carottes et citron, couvrir d'eau.", badge: null },
-      { icone: "🥣", titre: "Réduire", detail: "Laisser réduire en sauce onctueuse.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Détailler le poulet, émincer l'oignon, tailler les carottes en bâtonnets.", badge: null },
+      { icone: "🫒", titre: "Dessaler", detail: "Faire dégorger les olives vertes à l'eau bouillante pour ôter l'amertume.", badge: null },
+      { icone: "🍗", titre: "Dorer", detail: "Faire revenir le poulet avec l'oignon dans l'huile d'olive.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Couvrir d'eau, ajouter les carottes, laisser mijoter 25 min.", badge: null },
+      { icone: "🍋", titre: "Aciduler", detail: "Ajouter olives et rondelles de citron, poursuivre 10 min.", badge: null },
+      { icone: "🥣", titre: "Réduire", detail: "Laisser réduire jusqu'à une sauce blanche nappante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud, parsemé de persil, avec du pain ou du riz.", badge: null }
     ]
   },
   rechta: {
@@ -14744,9 +14753,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍜", titre: "Nouilles", detail: "Étirer la pâte en fines lanières, cuire à la vapeur.", badge: null },
-      { icone: "🍲", titre: "Sauce blanche", detail: "Mijoter poulet, pois chiches, navet et cannelle.", badge: null },
-      { icone: "🥣", titre: "Assembler", detail: "Verser la sauce sur les nouilles.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Pétrir farine, eau et sel en une pâte souple, laisser reposer.", badge: null },
+      { icone: "🍜", titre: "Étirer", detail: "Étirer finement et découper en lanières façon nouilles plates.", badge: null },
+      { icone: "💨", titre: "Vapeur", detail: "Cuire les rechta à la vapeur en les huilant légèrement.", badge: null },
+      { icone: "🍗", titre: "Sauce", detail: "Faire revenir le poulet avec l'oignon, couvrir d'eau.", badge: null },
+      { icone: "🌰", titre: "Parfumer", detail: "Ajouter pois chiches, navet et cannelle, mijoter 25 min.", badge: null },
+      { icone: "🥣", titre: "Assembler", detail: "Verser un peu de sauce sur les nouilles pour les détendre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser les rechta, napper de sauce, poulet et légumes.", badge: null }
     ]
   },
   mhadjeb: {
@@ -14777,9 +14790,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Pâte", detail: "Pétrir une pâte de semoule souple, étaler finement.", badge: null },
-      { icone: "🍅", titre: "Farce", detail: "Compoter tomate, oignon et poivron.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Plier autour de la farce et dorer à la poêle.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Pétrir la semoule fine avec eau et sel jusqu'à une pâte lisse.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Diviser en boules huilées, laisser reposer 20 min.", badge: null },
+      { icone: "🍅", titre: "Farce", detail: "Compoter oignon, poivron et tomate avec épices jusqu'à confit.", badge: null },
+      { icone: "🫓", titre: "Étaler", detail: "Étaler chaque boule très finement sur un plan huilé.", badge: null },
+      { icone: "📦", titre: "Farcir", detail: "Déposer la farce et replier la pâte en rectangle feuilleté.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Cuire à la poêle chaude jusqu'à ce que les deux faces dorent.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir tiède, coupé en parts, nature ou avec du petit-lait.", badge: null }
     ]
   },
   berkoukes: {
@@ -14810,9 +14827,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Revenir", detail: "Saisir l'agneau avec l'oignon.", badge: null },
-      { icone: "🍅", titre: "Sauce", detail: "Ajouter tomate, légumes et pois chiches.", badge: null },
-      { icone: "🍲", titre: "Cuire", detail: "Cuire les plombs de semoule dans la sauce.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper l'agneau et les légumes, émincer l'oignon.", badge: null },
+      { icone: "🥩", titre: "Revenir", detail: "Saisir l'agneau avec l'oignon dans l'huile.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Ajouter tomate et épices, mouiller largement à l'eau.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Ajouter pois chiches et légumes, mijoter 20 min.", badge: null },
+      { icone: "🌾", titre: "Plombs", detail: "Verser les plombs de semoule dans la sauce frémissante.", badge: null },
+      { icone: "⏲️", titre: "Cuire", detail: "Laisser gonfler les plombs 12-15 min en remuant.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir en assiette creuse, bien parfumé et nappé.", badge: null }
     ]
   },
   kalbellouz: {
@@ -14843,9 +14864,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mélange", detail: "Mélanger semoule, amande, sucre et beurre.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Tasser et cuire au four jusqu'à dorure.", badge: null },
-      { icone: "🍯", titre: "Imbiber", detail: "Arroser du sirop miel + fleur d'oranger.", badge: null }
+      { icone: "🥣", titre: "Mélange", detail: "Mélanger semoule, sucre et beurre fondu en sablant bien.", badge: null },
+      { icone: "💧", titre: "Hydrater", detail: "Ajouter un peu d'eau de fleur d'oranger, laisser reposer 15 min.", badge: null },
+      { icone: "🟫", titre: "Étaler", detail: "Tasser la moitié dans un plat, parsemer d'amandes, recouvrir.", badge: null },
+      { icone: "🔪", titre: "Marquer", detail: "Marquer des losanges et poser une amande sur chacun.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire au four jusqu'à une belle dorure.", badge: null },
+      { icone: "🍯", titre: "Sirop", detail: "Préparer un sirop miel, sucre et fleur d'oranger.", badge: null },
+      { icone: "💦", titre: "Imbiber", detail: "Arroser le gâteau chaud de sirop, laisser absorber.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Détailler les losanges une fois bien imbibés et refroidis.", badge: null }
     ]
   },
   garantita: {
@@ -14877,8 +14903,12 @@ Object.assign(recettes, {
     ingredients: {},
     etapes: [
       { icone: "🥣", titre: "Délayer", detail: "Délayer la farine de pois chiche dans l'eau sans grumeaux.", badge: null },
-      { icone: "🥚", titre: "Mélanger", detail: "Ajouter œuf, huile et cumin.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Verser en plaque et cuire au four.", badge: null }
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 15 min pour hydrater la farine.", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Battre l'œuf, l'incorporer avec huile, cumin, sel et poivre.", badge: null },
+      { icone: "🟡", titre: "Verser", detail: "Verser l'appareil dans un plat huilé sur 2 cm d'épaisseur.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner jusqu'à ce que le dessus dore et prenne.", badge: null },
+      { icone: "🔪", titre: "Détailler", detail: "Laisser tiédir et découper en parts ou en sandwich.", badge: null },
+      { icone: "🌶️", titre: "Servir", detail: "Servir saupoudré de cumin et de harissa, dans du pain.", badge: null }
     ]
   },
   makrout: {
@@ -14909,9 +14939,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte", detail: "Sabler la semoule au beurre, hydrater à la fleur d'oranger.", badge: null },
-      { icone: "🌴", titre: "Garnir", detail: "Fourrer de pâte de dattes, découper en losanges.", badge: null },
-      { icone: "🍯", titre: "Finir", detail: "Frire puis tremper dans le miel chaud.", badge: null }
+      { icone: "🌾", titre: "Sabler", detail: "Sabler la semoule avec le beurre fondu du bout des doigts.", badge: null },
+      { icone: "💧", titre: "Lier", detail: "Hydrater à la fleur d'oranger jusqu'à une pâte souple.", badge: null },
+      { icone: "🌴", titre: "Dattes", detail: "Dénoyauter et écraser les dattes en pâte lisse.", badge: null },
+      { icone: "📏", titre: "Façonner", detail: "Étaler la semoule, déposer un boudin de dattes, refermer.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Découper en losanges striés à la fourchette.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire les makrouts jusqu'à doré (ou cuire au four).", badge: null },
+      { icone: "🍯", titre: "Tremper", detail: "Tremper aussitôt dans le miel chaud parfumé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égoutter sur grille et servir avec un thé à la menthe.", badge: null }
     ]
   },
   couscoustunisien: {
@@ -14942,9 +14977,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Semoule", detail: "Cuire la semoule à la vapeur en l'égrainant.", badge: null },
-      { icone: "🌶️", titre: "Bouillon", detail: "Mijoter tomate, harissa, légumes et pois chiches.", badge: null },
-      { icone: "🐟", titre: "Pocher", detail: "Pocher le cabillaud dans le bouillon, dresser.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Tailler les légumes, portionner le cabillaud.", badge: null },
+      { icone: "🌶️", titre: "Base", detail: "Faire revenir oignon, tomate et harissa dans l'huile.", badge: null },
+      { icone: "💧", titre: "Bouillon", detail: "Mouiller à l'eau, ajouter pois chiches, mijoter 20 min.", badge: null },
+      { icone: "🥒", titre: "Légumes", detail: "Ajouter les courgettes, poursuivre la cuisson.", badge: null },
+      { icone: "🌾", titre: "Semoule", detail: "Cuire la semoule à la vapeur et l'égrainer à l'huile.", badge: null },
+      { icone: "🐟", titre: "Pocher", detail: "Pocher le cabillaud quelques minutes dans le bouillon.", badge: null },
+      { icone: "🍲", titre: "Dresser", detail: "Dresser la semoule, légumes, poisson et bouillon.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servir avec un trait de citron et de l'harissa à part.", badge: null }
     ]
   },
   kafteji: {
@@ -14975,9 +15015,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍳", titre: "Frire", detail: "Frire poivron, tomate et courgette.", badge: null },
-      { icone: "🔪", titre: "Hacher", detail: "Hacher le tout au couteau.", badge: null },
-      { icone: "🥚", titre: "Lier", detail: "Ajouter œuf brouillé et harissa.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper grossièrement poivron, tomate et courgette.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire chaque légume séparément jusqu'à tendreté.", badge: null },
+      { icone: "🥚", titre: "Œufs", detail: "Frire aussi les œufs (ou les pocher dans la poêle).", badge: null },
+      { icone: "🔪", titre: "Hacher", detail: "Réunir le tout et hacher finement au couteau (ou ghalla).", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Ajouter harissa, ail, sel et un filet d'huile.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Mélanger jusqu'à une texture homogène et fondante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir tiède avec du pain et des câpres.", badge: null }
     ]
   },
   mloukhia: {
@@ -15008,9 +15052,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Torréfier", detail: "Torréfier la poudre de mloukhia dans l'huile d'olive.", badge: null },
-      { icone: "🥣", titre: "Délayer", detail: "Délayer progressivement en sauce lisse.", badge: null },
-      { icone: "🥩", titre: "Mijoter", detail: "Mijoter le bœuf 1h30 jusqu'à fondant.", badge: null }
+      { icone: "🌿", titre: "Torréfier", detail: "Faire revenir doucement la poudre de mloukhia dans l'huile.", badge: null },
+      { icone: "🥣", titre: "Délayer", detail: "Délayer petit à petit avec de l'eau pour éviter les grumeaux.", badge: null },
+      { icone: "🧄", titre: "Parfumer", detail: "Ajouter l'ail écrasé, laurier et coriandre.", badge: null },
+      { icone: "🥩", titre: "Viande", detail: "Ajouter le bœuf en morceaux dans la sauce.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Mijoter à feu très doux 1h30 en remuant régulièrement.", badge: null },
+      { icone: "🫒", titre: "Lier", detail: "La sauce doit foncer et épaissir, ajuster l'huile d'olive.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien velouté avec du pain pour saucer.", badge: null }
     ]
   },
   bambalouni: {
@@ -15041,9 +15089,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Préparer une pâte levée souple.", badge: null },
-      { icone: "⭕", titre: "Former", detail: "Façonner des anneaux à la main.", badge: null },
-      { icone: "🍩", titre: "Frire", detail: "Frire et rouler dans le sucre.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, levure, sel et eau en une pâte molle et collante.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Couvrir et laisser lever 1h jusqu'au doublement.", badge: null },
+      { icone: "💧", titre: "Mains", detail: "Se mouiller les mains pour façonner sans que ça colle.", badge: null },
+      { icone: "⭕", titre: "Former", detail: "Prélever une boule, percer un trou au centre, étirer en anneau.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Plonger dans l'huile chaude et frire jusqu'à doré des deux côtés.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur papier absorbant.", badge: null },
+      { icone: "🍬", titre: "Sucrer", detail: "Rouler généreusement dans le sucre et déguster chaud.", badge: null }
     ]
   },
   tajinmalsouka: {
@@ -15074,9 +15126,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Revenir", detail: "Faire revenir la viande hachée avec l'oignon.", badge: null },
-      { icone: "🥚", titre: "Mélanger", detail: "Battre les œufs avec persil et feuilles déchirées.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Verser en plat et cuire au four en gratin.", badge: null }
+      { icone: "🧅", titre: "Revenir", detail: "Faire revenir l'oignon, puis la viande hachée avec les épices.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Ajouter persil haché et un peu de fromage, laisser tiédir.", badge: null },
+      { icone: "🥚", titre: "Œufs", detail: "Battre les œufs, y mélanger la farce refroidie.", badge: null },
+      { icone: "🥧", titre: "Chemiser", detail: "Chemiser un plat de feuilles de brick huilées.", badge: null },
+      { icone: "📦", titre: "Garnir", detail: "Verser l'appareil et replier les feuilles par-dessus.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner jusqu'à ce que le tajine prenne et dore.", badge: null },
+      { icone: "🔪", titre: "Servir", detail: "Laisser tiédir, démouler et couper en parts.", badge: null }
     ]
   },
   fondue: {
@@ -15107,9 +15163,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧄", titre: "Caquelon", detail: "Frotter le caquelon à l'ail, verser le vin blanc.", badge: null },
-      { icone: "🧀", titre: "Fondre", detail: "Faire fondre Gruyère et Vacherin en remuant en 8.", badge: null },
-      { icone: "🍞", titre: "Servir", detail: "Lier au kirsch et tremper les dés de pain.", badge: null }
+      { icone: "🧄", titre: "Caquelon", detail: "Frotter l'intérieur du caquelon avec une gousse d'ail coupée.", badge: null },
+      { icone: "🍷", titre: "Vin", detail: "Verser le vin blanc et chauffer doucement.", badge: null },
+      { icone: "🧀", titre: "Fromages", detail: "Ajouter Gruyère et Vacherin râpés en plusieurs fois.", badge: null },
+      { icone: "🥄", titre: "Remuer", detail: "Remuer sans cesse en formant des 8 jusqu'à l'onctuosité.", badge: null },
+      { icone: "🥃", titre: "Lier", detail: "Délayer la maïzena dans le kirsch et l'incorporer.", badge: null },
+      { icone: "🍞", titre: "Couper", detail: "Couper le pain en dés avec un peu de croûte.", badge: null },
+      { icone: "🔥", titre: "Servir", detail: "Maintenir à frémissement sur le réchaud et tremper le pain.", badge: null }
     ]
   },
   malakoff: {
@@ -15140,9 +15200,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Appareil", detail: "Mélanger gruyère râpé, œuf, farine et vin blanc.", badge: null },
-      { icone: "🥪", titre: "Monter", detail: "Étaler sur des tranches de pain.", badge: null },
-      { icone: "🔥", titre: "Frire", detail: "Frire jusqu'à doré et coulant.", badge: null }
+      { icone: "🧀", titre: "Râper", detail: "Râper finement le Gruyère.", badge: null },
+      { icone: "🥣", titre: "Appareil", detail: "Mélanger fromage, œuf, farine et vin blanc en pâte épaisse.", badge: null },
+      { icone: "🧄", titre: "Parfumer", detail: "Ajouter une pointe d'ail et de muscade.", badge: null },
+      { icone: "🥪", titre: "Monter", detail: "Tartiner l'appareil sur des tranches de pain.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Chauffer un bain d'huile à 170 °C.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire côté fromage vers le bas jusqu'à doré.", badge: null },
+      { icone: "🧻", titre: "Servir", detail: "Égoutter et servir aussitôt, bien coulant.", badge: null }
     ]
   },
   papetvaudois: {
@@ -15173,9 +15237,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Fondre", detail: "Faire fondre les poireaux émincés au beurre.", badge: null },
-      { icone: "🥔", titre: "Mijoter", detail: "Ajouter pommes de terre, vin blanc et crème.", badge: null },
-      { icone: "🌭", titre: "Cuire", detail: "Pocher la saucisse sur le papet jusqu'à cuisson.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer les poireaux, couper les pommes de terre en cubes.", badge: null },
+      { icone: "🧈", titre: "Fondre", detail: "Faire fondre les poireaux au beurre sans coloration.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Déglacer au vin blanc et laisser réduire.", badge: null },
+      { icone: "🥔", titre: "Pommes de terre", detail: "Ajouter les pommes de terre, couvrir d'eau.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Mijoter 30 min jusqu'à ce que tout confise.", badge: null },
+      { icone: "🌭", titre: "Saucisse", detail: "Pocher la saucisse aux choux sur le papet 20 min.", badge: null },
+      { icone: "🥛", titre: "Lier", detail: "Ajouter la crème, rectifier l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir la saucisse tranchée sur le lit de papet.", badge: null }
     ]
   },
   zopf: {
@@ -15206,9 +15275,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Pétrir une pâte levée souple, laisser pousser.", badge: null },
-      { icone: "🪢", titre: "Tresser", detail: "Façonner la tresse à 2 ou 3 brins.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Dorer à l'œuf et cuire jusqu'à brun doré.", badge: null }
+      { icone: "🥣", titre: "Pétrir", detail: "Pétrir farine, lait tiède, levure, beurre et sel 10 min.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Laisser lever 1h30 jusqu'au doublement de volume.", badge: null },
+      { icone: "✋", titre: "Diviser", detail: "Dégazer et diviser la pâte en deux longs boudins.", badge: null },
+      { icone: "🪢", titre: "Tresser", detail: "Tresser les deux brins en serrant bien les extrémités.", badge: null },
+      { icone: "⏳", titre: "Apprêt", detail: "Laisser de nouveau gonfler 30 min sur la plaque.", badge: null },
+      { icone: "🥚", titre: "Dorer", detail: "Badigeonner d'œuf battu pour une croûte brillante.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Cuire à 200 °C jusqu'à une belle couleur brun doré.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser refroidir et trancher pour le brunch.", badge: null }
     ]
   },
   fonduechocolat: {
@@ -15239,9 +15313,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍫", titre: "Fondre", detail: "Fondre le chocolat avec la crème au bain-marie.", badge: null },
-      { icone: "🥄", titre: "Lisser", detail: "Sucrer et lisser jusqu'à brillance.", badge: null },
-      { icone: "🍓", titre: "Tremper", detail: "Tremper fruits et morceaux de gâteau.", badge: null }
+      { icone: "🔪", titre: "Hacher", detail: "Hacher le chocolat en petits morceaux réguliers.", badge: null },
+      { icone: "🥛", titre: "Chauffer", detail: "Chauffer la crème sans la faire bouillir.", badge: null },
+      { icone: "🍫", titre: "Fondre", detail: "Verser sur le chocolat et laisser fondre 1 min.", badge: null },
+      { icone: "🥄", titre: "Lisser", detail: "Mélanger jusqu'à une ganache lisse et brillante.", badge: null },
+      { icone: "🍯", titre: "Sucrer", detail: "Ajuster avec un peu de sucre, voire un trait de kirsch.", badge: null },
+      { icone: "🍓", titre: "Préparer", detail: "Couper fruits, biscuits et morceaux de gâteau.", badge: null },
+      { icone: "🔥", titre: "Servir", detail: "Garder tiède au caquelon et tremper à volonté.", badge: null }
     ]
   },
   zurichgeschnetzeltes: {
@@ -15272,9 +15350,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Saisir", detail: "Saisir vivement les lamelles de veau, réserver.", badge: null },
-      { icone: "🍄", titre: "Suer", detail: "Faire suer oignon et champignons.", badge: null },
-      { icone: "🥛", titre: "Sauce", detail: "Déglacer au vin, ajouter la crème, remettre le veau.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Tailler le veau en fines lamelles, émincer oignon et champignons.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Saisir le veau vivement par petites quantités, réserver.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire suer l'oignon, ajouter les champignons.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Déglacer au vin blanc et laisser réduire de moitié.", badge: null },
+      { icone: "🥛", titre: "Crème", detail: "Ajouter la crème et un peu de fond, laisser épaissir.", badge: null },
+      { icone: "♨️", titre: "Remettre", detail: "Remettre le veau et son jus sans le faire bouillir.", badge: null },
+      { icone: "🍋", titre: "Finir", detail: "Rectifier l'assaisonnement, pointe de citron.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt avec des rösti croustillants.", badge: null }
     ]
   },
   capuns: {
@@ -15305,9 +15388,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Préparer une pâte à spätzle avec lardons.", badge: null },
-      { icone: "🌿", titre: "Rouler", detail: "Enrouler la pâte dans les feuilles de bette.", badge: null },
-      { icone: "🧀", titre: "Gratiner", detail: "Pocher au bouillon puis gratiner au gruyère.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, œuf et lait en pâte à spätzle épaisse.", badge: null },
+      { icone: "🥓", titre: "Lardons", detail: "Incorporer lardons rissolés et herbes à la pâte.", badge: null },
+      { icone: "🌿", titre: "Feuilles", detail: "Blanchir les feuilles de bette pour les assouplir.", badge: null },
+      { icone: "📦", titre: "Rouler", detail: "Déposer une cuillère de pâte et rouler en petits paquets.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Pocher les capuns dans un bouillon frémissant 10 min.", badge: null },
+      { icone: "🧀", titre: "Napper", detail: "Disposer dans un plat, napper de crème et gruyère.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Gratiner au four jusqu'à coloration.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud, bien fondant.", badge: null }
     ]
   },
   tafelspitz: {
@@ -15338,9 +15426,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Pocher", detail: "Pocher le bœuf dans un bouillon frémissant.", badge: null },
-      { icone: "🥕", titre: "Légumes", detail: "Ajouter carotte, poireau et oignon.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Trancher et servir avec sauce au raifort.", badge: null }
+      { icone: "🧅", titre: "Oignon", detail: "Brûler un demi-oignon à sec pour colorer le bouillon.", badge: null },
+      { icone: "💧", titre: "Démarrer", detail: "Plonger le bœuf dans l'eau frémissante, écumer.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Ajouter carotte, poireau, oignon et aromates.", badge: null },
+      { icone: "⏲️", titre: "Pocher", detail: "Pocher à frémissement 2h jusqu'à parfaite tendreté.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Sortir la pièce et la trancher contre le grain.", badge: null },
+      { icone: "🌶️", titre: "Raifort", detail: "Préparer une sauce pomme-raifort bien relevée.", badge: null },
+      { icone: "🥔", titre: "Garnir", detail: "Servir avec pommes de terre rissolées et épinards.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Napper d'un peu de bouillon chaud et servir.", badge: null }
     ]
   },
   frittatensuppe: {
@@ -15371,9 +15464,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥞", titre: "Crêpes", detail: "Cuire de fines crêpes salées.", badge: null },
-      { icone: "🔪", titre: "Lanières", detail: "Les rouler et couper en fines lanières.", badge: null },
-      { icone: "🍜", titre: "Servir", detail: "Disposer dans un bouillon de bœuf chaud.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Battre farine, œuf, lait et sel en pâte à crêpe lisse.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer la pâte 15 min.", badge: null },
+      { icone: "🥞", titre: "Cuire", detail: "Cuire de fines crêpes dorées au beurre.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Rouler les crêpes tièdes serrées.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Couper en très fines lanières.", badge: null },
+      { icone: "🍲", titre: "Bouillon", detail: "Chauffer un bon bouillon de bœuf clair.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Disposer les lanières dans le bol, parsemer de ciboulette.", badge: null }
     ]
   },
   germknodel: {
@@ -15404,9 +15501,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Préparer une pâte levée moelleuse.", badge: null },
-      { icone: "🥄", titre: "Fourrer", detail: "Garnir de confiture de prunes, former une boule.", badge: null },
-      { icone: "💨", titre: "Vapeur", detail: "Cuire vapeur, napper de beurre et pavot sucré.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Pétrir farine, lait tiède, levure et sucre en pâte souple.", badge: null },
+      { icone: "⏲️", titre: "Lever", detail: "Couvrir et laisser doubler 45 min.", badge: null },
+      { icone: "✋", titre: "Diviser", detail: "Diviser et aplatir en disques dans la main.", badge: null },
+      { icone: "🫐", titre: "Fourrer", detail: "Déposer la confiture de prunes (powidl) au centre, refermer.", badge: null },
+      { icone: "⏳", titre: "Apprêt", detail: "Laisser regonfler les boules 15 min.", badge: null },
+      { icone: "💨", titre: "Vapeur", detail: "Cuire à la vapeur 15 min sans ouvrir le couvercle.", badge: null },
+      { icone: "🧈", titre: "Napper", detail: "Napper de beurre fondu.", badge: null },
+      { icone: "🌑", titre: "Servir", detail: "Parsemer de pavot moulu sucré et servir aussitôt.", badge: null }
     ]
   },
   linzertorte: {
@@ -15437,9 +15539,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Sabler farine, amande, beurre, sucre et cannelle.", badge: null },
-      { icone: "🍓", titre: "Garnir", detail: "Étaler la confiture, poser le croisillon de pâte.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire au four jusqu'à doré.", badge: null }
+      { icone: "🥣", titre: "Sabler", detail: "Sabler farine, poudre d'amande, sucre, beurre et cannelle.", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Lier avec l'œuf en une pâte homogène, ne pas trop travailler.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Filmer et réserver 30 min au frais.", badge: null },
+      { icone: "🥧", titre: "Foncer", detail: "Étaler les 3/4 de la pâte et foncer un moule.", badge: null },
+      { icone: "🍓", titre: "Garnir", detail: "Étaler une couche généreuse de confiture de groseille.", badge: null },
+      { icone: "#️⃣", titre: "Croisillon", detail: "Découper des bandes et former le croisillon caractéristique.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Dorer les bords et cuire à 180 °C jusqu'à coloration.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser refroidir : la tarte est meilleure le lendemain.", badge: null }
     ]
   },
   kasespatzle: {
@@ -15470,9 +15577,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine et œufs en pâte à spätzle.", badge: null },
-      { icone: "💧", titre: "Pocher", detail: "Pousser la pâte dans l'eau bouillante.", badge: null },
-      { icone: "🧀", titre: "Gratiner", detail: "Alterner spätzle et fromage, garnir d'oignons frits.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Battre farine, œufs, sel et un peu d'eau en pâte élastique.", badge: null },
+      { icone: "🧅", titre: "Oignons", detail: "Faire dorer lentement les oignons émincés au beurre.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Pousser la pâte au travers d'une passoire dans l'eau bouillante.", badge: null },
+      { icone: "🥄", titre: "Égoutter", detail: "Égoutter les spätzle dès qu'ils remontent.", badge: null },
+      { icone: "🧀", titre: "Couches", detail: "Alterner spätzle et fromage râpé dans un plat chaud.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Passer au four pour faire filer le fromage.", badge: null },
+      { icone: "🧅", titre: "Couronner", detail: "Couronner d'oignons frits croustillants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir brûlant, avec une salade verte.", badge: null }
     ]
   },
   grostl: {
@@ -15503,9 +15615,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Rissoler", detail: "Rissoler pommes de terre et oignon.", badge: null },
-      { icone: "🥩", titre: "Viande", detail: "Ajouter le bœuf en morceaux, dorer.", badge: null },
-      { icone: "🍳", titre: "Œuf", detail: "Couronner d'un œuf au plat.", badge: null }
+      { icone: "🥔", titre: "Précuire", detail: "Cuire les pommes de terre à l'eau, les laisser tiédir.", badge: null },
+      { icone: "🔪", titre: "Couper", detail: "Couper pommes de terre et bœuf cuit en cubes.", badge: null },
+      { icone: "🧅", titre: "Oignon", detail: "Faire blondir l'oignon au beurre dans une grande poêle.", badge: null },
+      { icone: "🥔", titre: "Rissoler", detail: "Ajouter les pommes de terre et bien les colorer.", badge: null },
+      { icone: "🥩", titre: "Viande", detail: "Incorporer le bœuf, assaisonner au cumin et marjolaine.", badge: null },
+      { icone: "🍳", titre: "Œuf", detail: "Cuire un œuf au plat à part.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir la poêlée couronnée de l'œuf au plat.", badge: null }
     ]
   },
   backhendl: {
@@ -15536,9 +15652,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Paner", detail: "Passer le poulet dans farine, œuf puis chapelure.", badge: null },
-      { icone: "🔥", titre: "Frire", detail: "Frire à l'huile chaude jusqu'à doré et croustillant.", badge: null },
-      { icone: "🍋", titre: "Servir", detail: "Égoutter et servir avec un quartier de citron.", badge: null }
+      { icone: "🍗", titre: "Préparer", detail: "Détailler le poulet en morceaux, saler et poivrer.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Préparer trois assiettes : farine, œuf battu, chapelure.", badge: null },
+      { icone: "✋", titre: "Paner", detail: "Passer chaque morceau dans la farine, l'œuf puis la chapelure.", badge: null },
+      { icone: "👋", titre: "Tapoter", detail: "Tapoter pour faire adhérer la panure sans la tasser.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Chauffer l'huile à 170 °C.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire les morceaux jusqu'à doré et croustillant.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur grille pour garder le croustillant.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servir avec un quartier de citron et de la salade.", badge: null }
     ]
   },
   waakye: {
@@ -15569,9 +15690,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Haricots", detail: "Cuire les haricots avec les feuilles de sorgho.", badge: null },
-      { icone: "🍚", titre: "Riz", detail: "Ajouter le riz et laisser cuire ensemble.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir avec sauce piment et accompagnements.", badge: null }
+      { icone: "🫘", titre: "Tremper", detail: "Faire tremper les haricots la veille pour accélérer la cuisson.", badge: null },
+      { icone: "🔴", titre: "Colorer", detail: "Cuire les haricots avec les feuilles de sorgho (ou bicarbonate).", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Ajouter le riz rincé une fois les haricots mi-cuits.", badge: null },
+      { icone: "💧", titre: "Cuire", detail: "Mouiller à hauteur et cuire à couvert jusqu'à absorption.", badge: null },
+      { icone: "🧅", titre: "Parfumer", detail: "Faire revenir l'oignon à l'huile de palme.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Incorporer l'oignon au waakye, saler.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec sauce piment (shito), spaghetti et œuf dur.", badge: null }
     ]
   },
   groundnutsoup: {
@@ -15602,9 +15727,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Mijoter", detail: "Mijoter le poulet avec oignon et tomate.", badge: null },
-      { icone: "🥜", titre: "Lier", detail: "Délayer la pâte d'arachide dans le bouillon.", badge: null },
-      { icone: "🍲", titre: "Réduire", detail: "Laisser épaissir en soupe onctueuse.", badge: null }
+      { icone: "🍗", titre: "Saisir", detail: "Faire colorer le poulet avec oignon et gingembre.", badge: null },
+      { icone: "🍅", titre: "Base", detail: "Ajouter la tomate mixée, laisser réduire.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Couvrir d'eau et porter à frémissement.", badge: null },
+      { icone: "🥜", titre: "Délayer", detail: "Délayer la pâte d'arachide dans un peu de bouillon.", badge: null },
+      { icone: "🥣", titre: "Incorporer", detail: "Reverser dans la soupe en fouettant pour lisser.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Mijoter 30 min : l'huile d'arachide doit perler en surface.", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajuster sel et piment.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir avec du riz blanc ou des boules omotuo.", badge: null }
     ]
   },
   banku: {
@@ -15635,9 +15765,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mélanger", detail: "Mélanger pâtes de maïs et de manioc fermentées.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Travailler à feu doux jusqu'à une pâte lisse.", badge: null },
-      { icone: "🍙", titre: "Former", detail: "Façonner en boules régulières.", badge: null }
+      { icone: "🥣", titre: "Mélanger", detail: "Délayer pâtes de maïs et de manioc fermentées dans l'eau.", badge: null },
+      { icone: "🍯", titre: "Lisser", detail: "Filtrer pour obtenir une pâte sans grumeaux.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Verser dans une casserole et chauffer à feu moyen.", badge: null },
+      { icone: "🥄", titre: "Travailler", detail: "Remuer énergiquement à la spatule en continu.", badge: null },
+      { icone: "💪", titre: "Pétrir", detail: "Travailler jusqu'à une pâte lisse, brillante et élastique.", badge: null },
+      { icone: "🍙", titre: "Former", detail: "Façonner des boules à l'aide d'un bol mouillé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud avec une sauce gombo, tilapia ou shito.", badge: null }
     ]
   },
   lightsoup: {
@@ -15668,9 +15802,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Base", detail: "Mixer tomate, oignon, gingembre et piment.", badge: null },
-      { icone: "💧", titre: "Bouillon", detail: "Cuire dans l'eau jusqu'à parfumer.", badge: null },
-      { icone: "🐟", titre: "Poisson", detail: "Pocher le poisson dans le bouillon.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Nettoyer le poisson, mixer tomate, oignon, gingembre et piment.", badge: null },
+      { icone: "🍅", titre: "Base", detail: "Faire revenir la purée d'aromates quelques minutes.", badge: null },
+      { icone: "💧", titre: "Bouillon", detail: "Mouiller largement à l'eau et porter à ébullition.", badge: null },
+      { icone: "⏲️", titre: "Infuser", detail: "Laisser frémir 20 min pour développer les arômes.", badge: null },
+      { icone: "🐟", titre: "Poisson", detail: "Plonger le poisson et pocher délicatement.", badge: null },
+      { icone: "🌶️", titre: "Ajuster", detail: "Rectifier sel et piment, garder le bouillon bien clair.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir brûlant avec du fufu, du riz ou des ignames.", badge: null }
     ]
   },
   kontomire: {
@@ -15701,9 +15839,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Feuilles", detail: "Blanchir et hacher les feuilles vertes.", badge: null },
-      { icone: "🌴", titre: "Base", detail: "Faire revenir oignon et tomate à l'huile de palme.", badge: null },
-      { icone: "🐟", titre: "Mijoter", detail: "Ajouter feuilles et poisson, mijoter.", badge: null }
+      { icone: "🥬", titre: "Blanchir", detail: "Blanchir et hacher grossièrement les feuilles vertes.", badge: null },
+      { icone: "🌴", titre: "Chauffer", detail: "Chauffer l'huile de palme dans une cocotte.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire suer oignon et tomate jusqu'à fondre.", badge: null },
+      { icone: "🐟", titre: "Poisson", detail: "Ajouter le poisson (fumé ou frais) émietté.", badge: null },
+      { icone: "🥬", titre: "Feuilles", detail: "Incorporer les feuilles et un peu d'eau.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Mijoter 15 min jusqu'à ce que la sauce épaississe.", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajouter piment et graines d'egusi si désiré.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec du riz, des ignames ou du banku.", badge: null }
     ]
   },
   tatale: {
@@ -15734,9 +15877,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍌", titre: "Écraser", detail: "Écraser le plantain mûr en purée.", badge: null },
-      { icone: "🥣", titre: "Pâte", detail: "Ajouter farine, oignon, gingembre et piment.", badge: null },
-      { icone: "🔥", titre: "Frire", detail: "Frire en petites galettes dorées.", badge: null }
+      { icone: "🍌", titre: "Choisir", detail: "Choisir des plantains très mûrs (peau noire) pour le sucré.", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "Les écraser en purée à la fourchette.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Ajouter oignon râpé, gingembre et piment finement hachés.", badge: null },
+      { icone: "🥣", titre: "Pâte", detail: "Incorporer la farine pour lier en pâte épaisse.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 10 min.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Déposer des cuillerées dans l'huile chaude, dorer des 2 côtés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égoutter et servir chaud, en accompagnement ou en encas.", badge: null }
     ]
   },
   shito: {
@@ -15767,9 +15914,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Réduire", detail: "Réduire oignon, tomate, gingembre en purée.", badge: null },
-      { icone: "🌶️", titre: "Cuire", detail: "Cuire longuement à l'huile avec piment et crevettes.", badge: null },
-      { icone: "🫙", titre: "Conserver", detail: "Mettre en pot, la sauce fonce et se bonifie.", badge: null }
+      { icone: "🧅", titre: "Mixer", detail: "Mixer oignon, tomate, gingembre et ail en purée.", badge: null },
+      { icone: "🦐", titre: "Mixer 2", detail: "Réduire crevettes séchées et poisson fumé en poudre.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Chauffer généreusement l'huile dans une casserole.", badge: null },
+      { icone: "🧅", titre: "Réduire", detail: "Cuire la purée d'aromates jusqu'à ce que l'eau s'évapore.", badge: null },
+      { icone: "🌶️", titre: "Piment", detail: "Ajouter piment en poudre, crevettes et épices.", badge: null },
+      { icone: "⏲️", titre: "Confire", detail: "Cuire à feu doux 20-30 min : la sauce doit foncer.", badge: null },
+      { icone: "🫙", titre: "Conserver", detail: "Mettre en pot stérilisé, recouvert d'huile.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Utiliser comme condiment sur riz, waakye, kenkey…", badge: null }
     ]
   },
   garba: {
@@ -15800,9 +15952,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Frire", detail: "Frire le thon en morceaux.", badge: null },
-      { icone: "🍚", titre: "Attiéké", detail: "Réchauffer l'attiéké à la vapeur.", badge: null },
-      { icone: "🧅", titre: "Servir", detail: "Servir avec oignon, tomate et piment frais.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le thon en morceaux, émincer oignon et piment frais.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler le poisson et le laisser prendre 5 min.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Chauffer l'huile de friture.", badge: null },
+      { icone: "🐟", titre: "Frire", detail: "Frire le thon jusqu'à doré et bien cuit à cœur.", badge: null },
+      { icone: "💨", titre: "Attiéké", detail: "Réchauffer l'attiéké à la vapeur pour le détendre.", badge: null },
+      { icone: "🥗", titre: "Condiment", detail: "Mélanger oignon, tomate et piment avec un peu d'huile.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Servir l'attiéké, le poisson et le condiment ensemble.", badge: null }
     ]
   },
   saucegraine: {
@@ -15833,9 +15989,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌴", titre: "Base", detail: "Délayer la pulpe de noix de palme.", badge: null },
-      { icone: "🥩", titre: "Viande", detail: "Ajouter le bœuf, oignon et tomate.", badge: null },
-      { icone: "🍲", titre: "Mijoter", detail: "Mijoter longuement jusqu'à onctuosité.", badge: null }
+      { icone: "🌴", titre: "Pulpe", detail: "Délayer la pulpe de noix de palme dans l'eau chaude.", badge: null },
+      { icone: "🥩", titre: "Viande", detail: "Saisir le bœuf avec l'oignon.", badge: null },
+      { icone: "🍅", titre: "Aromates", detail: "Ajouter tomate et piment, faire revenir.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Verser la pulpe de palme et compléter d'eau.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Mijoter à feu doux 45 min.", badge: null },
+      { icone: "🫗", titre: "Dégraisser", detail: "Écumer l'excédent d'huile rouge en surface.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Saler, ajouter poisson fumé ou crabe si désiré.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir avec riz, foutou ou placali.", badge: null }
     ]
   },
   saucearachide: {
@@ -15866,9 +16027,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Saisir", detail: "Saisir le poulet avec oignon et tomate.", badge: null },
-      { icone: "🥜", titre: "Lier", detail: "Incorporer la pâte d'arachide.", badge: null },
-      { icone: "🍲", titre: "Mijoter", detail: "Mijoter jusqu'à une sauce crémeuse.", badge: null }
+      { icone: "🍗", titre: "Saisir", detail: "Faire dorer le poulet assaisonné, réserver.", badge: null },
+      { icone: "🧅", titre: "Base", detail: "Faire revenir oignon, gingembre et tomate.", badge: null },
+      { icone: "🥜", titre: "Délayer", detail: "Délayer la pâte d'arachide dans de l'eau chaude.", badge: null },
+      { icone: "🥣", titre: "Réunir", detail: "Reverser poulet et pâte d'arachide dans la cocotte.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Ajouter de l'eau pour une sauce souple.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Mijoter 30 min : l'huile doit affleurer.", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajuster sel et piment.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir avec du riz blanc.", badge: null }
     ]
   },
   foutou: {
@@ -15899,9 +16065,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍌", titre: "Cuire", detail: "Cuire plantain et manioc à l'eau.", badge: null },
-      { icone: "🪨", titre: "Piler", detail: "Piler ensemble jusqu'à une pâte lisse.", badge: null },
-      { icone: "🍡", titre: "Former", detail: "Former des boules à tremper dans la sauce.", badge: null }
+      { icone: "🔪", titre: "Éplucher", detail: "Éplucher plantains et manioc, couper en tronçons.", badge: null },
+      { icone: "💧", titre: "Cuire", detail: "Cuire à l'eau bouillante jusqu'à tendreté.", badge: null },
+      { icone: "🫙", titre: "Égoutter", detail: "Égoutter en gardant un peu d'eau de cuisson.", badge: null },
+      { icone: "🪨", titre: "Piler", detail: "Piler au mortier (ou robot) en ajoutant de l'eau chaude.", badge: null },
+      { icone: "💪", titre: "Travailler", detail: "Travailler jusqu'à une pâte lisse, souple et élastique.", badge: null },
+      { icone: "🍡", titre: "Former", detail: "Mouiller les mains et former de belles boules.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt avec sauce graine ou sauce claire.", badge: null }
     ]
   },
   poissonbraise: {
@@ -15932,9 +16102,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Mariner", detail: "Mariner le poisson au gingembre, citron et piment.", badge: null },
-      { icone: "🔥", titre: "Braiser", detail: "Braiser au gril en arrosant.", badge: null },
-      { icone: "🧅", titre: "Servir", detail: "Servir avec oignon mariné et attiéké.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Vider, écailler et inciser le poisson sur les flancs.", badge: null },
+      { icone: "🧄", titre: "Marinade", detail: "Mixer ail, gingembre, piment, citron, sel et huile.", badge: null },
+      { icone: "💆", titre: "Mariner", detail: "Masser le poisson de marinade, laisser 30 min.", badge: null },
+      { icone: "🔥", titre: "Braise", detail: "Préparer une braise vive (ou un gril bien chaud).", badge: null },
+      { icone: "🐟", titre: "Braiser", detail: "Griller le poisson en l'arrosant de marinade, retourner.", badge: null },
+      { icone: "🧅", titre: "Condiment", detail: "Préparer un oignon mariné citron-piment.", badge: null },
+      { icone: "🍋", titre: "Finir", detail: "Vérifier la cuisson, la chair doit se détacher.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec attiéké, alloco et le condiment.", badge: null }
     ]
   },
   sauceclaire: {
@@ -15965,9 +16140,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Bouillon", detail: "Cuire tomate, oignon et piment.", badge: null },
-      { icone: "🌿", titre: "Gombo", detail: "Ajouter le gombo émincé pour lier.", badge: null },
-      { icone: "🐟", titre: "Poisson", detail: "Pocher le poisson et servir.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le gombo en rondelles, émincer oignon et tomate.", badge: null },
+      { icone: "🍅", titre: "Base", detail: "Faire revenir oignon, tomate et piment.", badge: null },
+      { icone: "💧", titre: "Bouillon", detail: "Mouiller à l'eau et porter à frémissement.", badge: null },
+      { icone: "🐟", titre: "Poisson", detail: "Ajouter le poisson et un peu de poisson fumé.", badge: null },
+      { icone: "🌿", titre: "Gombo", detail: "Incorporer le gombo qui va lier la sauce.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Mijoter 15 min jusqu'à la texture filante typique.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Rectifier le sel et le piment.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir avec foutou, riz ou placali.", badge: null }
     ]
   },
   saucegombo: {
@@ -15998,9 +16178,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Viande", detail: "Mijoter le bœuf avec oignon.", badge: null },
-      { icone: "🌿", titre: "Gombo", detail: "Ajouter le gombo émincé.", badge: null },
-      { icone: "🌴", titre: "Lier", detail: "Finir à l'huile de palme et piment.", badge: null }
+      { icone: "🥩", titre: "Viande", detail: "Mijoter le bœuf avec l'oignon jusqu'à tendreté.", badge: null },
+      { icone: "🔪", titre: "Gombo", detail: "Râper ou couper finement le gombo.", badge: null },
+      { icone: "🌴", titre: "Huile", detail: "Ajouter l'huile de palme au bouillon de viande.", badge: null },
+      { icone: "🌿", titre: "Incorporer", detail: "Incorporer le gombo en remuant.", badge: null },
+      { icone: "♨️", titre: "Lier", detail: "Cuire jusqu'à ce que la sauce devienne filante.", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajouter piment, crevettes séchées et épices.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Rectifier l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec couscous de manioc, fufu ou riz.", badge: null }
     ]
   },
   koki: {
@@ -16031,9 +16216,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Moudre", detail: "Moudre les niébés en pâte lisse.", badge: null },
-      { icone: "🌴", titre: "Mélanger", detail: "Incorporer huile de palme, épinards et piment.", badge: null },
-      { icone: "💨", titre: "Vapeur", detail: "Cuire vapeur en papillotes de feuilles.", badge: null }
+      { icone: "🫘", titre: "Tremper", detail: "Tremper les niébés puis les peler en les frottant.", badge: null },
+      { icone: "🌀", titre: "Moudre", detail: "Mixer en pâte lisse avec un peu d'eau.", badge: null },
+      { icone: "🌴", titre: "Huile", detail: "Incorporer l'huile de palme chaude petit à petit.", badge: null },
+      { icone: "🥬", titre: "Verdure", detail: "Ajouter épinards ciselés, piment et sel.", badge: null },
+      { icone: "📦", titre: "Papillote", detail: "Répartir la pâte dans des feuilles (ou ramequins).", badge: null },
+      { icone: "💨", titre: "Vapeur", detail: "Cuire à la vapeur 1h jusqu'à ce que le flan prenne.", badge: null },
+      { icone: "🔪", titre: "Démouler", detail: "Laisser tiédir avant de démouler.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec du plantain bouilli ou du riz.", badge: null }
     ]
   },
   kondre: {
@@ -16064,9 +16254,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Saisir", detail: "Saisir le bœuf avec oignon et tomate.", badge: null },
-      { icone: "🍌", titre: "Plantain", detail: "Ajouter les plantains en morceaux.", badge: null },
-      { icone: "🍲", titre: "Mijoter", detail: "Mijoter jusqu'à ce que tout soit fondant.", badge: null }
+      { icone: "🥩", titre: "Saisir", detail: "Faire dorer le bœuf assaisonné dans la cocotte.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Ajouter oignon, ail et gingembre, faire revenir.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Incorporer la tomate et les épices (njangsa, pèbè).", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Couvrir d'eau et laisser mijoter 30 min.", badge: null },
+      { icone: "🍌", titre: "Plantain", detail: "Ajouter les plantains pas trop mûrs en tronçons.", badge: null },
+      { icone: "⏲️", titre: "Fondre", detail: "Poursuivre 20 min jusqu'à ce que tout soit fondant.", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajuster sel et piment.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien nappé, en plat unique.", badge: null }
     ]
   },
   mbongotchobi: {
@@ -16097,9 +16292,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Épices", detail: "Torréfier les épices mbongo jusqu'au noir, moudre.", badge: null },
-      { icone: "🥣", titre: "Sauce", detail: "Mélanger aux aromates et délayer.", badge: null },
-      { icone: "🐟", titre: "Mijoter", detail: "Mijoter le poisson dans la sauce noire.", badge: null }
+      { icone: "🔥", titre: "Brûler", detail: "Torréfier les épices mbongo jusqu'à ce qu'elles noircissent.", badge: null },
+      { icone: "⚫", titre: "Moudre", detail: "Les réduire en poudre noire fine.", badge: null },
+      { icone: "🐟", titre: "Mariner", detail: "Assaisonner le poisson d'ail, gingembre et citron.", badge: null },
+      { icone: "🧅", titre: "Base", detail: "Faire revenir oignon et tomate.", badge: null },
+      { icone: "🖤", titre: "Sauce", detail: "Délayer la poudre noire avec de l'eau, verser dans la cocotte.", badge: null },
+      { icone: "🐟", titre: "Cuire", detail: "Déposer le poisson et mijoter doucement 20 min.", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajuster piment et sel.", badge: null },
+      { icone: "🍌", titre: "Servir", detail: "Servir avec plantain, manioc ou bobolo.", badge: null }
     ]
   },
   achu: {
@@ -16130,9 +16330,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍠", titre: "Piler", detail: "Cuire et piler l'igname en pâte lisse.", badge: null },
-      { icone: "🟡", titre: "Soupe", detail: "Émulsionner l'huile de palme en soupe jaune.", badge: null },
-      { icone: "🥩", titre: "Servir", detail: "Servir la pâte avec la soupe et le bœuf.", badge: null }
+      { icone: "🍠", titre: "Cuire", detail: "Cuire l'igname (et un peu de taro) à l'eau jusqu'à tendreté.", badge: null },
+      { icone: "🪨", titre: "Piler", detail: "Piler en pâte très lisse, garder au chaud humide.", badge: null },
+      { icone: "🥩", titre: "Bouillon", detail: "Mijoter le bœuf avec oignon pour un bouillon corsé.", badge: null },
+      { icone: "🟡", titre: "Émulsion", detail: "Fouetter l'huile de palme avec de la pierre kanwa et de l'eau.", badge: null },
+      { icone: "🌈", titre: "Jaunir", detail: "La soupe émulsionnée doit virer au jaune-orangé.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Ajouter piment jaune et épices.", badge: null },
+      { icone: "🥣", titre: "Réunir", detail: "Verser la soupe chaude sur la viande.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir la pâte d'igname à part, à tremper dans la soupe.", badge: null }
     ]
   },
   brochettescamerounaises: {
@@ -16163,9 +16368,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Mariner", detail: "Couper le bœuf, mariner au gingembre et piment.", badge: null },
-      { icone: "🍢", titre: "Embrocher", detail: "Embrocher et griller au charbon.", badge: null },
-      { icone: "🥜", titre: "Soya", detail: "Rouler dans la poudre d'arachide épicée.", badge: null }
+      { icone: "🔪", titre: "Couper", detail: "Couper le bœuf en fines lamelles.", badge: null },
+      { icone: "🥜", titre: "Soya", detail: "Préparer la poudre soya : arachide grillée, piment, gingembre, épices.", badge: null },
+      { icone: "💆", titre: "Mariner", detail: "Mélanger la viande avec un peu d'huile et de poudre soya.", badge: null },
+      { icone: "🍢", titre: "Embrocher", detail: "Embrocher les lamelles en accordéon sur les pics.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller au charbon en retournant régulièrement.", badge: null },
+      { icone: "🥜", titre: "Enrober", detail: "Saupoudrer généreusement de poudre soya en fin de cuisson.", badge: null },
+      { icone: "🧅", titre: "Garnir", detail: "Servir avec oignon cru et tranches de plantain.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Déguster brûlant, à la main.", badge: null }
     ]
   }
 });
