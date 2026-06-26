@@ -42950,5 +42950,527 @@ window.RECETTES_EN = {
     "detail": "Enjoy piping hot, by hand."
    }
   ]
+ },
+ "asadonegro": {
+  "nom": "Asado Negro",
+  "description": "Beef roast braised slowly in a cane-sugar caramel that stains it deep black. Richly sweet and savory, the pride of Caracas.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Pierce the beef, rub it with garlic, salt and pepper, and let it marinate for 1 hour."
+   },
+   {
+    "titre": "Caramel",
+    "detail": "Melt the cane sugar in the oil until it turns a deep brown caramel."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Plunge the beef into the caramel and brown it on all sides."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add onion, tomato and garlic, and sauté."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in broth to come halfway up the meat, then cover."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Braise over low heat for 2 hours, turning, until fork-tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Remove the meat and reduce the sauce until it coats the spoon and darkens."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice thinly and spoon the sauce over, with rice and plantains."
+   }
+  ]
+ },
+ "perico": {
+  "nom": "Perico",
+  "description": "Venezuelan-style scrambled eggs, melted together with tomato, onion and bell pepper. The sunny breakfast served with an arepa.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the onion, bell pepper and tomato into small dice."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the onion and bell pepper in butter for 4 minutes."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the tomato and let it cook down for 3 minutes."
+   },
+   {
+    "titre": "Beat",
+    "detail": "Beat the eggs with salt and pepper."
+   },
+   {
+    "titre": "Scramble",
+    "detail": "Pour in the eggs and scramble gently over medium heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve creamy, sprinkled with cilantro, alongside a warm arepa."
+   }
+  ]
+ },
+ "caraotas": {
+  "nom": "Caraotas Negras",
+  "description": "Black beans simmered with cumin and bell pepper, lightly sweetened. The essential side of the pabellón, both mellow and comforting.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the black beans overnight."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook them in water until tender, about 45 minutes."
+   },
+   {
+    "titre": "Sofrito",
+    "detail": "Sauté onion, bell pepper and garlic into a sofrito."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add cumin and a little sugar to the sofrito."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir the sofrito into the beans with a little of the cooking liquid."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer for 15 minutes to thicken and develop the flavor."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with white rice, shredded beef and plantain."
+   }
+  ]
+ },
+ "quesillo": {
+  "nom": "Quesillo",
+  "description": "Venezuelan flan made with condensed milk, denser than a crème caramel and dotted with its signature little bubbles. Silky and nostalgic.",
+  "etapes": [
+   {
+    "titre": "Caramel",
+    "detail": "Make an amber caramel with the sugar and coat the mold with it."
+   },
+   {
+    "titre": "Custard",
+    "detail": "Blend eggs, condensed milk and milk with a touch of vanilla."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour over the caramel (the bubbles will form the signature holes)."
+   },
+   {
+    "titre": "Water bath",
+    "detail": "Bake at 160°C in a water bath for 45 minutes."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check the set: a knife should come out clean."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Let cool, then refrigerate for at least 4 hours."
+   },
+   {
+    "titre": "Unmold",
+    "detail": "Unmold onto a plate to release the caramel and serve cold."
+   }
+  ]
+ },
+ "empanadasvenezolanas": {
+  "nom": "Empanadas Vénézuéliennes",
+  "description": "Fried corn-flour turnovers stuffed with spiced beef. Crispy and golden, the go-to snack of Venezuela's beaches.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Simmer the ground beef with onion, bell pepper and spices until dry."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Knead the corn flour with warm water and salt into a soft dough."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out dough disks between two sheets of plastic."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place the filling on one half of each disk."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Fold into a half-moon and seal the edges with a fork."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the frying oil to 180°C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the empanadas until golden and crispy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot with a guasacaca sauce."
+   }
+  ]
+ },
+ "mandoca": {
+  "nom": "Mandoca",
+  "description": "Fried rings of corn flour and ripe plantain, sweetened with panela and stuffed with cheese. The indulgent breakfast of Zulia.",
+  "etapes": [
+   {
+    "titre": "Mash",
+    "detail": "Cook the ripe plantain and mash it into a purée."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Melt the panela (cane sugar) and stir it into the warm purée."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Work in corn flour and grated cheese until you have a workable dough."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll into logs and join them into rings."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 170°C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the rings until evenly golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot, plain or with cheese."
+   }
+  ]
+ },
+ "lechona": {
+  "nom": "Lechona",
+  "description": "Roast pork stuffed with rice, peas and spices, with ultra-crispy skin. The festive dish of Tolima, served at big family gatherings.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut up the pork and season it with garlic, cumin, onion and salt."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Let it marinate for several hours in the fridge."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice al dente with the peas."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix the meat, rice and spices together."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill and roll, keeping the skin on the outside."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast in the oven at 160°C for 2 to 3 hours."
+   },
+   {
+    "titre": "Crisp",
+    "detail": "Raise the heat to 220°C at the end to crisp up the skin."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Carve and serve with arepa and potatoes."
+   }
+  ]
+ },
+ "changua": {
+  "nom": "Changua",
+  "description": "A morning soup of milk and water in which whole eggs are poached, fragrant with scallion and cilantro. The gentle Andean wake-up call.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Bring a mix of half milk, half salted water to a gentle simmer."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add the thinly sliced scallion."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Gently crack in the whole eggs and poach for 3 minutes."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Arrange stale bread in the bottom of the bowls."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the soup and eggs over the bread."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with fresh cilantro and serve right away."
+   }
+  ]
+ },
+ "aborrajado": {
+  "nom": "Aborrajados",
+  "description": "Fully ripe plantain stuffed with cheese, coated in batter and fried. Sweet-savory and melting, the treat of Valle del Cauca.",
+  "etapes": [
+   {
+    "titre": "Pre-cook",
+    "detail": "Pan-fry thick slices of ripe plantain until golden."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Press them gently and form a pocket."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Tuck a piece of cheese into the center."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Make a loose batter with flour, egg and a little milk."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 175°C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Dip in the batter and fry until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve warm, the cheese still oozing."
+   }
+  ]
+ },
+ "pandebono": {
+  "nom": "Pandebono",
+  "description": "Little cheese and cornmeal rolls, soft and stretchy, baked until golden. The smell of Colombian bakeries.",
+  "etapes": [
+   {
+    "titre": "Mix",
+    "detail": "Combine grated cheese, cornmeal and starch."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the egg and butter to form a smooth dough."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead until the dough is smooth and elastic."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape even balls or rings."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for 15 to 20 minutes until puffed and golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, which is when they're at their best."
+   }
+  ]
+ },
+ "arepadehuevo": {
+  "nom": "Arepa de Huevo",
+  "description": "A corn arepa fried, then split open to slip in an egg, and fried again. A crispy specialty of Colombia's Caribbean coast.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead the cornmeal with warm water and salt into a supple dough."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form thin, even patties."
+   },
+   {
+    "titre": "Pre-fry",
+    "detail": "Fry briefly at 180°C until they puff up."
+   },
+   {
+    "titre": "Open",
+    "detail": "Carefully cut a slit along the edge without piercing through."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Slip a raw egg inside and seal it back up."
+   },
+   {
+    "titre": "Re-fry",
+    "detail": "Return to the oil to cook the egg and brown."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and enjoy right away, piping hot."
+   }
+  ]
+ },
+ "asadoargentin": {
+  "nom": "Asado Argentin",
+  "description": "The ritual of beef grilled slowly over the coals, simply salted, served with chimichurri. More than a dish, an Argentine institution.",
+  "etapes": [
+   {
+    "titre": "Coals",
+    "detail": "Build a gentle, steady bed of coals, with no flame."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Season the meat generously with coarse salt just before grilling."
+   },
+   {
+    "titre": "Lay",
+    "detail": "Set the cuts fat-side down on the grill."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Grill slowly for 40 to 60 minutes depending on thickness, without rushing."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Flip only once, halfway through."
+   },
+   {
+    "titre": "Watch",
+    "detail": "Aim for a pink center (≈ 55°C) for juicy meat."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the meat rest 5 to 10 minutes before slicing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice and serve drizzled with chimichurri."
+   }
+  ]
+ },
+ "provoleta": {
+  "nom": "Provoleta",
+  "description": "A disk of provolone grilled until it forms a golden crust and a molten center, scented with oregano. The star starter of the asado.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the provolone into a thick disk and pat it dry."
+   },
+   {
+    "titre": "Season",
+    "detail": "Sprinkle with oregano, chili flakes and a drizzle of oil."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat a cast-iron pan or get the grill nice and hot."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill 2 to 3 minutes per side until a golden crust forms."
+   },
+   {
+    "titre": "Melt",
+    "detail": "The center should turn molten without the cheese spreading out."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away with grilled bread for dipping."
+   }
+  ]
+ },
+ "matambre": {
+  "nom": "Matambre Arrollado",
+  "description": "Thin flank steak rolled around hard-boiled eggs, carrot and bell pepper, poached then sliced. The showstopping cold starter of Argentine celebrations.",
+  "etapes": [
+   {
+    "titre": "Flatten",
+    "detail": "Pound the flank steak into a thin, even sheet."
+   },
+   {
+    "titre": "Season",
+    "detail": "Rub with garlic, parsley, salt and pepper."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Lay out hard-boiled eggs, carrot sticks and strips of bell pepper."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll up tightly lengthwise."
+   },
+   {
+    "titre": "Tie",
+    "detail": "Tie the roll so it holds its shape."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach in a gently simmering broth for 1 hour 30 minutes."
+   },
+   {
+    "titre": "Press",
+    "detail": "Let it cool under a weight in the refrigerator."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice cold into handsome rounds and serve."
+   }
+  ]
+ },
+ "humita": {
+  "nom": "Humita",
+  "description": "Fresh grated corn simmered with onion and cheese, traditionally steamed in corn husks. Sweet, creamy and comforting.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Grate the fresh corn into a pulp."
+   },
+   {
+    "titre": "Sofrito",
+    "detail": "Sauté the onion with the paprika."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the corn pulp and milk, cooking while stirring."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Let it thicken for 15 min into a smooth cream."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Off the heat, stir in the cheese."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Fill the corn husks and tie them (or serve in a pot)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 20 min if wrapped in husks."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, creamy and slightly sweet."
+   }
+  ]
  }
 };

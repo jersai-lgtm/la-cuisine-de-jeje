@@ -93,7 +93,7 @@ window.I18N_ING = {
   "🌾 Farine de sarrasin": "🌾 Buckwheat flour", "🥖 Levain": "🥖 Sourdough starter",
   "🌻 Graines (tournesol, lin, sésame)": "🌻 Seeds (sunflower, flax, sesame)", "🥩 Filet de bœuf": "🥩 Beef tenderloin",
   "🐟 Filet de saumon frais": "🐟 Fresh salmon fillet", "🧀 Fromage frais": "🧀 Cream cheese", "🧂 Fleur de sel": "🧂 Fleur de sel",
-  "🥧 Pâte brisée": "🥧 Shortcrust pastry", "🧀 Fromage râpé": "🧀 Grated cheese", "🧀 Emmental": "🧀 Emmental", "🧀 Vacherin": "🧀 Vacherin cheese",
+  "🥧 Pâte brisée": "🥧 Shortcrust pastry", "🧀 Fromage râpé": "🧀 Grated cheese", "🧀 Emmental": "🧀 Emmental", "🧀 Vacherin": "🧀 Vacherin cheese", "🧀 Provolone": "🧀 Provolone",
   "🌭 Saucisses bratwurst": "🌭 Bratwurst sausages", "🍅 Ketchup": "🍅 Ketchup", "🌶️ Curry en poudre": "🌶️ Curry powder",
   "🌶️ Paprika fumé": "🌶️ Smoked paprika", "🧂 Bicarbonate": "🧂 Baking soda", "🧂 Gros sel": "🧂 Coarse salt",
   "🍇 Raisins secs": "🍇 Raisins", "🥩 Bœuf à mijoter": "🥩 Stewing beef", "🟣 Betteraves": "🟣 Beets", "🥬 Chou vert": "🥬 Green cabbage",

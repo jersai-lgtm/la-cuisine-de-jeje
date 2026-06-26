@@ -135,6 +135,7 @@ const INGREDIENTS_PRIX = {
   gruyere:       { prixKg: 18.0, calPer100g: 413,  lipSat: 22,   sucre: 0.4,  sel: 1.7,  fibres: 0,   prot: 30,   flv: 0 },
   emmental:      { prixKg: 14.0, calPer100g: 378,  lipSat: 19,   sucre: 0.5,  sel: 0.7,  fibres: 0,   prot: 29,   flv: 0 },
   vacherin:      { prixKg: 24.0, calPer100g: 380,  lipSat: 18,   sucre: 0.5,  sel: 1.5,  fibres: 0,   prot: 20,   flv: 0 },
+  provolone:     { prixKg: 16.0, calPer100g: 350,  lipSat: 17,   sucre: 1,    sel: 1.4,  fibres: 0,   prot: 26,   flv: 0 },
   cheddar:       { prixKg: 14.0, calPer100g: 410,  lipSat: 21,   sucre: 0.5,  sel: 1.6,  fibres: 0,   prot: 25,   flv: 0 },
   chevre:        { prixKg: 16.0, calPer100g: 364,  lipSat: 21,   sucre: 2.5,  sel: 1.6,  fibres: 0,   prot: 22,   flv: 0 },
   burrata:       { prixKg: 18.0, calPer100g: 290,  lipSat: 13,   sucre: 1,    sel: 0.6,  fibres: 0,   prot: 17,   flv: 0 },
@@ -1337,7 +1338,7 @@ const INGREDIENTS_LABELS = {
   saumonfrais: "🐟 Filet de saumon frais", fromagefrais: "🧀 Fromage frais",
   fleurdesel: "🧂 Fleur de sel", crème: "🥛 Crème fraîche",
   patebrisee: "🥧 Pâte brisée", fromagerape: "🧀 Fromage râpé",
-  emmental: "🧀 Emmental", vacherin: "🧀 Vacherin", huiledolive: "🫒 Huile d'olive",
+  emmental: "🧀 Emmental", vacherin: "🧀 Vacherin", provolone: "🧀 Provolone", huiledolive: "🫒 Huile d'olive",
   // === Sprint final — Allemagne, Espagne, Mexique, Inde, Japon, Chine, Russie, Portugal, Hongrie ===
   bratwurst: "🌭 Saucisses bratwurst", ketchup: "🍅 Ketchup",
   currypoudre: "🌶️ Curry en poudre", paprikaFume: "🌶️ Paprika fumé",
