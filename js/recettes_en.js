@@ -33051,5 +33051,19 @@ window.RECETTES_EN = {
   kafteji: { nom: "Kafteji", description: "Fried vegetables (pepper, tomato, courgette) knife-chopped and bound with egg, spiced with harissa. Tunisian comfort food." },
   mloukhia: { nom: "Tunisian Mloukhia", description: "Beef stew slow-cooked in a dark-green jute-leaf-powder sauce with olive oil and garlic. Deep and velvety." },
   bambalouni: { nom: "Bambalouni", description: "Tunisian ring doughnut, fried to order and rolled in sugar. Crisp outside, fluffy inside — a seaside memory." },
-  tajinmalsouka: { nom: "Tajine Malsouka", description: "Tunisian tajine (nothing like the Moroccan one): a baked gratin of minced meat, eggs and brick pastry. Golden and hearty." }
+  tajinmalsouka: { nom: "Tajine Malsouka", description: "Tunisian tajine (nothing like the Moroccan one): a baked gratin of minced meat, eggs and brick pastry. Golden and hearty." },
+  fondue: { nom: "Moitié-Moitié Cheese Fondue", description: "The quintessential Swiss fondue: half Gruyère, half Fribourg Vacherin, melted in white wine and bound with kirsch. Shared from the caquelon." },
+  malakoff: { nom: "Vaud Malakoffs (Cheese Fritters)", description: "Fried Gruyère fritters from canton Vaud, crisp outside and molten inside. A treat from the Côte region's festivities." },
+  papetvaudois: { nom: "Papet Vaudois", description: "Leeks and potatoes stewed in white wine, crowned with a cabbage sausage. Canton Vaud's emblematic winter dish." },
+  zopf: { nom: "Zopf (Swiss Butter Braid)", description: "The Swiss Sunday butter braid: soft, stretchy crumb with an egg-glazed golden crust. The bread of the Sunday brunch." },
+  fonduechocolat: { nom: "Chocolate Fondue", description: "Swiss chocolate melted with cream, kept warm in the caquelon for dipping fruit and biscuits. The ultimate sharing dessert." },
+  zurichgeschnetzeltes: { nom: "Zürich-Style Veal", description: "Thin strips of veal and mushrooms in a creamy white-wine sauce. Zürich's great classic, served with rösti." },
+  capuns: { nom: "Capuns", description: "A Grisons specialty: bacon spätzle batter wrapped in chard leaves, poached then gratinated. Rustic and comforting." },
+  tafelspitz: { nom: "Tafelspitz (Boiled Beef)", description: "Beef slowly poached in a vegetable broth, sliced and served with horseradish sauce. Emperor Franz Joseph's favourite dish." },
+  frittatensuppe: { nom: "Frittatensuppe (Pancake Soup)", description: "Clear beef broth garnished with thin strips of savoury pancake. The ultimate comforting Viennese soup." },
+  germknodel: { nom: "Germknödel", description: "A large yeast-dough dumpling filled with plum jam, steamed and topped with melted butter and sweet poppy seeds. A dessert of Austrian mountain huts." },
+  linzertorte: { nom: "Linzertorte", description: "The world's oldest cake: an almond-cinnamon shortcrust filled with redcurrant jam under a lattice. A specialty of Linz." },
+  kasespatzle: { nom: "Käsespätzle (Cheese Spätzle)", description: "Fresh little noodles gratinated with mountain cheese and topped with fried onions. The Tyrolean Alps' mac & cheese." },
+  grostl: { nom: "Tiroler Gröstl", description: "Tyrolean pan-fry of potatoes and beef sautéed with onion, crowned with a fried egg. Mountain comfort food that fights waste." },
+  backhendl: { nom: "Backhendl (Viennese Fried Chicken)", description: "Viennese-breaded chicken, fried golden and crisp, served with lemon. The festive ancestor of fried chicken, dear to imperial Austria." }
 };
