@@ -412,6 +412,8 @@ const INGREDIENTS_PRIX = {
   lentilles:      { prixKg: 4.00, calPer100g: 116,  lipSat: 0.1,  sucre: 1.8,  sel: 0,    fibres: 7.9, prot: 9,    flv: 100 },
   lentillesCorail:{ prixKg: 5.00, calPer100g: 350,  lipSat: 0.2,  sucre: 1,    sel: 0,    fibres: 11,  prot: 24,   flv: 100 },
   poischiches:    { prixKg: 3.50, calPer100g: 364,  lipSat: 0.7,  sucre: 11,   sel: 0,    fibres: 17,  prot: 19,   flv: 100 },
+  farinepoischiche: { prixKg: 4.50, calPer100g: 387, lipSat: 0.6, sucre: 11,   sel: 0,    fibres: 11,  prot: 22,   flv: 50 },
+  mloukhia:       { prixKg: 30.0, calPer100g: 210,  lipSat: 0.5,  sucre: 2,    sel: 0.1,  fibres: 30,  prot: 25,   flv: 70 },
   
   // ===== PAINS & BOULANGERIE =====
   pain:           { prixKg: 4.50, calPer100g: 265,  lipSat: 0.7,  sucre: 5.7,  sel: 1.4,  fibres: 4,   prot: 9,    flv: 0 },
@@ -1273,6 +1275,7 @@ const INGREDIENTS_LABELS = {
   edamame: "🫛 Edamame", pois: "🫘 Pois",
   // == Légumineuses ==
   poischiches: "🫘 Pois chiches", lentilles: "🫘 Lentilles",
+  farinepoischiche: "🌾 Farine de pois chiche", mloukhia: "🌿 Mloukhia",
   // == Fruits ==
   citron: "🍋 Citron", citrons: "🍋 Citrons", orange: "🍊 Orange", orangeJus: "🍊 Jus d'orange",
   pommes: "🍎 Pommes", bananes: "🍌 Bananes", fraise: "🍓 Fraise", fraises: "🍓 Fraises",

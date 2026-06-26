@@ -63,6 +63,7 @@ window.I18N_ING = {
   "🪨 Navets": "🪨 Turnips", "🥬 Chou": "🥬 Cabbage", "🥬 Poireaux": "🥬 Leeks", "🌿 Asperges": "🌿 Asparagus",
   "🌽 Maïs": "🌽 Corn", "🫛 Petits pois": "🫛 Green peas", "🫛 Haricots verts": "🫛 Green beans", "🥒 Concombre": "🥒 Cucumber",
   "🌿 Céleri": "🌿 Celery", "🫛 Edamame": "🫛 Edamame", "🫘 Pois": "🫘 Peas", "🫘 Pois chiches": "🫘 Chickpeas",
+  "🌾 Farine de pois chiche": "🌾 Chickpea flour", "🌿 Mloukhia": "🌿 Mulukhiyah (jute leaf)",
   "🫘 Lentilles": "🫘 Lentils", "🍋 Citron": "🍋 Lemon", "🍋 Citrons": "🍋 Lemons", "🍊 Orange": "🍊 Orange",
   "🍊 Jus d'orange": "🍊 Orange juice", "🍎 Pommes": "🍎 Apples", "🍌 Bananes": "🍌 Bananas", "🍓 Fraise": "🍓 Strawberry",
   "🍓 Fraises": "🍓 Strawberries", "🫐 Framboises": "🫐 Raspberries", "🫐 Myrtilles": "🫐 Blueberries", "🍑 Pêche": "🍑 Peach",

@@ -33072,5 +33072,18 @@ window.RECETTES_EN = {
   kleftiko: { nom: "Kleftiko", description: "Cypriot lamb slow-cooked in a parcel with potatoes, lemon and oregano. Spoon-tender." },
   sopanegra: { nom: "Sopa Negra", description: "Costa Rican black bean soup with pepper and coriander, topped with a poached egg. Nourishing and fragrant." },
   eru: { nom: "Eru", description: "Cameroonian dish of greens simmered in palm oil with meat and shrimp. Rich and typical of the West." },
-  kapustnica: { nom: "Kapustnica", description: "Slovak sauerkraut soup with smoked sausage and potato, spiced with paprika. Slovakia's Christmas comfort." }
+  kapustnica: { nom: "Kapustnica", description: "Slovak sauerkraut soup with smoked sausage and potato, spiced with paprika. Slovakia's Christmas comfort." },
+  couscousalgerien: { nom: "Algerian Couscous", description: "The Friday couscous: steamed semolina, tender lamb and vegetables (courgette, carrot, chickpeas) simmered in a fragrant broth." },
+  tajinezitoune: { nom: "Tajine Zitoune (Olive Tagine)", description: "Algerian chicken tagine with green olives and lemon in a creamy white carrot sauce. Elegant and tangy." },
+  rechta: { nom: "Rechta", description: "Handmade flat noodles served in a white chicken sauce with chickpeas and turnip, scented with cinnamon. An Algiers celebration dish." },
+  mhadjeb: { nom: "M'hadjeb (Stuffed Semolina Crêpes)", description: "Flaky semolina crêpes filled with a tomato, onion and pepper compote. Algerian street food, pan-seared golden." },
+  berkoukes: { nom: "Berkoukes", description: "Large semolina pearls simmered in a lamb and vegetable tomato sauce. A rustic, comforting soup-stew." },
+  kalbellouz: { nom: "Kalb el Louz (Almond Semolina Cake)", description: "Almond semolina cake soaked in a honey and orange-blossom syrup. \"Heart of almond\", a Ramadan sweet." },
+  garantita: { nom: "Garantita (Chickpea Flan)", description: "Cumin-spiced chickpea-flour flan baked and served in slices. An iconic Algiers snack, golden and soft." },
+  makrout: { nom: "Makrout (Date Semolina Pastry)", description: "Semolina diamonds filled with date paste, fried then dipped in honey. The Maghreb's flagship pastry." },
+  couscoustunisien: { nom: "Tunisian Fish Couscous", description: "Coastal couscous: steamed semolina, cod and vegetables in a red harissa-spiced broth. Sea and heat." },
+  kafteji: { nom: "Kafteji", description: "Fried vegetables (pepper, tomato, courgette) knife-chopped and bound with egg, spiced with harissa. Tunisian comfort food." },
+  mloukhia: { nom: "Tunisian Mloukhia", description: "Beef stew slow-cooked in a dark-green jute-leaf-powder sauce with olive oil and garlic. Deep and velvety." },
+  bambalouni: { nom: "Bambalouni", description: "Tunisian ring doughnut, fried to order and rolled in sugar. Crisp outside, fluffy inside — a seaside memory." },
+  tajinmalsouka: { nom: "Tajine Malsouka", description: "Tunisian tajine (nothing like the Moroccan one): a baked gratin of minced meat, eggs and brick pastry. Golden and hearty." }
 };
