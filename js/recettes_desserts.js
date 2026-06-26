@@ -5278,4 +5278,70 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Verser dans un moule à cheminée et cuire à 160°C sans ouvrir le four.", badge: "⏱ 35 min" }
     ]
   },
+  malabi: {
+    nom: "Malabi",
+    cat: "desserts", pays: "israel",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🍮",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Crème dessert moyen-orientale au lait, légèrement parfumée, nappée de fruits rouges. Frais et délicat.",
+    tableauMalabi: [
+      { nb: 1, lait: "200 ml", maizena: "20 g", sucre: "15 g", fruitsrouges: "30 g" },
+      { nb: 2, lait: "400 ml", maizena: "40 g", sucre: "30 g", fruitsrouges: "60 g" },
+      { nb: 3, lait: "600 ml", maizena: "60 g", sucre: "45 g", fruitsrouges: "90 g" },
+      { nb: 4, lait: "800 ml", maizena: "80 g", sucre: "60 g", fruitsrouges: "120 g" },
+      { nb: 5, lait: "1000 ml", maizena: "100 g", sucre: "75 g", fruitsrouges: "150 g" },
+      { nb: 6, lait: "1200 ml", maizena: "120 g", sucre: "90 g", fruitsrouges: "180 g" },
+      { nb: 7, lait: "1400 ml", maizena: "140 g", sucre: "105 g", fruitsrouges: "210 g" },
+      { nb: 8, lait: "1600 ml", maizena: "160 g", sucre: "120 g", fruitsrouges: "240 g" },
+      { nb: 9, lait: "1800 ml", maizena: "180 g", sucre: "135 g", fruitsrouges: "270 g" },
+      { nb: 10, lait: "2000 ml", maizena: "200 g", sucre: "150 g", fruitsrouges: "300 g" },
+      { nb: 11, lait: "2200 ml", maizena: "220 g", sucre: "165 g", fruitsrouges: "330 g" },
+      { nb: 12, lait: "2400 ml", maizena: "240 g", sucre: "180 g", fruitsrouges: "360 g" },
+      { nb: 13, lait: "2600 ml", maizena: "260 g", sucre: "195 g", fruitsrouges: "390 g" },
+      { nb: 14, lait: "2800 ml", maizena: "280 g", sucre: "210 g", fruitsrouges: "420 g" },
+      { nb: 15, lait: "3000 ml", maizena: "300 g", sucre: "225 g", fruitsrouges: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Cuire", detail: "Délayer la maïzena dans le lait, chauffer avec le sucre jusqu'à épaississement.", badge: null },
+      { icone: "🥣", titre: "Mouler", detail: "Verser en verrines, laisser prendre au frais.", badge: "⏱ 2 h" },
+      { icone: "🍓", titre: "Servir", detail: "Napper de coulis de fruits rouges.", badge: null }
+    ]
+  },
+  ebleskiver: {
+    nom: "Æbleskiver",
+    cat: "desserts", pays: "danemark",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥞",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Petites boules de pancake danoises, dorées et moelleuses, saupoudrées de sucre. Le réconfort de Noël au Danemark.",
+    tableauEbleskiver: [
+      { nb: 1, farine: "50 g", oeuf: "30 g", lait: "100 ml", sucre: "12 g", beurre: "10 g" },
+      { nb: 2, farine: "100 g", oeuf: "60 g", lait: "200 ml", sucre: "24 g", beurre: "20 g" },
+      { nb: 3, farine: "150 g", oeuf: "90 g", lait: "300 ml", sucre: "36 g", beurre: "30 g" },
+      { nb: 4, farine: "200 g", oeuf: "120 g", lait: "400 ml", sucre: "48 g", beurre: "40 g" },
+      { nb: 5, farine: "250 g", oeuf: "150 g", lait: "500 ml", sucre: "60 g", beurre: "50 g" },
+      { nb: 6, farine: "300 g", oeuf: "180 g", lait: "600 ml", sucre: "72 g", beurre: "60 g" },
+      { nb: 7, farine: "350 g", oeuf: "210 g", lait: "700 ml", sucre: "84 g", beurre: "70 g" },
+      { nb: 8, farine: "400 g", oeuf: "240 g", lait: "800 ml", sucre: "96 g", beurre: "80 g" },
+      { nb: 9, farine: "450 g", oeuf: "270 g", lait: "900 ml", sucre: "108 g", beurre: "90 g" },
+      { nb: 10, farine: "500 g", oeuf: "300 g", lait: "1000 ml", sucre: "120 g", beurre: "100 g" },
+      { nb: 11, farine: "550 g", oeuf: "330 g", lait: "1100 ml", sucre: "132 g", beurre: "110 g" },
+      { nb: 12, farine: "600 g", oeuf: "360 g", lait: "1200 ml", sucre: "144 g", beurre: "120 g" },
+      { nb: 13, farine: "650 g", oeuf: "390 g", lait: "1300 ml", sucre: "156 g", beurre: "130 g" },
+      { nb: 14, farine: "700 g", oeuf: "420 g", lait: "1400 ml", sucre: "168 g", beurre: "140 g" },
+      { nb: 15, farine: "750 g", oeuf: "450 g", lait: "1500 ml", sucre: "180 g", beurre: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Pâte", detail: "Préparer une pâte à pancake épaisse.", badge: null },
+      { icone: "🔵", titre: "Cuire", detail: "Cuire dans un moule à æbleskiver, tourner pour la forme ronde.", badge: null },
+      { icone: "🍯", titre: "Servir", detail: "Saupoudrer de sucre.", badge: null }
+    ]
+  }
 });

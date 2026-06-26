@@ -2661,4 +2661,103 @@ tapenade: {
       { icone: "🫒", titre: "Servir", detail: "Lisser, filet d'huile et paprika, servir avec des crudités.", badge: null }
     ]
   },
+  bourekalg: {
+    nom: "Bourek Algérien",
+    cat: "aperitifs", pays: "algerie",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Rouleaux croustillants farcis à la viande hachée et aux oignons, frits jusqu'à doré. Un classique du ramadan.",
+    tableauBourekalg: [
+      { nb: 1, patefeuilletee: "50 g", boeuf: "60 g", oignon: "30 g", oeuf: "20 g", persil: "5 g" },
+      { nb: 2, patefeuilletee: "100 g", boeuf: "120 g", oignon: "60 g", oeuf: "40 g", persil: "10 g" },
+      { nb: 3, patefeuilletee: "150 g", boeuf: "180 g", oignon: "90 g", oeuf: "60 g", persil: "15 g" },
+      { nb: 4, patefeuilletee: "200 g", boeuf: "240 g", oignon: "120 g", oeuf: "80 g", persil: "20 g" },
+      { nb: 5, patefeuilletee: "250 g", boeuf: "300 g", oignon: "150 g", oeuf: "100 g", persil: "25 g" },
+      { nb: 6, patefeuilletee: "300 g", boeuf: "360 g", oignon: "180 g", oeuf: "120 g", persil: "30 g" },
+      { nb: 7, patefeuilletee: "350 g", boeuf: "420 g", oignon: "210 g", oeuf: "140 g", persil: "35 g" },
+      { nb: 8, patefeuilletee: "400 g", boeuf: "480 g", oignon: "240 g", oeuf: "160 g", persil: "40 g" },
+      { nb: 9, patefeuilletee: "450 g", boeuf: "540 g", oignon: "270 g", oeuf: "180 g", persil: "45 g" },
+      { nb: 10, patefeuilletee: "500 g", boeuf: "600 g", oignon: "300 g", oeuf: "200 g", persil: "50 g" },
+      { nb: 11, patefeuilletee: "550 g", boeuf: "660 g", oignon: "330 g", oeuf: "220 g", persil: "55 g" },
+      { nb: 12, patefeuilletee: "600 g", boeuf: "720 g", oignon: "360 g", oeuf: "240 g", persil: "60 g" },
+      { nb: 13, patefeuilletee: "650 g", boeuf: "780 g", oignon: "390 g", oeuf: "260 g", persil: "65 g" },
+      { nb: 14, patefeuilletee: "700 g", boeuf: "840 g", oignon: "420 g", oeuf: "280 g", persil: "70 g" },
+      { nb: 15, patefeuilletee: "750 g", boeuf: "900 g", oignon: "450 g", oeuf: "300 g", persil: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Farce", detail: "Faire revenir la viande avec l'oignon et le persil.", badge: null },
+      { icone: "🥟", titre: "Rouler", detail: "Garnir la pâte, rouler serré, fermer à l'œuf.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire jusqu'à coloration dorée.", badge: null }
+    ]
+  },
+  bitterballen: {
+    nom: "Bitterballen",
+    cat: "aperitifs", pays: "paysbas",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🟤",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Croquettes néerlandaises au bœuf, panées et frites, fondantes à cœur. L'apéro hollandais incontournable, avec de la moutarde.",
+    tableauBitterballen: [
+      { nb: 1, boeuf: "80 g", farine: "25 g", beurre: "15 g", chapelure: "25 g", oeuf: "15 g" },
+      { nb: 2, boeuf: "160 g", farine: "50 g", beurre: "30 g", chapelure: "50 g", oeuf: "30 g" },
+      { nb: 3, boeuf: "240 g", farine: "75 g", beurre: "45 g", chapelure: "75 g", oeuf: "45 g" },
+      { nb: 4, boeuf: "320 g", farine: "100 g", beurre: "60 g", chapelure: "100 g", oeuf: "60 g" },
+      { nb: 5, boeuf: "400 g", farine: "125 g", beurre: "75 g", chapelure: "125 g", oeuf: "75 g" },
+      { nb: 6, boeuf: "480 g", farine: "150 g", beurre: "90 g", chapelure: "150 g", oeuf: "90 g" },
+      { nb: 7, boeuf: "560 g", farine: "175 g", beurre: "105 g", chapelure: "175 g", oeuf: "105 g" },
+      { nb: 8, boeuf: "640 g", farine: "200 g", beurre: "120 g", chapelure: "200 g", oeuf: "120 g" },
+      { nb: 9, boeuf: "720 g", farine: "225 g", beurre: "135 g", chapelure: "225 g", oeuf: "135 g" },
+      { nb: 10, boeuf: "800 g", farine: "250 g", beurre: "150 g", chapelure: "250 g", oeuf: "150 g" },
+      { nb: 11, boeuf: "880 g", farine: "275 g", beurre: "165 g", chapelure: "275 g", oeuf: "165 g" },
+      { nb: 12, boeuf: "960 g", farine: "300 g", beurre: "180 g", chapelure: "300 g", oeuf: "180 g" },
+      { nb: 13, boeuf: "1040 g", farine: "325 g", beurre: "195 g", chapelure: "325 g", oeuf: "195 g" },
+      { nb: 14, boeuf: "1120 g", farine: "350 g", beurre: "210 g", chapelure: "350 g", oeuf: "210 g" },
+      { nb: 15, boeuf: "1200 g", farine: "375 g", beurre: "225 g", chapelure: "375 g", oeuf: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Ragout", detail: "Préparer un ragoût épais de bœuf lié au roux.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Façonner des boules, refroidir.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Paner et frire jusqu'à doré.", badge: null }
+    ]
+  },
+  tequenos: {
+    nom: "Tequeños",
+    cat: "aperitifs", pays: "venezuela",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Bâtonnets de fromage enrobés de pâte et frits, croustillants dehors et filants dedans. L'apéro vénézuélien adoré.",
+    tableauTequenos: [
+      { nb: 1, patefeuilletee: "60 g", mozza: "60 g", oeuf: "15 g" },
+      { nb: 2, patefeuilletee: "120 g", mozza: "120 g", oeuf: "30 g" },
+      { nb: 3, patefeuilletee: "180 g", mozza: "180 g", oeuf: "45 g" },
+      { nb: 4, patefeuilletee: "240 g", mozza: "240 g", oeuf: "60 g" },
+      { nb: 5, patefeuilletee: "300 g", mozza: "300 g", oeuf: "75 g" },
+      { nb: 6, patefeuilletee: "360 g", mozza: "360 g", oeuf: "90 g" },
+      { nb: 7, patefeuilletee: "420 g", mozza: "420 g", oeuf: "105 g" },
+      { nb: 8, patefeuilletee: "480 g", mozza: "480 g", oeuf: "120 g" },
+      { nb: 9, patefeuilletee: "540 g", mozza: "540 g", oeuf: "135 g" },
+      { nb: 10, patefeuilletee: "600 g", mozza: "600 g", oeuf: "150 g" },
+      { nb: 11, patefeuilletee: "660 g", mozza: "660 g", oeuf: "165 g" },
+      { nb: 12, patefeuilletee: "720 g", mozza: "720 g", oeuf: "180 g" },
+      { nb: 13, patefeuilletee: "780 g", mozza: "780 g", oeuf: "195 g" },
+      { nb: 14, patefeuilletee: "840 g", mozza: "840 g", oeuf: "210 g" },
+      { nb: 15, patefeuilletee: "900 g", mozza: "900 g", oeuf: "225 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Enrober", detail: "Enrouler des bâtonnets de fromage dans la pâte.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire jusqu'à doré.", badge: null },
+      { icone: "🧂", titre: "Servir", detail: "Servir chaud, fromage filant.", badge: null }
+    ]
+  }
 });

@@ -2965,4 +2965,136 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Finir", detail: "Réveiller au citron vert et à la coriandre.", badge: null }
     ]
   },
+  ashreshteh: {
+    nom: "Ash Reshteh",
+    cat: "soupes", pays: "iran",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Soupe iranienne épaisse aux herbes, légumineuses et nouilles. Verte, nourrissante, le réconfort persan par excellence.",
+    tableauAshreshteh: [
+      { nb: 1, lentilles: "50 g", haricotsrouges: "40 g", epinards: "50 g", pates: "30 g", oignon: "40 g", persil: "10 g" },
+      { nb: 2, lentilles: "100 g", haricotsrouges: "80 g", epinards: "100 g", pates: "60 g", oignon: "80 g", persil: "20 g" },
+      { nb: 3, lentilles: "150 g", haricotsrouges: "120 g", epinards: "150 g", pates: "90 g", oignon: "120 g", persil: "30 g" },
+      { nb: 4, lentilles: "200 g", haricotsrouges: "160 g", epinards: "200 g", pates: "120 g", oignon: "160 g", persil: "40 g" },
+      { nb: 5, lentilles: "250 g", haricotsrouges: "200 g", epinards: "250 g", pates: "150 g", oignon: "200 g", persil: "50 g" },
+      { nb: 6, lentilles: "300 g", haricotsrouges: "240 g", epinards: "300 g", pates: "180 g", oignon: "240 g", persil: "60 g" },
+      { nb: 7, lentilles: "350 g", haricotsrouges: "280 g", epinards: "350 g", pates: "210 g", oignon: "280 g", persil: "70 g" },
+      { nb: 8, lentilles: "400 g", haricotsrouges: "320 g", epinards: "400 g", pates: "240 g", oignon: "320 g", persil: "80 g" },
+      { nb: 9, lentilles: "450 g", haricotsrouges: "360 g", epinards: "450 g", pates: "270 g", oignon: "360 g", persil: "90 g" },
+      { nb: 10, lentilles: "500 g", haricotsrouges: "400 g", epinards: "500 g", pates: "300 g", oignon: "400 g", persil: "100 g" },
+      { nb: 11, lentilles: "550 g", haricotsrouges: "440 g", epinards: "550 g", pates: "330 g", oignon: "440 g", persil: "110 g" },
+      { nb: 12, lentilles: "600 g", haricotsrouges: "480 g", epinards: "600 g", pates: "360 g", oignon: "480 g", persil: "120 g" },
+      { nb: 13, lentilles: "650 g", haricotsrouges: "520 g", epinards: "650 g", pates: "390 g", oignon: "520 g", persil: "130 g" },
+      { nb: 14, lentilles: "700 g", haricotsrouges: "560 g", epinards: "700 g", pates: "420 g", oignon: "560 g", persil: "140 g" },
+      { nb: 15, lentilles: "750 g", haricotsrouges: "600 g", epinards: "750 g", pates: "450 g", oignon: "600 g", persil: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Légumineuses", detail: "Cuire lentilles et haricots.", badge: null },
+      { icone: "🌿", titre: "Herbes", detail: "Ajouter épinards, persil et oignon revenu.", badge: null },
+      { icone: "🍜", titre: "Nouilles", detail: "Ajouter les nouilles, mijoter jusqu'à épaississement.", badge: null }
+    ]
+  },
+  sinigang: {
+    nom: "Sinigang",
+    cat: "soupes", pays: "philippines",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Soupe aigre philippine au porc et légumes, acidulée au tamarin (ici au citron). Réconfortante et vivifiante.",
+    tableauSinigang: [
+      { nb: 1, porc: "120 g", tomate: "80 g", epinards: "50 g", navet: "40 g", citron: "20 g", oignon: "30 g" },
+      { nb: 2, porc: "240 g", tomate: "160 g", epinards: "100 g", navet: "80 g", citron: "40 g", oignon: "60 g" },
+      { nb: 3, porc: "360 g", tomate: "240 g", epinards: "150 g", navet: "120 g", citron: "60 g", oignon: "90 g" },
+      { nb: 4, porc: "480 g", tomate: "320 g", epinards: "200 g", navet: "160 g", citron: "80 g", oignon: "120 g" },
+      { nb: 5, porc: "600 g", tomate: "400 g", epinards: "250 g", navet: "200 g", citron: "100 g", oignon: "150 g" },
+      { nb: 6, porc: "720 g", tomate: "480 g", epinards: "300 g", navet: "240 g", citron: "120 g", oignon: "180 g" },
+      { nb: 7, porc: "840 g", tomate: "560 g", epinards: "350 g", navet: "280 g", citron: "140 g", oignon: "210 g" },
+      { nb: 8, porc: "960 g", tomate: "640 g", epinards: "400 g", navet: "320 g", citron: "160 g", oignon: "240 g" },
+      { nb: 9, porc: "1080 g", tomate: "720 g", epinards: "450 g", navet: "360 g", citron: "180 g", oignon: "270 g" },
+      { nb: 10, porc: "1200 g", tomate: "800 g", epinards: "500 g", navet: "400 g", citron: "200 g", oignon: "300 g" },
+      { nb: 11, porc: "1320 g", tomate: "880 g", epinards: "550 g", navet: "440 g", citron: "220 g", oignon: "330 g" },
+      { nb: 12, porc: "1440 g", tomate: "960 g", epinards: "600 g", navet: "480 g", citron: "240 g", oignon: "360 g" },
+      { nb: 13, porc: "1560 g", tomate: "1040 g", epinards: "650 g", navet: "520 g", citron: "260 g", oignon: "390 g" },
+      { nb: 14, porc: "1680 g", tomate: "1120 g", epinards: "700 g", navet: "560 g", citron: "280 g", oignon: "420 g" },
+      { nb: 15, porc: "1800 g", tomate: "1200 g", epinards: "750 g", navet: "600 g", citron: "300 g", oignon: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Bouillon", detail: "Cuire le porc en bouillon avec l'oignon.", badge: null },
+      { icone: "🍋", titre: "Acidité", detail: "Ajouter tomate et jus de citron.", badge: null },
+      { icone: "🥬", titre: "Légumes", detail: "Ajouter navet et épinards, cuire 10 min.", badge: null }
+    ]
+  },
+  sopanegra: {
+    nom: "Sopa Negra",
+    cat: "soupes", pays: "costarica",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Soupe costaricaine de haricots noirs au poivron et coriandre, surmontée d'un œuf poché. Nourrissante et parfumée.",
+    tableauSopanegra: [
+      { nb: 1, haricotsrouges: "100 g", oeuf: "50 g", oignon: "40 g", poivron: "40 g", ail: "4 g", coriandre: "5 g" },
+      { nb: 2, haricotsrouges: "200 g", oeuf: "100 g", oignon: "80 g", poivron: "80 g", ail: "8 g", coriandre: "10 g" },
+      { nb: 3, haricotsrouges: "300 g", oeuf: "150 g", oignon: "120 g", poivron: "120 g", ail: "12 g", coriandre: "15 g" },
+      { nb: 4, haricotsrouges: "400 g", oeuf: "200 g", oignon: "160 g", poivron: "160 g", ail: "16 g", coriandre: "20 g" },
+      { nb: 5, haricotsrouges: "500 g", oeuf: "250 g", oignon: "200 g", poivron: "200 g", ail: "20 g", coriandre: "25 g" },
+      { nb: 6, haricotsrouges: "600 g", oeuf: "300 g", oignon: "240 g", poivron: "240 g", ail: "24 g", coriandre: "30 g" },
+      { nb: 7, haricotsrouges: "700 g", oeuf: "350 g", oignon: "280 g", poivron: "280 g", ail: "28 g", coriandre: "35 g" },
+      { nb: 8, haricotsrouges: "800 g", oeuf: "400 g", oignon: "320 g", poivron: "320 g", ail: "32 g", coriandre: "40 g" },
+      { nb: 9, haricotsrouges: "900 g", oeuf: "450 g", oignon: "360 g", poivron: "360 g", ail: "36 g", coriandre: "45 g" },
+      { nb: 10, haricotsrouges: "1000 g", oeuf: "500 g", oignon: "400 g", poivron: "400 g", ail: "40 g", coriandre: "50 g" },
+      { nb: 11, haricotsrouges: "1100 g", oeuf: "550 g", oignon: "440 g", poivron: "440 g", ail: "44 g", coriandre: "55 g" },
+      { nb: 12, haricotsrouges: "1200 g", oeuf: "600 g", oignon: "480 g", poivron: "480 g", ail: "48 g", coriandre: "60 g" },
+      { nb: 13, haricotsrouges: "1300 g", oeuf: "650 g", oignon: "520 g", poivron: "520 g", ail: "52 g", coriandre: "65 g" },
+      { nb: 14, haricotsrouges: "1400 g", oeuf: "700 g", oignon: "560 g", poivron: "560 g", ail: "56 g", coriandre: "70 g" },
+      { nb: 15, haricotsrouges: "1500 g", oeuf: "750 g", oignon: "600 g", poivron: "600 g", ail: "60 g", coriandre: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Base", detail: "Mijoter les haricots avec oignon, poivron et ail.", badge: null },
+      { icone: "🥚", titre: "Œuf", detail: "Pocher un œuf dans la soupe.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de coriandre.", badge: null }
+    ]
+  },
+  kapustnica: {
+    nom: "Kapustnica",
+    cat: "soupes", pays: "slovaquie",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Soupe slovaque de choucroute, saucisse fumée et pomme de terre, relevée au paprika. Le réconfort de Noël en Slovaquie.",
+    tableauKapustnica: [
+      { nb: 1, chou: "100 g", saucisses: "80 g", pommedeterre: "60 g", oignon: "40 g", paprika: "3 g", creme: "20 ml" },
+      { nb: 2, chou: "200 g", saucisses: "160 g", pommedeterre: "120 g", oignon: "80 g", paprika: "6 g", creme: "40 ml" },
+      { nb: 3, chou: "300 g", saucisses: "240 g", pommedeterre: "180 g", oignon: "120 g", paprika: "9 g", creme: "60 ml" },
+      { nb: 4, chou: "400 g", saucisses: "320 g", pommedeterre: "240 g", oignon: "160 g", paprika: "12 g", creme: "80 ml" },
+      { nb: 5, chou: "500 g", saucisses: "400 g", pommedeterre: "300 g", oignon: "200 g", paprika: "15 g", creme: "100 ml" },
+      { nb: 6, chou: "600 g", saucisses: "480 g", pommedeterre: "360 g", oignon: "240 g", paprika: "18 g", creme: "120 ml" },
+      { nb: 7, chou: "700 g", saucisses: "560 g", pommedeterre: "420 g", oignon: "280 g", paprika: "21 g", creme: "140 ml" },
+      { nb: 8, chou: "800 g", saucisses: "640 g", pommedeterre: "480 g", oignon: "320 g", paprika: "24 g", creme: "160 ml" },
+      { nb: 9, chou: "900 g", saucisses: "720 g", pommedeterre: "540 g", oignon: "360 g", paprika: "27 g", creme: "180 ml" },
+      { nb: 10, chou: "1000 g", saucisses: "800 g", pommedeterre: "600 g", oignon: "400 g", paprika: "30 g", creme: "200 ml" },
+      { nb: 11, chou: "1100 g", saucisses: "880 g", pommedeterre: "660 g", oignon: "440 g", paprika: "33 g", creme: "220 ml" },
+      { nb: 12, chou: "1200 g", saucisses: "960 g", pommedeterre: "720 g", oignon: "480 g", paprika: "36 g", creme: "240 ml" },
+      { nb: 13, chou: "1300 g", saucisses: "1040 g", pommedeterre: "780 g", oignon: "520 g", paprika: "39 g", creme: "260 ml" },
+      { nb: 14, chou: "1400 g", saucisses: "1120 g", pommedeterre: "840 g", oignon: "560 g", paprika: "42 g", creme: "280 ml" },
+      { nb: 15, chou: "1500 g", saucisses: "1200 g", pommedeterre: "900 g", oignon: "600 g", paprika: "45 g", creme: "300 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Base", detail: "Mijoter le chou avec l'oignon et le paprika.", badge: null },
+      { icone: "🌭", titre: "Saucisse", detail: "Ajouter saucisse fumée et pomme de terre.", badge: null },
+      { icone: "🥄", titre: "Finir", detail: "Mijoter 35 min, ajouter une touche de crème.", badge: null }
+    ]
+  }
 });

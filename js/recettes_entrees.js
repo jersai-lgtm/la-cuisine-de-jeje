@@ -2756,5 +2756,104 @@ oeufmayo: {
       { icone: "🥚", titre: "Mélange", detail: "Battre les œufs, incorporer les herbes et l'oignon.", badge: null },
       { icone: "🍳", titre: "Cuire", detail: "Cuire à la poêle à couvert 12 min à feu doux.", badge: null }
     ]
+  },
+  bourekas: {
+    nom: "Bourekas",
+    cat: "entrees", pays: "israel",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥟",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Feuilletés israéliens dorés, farcis à la feta et aux épinards. Croustillants et fondants, parfaits à l'apéro ou en entrée.",
+    tableauBourekas: [
+      { nb: 1, patefeuilletee: "60 g", feta: "50 g", epinards: "40 g", oeuf: "20 g" },
+      { nb: 2, patefeuilletee: "120 g", feta: "100 g", epinards: "80 g", oeuf: "40 g" },
+      { nb: 3, patefeuilletee: "180 g", feta: "150 g", epinards: "120 g", oeuf: "60 g" },
+      { nb: 4, patefeuilletee: "240 g", feta: "200 g", epinards: "160 g", oeuf: "80 g" },
+      { nb: 5, patefeuilletee: "300 g", feta: "250 g", epinards: "200 g", oeuf: "100 g" },
+      { nb: 6, patefeuilletee: "360 g", feta: "300 g", epinards: "240 g", oeuf: "120 g" },
+      { nb: 7, patefeuilletee: "420 g", feta: "350 g", epinards: "280 g", oeuf: "140 g" },
+      { nb: 8, patefeuilletee: "480 g", feta: "400 g", epinards: "320 g", oeuf: "160 g" },
+      { nb: 9, patefeuilletee: "540 g", feta: "450 g", epinards: "360 g", oeuf: "180 g" },
+      { nb: 10, patefeuilletee: "600 g", feta: "500 g", epinards: "400 g", oeuf: "200 g" },
+      { nb: 11, patefeuilletee: "660 g", feta: "550 g", epinards: "440 g", oeuf: "220 g" },
+      { nb: 12, patefeuilletee: "720 g", feta: "600 g", epinards: "480 g", oeuf: "240 g" },
+      { nb: 13, patefeuilletee: "780 g", feta: "650 g", epinards: "520 g", oeuf: "260 g" },
+      { nb: 14, patefeuilletee: "840 g", feta: "700 g", epinards: "560 g", oeuf: "280 g" },
+      { nb: 15, patefeuilletee: "900 g", feta: "750 g", epinards: "600 g", oeuf: "300 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Farce", detail: "Mélanger feta émiettée et épinards.", badge: null },
+      { icone: "🥟", titre: "Garnir", detail: "Découper la pâte, farcir et plier en triangles.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Dorer à l'œuf, cuire 20 min à 200°C.", badge: null }
+    ]
+  },
+  strukli: {
+    nom: "Štrukli",
+    cat: "entrees", pays: "croatie",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧀",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Spécialité croate : pâte fine garnie de fromage frais, roulée et cuite à la crème. Fondant et réconfortant.",
+    tableauStrukli: [
+      { nb: 1, farine: "60 g", cottage: "80 g", oeuf: "20 g", creme: "30 ml" },
+      { nb: 2, farine: "120 g", cottage: "160 g", oeuf: "40 g", creme: "60 ml" },
+      { nb: 3, farine: "180 g", cottage: "240 g", oeuf: "60 g", creme: "90 ml" },
+      { nb: 4, farine: "240 g", cottage: "320 g", oeuf: "80 g", creme: "120 ml" },
+      { nb: 5, farine: "300 g", cottage: "400 g", oeuf: "100 g", creme: "150 ml" },
+      { nb: 6, farine: "360 g", cottage: "480 g", oeuf: "120 g", creme: "180 ml" },
+      { nb: 7, farine: "420 g", cottage: "560 g", oeuf: "140 g", creme: "210 ml" },
+      { nb: 8, farine: "480 g", cottage: "640 g", oeuf: "160 g", creme: "240 ml" },
+      { nb: 9, farine: "540 g", cottage: "720 g", oeuf: "180 g", creme: "270 ml" },
+      { nb: 10, farine: "600 g", cottage: "800 g", oeuf: "200 g", creme: "300 ml" },
+      { nb: 11, farine: "660 g", cottage: "880 g", oeuf: "220 g", creme: "330 ml" },
+      { nb: 12, farine: "720 g", cottage: "960 g", oeuf: "240 g", creme: "360 ml" },
+      { nb: 13, farine: "780 g", cottage: "1040 g", oeuf: "260 g", creme: "390 ml" },
+      { nb: 14, farine: "840 g", cottage: "1120 g", oeuf: "280 g", creme: "420 ml" },
+      { nb: 15, farine: "900 g", cottage: "1200 g", oeuf: "300 g", creme: "450 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Pâte", detail: "Étaler une pâte fine.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Garnir de fromage frais et œuf, rouler.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Napper de crème, cuire 25 min au four.", badge: null }
+    ]
+  },
+  gibanica: {
+    nom: "Gibanica",
+    cat: "entrees", pays: "serbie",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧀",
+    dateAjout: "2026-06-26T12:00:00",
+    description: "Tourte serbe feuilletée au fromage et au fromage frais, dorée et croustillante. Le plat de fête des Balkans.",
+    tableauGibanica: [
+      { nb: 1, patefeuilletee: "60 g", feta: "70 g", fromageblanc: "40 g", oeuf: "20 g" },
+      { nb: 2, patefeuilletee: "120 g", feta: "140 g", fromageblanc: "80 g", oeuf: "40 g" },
+      { nb: 3, patefeuilletee: "180 g", feta: "210 g", fromageblanc: "120 g", oeuf: "60 g" },
+      { nb: 4, patefeuilletee: "240 g", feta: "280 g", fromageblanc: "160 g", oeuf: "80 g" },
+      { nb: 5, patefeuilletee: "300 g", feta: "350 g", fromageblanc: "200 g", oeuf: "100 g" },
+      { nb: 6, patefeuilletee: "360 g", feta: "420 g", fromageblanc: "240 g", oeuf: "120 g" },
+      { nb: 7, patefeuilletee: "420 g", feta: "490 g", fromageblanc: "280 g", oeuf: "140 g" },
+      { nb: 8, patefeuilletee: "480 g", feta: "560 g", fromageblanc: "320 g", oeuf: "160 g" },
+      { nb: 9, patefeuilletee: "540 g", feta: "630 g", fromageblanc: "360 g", oeuf: "180 g" },
+      { nb: 10, patefeuilletee: "600 g", feta: "700 g", fromageblanc: "400 g", oeuf: "200 g" },
+      { nb: 11, patefeuilletee: "660 g", feta: "770 g", fromageblanc: "440 g", oeuf: "220 g" },
+      { nb: 12, patefeuilletee: "720 g", feta: "840 g", fromageblanc: "480 g", oeuf: "240 g" },
+      { nb: 13, patefeuilletee: "780 g", feta: "910 g", fromageblanc: "520 g", oeuf: "260 g" },
+      { nb: 14, patefeuilletee: "840 g", feta: "980 g", fromageblanc: "560 g", oeuf: "280 g" },
+      { nb: 15, patefeuilletee: "900 g", feta: "1050 g", fromageblanc: "600 g", oeuf: "300 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Appareil", detail: "Mélanger feta, fromage blanc et œufs.", badge: null },
+      { icone: "🥧", titre: "Monter", detail: "Alterner feuilles de pâte et appareil.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Cuire 35 min jusqu'à doré.", badge: null }
+    ]
   }
 });
