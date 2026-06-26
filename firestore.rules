@@ -40,8 +40,21 @@ service cloud.firestore {
     // ⭐ Avis sur l'appli (1 doc par user, id = uid) : lecture publique
     // (moyenne affichée à tous), écriture de son seul avis.
     match /avis/{userId} {
-      allow read:  if true;
-      allow write: if estProprietaire(userId);
+      allow read:           if true;
+      // Écriture de son seul avis, champs bornés côté serveur (collection lue
+      // publiquement → on borne note + commentaire pour éviter tout abus/gonflement).
+      // Pas de hasOnly : d'anciens docs peuvent porter des champs résiduels (email)
+      // qu'un merge réécrirait — on valide les champs connus sans rejeter les autres.
+      allow create, update: if estProprietaire(userId)
+                            && request.resource.data.uid == userId
+                            && request.resource.data.etoiles is number
+                            && request.resource.data.etoiles >= 1
+                            && request.resource.data.etoiles <= 5
+                            && request.resource.data.commentaire is string
+                            && request.resource.data.commentaire.size() <= 500
+                            && request.resource.data.prenom is string
+                            && request.resource.data.prenom.size() <= 80;
+      allow delete:         if estProprietaire(userId);
     }
 
     // ⭐ Notes étoiles par recette (id = "{uid}__{recetteKey}") :
@@ -53,23 +66,27 @@ service cloud.firestore {
       allow delete:         if estProprietaire(resource.data.uid);
     }
 
-    // 🟢 Présence (compteur de visiteurs en ligne).
-    // ⚠️ Vestige : le code v1.6.7 gère la présence via utilisateurs/{uid}.lastSeen
-    //    et n'écrit PAS ici. Conservé tel que déployé (inoffensif). Candidat à la
-    //    suppression si plus aucune version ne l'utilise. Écriture volontairement
-    //    ouverte (visiteurs anonymes) mais bornée aux 4 champs attendus.
-    match /presence/{visitorId} {
-      allow create, update: if request.resource.data.keys().hasOnly(['lastSeen','connecte','uid','maj'])
-                            && request.resource.data.lastSeen is timestamp;
-      allow read, delete:   if estAdmin();
-    }
+    // 🟢 Présence : SUPPRIMÉE (v1.6.7+). La présence passe désormais par
+    //    utilisateurs/{uid}.lastSeen ; la collection `presence` (écriture anonyme)
+    //    n'était plus utilisée → retirée pour éliminer la surface d'écriture ouverte.
+    //    Tout accès à /presence tombe maintenant dans le refus par défaut (bas du fichier).
 
     // 🌍 Propositions de recettes (file de modération).
     // Création : connecté, en s'attribuant comme auteur. Lecture/MàJ/Suppression :
     // l'auteur ou l'admin.
     match /recettesProposees/{docId} {
+      // Création : connecté, en s'attribuant comme auteur, forcément en file
+      // d'attente, avec prénom + nom bornés. Le corps de la recette (ingrédients,
+      // étapes…) n'est pas contraint ici : il est assaini au rendu côté client et
+      // ne devient public qu'après validation admin (→ recettesCommunaute).
       allow create: if estConnecte()
-                    && request.resource.data.uid == request.auth.uid;
+                    && request.resource.data.uid == request.auth.uid
+                    && request.resource.data.statut == 'en_attente'
+                    && request.resource.data.nom is string
+                    && request.resource.data.nom.size() >= 1
+                    && request.resource.data.nom.size() <= 120
+                    && request.resource.data.prenom is string
+                    && request.resource.data.prenom.size() <= 80;
       allow read:   if estAdmin() || estProprietaire(resource.data.uid);
       allow update: if estAdmin() || estProprietaire(resource.data.uid);
       allow delete: if estAdmin() || estProprietaire(resource.data.uid);

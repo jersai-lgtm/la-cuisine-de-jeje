@@ -106,15 +106,19 @@ joint son jeton. ➡️ **À déployer** : voir `worker/README.md`
    prénom (et `utilisateurs` est lisible par l'admin). L'email n'est plus écrit
    dans `avis` (minimisation). Pour aller plus loin : ne pas stocker le prénom
    dans les notes publiques, ou exposer une **agrégation** (moyenne précalculée)
-   plutôt que la collection brute.
-2. **Validation de contenu côté serveur** — `astuces`/`photos` bornent déjà
-   leurs champs (texte 1..500, `recetteKey`/`url` typés). À répliquer sur `avis`
-   (`commentaire`) et `recettesProposees` pour la cohérence
-   (`request.resource.data.commentaire is string && ...size() <= 500`).
-3. **App Check** — activer Firebase App Check (reCAPTCHA) pour limiter l'usage
-   de la base/Storage aux instances légitimes de l'app (en complément du jeton
-   utilisateur côté proxy).
-4. **Collection `presence`** — écriture ouverte aux visiteurs anonymes (4 champs
-   bornés). Vestige non utilisé par le code v1.6.7 (la présence passe par
-   `utilisateurs/{uid}.lastSeen`). À supprimer des règles si plus aucune version
-   ne s'en sert.
+   plutôt que la collection brute. *(Toujours ouvert — choix de conception.)*
+2. ✅ **Validation de contenu côté serveur — FAIT.** `avis` borne désormais
+   `etoiles` (number 1..5), `commentaire` (string ≤ 500) et `prenom` (≤ 80) ;
+   `recettesProposees` force `statut: "en_attente"` et borne `nom` (1..120) +
+   `prenom` (≤ 80). (Pas de `hasOnly` sur `avis` : d'anciens docs peuvent porter
+   un champ `email` résiduel qu'un merge réécrirait.) ➡️ **redéployer les règles.**
+3. 🟡 **App Check — CÂBLÉ, à activer.** Le SDK `firebase-app-check-compat.js`
+   est chargé (`index.html`) et l'activation est prête dans `auth.js`, mais
+   **neutralisée tant que `RECAPTCHA_V3_SITE_KEY` est vide** (aucun impact).
+   Pour finir : (1) Console Firebase → App Check → enregistrer l'app web en
+   reCAPTCHA v3 ; (2) coller la clé de site dans `auth.js` ; (3) vérifier que
+   l'app marche ; (4) activer l'« enforcement » en console.
+4. ✅ **Collection `presence` — SUPPRIMÉE des règles.** Le bloc (écriture
+   anonyme) a été retiré ; tout accès à `/presence` tombe dans le refus par
+   défaut. La présence passe par `utilisateurs/{uid}.lastSeen`. ➡️ **redéployer
+   les règles.**

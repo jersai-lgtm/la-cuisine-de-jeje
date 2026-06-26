@@ -14,6 +14,26 @@ const firebaseConfig = {
 
 // Init Firebase
 if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+
+// ==============================
+// 🛡️ APP CHECK (reCAPTCHA v3) — voir SECURITY.md #3
+// ------------------------------
+// Garantit que seules les instances légitimes de l'app peuvent appeler Firebase
+// (Firestore/Storage), même si la clé publique est connue. Inactif tant que la
+// clé ci-dessous est vide → AUCUN risque de casse avant que tout soit prêt.
+//
+// Pour l'activer :
+//   1. Console Firebase → App Check → enregistre l'app web avec « reCAPTCHA v3 ».
+//   2. Récupère la CLÉ DE SITE reCAPTCHA v3 et colle-la ci-dessous.
+//   3. Vérifie que l'app marche (connexion, lecture, upload) AVANT d'activer
+//      l'« enforcement » dans la console (sinon tout est bloqué).
+// ==============================
+const RECAPTCHA_V3_SITE_KEY = ""; // ← colle ta clé de site reCAPTCHA v3 ici
+if (RECAPTCHA_V3_SITE_KEY && typeof firebase !== "undefined" && firebase.appCheck) {
+  try { firebase.appCheck().activate(RECAPTCHA_V3_SITE_KEY, /* autoRefresh */ true); }
+  catch (e) { console.warn("App Check : activation échouée —", e); }
+}
+
 const _auth = firebase.auth();
 const _db   = firebase.firestore();
 
