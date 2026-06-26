@@ -68,11 +68,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Préparer la pâte", detail: "Utiliser la recette de pâte à pizza de l'appli. Sortir les pâtons 1h avant. Étaler à la main.", badge: null },
-      { icone: "🍅", titre: "Sauce tomate", detail: "Étaler la sauce tomate assaisonnée en spirale sur la pâte.", badge: null },
-      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella déchirée ou râpée.", badge: null },
-      { icone: "🍖", titre: "Garnitures", detail: "Disposer le jambon en morceaux et les champignons émincés (crus ou poêlés).", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Four préchauffé au maximum sur pierre ou plaque. Cuire jusqu'à bords dorés et fromage bouillonnant.", badge: "⏱ 7-10 min à 280°C" }
+      { icone: "🍕", titre: "Préparer pâte", detail: "Sortir les pâtons de pâte à pizza maison 1 h avant, les laisser revenir à température puis étaler chaque pâton à la main sur un plan fariné en gardant un bord épais.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250°C minimum) avec la pierre ou la plaque à l'intérieur pendant au moins 30 min pour une base bien croustillante.", badge: null },
+      { icone: "🍅", titre: "Saucer", detail: "Étaler la sauce tomate assaisonnée en spirale sur la pâte en laissant les bords nus, sans surcharger pour ne pas détremper la pâte.", badge: null },
+      { icone: "🧀", titre: "Garnir fromage", detail: "Répartir la mozzarella déchirée ou râpée sur toute la surface, complétée d'un peu de fromage râpé pour le gratiné.", badge: null },
+      { icone: "🍖", titre: "Garnir reine", detail: "Disposer le jambon en morceaux et les champignons émincés crus ou poêlés de façon régulière sur la pizza.", badge: null },
+      { icone: "⏲️", titre: "Cuire", detail: "Enfourner sur la pierre brûlante et cuire 6 à 10 min jusqu'à ce que les bords soient dorés et le fromage bouillonnant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Sortir la pizza, la couper à la roulette et la servir aussitôt bien chaude pour profiter de la pâte croustillante.", badge: null }
     ]
   },
   pizza4fromages: {
@@ -103,11 +105,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Préchauffer le four à FOND", detail: "Préchauffer le four à 250°C MINIMUM. ASTUCE PRO : utiliser une pierre à pizza ou plaque en fonte préchauffée 30 min — c'est ce qui fait une pâte croustillante comme en pizzeria.", badge: "⏱ 30 min" },
-      { icone: "🥙", titre: "Pâte et base crème", detail: "Étaler la pâte. Napper d'une fine couche de crème fraîche à la place de la tomate.", badge: null },
-      { icone: "🧀", titre: "Quatre fromages", detail: "Disposer par zones mozzarella, gorgonzola en morceaux, ricotta en petites cuillerées et parmesan râpé. Un généreux filet d'huile d'olive.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Four à maximum. Cuire jusqu'à ce que les fromages soient fondus et dorés. Finir avec un filet de miel si souhaité.", badge: "⏱ 7-10 min à 280°C" },
-      { icone: "🌿", titre: "Service italien", detail: "Sortir du four, parsemer de basilic frais, filet d'huile d'olive extra-vierge. Couper en parts à la roulette, servir BRÛLANT. Buon appetito !", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 250°C minimum avec la pierre à pizza ou une plaque en fonte à l'intérieur pendant 30 min pour une pâte croustillante comme en pizzeria.", badge: null },
+      { icone: "🍕", titre: "Étaler", detail: "Sortir le pâton 1 h avant, le laisser détendre puis l'étaler à la main sur un plan fariné en conservant un bord généreux.", badge: null },
+      { icone: "🥛", titre: "Base crème", detail: "Napper la pâte d'une fine couche de crème fraîche à la place de la tomate, en laissant les bords nus, et ajouter quelques dés de tomate si désiré.", badge: null },
+      { icone: "🧀", titre: "Quatre fromages", detail: "Disposer par zones la mozzarella, le gorgonzola en morceaux, la ricotta en petites cuillerées et le parmesan râpé, puis arroser d'un filet d'huile d'olive.", badge: null },
+      { icone: "⏲️", titre: "Cuire", detail: "Enfourner sur la pierre brûlante et cuire 6 à 8 min jusqu'à ce que les fromages soient fondus, dorés et que les bords soient gonflés.", badge: null },
+      { icone: "🍯", titre: "Finir miel", detail: "À la sortie du four, arroser d'un fin filet de miel pour le contraste sucré-salé et d'un trait d'huile d'olive extra-vierge.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Couper la pizza à la roulette et la servir brûlante pour savourer le fondant des quatre fromages.", badge: null }
     ]
   },
   pizzadiavola: {
@@ -138,10 +142,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Pâte et sauce", detail: "Étaler la pâte. Napper de sauce tomate assaisonnée à l'ail et à l'origan.", badge: null },
-      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella déchirée.", badge: null },
-      { icone: "🌶️", titre: "Garnitures piquantes", detail: "Disposer les tranches de salami épicé, des petites cuillerées de nduja (saucisse calabraise) et les rondelles de piment frais.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Four à maximum. Finir avec un filet d'huile d'olive pimentée à la sortie du four.", badge: "⏱ 7-10 min à 280°C" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-280°C) avec la pierre ou la plaque dedans pendant au moins 30 minutes pour une base bien croustillante.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Mélanger la sauce tomate avec l'ail écrasé, un filet d'huile d'olive, du sel et de l'origan, puis réserver.", badge: null },
+      { icone: "🫓", titre: "Étaler", detail: "Étaler la pâte levée 48h en un disque fin à la main et la napper de sauce tomate en laissant 2 cm de bords libres.", badge: null },
+      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella déchirée en morceaux pour qu'elle fonde uniformément sans détremper la pâte.", badge: null },
+      { icone: "🌶️", titre: "Garnir", detail: "Disposer les tranches de salami épicé, de petites cuillerées de nduja calabraise et les rondelles de piment frais sur toute la surface.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner 7 à 8 minutes au maximum jusqu'à ce que les bords gonflent et dorent et que le salami devienne croustillant.", badge: null },
+      { icone: "🫒", titre: "Servir", detail: "À la sortie du four, arroser d'un filet d'huile d'olive pimentée et servir aussitôt bien chaude.", badge: null }
     ]
   },
   pizzasaumonepinards: {
@@ -172,10 +179,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Base crème", detail: "Étaler la pâte. Napper de crème fraîche assaisonnée sel, poivre et aneth.", badge: null },
-      { icone: "🧀", titre: "Mozzarella + épinards", detail: "Répartir la mozzarella. Parsemer les épinards frais (ils vont cuire sur la pizza).", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire la pizza sans le saumon.", badge: "⏱ 7-10 min à 280°C" },
-      { icone: "🐟", titre: "Saumon fumé à la sortie", detail: "Sortir la pizza, disposer le saumon fumé en tranches. Presser le citron. Quelques câpres et aneth frais. Le saumon fumé ne se cuit jamais !", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-280°C) avec la pierre dedans pendant 30 minutes pour saisir la pâte.", badge: null },
+      { icone: "🥛", titre: "Base crème", detail: "Assaisonner la crème fraîche épaisse de sel, poivre et un peu d'aneth, puis l'étaler sur la pâte fine en laissant les bords libres.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Répartir la mozzarella égouttée puis parsemer les épinards frais qui cuiront directement sur la pizza.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner 8 à 10 minutes sans le saumon, jusqu'à ce que les bords soient dorés et le fromage fondu.", badge: null },
+      { icone: "🐟", titre: "Saumon", detail: "Sortir la pizza et disposer aussitôt les tranches de saumon fumé qui ne doivent jamais cuire pour rester moelleuses.", badge: null },
+      { icone: "🍋", titre: "Citron", detail: "Presser quelques gouttes de jus de citron sur le saumon et ajouter de l'aneth frais ciselé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Donner un tour de moulin à poivre et servir immédiatement tant que la base est chaude et le saumon frais.", badge: null }
     ]
   },
   pizzavegetarienne: {
@@ -206,10 +216,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥒", titre: "Griller les légumes", detail: "Couper poivrons, courgette et aubergine en lamelles. Griller à la poêle ou au four avec huile d'olive. Saler. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 10 min" },
-      { icone: "🥙", titre: "Pâte et sauce", detail: "Étaler la pâte. Napper de sauce tomate et de pesto en alternance.", badge: null },
-      { icone: "🧀", titre: "Mozzarella et légumes", detail: "Répartir mozzarella puis les légumes grillés. Olives noires en option.", badge: null },
-      { icone: "🔥", titre: "Cuire et finir", detail: "Cuire au four à maximum. Finir avec roquette fraîche et copeaux de parmesan à la sortie.", badge: "⏱ 7-10 min à 280°C" }
+      { icone: "🔪", titre: "Découper", detail: "Couper le poivron, la courgette et l'aubergine en fines lamelles avec un couteau bien aiguisé pour des tranches régulières.", badge: null },
+      { icone: "🍳", titre: "Griller", detail: "Griller les légumes à la poêle ou au four avec un filet d'huile d'olive jusqu'à coloration, puis saler et réserver.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-280°C) avec la pierre pendant 30 minutes.", badge: null },
+      { icone: "🍅", titre: "Base", detail: "Étaler la pâte fine et napper en alternance de sauce tomate et de pesto pour un fond parfumé.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Répartir la mozzarella déchirée puis disposer harmonieusement les légumes grillés sur toute la surface.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner 8 à 10 minutes au maximum jusqu'à ce que les bords soient bien dorés et le fromage fondu.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "À la sortie du four, ajouter de la roquette fraîche, des copeaux de parmesan et un filet d'huile d'olive.", badge: null }
     ]
   },
   pizzaprosciuttoroquette: {
@@ -240,10 +253,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Pâte et base", detail: "Étaler la pâte. Napper de sauce tomate légère ou huile d'olive et ail.", badge: null },
-      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella. Filet d'huile d'olive. Enfourner. Chaleur tournante pour une cuisson uniforme.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire au four maximum jusqu'à bords dorés.", badge: "⏱ 7-10 min à 280°C" },
-      { icone: "🍖", titre: "Garnir après cuisson", detail: "Sortir du four, disposer immédiatement le prosciutto di Parma en rosace. Ajouter la roquette fraîche et copeaux de parmesan. Filet d'huile d'olive et poivre.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-280°C) avec la pierre dedans pendant 30 minutes pour une base croustillante.", badge: null },
+      { icone: "🍅", titre: "Base", detail: "Étaler la pâte fine et la napper d'une fine couche de sauce tomate ou d'huile d'olive parfumée à l'ail écrasé.", badge: null },
+      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella déchirée et arroser d'un filet d'huile d'olive avant d'enfourner.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner 8 à 10 minutes au maximum jusqu'à ce que les bords soient gonflés et bien dorés.", badge: null },
+      { icone: "🍖", titre: "Prosciutto", detail: "Sortir la pizza et disposer aussitôt les tranches de prosciutto di Parma en rosace pour qu'elles tiédissent légèrement.", badge: null },
+      { icone: "🌿", titre: "Roquette", detail: "Ajouter une généreuse poignée de roquette fraîche et des copeaux de parmesan sur le dessus.", badge: null },
+      { icone: "🫒", titre: "Servir", detail: "Terminer par un filet d'huile d'olive et un tour de moulin à poivre, puis servir immédiatement.", badge: null }
     ]
   },
   pizzatruffe: {
@@ -274,10 +290,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Base crème de truffe", detail: "Étaler la pâte. Napper généreusement de crème de truffe (tartare de truffe ou crème fraîche + truffe râpée).", badge: null },
-      { icone: "🍄", titre: "Champignons et mozza", detail: "Disposer les champignons émincés (cèpes ou champignons Paris) et la mozzarella.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" },
-      { icone: "🍄", titre: "Finition truffe", detail: "À la sortie du four, arroser d'huile de truffe et ajouter des copeaux de truffe fraîche ou séchée. Quelques feuilles de roquette. Servir immédiatement.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-280°C) avec la pierre dedans pendant 30 minutes.", badge: null },
+      { icone: "🔪", titre: "Champignons", detail: "Émincer finement les champignons de Paris ou les cèpes en lamelles régulières au couteau bien aiguisé.", badge: null },
+      { icone: "🍄", titre: "Base truffe", detail: "Étaler la pâte fine et la napper généreusement de crème de truffe ou de crème fraîche additionnée de truffe râpée.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Répartir la mozzarella déchirée puis disposer les lamelles de champignons sur toute la surface.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner 8 à 9 minutes au maximum jusqu'à ce que les bords dorent et que les champignons cuisent.", badge: null },
+      { icone: "💧", titre: "Huile truffe", detail: "À la sortie du four, arroser d'un filet d'huile de truffe pour libérer tout son arôme à froid.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Ajouter des copeaux de truffe fraîche et quelques feuilles de roquette, puis servir immédiatement.", badge: null }
     ]
   },
   pizzabiancoverdure: {
@@ -308,10 +327,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Base ricotta", detail: "Étaler la pâte. Mélanger la ricotta avec ail, sel, poivre et zeste de citron. Napper la pâte.", badge: null },
-      { icone: "🥒", titre: "Légumes", detail: "Couper la courgette en rubans fins (économe). Disposer courgette et asperges sur la pizza. Râper le parmesan. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" },
-      { icone: "🌿", titre: "Finir", detail: "Sortir du four, arroser d'huile d'olive et de quelques feuilles de basilic frais.", badge: null }
+      { icone: "🧀", titre: "Crème ricotta", detail: "Mélanger la ricotta avec l'ail écrasé, le sel, le poivre et le zeste de citron jusqu'à obtenir une crème lisse.", badge: null },
+      { icone: "🔪", titre: "Légumes", detail: "Tailler la courgette en fins rubans à l'économe et parer les asperges en gardant les pointes entières.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-280°C) avec la pierre dedans pendant 30 minutes.", badge: null },
+      { icone: "🫓", titre: "Garnir", detail: "Étaler la pâte fine, napper de la crème de ricotta puis disposer les rubans de courgette et les asperges.", badge: null },
+      { icone: "🧀", titre: "Parmesan", detail: "Râper le parmesan sur les légumes et arroser d'un filet d'huile d'olive avant cuisson.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner 8 à 10 minutes au maximum jusqu'à ce que les bords dorent et les légumes soient tendres.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "À la sortie, arroser d'huile d'olive et parsemer de quelques feuilles de basilic frais avant de servir.", badge: null }
     ]
   },
   pizzacalzone: {
@@ -342,11 +364,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Étaler la pâte", detail: "Étaler chaque pâton en disque. La moitié seulement sera garnie.", badge: null },
-      { icone: "🧀", titre: "Farcir", detail: "Sur une moitié : étaler sauce tomate, ricotta, mozza, jambon et une pincée d'origan. Laisser 2cm de bord libre.", badge: null },
-      { icone: "🌙", titre: "Plier et souder", detail: "Rabattre l'autre moitié. Souder les bords en appuyant et en roulant. Percer 2-3 trous sur le dessus.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Badigeonner d'huile d'olive. Cuire sur pierre chaude.", badge: "⏱ 10-12 min à 250°C" },
-      { icone: "🍅", titre: "Servir", detail: "Servir avec sauce tomate chaude à part pour tremper.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-280°C) avec la pierre dedans pendant 30 minutes.", badge: null },
+      { icone: "🫓", titre: "Étaler", detail: "Étaler chaque pâton en un disque fin et régulier, dont seule une moitié sera garnie.", badge: null },
+      { icone: "🧀", titre: "Farcir", detail: "Sur une moitié, étaler la sauce tomate puis la ricotta, la mozzarella, le jambon et une pincée d'origan en gardant 2 cm de bord libre.", badge: null },
+      { icone: "🤏", titre: "Souder", detail: "Rabattre l'autre moitié sur la garniture et souder les bords en les pinçant et les roulant pour bien fermer le chausson.", badge: null },
+      { icone: "🍴", titre: "Aérer", detail: "Percer 2 ou 3 petits trous sur le dessus et badigeonner d'huile d'olive pour une croûte dorée.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner 12 à 15 minutes sur la pierre chaude jusqu'à ce que le calzone soit bien gonflé et doré.", badge: null },
+      { icone: "🍅", titre: "Servir", detail: "Servir aussitôt avec un bol de sauce tomate chaude à part pour y tremper chaque bouchée.", badge: null }
     ]
   },
   pizzapoivrons: {
@@ -377,10 +401,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫑", titre: "Rôtir les poivrons", detail: "Couper les poivrons en lamelles. Rôtir à la poêle ou au four avec huile d'olive jusqu'à tendreté et légère coloration. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 15 min" },
-      { icone: "🥙", titre: "Sauce tomate", detail: "Étaler la sauce tomate sur la pâte.", badge: null },
-      { icone: "🧀", titre: "Garnir", detail: "Répartir la mozzarella, les poivrons rôtis, les filets d'anchois, les olives noires et câpres.", badge: null },
-      { icone: "🔥", titre: "Cuire et finir", detail: "Cuire au four maximum. Finir avec origan et filet d'huile d'olive.", badge: "⏱ 7-10 min à 280°C" }
+      { icone: "🔪", titre: "Découper", detail: "Couper les poivrons en fines lamelles régulières avec un couteau bien aiguisé.", badge: null },
+      { icone: "🍳", titre: "Rôtir", detail: "Rôtir les lamelles de poivron à la poêle ou au four avec un filet d'huile d'olive jusqu'à tendreté et légère coloration.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-280°C) avec la pierre dedans pendant 30 minutes.", badge: null },
+      { icone: "🍅", titre: "Base", detail: "Étaler la pâte fine et la napper de sauce tomate en laissant 2 cm de bords libres.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Répartir la mozzarella, les poivrons rôtis, les filets d'anchois, les olives noires et quelques câpres.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner 8 à 10 minutes au maximum jusqu'à ce que les bords soient dorés et le fromage fondu.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "À la sortie du four, parsemer d'origan et arroser d'un filet d'huile d'olive avant de servir.", badge: null }
     ]
   },
   pizzapatate: {
@@ -411,11 +438,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Tranches ultra-fines", detail: "Éplucher les pommes de terre et les couper en tranches de 1-2 mm à la mandoline. Les faire tremper dans l'eau froide 10 min pour ôter l'amidon. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥙", titre: "Base ricotta", detail: "Étaler la pâte. Napper de ricotta assaisonnée d'ail, sel, poivre.", badge: null },
-      { icone: "🥔", titre: "Disposer les pommes de terre", detail: "Égoutter et sécher les tranches. Les disposer en rosace sur la ricotta. Arroser d'huile d'olive et saler.", badge: null },
-      { icone: "🌿", titre: "Romarin et pecorino", detail: "Parsemer de feuilles de romarin et de pecorino râpé.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Four au maximum — les pommes de terre cuisent très vite à haute température.", badge: "⏱ 8-12 min à 280°C" }
+      { icone: "🔪", titre: "Trancher", detail: "Éplucher les pommes de terre et les couper en tranches de 1 à 2 mm à la mandoline pour une cuisson uniforme.", badge: null },
+      { icone: "💧", titre: "Dégorger", detail: "Faire tremper les tranches dans l'eau froide 10 minutes pour ôter l'amidon, puis les égoutter et bien les sécher.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-280°C) avec la pierre dedans pendant 30 minutes.", badge: null },
+      { icone: "🧀", titre: "Base ricotta", detail: "Étaler la pâte fine et la napper de ricotta assaisonnée d'ail écrasé, de sel et de poivre.", badge: null },
+      { icone: "🥔", titre: "Disposer", detail: "Disposer les tranches de pomme de terre en rosace sur la ricotta, arroser d'huile d'olive et saler légèrement.", badge: null },
+      { icone: "🌿", titre: "Aromates", detail: "Parsemer de feuilles de romarin et de pecorino râpé pour un parfum boisé et salé.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner 9 à 11 minutes au maximum jusqu'à ce que les pommes de terre soient dorées et croustillantes sur les bords, puis servir aussitôt.", badge: null }
     ]
   },
   pizzabresilienne: {
@@ -446,10 +475,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Sauce et fromage", detail: "Étaler la sauce tomate et la mozzarella râpée.", badge: null },
-      { icone: "🌴", titre: "Garnitures brésiliennes", detail: "Disposer les cœurs de palmier en rondelles, le maïs et les olives vertes.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" },
-      { icone: "🌿", titre: "Finir", detail: "Parsemer d'origan frais. Au Brésil on ajoute souvent de la catupiry (fromage crémeux) — remplaçable par crème fraîche épaisse.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-280°C) avec la pierre dedans pendant 30 minutes.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Couper les cœurs de palmier en rondelles et égoutter le maïs ainsi que les olives vertes.", badge: null },
+      { icone: "🍅", titre: "Base", detail: "Étaler la pâte fine et la napper de sauce tomate en laissant 2 cm de bords libres.", badge: null },
+      { icone: "🧀", titre: "Fromage", detail: "Répartir la mozzarella râpée uniformément sur la sauce tomate.", badge: null },
+      { icone: "🌽", titre: "Garnir", detail: "Disposer les rondelles de cœur de palmier, le maïs et les olives vertes sur toute la surface.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner 8 à 10 minutes au maximum jusqu'à ce que les bords soient dorés et le fromage fondu.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "À la sortie, parsemer d'origan et ajouter quelques touches de fromage crémeux type catupiry, puis servir aussitôt.", badge: null }
     ]
   },
   pizzachorizo: {
@@ -480,11 +512,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫑", titre: "Rôtir le poivron", detail: "Couper le poivron en lanières et le faire rôtir à la poêle avec huile d'olive 8 min. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 8 min" },
-      { icone: "🥙", titre: "Sauce tomate", detail: "Étaler la sauce tomate assaisonnée à l'ail et à l'origan sur la pâte.", badge: null },
-      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella déchirée.", badge: null },
-      { icone: "🌭", titre: "Chorizo et poivrons", detail: "Disposer les rondelles de chorizo et les poivrons rôtis. Le chorizo va croustiller au four.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Four au maximum. La graisse du chorizo va parfumer toute la pizza.", badge: "⏱ 7-10 min à 280°C" }
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-275°C) avec la pierre ou la plaque à l'intérieur pendant au moins 30 min.", badge: null },
+      { icone: "🫑", titre: "Rôtir poivron", detail: "Émincer le poivron en fines lanières et le faire rôtir à la poêle dans un filet d'huile d'olive 8 min jusqu'à ce qu'il fonde et colore.", badge: null },
+      { icone: "👐", titre: "Étaler", detail: "Étirer le pâton à la main sans rouleau pour préserver les bulles, jusqu'à former un disque fin avec un bord légèrement épais.", badge: null },
+      { icone: "🍅", titre: "Saucer", detail: "Écraser les tomates, les assaisonner de sel, d'ail émincé et d'origan, puis étaler cette sauce en couche fine sur la pâte.", badge: null },
+      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella déchirée et bien égouttée sur toute la surface, sans surcharger pour éviter une pizza détrempée.", badge: null },
+      { icone: "🌶️", titre: "Garnir", detail: "Disposer les rondelles de chorizo et les lanières de poivron rôti afin que la graisse épicée parfume toute la pizza à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner sur la pierre brûlante 7 à 9 min jusqu'à ce que la croûte boursoufle, dore et que le chorizo croustille légèrement.", badge: null },
+      { icone: "🫒", titre: "Servir", detail: "Sortir la pizza, ajouter un filet d'huile d'olive et servir aussitôt, bien chaude et croustillante.", badge: null }
     ]
   },
   pizzahawaienne: {
@@ -515,10 +550,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥙", titre: "Sauce tomate", detail: "Étaler la sauce tomate assaisonnée à l'ail et l'origan.", badge: null },
-      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella.", badge: null },
-      { icone: "🍍", titre: "Jambon et ananas", detail: "Disposer les tranches de jambon et les morceaux d'ananas (frais de préférence, en conserve sinon).", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Four au maximum.", badge: "⏱ 7-10 min à 280°C" }
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250°C) avec la plaque ou la pierre à l'intérieur pendant 30 min.", badge: null },
+      { icone: "🍍", titre: "Préparer ananas", detail: "Détailler l'ananas frais en petits morceaux et les éponger sur du papier absorbant pour retirer l'excès de jus.", badge: null },
+      { icone: "👐", titre: "Étaler", detail: "Étirer le pâton à la main en un disque fin avec un bord régulier, sans utiliser de rouleau.", badge: null },
+      { icone: "🍅", titre: "Saucer", detail: "Étaler une fine couche de sauce tomate assaisonnée d'ail émincé et d'origan sur toute la base.", badge: null },
+      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella égouttée de façon homogène sur la sauce.", badge: null },
+      { icone: "🍖", titre: "Garnir", detail: "Disposer les tranches de jambon en morceaux et les dés d'ananas en les répartissant uniformément.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 8 à 10 min jusqu'à ce que la croûte soit dorée et le fromage fondu et légèrement coloré.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Sortir du four et servir immédiatement, le contraste sucré-salé du jambon et de l'ananas étant meilleur bien chaud.", badge: null }
     ]
   },
   pizzanduja: {
@@ -657,10 +696,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Sauce", detail: "Écraser les tomates pelées, sel, un trait d'huile, origan. SECRET : ne pas cuire la sauce, la fraîcheur fait la marinara.", badge: "⏱ 5 min" },
-      { icone: "🥖", titre: "Étaler", detail: "Étaler le pâton finement à la main (jamais au rouleau, qui chasse les bulles).", badge: "⏱ 5 min" },
-      { icone: "🧄", titre: "Garnir", detail: "Napper de sauce, parsemer d'ail émincé, filet d'huile d'olive. Pas de fromage.", badge: "⏱ 3 min" },
-      { icone: "🔥", titre: "Cuire", detail: "Four au MAXIMUM (250-275°C) sur pierre/plaque chaude, 7-9 min. ASTUCE CHEF : basilic frais à la sortie, pas avant.", badge: "⏱ 9 min" }
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250-275°C) avec la pierre ou la plaque dedans pendant au moins 30 min.", badge: null },
+      { icone: "🍅", titre: "Sauce crue", detail: "Écraser les tomates pelées à la fourchette avec du sel et un trait d'huile d'olive, sans les cuire pour garder la fraîcheur de la marinara.", badge: null },
+      { icone: "🧄", titre: "Émincer ail", detail: "Éplucher et émincer finement l'ail en petites lamelles régulières.", badge: null },
+      { icone: "👐", titre: "Étaler", detail: "Étirer le pâton finement à la main, jamais au rouleau qui chasserait les bulles de la pâte.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Napper la base de sauce tomate, parsemer d'ail émincé, d'origan et arroser d'un filet d'huile d'olive, sans aucun fromage.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner sur la pierre brûlante 7 à 9 min jusqu'à ce que la croûte boursoufle et dore par endroits.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "À la sortie du four seulement, parsemer de feuilles de basilic frais et ajouter un dernier filet d'huile d'olive.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt cette pizza simple et parfumée, idéale pour apprécier la qualité de la tomate et de l'huile.", badge: null }
     ]
   },
   pizzanapolitaine: {
@@ -691,10 +734,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Base", detail: "Étaler le pâton, napper de sauce tomate, origan, filet d'huile.", badge: "⏱ 6 min" },
-      { icone: "🧀", titre: "Garnir", detail: "Mozzarella égouttée en morceaux, anchois et câpres répartis. ASTUCE : bien égoutter la mozza (sinon pizza détrempée).", badge: "⏱ 4 min" },
-      { icone: "🔥", titre: "Cuire", detail: "Four MAXI (250°C) 8-10 min, croûte boursouflée et dorée.", badge: "⏱ 10 min" },
-      { icone: "🌿", titre: "Finir", detail: "SECRET : pas besoin de saler (anchois + câpres). Un tour de poivre à la sortie.", badge: null }
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250°C) avec la pierre ou la plaque à l'intérieur pendant 30 min.", badge: null },
+      { icone: "👐", titre: "Étaler", detail: "Étirer le pâton à la main en un disque fin avec un bord légèrement épais, sans rouleau.", badge: null },
+      { icone: "🍅", titre: "Saucer", detail: "Napper la base d'une fine couche de sauce tomate, saupoudrer d'origan et ajouter un filet d'huile d'olive.", badge: null },
+      { icone: "🧀", titre: "Mozzarella", detail: "Répartir la mozzarella bien égouttée en morceaux pour éviter que la pizza ne se détrempe.", badge: null },
+      { icone: "🐟", titre: "Garnir", detail: "Disposer les filets d'anchois et les câpres de façon régulière sur toute la surface.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 8 à 10 min jusqu'à ce que la croûte soit boursouflée et dorée et le fromage fondu.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Ne pas saler car anchois et câpres apportent déjà le sel ; ajouter simplement un tour de moulin à poivre à la sortie.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir cette pizza intense et salée immédiatement, bien chaude.", badge: null }
     ]
   },
   pizzaburrata: {
@@ -725,10 +772,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Base", detail: "Étaler le pâton, napper de sauce tomate, filet d'huile, sel.", badge: "⏱ 6 min" },
-      { icone: "🔥", titre: "Cuire la base", detail: "Four MAXI (250°C) 8-10 min, SANS la burrata (elle ne doit pas cuire).", badge: "⏱ 10 min" },
-      { icone: "🧀", titre: "Burrata", detail: "CLÉ : déchirer la burrata et la poser sur la pizza CHAUDE, hors du four. Elle fond juste ce qu'il faut.", badge: "⏱ 1 min" },
-      { icone: "🌿", titre: "Finir", detail: "ASTUCE CHEF : roquette, basilic, filet d'huile et poivre par-dessus. Servir aussitôt.", badge: null }
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250°C) avec la pierre ou la plaque dedans pendant 30 min.", badge: null },
+      { icone: "👐", titre: "Étaler", detail: "Étirer le pâton à la main en un disque fin avec un bord régulier, sans rouleau.", badge: null },
+      { icone: "🍅", titre: "Saucer", detail: "Napper la base d'une fine couche de sauce tomate, saler légèrement et arroser d'un filet d'huile d'olive.", badge: null },
+      { icone: "🔥", titre: "Cuire la base", detail: "Enfourner la pizza SANS la burrata 8 à 10 min jusqu'à ce que la croûte soit boursouflée et dorée.", badge: null },
+      { icone: "🧀", titre: "Burrata", detail: "Dès la sortie du four, déchirer la burrata et la déposer sur la pizza chaude pour qu'elle fonde juste ce qu'il faut sans cuire.", badge: null },
+      { icone: "🥬", titre: "Garnir", detail: "Répartir une poignée de roquette fraîche et quelques feuilles de basilic par-dessus.", badge: null },
+      { icone: "🫒", titre: "Finir", detail: "Arroser d'un filet d'huile d'olive et donner un tour de moulin à poivre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt pour profiter du contraste de la base chaude et de la burrata crémeuse encore fraîche.", badge: null }
     ]
   },
   pizzamortadelle: {
@@ -759,10 +810,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥖", titre: "Base blanche", detail: "Étaler le pâton, huiler, répartir la mozzarella (pizza BIANCA, sans tomate).", badge: "⏱ 6 min" },
-      { icone: "🔥", titre: "Cuire", detail: "Four MAXI (250°C) 8-10 min, mozzarella fondue et croûte dorée.", badge: "⏱ 10 min" },
-      { icone: "🍖", titre: "Mortadelle", detail: "CLÉ : mortadelle en fines tranches déposée À CRU sur la pizza chaude (jamais cuite, elle sécherait).", badge: "⏱ 2 min" },
-      { icone: "🌰", titre: "Finir", detail: "ASTUCE CHEF : pistaches concassées + roquette + filet d'huile. La crème de pistache en plus, c'est le luxe.", badge: null }
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250°C) avec la pierre ou la plaque à l'intérieur pendant 30 min.", badge: null },
+      { icone: "🥜", titre: "Concasser", detail: "Concasser grossièrement les pistaches au couteau pour obtenir des éclats qui apporteront du croquant.", badge: null },
+      { icone: "👐", titre: "Étaler", detail: "Étirer le pâton à la main en un disque fin avec un bord régulier, sans rouleau.", badge: null },
+      { icone: "🤍", titre: "Base bianca", detail: "Huiler légèrement la base puis répartir la mozzarella égouttée, sans aucune sauce tomate pour une pizza bianca.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 8 à 10 min jusqu'à ce que la mozzarella soit fondue et la croûte bien dorée.", badge: null },
+      { icone: "🥩", titre: "Mortadelle", detail: "Dès la sortie du four, déposer les fines tranches de mortadelle à cru sur la pizza chaude pour qu'elles restent moelleuses.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Parsemer des éclats de pistache et de la roquette fraîche, puis arroser d'un filet d'huile d'olive.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir immédiatement cette pizza généreuse où le gras de la mortadelle rencontre le croquant des pistaches.", badge: null }
     ]
   },
   pizza4saisons: {
@@ -871,10 +926,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Garnir", detail: "Étaler la pâte, napper de sauce tomate et de mozzarella.", badge: null },
-      { icone: "🐟", titre: "Topping", detail: "Émietter le thon, ajouter l'oignon rouge en fines lamelles et les olives.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 250°C. ASTUCE CHEF : ajoute le thon à mi-cuisson pour qu'il reste moelleux au lieu de se dessécher.", badge: "⏱ 10 min" },
-      { icone: "🫒", titre: "Finir", detail: "Filet d'huile d'olive à la sortie.", badge: null }
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250°C) avec la pierre ou la plaque dedans pendant 30 min.", badge: null },
+      { icone: "🧅", titre: "Préparer", detail: "Émincer l'oignon rouge en fines lamelles et égoutter soigneusement le thon ainsi que les olives.", badge: null },
+      { icone: "👐", titre: "Étaler", detail: "Étirer le pâton à la main en un disque fin avec un bord régulier, sans rouleau.", badge: null },
+      { icone: "🍅", titre: "Garnir base", detail: "Napper la base de sauce tomate puis répartir la mozzarella égouttée de façon homogène.", badge: null },
+      { icone: "🧅", titre: "Topping", detail: "Disposer les lamelles d'oignon rouge et les olives, en réservant le thon émietté pour plus tard.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 12 à 14 min, puis ajouter le thon émietté à mi-cuisson pour qu'il reste moelleux et ne se dessèche pas.", badge: null },
+      { icone: "🫒", titre: "Finir", detail: "À la sortie du four, arroser d'un filet d'huile d'olive et donner un tour de moulin à poivre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt cette pizza méditerranéenne bien chaude.", badge: null }
     ]
   },
   pizzasalsiccia: {
@@ -907,10 +966,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌭", titre: "Émietter", detail: "Retirer la peau des saucisses et émietter la chair en petits morceaux.", badge: null },
-      { icone: "🍅", titre: "Garnir", detail: "Étaler la pâte, sauce tomate, mozzarella puis la chair à saucisse crue.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 250°C jusqu'à ce que la saucisse soit dorée. ASTUCE CHEF : poser la chair à saucisse crue (pas pré-cuite) la rend juteuse à la cuisson.", badge: "⏱ 11 min" },
-      { icone: "🥬", titre: "Finir", detail: "Roquette fraîche et copeaux de parmesan à la sortie.", badge: null }
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250°C) avec la pierre ou la plaque à l'intérieur pendant 30 min.", badge: null },
+      { icone: "🌭", titre: "Émietter", detail: "Retirer la peau des saucisses et émietter la chair en petits morceaux réguliers à la main.", badge: null },
+      { icone: "👐", titre: "Étaler", detail: "Étirer le pâton à la main en un disque fin avec un bord régulier, sans rouleau.", badge: null },
+      { icone: "🍅", titre: "Garnir base", detail: "Napper la base de sauce tomate puis répartir la mozzarella égouttée.", badge: null },
+      { icone: "🥩", titre: "Saucisse", detail: "Parsemer la chair à saucisse crue en petits morceaux sur la mozzarella ; crue, elle restera juteuse à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 12 à 14 min jusqu'à ce que la croûte soit dorée et la chair à saucisse bien colorée.", badge: null },
+      { icone: "🧀", titre: "Finir", detail: "À la sortie du four, ajouter une poignée de roquette fraîche et des copeaux de parmesan.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arroser d'un filet d'huile d'olive et servir immédiatement, bien chaude.", badge: null }
     ]
   },
   pizzaboscaiola: {
@@ -943,10 +1006,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥛", titre: "Base crème", detail: "Étaler la pâte et napper d'une fine couche de crème (à la place de la tomate).", badge: null },
-      { icone: "🍄", titre: "Garnir", detail: "Mozzarella, champignons émincés et chair à saucisse émiettée.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 250°C. ASTUCE CHEF : sur une pizza blanche, une fine couche de crème suffit — trop de crème la rend lourde et molle.", badge: "⏱ 11 min" },
-      { icone: "🌿", titre: "Finir", detail: "Persil ciselé et tour de moulin à poivre.", badge: null }
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250°C) avec la pierre ou la plaque dedans pendant 30 min.", badge: null },
+      { icone: "🍄", titre: "Préparer", detail: "Émincer finement les champignons et émietter la chair à saucisse débarrassée de sa peau.", badge: null },
+      { icone: "👐", titre: "Étaler", detail: "Étirer le pâton à la main en un disque fin avec un bord régulier, sans rouleau.", badge: null },
+      { icone: "🤍", titre: "Base crème", detail: "Napper la base d'une fine couche de crème à la place de la tomate, sans excès pour ne pas alourdir la pizza.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Répartir la mozzarella, les champignons émincés et la chair à saucisse émiettée sur toute la surface.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 12 à 14 min jusqu'à ce que la croûte soit dorée, les champignons cuits et la saucisse colorée.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "À la sortie du four, parsemer de persil ciselé et donner un tour de moulin à poivre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arroser d'un filet d'huile d'olive et servir aussitôt cette pizza blanche gourmande et boisée.", badge: null }
     ]
   },
   pizzaamatriciana: {
@@ -979,10 +1046,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥓", titre: "Saisir", detail: "Faire revenir les lardons jusqu'à ce qu'ils soient bien croustillants.", badge: "⏱ 5 min" },
-      { icone: "🍅", titre: "Garnir", detail: "Étaler la pâte, napper de sauce tomate, ajouter mozzarella, lardons et oignon émincé.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 250°C. ASTUCE CHEF : pré-saisis les lardons — posés crus, ils ressortent mous et gras au lieu de croustillants.", badge: "⏱ 10 min" },
-      { icone: "🧀", titre: "Finir", detail: "Copeaux de parmesan à la sortie du four.", badge: null }
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250°C) avec la pierre ou la plaque à l'intérieur pendant 30 min.", badge: null },
+      { icone: "🥓", titre: "Saisir lardons", detail: "Faire revenir les lardons à la poêle à feu moyen jusqu'à ce qu'ils soient bien dorés et croustillants, puis les égoutter.", badge: null },
+      { icone: "🧅", titre: "Émincer", detail: "Émincer l'oignon en fines lamelles régulières.", badge: null },
+      { icone: "👐", titre: "Étaler", detail: "Étirer le pâton à la main en un disque fin avec un bord régulier, sans rouleau.", badge: null },
+      { icone: "🍅", titre: "Garnir", detail: "Napper la base de sauce tomate, répartir la mozzarella, puis ajouter les lardons saisis et l'oignon émincé.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner 8 à 10 min jusqu'à ce que la croûte soit dorée et le fromage fondu.", badge: null },
+      { icone: "🧀", titre: "Finir", detail: "À la sortie du four, parsemer de copeaux de parmesan et donner un tour de moulin à poivre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arroser d'un filet d'huile d'olive et servir immédiatement, bien chaude.", badge: null }
     ]
   },
   pizzagreca: {
@@ -1015,10 +1086,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Garnir", detail: "Étaler la pâte, napper de sauce tomate et de mozzarella.", badge: null },
-      { icone: "🧀", titre: "Topping", detail: "Émietter la feta, ajouter olives et oignon rouge en lamelles.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 250°C. ASTUCE CHEF : ajoute la feta à mi-cuisson — trop cuite elle dessèche, juste réchauffée elle reste crémeuse.", badge: "⏱ 10 min" },
-      { icone: "🌿", titre: "Finir", detail: "Origan et filet d'huile d'olive.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffez le four à 250°C (idéalement avec une pierre ou une plaque dedans) pour saisir la pâte instantanément.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Émincez l'oignon rouge en fines lamelles, dénoyautez et coupez les olives en deux, émiettez la feta et tranchez la mozzarella.", badge: null },
+      { icone: "🍅", titre: "Étaler", detail: "Abaissez la pâte finement, nappez d'une couche régulière de tomates concassées en laissant un bord de 1 cm.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Répartissez la mozzarella, les olives et l'oignon rouge sur toute la surface, sans surcharger pour garder la pâte croustillante.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfournez à 250°C pendant 8 à 10 min jusqu'à ce que les bords gonflent et dorent et que le fromage soit fondu.", badge: null },
+      { icone: "🫕", titre: "Feta", detail: "À mi-cuisson (vers 5 min), ajoutez la feta émiettée : juste réchauffée elle reste crémeuse, trop cuite elle dessèche.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "À la sortie du four, saupoudrez d'origan séché et versez un filet d'huile d'olive avant de servir bien chaude.", badge: null }
     ]
   },
   pizzapollobbq: {
@@ -1051,10 +1125,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Poulet BBQ", detail: "Enrober les dés de poulet cuits d'un peu de sauce barbecue.", badge: null },
-      { icone: "🍕", titre: "Garnir", detail: "Étaler la pâte, badigeonner d'une fine couche de sauce barbecue (à la place de la tomate), ajouter mozzarella, poulet, oignon rouge et maïs.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 250°C. ASTUCE CHEF : une fine couche de barbecue suffit en base — trop épaisse, elle brûle et sucre trop la pizza.", badge: "⏱ 11 min" },
-      { icone: "🌿", titre: "Finir", detail: "Coriandre fraîche ciselée.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffez le four à 250°C avec la plaque à l'intérieur pour obtenir une base croustillante.", badge: null },
+      { icone: "🍗", titre: "Poulet BBQ", detail: "Coupez le poulet cuit en dés et enrobez-le d'un peu de sauce barbecue pour qu'il soit bien nappé et brillant.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Émincez finement l'oignon rouge, égouttez le maïs et ciselez la coriandre fraîche que vous réservez de côté.", badge: null },
+      { icone: "🖌️", titre: "Étaler", detail: "Abaissez la pâte et badigeonnez-la d'une fine couche de sauce barbecue en base : trop épaisse, elle brûle et sucre trop.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Répartissez la mozzarella, les dés de poulet, l'oignon rouge et le maïs uniformément sur la pâte.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfournez à 250°C pendant 10 à 12 min jusqu'à ce que les bords soient dorés et le fromage fondu et grésillant.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Parsemez de coriandre fraîche ciselée à la sortie du four, ajoutez un filet d'huile d'olive et servez aussitôt.", badge: null }
     ]
   },
 });

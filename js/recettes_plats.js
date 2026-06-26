@@ -29,11 +29,13 @@ Object.assign(recettes, {
       { nb: 15, courgette: "3000 g", riz: "600 g", tomate: "900 g", oignon: "450 g", parmesan: "225 g", huileolive: "120 ml", ail: "60 g", basilic: "45 g" }
     ],
     etapes: [
-      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 190°C.", badge: "⏱ 5 min" },
-      { icone: "🥒", titre: "Évider", detail: "Couper les courgettes en deux dans la longueur et les évider à la cuillère.", badge: null },
-      { icone: "🍚", titre: "Garniture", detail: "Faire revenir oignon et ail, ajouter la chair de courgette, les tomates et le riz cuit. Parfumer au basilic.", badge: "⏱ 12 min" },
-      { icone: "🧀", titre: "Garnir", detail: "Farcir les courgettes, parsemer de parmesan, filet d'huile d'olive.", badge: null },
-      { icone: "♨️", titre: "Cuire", detail: "Enfourner 30-35 min jusqu'à ce que les courgettes soient tendres et gratinées.", badge: "⏱ 35 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffez le four à 190°C et faites cuire le riz à l'eau salée s'il ne l'est pas déjà, puis réservez-le.", badge: null },
+      { icone: "🔪", titre: "Évider", detail: "Coupez les courgettes en deux dans la longueur et évidez-les à la cuillère en gardant 5 mm de chair sur les parois.", badge: null },
+      { icone: "🧅", titre: "Revenir", detail: "Faites suer l'oignon et l'ail hachés dans l'huile d'olive 4 min à feu moyen jusqu'à ce qu'ils deviennent translucides.", badge: null },
+      { icone: "🍅", titre: "Garniture", detail: "Ajoutez la chair de courgette hachée et les tomates concassées, laissez réduire 8 min, puis incorporez le riz cuit et le basilic ciselé.", badge: null },
+      { icone: "🥄", titre: "Farcir", detail: "Disposez les demi-courgettes dans un plat, garnissez-les de la farce bien tassée et parsemez de parmesan râpé.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Arrosez d'un filet d'huile d'olive et enfournez 30 à 35 min à 190°C jusqu'à ce que les courgettes soient tendres et gratinées.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Laissez tiédir 5 min, ajoutez quelques feuilles de basilic frais et servez avec une salade verte.", badge: null }
     ]
   },
   dindenoelmarrons: {
@@ -140,11 +142,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Préchauffer le four", detail: "Préchauffer à 200°C. Couper les pommes de terre en quartiers, les enrober d'huile d'olive, sel, poivre et thym. Enfourner. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 25 min" },
-      { icone: "🍋", titre: "Préparer le poulet", detail: "Aplatir légèrement les filets. Assaisonner avec sel, poivre, zeste de citron et thym frais. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
-      { icone: "🍳", titre: "Cuire le poulet", detail: "Dans une poêle chaude avec huile d'olive, cuire les filets 4-5 min de chaque côté jusqu'à belle dorure. Déglacer avec le jus de citron. ASTUCE CHEF : récupérer TOUS les sucs collés au fond = saveur intense.", badge: "⏱ 10 min" },
-      { icone: "🥗", titre: "Cuire les haricots verts", detail: "Blanchir les haricots verts 4 min dans l'eau bouillante salée. Égoutter et assaisonner avec beurre et sel. ASTUCE PRO : eau bouillante salée 2-3 min puis eau glacée. Arrête la cuisson et garde la couleur vive.", badge: "⏱ 4 min" },
-      { icone: "🍦", titre: "Sauce citronnée", detail: "Dans la même poêle, ajouter la crème fraîche et le reste du jus de citron. Laisser réduire 2 min. Servir avec le poulet et les légumes. ASTUCE CHEF : la sauce doit napper le dos d'une cuillère = bonne consistance.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffez le four à 200°C, coupez les pommes de terre en quartiers et enrobez-les d'huile, sel, poivre et thym.", badge: null },
+      { icone: "🥔", titre: "Rôtir", detail: "Étalez les pommes de terre sur une plaque et enfournez 25 à 30 min en les retournant à mi-cuisson pour qu'elles dorent partout.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Aplatissez légèrement les filets de poulet et assaisonnez-les de sel, poivre, zeste de citron et thym frais.", badge: null },
+      { icone: "🍳", titre: "Saisir", detail: "Dans une poêle chaude avec huile et beurre, cuisez les filets 4 à 5 min de chaque côté jusqu'à belle dorure, puis déglacez au jus de citron.", badge: null },
+      { icone: "🫛", titre: "Haricots", detail: "Blanchissez les haricots verts 4 min à l'eau bouillante salée, égouttez-les et faites-les sauter avec une noix de beurre et du sel.", badge: null },
+      { icone: "🥛", titre: "Sauce", detail: "Dans la même poêle, ajoutez la crème et le reste de jus de citron, laissez réduire 2 min jusqu'à ce que la sauce nappe la cuillère.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposez le poulet nappé de sauce avec les pommes de terre et les haricots, et servez bien chaud.", badge: null }
     ]
   },
   salmonteriyaki: {
@@ -175,11 +179,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Cuire le riz", detail: "Rincer le riz. Cuire dans 1.5x son volume d'eau froide. Porter à ébullition, baisser à feu doux, couvrir et cuire jusqu'à absorption. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 15 min" },
-      { icone: "🍶", titre: "Préparer la sauce teriyaki", detail: "Mélanger sauce soja, miel, gingembre râpé et 1 c.à.c de fécule de maïs. Réserver.", badge: null },
-      { icone: "🐟", titre: "Cuire le saumon", detail: "Chauffer une poêle à feu vif. Cuire les pavés côté peau 3 min, retourner et cuire 2 min. Le cœur doit rester légèrement rosé. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 5 min" },
-      { icone: "🍯", titre: "Glacer le saumon", detail: "Verser la sauce teriyaki sur le saumon. Laisser caraméliser 1-2 min en arrosant régulièrement. ASTUCE CHEF : surveiller la couleur ambrée, pas plus sombre sinon amer.", badge: "⏱ 2 min" },
-      { icone: "🥢", titre: "Dresser", detail: "Servir le saumon sur le riz avec les edamame. Parsemer de graines de sésame et ciboule émincée.", badge: null }
+      { icone: "🍚", titre: "Cuire le riz", detail: "Rincez le riz puis cuisez-le dans 1,5 fois son volume d'eau froide : à ébullition, baissez à feu doux, couvrez et laissez absorber 12 min.", badge: null },
+      { icone: "🥢", titre: "Sauce", detail: "Mélangez la sauce soja, le miel, le gingembre râpé et 1 c.à.c de fécule diluée pour préparer le glaçage teriyaki.", badge: null },
+      { icone: "🫛", titre: "Edamame", detail: "Faites cuire les edamame 4 min à l'eau bouillante salée, égouttez et réservez-les au chaud.", badge: null },
+      { icone: "🐟", titre: "Saisir", detail: "Dans une poêle bien chaude, cuisez les pavés de saumon côté peau 3 min, retournez et poursuivez 2 min en gardant le cœur rosé.", badge: null },
+      { icone: "✨", titre: "Glacer", detail: "Versez la sauce teriyaki sur le saumon et laissez caraméliser 1 à 2 min en l'arrosant, en surveillant la teinte ambrée pour éviter l'amertume.", badge: null },
+      { icone: "🍱", titre: "Dresser", detail: "Disposez le saumon glacé sur le riz avec les edamame autour, et nappez du reste de sauce.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Parsemez de graines de sésame grillées et de ciboule émincée, puis servez aussitôt.", badge: null }
     ]
   },
   bolognaisemaison: {
@@ -245,11 +251,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌮", titre: "Épices pour le bœuf", detail: "Mélanger : cumin, paprika fumé, origan, piment doux, ail en poudre, sel. Enrober la viande hachée de ce mélange.", badge: null },
-      { icone: "🥩", titre: "Cuire la viande", detail: "Faire revenir le bœuf épicé dans une poêle chaude jusqu'à belle coloration. Ajouter un filet de jus de citron vert en fin de cuisson.", badge: "⏱ 8 min" },
-      { icone: "🥑", titre: "Guacamole rapide", detail: "Écraser l'avocat à la fourchette avec jus de citron vert, sel, coriandre et piment (optionnel).", badge: null },
-      { icone: "🍅", titre: "Pico de gallo", detail: "Mélanger tomates en dés, oignon rouge émincé, coriandre, jus de citron vert et sel.", badge: null },
-      { icone: "🌮", titre: "Assembler et servir", detail: "Réchauffer les tortillas à sec dans une poêle. Garnir de bœuf, guacamole, pico de gallo, fromage râpé et crème sure. Déguster immédiatement !", badge: null }
+      { icone: "🌶️", titre: "Épicer", detail: "Mélangez cumin, paprika fumé, origan, piment doux, ail en poudre et sel, puis enrobez le bœuf haché de ce mélange.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Faites revenir le bœuf épicé dans une poêle chaude 6 à 8 min jusqu'à belle coloration, puis ajoutez un filet de jus de citron vert.", badge: null },
+      { icone: "🥑", titre: "Guacamole", detail: "Écrasez l'avocat à la fourchette avec du jus de citron vert, du sel et un peu d'oignon pour une texture grossière.", badge: null },
+      { icone: "🍅", titre: "Pico de gallo", detail: "Mélangez les tomates en petits dés, l'oignon émincé, du jus de citron vert et du sel pour une salsa fraîche.", badge: null },
+      { icone: "🔥", titre: "Tortillas", detail: "Réchauffez les tortillas à sec dans une poêle chaude 30 secondes par face jusqu'à ce qu'elles soient souples et légèrement dorées.", badge: null },
+      { icone: "🌮", titre: "Assembler", detail: "Garnissez chaque tortilla de bœuf, de guacamole, de pico de gallo et de fromage râpé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Pliez les tacos et dégustez-les immédiatement avec un quartier de citron vert à presser.", badge: null }
     ]
   },
   padthai: {
@@ -279,11 +287,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍜", titre: "Tremper les nouilles", detail: "Faire tremper les nouilles de riz dans l'eau froide 30 min, ou les cuire al dente selon le paquet. Égoutter. 1 min de moins que sur l'emballage. Goûter pour vérifier.", badge: "⏱ 30 min trempage" },
-      { icone: "🍶", titre: "Sauce pad thaï", detail: "Mélanger : 3 c.à.s sauce poisson, 2 c.à.s tamarin, 1 c.à.s sucre de palme (ou sucre roux). Goûter et ajuster.", badge: null },
-      { icone: "🔥", titre: "Sauter le tofu et crevettes", detail: "Dans un wok très chaud avec huile, faire dorer le tofu en cubes 3 min. Ajouter les crevettes, cuire 2 min. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Ajouter les œufs", detail: "Pousser le tout sur le côté. Casser les œufs dans le wok et les brouiller rapidement avant de les mélanger.", badge: null },
-      { icone: "🍜", titre: "Finir le plat", detail: "Ajouter les nouilles et la sauce. Sauter à feu vif 2-3 min en mélangeant bien. Servir avec cacahuètes, germes de soja, citron vert et coriandre. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 3 min" }
+      { icone: "💧", titre: "Tremper", detail: "Faites tremper les nouilles de riz dans l'eau froide 30 min, ou cuisez-les al dente, puis égouttez-les.", badge: null },
+      { icone: "🥢", titre: "Sauce", detail: "Mélangez sauce poisson, tamarin, sucre et jus de citron, goûtez et ajustez l'équilibre sucré-salé-acide.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Coupez le tofu en cubes, décortiquez les crevettes et concassez grossièrement les cacahuètes que vous réservez.", badge: null },
+      { icone: "🍤", titre: "Sauter", detail: "Dans un wok très chaud avec huile, faites dorer le tofu 3 min, ajoutez les crevettes et cuisez 2 min jusqu'à ce qu'elles rosissent.", badge: null },
+      { icone: "🥚", titre: "Œufs", detail: "Poussez le tout sur le côté, cassez les œufs dans le wok et brouillez-les rapidement avant de tout mélanger.", badge: null },
+      { icone: "🍜", titre: "Sauter", detail: "Ajoutez les nouilles et la sauce, sautez à feu vif 2 à 3 min en mélangeant pour bien les enrober.", badge: null },
+      { icone: "🥜", titre: "Servir", detail: "Servez aussitôt parsemé de cacahuètes concassées, avec un quartier de citron vert à presser.", badge: null }
     ]
   },
   currypouletcoco: {
@@ -313,11 +323,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Cuire le riz jasmin", detail: "Rincer le riz et cuire dans 1.5x son volume d'eau. Porter à ébullition, couvrir et cuire à feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 15 min" },
-      { icone: "🌶️", titre: "Faire revenir la pâte curry", detail: "Dans une casserole, faire revenir la pâte de curry vert (ou rouge) avec un filet d'huile 1 min pour libérer les arômes.", badge: null },
-      { icone: "🥥", titre: "Ajouter le coco", detail: "Verser le lait de coco. Mélanger avec la pâte. Laisser frémir 2 min.", badge: null },
-      { icone: "🍗", titre: "Cuire le poulet", detail: "Ajouter le poulet en morceaux. Laisser mijoter à feu moyen jusqu'à cuisson complète. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 15 min" },
-      { icone: "🌿", titre: "Finir et servir", detail: "Ajouter les épinards, laisser fondre 2 min. Assaisonner avec sauce poisson et jus de citron vert. Servir sur riz avec coriandre et piment. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null }
+      { icone: "🍚", titre: "Cuire le riz", detail: "Rincez le riz jasmin puis cuisez-le dans 1,5 fois son volume d'eau : à ébullition, couvrez et laissez à feu doux 12 min jusqu'à absorption.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Coupez le poulet en morceaux réguliers et lavez les épinards frais que vous réservez de côté.", badge: null },
+      { icone: "🌶️", titre: "Pâte curry", detail: "Dans une casserole, faites revenir la pâte de curry avec un filet d'huile 1 min pour libérer ses arômes.", badge: null },
+      { icone: "🥥", titre: "Coco", detail: "Versez le lait de coco, mélangez avec la pâte et laissez frémir 2 min pour obtenir une sauce homogène.", badge: null },
+      { icone: "🍗", titre: "Mijoter", detail: "Ajoutez le poulet et laissez mijoter à feu moyen 12 à 15 min, couvercle entrouvert, jusqu'à cuisson complète.", badge: null },
+      { icone: "🥬", titre: "Épinards", detail: "Incorporez les épinards, laissez-les fondre 2 min, puis assaisonnez avec du jus de citron vert et ajustez le sel.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez le curry bien chaud sur le riz jasmin, parsemé de coriandre fraîche.", badge: null }
     ]
   },
   burgermaison: {
@@ -348,11 +360,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍔", titre: "Former les steaks", detail: "Mélanger la viande hachée avec sel, poivre et une pincée de paprika. Former des steaks de 150g en les aplatissant légèrement. Faire un creux au centre avec le pouce pour éviter qu'ils gonflent.", badge: null },
-      { icone: "🍶", titre: "Sauce burger", detail: "Mélanger mayonnaise, ketchup, moutarde, cornichons émincés et paprika. Réserver.", badge: null },
-      { icone: "🔥", titre: "Cuire les steaks", detail: "Poêle ou grill très chaud. Cuire 3 min sans toucher, retourner et cuire 2 min. Poser le cheddar sur le steak et couvrir 1 min pour le faire fondre.", badge: "⏱ 5-6 min" },
-      { icone: "🍞", titre: "Toaster les buns", detail: "Couper les buns en deux et les toaster côté mie dans la poêle avec un peu de beurre. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Tartiner les buns de sauce. Ajouter salade, tomate, steak au cheddar, oignons caramélisés si souhaité. Servir avec frites maison.", badge: null }
+      { icone: "🥩", titre: "Former", detail: "Mélangez la viande hachée avec sel, poivre et une pincée de paprika, façonnez des steaks de 150 g et creusez le centre au pouce.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Lavez la salade, tranchez les tomates en rondelles et coupez le cheddar en tranches que vous réservez.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Sur une poêle ou un grill très chaud, saisissez les steaks 3 min sans y toucher, retournez et poursuivez 2 min.", badge: null },
+      { icone: "🧀", titre: "Fondre", detail: "Posez une tranche de cheddar sur chaque steak et couvrez 1 min pour la faire fondre uniformément.", badge: null },
+      { icone: "🍞", titre: "Toaster", detail: "Coupez les buns en deux et toastez-les côté mie dans la poêle avec un peu de beurre jusqu'à ce qu'ils dorent.", badge: null },
+      { icone: "🍔", titre: "Assembler", detail: "Garnissez le bun du bas de salade, tomate et steak au cheddar, puis refermez avec le chapeau toasté.", badge: null },
+      { icone: "🍟", titre: "Servir", detail: "Servez le burger aussitôt, accompagné de frites maison croustillantes.", badge: null }
     ]
   },
   couscous: {
@@ -383,11 +397,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Préparer le bouillon", detail: "Dans une couscoussière, faire revenir oignon, ail, gingembre et épices (cumin, curcuma, ras el hanout, cannelle). Ajouter le poulet découpé et faire dorer. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: null },
-      { icone: "🥕", titre: "Ajouter les légumes", detail: "Ajouter carottes, navets, courgettes et pois chiches. Couvrir d'eau ou de bouillon. Laisser mijoter. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 45 min" },
-      { icone: "🥩", titre: "Cuire les merguez", detail: "Faire griller les merguez à la poêle ou au grill jusqu'à belle coloration. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 10 min" },
-      { icone: "🌾", titre: "Préparer la semoule", detail: "Verser la semoule dans un plat. Ajouter 1.5x son volume d'eau bouillante salée et un filet d'huile d'olive. Couvrir 5 min puis égrainer à la fourchette avec du beurre.", badge: "⏱ 5 min" },
-      { icone: "🍋", titre: "Harissa et service", detail: "Prélever du bouillon, y délayer de la harissa. Servir semoule, viandes et légumes avec le bouillon épicé à part. La pâte doit DOUBLER de volume dans un endroit tiède (25°C, four éteint avec lampe allumée).", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincez l'oignon et l'ail, épluchez et coupez carottes et courgettes en gros tronçons, et découpez le poulet en morceaux.", badge: null },
+      { icone: "🍲", titre: "Bouillon", detail: "Dans la couscoussière, faites revenir oignon, ail, gingembre et épices (cumin, curcuma, cannelle), ajoutez le poulet et faites-le dorer 8 min.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Ajoutez carottes, courgettes et pois chiches, couvrez d'eau et laissez mijoter 35 à 40 min à feu doux.", badge: null },
+      { icone: "🌭", titre: "Merguez", detail: "Faites griller les merguez à la poêle bien chaude 6 à 8 min jusqu'à une belle coloration uniforme.", badge: null },
+      { icone: "🌾", titre: "Semoule", detail: "Versez la semoule dans un plat, couvrez-la de 1,5 fois son volume d'eau bouillante salée et d'un filet d'huile, laissez gonfler 5 min puis égrainez au beurre.", badge: null },
+      { icone: "🌶️", titre: "Harissa", detail: "Prélevez une louche de bouillon et délayez-y de la harissa pour proposer une sauce épicée à part.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dressez la semoule, disposez les viandes et légumes par-dessus et servez avec le bouillon parfumé à la cannelle.", badge: null }
     ]
   },
   moussaka: {
@@ -418,11 +434,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍆", titre: "Préparer les aubergines", detail: "Couper les aubergines en tranches de 1 cm. Saler et laisser dégorger 20 min. Rincer, sécher et faire dorer à l'huile d'olive ou au four à 200°C. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 20 min" },
-      { icone: "🥩", titre: "Sauce viande", detail: "Faire revenir oignon et ail. Ajouter la viande hachée (agneau ou bœuf). Dorer, puis ajouter tomates concassées, cannelle, clous de girofle, sel. Mijoter. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 20 min" },
-      { icone: "🥛", titre: "Béchamel", detail: "Préparer une béchamel épaisse. Hors du feu, ajouter un jaune d'œuf et du parmesan râpé.", badge: null },
-      { icone: "🏗️", titre: "Monter la moussaka", detail: "Dans un plat beurré : couche d'aubergines, sauce viande, aubergines, béchamel. Parsemer de parmesan.", badge: null },
-      { icone: "🔥", titre: "Cuire et gratiner", detail: "Enfourner à 180°C jusqu'à ce que la béchamel soit bien dorée. Laisser reposer 15 min avant de servir. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 40 min à 180°C" }
+      { icone: "🍆", titre: "Dégorger aubergines", detail: "Couper les aubergines en tranches de 1 cm, les saler et les laisser dégorger 20 min sur du papier absorbant, puis rincer et sécher pour retirer l'amertume.", badge: null },
+      { icone: "🔥", titre: "Dorer aubergines", detail: "Badigeonner les tranches d'huile d'olive et les faire dorer à la poêle ou au four à 200°C pendant 15 min jusqu'à coloration de chaque face, puis réserver.", badge: null },
+      { icone: "🧅", titre: "Sauce viande", detail: "Faire revenir l'oignon et l'ail émincés à l'huile d'olive, ajouter la viande hachée et la saisir, puis incorporer les tomates concassées, la cannelle, le sel et le poivre.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Laisser mijoter la sauce à feu doux 25 min à découvert pour qu'elle réduise et concentre ses saveurs, en remuant de temps en temps.", badge: null },
+      { icone: "🥛", titre: "Béchamel", detail: "Préparer une béchamel épaisse, la retirer du feu puis y incorporer un jaune d'œuf et une grande partie du parmesan râpé pour la rendre nappante.", badge: null },
+      { icone: "🥘", titre: "Monter", detail: "Dans un plat beurré, alterner une couche d'aubergines, la sauce à la viande, une seconde couche d'aubergines puis napper de béchamel et parsemer du parmesan restant.", badge: null },
+      { icone: "♨️", titre: "Gratiner", detail: "Enfourner à 180°C pendant 35 min jusqu'à ce que la surface soit bien dorée et gratinée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser reposer 15 min hors du four avant de couper en parts nettes, étape essentielle pour que la moussaka se tienne à la découpe.", badge: null }
     ]
   },
   paella: {
@@ -452,11 +471,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Faire revenir viandes", detail: "Dans la paellera ou grande poêle, faire dorer les morceaux de poulet et le chorizo en rondelles dans l'huile d'olive. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 8 min" },
-      { icone: "🍅", titre: "Sofrito", detail: "Ajouter poivron rouge et vert émincés, tomates concassées, ail et paprika fumé. Cuire 5 min.", badge: null },
-      { icone: "🌾", titre: "Nacrer le riz", detail: "Ajouter le riz et remuer 2 min. Verser le bouillon chaud avec le safran (2x le volume du riz). Ne plus remuer !", badge: null },
-      { icone: "🦐", titre: "Ajouter fruits de mer", detail: "À mi-cuisson, disposer crevettes et moules sur le riz. Couvrir et cuire jusqu'à absorption du bouillon.", badge: "⏱ 20 min total" },
-      { icone: "🔥", titre: "Le socarrat", detail: "En fin de cuisson, monter le feu 1-2 min pour faire dorer le fond (le socarrat — croûte croustillante). Couvrir d'alu et laisser reposer 5 min. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: null }
+      { icone: "🐔", titre: "Saisir viandes", detail: "Dans la paellera, faire dorer les morceaux de poulet et les rondelles de chorizo dans l'huile d'olive à feu vif environ 8 min, puis réserver.", badge: null },
+      { icone: "🧄", titre: "Sofrito", detail: "Dans la même huile, faire revenir l'ail haché et les tomates concassées 5 min à feu moyen pour former une base parfumée.", badge: null },
+      { icone: "🍚", titre: "Nacrer le riz", detail: "Ajouter le riz et le remuer 2 min pour qu'il devienne translucide et s'imprègne des sucs de cuisson.", badge: null },
+      { icone: "💛", titre: "Mouiller", detail: "Verser l'eau chaude infusée de safran à hauteur du double du volume de riz, répartir le poulet et le chorizo, puis ne plus jamais remuer.", badge: null },
+      { icone: "🦐", titre: "Fruits de mer", detail: "À mi-cuisson, vers 10 min, disposer les crevettes et les moules sur le riz et poursuivre la cuisson à feu moyen jusqu'à absorption du liquide.", badge: null },
+      { icone: "🔥", titre: "Socarrat", detail: "En fin de cuisson, monter le feu 1 à 2 min pour caraméliser le fond du riz et former le socarrat, cette croûte dorée et croustillante.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Couvrir d'un linge et laisser reposer 5 min, puis servir directement dans la paellera avec des quartiers de citron.", badge: null }
     ]
   },
   butterchicken: {
@@ -487,11 +508,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Mariner le poulet", detail: "Mélanger yaourt, jus de citron, garam masala, curcuma, cumin et gingembre râpé. Mariner le poulet en morceaux au moins 2h (idéalement une nuit).", badge: "⏱ 2h minimum" },
-      { icone: "🔥", titre: "Griller le poulet", detail: "Cuire le poulet mariné à la poêle à feu vif jusqu'à belle coloration. Réserver. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🍅", titre: "Sauce makhani", detail: "Dans la même poêle, faire fondre le beurre. Ajouter oignon, ail, gingembre. Puis tomates concassées et épices (garam masala, cumin, paprika, fenugrec). Cuire 10 min.", badge: null },
-      { icone: "🌀", titre: "Mixer la sauce", detail: "Mixer la sauce pour obtenir une texture lisse. Remettre dans la poêle.", badge: null },
-      { icone: "🍦", titre: "Finir et servir", detail: "Ajouter le poulet et la crème fraîche. Laisser mijoter 10 min. Servir avec du riz basmati ou des naans chauds. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 10 min" }
+      { icone: "🥣", titre: "Mariner", detail: "Mélanger le yaourt, le jus de citron, le garam masala et le gingembre râpé, y plonger le poulet en morceaux et laisser mariner au moins 2 h, idéalement une nuit.", badge: null },
+      { icone: "🔥", titre: "Griller poulet", detail: "Égoutter le poulet et le saisir à la poêle à feu vif 6 à 8 min jusqu'à belle coloration, puis le réserver.", badge: null },
+      { icone: "🧈", titre: "Base aromatique", detail: "Faire fondre le beurre dans la même poêle et y faire revenir l'oignon, l'ail et le gingembre jusqu'à ce qu'ils soient translucides et parfumés.", badge: null },
+      { icone: "🍅", titre: "Sauce tomate", detail: "Ajouter les tomates concassées et le garam masala, saler puis laisser mijoter 10 min à feu doux pour réduire la sauce.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer la sauce jusqu'à obtenir une texture parfaitement lisse et veloutée, puis la remettre dans la poêle.", badge: null },
+      { icone: "🥛", titre: "Crémer", detail: "Incorporer la crème et remettre le poulet grillé, puis laisser mijoter 10 min à feu doux pour que les saveurs se lient.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Rectifier l'assaisonnement et servir bien chaud avec du riz basmati ou des naans tièdes.", badge: null }
     ]
   },
   quichelorraine: {
@@ -522,11 +545,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥧", titre: "Foncer le moule", detail: "Étaler la pâte brisée dans un moule à tarte. Piquer le fond. Cuire à blanc 10 min à 180°C avec billes de cuisson.", badge: "⏱ 10 min" },
-      { icone: "🥓", titre: "Faire revenir les lardons", detail: "Faire sauter les lardons fumés à la poêle sans matière grasse jusqu'à légère coloration. Égoutter.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Préparer l'appareil", detail: "Fouetter les œufs avec la crème fraîche et le lait. Assaisonner avec sel, poivre et noix de muscade. Ne pas saler trop — les lardons le sont déjà. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
-      { icone: "🏗️", titre: "Garnir", detail: "Disposer les lardons sur le fond de tarte précuit. Verser l'appareil dessus.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C jusqu'à ce que l'appareil soit pris et légèrement doré. Laisser tiédir 5 min avant de couper. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 30-35 min" }
+      { icone: "🥧", titre: "Foncer", detail: "Étaler la pâte brisée dans un moule à tarte, piquer le fond à la fourchette puis garnir de billes de cuisson.", badge: null },
+      { icone: "♨️", titre: "Cuire à blanc", detail: "Précuire le fond à blanc 10 min à 180°C, puis retirer les billes pour que la pâte reste croustillante.", badge: null },
+      { icone: "🥓", titre: "Lardons", detail: "Faire revenir les lardons à la poêle sans matière grasse jusqu'à légère coloration, puis les égoutter sur du papier absorbant.", badge: null },
+      { icone: "🥚", titre: "Appareil", detail: "Fouetter les œufs avec la crème et le lait, assaisonner de poivre et de muscade râpée, et saler très légèrement car les lardons le sont déjà.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Répartir les lardons sur le fond de tarte précuit, parsemer des noix concassées puis verser l'appareil par-dessus.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C pendant 35 min jusqu'à ce que l'appareil soit pris et la surface légèrement dorée et tremblotante au centre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser tiédir 5 min pour faciliter la découpe, puis servir en parts avec une salade verte.", badge: null }
     ]
   },
   potaufeu: {
@@ -556,11 +581,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Démarrer à l'eau froide", detail: "Mettre la viande dans une grande marmite. Couvrir d'eau froide. Porter lentement à ébullition. Écumer soigneusement au fur et à mesure.", badge: "⏱ 20 min d'écumage" },
-      { icone: "🌿", titre: "Ajouter aromates", detail: "Ajouter bouquet garni, ail, oignon piqué de clous de girofle, sel et poivre en grains. Baisser le feu et laisser mijoter doucement. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 1h30" },
-      { icone: "🥕", titre: "Ajouter les légumes", detail: "Éplucher et ajouter carottes, poireaux, navets. Continuer la cuisson à feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 45 min" },
-      { icone: "🥔", titre: "Pommes de terre", detail: "Ajouter les pommes de terre 30 min avant la fin. Elles ne doivent pas se désintégrer.", badge: "⏱ 30 min" },
-      { icone: "🍽️", titre: "Servir", detail: "Servir le bouillon en entrée avec vermicelles. Puis la viande et les légumes avec moutarde, cornichons, fleur de sel et os à moelle grillés.", badge: null }
+      { icone: "💧", titre: "Eau froide", detail: "Déposer la viande et les os dans une grande marmite, couvrir d'eau froide et porter lentement à frémissement.", badge: null },
+      { icone: "🥄", titre: "Écumer", detail: "Écumer soigneusement les impuretés qui remontent à la surface au fur et à mesure pour obtenir un bouillon clair.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Ajouter l'oignon piqué de clous de girofle, l'ail, le sel et le poivre en grains, puis laisser mijoter à feu doux 2 h à couvert entrouvert.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Éplucher et ajouter les carottes, les poireaux et les navets, puis poursuivre la cuisson à feu doux 45 min.", badge: null },
+      { icone: "🥔", titre: "Pommes de terre", detail: "Ajouter les pommes de terre 30 min avant la fin pour qu'elles soient fondantes sans se désintégrer.", badge: null },
+      { icone: "🍵", titre: "Bouillon", detail: "Filtrer une partie du bouillon et le servir en entrée bien chaud, éventuellement avec des vermicelles.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Présenter ensuite la viande et les légumes égouttés, accompagnés de moutarde, de cornichons et de fleur de sel.", badge: null }
     ]
   },
   ramenjaponais: {
@@ -590,11 +617,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍖", titre: "Préparer le bouillon", detail: "Faire bouillir os de porc 5 min, égoutter et rincer. Remettre dans l'eau froide avec gingembre, ail, ciboule. Cuire à petit feu 3h pour un bouillon riche. Assaisonner avec sauce soja, miso et mirin. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: "⏱ 3h bouillon" },
-      { icone: "🥚", titre: "Œufs mollets marinés", detail: "Cuire les œufs 6 min 30 dans l'eau bouillante. Refroidir, écaler. Mariner dans sauce soja + mirin + eau (1:1:1) au moins 2h.", badge: "⏱ 2h marinade" },
-      { icone: "🥩", titre: "Chashu (porc rôti)", detail: "Rouler le ventre de porc et le ficeler. Faire dorer dans une poêle. Braiser dans sauce soja, mirin, saké et sucre 1h30 à feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 1h30" },
-      { icone: "🍜", titre: "Cuire les nouilles", detail: "Cuire les nouilles ramen selon le paquet. Bien les égoutter.", badge: "⏱ 2-3 min" },
-      { icone: "🥢", titre: "Dresser le bol", detail: "Verser le bouillon chaud dans les bols. Ajouter les nouilles. Déposer tranches de chashu, œuf mollet coupé en deux, shiitake sautés, bambou, maïs. Finir avec huile de sésame et nori.", badge: null }
+      { icone: "🍲", titre: "Bouillon", detail: "Blanchir les os de porc 5 min, égoutter et rincer, puis les remettre dans l'eau froide avec l'ail et le gingembre et cuire à petit feu 3 h.", badge: null },
+      { icone: "🥚", titre: "Œufs mollets", detail: "Cuire les œufs 6 min 30 dans l'eau bouillante, les rafraîchir, les écaler puis les faire mariner au moins 2 h dans un mélange de sauce soja et d'eau.", badge: null },
+      { icone: "🐖", titre: "Chashu", detail: "Rouler et ficeler le porc, le faire dorer à la poêle dans un peu d'huile puis le braiser 1 h 30 à feu doux avec sauce soja, sucre et gingembre.", badge: null },
+      { icone: "🍄", titre: "Shiitake", detail: "Émincer les shiitake et les faire sauter dans l'huile à feu vif quelques minutes jusqu'à ce qu'ils soient dorés et parfumés.", badge: null },
+      { icone: "🍜", titre: "Nouilles", detail: "Cuire les nouilles ramen selon le temps indiqué sur le paquet en les gardant fermes, puis les égoutter rapidement.", badge: null },
+      { icone: "🥢", titre: "Dresser", detail: "Verser le bouillon brûlant dans les bols, y déposer les nouilles puis garnir des tranches de chashu, de l'œuf coupé en deux et des shiitake.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Finir d'un filet d'huile de sésame et servir immédiatement bien fumant.", badge: null }
     ]
   },
   tikamasala: {
@@ -625,11 +654,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥛", titre: "Marinade tikka", detail: "Mélanger yaourt, jus de citron, garam masala, curcuma, cumin, gingembre et ail. Y plonger le poulet en cubes. Mariner au frais.", badge: "⏱ 2h minimum" },
-      { icone: "🔥", titre: "Griller le poulet", detail: "Égoutter le poulet. Faire dorer à la poêle ou au gril à feu vif. Réserver. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🍅", titre: "Sauce masala", detail: "Faire revenir oignon, ail, gingembre dans le beurre. Ajouter épices (garam masala, paprika, cumin, coriandre). Puis tomates concassées. Mijoter 15 min. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 15 min" },
-      { icone: "🌀", titre: "Mixer la sauce", detail: "Mixer la sauce pour la rendre onctueuse. Remettre sur feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: null },
-      { icone: "🍦", titre: "Finir", detail: "Ajouter crème fraîche et poulet grillé. Laisser mijoter 10 min. Servir avec riz basmati et naans. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 10 min" }
+      { icone: "🥣", titre: "Marinade", detail: "Mélanger le yaourt, le jus de citron, le garam masala, l'ail et le gingembre, y plonger le poulet en cubes et laisser mariner au frais au moins 1 h.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Égoutter le poulet et le faire dorer à la poêle à feu vif 6 à 8 min jusqu'à une belle coloration caramélisée, puis réserver.", badge: null },
+      { icone: "🧈", titre: "Base", detail: "Faire revenir l'oignon, l'ail et le gingembre dans le beurre, ajouter le garam masala et laisser les épices libérer leurs arômes 1 min.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Ajouter les tomates concassées, saler et laisser mijoter 15 min à feu doux pour obtenir une sauce concentrée.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer la sauce jusqu'à une texture onctueuse, puis la remettre sur feu doux.", badge: null },
+      { icone: "🥛", titre: "Crémer", detail: "Incorporer la crème et le poulet grillé, puis laisser mijoter 10 min à feu doux pour bien lier le tout.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Rectifier l'assaisonnement et servir chaud avec du riz basmati et des naans.", badge: null }
     ]
   },
   phovietnambien: {
@@ -659,10 +690,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Torréfier les épices", detail: "Faire griller à sec oignons coupés en deux et gingembre jusqu'à coloration. Ajouter anis étoilé, cannelle, clous de girofle, cardamome. Torréfier 2 min. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: null },
-      { icone: "🍖", titre: "Préparer le bouillon", detail: "Blanchir les os de bœuf 5 min, égoutter. Remettre avec eau froide, épices torréfiées, sauce poisson et sucre de palme. Écumer régulièrement. ASTUCE PRO : eau bouillante salée 2-3 min puis eau glacée. Arrête la cuisson et garde la couleur vive.", badge: "⏱ 4h minimum" },
-      { icone: "🍜", titre: "Préparer les nouilles", detail: "Tremper les nouilles de riz dans l'eau froide 30 min. Les blanchir 1 min dans l'eau bouillante. Égoutter. ASTUCE PRO : eau bouillante salée 2-3 min puis eau glacée. Arrête la cuisson et garde la couleur vive.", badge: null },
-      { icone: "🥢", titre: "Dresser le pho", detail: "Disposer les nouilles dans les bols. Ajouter le bœuf cru tranché très fin (il cuira dans le bouillon bouillant). Verser le bouillon brûlant. Accompagner de germes de soja, basilic thaï, citron vert, piment.", badge: null }
+      { icone: "🔥", titre: "Torréfier", detail: "Faire griller à sec les oignons coupés en deux et le gingembre jusqu'à coloration, puis ajouter l'anis étoilé et la cannelle et torréfier 2 min.", badge: null },
+      { icone: "🦴", titre: "Blanchir os", detail: "Blanchir les os de bœuf 5 min dans l'eau bouillante puis les égoutter et les rincer pour éliminer les impuretés.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Remettre les os dans l'eau froide avec les épices torréfiées et le sucre, écumer puis laisser mijoter à feu doux 4 h pour un bouillon limpide et parfumé.", badge: null },
+      { icone: "🍜", titre: "Nouilles", detail: "Tremper les nouilles de riz 30 min dans l'eau froide, puis les blanchir 1 min dans l'eau bouillante et les égoutter.", badge: null },
+      { icone: "🔪", titre: "Trancher bœuf", detail: "Émincer le bœuf cru en tranches très fines qui cuiront instantanément au contact du bouillon brûlant.", badge: null },
+      { icone: "🥢", titre: "Dresser", detail: "Répartir les nouilles dans les bols, disposer le bœuf cru par-dessus puis verser le bouillon bouillant qui saisira la viande.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Accompagner de germes de soja, d'herbes fraîches et de quartiers de citron vert à presser au dernier moment.", badge: null }
     ]
   },
   carbonara: {
@@ -692,11 +726,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les spaghetti dans eau bouillante très salée. Les garder al dente. Garder 1 tasse d'eau de cuisson. 1 min de moins que sur l'emballage. Goûter pour vérifier.", badge: null },
-      { icone: "🥓", titre: "Cuire le guanciale", detail: "À sec dans une poêle froide, faire fondre le guanciale à feu moyen-doux. Il doit être croustillant à l'extérieur. Éteindre le feu.", badge: "⏱ 8 min" },
-      { icone: "🥚", titre: "Préparer la crème d'œufs", detail: "Fouetter vigoureusement jaunes + œufs entiers + pecorino râpé + poivre noir généreusement moulu. Le mélange doit être épais.", badge: null },
-      { icone: "🌡️", titre: "L'étape cruciale", detail: "Hors du feu, ajouter les pâtes égouttées dans la poêle avec le guanciale. Verser la crème d'œufs. Mélanger vigoureusement en ajoutant l'eau de cuisson cuillère par cuillère jusqu'à sauce onctueuse. NE PAS remettre sur le feu.", badge: null },
-      { icone: "🧀", titre: "Servir immédiatement", detail: "Dresser dans des assiettes chaudes. Finir avec pecorino et poivre noir. La carbonara ne supporte pas l'attente !", badge: null }
+      { icone: "💧", titre: "Cuire pâtes", detail: "Cuire les spaghetti dans une grande eau bouillante salée en les gardant al dente, et réserver une tasse d'eau de cuisson avant d'égoutter.", badge: null },
+      { icone: "🥓", titre: "Guanciale", detail: "Faire fondre le guanciale en lamelles à feu moyen-doux dans une poêle froide jusqu'à ce qu'il soit doré et croustillant, puis éteindre le feu.", badge: null },
+      { icone: "🥚", titre: "Crème d'œufs", detail: "Fouetter vigoureusement les jaunes et les œufs entiers avec le pecorino râpé et beaucoup de poivre noir jusqu'à obtenir un mélange épais.", badge: null },
+      { icone: "🍝", titre: "Mélanger", detail: "Hors du feu, verser les spaghetti égouttés dans la poêle avec le guanciale et bien les enrober de la graisse parfumée.", badge: null },
+      { icone: "🌀", titre: "Émulsionner", detail: "Ajouter la crème d'œufs et mélanger énergiquement en versant l'eau de cuisson cuillère par cuillère jusqu'à une sauce nappante et brillante, sans remettre sur le feu.", badge: null },
+      { icone: "🧀", titre: "Finir", detail: "Rectifier la texture avec un peu d'eau de cuisson si besoin et terminer d'un voile de pecorino.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser aussitôt dans des assiettes chaudes avec un tour de poivre noir, car la carbonara ne supporte pas l'attente.", badge: null }
     ]
   },
   ceebujen: {
@@ -726,11 +762,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Farcir et mariner le poisson", detail: "Farcir le poisson d'un mélange persil, ail, piment, citron. Frire dans l'huile jusqu'à belle coloration. Réserver. Température idéale 170-180°C. Test : cube de pain dore en 30s.", badge: "⏱ 10 min" },
-      { icone: "🍅", titre: "Préparer la sauce", detail: "Dans la même huile, faire revenir oignon, tomates concassées, pâte de tomate, ail. Ajouter bouillon de poisson et épices (cumin, poivre, laurier).", badge: "⏱ 20 min" },
-      { icone: "🥕", titre: "Cuire les légumes", detail: "Ajouter manioc, carottes, aubergine et choux dans la sauce. Cuire jusqu'à mi-tendreté.", badge: "⏱ 20 min" },
-      { icone: "🍚", titre: "Cuire le riz", detail: "Retirer les légumes. Verser le riz rincé dans la sauce. Ajouter eau si nécessaire. Cuire à feu doux couvert jusqu'à absorption complète. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 20 min" },
-      { icone: "🍽️", titre: "Dresser", detail: "Dresser le riz sur un grand plat. Disposer les légumes et le poisson dessus. Servir avec sauce piquante.", badge: null }
+      { icone: "🐟", titre: "Farcir poisson", detail: "Farcir le poisson d'un hachis d'ail, de persil, de piment et de citron, puis le laisser s'imprégner quelques minutes.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faire frire le poisson dans l'huile bien chaude à 170°C jusqu'à belle coloration sur chaque face, puis le réserver.", badge: null },
+      { icone: "🧅", titre: "Sauce", detail: "Dans la même huile, faire revenir l'oignon, les tomates et l'ail, ajouter le poivre et un peu d'eau pour former une sauce parfumée.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Plonger le manioc et les carottes dans la sauce et les cuire jusqu'à mi-tendreté, puis les retirer et les réserver au chaud.", badge: null },
+      { icone: "🍚", titre: "Cuire riz", detail: "Verser le riz rincé dans la sauce, compléter d'eau si besoin et cuire à feu doux à couvert jusqu'à absorption complète du liquide.", badge: null },
+      { icone: "🐠", titre: "Réchauffer", detail: "Réchauffer brièvement le poisson et les légumes dans la sauce restante pour qu'ils soient bien chauds au moment de servir.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dresser le riz dans un grand plat, disposer le poisson et les légumes par-dessus et servir avec des quartiers de citron.", badge: null }
     ]
   },
   mafewestafricain: {
@@ -760,11 +798,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Faire dorer la viande", detail: "Couper l'agneau ou le bœuf en morceaux. Faire dorer à feu vif dans l'huile. Réserver. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 8 min" },
-      { icone: "🧅", titre: "Faire revenir", detail: "Dans la même casserole, faire revenir l'oignon. Ajouter tomates concassées et pâte de tomate. Cuire 5 min.", badge: null },
-      { icone: "🥜", titre: "Ajouter la pâte d'arachide", detail: "Délayer la pâte d'arachide avec du bouillon chaud. L'ajouter à la sauce avec la viande. Bien mélanger.", badge: null },
-      { icone: "🍠", titre: "Ajouter les légumes", detail: "Ajouter patate douce en cubes, carottes, piment. Laisser mijoter à feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 35 min" },
-      { icone: "🍚", titre: "Servir", detail: "Rectifier l'assaisonnement. Servir sur riz blanc. Le maafé doit être épais et onctueux.", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Détaillez le bœuf en gros cubes de 4 cm, émincez l'oignon, hachez l'ail et coupez la patate douce et la carotte en morceaux réguliers.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Dans une cocotte, faites dorer les morceaux de bœuf à feu vif dans un filet d'huile sur toutes les faces pendant 5 à 6 min, puis réservez-les.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Dans la même cocotte, faites revenir l'oignon et l'ail 4 min, ajoutez la tomate concassée et le concentré de tomate puis laissez compoter 5 min à feu moyen.", badge: null },
+      { icone: "🥜", titre: "Délayer", detail: "Diluez la pâte d'arachide dans un peu d'eau chaude jusqu'à obtenir une crème lisse, incorporez-la à la sauce avec le bœuf et couvrez d'eau à hauteur.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Laissez mijoter à feu doux et à couvert pendant 40 min, en remuant régulièrement pour éviter que la pâte d'arachide n'accroche au fond.", badge: null },
+      { icone: "🥕", titre: "Ajouter légumes", detail: "Ajoutez la patate douce et la carotte, salez puis poursuivez la cuisson 20 à 25 min jusqu'à ce que les légumes soient fondants et la sauce épaisse et onctueuse.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Pendant ce temps, faites cuire le riz blanc, rectifiez l'assaisonnement du maafé et servez-le bien nappé sur le riz fumant.", badge: null }
     ]
   },
   gnocchismaison: {
@@ -794,11 +834,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Cuire les pommes de terre en robe des champs. Éplucher à chaud et écraser immédiatement en purée fine.", badge: "⏱ 30 min" },
-      { icone: "🌾", titre: "Former la pâte", detail: "Laisser la purée tiédir. Ajouter farine, œuf et sel. Mélanger sans trop travailler jusqu'à pâte homogène. Elle doit être souple mais non collante.", badge: null },
-      { icone: "🥔", titre: "Façonner les gnocchis", detail: "Rouler la pâte en boudins de 2cm. Couper en tronçons de 2cm. Passer chaque gnocchi sur une fourchette pour les strier. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "💧", titre: "Cuire les gnocchis", detail: "Plonger dans eau bouillante salée. Ils sont cuits quand ils remontent à la surface. Égoutter après 30 sec de flottaison.", badge: "⏱ 2-3 min" },
-      { icone: "🧀", titre: "Sauce gorgonzola", detail: "Faire fondre le gorgonzola dans la crème à feu doux. Ajouter les gnocchis, mélanger délicatement. Servir avec noix et roquette. À FEU DOUX strictement — sinon ça brûle vite.", badge: null }
+      { icone: "🥔", titre: "Cuire", detail: "Faites cuire les pommes de terre entières en robe des champs dans l'eau salée pendant 30 à 35 min, jusqu'à ce qu'une lame les transperce sans résistance.", badge: null },
+      { icone: "🍠", titre: "Écraser", detail: "Épluchez les pommes de terre encore chaudes et passez-les aussitôt au presse-purée pour obtenir une purée fine et sèche, puis laissez tiédir 5 min.", badge: null },
+      { icone: "🥣", titre: "Pétrir", detail: "Incorporez la farine, l'œuf et le sel à la purée tiède, mélangez sans trop travailler jusqu'à une pâte souple et homogène, à peine collante.", badge: null },
+      { icone: "🔪", titre: "Façonner", detail: "Roulez la pâte en boudins de 2 cm, coupez des tronçons de 2 cm et striez chaque gnocchi en le roulant sur le dos d'une fourchette farinée.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Plongez les gnocchis par petites quantités dans une grande casserole d'eau bouillante salée et égouttez-les 30 secondes après qu'ils remontent à la surface.", badge: null },
+      { icone: "🧀", titre: "Crémer", detail: "Dans une poêle, faites fondre le gorgonzola dans la crème à feu doux en remuant jusqu'à obtenir une sauce nappante et lisse, salez légèrement.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Mélangez délicatement les gnocchis à la sauce gorgonzola, parsemez de noix concassées et servez aussitôt bien chaud.", badge: null }
     ]
   },
   poulettandoori: {
@@ -829,10 +871,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Entailler le poulet", detail: "Faire des entailles profondes dans la chair du poulet pour que la marinade pénètre bien.", badge: null },
-      { icone: "🌶️", titre: "Marinade tandoori", detail: "Mélanger yaourt, jus de citron, gingembre et ail râpés, garam masala, cumin, coriandre, paprika (pour la couleur rouge), curcuma et sel. Enrober généreusement. Mariner au frais.", badge: "⏱ 4h minimum, 24h idéal" },
-      { icone: "🔥", titre: "Cuire à haute température", detail: "Cuire au four préchauffé à 220°C sur grille (pour que l'air circule). Ou au barbecue pour le goût fumé authentique.", badge: "⏱ 25-30 min à 220°C" },
-      { icone: "🍋", titre: "Servir", detail: "Servir avec rondelles de citron, oignon rouge en lamelles, coriandre fraîche, naans et sauce raïta (yaourt concombre menthe).", badge: null }
+      { icone: "🔪", titre: "Entailler", detail: "Pratiquez des entailles profondes dans les morceaux de poulet jusqu'à l'os afin que la marinade pénètre bien la chair.", badge: null },
+      { icone: "🧄", titre: "Préparer", detail: "Râpez l'ail, le gingembre et l'oignon, puis pressez le citron pour réunir la base aromatique de la marinade.", badge: null },
+      { icone: "🥣", titre: "Mariner", detail: "Mélangez le yaourt avec le garam masala, le paprika, l'ail, le gingembre, l'oignon, le jus de citron et le sel, enrobez généreusement le poulet.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Couvrez et laissez mariner au réfrigérateur au moins 3 h, idéalement une nuit, pour développer toute la saveur et la couleur.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffez le four à 220°C en chaleur tournante et disposez le poulet sur une grille au-dessus d'une plaque pour récupérer les jus.", badge: null },
+      { icone: "🍗", titre: "Cuire", detail: "Enfournez 25 à 30 min en retournant les morceaux à mi-cuisson, jusqu'à ce que la surface soit légèrement caramélisée et la chair cuite à cœur.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servez le poulet tandoori avec des rondelles de citron, de l'oignon émincé et un raïta de yaourt, accompagné de naans.", badge: null }
     ]
   },
   pekinduckeasy: {
@@ -862,11 +907,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🦆", titre: "Préparer le canard", detail: "Sécher la peau du canard avec du papier absorbant. Mélanger miel, sauce soja, vinaigre de riz et cinq-épices. Badigeonner le canard généreusement. Laisser sécher à l'air 2h (ou 1 nuit au frigo).", badge: "⏱ 2h séchage" },
-      { icone: "🔥", titre: "Rôtir", detail: "Préchauffer à 200°C. Poser le canard sur une grille au-dessus d'un plat. Rôtir en retournant et badigeonnant toutes les 30 min. Préchauffer le four 10 min avant. Chaleur tournante pour un rôtissage uniforme.", badge: "⏱ 1h30 à 200°C" },
-      { icone: "🔪", titre: "Découper", detail: "Laisser reposer 10 min. Découper en tranches fines en séparant la peau croustillante de la chair. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥙", titre: "Préparer les crêpes", detail: "Réchauffer les crêpes pékinoises (ou crêpes fines maison) dans de la vapeur 2 min.", badge: null },
-      { icone: "🥢", titre: "Dresser et servir", detail: "Chaque convive garnit sa crêpe de sauce hoisin, concombre en julienne, ciboule émincée et tranches de canard laqué. Rouler et déguster !", badge: null }
+      { icone: "🧻", titre: "Sécher", detail: "Épongez soigneusement la peau du canard avec du papier absorbant pour qu'elle soit bien sèche et devienne croustillante à la cuisson.", badge: null },
+      { icone: "🍯", titre: "Laquer", detail: "Mélangez le miel avec un peu d'eau chaude et badigeonnez généreusement toute la peau du canard de ce mélange brillant.", badge: null },
+      { icone: "❄️", titre: "Sécher air", detail: "Laissez le canard sécher à l'air libre 2 h, ou une nuit au réfrigérateur, pour que la peau se tende et durcisse légèrement.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Préchauffez le four à 200°C et rôtissez le canard sur une grille pendant 1h30 environ, en le badigeonnant de miel toutes les 30 min.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Laissez reposer 10 min puis découpez le canard en fines tranches en séparant bien la peau croustillante de la chair.", badge: null },
+      { icone: "🥒", titre: "Garnir", detail: "Taillez le concombre en julienne, émincez la ciboule et réchauffez les crêpes pékinoises à la vapeur pendant 2 min.", badge: null },
+      { icone: "🌯", titre: "Servir", detail: "Chacun nappe sa crêpe de sauce hoisin, ajoute concombre, ciboule et tranches de canard, puis la roule pour la déguster aussitôt.", badge: null }
     ]
   },
   ossobuco: {
@@ -896,11 +943,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🦴", titre: "Fariner et dorer", detail: "Fariner les tranches de jarret. Les faire dorer à feu vif dans huile + beurre. Bien dorer toutes les faces. Réserver. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🧅", titre: "Soffritto", detail: "Dans la même casserole, faire fondre oignon, carotte et céleri finement émincés.", badge: "⏱ 8 min" },
-      { icone: "🍷", titre: "Déglacer et braiser", detail: "Déglacer au vin blanc. Ajouter tomates concassées, bouillon, zeste de citron et thym. Remettre le veau. Couvrir. ASTUCE CHEF : récupérer TOUS les sucs collés au fond = saveur intense.", badge: "⏱ 1h30 à feu doux" },
-      { icone: "🌿", titre: "Gremolata", detail: "Mélanger finement zeste de citron, ail et persil plat ciselés. Parsemer sur l'osso buco en fin de cuisson.", badge: null },
-      { icone: "🍚", titre: "Servir", detail: "Servir avec risotto milanese au safran. Ne pas oublier la moelle dans l'os — c'est le meilleur !", badge: null }
+      { icone: "🍖", titre: "Fariner", detail: "Farinez légèrement les tranches de jarret de veau sur les deux faces et tapotez pour retirer l'excédent de farine.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Faites dorer les tranches à feu vif dans un mélange d'huile d'olive et de beurre, 3 min par face jusqu'à belle coloration, puis réservez.", badge: null },
+      { icone: "🧅", titre: "Soffritto", detail: "Dans la cocotte, faites suer l'oignon finement émincé à feu moyen pendant 5 min jusqu'à ce qu'il devienne translucide et fondant.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Versez le vin blanc pour déglacer en grattant les sucs, laissez réduire de moitié puis ajoutez les tomates, le bouillon et l'ail.", badge: null },
+      { icone: "🍲", titre: "Braiser", detail: "Remettez le jarret dans la cocotte, couvrez et laissez braiser à feu très doux pendant 1h30 jusqu'à ce que la viande se détache de l'os.", badge: null },
+      { icone: "🌿", titre: "Gremolata", detail: "Mélangez le zeste de citron, l'ail haché et le persil ciselé, puis parsemez cette gremolata sur l'osso buco en fin de cuisson.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifiez l'assaisonnement et servez chaque tranche avec sa moelle et un risotto, en arrosant du jus de braisage.", badge: null }
     ]
   },
   tajinemouton: {
@@ -930,11 +979,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Faire dorer l'agneau", detail: "Couper l'agneau en morceaux. Faire dorer dans l'huile d'olive avec oignons émincés. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 10 min" },
-      { icone: "🌶️", titre: "Ajouter les épices", detail: "Ajouter cannelle, gingembre, curcuma, safran, sel et poivre. Bien enrober la viande. Couvrir d'eau ou de bouillon.", badge: null },
-      { icone: "⏳", titre: "Cuisson lente", detail: "Cuire à feu doux couvert jusqu'à ce que la viande soit très tendre. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 1h30" },
-      { icone: "🫐", titre: "Ajouter pruneaux et miel", detail: "30 min avant la fin, ajouter les pruneaux et le miel. Laisser caraméliser légèrement. ASTUCE CHEF : surveiller la couleur ambrée, pas plus sombre sinon amer.", badge: "⏱ 30 min" },
-      { icone: "🌰", titre: "Finir et servir", detail: "Faire dorer les amandes effilées au beurre. Parsemer sur le tajine. Servir avec semoule ou pain marocain. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Détaillez l'agneau en gros morceaux et émincez finement les oignons pour la base du tajine.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Faites dorer l'agneau dans l'huile d'olive à feu vif avec les oignons pendant 6 à 8 min jusqu'à belle coloration.", badge: null },
+      { icone: "🌿", titre: "Épicer", detail: "Ajoutez la cannelle, le gingembre, le sel et le poivre, enrobez bien la viande puis couvrez d'eau à hauteur.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Couvrez et laissez mijoter à feu doux pendant 1h15 à 1h30, jusqu'à ce que l'agneau soit fondant et la sauce réduite.", badge: null },
+      { icone: "🍑", titre: "Confire", detail: "Ajoutez les pruneaux et le miel 30 min avant la fin, et laissez confire doucement jusqu'à une belle teinte ambrée et brillante.", badge: null },
+      { icone: "🥜", titre: "Dorer amandes", detail: "Faites dorer les amandes effilées au beurre dans une poêle quelques minutes en remuant pour qu'elles soient uniformément blondes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez le tajine d'amandes dorées et servez bien chaud avec de la semoule ou du pain marocain.", badge: null }
     ]
   },
   souvlakiagneau: {
@@ -965,10 +1016,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Marinade", detail: "Couper l'agneau en cubes. Mariner avec huile d'olive, jus de citron, origan, ail, sel et poivre. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 2h minimum" },
-      { icone: "🍢", titre: "Brochettes", detail: "Enfiler sur brochettes. Cuire au grill ou barbecue en tournant.", badge: "⏱ 10-12 min" },
-      { icone: "🥒", titre: "Tzatziki", detail: "Mélanger yaourt grec, concombre râpé essoré, ail, aneth, jus de citron.", badge: null },
-      { icone: "🥙", titre: "Servir", detail: "Réchauffer les pitas. Garnir de tzatziki, tomate, oignon rouge et la viande. Arroser d'huile d'olive.", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Coupez l'agneau en cubes réguliers de 3 cm afin d'obtenir une cuisson homogène sur les brochettes.", badge: null },
+      { icone: "🫒", titre: "Mariner", detail: "Mélangez l'huile d'olive, le jus de citron, l'ail écrasé, le sel et le poivre, enrobez l'agneau et laissez mariner au frais au moins 1 h.", badge: null },
+      { icone: "🥒", titre: "Tzatziki", detail: "Râpez et essorez le concombre, mélangez-le au yaourt grec avec l'ail, un filet de citron, du sel et du poivre, puis réservez au frais.", badge: null },
+      { icone: "🍢", titre: "Embrocher", detail: "Enfilez les cubes d'agneau sur des brochettes en les serrant légèrement pour qu'ils restent moelleux à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Faites griller les brochettes 10 à 12 min sur un grill bien chaud en les tournant régulièrement, jusqu'à une croûte dorée et l'intérieur rosé.", badge: null },
+      { icone: "🥙", titre: "Garnir", detail: "Réchauffez les pitas, garnissez-les de tzatziki, de tomate, d'oignon émincé et des morceaux d'agneau grillé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arrosez d'un filet d'huile d'olive, refermez les pitas et servez aussitôt bien chaud.", badge: null }
     ]
   },
   dorade_chermoula: {
@@ -998,10 +1052,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Préparer la chermoula", detail: "Mixer coriandre, persil, ail, cumin, paprika, curcuma, jus de citron et huile d'olive. La chermoula doit être une pâte verte et parfumée.", badge: null },
-      { icone: "🐟", titre: "Mariner la dorade", detail: "Entailler le poisson. L'enduire généreusement de chermoula dedans et dehors. Mariner au frigo.", badge: "⏱ 1h minimum" },
-      { icone: "🔥", titre: "Cuire au four", detail: "Disposer dans un plat avec rondelles de citron, tomates, olives et poivrons. Couvrir de papier alu les 20 premières minutes.", badge: "⏱ 35 min à 190°C" },
-      { icone: "🍋", titre: "Servir", detail: "Servir avec couscous ou pain marocain. Arroser du jus de cuisson.", badge: null }
+      { icone: "🌿", titre: "Chermoula", detail: "Mixez la coriandre, le persil, l'ail, le jus de citron et l'huile d'olive jusqu'à obtenir une pâte verte parfumée et homogène.", badge: null },
+      { icone: "🐟", titre: "Entailler", detail: "Écaillez et videz la dorade, puis pratiquez deux ou trois entailles de chaque côté pour que la marinade pénètre la chair.", badge: null },
+      { icone: "🖌️", titre: "Mariner", detail: "Enduisez généreusement la dorade de chermoula à l'intérieur et à l'extérieur, puis laissez mariner au frais au moins 30 min.", badge: null },
+      { icone: "🍅", titre: "Garnir plat", detail: "Disposez la dorade dans un plat avec les rondelles de citron, les tomates, le poivron en lanières et les olives.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 200°C, couvert de papier aluminium les 20 premières minutes, puis poursuivez 15 à 20 min à découvert jusqu'à ce que la chair se détache.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Arrosez la dorade de son jus de cuisson et servez-la avec un couscous ou du pain marocain pour saucer.", badge: null }
     ]
   },
   pouletchicken65: {
@@ -1031,10 +1087,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Marinade épicée", detail: "Mélanger yaourt, farine de riz, fécule, gingembre-ail râpé, piment rouge, curry, curcuma, sel et colorant rouge (optionnel). Mariner le poulet en morceaux.", badge: "⏱ 2h minimum" },
-      { icone: "🔥", titre: "Frire en deux fois", detail: "Première friture à 160°C pour cuire. Deuxième friture à 190°C pour croustiller.", badge: "⏱ 5 min + 2 min" },
-      { icone: "🌿", titre: "Finir à la poêle", detail: "Sauter rapidement avec feuilles de curry, piment vert, ail et gingembre. Arroser de jus de citron.", badge: null },
-      { icone: "🍋", titre: "Servir", detail: "Servir avec rondelles d'oignon et citron vert. Parsemer de coriandre fraîche.", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Détaillez le poulet en bouchées régulières, râpez l'ail et le gingembre et pressez le citron.", badge: null },
+      { icone: "🌶️", titre: "Mariner", detail: "Mélangez le yaourt, la farine, le piment, le curry, l'ail, le gingembre, le sel et un peu de citron, enrobez le poulet et laissez mariner 30 min au frais.", badge: null },
+      { icone: "🔥", titre: "Frire 1", detail: "Chauffez l'huile à 160°C et plongez le poulet par petites quantités pour le cuire à cœur pendant 4 à 5 min, puis égouttez-le.", badge: null },
+      { icone: "💥", titre: "Frire 2", detail: "Montez l'huile à 190°C et replongez les morceaux 1 à 2 min pour les rendre bien croustillants et dorés.", badge: null },
+      { icone: "🍳", titre: "Sauter", detail: "Dans une poêle, faites sauter rapidement le poulet avec l'ail, le gingembre et un peu de piment, puis arrosez d'un filet de citron.", badge: null },
+      { icone: "🧅", titre: "Servir", detail: "Servez le Chicken 65 brûlant avec des rondelles d'oignon et de citron, et parsemez de coriandre fraîche.", badge: null }
     ]
   },
   pierogi: {
@@ -1064,11 +1122,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte à pierogi", detail: "Mélanger farine, œuf, sel et eau tiède jusqu'à pâte souple. Laisser reposer 30 min sous film. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 30 min repos" },
-      { icone: "🥔", titre: "Farce pomme de terre", detail: "Cuire les pommes de terre, écraser. Mélanger avec fromage blanc ou fromage frais, oignon sauté, sel, poivre.", badge: null },
-      { icone: "🥟", titre: "Former les pierogi", detail: "Étaler la pâte finement. Découper en cercles de 8cm. Déposer une cuillerée de farce. Plier en demi-lune et souder les bords. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "💧", titre: "Bouillir", detail: "Plonger dans eau bouillante salée jusqu'à ce qu'ils remontent. Égoutter.", badge: "⏱ 4-5 min" },
-      { icone: "🍳", titre: "Poêler et servir", detail: "Faire dorer au beurre avec oignons caramélisés. Servir avec crème sure et ciboulette. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 3 min" }
+      { icone: "🥣", titre: "Pétrir", detail: "Mélangez la farine, le sel et l'eau tiède jusqu'à obtenir une pâte souple et lisse qui ne colle plus aux doigts.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Couvrez la pâte d'un film et laissez-la reposer 30 min à température ambiante pour qu'elle devienne élastique et facile à étaler.", badge: null },
+      { icone: "🥔", titre: "Farce", detail: "Cuisez les pommes de terre, écrasez-les puis mélangez-les avec le fromage, l'oignon sauté, le sel et le poivre.", badge: null },
+      { icone: "🔪", titre: "Former", detail: "Étalez la pâte finement, découpez des cercles de 8 cm, déposez une cuillerée de farce et soudez bien les bords en demi-lune.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Plongez les pierogi dans l'eau bouillante salée et égouttez-les délicatement dès qu'ils remontent à la surface, après 3 à 4 min.", badge: null },
+      { icone: "🧈", titre: "Poêler", detail: "Faites dorer les pierogi au beurre dans une poêle avec des oignons caramélisés jusqu'à ce qu'ils soient croustillants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez les pierogi chauds nappés de crème et parsemés de ciboulette ciselée.", badge: null }
     ]
   },
   tteokbokki: {
@@ -1098,10 +1158,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💧", titre: "Faire tremper les tteok", detail: "Si les gâteaux de riz sont congelés ou secs, les faire tremper 20 min dans l'eau froide.", badge: null },
-      { icone: "🌶️", titre: "Sauce gochujang", detail: "Mélanger gochujang, sauce soja, sucre et ail dans le bouillon (anchois ou légumes). Porter à ébullition.", badge: null },
-      { icone: "🍱", titre: "Cuire les tteok", detail: "Ajouter les gâteaux de riz dans la sauce. Cuire en remuant jusqu'à sauce épaissie et tteok tendres.", badge: "⏱ 10-12 min" },
-      { icone: "🥚", titre: "Garnitures", detail: "Ajouter galettes de poisson (eomuk) si disponibles, oignons verts et un œuf dur. Servir chaud et bien pimenté !", badge: null }
+      { icone: "💧", titre: "Tremper", detail: "Si les tteok (gâteaux de riz) sont secs ou congelés, les faire tremper 20 min dans l'eau froide pour les ramollir, puis les égoutter.", badge: null },
+      { icone: "🧄", titre: "Préparer", detail: "Écraser ou hacher finement l'ail et le réserver ; séparer délicatement les bâtonnets de tteok collés entre eux.", badge: null },
+      { icone: "🥄", titre: "Sauce", detail: "Mélanger le gochujang, la sauce soja et le sucre dans le bouillon (anchois ou légumes) avec l'ail jusqu'à obtenir une sauce homogène.", badge: null },
+      { icone: "🔥", titre: "Bouillir", detail: "Verser la sauce dans une large poêle et porter à ébullition à feu moyen-vif pendant 3 à 4 min.", badge: null },
+      { icone: "🍢", titre: "Cuire", detail: "Ajouter les tteok et cuire 8 à 10 min en remuant souvent, jusqu'à ce que la sauce épaississe et nappe les gâteaux de riz devenus tendres.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Goûter et rectifier en sucre ou gochujang selon le piquant désiré ; la sauce doit être brillante et bien rouge.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir très chaud, parsemé d'oignons verts émincés et, si possible, d'un œuf dur et de galettes de poisson eomuk.", badge: null }
     ]
   },
   porc_pulled: {
@@ -1131,10 +1194,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Préparer le rub", detail: "Mélanger paprika fumé, cassonade, ail en poudre, oignon, cumin, sel, poivre, piment. Enrober généreusement le porc. Filmer.", badge: "⏱ 12h frigo idéal" },
-      { icone: "🔥", titre: "Cuisson basse température", detail: "Cuire au four à 120°C couvert, ou dans une cocotte en fonte. La viande doit atteindre 90°C à cœur.", badge: "⏱ 5-6h à 120°C" },
-      { icone: "🐷", titre: "Effilocher", detail: "Sortir la viande, laisser reposer 30 min. Effilocher avec deux fourchettes. Arroser du jus de cuisson. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 30 min repos" },
-      { icone: "🍖", titre: "Sauce BBQ", detail: "Mélanger la viande avec la sauce BBQ. Servir dans des buns burger avec coleslaw.", badge: null }
+      { icone: "🌶️", titre: "Rub", detail: "Mélanger le rub (paprika fumé, cassonade, ail et oignon en poudre, cumin, sel, poivre) et enrober généreusement l'épaule de porc, puis filmer et laisser 1 h au frais.", badge: null },
+      { icone: "🧅", titre: "Préparer", detail: "Émincer l'oignon et écraser l'ail, les disposer au fond d'une cocotte avec un fond de fumée liquide ou de bouillon.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisir le porc sur toutes ses faces à feu vif quelques minutes pour développer une belle croûte colorée.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Couvrir et enfourner à 120°C pendant environ 5 h, jusqu'à ce que la viande atteigne 90°C à cœur et se défasse toute seule.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Sortir la viande et la laisser reposer 30 min sous une feuille d'alu : ce repos est essentiel pour une texture fondante.", badge: null },
+      { icone: "🍴", titre: "Effilocher", detail: "Effilocher le porc à deux fourchettes en l'arrosant du jus de cuisson récupéré au fond de la cocotte.", badge: null },
+      { icone: "🍔", titre: "Servir", detail: "Mélanger avec la sauce BBQ et servir dans des buns avec un coleslaw croquant.", badge: null }
     ]
   },
   braiseboeuf_asiatique: {
@@ -1164,10 +1230,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Saisir les joues", detail: "Faire dorer les joues de bœuf sur toutes les faces dans huile à feu vif. Réserver. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🍯", titre: "Préparer la braise", detail: "Dans la même cocotte, faire revenir ail et gingembre. Ajouter sauce soja, mirin, saké, sucre de palme, anis étoilé et bouillon. Porter à ébullition.", badge: null },
-      { icone: "⏳", titre: "Braiser longuement", detail: "Remettre les joues. Couvrir et cuire à feu très doux. La viande doit se défaire à la fourchette.", badge: "⏱ 2h30 à feu doux" },
-      { icone: "🍚", titre: "Réduire et servir", detail: "Retirer la viande, réduire la sauce à feu vif 5 min. Napper les joues. Servir avec riz vapeur et bok choy sauté. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Parer les joues de bœuf, émincer l'ail et le gingembre, et préparer l'anis étoilé.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Faire dorer les joues sur toutes les faces dans l'huile à feu vif pour caraméliser les sucs, puis les réserver.", badge: null },
+      { icone: "🧄", titre: "Aromates", detail: "Dans la même cocotte, faire revenir l'ail et le gingembre 1 min à feu moyen jusqu'à libérer leurs parfums.", badge: null },
+      { icone: "🍶", titre: "Braise", detail: "Déglacer avec la sauce soja, le mirin et le saké, ajouter le sucre, l'anis et un peu de bouillon, puis porter à ébullition.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Remettre les joues, couvrir et laisser braiser à feu très doux environ 2 h 30, jusqu'à ce que la viande se défasse à la fourchette.", badge: null },
+      { icone: "🥄", titre: "Réduire", detail: "Retirer la viande et réduire la sauce à feu vif 5 min jusqu'à ce qu'elle devienne sirupeuse et brillante.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Napper les joues de sauce et servir avec un riz vapeur et un bok choy sauté.", badge: null }
     ]
   },
   paprikashpoulet: {
@@ -1197,10 +1266,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire revenir l'oignon", detail: "Faire fondre les oignons émincés dans le saindoux (ou beurre) jusqu'à dorure.", badge: "⏱ 8 min" },
-      { icone: "🌶️", titre: "Paprika", detail: "Hors du feu, ajouter le paprika doux hongrois en grande quantité. Mélanger. Remettre sur feu doux (le paprika brûle facilement). À FEU DOUX strictement — sinon ça brûle vite.", badge: null },
-      { icone: "🍗", titre: "Ajouter le poulet", detail: "Ajouter les morceaux de poulet. Couvrir de bouillon. Saler. Laisser mijoter couvert. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 30 min" },
-      { icone: "🍦", titre: "Sauce à la crème", detail: "Retirer le poulet. Mélanger crème fraîche + 1 c.à.s de farine. Incorporer dans la sauce chaude en fouettant. Remettre le poulet. Servir avec nouilles hongroises (csipetke) ou gnocchis. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer finement les oignons et détailler le poulet en morceaux réguliers, saler légèrement la viande.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire fondre le beurre (ou saindoux) et y faire revenir les oignons à feu moyen 8 à 10 min jusqu'à belle dorure.", badge: null },
+      { icone: "🌶️", titre: "Paprika", detail: "Hors du feu, ajouter une grande quantité de paprika doux hongrois et mélanger, puis remettre à feu doux car le paprika brûle très vite.", badge: null },
+      { icone: "🍗", titre: "Mijoter", detail: "Ajouter le poulet, couvrir de bouillon, saler et laisser mijoter à couvert environ 25 min jusqu'à cuisson tendre.", badge: null },
+      { icone: "🥛", titre: "Crème", detail: "Retirer le poulet, mélanger la crème avec la farine puis l'incorporer en fouettant dans la sauce chaude pour l'épaissir.", badge: null },
+      { icone: "♨️", titre: "Lier", detail: "Remettre le poulet dans la sauce crémeuse et réchauffer 5 min à feu doux sans faire bouillir.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir nappé de sauce avec des nouilles hongroises (csipetke) ou des gnocchis.", badge: null }
     ]
   },
   bibimbap: {
@@ -1230,11 +1302,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Mariner le bœuf", detail: "Émincer le bœuf finement. Mariner avec sauce soja, sucre, ail, huile de sésame et poivre 20 min.", badge: "⏱ 20 min" },
-      { icone: "🥕", titre: "Préparer les légumes", detail: "Sauter séparément courgette, carotte et épinards à l'huile de sésame. Assaisonner chacun avec sel et ail. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
-      { icone: "🥩", titre: "Cuire le bœuf", detail: "Faire sauter le bœuf à feu vif jusqu'à cuisson. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 3 min" },
-      { icone: "🍳", titre: "Œuf sur le plat", detail: "Cuire un œuf au plat avec jaune coulant par personne.", badge: null },
-      { icone: "🥢", titre: "Dresser et mélanger", detail: "Disposer riz au fond du bol. Placer chaque garniture en secteurs colorés. Poser l'œuf au centre. Ajouter gochujang. Tout mélanger avant de manger !", badge: null }
+      { icone: "🥩", titre: "Mariner", detail: "Émincer le bœuf finement et le faire mariner 20 min avec sauce soja, sucre, ail, huile de sésame et poivre.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Rincer le riz et le cuire dans l'eau jusqu'à absorption complète, puis le réserver chaud et nacré.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Sauter séparément la courgette, la carotte et les épinards à l'huile, en assaisonnant chacun de sel et d'un peu d'ail.", badge: null },
+      { icone: "🔥", titre: "Bœuf", detail: "Faire sauter le bœuf mariné à feu vif 3 à 4 min jusqu'à ce qu'il soit bien saisi et caramélisé.", badge: null },
+      { icone: "🍳", titre: "Œuf", detail: "Cuire un œuf au plat par personne en gardant le jaune coulant.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Répartir le riz au fond des bols et disposer chaque garniture en secteurs colorés, avec l'œuf au centre.", badge: null },
+      { icone: "🌶️", titre: "Servir", detail: "Ajouter une cuillère de gochujang et mélanger le tout juste avant de déguster.", badge: null }
     ]
   },
   moquecabresil: {
@@ -1264,11 +1338,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Mariner le poisson", detail: "Couper le poisson en morceaux. Mariner avec jus de citron vert, ail, sel et coriandre 30 min. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 30 min" },
-      { icone: "🧅", titre: "Base aromatique", detail: "Dans une casserole, faire revenir oignon et poivron. Ajouter tomates concassées et laisser réduire 5 min. ASTUCE CHEF : la sauce doit napper le dos d'une cuillère = bonne consistance.", badge: null },
-      { icone: "🥥", titre: "Lait de coco", detail: "Verser le lait de coco et l'huile de dendê (ou huile de palme). Assaisonner. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
-      { icone: "🐟", titre: "Cuire le poisson", detail: "Ajouter le poisson mariné. Cuire doucement sans toucher pour ne pas l'émietter.", badge: "⏱ 10-12 min" },
-      { icone: "🌿", titre: "Servir", detail: "Parsemer de coriandre fraîche. Servir avec riz blanc et farofa (farine de manioc torréfiée).", badge: null }
+      { icone: "🐟", titre: "Mariner", detail: "Couper le poisson en gros morceaux et le faire mariner 30 min avec le jus de citron vert, l'ail, le sel et un peu de coriandre.", badge: null },
+      { icone: "🧅", titre: "Base", detail: "Faire revenir l'oignon émincé dans l'huile, ajouter les tomates concassées et laisser réduire 5 min en sauce parfumée.", badge: null },
+      { icone: "🥥", titre: "Coco", detail: "Verser le lait de coco, assaisonner de sel et porter à frémissement à feu doux pour bien lier la sauce.", badge: null },
+      { icone: "🍲", titre: "Cuire", detail: "Déposer délicatement le poisson mariné dans la sauce et cuire 10 min à feu doux sans remuer pour ne pas l'émietter.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Parsemer généreusement de coriandre fraîche ciselée et rectifier l'assaisonnement en fin de cuisson.", badge: null },
+      { icone: "🥄", titre: "Farofa", detail: "Torréfier à sec la farine de manioc à la poêle quelques minutes jusqu'à légère coloration pour la farofa.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir la moqueca bien chaude avec du riz blanc et la farofa croustillante à côté.", badge: null }
     ]
   },
   rendangboeuf: {
@@ -1298,11 +1374,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Pâte de piment", detail: "Mixer piments, échalotes, ail, galanga, curcuma, citronnelle et gingembre pour obtenir une pâte fine.", badge: null },
-      { icone: "🥘", titre: "Faire revenir la pâte", detail: "Dans une cocotte, faire revenir la pâte à feu moyen jusqu'à ce qu'elle sèche et soit très parfumée.", badge: "⏱ 5 min" },
-      { icone: "🥥", titre: "Ajouter bœuf et coco", detail: "Ajouter le bœuf en cubes et le lait de coco. Ajouter feuilles de kaffir lime et tamarin. Porter à ébullition.", badge: null },
-      { icone: "⏳", titre: "Mijoter longuement", detail: "Baisser le feu et cuire à découvert en remuant régulièrement. Le liquide doit s'évaporer complètement. Le bœuf finit par frire dans sa propre graisse et caraméliser.", badge: "⏱ 2h30-3h" },
-      { icone: "🍚", titre: "Servir", detail: "Servir avec riz vapeur et sambals. Le rendang doit être brun foncé et sec. Se bonifie le lendemain.", badge: null }
+      { icone: "🌶️", titre: "Pâte", detail: "Mixer les piments, l'ail, le galanga, la citronnelle et le gingembre en une pâte d'épices bien fine.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Détailler le bœuf en gros cubes réguliers pour une cuisson lente homogène.", badge: null },
+      { icone: "🍳", titre: "Revenir", detail: "Faire revenir la pâte d'épices à feu moyen dans une cocotte jusqu'à ce qu'elle sèche et devienne très parfumée.", badge: null },
+      { icone: "🥥", titre: "Coco", detail: "Ajouter les cubes de bœuf et le lait de coco, mélanger et porter doucement à ébullition.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Cuire à découvert environ 2 h 30 à feu doux en remuant régulièrement jusqu'à évaporation quasi totale du liquide.", badge: null },
+      { icone: "🔥", titre: "Caraméliser", detail: "Poursuivre la cuisson : le bœuf finit par frire dans sa propre graisse et prend une teinte brun foncé.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir le rendang sec et fondant avec du riz vapeur ; il se bonifie réchauffé le lendemain.", badge: null }
     ]
   },
   tacoshijosepastor: {
@@ -1333,10 +1411,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Marinade achiote", detail: "Mélanger pâte d'achiote, jus d'orange, vinaigre, ail, cumin, origan, sel. Couper le porc en tranches fines et mariner. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 2h minimum" },
-      { icone: "🍍", titre: "Cuire porc et ananas", detail: "Cuire le porc dans une poêle très chaude par petites quantités pour bien dorer. Griller les tranches d'ananas. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 8 min" },
-      { icone: "🔪", titre: "Hacher", detail: "Couper porc et ananas en petits dés. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌮", titre: "Assembler", detail: "Chauffer les tortillas. Garnir de porc, ananas, oignon blanc émincé, coriandre fraîche. Arroser de jus de citron vert et salsa verde.", badge: null }
+      { icone: "🌶️", titre: "Marinade", detail: "Mélanger la pâte d'achiote, le jus d'orange, l'ail et les épices, puis y faire mariner les fines tranches de porc plusieurs heures.", badge: null },
+      { icone: "🍍", titre: "Préparer", detail: "Couper l'ananas en tranches, émincer l'oignon blanc et ciseler la coriandre fraîche.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Cuire le porc mariné dans une poêle très chaude par petites quantités pour bien le dorer.", badge: null },
+      { icone: "🍳", titre: "Griller", detail: "Griller les tranches d'ananas dans la même poêle jusqu'à caramélisation des bords.", badge: null },
+      { icone: "🔪", titre: "Hacher", detail: "Détailler le porc et l'ananas en petits dés réguliers pour la garniture.", badge: null },
+      { icone: "🫓", titre: "Tortillas", detail: "Chauffer les tortillas de maïs à sec quelques secondes par face pour les rendre souples.", badge: null },
+      { icone: "🌮", titre: "Servir", detail: "Garnir chaque tortilla de porc, d'ananas, d'oignon et de coriandre, puis arroser de jus de citron vert.", badge: null }
     ]
   },
   grilladelamnocciole: {
@@ -1366,10 +1447,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Marinade provençale", detail: "Mélanger huile d'olive, romarin haché, ail écrasé, thym, jus de citron, sel et poivre. Enrober les côtelettes.", badge: "⏱ 1h minimum" },
-      { icone: "🔥", titre: "Grill très chaud", detail: "Préchauffer le grill ou barbecue au maximum. Les barreaux doivent être brûlants. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
-      { icone: "🐑", titre: "Cuire", detail: "Griller les côtelettes 2-3 min par face pour une cuisson rosée. Ne pas trop cuire l'agneau. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 4-6 min total" },
-      { icone: "⏳", titre: "Repos", detail: "Laisser reposer 5 min sous alu avant de servir. Accompagner de ratatouille ou tabboulé. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 5 min repos" }
+      { icone: "🌿", titre: "Marinade", detail: "Mélanger l'huile d'olive, le romarin haché, l'ail écrasé, le jus de citron, le sel et le poivre, puis en enrober les côtelettes 30 min.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le grill ou le barbecue au maximum au moins 10 min : les barreaux doivent être brûlants.", badge: null },
+      { icone: "🍖", titre: "Griller", detail: "Saisir les côtelettes 2 à 3 min par face pour une cuisson rosée et de belles marques de grill.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler et poivrer en fin de cuisson pour préserver le jus et relever le goût de l'agneau.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Laisser reposer les côtelettes 5 min sous une feuille d'alu : ce repos est essentiel à la tendreté.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir les grillades bien chaudes avec une ratatouille ou un taboulé frais.", badge: null }
     ]
   },
   sushimaison: {
@@ -1412,11 +1495,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz à sushi", detail: "Rincer le riz japonais. Cuire avec légèrement moins d'eau. Assaisonner chaud avec vinaigre de riz, sucre et sel. Éventrer pour refroidir. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: "⏱ 15 min" },
-      { icone: "🐟", titre: "Préparer le poisson", detail: "Utiliser du poisson sashimi-grade. Couper en tranches fines pour les nigiris, en bâtonnets pour les makis. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌿", titre: "Makis", detail: "Poser une feuille de nori sur le tapis bambou. Étaler 80g de riz en laissant 2cm en haut. Poser la garniture. Rouler en serrant. Couper en 6. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍣", titre: "Nigiris", detail: "Humidifier les mains. Former une boulette de riz allongée. Poser une tranche de poisson dessus. Presser légèrement.", badge: null },
-      { icone: "🥢", titre: "Servir", detail: "Servir avec sauce soja, wasabi et gingembre mariné. Consommer rapidement.", badge: null }
+      { icone: "🍚", titre: "Riz", detail: "Rincer le riz japonais et le cuire avec légèrement moins d'eau, puis l'assaisonner chaud de vinaigre de riz, sucre et sel et l'éventer pour le refroidir.", badge: null },
+      { icone: "🔪", titre: "Poisson", detail: "Avec un couteau bien aiguisé, détailler le saumon et le thon sashimi-grade en tranches fines pour les nigiris et en bâtonnets pour les makis.", badge: null },
+      { icone: "🍙", titre: "Makis", detail: "Poser une feuille de nori sur le tapis bambou, étaler 80 g de riz en laissant 2 cm libres, garnir et rouler en serrant.", badge: null },
+      { icone: "✂️", titre: "Couper", detail: "Trancher chaque rouleau en six bouchées nettes avec une lame humidifiée.", badge: null },
+      { icone: "👐", titre: "Nigiris", detail: "Mains humides, former de petites boulettes de riz allongées et presser une tranche de poisson dessus.", badge: null },
+      { icone: "🫚", titre: "Dresser", detail: "Disposer harmonieusement makis et nigiris sur un plateau avec le gingembre mariné.", badge: null },
+      { icone: "🥢", titre: "Servir", detail: "Servir aussitôt avec sauce soja et wasabi, à consommer rapidement.", badge: null }
     ]
   },
   carigrioantillais: {
@@ -1446,10 +1531,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Marinade créole", detail: "Mélanger jus de citron, ail écrasé, thym, oignon émincé, piment, sel et poivre. Mariner le porc en cubes au frigo.", badge: "⏱ 4h minimum" },
-      { icone: "⏳", titre: "Cuire à l'étouffée", detail: "Transférer porc et marinade dans une casserole. Couvrir et cuire à feu moyen-doux jusqu'à ce que l'eau s'évapore.", badge: "⏱ 35-40 min" },
-      { icone: "🔥", titre: "Frire dans la graisse", detail: "Quand l'eau est évaporée, le porc cuit dans sa propre graisse. Frire jusqu'à belle coloration dorée et croustillante.", badge: "⏱ 10 min" },
-      { icone: "🍚", titre: "Servir", detail: "Servir avec riz et pois (riz collé), bananes plantains frits et pikliz (chou pimenté mariné).", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Couper le porc en cubes réguliers de 3 cm et émincer finement l'oignon ; hacher l'ail et le piment en retirant les graines pour doser la force.", badge: null },
+      { icone: "🍋", titre: "Mariner", detail: "Mélanger le jus de citron, l'ail, le thym effeuillé, l'oignon, le piment, le sel et le poivre, enrober les cubes de porc et laisser mariner au frais au moins 30 min.", badge: null },
+      { icone: "🥘", titre: "Étouffée", detail: "Verser le porc et toute sa marinade dans une cocotte, couvrir et cuire à feu moyen-doux 30 min en remuant de temps en temps jusqu'à évaporation du liquide.", badge: null },
+      { icone: "🔥", titre: "Rissoler", detail: "Découvrir et poursuivre la cuisson à feu moyen : le porc rend sa graisse et frit dedans, le faire dorer 10 à 12 min en remuant pour une croûte caramélisée et croustillante.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Goûter, rectifier en sel et poivre et déglacer le fond de cocotte avec un filet d'eau chaude pour récupérer les sucs et napper le griot.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser le griot bien doré avec du riz collé aux pois rouges, des bananes plantains frites et un peu de pikliz pour le piquant acidulé.", badge: null }
     ]
   },
   pouletbasquaise: {
@@ -1479,11 +1566,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐓", titre: "Dorer le poulet", detail: "Assaisonner et faire dorer les morceaux de poulet à feu vif dans l'huile d'olive. Réserver. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🫑", titre: "Piperade", detail: "Dans la même poêle, faire revenir oignon, poivrons rouges et verts en lanières. Ajouter ail et jambon de Bayonne.", badge: "⏱ 10 min" },
-      { icone: "🍅", titre: "Ajouter tomates", detail: "Ajouter tomates concassées, piment d'Espelette, thym et laurier. Laisser réduire 10 min. ASTUCE CHEF : la sauce doit napper le dos d'une cuillère = bonne consistance.", badge: null },
-      { icone: "⏳", titre: "Mijoter ensemble", detail: "Remettre le poulet dans la sauce. Couvrir et mijoter à feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 30 min" },
-      { icone: "🍚", titre: "Servir", detail: "Accompagner de riz blanc ou de polenta. Parsemer de persil plat.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon, tailler les poivrons rouges et verts en lanières, hacher l'ail et couper le jambon en lardons ; saler et poivrer les morceaux de poulet.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Faire dorer le poulet à feu vif dans l'huile d'olive sur toutes ses faces pendant 8 min pour caraméliser les sucs, puis réserver.", badge: null },
+      { icone: "🫑", titre: "Piperade", detail: "Dans la même cocotte, faire revenir l'oignon et les poivrons 10 min à feu moyen jusqu'à ce qu'ils fondent, puis ajouter l'ail et le jambon 2 min.", badge: null },
+      { icone: "🍅", titre: "Tomates", detail: "Incorporer les tomates concassées, le piment d'Espelette, le thym et le laurier, et laisser réduire 10 min à découvert jusqu'à une sauce nappante.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Remettre le poulet dans la sauce, couvrir et laisser mijoter à feu doux 25 min en arrosant pour que la viande s'imprègne et devienne fondante.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Rectifier l'assaisonnement, parsemer de persil plat ciselé et laisser reposer 5 min hors du feu pour lier les saveurs.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser le poulet nappé de piperade, accompagné de riz blanc ou de polenta crémeuse.", badge: null }
     ]
   },
   lasagneverdure: {
@@ -1514,11 +1603,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Préparer les épinards", detail: "Faire sauter les épinards frais à l'ail dans l'huile d'olive jusqu'à réduction. Égoutter et mélanger avec ricotta, sel, poivre et noix de muscade.", badge: null },
-      { icone: "🍅", titre: "Sauce tomate", detail: "Préparer une sauce tomate maison avec ail, tomates concassées, basilic. Laisser réduire 20 min. ASTUCE CHEF : la sauce doit napper le dos d'une cuillère = bonne consistance.", badge: "⏱ 20 min" },
-      { icone: "🥛", titre: "Béchamel", detail: "Préparer une béchamel crémeuse. Ajouter parmesan râpé.", badge: null },
-      { icone: "🏗️", titre: "Monter les lasagnes", detail: "Alterner : sauce tomate, feuilles, mélange ricotta-épinards, béchamel. Finir par béchamel et parmesan.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Couvrir de papier alu les 30 premières minutes. Ôter le papier pour gratiner.", badge: "⏱ 45 min à 180°C" }
+      { icone: "🥬", titre: "Épinards", detail: "Faire revenir l'ail haché dans l'huile d'olive, ajouter les épinards et les faire tomber 5 min, puis égoutter et presser pour retirer l'eau.", badge: null },
+      { icone: "🧀", titre: "Appareil", detail: "Mélanger les épinards avec la ricotta, du sel, du poivre, une râpée de muscade et les noix concassées pour un appareil parfumé et crémeux.", badge: null },
+      { icone: "🍅", titre: "Sauce tomate", detail: "Préparer une sauce avec l'ail, les tomates concassées et du basilic, puis laisser réduire 20 min à feu doux jusqu'à ce qu'elle nappe la cuillère.", badge: null },
+      { icone: "🥛", titre: "Béchamel", detail: "Réaliser une béchamel crémeuse, l'assaisonner et y fondre une partie du parmesan râpé pour une texture onctueuse.", badge: null },
+      { icone: "🍽️", titre: "Monter", detail: "Alterner dans un plat : sauce tomate, feuilles de lasagne, appareil ricotta-épinards et béchamel, en répétant les couches et en finissant par béchamel et parmesan.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C couvert de papier aluminium 30 min, puis retirer l'alu et poursuivre 15 min pour gratiner le dessus.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 10 min avant de couper pour des parts nettes, puis servir bien chaud.", badge: null }
     ]
   },
   poulpegrillebresil: {
@@ -1548,11 +1639,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐙", titre: "Attendrir le poulpe", detail: "Plonger le poulpe dans l'eau bouillante avec bouchon de liège, laurier et sel. Cuire à frémissement.", badge: "⏱ 40-45 min" },
-      { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir dans l'eau de cuisson 20 min. Égoutter et sécher.", badge: "⏱ 20 min" },
-      { icone: "🌿", titre: "Mariner", detail: "Mélanger huile d'olive, jus de citron, ail haché et persil. Badigeonner le poulpe.", badge: null },
-      { icone: "🔥", titre: "Griller", detail: "Griller au barbecue ou poêle grill à feu très vif pour bien marquer et croustiller. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 3-4 min par face" },
-      { icone: "🍋", titre: "Servir", detail: "Couper en tronçons. Arroser de jus de citron et huile d'olive. Accompagner de pommes de terre vapeur ou salade de pois chiches. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
+      { icone: "🐙", titre: "Préparer", detail: "Rincer le poulpe à l'eau froide et le masser ; préparer une grande casserole d'eau avec sel et un bouchon de liège pour attendrir les fibres.", badge: null },
+      { icone: "♨️", titre: "Pocher", detail: "Plonger le poulpe dans l'eau frémissante (environ 90°C, surtout pas de gros bouillons) et cuire 45 min jusqu'à ce qu'un couteau s'enfonce sans résistance.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser tiédir le poulpe 20 min dans son eau de cuisson pour qu'il reste moelleux, puis égoutter et bien sécher avec du papier absorbant.", badge: null },
+      { icone: "🧄", titre: "Mariner", detail: "Mélanger l'huile d'olive, le jus de citron, l'ail haché, le persil ciselé et le sel, puis badigeonner généreusement les tentacules.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Préchauffer une poêle-gril ou un barbecue 5 min à feu très vif et saisir le poulpe 2 à 3 min par face pour de belles marques croustillantes.", badge: null },
+      { icone: "🍋", titre: "Trancher", detail: "Couper en tronçons réguliers au couteau bien aiguisé et arroser d'un filet de jus de citron et d'huile d'olive.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser le poulpe grillé avec des pommes de terre vapeur ou une salade de pois chiches, et parsemer de persil frais.", badge: null }
     ]
   },
   pouletrotiperfect: {
@@ -1582,11 +1675,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧈", titre: "Préparer le beurre aromatique", detail: "Mélanger beurre mou, ail écrasé, thym, sel et poivre. Glisser ce beurre sous la peau du poulet en décollant doucement avec les doigts.", badge: null },
-      { icone: "🐓", titre: "Assaisonner", detail: "Saler et poivrer l'extérieur. Mettre dans la cavité : demi-citron, gousses d'ail entières et thym. Ficeler le poulet.", badge: null },
-      { icone: "🔥", titre: "Saisir à four chaud", detail: "Démarrer à 220°C pendant 20 min pour dorer la peau. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 20 min à 220°C" },
-      { icone: "⏳", titre: "Finir à four moyen", detail: "Baisser à 180°C. Arroser toutes les 15 min avec les sucs de cuisson.", badge: "⏱ 50-60 min à 180°C" },
-      { icone: "🍯", titre: "Sauce et repos", detail: "Sortir le poulet, laisser reposer 10 min. Déglacer le plat au vin blanc ou bouillon. Servir avec la sauce et des pommes de terre rôties. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 10 min repos" }
+      { icone: "🧈", titre: "Beurre", detail: "Mélanger le beurre mou avec l'ail écrasé, le thym effeuillé, le sel et le poivre jusqu'à obtenir une pommade homogène.", badge: null },
+      { icone: "👐", titre: "Garnir", detail: "Décoller délicatement la peau du poulet avec les doigts et glisser le beurre aromatique dessous en le répartissant sur les blancs et les cuisses.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Saler et poivrer l'extérieur, glisser dans la cavité le demi-citron, des gousses d'ail entières et du thym, puis ficeler le poulet pour une cuisson régulière.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Enfourner à 220°C pendant 20 min pour colorer la peau et la rendre dorée et croustillante.", badge: null },
+      { icone: "🌡️", titre: "Rôtir", detail: "Baisser le four à 180°C et poursuivre 50 min en arrosant toutes les 15 min avec les sucs de cuisson pour une chair juteuse.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Sortir le poulet et le laisser reposer 10 min couvert d'une feuille d'aluminium pour que les jus se répartissent dans la chair.", badge: null },
+      { icone: "🍷", titre: "Sauce", detail: "Déglacer le plat au vin blanc en grattant les sucs, laisser réduire 3 min, puis servir le poulet découpé avec sa sauce et des pommes de terre rôties.", badge: null }
     ]
   },
   saumoncrouteherbes: {
@@ -1616,11 +1711,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Croûte d'herbes", detail: "Mixer chapelure, persil, ciboulette, aneth, zeste de citron, parmesan et beurre fondu jusqu'à mélange homogène.", badge: null },
-      { icone: "🐟", titre: "Préparer les pavés", detail: "Sécher les pavés avec du papier absorbant. Saler et poivrer. Badigeonner de moutarde de Dijon.", badge: null },
-      { icone: "🌿", titre: "Appliquer la croûte", detail: "Presser la croûte d'herbes sur le dessus des pavés. Elle doit adhérer grâce à la moutarde.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Four préchauffé à 200°C. Poser les pavés sur une plaque. La croûte doit être dorée et le saumon rosé à cœur.", badge: "⏱ 12-15 min à 200°C" },
-      { icone: "🍋", titre: "Servir", detail: "Accompagner de riz pilaf, d'écrasé de pommes de terre ou de légumes vapeur. Arroser de jus de citron.", badge: null }
+      { icone: "🌿", titre: "Croûte", detail: "Mixer la chapelure avec le persil, le zeste de citron et le beurre fondu jusqu'à obtenir une chapelure verte et parfumée.", badge: null },
+      { icone: "🐟", titre: "Préparer", detail: "Sécher les pavés de saumon avec du papier absorbant, les saler et les poivrer pour une chair bien assaisonnée.", badge: null },
+      { icone: "🖌️", titre: "Tartiner", detail: "Badigeonner le dessus des pavés d'un peu de moutarde de Dijon ou de beurre pour faire adhérer la croûte.", badge: null },
+      { icone: "🥖", titre: "Paner", detail: "Presser fermement la croûte d'herbes sur le dessus de chaque pavé pour former une couche régulière et homogène.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C pendant 12 à 15 min jusqu'à ce que la croûte soit dorée et le saumon encore rosé et nacré à cœur.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Arroser d'un filet de jus de citron et accompagner de riz pilaf, d'écrasé de pommes de terre ou de légumes vapeur.", badge: null }
     ]
   },
   lasagneviande: {
@@ -1651,11 +1747,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Ragu bolognaise", detail: "Faire revenir oignon et ail. Ajouter la viande hachée et dorer. Ajouter tomates concassées, concentré de tomate, herbes. Mijoter à feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 45 min" },
-      { icone: "🥛", titre: "Béchamel", detail: "Faire fondre beurre, ajouter farine, fouetter. Verser le lait chaud progressivement. Assaisonner de sel, poivre et muscade.", badge: "⏱ 10 min" },
-      { icone: "🏗️", titre: "Monter les lasagnes", detail: "Alterner : béchamel, feuilles, ragu, béchamel. Répéter 3-4 couches. Finir par béchamel et parmesan râpé.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Couvrir d'alu 30 min, puis 15 min à découvert pour gratiner.", badge: "⏱ 45 min à 180°C" },
-      { icone: "⏳", titre: "Laisser reposer", detail: "Laisser reposer 10 min avant de couper — les lasagnes tiennent mieux. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 10 min" }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer finement l'oignon et hacher l'ail pour la base aromatique du ragù.", badge: null },
+      { icone: "🍖", titre: "Ragù", detail: "Faire revenir l'oignon et l'ail, ajouter la viande hachée et la dorer, puis incorporer les tomates concassées, du concentré et des herbes.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Saler, poivrer et laisser mijoter le ragù à feu doux 30 min en remuant pour qu'il épaississe et concentre ses saveurs.", badge: null },
+      { icone: "🥛", titre: "Béchamel", detail: "Fondre le beurre, ajouter la farine et fouetter, verser le lait chaud progressivement et assaisonner de sel, poivre et muscade jusqu'à épaississement.", badge: null },
+      { icone: "🍽️", titre: "Monter", detail: "Alterner dans le plat béchamel, feuilles de lasagne et ragù sur 3 à 4 couches, et finir par une couche de béchamel et de parmesan râpé.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C couvert d'aluminium 30 min, puis 15 min à découvert pour obtenir un gratin doré.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 10 min avant de découper au couteau bien aiguisé pour des parts qui se tiennent.", badge: null }
     ]
   },
   risottoprimavera: {
@@ -1685,11 +1783,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Préparer les légumes", detail: "Blanchir les asperges 3 min. Couper en tronçons. Blanchir les petits pois 2 min. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🧅", titre: "Base", detail: "Faire revenir échalote dans huile d'olive et beurre. Ajouter le riz arborio et nacrer 2 min. Le riz doit devenir TRANSLUCIDE sur les bords avant d'ajouter le liquide.", badge: null },
-      { icone: "🍷", titre: "Vin blanc", detail: "Ajouter le vin blanc, remuer jusqu'à absorption.", badge: null },
-      { icone: "🍲", titre: "Cuire louche par louche", detail: "Ajouter le bouillon chaud louche par louche en remuant constamment. Le riz doit être al dente. 1 min de moins que sur l'emballage. Goûter pour vérifier.", badge: "⏱ 18-20 min" },
-      { icone: "🧀", titre: "Mantecatura", detail: "Hors du feu, ajouter beurre froid et parmesan. Remuer énergiquement. Incorporer légumes. Servir immédiatement. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null }
+      { icone: "🔪", titre: "Légumes", detail: "Blanchir les asperges 3 min puis les couper en tronçons, et blanchir les petits pois 2 min avant de les rafraîchir pour garder leur couleur.", badge: null },
+      { icone: "🧅", titre: "Nacrer", detail: "Faire revenir une échalote dans l'huile d'olive et le beurre, ajouter le riz et le nacrer 2 min jusqu'à ce qu'il devienne translucide sur les bords.", badge: null },
+      { icone: "🍷", titre: "Vin", detail: "Verser le vin blanc et remuer jusqu'à complète absorption pour parfumer le riz.", badge: null },
+      { icone: "🥄", titre: "Mouiller", detail: "Ajouter le bouillon chaud louche par louche en remuant constamment, en attendant l'absorption à chaque fois, pendant environ 18 min.", badge: null },
+      { icone: "🥬", titre: "Légumes", detail: "Quand le riz est presque al dente, incorporer les asperges et les petits pois blanchis pour les réchauffer délicatement.", badge: null },
+      { icone: "🧀", titre: "Mantecare", detail: "Hors du feu, ajouter le beurre froid et le parmesan, puis remuer énergiquement pour obtenir un risotto crémeux et onctueux.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser aussitôt dans des assiettes creuses et servir immédiatement avant que le risotto ne fige.", badge: null }
     ]
   },
   pouletteriyaki: {
@@ -1720,10 +1820,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍶", titre: "Sauce teriyaki", detail: "Mélanger sauce soja, mirin, saké et sucre. Faire réduire à feu moyen jusqu'à consistance sirupeuse. ASTUCE CHEF : la sauce doit napper le dos d'une cuillère = bonne consistance.", badge: "⏱ 5 min" },
-      { icone: "🍗", titre: "Cuire le poulet", detail: "Faire dorer les cuisses ou filets de poulet dans une poêle avec un peu d'huile. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 10 min" },
-      { icone: "🍯", titre: "Laquer", detail: "Verser la sauce teriyaki sur le poulet. Cuire encore 3-4 min en retournant jusqu'à laquage brillant.", badge: "⏱ 4 min" },
-      { icone: "🍚", titre: "Servir", detail: "Trancher le poulet. Servir sur riz vapeur avec graines de sésame, ciboule et edamame. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
+      { icone: "🥢", titre: "Sauce", detail: "Mélanger la sauce soja, le mirin et le sucre, puis faire réduire à feu moyen jusqu'à une consistance sirupeuse qui nappe la cuillère.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Parer les filets ou cuisses de poulet et les éponger pour qu'ils colorent bien à la cuisson.", badge: null },
+      { icone: "🍗", titre: "Dorer", detail: "Faire dorer le poulet dans une poêle avec un peu d'huile à feu moyen-vif 5 à 6 min par face jusqu'à une belle coloration uniforme.", badge: null },
+      { icone: "✨", titre: "Laquer", detail: "Verser la sauce teriyaki sur le poulet et cuire encore 3 à 4 min en le retournant régulièrement pour un laquage brillant.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Laisser reposer 2 min puis trancher le poulet en lamelles au couteau bien aiguisé pour des morceaux nets.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Dresser sur un bol de riz vapeur, napper de sauce et parsemer de graines de sésame et de ciboule émincée.", badge: null }
     ]
   },
   curryverthai: {
@@ -1753,11 +1855,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍛", titre: "Faire revenir la pâte", detail: "Dans un wok, faire revenir la pâte de curry vert dans un peu d'huile ou la crème du dessus du lait de coco 2 min.", badge: "⏱ 2 min" },
-      { icone: "🍗", titre: "Ajouter le poulet", detail: "Ajouter le poulet en morceaux. Faire dorer légèrement. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 5 min" },
-      { icone: "🥥", titre: "Lait de coco et légumes", detail: "Verser le lait de coco, ajouter aubergines en cubes, feuilles de kaffir lime et sauce poisson. Porter à ébullition.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Cuire à feu moyen jusqu'à cuisson des légumes.", badge: "⏱ 12 min" },
-      { icone: "🌿", titre: "Basilic thaï et service", detail: "Hors du feu, ajouter le basilic thaï. Servir avec riz jasmin.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le poulet en morceaux et les aubergines en cubes ; effeuiller le basilic thaï et réserver.", badge: null },
+      { icone: "🌶️", titre: "Pâte", detail: "Faire revenir la pâte de curry vert 2 min dans un wok avec un peu d'huile ou la crème épaisse du lait de coco jusqu'à ce qu'elle libère ses arômes.", badge: null },
+      { icone: "🍗", titre: "Poulet", detail: "Ajouter les morceaux de poulet et les faire dorer légèrement à feu vif pour les enrober de pâte.", badge: null },
+      { icone: "🥥", titre: "Coco", detail: "Verser le lait de coco, ajouter les aubergines et un trait de sauce poisson, puis porter à ébullition.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Laisser mijoter à feu moyen 15 min jusqu'à ce que le poulet soit cuit et les aubergines fondantes, en ajustant l'assaisonnement.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Hors du feu, ajouter le basilic thaï pour parfumer, puis servir bien chaud avec du riz jasmin.", badge: null }
     ]
   },
   chiliconcarneV: {
@@ -1787,11 +1890,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Dorer la viande", detail: "Faire revenir oignon et viande hachée. Bien émietter et dorer. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 8 min" },
-      { icone: "🌶️", titre: "Épices tex-mex", detail: "Ajouter ail, piment de Cayenne, cumin, paprika fumé, origan. Bien mélanger.", badge: null },
-      { icone: "🍅", titre: "Tomates et haricots", detail: "Ajouter tomates concassées, concentré de tomate et haricots rouges égouttés. Mélanger.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Laisser mijoter à feu doux couvert. Plus c'est long, meilleur c'est. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 40 min" },
-      { icone: "🧀", titre: "Servir", detail: "Servir avec riz ou pain de maïs. Accompagner de crème fraîche, cheddar râpé et coriandre.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer finement l'oignon et l'ail, égoutter et rincer les haricots rouges, et concasser les tomates si elles sont entières.", badge: null },
+      { icone: "🥩", titre: "Dorer", detail: "Faire chauffer un filet d'huile à feu vif et y faire revenir l'oignon 3 min, puis ajouter la viande hachée en l'émiettant jusqu'à coloration dorée uniforme.", badge: null },
+      { icone: "🌶️", titre: "Épicer", detail: "Ajouter l'ail haché, le cumin et le piment, mélanger 1 min à feu moyen pour libérer les arômes des épices sans les brûler.", badge: null },
+      { icone: "🍅", titre: "Tomates", detail: "Incorporer les tomates concassées et un peu d'eau, gratter les sucs au fond de la cocotte et porter à frémissement.", badge: null },
+      { icone: "🫘", titre: "Haricots", detail: "Ajouter les haricots rouges égouttés, saler et poivrer, puis baisser le feu pour un mijotage doux.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Couvrir et laisser mijoter à feu doux pendant 40 à 45 min en remuant de temps en temps, jusqu'à obtenir une sauce épaisse et nappante.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Rectifier l'assaisonnement et servir bien chaud avec du riz, accompagné de crème fraîche, de cheddar râpé et de coriandre ciselée.", badge: null }
     ]
   },
   koreanfriedchicken: {
@@ -1821,11 +1926,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Préparer le poulet", detail: "Couper en morceaux. Mariner avec sauce soja, ail, gingembre, sel et poivre. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 30 min" },
-      { icone: "🌾", titre: "Panure légère", detail: "Mélanger farine de riz et fécule (ratio 2:1). Enrober les morceaux de poulet.", badge: null },
-      { icone: "🔥", titre: "Double friture", detail: "1ère friture à 160°C 8 min. Sortir et laisser reposer 5 min. 2ème friture à 190°C 3 min pour le croustillant extrême. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 8+3 min" },
-      { icone: "🌶️", titre: "Sauce gochujang", detail: "Mélanger gochujang, miel, sauce soja, ail et vinaigre de riz. Chauffer 2 min.", badge: null },
-      { icone: "🥢", titre: "Napper et servir", detail: "Napper le poulet de sauce ou servir à part. Garnir de graines de sésame et oignons verts.", badge: null }
+      { icone: "🔪", titre: "Couper", detail: "Découper le poulet en morceaux réguliers de la taille d'une bouchée pour une cuisson homogène et un croustillant maximal.", badge: null },
+      { icone: "🧄", titre: "Mariner", detail: "Mélanger le poulet avec l'ail et le gingembre râpés, le sel et le poivre, puis laisser mariner 10 min à température ambiante.", badge: null },
+      { icone: "🥣", titre: "Paner", detail: "Mélanger la farine et la fécule (ratio 2:1) et enrober soigneusement chaque morceau d'une fine couche sèche bien adhérente.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Plonger le poulet dans l'huile à 160°C et frire 8 min, puis égoutter et laisser reposer 5 min sur une grille.", badge: null },
+      { icone: "🔥", titre: "Recroustiller", detail: "Remonter l'huile à 190°C et replonger les morceaux 3 min jusqu'à une croûte dorée et extra-croustillante, puis égoutter.", badge: null },
+      { icone: "🌶️", titre: "Sauce", detail: "Faire chauffer 2 min le gochujang avec le miel, l'ail et un peu d'eau jusqu'à une sauce brillante et sirupeuse.", badge: null },
+      { icone: "🥢", titre: "Napper", detail: "Enrober le poulet de sauce ou la servir à part, parsemer de graines de sésame et d'oignons verts, et déguster aussitôt.", badge: null }
     ]
   },
   risottoMilanese: {
@@ -1855,11 +1962,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌼", titre: "Infuser le safran", detail: "Dissoudre le safran dans une louche de bouillon chaud. Laisser infuser 10 min.", badge: "⏱ 10 min" },
-      { icone: "🧅", titre: "Base", detail: "Faire revenir échalote dans beurre + huile. Ajouter le riz arborio et nacrer 2 min. Le riz doit devenir TRANSLUCIDE sur les bords avant d'ajouter le liquide.", badge: null },
-      { icone: "🍷", titre: "Vin blanc", detail: "Verser le vin blanc, remuer jusqu'à absorption complète.", badge: null },
-      { icone: "🍲", titre: "Cuire louche par louche", detail: "Ajouter le bouillon chaud progressivement en remuant. Ajouter le bouillon safrané au milieu de la cuisson.", badge: "⏱ 18-20 min" },
-      { icone: "🧀", titre: "Mantecatura", detail: "Hors du feu, incorporer beurre froid et parmesan. Remuer énergiquement pour rendre le risotto crémeux. Servir immédiatement. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null }
+      { icone: "🌼", titre: "Infuser", detail: "Délayer le safran dans une louche de bouillon chaud et laisser infuser 10 min pour révéler couleur et arôme.", badge: null },
+      { icone: "🍲", titre: "Bouillon", detail: "Maintenir le reste du bouillon frémissant dans une casserole à côté, prêt à être ajouté louche par louche.", badge: null },
+      { icone: "🧅", titre: "Nacrer", detail: "Faire suer une échalote dans le beurre et l'huile d'olive, ajouter le riz et le nacrer 2 min jusqu'à ce que les bords deviennent translucides.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Verser le vin blanc et remuer à feu moyen jusqu'à absorption complète du liquide.", badge: null },
+      { icone: "🥄", titre: "Cuire", detail: "Ajouter le bouillon louche par louche en remuant sans cesse pendant 18 min environ, en incorporant le bouillon safrané à mi-cuisson.", badge: null },
+      { icone: "🧈", titre: "Manteca", detail: "Hors du feu, incorporer énergiquement le beurre froid et le parmesan pour obtenir une texture crémeuse et onctueuse.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser reposer 1 min, vérifier l'assaisonnement et servir immédiatement, le risotto bien coulant à l'onda.", badge: null }
     ]
   },
   pouletCocoLemon: {
@@ -1889,11 +1998,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Dorer le poulet", detail: "Faire dorer les morceaux de poulet assaisonnés dans l'huile d'olive. Réserver. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 8 min" },
-      { icone: "🧄", titre: "Base aromatique", detail: "Faire revenir oignon et ail. Ajouter cumin, coriandre moulue et curcuma.", badge: null },
-      { icone: "🥥", titre: "Sauce coco-citron", detail: "Verser le lait de coco. Ajouter le citron confit haché finement. Remettre le poulet.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Cuire à feu doux couvert jusqu'à sauce crémeuse. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 25 min" },
-      { icone: "🌿", titre: "Finir", detail: "Parsemer de coriandre fraîche. Servir avec riz basmati ou semoule.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon et l'ail, hacher finement le citron confit et détailler le poulet en morceaux, puis l'assaisonner.", badge: null },
+      { icone: "🍗", titre: "Dorer", detail: "Faire dorer les morceaux de poulet dans l'huile chaude sur toutes les faces, puis les réserver.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Dans la même poêle, faire revenir l'oignon et l'ail à feu moyen jusqu'à ce qu'ils soient fondants et translucides.", badge: null },
+      { icone: "🥥", titre: "Sauce", detail: "Verser le lait de coco, ajouter le citron confit haché et un trait de jus de citron, puis remettre le poulet dans la sauce.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Couvrir et laisser mijoter à feu doux 25 min jusqu'à ce que le poulet soit tendre et la sauce crémeuse et nappante.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Rectifier le sel, parsemer de coriandre fraîche ciselée et donner un dernier filet de jus de citron.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir bien chaud avec du riz basmati ou de la semoule pour absorber la sauce coco-citron.", badge: null }
     ]
   },
   spaetzle: {
@@ -1923,10 +2034,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte à spätzle", detail: "Mélanger farine, œufs, lait et sel jusqu'à pâte homogène légèrement collante. Laisser reposer 10 min. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 10 min repos" },
-      { icone: "💧", titre: "Cuire à l'eau bouillante", detail: "Porter une grande casserole d'eau salée à ébullition. Passer la pâte à travers une grille à spätzle ou passoire à gros trous en raclant. Les spätzle cuisent quand ils remontent.", badge: "⏱ 2-3 min" },
-      { icone: "🧈", titre: "Beurre noisette", detail: "Faire dorer le beurre dans une poêle jusqu'à couleur noisette. Y sauter les spätzle égouttés. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 3 min" },
-      { icone: "🧀", titre: "Version gratinée", detail: "Option : alterner spätzle et munster ou comté râpé dans un plat. Gratiner au four 15 min.", badge: "⏱ 15 min" }
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger la farine, les œufs, le lait et le sel jusqu'à une pâte homogène, lisse et légèrement collante qui se détache en ruban.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer la pâte 10 min pour détendre le gluten et garantir des spätzle moelleux.", badge: null },
+      { icone: "♨️", titre: "Bouillir", detail: "Porter une grande casserole d'eau salée à ébullition franche pour cuire la pâte au fur et à mesure.", badge: null },
+      { icone: "🥄", titre: "Façonner", detail: "Passer la pâte à travers une grille à spätzle ou une passoire à gros trous directement au-dessus de l'eau bouillante.", badge: null },
+      { icone: "🌊", titre: "Pocher", detail: "Cuire les spätzle 2 à 3 min : ils sont prêts dès qu'ils remontent à la surface, puis les égoutter aussitôt.", badge: null },
+      { icone: "🧈", titre: "Sauter", detail: "Faire dorer le beurre en poêle jusqu'à couleur noisette et y faire sauter les spätzle égouttés 3 min en remuant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifier l'assaisonnement et servir bien chauds, ou les gratiner au four 15 min à 200°C avec du fromage râpé.", badge: null }
     ]
   },
   wagyuBurger: {
@@ -1957,11 +2071,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Steak haché", detail: "Former des steaks de 150g. Assaisonner généreusement sel et poivre juste avant cuisson. Ne jamais écraser avec la spatule ! Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
-      { icone: "🔥", titre: "Cuire à feu vif", detail: "Poêle en fonte très chaude ou BBQ. 2-3 min par face pour saignant, 3-4 pour à point. Poser le cheddar sur le steak et couvrir pour faire fondre.", badge: "⏱ 4-6 min" },
-      { icone: "🟡", titre: "Sauce burger maison", detail: "Mélanger mayonnaise, ketchup, cornichons hachés, moutarde et paprika.", badge: null },
-      { icone: "🍞", titre: "Toaster les buns", detail: "Faire toaster les buns briochés dans la poêle avec un peu de beurre.", badge: "⏱ 1 min" },
-      { icone: "🍔", titre: "Assembler", detail: "Sauce sur les deux faces du bun. Salade, tomate, steak, cheddar, oignon confit, cornichon. Servir immédiatement avec frites maison.", badge: null }
+      { icone: "🍔", titre: "Façonner", detail: "Former délicatement des steaks de 150 g sans trop tasser la viande, puis les assaisonner généreusement de sel et de poivre juste avant cuisson.", badge: null },
+      { icone: "🧅", titre: "Garnitures", detail: "Laver la salade, trancher la tomate et émincer l'oignon, en réservant le tout pour le montage.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Cuire les steaks dans une poêle en fonte très chaude 2 à 3 min par face pour saignant, sans jamais les écraser avec la spatule.", badge: null },
+      { icone: "🧀", titre: "Fondre", detail: "Déposer le cheddar sur chaque steak et couvrir 30 s pour le faire fondre uniformément.", badge: null },
+      { icone: "🍞", titre: "Toaster", detail: "Faire toaster les buns côté mie dans la poêle avec un peu de beurre jusqu'à ce qu'ils soient dorés.", badge: null },
+      { icone: "🥪", titre: "Monter", detail: "Garnir le bun de salade, tomate, steak au cheddar et oignon, en superposant les éléments avec soin.", badge: null },
+      { icone: "🍟", titre: "Servir", detail: "Refermer le burger et servir immédiatement, tant qu'il est chaud, accompagné de frites maison.", badge: null }
     ]
   },
   lemonPasta: {
@@ -1991,11 +2107,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les spaghetti al dente dans eau très salée. Garder 1 tasse d'eau de cuisson. 1 min de moins que sur l'emballage. Goûter pour vérifier.", badge: null },
-      { icone: "🧈", titre: "Sauce citron-crème", detail: "Dans une poêle, faire fondre le beurre. Ajouter zeste et jus de citron, crème fraîche. Chauffer doucement.", badge: "⏱ 3 min" },
-      { icone: "🧀", titre: "Parmesan", detail: "Ajouter le parmesan râpé finement. Mélanger jusqu'à sauce homogène.", badge: null },
-      { icone: "🍝", titre: "Incorporer les pâtes", detail: "Ajouter les pâtes égouttées + quelques cuillères d'eau de cuisson. Mélanger vigoureusement pour enrober. Ajuster la consistance.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Servir immédiatement avec basilic frais, poivre noir et parmesan supplémentaire.", badge: null }
+      { icone: "🍋", titre: "Préparer", detail: "Zester et presser le citron, et râper finement le parmesan pour qu'il fonde rapidement dans la sauce.", badge: null },
+      { icone: "🍝", titre: "Cuire", detail: "Cuire les spaghetti al dente dans une eau très salée, 1 min de moins que l'emballage, en gardant une tasse d'eau de cuisson.", badge: null },
+      { icone: "🧈", titre: "Sauce", detail: "Faire fondre le beurre à feu doux, ajouter le zeste, le jus de citron et la crème, puis chauffer doucement sans bouillir.", badge: null },
+      { icone: "🧀", titre: "Crémer", detail: "Incorporer le parmesan râpé hors gros bouillon en remuant jusqu'à obtenir une sauce lisse et homogène.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Ajouter les pâtes égouttées avec quelques cuillères d'eau de cuisson et mélanger vigoureusement pour bien les enrober.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Poivrer généreusement, ajuster la consistance et servir aussitôt avec du basilic frais et un supplément de parmesan.", badge: null }
     ]
   },
   blanquetteveau: {
@@ -2025,11 +2142,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Blanchir le veau", detail: "Départ eau froide avec le veau. Porter à ébullition, écumer soigneusement. Égoutter et rincer. Rincer abondamment à l'eau froide.", badge: "⏱ 5 min" },
-      { icone: "🍲", titre: "Cuire le veau", detail: "Mettre le veau dans le bouillon avec oignon, carotte, bouquet garni, clou de girofle. Cuire à feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 1h" },
-      { icone: "🍄", titre: "Champignons", detail: "Faire sauter les champignons au beurre avec jus de citron. Réserver.", badge: "⏱ 5 min" },
-      { icone: "🥛", titre: "Sauce velouté", detail: "Faire un roux blanc (beurre + farine). Mouiller avec le bouillon de cuisson filtré. Incorporer la crème et un jaune d'œuf. Ne pas faire bouillir. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🍋", titre: "Finir et servir", detail: "Ajouter veau et champignons dans la sauce. Assaisonner avec jus de citron, sel, poivre. Servir avec riz blanc. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null }
+      { icone: "🥩", titre: "Blanchir", detail: "Placer le veau dans une casserole d'eau froide, porter à ébullition, écumer soigneusement, puis égoutter et rincer à l'eau froide.", badge: null },
+      { icone: "🥕", titre: "Aromates", detail: "Émincer l'oignon, préparer un bouquet garni et réunir le veau avec le bouillon dans une cocotte.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Cuire le veau à feu doux et à couvert pendant 1 h 15 jusqu'à ce que la viande soit fondante, en écumant si besoin.", badge: null },
+      { icone: "🍄", titre: "Champignons", detail: "Faire sauter les champignons émincés au beurre avec un trait de jus de citron, puis les réserver.", badge: null },
+      { icone: "🥣", titre: "Velouté", detail: "Préparer un roux blanc avec beurre et farine, mouiller avec le bouillon filtré et cuire jusqu'à épaississement.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Hors du feu, incorporer la crème et un jaune d'œuf sans faire bouillir pour obtenir une sauce nappante et veloutée.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Réunir veau et champignons dans la sauce, assaisonner de sel, poivre et jus de citron, et servir avec du riz blanc.", badge: null }
     ]
   },
   navarin: {
@@ -2060,11 +2179,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐑", titre: "Dorer l'agneau", detail: "Faire dorer les morceaux d'agneau à feu vif. Saupoudrer de farine, cuire 2 min. Ajouter concentré de tomate, ail, bouquet garni. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🍷", titre: "Mouiller", detail: "Déglacer au vin blanc. Couvrir de bouillon. Mijoter couvert. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 45 min" },
-      { icone: "🥕", titre: "Légumes printaniers", detail: "Ajouter navets et carottes nouvelles. Cuire encore 20 min.", badge: "⏱ 20 min" },
-      { icone: "🟢", titre: "Petits pois", detail: "Ajouter les petits pois les 10 dernières minutes. Rectifier l'assaisonnement.", badge: "⏱ 10 min" },
-      { icone: "🌿", titre: "Servir", detail: "Parsemer de persil frais. Servir avec pommes de terre vapeur ou pain de campagne.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Détailler les carottes et les navets en gros morceaux, hacher l'ail et préparer un bouquet garni.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Faire dorer les morceaux d'agneau à feu vif sur toutes les faces pour bien caraméliser les sucs.", badge: null },
+      { icone: "🌾", titre: "Singer", detail: "Saupoudrer de farine et cuire 2 min, puis ajouter le concentré de tomate, l'ail et le bouquet garni en remuant.", badge: null },
+      { icone: "🍷", titre: "Mouiller", detail: "Déglacer au vin blanc, couvrir de bouillon et porter à frémissement avant de baisser le feu.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Couvrir à demi et laisser mijoter doucement 50 min, puis ajouter carottes et navets et cuire encore 20 min.", badge: null },
+      { icone: "🟢", titre: "Petits pois", detail: "Incorporer les petits pois les 10 dernières minutes de cuisson et rectifier l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemer de persil frais et servir bien chaud avec des pommes de terre vapeur ou du pain de campagne.", badge: null }
     ]
   },
   tarteFlambee: {
@@ -2095,10 +2216,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte sans levure", detail: "Mélanger farine, eau, huile et sel. Pétrir 5 min. Étaler très finement en rectangle. Pétrir 10 min à la main ou 7 min au robot — la pâte doit être lisse et élastique.", badge: null },
-      { icone: "🥛", titre: "Base crème", detail: "Mélanger fromage blanc et crème fraîche. Assaisonner. Étaler sur la pâte en fine couche. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
-      { icone: "🥓", titre: "Lardons et oignons", detail: "Répartir les lardons et les oignons émincés très fins.", badge: null },
-      { icone: "🔥", titre: "Cuire à four très chaud", detail: "Four au maximum sur plaque préchauffée. La tarte doit être croustillante et légèrement brûlée sur les bords.", badge: "⏱ 8-10 min à 280°C" }
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger la farine, l'eau, l'huile, le sel et un peu de levure, puis pétrir 10 min jusqu'à une pâte lisse et élastique.", badge: null },
+      { icone: "🔪", titre: "Garnitures", detail: "Émincer très finement l'oignon et préparer les lardons pendant que la pâte se détend brièvement.", badge: null },
+      { icone: "🥄", titre: "Crème", detail: "Mélanger le fromage blanc et la crème fraîche, saler et poivrer pour obtenir une base onctueuse.", badge: null },
+      { icone: "🫓", titre: "Étaler", detail: "Étaler la pâte très finement en rectangle sur une plaque, puis la napper d'une fine couche de crème.", badge: null },
+      { icone: "🧅", titre: "Garnir", detail: "Répartir uniformément les lardons, l'oignon émincé et un peu de fromage sur toute la surface.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner sur une plaque préchauffée à four très chaud (250°C) 10 à 12 min jusqu'à ce que les bords soient croustillants et légèrement brûlés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Découper la tarte flambée en parts et la servir aussitôt, bien chaude et croustillante.", badge: null }
     ]
   },
   pouletMisoGingembre: {
@@ -2128,10 +2252,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Marinade miso", detail: "Mélanger miso blanc, mirin, sauce soja, gingembre râpé et un peu de saké. Mariner le poulet.", badge: "⏱ 30 min minimum" },
-      { icone: "🍳", titre: "Cuire à la poêle", detail: "Poêle chaude légèrement huilée. Cuire le poulet côté peau en premier jusqu'à laquage caramélisé.", badge: "⏱ 6-8 min" },
-      { icone: "🍯", titre: "Glacer", detail: "Verser le reste de marinade. Laisser caraméliser 2 min de chaque côté. ASTUCE CHEF : surveiller la couleur ambrée, pas plus sombre sinon amer.", badge: "⏱ 4 min" },
-      { icone: "🍚", titre: "Servir", detail: "Trancher et servir sur riz, avec edamame, graines de sésame et ciboule. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
+      { icone: "🫚", titre: "Marinade", detail: "Mélanger le miso, le mirin, la sauce soja et le gingembre finement râpé pour obtenir une pâte lisse.", badge: null },
+      { icone: "🍗", titre: "Mariner", detail: "Enrober généreusement les morceaux de poulet de marinade et laisser reposer 15 min au frais pour imprégner la chair.", badge: null },
+      { icone: "🍳", titre: "Saisir", detail: "Chauffer une poêle légèrement huilée à feu moyen-vif et déposer le poulet côté peau, sans le bouger, 4 à 5 min jusqu'à belle coloration.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Retourner les morceaux et poursuivre la cuisson 4 min à feu moyen pour cuire la chair à cœur.", badge: null },
+      { icone: "🍯", titre: "Laquer", detail: "Verser le reste de marinade, baisser à feu doux et glacer 2 min de chaque côté en arrosant, jusqu'à une laque ambrée brillante sans la laisser brûler.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Laisser tiédir 2 min puis trancher le poulet en biais avec un couteau bien aiguisé pour des morceaux nappés de sauce.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Dresser sur un bol de riz chaud, parsemer de graines de sésame et de ciboule émincée, et servir aussitôt.", badge: null }
     ]
   },
   noodlesWok: {
@@ -2161,11 +2288,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍜", titre: "Tremper les nouilles", detail: "Tremper les nouilles de riz dans eau froide 20 min. Égoutter.", badge: "⏱ 20 min" },
-      { icone: "🔥", titre: "Wok très chaud", detail: "Chauffer le wok à feu maximum avec huile. Faire sauter ail et gingembre 30 sec.", badge: null },
-      { icone: "🥬", titre: "Légumes", detail: "Ajouter bok choy, carottes en julienne, germes de soja. Sauter 3 min en remuant constamment.", badge: "⏱ 3 min" },
-      { icone: "🥚", titre: "Œuf brouillé", detail: "Pousser les légumes sur le côté. Casser les œufs, brouiller rapidement.", badge: null },
-      { icone: "🍜", titre: "Nouilles et sauce", detail: "Ajouter les nouilles, sauce soja, huile de sésame et poivre. Mélanger vigoureusement. Garnir de ciboule.", badge: "⏱ 3 min" }
+      { icone: "💧", titre: "Tremper", detail: "Plonger les nouilles dans de l'eau froide 20 min jusqu'à ce qu'elles s'assouplissent, puis les égoutter soigneusement.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'ail et le gingembre, détailler le bok choy en lanières et battre légèrement les œufs dans un bol.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Faire chauffer le wok à feu maximum avec l'huile jusqu'à ce qu'elle fume légèrement, puis y jeter l'ail et le gingembre 30 secondes.", badge: null },
+      { icone: "🥬", titre: "Sauter", detail: "Ajouter le bok choy et faire sauter 3 min en remuant constamment pour le garder croquant et coloré.", badge: null },
+      { icone: "🥚", titre: "Brouiller", detail: "Pousser les légumes sur un côté du wok, verser les œufs battus et les brouiller rapidement avant de mélanger au reste.", badge: null },
+      { icone: "🍜", titre: "Assembler", detail: "Incorporer les nouilles égouttées, la sauce soja, l'huile de sésame et un tour de moulin à poivre, puis sauter vivement 2 min en mélangeant énergiquement.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Servir aussitôt dans des bols, parsemé de graines de sésame et de ciboule, tant que les nouilles sont brûlantes.", badge: null }
     ]
   },
   maffeSenegal: {
@@ -2195,11 +2324,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Faire dorer le poulet", detail: "Faire dorer les morceaux de poulet à feu vif. Réserver. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🧅", titre: "Base tomate", detail: "Faire revenir oignon, ajouter tomates concassées et concentré. Cuire 5 min.", badge: null },
-      { icone: "🥜", titre: "Pâte d'arachide", detail: "Délayer la pâte d'arachide avec du bouillon chaud. Ajouter dans la sauce.", badge: null },
-      { icone: "🍠", titre: "Légumes et poulet", detail: "Ajouter le poulet et les cubes de patate douce. Mijoter à feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 35 min" },
-      { icone: "🍚", titre: "Servir", detail: "Servir sur riz blanc avec du piment à part.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le poulet en morceaux, émincer l'oignon et détailler la patate douce en gros cubes réguliers.", badge: null },
+      { icone: "🍗", titre: "Dorer", detail: "Saisir les morceaux de poulet à feu vif dans un peu d'huile jusqu'à ce qu'ils soient bien dorés sur toutes les faces, puis réserver.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Dans la même cocotte, faire revenir l'oignon à feu moyen 5 min, ajouter les tomates concassées et cuire encore 5 min pour réduire.", badge: null },
+      { icone: "🥜", titre: "Délayer", detail: "Délayer la pâte d'arachide avec un peu de bouillon chaud jusqu'à obtenir une crème lisse, puis l'incorporer à la sauce tomate.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Remettre le poulet, ajouter la patate douce et couvrir d'eau ou de bouillon, puis laisser mijoter à feu doux 35 min en remuant régulièrement pour éviter que ça n'attache.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Rectifier le sel et le poivre, vérifier que la patate douce est fondante et que la sauce a épaissi et nappe la cuillère.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir bien chaud sur un riz blanc, avec du piment frais à part pour ceux qui aiment relever le plat.", badge: null }
     ]
   },
   choucroute: {
@@ -2229,11 +2360,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Rincer la choucroute", detail: "Rincer la choucroute à l'eau froide plusieurs fois pour ôter l'excès d'acidité. Bien égoutter. Rincer abondamment à l'eau froide.", badge: null },
-      { icone: "🥓", titre: "Base et lard", detail: "Faire revenir oignon dans le saindoux. Ajouter le lard fumé et le faire colorer.", badge: "⏱ 5 min" },
-      { icone: "🍷", titre: "Cuire la choucroute", detail: "Ajouter la choucroute, le vin blanc (Riesling), baies de genièvre, laurier, clous de girofle. Couvrir et mijoter. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 1h30" },
-      { icone: "🌭", titre: "Ajouter les viandes", detail: "30 min avant la fin, ajouter le jarret et les saucisses (de Strasbourg, Francfort ou knack) pour les réchauffer.", badge: "⏱ 30 min" },
-      { icone: "🥔", titre: "Servir", detail: "Dresser avec pommes de terre à la vapeur. Servir avec moutarde.", badge: null }
+      { icone: "💧", titre: "Rincer", detail: "Rincer la choucroute à l'eau froide plusieurs fois pour ôter l'excès d'acidité, puis bien la presser pour l'égoutter.", badge: null },
+      { icone: "🥓", titre: "Colorer", detail: "Faire revenir l'oignon émincé dans un peu de graisse, ajouter le lard fumé et le laisser colorer quelques minutes.", badge: null },
+      { icone: "🍷", titre: "Mouiller", detail: "Ajouter la choucroute, le vin blanc, les baies de genièvre, le laurier et les clous de girofle, puis couvrir d'eau à hauteur.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Couvrir à demi et laisser mijoter à feu doux 1h30 pour que la choucroute s'attendrisse et s'imprègne des arômes.", badge: null },
+      { icone: "🌭", titre: "Ajouter viandes", detail: "30 min avant la fin, enfouir le jarret et les saucisses dans la choucroute pour les cuire et les réchauffer à cœur.", badge: null },
+      { icone: "🥔", titre: "Cuire pommes de terre", detail: "Pendant ce temps, cuire les pommes de terre à la vapeur 20 min jusqu'à ce qu'elles soient fondantes.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dresser la choucroute en dôme, disposer les viandes et les pommes de terre autour, et servir avec de la moutarde forte.", badge: null }
     ]
   },
   porkBelly: {
@@ -2263,10 +2396,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐷", titre: "Préparer la poitrine", detail: "Quadriller la couenne avec un couteau bien tranchant. Saler généreusement.", badge: null },
-      { icone: "⏳", titre: "Cuisson lente", detail: "Poser couenne vers le haut dans un plat. Couvrir de bouillon (soja, ail, gingembre, mirin). Cuire couvert à basse température.", badge: "⏱ 2h30 à 150°C" },
-      { icone: "🍯", titre: "Laque miel-soja", detail: "Sortir la poitrine. Badigeonner de miel + sauce soja. Mettre sous le grill.", badge: "⏱ 10 min grill" },
-      { icone: "🔪", titre: "Trancher et servir", detail: "Trancher en portions. Servir sur riz avec bok choy sauté, sauce hoisin et graines de sésame. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
+      { icone: "🔪", titre: "Inciser", detail: "Quadriller la couenne de la poitrine avec un couteau bien tranchant et la saler généreusement pour la faire croustiller.", badge: null },
+      { icone: "🫚", titre: "Aromatiser", detail: "Préparer un bouillon avec la sauce soja, l'ail écrasé et le gingembre en tranches, puis y déposer la poitrine couenne vers le haut.", badge: null },
+      { icone: "♨️", titre: "Confire", detail: "Couvrir et cuire au four à 150°C pendant 2h30 pour que la viande devienne fondante et se détache à la fourchette.", badge: null },
+      { icone: "🍯", titre: "Laquer", detail: "Sortir la poitrine, la badigeonner d'un mélange de miel et de sauce soja, puis la passer sous le grill 5 min jusqu'à caramélisation.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer la viande 10 min hors du four pour que les jus se stabilisent avant de la découper.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Détailler la poitrine en tranches épaisses à l'aide d'un couteau bien aiguisé pour des coupes nettes.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir sur un riz chaud, nappé du jus de cuisson réduit et parsemé de graines de sésame.", badge: null }
     ]
   },
   sauteporc: {
@@ -2296,10 +2432,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐷", titre: "Dorer le porc", detail: "Couper le filet ou l'échine en cubes. Faire dorer à feu vif dans huile d'olive. Saler, poivrer. Réserver. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 6 min" },
-      { icone: "🥕", titre: "Légumes", detail: "Dans la même poêle, faire revenir oignon, puis carottes et courgettes. 5 min.", badge: "⏱ 5 min" },
-      { icone: "🌿", titre: "Déglacer et mijoter", detail: "Remettre le porc. Déglacer avec le bouillon. Ajouter thym, laurier et moutarde. Mijoter à couvert. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 25 min" },
-      { icone: "🍽️", titre: "Servir", detail: "Rectifier l'assaisonnement. Servir avec purée, riz ou pâtes.", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Couper le porc en cubes réguliers, émincer l'oignon, tailler les carottes en rondelles et les courgettes en demi-lunes.", badge: null },
+      { icone: "🥩", titre: "Dorer", detail: "Saisir les cubes de porc à feu vif dans l'huile d'olive jusqu'à belle coloration, saler et poivrer, puis réserver.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Dans la même poêle, faire revenir l'oignon 3 min, ajouter les carottes puis les courgettes et les faire revenir 5 min.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Remettre le porc, verser le bouillon pour déglacer les sucs et ajouter le thym et le laurier.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Couvrir à demi et laisser mijoter à feu doux 25 min jusqu'à ce que le porc soit tendre et que le bouillon ait réduit.", badge: null },
+      { icone: "🧂", titre: "Rectifier", detail: "Goûter et rectifier l'assaisonnement en sel et poivre, et laisser réduire encore quelques minutes si la sauce est trop liquide.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud avec une purée, du riz ou des pâtes pour profiter de la sauce.", badge: null }
     ]
   },
   ratatouille: {
@@ -2330,10 +2469,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍆", titre: "Préparer les légumes", detail: "Couper tous les légumes en dés de 2cm. Saler les aubergines 20 min pour dégorger.", badge: "⏱ 20 min" },
-      { icone: "🔥", titre: "Faire revenir séparément", detail: "Faire dorer chaque légume séparément à feu vif dans l'huile d'olive. C'est le secret d'une bonne ratatouille !", badge: "⏱ 20 min" },
-      { icone: "🍅", titre: "Assembler", detail: "Réunir tous les légumes avec tomates, ail, herbes de Provence. Mijoter à couvert.", badge: "⏱ 30 min" },
-      { icone: "🌿", titre: "Servir", detail: "Rectifier l'assaisonnement. Servir chaud en accompagnement, ou froid le lendemain (encore meilleur !).", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Couper l'aubergine, la courgette, le poivron, la tomate et l'oignon en dés réguliers de 2 cm.", badge: null },
+      { icone: "🧂", titre: "Dégorger", detail: "Saler les dés d'aubergine et les laisser dégorger 20 min, puis les éponger pour retirer l'amertume et l'excès d'eau.", badge: null },
+      { icone: "🍆", titre: "Saisir séparément", detail: "Faire dorer chaque légume séparément à feu vif dans l'huile d'olive, c'est le secret d'une ratatouille où chacun garde sa tenue.", badge: null },
+      { icone: "🍅", titre: "Réunir", detail: "Réunir tous les légumes dans la cocotte, ajouter les tomates, l'ail écrasé et les herbes de Provence.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Couvrir et laisser mijoter à feu doux 30 min en remuant délicatement, jusqu'à ce que les légumes soient fondants et confits.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Rectifier le sel et le poivre et laisser reposer quelques minutes hors du feu pour que les saveurs se marient.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud en accompagnement, ou froid le lendemain où la ratatouille est encore meilleure.", badge: null }
     ]
   },
   choufleurgratin: {
@@ -2364,10 +2506,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥦", titre: "Blanchir", detail: "Couper le chou-fleur en fleurettes. Cuire 8 min dans eau bouillante salée. Égoutter soigneusement. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 8 min" },
-      { icone: "🥛", titre: "Béchamel", detail: "Préparer une béchamel : roux blanc + lait chaud. Assaisonner de noix de muscade. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
-      { icone: "🏗️", titre: "Monter le gratin", detail: "Disposer le chou-fleur dans un plat beurré. Napper de béchamel. Couvrir de gruyère râpé.", badge: null },
-      { icone: "🔥", titre: "Gratiner", detail: "Cuire jusqu'à surface bien dorée.", badge: "⏱ 20-25 min à 200°C" }
+      { icone: "🔪", titre: "Détailler", detail: "Détacher le chou-fleur en fleurettes régulières avec un couteau bien aiguisé pour une cuisson homogène.", badge: null },
+      { icone: "💧", titre: "Blanchir", detail: "Cuire les fleurettes 8 min dans une grande eau bouillante salée jusqu'à ce qu'elles soient tendres mais fermes, puis bien égoutter.", badge: null },
+      { icone: "🥛", titre: "Béchamel", detail: "Préparer une béchamel avec un roux blanc beurre-farine et le lait chaud, puis l'assaisonner de sel, poivre et noix de muscade râpée.", badge: null },
+      { icone: "🧀", titre: "Monter", detail: "Disposer le chou-fleur dans un plat beurré, le napper généreusement de béchamel et le couvrir de gruyère râpé.", badge: null },
+      { icone: "🌰", titre: "Parsemer", detail: "Parsemer de quelques noix concassées et de noisettes de beurre pour une croûte dorée et croustillante.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner à 200°C pendant 20 min jusqu'à ce que la surface soit bien dorée et boursoufle légèrement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser reposer 5 min pour que le gratin se tienne, puis servir bien chaud.", badge: null }
     ]
   },
   salmongrillee: {
@@ -2397,10 +2542,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Assaisonner", detail: "Sécher les pavés. Saler, poivrer côté peau.", badge: null },
-      { icone: "🔥", titre: "Griller côté peau", detail: "Poêle très chaude avec huile. Déposer côté peau. Appuyer 30 sec. Cuire 3-4 min sans toucher.", badge: "⏱ 4 min" },
-      { icone: "🔄", titre: "Retourner", detail: "Retourner et cuire 2 min côté chair. Le centre doit rester légèrement nacré.", badge: "⏱ 2 min" },
-      { icone: "🧈", titre: "Sauce beurre citron", detail: "Dans la même poêle, fondre beurre + jus citron + câpres + aneth. Napper le saumon.", badge: null }
+      { icone: "🧂", titre: "Assaisonner", detail: "Sécher soigneusement les pavés de saumon, puis les saler et les poivrer surtout côté peau.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Faire chauffer une poêle avec un filet d'huile d'olive jusqu'à ce qu'elle soit très chaude.", badge: null },
+      { icone: "🐟", titre: "Griller", detail: "Déposer les pavés côté peau, presser 30 secondes pour éviter qu'ils ne se cintrent, puis cuire 3 à 4 min sans les toucher.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Retourner les pavés et cuire 2 min côté chair, en gardant le cœur légèrement nacré et moelleux.", badge: null },
+      { icone: "🧈", titre: "Sauce", detail: "Dans la même poêle, faire fondre le beurre avec le jus de citron, les câpres et l'aneth ciselé pour une sauce nappante.", badge: null },
+      { icone: "🥄", titre: "Napper", detail: "Arroser généreusement les pavés de cette sauce beurre-citron juste avant de servir.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dresser aussitôt avec un quartier de citron et un brin d'aneth, accompagné de légumes vapeur ou de riz.", badge: null }
     ]
   },
   agneluroti: {
@@ -2430,10 +2578,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧄", titre: "Piquer et assaisonner", detail: "Piquer le gigot de gousses d'ail. Frotter d'huile d'olive, sel, poivre et romarin. Sortir du frigo 1h avant.", badge: "⏱ 1h temp. ambiante" },
-      { icone: "🔥", titre: "Saisir", detail: "Faire dorer sur toutes les faces dans un plat à rôtir à feu vif. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 5 min" },
-      { icone: "🍖", titre: "Rôtir", detail: "Enfourner à 200°C d'abord, puis baisser à 180°C. Arroser toutes les 20 min avec le jus. Chaleur tournante pour une cuisson uniforme.", badge: "⏱ 20 min/500g" },
-      { icone: "⏳", titre: "Reposer", detail: "Laisser reposer 15 min sous alu avant de découper. Le jus se redistribue. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 15 min repos" }
+      { icone: "🔪", titre: "Préparer", detail: "Piquer le gigot de fines lamelles d'ail, le frotter d'huile d'olive, de sel, de poivre et de romarin, puis le sortir du frigo 1h avant cuisson.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Faire dorer le gigot sur toutes ses faces à feu vif dans un plat à rôtir pour caraméliser les sucs et fixer les jus.", badge: null },
+      { icone: "♨️", titre: "Enfourner", detail: "Enfourner à 200°C 15 min, puis baisser à 180°C et poursuivre la cuisson en comptant environ 15 min par 500 g pour une viande rosée.", badge: null },
+      { icone: "🥄", titre: "Arroser", detail: "Arroser le gigot toutes les 20 min avec son jus et un peu de bouillon pour le garder moelleux et brillant.", badge: null },
+      { icone: "🌡️", titre: "Vérifier", detail: "Vérifier la cuisson au thermomètre, en visant 54°C à cœur pour une viande rosée et 60°C pour une cuisson à point.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Sortir le gigot et le laisser reposer 15 min sous une feuille d'aluminium pour que les jus se redistribuent dans la chair.", badge: null },
+      { icone: "🍽️", titre: "Découper", detail: "Découper en tranches fines avec un couteau bien aiguisé, et servir nappé du jus de cuisson déglacé.", badge: null }
     ]
   },
   crepesbretonnes: {
@@ -2463,10 +2614,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte sarrasin", detail: "Mélanger farine de sarrasin, œuf, sel et lait progressivement. Ajouter beurre fondu. Reposer 1h minimum.", badge: "⏱ 1h repos" },
-      { icone: "🍳", titre: "Cuire les galettes", detail: "Poêle à crêpes bien chaude et beurrée. Pâte fine et croustillante. Cuire 2 min par face.", badge: "⏱ 2 min/galette" },
-      { icone: "🧀", titre: "Garnir la complète", detail: "Déposer fromage râpé sur la galette chaude. Ajouter jambon. Casser un œuf au centre. Replier les 4 côtés.", badge: "⏱ 3 min" },
-      { icone: "🍽️", titre: "Servir", detail: "Servir immédiatement très chaud avec cidre breton.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Mélangez 250 g de farine de sarrasin avec une pincée de sel, formez un puits, cassez 1 œuf et délayez progressivement avec 50 cl d'eau et un peu de lait jusqu'à une pâte fluide et lisse.", badge: null },
+      { icone: "⏳", titre: "Repos", detail: "Couvrez le saladier d'un linge et laissez reposer la pâte au minimum 1 h à température ambiante pour que le sarrasin s'hydrate et que les galettes soient souples.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Faites chauffer une crêpière ou poêle plate à feu vif jusqu'à ce qu'une goutte d'eau y danse, puis graissez-la légèrement avec un papier imbibé de beurre fondu.", badge: null },
+      { icone: "🥞", titre: "Étaler", detail: "Versez une louche de pâte et étalez-la finement avec une raclette, laissez cuire environ 2 min jusqu'à ce que les bords se décollent et que le dessous soit doré.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Parsemez de fromage râpé au centre, posez une tranche de jambon dessus puis cassez un œuf au milieu et laissez le blanc prendre 2 min à feu moyen.", badge: null },
+      { icone: "📐", titre: "Replier", detail: "Rabattez les quatre côtés de la galette vers le centre pour former un carré en laissant le jaune apparent, puis faites glisser sur une assiette chaude.", badge: null },
+      { icone: "🍏", titre: "Servir", detail: "Servez la galette complète immédiatement, bien chaude et croustillante, accompagnée d'un bol de cidre breton bien frais.", badge: null }
     ]
   },
   stroganov: {
@@ -2496,10 +2650,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Couper le bœuf", detail: "Couper le filet ou rumsteck en lanières fines. Saler et poivrer. Saisir à feu très vif par petites quantités. Réserver. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 4 min" },
-      { icone: "🍄", titre: "Champignons et oignon", detail: "Dans la même poêle, faire revenir oignon émincé puis champignons jusqu'à évaporation.", badge: "⏱ 8 min" },
-      { icone: "🍦", titre: "Sauce crème-moutarde", detail: "Ajouter moutarde, crème fraîche et un peu de bouillon. Remuer. Ne pas faire bouillir.", badge: null },
-      { icone: "🥩", titre: "Réunir et servir", detail: "Remettre le bœuf 2 min dans la sauce. Parsemer de persil. Servir sur riz, pâtes ou pommes de terre.", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Détaillez 600 g de filet ou rumsteck de bœuf en fines lanières dans le sens contraire des fibres, salez et poivrez généreusement.", badge: null },
+      { icone: "🧅", titre: "Émincer", detail: "Émincez finement l'oignon et coupez les champignons en lamelles régulières, en ôtant la base terreuse des pieds.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisissez le bœuf par petites quantités dans une poêle très chaude 1 à 2 min pour le colorer sans le dessécher, puis réservez-le au chaud.", badge: null },
+      { icone: "🍄", titre: "Revenir", detail: "Dans la même poêle, faites suer l'oignon 3 min à feu moyen puis ajoutez les champignons et laissez-les cuire jusqu'à évaporation complète de leur eau.", badge: null },
+      { icone: "🥄", titre: "Sauce", detail: "Incorporez 1 cuillère de moutarde, la crème fraîche et un peu de bouillon, mélangez et laissez frémir à feu doux 3 min sans jamais faire bouillir.", badge: null },
+      { icone: "♨️", titre: "Réunir", detail: "Remettez le bœuf et son jus dans la sauce, réchauffez 2 min à feu doux, rectifiez l'assaisonnement en sel et poivre.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemez de persil haché et servez aussitôt sur un lit de riz pilaf, de tagliatelles fraîches ou de pommes de terre vapeur.", badge: null }
     ]
   },
   pouletescalopes: {
@@ -2529,10 +2686,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔨", titre: "Aplatir les escalopes", detail: "Placer les escalopes entre deux feuilles de film. Aplatir au rouleau à 1cm d'épaisseur. Saler, poivrer.", badge: null },
-      { icone: "🌾", titre: "Paner", detail: "Passer dans farine → œuf battu → chapelure. Appuyer pour faire adhérer.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Poêle avec huile + beurre à feu moyen-vif. Cuire 3-4 min par face jusqu'à dorure.", badge: "⏱ 6-8 min" },
-      { icone: "🍋", titre: "Servir", detail: "Servir avec quartiers de citron, salade verte et frites maison.", badge: null }
+      { icone: "🍗", titre: "Aplatir", detail: "Placez les escalopes de poulet entre deux feuilles de film alimentaire et aplatissez-les au rouleau à 1 cm d'épaisseur pour une cuisson homogène.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Salez et poivrez les deux faces des escalopes, puis préparez trois assiettes creuses avec la farine, les œufs battus et la chapelure.", badge: null },
+      { icone: "🥖", titre: "Paner", detail: "Passez chaque escalope dans la farine, puis dans l'œuf battu et enfin dans la chapelure, en appuyant bien pour que la panure adhère uniformément.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Faites chauffer un mélange d'huile et de beurre dans une poêle à feu moyen-vif jusqu'à ce que le beurre mousse sans brûler.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Déposez les escalopes et faites-les dorer 3 à 4 min par face jusqu'à obtenir une croûte bien dorée et croustillante.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Déposez les escalopes sur du papier absorbant quelques instants pour retirer l'excès de gras et garder le croustillant.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servez aussitôt avec des quartiers de citron à presser, une salade verte et des frites maison.", badge: null }
     ]
   },
   moulesmarinieres: {
@@ -2563,10 +2723,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🦪", titre: "Nettoyer les moules", detail: "Gratter et rincer les moules. Enlever les filaments. Jeter les moules ouvertes ou cassées. Rincer abondamment à l'eau froide.", badge: null },
-      { icone: "🧅", titre: "Faire revenir", detail: "Faire revenir échalotes et ail émincés dans le beurre 2 min.", badge: null },
-      { icone: "🍷", titre: "Cuire les moules", detail: "Ajouter le vin blanc et les moules. Couvrir à feu vif. Secouer régulièrement. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 5-7 min" },
-      { icone: "🌿", titre: "Servir", detail: "Jeter les moules fermées. Parsemer de persil haché. Servir avec frites et pain de campagne.", badge: null }
+      { icone: "🧽", titre: "Nettoyer", detail: "Grattez les coquilles des moules, retirez les filaments (byssus) et rincez-les abondamment à l'eau froide en jetant celles qui restent ouvertes ou cassées.", badge: null },
+      { icone: "🔪", titre: "Hacher", detail: "Émincez finement les échalotes et l'ail, et ciselez le persil frais que vous réservez pour la fin.", badge: null },
+      { icone: "🧈", titre: "Suer", detail: "Faites fondre le beurre dans un grand faitout et faites-y suer échalotes et ail 2 min à feu moyen sans coloration.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Versez le vin blanc, portez à ébullition et laissez réduire 2 min pour atténuer l'alcool et concentrer les arômes.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Ajoutez les moules, couvrez et faites cuire 5 à 6 min à feu vif en secouant régulièrement le faitout jusqu'à ce que toutes les coquilles s'ouvrent.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Jetez les moules restées fermées, parsemez de persil haché et donnez un dernier tour de poivre, sans saler car les moules le sont déjà.", badge: null },
+      { icone: "🍟", titre: "Servir", detail: "Servez les moules brûlantes dans leur jus, accompagnées de frites dorées et de pain de campagne pour saucer.", badge: null }
     ]
   },
   boeufbourguignon: {
@@ -2632,11 +2795,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire suer l'oignon", detail: "Émincer finement l'oignon. Dans une grande casserole, faire chauffer l'huile et 20g de beurre à feu moyen. Faire suer l'oignon 4–5 min sans coloration.", badge: null },
-      { icone: "🍚", titre: "Nacrer le riz", detail: "Ajouter le riz arborio et remuer 2 min à feu moyen jusqu'à ce qu'il devienne nacré et translucide.", badge: "⏱ 2 min" },
-      { icone: "🍷", titre: "Déglacer au vin blanc", detail: "Verser le vin blanc et remuer jusqu'à absorption complète.", badge: null },
-      { icone: "🥄", titre: "Ajouter le bouillon", detail: "Ajouter le bouillon chaud louche par louche en remuant constamment. Attendre que chaque louche soit absorbée avant d'en ajouter une autre.", badge: "⏱ 18–20 min" },
-      { icone: "🧀", titre: "Mantecatura", detail: "Hors du feu, ajouter le reste du beurre froid et le parmesan râpé. Mélanger vigoureusement pour obtenir un risotto crémeux et lié. Couvrir 2 min.", badge: "⏱ 2 min de repos" }
+      { icone: "🧅", titre: "Suer", detail: "Émincez finement l'oignon et faites-le suer 4 à 5 min à feu moyen dans l'huile d'olive et 20 g de beurre, sans coloration.", badge: null },
+      { icone: "🍚", titre: "Nacrer", detail: "Ajoutez le riz arborio et remuez 2 min à feu moyen jusqu'à ce que les grains deviennent nacrés et translucides sur les bords.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Versez le vin blanc et remuez à feu vif jusqu'à absorption complète pour déglacer et parfumer le riz.", badge: null },
+      { icone: "🥄", titre: "Mouiller", detail: "Ajoutez le bouillon chaud louche par louche en remuant sans cesse, en attendant chaque fois l'absorption avant la louche suivante, pendant environ 18 min.", badge: null },
+      { icone: "👅", titre: "Goûter", detail: "Goûtez le riz qui doit rester légèrement ferme à cœur (al dente) et nappé d'une crème onctueuse, ajustez le sel.", badge: null },
+      { icone: "🧀", titre: "Mantecare", detail: "Hors du feu, incorporez vigoureusement le reste de beurre froid et le parmesan râpé pour lier et rendre le risotto crémeux.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Couvrez et laissez reposer 2 min, puis servez aussitôt dans des assiettes chaudes, le risotto doit s'étaler à l'onde.", badge: null }
     ]
   },
   gratindauphinois: {
@@ -2667,11 +2832,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Préchauffer le four", detail: "Préchauffer à 160 °C. Frotter le plat à gratin avec une gousse d'ail coupée en deux, puis beurrer généreusement. Minimum 10 min à la bonne température pour un démarrage de cuisson correct.", badge: null },
-      { icone: "🥔", titre: "Préparer les pommes de terre", detail: "Éplucher et laver les pommes de terre. Les couper en fines rondelles régulières (2–3 mm) sans les rincer — l'amidon aide à la liaison. Ne pas les rincer ! ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥛", titre: "Préparer la crème", detail: "Dans une casserole, faire chauffer le lait et la crème avec l'ail écrasé, la muscade, le sel et le poivre. Porter à frémissement puis retirer du feu.", badge: null },
-      { icone: "🏗️", titre: "Monter le gratin", detail: "Disposer les rondelles de pommes de terre en couches régulières dans le plat. Verser la crème chaude par-dessus jusqu'à hauteur des pommes de terre.", badge: null },
-      { icone: "🔥", titre: "Cuire au four", detail: "Enfourner à 160 °C. Le gratin est prêt quand les pommes de terre sont fondantes (tester avec la pointe d'un couteau) et le dessus bien doré. Chaleur tournante pour une cuisson uniforme.", badge: "⏱ 1h15–1h30" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffez le four à 160 °C, frottez le plat à gratin avec une gousse d'ail coupée puis beurrez-le généreusement.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Épluchez et lavez les pommes de terre, puis coupez-les en fines rondelles régulières de 2 à 3 mm sans les rincer pour conserver l'amidon qui liera le gratin.", badge: null },
+      { icone: "🥛", titre: "Infuser", detail: "Dans une casserole, chauffez le lait et la crème avec l'ail écrasé, le sel, le poivre et une râpée de muscade, et portez à frémissement.", badge: null },
+      { icone: "🥔", titre: "Monter", detail: "Disposez les rondelles de pommes de terre en couches régulières et serrées dans le plat, en assaisonnant légèrement entre les couches.", badge: null },
+      { icone: "🌊", titre: "Napper", detail: "Versez la crème chaude par-dessus jusqu'à hauteur des pommes de terre, en pressant un peu pour bien répartir le liquide.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfournez à 160 °C pendant environ 1 h 15 jusqu'à ce que les pommes de terre soient fondantes à la pointe du couteau et le dessus bien doré.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez reposer 10 min pour que le gratin se tienne, puis servez bien chaud en accompagnement d'une viande rôtie ou grillée.", badge: null }
     ]
   },
   wrappoulet: {
@@ -2701,10 +2868,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Mariner et griller le poulet", detail: "Couper le poulet en lanières. Mariner 10 min avec huile d'olive, cumin, paprika, ail, sel. Faire griller à la poêle jusqu'à cuisson complète. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 8 min" },
-      { icone: "🥣", titre: "Préparer la sauce", detail: "Mélanger le yaourt grec avec jus de citron, ail pressé, herbes fraîches (coriandre, menthe), sel et poivre.", badge: null },
-      { icone: "🥬", titre: "Préparer les légumes", detail: "Laver et émincer la laitue. Couper la tomate en dés. Préparer avocat ou concombre selon envie. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌯", titre: "Assembler le wrap", detail: "Étaler la sauce sur la tortilla. Ajouter laitue, tomate, poulet chaud. Rouler serré en repliant les côtés. Couper en deux en diagonale. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Coupez le poulet en fines lanières et laissez-le mariner 10 min avec un filet d'huile, l'ail pressé, du sel et du poivre.", badge: null },
+      { icone: "🍳", titre: "Griller", detail: "Faites griller les lanières de poulet 5 à 6 min à feu vif dans une poêle chaude jusqu'à ce qu'elles soient dorées et cuites à cœur.", badge: null },
+      { icone: "🥄", titre: "Sauce", detail: "Mélangez le yaourt avec le jus de citron, l'ail pressé, du sel et du poivre pour obtenir une sauce crémeuse et acidulée.", badge: null },
+      { icone: "🥬", titre: "Préparer", detail: "Lavez et émincez la laitue en lanières et coupez les tomates en petits dés que vous égouttez légèrement.", badge: null },
+      { icone: "🫓", titre: "Étaler", detail: "Tiédissez brièvement les tortillas à la poêle, puis étalez une bonne cuillère de sauce au centre de chacune.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Garnissez de laitue, tomate et poulet chaud, repliez les côtés puis roulez le wrap bien serré pour qu'il ne s'ouvre pas.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Coupez chaque wrap en deux en diagonale et servez aussitôt, encore tiède, avec quelques crudités.", badge: null }
     ]
   },
   cassoulet: {
@@ -2734,11 +2904,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥜", titre: "Tremper les haricots", detail: "La veille, faire tremper les haricots blancs secs dans l'eau froide pendant 12h. Égoutter et rincer. Rincer abondamment à l'eau froide.", badge: "⏱ 12h" },
-      { icone: "🧅", titre: "Préparer la base", detail: "Faire revenir oignons et ail dans une grande cocotte. Ajouter les lardons et faire dorer. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: null },
-      { icone: "🍅", titre: "Ajouter les haricots", detail: "Ajouter les haricots, tomates concassées, bouquet garni, sel, poivre. Couvrir d'eau et laisser mijoter. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 1h" },
-      { icone: "🌭", titre: "Ajouter les viandes", detail: "Faire dorer les saucisses. Les ajouter avec le confit de canard dans la cocotte. Mélanger délicatement. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: null },
-      { icone: "🔥", titre: "Gratiner", detail: "Verser dans un plat en terre. Saupoudrer de chapelure. Passer au four à 180°C pour gratiner.", badge: "⏱ 30 min" }
+      { icone: "💧", titre: "Tremper", detail: "La veille, faites tremper les haricots blancs secs dans un grand volume d'eau froide pendant 12 h, puis égouttez et rincez-les.", badge: null },
+      { icone: "🫘", titre: "Précuire", detail: "Faites blanchir les haricots 5 min à l'eau bouillante, égouttez, puis poursuivez la cuisson 45 min à frémissement dans de l'eau jusqu'à ce qu'ils soient tendres.", badge: null },
+      { icone: "🧅", titre: "Base", detail: "Dans une grande cocotte, faites revenir les oignons et l'ail hachés, ajoutez les lardons et laissez-les dorer 5 min.", badge: null },
+      { icone: "🍅", titre: "Mijoter", detail: "Ajoutez les tomates concassées, un bouquet garni, le sel et le poivre, mouillez d'un peu de bouillon de cuisson des haricots et laissez mijoter 20 min à feu doux.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Faites dorer les saucisses de Toulouse à la poêle, puis ajoutez-les avec le confit de canard et les haricots égouttés dans la cocotte, mélangez délicatement.", badge: null },
+      { icone: "🍞", titre: "Gratiner", detail: "Versez le tout dans un plat en terre, saupoudrez de chapelure et enfournez à 180 °C pendant 1 h en cassant la croûte plusieurs fois pour l'enfoncer.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez reposer 10 min puis servez le cassoulet bouillonnant directement dans son plat, accompagné d'un vin rouge du Sud-Ouest.", badge: null }
     ]
   },
   hachisparmentier: {
@@ -2769,10 +2941,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Préparer la purée", detail: "Cuire les pommes de terre à l'eau bouillante salée 20 min. Écraser avec beurre et lait chaud. Assaisonner. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: "⏱ 20 min" },
-      { icone: "🧅", titre: "Faire la farce", detail: "Faire revenir les oignons émincés dans l'huile. Ajouter la viande hachée. Cuire en émiettant. Ajouter tomates, sel, poivre, herbes.", badge: "⏱ 15 min" },
-      { icone: "🥘", titre: "Monter le plat", detail: "Dans un plat à gratin, étaler la viande. Recouvrir avec la purée. Lisser à la fourchette pour créer des stries.", badge: null },
-      { icone: "🧀", titre: "Gratiner", detail: "Parsemer de gruyère râpé. Enfourner à 200°C jusqu'à ce que le dessus soit bien doré. Chaleur tournante pour une cuisson uniforme.", badge: "⏱ 20 min" }
+      { icone: "🥔", titre: "Cuire", detail: "Épluchez les pommes de terre et faites-les cuire 20 min dans une grande casserole d'eau bouillante salée jusqu'à ce qu'elles soient tendres.", badge: null },
+      { icone: "🥣", titre: "Purée", detail: "Écrasez les pommes de terre avec le beurre et le lait chaud pour obtenir une purée lisse, assaisonnez de sel et de poivre et goûtez.", badge: null },
+      { icone: "🧅", titre: "Farce", detail: "Faites revenir les oignons émincés dans l'huile, ajoutez la viande de bœuf hachée et faites-la cuire en l'émiettant jusqu'à coloration.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Salez, poivrez la farce, ajoutez quelques herbes et laissez cuire 5 min de plus pour développer les saveurs.", badge: null },
+      { icone: "🍲", titre: "Monter", detail: "Dans un plat à gratin, étalez la farce en couche régulière puis recouvrez-la de purée que vous lissez à la fourchette en formant des stries.", badge: null },
+      { icone: "🧀", titre: "Gratiner", detail: "Parsemez de gruyère râpé et enfournez à 200 °C pendant 20 min jusqu'à ce que le dessus soit bien doré et croustillant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez le hachis bien chaud, accompagné d'une simple salade verte assaisonnée.", badge: null }
     ]
   },
   daubeProvencale: {
@@ -2802,11 +2977,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍷", titre: "Mariner la viande", detail: "Couper le bœuf en gros cubes. Mariner une nuit avec vin rouge, aromates, orange en zestes, herbes de Provence.", badge: "⏱ 12h" },
-      { icone: "🥩", titre: "Saisir la viande", detail: "Égoutter et sécher la viande. La faire dorer en plusieurs fois dans l'huile d'olive. Réserver. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: null },
-      { icone: "🧅", titre: "Préparer la base", detail: "Faire revenir oignons et carottes. Ajouter ail, lardons. Déglacer avec la marinade filtrée. ASTUCE CHEF : récupérer TOUS les sucs collés au fond = saveur intense.", badge: null },
-      { icone: "⏳", titre: "Mijoter longuement", detail: "Remettre la viande, ajouter olives, bouquet garni. Couvrir et laisser mijoter à feu très doux. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 2h30" },
-      { icone: "🌿", titre: "Servir", detail: "Servir avec des pâtes fraîches, des gnocchis ou de la polenta. Parsemer de persil frais.", badge: null }
+      { icone: "🍷", titre: "Mariner", detail: "Coupez le bœuf en gros cubes et faites-le mariner une nuit au frais dans le vin rouge avec les zestes d'orange, l'ail et des herbes de Provence.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Égouttez et séchez la viande, puis faites-la dorer en plusieurs fois dans l'huile d'olive bien chaude avant de la réserver.", badge: null },
+      { icone: "🥕", titre: "Base", detail: "Faites revenir les oignons et les carottes en rondelles, ajoutez l'ail puis déglacez avec la marinade filtrée en grattant les sucs au fond de la cocotte.", badge: null },
+      { icone: "🫒", titre: "Réunir", detail: "Remettez la viande, ajoutez les olives, un bouquet garni et quelques zestes d'orange, salez et poivrez.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Couvrez et laissez mijoter à feu très doux pendant 2 h 30, en remuant de temps en temps, jusqu'à ce que la viande soit fondante.", badge: null },
+      { icone: "🥄", titre: "Réduire", detail: "Découvrez en fin de cuisson 15 min pour réduire la sauce qui doit napper la viande, puis rectifiez l'assaisonnement.", badge: null },
+      { icone: "🍝", titre: "Servir", detail: "Parsemez de persil frais et servez la daube bien chaude avec des pâtes fraîches, des gnocchis ou de la polenta.", badge: null }
     ]
   },
   pouletNormande: {
@@ -2836,11 +3013,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Dorer le poulet", detail: "Assaisonner les suprêmes de poulet. Les faire dorer dans le beurre sur les deux faces. Réserver. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: null },
-      { icone: "🍎", titre: "Faire sauter les pommes", detail: "Dans la même poêle, faire sauter les quartiers de pommes dans le beurre jusqu'à légère coloration. Réserver.", badge: null },
-      { icone: "🍺", titre: "Déglacer au cidre", detail: "Déglacer avec le cidre brut. Laisser réduire de moitié. Remettre le poulet. ASTUCE CHEF : la sauce doit napper le dos d'une cuillère = bonne consistance.", badge: "⏱ 20 min" },
-      { icone: "🍦", titre: "Finir à la crème", detail: "Ajouter la crème fraîche épaisse. Laisser mijoter 5 min. Rectifier l'assaisonnement. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 5 min" },
-      { icone: "🍎", titre: "Servir", detail: "Disposer le poulet, napper de sauce. Garnir avec les pommes sautées. Servir avec du riz ou des tagliatelles.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Épongez les suprêmes de poulet, salez-les et poivrez-les généreusement, puis épluchez et coupez les pommes en quartiers réguliers.", badge: null },
+      { icone: "🍗", titre: "Dorer", detail: "Faites mousser une noix de beurre dans une cocotte à feu moyen-vif et dorez les suprêmes 4 à 5 min par face jusqu'à une belle couleur ambrée, puis réservez-les.", badge: null },
+      { icone: "🍎", titre: "Saisir", detail: "Dans la même cocotte, ajoutez un peu de beurre et faites sauter les quartiers de pommes 5 min à feu moyen jusqu'à légère caramélisation, puis réservez-les à part.", badge: null },
+      { icone: "🍶", titre: "Déglacer", detail: "Versez le cidre brut pour décoller les sucs, remettez le poulet et laissez réduire de moitié à feu moyen pendant 8 à 10 min.", badge: null },
+      { icone: "🥛", titre: "Crémer", detail: "Incorporez la crème fraîche épaisse, baissez à feu doux et laissez mijoter 8 min à couvert entrouvert jusqu'à ce que la sauce nappe la cuillère, puis rectifiez l'assaisonnement.", badge: null },
+      { icone: "🍏", titre: "Réunir", detail: "Replongez les pommes sautées dans la sauce 2 min pour les réchauffer sans les défaire et imprégnez-les du jus crémeux.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dressez les suprêmes nappés de sauce, disposez les pommes autour et accompagnez de riz pilaf ou de tagliatelles fraîches.", badge: null }
     ]
   },
   tajinepoulet: {
@@ -2870,10 +3049,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire revenir les oignons", detail: "Faire fondre les oignons émincés dans l'huile d'olive avec ail, gingembre, curcuma, cumin et paprika.", badge: null },
-      { icone: "🍗", titre: "Dorer le poulet", detail: "Ajouter les morceaux de poulet et les dorer sur toutes les faces. Saler, poivrer. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: null },
-      { icone: "🍋", titre: "Ajouter citrons et olives", detail: "Ajouter les citrons confits coupés en quartiers, les olives, un verre d'eau. Couvrir.", badge: "⏱ 40 min" },
-      { icone: "🌿", titre: "Finir et servir", detail: "Parsemer de coriandre et de persil frais. Servir avec du couscous ou du pain arabe.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincez finement les oignons, hachez l'ail et le gingembre frais, et coupez les citrons confits en quartiers en retirant la pulpe.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faites fondre les oignons dans l'huile d'olive à feu doux dans un tajine ou une cocotte 8 min, puis ajoutez l'ail, le gingembre et le curry pour libérer les arômes.", badge: null },
+      { icone: "🍗", titre: "Dorer", detail: "Ajoutez les morceaux de poulet, salez et poivrez, et dorez-les sur toutes les faces 8 min à feu moyen jusqu'à belle coloration.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Versez un grand verre d'eau, couvrez et laissez mijoter à feu doux 35 min en remuant à mi-cuisson pour que le poulet devienne fondant.", badge: null },
+      { icone: "🫒", titre: "Confire", detail: "Ajoutez les quartiers de citron confit et les olives, puis poursuivez la cuisson 10 min à découvert pour réduire et concentrer la sauce.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Goûtez la sauce et rectifiez le sel avec prudence car les citrons et olives salent déjà, puis poivrez selon votre goût.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez de coriandre et de persil frais ciselés et présentez le tajine bien chaud avec de la semoule ou du pain marocain.", badge: null }
     ]
   },
   saltimbocca: {
@@ -2903,10 +3085,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Préparer les escalopes", detail: "Aplatir les escalopes finement. Poser une feuille de sauge et une tranche de jambon cru. Fixer avec un cure-dent.", badge: null },
-      { icone: "🧈", titre: "Faire sauter", detail: "Dans une poêle, faire fondre le beurre à feu vif. Faire sauter les escalopes côté jambon en premier, 2 min par côté. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 4 min" },
-      { icone: "🍷", titre: "Déglacer", detail: "Retirer la viande. Déglacer la poêle avec le vin blanc. Laisser réduire de moitié à feu vif. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 2 min" },
-      { icone: "🍽️", titre: "Servir", detail: "Napper les escalopes de sauce. Servir immédiatement avec des pâtes fraîches ou des légumes sautés.", badge: null }
+      { icone: "🥩", titre: "Aplatir", detail: "Placez les escalopes de veau entre deux feuilles de film et aplatissez-les finement au rouleau pour obtenir des tranches régulières et tendres.", badge: null },
+      { icone: "🌿", titre: "Garnir", detail: "Posez une feuille de sauge fraîche puis une tranche de jambon cru sur chaque escalope et fixez le tout avec un cure-dent.", badge: null },
+      { icone: "🍳", titre: "Saisir", detail: "Faites fondre le beurre dans une poêle à feu vif et saisissez les escalopes côté jambon en premier 2 min, puis 2 min sur l'autre face.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Retirez la viande et réservez au chaud, puis versez le vin blanc dans la poêle et laissez réduire de moitié à feu vif en grattant les sucs.", badge: null },
+      { icone: "🧈", titre: "Lier", detail: "Hors du feu, montez la sauce avec une noix de beurre froid en remuant pour obtenir un jus brillant et nappant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Retirez les cure-dents, nappez les escalopes de sauce à la sauge et servez aussitôt avec des pâtes fraîches ou des légumes sautés.", badge: null }
     ]
   },
   bouillabaisse: {
@@ -2936,11 +3120,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Préparer les poissons", detail: "Nettoyer et couper les poissons (rascasse, grondin, saint-pierre). Préparer les crustacés. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🧅", titre: "Faire le fumet", detail: "Faire revenir oignons, fenouil, tomates, ail dans l'huile d'olive. Ajouter les arêtes et têtes de poisson, safran, bouquet garni. Couvrir d'eau.", badge: "⏱ 30 min" },
-      { icone: "🍯", titre: "Préparer la rouille", detail: "Mixer ail, safran, jaune d'œuf, huile d'olive pour faire la rouille. Saler.", badge: null },
-      { icone: "🐠", titre: "Cuire les poissons", detail: "Filtrer le bouillon. Porter à ébullition. Ajouter les poissons selon leur temps de cuisson. Servir immédiatement.", badge: "⏱ 15 min" },
-      { icone: "🍞", titre: "Servir", detail: "Servir avec des croûtons frottés à l'ail et la rouille à part.", badge: null }
+      { icone: "🐟", titre: "Préparer", detail: "Écaillez, videz et tronçonnez les poissons de roche (rascasse, grondin, saint-pierre), décortiquez les crevettes et réservez têtes et arêtes pour le fumet.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faites revenir oignons émincés, fenouil, ail et tomates concassées dans l'huile d'olive 8 min à feu moyen jusqu'à ce que les légumes fondent.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Ajoutez les têtes et arêtes, le safran et un bouquet garni, couvrez d'eau et laissez frémir 30 min à feu doux pour extraire un fumet corsé.", badge: null },
+      { icone: "🧄", titre: "Rouille", detail: "Pendant ce temps, mixez ail, safran, jaune d'œuf et huile d'olive en filet pour monter une rouille onctueuse, puis salez-la.", badge: null },
+      { icone: "🫗", titre: "Filtrer", detail: "Passez le bouillon au chinois en pressant bien les éléments, remettez-le dans la marmite et portez-le à frémissement.", badge: null },
+      { icone: "🦐", titre: "Pocher", detail: "Plongez les poissons selon leur fermeté en commençant par les plus fermes, ajoutez les crevettes en fin et pochez 10 à 12 min sans bouillir fort.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Présentez le bouillon et les poissons séparément, accompagnés de croûtons frottés à l'ail et de la rouille à tartiner.", badge: null }
     ]
   },
   gratinPates: {
@@ -2970,10 +3156,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les macaronis al dente dans l'eau bouillante salée. Égoutter et réserver. 1 min de moins que sur l'emballage. Goûter pour vérifier.", badge: "⏱ 8 min" },
-      { icone: "🧈", titre: "Faire la béchamel", detail: "Faire fondre le beurre, ajouter la farine et mélanger. Verser le lait progressivement en remuant jusqu'à épaississement. Saler, poivrer, muscade.", badge: "⏱ 8 min" },
-      { icone: "🥘", titre: "Assembler", detail: "Mélanger pâtes, jambon coupé en dés et béchamel. Verser dans un plat à gratin beurré.", badge: null },
-      { icone: "🧀", titre: "Gratiner", detail: "Recouvrir de gruyère râpé. Cuire au four à 200°C jusqu'à gratinage doré.", badge: "⏱ 20 min" }
+      { icone: "🍝", titre: "Cuire", detail: "Plongez les macaronis dans une grande casserole d'eau bouillante salée et cuisez-les al dente, 1 min de moins que l'indication du paquet, puis égouttez.", badge: null },
+      { icone: "🧈", titre: "Roux", detail: "Faites fondre le beurre dans une casserole, ajoutez la farine et remuez 2 min à feu doux pour cuire le roux sans le colorer.", badge: null },
+      { icone: "🥛", titre: "Béchamel", detail: "Versez le lait froid progressivement en fouettant jusqu'à épaississement, puis salez, poivrez et râpez la muscade.", badge: null },
+      { icone: "🍖", titre: "Mélanger", detail: "Coupez le jambon en dés, mélangez-le aux pâtes et à la béchamel, puis versez l'ensemble dans un plat à gratin beurré.", badge: null },
+      { icone: "🧀", titre: "Couvrir", detail: "Répartissez généreusement le gruyère râpé sur toute la surface pour garantir une croûte dorée et homogène.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfournez à 200°C pendant 20 min jusqu'à ce que le dessus soit bien doré et gratiné.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez reposer 5 min pour que le gratin se tienne, puis servez bien chaud avec une salade verte croquante.", badge: null }
     ]
   },
   volauVent: {
@@ -3004,10 +3193,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥐", titre: "Cuire les croûtes", detail: "Cuire les vol-au-vent selon les instructions. Tenir au chaud.", badge: "⏱ 15 min" },
-      { icone: "🦐", titre: "Préparer les fruits de mer", detail: "Faire sauter les crevettes et noix de Saint-Jacques dans le beurre 3 min. Réserver.", badge: "⏱ 3 min" },
-      { icone: "🧈", titre: "Faire la sauce velouté", detail: "Faire un roux beurre/farine. Mouiller avec fumet de poisson et crème. Cuire jusqu'à consistance veloutée.", badge: "⏱ 8 min" },
-      { icone: "🍽️", titre: "Garnir et servir", detail: "Mélanger fruits de mer et sauce. Garnir les croûtes chaudes. Servir immédiatement avec salade verte.", badge: null }
+      { icone: "🥐", titre: "Cuire", detail: "Enfournez les croûtes de pâte feuilletée à 200°C 15 min jusqu'à ce qu'elles soient gonflées et dorées, puis tenez-les au chaud.", badge: null },
+      { icone: "🦐", titre: "Saisir", detail: "Faites sauter les crevettes dans le beurre 3 min à feu vif jusqu'à ce qu'elles soient rosées, puis réservez-les.", badge: null },
+      { icone: "🧈", titre: "Roux", detail: "Dans la même casserole, faites fondre le beurre, ajoutez la farine et remuez 2 min pour obtenir un roux blond.", badge: null },
+      { icone: "🥛", titre: "Velouté", detail: "Versez le lait progressivement en fouettant et laissez épaissir 5 min à feu doux jusqu'à obtenir un velouté nappant, salez et poivrez.", badge: null },
+      { icone: "🌰", titre: "Garnir", detail: "Incorporez les crevettes et les noix concassées à la sauce et réchauffez 2 min sans bouillir pour lier l'ensemble.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Remplissez les croûtes chaudes de cette garniture crémeuse et servez immédiatement avec une salade verte.", badge: null }
     ]
   },
   jambonneauLentilles: {
@@ -3037,10 +3228,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Cuire le jarret", detail: "Placer le jarret dans une cocotte avec eau froide, oignons, carottes, bouquet garni. Porter à ébullition, écumer.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Baisser le feu et laisser mijoter à couvert. La viande doit être très tendre. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 1h30" },
-      { icone: "🥜", titre: "Cuire les lentilles", detail: "Rincer les lentilles. Les plonger dans le bouillon de cuisson. Laisser cuire jusqu'à tendreté. Rincer abondamment à l'eau froide.", badge: "⏱ 25 min" },
-      { icone: "🍽️", titre: "Servir", detail: "Trancher le jarret. Servir sur le lit de lentilles avec la moutarde de Dijon. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Épluchez et coupez les carottes en rondelles, émincez les oignons et préparez un bouquet garni avec le thym.", badge: null },
+      { icone: "🍲", titre: "Démarrer", detail: "Placez le jarret dans une cocotte, couvrez d'eau froide, ajoutez la moitié des oignons, des carottes et le thym, portez à ébullition et écumez soigneusement.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Baissez le feu et laissez frémir à couvert 1h30 jusqu'à ce que la viande soit très tendre et se détache de l'os.", badge: null },
+      { icone: "💧", titre: "Rincer", detail: "Rincez les lentilles à l'eau froide pour retirer les impuretés et égouttez-les soigneusement.", badge: null },
+      { icone: "🫘", titre: "Cuire", detail: "Plongez les lentilles dans le bouillon de cuisson avec le reste des carottes et oignons et laissez cuire 25 à 30 min jusqu'à tendreté.", badge: null },
+      { icone: "🥩", titre: "Trancher", detail: "Sortez le jarret, laissez-le tiédir quelques minutes puis tranchez-le en belles parts avec un couteau bien aiguisé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dressez les tranches de jarret sur un lit de lentilles fumantes et accompagnez d'une cuillère de moutarde de Dijon.", badge: null }
     ]
   },
   boulettesViande: {
@@ -3071,11 +3265,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Former les boulettes", detail: "Mélanger viande hachée, oeuf, chapelure, ail, persil, sel, poivre. Former des boulettes de 3 cm.", badge: null },
-      { icone: "🔥", titre: "Faire dorer", detail: "Faire dorer les boulettes dans l'huile d'olive sur toutes les faces. Réserver. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 8 min" },
-      { icone: "🍅", titre: "Faire la sauce", detail: "Faire revenir oignons et ail. Ajouter tomates concassées, basilic, sel, sucre. Mijoter 10 min. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 10 min" },
-      { icone: "⏳", titre: "Mijoter ensemble", detail: "Remettre les boulettes dans la sauce. Laisser mijoter à couvert. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 15 min" },
-      { icone: "🍝", titre: "Servir", detail: "Servir sur des spaghettis ou avec du pain. Parsemer de parmesan râpé.", badge: null }
+      { icone: "🥣", titre: "Mélanger", detail: "Mélangez le bœuf haché avec l'œuf, l'ail haché, un peu d'oignon, du sel et du poivre jusqu'à obtenir une farce homogène.", badge: null },
+      { icone: "⚪", titre: "Former", detail: "Façonnez des boulettes régulières de 3 cm en les roulant entre vos paumes, puis farinez-les légèrement.", badge: null },
+      { icone: "🍳", titre: "Dorer", detail: "Faites dorer les boulettes dans l'huile d'olive à feu moyen-vif sur toutes les faces pendant 6 min, puis réservez-les.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Dans la même poêle, faites revenir le reste d'oignon émincé et l'ail 3 min à feu doux jusqu'à transparence.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Ajoutez les tomates concassées, une pincée de sucre, du sel et du poivre, et laissez mijoter 10 min à feu doux pour adoucir l'acidité.", badge: null },
+      { icone: "♨️", titre: "Réunir", detail: "Replongez les boulettes dans la sauce et laissez mijoter 10 min à couvert entrouvert pour les imprégner de saveur.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez les boulettes nappées de sauce sur des spaghettis ou avec du pain, parsemées de parmesan râpé.", badge: null }
     ]
   },
   brandadeMorue: {
@@ -3105,11 +3301,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💧", titre: "Dessaler la morue", detail: "Placer la morue dans un grand récipient d'eau froide. Changer l'eau toutes les 6h pendant 24-48h selon l'épaisseur.", badge: "⏱ 24-48h" },
-      { icone: "🐟", titre: "Pocher la morue", detail: "Cuire la morue dans l'eau frémissante (jamais bouillante) 10 min. Égoutter, effeuiller en retirant peaux et arêtes.", badge: "⏱ 10 min" },
-      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Cuire les pommes de terre à la vapeur. Écraser en purée lisse.", badge: "⏱ 20 min" },
-      { icone: "🫒", titre: "Monter la brandade", detail: "Dans une casserole à feu doux, écraser la morue. Incorporer alternativement huile d'olive tiède et crème chaude en mélangeant vigoureusement. Ajouter la purée, l'ail haché. À FEU DOUX strictement — sinon ça brûle vite.", badge: null },
-      { icone: "🔥", titre: "Gratiner (optionnel)", detail: "Verser dans un plat. Saupoudrer de chapelure. Passer au four 10 min pour gratiner. Servir avec des croûtons.", badge: "⏱ 10 min" }
+      { icone: "💧", titre: "Dessaler", detail: "Placez la morue dans un grand récipient d'eau froide et changez l'eau toutes les 6h pendant 24 à 48h selon l'épaisseur des morceaux.", badge: null },
+      { icone: "🐟", titre: "Pocher", detail: "Pochez la morue dans une eau frémissante jamais bouillante 10 min, égouttez-la puis effeuillez-la en retirant soigneusement peaux et arêtes.", badge: null },
+      { icone: "🥔", titre: "Cuire", detail: "Cuisez les pommes de terre à la vapeur 20 min jusqu'à tendreté, puis écrasez-les en purée lisse encore chaude.", badge: null },
+      { icone: "🫒", titre: "Monter", detail: "Dans une casserole à feu doux, écrasez la morue et incorporez alternativement l'huile d'olive tiède et la crème chaude en mélangeant vigoureusement.", badge: null },
+      { icone: "🧄", titre: "Parfumer", detail: "Ajoutez l'ail haché et la purée de pommes de terre, mélangez à feu doux strict pour obtenir une brandade onctueuse et goûtez l'assaisonnement.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Versez la brandade dans un plat, saupoudrez de chapelure et passez au four à 200°C 10 min pour gratiner le dessus.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la brandade dorée bien chaude accompagnée de croûtons frottés à l'ail et d'une salade verte.", badge: null }
     ]
   },
   gnocchisgorgonzola: {
@@ -3139,9 +3337,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Cuire les gnocchis", detail: "Cuire les gnocchis dans l'eau bouillante salée jusqu'à ce qu'ils remontent à la surface. Égoutter.", badge: "⏱ 3 min" },
-      { icone: "🧀", titre: "Faire la sauce", detail: "Dans la casserole, faire fondre le gorgonzola avec la crème à feu doux en remuant. Poivrer généreusement. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 3 min" },
-      { icone: "🌰", titre: "Finir et servir", detail: "Mélanger gnocchis et sauce. Répartir dans les assiettes. Parsemer de noix concassées et de sauge frite.", badge: null }
+      { icone: "💧", titre: "Bouillir", detail: "Portez une grande casserole d'eau salée à ébullition franche pour cuire les gnocchis dans un volume suffisant.", badge: null },
+      { icone: "🥟", titre: "Cuire", detail: "Plongez les gnocchis et retirez-les dès qu'ils remontent à la surface, environ 2 à 3 min, puis égouttez-les délicatement.", badge: null },
+      { icone: "🧀", titre: "Fondre", detail: "Dans une casserole, faites fondre le gorgonzola avec la crème à feu doux en remuant jusqu'à obtenir une sauce lisse, puis poivrez généreusement.", badge: null },
+      { icone: "🌰", titre: "Enrober", detail: "Versez les gnocchis dans la sauce et mélangez délicatement 1 min à feu doux pour bien les napper sans les écraser.", badge: null },
+      { icone: "🍂", titre: "Garnir", detail: "Parsemez de noix concassées pour le croquant et ajoutez quelques feuilles de sauge frite pour le parfum.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Répartissez les gnocchis bien chauds dans les assiettes et servez aussitôt pour profiter de l'onctuosité de la sauce.", badge: null }
     ]
   },
   risottocourgettechevre: {
@@ -3171,10 +3372,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire le soffritto", detail: "Faire suer échalote et ail dans le beurre. Ajouter le riz arborio et nacrer 2 min. Le riz doit devenir TRANSLUCIDE sur les bords avant d'ajouter le liquide.", badge: null },
-      { icone: "🍷", titre: "Déglacer et cuire", detail: "Déglacer au vin blanc. Ajouter le bouillon chaud louche par louche en remuant sans arrêt. ASTUCE CHEF : récupérer TOUS les sucs collés au fond = saveur intense.", badge: "⏱ 18 min" },
-      { icone: "🥒", titre: "Ajouter les courgettes", detail: "À mi-cuisson, ajouter les courgettes sautées. En fin de cuisson, incorporer chèvre émietté et beurre froid. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🍽️", titre: "Mantecatura", detail: "Hors du feu, mantequer vigoureusement. Repos 2 min. Servir avec menthe fraîche.", badge: "⏱ 2 min" }
+      { icone: "🔪", titre: "Préparer", detail: "Tailler les courgettes en petits dés, hacher l'ail et émietter le chèvre ; maintenir le bouillon frémissant dans une casserole à côté.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire fondre une noix de beurre à feu moyen, y faire suer l'ail 1 min sans coloration jusqu'à ce qu'il devienne fondant et parfumé.", badge: null },
+      { icone: "🍚", titre: "Nacrer", detail: "Verser le riz et le remuer 2 min à feu moyen jusqu'à ce que les grains deviennent translucides sur les bords.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Déglacer au vin blanc, laisser évaporer complètement à feu vif puis revenir à feu moyen-doux.", badge: null },
+      { icone: "🥄", titre: "Mouiller", detail: "Ajouter le bouillon chaud louche par louche en remuant sans cesse pendant 18 min, sans noyer le riz, jusqu'à une texture crémeuse al dente.", badge: null },
+      { icone: "🥒", titre: "Courgettes", detail: "À mi-cuisson, incorporer les dés de courgette pour qu'ils restent légèrement croquants en fin de cuisson.", badge: null },
+      { icone: "🧀", titre: "Mantecare", detail: "Hors du feu, ajouter le chèvre émietté et une noix de beurre froid, mélanger vigoureusement, couvrir et laisser reposer 2 min avant de servir bien crémeux.", badge: null }
     ]
   },
   currypoischiches: {
@@ -3204,10 +3408,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire revenir", detail: "Faire suer oignon et ail. Ajouter curry, garam masala, curcuma, cumin. Torréfier 1 min.", badge: null },
-      { icone: "🍅", titre: "Ajouter tomates et pois", detail: "Ajouter tomates concassées et pois chiches égouttés. Mélanger.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Verser le lait de coco. Laisser mijoter à feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 15 min" },
-      { icone: "🌿", titre: "Finir", detail: "Ajouter les épinards frais. Parsemer de coriandre. Servir avec riz basmati ou naans.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer les oignons, hacher l'ail, égoutter et rincer les pois chiches et concasser les tomates.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire suer les oignons et l'ail dans un filet d'huile à feu moyen 5 min jusqu'à translucidité.", badge: null },
+      { icone: "🌶️", titre: "Torréfier", detail: "Ajouter le curry et torréfier les épices 1 min en remuant pour libérer tous les arômes sans les brûler.", badge: null },
+      { icone: "🍅", titre: "Tomates", detail: "Incorporer les tomates concassées et les pois chiches, mélanger et cuire 5 min à feu moyen pour réduire légèrement.", badge: null },
+      { icone: "🥥", titre: "Mijoter", detail: "Verser la crème de coco et le lait, puis laisser mijoter à feu doux strict 12 min en remuant de temps en temps.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et rectifier l'équilibre épices/acidité ; la sauce doit napper la cuillère.", badge: null },
+      { icone: "🍛", titre: "Servir", detail: "Servir bien chaud sur du riz basmati ou avec des naans, parsemé de coriandre fraîche.", badge: null }
     ]
   },
   pastapomodoro: {
@@ -3237,10 +3444,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les spaghetti al dente dans l'eau bouillante très salée. Réserver 1 verre d'eau de cuisson. 1 min de moins que sur l'emballage. Goûter pour vérifier.", badge: "⏱ 9 min" },
-      { icone: "🧄", titre: "Faire la sauce", detail: "Faire dorer l'ail dans l'huile d'olive. Ajouter tomates concassées, sel, sucre. Cuire 10 min. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 10 min" },
-      { icone: "🍅", titre: "Lier", detail: "Égoutter les pâtes al dente. Les finir dans la sauce avec un peu d'eau de cuisson. Bien enrober. 1 min de moins que sur l'emballage. Goûter pour vérifier.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Ajouter le basilic frais déchiré. Un filet d'huile d'olive. Servir immédiatement.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Hacher finement l'ail, concasser les tomates et effeuiller le basilic ; porter une grande casserole d'eau à ébullition.", badge: null },
+      { icone: "🧂", titre: "Cuire pâtes", detail: "Saler généreusement l'eau et y plonger les pâtes, cuire 1 min de moins que l'emballage en réservant un verre d'eau de cuisson.", badge: null },
+      { icone: "🧄", titre: "Parfumer", detail: "Faire dorer l'ail dans l'huile d'olive à feu moyen 1 min jusqu'à une légère coloration parfumée.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Ajouter les tomates, le sel et une pincée de sucre, laisser mijoter 10 min à feu doux jusqu'à une sauce homogène et brillante.", badge: null },
+      { icone: "🍝", titre: "Lier", detail: "Égoutter les pâtes al dente et les faire sauter 1 min dans la sauce avec un peu d'eau de cuisson pour bien les enrober.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Hors du feu, ajouter le basilic frais déchiré et un filet d'huile d'olive.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser immédiatement dans des assiettes chaudes pour préserver le crémeux de la sauce.", badge: null }
     ]
   },
   omeletteprovencale: {
@@ -3270,9 +3480,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫑", titre: "Faire sauter les légumes", detail: "Faire sauter poivron et tomates cerise dans l'huile d'olive avec herbes de Provence. Réserver.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Battre les œufs", detail: "Battre les œufs avec sel, poivre et un peu d'eau. Verser dans la poêle beurrée chaude.", badge: null },
-      { icone: "🧀", titre: "Garnir et plier", detail: "Quand le dessus commence à prendre, déposer légumes et chèvre émietté. Plier et servir.", badge: "⏱ 3 min" }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le poivron en dés, les tomates en deux et émietter le chèvre.", badge: null },
+      { icone: "🫑", titre: "Sauter", detail: "Faire sauter le poivron et les tomates dans l'huile d'olive à feu moyen 6 min avec des herbes de Provence, puis réserver.", badge: null },
+      { icone: "🥚", titre: "Battre", detail: "Battre vigoureusement les œufs avec le sel, le poivre et une cuillère d'eau pour une omelette mousseuse.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Verser les œufs dans la poêle huilée bien chaude et cuire à feu moyen en ramenant les bords vers le centre.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Quand le dessus commence à prendre, répartir les légumes et le chèvre émietté sur une moitié.", badge: null },
+      { icone: "🍽️", titre: "Plier", detail: "Plier l'omelette en deux, la laisser fondre 30 s puis la faire glisser sur l'assiette et servir aussitôt baveuse.", badge: null }
     ]
   },
   tarteepinardfeta: {
@@ -3303,10 +3516,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥐", titre: "Préparer la pâte", detail: "Sabler farine et beurre froid. Ajouter œuf et eau froide. Former une boule. Réfrigérer 20 min.", badge: "⏱ 20 min" },
-      { icone: "🥬", titre: "Préparer les épinards", detail: "Faire fondre les épinards avec ail dans l'huile d'olive. Laisser refroidir. Égoutter.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Faire l'appareil", detail: "Mélanger œufs, crème, épinards, feta émiettée, noix de muscade.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Foncer le moule avec la pâte. Verser l'appareil. Cuire à 180°C.", badge: "⏱ 30 min" }
+      { icone: "🥧", titre: "Pâte", detail: "Sabler la farine avec le beurre froid du bout des doigts, ajouter l'œuf et un peu d'eau froide, former une boule et réfrigérer 20 min.", badge: null },
+      { icone: "🥬", titre: "Épinards", detail: "Faire fondre les épinards avec l'ail haché dans l'huile d'olive à feu vif jusqu'à évaporation de l'eau, puis laisser refroidir et bien égoutter.", badge: null },
+      { icone: "🥣", titre: "Appareil", detail: "Mélanger l'œuf, les épinards, la feta émiettée, les noix concassées et la muscade râpée ; assaisonner.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 180°C en chaleur tournante.", badge: null },
+      { icone: "🥧", titre: "Foncer", detail: "Étaler la pâte, foncer le moule, piquer le fond à la fourchette et verser l'appareil aux épinards.", badge: null },
+      { icone: "⏲️", titre: "Cuire", detail: "Enfourner 35 min à 180°C jusqu'à ce que l'appareil soit pris et la pâte dorée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser tiédir 10 min pour faciliter la découpe, puis servir avec une salade verte.", badge: null }
     ]
   },
   veggieburger: {
@@ -3337,10 +3553,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥜", titre: "Faire les galettes", detail: "Mixer pois chiches égouttés, betterave râpée, oignon, ail, cumin, sel. Former 4 galettes. Réfrigérer 15 min.", badge: "⏱ 15 min" },
-      { icone: "🔥", titre: "Cuire les galettes", detail: "Faire dorer les galettes à la poêle huilée 4 min par côté à feu moyen. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 8 min" },
-      { icone: "🥑", titre: "Préparer la garniture", detail: "Écraser l'avocat avec citron, sel. Préparer tomate, salade, sauce yaourt-ail.", badge: null },
-      { icone: "🍔", titre: "Assembler", detail: "Griller les pains. Garnir avec galette, avocat, tomate, salade et sauce. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Égoutter les pois chiches, râper la betterave, hacher l'oignon et l'ail ; trancher tomate et oignon pour la garniture.", badge: null },
+      { icone: "🥣", titre: "Galettes", detail: "Mixer pois chiches, betterave, oignon, ail, cumin et sel en une pâte grossière, former 4 galettes et réfrigérer 15 min pour qu'elles tiennent.", badge: null },
+      { icone: "🥑", titre: "Garniture", detail: "Écraser l'avocat avec le jus de citron et du sel, puis préparer une sauce yaourt-ail.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Saisir les galettes à la poêle huilée 4 min par face à feu moyen jusqu'à une croûte dorée uniforme.", badge: null },
+      { icone: "🔥", titre: "Toaster", detail: "Faire griller les pains côté mie sur le gril chaud pour une surface croustillante.", badge: null },
+      { icone: "🍔", titre: "Monter", detail: "Tartiner la base de sauce, déposer la galette, l'avocat écrasé, la tomate, l'oignon et la salade.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Refermer le burger et servir aussitôt avec des frites ou des crudités.", badge: null }
     ]
   },
   soufflecheese: {
@@ -3370,10 +3589,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧈", titre: "Faire la béchamel", detail: "Faire un roux beurre/farine. Verser le lait chaud. Cuire jusqu'à épaississement. Ajouter fromage râpé, muscade, jaunes d'œufs.", badge: "⏱ 8 min" },
-      { icone: "🥚", titre: "Monter les blancs", detail: "Monter les blancs en neige très ferme avec une pincée de sel.", badge: null },
-      { icone: "🌀", titre: "Incorporer", detail: "Incorporer délicatement les blancs à la béchamel en 3 fois, en soulevant la masse. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🔥", titre: "Cuire SANS ouvrir", detail: "Verser dans les moules beurrés-farinés. Cuire au four préchauffé SANS ouvrir la porte.", badge: "⏱ 12 min" }
+      { icone: "🧈", titre: "Moules", detail: "Beurrer et fariner soigneusement les moules, puis préchauffer le four à 190°C.", badge: null },
+      { icone: "🥣", titre: "Roux", detail: "Faire un roux blond avec le beurre et la farine 2 min à feu moyen sans coloration.", badge: null },
+      { icone: "🥛", titre: "Béchamel", detail: "Verser le lait chaud en fouettant et cuire jusqu'à épaississement, puis assaisonner de sel et de muscade.", badge: null },
+      { icone: "🧀", titre: "Lier", detail: "Hors du feu, incorporer le fromage râpé et les jaunes d'œufs un à un pour obtenir un appareil lisse.", badge: null },
+      { icone: "🥚", titre: "Monter", detail: "Monter les blancs en neige très ferme avec une pincée de sel.", badge: null },
+      { icone: "🌀", titre: "Incorporer", detail: "Incorporer les blancs en 3 fois à la maryse, en soulevant délicatement la masse pour ne pas casser l'air.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Remplir les moules aux trois quarts et cuire 25 min à 190°C sans jamais ouvrir la porte, puis servir immédiatement gonflé.", badge: null }
     ]
   },
   paellaVege: {
@@ -3403,10 +3625,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫑", titre: "Faire le sofrito", detail: "Faire revenir oignon, poivron rouge et vert, ail dans l'huile d'olive. Ajouter tomates concassées.", badge: "⏱ 10 min" },
-      { icone: "🌾", titre: "Ajouter le riz", detail: "Ajouter le riz bomba. Mélanger pour l'enrober. Verser le bouillon chaud avec safran et paprika fumé.", badge: null },
-      { icone: "🥜", titre: "Cuire sans remuer", detail: "Ajouter légumes. Cuire à feu moyen SANS remuer pour former le socarrat.", badge: "⏱ 18 min" },
-      { icone: "🍋", titre: "Reposer et servir", detail: "Couvrir d'aluminium. Laisser reposer 5 min. Servir avec quartiers de citron. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 5 min" }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon, l'ail et les poivrons, concasser les tomates et infuser le safran dans un peu d'eau chaude.", badge: null },
+      { icone: "🫑", titre: "Sofrito", detail: "Faire revenir oignon, poivrons et ail dans l'huile d'olive à feu moyen 8 min, puis ajouter les tomates et laisser confire.", badge: null },
+      { icone: "🍚", titre: "Nacrer", detail: "Ajouter le riz et le remuer 2 min pour bien l'enrober du sofrito.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Verser l'eau chaude avec le safran infusé et répartir le riz uniformément dans la poêle.", badge: null },
+      { icone: "🟢", titre: "Cuire", detail: "Disperser les petits pois et cuire à feu moyen 18 min sans remuer pour laisser le socarrat se former au fond.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Couvrir d'aluminium et laisser reposer 5 min hors du feu, étape essentielle pour la texture finale.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servir directement dans la poêle avec des quartiers de citron à presser.", badge: null }
     ]
   },
   massamancurry: {
@@ -3436,11 +3661,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Saisir le bœuf", detail: "Couper le bœuf (paleron ou jumeau) en gros cubes. Saisir vivement dans une cocotte avec un peu d'huile jusqu'à coloration. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 8 min" },
-      { icone: "🌶️", titre: "Faire revenir la pâte", detail: "Ajouter la pâte de curry Massaman et faire revenir 2 min jusqu'à libération des arômes. Ajouter l'oignon émincé.", badge: "⏱ 5 min" },
-      { icone: "🥥", titre: "Lait de coco", detail: "Verser le lait de coco, mélanger pour décoller les sucs. Ajouter cacahuètes, tamarin, sucre de palme, sauce poisson.", badge: "⏱ 3 min" },
-      { icone: "⏳", titre: "Mijoter doucement", detail: "Couvrir et laisser mijoter à feu très doux 1h. Ajouter les pommes de terre coupées en gros morceaux à mi-cuisson. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 1h" },
-      { icone: "🍚", titre: "Servir", detail: "Servir bien chaud avec du riz jasmin. Parsemer de cacahuètes concassées et de coriandre fraîche.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le bœuf (paleron ou jumeau) en gros cubes, émincer l'oignon et tailler les pommes de terre en gros morceaux.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Saisir vivement les cubes de bœuf dans un peu d'huile chaude jusqu'à une belle coloration sur toutes les faces.", badge: null },
+      { icone: "🌶️", titre: "Pâte", detail: "Ajouter la pâte Massaman et la faire revenir 2 min jusqu'à libération des arômes, puis incorporer l'oignon.", badge: null },
+      { icone: "🥥", titre: "Lait coco", detail: "Verser le lait de coco en décollant les sucs, ajouter les cacahuètes, le tamarin et le sucre de palme.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Couvrir à demi et laisser mijoter à feu très doux 1h jusqu'à ce que la viande soit fondante.", badge: null },
+      { icone: "🥔", titre: "Pommes de terre", detail: "À mi-cuisson, ajouter les pommes de terre et poursuivre jusqu'à ce qu'elles soient tendres et la sauce réduite.", badge: null },
+      { icone: "🥜", titre: "Servir", detail: "Servir bien chaud sur du riz jasmin, parsemé de cacahuètes concassées et de coriandre fraîche.", badge: null }
     ]
   },
   dakgalbi: {
@@ -3470,11 +3697,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐔", titre: "Mariner le poulet", detail: "Couper le poulet en morceaux. Mariner 15 min avec gochujang, sauce soja, ail râpé, gingembre, sucre, huile de sésame. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 15 min" },
-      { icone: "🥬", titre: "Préparer les légumes", detail: "Émincer chou, oignon, carotte en lanières. Émincer la ciboule.", badge: null },
-      { icone: "🍳", titre: "Cuire au wok", detail: "Dans une grande poêle bien chaude, saisir le poulet mariné 5 min. Ajouter tous les légumes et les tteok (galettes de riz). ASTUCE PRO : poêle TRÈS chaude avant de saisir, sinon la viande bout au lieu de dorer.", badge: "⏱ 12 min" },
-      { icone: "🌶️", titre: "Sauter ensemble", detail: "Mélanger régulièrement. Le poulet doit caraméliser et les légumes rester un peu croquants. ASTUCE CHEF : surveiller la couleur ambrée, pas plus sombre sinon amer.", badge: "⏱ 8 min" },
-      { icone: "🌿", titre: "Finition", detail: "Parsemer de graines de sésame et ciboule. Servir directement dans la poêle au centre de la table.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le poulet en morceaux et émincer le chou, l'oignon et la carotte en lanières.", badge: null },
+      { icone: "🌶️", titre: "Mariner", detail: "Mariner le poulet 15 min avec gochujang, sauce soja, ail, gingembre, sucre et huile de sésame.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Dans une grande poêle très chaude, saisir le poulet mariné 5 min pour qu'il dore sans bouillir.", badge: null },
+      { icone: "🥬", titre: "Légumes", detail: "Ajouter le chou, l'oignon, la carotte et les tteok, puis faire sauter en mélangeant régulièrement.", badge: null },
+      { icone: "🍯", titre: "Caraméliser", detail: "Poursuivre la cuisson jusqu'à ce que le poulet caramélise en restant ambré et les légumes encore croquants.", badge: null },
+      { icone: "🧂", titre: "Rectifier", detail: "Goûter et ajuster l'assaisonnement en sauce soja ou gochujang selon l'intensité voulue.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemer de graines de sésame et de ciboule, et servir directement dans la poêle au centre de la table.", badge: null }
     ]
   },
   bobun: {
@@ -3504,11 +3733,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Mariner le bœuf", detail: "Couper le bœuf en fines lamelles. Mariner avec citronnelle hachée, ail, sauce soja, sucre, huile de sésame. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 15 min" },
-      { icone: "🍜", titre: "Cuire les vermicelles", detail: "Plonger les vermicelles de riz dans l'eau bouillante 3 min. Égoutter et rincer à l'eau froide. Rincer abondamment à l'eau froide.", badge: "⏱ 3 min" },
-      { icone: "🥬", titre: "Préparer les crudités", detail: "Émincer salade, carotte râpée, concombre en allumettes. Ciseler menthe et coriandre.", badge: null },
-      { icone: "🔥", titre: "Saisir le bœuf", detail: "Cuire le bœuf à feu très vif 2 min par face dans un wok. Réserver.", badge: "⏱ 4 min" },
-      { icone: "🍲", titre: "Dresser les bols", detail: "Disposer vermicelles, crudités, bœuf. Arroser de nuoc cham (nuoc mam, citron vert, sucre, ail, piment). Parsemer de cacahuètes.", badge: null }
+      { icone: "🔪", titre: "Trancher", detail: "Coupez le bœuf en fines lamelles en travers des fibres, et hachez finement la citronnelle et l'ail.", badge: null },
+      { icone: "🥢", titre: "Mariner", detail: "Mélangez le bœuf avec la citronnelle, l'ail, un filet d'huile et un peu de sucre, puis laissez mariner 20 min au frais.", badge: null },
+      { icone: "🍜", titre: "Vermicelles", detail: "Plongez les vermicelles de riz dans l'eau bouillante 3 min, égouttez puis rincez abondamment à l'eau froide pour stopper la cuisson.", badge: null },
+      { icone: "🥗", titre: "Crudités", detail: "Émincez la salade, râpez la carotte et taillez le concombre en allumettes, puis ajoutez les pousses de soja croquantes.", badge: null },
+      { icone: "🥄", titre: "Nuoc cham", detail: "Préparez la sauce en mélangeant le nuoc mam, le jus de citron, le sucre et l'ail haché jusqu'à dissolution du sucre.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisissez le bœuf mariné au wok à feu très vif 2 min par face pour qu'il caramélise sans se dessécher.", badge: null },
+      { icone: "🍲", titre: "Dresser", detail: "Disposez les vermicelles au fond du bol, ajoutez les crudités puis le bœuf chaud, arrosez de nuoc cham et servez aussitôt.", badge: null }
     ]
   },
   massamanagneau: {
@@ -3574,11 +3805,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Sauce de base", detail: "Mixer tomates, poivron rouge, oignon, scotch bonnet (modérément !). Réduire en sauce à feu moyen 15 min. ASTUCE CHEF : la sauce doit napper le dos d'une cuillère = bonne consistance.", badge: "⏱ 15 min" },
-      { icone: "🐔", titre: "Saisir le poulet", detail: "Saisir les morceaux de poulet assaisonnés (curry, thym, bouillon) jusqu'à coloration. ASTUCE PRO : poêle TRÈS chaude avant de saisir, sinon la viande bout au lieu de dorer.", badge: "⏱ 8 min" },
-      { icone: "🥄", titre: "Concentré", detail: "Ajouter le concentré de tomate au poulet, cuire 2 min. Verser la sauce mixée.", badge: "⏱ 5 min" },
-      { icone: "🍚", titre: "Riz", detail: "Ajouter le riz rincé, laurier, bouillon. Couvrir et cuire à feu doux 25-30 min sans remuer. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 30 min" },
-      { icone: "🔥", titre: "Le party-jollof", detail: "Laisser cuire jusqu'à ce qu'une fine croûte se forme au fond (le \"socarrat\" africain) — c'est la signature !", badge: null }
+      { icone: "🌶️", titre: "Mixer", detail: "Mixez les tomates, le poivron rouge, l'oignon et le scotch bonnet (avec modération) en une purée lisse.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Dans une cocotte très chaude, saisissez les morceaux de poulet assaisonnés jusqu'à belle coloration, puis réservez-les.", badge: null },
+      { icone: "🍅", titre: "Concentré", detail: "Faites revenir le concentré de tomate 2 min dans l'huile pour le débarrasser de son acidité.", badge: null },
+      { icone: "🥘", titre: "Réduire", detail: "Versez la purée mixée et laissez réduire à feu moyen 15 min jusqu'à ce qu'elle nappe la cuillère.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Ajoutez le riz rincé, le laurier, le poulet et l'eau, mélangez puis couvrez.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez cuire à feu doux strict 25 à 30 min sans remuer, jusqu'à absorption complète du liquide.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez une fine croûte se former au fond pour le goût fumé signature, puis servez bien chaud.", badge: null }
     ]
   },
   ropavieja: {
@@ -3608,11 +3841,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐮", titre: "Cuisson du bœuf", detail: "Cuire le flanchet ou paleron dans un bouillon (laurier, oignon, ail) pendant 2h. La viande doit s'effilocher facilement.", badge: "⏱ 2h" },
-      { icone: "🌶️", titre: "Sofrito", detail: "Pendant ce temps, faire revenir oignon, poivrons rouges et verts en lanières, ail dans l'huile d'olive 10 min.", badge: "⏱ 10 min" },
-      { icone: "🍅", titre: "Ajouter tomate", detail: "Ajouter tomates concassées, cumin, origan, paprika fumé, vin blanc. Mijoter 10 min. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 10 min" },
-      { icone: "🍖", titre: "Effilocher", detail: "Effilocher la viande refroidie à la fourchette. Ajouter à la sauce. Mijoter encore 20 min. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 20 min" },
-      { icone: "🫒", titre: "Finition", detail: "Ajouter les olives vertes et câpres. Servir avec du riz blanc et des bananes plantain frites.", badge: null }
+      { icone: "🥩", titre: "Cuire", detail: "Faites cuire le bœuf (flanchet ou paleron) dans un bouillon avec oignon et ail pendant 2h, jusqu'à ce qu'il s'effiloche facilement.", badge: null },
+      { icone: "🫑", titre: "Sofrito", detail: "Faites revenir l'oignon, les poivrons en lanières et l'ail dans l'huile d'olive 10 min à feu moyen.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Ajoutez les tomates concassées, le cumin et le vin blanc, puis laissez mijoter 10 min à couvert entrouvert.", badge: null },
+      { icone: "🍴", titre: "Effilocher", detail: "Effilochez la viande légèrement refroidie à la fourchette en filaments réguliers.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Incorporez la viande effilochée à la sauce et laissez mijoter 20 min à feu doux pour qu'elle s'imprègne.", badge: null },
+      { icone: "🫒", titre: "Olives", detail: "Ajoutez les olives vertes en fin de cuisson et rectifiez l'assaisonnement en sel et poivre.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez bien chaud avec du riz blanc et, si vous le souhaitez, des bananes plantain frites.", badge: null }
     ]
   },
   birriatacos: {
@@ -3678,10 +3913,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Préparer la marinade", detail: "Mixer la poire asiatique avec ail, gingembre, oignon. Ajouter sauce soja, sucre brun, huile de sésame, vin de riz mirin.", badge: null },
-      { icone: "⏳", titre: "Mariner les travers", detail: "Verser la marinade sur les travers de bœuf. Laisser au frais 4h minimum, idéalement une nuit.", badge: "⏱ 4h+" },
-      { icone: "🔥", titre: "Cuire au gril", detail: "Cuire à feu vif sur un gril ou plancha 3-4 min par face. La marinade doit caraméliser. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🌱", titre: "Servir", detail: "Servir avec riz blanc, kimchi et feuilles de laitue pour enrouler. Parsemer de sésame et ciboule.", badge: null }
+      { icone: "🍐", titre: "Mixer", detail: "Mixez la poire avec l'ail, le gingembre et l'oignon pour obtenir une base de marinade onctueuse.", badge: null },
+      { icone: "🥄", titre: "Marinade", detail: "Ajoutez la sauce soja, le sucre brun, l'huile de sésame et le vinaigre de riz, puis mélangez bien.", badge: null },
+      { icone: "🥩", titre: "Mariner", detail: "Enrobez les travers de bœuf de marinade et laissez reposer au frais 4h minimum, idéalement toute une nuit.", badge: null },
+      { icone: "🔥", titre: "Égoutter", detail: "Sortez la viande, égouttez l'excédent de marinade pour éviter qu'elle ne brûle au contact de la chaleur.", badge: null },
+      { icone: "♨️", titre: "Griller", detail: "Cuisez les travers à feu vif sur gril ou plancha 3 à 4 min par face jusqu'à caramélisation des sucs.", badge: null },
+      { icone: "🌿", titre: "Repos", detail: "Laissez reposer la viande 2 min hors du feu pour que les jus se répartissent avant de servir.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Parsemez de sésame et de ciboule, et servez avec du riz blanc et des feuilles de laitue pour enrouler.", badge: null }
     ]
   },
   nasigoreng: {
@@ -3711,11 +3949,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍳", titre: "Œufs au plat", detail: "Faire cuire les œufs au plat dans une poêle chaude. Garder le jaune coulant. Réserver.", badge: "⏱ 4 min" },
-      { icone: "🐔", titre: "Saisir poulet et crevettes", detail: "Dans un wok bien chaud, faire sauter le poulet en dés puis ajouter les crevettes décortiquées.", badge: "⏱ 5 min" },
-      { icone: "🧄", titre: "Aromates", detail: "Ajouter ail haché, sambal, oignon. Faire revenir 1 min.", badge: "⏱ 1 min" },
-      { icone: "🍚", titre: "Riz sauté", detail: "Ajouter le riz cuit froid. Bien mélanger pour décoller. Verser le kecap manis (soja sucré). Cuire 5 min en remuant.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Dresser", detail: "Servir le riz dans un bol moulé, déposer l'œuf au plat dessus, parsemer de ciboule et concombre en rondelles.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Détaillez le poulet en dés, décortiquez les crevettes, hachez l'ail et émincez l'oignon et la ciboule.", badge: null },
+      { icone: "🍳", titre: "Œufs", detail: "Faites cuire les œufs au plat dans une poêle chaude en gardant le jaune coulant, puis réservez-les.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Dans un wok très chaud, faites sauter le poulet 4 min puis ajoutez les crevettes jusqu'à ce qu'elles rosissent.", badge: null },
+      { icone: "🌶️", titre: "Aromates", detail: "Ajoutez l'ail, le sambal et l'oignon, et faites revenir 1 min pour libérer les parfums.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Versez le riz cuit froid, décollez-le bien au wok puis nappez de kecap manis et faites sauter 5 min.", badge: null },
+      { icone: "🥄", titre: "Assaisonner", detail: "Goûtez et rectifiez en sambal et soja sucré selon l'intensité souhaitée.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Moulez le riz dans un bol, déposez l'œuf au plat dessus et parsemez de ciboule avant de servir.", badge: null }
     ]
   },
   oxtailcaribeen: {
@@ -3745,11 +3985,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐮", titre: "Saisir la queue de bœuf", detail: "Saisir les tronçons de queue de bœuf assaisonnés (sel, poivre, piment) dans une cocotte avec huile. ASTUCE PRO : poêle TRÈS chaude avant de saisir, sinon la viande bout au lieu de dorer.", badge: "⏱ 10 min" },
-      { icone: "🧅", titre: "Sofrito antillais", detail: "Ajouter oignon, ail, scotch bonnet (avec parcimonie !), thym frais. Faire revenir 5 min.", badge: "⏱ 5 min" },
-      { icone: "🍅", titre: "Mouiller", detail: "Ajouter tomates concassées, bouillon de bœuf, sauce Worcestershire, sucre brun. Mélanger.", badge: null },
-      { icone: "⏳", titre: "Mijoter longuement", detail: "Couvrir et mijoter à très feu doux 2h30. La viande doit fondre et se détacher de l'os. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 2h30" },
-      { icone: "🥜", titre: "Haricots rouges", detail: "Ajouter les haricots rouges cuits 30 min avant la fin. Servir avec du \"rice and peas\".", badge: null }
+      { icone: "🥩", titre: "Saisir", detail: "Saisissez les tronçons de queue de bœuf assaisonnés (sel, poivre, piment) dans une cocotte très chaude avec l'huile jusqu'à belle coloration.", badge: null },
+      { icone: "🧅", titre: "Sofrito", detail: "Ajoutez l'oignon, l'ail, le scotch bonnet avec parcimonie et le thym frais, puis faites revenir 5 min.", badge: null },
+      { icone: "🍅", titre: "Mouiller", detail: "Incorporez les tomates concassées, un peu de bouillon de bœuf et le sucre, et mélangez bien.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Couvrez et laissez mijoter à feu très doux 2h30 jusqu'à ce que la viande se détache de l'os.", badge: null },
+      { icone: "🫘", titre: "Haricots", detail: "Ajoutez les haricots rouges 30 min avant la fin pour qu'ils s'imprègnent de la sauce.", badge: null },
+      { icone: "🥄", titre: "Rectifier", detail: "Goûtez la sauce, ajustez le sel, le poivre et le piment, et laissez réduire à découvert si besoin.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez bien chaud avec un riz aux haricots façon « rice and peas ».", badge: null }
     ]
   },
   paneertikkamasala: {
@@ -3780,11 +4022,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Mariner le paneer", detail: "Couper le paneer en gros cubes. Mariner 30 min dans yaourt + garam masala + gingembre + ail + curcuma + paprika. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 30 min" },
-      { icone: "🔥", titre: "Griller le paneer", detail: "Faire griller les cubes de paneer à la poêle ou au gril 3 min par face. Réserver. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 6 min" },
-      { icone: "🧅", titre: "Sauce", detail: "Faire revenir oignon, ail, gingembre. Ajouter tomates mixées, épices (cumin, coriandre, garam masala, fenugrec moulu).", badge: "⏱ 8 min" },
-      { icone: "🥛", titre: "Crémeux", detail: "Mijoter 15 min, puis ajouter crème fraîche. Saler, sucrer légèrement. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 15 min" },
-      { icone: "🍽️", titre: "Servir", detail: "Ajouter le paneer grillé dans la sauce. Réchauffer 5 min. Servir avec naan et riz basmati.", badge: null }
+      { icone: "🔪", titre: "Mariner", detail: "Coupez le paneer en gros cubes et faites-les mariner 30 min dans le yaourt avec garam masala, gingembre et ail.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Faites griller les cubes de paneer à la poêle 3 min par face jusqu'à de belles marques dorées, puis réservez.", badge: null },
+      { icone: "🧅", titre: "Revenir", detail: "Faites revenir l'oignon, l'ail et le gingembre dans un peu de matière grasse jusqu'à coloration.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Ajoutez les tomates mixées et les épices (garam masala, fenugrec) et laissez mijoter 15 min à feu moyen.", badge: null },
+      { icone: "🥛", titre: "Crémer", detail: "Incorporez la crème, salez et sucrez légèrement pour adoucir et lier la sauce.", badge: null },
+      { icone: "🧀", titre: "Réunir", detail: "Plongez le paneer grillé dans la sauce et réchauffez 5 min pour qu'il s'imprègne des saveurs.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud avec un naan moelleux et du riz basmati.", badge: null }
     ]
   },
   souskaicrevettes: {
@@ -3814,10 +4058,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🦐", titre: "Cuire les crevettes", detail: "Plonger les crevettes décortiquées dans l'eau bouillante salée 2 min. Égoutter et refroidir.", badge: "⏱ 2 min" },
-      { icone: "🧄", titre: "Marinade", detail: "Préparer la marinade : jus de citron vert, ail haché, piment antillais (modérez !), gingembre râpé, coriandre, huile.", badge: null },
-      { icone: "⏳", titre: "Mariner", detail: "Verser la marinade sur les crevettes refroidies. Ajouter oignon nouveau émincé. Laisser au frais 1h minimum.", badge: "⏱ 1h+" },
-      { icone: "🥗", titre: "Servir", detail: "Servir frais en accras d'apéritif ou en entrée sur des feuilles de salade. Parfait avec un ti-punch !", badge: null }
+      { icone: "🦐", titre: "Cuire", detail: "Plongez les crevettes décortiquées dans l'eau bouillante salée 2 min, puis égouttez et laissez refroidir.", badge: null },
+      { icone: "🍋", titre: "Marinade", detail: "Mélangez le jus de citron vert, l'ail haché, le piment antillais avec modération et le gingembre râpé.", badge: null },
+      { icone: "🌿", titre: "Aromatiser", detail: "Ajoutez la coriandre ciselée, l'oignon émincé et un filet d'huile à la marinade et fouettez.", badge: null },
+      { icone: "🥢", titre: "Enrober", detail: "Versez la marinade sur les crevettes refroidies et mélangez délicatement pour bien les enrober.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laissez mariner au frais 1h minimum pour que les crevettes s'imprègnent du citron et des aromates.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez frais en apéritif piqué de pics ou en entrée sur des feuilles de salade, idéal avec un ti-punch.", badge: null }
     ]
   },
   agnellocacciatore: {
@@ -3882,11 +4128,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍋", titre: "Marinade", detail: "Mélanger jus de citron, moutarde, ail, piment, huile. Mariner le poulet (cuisses ou pilons) 4h minimum.", badge: "⏱ 4h+" },
-      { icone: "🍗", titre: "Griller le poulet", detail: "Égoutter le poulet. Le faire griller à la poêle ou au four 15 min jusqu'à coloration. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 15 min" },
-      { icone: "🧅", titre: "Compote d'oignons", detail: "Émincer beaucoup d'oignons (clé de la recette !). Les faire fondre à feu doux 25 min jusqu'à coloration dorée. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 25 min" },
-      { icone: "🥄", titre: "Marinade dans les oignons", detail: "Ajouter la marinade restante aux oignons. Mijoter 5 min. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 5 min" },
-      { icone: "🍲", titre: "Réunir", detail: "Remettre le poulet dans les oignons. Couvrir et finir la cuisson 20 min. Servir avec du riz blanc.", badge: "⏱ 20 min" }
+      { icone: "🍋", titre: "Marinade", detail: "Mélangez le jus de citron, la moutarde, l'ail, le piment et l'huile pour une marinade relevée.", badge: null },
+      { icone: "🍗", titre: "Mariner", detail: "Enrobez les morceaux de poulet de marinade et laissez reposer au frais 4h minimum.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Égouttez le poulet et faites-le griller à la poêle ou au four 15 min jusqu'à belle coloration dorée.", badge: null },
+      { icone: "🧅", titre: "Oignons", detail: "Émincez une grande quantité d'oignons et faites-les fondre à feu doux 25 min jusqu'à blondeur.", badge: null },
+      { icone: "🥄", titre: "Déglacer", detail: "Versez la marinade restante avec le laurier sur les oignons et laissez mijoter 5 min à couvert entrouvert.", badge: null },
+      { icone: "🥘", titre: "Réunir", detail: "Remettez le poulet dans les oignons, couvrez et poursuivez la cuisson 20 min à feu doux.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez le poulet nappé de sa compote d'oignons avec un riz blanc bien chaud.", badge: null }
     ]
   },
   kibbeh: {
@@ -12442,11 +12690,13 @@ Object.assign(recettes, {
       { nb: 15, oeuf: "1500 g", merguez: "1200 g", tomate: "1500 g", poivron: "750 g", ail: "75 g", harissa: "150 g", huileolive: "150 ml" }
     ],
     etapes: [
-      { icone: "🌭", titre: "Saisir les merguez", detail: "Faire dorer les merguez coupées en tronçons dans l'huile, réserver.", badge: null },
-      { icone: "🫑", titre: "La sauce", detail: "Faire revenir poivron et ail, ajouter la harissa puis les tomates. Laisser réduire 12 min.", badge: "⏱ 12 min" },
-      { icone: "🌭", titre: "Remettre les merguez", detail: "Replonger les merguez dans la sauce et réchauffer 3 min.", badge: null },
-      { icone: "🥚", titre: "Les œufs", detail: "Casser les œufs sur la sauce, brouiller légèrement et cuire jusqu'à la texture désirée.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir bouillant dans la poêle, avec beaucoup de pain.", badge: "🌶️ Épicé" }
+      { icone: "🌭", titre: "Saisir", detail: "Faites dorer les merguez coupées en tronçons dans l'huile d'olive, puis réservez-les.", badge: null },
+      { icone: "🫑", titre: "Revenir", detail: "Faites revenir le poivron émincé et l'ail haché dans la même poêle 5 min.", badge: null },
+      { icone: "🌶️", titre: "Harissa", detail: "Ajoutez la harissa et laissez-la cuire 1 min pour développer ses arômes.", badge: null },
+      { icone: "🍅", titre: "Réduire", detail: "Versez les tomates et laissez réduire 12 min à feu moyen jusqu'à une sauce épaisse.", badge: null },
+      { icone: "🌭", titre: "Réunir", detail: "Replongez les merguez dans la sauce et réchauffez 3 min pour les imprégner.", badge: null },
+      { icone: "🍳", titre: "Œufs", detail: "Cassez les œufs sur la sauce, brouillez légèrement et cuisez jusqu'à la texture désirée.", badge: null },
+      { icone: "🍞", titre: "Servir", detail: "Servez bouillant directement dans la poêle, accompagné de beaucoup de pain pour saucer.", badge: null }
     ]
   },
   korma: {
@@ -12473,11 +12723,13 @@ Object.assign(recettes, {
       { nb: 15, poulet: "2250 g", yaourt: "600 g", creme: "450 ml", amande: "300 g", oignon: "750 g", ail: "75 g", gingembre: "75 g", curcuma: "15 g", cumin: "30 g", coriandre: "45 g" }
     ],
     etapes: [
-      { icone: "🧅", titre: "La base", detail: "Faire blondir l'oignon, l'ail et le gingembre. Ajouter les épices et torréfier 1 min.", badge: null },
-      { icone: "🍗", titre: "Saisir le poulet", detail: "Ajouter les morceaux de poulet et les colorer sur toutes les faces.", badge: null },
-      { icone: "🥥", titre: "La sauce", detail: "Incorporer la poudre d'amandes, le yaourt et un peu d'eau. Mijoter à couvert 20 min.", badge: "⏱ 20 min" },
-      { icone: "🥛", titre: "Crémer", detail: "Ajouter la crème, rectifier le sel et réchauffer doucement sans bouillir.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Parsemer de coriandre et servir avec du riz ou un naan.", badge: "💡 Avec naan" }
+      { icone: "🔪", titre: "Préparer", detail: "Détailler le poulet en gros cubes, émincer finement l'oignon et hacher ensemble l'ail et le gingembre frais.", badge: null },
+      { icone: "🧅", titre: "Faire suer", detail: "Faire blondir l'oignon 6 à 7 min à feu moyen dans un peu d'huile, puis ajouter l'ail et le gingembre 1 min.", badge: null },
+      { icone: "🌿", titre: "Torréfier", detail: "Ajouter curcuma, cumin et coriandre moulue, torréfier 1 min à feu doux pour réveiller les arômes des épices.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Monter le feu, ajouter les cubes de poulet et les colorer sur toutes les faces pendant 5 min.", badge: null },
+      { icone: "🥣", titre: "Mijoter", detail: "Incorporer la poudre d'amandes, le yaourt et un verre d'eau, couvrir et laisser mijoter à feu doux 20 min.", badge: null },
+      { icone: "🥛", titre: "Crémer", detail: "Verser la crème, rectifier le sel et réchauffer 3 min sans laisser bouillir pour ne pas trancher la sauce.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemer de coriandre fraîche ciselée et servir bien chaud avec du riz basmati ou un naan tiède.", badge: null }
     ]
   },
   vindaloo: {
@@ -12504,11 +12756,13 @@ Object.assign(recettes, {
       { nb: 15, porc: "2250 g", vinaigreBlanc: "225 ml", ail: "120 g", gingembre: "90 g", oignon: "750 g", tomate: "900 g", paprika: "45 g", cumin: "30 g", curcuma: "15 g" }
     ],
     etapes: [
-      { icone: "🥣", titre: "Mariner", detail: "Mélanger le porc en cubes avec vinaigre, ail, gingembre et épices. Laisser mariner 1 h minimum.", badge: "💡 1 h mini" },
-      { icone: "🧅", titre: "Les oignons", detail: "Faire dorer les oignons jusqu'à ce qu'ils soient bien caramélisés.", badge: null },
-      { icone: "🍖", titre: "Saisir", detail: "Ajouter le porc mariné et le saisir à feu vif quelques minutes.", badge: null },
-      { icone: "🍅", titre: "Mijoter", detail: "Ajouter les tomates et un peu d'eau. Couvrir et laisser mijoter 35 min jusqu'à ce que le porc soit fondant.", badge: "⏱ 35 min" },
-      { icone: "🍚", titre: "Servir", detail: "Rectifier l'acidité et le sel, servir avec du riz basmati.", badge: "🌶️ Très épicé" }
+      { icone: "🔪", titre: "Mariner", detail: "Couper le porc en cubes et le mélanger avec le vinaigre blanc, l'ail, le gingembre, le paprika, le cumin et le curcuma ; laisser mariner 1 h au frais.", badge: null },
+      { icone: "🧅", titre: "Caraméliser", detail: "Faire dorer l'oignon émincé 8 à 10 min à feu moyen dans un peu d'huile jusqu'à belle caramélisation.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Égoutter le porc de sa marinade et le saisir à feu vif 4 à 5 min pour bien colorer la viande.", badge: null },
+      { icone: "🍅", titre: "Tomater", detail: "Ajouter les tomates concassées et la marinade réservée, mélanger et faire revenir 3 min à feu moyen.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Mouiller avec un verre d'eau, couvrir et laisser mijoter à feu doux 35 min jusqu'à un porc fondant.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Rectifier l'acidité avec un trait de vinaigre, saler et laisser réduire la sauce 5 min à découvert.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir ce vindaloo relevé bien chaud, accompagné de riz basmati nature pour adoucir le piquant.", badge: null }
     ]
   },
   tamales: {
@@ -12535,11 +12789,13 @@ Object.assign(recettes, {
       { nb: 15, polenta: "1350 g", beurre: "375 g", bouillon: "900 ml", poulet: "1050 g", tomate: "525 g", paprika: "30 g", ail: "60 g" }
     ],
     etapes: [
-      { icone: "🍗", titre: "La garniture", detail: "Mijoter le poulet effiloché avec tomate, ail et paprika jusqu'à une sauce épaisse.", badge: null },
-      { icone: "🌽", titre: "La pâte", detail: "Fouetter le beurre, ajouter la polenta fine et le bouillon chaud jusqu'à une pâte souple.", badge: null },
-      { icone: "🫔", titre: "Garnir", detail: "Étaler la pâte sur des feuilles de maïs trempées, déposer la garniture au centre.", badge: null },
-      { icone: "📦", titre: "Plier", detail: "Replier les feuilles en papillotes et les dresser debout dans le panier vapeur.", badge: null },
-      { icone: "♨️", titre: "Cuire vapeur", detail: "Cuire à la vapeur 45 min jusqu'à ce que la pâte se détache de la feuille.", badge: "⏱ 45 min" }
+      { icone: "🍗", titre: "Garniture", detail: "Faire mijoter le poulet effiloché avec la tomate, l'ail et le paprika 15 min jusqu'à obtenir une sauce épaisse.", badge: null },
+      { icone: "💧", titre: "Tremper", detail: "Faire tremper les feuilles de maïs dans l'eau chaude 20 min pour les assouplir, puis les éponger.", badge: null },
+      { icone: "🧈", titre: "Pâte", detail: "Fouetter le beurre pommade puis incorporer la polenta fine et le bouillon chaud jusqu'à une pâte souple et homogène.", badge: null },
+      { icone: "🥄", titre: "Étaler", detail: "Étaler une couche de pâte sur chaque feuille de maïs et déposer une cuillère de garniture au centre.", badge: null },
+      { icone: "🎁", titre: "Plier", detail: "Replier les feuilles en papillotes bien serrées et les dresser debout dans le panier vapeur.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Cuire à la vapeur 45 min à couvert jusqu'à ce que la pâte se détache nettement de la feuille.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser tiédir 5 min, ouvrir les papillotes à table et servir avec une sauce piquante.", badge: null }
     ]
   },
   pastitsio: {
@@ -12566,11 +12822,13 @@ Object.assign(recettes, {
       { nb: 15, pates: "1350 g", boeuf: "1350 g", tomate: "1200 g", oignon: "600 g", beurre: "225 g", farine: "180 g", lait: "1350 ml", fromage: "375 g", cannelle: "15 g" }
     ],
     etapes: [
-      { icone: "🍝", titre: "Les pâtes", detail: "Cuire les gros macaronis al dente, égoutter et tapisser le fond d'un plat beurré.", badge: null },
-      { icone: "🍖", titre: "La viande", detail: "Faire revenir oignon et viande, ajouter tomate et cannelle. Mijoter 20 min.", badge: "⏱ 20 min" },
-      { icone: "🥛", titre: "La béchamel", detail: "Réaliser un roux beurre-farine, mouiller au lait et cuire en sauce épaisse. Lier avec un peu de fromage.", badge: null },
-      { icone: "🥘", titre: "Monter", detail: "Étaler la viande sur les pâtes, napper de béchamel, parsemer de fromage râpé.", badge: null },
-      { icone: "🔥", titre: "Gratiner", detail: "Enfourner à 180°C 35 min jusqu'à une surface bien dorée. Laisser reposer avant de couper.", badge: "🔥 180°C" }
+      { icone: "🍝", titre: "Cuire pâtes", detail: "Cuire les gros macaronis al dente en eau bouillante salée, égoutter et tapisser le fond d'un plat beurré.", badge: null },
+      { icone: "🧅", titre: "Revenir", detail: "Faire revenir l'oignon émincé puis le bœuf haché 6 à 8 min jusqu'à belle coloration de la viande.", badge: null },
+      { icone: "🍅", titre: "Mijoter", detail: "Ajouter la tomate et la cannelle, saler, puis laisser mijoter 20 min à feu doux jusqu'à une sauce concentrée.", badge: null },
+      { icone: "🥛", titre: "Béchamel", detail: "Réaliser un roux beurre-farine, mouiller au lait et cuire en remuant jusqu'à une béchamel épaisse, lier avec un peu de fromage.", badge: null },
+      { icone: "🥧", titre: "Monter", detail: "Étaler la viande sur les pâtes, napper généreusement de béchamel et parsemer de fromage râpé.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourner à 180°C pendant 35 min jusqu'à une surface bien dorée et gonflée.", badge: null },
+      { icone: "🍽️", titre: "Reposer", detail: "Laisser reposer 10 min hors du four pour que les couches se tiennent, puis couper en parts nettes.", badge: null }
     ]
   },
   gemista: {
@@ -12598,11 +12856,13 @@ Object.assign(recettes, {
       { nb: 15, tomate: "3000 g", poivron: "1200 g", riz: "750 g", oignon: "600 g", huileolive: "225 ml", persil: "60 g", ail: "60 g", pommedeterre: "900 g" }
     ],
     etapes: [
-      { icone: "🍅", titre: "Évider", detail: "Couper un chapeau aux tomates et poivrons, les évider et réserver la chair des tomates.", badge: null },
-      { icone: "🍚", titre: "La farce", detail: "Faire revenir oignon et ail, ajouter le riz, la chair de tomate, le persil. Cuire à demi.", badge: null },
-      { icone: "🥄", titre: "Garnir", detail: "Remplir les légumes aux deux tiers (le riz gonfle), replacer les chapeaux.", badge: null },
-      { icone: "🥔", titre: "Au plat", detail: "Disposer dans un plat avec des quartiers de pomme de terre, arroser d'huile d'olive.", badge: null },
-      { icone: "🔥", titre: "Rôtir", detail: "Enfourner à 180°C environ 1 h, en arrosant, jusqu'à ce que tout soit tendre et doré.", badge: "⏱ 1 h" }
+      { icone: "🔪", titre: "Évider", detail: "Couper un chapeau aux tomates et poivrons, les évider délicatement et réserver à part la chair des tomates.", badge: null },
+      { icone: "🧅", titre: "Revenir", detail: "Faire revenir l'oignon et l'ail hachés dans l'huile d'olive 5 min jusqu'à ce qu'ils deviennent translucides.", badge: null },
+      { icone: "🍚", titre: "Farce", detail: "Ajouter le riz, la chair de tomate et le persil ciselé, saler et cuire 5 min pour précuire le riz à demi.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Remplir les légumes aux deux tiers seulement car le riz gonfle, puis replacer les chapeaux.", badge: null },
+      { icone: "🥔", titre: "Disposer", detail: "Ranger les légumes dans un plat, glisser des quartiers de pomme de terre entre eux et arroser d'huile d'olive.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Enfourner à 180°C environ 1 h en arrosant à mi-cuisson, jusqu'à des légumes tendres et dorés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser tiédir et servir ces gemista à température ambiante, arrosés du jus de cuisson.", badge: null }
     ]
   },
   pistomanchego: {
@@ -12630,11 +12890,12 @@ Object.assign(recettes, {
       { nb: 15, aubergine: "1200 g", courgette: "1200 g", poivron: "1200 g", tomate: "1800 g", oignon: "750 g", huileolive: "225 ml", ail: "75 g" }
     ],
     etapes: [
-      { icone: "🧅", titre: "Le sofrito", detail: "Faire suer l'oignon et l'ail dans l'huile d'olive à feu doux.", badge: null },
-      { icone: "🫑", titre: "Les légumes", detail: "Ajouter poivron, aubergine et courgette en dés. Cuire 15 min en remuant.", badge: "⏱ 15 min" },
-      { icone: "🍅", titre: "La tomate", detail: "Incorporer les tomates concassées et laisser compoter 20 min à feu doux.", badge: "⏱ 20 min" },
-      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et laisser réduire jusqu'à une compotée fondante.", badge: null },
-      { icone: "🍳", titre: "Servir", detail: "Servir chaud, couronné d'un œuf au plat, avec du pain de campagne.", badge: "💡 Avec un œuf" }
+      { icone: "🔪", titre: "Tailler", detail: "Couper l'aubergine, la courgette, le poivron et l'oignon en petits dés réguliers et hacher l'ail.", badge: null },
+      { icone: "🧅", titre: "Sofrito", detail: "Faire suer l'oignon et l'ail dans l'huile d'olive à feu doux 5 min sans les colorer.", badge: null },
+      { icone: "🫑", titre: "Légumes", detail: "Ajouter le poivron, l'aubergine puis la courgette en dés et cuire 15 min en remuant régulièrement.", badge: null },
+      { icone: "🍅", titre: "Compoter", detail: "Incorporer les tomates concassées et laisser compoter 20 min à feu doux jusqu'à évaporation de l'eau.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et laisser réduire encore quelques minutes jusqu'à une compotée fondante et brillante.", badge: null },
+      { icone: "🍳", titre: "Servir", detail: "Servir chaud, couronné d'un œuf au plat à jaune coulant, avec de larges tranches de pain de campagne.", badge: null }
     ]
   },
   tonkatsu: {
@@ -12661,11 +12922,13 @@ Object.assign(recettes, {
       { nb: 15, porc: "2250 g", chapelure: "450 g", oeuf: "375 g", farine: "225 g", chou: "900 g", huile: "300 ml" }
     ],
     etapes: [
-      { icone: "🔨", titre: "Préparer le porc", detail: "Inciser les bords des côtes de porc et les aplatir légèrement. Saler et poivrer.", badge: null },
-      { icone: "🍞", titre: "Paner", detail: "Passer le porc dans la farine, l'œuf battu puis le panko en pressant bien.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire dans l'huile à 170°C 3-4 min par face jusqu'à une croûte dorée. Égoutter.", badge: "🔥 170°C" },
-      { icone: "🥬", titre: "Le chou", detail: "Émincer le chou très finement et le rincer à l'eau glacée pour qu'il soit croquant.", badge: null },
-      { icone: "🔪", titre: "Servir", detail: "Trancher le tonkatsu en lamelles, servir sur le chou avec du riz et une sauce tonkatsu.", badge: "💡 Avec du riz" }
+      { icone: "🔪", titre: "Préparer", detail: "Inciser les bords des côtes de porc pour qu'elles ne se rétractent pas, les aplatir légèrement, saler et poivrer.", badge: null },
+      { icone: "🍞", titre: "Paner", detail: "Passer chaque côte dans la farine, l'œuf battu puis le panko en pressant bien pour une croûte régulière.", badge: null },
+      { icone: "🥬", titre: "Émincer", detail: "Émincer le chou très finement et le plonger dans l'eau glacée 5 min pour le rendre bien croquant.", badge: null },
+      { icone: "🌡️", titre: "Chauffer", detail: "Chauffer l'huile de friture à 170°C, en vérifiant qu'un peu de panko jeté grésille aussitôt.", badge: null },
+      { icone: "🍤", titre: "Frire", detail: "Frire le porc 3 à 4 min par face jusqu'à une croûte dorée et croustillante, puis égoutter sur papier.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Laisser reposer 2 min puis trancher le tonkatsu en lamelles régulières d'environ 2 cm.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser sur le lit de chou égoutté avec un bol de riz et napper de sauce tonkatsu.", badge: null }
     ]
   },
   wokpoulet: {
@@ -12697,10 +12960,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz à l'avance et le laisser refroidir.", badge: "⏱ 15 min" },
-      { icone: "🍗", titre: "Saisir", detail: "Saisir le poulet en lamelles à feu vif dans le wok, réserver.", badge: "⏱ 5 min" },
-      { icone: "🥦", titre: "Sauter", detail: "Sauter les légumes croquants avec le gingembre, remettre le poulet et le riz. ASTUCE CHEF : wok bien chaud et ingrédients secs — un wok tiède fait bouillir au lieu de saisir, et les légumes ramollissent.", badge: "⏱ 6 min" },
-      { icone: "🥢", titre: "Assaisonner", detail: "Déglacer au soja et servir aussitôt.", badge: null }
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz à l'avance et le laisser bien refroidir pour qu'il ne colle pas au wok.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Couper le poulet en lamelles, détailler le brocoli en bouquets, le poivron en lanières et la carotte en bâtonnets.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisir le poulet à feu vif dans le wok très chaud 4 à 5 min jusqu'à coloration, puis le réserver.", badge: null },
+      { icone: "🥦", titre: "Sauter", detail: "Sauter brocoli, carotte et poivron 4 min à feu vif avec le gingembre râpé pour les garder croquants.", badge: null },
+      { icone: "🍳", titre: "Réunir", detail: "Remettre le poulet et le riz froid, faire sauter le tout 2 min en mélangeant sans cesse.", badge: null },
+      { icone: "🥢", titre: "Assaisonner", detail: "Déglacer à la sauce soja, mélanger 1 min et servir aussitôt bien chaud dans des bols.", badge: null }
     ]
   },
   curryrougepoulet: {
@@ -12732,10 +12997,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Pâte de curry", detail: "Faire revenir la pâte de curry rouge avec l'oignon jusqu'à ce qu'elle embaume.", badge: "⏱ 3 min" },
-      { icone: "🍗", titre: "Poulet", detail: "Ajouter le poulet en morceaux et le saisir.", badge: "⏱ 4 min" },
-      { icone: "🥥", titre: "Mijoter", detail: "Verser lait de coco et lentilles corail, laisser mijoter jusqu'à épaississement. ASTUCE CHEF : les lentilles corail cuisent en 15 min et épaississent le curry toutes seules — pas besoin de farine ni de maïzena.", badge: "⏱ 18 min" },
-      { icone: "🍚", titre: "Servir", detail: "Parsemer de coriandre et servir sur du riz.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le poulet en bouchées, émincer l'oignon et rincer les lentilles corail à l'eau claire.", badge: null },
+      { icone: "🌶️", titre: "Pâte", detail: "Faire revenir la pâte de curry rouge avec l'oignon 2 à 3 min jusqu'à ce que les arômes embaument.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Ajouter le poulet et le saisir 4 min en l'enrobant bien de la pâte de curry parfumée.", badge: null },
+      { icone: "🥥", titre: "Mijoter", detail: "Verser le lait de coco et les lentilles corail, porter à frémissement et mijoter 15 min jusqu'à épaississement naturel.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Goûter et rectifier l'assaisonnement, ajouter un peu d'eau si le curry est trop épais.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Parsemer de coriandre fraîche et servir bien chaud sur un riz parfumé nature.", badge: null }
     ]
   },
   sauteporcromarin: {
@@ -12767,9 +13034,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Saisir", detail: "Saisir le porc en lamelles avec le romarin et l'ail, réserver.", badge: "⏱ 5 min" },
-      { icone: "🥦", titre: "Brocoli", detail: "Sauter le brocoli et l'oignon pour les garder croquants.", badge: "⏱ 6 min" },
-      { icone: "🍑", titre: "Abricot", detail: "Ajouter l'abricot en morceaux, remettre le porc et réchauffer. ASTUCE CHEF : ajoute l'abricot en toute fin — il fond juste assez pour napper sans se transformer en compote.", badge: "⏱ 3 min" }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le porc en lamelles fines, émincer l'oignon, hacher l'ail et détailler le brocoli en petits bouquets.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Saisir le porc à feu vif avec le romarin et l'ail 4 min jusqu'à belle coloration, puis le réserver.", badge: null },
+      { icone: "🥦", titre: "Sauter", detail: "Sauter le brocoli et l'oignon 5 min à feu vif pour les garder bien croquants.", badge: null },
+      { icone: "🍑", titre: "Abricot", detail: "Ajouter les abricots coupés en quartiers et les laisser fondre 2 min juste pour napper sans compoter.", badge: null },
+      { icone: "🍳", titre: "Réunir", detail: "Remettre le porc et son jus dans le wok, mélanger et réchauffer le tout 2 min.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifier l'assaisonnement et servir aussitôt ce sauté sucré-salé bien chaud.", badge: null }
     ]
   },
   curryhaddock: {
@@ -12801,10 +13071,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Base", detail: "Faire revenir l'oignon et la pâte de curry.", badge: "⏱ 3 min" },
-      { icone: "🥥", titre: "Mijoter", detail: "Ajouter le lait de coco et les épinards, laisser fondre.", badge: null },
-      { icone: "🐟", titre: "Pocher", detail: "Déposer le haddock et le pocher doucement. ASTUCE CHEF : le haddock est déjà salé (fumage) — goûte avant de saler le curry, souvent c'est inutile.", badge: "⏱ 6 min" },
-      { icone: "🍚", titre: "Servir", detail: "Servir sur du riz avec un trait de citron.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer finement l'oignon, équeuter les épinards et détailler le haddock en gros morceaux en retirant les arêtes restantes.", badge: null },
+      { icone: "🍚", titre: "Cuire le riz", detail: "Lancer le riz dans 1,5 fois son volume d'eau salée, couvrir et laisser cuire 12 min à feu doux puis réserver.", badge: null },
+      { icone: "🧅", titre: "Suer la base", detail: "Faire revenir l'oignon dans un filet d'huile à feu moyen 4 min, ajouter la pâte de curry et torréfier 1 min pour libérer les arômes.", badge: null },
+      { icone: "🥥", titre: "Mijoter", detail: "Verser le lait de coco, porter à frémissement et laisser réduire 5 min à feu doux jusqu'à une sauce nappante.", badge: null },
+      { icone: "🐟", titre: "Pocher", detail: "Déposer les morceaux de haddock dans le curry, baisser le feu et pocher doucement 6 à 7 min sans remuer ; le haddock étant déjà salé par le fumage, goûter avant de saler.", badge: null },
+      { icone: "🌿", titre: "Verdir", detail: "Incorporer les épinards en fin de cuisson et les laisser fondre 1 à 2 min dans la sauce chaude.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Dresser le curry sur le riz, ajouter un trait de jus de citron et servir aussitôt bien chaud.", badge: null }
     ]
   },
   pouletmielmangue: {
@@ -12836,9 +13109,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Laquer", detail: "Saisir le poulet et le laquer au miel jusqu'à doré.", badge: "⏱ 8 min" },
-      { icone: "🥭", titre: "Sauce mangue", detail: "Mixer la mangue avec l'oignon revenu et le gingembre, détendre d'un peu d'eau. ASTUCE CHEF : garde quelques dés de mangue crue pour la fin — ils apportent du fruit frais que la sauce cuite perd.", badge: null },
-      { icone: "🍚", titre: "Servir", detail: "Napper le poulet de sauce et servir sur du riz.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Détailler le poulet en aiguillettes, émincer l'oignon, râper le gingembre et couper la mangue en dés en réservant quelques dés crus.", badge: null },
+      { icone: "🍚", titre: "Cuire le riz", detail: "Faire cuire le riz dans l'eau bouillante salée 11 min, l'égoutter et le maintenir au chaud couvert.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Saisir le poulet dans l'huile d'olive bien chaude 5 à 6 min en le retournant jusqu'à coloration dorée sur toutes les faces.", badge: null },
+      { icone: "🍯", titre: "Laquer", detail: "Ajouter le miel sur le poulet, baisser le feu et laisser caraméliser 2 min en enrobant les aiguillettes.", badge: null },
+      { icone: "🥭", titre: "Sauce mangue", detail: "Faire revenir l'oignon avec le gingembre 4 min, mixer avec la majeure partie de la mangue et un peu d'eau pour une sauce lisse.", badge: null },
+      { icone: "🥄", titre: "Napper", detail: "Réchauffer la sauce mangue 2 min à feu doux, rectifier l'assaisonnement et y déposer le poulet laqué.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser le poulet sur le riz, parsemer des dés de mangue fraîche réservés et servir immédiatement.", badge: null }
     ]
   },
   orecchiettegrecque: {
@@ -12871,10 +13148,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Pâtes", detail: "Cuire les orecchiette al dente.", badge: "⏱ 11 min" },
-      { icone: "🥒", titre: "Poêlée", detail: "Sauter courgette et tomates, ajouter les olives.", badge: null },
-      { icone: "🧀", titre: "Mélanger", detail: "Réunir pâtes et légumes, émietter la feta hors du feu. ASTUCE CHEF : ajoute la feta hors du feu — chauffée trop fort elle devient caoutchouteuse au lieu de fondre crémeuse.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Filet d'huile et origan.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Tailler la courgette en petits dés, concasser les tomates, dénoyauter les olives et émietter grossièrement la feta.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Plonger les orecchiette dans l'eau bouillante salée et cuire al dente selon le paquet en réservant une louche d'eau de cuisson.", badge: null },
+      { icone: "🥒", titre: "Sauter", detail: "Faire revenir la courgette dans l'huile d'olive 5 min à feu vif jusqu'à ce qu'elle soit dorée et tendre.", badge: null },
+      { icone: "🍅", titre: "Compoter", detail: "Ajouter les tomates et les olives, saler légèrement et laisser compoter 5 min à feu moyen.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Réunir les orecchiette égouttées avec la poêlée, détendre d'un peu d'eau de cuisson et bien enrober hors du feu.", badge: null },
+      { icone: "🧀", titre: "Feta", detail: "Émietter la feta hors du feu pour qu'elle reste crémeuse plutôt que caoutchouteuse, et mélanger délicatement.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Arroser d'un filet d'huile d'olive, parsemer d'origan et servir aussitôt.", badge: null }
     ]
   },
   currychoufleur: {
@@ -12906,10 +13186,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Base", detail: "Revenir oignon et pâte de curry.", badge: "⏱ 3 min" },
-      { icone: "🥦", titre: "Chou-fleur", detail: "Ajouter chou-fleur en bouquets et pois chiches.", badge: null },
-      { icone: "🥥", titre: "Mijoter", detail: "Verser le lait de coco et mijoter jusqu'à ce que le chou-fleur soit tendre. ASTUCE CHEF : fais rôtir le chou-fleur 10 min au four avant — il garde du mordant et un goût grillé au lieu de se déliter dans le curry.", badge: "⏱ 18 min" },
-      { icone: "🍚", titre: "Servir", detail: "Parsemer de coriandre et servir sur du riz.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Détacher le chou-fleur en petits bouquets, émincer l'oignon et égoutter les pois chiches.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Enfourner les bouquets de chou-fleur arrosés d'huile à 200°C pendant 10 min pour leur donner un goût grillé et du mordant.", badge: null },
+      { icone: "🧅", titre: "Base", detail: "Faire revenir l'oignon 4 min à feu moyen, ajouter la pâte de curry et la torréfier 1 min.", badge: null },
+      { icone: "🥘", titre: "Réunir", detail: "Incorporer le chou-fleur rôti et les pois chiches, mélanger pour les enrober de pâte de curry.", badge: null },
+      { icone: "🥥", titre: "Mijoter", detail: "Verser le lait de coco et laisser mijoter 12 min à feu doux jusqu'à ce que le chou-fleur soit tendre et la sauce onctueuse.", badge: null },
+      { icone: "🍚", titre: "Cuire le riz", detail: "Pendant ce temps, cuire le riz dans l'eau salée 11 min puis l'égoutter.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de coriandre ciselée et servir le curry sur le riz bien chaud.", badge: null }
     ]
   },
   pennepestonoixfigues: {
@@ -12942,10 +13225,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌰", titre: "Pesto", detail: "Mixer noix, parmesan, ail et huile en pesto épais.", badge: "⏱ 4 min" },
-      { icone: "🍯", titre: "Figues", detail: "Rôtir les figues coupées en deux jusqu'à caramélisées.", badge: "⏱ 8 min" },
-      { icone: "🍝", titre: "Mélanger", detail: "Enrober les penne chaudes de pesto. ASTUCE CHEF : détends le pesto avec une louche d'eau de cuisson des pâtes — l'amidon le rend crémeux et il nappe au lieu de coller.", badge: null },
-      { icone: "🥬", titre: "Dresser", detail: "Ajouter figues et roquette.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper les figues en deux, hacher grossièrement les noix et éplucher la gousse d'ail.", badge: null },
+      { icone: "🥣", titre: "Pesto", detail: "Mixer les noix, le parmesan, l'ail et l'huile d'olive en un pesto épais, saler et poivrer.", badge: null },
+      { icone: "🔥", titre: "Rôtir les figues", detail: "Saisir les figues côté coupé dans une poêle chaude 3 min jusqu'à ce qu'elles soient caramélisées.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les penne al dente dans l'eau bouillante salée en réservant une louche d'eau de cuisson.", badge: null },
+      { icone: "🥄", titre: "Enrober", detail: "Détendre le pesto avec l'eau de cuisson amidonnée puis enrober les penne chaudes hors du feu pour une sauce nappante.", badge: null },
+      { icone: "🌿", titre: "Dresser", detail: "Répartir les pâtes, ajouter les figues caramélisées et une poignée de roquette fraîche.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Parsemer de copeaux de parmesan et d'un filet d'huile d'olive, puis servir aussitôt.", badge: null }
     ]
   },
   tagliatelleslentillescorail: {
@@ -12977,10 +13263,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥦", titre: "Crème brocoli", detail: "Cuire le brocoli et le mixer avec la crème et l'ail en sauce lisse.", badge: "⏱ 8 min" },
-      { icone: "🟠", titre: "Lentilles", detail: "Cuire les lentilles corail à part jusqu'à tendreté.", badge: "⏱ 12 min" },
-      { icone: "🍝", titre: "Réunir", detail: "Mélanger tagliatelles, crème de brocoli et lentilles. ASTUCE CHEF : garde un peu de brocoli en petits bouquets non mixés — ça apporte de la texture dans la sauce lisse.", badge: null },
-      { icone: "🧀", titre: "Finir", detail: "Parsemer de parmesan.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Détacher le brocoli en bouquets, éplucher l'ail et rincer les lentilles corail à l'eau claire.", badge: null },
+      { icone: "🥦", titre: "Cuire le brocoli", detail: "Cuire le brocoli 7 min à l'eau bouillante salée en réservant quelques petits bouquets pour la texture.", badge: null },
+      { icone: "🥣", titre: "Crème de brocoli", detail: "Mixer le reste du brocoli avec la crème, l'ail et un filet d'huile d'olive jusqu'à obtenir une sauce lisse.", badge: null },
+      { icone: "🫘", titre: "Lentilles", detail: "Cuire les lentilles corail 10 min dans l'eau frémissante jusqu'à tendreté puis les égoutter.", badge: null },
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les tagliatelles al dente dans l'eau bouillante salée et les égoutter.", badge: null },
+      { icone: "🥄", titre: "Réunir", detail: "Mélanger les tagliatelles, la crème de brocoli, les lentilles et les bouquets réservés à feu doux pour réchauffer.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Parsemer de parmesan, donner un tour de poivre et servir aussitôt bien chaud.", badge: null }
     ]
   },
   raviolescarottecumin: {
@@ -13012,10 +13301,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥕", titre: "Farce", detail: "Cuire et écraser la carotte, mélanger à la ricotta et au cumin.", badge: "⏱ 12 min" },
-      { icone: "🍝", titre: "Façonner", detail: "Garnir les abaisses de pâte et former les ravioles.", badge: null },
-      { icone: "💧", titre: "Pocher", detail: "Pocher les ravioles dans l'eau frémissante. ASTUCE CHEF : eau frémissante, pas bouillante — à gros bouillons les ravioles s'ouvrent et la farce s'échappe.", badge: "⏱ 4 min" },
-      { icone: "🧈", titre: "Beurre noisette", detail: "Napper d'un beurre fondu noisette et de parmesan.", badge: null }
+      { icone: "🥕", titre: "Cuire les carottes", detail: "Éplucher et couper les carottes en rondelles, les cuire 15 min à l'eau bouillante salée jusqu'à tendreté puis les égoutter.", badge: null },
+      { icone: "🥣", titre: "Farce", detail: "Écraser les carottes en purée, mélanger à la ricotta et au cumin, saler et poivrer.", badge: null },
+      { icone: "🥟", titre: "Façonner", detail: "Abaisser la pâte finement, déposer des noisettes de farce espacées puis recouvrir et souder les ravioles en chassant l'air.", badge: null },
+      { icone: "✂️", titre: "Découper", detail: "Découper les ravioles à la roulette et bien presser les bords pour éviter qu'elles ne s'ouvrent.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Pocher les ravioles dans une eau frémissante et non bouillante 3 à 4 min jusqu'à ce qu'elles remontent à la surface.", badge: null },
+      { icone: "🧈", titre: "Beurre noisette", detail: "Faire fondre le beurre à feu moyen jusqu'à une couleur noisette et un parfum de noisette grillée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Napper les ravioles égouttées de beurre noisette, parsemer de parmesan et servir immédiatement.", badge: null }
     ]
   },
   currycarottesananas: {
@@ -13047,10 +13339,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Base", detail: "Revenir oignon et pâte de curry.", badge: "⏱ 3 min" },
-      { icone: "🥕", titre: "Carottes", detail: "Ajouter les carottes en rondelles et le lait de coco, mijoter.", badge: "⏱ 15 min" },
-      { icone: "🍍", titre: "Ananas", detail: "Ajouter l'ananas en fin de cuisson. ASTUCE CHEF : ajoute l'ananas à la fin — trop cuit il devient acide ; juste réchauffé il garde son côté sucré et frais.", badge: null },
-      { icone: "🍚", titre: "Servir", detail: "Coriandre et riz.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher les carottes et les couper en rondelles, émincer l'oignon et détailler l'ananas en dés.", badge: null },
+      { icone: "🧅", titre: "Base", detail: "Faire revenir l'oignon 4 min à feu moyen, ajouter la pâte de curry et la torréfier 1 min.", badge: null },
+      { icone: "🥕", titre: "Carottes", detail: "Ajouter les rondelles de carotte, mélanger pour les enrober puis verser le lait de coco.", badge: null },
+      { icone: "🥥", titre: "Mijoter", detail: "Laisser mijoter 18 min à feu doux jusqu'à ce que les carottes soient fondantes et la sauce nappante.", badge: null },
+      { icone: "🍍", titre: "Ananas", detail: "Incorporer les dés d'ananas en toute fin de cuisson et réchauffer 2 min pour préserver leur côté sucré et frais.", badge: null },
+      { icone: "🍚", titre: "Cuire le riz", detail: "Cuire le riz dans l'eau salée 11 min puis l'égoutter et le maintenir au chaud.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de coriandre ciselée et servir le curry sur le riz.", badge: null }
     ]
   },
   mijotepoischichesepinards: {
@@ -13082,10 +13377,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Base", detail: "Revenir oignon, ail et cumin.", badge: "⏱ 3 min" },
-      { icone: "🍅", titre: "Mijoter", detail: "Ajouter tomates, pois chiches et lait de coco, laisser épaissir.", badge: "⏱ 12 min" },
-      { icone: "🥬", titre: "Épinards", detail: "Faire tomber les épinards en fin de cuisson. ASTUCE CHEF : écrase quelques pois chiches à la fourchette — ils épaississent et lient le mijoté naturellement.", badge: null },
-      { icone: "🍚", titre: "Servir", detail: "Servir avec un peu de riz.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon, hacher l'ail, concasser les tomates, égoutter les pois chiches et équeuter les épinards.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Faire revenir l'oignon dans un filet d'huile 4 min, ajouter l'ail et le cumin et torréfier 1 min.", badge: null },
+      { icone: "🍅", titre: "Mijoter", detail: "Ajouter les tomates et les pois chiches, verser le lait de coco et laisser mijoter 12 min à feu doux.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Écraser quelques pois chiches à la fourchette pour épaissir et lier naturellement le mijoté.", badge: null },
+      { icone: "🌿", titre: "Épinards", detail: "Incorporer les épinards en fin de cuisson et les laisser tomber 2 min dans la sauce chaude.", badge: null },
+      { icone: "🍚", titre: "Cuire le riz", detail: "Cuire le riz dans l'eau salée 11 min puis l'égoutter.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifier l'assaisonnement et servir le mijoté accompagné du riz bien chaud.", badge: null }
     ]
   },
   pouletthaicitronnelle: {
@@ -13117,10 +13415,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Aromates", detail: "Faire revenir citronnelle et gingembre hachés.", badge: "⏱ 2 min" },
-      { icone: "🍗", titre: "Poulet", detail: "Saisir le poulet en lamelles avec le poivron.", badge: "⏱ 6 min" },
-      { icone: "🥥", titre: "Lier", detail: "Ajouter le lait de coco et laisser réduire. ASTUCE CHEF : écrase la citronnelle au plat du couteau avant de la hacher — elle libère bien plus d'arômes.", badge: null },
-      { icone: "🍋", titre: "Servir", detail: "Citron vert, coriandre et riz.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Écraser la citronnelle au plat du couteau puis la hacher finement, râper le gingembre, émincer le poivron et tailler le poulet en lamelles.", badge: null },
+      { icone: "🌿", titre: "Aromates", detail: "Faire revenir la citronnelle et le gingembre dans un filet d'huile 2 min à feu moyen pour libérer les arômes.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Ajouter les lamelles de poulet et saisir 5 min à feu vif jusqu'à coloration dorée.", badge: null },
+      { icone: "🫑", titre: "Poivron", detail: "Incorporer le poivron émincé et sauter 3 min pour qu'il garde du croquant.", badge: null },
+      { icone: "🥥", titre: "Lier", detail: "Verser le lait de coco et laisser réduire 6 min à feu doux jusqu'à une sauce nappante.", badge: null },
+      { icone: "🍚", titre: "Cuire le riz", detail: "Cuire le riz dans l'eau salée 11 min puis l'égoutter et le maintenir au chaud.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Arroser de jus de citron vert, parsemer de coriandre et servir sur le riz parfumé.", badge: null }
     ]
   },
   cuissepouletestragon: {
@@ -13152,10 +13453,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Dorer", detail: "Dorer la cuisse de poulet de tous les côtés.", badge: "⏱ 8 min" },
-      { icone: "🧅", titre: "Sauce", detail: "Faire revenir l'oignon, déglacer au bouillon, ajouter la crème et l'estragon.", badge: null },
-      { icone: "💧", titre: "Mijoter", detail: "Remettre le poulet et laisser mijoter à couvert. ASTUCE CHEF : ajoute la moitié de l'estragon en fin de cuisson — cuit longtemps il s'évente, frais il parfume.", badge: "⏱ 25 min" },
-      { icone: "🍚", titre: "Servir", detail: "Servir nappé de sauce avec du riz.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincez l'oignon, ciselez l'estragon en réservant la moitié des feuilles, et épongez bien les cuisses de poulet puis salez-les des deux côtés.", badge: null },
+      { icone: "🍳", titre: "Dorer", detail: "Faites chauffer l'huile d'olive dans une cocotte à feu vif et colorez les cuisses de poulet 4 à 5 min de chaque côté jusqu'à une belle peau dorée, puis réservez-les.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Dans la même cocotte, faites revenir l'oignon émincé à feu moyen 5 min jusqu'à ce qu'il devienne translucide en grattant les sucs.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Versez le bouillon chaud pour déglacer, ajoutez la crème et la première moitié de l'estragon, puis portez à frémissement à feu doux.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Remettez les cuisses dans la sauce, couvrez et laissez mijoter à feu doux 25 min en retournant à mi-cuisson jusqu'à ce que la chair se détache de l'os.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Pendant ce temps, faites cuire le riz à l'eau bouillante salée 12 min puis égouttez-le et laissez-le reposer couvert.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Ajoutez l'estragon frais réservé en fin de cuisson, rectifiez l'assaisonnement et servez les cuisses nappées de sauce sur un lit de riz.", badge: null }
     ]
   },
   pilonspouletmiso: {
@@ -13187,9 +13491,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥢", titre: "Mariner", detail: "Mélanger miso, miel (façon érable), soja et gingembre, en enrober les pilons.", badge: "⏱ 15 min" },
-      { icone: "🔥", titre: "Rôtir", detail: "Rôtir au four en arrosant de marinade à mi-cuisson. ASTUCE CHEF : badigeonne de marinade en plusieurs fois pendant la cuisson — chaque couche caramélise et construit la laque brillante.", badge: "⏱ 30 min" },
-      { icone: "🍚", titre: "Servir", detail: "Parsemer de sésame et servir sur du riz.", badge: null }
+      { icone: "🥣", titre: "Marinade", detail: "Mélangez le miso, le miel, la sauce soja et le gingembre râpé dans un saladier jusqu'à obtenir une laque lisse et homogène.", badge: null },
+      { icone: "🍗", titre: "Enrober", detail: "Incisez légèrement les pilons de poulet, enrobez-les généreusement de marinade et laissez-les reposer au frais 15 min minimum.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffez le four à 200°C et disposez les pilons sur une plaque garnie de papier cuisson en réservant l'excédent de marinade.", badge: null },
+      { icone: "♨️", titre: "Rôtir", detail: "Enfournez 30 min en badigeonnant les pilons de marinade toutes les 10 min pour construire une laque brillante qui caramélise par couches.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Pendant la cuisson, faites cuire le riz à l'eau bouillante salée 12 min puis égouttez-le et gardez-le couvert au chaud.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Sortez les pilons bien laqués et laissez-les reposer 5 min pour que les jus se répartissent dans la chair.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Parsemez de graines de sésame et servez les pilons brillants sur le riz, arrosés du jus de cuisson restant.", badge: null }
     ]
   },
   saumontrappeur: {
@@ -13221,9 +13529,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Enrober", detail: "Mélanger paprika fumé, cumin, ail et un peu de sel, en enrober le saumon.", badge: null },
-      { icone: "🔥", titre: "Saisir", detail: "Saisir le saumon côté peau d'abord, à feu vif. ASTUCE CHEF : commence côté peau et ne retourne qu'une fois — la peau protège la chair qui reste nacrée et moelleuse au cœur.", badge: "⏱ 6 min" },
-      { icone: "🍋", titre: "Servir", detail: "Trait de citron et riz.", badge: null }
+      { icone: "🌶️", titre: "Mélange", detail: "Mélangez le paprika fumé, le cumin, l'ail haché et une pincée de sel pour composer le rub d'épices du trappeur.", badge: null },
+      { icone: "🐟", titre: "Enrober", detail: "Épongez les pavés de saumon, badigeonnez-les d'un filet d'huile d'olive puis enrobez la chair du mélange d'épices sur toutes les faces.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Faites cuire le riz à l'eau bouillante salée 12 min, égouttez-le et laissez-le reposer couvert pendant la cuisson du poisson.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Faites chauffer l'huile d'olive dans une poêle à feu vif et déposez le saumon côté peau, sans le bouger, 4 à 5 min pour une peau croustillante.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Retournez le saumon une seule fois et poursuivez la cuisson 2 min côté chair afin de garder le cœur nacré et moelleux.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer le saumon 2 min hors du feu pour que la chaleur finisse de cuire le cœur en douceur.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Pressez un trait de citron sur le saumon et servez-le sur le riz avec un dernier filet d'huile d'olive.", badge: null }
     ]
   },
   pavbhaji: {
@@ -13255,10 +13567,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Cuire", detail: "Cuire et écraser pommes de terre et petits pois.", badge: null },
-      { icone: "🍅", titre: "Bhaji", detail: "Faire revenir oignon, poivron, tomates et garam masala, ajouter la purée et mijoter.", badge: "⏱ 15 min" },
-      { icone: "🧈", titre: "Pav", detail: "Toaster les petits pains dans du beurre fondu. ASTUCE CHEF : termine le bhaji avec une noix de beurre — c'est ce qui lui donne sa brillance et son goût riche de street food authentique.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Servir le bhaji avec les pains, coriandre et oignon cru.", badge: null }
+      { icone: "🥔", titre: "Cuire", detail: "Faites cuire les pommes de terre et les petits pois à l'eau bouillante salée 15 min jusqu'à ce qu'ils soient bien tendres, puis égouttez-les.", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "Écrasez grossièrement les pommes de terre et les petits pois au presse-purée pour obtenir une base rustique et fondante.", badge: null },
+      { icone: "🧅", titre: "Revenir", detail: "Faites fondre du beurre dans une grande poêle et faites revenir l'oignon et le poivron en dés 8 min à feu moyen jusqu'à ce qu'ils soient tendres.", badge: null },
+      { icone: "🍅", titre: "Bhaji", detail: "Ajoutez les tomates concassées et le garam masala, laissez compoter 5 min puis incorporez la purée et laissez mijoter 10 min à feu doux.", badge: null },
+      { icone: "🧈", titre: "Pav", detail: "Fendez les petits pains, faites fondre du beurre dans une poêle et toastez-les face coupée vers le bas jusqu'à ce qu'ils soient dorés et croustillants.", badge: null },
+      { icone: "✨", titre: "Lustrer", detail: "Terminez le bhaji avec une noix de beurre fondue qui lui donne sa brillance et son goût riche de street food authentique.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Servez le bhaji bien chaud avec les pains toastés, parsemé de coriandre ciselée et d'oignon cru émincé.", badge: null }
     ]
   },
   cachapa: {
@@ -13290,9 +13605,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌽", titre: "Pâte", detail: "Mixer le maïs avec la farine, le lait et le sucre en pâte épaisse.", badge: null },
-      { icone: "🥞", titre: "Cuire", detail: "Cuire des galettes épaisses à la poêle beurrée. ASTUCE CHEF : pâte épaisse et feu moyen — trop liquide ou trop chaud, la cachapa se déchire au pliage au lieu de rester moelleuse.", badge: null },
-      { icone: "🧀", titre: "Garnir", detail: "Garnir de fromage, plier en deux et laisser fondre.", badge: null }
+      { icone: "🌽", titre: "Égrener", detail: "Égrenez le maïs frais ou égouttez le maïs en boîte, puis réservez-le pour le mixage de la pâte.", badge: null },
+      { icone: "🥣", titre: "Pâte", detail: "Mixez le maïs avec la farine, le lait et le sucre jusqu'à obtenir une pâte épaisse et légèrement granuleuse qui se tient à la cuillère.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer la pâte 5 min pour que la farine s'hydrate et que la consistance s'épaississe encore légèrement.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Faites fondre du beurre dans une poêle à feu moyen et versez des louches de pâte épaisse pour former des galettes de 1 cm, cuisez 3 à 4 min par face.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Retournez délicatement chaque galette une fois qu'elle est dorée et que les bords se décollent, et faites dorer l'autre face.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Déposez le fromage sur une moitié de chaque cachapa encore chaude, pliez en deux et laissez fondre quelques instants avant de servir.", badge: null }
     ]
   },
   soparnik: {
@@ -13324,10 +13642,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Pâte", detail: "Pétrir farine, eau et huile en pâte souple, laisser reposer.", badge: null },
-      { icone: "🥬", titre: "Garniture", detail: "Émincer les blettes crues avec oignon, ail et huile.", badge: null },
-      { icone: "📦", titre: "Monter", detail: "Étaler deux fines abaisses, garnir et souder les bords. ASTUCE CHEF : étale la pâte très finement — le soparnik traditionnel est presque translucide, c'est ce qui le rend croustillant.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire au four jusqu'à doré, frotter à l'ail et l'huile à la sortie.", badge: "⏱ 25 min" }
+      { icone: "🥣", titre: "Pâte", detail: "Pétrissez la farine avec de l'eau et un filet d'huile d'olive jusqu'à obtenir une pâte souple et lisse, puis laissez-la reposer 20 min sous un linge.", badge: null },
+      { icone: "🔪", titre: "Garniture", detail: "Émincez finement les blettes crues, l'oignon et l'ail, mélangez-les avec un filet d'huile d'olive, du sel et du poivre.", badge: null },
+      { icone: "🥖", titre: "Abaisser", detail: "Divisez la pâte en deux et étalez deux abaisses très fines, presque translucides, pour obtenir le croustillant traditionnel.", badge: null },
+      { icone: "🌿", titre: "Garnir", detail: "Étalez la garniture de blettes sur la première abaisse en laissant un bord libre, puis recouvrez de la seconde abaisse.", badge: null },
+      { icone: "🤏", titre: "Souder", detail: "Soudez soigneusement les bords en les pinçant et roulez-les vers l'intérieur pour empiler une tourte plate bien fermée.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfournez à 220°C pendant 20 min jusqu'à ce que la tourte soit dorée et croustillante en surface.", badge: null },
+      { icone: "🧄", titre: "Servir", detail: "À la sortie du four, frottez la surface avec de l'ail et badigeonnez d'huile d'olive, puis découpez en losanges pour servir.", badge: null }
     ]
   },
   sardinesgrillees: {
@@ -13360,9 +13681,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Préparer", detail: "Vider et écailler les sardines, les sécher.", badge: null },
-      { icone: "🔥", titre: "Griller", detail: "Griller à feu vif quelques minutes par face. ASTUCE CHEF : huile la grille (pas le poisson) et ne retourne qu'une fois — la peau accroche moins et les sardines restent entières.", badge: "⏱ 6 min" },
-      { icone: "🍋", titre: "Finir", detail: "Arroser de citron, d'huile à l'ail et de persil.", badge: null }
+      { icone: "🐟", titre: "Préparer", detail: "Videz et écaillez les sardines sous l'eau froide, puis épongez-les soigneusement pour que la peau accroche moins à la grille.", badge: null },
+      { icone: "🧂", titre: "Saler", detail: "Salez généreusement les sardines au gros sel sur les deux faces et laissez-les reposer 10 min pour raffermir la chair.", badge: null },
+      { icone: "🧄", titre: "Huile d'ail", detail: "Préparez une huile parfumée en mélangeant l'huile d'olive avec l'ail haché et le persil ciselé.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Faites chauffer la grille à feu vif et huilez les barreaux plutôt que le poisson pour éviter que la peau ne colle.", badge: null },
+      { icone: "🍢", titre: "Griller", detail: "Grillez les sardines 3 min de chaque côté en ne les retournant qu'une seule fois afin qu'elles restent entières.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Arrosez les sardines grillées de jus de citron et de l'huile à l'ail et au persil, puis servez aussitôt bien chaudes.", badge: null }
     ]
   },
   steakhachepatatedouce: {
@@ -13393,9 +13717,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍠", titre: "Patate douce", detail: "Rôtir en dés 25 min à 200°C.", badge: null },
-      { icone: "🫘", titre: "Haricots", detail: "Cuire les haricots verts vapeur.", badge: null },
-      { icone: "🥩", titre: "Steak", detail: "Saisir le steak 2-3 min par face.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Épluchez la patate douce et coupez-la en dés réguliers, puis effilez les haricots verts et hachez l'ail.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffez le four à 200°C et disposez les dés de patate douce sur une plaque avec un filet d'huile d'olive, du sel et l'ail.", badge: null },
+      { icone: "♨️", titre: "Rôtir", detail: "Enfournez les patates douces 25 min en les remuant à mi-cuisson jusqu'à ce qu'elles soient dorées et fondantes à cœur.", badge: null },
+      { icone: "💨", titre: "Haricots", detail: "Pendant ce temps, faites cuire les haricots verts à la vapeur 8 à 10 min jusqu'à ce qu'ils soient tendres mais encore croquants.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Saisissez le steak haché 5% dans une poêle très chaude 2 à 3 min de chaque face selon la cuisson désirée, salez et poivrez.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laissez reposer le steak 2 min hors du feu pour que les jus se redistribuent dans la viande.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dressez le steak avec les dés de patate douce rôtis et les haricots verts, et nappez d'un filet d'huile d'olive.", badge: null }
     ]
   },
   eminceboeufharicotsverts: {
@@ -13426,9 +13754,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
-      { icone: "🥩", titre: "Bœuf", detail: "Saisir l'émincé à feu vif 2 min.", badge: null },
-      { icone: "🫘", titre: "Légumes", detail: "Ajouter haricots, ail, gingembre, sauce soja.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincez le bœuf en fines lanières, effilez les haricots verts, puis hachez l'ail et râpez le gingembre.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Faites cuire le riz à l'eau bouillante salée 12 min, égouttez-le et laissez-le reposer couvert au chaud.", badge: null },
+      { icone: "💨", titre: "Précuire", detail: "Faites blanchir les haricots verts 4 min à l'eau bouillante puis égouttez-les pour qu'ils restent croquants au sauté.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Faites chauffer l'huile d'olive dans un wok à feu vif et saisissez l'émincé de bœuf 2 min sans trop remuer pour bien le colorer.", badge: null },
+      { icone: "🥢", titre: "Sauter", detail: "Ajoutez les haricots verts, l'ail et le gingembre et faites sauter 2 min à feu vif pour libérer les arômes.", badge: null },
+      { icone: "🍶", titre: "Saucer", detail: "Versez la sauce soja, mélangez bien et laissez glacer 1 min pour enrober le bœuf et les légumes d'un voile brillant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez l'émincé de bœuf et les haricots verts bien chauds sur le riz, nappés du jus de cuisson.", badge: null }
     ]
   },
   crevettessauteesriz: {
@@ -13459,9 +13791,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
-      { icone: "🥦", titre: "Brocoli", detail: "Sauter le brocoli 4 min.", badge: null },
-      { icone: "🍤", titre: "Crevettes", detail: "Ajouter crevettes, ail, gingembre, sauce soja, 3 min.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Décortiquez les crevettes si besoin, détaillez le brocoli en petits bouquets, puis hachez l'ail et râpez le gingembre.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Faites cuire le riz à l'eau bouillante salée 12 min, égouttez-le et laissez-le reposer couvert au chaud.", badge: null },
+      { icone: "💨", titre: "Brocoli", detail: "Faites chauffer l'huile d'olive dans un wok à feu vif et faites sauter les bouquets de brocoli 4 min jusqu'à ce qu'ils soient verts et croquants.", badge: null },
+      { icone: "🦐", titre: "Crevettes", detail: "Ajoutez les crevettes, l'ail et le gingembre et faites sauter 3 min jusqu'à ce que les crevettes deviennent roses et nacrées.", badge: null },
+      { icone: "🍶", titre: "Saucer", detail: "Versez la sauce soja, mélangez vivement et laissez glacer 1 min pour enrober les crevettes et le brocoli.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dressez les crevettes et le brocoli sautés sur le riz et servez aussitôt bien chaud.", badge: null }
     ]
   },
   pouletmarineyaourt: {
@@ -13492,9 +13827,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥛", titre: "Mariner", detail: "Mélanger yaourt, paprika, cumin, ail ; enrober le poulet 15 min.", badge: null },
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
-      { icone: "🍗", titre: "Griller", detail: "Griller le poulet mariné 5 min par face.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Détailler les blancs de poulet en gros morceaux, presser le citron et écraser les gousses d'ail en purée.", badge: null },
+      { icone: "🥣", titre: "Marinade", detail: "Mélanger le yaourt, le paprika, le cumin, l'ail et le jus de citron avec sel et poivre pour obtenir une marinade homogène.", badge: null },
+      { icone: "⏲️", titre: "Mariner", detail: "Enrober soigneusement le poulet de marinade et laisser reposer au frais au moins 15 min (idéalement 1 h).", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz dans 1,5 fois son volume d'eau salée à frémissement environ 12 min, puis laisser gonfler à couvert hors du feu.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Saisir le poulet égoutté dans une poêle bien chaude 5 min par face, jusqu'à coloration dorée et caramélisation des épices.", badge: null },
+      { icone: "🌡️", titre: "Vérifier", detail: "S'assurer que le poulet est cuit à cœur (chair nacrée et plus rosée), puis laisser reposer 2 min hors du feu.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser le poulet sur le riz, arroser d'un filet de jus de cuisson et accompagner d'un quartier de citron.", badge: null }
     ]
   },
   cabillaudvapeurcourgette: {
@@ -13525,9 +13864,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
-      { icone: "🐟", titre: "Cabillaud", detail: "Cuire le cabillaud vapeur 8 min.", badge: null },
-      { icone: "🥒", titre: "Courgette", detail: "Poêler la courgette à l'ail et au citron.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Tailler la courgette en fines rondelles, hacher l'ail finement et presser le citron.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz dans de l'eau salée à frémissement environ 12 min, puis le laisser reposer à couvert hors du feu.", badge: null },
+      { icone: "♨️", titre: "Vapeur", detail: "Disposer le dos de cabillaud dans un panier vapeur au-dessus d'une eau bouillante et cuire 8 min jusqu'à ce que la chair se détache.", badge: null },
+      { icone: "🫒", titre: "Courgette", detail: "Poêler les rondelles de courgette dans l'huile d'olive à feu vif 5 min avec l'ail, jusqu'à ce qu'elles soient tendres et légèrement dorées.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Déglacer la courgette d'un trait de jus de citron, saler et poivrer généreusement.", badge: null },
+      { icone: "🌡️", titre: "Repos", detail: "Laisser le cabillaud reposer 1 min hors du feu pour qu'il finisse de raffermir sans se dessécher.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Déposer le cabillaud sur le lit de riz et de courgette, arroser d'un filet d'huile d'olive et de citron.", badge: null }
     ]
   },
   bowlthonrizavocat: {
@@ -13558,9 +13901,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz, laisser tiédir.", badge: null },
-      { icone: "🥑", titre: "Garnir", detail: "Disposer thon, avocat, concombre et edamame sur le riz.", badge: null },
-      { icone: "🍶", titre: "Sauce", detail: "Napper de sauce soja.", badge: null }
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz dans de l'eau salée environ 12 min, puis l'étaler pour le laisser tiédir.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Émincer le concombre en demi-lunes, couper l'avocat en lamelles et égoutter le thon.", badge: null },
+      { icone: "💧", titre: "Edamame", detail: "Faire blanchir les edamame 3 min dans de l'eau bouillante salée, puis les écosser et les égoutter.", badge: null },
+      { icone: "🥢", titre: "Garnir", detail: "Répartir le riz tiède dans un bol et disposer harmonieusement le thon, l'avocat, le concombre et les edamame en secteurs.", badge: null },
+      { icone: "🍶", titre: "Sauce", detail: "Napper généreusement de sauce soja et, si désiré, ajouter quelques graines de sésame.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt à température ambiante pour préserver le contraste entre riz tiède et garnitures fraîches.", badge: null }
     ]
   },
   steakseitan: {
@@ -13591,9 +13937,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌱", titre: "Saisir", detail: "Dorer le seitan tranché à la poêle bien chaude.", badge: null },
-      { icone: "🫑", titre: "Légumes", detail: "Ajouter poivron et oignon, faire revenir.", badge: null },
-      { icone: "🍶", titre: "Déglacer", detail: "Déglacer à la sauce soja avec l'ail.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Trancher le seitan en steaks épais, émincer l'oignon et le poivron en lanières et hacher l'ail.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Dorer les tranches de seitan dans l'huile d'olive à feu vif 2 à 3 min par face jusqu'à belle coloration, puis réserver.", badge: null },
+      { icone: "🫑", titre: "Légumes", detail: "Dans la même poêle, faire revenir l'oignon et le poivron 6 min à feu moyen jusqu'à ce qu'ils soient fondants.", badge: null },
+      { icone: "🧄", titre: "Parfumer", detail: "Ajouter l'ail haché et poursuivre 1 min sans le laisser brûler pour libérer ses arômes.", badge: null },
+      { icone: "🍶", titre: "Déglacer", detail: "Remettre le seitan dans la poêle et déglacer à la sauce soja, en enrobant bien les morceaux 2 min.", badge: null },
+      { icone: "🌡️", titre: "Réduire", detail: "Laisser la sauce s'épaissir à feu doux pour qu'elle nappe le seitan et les légumes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser les steaks de seitan sur les légumes et napper du jus de cuisson soja.", badge: null }
     ]
   },
   lentillesbolo: {
@@ -13624,9 +13974,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Base", detail: "Faire revenir oignon, carotte et ail.", badge: null },
-      { icone: "🫘", titre: "Lentilles", detail: "Ajouter lentilles et tomate.", badge: null },
-      { icone: "💧", titre: "Mijoter", detail: "Mijoter 25 min à couvert.", badge: "⏱ 25 min" }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer finement l'oignon, l'ail et tailler les carottes en petits dés réguliers.", badge: null },
+      { icone: "🫒", titre: "Base", detail: "Faire revenir l'oignon, la carotte et l'ail dans l'huile d'olive à feu moyen 8 min jusqu'à ce qu'ils soient tendres.", badge: null },
+      { icone: "🫘", titre: "Lentilles", detail: "Ajouter les lentilles rincées et bien les enrober du mélange aromatique pendant 1 min.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Incorporer la pulpe de tomate, saler, poivrer et mouiller à hauteur avec un peu d'eau.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Couvrir et laisser mijoter à feu doux 25 min, en remuant de temps en temps jusqu'à ce que les lentilles soient fondantes.", badge: null },
+      { icone: "🌿", titre: "Ajuster", detail: "Rectifier l'assaisonnement et laisser réduire à découvert quelques minutes si la sauce est trop liquide.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien chaud, façon bolognaise, sur des pâtes ou accompagné de pain croustillant.", badge: null }
     ]
   },
   boulettesvege: {
@@ -13657,9 +14011,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Mixer lentilles et pois chiches cuits avec oignon et ail.", badge: null },
-      { icone: "🟤", titre: "Façonner", detail: "Former des boulettes, dorer à la poêle.", badge: null },
-      { icone: "🍅", titre: "Sauce", detail: "Mijoter en sauce tomate, servir avec le riz.", badge: null }
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz dans de l'eau salée 12 min, puis le réserver à couvert pour l'accompagnement.", badge: null },
+      { icone: "🌀", titre: "Pâte", detail: "Mixer les lentilles et les pois chiches cuits avec l'oignon et l'ail jusqu'à obtenir une pâte épaisse et homogène.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et travailler la pâte à la main pour qu'elle se tienne ; laisser raffermir 10 min au frais.", badge: null },
+      { icone: "🤏", titre: "Façonner", detail: "Former des boulettes régulières de la taille d'une noix entre les paumes légèrement humidifiées.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Dorer les boulettes à la poêle dans un filet d'huile à feu moyen sur toutes les faces, environ 6 min.", badge: null },
+      { icone: "🍅", titre: "Mijoter", detail: "Préparer une sauce tomate, y déposer les boulettes et laisser mijoter à feu doux 10 min pour les imprégner.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser les boulettes nappées de sauce tomate, accompagnées du riz.", badge: null }
     ]
   },
   brochettespouletbbq: {
@@ -13690,9 +14048,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mariner", detail: "Mariner le poulet avec paprika, ail et huile 20 min.", badge: null },
-      { icone: "🍢", titre: "Monter", detail: "Alterner poulet, poivron et oignon sur les pics.", badge: null },
-      { icone: "🔥", titre: "Griller", detail: "Griller au barbecue 12 min en tournant.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le poulet en cubes réguliers, et tailler le poivron et l'oignon en gros carrés.", badge: null },
+      { icone: "🥣", titre: "Marinade", detail: "Mélanger le paprika, l'ail écrasé et l'huile d'olive avec sel et poivre pour une marinade parfumée.", badge: null },
+      { icone: "⏲️", titre: "Mariner", detail: "Enrober le poulet de marinade et laisser reposer au frais au moins 20 min.", badge: null },
+      { icone: "🍢", titre: "Monter", detail: "Enfiler sur les pics en alternant poulet, poivron et oignon pour des brochettes colorées.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller au barbecue ou à la plancha bien chaude 12 min en tournant régulièrement pour une cuisson homogène.", badge: null },
+      { icone: "🌡️", titre: "Vérifier", detail: "S'assurer que le poulet est cuit à cœur et légèrement caramélisé, puis laisser reposer 2 min.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir les brochettes bien chaudes, éventuellement avec un riz ou une salade fraîche.", badge: null }
     ]
   },
   gambasgrilleesail: {
@@ -13723,9 +14085,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧄", titre: "Marinade", detail: "Mélanger ail, persil, huile et piment.", badge: null },
-      { icone: "🦐", titre: "Griller", detail: "Griller les gambas à la plancha 2 min par face.", badge: null },
-      { icone: "🍋", titre: "Servir", detail: "Arroser de citron et servir aussitôt.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Hacher finement l'ail et le persil, presser le citron et émietter un peu de piment selon le goût.", badge: null },
+      { icone: "🥣", titre: "Marinade", detail: "Mélanger l'ail, le persil, l'huile d'olive et le piment pour obtenir une huile parfumée.", badge: null },
+      { icone: "🦐", titre: "Enrober", detail: "Enrober les gambas de cette marinade et laisser s'imprégner 10 min à température ambiante.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller les gambas à la plancha bien chaude 2 min par face, jusqu'à ce qu'elles deviennent roses et nacrées.", badge: null },
+      { icone: "🍋", titre: "Citronner", detail: "Arroser généreusement de jus de citron en fin de cuisson et rectifier le sel.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, bien chaudes, parsemées du persil restant et accompagnées de pain pour la sauce.", badge: null }
     ]
   },
   poulettandoorigrille: {
@@ -13756,8 +14121,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mariner", detail: "Mélanger yaourt, épices, gingembre et citron ; enrober le poulet 30 min.", badge: "⏱ 30 min" },
-      { icone: "🔥", titre: "Griller", detail: "Griller au barbecue 6 min par face.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Inciser les morceaux de poulet, râper le gingembre et presser le citron.", badge: null },
+      { icone: "🥣", titre: "Marinade", detail: "Mélanger le yaourt, le paprika, le cumin, le gingembre et le citron avec sel et poivre pour une marinade tandoori bien rouge.", badge: null },
+      { icone: "⏲️", titre: "Mariner", detail: "Enrober le poulet de marinade et laisser reposer au frais au moins 30 min (idéalement plusieurs heures).", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller le poulet au barbecue ou sous le grill du four 6 min par face, jusqu'à ce que les bords soient bien marqués.", badge: null },
+      { icone: "🌡️", titre: "Vérifier", detail: "Contrôler la cuisson à cœur de la chair et obtenir une croûte d'épices caramélisée.", badge: null },
+      { icone: "😴", titre: "Repos", detail: "Laisser reposer le poulet 3 min hors du feu pour conserver tout son jus.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir avec un quartier de citron, accompagné de riz ou de naan.", badge: null }
     ]
   },
   traversbbq: {
@@ -13788,9 +14158,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Laque", detail: "Mélanger miel, paprika, ail et sauce soja.", badge: null },
-      { icone: "♨️", titre: "Cuire", detail: "Cuire les travers au four 1 h à 160°C.", badge: "⏱ 1 h" },
-      { icone: "🔥", titre: "Laquer", detail: "Badigeonner de laque et finir au grill 10 min.", badge: null }
+      { icone: "🥣", titre: "Laque", detail: "Mélanger le miel, le paprika, l'ail écrasé et la sauce soja pour préparer une laque brillante et parfumée.", badge: null },
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffer le four à 160°C et badigeonner les travers d'une première fine couche de laque.", badge: null },
+      { icone: "🍖", titre: "Cuire", detail: "Enfourner les travers couverts de papier aluminium et cuire lentement 1 h à 160°C pour attendrir la viande.", badge: null },
+      { icone: "🖌️", titre: "Laquer", detail: "Retirer l'aluminium et badigeonner généreusement les travers de laque sur toutes les faces.", badge: null },
+      { icone: "🔥", titre: "Caraméliser", detail: "Passer sous le grill du four 10 min en badigeonnant régulièrement, jusqu'à obtenir une croûte laquée et collante.", badge: null },
+      { icone: "😴", titre: "Repos", detail: "Laisser reposer les travers 5 min pour que les sucs se répartissent avant la découpe.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Découper entre les os et servir bien chaud avec le reste de laque et des frites ou une salade.", badge: null }
     ]
   },
   cotelettesagneaugrille: {
@@ -13821,8 +14195,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mariner", detail: "Enrober d'ail, thym, huile et citron 15 min.", badge: null },
-      { icone: "🔥", titre: "Griller", detail: "Griller 3 min par face pour un agneau rosé.", badge: null }
+      { icone: "🔪", titre: "Parer", detail: "Sortez les côtelettes d'agneau du frais 20 min avant cuisson, épongez-les et dégraissez légèrement le pourtour.", badge: null },
+      { icone: "🧄", titre: "Marinade", detail: "Mélangez l'ail écrasé, les feuilles de thym, l'huile d'olive et le jus de citron, puis enrobez-en les côtelettes.", badge: null },
+      { icone: "⏳", titre: "Mariner", detail: "Laissez mariner 15 min à température ambiante en retournant une fois pour bien imprégner la viande.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Faites chauffer le grill ou la poêle à feu vif jusqu'à ce qu'elle fume légèrement avant d'y déposer les côtelettes.", badge: null },
+      { icone: "🍖", titre: "Griller", detail: "Saisissez 3 min de chaque côté pour un agneau rosé et bien marqué, sans déplacer la viande pendant la cuisson.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Salez et poivrez en fin de cuisson, puis laissez reposer 3 min sous une feuille d'aluminium.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Dressez avec un filet de citron et le thym restant, idéal accompagné de légumes grillés.", badge: null }
     ]
   },
   tahdig: {
@@ -13853,9 +14232,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Précuire", detail: "Précuire le riz 6 min, égoutter.", badge: null },
-      { icone: "🌼", titre: "Mélanger", detail: "Mélanger une partie du riz avec yaourt et safran (la croûte).", badge: null },
-      { icone: "♨️", titre: "Croûte", detail: "Tasser au fond huilé, cuire à couvert 35 min à feu doux.", badge: "⏱ 35 min" }
+      { icone: "💧", titre: "Tremper", detail: "Rincez le riz à l'eau claire puis laissez-le tremper 15 min pour des grains détachés.", badge: null },
+      { icone: "♨️", titre: "Précuire", detail: "Plongez le riz dans une grande eau salée bouillante et précuisez 6 min, juste al dente, puis égouttez.", badge: null },
+      { icone: "🌼", titre: "Safran", detail: "Infusez le safran dans une cuillère d'eau chaude pour libérer sa couleur et son parfum.", badge: null },
+      { icone: "🥣", titre: "Croûte", detail: "Mélangez une partie du riz avec le yaourt et l'eau safranée pour former la base de la croûte croustillante.", badge: null },
+      { icone: "🫕", titre: "Tasser", detail: "Huilez bien le fond de la casserole, tassez la couche au yaourt puis recouvrez du reste de riz en dôme.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Couvrez d'un torchon sous le couvercle et cuisez 35 min à feu doux pour dorer le fond sans le brûler.", badge: null },
+      { icone: "🍚", titre: "Démouler", detail: "Renversez la casserole sur un plat pour révéler le tahdig croustillant et servez aussitôt.", badge: null }
     ]
   },
   vareniki: {
@@ -13886,9 +14269,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte", detail: "Pétrir farine, œuf et eau en pâte souple.", badge: null },
-      { icone: "🥔", titre: "Farce", detail: "Écraser les pommes de terre avec l'oignon fondu.", badge: null },
-      { icone: "🥟", titre: "Façonner", detail: "Garnir, fermer et pocher 5 min à l'eau frémissante.", badge: null }
+      { icone: "🥔", titre: "Cuire pommes", detail: "Épluchez et cuisez les pommes de terre 20 min à l'eau salée jusqu'à ce qu'elles soient tendres.", badge: null },
+      { icone: "🧅", titre: "Oignon", detail: "Faites fondre l'oignon émincé dans le beurre à feu doux jusqu'à ce qu'il soit doré et translucide.", badge: null },
+      { icone: "🍚", titre: "Farce", detail: "Écrasez les pommes de terre en purée lisse, incorporez l'oignon fondu et assaisonnez de sel et poivre.", badge: null },
+      { icone: "🥣", titre: "Pâte", detail: "Pétrissez la farine, l'œuf et un peu d'eau tiède en une pâte souple et homogène, puis laissez reposer 15 min.", badge: null },
+      { icone: "🥟", titre: "Façonner", detail: "Étalez finement la pâte, découpez des disques, déposez une noix de farce et fermez en demi-lunes bien soudées.", badge: null },
+      { icone: "♨️", titre: "Pocher", detail: "Pochez les vareniki dans l'eau frémissante salée 5 min, jusqu'à ce qu'ils remontent à la surface.", badge: null },
+      { icone: "🧈", titre: "Servir", detail: "Égouttez et nappez de beurre fondu, à déguster chauds avec une cuillère de crème.", badge: null }
     ]
   },
   redred: {
@@ -13919,9 +14306,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Base", detail: "Faire revenir l'oignon dans l'huile de palme.", badge: null },
-      { icone: "🍅", titre: "Sauce", detail: "Ajouter tomate et gingembre, réduire.", badge: null },
-      { icone: "🫘", titre: "Haricots", detail: "Ajouter les haricots, mijoter 20 min, servir avec le riz.", badge: null }
+      { icone: "🫘", titre: "Haricots", detail: "Si vous utilisez des haricots secs, faites-les tremper la veille puis cuisez-les jusqu'à tendreté.", badge: null },
+      { icone: "🧅", titre: "Base", detail: "Faites revenir l'oignon émincé dans l'huile de palme à feu moyen jusqu'à ce qu'il devienne fondant.", badge: null },
+      { icone: "🫚", titre: "Aromates", detail: "Ajoutez le gingembre râpé et laissez parfumer 1 min en remuant.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Incorporez la tomate concassée et laissez réduire 10 min à feu moyen jusqu'à une sauce épaisse.", badge: null },
+      { icone: "🥘", titre: "Mijoter", detail: "Ajoutez les haricots rouges, salez et laissez mijoter 20 min à feu doux pour bien lier les saveurs.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Faites cuire le riz à part jusqu'à ce qu'il soit moelleux et bien égrené.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dressez le ragoût de haricots à côté du riz blanc et servez bien chaud.", badge: null }
     ]
   },
   gallopinto: {
@@ -13952,9 +14343,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Légumes", detail: "Faire revenir oignon, poivron et ail.", badge: null },
-      { icone: "🍚", titre: "Mélange", detail: "Ajouter riz cuit et haricots.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Mélanger avec la coriandre, servir bien chaud.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincez finement l'oignon, le poivron et l'ail, et ciselez la coriandre fraîche.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faites revenir l'oignon, le poivron et l'ail dans un peu d'huile chaude 4 min jusqu'à ce qu'ils s'attendrissent.", badge: null },
+      { icone: "🫘", titre: "Haricots", detail: "Ajoutez les haricots rouges avec un peu de leur jus et laissez chauffer 3 min.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Incorporez le riz cuit de la veille et mélangez délicatement pour bien l'enrober.", badge: null },
+      { icone: "🥄", titre: "Sauter", detail: "Faites sauter l'ensemble 5 min à feu moyen-vif pour que le riz prenne une légère coloration.", badge: null },
+      { icone: "🌿", titre: "Coriandre", detail: "Hors du feu, parsemez de coriandre ciselée et rectifiez l'assaisonnement en sel.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud au petit-déjeuner, accompagné d'un œuf ou de plantain frit.", badge: null }
     ]
   },
   irishstew: {
@@ -13985,9 +14380,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Saisir", detail: "Faire dorer l'agneau.", badge: null },
-      { icone: "🥔", titre: "Légumes", detail: "Ajouter pommes de terre, carottes, oignon et bouillon.", badge: null },
-      { icone: "💧", titre: "Mijoter", detail: "Mijoter à couvert 1 h 15.", badge: "⏱ 1 h 15" }
+      { icone: "🔪", titre: "Préparer", detail: "Coupez l'agneau en gros cubes, épluchez et taillez les pommes de terre, les carottes et l'oignon.", badge: null },
+      { icone: "🍖", titre: "Saisir", detail: "Faites dorer les morceaux d'agneau sur toutes leurs faces dans une cocotte bien chaude.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Ajoutez l'oignon émincé et laissez-le suer 3 min pour qu'il s'attendrisse.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Disposez les carottes et les pommes de terre par-dessus la viande et parsemez de thym.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Versez le bouillon chaud à hauteur, salez, poivrez et portez à frémissement.", badge: null },
+      { icone: "🥘", titre: "Mijoter", detail: "Couvrez et laissez mijoter 1 h 15 à feu doux jusqu'à ce que l'agneau soit fondant.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Rectifiez l'assaisonnement et servez le ragoût brûlant dans des bols creux.", badge: null }
     ]
   },
   colcannon: {
@@ -14018,9 +14417,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Purée", detail: "Cuire et écraser les pommes de terre avec le lait et le beurre.", badge: null },
-      { icone: "🥬", titre: "Chou", detail: "Faire revenir le chou émincé avec l'oignon.", badge: null },
-      { icone: "🥄", titre: "Mélanger", detail: "Incorporer le chou à la purée.", badge: null }
+      { icone: "🥔", titre: "Cuire pommes", detail: "Épluchez et cuisez les pommes de terre 20 min à l'eau salée jusqu'à ce qu'elles soient bien tendres.", badge: null },
+      { icone: "🥬", titre: "Chou", detail: "Émincez finement le chou et faites-le revenir 6 min avec l'oignon dans une partie du beurre.", badge: null },
+      { icone: "🥛", titre: "Chauffer lait", detail: "Faites tiédir le lait avec le reste du beurre pour qu'ils s'incorporent facilement à la purée.", badge: null },
+      { icone: "🥣", titre: "Écraser", detail: "Écrasez les pommes de terre égouttées avec le lait chaud beurré jusqu'à une purée lisse et crémeuse.", badge: null },
+      { icone: "🔀", titre: "Mélanger", detail: "Incorporez le chou et l'oignon fondus à la purée et mélangez délicatement.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Salez, poivrez et goûtez pour ajuster l'équilibre des saveurs.", badge: null },
+      { icone: "🧈", titre: "Servir", detail: "Dressez en dôme avec une noix de beurre fondant au centre et servez bien chaud.", badge: null }
     ]
   },
   caripoulet: {
@@ -14051,9 +14454,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Poulet", detail: "Faire dorer le poulet.", badge: null },
-      { icone: "🍅", titre: "Sauce", detail: "Ajouter oignon, ail, curcuma et tomate.", badge: null },
-      { icone: "💧", titre: "Mijoter", detail: "Mijoter 25 min, servir avec le riz.", badge: "⏱ 25 min" }
+      { icone: "🔪", titre: "Préparer", detail: "Découpez le poulet en morceaux, émincez l'oignon et hachez l'ail finement.", badge: null },
+      { icone: "🍗", titre: "Dorer", detail: "Faites dorer les morceaux de poulet sur toutes leurs faces dans une marmite bien chaude, puis réservez.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Faites revenir l'oignon et l'ail dans la même marmite jusqu'à ce qu'ils blondissent.", badge: null },
+      { icone: "🌟", titre: "Curcuma", detail: "Ajoutez le curcuma et laissez torréfier 1 min pour libérer ses arômes.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Incorporez la tomate concassée et remettez le poulet, puis mélangez pour bien enrober.", badge: null },
+      { icone: "🥘", titre: "Mijoter", detail: "Couvrez et laissez mijoter 25 min à feu doux jusqu'à ce que le poulet soit tendre et la sauce nappante.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez le cari bien chaud sur un riz blanc parfumé, accompagné d'un rougail si désiré.", badge: null }
     ]
   },
   chakhchoukha: {
@@ -14084,9 +14491,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫓", titre: "Galettes", detail: "Préparer les galettes de semoule, les effeuiller.", badge: null },
-      { icone: "🥩", titre: "Sauce", detail: "Mijoter agneau, tomate, pois chiches et oignon.", badge: null },
-      { icone: "🍲", titre: "Assembler", detail: "Napper les galettes de sauce.", badge: null }
+      { icone: "🫓", titre: "Galettes", detail: "Préparez la pâte de semoule, cuisez les fines galettes à la poêle puis effeuillez-les en petits morceaux.", badge: null },
+      { icone: "🍖", titre: "Saisir", detail: "Faites dorer les morceaux d'agneau avec l'oignon émincé dans une marmite avec un peu d'huile.", badge: null },
+      { icone: "🍅", titre: "Sauce", detail: "Ajoutez la tomate concassée et les épices, mouillez d'eau chaude et portez à frémissement.", badge: null },
+      { icone: "🫛", titre: "Pois chiches", detail: "Incorporez les pois chiches et laissez mijoter 35 min à feu doux jusqu'à ce que la viande soit fondante.", badge: null },
+      { icone: "♨️", titre: "Vapeur", detail: "Réchauffez les morceaux de galette à la vapeur de la sauce pour qu'ils s'imprègnent de saveurs.", badge: null },
+      { icone: "🥣", titre: "Assembler", detail: "Disposez les galettes effeuillées dans un grand plat et nappez généreusement de sauce bien chaude.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Couronnez de la viande et des pois chiches, puis servez aussitôt bien chaud.", badge: null }
     ]
   },
   peka: {
@@ -14117,9 +14528,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Préparer", detail: "Disposer poulet et légumes dans un plat.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Arroser d'huile d'olive, saler.", badge: null },
-      { icone: "♨️", titre: "Rôtir", detail: "Cuire à couvert 50 min à 200°C.", badge: "⏱ 50 min" }
+      { icone: "🔪", titre: "Préparer", detail: "Coupez le poulet en morceaux, taillez les pommes de terre en quartiers, le poivron en lanières et l'oignon en lamelles.", badge: null },
+      { icone: "🥘", titre: "Disposer", detail: "Disposez le poulet et les légumes en une seule couche dans un plat allant au four sous cloche.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Arrosez généreusement d'huile d'olive, salez et poivrez en mélangeant pour bien enrober.", badge: null },
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffez le four à 200°C et couvrez le plat de sa cloche ou d'un papier aluminium hermétique.", badge: null },
+      { icone: "⏲️", titre: "Rôtir", detail: "Enfournez et cuisez à couvert 50 min à 200°C pour une cuisson lente et confite.", badge: null },
+      { icone: "✨", titre: "Dorer", detail: "Découvrez le plat et poursuivez 10 min pour faire dorer le poulet et les pommes de terre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la peka directement dans son plat, arrosée de son jus de cuisson parfumé.", badge: null }
     ]
   },
   halusky: {
@@ -14150,9 +14565,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Pâte", detail: "Râper les pommes de terre, mélanger à la farine.", badge: null },
-      { icone: "💧", titre: "Pocher", detail: "Former des halušky, pocher à l'eau.", badge: null },
-      { icone: "🧀", titre: "Finir", detail: "Mélanger au fromage de brebis, parsemer de lardons.", badge: null }
+      { icone: "🥔", titre: "Râper", detail: "Éplucher les pommes de terre et les râper finement au-dessus d'un saladier.", badge: null },
+      { icone: "🥣", titre: "Pâte", detail: "Incorporer la farine et une pincée de sel à la pulpe râpée jusqu'à obtenir une pâte épaisse et collante.", badge: null },
+      { icone: "💧", titre: "Bouillir", detail: "Porter une grande casserole d'eau salée à ébullition franche à gros bouillons.", badge: null },
+      { icone: "🥄", titre: "Pocher", detail: "Pousser de petites quenelles de pâte à travers une passoire à gros trous directement dans l'eau et pocher 4 à 5 min jusqu'à ce qu'elles remontent.", badge: null },
+      { icone: "🥓", titre: "Lardons", detail: "Pendant ce temps, faire dorer les lardons à la poêle à feu moyen jusqu'à ce qu'ils soient croustillants.", badge: null },
+      { icone: "🧀", titre: "Lier", detail: "Égoutter les halušky, les mélanger hors du feu avec la feta émiettée pour qu'elle fonde et nappe les gnocchis.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser bien chaud, parsemer des lardons croustillants et de leur graisse, et servir aussitôt.", badge: null }
     ]
   },
   maftoul: {
@@ -14183,9 +14602,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Bouillon", detail: "Cuire le poulet en bouillon avec l'oignon.", badge: null },
-      { icone: "🌾", titre: "Maftoul", detail: "Cuire le maftoul à la vapeur du bouillon.", badge: null },
-      { icone: "🥘", titre: "Assembler", detail: "Servir avec pois chiches et bouillon épicé.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon et couper le poulet en gros morceaux.", badge: null },
+      { icone: "🍗", titre: "Bouillon", detail: "Déposer le poulet et l'oignon dans une grande casserole d'eau, porter à frémissement et cuire à feu doux 25 min en écumant.", badge: null },
+      { icone: "🌿", titre: "Épicer", detail: "Ajouter le cumin, du sel et du poivre au bouillon, puis incorporer les pois chiches pour les réchauffer.", badge: null },
+      { icone: "♨️", titre: "Vapeur", detail: "Placer le maftoul dans un couscoussier au-dessus du bouillon et cuire à la vapeur 15 min.", badge: null },
+      { icone: "💦", titre: "Hydrater", detail: "Détacher les grains à la fourchette, les arroser d'une louche de bouillon chaud et laisser gonfler 5 min à couvert.", badge: null },
+      { icone: "🍲", titre: "Effilocher", detail: "Retirer le poulet, le désosser et l'effilocher en gros morceaux.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser le maftoul, disposer le poulet et les pois chiches dessus et napper de bouillon épicé bien chaud.", badge: null }
     ]
   },
   pondu: {
@@ -14216,9 +14639,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Base", detail: "Faire revenir l'oignon et l'ail dans l'huile de palme.", badge: null },
-      { icone: "🥬", titre: "Feuilles", detail: "Ajouter les feuilles, mijoter longuement.", badge: "⏱ 30 min" },
-      { icone: "🍚", titre: "Servir", detail: "Servir avec le riz.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer finement l'oignon et hacher l'ail.", badge: null },
+      { icone: "🥬", titre: "Feuilles", detail: "Laver les épinards et les ciseler grossièrement.", badge: null },
+      { icone: "🧅", titre: "Base", detail: "Faire chauffer l'huile de palme à feu moyen et y faire suer l'oignon et l'ail 5 min jusqu'à tendreté.", badge: null },
+      { icone: "🌿", titre: "Incorporer", detail: "Ajouter les épinards, saler, couvrir et laisser tomber les feuilles 5 min.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Baisser à feu doux et laisser mijoter 25 min à couvert en remuant pour une texture fondante.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Pendant ce temps, cuire le riz à l'eau salée jusqu'à absorption complète.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifier l'assaisonnement et servir le pondu bien chaud à côté du riz nature.", badge: null }
     ]
   },
   casado: {
@@ -14249,9 +14676,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Base", detail: "Cuire le riz et réchauffer les haricots.", badge: null },
-      { icone: "🍌", titre: "Plantain", detail: "Poêler la banane plantain.", badge: null },
-      { icone: "🍳", titre: "Assembler", detail: "Dresser avec œuf au plat et viande.", badge: null }
+      { icone: "🍚", titre: "Riz", detail: "Cuire le riz à l'eau salée jusqu'à absorption, puis le réserver au chaud.", badge: null },
+      { icone: "🫘", titre: "Haricots", detail: "Réchauffer les haricots rouges à feu doux avec un peu de leur jus, saler et poivrer.", badge: null },
+      { icone: "🥩", titre: "Viande", detail: "Saler le bœuf et le poêler à feu vif 3 à 4 min par côté selon l'épaisseur, puis laisser reposer.", badge: null },
+      { icone: "🍌", titre: "Plantain", detail: "Couper la banane plantain en biais et la poêler dans un filet d'huile chaude 2 min par face jusqu'à caramélisation.", badge: null },
+      { icone: "🍳", titre: "Œuf", detail: "Cuire l'œuf au plat à feu moyen pour garder le jaune coulant et les bords dorés.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposer harmonieusement riz, haricots, bœuf, plantain et œuf au plat dans une grande assiette.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Servir aussitôt bien chaud, chaque élément côte à côte selon la tradition costaricienne.", badge: null }
     ]
   },
   pancit: {
@@ -14282,9 +14713,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Poulet", detail: "Saisir le poulet émincé.", badge: null },
-      { icone: "🥕", titre: "Légumes", detail: "Ajouter carottes et chou.", badge: null },
-      { icone: "🍜", titre: "Nouilles", detail: "Ajouter les nouilles et la sauce soja, sauter.", badge: null }
+      { icone: "🍜", titre: "Tremper", detail: "Faire tremper les nouilles dans l'eau tiède 10 min pour les assouplir, puis les égoutter.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Émincer le poulet, tailler les carottes en julienne et le chou en fines lanières.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Saisir le poulet émincé à feu vif dans un wok huilé 4 à 5 min jusqu'à coloration.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Ajouter carottes et chou, faire sauter 3 min en gardant les légumes croquants.", badge: null },
+      { icone: "🍶", titre: "Sauce", detail: "Verser la sauce soja et un peu d'eau, puis incorporer les nouilles égouttées.", badge: null },
+      { icone: "🥢", titre: "Sauter", detail: "Faire sauter le tout 3 à 4 min à feu vif jusqu'à absorption du liquide et nouilles brillantes.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servir bien chaud avec un quartier de citron à presser au moment de déguster.", badge: null }
     ]
   },
   karekare: {
@@ -14315,9 +14750,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Mijoter", detail: "Mijoter le bœuf jusqu'à tendreté.", badge: "⏱ 45 min" },
-      { icone: "🥜", titre: "Sauce", detail: "Ajouter le beurre de cacahuète pour lier.", badge: null },
-      { icone: "🍆", titre: "Légumes", detail: "Ajouter aubergine et haricots, finir la cuisson.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le bœuf en gros cubes, émincer l'oignon et détailler aubergine et haricots verts en tronçons.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Faire colorer les cubes de bœuf de toutes parts dans une cocotte huilée à feu vif.", badge: null },
+      { icone: "🧅", titre: "Mouiller", detail: "Ajouter l'oignon, couvrir d'eau et porter à frémissement.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Laisser mijoter à feu doux 45 min à couvert jusqu'à ce que la viande soit fondante.", badge: null },
+      { icone: "🥜", titre: "Sauce", detail: "Délayer le beurre de cacahuète dans le bouillon et remuer pour obtenir une sauce nappante.", badge: null },
+      { icone: "🍆", titre: "Légumes", detail: "Ajouter aubergine et haricots verts, cuire encore 10 min jusqu'à tendreté.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifier l'assaisonnement et servir bien chaud, accompagné de riz blanc selon la tradition.", badge: null }
     ]
   },
   stamppot: {
@@ -14348,9 +14787,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥔", titre: "Purée", detail: "Cuire et écraser les pommes de terre avec lait et beurre.", badge: null },
-      { icone: "🥬", titre: "Chou", detail: "Incorporer le chou cuit.", badge: null },
-      { icone: "🌭", titre: "Servir", detail: "Servir avec la saucisse fumée.", badge: null }
+      { icone: "🥔", titre: "Éplucher", detail: "Éplucher les pommes de terre et les couper en gros morceaux réguliers.", badge: null },
+      { icone: "💧", titre: "Cuire", detail: "Les cuire à l'eau salée 20 min jusqu'à ce qu'elles s'écrasent facilement, puis égoutter.", badge: null },
+      { icone: "🥬", titre: "Chou", detail: "Faire blanchir le chou émincé 5 min à l'eau bouillante, puis bien l'égoutter.", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "Écraser les pommes de terre avec le lait chaud et le beurre jusqu'à obtenir une purée lisse.", badge: null },
+      { icone: "🌿", titre: "Incorporer", detail: "Incorporer le chou égoutté à la purée, saler et poivrer généreusement.", badge: null },
+      { icone: "🌭", titre: "Saucisses", detail: "Réchauffer les saucisses fumées à frémissement dans l'eau chaude 10 min.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Former un dôme de stamppot, creuser un puits et y verser un peu de beurre fondu, servir avec la saucisse.", badge: null }
     ]
   },
   cornishpasty: {
@@ -14381,9 +14824,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Farce", detail: "Mélanger bœuf et légumes en dés crus.", badge: null },
-      { icone: "🥟", titre: "Façonner", detail: "Garnir la pâte, fermer en chausson.", badge: null },
-      { icone: "♨️", titre: "Cuire", detail: "Cuire 45 min à 180°C.", badge: "⏱ 45 min" }
+      { icone: "🔪", titre: "Tailler", detail: "Couper le bœuf, la pomme de terre, le navet et l'oignon en petits dés réguliers et crus.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Mélanger la garniture, saler et poivrer généreusement pour parfumer la viande.", badge: null },
+      { icone: "🥟", titre: "Abaisser", detail: "Étaler la pâte brisée et y découper des disques d'environ 20 cm.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Déposer la farce au centre de chaque disque sans surcharger les bords.", badge: null },
+      { icone: "🤏", titre: "Fermer", detail: "Replier la pâte en chausson et souder le bord en formant la torsade caractéristique.", badge: null },
+      { icone: "🥚", titre: "Dorer", detail: "Badigeonner les chaussons d'œuf battu et inciser légèrement le dessus.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C pendant 45 min jusqu'à ce que la pâte soit bien dorée, servir tiède.", badge: null }
     ]
   },
   kaluapork: {
@@ -14414,9 +14861,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐷", titre: "Cuire", detail: "Cuire le porc longuement à basse température.", badge: "⏱ 1 h 45" },
-      { icone: "🍴", titre: "Effilocher", detail: "Effilocher la viande.", badge: null },
-      { icone: "🥬", titre: "Servir", detail: "Mélanger au chou, servir avec le riz.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon, hacher l'ail et tailler le porc en gros morceaux.", badge: null },
+      { icone: "🧂", titre: "Frotter", detail: "Frotter le porc de sel et de l'ail haché pour bien l'imprégner.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Déposer le porc et l'oignon en cocotte couverte et cuire au four à 150°C pendant 2 h jusqu'à ce que la viande se défasse.", badge: null },
+      { icone: "🍴", titre: "Effilocher", detail: "Sortir la viande et l'effilocher à la fourchette en récupérant les sucs de cuisson.", badge: null },
+      { icone: "🥬", titre: "Chou", detail: "Faire tomber le chou émincé 5 min dans un peu de jus de cuisson jusqu'à tendreté.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Pendant ce temps, cuire le riz à l'eau salée jusqu'à absorption complète.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Mélanger le porc effiloché au chou et servir bien chaud sur un lit de riz blanc.", badge: null }
     ]
   },
   machanka: {
@@ -14447,9 +14898,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥓", titre: "Saisir", detail: "Dorer porc et lardons avec l'oignon.", badge: null },
-      { icone: "🥄", titre: "Lier", detail: "Saupoudrer de farine, mouiller, ajouter la crème.", badge: null },
-      { icone: "💧", titre: "Mijoter", detail: "Mijoter jusqu'à une sauce onctueuse.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le porc en lanières et émincer finement l'oignon.", badge: null },
+      { icone: "🥓", titre: "Saisir", detail: "Faire dorer le porc et les lardons à feu vif dans une poêle jusqu'à belle coloration.", badge: null },
+      { icone: "🧅", titre: "Oignon", detail: "Ajouter l'oignon et le faire suer 5 min jusqu'à ce qu'il devienne translucide.", badge: null },
+      { icone: "🌾", titre: "Singer", detail: "Saupoudrer de farine et remuer 2 min pour la torréfier légèrement.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Verser un peu d'eau chaude tout en remuant pour éviter les grumeaux.", badge: null },
+      { icone: "🥛", titre: "Crème", detail: "Incorporer la crème, saler et poivrer, et porter à frémissement.", badge: null },
+      { icone: "⏳", titre: "Mijoter", detail: "Laisser mijoter à feu doux 20 min jusqu'à une sauce onctueuse, servir avec des crêpes ou des pommes de terre.", badge: null }
     ]
   },
   toadinthehole: {
@@ -14480,9 +14935,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌭", titre: "Saucisses", detail: "Dorer les saucisses au four dans un plat.", badge: null },
-      { icone: "🥣", titre: "Pâte", detail: "Préparer la pâte (farine, œuf, lait).", badge: null },
-      { icone: "♨️", titre: "Cuire", detail: "Verser la pâte sur les saucisses, cuire 30 min.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Fouettez la farine avec les œufs, le lait et une pincée de sel jusqu'à obtenir une pâte lisse, puis laissez-la reposer 15 min à température ambiante.", badge: null },
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffez le four à 220°C et placez-y un plat à rôtir avec un filet d'huile pour qu'il devienne brûlant.", badge: null },
+      { icone: "🌭", titre: "Saisir", detail: "Déposez les saucisses dans le plat très chaud et faites-les colorer 8 min au four en les retournant à mi-cuisson.", badge: null },
+      { icone: "🫗", titre: "Verser", detail: "Versez rapidement la pâte reposée autour des saucisses dans le plat brûlant, sans ouvrir le four trop longtemps.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez 25 min à 220°C sans ouvrir la porte, jusqu'à ce que la pâte gonfle et devienne dorée et croustillante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt bien gonflé, accompagné d'une sauce à l'oignon (onion gravy) et de légumes verts.", badge: null }
     ]
   },
   pljeskavica: {
@@ -14513,9 +14971,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mélange", detail: "Mélanger le bœuf avec oignon, ail et paprika.", badge: null },
-      { icone: "🍔", titre: "Façonner", detail: "Former de grandes galettes plates.", badge: null },
-      { icone: "🔥", titre: "Griller", detail: "Griller 8 min, servir dans le pain.", badge: null }
+      { icone: "🧅", titre: "Hacher", detail: "Hachez très finement l'oignon et l'ail pour qu'ils se fondent dans la viande sans morceaux.", badge: null },
+      { icone: "🥩", titre: "Mélanger", detail: "Malaxez le bœuf haché avec l'oignon, l'ail, le paprika, du sel et du poivre jusqu'à obtenir une masse homogène et collante.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Couvrez et laissez reposer la viande 15 min au frais pour que les saveurs s'imprègnent et que les galettes se tiennent.", badge: null },
+      { icone: "🍔", titre: "Façonner", detail: "Formez de grandes galettes plates et larges d'environ 1 cm d'épaisseur, plus fines que des steaks classiques.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Grillez les galettes 4 min de chaque côté sur une plancha ou un grill bien chaud, jusqu'à une belle croûte dorée.", badge: null },
+      { icone: "🥖", titre: "Servir", detail: "Glissez chaque pljeskavica dans le pain chaud avec oignon cru et garnitures, et servez immédiatement.", badge: null }
     ]
   },
   gheimeh: {
@@ -14546,9 +15007,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Saisir", detail: "Dorer le bœuf avec l'oignon.", badge: null },
-      { icone: "🫘", titre: "Mijoter", detail: "Ajouter pois cassés et tomate, mijoter.", badge: "⏱ 45 min" },
-      { icone: "🍚", titre: "Servir", detail: "Servir sur du riz.", badge: null }
+      { icone: "💧", titre: "Tremper", detail: "Rincez les pois cassés et faites-les tremper 30 min pour réduire leur temps de cuisson.", badge: null },
+      { icone: "🧅", titre: "Revenir", detail: "Faites blondir l'oignon émincé dans un filet d'huile à feu moyen, jusqu'à ce qu'il soit translucide.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Ajoutez les cubes de bœuf et faites-les dorer sur toutes les faces avec une pointe de curcuma.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Incorporez la tomate (ou le concentré) et un peu d'eau chaude pour obtenir une sauce parfumée.", badge: null },
+      { icone: "⏲️", titre: "Mijoter", detail: "Ajoutez les pois cassés, couvrez et laissez mijoter à feu doux 40 min jusqu'à ce que la viande soit fondante.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Pendant ce temps, faites cuire le riz basmati à la vapeur jusqu'à ce qu'il soit léger et grainé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dressez le khoresh bien onctueux sur le riz et servez avec des allumettes de pommes de terre frites par-dessus.", badge: null }
     ]
   },
   sheftalia: {
@@ -14579,9 +15044,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mélange", detail: "Mélanger porc, oignon et persil.", badge: null },
-      { icone: "🌭", titre: "Façonner", detail: "Former des petites saucisses.", badge: null },
-      { icone: "🔥", titre: "Griller", detail: "Griller jusqu'à doré, servir en pita.", badge: null }
+      { icone: "🧅", titre: "Préparer", detail: "Hachez finement l'oignon et ciselez le persil pour parfumer généreusement la farce.", badge: null },
+      { icone: "🥩", titre: "Mélanger", detail: "Mélangez le porc haché avec l'oignon, le persil, du sel et du poivre jusqu'à obtenir une farce homogène.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laissez reposer la farce 15 min au frais pour qu'elle se raffermisse et soit plus facile à façonner.", badge: null },
+      { icone: "🌭", titre: "Façonner", detail: "Enveloppez des petits boudins de farce dans de la crépine (ou façonnez de petites saucisses bien serrées).", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Grillez les sheftalia à feu moyen 12 à 15 min en les retournant souvent, jusqu'à ce qu'elles soient bien dorées et cuites à cœur.", badge: null },
+      { icone: "🥙", titre: "Servir", detail: "Glissez-les dans un pain pita chaud avec oignon, tomate et un filet de citron, et servez aussitôt.", badge: null }
     ]
   },
   kleftiko: {
@@ -14612,9 +15080,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐑", titre: "Mariner", detail: "Frotter l'agneau d'ail, citron et origan.", badge: null },
-      { icone: "🥔", titre: "Papillote", detail: "Enfermer avec les pommes de terre en papillote.", badge: null },
-      { icone: "♨️", titre: "Cuire", detail: "Cuire 1 h 45 à basse température.", badge: "⏱ 1 h 45" }
+      { icone: "🍋", titre: "Mariner", detail: "Frottez l'agneau d'ail écrasé, de jus de citron, d'origan, de sel et de poivre, puis laissez mariner 30 min.", badge: null },
+      { icone: "🥔", titre: "Couper", detail: "Épluchez et coupez les pommes de terre en gros quartiers, et arrosez-les du reste de citron et d'origan.", badge: null },
+      { icone: "🌡️", titre: "Préchauffer", detail: "Préchauffez le four à 160°C pour une cuisson lente et douce qui attendrit la viande.", badge: null },
+      { icone: "📦", titre: "Papillote", detail: "Disposez l'agneau et les pommes de terre dans une grande papillote de papier sulfurisé bien fermée pour emprisonner les sucs.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfournez 1h45 à 160°C : la viande doit confire doucement et se détacher de l'os.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Ouvrez la papillote et poursuivez 15 min à 200°C pour colorer l'agneau et les pommes de terre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez l'agneau fondant directement dans sa papillote avec ses pommes de terre confites et un trait de citron frais.", badge: null }
     ]
   },
   eru: {
@@ -14645,9 +15117,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Viande", detail: "Cuire le bœuf jusqu'à tendreté.", badge: null },
-      { icone: "🥬", titre: "Feuilles", detail: "Ajouter les feuilles et l'huile de palme.", badge: null },
-      { icone: "🦐", titre: "Finir", detail: "Ajouter les crevettes, mijoter 15 min.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincez l'oignon, coupez le bœuf en morceaux et lavez soigneusement les feuilles d'épinards.", badge: null },
+      { icone: "🥩", titre: "Cuire viande", detail: "Faites cuire le bœuf avec l'oignon, du sel et un peu d'eau à feu moyen 25 min jusqu'à ce qu'il soit tendre.", badge: null },
+      { icone: "🥬", titre: "Feuilles", detail: "Ajoutez les épinards et laissez-les compoter quelques minutes dans le bouillon de viande.", badge: null },
+      { icone: "🟠", titre: "Huile palme", detail: "Incorporez l'huile de palme et mélangez pour enrober les feuilles et donner sa couleur caractéristique au plat.", badge: null },
+      { icone: "🦐", titre: "Crevettes", detail: "Ajoutez les crevettes et laissez mijoter à feu doux 15 min pour que tous les arômes se marient.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Goûtez et rectifiez le sel et le piment, le plat doit être savoureux et bien lié.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez l'eru bien chaud, traditionnellement accompagné de water fufu ou de garri.", badge: null }
     ]
   },
   couscousalgerien: {

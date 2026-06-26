@@ -29,10 +29,12 @@ Object.assign(recettes, {
       { nb: 15, concombre: "3000 g", yaourtgrec: "900 g", ail: "45 g", menthe: "45 g", huileolive: "75 ml", citron: "75 g" }
     ],
     etapes: [
-      { icone: "🥒", titre: "Préparer", detail: "Éplucher et couper grossièrement les concombres.", badge: "⏱ 6 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer concombre, yaourt grec, ail, menthe, huile et citron jusqu'à un velouté lisse.", badge: null },
-      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer, rectifier l'acidité au citron.", badge: null },
-      { icone: "❄️", titre: "Réserver au froid", detail: "Réserver au moins 1 h au réfrigérateur. Servir bien glacé.", badge: "💡 Glacé" }
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher les concombres, retirer les graines si nécessaire et les couper grossièrement en morceaux.", badge: null },
+      { icone: "🧄", titre: "Aromates", detail: "Dégermer l'ail et effeuiller la menthe fraîche pour libérer tous leurs arômes.", badge: null },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer le concombre avec le yaourt grec, l'ail, la menthe, l'huile d'olive et le jus de citron jusqu'à un velouté bien lisse.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et rectifier l'acidité avec un peu de citron selon le goût.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Couvrir et placer au moins 1 h au réfrigérateur pour servir la soupe bien glacée.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Verser dans des bols frais, ajouter un filet d'huile d'olive, quelques feuilles de menthe et des dés de concombre.", badge: null }
     ]
   },
   veloutepetitspois: {
@@ -60,11 +62,13 @@ Object.assign(recettes, {
       { nb: 15, petitspois: "2250 g", echalote: "450 g", bouillon: "3750 ml", creme: "450 ml", beurre: "120 g", menthe: "30 g" }
     ],
     etapes: [
-      { icone: "🧅", titre: "Faire suer", detail: "Faire suer l'échalote émincée dans le beurre, sans coloration.", badge: "⏱ 5 min" },
-      { icone: "🟢", titre: "Cuire les pois", detail: "Ajouter les petits pois et le bouillon, laisser mijoter 12 min.", badge: "⏱ 12 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer finement, ajouter la crème et la menthe, mixer à nouveau.", badge: null },
-      { icone: "🧂", titre: "Ajuster", detail: "Saler, poivrer. Passer au chinois pour un velouté ultra-lisse (facultatif).", badge: null },
-      { icone: "🍵", titre: "Servir", detail: "Servir chaud, ou bien frais en été, avec un filet de crème.", badge: "💡 Chaud ou froid" }
+      { icone: "🧅", titre: "Suer l'échalote", detail: "Émincer finement l'échalote et la faire suer dans le beurre à feu doux 3 min, sans coloration.", badge: null },
+      { icone: "🫛", titre: "Cuire les pois", detail: "Ajouter les petits pois et le bouillon, porter à frémissement et laisser mijoter 12 min à feu moyen.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Hors du feu, ajouter les feuilles de menthe fraîche pour qu'elles infusent sans cuire.", badge: null },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer finement le tout, puis incorporer la crème fraîche et mixer à nouveau pour un velouté onctueux.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Saler, poivrer et, pour une texture ultra-lisse, passer le velouté au chinois.", badge: null },
+      { icone: "🌡️", titre: "Tempérer", detail: "Servir bien chaud en hiver, ou laisser refroidir au réfrigérateur pour une version glacée d'été.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Verser dans des bols, ajouter un filet de crème et une feuille de menthe avant de servir.", badge: null }
     ]
   },
   soupeaoignon: {
@@ -94,11 +98,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Caraméliser les oignons", detail: "Émincer finement les oignons. Les faire fondre dans le beurre à feu doux en remuant souvent. Ils doivent devenir dorés et confits. C'est long mais essentiel ! À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 30-40 min à feu doux" },
-      { icone: "🍷", titre: "Déglacer", detail: "Ajouter un verre de vin blanc sec ou de cognac. Laisser évaporer 2 min.", badge: null },
-      { icone: "🍲", titre: "Ajouter le bouillon", detail: "Verser le bouillon de bœuf chaud. Laisser mijoter 15 min. Rectifier l'assaisonnement. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 15 min" },
-      { icone: "🍞", titre: "Préparer les croûtons", detail: "Toaster les tranches de pain au four ou à la poêle.", badge: null },
-      { icone: "🧀", titre: "Gratiner", detail: "Verser la soupe dans des bols allant au four. Poser un croûton sur chaque bol, couvrir généreusement de gruyère râpé. Passer sous le gril jusqu'à gratinage.", badge: "⏱ 5 min gril" }
+      { icone: "🧅", titre: "Émincer", detail: "Éplucher et émincer finement tous les oignons pour une cuisson régulière.", badge: null },
+      { icone: "🔥", titre: "Caraméliser", detail: "Faire fondre les oignons dans le beurre à feu doux 30 à 40 min en remuant souvent, jusqu'à une belle teinte dorée et confite.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Verser le vin blanc sec pour déglacer et laisser évaporer 2 à 3 min pour décoller les sucs.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Ajouter le bouillon de bœuf chaud, porter à frémissement et laisser mijoter 15 min à couvercle entrouvert.", badge: null },
+      { icone: "🍞", titre: "Croûtons", detail: "Pendant ce temps, toaster les tranches de pain au four à 180°C ou à la poêle jusqu'à ce qu'elles soient dorées.", badge: null },
+      { icone: "🧀", titre: "Gratiner", detail: "Répartir la soupe dans des bols allant au four, poser un croûton et couvrir généreusement de gruyère râpé.", badge: null },
+      { icone: "🔥", titre: "Gratiner au four", detail: "Passer sous le gril du four 5 min jusqu'à ce que le fromage soit fondu et gratiné, puis servir brûlant.", badge: null }
     ]
   },
   tom_yam: {
@@ -128,10 +134,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Préparer le bouillon", detail: "Porter le bouillon de poulet à ébullition. Ajouter citronnelle coupée, galanga, feuilles de kaffir lime, piment. Laisser infuser 10 min.", badge: "⏱ 10 min" },
-      { icone: "🍄", titre: "Ajouter champignons", detail: "Ajouter les champignons de paille ou shiitake. Cuire 3 min.", badge: null },
-      { icone: "🦐", titre: "Ajouter les crevettes", detail: "Ajouter les crevettes. Cuire jusqu'à ce qu'elles deviennent roses.", badge: "⏱ 3 min" },
-      { icone: "🍋", titre: "Assaisonner", detail: "Hors du feu, ajouter jus de citron vert, sauce poisson et pâte de piment (nam prik pao). Goûter et ajuster. Servir avec coriandre fraîche.", badge: null }
+      { icone: "🔪", titre: "Préparer les aromates", detail: "Écraser et couper la citronnelle en tronçons, trancher le galanga et préparer les piments.", badge: null },
+      { icone: "🍲", titre: "Infuser le bouillon", detail: "Porter le bouillon à ébullition, ajouter citronnelle, galanga, feuilles de kaffir et piment, puis laisser infuser 10 min à feu doux.", badge: null },
+      { icone: "🍄", titre: "Champignons", detail: "Ajouter les champignons émincés au bouillon parfumé et laisser cuire 3 min.", badge: null },
+      { icone: "🦐", titre: "Crevettes", detail: "Plonger les crevettes décortiquées et les cuire 2 à 3 min jusqu'à ce qu'elles deviennent roses et fermes.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Hors du feu, ajouter le jus de citron vert, la sauce poisson et la pâte de piment, puis goûter et ajuster l'équilibre.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Répartir dans des bols, parsemer de coriandre fraîche ciselée et servir bien chaud.", badge: null }
     ]
   },
   misoramenleger: {
@@ -161,11 +169,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💧", titre: "Bouillon dashi", detail: "Porter le dashi (poudre ou sachet dans l'eau) à frémissement. Ne pas bouillir.", badge: null },
-      { icone: "🌿", titre: "Dissoudre le miso", detail: "Hors du feu, prélever une louche et y dissoudre le miso blanc. Reverser dans la casserole. La pâte doit DOUBLER de volume dans un endroit tiède (25°C, four éteint avec lampe allumée).", badge: null },
-      { icone: "🍜", titre: "Cuire les nouilles", detail: "Cuire les nouilles ramen séparément. Égoutter.", badge: "⏱ 3 min" },
-      { icone: "🧀", titre: "Préparer les garnitures", detail: "Poêler le tofu coupé en cubes avec huile de sésame. Chauffer le maïs.", badge: null },
-      { icone: "🥢", titre: "Dresser", detail: "Nouilles dans le bol, verser le bouillon chaud. Ajouter tofu, maïs, nori, ciboule et graines de sésame.", badge: null }
+      { icone: "🍲", titre: "Bouillon dashi", detail: "Porter le dashi à léger frémissement sans le faire bouillir pour préserver sa finesse aromatique.", badge: null },
+      { icone: "🥢", titre: "Dissoudre le miso", detail: "Hors du feu, prélever une louche de bouillon et y délayer le miso blanc, puis le reverser dans la casserole en mélangeant.", badge: null },
+      { icone: "🍜", titre: "Cuire les nouilles", detail: "Cuire les nouilles ramen séparément selon le temps indiqué, puis les égoutter.", badge: null },
+      { icone: "🧈", titre: "Poêler le tofu", detail: "Couper le tofu en cubes et le poêler à l'huile de sésame jusqu'à ce qu'il soit doré sur toutes les faces.", badge: null },
+      { icone: "🌽", titre: "Réchauffer le maïs", detail: "Égoutter et réchauffer le maïs doux quelques minutes à la poêle.", badge: null },
+      { icone: "🍥", titre: "Dresser", detail: "Répartir les nouilles dans les bols, verser le bouillon miso chaud par-dessus.", badge: null },
+      { icone: "🌿", titre: "Garnir", detail: "Disposer le tofu, le maïs, une feuille de nori et de la ciboule, parsemer de graines de sésame et servir aussitôt.", badge: null }
     ]
   },
   veloutepatatepoireaux: {
@@ -195,11 +205,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Faire fondre les poireaux", detail: "Émincer les poireaux (blanc et vert tendre). Faire fondre dans le beurre à feu doux sans coloration. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 10 min" },
-      { icone: "🥔", titre: "Ajouter les pommes de terre", detail: "Éplucher et couper en cubes. Ajouter aux poireaux. Couvrir de bouillon. Saler. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "⏳", titre: "Cuire", detail: "Cuire jusqu'à ce que les pommes de terre soient très tendres.", badge: "⏱ 20 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer finement. Incorporer la crème fraîche. Rectifier l'assaisonnement. Ajuster la consistance avec du bouillon. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🍯", titre: "Servir", detail: "Servir chaud avec croûtons dorés au beurre, lardons grillés ou ciboulette fraîche.", badge: null }
+      { icone: "🔪", titre: "Émincer les poireaux", detail: "Nettoyer et émincer les poireaux en utilisant le blanc et le vert tendre.", badge: null },
+      { icone: "🧈", titre: "Faire fondre", detail: "Faire fondre les poireaux dans le beurre à feu doux 5 à 7 min, sans coloration.", badge: null },
+      { icone: "🥔", titre: "Pommes de terre", detail: "Éplucher et couper les pommes de terre en cubes réguliers, les ajouter aux poireaux.", badge: null },
+      { icone: "🍲", titre: "Mouiller", detail: "Couvrir de bouillon, saler et laisser cuire 20 min jusqu'à ce que les pommes de terre soient très tendres.", badge: null },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer finement le tout, incorporer la crème fraîche et ajuster la consistance avec un peu de bouillon.", badge: null },
+      { icone: "🧂", titre: "Rectifier", detail: "Goûter et rectifier l'assaisonnement en sel et poivre pour équilibrer le velouté.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir chaud, garni de croûtons dorés au beurre, de lardons grillés ou de ciboulette ciselée.", badge: null }
     ]
   },
   soupeAziatique: {
@@ -229,10 +241,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍲", titre: "Bouillon parfumé", detail: "Porter le bouillon à ébullition avec gingembre tranché, ail, citronnelle et sauce poisson.", badge: "⏱ 10 min" },
-      { icone: "🥬", titre: "Légumes", detail: "Ajouter bok choy, carottes en julienne et champignons. Cuire 3 min.", badge: "⏱ 3 min" },
-      { icone: "🍜", titre: "Nouilles", detail: "Cuire les nouilles de riz séparément. Égoutter et répartir dans les bols.", badge: "⏱ 2 min" },
-      { icone: "🌿", titre: "Assembler", detail: "Verser le bouillon avec légumes. Garnir de coriandre, ciboule, piment et jus de citron vert. Optionnel : ajouter des crevettes ou du tofu.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Trancher le gingembre, hacher l'ail, tailler la carotte en julienne et émincer les champignons et le bok choy.", badge: null },
+      { icone: "🍲", titre: "Bouillon parfumé", detail: "Porter le bouillon à ébullition avec le gingembre, l'ail et la sauce soja, puis laisser infuser 5 min.", badge: null },
+      { icone: "🥬", titre: "Légumes", detail: "Ajouter la carotte, les champignons et le bok choy, et laisser cuire 3 min pour qu'ils restent croquants.", badge: null },
+      { icone: "🦐", titre: "Protéine", detail: "Ajouter au choix les crevettes, le poisson ou le tofu en cubes et cuire 2 à 3 min jusqu'à cuisson complète.", badge: null },
+      { icone: "🍜", titre: "Nouilles", detail: "Cuire les nouilles séparément, les égoutter et les répartir dans les bols de service.", badge: null },
+      { icone: "🥄", titre: "Assembler", detail: "Verser le bouillon avec légumes et protéine sur les nouilles.", badge: null },
+      { icone: "🌿", titre: "Garnir", detail: "Garnir de coriandre, ciboule et d'un trait de jus de citron vert, puis servir bien chaud.", badge: null }
     ]
   },
   soupeMinestrone: {
@@ -262,11 +277,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Soffritto", detail: "Faire revenir oignon, céleri et carotte en brunoise dans huile d'olive.", badge: "⏱ 8 min" },
-      { icone: "🍅", titre: "Tomates et bouillon", detail: "Ajouter ail, tomates concassées, concentré de tomate et bouillon de légumes. Porter à ébullition.", badge: null },
-      { icone: "🥒", titre: "Légumes de saison", detail: "Ajouter courgettes, haricots verts, pommes de terre en cubes, épinards. Cuire 15 min.", badge: "⏱ 15 min" },
-      { icone: "🥜", titre: "Haricots et pâtes", detail: "Ajouter haricots blancs et petites pâtes (ditalini ou coquillettes). Cuire encore 10 min.", badge: "⏱ 10 min" },
-      { icone: "🧀", titre: "Servir", detail: "Rectifier l'assaisonnement. Servir avec un filet d'huile d'olive et parmesan râpé. Le lendemain c'est encore meilleur !", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Tailler oignon, céleri et carotte en fine brunoise, hacher l'ail, couper la courgette et les pommes de terre en petits cubes et égoutter les haricots.", badge: null },
+      { icone: "🧅", titre: "Soffritto", detail: "Faire revenir oignon, céleri et carotte dans l'huile d'olive à feu moyen 8 min, jusqu'à ce que l'oignon soit translucide, puis ajouter l'ail 1 min.", badge: null },
+      { icone: "🍅", titre: "Tomates", detail: "Ajouter les tomates concassées et verser le bouillon chaud, porter à ébullition puis baisser à feu doux pour un mijotage tranquille.", badge: null },
+      { icone: "🥔", titre: "Légumes", detail: "Incorporer pommes de terre et carotte, laisser cuire 15 min à feu doux, puis ajouter la courgette et les haricots et poursuivre 10 min.", badge: null },
+      { icone: "🍝", titre: "Pâtes", detail: "Verser les petites pâtes directement dans la soupe et cuire 8 à 10 min selon le paquet, en remuant pour éviter qu'elles collent au fond.", badge: null },
+      { icone: "🌿", titre: "Épinards", detail: "Ajouter les épinards en fin de cuisson, laisser fondre 2 min, puis rectifier l'assaisonnement en sel et poivre.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Servir bien chaud avec un filet d'huile d'olive vierge et du parmesan fraîchement râpé ; encore meilleur réchauffé le lendemain.", badge: null }
     ]
   },
   veloutePoiron: {
@@ -296,11 +313,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire revenir", detail: "Faire fondre oignon dans le beurre. Ajouter le gingembre râpé et cuire 2 min.", badge: null },
-      { icone: "🎃", titre: "Ajouter la courge", detail: "Ajouter la courge butternut épluchée en cubes. Couvrir de bouillon de légumes.", badge: "⏱ 20 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer finement jusqu'à velouté. Remettre sur feu doux. À FEU DOUX strictement — sinon ça brûle vite.", badge: null },
-      { icone: "🥥", titre: "Lait de coco", detail: "Incorporer le lait de coco. Ajuster la consistance avec du bouillon. Rectifier l'assaisonnement. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Verser dans des bols. Ajouter un filet de lait de coco, graines de courge torréfiées et piment d'Espelette.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher la courge butternut et la couper en cubes réguliers, émincer l'oignon et râper finement le gingembre frais.", badge: null },
+      { icone: "🧈", titre: "Suer", detail: "Faire fondre le beurre à feu moyen et y faire suer l'oignon 4 min sans coloration, puis ajouter le gingembre et cuire 2 min.", badge: null },
+      { icone: "🎃", titre: "Courge", detail: "Ajouter les cubes de courge, les enrober du beurre parfumé, puis couvrir de bouillon de légumes chaud.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Porter à ébullition puis cuire 20 min à feu doux, jusqu'à ce que la courge s'écrase facilement à la fourchette.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement au mixeur plongeant jusqu'à une texture parfaitement lisse, en ajustant la consistance avec un peu de bouillon.", badge: null },
+      { icone: "🥥", titre: "Coco", detail: "Remettre sur feu doux, incorporer le lait de coco puis un trait de lait, réchauffer sans bouillir et rectifier le sel.", badge: null },
+      { icone: "🥄", titre: "Servir", detail: "Verser dans des bols et garnir d'un filet de lait de coco, de graines de courge torréfiées et d'une pincée de piment d'Espelette.", badge: null }
     ]
   },
   veloutecourgette: {
@@ -330,9 +349,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥒", titre: "Cuire les courgettes", detail: "Faire revenir oignon dans beurre. Ajouter courgettes coupées en rondelles et bouillon. Cuire 15 min.", badge: "⏱ 15 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer finement avec le fromage de chèvre, sel et poivre.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Verser dans des bols. Ajouter feuilles de basilic, filet d'huile d'olive et poivre du moulin.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Laver les courgettes et les couper en rondelles sans les éplucher pour garder la couleur verte, émincer l'oignon.", badge: null },
+      { icone: "🧈", titre: "Suer", detail: "Faire fondre le beurre avec un filet d'huile à feu moyen et y faire suer l'oignon 4 min sans coloration.", badge: null },
+      { icone: "🥒", titre: "Courgettes", detail: "Ajouter les rondelles de courgette, les nacrer 2 min, puis couvrir de bouillon chaud et porter à ébullition.", badge: null },
+      { icone: "🍲", titre: "Cuire", detail: "Laisser cuire 15 min à feu moyen, jusqu'à ce que les courgettes soient bien tendres et translucides.", badge: null },
+      { icone: "🧀", titre: "Mixer", detail: "Hors du feu, ajouter le fromage de chèvre et mixer finement jusqu'à un velouté onctueux, puis saler et poivrer.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Verser dans des bols et décorer de feuilles de basilic frais, d'un filet d'huile d'olive et d'un tour de poivre du moulin.", badge: null }
     ]
   },
   soupeharira: {
@@ -362,10 +384,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Base aromatique", detail: "Faire revenir oignon, ail, gingembre, curcuma, cumin et cannelle dans l'huile d'olive.", badge: null },
-      { icone: "🍅", titre: "Tomates et légumineuses", detail: "Ajouter tomates concassées, lentilles rouges, pois chiches égouttés et bouillon.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Cuire à feu moyen jusqu'à lentilles fondantes.", badge: "⏱ 40 min" },
-      { icone: "🌿", titre: "Finir", detail: "Ajouter coriandre et persil hachés, jus de citron. Servir avec des dattes et des crêpes msemen.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon, hacher l'ail, râper le gingembre, concasser les tomates et rincer les lentilles ; égoutter les pois chiches.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Faire revenir l'oignon dans l'huile d'olive 5 min, puis ajouter ail, gingembre et cannelle et torréfier 1 min pour libérer les arômes.", badge: null },
+      { icone: "🍅", titre: "Tomates", detail: "Incorporer les tomates concassées et laisser compoter 5 min à feu moyen jusqu'à ce que le mélange réduise légèrement.", badge: null },
+      { icone: "🫘", titre: "Légumineuses", detail: "Ajouter les lentilles, les pois chiches et le bouillon chaud, porter à ébullition puis baisser le feu.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Laisser mijoter 35 à 40 min à feu doux, jusqu'à ce que les lentilles soient fondantes et la soupe veloutée.", badge: null },
+      { icone: "🍋", titre: "Finir", detail: "Hors du feu, ajouter coriandre et persil hachés ainsi qu'un trait de jus de citron, puis rectifier l'assaisonnement.", badge: null },
+      { icone: "🌙", titre: "Servir", detail: "Servir bien chaude, accompagnée de dattes et de crêpes msemen, idéale pour rompre le jeûne du Ramadan.", badge: null }
     ]
   },
   veloutelegumes: {
@@ -395,11 +420,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥕", titre: "Préparer les légumes", detail: "Éplucher et couper les carottes en rondelles, la courge butternut en cubes, l'oignon en quartiers. Râper le gingembre. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🧈", titre: "Faire revenir", detail: "Dans une grande casserole, faire fondre le beurre à feu moyen. Faire revenir l'oignon 3–4 min. Ajouter les légumes et le gingembre, faire revenir encore 2 min.", badge: null },
-      { icone: "💧", titre: "Cuire", detail: "Verser le bouillon chaud. Porter à ébullition puis baisser le feu. Laisser cuire jusqu'à ce que les légumes soient bien tendres.", badge: "⏱ 20 min à feu moyen" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer le tout avec un mixeur plongeant jusqu'à obtenir une texture lisse et veloutée. Ajuster la consistance avec un peu de bouillon si nécessaire.", badge: null },
-      { icone: "🍦", titre: "Ajouter la crème", detail: "Incorporer la crème fraîche. Rectifier l'assaisonnement en sel et poivre. Servir chaud avec des croûtons et une touche de crème. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher et couper les carottes en rondelles et la courge en cubes, émincer l'oignon en quartiers et râper le gingembre.", badge: null },
+      { icone: "🧈", titre: "Suer", detail: "Faire fondre le beurre à feu moyen et y faire revenir l'oignon 4 min, puis ajouter les légumes et le gingembre et cuire 2 min.", badge: null },
+      { icone: "🍲", titre: "Cuire", detail: "Verser le bouillon chaud, porter à ébullition puis baisser le feu et cuire 20 min jusqu'à ce que les légumes soient bien tendres.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer au mixeur plongeant jusqu'à une texture lisse et veloutée, en ajustant la consistance avec un peu de bouillon si besoin.", badge: null },
+      { icone: "🥛", titre: "Crème", detail: "Incorporer la crème fraîche hors ébullition, réchauffer doucement et rectifier l'assaisonnement en sel et poivre.", badge: null },
+      { icone: "🥄", titre: "Servir", detail: "Servir chaud avec des croûtons dorés, une touche de crème et un tour de poivre du moulin.", badge: null }
     ]
   },
   soupemiso: {
@@ -429,11 +455,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💧", titre: "Préparer le dashi", detail: "Porter l'eau à frémissement. Ajouter le dashi en poudre (1 c.à.c pour 500ml). Laisser infuser 2 min.", badge: null },
-      { icone: "🧊", titre: "Réhydrater le wakamé", detail: "Plonger le wakamé séché dans un bol d'eau froide 5 min. Il va gonfler. Égoutter.", badge: "⏱ 5 min" },
-      { icone: "🧀", titre: "Ajouter le tofu", detail: "Couper le tofu soyeux en petits cubes. L'ajouter délicatement au bouillon chaud (pas bouillant). ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌿", titre: "Dissoudre le miso", detail: "Hors du feu ou à feu très doux, prélever une louche de bouillon, y dissoudre la pâte miso. Reverser dans la casserole. Ne jamais faire bouillir le miso — ça détruit les probiotiques !", badge: null },
-      { icone: "🍜", titre: "Servir", detail: "Ajouter le wakamé et la ciboule émincée. Servir immédiatement dans des bols.", badge: null }
+      { icone: "💧", titre: "Préparer", detail: "Réhydrater le wakamé séché dans un bol d'eau froide 5 min jusqu'à ce qu'il gonfle, puis l'égoutter ; émincer la ciboule.", badge: null },
+      { icone: "🔪", titre: "Tofu", detail: "Couper délicatement le tofu soyeux en petits cubes réguliers pour qu'ils restent intacts dans le bouillon.", badge: null },
+      { icone: "🍵", titre: "Bouillon", detail: "Porter l'eau à frémissement (environ 80°C, surtout pas à gros bouillons) pour préparer la base du bouillon.", badge: null },
+      { icone: "🧊", titre: "Tofu", detail: "Plonger délicatement les cubes de tofu dans le bouillon chaud et laisser chauffer 2 min sans remuer brutalement.", badge: null },
+      { icone: "🥢", titre: "Miso", detail: "Hors du feu, prélever une louche de bouillon et y délayer la pâte miso, puis reverser dans la casserole sans jamais faire bouillir.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Ajouter le wakamé et la ciboule émincée, puis servir immédiatement dans des bols bien chauds.", badge: null }
     ]
   },
   soupeLentillesCorail: {
@@ -463,10 +490,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire revenir les aromates", detail: "Faire suer l'oignon avec l'ail dans l'huile d'olive. Ajouter cumin, curcuma, paprika. Torréfier 1 min.", badge: null },
-      { icone: "🍅", titre: "Ajouter tomates et lentilles", detail: "Ajouter tomates, lentilles rincées et bouillon de légumes. Porter à ébullition.", badge: null },
-      { icone: "⏳", titre: "Cuire", detail: "Laisser mijoter à feu doux en remuant régulièrement jusqu'à ce que les lentilles fondent. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 20 min" },
-      { icone: "🍋", titre: "Mixer et finir", detail: "Mixer partiellement pour une texture onctueuse. Ajouter jus de citron. Garnir d'huile d'olive et cumin grillé.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer les oignons, hacher l'ail, concasser les tomates et rincer les lentilles corail à l'eau claire.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Faire suer oignons et ail dans l'huile d'olive 5 min, puis ajouter le cumin et torréfier 1 min pour réveiller les épices.", badge: null },
+      { icone: "🍅", titre: "Tomates", detail: "Incorporer les tomates concassées et laisser compoter 5 min à feu moyen pour concentrer les saveurs.", badge: null },
+      { icone: "🫘", titre: "Lentilles", detail: "Ajouter les lentilles corail et le bouillon de légumes, porter à ébullition puis baisser à feu doux.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Cuire 20 min à feu doux en remuant régulièrement, jusqu'à ce que les lentilles se délitent et épaississent la soupe.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer partiellement pour une texture à la fois onctueuse et rustique, puis ajouter un trait de jus de citron.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servir chaude, garnie d'un filet d'huile d'olive et d'une pincée de cumin grillé.", badge: null }
     ]
   },
   soupeDetox: {
@@ -496,10 +526,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Faire revenir les légumes", detail: "Faire suer oignon et ail dans l'huile d'olive. Ajouter courgette coupée en dés, gingembre râpé.", badge: "⏱ 5 min" },
-      { icone: "💧", titre: "Ajouter le bouillon", detail: "Verser le bouillon de légumes chaud. Porter à ébullition puis baisser le feu.", badge: "⏱ 10 min" },
-      { icone: "🌿", titre: "Ajouter les épinards", detail: "Hors du feu, ajouter les épinards frais. Laisser fondre 2 min.", badge: "⏱ 2 min" },
-      { icone: "🍋", titre: "Mixer et finir", detail: "Mixer finement. Ajouter jus de citron vert, sel, poivre. Servir avec graines de courge.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon et l'ail, couper la courgette en dés, râper le gingembre et laver soigneusement les épinards frais.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire suer oignon et ail dans l'huile d'olive 4 min sans coloration, puis ajouter la courgette et le gingembre et cuire 3 min.", badge: null },
+      { icone: "🍲", titre: "Bouillon", detail: "Verser le bouillon de légumes chaud, porter à ébullition puis baisser le feu et cuire 10 min jusqu'à ce que la courgette soit tendre.", badge: null },
+      { icone: "🌿", titre: "Épinards", detail: "Hors du feu, ajouter les épinards frais et les laisser fondre 2 min dans la chaleur du bouillon pour garder leur couleur vive.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement jusqu'à un velouté bien vert et lisse, puis assaisonner de sel, poivre et d'un trait de jus de citron vert.", badge: null },
+      { icone: "🥄", titre: "Servir", detail: "Servir chaud ou tiède dans des bols, parsemé de graines de courge pour le croquant.", badge: null }
     ]
   },
   velouteAsperges: {
@@ -529,10 +561,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌱", titre: "Préparer les asperges", detail: "Casser la base dure des asperges. Garder quelques pointes pour la décoration. Couper le reste en tronçons. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🧅", titre: "Faire suer", detail: "Faire suer oignon et ail dans l'huile d'olive 3 min. Ajouter les asperges. Verser le bouillon chaud.", badge: "⏱ 15 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer finement jusqu'à consistance veloutée. Incorporer la crème légère. Rectifier l'assaisonnement. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir chaud ou froid avec les pointes d'asperges grillées, copeaux de parmesan et huile d'olive.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Casser la base dure des asperges, réserver quelques pointes pour la déco et couper le reste en tronçons ; émincer oignons et ail.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire suer oignons et ail dans l'huile d'olive 3 min à feu moyen sans coloration pour développer la douceur.", badge: null },
+      { icone: "🌱", titre: "Asperges", detail: "Ajouter les tronçons d'asperges, les nacrer 2 min, puis couvrir de bouillon chaud et porter à ébullition.", badge: null },
+      { icone: "🍲", titre: "Cuire", detail: "Laisser cuire 15 min à feu doux jusqu'à ce que les asperges soient bien tendres et fondantes.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement jusqu'à une consistance veloutée, incorporer la crème légère et rectifier l'assaisonnement.", badge: null },
+      { icone: "🔥", titre: "Pointes", detail: "Poêler rapidement les pointes d'asperges réservées dans un filet d'huile 3 min pour les colorer légèrement.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Servir chaud ou froid, surmonté des pointes grillées, de copeaux de parmesan et d'un filet d'huile d'olive.", badge: null }
     ]
   },
   solyanka: {
@@ -562,11 +597,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐮", titre: "Bouillon", detail: "Cuire le bœuf en bouillon avec carotte, oignon, laurier 1h. Filtrer et réserver.", badge: "⏱ 1h" },
-      { icone: "🧅", titre: "Sofrito", detail: "Faire revenir oignon, concentré de tomate, cornichons émincés (clé du goût !) 8 min.", badge: "⏱ 8 min" },
-      { icone: "🌭", titre: "Viandes", detail: "Ajouter la saucisse fumée, le jambon en lamelles, le bœuf émincé. Faire revenir 5 min.", badge: "⏱ 5 min" },
-      { icone: "🍅", titre: "Bouillon", detail: "Verser le bouillon, tomates concassées. Mijoter 20 min. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 20 min" },
-      { icone: "🍋", titre: "Finition", detail: "Ajouter olives noires et vertes, câpres, rondelle de citron. Servir avec crème aigre et aneth.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon, détailler saucisse et jambon en lamelles, émincer les cornichons et trancher le citron en rondelles.", badge: null },
+      { icone: "🍖", titre: "Bouillon", detail: "Cuire le bœuf 1h à frémissement avec carotte, oignon et laurier pour un bouillon corsé, puis filtrer et émincer la viande.", badge: null },
+      { icone: "🧅", titre: "Sofrito", detail: "Faire revenir l'oignon avec le concentré de tomate et les cornichons émincés 8 min, clé du goût aigre-doux de la solyanka.", badge: null },
+      { icone: "🥩", titre: "Viandes", detail: "Ajouter saucisse fumée, jambon et bœuf émincé, faire revenir 5 min pour bien saisir et parfumer l'ensemble.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Verser le bouillon filtré et les tomates concassées, puis laisser mijoter 20 min à couvercle entrouvert pour réduire.", badge: null },
+      { icone: "🫒", titre: "Finition", detail: "Ajouter olives noires et vertes, câpres et une rondelle de citron, puis rectifier l'assaisonnement.", badge: null },
+      { icone: "🥄", titre: "Servir", detail: "Servir bien chaud avec une cuillère de smetana (crème aigre) et de l'aneth frais ciselé.", badge: null }
     ]
   },
   tomyumkungspicy: {
@@ -596,11 +633,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Bouillon aromatique", detail: "Porter de l'eau à ébullition avec citronnelle écrasée, galanga en rondelles, feuilles de combava (kaffir lime), piments.", badge: "⏱ 5 min" },
-      { icone: "🦐", titre: "Crevettes", detail: "Décortiquer les crevettes en gardant les têtes pour le bouillon (concentre les saveurs).", badge: null },
-      { icone: "⏰", titre: "Infuser", detail: "Laisser infuser 15 min à feu doux pour que les arômes diffusent. À FEU DOUX strictement — sinon ça brûle vite.", badge: "⏱ 15 min" },
-      { icone: "🍄", titre: "Champignons et crevettes", detail: "Ajouter champignons de paille (ou pleurotes), nuoc mam, sucre. Cuire 3 min puis ajouter les crevettes.", badge: "⏱ 5 min" },
-      { icone: "🍋", titre: "Finition", detail: "Hors du feu, ajouter jus de citron vert et coriandre. Servir bien chaud, brûlant si possible !", badge: null }
+      { icone: "🦐", titre: "Décortiquer", detail: "Décortiquez les crevettes en réservant têtes et carapaces, et mettez la chair de côté au frais.", badge: null },
+      { icone: "🔪", titre: "Aromates", detail: "Écrasez la citronnelle au plat du couteau, taillez le galanga en fines rondelles, froissez les feuilles de kaffir et émincez les piments.", badge: null },
+      { icone: "🍲", titre: "Bouillon", detail: "Portez 1,2 L d'eau à ébullition avec les têtes et carapaces de crevettes, écumez puis filtrez pour obtenir un fond bien parfumé.", badge: null },
+      { icone: "🌿", titre: "Infuser", detail: "Replongez citronnelle, galanga, kaffir et piments dans le bouillon et laissez infuser 15 min à feu doux sans laisser bouillir.", badge: null },
+      { icone: "🍄", titre: "Mijoter", detail: "Ajoutez les champignons, le nuoc-mâm et le sucre, puis laissez cuire 3 min à frémissement pour équilibrer salé et sucré.", badge: null },
+      { icone: "🔥", titre: "Crevettes", detail: "Plongez les crevettes dans le bouillon frémissant et pochez-les 2 à 3 min, juste jusqu'à ce qu'elles deviennent rosées et fermes.", badge: null },
+      { icone: "🍋", titre: "Acidifier", detail: "Hors du feu, versez le jus de citron vert pour réveiller la soupe sans amertume, puis rectifiez l'équilibre piquant-acide-salé.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Servez la Tom Yum Kung brûlante, parsemée de coriandre fraîche, accompagnée d'un bol de riz jasmin.", badge: null }
     ]
   },
   ajiaco: {
@@ -665,11 +705,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Œufs marbrés", detail: "Cuire les œufs 6 min 30. Plonger dans glace. Mariner 1h dans sauce soja + mirin + sucre. Couper en 2. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 1h" },
-      { icone: "🦆", titre: "Canard", detail: "Effilocher du canard confit ou faire cuire des magrets côté peau croustillante à la poêle 6 min.", badge: "⏱ 6 min" },
-      { icone: "🍜", titre: "Bouillon miso", detail: "Faire revenir ail et gingembre 1 min. Ajouter bouillon de volaille + dashi. Délayer miso (rouge ou blanc) à part.", badge: null },
-      { icone: "🥬", titre: "Bok choy", detail: "Blanchir les bok choy 2 min. Cuire les nouilles ramen selon l'emballage (al dente !). ASTUCE PRO : eau bouillante salée 2-3 min puis eau glacée. Arrête la cuisson et garde la couleur vive.", badge: null },
-      { icone: "🍲", titre: "Dresser", detail: "Bol : nouilles, bouillon miso, canard, œuf marbré coupé, bok choy, ciboule, nori, graines de sésame.", badge: null }
+      { icone: "🥚", titre: "Œufs mi-cuits", detail: "Cuisez les œufs 6 min 30 dans l'eau bouillante, plongez-les en eau glacée, écalez puis laissez mariner 1 h dans sauce soja, mirin et sucre.", badge: null },
+      { icone: "🦆", titre: "Canard", detail: "Quadrillez la peau des magrets et saisissez-les côté peau à feu moyen 6 min jusqu'à ce qu'elle soit croustillante, puis 2 min côté chair et laissez reposer.", badge: null },
+      { icone: "🧄", titre: "Aromates", detail: "Faites revenir ail et gingembre émincés 1 min dans un fond d'huile chaude pour parfumer la base du bouillon.", badge: null },
+      { icone: "🍜", titre: "Bouillon miso", detail: "Mouillez avec le bouillon de volaille, portez à frémissement, puis délayez le miso dans une louche de liquide avant de l'incorporer hors gros bouillon.", badge: null },
+      { icone: "🥬", titre: "Bok choy", detail: "Blanchissez les bok choy 2 min à l'eau bouillante salée, puis cuisez les nouilles ramen al dente selon le temps indiqué sur le paquet.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Émincez finement le canard reposé et coupez les œufs marinés en deux pour révéler le cœur coulant.", badge: null },
+      { icone: "🥢", titre: "Dresser", detail: "Disposez les nouilles au fond des bols, versez le bouillon miso brûlant, puis garnissez de canard, œuf, bok choy et ciboule ciselée.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servez aussitôt, parsemé de graines de sésame, pour déguster les nouilles bien chaudes et le bouillon parfumé.", badge: null }
     ]
   },
   kharcho: {
@@ -2684,10 +2727,13 @@ Object.assign(recettes, {
       { nb: 15, feve: "1350 g", ail: "90 g", cumin: "30 g", paprika: "30 g", huileolive: "180 ml", citron: "75 ml" }
     ],
     etapes: [
-      { icone: "💧", titre: "Tremper", detail: "Faire tremper les fèves sèches décortiquées plusieurs heures (ou utiliser des fèves cuites).", badge: "💡 La veille" },
-      { icone: "🍲", titre: "Cuire", detail: "Cuire les fèves avec l'ail dans l'eau salée jusqu'à ce qu'elles se défassent, 25-30 min.", badge: "⏱ 30 min" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer en velouté lisse avec le cumin. Ajouter de l'eau de cuisson pour la texture voulue.", badge: null },
-      { icone: "🫒", titre: "Servir", detail: "Verser dans un bol, arroser d'huile d'olive, saupoudrer de paprika et de cumin, citron à part.", badge: "💡 Avec du pain" }
+      { icone: "💧", titre: "Tremper", detail: "Faites tremper les fèves sèches décortiquées plusieurs heures (idéalement une nuit) pour les réhydrater et raccourcir la cuisson.", badge: null },
+      { icone: "🧄", titre: "Préparer", detail: "Égouttez les fèves et écrasez les gousses d'ail qui parfumeront l'eau de cuisson.", badge: null },
+      { icone: "🍲", titre: "Cuire", detail: "Couvrez les fèves et l'ail d'eau salée, portez à ébullition puis laissez cuire 25 à 30 min à feu moyen jusqu'à ce qu'elles se défassent.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixez les fèves en velouté lisse avec le cumin, en ajoutant de l'eau de cuisson chaude pour obtenir la texture souhaitée.", badge: null },
+      { icone: "🫒", titre: "Lier", detail: "Incorporez un filet d'huile d'olive au mixage et rectifiez le sel pour une crème onctueuse et homogène.", badge: null },
+      { icone: "🥣", titre: "Dresser", detail: "Versez la bessara bien chaude dans des bols, arrosez d'huile d'olive et saupoudrez de paprika et de cumin.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servez avec un quartier de citron à presser et du pain chaud pour saucer généreusement.", badge: null }
     ]
   },
   lablabi: {
@@ -2714,11 +2760,13 @@ Object.assign(recettes, {
       { nb: 15, poischiches: "1350 g", pain: "600 g", ail: "90 g", cumin: "30 g", harissa: "120 g", oeuf: "750 g", huileolive: "150 ml", citron: "75 ml" }
     ],
     etapes: [
-      { icone: "🍲", titre: "Le bouillon", detail: "Réchauffer les pois chiches cuits dans leur eau avec l'ail écrasé, le cumin et le sel, 10 min.", badge: "⏱ 10 min" },
-      { icone: "🥖", titre: "Le pain", detail: "Déchirer du pain rassis au fond des bols.", badge: null },
-      { icone: "🥚", titre: "Pocher l'œuf", detail: "Pocher les œufs directement dans le bouillon frémissant 3 min.", badge: null },
-      { icone: "🍜", titre: "Dresser", detail: "Verser bouillon et pois chiches sur le pain, poser l'œuf dessus.", badge: null },
-      { icone: "🌶️", titre: "Garnir", detail: "Ajouter une cuillère de harissa, un trait d'huile d'olive, du cumin et un filet de citron.", badge: "🌶️ Relevé" }
+      { icone: "🧄", titre: "Bouillon", detail: "Réchauffez les pois chiches cuits dans leur eau avec l'ail écrasé, le cumin et le sel, puis laissez frémir 10 min pour bien infuser.", badge: null },
+      { icone: "🍞", titre: "Pain", detail: "Déchirez du pain rassis en morceaux et répartissez-le au fond des bols de service.", badge: null },
+      { icone: "🌶️", titre: "Harissa", detail: "Délayez une cuillère de harissa avec un peu de bouillon chaud pour préparer une base relevée et parfumée.", badge: null },
+      { icone: "🥚", titre: "Pocher", detail: "Cassez les œufs dans le bouillon frémissant et pochez-les 3 min, le blanc pris et le jaune encore coulant.", badge: null },
+      { icone: "🥣", titre: "Verser", detail: "Versez le bouillon et les pois chiches sur le pain pour qu'il s'imbibe, puis déposez délicatement l'œuf poché dessus.", badge: null },
+      { icone: "🫒", titre: "Garnir", detail: "Ajoutez la harissa délayée, un trait d'huile d'olive, une pincée de cumin et un filet de jus de citron.", badge: null },
+      { icone: "🍴", titre: "Servir", detail: "Servez le lablabi aussitôt, brûlant, et mélangez à table pour casser le jaune dans le bouillon.", badge: null }
     ]
   },
   ajoblanco: {
@@ -2746,11 +2794,13 @@ Object.assign(recettes, {
       { nb: 15, amande: "750 g", pain: "450 g", ail: "60 g", huileolive: "300 ml", vinaigreXeres: "120 ml", raisinsec: "375 g" }
     ],
     etapes: [
-      { icone: "💧", titre: "Tremper", detail: "Faire tremper la mie de pain dans un peu d'eau froide.", badge: null },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer amandes, ail, pain trempé et eau glacée jusqu'à un velouté lisse.", badge: null },
-      { icone: "🫒", titre: "Émulsionner", detail: "Verser l'huile d'olive en filet, moteur en marche, puis le vinaigre et le sel.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Réserver au frais au moins 2 h pour servir bien glacé.", badge: "💡 Très froid" },
-      { icone: "🍇", titre: "Servir", detail: "Servir garni de raisins et d'un filet d'huile d'olive.", badge: null }
+      { icone: "🍞", titre: "Tremper", detail: "Faites tremper la mie de pain dans un peu d'eau froide quelques minutes jusqu'à ce qu'elle soit bien imbibée.", badge: null },
+      { icone: "🥜", titre: "Préparer", detail: "Réunissez les amandes mondées, l'ail dégermé et le pain trempé, puis ajoutez de l'eau bien glacée pour le mixage.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixez longuement amandes, ail et pain avec l'eau glacée jusqu'à obtenir un velouté parfaitement lisse et crémeux.", badge: null },
+      { icone: "🫒", titre: "Émulsionner", detail: "Moteur en marche, versez l'huile d'olive en filet pour émulsionner, puis ajoutez le vinaigre de Xérès et le sel.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Réservez la soupe au frais au moins 2 h afin qu'elle soit servie bien glacée et que les saveurs se fondent.", badge: null },
+      { icone: "🍇", titre: "Garnir", detail: "Au moment de servir, ajustez la texture à l'eau glacée si besoin et garnissez de raisins frais ou secs.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Servez l'ajoblanco très frais, arrosé d'un dernier filet d'huile d'olive et d'un tour de moulin à poivre.", badge: null }
     ]
   },
   soupeauxchoux: {
@@ -2783,10 +2833,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Revenir", detail: "Faire suer l'oignon dans l'huile d'olive.", badge: "⏱ 5 min" },
-      { icone: "🥬", titre: "Ajouter", detail: "Ajouter le chou émincé, les pommes de terre et les carottes en dés.", badge: null },
-      { icone: "💧", titre: "Mijoter", detail: "Couvrir de bouillon et laisser mijoter jusqu'à tendreté. ASTUCE CHEF : blanchis le chou 2 min à l'eau bouillante avant de l'ajouter — il sera plus digeste et moins amer.", badge: "⏱ 30 min" },
-      { icone: "🍲", titre: "Servir", detail: "Rectifier l'assaisonnement et servir bien chaud.", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Émincez le chou, taillez les pommes de terre et les carottes en dés réguliers et hachez l'oignon finement.", badge: null },
+      { icone: "💧", titre: "Blanchir", detail: "Blanchissez le chou 2 min à l'eau bouillante puis égouttez-le pour l'attendrir et le rendre plus digeste et moins amer.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faites suer l'oignon dans l'huile d'olive à feu moyen 4 à 5 min jusqu'à ce qu'il devienne translucide.", badge: null },
+      { icone: "🥕", titre: "Ajouter", detail: "Ajoutez le chou blanchi, les pommes de terre et les carottes, puis remuez 2 min pour les enrober de matière grasse.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Couvrez de bouillon, portez à frémissement et laissez mijoter 30 min à feu doux jusqu'à parfaite tendreté des légumes.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Rectifiez le sel et le poivre, et écrasez quelques pommes de terre contre le bord pour lier légèrement la soupe.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Servez la soupe aux choux bien chaude, accompagnée de pain de campagne grillé.", badge: null }
     ]
   },
   cotriade: {
@@ -2819,10 +2872,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Suer", detail: "Faire suer poireau et oignon dans l'huile.", badge: "⏱ 5 min" },
-      { icone: "🥔", titre: "Bouillon", detail: "Ajouter pommes de terre, carotte, thym et bouillon, cuire jusqu'à tendreté.", badge: "⏱ 20 min" },
-      { icone: "🐟", titre: "Pocher", detail: "Déposer le poisson et le pocher doucement hors gros bouillon. ASTUCE CHEF : ajoute le poisson en dernier et coupe le feu vif — il poche en 5 min et reste moelleux ; trop bouilli, il se défait.", badge: "⏱ 6 min" },
-      { icone: "🍲", titre: "Servir", detail: "Servir le bouillon et le poisson, traditionnellement avec du pain.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincez le poireau et l'oignon, taillez les pommes de terre et la carotte en morceaux, et détaillez le cabillaud en gros cubes.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faites suer le poireau et l'oignon dans l'huile d'olive à feu moyen 5 min sans coloration.", badge: null },
+      { icone: "🥔", titre: "Mouiller", detail: "Ajoutez pommes de terre, carotte et thym, couvrez de bouillon et laissez cuire 20 min jusqu'à tendreté des légumes.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Goûtez le bouillon et rectifiez le sel et le poivre avant d'y déposer le poisson.", badge: null },
+      { icone: "🐟", titre: "Pocher", detail: "Coupez le feu vif, déposez les cubes de cabillaud dans le bouillon frémissant et pochez-les 5 min sans les remuer pour qu'ils restent moelleux.", badge: null },
+      { icone: "🌿", titre: "Reposer", detail: "Laissez reposer 2 min hors du feu pour que les saveurs se mêlent et que le poisson finisse de cuire doucement.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Servez le bouillon et les légumes dans des assiettes creuses, le poisson posé dessus, avec du pain de campagne.", badge: null }
     ]
   },
   veloutethaicrevettes: {
@@ -2854,10 +2910,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Infuser", detail: "Faire infuser citronnelle et gingembre dans le bouillon chaud.", badge: "⏱ 8 min" },
-      { icone: "🥥", titre: "Lier", detail: "Ajouter le lait de coco et la carotte, mixer en velouté lisse.", badge: null },
-      { icone: "🦐", titre: "Crevettes", detail: "Pocher les crevettes dans le velouté quelques minutes. ASTUCE CHEF : ne fais pas bouillir le lait de coco — à gros bouillons il tranche ; un frémissement suffit.", badge: "⏱ 4 min" },
-      { icone: "🍋", titre: "Finir", detail: "Réveiller au citron vert et parsemer de coriandre.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Écrasez la citronnelle, taillez le gingembre en fines lamelles, râpez la carotte et décortiquez les crevettes.", badge: null },
+      { icone: "🍲", titre: "Infuser", detail: "Portez le bouillon à frémissement avec la citronnelle et le gingembre, et laissez infuser 10 min pour libérer les arômes.", badge: null },
+      { icone: "🥥", titre: "Lier", detail: "Retirez les aromates, ajoutez le lait de coco et la carotte, puis laissez cuire 8 min à feu doux sans faire bouillir.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixez le tout en velouté lisse et soyeux, puis remettez sur feu très doux pour le maintenir au chaud.", badge: null },
+      { icone: "🦐", titre: "Pocher", detail: "Plongez les crevettes dans le velouté frémissant et pochez-les 3 min jusqu'à ce qu'elles soient rosées et fermes.", badge: null },
+      { icone: "🍋", titre: "Acidifier", detail: "Hors du feu, réveillez le velouté avec le jus de citron vert et rectifiez l'assaisonnement.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Servez le velouté thaï bien chaud, parsemé de coriandre fraîche ciselée.", badge: null }
     ]
   },
   veloutefenouilmascarpone: {
@@ -2890,9 +2949,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Suer", detail: "Faire suer oignon et fenouil émincés dans l'huile.", badge: "⏱ 6 min" },
-      { icone: "💧", titre: "Mijoter", detail: "Couvrir de bouillon et cuire jusqu'à tendreté.", badge: "⏱ 18 min" },
-      { icone: "🥛", titre: "Lier", detail: "Mixer avec le mascarpone en velouté lisse. ASTUCE CHEF : garde quelques pluches de fenouil crues pour le dressage — elles rappellent le goût et apportent du croquant.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincez finement l'oignon et le fenouil en réservant quelques pluches vertes pour la finition.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faites suer l'oignon et le fenouil dans l'huile d'olive à feu moyen 6 à 7 min sans coloration pour adoucir leur saveur.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Couvrez de bouillon, portez à frémissement et laissez cuire 15 min à feu doux jusqu'à ce que le fenouil soit fondant.", badge: null },
+      { icone: "🧀", titre: "Lier", detail: "Ajoutez le mascarpone et mixez longuement en velouté lisse et nappant.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Rectifiez le sel et le poivre, et détendez à l'eau chaude ou au bouillon si la texture est trop épaisse.", badge: null },
+      { icone: "🌿", titre: "Dresser", detail: "Versez le velouté dans des bols et parsemez des pluches de fenouil crues pour le croquant et le parfum.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Servez bien chaud, avec un filet d'huile d'olive et un tour de moulin à poivre.", badge: null }
     ]
   },
   veloutepoireau: {
@@ -2925,10 +2988,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Suer", detail: "Faire suer le poireau émincé.", badge: "⏱ 6 min" },
-      { icone: "💧", titre: "Mijoter", detail: "Ajouter pomme de terre et bouillon, cuire et mixer avec la crème.", badge: "⏱ 20 min" },
-      { icone: "🍪", titre: "Sablés", detail: "Sabler farine, beurre et parmesan, cuire de petits sablés. ASTUCE CHEF : garde le beurre froid pour les sablés — ils restent friables et croustillants, parfaits à tremper.", badge: "⏱ 12 min" },
-      { icone: "🍲", titre: "Servir", detail: "Servir le velouté avec les sablés à part.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincez le poireau finement et taillez la pomme de terre en dés pour une cuisson rapide et homogène.", badge: null },
+      { icone: "🧈", titre: "Suer", detail: "Faites suer le poireau dans une noix de beurre à feu doux 6 min jusqu'à ce qu'il fonde sans colorer.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Ajoutez la pomme de terre et le bouillon, puis laissez cuire 20 min à frémissement jusqu'à parfaite tendreté.", badge: null },
+      { icone: "🥧", titre: "Sablés", detail: "Sablez la farine avec le beurre froid et le parmesan, formez de petits sablés et enfournez-les 12 min à 180°C jusqu'à dorure.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixez le velouté avec la crème jusqu'à obtenir une texture lisse et soyeuse.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Rectifiez le sel et le poivre, et ajustez la consistance avec un peu de bouillon si nécessaire.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Servez le velouté de poireau bien chaud, accompagné des petits sablés au parmesan à tremper.", badge: null }
     ]
   },
   bouillonthaicitronnelle: {
@@ -2960,9 +3026,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Infuser", detail: "Infuser citronnelle et gingembre dans le bouillon chaud.", badge: "⏱ 8 min" },
-      { icone: "🍄", titre: "Champignons", detail: "Ajouter les shiitakés émincés et le lait de coco. ASTUCE CHEF : ne fais que frémir après le lait de coco — bouilli, il tranche et le bouillon devient gras au lieu de soyeux.", badge: "⏱ 6 min" },
-      { icone: "🍋", titre: "Finir", detail: "Réveiller au citron vert et à la coriandre.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Écraser les tiges de citronnelle au dos du couteau, peler et trancher le gingembre en fines lamelles, et émincer les shiitakés en lamelles de 5 mm.", badge: null },
+      { icone: "🌿", titre: "Infuser", detail: "Porter le bouillon à ébullition puis y plonger citronnelle et gingembre, baisser à feu doux et laisser infuser 8 à 10 min pour parfumer le liquide.", badge: null },
+      { icone: "🍄", titre: "Champignons", detail: "Ajouter les shiitakés émincés dans le bouillon frémissant et laisser cuire 5 à 6 min jusqu'à ce qu'ils soient tendres.", badge: null },
+      { icone: "🥥", titre: "Lait de coco", detail: "Verser le lait de coco et maintenir à frémissement très doux sans jamais bouillir, sinon il tranche et le bouillon devient gras au lieu de soyeux.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Goûter et ajuster avec un peu de sel ou de sauce soja, puis retirer les tiges de citronnelle infusées avant de servir.", badge: null },
+      { icone: "🍋", titre: "Réveiller", detail: "Hors du feu, presser le jus de citron vert et ajouter la coriandre ciselée pour apporter fraîcheur et acidité.", badge: null },
+      { icone: "🍜", titre: "Servir", detail: "Répartir le bouillon brûlant dans des bols, décorer de quelques feuilles de coriandre et déguster aussitôt bien chaud.", badge: null }
     ]
   },
   ashreshteh: {
@@ -2993,9 +3063,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Légumineuses", detail: "Cuire lentilles et haricots.", badge: null },
-      { icone: "🌿", titre: "Herbes", detail: "Ajouter épinards, persil et oignon revenu.", badge: null },
-      { icone: "🍜", titre: "Nouilles", detail: "Ajouter les nouilles, mijoter jusqu'à épaississement.", badge: null }
+      { icone: "🫘", titre: "Tremper", detail: "Rincer lentilles et haricots rouges, puis cuire les haricots préalablement trempés et les lentilles dans une grande casserole d'eau salée.", badge: null },
+      { icone: "🔥", titre: "Mijoter", detail: "Porter à ébullition puis laisser mijoter à feu doux 25 à 30 min jusqu'à ce que les légumineuses soient tendres mais entières.", badge: null },
+      { icone: "🧅", titre: "Oignon", detail: "Pendant ce temps, faire revenir l'oignon émincé dans un peu d'huile à feu moyen 8 à 10 min jusqu'à belle coloration dorée.", badge: null },
+      { icone: "🌿", titre: "Verdure", detail: "Incorporer les épinards et le persil ciselés dans la marmite et laisser fondre 5 min en remuant.", badge: null },
+      { icone: "🍝", titre: "Nouilles", detail: "Ajouter les pâtes (reshteh) et laisser cuire 8 à 10 min en remuant pour qu'elles épaississent légèrement le bouillon.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Rectifier le sel et le poivre, ajouter la moitié de l'oignon doré et laisser reposer hors du feu 5 min pour que les saveurs se lient.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Verser dans des bols et garnir du reste d'oignon doré et croustillant, servir bien chaud.", badge: null }
     ]
   },
   sinigang: {
@@ -3026,9 +3100,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Bouillon", detail: "Cuire le porc en bouillon avec l'oignon.", badge: null },
-      { icone: "🍋", titre: "Acidité", detail: "Ajouter tomate et jus de citron.", badge: null },
-      { icone: "🥬", titre: "Légumes", detail: "Ajouter navet et épinards, cuire 10 min.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper le porc en gros morceaux, émincer l'oignon, couper les tomates en quartiers et détailler le navet en cubes.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Faire revenir l'oignon dans un peu d'huile à feu moyen, ajouter le porc et le colorer légèrement sur toutes les faces 5 min.", badge: null },
+      { icone: "💧", titre: "Bouillon", detail: "Couvrir d'eau, porter à ébullition, écumer puis laisser mijoter à feu doux 25 min jusqu'à ce que le porc soit tendre.", badge: null },
+      { icone: "🍅", titre: "Acidifier", detail: "Ajouter les tomates et le jus de citron pour donner la note acidulée caractéristique, puis poursuivre la cuisson 5 min.", badge: null },
+      { icone: "🥬", titre: "Légumes", detail: "Incorporer les cubes de navet et laisser cuire 8 min, puis ajouter les épinards en fin de cuisson pour qu'ils restent verts.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et ajuster l'acidité avec un peu plus de jus de citron selon le goût.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir le sinigang fumant dans des bols accompagné de riz blanc nature à côté.", badge: null }
     ]
   },
   sopanegra: {
@@ -3059,9 +3137,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫘", titre: "Base", detail: "Mijoter les haricots avec oignon, poivron et ail.", badge: null },
-      { icone: "🥚", titre: "Œuf", detail: "Pocher un œuf dans la soupe.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Parsemer de coriandre.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon, hacher l'ail, couper le poivron en petits dés et rincer les haricots rouges.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire revenir l'oignon, l'ail et le poivron dans un filet d'huile à feu moyen 6 à 8 min jusqu'à ce qu'ils soient fondants.", badge: null },
+      { icone: "🫘", titre: "Mijoter", detail: "Ajouter les haricots rouges et de l'eau à hauteur, porter à ébullition puis laisser mijoter à feu doux 20 min.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Mixer une partie de la soupe et la reverser dans la marmite pour obtenir une texture épaisse et veloutée.", badge: null },
+      { icone: "🍳", titre: "Pocher", detail: "Casser délicatement les œufs un à un dans la soupe frémissante et les laisser pocher 4 à 5 min, blanc pris et jaune coulant.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler et poivrer le bouillon, goûter et rectifier l'assaisonnement avant le service.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer généreusement de coriandre fraîche ciselée et servir aussitôt bien chaud.", badge: null }
     ]
   },
   kapustnica: {
@@ -3092,9 +3174,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Base", detail: "Mijoter le chou avec l'oignon et le paprika.", badge: null },
-      { icone: "🌭", titre: "Saucisse", detail: "Ajouter saucisse fumée et pomme de terre.", badge: null },
-      { icone: "🥄", titre: "Finir", detail: "Mijoter 35 min, ajouter une touche de crème.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer l'oignon, couper le chou en lanières, peler et détailler les pommes de terre en cubes, et trancher les saucisses fumées en rondelles.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire revenir l'oignon dans un peu de graisse à feu moyen 5 min, ajouter le paprika hors du feu pour éviter qu'il ne brûle et n'amertume.", badge: null },
+      { icone: "🥬", titre: "Chou", detail: "Ajouter le chou (idéalement de la choucroute), couvrir d'eau et porter à ébullition puis laisser mijoter à feu doux 20 min.", badge: null },
+      { icone: "🥔", titre: "Garnir", detail: "Incorporer les pommes de terre et les rondelles de saucisse fumée, puis poursuivre le mijotage 20 min jusqu'à ce que tout soit tendre.", badge: null },
+      { icone: "🔥", titre: "Mijoter", detail: "Maintenir un feu doux et laisser les saveurs se concentrer encore 10 min pour un bouillon riche et fumé.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et ajuster l'acidité, puis incorporer une touche de crème hors du feu pour adoucir la soupe.", badge: null },
+      { icone: "🍲", titre: "Servir", detail: "Servir la kapustnica bien chaude avec un trait de crème supplémentaire et du pain de campagne.", badge: null }
     ]
   }
 });

@@ -29,11 +29,13 @@ Object.assign(recettes, {
       { nb: 15, mangue: "1200 g", ananas: "1050 g", kiwi: "750 g", banane: "750 g", passion: "225 g", citronvert: "120 g", miel: "90 g", menthe: "30 g" }
     ],
     etapes: [
-      { icone: "🔪", titre: "Préparer les fruits", detail: "Éplucher mangue, ananas, kiwi et banane. Couper en cubes réguliers.", badge: "⏱ 12 min" },
-      { icone: "🥄", titre: "Récupérer la passion", detail: "Couper les fruits de la passion en deux et récupérer la pulpe à la cuillère.", badge: null },
-      { icone: "🍯", titre: "Sirop express", detail: "Mélanger le jus de citron vert et le miel jusqu'à dissolution.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Verser le sirop sur les fruits, ajouter la pulpe de passion, mélanger délicatement.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Parsemer de menthe ciselée. Réserver 30 min au frais avant de servir.", badge: "💡 Frais" }
+      { icone: "🥭", titre: "Éplucher", detail: "Épluchez la mangue, l'ananas, le kiwi et la banane en retirant soigneusement les parties dures et le cœur fibreux de l'ananas.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Détaillez tous les fruits en cubes réguliers d'environ 1,5 cm pour une présentation harmonieuse et une bouchée équilibrée.", badge: null },
+      { icone: "🥄", titre: "Récupérer", detail: "Coupez les fruits de la passion en deux et récupérez la pulpe et les graines à la cuillère dans un bol à part.", badge: null },
+      { icone: "🍯", titre: "Sirop", detail: "Pressez le citron vert et mélangez son jus avec le miel jusqu'à dissolution complète pour obtenir un sirop léger et acidulé.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Versez le sirop sur les fruits en cubes, ajoutez la pulpe de passion et mélangez délicatement pour bien enrober sans écraser.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Ciselez finement la menthe fraîche et parsemez-en la salade pour apporter de la fraîcheur et un parfum herbacé.", badge: null },
+      { icone: "❄️", titre: "Servir", detail: "Réservez la salade au moins 30 minutes au frais avant de servir, le temps que les fruits s'imprègnent du sirop, et dégustez bien frais.", badge: null }
     ]
   },
   ananasroti: {
@@ -61,11 +63,13 @@ Object.assign(recettes, {
       { nb: 15, ananas: "2250 g", miel: "225 g", beurre: "120 g", rhum: "75 ml", cannelle: "15 g", vanille: "15 g" }
     ],
     etapes: [
-      { icone: "🍍", titre: "Tailler l'ananas", detail: "Éplucher l'ananas et le couper en tranches ou en gros cubes.", badge: "⏱ 8 min" },
-      { icone: "🧈", titre: "Caraméliser", detail: "Faire fondre beurre et miel dans une poêle, y dorer l'ananas 3 min par face.", badge: "⏱ 8 min" },
-      { icone: "🥃", titre: "Parfumer", detail: "Ajouter cannelle et vanille, déglacer au rhum.", badge: null },
-      { icone: "🍯", titre: "Napper", detail: "Laisser le jus réduire en caramel nappant, arroser l'ananas.", badge: null },
-      { icone: "🍨", titre: "Servir", detail: "Servir tiède, éventuellement avec une boule de glace vanille.", badge: "💡 Tiède" }
+      { icone: "🍍", titre: "Préparer ananas", detail: "Éplucher l'ananas, retirer les yeux et le cœur dur, puis le couper en tranches de 2 cm ou en gros cubes réguliers.", badge: null },
+      { icone: "🌿", titre: "Préparer arômes", detail: "Gratter une gousse de vanille pour en récupérer les graines et préparer la cannelle et le rhum à portée de main.", badge: null },
+      { icone: "🧈", titre: "Faire le caramel", detail: "Dans une poêle large à feu moyen, faire fondre le beurre puis ajouter le miel et la vanille jusqu'à obtenir un caramel blond léger.", badge: null },
+      { icone: "🔥", titre: "Dorer l'ananas", detail: "Déposer les morceaux d'ananas et les faire colorer environ 3 min par face à feu moyen-vif, jusqu'à belle caramélisation.", badge: null },
+      { icone: "🥃", titre: "Flamber", detail: "Saupoudrer de cannelle, verser le rhum hors du feu puis flamber ou laisser l'alcool s'évaporer 1 min.", badge: null },
+      { icone: "💧", titre: "Réduire", detail: "Remettre sur feu doux et laisser le jus réduire 2 à 3 min jusqu'à une texture sirupeuse et nappante.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Dresser l'ananas tiède, l'arroser du caramel et accompagner d'une boule de glace vanille.", badge: null }
     ]
   },
   verrinefraisechantilly: {
@@ -93,10 +97,13 @@ Object.assign(recettes, {
       { nb: 15, fraise: "1500 g", creme: "600 ml", mascarpone: "450 g", sucre: "225 g", menthe: "15 g" }
     ],
     etapes: [
-      { icone: "🍓", titre: "Préparer les fraises", detail: "Laver, équeuter et couper les fraises en morceaux. En réserver pour le décor.", badge: "⏱ 8 min" },
-      { icone: "🥣", titre: "Monter la chantilly", detail: "Fouetter la crème très froide avec le mascarpone et le sucre jusqu'à une chantilly ferme.", badge: null },
-      { icone: "🥄", titre: "Dresser", detail: "Alterner fraises et chantilly dans les verrines.", badge: null },
-      { icone: "🌿", titre: "Décorer", detail: "Terminer par une fraise et une feuille de menthe. Réserver au frais.", badge: "💡 Frais" }
+      { icone: "🍓", titre: "Préparer fraises", detail: "Laver, équeuter et couper les fraises en petits morceaux, en réservant quelques belles pièces entières pour le décor.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Placer le saladier, le fouet, la crème et le mascarpone 10 min au congélateur pour réussir une chantilly bien ferme.", badge: null },
+      { icone: "🥄", titre: "Fouetter", detail: "Fouetter la crème très froide avec le mascarpone et le sucre, en accélérant peu à peu jusqu'à une chantilly ferme et lisse.", badge: null },
+      { icone: "🥃", titre: "Garnir", detail: "Déposer une couche de fraises au fond des verrines, puis recouvrir d'une couche généreuse de chantilly à la poche.", badge: null },
+      { icone: "🔁", titre: "Alterner", detail: "Répéter l'opération en alternant fraises et chantilly jusqu'en haut des verrines pour un bel effet de couches.", badge: null },
+      { icone: "❄️", titre: "Réserver", detail: "Filmer et placer au frais au moins 30 min pour que la chantilly se raffermisse et que les saveurs se mêlent.", badge: null },
+      { icone: "🌿", titre: "Décorer", detail: "Au moment de servir, couronner d'une fraise entière et d'une feuille de menthe fraîche.", badge: null }
     ]
   },
   buchenoelchocolat: {
@@ -4979,10 +4986,12 @@ Object.assign(recettes, {
       { nb: 10, bananes: "1300 g", lait: "150 ml", vanille: "10 g" }
     ],
     etapes: [
-      { icone: "🍌", titre: "Congeler les bananes", detail: "Éplucher des bananes bien mûres, les couper en rondelles et les congeler au moins 3 h.", badge: "⏱ 3 h" },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer les rondelles congelées avec un filet de lait, en raclant les bords, jusqu'à une texture crémeuse.", badge: "⏱ 3 min" },
-      { icone: "✨", titre: "Parfumer", detail: "Ajouter la vanille (ou cacao, beurre de cacahuète, fruits rouges selon l'envie).", badge: null },
-      { icone: "🍨", titre: "Servir", detail: "Déguster aussitôt en texture soft, ou placer 1 h au congélateur pour une glace plus ferme.", badge: null }
+      { icone: "🍌", titre: "Trancher", detail: "Éplucher des bananes bien mûres et tachetées, puis les couper en fines rondelles régulières.", badge: null },
+      { icone: "❄️", titre: "Congeler", detail: "Étaler les rondelles à plat sur une plaque et les congeler au moins 3 h jusqu'à ce qu'elles soient dures.", badge: null },
+      { icone: "⚙️", titre: "Mixer", detail: "Mixer les rondelles congelées par à-coups avec un filet de lait, en raclant régulièrement les bords du bol.", badge: null },
+      { icone: "🍦", titre: "Crémer", detail: "Poursuivre jusqu'à obtenir une texture lisse, dense et crémeuse, sans morceaux, comme une glace soft.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Incorporer la vanille et mixer un dernier coup pour bien répartir l'arôme dans la préparation.", badge: null },
+      { icone: "🥄", titre: "Servir aussitôt", detail: "Déguster immédiatement en texture moelleuse, ou réserver 1 h au congélateur pour une glace plus ferme à la cuillère.", badge: null }
     ]
   },
   esquimauxfraise: {
@@ -5006,11 +5015,13 @@ Object.assign(recettes, {
       { nb: 12, fraises: "480 g", yaourt: "300 g", miel: "60 g" }
     ],
     etapes: [
-      { icone: "🍓", titre: "Mixer les fraises", detail: "Équeuter et mixer les fraises en coulis (garder quelques morceaux pour la texture si on aime).", badge: null },
-      { icone: "🥄", titre: "Mélanger", detail: "Mélanger le coulis de fraises, le yaourt et le miel.", badge: null },
-      { icone: "🧊", titre: "Mouler", detail: "Verser dans des moules à esquimaux et planter les bâtonnets.", badge: null },
-      { icone: "❄️", titre: "Congeler", detail: "Congeler au moins 4 h, idéalement une nuit.", badge: "⏱ 4 h" },
-      { icone: "🍦", titre: "Démouler", detail: "Passer rapidement les moules sous l'eau tiède pour démouler facilement.", badge: null }
+      { icone: "🍓", titre: "Préparer fraises", detail: "Laver et équeuter les fraises, en réserver quelques-unes coupées en petits dés pour la texture.", badge: null },
+      { icone: "⚙️", titre: "Mixer", detail: "Mixer le reste des fraises en coulis lisse, puis ajouter une partie des dés réservés selon l'envie.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Fouetter le coulis avec le yaourt et le miel jusqu'à obtenir un mélange homogène et bien lié.", badge: null },
+      { icone: "🫗", titre: "Mouler", detail: "Verser la préparation dans les moules à esquimaux en tapotant pour chasser les bulles d'air.", badge: null },
+      { icone: "🥢", titre: "Planter", detail: "Insérer les bâtonnets bien droits au centre de chaque moule.", badge: null },
+      { icone: "❄️", titre: "Congeler", detail: "Placer au congélateur au moins 4 h, idéalement toute une nuit, jusqu'à prise complète.", badge: null },
+      { icone: "💧", titre: "Démouler", detail: "Passer rapidement les moules sous l'eau tiède pour démouler facilement et servir aussitôt.", badge: null }
     ]
   },
   tarteabricots: {
@@ -5068,11 +5079,12 @@ Object.assign(recettes, {
       { nb: 12, ananas: "720 g", peche: "600 g", fraises: "480 g", banane: "480 g", miel: "60 g", citronvert: "60 g", menthe: "12 g" }
     ],
     etapes: [
-      { icone: "🔪", titre: "Couper les fruits", detail: "Couper en gros morceaux des fruits fermes : ananas, pêche, fraises, banane peu mûre…", badge: null },
-      { icone: "🍢", titre: "Embrocher", detail: "Alterner les fruits sur des piques (en bois, préalablement trempées dans l'eau).", badge: null },
-      { icone: "🍯", titre: "Glacer", detail: "Badigeonner d'un mélange miel + jus de citron vert.", badge: null },
-      { icone: "🔥", titre: "Griller", detail: "Cuire 2-3 min de chaque côté sur un gril chaud (barbecue ou plancha), jusqu'à de belles marques caramélisées.", badge: "⏱ 6 min" },
-      { icone: "🌿", titre: "Servir", detail: "Parsemer de menthe ciselée et servir tiède, éventuellement avec une boule de glace vanille ou un yaourt.", badge: null }
+      { icone: "🔪", titre: "Couper fruits", detail: "Couper en gros morceaux réguliers l'ananas, la pêche et la banane peu mûre, et garder les fraises entières si elles sont petites.", badge: null },
+      { icone: "💧", titre: "Tremper piques", detail: "Faire tremper les piques en bois 10 min dans l'eau pour éviter qu'elles ne brûlent au gril.", badge: null },
+      { icone: "🍢", titre: "Embrocher", detail: "Enfiler les fruits sur les piques en alternant les couleurs pour des brochettes appétissantes et équilibrées.", badge: null },
+      { icone: "🍯", titre: "Glacer", detail: "Mélanger le miel et le jus de citron vert, puis badigeonner généreusement les brochettes au pinceau.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Cuire 2 à 3 min de chaque côté sur un gril ou une plancha bien chaude, jusqu'à de belles marques caramélisées.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de menthe ciselée et d'un zeste de citron vert, puis servir tiède avec un yaourt ou une glace vanille.", badge: null }
     ]
   },
   chebakia: {
@@ -5099,11 +5111,13 @@ Object.assign(recettes, {
       { nb: 15, farine: "675 g", beurre: "150 g", oeuf: "180 g", miel: "525 g", sesame: "180 g", sucre: "120 g", anis: "15 g", cannelle: "15 g" }
     ],
     etapes: [
-      { icone: "🥣", titre: "La pâte", detail: "Mélanger farine, beurre fondu, œuf, sésame moulu, anis et cannelle. Pétrir une pâte souple, laisser reposer 30 min.", badge: "⏱ 30 min" },
-      { icone: "🌸", titre: "Former les fleurs", detail: "Étaler finement, découper des rectangles entaillés, puis pincer et retourner pour former la rosace.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire dans l'huile chaude jusqu'à ce qu'elles soient dorées et croustillantes. Égoutter.", badge: null },
-      { icone: "🍯", titre: "Tremper dans le miel", detail: "Plonger aussitôt les chebakias dans le miel chaud parfumé, laisser s'imbiber 2 min.", badge: null },
-      { icone: "✨", titre: "Sésame", detail: "Égoutter, rouler dans le sésame grillé et laisser sécher sur une grille.", badge: "💡 Se garde 2 sem." }
+      { icone: "🥣", titre: "Faire la pâte", detail: "Mélanger la farine, le beurre fondu, l'œuf, le sésame moulu, l'anis et la cannelle, puis pétrir une pâte souple et homogène.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Couvrir la pâte d'un linge et la laisser reposer 30 min à température ambiante pour la détendre.", badge: null },
+      { icone: "🌸", titre: "Former rosaces", detail: "Étaler la pâte très finement, découper des rectangles entaillés au milieu, puis pincer et retourner pour former les fleurs.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Plonger les rosaces dans l'huile à 170°C et frire jusqu'à ce qu'elles soient dorées et croustillantes, puis égoutter.", badge: null },
+      { icone: "🍯", titre: "Tremper miel", detail: "Plonger aussitôt les chebakias dans le miel chaud parfumé et les laisser s'imbiber 2 min.", badge: null },
+      { icone: "🌰", titre: "Enrober sésame", detail: "Égoutter l'excédent de miel puis rouler les pâtisseries dans le sésame grillé.", badge: null },
+      { icone: "🍽️", titre: "Sécher", detail: "Disposer sur une grille et laisser sécher avant de servir avec un thé à la menthe.", badge: null }
     ]
   },
   galaktoboureko: {
@@ -5130,11 +5144,13 @@ Object.assign(recettes, {
       { nb: 15, filo: "375 g", semoule: "375 g", lait: "1800 ml", sucre: "450 g", oeuf: "375 g", beurre: "300 g", citron: "75 ml", miel: "270 g" }
     ],
     etapes: [
-      { icone: "🥛", titre: "La crème", detail: "Chauffer le lait, verser la semoule en pluie et cuire en crème épaisse. Hors du feu, ajouter œufs, sucre et zeste.", badge: null },
-      { icone: "🧈", titre: "Le filo", detail: "Beurrer les feuilles de filo une à une et en tapisser un plat, en laissant déborder.", badge: null },
-      { icone: "🥧", titre: "Garnir", detail: "Verser la crème, replier le filo dessus et beurrer la surface.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C 40 min jusqu'à ce que le dessus soit doré et croustillant.", badge: "🔥 180°C" },
-      { icone: "🍯", titre: "Sirop", detail: "Arroser le gâteau chaud de sirop citronné froid (sucre, miel, citron) et laisser imbiber.", badge: "💡 Sirop froid" }
+      { icone: "🥛", titre: "Cuire la crème", detail: "Chauffer le lait avec le sucre, verser la semoule en pluie et cuire en remuant jusqu'à une crème épaisse.", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Hors du feu, incorporer les œufs et le zeste de citron en fouettant vivement pour une crème lisse et brillante.", badge: null },
+      { icone: "🧈", titre: "Monter le filo", detail: "Beurrer une à une les feuilles de filo et en tapisser le plat en les laissant déborder sur les bords.", badge: null },
+      { icone: "🫗", titre: "Garnir", detail: "Verser la crème sur le filo, rabattre les feuilles débordantes par-dessus puis beurrer toute la surface.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfourner à 180°C pendant 40 min jusqu'à ce que le dessus soit doré et bien croustillant.", badge: null },
+      { icone: "🍋", titre: "Préparer sirop", detail: "Pendant ce temps, cuire un sirop de sucre, miel et citron, puis le laisser refroidir complètement.", badge: null },
+      { icone: "💧", titre: "Imbiber", detail: "Arroser le gâteau chaud du sirop froid et laisser absorber 1 h avant de découper en parts.", badge: null }
     ]
   },
   kouglof: {
@@ -5166,10 +5182,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍇", titre: "Macérer", detail: "Faire macérer les raisins secs dans un peu d'eau tiède (ou de rhum).", badge: "⏱ 30 min" },
-      { icone: "🥣", titre: "Pétrir", detail: "Pétrir farine, levure, lait, œufs, sucre et sel, puis incorporer le beurre mou.", badge: "⏱ 15 min" },
-      { icone: "⏳", titre: "Pousser", detail: "Laisser doubler de volume, dégazer, ajouter les raisins. ASTUCE CHEF : beurre le moule et dépose une amande dans chaque cannelure avant de verser la pâte — elles décoreront le dessus démoulé.", badge: "⏱ 1 h 30" },
-      { icone: "🔥", titre: "Cuire", detail: "Verser dans le moule, laisser pousser encore, cuire à 180°C puis poudrer de sucre glace.", badge: "⏱ 40 min" }
+      { icone: "🍇", titre: "Macérer raisins", detail: "Faire tremper les raisins secs dans un peu d'eau tiède ou de rhum pendant 30 min pour les gonfler.", badge: null },
+      { icone: "🥣", titre: "Pétrir", detail: "Pétrir la farine, la levure, le lait tiède, les œufs, le sucre et le sel jusqu'à une pâte souple et élastique.", badge: null },
+      { icone: "🧈", titre: "Beurrer", detail: "Incorporer le beurre mou en pétrissant longuement jusqu'à ce que la pâte devienne lisse et se détache du bol.", badge: null },
+      { icone: "⏲️", titre: "Première pousse", detail: "Couvrir et laisser doubler de volume 1 h 30 dans un endroit tiède, puis dégazer et ajouter les raisins égouttés.", badge: null },
+      { icone: "🥜", titre: "Garnir moule", detail: "Beurrer le moule à kouglof et déposer une amande dans chaque cannelure avant de verser la pâte.", badge: null },
+      { icone: "⬆️", titre: "Seconde pousse", detail: "Laisser la pâte remonter presque au bord du moule, environ 1 h, dans un endroit tiède.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfourner à 180°C pendant 40 à 45 min, démouler tiède puis saupoudrer généreusement de sucre glace.", badge: null }
     ]
   },
   tarteausucre: {
@@ -5201,10 +5220,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte levée", detail: "Pétrir farine, levure, lait, œuf, beurre et sel en pâte briochée, laisser pousser.", badge: "⏱ 1 h" },
-      { icone: "🫓", titre: "Foncer", detail: "Étaler la pâte dans un moule et faire des trous avec le doigt.", badge: null },
-      { icone: "🍯", titre: "Garnir", detail: "Répartir la cassonade dans les trous, verser la crème dessus. ASTUCE CHEF : les trous au doigt retiennent la crème et la cassonade pour créer des puits fondants et caramélisés.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire à 200°C jusqu'à ce que le dessus caramélise.", badge: "⏱ 20 min" }
+      { icone: "🥣", titre: "Pétrir pâte", detail: "Pétrir la farine, la levure, le lait tiède, l'œuf, le beurre et le sel jusqu'à une pâte briochée souple.", badge: null },
+      { icone: "⏲️", titre: "Pousser", detail: "Couvrir et laisser doubler de volume environ 1 h dans un endroit tiède à l'abri des courants d'air.", badge: null },
+      { icone: "🫓", titre: "Foncer", detail: "Étaler la pâte dans un moule beurré et la laisser repousser 30 min pour qu'elle gonfle légèrement.", badge: null },
+      { icone: "👆", titre: "Faire des puits", detail: "Creuser des trous réguliers dans la pâte avec le bout du doigt pour retenir la garniture.", badge: null },
+      { icone: "🍬", titre: "Garnir", detail: "Répartir la cassonade dans les puits puis verser la crème par-dessus pour créer des fondants caramélisés.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfourner à 200°C pendant 20 à 25 min jusqu'à ce que le dessus caramélise joliment.", badge: null },
+      { icone: "🍰", titre: "Servir", detail: "Laisser tiédir puis déguster la tarte au sucre encore moelleuse, idéale avec un café.", badge: null }
     ]
   },
   quatrequarts: {
@@ -5236,10 +5258,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧈", titre: "Crémer", detail: "Battre le beurre mou avec le sucre jusqu'à blanchiment.", badge: "⏱ 4 min" },
-      { icone: "🥚", titre: "Œufs", detail: "Incorporer les œufs un à un en fouettant bien.", badge: null },
-      { icone: "🌾", titre: "Farine", detail: "Ajouter farine, levure et sel délicatement. ASTUCE CHEF : sépare les blancs et monte-les en neige pour les incorporer à la fin — le quatre-quarts en sort bien plus aérien.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Verser dans un moule à cake et cuire à 170°C.", badge: "⏱ 40 min" }
+      { icone: "🥚", titre: "Séparer œufs", detail: "Séparer les blancs des jaunes et sortir le beurre à l'avance pour qu'il soit bien mou.", badge: null },
+      { icone: "🧈", titre: "Crémer", detail: "Battre le beurre mou avec le sucre jusqu'à obtenir un mélange pâle, léger et mousseux.", badge: null },
+      { icone: "🥄", titre: "Incorporer jaunes", detail: "Ajouter les jaunes d'œufs un à un en fouettant bien entre chaque pour une pâte homogène.", badge: null },
+      { icone: "🌾", titre: "Ajouter farine", detail: "Incorporer délicatement la farine, la levure et le sel sans trop travailler la pâte.", badge: null },
+      { icone: "☁️", titre: "Monter les blancs", detail: "Monter les blancs en neige ferme puis les incorporer délicatement à la maryse pour un gâteau aérien.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Verser dans un moule à cake beurré et cuire à 170°C pendant 45 min jusqu'à ce qu'une lame ressorte sèche.", badge: null },
+      { icone: "🍰", titre: "Démouler", detail: "Laisser tiédir 10 min avant de démouler et de laisser refroidir sur une grille.", badge: null }
     ]
   },
   gateausavoie: {
@@ -5271,11 +5296,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Séparer", detail: "Séparer les blancs des jaunes.", badge: null },
-      { icone: "🍶", titre: "Blanchir", detail: "Fouetter les jaunes avec le sucre et la vanille jusqu'à ce que le mélange blanchisse et triple de volume.", badge: "⏱ 5 min" },
-      { icone: "🌾", titre: "Farines", detail: "Incorporer délicatement la farine et la maïzena tamisées.", badge: null },
-      { icone: "☁️", titre: "Monter", detail: "Monter les blancs en neige ferme avec le sel, les incorporer en soulevant la masse. ASTUCE CHEF : beurre puis sucre le moule (au lieu de fariner) — la croûte sera fine, caramélisée, et le gâteau se démoule tout seul.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Verser dans un moule à cheminée et cuire à 160°C sans ouvrir le four.", badge: "⏱ 35 min" }
+      { icone: "🧈", titre: "Préparer le moule", detail: "Beurrer généreusement un moule à cheminée puis le chemiser de sucre en le faisant tourner, et préchauffer le four à 160°C.", badge: null },
+      { icone: "🥚", titre: "Séparer", detail: "Séparer soigneusement les blancs des jaunes de 6 œufs dans deux saladiers, sans laisser la moindre trace de jaune dans les blancs.", badge: null },
+      { icone: "🥣", titre: "Blanchir", detail: "Fouetter énergiquement les jaunes avec le sucre et la vanille pendant 5 min jusqu'à ce que le mélange blanchisse et triple de volume.", badge: null },
+      { icone: "🌾", titre: "Incorporer", detail: "Tamiser ensemble la farine et la maïzena puis les incorporer délicatement à la maryse pour garder un appareil aéré.", badge: null },
+      { icone: "💨", titre: "Monter", detail: "Monter les blancs en neige ferme avec une pincée de sel, puis les incorporer en trois fois en soulevant la masse de bas en haut.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Verser dans le moule, enfourner à 160°C pour 40 min sans jamais ouvrir le four afin que le gâteau ne retombe pas.", badge: null },
+      { icone: "🍰", titre: "Démouler", detail: "Laisser tiédir 10 min, démouler sur une grille et servir nature avec une crème anglaise ou un coulis de fruits rouges.", badge: null }
     ]
   },
   malabi: {
@@ -5306,9 +5333,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥛", titre: "Cuire", detail: "Délayer la maïzena dans le lait, chauffer avec le sucre jusqu'à épaississement.", badge: null },
-      { icone: "🥣", titre: "Mouler", detail: "Verser en verrines, laisser prendre au frais.", badge: "⏱ 2 h" },
-      { icone: "🍓", titre: "Servir", detail: "Napper de coulis de fruits rouges.", badge: null }
+      { icone: "🥛", titre: "Délayer", detail: "Délayer la maïzena dans un peu de lait froid pour éviter les grumeaux, puis verser le reste du lait et le sucre dans une casserole.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Chauffer à feu moyen en remuant sans cesse jusqu'aux premiers frémissements, environ 5 min.", badge: null },
+      { icone: "🥄", titre: "Épaissir", detail: "Verser la maïzena délayée et fouetter 2 à 3 min jusqu'à obtenir une crème nappante qui enrobe la cuillère.", badge: null },
+      { icone: "🍮", titre: "Mouler", detail: "Répartir aussitôt la crème encore chaude dans des verrines en lissant la surface pour éviter une peau.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Filmer au contact et placer au réfrigérateur au moins 2 h jusqu'à ce que les malabi soient bien pris et frais.", badge: null },
+      { icone: "🍓", titre: "Servir", detail: "Napper généreusement de coulis de fruits rouges juste avant de servir et déguster bien frais.", badge: null }
     ]
   },
   ebleskiver: {
@@ -5339,9 +5369,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Préparer une pâte à pancake épaisse.", badge: null },
-      { icone: "🔵", titre: "Cuire", detail: "Cuire dans un moule à æbleskiver, tourner pour la forme ronde.", badge: null },
-      { icone: "🍯", titre: "Servir", detail: "Saupoudrer de sucre.", badge: null }
+      { icone: "🥚", titre: "Séparer", detail: "Séparer les blancs des jaunes d'œufs et réserver les blancs dans un bol propre pour les monter ensuite.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Fouetter la farine, les jaunes, le lait et le sucre jusqu'à obtenir une pâte lisse et épaisse sans grumeaux.", badge: null },
+      { icone: "💨", titre: "Monter", detail: "Monter les blancs en neige ferme puis les incorporer délicatement à la pâte pour la rendre aérienne.", badge: null },
+      { icone: "🧈", titre: "Beurrer", detail: "Chauffer le moule à æbleskiver à feu moyen et déposer une noisette de beurre dans chaque cavité.", badge: null },
+      { icone: "🥞", titre: "Cuire", detail: "Remplir chaque alvéole de pâte et cuire 2 min, jusqu'à ce que les bords prennent et dorent.", badge: null },
+      { icone: "🔄", titre: "Tourner", detail: "Retourner chaque boule d'un quart de tour à l'aide d'une pique pour former la sphère et finir la cuisson 2 min.", badge: null },
+      { icone: "🍯", titre: "Servir", detail: "Saupoudrer de sucre glace et servir tièdes, accompagnés de confiture pour la tradition danoise.", badge: null }
     ]
   }
 });

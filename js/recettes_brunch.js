@@ -1697,11 +1697,13 @@ Object.assign(recettes, {
       { nb: 15, semoule: "938 g", farine: "188 g", eau: "2250 ml", levureboulanger: "30 g", levurechimique: "19 g", sel: "15 g", sucre: "38 g" }
     ],
     etapes: [
-      { icone: "🌀", titre: "Mixer", detail: "Mixer tous les ingrédients avec l'eau tiède en une pâte liquide et lisse.", badge: null },
-      { icone: "⏳", titre: "Repos", detail: "Laisser reposer jusqu'à ce que la pâte mousse et bulle en surface.", badge: "⏱ 20 min" },
-      { icone: "🍳", titre: "Cuire", detail: "Verser des louches dans une poêle chaude SANS matière grasse. Cuire d'un seul côté : les trous se forment tout seuls.", badge: "⏱ 3 min" },
-      { icone: "🫓", titre: "Réserver", detail: "Retirer dès que la surface est sèche et criblée de trous. Ne pas retourner.", badge: null },
-      { icone: "🍯", titre: "Servir", detail: "Arroser de miel mélangé à du beurre fondu, servir tiède.", badge: null }
+      { icone: "⚖️", titre: "Préparer", detail: "Rassemblez la semoule fine, la farine, le sel, le sucre, la levure de boulanger et la levure chimique, et faites tiédir l'eau (environ 35°C) pour activer les levures.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Versez tous les ingrédients dans un blender avec l'eau tiède et mixez 2 à 3 minutes jusqu'à obtenir une pâte parfaitement liquide, lisse et sans grumeaux.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Couvrez le récipient d'un linge et laissez reposer 30 à 40 minutes à température ambiante, jusqu'à ce que la surface mousse et se couvre de petites bulles.", badge: null },
+      { icone: "🍳", titre: "Chauffer", detail: "Faites chauffer une petite poêle antiadhésive à feu moyen, sans aucune matière grasse, jusqu'à ce qu'elle soit bien chaude.", badge: null },
+      { icone: "🥞", titre: "Cuire", detail: "Versez une louche de pâte et laissez cuire 1 à 2 minutes d'un seul côté : des centaines de petits trous se forment tout seuls à la surface.", badge: null },
+      { icone: "🍯", titre: "Réserver", detail: "Retirez chaque baghrir dès que la surface est entièrement sèche et criblée de trous, sans jamais le retourner, et empilez-les à plat.", badge: null },
+      { icone: "🧈", titre: "Servir", detail: "Faites fondre du beurre avec du miel, arrosez généreusement les baghrirs encore tièdes et servez aussitôt au petit-déjeuner ou au goûter.", badge: null }
     ]
   },
   oeufsbrouilleshaddock: {
@@ -1733,9 +1735,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Haddock", detail: "Pocher rapidement le haddock dans un peu de lait, puis l'effilocher.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Brouiller", detail: "Brouiller les œufs avec la crème à feu doux. ASTUCE CHEF : feu très doux et retire la poêle du feu avant la fin — les œufs finissent de cuire sur leur chaleur et restent baveux, pas secs.", badge: "⏱ 4 min" },
-      { icone: "🍞", titre: "Servir", detail: "Incorporer le haddock, servir sur une tartine grillée avec du persil.", badge: null }
+      { icone: "🐟", titre: "Pocher", detail: "Plongez le haddock dans un peu de lait frémissant (jamais bouillant) et pochez-le 4 à 5 minutes pour l'attendrir et adoucir son fumage.", badge: null },
+      { icone: "🍴", titre: "Effilocher", detail: "Égouttez le haddock, retirez la peau et les éventuelles arêtes, puis effilochez la chair en gros copeaux et réservez-la au chaud.", badge: null },
+      { icone: "🥚", titre: "Battre", detail: "Cassez les œufs dans un bol, ajoutez la crème, une pincée de poivre et battez légèrement à la fourchette sans trop saler car le haddock est déjà salé.", badge: null },
+      { icone: "🔥", titre: "Brouiller", detail: "Faites fondre le beurre dans une poêle à feu très doux, versez les œufs et remuez sans cesse à la spatule pour former de petits copeaux crémeux.", badge: null },
+      { icone: "🌡️", titre: "Maîtriser", detail: "Retirez la poêle du feu juste avant la fin de cuisson : la chaleur résiduelle termine les œufs qui restent baveux et brillants, jamais secs.", badge: null },
+      { icone: "🐠", titre: "Incorporer", detail: "Ajoutez délicatement le haddock effiloché aux œufs brouillés et mélangez doucement pour le réchauffer sans casser la texture crémeuse.", badge: null },
+      { icone: "🍞", titre: "Servir", detail: "Faites griller des tranches de pain, déposez la brouillade au haddock dessus, parsemez de persil ciselé et servez immédiatement bien chaud.", badge: null }
     ]
   },
   skyrbowlproteine: {
@@ -1766,9 +1772,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥛", titre: "Base", detail: "Verser le skyr dans un bol.", badge: null },
-      { icone: "🍌", titre: "Garnir", detail: "Ajouter banane en rondelles, fruits rouges et flocons.", badge: null },
-      { icone: "🥜", titre: "Topping", detail: "Napper de beurre de cacahuète et d'un filet de miel.", badge: null }
+      { icone: "🧀", titre: "Préparer", detail: "Choisissez un skyr nature bien froid et fouettez-le quelques secondes au fouet pour le rendre lisse et onctueux avant de le verser dans un bol.", badge: null },
+      { icone: "🍌", titre: "Trancher", detail: "Épluchez la banane et coupez-la en fines rondelles régulières, puis rincez délicatement les fruits rouges et épongez-les.", badge: null },
+      { icone: "🥣", titre: "Garnir", detail: "Disposez harmonieusement les rondelles de banane et les fruits rouges sur le skyr, en formant des sections distinctes pour un joli rendu.", badge: null },
+      { icone: "🌾", titre: "Saupoudrer", detail: "Répartissez les flocons d'avoine sur le dessus pour apporter du croquant et des fibres au bowl.", badge: null },
+      { icone: "🥜", titre: "Napper", detail: "Ajoutez une cuillère de beurre de cacahuète au centre, légèrement réchauffé si besoin pour qu'il soit coulant et facile à répartir.", badge: null },
+      { icone: "🍯", titre: "Servir", detail: "Terminez par un filet de miel sur l'ensemble et dégustez aussitôt, tant que la banane reste fraîche et les flocons croustillants.", badge: null }
     ]
   },
   omeletteblancs: {
@@ -1799,9 +1808,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Épinards", detail: "Faire tomber les épinards à la poêle avec un filet d'huile.", badge: null },
-      { icone: "🥚", titre: "Blancs", detail: "Verser les blancs battus, saler, poivrer.", badge: null },
-      { icone: "🧀", titre: "Plier", detail: "Ajouter le fromage blanc, plier et servir baveux.", badge: null }
+      { icone: "🥬", titre: "Préparer", detail: "Lavez et essorez les épinards frais, retirez les tiges trop dures, et séparez les blancs d'œufs en veillant à n'y laisser aucune trace de jaune.", badge: null },
+      { icone: "🍳", titre: "Saisir", detail: "Faites chauffer un filet d'huile d'olive dans une poêle antiadhésive à feu moyen et faites tomber les épinards 2 à 3 minutes jusqu'à ce qu'ils réduisent.", badge: null },
+      { icone: "🥚", titre: "Battre", detail: "Battez les blancs d'œufs à la fourchette avec le sel et le poivre jusqu'à ce qu'ils soient légèrement mousseux mais encore liquides.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Versez les blancs battus sur les épinards à feu moyen-doux et laissez prendre 2 à 3 minutes en ramenant les bords vers le centre.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Déposez le fromage blanc sur une moitié de l'omelette dès que les blancs sont presque pris mais encore brillants en surface.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Pliez l'omelette en deux sur la garniture, faites glisser dans l'assiette et servez aussitôt, encore baveuse et moelleuse.", badge: null }
     ]
   },
   porridgewhey: {
@@ -1832,9 +1844,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Cuire", detail: "Cuire les flocons dans le lait 5 min en remuant.", badge: null },
-      { icone: "💪", titre: "Whey", detail: "Hors du feu, incorporer la whey (pour ne pas la cuire).", badge: null },
-      { icone: "🍌", titre: "Servir", detail: "Ajouter banane et beurre de cacahuète.", badge: null }
+      { icone: "🥛", titre: "Préparer", detail: "Mesurez les flocons d'avoine et le lait, et coupez la banane en rondelles en réservant quelques tranches pour la décoration.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Versez les flocons dans le lait dans une casserole et faites cuire à feu doux 5 minutes en remuant régulièrement jusqu'à une texture crémeuse.", badge: null },
+      { icone: "🍌", titre: "Écraser", detail: "Ajoutez la moitié des rondelles de banane dans le porridge chaud et écrasez-les à la fourchette pour sucrer naturellement la préparation.", badge: null },
+      { icone: "💪", titre: "Incorporer", detail: "Retirez impérativement la casserole du feu, puis incorporez la whey en fouettant pour qu'elle ne cuise pas et garde tout son intérêt protéiné.", badge: null },
+      { icone: "🥣", titre: "Dresser", detail: "Versez le porridge dans un bol et lissez la surface, en ajustant la consistance avec un peu de lait s'il a trop épaissi.", badge: null },
+      { icone: "🥜", titre: "Servir", detail: "Disposez les rondelles de banane réservées, nappez d'un peu de beurre de cacahuète et dégustez tiède sans attendre.", badge: null }
     ]
   },
   oeufsbrouillesavocat: {
@@ -1865,9 +1880,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Brouiller", detail: "Cuire les œufs à feu doux en remuant pour garder le crémeux.", badge: null },
-      { icone: "🥑", titre: "Avocat", detail: "Écraser l'avocat sur le pain complet toasté.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Déposer les œufs sur le pain, saler.", badge: null }
+      { icone: "🥑", titre: "Préparer", detail: "Coupez l'avocat en deux, retirez le noyau et prélevez la chair à la cuillère, puis battez légèrement les œufs avec une pincée de sel.", badge: null },
+      { icone: "🍞", titre: "Toaster", detail: "Faites griller les tranches de pain complet jusqu'à ce qu'elles soient dorées et croustillantes.", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "Écrasez l'avocat à la fourchette directement sur le pain toasté, en l'assaisonnant d'un filet d'huile d'olive et d'une pointe de sel.", badge: null },
+      { icone: "🍳", titre: "Fondre", detail: "Faites chauffer un filet d'huile d'olive dans une poêle à feu doux avant d'y verser les œufs battus.", badge: null },
+      { icone: "🔥", titre: "Brouiller", detail: "Remuez les œufs sans cesse à la spatule à feu doux pour former de petits copeaux crémeux, et retirez du feu encore légèrement baveux.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Déposez les œufs brouillés sur le pain à l'avocat, rectifiez l'assaisonnement et servez immédiatement bien chaud.", badge: null }
     ]
   },
   fbgranolaproteine: {
@@ -1898,9 +1916,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥛", titre: "Mélanger", detail: "Fouetter le fromage blanc avec la whey.", badge: null },
-      { icone: "🥣", titre: "Garnir", detail: "Ajouter granola et fruits rouges.", badge: null },
-      { icone: "🍯", titre: "Miel", detail: "Filet de miel et c'est prêt.", badge: null }
+      { icone: "🧀", titre: "Préparer", detail: "Sortez le fromage blanc bien froid et rincez délicatement les fruits rouges avant de les éponger sur du papier absorbant.", badge: null },
+      { icone: "💪", titre: "Fouetter", detail: "Fouettez vivement le fromage blanc avec la whey jusqu'à obtenir une crème lisse, homogène et sans grumeaux de poudre.", badge: null },
+      { icone: "🥣", titre: "Dresser", detail: "Versez la préparation protéinée dans un bol et lissez la surface à la cuillère pour un rendu net.", badge: null },
+      { icone: "🌾", titre: "Garnir", detail: "Répartissez le granola sur le dessus pour le croquant et disposez harmonieusement les fruits rouges autour.", badge: null },
+      { icone: "🍯", titre: "Napper", detail: "Ajoutez un filet de miel sur l'ensemble pour lier les saveurs et apporter une touche sucrée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dégustez immédiatement pour profiter du contraste entre la crème fraîche et le granola encore croustillant.", badge: null }
     ]
   },
   tofubrouille: {
@@ -1931,9 +1952,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧈", titre: "Tofu", detail: "Émietter le tofu et le poêler avec le curcuma.", badge: null },
-      { icone: "🥬", titre: "Légumes", detail: "Ajouter oignon, tomate et épinards.", badge: null },
-      { icone: "🍳", titre: "Servir", detail: "Cuire 5 min en remuant, servir chaud.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincez finement l'oignon, coupez la tomate en dés, lavez les épinards et égouttez bien le tofu en le pressant pour retirer l'excès d'eau.", badge: null },
+      { icone: "🍳", titre: "Émietter", detail: "Émiettez le tofu grossièrement à la fourchette pour imiter la texture des œufs brouillés.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faites chauffer l'huile d'olive dans une poêle à feu moyen et faites suer l'oignon 2 à 3 minutes jusqu'à ce qu'il devienne translucide.", badge: null },
+      { icone: "🟡", titre: "Colorer", detail: "Ajoutez le tofu émietté et le curcuma, puis remuez pour bien enrober et faire prendre une belle couleur dorée pendant 3 minutes.", badge: null },
+      { icone: "🍅", titre: "Cuire", detail: "Incorporez les dés de tomate et les épinards, salez, puis poursuivez la cuisson 5 minutes en remuant jusqu'à ce que les épinards tombent.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifiez l'assaisonnement et servez le tofu brouillé bien chaud, éventuellement sur une tranche de pain grillé.", badge: null }
     ]
   }
 });

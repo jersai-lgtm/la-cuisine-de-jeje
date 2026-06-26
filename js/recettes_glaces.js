@@ -769,11 +769,12 @@ Object.assign(recettes, {
       { nb: 15, yaourtgrec: "475 g", sucreglace: "76 g", miel: "38 g", citron: "19 ml", fraise: "142 g" }
     ],
     etapes: [
-      { icone: "🥣", titre: "Mélanger", detail: "Fouetter le yaourt grec avec le sucre glace, le miel et le jus de citron.", badge: null },
-      { icone: "🍓", titre: "Fruits", detail: "Incorporer les fruits rouges, écrasés ou entiers selon l'envie.", badge: null },
-      { icone: "🧊", titre: "Turbiner", detail: "Verser en sorbetière jusqu'à une texture crémeuse, ou placer au congélateur.", badge: "⏱ 30 min" },
-      { icone: "🥄", titre: "Lisser", detail: "Sans sorbetière, mélanger toutes les 30 min pour éviter les cristaux.", badge: null },
-      { icone: "🍨", titre: "Servir", detail: "Servir en boules, légèrement souple, avec quelques fruits frais.", badge: null }
+      { icone: "🍓", titre: "Préparer", detail: "Équeuter les fraises, en réserver quelques-unes pour le service et écraser le reste à la fourchette avec un trait de jus de citron.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Fouetter le yaourt grec avec le sucre glace et le miel jusqu'à obtenir une préparation parfaitement lisse et brillante.", badge: null },
+      { icone: "🍋", titre: "Parfumer", detail: "Ajouter le reste du jus de citron pour relever la fraîcheur, puis incorporer délicatement les fraises écrasées.", badge: null },
+      { icone: "🌀", titre: "Turbiner", detail: "Verser la préparation en sorbetière et turbiner 20 min jusqu'à une texture crémeuse et onctueuse.", badge: null },
+      { icone: "❄️", titre: "Lisser", detail: "Sans sorbetière, placer au congélateur et fouetter le mélange toutes les 30 min pendant 2 h pour casser les cristaux.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Sortir 5 min avant de déguster, former des boules à la cuillère et décorer des fraises fraîches réservées.", badge: null }
     ]
   },
   glacenoixpecan: {
@@ -805,10 +806,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌰", titre: "Torréfier", detail: "Faire dorer les noix de pécan dans le beurre avec une pincée de sel.", badge: "⏱ 5 min" },
-      { icone: "🥛", titre: "Crème anglaise", detail: "Cuire lait, crème, jaunes et cassonade à 83°C jusqu'à napper la cuillère.", badge: "⏱ 8 min" },
-      { icone: "❄️", titre: "Turbiner", detail: "Refroidir puis turbiner. ASTUCE CHEF : ajoute les pécans en toute fin de turbinage pour qu'ils gardent leur croquant.", badge: "⏱ 30 min" },
-      { icone: "🍨", titre: "Prendre", detail: "Mettre au congélateur 2 h avant de servir en boules.", badge: null }
+      { icone: "🥜", titre: "Torréfier", detail: "Faire fondre le beurre dans une poêle, y dorer les noix de pécan 4 min à feu moyen avec une pincée de sel, puis les hacher grossièrement.", badge: null },
+      { icone: "🥛", titre: "Infuser", detail: "Porter le lait et la crème à frémissement dans une casserole et réserver hors du feu.", badge: null },
+      { icone: "🥚", titre: "Blanchir", detail: "Fouetter les jaunes d'œufs avec la cassonade jusqu'à ce que le mélange blanchisse et devienne mousseux.", badge: null },
+      { icone: "🌡️", titre: "Crème anglaise", detail: "Verser le lait chaud sur les jaunes, remettre sur feu doux et cuire en remuant jusqu'à 83°C, quand la crème nappe la cuillère.", badge: null },
+      { icone: "🧊", titre: "Refroidir", detail: "Filtrer la crème, la laisser refroidir puis la placer 1 h au réfrigérateur pour qu'elle soit bien froide avant de turbiner.", badge: null },
+      { icone: "🌀", titre: "Turbiner", detail: "Turbiner la base 25 min et ajouter les pécans torréfiées en toute fin pour qu'elles gardent leur croquant.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Placer au congélateur 2 h, puis sortir 5 min avant de servir en boules généreuses parsemées de quelques éclats de pécan.", badge: null }
     ]
   },
   glacecookiedough: {
@@ -840,10 +844,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍪", titre: "Pâte à cookie", detail: "Mélanger farine (torréfiée), beurre, cassonade et chocolat concassé en pâte, façonner de petits morceaux.", badge: "⏱ 10 min" },
-      { icone: "🥛", titre: "Base vanille", detail: "Cuire lait, crème, jaunes, sucre et vanille en crème anglaise.", badge: "⏱ 8 min" },
-      { icone: "❄️", titre: "Turbiner", detail: "Turbiner la base. ASTUCE CHEF : torréfie la farine au four 10 min avant — la pâte à cookie crue est alors sans risque à déguster.", badge: "⏱ 30 min" },
-      { icone: "🍨", titre: "Mélanger", detail: "Incorporer les morceaux de pâte en fin de turbinage et congeler 2 h.", badge: null }
+      { icone: "🔥", titre: "Torréfier", detail: "Étaler la farine sur une plaque et la torréfier 10 min à 180°C pour la rendre sûre à consommer crue, puis la laisser refroidir.", badge: null },
+      { icone: "🍪", titre: "Pâte cookie", detail: "Travailler le beurre mou avec la cassonade, ajouter la farine torréfiée et le chocolat noir concassé, puis façonner de petits morceaux à réserver au froid.", badge: null },
+      { icone: "🥛", titre: "Chauffer", detail: "Porter le lait et la crème à frémissement avec la vanille et laisser infuser quelques minutes hors du feu.", badge: null },
+      { icone: "🥚", titre: "Crème anglaise", detail: "Blanchir les jaunes avec le sucre, verser le lait chaud, puis cuire à feu doux jusqu'à 83°C en remuant sans cesse.", badge: null },
+      { icone: "🧊", titre: "Refroidir", detail: "Filtrer la crème et la réfrigérer 1 h jusqu'à ce qu'elle soit parfaitement froide avant turbinage.", badge: null },
+      { icone: "🌀", titre: "Turbiner", detail: "Turbiner la base 25 min jusqu'à une texture crémeuse et homogène.", badge: null },
+      { icone: "🍫", titre: "Incorporer", detail: "Ajouter les morceaux de pâte à cookie en fin de turbinage et mélanger brièvement pour les répartir.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Congeler 2 h, sortir 5 min avant de déguster et servir en boules truffées de pépites de pâte.", badge: null }
     ]
   },
   glacetiramisu: {
@@ -875,10 +883,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "☕", titre: "Café", detail: "Préparer un café serré et y imbiber rapidement les biscuits cuillère émiettés.", badge: null },
-      { icone: "🧀", titre: "Crème", detail: "Battre mascarpone, crème, lait, jaunes et sucre en base lisse.", badge: "⏱ 5 min" },
-      { icone: "❄️", titre: "Turbiner", detail: "Turbiner la base. ASTUCE CHEF : n'imbibe pas trop les biscuits — détrempés, ils disparaissent ; juste humides, ils gardent du mâché.", badge: "⏱ 30 min" },
-      { icone: "🍫", titre: "Monter", detail: "Alterner glace et biscuits imbibés, poudrer de cacao et congeler 2 h.", badge: null }
+      { icone: "☕", titre: "Café", detail: "Préparer un café serré, le laisser tiédir, puis y tremper rapidement les biscuits cuillère émiettés juste assez pour les humidifier.", badge: null },
+      { icone: "🧀", titre: "Crème", detail: "Fouetter le mascarpone avec les jaunes d'œufs et le sucre jusqu'à obtenir une crème lisse et aérée.", badge: null },
+      { icone: "🥛", titre: "Détendre", detail: "Incorporer le lait et la crème à la préparation au mascarpone pour obtenir une base coulante et homogène.", badge: null },
+      { icone: "🌀", titre: "Turbiner", detail: "Turbiner la base 25 min jusqu'à une consistance crémeuse, sans laisser durcir excessivement.", badge: null },
+      { icone: "📋", titre: "Monter", detail: "Alterner dans un bac des couches de glace et de biscuits imbibés de café, en gardant les biscuits juste humides pour préserver le mâché.", badge: null },
+      { icone: "🍫", titre: "Poudrer", detail: "Poudrer généreusement de cacao amer tamisé entre les couches et sur le dessus.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Congeler 2 h, sortir 5 min avant de servir et déguster en boules ou en parts saupoudrées d'un voile de cacao.", badge: null }
     ]
   },
   sorbetmelon: {
@@ -911,10 +922,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍈", titre: "Mixer", detail: "Mixer la chair de melon bien mûre avec le citron.", badge: null },
-      { icone: "💧", titre: "Sirop", detail: "Faire fondre le sucre dans l'eau et l'ajouter à la purée de melon.", badge: null },
-      { icone: "❄️", titre: "Turbiner", detail: "Turbiner. ASTUCE CHEF : choisis un melon très parfumé — un sorbet ne fait que concentrer le goût du fruit, il ne le crée pas.", badge: "⏱ 25 min" },
-      { icone: "🍧", titre: "Prendre", detail: "Congeler 2 h avant de servir.", badge: null }
+      { icone: "🍈", titre: "Préparer", detail: "Choisir un melon très mûr et parfumé, retirer les pépins et prélever la chair en gros morceaux.", badge: null },
+      { icone: "🍯", titre: "Sirop", detail: "Faire fondre le sucre dans l'eau sur feu moyen jusqu'à dissolution complète, puis laisser refroidir le sirop.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement la chair de melon avec le jus de citron jusqu'à obtenir une purée parfaitement lisse.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Incorporer le sirop froid à la purée de melon et mélanger, puis réfrigérer 30 min pour que tout soit bien frais.", badge: null },
+      { icone: "❄️", titre: "Turbiner", detail: "Turbiner la préparation 25 min jusqu'à une texture souple et homogène.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Congeler 2 h, sortir 5 min avant de déguster et servir en boules rafraîchissantes, éventuellement avec quelques billes de melon.", badge: null }
     ]
   },
   sorbetlitchi: {
@@ -946,10 +959,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌸", titre: "Mixer", detail: "Mixer les litchis dénoyautés avec le citron vert.", badge: null },
-      { icone: "💧", titre: "Sirop", detail: "Dissoudre le sucre dans l'eau et incorporer à la purée.", badge: null },
-      { icone: "❄️", titre: "Turbiner", detail: "Turbiner. ASTUCE CHEF : le citron vert réveille le litchi qui, seul, peut être un peu plat — n'en mets pas trop pour autant.", badge: "⏱ 25 min" },
-      { icone: "🍧", titre: "Prendre", detail: "Congeler 2 h avant de servir.", badge: null }
+      { icone: "🥢", titre: "Préparer", detail: "Dénoyauter les litchis et les peler s'ils sont frais, en réservant la chair bien parfumée.", badge: null },
+      { icone: "🍯", titre: "Sirop", detail: "Dissoudre le sucre dans l'eau sur feu moyen jusqu'à obtenir un sirop limpide, puis le laisser refroidir.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer la chair de litchi avec le jus de citron vert jusqu'à obtenir une purée lisse et veloutée.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Incorporer le sirop froid à la purée, en dosant le citron vert pour réveiller le litchi sans masquer son parfum, puis réfrigérer 30 min.", badge: null },
+      { icone: "❄️", titre: "Turbiner", detail: "Turbiner la préparation 25 min jusqu'à une consistance crémeuse et homogène.", badge: null },
+      { icone: "🍧", titre: "Servir", detail: "Congeler 2 h, sortir 5 min avant de servir et déguster en boules délicatement parfumées, relevées d'un zeste de citron vert.", badge: null }
     ]
   },
   sorbetcassis: {
@@ -982,10 +997,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫐", titre: "Mixer", detail: "Mixer le cassis avec le citron puis passer au tamis pour retirer les pépins.", badge: null },
-      { icone: "💧", titre: "Sirop", detail: "Dissoudre le sucre dans l'eau et mélanger à la purée tamisée.", badge: null },
-      { icone: "❄️", titre: "Turbiner", detail: "Turbiner. ASTUCE CHEF : tamise bien — les pépins de cassis sont durs et gâcheraient la texture lisse du sorbet.", badge: "⏱ 25 min" },
-      { icone: "🍧", titre: "Prendre", detail: "Congeler 2 h avant de servir.", badge: null }
+      { icone: "🫐", titre: "Préparer cassis", detail: "Rincer 500 g de cassis frais ou décongelés, retirer les queues et égoutter dans une passoire.", badge: null },
+      { icone: "🥣", titre: "Mixer", detail: "Mixer le cassis avec le jus d'un demi-citron jusqu'à obtenir une purée lisse et homogène.", badge: null },
+      { icone: "🧅", titre: "Tamiser", detail: "Passer la purée au tamis fin en pressant à la maryse pour éliminer toutes les peaux et les pépins durs.", badge: null },
+      { icone: "🍯", titre: "Sirop", detail: "Chauffer l'eau et le sucre à 40°C jusqu'à dissolution complète, laisser tiédir puis incorporer à la purée tamisée.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Filmer et placer le mélange au réfrigérateur 1 h à 4°C pour qu'il soit bien froid avant le turbinage.", badge: null },
+      { icone: "🌀", titre: "Turbiner", detail: "Verser dans la sorbetière et turbiner 25 à 30 min jusqu'à obtenir une texture crémeuse et homogène.", badge: null },
+      { icone: "🧊", titre: "Prendre", detail: "Transférer dans un bac, lisser et raffermir 2 h au congélateur avant de former les boules.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Sortir 5 min avant, former des boules à la cuillère trempée dans l'eau chaude et servir avec quelques cassis frais.", badge: null }
     ]
   },
 });

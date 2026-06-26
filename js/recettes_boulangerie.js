@@ -29,11 +29,14 @@ Object.assign(recettes, {
       { nb: 15, farine: "375 g", oeuf: "375 g", sucre: "330 g", beurre: "300 g", citron: "300 g", yaourt: "180 g", levurechimique: "15 g" }
     ],
     etapes: [
-      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 170°C, beurrer un moule à cake.", badge: "⏱ 5 min" },
-      { icone: "🍋", titre: "Parfumer", detail: "Prélever le zeste des citrons et presser le jus.", badge: null },
-      { icone: "🥣", titre: "Mélanger", detail: "Fouetter œufs et sucre, ajouter yaourt, beurre fondu, zeste et jus de citron.", badge: null },
-      { icone: "🌾", titre: "Incorporer", detail: "Ajouter farine et levure tamisées, mélanger sans trop travailler.", badge: null },
-      { icone: "♨️", titre: "Cuire", detail: "Verser dans le moule, enfourner 40-45 min. Glacer avec sucre glace + jus de citron.", badge: "⏱ 45 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffez le four à 170°C (chaleur traditionnelle) et beurrez généreusement un moule à cake, en chemisant éventuellement de papier sulfurisé pour un démoulage facile.", badge: null },
+      { icone: "🍋", titre: "Parfumer", detail: "Lavez les citrons, prélevez finement leur zeste à la râpe en évitant le ziste blanc amer, puis pressez le jus et réservez les deux séparément.", badge: null },
+      { icone: "🥚", titre: "Battre", detail: "Dans un saladier, fouettez vivement les œufs avec le sucre pendant 2 à 3 minutes jusqu'à obtenir un mélange clair et mousseux.", badge: null },
+      { icone: "🥣", titre: "Émulsionner", detail: "Incorporez le yaourt, le beurre fondu tiédi, le zeste et le jus de citron, puis mélangez jusqu'à une pâte homogène et parfumée.", badge: null },
+      { icone: "🌾", titre: "Incorporer", detail: "Ajoutez la farine et la levure chimique tamisées ensemble, puis mélangez délicatement à la maryse juste assez pour lier, sans trop travailler la pâte.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Versez la pâte dans le moule et enfournez à 170°C pendant 40 à 45 minutes ; vérifiez la cuisson en plantant la lame d'un couteau qui doit ressortir sèche.", badge: null },
+      { icone: "🍶", titre: "Glacer", detail: "Démoulez tiède, mélangez du sucre glace avec un peu de jus de citron jusqu'à une texture nappante et coulez ce glaçage sur le cake.", badge: null },
+      { icone: "🍰", titre: "Servir", detail: "Laissez le glaçage figer et le cake refroidir complètement avant de trancher ; il se déguste idéalement avec un thé ou un café.", badge: null }
     ]
   },
   pizza: {

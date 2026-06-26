@@ -2063,11 +2063,14 @@ tapenade: {
       { nb: 15, feuillebrick: "450 g", boeuf: "1050 g", oignon: "375 g", persil: "75 g", huileolive: "120 ml", cumin: "15 g", paprika: "15 g", oeuf: "120 g" }
     ],
     etapes: [
-      { icone: "🍳", titre: "La farce", detail: "Faire revenir l'oignon haché, ajouter la viande, cumin, paprika, sel. Cuire 8 min, puis ajouter le persil.", badge: "⏱ 8 min" },
-      { icone: "📐", titre: "Plier", detail: "Couper les feuilles de brick en bandes, déposer une cuillère de farce et plier en triangles serrés.", badge: null },
-      { icone: "🖌️", titre: "Sceller", detail: "Coller le dernier rabat avec un peu d'œuf battu pour bien fermer.", badge: null },
-      { icone: "🍳", titre: "Dorer", detail: "Frire ou cuire au four à 200°C jusqu'à ce qu'elles soient bien dorées et croustillantes.", badge: "🔥 200°C" },
-      { icone: "🍋", titre: "Servir", detail: "Servir chaud avec un quartier de citron.", badge: null }
+      { icone: "🧅", titre: "Préparer", detail: "Émincer finement l'oignon et ciseler le persil ; sortir les feuilles de brick à température ambiante et battre l'œuf dans un bol.", badge: null },
+      { icone: "🍳", titre: "Revenir l'oignon", detail: "Faire suer l'oignon 5 min à feu moyen dans un filet d'huile d'olive jusqu'à ce qu'il soit translucide et fondant.", badge: null },
+      { icone: "🥩", titre: "Cuire la viande", detail: "Ajouter le bœuf haché, le cumin, le paprika et du sel, puis cuire 8 min à feu moyen en émiettant la viande jusqu'à coloration.", badge: null },
+      { icone: "🌿", titre: "Finir la farce", detail: "Incorporer le persil ciselé hors du feu, rectifier l'assaisonnement et laisser tiédir 5 min pour faciliter le pliage.", badge: null },
+      { icone: "📐", titre: "Plier", detail: "Couper les feuilles de brick en bandes, déposer une cuillère de farce à une extrémité et plier serré en triangles successifs.", badge: null },
+      { icone: "🥚", titre: "Sceller", detail: "Coller le dernier rabat avec un peu d'œuf battu au pinceau pour bien fermer les triangles et éviter qu'ils s'ouvrent à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Cuire au four à 200°C 15 min (ou frire à 170°C) jusqu'à ce que les briouates soient dorées et croustillantes.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servir bien chaud avec un quartier de citron, à déguster croustillant dès la sortie du four.", badge: null }
     ]
   },
   elote: {
@@ -2095,11 +2098,12 @@ tapenade: {
       { nb: 15, mais: "2250 g", mayonnaise: "225 g", creme: "225 ml", parmesan: "225 g", citron: "75 ml", paprika: "30 g", coriandre: "45 g" }
     ],
     etapes: [
-      { icone: "🔥", titre: "Griller le maïs", detail: "Faire griller les épis de maïs jusqu'à ce qu'ils soient dorés et légèrement charbonnés.", badge: "⏱ 12 min" },
-      { icone: "🥣", titre: "La crème", detail: "Mélanger mayonnaise, crème et un trait de citron vert.", badge: null },
-      { icone: "🖌️", titre: "Enrober", detail: "Badigeonner les épis chauds de crème citronnée sur toute leur surface.", badge: null },
-      { icone: "🧀", titre: "Fromage & épices", detail: "Rouler dans le fromage râpé, saupoudrer de paprika et de coriandre.", badge: null },
-      { icone: "🍋", titre: "Servir", detail: "Servir aussitôt avec un quartier de citron vert.", badge: "💡 Street food" }
+      { icone: "🌽", titre: "Préparer", detail: "Éplucher les épis de maïs, retirer les barbes et les essuyer ; râper le parmesan et ciseler la coriandre.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller les épis 10 min sur une plancha ou un gril chaud en les tournant régulièrement jusqu'à ce qu'ils soient dorés et légèrement charbonnés.", badge: null },
+      { icone: "🥣", titre: "Sauce crémeuse", detail: "Mélanger la mayonnaise, la crème et un trait de jus de citron vert pour obtenir une sauce onctueuse et acidulée.", badge: null },
+      { icone: "🖌️", titre: "Enrober", detail: "Badigeonner généreusement les épis encore chauds de sauce citronnée sur toute leur surface.", badge: null },
+      { icone: "🧀", titre: "Fromage & épices", detail: "Rouler aussitôt les épis dans le parmesan râpé puis saupoudrer de paprika pour la couleur et le goût fumé.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de coriandre fraîche et servir aussitôt avec un quartier de citron vert, à déguster brûlant.", badge: null }
     ]
   },
   olivesmarinees: {
@@ -2131,10 +2135,12 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫒", titre: "Égoutter", detail: "Égoutter et rincer les olives.", badge: null },
-      { icone: "🧄", titre: "Aromates", detail: "Mélanger ail écrasé, zeste et jus de citron, herbes et piment.", badge: null },
-      { icone: "🫗", titre: "Mariner", detail: "Verser sur les olives avec l'huile et mélanger. ASTUCE CHEF : prépare-les la veille — les olives ont besoin de quelques heures pour s'imprégner des aromates.", badge: null },
-      { icone: "❄️", titre: "Reposer", detail: "Réserver au frais au moins 2 h, sortir 30 min avant de servir.", badge: "⏱ 2 h" }
+      { icone: "💧", titre: "Égoutter", detail: "Égoutter et rincer les olives à l'eau froide pour retirer l'excès de saumure, puis bien les essuyer.", badge: null },
+      { icone: "🧄", titre: "Aromates", detail: "Écraser les gousses d'ail, prélever le zeste et le jus du citron, puis émincer les herbes et le piment.", badge: null },
+      { icone: "🫒", titre: "Mélanger", detail: "Dans un bol, réunir les olives avec l'ail, le zeste, le jus de citron, les herbes, le piment et l'huile d'olive.", badge: null },
+      { icone: "🥄", titre: "Enrober", detail: "Mélanger délicatement pour bien enrober chaque olive d'huile parfumée et d'aromates.", badge: null },
+      { icone: "❄️", titre: "Mariner", detail: "Couvrir et réserver au frais au moins 2 h, idéalement toute une nuit pour que les olives s'imprègnent des saveurs.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Sortir 30 min avant de servir pour que l'huile redevienne fluide, puis présenter à l'apéritif avec du pain.", badge: null }
     ]
   },
   muffinssales: {
@@ -2166,10 +2172,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, levure et sel, puis incorporer œufs, lait et huile.", badge: null },
-      { icone: "🧀", titre: "Garnir", detail: "Ajouter le gruyère râpé et le jambon en dés. ASTUCE CHEF : ne mélange pas trop la pâte une fois la farine ajoutée — quelques grumeaux garantissent des muffins moelleux, pas caoutchouteux.", badge: null },
-      { icone: "🧁", titre: "Mouler", detail: "Répartir dans des moules à muffins aux 3/4.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire à 180°C jusqu'à ce qu'ils soient dorés et gonflés.", badge: "⏱ 20 min" }
+      { icone: "🧀", titre: "Préparer", detail: "Râper le gruyère, couper le jambon en petits dés et préchauffer le four à 180°C.", badge: null },
+      { icone: "🥣", titre: "Mélanger secs", detail: "Dans un saladier, mélanger la farine, la levure et une pincée de sel pour répartir uniformément la levure.", badge: null },
+      { icone: "🥚", titre: "Pâte", detail: "Incorporer les œufs, le lait et l'huile, puis mélanger juste assez pour obtenir une pâte homogène mais encore un peu grumeleuse.", badge: null },
+      { icone: "🍖", titre: "Garnir", detail: "Ajouter le gruyère râpé et les dés de jambon, en mélangeant sans excès pour garder des muffins moelleux.", badge: null },
+      { icone: "🧁", titre: "Mouler", detail: "Répartir la pâte dans des moules à muffins remplis aux 3/4 pour laisser la place à la levée.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C pendant 22 à 25 min jusqu'à ce que les muffins soient dorés, gonflés et que la pointe d'un couteau ressorte sèche.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser tiédir 5 min puis démouler ; servir tièdes à l'apéritif ou en pique-nique.", badge: null }
     ]
   },
   bruschettapoiscasses: {
@@ -2201,10 +2210,12 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🟢", titre: "Pois cassés", detail: "Cuire les pois cassés jusqu'à tendreté, les écraser avec ail, citron et huile en crémeux.", badge: "⏱ 18 min" },
-      { icone: "🍞", titre: "Toaster", detail: "Griller les tranches de pain et les frotter à l'ail.", badge: null },
-      { icone: "🐟", titre: "Garnir", detail: "Tartiner le crémeux, déposer le maquereau émietté. ASTUCE CHEF : garde le crémeux de pois cassés un peu épais — trop liquide, il détrempe le pain grillé en quelques minutes.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Filet d'huile, persil et un tour de poivre.", badge: null }
+      { icone: "🫛", titre: "Cuire les pois", detail: "Cuire les pois cassés 25 min à frémissement dans l'eau jusqu'à tendreté complète, puis les égoutter.", badge: null },
+      { icone: "🥄", titre: "Crémeux", detail: "Écraser les pois cassés avec l'ail, le jus de citron et l'huile d'olive pour obtenir une purée crémeuse mais encore épaisse.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et rectifier l'acidité avec un peu de citron, en gardant la texture suffisamment ferme pour ne pas détremper le pain.", badge: null },
+      { icone: "🍞", titre: "Toaster", detail: "Griller les tranches de pain jusqu'à coloration dorée, puis les frotter à la gousse d'ail coupée.", badge: null },
+      { icone: "🐟", titre: "Garnir", detail: "Tartiner le crémeux de pois cassés sur les toasts et déposer généreusement le maquereau émietté.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Arroser d'un filet d'huile d'olive, parsemer de persil ciselé et donner un tour de moulin à poivre avant de servir aussitôt.", badge: null }
     ]
   },
   guacamolebrocoli: {
@@ -2236,9 +2247,12 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥦", titre: "Vapeur", detail: "Cuire le brocoli à la vapeur jusqu'à tendreté, puis le mixer en purée.", badge: "⏱ 6 min" },
-      { icone: "🥑", titre: "Écraser", detail: "Écraser l'avocat à la fourchette et l'incorporer à la purée de brocoli.", badge: null },
-      { icone: "🌶️", titre: "Relever", detail: "Ajouter oignon rouge, coriandre, citron vert, piment et sel. ASTUCE CHEF : presse le citron vert généreusement dès le début — l'acide empêche l'avocat de noircir et garde le guacamole bien vert.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Détailler le brocoli en petits bouquets, ciseler l'oignon rouge et la coriandre, émincer le piment finement.", badge: null },
+      { icone: "♨️", titre: "Vapeur", detail: "Cuire le brocoli 8 min à la vapeur jusqu'à tendreté, puis le mixer en purée lisse et laisser tiédir.", badge: null },
+      { icone: "🥑", titre: "Écraser", detail: "Écraser la chair d'avocat à la fourchette en gardant un peu de texture, puis l'incorporer à la purée de brocoli.", badge: null },
+      { icone: "🍈", titre: "Acidifier", detail: "Presser généreusement le citron vert dès le début pour préserver la couleur verte et empêcher l'avocat de noircir.", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajouter l'oignon rouge, la coriandre, le piment et le sel, puis mélanger et goûter pour ajuster l'assaisonnement.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Verser dans un bol, lisser la surface et servir frais avec des tortillas ou des crudités.", badge: null }
     ]
   },
   fritesceleri: {
@@ -2270,10 +2284,12 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Tailler", detail: "Couper le céleri-rave en bâtonnets type frites.", badge: null },
-      { icone: "🔥", titre: "Rôtir", detail: "Enrober d'huile et de paprika, rôtir au four jusqu'à doré et croustillant. ASTUCE CHEF : ne surcharge pas la plaque — des bâtonnets serrés cuisent à la vapeur et restent mous au lieu de croustiller.", badge: "⏱ 25 min" },
-      { icone: "🌶️", titre: "Sauce", detail: "Mélanger yaourt et raifort pour une sauce piquante.", badge: null },
-      { icone: "🧂", titre: "Servir", detail: "Saler les frites et servir avec la sauce.", badge: null }
+      { icone: "🔪", titre: "Tailler", detail: "Éplucher le céleri-rave et le couper en bâtonnets réguliers type frites pour une cuisson homogène.", badge: null },
+      { icone: "🫒", titre: "Enrober", detail: "Enrober les bâtonnets d'huile d'olive et de paprika, puis saler légèrement et bien mélanger.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Étaler sur une plaque sans surcharger et rôtir au four à 200°C pendant 25 min jusqu'à ce qu'ils soient dorés et croustillants.", badge: null },
+      { icone: "🥄", titre: "Sauce", detail: "Pendant la cuisson, mélanger le yaourt et le raifort avec une pincée de sel pour une sauce fraîche et piquante.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "À mi-cuisson, retourner les frites pour qu'elles dorent uniformément sur toutes les faces.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Saler les frites à la sortie du four et servir aussitôt bien chaudes avec la sauce au raifort.", badge: null }
     ]
   },
   cervellecanut: {
@@ -2305,9 +2321,12 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥄", titre: "Battre", detail: "Battre le fromage blanc avec l'huile et le vinaigre jusqu'à lisse.", badge: null },
-      { icone: "🌿", titre: "Herbes", detail: "Incorporer persil, ciboulette, ail et échalote finement hachés. ASTUCE CHEF : prépare-la la veille — les herbes et l'ail infusent le fromage et le goût est bien plus marqué.", badge: null },
-      { icone: "❄️", titre: "Reposer", detail: "Réserver au frais, servir avec du pain ou des crudités.", badge: "⏱ 2 h" }
+      { icone: "🔪", titre: "Préparer", detail: "Ciseler très finement le persil, la ciboulette et l'oignon rouge ; presser ou hacher l'ail.", badge: null },
+      { icone: "🥣", titre: "Battre", detail: "Battre le fromage blanc avec l'huile d'olive et le vinaigre de vin jusqu'à obtenir une texture lisse et onctueuse.", badge: null },
+      { icone: "🌿", titre: "Herbes", detail: "Incorporer le persil, la ciboulette, l'ail et l'oignon rouge hachés, puis mélanger pour bien répartir les aromates.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et goûter pour ajuster l'équilibre entre l'acidité du vinaigre et la fraîcheur des herbes.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Couvrir et réserver au frais au moins 2 h, idéalement la veille, pour que l'ail et les herbes infusent le fromage.", badge: null },
+      { icone: "🍞", titre: "Servir", detail: "Présenter frais en ramequin, accompagné de pain de campagne grillé ou de crudités à tremper.", badge: null }
     ]
   },
   loadedfries: {
@@ -2339,10 +2358,12 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍟", titre: "Frites", detail: "Couper les pommes de terre en frites et les rôtir/frire croustillantes.", badge: "⏱ 25 min" },
-      { icone: "🥓", titre: "Garniture", detail: "Faire dorer les lardons.", badge: "⏱ 5 min" },
-      { icone: "🧀", titre: "Gratiner", detail: "Couvrir les frites de cheddar et lardons, faire fondre au four. ASTUCE CHEF : sèche bien les frites avant cuisson et ne les empile pas — c'est le secret de frites croustillantes qui tiennent sous la garniture.", badge: "⏱ 4 min" },
-      { icone: "🌿", titre: "Finir", detail: "Filet de crème, oignon rouge et ciboulette.", badge: null }
+      { icone: "🔪", titre: "Tailler", detail: "Couper les pommes de terre en frites régulières, les rincer puis les sécher soigneusement pour garantir le croustillant.", badge: null },
+      { icone: "🔥", titre: "Cuire les frites", detail: "Rôtir au four à 220°C pendant 25 min sans les empiler, en les retournant à mi-cuisson jusqu'à ce qu'elles soient bien dorées.", badge: null },
+      { icone: "🥓", titre: "Lardons", detail: "Pendant ce temps, faire dorer les lardons à la poêle à feu vif jusqu'à ce qu'ils soient croustillants, puis les égoutter.", badge: null },
+      { icone: "🧀", titre: "Gratiner", detail: "Couvrir les frites chaudes de cheddar râpé et de lardons, puis enfourner 5 min à 200°C pour faire fondre le fromage.", badge: null },
+      { icone: "🧅", titre: "Garnir", detail: "Émincer finement l'oignon rouge et ciseler la ciboulette pendant que le fromage gratine.", badge: null },
+      { icone: "🍽️", titre: "Finir", detail: "Arroser d'un filet de crème, parsemer d'oignon rouge et de ciboulette, puis servir aussitôt à partager.", badge: null }
     ]
   },
   halloumifries: {
@@ -2374,10 +2395,12 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Tailler", detail: "Couper le halloumi en bâtonnets type frites.", badge: null },
-      { icone: "🌾", titre: "Enrober", detail: "Enrober légèrement de farine et de paprika.", badge: null },
-      { icone: "🔥", titre: "Dorer", detail: "Dorer à la poêle sur toutes les faces. ASTUCE CHEF : ne sale surtout pas — le halloumi est déjà très salé ; c'est le miel qui équilibre, pas le sel.", badge: "⏱ 5 min" },
-      { icone: "🍯", titre: "Finir", detail: "Arroser de miel et parsemer de sésame, servir aussitôt.", badge: null }
+      { icone: "🔪", titre: "Tailler", detail: "Couper le halloumi en bâtonnets réguliers type frites et les éponger pour retirer l'excès d'humidité.", badge: null },
+      { icone: "🌾", titre: "Enrober", detail: "Mélanger la farine et le paprika, puis enrober légèrement chaque bâtonnet de halloumi sans le saler.", badge: null },
+      { icone: "🍳", titre: "Chauffer", detail: "Faire chauffer l'huile dans une poêle à feu moyen-vif jusqu'à ce qu'elle soit bien chaude mais sans fumer.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Faire dorer les frites de halloumi 2 à 3 min par face jusqu'à obtenir une croûte dorée et croustillante.", badge: null },
+      { icone: "🍯", titre: "Glacer", detail: "Égoutter sur papier absorbant puis arroser de miel qui vient équilibrer le côté salé du fromage.", badge: null },
+      { icone: "🫓", titre: "Servir", detail: "Parsemer de graines de sésame et servir aussitôt, tant que le halloumi est fondant à cœur et croustillant dehors.", badge: null }
     ]
   },
   bretzelgarni: {
@@ -2409,10 +2432,14 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥨", titre: "Pâte", detail: "Pétrir farine, levure et beurre, laisser pousser et façonner les bretzels.", badge: "⏱ 1 h" },
-      { icone: "💧", titre: "Pocher", detail: "Pocher quelques secondes dans une eau bicarbonatée. ASTUCE CHEF : le bain d'eau bicarbonatée avant cuisson, c'est LE secret de la croûte brune et du goût typique du bretzel — ne le saute pas.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Saler au gros sel et cuire au four jusqu'à brun doré.", badge: "⏱ 14 min" },
-      { icone: "🧀", titre: "Sauce", detail: "Faire fondre le cheddar avec le lait en sauce à tremper.", badge: null }
+      { icone: "🥣", titre: "Pétrir", detail: "Mélanger la farine, la levure, une pincée de sel et le beurre fondu avec de l'eau tiède, puis pétrir 10 min jusqu'à obtenir une pâte lisse et élastique.", badge: null },
+      { icone: "⏳", titre: "Pousser", detail: "Couvrir la pâte d'un linge et la laisser lever 30 min près d'une source de chaleur jusqu'à ce qu'elle double de volume.", badge: null },
+      { icone: "🥨", titre: "Façonner", detail: "Diviser la pâte, rouler chaque part en long boudin fin et nouer la forme caractéristique du bretzel.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Plonger chaque bretzel 30 secondes dans une eau frémissante additionnée de bicarbonate : c'est ce bain qui donne la croûte brune et le goût typique.", badge: null },
+      { icone: "🧂", titre: "Saler", detail: "Égoutter, déposer sur une plaque, badigeonner d'œuf battu et parsemer généreusement de gros sel.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C pendant 12 à 15 min jusqu'à ce que les bretzels soient brun doré et brillants.", badge: null },
+      { icone: "🧀", titre: "Sauce", detail: "Faire fondre doucement le cheddar avec le lait à feu doux en remuant pour obtenir une sauce nappante et lisse.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Présenter les bretzels tièdes avec la sauce cheddar chaude en accompagnement pour tremper.", badge: null }
     ]
   },
   tornadopotato: {
@@ -2444,9 +2471,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌀", titre: "Spiraliser", detail: "Embrocher la pomme de terre et la trancher en spirale, l'étirer en accordéon sur le pic.", badge: null },
-      { icone: "🫒", titre: "Huiler", detail: "Badigeonner d'huile à l'ail et de paprika dans les interstices. ASTUCE CHEF : écarte bien les spires sur le pic avant cuisson — séparées, chaque tranche croustille au lieu de cuire à la vapeur collée.", badge: null },
-      { icone: "🔥", titre: "Rôtir", detail: "Rôtir au four jusqu'à doré et croustillant, parsemer de parmesan.", badge: "⏱ 22 min" }
+      { icone: "🥔", titre: "Embrocher", detail: "Laver la pomme de terre et enfoncer un pic en bois sur toute sa longueur, bien au centre.", badge: null },
+      { icone: "🌀", titre: "Spiraliser", detail: "Trancher la pomme de terre en spirale continue tout autour du pic à l'aide d'un couteau fin et bien aiguisé.", badge: null },
+      { icone: "↔️", titre: "Étirer", detail: "Écarter délicatement les spires en accordéon le long du pic pour bien séparer chaque tranche.", badge: null },
+      { icone: "🧄", titre: "Aromatiser", detail: "Mélanger l'huile avec l'ail écrasé et le paprika, puis badigeonner ce mélange jusque dans les interstices.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Enfourner à 200°C pendant 20 à 25 min, jusqu'à ce que les spires soient bien dorées et croustillantes.", badge: null },
+      { icone: "🧀", titre: "Parsemer", detail: "À la sortie du four, saupoudrer généreusement de parmesan râpé pour qu'il fonde légèrement sur la chaleur.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Déguster aussitôt, tiède et croustillant, directement sur le pic en guise d'apéritif convivial.", badge: null }
     ]
   },
   salchipapas: {
@@ -2478,9 +2509,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍟", titre: "Frites", detail: "Couper et frire/rôtir les pommes de terre croustillantes.", badge: "⏱ 22 min" },
-      { icone: "🌭", titre: "Saucisse", detail: "Dorer les rondelles de saucisse à la poêle. ASTUCE CHEF : entaille légèrement les rondelles de saucisse en croix — elles s'ouvrent en cuisant et dorent sur plus de surface.", badge: "⏱ 5 min" },
-      { icone: "🥫", titre: "Servir", detail: "Mêler frites et saucisse, servir avec mayo et ketchup.", badge: null }
+      { icone: "🥔", titre: "Tailler", detail: "Éplucher les pommes de terre et les couper en frites régulières, puis les éponger soigneusement.", badge: null },
+      { icone: "🍟", titre: "Frire", detail: "Plonger les frites dans l'huile à 170°C pendant 6 à 8 min jusqu'à ce qu'elles soient bien dorées et croustillantes.", badge: null },
+      { icone: "🔪", titre: "Entailler", detail: "Couper les saucisses en rondelles et les inciser légèrement en croix pour qu'elles s'ouvrent et dorent à la cuisson.", badge: null },
+      { icone: "🍳", titre: "Dorer", detail: "Faire revenir les rondelles de saucisse à la poêle 5 min à feu vif jusqu'à coloration sur toutes les faces.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Égoutter les frites sur du papier absorbant et les saler aussitôt encore chaudes.", badge: null },
+      { icone: "🥗", titre: "Mêler", detail: "Mélanger les frites croustillantes et les rondelles de saucisse dorées dans un plat de service.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir immédiatement, bien chaud, accompagné de mayonnaise et de ketchup pour tremper.", badge: null }
     ]
   },
   courgettesgrillees: {
@@ -2513,9 +2548,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Trancher", detail: "Trancher les courgettes en lamelles dans la longueur.", badge: null },
-      { icone: "🔥", titre: "Griller", detail: "Griller à la poêle-gril ou au barbecue. ASTUCE CHEF : grille à sec ou très peu huilé, et marine APRÈS — huilées avant, elles fument et ne marquent pas joliment.", badge: "⏱ 8 min" },
-      { icone: "🫒", titre: "Mariner", detail: "Mariner les courgettes grillées dans huile, ail, citron, vinaigre et menthe.", badge: "⏱ 30 min" }
+      { icone: "🔪", titre: "Trancher", detail: "Laver les courgettes et les détailler en fines lamelles régulières dans le sens de la longueur.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Saisir les lamelles sur une poêle-gril bien chaude à sec, 2 min par face, jusqu'à obtenir de belles marques quadrillées.", badge: null },
+      { icone: "🧄", titre: "Marinade", detail: "Préparer la marinade en mélangeant l'huile d'olive, l'ail haché, le jus de citron et le vinaigre balsamique.", badge: null },
+      { icone: "🌿", titre: "Mariner", detail: "Disposer les courgettes grillées dans un plat, les napper de marinade et parsemer de menthe ciselée.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et mélanger délicatement pour bien enrober chaque lamelle de marinade.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laisser mariner au frais au moins 30 min pour que les saveurs s'imprègnent dans les courgettes.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Servir à température ambiante, joliment disposées, en antipasti ou accompagnement frais.", badge: null }
     ]
   },
   auberginesgrillees: {
@@ -2548,9 +2587,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍆", titre: "Trancher", detail: "Trancher les aubergines en rondelles ou lamelles.", badge: null },
-      { icone: "🔥", titre: "Griller", detail: "Griller jusqu'à marquées et fondantes. ASTUCE CHEF : sale les tranches 15 min avant de griller et éponge-les — elles dégorgent leur amertume et grillent sans boire l'huile.", badge: "⏱ 10 min" },
-      { icone: "🫒", titre: "Mariner", detail: "Mariner dans huile, ail, persil, citron et vinaigre.", badge: "⏱ 30 min" }
+      { icone: "🔪", titre: "Trancher", detail: "Détailler les aubergines en rondelles ou lamelles régulières d'environ un demi-centimètre d'épaisseur.", badge: null },
+      { icone: "🧂", titre: "Dégorger", detail: "Saler les tranches et les laisser dégorger 15 min, puis les éponger pour retirer l'amertume et l'excès d'eau.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller les tranches sur une poêle-gril ou au barbecue 3 min par face jusqu'à ce qu'elles soient marquées et fondantes.", badge: null },
+      { icone: "🧄", titre: "Marinade", detail: "Mélanger l'huile d'olive, l'ail haché, le jus de citron et le vinaigre balsamique pour la marinade.", badge: null },
+      { icone: "🌿", titre: "Mariner", detail: "Disposer les aubergines grillées en couches, napper de marinade et parsemer de persil haché.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laisser mariner au frais au moins 30 min pour que les aubergines s'imprègnent des arômes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Présenter à température ambiante en antipasti, avec un filet d'huile supplémentaire si besoin.", badge: null }
     ]
   },
   poivronsmarines: {
@@ -2583,9 +2626,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Rôtir", detail: "Rôtir les poivrons entiers jusqu'à ce que la peau noircisse.", badge: "⏱ 20 min" },
-      { icone: "🧤", titre: "Peler", detail: "Enfermer les poivrons tièdes dans un sac, puis les peler. ASTUCE CHEF : enferme les poivrons grillés dans un sac fermé 10 min — la vapeur décolle la peau qui s'enlève alors toute seule.", badge: null },
-      { icone: "🫒", titre: "Mariner", detail: "Détailler en lanières et mariner dans huile, ail, persil et vinaigre.", badge: null }
+      { icone: "🫑", titre: "Préparer", detail: "Laver les poivrons entiers et les déposer sur une plaque ou directement sur la flamme.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Rôtir au four à 220°C pendant 25 à 30 min en les retournant, jusqu'à ce que la peau noircisse et cloque.", badge: null },
+      { icone: "♨️", titre: "Suer", detail: "Enfermer les poivrons chauds dans un sac fermé 10 min : la vapeur décolle la peau qui s'enlève toute seule.", badge: null },
+      { icone: "🧤", titre: "Peler", detail: "Peler les poivrons tièdes, retirer le pédoncule et les graines, puis les détailler en lanières.", badge: null },
+      { icone: "🧄", titre: "Marinade", detail: "Mélanger l'huile d'olive, l'ail finement haché, le persil ciselé et le vinaigre de Xérès.", badge: null },
+      { icone: "🥗", titre: "Mariner", detail: "Enrober les lanières de poivron de marinade, saler et mélanger délicatement.", badge: null },
+      { icone: "❄️", titre: "Servir", detail: "Laisser reposer au frais au moins 30 min, puis servir à température ambiante en tapas.", badge: null }
     ]
   },
   houmouscourgette: {
@@ -2618,9 +2665,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥒", titre: "Cuire", detail: "Cuire la courgette à la vapeur jusqu'à tendreté.", badge: null },
-      { icone: "🌀", titre: "Mixer", detail: "Mixer courgette, pois chiches, tahini, ail, citron et cumin. ASTUCE CHEF : ajoute un glaçon en mixant le houmous — le choc froid le rend incroyablement aérien et crémeux.", badge: null },
-      { icone: "🫒", titre: "Servir", detail: "Lisser, filet d'huile et paprika, servir avec des crudités.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Laver la courgette et la couper en tronçons réguliers, sans nécessairement l'éplucher.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Cuire la courgette à la vapeur 8 à 10 min jusqu'à ce qu'elle soit bien tendre, puis l'égoutter.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer la courgette avec les pois chiches, le tahini, l'ail, le jus de citron et le cumin.", badge: null },
+      { icone: "🧊", titre: "Émulsionner", detail: "Ajouter un glaçon en mixant : le choc froid rend le houmous incroyablement aérien et crémeux.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, goûter et rectifier l'acidité en ajoutant un filet de citron ou un peu d'huile si nécessaire.", badge: null },
+      { icone: "🥄", titre: "Lisser", detail: "Verser le houmous dans un bol et le lisser en formant un creux à la cuillère.", badge: null },
+      { icone: "🫒", titre: "Servir", detail: "Arroser d'un filet d'huile d'olive, saupoudrer de paprika et servir frais avec des crudités.", badge: null }
     ]
   },
   bourekalg: {
@@ -2651,9 +2702,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Farce", detail: "Faire revenir la viande avec l'oignon et le persil.", badge: null },
-      { icone: "🥟", titre: "Rouler", detail: "Garnir la pâte, rouler serré, fermer à l'œuf.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire jusqu'à coloration dorée.", badge: null }
+      { icone: "🔪", titre: "Émincer", detail: "Éplucher et hacher finement l'oignon, ciseler le persil et préparer la viande de bœuf hachée.", badge: null },
+      { icone: "🍳", titre: "Farce", detail: "Faire revenir l'oignon à la poêle, ajouter le bœuf et cuire 8 min à feu moyen jusqu'à ce qu'il soit doré.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer, incorporer le persil et un œuf battu pour lier la farce, puis laisser tiédir.", badge: null },
+      { icone: "📜", titre: "Garnir", detail: "Étaler une feuille de pâte feuilletée, déposer un boudin de farce sur un bord et rabattre les côtés.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Rouler serré en cigare et fermer le bord à l'œuf battu pour sceller le bourek.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Plonger les bourek dans l'huile à 170°C pendant 4 à 5 min jusqu'à coloration dorée et croustillante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égoutter sur du papier absorbant et servir chaud avec un quartier de citron.", badge: null }
     ]
   },
   bitterballen: {
@@ -2684,9 +2739,14 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Ragout", detail: "Préparer un ragoût épais de bœuf lié au roux.", badge: null },
-      { icone: "❄️", titre: "Refroidir", detail: "Façonner des boules, refroidir.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Paner et frire jusqu'à doré.", badge: null }
+      { icone: "🥩", titre: "Cuire", detail: "Cuire le bœuf jusqu'à tendreté puis le hacher ou l'effilocher finement.", badge: null },
+      { icone: "🧈", titre: "Roux", detail: "Faire fondre le beurre, incorporer la farine et cuire 2 min en remuant pour former un roux blond.", badge: null },
+      { icone: "🥣", titre: "Ragoût", detail: "Verser le bouillon progressivement sur le roux, ajouter le bœuf et cuire jusqu'à obtenir un ragoût très épais.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Étaler l'appareil dans un plat et le placer au frais au moins 2 h pour qu'il fige et soit façonnable.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Prélever des portions et rouler des petites boules régulières entre les paumes.", badge: null },
+      { icone: "🥚", titre: "Paner", detail: "Passer chaque boule dans la farine, puis dans l'œuf battu et enfin dans la chapelure.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Frire dans l'huile à 180°C pendant 3 à 4 min jusqu'à ce que les bitterballen soient dorés et croustillants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égoutter et servir bien chaud, le cœur coulant, avec de la moutarde en accompagnement.", badge: null }
     ]
   },
   tequenos: {
@@ -2717,9 +2777,13 @@ tapenade: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Enrober", detail: "Enrouler des bâtonnets de fromage dans la pâte.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire jusqu'à doré.", badge: null },
-      { icone: "🧂", titre: "Servir", detail: "Servir chaud, fromage filant.", badge: null }
+      { icone: "🧀", titre: "Tailler", detail: "Couper la mozzarella en bâtonnets réguliers d'environ un centimètre de section.", badge: null },
+      { icone: "📜", titre: "Découper", detail: "Détailler la pâte feuilletée en longues bandes étroites pour enrober les bâtonnets.", badge: null },
+      { icone: "🌯", titre: "Enrober", detail: "Enrouler chaque bâtonnet de fromage en spirale avec une bande de pâte, en couvrant bien les extrémités.", badge: null },
+      { icone: "🥚", titre: "Sceller", detail: "Souder le bord de la pâte avec un peu d'œuf battu pour éviter que le fromage ne s'échappe à la cuisson.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Placer les tequeños 15 min au frais pour raffermir la pâte avant la friture.", badge: null },
+      { icone: "🍳", titre: "Frire", detail: "Plonger dans l'huile à 180°C pendant 2 à 3 min jusqu'à ce que la pâte soit dorée et croustillante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égoutter sur du papier absorbant et servir aussitôt, bien chaud, le fromage filant à cœur.", badge: null }
     ]
   }
 });

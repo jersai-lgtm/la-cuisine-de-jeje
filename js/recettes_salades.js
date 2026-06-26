@@ -31,11 +31,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Cuire les œufs durs", detail: "Plonger les œufs dans l'eau bouillante. Refroidir sous l'eau froide, écaler et couper en quartiers. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 10 min" },
-      { icone: "🍅", titre: "Préparer les légumes", detail: "Laver et couper les tomates en quartiers. Émincer l'oignon rouge en fines rondelles. Laver et essorer la salade. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🐟", titre: "Préparer le thon", detail: "Égoutter le thon et l'émietter grossièrement. Rincer les filets d'anchois. Rincer abondamment à l'eau froide.", badge: null },
-      { icone: "🥗", titre: "Dresser la salade", detail: "Disposer la salade dans un plat. Ajouter les tomates, l'oignon, les olives, le thon, les anchois et les œufs en quartiers. Ne pas mélanger — présenter chaque ingrédient séparément.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Arroser d'un généreux filet d'huile d'olive, saler, poivrer. Parsemer de basilic frais ciselé. Servir immédiatement.", badge: null }
+      { icone: "🥚", titre: "Œufs durs", detail: "Plongez les œufs dans l'eau bouillante 9 min, refroidissez-les sous l'eau froide, écalez-les et coupez-les en quartiers.", badge: null },
+      { icone: "🔪", titre: "Légumes", detail: "Lavez et coupez les tomates en quartiers, émincez l'oignon en fines rondelles et essorez la salade.", badge: null },
+      { icone: "🐟", titre: "Thon", detail: "Égouttez le thon et émiettez-le grossièrement, puis rincez les filets d'anchois à l'eau froide.", badge: null },
+      { icone: "🫒", titre: "Olives", detail: "Préparez les olives noires et réunissez tous les éléments à portée pour le dressage.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Disposez la salade au fond du plat, puis présentez tomates, oignon, olives, thon, anchois et œufs séparément sans mélanger.", badge: null },
+      { icone: "🫗", titre: "Assaisonner", detail: "Arrosez d'un généreux filet d'huile d'olive, salez, poivrez et parsemez de basilic frais ciselé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt à température ambiante pour profiter pleinement de la fraîcheur des ingrédients.", badge: null }
     ]
   },
   saladecesar: {
@@ -66,10 +68,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍞", titre: "Faire les croûtons", detail: "Couper le pain en cubes. Les faire dorer à la poêle avec un filet d'huile d'olive et une gousse d'ail écrasée. Réserver. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 5 min" },
-      { icone: "🍗", titre: "Griller le poulet", detail: "Saler, poivrer et griller les escalopes de poulet à la poêle ou au four. Laisser reposer 5 min puis couper en tranches. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 10 min" },
-      { icone: "🥚", titre: "Préparer la sauce César", detail: "Mélanger : 2 jaunes d'œufs, 1 c.à.s de moutarde, jus de citron, ail pressé, 4 c.à.s d'huile d'olive, parmesan râpé, sel, poivre. Fouetter jusqu'à émulsion.", badge: null },
-      { icone: "🥬", titre: "Dresser", detail: "Laver et déchirer la laitue romaine. La mélanger avec la sauce César. Disposer le poulet en tranches, les croûtons et des copeaux de parmesan.", badge: null }
+      { icone: "🍞", titre: "Croûtons", detail: "Coupez le pain en cubes et faites-les dorer à la poêle avec un filet d'huile et une gousse d'ail écrasée, puis réservez.", badge: null },
+      { icone: "🍗", titre: "Poulet", detail: "Salez, poivrez et grillez les escalopes de poulet 5 min par face, laissez reposer 5 min puis tranchez-les.", badge: null },
+      { icone: "🥚", titre: "Sauce", detail: "Fouettez les jaunes d'œufs avec la moutarde, le jus de citron et l'ail pressé jusqu'à émulsion.", badge: null },
+      { icone: "🧀", titre: "Émulsion", detail: "Versez l'huile en filet sans cesser de fouetter, ajoutez le parmesan râpé, le sel et le poivre pour une sauce crémeuse.", badge: null },
+      { icone: "🥬", titre: "Laitue", detail: "Lavez, essorez et déchirez la laitue romaine, puis mélangez-la délicatement avec la sauce César.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Répartissez la laitue dans les assiettes, ajoutez le poulet tranché, les croûtons et des copeaux de parmesan.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez immédiatement pour que les croûtons restent croustillants et la laitue bien fraîche.", badge: null }
     ]
   },
   saladegreque: {
@@ -100,11 +105,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥗", titre: "Préparation soignée", detail: "Laver soigneusement les légumes feuilles. Bien essorer (eau = vinaigrette diluée). ASTUCE CHEF : couper au dernier moment pour conserver la fraîcheur.", badge: "⏱ 10 min" },
-      { icone: "🍅", titre: "Couper les légumes", detail: "Couper les tomates en quartiers, le concombre en demi-rondelles, l'oignon rouge en fines lamelles. Disposer dans un saladier. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🫒", titre: "Ajouter les olives", detail: "Ajouter les olives noires de Kalamata. Émietter ou couper la feta en cubes et disposer par-dessus. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🌿", titre: "Assaisonner", detail: "Arroser d'huile d'olive généreusement. Saupoudrer d'origan séché. Saler légèrement (la feta est déjà salée), poivrer. Servir immédiatement.", badge: null },
-      { icone: "🍽️", titre: "Service immédiat", detail: "Mélanger délicatement avec la vinaigrette JUSTE avant de servir (sinon les feuilles cuisent). Servir IMMÉDIATEMENT à température ambiante.", badge: null }
+      { icone: "🧼", titre: "Laver", detail: "Lavez soigneusement les tomates, le concombre et l'oignon, puis essuyez-les bien.", badge: null },
+      { icone: "🔪", titre: "Couper", detail: "Coupez les tomates en quartiers, le concombre en demi-rondelles et l'oignon rouge en fines lamelles.", badge: null },
+      { icone: "🥗", titre: "Disposer", detail: "Disposez les légumes dans un grand saladier et ajoutez les olives noires de Kalamata.", badge: null },
+      { icone: "🧀", titre: "Feta", detail: "Posez un bloc de feta entier sur le dessus, ou détaillez-la en gros cubes selon votre préférence.", badge: null },
+      { icone: "🫗", titre: "Assaisonner", detail: "Arrosez généreusement d'huile d'olive, saupoudrez d'origan séché, salez légèrement et poivrez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Mélangez délicatement juste avant de servir et présentez à température ambiante.", badge: null }
     ]
   },
   saladepatasthon: {
@@ -134,10 +140,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes courtes (fusilli, farfalle, penne) dans l'eau bouillante salée. Les égoutter et les rincer à l'eau froide pour stopper la cuisson. Laisser refroidir. Rincer abondamment à l'eau froide.", badge: "⏱ selon paquet" },
-      { icone: "🐟", titre: "Préparer le thon", detail: "Égoutter le thon et l'émietter. Couper les tomates cerises en deux, émincer l'oignon. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mélanger les pâtes froides avec le thon, les tomates, le maïs et l'oignon. Ajouter des olives et du basilic si souhaité.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Assaisonner avec de l'huile d'olive, du vinaigre de cidre, du sel et du poivre. Bien mélanger. Réfrigérer 30 min avant de servir. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: "⏱ 30 min au frais" }
+      { icone: "🍝", titre: "Cuire pâtes", detail: "Faites cuire les pâtes courtes dans l'eau bouillante salée, égouttez-les et rincez-les à l'eau froide pour stopper la cuisson.", badge: null },
+      { icone: "🐟", titre: "Thon", detail: "Égouttez le thon et émiettez-le grossièrement dans un saladier.", badge: null },
+      { icone: "🔪", titre: "Légumes", detail: "Coupez les tomates cerises en deux et émincez finement l'oignon.", badge: null },
+      { icone: "🌽", titre: "Assembler", detail: "Mélangez les pâtes froides avec le thon, les tomates, le maïs égoutté et l'oignon.", badge: null },
+      { icone: "🫗", titre: "Assaisonner", detail: "Assaisonnez d'huile d'olive, de sel et de poivre, puis mélangez bien et goûtez pour ajuster.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Réfrigérez 30 min avant de servir pour que les saveurs se développent et que la salade soit bien fraîche.", badge: null }
     ]
   },
   saladerizmediterranee: {
@@ -167,10 +175,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Cuire le riz", detail: "Cuire le riz dans l'eau bouillante salée. Égoutter et rincer à l'eau froide. Laisser refroidir complètement. Rincer abondamment à l'eau froide.", badge: "⏱ 15 min" },
-      { icone: "🔥", titre: "Griller les légumes", detail: "Couper poivron et courgette en dés. Faire griller à la poêle avec un filet d'huile d'olive jusqu'à légère coloration. Laisser refroidir. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 8 min" },
-      { icone: "🥗", titre: "Assembler", detail: "Mélanger le riz froid avec les légumes grillés refroidis, les tomates cerises coupées en deux et les olives.", badge: null },
-      { icone: "🌿", titre: "Assaisonner", detail: "Arroser d'huile d'olive, jus de citron, sel, poivre. Ajouter du basilic et du persil frais ciselés. Réfrigérer avant de servir.", badge: "⏱ 30 min au frais" }
+      { icone: "🍚", titre: "Cuire riz", detail: "Cuire le riz 12 min dans une grande casserole d'eau bouillante salée, puis l'égoutter et le rincer abondamment à l'eau froide pour stopper la cuisson et le refroidir complètement.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Couper le poivron et la courgette en petits dés réguliers, tailler les tomates en quartiers ou en dés et dénoyauter les olives si nécessaire.", badge: null },
+      { icone: "🍳", titre: "Griller légumes", detail: "Faire revenir les dés de poivron et de courgette 6 à 8 min à feu vif dans un filet d'huile d'olive jusqu'à légère coloration, puis laisser tiédir hors du feu.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Dans un grand saladier, mélanger délicatement le riz froid avec les légumes grillés refroidis, les tomates et les olives.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Arroser d'huile d'olive et de jus de citron, saler et poivrer, puis mélanger pour bien enrober l'ensemble.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Couvrir et réfrigérer au moins 20 min pour que les saveurs se développent et que la salade soit bien fraîche.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Rectifier l'assaisonnement, parsemer de basilic frais ciselé et servir bien frais en entrée ou en accompagnement estival.", badge: null }
     ]
   },
   tabulemaison: {
@@ -200,10 +211,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Hydrater la semoule", detail: "Verser la semoule dans un saladier. Ajouter la même quantité d'eau bouillante salée. Couvrir et laisser gonfler 5 min. Égrainer à la fourchette et laisser refroidir.", badge: "⏱ 5 min repos" },
-      { icone: "🍅", titre: "Préparer les légumes", detail: "Couper les tomates et le concombre épépiné en très petits dés. Ciseler finement le persil plat et la menthe. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥗", titre: "Mélanger", detail: "Ajouter les légumes et les herbes à la semoule refroidie. Bien mélanger.", badge: null },
-      { icone: "🍋", titre: "Assaisonner et reposer", detail: "Arroser de jus de citron et d'huile d'olive. Saler, poivrer. Mélanger et réfrigérer. Plus le taboulé repose, plus il est savoureux !", badge: "⏱ 1h minimum au frais" }
+      { icone: "💧", titre: "Hydrater", detail: "Verser la semoule dans un saladier, couvrir d'un volume égal d'eau bouillante salée, couvrir et laisser gonfler 5 min.", badge: null },
+      { icone: "🍴", titre: "Égrainer", detail: "Égrainer la semoule gonflée à la fourchette pour bien la séparer, puis la laisser refroidir complètement à température ambiante.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Couper les tomates et le concombre épépiné en très petits dés, et ciseler finement le persil plat et la menthe.", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Ajouter les légumes et les herbes à la semoule refroidie et mélanger délicatement pour répartir l'ensemble.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Arroser généreusement de jus de citron et d'huile d'olive, saler, poivrer et mélanger une dernière fois.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Couvrir et réfrigérer au moins 1 h, voire plusieurs heures, pour que la semoule s'imprègne des arômes et du jus de citron.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Goûter, rectifier en citron et sel si besoin, et servir bien frais avec une feuille de menthe pour décorer.", badge: null }
     ]
   },
   saladelentilles: {
@@ -234,10 +248,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥜", titre: "Cuire les lentilles", detail: "Rincer les lentilles vertes (du Puy de préférence). Les plonger dans l'eau froide avec un bouquet garni et les carottes coupées. Porter à ébullition puis cuire à feu moyen. Ne pas saler en début de cuisson. Rincer abondamment à l'eau froide.", badge: "⏱ 20–25 min" },
-      { icone: "🥓", titre: "Faire revenir les lardons", detail: "Faire dorer les lardons à la poêle sans matière grasse. Égoutter sur du papier absorbant. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 5 min" },
-      { icone: "🥣", titre: "Préparer la vinaigrette", detail: "Mélanger 1 c.à.s de moutarde, 2 c.à.s de vinaigre de vin, 4 c.à.s d'huile d'olive, sel et poivre. Bien fouetter.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Égoutter les lentilles encore chaudes et les mélanger immédiatement avec la vinaigrette. Ajouter les lardons et l'oignon émincé. Servir tiède ou froid.", badge: null }
+      { icone: "🥄", titre: "Cuire lentilles", detail: "Rincer les lentilles vertes et les plonger dans l'eau froide avec un bouquet garni et les carottes coupées en dés, porter à ébullition puis cuire 20 à 25 min à feu moyen sans saler.", badge: null },
+      { icone: "🥓", titre: "Dorer lardons", detail: "Pendant ce temps, faire dorer les lardons à la poêle sans matière grasse 4 à 5 min jusqu'à coloration uniforme, puis les égoutter sur du papier absorbant.", badge: null },
+      { icone: "🧅", titre: "Émincer", detail: "Émincer finement l'oignon et le réserver pour apporter du croquant et du piquant à la salade.", badge: null },
+      { icone: "🥣", titre: "Vinaigrette", detail: "Préparer la vinaigrette en fouettant la moutarde, le vinaigre de vin, l'huile, le sel et le poivre jusqu'à émulsion.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Égoutter les lentilles encore tièdes et les mélanger aussitôt avec la vinaigrette pour qu'elles s'imprègnent, puis incorporer les lardons et l'oignon.", badge: null },
+      { icone: "🌡️", titre: "Reposer", detail: "Laisser reposer 10 min à température ambiante pour que les saveurs se fondent et que les lentilles absorbent l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifier l'assaisonnement et servir tiède ou froid, éventuellement parsemé de persil ciselé.", badge: null }
     ]
   },
   saladeavocatcrevettes: {
@@ -268,10 +285,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥑", titre: "Préparer les avocats", detail: "Couper les avocats en deux, retirer le noyau. Les couper en tranches ou en dés. Arroser immédiatement de jus de citron pour éviter l'oxydation. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🦐", titre: "Préparer les crevettes", detail: "Si besoin, décortiquer les crevettes roses cuites. Les garder entières ou les couper en deux. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍶", titre: "Préparer la sauce cocktail", detail: "Mélanger 3 c.à.s de mayonnaise, 1 c.à.s de ketchup, quelques gouttes de Tabasco, jus de citron, sel et poivre.", badge: null },
-      { icone: "🥗", titre: "Dresser", detail: "Disposer la salade dans les assiettes. Ajouter l'avocat et les crevettes. Napper de sauce cocktail. Garnir d'aneth ou de ciboulette.", badge: null }
+      { icone: "🥑", titre: "Avocats", detail: "Couper les avocats en deux, retirer le noyau, les tailler en tranches ou en dés et les arroser aussitôt de jus de citron pour éviter l'oxydation.", badge: null },
+      { icone: "🦐", titre: "Crevettes", detail: "Décortiquer les crevettes roses cuites si nécessaire et les garder entières ou les couper en deux selon leur taille.", badge: null },
+      { icone: "🥬", titre: "Salade", detail: "Laver et essorer la salade, puis la répartir dans les assiettes ou un grand plat de service.", badge: null },
+      { icone: "🥄", titre: "Sauce", detail: "Préparer une sauce cocktail légère en mélangeant mayonnaise, un peu de ketchup, quelques gouttes de Tabasco, du jus de citron, du sel et du poivre.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposer harmonieusement l'avocat et les crevettes sur le lit de salade, puis napper de sauce cocktail.", badge: null },
+      { icone: "❄️", titre: "Rafraîchir", detail: "Réserver quelques minutes au frais avant de servir pour que la salade soit bien fraîche et la sauce raffermie.", badge: null }
     ]
   },
   saladeThai: {
@@ -302,10 +321,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍜", titre: "Tremper les vermicelles", detail: "Faire tremper les vermicelles de riz dans l'eau chaude 5 min. Égoutter et rincer à l'eau froide. Rincer abondamment à l'eau froide.", badge: "⏱ 5 min" },
-      { icone: "🥕", titre: "Préparer les légumes", detail: "Râper les carottes. Trancher finement le concombre. Ciseler la coriandre, la menthe et les oignons verts. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍋", titre: "Faire la vinaigrette", detail: "Mélanger jus de citron vert, sauce nuoc-mâm, sucre, ail, piment. Goûter et ajuster.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mélanger vermicelles, légumes, cacahuètes concassées. Arroser de vinaigrette. Garnir de coriandre.", badge: null }
+      { icone: "💧", titre: "Tremper", detail: "Faire tremper les pâtes de riz 5 min dans l'eau chaude jusqu'à ce qu'elles soient tendres, puis les égoutter et les rincer à l'eau froide.", badge: null },
+      { icone: "🥕", titre: "Légumes", detail: "Râper les carottes et trancher finement le concombre en demi-lunes pour apporter fraîcheur et croquant.", badge: null },
+      { icone: "🌿", titre: "Herbes", detail: "Ciseler généreusement la coriandre fraîche, qui parfumera l'ensemble de la salade.", badge: null },
+      { icone: "🍋", titre: "Sauce", detail: "Préparer la sauce en mélangeant le jus de citron vert, l'ail haché et le sucre jusqu'à dissolution, puis goûter et ajuster l'équilibre sucré-acide.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mélanger les pâtes de riz, les carottes, le concombre et la coriandre dans un grand saladier, puis arroser de sauce et mélanger délicatement.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laisser reposer 10 min au frais pour que les légumes s'imprègnent de la vinaigrette parfumée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemer d'un peu de coriandre supplémentaire et servir bien frais en entrée ou en accompagnement.", badge: null }
     ]
   },
   saladeHaricotsVerts: {
@@ -336,10 +358,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🟢", titre: "Cuire les haricots", detail: "Cuire les haricots verts al dente dans l'eau bouillante salée. Refroidir immédiatement dans l'eau glacée pour garder la couleur. 1 min de moins que sur l'emballage. Goûter pour vérifier.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Cuire les œufs durs", detail: "Cuire les œufs 9 min dans l'eau bouillante. Refroidir et écaler.", badge: "⏱ 9 min" },
-      { icone: "🌰", titre: "Griller les amandes", detail: "Faire griller les amandes effilées à sec dans une poêle jusqu'à coloration dorée. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 3 min" },
-      { icone: "🥗", titre: "Dresser", detail: "Disposer les haricots. Ajouter les œufs coupés en quartiers, les amandes. Arroser de vinaigrette moutardée.", badge: null }
+      { icone: "🫛", titre: "Cuire haricots", detail: "Cuire les haricots verts 6 à 8 min al dente dans l'eau bouillante salée, puis les plonger aussitôt dans l'eau glacée pour garder leur couleur et leur croquant.", badge: null },
+      { icone: "🥚", titre: "Œufs durs", detail: "Cuire les œufs 9 min dans l'eau bouillante, les refroidir sous l'eau froide puis les écaler et les couper en quartiers.", badge: null },
+      { icone: "🌰", titre: "Griller amandes", detail: "Faire griller les amandes effilées à sec dans une poêle 2 à 3 min à feu moyen jusqu'à coloration dorée, en remuant pour éviter qu'elles brûlent.", badge: null },
+      { icone: "🥄", titre: "Vinaigrette", detail: "Fouetter la moutarde avec le vinaigre de vin, puis incorporer l'huile en filet pour obtenir une vinaigrette émulsionnée, saler et poivrer.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Égoutter et sécher les haricots, les disposer dans le plat puis ajouter les quartiers d'œuf et parsemer d'amandes grillées.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arroser de vinaigrette moutardée juste avant de servir pour préserver le croquant des haricots et des amandes.", badge: null }
     ]
   },
   saladeFruitsMer: {
@@ -369,10 +393,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🦐", titre: "Cuire les fruits de mer", detail: "Cuire les moules à la marinière. Poêler les calamars et les crevettes 2 min. Laisser refroidir.", badge: "⏱ 10 min" },
-      { icone: "🍋", titre: "Préparer la marinade", detail: "Mélanger huile d'olive, jus de citron, ail haché, persil, sel, poivre, piment d'Espelette.", badge: null },
-      { icone: "⏳", titre: "Mariner", detail: "Mélanger tous les fruits de mer avec la marinade. Laisser mariner au frais.", badge: "⏱ 15 min" },
-      { icone: "🥗", titre: "Dresser", detail: "Disposer sur un lit de roquette ou salade verte. Garnir de quartiers de citron.", badge: null }
+      { icone: "🦪", titre: "Cuire moules", detail: "Faire ouvrir les moules à la marinière 4 à 5 min à feu vif dans une casserole couverte, puis les décoquiller et réserver.", badge: null },
+      { icone: "🦑", titre: "Poêler", detail: "Poêler les calamars et les crevettes 2 min à feu vif dans un filet d'huile d'olive, juste pour les saisir, puis laisser refroidir.", badge: null },
+      { icone: "🧄", titre: "Marinade", detail: "Préparer la marinade en mélangeant l'huile d'olive, le jus de citron, l'ail haché, le persil ciselé, le sel et le poivre.", badge: null },
+      { icone: "🥣", titre: "Mariner", detail: "Mélanger tous les fruits de mer refroidis avec la marinade et laisser mariner au moins 20 min au frais.", badge: null },
+      { icone: "🥬", titre: "Dresser", detail: "Disposer les fruits de mer marinés sur un lit de salade verte et garnir de quartiers de citron.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifier l'assaisonnement, parsemer de persil frais et servir bien frais en entrée raffinée.", badge: null }
     ]
   },
   saladePoulpe: {
@@ -402,10 +428,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐙", titre: "Cuire le poulpe", detail: "Plonger le poulpe dans l'eau bouillante avec laurier, sel, grains de poivre. Laisser mijoter. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 1h" },
-      { icone: "✂️", titre: "Découper", detail: "Laisser refroidir. Couper les tentacules en rondelles. Réserver les plus belles pour la présentation. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍯", titre: "Préparer la marinade", detail: "Mélanger huile d'olive, jus de citron, ail, persil, câpres, olives, origan. Assaisonner. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null },
-      { icone: "⏳", titre: "Mariner et servir", detail: "Mélanger poulpe et marinade. Laisser reposer 30 min. Servir sur lit de roquette. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 30 min" }
+      { icone: "🐙", titre: "Cuire poulpe", detail: "Plonger le poulpe dans l'eau bouillante avec laurier, sel et grains de poivre, puis laisser mijoter à feu doux 45 min à 1 h jusqu'à ce qu'une pointe de couteau le transperce facilement.", badge: null },
+      { icone: "🌡️", titre: "Refroidir", detail: "Laisser le poulpe refroidir dans son eau de cuisson pour qu'il reste tendre, puis l'égoutter.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Couper les tentacules en rondelles régulières en réservant les plus belles pour la présentation finale.", badge: null },
+      { icone: "🧄", titre: "Marinade", detail: "Préparer la marinade en mélangeant l'huile d'olive, le jus de citron, l'ail haché, les câpres, les olives, le sel et le poivre.", badge: null },
+      { icone: "🥣", titre: "Mariner", detail: "Mélanger le poulpe avec la marinade et laisser reposer au moins 30 min au frais pour attendrir la chair et la parfumer.", badge: null },
+      { icone: "🥬", titre: "Dresser", detail: "Disposer la salade de poulpe sur un lit de roquette et répartir les belles rondelles réservées sur le dessus.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arroser d'un dernier filet d'huile d'olive et de citron, puis servir frais en entrée méditerranéenne.", badge: null }
     ]
   },
   saladechorizofeves: {
@@ -435,10 +464,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🟢", titre: "Éplucher les fèves", detail: "Écosser les fèves fraîches. Blanchir 1 min, plonger dans l'eau glacée, enlever la deuxième peau (plus tendre !). ASTUCE PRO : eau bouillante salée 2-3 min puis eau glacée. Arrête la cuisson et garde la couleur vive.", badge: "⏱ 10 min" },
-      { icone: "🌶️", titre: "Chorizo", detail: "Couper le chorizo doux en rondelles. Le poêler à sec 2 min par face pour libérer l'huile parfumée. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 4 min" },
-      { icone: "🥗", titre: "Dresser", detail: "Disposer les fèves, le chorizo et son huile, le jambon Serrano en chiffonnade, la feta émiettée.", badge: null },
-      { icone: "🌿", titre: "Finition", detail: "Parsemer de menthe fraîche, arroser d'huile d'olive et jus de citron. Poivre du moulin généreux. Servir tiède.", badge: null }
+      { icone: "🫛", titre: "Fèves", detail: "Écosser les fèves fraîches, les blanchir 1 à 2 min dans l'eau bouillante salée puis les plonger dans l'eau glacée et retirer leur deuxième peau pour ne garder que le cœur tendre.", badge: null },
+      { icone: "🌶️", titre: "Chorizo", detail: "Couper le chorizo en rondelles et le poêler à sec 2 min par face à feu moyen pour qu'il libère son huile parfumée.", badge: null },
+      { icone: "🧀", titre: "Préparer", detail: "Émietter la feta, tailler le jambon Serrano en chiffonnade et ciseler la menthe fraîche.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer les fèves dans un plat, ajouter le chorizo avec son huile parfumée, le Serrano et la feta émiettée.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Arroser d'huile d'olive et de jus de citron, puis poivrer généreusement au moulin.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemer de menthe fraîche et servir aussitôt, tiède, pour profiter du contraste entre le chorizo chaud et la feta fraîche.", badge: null }
     ]
   },
   tabboulehlibanais: {
@@ -468,11 +499,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Hydrater le boulghour", detail: "Faire tremper le boulghour FIN 10 min dans le jus d'une moitié de citron (pas d'eau !).", badge: "⏱ 10 min" },
-      { icone: "🌿", titre: "Ciseler les herbes", detail: "Le secret : énormément de persil plat (1 botte par personne) ciselé très finement au couteau (pas d'hachoir, ça noircit).", badge: "⏱ 15 min" },
-      { icone: "🍅", titre: "Légumes", detail: "Couper la tomate en très petits dés (sans pépins). Émincer l'oignon nouveau finement.", badge: null },
-      { icone: "🥗", titre: "Mélanger", detail: "Mélanger tous les ingrédients : persil, menthe, tomate, oignon, boulghour. Assaisonner huile, citron, sel, poivre.", badge: null },
-      { icone: "❄️", titre: "Reposer", detail: "Réfrigérer 30 min minimum. Servir bien froid avec des feuilles de laitue romaine en cuillère.", badge: "⏱ 30 min" }
+      { icone: "💧", titre: "Hydrater", detail: "Faire tremper le boulghour fin 10 min dans le jus d'une moitié de citron, sans eau, pour qu'il s'imprègne d'acidité tout en restant légèrement ferme.", badge: null },
+      { icone: "🌿", titre: "Ciseler", detail: "Ciseler très finement au couteau une grande quantité de persil plat et de menthe, sans hachoir pour éviter qu'ils noircissent.", badge: null },
+      { icone: "🍅", titre: "Légumes", detail: "Couper la tomate épépinée en très petits dés et émincer finement l'oignon nouveau.", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Réunir dans un saladier le persil, la menthe, la tomate, l'oignon et le boulghour égoutté, puis mélanger délicatement.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Assaisonner d'huile d'olive, de jus de citron, de sumac, de sel et de poivre, puis mélanger pour bien enrober les herbes.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Réfrigérer au moins 30 min pour que le boulghour absorbe les arômes et que la salade soit bien fraîche.", badge: null },
+      { icone: "🥬", titre: "Servir", detail: "Goûter, rectifier en citron et sel, et servir bien froid avec des feuilles de laitue romaine en guise de cuillère.", badge: null }
     ]
   },
   poissoncrutahitien: {
@@ -502,11 +535,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Couper le poisson", detail: "Couper le thon ou la daurade très frais en dés de 1,5 cm. Saler généreusement. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍋", titre: "Citron", detail: "Arroser de jus de citron vert (3 citrons pour 4 personnes). Mélanger doucement, laisser 5 min seulement.", badge: "⏱ 5 min" },
-      { icone: "🥥", titre: "Lait de coco", detail: "Égoutter le poisson. Verser le lait de coco froid bien battu, mélanger délicatement.", badge: null },
-      { icone: "🥕", titre: "Légumes", detail: "Ajouter carotte râpée, concombre en cubes, tomate en cubes, oignon rouge émincé, ail râpé. Mélanger.", badge: null },
-      { icone: "❄️", titre: "Servir", detail: "Servir bien frais, idéalement dans une noix de coco si vous en avez ! Plat \"Ia Ora Na\" du dimanche.", badge: null }
+      { icone: "🐟", titre: "Choisir poisson", detail: "Sélectionner du thon rouge ou de la daurade extra-frais (qualité sashimi), parer les arêtes et la peau, puis détailler la chair en dés réguliers de 1,5 cm.", badge: null },
+      { icone: "🧂", titre: "Saler", detail: "Déposer les dés dans un saladier, saler généreusement et réserver pendant que vous pressez les citrons verts.", badge: null },
+      { icone: "🍋", titre: "Mariner", detail: "Arroser le poisson du jus de 3 citrons verts pour 4 personnes, mélanger délicatement et laisser raffermir 5 min seulement au frais (pas plus, sinon la chair cuit trop).", badge: null },
+      { icone: "🔪", titre: "Tailler légumes", detail: "Pendant la marinade, râper la carotte, couper concombre et tomate en petits cubes, émincer finement l'oignon et râper l'ail.", badge: null },
+      { icone: "🥥", titre: "Lait de coco", detail: "Égoutter le poisson de l'excédent de jus, verser le lait de coco bien froid préalablement battu, puis incorporer les légumes en mélangeant doucement.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Rectifier le sel, ajouter un trait de citron vert restant et un tour de poivre, goûter pour équilibrer acidité et douceur du coco.", badge: null },
+      { icone: "❄️", titre: "Rafraîchir", detail: "Laisser reposer 10 min au réfrigérateur pour que les saveurs se lient et que le plat soit bien glacé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser bien frais, idéalement dans une demi-noix de coco évidée, et déguster aussitôt en plat « Ia Ora Na » du dimanche.", badge: null }
     ]
   },
   saladewasabi: {
@@ -536,11 +572,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥒", titre: "Préparer concombre", detail: "Couper le concombre en rondelles très fines à la mandoline (1-2 mm). Saler généreusement, laisser dégorger 10 min. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 10 min" },
-      { icone: "💧", titre: "Essorer", detail: "Bien presser le concombre dans un torchon propre pour éliminer un maximum d'eau.", badge: null },
-      { icone: "🥣", titre: "Sauce wasabi", detail: "Mélanger vinaigre de riz, sauce soja, sucre, mirin, wasabi (dosez selon goût), gingembre râpé.", badge: null },
-      { icone: "🥗", titre: "Mélanger", detail: "Verser la sauce sur le concombre. Mélanger délicatement.", badge: null },
-      { icone: "🌱", titre: "Finition", detail: "Parsemer de graines de sésame toastées. Servir immédiatement, très frais.", badge: null }
+      { icone: "🥒", titre: "Trancher", detail: "Couper le concombre en rondelles très fines de 1 à 2 mm à la mandoline pour une texture régulière et croquante.", badge: null },
+      { icone: "🧂", titre: "Dégorger", detail: "Saler généreusement les rondelles, mélanger et laisser dégorger 10 min afin d'extraire l'excès d'eau.", badge: null },
+      { icone: "💧", titre: "Essorer", detail: "Presser fermement le concombre dans un torchon propre pour éliminer un maximum d'eau et garder le croquant.", badge: null },
+      { icone: "🥢", titre: "Sauce", detail: "Dans un bol, fouetter le vinaigre de riz, la sauce soja, le sucre et le mirin jusqu'à dissolution complète du sucre.", badge: null },
+      { icone: "🌿", titre: "Wasabi", detail: "Incorporer le wasabi dosé selon votre goût et le gingembre frais râpé, puis goûter pour ajuster le piquant.", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Verser la sauce sur le concombre essoré et mélanger délicatement pour bien enrober chaque rondelle.", badge: null },
+      { icone: "✨", titre: "Finir", detail: "Parsemer de graines de sésame toastées à sec et servir immédiatement, très frais, en accompagnement japonais.", badge: null }
     ]
   },
   saladeburrata: {
@@ -611,10 +649,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Émincer", detail: "Émincer le chou TRÈS finement, râper la carotte. ASTUCE : saler le chou 10 min puis l'essorer, il reste croquant sans rendre d'eau.", badge: "⏱ 10 min" },
-      { icone: "🥄", titre: "Sauce", detail: "Mélanger mayonnaise, vinaigre, moutarde, une pointe de sucre. SECRET : un filet de citron pour la fraîcheur.", badge: "⏱ 3 min" },
-      { icone: "🥗", titre: "Mélanger", detail: "Enrober les légumes de sauce, poivrer.", badge: "⏱ 2 min" },
-      { icone: "🧊", titre: "Reposer", detail: "CLÉ : 1h au frais minimum, les saveurs se lient et le chou s'attendrit juste ce qu'il faut.", badge: null }
+      { icone: "🔪", titre: "Émincer", detail: "Émincer le chou très finement et râper la carotte pour obtenir des lanières fines et homogènes.", badge: null },
+      { icone: "🧂", titre: "Dégorger", detail: "Saler le chou et le laisser reposer 10 min, puis l'essorer fermement pour qu'il reste croquant sans rendre d'eau.", badge: null },
+      { icone: "🥣", titre: "Sauce", detail: "Mélanger la mayonnaise, le vinaigre de cidre, la moutarde et une pointe de sucre jusqu'à obtenir une sauce lisse.", badge: null },
+      { icone: "🍋", titre: "Relever", detail: "Ajouter un filet de jus de citron pour la fraîcheur, poivrer et goûter pour équilibrer l'acidité et la douceur.", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Enrober soigneusement le chou et la carotte de sauce afin que chaque lanière soit bien nappée.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Filmer et placer 1 h au frais minimum : les saveurs se lient et le chou s'attendrit juste ce qu'il faut.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Mélanger une dernière fois et servir bien frais en accompagnement de grillades ou de burgers à l'américaine.", badge: null }
     ]
   },
   saladewaldorf: {
@@ -645,10 +686,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍎", titre: "Couper", detail: "Pommes (avec la peau) et céleri en petits dés. ASTUCE : citronner les pommes tout de suite pour qu'elles ne noircissent pas.", badge: "⏱ 6 min" },
-      { icone: "🥄", titre: "Sauce", detail: "Mélanger mayonnaise (ou yaourt en version légère) + jus de citron. SECRET : une pointe de moutarde douce.", badge: "⏱ 2 min" },
-      { icone: "🥗", titre: "Assembler", detail: "Mêler pommes, céleri, noix concassées et raisins secs à la sauce.", badge: "⏱ 3 min" },
-      { icone: "🍽️", titre: "Servir", detail: "ASTUCE CHEF : servir sur feuilles de salade, ajouter les noix au dernier moment pour le croquant.", badge: null }
+      { icone: "🍏", titre: "Couper", detail: "Couper les pommes avec la peau et le céleri branche en petits dés réguliers d'environ 1 cm.", badge: null },
+      { icone: "🍋", titre: "Citronner", detail: "Arroser aussitôt les dés de pomme de jus de citron pour empêcher l'oxydation et garder leur belle couleur.", badge: null },
+      { icone: "🥣", titre: "Sauce", detail: "Mélanger la mayonnaise (ou un yaourt pour une version légère) avec le reste du jus de citron et une pointe de moutarde douce.", badge: null },
+      { icone: "🌰", titre: "Préparer noix", detail: "Concasser grossièrement les noix et faire gonfler les raisins secs quelques minutes dans un peu d'eau tiède avant de les égoutter.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mêler les pommes, le céleri et les raisins secs à la sauce et mélanger délicatement pour bien enrober.", badge: null },
+      { icone: "❄️", titre: "Rafraîchir", detail: "Réserver 15 min au frais pour que les saveurs s'harmonisent et que la salade soit bien fraîche.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser sur des feuilles de salade et parsemer les noix concassées au dernier moment pour préserver le croquant.", badge: null }
     ]
   },
   saladebetteravechevre: {
@@ -679,10 +723,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Préparer", detail: "Couper la betterave cuite en dés ou fines tranches. ASTUCE : les betteraves cuites sous vide font gagner du temps.", badge: "⏱ 4 min" },
-      { icone: "🥗", titre: "Dresser", detail: "Lit de roquette, dés de betterave, chèvre émietté, noix concassées.", badge: "⏱ 4 min" },
-      { icone: "🍯", titre: "Vinaigrette", detail: "SECRET : vinaigrette miel + huile d'olive + balsamique, qui sublime betterave et chèvre.", badge: "⏱ 2 min" },
-      { icone: "🌿", titre: "Finir", detail: "ASTUCE CHEF : arroser au dernier moment pour ne pas faire retomber la roquette. Poivre du moulin.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Couper la betterave cuite en dés ou en fines tranches régulières ; les betteraves cuites sous vide font gagner du temps.", badge: null },
+      { icone: "🌿", titre: "Laver roquette", detail: "Laver et essorer soigneusement la roquette pour qu'elle soit bien sèche et que la vinaigrette accroche.", badge: null },
+      { icone: "🧀", titre: "Émietter chèvre", detail: "Émietter le chèvre frais en morceaux et concasser grossièrement les noix.", badge: null },
+      { icone: "🥣", titre: "Vinaigrette", detail: "Émulsionner le miel, l'huile d'olive et un filet de vinaigre balsamique avec une pincée de sel pour sublimer betterave et chèvre.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Répartir un lit de roquette dans les assiettes, disposer les dés de betterave, le chèvre émietté et les noix.", badge: null },
+      { icone: "💧", titre: "Assaisonner", detail: "Arroser de vinaigrette au dernier moment pour ne pas faire retomber la roquette.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Donner un tour de poivre du moulin et servir aussitôt cette salade colorée et fraîche.", badge: null }
     ]
   },
   saladefiguejambon: {
@@ -712,10 +759,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍶", titre: "Figues", detail: "Couper les figues bien mûres en quartiers. CLÉ : des figues à maturité, c'est tout le plat.", badge: "⏱ 4 min" },
-      { icone: "🥗", titre: "Dresser", detail: "Lit de roquette, quartiers de figues, tranches de jambon cru drapées, copeaux de parmesan.", badge: "⏱ 4 min" },
-      { icone: "🍯", titre: "Assaisonner", detail: "SECRET : huile d'olive + quelques gouttes de balsamique ou de miel. Pas de sel (jambon + parmesan).", badge: "⏱ 2 min" },
-      { icone: "🌿", titre: "Finir", detail: "ASTUCE CHEF : un tour de poivre et, si envie, quelques noix grillées pour le croquant.", badge: null }
+      { icone: "🍇", titre: "Couper figues", detail: "Couper les figues bien mûres en quartiers : leur maturité fait tout l'équilibre du plat.", badge: null },
+      { icone: "🌿", titre: "Laver roquette", detail: "Laver et essorer la roquette puis la disposer en lit dans les assiettes ou le grand plat de service.", badge: null },
+      { icone: "🧀", titre: "Copeaux", detail: "Prélever de fins copeaux de parmesan à l'économe et les réserver.", badge: null },
+      { icone: "🥓", titre: "Draper jambon", detail: "Répartir les quartiers de figues sur la roquette et draper joliment les tranches de jambon cru entre elles.", badge: null },
+      { icone: "💧", titre: "Assaisonner", detail: "Arroser d'huile d'olive et de quelques gouttes de balsamique ou de miel, sans saler car jambon et parmesan suffisent.", badge: null },
+      { icone: "🧀", titre: "Parsemer", detail: "Disposer les copeaux de parmesan sur l'ensemble pour apporter du caractère.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Donner un tour de poivre et servir aussitôt, en ajoutant quelques noix grillées pour le croquant si vous le souhaitez.", badge: null }
     ]
   },
   saladeroquetteparmesan: {
@@ -746,10 +796,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥗", titre: "Roquette", detail: "Laver et bien essorer la roquette (bien sèche, sinon la vinaigrette glisse).", badge: "⏱ 3 min" },
-      { icone: "🧀", titre: "Copeaux", detail: "Copeaux de parmesan à l'économe. ASTUCE : du vrai Parmigiano Reggiano fait toute la différence.", badge: "⏱ 2 min" },
-      { icone: "🍋", titre: "Assaisonner", detail: "SECRET ITALIEN : huile d'olive + jus de citron + poivre, à la main, dans cet ordre. Pas de vinaigre.", badge: "⏱ 2 min" },
-      { icone: "🌰", titre: "Finir", detail: "ASTUCE CHEF : pignons torréfiés à sec pour le croquant. Servir aussitôt, la roquette retombe vite.", badge: null }
+      { icone: "🌿", titre: "Laver roquette", detail: "Laver et bien essorer la roquette : elle doit être parfaitement sèche, sinon la vinaigrette glisse.", badge: null },
+      { icone: "🔥", titre: "Torréfier", detail: "Faire torréfier les pignons à sec dans une poêle à feu moyen 2 à 3 min jusqu'à coloration dorée, puis réserver.", badge: null },
+      { icone: "🧀", titre: "Copeaux", detail: "Prélever de fins copeaux de parmesan à l'économe ; un vrai Parmigiano Reggiano fait toute la différence.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Dans le saladier, mélanger à la main l'huile d'olive, le jus de citron et le poivre dans cet ordre, sans vinaigre.", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Ajouter la roquette et l'enrober délicatement de l'assaisonnement juste avant de servir.", badge: null },
+      { icone: "✨", titre: "Garnir", detail: "Parsemer des copeaux de parmesan et des pignons torréfiés sur le dessus.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt avec un dernier tour de poivre, car la roquette retombe vite une fois assaisonnée.", badge: null }
     ]
   },
   saladeolivier: {
@@ -1300,11 +1353,13 @@ Object.assign(recettes, {
       { nb: 15, pasteque: "3000 g", feta: "750 g", menthe: "30 g", olives: "300 g", huileolive: "150 ml", citron: "75 g", sel: "15 g" }
     ],
     etapes: [
-      { icone: "🍉", titre: "Couper la pastèque", detail: "Retirer l'écorce et les pépins, couper la pastèque en cubes généreux. Réserver au frais.", badge: null },
-      { icone: "🧀", titre: "Préparer la feta", detail: "Couper ou émietter la feta en gros morceaux.", badge: null },
-      { icone: "🌿", titre: "Assembler", detail: "Disposer la pastèque et la feta dans un grand plat, parsemer de menthe ciselée et d'olives.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Arroser d'huile d'olive et d'un trait de jus de citron, poivrer généreusement.", badge: null },
-      { icone: "❄️", titre: "Servir", detail: "Servir bien frais, idéalement aussitôt pour garder le croquant de la pastèque.", badge: null }
+      { icone: "🍉", titre: "Couper pastèque", detail: "Retirer l'écorce et les pépins puis couper la pastèque en cubes généreux ; réserver au frais.", badge: null },
+      { icone: "🧀", titre: "Préparer feta", detail: "Couper ou émietter la feta en gros morceaux pour un contraste de texture avec la pastèque.", badge: null },
+      { icone: "🌿", titre: "Ciseler menthe", detail: "Effeuiller et ciseler finement la menthe fraîche, puis dénoyauter les olives si besoin.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Disposer la pastèque et la feta dans un grand plat, puis parsemer de menthe ciselée et d'olives.", badge: null },
+      { icone: "💧", titre: "Assaisonner", detail: "Arroser d'huile d'olive et d'un trait de jus de citron, ajouter une pincée de sel et poivrer généreusement.", badge: null },
+      { icone: "❄️", titre: "Rafraîchir", detail: "Laisser reposer 10 min au frais pour que les saveurs se mêlent sans ramollir la pastèque.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir bien frais aussitôt pour garder tout le croquant juteux de la pastèque.", badge: null }
     ]
   },
   saladermelonmozza: {
@@ -1331,11 +1386,13 @@ Object.assign(recettes, {
       { nb: 15, melon: "3000 g", mozza: "900 g", basilic: "30 g", huileolive: "150 ml", jambon: "300 g", sel: "15 g" }
     ],
     etapes: [
-      { icone: "🍈", titre: "Préparer le melon", detail: "Couper le melon en deux, retirer les graines, prélever des billes ou des cubes.", badge: null },
-      { icone: "🧀", titre: "Mozzarella", detail: "Égoutter la mozzarella et la couper en morceaux (ou utiliser des billes).", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Alterner melon, mozzarella et éventuellement de fines tranches de jambon cru dans l'assiette.", badge: null },
-      { icone: "🌿", titre: "Parfumer", detail: "Parsemer de basilic frais et arroser d'un filet d'huile d'olive.", badge: null },
-      { icone: "🧂", titre: "Finir", detail: "Une pincée de fleur de sel, un tour de poivre, et servir aussitôt bien frais.", badge: null }
+      { icone: "🍈", titre: "Préparer melon", detail: "Couper le melon en deux, retirer les graines puis prélever des billes à la cuillère parisienne ou des cubes réguliers.", badge: null },
+      { icone: "🧀", titre: "Mozzarella", detail: "Égoutter soigneusement la mozzarella et la couper en morceaux, ou utiliser des billes de mozzarella.", badge: null },
+      { icone: "🌿", titre: "Effeuiller basilic", detail: "Laver et effeuiller le basilic frais en réservant quelques jolies feuilles pour la décoration.", badge: null },
+      { icone: "🥓", titre: "Dresser", detail: "Alterner dans l'assiette le melon, la mozzarella et de fines tranches de jambon cru pour un joli contraste.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Parsemer généreusement de basilic frais sur l'ensemble du dressage.", badge: null },
+      { icone: "💧", titre: "Assaisonner", detail: "Arroser d'un filet d'huile d'olive, ajouter une pincée de fleur de sel et un tour de poivre du moulin.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt bien frais, en entrée estivale légère et parfumée.", badge: null }
     ]
   },
   slatamechouia: {
@@ -1363,11 +1420,13 @@ Object.assign(recettes, {
       { nb: 15, poivron: "1800 g", tomate: "1350 g", ail: "75 g", huileolive: "180 ml", harissa: "75 g", citron: "75 ml", cumin: "15 g" }
     ],
     etapes: [
-      { icone: "🔥", titre: "Griller", detail: "Griller poivrons et tomates entiers jusqu'à ce que la peau noircisse, au four ou à la flamme.", badge: "⏱ 20 min" },
-      { icone: "🧼", titre: "Peler", detail: "Laisser tiédir sous un torchon, puis retirer peaux et pépins.", badge: null },
-      { icone: "🔪", titre: "Hacher", detail: "Hacher finement les légumes au couteau avec l'ail.", badge: null },
-      { icone: "🥗", titre: "Assaisonner", detail: "Mélanger avec harissa, huile d'olive, cumin, sel et citron.", badge: null },
-      { icone: "🫒", titre: "Servir", detail: "Servir frais, garni de thon, d'olives ou d'un œuf dur selon l'envie.", badge: "💡 Mezze" }
+      { icone: "🔥", titre: "Griller", detail: "Griller les poivrons et les tomates entiers au four à 220°C ou directement à la flamme jusqu'à ce que la peau noircisse et cloque, environ 20 min.", badge: null },
+      { icone: "♨️", titre: "Faire suer", detail: "Enfermer les légumes grillés sous un torchon ou dans un sac fermé 10 min pour décoller facilement les peaux.", badge: null },
+      { icone: "🧅", titre: "Peler", detail: "Retirer les peaux noircies, ôter les pépins et le pédoncule, puis égoutter l'excès de jus.", badge: null },
+      { icone: "🔪", titre: "Hacher", detail: "Hacher finement au couteau les poivrons, les tomates et l'ail pour obtenir une compotée rustique.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Mélanger avec la harissa, l'huile d'olive, le cumin, une pincée de sel et un trait de jus de citron.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laisser reposer au frais 15 min pour que les épices infusent et que les saveurs se concentrent.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir frais, garni de thon émietté, d'olives ou d'un œuf dur, accompagné de pain pour saucer.", badge: null }
     ]
   },
   kartoffelsalat: {
@@ -1394,11 +1453,13 @@ Object.assign(recettes, {
       { nb: 15, pommedeterre: "3000 g", oignon: "450 g", vinaigreVin: "180 ml", moutarde: "120 g", bouillon: "450 ml", lardons: "450 g", cornichon: "300 g", persil: "45 g" }
     ],
     etapes: [
-      { icone: "🥔", titre: "Cuire", detail: "Cuire les pommes de terre en robe des champs, les peler tièdes et les couper en rondelles.", badge: "⏱ 25 min" },
-      { icone: "🥓", titre: "Les lardons", detail: "Faire dorer les lardons, ajouter l'oignon émincé et le faire suer.", badge: null },
-      { icone: "🥣", titre: "La vinaigrette chaude", detail: "Déglacer avec le bouillon chaud, le vinaigre et la moutarde. Saler, poivrer.", badge: null },
-      { icone: "🥗", titre: "Mélanger", detail: "Verser la vinaigrette chaude sur les pommes de terre tièdes, ajouter les cornichons. Mélanger délicatement.", badge: null },
-      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 30 min pour que les pommes de terre s'imprègnent. Parsemer de persil.", badge: "💡 Tiède" }
+      { icone: "🥔", titre: "Cuire", detail: "Cuire les pommes de terre à peau ferme en robe des champs 20 à 25 min dans une eau salée frémissante, jusqu'à ce qu'un couteau les traverse sans résistance.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Égoutter, peler les pommes de terre encore tièdes et les couper en rondelles régulières de 5 mm dans un grand saladier.", badge: null },
+      { icone: "🥓", titre: "Saisir", detail: "Faire dorer les lardons à feu vif 4 à 5 min dans une poêle, ajouter l'oignon finement émincé et le laisser suer 3 min jusqu'à translucidité.", badge: null },
+      { icone: "🍯", titre: "Vinaigrette", detail: "Déglacer la poêle avec le bouillon chaud, le vinaigre de vin et la moutarde, fouetter hors du feu, saler et poivrer pour obtenir une vinaigrette tiède émulsionnée.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Verser la vinaigrette chaude sur les pommes de terre tièdes, ajouter les cornichons taillés en rondelles et mélanger délicatement pour ne pas écraser.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 30 min à température ambiante pour que les pommes de terre s'imprègnent de vinaigrette et de bouillon.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Rectifier l'assaisonnement, parsemer de persil ciselé et servir tiède, en accompagnement d'une saucisse grillée.", badge: null }
     ]
   },
   saladepatatedouce: {
@@ -1431,10 +1492,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍠", titre: "Rôtir", detail: "Couper la patate douce en cubes, enrober d'huile et rôtir à 200°C jusqu'à tendreté et bords dorés.", badge: "⏱ 25 min" },
-      { icone: "🥄", titre: "Vinaigrette", detail: "Fouetter huile d'olive, citron et miel.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mêler patate douce tiède, roquette, feta émiettée et noix. ASTUCE CHEF : ajoute la roquette quand la patate douce est juste tiède — trop chaude, elle la ferait flétrir.", badge: null },
-      { icone: "🍯", titre: "Assaisonner", detail: "Arroser de vinaigrette et servir aussitôt.", badge: null }
+      { icone: "🔪", titre: "Tailler", detail: "Éplucher la patate douce et la couper en cubes réguliers de 2 cm pour une cuisson homogène.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Enrober les cubes d'huile d'olive, saler, poivrer et rôtir au four à 200°C pendant 25 min en remuant à mi-cuisson, jusqu'à ce qu'ils soient tendres et caramélisés aux bords.", badge: null },
+      { icone: "🌰", titre: "Torréfier", detail: "Pendant ce temps, torréfier les noix concassées à sec dans une poêle 2 à 3 min jusqu'à ce qu'elles libèrent leur parfum.", badge: null },
+      { icone: "🍯", titre: "Vinaigrette", detail: "Fouetter dans un bol l'huile d'olive, le jus de citron et le miel, saler et poivrer pour obtenir une vinaigrette légèrement sucrée-acidulée.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Laisser tiédir la patate douce 5 min, puis la mêler à la roquette, à la feta émiettée et aux noix dans un saladier.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Arroser de vinaigrette et mélanger délicatement pour ne pas faire flétrir la roquette ni écraser la patate.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dresser aussitôt en bol, parsemer d'un peu de feta supplémentaire et servir tiède.", badge: null }
     ]
   },
   saladebrocoli: {
@@ -1466,10 +1530,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥦", titre: "Blanchir", detail: "Blanchir le brocoli 2 min puis le rafraîchir à l'eau glacée pour garder le croquant et la couleur.", badge: "⏱ 2 min" },
-      { icone: "🌰", titre: "Torréfier", detail: "Torréfier les amandes concassées à sec.", badge: "⏱ 3 min" },
-      { icone: "🥗", titre: "Assembler", detail: "Mêler brocoli, raisins, amandes et feta émiettée. ASTUCE CHEF : le choc à l'eau glacée fixe le vert éclatant du brocoli et stoppe net la cuisson — il reste croquant.", badge: null },
-      { icone: "🍋", titre: "Assaisonner", detail: "Fouetter huile, citron et miel, verser sur la salade.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Détailler le brocoli en petits bouquets réguliers et rincer les raisins secs à l'eau tiède pour les regonfler.", badge: null },
+      { icone: "💧", titre: "Blanchir", detail: "Plonger les bouquets de brocoli 2 min dans une eau bouillante salée, puis les rafraîchir aussitôt dans un bain d'eau glacée pour fixer le vert et garder le croquant.", badge: null },
+      { icone: "🌰", titre: "Torréfier", detail: "Torréfier les amandes concassées à sec dans une poêle 2 à 3 min jusqu'à légère coloration et parfum grillé.", badge: null },
+      { icone: "🍋", titre: "Vinaigrette", detail: "Fouetter l'huile d'olive, le jus de citron et le miel, saler et poivrer pour une vinaigrette équilibrée.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Égoutter soigneusement le brocoli et le mêler aux raisins secs, aux amandes et à la feta émiettée dans un saladier.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Verser la vinaigrette sur la salade et mélanger délicatement pour bien enrober chaque bouquet.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir frais, en plat léger énergisant ou en accompagnement croquant.", badge: null }
     ]
   },
   saladelentillesbeluga: {
@@ -1501,10 +1568,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🟣", titre: "Lentilles", detail: "Cuire les lentilles beluga al dente puis les rafraîchir.", badge: "⏱ 18 min" },
-      { icone: "🍏", titre: "Tailler", detail: "Couper la pomme en petits dés et l'oignon rouge finement.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mêler lentilles, pomme, feta et oignon. ASTUCE CHEF : citronne les dés de pomme dès la découpe — ils ne noircissent pas et apportent un peu d'acidité.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Vinaigrette huile-vinaigre et persil.", badge: null }
+      { icone: "🫘", titre: "Cuire", detail: "Cuire les lentilles beluga 18 à 20 min dans une eau frémissante non salée jusqu'à ce qu'elles soient tendres mais encore al dente, puis les égoutter et les rafraîchir.", badge: null },
+      { icone: "🍏", titre: "Tailler", detail: "Couper la pomme en petits dés et la citronner aussitôt pour éviter qu'elle noircisse, puis émincer l'oignon rouge très finement.", badge: null },
+      { icone: "🧀", titre: "Préparer", detail: "Émietter la feta en morceaux grossiers et ciseler le persil frais.", badge: null },
+      { icone: "🥄", titre: "Vinaigrette", detail: "Fouetter l'huile d'olive et le vinaigre de vin, saler et poivrer pour une vinaigrette franche.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mêler dans un saladier les lentilles tièdes ou froides, les dés de pomme, l'oignon rouge et la feta.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Verser la vinaigrette, ajouter le persil et mélanger délicatement pour bien répartir les saveurs.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser reposer 10 min au frais pour que les lentilles s'imprègnent, puis servir frais.", badge: null }
     ]
   },
   saladefourme: {
@@ -1537,10 +1607,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌰", titre: "Torréfier", detail: "Torréfier légèrement les noix à sec.", badge: null },
-      { icone: "🧀", titre: "Préparer", detail: "Émietter la fourme, couper la pomme en lamelles.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Dresser roquette, fourme, noix et pomme. ASTUCE CHEF : le miel dans la vinaigrette équilibre l'amertume du bleu — un blue cheese sans touche sucrée paraît agressif.", badge: null },
-      { icone: "🍯", titre: "Assaisonner", detail: "Vinaigrette huile-vinaigre-miel.", badge: null }
+      { icone: "🌰", titre: "Torréfier", detail: "Torréfier légèrement les cerneaux de noix à sec dans une poêle 2 à 3 min jusqu'à ce qu'ils dégagent leur arôme, puis les laisser refroidir.", badge: null },
+      { icone: "🧀", titre: "Préparer", detail: "Émietter la fourme d'Ambert en morceaux généreux et couper la pomme en fines lamelles.", badge: null },
+      { icone: "🍯", titre: "Vinaigrette", detail: "Fouetter l'huile d'olive, le vinaigre de cidre et le miel, saler légèrement et poivrer pour adoucir l'amertume du bleu.", badge: null },
+      { icone: "🥬", titre: "Disposer", detail: "Répartir la roquette dans un grand saladier ou sur des assiettes individuelles.", badge: null },
+      { icone: "🥗", titre: "Garnir", detail: "Parsemer de fourme émiettée, de lamelles de pomme et de noix torréfiées sur le lit de roquette.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Arroser de vinaigrette au miel juste avant de servir pour garder la roquette croquante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt en entrée fraîche et gourmande, accompagnée de pain de campagne.", badge: null }
     ]
   },
   saladesarde: {
@@ -1573,10 +1646,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Semoule", detail: "Hydrater la semoule à l'eau bouillante et l'égrainer.", badge: null },
-      { icone: "🐟", titre: "Préparer", detail: "Émietter le maquereau, couper les tomates, émietter la feta.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mêler le tout avec olives, citron et huile. ASTUCE CHEF : assaisonne la semoule encore tiède — elle boit la vinaigrette et reste moelleuse au lieu de sécher.", badge: null },
-      { icone: "🍋", titre: "Servir", detail: "Servir frais.", badge: null }
+      { icone: "🌾", titre: "Hydrater", detail: "Verser la semoule dans un saladier, couvrir d'eau bouillante salée à hauteur, laisser gonfler 5 min puis l'égrainer à la fourchette avec un filet d'huile d'olive.", badge: null },
+      { icone: "🐟", titre: "Émietter", detail: "Émietter le maquereau en retirant les arêtes, en gros morceaux pour garder de la mâche.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Couper les tomates en petits dés, émietter la feta et dénoyauter les olives si nécessaire.", badge: null },
+      { icone: "🍋", titre: "Vinaigrette", detail: "Mélanger le jus de citron et l'huile d'olive, saler et poivrer pour une vinaigrette méditerranéenne.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Assaisonner la semoule encore tiède avec la vinaigrette puis y mêler maquereau, tomates, feta et olives.", badge: null },
+      { icone: "🧂", titre: "Rectifier", detail: "Goûter, ajuster le sel et le citron, et mélanger délicatement pour ne pas écraser le poisson.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir frais en salade complète à la mode sarde, idéale pour un déjeuner d'été.", badge: null }
     ]
   },
   saladeepeautreburrata: {
@@ -1609,10 +1685,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Épeautre", detail: "Cuire l'épeautre jusqu'à tendreté, l'égoutter et le rafraîchir.", badge: "⏱ 25 min" },
-      { icone: "🍅", titre: "Assembler", detail: "Mêler épeautre, tomates et roquette, assaisonner.", badge: null },
-      { icone: "🧀", titre: "Burrata", detail: "Déposer la burrata entière au centre. ASTUCE CHEF : pose la burrata entière et ouvre-la à table — son cœur crémeux se répand sur la salade, c'est le moment qui en jette.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Filet d'huile et basilic.", badge: null }
+      { icone: "🌾", titre: "Cuire", detail: "Cuire l'épeautre 25 min dans une eau bouillante salée jusqu'à tendreté tout en gardant du mâche, puis l'égoutter et le rafraîchir sous l'eau froide.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Couper les tomates en quartiers ou en dés et ciseler quelques feuilles de basilic frais.", badge: null },
+      { icone: "🍋", titre: "Vinaigrette", detail: "Fouetter l'huile d'olive et le jus de citron, saler et poivrer pour assaisonner les céréales.", badge: null },
+      { icone: "🥗", titre: "Mêler", detail: "Mélanger dans un saladier l'épeautre égoutté, les tomates et la roquette, puis assaisonner de vinaigrette.", badge: null },
+      { icone: "🧀", titre: "Burrata", detail: "Dresser la salade en assiette ou en plat et déposer la burrata entière bien au centre.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Arroser d'un filet d'huile d'olive, parsemer de basilic ciselé et donner un tour de poivre du moulin.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir frais et ouvrir la burrata à table pour que son cœur crémeux se répande sur la salade.", badge: null }
     ]
   },
   saladefenouil: {
@@ -1645,10 +1724,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Émincer", detail: "Émincer le fenouil très finement à la mandoline.", badge: null },
-      { icone: "🍊", titre: "Suprêmes", detail: "Lever les suprêmes d'orange à vif.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mêler fenouil, orange et olives, assaisonner. ASTUCE CHEF : émince le fenouil le plus fin possible et trempe-le 5 min dans l'eau glacée — il devient ultra croquant et perd son amertume.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Persil et filet d'huile.", badge: null }
+      { icone: "🔪", titre: "Émincer", detail: "Parer le fenouil et l'émincer très finement à la mandoline pour des lamelles translucides.", badge: null },
+      { icone: "🧊", titre: "Croquant", detail: "Plonger les lamelles de fenouil 5 min dans un bol d'eau glacée pour les rendre ultra croquantes et atténuer leur amertume, puis bien les égoutter.", badge: null },
+      { icone: "🍊", titre: "Suprêmes", detail: "Lever les suprêmes d'orange à vif au couteau, au-dessus d'un bol pour récupérer le jus.", badge: null },
+      { icone: "🫒", titre: "Préparer", detail: "Dénoyauter les olives si besoin et ciseler le persil frais.", badge: null },
+      { icone: "🥄", titre: "Vinaigrette", detail: "Fouetter l'huile d'olive, le jus de citron et le jus d'orange récupéré, saler et poivrer.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mêler délicatement le fenouil, les suprêmes d'orange et les olives, puis arroser de vinaigrette.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemer de persil, donner un filet d'huile et servir bien frais en entrée légère et parfumée.", badge: null }
     ]
   },
   saladechoucajou: {
@@ -1680,10 +1762,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Émincer", detail: "Émincer le chou et râper la carotte finement.", badge: null },
-      { icone: "🌰", titre: "Torréfier", detail: "Torréfier les noix de cajou à sec.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mêler chou, carotte et coriandre, ajouter les cajous. ASTUCE CHEF : masse le chou émincé avec un peu de sel et de citron vert 5 min — il s'attendrit et devient plus digeste tout en restant croquant.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Vinaigrette citron vert, soja et huile.", badge: null }
+      { icone: "🔪", titre: "Émincer", detail: "Émincer le chou très finement et râper la carotte en fins bâtonnets ou à la râpe.", badge: null },
+      { icone: "💆", titre: "Attendrir", detail: "Masser le chou émincé avec un peu de sel et de jus de citron vert pendant 5 min pour l'assouplir tout en gardant le croquant.", badge: null },
+      { icone: "🥜", titre: "Torréfier", detail: "Torréfier les noix de cajou à sec dans une poêle 3 min jusqu'à légère coloration dorée, puis les concasser grossièrement.", badge: null },
+      { icone: "🌿", titre: "Préparer", detail: "Effeuiller et ciseler grossièrement la coriandre fraîche.", badge: null },
+      { icone: "🥄", titre: "Sauce", detail: "Mélanger le jus de citron vert, la sauce soja et l'huile d'olive pour une vinaigrette acidulée et umami.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mêler le chou, la carotte et la coriandre, verser la sauce et ajouter les cajous au dernier moment.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir frais, en salade thaïe croquante et parfumée, idéale avec un plat épicé.", badge: null }
     ]
   },
   saladepastequeconcombre: {
@@ -1716,9 +1801,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍉", titre: "Tailler", detail: "Couper pastèque et concombre en cubes réguliers.", badge: null },
-      { icone: "🧀", titre: "Assembler", detail: "Ajouter la feta émiettée et la menthe ciselée. ASTUCE CHEF : sers très frais et assaisonne au dernier moment — pastèque et concombre rendent vite leur eau une fois salés.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Filet d'huile et trait de citron.", badge: null }
+      { icone: "🍉", titre: "Tailler", detail: "Couper la pastèque en cubes réguliers en retirant les pépins, et tailler le concombre en cubes de même taille.", badge: null },
+      { icone: "🌿", titre: "Préparer", detail: "Émietter la feta en morceaux grossiers et ciseler finement les feuilles de menthe fraîche.", badge: null },
+      { icone: "🍋", titre: "Vinaigrette", detail: "Mélanger l'huile d'olive et le jus de citron, poivrer légèrement et saler avec parcimonie car la feta est déjà salée.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Réunir délicatement la pastèque, le concombre, la feta et la menthe dans un saladier.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Arroser de vinaigrette au tout dernier moment pour éviter que pastèque et concombre ne rendent leur eau.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir très frais, en entrée estivale rafraîchissante et désaltérante.", badge: null }
     ]
   },
   saladeriznicoise: {
@@ -1751,10 +1839,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz et le laisser refroidir.", badge: null },
-      { icone: "🥚", titre: "Œuf", detail: "Cuire l'œuf dur, l'écaler et le couper en quartiers.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mêler riz, thon, tomates, olives et poivron. ASTUCE CHEF : assaisonne le riz encore tiède — il absorbe la vinaigrette et reste savoureux au lieu de coller fade une fois froid.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Vinaigrette et œuf en garniture.", badge: null }
+      { icone: "🍚", titre: "Cuire le riz", detail: "Cuire le riz dans une grande quantité d'eau salée pendant 15 min, l'égoutter puis l'étaler sur un plat pour le laisser refroidir.", badge: null },
+      { icone: "🥚", titre: "Œufs durs", detail: "Plonger les œufs dans l'eau bouillante 9 min, les rafraîchir sous l'eau froide, les écaler et les couper en quartiers.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Couper les tomates en dés, le poivron en fines lanières, dénoyauter les olives et émietter grossièrement le thon égoutté.", badge: null },
+      { icone: "🥗", titre: "Assaisonner le riz", detail: "Préparer une vinaigrette à l'huile d'olive, sel et poivre, et l'incorporer au riz encore tiède pour qu'il l'absorbe pleinement.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Une fois le riz refroidi, ajouter le thon, les tomates, le poivron et les olives, puis mélanger délicatement.", badge: null },
+      { icone: "❄️", titre: "Réserver au frais", detail: "Filmer le saladier et laisser reposer 20 min au réfrigérateur pour que les saveurs se mêlent.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposer la salade dans un plat, garnir des quartiers d'œuf et de quelques olives, et servir bien frais.", badge: null }
     ]
   },
   mizeria: {
@@ -1787,9 +1878,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥒", titre: "Dégorger", detail: "Trancher le concombre finement, le saler et laisser dégorger 10 min.", badge: "⏱ 10 min" },
-      { icone: "💧", titre: "Presser", detail: "Presser le concombre pour retirer l'eau. ASTUCE CHEF : presse bien le concombre dégorgé — sinon il rend son eau dans la crème et la salade devient liquide.", badge: null },
-      { icone: "🥛", titre: "Lier", detail: "Mélanger avec crème, aneth, vinaigre et oignon, servir frais.", badge: null }
+      { icone: "🔪", titre: "Trancher", detail: "Laver le concombre et le couper en tranches très fines, idéalement à la mandoline, dans un saladier.", badge: null },
+      { icone: "🧂", titre: "Dégorger", detail: "Saler généreusement les tranches, mélanger et laisser dégorger 10 min pour faire rendre l'eau au concombre.", badge: null },
+      { icone: "💧", titre: "Presser", detail: "Presser fermement le concombre entre les mains ou dans un linge propre pour en extraire un maximum d'eau.", badge: null },
+      { icone: "🥛", titre: "Préparer la crème", detail: "Dans un bol, mélanger la crème avec le vinaigre blanc, l'oignon finement émincé et l'aneth ciselé.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Incorporer le concombre pressé à la crème assaisonnée et mélanger délicatement pour bien l'enrober.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Rectifier le sel, filmer et placer 15 min au réfrigérateur avant de servir bien frais en accompagnement.", badge: null }
     ]
   },
   patesfroidespesto: {
@@ -1823,9 +1917,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍝", titre: "Pâtes", detail: "Cuire les pâtes al dente, les rafraîchir à l'eau froide.", badge: null },
-      { icone: "🌿", titre: "Pesto", detail: "Mixer basilic, parmesan, pignons et huile en pesto.", badge: null },
-      { icone: "🥗", titre: "Mélanger", detail: "Enrober les pâtes froides de pesto, ajouter tomates et mozza. ASTUCE CHEF : ajoute un filet d'huile sur les pâtes froides au moment de servir — froides, elles boivent le pesto et paraissent sèches sinon.", badge: null }
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Cuire les pâtes al dente dans l'eau bouillante salée selon le temps indiqué, puis les rafraîchir aussitôt sous l'eau froide.", badge: null },
+      { icone: "🌿", titre: "Effeuiller", detail: "Effeuiller le basilic, le rincer et le sécher délicatement pour préserver son parfum.", badge: null },
+      { icone: "🥣", titre: "Mixer le pesto", detail: "Mixer le basilic avec les pignons, le parmesan et l'huile d'olive jusqu'à obtenir un pesto homogène, saler et poivrer.", badge: null },
+      { icone: "🔪", titre: "Garnitures", detail: "Couper les tomates en quartiers et la mozzarella en dés ou en billes.", badge: null },
+      { icone: "🥄", titre: "Enrober", detail: "Verser le pesto sur les pâtes froides bien égouttées et mélanger pour les enrober uniformément.", badge: null },
+      { icone: "🍅", titre: "Assembler", detail: "Ajouter les tomates et la mozzarella, mélanger délicatement et ajuster l'assaisonnement.", badge: null },
+      { icone: "🫒", titre: "Servir", detail: "Au moment de servir, ajouter un filet d'huile d'olive et quelques pignons, et parsemer de copeaux de parmesan.", badge: null }
     ]
   },
 });

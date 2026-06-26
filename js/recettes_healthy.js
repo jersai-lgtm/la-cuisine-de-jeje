@@ -31,10 +31,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥒", titre: "Griller les courgettes", detail: "Couper les courgettes en rondelles. Griller à la poêle avec huile d'olive jusqu'à coloration. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 8 min" },
-      { icone: "🌾", titre: "Préparer la semoule", detail: "Verser la semoule dans un saladier. Ajouter le bouillon bouillant, couvrir 5 min. Égrainer à la fourchette avec huile d'olive et sel.", badge: "⏱ 5 min" },
-      { icone: "🍅", titre: "Ajouter les garnitures", detail: "Mélanger courgettes grillées, tomates cerises coupées, feuilles de menthe et coriandre.", badge: null },
-      { icone: "🍋", titre: "Assaisonner et servir", detail: "Arroser de jus de citron et huile d'olive généreuse. Servir chaud ou tiède.", badge: null }
+      { icone: "🔪", titre: "Découper", detail: "Couper les courgettes en rondelles de 5 mm, les tomates cerises en deux et ciseler la menthe fraîche.", badge: null },
+      { icone: "🍳", titre: "Griller", detail: "Saisir les rondelles de courgette dans une poêle chaude avec un filet d'huile d'olive 6 à 8 min jusqu'à belle coloration dorée.", badge: null },
+      { icone: "💧", titre: "Hydrater", detail: "Verser la semoule dans un saladier, recouvrir du bouillon bouillant à hauteur, couvrir et laisser gonfler 5 min.", badge: null },
+      { icone: "🍴", titre: "Égrainer", detail: "Égrainer la semoule à la fourchette avec un filet d'huile d'olive et une pincée de sel pour détacher les grains.", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Incorporer les courgettes grillées, les tomates cerises et la menthe à la semoule encore tiède.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Arroser de jus de citron et d'huile d'olive, saler et poivrer, puis mélanger délicatement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir tiède ou à température ambiante, parsemé de menthe ciselée pour la fraîcheur.", badge: null }
     ]
   },
   tofusaute: {
@@ -65,10 +68,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Préparer le tofu", detail: "Presser le tofu ferme 30 min dans un torchon pour éliminer l'eau. Couper en cubes. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 30 min" },
-      { icone: "🔥", titre: "Frire le tofu", detail: "Faire dorer les cubes dans huile à feu vif sur toutes les faces. Ils doivent être bien croustillants. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🍶", titre: "Sauce teriyaki", detail: "Verser sauce soja + mirin + sucre sur le tofu. Cuire 2 min en remuant jusqu'à caramélisation.", badge: "⏱ 2 min" },
-      { icone: "🥢", titre: "Servir", detail: "Servir sur riz avec bok choy sauté, graines de sésame et ciboule.", badge: null }
+      { icone: "🧽", titre: "Presser", detail: "Envelopper le tofu ferme dans un torchon sous un poids 30 min pour expulser l'eau, puis le couper en cubes de 2 cm.", badge: null },
+      { icone: "🥬", titre: "Préparer bok choy", detail: "Laver les bok choy, séparer les feuilles des côtes et tailler les côtes en lanières.", badge: null },
+      { icone: "🍶", titre: "Sauce", detail: "Mélanger la sauce soja, le mirin et le sucre dans un bol jusqu'à dissolution du sucre.", badge: null },
+      { icone: "🍳", titre: "Dorer le tofu", detail: "Faire chauffer l'huile à feu vif et saisir les cubes de tofu sur toutes les faces 6 à 8 min jusqu'à ce qu'ils soient bien croustillants.", badge: null },
+      { icone: "🥢", titre: "Sauter légumes", detail: "Réserver le tofu, faire sauter le bok choy 2 à 3 min à feu vif pour qu'il reste croquant.", badge: null },
+      { icone: "🍯", titre: "Glacer", detail: "Remettre le tofu, verser la sauce teriyaki et cuire 2 min en remuant jusqu'à caramélisation et nappage brillant.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Dresser sur un bol de riz avec le bok choy, parsemer de graines de sésame et servir aussitôt.", badge: null }
     ]
   },
   buddhaBowl: {
@@ -98,11 +104,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Cuire le quinoa", detail: "Rincer le quinoa. Cuire dans 2x son volume d'eau salée à feu moyen jusqu'à absorption. Égrainer à la fourchette. Rincer abondamment à l'eau froide.", badge: "⏱ 15 min" },
-      { icone: "🍠", titre: "Rôtir la patate douce", detail: "Couper la patate douce en cubes. Assaisonner d'huile d'olive, cumin, paprika, sel. Rôtir au four. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 20 min à 200°C" },
-      { icone: "🥜", titre: "Griller les pois chiches", detail: "Égoutter et sécher les pois chiches. Les faire dorer à la poêle avec huile d'olive et épices jusqu'à ce qu'ils soient croustillants. Surveiller : couleur dorée uniforme = c'est prêt, pas plus sinon ça brûle.", badge: "⏱ 8 min" },
-      { icone: "🥄", titre: "Préparer la sauce tahini", detail: "Mélanger tahini, jus de citron, ail pressé, eau froide, sel. Fouetter jusqu'à obtenir une sauce crémeuse.", badge: null },
-      { icone: "🎨", titre: "Dresser le bowl", detail: "Disposer quinoa, patate douce, pois chiches, épinards et avocat en tranches dans le bol. Napper de sauce tahini. Ajouter graines de sésame et herbes.", badge: null }
+      { icone: "🌾", titre: "Cuire quinoa", detail: "Rincer le quinoa et le cuire dans deux fois son volume d'eau salée à feu moyen 12 à 15 min jusqu'à absorption, puis égrainer.", badge: null },
+      { icone: "🍠", titre: "Rôtir patate", detail: "Couper la patate douce en cubes, enrober d'huile d'olive et de sel, et rôtir au four à 200°C pendant 25 min.", badge: null },
+      { icone: "🫘", titre: "Griller pois chiches", detail: "Égoutter et sécher les pois chiches, les faire dorer à la poêle avec un filet d'huile 8 à 10 min jusqu'à ce qu'ils soient croustillants.", badge: null },
+      { icone: "🥑", titre: "Préparer frais", detail: "Trancher l'avocat, laver les épinards frais et presser le citron pour la sauce.", badge: null },
+      { icone: "🥄", titre: "Sauce tahini", detail: "Fouetter le tahini avec le jus de citron, l'ail pressé, du sel et un peu d'eau froide jusqu'à obtenir une sauce crémeuse et nappante.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer harmonieusement quinoa, patate douce, pois chiches, épinards et avocat en sections dans le bol.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Napper généreusement de sauce tahini et servir aussitôt pour garder le croustillant des pois chiches.", badge: null }
     ]
   },
   bowlacai: {
@@ -171,10 +179,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥜", titre: "Préparer les pois chiches", detail: "Égoutter et rincer les pois chiches en boîte. Les sécher avec du papier absorbant. Rincer abondamment à l'eau froide.", badge: null },
-      { icone: "🔪", titre: "Couper les légumes", detail: "Couper les tomates en dés, le concombre épépiné en petits cubes, émincer finement l'oignon rouge. Ciseler le persil. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mélanger pois chiches, légumes et persil dans un grand saladier.", badge: null },
-      { icone: "🍋", titre: "Assaisonner", detail: "Arroser de jus de citron et d'huile d'olive généreuse. Saler, poivrer. Ajouter cumin et paprika selon goût. Bien mélanger et réfrigérer 15 min avant de servir.", badge: "⏱ 15 min au frais" }
+      { icone: "🫘", titre: "Préparer pois chiches", detail: "Égoutter et rincer les pois chiches à l'eau froide, puis les sécher soigneusement avec du papier absorbant.", badge: null },
+      { icone: "🔪", titre: "Découper légumes", detail: "Couper les tomates en dés, le concombre épépiné en petits cubes et émincer finement l'oignon rouge.", badge: null },
+      { icone: "🌿", titre: "Ciseler persil", detail: "Laver et ciseler finement le persil frais pour parfumer la salade.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Réunir les pois chiches, les tomates, le concombre, l'oignon et le persil dans un grand saladier.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Arroser de jus de citron et d'huile d'olive, saler et poivrer, puis mélanger délicatement.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Réfrigérer la salade 15 min pour que les saveurs se mêlent et que les légumes soient bien frais.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Rectifier l'assaisonnement et servir frais, parsemé d'un peu de persil supplémentaire.", badge: null }
     ]
   },
   curryledumes: {
@@ -204,11 +215,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire revenir les aromates", detail: "Faire chauffer un filet d'huile dans une grande poêle. Faire revenir l'oignon émincé 5 min. Ajouter l'ail et le gingembre râpé. Cuire 2 min.", badge: null },
-      { icone: "🌶️", titre: "Ajouter les épices", detail: "Ajouter le curry, le cumin et le curcuma. Torréfier 1 min en remuant pour libérer les arômes.", badge: null },
-      { icone: "🍅", titre: "Ajouter les tomates", detail: "Verser les tomates concassées. Laisser réduire 5 min. ASTUCE CHEF : la sauce doit napper le dos d'une cuillère = bonne consistance.", badge: null },
-      { icone: "🥥", titre: "Ajouter lait de coco + pois chiches", detail: "Verser le lait de coco et les pois chiches égouttés. Bien mélanger. Laisser mijoter à feu moyen. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 15 min" },
-      { icone: "🌿", titre: "Ajouter les épinards", detail: "Ajouter les épinards frais. Laisser 2 min pour les faire fondre. Rectifier l'assaisonnement. Servir avec du riz basmati ou du pain naan.", badge: null }
+      { icone: "🔪", titre: "Préparer aromates", detail: "Émincer l'oignon, hacher l'ail et râper le gingembre frais ; égoutter et rincer les pois chiches.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire revenir l'oignon dans un filet d'huile 5 min à feu moyen, puis ajouter l'ail et le gingembre et cuire 2 min.", badge: null },
+      { icone: "🌶️", titre: "Torréfier épices", detail: "Ajouter le curry et torréfier 1 min en remuant pour libérer tous les arômes des épices.", badge: null },
+      { icone: "🍅", titre: "Tomates", detail: "Verser les tomates concassées et laisser réduire 5 min à feu moyen jusqu'à ce que la sauce épaississe.", badge: null },
+      { icone: "🥥", titre: "Lait de coco", detail: "Incorporer le lait de coco et les pois chiches, puis laisser mijoter à feu doux 12 à 15 min à couvert entrouvert.", badge: null },
+      { icone: "🥬", titre: "Épinards", detail: "Ajouter les épinards frais et laisser fondre 2 min, puis rectifier l'assaisonnement en sel.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servir bien chaud avec du riz basmati ou un pain naan pour saucer le curry crémeux.", badge: null }
     ]
   },
   smoothiebowl: {
@@ -238,10 +251,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧊", titre: "Préparer les fruits", detail: "Utiliser des fruits rouges et une banane congelés — ils donnent une texture épaisse et crémeuse, comme une glace.", badge: null },
-      { icone: "🌀", titre: "Mixer la base", detail: "Mixer les fruits congelés avec le yaourt grec, le lait végétal et le miel jusqu'à obtenir une texture lisse et épaisse. Ajouter le lait au fur et à mesure pour ajuster la consistance.", badge: null },
-      { icone: "🥣", titre: "Verser dans un bol", detail: "Verser le smoothie dans un bol. Il doit être assez épais pour que les toppings ne coulent pas.", badge: null },
-      { icone: "🎨", titre: "Disposer les toppings", detail: "Disposer joliment les fruits frais, le granola, les graines de chia et la noix de coco sur le dessus. Déguster immédiatement !", badge: null }
+      { icone: "🍌", titre: "Préparer fruits", detail: "Utiliser des fruits rouges et une banane préalablement congelés pour une texture épaisse et crémeuse comme une glace.", badge: null },
+      { icone: "🥛", titre: "Réunir base", detail: "Mettre les fruits congelés dans le blender avec le yaourt, un peu de lait et le miel.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer par à-coups jusqu'à obtenir une texture lisse et bien épaisse, en ajoutant le lait petit à petit pour ajuster.", badge: null },
+      { icone: "🥣", titre: "Verser", detail: "Verser le smoothie dans un bol froid ; il doit être assez ferme pour porter les toppings sans qu'ils coulent.", badge: null },
+      { icone: "🍓", titre: "Garnir", detail: "Disposer joliment des fruits frais, du granola et des graines sur le dessus pour le croquant.", badge: null },
+      { icone: "🍯", titre: "Servir", detail: "Ajouter un filet de miel et déguster immédiatement avant que la base ne fonde.", badge: null }
     ]
   },
   saladequinoa: {
@@ -272,11 +287,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Cuire le quinoa", detail: "Rincer le quinoa à l'eau froide. Le cuire dans 2 fois son volume d'eau salée à feu moyen jusqu'à absorption complète. Laisser reposer 5 min, puis égrainer à la fourchette. ASTUCE CHEF : ce repos est ESSENTIEL pour la texture finale.", badge: "⏱ 15 min" },
-      { icone: "❄️", titre: "Refroidir", detail: "Laisser le quinoa refroidir complètement — il ne doit pas être chaud pour ne pas faire fondre la feta.", badge: "⏱ 10 min" },
-      { icone: "🔪", titre: "Préparer les légumes", detail: "Couper les tomates cerises en deux, le concombre en dés, le poivron en petits morceaux. Ciseler la menthe et le persil. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍋", titre: "Préparer la vinaigrette", detail: "Mélanger le jus du citron avec l'huile d'olive, du sel et du poivre. Bien fouetter.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mélanger le quinoa refroidi avec les légumes. Verser la vinaigrette et mélanger. Émietter la feta par-dessus. Servir frais.", badge: null }
+      { icone: "🌾", titre: "Cuire quinoa", detail: "Rincer le quinoa à l'eau froide et le cuire dans deux fois son volume d'eau salée 12 à 15 min jusqu'à absorption complète.", badge: null },
+      { icone: "🍴", titre: "Égrainer", detail: "Laisser reposer 5 min hors du feu, puis égrainer le quinoa à la fourchette pour bien détacher les grains.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laisser refroidir complètement le quinoa pour qu'il ne fasse pas fondre la feta lors du mélange.", badge: null },
+      { icone: "🔪", titre: "Découper légumes", detail: "Couper les tomates en deux, le concombre en dés et le poivron en petits morceaux réguliers.", badge: null },
+      { icone: "🍋", titre: "Vinaigrette", detail: "Fouetter le jus de citron avec l'huile d'olive, le sel et le poivre jusqu'à émulsion.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mélanger le quinoa froid avec les légumes, verser la vinaigrette et mélanger délicatement.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Émietter la feta par-dessus et servir bien frais.", badge: null }
     ]
   },
   yaourt: {
@@ -306,11 +323,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌡️", titre: "Chauffer le lait", detail: "Faire chauffer le lait à 45 °C (tiède, pas bouillant — supporter le doigt dedans 10 secondes). Si vous utilisez du lait UHT il n'est pas nécessaire de le chauffer.", badge: null },
-      { icone: "🥣", titre: "Ajouter le ferment", detail: "Délayer le yaourt (ou les ferments) dans un peu de lait tiède, puis mélanger avec le reste du lait. Fouetter doucement.", badge: null },
-      { icone: "🍯", titre: "Remplir les pots", detail: "Verser dans des pots en verre propres. Ne pas remuer une fois les pots remplis.", badge: null },
-      { icone: "⏳", titre: "Laisser fermenter", detail: "Placer les pots dans un four éteint avec la lumière allumée (ou dans une yaourtière) pour maintenir une température de 40–45 °C.", badge: "⏱ 8h minimum" },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Une fois la texture prise, placer au réfrigérateur au moins 2h avant de déguster. Se conservent 1 semaine.", badge: "⏱ 2h au frigo" }
+      { icone: "🌡️", titre: "Chauffer lait", detail: "Chauffer le lait à 45°C, tiède au doigt sans bouillir ; le lait UHT peut être utilisé sans chauffer.", badge: null },
+      { icone: "🥄", titre: "Délayer ferment", detail: "Délayer le yaourt ou les ferments dans un peu de lait tiède pour bien les répartir.", badge: null },
+      { icone: "🥛", titre: "Mélanger", detail: "Incorporer le ferment délayé au reste du lait et fouetter doucement sans faire mousser.", badge: null },
+      { icone: "🫙", titre: "Remplir pots", detail: "Verser dans des pots en verre propres sans remuer une fois remplis.", badge: null },
+      { icone: "🔥", titre: "Fermenter", detail: "Placer les pots dans une yaourtière ou un four éteint lumière allumée à 40-45°C pendant 8 h.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Une fois la texture prise, réfrigérer au moins 2 h pour raffermir avant dégustation.", badge: null },
+      { icone: "🍶", titre: "Conserver", detail: "Déguster nature ou avec un coulis ; les yaourts se conservent une semaine au frais.", badge: null }
     ]
   },
   bowlProteineVege: {
@@ -340,10 +359,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Cuire le quinoa", detail: "Rincer le quinoa. Cuire dans 2x son volume d'eau salée. Laisser gonfler 15 min à couvert. Rincer abondamment à l'eau froide.", badge: "⏱ 15 min" },
-      { icone: "🥜", titre: "Rôtir les pois chiches", detail: "Égoutter les pois chiches. Les enrober d'huile, cumin, paprika. Rôtir au four 20 min à 200°C. Préchauffer le four 10 min avant. Chaleur tournante pour un rôtissage uniforme.", badge: "⏱ 20 min" },
-      { icone: "🥚", titre: "Cuire les œufs mollets", detail: "Cuire les œufs 6 min dans l'eau bouillante. Refroidir et écaler délicatement.", badge: "⏱ 6 min" },
-      { icone: "🥑", titre: "Assembler le bowl", detail: "Disposer quinoa, pois chiches, avocat tranché, œuf coupé. Napper de sauce tahini citron-ail.", badge: null }
+      { icone: "🌾", titre: "Cuire quinoa", detail: "Rincer le quinoa et le cuire dans deux fois son volume d'eau salée 15 min à couvert jusqu'à absorption, puis égrainer.", badge: null },
+      { icone: "🫘", titre: "Rôtir pois", detail: "Égoutter les pois, les enrober d'huile d'olive et d'épices, et rôtir au four à 200°C pendant 20 min jusqu'à croustillant.", badge: null },
+      { icone: "🥚", titre: "Cuire œufs", detail: "Plonger les œufs dans l'eau bouillante 6 min pour des mollets, refroidir à l'eau glacée et écaler délicatement.", badge: null },
+      { icone: "🥑", titre: "Trancher avocat", detail: "Couper l'avocat en lamelles et le citronner légèrement pour qu'il ne noircisse pas.", badge: null },
+      { icone: "🥄", titre: "Sauce tahini", detail: "Fouetter le tahini avec le jus de citron, l'ail pressé, l'huile d'olive et un peu d'eau jusqu'à obtenir une sauce crémeuse.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer quinoa, pois, avocat et œuf coupé en deux harmonieusement dans le bol.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Napper de sauce tahini citron-ail et servir aussitôt.", badge: null }
     ]
   },
   saladeKale: {
@@ -374,10 +396,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥬", titre: "Masser le kale", detail: "Enlever les tiges du kale. Déchirer en petits morceaux. Masser vigoureusement avec sel et huile d'olive 2 min pour l'attendrir.", badge: "⏱ 2 min" },
-      { icone: "🌰", titre: "Griller les noix", detail: "Faire griller les noix concassées à sec dans une poêle. Réserver. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 3 min" },
-      { icone: "🍋", titre: "Vinaigrette", detail: "Mélanger jus de citron, huile d'olive, moutarde, miel, sel, poivre.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mélanger kale, parmesan copeaux, noix, cranberries. Arroser de vinaigrette. Mélanger et servir.", badge: null }
+      { icone: "🥬", titre: "Préparer kale", detail: "Retirer les tiges dures du kale, déchirer les feuilles en bouchées et les déposer dans un grand saladier.", badge: null },
+      { icone: "💪", titre: "Masser", detail: "Ajouter une pincée de sel et un filet d'huile d'olive, puis masser vigoureusement les feuilles 2 à 3 min jusqu'à ce qu'elles foncent et s'attendrissent.", badge: null },
+      { icone: "🌰", titre: "Griller noix", detail: "Concasser les noix et les torréfier à sec dans une poêle à feu moyen 3 à 4 min, en remuant, jusqu'à ce qu'elles embaument, puis réserver.", badge: null },
+      { icone: "🍋", titre: "Vinaigrette", detail: "Émulsionner le jus de citron, l'huile d'olive, le miel, le sel et le poivre dans un bol jusqu'à obtenir une sauce lisse et brillante.", badge: null },
+      { icone: "🧀", titre: "Parmesan", detail: "À l'aide d'un économe, tailler de larges copeaux de parmesan que l'on répartira sur la salade.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Verser la vinaigrette sur le kale massé, ajouter noix grillées et copeaux de parmesan, puis mélanger délicatement pour bien enrober.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser aussitôt dans des assiettes fraîches et déguster en plat léger ou en accompagnement croquant.", badge: null }
     ]
   },
   sobejaponais: {
@@ -407,9 +432,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍜", titre: "Cuire les soba", detail: "Cuire les nouilles soba 4 min dans l'eau bouillante. Rincer abondamment à l'eau froide pour stopper la cuisson. Rincer abondamment à l'eau froide.", badge: "⏱ 4 min" },
-      { icone: "🍶", titre: "Préparer le bouillon", detail: "Mélanger dashi froid, sauce soja, mirin et sucre. Goûter et ajuster.", badge: null },
-      { icone: "🌿", titre: "Garnir", detail: "Disposer les soba dans les bols. Verser le bouillon froid. Garnir de ciboule, algues wakame, graines de sésame et gingembre.", badge: null }
+      { icone: "💧", titre: "Bouillir eau", detail: "Porter une grande casserole d'eau non salée à ébullition franche pour la cuisson des nouilles soba.", badge: null },
+      { icone: "🍜", titre: "Cuire soba", detail: "Plonger les soba dans l'eau bouillante et les cuire 4 min en remuant, en ajoutant un peu d'eau froide si la mousse déborde.", badge: null },
+      { icone: "❄️", titre: "Rincer", detail: "Égoutter les nouilles et les rincer abondamment à l'eau froide en les frottant délicatement pour retirer l'amidon et stopper la cuisson.", badge: null },
+      { icone: "🍶", titre: "Bouillon", detail: "Mélanger le dashi froid, la sauce soja et le sucre, goûter et ajuster l'équilibre salé-sucré du bouillon trempette.", badge: null },
+      { icone: "🫚", titre: "Aromates", detail: "Émincer finement la ciboule et râper le gingembre frais, à servir en condiments à part.", badge: null },
+      { icone: "🥢", titre: "Dresser", detail: "Disposer les soba bien égouttés dans les bols et présenter le bouillon froid dans des coupelles individuelles.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemer de ciboule et de gingembre, puis déguster aussitôt en trempant les nouilles dans le bouillon frais.", badge: null }
     ]
   },
   tartarethon: {
@@ -439,9 +468,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Préparer le thon", detail: "Couper le thon en petits dés réguliers. Assaisonner avec sauce soja, huile de sésame, gingembre râpé, citron. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🥑", titre: "Préparer l'avocat", detail: "Couper l'avocat en dés. Citronner pour éviter l'oxydation. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Dans un cercle, alterner couches de thon et avocat. Parsemer de sésame grillé, ciboule et piment d'Espelette.", badge: null }
+      { icone: "🐟", titre: "Tailler thon", detail: "Avec un couteau bien aiguisé, couper le thon très frais en petits dés réguliers et le garder au frais.", badge: null },
+      { icone: "🥑", titre: "Avocat", detail: "Détailler l'avocat en dés et l'arroser aussitôt d'un peu de jus de citron pour éviter qu'il noircisse.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Mélanger le thon avec la sauce soja, l'huile de sésame, le gingembre râpé et un trait de citron, puis rectifier l'assaisonnement.", badge: null },
+      { icone: "🌰", titre: "Sésame", detail: "Torréfier les graines de sésame à sec 1 à 2 min dans une poêle jusqu'à ce qu'elles dorent et libèrent leur parfum.", badge: null },
+      { icone: "🧊", titre: "Repos", detail: "Laisser le tartare reposer 10 min au réfrigérateur pour que les saveurs se diffusent dans la chair.", badge: null },
+      { icone: "⭕", titre: "Monter", detail: "Dans un cercle de dressage, alterner une couche d'avocat et une couche de thon en tassant légèrement.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Démouler délicatement, parsemer de sésame grillé et servir bien frais, accompagné de quelques toasts.", badge: null }
     ]
   },
   pouletcitroncitronelle: {
@@ -471,9 +504,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍋", titre: "Mariner", detail: "Émincer les escalopes. Mariner 15 min avec jus de citron vert, citronnelle finement hachée, gingembre, sauce soja.", badge: "⏱ 15 min" },
-      { icone: "🔥", titre: "Sauter", detail: "Faire sauter à feu vif dans très peu d'huile. Cuire 3-4 min de chaque côté. ASTUCE CHEF : feu VIF pour saisir et caraméliser les sucs.", badge: "⏱ 8 min" },
-      { icone: "🌿", titre: "Servir", detail: "Servir sur riz basmati ou vermicelles avec herbes fraîches et quartiers de citron vert.", badge: null }
+      { icone: "🔪", titre: "Émincer", detail: "Détailler les escalopes de poulet en fines lanières régulières pour une cuisson rapide et homogène.", badge: null },
+      { icone: "🍋", titre: "Mariner", detail: "Mélanger jus de citron, citronnelle hachée, gingembre râpé et sauce soja, y faire mariner le poulet 15 min au frais.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Faire chauffer un wok ou une poêle avec un filet d'huile jusqu'à ce qu'elle soit bien fumante.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Saisir le poulet égoutté à feu vif 3 à 4 min par face pour le colorer et caraméliser les sucs.", badge: null },
+      { icone: "🥄", titre: "Glacer", detail: "Verser le reste de marinade dans la poêle et laisser réduire 2 min en glaçant les morceaux d'une sauce nappante.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Hors du feu, ajouter des herbes fraîches et un dernier trait de citron pour réveiller le plat.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Dresser sur un riz basmati ou des vermicelles, avec des quartiers de citron vert à presser à table.", badge: null }
     ]
   },
   saladeLegsRoasted: {
@@ -504,8 +541,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔥", titre: "Rôtir les légumes", detail: "Couper les légumes en gros morceaux. Enrober d'huile d'olive, sel, herbes de Provence. Rôtir au four à 200°C.", badge: "⏱ 25 min" },
-      { icone: "🥗", titre: "Dresser", detail: "Disposer les légumes tièdes sur la roquette. Émietter la feta. Arroser de vinaigrette miel-moutarde.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C en chaleur tournante et tapisser une plaque de papier cuisson.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Couper courgette, aubergine et poivron en gros morceaux réguliers pour une cuisson uniforme.", badge: null },
+      { icone: "🫒", titre: "Enrober", detail: "Enrober les légumes d'huile d'olive, de sel et d'herbes de Provence, puis les étaler en une seule couche.", badge: null },
+      { icone: "♨️", titre: "Rôtir", detail: "Rôtir au four à 200°C pendant 25 à 30 min, en remuant à mi-cuisson, jusqu'à ce que les légumes soient fondants et dorés.", badge: null },
+      { icone: "🍯", titre: "Vinaigrette", detail: "Pendant ce temps, fouetter le miel avec un peu d'huile d'olive, du sel et du poivre pour une vinaigrette douce.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer la roquette dans les assiettes, répartir les légumes encore tièdes et émietter la feta par-dessus.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arroser de vinaigrette au miel et servir aussitôt en salade tiède gourmande.", badge: null }
     ]
   },
   quinoalegumes: {
@@ -535,9 +577,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Cuire le quinoa", detail: "Rincer le quinoa. Cuire dans 2x son volume d'eau salée à couvert jusqu'à absorption complète. Rincer abondamment à l'eau froide.", badge: "⏱ 15 min" },
-      { icone: "🔥", titre: "Faire sauter les légumes", detail: "Faire sauter courgette, poivron, tomates cerise dans l'huile d'olive avec ail et herbes de Provence.", badge: "⏱ 10 min" },
-      { icone: "🥗", titre: "Mélanger et servir", detail: "Mélanger quinoa et légumes. Assaisonner. Servir tiède ou froid avec un filet de citron et basilic. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null }
+      { icone: "💧", titre: "Rincer", detail: "Rincer le quinoa à l'eau claire dans une passoire fine pour retirer son amertume naturelle.", badge: null },
+      { icone: "🍲", titre: "Cuire quinoa", detail: "Cuire le quinoa dans deux fois son volume d'eau salée à couvert 12 à 15 min, jusqu'à absorption complète, puis l'égrener à la fourchette.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Tailler la courgette et le poivron en petits dés et couper les tomates en quartiers.", badge: null },
+      { icone: "🧄", titre: "Sauter", detail: "Faire revenir les légumes dans l'huile d'olive avec l'ail haché à feu vif 6 à 8 min, en gardant un peu de croquant.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Réunir le quinoa et les légumes sautés, assaisonner de sel et poivre, puis goûter et rectifier.", badge: null },
+      { icone: "🍋", titre: "Citronner", detail: "Ajouter un filet de jus de citron et quelques feuilles de basilic ciselées pour la fraîcheur.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir tiède ou bien frais, en plat complet végétarien ou en accompagnement coloré.", badge: null }
     ]
   },
   patatesdoucesCurry: {
@@ -567,10 +613,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Faire revenir", detail: "Faire suer l'oignon et l'ail dans l'huile de coco. Ajouter curry, curcuma, cumin. Torréfier 1 min.", badge: null },
-      { icone: "🍠", titre: "Ajouter les patates", detail: "Ajouter les patates douces en cubes. Verser le lait de coco et un peu d'eau. Mélanger.", badge: null },
-      { icone: "⏳", titre: "Mijoter", detail: "Couvrir et laisser mijoter jusqu'à ce que les patates soient fondantes. ASTUCE CHEF : couvercle entrouvert pour une meilleure réduction.", badge: "⏱ 20 min" },
-      { icone: "🌿", titre: "Finir", detail: "Ajouter les épinards hors du feu. Parsemer de coriandre fraîche. Servir avec riz basmati.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher les patates douces et les couper en cubes réguliers, émincer l'oignon et hacher l'ail.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Faire suer l'oignon et l'ail dans l'huile à feu moyen 4 à 5 min jusqu'à ce qu'ils deviennent translucides.", badge: null },
+      { icone: "🌶️", titre: "Torréfier", detail: "Ajouter le curry et torréfier les épices 1 min en remuant pour qu'elles libèrent tout leur parfum.", badge: null },
+      { icone: "🍠", titre: "Mouiller", detail: "Incorporer les cubes de patate douce, verser la crème de coco et le lait, puis mélanger pour bien enrober.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Couvrir à demi et laisser mijoter à feu doux 20 à 25 min jusqu'à ce que les patates soient fondantes et la sauce nappante.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et rectifier l'équilibre du curry en goûtant la sauce avant de servir.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Parsemer de coriandre fraîche et servir bien chaud avec un riz basmati.", badge: null }
     ]
   },
   falafelbaked: {
@@ -601,10 +650,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥜", titre: "Préparer la pâte", detail: "Mixer pois chiches (pas en conserve, trempés crus), oignon, ail, coriandre, cumin, sel. La texture doit être grossière, pas lisse.", badge: null },
-      { icone: "🟡", titre: "Former les boulettes", detail: "Former des boulettes de 3 cm. Placer sur plaque huileée.", badge: null },
-      { icone: "🔥", titre: "Cuire au four", detail: "Badigeonner légèrement d'huile. Cuire à 200°C en retournant à mi-cuisson.", badge: "⏱ 25 min" },
-      { icone: "🍯", titre: "Servir", detail: "Servir avec sauce tahini, tomates, concombre et salade verte dans un pain pita ou wrap.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C et huiler légèrement une plaque de cuisson.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer les pois chiches préalablement trempés crus avec l'oignon, l'ail, la coriandre et le sel jusqu'à une texture grossière mais homogène.", badge: null },
+      { icone: "🌿", titre: "Lier", detail: "Ajouter un peu de farine et mélanger jusqu'à obtenir une pâte qui se tient sans coller, puis laisser reposer 10 min.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Former des boulettes de 3 cm en les tassant bien et les disposer sur la plaque huilée.", badge: null },
+      { icone: "🫒", titre: "Badigeonner", detail: "Badigeonner légèrement les falafels d'huile pour favoriser une belle croûte dorée au four.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfourner à 200°C 25 min environ, en les retournant à mi-cuisson, jusqu'à ce qu'ils soient dorés et croustillants.", badge: null },
+      { icone: "🥙", titre: "Servir", detail: "Servir chauds dans un pain pita avec sauce tahini, tomates, concombre et salade verte.", badge: null }
     ]
   },
   assiettepouletpatate: {
@@ -634,9 +686,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Mariner le poulet", detail: "Mariner les filets 15 min avec herbes de Provence, ail, citron et huile d'olive.", badge: "⏱ 15 min" },
-      { icone: "🔥", titre: "Cuire en parallèle", detail: "Rôtir la patate douce en dés au four 20 min. Cuire le brocoli à la vapeur 8 min. Griller le poulet à la poêle. Préchauffer le four 10 min avant. Chaleur tournante pour un rôtissage uniforme.", badge: "⏱ 20 min" },
-      { icone: "🍽️", titre: "Dresser", detail: "Assembler dans l'assiette. Assaisonner avec jus de citron, sel, poivre et herbes fraîches. Sel, poivre généreusement. Goûter et ajuster TOUJOURS.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C en chaleur tournante pour rôtir la patate douce.", badge: null },
+      { icone: "🍋", titre: "Mariner", detail: "Mariner les filets de poulet 15 min avec ail, jus de citron, huile et herbes de Provence.", badge: null },
+      { icone: "🍠", titre: "Rôtir patate", detail: "Couper la patate douce en dés, l'enrober d'huile et la rôtir au four à 200°C pendant 20 min jusqu'à ce qu'elle soit tendre.", badge: null },
+      { icone: "♨️", titre: "Cuire chou", detail: "Cuire le chou à la vapeur 8 min pour le garder vert et légèrement croquant.", badge: null },
+      { icone: "🍗", titre: "Griller poulet", detail: "Griller le poulet mariné à la poêle 4 à 5 min par face jusqu'à ce qu'il soit doré et cuit à cœur.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Répartir poulet, patate douce et chou dans l'assiette en sections nettes et équilibrées.", badge: null },
+      { icone: "🧂", titre: "Finir", detail: "Assaisonner d'un filet de citron, de sel, de poivre et d'herbes fraîches avant de servir.", badge: null }
     ]
   },
   poketuna: {
@@ -667,11 +723,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz vinaigré", detail: "Cuire le riz à sushi. Pendant la cuisson, mélanger vinaigre de riz + sucre + sel et l'incorporer au riz tiède. ASTUCE CHEF : à la maryse, en mouvements enveloppants, pour ne pas casser l'air.", badge: "⏱ 20 min" },
-      { icone: "🐟", titre: "Mariner le thon", detail: "Couper le thon rouge cru en cubes. Mariner 10 min avec sauce soja, huile de sésame, sriracha, oignon émincé. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: "⏱ 10 min" },
-      { icone: "🥑", titre: "Préparer toppings", detail: "Couper l'avocat en cubes, la mangue en cubes. Cuire les edamames 4 min. Réhydrater le wakame. ASTUCE CHEF : couteau bien aiguisé pour des coupes nettes.", badge: null },
-      { icone: "🍲", titre: "Dresser", detail: "Bol : riz vinaigré au fond. Disposer en sections : thon, avocat, mangue, edamames, wakame, concombre.", badge: null },
-      { icone: "🌶️", titre: "Finition", detail: "Arroser de sauce ponzu ou marinade restante. Parsemer de sésame, ciboule, micro-pousses. Servir frais.", badge: null }
+      { icone: "🍚", titre: "Cuire riz", detail: "Rincer puis cuire le riz dans l'eau jusqu'à absorption complète, et le laisser tiédir légèrement.", badge: null },
+      { icone: "🍶", titre: "Vinaigrer", detail: "Mélanger un peu d'huile, du sel et du sucre et l'incorporer au riz tiède à la maryse en mouvements enveloppants.", badge: null },
+      { icone: "🐟", titre: "Mariner thon", detail: "Couper le thon cru en cubes et le mariner 10 min avec sauce soja, huile et oignon émincé.", badge: null },
+      { icone: "🥑", titre: "Toppings", detail: "Détailler l'avocat et la mangue en cubes, cuire les edamames 4 min et réhydrater le wakame à l'eau froide.", badge: null },
+      { icone: "🌰", titre: "Sésame", detail: "Torréfier les graines de sésame à sec quelques minutes jusqu'à ce qu'elles dorent et parfument.", badge: null },
+      { icone: "🥣", titre: "Dresser", detail: "Disposer le riz vinaigré au fond du bol, puis répartir le thon, l'avocat, la mangue, les edamames et le wakame en sections.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arroser de la marinade restante, parsemer de sésame et servir le poké bien frais.", badge: null }
     ]
   },
   buddhabowlazteque: {
@@ -701,11 +759,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Cuire le quinoa", detail: "Rincer abondamment le quinoa. Cuire dans 1,5x son volume d'eau salée 15 min. Égrainer. Rincer abondamment à l'eau froide.", badge: "⏱ 15 min" },
-      { icone: "🌽", titre: "Maïs grillé", detail: "Faire griller le maïs (frais ou en conserve égoutté) à sec dans une poêle bien chaude jusqu'à coloration. Préchauffer le gril 5 min. Surface très chaude pour de belles marques.", badge: "⏱ 6 min" },
-      { icone: "🌶️", titre: "Pico de gallo", detail: "Mélanger tomate en cubes, oignon rouge ciselé fin, coriandre, jus de citron vert, sel.", badge: null },
-      { icone: "🥑", titre: "Avocat", detail: "Écraser grossièrement l'avocat avec sel, citron vert, piment chipotle en poudre.", badge: null },
-      { icone: "🍲", titre: "Dresser", detail: "Bol : quinoa au fond. Disposer en sections : haricots noirs, maïs grillé, pico de gallo, avocat écrasé, lamelles d'avocat.", badge: null }
+      { icone: "🚿", titre: "Rincer quinoa", detail: "Rincer 150 g de quinoa sous l'eau froide pendant 1 min pour retirer la saponine amère, puis l'égoutter dans une passoire fine.", badge: null },
+      { icone: "🍲", titre: "Cuire quinoa", detail: "Verser le quinoa dans 1,5 fois son volume d'eau salée, porter à ébullition puis cuire à couvert 15 min à feu doux jusqu'à absorption complète.", badge: null },
+      { icone: "🌽", titre: "Griller maïs", detail: "Égoutter le maïs et le faire griller à sec dans une poêle bien chaude 4 à 5 min en remuant, jusqu'à de belles marques dorées et caramélisées.", badge: null },
+      { icone: "🔪", titre: "Pico de gallo", detail: "Tailler la tomate en petits dés et ciseler finement l'oignon rouge, mélanger avec la coriandre hachée, le jus de citron vert et une pincée de sel.", badge: null },
+      { icone: "🥑", titre: "Écraser avocat", detail: "Couper la moitié de l'avocat en lamelles et écraser l'autre moitié à la fourchette avec du sel et un trait de citron vert pour qu'il ne noircisse pas.", badge: null },
+      { icone: "🍚", titre: "Égrainer", detail: "Détacher les grains de quinoa cuit à la fourchette pour qu'il reste léger et aéré, puis le laisser tiédir quelques minutes.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Disposer le quinoa au fond du bol puis ranger en secteurs nets les haricots noirs, le maïs grillé, le pico de gallo et l'avocat.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de coriandre fraîche et servir aussitôt, frais, avec un quartier de citron vert à presser à table.", badge: null }
     ]
   },
   dahllentillescorail: {
@@ -771,11 +832,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz japonais selon l'emballage. Cuire le brocoli à la vapeur 6 min (encore croquant).", badge: "⏱ 15 min" },
-      { icone: "🍯", titre: "Sauce teriyaki", detail: "Mélanger sauce soja, miel, mirin, ail râpé, gingembre. Réduire 3 min à la casserole jusqu'à sirupeux. ASTUCE CHEF : la sauce doit napper le dos d'une cuillère = bonne consistance.", badge: "⏱ 3 min" },
-      { icone: "🐟", titre: "Saisir le saumon", detail: "Cuire le saumon côté peau 4 min à feu moyen. Retourner 2 min. La chair doit rester nacrée.", badge: "⏱ 6 min" },
-      { icone: "✨", titre: "Glacer", detail: "Verser la sauce teriyaki sur le saumon. Arroser plusieurs fois pour bien laquer.", badge: "⏱ 1 min" },
-      { icone: "🥦", titre: "Servir", detail: "Servir le saumon laqué sur le riz avec brocolis. Parsemer de sésame et ciboule.", badge: null }
+      { icone: "🍚", titre: "Cuire riz", detail: "Rincer le riz japonais puis le cuire à couvert dans son volume d'eau pendant 12 min, et le laisser reposer 5 min hors du feu.", badge: null },
+      { icone: "🥦", titre: "Cuire brocoli", detail: "Détacher le brocoli en bouquets et le cuire à la vapeur 6 min pour qu'il reste vert et croquant sous la dent.", badge: null },
+      { icone: "🍯", titre: "Sauce teriyaki", detail: "Mélanger sauce soja, miel, mirin, ail et gingembre râpés dans une casserole, puis réduire 3 min à feu moyen jusqu'à une consistance sirupeuse qui nappe la cuillère.", badge: null },
+      { icone: "🐟", titre: "Saisir saumon", detail: "Poêler les pavés de saumon côté peau 4 min à feu moyen, puis 2 min sur l'autre face en gardant la chair nacrée à cœur.", badge: null },
+      { icone: "✨", titre: "Laquer", detail: "Verser la sauce teriyaki dans la poêle et arroser le saumon plusieurs fois à la cuillère pour bien le glacer et le faire briller.", badge: null },
+      { icone: "🍶", titre: "Réduire", detail: "Laisser épaissir la sauce 1 min autour du poisson à feu doux pour qu'elle enrobe parfaitement chaque pavé.", badge: null },
+      { icone: "🍱", titre: "Dresser", detail: "Déposer le saumon laqué sur le riz chaud, ajouter les brocolis et napper du reste de sauce.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Parsemer de graines de sésame grillées et de ciboule ciselée, puis servir immédiatement bien chaud.", badge: null }
     ]
   },
   bowlsaumonquinoa: {
@@ -843,10 +907,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥑", titre: "Écraser", detail: "Écraser l'avocat à la fourchette avec citron, sel, poivre. ASTUCE : citron tout de suite pour garder la couleur verte.", badge: "⏱ 4 min" },
-      { icone: "🍞", titre: "Toaster", detail: "Toaster le pain complet bien croustillant.", badge: "⏱ 3 min" },
-      { icone: "🥚", titre: "Pocher", detail: "Œuf poché 3 min dans une eau frémissante vinaigrée (tourbillon). SECRET : jaune coulant qui nappe la tartine.", badge: "⏱ 4 min" },
-      { icone: "🌶️", titre: "Dresser", detail: "Avocat sur le toast, œuf poché par-dessus. ASTUCE CHEF : piment d'Espelette + filet d'huile + graines pour le croquant.", badge: null }
+      { icone: "🥑", titre: "Écraser avocat", detail: "Écraser la chair d'avocat à la fourchette avec le jus de citron, du sel et du poivre, en gardant une texture légèrement grossière.", badge: null },
+      { icone: "🍞", titre: "Toaster pain", detail: "Toaster les tranches de pain complet 2 à 3 min jusqu'à ce qu'elles soient bien dorées et croustillantes.", badge: null },
+      { icone: "💧", titre: "Préparer eau", detail: "Porter une casserole d'eau à frémissement, ajouter un trait de vinaigre et créer un tourbillon à la cuillère.", badge: null },
+      { icone: "🍳", titre: "Pocher œuf", detail: "Glisser délicatement l'œuf au centre du tourbillon et le pocher 3 min pour un blanc pris et un jaune coulant.", badge: null },
+      { icone: "🫓", titre: "Tartiner", detail: "Étaler généreusement l'avocat écrasé sur les tranches de pain encore tièdes.", badge: null },
+      { icone: "🥚", titre: "Garnir œuf", detail: "Déposer l'œuf poché égoutté sur la tartine et l'assaisonner d'une pincée de sel et de poivre.", badge: null },
+      { icone: "🌶️", titre: "Finition", detail: "Saupoudrer de piment d'Espelette, arroser d'un filet d'huile d'olive et servir aussitôt.", badge: null }
     ]
   },
   chiapudding: {
@@ -876,10 +943,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mélanger", detail: "Mélanger graines de chia, lait végétal, miel et vanille. ASTUCE : bien fouetter pour éviter les grumeaux.", badge: "⏱ 3 min" },
-      { icone: "🥄", titre: "Re-mélanger", detail: "SECRET ANTI-GRUMEAUX : remuer à nouveau après 10 min, avant que ça fige.", badge: "⏱ 2 min" },
-      { icone: "🧊", titre: "Reposer", detail: "CLÉ : minimum 3h au frais (idéal une nuit) pour que les graines gonflent en texture pudding.", badge: "⏱ 3 min" },
-      { icone: "🍓", titre: "Garnir", detail: "Surmonter de fruits rouges frais, granola ou éclats de noix. Servir frais.", badge: null }
+      { icone: "🥄", titre: "Mélanger base", detail: "Fouetter énergiquement les graines de chia avec le lait d'amande, le miel et la vanille pour éviter tout grumeau.", badge: null },
+      { icone: "🔄", titre: "Re-mélanger", detail: "Laisser reposer 10 min puis remuer à nouveau avant que le mélange ne fige, afin de répartir les graines uniformément.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Couvrir et placer au réfrigérateur au minimum 3 h, idéalement une nuit, pour que les graines gonflent en texture de pudding.", badge: null },
+      { icone: "🫐", titre: "Préparer fruits", detail: "Rincer délicatement les fruits rouges et les égoutter sur du papier absorbant juste avant le dressage.", badge: null },
+      { icone: "🥣", titre: "Vérifier texture", detail: "Vérifier que le pudding est bien pris et crémeux, et le détendre avec un peu de lait d'amande s'il est trop épais.", badge: null },
+      { icone: "🍓", titre: "Garnir", detail: "Couronner le pudding de fruits rouges frais et servir bien frais, éventuellement avec un peu de granola pour le croquant.", badge: null }
     ]
   },
   wrapveggie: {
@@ -909,10 +978,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥄", titre: "Base", detail: "Tartiner la galette de houmous (jusqu'aux bords, c'est la 'colle' qui tient le wrap).", badge: "⏱ 3 min" },
-      { icone: "🔪", titre: "Crudités", detail: "Tailler poivron, carotte, concombre en fins bâtonnets, avocat en lamelles.", badge: "⏱ 6 min" },
-      { icone: "🌯", titre: "Rouler", detail: "CLÉ : garnir au centre sans surcharger, rabattre les côtés puis rouler bien serré.", badge: "⏱ 3 min" },
-      { icone: "🔪", titre: "Servir", detail: "ASTUCE CHEF : couper en deux en biais. Pour un wrap chaud, passer 1 min au grill côté soudure.", badge: null }
+      { icone: "🥕", titre: "Tailler crudités", detail: "Détailler le poivron, la carotte et le concombre en fins bâtonnets réguliers, et l'avocat en lamelles.", badge: null },
+      { icone: "🧄", titre: "Tartiner houmous", detail: "Étaler le houmous sur toute la surface de la tortilla jusqu'aux bords, ce qui servira de colle au wrap.", badge: null },
+      { icone: "🥬", titre: "Garnir centre", detail: "Disposer les bâtonnets de légumes et les lamelles d'avocat en bande au centre de la galette sans surcharger.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler légèrement les crudités et ajouter un tour de poivre pour relever l'ensemble du wrap.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Rabattre les deux côtés de la tortilla puis rouler bien serré en partant du bord garni pour un wrap compact.", badge: null },
+      { icone: "🔪", titre: "Servir", detail: "Couper le wrap en deux en biais et servir aussitôt, ou le passer 1 min au gril côté soudure pour le déguster chaud.", badge: null }
     ]
   },
   chilisincarne: {
@@ -1056,10 +1127,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz et l'assaisonner d'un trait de vinaigre de riz tiède.", badge: "⏱ 15 min" },
-      { icone: "🍗", titre: "Poulet", detail: "Mariner le poulet dans la sauce soja et le citron vert, puis le poêler.", badge: "⏱ 8 min" },
-      { icone: "🔪", titre: "Tailler", detail: "Couper avocat, concombre et carotte en lamelles régulières.", badge: null },
-      { icone: "🥣", titre: "Dresser", detail: "Disposer riz, poulet et légumes en secteurs. ASTUCE CHEF : range chaque ingrédient en quartiers nets dans le bol — un poke se mange autant avec les yeux qu'avec la bouche.", badge: null }
+      { icone: "🍚", titre: "Cuire riz", detail: "Cuire le riz à couvert puis l'assaisonner tiède d'un trait de vinaigre de riz et le laisser refroidir légèrement.", badge: null },
+      { icone: "🥢", titre: "Mariner poulet", detail: "Couper le poulet en lamelles et le faire mariner 10 min dans la sauce soja et le jus de citron vert.", badge: null },
+      { icone: "🍳", titre: "Cuire poulet", detail: "Poêler le poulet mariné 6 à 8 min à feu vif jusqu'à ce qu'il soit doré et bien cuit à cœur.", badge: null },
+      { icone: "🔪", titre: "Tailler légumes", detail: "Couper l'avocat, le concombre et la carotte en lamelles régulières, et décongeler ou cuire brièvement les edamame.", badge: null },
+      { icone: "🥣", titre: "Garnir base", detail: "Répartir le riz refroidi au fond du bol comme base du poke.", badge: null },
+      { icone: "🥗", titre: "Dresser", detail: "Ranger le poulet et chaque légume en quartiers nets et séparés par-dessus le riz pour un dressage soigné.", badge: null },
+      { icone: "🌰", titre: "Finition", detail: "Parsemer de graines de sésame, arroser d'un trait de sauce soja et presser un peu de citron vert avant de servir.", badge: null }
     ]
   },
   cremebudwig: {
@@ -1091,10 +1165,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥄", titre: "Base", detail: "Fouetter le fromage blanc avec l'huile et le jus de citron jusqu'à émulsion lisse.", badge: null },
-      { icone: "🍌", titre: "Banane", detail: "Écraser la banane et l'incorporer avec le miel.", badge: null },
-      { icone: "🌾", titre: "Céréales", detail: "Ajouter les flocons et les graines fraîchement moulus. ASTUCE CHEF : mouds les graines juste avant de servir — entières, leurs oméga restent enfermés et peu assimilables.", badge: null },
-      { icone: "🫐", titre: "Garnir", detail: "Couronner de framboises fraîches.", badge: null }
+      { icone: "🥛", titre: "Émulsionner base", detail: "Fouetter le fromage blanc avec l'huile d'olive et le jus de citron jusqu'à obtenir une émulsion lisse et homogène.", badge: null },
+      { icone: "🍌", titre: "Écraser banane", detail: "Écraser la banane à la fourchette et l'incorporer à la base avec le miel pour une crème douce et onctueuse.", badge: null },
+      { icone: "🌾", titre: "Moudre graines", detail: "Moudre les graines fraîchement juste avant de servir pour libérer leurs oméga et faciliter leur assimilation.", badge: null },
+      { icone: "🥣", titre: "Ajouter céréales", detail: "Incorporer les flocons et les graines moulues à la crème en mélangeant délicatement.", badge: null },
+      { icone: "🥄", titre: "Lisser", detail: "Verser la crème dans un bol et lisser la surface à la cuillère pour un dressage net.", badge: null },
+      { icone: "🫐", titre: "Garnir", detail: "Couronner de framboises fraîches et servir aussitôt, frais, au petit-déjeuner.", badge: null }
     ]
   },
   oeufsturque: {
@@ -1126,10 +1202,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧄", titre: "Yaourt à l'ail", detail: "Mélanger le yaourt avec l'ail écrasé et une pincée de sel, étaler dans l'assiette.", badge: null },
-      { icone: "🥬", titre: "Épinards", detail: "Faire tomber les épinards à la poêle dans un filet d'huile.", badge: "⏱ 3 min" },
-      { icone: "🥚", titre: "Pocher", detail: "Pocher les œufs 3 min dans une eau frémissante vinaigrée. ASTUCE CHEF : crée un tourbillon dans l'eau avant d'y glisser l'œuf — le blanc s'enroule autour du jaune et reste bien net.", badge: "⏱ 3 min" },
-      { icone: "🌶️", titre: "Beurre paprika", detail: "Faire fondre le beurre avec le paprika, en napper les œufs posés sur le yaourt et les épinards.", badge: null }
+      { icone: "🧄", titre: "Yaourt à l'ail", detail: "Mélanger le yaourt avec l'ail écrasé et une pincée de sel, puis l'étaler en couche généreuse au fond de l'assiette.", badge: null },
+      { icone: "🥬", titre: "Tomber épinards", detail: "Faire tomber les épinards à la poêle dans un filet d'huile d'olive 2 à 3 min jusqu'à ce qu'ils soient fondants.", badge: null },
+      { icone: "💧", titre: "Préparer eau", detail: "Porter une casserole d'eau à frémissement, ajouter un trait de vinaigre et créer un tourbillon à la cuillère.", badge: null },
+      { icone: "🥚", titre: "Pocher œufs", detail: "Glisser les œufs un à un au centre du tourbillon et les pocher 3 min pour un blanc enroulé et net autour du jaune coulant.", badge: null },
+      { icone: "🧈", titre: "Beurre paprika", detail: "Faire fondre le beurre à feu doux avec le paprika jusqu'à ce qu'il prenne une belle couleur rouge orangé.", badge: null },
+      { icone: "🍽️", titre: "Monter assiette", detail: "Déposer les épinards sur le yaourt à l'ail puis poser délicatement les œufs pochés égouttés par-dessus.", badge: null },
+      { icone: "🌶️", titre: "Servir", detail: "Napper généreusement les œufs du beurre au paprika et servir aussitôt avec du pain pour saucer.", badge: null }
     ]
   },
   mafeaubergine: {
@@ -1161,10 +1240,14 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Revenir", detail: "Faire revenir oignon et ail, ajouter l'aubergine en cubes.", badge: "⏱ 6 min" },
-      { icone: "🥜", titre: "Sauce", detail: "Délayer la pâte de cacahuète avec la tomate et un peu d'eau, verser sur les légumes.", badge: null },
-      { icone: "💧", titre: "Mijoter", detail: "Laisser mijoter à couvert jusqu'à ce que l'aubergine soit fondante. ASTUCE CHEF : détends la sauce avec un peu d'eau chaude si elle épaissit trop — la pâte de cacahuète boit beaucoup en cuisant.", badge: "⏱ 25 min" },
-      { icone: "🍚", titre: "Servir", detail: "Servir bien chaud sur du riz blanc.", badge: null }
+      { icone: "🔪", titre: "Préparer légumes", detail: "Émincer l'oignon, hacher l'ail et couper l'aubergine en gros cubes réguliers d'environ 3 cm.", badge: null },
+      { icone: "🧅", titre: "Revenir oignon", detail: "Faire revenir l'oignon et l'ail dans l'huile d'olive 3 à 4 min à feu moyen jusqu'à ce qu'ils soient translucides.", badge: null },
+      { icone: "🍆", titre: "Saisir aubergine", detail: "Ajouter les cubes d'aubergine et les faire colorer 5 min en remuant pour qu'ils prennent une légère croûte dorée.", badge: null },
+      { icone: "🥜", titre: "Sauce cacahuète", detail: "Délayer la pâte de cacahuète avec les tomates concassées et un peu d'eau, puis verser cette sauce sur les légumes.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Laisser mijoter à couvert 20 à 25 min à feu doux jusqu'à ce que l'aubergine soit fondante et la sauce nappante.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Ajouter le piment, rectifier le sel et détendre la sauce avec un peu d'eau chaude si elle a trop épaissi.", badge: null },
+      { icone: "🍚", titre: "Cuire riz", detail: "Cuire le riz blanc à part dans son volume d'eau salée jusqu'à absorption complète.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir le mafé d'aubergine bien chaud sur un lit de riz blanc fumant.", badge: null }
     ]
   },
   couscousfalafels: {
@@ -1196,10 +1279,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧆", titre: "Falafels", detail: "Mixer les pois chiches avec oignon, cumin et herbes, façonner des boulettes et les dorer.", badge: "⏱ 10 min" },
-      { icone: "🥕", titre: "Légumes", detail: "Mijoter courgette, carotte et tomate avec un peu d'harissa.", badge: "⏱ 12 min" },
-      { icone: "🌾", titre: "Semoule", detail: "Hydrater la semoule avec de l'eau bouillante salée et un filet d'huile. ASTUCE CHEF : laisse gonfler la semoule à couvert puis égraine-la à la fourchette — elle reste légère au lieu de coller.", badge: "⏱ 5 min" },
-      { icone: "🍽️", titre: "Dresser", detail: "Servir la semoule avec les légumes et les falafels.", badge: null }
+      { icone: "🥣", titre: "Mixer pois chiches", detail: "Mixer les pois chiches avec l'oignon, le cumin et des herbes jusqu'à obtenir une pâte qui se tient.", badge: null },
+      { icone: "🧆", titre: "Façonner falafels", detail: "Former des boulettes régulières avec la pâte et les réserver le temps de préparer les légumes.", badge: null },
+      { icone: "🍳", titre: "Dorer falafels", detail: "Faire dorer les falafels dans l'huile d'olive 6 à 8 min en les retournant pour une croûte croustillante uniforme.", badge: null },
+      { icone: "🥕", titre: "Mijoter légumes", detail: "Couper courgette et carotte en morceaux et les mijoter avec les tomates et un peu d'harissa 15 min à feu moyen.", badge: null },
+      { icone: "💧", titre: "Hydrater semoule", detail: "Verser de l'eau bouillante salée sur la semoule avec un filet d'huile, couvrir et laisser gonfler 5 min.", badge: null },
+      { icone: "🍴", titre: "Égrainer semoule", detail: "Égrainer la semoule à la fourchette pour qu'elle reste légère et aérée sans coller.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dresser la semoule en dôme, disposer les légumes mijotés autour et déposer les falafels par-dessus.", badge: null }
     ]
   },
   carottesconfites: {
@@ -1232,9 +1318,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥕", titre: "Rôtir", detail: "Enrober les carottes d'huile et les rôtir au four jusqu'à ce qu'elles soient fondantes et caramélisées.", badge: "⏱ 30 min" },
-      { icone: "🌿", titre: "Chimichurri", detail: "Mélanger persil, ail, origan, vinaigre, piment et huile d'olive.", badge: null },
-      { icone: "🥄", titre: "Assembler", detail: "Napper les carottes tièdes de chimichurri. ASTUCE CHEF : verse le chimichurri sur les carottes encore chaudes — elles s'imprègnent des arômes en refroidissant.", badge: null }
+      { icone: "🥕", titre: "Préparer", detail: "Épluche les carottes, taille-les en biseau ou en deux dans la longueur si elles sont grosses, puis dépose-les dans un plat à four.", badge: null },
+      { icone: "🫒", titre: "Enrober", detail: "Arrose généreusement d'huile d'olive, sale, poivre et mélange à la main pour bien enrober chaque carotte.", badge: null },
+      { icone: "🔥", titre: "Confire", detail: "Enfourne à 200°C pendant 30 min en remuant à mi-cuisson, jusqu'à ce que les carottes soient fondantes au cœur et joliment caramélisées.", badge: null },
+      { icone: "🌿", titre: "Ciseler", detail: "Pendant ce temps, hache finement le persil et l'ail, puis émince le piment selon ton goût.", badge: null },
+      { icone: "🥣", titre: "Chimichurri", detail: "Mélange le persil, l'ail, l'origan, le piment, un trait de vinaigre de vin et de l'huile d'olive en une sauce verte bien liée.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Goûte le chimichurri et ajuste sel, vinaigre et huile pour qu'il soit relevé et bien acidulé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Nappe les carottes encore chaudes de chimichurri pour qu'elles s'imprègnent des arômes, et sers tiède en accompagnement ou en entrée.", badge: null }
     ]
   },
   carotteslaquees: {
@@ -1266,9 +1356,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥕", titre: "Saisir", detail: "Faire revenir les carottes en bâtonnets dans l'huile avec le gingembre râpé.", badge: "⏱ 5 min" },
-      { icone: "🍯", titre: "Laquer", detail: "Ajouter soja et miel, laisser réduire jusqu'à enrober les carottes. ASTUCE CHEF : laisse la laque réduire jusqu'à ce qu'elle nappe la cuillère — trop liquide, elle ne brille pas sur les carottes.", badge: "⏱ 8 min" },
-      { icone: "🌰", titre: "Finir", detail: "Parsemer de graines de sésame et servir.", badge: null }
+      { icone: "🥕", titre: "Tailler", detail: "Épluche les carottes et détaille-les en bâtonnets réguliers d'environ 1 cm pour une cuisson uniforme.", badge: null },
+      { icone: "🫚", titre: "Râper", detail: "Râpe finement le gingembre frais pour libérer son parfum.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Fais chauffer l'huile d'olive dans une poêle ou un wok à feu vif et saisis les bâtonnets de carotte avec le gingembre 4 à 5 min en remuant.", badge: null },
+      { icone: "🍯", titre: "Laquer", detail: "Verse la sauce soja et le miel, baisse à feu moyen et laisse réduire 5 à 6 min jusqu'à ce que la laque nappe la cuillère et enrobe les carottes d'un voile brillant.", badge: null },
+      { icone: "🥄", titre: "Glacer", detail: "Remue régulièrement pour que les carottes soient toutes enrobées et restent légèrement croquantes au cœur.", badge: null },
+      { icone: "🌰", titre: "Parsemer", detail: "Hors du feu, parsème généreusement de graines de sésame et mélange délicatement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresse les carottes laquées bien chaudes, brillantes, en accompagnement d'un riz ou d'un plat japonais.", badge: null }
     ]
   },
   tomatesgratinees: {
@@ -1301,9 +1395,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Préparer", detail: "Couper les tomates en deux, les disposer dans un plat avec les champignons.", badge: null },
-      { icone: "🌿", titre: "Persillade", detail: "Mélanger ail, persil, thym et gruyère, répartir sur les tomates.", badge: null },
-      { icone: "🔥", titre: "Gratiner", detail: "Arroser d'huile et rôtir au four jusqu'à gratiné doré. ASTUCE CHEF : sale les tomates 10 min avant et éponge-les — elles rendent moins d'eau et gratinent au lieu de bouillir.", badge: "⏱ 25 min" }
+      { icone: "🍅", titre: "Préparer", detail: "Coupe les tomates en deux, sale-les sur la tranche et laisse-les dégorger 10 min puis éponge-les pour qu'elles ne rendent pas trop d'eau.", badge: null },
+      { icone: "🍄", titre: "Champignons", detail: "Nettoie et émince les champignons, puis dispose-les autour des tomates dans un plat à four.", badge: null },
+      { icone: "🌿", titre: "Persillade", detail: "Hache finement l'ail et le persil, mélange-les avec le thym effeuillé et le gruyère râpé.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Répartis la persillade au gruyère sur les tomates et les champignons en couche régulière.", badge: null },
+      { icone: "🫒", titre: "Arroser", detail: "Arrose d'un filet d'huile d'olive, sale et poivre l'ensemble.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfourne à 200°C pendant 20 min jusqu'à ce que le dessus soit doré et gratiné et les légumes tendres.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Sers chaud à la sortie du four, en accompagnement d'une viande grillée ou en plat léger.", badge: null }
     ]
   },
   rizjaponaiscacahuete: {
@@ -1335,10 +1433,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz japonais et le réserver au chaud.", badge: "⏱ 15 min" },
-      { icone: "🥦", titre: "Légumes", detail: "Sauter rapidement brocoli, carotte et poivron pour les garder croquants.", badge: "⏱ 6 min" },
-      { icone: "🥜", titre: "Sauce", detail: "Détendre la purée de cacahuète avec soja, citron vert et un peu d'eau. ASTUCE CHEF : ajoute l'eau cuillère par cuillère — la sauce cacahuète passe de pâteuse à nappante d'un coup, n'en mets pas trop.", badge: null },
-      { icone: "🥣", titre: "Dresser", detail: "Verser la sauce sur le riz et les légumes, parsemer de sésame.", badge: null }
+      { icone: "🍚", titre: "Riz", detail: "Rince le riz japonais à l'eau claire puis cuis-le selon le paquet et réserve-le au chaud, couvert.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Détaille le brocoli en petits bouquets, la carotte en fines lamelles et le poivron en lanières.", badge: null },
+      { icone: "🔥", titre: "Sauter", detail: "Fais chauffer une poêle ou un wok à feu vif et saute le brocoli, la carotte et le poivron 4 à 5 min pour les garder bien croquants.", badge: null },
+      { icone: "🥜", titre: "Sauce", detail: "Dans un bol, détends la purée de cacahuète avec la sauce soja, le jus de citron vert et de l'eau ajoutée cuillère par cuillère jusqu'à obtenir une sauce nappante.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Goûte la sauce et équilibre l'acidité du citron vert et le salé du soja selon ton goût.", badge: null },
+      { icone: "🥢", titre: "Dresser", detail: "Répartis le riz dans les bols, ajoute les légumes croquants et nappe généreusement de sauce cacahuète.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Parsème de graines de sésame et sers aussitôt, tiède, avec un quartier de citron vert.", badge: null }
     ]
   },
   pouletdukkah: {
@@ -1370,10 +1471,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Enrober", detail: "Rouler les morceaux de poulet dans le dukkah pour bien les enrober.", badge: null },
-      { icone: "🔥", titre: "Saisir", detail: "Saisir le poulet à la poêle jusqu'à ce que le dukkah dore. ASTUCE CHEF : le dukkah brûle vite — feu moyen et surveille, la croûte doit dorer sans noircir.", badge: "⏱ 7 min" },
-      { icone: "🥕", titre: "Légumes", detail: "Sauter courgette et carotte pour les garder croquantes.", badge: "⏱ 6 min" },
-      { icone: "🍋", titre: "Servir", detail: "Arroser de citron et parsemer de coriandre.", badge: null }
+      { icone: "🐔", titre: "Découper", detail: "Détaille les filets de poulet en gros morceaux réguliers et sale-les légèrement.", badge: null },
+      { icone: "🌰", titre: "Enrober", detail: "Roule chaque morceau de poulet dans le dukkah pour bien l'enrober du mélange d'épices et de fruits secs.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Fais chauffer l'huile d'olive à feu moyen et saisis le poulet 8 à 10 min en le retournant, jusqu'à ce que le dukkah dore sans noircir et que le poulet soit cuit à cœur.", badge: null },
+      { icone: "🥒", titre: "Tailler", detail: "Pendant ce temps, coupe la courgette et la carotte en bâtonnets ou en demi-rondelles.", badge: null },
+      { icone: "🍳", titre: "Sauter", detail: "Saute les légumes dans un filet d'huile à feu vif 4 à 5 min pour les garder croquants et colorés.", badge: null },
+      { icone: "🍋", titre: "Citronner", detail: "Arrose le poulet et les légumes d'un trait de jus de citron et rectifie le sel.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsème de coriandre fraîche ciselée et sers chaud, le poulet dressé sur les légumes.", badge: null }
     ]
   },
   crumblelegumes: {
@@ -1406,9 +1510,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍆", titre: "Légumes", detail: "Couper et faire revenir les légumes avec le thym jusqu'à tendreté.", badge: "⏱ 12 min" },
-      { icone: "🧈", titre: "Crumble", detail: "Sabler farine, beurre et parmesan du bout des doigts en grosse semoule. ASTUCE CHEF : garde le beurre bien froid et ne malaxe pas trop — c'est ce qui donne le crumble friable, pas une pâte.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Répartir les légumes dans un plat, couvrir de crumble et cuire à 180°C jusqu'à doré.", badge: "⏱ 25 min" }
+      { icone: "🔪", titre: "Découper", detail: "Taille la courgette, l'aubergine, les tomates et le poivron en cubes réguliers de taille moyenne.", badge: null },
+      { icone: "🍳", titre: "Revenir", detail: "Fais revenir les légumes dans un peu d'huile avec le thym effeuillé 12 à 15 min jusqu'à ce qu'ils soient tendres et que l'eau de végétation s'évapore.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Sale, poivre et goûte, puis répartis les légimes dans un plat à gratin.", badge: null },
+      { icone: "🧈", titre: "Sabler", detail: "Du bout des doigts, sable la farine avec le beurre bien froid et le parmesan jusqu'à obtenir une grosse semoule friable, sans trop travailler.", badge: null },
+      { icone: "🥄", titre: "Couvrir", detail: "Répartis le crumble en couche régulière sur les légumes sans tasser pour garder du croustillant.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourne à 180°C pendant 25 à 30 min jusqu'à ce que le crumble soit bien doré et croustillant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisse tiédir 5 min puis sers le crumble dans le plat, en plat végétarien ou en accompagnement.", badge: null }
     ]
   },
   bowlmarocain: {
@@ -1440,9 +1548,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍠", titre: "Rôtir", detail: "Rôtir patate douce et carotte au four avec le cumin et l'huile.", badge: "⏱ 20 min" },
-      { icone: "🌾", titre: "Semoule", detail: "Hydrater la semoule à l'eau bouillante salée puis l'égrainer.", badge: null },
-      { icone: "🥣", titre: "Assembler", detail: "Dresser semoule, pois chiches, légumes rôtis, raisins et amandes. ASTUCE CHEF : torréfie les amandes à sec 2 min avant — elles deviennent croquantes et bien plus parfumées.", badge: null }
+      { icone: "🍠", titre: "Découper", detail: "Épluche et taille la patate douce et la carotte en cubes réguliers, dépose-les dans un plat à four.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Enrobe les légumes d'huile d'olive, de cumin, de sel et de poivre en mélangeant bien.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Enfourne à 200°C pendant 25 min en remuant à mi-cuisson, jusqu'à ce que les légumes soient fondants et caramélisés.", badge: null },
+      { icone: "🌾", titre: "Semoule", detail: "Verse l'eau bouillante salée sur la semoule, couvre 5 min puis égraine-la à la fourchette avec un filet d'huile.", badge: null },
+      { icone: "🌰", titre: "Torréfier", detail: "Fais torréfier les amandes à sec dans une poêle 2 min jusqu'à ce qu'elles soient dorées et croquantes.", badge: null },
+      { icone: "🥣", titre: "Assembler", detail: "Dans les bols, dresse la semoule, les pois chiches, les légumes rôtis, les raisins secs et les amandes torréfiées.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arrose d'un filet d'huile d'olive et sers tiède, ce bowl coloré et parfumé au cumin.", badge: null }
     ]
   },
   choufleurzaatar: {
@@ -1474,10 +1586,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥦", titre: "Détailler", detail: "Détailler le chou-fleur en bouquets, enrober d'huile et de za'atar.", badge: null },
-      { icone: "🔥", titre: "Rôtir", detail: "Rôtir au four à 200°C jusqu'à doré et croustillant. ASTUCE CHEF : étale bien les bouquets sans les superposer — serrés, ils cuisent à la vapeur et restent mous.", badge: "⏱ 28 min" },
-      { icone: "🥄", titre: "Sauce", detail: "Mélanger yaourt, citron et ail en sauce fraîche.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Napper le chou-fleur de sauce et d'un reste de za'atar.", badge: null }
+      { icone: "🔪", titre: "Détailler", detail: "Détaille le chou-fleur en bouquets réguliers de taille moyenne pour une cuisson homogène.", badge: null },
+      { icone: "🫒", titre: "Enrober", detail: "Enrobe les bouquets d'huile d'olive et de za'atar, sale légèrement et mélange bien.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Étale les bouquets sur une plaque sans les superposer et rôtis à 200°C pendant 25 à 30 min jusqu'à ce qu'ils soient dorés et croustillants.", badge: null },
+      { icone: "🧄", titre: "Sauce", detail: "Mélange le yaourt avec le jus de citron et l'ail écrasé, sale et obtiens une sauce fraîche et lisse.", badge: null },
+      { icone: "🥄", titre: "Napper", detail: "Étale la sauce au yaourt dans le fond d'un plat de service ou dans les assiettes.", badge: null },
+      { icone: "🌿", titre: "Dresser", detail: "Dispose le chou-fleur rôti bien chaud sur la sauce et parsème d'un reste de za'atar.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Sers aussitôt, le contraste du chou-fleur croustillant et de la sauce fraîche en entrée ou en accompagnement.", badge: null }
     ]
   },
   tajinelegumesdattes: {
@@ -1509,10 +1624,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Revenir", detail: "Faire revenir l'oignon avec le cumin et les épices.", badge: null },
-      { icone: "🥕", titre: "Mijoter", detail: "Ajouter les légumes en cubes, le citron confit et un peu d'eau, mijoter à couvert.", badge: "⏱ 25 min" },
-      { icone: "🌴", titre: "Dattes", detail: "Ajouter les dattes en fin de cuisson. ASTUCE CHEF : mets les dattes à la fin — trop cuites elles fondent ; juste réchauffées elles gardent leur mâché sucré qui contraste avec les légumes.", badge: null },
-      { icone: "🌾", titre: "Servir", detail: "Servir sur de la semoule hydratée.", badge: null }
+      { icone: "🧅", titre: "Émincer", detail: "Émince finement l'oignon et taille la courgette, la carotte et la patate douce en gros cubes réguliers.", badge: null },
+      { icone: "🍲", titre: "Revenir", detail: "Fais revenir l'oignon dans l'huile d'olive avec le cumin et les épices 5 min à feu moyen jusqu'à ce qu'il devienne translucide.", badge: null },
+      { icone: "💧", titre: "Mijoter", detail: "Ajoute les légumes en cubes, le citron confit émincé et un peu d'eau, puis couvre et laisse mijoter à feu doux 30 min.", badge: null },
+      { icone: "🌴", titre: "Dattes", detail: "Ajoute les dattes dénoyautées en fin de cuisson, juste pour les réchauffer 5 min afin qu'elles gardent leur mâché sucré.", badge: null },
+      { icone: "🌾", titre: "Semoule", detail: "Pendant ce temps, hydrate la semoule à l'eau bouillante salée, couvre puis égraine-la à la fourchette.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Goûte le tajine et rectifie l'assaisonnement en sel et épices avant de servir.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresse le tajine de légumes fondants et ses dattes sur un lit de semoule chaude.", badge: null }
     ]
   },
   woklegumescurry: {
@@ -1544,10 +1662,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌶️", titre: "Curry", detail: "Faire revenir la pâte de curry jaune dans l'huile chaude.", badge: "⏱ 2 min" },
-      { icone: "🥕", titre: "Sauter", detail: "Sauter les légumes à feu vif pour les garder croquants. ASTUCE CHEF : coupe tous les légumes de la même taille — ils cuisent uniformément et restent croquants ensemble.", badge: "⏱ 6 min" },
-      { icone: "🥥", titre: "Lier", detail: "Verser le lait de coco et laisser réduire légèrement.", badge: null },
-      { icone: "🍚", titre: "Servir", detail: "Coriandre et riz.", badge: null }
+      { icone: "🍚", titre: "Riz", detail: "Rince le riz et cuis-le selon le paquet, puis réserve-le au chaud le temps de préparer le wok.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Détaille le navet, la carotte et la courgette en bâtonnets ou cubes de taille identique pour une cuisson uniforme.", badge: null },
+      { icone: "🔥", titre: "Curry", detail: "Fais chauffer l'huile d'olive dans un wok et fais revenir la pâte de curry jaune 1 à 2 min jusqu'à ce qu'elle libère ses arômes.", badge: null },
+      { icone: "🥢", titre: "Sauter", detail: "Ajoute les légumes et saute-les à feu vif 5 à 6 min pour les garder croquants et bien enrobés de curry.", badge: null },
+      { icone: "🥥", titre: "Lier", detail: "Verse le lait de coco et laisse mijoter à feu moyen 5 min pour que la sauce réduise et nappe les légumes.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Goûte et rectifie l'assaisonnement, en sel ou en pâte de curry selon l'intensité voulue.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresse le wok sur le riz chaud et parsème de coriandre fraîche ciselée avant de servir.", badge: null }
     ]
   },
   currylegumesthai: {
@@ -1579,9 +1700,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Aromates", detail: "Faire revenir citronnelle et pâte de curry.", badge: "⏱ 3 min" },
-      { icone: "🥥", titre: "Mijoter", detail: "Ajouter les légumes et le lait de coco, mijoter jusqu'à tendreté. ASTUCE CHEF : ne fais pas bouillir fort le lait de coco — il tranche ; un frémissement garde la sauce lisse.", badge: "⏱ 15 min" },
-      { icone: "🍚", titre: "Servir", detail: "Coriandre fraîche et riz.", badge: null }
+      { icone: "🔪", titre: "Tailler", detail: "Détaille le poivron, la courgette et la carotte en morceaux réguliers d'environ 2 cm, et émince finement la citronnelle.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Lance le riz à cuire dans deux fois son volume d'eau salée pendant 12 à 15 min, puis laisse-le reposer couvert.", badge: null },
+      { icone: "🌿", titre: "Aromates", detail: "Fais revenir la citronnelle et la pâte de curry dans une grande sauteuse à feu moyen 2 min, jusqu'à ce que les parfums se libèrent.", badge: null },
+      { icone: "🥕", titre: "Saisir", detail: "Ajoute carotte, poivron et courgette, fais-les sauter 4 à 5 min à feu vif pour les enrober et les attendrir légèrement.", badge: null },
+      { icone: "🥥", titre: "Mijoter", detail: "Verse le lait de coco et laisse mijoter à frémissement doux 12 à 15 min sans bouillir, pour que la sauce reste lisse et nappe les légumes.", badge: null },
+      { icone: "🧂", titre: "Ajuster", detail: "Rectifie l'assaisonnement en sel et goûte l'équilibre épicé-sucré du curry avant de couper le feu.", badge: null },
+      { icone: "🌱", titre: "Servir", detail: "Dresse le riz, nappe de curry et de légumes, parsème de coriandre fraîche ciselée et sers aussitôt bien chaud.", badge: null }
     ]
   },
   aubergineteriyaki: {
@@ -1614,9 +1739,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍆", titre: "Saisir", detail: "Saisir l'aubergine en cubes jusqu'à dorée et fondante.", badge: "⏱ 10 min" },
-      { icone: "🍯", titre: "Laquer", detail: "Ajouter soja, miel et gingembre, laisser réduire en laque. ASTUCE CHEF : l'aubergine boit beaucoup d'huile — saisis-la à feu vif sans en rajouter, elle relâche le gras en cuisant.", badge: "⏱ 5 min" },
-      { icone: "🌰", titre: "Finir", detail: "Parsemer de sésame et servir sur du riz.", badge: null }
+      { icone: "🔪", titre: "Tailler", detail: "Coupe l'aubergine en cubes réguliers d'environ 3 cm pour une cuisson homogène et une belle coloration.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Mets le riz à cuire dans deux fois son volume d'eau salée 12 à 15 min, puis réserve-le couvert au chaud.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisis les cubes d'aubergine dans un filet d'huile d'olive à feu vif 8 à 10 min jusqu'à ce qu'ils soient dorés et fondants.", badge: null },
+      { icone: "🫚", titre: "Parfumer", detail: "Ajoute le gingembre râpé et laisse-le suer 1 min pour qu'il libère son arôme sans brûler.", badge: null },
+      { icone: "🍯", titre: "Laquer", detail: "Verse la sauce soja et le miel, baisse à feu moyen et laisse réduire 3 à 4 min jusqu'à obtenir une laque brillante qui nappe l'aubergine.", badge: null },
+      { icone: "🌰", titre: "Sésame", detail: "Parsème de graines de sésame et mélange délicatement pour les enrober de laque.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresse l'aubergine laquée sur le riz chaud et sers immédiatement, sauce encore brillante.", badge: null }
     ]
   },
   orgerisotto: {
@@ -1648,9 +1777,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Nacrer", detail: "Faire revenir l'oignon et nacrer l'orge dans l'huile.", badge: null },
-      { icone: "🌾", titre: "Mouiller", detail: "Ajouter le bouillon louche par louche en remuant, comme un risotto. ASTUCE CHEF : l'orge met plus longtemps que le riz (~30 min) — ajoute le bouillon progressivement, il devient crémeux en relâchant son amidon.", badge: "⏱ 28 min" },
-      { icone: "🧀", titre: "Lier", detail: "Hors du feu, lier au parmesan et parsemer de feta.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émince finement l'oignon et tiens le bouillon chaud à frémissement dans une casserole à côté.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Fais suer l'oignon dans l'huile d'olive à feu moyen 3 à 4 min jusqu'à ce qu'il devienne translucide.", badge: null },
+      { icone: "🌾", titre: "Nacrer", detail: "Ajoute l'orge et remue 2 min pour le nacrer et l'enrober de matière grasse.", badge: null },
+      { icone: "🥄", titre: "Mouiller", detail: "Incorpore le bouillon chaud louche par louche en remuant souvent, en attendant l'absorption avant chaque ajout, pendant environ 30 min.", badge: null },
+      { icone: "✅", titre: "Tester", detail: "Vérifie la cuisson : l'orge doit être tendre mais encore légèrement ferme sous la dent, et la texture crémeuse.", badge: null },
+      { icone: "🧀", titre: "Lier", detail: "Hors du feu, lie l'orge au parmesan râpé pour un risotto onctueux et rectifie le sel.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresse en assiette creuse et parsème généreusement de feta émiettée avant de servir bien chaud.", badge: null }
     ]
   },
   rizrougeorange: {
@@ -1682,9 +1815,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Cuire", detail: "Cuire le riz rouge jusqu'à tendreté (il reste un peu ferme).", badge: "⏱ 25 min" },
-      { icone: "🍊", titre: "Parfumer", detail: "Mélanger le riz tiède au jus et au zeste d'orange. ASTUCE CHEF : ajoute le zeste d'orange en plus du jus — c'est dans le zeste que se concentrent les huiles parfumées.", badge: null },
-      { icone: "🥜", titre: "Finir", detail: "Parsemer de pistaches concassées et de menthe.", badge: null }
+      { icone: "🍚", titre: "Cuire", detail: "Fais cuire le riz rouge dans une grande quantité d'eau salée 25 à 30 min jusqu'à ce qu'il soit tendre mais encore un peu ferme, puis égoutte.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Fais suer l'oignon émincé dans l'huile d'olive à feu doux 4 à 5 min jusqu'à ce qu'il fonde sans colorer.", badge: null },
+      { icone: "🍊", titre: "Zester", detail: "Prélève le zeste de l'orange puis presse son jus pour récupérer un maximum d'arômes.", badge: null },
+      { icone: "🥄", titre: "Parfumer", detail: "Mélange le riz encore tiède avec l'oignon, le jus et le zeste d'orange pour qu'il s'imprègne des parfums.", badge: null },
+      { icone: "🌰", titre: "Pistaches", detail: "Concasse grossièrement les pistaches et incorpore-les pour apporter du croquant.", badge: null },
+      { icone: "🌿", titre: "Mentholer", detail: "Ajoute la menthe fraîche ciselée au dernier moment et rectifie l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Sers tiède ou à température ambiante, idéal en accompagnement frais et parfumé.", badge: null }
     ]
   },
   poeleekasha: {
@@ -1716,10 +1853,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Griller", detail: "Faire griller le sarrasin à sec quelques minutes pour le kasha.", badge: "⏱ 3 min" },
-      { icone: "💧", titre: "Cuire", detail: "Cuire le sarrasin dans deux fois son volume d'eau. ASTUCE CHEF : grille le sarrasin à sec avant de le cuire — ça révèle son goût noiseté et l'empêche de coller en bouillie.", badge: "⏱ 12 min" },
-      { icone: "🥒", titre: "Poêlée", detail: "Sauter courgette et tomates, mélanger au sarrasin.", badge: null },
-      { icone: "🧀", titre: "Finir", detail: "Parsemer de feta et de persil.", badge: null }
+      { icone: "🔪", titre: "Tailler", detail: "Détaille la courgette en petits dés et coupe les tomates en morceaux, émince l'oignon.", badge: null },
+      { icone: "🍳", titre: "Griller", detail: "Fais griller le sarrasin à sec dans une poêle 2 à 3 min jusqu'à ce qu'il dégage une odeur de noisette, c'est le kasha.", badge: null },
+      { icone: "💧", titre: "Cuire", detail: "Verse deux fois son volume d'eau salée sur le sarrasin grillé et laisse cuire 10 à 12 min à feu doux jusqu'à absorption.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Dans une autre poêle, fais suer l'oignon dans l'huile d'olive 3 min puis ajoute la courgette et fais-la sauter 5 min.", badge: null },
+      { icone: "🍅", titre: "Poêlée", detail: "Ajoute les tomates et poursuis la cuisson 4 à 5 min, puis mélange la poêlée au sarrasin égoutté.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Rectifie le sel et le poivre, et goûte l'équilibre de la poêlée.", badge: null },
+      { icone: "🧀", titre: "Finir", detail: "Parsème de feta émiettée et de persil ciselé, sers tiède ou froid.", badge: null }
     ]
   },
   bowlmelonfeta: {
@@ -1752,9 +1892,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍈", titre: "Tailler", detail: "Couper le melon et le concombre en billes ou cubes réguliers.", badge: null },
-      { icone: "🧀", titre: "Assembler", detail: "Ajouter la feta émiettée et la menthe ciselée. ASTUCE CHEF : sale très peu — la feta est déjà salée et le sel ferait rendre l'eau au melon et au concombre.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Filet d'huile d'olive et trait de citron, servir bien frais.", badge: null }
+      { icone: "🍈", titre: "Sélection", detail: "Choisis un melon bien mûr et parfumé et un concombre ferme pour un contraste de textures réussi.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Coupe le melon et le concombre en billes à la cuillère parisienne ou en cubes réguliers d'environ 2 cm.", badge: null },
+      { icone: "🧀", titre: "Feta", detail: "Émiette la feta en morceaux grossiers et cisèle finement la menthe fraîche.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Réunis melon, concombre, feta et menthe dans un saladier en mélangeant délicatement pour ne pas écraser.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Arrose d'un filet d'huile d'olive et d'un trait de citron, sale très peu car la feta apporte déjà du sel.", badge: null },
+      { icone: "❄️", titre: "Rafraîchir", detail: "Place le bowl 15 min au réfrigérateur pour que les saveurs se marient et que tout soit bien frais.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dresse dans des bols, ajoute une feuille de menthe et sers aussitôt bien froid.", badge: null }
     ]
   },
   bowlguacamolecourgette: {
@@ -1787,10 +1931,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥒", titre: "Guacamole", detail: "Cuire la courgette à la vapeur et la mixer avec l'avocat et le citron vert.", badge: null },
-      { icone: "🌾", titre: "Quinoa", detail: "Cuire le quinoa et le laisser refroidir.", badge: "⏱ 12 min" },
-      { icone: "🥣", titre: "Dresser", detail: "Disposer quinoa, guacamole, tomates et oignon rouge. ASTUCE CHEF : la courgette vapeur remplace la moitié de l'avocat — aussi crémeux, deux fois moins gras, et personne ne devine.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Coriandre fraîche.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Coupe la courgette en rondelles, détaille les tomates en dés et émince finement l'oignon rouge.", badge: null },
+      { icone: "♨️", titre: "Vapeur", detail: "Fais cuire la courgette à la vapeur 8 à 10 min jusqu'à ce qu'elle soit bien tendre, puis laisse-la tiédir.", badge: null },
+      { icone: "🥑", titre: "Guacamole", detail: "Mixe la courgette avec l'avocat et le jus de citron vert jusqu'à obtenir une crème lisse, sale et poivre.", badge: null },
+      { icone: "🌾", titre: "Quinoa", detail: "Rince puis cuis le quinoa 12 à 15 min dans l'eau salée, égoutte et laisse-le refroidir.", badge: null },
+      { icone: "🥣", titre: "Dresser", detail: "Répartis le quinoa au fond des bols et ajoute une généreuse cuillère de guacamole de courgette.", badge: null },
+      { icone: "🍅", titre: "Garnir", detail: "Dispose les dés de tomate et l'oignon rouge par-dessus pour la fraîcheur et le croquant.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Parsème de coriandre fraîche ciselée et sers frais avec un quartier de citron vert.", badge: null }
     ]
   },
   poischichescitron: {
@@ -1822,9 +1969,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧄", titre: "Parfumer", detail: "Faire revenir l'ail, le cumin et le paprika dans l'huile.", badge: "⏱ 2 min" },
-      { icone: "🫘", titre: "Sauter", detail: "Ajouter les pois chiches égouttés et les faire dorer. ASTUCE CHEF : sèche bien les pois chiches avant de les sauter — humides, ils ne dorent pas et restent mous.", badge: "⏱ 8 min" },
-      { icone: "🍋", titre: "Finir", detail: "Réveiller au citron et au persil, servir chaud ou froid.", badge: null }
+      { icone: "💧", titre: "Égoutter", detail: "Égoutte et rince les pois chiches, puis sèche-les soigneusement dans un linge pour qu'ils dorent bien.", badge: null },
+      { icone: "🧄", titre: "Préparer", detail: "Hache l'ail finement et presse le citron en réservant un peu de zeste.", badge: null },
+      { icone: "🌶️", titre: "Parfumer", detail: "Fais revenir l'ail, le cumin et le paprika dans l'huile d'olive à feu moyen 1 min pour libérer les épices sans les brûler.", badge: null },
+      { icone: "🍳", titre: "Sauter", detail: "Ajoute les pois chiches secs et fais-les dorer à feu vif 6 à 8 min en remuant régulièrement jusqu'à coloration.", badge: null },
+      { icone: "🍋", titre: "Réveiller", detail: "Déglace au jus de citron hors du feu pour réveiller les saveurs et rectifie le sel.", badge: null },
+      { icone: "🌿", titre: "Persiller", detail: "Parsème de persil frais ciselé et mélange délicatement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Sers chaud en accompagnement ou froid en salade, à parsemer de zeste de citron.", badge: null }
     ]
   },
   onepotcitronconfit: {
@@ -1856,9 +2007,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Dorer", detail: "Dorer le poulet dans la cocotte, réserver.", badge: "⏱ 6 min" },
-      { icone: "🍚", titre: "Riz", detail: "Faire revenir l'oignon et nacrer le riz dans les sucs.", badge: null },
-      { icone: "💧", titre: "Mijoter", detail: "Remettre le poulet, ajouter citron confit, olives et bouillon, cuire à couvert. ASTUCE CHEF : ne soulève pas le couvercle pendant la cuisson du riz — la vapeur emprisonnée le cuit uniformément.", badge: "⏱ 20 min" }
+      { icone: "🔪", titre: "Préparer", detail: "Émince l'oignon, détaille le citron confit en lamelles et tiens le bouillon au chaud.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Fais dorer les morceaux de poulet dans l'huile d'olive à feu vif 5 à 6 min sur toutes les faces, puis réserve-les.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Dans la même cocotte, fais suer l'oignon 3 à 4 min dans les sucs de cuisson jusqu'à ce qu'il devienne translucide.", badge: null },
+      { icone: "🍚", titre: "Nacrer", detail: "Ajoute le riz et remue 2 min pour le nacrer et l'enrober des sucs parfumés.", badge: null },
+      { icone: "🍋", titre: "Mijoter", detail: "Remets le poulet, ajoute citron confit, olives et bouillon chaud, couvre et laisse cuire à feu doux 18 à 20 min.", badge: null },
+      { icone: "😴", titre: "Reposer", detail: "Coupe le feu et laisse reposer 5 min à couvert sans soulever le couvercle pour que le riz finisse de gonfler.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égraine le riz à la fourchette et sers le poulet bien fondant, nappé de jus citronné.", badge: null }
     ]
   },
   pouletrizbrocoli: {
@@ -1889,10 +2044,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz dans l'eau salée.", badge: null },
-      { icone: "🥦", titre: "Brocoli", detail: "Cuire le brocoli vapeur 8 min, garder croquant.", badge: null },
-      { icone: "🍗", titre: "Poulet", detail: "Griller le poulet avec ail et citron, 5 min par face.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Assembler, filet d'huile d'olive.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Détaille le brocoli en petits bouquets, hache l'ail et presse le citron.", badge: null },
+      { icone: "🍗", titre: "Mariner", detail: "Enrobe les filets de poulet d'huile d'olive, d'ail, de jus de citron et de sel, et laisse mariner 10 min.", badge: null },
+      { icone: "🍚", titre: "Riz", detail: "Fais cuire le riz dans deux fois son volume d'eau salée 12 à 15 min, puis laisse-le reposer couvert.", badge: null },
+      { icone: "♨️", titre: "Brocoli", detail: "Cuis le brocoli à la vapeur 8 min pour le garder bien vert et croquant.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Grille le poulet dans une poêle chaude 5 min par face jusqu'à ce qu'il soit doré et cuit à cœur.", badge: null },
+      { icone: "😴", titre: "Reposer", detail: "Laisse reposer le poulet 3 min hors du feu avant de le trancher pour conserver son jus.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Assemble riz, brocoli et poulet tranché, arrose d'un filet d'huile d'olive et d'un trait de citron avant de servir.", badge: null }
     ]
   },
   dindelegumeswok: {
@@ -1923,9 +2081,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
-      { icone: "🦃", titre: "Dinde", detail: "Saisir la dinde au wok à feu vif.", badge: null },
-      { icone: "🥦", titre: "Légumes", detail: "Ajouter courgette, poivron, gingembre, sauce soja.", badge: null }
+      { icone: "🍚", titre: "Cuire riz", detail: "Rincer le riz puis le cuire dans deux fois son volume d'eau salée 12 à 15 min jusqu'à absorption complète, et le réserver couvert.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Tailler les escalopes de dinde en fines lanières, détailler la courgette et le poivron en bâtonnets, puis émincer ou râper le gingembre frais.", badge: null },
+      { icone: "🔥", titre: "Saisir dinde", detail: "Chauffer un filet d'huile d'olive dans le wok à feu vif (huile bien fumante) et saisir la dinde 3 à 4 min en remuant jusqu'à ce qu'elle soit dorée, puis la réserver.", badge: null },
+      { icone: "🥦", titre: "Sauter légumes", detail: "Dans le même wok, faire sauter courgette et poivron 4 à 5 min à feu vif pour les garder croquants, puis ajouter le gingembre et mélanger 1 min.", badge: null },
+      { icone: "🥢", titre: "Lier", detail: "Remettre la dinde, déglacer avec un trait de sauce soja, faire revenir le tout 2 min à feu vif pour bien enrober et rectifier l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposer le riz dans les bols, déposer la dinde et les légumes par-dessus, napper du jus du wok et servir aussitôt bien chaud.", badge: null }
     ]
   },
   bowlpouletpatatedouce: {
@@ -1956,9 +2117,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍠", titre: "Patate douce", detail: "Rôtir la patate douce en dés 25 min à 200°C.", badge: null },
-      { icone: "🍗", titre: "Poulet", detail: "Cuire le poulet à la poêle.", badge: null },
-      { icone: "🥑", titre: "Assembler", detail: "Dresser sur épinards, ajouter avocat et citron.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Éplucher la patate douce et la couper en dés réguliers, tailler le poulet en morceaux, puis dénoyauter et trancher l'avocat juste avant le dressage.", badge: null },
+      { icone: "🔥", titre: "Rôtir", detail: "Enrober les dés de patate douce d'huile d'olive, sel et poivre, les étaler sur une plaque et les rôtir 25 min à 200°C en les retournant à mi-cuisson.", badge: null },
+      { icone: "🍗", titre: "Cuire poulet", detail: "Pendant ce temps, saisir le poulet à la poêle dans un filet d'huile 6 à 8 min à feu moyen-vif jusqu'à ce qu'il soit doré et cuit à cœur.", badge: null },
+      { icone: "🥬", titre: "Préparer base", detail: "Laver et essorer les épinards frais, les répartir au fond des bols comme base de verdure croquante.", badge: null },
+      { icone: "🥑", titre: "Assembler", detail: "Déposer sur les épinards les dés de patate douce rôtis, le poulet et les lamelles d'avocat de façon harmonieuse.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Arroser d'un filet d'huile d'olive et d'un bon jus de citron, saler légèrement et servir tiède pour profiter du contraste chaud-froid.", badge: null }
     ]
   },
   colinquinoabrocoli: {
@@ -1989,9 +2153,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Quinoa", detail: "Cuire le quinoa 15 min, rincer.", badge: null },
-      { icone: "🥦", titre: "Brocoli", detail: "Vapeur 8 min.", badge: null },
-      { icone: "🐟", titre: "Colin", detail: "Poêler le colin 3 min par face avec ail et citron.", badge: null }
+      { icone: "💧", titre: "Rincer quinoa", detail: "Rincer le quinoa à l'eau claire pour ôter l'amertume, puis le cuire dans deux fois son volume d'eau salée 15 min jusqu'à ce que les grains soient translucides.", badge: null },
+      { icone: "🥦", titre: "Cuire brocoli", detail: "Détailler le brocoli en petits bouquets et le cuire à la vapeur 8 min pour qu'il reste vert et légèrement croquant.", badge: null },
+      { icone: "🔪", titre: "Préparer colin", detail: "Éponger les filets de colin, les saler et poivrer, puis hacher finement l'ail et préparer le jus du citron.", badge: null },
+      { icone: "🐟", titre: "Poêler", detail: "Saisir le colin dans l'huile d'olive bien chaude 3 min par face à feu moyen-vif, ajouter l'ail en fin de cuisson et arroser de jus de citron.", badge: null },
+      { icone: "🍴", titre: "Égrainer", detail: "Égrainer le quinoa à la fourchette, y mélanger les bouquets de brocoli et un filet d'huile d'olive, puis rectifier le sel.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dresser le quinoa et le brocoli dans l'assiette, poser le filet de colin par-dessus et servir avec un quartier de citron.", badge: null }
     ]
   },
   saladethonharicotsblancs: {
@@ -2022,9 +2189,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥫", titre: "Mélanger", detail: "Égoutter thon et haricots, mélanger.", badge: null },
-      { icone: "🍅", titre: "Légumes", detail: "Ajouter tomate en dés et oignon rouge émincé.", badge: null },
-      { icone: "🍋", titre: "Assaisonner", detail: "Huile d'olive, citron, persil.", badge: null }
+      { icone: "🥫", titre: "Égoutter", detail: "Égoutter soigneusement le thon et les haricots blancs, rincer les haricots à l'eau froide pour les attendrir puis les verser dans un saladier.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Couper les tomates en dés en retirant l'excès de jus, émincer finement l'oignon rouge et ciseler le persil frais.", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Mélanger délicatement le thon, les haricots, les tomates et l'oignon rouge sans écraser pour garder de la texture.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Préparer la vinaigrette en fouettant huile d'olive, jus de citron, sel et poivre, puis la verser sur la salade et mélanger.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Ajouter le persil ciselé, goûter et rectifier l'assaisonnement en citron ou en sel selon votre goût.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laisser reposer la salade 10 min au frais pour que les saveurs se mêlent, puis servir bien fraîche en entrée ou plat léger.", badge: null }
     ]
   },
   tempehpoelelegumes: {
@@ -2055,9 +2225,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
-      { icone: "🟨", titre: "Tempeh", detail: "Dorer le tempeh en dés à la poêle.", badge: null },
-      { icone: "🥦", titre: "Légumes", detail: "Ajouter légumes, ail, gingembre, sauce soja.", badge: null }
+      { icone: "🍚", titre: "Cuire riz", detail: "Rincer le riz et le cuire dans deux fois son volume d'eau salée 12 à 15 min jusqu'à absorption, puis le réserver couvert.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Couper le tempeh en dés, détailler le brocoli en petits bouquets et le poivron en lanières, puis hacher l'ail et le gingembre.", badge: null },
+      { icone: "🟤", titre: "Dorer tempeh", detail: "Faire dorer les dés de tempeh à la poêle dans un filet d'huile 5 min à feu moyen-vif en les retournant pour qu'ils soient croustillants sur toutes les faces.", badge: null },
+      { icone: "🥦", titre: "Sauter légumes", detail: "Ajouter le brocoli et le poivron, faire sauter 5 min à feu vif pour les garder croquants, puis incorporer l'ail et le gingembre 1 min.", badge: null },
+      { icone: "🥢", titre: "Glacer", detail: "Verser un trait de sauce soja, mélanger 2 min pour bien enrober le tempeh et les légumes, puis rectifier l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Répartir le riz dans les bols, ajouter le tempeh et les légumes glacés, napper du jus de la poêle et servir aussitôt.", badge: null }
     ]
   },
   tempehcurrycoco: {
@@ -2088,9 +2261,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz.", badge: null },
-      { icone: "🟨", titre: "Tempeh", detail: "Dorer le tempeh en dés.", badge: null },
-      { icone: "🥥", titre: "Curry", detail: "Ajouter curry, lait de coco et épinards, mijoter 10 min.", badge: null }
+      { icone: "🍚", titre: "Cuire riz", detail: "Rincer le riz et le cuire dans deux fois son volume d'eau salée 12 à 15 min jusqu'à absorption complète, puis le réserver couvert au chaud.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Couper le tempeh en dés et émincer finement l'oignon, puis laver les épinards frais et les essorer.", badge: null },
+      { icone: "🟤", titre: "Dorer tempeh", detail: "Faire dorer les dés de tempeh dans une sauteuse avec un filet d'huile 5 min à feu moyen-vif jusqu'à ce qu'ils soient bien colorés, puis les réserver.", badge: null },
+      { icone: "🧅", titre: "Suer oignon", detail: "Faire suer l'oignon émincé 3 min à feu doux, ajouter le curry et le faire torréfier 1 min pour libérer ses arômes.", badge: null },
+      { icone: "🥥", titre: "Mijoter", detail: "Verser le lait de coco, remettre le tempeh et laisser mijoter 10 min à feu doux pour épaissir la sauce et bien l'imprégner.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Ajouter les épinards en fin de cuisson, les laisser tomber 2 min, rectifier l'assaisonnement et servir le curry sur le riz bien chaud.", badge: null }
     ]
   },
   bowledamamequinoa: {
@@ -2121,9 +2297,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Quinoa", detail: "Cuire le quinoa, laisser tiédir.", badge: null },
-      { icone: "🟢", titre: "Edamame", detail: "Cuire les edamame 5 min.", badge: null },
-      { icone: "🥑", titre: "Dresser", detail: "Disposer le tout, napper de sauce soja.", badge: null }
+      { icone: "💧", titre: "Cuire quinoa", detail: "Rincer le quinoa puis le cuire dans deux fois son volume d'eau salée 15 min jusqu'à ce que les grains soient translucides, et le laisser tiédir.", badge: null },
+      { icone: "🫛", titre: "Cuire edamame", detail: "Plonger les edamame dans l'eau bouillante salée 5 min, puis les égoutter et les écosser si nécessaire.", badge: null },
+      { icone: "🔪", titre: "Tailler légumes", detail: "Couper le concombre en demi-rondelles, râper ou tailler les carottes en fins bâtonnets et trancher l'avocat juste avant le montage.", badge: null },
+      { icone: "🍴", titre: "Égrainer", detail: "Égrainer le quinoa tiède à la fourchette pour qu'il soit aéré et le répartir comme base au fond des bols.", badge: null },
+      { icone: "🥗", titre: "Monter", detail: "Disposer harmonieusement par zones les edamame, le concombre, les carottes et l'avocat sur le lit de quinoa.", badge: null },
+      { icone: "🥢", titre: "Napper", detail: "Napper généreusement de sauce soja, mélanger légèrement à table et servir frais pour un bowl complet et croquant.", badge: null }
     ]
   },
   legumesplancha: {
@@ -2154,9 +2333,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Tailler", detail: "Couper tous les légumes en lamelles.", badge: null },
-      { icone: "🔥", titre: "Plancha", detail: "Saisir à la plancha bien chaude avec l'ail.", badge: null },
-      { icone: "🫒", titre: "Finir", detail: "Filet d'huile d'olive et de sel en fin de cuisson.", badge: null }
+      { icone: "🔪", titre: "Tailler", detail: "Laver les légumes puis couper courgette, aubergine et poivron en lamelles régulières et l'oignon en rondelles épaisses pour qu'ils tiennent à la cuisson.", badge: null },
+      { icone: "🧄", titre: "Parfumer", detail: "Hacher l'ail finement et le mélanger à un peu d'huile d'olive pour préparer une huile parfumée qui badigeonnera les légumes.", badge: null },
+      { icone: "🖌️", titre: "Huiler", detail: "Badigeonner légèrement les lamelles de légumes d'huile d'olive ailée et les saler pour éviter qu'ils n'attachent à la plancha.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Chauffer la plancha bien chaude et saisir les légumes 3 à 4 min par face jusqu'à obtenir de belles marques grillées.", badge: null },
+      { icone: "🧄", titre: "Ailler", detail: "Répartir le reste d'ail haché sur les légumes en fin de cuisson et laisser revenir 1 min pour qu'il s'attendrisse sans brûler.", badge: null },
+      { icone: "🫒", titre: "Finir", detail: "Dresser les légumes en éventail, arroser d'un filet d'huile d'olive crue et d'une pincée de sel, et servir tièdes en accompagnement ou tapas.", badge: null }
     ]
   }
 });

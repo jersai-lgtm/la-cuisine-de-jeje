@@ -29,10 +29,12 @@ Object.assign(recettes, {
       { nb: 15, carotte: "1800 g", citron: "150 g", huileolive: "120 ml", persil: "45 g", sucre: "30 g" }
     ],
     etapes: [
-      { icone: "🥕", titre: "Râper", detail: "Éplucher et râper finement les carottes.", badge: "⏱ 8 min" },
-      { icone: "🍋", titre: "Vinaigrette", detail: "Mélanger jus de citron, huile d'olive, une pincée de sucre, sel et poivre.", badge: null },
-      { icone: "🥗", titre: "Assaisonner", detail: "Verser la vinaigrette sur les carottes et bien mélanger.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Parsemer de persil ciselé. Laisser reposer 15 min au frais.", badge: "💡 Frais" }
+      { icone: "🥕", titre: "Éplucher", detail: "Éplucher les carottes, retirer les deux extrémités et les rincer sous l'eau froide pour ôter toute trace de terre.", badge: null },
+      { icone: "🧀", titre: "Râper", detail: "Râper finement les carottes à la grille fine, sur une râpe ou au robot, pour des filaments souples qui s'imprègnent bien de la sauce.", badge: null },
+      { icone: "🍋", titre: "Vinaigrette", detail: "Mélanger le jus de citron pressé, l'huile d'olive et une petite pincée de sucre, puis saler et poivrer en émulsionnant à la fourchette.", badge: null },
+      { icone: "🥗", titre: "Assaisonner", detail: "Verser la vinaigrette sur les carottes râpées et mélanger longuement à la main pour bien enrober chaque filament.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Ciseler finement le persil frais et le parsemer sur la salade en mélangeant délicatement.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Filmer le saladier et laisser reposer au moins 15 minutes au réfrigérateur avant de servir, le temps que les carottes s'attendrissent et que les saveurs se développent.", badge: null }
     ]
   },
   saladmelonfeta: {
@@ -60,10 +62,12 @@ Object.assign(recettes, {
       { nb: 15, melon: "3000 g", feta: "600 g", menthe: "30 g", huileolive: "90 ml", citron: "75 g" }
     ],
     etapes: [
-      { icone: "🍈", titre: "Préparer le melon", detail: "Couper le melon en billes ou en cubes, retirer les pépins.", badge: "⏱ 8 min" },
-      { icone: "🧀", titre: "Émietter la feta", detail: "Couper ou émietter la feta en dés.", badge: null },
-      { icone: "🥗", titre: "Assembler", detail: "Mélanger melon et feta, arroser d'huile d'olive et d'un trait de citron.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Parsemer de menthe ciselée, un tour de moulin à poivre. Servir bien frais.", badge: "💡 Frais" }
+      { icone: "🍈", titre: "Choisir le melon", detail: "Choisir un melon bien mûr et parfumé, le couper en deux et retirer les pépins à la cuillère.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Détailler la chair en billes à la cuillère parisienne ou en cubes réguliers de 2 cm, puis réserver au frais.", badge: null },
+      { icone: "🧀", titre: "Émietter la feta", detail: "Couper la feta en dés ou l'émietter grossièrement à la main pour garder des morceaux fondants qui contrasteront avec le melon.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Dans un saladier, réunir melon et feta, arroser d'un filet d'huile d'olive et d'un trait de jus de citron, puis donner un tour de moulin à poivre.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Ciseler finement les feuilles de menthe fraîche et les parsemer sur la salade en mélangeant délicatement pour ne pas écraser le melon.", badge: null },
+      { icone: "❄️", titre: "Servir frais", detail: "Réserver 10 minutes au réfrigérateur et servir bien frais, en entrée estivale rafraîchissante.", badge: null }
     ]
   },
   foiegraspoele: {
@@ -861,10 +865,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥐", titre: "Découper", detail: "Découper la pâte feuilletée en carrés. ASTUCE : pâte bien froide = meilleur feuilletage.", badge: "⏱ 5 min" },
-      { icone: "🧀", titre: "Garnir", detail: "Rondelle de chèvre au centre, filet de miel, cerneaux de noix, un peu de thym.", badge: "⏱ 4 min" },
-      { icone: "🥚", titre: "Fermer", detail: "Replier ou laisser ouvert. Dorer les bords à l'œuf battu. ASTUCE CHEF : inciser légèrement pour la vapeur.", badge: "⏱ 3 min" },
-      { icone: "♨️", titre: "Cuire", detail: "Four 200°C 15-18 min, doré et gonflé. SECRET : un dernier filet de miel tiède à la sortie. Servir sur salade.", badge: "⏱ 18 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C et sortir la pâte feuilletée au dernier moment : bien froide, elle développera un meilleur feuilletage.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Étaler la pâte feuilletée et la découper en carrés réguliers d'environ 8 cm, puis les disposer sur une plaque tapissée de papier cuisson.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Déposer au centre de chaque carré une rondelle de chèvre, un filet de miel, quelques cerneaux de noix concassés et une pincée de thym effeuillé.", badge: null },
+      { icone: "🤏", titre: "Façonner", detail: "Replier les coins vers le centre ou laisser ouvert en aumônière, puis inciser légèrement la pâte pour laisser s'échapper la vapeur.", badge: null },
+      { icone: "🥚", titre: "Dorer", detail: "Battre l'œuf et badigeonner les bords des feuilletés au pinceau pour obtenir une belle dorure brillante à la cuisson.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfourner à 200°C pendant 15 à 18 minutes, jusqu'à ce que les feuilletés soient gonflés et bien dorés.", badge: null },
+      { icone: "🍯", titre: "Servir", detail: "À la sortie du four, napper d'un dernier filet de miel tiède et servir aussitôt sur un lit de jeune salade assaisonnée.", badge: null }
     ]
   },
   escargots: {
@@ -894,11 +901,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧈", titre: "Beurre d'escargot", detail: "CŒUR DE LA RECETTE : malaxer beurre mou + ail + échalote + persil hachés TRÈS fin, sel, poivre. ASTUCE CHEF : une pointe de pastis relève le beurre.", badge: "⏱ 10 min" },
-      { icone: "🐌", titre: "Garnir", detail: "Égoutter les escargots, en glisser un dans chaque coquille, puis boucher généreusement de beurre persillé.", badge: "⏱ 12 min" },
-      { icone: "❄️", titre: "Raffermir", detail: "ASTUCE : 15 min au frais pour que le beurre fige — il ne coulera pas à la cuisson.", badge: "⏱ 15 min" },
-      { icone: "🍽️", titre: "Disposer", detail: "Ranger ouverture vers le haut dans un plat à escargots (ou les caler sur un lit de gros sel).", badge: "⏱ 3 min" },
-      { icone: "♨️", titre: "Gratiner", detail: "Four 200°C 10-12 min : le beurre doit grésiller et mousser. CLÉ : servir IMMÉDIATEMENT avec du pain pour saucer.", badge: "⏱ 12 min" }
+      { icone: "🧈", titre: "Beurre d'escargot", detail: "Malaxer le beurre mou avec l'ail, l'échalote et le persil hachés très finement, saler et poivrer ; une pointe de pastis relèvera agréablement le mélange.", badge: null },
+      { icone: "🐌", titre: "Préparer les escargots", detail: "Égoutter soigneusement les escargots et les éponger pour éviter que l'eau ne fasse gicler le beurre à la cuisson.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Glisser un escargot au fond de chaque coquille, puis boucher généreusement l'ouverture de beurre persillé bien tassé.", badge: null },
+      { icone: "❄️", titre: "Raffermir", detail: "Réserver les coquilles 15 minutes au réfrigérateur pour que le beurre fige et ne coule pas pendant la cuisson.", badge: null },
+      { icone: "🍽️", titre: "Disposer", detail: "Ranger les coquilles ouverture vers le haut dans un plat à escargots, ou les caler sur un lit de gros sel pour qu'elles restent stables.", badge: null },
+      { icone: "♨️", titre: "Gratiner", detail: "Enfourner à 200°C pendant 10 à 12 minutes, jusqu'à ce que le beurre grésille et mousse en surface.", badge: null },
+      { icone: "🥖", titre: "Servir", detail: "Servir immédiatement, très chaud, avec du pain de campagne pour saucer le beurre persillé.", badge: null }
     ]
   },
   oeufsmeurette: {
@@ -928,11 +937,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧅", titre: "Garniture", detail: "Faire revenir lardons, oignons émincés et champignons jusqu'à belle coloration. Réserver.", badge: "⏱ 8 min" },
-      { icone: "🍷", titre: "Sauce meurette", detail: "Déglacer au vin rouge, ajouter un peu de bouillon, réduire de moitié. SECRET : lier avec un beurre manié (beurre + farine) pour une sauce nappante.", badge: "⏱ 15 min" },
-      { icone: "💧", titre: "Eau de pochage", detail: "Eau + trait de vinaigre à frémissement (jamais à gros bouillons). ASTUCE CHEF : créer un tourbillon avant de verser l'œuf.", badge: "⏱ 5 min" },
-      { icone: "🥚", titre: "Pocher", detail: "Casser l'œuf dans une louche, glisser au cœur du tourbillon, 3 min. Le blanc enveloppe le jaune coulant. Égoutter.", badge: "⏱ 4 min" },
-      { icone: "🍽️", titre: "Dresser", detail: "CLÉ : œuf poché sur un toast frotté à l'ail, napper de sauce meurette bien chaude. Lardons, persil, poivre.", badge: null }
+      { icone: "🥓", titre: "Garniture", detail: "Faire revenir les lardons, l'oignon émincé et les champignons dans un peu de beurre jusqu'à belle coloration, puis réserver.", badge: null },
+      { icone: "🍷", titre: "Déglacer", detail: "Déglacer la poêle au vin rouge, ajouter un peu de bouillon et laisser réduire de moitié à feu moyen pour concentrer les arômes.", badge: null },
+      { icone: "🥄", titre: "Lier la sauce", detail: "Travailler le beurre avec la farine pour un beurre manié, l'incorporer en fouettant et laisser épaissir à feu doux jusqu'à une sauce nappante.", badge: null },
+      { icone: "💧", titre: "Eau de pochage", detail: "Porter une casserole d'eau additionnée d'un trait de vinaigre à léger frémissement, sans gros bouillons, et créer un tourbillon avec une cuillère.", badge: null },
+      { icone: "🥚", titre: "Pocher", detail: "Casser chaque œuf dans une louche et le glisser au cœur du tourbillon ; pocher 3 minutes pour un blanc pris enveloppant un jaune coulant, puis égoutter.", badge: null },
+      { icone: "🥖", titre: "Toast", detail: "Toaster des tranches de pain et les frotter légèrement à l'ail pour parfumer le support de l'œuf poché.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Déposer l'œuf poché sur le toast, napper généreusement de sauce meurette chaude, répartir la garniture et finir d'un tour de poivre et de persil.", badge: null }
     ]
   },
   goicuon: {
@@ -1929,11 +1940,12 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      {icone:"🥛", titre:"Chauffer le lait", detail:"Porter le lait (UHT accepté ici) à frémissement : petites bulles sur les bords, sans ébullition franche.", badge:"⏱ 8 min"},
-      {icone:"🍶", titre:"Trancher au vinaigre", detail:"Hors du feu, verser le vinaigre petit à petit en remuant : le lait tranche (caillé blanc + petit-lait translucide). Ajouter un filet de vinaigre s'il ne caille pas assez.", badge:"⏱ 2 min"},
-      {icone:"⏳", titre:"Repos", detail:"Laisser reposer 5 min pour que le caillé se rassemble.", badge:"⏱ 5 min"},
-      {icone:"🧺", titre:"Égoutter", detail:"Verser dans une passoire tapissée d'un torchon propre. Rincer à l'eau froide pour ôter le goût de vinaigre, puis saler.", badge:"⏱ 3 min"},
-      {icone:"🧱", titre:"Presser", detail:"Presser le torchon pour évacuer le liquide. Pour un fromage ferme à découper : sous un poids 30 min à 1 h. Pour tartiner : laisser plus mou.", badge:null}
+      { icone: "🥛", titre: "Chauffer le lait", detail: "Verser le lait dans une grande casserole et le porter à léger frémissement, jusqu'à voir de petites bulles sur les bords sans ébullition franche.", badge: null },
+      { icone: "🍶", titre: "Trancher", detail: "Hors du feu, verser le vinaigre blanc petit à petit en remuant doucement : le lait tranche en formant un caillé blanc et un petit-lait translucide.", badge: null },
+      { icone: "👀", titre: "Ajuster", detail: "Si le lait ne caille pas suffisamment, ajouter un filet de vinaigre supplémentaire et remuer jusqu'à séparation complète du caillé.", badge: null },
+      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 5 minutes pour que le caillé se rassemble et se sépare nettement du liquide.", badge: null },
+      { icone: "🫗", titre: "Égoutter", detail: "Verser dans une passoire tapissée d'un torchon propre, rincer le caillé à l'eau froide pour ôter le goût de vinaigre, puis saler.", badge: null },
+      { icone: "⚖️", titre: "Presser", detail: "Presser le torchon pour évacuer le liquide, puis placer sous un poids 30 minutes à 1 heure pour un fromage ferme à découper, ou laisser plus mou pour tartiner.", badge: null }
     ]
   },
   zaalouk: {
@@ -1960,10 +1972,12 @@ oeufmayo: {
       { nb: 15, aubergine: "2250 g", tomate: "1350 g", ail: "75 g", huileolive: "180 ml", paprika: "30 g", cumin: "15 g", coriandre: "60 g", citron: "75 ml" }
     ],
     etapes: [
-      { icone: "🍆", titre: "Cuire les aubergines", detail: "Éplucher en partie et couper les aubergines en cubes. Les faire fondre à la poêle avec un peu d'eau et d'huile, à couvert, 15 min.", badge: "⏱ 15 min" },
-      { icone: "🍅", titre: "Ajouter les tomates", detail: "Incorporer les tomates concassées et l'ail écrasé. Laisser compoter 10 min en écrasant à la fourchette.", badge: null },
-      { icone: "🌶️", titre: "Épices", detail: "Ajouter paprika, cumin, sel et un trait d'huile d'olive. Cuire encore 5 min jusqu'à une purée fondante.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Hors du feu, ajouter la coriandre ciselée et un filet de citron. Servir tiède ou frais.", badge: "💡 Avec du pain" }
+      { icone: "🍆", titre: "Préparer", detail: "Éplucher partiellement les aubergines en laissant des bandes de peau, puis les couper en cubes réguliers de 2 cm.", badge: null },
+      { icone: "♨️", titre: "Cuire les aubergines", detail: "Faire fondre les cubes d'aubergine à la poêle avec un filet d'huile d'olive et un peu d'eau, à couvert et à feu doux, pendant 15 minutes.", badge: null },
+      { icone: "🍅", titre: "Ajouter les tomates", detail: "Incorporer les tomates concassées et l'ail écrasé, puis laisser compoter 10 minutes en écrasant régulièrement à la fourchette.", badge: null },
+      { icone: "🌶️", titre: "Épicer", detail: "Ajouter le paprika, le cumin, du sel et un trait d'huile d'olive, puis poursuivre la cuisson 5 minutes jusqu'à une purée fondante.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Hors du feu, incorporer la coriandre fraîche ciselée et un filet de jus de citron pour relever l'ensemble.", badge: null },
+      { icone: "🥖", titre: "Servir", detail: "Servir tiède ou frais, en mezze ou en entrée, accompagné de pain pour saucer.", badge: null }
     ]
   },
   dolmades: {
@@ -1990,11 +2004,12 @@ oeufmayo: {
       { nb: 15, feuillevigne: "450 g", riz: "600 g", oignon: "375 g", huileolive: "210 ml", citron: "120 ml", menthe: "45 g", aneth: "45 g" }
     ],
     etapes: [
-      { icone: "🍃", titre: "Préparer les feuilles", detail: "Blanchir les feuilles de vigne pour les assouplir, retirer les tiges.", badge: null },
-      { icone: "🍚", titre: "La farce", detail: "Faire revenir l'oignon, ajouter le riz, la menthe, l'aneth et un peu d'eau. Cuire à demi.", badge: null },
-      { icone: "🌯", titre: "Rouler", detail: "Déposer une cuillère de farce sur chaque feuille et rouler serré en repliant les côtés.", badge: null },
-      { icone: "🍲", titre: "Mijoter", detail: "Ranger serrés dans une casserole, arroser d'huile, citron et eau. Cuire à couvert 40 min.", badge: "⏱ 40 min" },
-      { icone: "🍋", titre: "Servir", detail: "Laisser refroidir et servir froids avec un filet de citron.", badge: "💡 Froid" }
+      { icone: "🍃", titre: "Préparer les feuilles", detail: "Blanchir les feuilles de vigne 2 minutes dans l'eau frémissante pour les assouplir, puis retirer les tiges et les éponger.", badge: null },
+      { icone: "🧅", titre: "Suer l'oignon", detail: "Émincer finement l'oignon et le faire revenir doucement dans l'huile d'olive jusqu'à ce qu'il devienne translucide.", badge: null },
+      { icone: "🍚", titre: "La farce", detail: "Ajouter le riz, la menthe et l'aneth ciselés avec un peu d'eau, puis cuire à demi pour que le riz reste légèrement ferme.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Déposer une cuillère de farce sur chaque feuille côté nervuré, replier les côtés et rouler bien serré en petits cigares.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Ranger les dolmades serrés dans une casserole, arroser d'huile d'olive, de jus de citron et d'eau, puis cuire à couvert à feu doux 40 minutes.", badge: null },
+      { icone: "❄️", titre: "Servir", detail: "Laisser refroidir complètement et servir frais, arrosés d'un dernier filet de citron.", badge: null }
     ]
   },
   pulpogallega: {
@@ -2021,11 +2036,12 @@ oeufmayo: {
       { nb: 15, poulpe: "2250 g", pommedeterre: "1800 g", huileolive: "210 ml", paprika: "45 g", sel: "15 g" }
     ],
     etapes: [
-      { icone: "🐙", titre: "Cuire le poulpe", detail: "Plonger le poulpe dans l'eau bouillante par trois fois, puis cuire 40 min jusqu'à ce qu'il soit tendre.", badge: "⏱ 40 min" },
-      { icone: "🥔", titre: "Les pommes de terre", detail: "Cuire les pommes de terre dans la même eau, puis les couper en rondelles.", badge: null },
-      { icone: "🔪", titre: "Trancher", detail: "Couper les tentacules de poulpe en tranches d'1 cm aux ciseaux.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Disposer les pommes de terre, le poulpe par-dessus, sur une assiette en bois si possible.", badge: null },
-      { icone: "🌶️", titre: "Assaisonner", detail: "Saupoudrer de paprika fumé, de gros sel et arroser d'huile d'olive.", badge: "💡 Tapa" }
+      { icone: "🐙", titre: "Effrayer le poulpe", detail: "Plonger le poulpe trois fois quelques secondes dans l'eau bouillante avant de l'y laisser : ce choc thermique attendrit la chair et recourbe joliment les tentacules.", badge: null },
+      { icone: "♨️", titre: "Cuire le poulpe", detail: "Laisser cuire le poulpe à frémissement pendant environ 40 minutes, jusqu'à ce que la pointe d'un couteau s'enfonce sans résistance.", badge: null },
+      { icone: "🥔", titre: "Pommes de terre", detail: "Cuire les pommes de terre entières dans la même eau parfumée 20 à 25 minutes, puis les éplucher et les couper en rondelles épaisses.", badge: null },
+      { icone: "✂️", titre: "Trancher", detail: "Détailler les tentacules de poulpe en tranches d'environ 1 cm, traditionnellement aux ciseaux pour préserver la texture.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposer les rondelles de pommes de terre en lit sur un plat en bois, puis répartir les tranches de poulpe par-dessus.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Saupoudrer généreusement de paprika fumé, parsemer de gros sel et arroser d'un filet d'huile d'olive ; servir aussitôt, tiède.", badge: null }
     ]
   },
   clafoutistomate: {
@@ -2058,9 +2074,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Tomates", detail: "Disposer les tomates cerises dans un plat huilé.", badge: null },
-      { icone: "🥣", titre: "Appareil", detail: "Fouetter œufs, lait, farine, gruyère, basilic et sel.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Verser sur les tomates et cuire à 180°C jusqu'à ce que le clafoutis soit pris et doré. ASTUCE CHEF : fais rôtir les tomates 10 min seules avant de verser l'appareil — elles rendent leur eau au four au lieu de détremper le clafoutis.", badge: "⏱ 30 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 180°C et badigeonner d'huile d'olive un plat à gratin.", badge: null },
+      { icone: "🍅", titre: "Tomates", detail: "Laver les tomates cerises, les disposer dans le plat et les faire rôtir 10 min seules au four pour qu'elles libèrent leur eau.", badge: null },
+      { icone: "🥚", titre: "Appareil", detail: "Pendant ce temps, fouetter les œufs avec le lait, la farine et une pincée de sel jusqu'à obtenir une pâte lisse sans grumeaux.", badge: null },
+      { icone: "🧀", titre: "Fromage", detail: "Incorporer le gruyère râpé et le basilic ciselé à l'appareil, puis mélanger délicatement.", badge: null },
+      { icone: "🥣", titre: "Verser", detail: "Sortir le plat, verser l'appareil sur les tomates rôties encore chaudes en les répartissant uniformément.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Enfourner à 180°C pendant 30 min, jusqu'à ce que le clafoutis soit pris au centre et bien doré sur le dessus.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Laisser tiédir 5 min, parsemer de basilic frais et servir tiède en entrée avec un filet d'huile d'olive.", badge: null }
     ]
   },
   gaspachomelonabricot: {
@@ -2093,9 +2113,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍈", titre: "Mixer", detail: "Mixer melon, abricot et concombre avec le citron.", badge: null },
-      { icone: "🫒", titre: "Émulsionner", detail: "Ajouter l'huile d'olive en filet en mixant. ASTUCE CHEF : passe le gaspacho au chinois pour une texture veloutée, et place-le 1 h au congélateur avant de servir — glacé, il est bien meilleur.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Servir très frais avec quelques feuilles de menthe.", badge: null }
+      { icone: "🍈", titre: "Préparer", detail: "Couper le melon en deux, retirer les graines, prélever la chair et la détailler en gros morceaux.", badge: null },
+      { icone: "🍑", titre: "Fruits", detail: "Dénoyauter les abricots, les couper en quartiers, puis éplucher et tronçonner le concombre.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Réunir melon, abricots et concombre dans un blender avec le jus du citron, puis mixer 2 min jusqu'à obtenir une texture lisse.", badge: null },
+      { icone: "🫒", titre: "Émulsionner", detail: "Verser l'huile d'olive en filet tout en mixant pour émulsionner et obtenir un velouté brillant.", badge: null },
+      { icone: "🥄", titre: "Affiner", detail: "Passer le gaspacho au chinois pour retirer les fibres et obtenir une texture parfaitement veloutée.", badge: null },
+      { icone: "❄️", titre: "Glacer", detail: "Placer 1 h au réfrigérateur (ou 30 min au congélateur) pour servir le gaspacho bien glacé.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Verser dans des verrines fraîches et décorer de quelques feuilles de menthe ciselées avant de servir.", badge: null }
     ]
   },
   gaspachobetterave: {
@@ -2128,9 +2152,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🫐", titre: "Mixer", detail: "Mixer la betterave cuite avec le concombre et le lait de coco.", badge: null },
-      { icone: "🍋", titre: "Assaisonner", detail: "Ajouter citron, huile et sel, mixer lisse. ASTUCE CHEF : le lait de coco arrondit la terre de la betterave — sans matière grasse, le gaspacho de betterave paraît cru et agressif.", badge: null },
-      { icone: "🌿", titre: "Servir", detail: "Servir glacé, filet de coco et menthe.", badge: null }
+      { icone: "🍠", titre: "Préparer", detail: "Couper la betterave cuite en morceaux, puis éplucher et tronçonner le concombre.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer la betterave et le concombre avec le lait de coco dans un blender pendant 2 min jusqu'à obtenir une crème lisse.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Ajouter le jus du citron, une pincée de sel et mixer à nouveau pour équilibrer l'acidité et la terre de la betterave.", badge: null },
+      { icone: "🫒", titre: "Émulsionner", detail: "Incorporer l'huile d'olive en filet en mixant pour lier la soupe et lui donner du corps.", badge: null },
+      { icone: "🥄", titre: "Affiner", detail: "Passer le gaspacho au chinois si nécessaire pour une texture parfaitement veloutée.", badge: null },
+      { icone: "❄️", titre: "Glacer", detail: "Réserver au moins 1 h au réfrigérateur pour servir le gaspacho bien froid.", badge: null },
+      { icone: "🥥", titre: "Servir", detail: "Verser dans des bols, ajouter un filet de lait de coco et quelques feuilles de menthe avant de servir glacé.", badge: null }
     ]
   },
   millefeuillebetterave: {
@@ -2162,10 +2190,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Trancher", detail: "Couper la betterave cuite en disques réguliers.", badge: null },
-      { icone: "🧀", titre: "Monter", detail: "Alterner disques de betterave et chèvre frais en millefeuille. ASTUCE CHEF : emporte-pièce ou cercle pour des disques nets — un millefeuille bien droit fait toute l'élégance de l'assiette.", badge: null },
-      { icone: "🌰", titre: "Garnir", detail: "Parsemer de noix, filet de miel et vinaigrette.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Persil et tour de poivre.", badge: null }
+      { icone: "🔪", titre: "Trancher", detail: "À l'aide d'un emporte-pièce, détailler la betterave cuite en disques réguliers d'environ 5 mm d'épaisseur.", badge: null },
+      { icone: "🌰", titre: "Noix", detail: "Concasser grossièrement les noix et les faire torréfier 3 min à sec dans une poêle pour révéler leur goût.", badge: null },
+      { icone: "🧀", titre: "Chèvre", detail: "Écraser le chèvre frais à la fourchette avec un peu de poivre pour le rendre facile à étaler.", badge: null },
+      { icone: "🥗", titre: "Vinaigrette", detail: "Préparer une vinaigrette en fouettant l'huile d'olive, le vinaigre balsamique, le miel, du sel et du poivre.", badge: null },
+      { icone: "🏗️", titre: "Monter", detail: "Dans un cercle, alterner un disque de betterave et une couche de chèvre, en montant trois à quatre étages bien droits.", badge: null },
+      { icone: "🌿", titre: "Garnir", detail: "Retirer délicatement le cercle, parsemer de noix torréfiées, napper de vinaigrette et ajouter un filet de miel.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Décorer de persil ciselé, donner un tour de moulin à poivre et servir frais en entrée élégante.", badge: null }
     ]
   },
   auberginesrotiesfeta: {
@@ -2198,9 +2229,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍆", titre: "Inciser", detail: "Inciser les aubergines en croisillons, badigeonner d'huile et d'ail.", badge: null },
-      { icone: "🔥", titre: "Rôtir", detail: "Rôtir au four jusqu'à ce que la chair soit fondante et dorée. ASTUCE CHEF : incise la chair en croisillons avant de rôtir — l'huile et la chaleur pénètrent, la chair confit au lieu de rester crue au cœur.", badge: "⏱ 28 min" },
-      { icone: "🧀", titre: "Garnir", detail: "Garnir de feta, tomates en dés et menthe.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C et tapisser une plaque de papier cuisson.", badge: null },
+      { icone: "🔪", titre: "Inciser", detail: "Couper les aubergines en deux dans la longueur et inciser la chair en croisillons profonds sans percer la peau.", badge: null },
+      { icone: "🧄", titre: "Aromatiser", detail: "Mélanger l'huile d'olive avec l'ail haché, en badigeonner généreusement la chair des aubergines et saler.", badge: null },
+      { icone: "⏱️", titre: "Rôtir", detail: "Enfourner les aubergines côté chair vers le haut et rôtir 30 min à 200°C jusqu'à ce que la chair soit fondante et dorée.", badge: null },
+      { icone: "🍅", titre: "Garniture", detail: "Pendant la cuisson, couper les tomates en petits dés et émietter la feta.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "À la sortie du four, répartir la feta émiettée et les dés de tomates sur les aubergines chaudes.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de menthe ciselée et d'origan, arroser d'un filet d'huile d'olive et servir tiède.", badge: null }
     ]
   },
   champignonsfarcis: {
@@ -2233,10 +2268,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍄", titre: "Préparer", detail: "Retirer les pieds des champignons et les hacher.", badge: null },
-      { icone: "🧀", titre: "Farce", detail: "Mélanger pieds hachés, fromage frais, noix, ail et chapelure.", badge: null },
-      { icone: "🥄", titre: "Garnir", detail: "Garnir les chapeaux de champignons de farce. ASTUCE CHEF : fais dégorger les champignons 10 min au four à vide avant de les farcir — ils rendent leur eau et ne détrempent pas la farce.", badge: "⏱ 10 min" },
-      { icone: "🔥", titre: "Rôtir", detail: "Rôtir au four jusqu'à doré.", badge: "⏱ 15 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 180°C et huiler légèrement un plat allant au four.", badge: null },
+      { icone: "🍄", titre: "Préparer", detail: "Nettoyer les champignons, retirer délicatement les pieds et les hacher finement en réservant les chapeaux.", badge: null },
+      { icone: "🍞", titre: "Chapelure", detail: "Mixer le pain rassis pour obtenir une chapelure et concasser les noix grossièrement.", badge: null },
+      { icone: "🧀", titre: "Farce", detail: "Mélanger les pieds hachés, le chèvre frais, les noix, l'ail écrasé, le persil ciselé et la chapelure, puis saler et poivrer.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Garnir généreusement chaque chapeau de champignon avec la farce et tasser légèrement.", badge: null },
+      { icone: "⏱️", titre: "Rôtir", detail: "Arroser d'un filet d'huile d'olive et enfourner 20 min à 180°C jusqu'à ce que les champignons soient tendres et la farce dorée.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Parsemer de persil frais et servir chaud en entrée gourmande.", badge: null }
     ]
   },
   ricottarotiezaatar: {
@@ -2268,9 +2306,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Préparer", detail: "Déposer la ricotta dans un petit plat, arroser d'huile et de za'atar.", badge: null },
-      { icone: "🔥", titre: "Rôtir", detail: "Rôtir au four à 200°C jusqu'à ce que le dessus dore. ASTUCE CHEF : égoutte la ricotta 10 min dans une passoire avant — moins d'eau, elle dore au lieu de bouillir.", badge: "⏱ 18 min" },
-      { icone: "🍯", titre: "Finir", detail: "Filet de miel à la sortie, servir avec tomates et pain grillé.", badge: null }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 200°C et choisir un petit plat à four à la taille de la ricotta.", badge: null },
+      { icone: "💧", titre: "Égoutter", detail: "Déposer la ricotta dans une passoire 10 min pour qu'elle perde son excès d'eau et dore mieux à la cuisson.", badge: null },
+      { icone: "🌿", titre: "Assaisonner", detail: "Placer la ricotta dans le plat, l'arroser d'huile d'olive et la saupoudrer généreusement de za'atar.", badge: null },
+      { icone: "⏱️", titre: "Rôtir", detail: "Enfourner 18 à 20 min à 200°C jusqu'à ce que le dessus de la ricotta soit doré et légèrement gratiné.", badge: null },
+      { icone: "🍅", titre: "Accompagner", detail: "Pendant la cuisson, couper les tomates en quartiers et faire griller des tranches de pain.", badge: null },
+      { icone: "🍯", titre: "Finir", detail: "À la sortie du four, arroser la ricotta chaude d'un filet de miel pour contraster avec le za'atar.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt avec les tomates et le pain grillé pour tartiner la ricotta fondante.", badge: null }
     ]
   },
   tartarebetterave: {
@@ -2302,9 +2344,12 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Tailler", detail: "Tailler la betterave cuite en très petits dés au couteau (pas au mixeur).", badge: null },
-      { icone: "🥄", titre: "Assaisonner", detail: "Mélanger avec échalote, câpres, moutarde, citron et huile. ASTUCE CHEF : taille au couteau, jamais au mixeur — c'est la texture en dés nets qui fait illusion de tartare.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Mouler à l'emporte-pièce et servir frais avec du pain grillé.", badge: null }
+      { icone: "🔪", titre: "Tailler", detail: "Tailler la betterave cuite en très petits dés réguliers au couteau, jamais au mixeur, pour garder la texture du tartare.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Ciseler finement l'oignon rouge, hacher les câpres et ciseler le persil.", badge: null },
+      { icone: "🥣", titre: "Sauce", detail: "Dans un bol, mélanger la moutarde, le jus du citron, l'huile d'olive, du sel et du poivre pour former une sauce homogène.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Réunir les dés de betterave, l'oignon, les câpres et le persil, puis lier le tout avec la sauce.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Réserver le tartare 10 min au réfrigérateur pour que les saveurs se mélangent et qu'il prenne du goût.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Mouler le tartare à l'emporte-pièce sur l'assiette et servir frais avec du pain grillé.", badge: null }
     ]
   },
   soupefroidemelon: {
@@ -2337,9 +2382,12 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍈", titre: "Mixer", detail: "Mixer le melon mûr avec le concombre, la menthe et le citron.", badge: null },
-      { icone: "❄️", titre: "Glacer", detail: "Réserver au frais. ASTUCE CHEF : choisis un melon très parfumé — la soupe froide ne fait que concentrer son goût, un melon fade donne une soupe fade.", badge: "⏱ 1 h" },
-      { icone: "🥓", titre: "Garnir", detail: "Servir glacée avec des copeaux de jambon cru et un filet d'huile.", badge: null }
+      { icone: "🍈", titre: "Choisir", detail: "Choisir un melon bien mûr et parfumé, le couper, retirer les graines et prélever la chair.", badge: null },
+      { icone: "🥒", titre: "Préparer", detail: "Éplucher et tronçonner le concombre, puis effeuiller la menthe.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer le melon avec le concombre, la menthe et le jus du citron jusqu'à obtenir une soupe parfaitement lisse.", badge: null },
+      { icone: "🫒", titre: "Lier", detail: "Ajouter un filet d'huile d'olive en mixant et rectifier l'assaisonnement avec une pincée de sel.", badge: null },
+      { icone: "❄️", titre: "Glacer", detail: "Réserver la soupe au moins 1 h au réfrigérateur pour la servir bien fraîche.", badge: null },
+      { icone: "🥓", titre: "Servir", detail: "Verser dans des bols glacés, disposer des copeaux de prosciutto et terminer par un filet d'huile d'olive.", badge: null }
     ]
   },
   gaspachopasteque: {
@@ -2372,9 +2420,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍉", titre: "Mixer", detail: "Mixer pastèque, tomate, concombre et poivron.", badge: null },
-      { icone: "🫒", titre: "Émulsionner", detail: "Ajouter huile et vinaigre en mixant, passer au tamis. ASTUCE CHEF : passe le gaspacho au chinois et place-le 1 h au congélateur avant de servir — glacé, il est bien meilleur.", badge: "⏱ 10 min" },
-      { icone: "🌿", titre: "Servir", detail: "Servir très froid avec quelques feuilles de basilic.", badge: null }
+      { icone: "🍉", titre: "Préparer", detail: "Retirer l'écorce et les pépins de la pastèque, puis la couper en gros morceaux.", badge: null },
+      { icone: "🥒", titre: "Légumes", detail: "Couper les tomates en quartiers, éplucher et tronçonner le concombre, épépiner et émincer le poivron.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer la pastèque, les tomates, le concombre et le poivron au blender pendant 2 min jusqu'à obtenir un liquide homogène.", badge: null },
+      { icone: "🫒", titre: "Émulsionner", detail: "Ajouter l'huile d'olive et le vinaigre de Xérès en mixant pour émulsionner et relever le gaspacho.", badge: null },
+      { icone: "🥄", titre: "Tamiser", detail: "Passer le gaspacho au chinois ou au tamis pour retirer les fibres et obtenir une texture lisse.", badge: null },
+      { icone: "❄️", titre: "Glacer", detail: "Réserver 1 h au réfrigérateur (ou 30 min au congélateur) pour servir le gaspacho très froid.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Verser dans des verrines fraîches et décorer de quelques feuilles de basilic avant de servir.", badge: null }
     ]
   },
   carpacciocourgette: {
@@ -2407,9 +2459,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Trancher", detail: "Trancher la courgette en fines lamelles à la mandoline.", badge: null },
-      { icone: "🍋", titre: "Mariner", detail: "Arroser de citron et d'huile, laisser mariner 10 min. ASTUCE CHEF : laisse la courgette mariner juste assez pour s'attendrir sans ramollir — au-delà de 15 min elle rend son eau et devient molle.", badge: "⏱ 10 min" },
-      { icone: "🧀", titre: "Finir", detail: "Parsemer de copeaux de parmesan, pignons torréfiés et menthe.", badge: null }
+      { icone: "🥒", titre: "Choisir", detail: "Sélectionner de petites courgettes bien fermes et brillantes, les laver et essuyer puis ôter les deux extrémités.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Détailler les courgettes en très fines lamelles à la mandoline et les disposer en rosace serrée sur un grand plat froid.", badge: null },
+      { icone: "🍋", titre: "Mariner", detail: "Arroser d'un trait de jus de citron et d'un filet d'huile d'olive, saler légèrement et laisser mariner 10 min pour attendrir sans détremper.", badge: null },
+      { icone: "🔥", titre: "Torréfier", detail: "Faire dorer les pignons à sec dans une poêle 2 à 3 min à feu moyen jusqu'à coloration, en remuant, puis les réserver.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Répartir des copeaux de parmesan taillés à l'économe et parsemer les pignons torréfiés encore tièdes sur les lamelles.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Ajouter quelques feuilles de menthe ciselée, un tour de moulin à poivre et un dernier filet d'huile d'olive.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt bien frais en entrée légère, accompagné de pain grillé pour profiter de l'huile parfumée.", badge: null }
     ]
   },
   carpacciomelon: {
@@ -2442,9 +2498,12 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍈", titre: "Trancher", detail: "Trancher finement le melon et le disposer en rosace.", badge: null },
-      { icone: "🥓", titre: "Disposer", detail: "Intercaler les tranches de prosciutto. ASTUCE CHEF : un tour de moulin à poivre sur le melon réveille son sucre et fait ressortir le salé du jambon — l'astuce qui change tout.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Ajouter roquette, copeaux de parmesan et filet d'huile citronnée.", badge: null }
+      { icone: "🍈", titre: "Préparer", detail: "Couper le melon bien mûr en deux, retirer les graines, le peler puis le détailler en tranches très fines.", badge: null },
+      { icone: "🍽️", titre: "Disposer", detail: "Étaler les tranches de melon en rosace sur un plat froid en les faisant légèrement se chevaucher.", badge: null },
+      { icone: "🥓", titre: "Intercaler", detail: "Glisser les tranches de prosciutto entre les lamelles de melon, en les drapant délicatement pour du volume.", badge: null },
+      { icone: "🥗", titre: "Garnir", detail: "Parsemer de quelques pousses de roquette et de copeaux de parmesan taillés à l'économe.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Arroser d'un filet d'huile d'olive citronnée et donner un tour de moulin à poivre pour réveiller le sucre du melon.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir immédiatement, bien frais, en entrée estivale élégante sans laisser le melon rendre son eau.", badge: null }
     ]
   },
   carpacciotomate: {
@@ -2477,9 +2536,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Trancher", detail: "Trancher les tomates finement et les disposer en rosace.", badge: null },
-      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer, arroser d'huile et de vinaigre. ASTUCE CHEF : sale les tomates 5 min avant de servir, pas plus tôt — juste assez pour révéler leur jus sans qu'elles dégorgent.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Basilic, oignon rouge émincé et copeaux de parmesan.", badge: null }
+      { icone: "🍅", titre: "Choisir", detail: "Sélectionner des tomates mûres et charnues, les laver, retirer le pédoncule et les essuyer soigneusement.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Couper les tomates en rondelles très fines au couteau bien aiguisé et les disposer en rosace sur un plat.", badge: null },
+      { icone: "🧅", titre: "Émincer", detail: "Éplucher l'oignon rouge et le ciseler en très fines lamelles, puis les répartir sur les tomates.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler et poivrer 5 min avant de servir, arroser d'huile d'olive et de quelques gouttes de vinaigre balsamique.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Parsemer de feuilles de basilic fraîchement ciselées pour apporter de la fraîcheur herbacée.", badge: null },
+      { icone: "🧀", titre: "Finir", detail: "Ajouter quelques copeaux de parmesan à l'économe et un dernier tour de poivre du moulin.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt à température ambiante avec du pain de campagne pour saucer le jus parfumé.", badge: null }
     ]
   },
   tartaretomate: {
@@ -2512,9 +2575,12 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Tailler", detail: "Tailler tomates et avocat en petits dés réguliers au couteau.", badge: null },
-      { icone: "🥄", titre: "Assaisonner", detail: "Mélanger délicatement avec oignon, basilic, citron et huile. ASTUCE CHEF : épépine les tomates avant de les tailler — sans les graines et le jus, le tartare reste net et ne détrempe pas.", badge: null },
-      { icone: "🍽️", titre: "Dresser", detail: "Mouler à l'emporte-pièce et servir frais.", badge: null }
+      { icone: "🍅", titre: "Épépiner", detail: "Couper les tomates en quartiers, retirer graines et jus, puis les tailler en petits dés réguliers au couteau.", badge: null },
+      { icone: "🥑", titre: "Préparer", detail: "Couper l'avocat en deux, retirer le noyau, prélever la chair et la détailler en dés de même taille que les tomates.", badge: null },
+      { icone: "🧅", titre: "Ciseler", detail: "Éplucher l'oignon rouge et le ciseler très finement, puis ciseler quelques feuilles de basilic.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Mélanger délicatement tomates, avocat et oignon avec le jus de citron, l'huile d'olive, sel et poivre.", badge: null },
+      { icone: "🧊", titre: "Reposer", detail: "Laisser reposer le tartare 10 min au réfrigérateur pour que les saveurs se mêlent en gardant les dés nets.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Mouler à l'emporte-pièce sur des assiettes froides, démouler, parsemer de basilic et servir bien frais.", badge: null }
     ]
   },
   tartaredorade: {
@@ -2547,9 +2613,12 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Tailler", detail: "Tailler la daurade très fraîche en petits dés au couteau.", badge: null },
-      { icone: "🍋", titre: "Mariner", detail: "Assaisonner de citron vert, huile et oignon juste avant de servir. ASTUCE CHEF : n'ajoute le citron qu'au dernier moment — l'acide « cuit » le poisson et le rend opaque et ferme si on attend trop.", badge: null },
-      { icone: "🥑", titre: "Dresser", detail: "Mouler avec l'avocat en dés, parsemer de coriandre.", badge: null }
+      { icone: "🐟", titre: "Parer", detail: "Vérifier que la daurade est très fraîche, retirer la peau et les arêtes, puis la tailler en petits dés réguliers au couteau.", badge: null },
+      { icone: "🥑", titre: "Préparer", detail: "Détailler la chair d'avocat en dés fins et ciseler très finement l'oignon rouge épluché.", badge: null },
+      { icone: "🌿", titre: "Ciseler", detail: "Ciseler les feuilles de coriandre et presser le citron vert pour en réserver le jus frais.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Juste avant de servir, mélanger la daurade avec l'huile d'olive, l'oignon, sel et poivre, puis ajouter le citron vert au dernier moment.", badge: null },
+      { icone: "🧊", titre: "Rafraîchir", detail: "Garder le tartare et les bols de dressage au frais pour servir le poisson bien froid et translucide.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Mouler à l'emporte-pièce avec l'avocat, parsemer de coriandre et d'un trait d'huile, et servir immédiatement.", badge: null }
     ]
   },
   tiradito: {
@@ -2582,9 +2651,12 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🐟", titre: "Trancher", detail: "Trancher le poisson cru en fines lamelles (pas en dés, contrairement au ceviche).", badge: null },
-      { icone: "🌶️", titre: "Leche de tigre", detail: "Mixer citron vert, piment, gingembre et coriandre en sauce.", badge: null },
-      { icone: "🍋", titre: "Napper", detail: "Napper les tranches de sauce juste avant de servir. ASTUCE CHEF : nappe au dernier moment et sers très frais — le tiradito se déguste à peine mariné, le poisson doit rester translucide.", badge: null }
+      { icone: "🐟", titre: "Trancher", detail: "Parer la daurade très fraîche sans peau ni arêtes et la trancher en fines lamelles régulières façon sashimi.", badge: null },
+      { icone: "🌶️", titre: "Préparer", detail: "Épépiner le piment, éplucher le gingembre et effeuiller la coriandre pour la sauce.", badge: null },
+      { icone: "🥣", titre: "Leche de tigre", detail: "Mixer le jus de citron vert avec le piment, le gingembre, la coriandre, l'huile d'olive et une pincée de sel en sauce lisse.", badge: null },
+      { icone: "🔪", titre: "Disposer", detail: "Étaler les lamelles de poisson en éventail sur des assiettes bien froides, sans les superposer.", badge: null },
+      { icone: "🥄", titre: "Napper", detail: "Au dernier moment, napper généreusement les tranches de leche de tigre pour les enrober sans trop les mariner.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Décorer de quelques feuilles de coriandre et de fines rondelles de piment, puis servir aussitôt très frais.", badge: null }
     ]
   },
   verrinemelonmozza: {
@@ -2617,9 +2689,12 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍈", titre: "Billes", detail: "Former des billes de melon et de mozzarella.", badge: null },
-      { icone: "🥃", titre: "Monter", detail: "Alterner melon, mozza et prosciutto dans des verrines. ASTUCE CHEF : monte les verrines à la dernière minute — le melon rend de l'eau au contact du sel et noierait la verrine si préparée trop tôt.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Filet d'huile, basilic et tour de poivre.", badge: null }
+      { icone: "🍈", titre: "Préparer", detail: "Couper le melon en deux, ôter les graines et prélever des billes à la cuillère parisienne.", badge: null },
+      { icone: "🧀", titre: "Mozzarella", detail: "Égoutter la mozzarella et former des billes à la cuillère parisienne ou la couper en petits dés réguliers.", badge: null },
+      { icone: "🥓", titre: "Détailler", detail: "Couper les tranches de prosciutto en lanières ou former de petites rosaces pour le montage.", badge: null },
+      { icone: "🥂", titre: "Monter", detail: "Juste avant de servir, alterner billes de melon, mozzarella et prosciutto dans des verrines pour des couches nettes.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Arroser d'un filet d'huile d'olive, ajouter quelques feuilles de basilic et un tour de moulin à poivre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir les verrines bien fraîches en amuse-bouche, accompagnées d'une petite cuillère.", badge: null }
     ]
   },
   verrineconcombrechevre: {
@@ -2652,10 +2727,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Mousse", detail: "Battre le chèvre frais avec le fromage blanc, la menthe et le citron en mousse lisse.", badge: null },
-      { icone: "🥒", titre: "Concombre", detail: "Tailler le concombre en petits dés croquants.", badge: null },
-      { icone: "🥃", titre: "Monter", detail: "Dresser la mousse de chèvre dans des verrines, surmonter de concombre. ASTUCE CHEF : monte les verrines juste avant de servir — le concombre salé rendrait son eau et liquéfierait la mousse si préparé à l'avance.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Filet d'huile, ciboulette et tour de poivre.", badge: null }
+      { icone: "🥒", titre: "Préparer", detail: "Laver le concombre, le couper en deux, l'épépiner si besoin et le tailler en petits dés croquants.", badge: null },
+      { icone: "🌿", titre: "Ciseler", detail: "Ciseler finement la menthe et la ciboulette, et presser le citron pour en réserver le jus.", badge: null },
+      { icone: "🧀", titre: "Mousse", detail: "Battre le chèvre frais avec le fromage blanc, la menthe et le jus de citron jusqu'à obtenir une mousse lisse et aérienne.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler et poivrer la mousse, puis assaisonner les dés de concombre d'un filet d'huile d'olive et d'une pincée de sel.", badge: null },
+      { icone: "🥂", titre: "Monter", detail: "Juste avant de servir, déposer la mousse de chèvre au fond des verrines et surmonter des dés de concombre.", badge: null },
+      { icone: "🍃", titre: "Finir", detail: "Arroser d'un trait d'huile d'olive, parsemer de ciboulette et donner un tour de moulin à poivre.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir les verrines bien fraîches en entrée légère ou en amuse-bouche estival.", badge: null }
     ]
   },
   brochetteshalloumi: {
@@ -2686,9 +2764,12 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Monter", detail: "Alterner halloumi et légumes sur les pics.", badge: null },
-      { icone: "🌿", titre: "Assaisonner", detail: "Badigeonner d'huile et d'origan.", badge: null },
-      { icone: "🔥", titre: "Griller", detail: "Griller 8 min en tournant jusqu'à coloration.", badge: null }
+      { icone: "🧀", titre: "Détailler", detail: "Couper le halloumi en gros cubes réguliers d'environ 3 cm, suffisamment épais pour tenir sur les pics.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Laver et couper la courgette en rondelles épaisses, le poivron en carrés et garder les tomates entières.", badge: null },
+      { icone: "🍢", titre: "Monter", detail: "Enfiler en alternance halloumi, courgette, poivron et tomate sur les pics pour des brochettes colorées.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Badigeonner généreusement d'huile d'olive, parsemer d'origan, saler et poivrer sur toutes les faces.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Griller les brochettes 8 min sur une plancha ou un grill bien chaud, en les tournant pour une coloration dorée régulière.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servir chaud avec un trait de jus de citron et un filet d'huile d'olive, accompagné d'une salade ou de pain pita.", badge: null }
     ]
   },
   saladetomateburrata: {
@@ -2719,9 +2800,12 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍅", titre: "Tomates", detail: "Couper les tomates en quartiers.", badge: null },
-      { icone: "🧀", titre: "Burrata", detail: "Déposer la burrata au centre.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Basilic, oignon rouge, huile d'olive et sel.", badge: null }
+      { icone: "🍅", titre: "Préparer", detail: "Choisir des tomates bien mûres, les laver, retirer le pédoncule et les couper en quartiers ou en gros morceaux.", badge: null },
+      { icone: "🧅", titre: "Émincer", detail: "Éplucher l'oignon rouge et le ciseler en fines lamelles pour apporter du croquant et du piquant.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Disposer les tomates dans un plat, saler, poivrer et arroser d'un filet d'huile d'olive.", badge: null },
+      { icone: "🧀", titre: "Burrata", detail: "Déposer délicatement la burrata bien fraîche au centre du plat, entourée des tomates.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Parsemer de feuilles de basilic, répartir l'oignon rouge et arroser d'un dernier filet d'huile d'olive.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt à température ambiante, en ouvrant la burrata à table avec du pain grillé.", badge: null }
     ]
   },
   kukusabzi: {
@@ -2752,9 +2836,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌿", titre: "Herbes", detail: "Hacher finement épinards, persil et coriandre.", badge: null },
-      { icone: "🥚", titre: "Mélange", detail: "Battre les œufs, incorporer les herbes et l'oignon.", badge: null },
-      { icone: "🍳", titre: "Cuire", detail: "Cuire à la poêle à couvert 12 min à feu doux.", badge: null }
+      { icone: "🌿", titre: "Hacher", detail: "Laver épinards, persil et coriandre, les essorer soigneusement puis les hacher très finement au couteau pour libérer leurs arômes.", badge: null },
+      { icone: "🧅", titre: "Oignon", detail: "Émincer l'oignon en tout petits dés et le faire suer 4 min à feu moyen dans un filet d'huile d'olive jusqu'à ce qu'il devienne translucide.", badge: null },
+      { icone: "🥚", titre: "Battre", detail: "Casser les œufs dans un saladier, les battre avec une pincée de sel et de poivre, puis incorporer toutes les herbes hachées et l'oignon refroidi.", badge: null },
+      { icone: "🍳", titre: "Verser", detail: "Chauffer un filet d'huile d'olive dans une poêle de 20 cm à feu moyen, verser l'appareil et l'étaler uniformément sur 2 cm d'épaisseur.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Baisser à feu doux, couvrir et laisser prendre 12 min sans remuer jusqu'à ce que le dessous soit doré et le centre presque pris.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Retourner délicatement l'omelette à l'aide d'une grande assiette et poursuivre la cuisson 3 min à découvert pour dorer la seconde face.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser tiédir 5 min, découper en carrés ou en parts et servir avec un yaourt nature et du pain plat.", badge: null }
     ]
   },
   bourekas: {
@@ -2785,9 +2873,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Farce", detail: "Mélanger feta émiettée et épinards.", badge: null },
-      { icone: "🥟", titre: "Garnir", detail: "Découper la pâte, farcir et plier en triangles.", badge: null },
-      { icone: "♨️", titre: "Cuire", detail: "Dorer à l'œuf, cuire 20 min à 200°C.", badge: null }
+      { icone: "🌿", titre: "Épinards", detail: "Faire tomber les épinards 3 min à la poêle, les égoutter en pressant fortement pour retirer l'eau, puis les hacher grossièrement.", badge: null },
+      { icone: "🧀", titre: "Farce", detail: "Émietter la feta dans un bol, ajouter les épinards refroidis et un jaune d'œuf, mélanger et assaisonner de poivre et d'une pincée de muscade.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Étaler la pâte feuilletée sur un plan fariné et la détailler en carrés d'environ 10 cm de côté.", badge: null },
+      { icone: "🥟", titre: "Garnir", detail: "Déposer une cuillère de farce au centre de chaque carré, replier en triangle et souder les bords en appuyant à la fourchette.", badge: null },
+      { icone: "🖌️", titre: "Dorer", detail: "Disposer les bourekas sur une plaque chemisée, les badigeonner d'œuf battu et parsemer de graines de sésame si désiré.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C pendant 20 min jusqu'à ce que la pâte soit bien gonflée et dorée à cœur.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser tiédir 5 min sur une grille pour garder le feuilletage croustillant et servir tièdes en entrée ou à l'apéritif.", badge: null }
     ]
   },
   strukli: {
@@ -2818,9 +2910,14 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌾", titre: "Pâte", detail: "Étaler une pâte fine.", badge: null },
-      { icone: "🧀", titre: "Garnir", detail: "Garnir de fromage frais et œuf, rouler.", badge: null },
-      { icone: "♨️", titre: "Cuire", detail: "Napper de crème, cuire 25 min au four.", badge: null }
+      { icone: "🥣", titre: "Pâte", detail: "Mélanger la farine avec un œuf, une pincée de sel et un peu d'eau tiède, pétrir 8 min jusqu'à obtenir une pâte souple et élastique.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Filmer la pâte et la laisser reposer 20 min à température ambiante pour la détendre et faciliter l'étalage.", badge: null },
+      { icone: "🥄", titre: "Garniture", detail: "Mélanger le fromage cottage avec un œuf battu, une pincée de sel et un peu de crème pour obtenir une farce onctueuse.", badge: null },
+      { icone: "🔪", titre: "Étaler", detail: "Étaler la pâte très finement sur un linge fariné jusqu'à la rendre presque translucide, puis répartir la garniture sur toute la surface.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Rouler la pâte serrée à l'aide du linge, presser pour souder et découper en tronçons de 6 cm.", badge: null },
+      { icone: "🥛", titre: "Napper", detail: "Disposer les rouleaux dans un plat beurré, napper généreusement du reste de crème et parsemer de quelques noisettes de beurre.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 200°C pendant 25 min jusqu'à ce que la crème soit nappante et le dessus joliment doré.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laisser tiédir 5 min et servir bien chaud, nappé de la crème de cuisson, en entrée ou en plat réconfortant.", badge: null }
     ]
   },
   gibanica: {
@@ -2851,9 +2948,13 @@ oeufmayo: {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Appareil", detail: "Mélanger feta, fromage blanc et œufs.", badge: null },
-      { icone: "🥧", titre: "Monter", detail: "Alterner feuilles de pâte et appareil.", badge: null },
-      { icone: "♨️", titre: "Cuire", detail: "Cuire 35 min jusqu'à doré.", badge: null }
+      { icone: "🧀", titre: "Appareil", detail: "Émietter la feta dans un saladier, ajouter le fromage blanc et les œufs, puis fouetter pour obtenir un appareil homogène et crémeux.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Poivrer généreusement l'appareil et goûter avant de saler, la feta apportant déjà beaucoup de sel.", badge: null },
+      { icone: "🧈", titre: "Beurrer", detail: "Beurrer un moule rond et préchauffer le four à 180°C pour qu'il soit à température au moment d'enfourner.", badge: null },
+      { icone: "📋", titre: "Monter", detail: "Déposer une feuille de pâte au fond du moule, la tremper d'appareil, puis alterner pâte froissée et appareil jusqu'à épuisement.", badge: null },
+      { icone: "🖌️", titre: "Finir", detail: "Terminer par une feuille de pâte, badigeonner le dessus d'un peu d'œuf battu et arroser d'un filet d'huile.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfourner à 180°C pendant 35 min jusqu'à ce que la surface soit dorée et gonflée et le centre pris.", badge: null },
+      { icone: "🍴", titre: "Servir", detail: "Laisser reposer 10 min hors du four pour faciliter la découpe, puis servir en parts tièdes ou froides.", badge: null }
     ]
   }
 });

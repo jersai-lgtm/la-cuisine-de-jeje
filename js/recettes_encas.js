@@ -29,11 +29,13 @@ Object.assign(recettes, {
       { nb: 15, pain: "1500 g", thon: "600 g", oeuf: "750 g", tomate: "900 g", poivron: "450 g", oignon: "300 g", olivenoire: "225 g", huileolive: "120 ml", anchois: "75 g" }
     ],
     etapes: [
-      { icone: "🥚", titre: "Cuire les œufs", detail: "Cuire les œufs durs 9 min, les écaler et les couper en rondelles.", badge: "⏱ 9 min" },
-      { icone: "🍅", titre: "Préparer la garniture", detail: "Émincer tomate, poivron et oignon, égoutter le thon.", badge: null },
-      { icone: "🥖", titre: "Imbiber le pain", detail: "Couper les pains ronds en deux, arroser la mie d'huile d'olive.", badge: null },
-      { icone: "🥪", titre: "Garnir", detail: "Garnir de thon, œuf, tomate, poivron, oignon, olives et anchois.", badge: null },
-      { icone: "⏲️", titre: "Presser", detail: "Refermer, emballer et presser 30 min au frais : le pain s'imbibe et tout se tient.", badge: "💡 À l'avance" }
+      { icone: "🥚", titre: "Cuire les œufs", detail: "Plonger les œufs dans l'eau bouillante 9 min, les rafraîchir, les écaler puis les couper en rondelles.", badge: null },
+      { icone: "🔪", titre: "Préparer", detail: "Émincer finement la tomate, le poivron et l'oignon en lamelles, et bien égoutter le thon.", badge: null },
+      { icone: "🫒", titre: "Imbiber", detail: "Couper les pains ronds en deux et arroser généreusement la mie d'huile d'olive et d'un filet de vinaigre.", badge: null },
+      { icone: "🐟", titre: "Garnir", detail: "Répartir le thon, les rondelles d'œuf, la tomate, le poivron, l'oignon, les olives noires et les anchois.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler légèrement, poivrer et ajouter un dernier filet d'huile d'olive avant de refermer le pain.", badge: null },
+      { icone: "⏲️", titre: "Presser", detail: "Emballer chaque pan-bagnat bien serré et le presser 30 min au frais pour que le pain s'imbibe et que tout se tienne.", badge: null },
+      { icone: "🥪", titre: "Servir", detail: "Déballer et servir frais, idéalement coupé en deux pour révéler la garniture colorée.", badge: null }
     ]
   },
   naan: {
@@ -2161,10 +2163,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌽", titre: "Chauffer", detail: "Chauffer l'huile dans une grande casserole avec 2-3 grains témoins, couvercle posé.", badge: "⏱ 2 min" },
-      { icone: "💥", titre: "Éclater", detail: "Quand les témoins éclatent, verser le reste du maïs, couvrir et secouer jusqu'à la fin des éclats. ASTUCE CHEF : retire du feu dès que les éclats s'espacent à 2-3 secondes — une seconde de trop et ça brûle.", badge: "⏱ 3 min" },
-      { icone: "🧈", titre: "Napper", detail: "Faire fondre beurre et sucre, verser sur le pop-corn et mélanger.", badge: null },
-      { icone: "🧂", titre: "Saler", detail: "Saler légèrement et déguster aussitôt.", badge: null }
+      { icone: "🌽", titre: "Préparer", detail: "Mesurer les grains de maïs et verser l'huile dans une grande casserole à fond épais avec couvercle.", badge: null },
+      { icone: "🔥", titre: "Chauffer", detail: "Chauffer l'huile à feu moyen-vif avec 2-3 grains témoins, couvercle posé, jusqu'à ce qu'ils éclatent.", badge: null },
+      { icone: "💥", titre: "Éclater", detail: "Verser le reste du maïs, couvrir et secouer régulièrement jusqu'à ce que les éclats s'espacent à 2-3 secondes.", badge: null },
+      { icone: "🧈", titre: "Napper", detail: "Faire fondre le beurre avec le sucre dans une petite casserole puis le verser sur le pop-corn en mélangeant.", badge: null },
+      { icone: "🧂", titre: "Saler", detail: "Saler légèrement et mélanger pour répartir uniformément l'assaisonnement sur tous les grains.", badge: null },
+      { icone: "🍿", titre: "Déguster", detail: "Verser dans un grand saladier et déguster aussitôt, tant que le pop-corn est tiède et croustillant.", badge: null }
     ]
   },
   chipslegumes: {
@@ -2196,10 +2200,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🔪", titre: "Trancher", detail: "Couper les légumes en lamelles très fines à la mandoline.", badge: null },
-      { icone: "🧻", titre: "Sécher", detail: "Éponger soigneusement les lamelles dans un torchon propre.", badge: null },
-      { icone: "🫒", titre: "Assaisonner", detail: "Enrober d'un filet d'huile, de sel et de paprika. ASTUCE CHEF : sèche bien les lamelles avant cuisson — l'humidité résiduelle empêche les chips de devenir croustillantes.", badge: null },
-      { icone: "🔥", titre: "Rôtir", detail: "Étaler en une seule couche et rôtir à 150°C jusqu'au croquant, en surveillant.", badge: "⏱ 20 min" }
+      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four à 150°C et recouvrir deux plaques de papier cuisson.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Éplucher patate douce, betterave et carotte puis les couper en lamelles très fines à la mandoline.", badge: null },
+      { icone: "🧻", titre: "Sécher", detail: "Éponger soigneusement chaque lamelle dans un torchon propre pour retirer l'humidité résiduelle.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Enrober les lamelles d'un filet d'huile d'olive, de sel et de paprika en mélangeant délicatement.", badge: null },
+      { icone: "🍠", titre: "Étaler", detail: "Disposer les lamelles en une seule couche sans qu'elles se chevauchent sur les plaques.", badge: null },
+      { icone: "♨️", titre: "Rôtir", detail: "Enfourner à 150°C pendant 20 à 25 min en surveillant, jusqu'à ce que les chips soient croustillantes et dorées.", badge: null },
+      { icone: "🥨", titre: "Servir", detail: "Laisser refroidir sur la plaque pour qu'elles finissent de croustiller, puis servir aussitôt à l'apéritif.", badge: null }
     ]
   },
   phillycheesesteak: {
@@ -2231,10 +2238,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Saisir", detail: "Saisir le bœuf émincé très finement à feu vif.", badge: "⏱ 5 min" },
-      { icone: "🧅", titre: "Légumes", detail: "Ajouter oignons et poivrons émincés, faire fondre. ASTUCE CHEF : tranche le bœuf le plus fin possible (plus facile s'il est légèrement congelé) — il cuit en quelques secondes et reste tendre.", badge: "⏱ 6 min" },
-      { icone: "🧀", titre: "Fondre", detail: "Couvrir de cheddar et laisser fondre sur la viande.", badge: null },
-      { icone: "🥖", titre: "Garnir", detail: "Garnir le pain chaud et servir aussitôt.", badge: null }
+      { icone: "🔪", titre: "Émincer", detail: "Trancher le bœuf le plus fin possible, plus facile s'il est légèrement congelé, et émincer l'oignon et le poivron.", badge: null },
+      { icone: "🍳", titre: "Saisir", detail: "Chauffer l'huile à feu vif dans une poêle et saisir le bœuf émincé quelques minutes jusqu'à coloration.", badge: null },
+      { icone: "🧅", titre: "Fondre les légumes", detail: "Ajouter l'oignon et le poivron, puis faire fondre 5 min à feu moyen jusqu'à ce qu'ils soient tendres.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et mélanger viande et légumes pour bien répartir les saveurs dans la poêle.", badge: null },
+      { icone: "🧀", titre: "Faire fondre", detail: "Rassembler la garniture, couvrir de tranches de cheddar et laisser fondre 2 min sous un couvercle.", badge: null },
+      { icone: "🥖", titre: "Garnir", detail: "Garnir le pain chaud légèrement toasté de la préparation fondante en raclant tout le jus de cuisson.", badge: null },
+      { icone: "🥪", titre: "Servir", detail: "Refermer le sandwich et servir aussitôt, tant que le fromage file et que la viande est chaude.", badge: null }
     ]
   },
   lobsterroll: {
@@ -2267,10 +2277,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🦞", titre: "Préparer", detail: "Détailler la chair de homard cuite en gros morceaux.", badge: null },
-      { icone: "🥄", titre: "Lier", detail: "Mélanger délicatement avec la mayonnaise, le citron et le céleri en petits dés. ASTUCE CHEF : lie tout juste — un lobster roll, c'est du homard à peine habillé, pas une salade noyée de mayo.", badge: null },
-      { icone: "🧈", titre: "Toaster", detail: "Toaster le pain brioché au beurre sur les faces.", badge: null },
-      { icone: "🌿", titre: "Garnir", detail: "Garnir de la préparation et parsemer de ciboulette.", badge: null }
+      { icone: "🦞", titre: "Préparer", detail: "Détailler la chair de homard cuite en gros morceaux généreux pour garder du mordant.", badge: null },
+      { icone: "🔪", titre: "Tailler", detail: "Couper le céleri en tout petits dés et ciseler finement la ciboulette.", badge: null },
+      { icone: "🥄", titre: "Lier", detail: "Mélanger délicatement le homard avec juste ce qu'il faut de mayonnaise, le jus de citron et le céleri.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et goûter en gardant une liaison légère pour ne pas noyer le homard.", badge: null },
+      { icone: "🧈", titre: "Toaster", detail: "Beurrer les faces du pain brioché et le toaster à la poêle jusqu'à ce qu'il soit doré et croustillant.", badge: null },
+      { icone: "🌿", titre: "Garnir", detail: "Garnir généreusement le pain de la préparation au homard et parsemer du reste de ciboulette.", badge: null },
+      { icone: "🍋", titre: "Servir", detail: "Servir aussitôt avec un quartier de citron, tant que le pain est chaud et le homard frais.", badge: null }
     ]
   },
   poboy: {
@@ -2302,9 +2315,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🦐", titre: "Paner", detail: "Enrober les crevettes de farine assaisonnée au paprika.", badge: null },
-      { icone: "🔥", titre: "Frire", detail: "Frire les crevettes jusqu'à dorées et croustillantes. ASTUCE CHEF : huile bien chaude (180°C) et ne surcharge pas la poêle — sinon la température chute et la panure boit l'huile au lieu de croustiller.", badge: "⏱ 5 min" },
-      { icone: "🥖", titre: "Monter", detail: "Garnir le pain de sauce, salade, tomate et crevettes.", badge: null }
+      { icone: "🦐", titre: "Préparer", detail: "Décortiquer les crevettes, les éponger puis ciseler la salade et trancher les tomates.", badge: null },
+      { icone: "🌾", titre: "Paner", detail: "Enrober les crevettes de farine assaisonnée au paprika, sel et poivre en tapotant l'excédent.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faire chauffer l'huile de friture à 180°C dans une casserole haute pour une panure bien croustillante.", badge: null },
+      { icone: "🍤", titre: "Frire", detail: "Frire les crevettes par petites quantités 2 à 3 min jusqu'à ce qu'elles soient dorées, puis les égoutter sur papier absorbant.", badge: null },
+      { icone: "🥖", titre: "Tartiner", detail: "Ouvrir le pain, le toaster légèrement et tartiner généreusement l'intérieur de mayonnaise.", badge: null },
+      { icone: "🥪", titre: "Monter", detail: "Garnir le pain de salade, de tomate puis des crevettes croustillantes et servir aussitôt tant que c'est chaud.", badge: null }
     ]
   },
   sloppyjoe: {
@@ -2336,9 +2352,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Rissoler", detail: "Rissoler le bœuf haché avec l'oignon et le poivron.", badge: "⏱ 6 min" },
-      { icone: "🍅", titre: "Sauce", detail: "Ajouter tomates et ketchup, laisser mijoter jusqu'à sauce épaisse. ASTUCE CHEF : laisse bien réduire — une garniture trop liquide détrempe le pain instantanément.", badge: "⏱ 12 min" },
-      { icone: "🍔", titre: "Garnir", detail: "Garnir généreusement le bun toasté.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émincer finement l'oignon et le poivron, et concasser les tomates si elles sont entières.", badge: null },
+      { icone: "🍳", titre: "Rissoler", detail: "Chauffer l'huile et rissoler le bœuf haché à feu vif en l'émiettant jusqu'à ce qu'il soit bien coloré.", badge: null },
+      { icone: "🧅", titre: "Suer", detail: "Ajouter l'oignon et le poivron et les faire suer 5 min jusqu'à ce qu'ils soient fondants.", badge: null },
+      { icone: "🍅", titre: "Mijoter", detail: "Incorporer les tomates et le ketchup puis laisser mijoter à feu doux 10 min jusqu'à une sauce bien épaisse.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et goûter, en laissant réduire encore si la garniture reste trop liquide.", badge: null },
+      { icone: "🥪", titre: "Garnir", detail: "Toaster les buns, les garnir généreusement de la préparation chaude et servir aussitôt avec une serviette.", badge: null }
     ]
   },
   katiroll: {
@@ -2370,9 +2389,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍗", titre: "Mariner", detail: "Faire mariner le poulet au garam masala puis le saisir.", badge: "⏱ 8 min" },
-      { icone: "🫓", titre: "Galette", detail: "Cuire la galette et la napper d'œuf battu directement dans la poêle. ASTUCE CHEF : verse l'œuf sur la galette en cuisson et retourne — l'œuf soude et enrichit la galette, c'est la signature du kati roll.", badge: null },
-      { icone: "🌯", titre: "Rouler", detail: "Garnir de poulet, oignon et coriandre, rouler serré.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Émince le poulet en lanières, ciselle l'oignon et taille le poivron en fines lamelles, puis hache la coriandre.", badge: null },
+      { icone: "🧂", titre: "Mariner", detail: "Mélange le poulet avec le garam masala, un peu d'huile et du sel, puis laisse mariner 10 min pour bien imprégner les épices.", badge: null },
+      { icone: "🥣", titre: "Pâte", detail: "Pétris la farine avec de l'eau et une pincée de sel en pâte souple, puis étale-la en fines galettes.", badge: null },
+      { icone: "🍳", titre: "Galette", detail: "Cuis chaque galette 1 à 2 min par face dans une poêle chaude, verse un œuf battu dessus et retourne pour le souder à la galette.", badge: null },
+      { icone: "🔥", titre: "Saisir", detail: "Saisis le poulet mariné à feu vif 6 à 8 min jusqu'à coloration, puis fais revenir l'oignon et le poivron 3 min à part.", badge: null },
+      { icone: "🌯", titre: "Garnir", detail: "Dépose le poulet, l'oignon, le poivron et la coriandre sur la galette à l'œuf, puis roule serré façon wrap.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Coupe le kati roll en deux en biais et sers aussitôt, encore tiède, avec une sauce yaourt-coriandre si tu veux.", badge: null }
     ]
   },
   baopouletcroustillant: {
@@ -2404,9 +2427,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥟", titre: "Pâte bao", detail: "Pétrir farine et levure en pâte, laisser pousser, former les bao et cuire à la vapeur.", badge: "⏱ 1 h" },
-      { icone: "🍗", titre: "Poulet", detail: "Paner le poulet au panko et le frire croustillant. ASTUCE CHEF : plie le bao à la vapeur sur un papier huilé — sinon il colle et se déchire en l'ouvrant.", badge: "⏱ 6 min" },
-      { icone: "🥢", titre: "Garnir", detail: "Glisser poulet, concombre et sauce soja-miel dans le bao.", badge: null }
+      { icone: "🥣", titre: "Pétrir", detail: "Mélange la farine, la levure, un peu de sucre, d'eau tiède et d'huile, puis pétris 10 min jusqu'à obtenir une pâte lisse.", badge: null },
+      { icone: "⏳", titre: "Pousser", detail: "Couvre la pâte et laisse-la doubler de volume 1 h à température ambiante, puis façonne des pâtons pliés en deux sur du papier huilé.", badge: null },
+      { icone: "💨", titre: "Vapeur", detail: "Cuis les bao 10 min à la vapeur à couvert jusqu'à ce qu'ils soient gonflés et moelleux, sans ouvrir en cours de cuisson.", badge: null },
+      { icone: "🍗", titre: "Paner", detail: "Trempe les morceaux de poulet dans la farine, l'œuf puis le panko en pressant bien pour une croûte épaisse.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Plonge le poulet dans l'huile à 170°C et frit 5 à 6 min jusqu'à doré et croustillant, puis égoutte sur papier absorbant.", badge: null },
+      { icone: "🍯", titre: "Glacer", detail: "Mélange la sauce soja et le miel, fais réduire 2 min à feu doux et enrobe le poulet de ce glaçage brillant.", badge: null },
+      { icone: "🥒", titre: "Garnir", detail: "Ouvre chaque bao, glisse le poulet glacé et des lamelles de concombre, puis sers aussitôt bien chaud.", badge: null }
     ]
   },
   katsusando: {
@@ -2438,9 +2465,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥩", titre: "Paner", detail: "Paner le porc dans la farine, l'œuf puis le panko.", badge: null },
-      { icone: "🔥", titre: "Frire", detail: "Frire jusqu'à doré et croustillant, égoutter. ASTUCE CHEF : le panko (chapelure japonaise) donne une croûte bien plus aérée et croustillante que la chapelure classique.", badge: "⏱ 6 min" },
-      { icone: "🥪", titre: "Monter", detail: "Tartiner le pain de mie sans croûte de sauce, ajouter le porc et le chou émincé, couper en deux.", badge: null }
+      { icone: "🔪", titre: "Préparer", detail: "Aplatis la tranche de porc à 1,5 cm d'épaisseur, sale-la et émince finement le chou en lanières.", badge: null },
+      { icone: "🍤", titre: "Paner", detail: "Passe le porc dans la farine, puis l'œuf battu et enfin le panko en pressant pour bien faire adhérer la chapelure.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Frit le porc dans l'huile à 170°C pendant 4 à 5 min par face jusqu'à doré et croustillant, puis égoutte.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Laisse reposer le katsu 3 min sur une grille pour garder le croustillant, puis détaille-le en larges tranches.", badge: null },
+      { icone: "🍞", titre: "Tartiner", detail: "Retire la croûte du pain de mie et tartine généreusement les tranches de ketchup ou de sauce tonkatsu.", badge: null },
+      { icone: "🥪", titre: "Monter", detail: "Dispose le porc pané et le chou émincé entre deux tranches de pain, puis presse délicatement le sandwich.", badge: null },
+      { icone: "🍽️", titre: "Trancher", detail: "Coupe le sando en deux d'un geste net au couteau pour révéler les couches, et sers aussitôt.", badge: null }
     ]
   },
   onigirazu: {
@@ -2472,9 +2503,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🍚", titre: "Riz", detail: "Cuire le riz japonais collant et le laisser tiédir.", badge: null },
-      { icone: "🍙", titre: "Monter", detail: "Sur une feuille de nori, étaler riz, thon-mayo et avocat, puis riz. ASTUCE CHEF : monte en couches sur le nori posé en losange, replie les 4 coins au centre, puis presse 1 min avant de couper — la tranche est nette et tient.", badge: null },
-      { icone: "🔪", titre: "Couper", detail: "Envelopper, presser et couper en deux pour révéler les couches.", badge: null }
+      { icone: "🍚", titre: "Cuire", detail: "Cuis le riz japonais collant, puis laisse-le tiédir 5 min pour qu'il reste façonnable sans brûler les doigts.", badge: null },
+      { icone: "🥄", titre: "Garniture", detail: "Mélange le thon avec la mayonnaise et un trait de sauce soja, puis tranche l'avocat en fines lamelles.", badge: null },
+      { icone: "🟢", titre: "Disposer", detail: "Pose une feuille de nori en losange sur le plan de travail, brillant vers le bas, prête à recevoir les couches.", badge: null },
+      { icone: "🥪", titre: "Monter", detail: "Étale au centre une couche de riz, puis le thon-mayo, l'avocat et un peu de sésame, et recouvre d'une seconde couche de riz.", badge: null },
+      { icone: "📦", titre: "Replier", detail: "Rabats les quatre coins du nori vers le centre pour enfermer la garniture en un paquet bien serré.", badge: null },
+      { icone: "⏳", titre: "Presser", detail: "Pose l'onigirazu pli vers le bas et presse-le 1 min sous une légère pression pour que le nori adhère.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Coupe en deux avec un couteau humide pour révéler les couches nettes, et sers parsemé de sésame.", badge: null }
     ]
   },
   falafelwrap: {
@@ -2506,9 +2541,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧆", titre: "Falafels", detail: "Mixer les pois chiches avec herbes et cumin, façonner et dorer.", badge: "⏱ 10 min" },
-      { icone: "🥄", titre: "Sauce", detail: "Détendre le tahini avec citron et eau en sauce crémeuse. ASTUCE CHEF : le tahini épaissit quand on ajoute le citron, puis se détend avec l'eau — ajoute l'eau petit à petit jusqu'à la texture nappante.", badge: null },
-      { icone: "🌯", titre: "Rouler", detail: "Garnir le pita de falafels, crudités et sauce, rouler.", badge: null }
+      { icone: "🫘", titre: "Mixer", detail: "Mixe les pois chiches avec l'oignon, la coriandre, le cumin et le sel jusqu'à obtenir une pâte grossière qui se tient.", badge: null },
+      { icone: "🧆", titre: "Façonner", detail: "Forme des petites boules aplaties et laisse-les reposer 10 min au frais pour qu'elles ne se défassent pas à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Dore les falafels dans l'huile à 170°C pendant 4 à 5 min jusqu'à croûte brune, puis égoutte sur papier absorbant.", badge: null },
+      { icone: "🥄", titre: "Sauce", detail: "Détends le tahini avec le jus de citron puis de l'eau ajoutée petit à petit jusqu'à une sauce crémeuse et nappante.", badge: null },
+      { icone: "🥗", titre: "Crudités", detail: "Lave et taille la salade, les tomates et le concombre en fines lamelles pour garnir le wrap.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Réchauffe le pain pita, étale la sauce tahini, ajoute falafels et crudités, puis roule serré et coupe en deux.", badge: null }
     ]
   },
   chimichanga: {
@@ -2540,9 +2578,13 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🌯", titre: "Garnir", detail: "Garnir la galette de poulet, haricots, riz, fromage et tomates.", badge: null },
-      { icone: "📦", titre: "Rouler", detail: "Rouler serré en repliant bien les côtés (façon enveloppe).", badge: null },
-      { icone: "🔥", titre: "Dorer", detail: "Dorer la chimichanga dans un peu d'huile chaude sur toutes les faces. ASTUCE CHEF : ferme bien le rouleau côté pli en dessous au début de la cuisson — l'huile chaude le soude et il ne s'ouvre pas.", badge: "⏱ 6 min" }
+      { icone: "🍗", titre: "Garniture", detail: "Effiloche le poulet et fais-le revenir 5 min avec les tomates concassées, du sel et un peu d'épices.", badge: null },
+      { icone: "🫘", titre: "Mélanger", detail: "Ajoute les haricots rouges et le riz cuit au poulet, mélange et laisse compoter 3 min pour lier la garniture.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Dépose la garniture tiède au centre de la galette de farine et parsème généreusement de cheddar râpé.", badge: null },
+      { icone: "📦", titre: "Rouler", detail: "Replie d'abord les deux côtés de la galette, puis roule serré façon enveloppe pour bien enfermer la garniture.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Dépose la chimichanga pli en dessous dans l'huile chaude à 180°C et dore-la 2 min par face jusqu'à croustillant.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutte la chimichanga sur du papier absorbant pour retirer l'excès d'huile tout en gardant le croustillant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Coupe en deux en biais et sers aussitôt avec de la crème, du guacamole ou une salsa fraîche.", badge: null }
     ]
   },
   boulesproteinees: {
@@ -2573,9 +2615,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥣", titre: "Mélanger", detail: "Mélanger tous les ingrédients en pâte.", badge: null },
-      { icone: "🟤", titre: "Façonner", detail: "Former des petites boules.", badge: null },
-      { icone: "❄️", titre: "Reposer", detail: "Réserver 30 min au frais.", badge: "⏱ 30 min" }
+      { icone: "🍌", titre: "Écraser", detail: "Écrase la banane bien mûre à la fourchette jusqu'à obtenir une purée lisse, base liante des boules.", badge: null },
+      { icone: "🥜", titre: "Mélanger", detail: "Incorpore le beurre de cacahuète et le miel à la purée de banane jusqu'à un mélange homogène et collant.", badge: null },
+      { icone: "🥣", titre: "Whey", detail: "Ajoute la whey et les flocons d'avoine, puis mélange en une pâte épaisse qui se travaille à la main.", badge: null },
+      { icone: "🤲", titre: "Façonner", detail: "Prélève des portions et roule-les entre tes paumes en petites boules régulières d'environ 3 cm.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Dépose les boules sur une assiette et réserve 30 min au frais pour qu'elles raffermissent et se tiennent bien.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Sers les boules fraîches en collation post-entraînement, ou conserve-les 4 jours au réfrigérateur en boîte hermétique.", badge: null }
     ]
   },
   cottagecheesefruits: {
@@ -2606,9 +2651,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🧀", titre: "Base", detail: "Verser le cottage cheese dans un bol.", badge: null },
-      { icone: "🍓", titre: "Garnir", detail: "Ajouter fruits rouges et flocons.", badge: null },
-      { icone: "🍯", titre: "Miel", detail: "Filet de miel.", badge: null }
+      { icone: "🧀", titre: "Base", detail: "Verse le cottage cheese bien frais dans un bol et lisse-le légèrement à la cuillère.", badge: null },
+      { icone: "🍓", titre: "Préparer", detail: "Rince les fruits rouges, équeute-les si besoin et coupe les plus gros en deux pour une bouchée facile.", badge: null },
+      { icone: "🌾", titre: "Flocons", detail: "Parsème les flocons d'avoine sur le cottage cheese pour apporter du croquant et des fibres.", badge: null },
+      { icone: "🍒", titre: "Garnir", detail: "Dispose joliment les fruits rouges sur le dessus pour un bol coloré et appétissant.", badge: null },
+      { icone: "🍯", titre: "Miel", detail: "Termine par un filet de miel qui apporte la touche sucrée et lie les saveurs.", badge: null },
+      { icone: "🥄", titre: "Servir", detail: "Sers aussitôt bien frais en petit-déjeuner protéiné ou en collation gourmande.", badge: null }
     ]
   },
   oeufsdurspaprika: {
@@ -2639,9 +2687,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥚", titre: "Cuire", detail: "Cuire les œufs 9 min dans l'eau bouillante.", badge: "⏱ 9 min" },
-      { icone: "❄️", titre: "Refroidir", detail: "Refroidir et écaler.", badge: null },
-      { icone: "🌶️", titre: "Assaisonner", detail: "Saupoudrer de paprika et de sel.", badge: null }
+      { icone: "💧", titre: "Préparer", detail: "Sors les œufs du frigo, porte une casserole d'eau à ébullition et prépare un bol d'eau glacée à côté.", badge: null },
+      { icone: "🥚", titre: "Plonger", detail: "Dépose délicatement les œufs dans l'eau bouillante à l'aide d'une cuillère pour éviter qu'ils ne se fendent.", badge: null },
+      { icone: "⏱️", titre: "Cuire", detail: "Maintiens une ébullition franche pendant 9 min pour des œufs durs au jaune entièrement pris.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Plonge aussitôt les œufs dans l'eau glacée 5 min pour stopper la cuisson et faciliter l'écalage.", badge: null },
+      { icone: "🥚", titre: "Écaler", detail: "Roule les œufs pour craqueler la coquille et écale-les sous un filet d'eau, puis coupe-les en deux.", badge: null },
+      { icone: "🌶️", titre: "Assaisonner", detail: "Saupoudre généreusement de paprika et d'une pincée de sel, puis sers aussitôt en collation protéinée.", badge: null }
     ]
   },
   edamamepimentes: {
@@ -2672,8 +2723,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "💧", titre: "Cuire", detail: "Cuire les edamame 5 min dans l'eau salée.", badge: null },
-      { icone: "🌶️", titre: "Assaisonner", detail: "Égoutter, mélanger sauce soja, piment et sel.", badge: null }
+      { icone: "💧", titre: "Bouillir", detail: "Porte une casserole d'eau salée à ébullition franche pour cuire les edamame encore dans leur cosse.", badge: null },
+      { icone: "🫛", titre: "Cuire", detail: "Plonge les edamame et cuis-les 5 min jusqu'à ce qu'ils soient tendres tout en restant légèrement croquants.", badge: null },
+      { icone: "🧊", titre: "Égoutter", detail: "Égoutte les edamame et passe-les sous l'eau froide pour fixer leur couleur verte éclatante.", badge: null },
+      { icone: "🌶️", titre: "Sauce", detail: "Mélange la sauce soja, le piment émincé et une pincée de sel dans un grand bol.", badge: null },
+      { icone: "🥄", titre: "Enrober", detail: "Verse les edamame chauds dans la sauce et remue pour bien les enrober du mélange pimenté.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Sers aussitôt en apéritif, à déguster en pressant les cosses pour faire glisser les fèves en bouche.", badge: null }
     ]
   },
   shakeproteinemaison: {
@@ -2704,8 +2759,12 @@ Object.assign(recettes, {
     ],
     ingredients: {},
     etapes: [
-      { icone: "🥤", titre: "Mixer", detail: "Mixer tous les ingrédients 30 secondes.", badge: null },
-      { icone: "🧊", titre: "Servir", detail: "Servir frais, éventuellement avec des glaçons.", badge: null }
+      { icone: "🍌", titre: "Préparer la banane", detail: "Éplucher la banane bien mûre et la couper en rondelles pour qu'elle se mixe sans morceaux ; une banane congelée donnera une texture plus épaisse et fraîche.", badge: null },
+      { icone: "🥛", titre: "Verser le lait", detail: "Verser le lait bien froid dans le bol du blender, c'est la base liquide qui permettra à la poudre de bien se disperser.", badge: null },
+      { icone: "🥄", titre: "Ajouter la whey", detail: "Incorporer une dosette de whey en l'ajoutant après le lait pour éviter qu'elle ne colle au fond et ne forme des grumeaux.", badge: null },
+      { icone: "🥜", titre: "Beurre de cacahuète", detail: "Ajouter une cuillère à soupe de beurre de cacahuète pour la gourmandise, les bons lipides et l'effet rassasiant.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer à pleine puissance 30 à 40 secondes jusqu'à obtenir une texture lisse, homogène et légèrement mousseuse.", badge: null },
+      { icone: "🧊", titre: "Servir frais", detail: "Verser dans un grand verre sur quelques glaçons et déguster immédiatement, idéalement dans les 30 minutes suivant l'entraînement.", badge: null }
     ]
   }
 });
