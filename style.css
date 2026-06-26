@@ -188,6 +188,7 @@ header p  { color: var(--text-2); font-size: 15px; margin: 8px 0 0; }
 .carte-info { padding: 10px 12px 12px; position: relative; }
 .carte-info h2 { margin: 0 0 3px; font-size: 16px; }
 .carte-info > p { margin: 0 0 8px; color: var(--text-2); font-size: 12px; }
+.carte-info .carte-prixcal { margin: 0; font-size: 12.5px; font-weight: 600; color: var(--text); }
 
 /* ==========================
    MINI CALCULATEUR DANS CARTE

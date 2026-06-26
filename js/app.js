@@ -2186,6 +2186,37 @@ function appliquerNutriScoreCartes() {
   });
   
   console.log("✅ Nutri-Score appliqué sur " + nbAppliques + " cartes");
+  try { appliquerPrixCalCartes(); } catch (e) {}
+}
+
+// Affiche le PRIX (par portion) + les CALORIES sur chaque carte de recette.
+// Retour testeur : sans ça, trier par « moins cher » / « moins calorique » semblait
+// incohérent car la valeur n'était visible qu'en ouvrant la fiche. Idempotent.
+function appliquerPrixCalCartes() {
+  if (typeof calculerPrixCaloriesRecette !== "function" || typeof recettes !== "object") return;
+  document.querySelectorAll(".carte").forEach((carte) => {
+    if (carte.querySelector(".carte-prixcal")) return; // déjà fait
+    const cle = (typeof extraireCleRecetteCarte === "function") ? extraireCleRecetteCarte(carte) : null;
+    if (!cle || !recettes[cle]) return;
+    const r = recettes[cle];
+    const tabKey = Object.keys(r).find((k) => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (!tabKey) return;
+    const base = r.base || 4;
+    const ligne = r[tabKey].find((l) => l.nb === base || l.patons === base) || r[tabKey][0];
+    if (!ligne) return;
+    let pc; try { pc = calculerPrixCaloriesRecette(ligne); } catch (e) { return; }
+    if (!pc) return;
+    const parts = [];
+    if (pc.prix != null) parts.push("💰 " + (pc.prix / base).toFixed(2).replace(".", ",") + " €");
+    if (pc.cal != null) parts.push("🔥 " + Math.round(pc.cal / base) + " kcal");
+    if (!parts.length) return;
+    const info = carte.querySelector(".carte-info");
+    if (!info) return;
+    const el = document.createElement("p");
+    el.className = "carte-prixcal";
+    el.textContent = parts.join("  ·  ");
+    info.appendChild(el);
+  });
 }
 
 // v255 : Badge 📝 sur les cartes qui ont une note personnelle
