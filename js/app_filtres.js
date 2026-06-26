@@ -15,8 +15,39 @@
 
 (function () {
   const F = { rapide: false, eco: false, nutri: false, facile: false, saison: false, vege: false, vegan: false, sansgluten: false, leger: false, proteine: false };
-  let tri = "";
+  let tri = "";                 // critère de tri : "" | note | temps | cout | cal
+  let sensTri = 1;              // +1 = croissant, -1 = décroissant (appliqué à val(a)-val(b))
   let occ = "";                 // occasion active (single-select) : "" = aucune
+
+  // Tris en chips bidirectionnels : neutre → sens « primaire » (nat) → sens inverse → off.
+  // nat = multiplicateur du comparateur pour l'étiquette primaire (note : décroissant).
+  const TRIS = [
+    { crit: "note",  e: "⭐", neutre: "Note",     prim: "Mieux notées",   sec: "Moins bien notées", nat: -1 },
+    { crit: "temps", e: "⏱", neutre: "Temps",    prim: "Plus rapide",    sec: "Plus long",         nat: 1 },
+    { crit: "cout",  e: "💰", neutre: "Prix",     prim: "Moins cher",     sec: "Plus cher",         nat: 1 },
+    { crit: "cal",   e: "🔥", neutre: "Calories", prim: "Moins calorique",sec: "Plus calorique",    nat: 1 },
+  ];
+  function libTri(t) {
+    if (tri !== t.crit) return t.e + " " + t.neutre;
+    return t.e + " " + (sensTri === t.nat ? t.prim : t.sec) + (sensTri === 1 ? " ↑" : " ↓");
+  }
+  function majChipsTri() {
+    TRIS.forEach((t) => {
+      const b = document.querySelector('.chip-tri[data-crit="' + t.crit + '"]');
+      if (!b) return;
+      b.textContent = libTri(t);
+      b.classList.toggle("active", tri === t.crit);
+    });
+  }
+  window.trierChip = function (crit) {
+    const t = TRIS.find((x) => x.crit === crit);
+    if (!t) return;
+    if (tri === crit) {
+      if (sensTri === t.nat) sensTri = -t.nat;      // primaire → inverse
+      else { tri = ""; sensTri = 1; }               // inverse → off
+    } else { tri = crit; sensTri = t.nat; }          // activer (sens primaire)
+    majChipsTri(); appliquerTri(); majCompteur(); persister();
+  };
 
   // Occasions : dérivées de la catégorie + mots-clés (nom/description). Pas de
   // tag manuel sur 1050 recettes ; détection à la volée comme les régimes.
@@ -142,21 +173,24 @@
     let liste;
     if (!tri) {
       liste = ordreInitial.filter(c => c.isConnected);
-    } else if (tri === "note") {
-      // Tri par note de la communauté (décroissant, non notées en dernier)
-      const moy = (c) => {
-        const cle = cleDe(c);
-        const com = (cle && typeof getNoteCommunaute === "function") ? getNoteCommunaute(cle) : null;
-        return com ? com.moyenne : -1;
-      };
-      liste = [...cont.querySelectorAll(".carte")].sort((a, b) => moy(b) - moy(a));
     } else {
+      // Valeur du critère (null = non disponible → toujours rejeté en fin de liste).
       const val = (c) => {
-        const m = metriques(cleDe(c));
-        const v = tri === "temps" ? m.min : tri === "cout" ? m.coutPers : m.cal;
-        return v == null ? Infinity : v;
+        const cle = cleDe(c);
+        if (tri === "note") {
+          const com = (cle && typeof getNoteCommunaute === "function") ? getNoteCommunaute(cle) : null;
+          return (com && com.moyenne != null) ? com.moyenne : null;
+        }
+        const m = metriques(cle);
+        return tri === "temps" ? m.min : tri === "cout" ? m.coutPers : m.cal;
       };
-      liste = [...cont.querySelectorAll(".carte")].sort((a, b) => val(a) - val(b));
+      liste = [...cont.querySelectorAll(".carte")].sort((a, b) => {
+        const va = val(a), vb = val(b);
+        if (va == null && vb == null) return 0;
+        if (va == null) return 1;   // manquant → en dernier (dans les deux sens)
+        if (vb == null) return -1;
+        return (va - vb) * sensTri;
+      });
     }
     const frag = document.createDocumentFragment();
     liste.forEach(c => frag.appendChild(c));
@@ -175,7 +209,7 @@
   }
 
   // ---- Mémorisation entre visites ----
-  function persister() { try { localStorage.setItem(LSKEY, JSON.stringify({ F, tri, occ })); } catch (e) {} }
+  function persister() { try { localStorage.setItem(LSKEY, JSON.stringify({ F, tri, sensTri, occ })); } catch (e) {} }
   function majUIetat() {
     document.querySelectorAll("#chips-row-filtres .chip").forEach(btn => {
       const m = (btn.getAttribute("onclick") || "").match(/toggleFiltreAvance\('(\w+)'/);
@@ -185,7 +219,7 @@
       const m = (btn.getAttribute("onclick") || "").match(/filtrerOccasion\('(\w+)'/);
       if (m) btn.classList.toggle("active", occ === m[1]);
     });
-    const sel = document.getElementById("f-tri"); if (sel) sel.value = tri || "";
+    majChipsTri();
   }
   function chargerEtat() {
     let data = null;
@@ -193,6 +227,7 @@
     const fSaved = (data && data.F) || {};
     Object.keys(F).forEach(k => F[k] = !!fSaved[k]);
     tri = (data && data.tri) || "";
+    sensTri = (data && data.sensTri === -1) ? -1 : 1;
     occ = (data && data.occ && OCCASIONS[data.occ]) ? data.occ : "";
   }
   function restaurer() { chargerEtat(); majUIetat(); appliquer(); } // appliqué quand la grille est prête
@@ -235,11 +270,11 @@
   };
   window.reinitFiltresAvances = function () {
     Object.keys(F).forEach(k => F[k] = false);
-    tri = "";
+    tri = ""; sensTri = 1;
     occ = "";
     document.querySelectorAll("#chips-row-occasions .chip.active").forEach(c => c.classList.remove("active"));
     document.querySelectorAll("#chips-row-filtres .chip.active").forEach(c => c.classList.remove("active"));
-    const sel = document.getElementById("f-tri"); if (sel) sel.value = "";
+    majChipsTri();
     document.querySelectorAll(".carte--filtre-off").forEach(c => c.classList.remove("carte--filtre-off"));
     appliquerTri();
     majCompteur();
@@ -256,8 +291,8 @@
       st.id = "filtres-avances-style";
       st.textContent =
         ".carte.carte--filtre-off{display:none !important}" +
-        "#chips-row-filtres .filtre-tri{background:var(--surface-1);color:#fff;border:1px solid rgba(255,255,255,.15);" +
-        "border-radius:20px;padding:6px 12px;font-size:13px;cursor:pointer;margin-left:4px}" +
+        "#chips-row-filtres .chips-label-tri{margin-left:10px;padding-left:10px;border-left:1px solid rgba(255,255,255,.18)}" +
+        "#chips-row-filtres .chip-tri.active{background:var(--accent,#ff4d88);color:#fff;border-color:var(--accent,#ff4d88);font-weight:700}" +
         "#chips-row-filtres .filtre-compteur{color:#b3b0b8;font-size:12px;margin-left:8px;white-space:nowrap;align-self:center}";
       document.head.appendChild(st);
     }
@@ -278,13 +313,8 @@
       '<button class="chip" onclick="toggleFiltreAvance(\'sansgluten\',this)" title="Sans blé ni gluten">🌾 Sans gluten</button>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'leger\',this)" title="Moins de 500 kcal par portion">🪶 Léger</button>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'proteine\',this)" title="Au moins 20 g de protéines par portion">💪 Protéiné</button>' +
-      '<select id="f-tri" class="filtre-tri" onchange="trierRecettes(this.value)" aria-label="Trier les recettes">' +
-        '<option value="">↕ Trier…</option>' +
-        '<option value="note">⭐ Mieux notées</option>' +
-        '<option value="temps">⏱ Plus rapide</option>' +
-        '<option value="cout">💰 Moins cher</option>' +
-        '<option value="cal">🔥 Moins calorique</option>' +
-      '</select>' +
+      '<span class="chips-label chips-label-tri" title="Trier (re-clic = inverse l\'ordre)">↕</span>' +
+      TRIS.map((t) => '<button class="chip chip-tri" data-crit="' + t.crit + '" onclick="trierChip(\'' + t.crit + '\')" title="Trier par ' + t.neutre.toLowerCase() + ' — re-clic pour inverser">' + t.e + ' ' + t.neutre + '</button>').join("") +
       '<button class="chip" onclick="surprendsMoi()" title="Une recette au hasard (selon les filtres actifs)">🎲 Surprends-moi</button>' +
       '<span id="f-compteur" class="filtre-compteur"></span>';
     // Inséré juste après la 1ère ligne (catégories), avant la ligne pays
