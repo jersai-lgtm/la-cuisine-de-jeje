@@ -2199,6 +2199,7 @@ function appliquerPrixCalCartes() {
     const cle = (typeof extraireCleRecetteCarte === "function") ? extraireCleRecetteCarte(carte) : null;
     if (!cle || !recettes[cle]) return;
     const r = recettes[cle];
+    if (r.cat === "cocktails" || r.cat === "mocktails") return; // nutrition/prix non fiables (alcool/sucre)
     const tabKey = Object.keys(r).find((k) => k.startsWith("tableau") && Array.isArray(r[k]));
     if (!tabKey) return;
     const base = r.base || 4;

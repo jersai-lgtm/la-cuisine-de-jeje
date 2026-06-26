@@ -23,6 +23,7 @@
   // nat = multiplicateur du comparateur pour l'étiquette primaire (note : décroissant).
   const TRIS = [
     { crit: "note",  e: "⭐", neutre: "Note",     prim: "Mieux notées",   sec: "Moins bien notées", nat: -1 },
+    { crit: "nutri", e: "🥗", neutre: "Nutri",    prim: "Meilleur Nutri", sec: "Moins bon Nutri",   nat: 1 },
     { crit: "temps", e: "⏱", neutre: "Temps",    prim: "Plus rapide",    sec: "Plus long",         nat: 1 },
     { crit: "cout",  e: "💰", neutre: "Prix",     prim: "Moins cher",     sec: "Plus cher",         nat: 1 },
     { crit: "cal",   e: "🔥", neutre: "Calories", prim: "Moins calorique",sec: "Plus calorique",    nat: 1 },
@@ -102,7 +103,11 @@
       const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
       const base = r.base || 4;
       const ligne = tabKey ? (r[tabKey].find(l => l.nb === base || l.patons === base) || r[tabKey][0]) : null;
-      if (ligne) {
+      // 🍸 Cocktails / mocktails : nutrition & prix NON fiables (alcool non compté,
+      // pas de Nutri-Score) → on laisse nutri/cal/prot/coût à null. Ils sortent ainsi
+      // des filtres Éco / Nutri A/B / Léger / Protéiné et des tris prix/cal/nutri.
+      const estBoisson = r.cat === "cocktails" || r.cat === "mocktails";
+      if (ligne && !estBoisson) {
         if (typeof calculerPrixCaloriesRecette === "function") {
           try {
             const pc = calculerPrixCaloriesRecette(ligne);
@@ -182,6 +187,7 @@
           return (com && com.moyenne != null) ? com.moyenne : null;
         }
         const m = metriques(cle);
+        if (tri === "nutri") return m.nutri ? ("ABCDE".indexOf(m.nutri) + 1) : null; // A=1…E=5
         return tri === "temps" ? m.min : tri === "cout" ? m.coutPers : m.cal;
       };
       liste = [...cont.querySelectorAll(".carte")].sort((a, b) => {
