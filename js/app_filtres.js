@@ -103,11 +103,15 @@
       const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
       const base = r.base || 4;
       const ligne = tabKey ? (r[tabKey].find(l => l.nb === base || l.patons === base) || r[tabKey][0]) : null;
-      // 🍸 Cocktails / mocktails : nutrition & prix NON fiables (alcool non compté,
-      // pas de Nutri-Score) → on laisse nutri/cal/prot/coût à null. Ils sortent ainsi
-      // des filtres Éco / Nutri A/B / Léger / Protéiné et des tris prix/cal/nutri.
-      const estBoisson = r.cat === "cocktails" || r.cat === "mocktails";
-      if (ligne && !estBoisson) {
+      // Métriques nutritionnelles laissées à null pour deux familles → elles
+      // sortent des filtres Éco / Nutri A/B / Léger / Protéiné et des tris prix/cal/nutri :
+      //   • 🍸 cocktails / mocktails : nutrition & prix NON fiables (alcool non compté).
+      //   • 🥫 sauces / tartinables : « briques d'assemblage » dosées à l'unité (cuillère,
+      //     portion de condiment), pas par personne. Leur coût/cal par portion est minuscule
+      //     et écrase les vrais plats dans le tri « moins cher / moins calorique ».
+      const estHorsRepas = r.cat === "cocktails" || r.cat === "mocktails"
+        || r.cat === "sauces" || r.cat === "tartinables";
+      if (ligne && !estHorsRepas) {
         if (typeof calculerPrixCaloriesRecette === "function") {
           try {
             const pc = calculerPrixCaloriesRecette(ligne);
