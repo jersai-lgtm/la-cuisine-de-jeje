@@ -5,9 +5,9 @@
 //   node tools/version.mjs --show     → affiche seulement la version actuelle
 //
 // SCHÉMA DE VERSIONS (depuis la 2.0.0) :
-//   le patch monte jusqu'à 10, puis le minor +1 et le patch repart à 1.
-//   2.0.0 → 2.0.1 → … → 2.0.10 → 2.1.1 → … → 2.1.10 → 2.2.1 → …
-//   (le minor n'est pas plafonné ; pour passer à 3.0.0, donner la version explicite.)
+//   AUCUN segment ne dépasse 10. Le patch monte jusqu'à 10 puis le minor +1
+//   (patch repart à 1). Le minor monte jusqu'à 10 puis le MAJOR +1 → x.0.0.
+//   2.0.0 → 2.0.1 → … → 2.0.10 → 2.1.1 → … → 2.10.10 → 3.0.0 → 3.0.1 → …
 //   Toute version 1.x est basculée vers 2.0.0 au premier auto-incrément.
 //
 // Met à jour les 3 sources qui doivent rester synchro (voir js/version.js) :
@@ -27,14 +27,16 @@ const ecrire = (f, s) => writeFileSync(p(f), s);
 
 const actuelle = (lire("js/version.js").match(/APP_VERSION\s*=\s*"([^"]+)"/) || [])[1] || "?";
 
-// Calcule la version suivante selon le schéma (patch ≤ 10, sinon minor +1 / patch = 1).
+// Calcule la version suivante selon le schéma : aucun segment ne dépasse 10.
+//   patch > 10 → minor +1, patch = 1.   minor > 10 → major +1, minor = 0, patch = 0.
 function versionSuivante(cur) {
   const m = /^(\d+)\.(\d+)\.(\d+)$/.exec(cur || "");
   if (!m) return "2.0.0";
   let maj = +m[1], min = +m[2], pat = +m[3];
-  if (maj < 2) return "2.0.0";          // bascule des 1.x vers la nouvelle ère
+  if (maj < 2) return "2.0.0";              // bascule des 1.x vers la nouvelle ère
   pat += 1;
-  if (pat > 10) { min += 1; pat = 1; }  // patch plafonné à 10
+  if (pat > 10) { min += 1; pat = 1; }      // patch plafonné à 10 → minor +1
+  if (min > 10) { maj += 1; min = 0; pat = 0; } // minor plafonné à 10 → major +1 (x.0.0)
   return `${maj}.${min}.${pat}`;
 }
 
