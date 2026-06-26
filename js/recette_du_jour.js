@@ -74,6 +74,7 @@
         text-shadow:0 2px 6px rgba(0,0,0,.6);display:block}
       #accueil-dujour-bloc .dujour-meta{font-size:13px;opacity:.95;margin-top:4px;
         text-shadow:0 1px 4px rgba(0,0,0,.6)}
+      #accueil-dujour-bloc .dujour-nutri{position:absolute;top:12px;left:12px;z-index:2;transform:scale(1.25);transform-origin:top left}
     `;
     document.head.appendChild(s);
   }
@@ -99,16 +100,40 @@
     const onerr = (typeof imgCarteOnerror === "function") ? imgCarteOnerror(key) : "";
     const dra = (typeof drapeau === "function") ? drapeau(r.pays, 14) : "";
     const titre = EN() ? "🗓️ Recipe of the day" : "🗓️ La recette du jour";
-    const temps = r.temps ? ("⏱ " + r.temps) : "";
+
+    // Nutri-Score + prix/calories (par portion), comme sur les cartes de recette.
+    let nutriBadge = "", prixCal = "";
+    try {
+      const tabKey = Object.keys(r).find((k) => k.startsWith("tableau") && Array.isArray(r[k]));
+      const base = r.base || 4;
+      const ligne = tabKey ? (r[tabKey].find((l) => l.nb === base || l.patons === base) || r[tabKey][0]) : null;
+      if (ligne) {
+        if (typeof calculerNutriScoreRecette === "function" && r.cat !== "cocktails" && r.cat !== "mocktails") {
+          const ns = calculerNutriScoreRecette(ligne);
+          if (ns && ns.lettre) nutriBadge = '<span class="dujour-nutri carte-nutri nutri-' + ns.lettre + '" data-lettre="' + ns.lettre + '" title="Nutri-Score ' + ns.lettre + '"></span>';
+        }
+        if (typeof calculerPrixCaloriesRecette === "function") {
+          const pc = calculerPrixCaloriesRecette(ligne);
+          if (pc) {
+            const parts = [];
+            if (pc.prix != null) parts.push("💰 " + (pc.prix / base).toFixed(2).replace(".", ",") + " €");
+            if (pc.cal != null) parts.push("🔥 " + Math.round(pc.cal / base) + " kcal");
+            prixCal = parts.join("  ·  ");
+          }
+        }
+      }
+    } catch (e) {}
+    const meta = [r.temps ? ("⏱ " + r.temps) : "", prixCal].filter(Boolean).join("  ·  ");
 
     bloc.innerHTML =
       '<div class="accueil-bloc-header"><h2>' + titre + '</h2></div>' +
       '<div class="dujour-hero" onclick="ouvrirFiche(\'' + key + '\',\'\')">' +
         '<img loading="lazy" decoding="async" src="' + img + '" alt="' + nom + '" onerror="' + onerr + '">' +
+        nutriBadge +
         '<div class="dujour-grad"></div>' +
         '<div class="dujour-cap">' +
           '<span class="dujour-nom">' + dra + (r.emoji || "🍽️") + ' ' + nom + '</span>' +
-          '<span class="dujour-meta">' + temps + '</span>' +
+          '<span class="dujour-meta">' + meta + '</span>' +
         '</div>' +
       '</div>';
   }
