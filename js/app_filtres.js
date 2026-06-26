@@ -29,7 +29,8 @@
     { crit: "cal",   e: "🔥", neutre: "Calories", prim: "Moins calorique",sec: "Plus calorique",    nat: 1 },
   ];
   function libTri(t) {
-    if (tri !== t.crit) return t.e + " " + t.neutre;
+    // Au repos : flèche double ↕ → signale que la puce range ET que le re-clic inverse.
+    if (tri !== t.crit) return t.e + " " + t.neutre + " ↕";
     return t.e + " " + (sensTri === t.nat ? t.prim : t.sec) + (sensTri === 1 ? " ↑" : " ↓");
   }
   function majChipsTri() {
@@ -301,18 +302,26 @@
       st.id = "filtres-avances-style";
       st.textContent =
         ".carte.carte--filtre-off{display:none !important}" +
-        "#chips-row-filtres .chips-label-tri{margin-left:10px;padding-left:10px;border-left:1px solid rgba(255,255,255,.18)}" +
-        "#chips-row-filtres .chip-tri.active{background:var(--accent,#ff4d88);color:#fff;border-color:var(--accent,#ff4d88);font-weight:700}" +
-        "#chips-row-filtres .filtre-compteur{color:#b3b0b8;font-size:12px;margin-left:8px;white-space:nowrap;align-self:center}";
+        // Titres de zone (FILTRER / TRIER PAR) : libellés non cliquables, allure d'en-tête.
+        ".chips-titre{flex-shrink:0;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;" +
+          "font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;opacity:.8;margin-right:3px}" +
+        ".chips-titre-tri{color:var(--accent,#ff4d88);opacity:1}" +
+        // Puces de tri : style « famille différente » au repos (contour pointillé), plein quand actif.
+        "#chips-row-tri .chip-tri{border-style:dashed}" +
+        "#chips-row-tri .chip-tri.active{background:linear-gradient(135deg,var(--accent,#ff4d88),var(--accent-light,#ff6ba1));" +
+          "color:var(--text,#fff);border-color:var(--accent,#ff4d88);border-style:solid;font-weight:700;box-shadow:0 2px 8px rgba(var(--accent-rgb),.3)}" +
+        ".filtre-compteur{flex-shrink:0;color:#b3b0b8;font-size:12px;margin-left:8px;white-space:nowrap;align-self:center}";
       document.head.appendChild(st);
     }
 
     const [emo, lib] = SAISON_DECO[saisonCourante()] || ["🌿", "De saison"];
-    const row = document.createElement("div");
-    row.className = "chips-row";
-    row.id = "chips-row-filtres";
-    row.innerHTML =
-      '<span class="chips-label">⚙️</span>' +
+
+    // ── Ligne 1 : FILTRER (critères cumulables on/off) ───────────────────────
+    const rowF = document.createElement("div");
+    rowF.className = "chips-row";
+    rowF.id = "chips-row-filtres";
+    rowF.innerHTML =
+      '<span class="chips-titre" title="Affiner la liste — les critères se cumulent">🔍 Filtrer</span>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'rapide\',this)">⏱ Rapide</button>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'eco\',this)">💰 Éco</button>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'nutri\',this)">🥗 Nutri A/B</button>' +
@@ -323,24 +332,31 @@
       '<button class="chip" onclick="toggleFiltreAvance(\'sansgluten\',this)" title="Sans blé ni gluten">🌾 Sans gluten</button>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'leger\',this)" title="Moins de 500 kcal par portion">🪶 Léger</button>' +
       '<button class="chip" onclick="toggleFiltreAvance(\'proteine\',this)" title="Au moins 20 g de protéines par portion">💪 Protéiné</button>' +
-      '<span class="chips-label chips-label-tri" title="Trier (re-clic = inverse l\'ordre)">↕</span>' +
-      TRIS.map((t) => '<button class="chip chip-tri" data-crit="' + t.crit + '" onclick="trierChip(\'' + t.crit + '\')" title="Trier par ' + t.neutre.toLowerCase() + ' — re-clic pour inverser">' + t.e + ' ' + t.neutre + '</button>').join("") +
-      '<button class="chip" onclick="surprendsMoi()" title="Une recette au hasard (selon les filtres actifs)">🎲 Surprends-moi</button>' +
       '<span id="f-compteur" class="filtre-compteur"></span>';
-    // Inséré juste après la 1ère ligne (catégories), avant la ligne pays
-    const premiere = conteneur.querySelector(".chips-row");
-    if (premiere && premiere.nextSibling) conteneur.insertBefore(row, premiere.nextSibling);
-    else conteneur.appendChild(row);
 
-    // Ligne « occasions » (juste après la ligne filtres)
+    // ── Ligne 2 : TRIER PAR (un seul critère, re-clic = inverse l'ordre) ─────
+    const rowT = document.createElement("div");
+    rowT.className = "chips-row";
+    rowT.id = "chips-row-tri";
+    rowT.innerHTML =
+      '<span class="chips-titre chips-titre-tri" title="Ranger les recettes — re-clic sur une puce pour inverser l\'ordre">↕️ Trier par</span>' +
+      TRIS.map((t) => '<button class="chip chip-tri" data-crit="' + t.crit + '" onclick="trierChip(\'' + t.crit + '\')" title="Trier par ' + t.neutre.toLowerCase() + ' — re-clic pour inverser">' + libTri(t) + '</button>').join("") +
+      '<button class="chip" onclick="surprendsMoi()" title="Une recette au hasard (selon les filtres actifs)">🎲 Surprends-moi</button>';
+
+    // Insertion : juste après la 1ère ligne (catégories), avant la ligne pays.
+    const premiere = conteneur.querySelector(".chips-row");
+    if (premiere && premiere.nextSibling) conteneur.insertBefore(rowF, premiere.nextSibling);
+    else conteneur.appendChild(rowF);
+    conteneur.insertBefore(rowT, rowF.nextSibling);
+
+    // ── Ligne 3 : occasions (🎉) ─────────────────────────────────────────────
     const rowOcc = document.createElement("div");
     rowOcc.className = "chips-row";
     rowOcc.id = "chips-row-occasions";
     rowOcc.innerHTML = '<span class="chips-label" title="Occasions">🎉</span>' +
       Object.entries(OCCASIONS).map(([k, o]) =>
         `<button class="chip" onclick="filtrerOccasion('${k}',this)">${o.emoji} ${o.lib}</button>`).join("");
-    if (row.nextSibling) conteneur.insertBefore(rowOcc, row.nextSibling);
-    else conteneur.appendChild(rowOcc);
+    conteneur.insertBefore(rowOcc, rowT.nextSibling);
   }
 
   // --- Cohérence inter-vues : le calque .carte--filtre-off ne doit valoir que
