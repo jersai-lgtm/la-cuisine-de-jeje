@@ -87,7 +87,27 @@
       const base = r.base || 4;
       const ligne = r[tk].find((l) => l.nb === base || l.patons === base) || r[tk][0];
       const ns = ligne && calculerNutriScoreRecette(ligne);
-      return ns ? `<span class="swipe-nutri nutri-${ns.lettre}" data-lettre="${ns.lettre}" title="Nutri-Score ${ns.lettre}"></span>` : "";
+      return ns ? `<span class="swipe-nutri carte-nutri nutri-${ns.lettre}" data-lettre="${ns.lettre}" title="Nutri-Score ${ns.lettre}"></span>` : "";
+    } catch (e) { return ""; }
+  }
+
+  // 💰🔥 Prix + calories par portion (même exclusions que les filtres/tris :
+  // boissons et bases dosées à l'unité n'ont pas de prix/cal fiable par convive).
+  function prixCalLigne(key) {
+    try {
+      const r = recettes[key];
+      if (!r || ["cocktails", "mocktails", "sauces", "tartinables"].includes(r.cat)) return "";
+      if (typeof calculerPrixCaloriesRecette !== "function") return "";
+      const tk = Object.keys(r).find((k) => k.startsWith("tableau") && Array.isArray(r[k]));
+      if (!tk) return "";
+      const base = r.base || 4;
+      const ligne = r[tk].find((l) => l.nb === base || l.patons === base) || r[tk][0];
+      const pc = ligne && calculerPrixCaloriesRecette(ligne);
+      if (!pc) return "";
+      const parts = [];
+      if (pc.prix != null) parts.push("💰 " + (pc.prix / base).toFixed(2).replace(".", ",") + " €");
+      if (pc.cal != null) parts.push("🔥 " + Math.round(pc.cal / base) + " kcal");
+      return parts.join("  ·  ");
     } catch (e) { return ""; }
   }
 
@@ -108,6 +128,7 @@
       <div class="swipe-cap">
         <span class="swipe-nom">${dra}<span class="swipe-emoji">${r.emoji || "🍽️"}</span> ${nom}</span>
         <span class="swipe-meta">${meta}</span>
+        ${(() => { const pc = prixCalLigne(key); return pc ? `<span class="swipe-meta swipe-prixcal">${pc}</span>` : ""; })()}
       </div>`;
   }
 
@@ -232,7 +253,8 @@
       .swipe-cap{position:absolute;left:18px;right:18px;bottom:18px;color:#fff;z-index:3}
       .swipe-nom{display:block;font-size:23px;font-weight:800;line-height:1.18;text-shadow:0 2px 8px rgba(0,0,0,.6);font-family:system-ui,sans-serif}
       .swipe-meta{display:block;font-size:14px;opacity:.95;margin-top:6px;text-shadow:0 1px 4px rgba(0,0,0,.6)}
-      .swipe-nutri{position:absolute;top:14px;left:14px;z-index:3}
+      .swipe-prixcal{margin-top:3px;font-weight:600;opacity:1}
+      .swipe-nutri{position:absolute;top:14px;left:14px;right:auto;z-index:11}
       .swipe-yes,.swipe-no{position:absolute;top:20px;z-index:3;font-size:46px;opacity:0;transition:opacity .1s;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
       .swipe-yes{right:20px}.swipe-no{left:20px}
       .swipe-card.vers-oui .swipe-yes{opacity:1}.swipe-card.vers-non .swipe-no{opacity:1}
