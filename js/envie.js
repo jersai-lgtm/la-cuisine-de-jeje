@@ -96,11 +96,12 @@
       .envie-chip:hover{background:rgba(var(--accent-rgb),.15)}
       #envie-modal{position:fixed;inset:0;z-index:9050;background:rgba(0,0,0,.6);display:flex;align-items:flex-end;justify-content:center}
       #envie-modal .envie-sheet{background:var(--panel-solid,#1a1a2e);color:var(--text);border-top-left-radius:20px;border-top-right-radius:20px;
-        width:100%;max-width:560px;max-height:86vh;display:flex;flex-direction:column;font-family:system-ui,sans-serif}
+        width:100%;max-width:560px;max-height:86vh;display:flex;flex-direction:column;font-family:system-ui,sans-serif;overflow:hidden}
+      #envie-modal #jr-root{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
       #envie-modal .envie-sheet-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 8px}
       #envie-modal .envie-sheet-head h2{margin:0;font-size:18px}
       #envie-modal .envie-x{background:rgba(var(--w),.1);color:var(--text);border:none;border-radius:50%;width:34px;height:34px;font-size:15px;cursor:pointer}
-      #envie-modal .envie-grid{overflow:auto;padding:6px 14px 20px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+      #envie-modal .envie-grid{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:6px 14px 20px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
       /* Cartes en grille (et non en rangée scroll) → image plus haute, pas une bande fine.
          VRAIE cause de l'effet « écrasé » : .mini-carte a overflow:hidden, ce qui fait
          collapser la track auto de la grille à la hauteur du seul texte (~40px) → l'image
