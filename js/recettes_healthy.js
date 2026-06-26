@@ -955,7 +955,7 @@ Object.assign(recettes, {
   pokebowlsaumon: {
     nom: "Poke Bowl au Saumon",
     dateAjout: "2026-06-06T11:54:00",
-    cat: "healthy", pays: "hawai",
+    cat: "healthy", pays: "hawaii",
     base: 4,
     temps: "25 min",
     niveau: "⭐ Facile",

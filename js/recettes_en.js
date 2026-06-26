@@ -1630,41 +1630,7 @@ window.RECETTES_EN = {
     "detail": "Serve immediately, very hot, with the sweet and sour sauce on the side."
    }
   ]
- },
- "bricksoeuf": {
-  "nom": "Bricks with Egg",
-  "description": "The famous Tunisian brick: a crispy pastry sheet filled with a runny egg yolk, tuna, and herbs, pan-fried until golden. Enjoy immediately.",
-  "etapes": [
-   {
-    "titre": "Filling",
-    "detail": "Mash the cooked potato with the crumbled tuna, parsley, salt, and pepper."
-   },
-   {
-    "titre": "Prepare the sheet",
-    "detail": "Lay the brick sheet flat, place the filling in the center forming a small well."
-   },
-   {
-    "titre": "The egg",
-    "detail": "Crack an egg into the well of filling, season with salt and pepper."
-   },
-   {
-    "titre": "Fold",
-    "detail": "Fold the sheet into a triangle or purse shape, sealing the edges well. CHEF'S TIP: work quickly and with a non-moistened sheet, otherwise the brick will stick and tear when folding."
-   },
-   {
-    "titre": "Golden fry",
-    "detail": "Fry the brick in a little hot oil until it is golden and crispy."
-   },
-   {
-    "titre": "Drain",
-    "detail": "Drain briefly on paper towels."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve immediately with a wedge of lemon: the yolk should still run."
-   }
-  ]
- },
+ },
  "lumpia": {
   "nom": "Lumpia",
   "description": "Filipino fried spring rolls: a delicate wrapper filled with ground pork and finely chopped vegetables, rolled tight and fried until crispy. Served with a sweet and sour dipping sauce.",

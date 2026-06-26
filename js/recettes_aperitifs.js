@@ -1298,45 +1298,7 @@ tapenade: {
       { icone: "💧", titre: "Égoutter", detail: "Égoutter sur papier absorbant.", badge: "⏱ 1 min" },
       { icone: "🍅", titre: "Servir", detail: "Servir aussitôt avec la sauce tomate chaude, pour profiter du fromage filant.", badge: null }
     ]
-  },
-  bricksoeuf: {
-    nom: "Bricks à l'Œuf",
-    cat: "aperitifs",
-    pays: "tunisie",
-    dateAjout: "2026-06-07T22:16:00",
-    base: 4,
-    temps: "25 min",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🥟",
-    description: "La fameuse brick tunisienne : une feuille croustillante renfermant un œuf au jaune coulant, du thon et des herbes, dorée à la poêle. À déguster sans attendre.",
-    tableauBricksOeuf: [
-      { nb: 1, feuillebrick: "1 feuille", oeuf: "1", thon: "20 g", pommedeterre: "30 g", persil: "selon envie", citron: "1", sel: "1 g" },
-      { nb: 2, feuillebrick: "2 feuilles", oeuf: "2", thon: "40 g", pommedeterre: "60 g", persil: "selon envie", citron: "1", sel: "1 g" },
-      { nb: 3, feuillebrick: "3 feuilles", oeuf: "3", thon: "60 g", pommedeterre: "90 g", persil: "selon envie", citron: "1", sel: "1 g" },
-      { nb: 4, feuillebrick: "4 feuilles", oeuf: "4", thon: "80 g", pommedeterre: "120 g", persil: "selon envie", citron: "1", sel: "1 g" },
-      { nb: 5, feuillebrick: "5 feuilles", oeuf: "5", thon: "100 g", pommedeterre: "150 g", persil: "selon envie", citron: "1", sel: "1 g" },
-      { nb: 6, feuillebrick: "6 feuilles", oeuf: "6", thon: "120 g", pommedeterre: "180 g", persil: "selon envie", citron: "1", sel: "2 g" },
-      { nb: 7, feuillebrick: "7 feuilles", oeuf: "7", thon: "140 g", pommedeterre: "210 g", persil: "selon envie", citron: "1", sel: "2 g" },
-      { nb: 8, feuillebrick: "8 feuilles", oeuf: "8", thon: "160 g", pommedeterre: "240 g", persil: "selon envie", citron: "1", sel: "2 g" },
-      { nb: 9, feuillebrick: "9 feuilles", oeuf: "9", thon: "180 g", pommedeterre: "270 g", persil: "selon envie", citron: "1", sel: "2 g" },
-      { nb: 10, feuillebrick: "10 feuilles", oeuf: "10", thon: "200 g", pommedeterre: "300 g", persil: "selon envie", citron: "2", sel: "2 g" },
-      { nb: 11, feuillebrick: "11 feuilles", oeuf: "11", thon: "220 g", pommedeterre: "330 g", persil: "selon envie", citron: "2", sel: "3 g" },
-      { nb: 12, feuillebrick: "12 feuilles", oeuf: "12", thon: "240 g", pommedeterre: "360 g", persil: "selon envie", citron: "2", sel: "3 g" },
-      { nb: 13, feuillebrick: "13 feuilles", oeuf: "13", thon: "260 g", pommedeterre: "390 g", persil: "selon envie", citron: "2", sel: "3 g" },
-      { nb: 14, feuillebrick: "14 feuilles", oeuf: "14", thon: "280 g", pommedeterre: "420 g", persil: "selon envie", citron: "2", sel: "3 g" },
-      { nb: 15, feuillebrick: "15 feuilles", oeuf: "15", thon: "300 g", pommedeterre: "450 g", persil: "selon envie", citron: "2", sel: "3 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥔", titre: "Garniture", detail: "Écraser la pomme de terre cuite avec le thon émietté, le persil, sel et poivre.", badge: "⏱ 8 min" },
-      { icone: "📐", titre: "Préparer la feuille", detail: "Poser la feuille de brick à plat, déposer la garniture au centre en formant un petit puits.", badge: "⏱ 3 min" },
-      { icone: "🥚", titre: "L'œuf", detail: "Casser un œuf dans le puits de garniture, saler et poivrer.", badge: "⏱ 2 min" },
-      { icone: "🔺", titre: "Plier", detail: "Replier la feuille en triangle ou en aumônière en soudant bien les bords. ASTUCE CHEF : travailler vite et avec une feuille non humidifiée, sinon la brick colle et se déchire au pliage.", badge: "⏱ 3 min" },
-      { icone: "🔥", titre: "Dorer", detail: "Frire la brick dans un peu d'huile chaude jusqu'à ce qu'elle soit dorée et croustillante.", badge: "⏱ 4 min" },
-      { icone: "💧", titre: "Égoutter", detail: "Égoutter brièvement sur papier absorbant.", badge: "⏱ 1 min" },
-      { icone: "🍋", titre: "Servir", detail: "Servir aussitôt avec un quartier de citron : le jaune doit encore couler.", badge: null }
-    ]
-  },
+  },
   coxinha: {
     nom: "Coxinha",
     cat: "aperitifs",
