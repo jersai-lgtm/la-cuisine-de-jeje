@@ -31,9 +31,15 @@
 
   // Niveaux d'activité → multiplicateur du métabolisme de base (pour le TDEE).
   const ACTIVITES = {
-    sedentaire: { fr: "Sédentaire", en: "Sedentary", e: "🛋️", pal: 1.2 },
-    actif: { fr: "Actif", en: "Active", e: "🚶", pal: 1.55 },
-    sportif: { fr: "Sportif", en: "Athletic", e: "🏃", pal: 1.8 },
+    sedentaire: { fr: "Sédentaire", en: "Sedentary", e: "🛋️", pal: 1.2,
+      desc: "Peu ou pas de sport, travail assis, peu de marche dans la journée.",
+      descEn: "Little or no exercise, desk job, not much walking during the day." },
+    actif: { fr: "Actif", en: "Active", e: "🚶", pal: 1.55,
+      desc: "Exercice modéré : 1 à 3 séances par semaine, ou beaucoup de marche au quotidien.",
+      descEn: "Moderate exercise: 1 to 3 sessions a week, or lots of daily walking." },
+    sportif: { fr: "Sportif", en: "Athletic", e: "🏃", pal: 1.8,
+      desc: "Sport intense : 4 à 6 séances ou plus par semaine, ou métier physique.",
+      descEn: "Intense training: 4 to 6+ sessions a week, or a physical job." },
   };
 
   // Métabolisme de base (Mifflin-St Jeor) — kcal au repos.
@@ -209,6 +215,7 @@
         '<input type="range" id="obj-age" min="14" max="90" step="1" value="' + ageStart + '" style="width:100%;accent-color:var(--accent);height:6px;cursor:pointer">' +
         '<p style="color:var(--text-2);font-size:13px;margin:14px 0 6px">' + T("Mon activité", "My activity") + "</p>" +
         '<div style="display:flex;flex-wrap:wrap;gap:8px">' + btnA + "</div>" +
+        '<div id="obj-act-desc" style="margin-top:7px;font-size:12.5px;color:var(--text-2);line-height:1.45;background:rgba(var(--w),.05);border-radius:9px;padding:8px 11px"></div>' +
         '<div id="obj-suggestion" style="margin-top:12px;background:rgba(var(--accent-rgb),.1);border:1px solid rgba(var(--accent-rgb),.3);border-radius:12px;padding:11px 13px">' +
           '<div id="obj-sugg-text" style="font-size:13px;color:var(--text);line-height:1.5"></div>' +
           '<button type="button" id="obj-sugg-use" class="obj-cta" style="margin-top:9px;display:none">' + T("Utiliser ces calories", "Use these calories") + "</button></div>" +
@@ -267,7 +274,10 @@
     // But
     modal.querySelectorAll(".obj-f").forEach((b) => b.addEventListener("click", () => { selF = b.dataset.focus; modal.querySelectorAll(".obj-f").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); recompute(); }));
     // Activité
-    modal.querySelectorAll(".obj-act").forEach((b) => b.addEventListener("click", () => { selA = b.dataset.act; modal.querySelectorAll(".obj-act").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); recompute(); }));
+    const actDescEl = modal.querySelector("#obj-act-desc");
+    const majActDesc = () => { const a = ACTIVITES[selA]; if (actDescEl && a) actDescEl.innerHTML = a.e + " <b>" + T(a.fr, a.en) + "</b> — " + T(a.desc, a.descEn); };
+    majActDesc();
+    modal.querySelectorAll(".obj-act").forEach((b) => b.addEventListener("click", () => { selA = b.dataset.act; modal.querySelectorAll(".obj-act").forEach((x) => x.style.cssText = chip(false)); b.style.cssText = chip(true); majActDesc(); recompute(); }));
     // Poids
     const setP = (v) => { selP = Math.max(40, Math.min(150, Math.round(v))); pRange.value = selP; pVal.textContent = selP; recompute(); };
     pRange.addEventListener("input", () => setP(parseInt(pRange.value) || 40));
