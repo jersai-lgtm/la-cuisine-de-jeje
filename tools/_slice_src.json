@@ -1,0 +1,426 @@
+[
+  {
+    "key": "pizzagreca",
+    "nom": "Pizza Grecque",
+    "description": "Un air de Méditerranée : tomate, mozzarella, feta émiettée, olives et oignon rouge. Fraîche, ensoleillée et facile à faire.",
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "detail": "Préchauffez le four à 250°C (idéalement avec une pierre ou une plaque dedans) pour saisir la pâte instantanément."
+      },
+      {
+        "titre": "Préparer",
+        "detail": "Émincez l'oignon rouge en fines lamelles, dénoyautez et coupez les olives en deux, émiettez la feta et tranchez la mozzarella."
+      },
+      {
+        "titre": "Étaler",
+        "detail": "Abaissez la pâte finement, nappez d'une couche régulière de tomates concassées en laissant un bord de 1 cm."
+      },
+      {
+        "titre": "Garnir",
+        "detail": "Répartissez la mozzarella, les olives et l'oignon rouge sur toute la surface, sans surcharger pour garder la pâte croustillante."
+      },
+      {
+        "titre": "Cuire",
+        "detail": "Enfournez à 250°C pendant 8 à 10 min jusqu'à ce que les bords gonflent et dorent et que le fromage soit fondu."
+      },
+      {
+        "titre": "Feta",
+        "detail": "À mi-cuisson (vers 5 min), ajoutez la feta émiettée : juste réchauffée elle reste crémeuse, trop cuite elle dessèche."
+      },
+      {
+        "titre": "Finir",
+        "detail": "À la sortie du four, saupoudrez d'origan séché et versez un filet d'huile d'olive avant de servir bien chaude."
+      }
+    ]
+  },
+  {
+    "key": "pizzapollobbq",
+    "nom": "Pizza Poulet BBQ",
+    "description": "La pizza américaine gourmande : poulet, oignon rouge et maïs sur une base barbecue fumée. Sucrée-salée et généreuse.",
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "detail": "Préchauffez le four à 250°C avec la plaque à l'intérieur pour obtenir une base croustillante."
+      },
+      {
+        "titre": "Poulet BBQ",
+        "detail": "Coupez le poulet cuit en dés et enrobez-le d'un peu de sauce barbecue pour qu'il soit bien nappé et brillant."
+      },
+      {
+        "titre": "Préparer",
+        "detail": "Émincez finement l'oignon rouge, égouttez le maïs et ciselez la coriandre fraîche que vous réservez de côté."
+      },
+      {
+        "titre": "Étaler",
+        "detail": "Abaissez la pâte et badigeonnez-la d'une fine couche de sauce barbecue en base : trop épaisse, elle brûle et sucre trop."
+      },
+      {
+        "titre": "Garnir",
+        "detail": "Répartissez la mozzarella, les dés de poulet, l'oignon rouge et le maïs uniformément sur la pâte."
+      },
+      {
+        "titre": "Cuire",
+        "detail": "Enfournez à 250°C pendant 10 à 12 min jusqu'à ce que les bords soient dorés et le fromage fondu et grésillant."
+      },
+      {
+        "titre": "Finir",
+        "detail": "Parsemez de coriandre fraîche ciselée à la sortie du four, ajoutez un filet d'huile d'olive et servez aussitôt."
+      }
+    ]
+  },
+  {
+    "key": "courgettesfarcies",
+    "nom": "Courgettes farcies",
+    "description": "Des courgettes évidées et garnies d'un riz parfumé aux tomates, oignon et basilic, gratinées au parmesan. Un plat d'été complet et coloré.",
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "detail": "Préchauffez le four à 190°C et faites cuire le riz à l'eau salée s'il ne l'est pas déjà, puis réservez-le."
+      },
+      {
+        "titre": "Évider",
+        "detail": "Coupez les courgettes en deux dans la longueur et évidez-les à la cuillère en gardant 5 mm de chair sur les parois."
+      },
+      {
+        "titre": "Revenir",
+        "detail": "Faites suer l'oignon et l'ail hachés dans l'huile d'olive 4 min à feu moyen jusqu'à ce qu'ils deviennent translucides."
+      },
+      {
+        "titre": "Garniture",
+        "detail": "Ajoutez la chair de courgette hachée et les tomates concassées, laissez réduire 8 min, puis incorporez le riz cuit et le basilic ciselé."
+      },
+      {
+        "titre": "Farcir",
+        "detail": "Disposez les demi-courgettes dans un plat, garnissez-les de la farce bien tassée et parsemez de parmesan râpé."
+      },
+      {
+        "titre": "Cuire",
+        "detail": "Arrosez d'un filet d'huile d'olive et enfournez 30 à 35 min à 190°C jusqu'à ce que les courgettes soient tendres et gratinées."
+      },
+      {
+        "titre": "Servir",
+        "detail": "Laissez tiédir 5 min, ajoutez quelques feuilles de basilic frais et servez avec une salade verte."
+      }
+    ]
+  },
+  {
+    "key": "pouletcitronthym",
+    "nom": "Poulet Citron & Thym",
+    "description": "Filets de poulet dorés au citron et thym frais, accompagnés de pommes de terre rôties et haricots verts croquants.",
+    "etapes": [
+      {
+        "titre": "Préchauffer",
+        "detail": "Préchauffez le four à 200°C, coupez les pommes de terre en quartiers et enrobez-les d'huile, sel, poivre et thym."
+      },
+      {
+        "titre": "Rôtir",
+        "detail": "Étalez les pommes de terre sur une plaque et enfournez 25 à 30 min en les retournant à mi-cuisson pour qu'elles dorent partout."
+      },
+      {
+        "titre": "Assaisonner",
+        "detail": "Aplatissez légèrement les filets de poulet et assaisonnez-les de sel, poivre, zeste de citron et thym frais."
+      },
+      {
+        "titre": "Saisir",
+        "detail": "Dans une poêle chaude avec huile et beurre, cuisez les filets 4 à 5 min de chaque côté jusqu'à belle dorure, puis déglacez au jus de citron."
+      },
+      {
+        "titre": "Haricots",
+        "detail": "Blanchissez les haricots verts 4 min à l'eau bouillante salée, égouttez-les et faites-les sauter avec une noix de beurre et du sel."
+      },
+      {
+        "titre": "Sauce",
+        "detail": "Dans la même poêle, ajoutez la crème et le reste de jus de citron, laissez réduire 2 min jusqu'à ce que la sauce nappe la cuillère."
+      },
+      {
+        "titre": "Dresser",
+        "detail": "Disposez le poulet nappé de sauce avec les pommes de terre et les haricots, et servez bien chaud."
+      }
+    ]
+  },
+  {
+    "key": "salmonteriyaki",
+    "nom": "Saumon Teriyaki",
+    "description": "Pavés de saumon glacés à la sauce teriyaki maison, servis avec riz à sushi et edamame. Une recette japonaise accessible.",
+    "etapes": [
+      {
+        "titre": "Cuire le riz",
+        "detail": "Rincez le riz puis cuisez-le dans 1,5 fois son volume d'eau froide : à ébullition, baissez à feu doux, couvrez et laissez absorber 12 min."
+      },
+      {
+        "titre": "Sauce",
+        "detail": "Mélangez la sauce soja, le miel, le gingembre râpé et 1 c.à.c de fécule diluée pour préparer le glaçage teriyaki."
+      },
+      {
+        "titre": "Edamame",
+        "detail": "Faites cuire les edamame 4 min à l'eau bouillante salée, égouttez et réservez-les au chaud."
+      },
+      {
+        "titre": "Saisir",
+        "detail": "Dans une poêle bien chaude, cuisez les pavés de saumon côté peau 3 min, retournez et poursuivez 2 min en gardant le cœur rosé."
+      },
+      {
+        "titre": "Glacer",
+        "detail": "Versez la sauce teriyaki sur le saumon et laissez caraméliser 1 à 2 min en l'arrosant, en surveillant la teinte ambrée pour éviter l'amertume."
+      },
+      {
+        "titre": "Dresser",
+        "detail": "Disposez le saumon glacé sur le riz avec les edamame autour, et nappez du reste de sauce."
+      },
+      {
+        "titre": "Servir",
+        "detail": "Parsemez de graines de sésame grillées et de ciboule émincée, puis servez aussitôt."
+      }
+    ]
+  },
+  {
+    "key": "tacosmaison",
+    "nom": "Tacos Maison",
+    "description": "Tacos mexicains maison — bœuf épicé, guacamole frais, pico de gallo et crème sure. Un festin coloré et convivial.",
+    "etapes": [
+      {
+        "titre": "Épicer",
+        "detail": "Mélangez cumin, paprika fumé, origan, piment doux, ail en poudre et sel, puis enrobez le bœuf haché de ce mélange."
+      },
+      {
+        "titre": "Cuire",
+        "detail": "Faites revenir le bœuf épicé dans une poêle chaude 6 à 8 min jusqu'à belle coloration, puis ajoutez un filet de jus de citron vert."
+      },
+      {
+        "titre": "Guacamole",
+        "detail": "Écrasez l'avocat à la fourchette avec du jus de citron vert, du sel et un peu d'oignon pour une texture grossière."
+      },
+      {
+        "titre": "Pico de gallo",
+        "detail": "Mélangez les tomates en petits dés, l'oignon émincé, du jus de citron vert et du sel pour une salsa fraîche."
+      },
+      {
+        "titre": "Tortillas",
+        "detail": "Réchauffez les tortillas à sec dans une poêle chaude 30 secondes par face jusqu'à ce qu'elles soient souples et légèrement dorées."
+      },
+      {
+        "titre": "Assembler",
+        "detail": "Garnissez chaque tortilla de bœuf, de guacamole, de pico de gallo et de fromage râpé."
+      },
+      {
+        "titre": "Servir",
+        "detail": "Pliez les tacos et dégustez-les immédiatement avec un quartier de citron vert à presser."
+      }
+    ]
+  },
+  {
+    "key": "padthai",
+    "nom": "Pad Thaï",
+    "description": "Le pad thaï authentique — nouilles de riz sautées aux crevettes, tofu, œufs et sauce tamarin. La recette street food thaïlandaise.",
+    "etapes": [
+      {
+        "titre": "Tremper",
+        "detail": "Faites tremper les nouilles de riz dans l'eau froide 30 min, ou cuisez-les al dente, puis égouttez-les."
+      },
+      {
+        "titre": "Sauce",
+        "detail": "Mélangez sauce poisson, tamarin, sucre et jus de citron, goûtez et ajustez l'équilibre sucré-salé-acide."
+      },
+      {
+        "titre": "Préparer",
+        "detail": "Coupez le tofu en cubes, décortiquez les crevettes et concassez grossièrement les cacahuètes que vous réservez."
+      },
+      {
+        "titre": "Sauter",
+        "detail": "Dans un wok très chaud avec huile, faites dorer le tofu 3 min, ajoutez les crevettes et cuisez 2 min jusqu'à ce qu'elles rosissent."
+      },
+      {
+        "titre": "Œufs",
+        "detail": "Poussez le tout sur le côté, cassez les œufs dans le wok et brouillez-les rapidement avant de tout mélanger."
+      },
+      {
+        "titre": "Sauter",
+        "detail": "Ajoutez les nouilles et la sauce, sautez à feu vif 2 à 3 min en mélangeant pour bien les enrober."
+      },
+      {
+        "titre": "Servir",
+        "detail": "Servez aussitôt parsemé de cacahuètes concassées, avec un quartier de citron vert à presser."
+      }
+    ]
+  },
+  {
+    "key": "currypouletcoco",
+    "nom": "Curry Poulet Coco",
+    "description": "Curry de poulet au lait de coco thaïlandais — onctueux, parfumé et légèrement épicé. Servir avec du riz jasmin.",
+    "etapes": [
+      {
+        "titre": "Cuire le riz",
+        "detail": "Rincez le riz jasmin puis cuisez-le dans 1,5 fois son volume d'eau : à ébullition, couvrez et laissez à feu doux 12 min jusqu'à absorption."
+      },
+      {
+        "titre": "Préparer",
+        "detail": "Coupez le poulet en morceaux réguliers et lavez les épinards frais que vous réservez de côté."
+      },
+      {
+        "titre": "Pâte curry",
+        "detail": "Dans une casserole, faites revenir la pâte de curry avec un filet d'huile 1 min pour libérer ses arômes."
+      },
+      {
+        "titre": "Coco",
+        "detail": "Versez le lait de coco, mélangez avec la pâte et laissez frémir 2 min pour obtenir une sauce homogène."
+      },
+      {
+        "titre": "Mijoter",
+        "detail": "Ajoutez le poulet et laissez mijoter à feu moyen 12 à 15 min, couvercle entrouvert, jusqu'à cuisson complète."
+      },
+      {
+        "titre": "Épinards",
+        "detail": "Incorporez les épinards, laissez-les fondre 2 min, puis assaisonnez avec du jus de citron vert et ajustez le sel."
+      },
+      {
+        "titre": "Servir",
+        "detail": "Servez le curry bien chaud sur le riz jasmin, parsemé de coriandre fraîche."
+      }
+    ]
+  },
+  {
+    "key": "burgermaison",
+    "nom": "Burger Maison",
+    "description": "Le burger maison parfait — steak haché juteux, sauce burger maison, cheddar fondu et légumes frais.",
+    "etapes": [
+      {
+        "titre": "Former",
+        "detail": "Mélangez la viande hachée avec sel, poivre et une pincée de paprika, façonnez des steaks de 150 g et creusez le centre au pouce."
+      },
+      {
+        "titre": "Préparer",
+        "detail": "Lavez la salade, tranchez les tomates en rondelles et coupez le cheddar en tranches que vous réservez."
+      },
+      {
+        "titre": "Cuire",
+        "detail": "Sur une poêle ou un grill très chaud, saisissez les steaks 3 min sans y toucher, retournez et poursuivez 2 min."
+      },
+      {
+        "titre": "Fondre",
+        "detail": "Posez une tranche de cheddar sur chaque steak et couvrez 1 min pour la faire fondre uniformément."
+      },
+      {
+        "titre": "Toaster",
+        "detail": "Coupez les buns en deux et toastez-les côté mie dans la poêle avec un peu de beurre jusqu'à ce qu'ils dorent."
+      },
+      {
+        "titre": "Assembler",
+        "detail": "Garnissez le bun du bas de salade, tomate et steak au cheddar, puis refermez avec le chapeau toasté."
+      },
+      {
+        "titre": "Servir",
+        "detail": "Servez le burger aussitôt, accompagné de frites maison croustillantes."
+      }
+    ]
+  },
+  {
+    "key": "couscous",
+    "nom": "Couscous Royal",
+    "description": "Le couscous royal marocain — semoule parfumée, légumes mijotés, merguez et poulet dans un bouillon épicé.",
+    "etapes": [
+      {
+        "titre": "Préparer",
+        "detail": "Émincez l'oignon et l'ail, épluchez et coupez carottes et courgettes en gros tronçons, et découpez le poulet en morceaux."
+      },
+      {
+        "titre": "Bouillon",
+        "detail": "Dans la couscoussière, faites revenir oignon, ail, gingembre et épices (cumin, curcuma, cannelle), ajoutez le poulet et faites-le dorer 8 min."
+      },
+      {
+        "titre": "Légumes",
+        "detail": "Ajoutez carottes, courgettes et pois chiches, couvrez d'eau et laissez mijoter 35 à 40 min à feu doux."
+      },
+      {
+        "titre": "Merguez",
+        "detail": "Faites griller les merguez à la poêle bien chaude 6 à 8 min jusqu'à une belle coloration uniforme."
+      },
+      {
+        "titre": "Semoule",
+        "detail": "Versez la semoule dans un plat, couvrez-la de 1,5 fois son volume d'eau bouillante salée et d'un filet d'huile, laissez gonfler 5 min puis égrainez au beurre."
+      },
+      {
+        "titre": "Harissa",
+        "detail": "Prélevez une louche de bouillon et délayez-y de la harissa pour proposer une sauce épicée à part."
+      },
+      {
+        "titre": "Servir",
+        "detail": "Dressez la semoule, disposez les viandes et légumes par-dessus et servez avec le bouillon parfumé à la cannelle."
+      }
+    ]
+  },
+  {
+    "key": "moussaka",
+    "nom": "Moussaka",
+    "description": "La moussaka grecque authentique — aubergines dorées, viande hachée épicée à la cannelle et béchamel crémeuse gratinée.",
+    "etapes": [
+      {
+        "titre": "Dégorger aubergines",
+        "detail": "Couper les aubergines en tranches de 1 cm, les saler et les laisser dégorger 20 min sur du papier absorbant, puis rincer et sécher pour retirer l'amertume."
+      },
+      {
+        "titre": "Dorer aubergines",
+        "detail": "Badigeonner les tranches d'huile d'olive et les faire dorer à la poêle ou au four à 200°C pendant 15 min jusqu'à coloration de chaque face, puis réserver."
+      },
+      {
+        "titre": "Sauce viande",
+        "detail": "Faire revenir l'oignon et l'ail émincés à l'huile d'olive, ajouter la viande hachée et la saisir, puis incorporer les tomates concassées, la cannelle, le sel et le poivre."
+      },
+      {
+        "titre": "Mijoter",
+        "detail": "Laisser mijoter la sauce à feu doux 25 min à découvert pour qu'elle réduise et concentre ses saveurs, en remuant de temps en temps."
+      },
+      {
+        "titre": "Béchamel",
+        "detail": "Préparer une béchamel épaisse, la retirer du feu puis y incorporer un jaune d'œuf et une grande partie du parmesan râpé pour la rendre nappante."
+      },
+      {
+        "titre": "Monter",
+        "detail": "Dans un plat beurré, alterner une couche d'aubergines, la sauce à la viande, une seconde couche d'aubergines puis napper de béchamel et parsemer du parmesan restant."
+      },
+      {
+        "titre": "Gratiner",
+        "detail": "Enfourner à 180°C pendant 35 min jusqu'à ce que la surface soit bien dorée et gratinée."
+      },
+      {
+        "titre": "Servir",
+        "detail": "Laisser reposer 15 min hors du four avant de couper en parts nettes, étape essentielle pour que la moussaka se tienne à la découpe."
+      }
+    ]
+  },
+  {
+    "key": "paella",
+    "nom": "Paella",
+    "description": "La paella valenciana — riz safrané aux fruits de mer, poulet et chorizo. Le plat festif espagnol par excellence.",
+    "etapes": [
+      {
+        "titre": "Saisir viandes",
+        "detail": "Dans la paellera, faire dorer les morceaux de poulet et les rondelles de chorizo dans l'huile d'olive à feu vif environ 8 min, puis réserver."
+      },
+      {
+        "titre": "Sofrito",
+        "detail": "Dans la même huile, faire revenir l'ail haché et les tomates concassées 5 min à feu moyen pour former une base parfumée."
+      },
+      {
+        "titre": "Nacrer le riz",
+        "detail": "Ajouter le riz et le remuer 2 min pour qu'il devienne translucide et s'imprègne des sucs de cuisson."
+      },
+      {
+        "titre": "Mouiller",
+        "detail": "Verser l'eau chaude infusée de safran à hauteur du double du volume de riz, répartir le poulet et le chorizo, puis ne plus jamais remuer."
+      },
+      {
+        "titre": "Fruits de mer",
+        "detail": "À mi-cuisson, vers 10 min, disposer les crevettes et les moules sur le riz et poursuivre la cuisson à feu moyen jusqu'à absorption du liquide."
+      },
+      {
+        "titre": "Socarrat",
+        "detail": "En fin de cuisson, monter le feu 1 à 2 min pour caraméliser le fond du riz et former le socarrat, cette croûte dorée et croustillante."
+      },
+      {
+        "titre": "Servir",
+        "detail": "Couvrir d'un linge et laisser reposer 5 min, puis servir directement dans la paellera avec des quartiers de citron."
+      }
+    ]
+  }
+]

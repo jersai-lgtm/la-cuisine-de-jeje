@@ -3,519 +3,4249 @@
 window.RECETTES_EN = {
  "verrineconcombrechevre": {
   "nom": "Cucumber & Fresh Goat Cheese Verrine",
-  "description": "A fresh, creamy aperitif verrine: a minty fresh-goat-cheese mousse topped with crunchy cucumber. Light, elegant and ready in 15 minutes."
+  "description": "A fresh, creamy appetizer verrine: a minted fresh goat cheese mousse topped with crunchy cucumber. Light, elegant and ready in 15 minutes.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Wash the cucumber, cut it in half, seed it if needed and cut it into small, crunchy dice."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Finely chop the mint and chives, and juice the lemon, setting aside the juice."
+   },
+   {
+    "titre": "Mousse",
+    "detail": "Beat the fresh goat cheese with the fromage blanc, mint and lemon juice until you get a smooth, airy mousse."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper the mousse, then dress the cucumber dice with a drizzle of olive oil and a pinch of salt."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Just before serving, spoon the goat cheese mousse into the bottom of the verrines and top with the cucumber dice."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Drizzle with olive oil, scatter with chives and add a turn of the pepper mill."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the verrines well chilled as a light starter or a summery appetizer."
+   }
+  ]
  },
  "soupefroidemelon": {
   "nom": "Chilled Melon Soup",
-  "description": "A refreshing sweet-savory starter: ripe melon blended, brightened with mint and lemon, topped with a little cured ham. Elegant and summery."
+  "description": "A refreshing sweet-savory starter: ripe melon blended, brightened with mint and lemon, topped with a little cured ham. Elegant and summery.",
+  "etapes": [
+   {
+    "titre": "Choose",
+    "detail": "Choose a ripe, fragrant melon, cut it open, remove the seeds and scoop out the flesh."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Peel and chop the cucumber, then pick the mint leaves."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the melon with the cucumber, mint and lemon juice until you get a perfectly smooth soup."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add a drizzle of olive oil while blending and adjust the seasoning with a pinch of salt."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate the soup for at least 1 hr to serve it nicely cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour into chilled bowls, arrange prosciutto shavings on top and finish with a drizzle of olive oil."
+   }
+  ]
  },
  "gaspachopasteque": {
   "nom": "Watermelon Gazpacho",
-  "description": "A vivid red, thirst-quenching gazpacho: watermelon and tomato blended with cucumber, pepper and basil. Spanish freshness with a fruity twist."
+  "description": "A vivid red, thirst-quenching gazpacho: watermelon and tomato blended with cucumber, bell pepper and basil. Spanish freshness with a fruity twist.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Remove the rind and seeds from the watermelon, then cut it into large chunks."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Cut the tomatoes into wedges, peel and chop the cucumber, then seed and thinly slice the bell pepper."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the watermelon, tomatoes, cucumber and bell pepper for 2 min until you get a smooth liquid."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Add the olive oil and sherry vinegar while blending to emulsify and sharpen the gazpacho."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass the gazpacho through a fine strainer or sieve to remove the fibers and get a smooth texture."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate for 1 hr (or freeze for 30 min) to serve the gazpacho very cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour into chilled glasses and garnish with a few basil leaves before serving."
+   }
+  ]
  },
  "carpacciocourgette": {
   "nom": "Zucchini Carpaccio",
-  "description": "A light raw starter: thin slices of raw zucchini marinated in lemon, scattered with parmesan and pine nuts. Crunchy, fresh and elegant."
+  "description": "A raw, light starter: thin slices of raw zucchini marinated in lemon, scattered with parmesan and pine nuts. Crunchy, fresh and elegant.",
+  "etapes": [
+   {
+    "titre": "Choose",
+    "detail": "Pick small, firm, glossy zucchini, wash and dry them, then trim off both ends."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the zucchini into very thin slices on a mandoline and arrange them in a tight rosette on a large chilled plate."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Drizzle with a splash of lemon juice and olive oil, season lightly with salt and let marinate for 10 min to soften without going soggy."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Toast the pine nuts dry in a skillet for 2 to 3 min over medium heat until golden, stirring, then set them aside."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Scatter parmesan shavings made with a peeler and the still-warm toasted pine nuts over the slices."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add a few chopped mint leaves, a turn of the pepper mill and a final drizzle of olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away, nicely chilled, as a light starter with toasted bread to soak up the fragrant oil."
+   }
+  ]
  },
  "carpacciomelon": {
   "nom": "Melon & Prosciutto Carpaccio",
-  "description": "Melon and ham reimagined as carpaccio: thin slices of melon and prosciutto, arugula and parmesan, a drizzle of oil. Sweet-savory, fresh and chic."
+  "description": "Melon and ham reimagined as carpaccio: thin slices of melon and prosciutto, arugula and parmesan, a drizzle of oil. Sweet-savory, fresh and chic.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Halve the ripe melon, remove the seeds, peel it and cut it into very thin slices."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Lay out the melon slices in a rosette on a chilled plate, overlapping them slightly."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Tuck the prosciutto slices between the melon slices, draping them gently for volume."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Scatter with a few arugula leaves and parmesan shavings made with a peeler."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with lemony olive oil and add a turn of the pepper mill to wake up the sweetness of the melon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, nicely chilled, as an elegant summer starter before the melon releases its juices."
+   }
+  ]
  },
  "carpacciotomate": {
   "nom": "Tomato Carpaccio",
-  "description": "Summer's perfect simplicity: lovely thinly sliced tomatoes, basil, red onion and a good drizzle of olive oil. It all rests on the quality of the tomato."
+  "description": "The perfect simplicity of summer: beautiful tomatoes in thin slices, basil, red onion and a good drizzle of olive oil. It all comes down to the quality of the tomato.",
+  "etapes": [
+   {
+    "titre": "Choose",
+    "detail": "Pick ripe, meaty tomatoes, wash them, remove the stem and pat them dry carefully."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the tomatoes into very thin rounds with a sharp knife and arrange them in a rosette on a plate."
+   },
+   {
+    "titre": "Mince",
+    "detail": "Peel the red onion and slice it into very thin slivers, then scatter them over the tomatoes."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper 5 min before serving, drizzle with olive oil and a few drops of balsamic vinegar."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Scatter with freshly chopped basil leaves to bring a herbaceous freshness."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add a few parmesan shavings made with a peeler and a final turn of the pepper mill."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away at room temperature with country bread to mop up the fragrant juices."
+   }
+  ]
  },
  "tartaretomate": {
   "nom": "Tomato & Avocado Tartare",
-  "description": "A fresh, colorful plant-based tartare: knife-cut tomatoes and avocado, seasoned with red onion, basil and lemon. Light, pretty to plate and full of zing."
+  "description": "A fresh, colorful plant-based tartare: tomatoes and avocado hand-cut with a knife, brightened with red onion, basil and lemon. Light, pretty to plate and full of zest.",
+  "etapes": [
+   {
+    "titre": "Seed",
+    "detail": "Cut the tomatoes into wedges, remove the seeds and juice, then dice them into small, even cubes with a knife."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Halve the avocado, remove the pit, scoop out the flesh and cut it into cubes the same size as the tomatoes."
+   },
+   {
+    "titre": "Mince",
+    "detail": "Peel the red onion and mince it very finely, then chop a few basil leaves."
+   },
+   {
+    "titre": "Season",
+    "detail": "Gently fold together the tomatoes, avocado and onion with the lemon juice, olive oil, salt and pepper."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the tartare rest for 10 min in the fridge so the flavors mingle while keeping the cubes crisp."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Mold with a ring cutter on chilled plates, unmold, scatter with basil and serve nicely chilled."
+   }
+  ]
  },
  "tartaredorade": {
   "nom": "Sea Bream Tartare",
-  "description": "An ultra-fresh raw fish tartare: knife-cut sea bream, lime, avocado and coriander. Briny, melting and refined, perfect for a summer starter."
+  "description": "An ultra-fresh raw fish tartare: hand-cut sea bream, lime, avocado and cilantro. Briny, melt-in-the-mouth and refined, perfect for a summer starter.",
+  "etapes": [
+   {
+    "titre": "Trim",
+    "detail": "Make sure the sea bream is very fresh, remove the skin and bones, then cut it into small, even dice with a knife."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Cut the avocado flesh into fine dice and very finely mince the peeled red onion."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Finely chop the cilantro leaves and juice the lime, setting aside the fresh juice."
+   },
+   {
+    "titre": "Season",
+    "detail": "Just before serving, toss the sea bream with the olive oil, onion, salt and pepper, then add the lime juice at the very last moment."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Keep the tartare and the plating bowls cold so the fish is served nice and cold and translucent."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Mold with a ring cutter along with the avocado, scatter with cilantro and a drizzle of oil, and serve immediately."
+   }
+  ]
  },
  "tiradito": {
-  "nom": "Peruvian Tiradito",
-  "description": "Peru's cousin of sashimi: thin slices of raw fish in a citrusy, spicy leche de tigre. Fresh, sharp and elegant, between ceviche and carpaccio."
+  "nom": "Tiradito Péruvien",
+  "description": "The Peruvian cousin of sashimi: thin slices of raw fish bathed in a zesty, spicy leche de tigre. Fresh, bright and elegant, somewhere between ceviche and carpaccio.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Trim the very fresh sea bream of skin and bones and cut it into thin, even slices, sashimi-style."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Seed the chili, peel the ginger and pick the cilantro leaves for the sauce."
+   },
+   {
+    "titre": "Leche de tigre",
+    "detail": "Blend the lime juice with the chili, ginger, cilantro, olive oil and a pinch of salt into a smooth sauce."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Lay the fish slices out in a fan on well-chilled plates, without overlapping them."
+   },
+   {
+    "titre": "Nap",
+    "detail": "At the last moment, generously spoon the leche de tigre over the slices to coat them without over-marinating."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with a few cilantro leaves and thin rounds of chili, then serve right away, very cold."
+   }
+  ]
  },
  "verrinemelonmozza": {
   "nom": "Melon-Mozzarella Verrine",
-  "description": "A fresh aperitif verrine: melon balls, mozzarella and prosciutto, basil and olive oil. Sweet-savory, colorful and ready in 10 minutes."
+  "description": "A fresh appetizer verrine: melon balls, mozzarella and prosciutto, basil and olive oil. Sweet-savory, colorful and ready in 10 minutes.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the melon in half, scoop out the seeds and use a melon baller to scoop out little balls."
+   },
+   {
+    "titre": "Mozzarella",
+    "detail": "Drain the mozzarella and scoop it into balls with a melon baller, or cut it into small, even dice."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the prosciutto slices into ribbons or form little rosettes for the assembly."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Just before serving, alternate melon balls, mozzarella and prosciutto in the verrines for clean layers."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Drizzle with olive oil, add a few basil leaves and a turn of the pepper mill."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the verrines well chilled as a finger food, with a small spoon on the side."
+   }
+  ]
  },
  "saladepastequeconcombre": {
   "nom": "Watermelon, Cucumber & Feta Salad",
-  "description": "The hydrating salad: crisp watermelon and cucumber, feta and mint, a drizzle of oil and lemon. Sweet-savory, thirst-quenching and spectacularly colorful."
+  "description": "The salad that hydrates: crunchy watermelon and cucumber, feta and mint, with a drizzle of oil and lemon. Sweet-and-savory, refreshing and stunningly colorful.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the watermelon into even cubes, removing the seeds, and cut the cucumber into cubes of the same size."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Crumble the feta into rough pieces and finely chop the fresh mint leaves."
+   },
+   {
+    "titre": "Dressing",
+    "detail": "Mix the olive oil and lemon juice, season lightly with pepper and go easy on the salt since the feta is already salty."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Gently combine the watermelon, cucumber, feta and mint in a salad bowl."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with the dressing at the very last moment to keep the watermelon and cucumber from releasing their water."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve very cold as a refreshing summer starter."
+   }
+  ]
  },
  "saladeriznicoise": {
   "nom": "Niçoise Rice Salad",
-  "description": "The niçoise in rice form, perfect for a picnic: rice, tuna, egg, tomatoes, olives and pepper, all vinaigrette-dressed. Complete, portable and sunny."
+  "description": "The Niçoise made with rice, perfect for a picnic: rice, tuna, egg, tomatoes, olives and bell pepper, all dressed in vinaigrette. Complete, portable and full of sunshine.",
+  "etapes": [
+   {
+    "titre": "Cook the rice",
+    "detail": "Cook the rice in plenty of salted water for 15 min, drain it, then spread it out on a platter to cool."
+   },
+   {
+    "titre": "Hard-boiled eggs",
+    "detail": "Drop the eggs into boiling water for 9 min, cool them under cold water, peel them and cut into wedges."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Dice the tomatoes, cut the bell pepper into thin strips, pit the olives and roughly flake the drained tuna."
+   },
+   {
+    "titre": "Season the rice",
+    "detail": "Make a vinaigrette with olive oil, salt and pepper, and fold it into the still-warm rice so it soaks it up fully."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Once the rice has cooled, add the tuna, tomatoes, bell pepper and olives, then mix gently."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cover the bowl and let it rest for 20 min in the refrigerator so the flavors meld."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the salad on a platter, garnish with the egg wedges and a few olives, and serve well chilled."
+   }
+  ]
  },
  "mizeria": {
-  "nom": "Mizeria (Creamed Cucumber Salad)",
-  "description": "The Polish cucumber salad: thin cucumber slices in a tangy dill cream. Ultra-fresh and thirst-quenching, perfect with grilled food."
+  "nom": "Mizeria (Creamy Cucumber Salad)",
+  "description": "The Polish cucumber salad: thin slices of cucumber in a tangy dill cream. Ultra-fresh and refreshing, perfect with anything grilled.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Wash the cucumber and cut it into very thin slices, ideally on a mandoline, into a bowl."
+   },
+   {
+    "titre": "Draw out water",
+    "detail": "Salt the slices generously, toss and let them sit for 10 min to draw the water out of the cucumber."
+   },
+   {
+    "titre": "Squeeze",
+    "detail": "Firmly squeeze the cucumber between your hands or in a clean cloth to extract as much water as possible."
+   },
+   {
+    "titre": "Make the cream",
+    "detail": "In a bowl, mix the cream with the white vinegar, finely minced onion and chopped dill."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Fold the squeezed cucumber into the seasoned cream and toss gently to coat it well."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Adjust the salt, cover and chill for 15 min in the refrigerator before serving well cold as a side."
+   }
+  ]
  },
  "patesfroidespesto": {
   "nom": "Cold Pesto Pasta",
-  "description": "Summer's pasta salad: cold pasta coated in homemade pesto, cherry tomatoes and mozzarella. Fresh, indulgent and perfect for a picnic."
+  "description": "The pasta salad of summer: cold pasta tossed in homemade pesto with cherry tomatoes and mozzarella. Fresh, indulgent and perfect for a picnic.",
+  "etapes": [
+   {
+    "titre": "Cook the pasta",
+    "detail": "Cook the pasta al dente in boiling salted water for the time indicated, then immediately rinse it under cold water."
+   },
+   {
+    "titre": "Pick the basil",
+    "detail": "Pick the basil leaves, rinse and gently pat them dry to preserve their fragrance."
+   },
+   {
+    "titre": "Blend the pesto",
+    "detail": "Blend the basil with the pine nuts, parmesan and olive oil until you have a smooth pesto, then season with salt and pepper."
+   },
+   {
+    "titre": "Toppings",
+    "detail": "Cut the tomatoes into wedges and the mozzarella into cubes or pearls."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the pesto over the well-drained cold pasta and toss to coat it evenly."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Add the tomatoes and mozzarella, toss gently and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "When serving, add a drizzle of olive oil and a few pine nuts, and scatter with shaved parmesan."
+   }
+  ]
  },
  "sardinesgrillees": {
   "nom": "Grilled Sardines",
-  "description": "The taste of summer by the sea: fresh sardines grilled, simply lemoned and garlicked. Simple, briny and cheap, perfect on the barbecue."
+  "description": "The taste of summer by the sea: fresh grilled sardines, just lemony and garlicky. Simple, briny and budget-friendly, perfect on the barbecue.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Gut and scale the sardines under cold water, then pat them thoroughly dry so the skin sticks less to the grill."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt the sardines generously with coarse salt on both sides and let them rest 10 min to firm up the flesh."
+   },
+   {
+    "titre": "Garlic oil",
+    "detail": "Make a fragrant oil by mixing the olive oil with the chopped garlic and the chopped parsley."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the grill over high heat and oil the grates rather than the fish to keep the skin from sticking."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the sardines 3 min on each side, turning them only once so they stay whole."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle the grilled sardines with lemon juice and the garlic-parsley oil, then serve right away, piping hot."
+   }
+  ]
  },
  "courgettesgrillees": {
   "nom": "Marinated Grilled Zucchini",
-  "description": "The quintessential summer antipasto: grilled zucchini marinated with garlic, mint and lemon. Tender, fragrant, even better made ahead."
+  "description": "The ultimate summer antipasto: grilled zucchini marinated with garlic, mint, and lemon. Tender, fragrant, and even better made ahead.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Wash the zucchini and cut them lengthwise into thin, even ribbons."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Sear the ribbons on a very hot dry grill pan, 2 min per side, until you get nice crosshatch marks."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Make the marinade by mixing olive oil, minced garlic, lemon juice, and balsamic vinegar."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Arrange the grilled zucchini in a dish, coat with the marinade, and scatter with chopped mint."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper, and toss gently so every ribbon is well coated in marinade."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let marinate in the fridge for at least 30 min so the flavors soak into the zucchini."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Serve at room temperature, nicely arranged, as an antipasto or a fresh side."
+   }
+  ]
  },
  "auberginesgrillees": {
   "nom": "Marinated Grilled Eggplant",
-  "description": "Grilled eggplant slices marinated with garlic, parsley and lemon. Tender and fragrant, an irresistible summer antipasto for aperitif or as a side."
+  "description": "Grilled eggplant slices marinated with garlic, parsley, and lemon. Tender and fragrant, an irresistible summer antipasto for the apéritif or as a side.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Cut the eggplant into even rounds or ribbons about half a centimeter thick."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Salt the slices and let them sweat for 15 min, then pat them dry to draw out the bitterness and excess water."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the slices on a grill pan or barbecue for 3 min per side until marked and tender."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Mix olive oil, minced garlic, lemon juice, and balsamic vinegar for the marinade."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Layer the grilled eggplant, coat with the marinade, and scatter with chopped parsley."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let marinate in the fridge for at least 30 min so the eggplant soaks up the aromas."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at room temperature as an antipasto, with an extra drizzle of oil if needed."
+   }
+  ]
  },
  "poivronsmarines": {
   "nom": "Marinated Peppers",
-  "description": "Peppers roasted, peeled and marinated with garlic and parsley in olive oil. Sweet, tender and fragrant, the summer antipasto that keeps and improves."
+  "description": "Roasted peppers, peeled and marinated with garlic and parsley in olive oil. Sweet, tender, and fragrant, the summer antipasto that keeps and only gets better.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Wash the whole peppers and place them on a sheet pan or directly over the flame."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast in the oven at 220°C for 25 to 30 min, turning them, until the skin blackens and blisters."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Seal the hot peppers in a closed bag for 10 min: the steam loosens the skin so it slips right off."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Peel the warm peppers, remove the stem and seeds, then cut them into strips."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Mix olive oil, finely minced garlic, chopped parsley, and sherry vinegar."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the pepper strips in the marinade, salt, and toss gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest in the fridge for at least 30 min, then serve at room temperature as tapas."
+   }
+  ]
  },
  "houmouscourgette": {
   "nom": "Zucchini Hummus",
-  "description": "A lighter, all-green summer hummus: zucchini replaces part of the chickpeas for a creamy, fresh tahini dip. Ideal with crudités."
+  "description": "A lighter, all-green summer hummus: zucchini replaces some of the chickpeas for a creamy, fresh tahini dip. Perfect with crudités.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Wash the zucchini and cut it into even chunks, no need to peel it."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Steam the zucchini for 8 to 10 min until very tender, then drain it."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the zucchini with the chickpeas, tahini, garlic, lemon juice, and cumin."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Add an ice cube while blending: the cold shock makes the hummus incredibly light and creamy."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, taste, and adjust the acidity with a splash of lemon or a little oil if needed."
+   },
+   {
+    "titre": "Smooth",
+    "detail": "Spoon the hummus into a bowl and smooth it out, making a well with the back of a spoon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with olive oil, dust with paprika, and serve cold with crudités."
+   }
+  ]
  },
  "phillycheesesteak": {
   "nom": "Philly Cheesesteak",
-  "description": "Philadelphia's iconic sandwich: a roll filled with seared sliced beef, soft onions and peppers, smothered in melted cheddar. Generous and indulgent."
+  "description": "Philadelphia's iconic sandwich: a roll loaded with seared thin-sliced beef, melting onions and peppers, all smothered in gooey cheddar. Generous and indulgent.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Slice the beef as thin as possible, easier if it's slightly frozen, and thinly slice the onion and pepper."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Heat the oil over high heat in a skillet and sear the sliced beef for a few minutes until browned."
+   },
+   {
+    "titre": "Soften veg",
+    "detail": "Add the onion and pepper, then soften over medium heat for 5 min until tender."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper and toss the meat and vegetables together to spread the flavors through the pan."
+   },
+   {
+    "titre": "Melt cheese",
+    "detail": "Gather the filling, cover with cheddar slices and let it melt for 2 min under a lid."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the warm, lightly toasted roll with the melty mixture, scraping up all the pan juices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Close the sandwich and serve right away, while the cheese is stringy and the meat is hot."
+   }
+  ]
  },
  "lobsterroll": {
   "nom": "Lobster Roll",
-  "description": "New England's chic sandwich: lobster meat in a lemony mayonnaise, in a butter-toasted brioche roll. Briny, fresh and luxurious."
+  "description": "New England's elegant sandwich: lobster meat bound in a lemony mayonnaise, in a buttery toasted brioche bun. Briny, fresh and luxurious.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the cooked lobster meat into generous large chunks to keep some bite."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Cut the celery into tiny dice and finely snip the chives."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Gently fold the lobster with just enough mayonnaise, the lemon juice and the celery."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper and taste, keeping the dressing light so it doesn't drown the lobster."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Butter the sides of the brioche bun and toast it in a skillet until golden and crisp."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the bun generously with the lobster mixture and scatter the remaining chives over the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away with a lemon wedge, while the bun is warm and the lobster is fresh."
+   }
+  ]
  },
  "poboy": {
   "nom": "Shrimp Po'Boy",
-  "description": "Louisiana's sandwich: crispy breaded shrimp, lettuce and tomato in a soft roll with a zingy sauce. Crunchy, generous and full of cajun kick."
+  "description": "The Louisiana classic: crispy breaded shrimp, lettuce and tomato, tucked into a soft roll slathered with sauce. Crunchy, generous and bursting with Cajun zip.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Peel the shrimp and pat them dry, then shred the lettuce and slice the tomatoes."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat the shrimp in flour seasoned with paprika, salt and pepper, tapping off any excess."
+   },
+   {
+    "titre": "Heat Oil",
+    "detail": "Heat the frying oil to 180°C in a deep pot for an extra-crispy coating."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the shrimp in small batches for 2 to 3 min until golden, then drain on paper towels."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Split the roll, toast it lightly and spread the inside generously with mayonnaise."
+   },
+   {
+    "titre": "Build",
+    "detail": "Layer the roll with lettuce, tomato and the crispy shrimp, then serve right away while it's hot."
+   }
+  ]
  },
  "sloppyjoe": {
   "nom": "Sloppy Joe",
-  "description": "The American 'spoon burger': ground beef simmered in a sweet-spicy tomato sauce, served in a soft bun. Comforting, indulgent and gloriously messy."
+  "description": "The American \"spoon burger\": ground beef simmered in a sweet-and-spicy tomato sauce, piled into a soft bun. Comforting, indulgent and gloriously messy.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely chop the onion and bell pepper, and crush the tomatoes if they're whole."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Heat the oil and brown the ground beef over high heat, breaking it up until well colored."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Add the onion and bell pepper and sweat them for 5 min until soft and tender."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Stir in the tomatoes and ketchup, then simmer over low heat for 10 min until the sauce is nice and thick."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and pepper and taste, letting it reduce further if the filling is still too runny."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Toast the buns, pile them high with the hot filling and serve right away with a napkin."
+   }
+  ]
  },
  "katiroll": {
   "nom": "Chicken Kati Roll",
-  "description": "India's street wrap: an egg-coated flatbread filled with garam-masala-spiced chicken, onions and coriander. Fragrant, portable and addictive."
+  "description": "The Indian street wrap: a golden egg-coated flatbread filled with garam masala chicken, onions and cilantro. Fragrant, portable and seriously addictive.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the chicken into strips, chop the onion and cut the bell pepper into thin slivers, then chop the cilantro."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Mix the chicken with garam masala, a little oil and salt, then let it marinate for 10 min so the spices soak in."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Knead the flour with water and a pinch of salt into a soft dough, then roll it out into thin flatbreads."
+   },
+   {
+    "titre": "Flatbread",
+    "detail": "Cook each flatbread for 1 to 2 min per side in a hot pan, pour a beaten egg over it and flip to bond the egg to the bread."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the marinated chicken over high heat for 6 to 8 min until browned, then sauté the onion and bell pepper for 3 min separately."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Lay the chicken, onion, bell pepper and cilantro onto the egg flatbread, then roll it up tight like a wrap."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut the kati roll in half on the diagonal and serve right away, still warm, with a yogurt-cilantro sauce if you like."
+   }
+  ]
  },
  "baopouletcroustillant": {
   "nom": "Crispy Chicken Bao Bun",
-  "description": "An ultra-soft steamed bao bun filled with crispy chicken, cucumber and a sweet-savory sauce. The cloud-meets-crunch contrast is irresistible."
+  "description": "An ultra-fluffy steamed bao bun filled with crispy chicken, cucumber and a sweet-savory sauce. The contrast of pillowy and crunchy is irresistible.",
+  "etapes": [
+   {
+    "titre": "Knead",
+    "detail": "Mix the flour, yeast, a little sugar, warm water and oil, then knead for 10 min until you have a smooth dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover the dough and let it double in size for 1 h at room temperature, then shape folded buns on oiled paper."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the bao covered for 10 min until puffed and fluffy, without opening the lid during cooking."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Dip the chicken pieces in flour, then egg, then panko, pressing well for a thick crust."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop the chicken into 170°C oil and fry for 5 to 6 min until golden and crispy, then drain on paper towels."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Mix the soy sauce and honey, reduce for 2 min over low heat and coat the chicken in this glossy glaze."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Open each bao, slip in the glazed chicken and some cucumber slices, then serve right away while hot."
+   }
+  ]
  },
  "katsusando": {
   "nom": "Pork Katsu Sando",
-  "description": "The cult Japanese sandwich: crispy breaded pork (tonkatsu) with sauce, between two slices of ultra-soft crustless white bread. Indulgent and perfect."
+  "description": "The cult Japanese sandwich: crispy breaded pork (tonkatsu) coated in sauce, between two slices of ultra-fluffy crustless white bread. Indulgent and just right.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Pound the pork slice to 1.5 cm thick, salt it and finely shred the cabbage into ribbons."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat the pork in flour, then beaten egg and finally panko, pressing so the crumbs stick well."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the pork in 170°C oil for 4 to 5 min per side until golden and crispy, then drain."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the katsu rest for 3 min on a rack to keep it crispy, then cut it into wide slices."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Trim the crusts off the white bread and spread the slices generously with ketchup or tonkatsu sauce."
+   },
+   {
+    "titre": "Build",
+    "detail": "Arrange the breaded pork and shredded cabbage between two slices of bread, then gently press the sandwich."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the sando in half with one clean stroke of the knife to reveal the layers, and serve right away."
+   }
+  ]
  },
  "onigirazu": {
   "nom": "Onigirazu",
-  "description": "The Japanese 'onigiri sandwich': rice and a filling (tuna, avocado) wrapped in a nori sheet, pressed and halved. Pretty, portable and healthy."
+  "description": "The Japanese \"sandwich-onigiri\": rice and a filling (tuna, avocado) wrapped in a sheet of nori, pressed and cut in half. Pretty, portable and wholesome.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Cook the sticky Japanese rice, then let it cool for 5 min so it stays shapeable without burning your fingers."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix the tuna with mayonnaise and a splash of soy sauce, then slice the avocado into thin pieces."
+   },
+   {
+    "titre": "Set Up",
+    "detail": "Place a sheet of nori diamond-side up on the work surface, shiny side down, ready to hold the layers."
+   },
+   {
+    "titre": "Build",
+    "detail": "Spread a layer of rice in the center, then the tuna-mayo, avocado and a little sesame, and cover with a second layer of rice."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold the four corners of the nori toward the center to enclose the filling into a tight package."
+   },
+   {
+    "titre": "Press",
+    "detail": "Set the onigirazu seam-side down and press it for 1 min under light pressure so the nori sticks."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut in half with a damp knife to reveal the clean layers, and serve sprinkled with sesame."
+   }
+  ]
  },
  "falafelwrap": {
   "nom": "Falafel Wrap",
-  "description": "The Middle Eastern vegetarian wrap: crispy chickpea falafels, raw veggies and tahini sauce, rolled in pita bread. Fresh, complete and protein-rich."
+  "description": "The Middle Eastern vegetarian wrap: crispy chickpea falafels, fresh veggies and tahini sauce, rolled in a pita. Fresh, filling and packed with protein.",
+  "etapes": [
+   {
+    "titre": "Blend",
+    "detail": "Blend the chickpeas with the onion, cilantro, cumin and salt until you get a coarse paste that holds together."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form small flattened balls and let them rest for 10 min in the fridge so they don't fall apart while cooking."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Brown the falafels in 170°C oil for 4 to 5 min until they have a brown crust, then drain on paper towels."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Loosen the tahini with lemon juice, then water added little by little until you have a creamy, pourable sauce."
+   },
+   {
+    "titre": "Veggies",
+    "detail": "Wash and cut the lettuce, tomatoes and cucumber into thin slices to fill the wrap."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Warm the pita, spread the tahini sauce, add the falafels and veggies, then roll it up tight and cut in half."
+   }
+  ]
  },
  "chimichanga": {
   "nom": "Chimichanga",
-  "description": "The Tex-Mex fried burrito: a tortilla filled with chicken, red beans, rice and cheese, rolled then fried until crisp. Crunchy outside, melting inside."
+  "description": "The Tex-Mex fried burrito: a tortilla filled with chicken, red beans, rice and cheese, rolled up then fried until crispy. Crunchy outside, melty inside.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Shred the chicken and sauté it for 5 min with the crushed tomatoes, salt and a little spice."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the red beans and cooked rice to the chicken, stir and let it cook down for 3 min to bind the filling."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place the warm filling in the center of the flour tortilla and sprinkle generously with shredded cheddar."
+   },
+   {
+    "titre": "Roll",
+    "detail": "First fold in the two sides of the tortilla, then roll it up tight like an envelope to fully enclose the filling."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Place the chimichanga seam-side down in hot 180°C oil and brown it for 2 min per side until crispy."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the chimichanga on paper towels to remove excess oil while keeping it crispy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut in half on the diagonal and serve right away with sour cream, guacamole or a fresh salsa."
+   }
+  ]
  },
  "loadedfries": {
   "nom": "Loaded Fries",
-  "description": "Street-food loaded fries: crispy homemade fries, melted cheddar, bacon bits and onion, topped with cream and chives. The ultimate indulgent appetizer."
+  "description": "Street-food style loaded fries: crispy homemade fries, melted cheddar, bacon and onion, all drizzled with cream and chives. The ultimate indulgent party snack.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the potatoes into even fries, rinse them, then pat them thoroughly dry to guarantee crispiness."
+   },
+   {
+    "titre": "Cook fries",
+    "detail": "Roast at 220°C for 25 min without stacking them, flipping halfway through, until deeply golden."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Meanwhile, fry the bacon bits in a skillet over high heat until crispy, then drain them."
+   },
+   {
+    "titre": "Broil",
+    "detail": "Cover the hot fries with grated cheddar and bacon, then bake for 5 min at 200°C to melt the cheese."
+   },
+   {
+    "titre": "Top",
+    "detail": "Finely slice the red onion and chop the chives while the cheese melts."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Drizzle with cream, scatter with red onion and chives, then serve right away to share."
+   }
+  ]
  },
  "halloumifries": {
   "nom": "Halloumi Fries",
-  "description": "Halloumi sticks, golden and crisp outside, melting inside, drizzled with honey and sesame. The crowd-pleasing vegetarian appetizer."
+  "description": "Golden, crispy halloumi sticks, soft inside, drizzled with honey and sesame. The vegetarian party snack everyone agrees on.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the halloumi into even fry-shaped sticks and pat them dry to remove excess moisture."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Mix the flour and paprika, then lightly coat each halloumi stick without salting it."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil in a skillet over medium-high heat until hot but not smoking."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the halloumi fries for 2 to 3 min per side until they have a golden, crispy crust."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Drain on paper towels, then drizzle with honey to balance the saltiness of the cheese."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with sesame seeds and serve right away, while the halloumi is soft inside and crispy outside."
+   }
+  ]
  },
  "bretzelgarni": {
-  "nom": "Homemade Pretzel & Cheddar Sauce",
-  "description": "The real homemade pretzel with its brown salted crust, soft inside, served with a melty cheddar dip. The convivial German appetizer."
+  "nom": "Homemade Pretzels & Cheddar Sauce",
+  "description": "Real homemade pretzels with a brown, salted crust and a soft inside, served with a melty cheddar dipping sauce. The convivial party snack from Germany.",
+  "etapes": [
+   {
+    "titre": "Knead",
+    "detail": "Mix the flour, yeast, a pinch of salt and the melted butter with warm water, then knead for 10 min until you get a smooth, elastic dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover the dough with a cloth and let it rise for 30 min near a source of warmth until doubled in volume."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Divide the dough, roll each piece into a long thin rope and tie it into the classic pretzel shape."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Dip each pretzel for 30 seconds in simmering water with baking soda added: this bath is what gives the brown crust and the signature flavor."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Drain, place on a baking sheet, brush with beaten egg and generously sprinkle with coarse salt."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for 12 to 15 min until the pretzels are golden brown and glossy."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Gently melt the cheddar with the milk over low heat, stirring, until you get a smooth, coating sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the warm pretzels with the hot cheddar sauce on the side for dipping."
+   }
+  ]
  },
  "tornadopotato": {
   "nom": "Tornado Potato",
-  "description": "The viral Korean spiral potato on a stick: cut accordion-style, roasted crisp and dusted with parmesan and paprika. Spectacular and addictive."
+  "description": "The viral Korean spiral potato on a stick: sliced accordion-style, roasted crispy and dusted with parmesan and paprika. Spectacular and addictive.",
+  "etapes": [
+   {
+    "titre": "Skewer",
+    "detail": "Wash the potato and push a wooden skewer all the way through its length, right down the center."
+   },
+   {
+    "titre": "Spiralize",
+    "detail": "Slice the potato in one continuous spiral all around the skewer using a thin, very sharp knife."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Gently spread the spirals accordion-style along the skewer to separate each slice."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Mix the oil with the crushed garlic and paprika, then brush this mixture all the way into the gaps."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Bake at 200°C for 20 to 25 min, until the spirals are deeply golden and crispy."
+   },
+   {
+    "titre": "Sprinkle",
+    "detail": "Straight out of the oven, generously dust with grated parmesan so it melts slightly from the heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Enjoy right away, warm and crispy, straight off the skewer as a convivial party snack."
+   }
+  ]
  },
  "salchipapas": {
   "nom": "Salchipapas",
-  "description": "Peru's hugely popular street food: homemade fries and golden sausage slices, served with mayo and ketchup. Simple, generous and made for sharing."
+  "description": "The wildly popular Peruvian street food: homemade fries and golden sausage rounds, served with mayo and ketchup. Simple, generous, and made for sharing.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Peel the potatoes and cut them into even fries, then pat them thoroughly dry."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop the fries into oil at 170°C for 6 to 8 min until golden and crisp."
+   },
+   {
+    "titre": "Score",
+    "detail": "Slice the sausages into rounds and score them lightly in a crosshatch so they open up and brown as they cook."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Sear the sausage rounds in a skillet for 5 min over high heat until browned on all sides."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drain the fries on paper towels and salt them right away while still hot."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Toss the crispy fries and golden sausage rounds together in a serving dish."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, piping hot, with mayonnaise and ketchup for dipping."
+   }
+  ]
  },
  "pavbhaji": {
   "nom": "Pav Bhaji",
-  "description": "Mumbai's street food: a spiced mashed-vegetable curry (garam masala), served with butter-toasted soft rolls (pav). Comforting, fragrant and vegetarian."
+  "description": "Mumbai street food: a spiced vegetable mash with garam masala, served with buttery toasted brioche-style rolls (pav). Comforting, fragrant and vegetarian.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Cook the potatoes and peas in boiling salted water for 15 min until very tender, then drain them."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Coarsely mash the potatoes and peas with a potato masher for a rustic, tender base."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Melt butter in a large skillet and sauté the diced onion and bell pepper 8 min over medium heat until tender."
+   },
+   {
+    "titre": "Bhaji",
+    "detail": "Add the crushed tomatoes and garam masala, let cook down 5 min, then stir in the mash and simmer 10 min over low heat."
+   },
+   {
+    "titre": "Pav",
+    "detail": "Split the rolls, melt butter in a skillet and toast them cut-side down until golden and crisp."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Finish the bhaji with a knob of melted butter that gives it its sheen and rich, authentic street-food flavor."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the bhaji piping hot with the toasted rolls, scattered with chopped cilantro and minced raw onion."
+   }
+  ]
  },
  "cachapa": {
   "nom": "Cachapa",
-  "description": "The Venezuelan corn pancake: thick, golden and slightly sweet, folded over melting cheese. A comforting street food between a crepe and a pancake."
+  "description": "The Venezuelan corn pancake: thick, golden and lightly sweet, folded over melting cheese. A comforting street food somewhere between a crêpe and a pancake.",
+  "etapes": [
+   {
+    "titre": "Shuck",
+    "detail": "Cut the kernels off the fresh corn or drain the canned corn, then set it aside for blending the batter."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Blend the corn with the flour, milk and sugar until you get a thick, slightly grainy batter that holds on the spoon."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest 5 min so the flour hydrates and the consistency thickens a little more."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Melt butter in a skillet over medium heat and ladle in the thick batter to form 1 cm cakes, cooking 3 to 4 min per side."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Gently flip each cake once it's golden and the edges pull away, and brown the other side."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Lay the cheese on one half of each still-warm cachapa, fold in half and let it melt for a moment before serving."
+   }
+  ]
  },
  "soparnik": {
   "nom": "Soparnik (Swiss Chard Pie)",
-  "description": "The Croatian pie from the Dalmatian coast: thin dough filled with chard, onion and garlic, baked crisp and rubbed with garlic. Rustic, vegan and savory."
+  "description": "The Croatian pie from the Dalmatian coast: thin dough filled with Swiss chard, onion and garlic, baked until crispy and rubbed with garlic. Rustic, vegan and savory.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead the flour with water and a drizzle of olive oil until you get a soft, smooth dough, then let it rest 20 min under a cloth."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Finely slice the raw Swiss chard, onion and garlic, and toss them with a drizzle of olive oil, salt and pepper."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Divide the dough in two and roll out two very thin, almost translucent rounds for the traditional crispiness."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the chard filling over the first round, leaving a free border, then cover with the second round."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Carefully seal the edges by pinching them and rolling them inward to close up a flat, well-sealed pie."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 220°C for 20 min until the pie is golden and crispy on the surface."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Right out of the oven, rub the surface with garlic and brush with olive oil, then cut into diamonds to serve."
+   }
+  ]
  },
  "choufleurzaatar": {
   "nom": "Za'atar Roasted Cauliflower",
-  "description": "Cauliflower roasted until crisp, scented with za'atar and served with a lemon-yogurt sauce. A simple, golden, characterful Lebanese vegetarian dish."
+  "description": "Cauliflower roasted until crisp, scented with za'atar and served with a lemon-yogurt sauce. A simple Lebanese vegetarian dish, golden and full of character.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the cauliflower into even, medium-sized florets for even cooking."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat the florets with olive oil and za'atar, season lightly with salt and toss well."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Spread the florets on a tray without overlapping them and roast at 200°C for 25 to 30 min until golden and crisp."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Mix the yogurt with the lemon juice and crushed garlic, season with salt for a fresh, smooth sauce."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the yogurt sauce over the bottom of a serving dish or onto the plates."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the piping-hot roasted cauliflower over the sauce and sprinkle with a last pinch of za'atar."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away, the contrast of crisp cauliflower and fresh sauce as a starter or a side."
+   }
+  ]
  },
  "tajinelegumesdattes": {
-  "nom": "Vegetable Tagine with Dates",
-  "description": "A sweet-savory vegetarian tagine: melting vegetables simmered with dates and preserved lemon, over semolina. Fragrant, comforting and sunny."
+  "nom": "Vegetable & Date Tagine",
+  "description": "A sweet-and-savory vegetarian tagine: meltingly tender vegetables simmered with dates and preserved lemon, over couscous. Fragrant, comforting and full of sunshine.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Finely slice the onion and cut the zucchini, carrot and sweet potato into large, even cubes."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the onion in the olive oil with the cumin and spices for 5 min over medium heat until it turns translucent."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the cubed vegetables, the sliced preserved lemon and a little water, then cover and let simmer over low heat for 30 min."
+   },
+   {
+    "titre": "Dates",
+    "detail": "Add the pitted dates at the end of cooking, just to warm them through for 5 min so they keep their sweet chew."
+   },
+   {
+    "titre": "Couscous",
+    "detail": "Meanwhile, hydrate the couscous with salted boiling water, cover, then fluff it with a fork."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste the tagine and adjust the seasoning with salt and spices before serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the tender vegetable tagine and its dates over a bed of warm couscous."
+   }
+  ]
  },
  "woklegumescurry": {
-  "nom": "Vegetable Wok with Yellow Curry",
-  "description": "A quick, colorful wok: crisp turnip, carrot and zucchini coated in a coconut yellow curry, over rice. Light, fragrant and ready in 25 minutes."
+  "nom": "Yellow Curry Veggie Wok",
+  "description": "A quick, colorful wok: crisp turnip, carrot and zucchini coated in a coconut yellow curry, over rice. Light, fragrant and ready in 25 minutes.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Rinse the rice and cook it according to the package, then keep it warm while you prepare the wok."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the turnip, carrot and zucchini into batons or cubes of the same size for even cooking."
+   },
+   {
+    "titre": "Curry",
+    "detail": "Heat the olive oil in a wok and cook the yellow curry paste for 1 to 2 min until it releases its aromas."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Add the vegetables and sauté them over high heat for 5 to 6 min to keep them crisp and well coated in curry."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Pour in the coconut milk and let it simmer over medium heat for 5 min so the sauce reduces and coats the vegetables."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust the seasoning, with salt or curry paste depending on the intensity you want."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the wok over the warm rice and sprinkle with chopped fresh cilantro before serving."
+   }
+  ]
  },
  "currylegumesthai": {
-  "nom": "Thai Coconut Vegetable Curry",
-  "description": "A creamy vegetarian curry: vegetables simmered in coconut milk fragrant with lemongrass and curry paste. Comforting, exotic and nourishing."
+  "nom": "Thai Coconut Veggie Curry",
+  "description": "A creamy vegetarian curry: vegetables simmered in a coconut milk scented with lemongrass and curry paste. Comforting, exotic and nourishing.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the bell pepper, zucchini and carrot into even pieces about 2 cm, and finely slice the lemongrass."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Start the rice cooking in twice its volume of salted water for 12 to 15 min, then let it rest covered."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Cook the lemongrass and curry paste in a large sauté pan over medium heat for 2 min, until the aromas release."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Add the carrot, bell pepper and zucchini, sautéing them for 4 to 5 min over high heat to coat them and soften them slightly."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pour in the coconut milk and let it simmer at a gentle bubble for 12 to 15 min without boiling, so the sauce stays smooth and coats the vegetables."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the seasoning with salt and taste the spicy-sweet balance of the curry before turning off the heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the rice, spoon over the curry and vegetables, sprinkle with chopped fresh cilantro and serve right away, piping hot."
+   }
+  ]
  },
  "aubergineteriyaki": {
   "nom": "Teriyaki Eggplant",
-  "description": "Melting eggplant glazed in a glossy homemade teriyaki sauce, sprinkled with sesame, over rice. Vegetarian, indulgent and surprisingly satisfying."
+  "description": "Meltingly tender eggplant glazed in a glossy homemade teriyaki sauce, sprinkled with sesame, over rice. Vegetarian, indulgent and surprisingly satisfying.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the eggplant into even cubes about 3 cm for even cooking and a nice color."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Start the rice cooking in twice its volume of salted water for 12 to 15 min, then keep it covered and warm."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the eggplant cubes in a little olive oil over high heat for 8 to 10 min until they are golden and tender."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add the grated ginger and let it sweat for 1 min so it releases its aroma without burning."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Pour in the soy sauce and honey, lower to medium heat and let it reduce for 3 to 4 min until you get a glossy glaze that coats the eggplant."
+   },
+   {
+    "titre": "Sesame",
+    "detail": "Sprinkle with sesame seeds and toss gently to coat them in the glaze."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the glazed eggplant over the warm rice and serve immediately, while the sauce is still glossy."
+   }
+  ]
  },
  "orgerisotto": {
-  "nom": "Barley 'Risotto' with Feta",
-  "description": "A creamy orzotto: pearl barley cooked risotto-style, bound with parmesan and topped with feta. More rustic and wholesome than a rice risotto."
+  "nom": "Risotto-Style Barley & Feta",
+  "description": "A creamy orzotto: pearl barley cooked risotto-style, bound with Parmesan and sprinkled with feta. More rustic and more filling than a rice risotto.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely slice the onion and keep the broth hot at a gentle simmer in a pot beside you."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the onion in the olive oil over medium heat for 3 to 4 min until it turns translucent."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Add the barley and stir for 2 min to toast it and coat it in the fat."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Stir in the hot broth one ladle at a time, stirring often and waiting for absorption before each addition, for about 30 min."
+   },
+   {
+    "titre": "Test",
+    "detail": "Check the doneness: the barley should be tender but still slightly firm to the bite, with a creamy texture."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Off the heat, bind the barley with the grated Parmesan for a creamy risotto and adjust the salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate in shallow bowls and sprinkle generously with crumbled feta before serving piping hot."
+   }
+  ]
  },
  "rizrougeorange": {
   "nom": "Red Rice with Orange & Pistachios",
-  "description": "A fragrant, festive rice: red rice coated in orange juice, scattered with pistachios and mint. A colorful, original side (or vegetarian dish)."
+  "description": "A fragrant, festive rice: red rice glossed with orange juice, sprinkled with pistachios and mint. A colorful, original side (or vegetarian main).",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Cook the red rice in plenty of salted water for 25 to 30 min until tender but still slightly firm, then drain."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the sliced onion in the olive oil over low heat for 4 to 5 min until it softens without coloring."
+   },
+   {
+    "titre": "Zest",
+    "detail": "Zest the orange, then juice it to capture as much of its aroma as possible."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Mix the still-warm rice with the onion, the orange juice and zest so it soaks up the flavors."
+   },
+   {
+    "titre": "Pistachios",
+    "detail": "Roughly chop the pistachios and stir them in for crunch."
+   },
+   {
+    "titre": "Mint",
+    "detail": "Add the chopped fresh mint at the last moment and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or at room temperature, ideal as a fresh, fragrant side."
+   }
+  ]
  },
  "poeleekasha": {
   "nom": "Buckwheat (Kasha) & Feta Skillet",
-  "description": "A rustic, gluten-free skillet: toasted buckwheat (kasha) sautéed with zucchini, tomatoes and feta. Nutty, nourishing and full of flavor."
+  "description": "A rustic, gluten-free skillet: toasted buckwheat (kasha) sautéed with zucchini, tomatoes and feta. Nutritious, lightly nutty and full of flavor.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Cut the zucchini into small dice, chop the tomatoes into pieces and thinly slice the onion."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the buckwheat in a skillet for 2 to 3 min until it gives off a nutty aroma — that's kasha."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour twice its volume of salted water over the toasted buckwheat and simmer for 10 to 12 min over low heat until absorbed."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "In another skillet, sweat the onion in the olive oil for 3 min, then add the zucchini and sauté for 5 min."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Add the tomatoes and cook for another 4 to 5 min, then stir the mixture into the drained buckwheat."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust the salt and pepper, and taste for balance."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter with crumbled feta and chopped parsley, and serve warm or cold."
+   }
+  ]
  },
  "bowlmelonfeta": {
   "nom": "Summer Melon, Cucumber & Feta Bowl",
-  "description": "Summer's most refreshing bowl: juicy melon, crisp cucumber and feta, lifted with mint and a drizzle of olive oil. Sweet-savory and thirst-quenching."
+  "description": "The most refreshing bowl of the summer: juicy melon, crisp cucumber and feta, brightened with mint and a drizzle of olive oil. Sweet-savory and thirst-quenching.",
+  "etapes": [
+   {
+    "titre": "Selection",
+    "detail": "Pick a ripe, fragrant melon and a firm cucumber for a great contrast of textures."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Scoop the melon and cucumber into balls with a melon baller, or cut into even cubes about 2 cm."
+   },
+   {
+    "titre": "Feta",
+    "detail": "Crumble the feta into rough pieces and finely chop the fresh mint."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine the melon, cucumber, feta and mint in a bowl, tossing gently so nothing gets crushed."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with olive oil and a splash of lemon, and salt very lightly since the feta is already salty."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate the bowl for 15 min so the flavors meld and everything is nicely cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate in bowls, add a mint leaf and serve right away, well chilled."
+   }
+  ]
  },
  "bowlguacamolecourgette": {
   "nom": "Zucchini Guacamole Bowl",
-  "description": "A fresh, clever bowl: a lightened zucchini guacamole, quinoa and raw veggies. Creamy, green and nutritious, without the heaviness of all-avocado."
+  "description": "A fresh, clever bowl: a lightened-up zucchini guacamole with quinoa and raw veggies. Creamy, green and packed with good nutrients, without the heaviness of all-avocado.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the zucchini into rounds, dice the tomatoes and finely slice the red onion."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the zucchini for 8 to 10 min until very tender, then let it cool slightly."
+   },
+   {
+    "titre": "Guacamole",
+    "detail": "Blend the zucchini with the avocado and lime juice until smooth and creamy, then season with salt and pepper."
+   },
+   {
+    "titre": "Quinoa",
+    "detail": "Rinse then cook the quinoa for 12 to 15 min in salted water, drain and let it cool."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spread the quinoa in the bottom of the bowls and add a generous spoonful of the zucchini guacamole."
+   },
+   {
+    "titre": "Top",
+    "detail": "Arrange the diced tomato and red onion on top for freshness and crunch."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter with chopped fresh cilantro and serve cold with a lime wedge."
+   }
+  ]
  },
  "poischichescitron": {
   "nom": "Lemony Cumin Chickpeas",
-  "description": "Chickpeas sautéed with cumin and brightened with lemon: a quick, protein-rich vegetarian dish, great warm or cold as a salad. Cheap and filling."
+  "description": "Chickpeas sautéed with cumin and brightened with lemon: a quick vegetarian dish, high in protein, perfect hot or cold as a salad. Budget-friendly and filling.",
+  "etapes": [
+   {
+    "titre": "Drain",
+    "detail": "Drain and rinse the chickpeas, then dry them thoroughly in a towel so they brown well."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Finely mince the garlic and juice the lemon, reserving a little zest."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Cook the garlic, cumin and paprika in the olive oil over medium heat for 1 min to release the spices without burning them."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Add the dried chickpeas and brown them over high heat for 6 to 8 min, stirring regularly until colored."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Deglaze with the lemon juice off the heat to wake up the flavors, and adjust the salt."
+   },
+   {
+    "titre": "Parsley",
+    "detail": "Scatter with chopped fresh parsley and toss gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot as a side or cold as a salad, sprinkled with lemon zest."
+   }
+  ]
  },
  "onepotcitronconfit": {
   "nom": "One-Pot Chicken, Preserved Lemon & Olives",
-  "description": "Everything in one pot: chicken, rice, preserved lemon and olives simmered together. The rice soaks up all the juices — a complete, fragrant, no-fuss dish."
+  "description": "Everything in one pot: chicken, rice, preserved lemon and olives simmered together. The rice soaks up all the juices — a complete, fragrant dish with no dishes to wash.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the onion, cut the preserved lemon into thin strips and keep the broth warm."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the chicken pieces in the olive oil over high heat for 5 to 6 min on all sides, then set aside."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "In the same pot, sweat the onion for 3 to 4 min in the cooking juices until translucent."
+   },
+   {
+    "titre": "Coat rice",
+    "detail": "Add the rice and stir for 2 min to coat it and let it soak up the fragrant juices."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the chicken, add the preserved lemon, olives and hot broth, cover and cook over low heat for 18 to 20 min."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Turn off the heat and let rest, covered, for 5 min without lifting the lid so the rice finishes plumping up."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff the rice with a fork and serve the meltingly tender chicken, napped with the lemony juices."
+   }
+  ]
  },
  "saladesarde": {
   "nom": "Sardinian Mackerel & Feta Salad",
-  "description": "A complete Mediterranean salad: mackerel, feta, tomatoes and olives over semolina, all lemony. Briny, fresh and full of healthy fats."
+  "description": "A complete Mediterranean salad: mackerel, feta, tomatoes and olives over a bed of couscous, all brightened with lemon. Briny, fresh and full of good fats.",
+  "etapes": [
+   {
+    "titre": "Hydrate",
+    "detail": "Pour the couscous into a bowl, cover with boiling salted water to the top, let it swell for 5 min, then fluff it with a fork and a drizzle of olive oil."
+   },
+   {
+    "titre": "Flake",
+    "detail": "Flake the mackerel into large pieces, removing the bones, to keep some bite."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the tomatoes into small dice, crumble the feta and pit the olives if needed."
+   },
+   {
+    "titre": "Dressing",
+    "detail": "Mix the lemon juice and olive oil, season with salt and pepper for a Mediterranean dressing."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Season the still-warm couscous with the dressing, then fold in the mackerel, tomatoes, feta and olives."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste, adjust the salt and lemon, and toss gently so you don't break up the fish."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chilled as a complete Sardinian-style salad, ideal for a summer lunch."
+   }
+  ]
  },
  "saladeepeautreburrata": {
   "nom": "Spelt & Burrata Salad",
-  "description": "An indulgent grain salad: nutty spelt, creamy burrata, tomatoes and arugula, drizzled with olive oil. The contrast of chewy and melting."
+  "description": "A hearty grain salad: nutty spelt, creamy burrata, tomatoes and arugula, finished with a drizzle of olive oil. A play of crunchy and melting textures.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Cook the spelt for 25 min in boiling salted water until tender but still a little chewy, then drain and rinse under cold water."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the tomatoes into wedges or dice and chop a few leaves of fresh basil."
+   },
+   {
+    "titre": "Dressing",
+    "detail": "Whisk together the olive oil and lemon juice, season with salt and pepper to dress the grains."
+   },
+   {
+    "titre": "Combine",
+    "detail": "In a salad bowl, toss the drained spelt with the tomatoes and arugula, then dress with the vinaigrette."
+   },
+   {
+    "titre": "Burrata",
+    "detail": "Arrange the salad on a plate or platter and set the whole burrata right in the center."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Drizzle with olive oil, scatter the chopped basil and add a few turns of freshly ground pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold and open the burrata at the table so its creamy heart spills over the salad."
+   }
+  ]
  },
  "saladefenouil": {
   "nom": "Fennel & Orange Salad",
-  "description": "A crisp, tangy winter salad: thinly sliced fennel, orange segments and olives, drizzled with olive oil. Fresh, aniseedy and refreshing."
+  "description": "A crisp, tangy winter salad: thinly shaved fennel, orange segments and olives with drizzles of olive oil. Fresh, anise-scented and refreshing.",
+  "etapes": [
+   {
+    "titre": "Shave",
+    "detail": "Trim the fennel and shave it very thinly on a mandoline into translucent slices."
+   },
+   {
+    "titre": "Crisp",
+    "detail": "Drop the fennel slices into a bowl of ice water for 5 min to make them extra crisp and soften their bitterness, then drain well."
+   },
+   {
+    "titre": "Segments",
+    "detail": "Segment the orange with a knife, working over a bowl to catch the juice."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Pit the olives if needed and chop the fresh parsley."
+   },
+   {
+    "titre": "Dressing",
+    "detail": "Whisk together the olive oil, lemon juice and reserved orange juice, then season with salt and pepper."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Gently toss the fennel, orange segments and olives, then drizzle with the vinaigrette."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with parsley, add a drizzle of oil and serve well chilled as a light, fragrant starter."
+   }
+  ]
  },
  "saladechoucajou": {
-  "nom": "Cabbage, Coriander & Cashew Salad",
-  "description": "A crunchy, fresh Asian salad: shredded cabbage, carrot, coriander and toasted cashews, in a lime dressing. Vitamin-packed and addictive."
+  "nom": "Cabbage, Cilantro & Cashew Slaw",
+  "description": "A crunchy, fresh Asian-style salad: shredded cabbage, carrot, cilantro and toasted cashews in a lime dressing. Vitamin-packed and addictive.",
+  "etapes": [
+   {
+    "titre": "Shred",
+    "detail": "Shred the cabbage very finely and grate the carrot into thin sticks or with a grater."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Massage the shredded cabbage with a little salt and lime juice for 5 min to soften it while keeping the crunch."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the cashews in a pan for 3 min until lightly golden, then roughly crush them."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Pick and roughly chop the fresh cilantro leaves."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Mix the lime juice, soy sauce and olive oil for a tangy, umami-rich dressing."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Toss the cabbage, carrot and cilantro, pour over the sauce and add the cashews at the last minute."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold as a crunchy, fragrant Thai-style slaw, perfect alongside a spicy dish."
+   }
+  ]
  },
  "champignonsfarcis": {
   "nom": "Cheese & Walnut Stuffed Mushrooms",
-  "description": "Roasted mushrooms stuffed with a creamy mix of fresh cheese, walnuts and garlic. A melting, crunchy, easy autumn starter."
+  "description": "Roasted mushrooms stuffed with a creamy blend of fresh cheese, walnuts and garlic. A tender, crunchy fall starter that's easy to make.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 180°C and lightly oil an oven-safe dish."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Clean the mushrooms, gently remove the stems and finely chop them, setting the caps aside."
+   },
+   {
+    "titre": "Breadcrumbs",
+    "detail": "Blitz the stale bread into breadcrumbs and roughly crush the walnuts."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix the chopped stems, fresh goat cheese, walnuts, crushed garlic, chopped parsley and breadcrumbs, then season with salt and pepper."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Generously fill each mushroom cap with the stuffing and press it down lightly."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Drizzle with olive oil and bake for 20 min at 180°C until the mushrooms are tender and the filling is golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with fresh parsley and serve hot as an indulgent starter."
+   }
+  ]
  },
  "ricottarotiezaatar": {
   "nom": "Za'atar Roasted Ricotta",
-  "description": "A chic, easy starter: a block of ricotta roasted until golden, scented with za'atar and honey, to spread on toast. Melting, sweet-savory and impressive."
+  "description": "A chic, easy starter: a block of ricotta roasted until golden, scented with za'atar and honey, to spread over toasted bread. Creamy, sweet-savory and impressive.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C and choose a small baking dish sized to the ricotta."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Set the ricotta in a strainer for 10 min so it sheds its excess water and browns better while roasting."
+   },
+   {
+    "titre": "Season",
+    "detail": "Place the ricotta in the dish, drizzle it with olive oil and dust it generously with za'atar."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Bake for 18 to 20 min at 200°C until the top of the ricotta is golden and lightly browned."
+   },
+   {
+    "titre": "Sides",
+    "detail": "While it roasts, cut the tomatoes into wedges and toast slices of bread."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Out of the oven, drizzle the hot ricotta with honey to play against the za'atar."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away with the tomatoes and toasted bread to spread the creamy ricotta over."
+   }
+  ]
  },
  "tartarebetterave": {
-  "nom": "Beetroot Tartare",
-  "description": "A clever vegetarian faux-tartare: knife-cut cooked beetroot, seasoned with shallot, capers and mustard like a real tartare. Colorful, fresh and surprising."
+  "nom": "Beet Tartare",
+  "description": "A clever vegetarian mock tartare: cooked beet hand-cut with a knife, sharpened with shallot, capers and mustard just like the real thing. Colorful, fresh and impressive.",
+  "etapes": [
+   {
+    "titre": "Dice",
+    "detail": "Cut the cooked beet into very small, even dice with a knife, never in a blender, to keep the tartare texture."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Finely mince the red onion, chop the capers and chop the parsley."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "In a bowl, mix the mustard, lemon juice, olive oil, salt and pepper into a smooth sauce."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Bring together the diced beet, onion, capers and parsley, then bind it all with the sauce."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill the tartare for 10 min in the fridge so the flavors mingle and develop."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Mold the tartare with a ring cutter on the plate and serve cold with toasted bread."
+   }
+  ]
  },
  "veloutefenouilmascarpone": {
-  "nom": "Fennel Velouté with Mascarpone",
-  "description": "A delicate, aniseedy velouté: melted fennel blended with a touch of mascarpone for creaminess. Elegant, mild and comforting."
+  "nom": "Fennel Mascarpone Velouté",
+  "description": "A delicate, anise-scented velouté: melted fennel blended with a touch of mascarpone for silkiness. Elegant, mild, and comforting.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely slice the onion and fennel, setting aside a few green fronds for the finish."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the onion and fennel in olive oil over medium heat 6 to 7 min without coloring to mellow their flavor."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover with broth, bring to a simmer, and cook 15 min over low heat until the fennel is meltingly tender."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the mascarpone and blend at length into a smooth, coating velouté."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust the salt and pepper, and thin with hot water or broth if the texture is too thick."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pour the velouté into bowls and scatter the raw fennel fronds over for crunch and fragrance."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with a drizzle of olive oil and a turn of the pepper mill."
+   }
+  ]
  },
  "veloutepoireau": {
-  "nom": "Leek Velouté with Savory Shortbread",
-  "description": "A silky leek velouté, served with little parmesan savory shortbreads to dip. Winter comfort with a playful crunchy twist."
+  "nom": "Leek Velouté & Little Shortbreads",
+  "description": "A gently soothing leek velouté, served with savory parmesan shortbreads for dipping. Winter comfort with a playful, crunchy side.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely slice the leek and dice the potato for quick, even cooking."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the leek in a knob of butter over low heat 6 min until it melts without coloring."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the potato and broth, then cook 20 min at a simmer until perfectly tender."
+   },
+   {
+    "titre": "Shortbreads",
+    "detail": "Rub the flour with the cold butter and parmesan, shape small shortbreads, and bake them 12 min at 180°C until golden."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the velouté with the cream until you get a smooth, silky texture."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust the salt and pepper, and tweak the consistency with a little broth if needed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the leek velouté piping hot, with the parmesan shortbreads for dipping."
+   }
+  ]
  },
  "bouillonthaicitronnelle": {
   "nom": "Thai Shiitake & Lemongrass Broth",
-  "description": "A fragrant, light broth: shiitakes, lemongrass and ginger infused in a coconut-milk broth. Comforting, exotic and full of umami."
+  "description": "A fragrant, light broth: shiitakes, lemongrass, and ginger steeped in a coconut-milk broth. Comforting, exotic, and packed with umami.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Crush the lemongrass stalks with the back of the knife, peel and slice the ginger into thin slivers, and cut the shiitakes into 5 mm slices."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Bring the broth to a boil, then drop in the lemongrass and ginger, lower to low heat, and let infuse 8 to 10 min to flavor the liquid."
+   },
+   {
+    "titre": "Mushrooms",
+    "detail": "Add the sliced shiitakes to the simmering broth and cook 5 to 6 min until they are tender."
+   },
+   {
+    "titre": "Coconut Milk",
+    "detail": "Pour in the coconut milk and hold at a very gentle simmer without ever boiling, or it breaks and the broth turns greasy instead of silky."
+   },
+   {
+    "titre": "Season",
+    "detail": "Taste and adjust with a little salt or soy sauce, then remove the steeped lemongrass stalks before serving."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Off the heat, squeeze in the lime juice and add the chopped cilantro to bring freshness and acidity."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Ladle the piping-hot broth into bowls, garnish with a few cilantro leaves, and enjoy right away while hot."
+   }
+  ]
  },
  "cuissepouletestragon": {
-  "nom": "Tarragon Chicken Thigh",
-  "description": "A bistro classic: roasted chicken thigh in a creamy tarragon sauce. Tender, fragrant and comforting, with rice or vegetables."
+  "nom": "Tarragon Chicken Thighs",
+  "description": "A bistro classic: roasted chicken thighs napped with a creamy tarragon sauce. Tender, fragrant and comforting, with rice or vegetables.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the onion, chop the tarragon while reserving half the leaves, and pat the chicken thighs dry, then salt them on both sides."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Heat the olive oil in a Dutch oven over high heat and brown the chicken thighs 4 to 5 min per side until the skin is golden, then set them aside."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "In the same pot, sauté the sliced onion over medium heat for 5 min until translucent, scraping up the browned bits."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the hot broth to deglaze, add the cream and the first half of the tarragon, then bring to a gentle simmer over low heat."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the thighs to the sauce, cover and let simmer over low heat for 25 min, turning halfway, until the meat falls off the bone."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Meanwhile, cook the rice in boiling salted water for 12 min, then drain it and let it rest, covered."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add the reserved fresh tarragon at the end of cooking, adjust the seasoning and serve the thighs napped with sauce over a bed of rice."
+   }
+  ]
  },
  "pilonspouletmiso": {
   "nom": "Miso-Maple Chicken Drumsticks",
-  "description": "Drumsticks glazed in an irresistible miso-maple marinade: salty, sweet and umami, caramelized in the oven. Indulgent, sticky and perfect with rice."
+  "description": "Drumsticks glazed with an irresistible miso-maple marinade: salty, sweet and umami, caramelized in the oven. Indulgent, sticky and perfect with rice.",
+  "etapes": [
+   {
+    "titre": "Marinade",
+    "detail": "Mix the miso, honey, soy sauce and grated ginger in a bowl until you have a smooth, even glaze."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Lightly score the drumsticks, coat them generously in the marinade and let them rest in the fridge at least 15 min."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C and arrange the drumsticks on a parchment-lined sheet, reserving the excess marinade."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast 30 min, brushing the drumsticks with marinade every 10 min to build a glossy glaze that caramelizes in layers."
+   },
+   {
+    "titre": "Rice",
+    "detail": "While they cook, boil the rice in salted water for 12 min, then drain it and keep it warm, covered."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Take out the well-glazed drumsticks and let them rest 5 min so the juices redistribute through the meat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with sesame seeds and serve the glossy drumsticks over the rice, drizzled with the remaining cooking juices."
+   }
+  ]
  },
  "saumontrappeur": {
   "nom": "Trapper-Spiced Salmon",
-  "description": "A salmon fillet coated in a smoky cajun-style spice blend, just seared to stay moist inside, with rice. Spicy, melting and quick."
+  "description": "A salmon fillet coated in a smoky Cajun-style spice blend, just seared to stay moist at the center, with rice. Spicy, tender and quick.",
+  "etapes": [
+   {
+    "titre": "Blend",
+    "detail": "Combine the smoked paprika, cumin, chopped garlic and a pinch of salt to make the trapper spice rub."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pat the salmon fillets dry, brush them with a drizzle of olive oil, then coat the flesh with the spice blend on all sides."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice in boiling salted water for 12 min, drain it and let it rest covered while the fish cooks."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Heat the olive oil in a skillet over high heat and lay the salmon skin-side down, without moving it, 4 to 5 min for a crispy skin."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Flip the salmon just once and continue cooking 2 min on the flesh side to keep the center pearly and moist."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the salmon rest 2 min off the heat so the residual warmth gently finishes cooking the center."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Squeeze a touch of lemon over the salmon and serve it on the rice with a final drizzle of olive oil."
+   }
+  ]
  },
  "cervellecanut": {
-  "nom": "Cervelle de Canut (Lyon Herb Cheese)",
-  "description": "The Lyon specialty: fromage blanc whipped with fresh herbs, shallot, garlic and vinegar. Fresh, herby and perfect for spreading at aperitif."
+  "nom": "Cervelle de Canut",
+  "description": "The Lyon specialty: fromage blanc whipped with fresh herbs, shallot, garlic and vinegar. Fresh, herby and perfect for spreading at the apéro.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Very finely chop the parsley, chives and red onion; press or mince the garlic."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the fromage blanc with the olive oil and wine vinegar until smooth and creamy."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Fold in the chopped parsley, chives, garlic and red onion, then mix to distribute the aromatics evenly."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and pepper and taste to balance the tang of the vinegar with the freshness of the herbs."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and chill for at least 2 hours, ideally overnight, so the garlic and herbs infuse the cheese."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold in a ramekin, with grilled country bread or raw veggies for dipping."
+   }
+  ]
  },
  "pouletdukkah": {
-  "nom": "Dukkah Chicken & Vegetables",
-  "description": "Chicken coated in dukkah, the Egyptian blend of toasted nuts and spices, served with crisp vegetables. Crunchy, fragrant and full of zing."
+  "nom": "Dukkah Chicken & Veggies",
+  "description": "Chicken coated in dukkah, the Egyptian blend of hazelnuts and toasted spices, served with crisp vegetables. Crunchy, fragrant and full of zing.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the chicken breasts into large, even pieces and season them lightly with salt."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Roll each piece of chicken in the dukkah to coat it well in the spice and nut blend."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Heat the olive oil over medium heat and sear the chicken for 8 to 10 min, turning it, until the dukkah turns golden without burning and the chicken is cooked through."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Meanwhile, cut the zucchini and carrot into batons or half-moons."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté the vegetables in a little oil over high heat for 4 to 5 min to keep them crisp and colorful."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Drizzle the chicken and vegetables with a splash of lemon juice and adjust the salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with chopped fresh cilantro and serve hot, the chicken plated over the vegetables."
+   }
+  ]
  },
  "crumblelegumes": {
   "nom": "Summer Vegetable Crumble",
-  "description": "A savory summer crumble: melting zucchini, eggplant, pepper and tomato under a parmesan crumble topping. Comforting yet light."
+  "description": "A savory summer crumble: meltingly tender zucchini, eggplant, bell pepper and tomato under a Parmesan shortbread topping. Comforting yet light.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the zucchini, eggplant, tomatoes and bell pepper into even, medium-sized cubes."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the vegetables in a little oil with the picked thyme leaves for 12 to 15 min until they are tender and the released moisture has evaporated."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper and taste, then spread the vegetables in a gratin dish."
+   },
+   {
+    "titre": "Rub",
+    "detail": "With your fingertips, rub the flour into the cold butter and Parmesan until you get a coarse, crumbly texture, without overworking it."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Spread the crumble in an even layer over the vegetables without pressing it down, to keep it crunchy."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 25 to 30 min until the crumble is golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it cool for 5 min, then serve the crumble in the dish, as a vegetarian main or a side."
+   }
+  ]
  },
  "bowlmarocain": {
   "nom": "Moroccan Bowl",
-  "description": "A sunny bowl: semolina, chickpeas, roasted sweet potato and carrots, spiced with cumin and softened by raisins and almonds. Complete and fragrant."
+  "description": "A sunny bowl: couscous, chickpeas, roasted sweet potato and carrots, brightened with cumin and softened by raisins and almonds. Complete and fragrant.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Peel and cut the sweet potato and carrot into even cubes, then place them in a baking dish."
+   },
+   {
+    "titre": "Season",
+    "detail": "Coat the vegetables with olive oil, cumin, salt and pepper, tossing well."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast at 200°C for 25 min, stirring halfway through, until the vegetables are tender and caramelized."
+   },
+   {
+    "titre": "Couscous",
+    "detail": "Pour the salted boiling water over the couscous, cover for 5 min, then fluff it with a fork and a drizzle of oil."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the almonds in a pan for 2 min until golden and crunchy."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "In the bowls, arrange the couscous, chickpeas, roasted vegetables, raisins and toasted almonds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with a little olive oil and serve this colorful, cumin-scented bowl warm."
+   }
+  ]
  },
  "veloutethaicrevettes": {
   "nom": "Thai Shrimp Velouté",
-  "description": "A velouté fragrant with coconut milk, lemongrass and ginger, topped with shrimp. Creamy, exotic and comforting like a tom kha."
+  "description": "A velouté fragrant with coconut milk, lemongrass, and ginger, garnished with shrimp. Silky, exotic, and comforting like a tom kha.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Crush the lemongrass, cut the ginger into thin slivers, grate the carrot, and peel the shrimp."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Bring the broth to a simmer with the lemongrass and ginger, and let infuse 10 min to release the aromatics."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Remove the aromatics, add the coconut milk and carrot, then cook 8 min over low heat without boiling."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend everything into a smooth, silky velouté, then return it to very low heat to keep it warm."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Drop the shrimp into the simmering velouté and poach them 3 min until they are pink and firm."
+   },
+   {
+    "titre": "Acidify",
+    "detail": "Off the heat, brighten the velouté with the lime juice and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the Thai velouté piping hot, scattered with freshly chopped cilantro."
+   }
+  ]
  },
  "curryhaddock": {
-  "nom": "Smoked Haddock Curry",
-  "description": "A mild curry where smoked haddock melts into a spiced coconut milk, over rice and spinach. The smoky fish makes all the difference."
+  "nom": "Haddock Curry",
+  "description": "A mild curry where smoked haddock melts into a spiced coconut milk, over a bed of rice and spinach. The fish's smokiness changes everything.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely slice the onion, stem the spinach and cut the haddock into large chunks, removing any remaining bones."
+   },
+   {
+    "titre": "Cook the rice",
+    "detail": "Start the rice in 1.5 times its volume of salted water, cover and cook 12 min over low heat, then set aside."
+   },
+   {
+    "titre": "Sweat the base",
+    "detail": "Sauté the onion in a drizzle of oil over medium heat for 4 min, add the curry paste and toast 1 min to release the aromas."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pour in the coconut milk, bring to a gentle simmer and let reduce 5 min over low heat until the sauce coats the spoon."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Lay the haddock pieces in the curry, lower the heat and gently poach 6 to 7 min without stirring; since the haddock is already salty from the smoking, taste before salting."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Stir in the spinach at the end of cooking and let it wilt 1 to 2 min in the hot sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the curry over the rice, add a squeeze of lemon juice and serve right away, piping hot."
+   }
+  ]
  },
  "pouletmielmangue": {
   "nom": "Honey Chicken with Mango Sauce",
-  "description": "Honey-glazed chicken topped with a fruity, tangy mango sauce, over rice. An exotic, indulgent sweet-and-savory dish."
+  "description": "Honey-glazed chicken napped with a fruity, tangy mango sauce, over rice. An exotic, indulgent sweet-and-savory dish.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the chicken into strips, slice the onion, grate the ginger and dice the mango, reserving a few raw cubes."
+   },
+   {
+    "titre": "Cook the rice",
+    "detail": "Cook the rice in boiling salted water for 11 min, drain it and keep it warm, covered."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the chicken in hot olive oil for 5 to 6 min, turning, until golden brown on all sides."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Add the honey over the chicken, lower the heat and let caramelize 2 min, coating the strips."
+   },
+   {
+    "titre": "Mango sauce",
+    "detail": "Sauté the onion with the ginger for 4 min, then blend with most of the mango and a little water for a smooth sauce."
+   },
+   {
+    "titre": "Nap",
+    "detail": "Reheat the mango sauce 2 min over low heat, adjust the seasoning and lay the glazed chicken in it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the chicken over the rice, scatter with the reserved fresh mango cubes and serve immediately."
+   }
+  ]
  },
  "orecchiettegrecque": {
   "nom": "Greek-Style Orecchiette",
-  "description": "Orecchiette pasta with Greek flavors: feta, tomatoes, olives and zucchini, drizzled with olive oil and oregano. Mediterranean and comforting."
+  "description": "Orecchiette pasta with Greek flavors: feta, tomatoes, olives and zucchini, drizzled with olive oil and oregano. Mediterranean and comforting.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the zucchini into small dice, roughly chop the tomatoes, pit the olives and coarsely crumble the feta."
+   },
+   {
+    "titre": "Cook the pasta",
+    "detail": "Drop the orecchiette into boiling salted water and cook al dente per the package, reserving a ladle of cooking water."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté the zucchini in olive oil for 5 min over high heat until golden and tender."
+   },
+   {
+    "titre": "Stew",
+    "detail": "Add the tomatoes and olives, season lightly with salt and let stew 5 min over medium heat."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Combine the drained orecchiette with the pan mixture, loosen with a little cooking water and toss well off the heat."
+   },
+   {
+    "titre": "Feta",
+    "detail": "Crumble the feta off the heat so it stays creamy rather than rubbery, and fold in gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with olive oil, scatter with oregano and serve right away."
+   }
+  ]
  },
  "currychoufleur": {
   "nom": "Cauliflower Curry",
-  "description": "A generous vegetarian curry: cauliflower and chickpeas simmered in spiced coconut milk, over rice. Creamy, nourishing and budget-friendly."
+  "description": "A hearty vegetarian curry: cauliflower and chickpeas simmered in a spiced coconut milk, over rice. Creamy, filling and budget-friendly.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Break the cauliflower into small florets, slice the onion and drain the chickpeas."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast the cauliflower florets drizzled with oil at 200°C for 10 min to give them a charred flavor and bite."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the onion 4 min over medium heat, add the curry paste and toast it 1 min."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the roasted cauliflower and chickpeas, tossing to coat them in the curry paste."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pour in the coconut milk and let simmer 12 min over low heat until the cauliflower is tender and the sauce is creamy."
+   },
+   {
+    "titre": "Cook the rice",
+    "detail": "Meanwhile, cook the rice in salted water for 11 min, then drain it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with chopped cilantro and serve the curry over piping-hot rice."
+   }
+  ]
  },
  "pennepestonoixfigues": {
   "nom": "Penne with Walnut Pesto & Figs",
-  "description": "Penne coated in homemade walnut pesto, topped with roasted figs and arugula. Autumnal, original and deliciously creamy."
+  "description": "Penne coated in a homemade walnut pesto, scattered with roasted figs and arugula. Autumnal, original and deliciously creamy.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Halve the figs, roughly chop the walnuts and peel the garlic clove."
+   },
+   {
+    "titre": "Pesto",
+    "detail": "Blend the walnuts, Parmesan, garlic and olive oil into a thick pesto, season with salt and pepper."
+   },
+   {
+    "titre": "Roast the figs",
+    "detail": "Sear the figs cut-side down in a hot pan for 3 min until caramelized."
+   },
+   {
+    "titre": "Cook the pasta",
+    "detail": "Cook the penne al dente in boiling salted water, reserving a ladle of cooking water."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Loosen the pesto with the starchy cooking water, then coat the hot penne off the heat for a sauce that clings."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Divide the pasta, add the caramelized figs and a handful of fresh arugula."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with Parmesan shavings and a drizzle of olive oil, then serve right away."
+   }
+  ]
  },
  "tagliatelleslentillescorail": {
-  "nom": "Tagliatelle, Coral Lentils & Broccoli Cream",
-  "description": "Tagliatelle in a smooth broccoli cream, enriched with coral lentils for protein. Vegetarian, complete and all green."
+  "nom": "Tagliatelle with Red Lentils & Broccoli Cream",
+  "description": "Tagliatelle in a creamy broccoli sauce, enriched with red lentils for protein. Vegetarian, complete and all green.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Break the broccoli into florets, peel the garlic and rinse the red lentils under clear water."
+   },
+   {
+    "titre": "Cook the broccoli",
+    "detail": "Cook the broccoli 7 min in boiling salted water, reserving a few small florets for texture."
+   },
+   {
+    "titre": "Broccoli cream",
+    "detail": "Blend the rest of the broccoli with the cream, garlic and a drizzle of olive oil until smooth."
+   },
+   {
+    "titre": "Lentils",
+    "detail": "Cook the red lentils 10 min in gently simmering water until tender, then drain them."
+   },
+   {
+    "titre": "Cook the pasta",
+    "detail": "Cook the tagliatelle al dente in boiling salted water and drain it."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Toss the tagliatelle, broccoli cream, lentils and reserved florets over low heat to warm through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with Parmesan, add a turn of pepper and serve right away, piping hot."
+   }
+  ]
  },
  "raviolescarottecumin": {
   "nom": "Carrot-Cumin & Ricotta Ravioli",
-  "description": "Tender ravioli filled with ricotta and cumin-spiced carrot, finished with a brown butter. Delicate and comforting."
+  "description": "Tender ravioli filled with ricotta and cumin-scented carrot, napped with brown butter. Delicate and comforting.",
+  "etapes": [
+   {
+    "titre": "Cook the carrots",
+    "detail": "Peel and slice the carrots into rounds, cook them 15 min in boiling salted water until tender, then drain them."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mash the carrots into a purée, mix with the ricotta and cumin, season with salt and pepper."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll out the dough thinly, place spaced spoonfuls of filling, then cover and seal the ravioli, pressing out the air."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the ravioli with a pastry wheel and press the edges firmly so they don't open."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the ravioli in gently simmering, not boiling, water 3 to 4 min until they rise to the surface."
+   },
+   {
+    "titre": "Brown butter",
+    "detail": "Melt the butter over medium heat until it turns nutty brown with a toasted-hazelnut aroma."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Nap the drained ravioli with brown butter, scatter with Parmesan and serve immediately."
+   }
+  ]
  },
  "currycarottesananas": {
   "nom": "Carrot & Pineapple Curry",
-  "description": "A sweet-and-savory vegetarian curry: tender carrots and pineapple in spiced coconut milk, over rice. Original, mild and sunny."
+  "description": "A sweet-and-savory vegetarian curry: tender carrots and pineapple in a spiced coconut milk, over rice. Original, mild and sunny.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Peel the carrots and cut them into rounds, slice the onion and dice the pineapple."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the onion 4 min over medium heat, add the curry paste and toast it 1 min."
+   },
+   {
+    "titre": "Carrots",
+    "detail": "Add the carrot rounds, toss to coat them, then pour in the coconut milk."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let simmer 18 min over low heat until the carrots are tender and the sauce coats the spoon."
+   },
+   {
+    "titre": "Pineapple",
+    "detail": "Stir in the pineapple cubes at the very end of cooking and warm through 2 min to keep them sweet and fresh."
+   },
+   {
+    "titre": "Cook the rice",
+    "detail": "Cook the rice in salted water for 11 min, then drain it and keep it warm."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with chopped cilantro and serve the curry over the rice."
+   }
+  ]
  },
  "mijotepoischichesepinards": {
-  "nom": "Chickpea & Spinach Stew with Coconut Milk",
-  "description": "A comforting vegan stew: chickpeas and spinach in a cumin-spiced tomato-coconut milk. Creamy, nourishing and packed with plant protein."
+  "nom": "Chickpea & Spinach Coconut Stew",
+  "description": "A comforting vegan stew: chickpeas and spinach in a tomato-coconut milk with cumin. Creamy, filling and packed with plant protein.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the onion, mince the garlic, chop the tomatoes, drain the chickpeas and stem the spinach."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Sauté the onion in a drizzle of oil for 4 min, add the garlic and cumin and toast 1 min."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the tomatoes and chickpeas, pour in the coconut milk and let simmer 12 min over low heat."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Mash a few chickpeas with a fork to thicken and naturally bind the stew."
+   },
+   {
+    "titre": "Spinach",
+    "detail": "Stir in the spinach at the end of cooking and let it wilt 2 min in the hot sauce."
+   },
+   {
+    "titre": "Cook the rice",
+    "detail": "Cook the rice in salted water for 11 min, then drain it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve the stew with the piping-hot rice."
+   }
+  ]
  },
  "pouletthaicitronnelle": {
   "nom": "Thai Lemongrass Chicken",
-  "description": "Chicken sautéed with lemongrass and coconut milk, lifted with lime and ginger, over rice. Fragrant, fresh and quick."
+  "description": "Chicken stir-fried with lemongrass and coconut milk, brightened with lime and ginger, over rice. Fragrant, fresh and quick.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Crush the lemongrass with the flat of a knife then finely chop it, grate the ginger, slice the bell pepper and cut the chicken into strips."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Sauté the lemongrass and ginger in a drizzle of oil for 2 min over medium heat to release the aromas."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Add the chicken strips and sear 5 min over high heat until golden brown."
+   },
+   {
+    "titre": "Bell pepper",
+    "detail": "Stir in the sliced bell pepper and stir-fry 3 min so it keeps its crunch."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Pour in the coconut milk and let reduce 6 min over low heat until the sauce coats the spoon."
+   },
+   {
+    "titre": "Cook the rice",
+    "detail": "Cook the rice in salted water for 11 min, then drain it and keep it warm."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with lime juice, scatter with cilantro and serve over the fragrant rice."
+   }
+  ]
  },
  "saladelentillesbeluga": {
   "nom": "Beluga Lentil & Apple Salad",
-  "description": "A hearty, crunchy salad: beluga lentils, tart apple, feta and red onion, all vinaigrette-dressed. Fresh and protein-rich."
+  "description": "A hearty, crunchy salad: beluga lentils, tart apple, feta and red onion, all in a vinaigrette. Fresh and full of protein.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Cook the beluga lentils for 18 to 20 min in gently simmering unsalted water until tender but still al dente, then drain and cool them."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the apple into small dice and toss it with lemon right away to keep it from browning, then very finely mince the red onion."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Crumble the feta into rough pieces and chop the fresh parsley."
+   },
+   {
+    "titre": "Dressing",
+    "detail": "Whisk the olive oil and wine vinegar, season with salt and pepper for a bright dressing."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Toss the warm or cold lentils, diced apple, red onion and feta together in a bowl."
+   },
+   {
+    "titre": "Season",
+    "detail": "Pour the dressing over, add the parsley and toss gently to spread the flavors evenly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest 10 min in the fridge so the lentils soak it up, then serve chilled."
+   }
+  ]
  },
  "saladefourme": {
   "nom": "Fourme d'Ambert, Walnut & Apple Salad",
-  "description": "An indulgent autumn salad: arugula, Fourme d'Ambert blue cheese, walnuts and apple, tied together with honey. The blue-and-sweet contrast is irresistible."
+  "description": "An indulgent autumn salad: arugula, Fourme d'Ambert, walnuts and apple, tied together with honey. The contrast of blue cheese and sweetness, irresistible.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Lightly dry-toast the walnut halves in a pan for 2 to 3 min until they release their aroma, then let them cool."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Crumble the Fourme d'Ambert into generous pieces and cut the apple into thin slices."
+   },
+   {
+    "titre": "Dressing",
+    "detail": "Whisk the olive oil, cider vinegar and honey, season lightly with salt and pepper to soften the bitterness of the blue cheese."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Spread the arugula in a large bowl or on individual plates."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Scatter the crumbled Fourme, apple slices and toasted walnuts over the bed of arugula."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with the honey dressing just before serving to keep the arugula crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away as a fresh, indulgent starter, with country bread."
+   }
+  ]
  },
  "gaspachomelonabricot": {
   "nom": "Melon-Apricot Gazpacho",
-  "description": "A fruity, ice-cold gazpacho: ripe melon and apricot, a touch of cucumber and mint. The most refreshing starter for hot days."
+  "description": "A fruity, ice-cold gazpacho: ripe melon and apricot, a touch of cucumber and mint. The most refreshing starter for the dog days of summer.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the melon in half, remove the seeds, scoop out the flesh, and cut it into large pieces."
+   },
+   {
+    "titre": "Fruit",
+    "detail": "Pit the apricots and cut them into quarters, then peel and chop the cucumber."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Combine the melon, apricots, and cucumber in a blender with the lemon juice, then blend for 2 min until smooth."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Pour the olive oil in a thin stream while blending to emulsify and get a glossy, velvety soup."
+   },
+   {
+    "titre": "Refine",
+    "detail": "Pass the gazpacho through a fine strainer to remove the fibers and get a perfectly velvety texture."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Chill in the fridge for 1 hour (or 30 min in the freezer) to serve the gazpacho ice-cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour into chilled glasses and garnish with a few chopped mint leaves before serving."
+   }
+  ]
  },
  "gaspachobetterave": {
-  "nom": "Beetroot & Coconut Gazpacho",
-  "description": "A vivid pink, original gazpacho: cooked beetroot blended with coconut milk, brightened with lemon and mint. Mild, earthy and spectacular."
+  "nom": "Beet & Coconut Milk Gazpacho",
+  "description": "A bright pink, original gazpacho: cooked beet blended with coconut milk, brightened with lemon and mint. Sweet, earthy and spectacular.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the cooked beet into chunks, then peel and roughly chop the cucumber."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the beet and cucumber with the coconut milk in a blender for 2 min until you get a smooth, creamy texture."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the lemon juice and a pinch of salt, then blend again to balance the acidity against the earthiness of the beet."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Drizzle in the olive oil while blending to bind the soup and give it body."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass the gazpacho through a fine strainer if needed for a perfectly velvety texture."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate for at least 1 hr to serve the gazpacho thoroughly chilled."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour into bowls, add a drizzle of coconut milk and a few mint leaves before serving ice-cold."
+   }
+  ]
  },
  "millefeuillebetterave": {
-  "nom": "Beetroot & Goat Cheese Millefeuille",
-  "description": "A chic, easy starter: beetroot discs layered with fresh goat cheese, walnuts and a drizzle of honey. Elegant, fresh and colorful."
+  "nom": "Beet & Goat Cheese Millefeuille",
+  "description": "A chic, easy starter: rounds of beet layered with fresh goat cheese, walnuts and a drizzle of honey. Elegant, fresh and colorful.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Using a round cutter, cut the cooked beet into even disks about 5 mm thick."
+   },
+   {
+    "titre": "Walnuts",
+    "detail": "Roughly crush the walnuts and toast them dry in a skillet for 3 min to bring out their flavor."
+   },
+   {
+    "titre": "Goat Cheese",
+    "detail": "Mash the fresh goat cheese with a fork along with a little pepper to make it easy to spread."
+   },
+   {
+    "titre": "Vinaigrette",
+    "detail": "Make a vinaigrette by whisking together the olive oil, balsamic vinegar, honey, salt and pepper."
+   },
+   {
+    "titre": "Stack",
+    "detail": "In a ring mold, alternate a beet disk with a layer of goat cheese, building three to four straight, even tiers."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Carefully lift off the ring, scatter with toasted walnuts, spoon over the vinaigrette and add a drizzle of honey."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with chopped parsley, add a turn of the pepper mill and serve cold as an elegant starter."
+   }
+  ]
  },
  "auberginesrotiesfeta": {
   "nom": "Roasted Eggplant & Feta",
-  "description": "Eggplant roasted until meltingly tender, topped with crumbled feta, tomatoes and mint. A simple, sun-filled Mediterranean starter."
+  "description": "Eggplant roasted until meltingly tender, topped with crumbled feta, tomatoes and mint. A simple, sun-drenched Mediterranean starter.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C and line a baking sheet with parchment paper."
+   },
+   {
+    "titre": "Score",
+    "detail": "Halve the eggplants lengthwise and score the flesh in a deep crosshatch pattern without piercing the skin."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Mix the olive oil with the minced garlic, brush it generously over the eggplant flesh and season with salt."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Place the eggplants cut-side up and roast for 30 min at 200°C until the flesh is tender and golden."
+   },
+   {
+    "titre": "Topping",
+    "detail": "While they roast, dice the tomatoes small and crumble the feta."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Straight out of the oven, scatter the crumbled feta and diced tomatoes over the hot eggplants."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with chopped mint and oregano, drizzle with olive oil and serve warm."
+   }
+  ]
  },
  "oeufsbrouilleshaddock": {
   "nom": "Scrambled Eggs with Smoked Haddock",
-  "description": "The comforting Scottish brunch: creamy scrambled eggs folded with flaked smoked haddock, on toast. Briny and melting."
+  "description": "The comforting Scottish brunch: creamy scrambled eggs folded with flaked smoked haddock, on a slice of toast. Briny and tender.",
+  "etapes": [
+   {
+    "titre": "Poach",
+    "detail": "Slip the haddock into a little simmering milk (never boiling) and poach for 4 to 5 minutes to tenderize it and mellow its smokiness."
+   },
+   {
+    "titre": "Flake",
+    "detail": "Drain the haddock, remove the skin and any bones, then flake the flesh into large pieces and keep it warm."
+   },
+   {
+    "titre": "Beat",
+    "detail": "Crack the eggs into a bowl, add the cream and a pinch of pepper, and beat lightly with a fork, going easy on the salt since the haddock is already salty."
+   },
+   {
+    "titre": "Scramble",
+    "detail": "Melt the butter in a pan over very low heat, pour in the eggs, and stir constantly with a spatula to form small creamy curds."
+   },
+   {
+    "titre": "Control",
+    "detail": "Pull the pan off the heat just before the eggs are done: the residual heat finishes them so they stay soft and glossy, never dry."
+   },
+   {
+    "titre": "Fold In",
+    "detail": "Gently add the flaked haddock to the scrambled eggs and fold softly to warm it through without breaking the creamy texture."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toast slices of bread, spoon the haddock scramble on top, scatter with chopped parsley, and serve immediately, piping hot."
+   }
+  ]
  },
  "fritesceleri": {
-  "nom": "Celeriac Fries with Horseradish",
-  "description": "Oven-roasted celeriac fries, crisp outside and tender inside, served with a punchy horseradish-yogurt dip. The clever, light appetizer."
+  "nom": "Celery Root Fries with Horseradish",
+  "description": "Oven-roasted celery root fries, crispy outside and meltingly tender inside, served with a zesty horseradish yogurt sauce. The smart, light party snack.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Peel the celery root and cut it into even fry-shaped sticks for uniform cooking."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat the sticks with olive oil and paprika, then lightly salt and toss well."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Spread on a baking sheet without overcrowding and roast at 200°C for 25 min until golden and crispy."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "While they roast, mix the yogurt and horseradish with a pinch of salt for a fresh, zesty sauce."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Halfway through, flip the fries so they brown evenly on all sides."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Salt the fries as they come out of the oven and serve right away, piping hot, with the horseradish sauce."
+   }
+  ]
  },
  "oeufsturque": {
   "nom": "Turkish Eggs (Çılbır)",
-  "description": "The iconic Turkish breakfast: poached eggs over garlicky yogurt, drizzled with paprika butter, on a bed of spinach. Comforting yet surprisingly light."
+  "description": "The iconic Turkish breakfast: poached eggs set over garlicky yogurt, drizzled with paprika-infused melted butter, on a bed of spinach. Comforting and surprisingly light.",
+  "etapes": [
+   {
+    "titre": "Garlic yogurt",
+    "detail": "Mix the yogurt with the crushed garlic and a pinch of salt, then spread it in a generous layer over the bottom of the plate."
+   },
+   {
+    "titre": "Wilt spinach",
+    "detail": "Wilt the spinach in a pan with a drizzle of olive oil for 2 to 3 min until tender."
+   },
+   {
+    "titre": "Prep water",
+    "detail": "Bring a saucepan of water to a gentle simmer, add a splash of vinegar and create a whirlpool with a spoon."
+   },
+   {
+    "titre": "Poach eggs",
+    "detail": "Slip the eggs one at a time into the center of the whirlpool and poach them for 3 min for a white that wraps neatly around the runny yolk."
+   },
+   {
+    "titre": "Paprika butter",
+    "detail": "Melt the butter over low heat with the paprika until it takes on a beautiful red-orange color."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Set the spinach over the garlic yogurt, then gently place the drained poached eggs on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Generously drizzle the eggs with the paprika butter and serve right away with bread for mopping up."
+   }
+  ]
  },
  "mafeaubergine": {
   "nom": "Eggplant Mafé",
-  "description": "The vegetarian take on Senegalese mafé: melting eggplant simmered in a creamy peanut-and-tomato sauce, served with rice. Comforting and budget-friendly."
+  "description": "The vegetarian version of Senegalese mafé: meltingly tender eggplant simmered in a silky peanut butter and tomato sauce, served with rice. Comforting and budget-friendly.",
+  "etapes": [
+   {
+    "titre": "Prep veggies",
+    "detail": "Slice the onion, mince the garlic and cut the eggplant into large, even cubes about 3 cm wide."
+   },
+   {
+    "titre": "Sweat onion",
+    "detail": "Sweat the onion and garlic in the olive oil for 3 to 4 min over medium heat until translucent."
+   },
+   {
+    "titre": "Sear eggplant",
+    "detail": "Add the eggplant cubes and let them color for 5 min, stirring, so they develop a light golden crust."
+   },
+   {
+    "titre": "Peanut sauce",
+    "detail": "Loosen the peanut butter with the crushed tomatoes and a little water, then pour this sauce over the vegetables."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let it simmer covered for 20 to 25 min over low heat until the eggplant is meltingly tender and the sauce is coating."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the chili, adjust the salt and loosen the sauce with a little hot water if it has thickened too much."
+   },
+   {
+    "titre": "Cook rice",
+    "detail": "Cook the white rice separately in an equal volume of salted water until fully absorbed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the eggplant mafé piping hot over a bed of steaming white rice."
+   }
+  ]
  },
  "couscousfalafels": {
-  "nom": "Couscous with Falafels",
-  "description": "A colorful vegetarian couscous: fluffy semolina, simmered vegetables and golden chickpea falafels, lifted with a touch of harissa. Complete and full of flavor."
+  "nom": "Couscous with Falafel",
+  "description": "A colorful vegetarian couscous: fluffy semolina, simmered vegetables and golden chickpea falafel, lifted with a touch of harissa. Hearty and full of flavor.",
+  "etapes": [
+   {
+    "titre": "Blend chickpeas",
+    "detail": "Blend the chickpeas with the onion, cumin and herbs until you get a paste that holds together."
+   },
+   {
+    "titre": "Shape falafel",
+    "detail": "Form even balls from the paste and set them aside while you prepare the vegetables."
+   },
+   {
+    "titre": "Brown falafel",
+    "detail": "Brown the falafel in the olive oil for 6 to 8 min, turning them, for an evenly crisp crust."
+   },
+   {
+    "titre": "Simmer veggies",
+    "detail": "Cut the zucchini and carrot into pieces and simmer them with the tomatoes and a little harissa for 15 min over medium heat."
+   },
+   {
+    "titre": "Hydrate semolina",
+    "detail": "Pour boiling salted water over the semolina with a drizzle of oil, cover and let it swell for 5 min."
+   },
+   {
+    "titre": "Fluff semolina",
+    "detail": "Fluff the semolina with a fork so it stays light and airy without clumping."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Mound the semolina into a dome, arrange the simmered vegetables around it and set the falafel on top."
+   }
+  ]
  },
  "carottesconfites": {
   "nom": "Confit Carrots with Chimichurri",
-  "description": "Carrots roasted slowly until meltingly tender, brightened by a herby, tangy chimichurri. A simple side (or veggie main) full of zing."
+  "description": "Carrots roasted slowly until melting, brightened by a herby, tangy chimichurri. A simple side (or vegetarian main) full of zing.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Peel the carrots, cut them on the bias or lengthwise in half if they're large, then lay them out in a baking dish."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Drizzle generously with olive oil, season with salt and pepper and toss by hand to coat every carrot well."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Roast at 200°C for 30 min, stirring halfway through, until the carrots are melting in the center and nicely caramelized."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Meanwhile, finely chop the parsley and garlic, then mince the chili to taste."
+   },
+   {
+    "titre": "Chimichurri",
+    "detail": "Mix the parsley, garlic, oregano, chili, a splash of wine vinegar and olive oil into a well-bound green sauce."
+   },
+   {
+    "titre": "Season",
+    "detail": "Taste the chimichurri and adjust the salt, vinegar and oil so it's punchy and nicely tangy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spoon the chimichurri over the still-warm carrots so they soak up the aromas, and serve warm as a side or starter."
+   }
+  ]
  },
  "carotteslaquees": {
   "nom": "Soy-Glazed Carrots",
-  "description": "Carrots glazed in a glossy soy-honey lacquer, sprinkled with sesame and spiked with ginger. An irresistible sweet-savory Asian side."
+  "description": "Carrots glazed in a glossy soy-honey lacquer, scattered with sesame and lifted with ginger. An irresistible sweet-and-savory Asian side.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Peel the carrots and cut them into even sticks about 1 cm thick for uniform cooking."
+   },
+   {
+    "titre": "Grate",
+    "detail": "Finely grate the fresh ginger to release its fragrance."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Heat the olive oil in a pan or wok over high heat and sear the carrot sticks with the ginger for 4 to 5 min, stirring."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Pour in the soy sauce and honey, lower to medium heat and let it reduce for 5 to 6 min until the glaze coats the spoon and wraps the carrots in a glossy sheen."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Stir regularly so all the carrots are coated and stay slightly crisp in the center."
+   },
+   {
+    "titre": "Scatter",
+    "detail": "Off the heat, scatter generously with sesame seeds and toss gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the soy-glazed carrots piping hot and glossy, as a side for rice or a Japanese dish."
+   }
+  ]
  },
  "tomatesgratinees": {
   "nom": "Gratinéed Tomatoes & Roasted Mushrooms",
-  "description": "Persillade-gratinéed tomatoes and golden roasted mushrooms: a simple, fragrant, comforting seasonal vegetarian dish."
+  "description": "Tomatoes gratinéed with garlic-parsley topping alongside golden roasted mushrooms: a simple, fragrant and comforting seasonal vegetarian dish.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the tomatoes in half, salt the cut sides and let them drain for 10 min, then pat them dry so they don't release too much water."
+   },
+   {
+    "titre": "Mushrooms",
+    "detail": "Clean and thinly slice the mushrooms, then arrange them around the tomatoes in a baking dish."
+   },
+   {
+    "titre": "Persillade",
+    "detail": "Finely chop the garlic and parsley, then mix them with the picked thyme leaves and grated Gruyère."
+   },
+   {
+    "titre": "Top",
+    "detail": "Spread the Gruyère persillade evenly over the tomatoes and mushrooms."
+   },
+   {
+    "titre": "Drizzle",
+    "detail": "Drizzle with a little olive oil, then salt and pepper everything."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Bake at 200°C for 20 min until the top is golden and crisp and the vegetables are tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot from the oven, alongside grilled meat or as a light main."
+   }
+  ]
  },
  "rizjaponaiscacahuete": {
   "nom": "Rice & Veggies, Peanut Sauce",
-  "description": "A balanced bowl: Japanese rice, crisp just-sautéed vegetables, all coated in a lime-peanut sauce. Fresh, indulgent and complete."
+  "description": "A balanced bowl: Japanese rice, crisp just-sautéed vegetables, all coated in a lime peanut sauce. Fresh, satisfying and complete.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Rinse the Japanese rice under cold water, then cook it according to the package and keep it warm, covered."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the broccoli into small florets, the carrot into thin slices and the bell pepper into strips."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Heat a pan or wok over high heat and sauté the broccoli, carrot and bell pepper for 4 to 5 min to keep them nice and crisp."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "In a bowl, loosen the peanut butter with the soy sauce, lime juice and water added spoonful by spoonful until you get a coating sauce."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste the sauce and balance the lime acidity and the saltiness of the soy to your liking."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Divide the rice among the bowls, add the crisp vegetables and spoon over plenty of peanut sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with sesame seeds and serve right away, warm, with a lime wedge."
+   }
+  ]
  },
  "saladebrocoli": {
   "nom": "Energizing Broccoli & Dried Fruit Salad",
-  "description": "A salad that wakes you up: crunchy broccoli, soft raisins, toasted almonds and feta, tossed in a lemon-honey dressing. Vitamin-packed and filling."
+  "description": "A salad that wakes you up: crunchy broccoli, plump raisins, toasted almonds and feta, tied together with a lemon-honey dressing. Vitamin-packed and filling.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the broccoli into small, even florets and rinse the raisins in warm water to plump them up."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Drop the broccoli florets into boiling salted water for 2 min, then immediately shock them in an ice bath to set the green and keep the crunch."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the chopped almonds in a pan for 2 to 3 min until lightly colored and toasty-smelling."
+   },
+   {
+    "titre": "Dressing",
+    "detail": "Whisk the olive oil, lemon juice and honey, season with salt and pepper for a balanced dressing."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Drain the broccoli thoroughly and toss it with the raisins, almonds and crumbled feta in a bowl."
+   },
+   {
+    "titre": "Season",
+    "detail": "Pour the dressing over the salad and toss gently to coat every floret well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chilled, as a light, energizing dish or a crunchy side."
+   }
+  ]
  },
  "wokpoulet": {
-  "nom": "Chicken & Vegetable Wok",
-  "description": "A quick, colorful wok: golden chicken, crisp vegetables and rice, stir-fried over high heat with soy and ginger. The complete weeknight meal in 25 minutes."
+  "nom": "Wok de Poulet aux Légumes",
+  "description": "A quick, colorful stir-fry: golden chicken, crisp vegetables, and rice, all seared over high heat with soy and ginger. A complete weeknight meal in 25 minutes.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice ahead of time and let it cool completely so it won't stick in the wok."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Slice the chicken into strips, break the broccoli into florets, cut the pepper into strips, and the carrot into sticks."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the chicken over high heat in the screaming-hot wok for 4 to 5 min until colored, then set aside."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Stir-fry the broccoli, carrot, and pepper for 4 min over high heat with the grated ginger to keep them crisp."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the chicken and the cold rice, and stir-fry everything for 2 min, tossing constantly."
+   },
+   {
+    "titre": "Season",
+    "detail": "Deglaze with soy sauce, toss for 1 min, and serve right away, piping hot, in bowls."
+   }
+  ]
  },
  "curryrougepoulet": {
-  "nom": "Red Chicken Curry with Coral Lentils",
-  "description": "A comforting Thai red curry: chicken and coral lentils simmered in coconut milk fragrant with curry paste. Creamy, spicy and nourishing."
+  "nom": "Curry Rouge de Poulet aux Lentilles Corail",
+  "description": "A comforting Thai red curry: chicken and red lentils simmered in coconut milk perfumed with curry paste. Silky, spicy, and nourishing.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the chicken into bite-size pieces, slice the onion, and rinse the red lentils under cold water."
+   },
+   {
+    "titre": "Paste",
+    "detail": "Sauté the red curry paste with the onion for 2 to 3 min until the aromas fill the kitchen."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Add the chicken and sear for 4 min, coating it well in the fragrant curry paste."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pour in the coconut milk and red lentils, bring to a gentle simmer, and cook for 15 min until it naturally thickens."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust the seasoning, adding a little water if the curry is too thick."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with fresh cilantro and serve piping hot over plain fragrant rice."
+   }
+  ]
  },
  "sauteporcromarin": {
-  "nom": "Rosemary Pork Sauté with Broccoli",
-  "description": "A fragrant sauté: rosemary-seared pork, crisp broccoli and a touch of apricot for a surprising, balanced sweet-savory contrast."
+  "nom": "Sauté de Porc au Romarin & Brocoli",
+  "description": "A fragrant stir-fry: pork seared with rosemary, crisp broccoli, and a touch of apricot for a surprising, balanced sweet-and-savory contrast.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the pork into thin strips, slice the onion, mince the garlic, and break the broccoli into small florets."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the pork over high heat with the rosemary and garlic for 4 min until nicely colored, then set aside."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Stir-fry the broccoli and onion for 5 min over high heat to keep them nice and crisp."
+   },
+   {
+    "titre": "Apricot",
+    "detail": "Add the apricots cut into wedges and let them soften for 2 min, just enough to glaze without breaking down."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the pork and its juices to the wok, toss, and warm everything through for 2 min."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve this sweet-and-savory stir-fry piping hot right away."
+   }
+  ]
  },
  "cotriade": {
-  "nom": "Breton Fish Stew (Cotriade)",
-  "description": "Brittany's answer to bouillabaisse: a leek-and-potato broth in which chunks of fish gently poach. Rustic, comforting and briny."
+  "nom": "Breton Cotriade",
+  "description": "Brittany's bouillabaisse: a broth fragrant with leeks and potatoes in which chunks of fish poach. Rustic, comforting, and briny.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the leek and onion, cut the potatoes and carrot into pieces, and cut the cod into large cubes."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the leek and onion in olive oil over medium heat 5 min without coloring."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add the potatoes, carrot, and thyme, cover with broth, and cook 20 min until the vegetables are tender."
+   },
+   {
+    "titre": "Season",
+    "detail": "Taste the broth and adjust the salt and pepper before adding the fish."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Cut the high heat, set the cod cubes into the simmering broth, and poach them 5 min without stirring so they stay tender."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 2 min off the heat so the flavors mingle and the fish finishes cooking gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the broth and vegetables in shallow bowls, the fish set on top, with country bread."
+   }
+  ]
  },
  "clafoutistomate": {
   "nom": "Savory Cherry Tomato Clafoutis",
-  "description": "Clafoutis gone savory: melting cherry tomatoes set in a soft cheese-and-basil batter. Perfect warm as a starter or appetizer."
+  "description": "Clafoutis goes savory: meltingly soft cherry tomatoes set in a tender cheese-and-basil batter. Perfect warm as a starter or for the apéro.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 180°C and brush a baking dish with olive oil."
+   },
+   {
+    "titre": "Tomatoes",
+    "detail": "Wash the cherry tomatoes, arrange them in the dish, and roast them on their own for 10 min so they release their water."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Meanwhile, whisk the eggs with the milk, flour, and a pinch of salt until you have a smooth, lump-free batter."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Stir the grated gruyère and chopped basil into the batter, then mix gently."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Take out the dish and pour the batter over the still-hot roasted tomatoes, spreading it out evenly."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 30 min, until the clafoutis is set in the center and golden brown on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it cool for 5 min, scatter with fresh basil, and serve warm as a starter with a drizzle of olive oil."
+   }
+  ]
  },
  "bruschettapoiscasses": {
   "nom": "Split Pea & Mackerel Bruschetta",
-  "description": "A clever, budget-friendly bruschetta: a lemony split-pea spread topped with mackerel and a drizzle of oil. Briny, original and full of good nutrients."
+  "description": "A clever, budget-friendly bruschetta: a lemony split pea spread topped with mackerel and a drizzle of oil. Briny, original and packed with good nutrients.",
+  "etapes": [
+   {
+    "titre": "Cook peas",
+    "detail": "Simmer the split peas for 25 min in water until fully tender, then drain them."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Mash the split peas with the garlic, lemon juice and olive oil into a creamy but still thick purée."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and pepper and adjust the acidity with a little lemon, keeping the texture firm enough not to soak the bread."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Toast the bread slices until golden, then rub them with a cut garlic clove."
+   },
+   {
+    "titre": "Top",
+    "detail": "Spread the split pea purée over the toasts and generously add the flaked mackerel."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Drizzle with olive oil, scatter with chopped parsley and add a few turns of the pepper mill before serving right away."
+   }
+  ]
  },
  "guacamolebrocoli": {
   "nom": "Broccoli Guacamole",
-  "description": "A clever, lighter guacamole: some of the avocado is swapped for blended steamed broccoli. Just as creamy, greener, less fatty — no one will notice."
+  "description": "A clever, lighter guacamole: part of the avocado is swapped for blended steamed broccoli. Just as creamy, greener and lower in fat, no one will notice the difference.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the broccoli into small florets, chop the red onion and cilantro, and finely mince the chile."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the broccoli for 8 min until tender, then blend into a smooth purée and let cool."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the avocado flesh with a fork, keeping a bit of texture, then fold it into the broccoli purée."
+   },
+   {
+    "titre": "Acidify",
+    "detail": "Squeeze in plenty of lime right at the start to preserve the green color and keep the avocado from browning."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the red onion, cilantro, chile and salt, then mix and taste to adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spoon into a bowl, smooth the surface and serve cold with tortillas or raw veggies."
+   }
+  ]
  },
  "gateausavoie": {
-  "nom": "Savoy Sponge Cake",
-  "description": "The airy sponge from the Savoy mountains: an ultra-light cake raised with whipped egg whites, barely sweet and melting. Perfect plain or with custard."
+  "nom": "Gâteau de Savoie",
+  "description": "The airy sponge of the Savoy mountains: an ultra-light cake lifted by whipped egg whites, barely sweet and melt-in-the-mouth. Perfect plain or with crème anglaise.",
+  "etapes": [
+   {
+    "titre": "Prep the mold",
+    "detail": "Generously butter a tube mold, then coat it with sugar by rolling it around, and preheat the oven to 160°C."
+   },
+   {
+    "titre": "Separate",
+    "detail": "Carefully separate the whites from the yolks of 6 eggs into two bowls, without leaving the slightest trace of yolk in the whites."
+   },
+   {
+    "titre": "Whisk pale",
+    "detail": "Whisk the yolks vigorously with the sugar and vanilla for 5 min until the mixture turns pale and triples in volume."
+   },
+   {
+    "titre": "Fold in",
+    "detail": "Sift the flour and cornstarch together, then fold them in gently with a spatula to keep the batter airy."
+   },
+   {
+    "titre": "Whip whites",
+    "detail": "Whip the whites to stiff peaks with a pinch of salt, then fold them in three additions, lifting the mixture from the bottom up."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pour into the mold and bake at 160°C for 40 min without ever opening the oven so the cake doesn't collapse."
+   },
+   {
+    "titre": "Unmold",
+    "detail": "Let it cool for 10 min, unmold onto a rack and serve plain with crème anglaise or a red-berry coulis."
+   }
+  ]
  },
  "pizzaamatriciana": {
-  "nom": "Amatriciana Pizza",
-  "description": "The pizza inspired by the Roman pasta: tomato, crispy pancetta, onion and parmesan shavings. Rustic, smoky and savory."
+  "nom": "Pizza Amatriciana",
+  "description": "The pizza inspired by the Roman pasta: tomato, crisp bacon, onion and shaved Parmesan. Rustic, smoky and savory.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250°C) with the stone or baking sheet inside for 30 min."
+   },
+   {
+    "titre": "Sear Bacon",
+    "detail": "Cook the bacon in a skillet over medium heat until nicely golden and crisp, then drain it."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice the onion into thin, even slivers."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough ball by hand into a thin disc with an even rim, without a rolling pin."
+   },
+   {
+    "titre": "Top",
+    "detail": "Coat the base with tomato sauce, spread the mozzarella, then add the seared bacon and the sliced onion."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake 8 to 10 min until the crust is golden and the cheese is melted."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Out of the oven, scatter with shaved Parmesan and add a turn of the pepper mill."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with olive oil and serve immediately, piping hot."
+   }
+  ]
  },
  "pizzagreca": {
   "nom": "Greek Pizza",
-  "description": "A taste of the Mediterranean: tomato, mozzarella, crumbled feta, olives and red onion. Fresh, sunny and easy."
+  "description": "A taste of the Mediterranean: tomato, mozzarella, crumbled feta, olives, and red onion. Fresh, sunny, and easy to make.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 250°C (ideally with a stone or baking sheet inside) to sear the dough instantly."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Thinly slice the red onion, pit and halve the olives, crumble the feta, and slice the mozzarella."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough out thin and spread an even layer of crushed tomatoes, leaving a 1 cm border."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter the mozzarella, olives, and red onion across the surface, without overloading so the crust stays crisp."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 250°C for 8 to 10 min until the edges puff and brown and the cheese has melted."
+   },
+   {
+    "titre": "Feta",
+    "detail": "Halfway through (around 5 min), add the crumbled feta: just warmed it stays creamy, overcooked it dries out."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Out of the oven, sprinkle with dried oregano and drizzle with olive oil before serving piping hot."
+   }
+  ]
  },
  "pizzapollobbq": {
   "nom": "BBQ Chicken Pizza",
-  "description": "The indulgent American pizza: chicken, red onion and corn on a smoky barbecue base. Sweet, savory and generous."
+  "description": "The indulgent American pizza: chicken, red onion, and corn over a smoky barbecue base. Sweet, savory, and generous.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 250°C with the baking sheet inside to get a crisp base."
+   },
+   {
+    "titre": "BBQ chicken",
+    "detail": "Dice the cooked chicken and toss it with a little barbecue sauce so it's well coated and glossy."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Thinly slice the red onion, drain the corn, and chop the fresh cilantro, setting it aside."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out the dough and brush it with a thin layer of barbecue sauce as the base: too thick, it burns and turns too sweet."
+   },
+   {
+    "titre": "Top",
+    "detail": "Spread the mozzarella, diced chicken, red onion, and corn evenly over the dough."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 250°C for 10 to 12 min until the edges are golden and the cheese is melted and sizzling."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter freshly chopped cilantro over the pizza out of the oven, add a drizzle of olive oil, and serve right away."
+   }
+  ]
  },
  "chipslegumes": {
-  "nom": "Homemade Vegetable Chips",
-  "description": "The crunchy, colorful snack: thin slices of sweet potato, beet and carrot oven-roasted until crisp. Far healthier than store-bought chips."
+  "nom": "Homemade Veggie Chips",
+  "description": "A crunchy, colorful snack: thin slices of sweet potato, beet and carrot roasted in the oven until crisp. Far healthier than store-bought chips.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 150°C and line two baking sheets with parchment paper."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Peel the sweet potato, beet and carrot, then slice them very thin on a mandoline."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Pat each slice dry in a clean towel to remove any residual moisture."
+   },
+   {
+    "titre": "Season",
+    "detail": "Toss the slices with a drizzle of olive oil, salt and paprika, mixing gently."
+   },
+   {
+    "titre": "Spread out",
+    "detail": "Arrange the slices in a single layer on the sheets without overlapping."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Bake at 150°C for 20 to 25 min, watching closely, until the chips are crisp and golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let them cool on the sheet so they finish crisping up, then serve right away as a snack."
+   }
+  ]
  },
  "soupeauxchoux": {
   "nom": "Cabbage Soup",
-  "description": "The comforting country soup: cabbage, potatoes, carrots and onion slow-simmered. Rustic, light and full of good sense."
+  "description": "The comforting country soup: cabbage, potatoes, carrots, and onion simmered long and slow. Rustic, light, and full of good sense.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Slice the cabbage, dice the potatoes and carrots into even pieces, and finely chop the onion."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch the cabbage 2 min in boiling water, then drain to tenderize it and make it more digestible and less bitter."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the onion in olive oil over medium heat 4 to 5 min until it turns translucent."
+   },
+   {
+    "titre": "Add",
+    "detail": "Add the blanched cabbage, potatoes, and carrots, then stir 2 min to coat them in the fat."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover with broth, bring to a simmer, and let cook 30 min over low heat until the vegetables are perfectly tender."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust the salt and pepper, and mash a few potatoes against the side to lightly thicken the soup."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the cabbage soup piping hot, with toasted country bread alongside."
+   }
+  ]
  },
  "pizzatonno": {
   "nom": "Tuna & Onion Pizza",
-  "description": "The fisherman's pizza: tuna, red onion and olives on tomato sauce and mozzarella. Simple, briny and always a hit."
+  "description": "The fisherman's pizza: tuna, red onion and olives over tomato sauce and mozzarella. Simple, briny and always a winner.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250°C) with the stone or baking sheet inside for 30 min."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Thinly slice the red onion and carefully drain the tuna along with the olives."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough ball by hand into a thin disc with an even rim, without a rolling pin."
+   },
+   {
+    "titre": "Top Base",
+    "detail": "Coat the base with tomato sauce then spread the drained mozzarella evenly."
+   },
+   {
+    "titre": "Topping",
+    "detail": "Arrange the red onion slivers and the olives, setting the flaked tuna aside for later."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake 12 to 14 min, then add the flaked tuna halfway through so it stays tender and does not dry out."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Out of the oven, drizzle with olive oil and add a turn of the pepper mill."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve this Mediterranean pizza right away, piping hot."
+   }
+  ]
  },
  "pizzasalsiccia": {
-  "nom": "Salsiccia Pizza",
-  "description": "The rustic Italian pizza: golden sausage meat, arugula and parmesan shavings. Indulgent and full of character."
+  "nom": "Pizza Salsiccia",
+  "description": "The rustic Italian pizza: browned sausage meat, arugula and shaved Parmesan. Indulgent and full of character.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250°C) with the stone or baking sheet inside for 30 min."
+   },
+   {
+    "titre": "Crumble",
+    "detail": "Remove the casings from the sausages and crumble the meat into small, even pieces by hand."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough ball by hand into a thin disc with an even rim, without a rolling pin."
+   },
+   {
+    "titre": "Top Base",
+    "detail": "Coat the base with tomato sauce then spread the drained mozzarella."
+   },
+   {
+    "titre": "Sausage",
+    "detail": "Scatter the raw sausage meat in small pieces over the mozzarella; raw, it will stay juicy as it bakes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake 12 to 14 min until the crust is golden and the sausage meat is nicely colored."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Out of the oven, add a handful of fresh arugula and shaved Parmesan."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with olive oil and serve immediately, piping hot."
+   }
+  ]
  },
  "pizzaboscaiola": {
-  "nom": "Boscaiola Pizza",
-  "description": "The woodcutter's white pizza: cream, mushrooms and sausage, no tomato sauce. Creamy, woodsy and comforting."
+  "nom": "Pizza Boscaiola",
+  "description": "The woodcutter's white pizza: cream, mushrooms and sausage, no tomato sauce. Melting, woodsy and comforting.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250°C) with the stone or baking sheet inside for 30 min."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Thinly slice the mushrooms and crumble the casing-free sausage meat."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough ball by hand into a thin disc with an even rim, without a rolling pin."
+   },
+   {
+    "titre": "Cream Base",
+    "detail": "Coat the base with a thin layer of cream in place of the tomato, not too much so the pizza stays light."
+   },
+   {
+    "titre": "Top",
+    "detail": "Spread the mozzarella, the sliced mushrooms and the crumbled sausage meat across the whole surface."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake 12 to 14 min until the crust is golden, the mushrooms cooked and the sausage colored."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Out of the oven, scatter with chopped parsley and add a turn of the pepper mill."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with olive oil and serve right away this indulgent, woodsy white pizza."
+   }
+  ]
  },
  "glacenoixpecan": {
   "nom": "Pecan Ice Cream",
-  "description": "A nostalgic American ice cream: brown-sugar caramel custard with butter-roasted pecan pieces. Real butter pecan."
+  "description": "A nostalgic American ice cream: vanilla custard with brown sugar caramel and chunks of pecans toasted in butter. Real butter pecan, the genuine article.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Melt the butter in a pan, brown the pecans 4 min over medium heat with a pinch of salt, then chop them roughly."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Bring the milk and cream to a simmer in a saucepan and set aside off the heat."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Whisk the egg yolks with the brown sugar until the mixture turns pale and foamy."
+   },
+   {
+    "titre": "Crème anglaise",
+    "detail": "Pour the hot milk over the yolks, return to low heat and cook, stirring, to 83°C, when the custard coats the back of the spoon."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Strain the custard, let it cool then refrigerate 1 h so it's nice and cold before churning."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn the base 25 min and add the toasted pecans right at the end so they keep their crunch."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Place in the freezer 2 h, then take out 5 min before serving in generous scoops sprinkled with a few pecan pieces."
+   }
+  ]
  },
  "glacecookiedough": {
   "nom": "Cookie Dough Ice Cream",
-  "description": "The ultimate treat ice cream: a vanilla base studded with chunks of raw (egg-free) chocolate-chip cookie dough."
+  "description": "The ultimate indulgent ice cream: a vanilla base studded with chunks of raw (egg-free) chocolate chip cookie dough.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Spread the flour on a sheet pan and toast it for 10 min at 180°C to make it safe to eat raw, then let it cool."
+   },
+   {
+    "titre": "Cookie dough",
+    "detail": "Cream the softened butter with the brown sugar, add the toasted flour and chopped dark chocolate, then shape into small chunks and chill."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Bring the milk and cream to a simmer with the vanilla and let it steep for a few minutes off the heat."
+   },
+   {
+    "titre": "Custard",
+    "detail": "Whisk the yolks with the sugar until pale, pour in the hot milk, then cook over low heat to 83°C, stirring constantly."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Strain the custard and refrigerate for 1 hr until perfectly cold before churning."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn the base for 25 min until creamy and smooth."
+   },
+   {
+    "titre": "Fold in",
+    "detail": "Add the cookie dough chunks at the end of churning and mix briefly to distribute them."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Freeze for 2 hr, take out 5 min before serving, and scoop into balls loaded with dough bits."
+   }
+  ]
  },
  "glacetiramisu": {
   "nom": "Tiramisu Ice Cream",
-  "description": "Tiramisu in frozen form: mascarpone, coffee and soaked ladyfingers, dusted with cocoa. The Italian dessert in a scoop."
+  "description": "Tiramisu in frozen form: mascarpone, coffee, and soaked ladyfingers, all dusted with cocoa. The Italian dessert in a scoop.",
+  "etapes": [
+   {
+    "titre": "Coffee",
+    "detail": "Brew a strong coffee, let it cool slightly, then quickly dip the crumbled ladyfingers in just enough to moisten them."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Whip the mascarpone with the egg yolks and sugar until smooth and airy."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Stir the milk and cream into the mascarpone mixture to get a smooth, pourable base."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn the base for 25 min until creamy, without letting it firm up too much."
+   },
+   {
+    "titre": "Layer",
+    "detail": "In a container, alternate layers of ice cream and coffee-soaked ladyfingers, keeping the ladyfingers just moist to preserve the bite."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Generously dust sifted unsweetened cocoa between the layers and over the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Freeze for 2 hr, take out 5 min before serving, and enjoy as scoops or slices dusted with a veil of cocoa."
+   }
+  ]
  },
  "sorbetmelon": {
   "nom": "Melon Sorbet",
-  "description": "Summer's most refreshing sorbet: ripe melon, a dash of lemon and just enough sugar. 100% fruit."
+  "description": "The most refreshing sorbet of the summer: ripe melon, a splash of lemon, and just enough sugar. 100% fruit.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Choose a very ripe, fragrant melon, remove the seeds, and scoop the flesh into large pieces."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Dissolve the sugar in the water over medium heat until fully melted, then let the syrup cool."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the melon flesh with the lemon juice until perfectly smooth."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Stir the cooled syrup into the melon purée, then refrigerate for 30 min so everything is well chilled."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn the mixture for 25 min until soft and smooth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Freeze for 2 hr, take out 5 min before serving, and scoop into refreshing balls, optionally with a few melon pearls."
+   }
+  ]
  },
  "sorbetlitchi": {
   "nom": "Lychee Sorbet",
-  "description": "A floral, delicate sorbet: fragrant lychees brightened with a touch of lime. Light, exotic and elegant after a meal."
+  "description": "A floral, delicate sorbet: fragrant lychees brightened with a splash of lime. Light, exotic, and elegant to finish a meal.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Pit the lychees and peel them if fresh, reserving the fragrant flesh."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Dissolve the sugar in the water over medium heat until you have a clear syrup, then let it cool."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the lychee flesh with the lime juice until smooth and velvety."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Stir the cooled syrup into the purée, balancing the lime to lift the lychee without masking its perfume, then refrigerate for 30 min."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn the mixture for 25 min until creamy and smooth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Freeze for 2 hr, take out 5 min before serving, and enjoy as delicately scented scoops finished with a little lime zest."
+   }
+  ]
  },
  "sorbetcassis": {
   "nom": "Blackcurrant Sorbet",
-  "description": "An intense, tangy sorbet: blackcurrant at its aromatic peak, barely sweetened. A spectacular purple color."
+  "description": "An intense, tangy sorbet: blackcurrant in all its aromatic power, barely sweetened. A spectacular purple color.",
+  "etapes": [
+   {
+    "titre": "Prep blackcurrants",
+    "detail": "Rinse 500 g of fresh or thawed blackcurrants, remove the stems, and drain in a colander."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the blackcurrants with the juice of half a lemon until smooth."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass the purée through a fine sieve, pressing with a spatula to remove all the skins and hard seeds."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Heat the water and sugar to 40°C until fully dissolved, let it cool slightly, then stir into the strained purée."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cover and refrigerate the mixture for 1 hr at 4°C so it is thoroughly cold before churning."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Pour into the ice cream maker and churn for 25 to 30 min until creamy and smooth."
+   },
+   {
+    "titre": "Set",
+    "detail": "Transfer to a container, smooth the top, and firm up for 2 hr in the freezer before scooping."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Take out 5 min ahead, scoop with a spoon dipped in hot water, and serve with a few fresh blackcurrants."
+   }
+  ]
  },
  "beurreamande": {
   "nom": "Almond Butter",
-  "description": "Homemade almond butter: just roasted almonds blended for a long time until they release their oil, with a touch of honey and salt. Rich and creamy."
+  "description": "Homemade almond butter: just toasted almonds blended long enough to release their oil, with a hint of honey and salt. Rich and silky.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Toast the almonds in the oven at 160°C until golden and fragrant."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the almonds on their own for a long time until you get a pourable butter. CHEF'S TIP: keep going well past the powder stage — the almonds release their oil and turn into cream."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add honey, salt, and oil, then blend until smooth."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pour into a jar; stir before using (natural separation)."
+   }
+  ]
  },
  "confitureabricot": {
   "nom": "Apricot Jam",
-  "description": "The quintessential summer jam: ripe apricots, a dash of lemon and just enough sugar for a perfect set and bright flavor."
+  "description": "The quintessential summer jam: ripe apricots, a splash of lemon, and just enough sugar for a perfect set and a bright, true flavor.",
+  "etapes": [
+   {
+    "titre": "Macerate",
+    "detail": "Pit and cut the apricots, toss with the sugar and lemon, and let macerate for 1 hr."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Bring to a boil and cook over high heat, stirring."
+   },
+   {
+    "titre": "Test",
+    "detail": "Drop test on a cold plate: it should set. CHEF'S TIP: tie a few cracked pits in a cheesecloth bundle and cook them along — the kernel inside subtly perfumes the jam."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pour boiling hot into sterilized jars, seal, and turn upside down."
+   }
+  ]
  },
  "confituremyrtille": {
   "nom": "Blueberry Jam",
-  "description": "An intense, velvety jam: sugar-soaked blueberries, barely brightened with lemon. Sublime on fresh bread or yogurt."
+  "description": "An intense, velvety jam: sugar-soaked blueberries with just a touch of lemon. Sublime on fresh bread or yogurt.",
+  "etapes": [
+   {
+    "titre": "Macerate",
+    "detail": "Toss the blueberries with the sugar and lemon and let macerate for 1 hr."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook over high heat, stirring and crushing some of the fruit."
+   },
+   {
+    "titre": "Test",
+    "detail": "Drop test on a cold plate. CHEF'S TIP: lemon juice, rich in pectin, helps the jam set without loading it up with sugar."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pour boiling hot into sterilized jars and turn upside down."
+   }
+  ]
  },
  "marmeladeorange": {
   "nom": "Orange Marmalade",
-  "description": "The English breakfast marmalade: oranges, candied peel and an elegant bitterness balanced by sugar. A winter toast wake-up call."
+  "description": "The English breakfast marmalade: oranges, candied peel, and an elegant bitterness balanced by sugar. The wake-up call for winter toast.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Pare the zest into thin strips, peel the oranges to the flesh, and reserve the pulp."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch the zest 2 to 3 times to soften the bitterness."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the pulp, zest, sugar, and lemon until it sets. CHEF'S TIP: blanching the zest several times removes the harsh bitterness while keeping the fragrance."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pour boiling hot into sterilized jars."
+   }
+  ]
  },
  "geleecoing": {
   "nom": "Quince Jelly",
-  "description": "Grandmother's translucent jelly: quince juice, naturally rich in pectin, sets on its own into a fragrant amber jelly."
+  "description": "Grandma's translucent jelly: quince juice, naturally rich in pectin, sets all on its own into an amber, fragrant jelly.",
+  "etapes": [
+   {
+    "titre": "Cook the quinces",
+    "detail": "Cut the quinces (skin and seeds included) and cook them in water until tender."
+   },
+   {
+    "titre": "Extract the juice",
+    "detail": "Strain through cheesecloth without pressing, for a clear juice."
+   },
+   {
+    "titre": "Cook the jelly",
+    "detail": "Cook the juice with the sugar and lemon until it sets. CHEF'S TIP: don't press the cheesecloth — a cloudy juice would give an opaque jelly instead of a translucent one."
+   },
+   {
+    "titre": "Jar",
+    "detail": "Pour boiling hot into sterilized jars."
+   }
+  ]
  },
  "kouglof": {
   "nom": "Kouglof",
-  "description": "The Alsatian brioche in its fluted mold: a rich buttery leavened dough, dotted with soaked raisins and almonds, dusted with icing sugar."
+  "description": "The Alsatian brioche in its fluted mold: a buttery yeasted dough studded with macerated raisins and almonds, dusted with powdered sugar.",
+  "etapes": [
+   {
+    "titre": "Soak raisins",
+    "detail": "Soak the raisins in a little warm water or rum for 30 min to plump them up."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead the flour, yeast, warm milk, eggs, sugar and salt until you have a soft, elastic dough."
+   },
+   {
+    "titre": "Add butter",
+    "detail": "Work in the soft butter, kneading at length until the dough turns smooth and pulls away from the bowl."
+   },
+   {
+    "titre": "First rise",
+    "detail": "Cover and let it double in size for 1 hr 30 in a warm spot, then knock it back and fold in the drained raisins."
+   },
+   {
+    "titre": "Fill mold",
+    "detail": "Butter the kouglof mold and set an almond in each flute before pouring in the dough."
+   },
+   {
+    "titre": "Second rise",
+    "detail": "Let the dough rise back up nearly to the rim of the mold, about 1 hr, in a warm spot."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 40 to 45 min, unmold while still warm, then dust generously with powdered sugar."
+   }
+  ]
  },
  "tarteausucre": {
   "nom": "Sugar Tart",
-  "description": "The tart of northern France and Belgium: a soft brioche dough topped with a melting brown-sugar-and-cream filling, caramelized in the oven."
+  "description": "The classic tart of northern France and Belgium: a soft brioche base topped with a melting brown-sugar and cream filling, caramelized in the oven.",
+  "etapes": [
+   {
+    "titre": "Knead dough",
+    "detail": "Knead the flour, yeast, warm milk, egg, butter and salt until you have a soft brioche dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and let it double in size for about 1 hr in a warm spot away from drafts."
+   },
+   {
+    "titre": "Line pan",
+    "detail": "Roll the dough into a buttered pan and let it rise again for 30 min so it puffs slightly."
+   },
+   {
+    "titre": "Make wells",
+    "detail": "Press evenly spaced dimples into the dough with your fingertip to hold the filling."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spoon brown sugar into the wells, then pour the cream over the top to create caramelized melting pools."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for 20 to 25 min until the top caramelizes beautifully."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it cool slightly, then enjoy the sugar tart while still soft, perfect with a coffee."
+   }
+  ]
  },
  "quatrequarts": {
-  "nom": "Pound Cake",
-  "description": "The simple Breton cake: four ingredients in equal weights — butter, sugar, flour, eggs. Moist, buttery and foolproof."
+  "nom": "Quatre-Quarts",
+  "description": "The simplest Breton cake: four ingredients in equal weights — butter, sugar, flour, eggs. Moist, buttery and foolproof.",
+  "etapes": [
+   {
+    "titre": "Separate eggs",
+    "detail": "Separate the whites from the yolks and take the butter out ahead of time so it softens fully."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Beat the soft butter with the sugar until the mixture is pale, light and fluffy."
+   },
+   {
+    "titre": "Add yolks",
+    "detail": "Add the egg yolks one at a time, whisking well between each for a smooth batter."
+   },
+   {
+    "titre": "Add flour",
+    "detail": "Gently fold in the flour, baking powder and salt without overworking the batter."
+   },
+   {
+    "titre": "Whip whites",
+    "detail": "Whip the whites to stiff peaks, then fold them in gently with a spatula for an airy cake."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pour into a buttered loaf pan and bake at 170°C for 45 min until a knife comes out clean."
+   },
+   {
+    "titre": "Unmold",
+    "detail": "Let it cool for 10 min before unmolding and cooling on a rack."
+   }
+  ]
  },
  "pokebowlpoulet": {
   "nom": "Chicken Poke Bowl",
-  "description": "The Hawaiian bowl, chicken version: vinegared rice, marinated chicken, avocado, cucumber, carrot and edamame. Fresh, complete and colorful."
+  "description": "The Hawaiian bowl, chicken version: vinegared rice, marinated chicken, avocado, cucumber, carrot and edamame. Fresh, complete and colorful.",
+  "etapes": [
+   {
+    "titre": "Cook rice",
+    "detail": "Cook the rice covered, then season it while warm with a splash of rice vinegar and let it cool slightly."
+   },
+   {
+    "titre": "Marinate chicken",
+    "detail": "Cut the chicken into strips and marinate it for 10 min in the soy sauce and lime juice."
+   },
+   {
+    "titre": "Cook chicken",
+    "detail": "Pan-fry the marinated chicken for 6 to 8 min over high heat until golden and cooked through."
+   },
+   {
+    "titre": "Cut veggies",
+    "detail": "Cut the avocado, cucumber and carrot into even slices, and thaw or briefly cook the edamame."
+   },
+   {
+    "titre": "Base",
+    "detail": "Spread the cooled rice across the bottom of the bowl as the base of the poke."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the chicken and each vegetable in neat, separate sections over the rice for a tidy presentation."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Sprinkle with sesame seeds, drizzle with a little soy sauce and squeeze on a bit of lime before serving."
+   }
+  ]
  },
  "cremebudwig": {
   "nom": "Budwig Cream",
-  "description": "Dr Kousmine's healthy breakfast: fromage blanc with omega-rich oil, mashed banana, cereals, seeds and fresh fruit. Complete morning energy."
+  "description": "Dr. Kousmine's healthy breakfast: fromage blanc and omega-rich oil, mashed banana, cereal, seeds and fresh fruit. A complete morning energy boost.",
+  "etapes": [
+   {
+    "titre": "Emulsify base",
+    "detail": "Whisk the fromage blanc with the olive oil and lemon juice until you get a smooth, even emulsion."
+   },
+   {
+    "titre": "Mash banana",
+    "detail": "Mash the banana with a fork and fold it into the base along with the honey for a sweet, creamy texture."
+   },
+   {
+    "titre": "Grind seeds",
+    "detail": "Grind the seeds fresh just before serving to release their omegas and make them easier to absorb."
+   },
+   {
+    "titre": "Add cereal",
+    "detail": "Fold the flakes and the ground seeds into the cream, mixing gently."
+   },
+   {
+    "titre": "Smooth",
+    "detail": "Pour the cream into a bowl and smooth the surface with a spoon for a clean presentation."
+   },
+   {
+    "titre": "Top",
+    "detail": "Crown with fresh raspberries and serve right away, chilled, for breakfast."
+   }
+  ]
  },
  "popcornmaison": {
   "nom": "Homemade Popcorn",
-  "description": "Sweet-and-salty homemade popcorn, made in 5 minutes in a pot: kernels popped in hot oil, coated with butter and caramelized sugar."
+  "description": "Sweet-and-salty homemade popcorn, made in 5 minutes on the stovetop: kernels that burst in hot oil, coated in butter and caramelized sugar.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Measure out the popcorn kernels and pour the oil into a large heavy-bottomed pot with a lid."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil over medium-high with 2-3 test kernels, lid on, until they pop."
+   },
+   {
+    "titre": "Pop",
+    "detail": "Add the rest of the corn, cover and shake regularly until the pops slow to 2-3 seconds apart."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Melt the butter with the sugar in a small saucepan, then pour it over the popcorn and toss."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt lightly and toss to spread the seasoning evenly over every kernel."
+   },
+   {
+    "titre": "Enjoy",
+    "detail": "Tip into a big bowl and enjoy right away, while the popcorn is warm and crisp."
+   }
+  ]
  },
  "olivesmarinees": {
   "nom": "Marinated Olives",
-  "description": "The Mediterranean appetizer in two minutes: olives livened up with garlic, lemon, herbs and a drizzle of olive oil. Best made the day before."
+  "description": "A two-minute Mediterranean appetizer: olives brightened with garlic, lemon, herbs and a drizzle of olive oil. Make them the day before for even more flavor.",
+  "etapes": [
+   {
+    "titre": "Drain",
+    "detail": "Drain and rinse the olives under cold water to remove excess brine, then pat them dry."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Crush the garlic cloves, zest and juice the lemon, then mince the herbs and chile."
+   },
+   {
+    "titre": "Combine",
+    "detail": "In a bowl, combine the olives with the garlic, zest, lemon juice, herbs, chile and olive oil."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Toss gently so every olive is well coated in the fragrant oil and aromatics."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Cover and chill for at least 2 hours, ideally overnight, so the olives soak up all the flavors."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Take them out 30 min before serving so the oil turns liquid again, then present as an appetizer with bread."
+   }
+  ]
  },
  "muffinssales": {
   "nom": "Savory Ham & Cheese Muffins",
-  "description": "Soft savory aperitif muffins: ham, gruyère and an airy batter. Perfect warm for a buffet, picnic or lunchbox."
+  "description": "Soft savory party muffins: ham, gruyère and a light, airy batter. Perfect warm for a buffet, a picnic or the lunchbox.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Grate the gruyère, dice the ham small and preheat the oven to 180°C."
+   },
+   {
+    "titre": "Mix dry",
+    "detail": "In a bowl, mix the flour, baking powder and a pinch of salt to evenly distribute the leavening."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Stir in the eggs, milk and oil, mixing just enough to get a smooth but still slightly lumpy batter."
+   },
+   {
+    "titre": "Add fillings",
+    "detail": "Add the grated gruyère and diced ham, folding gently to keep the muffins tender."
+   },
+   {
+    "titre": "Fill tins",
+    "detail": "Divide the batter into muffin tins filled three-quarters full to leave room for rising."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 22 to 25 min until the muffins are golden, risen and a knife tip comes out clean."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool for 5 min, then unmold; serve warm as an appetizer or for a picnic."
+   }
+  ]
  },
  "saladepatatedouce": {
   "nom": "Roasted Sweet Potato & Feta Salad",
-  "description": "A comforting, chic autumn salad: oven-roasted sweet potato, creamy feta, peppery arugula and crunchy walnuts, brought together with honey."
+  "description": "A comforting, chic autumn salad: oven-roasted sweet potato, creamy feta, peppery arugula and crunchy walnuts, all tied together with honey.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Peel the sweet potato and cut it into even 2 cm cubes for even cooking."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Coat the cubes with olive oil, salt, pepper, and roast in the oven at 200°C for 25 min, stirring halfway through, until tender and caramelized at the edges."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Meanwhile, dry-toast the chopped walnuts in a pan for 2 to 3 min until they release their aroma."
+   },
+   {
+    "titre": "Dressing",
+    "detail": "Whisk the olive oil, lemon juice and honey in a bowl, season with salt and pepper to get a lightly sweet-tangy dressing."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Let the sweet potato cool for 5 min, then toss it with the arugula, crumbled feta and walnuts in a bowl."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with the dressing and toss gently so the arugula doesn't wilt or the sweet potato break up."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate right away in a bowl, scatter with a little extra feta and serve warm."
+   }
+  ]
  },
  "babaganoush": {
   "nom": "Baba Ganoush",
@@ -1630,7 +5360,7 @@ window.RECETTES_EN = {
     "detail": "Serve immediately, very hot, with the sweet and sour sauce on the side."
    }
   ]
- },
+ },
  "lumpia": {
   "nom": "Lumpia",
   "description": "Filipino fried spring rolls: a delicate wrapper filled with ground pork and finely chopped vegetables, rolled tight and fried until crispy. Served with a sweet and sour dipping sauce.",
@@ -2298,28 +6028,40 @@ window.RECETTES_EN = {
   ]
  },
  "cakecitron": {
-  "nom": "Lemon Cake",
-  "description": "A tender and tangy cake, infused with lemon zest and topped with a glossy glaze. Perfect for afternoon tea or brunch.",
+  "nom": "Lemon Loaf Cake",
+  "description": "A moist, tangy loaf cake flavored with lemon zest and finished with a glaze. Perfect for an afternoon snack or brunch.",
   "etapes": [
    {
     "titre": "Preheat",
-    "detail": "Preheat the oven to 170°C and butter a loaf pan."
+    "detail": "Preheat the oven to 170°C (conventional heat) and generously butter a loaf pan, optionally lining it with parchment paper for easy release."
    },
    {
-    "titre": "Zest and Juice",
-    "detail": "Zest the lemons and squeeze the juice."
+    "titre": "Flavor",
+    "detail": "Wash the lemons, finely grate their zest while avoiding the bitter white pith, then squeeze the juice and set both aside separately."
    },
    {
-    "titre": "Mix",
-    "detail": "Whisk eggs and sugar together, then add yogurt, melted butter, lemon zest, and lemon juice."
+    "titre": "Whip",
+    "detail": "In a bowl, whisk the eggs vigorously with the sugar for 2 to 3 minutes until the mixture is pale and frothy."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Stir in the yogurt, the cooled melted butter, the lemon zest and juice, then mix until you have a smooth, fragrant batter."
    },
    {
     "titre": "Fold In",
-    "detail": "Add the sifted flour and baking powder, mixing gently without overworking."
+    "detail": "Add the flour and baking powder sifted together, then fold gently with a spatula just enough to combine, without overworking the batter."
    },
    {
     "titre": "Bake",
-    "detail": "Pour into the pan and bake for 40-45 minutes. Glaze with powdered sugar mixed with lemon juice."
+    "detail": "Pour the batter into the pan and bake at 170°C for 40 to 45 minutes; check doneness by inserting a knife blade, which should come out clean."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Unmold while still warm, mix powdered sugar with a little lemon juice until pourable, and drizzle this glaze over the cake."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let the glaze set and the cake cool completely before slicing; it's best enjoyed with tea or coffee."
    }
   ]
  },
@@ -4939,27 +8681,35 @@ window.RECETTES_EN = {
  },
  "baghrir": {
   "nom": "Baghrir",
-  "description": "The Maghrebi \"thousand-hole\" crêpe: fluffy and spongy, its thousands of tiny holes soak up honey and melted butter. A breakfast delight.",
+  "description": "The Maghrebi \"thousand-hole\" pancake: soft and spongy, its countless holes soak up honey and melted butter. A breakfast treat.",
   "etapes": [
    {
-    "titre": "Mix",
-    "detail": "Blend all ingredients with warm water into a smooth, liquid batter."
+    "titre": "Prep",
+    "detail": "Gather the fine semolina, flour, salt, sugar, active dry yeast, and baking powder, and warm the water (about 35°C) to activate the yeasts."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Pour all the ingredients into a blender with the warm water and blend for 2 to 3 minutes until you have a perfectly liquid, smooth, lump-free batter."
    },
    {
     "titre": "Rest",
-    "detail": "Let rest until the batter froths and bubbles on the surface."
+    "detail": "Cover the container with a cloth and let rest for 30 to 40 minutes at room temperature, until the surface foams and is covered with little bubbles."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat a small nonstick pan over medium heat, with no fat at all, until it is nice and hot."
    },
    {
     "titre": "Cook",
-    "detail": "Pour ladles of batter into a hot skillet with NO added fat. Cook on one side only: the holes form on their own."
+    "detail": "Pour in a ladle of batter and cook for 1 to 2 minutes on one side only: hundreds of tiny holes form on their own across the surface."
    },
    {
-    "titre": "Remove",
-    "detail": "Take off the heat as soon as the surface is dry and riddled with holes. Do not flip."
+    "titre": "Set Aside",
+    "detail": "Remove each baghrir as soon as the surface is completely dry and riddled with holes, never flipping it, and stack them flat."
    },
    {
     "titre": "Serve",
-    "detail": "Drizzle with honey mixed with melted butter, serve warm."
+    "detail": "Melt butter with honey, generously drizzle it over the still-warm baghrir, and serve right away for breakfast or an afternoon snack."
    }
   ]
  },
@@ -6350,28 +10100,36 @@ window.RECETTES_EN = {
   ]
  },
  "saladefruitsexotiques": {
-  "nom": "Exotic Fruit Salad",
-  "description": "Mango, pineapple, kiwi, and passion fruit, awakened with a splash of lime juice, honey, and mint. Fresh, fragrant, and sunny.",
+  "nom": "Tropical Fruit Salad",
+  "description": "Mango, pineapple, kiwi, and passion fruit, brightened with a splash of lime, honey, and mint. Fresh, fragrant, and sun-kissed.",
   "etapes": [
    {
-    "titre": "Prepare the fruits",
-    "detail": "Peel the mango, pineapple, kiwi, and banana. Cut into regular cubes."
+    "titre": "Peel",
+    "detail": "Peel the mango, pineapple, kiwi, and banana, carefully removing any tough parts and the fibrous core of the pineapple."
    },
    {
-    "titre": "Harvest the passion fruit",
-    "detail": "Cut the passion fruits in half and scoop out the pulp with a spoon."
+    "titre": "Cut",
+    "detail": "Cut all the fruit into even cubes about 1.5 cm for a balanced presentation and a well-proportioned bite."
    },
    {
-    "titre": "Quick syrup",
-    "detail": "Mix the lime juice and honey until dissolved."
+    "titre": "Scoop",
+    "detail": "Halve the passion fruits and scoop the pulp and seeds with a spoon into a separate bowl."
    },
    {
-    "titre": "Assemble",
-    "detail": "Pour the syrup over the fruits, add the passion fruit pulp, and gently toss."
+    "titre": "Syrup",
+    "detail": "Juice the lime and mix the juice with the honey until fully dissolved to make a light, tangy syrup."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Pour the syrup over the cubed fruit, add the passion fruit pulp, and toss gently to coat without crushing."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Finely chop the fresh mint and scatter it over the salad to add freshness and a herbal aroma."
    },
    {
     "titre": "Serve",
-    "detail": "Sprinkle with sliced mint. Chill for 30 minutes before serving."
+    "detail": "Chill the salad for at least 30 minutes before serving, giving the fruit time to soak up the syrup, and enjoy well chilled."
    }
   ]
  },
@@ -6406,50 +10164,70 @@ window.RECETTES_EN = {
   ]
  },
  "ananasroti": {
-  "nom": "Roasted Pineapple with Honey",
-  "description": "Caramelized pineapple slices in butter, honey, and vanilla with a hint of rum. An exotic and impressive express dessert.",
+  "nom": "Honey-Roasted Pineapple",
+  "description": "Pineapple slices caramelized in butter, honey, and vanilla, with a splash of rum. A quick, impressive tropical dessert.",
   "etapes": [
    {
-    "titre": "Cut the pineapple",
-    "detail": "Peel the pineapple and cut it into slices or large cubes."
+    "titre": "Prep Pineapple",
+    "detail": "Peel the pineapple, remove the eyes and tough core, then cut it into 2 cm slices or large, even cubes."
    },
    {
-    "titre": "Caramelize",
-    "detail": "Melt butter and honey in a skillet, then brown the pineapple 3 minutes per side."
+    "titre": "Prep Aromatics",
+    "detail": "Scrape a vanilla pod to collect its seeds and have the cinnamon and rum within easy reach."
    },
    {
-    "titre": "Flavor",
-    "detail": "Add cinnamon and vanilla, deglaze with rum."
+    "titre": "Make Caramel",
+    "detail": "In a wide skillet over medium heat, melt the butter, then add the honey and vanilla until you get a light blond caramel."
    },
    {
-    "titre": "Coat",
-    "detail": "Let the juice reduce into a coating caramel, drizzle over the pineapple."
+    "titre": "Brown Pineapple",
+    "detail": "Lay down the pineapple pieces and brown them about 3 min per side over medium-high heat, until nicely caramelized."
+   },
+   {
+    "titre": "Flambé",
+    "detail": "Dust with cinnamon, pour in the rum off the heat, then flambé or let the alcohol cook off for 1 min."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Return to low heat and let the juices reduce for 2 to 3 min until syrupy and coating."
    },
    {
     "titre": "Serve",
-    "detail": "Serve warm, optionally with a scoop of vanilla ice cream."
+    "detail": "Plate the warm pineapple, drizzle it with the caramel, and serve with a scoop of vanilla ice cream."
    }
   ]
  },
  "verrinefraisechantilly": {
-  "nom": "Strawberry Chantilly Verrine",
-  "description": "Fresh strawberries, vanilla whipped cream and mascarpone layered in a glass. A light, refreshing, and elegant summer dessert, ready in 20 minutes.",
+  "nom": "Strawberry Chantilly Verrines",
+  "description": "Fresh strawberries, vanilla whipped cream, and mascarpone layered in a verrine. A light, fresh, elegant summer dessert, ready in 20 minutes.",
   "etapes": [
    {
-    "titre": "Prepare the strawberries",
-    "detail": "Wash, hull, and cut the strawberries into pieces. Reserve some for garnish."
+    "titre": "Prep Strawberries",
+    "detail": "Wash, hull, and cut the strawberries into small pieces, setting aside a few nice whole ones for decoration."
    },
    {
-    "titre": "Whip the chantilly",
-    "detail": "Whip the very cold cream with the mascarpone and sugar until stiff peaks form."
+    "titre": "Chill",
+    "detail": "Place the bowl, whisk, cream, and mascarpone in the freezer for 10 min to whip up a nice firm chantilly."
    },
    {
-    "titre": "Assemble",
-    "detail": "Alternate strawberries and chantilly in the glasses."
+    "titre": "Whip",
+    "detail": "Whip the very cold cream with the mascarpone and the sugar, gradually speeding up until the chantilly is firm and smooth."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Lay a layer of strawberries in the bottom of the verrines, then pipe a generous layer of chantilly on top."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Repeat, alternating strawberries and chantilly up to the top of the verrines for a beautiful layered effect."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cover and refrigerate for at least 30 min so the chantilly firms up and the flavors meld."
    },
    {
     "titre": "Garnish",
-    "detail": "Top with a strawberry and a mint leaf. Chill until ready to serve."
+    "detail": "Just before serving, crown each with a whole strawberry and a fresh mint leaf."
    }
   ]
  },
@@ -10915,27 +14693,35 @@ window.RECETTES_EN = {
  },
  "panbagnat": {
   "nom": "Pan-bagnat",
-  "description": "The Nice-style sandwich that tastes like vacation: round bread soaked in olive oil, tuna, egg, tomato, bell pepper, olives, and anchovies. Best prepared in advance.",
+  "description": "The Niçois sandwich that tastes of summer holidays: a round roll soaked in olive oil, tuna, egg, tomato, pepper, olives and anchovies. Best made ahead.",
   "etapes": [
    {
-    "titre": "Cook the eggs",
-    "detail": "Hard boil the eggs for 9 minutes, peel them, and slice into rounds."
+    "titre": "Cook eggs",
+    "detail": "Drop the eggs into boiling water for 9 min, cool them, peel them, then slice into rounds."
    },
    {
-    "titre": "Prepare the filling",
-    "detail": "Thinly slice the tomato, bell pepper, and onion, drain the tuna."
+    "titre": "Prep",
+    "detail": "Thinly slice the tomato, pepper and onion into strips, and drain the tuna well."
    },
    {
-    "titre": "Soak the bread",
-    "detail": "Cut the round loaves in half, drizzle the crumb with olive oil."
+    "titre": "Soak",
+    "detail": "Cut the round rolls in half and drizzle the crumb generously with olive oil and a splash of vinegar."
    },
    {
-    "titre": "Assemble",
-    "detail": "Fill with tuna, egg, tomato, bell pepper, onion, olives, and anchovies."
+    "titre": "Fill",
+    "detail": "Layer on the tuna, egg slices, tomato, pepper, onion, black olives and anchovies."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season lightly with salt and pepper and add a final drizzle of olive oil before closing the roll."
    },
    {
     "titre": "Press",
-    "detail": "Close, wrap, and press in the refrigerator for 30 minutes: the bread will absorb the oil and everything will hold together."
+    "detail": "Wrap each pan-bagnat up tightly and press it for 30 min in the fridge so the bread soaks up the juices and everything holds together."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Unwrap and serve cold, ideally cut in half to reveal the colorful filling."
    }
   ]
  },
@@ -12614,24 +16400,32 @@ window.RECETTES_EN = {
   ]
  },
  "carottesrapees": {
-  "nom": "Shredded Carrots",
-  "description": "The timeless fresh appetizer: finely shredded carrots with a light lemon vinaigrette and parsley. Crispy, vitamin-packed, and ready in 15 minutes.",
+  "nom": "Grated Carrot Salad",
+  "description": "The timeless fresh starter: finely grated carrots, a light lemon vinaigrette, and parsley. Crunchy, full of vitamins, and ready in 15 minutes.",
   "etapes": [
    {
-    "titre": "Shred",
-    "detail": "Peel and finely shred the carrots."
+    "titre": "Peel",
+    "detail": "Peel the carrots, trim off both ends, and rinse them under cold water to remove any trace of dirt."
+   },
+   {
+    "titre": "Grate",
+    "detail": "Grate the carrots finely on the small holes of a grater or in a food processor, for tender strands that soak up the dressing well."
    },
    {
     "titre": "Vinaigrette",
-    "detail": "Mix lemon juice, olive oil, a pinch of sugar, salt, and pepper."
+    "detail": "Whisk together the fresh lemon juice, olive oil, and a small pinch of sugar, then season with salt and pepper, emulsifying with a fork."
    },
    {
-    "titre": "Season",
-    "detail": "Pour the vinaigrette over the carrots and mix well."
+    "titre": "Dress",
+    "detail": "Pour the vinaigrette over the grated carrots and toss thoroughly by hand to coat every strand."
    },
    {
-    "titre": "Finish",
-    "detail": "Sprinkle with chopped parsley. Let rest for 15 minutes in the refrigerator."
+    "titre": "Add Flavor",
+    "detail": "Finely chop the fresh parsley and scatter it over the salad, tossing gently."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover the bowl and let it rest in the fridge for at least 15 minutes, giving the carrots time to soften and the flavors to develop."
    }
   ]
  },
@@ -12666,24 +16460,32 @@ window.RECETTES_EN = {
   ]
  },
  "saladmelonfeta": {
-  "nom": "Melon-Feta Salad",
-  "description": "The perfect sweet and savory summer dish: juicy melon balls, creamy feta, fresh mint, and a drizzle of olive oil. Refreshing and addictive.",
+  "nom": "Melon and Feta Salad",
+  "description": "Summer's perfect sweet-and-savory bite: juicy melon balls, creamy feta, fresh mint, and a drizzle of olive oil. Refreshing and addictive.",
   "etapes": [
    {
-    "titre": "Prepare the melon",
-    "detail": "Cut the melon into balls or cubes, remove the seeds."
+    "titre": "Choose the Melon",
+    "detail": "Pick a ripe, fragrant melon, cut it in half, and scoop out the seeds with a spoon."
    },
    {
-    "titre": "Crumble the feta",
-    "detail": "Cut or crumble the feta into chunks."
+    "titre": "Cut",
+    "detail": "Scoop the flesh into balls with a melon baller, or cut into even 2 cm cubes, then chill."
    },
    {
-    "titre": "Assemble",
-    "detail": "Combine melon and feta, drizzle with olive oil and a squeeze of lemon."
+    "titre": "Crumble the Feta",
+    "detail": "Cut the feta into cubes or crumble it coarsely by hand to keep meltingly soft pieces that contrast with the melon."
    },
    {
-    "titre": "Finish",
-    "detail": "Top with sliced mint and a crack of black pepper. Serve well chilled."
+    "titre": "Dress",
+    "detail": "In a bowl, combine the melon and feta, drizzle with olive oil and a splash of lemon juice, then add a few turns of the pepper mill."
+   },
+   {
+    "titre": "Add Flavor",
+    "detail": "Finely chop the fresh mint leaves and scatter them over the salad, tossing gently so as not to crush the melon."
+   },
+   {
+    "titre": "Serve Cold",
+    "detail": "Chill for 10 minutes and serve well chilled, as a refreshing summer starter."
    }
   ]
  },
@@ -13470,50 +17272,70 @@ window.RECETTES_EN = {
   ]
  },
  "feuilletechevremiel": {
-  "nom": "Goat Cheese and Honey Puff Pastries",
-  "description": "Goat Cheese and Honey Puff Pastries — crispy and melting with fresh goat cheese and honey, enhanced with a touch of thyme and walnuts. An irresistible sweet and savory combination.",
+  "nom": "Goat Cheese and Honey Puffs",
+  "description": "Goat cheese and honey puffs — crisp, oozing with fresh goat cheese and honey, brightened with a touch of thyme and walnuts. Irresistibly sweet and savory.",
   "etapes": [
    {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C and take the puff pastry out at the last minute: nice and cold, it will rise into better layers."
+   },
+   {
     "titre": "Cut",
-    "detail": "Cut the puff pastry into squares. TIP: cold pastry = best puffing."
+    "detail": "Roll out the puff pastry and cut it into even squares about 8 cm wide, then arrange them on a parchment-lined baking sheet."
    },
    {
     "titre": "Fill",
-    "detail": "Round slice of goat cheese in the center, drizzle of honey, walnut pieces, a bit of thyme."
+    "detail": "Place a slice of goat cheese in the center of each square, with a drizzle of honey, a few crushed walnut pieces, and a pinch of fresh thyme leaves."
    },
    {
-    "titre": "Seal",
-    "detail": "Fold or leave open. Brush the edges with beaten egg. CHEF'S TIP: lightly score for steam to escape."
+    "titre": "Shape",
+    "detail": "Fold the corners toward the center or leave them open like little purses, then lightly score the pastry to let the steam escape."
+   },
+   {
+    "titre": "Egg Wash",
+    "detail": "Beat the egg and brush the edges of the puffs to get a beautiful, glossy golden finish when baked."
    },
    {
     "titre": "Bake",
-    "detail": "Oven at 200°C for 15-18 minutes, golden and puffed. SECRET: a final drizzle of warm honey when hot from the oven. Serve over salad."
+    "detail": "Bake at 200°C for 15 to 18 minutes, until the puffs are risen and golden brown."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Straight out of the oven, drizzle with one last touch of warm honey and serve at once on a bed of dressed baby greens."
    }
   ]
  },
  "escargots": {
   "nom": "Escargots de Bourgogne",
-  "description": "Escargots de Bourgogne — the ultimate festive appetizer: snails topped with a garlicky parsley butter, gratinéed in the oven. A regional classic.",
+  "description": "Escargots de Bourgogne — the grand festive starter: snails coated in a garlicky parsley butter and baked until golden. A regional must.",
   "etapes": [
    {
     "titre": "Snail Butter",
-    "detail": "HEART OF THE RECIPE: blend softened butter + minced garlic + minced shallot + minced parsley VERY finely, salt, pepper. CHEF'S TIP: a splash of pastis elevates the butter."
+    "detail": "Cream the softened butter with the very finely chopped garlic, shallot, and parsley, season with salt and pepper; a dash of pastis pleasantly lifts the mixture."
+   },
+   {
+    "titre": "Prep the Snails",
+    "detail": "Drain the snails carefully and pat them dry to keep the water from making the butter spatter as it cooks."
    },
    {
     "titre": "Fill",
-    "detail": "Drain the snails, slip one into each shell, then seal generously with the parsley butter."
+    "detail": "Slip a snail into the bottom of each shell, then seal the opening generously with firmly packed parsley butter."
    },
    {
-    "titre": "Chill",
-    "detail": "TIP: 15 minutes in the refrigerator to set the butter — it won't run during cooking."
+    "titre": "Firm Up",
+    "detail": "Chill the shells in the fridge for 15 minutes so the butter sets and won't run during baking."
    },
    {
     "titre": "Arrange",
-    "detail": "Place opening-side up in a snail dish (or nestle them on a bed of coarse salt)."
+    "detail": "Set the shells opening-up in a snail dish, or steady them on a bed of coarse salt so they stay stable."
    },
    {
-    "titre": "Gratinée",
-    "detail": "Oven 200°C for 10-12 minutes: the butter should sizzle and foam. KEY: serve IMMEDIATELY with bread for dipping."
+    "titre": "Brown",
+    "detail": "Bake at 200°C for 10 to 12 minutes, until the butter sizzles and foams on the surface."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, piping hot, with country bread to mop up the parsley butter."
    }
   ]
  },
@@ -13552,28 +17374,36 @@ window.RECETTES_EN = {
   ]
  },
  "oeufsmeurette": {
-  "nom": "Eggs in Red Wine Sauce",
-  "description": "Eggs in Red Wine Sauce — a Burgundy specialty: poached eggs topped with a red wine sauce, bacon, mushrooms, and onions. A distinctive hot appetizer.",
+  "nom": "Œufs en Meurette",
+  "description": "Œufs en meurette — a Burgundy specialty: poached eggs napped in a red wine sauce with lardons, mushrooms, and onions. A bold, warm starter.",
   "etapes": [
    {
     "titre": "Garnish",
-    "detail": "Sauté the bacon, sliced onions, and mushrooms until nicely browned. Set aside."
+    "detail": "Sauté the lardons, sliced onion, and mushrooms in a little butter until nicely browned, then set aside."
    },
    {
-    "titre": "Red Wine Sauce",
-    "detail": "Deglaze with red wine, add a bit of broth, reduce by half. SECRET: thicken with beurre manié (butter + flour) for a coating sauce."
+    "titre": "Deglaze",
+    "detail": "Deglaze the pan with red wine, add a little stock, and let it reduce by half over medium heat to concentrate the flavors."
+   },
+   {
+    "titre": "Thicken the Sauce",
+    "detail": "Work the butter with the flour into a beurre manié, whisk it in, and let it thicken over low heat until the sauce coats the back of a spoon."
    },
    {
     "titre": "Poaching Water",
-    "detail": "Water + splash of vinegar at a gentle simmer (never at a rolling boil). CHEF'S TIP: create a whirlpool before sliding in the egg."
+    "detail": "Bring a pot of water with a splash of vinegar to a gentle simmer, with no big bubbles, and stir to create a whirlpool."
    },
    {
     "titre": "Poach",
-    "detail": "Crack the egg into a ladle, slide it into the center of the whirlpool, 3 minutes. The white envelops the runny yolk. Drain."
+    "detail": "Crack each egg into a ladle and slide it into the heart of the whirlpool; poach for 3 minutes for a set white wrapping a runny yolk, then drain."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Toast slices of bread and rub them lightly with garlic to flavor the base for the poached egg."
    },
    {
     "titre": "Plate",
-    "detail": "KEY: poached egg on garlic-rubbed toast, coat generously with hot red wine sauce. Bacon, parsley, pepper."
+    "detail": "Set the poached egg on the toast, nap generously with the warm meurette sauce, scatter the garnish over, and finish with a turn of pepper and some parsley."
    }
   ]
  },
@@ -14309,27 +18139,31 @@ window.RECETTES_EN = {
  },
  "fromagefraismaison": {
   "nom": "Homemade Fresh Cheese",
-  "description": "Homemade fresh cheese paneer-style, ready in 15 minutes with no rennet needed: hot milk curdled with white vinegar, drained in cheesecloth. Spread it fresh, or press it firm to slice and pan-fry.",
+  "description": "Homemade fresh cheese, paneer-style, in 15 minutes and without rennet: hot milk curdled with white vinegar and drained in a cloth. Spreadable, or pressed so you can slice and pan-fry it.",
   "etapes": [
    {
-    "titre": "Heat the milk",
-    "detail": "Bring the milk (UHT milk is fine here) to a gentle simmer: small bubbles forming around the edges, without a rolling boil."
+    "titre": "Heat the Milk",
+    "detail": "Pour the milk into a large saucepan and bring it to a gentle simmer, until you see small bubbles forming around the edges but no full boil."
    },
    {
-    "titre": "Curdle with vinegar",
-    "detail": "Off the heat, pour the vinegar in slowly while stirring: the milk will curdle (white curds + translucent whey). Add a splash more vinegar if it doesn't curdle enough."
+    "titre": "Curdle",
+    "detail": "Off the heat, pour in the white vinegar little by little while stirring gently: the milk curdles, forming a white curd and a translucent whey."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "If the milk doesn't curdle enough, add a little more vinegar and stir until the curd separates completely."
    },
    {
     "titre": "Rest",
-    "detail": "Let rest for 5 minutes so the curds come together."
+    "detail": "Let it rest for 5 minutes so the curd gathers and separates cleanly from the liquid."
    },
    {
     "titre": "Drain",
-    "detail": "Pour into a strainer lined with clean cheesecloth. Rinse with cold water to remove the vinegar taste, then salt."
+    "detail": "Pour into a strainer lined with a clean cloth, rinse the curd under cold water to wash away the vinegar taste, then season with salt."
    },
    {
     "titre": "Press",
-    "detail": "Squeeze the cheesecloth to remove the liquid. For a firm cheese you can slice and pan-fry: press under a weight for 30 minutes to 1 hour. For spreading: leave it softer."
+    "detail": "Squeeze the cloth to expel the liquid, then place under a weight for 30 minutes to 1 hour for a firm cheese you can slice, or leave it softer to spread."
    }
   ]
  },
@@ -14973,97 +18807,133 @@ window.RECETTES_EN = {
  },
  "frozenyogurt": {
   "nom": "Frozen Yogurt",
-  "description": "The light and tangy alternative to ice cream: creamy Greek yogurt frozen with berries. Fresher and less sweet than regular ice cream.",
+  "description": "The light, tangy alternative to ice cream: a creamy Greek yogurt frozen with red berries. Fresher and less sweet than ice cream.",
   "etapes": [
    {
-    "titre": "Mix",
-    "detail": "Whisk the Greek yogurt with powdered sugar, honey, and lemon juice."
+    "titre": "Prep",
+    "detail": "Hull the strawberries, set a few aside for serving and mash the rest with a fork along with a splash of lemon juice."
    },
    {
-    "titre": "Fruit",
-    "detail": "Fold in the berries, crushed or whole depending on your preference."
+    "titre": "Mix",
+    "detail": "Whisk the Greek yogurt with the powdered sugar and honey until you get a perfectly smooth, glossy mixture."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add the remaining lemon juice to brighten the freshness, then gently fold in the mashed strawberries."
    },
    {
     "titre": "Churn",
-    "detail": "Pour into an ice cream maker until creamy, or place in the freezer."
+    "detail": "Pour the mixture into an ice cream maker and churn 20 min until creamy and smooth."
    },
    {
     "titre": "Smooth",
-    "detail": "Without an ice cream maker, stir every 30 minutes to prevent ice crystals."
+    "detail": "Without an ice cream maker, place in the freezer and whisk the mixture every 30 min for 2 h to break up the crystals."
    },
    {
     "titre": "Serve",
-    "detail": "Serve in scoops, slightly soft, with a few fresh berries."
+    "detail": "Take it out 5 min before enjoying, scoop into balls and garnish with the reserved fresh strawberries."
    }
   ]
  },
  "tofusaute": {
-  "nom": "Teriyaki Tofu Stir-Fry",
-  "description": "Teriyaki Tofu Stir-Fry — firm tofu cubes caramelized in teriyaki sauce, served with rice and vegetables. A savory and protein-rich vegan dish.",
+  "nom": "Teriyaki Sautéed Tofu",
+  "description": "Sautéed Tofu with Teriyaki Sauce — cubes of firm tofu caramelized in teriyaki sauce with rice and vegetables. A flavorful, protein-packed vegan dish.",
   "etapes": [
    {
-    "titre": "Prepare the tofu",
-    "detail": "Press firm tofu for 30 minutes in a clean kitchen towel to remove excess water. Cut into cubes. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Press",
+    "detail": "Wrap the firm tofu in a kitchen towel under a weight for 30 min to press out the water, then cut into 2 cm cubes."
    },
    {
-    "titre": "Fry the tofu",
-    "detail": "Brown the cubes in oil over high heat on all sides. They should be crispy. CHEF'S TIP: high heat to sear and caramelize the natural juices."
+    "titre": "Prep bok choy",
+    "detail": "Wash the bok choy, separate the leaves from the stems, and slice the stems into strips."
    },
    {
-    "titre": "Teriyaki sauce",
-    "detail": "Pour soy sauce, mirin, and sugar over the tofu. Cook for 2 minutes, stirring until caramelized."
+    "titre": "Sauce",
+    "detail": "Stir the soy sauce, mirin, and sugar together in a bowl until the sugar dissolves."
+   },
+   {
+    "titre": "Brown tofu",
+    "detail": "Heat the oil over high heat and sear the tofu cubes on all sides for 6 to 8 min until nicely crisp."
+   },
+   {
+    "titre": "Sauté veg",
+    "detail": "Set the tofu aside, stir-fry the bok choy for 2 to 3 min over high heat so it stays crunchy."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Return the tofu, pour in the teriyaki sauce, and cook for 2 min, stirring, until caramelized and glossy."
    },
    {
     "titre": "Serve",
-    "detail": "Serve over rice with sautéed bok choy, sesame seeds, and scallions."
+    "detail": "Plate over a bowl of rice with the bok choy, sprinkle with sesame seeds, and serve right away."
    }
   ]
  },
  "semoulecourgette": {
-  "nom": "Semolina with Zucchini",
-  "description": "Semolina with grilled vegetables — warm tabbouleh with zucchini, cherry tomatoes, and fresh herbs. A sunny side dish.",
+  "nom": "Couscous with Zucchini",
+  "description": "Couscous with grilled vegetables — a warm tabbouleh with zucchini, cherry tomatoes, and fresh herbs. A sunny side dish.",
   "etapes": [
    {
-    "titre": "Grill the zucchini",
-    "detail": "Cut the zucchini into rounds. Grill in a skillet with olive oil until golden. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Cut",
+    "detail": "Cut the zucchini into 5 mm rounds, halve the cherry tomatoes, and chop the fresh mint."
    },
    {
-    "titre": "Prepare the semolina",
-    "detail": "Pour the semolina into a salad bowl. Add the boiling broth, cover for 5 minutes. Fluff with a fork, adding olive oil and salt."
+    "titre": "Grill",
+    "detail": "Sear the zucchini rounds in a hot pan with a drizzle of olive oil for 6 to 8 min until nicely golden."
    },
    {
-    "titre": "Add the toppings",
-    "detail": "Mix in the grilled zucchini, halved cherry tomatoes, mint leaves, and cilantro."
+    "titre": "Hydrate",
+    "detail": "Pour the couscous into a bowl, cover with boiling broth to the same level, cover, and let it swell for 5 min."
    },
    {
-    "titre": "Season and serve",
-    "detail": "Drizzle generously with lemon juice and olive oil. Serve warm or at room temperature."
+    "titre": "Fluff",
+    "detail": "Fluff the couscous with a fork along with a drizzle of olive oil and a pinch of salt to separate the grains."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Stir the grilled zucchini, cherry tomatoes, and mint into the still-warm couscous."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with lemon juice and olive oil, season with salt and pepper, then toss gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or at room temperature, scattered with chopped mint for freshness."
    }
   ]
  },
  "buddhaBowl": {
   "nom": "Buddha Bowl",
-  "description": "A colorful and balanced Buddha bowl—grains, roasted vegetables, protein, and tahini sauce. A complete meal in one bowl.",
+  "description": "A colorful, balanced buddha bowl — grains, roasted vegetables, protein, and tahini sauce. A complete meal in a bowl.",
   "etapes": [
    {
-    "titre": "Cook the quinoa",
-    "detail": "Rinse the quinoa. Cook in 2x its volume of salted water over medium heat until the liquid is absorbed. Fluff with a fork. Rinse thoroughly with cold water."
+    "titre": "Cook quinoa",
+    "detail": "Rinse the quinoa and cook it in twice its volume of salted water over medium heat for 12 to 15 min until absorbed, then fluff."
    },
    {
-    "titre": "Roast the sweet potato",
-    "detail": "Cut the sweet potato into cubes. Season with olive oil, cumin, paprika, and salt. Roast in the oven. CHEF'S TIP: Use a sharp knife for clean cuts."
+    "titre": "Roast sweet potato",
+    "detail": "Cut the sweet potato into cubes, toss with olive oil and salt, and roast in the oven at 200°C for 25 min."
    },
    {
-    "titre": "Toast the chickpeas",
-    "detail": "Drain and dry the chickpeas. Pan-fry them with olive oil and spices until crispy and golden. Watch carefully: uniform golden color = ready to go, any longer and they'll burn."
+    "titre": "Crisp chickpeas",
+    "detail": "Drain and dry the chickpeas, then brown them in a pan with a drizzle of oil for 8 to 10 min until crisp."
    },
    {
-    "titre": "Prepare the tahini sauce",
-    "detail": "Mix tahini, lemon juice, pressed garlic, cold water, and salt. Whisk until you get a creamy sauce."
+    "titre": "Prep fresh",
+    "detail": "Slice the avocado, wash the fresh spinach, and squeeze the lemon for the sauce."
    },
    {
-    "titre": "Assemble the bowl",
-    "detail": "Arrange the quinoa, sweet potato, chickpeas, spinach, and sliced avocado in the bowl. Drizzle with tahini sauce. Top with sesame seeds and herbs."
+    "titre": "Tahini sauce",
+    "detail": "Whisk the tahini with the lemon juice, pressed garlic, salt, and a little cold water until creamy and pourable."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Arrange the quinoa, sweet potato, chickpeas, spinach, and avocado attractively in sections in the bowl."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle generously with tahini sauce and serve right away to keep the chickpeas crisp."
    }
   ]
  },
@@ -15111,45 +18981,65 @@ window.RECETTES_EN = {
  },
  "smoothiebowl": {
   "nom": "Smoothie Bowl",
-  "description": "A colorful and energizing bowl to start your day right — fruit, yogurt, and crunchy toppings.",
+  "description": "A colorful, energizing bowl to start the day right — fruit, yogurt, and crunchy toppings.",
   "etapes": [
    {
-    "titre": "Prepare the fruit",
-    "detail": "Use frozen berries and a frozen banana — they create a thick and creamy texture, like soft-serve ice cream."
+    "titre": "Prep fruit",
+    "detail": "Use pre-frozen berries and a banana for a thick, creamy, ice-cream-like texture."
    },
    {
-    "titre": "Blend the base",
-    "detail": "Blend the frozen fruit with Greek yogurt, plant-based milk, and honey until you reach a smooth and thick texture. Add milk gradually to adjust the consistency."
+    "titre": "Combine base",
+    "detail": "Put the frozen fruit in the blender with the yogurt, a little milk, and the honey."
    },
    {
-    "titre": "Pour into a bowl",
-    "detail": "Pour the smoothie into a bowl. It should be thick enough that the toppings don't sink in."
+    "titre": "Blend",
+    "detail": "Blend in pulses until smooth and very thick, adding the milk little by little to adjust."
    },
    {
-    "titre": "Arrange the toppings",
-    "detail": "Arrange fresh fruit, granola, chia seeds, and coconut on top. Enjoy immediately!"
+    "titre": "Pour",
+    "detail": "Pour the smoothie into a cold bowl; it should be firm enough to hold the toppings without them sinking."
+   },
+   {
+    "titre": "Top",
+    "detail": "Arrange fresh fruit, granola, and seeds nicely on top for crunch."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a drizzle of honey and enjoy immediately before the base melts."
    }
   ]
  },
  "saladepoischiches": {
   "nom": "Chickpea Salad",
-  "description": "A fresh and protein-packed chickpea salad — crispy vegetables, herbs, and lemon vinaigrette. Perfect for summer.",
+  "description": "A fresh, protein-rich chickpea salad — crunchy vegetables, herbs, and a lemony vinaigrette. Perfect for summer.",
   "etapes": [
    {
-    "titre": "Prepare the chickpeas",
-    "detail": "Drain and rinse the canned chickpeas. Pat dry with paper towels. Rinse thoroughly under cold water."
+    "titre": "Prep chickpeas",
+    "detail": "Drain and rinse the chickpeas under cold water, then pat them dry thoroughly with paper towels."
    },
    {
-    "titre": "Cut the vegetables",
-    "detail": "Dice the tomatoes, cut the seeded cucumber into small cubes, thinly slice the red onion. Chop the parsley. CHEF'S TIP: Use a sharp knife for clean cuts."
+    "titre": "Cut vegetables",
+    "detail": "Dice the tomatoes, cut the seeded cucumber into small cubes, and finely mince the red onion."
    },
    {
-    "titre": "Assemble",
-    "detail": "Combine the chickpeas, vegetables, and parsley in a large bowl."
+    "titre": "Chop parsley",
+    "detail": "Wash and finely chop the fresh parsley to flavor the salad."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Gather the chickpeas, tomatoes, cucumber, onion, and parsley in a large bowl."
    },
    {
     "titre": "Season",
-    "detail": "Drizzle generously with lemon juice and olive oil. Season with salt and pepper. Add cumin and paprika to taste. Toss well and refrigerate for 15 minutes before serving."
+    "detail": "Drizzle with lemon juice and olive oil, season with salt and pepper, then toss gently."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Refrigerate the salad for 15 min so the flavors mingle and the vegetables are nice and cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve chilled, scattered with a little extra parsley."
    }
   ]
  },
@@ -15158,94 +19048,134 @@ window.RECETTES_EN = {
   "description": "A creamy coconut milk vegetable curry — spiced, fragrant, and 100% vegetarian. Comforting and nourishing.",
   "etapes": [
    {
-    "titre": "Sauté the aromatics",
-    "detail": "Heat a drizzle of oil in a large skillet. Sauté the sliced onion for 5 minutes. Add the garlic and grated ginger. Cook for 2 minutes."
+    "titre": "Prep aromatics",
+    "detail": "Slice the onion, mince the garlic, and grate the fresh ginger; drain and rinse the chickpeas."
    },
    {
-    "titre": "Add the spices",
-    "detail": "Add the curry powder, cumin, and turmeric. Toast for 1 minute, stirring to release the aromas."
+    "titre": "Sweat",
+    "detail": "Sauté the onion in a drizzle of oil for 5 min over medium heat, then add the garlic and ginger and cook for 2 min."
    },
    {
-    "titre": "Add the tomatoes",
-    "detail": "Pour in the crushed tomatoes. Let reduce for 5 minutes. CHEF'S TIP: the sauce should coat the back of a spoon = proper consistency."
+    "titre": "Toast spices",
+    "detail": "Add the curry powder and toast for 1 min, stirring, to release all the aromas of the spices."
    },
    {
-    "titre": "Add coconut milk and chickpeas",
-    "detail": "Pour in the coconut milk and drained chickpeas. Mix well. Let simmer over medium heat. CHEF'S TIP: partially cover with a lid for better reduction."
+    "titre": "Tomatoes",
+    "detail": "Pour in the crushed tomatoes and let reduce for 5 min over medium heat until the sauce thickens."
    },
    {
-    "titre": "Add the spinach",
-    "detail": "Add the fresh spinach. Let sit for 2 minutes to wilt. Adjust seasoning. Serve with basmati rice or naan bread."
+    "titre": "Coconut milk",
+    "detail": "Stir in the coconut milk and chickpeas, then simmer over low heat for 12 to 15 min with the lid ajar."
+   },
+   {
+    "titre": "Spinach",
+    "detail": "Add the fresh spinach and let it wilt for 2 min, then adjust the seasoning with salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with basmati rice or naan bread to mop up the creamy curry."
    }
   ]
  },
  "saladequinoa": {
   "nom": "Quinoa Salad",
-  "description": "A fresh and complete quinoa salad — plant-based proteins, crispy vegetables, and a lemon vinaigrette.",
+  "description": "A fresh, complete quinoa salad — plant protein, crunchy vegetables, and a lemony vinaigrette.",
   "etapes": [
    {
-    "titre": "Cook the quinoa",
-    "detail": "Rinse the quinoa in cold water. Cook it in twice its volume of salted water over medium heat until the liquid is completely absorbed. Let rest for 5 minutes, then fluff with a fork. CHEF'S TIP: this resting period is ESSENTIAL for the final texture."
+    "titre": "Cook quinoa",
+    "detail": "Rinse the quinoa under cold water and cook it in twice its volume of salted water for 12 to 15 min until fully absorbed."
    },
    {
-    "titre": "Cool down",
-    "detail": "Let the quinoa cool completely — it should not be hot so it doesn't melt the feta."
+    "titre": "Fluff",
+    "detail": "Let it rest for 5 min off the heat, then fluff the quinoa with a fork to separate the grains."
    },
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Cut the cherry tomatoes in half, dice the cucumber, cut the bell pepper into small pieces. Chop the mint and parsley. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Cool",
+    "detail": "Let the quinoa cool completely so it won't melt the feta when mixed."
    },
    {
-    "titre": "Prepare the vinaigrette",
-    "detail": "Mix the lemon juice with olive oil, salt, and pepper. Whisk well."
+    "titre": "Cut vegetables",
+    "detail": "Halve the tomatoes, dice the cucumber, and cut the bell pepper into small even pieces."
+   },
+   {
+    "titre": "Vinaigrette",
+    "detail": "Whisk the lemon juice with the olive oil, salt, and pepper until emulsified."
    },
    {
     "titre": "Assemble",
-    "detail": "Mix the cooled quinoa with the vegetables. Pour the vinaigrette over and toss. Crumble the feta on top. Serve chilled."
+    "detail": "Mix the cooled quinoa with the vegetables, pour over the vinaigrette, and toss gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crumble the feta over the top and serve well chilled."
    }
   ]
  },
  "yaourt": {
   "nom": "Homemade Yogurt",
-  "description": "Creamy and natural homemade yogurt — only 2 ingredients, no yogurt maker needed!",
+  "description": "Creamy, natural homemade yogurt — just 2 ingredients, no yogurt maker needed!",
   "etapes": [
    {
-    "titre": "Heat the milk",
-    "detail": "Heat the milk to 45 °C (warm, not boiling — you should be able to hold your finger in it for 10 seconds). If you're using UHT milk, there's no need to heat it."
+    "titre": "Heat milk",
+    "detail": "Heat the milk to 45°C, warm to the touch without boiling; UHT milk can be used without heating."
    },
    {
-    "titre": "Add the cultures",
-    "detail": "Whisk the yogurt (or starter cultures) in a little warm milk, then mix with the rest of the milk. Stir gently."
+    "titre": "Dissolve starter",
+    "detail": "Stir the yogurt or the starter cultures into a little warm milk to distribute them evenly."
    },
    {
-    "titre": "Fill the jars",
-    "detail": "Pour into clean glass jars. Do not stir once the jars are filled."
+    "titre": "Mix",
+    "detail": "Stir the dissolved starter into the rest of the milk and whisk gently without creating foam."
    },
    {
-    "titre": "Let it ferment",
-    "detail": "Place the jars in a turned-off oven with the light on (or in a yogurt maker) to maintain a temperature of 40–45 °C."
+    "titre": "Fill jars",
+    "detail": "Pour into clean glass jars without stirring once they are filled."
    },
    {
-    "titre": "Refrigerate",
-    "detail": "Once the yogurt has set, refrigerate for at least 2 hours before serving. It keeps for 1 week."
+    "titre": "Ferment",
+    "detail": "Place the jars in a yogurt maker or a turned-off oven with the light on at 40-45°C for 8 h."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Once the texture has set, refrigerate for at least 2 h to firm up before serving."
+   },
+   {
+    "titre": "Store",
+    "detail": "Enjoy plain or with a fruit coulis; the yogurts keep for a week in the fridge."
    }
   ]
  },
  "pouletcitroncitronelle": {
-  "nom": "Lemon Lemongrass Chicken",
-  "description": "Thai-style lemon lemongrass chicken — light escalopes marinated and sautéed with lemongrass, ginger, and lime. Fragrant and very low in calories.",
+  "nom": "Lemongrass Lemon Chicken",
+  "description": "Thai-style lemongrass lemon chicken — light chicken cutlets marinated and stir-fried with lemongrass, ginger and lime. Fragrant and very low in calories.",
   "etapes": [
    {
-    "titre": "Marinate",
-    "detail": "Slice the escalopes. Marinate for 15 minutes with lime juice, finely minced lemongrass, ginger, and soy sauce."
+    "titre": "Slice",
+    "detail": "Cut the chicken cutlets into thin even strips for quick, even cooking."
    },
    {
-    "titre": "Sauté",
-    "detail": "Sauté over high heat in very little oil. Cook 3-4 minutes on each side. CHEF'S TIP: high heat to sear and caramelize the pan juices."
+    "titre": "Marinate",
+    "detail": "Combine lemon juice, chopped lemongrass, grated ginger and soy sauce, and marinate the chicken in it for 15 min in the fridge."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat a wok or skillet with a drizzle of oil until it is good and smoking hot."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the drained chicken over high heat for 3 to 4 min per side to color it and caramelize the juices."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Pour the rest of the marinade into the pan and let it reduce for 2 min, glazing the pieces with a coating sauce."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Off the heat, add fresh herbs and a final splash of lemon to brighten the dish."
    },
    {
     "titre": "Serve",
-    "detail": "Serve over basmati rice or vermicelli with fresh herbs and lime wedges."
+    "detail": "Serve over basmati rice or rice vermicelli, with lime wedges to squeeze at the table."
    }
   ]
  },
@@ -15254,56 +19184,100 @@ window.RECETTES_EN = {
   "description": "Japanese soba with dashi broth — cold buckwheat noodles, soy sauce, dashi and fresh toppings. Light, nutritious and ready in 15 minutes.",
   "etapes": [
    {
-    "titre": "Cook the soba",
-    "detail": "Cook the soba noodles for 4 minutes in boiling water. Rinse thoroughly with cold water to stop the cooking. Rinse thoroughly with cold water."
+    "titre": "Boil water",
+    "detail": "Bring a large pot of unsalted water to a rolling boil for cooking the soba noodles."
    },
    {
-    "titre": "Prepare the broth",
-    "detail": "Mix cold dashi, soy sauce, mirin and sugar. Taste and adjust."
+    "titre": "Cook soba",
+    "detail": "Drop the soba into the boiling water and cook for 4 min, stirring, adding a splash of cold water if the foam threatens to boil over."
    },
    {
-    "titre": "Garnish",
-    "detail": "Arrange the soba in bowls. Pour the cold broth over. Garnish with scallions, wakame seaweed, sesame seeds and ginger."
+    "titre": "Rinse",
+    "detail": "Drain the noodles and rinse them thoroughly under cold water, gently rubbing to wash away the starch and stop the cooking."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Combine the cold dashi, soy sauce and sugar, then taste and adjust the salty-sweet balance of the dipping broth."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Finely slice the scallions and grate the fresh ginger, to serve as condiments on the side."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Arrange the well-drained soba in bowls and serve the cold broth in individual dipping cups."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with scallions and ginger, then enjoy right away, dipping the noodles into the chilled broth."
    }
   ]
  },
  "saladeKale": {
   "nom": "Kale Salad",
-  "description": "Massaged kale salad — tender kale, parmesan, walnuts, cranberries and lemon vinaigrette. Crispy, nutritious and full of flavor.",
+  "description": "Massaged kale salad — tender kale, parmesan, walnuts, cranberries and a lemon vinaigrette. Crunchy, nutritious and full of flavor.",
   "etapes": [
    {
-    "titre": "Massage the kale",
-    "detail": "Remove the stems from the kale. Tear into small pieces. Massage vigorously with salt and olive oil for 2 minutes to soften."
+    "titre": "Prep kale",
+    "detail": "Remove the tough stems from the kale, tear the leaves into bite-sized pieces and put them in a large salad bowl."
    },
    {
-    "titre": "Toast the walnuts",
-    "detail": "Toast the crushed walnuts dry in a skillet. Set aside. Preheat the grill for 5 minutes. Surface should be very hot for nice char marks."
+    "titre": "Massage",
+    "detail": "Add a pinch of salt and a drizzle of olive oil, then vigorously massage the leaves for 2 to 3 min until they darken and soften."
+   },
+   {
+    "titre": "Toast walnuts",
+    "detail": "Roughly chop the walnuts and dry-toast them in a pan over medium heat for 3 to 4 min, stirring, until fragrant, then set aside."
    },
    {
     "titre": "Vinaigrette",
-    "detail": "Whisk together lemon juice, olive oil, mustard, honey, salt, and pepper."
+    "detail": "Emulsify the lemon juice, olive oil, honey, salt and pepper in a bowl until smooth and glossy."
+   },
+   {
+    "titre": "Parmesan",
+    "detail": "Using a peeler, shave wide curls of parmesan to scatter over the salad."
    },
    {
     "titre": "Assemble",
-    "detail": "Toss together kale, parmesan shavings, walnuts, and cranberries. Drizzle with vinaigrette. Toss and serve."
+    "detail": "Pour the vinaigrette over the massaged kale, add the toasted walnuts and parmesan shavings, then toss gently to coat well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate right away on chilled plates and enjoy as a light dish or a crunchy side."
    }
   ]
  },
  "tartarethon": {
   "nom": "Tuna Tartare",
-  "description": "Tuna tartare with avocado — raw ahi tuna, creamy avocado, sesame and soy sauce. Fresh, protein-rich and elegant as an appetizer or light main course.",
+  "description": "Tuna tartare with avocado — raw bluefin tuna, creamy avocado, sesame and soy sauce. Fresh, protein-packed and elegant as a starter or light main.",
   "etapes": [
    {
-    "titre": "Prepare the tuna",
-    "detail": "Cut the tuna into small, uniform dice. Season with soy sauce, sesame oil, grated ginger, and lemon. CHEF'S TIP: Use a sharp knife for clean cuts."
+    "titre": "Dice tuna",
+    "detail": "With a sharp knife, cut the very fresh tuna into small even cubes and keep it chilled."
    },
    {
-    "titre": "Prepare the avocado",
-    "detail": "Cut the avocado into dice. Squeeze lemon juice over it to prevent oxidation. CHEF'S TIP: Use a sharp knife for clean cuts."
+    "titre": "Avocado",
+    "detail": "Dice the avocado and drizzle it right away with a little lemon juice to keep it from browning."
    },
    {
-    "titre": "Plate",
-    "detail": "Using a ring mold, alternate layers of tuna and avocado. Sprinkle with toasted sesame seeds, chives, and Espelette pepper."
+    "titre": "Season",
+    "detail": "Toss the tuna with soy sauce, sesame oil, grated ginger and a splash of lemon, then adjust the seasoning."
+   },
+   {
+    "titre": "Sesame",
+    "detail": "Dry-toast the sesame seeds for 1 to 2 min in a pan until golden and fragrant."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the tartare rest for 10 min in the fridge so the flavors work their way into the flesh."
+   },
+   {
+    "titre": "Layer",
+    "detail": "In a plating ring, alternate a layer of avocado and a layer of tuna, pressing down lightly."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Carefully unmold, scatter with toasted sesame and serve well chilled, with a few toasts on the side."
    }
   ]
  },
@@ -15312,140 +19286,240 @@ window.RECETTES_EN = {
   "description": "Vegetarian protein bowl — quinoa, roasted chickpeas, avocado, soft-boiled egg and tahini. Complete, balanced and satisfying without meat.",
   "etapes": [
    {
-    "titre": "Cook the quinoa",
-    "detail": "Rinse the quinoa. Cook in 2x its volume of salted water. Let sit for 15 min covered. Rinse thoroughly with cold water."
+    "titre": "Cook quinoa",
+    "detail": "Rinse the quinoa and cook it in twice its volume of salted water, covered, for 15 min until absorbed, then fluff it."
    },
    {
-    "titre": "Roast the chickpeas",
-    "detail": "Drain the chickpeas. Coat with oil, cumin, and paprika. Roast in the oven for 20 min at 200°C. Preheat the oven 10 min before. Use convection heat for even roasting."
+    "titre": "Roast chickpeas",
+    "detail": "Drain the chickpeas, toss them with olive oil and spices, and roast in the oven at 200°C for 20 min until crispy."
    },
    {
-    "titre": "Cook the soft-boiled eggs",
-    "detail": "Cook the eggs for 6 min in boiling water. Cool and peel gently."
+    "titre": "Cook eggs",
+    "detail": "Drop the eggs into boiling water for 6 min for soft-boiled, cool them in ice water and peel gently."
    },
    {
-    "titre": "Assemble the bowl",
-    "detail": "Arrange quinoa, chickpeas, sliced avocado, and halved egg. Drizzle with lemon-garlic tahini sauce."
+    "titre": "Slice avocado",
+    "detail": "Cut the avocado into slices and add a squeeze of lemon so it doesn't brown."
+   },
+   {
+    "titre": "Tahini sauce",
+    "detail": "Whisk the tahini with lemon juice, pressed garlic, olive oil and a little water until you get a creamy sauce."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Arrange the quinoa, chickpeas, avocado and halved egg attractively in the bowl."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with the lemon-garlic tahini sauce and serve right away."
    }
   ]
  },
  "quinoalegumes": {
   "nom": "Quinoa with Vegetables",
-  "description": "Quinoa with sun-ripened vegetables — protein-rich quinoa with tomatoes, zucchini, bell peppers and fresh herbs. Complete, vegetarian and perfectly balanced.",
+  "description": "Quinoa with sun-ripened vegetables — protein-rich quinoa with tomatoes, zucchini, bell peppers and fresh herbs. Wholesome, vegetarian and beautifully balanced.",
   "etapes": [
    {
-    "titre": "Cook the quinoa",
-    "detail": "Rinse the quinoa. Cook in 2x its volume of salted water, covered, until all liquid is absorbed. Rinse thoroughly under cold water."
+    "titre": "Rinse",
+    "detail": "Rinse the quinoa under cold water in a fine sieve to remove its natural bitterness."
    },
    {
-    "titre": "Sauté the vegetables",
-    "detail": "Sauté zucchini, bell pepper, and cherry tomatoes in olive oil with garlic and Herbes de Provence."
+    "titre": "Cook quinoa",
+    "detail": "Cook the quinoa in twice its volume of salted water, covered, for 12 to 15 min until fully absorbed, then fluff with a fork."
    },
    {
-    "titre": "Mix and serve",
-    "detail": "Combine quinoa and vegetables. Season. Serve warm or cold with a squeeze of lemon and fresh basil. Salt and pepper generously. Taste and always adjust."
+    "titre": "Cut",
+    "detail": "Dice the zucchini and bell pepper into small pieces and cut the tomatoes into wedges."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté the vegetables in olive oil with the chopped garlic over high heat for 6 to 8 min, keeping a little crunch."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the quinoa and the sautéed vegetables, season with salt and pepper, then taste and adjust."
+   },
+   {
+    "titre": "Add lemon",
+    "detail": "Add a drizzle of lemon juice and a few shredded basil leaves for freshness."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or well chilled, as a complete vegetarian dish or a colorful side."
    }
   ]
  },
  "falafelbaked": {
   "nom": "Baked Falafel",
-  "description": "Oven-baked falafels — lighter than fried falafels, just as crispy. Chickpeas, cumin, coriander, and parsley. Perfect in a wrap or salad.",
+  "description": "Oven-baked falafel — lighter than fried falafel, just as crispy. Chickpeas, cumin, cilantro and parsley. Perfect in a wrap or salad.",
   "etapes": [
    {
-    "titre": "Prepare the batter",
-    "detail": "Pulse chickpeas (not canned, soaked raw), onion, garlic, coriander, cumin, and salt. The texture should be coarse, not smooth."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C and lightly oil a baking sheet."
    },
    {
-    "titre": "Form the patties",
-    "detail": "Form 3 cm balls. Place on an oiled baking sheet."
+    "titre": "Blend",
+    "detail": "Blend the previously soaked raw chickpeas with the onion, garlic, cilantro and salt until coarse but evenly combined."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add a little flour and mix until you get a dough that holds together without sticking, then let it rest for 10 min."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form 3 cm balls, packing them firmly, and arrange them on the oiled sheet."
+   },
+   {
+    "titre": "Brush",
+    "detail": "Lightly brush the falafel with oil to encourage a nice golden crust in the oven."
    },
    {
     "titre": "Bake",
-    "detail": "Lightly brush with oil. Bake at 200°C, turning halfway through cooking."
+    "detail": "Bake at 200°C for about 25 min, turning them halfway through, until golden and crispy."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with tahini sauce, tomatoes, cucumber, and fresh greens in pita bread or a wrap."
+    "detail": "Serve hot in a pita with tahini sauce, tomatoes, cucumber and green salad."
    }
   ]
  },
  "patatesdoucesCurry": {
   "nom": "Sweet Potato Curry",
-  "description": "Coconut milk sweet potato curry — creamy and comforting, spiced just right with turmeric and coriander. 100% vegan and satisfying.",
+  "description": "Sweet potato curry in coconut milk — melt-in-the-mouth and comforting, spiced just right with turmeric and cilantro. 100% vegan and filling.",
   "etapes": [
    {
-    "titre": "Sauté",
-    "detail": "Sweat the onion and garlic in coconut oil. Add curry powder, turmeric, and cumin. Toast for 1 minute."
+    "titre": "Prep",
+    "detail": "Peel the sweet potatoes and cut them into even cubes, slice the onion and mince the garlic."
    },
    {
-    "titre": "Add the Sweet Potatoes",
-    "detail": "Add the diced sweet potatoes. Pour in the coconut milk and a little water. Mix."
+    "titre": "Sweat",
+    "detail": "Sweat the onion and garlic in the oil over medium heat for 4 to 5 min until they turn translucent."
+   },
+   {
+    "titre": "Toast spices",
+    "detail": "Add the curry powder and toast the spices for 1 min, stirring, so they release all their fragrance."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Stir in the sweet potato cubes, pour in the coconut cream and the milk, then mix to coat everything well."
    },
    {
     "titre": "Simmer",
-    "detail": "Cover and simmer until the sweet potatoes are tender. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "detail": "Cover halfway and let simmer over low heat for 20 to 25 min until the sweet potatoes are tender and the sauce coats the spoon."
    },
    {
-    "titre": "Finish",
-    "detail": "Add the spinach off the heat. Sprinkle with fresh cilantro. Serve with basmati rice."
+    "titre": "Season",
+    "detail": "Salt, pepper and adjust the balance of the curry by tasting the sauce before serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with fresh cilantro and serve piping hot with basmati rice."
    }
   ]
  },
  "saladeLegsRoasted": {
   "nom": "Roasted Vegetable Salad",
-  "description": "Roasted vegetable salad with zucchini, bell pepper, and eggplant caramelized in the oven, served over a bed of arugula with feta and honey vinaigrette. Colorful and nutritious.",
+  "description": "Oven-roasted vegetable salad — caramelized zucchini, bell pepper and eggplant on a bed of arugula with feta and a honey dressing. Colorful and nutritious.",
   "etapes": [
    {
-    "titre": "Roast the vegetables",
-    "detail": "Cut the vegetables into large chunks. Coat with olive oil, salt, and Herbes de Provence. Roast in the oven at 200°C."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C on convection and line a baking sheet with parchment paper."
    },
    {
-    "titre": "Plate",
-    "detail": "Arrange the warm vegetables over the arugula. Crumble the feta. Drizzle with honey-mustard vinaigrette."
+    "titre": "Cut",
+    "detail": "Cut the zucchini, eggplant and bell pepper into large even pieces for even cooking."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Toss the vegetables with olive oil, salt and herbes de Provence, then spread them out in a single layer."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast in the oven at 200°C for 25 to 30 min, stirring halfway through, until the vegetables are tender and golden."
+   },
+   {
+    "titre": "Dressing",
+    "detail": "Meanwhile, whisk the honey with a little olive oil, salt and pepper for a gentle dressing."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Arrange the arugula on plates, spread the still-warm vegetables over it and crumble the feta on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with the honey dressing and serve right away as an indulgent warm salad."
    }
   ]
  },
  "assiettepouletpatate": {
   "nom": "Healthy Chicken Plate",
-  "description": "Healthy chicken plate with herb-marinated grilled chicken breast, roasted sweet potato, and steamed broccoli. A complete, balanced, and flavorful meal.",
+  "description": "Healthy grilled chicken plate — herb-marinated chicken breast, roasted sweet potato and steamed broccoli. A complete, balanced and flavorful meal.",
   "etapes": [
    {
-    "titre": "Marinate the chicken",
-    "detail": "Marinate the fillets for 15 minutes with Herbes de Provence, garlic, lemon, and olive oil."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C on convection to roast the sweet potato."
    },
    {
-    "titre": "Cook in parallel",
-    "detail": "Roast the diced sweet potato in the oven for 20 minutes. Steam the broccoli for 8 minutes. Grill the chicken in a skillet. Preheat the oven 10 minutes before. Use convection heat for even roasting."
+    "titre": "Marinate",
+    "detail": "Marinate the chicken breasts for 15 min with garlic, lemon juice, oil and herbes de Provence."
    },
    {
-    "titre": "Plate",
-    "detail": "Assemble on the plate. Season with lemon juice, salt, pepper, and fresh herbs. Season generously with salt and pepper. Always taste and adjust."
+    "titre": "Roast potato",
+    "detail": "Cut the sweet potato into cubes, coat it with oil and roast it in the oven at 200°C for 20 min until tender."
+   },
+   {
+    "titre": "Cook broccoli",
+    "detail": "Steam the broccoli for 8 min to keep it green and slightly crisp."
+   },
+   {
+    "titre": "Grill chicken",
+    "detail": "Grill the marinated chicken in a pan for 4 to 5 min per side until golden and cooked through."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Arrange the chicken, sweet potato and broccoli on the plate in clean, balanced sections."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Season with a drizzle of lemon, salt, pepper and fresh herbs before serving."
    }
   ]
  },
  "saumonteriyakimiel": {
   "nom": "Honey Teriyaki Salmon",
-  "description": "Honey teriyaki salmon — a salmon fillet glazed with a sweet and savory Japanese sauce. Served with rice and steamed broccoli. Healthy and delicious.",
+  "description": "Honey teriyaki salmon — a salmon fillet glazed with a sweet-and-savory Japanese sauce. Served with rice and steamed broccoli. Healthy and indulgent.",
   "etapes": [
    {
-    "titre": "Rice",
-    "detail": "Cook the Japanese rice according to package directions. Steam the broccoli for 6 minutes (still crisp)."
+    "titre": "Cook rice",
+    "detail": "Rinse the Japanese rice, then cook it covered in an equal volume of water for 12 min, and let it rest 5 min off the heat."
+   },
+   {
+    "titre": "Cook broccoli",
+    "detail": "Break the broccoli into florets and steam it for 6 min so it stays green and crisp to the bite."
    },
    {
     "titre": "Teriyaki sauce",
-    "detail": "Mix soy sauce, honey, mirin, minced garlic, and ginger. Reduce for 3 minutes in a saucepan until syrupy. CHEF'S TIP: the sauce should coat the back of a spoon = proper consistency."
+    "detail": "Combine soy sauce, honey, mirin, grated garlic and ginger in a saucepan, then reduce for 3 min over medium heat until it reaches a syrupy consistency that coats the spoon."
    },
    {
-    "titre": "Sear the salmon",
-    "detail": "Cook the salmon skin-side down for 4 minutes over medium heat. Flip and cook for 2 minutes. The flesh should remain translucent."
+    "titre": "Sear salmon",
+    "detail": "Pan-sear the salmon fillets skin-side down for 4 min over medium heat, then 2 min on the other side, keeping the flesh pearly in the center."
    },
    {
     "titre": "Glaze",
-    "detail": "Pour the teriyaki sauce over the salmon. Baste several times to achieve a nice glaze."
+    "detail": "Pour the teriyaki sauce into the pan and spoon it over the salmon several times to glaze it well and make it glisten."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Let the sauce thicken for 1 min around the fish over low heat so it perfectly coats each fillet."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Set the glazed salmon on the warm rice, add the broccoli and spoon over the remaining sauce."
    },
    {
     "titre": "Serve",
-    "detail": "Serve the glazed salmon over rice with broccoli. Sprinkle with sesame seeds and chives."
+    "detail": "Sprinkle with toasted sesame seeds and chopped scallion, then serve immediately, piping hot."
    }
   ]
  },
@@ -15481,53 +19555,73 @@ window.RECETTES_EN = {
  },
  "poketuna": {
   "nom": "Tuna-Avocado Poké",
-  "description": "Tuna-avocado poké — healthy Hawaiian bowl. Raw marinated tuna, creamy avocado, vinegared rice, edamame, mango. Balanced, flavorful, and Instagram-worthy.",
+  "description": "Tuna-avocado poké — a healthy Hawaiian bowl. Marinated raw tuna, creamy avocado, vinegared rice, edamame, mango. Balanced, flavorful, Instagram-worthy.",
   "etapes": [
    {
-    "titre": "Vinegared Rice",
-    "detail": "Cook sushi rice. While cooking, mix rice vinegar + sugar + salt and fold into warm rice. CHEF'S TIP: using a rice paddle with gentle folding motions to avoid breaking the rice grains."
+    "titre": "Cook rice",
+    "detail": "Rinse then cook the rice in water until fully absorbed, and let it cool slightly."
    },
    {
-    "titre": "Marinate the Tuna",
-    "detail": "Cut raw ahi tuna into cubes. Marinate for 10 minutes with soy sauce, sesame oil, sriracha, and sliced onion. CHEF'S TIP: use a sharp knife for clean, neat cuts."
+    "titre": "Season rice",
+    "detail": "Combine a little oil, salt and sugar and fold it into the warm rice with a spatula using gentle, sweeping motions."
    },
    {
-    "titre": "Prepare Toppings",
-    "detail": "Cut avocado into cubes and mango into cubes. Cook edamame for 4 minutes. Rehydrate wakame. CHEF'S TIP: use a sharp knife for clean, neat cuts."
+    "titre": "Marinate tuna",
+    "detail": "Cut the raw tuna into cubes and marinate it for 10 min with soy sauce, oil and sliced onion."
    },
    {
-    "titre": "Assemble",
-    "detail": "Bowl: vinegared rice on the bottom. Arrange in sections: tuna, avocado, mango, edamame, wakame, cucumber."
+    "titre": "Toppings",
+    "detail": "Dice the avocado and mango, cook the edamame for 4 min and rehydrate the wakame in cold water."
    },
    {
-    "titre": "Finish",
-    "detail": "Drizzle with ponzu sauce or remaining marinade. Sprinkle with sesame seeds, scallions, and microgreens. Serve chilled."
+    "titre": "Sesame",
+    "detail": "Dry-toast the sesame seeds for a few minutes until golden and fragrant."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Spread the vinegared rice in the bottom of the bowl, then arrange the tuna, avocado, mango, edamame and wakame in sections."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with the remaining marinade, scatter with sesame and serve the poké well chilled."
    }
   ]
  },
  "buddhabowlazteque": {
   "nom": "Aztec Buddha Bowl",
-  "description": "Aztec Buddha Bowl — quinoa, black beans, avocado, charred corn, salsa and cilantro-lime sauce. Ultra-balanced healthy Mexican fusion.",
+  "description": "Aztec Buddha Bowl — quinoa, black beans, avocado, grilled corn, salsa and a cilantro-lime sauce. A super-balanced healthy Mexican fusion.",
   "etapes": [
    {
-    "titre": "Cook the quinoa",
-    "detail": "Rinse the quinoa thoroughly. Cook in 1.5x its volume of salted water for 15 minutes. Fluff with a fork. Rinse thoroughly under cold water."
+    "titre": "Rinse quinoa",
+    "detail": "Rinse 150 g of quinoa under cold water for 1 min to remove the bitter saponin, then drain it in a fine-mesh strainer."
    },
    {
-    "titre": "Charred corn",
-    "detail": "Char the corn (fresh or canned and drained) dry in a very hot skillet until golden and charred. Preheat the grill for 5 minutes. Surface must be very hot for beautiful char marks."
+    "titre": "Cook quinoa",
+    "detail": "Pour the quinoa into 1.5 times its volume of salted water, bring to a boil, then cook covered for 15 min over low heat until the water is fully absorbed."
+   },
+   {
+    "titre": "Grill corn",
+    "detail": "Drain the corn and dry-toast it in a very hot pan for 4 to 5 min, stirring, until you get beautiful golden, caramelized marks."
    },
    {
     "titre": "Pico de gallo",
-    "detail": "Mix diced tomato, finely sliced red onion, cilantro, fresh lime juice, and salt."
+    "detail": "Dice the tomato small and finely mince the red onion, then mix with the chopped cilantro, lime juice and a pinch of salt."
    },
    {
-    "titre": "Avocado",
-    "detail": "Roughly mash the avocado with salt, fresh lime juice, and chipotle chili powder."
+    "titre": "Mash avocado",
+    "detail": "Slice half the avocado and mash the other half with a fork, adding salt and a splash of lime juice so it doesn't turn brown."
    },
    {
-    "titre": "Assemble",
-    "detail": "Bowl: quinoa on the bottom. Arrange in sections: black beans, charred corn, pico de gallo, mashed avocado, and avocado slices."
+    "titre": "Fluff",
+    "detail": "Loosen the cooked quinoa grains with a fork so it stays light and airy, then let it cool for a few minutes."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spread the quinoa over the bottom of the bowl, then arrange the black beans, grilled corn, pico de gallo and avocado in neat sections."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with fresh cilantro and serve right away, cool, with a lime wedge to squeeze at the table."
    }
   ]
  },
@@ -15574,68 +19668,96 @@ window.RECETTES_EN = {
   ]
  },
  "chiapudding": {
-  "nom": "Chia pudding",
-  "description": "Chia pudding — a no-cook healthy breakfast: chia seeds plumped in plant-based milk, topped with berries. Rich in fiber and omega-3s.",
+  "nom": "Chia Pudding",
+  "description": "Chia pudding — the no-cook healthy breakfast: chia seeds swelled in plant-based milk, topped with red berries. Rich in fiber and omega-3.",
   "etapes": [
    {
-    "titre": "Mix",
-    "detail": "Mix chia seeds, plant-based milk, honey, and vanilla. TIP: whisk well to avoid lumps."
+    "titre": "Mix base",
+    "detail": "Whisk the chia seeds vigorously with the almond milk, honey and vanilla to avoid any lumps."
    },
    {
-    "titre": "Remix",
-    "detail": "ANTI-LUMP SECRET: stir again after 10 minutes, before it sets."
+    "titre": "Re-mix",
+    "detail": "Let rest for 10 min, then stir again before the mixture sets, so the seeds spread out evenly."
    },
    {
     "titre": "Chill",
-    "detail": "KEY: refrigerate for a minimum of 3 hours (ideally overnight) so the seeds plump up into a pudding texture."
+    "detail": "Cover and refrigerate for at least 3 hours, ideally overnight, so the seeds swell into a pudding texture."
    },
    {
-    "titre": "Garnish",
-    "detail": "Top with fresh berries, granola, or crushed nuts. Serve chilled."
+    "titre": "Prep fruit",
+    "detail": "Gently rinse the red berries and drain them on paper towel just before plating."
+   },
+   {
+    "titre": "Check texture",
+    "detail": "Make sure the pudding is well set and creamy, and loosen it with a little almond milk if it's too thick."
+   },
+   {
+    "titre": "Top",
+    "detail": "Crown the pudding with fresh red berries and serve well chilled, optionally with a little granola for crunch."
    }
   ]
  },
  "wrapveggie": {
   "nom": "Vegetarian Wrap",
-  "description": "Vegetarian wrap — wheat tortilla rolled and filled with hummus, crispy raw vegetables, and avocado. Colorful, fresh, and portable.",
+  "description": "Vegetarian wrap — a wheat tortilla rolled around hummus, crunchy raw veggies and avocado. Colorful, fresh and easy to take on the go.",
   "etapes": [
    {
-    "titre": "Base",
-    "detail": "Spread the tortilla with hummus (all the way to the edges — it's the 'glue' that holds the wrap together)."
+    "titre": "Cut veggies",
+    "detail": "Cut the bell pepper, carrot and cucumber into thin, even sticks, and slice the avocado."
    },
    {
-    "titre": "Raw Vegetables",
-    "detail": "Cut bell pepper, carrot, and cucumber into thin sticks, and slice the avocado into thin strips."
+    "titre": "Spread hummus",
+    "detail": "Spread the hummus over the entire surface of the tortilla all the way to the edges, which will act as glue for the wrap."
    },
    {
-    "titre": "Rolling",
-    "detail": "KEY: fill the center without overstuffing, fold in the sides, then roll it up tightly."
+    "titre": "Fill center",
+    "detail": "Arrange the vegetable sticks and avocado slices in a strip down the center of the tortilla without overloading it."
    },
    {
-    "titre": "Serving",
-    "detail": "CHEF'S TIP: cut in half on the diagonal. For a warm wrap, grill for 1 minute on the seam side."
+    "titre": "Season",
+    "detail": "Lightly salt the raw veggies and add a turn of pepper to lift the whole wrap."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Fold in both sides of the tortilla, then roll it up tightly starting from the filled edge for a compact wrap."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut the wrap in half on the diagonal and serve right away, or press it seam-side down on the grill for 1 min to enjoy it warm."
    }
   ]
  },
  "avocadotoast": {
-  "nom": "Avocado & Poached Egg Toast",
-  "description": "Avocado toast — the healthy star tartine: whole grain bread, lemon-dressed smashed avocado and runny poached egg. Nourishing and full of good fats.",
+  "nom": "Avocado Toast with Poached Egg",
+  "description": "Avocado toast — the star healthy toast: whole-grain bread, lemony mashed avocado and a runny poached egg. Filling and packed with good fats.",
   "etapes": [
    {
-    "titre": "Mash",
-    "detail": "Mash the avocado with a fork with lemon, salt, and pepper. TIP: Add lemon right away to keep the green color."
+    "titre": "Mash avocado",
+    "detail": "Mash the avocado flesh with a fork along with the lemon juice, salt and pepper, keeping a slightly chunky texture."
    },
    {
-    "titre": "Toast",
-    "detail": "Toast the whole grain bread until crispy."
+    "titre": "Toast bread",
+    "detail": "Toast the slices of whole-grain bread for 2 to 3 min until golden and crisp."
    },
    {
-    "titre": "Poach",
-    "detail": "Poach the egg for 3 minutes in simmering vinegared water (creating a whirlpool). SECRET: Runny yolk that coats the toast."
+    "titre": "Prep water",
+    "detail": "Bring a saucepan of water to a gentle simmer, add a splash of vinegar and create a whirlpool with a spoon."
    },
    {
-    "titre": "Plate",
-    "detail": "Spread avocado on the toast, top with poached egg. CHEF'S TIP: Espelette pepper + drizzle of oil + seeds for crunch."
+    "titre": "Poach egg",
+    "detail": "Gently slip the egg into the center of the whirlpool and poach it for 3 min for a set white and a runny yolk."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the mashed avocado generously over the still-warm slices of bread."
+   },
+   {
+    "titre": "Top with egg",
+    "detail": "Set the drained poached egg on the toast and season it with a pinch of salt and pepper."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Dust with Espelette pepper, drizzle with olive oil and serve right away."
    }
   ]
  },
@@ -16517,167 +20639,239 @@ window.RECETTES_EN = {
  },
  "pizzadiavola": {
   "nom": "Pizza Diavola",
-  "description": "Pizza Diavola — spicy salami, nduja, mozzarella, and chili pepper. For those who love bold flavors!",
+  "description": "The Pizza Diavola — spicy salami, nduja, mozzarella and chili. For those who love bold, fiery flavors!",
   "etapes": [
    {
-    "titre": "Dough and Sauce",
-    "detail": "Stretch out the dough. Coat with tomato sauce seasoned with garlic and oregano."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to maximum (250-280°C) with the stone or baking sheet inside for at least 30 minutes for a crisp base."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Mix the tomato sauce with crushed garlic, a drizzle of olive oil, salt and oregano, then set aside."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the 48h-risen dough by hand into a thin disk and spread it with tomato sauce, leaving a 2 cm bare rim."
    },
    {
     "titre": "Mozzarella",
-    "detail": "Distribute the torn mozzarella."
+    "detail": "Scatter the torn mozzarella in pieces so it melts evenly without making the dough soggy."
    },
    {
-    "titre": "Spicy Toppings",
-    "detail": "Arrange the slices of spicy salami, small spoonfuls of nduja (Calabrian sausage), and fresh chili pepper rings."
+    "titre": "Top",
+    "detail": "Arrange the spicy salami slices, small spoonfuls of Calabrian nduja and the fresh chili rounds over the whole surface."
    },
    {
     "titre": "Bake",
-    "detail": "Bake at maximum temperature. Finish with a drizzle of chili-infused olive oil when removing from the oven."
+    "detail": "Bake for 7 to 8 minutes at maximum until the rim puffs and browns and the salami turns crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Out of the oven, drizzle with chili-infused olive oil and serve right away while hot."
    }
   ]
  },
  "pizzareine": {
   "nom": "Pizza Reine",
-  "description": "Pizza Reine — ham, mushrooms, mozzarella, and tomato sauce. The classic French pizzeria pizza, simple and delicious.",
+  "description": "The Pizza Reine — ham, mushrooms, mozzarella and tomato sauce. The classic of French pizzerias, simple and indulgent.",
   "etapes": [
    {
-    "titre": "Prepare the dough",
-    "detail": "Use the pizza dough recipe from the app. Remove the dough balls 1 hour before. Stretch by hand."
+    "titre": "Prep dough",
+    "detail": "Take the homemade pizza dough balls out 1 h ahead, let them come to room temperature, then stretch each ball by hand on a floured surface, keeping a thick rim."
    },
    {
-    "titre": "Tomato sauce",
-    "detail": "Spread the seasoned tomato sauce in a spiral over the dough."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to maximum (250°C minimum) with the stone or baking sheet inside for at least 30 min for a crisp base."
    },
    {
-    "titre": "Mozzarella",
-    "detail": "Distribute the torn or shredded mozzarella."
+    "titre": "Sauce",
+    "detail": "Spread the seasoned tomato sauce in a spiral over the dough, leaving the rim bare, without overloading so the dough doesn't get soggy."
    },
    {
-    "titre": "Toppings",
-    "detail": "Arrange the ham in pieces and the sliced mushrooms (raw or sautéed)."
+    "titre": "Add cheese",
+    "detail": "Scatter torn or shredded mozzarella over the whole surface, plus a little grated cheese for browning."
+   },
+   {
+    "titre": "Add toppings",
+    "detail": "Arrange the ham pieces and the thinly sliced mushrooms, raw or pan-fried, evenly over the pizza."
    },
    {
     "titre": "Bake",
-    "detail": "Preheat oven to the highest temperature on a pizza stone or baking sheet. Bake until the crust is golden brown and the cheese is bubbling."
+    "detail": "Slide onto the scorching stone and bake for 6 to 10 min until the rim is golden and the cheese is bubbling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Take out the pizza, cut it with a pizza wheel and serve right away while hot to enjoy the crisp crust."
    }
   ]
  },
  "pizzasaumonepinards": {
-  "nom": "Smoked Salmon and Spinach Pizza",
-  "description": "Smoked salmon, spinach, and crème fraîche pizza — creamy white base, smoked salmon, and spinach. A refined pizza.",
+  "nom": "Salmon Spinach Pizza",
+  "description": "Salmon, spinach and crème fraîche pizza — a silky white base, smoked salmon and spinach. A refined pizza.",
   "etapes": [
    {
-    "titre": "Crème base",
-    "detail": "Stretch out the dough. Spread with crème fraîche seasoned with salt, pepper, and dill."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to maximum (250-280°C) with the stone inside for 30 minutes to sear the dough."
    },
    {
-    "titre": "Mozzarella and spinach",
-    "detail": "Distribute the mozzarella. Scatter the fresh spinach (it will cook on the pizza)."
+    "titre": "Cream base",
+    "detail": "Season the thick crème fraîche with salt, pepper and a little dill, then spread it over the thin dough, leaving the rim bare."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter the drained mozzarella, then sprinkle on the fresh spinach, which will cook right on the pizza."
    },
    {
     "titre": "Bake",
-    "detail": "Bake the pizza without the smoked salmon."
+    "detail": "Bake for 8 to 10 minutes without the salmon, until the rim is golden and the cheese is melted."
    },
    {
-    "titre": "Smoked salmon when ready",
-    "detail": "Remove the pizza from the oven, arrange the smoked salmon in slices. Squeeze lemon over it. Add a few capers and fresh dill. Smoked salmon should never be cooked!"
+    "titre": "Salmon",
+    "detail": "Take out the pizza and immediately lay on the smoked salmon slices, which should never cook so they stay tender."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Squeeze a few drops of lemon juice over the salmon and add freshly chopped dill."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Give it a turn of the pepper mill and serve immediately while the base is hot and the salmon fresh."
    }
   ]
  },
  "pizzavegetarienne": {
   "nom": "Vegetarian Pizza",
-  "description": "Colorful vegetarian pizza with bell peppers, zucchini, grilled eggplant, mozzarella, and pesto. Full of Mediterranean flavors.",
+  "description": "A colorful vegetarian pizza — bell peppers, zucchini, grilled eggplant, mozzarella and pesto. Bursting with Mediterranean flavors.",
   "etapes": [
    {
-    "titre": "Grill the vegetables",
-    "detail": "Slice the bell peppers, zucchini, and eggplant into thin strips. Grill in a skillet or oven with olive oil. Season with salt. CHEF'S TIP: A sharp knife ensures clean, neat cuts."
+    "titre": "Cut",
+    "detail": "Cut the bell pepper, zucchini and eggplant into thin slices with a sharp knife for even pieces."
    },
    {
-    "titre": "Dough and sauce",
-    "detail": "Stretch out the dough. Top with tomato sauce and pesto in alternating layers."
+    "titre": "Grill",
+    "detail": "Grill the vegetables in a pan or in the oven with a drizzle of olive oil until colored, then season with salt and set aside."
    },
    {
-    "titre": "Mozzarella and vegetables",
-    "detail": "Distribute mozzarella, then add the grilled vegetables. Black olives optional."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to maximum (250-280°C) with the stone for 30 minutes."
    },
    {
-    "titre": "Bake and finish",
-    "detail": "Bake in the oven at maximum temperature. Finish with fresh arugula and Parmesan shavings right out of the oven."
+    "titre": "Base",
+    "detail": "Stretch the thin dough and spread it alternately with tomato sauce and pesto for a fragrant base."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter the torn mozzarella, then arrange the grilled vegetables neatly over the whole surface."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for 8 to 10 minutes at maximum until the rim is deeply golden and the cheese melted."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Out of the oven, add fresh arugula, parmesan shavings and a drizzle of olive oil."
    }
   ]
  },
  "pizza4fromages": {
-  "nom": "Pizza 4 Formaggi",
-  "description": "The Pizza Quattro Formaggi — four melted Italian cheeses on a creamy base. For the true cheese lover!",
+  "nom": "Pizza 4 Fromages",
+  "description": "The Pizza Quattro Formaggi — four Italian cheeses melted over a cream base. For true cheese lovers!",
   "etapes": [
    {
-    "titre": "Preheat the oven to maximum",
-    "detail": "Preheat the oven to 250°C MINIMUM. PRO TIP: use a pizza stone or cast iron skillet preheated for 30 minutes — this is what gives you that crispy crust like a real pizzeria."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 250°C minimum with the pizza stone or a cast-iron sheet inside for 30 min for a crust as crisp as in a pizzeria."
    },
    {
-    "titre": "Dough and creamy base",
-    "detail": "Stretch out the dough. Spread a thin layer of crème fraîche instead of tomato sauce."
+    "titre": "Stretch",
+    "detail": "Take the dough ball out 1 h ahead, let it relax, then stretch it by hand on a floured surface, keeping a generous rim."
+   },
+   {
+    "titre": "Cream base",
+    "detail": "Spread a thin layer of crème fraîche over the dough instead of tomato, leaving the rim bare, and add a few diced tomatoes if desired."
    },
    {
     "titre": "Four cheeses",
-    "detail": "Arrange by sections: mozzarella, gorgonzola in chunks, ricotta in small spoonfuls, and grated Parmesan. Drizzle generously with olive oil."
+    "detail": "Arrange in sections the mozzarella, the gorgonzola in pieces, the ricotta in small spoonfuls and the grated parmesan, then drizzle with olive oil."
    },
    {
     "titre": "Bake",
-    "detail": "Oven at maximum temperature. Bake until the cheeses are melted and golden. Finish with a drizzle of honey if desired."
+    "detail": "Slide onto the scorching stone and bake for 6 to 8 min until the cheeses are melted and golden and the rim has puffed up."
    },
    {
-    "titre": "Italian style serving",
-    "detail": "Remove from oven, scatter fresh basil, drizzle with extra-virgin olive oil. Cut into slices with a pizza wheel, serve PIPING HOT. Buon appetito!"
+    "titre": "Finish honey",
+    "detail": "Out of the oven, drizzle with a thin thread of honey for a sweet-savory contrast and a dash of extra-virgin olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut the pizza with a pizza wheel and serve piping hot to savor the meltiness of the four cheeses."
    }
   ]
  },
  "pizzacalzone": {
   "nom": "Pizza Calzone",
-  "description": "The Calzone — a folded pizza stuffed with ricotta, ham, mozzarella, and tomato sauce. The crispy Neapolitan pizza turnover.",
+  "description": "The Calzone — a folded pizza stuffed with ricotta, ham, mozzarella and tomato sauce. The crisp Neapolitan pizza turnover.",
   "etapes": [
    {
-    "titre": "Roll out the dough",
-    "detail": "Roll out each dough ball into a disk. Only half will be filled."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to maximum (250-280°C) with the stone inside for 30 minutes."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch each dough ball into a thin, even disk, only one half of which will be filled."
    },
    {
     "titre": "Fill",
-    "detail": "On one half: spread tomato sauce, ricotta, mozzarella, ham, and a pinch of oregano. Leave 2cm of border free."
+    "detail": "On one half, spread the tomato sauce, then the ricotta, mozzarella, ham and a pinch of oregano, keeping a 2 cm bare border."
    },
    {
-    "titre": "Fold and seal",
-    "detail": "Fold over the other half. Seal the edges by pressing and rolling. Pierce 2-3 holes on top."
+    "titre": "Seal",
+    "detail": "Fold the other half over the filling and seal the edges by pinching and rolling them to close the turnover well."
+   },
+   {
+    "titre": "Vent",
+    "detail": "Poke 2 or 3 small holes on top and brush with olive oil for a golden crust."
    },
    {
     "titre": "Bake",
-    "detail": "Brush with olive oil. Bake on a hot stone."
+    "detail": "Bake for 12 to 15 minutes on the hot stone until the calzone is puffed and golden."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with warm tomato sauce on the side for dipping."
+    "detail": "Serve right away with a bowl of hot tomato sauce on the side to dip each bite."
    }
   ]
  },
  "pizzabiancoverdure": {
   "nom": "Pizza Bianca with Vegetables",
-  "description": "Pizza Bianca with Vegetables — ricotta base without tomato, thin-sliced zucchini, asparagus, and Parmesan. Light, springtime-inspired, and refined.",
+  "description": "Pizza Bianca with Vegetables — a ricotta base with no tomato, thin zucchini, asparagus and parmesan. Light, springlike and refined.",
   "etapes": [
    {
-    "titre": "Ricotta Base",
-    "detail": "Spread out the dough. Mix ricotta with garlic, salt, pepper, and lemon zest. Spread over the dough."
+    "titre": "Ricotta cream",
+    "detail": "Mix the ricotta with crushed garlic, salt, pepper and lemon zest until you get a smooth cream."
    },
    {
     "titre": "Vegetables",
-    "detail": "Slice the zucchini into thin ribbons using a vegetable peeler. Arrange zucchini and asparagus on the pizza. Grate the Parmesan. CHEF'S TIP: use a sharp knife for clean, neat cuts."
+    "detail": "Shave the zucchini into thin ribbons with a peeler and trim the asparagus, keeping the tips whole."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to maximum (250-280°C) with the stone inside for 30 minutes."
+   },
+   {
+    "titre": "Top",
+    "detail": "Stretch the thin dough, spread on the ricotta cream, then arrange the zucchini ribbons and the asparagus."
+   },
+   {
+    "titre": "Parmesan",
+    "detail": "Grate parmesan over the vegetables and drizzle with olive oil before baking."
    },
    {
     "titre": "Bake",
-    "detail": "Bake in the oven at maximum temperature."
+    "detail": "Bake for 8 to 10 minutes at maximum until the rim is golden and the vegetables are tender."
    },
    {
-    "titre": "Finish",
-    "detail": "Remove from oven, drizzle with olive oil, and top with a few fresh basil leaves."
+    "titre": "Serve",
+    "detail": "Out of the oven, drizzle with olive oil and scatter a few fresh basil leaves before serving."
    }
   ]
  },
@@ -16686,138 +20880,210 @@ window.RECETTES_EN = {
   "description": "Truffle Pizza — truffle cream, mozzarella, mushrooms and truffle oil. A gourmet pizza for special occasions.",
   "etapes": [
    {
-    "titre": "Truffle cream base",
-    "detail": "Spread out the dough. Generously coat with truffle cream (truffle paste or crème fraîche + grated truffle)."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to maximum (250-280°C) with the stone inside for 30 minutes."
    },
    {
-    "titre": "Mushrooms and mozzarella",
-    "detail": "Arrange the thinly sliced mushrooms (porcini or button mushrooms) and mozzarella."
+    "titre": "Mushrooms",
+    "detail": "Thinly slice the button mushrooms or porcini into even pieces with a sharp knife."
+   },
+   {
+    "titre": "Truffle base",
+    "detail": "Stretch the thin dough and spread it generously with truffle cream or crème fraîche mixed with grated truffle."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter the torn mozzarella, then arrange the mushroom slices over the whole surface."
    },
    {
     "titre": "Bake",
-    "detail": "Bake at maximum temperature."
+    "detail": "Bake for 8 to 9 minutes at maximum until the rim is golden and the mushrooms are cooked."
    },
    {
-    "titre": "Truffle finish",
-    "detail": "When removed from the oven, drizzle with truffle oil and add shavings of fresh or dried truffle. A few arugula leaves. Serve immediately."
+    "titre": "Truffle oil",
+    "detail": "Out of the oven, drizzle with truffle oil to release all its aroma while cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add fresh truffle shavings and a few arugula leaves, then serve immediately."
    }
   ]
  },
  "pizzaprosciuttoroquette": {
-  "nom": "Pizza Prosciutto Roquette",
-  "description": "Pizza Prosciutto Roquette — Parma ham placed after baking over melted mozzarella, fresh arugula, and Parmesan. Italian elegance.",
+  "nom": "Prosciutto Arugula Pizza",
+  "description": "Prosciutto Arugula Pizza — Parma ham laid on melting mozzarella after baking, with fresh arugula and parmesan. Italian elegance.",
   "etapes": [
    {
-    "titre": "Dough and Base",
-    "detail": "Stretch out the dough. Top with light tomato sauce or olive oil and garlic."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to maximum (250-280°C) with the stone inside for 30 minutes for a crisp base."
+   },
+   {
+    "titre": "Base",
+    "detail": "Stretch the thin dough and spread it with a thin layer of tomato sauce or olive oil infused with crushed garlic."
    },
    {
     "titre": "Mozzarella",
-    "detail": "Distribute the mozzarella. Drizzle with olive oil. Place in oven. Use convection heat for even cooking."
+    "detail": "Scatter the torn mozzarella and drizzle with olive oil before baking."
    },
    {
     "titre": "Bake",
-    "detail": "Bake at maximum temperature until edges are golden brown."
+    "detail": "Bake for 8 to 10 minutes at maximum until the rim is puffed and deeply golden."
    },
    {
-    "titre": "Garnish After Baking",
-    "detail": "Remove from oven, immediately arrange the prosciutto di Parma in a rosette pattern. Add fresh arugula and Parmesan shavings. Drizzle with olive oil and cracked pepper."
+    "titre": "Prosciutto",
+    "detail": "Take out the pizza and immediately arrange the prosciutto di Parma slices in a rosette so they warm slightly."
+   },
+   {
+    "titre": "Arugula",
+    "detail": "Add a generous handful of fresh arugula and parmesan shavings on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Finish with a drizzle of olive oil and a turn of the pepper mill, then serve immediately."
    }
   ]
  },
  "pizzapoivrons": {
-  "nom": "Roasted Pepper Pizza",
-  "description": "Roasted Pepper Pizza — peppers confit in the oven, anchovies, capers, and black olives. Generous and Mediterranean.",
+  "nom": "Bell Pepper Pizza",
+  "description": "Roasted Bell Pepper Pizza — oven-confit peppers, anchovies, capers and black olives. Generous and Mediterranean.",
   "etapes": [
    {
-    "titre": "Roast the peppers",
-    "detail": "Slice the peppers into strips. Roast in a skillet or oven with olive oil until tender and lightly caramelized. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Cut",
+    "detail": "Cut the bell peppers into thin, even slices with a sharp knife."
    },
    {
-    "titre": "Tomato sauce",
-    "detail": "Spread the tomato sauce over the dough."
+    "titre": "Roast",
+    "detail": "Roast the pepper slices in a pan or in the oven with a drizzle of olive oil until tender and lightly colored."
    },
    {
-    "titre": "Garnish",
-    "detail": "Distribute the mozzarella, roasted peppers, anchovy fillets, black olives, and capers."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to maximum (250-280°C) with the stone inside for 30 minutes."
    },
    {
-    "titre": "Bake and finish",
-    "detail": "Bake in a very hot oven. Finish with oregano and a drizzle of olive oil."
+    "titre": "Base",
+    "detail": "Stretch the thin dough and spread it with tomato sauce, leaving a 2 cm bare rim."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter the mozzarella, the roasted peppers, the anchovy fillets, the black olives and a few capers."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for 8 to 10 minutes at maximum until the rim is golden and the cheese melted."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Out of the oven, sprinkle with oregano and drizzle with olive oil before serving."
    }
   ]
  },
  "pizzahawaienne": {
   "nom": "Hawaiian Pizza",
-  "description": "Hawaiian Pizza — tomato sauce, mozzarella, ham, and pineapple. The sweet and savory pizza that divides... but that people love!",
+  "description": "Hawaiian Pizza — tomato sauce, mozzarella, ham and pineapple. The sweet-and-savory pizza that divides... but wins people over!",
   "etapes": [
    {
-    "titre": "Tomato Sauce",
-    "detail": "Spread the tomato sauce seasoned with garlic and oregano."
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250°C) with the baking sheet or stone inside for 30 min."
+   },
+   {
+    "titre": "Prep Pineapple",
+    "detail": "Cut the fresh pineapple into small pieces and blot them on paper towels to remove excess juice."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough ball by hand into a thin disc with an even rim, without using a rolling pin."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Spread a thin layer of tomato sauce seasoned with minced garlic and oregano over the whole base."
    },
    {
     "titre": "Mozzarella",
-    "detail": "Distribute the mozzarella."
+    "detail": "Spread the drained mozzarella evenly over the sauce."
    },
    {
-    "titre": "Ham and Pineapple",
-    "detail": "Arrange the ham slices and pineapple pieces (fresh if possible, canned otherwise)."
+    "titre": "Top",
+    "detail": "Arrange the ham slices in pieces and the pineapple dice, distributing them evenly."
    },
    {
     "titre": "Bake",
-    "detail": "Bake at maximum temperature."
+    "detail": "Bake 8 to 10 min until the crust is golden and the cheese is melted and lightly colored."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Take it out of the oven and serve immediately, since the sweet-and-savory contrast of the ham and pineapple is best piping hot."
    }
   ]
  },
  "pizzachorizo": {
-  "nom": "Pizza Chorizo",
-  "description": "Pizza Chorizo — tomato sauce, mozzarella, crispy chorizo, and roasted peppers. Spicy, generous, and irresistible!",
+  "nom": "Chorizo Pizza",
+  "description": "Chorizo Pizza — tomato sauce, mozzarella, crisp chorizo and roasted peppers. Spicy, generous, irresistible!",
   "etapes": [
    {
-    "titre": "Roast the pepper",
-    "detail": "Cut the pepper into strips and sauté in a skillet with olive oil for 8 minutes. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250-275°C) with the stone or baking sheet inside for at least 30 min."
    },
    {
-    "titre": "Tomato sauce",
-    "detail": "Spread the tomato sauce seasoned with garlic and oregano over the dough."
+    "titre": "Roast Pepper",
+    "detail": "Thinly slice the pepper into strips and roast it in a skillet with a drizzle of olive oil for 8 min until it softens and colors."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough ball by hand without a rolling pin to keep the bubbles, until you have a thin disc with a slightly thick rim."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Crush the tomatoes, season them with salt, minced garlic and oregano, then spread this sauce in a thin layer over the dough."
    },
    {
     "titre": "Mozzarella",
-    "detail": "Distribute the torn mozzarella."
+    "detail": "Spread the torn, well-drained mozzarella over the whole surface, without overloading to avoid a soggy pizza."
    },
    {
-    "titre": "Chorizo and peppers",
-    "detail": "Arrange the chorizo slices and roasted peppers. The chorizo will crisp up in the oven."
+    "titre": "Top",
+    "detail": "Arrange the chorizo slices and the roasted pepper strips so the spicy fat flavors the whole pizza as it bakes."
    },
    {
     "titre": "Bake",
-    "detail": "Bake at the highest temperature. The chorizo's fat will flavor the entire pizza."
+    "detail": "Bake on the hot stone 7 to 9 min until the crust puffs, turns golden and the chorizo crisps slightly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pull out the pizza, add a drizzle of olive oil and serve right away, piping hot and crisp."
    }
   ]
  },
  "pizzapatate": {
   "nom": "Potato Pizza",
-  "description": "Potato Pizza — ricotta base, ultra-thin potatoes, rosemary and pecorino. The crispy white Roman-style pizza in pala format.",
+  "description": "Potato Pizza — a ricotta base, ultra-thin potato slices, rosemary and pecorino. The crisp white Roman pizza in pala format.",
   "etapes": [
    {
-    "titre": "Ultra-thin slices",
-    "detail": "Peel the potatoes and slice them 1-2 mm thick on a mandoline. Soak them in cold water for 10 minutes to remove the starch. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Slice",
+    "detail": "Peel the potatoes and cut them into 1 to 2 mm slices on a mandoline for even cooking."
    },
    {
-    "titre": "Ricotta base",
-    "detail": "Spread out the dough. Spread with ricotta seasoned with garlic, salt, and pepper."
+    "titre": "Soak",
+    "detail": "Soak the slices in cold water for 10 minutes to remove the starch, then drain and dry them well."
    },
    {
-    "titre": "Arrange the potatoes",
-    "detail": "Drain and dry the slices. Arrange them in a rosette pattern over the ricotta. Drizzle with olive oil and season with salt."
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250-280°C) with the stone inside for 30 minutes."
    },
    {
-    "titre": "Rosemary and pecorino",
-    "detail": "Sprinkle with rosemary leaves and grated pecorino."
+    "titre": "Ricotta Base",
+    "detail": "Stretch the dough thin and spread it with ricotta seasoned with crushed garlic, salt and pepper."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Arrange the potato slices in a rosette over the ricotta, drizzle with olive oil and season lightly with salt."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Scatter with rosemary leaves and grated pecorino for a woodsy, savory aroma."
    },
    {
     "titre": "Bake",
-    "detail": "Bake at maximum temperature — the potatoes cook very quickly at high heat."
+    "detail": "Bake 9 to 11 minutes at the highest setting until the potatoes are golden and crisp at the edges, then serve right away."
    }
   ]
  },
@@ -16853,67 +21119,111 @@ window.RECETTES_EN = {
  },
  "pizzabresilienne": {
   "nom": "Brazilian Pizza",
-  "description": "Brazilian Pizza — tomatoes, mozzarella, hearts of palm, corn, and olives. The São Paulo pizza, a tropical fusion version!",
+  "description": "Brazilian Pizza — tomato, mozzarella, hearts of palm, corn and olives. The São Paulo pizza, a tropical fusion twist!",
   "etapes": [
    {
-    "titre": "Sauce and Cheese",
-    "detail": "Spread the tomato sauce and grated mozzarella."
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250-280°C) with the stone inside for 30 minutes."
    },
    {
-    "titre": "Brazilian Toppings",
-    "detail": "Arrange the hearts of palm in slices, corn, and green olives."
+    "titre": "Prep",
+    "detail": "Slice the hearts of palm into rounds and drain the corn along with the green olives."
+   },
+   {
+    "titre": "Base",
+    "detail": "Stretch the dough thin and spread it with tomato sauce, leaving a 2 cm border bare."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Spread the shredded mozzarella evenly over the tomato sauce."
+   },
+   {
+    "titre": "Top",
+    "detail": "Arrange the hearts of palm rounds, the corn and the green olives across the whole surface."
    },
    {
     "titre": "Bake",
-    "detail": "Bake at maximum temperature."
+    "detail": "Bake 8 to 10 minutes at the highest setting until the edges are golden and the cheese is melted."
    },
    {
-    "titre": "Finish",
-    "detail": "Sprinkle with fresh oregano. In Brazil, catupiry (creamy cheese) is often added — can be replaced with thick crème fraîche."
+    "titre": "Serve",
+    "detail": "Out of the oven, sprinkle with oregano and add a few dollops of a creamy cheese like catupiry, then serve right away."
    }
   ]
  },
  "pizzaburrata": {
-  "nom": "Burrata Pizza",
-  "description": "Burrata pizza — cooked tomato base, then creamy burrata and arugula added raw straight from the oven. Melty and fresh all at once.",
+  "nom": "Pizza burrata",
+  "description": "Pizza burrata — a baked tomato base, then creamy burrata and arugula added RAW out of the oven. Melting and fresh at once.",
   "etapes": [
    {
-    "titre": "Base",
-    "detail": "Stretch the dough, spread with tomato sauce, drizzle with oil, salt."
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250°C) with the stone or baking sheet inside for 30 min."
    },
    {
-    "titre": "Bake the base",
-    "detail": "Maximum oven heat (250°C) for 8-10 min, WITHOUT the burrata (it should not bake)."
+    "titre": "Stretch",
+    "detail": "Stretch the dough ball by hand into a thin disc with an even rim, without a rolling pin."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Coat the base with a thin layer of tomato sauce, season lightly with salt and drizzle with olive oil."
+   },
+   {
+    "titre": "Bake Base",
+    "detail": "Bake the pizza WITHOUT the burrata 8 to 10 min until the crust is puffed and golden."
    },
    {
     "titre": "Burrata",
-    "detail": "KEY: tear the burrata and place it on the HOT pizza, straight out of the oven. It melts just enough."
+    "detail": "As soon as it comes out of the oven, tear the burrata and place it on the hot pizza so it melts just enough without cooking."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter a handful of fresh arugula and a few basil leaves over the top."
    },
    {
     "titre": "Finish",
-    "detail": "CHEF'S TIP: arugula, basil, drizzle of oil and pepper on top. Serve immediately."
+    "detail": "Drizzle with olive oil and add a turn of the pepper mill."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away to enjoy the contrast of the hot base and the creamy, still-fresh burrata."
    }
   ]
  },
  "pizzanapolitaine": {
-  "nom": "Pizza Napoletana",
-  "description": "Pizza Napoletana — tomato, mozzarella, anchovies and capers, oregano. The bold and briny taste of authentic Napoletana.",
+  "nom": "Pizza napolitaine",
+  "description": "Pizza napolitaine — tomato, mozzarella, anchovies and capers, oregano. The bold, briny taste of a true Neapolitan.",
   "etapes": [
    {
-    "titre": "Base",
-    "detail": "Stretch out the dough, spread with tomato sauce, oregano, and a drizzle of oil."
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250°C) with the stone or baking sheet inside for 30 min."
    },
    {
-    "titre": "Topping",
-    "detail": "Drained mozzarella torn into pieces, anchovies and capers distributed evenly. TIP: drain the mozzarella well (otherwise the pizza will be soggy)."
+    "titre": "Stretch",
+    "detail": "Stretch the dough ball by hand into a thin disc with a slightly thick rim, without a rolling pin."
    },
    {
-    "titre": "Baking",
-    "detail": "Maximum oven (250°C) for 8-10 minutes, until the crust is puffed and golden."
+    "titre": "Sauce",
+    "detail": "Coat the base with a thin layer of tomato sauce, dust with oregano and add a drizzle of olive oil."
    },
    {
-    "titre": "Finishing",
-    "detail": "SECRET: no need to salt (the anchovies and capers provide that). A crack of black pepper when it comes out of the oven."
+    "titre": "Mozzarella",
+    "detail": "Spread the well-drained mozzarella in pieces to keep the pizza from getting soggy."
+   },
+   {
+    "titre": "Top",
+    "detail": "Arrange the anchovy fillets and the capers evenly across the whole surface."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake 8 to 10 min until the crust is puffed and golden and the cheese is melted."
+   },
+   {
+    "titre": "Season",
+    "detail": "Do not add salt, since the anchovies and capers already bring the salt; just add a turn of the pepper mill out of the oven."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve this intense, savory pizza immediately, piping hot."
    }
   ]
  },
@@ -16949,23 +21259,39 @@ window.RECETTES_EN = {
  },
  "pizzamarinara": {
   "nom": "Pizza marinara",
-  "description": "Pizza marinara — the Neapolitan ancestor, WITHOUT cheese: San Marzano tomatoes, garlic, oregano, and olive oil. Pure simplicity, all flavor.",
+  "description": "Pizza marinara — the Neapolitan ancestor, with NO cheese: San Marzano tomato, garlic, oregano and olive oil. Absolute simplicity, all about flavor.",
   "etapes": [
    {
-    "titre": "Sauce",
-    "detail": "Crush the peeled tomatoes, salt, a drizzle of oil, oregano. SECRET: do not cook the sauce; freshness is what makes marinara marinara."
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250-275°C) with the stone or baking sheet inside for at least 30 min."
    },
    {
-    "titre": "Spread",
-    "detail": "Spread the dough thinly by hand (never with a roller, which pushes out the air bubbles)."
+    "titre": "Raw Sauce",
+    "detail": "Crush the peeled tomatoes with a fork along with salt and a splash of olive oil, without cooking them to keep the marinara's freshness."
+   },
+   {
+    "titre": "Slice Garlic",
+    "detail": "Peel and thinly slice the garlic into small, even slivers."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough ball thin by hand, never with a rolling pin, which would push the bubbles out of the dough."
    },
    {
     "titre": "Top",
-    "detail": "Coat with sauce, scatter thinly sliced garlic, drizzle of olive oil. No cheese."
+    "detail": "Coat the base with tomato sauce, scatter with sliced garlic and oregano, and drizzle with olive oil, with no cheese at all."
    },
    {
     "titre": "Bake",
-    "detail": "Oven at MAXIMUM (250-275°C) on a hot stone or baking sheet, 7-9 minutes. CHEF'S TIP: fresh basil right as it comes out, not before."
+    "detail": "Bake on the hot stone 7 to 9 min until the crust puffs and turns golden in spots."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Only once out of the oven, scatter with fresh basil leaves and add a final drizzle of olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve this simple, fragrant pizza right away, ideal for appreciating the quality of the tomato and the oil."
    }
   ]
  },
@@ -17001,49 +21327,73 @@ window.RECETTES_EN = {
  },
  "courgettesfarcies": {
   "nom": "Stuffed Zucchini",
-  "description": "Hollowed-out zucchini filled with fragrant rice topped with tomatoes, onion, and basil, then gratinéed with Parmesan. A complete and colorful summer dish.",
+  "description": "Zucchini hollowed out and filled with a fragrant rice studded with tomatoes, onion, and basil, then browned under Parmesan. A complete, colorful summer dish.",
   "etapes": [
    {
     "titre": "Preheat",
-    "detail": "Preheat the oven to 190°C."
+    "detail": "Preheat the oven to 190°C and cook the rice in salted water if it isn't already, then set it aside."
    },
    {
-    "titre": "Hollow Out",
-    "detail": "Cut the zucchini in half lengthwise and scoop out the flesh with a spoon."
+    "titre": "Hollow out",
+    "detail": "Halve the zucchini lengthwise and scoop them out with a spoon, leaving 5 mm of flesh along the walls."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sweat the chopped onion and garlic in olive oil for 4 min over medium heat until they turn translucent."
    },
    {
     "titre": "Filling",
-    "detail": "Sauté the onion and garlic, add the zucchini flesh, tomatoes, and cooked rice. Season with basil."
+    "detail": "Add the chopped zucchini flesh and the crushed tomatoes, let reduce for 8 min, then stir in the cooked rice and chopped basil."
    },
    {
-    "titre": "Fill",
-    "detail": "Stuff the zucchini halves, sprinkle with Parmesan, and drizzle with olive oil."
+    "titre": "Stuff",
+    "detail": "Arrange the zucchini halves in a dish, fill them with the packed stuffing, and sprinkle with grated Parmesan."
    },
    {
     "titre": "Bake",
-    "detail": "Bake for 30-35 minutes until the zucchini is tender and golden."
+    "detail": "Drizzle with olive oil and bake for 30 to 35 min at 190°C until the zucchini are tender and golden on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool for 5 min, add a few fresh basil leaves, and serve with a green salad."
    }
   ]
  },
  "pizzamortadelle": {
   "nom": "Mortadella-Pistachio Pizza",
-  "description": "Mortadella-pistachio pizza — a trendy white pizza: melted mozzarella, mortadella added raw, pistachio cream and arugula. Indulgent and refined.",
+  "description": "Mortadella-Pistachio Pizza — the trendy white pizza: melted mozzarella, mortadella added raw, pistachio cream and arugula. Indulgent and refined.",
   "etapes": [
    {
-    "titre": "White Base",
-    "detail": "Stretch the dough, oil it, distribute the mozzarella (pizza BIANCA, no tomato)."
+    "titre": "Preheat",
+    "detail": "Preheat the oven as high as it goes (250°C) with the stone or baking sheet inside for 30 min."
+   },
+   {
+    "titre": "Crush",
+    "detail": "Roughly crush the pistachios with a knife to get shards that will add crunch."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough ball by hand into a thin disc with an even rim, without a rolling pin."
+   },
+   {
+    "titre": "Bianca Base",
+    "detail": "Lightly oil the base then spread the drained mozzarella, with no tomato sauce at all for a pizza bianca."
    },
    {
     "titre": "Bake",
-    "detail": "MAXI oven (250°C) 8-10 min, mozzarella melted and crust golden."
+    "detail": "Bake 8 to 10 min until the mozzarella is melted and the crust is nicely golden."
    },
    {
     "titre": "Mortadella",
-    "detail": "KEY: mortadella sliced thin and placed RAW on the hot pizza (never cooked, it would dry out)."
+    "detail": "As soon as it comes out of the oven, lay the thin mortadella slices on raw over the hot pizza so they stay tender."
    },
    {
     "titre": "Finish",
-    "detail": "CHEF'S TIP: crushed pistachios + arugula + drizzle of oil. Pistachio cream on top is the luxury touch."
+    "detail": "Scatter with the pistachio shards and fresh arugula, then drizzle with olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve this generous pizza immediately, where the richness of the mortadella meets the crunch of the pistachios."
    }
   ]
  },
@@ -17147,79 +21497,103 @@ window.RECETTES_EN = {
  },
  "tacosmaison": {
   "nom": "Homemade Tacos",
-  "description": "Homemade Mexican tacos — spiced beef, fresh guacamole, pico de gallo and sour cream. A colorful and convivial feast.",
+  "description": "Homemade Mexican tacos — spiced beef, fresh guacamole, pico de gallo, and sour cream. A colorful, crowd-pleasing feast.",
   "etapes": [
    {
-    "titre": "Spice blend for the beef",
-    "detail": "Mix together: cumin, smoked paprika, oregano, sweet chili powder, garlic powder, and salt. Coat the ground beef with this mixture."
+    "titre": "Spice",
+    "detail": "Mix cumin, smoked paprika, oregano, mild chili, garlic powder, and salt, then coat the ground beef in the blend."
    },
    {
-    "titre": "Cook the meat",
-    "detail": "Sear the spiced beef in a hot skillet until nicely browned. Add a splash of lime juice at the end of cooking."
+    "titre": "Cook",
+    "detail": "Brown the spiced beef in a hot pan for 6 to 8 min until nicely colored, then add a squeeze of lime juice."
    },
    {
-    "titre": "Quick guacamole",
-    "detail": "Mash the avocado with a fork with lime juice, salt, cilantro, and chili pepper (optional)."
+    "titre": "Guacamole",
+    "detail": "Mash the avocado with a fork along with lime juice, salt, and a little onion for a chunky texture."
    },
    {
     "titre": "Pico de gallo",
-    "detail": "Mix diced tomatoes, sliced red onion, cilantro, lime juice, and salt."
+    "detail": "Combine the finely diced tomatoes, minced onion, lime juice, and salt for a fresh salsa."
    },
    {
-    "titre": "Assemble and serve",
-    "detail": "Warm the tortillas in a dry skillet. Top with beef, guacamole, pico de gallo, shredded cheese, and sour cream. Enjoy immediately!"
+    "titre": "Tortillas",
+    "detail": "Warm the tortillas dry in a hot pan for 30 seconds per side until soft and lightly golden."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Fill each tortilla with beef, guacamole, pico de gallo, and shredded cheese."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fold the tacos and enjoy them immediately with a lime wedge to squeeze over."
    }
   ]
  },
  "salmonteriyaki": {
   "nom": "Teriyaki Salmon",
-  "description": "Salmon fillets glazed with homemade teriyaki sauce, served with sushi rice and edamame. An accessible Japanese recipe.",
+  "description": "Salmon fillets glazed in homemade teriyaki sauce, served with sushi rice and edamame. An approachable Japanese recipe.",
   "etapes": [
    {
-    "titre": "Cook the rice",
-    "detail": "Rinse the rice. Cook in 1.5x its volume of cold water. Bring to a boil, reduce to low heat, cover and cook until water is absorbed. On LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Cook rice",
+    "detail": "Rinse the rice then cook it in 1.5 times its volume of cold water: at a boil, lower to low heat, cover, and let absorb for 12 min."
    },
    {
-    "titre": "Prepare the teriyaki sauce",
-    "detail": "Mix soy sauce, honey, grated ginger and 1 tsp cornstarch. Set aside."
+    "titre": "Sauce",
+    "detail": "Mix the soy sauce, honey, grated ginger, and 1 tsp of cornstarch slurry to make the teriyaki glaze."
    },
    {
-    "titre": "Cook the salmon",
-    "detail": "Heat a skillet over high heat. Cook the fillets skin side down for 3 minutes, flip and cook for 2 minutes. The center should remain slightly pink. CHEF'S TIP: high heat to sear and caramelize the juices."
+    "titre": "Edamame",
+    "detail": "Cook the edamame for 4 min in salted boiling water, drain, and keep them warm."
    },
    {
-    "titre": "Glaze the salmon",
-    "detail": "Pour the teriyaki sauce over the salmon. Let it caramelize for 1-2 minutes, basting regularly. CHEF'S TIP: watch for an amber color, no darker or it becomes bitter."
+    "titre": "Sear",
+    "detail": "In a very hot pan, cook the salmon fillets skin-side down for 3 min, flip, and continue 2 min, keeping the center pink."
    },
    {
-    "titre": "Plate and serve",
-    "detail": "Serve the salmon on the rice with the edamame. Sprinkle with sesame seeds and sliced scallions."
+    "titre": "Glaze",
+    "detail": "Pour the teriyaki sauce over the salmon and let it caramelize for 1 to 2 min while basting, watching the amber color to avoid bitterness."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Set the glazed salmon on the rice with the edamame around it, and spoon over the remaining sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with toasted sesame seeds and sliced scallion, then serve right away."
    }
   ]
  },
  "pouletcitronthym": {
   "nom": "Lemon & Thyme Chicken",
-  "description": "Golden chicken breasts with fresh lemon and thyme, served with roasted potatoes and crispy green beans.",
+  "description": "Chicken breasts browned with lemon and fresh thyme, served with roasted potatoes and crisp green beans.",
   "etapes": [
    {
-    "titre": "Preheat the oven",
-    "detail": "Preheat to 200°C. Cut potatoes into wedges, coat with olive oil, salt, pepper, and thyme. Place in oven. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C, cut the potatoes into wedges, and toss them with oil, salt, pepper, and thyme."
    },
    {
-    "titre": "Prepare the chicken",
-    "detail": "Gently flatten the chicken breasts. Season with salt, pepper, lemon zest, and fresh thyme. Salt and pepper generously. Always taste and adjust seasoning."
+    "titre": "Roast",
+    "detail": "Spread the potatoes on a baking sheet and roast for 25 to 30 min, flipping them halfway through so they brown all over."
    },
    {
-    "titre": "Cook the chicken",
-    "detail": "In a hot pan with olive oil, cook the breasts 4-5 minutes on each side until golden brown. Deglaze with lemon juice. CHEF'S TIP: scrape up ALL the browned bits stuck to the bottom = intense flavor."
+    "titre": "Season",
+    "detail": "Lightly flatten the chicken breasts and season them with salt, pepper, lemon zest, and fresh thyme."
    },
    {
-    "titre": "Cook the green beans",
-    "detail": "Blanch the green beans 4 minutes in boiling salted water. Drain and season with butter and salt. PRO TIP: boiling salted water 2-3 minutes then ice water. Stops the cooking and keeps the bright color."
+    "titre": "Sear",
+    "detail": "In a hot pan with oil and butter, cook the breasts 4 to 5 min per side until deeply golden, then deglaze with lemon juice."
    },
    {
-    "titre": "Lemon sauce",
-    "detail": "In the same pan, add crème fraîche and remaining lemon juice. Let reduce for 2 minutes. Serve with the chicken and vegetables. CHEF'S TIP: the sauce should coat the back of a spoon = right consistency."
+    "titre": "Green beans",
+    "detail": "Blanch the green beans for 4 min in salted boiling water, drain them, and sauté with a knob of butter and salt."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "In the same pan, add the cream and the rest of the lemon juice, and let reduce for 2 min until the sauce coats the spoon."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the chicken coated in sauce with the potatoes and beans, and serve piping hot."
    }
   ]
  },
@@ -17293,235 +21667,311 @@ window.RECETTES_EN = {
  },
  "burgermaison": {
   "nom": "Homemade Burger",
-  "description": "The perfect homemade burger — juicy ground beef patty, homemade burger sauce, melted cheddar, and fresh vegetables.",
+  "description": "The perfect homemade burger — juicy beef patty, homemade burger sauce, melted cheddar, and fresh veggies.",
   "etapes": [
    {
-    "titre": "Form the patties",
-    "detail": "Mix ground beef with salt, pepper, and a pinch of paprika. Form 150g patties, flattening them slightly. Make a small indent in the center with your thumb to prevent them from puffing up while cooking."
+    "titre": "Form",
+    "detail": "Mix the ground beef with salt, pepper, and a pinch of paprika, shape 150 g patties, and press a dimple in the center with your thumb."
    },
    {
-    "titre": "Burger sauce",
-    "detail": "Mix mayonnaise, ketchup, mustard, diced pickles, and paprika. Set aside."
+    "titre": "Prep",
+    "detail": "Wash the lettuce, slice the tomatoes into rounds, and cut the cheddar into slices, setting them aside."
    },
    {
-    "titre": "Cook the patties",
-    "detail": "Heat a skillet or grill until very hot. Cook for 3 minutes without moving, flip and cook for 2 minutes. Place cheddar on the patty and cover for 1 minute to melt."
+    "titre": "Cook",
+    "detail": "On a very hot pan or grill, sear the patties for 3 min without touching them, flip, and continue 2 min."
    },
    {
-    "titre": "Toast the buns",
-    "detail": "Cut the buns in half and toast the cut side in the skillet with a little butter. CHEF'S TIP: Use a sharp knife for clean cuts."
+    "titre": "Melt",
+    "detail": "Lay a slice of cheddar on each patty and cover for 1 min to melt it evenly."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Halve the buns and toast them cut-side down in the pan with a little butter until golden."
    },
    {
     "titre": "Assemble",
-    "detail": "Spread sauce on the buns. Add lettuce, tomato, cheddar patty, and caramelized onions if desired. Serve with homemade fries."
+    "detail": "Top the bottom bun with lettuce, tomato, and the cheddar patty, then close with the toasted top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the burger right away, alongside crispy homemade fries."
    }
   ]
  },
  "currypouletcoco": {
-  "nom": "Chicken Curry Coconut",
-  "description": "Thai-style chicken curry with coconut milk — creamy, aromatic, and subtly spiced. Serve with jasmine rice.",
+  "nom": "Coconut Chicken Curry",
+  "description": "Thai coconut milk chicken curry — silky, fragrant, and lightly spiced. Serve with jasmine rice.",
   "etapes": [
    {
-    "titre": "Cook the jasmine rice",
-    "detail": "Rinse the rice and cook in 1.5x its volume of water. Bring to a boil, cover, and cook over low heat. LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Cook rice",
+    "detail": "Rinse the jasmine rice then cook it in 1.5 times its volume of water: at a boil, cover and let it sit over low heat for 12 min until absorbed."
    },
    {
-    "titre": "Bloom the curry paste",
-    "detail": "In a saucepan, sauté the green (or red) curry paste with a drizzle of oil for 1 minute to release the aromatics."
+    "titre": "Prep",
+    "detail": "Cut the chicken into even pieces and wash the fresh spinach, setting it aside."
    },
    {
-    "titre": "Add the coconut",
-    "detail": "Pour in the coconut milk. Mix with the paste. Let simmer for 2 minutes."
+    "titre": "Curry paste",
+    "detail": "In a saucepan, sauté the curry paste with a drizzle of oil for 1 min to release its aromas."
    },
    {
-    "titre": "Cook the chicken",
-    "detail": "Add the chicken pieces. Simmer over medium heat until cooked through. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Coconut",
+    "detail": "Pour in the coconut milk, blend it with the paste, and let it simmer for 2 min for a smooth sauce."
    },
    {
-    "titre": "Finish and serve",
-    "detail": "Add the spinach, let it wilt for 2 minutes. Season with fish sauce and lime juice. Serve over rice with cilantro and chili. Salt and pepper generously. Taste and adjust ALWAYS."
+    "titre": "Simmer",
+    "detail": "Add the chicken and let it simmer over medium heat for 12 to 15 min, lid ajar, until fully cooked."
+   },
+   {
+    "titre": "Spinach",
+    "detail": "Stir in the spinach, let it wilt for 2 min, then season with lime juice and adjust the salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the curry piping hot over the jasmine rice, scattered with fresh cilantro."
    }
   ]
  },
  "padthai": {
   "nom": "Pad Thai",
-  "description": "Authentic pad thai — stir-fried rice noodles with shrimp, tofu, eggs, and tamarind sauce. The classic Thai street food recipe.",
+  "description": "Authentic pad thai — rice noodles stir-fried with shrimp, tofu, eggs, and tamarind sauce. The Thai street food classic.",
   "etapes": [
    {
-    "titre": "Soak the noodles",
-    "detail": "Soak the rice noodles in cold water for 30 minutes, or cook al dente according to package directions. Drain. Cook 1 minute less than package instructions. Taste to verify."
+    "titre": "Soak",
+    "detail": "Soak the rice noodles in cold water for 30 min, or cook them al dente, then drain them."
    },
    {
-    "titre": "Pad Thai sauce",
-    "detail": "Mix together: 3 tbsp fish sauce, 2 tbsp tamarind, 1 tbsp palm sugar (or brown sugar). Taste and adjust as needed."
+    "titre": "Sauce",
+    "detail": "Mix the fish sauce, tamarind, sugar, and lime juice, then taste and adjust the sweet-salty-sour balance."
    },
    {
-    "titre": "Stir-fry the tofu and shrimp",
-    "detail": "In a very hot wok with oil, brown the cubed tofu for 3 minutes. Add the shrimp, cook for 2 minutes. Watch carefully: uniform golden color means it's done—any longer and it will burn."
+    "titre": "Prep",
+    "detail": "Cut the tofu into cubes, peel the shrimp, and roughly crush the peanuts, setting them aside."
    },
    {
-    "titre": "Add the eggs",
-    "detail": "Push everything to the side. Crack the eggs into the wok and scramble quickly before mixing everything together."
+    "titre": "Stir-fry",
+    "detail": "In a very hot wok with oil, brown the tofu for 3 min, add the shrimp, and cook for 2 min until they turn pink."
    },
    {
-    "titre": "Finish the dish",
-    "detail": "Add the noodles and sauce. Stir-fry over high heat for 2-3 minutes, tossing well. Serve with peanuts, bean sprouts, lime, and cilantro. CHEF'S TIP: Use HIGH heat to sear and caramelize the pan drippings."
+    "titre": "Eggs",
+    "detail": "Push everything to one side, crack the eggs into the wok and scramble them quickly before mixing it all together."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Add the noodles and the sauce, and stir-fry over high heat for 2 to 3 min, tossing to coat them well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away topped with crushed peanuts, with a lime wedge to squeeze over."
    }
   ]
  },
  "couscous": {
   "nom": "Couscous Royal",
-  "description": "Moroccan couscous royal — fragrant semolina, simmered vegetables, merguez sausage and chicken in a spiced broth.",
+  "description": "Moroccan couscous royal — fragrant semolina, simmered vegetables, merguez, and chicken in a spiced broth.",
   "etapes": [
    {
-    "titre": "Prepare the broth",
-    "detail": "In a couscousiere, sauté onion, garlic, ginger and spices (cumin, turmeric, ras el hanout, cinnamon). Add the diced chicken and brown it. Watch carefully: uniform golden color means it's ready, any longer and it will burn."
+    "titre": "Prep",
+    "detail": "Mince the onion and garlic, peel and cut the carrots and zucchini into large chunks, and cut the chicken into pieces."
    },
    {
-    "titre": "Add the vegetables",
-    "detail": "Add carrots, turnips, zucchini and chickpeas. Cover with water or broth. Let simmer. CHEF'S TIP: keep the lid slightly ajar for better reduction."
+    "titre": "Broth",
+    "detail": "In the couscoussier, sauté the onion, garlic, ginger, and spices (cumin, turmeric, cinnamon), add the chicken, and brown it for 8 min."
    },
    {
-    "titre": "Cook the merguez",
-    "detail": "Grill the merguez in a skillet or on the grill until nicely browned. Preheat the grill for 5 minutes. The surface should be very hot to create nice grill marks."
+    "titre": "Vegetables",
+    "detail": "Add the carrots, zucchini, and chickpeas, cover with water, and let simmer for 35 to 40 min over low heat."
    },
    {
-    "titre": "Prepare the semolina",
-    "detail": "Pour the semolina into a dish. Add 1.5 times its volume of boiling salted water and a drizzle of olive oil. Cover for 5 minutes then fluff with a fork and stir in butter."
+    "titre": "Merguez",
+    "detail": "Grill the merguez in a very hot pan for 6 to 8 min until evenly browned."
    },
    {
-    "titre": "Harissa and serving",
-    "detail": "Take some of the broth and whisk in the harissa. Serve the semolina, meats and vegetables with the spiced broth on the side. The paste should DOUBLE in volume in a warm place (25°C, oven off with the light on)."
+    "titre": "Semolina",
+    "detail": "Pour the semolina into a dish, cover it with 1.5 times its volume of salted boiling water and a drizzle of oil, let it swell for 5 min, then fluff with butter."
+   },
+   {
+    "titre": "Harissa",
+    "detail": "Take a ladle of broth and stir harissa into it to offer a spicy sauce on the side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the semolina, arrange the meats and vegetables on top, and serve with the cinnamon-scented broth."
    }
   ]
  },
  "moussaka": {
   "nom": "Moussaka",
-  "description": "Authentic Greek moussaka — golden eggplants, spiced ground meat with cinnamon and creamy béchamel sauce, gratinéed to perfection.",
+  "description": "Authentic Greek moussaka — golden eggplant, cinnamon-spiced ground meat, and a creamy gratinéed béchamel.",
   "etapes": [
    {
-    "titre": "Prepare the eggplants",
-    "detail": "Slice the eggplants into 1 cm slices. Salt and let drain for 20 minutes. Rinse, dry, and brown in olive oil or in the oven at 200°C. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Drain eggplant",
+    "detail": "Cut the eggplant into 1 cm slices, salt them, and let them drain for 20 min on paper towels, then rinse and dry to remove the bitterness."
+   },
+   {
+    "titre": "Brown eggplant",
+    "detail": "Brush the slices with olive oil and brown them in a pan or in the oven at 200°C for 15 min until each side is colored, then set aside."
    },
    {
     "titre": "Meat sauce",
-    "detail": "Sauté the onion and garlic. Add the ground meat (lamb or beef). Brown it, then add crushed tomatoes, cinnamon, cloves, and salt. Simmer. Watch for it: uniform golden color = it's ready, any longer and it will burn."
+    "detail": "Sauté the minced onion and garlic in olive oil, add the ground meat and sear it, then stir in the crushed tomatoes, cinnamon, salt, and pepper."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let the sauce simmer over low heat for 25 min uncovered so it reduces and concentrates its flavors, stirring from time to time."
    },
    {
     "titre": "Béchamel",
-    "detail": "Prepare a thick béchamel sauce. Remove from heat, add an egg yolk and grated Parmesan."
+    "detail": "Make a thick béchamel, remove it from the heat, then stir in an egg yolk and most of the grated Parmesan to make it coating."
    },
    {
-    "titre": "Assemble the moussaka",
-    "detail": "In a buttered baking dish: layer of eggplants, meat sauce, eggplants, béchamel. Sprinkle with Parmesan."
+    "titre": "Layer",
+    "detail": "In a buttered dish, alternate a layer of eggplant, the meat sauce, a second layer of eggplant, then top with béchamel and sprinkle with the remaining Parmesan."
    },
    {
-    "titre": "Bake and gratinée",
-    "detail": "Bake at 180°C until the béchamel is golden brown. Let rest for 15 minutes before serving. CHEF'S TIP: this resting time is ESSENTIAL for the final texture."
+    "titre": "Gratinée",
+    "detail": "Bake at 180°C for 35 min until the surface is deeply golden and gratinéed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it rest for 15 min out of the oven before cutting into clean portions, an essential step so the moussaka holds together when sliced."
    }
   ]
  },
  "quichelorraine": {
   "nom": "Quiche Lorraine",
-  "description": "True Quiche Lorraine — crispy pie crust, smoked bacon, and an egg-cream filling. The traditional recipe.",
+  "description": "The real quiche Lorraine — crisp shortcrust pastry, smoked bacon lardons and an egg-and-cream custard. The traditional recipe.",
   "etapes": [
    {
-    "titre": "Line the pan",
-    "detail": "Roll out the pie dough into a tart pan. Prick the bottom. Blind bake for 10 minutes at 180°C with baking weights."
+    "titre": "Line tin",
+    "detail": "Roll out the shortcrust pastry into a tart tin, prick the base with a fork, then fill with baking beans."
    },
    {
-    "titre": "Cook the bacon",
-    "detail": "Sauté the smoked bacon in a skillet without any fat until lightly browned. Drain."
+    "titre": "Blind bake",
+    "detail": "Blind-bake the base 10 min at 180°C, then remove the beans so the pastry stays crisp."
    },
    {
-    "titre": "Prepare the filling",
-    "detail": "Whisk together the eggs with the crème fraîche and milk. Season with salt, pepper, and nutmeg. Don't oversalt — the bacon is already seasoned. Season with salt and pepper generously. Taste and adjust ALWAYS."
+    "titre": "Lardons",
+    "detail": "Cook the bacon lardons in a dry pan until lightly colored, then drain on paper towels."
    },
    {
-    "titre": "Assemble",
-    "detail": "Arrange the bacon over the pre-cooked tart crust. Pour the filling over it."
+    "titre": "Custard",
+    "detail": "Whisk the eggs with the cream and milk, season with pepper and grated nutmeg, and salt very lightly since the lardons are already salty."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Scatter the lardons over the pre-baked base, sprinkle with the crushed walnuts, then pour the custard over the top."
    },
    {
     "titre": "Bake",
-    "detail": "Bake at 180°C until the filling is set and lightly golden. Let cool for 5 minutes before cutting. CHEF'S TIP: use a sharp knife for clean slices."
+    "detail": "Bake at 180°C for 35 min until the custard is set and the surface lightly golden with a slight wobble in the center."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool 5 min to make slicing easier, then serve in wedges with a green salad."
    }
   ]
  },
  "paella": {
   "nom": "Paella",
-  "description": "Valencian paella — saffron rice with seafood, chicken and chorizo. The quintessential festive Spanish dish.",
+  "description": "Paella valenciana — saffron rice with seafood, chicken, and chorizo. The quintessential Spanish festive dish.",
   "etapes": [
    {
-    "titre": "Brown the meats",
-    "detail": "In the paella pan or large skillet, brown the chicken pieces and chorizo slices in olive oil. Watch carefully: uniform golden color = ready, any longer and it will burn."
+    "titre": "Sear meats",
+    "detail": "In the paellera, brown the chicken pieces and chorizo rounds in olive oil over high heat for about 8 min, then set aside."
    },
    {
     "titre": "Sofrito",
-    "detail": "Add diced red and green bell peppers, crushed tomatoes, garlic and smoked paprika. Cook for 5 minutes."
+    "detail": "In the same oil, sauté the chopped garlic and crushed tomatoes for 5 min over medium heat to build a fragrant base."
    },
    {
-    "titre": "Toast the rice",
-    "detail": "Add the rice and stir for 2 minutes. Pour in the hot broth with the saffron (2x the volume of rice). Do not stir anymore!"
+    "titre": "Toast rice",
+    "detail": "Add the rice and stir it for 2 min until it turns translucent and soaks up the cooking juices."
    },
    {
-    "titre": "Add the seafood",
-    "detail": "Midway through cooking, arrange shrimp and mussels on top of the rice. Cover and cook until the broth is absorbed."
+    "titre": "Add liquid",
+    "detail": "Pour in hot saffron-infused water to twice the volume of rice, spread out the chicken and chorizo, then never stir again."
    },
    {
-    "titre": "The socarrat",
-    "detail": "Toward the end of cooking, increase the heat for 1-2 minutes to brown the bottom (the socarrat — crispy crust). Cover with foil and let rest for 5 minutes. Watch carefully: uniform golden color = ready, any longer and it will burn."
+    "titre": "Seafood",
+    "detail": "Halfway through, around 10 min, arrange the shrimp and mussels over the rice and continue cooking over medium heat until the liquid is absorbed."
+   },
+   {
+    "titre": "Socarrat",
+    "detail": "At the end of cooking, raise the heat for 1 to 2 min to caramelize the bottom of the rice and form the socarrat, that golden, crispy crust."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cover with a cloth and let rest for 5 min, then serve straight from the paellera with lemon wedges."
    }
   ]
  },
  "potaufeu": {
   "nom": "Pot-au-Feu",
-  "description": "The traditional French pot-au-feu — beef simmered slowly with winter vegetables in a fragrant broth.",
+  "description": "The traditional French pot-au-feu — beef slowly simmered with winter vegetables in a fragrant broth.",
   "etapes": [
    {
-    "titre": "Start with cold water",
-    "detail": "Place the meat in a large pot. Cover with cold water. Bring slowly to a boil. Skim carefully as it comes to the surface."
+    "titre": "Cold water",
+    "detail": "Place the meat and bones in a large pot, cover with cold water and slowly bring to a gentle simmer."
    },
    {
-    "titre": "Add aromatics",
-    "detail": "Add bouquet garni, garlic, onion studded with cloves, salt and peppercorns. Lower the heat and let simmer gently. CHEF'S TIP: keep the lid slightly ajar for better reduction."
+    "titre": "Skim",
+    "detail": "Carefully skim off the impurities that rise to the surface as you go to get a clear broth."
    },
    {
-    "titre": "Add the vegetables",
-    "detail": "Peel and add carrots, leeks, and turnips. Continue cooking over low heat. LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Aromatics",
+    "detail": "Add the onion studded with cloves, the garlic, salt and whole peppercorns, then simmer gently for 2 hours with the lid ajar."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Peel and add the carrots, leeks and turnips, then continue cooking over low heat for 45 min."
    },
    {
     "titre": "Potatoes",
-    "detail": "Add the potatoes 30 minutes before the end. They should not fall apart."
+    "detail": "Add the potatoes 30 min before the end so they turn meltingly tender without falling apart."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Strain off some of the broth and serve it hot as a first course, with vermicelli if you like."
    },
    {
     "titre": "Serve",
-    "detail": "Serve the broth as a first course with vermicelli. Then the meat and vegetables with mustard, cornichons, fleur de sel, and roasted marrow bones."
+    "detail": "Then present the drained meat and vegetables, with mustard, cornichons and fleur de sel on the side."
    }
   ]
  },
  "ramenjaponais": {
   "nom": "Japanese Ramen",
-  "description": "Homemade Japanese ramen — rich and fragrant broth, springy noodles, soft-boiled egg, and generous toppings.",
+  "description": "Homemade Japanese ramen — a rich, fragrant broth, springy noodles, a soft-boiled egg and generous toppings.",
   "etapes": [
    {
-    "titre": "Prepare the broth",
-    "detail": "Bring pork bones to a boil for 5 minutes, drain and rinse. Return to fresh cold water with ginger, garlic, and scallions. Simmer gently for 3 hours for a rich broth. Season with soy sauce, miso, and mirin. Salt and pepper generously. Taste and adjust ALWAYS."
+    "titre": "Broth",
+    "detail": "Blanch the pork bones 5 min, drain and rinse, then return them to cold water with the garlic and ginger and simmer gently for 3 hours."
    },
    {
-    "titre": "Marinated soft-boiled eggs",
-    "detail": "Cook eggs for 6 minutes 30 seconds in boiling water. Cool, peel. Marinate in soy sauce + mirin + water (1:1:1) for at least 2 hours."
+    "titre": "Soft eggs",
+    "detail": "Cook the eggs 6 min 30 in boiling water, cool them, peel them, then marinate at least 2 hours in a mix of soy sauce and water."
    },
    {
-    "titre": "Chashu (roasted pork)",
-    "detail": "Roll the pork belly and tie with kitchen twine. Sear in a skillet until golden. Braise in soy sauce, mirin, sake, and sugar for 1 hour 30 minutes over low heat. ON LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Chashu",
+    "detail": "Roll and tie the pork, brown it in a little oil, then braise 1 hr 30 over low heat with soy sauce, sugar and ginger."
    },
    {
-    "titre": "Cook the noodles",
-    "detail": "Cook ramen noodles according to package directions. Drain thoroughly."
+    "titre": "Shiitake",
+    "detail": "Slice the shiitake and sauté them in oil over high heat for a few minutes until golden and fragrant."
    },
    {
-    "titre": "Assemble the bowl",
-    "detail": "Pour hot broth into bowls. Add noodles. Top with sliced chashu, soft-boiled egg halved, sautéed shiitake mushrooms, bamboo shoots, corn. Finish with sesame oil and nori."
+    "titre": "Noodles",
+    "detail": "Cook the ramen noodles according to the package time, keeping them firm, then drain quickly."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Pour the piping-hot broth into the bowls, add the noodles, then top with chashu slices, the halved egg and the shiitake."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Finish with a drizzle of sesame oil and serve immediately, steaming hot."
    }
   ]
  },
@@ -17530,298 +21980,406 @@ window.RECETTES_EN = {
   "description": "Indian butter chicken — tender chicken in a creamy tomato sauce with butter and warm spices. Served with naan.",
   "etapes": [
    {
-    "titre": "Marinate the chicken",
-    "detail": "Mix yogurt, lemon juice, garam masala, turmeric, cumin, and grated ginger. Marinate the chicken pieces for at least 2 hours (ideally overnight)."
+    "titre": "Marinate",
+    "detail": "Combine the yogurt, lemon juice, garam masala and grated ginger, add the chicken pieces and let marinate at least 2 hours, ideally overnight."
    },
    {
-    "titre": "Sear the chicken",
-    "detail": "Cook the marinated chicken in a skillet over high heat until nicely browned. Set aside. CHEF'S TIP: high heat to sear and caramelize the pan juices."
+    "titre": "Sear chicken",
+    "detail": "Drain the chicken and sear it in a hot pan over high heat for 6 to 8 min until nicely browned, then set aside."
    },
    {
-    "titre": "Makhani sauce",
-    "detail": "In the same skillet, melt the butter. Add onion, garlic, and ginger. Then add crushed tomatoes and spices (garam masala, cumin, paprika, fenugreek). Cook for 10 minutes."
+    "titre": "Aromatic base",
+    "detail": "Melt the butter in the same pan and sauté the onion, garlic and ginger until translucent and fragrant."
    },
    {
-    "titre": "Blend the sauce",
-    "detail": "Blend the sauce until smooth. Return to the skillet."
+    "titre": "Tomato sauce",
+    "detail": "Add the crushed tomatoes and garam masala, season with salt, then simmer 10 min over low heat to reduce the sauce."
    },
    {
-    "titre": "Finish and serve",
-    "detail": "Add the chicken and heavy cream. Simmer for 10 minutes. Serve with basmati rice or warm naans. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Blend",
+    "detail": "Blend the sauce until perfectly smooth and velvety, then return it to the pan."
+   },
+   {
+    "titre": "Add cream",
+    "detail": "Stir in the cream and return the seared chicken, then simmer 10 min over low heat so the flavors meld together."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve piping hot with basmati rice or warm naan."
    }
   ]
  },
  "mafewestafricain": {
-  "nom": "West African Maafé",
-  "description": "West African maafé — a meat stew in peanut sauce. A comforting dish from Mali, Senegal, and Guinea.",
+  "nom": "Mafé",
+  "description": "West African mafé — a meat stew in peanut sauce. A comforting dish from Mali, Senegal and Guinea.",
   "etapes": [
    {
-    "titre": "Brown the meat",
-    "detail": "Cut the lamb or beef into chunks. Brown over high heat in oil. Set aside. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Cut up",
+    "detail": "Cut the beef into large 4 cm cubes, slice the onion, mince the garlic and cut the sweet potato and carrot into even pieces."
    },
    {
-    "titre": "Sauté aromatics",
-    "detail": "In the same pot, sauté the onion. Add crushed tomatoes and tomato paste. Cook for 5 minutes."
+    "titre": "Sear",
+    "detail": "In a Dutch oven, brown the beef pieces over high heat in a drizzle of oil on all sides for 5 to 6 min, then set them aside."
    },
    {
-    "titre": "Add the peanut paste",
-    "detail": "Thin the peanut paste with hot broth. Add it to the sauce along with the meat. Mix well."
+    "titre": "Sweat",
+    "detail": "In the same pot, sauté the onion and garlic 4 min, add the crushed tomato and tomato paste, then let it cook down 5 min over medium heat."
    },
    {
-    "titre": "Add the vegetables",
-    "detail": "Add cubed sweet potato, carrots, and chili pepper. Simmer over low heat. LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Loosen",
+    "detail": "Dilute the peanut paste in a little hot water until smooth and creamy, stir it into the sauce with the beef and cover with water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over low heat, covered, for 40 min, stirring regularly so the peanut paste doesn't catch on the bottom."
+   },
+   {
+    "titre": "Add veg",
+    "detail": "Add the sweet potato and carrot, season with salt, then continue cooking 20 to 25 min until the vegetables are tender and the sauce thick and silky."
    },
    {
     "titre": "Serve",
-    "detail": "Adjust the seasoning. Serve over white rice. The maafé should be thick and creamy."
+    "detail": "Meanwhile, cook the white rice, adjust the seasoning of the mafé and serve it generously spooned over the steaming rice."
    }
   ]
  },
  "phovietnambien": {
   "nom": "Vietnamese Pho",
-  "description": "Authentic Vietnamese pho — beef broth simmered long with spices, rice noodles, and fresh herbs.",
+  "description": "Authentic Vietnamese pho — a long-simmered, spiced beef broth, rice noodles and fresh herbs.",
   "etapes": [
    {
-    "titre": "Toast the Spices",
-    "detail": "Dry-roast halved onions and ginger until browned. Add star anise, cinnamon, cloves, cardamom. Toast for 2 min. Preheat the grill 5 min. Surface very hot for nice char marks."
+    "titre": "Toast",
+    "detail": "Dry-char the halved onions and ginger until colored, then add the star anise and cinnamon and toast for 2 min."
    },
    {
-    "titre": "Prepare the Broth",
-    "detail": "Blanch the beef bones for 5 min, drain. Return with cold water, toasted spices, fish sauce, and palm sugar. Skim regularly. PRO TIP: boiling salted water for 2-3 min then ice water. Stops the cooking and keeps the bright color."
+    "titre": "Blanch bones",
+    "detail": "Blanch the beef bones 5 min in boiling water, then drain and rinse them to remove the impurities."
    },
    {
-    "titre": "Prepare the Noodles",
-    "detail": "Soak the rice noodles in cold water for 30 min. Blanch them for 1 min in boiling water. Drain. PRO TIP: boiling salted water for 2-3 min then ice water. Stops the cooking and keeps the bright color."
+    "titre": "Simmer",
+    "detail": "Return the bones to cold water with the toasted spices and the sugar, skim, then simmer gently for 4 hours for a clear, fragrant broth."
    },
    {
-    "titre": "Assemble the Pho",
-    "detail": "Arrange the noodles in bowls. Add the raw beef sliced very thin (it will cook in the boiling broth). Pour the hot broth over. Serve with bean sprouts, Thai basil, lime, and chili."
+    "titre": "Noodles",
+    "detail": "Soak the rice noodles 30 min in cold water, then blanch them 1 min in boiling water and drain."
+   },
+   {
+    "titre": "Slice beef",
+    "detail": "Slice the raw beef into very thin slices that will cook instantly on contact with the scalding broth."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Divide the noodles among the bowls, lay the raw beef on top, then pour over the boiling broth to sear the meat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with bean sprouts, fresh herbs and lime wedges to squeeze in at the last moment."
    }
   ]
  },
  "carbonara": {
   "nom": "Carbonara",
-  "description": "The true Roman carbonara — no cream! Just spaghetti, guanciale, pecorino, eggs, and pepper. A lesson in simplicity.",
+  "description": "The real Roman carbonara — no cream! Just spaghetti, guanciale, pecorino, eggs and pepper. The art of simplicity.",
   "etapes": [
    {
-    "titre": "Cook the pasta",
-    "detail": "Cook the spaghetti in boiling salted water. Keep it al dente. Reserve 1 cup of pasta water. Cook for 1 minute less than the package directs. Taste to check."
+    "titre": "Cook pasta",
+    "detail": "Cook the spaghetti in a large pot of salted boiling water, keeping it al dente, and reserve a cup of the cooking water before draining."
    },
    {
-    "titre": "Cook the guanciale",
-    "detail": "In a cold skillet over medium-low heat, render the guanciale without any added fat. It should be crispy on the outside. Turn off the heat."
+    "titre": "Guanciale",
+    "detail": "Render the sliced guanciale over medium-low heat in a cold pan until golden and crisp, then turn off the heat."
    },
    {
-    "titre": "Prepare the egg cream",
-    "detail": "Whisk vigorously the egg yolks + whole eggs + grated pecorino + generously ground black pepper. The mixture should be thick."
+    "titre": "Egg cream",
+    "detail": "Vigorously whisk the yolks and whole eggs with the grated pecorino and plenty of black pepper until thick."
    },
    {
-    "titre": "The crucial step",
-    "detail": "Off the heat, add the drained pasta to the skillet with the guanciale. Pour in the egg cream. Stir vigorously while adding the pasta water one spoonful at a time until you reach a creamy sauce. Do NOT return to the heat."
+    "titre": "Combine",
+    "detail": "Off the heat, add the drained spaghetti to the pan with the guanciale and coat it well in the fragrant fat."
    },
    {
-    "titre": "Serve immediately",
-    "detail": "Plate in warm bowls. Finish with pecorino and black pepper. Carbonara doesn't wait!"
+    "titre": "Emulsify",
+    "detail": "Add the egg cream and toss energetically, adding the cooking water a spoonful at a time until you get a glossy, coating sauce, without returning to the heat."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Adjust the texture with a little more cooking water if needed and finish with a dusting of pecorino."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate immediately on warm plates with a grind of black pepper, because carbonara cannot wait."
    }
   ]
  },
  "ceebujen": {
-  "nom": "Thiéboudienne",
-  "description": "The Senegalese Thiéboudienne (Ceebu Jen) — fish and rice, the national dish of Senegal. Rich, colorful, and aromatic.",
+  "nom": "Ceebu jën",
+  "description": "Senegalese Ceebu jën (Thiéboudienne) — fish and rice, the national dish of Senegal. Rich, colorful and fragrant.",
   "etapes": [
    {
-    "titre": "Stuff and marinate the fish",
-    "detail": "Stuff the fish with a mixture of parsley, garlic, chili pepper, and lemon. Fry in oil until golden brown. Set aside. Ideal temperature 170-180°C. Test: a bread cube should brown in 30 seconds."
+    "titre": "Stuff fish",
+    "detail": "Stuff the fish with a paste of garlic, parsley, chili and lemon, then let it absorb the flavors for a few minutes."
    },
    {
-    "titre": "Prepare the sauce",
-    "detail": "In the same oil, sauté onion, crushed tomatoes, tomato paste, and garlic. Add fish stock and spices (cumin, pepper, bay leaf)."
+    "titre": "Fry",
+    "detail": "Fry the fish in hot oil at 170°C until nicely colored on each side, then set aside."
    },
    {
-    "titre": "Cook the vegetables",
-    "detail": "Add cassava, carrots, eggplant, and cabbage to the sauce. Cook until halfway tender."
+    "titre": "Sauce",
+    "detail": "In the same oil, sauté the onion, tomatoes and garlic, add the pepper and a little water to form a fragrant sauce."
    },
    {
-    "titre": "Cook the rice",
-    "detail": "Remove the vegetables. Pour rinsed rice into the sauce. Add water if needed. Cook on low heat covered until completely absorbed. ON LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Vegetables",
+    "detail": "Drop the cassava and carrots into the sauce and cook them until half-tender, then remove and keep them warm."
    },
    {
-    "titre": "Plate and serve",
-    "detail": "Arrange the rice on a large platter. Arrange the vegetables and fish on top. Serve with hot sauce."
+    "titre": "Cook rice",
+    "detail": "Pour the rinsed rice into the sauce, top up with water if needed and cook over low heat, covered, until the liquid is fully absorbed."
+   },
+   {
+    "titre": "Reheat",
+    "detail": "Briefly reheat the fish and vegetables in the remaining sauce so they are piping hot at serving time."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spread the rice on a large platter, arrange the fish and vegetables on top and serve with lemon wedges."
    }
   ]
  },
  "tikamasala": {
   "nom": "Chicken Tikka Masala",
-  "description": "Chicken tikka masala — yogurt and spice-marinated chicken in a creamy tomato sauce. Britain's favorite curry!",
+  "description": "Chicken tikka masala — chicken marinated in yogurt and spices in a creamy tomato sauce. Britain's favorite curry!",
   "etapes": [
    {
-    "titre": "Tikka marinade",
-    "detail": "Mix yogurt, lemon juice, garam masala, turmeric, cumin, ginger, and garlic. Add cubed chicken and coat well. Refrigerate to marinate."
+    "titre": "Marinade",
+    "detail": "Mix the yogurt, lemon juice, garam masala, garlic and ginger, add the cubed chicken and marinate in the fridge for at least 1 hour."
    },
    {
-    "titre": "Sear the chicken",
-    "detail": "Drain the chicken. Brown in a skillet or on the grill over high heat. Set aside. CHEF'S TIP: high heat to sear and caramelize the pan drippings."
+    "titre": "Grill",
+    "detail": "Drain the chicken and brown it in a hot pan over high heat for 6 to 8 min until deeply caramelized, then set aside."
    },
    {
-    "titre": "Masala sauce",
-    "detail": "Sauté onion, garlic, and ginger in butter. Add spices (garam masala, paprika, cumin, coriander). Then add crushed tomatoes. Simmer for 15 minutes. CHEF'S TIP: partially cover the lid for better reduction."
+    "titre": "Base",
+    "detail": "Sauté the onion, garlic and ginger in the butter, add the garam masala and let the spices release their aroma for 1 min."
    },
    {
-    "titre": "Blend the sauce",
-    "detail": "Blend the sauce until smooth and creamy. Return to low heat. Keep on LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Sauce",
+    "detail": "Add the crushed tomatoes, season with salt and simmer 15 min over low heat to get a concentrated sauce."
    },
    {
-    "titre": "Finish",
-    "detail": "Stir in heavy cream and seared chicken. Simmer for 10 minutes. Serve with basmati rice and naans. CHEF'S TIP: partially cover the lid for better reduction."
+    "titre": "Blend",
+    "detail": "Blend the sauce until smooth and creamy, then return it to low heat."
+   },
+   {
+    "titre": "Add cream",
+    "detail": "Stir in the cream and the grilled chicken, then simmer 10 min over low heat to tie everything together."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve hot with basmati rice and naan."
    }
   ]
  },
  "poulettandoori": {
   "nom": "Tandoori Chicken",
-  "description": "Indian tandoori chicken — marinated in yogurt and spices, cooked at high temperature. Vibrant red, smoky and irresistible.",
+  "description": "Indian tandoori chicken — marinated in yogurt and spices, cooked at high heat. Bright red, smoky and irresistible.",
   "etapes": [
    {
-    "titre": "Score the chicken",
-    "detail": "Make deep cuts into the chicken flesh so the marinade penetrates well."
+    "titre": "Score",
+    "detail": "Cut deep slashes into the chicken pieces down to the bone so the marinade really penetrates the meat."
    },
    {
-    "titre": "Tandoori marinade",
-    "detail": "Mix yogurt, lemon juice, grated ginger and garlic, garam masala, cumin, coriander, paprika (for the red color), turmeric and salt. Coat generously. Marinate in the refrigerator."
+    "titre": "Prep",
+    "detail": "Grate the garlic, ginger and onion, then juice the lemon to bring together the aromatic base of the marinade."
    },
    {
-    "titre": "Cook at high temperature",
-    "detail": "Bake in a preheated 220°C oven on a rack (so air circulates). Or on the barbecue for authentic smoky flavor."
+    "titre": "Marinate",
+    "detail": "Mix the yogurt with the garam masala, paprika, garlic, ginger, onion, lemon juice and salt, then coat the chicken generously."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and marinate in the fridge for at least 3 hours, ideally overnight, to develop full flavor and color."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 220°C on convection and set the chicken on a rack over a tray to catch the juices."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Roast 25 to 30 min, turning the pieces halfway through, until the surface is lightly caramelized and the meat cooked through."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with lemon slices, thinly sliced red onion, fresh cilantro, naans and raita sauce (yogurt cucumber mint)."
+    "detail": "Serve the tandoori chicken with lemon wedges, sliced onion and a yogurt raita, alongside naan."
    }
   ]
  },
  "gnocchismaison": {
   "nom": "Homemade Gnocchi",
-  "description": "Homemade gnocchi with gorgonzola sauce — light as clouds, melting in your mouth with a creamy cheese sauce.",
+  "description": "Homemade gnocchi in gorgonzola sauce — light as clouds, melting in the mouth with a creamy cheese sauce.",
   "etapes": [
    {
-    "titre": "Cook the potatoes",
-    "detail": "Cook the potatoes in their skins. Peel while hot and mash immediately into a fine purée."
+    "titre": "Boil",
+    "detail": "Boil the whole potatoes in their skins in salted water for 30 to 35 min, until a knife slides through without resistance."
    },
    {
-    "titre": "Form the dough",
-    "detail": "Let the purée cool slightly. Add flour, egg, and salt. Mix without overworking until the dough is homogeneous. It should be supple but not sticky."
+    "titre": "Mash",
+    "detail": "Peel the potatoes while still hot and pass them immediately through a ricer for a fine, dry purée, then let cool 5 min."
    },
    {
-    "titre": "Shape the gnocchi",
-    "detail": "Roll the dough into logs about 2cm thick. Cut into 2cm pieces. Pass each gnocchi over a fork to create ridges. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Knead",
+    "detail": "Work the flour, egg and salt into the warm purée, mixing without overworking until you get a supple, even dough that is barely sticky."
    },
    {
-    "titre": "Cook the gnocchi",
-    "detail": "Drop into boiling salted water. They are cooked when they float to the surface. Drain after 30 seconds of floating."
+    "titre": "Shape",
+    "detail": "Roll the dough into 2 cm ropes, cut 2 cm pieces and ridge each gnocchi by rolling it over the back of a floured fork."
    },
    {
-    "titre": "Gorgonzola sauce",
-    "detail": "Melt the gorgonzola in the cream over low heat. Add the gnocchi and gently toss. Serve with walnuts and arugula. LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Poach",
+    "detail": "Drop the gnocchi in small batches into a large pot of salted boiling water and drain them 30 seconds after they rise to the surface."
+   },
+   {
+    "titre": "Cream sauce",
+    "detail": "In a pan, melt the gorgonzola into the cream over low heat, stirring until you get a smooth, coating sauce, and salt lightly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Gently fold the gnocchi into the gorgonzola sauce, scatter with crushed walnuts and serve right away, piping hot."
    }
   ]
  },
  "tajinemouton": {
   "nom": "Lamb Tajine",
-  "description": "Lamb tajine with prunes and almonds — melt-in-your-mouth meat, sweet fruits and Oriental spices. The sweetness of Morocco.",
+  "description": "Lamb tajine with prunes and almonds — meltingly tender meat, sweet fruit and warm Middle Eastern spices. The sweetness of Morocco.",
   "etapes": [
    {
-    "titre": "Brown the lamb",
-    "detail": "Cut the lamb into chunks. Brown in olive oil with sliced onions. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Cut",
+    "detail": "Cut the lamb into large chunks and thinly slice the onions for the base of the tajine."
    },
    {
-    "titre": "Add the spices",
-    "detail": "Add cinnamon, ginger, turmeric, saffron, salt and pepper. Coat the meat well. Cover with water or broth."
+    "titre": "Brown",
+    "detail": "Brown the lamb in olive oil over high heat with the onions for 6 to 8 min until nicely colored."
    },
    {
-    "titre": "Slow cooking",
-    "detail": "Cook on low heat covered until the meat is very tender. STRICTLY on LOW HEAT — otherwise it burns quickly."
+    "titre": "Spice",
+    "detail": "Add the cinnamon, ginger, salt and pepper, coat the meat well, then cover with water just to the top."
    },
    {
-    "titre": "Add prunes and honey",
-    "detail": "30 minutes before the end, add the prunes and honey. Let caramelize slightly. CHEF'S TIP: watch for an amber color, not darker or it becomes bitter."
+    "titre": "Simmer",
+    "detail": "Cover and simmer over low heat for 1h15 to 1h30, until the lamb is meltingly tender and the sauce has reduced."
    },
    {
-    "titre": "Finish and serve",
-    "detail": "Toast the sliced almonds in butter until golden. Sprinkle over the tajine. Serve with semolina or Moroccan bread. Watch carefully: uniform golden color = it's ready, any darker and it will burn."
+    "titre": "Candy",
+    "detail": "Add the prunes and honey 30 min before the end, and let them candy gently to a beautiful glossy amber color."
+   },
+   {
+    "titre": "Brown almonds",
+    "detail": "Brown the slivered almonds in butter in a pan for a few minutes, stirring so they color evenly to a golden blond."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter the golden almonds over the tajine and serve piping hot with couscous or Moroccan bread."
    }
   ]
  },
  "pekinduckeasy": {
   "nom": "Peking Duck",
-  "description": "Homemade Peking duck — crispy, lacquered skin served in thin crêpes with hoisin sauce and cucumber.",
+  "description": "Homemade Peking duck — crisp, lacquered skin, served in pancakes with hoisin sauce and cucumber.",
   "etapes": [
    {
-    "titre": "Prepare the duck",
-    "detail": "Pat the duck skin dry with paper towels. Mix together honey, soy sauce, rice vinegar, and five-spice powder. Brush the duck generously with the mixture. Let air-dry for 2 hours (or overnight in the refrigerator)."
+    "titre": "Dry",
+    "detail": "Carefully pat the duck skin dry with paper towels so it's good and dry and turns crisp during cooking."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Mix the honey with a little hot water and brush this glossy mixture generously over the entire duck skin."
+   },
+   {
+    "titre": "Air-dry",
+    "detail": "Let the duck air-dry for 2 hours, or overnight in the fridge, so the skin tightens and firms up slightly."
    },
    {
     "titre": "Roast",
-    "detail": "Preheat to 200°C. Place the duck on a rack above a roasting pan. Roast, turning and basting every 30 minutes. Preheat the oven 10 minutes before. Use convection heat for even roasting."
+    "detail": "Preheat the oven to 200°C and roast the duck on a rack for about 1 hr 30, brushing it with honey every 30 min."
    },
    {
     "titre": "Carve",
-    "detail": "Let rest for 10 minutes. Slice thinly, separating the crispy skin from the meat. CHEF'S TIP: use a well-sharpened knife for clean cuts."
+    "detail": "Let rest 10 min, then carve the duck into thin slices, keeping the crisp skin well separated from the meat."
    },
    {
-    "titre": "Prepare the crêpes",
-    "detail": "Warm the Peking duck crêpes (or homemade thin crêpes) in steam for 2 minutes."
+    "titre": "Garnish",
+    "detail": "Cut the cucumber into julienne, slice the scallion and steam the Peking pancakes for 2 min to warm them."
    },
    {
-    "titre": "Assemble and serve",
-    "detail": "Each diner fills their crêpe with hoisin sauce, julienned cucumber, thinly sliced scallions, and slices of lacquered duck. Roll and enjoy!"
+    "titre": "Serve",
+    "detail": "Everyone spreads their pancake with hoisin sauce, adds cucumber, scallion and duck slices, then rolls it up to enjoy right away."
    }
   ]
  },
  "ossobuco": {
   "nom": "Osso Buco",
-  "description": "Milanese osso buco — slowly braised veal shanks with zesty gremolata and saffron risotto. A great Lombard classic.",
+  "description": "Milanese osso buco — veal shanks braised low and slow, with a lemony gremolata and saffron risotto. A great Lombard classic.",
   "etapes": [
    {
-    "titre": "Flour and Brown",
-    "detail": "Flour the veal shank slices. Brown them over high heat in oil and butter. Make sure all sides are well browned. Set aside. CHEF'S TIP: use HIGH heat to sear and caramelize the pan drippings."
+    "titre": "Flour",
+    "detail": "Lightly flour the veal shank slices on both sides and tap off the excess flour."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the slices over high heat in a mix of olive oil and butter, 3 min per side until nicely colored, then set aside."
    },
    {
     "titre": "Soffritto",
-    "detail": "In the same pot, melt finely minced onion, carrot, and celery."
+    "detail": "In the pot, sweat the finely minced onion over medium heat for 5 min until translucent and soft."
    },
    {
-    "titre": "Deglaze and Braise",
-    "detail": "Deglaze with white wine. Add crushed tomatoes, broth, lemon zest, and thyme. Return the veal to the pot. Cover. CHEF'S TIP: scrape up ALL the browned bits stuck to the bottom = intense flavor."
+    "titre": "Deglaze",
+    "detail": "Pour in the white wine to deglaze, scraping up the browned bits, let it reduce by half, then add the tomatoes, stock and garlic."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Return the shanks to the pot, cover and braise over very low heat for 1h30 until the meat falls off the bone."
    },
    {
     "titre": "Gremolata",
-    "detail": "Finely mix lemon zest, minced garlic, and chopped flat-leaf parsley. Sprinkle over the osso buco at the end of cooking."
+    "detail": "Combine the lemon zest, minced garlic and chopped parsley, then scatter this gremolata over the osso buco at the end of cooking."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with saffron risotto milanese. Don't forget the marrow in the bone — that's the best part!"
+    "detail": "Adjust the seasoning and serve each slice with its marrow and a risotto, spooning over the braising juices."
    }
   ]
  },
  "tteokbokki": {
   "nom": "Tteokbokki",
-  "description": "Korean Tteokbokki — rice cakes in a spicy and sweet gochujang sauce. The ultimate Korean street food!",
+  "description": "Korean tteokbokki — rice cakes in a spicy-sweet gochujang sauce. The essential Korean street food!",
   "etapes": [
    {
-    "titre": "Soak the tteok",
-    "detail": "If the rice cakes are frozen or dried, soak them in cold water for 20 minutes."
+    "titre": "Soak",
+    "detail": "If the tteok (rice cakes) are dry or frozen, soak them 20 min in cold water to soften, then drain."
    },
    {
-    "titre": "Gochujang sauce",
-    "detail": "Mix gochujang, soy sauce, sugar, and garlic in the broth (anchovy or vegetable). Bring to a boil."
+    "titre": "Prep",
+    "detail": "Crush or finely chop the garlic and set aside; gently separate any tteok sticks that are stuck together."
    },
    {
-    "titre": "Cook the tteok",
-    "detail": "Add the rice cakes to the sauce. Cook while stirring until the sauce thickens and the tteok are tender."
+    "titre": "Sauce",
+    "detail": "Mix the gochujang, soy sauce and sugar into the stock (anchovy or vegetable) with the garlic until you have a smooth sauce."
    },
    {
-    "titre": "Toppings",
-    "detail": "Add fish cakes (eomuk) if available, scallions, and a hard-boiled egg. Serve hot and nicely spiced!"
+    "titre": "Boil",
+    "detail": "Pour the sauce into a wide pan and bring to a boil over medium-high heat for 3 to 4 min."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the tteok and cook 8 to 10 min, stirring often, until the sauce thickens and coats the now-tender rice cakes."
+   },
+   {
+    "titre": "Season",
+    "detail": "Taste and adjust the sugar or gochujang to the spiciness you want; the sauce should be glossy and deep red."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve very hot, scattered with sliced green onions and, if you can, a hard-boiled egg and eomuk fish cakes."
    }
   ]
  },
@@ -17830,804 +22388,1088 @@ window.RECETTES_EN = {
   "description": "Greek lamb souvlaki — tender skewers marinated in lemon and oregano, served with pita bread and tzatziki.",
   "etapes": [
    {
-    "titre": "Marinade",
-    "detail": "Cut the lamb into cubes. Marinate with olive oil, lemon juice, oregano, garlic, salt and pepper. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Cut",
+    "detail": "Cut the lamb into even 3 cm cubes for uniform cooking on the skewers."
    },
    {
-    "titre": "Skewers",
-    "detail": "Thread onto skewers. Grill or barbecue, turning occasionally."
+    "titre": "Marinate",
+    "detail": "Combine the olive oil, lemon juice, crushed garlic, salt and pepper, coat the lamb and let it marinate in the fridge for at least 1 h."
    },
    {
     "titre": "Tzatziki",
-    "detail": "Mix Greek yogurt, grated and drained cucumber, garlic, dill, and lemon juice."
+    "detail": "Grate and squeeze out the cucumber, mix it into the Greek yogurt with garlic, a splash of lemon, salt and pepper, then chill."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the lamb cubes onto skewers, packing them slightly so they stay juicy as they cook."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the skewers for 10 to 12 min over a very hot grill, turning regularly, until golden and crusty outside and pink within."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Warm the pitas and fill them with tzatziki, tomato, sliced onion and the grilled lamb pieces."
    },
    {
     "titre": "Serve",
-    "detail": "Warm the pitas. Top with tzatziki, tomato, red onion and the meat. Drizzle with olive oil."
+    "detail": "Drizzle with a little olive oil, fold the pitas closed and serve right away, piping hot."
    }
   ]
  },
  "dorade_chermoula": {
-  "nom": "Dorade Chermoula",
-  "description": "Royal dorade with Moroccan chermoula — herb and spice marinade, baked in the oven. Simple, fragrant, and delicate.",
+  "nom": "Chermoula Sea Bream",
+  "description": "Royal sea bream with Moroccan chermoula — an herb-and-spice marinade, baked in the oven. Simple, fragrant and delicate.",
   "etapes": [
    {
-    "titre": "Prepare the chermoula",
-    "detail": "Blend cilantro, parsley, garlic, cumin, paprika, turmeric, lemon juice, and olive oil. The chermoula should be a green, fragrant paste."
+    "titre": "Chermoula",
+    "detail": "Blend the cilantro, parsley, garlic, lemon juice and olive oil into a fragrant, smooth green paste."
    },
    {
-    "titre": "Marinate the dorade",
-    "detail": "Score the fish. Coat generously with chermoula inside and out. Marinate in the refrigerator."
+    "titre": "Score",
+    "detail": "Scale and gut the bream, then make two or three slashes on each side so the marinade soaks into the flesh."
    },
    {
-    "titre": "Bake in the oven",
-    "detail": "Arrange in a baking dish with lemon slices, tomatoes, olives, and peppers. Cover with aluminum foil for the first 20 minutes."
+    "titre": "Marinate",
+    "detail": "Coat the bream generously with chermoula inside and out, then let it marinate in the fridge for at least 30 min."
+   },
+   {
+    "titre": "Fill dish",
+    "detail": "Arrange the bream in a dish with lemon slices, tomatoes, strips of bell pepper and olives."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C, covered with foil for the first 20 minutes, then continue 15 to 20 min uncovered until the flesh flakes."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with couscous or Moroccan bread. Drizzle with the cooking juices."
+    "detail": "Spoon the cooking juices over the bream and serve it with couscous or Moroccan bread to mop up the sauce."
    }
   ]
  },
  "pouletchicken65": {
   "nom": "Chicken 65",
-  "description": "Indian Chicken 65 — ultra spicy and crispy fried chicken, a specialty from Chennai. An explosive Indian appetizer!",
+  "description": "Indian Chicken 65 — ultra-spicy, crispy fried chicken, a specialty of Chennai. An explosive Indian appetizer!",
   "etapes": [
    {
-    "titre": "Spiced Marinade",
-    "detail": "Mix yogurt, rice flour, cornstarch, grated ginger-garlic, red chili, curry, turmeric, salt, and red food coloring (optional). Marinate the chicken pieces."
+    "titre": "Cut",
+    "detail": "Cut the chicken into even bite-sized pieces, grate the garlic and ginger and squeeze the lemon."
    },
    {
-    "titre": "Double Fry",
-    "detail": "First fry at 160°C to cook through. Second fry at 190°C to crisp."
+    "titre": "Marinate",
+    "detail": "Mix the yogurt, flour, chili, curry, garlic, ginger, salt and a little lemon, coat the chicken and marinate 30 min in the fridge."
    },
    {
-    "titre": "Finish in the Pan",
-    "detail": "Quickly sauté with curry leaves, green chili, garlic, and ginger. Squeeze with lemon juice."
+    "titre": "Fry 1",
+    "detail": "Heat the oil to 160°C and drop in the chicken in small batches to cook it through for 4 to 5 min, then drain."
+   },
+   {
+    "titre": "Fry 2",
+    "detail": "Raise the oil to 190°C and re-fry the pieces for 1 to 2 min to make them really crispy and golden."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "In a pan, quickly stir-fry the chicken with garlic, ginger and a little chili, then drizzle with a splash of lemon."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with sliced onions and lime wedges. Sprinkle with fresh cilantro."
+    "detail": "Serve the Chicken 65 piping hot with onion and lemon slices, and scatter with fresh cilantro."
    }
   ]
  },
  "pierogi": {
   "nom": "Pierogi",
-  "description": "Polish Pierogi — dumplings filled with potato and cheese, boiled then pan-fried with caramelized onions and sour cream.",
+  "description": "Polish pierogi — dumplings stuffed with potato and cheese, boiled then pan-fried with caramelized onions and sour cream.",
   "etapes": [
    {
-    "titre": "Pierogi Dough",
-    "detail": "Mix flour, egg, salt, and warm water until you have a soft dough. Let rest for 30 minutes covered with plastic wrap. CHEF'S TIP: this resting period is ESSENTIAL for the final texture."
+    "titre": "Knead",
+    "detail": "Mix the flour, salt and warm water into a soft, smooth dough that no longer sticks to your fingers."
    },
    {
-    "titre": "Potato Filling",
-    "detail": "Cook the potatoes and mash them. Mix with quark or fresh cheese, sautéed onion, salt, and pepper."
+    "titre": "Rest",
+    "detail": "Cover the dough with plastic wrap and let it rest 30 min at room temperature so it becomes elastic and easy to roll out."
    },
    {
-    "titre": "Shaping the Pierogi",
-    "detail": "Roll out the dough thinly. Cut into 8cm circles. Place a spoonful of filling on each circle. Fold into a half-moon shape and seal the edges. CHEF'S TIP: use a sharp knife for clean, neat cuts."
+    "titre": "Filling",
+    "detail": "Cook the potatoes, mash them, then mix with the cheese, sautéed onion, salt and pepper."
    },
    {
-    "titre": "Boiling",
-    "detail": "Drop into salted boiling water until they float to the surface. Drain."
+    "titre": "Shape",
+    "detail": "Roll the dough out thinly, cut 8 cm circles, place a spoonful of filling on each and seal the edges firmly into half-moons."
    },
    {
-    "titre": "Pan-fry and Serve",
-    "detail": "Brown in butter with caramelized onions. Serve with sour cream and chives. Watch carefully: uniform golden color means it's ready—any longer and it will burn."
+    "titre": "Poach",
+    "detail": "Drop the pierogi into boiling salted water and gently drain them as soon as they float to the surface, after 3 to 4 min."
+   },
+   {
+    "titre": "Pan-fry",
+    "detail": "Brown the pierogi in butter in a pan with caramelized onions until crispy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the pierogi hot, topped with cream and sprinkled with chopped chives."
    }
   ]
  },
  "bibimbap": {
   "nom": "Bibimbap",
-  "description": "Korean Bibimbap — a rice bowl topped with sautéed vegetables, marinated beef, an egg, and gochujang sauce. Mix and enjoy!",
+  "description": "Korean bibimbap — a rice bowl topped with sautéed vegetables, marinated beef, egg and gochujang sauce. Mix it all up and dig in!",
   "etapes": [
    {
-    "titre": "Marinate the beef",
-    "detail": "Thinly slice the beef. Marinate with soy sauce, sugar, garlic, sesame oil, and pepper for 20 minutes."
+    "titre": "Marinate",
+    "detail": "Thinly slice the beef and marinate it for 20 min with soy sauce, sugar, garlic, sesame oil and pepper."
    },
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Sauté the zucchini, carrot, and spinach separately in sesame oil. Season each with salt and garlic. Season generously with salt and pepper. Taste and adjust ALWAYS."
+    "titre": "Rice",
+    "detail": "Rinse the rice and cook it in water until fully absorbed, then keep it warm and glossy."
    },
    {
-    "titre": "Cook the beef",
-    "detail": "Stir-fry the beef over high heat until cooked. CHEF'S TIP: Use HIGH heat to sear and caramelize the juices."
+    "titre": "Vegetables",
+    "detail": "Sauté the zucchini, carrot and spinach separately in oil, seasoning each with salt and a little garlic."
    },
    {
-    "titre": "Fried egg",
-    "detail": "Cook one fried egg with a runny yolk per person."
+    "titre": "Beef",
+    "detail": "Stir-fry the marinated beef over high heat for 3 to 4 min until well seared and caramelized."
    },
    {
-    "titre": "Assemble and mix",
-    "detail": "Place rice in the bottom of the bowl. Arrange each topping in colorful sections. Place the egg in the center. Add gochujang. Mix everything together before eating!"
+    "titre": "Egg",
+    "detail": "Fry one egg per person, keeping the yolk runny."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spread the rice in the bottom of the bowls and arrange each topping in colorful sections, with the egg in the center."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a spoonful of gochujang and mix everything together just before eating."
    }
   ]
  },
  "porc_pulled": {
   "nom": "Pulled Pork",
-  "description": "American Pulled Pork — smoked and shredded pork shoulder, marinated in BBQ rub and slow-cooked. A classic American South recipe.",
+  "description": "American pulled pork — smoked, shredded pork shoulder, rubbed with BBQ spices and slow-cooked. The classic recipe of the American South.",
   "etapes": [
    {
-    "titre": "Prepare the Rub",
-    "detail": "Mix smoked paprika, brown sugar, garlic powder, onion, cumin, salt, pepper, and chili pepper. Generously coat the pork. Wrap in plastic film."
+    "titre": "Rub",
+    "detail": "Mix the rub (smoked paprika, brown sugar, garlic and onion powder, cumin, salt, pepper) and coat the pork shoulder generously, then wrap and chill 1 h."
    },
    {
-    "titre": "Low Temperature Cooking",
-    "detail": "Cook in the oven at 120°C covered, or in a cast iron Dutch oven. The meat should reach 90°C at the center."
+    "titre": "Prep",
+    "detail": "Slice the onion and crush the garlic, and scatter them in the bottom of a pot with a splash of liquid smoke or stock."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the pork on all sides over high heat for a few minutes to develop a nicely colored crust."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and bake at 120°C for about 5 h, until the meat reaches 90°C internally and falls apart on its own."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Remove the meat and let it rest 30 min under a sheet of foil: this rest is essential for a melting texture."
    },
    {
     "titre": "Shred",
-    "detail": "Remove the meat and let rest for 30 minutes. Shred with two forks. Drizzle with the cooking juices. CHEF'S TIP: this resting period is ESSENTIAL for the final texture."
+    "detail": "Shred the pork with two forks, basting it with the cooking juices collected at the bottom of the pot."
    },
    {
-    "titre": "BBQ Sauce",
-    "detail": "Mix the meat with BBQ sauce. Serve in burger buns with coleslaw."
+    "titre": "Serve",
+    "detail": "Mix with the BBQ sauce and serve in buns with a crunchy coleslaw."
    }
   ]
  },
  "braiseboeuf_asiatique": {
   "nom": "Braised Beef Cheeks",
-  "description": "Braised beef cheeks with Asian flavors — soy sauce, ginger, star anise, and palm sugar. Absolutely melt-in-your-mouth tender.",
+  "description": "Asian-style braised beef cheeks — soy sauce, ginger, star anise and palm sugar. Absolutely meltingly tender.",
   "etapes": [
    {
-    "titre": "Sear the cheeks",
-    "detail": "Brown the beef cheeks on all sides in oil over high heat. Set aside. CHEF'S TIP: High heat to sear and caramelize the meat juices."
+    "titre": "Prep",
+    "detail": "Trim the beef cheeks, slice the garlic and ginger, and get the star anise ready."
    },
    {
-    "titre": "Prepare the braising liquid",
-    "detail": "In the same pot, sauté garlic and ginger. Add soy sauce, mirin, sake, palm sugar, star anise, and broth. Bring to a boil."
+    "titre": "Sear",
+    "detail": "Brown the cheeks on all sides in oil over high heat to caramelize the juices, then set them aside."
    },
    {
-    "titre": "Braise low and slow",
-    "detail": "Return the cheeks to the pot. Cover and cook over very low heat. The meat should fall apart with a fork."
+    "titre": "Aromatics",
+    "detail": "In the same pot, cook the garlic and ginger for 1 min over medium heat until fragrant."
    },
    {
-    "titre": "Reduce and serve",
-    "detail": "Remove the meat, reduce the sauce over high heat for 5 minutes. Spoon the sauce over the cheeks. Serve with steamed rice and sautéed bok choy. CHEF'S TIP: High heat to sear and caramelize the meat juices."
+    "titre": "Braise",
+    "detail": "Deglaze with the soy sauce, mirin and sake, add the sugar, star anise and a little stock, then bring to a boil."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the cheeks, cover and braise over very low heat for about 2h30, until the meat falls apart with a fork."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Remove the meat and reduce the sauce over high heat for 5 min until syrupy and glossy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat the cheeks with sauce and serve with steamed rice and sautéed bok choy."
    }
   ]
  },
  "paprikashpoulet": {
   "nom": "Chicken Paprikash",
-  "description": "Hungarian chicken paprikash — chicken simmered in a creamy smoked paprika sauce. A comforting Central European dish.",
+  "description": "Hungarian chicken paprikash — chicken simmered in a creamy smoked-paprika sauce. A comforting dish from Central Europe.",
   "etapes": [
    {
-    "titre": "Sauté the onion",
-    "detail": "Melt the sliced onions in lard (or butter) until golden."
+    "titre": "Prep",
+    "detail": "Finely slice the onions and cut the chicken into even pieces, lightly salting the meat."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Melt the butter (or lard) and cook the onions over medium heat for 8 to 10 min until nicely golden."
    },
    {
     "titre": "Paprika",
-    "detail": "Remove from heat and add generous amounts of Hungarian sweet paprika. Stir. Return to low heat (paprika burns easily). STRICTLY LOW HEAT — otherwise it burns quickly."
+    "detail": "Off the heat, add a generous amount of sweet Hungarian paprika and stir, then return to low heat, as paprika burns very quickly."
    },
    {
-    "titre": "Add the chicken",
-    "detail": "Add the chicken pieces. Cover with broth. Season with salt. Let simmer covered. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Simmer",
+    "detail": "Add the chicken, cover with stock, season with salt and simmer covered for about 25 min until tender."
    },
    {
-    "titre": "Cream sauce",
-    "detail": "Remove the chicken. Mix sour cream + 1 tbsp flour. Whisk into the hot sauce. Return the chicken. Serve with Hungarian noodles (csipetke) or gnocchi. CHEF'S TIP: use a spatula with gentle folding motions to avoid breaking the air."
+    "titre": "Cream",
+    "detail": "Remove the chicken, whisk the flour into the cream, then whisk it into the hot sauce to thicken it."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Return the chicken to the creamy sauce and warm through for 5 min over low heat without letting it boil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve coated in sauce with Hungarian noodles (csipetke) or gnocchi."
    }
   ]
  },
  "moquecabresil": {
-  "nom": "Brazilian Moqueca",
-  "description": "Brazilian Moqueca — a fish stew with coconut milk, tomatoes, and dendê oil. The emblematic dish of Bahia.",
+  "nom": "Moqueca Brésilienne",
+  "description": "Brazilian moqueca — a fish stew with coconut milk, tomatoes and dendê oil. The signature dish of Bahia.",
   "etapes": [
    {
-    "titre": "Marinate the fish",
-    "detail": "Cut the fish into pieces. Marinate with lime juice, garlic, salt, and cilantro for 30 minutes. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Marinate",
+    "detail": "Cut the fish into large pieces and marinate it for 30 min with lime juice, garlic, salt and a little cilantro."
    },
    {
-    "titre": "Aromatic base",
-    "detail": "In a saucepan, sauté the onion and bell pepper. Add crushed tomatoes and let reduce for 5 minutes. CHEF'S TIP: the sauce should coat the back of a spoon = proper consistency."
+    "titre": "Base",
+    "detail": "Cook the sliced onion in the oil, add the crushed tomatoes and let reduce 5 min into a fragrant sauce."
    },
    {
-    "titre": "Coconut milk",
-    "detail": "Pour in the coconut milk and dendê oil (or palm oil). Season. Salt and pepper generously. Taste and always adjust."
+    "titre": "Coconut",
+    "detail": "Pour in the coconut milk, season with salt and bring to a gentle simmer over low heat to bind the sauce well."
    },
    {
-    "titre": "Cook the fish",
-    "detail": "Add the marinated fish. Cook gently without stirring to keep it from breaking apart."
+    "titre": "Cook",
+    "detail": "Gently lay the marinated fish into the sauce and cook 10 min over low heat without stirring so it doesn't break apart."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Scatter generously with chopped fresh cilantro and adjust the seasoning at the end of cooking."
+   },
+   {
+    "titre": "Farofa",
+    "detail": "Dry-toast the cassava flour in a pan for a few minutes until lightly colored to make the farofa."
    },
    {
     "titre": "Serve",
-    "detail": "Sprinkle with fresh cilantro. Serve with white rice and farofa (toasted cassava flour)."
+    "detail": "Serve the moqueca piping hot with white rice and the crunchy farofa on the side."
    }
   ]
  },
  "grilladelamnocciole": {
-  "nom": "Grilled Lamb Chops with Hazelnuts",
-  "description": "Herb-grilled lamb chops — Provençal marinade, grilled to perfection. Simple, Mediterranean, and flavorful.",
+  "nom": "Grilled Lamb Chops",
+  "description": "Herb-grilled lamb chops — Provençal marinade, cooked on the grill. Simple, Mediterranean and full of flavor.",
   "etapes": [
    {
-    "titre": "Provençal Marinade",
-    "detail": "Mix olive oil, chopped rosemary, crushed garlic, thyme, lemon juice, salt and pepper. Coat the lamb chops."
+    "titre": "Marinade",
+    "detail": "Mix the olive oil, chopped rosemary, crushed garlic, lemon juice, salt and pepper, then coat the chops and let them marinate for 30 min."
    },
    {
-    "titre": "Very Hot Grill",
-    "detail": "Preheat the grill or barbecue to maximum heat. The grates must be smoking hot. Minimum 10 minutes at the proper temperature for proper cooking to begin."
+    "titre": "Preheat",
+    "detail": "Preheat the grill or barbecue to maximum for at least 10 min: the grates should be scorching hot."
    },
    {
-    "titre": "Cook",
-    "detail": "Grill the lamb chops 2-3 minutes per side for medium-rare. Do not overcook the lamb. Preheat the grill 5 minutes. Surface very hot for beautiful grill marks."
+    "titre": "Grill",
+    "detail": "Sear the chops 2 to 3 min per side for a pink, medium-rare cook and beautiful grill marks."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper at the end of cooking to keep the juices in and bring out the flavor of the lamb."
    },
    {
     "titre": "Rest",
-    "detail": "Let rest 5 minutes under foil before serving. Serve with ratatouille or tabbouleh. CHEF'S TIP: this resting period is ESSENTIAL for the final texture."
+    "detail": "Let the chops rest 5 min under a sheet of foil: this rest is essential for tenderness."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the chops piping hot with a ratatouille or a fresh tabbouleh."
    }
   ]
  },
  "carigrioantillais": {
-  "nom": "Cari Griot Antillais",
-  "description": "Creole-spiced fried and marinated pork — the quintessential celebration dish of Haitian cuisine.",
+  "nom": "Caribbean Cari Griot",
+  "description": "Caribbean Cari Griot — fried pork marinated in Creole spices. The ultimate celebration dish of Haitian cuisine.",
   "etapes": [
    {
-    "titre": "Creole Marinade",
-    "detail": "Mix lime juice, crushed garlic, thyme, sliced onion, chili pepper, salt and pepper. Marinate the cubed pork in the refrigerator."
+    "titre": "Cut",
+    "detail": "Cut the pork into even 3 cm cubes and thinly slice the onion; chop the garlic and chili, removing the seeds to control the heat."
    },
    {
-    "titre": "Braise Until Tender",
-    "detail": "Transfer pork and marinade to a pot. Cover and cook over medium-low heat until the liquid evaporates."
+    "titre": "Marinate",
+    "detail": "Mix the lemon juice, garlic, picked thyme, onion, chili, salt and pepper, coat the pork cubes and let marinate in the fridge for at least 30 min."
    },
    {
-    "titre": "Fry in Its Own Fat",
-    "detail": "Once the liquid has evaporated, the pork cooks in its own rendered fat. Fry until deeply golden and crispy."
+    "titre": "Braise",
+    "detail": "Pour the pork and all its marinade into a Dutch oven, cover and cook over medium-low heat for 30 min, stirring occasionally, until the liquid evaporates."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Uncover and keep cooking over medium heat: the pork releases its fat and fries in it; brown it 10 to 12 min, stirring, for a caramelized, crispy crust."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste, adjust the salt and pepper, and deglaze the bottom of the pot with a splash of hot water to lift the browned bits and coat the griot."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with rice and peas (djon djon rice), fried plantains, and pikliz (spicy pickled cabbage)."
+    "detail": "Plate the golden-brown griot with rice and red beans, fried plantains and a little pikliz for a tangy, spicy kick."
    }
   ]
  },
  "rendangboeuf": {
   "nom": "Beef Rendang",
-  "description": "Indonesian Rendang — beef simmered slowly in coconut milk and spices until caramelized. The most flavorful curry in the world.",
+  "description": "Indonesian Rendang — beef slow-simmered in coconut milk and spices until caramelized. The most flavorful curry in the world.",
   "etapes": [
    {
-    "titre": "Chili Paste",
-    "detail": "Blend chilies, shallots, garlic, galangal, turmeric, lemongrass, and ginger to make a smooth paste."
+    "titre": "Spice paste",
+    "detail": "Blend the chilies, garlic, galangal, lemongrass and ginger into a smooth, fine spice paste."
    },
    {
-    "titre": "Toast the Paste",
-    "detail": "In a Dutch oven, toast the paste over medium heat until it dries out and becomes very fragrant."
+    "titre": "Prep",
+    "detail": "Cut the beef into large, even cubes for slow, even cooking."
    },
    {
-    "titre": "Add Beef and Coconut",
-    "detail": "Add the beef cubes and coconut milk. Add kaffir lime leaves and tamarind. Bring to a boil."
+    "titre": "Sauté",
+    "detail": "Sauté the spice paste over medium heat in a Dutch oven until it dries out and becomes very fragrant."
    },
    {
-    "titre": "Simmer Low and Slow",
-    "detail": "Reduce heat and cook uncovered, stirring regularly. The liquid should evaporate completely. The beef will eventually fry in its own fat and caramelize."
+    "titre": "Coconut",
+    "detail": "Add the beef cubes and coconut milk, stir, and gently bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook uncovered for about 2 hours 30 minutes over low heat, stirring regularly, until almost all the liquid has evaporated."
+   },
+   {
+    "titre": "Caramelize",
+    "detail": "Keep cooking: the beef ends up frying in its own fat and takes on a deep dark-brown color."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with steamed rice and sambals. The rendang should be dark brown and dry. It improves the next day."
+    "detail": "Serve the dry, melt-in-your-mouth rendang with steamed rice; it tastes even better reheated the next day."
    }
   ]
  },
  "sushimaison": {
   "nom": "Homemade Sushi",
-  "description": "Homemade sushi — maki and nigiri rolls with vinegared rice, fresh salmon and tuna. Simpler than you think!",
+  "description": "Homemade sushi — makis and nigiris with vinegared rice, fresh salmon and tuna. Easier than you'd think!",
   "etapes": [
    {
-    "titre": "Sushi Rice",
-    "detail": "Rinse the Japanese rice. Cook with slightly less water. Season while hot with rice vinegar, sugar, and salt. Fan to cool. Season generously with salt and pepper. Taste and adjust ALWAYS."
+    "titre": "Rice",
+    "detail": "Rinse the Japanese rice and cook it with slightly less water, then season it warm with rice vinegar, sugar and salt, and fan it to cool it down."
    },
    {
-    "titre": "Prepare the Fish",
-    "detail": "Use sashimi-grade fish. Slice thinly for nigiri, cut into batons for maki. CHEF'S TIP: keep your knife well-sharpened for clean cuts."
+    "titre": "Fish",
+    "detail": "With a very sharp knife, cut the sashimi-grade salmon and tuna into thin slices for nigiris and into sticks for makis."
    },
    {
-    "titre": "Maki",
-    "detail": "Place a sheet of nori on the bamboo mat. Spread 80g of rice, leaving 2cm at the top. Add the filling. Roll tightly. Cut into 6 pieces. CHEF'S TIP: keep your knife well-sharpened for clean cuts."
+    "titre": "Makis",
+    "detail": "Lay a nori sheet on the bamboo mat, spread 80 g of rice leaving 2 cm clear, add the filling and roll tightly."
    },
    {
-    "titre": "Nigiri",
-    "detail": "Dampen your hands. Form an elongated ball of rice. Place a slice of fish on top. Press lightly."
+    "titre": "Cut",
+    "detail": "Slice each roll into six clean bites with a moistened blade."
+   },
+   {
+    "titre": "Nigiris",
+    "detail": "With damp hands, shape small oblong rice balls and press a slice of fish on top of each."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the makis and nigiris nicely on a platter with the pickled ginger."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with soy sauce, wasabi, and pickled ginger. Consume promptly."
+    "detail": "Serve right away with soy sauce and wasabi, and eat promptly."
    }
   ]
  },
  "tacoshijosepastor": {
   "nom": "Tacos al Pastor",
-  "description": "Mexican Tacos Al Pastor — pork marinated in spices and pineapple, cooked on a spit or in a skillet. The real street food of Mexico City.",
+  "description": "Mexican Tacos al Pastor — pork marinated in spices and pineapple, cooked on a spit or in a skillet. Real Mexico City street food.",
   "etapes": [
    {
-    "titre": "Achiote Marinade",
-    "detail": "Mix achiote paste, orange juice, vinegar, garlic, cumin, oregano, and salt. Slice the pork thinly and marinate. CHEF'S TIP: Keep your knife sharp for clean cuts."
+    "titre": "Marinade",
+    "detail": "Mix the achiote paste, orange juice, garlic and spices, then marinate the thin pork slices for several hours."
    },
    {
-    "titre": "Cook Pork and Pineapple",
-    "detail": "Cook the pork in a very hot skillet in small batches to get a good sear. Grill the pineapple slices. Watch carefully: uniform golden color means it's ready, any longer and it will burn."
+    "titre": "Prep",
+    "detail": "Slice the pineapple, thinly slice the white onion, and chop the fresh cilantro."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Cook the marinated pork in a very hot skillet in small batches so it browns well."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the pineapple slices in the same skillet until the edges caramelize."
    },
    {
     "titre": "Chop",
-    "detail": "Cut the pork and pineapple into small dice. CHEF'S TIP: Keep your knife sharp for clean cuts."
+    "detail": "Cut the pork and pineapple into small, even dice for the filling."
    },
    {
-    "titre": "Assemble",
-    "detail": "Warm the tortillas. Fill with pork, pineapple, thinly sliced white onion, and fresh cilantro. Drizzle with lime juice and salsa verde."
+    "titre": "Tortillas",
+    "detail": "Warm the corn tortillas dry for a few seconds per side to make them soft and pliable."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top each tortilla with pork, pineapple, onion and cilantro, then squeeze over fresh lime juice."
    }
   ]
  },
  "saumoncrouteherbes": {
   "nom": "Herb-Crusted Salmon",
-  "description": "Herb-crusted salmon — salmon fillets coated with a breadcrumb crust made from fresh herbs and lemon. Elegant, quick, and flavorful.",
+  "description": "Herb-crusted salmon — salmon fillets coated in a fresh herb and lemon breadcrumb crust. Elegant, quick and flavorful.",
   "etapes": [
    {
-    "titre": "Herb crust",
-    "detail": "Pulse breadcrumbs, parsley, chives, dill, lemon zest, Parmesan, and melted butter until evenly combined."
+    "titre": "Crust",
+    "detail": "Blend the breadcrumbs with the parsley, lemon zest and melted butter until you have a green, fragrant crumb."
    },
    {
-    "titre": "Prepare the fillets",
-    "detail": "Pat the fillets dry with paper towels. Season with salt and pepper. Brush with Dijon mustard."
+    "titre": "Prep",
+    "detail": "Pat the salmon fillets dry with paper towels, then salt and pepper them for well-seasoned flesh."
    },
    {
-    "titre": "Apply the crust",
-    "detail": "Press the herb crust onto the top of the fillets. It will adhere thanks to the mustard."
+    "titre": "Spread",
+    "detail": "Brush the top of the fillets with a little Dijon mustard or butter to help the crust stick."
    },
    {
-    "titre": "Cook",
-    "detail": "Preheat oven to 200°C. Place the fillets on a baking sheet. The crust should be golden and the salmon pink in the center."
+    "titre": "Coat",
+    "detail": "Press the herb crust firmly onto the top of each fillet to form an even, uniform layer."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for 12 to 15 min until the crust is golden and the salmon is still pink and pearly in the center."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with pilaf rice, mashed potatoes, or steamed vegetables. Drizzle with lemon juice."
+    "detail": "Drizzle with a little lemon juice and serve with pilaf rice, mashed potatoes or steamed vegetables."
    }
   ]
  },
  "pouletbasquaise": {
-  "nom": "Chicken Basquaise",
-  "description": "Chicken Basquaise — chicken pieces simmered with peppers, tomatoes, and Bayonne ham. The classic dish of the Basque Country.",
+  "nom": "Poulet à la Basquaise",
+  "description": "Poulet basquaise — chicken pieces simmered with peppers, tomatoes and Bayonne ham. The great classic of the Basque Country.",
   "etapes": [
    {
-    "titre": "Brown the chicken",
-    "detail": "Season and brown the chicken pieces over high heat in olive oil. Set aside. CHEF'S TIP: high heat to sear and caramelize the pan drippings."
+    "titre": "Prep",
+    "detail": "Slice the onion, cut the red and green peppers into strips, chop the garlic and dice the ham into lardons; salt and pepper the chicken pieces."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the chicken over high heat in olive oil on all sides for 8 min to caramelize the surface, then set aside."
    },
    {
     "titre": "Piperade",
-    "detail": "In the same pan, sauté the onion, red and green peppers cut into strips. Add garlic and Bayonne ham."
+    "detail": "In the same pot, cook the onion and peppers for 10 min over medium heat until they soften, then add the garlic and ham for 2 min."
    },
    {
-    "titre": "Add tomatoes",
-    "detail": "Add crushed tomatoes, Espelette pepper, thyme, and bay leaf. Let reduce for 10 minutes. CHEF'S TIP: the sauce should coat the back of a spoon = proper consistency."
+    "titre": "Tomatoes",
+    "detail": "Stir in the crushed tomatoes, Espelette pepper, thyme and bay leaf, and let reduce 10 min uncovered until you have a coating sauce."
    },
    {
-    "titre": "Simmer together",
-    "detail": "Return the chicken to the sauce. Cover and simmer over low heat. LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Simmer",
+    "detail": "Return the chicken to the sauce, cover and let simmer over low heat for 25 min, basting so the meat soaks up the flavors and turns tender."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Adjust the seasoning, sprinkle with chopped flat-leaf parsley and let rest 5 min off the heat to marry the flavors."
    },
    {
     "titre": "Serve",
-    "detail": "Accompany with white rice or polenta. Sprinkle with flat-leaf parsley."
+    "detail": "Plate the chicken coated in piperade, with white rice or creamy polenta."
    }
   ]
  },
  "lasagneverdure": {
   "nom": "Vegetable Lasagna",
-  "description": "Vegetable lasagna — vegetarian lasagna with spinach, ricotta, homemade tomato sauce, and béchamel. Generous and flavorful.",
+  "description": "Lasagna verdure — vegetarian lasagna with spinach, ricotta, homemade tomato sauce and béchamel. Hearty and full of flavor.",
   "etapes": [
    {
-    "titre": "Prepare the spinach",
-    "detail": "Sauté fresh spinach with garlic in olive oil until reduced. Drain and mix with ricotta, salt, pepper, and nutmeg."
+    "titre": "Spinach",
+    "detail": "Sauté the chopped garlic in olive oil, add the spinach and wilt it for 5 min, then drain and press to remove the water."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix the spinach with the ricotta, salt, pepper, a grating of nutmeg and the crushed walnuts for a fragrant, creamy filling."
    },
    {
     "titre": "Tomato sauce",
-    "detail": "Prepare a homemade tomato sauce with garlic, crushed tomatoes, and basil. Let simmer for 20 minutes. CHEF'S TIP: the sauce should coat the back of a spoon = good consistency."
+    "detail": "Make a sauce with the garlic, crushed tomatoes and basil, then let it reduce 20 min over low heat until it coats the spoon."
    },
    {
     "titre": "Béchamel",
-    "detail": "Prepare a creamy béchamel. Add grated Parmesan."
+    "detail": "Make a creamy béchamel, season it and melt in some of the grated parmesan for a silky texture."
    },
    {
-    "titre": "Assemble the lasagna",
-    "detail": "Alternate: tomato sauce, pasta sheets, spinach-ricotta mixture, béchamel. Finish with béchamel and Parmesan."
+    "titre": "Assemble",
+    "detail": "Layer in a dish: tomato sauce, lasagna sheets, ricotta-spinach filling and béchamel, repeating the layers and finishing with béchamel and parmesan."
    },
    {
     "titre": "Bake",
-    "detail": "Cover with foil for the first 30 minutes. Remove foil to brown."
+    "detail": "Bake at 180°C covered with foil for 30 min, then remove the foil and continue 15 min to brown the top."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 min before cutting for clean slices, then serve piping hot."
    }
   ]
  },
  "pouletrotiperfect": {
-  "nom": "Perfect Roast Chicken",
-  "description": "The perfect roast chicken — French technique for crispy skin, juicy meat, and golden pan drippings for sauce.",
+  "nom": "The Perfect Roast Chicken",
+  "description": "The perfect roast chicken — a French technique for crispy skin, juicy meat and golden drippings for the sauce.",
   "etapes": [
    {
-    "titre": "Prepare the aromatic butter",
-    "detail": "Mix softened butter, crushed garlic, thyme, salt and pepper. Slip this butter under the chicken skin by gently loosening it with your fingers."
+    "titre": "Butter",
+    "detail": "Mix the soft butter with the crushed garlic, picked thyme, salt and pepper until you have a smooth paste."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Gently loosen the chicken skin with your fingers and slide the aromatic butter underneath, spreading it over the breasts and thighs."
    },
    {
     "titre": "Season",
-    "detail": "Salt and pepper the outside. Put in the cavity: half a lemon, whole garlic cloves and thyme. Truss the chicken."
+    "detail": "Salt and pepper the outside, tuck the lemon half, whole garlic cloves and thyme into the cavity, then truss the chicken for even cooking."
    },
    {
-    "titre": "Sear in hot oven",
-    "detail": "Start at 220°C for 20 minutes to brown the skin. Watch carefully: uniform golden color = ready to go, any longer and it will burn."
+    "titre": "Sear",
+    "detail": "Roast at 220°C for 20 min to color the skin and make it golden and crispy."
    },
    {
-    "titre": "Finish in moderate oven",
-    "detail": "Lower to 180°C. Baste every 15 minutes with the pan drippings."
+    "titre": "Roast",
+    "detail": "Lower the oven to 180°C and continue 50 min, basting every 15 min with the drippings for juicy meat."
    },
    {
-    "titre": "Sauce and resting",
-    "detail": "Remove the chicken and let rest for 10 minutes. Deglaze the pan with white wine or broth. Serve with the sauce and roasted potatoes. CHEF'S TIP: this resting period is ESSENTIAL for the final texture."
+    "titre": "Rest",
+    "detail": "Take the chicken out and let it rest 10 min covered with a sheet of foil so the juices redistribute through the meat."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Deglaze the pan with white wine, scraping up the browned bits, let reduce 3 min, then serve the carved chicken with its sauce and roast potatoes."
    }
   ]
  },
  "poulpegrillebresil": {
-  "nom": "Grilled Brazilian Octopus",
-  "description": "Grilled octopus Mediterranean-style — tender inside, crispy outside. The secret: cook in water first, then grill.",
+  "nom": "Brazilian Grilled Octopus",
+  "description": "Mediterranean-style grilled octopus — tender inside, crispy outside. The secret: poach it first, then grill.",
   "etapes": [
    {
-    "titre": "Tenderize the octopus",
-    "detail": "Plunge the octopus into boiling water with a cork, bay leaf, and salt. Simmer gently."
+    "titre": "Prep",
+    "detail": "Rinse the octopus in cold water and massage it; prepare a large pot of water with salt and a wine cork to tenderize the fibers."
    },
    {
-    "titre": "Cool down",
-    "detail": "Let cool in the cooking water for 20 minutes. Drain and dry."
+    "titre": "Poach",
+    "detail": "Drop the octopus into barely simmering water (about 90°C, never a hard boil) and cook 45 min until a knife slides in without resistance."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let the octopus cool 20 min in its cooking water so it stays moist, then drain and pat dry well with paper towels."
    },
    {
     "titre": "Marinate",
-    "detail": "Mix olive oil, lemon juice, minced garlic, and parsley. Brush the octopus generously."
+    "detail": "Mix the olive oil, lemon juice, chopped garlic, chopped parsley and salt, then brush the tentacles generously."
    },
    {
     "titre": "Grill",
-    "detail": "Grill over a barbecue or grill pan over very high heat to get nice char marks and crispiness. Preheat the grill for 5 minutes. Surface must be very hot for beautiful grill marks."
+    "detail": "Preheat a grill pan or barbecue 5 min over very high heat and sear the octopus 2 to 3 min per side for beautiful crispy marks."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut into even pieces with a very sharp knife and drizzle with a little lemon juice and olive oil."
    },
    {
     "titre": "Serve",
-    "detail": "Cut into chunks. Drizzle with lemon juice and olive oil. Serve with steamed potatoes or chickpea salad. CHEF'S TIP: use a sharp knife for clean, neat cuts."
+    "detail": "Plate the grilled octopus with steamed potatoes or a chickpea salad, and sprinkle with fresh parsley."
    }
   ]
  },
  "curryverthai": {
   "nom": "Thai Green Curry",
-  "description": "Thai Green Curry — green curry paste, coconut milk, vegetables and chicken. Aromatic, creamy and lightly spicy.",
+  "description": "Thai Green Curry — green curry paste, coconut milk, vegetables and chicken. Fragrant, creamy and gently spicy.",
   "etapes": [
    {
-    "titre": "Sauté the paste",
-    "detail": "In a wok, sauté the green curry paste in a bit of oil or the cream from the top of the coconut milk for 2 minutes."
+    "titre": "Prep",
+    "detail": "Cut the chicken into pieces and the eggplant into cubes; pick the Thai basil leaves and set aside."
    },
    {
-    "titre": "Add the chicken",
-    "detail": "Add the chicken pieces. Brown lightly. Watch carefully: uniform golden color = it's ready, no longer or it will burn."
+    "titre": "Paste",
+    "detail": "Fry the green curry paste for 2 minutes in a wok with a little oil or the thick cream from the coconut milk until it releases its aroma."
    },
    {
-    "titre": "Coconut milk and vegetables",
-    "detail": "Pour in the coconut milk, add diced eggplant, kaffir lime leaves and fish sauce. Bring to a boil."
+    "titre": "Chicken",
+    "detail": "Add the chicken pieces and brown them lightly over high heat to coat them in the paste."
+   },
+   {
+    "titre": "Coconut",
+    "detail": "Pour in the coconut milk, add the eggplant and a splash of fish sauce, then bring to a boil."
    },
    {
     "titre": "Simmer",
-    "detail": "Cook over medium heat until the vegetables are cooked through."
+    "detail": "Simmer over medium heat for 15 minutes until the chicken is cooked and the eggplant is meltingly tender, adjusting the seasoning."
    },
    {
-    "titre": "Thai basil and serving",
-    "detail": "Off the heat, add the Thai basil. Serve with jasmine rice."
+    "titre": "Serve",
+    "detail": "Off the heat, stir in the Thai basil for fragrance, then serve piping hot with jasmine rice."
    }
   ]
  },
  "pouletteriyaki": {
   "nom": "Teriyaki Chicken",
-  "description": "Homemade Teriyaki Chicken — sweet and savory glazed sauce, steamed rice and sesame. The simple and addictive Japanese classic.",
+  "description": "Homemade Teriyaki Chicken — glossy sweet-and-savory glaze, steamed rice and sesame. The simple, addictive Japanese classic.",
   "etapes": [
    {
-    "titre": "Teriyaki sauce",
-    "detail": "Mix soy sauce, mirin, sake, and sugar. Reduce over medium heat until syrupy consistency. CHEF'S TIP: the sauce should coat the back of a spoon = proper consistency."
+    "titre": "Sauce",
+    "detail": "Whisk together the soy sauce, mirin and sugar, then reduce over medium heat until syrupy and thick enough to coat the back of a spoon."
    },
    {
-    "titre": "Cook the chicken",
-    "detail": "Brown the chicken thighs or breasts in a pan with a little oil. Watch carefully: uniform golden color = it's ready, no more or it will burn."
+    "titre": "Prep",
+    "detail": "Trim the chicken breasts or thighs and pat them dry so they brown nicely as they cook."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the chicken in a skillet with a little oil over medium-high heat for 5 to 6 minutes per side, until deeply and evenly golden."
    },
    {
     "titre": "Glaze",
-    "detail": "Pour the teriyaki sauce over the chicken. Cook for another 3-4 minutes, turning until glossy glaze forms."
+    "detail": "Pour the teriyaki sauce over the chicken and cook another 3 to 4 minutes, turning regularly for a shiny, glossy glaze."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Let the chicken rest 2 minutes, then slice it into strips with a sharp knife for clean, neat pieces."
    },
    {
     "titre": "Serve",
-    "detail": "Slice the chicken. Serve over steamed rice with sesame seeds, scallions, and edamame. CHEF'S TIP: a sharp knife for clean cuts."
+    "detail": "Plate over a bowl of steamed rice, spoon over the sauce and sprinkle with sesame seeds and thinly sliced scallions."
    }
   ]
  },
  "chiliconcarneV": {
   "nom": "Chili Con Carne",
-  "description": "Chili Con Carne — ground beef, red beans, tomatoes and tex-mex spices. The comforting American dish that warms you up!",
+  "description": "Chili Con Carne — ground beef, red kidney beans, tomatoes and Tex-Mex spices. The comforting American dish that warms you right up!",
   "etapes": [
    {
-    "titre": "Brown the meat",
-    "detail": "Sauté onion and ground beef. Break it up well and brown it. Watch carefully: uniform golden color means it's ready, any longer and it will burn."
+    "titre": "Prep",
+    "detail": "Finely chop the onion and garlic, drain and rinse the kidney beans, and crush the tomatoes if whole."
    },
    {
-    "titre": "Tex-mex spices",
-    "detail": "Add garlic, cayenne pepper, cumin, smoked paprika, and oregano. Mix well."
+    "titre": "Brown",
+    "detail": "Heat a drizzle of oil over high heat and cook the onion for 3 minutes, then add the ground beef, breaking it up, until evenly browned."
    },
    {
-    "titre": "Tomatoes and beans",
-    "detail": "Add crushed tomatoes, tomato paste, and drained red beans. Mix together."
+    "titre": "Spice",
+    "detail": "Add the chopped garlic, cumin and chili powder, and stir for 1 minute over medium heat to release the spices' aromas without burning them."
+   },
+   {
+    "titre": "Tomatoes",
+    "detail": "Stir in the crushed tomatoes and a little water, scrape up the browned bits at the bottom of the pot and bring to a gentle simmer."
+   },
+   {
+    "titre": "Beans",
+    "detail": "Add the drained kidney beans, season with salt and pepper, then lower the heat for a gentle simmer."
    },
    {
     "titre": "Simmer",
-    "detail": "Let simmer on low heat covered. The longer it cooks, the better it gets. Cook on LOW HEAT strictly — otherwise it will burn quickly."
+    "detail": "Cover and simmer over low heat for 40 to 45 minutes, stirring occasionally, until the sauce is thick and coats the spoon."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with rice or cornbread. Top with sour cream, shredded cheddar, and cilantro."
+    "detail": "Adjust the seasoning and serve piping hot with rice, topped with sour cream, grated cheddar and chopped cilantro."
    }
   ]
  },
  "risottoprimavera": {
   "nom": "Risotto Primavera",
-  "description": "Risotto Primavera — creamy with peas, asparagus, and Parmesan. The springtime version of risotto, light and colorful.",
+  "description": "Risotto Primavera — creamy with peas, asparagus and parmesan. The springtime version of risotto, light and colorful.",
   "etapes": [
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Blanch the asparagus for 3 minutes. Cut into pieces. Blanch the peas for 2 minutes. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Vegetables",
+    "detail": "Blanch the asparagus 3 min then cut it into pieces, and blanch the peas 2 min before refreshing them to keep their color."
    },
    {
-    "titre": "Base",
-    "detail": "Sauté the shallot in olive oil and butter. Add the arborio rice and toast for 2 minutes. The rice should become TRANSLUCENT at the edges before adding the liquid."
+    "titre": "Toast",
+    "detail": "Sauté a shallot in olive oil and butter, add the rice and toast it 2 min until it turns translucent at the edges."
    },
    {
-    "titre": "White wine",
-    "detail": "Add the white wine, stir until absorbed."
+    "titre": "Wine",
+    "detail": "Pour in the white wine and stir until fully absorbed to flavor the rice."
    },
    {
-    "titre": "Cook ladle by ladle",
-    "detail": "Add the hot broth ladle by ladle while stirring constantly. The rice should be al dente. Cook 1 minute less than indicated on the package. Taste to check."
+    "titre": "Add stock",
+    "detail": "Add the hot stock one ladle at a time, stirring constantly and waiting for absorption each time, for about 18 min."
    },
    {
-    "titre": "Mantecatura",
-    "detail": "Remove from heat, add cold butter and Parmesan. Stir vigorously. Fold in the vegetables. Serve immediately. CHEF'S TIP: use a rubber spatula with folding motions to avoid deflating the risotto."
+    "titre": "Vegetables",
+    "detail": "When the rice is almost al dente, stir in the blanched asparagus and peas to warm them gently."
+   },
+   {
+    "titre": "Mantecare",
+    "detail": "Off the heat, add the cold butter and the parmesan, then stir vigorously to get a creamy, silky risotto."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate immediately in shallow bowls and serve right away before the risotto sets."
    }
   ]
  },
  "lasagneviande": {
   "nom": "Lasagna Bolognese",
-  "description": "Homemade lasagna Bolognese — simmered meat ragù, creamy béchamel, and Parmesan. The classic Italian comfort dish that warms the soul.",
+  "description": "Homemade Bolognese lasagna — slow-simmered meat ragù, creamy béchamel and parmesan. The great Italian classic that warms the heart.",
   "etapes": [
    {
-    "titre": "Bolognese ragù",
-    "detail": "Sauté onion and garlic. Add ground meat and brown. Add crushed tomatoes, tomato paste, and herbs. Simmer on low heat. LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Prep",
+    "detail": "Finely slice the onion and chop the garlic for the aromatic base of the ragù."
+   },
+   {
+    "titre": "Ragù",
+    "detail": "Sauté the onion and garlic, add the ground meat and brown it, then stir in the crushed tomatoes, tomato paste and herbs."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Salt, pepper and let the ragù simmer over low heat for 30 min, stirring so it thickens and concentrates its flavors."
    },
    {
     "titre": "Béchamel",
-    "detail": "Melt butter, add flour, whisk. Pour in hot milk gradually. Season with salt, pepper, and nutmeg."
+    "detail": "Melt the butter, add the flour and whisk, pour in the hot milk gradually and season with salt, pepper and nutmeg until thickened."
    },
    {
-    "titre": "Assemble the lasagna",
-    "detail": "Alternate: béchamel, pasta sheets, ragù, béchamel. Repeat 3-4 layers. Finish with béchamel and grated Parmesan."
+    "titre": "Assemble",
+    "detail": "Layer in the dish béchamel, lasagna sheets and ragù over 3 to 4 layers, and finish with a layer of béchamel and grated parmesan."
    },
    {
     "titre": "Bake",
-    "detail": "Cover with foil for 30 minutes, then 15 minutes uncovered to gratinée."
+    "detail": "Bake at 180°C covered with foil for 30 min, then 15 min uncovered for a golden gratin."
    },
    {
-    "titre": "Let rest",
-    "detail": "Let rest 10 minutes before cutting — the lasagna will hold together better. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Rest",
+    "detail": "Let rest 10 min before cutting with a very sharp knife for slices that hold together."
    }
   ]
  },
  "wagyuBurger": {
   "nom": "Wagyu Burger",
-  "description": "Homemade Wagyu Burger — premium ground steak, house-made burger sauce, melted cheddar, and brioche buns. The gourmet burger!",
+  "description": "Homemade Wagyu Burger — quality ground beef, homemade burger sauce, melted cheddar and brioche buns. The gourmet burger!",
   "etapes": [
    {
-    "titre": "Ground Steak",
-    "detail": "Form 150g patties. Season generously with salt and pepper just before cooking. Never press down with the spatula! Season generously with salt and pepper. Taste and adjust ALWAYS."
+    "titre": "Shape",
+    "detail": "Gently form 150 g patties without packing the meat too tightly, then season generously with salt and pepper just before cooking."
    },
    {
-    "titre": "Cook Over High Heat",
-    "detail": "Cast iron skillet very hot or BBQ. 2-3 minutes per side for rare, 3-4 minutes for medium. Place cheddar on the steak and cover to melt."
+    "titre": "Toppings",
+    "detail": "Wash the lettuce, slice the tomato and thinly slice the onion, setting everything aside for assembly."
    },
    {
-    "titre": "Homemade Burger Sauce",
-    "detail": "Mix mayonnaise, ketchup, diced pickles, mustard, and paprika."
+    "titre": "Sear",
+    "detail": "Cook the patties in a screaming-hot cast-iron skillet for 2 to 3 minutes per side for medium-rare, never pressing them down with the spatula."
    },
    {
-    "titre": "Toast the Buns",
-    "detail": "Toast the brioche buns in the skillet with a little butter."
+    "titre": "Melt",
+    "detail": "Lay the cheddar on each patty and cover for 30 seconds to melt it evenly."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Toast the cut sides of the buns in the pan with a little butter until golden."
    },
    {
     "titre": "Assemble",
-    "detail": "Spread sauce on both sides of the bun. Lettuce, tomato, steak, cheddar, caramelized onions, pickle. Serve immediately with homemade fries."
+    "detail": "Build the bun with lettuce, tomato, the cheddar-topped patty and onion, layering each element with care."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Close the burger and serve immediately, while still hot, with homemade fries."
    }
   ]
  },
  "pouletCocoLemon": {
   "nom": "Coconut Lemon Chicken",
-  "description": "Coconut Lemon Chicken — chicken in a creamy coconut milk and preserved lemon sauce. Sweet, exotic, and aromatic.",
+  "description": "Coconut Lemon Chicken — chicken in a creamy coconut milk and preserved lemon sauce. Mild, exotic and fragrant.",
   "etapes": [
    {
-    "titre": "Brown the chicken",
-    "detail": "Brown the seasoned chicken pieces in olive oil. Set aside. Watch carefully: uniform golden color means it's ready, any longer and it will burn."
+    "titre": "Prep",
+    "detail": "Slice the onion and garlic, finely chop the preserved lemon and cut the chicken into pieces, then season it."
    },
    {
-    "titre": "Aromatic base",
-    "detail": "Sauté the onion and garlic. Add cumin, ground coriander, and turmeric."
+    "titre": "Brown",
+    "detail": "Brown the chicken pieces in hot oil on all sides, then set them aside."
    },
    {
-    "titre": "Coconut-lemon sauce",
-    "detail": "Pour in the coconut milk. Add the finely chopped preserved lemon. Return the chicken to the pot."
+    "titre": "Sweat",
+    "detail": "In the same pan, cook the onion and garlic over medium heat until soft and translucent."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Pour in the coconut milk, add the chopped preserved lemon and a squeeze of lemon juice, then return the chicken to the sauce."
    },
    {
     "titre": "Simmer",
-    "detail": "Cook covered over low heat until the sauce becomes creamy. LOW HEAT strictly — otherwise it will burn quickly."
+    "detail": "Cover and simmer over low heat for 25 minutes until the chicken is tender and the sauce is creamy and coats the spoon."
    },
    {
     "titre": "Finish",
-    "detail": "Sprinkle with fresh cilantro. Serve with basmati rice or couscous."
+    "detail": "Adjust the salt, sprinkle with freshly chopped cilantro and add a final squeeze of lemon juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with basmati rice or couscous to soak up the coconut-lemon sauce."
    }
   ]
  },
  "koreanfriedchicken": {
   "nom": "Korean Fried Chicken",
-  "description": "Korean Fried Chicken — double fry for ultra-crispy coating, sweet and spicy gochujang sauce. Seoul's answer to KFC!",
+  "description": "Korean Fried Chicken — double-fried for an ultra-crispy crust and a sweet-spicy gochujang sauce. KFC, Seoul style!",
   "etapes": [
    {
-    "titre": "Prepare the chicken",
-    "detail": "Cut into pieces. Marinate with soy sauce, garlic, ginger, salt and pepper. CHEF'S TIP: Use a sharp knife for clean cuts."
+    "titre": "Cut",
+    "detail": "Cut the chicken into even bite-sized pieces for uniform cooking and maximum crunch."
    },
    {
-    "titre": "Light breading",
-    "detail": "Mix rice flour and cornstarch (2:1 ratio). Coat the chicken pieces."
+    "titre": "Marinate",
+    "detail": "Toss the chicken with grated garlic and ginger, salt and pepper, then let it marinate 10 minutes at room temperature."
    },
    {
-    "titre": "Double fry",
-    "detail": "First fry at 160°C for 8 minutes. Remove and let rest for 5 minutes. Second fry at 190°C for 3 minutes for ultimate crispiness. CHEF'S TIP: this resting period is ESSENTIAL for the final texture."
+    "titre": "Coat",
+    "detail": "Mix the flour and cornstarch (2:1 ratio) and carefully coat each piece in a thin, dry, well-clinging layer."
    },
    {
-    "titre": "Gochujang sauce",
-    "detail": "Mix gochujang, honey, soy sauce, garlic and rice vinegar. Heat for 2 minutes."
+    "titre": "Fry",
+    "detail": "Drop the chicken into 160°C oil and fry for 8 minutes, then drain and rest 5 minutes on a rack."
    },
    {
-    "titre": "Coat and serve",
-    "detail": "Coat the chicken with sauce or serve it on the side. Garnish with sesame seeds and green onions."
+    "titre": "Re-crisp",
+    "detail": "Bring the oil up to 190°C and fry the pieces again for 3 minutes until golden and extra-crispy, then drain."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Heat the gochujang for 2 minutes with the honey, garlic and a little water until the sauce is glossy and syrupy."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Toss the chicken in the sauce or serve it on the side, sprinkle with sesame seeds and scallions, and enjoy right away."
    }
   ]
  },
  "spaetzle": {
   "nom": "Alsatian Spätzle",
-  "description": "Alsatian spätzle — small fresh egg noodles with cheese or brown butter. The comforting specialty of Alsace.",
+  "description": "Alsatian Spätzle — little fresh egg noodles tossed in cheese or browned butter. Alsace's comforting specialty.",
   "etapes": [
    {
-    "titre": "Spätzle dough",
-    "detail": "Mix flour, eggs, milk, and salt until a homogeneous, slightly sticky dough forms. Let rest for 10 minutes. CHEF'S TIP: this resting period is ESSENTIAL for the final texture."
+    "titre": "Dough",
+    "detail": "Mix the flour, eggs, milk and salt into a smooth, slightly sticky batter that falls off the spoon in ribbons."
    },
    {
-    "titre": "Cook in boiling water",
-    "detail": "Bring a large pot of salted water to a boil. Pass the dough through a spätzle maker or coarse-holed sieve, scraping as you go. The spätzle are done when they float to the surface."
+    "titre": "Rest",
+    "detail": "Let the batter rest 10 minutes to relax the gluten and ensure tender spätzle."
    },
    {
-    "titre": "Brown butter",
-    "detail": "Brown the butter in a skillet until it reaches a nutty color. Toss the drained spätzle in it. Watch carefully: uniform golden color means it's ready, any longer and it will burn."
+    "titre": "Boil",
+    "detail": "Bring a large pot of salted water to a rolling boil to cook the noodles in batches."
    },
    {
-    "titre": "Gratinéed version",
-    "detail": "Option: alternate spätzle and grated Munster or Comté cheese in a baking dish. Bake for 15 minutes."
+    "titre": "Shape",
+    "detail": "Push the batter through a spätzle grater or a wide-holed colander directly over the boiling water."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Cook the spätzle for 2 to 3 minutes: they're ready as soon as they float to the surface, then drain right away."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Brown the butter in a pan until nutty and golden, then sauté the drained spätzle for 3 minutes, stirring."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve piping hot, or bake them 15 minutes at 200°C with grated cheese for a gratin."
    }
   ]
  },
  "risottoMilanese": {
   "nom": "Risotto Milanese",
-  "description": "Saffron Risotto Milanese — creamy rice tinted golden by saffron, finished with Parmigiano-Reggiano and butter. The great Lombard recipe.",
+  "description": "Saffron Risotto Milanese — creamy rice tinted gold with saffron, finished with parmesan and butter. The great Lombard recipe.",
   "etapes": [
    {
-    "titre": "Infuse the saffron",
-    "detail": "Dissolve the saffron in a ladle of hot broth. Let steep for 10 minutes."
+    "titre": "Infuse",
+    "detail": "Dissolve the saffron in a ladleful of hot broth and let it infuse 10 minutes to draw out its color and aroma."
    },
    {
-    "titre": "Base",
-    "detail": "Sauté shallot in butter and oil. Add the arborio rice and toast for 2 minutes. The rice should become TRANSLUCENT at the edges before adding any liquid."
+    "titre": "Broth",
+    "detail": "Keep the rest of the broth at a gentle simmer in a pot nearby, ready to add ladle by ladle."
    },
    {
-    "titre": "White wine",
-    "detail": "Pour in the white wine and stir until completely absorbed."
+    "titre": "Toast",
+    "detail": "Sweat a shallot in the butter and olive oil, add the rice and toast it for 2 minutes until the edges turn translucent."
    },
    {
-    "titre": "Cook ladle by ladle",
-    "detail": "Add the hot broth gradually while stirring. Add the saffron-infused broth halfway through cooking."
+    "titre": "Deglaze",
+    "detail": "Pour in the white wine and stir over medium heat until the liquid is fully absorbed."
    },
    {
-    "titre": "Mantecatura",
-    "detail": "Off heat, incorporate cold butter and Parmigiano-Reggiano. Stir vigorously to make the risotto creamy. Serve immediately. CHEF'S TIP: use a spatula with gentle, enveloping motions to avoid deflating the risotto."
+    "titre": "Cook",
+    "detail": "Add the broth ladle by ladle, stirring constantly for about 18 minutes, stirring in the saffron broth halfway through cooking."
+   },
+   {
+    "titre": "Mantecare",
+    "detail": "Off the heat, vigorously stir in the cold butter and parmesan for a creamy, silky texture."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it rest 1 minute, check the seasoning and serve immediately, the risotto loose and flowing all'onda."
    }
   ]
  },
  "lemonPasta": {
   "nom": "Lemon Pasta",
-  "description": "Lemon Pasta — creamy lemon pasta with Parmesan and basil. The viral Italian recipe in 5 ingredients, ready in 20 minutes!",
+  "description": "Lemon Pasta — creamy pasta with lemon, parmesan and basil. The viral Italian 5-ingredient recipe, ready in 20 minutes!",
   "etapes": [
    {
-    "titre": "Cook the pasta",
-    "detail": "Cook the spaghetti al dente in very salted water. Reserve 1 cup of pasta water. Cook for 1 minute less than the package directions. Taste to check."
+    "titre": "Prep",
+    "detail": "Zest and juice the lemon, and finely grate the parmesan so it melts quickly into the sauce."
    },
    {
-    "titre": "Lemon-cream sauce",
-    "detail": "In a skillet, melt the butter. Add lemon zest and juice, and heavy cream. Heat gently."
+    "titre": "Cook",
+    "detail": "Cook the spaghetti al dente in heavily salted water, 1 minute less than the package, reserving a cup of the cooking water."
    },
    {
-    "titre": "Parmesan",
-    "detail": "Add the finely grated Parmesan. Stir until the sauce is smooth and homogeneous."
+    "titre": "Sauce",
+    "detail": "Melt the butter over low heat, add the zest, lemon juice and cream, then warm gently without boiling."
    },
    {
-    "titre": "Toss with pasta",
-    "detail": "Add the drained pasta plus a few spoonfuls of pasta water. Toss vigorously to coat. Adjust the consistency as needed."
+    "titre": "Cream",
+    "detail": "Stir in the grated parmesan off a hard boil, mixing until the sauce is smooth and uniform."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Add the drained pasta with a few spoonfuls of the cooking water and toss vigorously to coat it well."
    },
    {
     "titre": "Serve",
-    "detail": "Serve immediately with fresh basil, black pepper, and extra Parmesan."
+    "detail": "Season generously with pepper, adjust the consistency and serve right away with fresh basil and extra parmesan."
    }
   ]
  },
  "navarin": {
   "nom": "Lamb Navarin",
-  "description": "Lamb Navarin with spring vegetables — tender lamb pieces braised with peas, new carrots, and turnips. A classic French springtime dish.",
+  "description": "Spring Lamb Navarin — pieces of lamb braised with peas, baby carrots and turnips. The French springtime dish.",
   "etapes": [
    {
-    "titre": "Sear the lamb",
-    "detail": "Brown the lamb pieces in a hot skillet. Dust with flour, cook for 2 minutes. Add tomato paste, garlic, and bouquet garni. CHEF'S TIP: Use high heat to sear and caramelize the meat juices."
+    "titre": "Prep",
+    "detail": "Cut the carrots and turnips into large chunks, chop the garlic and prepare a bouquet garni."
    },
    {
-    "titre": "Deglaze and braise",
-    "detail": "Deglaze the pan with white wine. Cover with broth. Simmer covered. CHEF'S TIP: Leave the lid slightly ajar for better reduction."
+    "titre": "Sear",
+    "detail": "Brown the lamb pieces over high heat on all sides to caramelize the juices well."
    },
    {
-    "titre": "Spring vegetables",
-    "detail": "Add turnips and new carrots. Cook for another 20 minutes."
+    "titre": "Dust",
+    "detail": "Dust with flour and cook for 2 minutes, then add the tomato paste, garlic and bouquet garni, stirring."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Deglaze with the white wine, cover with broth and bring to a simmer before lowering the heat."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Partially cover and braise gently for 50 minutes, then add the carrots and turnips and cook another 20 minutes."
    },
    {
     "titre": "Peas",
-    "detail": "Add the peas in the last 10 minutes. Adjust seasoning to taste."
+    "detail": "Stir in the peas during the last 10 minutes of cooking and adjust the seasoning."
    },
    {
     "titre": "Serve",
-    "detail": "Garnish with fresh parsley. Serve with steamed potatoes or crusty bread."
+    "detail": "Sprinkle with fresh parsley and serve piping hot with steamed potatoes or country bread."
    }
   ]
  },
  "pouletMisoGingembre": {
   "nom": "Miso Ginger Chicken",
-  "description": "Miso Ginger Chicken — chicken breasts glazed with a miso-mirin-ginger sauce. Umami, sweet-salty, and ultra-quick.",
+  "description": "Miso Ginger Chicken — chicken fillets glazed with a miso-mirin-ginger sauce. Umami-rich, sweet-and-savory, and ultra quick.",
   "etapes": [
    {
-    "titre": "Miso Marinade",
-    "detail": "Mix white miso, mirin, soy sauce, grated ginger, and a splash of sake. Marinate the chicken."
+    "titre": "Marinade",
+    "detail": "Whisk together the miso, mirin, soy sauce, and finely grated ginger into a smooth paste."
    },
    {
-    "titre": "Pan-Sear",
-    "detail": "Heat a lightly oiled skillet over medium-high heat. Cook the chicken skin-side down first until the glaze turns a caramelized golden brown."
+    "titre": "Marinate",
+    "detail": "Generously coat the chicken pieces with the marinade and let rest 15 min in the fridge so the flavors soak into the meat."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Heat a lightly oiled skillet over medium-high and lay the chicken skin-side down, undisturbed, for 4 to 5 min until nicely golden."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Turn the pieces over and continue cooking 4 min over medium heat to cook the meat all the way through."
    },
    {
     "titre": "Glaze",
-    "detail": "Pour the remaining marinade over the chicken. Let it caramelize for 2 minutes on each side. CHEF'S TIP: watch for an amber color—don't let it get too dark or it will taste bitter."
+    "detail": "Pour in the remaining marinade, lower to low heat, and glaze 2 min on each side while basting, until you get a glossy amber lacquer without letting it burn."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Let rest 2 min, then slice the chicken on the bias with a sharp knife for pieces coated in sauce."
    },
    {
     "titre": "Serve",
-    "detail": "Slice and serve over rice with edamame, sesame seeds, and scallions. CHEF'S TIP: use a sharp knife for clean, neat slices."
+    "detail": "Arrange over a bowl of hot rice, scatter with sesame seeds and sliced scallion, and serve right away."
    }
   ]
  },
  "tarteFlambee": {
   "nom": "Tarte Flambée",
-  "description": "Tarte Flambée Alsacienne (Flammekueche) — thin and crispy crust, crème fraîche, bacon, and onions. The Alsatian pizza!",
+  "description": "Alsatian Tarte Flambée (Flammekueche) — thin, crisp dough, crème fraîche, bacon lardons and onions. The Alsatian pizza!",
   "etapes": [
    {
-    "titre": "Unleavened dough",
-    "detail": "Mix flour, water, oil, and salt. Knead for 5 minutes. Roll out very thinly into a rectangle. Knead for 10 minutes by hand or 7 minutes in a food processor — the dough should be smooth and elastic."
+    "titre": "Dough",
+    "detail": "Mix the flour, water, oil, salt and a little yeast, then knead for 10 minutes until smooth and elastic."
    },
    {
-    "titre": "Cream base",
-    "detail": "Mix fresh cheese and crème fraîche. Season. Spread thinly over the dough. Season generously with salt and pepper. Taste and adjust ALWAYS."
+    "titre": "Toppings",
+    "detail": "Slice the onion very thinly and prepare the bacon lardons while the dough relaxes briefly."
    },
    {
-    "titre": "Bacon and onions",
-    "detail": "Distribute the bacon and very thinly sliced onions."
+    "titre": "Cream",
+    "detail": "Mix the fromage blanc and crème fraîche, season with salt and pepper for a smooth, creamy base."
    },
    {
-    "titre": "Bake in very hot oven",
-    "detail": "Preheat oven to maximum temperature on a baking sheet. The tart should be crispy and slightly charred on the edges."
+    "titre": "Roll",
+    "detail": "Roll the dough out very thinly into a rectangle on a baking sheet, then spread it with a thin layer of the cream."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter the lardons, sliced onion and a little cheese evenly over the entire surface."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake on a preheated sheet in a very hot oven (250°C) for 10 to 12 minutes until the edges are crisp and lightly charred."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut the tarte flambée into pieces and serve right away, hot and crisp."
    }
   ]
  },
@@ -18636,300 +23478,440 @@ window.RECETTES_EN = {
   "description": "Blanquette de Veau — the great French classic. Tender veal in a creamy white sauce with lemon and mushrooms.",
   "etapes": [
    {
-    "titre": "Blanch the veal",
-    "detail": "Start with the veal in cold water. Bring to a boil, skim carefully. Drain and rinse. Rinse thoroughly under cold running water."
+    "titre": "Blanch",
+    "detail": "Place the veal in a pot of cold water, bring to a boil, skim carefully, then drain and rinse under cold water."
    },
    {
-    "titre": "Cook the veal",
-    "detail": "Place the veal in the broth with onion, carrot, bouquet garni, and clove. Cook over low heat. LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Aromatics",
+    "detail": "Slice the onion, prepare a bouquet garni and combine the veal with the broth in a Dutch oven."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook the veal covered over low heat for 1 hour 15 minutes until the meat is meltingly tender, skimming as needed."
    },
    {
     "titre": "Mushrooms",
-    "detail": "Sauté the mushrooms in butter with lemon juice. Set aside."
+    "detail": "Sauté the sliced mushrooms in butter with a squeeze of lemon juice, then set them aside."
    },
    {
-    "titre": "Velouté sauce",
-    "detail": "Make a white roux (butter + flour). Add the strained cooking broth. Incorporate the cream and one egg yolk. Do not let it boil. CHEF'S TIP: use a spatula with gentle folding motions to avoid breaking down the texture."
+    "titre": "Velouté",
+    "detail": "Make a white roux with butter and flour, whisk in the strained broth and cook until thickened."
    },
    {
-    "titre": "Finish and serve",
-    "detail": "Add the veal and mushrooms to the sauce. Season with lemon juice, salt, and pepper. Serve with white rice. Salt and pepper generously. Taste and adjust ALWAYS."
+    "titre": "Thicken",
+    "detail": "Off the heat, stir in the cream and an egg yolk without boiling for a smooth, velvety, coating sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Combine the veal and mushrooms in the sauce, season with salt, pepper and lemon juice, and serve with white rice."
    }
   ]
  },
  "noodlesWok": {
-  "nom": "Wok Stir-Fried Noodles",
-  "description": "Stir-fried wok noodles — rice noodles, crispy vegetables, egg and soy sauce. The quick and flavorful wok dish for every night.",
+  "nom": "Wok-Fried Noodles",
+  "description": "Wok-Fried Noodles — rice noodles, crisp vegetables, egg, and soy sauce. The quick, flavorful wok dish for any weeknight.",
   "etapes": [
    {
-    "titre": "Soak the noodles",
-    "detail": "Soak the rice noodles in cold water for 20 min. Drain."
+    "titre": "Soak",
+    "detail": "Soak the noodles in cold water for 20 min until softened, then drain them thoroughly."
    },
    {
-    "titre": "Very hot wok",
-    "detail": "Heat the wok over high heat with oil. Stir-fry garlic and ginger for 30 sec."
+    "titre": "Prep",
+    "detail": "Mince the garlic and ginger, cut the bok choy into ribbons, and lightly beat the eggs in a bowl."
    },
    {
-    "titre": "Vegetables",
-    "detail": "Add bok choy, julienned carrots, bean sprouts. Stir-fry for 3 min, stirring constantly."
+    "titre": "Heat",
+    "detail": "Heat the wok over the highest heat with the oil until it just begins to smoke, then toss in the garlic and ginger for 30 seconds."
    },
    {
-    "titre": "Scrambled egg",
-    "detail": "Push the vegetables to the side. Crack the eggs, scramble quickly."
+    "titre": "Stir-fry",
+    "detail": "Add the bok choy and stir-fry for 3 min, stirring constantly to keep it crisp and bright."
    },
    {
-    "titre": "Noodles and sauce",
-    "detail": "Add the noodles, soy sauce, sesame oil and pepper. Toss vigorously. Garnish with scallions."
+    "titre": "Scramble",
+    "detail": "Push the vegetables to one side of the wok, pour in the beaten eggs, and scramble them quickly before folding into the rest."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the drained noodles, soy sauce, sesame oil, and a turn of pepper, then stir-fry briskly for 2 min, tossing energetically."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Serve right away in bowls, sprinkled with sesame seeds and scallion, while the noodles are piping hot."
    }
   ]
  },
  "choucroute": {
   "nom": "Choucroute Garnie",
-  "description": "Alsatian Choucroute Garnie — fermented cabbage simmered in Riesling with sausages, pork knuckle, and smoked bacon. The festive Alsatian dish.",
+  "description": "Alsatian Choucroute Garnie — fermented cabbage braised in Riesling with sausages, pork knuckle, and smoked bacon. The festive dish of Alsace.",
   "etapes": [
    {
-    "titre": "Rinse the sauerkraut",
-    "detail": "Rinse the sauerkraut under cold running water several times to remove excess acidity. Drain well. Rinse thoroughly under cold running water."
+    "titre": "Rinse",
+    "detail": "Rinse the sauerkraut under cold water several times to remove excess acidity, then press it well to drain."
    },
    {
-    "titre": "Base and bacon",
-    "detail": "Sauté the onion in lard. Add the smoked bacon and brown it."
+    "titre": "Color",
+    "detail": "Cook the sliced onion in a little fat, add the smoked bacon, and let it color for a few minutes."
    },
    {
-    "titre": "Cook the sauerkraut",
-    "detail": "Add the sauerkraut, white wine (Riesling), juniper berries, bay leaf, and cloves. Cover and simmer. CHEF'S TIP: Leave the lid slightly ajar for better reduction."
+    "titre": "Add liquid",
+    "detail": "Add the sauerkraut, white wine, juniper berries, bay leaf, and cloves, then add enough water to just cover."
    },
    {
-    "titre": "Add the meats",
-    "detail": "30 minutes before the end, add the pork knuckle and sausages (Strasbourg, Frankfurt, or knack) to warm them through."
+    "titre": "Simmer",
+    "detail": "Cover halfway and simmer over low heat for 1h30 so the sauerkraut tenderizes and soaks up the aromas."
    },
    {
-    "titre": "Serve",
-    "detail": "Plate with steamed potatoes. Serve with mustard."
+    "titre": "Add meats",
+    "detail": "30 min before the end, nestle the pork knuckle and sausages into the sauerkraut to cook and heat them through."
+   },
+   {
+    "titre": "Cook potatoes",
+    "detail": "Meanwhile, steam the potatoes for 20 min until meltingly tender."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Mound the sauerkraut into a dome, arrange the meats and potatoes around it, and serve with strong mustard."
    }
   ]
  },
  "porkBelly": {
   "nom": "Caramelized Pork Belly",
-  "description": "Pork Belly Caramélisé — slow-cooked and glazed pork belly with soy sauce and honey. The ultimate melting meat, Asian-inspired recipe.",
+  "description": "Caramelized Pork Belly — pork belly slow-cooked and glazed with soy sauce and honey. The ultimate meltingly tender meat, an Asian classic.",
   "etapes": [
    {
-    "titre": "Prepare the pork belly",
-    "detail": "Score the skin with a sharp knife. Season generously with salt."
+    "titre": "Score",
+    "detail": "Score the pork belly skin in a crosshatch pattern with a very sharp knife and salt it generously to help it crisp up."
    },
    {
-    "titre": "Slow cooking",
-    "detail": "Place skin-side up in a baking dish. Cover with broth (soy sauce, garlic, ginger, mirin). Cook covered at low temperature."
+    "titre": "Flavor",
+    "detail": "Make a broth with the soy sauce, crushed garlic, and sliced ginger, then set the pork belly in it skin-side up."
    },
    {
-    "titre": "Honey-soy glaze",
-    "detail": "Remove the pork belly. Brush with honey and soy sauce. Place under the broiler."
+    "titre": "Slow-cook",
+    "detail": "Cover and cook in the oven at 150°C for 2h30 until the meat turns meltingly tender and pulls apart with a fork."
    },
    {
-    "titre": "Slice and serve",
-    "detail": "Slice into portions. Serve over rice with sautéed bok choy, hoisin sauce, and sesame seeds. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Glaze",
+    "detail": "Remove the pork belly, brush it with a mix of honey and soy sauce, then run it under the broiler for 5 min until caramelized."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the meat rest 10 min out of the oven so the juices settle before carving."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the pork belly into thick slices with a sharp knife for clean cuts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over hot rice, drizzled with the reduced cooking juices and sprinkled with sesame seeds."
    }
   ]
  },
  "maffeSenegal": {
   "nom": "Senegalese Maafé",
-  "description": "Senegalese Maafé with chicken — creamy peanut sauce, tomatoes and spices. A lighter and quicker version of traditional maafé.",
+  "description": "Senegalese Chicken Maafé — a creamy peanut sauce with tomatoes and spices. A lighter, quicker take on the traditional maafé.",
   "etapes": [
    {
-    "titre": "Brown the chicken",
-    "detail": "Brown the chicken pieces over high heat. Set aside. CHEF'S TIP: high heat to sear and caramelize the pan juices."
+    "titre": "Prep",
+    "detail": "Cut the chicken into pieces, slice the onion, and cut the sweet potato into large even cubes."
    },
    {
-    "titre": "Tomato base",
-    "detail": "Sauté the onion, add crushed tomatoes and tomato paste. Cook for 5 minutes."
+    "titre": "Brown",
+    "detail": "Sear the chicken pieces over high heat in a little oil until deeply golden on all sides, then set aside."
    },
    {
-    "titre": "Peanut paste",
-    "detail": "Whisk the peanut paste with hot broth. Add to the sauce."
+    "titre": "Sweat",
+    "detail": "In the same pot, soften the onion over medium heat for 5 min, add the crushed tomatoes, and cook another 5 min to reduce."
    },
    {
-    "titre": "Vegetables and chicken",
-    "detail": "Add the chicken and sweet potato cubes. Simmer over low heat. LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Loosen",
+    "detail": "Thin the peanut paste with a little hot broth until smooth and creamy, then stir it into the tomato sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the chicken, add the sweet potato, and cover with water or broth, then simmer over low heat for 35 min, stirring regularly so it doesn't catch."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust the salt and pepper, and check that the sweet potato is meltingly tender and the sauce has thickened enough to coat the spoon."
    },
    {
     "titre": "Serve",
-    "detail": "Serve over white rice with hot pepper on the side."
+    "detail": "Serve piping hot over white rice, with fresh chili on the side for those who like it spicy."
    }
   ]
  },
  "sauteporc": {
-  "nom": "Pork Sauté with Vegetables",
-  "description": "Pork Sauté with Vegetables — tender pork sautéed with carrots, zucchini and herb sauce. A quick and flavorful everyday dish.",
+  "nom": "Pork and Vegetable Stir-Fry",
+  "description": "Pork and Vegetable Stir-Fry — tender pork sautéed with carrots, zucchini, and an herb sauce. A quick, flavorful everyday dish.",
   "etapes": [
    {
-    "titre": "Brown the pork",
-    "detail": "Cut the tenderloin or shoulder into cubes. Brown over high heat in olive oil. Season with salt and pepper. Set aside. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Cut",
+    "detail": "Cut the pork into even cubes, slice the onion, cut the carrots into rounds, and the zucchini into half-moons."
    },
    {
-    "titre": "Vegetables",
-    "detail": "In the same skillet, sauté the onion, then add the carrots and zucchini. 5 minutes."
+    "titre": "Brown",
+    "detail": "Sear the pork cubes over high heat in olive oil until nicely golden, season with salt and pepper, then set aside."
    },
    {
-    "titre": "Deglaze and simmer",
-    "detail": "Return the pork. Deglaze with the broth. Add thyme, bay leaf and mustard. Simmer covered. CHEF'S TIP: partially cover with the lid for better reduction."
+    "titre": "Sweat",
+    "detail": "In the same pan, soften the onion for 3 min, add the carrots then the zucchini, and cook for 5 min."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Return the pork, pour in the broth to deglaze the pan, and add the thyme and bay leaf."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover halfway and simmer over low heat for 25 min until the pork is tender and the broth has reduced."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust the seasoning with salt and pepper, and let it reduce a few more minutes if the sauce is too thin."
    },
    {
     "titre": "Serve",
-    "detail": "Adjust seasoning. Serve with mashed potatoes, rice or pasta."
+    "detail": "Serve piping hot with mashed potatoes, rice, or pasta to soak up the sauce."
    }
   ]
  },
  "ratatouille": {
   "nom": "Ratatouille Provençale",
-  "description": "Ratatouille Provençale — eggplant, zucchini, bell peppers, and tomatoes simmered with Herbes de Provence. The quintessential Mediterranean summer dish.",
+  "description": "Ratatouille Provençale — eggplant, zucchini, bell peppers, and tomatoes simmered with herbes de Provence. The Mediterranean summer dish.",
   "etapes": [
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Cut all vegetables into 2cm dice. Salt the eggplant for 20 minutes to remove excess moisture."
+    "titre": "Cut",
+    "detail": "Cut the eggplant, zucchini, bell pepper, tomato, and onion into even 2 cm dice."
    },
    {
-    "titre": "Sauté separately",
-    "detail": "Brown each vegetable separately over high heat in olive oil. This is the secret to a proper ratatouille!"
+    "titre": "Drain",
+    "detail": "Salt the eggplant dice and let them drain for 20 min, then pat dry to remove the bitterness and excess water."
+   },
+   {
+    "titre": "Sear separately",
+    "detail": "Brown each vegetable separately over high heat in olive oil — that's the secret to a ratatouille where each one keeps its shape."
    },
    {
     "titre": "Combine",
-    "detail": "Bring all vegetables together with tomatoes, garlic, and Herbes de Provence. Simmer covered."
+    "detail": "Bring all the vegetables together in the pot, add the tomatoes, crushed garlic, and herbes de Provence."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer over low heat for 30 min, stirring gently, until the vegetables are meltingly tender and silky."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust the salt and pepper and let it rest a few minutes off the heat so the flavors meld."
    },
    {
     "titre": "Serve",
-    "detail": "Adjust seasoning to taste. Serve hot as a side dish, or cold the next day (even better!)."
+    "detail": "Serve warm as a side, or cold the next day when the ratatouille is even better."
    }
   ]
  },
  "crepesbretonnes": {
-  "nom": "Galettes Bretonnes",
-  "description": "Galettes Bretonnes — buckwheat crêpes filled with ham, cheese, and egg. The true complete Breton galette!",
+  "nom": "Breton Galettes",
+  "description": "Breton Galettes — buckwheat crêpes filled with ham, cheese, and egg. The real galette complète from Brittany!",
   "etapes": [
    {
-    "titre": "Buckwheat batter",
-    "detail": "Mix buckwheat flour, egg, salt, and milk gradually. Add melted butter. Rest for at least 1 hour."
+    "titre": "Batter",
+    "detail": "Mix 250 g of buckwheat flour with a pinch of salt, make a well, crack in 1 egg, and gradually whisk in 50 cl of water and a little milk until you have a smooth, fluid batter."
    },
    {
-    "titre": "Cook the galettes",
-    "detail": "Heat a crêpe pan well and butter it. Spread batter thin and crispy. Cook 2 minutes per side."
+    "titre": "Rest",
+    "detail": "Cover the bowl with a cloth and let the batter rest at least 1 h at room temperature so the buckwheat hydrates and the galettes come out supple."
    },
    {
-    "titre": "Fill the complete galette",
-    "detail": "Sprinkle grated cheese on the hot galette. Add ham. Crack an egg in the center. Fold the 4 sides."
+    "titre": "Heat",
+    "detail": "Heat a crêpe pan or flat skillet over high heat until a drop of water dances on it, then lightly grease it with paper dipped in melted butter."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Pour in a ladle of batter and spread it thin with a spreader, then let it cook about 2 min until the edges lift and the underside is golden."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Scatter grated cheese in the center, lay a slice of ham on top, then crack an egg in the middle and let the white set for 2 min over medium heat."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold the four sides of the galette toward the center to form a square, leaving the yolk exposed, then slide it onto a warm plate."
    },
    {
     "titre": "Serve",
-    "detail": "Serve immediately very hot with Breton cider."
+    "detail": "Serve the galette complète immediately, piping hot and crisp, with a bowl of well-chilled Breton cider."
    }
   ]
  },
  "choufleurgratin": {
   "nom": "Cauliflower Gratin",
-  "description": "Cauliflower Gratin with Béchamel — tender cauliflower coated in creamy béchamel sauce and gratinéed with Gruyère cheese. A comforting vegetarian gratin.",
+  "description": "Cauliflower Béchamel Gratin — tender cauliflower under a creamy béchamel, browned with gruyère. The comforting vegetarian gratin.",
   "etapes": [
    {
+    "titre": "Cut",
+    "detail": "Break the cauliflower into even florets with a sharp knife for even cooking."
+   },
+   {
     "titre": "Blanch",
-    "detail": "Cut the cauliflower into florets. Cook for 8 minutes in boiling salted water. Drain thoroughly. CHEF'S TIP: use a sharp knife for clean cuts."
+    "detail": "Cook the florets for 8 min in a large pot of boiling salted water until tender but firm, then drain well."
    },
    {
     "titre": "Béchamel",
-    "detail": "Prepare a béchamel sauce: make a white roux and add hot milk. Season with nutmeg. Salt and pepper generously. Taste and adjust ALWAYS."
+    "detail": "Make a béchamel with a white butter-flour roux and hot milk, then season with salt, pepper, and freshly grated nutmeg."
    },
    {
-    "titre": "Assemble the gratin",
-    "detail": "Arrange the cauliflower in a buttered baking dish. Pour the béchamel sauce over top. Cover with grated Gruyère cheese."
+    "titre": "Assemble",
+    "detail": "Arrange the cauliflower in a buttered dish, coat it generously with béchamel, and cover with grated gruyère."
    },
    {
-    "titre": "Gratinee",
-    "detail": "Bake until the surface is golden brown."
+    "titre": "Top",
+    "detail": "Scatter with a few crushed walnuts and dots of butter for a golden, crisp crust."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for 20 min until the surface is deeply golden and lightly bubbling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest 5 min so the gratin sets, then serve piping hot."
    }
   ]
  },
  "salmongrillee": {
-  "nom": "Grilled Salmon with Lemon",
-  "description": "Salmon Fillet Grilled with Lemon — pan-seared salmon with lemon butter sauce and capers. Simple, quick, and elegant.",
+  "nom": "Grilled Lemon Salmon",
+  "description": "Grilled Lemon Salmon — pan-seared salmon with a lemon-butter caper sauce. Simple, quick, and elegant.",
   "etapes": [
    {
     "titre": "Season",
-    "detail": "Dry the fillets. Salt and pepper the skin side."
+    "detail": "Pat the salmon fillets thoroughly dry, then salt and pepper them, especially on the skin side."
    },
    {
-    "titre": "Grill skin side",
-    "detail": "Very hot pan with oil. Place skin side down. Press for 30 seconds. Cook 3-4 minutes without moving."
+    "titre": "Heat",
+    "detail": "Heat a skillet with a drizzle of olive oil until it's very hot."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Lay the fillets skin-side down, press for 30 seconds so they don't curl, then cook 3 to 4 min without touching them."
    },
    {
     "titre": "Flip",
-    "detail": "Flip and cook 2 minutes on the flesh side. The center should remain slightly translucent."
+    "detail": "Turn the fillets and cook 2 min on the flesh side, keeping the center slightly translucent and moist."
    },
    {
-    "titre": "Lemon butter sauce",
-    "detail": "In the same pan, melt butter + lemon juice + capers + dill. Spoon sauce over the salmon."
+    "titre": "Sauce",
+    "detail": "In the same pan, melt the butter with the lemon juice, capers, and chopped dill for a glossy sauce."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Generously spoon this lemon-butter sauce over the fillets just before serving."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate right away with a lemon wedge and a sprig of dill, alongside steamed vegetables or rice."
    }
   ]
  },
  "agneluroti": {
-  "nom": "Roasted Leg of Lamb",
-  "description": "Roasted Leg of Lamb — the great French Sunday classic. Lamb perfumed with garlic and rosemary, rich pan juices.",
+  "nom": "Roast Leg of Lamb",
+  "description": "Roast Leg of Lamb — the great French Sunday classic. Lamb scented with garlic and rosemary, with a robust pan jus.",
   "etapes": [
    {
-    "titre": "Stud and Season",
-    "detail": "Stud the leg of lamb with garlic cloves. Rub with olive oil, salt, pepper, and rosemary. Remove from refrigerator 1 hour before cooking."
+    "titre": "Prep",
+    "detail": "Stud the leg of lamb with thin slivers of garlic, rub it with olive oil, salt, pepper, and rosemary, then take it out of the fridge 1h before cooking."
    },
    {
     "titre": "Sear",
-    "detail": "Brown on all sides in a roasting pan over high heat. CHEF'S TIP: Use high heat to sear and caramelize the pan juices."
+    "detail": "Brown the leg on all sides over high heat in a roasting pan to caramelize the surface and lock in the juices."
    },
    {
     "titre": "Roast",
-    "detail": "Roast at 200°C first, then lower to 180°C. Baste every 20 minutes with the pan juices. Use convection heat for even cooking."
+    "detail": "Roast at 200°C for 15 min, then lower to 180°C and continue cooking about 15 min per 500 g for pink, medium-rare meat."
+   },
+   {
+    "titre": "Baste",
+    "detail": "Baste the lamb every 20 min with its juices and a little broth to keep it moist and glistening."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check the doneness with a thermometer, aiming for 54°C at the center for medium-rare and 60°C for medium."
    },
    {
     "titre": "Rest",
-    "detail": "Let rest for 15 minutes under foil before carving. The juices redistribute throughout the meat. CHEF'S TIP: Use a sharp knife for clean cuts."
+    "detail": "Take the leg out and let it rest 15 min under a sheet of foil so the juices redistribute through the meat."
+   },
+   {
+    "titre": "Carve",
+    "detail": "Carve into thin slices with a sharp knife, and serve napped with the deglazed pan jus."
    }
   ]
  },
  "pouletescalopes": {
   "nom": "Breaded Chicken Cutlets",
-  "description": "Breaded Chicken Cutlets — crispy homemade breadcrumb coating, lemon, and salad. The quick family classic that everyone loves.",
+  "description": "Breaded Chicken Cutlets — a crispy homemade crust, lemon, and a green salad. The quick family classic that pleases everyone.",
   "etapes": [
    {
-    "titre": "Pound the cutlets",
-    "detail": "Place the cutlets between two sheets of plastic wrap. Pound with a rolling pin to 1cm thickness. Season with salt and pepper."
+    "titre": "Pound",
+    "detail": "Place the chicken cutlets between two sheets of plastic wrap and pound them with a rolling pin to a 1 cm thickness for even cooking."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season both sides of the cutlets with salt and pepper, then set up three shallow dishes with flour, beaten eggs, and breadcrumbs."
    },
    {
     "titre": "Bread",
-    "detail": "Coat in flour → beaten egg → breadcrumbs. Press firmly to ensure adhesion."
+    "detail": "Dredge each cutlet in flour, then in beaten egg, and finally in breadcrumbs, pressing firmly so the coating adheres evenly."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat a mix of oil and butter in a skillet over medium-high heat until the butter foams without browning."
    },
    {
     "titre": "Cook",
-    "detail": "Pan fry in oil and butter over medium-high heat. Cook 3-4 minutes per side until golden brown."
+    "detail": "Add the cutlets and brown them 3 to 4 min per side until you get a deep golden, crispy crust."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Set the cutlets on paper towels for a moment to remove excess grease and keep them crispy."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with lemon wedges, green salad, and homemade fries."
+    "detail": "Serve right away with lemon wedges for squeezing, a green salad, and homemade fries."
    }
   ]
  },
  "moulesmarinieres": {
   "nom": "Moules Marinières",
-  "description": "Moules Marinières — fresh mussels steamed open in white wine with shallots and parsley. The quintessential classic of the French seaside.",
+  "description": "Moules Marinières — fresh mussels steamed open in white wine with shallots and parsley. The great French seaside classic.",
   "etapes": [
    {
-    "titre": "Clean the mussels",
-    "detail": "Scrape and rinse the mussels. Remove the beards. Discard any open or cracked mussels. Rinse thoroughly under cold water."
+    "titre": "Clean",
+    "detail": "Scrape the mussel shells, pull off the beards (byssus), and rinse them thoroughly in cold water, discarding any that stay open or are cracked."
    },
    {
-    "titre": "Sauté the aromatics",
-    "detail": "Sauté the minced shallots and garlic in butter for 2 minutes."
+    "titre": "Chop",
+    "detail": "Finely mince the shallots and garlic, and chop the fresh parsley, setting it aside for the end."
    },
    {
-    "titre": "Cook the mussels",
-    "detail": "Add the white wine and mussels. Cover and cook over high heat. Shake the pan regularly. CHEF'S TIP: use HIGH heat to sear and caramelize the pan juices."
+    "titre": "Sweat",
+    "detail": "Melt the butter in a large pot and sweat the shallots and garlic 2 min over medium heat without browning."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the white wine, bring to a boil, and let it reduce 2 min to mellow the alcohol and concentrate the flavors."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the mussels, cover, and cook 5 to 6 min over high heat, shaking the pot regularly until all the shells open."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Discard any mussels that stayed closed, sprinkle with chopped parsley, and add a final turn of pepper, without salting since the mussels are already salty."
    },
    {
     "titre": "Serve",
-    "detail": "Discard any closed mussels. Sprinkle with chopped parsley. Serve with fries and crusty bread."
+    "detail": "Serve the mussels piping hot in their broth, with golden fries and country bread to soak it all up."
    }
   ]
  },
@@ -18938,20 +23920,32 @@ window.RECETTES_EN = {
   "description": "Beef Stroganoff — strips of beef in a creamy mushroom and mustard sauce. The great Russian classic, served over rice or pasta.",
   "etapes": [
    {
-    "titre": "Cut the beef",
-    "detail": "Cut the tenderloin or rump steak into thin strips. Salt and pepper. Sear over high heat in small batches. Set aside. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Cut",
+    "detail": "Cut 600 g of beef tenderloin or rump into thin strips against the grain, and season generously with salt and pepper."
    },
    {
-    "titre": "Mushrooms and onion",
-    "detail": "In the same skillet, sauté the sliced onion, then add mushrooms and cook until the liquid evaporates."
+    "titre": "Slice",
+    "detail": "Finely slice the onion and cut the mushrooms into even slices, trimming the gritty base of the stems."
    },
    {
-    "titre": "Cream and mustard sauce",
-    "detail": "Add mustard, sour cream, and a little broth. Stir. Do not boil."
+    "titre": "Sear",
+    "detail": "Sear the beef in small batches in a very hot pan for 1 to 2 min to color it without drying it out, then keep it warm."
    },
    {
-    "titre": "Combine and serve",
-    "detail": "Return the beef to the sauce for 2 minutes. Sprinkle with parsley. Serve over rice, pasta, or potatoes."
+    "titre": "Sauté",
+    "detail": "In the same pan, sweat the onion for 3 min over medium heat, then add the mushrooms and cook until their water has fully evaporated."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Stir in 1 spoonful of mustard, the crème fraîche, and a little broth, mix, and let simmer gently over low heat for 3 min without ever letting it boil."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the beef and its juices to the sauce, reheat for 2 min over low heat, and adjust the seasoning with salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with chopped parsley and serve right away over a bed of pilaf rice, fresh tagliatelle, or steamed potatoes."
    }
   ]
  },
@@ -18991,605 +23985,869 @@ window.RECETTES_EN = {
  },
  "risotto": {
   "nom": "Risotto",
-  "description": "A classic Parmesan risotto — creamy, smooth, and comforting. The secret: add the broth one ladle at a time.",
+  "description": "A classic Parmesan risotto — creamy, silky, and comforting. The secret: add the broth one ladle at a time.",
   "etapes": [
    {
-    "titre": "Sweat the onion",
-    "detail": "Finely mince the onion. In a large saucepan, heat the oil and 20g of butter over medium heat. Sweat the onion for 4–5 minutes without browning."
+    "titre": "Sweat",
+    "detail": "Finely mince the onion and sweat it 4 to 5 min over medium heat in the olive oil and 20 g of butter, without browning."
    },
    {
-    "titre": "Toast the rice",
-    "detail": "Add the Arborio rice and stir for 2 minutes over medium heat until it becomes nacrous and translucent."
+    "titre": "Toast",
+    "detail": "Add the arborio rice and stir 2 min over medium heat until the grains turn pearly and translucent at the edges."
    },
    {
-    "titre": "Deglaze with white wine",
-    "detail": "Pour in the white wine and stir until completely absorbed."
+    "titre": "Deglaze",
+    "detail": "Pour in the white wine and stir over high heat until fully absorbed to deglaze and flavor the rice."
    },
    {
-    "titre": "Add the broth",
-    "detail": "Add the hot broth one ladle at a time, stirring constantly. Wait for each ladle to be absorbed before adding the next one."
+    "titre": "Add broth",
+    "detail": "Add the hot broth one ladle at a time, stirring constantly and waiting each time for it to be absorbed before the next ladle, for about 18 min."
    },
    {
-    "titre": "Mantecatura",
-    "detail": "Off the heat, add the remaining cold butter and grated Parmesan. Stir vigorously to achieve a creamy, bound risotto. Cover for 2 minutes."
+    "titre": "Taste",
+    "detail": "Taste the rice, which should stay slightly firm at the center (al dente) and coated in a silky cream, then adjust the salt."
+   },
+   {
+    "titre": "Mantecare",
+    "detail": "Off the heat, vigorously stir in the remaining cold butter and grated Parmesan to bind the dish and make the risotto creamy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cover and let rest 2 min, then serve right away in warm plates; the risotto should spread in a gentle wave."
    }
   ]
  },
  "wrappoulet": {
   "nom": "Chicken Wrap",
-  "description": "A healthy and satisfying grilled chicken wrap — crispy vegetables, yogurt sauce, and fresh herbs.",
+  "description": "A healthy, satisfying grilled chicken wrap — crunchy vegetables, yogurt sauce, and fresh herbs.",
   "etapes": [
    {
-    "titre": "Marinate and grill the chicken",
-    "detail": "Cut the chicken into strips. Marinate for 10 minutes with olive oil, cumin, paprika, garlic, and salt. Sear in a skillet until cooked through. CHEF'S TIP: Use a sharp knife for clean, even cuts."
+    "titre": "Cut",
+    "detail": "Cut the chicken into thin strips and let it marinate 10 min with a drizzle of oil, pressed garlic, salt, and pepper."
    },
    {
-    "titre": "Prepare the sauce",
-    "detail": "Mix Greek yogurt with lemon juice, minced garlic, fresh herbs (cilantro, mint), salt, and pepper."
+    "titre": "Grill",
+    "detail": "Grill the chicken strips 5 to 6 min over high heat in a hot skillet until golden and cooked through."
    },
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Rinse and slice the lettuce. Dice the tomato. Prepare avocado or cucumber as desired. CHEF'S TIP: Use a sharp knife for clean, even cuts."
+    "titre": "Sauce",
+    "detail": "Mix the yogurt with lemon juice, pressed garlic, salt, and pepper to make a creamy, tangy sauce."
    },
    {
-    "titre": "Assemble the wrap",
-    "detail": "Spread the sauce on the tortilla. Add lettuce, tomato, and hot chicken. Roll tightly, folding in the sides. Cut in half diagonally. CHEF'S TIP: Use a sharp knife for clean, even cuts."
+    "titre": "Prep",
+    "detail": "Wash and shred the lettuce into strips and dice the tomatoes, draining them slightly."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Briefly warm the tortillas in a skillet, then spread a good spoonful of sauce in the center of each."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Fill with lettuce, tomato, and hot chicken, fold in the sides, then roll the wrap up tightly so it doesn't open."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut each wrap in half on the diagonal and serve right away, still warm, with a few crudités."
    }
   ]
  },
  "cassoulet": {
   "nom": "Cassoulet Toulousain",
-  "description": "Cassoulet Toulousain — white beans simmered with sausages, duck confit, and pork rind. A generous and flavorful dish from the southwest.",
+  "description": "Cassoulet from Toulouse — white beans slow-simmered with sausages, duck confit, and pork rind. A generous, savory dish from the Southwest of France.",
   "etapes": [
    {
-    "titre": "Soak the beans",
-    "detail": "The day before, soak the dried white beans in cold water for 12 hours. Drain and rinse. Rinse thoroughly under cold water."
+    "titre": "Soak",
+    "detail": "The day before, soak the dried white beans in a large amount of cold water for 12 h, then drain and rinse them."
    },
    {
-    "titre": "Prepare the base",
-    "detail": "Sauté onions and garlic in a large Dutch oven. Add the bacon and brown. Watch carefully: uniform golden color = ready, any longer and it will burn."
+    "titre": "Precook",
+    "detail": "Blanch the beans 5 min in boiling water, drain, then continue cooking 45 min at a simmer in water until they are tender."
    },
    {
-    "titre": "Add the beans",
-    "detail": "Add the beans, crushed tomatoes, bouquet garni, salt, and pepper. Cover with water and simmer. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Base",
+    "detail": "In a large pot, sauté the chopped onions and garlic, add the lardons, and let them brown 5 min."
    },
    {
-    "titre": "Add the meats",
-    "detail": "Brown the sausages. Add them with the duck confit to the Dutch oven. Stir gently. Watch carefully: uniform golden color = ready, any longer and it will burn."
+    "titre": "Simmer",
+    "detail": "Add the crushed tomatoes, a bouquet garni, salt, and pepper, moisten with a little of the bean cooking liquid, and let simmer 20 min over low heat."
    },
    {
-    "titre": "Gratinee",
-    "detail": "Pour into an earthenware dish. Sprinkle with breadcrumbs. Bake in the oven at 180°C until golden and crispy."
+    "titre": "Sear",
+    "detail": "Brown the Toulouse sausages in a skillet, then add them with the duck confit and the drained beans to the pot, mixing gently."
+   },
+   {
+    "titre": "Gratin",
+    "detail": "Pour everything into an earthenware dish, sprinkle with breadcrumbs, and bake at 180 °C for 1 h, breaking the crust several times to press it down."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest 10 min, then serve the cassoulet bubbling straight from its dish, with a red wine from the Southwest."
    }
   ]
  },
  "daubeProvencale": {
   "nom": "Daube Provençale",
-  "description": "Daube Provençale — beef simmered in red wine with olives, Provençal herbs, and orange. A sun-kissed dish that fills the entire house with its aroma.",
+  "description": "Daube provençale — beef braised in red wine with olives, herbes de Provence, and orange. A sun-soaked dish that fills the whole house with its aroma.",
   "etapes": [
    {
-    "titre": "Marinate the meat",
-    "detail": "Cut the beef into large chunks. Marinate overnight with red wine, aromatics, orange zest, and Provençal herbs."
+    "titre": "Marinate",
+    "detail": "Cut the beef into large cubes and marinate it overnight in the fridge in the red wine with orange zest, garlic, and herbes de Provence."
    },
    {
-    "titre": "Sear the meat",
-    "detail": "Drain and dry the meat. Brown it in batches in olive oil. Set aside. Watch carefully: a uniform golden color means it's ready—don't overdo it or it will burn."
+    "titre": "Sear",
+    "detail": "Drain and pat the meat dry, then brown it in batches in the hot olive oil before setting it aside."
    },
    {
-    "titre": "Prepare the base",
-    "detail": "Sauté the onions and carrots. Add garlic and bacon. Deglaze with the strained marinade. CHEF'S TIP: scrape up ALL the browned bits stuck to the bottom—that's where the intense flavor is."
+    "titre": "Base",
+    "detail": "Sauté the onions and sliced carrots, add the garlic, then deglaze with the strained marinade, scraping up the browned bits at the bottom of the pot."
    },
    {
-    "titre": "Simmer slowly",
-    "detail": "Return the meat, add olives and bouquet garni. Cover and let simmer over very low heat. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Combine",
+    "detail": "Return the meat, add the olives, a bouquet garni, and a little orange zest, then season with salt and pepper."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and let simmer over very low heat for 2 h 30, stirring from time to time, until the meat is meltingly tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover for the last 15 min of cooking to reduce the sauce, which should coat the meat, then adjust the seasoning."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with fresh pasta, gnocchi, or polenta. Top with fresh parsley."
+    "detail": "Sprinkle with fresh parsley and serve the daube piping hot with fresh pasta, gnocchi, or polenta."
    }
   ]
  },
  "hachisparmentier": {
   "nom": "Hachis Parmentier",
-  "description": "Hachis Parmentier — ground meat simmered under a generous layer of creamy mashed potatoes with a golden cheese crust. The classic comfort food our grandmothers made.",
+  "description": "Hachis Parmentier — simmered ground meat under a generous, gratinéed layer of mashed potatoes. The comforting classic of our grandmothers.",
   "etapes": [
    {
-    "titre": "Prepare the mashed potatoes",
-    "detail": "Cook the potatoes in boiling salted water for 20 minutes. Mash with butter and hot milk. Season generously with salt and pepper. Taste and adjust ALWAYS."
+    "titre": "Boil",
+    "detail": "Peel the potatoes and boil them 20 min in a large pot of salted boiling water until they are tender."
    },
    {
-    "titre": "Make the meat filling",
-    "detail": "Sauté the sliced onions in oil. Add the ground meat. Cook while crumbling. Add tomatoes, salt, pepper, and herbs."
+    "titre": "Mash",
+    "detail": "Mash the potatoes with the butter and hot milk to get a smooth purée, season with salt and pepper, and taste."
    },
    {
-    "titre": "Assemble the dish",
-    "detail": "In a baking dish, spread the meat mixture. Cover with the mashed potatoes. Smooth with a fork to create ridges."
+    "titre": "Filling",
+    "detail": "Sauté the minced onions in the oil, add the ground beef, and cook it, breaking it up, until browned."
    },
    {
-    "titre": "Gratinée",
-    "detail": "Sprinkle with grated Gruyère. Bake at 200°C until the top is golden brown. Use convection heat for even cooking."
+    "titre": "Season",
+    "detail": "Salt and pepper the filling, add a few herbs, and cook 5 min more to develop the flavors."
+   },
+   {
+    "titre": "Layer",
+    "detail": "In a gratin dish, spread the filling in an even layer, then cover it with the mash, smoothing it with a fork into ridges."
+   },
+   {
+    "titre": "Gratin",
+    "detail": "Sprinkle with grated gruyère and bake at 200 °C for 20 min until the top is nicely golden and crispy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the hachis piping hot, with a simple dressed green salad."
    }
   ]
  },
  "gratindauphinois": {
   "nom": "Gratin dauphinois",
-  "description": "The true gratin dauphinois — potatoes melting in silky garlic cream. Simple and irresistible.",
+  "description": "The real gratin dauphinois — meltingly tender potatoes in a silky garlic cream. Simple and irresistible.",
   "etapes": [
    {
-    "titre": "Preheat the oven",
-    "detail": "Preheat to 160 °C. Rub the gratin dish with a garlic clove cut in half, then butter generously. Allow at least 10 minutes at the correct temperature for proper cooking to begin."
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 160 °C, rub the gratin dish with a cut garlic clove, then butter it generously."
    },
    {
-    "titre": "Prepare the potatoes",
-    "detail": "Peel and wash the potatoes. Cut them into thin, even slices (2–3 mm) without rinsing them — the starch helps bind the gratin. Do not rinse them! CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Slice",
+    "detail": "Peel and wash the potatoes, then slice them into even 2 to 3 mm rounds without rinsing, to keep the starch that will bind the gratin."
    },
    {
-    "titre": "Prepare the cream",
-    "detail": "In a saucepan, heat the milk and cream with the crushed garlic, nutmeg, salt, and pepper. Bring to a simmer then remove from heat."
+    "titre": "Infuse",
+    "detail": "In a saucepan, heat the milk and cream with the crushed garlic, salt, pepper, and a grating of nutmeg, and bring to a simmer."
    },
    {
-    "titre": "Assemble the gratin",
-    "detail": "Arrange the potato slices in even layers in the dish. Pour the hot cream over them until it reaches the level of the potatoes."
+    "titre": "Layer",
+    "detail": "Arrange the potato rounds in even, tightly packed layers in the dish, seasoning lightly between the layers."
    },
    {
-    "titre": "Bake in the oven",
-    "detail": "Place in the oven at 160 °C. The gratin is ready when the potatoes are tender (test with the tip of a knife) and the top is golden brown. Use convection heat for even cooking."
+    "titre": "Pour",
+    "detail": "Pour the hot cream over the top up to the level of the potatoes, pressing down a little to distribute the liquid evenly."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 160 °C for about 1 h 15 until the potatoes are tender to the tip of a knife and the top is nicely golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest 10 min so the gratin sets, then serve piping hot alongside a roasted or grilled meat."
    }
   ]
  },
  "tajinepoulet": {
-  "nom": "Chicken Tagine with Preserved Lemon",
-  "description": "Chicken tagine with preserved lemon and olives — the flavors of Morocco in one aromatic dish with warm spices, preserved lemons, and green olives.",
+  "nom": "Tajine Poulet Citron",
+  "description": "Chicken tajine with preserved lemon and olives — the flavors of Morocco in one fragrant dish of mild spices, preserved lemons, and green olives.",
   "etapes": [
    {
-    "titre": "Sauté the onions",
-    "detail": "Melt the sliced onions in olive oil with garlic, ginger, turmeric, cumin, and paprika."
+    "titre": "Prep",
+    "detail": "Finely mince the onions, chop the garlic and fresh ginger, and cut the preserved lemons into wedges, removing the pulp."
    },
    {
-    "titre": "Brown the chicken",
-    "detail": "Add the chicken pieces and brown them on all sides. Season with salt and pepper. Watch carefully: uniform golden color means it's ready, any longer and it will burn."
+    "titre": "Sweat",
+    "detail": "Melt the onions in the olive oil over low heat in a tajine or pot for 8 min, then add the garlic, ginger, and curry to release the aromas."
    },
    {
-    "titre": "Add lemons and olives",
-    "detail": "Add the preserved lemons cut into quarters, the olives, and a glass of water. Cover."
+    "titre": "Brown",
+    "detail": "Add the chicken pieces, season with salt and pepper, and brown them on all sides 8 min over medium heat until nicely colored."
    },
    {
-    "titre": "Finish and serve",
-    "detail": "Sprinkle with fresh cilantro and parsley. Serve with couscous or pita bread."
+    "titre": "Add water",
+    "detail": "Pour in a large glass of water, cover, and let simmer over low heat 35 min, stirring halfway through so the chicken becomes tender."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Add the preserved lemon wedges and the olives, then continue cooking 10 min uncovered to reduce and concentrate the sauce."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste the sauce and adjust the salt carefully, since the lemons and olives are already salty, then pepper to taste."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with chopped fresh cilantro and parsley and present the tajine piping hot with couscous or Moroccan bread."
    }
   ]
  },
  "gratinPates": {
-  "nom": "Pasta Gratin",
-  "description": "Pasta gratin — macaroni coated in creamy béchamel sauce, ham and melted cheese gratinéed in the oven. Simple, satisfying, and foolproof.",
+  "nom": "Baked Pasta Gratin",
+  "description": "Pasta gratin — macaroni coated in creamy béchamel with ham and melted cheese, baked until golden. Simple, comforting and foolproof.",
   "etapes": [
    {
-    "titre": "Cook the pasta",
-    "detail": "Cook the macaroni al dente in salted boiling water. Drain and set aside. Cook 1 minute less than the package instructions. Taste to verify."
+    "titre": "Boil",
+    "detail": "Drop the macaroni into a large pot of boiling salted water and cook them al dente, 1 min less than the package time, then drain."
    },
    {
-    "titre": "Make the béchamel",
-    "detail": "Melt the butter, add the flour and stir. Gradually pour in the milk while stirring until thickened. Season with salt, pepper, and nutmeg."
+    "titre": "Roux",
+    "detail": "Melt the butter in a saucepan, add the flour and stir for 2 min over low heat to cook the roux without browning it."
    },
    {
-    "titre": "Assemble",
-    "detail": "Mix the pasta, diced ham, and béchamel together. Pour into a buttered baking dish."
+    "titre": "Béchamel",
+    "detail": "Pour in the cold milk gradually while whisking until it thickens, then season with salt, pepper and freshly grated nutmeg."
    },
    {
-    "titre": "Gratinée",
-    "detail": "Top with grated Gruyère. Bake in the oven at 200°C until golden and gratinéed."
+    "titre": "Combine",
+    "detail": "Dice the ham, toss it with the pasta and béchamel, then pour everything into a buttered baking dish."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter the grated Gruyère generously over the entire surface to ensure an even, golden crust."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for 20 min until the top is nicely golden and bubbling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it rest for 5 min so the gratin sets, then serve piping hot with a crisp green salad."
    }
   ]
  },
  "saltimbocca": {
   "nom": "Saltimbocca alla Romana",
-  "description": "Saltimbocca alla Romana — veal cutlets topped with prosciutto and sage, sautéed in butter and deglazed with white wine. A classic Roman dish in 20 minutes.",
+  "description": "Saltimbocca alla romana — veal cutlets topped with cured ham and sage, sautéed in butter and deglazed with white wine. A Roman classic in 20 minutes.",
   "etapes": [
    {
-    "titre": "Prepare the cutlets",
-    "detail": "Pound the veal cutlets thin. Place a sage leaf and a slice of prosciutto on each. Secure with a toothpick."
+    "titre": "Pound",
+    "detail": "Place the veal cutlets between two sheets of plastic wrap and pound them thin with a rolling pin to get even, tender slices."
    },
    {
-    "titre": "Sauté",
-    "detail": "In a skillet, melt the butter over high heat. Sauté the cutlets with the prosciutto side down first, 2 minutes per side. CHEF'S TIP: High heat to sear and caramelize the pan drippings."
+    "titre": "Top",
+    "detail": "Lay a fresh sage leaf and then a slice of cured ham on each cutlet and secure it all with a toothpick."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Melt the butter in a skillet over high heat and sear the cutlets ham-side first 2 min, then 2 min on the other side."
    },
    {
     "titre": "Deglaze",
-    "detail": "Remove the meat. Deglaze the skillet with white wine. Let reduce by half over high heat. CHEF'S TIP: High heat to sear and caramelize the pan drippings."
+    "detail": "Remove the meat and keep it warm, then pour the white wine into the pan and let it reduce by half over high heat, scraping up the browned bits."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Off the heat, finish the sauce with a knob of cold butter, stirring to get a glossy, coating jus."
    },
    {
     "titre": "Serve",
-    "detail": "Coat the cutlets with sauce. Serve immediately with fresh pasta or sautéed vegetables."
+    "detail": "Remove the toothpicks, nap the cutlets with the sage sauce, and serve right away with fresh pasta or sautéed vegetables."
    }
   ]
  },
  "bouillabaisse": {
   "nom": "Bouillabaisse",
-  "description": "The authentic Marseille bouillabaisse — a soup of rockfish, saffron, rouille and croutons. A monument of Provençal cuisine.",
+  "description": "The real Marseille bouillabaisse — a soup of rocky-shore fish, saffron, rouille, and croutons. A monument of Provençal cooking.",
   "etapes": [
    {
-    "titre": "Prepare the fish",
-    "detail": "Clean and cut the fish (scorpionfish, gurnard, John Dory). Prepare the shellfish. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Prep",
+    "detail": "Scale, gut, and cut the rockfish into chunks (scorpionfish, gurnard, John Dory), peel the shrimp, and set aside the heads and bones for the stock."
    },
    {
-    "titre": "Make the stock",
-    "detail": "Sauté onions, fennel, tomatoes, and garlic in olive oil. Add the fish bones and heads, saffron, and bouquet garni. Cover with water."
+    "titre": "Sweat",
+    "detail": "Sauté the minced onions, fennel, garlic, and crushed tomatoes in the olive oil 8 min over medium heat until the vegetables soften."
    },
    {
-    "titre": "Prepare the rouille",
-    "detail": "Blend garlic, saffron, egg yolk, and olive oil to make the rouille. Season with salt."
+    "titre": "Simmer",
+    "detail": "Add the heads and bones, the saffron, and a bouquet garni, cover with water, and let simmer 30 min over low heat to extract a robust stock."
    },
    {
-    "titre": "Cook the fish",
-    "detail": "Strain the broth. Bring to a boil. Add the fish according to their cooking times. Serve immediately."
+    "titre": "Rouille",
+    "detail": "Meanwhile, blend garlic, saffron, egg yolk, and olive oil in a thin stream to whip up a creamy rouille, then salt it."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass the broth through a fine sieve, pressing the solids well, return it to the pot, and bring it back to a simmer."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Add the fish according to their firmness, starting with the firmest, add the shrimp at the end, and poach 10 to 12 min without a hard boil."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with garlic-rubbed croutons and rouille on the side."
+    "detail": "Present the broth and the fish separately, with garlic-rubbed croutons and the rouille to spread."
    }
   ]
  },
  "pouletNormande": {
-  "nom": "Chicken Normandy",
-  "description": "Chicken Normandy — chicken breasts simmered in cider with crème fraîche and apples. The sweetness of Normandy on your plate.",
+  "nom": "Poulet à la Normande",
+  "description": "Poulet à la normande — chicken breasts braised in cider with crème fraîche and apples. The gentle flavors of Normandy on your plate.",
   "etapes": [
    {
-    "titre": "Brown the chicken",
-    "detail": "Season the chicken breasts. Brown them in butter on both sides. Set aside. Watch carefully: uniform golden color means it's done, any longer and it will burn."
+    "titre": "Prep",
+    "detail": "Pat the chicken breasts dry, season them generously with salt and pepper, then peel and cut the apples into even wedges."
    },
    {
-    "titre": "Sauté the apples",
-    "detail": "In the same skillet, sauté the apple quarters in butter until lightly golden. Set aside."
+    "titre": "Brown",
+    "detail": "Foam a knob of butter in a pot over medium-high heat and brown the chicken breasts 4 to 5 min per side until a nice amber color, then set them aside."
    },
    {
-    "titre": "Deglaze with cider",
-    "detail": "Deglaze with dry cider. Let reduce by half. Return the chicken to the pan. CHEF'S TIP: the sauce should coat the back of a spoon = proper consistency."
+    "titre": "Sauté",
+    "detail": "In the same pot, add a little butter and sauté the apple wedges 5 min over medium heat until lightly caramelized, then set them aside separately."
    },
    {
-    "titre": "Finish with cream",
-    "detail": "Add the heavy crème fraîche. Let simmer 5 minutes. Adjust seasoning. CHEF'S TIP: partially cover with a lid for better reduction."
+    "titre": "Deglaze",
+    "detail": "Pour in the dry cider to lift the browned bits, return the chicken, and let it reduce by half over medium heat for 8 to 10 min."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Stir in the thick crème fraîche, lower to low heat, and let simmer 8 min with the lid ajar until the sauce coats a spoon, then adjust the seasoning."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the sautéed apples to the sauce for 2 min to warm them without breaking them apart and let them soak up the creamy juices."
    },
    {
     "titre": "Serve",
-    "detail": "Arrange the chicken and coat with sauce. Garnish with the sautéed apples. Serve with rice or tagliatelle."
+    "detail": "Plate the chicken breasts napped with sauce, arrange the apples around them, and serve with pilaf rice or fresh tagliatelle."
    }
   ]
  },
  "volauVent": {
-  "nom": "Vol-au-Vent",
-  "description": "Vol-au-vent with seafood — crispy puff pastry shells filled with a creamy fricassée of shrimp and scallops in a silky velouté sauce.",
+  "nom": "Seafood Vol-au-Vent",
+  "description": "Seafood vol-au-vent — flaky puff pastry shells filled with a creamy fricassee of shrimp and scallops in a velvety sauce.",
   "etapes": [
    {
-    "titre": "Bake the shells",
-    "detail": "Bake the vol-au-vent according to instructions. Keep warm."
+    "titre": "Bake",
+    "detail": "Bake the puff pastry shells at 200°C for 15 min until they're puffed and golden, then keep them warm."
    },
    {
-    "titre": "Prepare the seafood",
-    "detail": "Sauté the shrimp and scallops in butter for 3 minutes. Set aside."
+    "titre": "Sear",
+    "detail": "Sauté the shrimp in the butter for 3 min over high heat until pink, then set them aside."
    },
    {
-    "titre": "Make the velouté sauce",
-    "detail": "Make a beurre manié with butter and flour. Add fish stock and cream. Cook until the sauce reaches a silky consistency."
+    "titre": "Roux",
+    "detail": "In the same pan, melt the butter, add the flour and stir for 2 min to make a pale roux."
    },
    {
-    "titre": "Fill and serve",
-    "detail": "Combine the seafood and sauce. Fill the warm shells. Serve immediately with green salad."
+    "titre": "Velouté",
+    "detail": "Pour in the milk gradually while whisking and let it thicken for 5 min over low heat into a coating velouté, then season with salt and pepper."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Stir the shrimp and chopped walnuts into the sauce and warm through for 2 min without boiling to bind everything together."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fill the warm shells with this creamy filling and serve immediately with a green salad."
    }
   ]
  },
  "boulettesViande": {
   "nom": "Meatballs in Tomato Sauce",
-  "description": "Meat meatballs in tomato sauce — tender and fragrant, simmered in a homemade tomato sauce with basil. The ultimate comfort food.",
+  "description": "Meatballs in tomato sauce — tender and flavorful, simmered in a homemade tomato sauce with basil. The ultimate comfort food.",
   "etapes": [
    {
-    "titre": "Form the meatballs",
-    "detail": "Mix ground meat, egg, breadcrumbs, garlic, parsley, salt, and pepper. Form into 3 cm meatballs."
+    "titre": "Mix",
+    "detail": "Combine the ground beef with the egg, chopped garlic, a little onion, salt and pepper until you have an even mixture."
    },
    {
-    "titre": "Brown them",
-    "detail": "Brown the meatballs in olive oil on all sides. Set aside. Watch carefully: uniform golden color means it's ready, any longer and it will burn."
+    "titre": "Shape",
+    "detail": "Roll the mixture into even 3 cm meatballs between your palms, then dust them lightly with flour."
    },
    {
-    "titre": "Make the sauce",
-    "detail": "Sauté onions and garlic. Add crushed tomatoes, basil, salt, and sugar. Simmer for 10 minutes. CHEF'S TIP: crack the lid slightly for better reduction."
+    "titre": "Brown",
+    "detail": "Brown the meatballs in olive oil over medium-high heat on all sides for 6 min, then set them aside."
    },
    {
-    "titre": "Simmer together",
-    "detail": "Return the meatballs to the sauce. Let simmer covered. CHEF'S TIP: crack the lid slightly for better reduction."
+    "titre": "Sweat",
+    "detail": "In the same pan, sauté the remaining sliced onion and garlic for 3 min over low heat until translucent."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add the crushed tomatoes, a pinch of sugar, salt and pepper, and let simmer for 10 min over low heat to mellow the acidity."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the meatballs to the sauce and let simmer for 10 min, partially covered, to soak up the flavor."
    },
    {
     "titre": "Serve",
-    "detail": "Serve over spaghetti or with bread. Sprinkle with grated Parmesan."
+    "detail": "Serve the meatballs coated in sauce over spaghetti or with bread, sprinkled with grated Parmesan."
    }
   ]
  },
  "jambonneauLentilles": {
   "nom": "Pork Shank with Lentils",
-  "description": "Pork shank with green Puy lentils — a rustic and comforting dish slowly simmered with carrots and aromatic herbs.",
+  "description": "Pork shank with green Puy lentils — a rustic, comforting dish slowly simmered with carrots and aromatic herbs.",
   "etapes": [
    {
-    "titre": "Cook the shank",
-    "detail": "Place the pork shank in a Dutch oven with cold water, onions, carrots, and bouquet garni. Bring to a boil and skim."
+    "titre": "Prep",
+    "detail": "Peel and slice the carrots into rounds, slice the onions thinly, and tie a bouquet garni with the thyme."
+   },
+   {
+    "titre": "Start",
+    "detail": "Place the shank in a Dutch oven, cover with cold water, add half the onions, carrots and the thyme, bring to a boil and skim carefully."
    },
    {
     "titre": "Simmer",
-    "detail": "Lower the heat and let simmer covered. The meat should be very tender. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "detail": "Lower the heat and let it gently simmer, covered, for 1 h 30 until the meat is very tender and falls off the bone."
    },
    {
-    "titre": "Cook the lentils",
-    "detail": "Rinse the lentils. Plunge them into the cooking broth. Let cook until tender. Rinse thoroughly with cold water."
+    "titre": "Rinse",
+    "detail": "Rinse the lentils under cold water to remove any impurities and drain them well."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the lentils to the cooking broth with the remaining carrots and onions and cook for 25 to 30 min until tender."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Remove the shank, let it cool for a few minutes, then slice it into generous portions with a sharp knife."
    },
    {
     "titre": "Serve",
-    "detail": "Slice the pork shank. Serve on a bed of lentils with Dijon mustard. CHEF'S TIP: use a sharp knife for clean cuts."
+    "detail": "Arrange the shank slices on a bed of steaming lentils and serve with a spoonful of Dijon mustard."
    }
   ]
  },
  "gnocchisgorgonzola": {
-  "nom": "Gnocchi with Gorgonzola",
-  "description": "Gnocchi with gorgonzola and walnuts — soft gnocchi topped with a creamy sauce of melting gorgonzola and crunchy walnuts. Quick and utterly indulgent.",
+  "nom": "Gorgonzola Gnocchi",
+  "description": "Gnocchi with gorgonzola and walnuts — pillowy gnocchi coated in a silky melted-gorgonzola sauce with crunchy walnuts. Quick and irresistibly indulgent.",
   "etapes": [
    {
-    "titre": "Cook the gnocchi",
-    "detail": "Cook the gnocchi in salted boiling water until they float to the surface. Drain."
+    "titre": "Boil",
+    "detail": "Bring a large pot of salted water to a rolling boil to cook the gnocchi in plenty of water."
    },
    {
-    "titre": "Make the sauce",
-    "detail": "In the saucepan, melt the gorgonzola with the cream over low heat, stirring. Season generously with pepper. ON LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Cook",
+    "detail": "Drop in the gnocchi and lift them out as soon as they rise to the surface, about 2 to 3 min, then drain them gently."
    },
    {
-    "titre": "Finish and serve",
-    "detail": "Toss the gnocchi with the sauce. Divide among plates. Sprinkle with crushed walnuts and crispy sage."
+    "titre": "Melt",
+    "detail": "In a saucepan, melt the gorgonzola with the cream over low heat, stirring until you get a smooth sauce, then season generously with pepper."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Add the gnocchi to the sauce and toss gently for 1 min over low heat to coat them without crushing them."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Sprinkle with chopped walnuts for crunch and add a few fried sage leaves for fragrance."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Divide the hot gnocchi among the plates and serve right away to enjoy the silky sauce at its best."
    }
   ]
  },
  "brandadeMorue": {
   "nom": "Brandade de Morue",
-  "description": "Brandade de Morue from Nîmes — salt cod blended with olive oil and cream, luxuriously smooth and perfumed with garlic. A beloved classic of southern France.",
+  "description": "Brandade de morue from Nîmes — desalted cod whipped with olive oil and cream, silky and fragrant with garlic. A great classic of the South of France.",
   "etapes": [
    {
-    "titre": "Desalt the cod",
-    "detail": "Place the salt cod in a large bowl of cold water. Change the water every 6 hours for 24-48 hours depending on thickness."
+    "titre": "Desalt",
+    "detail": "Place the salt cod in a large container of cold water and change the water every 6 h for 24 to 48 h depending on the thickness of the pieces."
    },
    {
-    "titre": "Poach the cod",
-    "detail": "Cook the cod in gently simmering water (never boiling) for 10 minutes. Drain, flake the flesh while removing skin and bones."
+    "titre": "Poach",
+    "detail": "Poach the cod in water that simmers but never boils for 10 min, drain it, then flake it, carefully removing any skin and bones."
    },
    {
-    "titre": "Cook the potatoes",
-    "detail": "Steam the potatoes. Mash into a smooth purée."
+    "titre": "Cook",
+    "detail": "Steam the potatoes for 20 min until tender, then mash them into a smooth purée while still hot."
    },
    {
-    "titre": "Assemble the brandade",
-    "detail": "In a saucepan over low heat, mash the cod. Alternately incorporate warm olive oil and hot cream while stirring vigorously. Add the potato purée and minced garlic. Keep the HEAT LOW — otherwise it burns quickly."
+    "titre": "Whip",
+    "detail": "In a saucepan over low heat, mash the cod and work in the warm olive oil and hot cream alternately, stirring vigorously."
    },
    {
-    "titre": "Gratiné (optional)",
-    "detail": "Transfer to a baking dish. Sprinkle with breadcrumbs. Bake for 10 minutes to brown the top. Serve with croutons."
+    "titre": "Flavor",
+    "detail": "Add the chopped garlic and mashed potatoes, stir over strictly low heat into a silky brandade, and taste for seasoning."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Pour the brandade into a dish, sprinkle with breadcrumbs and bake at 200°C for 10 min to brown the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the golden brandade piping hot with garlic-rubbed croutons and a green salad."
    }
   ]
  },
  "tarteepinardfeta": {
   "nom": "Spinach and Feta Tart",
-  "description": "Spinach and feta tart — shortcrust pastry base, wilted spinach and creamy feta. A simple and delicious Mediterranean savory tart.",
+  "description": "Spinach and feta tart — a shortcrust base, tender spinach and creamy feta. A simple, delicious Mediterranean savory tart.",
   "etapes": [
    {
-    "titre": "Prepare the dough",
-    "detail": "Cut together flour and cold butter. Add egg and cold water. Form into a ball. Refrigerate for 20 minutes."
+    "titre": "Dough",
+    "detail": "Rub the flour and cold butter together with your fingertips, add the egg and a little cold water, form a ball and chill for 20 min."
    },
    {
-    "titre": "Prepare the spinach",
-    "detail": "Wilt the spinach with garlic in olive oil. Let cool. Drain."
+    "titre": "Spinach",
+    "detail": "Wilt the spinach with the chopped garlic in olive oil over high heat until the water evaporates, then let it cool and drain it well."
    },
    {
-    "titre": "Make the filling",
-    "detail": "Mix eggs, cream, spinach, crumbled feta, and nutmeg."
+    "titre": "Filling",
+    "detail": "Mix the egg, spinach, crumbled feta, chopped walnuts and grated nutmeg; season to taste."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 180°C on convection."
+   },
+   {
+    "titre": "Line",
+    "detail": "Roll out the dough, line the tin, prick the base with a fork and pour in the spinach filling."
    },
    {
     "titre": "Bake",
-    "detail": "Line the pan with the dough. Pour in the filling. Bake at 180°C."
+    "detail": "Bake for 35 min at 180°C until the filling is set and the crust is golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it cool for 10 min to make slicing easier, then serve with a green salad."
    }
   ]
  },
  "omeletteprovencale": {
   "nom": "Provençal Omelette",
-  "description": "Provençal omelette — beaten eggs topped with tomatoes, bell peppers, herbes de Provence, and goat cheese. Colorful, aromatic, and perfect for a quick meal.",
+  "description": "Provençal omelette — beaten eggs filled with tomatoes, peppers, herbes de Provence and goat cheese. Colorful, fragrant and perfect for a quick meal.",
   "etapes": [
    {
-    "titre": "Sauté the vegetables",
-    "detail": "Sauté bell pepper and cherry tomatoes in olive oil with herbes de Provence. Set aside."
+    "titre": "Prep",
+    "detail": "Dice the bell pepper, halve the tomatoes and crumble the goat cheese."
    },
    {
-    "titre": "Beat the eggs",
-    "detail": "Beat the eggs with salt, pepper, and a little water. Pour into the hot buttered skillet."
+    "titre": "Sauté",
+    "detail": "Sauté the pepper and tomatoes in olive oil over medium heat for 6 min with herbes de Provence, then set aside."
    },
    {
-    "titre": "Fill and fold",
-    "detail": "When the top begins to set, add the vegetables and crumbled goat cheese. Fold and serve."
+    "titre": "Beat",
+    "detail": "Beat the eggs vigorously with salt, pepper and a spoonful of water for a fluffy omelette."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour the eggs into the hot oiled pan and cook over medium heat, drawing the edges toward the center."
+   },
+   {
+    "titre": "Fill",
+    "detail": "When the top starts to set, scatter the vegetables and crumbled goat cheese over one half."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold the omelette in half, let it melt for 30 s, then slide it onto the plate and serve right away while still soft."
    }
   ]
  },
  "pastapomodoro": {
   "nom": "Pasta Pomodoro",
-  "description": "Pasta al pomodoro — the simplest and most flavorful dish in Italy. Fresh crushed tomatoes, basil, garlic, and olive oil over al dente spaghetti.",
+  "description": "Pasta al pomodoro fresco — the simplest and most flavorful dish in Italy. Crushed fresh tomatoes, basil, garlic and olive oil over al dente spaghetti.",
   "etapes": [
    {
-    "titre": "Cook the pasta",
-    "detail": "Cook the spaghetti al dente in plenty of salted boiling water. Reserve 1 cup of pasta cooking water. Cook for 1 minute less than the package directions. Taste to check for doneness."
+    "titre": "Prep",
+    "detail": "Finely chop the garlic, crush the tomatoes and pick the basil leaves; bring a large pot of water to a boil."
    },
    {
-    "titre": "Make the sauce",
-    "detail": "Brown the garlic in olive oil. Add crushed tomatoes, salt, and sugar. Cook for 10 minutes. Watch carefully — a uniform golden color means it's ready; any longer and it will burn."
+    "titre": "Cook pasta",
+    "detail": "Salt the water generously and drop in the pasta, cook 1 min less than the package and reserve a glass of cooking water."
    },
    {
-    "titre": "Finish the pasta",
-    "detail": "Drain the al dente pasta. Finish it in the sauce with a bit of the reserved cooking water. Toss well to coat. Cook for 1 minute less than the package directions. Taste to check for doneness."
+    "titre": "Flavor",
+    "detail": "Brown the garlic in olive oil over medium heat for 1 min until lightly golden and fragrant."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add the tomatoes, salt and a pinch of sugar, and let simmer for 10 min over low heat into a smooth, glossy sauce."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Drain the al dente pasta and toss it in the sauce for 1 min with a little cooking water to coat it well."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Off the heat, add the torn fresh basil and a drizzle of olive oil."
    },
    {
     "titre": "Serve",
-    "detail": "Add the fresh basil, torn by hand. Drizzle with olive oil. Serve immediately."
+    "detail": "Plate immediately in warm bowls to preserve the silkiness of the sauce."
    }
   ]
  },
  "risottocourgettechevre": {
   "nom": "Zucchini and Goat Cheese Risotto",
-  "description": "Zucchini and fresh goat cheese risotto — creamy and fragrant, with melting zucchini and the sweet-tart flavor of goat cheese. A springtime risotto.",
+  "description": "Risotto with zucchini and fresh goat cheese — creamy and fragrant, with tender zucchini and the tangy softness of goat cheese. A springtime risotto.",
   "etapes": [
    {
-    "titre": "Make the soffritto",
-    "detail": "Sweat shallot and garlic in butter. Add the arborio rice and toast for 2 minutes. The rice must become TRANSLUCENT at the edges before adding the liquid."
+    "titre": "Prep",
+    "detail": "Dice the zucchini small, chop the garlic and crumble the goat cheese; keep the broth simmering in a saucepan alongside."
    },
    {
-    "titre": "Deglaze and cook",
-    "detail": "Deglaze with white wine. Add hot broth one ladle at a time while stirring constantly. CHEF'S TIP: scrape up ALL the browned bits stuck to the bottom = intense flavor."
+    "titre": "Sweat",
+    "detail": "Melt a knob of butter over medium heat and sweat the garlic for 1 min without coloring until soft and fragrant."
    },
    {
-    "titre": "Add the zucchini",
-    "detail": "Halfway through cooking, add the sautéed zucchini. At the end of cooking, fold in crumbled goat cheese and cold butter. CHEF'S TIP: using a rubber spatula with folding motions to avoid breaking the air."
+    "titre": "Toast",
+    "detail": "Add the rice and stir for 2 min over medium heat until the grains turn translucent at the edges."
    },
    {
-    "titre": "Mantecatura",
-    "detail": "Off the heat, vigorously work in the butter and cheese. Rest for 2 minutes. Serve with fresh mint."
+    "titre": "Deglaze",
+    "detail": "Deglaze with the white wine, let it evaporate completely over high heat, then return to medium-low heat."
+   },
+   {
+    "titre": "Add broth",
+    "detail": "Add the hot broth one ladle at a time, stirring constantly for 18 min, without drowning the rice, until creamy and al dente."
+   },
+   {
+    "titre": "Zucchini",
+    "detail": "Halfway through cooking, stir in the diced zucchini so it stays slightly crisp by the end."
+   },
+   {
+    "titre": "Mantecare",
+    "detail": "Off the heat, add the crumbled goat cheese and a knob of cold butter, stir vigorously, cover and let rest for 2 min before serving nice and creamy."
    }
   ]
  },
  "currypoischiches": {
   "nom": "Chickpea Curry",
-  "description": "Tomato-based chickpea curry — rich, fragrant, and 100% vegan. Garam masala, crushed tomatoes, and coconut milk for an easy Indian-inspired dish.",
+  "description": "Tomato chickpea curry — rich, fragrant and 100% vegan. Garam masala, crushed tomatoes and coconut milk for a speedy Indian dish.",
   "etapes": [
    {
-    "titre": "Sauté the aromatics",
-    "detail": "Sauté onion and garlic. Add curry powder, garam masala, turmeric, and cumin. Toast for 1 minute."
+    "titre": "Prep",
+    "detail": "Slice the onions, chop the garlic, drain and rinse the chickpeas and crush the tomatoes."
    },
    {
-    "titre": "Add tomatoes and chickpeas",
-    "detail": "Add crushed tomatoes and drained chickpeas. Stir to combine."
+    "titre": "Sweat",
+    "detail": "Sweat the onions and garlic in a drizzle of oil over medium heat for 5 min until translucent."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Add the curry powder and toast the spices for 1 min, stirring, to release all their aromas without burning them."
+   },
+   {
+    "titre": "Tomatoes",
+    "detail": "Stir in the crushed tomatoes and chickpeas, mix and cook for 5 min over medium heat to reduce slightly."
    },
    {
     "titre": "Simmer",
-    "detail": "Pour in the coconut milk. Simmer over low heat. LOW HEAT is essential — otherwise it burns quickly."
+    "detail": "Pour in the coconut cream and milk, then let simmer over strictly low heat for 12 min, stirring occasionally."
    },
    {
-    "titre": "Finish",
-    "detail": "Stir in the fresh spinach. Garnish with cilantro. Serve with basmati rice or naan."
+    "titre": "Season",
+    "detail": "Season with salt and pepper and adjust the spice-to-acidity balance; the sauce should coat the spoon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot over basmati rice or with naan, sprinkled with fresh cilantro."
    }
   ]
  },
  "paellaVege": {
   "nom": "Vegetarian Paella",
-  "description": "Vegetarian paella — saffron bomba rice with artichokes, bell peppers, green beans, and tomatoes. All the flavors of Valencia without meat or fish.",
+  "description": "Vegetarian paella — saffron bomba rice with artichokes, peppers, green beans and tomatoes. All the flavors of Valencia, no meat or fish.",
   "etapes": [
    {
-    "titre": "Make the sofrito",
-    "detail": "Sauté the onion, red and green bell peppers, and garlic in olive oil. Add crushed tomatoes."
+    "titre": "Prep",
+    "detail": "Thinly slice the onion, garlic and peppers, crush the tomatoes and steep the saffron in a little hot water."
    },
    {
-    "titre": "Add the rice",
-    "detail": "Add the bomba rice. Stir to coat it. Pour in the hot broth with saffron and smoked paprika."
+    "titre": "Sofrito",
+    "detail": "Sauté the onion, peppers and garlic in olive oil over medium heat for 8 min, then add the tomatoes and let them cook down."
    },
    {
-    "titre": "Cook without stirring",
-    "detail": "Add the vegetables. Cook over medium heat WITHOUT stirring to form the socarrat."
+    "titre": "Toast",
+    "detail": "Add the rice and stir for 2 min to coat it well in the sofrito."
    },
    {
-    "titre": "Rest and serve",
-    "detail": "Cover with aluminum foil. Let rest for 5 minutes. Serve with lemon wedges. CHEF'S TIP: this resting time is ESSENTIAL for the final texture."
+    "titre": "Liquid",
+    "detail": "Pour in the hot saffron water and spread the rice evenly across the pan."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Scatter in the peas and cook over medium heat for 18 min without stirring to let the socarrat form at the bottom."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover with foil and let it rest for 5 min off the heat, an essential step for the final texture."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve straight from the pan with lemon wedges to squeeze over the top."
    }
   ]
  },
  "soufflecheese": {
   "nom": "Cheese Soufflé",
-  "description": "Cheese soufflé — light as a cloud, golden and puffed to perfection. The great classic of French cuisine that impresses every single time.",
+  "description": "Cheese soufflé — light as a cloud, golden and beautifully puffed. The great French classic that impresses every single time.",
   "etapes": [
    {
-    "titre": "Make the béchamel",
-    "detail": "Make a butter and flour roux. Pour in the hot milk. Cook until thickened. Add grated cheese, nutmeg, and egg yolks."
+    "titre": "Molds",
+    "detail": "Carefully butter and flour the molds, then preheat the oven to 190°C."
    },
    {
-    "titre": "Whip the egg whites",
-    "detail": "Whip the egg whites to stiff peaks with a pinch of salt."
+    "titre": "Roux",
+    "detail": "Make a blond roux with the butter and flour for 2 min over medium heat without letting it color."
    },
    {
-    "titre": "Fold together",
-    "detail": "Gently fold the egg whites into the béchamel in 3 additions, lifting the mixture. CHEF'S TIP: use a spatula with enveloping motions to avoid deflating the air."
+    "titre": "Béchamel",
+    "detail": "Whisk in the hot milk and cook until thickened, then season with salt and nutmeg."
    },
    {
-    "titre": "Bake WITHOUT opening",
-    "detail": "Pour into buttered and floured ramekins. Bake in a preheated oven WITHOUT opening the door."
+    "titre": "Bind",
+    "detail": "Off the heat, stir in the grated cheese and the egg yolks one at a time to get a smooth base."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the egg whites to very stiff peaks with a pinch of salt."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold in the whites in 3 additions with a spatula, lifting the mixture gently so you don't knock out the air."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Fill the molds three-quarters full and bake for 25 min at 190°C without ever opening the door, then serve immediately while puffed."
    }
   ]
  },
  "massamancurry": {
-  "nom": "Massaman Beef Curry",
-  "description": "Massaman Curry with beef — a rich and mild Thai curry simmered with peanuts, coconut milk, and spices. More fragrant than spicy.",
+  "nom": "Beef Massaman Curry",
+  "description": "Beef Massaman Curry — a rich, mild Thai curry simmered with peanuts, coconut milk and spices. More fragrant than fiery.",
   "etapes": [
    {
-    "titre": "Sear the beef",
-    "detail": "Cut the beef (chuck or brisket) into large chunks. Sear quickly in a Dutch oven with a little oil until browned. CHEF'S TIP: use a well-sharpened knife for clean cuts."
+    "titre": "Prep",
+    "detail": "Cut the beef (chuck or shin) into large cubes, thinly slice the onion and cut the potatoes into big chunks."
    },
    {
-    "titre": "Toast the curry paste",
-    "detail": "Add the Massaman curry paste and toast for 2 minutes until the aromas are released. Add the sliced onion."
+    "titre": "Sear",
+    "detail": "Sear the beef cubes hard in a little hot oil until deeply browned on all sides."
    },
    {
-    "titre": "Coconut milk",
-    "detail": "Pour in the coconut milk and stir to deglaze the pan. Add peanuts, tamarind, palm sugar, and fish sauce."
+    "titre": "Paste",
+    "detail": "Add the Massaman paste and cook for 2 min until fragrant, then stir in the onion."
    },
    {
-    "titre": "Simmer gently",
-    "detail": "Cover and simmer over very low heat for 1 hour. Add the potatoes cut into large chunks halfway through cooking. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Coconut Milk",
+    "detail": "Pour in the coconut milk, scraping up the browned bits, then add the peanuts, tamarind and palm sugar."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Half-cover and let it simmer over very low heat for 1h until the meat is meltingly tender."
+   },
+   {
+    "titre": "Potatoes",
+    "detail": "Halfway through cooking, add the potatoes and continue until they are tender and the sauce has reduced."
    },
    {
     "titre": "Serve",
-    "detail": "Serve hot with jasmine rice. Sprinkle with crushed peanuts and fresh cilantro."
+    "detail": "Serve piping hot over jasmine rice, topped with crushed peanuts and fresh cilantro."
    }
   ]
  },
  "veggieburger": {
-  "nom": "Vegetarian Burger",
-  "description": "Homemade vegetarian burger — chickpea and beet patty, topped with mashed avocado, tomato, lettuce, and yogurt sauce. Just as satisfying as the real thing!",
+  "nom": "Veggie Burger",
+  "description": "Homemade veggie burger — a chickpea and beet patty topped with mashed avocado, tomato, lettuce and a yogurt sauce. Just as indulgent as the real thing!",
   "etapes": [
    {
-    "titre": "Make the patties",
-    "detail": "Blend drained chickpeas, grated beets, onion, garlic, cumin, and salt. Form 4 patties. Refrigerate for 15 minutes."
+    "titre": "Prep",
+    "detail": "Drain the chickpeas, grate the beet, chop the onion and garlic; slice the tomato and onion for the topping."
    },
    {
-    "titre": "Cook the patties",
-    "detail": "Brown the patties in an oiled skillet for 4 minutes per side over medium heat. Watch carefully: uniform golden color means it's ready, any longer and it will burn."
+    "titre": "Patties",
+    "detail": "Blend the chickpeas, beet, onion, garlic, cumin and salt into a coarse paste, form 4 patties and chill for 15 min so they hold together."
    },
    {
-    "titre": "Prepare the toppings",
-    "detail": "Mash the avocado with lemon and salt. Prepare tomato, lettuce, and yogurt-garlic sauce."
+    "titre": "Topping",
+    "detail": "Mash the avocado with the lemon juice and salt, then make a garlic-yogurt sauce."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Sear the patties in an oiled pan for 4 min per side over medium heat until an even golden crust forms."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Toast the buns cut-side down on the hot grill for a crisp surface."
    },
    {
     "titre": "Assemble",
-    "detail": "Toast the buns. Top with patty, avocado, tomato, lettuce, and sauce. Preheat the grill for 5 minutes. Very hot surface for beautiful grill marks."
+    "detail": "Spread sauce on the base, add the patty, mashed avocado, tomato, onion and lettuce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Close the burger and serve right away with fries or fresh veggies."
    }
   ]
  },
  "dakgalbi": {
   "nom": "Dak Galbi (Korean Chicken)",
-  "description": "Dak Galbi — Korean stir-fried chicken with gochujang, crispy vegetables, and rice cakes. A comforting and spicy wok dish.",
+  "description": "Dak Galbi — Korean stir-fried chicken with gochujang, crunchy vegetables and rice cakes. A comforting, spicy skillet.",
   "etapes": [
    {
-    "titre": "Marinate the chicken",
-    "detail": "Cut the chicken into pieces. Marinate for 15 minutes with gochujang, soy sauce, minced garlic, ginger, sugar, and sesame oil. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Prep",
+    "detail": "Cut the chicken into pieces and shred the cabbage, onion and carrot into thin strips."
    },
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Julienne the cabbage, onion, and carrot into thin strips. Julienne the scallions."
+    "titre": "Marinate",
+    "detail": "Marinate the chicken for 15 min with gochujang, soy sauce, garlic, ginger, sugar and sesame oil."
    },
    {
-    "titre": "Cook in the wok",
-    "detail": "In a large, very hot skillet, sear the marinated chicken for 5 minutes. Add all the vegetables and the tteok (rice cakes). PRO TIP: skillet must be VERY hot before searing, otherwise the meat steams instead of browning."
+    "titre": "Sear",
+    "detail": "In a large, very hot skillet, sear the marinated chicken for 5 min so it browns rather than steams."
    },
    {
-    "titre": "Stir-fry together",
-    "detail": "Stir regularly. The chicken should caramelize and the vegetables should stay slightly crispy. CHEF'S TIP: watch for an amber color, not darker or it will taste bitter."
+    "titre": "Vegetables",
+    "detail": "Add the cabbage, onion, carrot and tteok, then stir-fry, tossing regularly."
    },
    {
-    "titre": "Finishing touch",
-    "detail": "Sprinkle with sesame seeds and scallions. Serve directly in the skillet at the center of the table."
+    "titre": "Caramelize",
+    "detail": "Keep cooking until the chicken caramelizes to an amber glaze and the vegetables are still crunchy."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust the seasoning with soy sauce or gochujang to the intensity you want."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with sesame seeds and scallions, and serve right from the pan in the center of the table."
    }
   ]
  },
@@ -19625,53 +24883,69 @@ window.RECETTES_EN = {
  },
  "jollofrice": {
   "nom": "Nigerian Jollof Rice",
-  "description": "Nigerian Jollof Rice — long-grain rice simmered in a fragrant tomato sauce with red bell pepper, scotch bonnet, and West African spices.",
+  "description": "Nigerian Jollof Rice — long-grain rice simmered in a tomato sauce fragrant with red pepper, scotch bonnet and West African spices.",
   "etapes": [
    {
-    "titre": "Base Sauce",
-    "detail": "Blend tomatoes, red bell pepper, onion, and scotch bonnet (use restraint!). Reduce the sauce over medium heat for 15 minutes. CHEF'S TIP: the sauce should coat the back of a spoon = proper consistency."
+    "titre": "Blend",
+    "detail": "Blend the tomatoes, red pepper, onion and scotch bonnet (use sparingly) into a smooth purée."
    },
    {
-    "titre": "Sear the Chicken",
-    "detail": "Sear the seasoned chicken pieces (curry, thyme, bouillon) until browned. PRO TIP: make sure the pan is VERY hot before searing, otherwise the meat steams instead of browning."
+    "titre": "Sear",
+    "detail": "In a very hot pot, sear the seasoned chicken pieces until nicely browned, then set them aside."
    },
    {
-    "titre": "Tomato Concentrate",
-    "detail": "Add the tomato concentrate to the chicken and cook for 2 minutes. Pour in the blended sauce."
+    "titre": "Tomato Paste",
+    "detail": "Cook the tomato paste in the oil for 2 min to take the edge off its acidity."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Pour in the blended purée and let it reduce over medium heat for 15 min until it coats the spoon."
    },
    {
     "titre": "Rice",
-    "detail": "Add the rinsed rice, bay leaf, and bouillon. Cover and cook over low heat for 25-30 minutes without stirring. KEEP THE HEAT LOW — otherwise it burns quickly."
+    "detail": "Add the rinsed rice, the bay leaf, the chicken and the water, stir, then cover."
    },
    {
-    "titre": "The Party-Jollof",
-    "detail": "Let it cook until a thin crust forms on the bottom (the African \"socarrat\") — that's the signature!"
+    "titre": "Simmer",
+    "detail": "Cook over strictly low heat for 25 to 30 min without stirring, until all the liquid is absorbed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let a thin crust form at the bottom for that signature smoky taste, then serve piping hot."
    }
   ]
  },
  "ropavieja": {
   "nom": "Cuban Ropa Vieja",
-  "description": "Cuban Ropa Vieja — shredded beef simmered with peppers, onions and tomato, seasoned with cumin and oregano. The national dish of Cuba.",
+  "description": "Cuban Ropa Vieja — shredded beef simmered with peppers, onions and tomato, scented with cumin and oregano. Cuba's national dish.",
   "etapes": [
    {
-    "titre": "Cooking the beef",
-    "detail": "Cook the flank or chuck steak in broth (bay leaf, onion, garlic) for 2 hours. The meat should shred easily."
+    "titre": "Cook",
+    "detail": "Cook the beef (flank or chuck) in a broth with onion and garlic for 2h, until it shreds easily."
    },
    {
     "titre": "Sofrito",
-    "detail": "Meanwhile, sauté onion, red and green bell peppers in strips, and garlic in olive oil for 10 minutes."
+    "detail": "Sauté the onion, the sliced peppers and the garlic in olive oil for 10 min over medium heat."
    },
    {
-    "titre": "Add tomato",
-    "detail": "Add crushed tomatoes, cumin, oregano, smoked paprika, and white wine. Simmer for 10 minutes. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Tomato",
+    "detail": "Add the crushed tomatoes, the cumin and the white wine, then simmer for 10 min with the lid slightly ajar."
    },
    {
-    "titre": "Shred the meat",
-    "detail": "Shred the cooled meat with a fork. Add to the sauce. Simmer for another 20 minutes. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Shred",
+    "detail": "Shred the slightly cooled meat with a fork into even strands."
    },
    {
-    "titre": "Finishing touches",
-    "detail": "Add green olives and capers. Serve with white rice and fried plantain bananas."
+    "titre": "Simmer",
+    "detail": "Stir the shredded meat into the sauce and let it simmer for 20 min over low heat so it soaks up the flavor."
+   },
+   {
+    "titre": "Olives",
+    "detail": "Add the green olives at the end of cooking and adjust the seasoning with salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with white rice and, if you like, fried plantains."
    }
   ]
  },
@@ -19707,149 +24981,201 @@ window.RECETTES_EN = {
  },
  "bobun": {
   "nom": "Vietnamese Bo Bún",
-  "description": "Vietnamese Bo Bún — rice vermicelli, stir-fried lemongrass beef, fresh vegetables, spring rolls, and nuoc cham. Fresh, balanced, and absolutely perfect.",
+  "description": "Vietnamese Bo Bún — rice vermicelli, lemongrass-seared beef, fresh vegetables, spring rolls and nuoc cham. Fresh, balanced, perfect.",
   "etapes": [
    {
-    "titre": "Marinate the beef",
-    "detail": "Cut the beef into thin slices. Marinate with minced lemongrass, garlic, soy sauce, sugar, and sesame oil. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Slice",
+    "detail": "Slice the beef into thin strips against the grain, and finely chop the lemongrass and garlic."
    },
    {
-    "titre": "Cook the vermicelli",
-    "detail": "Drop the rice vermicelli into boiling water for 3 minutes. Drain and rinse with cold water. Rinse thoroughly with cold water."
+    "titre": "Marinate",
+    "detail": "Toss the beef with the lemongrass, garlic, a drizzle of oil and a little sugar, then marinate for 20 min in the fridge."
    },
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Slice the lettuce, julienne the carrots, and cut the cucumber into matchsticks. Chiffonade the mint and cilantro."
+    "titre": "Vermicelli",
+    "detail": "Drop the rice vermicelli into boiling water for 3 min, drain, then rinse well under cold water to stop the cooking."
    },
    {
-    "titre": "Sear the beef",
-    "detail": "Cook the beef over very high heat for 2 minutes per side in a wok. Set aside."
+    "titre": "Vegetables",
+    "detail": "Thinly slice the lettuce, grate the carrot and cut the cucumber into matchsticks, then add the crunchy bean sprouts."
    },
    {
-    "titre": "Assemble the bowls",
-    "detail": "Arrange the vermicelli, vegetables, and beef in bowls. Drizzle with nuoc cham (fish sauce, lime juice, sugar, garlic, and chilies). Sprinkle with peanuts."
+    "titre": "Nuoc Cham",
+    "detail": "Make the sauce by mixing the fish sauce, lemon juice, sugar and minced garlic until the sugar dissolves."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the marinated beef in a wok over very high heat for 2 min per side so it caramelizes without drying out."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Layer the vermicelli in the bottom of the bowl, add the fresh vegetables then the hot beef, drizzle with nuoc cham and serve right away."
    }
   ]
  },
  "souskaicrevettes": {
   "nom": "Shrimp Souskaï",
-  "description": "Shrimp Souskaï — a Caribbean specialty. Shrimp marinated in lime juice, chili pepper, garlic and cilantro. Fresh and vibrant.",
+  "description": "Shrimp Souskaï — a Caribbean specialty. Shrimp marinated in lime, chili, garlic and cilantro. Fresh and zingy.",
   "etapes": [
    {
-    "titre": "Cook the shrimp",
-    "detail": "Plunge the peeled shrimp into boiling salted water for 2 minutes. Drain and cool."
+    "titre": "Cook",
+    "detail": "Drop the peeled shrimp into boiling salted water for 2 min, then drain and let cool."
    },
    {
     "titre": "Marinade",
-    "detail": "Prepare the marinade: lime juice, minced garlic, Caribbean chili pepper (use restraint!), grated ginger, cilantro, oil."
+    "detail": "Mix the lime juice, minced garlic, Caribbean chili (use sparingly) and grated ginger."
    },
    {
-    "titre": "Marinate",
-    "detail": "Pour the marinade over the cooled shrimp. Add thinly sliced scallions. Refrigerate for at least 1 hour."
+    "titre": "Flavor",
+    "detail": "Add the chopped cilantro, the sliced onion and a drizzle of oil to the marinade and whisk."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the marinade over the cooled shrimp and toss gently to coat them well."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Marinate in the fridge for at least 1h so the shrimp soak up the lime and aromatics."
    },
    {
     "titre": "Serve",
-    "detail": "Serve chilled as an appetizer with accras or as a starter on salad greens. Perfect with a ti-punch!"
+    "detail": "Serve cold as an appetizer on cocktail picks or as a starter on lettuce leaves, ideal with a ti-punch."
    }
   ]
  },
  "galbicoreen": {
   "nom": "Galbi (Korean BBQ)",
-  "description": "Galbi — beef short ribs marinated in sweet soy, garlic, and Asian pear. The quintessential Korean barbecue classic.",
+  "description": "Galbi — beef short ribs marinated in sweet soy, garlic and Asian pear. The great classic of Korean barbecue.",
   "etapes": [
    {
-    "titre": "Prepare the marinade",
-    "detail": "Blend the Asian pear with garlic, ginger, and onion. Add soy sauce, brown sugar, sesame oil, and mirin rice wine."
+    "titre": "Blend",
+    "detail": "Blend the pear with the garlic, ginger and onion to make a smooth marinade base."
    },
    {
-    "titre": "Marinate the short ribs",
-    "detail": "Pour the marinade over the beef short ribs. Refrigerate for at least 4 hours, ideally overnight."
+    "titre": "Marinade",
+    "detail": "Add the soy sauce, brown sugar, sesame oil and rice vinegar, then mix well."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the beef short ribs in the marinade and chill for at least 4h, ideally overnight."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Take out the meat and drain off the excess marinade so it doesn't burn on the heat."
    },
    {
     "titre": "Grill",
-    "detail": "Cook over high heat on a grill or griddle for 3-4 minutes per side. The marinade should caramelize. CHEF'S TIP: Use high heat to sear and caramelize the juices."
+    "detail": "Cook the ribs over high heat on a grill or griddle for 3 to 4 min per side until the juices caramelize."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the meat rest for 2 min off the heat so the juices redistribute before serving."
    },
    {
     "titre": "Serve",
-    "detail": "Serve with white rice, kimchi, and lettuce leaves for wrapping. Sprinkle with sesame seeds and scallions."
+    "detail": "Sprinkle with sesame and scallions, and serve with white rice and lettuce leaves for wrapping."
    }
   ]
  },
  "oxtailcaribeen": {
   "nom": "Caribbean Oxtail",
-  "description": "Caribbean oxtail — simmered for 3 hours with Scotch bonnet pepper, thyme, and red kidney beans. An iconic dish from Jamaica.",
+  "description": "Caribbean oxtail — simmered for 3h with scotch bonnet pepper, thyme and red beans. An iconic dish of Jamaica.",
   "etapes": [
    {
-    "titre": "Sear the oxtail",
-    "detail": "Sear the oxtail pieces seasoned with salt, pepper, and chili in a Dutch oven with oil. PRO TIP: use a VERY hot pan before searing, otherwise the meat steams instead of browning."
+    "titre": "Sear",
+    "detail": "Sear the seasoned oxtail pieces (salt, pepper, chili) in a very hot pot with the oil until nicely browned."
    },
    {
-    "titre": "Caribbean sofrito",
-    "detail": "Add onion, garlic, Scotch bonnet (use sparingly!), and fresh thyme. Sauté for 5 minutes."
+    "titre": "Sofrito",
+    "detail": "Add the onion, garlic, scotch bonnet (sparingly) and fresh thyme, then sauté for 5 min."
    },
    {
-    "titre": "Add liquid",
-    "detail": "Add crushed tomatoes, beef broth, Worcestershire sauce, and brown sugar. Stir together."
+    "titre": "Liquid",
+    "detail": "Stir in the crushed tomatoes, a little beef broth and the sugar, and mix well."
    },
    {
-    "titre": "Simmer low and slow",
-    "detail": "Cover and simmer over very low heat for 2 hours and 30 minutes. The meat should become tender and fall away from the bone. Use LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Simmer",
+    "detail": "Cover and let it simmer over very low heat for 2h30 until the meat falls off the bone."
    },
    {
-    "titre": "Red kidney beans",
-    "detail": "Add the cooked red kidney beans 30 minutes before the end. Serve with rice and peas."
+    "titre": "Beans",
+    "detail": "Add the red beans 30 min before the end so they soak up the sauce."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste the sauce, adjust the salt, pepper and chili, and let it reduce uncovered if needed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with rice and beans, Jamaican \"rice and peas\" style."
    }
   ]
  },
  "paneertikkamasala": {
   "nom": "Paneer Tikka Masala",
-  "description": "Paneer Tikka Masala — the vegetarian version of tikka masala, with grilled paneer (Indian cheese) in a creamy tomato sauce with aromatic spices.",
+  "description": "Paneer Tikka Masala — the vegetarian take on tikka masala, with grilled paneer (Indian cheese) in a creamy, spiced tomato sauce.",
   "etapes": [
    {
-    "titre": "Marinate the paneer",
-    "detail": "Cut the paneer into large cubes. Marinate for 30 minutes in yogurt + garam masala + ginger + garlic + turmeric + paprika. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Marinate",
+    "detail": "Cut the paneer into large cubes and marinate them for 30 min in the yogurt with garam masala, ginger and garlic."
    },
    {
-    "titre": "Grill the paneer",
-    "detail": "Grill the paneer cubes in a skillet or on the grill for 3 minutes per side. Set aside. Preheat the grill for 5 minutes. The surface should be very hot for beautiful grill marks."
+    "titre": "Grill",
+    "detail": "Grill the paneer cubes in a pan for 3 min per side until nicely browned, then set aside."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté the onion, garlic and ginger in a little fat until golden."
    },
    {
     "titre": "Sauce",
-    "detail": "Sauté onion, garlic, and ginger. Add puréed tomatoes and spices (cumin, coriander, garam masala, ground fenugreek)."
+    "detail": "Add the blended tomatoes and the spices (garam masala, fenugreek) and let it simmer for 15 min over medium heat."
    },
    {
-    "titre": "Creamy",
-    "detail": "Simmer for 15 minutes, then add heavy cream. Season with salt and a touch of sugar. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Cream",
+    "detail": "Stir in the cream, season with salt and a touch of sugar to soften and bind the sauce."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Slip the grilled paneer into the sauce and warm through for 5 min so it soaks up the flavors."
    },
    {
     "titre": "Serve",
-    "detail": "Add the grilled paneer to the sauce. Warm through for 5 minutes. Serve with naan and basmati rice."
+    "detail": "Serve piping hot with soft naan and basmati rice."
    }
   ]
  },
  "nasigoreng": {
   "nom": "Nasi Goreng",
-  "description": "Nasi Goreng — Indonesian stir-fried rice with shrimp, chicken, and fried egg. Perfumed with kecap manis (sweet soy sauce) and sambal.",
+  "description": "Nasi Goreng — Indonesian fried rice with shrimp, chicken and a fried egg. Fragrant with kecap manis (sweet soy) and sambal.",
   "etapes": [
    {
-    "titre": "Fried Eggs",
-    "detail": "Cook the eggs in a hot skillet, keeping the yolk runny. Set aside."
+    "titre": "Prep",
+    "detail": "Dice the chicken, peel the shrimp, mince the garlic and thinly slice the onion and scallion."
    },
    {
-    "titre": "Sear Chicken and Shrimp",
-    "detail": "In a very hot wok, stir-fry the diced chicken then add the peeled shrimp."
+    "titre": "Eggs",
+    "detail": "Fry the eggs in a hot pan, keeping the yolk runny, then set them aside."
+   },
+   {
+    "titre": "Sear",
+    "detail": "In a very hot wok, stir-fry the chicken for 4 min then add the shrimp until they turn pink."
    },
    {
     "titre": "Aromatics",
-    "detail": "Add minced garlic, sambal, and onion. Sauté for 1 minute."
+    "detail": "Add the garlic, sambal and onion, and sauté for 1 min to release the aromas."
    },
    {
-    "titre": "Stir-Fried Rice",
-    "detail": "Add the cooked cold rice. Mix well to break it up. Pour in the kecap manis (sweet soy sauce). Cook for 5 minutes, stirring constantly."
+    "titre": "Rice",
+    "detail": "Add the cold cooked rice, break it up well in the wok, then coat with kecap manis and stir-fry for 5 min."
    },
    {
-    "titre": "Plating",
-    "detail": "Serve the rice in a molded bowl, place the fried egg on top, and sprinkle with scallions and sliced cucumber."
+    "titre": "Season",
+    "detail": "Taste and adjust with sambal and sweet soy to the intensity you want."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Mold the rice in a bowl, top with the fried egg and sprinkle with scallion before serving."
    }
   ]
  },
@@ -19948,28 +25274,36 @@ window.RECETTES_EN = {
   ]
  },
  "pouletyassa": {
-  "nom": "Chicken Yassa",
-  "description": "Chicken Yassa — a Senegalese specialty. Chicken marinated in lemon and mustard, simmered with a generous onion compote. Tangy and golden.",
+  "nom": "Poulet Yassa",
+  "description": "Poulet Yassa — a Senegalese specialty. Chicken marinated in lemon and mustard, then simmered with a generous bed of melted onions. Tangy and golden.",
   "etapes": [
    {
     "titre": "Marinade",
-    "detail": "Mix lemon juice, mustard, garlic, chili, and oil. Marinate the chicken (thighs or drumsticks) for a minimum of 4 hours."
+    "detail": "Mix the lemon juice, mustard, garlic, chili, and oil into a bold, zesty marinade."
    },
    {
-    "titre": "Sear the chicken",
-    "detail": "Drain the chicken. Sear it in a pan or under the broiler for 15 minutes until browned. Preheat the broiler for 5 minutes. The surface should be very hot for beautiful marks."
+    "titre": "Marinate",
+    "detail": "Coat the chicken pieces in the marinade and let them rest in the fridge for at least 4 hours."
    },
    {
-    "titre": "Onion compote",
-    "detail": "Slice plenty of onions (the key to this recipe!). Cook them over low heat for 25 minutes until golden brown. On LOW HEAT strictly — otherwise they burn quickly."
+    "titre": "Grill",
+    "detail": "Drain the chicken and grill it in a skillet or in the oven for 15 min until deeply golden."
    },
    {
-    "titre": "Marinating in the onions",
-    "detail": "Add the remaining marinade to the onions. Simmer for 5 minutes. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Onions",
+    "detail": "Thinly slice a large amount of onions and cook them down over low heat for 25 min until soft and golden."
    },
    {
-    "titre": "Bring together",
-    "detail": "Return the chicken to the onions. Cover and finish cooking for 20 minutes. Serve with white rice."
+    "titre": "Deglaze",
+    "detail": "Pour the remaining marinade and the bay leaf over the onions and let simmer 5 min, partially covered."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the chicken to the onions, cover, and continue cooking for 20 min over low heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the chicken topped with its onion compote alongside piping-hot white rice."
    }
   ]
  },
@@ -27553,49 +32887,69 @@ window.RECETTES_EN = {
  },
  "saladecesar": {
   "nom": "Caesar Salad",
-  "description": "Caesar salad with its creamy garlic sauce, Parmesan, golden croutons, and grilled chicken.",
+  "description": "Classic Caesar salad with its creamy garlic dressing, parmesan, golden croutons and grilled chicken.",
   "etapes": [
    {
-    "titre": "Make the croutons",
-    "detail": "Cut the bread into cubes. Toast them in a skillet with a drizzle of olive oil and a crushed garlic clove. Set aside. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Croutons",
+    "detail": "Cut the bread into cubes and toast them in a pan with a drizzle of oil and a crushed garlic clove, then set aside."
    },
    {
-    "titre": "Grill the chicken",
-    "detail": "Season with salt and pepper and grill the chicken cutlets in a skillet or in the oven. Let rest for 5 minutes then slice. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Chicken",
+    "detail": "Season the chicken cutlets with salt and pepper and grill 5 min per side, let rest 5 min, then slice."
    },
    {
-    "titre": "Prepare the Caesar sauce",
-    "detail": "Mix together: 2 egg yolks, 1 tbsp mustard, lemon juice, pressed garlic, 4 tbsp olive oil, grated Parmesan, salt, and pepper. Whisk until emulsified."
+    "titre": "Dressing",
+    "detail": "Whisk the egg yolks with the mustard, lemon juice and pressed garlic until emulsified."
+   },
+   {
+    "titre": "Emulsion",
+    "detail": "Pour in the oil in a thin stream while whisking constantly, then add the grated parmesan, salt and pepper for a creamy dressing."
+   },
+   {
+    "titre": "Lettuce",
+    "detail": "Wash, spin-dry and tear the romaine, then gently toss it with the Caesar dressing."
    },
    {
     "titre": "Plate",
-    "detail": "Wash and tear the romaine lettuce. Toss it with the Caesar sauce. Arrange the chicken slices, croutons, and Parmesan shavings on top."
+    "detail": "Divide the lettuce among the plates, then add the sliced chicken, croutons and parmesan shavings."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately so the croutons stay crunchy and the lettuce crisp and fresh."
    }
   ]
  },
  "saladeniçoise": {
   "nom": "Salade niçoise",
-  "description": "Authentic Salade niçoise — tomatoes, tuna, anchovies, olives and hard-boiled eggs. Sunshine of the Mediterranean on a plate.",
+  "description": "The authentic salade niçoise — tomatoes, tuna, anchovies, olives and hard-boiled eggs. A plate of Mediterranean sunshine.",
   "etapes": [
    {
-    "titre": "Cook the hard-boiled eggs",
-    "detail": "Plunge the eggs into boiling water. Cool under cold running water, peel and cut into quarters. CHEF'S TIP: a sharp knife for clean, neat cuts."
+    "titre": "Boiled Eggs",
+    "detail": "Drop the eggs into boiling water for 9 min, cool them under cold water, peel and cut into wedges."
    },
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Wash and cut the tomatoes into quarters. Slice the red onion into thin rings. Wash and dry the lettuce. CHEF'S TIP: a sharp knife for clean, neat cuts."
+    "titre": "Vegetables",
+    "detail": "Wash and cut the tomatoes into wedges, slice the onion into thin rings and spin-dry the greens."
    },
    {
-    "titre": "Prepare the tuna",
-    "detail": "Drain the tuna and flake it roughly. Rinse the anchovy fillets. Rinse thoroughly under cold running water."
+    "titre": "Tuna",
+    "detail": "Drain the tuna and flake it coarsely, then rinse the anchovy fillets under cold water."
    },
    {
-    "titre": "Arrange the salad",
-    "detail": "Arrange the lettuce in a dish. Add the tomatoes, onion, olives, tuna, anchovies and egg quarters. Do not mix — present each ingredient separately."
+    "titre": "Olives",
+    "detail": "Prepare the black olives and gather all the components within reach for plating."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the greens in the bottom of the dish, then lay out tomatoes, onion, olives, tuna, anchovies and eggs separately, without mixing."
    },
    {
     "titre": "Season",
-    "detail": "Drizzle generously with olive oil, salt and pepper. Sprinkle with fresh chopped basil. Serve immediately."
+    "detail": "Drizzle generously with olive oil, season with salt and pepper and scatter with chopped fresh basil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away at room temperature to make the most of the ingredients' freshness."
    }
   ]
  },
@@ -27631,347 +32985,491 @@ window.RECETTES_EN = {
  },
  "saladegreque": {
   "nom": "Greek Salad",
-  "description": "Fresh and colorful Greek salad — tomatoes, cucumber, feta, olives, and red onion. Perfect for summer.",
+  "description": "A fresh, colorful Greek salad — tomatoes, cucumber, feta, olives and red onion. Perfect in summer.",
   "etapes": [
    {
-    "titre": "Careful Preparation",
-    "detail": "Rinse the leafy vegetables thoroughly. Dry well (water dilutes the vinaigrette). CHEF'S TIP: Cut at the last moment to preserve freshness."
+    "titre": "Wash",
+    "detail": "Thoroughly wash the tomatoes, cucumber and onion, then pat them dry."
    },
    {
-    "titre": "Cut the Vegetables",
-    "detail": "Cut tomatoes into quarters, cucumber into half-rounds, and red onion into thin slices. Arrange in a salad bowl. CHEF'S TIP: Use a sharp knife for clean, neat cuts."
+    "titre": "Cut",
+    "detail": "Cut the tomatoes into wedges, the cucumber into half-moons and the red onion into thin slivers."
    },
    {
-    "titre": "Add the Olives",
-    "detail": "Add Kalamata black olives. Crumble or cut the feta into cubes and arrange on top. CHEF'S TIP: Use a sharp knife for clean, neat cuts."
+    "titre": "Arrange",
+    "detail": "Arrange the vegetables in a large bowl and add the black Kalamata olives."
+   },
+   {
+    "titre": "Feta",
+    "detail": "Set a whole block of feta on top, or cut it into large cubes if you prefer."
    },
    {
     "titre": "Season",
-    "detail": "Drizzle generously with olive oil. Sprinkle with dried oregano. Salt lightly (the feta is already salty), and pepper. Serve immediately."
+    "detail": "Drizzle generously with olive oil, sprinkle with dried oregano, season lightly with salt and add pepper."
    },
    {
-    "titre": "Immediate Service",
-    "detail": "Toss gently with the vinaigrette JUST before serving (otherwise the leaves will wilt). Serve IMMEDIATELY at room temperature."
+    "titre": "Serve",
+    "detail": "Toss gently just before serving and present at room temperature."
    }
   ]
  },
  "saladerizmediterranee": {
   "nom": "Mediterranean Rice Salad",
-  "description": "A colorful Mediterranean rice salad with grilled vegetables, olives, and fresh herbs.",
+  "description": "A colorful Mediterranean rice salad with grilled vegetables, olives and fresh herbs.",
   "etapes": [
    {
-    "titre": "Cook the rice",
-    "detail": "Cook the rice in salted boiling water. Drain and rinse with cold water. Let cool completely. Rinse thoroughly with cold water."
+    "titre": "Cook Rice",
+    "detail": "Cook the rice for 12 min in a large pot of boiling salted water, then drain and rinse it thoroughly under cold water to stop the cooking and cool it completely."
    },
    {
-    "titre": "Grill the vegetables",
-    "detail": "Cut bell pepper and zucchini into dice. Sauté in a skillet with a drizzle of olive oil until lightly golden. Let cool. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Chop",
+    "detail": "Cut the bell pepper and zucchini into small even dice, cut the tomatoes into wedges or dice and pit the olives if needed."
    },
    {
-    "titre": "Assemble",
-    "detail": "Mix the cold rice with the cooled grilled vegetables, cherry tomatoes cut in half, and olives."
+    "titre": "Grill Vegetables",
+    "detail": "Sauté the diced bell pepper and zucchini for 6 to 8 min over high heat in a drizzle of olive oil until lightly colored, then let cool off the heat."
+   },
+   {
+    "titre": "Combine",
+    "detail": "In a large bowl, gently toss the cold rice with the cooled grilled vegetables, the tomatoes and the olives."
    },
    {
     "titre": "Season",
-    "detail": "Drizzle with olive oil, lemon juice, salt, and pepper. Add fresh basil and parsley, finely chopped. Refrigerate before serving."
+    "detail": "Drizzle with olive oil and lemon juice, season with salt and pepper, then toss to coat everything well."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and chill for at least 20 min so the flavors develop and the salad is nicely cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning, scatter with chopped fresh basil and serve well chilled as a starter or a summer side."
    }
   ]
  },
  "saladepatasthon": {
   "nom": "Tuna Pasta Salad",
-  "description": "A fresh and satisfying tuna pasta salad — perfect for a quick summer lunch.",
+  "description": "A fresh, filling tuna pasta salad — perfect for a quick summer lunch.",
   "etapes": [
    {
-    "titre": "Cook the pasta",
-    "detail": "Cook short pasta (fusilli, farfalle, penne) in salted boiling water. Drain and rinse with cold water to stop the cooking. Let cool. Rinse abundantly with cold water."
+    "titre": "Cook Pasta",
+    "detail": "Cook the short pasta in boiling salted water, drain and rinse under cold water to stop the cooking."
    },
    {
-    "titre": "Prepare the tuna",
-    "detail": "Drain the tuna and flake it. Cut the cherry tomatoes in half, mince the onion. CHEF'S TIP: use a well-sharpened knife for clean cuts."
+    "titre": "Tuna",
+    "detail": "Drain the tuna and flake it coarsely into a salad bowl."
    },
    {
-    "titre": "Assemble",
-    "detail": "Toss the cold pasta with the tuna, tomatoes, corn, and onion. Add olives and basil if desired."
+    "titre": "Vegetables",
+    "detail": "Halve the cherry tomatoes and finely slice the onion."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Toss the cold pasta with the tuna, tomatoes, drained corn and onion."
    },
    {
     "titre": "Season",
-    "detail": "Season with olive oil, cider vinegar, salt, and pepper. Toss well. Refrigerate for 30 minutes before serving. Season generously with salt and pepper. Taste and adjust ALWAYS."
+    "detail": "Season with olive oil, salt and pepper, then toss well and taste to adjust."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill for 30 min before serving so the flavors develop and the salad is nicely cold."
    }
   ]
  },
  "tabulemaison": {
   "nom": "Homemade Tabbouleh",
-  "description": "A fresh and fragrant homemade tabbouleh — semolina, tomatoes, cucumber, mint, and lemon. A summer classic.",
+  "description": "A fresh, fragrant homemade tabbouleh — couscous, tomatoes, cucumber, mint and lemon. The summer classic.",
   "etapes": [
    {
-    "titre": "Hydrate the semolina",
-    "detail": "Pour the semolina into a salad bowl. Add the same amount of boiling salted water. Cover and let swell for 5 minutes. Fluff with a fork and let cool."
+    "titre": "Hydrate",
+    "detail": "Pour the couscous into a bowl, cover with an equal volume of boiling salted water, cover and let swell for 5 min."
    },
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Cut the tomatoes and seeded cucumber into very small dice. Finely mince the flat-leaf parsley and mint. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Fluff",
+    "detail": "Fluff the swollen couscous with a fork to separate the grains, then let it cool completely to room temperature."
+   },
+   {
+    "titre": "Dice",
+    "detail": "Cut the tomatoes and seeded cucumber into very small dice, and finely chop the flat-leaf parsley and mint."
    },
    {
     "titre": "Mix",
-    "detail": "Add the vegetables and herbs to the cooled semolina. Mix well."
+    "detail": "Add the vegetables and herbs to the cooled couscous and toss gently to distribute everything."
    },
    {
-    "titre": "Season and rest",
-    "detail": "Drizzle with lemon juice and olive oil. Season with salt and pepper. Mix and refrigerate. The longer the tabbouleh sits, the more flavorful it becomes!"
+    "titre": "Season",
+    "detail": "Drizzle generously with lemon juice and olive oil, season with salt and pepper and toss one last time."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and chill for at least 1 hr, or several hours, so the couscous soaks up the flavors and lemon juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Taste, adjust the lemon and salt if needed, and serve well chilled with a mint leaf to garnish."
    }
   ]
  },
  "saladeavocatcrevettes": {
   "nom": "Avocado Shrimp Salad",
-  "description": "A fresh and elegant salad — creamy avocado, pink shrimp, and cocktail sauce. Perfect as an appetizer.",
+  "description": "A fresh, elegant salad — creamy avocado, pink shrimp and cocktail sauce. Perfect as a starter.",
   "etapes": [
    {
-    "titre": "Prepare the avocados",
-    "detail": "Cut the avocados in half and remove the pit. Slice or dice them. Immediately drizzle with lemon juice to prevent oxidation. CHEF'S TIP: Use a sharp knife for clean cuts."
+    "titre": "Avocados",
+    "detail": "Halve the avocados, remove the pit, cut them into slices or dice, and immediately drizzle with lemon juice to prevent browning."
    },
    {
-    "titre": "Prepare the shrimp",
-    "detail": "If needed, peel the cooked pink shrimp. Keep them whole or cut in half. CHEF'S TIP: Use a sharp knife for clean cuts."
+    "titre": "Shrimp",
+    "detail": "Peel the cooked pink shrimp if needed and keep them whole or halve them depending on their size."
    },
    {
-    "titre": "Prepare the cocktail sauce",
-    "detail": "Mix 3 tbsp mayonnaise, 1 tbsp ketchup, a few drops of Tabasco, lemon juice, salt and pepper."
+    "titre": "Greens",
+    "detail": "Wash and spin-dry the salad greens, then divide them among the plates or arrange on a large serving platter."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Make a light cocktail sauce by combining mayonnaise, a little ketchup, a few drops of Tabasco, lemon juice, salt and pepper."
    },
    {
     "titre": "Plate",
-    "detail": "Arrange the salad on plates. Add the avocado and shrimp. Top with cocktail sauce. Garnish with dill or chives."
+    "detail": "Arrange the avocado and shrimp attractively over the bed of greens, then spoon the cocktail sauce over the top."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate for a few minutes before serving so the salad is nicely chilled and the sauce has firmed up."
    }
   ]
  },
  "saladelentilles": {
   "nom": "Lentil Salad",
-  "description": "A warm or cold lentil salad — legumes, crisp vegetables, and mustard vinaigrette.",
+  "description": "A warm or cold lentil salad — legumes, crunchy vegetables and a mustardy vinaigrette.",
   "etapes": [
    {
-    "titre": "Cook the lentils",
-    "detail": "Rinse the green lentils (Puy lentils preferably). Plunge them into cold water with a bouquet garni and cut carrots. Bring to a boil then cook over medium heat. Do not salt at the beginning of cooking. Rinse thoroughly with cold water."
+    "titre": "Cook lentils",
+    "detail": "Rinse the green lentils and add them to cold water with a bouquet garni and diced carrots, bring to a boil, then cook 20 to 25 min over medium heat without salting."
    },
    {
-    "titre": "Brown the bacon",
-    "detail": "Brown the bacon in a skillet without any fat. Drain on paper towels. Watch carefully: uniform golden color = ready, any longer and it will burn."
+    "titre": "Brown bacon",
+    "detail": "Meanwhile, brown the bacon lardons in a dry skillet for 4 to 5 min until evenly colored, then drain them on paper towels."
    },
    {
-    "titre": "Prepare the vinaigrette",
-    "detail": "Mix 1 tbsp mustard, 2 tbsp wine vinegar, 4 tbsp olive oil, salt and pepper. Whisk well."
+    "titre": "Slice",
+    "detail": "Finely slice the onion and set it aside to add crunch and a sharp bite to the salad."
+   },
+   {
+    "titre": "Vinaigrette",
+    "detail": "Make the vinaigrette by whisking together the mustard, red wine vinegar, oil, salt and pepper until emulsified."
    },
    {
     "titre": "Assemble",
-    "detail": "Drain the lentils while still warm and immediately mix them with the vinaigrette. Add the bacon and thinly sliced onion. Serve warm or cold."
+    "detail": "Drain the still-warm lentils and toss them right away with the vinaigrette so they soak it up, then fold in the bacon and onion."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 min at room temperature so the flavors meld and the lentils absorb the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve warm or cold, optionally sprinkled with chopped parsley."
    }
   ]
  },
  "saladeFruitsMer": {
   "nom": "Seafood Salad",
-  "description": "A seafood salad featuring shrimp, mussels, and squid marinated in lemon-infused olive oil with garlic and parsley. Fresh and briny flavors guaranteed.",
+  "description": "Seafood salad — shrimp, mussels and squid marinated in lemony olive oil with garlic and parsley. Pure ocean freshness.",
   "etapes": [
    {
-    "titre": "Cook the seafood",
-    "detail": "Cook the mussels à la marinière. Sauté the squid and shrimp for 2 minutes. Let cool."
+    "titre": "Cook mussels",
+    "detail": "Steam the mussels marinière-style for 4 to 5 min over high heat in a covered pot, then shell them and set aside."
    },
    {
-    "titre": "Prepare the marinade",
-    "detail": "Mix together olive oil, lemon juice, minced garlic, parsley, salt, pepper, and Espelette pepper."
+    "titre": "Pan-sear",
+    "detail": "Pan-sear the squid and shrimp 2 min over high heat in a drizzle of olive oil, just to sear them, then let cool."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Make the marinade by combining the olive oil, lemon juice, minced garlic, chopped parsley, salt and pepper."
    },
    {
     "titre": "Marinate",
-    "detail": "Combine all the seafood with the marinade. Let marinate in the refrigerator."
+    "detail": "Toss all the cooled seafood with the marinade and let marinate at least 20 min in the fridge."
    },
    {
-    "titre": "Plate and serve",
-    "detail": "Arrange on a bed of arugula or mixed greens. Garnish with lemon wedges."
+    "titre": "Plate",
+    "detail": "Arrange the marinated seafood on a bed of green salad and garnish with lemon wedges."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning, sprinkle with fresh parsley and serve well chilled as a refined starter."
    }
   ]
  },
  "saladeHaricotsVerts": {
   "nom": "Green Bean Salad",
-  "description": "Crispy green bean salad with toasted almonds — tangy mustard vinaigrette and hard-boiled eggs. Simple and delicious as an appetizer or side dish.",
+  "description": "Crunchy green bean salad with toasted almonds — mustardy vinaigrette and hard-boiled eggs. Simple and delicious as a starter or side.",
   "etapes": [
    {
-    "titre": "Cook the green beans",
-    "detail": "Cook the green beans al dente in salted boiling water. Cool immediately in ice water to preserve the color. Cook 1 minute less than package directions. Taste to check."
+    "titre": "Cook beans",
+    "detail": "Cook the green beans 6 to 8 min until al dente in boiling salted water, then plunge them straight into ice water to keep their color and crunch."
    },
    {
-    "titre": "Cook the hard-boiled eggs",
-    "detail": "Cook the eggs 9 minutes in boiling water. Cool and peel."
+    "titre": "Boiled eggs",
+    "detail": "Cook the eggs 9 min in boiling water, cool them under cold water, then peel and cut into quarters."
    },
    {
-    "titre": "Toast the almonds",
-    "detail": "Toast the sliced almonds dry in a skillet until golden brown. Preheat the skillet 5 minutes. Very hot surface for nice browning marks."
+    "titre": "Toast almonds",
+    "detail": "Dry-toast the slivered almonds in a skillet for 2 to 3 min over medium heat until golden, stirring so they don't burn."
    },
    {
-    "titre": "Plate the salad",
-    "detail": "Arrange the green beans. Add the eggs cut into quarters and the almonds. Drizzle with mustard vinaigrette."
+    "titre": "Vinaigrette",
+    "detail": "Whisk the mustard with the red wine vinegar, then drizzle in the oil to make an emulsified vinaigrette, season with salt and pepper."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Drain and dry the beans, arrange them on the platter, then add the egg quarters and scatter with toasted almonds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with the mustardy vinaigrette just before serving to keep the beans and almonds crunchy."
    }
   ]
  },
  "saladechorizofeves": {
-  "nom": "Chorizo-Fava Bean Salad",
-  "description": "Chorizo-fava bean salad — a Spanish spring on a plate. Fresh fava beans, sautéed mild chorizo, Serrano ham, and feta. Invigorating.",
+  "nom": "Chorizo & Fava Bean Salad",
+  "description": "Chorizo and fava bean salad — a Spanish spring on a plate. Fresh fava beans, mild pan-seared chorizo, Serrano ham and feta. Invigorating.",
   "etapes": [
    {
-    "titre": "Shell the fava beans",
-    "detail": "Pod the fresh fava beans. Blanch for 1 minute, plunge into ice water, remove the second skin (more tender!). PRO TIP: salted boiling water for 2-3 minutes then ice water. Stops the cooking and keeps the bright color."
+    "titre": "Fava beans",
+    "detail": "Shell the fresh fava beans, blanch them 1 to 2 min in boiling salted water, then plunge them into ice water and slip off the second skin to keep only the tender heart."
    },
    {
     "titre": "Chorizo",
-    "detail": "Cut the mild chorizo into rounds. Sauté dry in a skillet for 2 minutes per side to release the fragrant oil. CHEF'S TIP: a sharp knife for clean cuts."
+    "detail": "Slice the chorizo into rounds and dry-sear them 2 min per side over medium heat so they release their fragrant oil."
    },
    {
-    "titre": "Arrange",
-    "detail": "Arrange the fava beans, chorizo and its oil, Serrano ham in thin ribbons, crumbled feta."
+    "titre": "Prep",
+    "detail": "Crumble the feta, tear the Serrano ham into ribbons, and chop the fresh mint."
    },
    {
-    "titre": "Finish",
-    "detail": "Scatter fresh mint, drizzle with olive oil and lemon juice. Generous freshly ground pepper. Serve warm."
+    "titre": "Plate",
+    "detail": "Arrange the fava beans on a platter, then add the chorizo with its fragrant oil, the Serrano and the crumbled feta."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with olive oil and lemon juice, then add a generous grind of pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with fresh mint and serve right away, warm, to enjoy the contrast between the hot chorizo and the cool feta."
    }
   ]
  },
  "saladeThai": {
   "nom": "Thai Salad",
-  "description": "Thai salad — rice vermicelli, crispy vegetables, fresh cilantro and lime vinaigrette with fish sauce. Fresh and bursting with flavor.",
+  "description": "Thai salad — rice vermicelli, crunchy vegetables, fresh cilantro and a lime-and-nuoc-mam dressing. Fresh and bursting with flavor.",
   "etapes": [
    {
-    "titre": "Soak the vermicelli",
-    "detail": "Soak the rice vermicelli in hot water for 5 minutes. Drain and rinse with cold water. Rinse thoroughly with cold water."
+    "titre": "Soak",
+    "detail": "Soak the rice noodles for 5 min in hot water until tender, then drain and rinse them under cold water."
    },
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Shred the carrots. Slice the cucumber thinly. Mince the cilantro, mint, and scallions. CHEF'S TIP: Use a sharp knife for clean cuts."
+    "titre": "Vegetables",
+    "detail": "Grate the carrots and thinly slice the cucumber into half-moons to add freshness and crunch."
    },
    {
-    "titre": "Make the vinaigrette",
-    "detail": "Mix lime juice, fish sauce, sugar, garlic, and chili. Taste and adjust."
+    "titre": "Herbs",
+    "detail": "Generously chop the fresh cilantro, which will perfume the whole salad."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Make the sauce by combining the lime juice, minced garlic and sugar until dissolved, then taste and adjust the sweet-sour balance."
    },
    {
     "titre": "Assemble",
-    "detail": "Mix vermicelli, vegetables, and crushed peanuts. Drizzle with vinaigrette. Garnish with cilantro."
+    "detail": "Combine the rice noodles, carrots, cucumber and cilantro in a large bowl, then drizzle with the sauce and toss gently."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 min in the fridge so the vegetables soak up the fragrant dressing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with a little extra cilantro and serve well chilled as a starter or side."
    }
   ]
  },
  "saladePoulpe": {
   "nom": "Octopus Salad",
-  "description": "Greek-style octopus salad — tender octopus cooked low and slow, marinated in olive oil, lemon, capers, and olives. Mediterranean and flavorful.",
+  "description": "Greek-style octopus salad — tender slow-cooked octopus marinated in olive oil, lemon, capers and olives. Mediterranean and full of flavor.",
   "etapes": [
    {
-    "titre": "Cook the octopus",
-    "detail": "Plunge the octopus into boiling water with bay leaf, salt, and peppercorns. Simmer gently. CHEF'S TIP: keep the lid slightly ajar for better reduction."
+    "titre": "Cook octopus",
+    "detail": "Plunge the octopus into boiling water with bay leaf, salt and peppercorns, then simmer gently for 45 min to 1 hr until a knife tip pierces it easily."
    },
    {
-    "titre": "Cut it up",
-    "detail": "Let cool. Slice the tentacles into rounds. Reserve the most attractive pieces for presentation. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Cool",
+    "detail": "Let the octopus cool in its cooking water so it stays tender, then drain it."
    },
    {
-    "titre": "Prepare the marinade",
-    "detail": "Mix olive oil, lemon juice, garlic, parsley, capers, olives, and oregano. Season generously with salt and pepper. Always taste and adjust."
+    "titre": "Cut",
+    "detail": "Cut the tentacles into even rounds, reserving the best ones for the final presentation."
    },
    {
-    "titre": "Marinate and serve",
-    "detail": "Combine the octopus with the marinade. Let rest for 30 minutes. Serve on a bed of arugula. CHEF'S TIP: this resting time is ESSENTIAL for the final texture."
+    "titre": "Marinade",
+    "detail": "Make the marinade by combining the olive oil, lemon juice, minced garlic, capers, olives, salt and pepper."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Toss the octopus with the marinade and let rest at least 30 min in the fridge to tenderize and flavor the meat."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the octopus salad on a bed of arugula and lay the reserved best rounds on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with a final touch of olive oil and lemon, then serve chilled as a Mediterranean starter."
    }
   ]
  },
  "tabboulehlibanais": {
   "nom": "Lebanese Tabbouleh",
-  "description": "Authentic Lebanese tabbouleh — the opposite of the French version. Lots of parsley, little bulgur, tomato, mint, and lemon. Green and fresh!",
+  "description": "Authentic Lebanese tabbouleh — the opposite of the French version. Tons of parsley, very little bulgur, tomato, mint and lemon. Green and fresh!",
   "etapes": [
    {
-    "titre": "Hydrate the bulgur",
-    "detail": "Soak the FINE bulgur for 10 minutes in the juice of half a lemon (no water!)."
+    "titre": "Hydrate",
+    "detail": "Soak the fine bulgur for 10 min in the juice of half a lemon, with no water, so it absorbs the acidity while staying slightly firm."
    },
    {
-    "titre": "Chiffonade the herbs",
-    "detail": "The secret: lots of flat parsley (1 bunch per person) cut very finely with a knife (no food processor, it turns dark)."
+    "titre": "Chop",
+    "detail": "Finely chop a large amount of flat-leaf parsley and mint by knife, without a food processor so they don't darken."
    },
    {
     "titre": "Vegetables",
-    "detail": "Cut the tomato into very small dice (without seeds). Thinly mince the scallion."
+    "detail": "Cut the seeded tomato into very small dice and finely slice the green onion."
    },
    {
     "titre": "Mix",
-    "detail": "Combine all ingredients: parsley, mint, tomato, scallion, and bulgur. Season with oil, lemon, salt, and pepper."
+    "detail": "Combine the parsley, mint, tomato, onion and drained bulgur in a salad bowl, then toss gently."
    },
    {
-    "titre": "Chill",
-    "detail": "Refrigerate for at least 30 minutes. Serve well chilled with romaine lettuce leaves as a scoop."
+    "titre": "Season",
+    "detail": "Season with olive oil, lemon juice, sumac, salt and pepper, then toss to coat the herbs well."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Refrigerate at least 30 min so the bulgur absorbs the flavors and the salad is nicely chilled."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Taste, adjust the lemon and salt, and serve well chilled with romaine lettuce leaves to use as a scoop."
    }
   ]
  },
  "saladewasabi": {
   "nom": "Cucumber-Wasabi Salad",
-  "description": "Cucumber-wasabi salad — a Japanese sunomono with a spicy wasabi kick. Crisp, bright, and refreshing. Perfect as a side dish or light appetizer.",
+  "description": "Cucumber-wasabi salad — Japanese sunomono kicked up with wasabi. Crisp, sharp and fresh. Perfect as a side or a light appetizer.",
   "etapes": [
    {
-    "titre": "Prepare cucumber",
-    "detail": "Slice the cucumber into very thin rounds using a mandoline (1-2 mm). Salt generously and let sit for 10 minutes to release moisture. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Slice",
+    "detail": "Cut the cucumber into very thin 1 to 2 mm rounds on a mandoline for an even, crisp texture."
    },
    {
-    "titre": "Drain",
-    "detail": "Press the cucumber firmly in a clean kitchen towel to remove as much water as possible."
+    "titre": "Salt",
+    "detail": "Generously salt the rounds, toss, and let them drain for 10 min to draw out the excess water."
    },
    {
-    "titre": "Wasabi sauce",
-    "detail": "Mix rice vinegar, soy sauce, sugar, mirin, wasabi (adjust to taste), and grated ginger."
+    "titre": "Squeeze",
+    "detail": "Firmly press the cucumber in a clean towel to remove as much water as possible and keep it crisp."
    },
    {
-    "titre": "Combine",
-    "detail": "Pour the sauce over the cucumber. Toss gently."
+    "titre": "Sauce",
+    "detail": "In a bowl, whisk the rice vinegar, soy sauce, sugar and mirin until the sugar fully dissolves."
    },
    {
-    "titre": "Finishing",
-    "detail": "Sprinkle with toasted sesame seeds. Serve immediately, very cold."
+    "titre": "Wasabi",
+    "detail": "Stir in wasabi to taste and the grated fresh ginger, then taste to adjust the heat."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Pour the sauce over the squeezed cucumber and toss gently to coat every round."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Sprinkle with dry-toasted sesame seeds and serve immediately, very cold, as a Japanese side."
    }
   ]
  },
  "coleslaw": {
   "nom": "Coleslaw",
-  "description": "Coleslaw — the crunchy and creamy American cabbage salad: green cabbage, carrot, and a lightly sweet mayo-vinegar dressing. Perfect with barbecue.",
+  "description": "Coleslaw — the crunchy, creamy American cabbage salad: white cabbage, carrot and a lightly sweet mayo-vinegar dressing. Perfect with a barbecue.",
   "etapes": [
    {
-    "titre": "Slice",
-    "detail": "Slice the cabbage VERY thinly, shred the carrot. TIP: salt the cabbage for 10 minutes then drain it, it stays crispy without releasing water."
+    "titre": "Shred",
+    "detail": "Shred the cabbage very finely and grate the carrot for thin, even strands."
    },
    {
-    "titre": "Dressing",
-    "detail": "Mix mayonnaise, vinegar, mustard, a pinch of sugar. SECRET: a squeeze of lemon for freshness."
+    "titre": "Salt",
+    "detail": "Salt the cabbage and let it rest 10 min, then squeeze it firmly so it stays crunchy without releasing water."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Combine the mayonnaise, cider vinegar, mustard and a touch of sugar until you have a smooth dressing."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add a squeeze of lemon juice for freshness, season with pepper, and taste to balance the acidity and sweetness."
    },
    {
     "titre": "Toss",
-    "detail": "Coat the vegetables with dressing, add pepper."
+    "detail": "Coat the cabbage and carrot thoroughly with the dressing so every strand is well covered."
    },
    {
-    "titre": "Chill",
-    "detail": "KEY: refrigerate for at least 1 hour, the flavors meld together and the cabbage softens just right."
+    "titre": "Rest",
+    "detail": "Cover and chill at least 1 hr: the flavors come together and the cabbage softens just enough."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toss one last time and serve well chilled alongside grilled meats or American-style burgers."
    }
   ]
  },
  "poissoncrutahitien": {
   "nom": "Tahitian Raw Fish",
-  "description": "Raw fish Tahitian style — tuna or sea bream marinated in coconut milk and lime. Carrot, cucumber, tomato. Guaranteed sunshine on your plate.",
+  "description": "Tahitian-style raw fish — tuna or sea bream marinated in coconut milk and lime. Carrot, cucumber, tomato. Sunshine guaranteed.",
   "etapes": [
    {
-    "titre": "Cut the fish",
-    "detail": "Cut very fresh tuna or sea bream into 1.5 cm cubes. Season generously with salt. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Choose fish",
+    "detail": "Select extra-fresh (sashimi-grade) bluefin tuna or sea bream, trim away the bones and skin, then cut the flesh into even 1.5 cm dice."
    },
    {
-    "titre": "Lime",
-    "detail": "Pour lime juice over the fish (3 limes for 4 servings). Mix gently, let sit for only 5 minutes."
+    "titre": "Salt",
+    "detail": "Place the dice in a bowl, salt generously, and set aside while you juice the limes."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Pour the juice of 3 limes for 4 servings over the fish, toss gently, and let firm up for just 5 min in the fridge (no longer, or the flesh will overcook)."
+   },
+   {
+    "titre": "Cut vegetables",
+    "detail": "While it marinates, grate the carrot, cut the cucumber and tomato into small cubes, finely slice the onion and grate the garlic."
    },
    {
     "titre": "Coconut milk",
-    "detail": "Drain the fish. Pour cold coconut milk that has been well whisked, mix delicately."
+    "detail": "Drain off the excess juice from the fish, pour in the well-chilled coconut milk you've beaten beforehand, then fold in the vegetables, mixing gently."
    },
    {
-    "titre": "Vegetables",
-    "detail": "Add shredded carrot, cucumber cubes, tomato cubes, thinly sliced red onion, minced garlic. Mix together."
+    "titre": "Season",
+    "detail": "Adjust the salt, add a dash of the remaining lime and a turn of pepper, then taste to balance the acidity and the sweetness of the coconut."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Let rest 10 min in the refrigerator so the flavors come together and the dish is ice-cold."
    },
    {
     "titre": "Serve",
-    "detail": "Serve very cold, ideally in a coconut shell if you have one! Sunday's \"Ia Ora Na\" dish."
+    "detail": "Serve well chilled, ideally in a hollowed-out half coconut, and enjoy right away as a Sunday \"Ia Ora Na\" dish."
    }
   ]
  },
@@ -28023,67 +33521,103 @@ window.RECETTES_EN = {
  },
  "saladeroquetteparmesan": {
   "nom": "Arugula-Parmesan Salad",
-  "description": "Arugula-Parmesan Salad — the perfect minimalist Italian salad: peppery arugula, Parmesan shavings, lemon, and olive oil. Ready in 10 minutes.",
+  "description": "Arugula-Parmesan salad — the minimalist, perfect Italian salad: peppery arugula, shaved Parmesan, lemon and olive oil. Ready in 10 minutes.",
   "etapes": [
    {
-    "titre": "Arugula",
-    "detail": "Wash and thoroughly dry the arugula (it must be completely dry, otherwise the dressing will slide off)."
+    "titre": "Wash arugula",
+    "detail": "Wash and thoroughly spin the arugula: it has to be perfectly dry, otherwise the dressing slides right off."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Toast the pine nuts dry in a pan over medium heat for 2 to 3 min until golden, then set aside."
    },
    {
     "titre": "Shavings",
-    "detail": "Shave Parmesan into thin shavings with a vegetable peeler. TIP: Real Parmigiano Reggiano makes all the difference."
+    "detail": "Shave thin curls of Parmesan with a vegetable peeler; real Parmigiano Reggiano makes all the difference."
    },
    {
-    "titre": "Dress",
-    "detail": "ITALIAN SECRET: olive oil + lemon juice + pepper, by hand, in that order. No vinegar."
+    "titre": "Season",
+    "detail": "In the bowl, mix the olive oil, lemon juice and pepper by hand in that order, no vinegar."
    },
    {
-    "titre": "Finish",
-    "detail": "CHEF'S TIP: toasted pine nuts for crunch. Serve immediately, the arugula wilts quickly."
+    "titre": "Toss",
+    "detail": "Add the arugula and gently coat it in the dressing just before serving."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Scatter the Parmesan shavings and toasted pine nuts over the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away with a final turn of pepper, since arugula wilts quickly once dressed."
    }
   ]
  },
  "saladebetteravechevre": {
   "nom": "Beet & Goat Cheese Salad",
-  "description": "Beet & goat cheese salad — earthy sweetness of beets, creamy goat cheese, crunchy walnuts, on a bed of arugula. Colors and contrasts.",
+  "description": "Beet & goat cheese salad — earthy sweetness of beets, creamy goat cheese, crunchy walnuts, on a bed of arugula. Color and contrast.",
   "etapes": [
    {
-    "titre": "Prepare",
-    "detail": "Cut the cooked beets into cubes or thin slices. TIP: Vacuum-sealed cooked beets save time."
+    "titre": "Prep",
+    "detail": "Cut the cooked beets into dice or thin, even slices; vacuum-packed cooked beets save time."
    },
    {
-    "titre": "Arrange",
-    "detail": "Bed of arugula, beet cubes, crumbled goat cheese, crushed walnuts."
+    "titre": "Wash arugula",
+    "detail": "Wash and spin the arugula thoroughly so it's nice and dry and the dressing clings to it."
    },
    {
-    "titre": "Vinaigrette",
-    "detail": "SECRET: Honey vinaigrette with olive oil and balsamic, which elevates the beets and goat cheese."
+    "titre": "Crumble cheese",
+    "detail": "Crumble the fresh goat cheese into pieces and roughly chop the walnuts."
    },
    {
-    "titre": "Finish",
-    "detail": "CHEF'S TIP: Dress at the last moment to keep the arugula from wilting. Freshly cracked black pepper."
+    "titre": "Dressing",
+    "detail": "Whisk the honey, olive oil and a splash of balsamic vinegar with a pinch of salt to bring out the beets and goat cheese."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spread a bed of arugula on the plates, then arrange the diced beets, crumbled goat cheese and walnuts."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with the dressing at the last moment so the arugula doesn't wilt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a turn of freshly ground pepper and serve this colorful, fresh salad right away."
    }
   ]
  },
  "saladefiguejambon": {
-  "nom": "Figs & Prosciutto Salad",
-  "description": "Figs & Prosciutto Salad — the sweet and salty harmony of Italian summer: fresh figs, Parma ham, shaved Parmesan, and arugula.",
+  "nom": "Fig & Prosciutto Salad",
+  "description": "Fig & prosciutto salad — the sweet-and-savory pairing of an Italian summer: fresh figs, Parma ham, shaved Parmesan and arugula.",
   "etapes": [
    {
-    "titre": "Figs",
-    "detail": "Cut the ripe figs into quarters. KEY: figs at peak ripeness make the entire dish."
+    "titre": "Cut figs",
+    "detail": "Cut the ripe figs into quarters: their ripeness is the whole balance of the dish."
    },
    {
-    "titre": "Compose",
-    "detail": "Bed of arugula, fig quarters, draped slices of prosciutto, shaved Parmesan."
+    "titre": "Wash arugula",
+    "detail": "Wash and spin the arugula, then arrange it as a bed on the plates or large serving dish."
+   },
+   {
+    "titre": "Shavings",
+    "detail": "Shave thin curls of Parmesan with a vegetable peeler and set them aside."
+   },
+   {
+    "titre": "Drape ham",
+    "detail": "Scatter the fig quarters over the arugula and drape the slices of prosciutto prettily among them."
    },
    {
     "titre": "Season",
-    "detail": "SECRET: extra virgin olive oil plus a few drops of balsamic vinegar or honey. No salt (prosciutto + Parmesan provide plenty)."
+    "detail": "Drizzle with olive oil and a few drops of balsamic or honey, without salt since the ham and Parmesan are enough."
    },
    {
-    "titre": "Finish",
-    "detail": "CHEF'S TIP: a turn of the pepper mill and, if desired, a few toasted walnuts for crunch."
+    "titre": "Scatter",
+    "detail": "Arrange the Parmesan shavings over everything to add character."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add a turn of pepper and serve right away, scattering a few toasted walnuts for crunch if you like."
    }
   ]
  },
@@ -28123,23 +33657,35 @@ window.RECETTES_EN = {
  },
  "saladewaldorf": {
   "nom": "Waldorf Salad",
-  "description": "Waldorf Salad — the elegant New York salad: apples, celery, walnuts and raisins bound with a creamy lemon dressing. Crisp and refreshing.",
+  "description": "Waldorf salad — the elegant New York classic: apple, celery, walnuts and raisins bound in a creamy lemon dressing. Crunchy and fresh.",
   "etapes": [
    {
-    "titre": "Chop",
-    "detail": "Apples (with skin) and celery into small dice. TIP: Toss the apples with lemon juice right away so they don't brown."
+    "titre": "Cut",
+    "detail": "Cut the apples (skin on) and the celery stalks into even dice of about 1 cm."
    },
    {
-    "titre": "Dressing",
-    "detail": "Mix mayonnaise (or yogurt for a lighter version) + lemon juice. SECRET: a touch of sweet mustard."
+    "titre": "Lemon",
+    "detail": "Immediately drizzle the apple dice with lemon juice to prevent browning and keep their bright color."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Combine the mayonnaise (or yogurt for a lighter version) with the remaining lemon juice and a touch of mild mustard."
+   },
+   {
+    "titre": "Prep nuts",
+    "detail": "Roughly crush the walnuts and plump the raisins for a few minutes in a little warm water before draining them."
    },
    {
     "titre": "Assemble",
-    "detail": "Toss apples, celery, crushed walnuts and raisins with the dressing."
+    "detail": "Fold the apples, celery and raisins into the sauce and toss gently to coat well."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate 15 min so the flavors come together and the salad is nicely chilled."
    },
    {
     "titre": "Serve",
-    "detail": "CHEF'S TIP: Serve on lettuce leaves, add the walnuts at the last moment for crunch."
+    "detail": "Plate on lettuce leaves and scatter the crushed walnuts at the last moment to keep them crunchy."
    }
   ]
  },
@@ -29445,23 +34991,31 @@ window.RECETTES_EN = {
  },
  "soupefroideconcombre": {
   "nom": "Chilled Cucumber Soup",
-  "description": "An ultra-refreshing iced soup: cucumber, Greek yogurt, garlic, mint, and olive oil, blended into a smooth velvety soup. Perfect for hot weather.",
+  "description": "An ice-cold, ultra-refreshing soup: cucumber, Greek yogurt, garlic, mint and olive oil blended smooth. Perfect in the heat.",
   "etapes": [
    {
     "titre": "Prep",
-    "detail": "Peel and roughly chop the cucumbers."
+    "detail": "Peel the cucumbers, remove the seeds if needed and cut them roughly into pieces."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Degerm the garlic and pick the fresh mint leaves to release all their aromas."
    },
    {
     "titre": "Blend",
-    "detail": "Blend cucumber, Greek yogurt, garlic, mint, oil, and lemon until smooth and velvety."
+    "detail": "Blend the cucumber with the Greek yogurt, garlic, mint, olive oil and lemon juice until silky smooth."
    },
    {
     "titre": "Season",
-    "detail": "Salt, pepper, and adjust acidity with lemon."
+    "detail": "Season with salt and pepper and adjust the acidity with a little lemon to taste."
    },
    {
     "titre": "Chill",
-    "detail": "Refrigerate for at least 1 hour. Serve well chilled."
+    "detail": "Cover and refrigerate for at least 1 h to serve the soup ice-cold."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pour into chilled bowls, add a drizzle of olive oil, a few mint leaves and some diced cucumber."
    }
   ]
  },
@@ -29587,411 +35141,563 @@ window.RECETTES_EN = {
  },
  "veloutepetitspois": {
   "nom": "Pea Velouté",
-  "description": "A tender, silky green velouté: peas, shallot and a touch of cream, brightened with mint. Fresh in spring, delicious year-round.",
+  "description": "A tender, silky green velouté: peas, shallot and a touch of cream, brightened with mint. Fresh in spring, comforting all year round.",
   "etapes": [
    {
-    "titre": "Sweat the shallots",
-    "detail": "Sweat the sliced shallot in butter without browning."
+    "titre": "Sweat the shallot",
+    "detail": "Finely mince the shallot and sweat it in the butter over low heat for 3 min, without coloring."
    },
    {
     "titre": "Cook the peas",
-    "detail": "Add the peas and broth, simmer for 12 minutes."
+    "detail": "Add the peas and the stock, bring to a simmer and let it cook gently for 12 min over medium heat."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Off the heat, add the fresh mint leaves so they infuse without cooking."
    },
    {
     "titre": "Blend",
-    "detail": "Blend until smooth, add the cream and mint, blend again."
+    "detail": "Blend everything until smooth, then stir in the crème fraîche and blend again for a silky velouté."
    },
    {
-    "titre": "Adjust seasoning",
-    "detail": "Season with salt and pepper. Pass through a fine-mesh sieve for an ultra-smooth velouté (optional)."
+    "titre": "Adjust",
+    "detail": "Season with salt and pepper and, for an ultra-smooth texture, pass the velouté through a fine sieve."
    },
    {
-    "titre": "Serve",
-    "detail": "Serve hot, or chilled in summer, with a drizzle of cream."
+    "titre": "Temperature",
+    "detail": "Serve piping hot in winter, or chill it in the refrigerator for a cold summer version."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pour into bowls, add a swirl of cream and a mint leaf before serving."
    }
   ]
  },
  "misoramenleger": {
   "nom": "Light Miso Ramen",
-  "description": "Light miso ramen with white miso — quick version without meat, dashi-miso broth, noodles and seasonal vegetables. Comforting and healthy.",
+  "description": "Light white miso ramen — a quick meatless version with a dashi-miso broth, noodles and seasonal vegetables. Comforting and wholesome.",
   "etapes": [
    {
     "titre": "Dashi broth",
-    "detail": "Bring the dashi (powder or sachet in water) to a simmer. Do not boil."
+    "detail": "Bring the dashi to a gentle simmer without letting it boil to preserve its delicate aroma."
    },
    {
     "titre": "Dissolve the miso",
-    "detail": "Off the heat, ladle out some broth and dissolve the white miso in it. Pour back into the pot. The paste should DOUBLE in volume in a warm place (25°C, oven off with light on)."
+    "detail": "Off the heat, ladle out some broth and whisk the white miso into it, then stir it back into the pot."
    },
    {
     "titre": "Cook the noodles",
-    "detail": "Cook the ramen noodles separately. Drain."
+    "detail": "Cook the ramen noodles separately for the time indicated, then drain them."
    },
    {
-    "titre": "Prepare the toppings",
-    "detail": "Pan-fry the tofu cut into cubes with sesame oil. Heat the corn."
+    "titre": "Pan-fry the tofu",
+    "detail": "Cut the tofu into cubes and pan-fry it in sesame oil until golden on all sides."
+   },
+   {
+    "titre": "Warm the corn",
+    "detail": "Drain and warm the sweet corn for a few minutes in the pan."
    },
    {
     "titre": "Plate",
-    "detail": "Noodles in the bowl, pour the hot broth over. Add tofu, corn, nori, scallions and sesame seeds."
+    "detail": "Divide the noodles among the bowls and pour the hot miso broth over the top."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Arrange the tofu, corn, a sheet of nori and some scallion, sprinkle with sesame seeds and serve right away."
    }
   ]
  },
  "tom_yam": {
-  "nom": "Tom Yum",
-  "description": "Thai Tom Yum soup — tangy broth with lime, galangal, lemongrass and shrimp. A burst of flavors.",
+  "nom": "Tom Yam",
+  "description": "The Thai Tom Yam soup — a spicy broth with lime, galangal, lemongrass and shrimp. A fireworks display of aromas.",
   "etapes": [
    {
-    "titre": "Prepare the broth",
-    "detail": "Bring the chicken broth to a boil. Add chopped lemongrass, galangal, kaffir lime leaves, and chili. Let infuse for 10 minutes."
+    "titre": "Prep the aromatics",
+    "detail": "Crush and cut the lemongrass into segments, slice the galangal and prepare the chilies."
    },
    {
-    "titre": "Add mushrooms",
-    "detail": "Add the straw mushrooms or shiitake. Cook for 3 minutes."
+    "titre": "Infuse the broth",
+    "detail": "Bring the broth to a boil, add the lemongrass, galangal, kaffir leaves and chili, then let it infuse for 10 min over low heat."
    },
    {
-    "titre": "Add the shrimp",
-    "detail": "Add the shrimp. Cook until they turn pink."
+    "titre": "Mushrooms",
+    "detail": "Add the sliced mushrooms to the fragrant broth and let them cook for 3 min."
+   },
+   {
+    "titre": "Shrimp",
+    "detail": "Drop in the peeled shrimp and cook them for 2 to 3 min until they turn pink and firm."
    },
    {
     "titre": "Season",
-    "detail": "Off the heat, add lime juice, fish sauce, and chili paste (nam prik pao). Taste and adjust. Serve with fresh cilantro."
+    "detail": "Off the heat, add the lime juice, fish sauce and chili paste, then taste and adjust the balance."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Divide into bowls, scatter with chopped fresh cilantro and serve piping hot."
    }
   ]
  },
  "soupeaoignon": {
   "nom": "French Onion Soup",
-  "description": "Gratinéed French onion soup — caramelized onions in beef broth, bread croutons and melted Gruyère cheese.",
+  "description": "Gratinéed onion soup — caramelized onions in beef broth, bread croutons and melted gruyère.",
   "etapes": [
    {
-    "titre": "Caramelize the onions",
-    "detail": "Slice the onions thinly. Cook them down in butter over low heat, stirring often. They should become golden and candied. This takes time but it's essential! LOW HEAT strictly — otherwise they'll burn quickly."
+    "titre": "Slice",
+    "detail": "Peel and finely slice all the onions for even cooking."
+   },
+   {
+    "titre": "Caramelize",
+    "detail": "Melt the onions in the butter over low heat for 30 to 40 min, stirring often, until deeply golden and meltingly soft."
    },
    {
     "titre": "Deglaze",
-    "detail": "Add a glass of dry white wine or cognac. Let it evaporate for 2 minutes."
+    "detail": "Pour in the dry white wine to deglaze and let it reduce for 2 to 3 min to lift the caramelized bits."
    },
    {
-    "titre": "Add the broth",
-    "detail": "Pour in the hot beef broth. Simmer for 15 minutes. Adjust the seasoning. CHEF'S TIP: leave the lid partially ajar for better reduction."
+    "titre": "Simmer",
+    "detail": "Add the hot beef broth, bring to a simmer and let it cook for 15 min with the lid ajar."
    },
    {
-    "titre": "Prepare the croutons",
-    "detail": "Toast the bread slices in the oven or in a skillet."
+    "titre": "Croutons",
+    "detail": "Meanwhile, toast the bread slices in the oven at 180°C or in a pan until golden."
    },
    {
-    "titre": "Gratinée",
-    "detail": "Pour the soup into oven-safe bowls. Place a crouton on each bowl, cover generously with grated Gruyère. Run under the broiler until golden and bubbly."
+    "titre": "Top",
+    "detail": "Divide the soup into oven-safe bowls, set a crouton on top and cover generously with grated gruyère."
+   },
+   {
+    "titre": "Broil",
+    "detail": "Place under the oven broiler for 5 min until the cheese is melted and golden, then serve piping hot."
    }
   ]
  },
  "veloutepatatepoireaux": {
   "nom": "Potato Leek Velouté",
-  "description": "Creamy potato and leek velouté — velvety, comforting, and budget-friendly. The quintessential French winter soup.",
+  "description": "Creamy potato and leek velouté — comforting and budget-friendly. The quintessential French winter soup.",
   "etapes": [
    {
-    "titre": "Soften the leeks",
-    "detail": "Slice the leeks (white and tender green parts). Melt in butter over low heat without browning. LOW HEAT strictly — otherwise it burns quickly."
+    "titre": "Slice leeks",
+    "detail": "Clean and thinly slice the leeks, using the white and the tender green parts."
    },
    {
-    "titre": "Add the potatoes",
-    "detail": "Peel and cut into cubes. Add to the leeks. Cover with broth. Season with salt. CHEF'S TIP: use a sharp knife for clean, even cuts."
+    "titre": "Soften",
+    "detail": "Gently soften the leeks in butter over low heat for 5 to 7 minutes, without letting them color."
    },
    {
-    "titre": "Cook",
-    "detail": "Cook until the potatoes are very tender."
+    "titre": "Potatoes",
+    "detail": "Peel and cut the potatoes into evenly sized cubes, then add them to the leeks."
+   },
+   {
+    "titre": "Add broth",
+    "detail": "Cover with broth, season with salt and simmer for 20 minutes until the potatoes are very tender."
    },
    {
     "titre": "Blend",
-    "detail": "Blend until smooth. Stir in the crème fraîche. Adjust the seasoning. Thin with broth to desired consistency. CHEF'S TIP: use a rubber spatula with folding motions to avoid incorporating too much air."
+    "detail": "Blend everything until smooth, stir in the crème fraîche and adjust the consistency with a little broth."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust the seasoning with salt and pepper to balance the velouté."
    },
    {
     "titre": "Serve",
-    "detail": "Serve hot with butter-toasted croutons, crispy bacon lardons, or fresh chives."
+    "detail": "Serve hot, topped with buttery golden croutons, crispy bacon bits or chopped chives."
    }
   ]
  },
  "veloutecourgette": {
-  "nom": "Zucchini Velouté",
-  "description": "Zucchini Velouté with Goat Cheese — creamy zucchini soup with tender zucchini, goat cheese, and basil. Light and summery.",
+  "nom": "Velouté de Courgettes",
+  "description": "Zucchini velouté with goat cheese — a creamy soup of melting zucchini with goat cheese and basil. Light and summery.",
   "etapes": [
    {
-    "titre": "Cook the zucchini",
-    "detail": "Sauté onion in butter. Add zucchini sliced into rounds and broth. Cook for 15 minutes."
+    "titre": "Prep",
+    "detail": "Wash the zucchini and slice them into rounds without peeling to keep the green color, then slice the onion."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Melt the butter with a drizzle of oil over medium heat and sweat the onion for 4 minutes without coloring."
+   },
+   {
+    "titre": "Zucchini",
+    "detail": "Add the zucchini rounds, let them glisten for 2 minutes, then cover with hot broth and bring to a boil."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook for 15 minutes over medium heat, until the zucchini are very tender and translucent."
    },
    {
     "titre": "Blend",
-    "detail": "Blend finely with the goat cheese, salt, and pepper."
+    "detail": "Off the heat, add the goat cheese and blend until smooth and creamy, then season with salt and pepper."
    },
    {
     "titre": "Serve",
-    "detail": "Pour into bowls. Add basil leaves, a drizzle of olive oil, and freshly ground pepper."
+    "detail": "Pour into bowls and garnish with fresh basil leaves, a drizzle of olive oil and a turn of freshly ground pepper."
    }
   ]
  },
  "soupeAziatique": {
-  "nom": "Asian Soup",
-  "description": "Asian Soup with noodles — ginger chicken broth, rice noodles, crisp vegetables and fresh cilantro.",
+  "nom": "Asian Noodle Soup",
+  "description": "Asian noodle soup — ginger chicken broth, rice noodles, crisp vegetables and fresh cilantro.",
   "etapes": [
    {
-    "titre": "Fragrant Broth",
-    "detail": "Bring the broth to a boil with sliced ginger, garlic, lemongrass and fish sauce."
+    "titre": "Prep",
+    "detail": "Slice the ginger, mince the garlic, julienne the carrot and thinly slice the mushrooms and bok choy."
+   },
+   {
+    "titre": "Fragrant broth",
+    "detail": "Bring the broth to a boil with the ginger, garlic and soy sauce, then let it steep for 5 minutes."
    },
    {
     "titre": "Vegetables",
-    "detail": "Add bok choy, julienned carrots and mushrooms. Cook 3 min."
+    "detail": "Add the carrot, mushrooms and bok choy and cook for 3 minutes so they stay crisp."
+   },
+   {
+    "titre": "Protein",
+    "detail": "Add your choice of shrimp, fish or cubed tofu and cook for 2 to 3 minutes until fully cooked through."
    },
    {
     "titre": "Noodles",
-    "detail": "Cook the rice noodles separately. Drain and divide among bowls."
+    "detail": "Cook the noodles separately, drain them and divide them among the serving bowls."
    },
    {
     "titre": "Assemble",
-    "detail": "Pour the broth with vegetables. Garnish with cilantro, scallions, chili and lime juice. Optional: add shrimp or tofu."
+    "detail": "Pour the broth with vegetables and protein over the noodles."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Garnish with cilantro, scallions and a squeeze of lime juice, then serve piping hot."
    }
   ]
  },
  "soupeharira": {
   "nom": "Moroccan Harira",
-  "description": "Moroccan Harira — a nourishing and aromatic soup made with lentils, chickpeas, tomatoes, and warm spices. The traditional soup of Ramadan.",
+  "description": "Moroccan Harira — a soup of lentils, chickpeas, tomatoes and spices. The classic Ramadan soup, hearty and fragrant.",
   "etapes": [
    {
-    "titre": "Aromatic Base",
-    "detail": "Sauté onion, garlic, ginger, turmeric, cumin, and cinnamon in olive oil."
+    "titre": "Prep",
+    "detail": "Slice the onion, mince the garlic, grate the ginger, crush the tomatoes and rinse the lentils; drain the chickpeas."
    },
    {
-    "titre": "Tomatoes and Legumes",
-    "detail": "Add crushed tomatoes, red lentils, drained chickpeas, and broth."
+    "titre": "Aromatics",
+    "detail": "Sauté the onion in olive oil for 5 minutes, then add the garlic, ginger and cinnamon and toast for 1 minute to release their aromas."
+   },
+   {
+    "titre": "Tomatoes",
+    "detail": "Stir in the crushed tomatoes and let them cook down for 5 minutes over medium heat until the mixture reduces slightly."
+   },
+   {
+    "titre": "Legumes",
+    "detail": "Add the lentils, chickpeas and hot broth, bring to a boil then lower the heat."
    },
    {
     "titre": "Simmer",
-    "detail": "Cook over medium heat until the lentils are tender and falling apart."
+    "detail": "Simmer for 35 to 40 minutes over low heat, until the lentils are meltingly tender and the soup is velvety."
    },
    {
     "titre": "Finish",
-    "detail": "Stir in chopped cilantro and parsley, and lemon juice. Serve with dates and msemen crêpes."
+    "detail": "Off the heat, add chopped cilantro and parsley along with a squeeze of lemon juice, then adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, accompanied by dates and msemen pancakes, perfect for breaking the Ramadan fast."
    }
   ]
  },
  "soupeMinestrone": {
   "nom": "Minestrone",
-  "description": "Italian minestrone — a vegetable soup with seasonal vegetables, beans, and small pasta. Hearty, nourishing, and full of vitamins!",
+  "description": "Italian minestrone — a soup of seasonal vegetables, beans and small pasta. Hearty, filling and packed with vitamins!",
   "etapes": [
    {
+    "titre": "Prep",
+    "detail": "Finely dice the onion, celery and carrot, mince the garlic, cut the zucchini and potatoes into small cubes and drain the beans."
+   },
+   {
     "titre": "Soffritto",
-    "detail": "Sauté diced onion, celery, and carrot in olive oil until softened."
+    "detail": "Sauté the onion, celery and carrot in olive oil over medium heat for 8 minutes, until the onion is translucent, then add the garlic for 1 minute."
    },
    {
-    "titre": "Tomatoes and broth",
-    "detail": "Add garlic, crushed tomatoes, tomato paste, and vegetable broth. Bring to a boil."
+    "titre": "Tomatoes",
+    "detail": "Add the crushed tomatoes and pour in the hot broth, bring to a boil then lower to a gentle simmer."
    },
    {
-    "titre": "Seasonal vegetables",
-    "detail": "Add zucchini, green beans, diced potatoes, and spinach. Simmer for 15 minutes."
+    "titre": "Vegetables",
+    "detail": "Stir in the potatoes and carrot, cook for 15 minutes over low heat, then add the zucchini and beans and continue for 10 minutes."
    },
    {
-    "titre": "Beans and pasta",
-    "detail": "Add white beans and small pasta (ditalini or small shells). Cook for another 10 minutes."
+    "titre": "Pasta",
+    "detail": "Add the small pasta directly into the soup and cook for 8 to 10 minutes according to the package, stirring so it doesn't stick to the bottom."
+   },
+   {
+    "titre": "Spinach",
+    "detail": "Add the spinach at the end of cooking, let it wilt for 2 minutes, then adjust the seasoning with salt and pepper."
    },
    {
     "titre": "Serve",
-    "detail": "Adjust seasoning to taste. Serve with a drizzle of olive oil and grated Parmesan. It tastes even better the next day!"
+    "detail": "Serve piping hot with a drizzle of extra-virgin olive oil and freshly grated Parmesan; even better reheated the next day."
    }
   ]
  },
  "veloutePoiron": {
-  "nom": "Butternut Squash Velouté",
-  "description": "Butternut Squash Velouté with Ginger — a silky smooth squash soup made with fresh ginger and coconut milk. Comforting and aromatic.",
+  "nom": "Velouté de Potiron",
+  "description": "Butternut squash velouté with ginger — a silky soup of butternut squash, fresh ginger and coconut milk. Comforting and fragrant.",
   "etapes": [
    {
-    "titre": "Sauté the Base",
-    "detail": "Melt the onion in butter. Add the grated ginger and cook for 2 minutes."
+    "titre": "Prep",
+    "detail": "Peel the butternut squash and cut it into evenly sized cubes, slice the onion and finely grate the fresh ginger."
    },
    {
-    "titre": "Add the Squash",
-    "detail": "Add the peeled butternut squash cut into cubes. Cover with vegetable broth."
+    "titre": "Sweat",
+    "detail": "Melt the butter over medium heat and sweat the onion for 4 minutes without coloring, then add the ginger and cook for 2 minutes."
+   },
+   {
+    "titre": "Squash",
+    "detail": "Add the squash cubes, coat them in the fragrant butter, then cover with hot vegetable broth."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Bring to a boil then cook for 20 minutes over low heat, until the squash mashes easily with a fork."
    },
    {
     "titre": "Blend",
-    "detail": "Blend until smooth and silky. Return to low heat. On LOW HEAT strictly — otherwise it burns quickly."
+    "detail": "Blend with an immersion blender until perfectly smooth, adjusting the consistency with a little broth."
    },
    {
-    "titre": "Coconut Milk",
-    "detail": "Stir in the coconut milk. Adjust consistency with more broth. Season to taste. CHEF'S TIP: use a rubber spatula with gentle folding motions to avoid breaking down the aeration."
+    "titre": "Coconut",
+    "detail": "Return to low heat, stir in the coconut milk then a splash of milk, warm through without boiling and adjust the salt."
    },
    {
     "titre": "Serve",
-    "detail": "Pour into bowls. Add a drizzle of coconut milk, toasted squash seeds, and Espelette pepper."
+    "detail": "Pour into bowls and garnish with a drizzle of coconut milk, toasted squash seeds and a pinch of piment d'Espelette."
    }
   ]
  },
  "soupeDetox": {
   "nom": "Green Detox Soup",
-  "description": "Green detox soup — spinach, zucchini, ginger and lime. Light, vitamin-rich and revitalizing. Perfect after indulgences.",
+  "description": "Green detox soup — spinach, zucchini, ginger and lime. Light, vitamin-packed and revitalizing. Perfect after overindulging.",
   "etapes": [
    {
-    "titre": "Sauté the vegetables",
-    "detail": "Sweat the onion and garlic in olive oil. Add diced zucchini and grated ginger."
+    "titre": "Prep",
+    "detail": "Slice the onion and garlic, dice the zucchini, grate the ginger and thoroughly wash the fresh spinach."
    },
    {
-    "titre": "Add the broth",
-    "detail": "Pour in the hot vegetable broth. Bring to a boil then lower the heat."
+    "titre": "Sweat",
+    "detail": "Sweat the onion and garlic in olive oil for 4 minutes without coloring, then add the zucchini and ginger and cook for 3 minutes."
    },
    {
-    "titre": "Add the spinach",
-    "detail": "Remove from heat and add fresh spinach. Let it wilt for 2 minutes."
+    "titre": "Broth",
+    "detail": "Pour in the hot vegetable broth, bring to a boil then lower the heat and cook for 10 minutes until the zucchini is tender."
    },
    {
-    "titre": "Blend and finish",
-    "detail": "Blend until smooth. Add lime juice, salt and pepper. Serve with pumpkin seeds."
+    "titre": "Spinach",
+    "detail": "Off the heat, add the fresh spinach and let it wilt for 2 minutes in the heat of the broth to keep its vivid color."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend until a bright green, smooth velouté forms, then season with salt, pepper and a squeeze of lime juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot or warm in bowls, sprinkled with pumpkin seeds for crunch."
    }
   ]
  },
  "soupeLentillesCorail": {
   "nom": "Red Lentil Soup",
-  "description": "Red lentil soup with cumin and lemon — creamy, golden, and aromatic. Vegetarian, protein-rich, and ready in 30 minutes.",
+  "description": "Red lentil soup with cumin and lemon — creamy, golden and fragrant. Vegetarian, high in protein and ready in 30 minutes.",
   "etapes": [
    {
-    "titre": "Sauté the aromatics",
-    "detail": "Soften the onion and garlic in olive oil. Add cumin, turmeric, and paprika. Toast for 1 minute."
+    "titre": "Prep",
+    "detail": "Slice the onions, mince the garlic, crush the tomatoes and rinse the red lentils under cold water."
    },
    {
-    "titre": "Add tomatoes and lentils",
-    "detail": "Add tomatoes, rinsed lentils, and vegetable broth. Bring to a boil."
+    "titre": "Aromatics",
+    "detail": "Sweat the onions and garlic in olive oil for 5 minutes, then add the cumin and toast for 1 minute to awaken the spices."
+   },
+   {
+    "titre": "Tomatoes",
+    "detail": "Stir in the crushed tomatoes and let them cook down for 5 minutes over medium heat to concentrate the flavors."
+   },
+   {
+    "titre": "Lentils",
+    "detail": "Add the red lentils and the vegetable broth, bring to a boil then lower to a gentle simmer."
    },
    {
     "titre": "Simmer",
-    "detail": "Simmer over low heat, stirring regularly, until the lentils break down. Keep heat LOW strictly — otherwise it burns quickly."
+    "detail": "Cook for 20 minutes over low heat, stirring regularly, until the lentils break down and thicken the soup."
    },
    {
-    "titre": "Blend and finish",
-    "detail": "Partially blend for a creamy texture. Add lemon juice. Garnish with olive oil and toasted cumin."
+    "titre": "Blend",
+    "detail": "Blend partially for a texture that is both creamy and rustic, then add a squeeze of lemon juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, garnished with a drizzle of olive oil and a pinch of toasted cumin."
    }
   ]
  },
  "soupemiso": {
-  "nom": "Miso Soup",
-  "description": "Authentic Japanese miso soup — umami-rich broth, silky tofu, wakame, and scallions. Comforting and incredibly light.",
+  "nom": "Soupe Miso",
+  "description": "Authentic Japanese miso soup — umami broth, silken tofu, wakame and scallions. Comforting and very light.",
   "etapes": [
    {
-    "titre": "Prepare the dashi",
-    "detail": "Bring the water to a simmer. Add the dashi powder (1 tsp for 500ml). Let steep for 2 minutes."
+    "titre": "Prep",
+    "detail": "Rehydrate the dried wakame in a bowl of cold water for 5 minutes until it swells, then drain it; slice the scallions."
    },
    {
-    "titre": "Rehydrate the wakame",
-    "detail": "Soak the dried wakame in a bowl of cold water for 5 minutes. It will swell. Drain well."
+    "titre": "Tofu",
+    "detail": "Carefully cut the silken tofu into small, even cubes so they stay intact in the broth."
    },
    {
-    "titre": "Add the tofu",
-    "detail": "Cut the silky tofu into small cubes. Add it gently to the hot broth (not boiling). CHEF'S TIP: use a very sharp knife for clean cuts."
+    "titre": "Broth",
+    "detail": "Bring the water to a bare simmer (about 80°C, never a rolling boil) to prepare the broth base."
    },
    {
-    "titre": "Dissolve the miso",
-    "detail": "Off heat or over very low heat, ladle some broth into a separate bowl, dissolve the miso paste in it, then return the mixture to the pot. Never boil the miso — it destroys the probiotics!"
+    "titre": "Tofu",
+    "detail": "Gently slip the tofu cubes into the hot broth and let them warm for 2 minutes without stirring roughly."
+   },
+   {
+    "titre": "Miso",
+    "detail": "Off the heat, take a ladleful of broth and dissolve the miso paste in it, then stir it back into the pot, never letting it boil."
    },
    {
     "titre": "Serve",
-    "detail": "Add the wakame and sliced scallions. Serve immediately in bowls."
+    "detail": "Add the wakame and sliced scallions, then serve immediately in piping-hot bowls."
    }
   ]
  },
  "velouteAsperges": {
   "nom": "Asparagus Velouté",
-  "description": "Creamy spring asparagus soup — light and refined. Served hot or cold with a touch of cream and Parmesan.",
+  "description": "Green asparagus velouté — a silky spring soup, light and refined. Served hot or cold with a touch of cream and Parmesan.",
   "etapes": [
    {
-    "titre": "Prepare the asparagus",
-    "detail": "Snap off the tough base of the asparagus. Reserve a few tips for garnish. Cut the remaining stalks into pieces. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Prep",
+    "detail": "Snap off the woody base of the asparagus, set aside a few tips for garnish and cut the rest into pieces; slice the onions and garlic."
    },
    {
-    "titre": "Sweat the vegetables",
-    "detail": "Sweat the onion and garlic in olive oil for 3 minutes. Add the asparagus. Pour in the hot stock."
+    "titre": "Sweat",
+    "detail": "Sweat the onions and garlic in olive oil for 3 minutes over medium heat without coloring to develop their sweetness."
+   },
+   {
+    "titre": "Asparagus",
+    "detail": "Add the asparagus pieces, let them glisten for 2 minutes, then cover with hot broth and bring to a boil."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook for 15 minutes over low heat until the asparagus are very tender and melting."
    },
    {
     "titre": "Blend",
-    "detail": "Blend smoothly until creamy and velvety. Fold in the light cream. Adjust seasoning. CHEF'S TIP: use a spatula with gentle folding motions to avoid breaking down the air."
+    "detail": "Blend until velvety smooth, stir in the light cream and adjust the seasoning."
+   },
+   {
+    "titre": "Tips",
+    "detail": "Quickly pan-sear the reserved asparagus tips in a drizzle of oil for 3 minutes to lightly color them."
    },
    {
     "titre": "Serve",
-    "detail": "Serve hot or cold with grilled asparagus tips, Parmesan shavings, and olive oil."
+    "detail": "Serve hot or cold, topped with the seared tips, Parmesan shavings and a drizzle of olive oil."
    }
   ]
  },
  "veloutelegumes": {
   "nom": "Vegetable Velouté",
-  "description": "A smooth and creamy vegetable velouté — comforting in every season. Here made with carrots and butternut squash.",
+  "description": "A smooth, silky vegetable velouté — comforting in any season. Here with carrots and butternut squash.",
   "etapes": [
    {
-    "titre": "Prepare the vegetables",
-    "detail": "Peel and slice the carrots into rounds, cut the butternut squash into cubes, and cut the onion into wedges. Grate the ginger. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Prep",
+    "detail": "Peel and slice the carrots into rounds and cube the squash, cut the onion into wedges and grate the ginger."
    },
    {
-    "titre": "Sauté",
-    "detail": "In a large pot, melt the butter over medium heat. Sauté the onion for 3–4 minutes. Add the vegetables and ginger, and sauté for another 2 minutes."
+    "titre": "Sweat",
+    "detail": "Melt the butter over medium heat and cook the onion for 4 minutes, then add the vegetables and ginger and cook for 2 minutes."
    },
    {
     "titre": "Cook",
-    "detail": "Pour in the hot broth. Bring to a boil, then reduce the heat. Let simmer until the vegetables are very tender."
+    "detail": "Pour in the hot broth, bring to a boil then lower the heat and cook for 20 minutes until the vegetables are very tender."
    },
    {
     "titre": "Blend",
-    "detail": "Blend everything with an immersion blender until you achieve a smooth, silky texture. Adjust the consistency with a bit more broth if needed."
+    "detail": "Blend with an immersion blender until smooth and velvety, adjusting the consistency with a little broth if needed."
    },
    {
-    "titre": "Add the cream",
-    "detail": "Stir in the crème fraîche. Adjust the seasoning with salt and pepper. Serve hot with croutons and a drizzle of cream. CHEF'S TIP: fold in gently with a spatula using sweeping motions to preserve the aeration."
+    "titre": "Cream",
+    "detail": "Stir in the crème fraîche off the boil, warm gently and adjust the seasoning with salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with golden croutons, a touch of cream and a turn of freshly ground pepper."
    }
   ]
  },
  "solyanka": {
   "nom": "Russian Solyanka",
-  "description": "Russian solyanka — a hearty, tangy soup made with multiple meats (beef, sausage, ham), pickles, olives, and lemon. The ultimate comfort food.",
+  "description": "Russian Solyanka — a bold soup of several meats (beef, sausage, ham), pickles, olives and lemon. The ultimate comfort food.",
   "etapes": [
    {
+    "titre": "Prep",
+    "detail": "Slice the onion, cut the sausage and ham into strips, slice the pickles and cut the lemon into rounds."
+   },
+   {
     "titre": "Broth",
-    "detail": "Simmer the beef in broth with carrot, onion, and bay leaf for 1 hour. Strain and set aside."
+    "detail": "Simmer the beef for 1 hour with carrot, onion and bay leaf for a bold broth, then strain it and slice the meat."
    },
    {
     "titre": "Sofrito",
-    "detail": "Sauté onion, tomato paste, and thinly sliced pickles (the key to the flavor!) for 8 minutes."
+    "detail": "Sauté the onion with the tomato paste and sliced pickles for 8 minutes, the key to solyanka's sweet-and-sour taste."
    },
    {
     "titre": "Meats",
-    "detail": "Add the smoked sausage, ham in thin slices, and sliced beef. Sauté for 5 minutes."
+    "detail": "Add the smoked sausage, ham and sliced beef and sauté for 5 minutes to sear and flavor everything well."
    },
    {
-    "titre": "Broth",
-    "detail": "Pour in the broth and crushed tomatoes. Simmer for 20 minutes. CHEF'S TIP: leave the lid slightly ajar for better reduction."
+    "titre": "Simmer",
+    "detail": "Pour in the strained broth and the crushed tomatoes, then simmer for 20 minutes with the lid ajar to reduce."
    },
    {
-    "titre": "Finishing",
-    "detail": "Add black and green olives, capers, and a lemon slice. Serve with sour cream and dill."
+    "titre": "Finish",
+    "detail": "Add the black and green olives, capers and a lemon round, then adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with a spoonful of smetana (sour cream) and freshly chopped dill."
    }
   ]
  },
  "tomyumkungspicy": {
   "nom": "Spicy Tom Yum Kung",
-  "description": "Tom Yum Kung — the iconic Thai shrimp soup. Tangy, spicy, fragrant with lemongrass and galangal. An immediate flavor punch.",
+  "description": "Tom Yum Kung — the iconic Thai shrimp soup. Tangy, spicy, and fragrant with lemongrass and galangal. An instant pick-me-up.",
   "etapes": [
    {
-    "titre": "Aromatic Broth",
-    "detail": "Bring water to a boil with crushed lemongrass, sliced galangal, kaffir lime leaves, and chilies."
+    "titre": "Peel",
+    "detail": "Peel the shrimp, setting aside the heads and shells, and keep the meat chilled to the side."
    },
    {
-    "titre": "Shrimp",
-    "detail": "Peel the shrimp, keeping the heads for the broth (concentrates the flavors)."
+    "titre": "Aromatics",
+    "detail": "Crush the lemongrass with the flat of the knife, slice the galangal into thin rounds, crumple the kaffir leaves, and thinly slice the chiles."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Bring 1.2 L of water to a boil with the shrimp heads and shells, skim, then strain to obtain a deeply fragrant stock."
    },
    {
     "titre": "Infuse",
-    "detail": "Let infuse for 15 minutes over low heat so the aromas release. LOW HEAT strictly — otherwise it burns quickly."
+    "detail": "Return the lemongrass, galangal, kaffir, and chiles to the broth and let infuse 15 min over low heat without letting it boil."
    },
    {
-    "titre": "Mushrooms and Shrimp",
-    "detail": "Add straw mushrooms (or oyster mushrooms), fish sauce, and sugar. Cook for 3 minutes then add the shrimp."
+    "titre": "Simmer",
+    "detail": "Add the mushrooms, fish sauce, and sugar, then cook 3 min at a gentle simmer to balance salty and sweet."
    },
    {
-    "titre": "Finishing",
-    "detail": "Off the heat, add fresh lime juice and cilantro. Serve very hot, piping hot if possible!"
+    "titre": "Shrimp",
+    "detail": "Drop the shrimp into the simmering broth and poach 2 to 3 min, just until they turn pink and firm."
+   },
+   {
+    "titre": "Acidify",
+    "detail": "Off the heat, pour in the lime juice to brighten the soup without bitterness, then adjust the spicy-tangy-salty balance."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the Tom Yum Kung piping hot, scattered with fresh cilantro and a bowl of jasmine rice alongside."
    }
   ]
  },
@@ -30056,28 +35762,40 @@ window.RECETTES_EN = {
   ]
  },
  "misoramencanard": {
-  "nom": "Miso Ramen with Duck",
-  "description": "Miso ramen with confit duck — rich miso broth, ramen noodles, melt-in-your-mouth duck, marbled egg, and bok choy. A bowl of pure happiness.",
+  "nom": "Miso Duck Ramen",
+  "description": "Miso ramen with confit duck — rich miso broth, ramen noodles, melting duck, marbled egg, and bok choy. A bowl of happiness.",
   "etapes": [
    {
-    "titre": "Marbled Eggs",
-    "detail": "Cook the eggs for 6 minutes 30 seconds. Plunge into ice water. Marinate for 1 hour in soy sauce + mirin + sugar. Cut in half. CHEF'S TIP: use a sharp knife for clean cuts."
+    "titre": "Soft Eggs",
+    "detail": "Cook the eggs 6 min 30 in boiling water, plunge into ice water, peel, then marinate 1 h in soy sauce, mirin, and sugar."
    },
    {
     "titre": "Duck",
-    "detail": "Shred confit duck or sear duck breast skin-side down in a skillet for 6 minutes until the skin is crispy."
+    "detail": "Score the skin of the duck breasts and sear them skin-side down over medium heat 6 min until crispy, then 2 min on the flesh side and let rest."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Sauté minced garlic and ginger 1 min in a little hot oil to flavor the base of the broth."
    },
    {
     "titre": "Miso Broth",
-    "detail": "Sauté garlic and ginger for 1 minute. Add chicken stock + dashi. Whisk miso (red or white) separately."
+    "detail": "Pour in the chicken broth, bring to a simmer, then dissolve the miso in a ladleful of liquid before stirring it in off a hard boil."
    },
    {
     "titre": "Bok Choy",
-    "detail": "Blanch the bok choy for 2 minutes. Cook the ramen noodles according to package directions (al dente!). PRO TIP: boiling salted water for 2-3 minutes then ice water. Stops the cooking and keeps the bright color."
+    "detail": "Blanch the bok choy 2 min in salted boiling water, then cook the ramen noodles al dente according to the package time."
    },
    {
-    "titre": "Plating",
-    "detail": "Bowl: noodles, miso broth, duck, halved marbled egg, bok choy, scallions, nori, sesame seeds."
+    "titre": "Slice",
+    "detail": "Thinly slice the rested duck and cut the marinated eggs in half to reveal the runny center."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Lay the noodles in the bottom of the bowls, pour over the piping-hot miso broth, then top with duck, egg, bok choy, and sliced scallions."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away, sprinkled with sesame seeds, to enjoy the noodles hot and the broth fragrant."
    }
   ]
  },
@@ -32239,53 +37957,69 @@ window.RECETTES_EN = {
  },
  "saladepasteque": {
   "nom": "Watermelon, Feta & Mint Salad",
-  "description": "The perfect summer contrast: juicy sweet watermelon, salty creamy feta, fresh mint and a drizzle of olive oil. Ultra-refreshing and ready in 15 minutes.",
+  "description": "The perfect summer contrast: juicy, sweet watermelon, salty creamy feta, fresh mint and a drizzle of olive oil. Ultra-refreshing and ready in 15 minutes.",
   "etapes": [
    {
-    "titre": "Cut the watermelon",
-    "detail": "Remove the rind and seeds, cut the watermelon into generous cubes. Keep cold."
+    "titre": "Cut watermelon",
+    "detail": "Remove the rind and seeds, then cut the watermelon into generous cubes; keep chilled."
    },
    {
-    "titre": "Prepare the feta",
-    "detail": "Cut or crumble the feta into large pieces."
+    "titre": "Prep feta",
+    "detail": "Cut or crumble the feta into large pieces for a textural contrast with the watermelon."
+   },
+   {
+    "titre": "Chop mint",
+    "detail": "Pick and finely chop the fresh mint leaves, then pit the olives if needed."
    },
    {
     "titre": "Assemble",
-    "detail": "Arrange the watermelon and feta in a large dish, scatter with chopped mint and olives."
+    "detail": "Arrange the watermelon and feta on a large dish, then scatter with the chopped mint and olives."
    },
    {
     "titre": "Season",
-    "detail": "Drizzle with olive oil and a dash of lemon juice, pepper generously."
+    "detail": "Drizzle with olive oil and a dash of lemon juice, add a pinch of salt and pepper generously."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Let rest 10 min in the fridge so the flavors mingle without softening the watermelon."
    },
    {
     "titre": "Serve",
-    "detail": "Serve well chilled, ideally right away to keep the watermelon crunchy."
+    "detail": "Serve well chilled right away to keep all the juicy crunch of the watermelon."
    }
   ]
  },
  "saladermelonmozza": {
   "nom": "Melon, Mozzarella & Basil Salad",
-  "description": "A summery twist on the caprese: sweet melon balls, creamy mozzarella, basil and a drizzle of olive oil. Fresh, elegant and wonderfully simple.",
+  "description": "A summery take on caprese: balls of sweet melon, creamy mozzarella, basil and a drizzle of olive oil. Fresh, elegant and ridiculously simple.",
   "etapes": [
    {
-    "titre": "Prepare the melon",
-    "detail": "Halve the melon, remove the seeds, scoop into balls or cubes."
+    "titre": "Prep melon",
+    "detail": "Cut the melon in half, remove the seeds, then scoop out balls with a melon baller or cut even cubes."
    },
    {
     "titre": "Mozzarella",
-    "detail": "Drain the mozzarella and cut into pieces (or use bocconcini)."
+    "detail": "Drain the mozzarella thoroughly and cut it into pieces, or use mozzarella balls."
+   },
+   {
+    "titre": "Pick basil",
+    "detail": "Wash and pick the fresh basil leaves, setting aside a few pretty ones for garnish."
    },
    {
     "titre": "Plate",
-    "detail": "Alternate melon, mozzarella and, if you like, thin slices of cured ham on the plate."
+    "detail": "Alternate the melon, mozzarella and thin slices of prosciutto on the plate for a lovely contrast."
    },
    {
-    "titre": "Flavour",
-    "detail": "Scatter with fresh basil and drizzle with olive oil."
+    "titre": "Add basil",
+    "detail": "Scatter the fresh basil generously over the whole plating."
    },
    {
-    "titre": "Finish",
-    "detail": "A pinch of fleur de sel, a twist of pepper, and serve right away well chilled."
+    "titre": "Season",
+    "detail": "Drizzle with olive oil, add a pinch of fleur de sel and a turn of freshly ground pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away, well chilled, as a light, fragrant summer starter."
    }
   ]
  },
@@ -32351,49 +38085,65 @@ window.RECETTES_EN = {
  },
  "nicecreambanane": {
   "nom": "Banana Nice Cream",
-  "description": "The healthiest instant ice cream there is: ripe bananas frozen then blended, and that's it. Soft-serve texture, with no added sugar or cream.",
+  "description": "The healthiest instant ice cream there is: very ripe bananas frozen then blended, and that's it. Soft-serve texture, with no added sugar or cream.",
   "etapes": [
    {
-    "titre": "Freeze the bananas",
-    "detail": "Peel very ripe bananas, slice them and freeze for at least 3 hours."
+    "titre": "Slice",
+    "detail": "Peel some very ripe, speckled bananas, then cut them into thin, even rounds."
+   },
+   {
+    "titre": "Freeze",
+    "detail": "Spread the rounds flat on a tray and freeze them for at least 3 h until hard."
    },
    {
     "titre": "Blend",
-    "detail": "Blend the frozen slices with a splash of milk, scraping down the sides, until creamy."
+    "detail": "Blend the frozen rounds in pulses with a splash of milk, scraping down the sides of the bowl regularly."
    },
    {
-    "titre": "Flavour",
-    "detail": "Add the vanilla (or cocoa, peanut butter, berries as you like)."
+    "titre": "Cream",
+    "detail": "Keep going until you get a smooth, dense, creamy texture with no chunks, like soft-serve."
    },
    {
-    "titre": "Serve",
-    "detail": "Enjoy right away soft-serve, or freeze for 1 hour for a firmer ice cream."
+    "titre": "Flavor",
+    "detail": "Stir in the vanilla and give it one last blend to evenly distribute the flavor throughout the mixture."
+   },
+   {
+    "titre": "Serve Now",
+    "detail": "Enjoy right away for a soft texture, or freeze for 1 h for a firmer, scoopable ice cream."
    }
   ]
  },
  "esquimauxfraise": {
-  "nom": "Strawberry-Yogurt Ice Pops",
-  "description": "Super simple homemade ice pops: blended strawberries, yogurt and a little honey, poured into moulds. Soft, fruity and additive-free — kids love them.",
+  "nom": "Strawberry-Yogurt Popsicles",
+  "description": "Super simple homemade popsicles: blended strawberries, yogurt, and a little honey, poured into molds. Smooth, fruity, and additive-free — kids love them.",
   "etapes": [
    {
-    "titre": "Blend the strawberries",
-    "detail": "Hull and blend the strawberries into a coulis (keep a few chunks for texture if you like)."
+    "titre": "Prep Strawberries",
+    "detail": "Wash and hull the strawberries, setting aside a few cut into small dice for texture."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the rest of the strawberries into a smooth purée, then add some of the reserved dice if you like."
    },
    {
     "titre": "Mix",
-    "detail": "Mix the strawberry coulis, the yogurt and the honey."
+    "detail": "Whisk the purée with the yogurt and the honey until you get a smooth, well-blended mixture."
    },
    {
-    "titre": "Mould",
-    "detail": "Pour into ice-pop moulds and insert the sticks."
+    "titre": "Mold",
+    "detail": "Pour the mixture into the popsicle molds, tapping to release any air bubbles."
+   },
+   {
+    "titre": "Insert",
+    "detail": "Push the sticks in straight, right into the center of each mold."
    },
    {
     "titre": "Freeze",
-    "detail": "Freeze for at least 4 hours, ideally overnight."
+    "detail": "Place in the freezer for at least 4 h, ideally overnight, until fully set."
    },
    {
-    "titre": "Unmould",
-    "detail": "Quickly run the moulds under warm water to release easily."
+    "titre": "Unmold",
+    "detail": "Run the molds briefly under warm water to unmold easily and serve right away."
    }
   ]
  },
@@ -32429,660 +38179,4776 @@ window.RECETTES_EN = {
  },
  "brochettesfruits": {
   "nom": "Grilled Fruit Skewers",
-  "description": "Summer fruit skewers on the grill: the heat caramelises the sugars and concentrates the flavours. Honey, lime and mint — a light, spectacular dessert.",
+  "description": "Summer fruit skewers run over the grill: the heat caramelizes the sugars and concentrates the flavors. Honey, lime, and mint — a light, showstopping dessert.",
   "etapes": [
    {
-    "titre": "Cut the fruit",
-    "detail": "Cut firm fruit into large chunks: pineapple, peach, strawberries, slightly underripe banana…"
+    "titre": "Cut Fruit",
+    "detail": "Cut the pineapple, peach, and slightly underripe banana into large, even pieces, and keep the strawberries whole if they're small."
    },
    {
-    "titre": "Skewer",
-    "detail": "Thread the fruit onto skewers (wooden ones, soaked in water beforehand)."
+    "titre": "Soak Skewers",
+    "detail": "Soak the wooden skewers for 10 min in water to keep them from burning on the grill."
+   },
+   {
+    "titre": "Thread",
+    "detail": "Thread the fruit onto the skewers, alternating colors for appetizing, balanced skewers."
    },
    {
     "titre": "Glaze",
-    "detail": "Brush with a mix of honey and lime juice."
+    "detail": "Mix the honey and lime juice, then brush it generously over the skewers."
    },
    {
     "titre": "Grill",
-    "detail": "Cook 2-3 min on each side on a hot grill (barbecue or griddle), until nicely caramelised."
+    "detail": "Cook for 2 to 3 min on each side on a hot grill or plancha, until nicely caramelized with grill marks."
    },
    {
     "titre": "Serve",
-    "detail": "Scatter with chopped mint and serve warm, optionally with a scoop of vanilla ice cream or yogurt."
+    "detail": "Sprinkle with chopped mint and a bit of lime zest, then serve warm with yogurt or vanilla ice cream."
    }
   ]
  },
  "zaalouk": {
   "nom": "Zaalouk",
-  "description": "The Moroccan eggplant dip: eggplant and tomato cooked down with garlic, cumin and paprika, brightened with fresh cilantro. Serve warm or cold with good bread.",
+  "description": "The Moroccan eggplant dip: meltingly soft eggplant and tomatoes, garlic, cumin, and paprika, brightened with a touch of cilantro. Warm or cold, with good bread.",
   "etapes": [
    {
-    "titre": "Cook the eggplant",
-    "detail": "Partly peel and dice the eggplant. Soften in a pan with a little water and oil, covered, for 15 minutes."
+    "titre": "Prep",
+    "detail": "Partially peel the eggplants, leaving strips of skin, then cut them into even 2 cm cubes."
    },
    {
-    "titre": "Add the tomatoes",
-    "detail": "Stir in the chopped tomatoes and crushed garlic. Let it stew for 10 minutes, mashing with a fork."
+    "titre": "Cook the Eggplant",
+    "detail": "Soften the eggplant cubes in a pan with a drizzle of olive oil and a little water, covered, over low heat for 15 minutes."
    },
    {
-    "titre": "Spices",
-    "detail": "Add paprika, cumin, salt and a drizzle of olive oil. Cook 5 more minutes until a soft purée forms."
+    "titre": "Add the Tomatoes",
+    "detail": "Stir in the crushed tomatoes and the smashed garlic, then let it stew down for 10 minutes, mashing regularly with a fork."
    },
    {
-    "titre": "Finish",
-    "detail": "Off the heat, add chopped cilantro and a squeeze of lemon. Serve warm or chilled."
+    "titre": "Spice",
+    "detail": "Add the paprika, cumin, salt, and a drizzle of olive oil, then continue cooking for 5 minutes until you have a soft, melting purée."
+   },
+   {
+    "titre": "Add Flavor",
+    "detail": "Off the heat, stir in the chopped fresh cilantro and a squeeze of lemon juice to brighten the whole thing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold, as a mezze or starter, with bread for dipping."
    }
   ]
  },
  "chebakia": {
   "nom": "Chebakia",
-  "description": "The fried flower of Ramadan: crisp petals dipped in warm honey and rolled in sesame. Scented with anise and cinnamon.",
+  "description": "The fried dough flower of Ramadan: crisp petals dipped in hot honey and rolled in sesame. Scented with anise and cinnamon.",
   "etapes": [
    {
-    "titre": "The dough",
-    "detail": "Mix flour, melted butter, egg, ground sesame, anise and cinnamon. Knead into a smooth dough and rest for 30 minutes."
+    "titre": "Make Dough",
+    "detail": "Mix the flour, melted butter, egg, ground sesame, anise, and cinnamon, then knead into a soft, even dough."
    },
    {
-    "titre": "Shape the flowers",
-    "detail": "Roll out thin, cut slit rectangles, then pinch and fold to form the rosette shape."
+    "titre": "Rest",
+    "detail": "Cover the dough with a cloth and let it rest for 30 min at room temperature to relax it."
+   },
+   {
+    "titre": "Shape Flowers",
+    "detail": "Roll the dough out very thin, cut rectangles slit down the middle, then pinch and flip them to form the flowers."
    },
    {
     "titre": "Fry",
-    "detail": "Fry in hot oil until golden and crisp. Drain."
+    "detail": "Drop the flowers into oil at 170°C and fry until golden and crisp, then drain."
    },
    {
-    "titre": "Dip in honey",
-    "detail": "Plunge the hot chebakia straight into warm scented honey and let them soak for 2 minutes."
+    "titre": "Dip in Honey",
+    "detail": "Immediately plunge the chebakia into the hot scented honey and let them soak for 2 min."
    },
    {
-    "titre": "Sesame",
-    "detail": "Drain, roll in toasted sesame and let dry on a rack."
+    "titre": "Coat in Sesame",
+    "detail": "Drain off the excess honey, then roll the pastries in toasted sesame."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Arrange on a rack and let dry before serving with mint tea."
    }
   ]
  },
  "briouates": {
-  "nom": "Meat Briouates",
-  "description": "The crisp little triangles of the Maghreb: golden brick pastry filled with spiced onion-and-parsley meat. Unbeatable party bites.",
+  "nom": "Beef Briouates",
+  "description": "The crispy little triangles of the Maghreb: golden brick pastry stuffed with spiced beef, onion and parsley. Unbeatable party snacks.",
   "etapes": [
    {
-    "titre": "The filling",
-    "detail": "Sauté the chopped onion, add the meat, cumin, paprika and salt. Cook 8 minutes, then stir in the parsley."
+    "titre": "Prep",
+    "detail": "Finely mince the onion and chop the parsley; bring the brick pastry sheets to room temperature and beat the egg in a bowl."
+   },
+   {
+    "titre": "Sweat onion",
+    "detail": "Sweat the onion for 5 min over medium heat in a drizzle of olive oil until translucent and soft."
+   },
+   {
+    "titre": "Cook beef",
+    "detail": "Add the ground beef, cumin, paprika and salt, then cook for 8 min over medium heat, breaking up the meat, until browned."
+   },
+   {
+    "titre": "Finish filling",
+    "detail": "Stir in the chopped parsley off the heat, adjust the seasoning and let cool for 5 min to make folding easier."
    },
    {
     "titre": "Fold",
-    "detail": "Cut the brick sheets into strips, add a spoon of filling and fold into tight triangles."
+    "detail": "Cut the brick sheets into strips, place a spoonful of filling at one end and fold tightly into successive triangles."
    },
    {
     "titre": "Seal",
-    "detail": "Seal the final flap with a little beaten egg to close them well."
+    "detail": "Brush the final flap with a little beaten egg to seal the triangles tightly and keep them from opening while cooking."
    },
    {
     "titre": "Brown",
-    "detail": "Fry or bake at 200°C/400°F until golden and crisp."
+    "detail": "Bake at 200°C for 15 min (or fry at 170°C) until the briouates are golden and crisp."
    },
    {
     "titre": "Serve",
-    "detail": "Serve hot with a lemon wedge."
+    "detail": "Serve piping hot with a lemon wedge, best enjoyed crisp straight from the oven."
    }
   ]
  },
  "bessara": {
   "nom": "Bessara",
-  "description": "Morocco's velvety fava bean soup, the classic breakfast dish: favas simmered with garlic and cumin, finished with olive oil and paprika.",
+  "description": "Morocco's velvety fava bean soup, the quintessential morning dish: favas melted with garlic and cumin, drizzled with olive oil and paprika.",
   "etapes": [
    {
     "titre": "Soak",
-    "detail": "Soak the dried split favas for several hours (or use cooked favas)."
+    "detail": "Soak the dried, peeled fava beans for several hours (ideally overnight) to rehydrate them and shorten the cooking time."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Drain the favas and crush the garlic cloves that will flavor the cooking water."
    },
    {
     "titre": "Cook",
-    "detail": "Cook the favas with garlic in salted water until they fall apart, 25-30 minutes."
+    "detail": "Cover the favas and garlic with salted water, bring to a boil, then cook 25 to 30 min over medium heat until they break down."
    },
    {
     "titre": "Blend",
-    "detail": "Blend smooth with the cumin. Add cooking water to reach the texture you like."
+    "detail": "Blend the favas into a smooth purée with the cumin, adding hot cooking water to reach the desired texture."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Stir a drizzle of olive oil into the blend and adjust the salt for a smooth, even cream."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pour the piping-hot bessara into bowls, drizzle with olive oil, and dust with paprika and cumin."
    },
    {
     "titre": "Serve",
-    "detail": "Pour into a bowl, drizzle with olive oil, dust with paprika and cumin, lemon on the side."
+    "detail": "Serve with a wedge of lemon to squeeze and warm bread for generous dipping."
    }
   ]
  },
  "lablabi": {
   "nom": "Lablabi",
-  "description": "Tunisia's chickpea soup over torn stale bread: a garlic-and-cumin broth with harissa, a poached egg and a drizzle of olive oil. Comforting and cheap.",
+  "description": "Tunisia's chickpea soup over stale bread: a garlic-and-cumin broth, harissa, a poached egg, and a drizzle of olive oil. Comforting and budget-friendly.",
   "etapes": [
    {
-    "titre": "The broth",
-    "detail": "Warm the cooked chickpeas in their water with crushed garlic, cumin and salt for 10 minutes."
+    "titre": "Broth",
+    "detail": "Warm the cooked chickpeas in their liquid with the crushed garlic, cumin, and salt, then let simmer 10 min to infuse well."
    },
    {
-    "titre": "The bread",
-    "detail": "Tear stale bread into the bottom of the bowls."
+    "titre": "Bread",
+    "detail": "Tear stale bread into pieces and divide it among the serving bowls."
    },
    {
-    "titre": "Poach the egg",
-    "detail": "Poach the eggs directly in the simmering broth for 3 minutes."
+    "titre": "Harissa",
+    "detail": "Loosen a spoonful of harissa with a little hot broth to make a spicy, fragrant base."
    },
    {
-    "titre": "Assemble",
-    "detail": "Ladle broth and chickpeas over the bread, set the egg on top."
+    "titre": "Poach",
+    "detail": "Crack the eggs into the simmering broth and poach 3 min, whites set and yolks still runny."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the broth and chickpeas over the bread to soak it through, then gently set the poached egg on top."
    },
    {
     "titre": "Garnish",
-    "detail": "Add a spoon of harissa, a drizzle of olive oil, cumin and a squeeze of lemon."
+    "detail": "Add the loosened harissa, a drizzle of olive oil, a pinch of cumin, and a squeeze of lemon juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the lablabi right away, piping hot, and stir at the table to break the yolk into the broth."
    }
   ]
  },
  "ojja": {
   "nom": "Ojja Merguez",
-  "description": "The Tunisian skillet of eggs scrambled into a spicy harissa tomato sauce with merguez and peppers. Made for mopping up with bread.",
+  "description": "The Tunisian skillet of eggs scrambled into a spicy harissa tomato sauce, with merguez and peppers. Made for soaking up generously with bread.",
   "etapes": [
    {
-    "titre": "Sear the merguez",
-    "detail": "Brown the merguez cut into chunks in the oil, then set aside."
+    "titre": "Sear",
+    "detail": "Brown the merguez, cut into chunks, in olive oil, then set them aside."
    },
    {
-    "titre": "The sauce",
-    "detail": "Sauté the pepper and garlic, add the harissa then the tomatoes. Reduce for 12 minutes."
+    "titre": "Sauté",
+    "detail": "Sauté the sliced pepper and minced garlic in the same skillet for 5 min."
    },
    {
-    "titre": "Return the merguez",
-    "detail": "Return the merguez to the sauce and reheat for 3 minutes."
+    "titre": "Harissa",
+    "detail": "Add the harissa and let it cook for 1 min to bring out its aromas."
    },
    {
-    "titre": "The eggs",
-    "detail": "Crack the eggs over the sauce, scramble lightly and cook to the texture you like."
+    "titre": "Reduce",
+    "detail": "Pour in the tomatoes and let reduce for 12 min over medium heat until the sauce thickens."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Slip the merguez back into the sauce and warm through for 3 min to soak up the flavor."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Crack the eggs over the sauce, scramble lightly, and cook to your desired texture."
    },
    {
     "titre": "Serve",
-    "detail": "Serve piping hot from the pan, with plenty of bread."
+    "detail": "Serve piping hot straight from the skillet, with plenty of bread for dipping."
    }
   ]
  },
  "slatamechouia": {
   "nom": "Slata Mechouia",
-  "description": "The Tunisian salad of grilled peppers and tomatoes, peeled and hand-chopped, lifted with garlic, harissa and olive oil. Smoky and sun-filled.",
+  "description": "The Tunisian salad of grilled peppers and tomatoes, peeled and hand-chopped with a knife, seasoned with garlic, harissa and olive oil. Smoky and sun-drenched.",
   "etapes": [
    {
     "titre": "Grill",
-    "detail": "Grill whole peppers and tomatoes until the skin blackens, in the oven or over a flame."
+    "detail": "Grill the whole peppers and tomatoes in the oven at 220°C or directly over a flame until the skin blackens and blisters, about 20 min."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Seal the grilled vegetables under a kitchen towel or in a closed bag for 10 min so the skins peel off easily."
    },
    {
     "titre": "Peel",
-    "detail": "Let cool under a cloth, then remove the skins and seeds."
+    "detail": "Remove the blackened skins, take out the seeds and stems, then drain off the excess juice."
    },
    {
     "titre": "Chop",
-    "detail": "Finely chop the vegetables with the garlic by knife."
+    "detail": "Finely hand-chop the peppers, tomatoes and garlic with a knife to get a rustic, jammy mixture."
    },
    {
     "titre": "Season",
-    "detail": "Mix with harissa, olive oil, cumin, salt and lemon."
+    "detail": "Mix with the harissa, olive oil, cumin, a pinch of salt and a dash of lemon juice."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest in the fridge for 15 min so the spices infuse and the flavors concentrate."
    },
    {
     "titre": "Serve",
-    "detail": "Serve cold, topped with tuna, olives or a hard-boiled egg as you like."
+    "detail": "Serve chilled, topped with flaked tuna, olives or a hard-boiled egg, with bread to mop it up."
    }
   ]
  },
  "korma": {
-  "nom": "Chicken Korma",
-  "description": "The gentle Indian curry: chicken simmered in a creamy yogurt-and-almond sauce, scented with ginger and mild spices. No heat.",
+  "nom": "Korma de Poulet",
+  "description": "The gentlest of Indian curries: chicken simmered in a creamy yogurt-and-almond sauce, perfumed with ginger and warm spices. No heat at all.",
   "etapes": [
    {
-    "titre": "The base",
-    "detail": "Soften the onion, garlic and ginger. Add the spices and toast for 1 minute."
+    "titre": "Prep",
+    "detail": "Cut the chicken into large cubes, finely slice the onion, and mince the garlic and fresh ginger together."
    },
    {
-    "titre": "Sear the chicken",
-    "detail": "Add the chicken pieces and brown them on all sides."
+    "titre": "Sweat",
+    "detail": "Soften the onion for 6 to 7 min over medium heat in a little oil, then add the garlic and ginger for 1 min."
    },
    {
-    "titre": "The sauce",
-    "detail": "Stir in the ground almonds, yogurt and a little water. Simmer covered for 20 minutes."
+    "titre": "Toast",
+    "detail": "Add the turmeric, cumin, and ground coriander, toasting for 1 min over low heat to awaken the spices."
    },
    {
-    "titre": "Add cream",
-    "detail": "Add the cream, adjust the salt and warm gently without boiling."
+    "titre": "Sear",
+    "detail": "Raise the heat, add the chicken cubes, and brown them on all sides for 5 min."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Stir in the ground almonds, yogurt, and a glass of water, cover, and let simmer over low heat for 20 min."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Pour in the cream, adjust the salt, and warm through for 3 min without boiling so the sauce won't split."
    },
    {
     "titre": "Serve",
-    "detail": "Sprinkle with cilantro and serve with rice or naan."
+    "detail": "Scatter with chopped fresh cilantro and serve hot with basmati rice or a warm naan."
    }
   ]
  },
  "vindaloo": {
-  "nom": "Pork Vindaloo",
-  "description": "The curry of Goa, a Portuguese legacy: pork marinated in vinegar, garlic and spices, then slow-simmered. Tangy, fiery and deep.",
+  "nom": "Porc Vindaloo",
+  "description": "The curry of Goa, a Portuguese legacy: pork marinated in vinegar, garlic, and spices, then slowly simmered. Tangy, fiery, and deep.",
   "etapes": [
    {
     "titre": "Marinate",
-    "detail": "Toss the diced pork with vinegar, garlic, ginger and spices. Marinate for at least 1 hour."
+    "detail": "Cut the pork into cubes and toss with the white vinegar, garlic, ginger, paprika, cumin, and turmeric; marinate for 1 h in the fridge."
    },
    {
-    "titre": "The onions",
-    "detail": "Fry the onions until deeply caramelized."
+    "titre": "Caramelize",
+    "detail": "Brown the sliced onion for 8 to 10 min over medium heat in a little oil until nicely caramelized."
    },
    {
     "titre": "Sear",
-    "detail": "Add the marinated pork and sear it over high heat for a few minutes."
+    "detail": "Drain the pork from its marinade and sear it over high heat for 4 to 5 min to color the meat well."
+   },
+   {
+    "titre": "Add tomato",
+    "detail": "Add the crushed tomatoes and the reserved marinade, stir, and cook for 3 min over medium heat."
    },
    {
     "titre": "Simmer",
-    "detail": "Add the tomatoes and a little water. Cover and simmer 35 minutes until the pork is tender."
+    "detail": "Add a glass of water, cover, and let simmer over low heat for 35 min until the pork is meltingly tender."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the acidity with a splash of vinegar, season with salt, and let the sauce reduce for 5 min uncovered."
    },
    {
     "titre": "Serve",
-    "detail": "Adjust the tang and salt, serve with basmati rice."
+    "detail": "Serve this spicy vindaloo piping hot, with plain basmati rice to temper the heat."
    }
   ]
  },
  "elote": {
   "nom": "Elote",
-  "description": "Mexico City's street corn: roasted cob slathered in lime crema, rolled in cheese and dusted with paprika. Comforting and addictive.",
+  "description": "Mexican street-style grilled corn: roasted on the cob, slathered in lime crema, rolled in cheese and dusted with paprika. Comforting and addictive.",
   "etapes": [
    {
-    "titre": "Grill the corn",
-    "detail": "Grill the corn cobs until golden and lightly charred."
+    "titre": "Prep",
+    "detail": "Husk the corn, remove the silk and wipe the cobs clean; grate the parmesan and chop the cilantro."
    },
    {
-    "titre": "The crema",
-    "detail": "Mix the mayonnaise, cream and a squeeze of lime."
+    "titre": "Grill",
+    "detail": "Grill the cobs for 10 min on a hot griddle or grill, turning regularly, until golden and lightly charred."
+   },
+   {
+    "titre": "Creamy sauce",
+    "detail": "Mix the mayonnaise, cream and a splash of lime juice into a smooth, tangy sauce."
    },
    {
     "titre": "Coat",
-    "detail": "Brush the hot cobs all over with the lime crema."
+    "detail": "Generously brush the still-warm cobs all over with the lime sauce."
    },
    {
     "titre": "Cheese & spice",
-    "detail": "Roll in the grated cheese, dust with paprika and cilantro."
+    "detail": "Immediately roll the cobs in the grated parmesan, then dust with paprika for color and a smoky flavor."
    },
    {
     "titre": "Serve",
-    "detail": "Serve right away with a lime wedge."
+    "detail": "Scatter with fresh cilantro and serve right away with a lime wedge, best enjoyed hot."
    }
   ]
  },
  "tamales": {
-  "nom": "Chicken Tamales",
-  "description": "The Mexican steamed parcels: tender corn dough filled with tomato chicken, cooked in their wrapper. A festive classic, unwrapped hot.",
+  "nom": "Tamales au Poulet",
+  "description": "The Mexican steamed parcels: tender corn dough filled with tomatoey chicken, cooked wrapped up. A holiday classic, to unwrap hot.",
   "etapes": [
    {
-    "titre": "The filling",
-    "detail": "Simmer the shredded chicken with tomato, garlic and paprika until the sauce thickens."
+    "titre": "Filling",
+    "detail": "Simmer the shredded chicken with the tomato, garlic, and paprika for 15 min until you get a thick sauce."
    },
    {
-    "titre": "The dough",
-    "detail": "Whip the butter, add the fine cornmeal and warm broth until a soft dough forms."
+    "titre": "Soak",
+    "detail": "Soak the corn husks in hot water for 20 min to soften them, then pat them dry."
    },
    {
-    "titre": "Fill",
-    "detail": "Spread the dough onto soaked corn husks, place the filling in the center."
+    "titre": "Dough",
+    "detail": "Whip the softened butter, then work in the fine polenta and hot broth until you have a smooth, supple dough."
    },
    {
-    "titre": "Wrap",
-    "detail": "Fold the husks into parcels and stand them upright in the steamer."
+    "titre": "Spread",
+    "detail": "Spread a layer of dough on each corn husk and place a spoonful of filling in the center."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold the husks into tightly sealed parcels and stand them upright in the steamer basket."
    },
    {
     "titre": "Steam",
-    "detail": "Steam for 45 minutes until the dough pulls away from the husk."
+    "detail": "Steam for 45 min, covered, until the dough pulls cleanly away from the husk."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool for 5 min, unwrap the parcels at the table, and serve with a spicy salsa."
    }
   ]
  },
  "pastitsio": {
   "nom": "Pastitsio",
-  "description": "The upright Greek lasagna: thick macaroni, cinnamon-spiced tomato meat, all crowned with golden béchamel. Generous and comforting.",
+  "description": "The vertical Greek lasagna: thick macaroni, cinnamon-spiced tomato meat, all crowned with a golden béchamel. Hearty and comforting.",
   "etapes": [
    {
-    "titre": "The pasta",
-    "detail": "Cook the thick macaroni al dente, drain and line the bottom of a buttered dish."
+    "titre": "Cook pasta",
+    "detail": "Cook the thick macaroni al dente in salted boiling water, drain, and line the bottom of a buttered dish."
    },
    {
-    "titre": "The meat",
-    "detail": "Sauté the onion and meat, add tomato and cinnamon. Simmer for 20 minutes."
+    "titre": "Brown",
+    "detail": "Sauté the sliced onion, then the ground beef for 6 to 8 min until the meat is nicely browned."
    },
    {
-    "titre": "The béchamel",
-    "detail": "Make a butter-flour roux, whisk in the milk and cook to a thick sauce. Bind with a little cheese."
+    "titre": "Simmer",
+    "detail": "Add the tomato and cinnamon, season with salt, then let simmer for 20 min over low heat until the sauce is concentrated."
    },
    {
-    "titre": "Layer",
-    "detail": "Spread the meat over the pasta, coat with béchamel, sprinkle with grated cheese."
+    "titre": "Béchamel",
+    "detail": "Make a butter-flour roux, whisk in the milk, and cook, stirring, until thick, then bind with a little cheese."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Spread the meat over the pasta, cover generously with béchamel, and sprinkle with grated cheese."
    },
    {
     "titre": "Bake",
-    "detail": "Bake at 180°C/350°F for 35 minutes until the top is well browned. Rest before slicing."
+    "detail": "Bake at 180°C for 35 min until the surface is deeply golden and puffed."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest for 10 min out of the oven so the layers hold together, then cut into clean portions."
    }
   ]
  },
  "dolmades": {
   "nom": "Dolmades",
-  "description": "Greece's stuffed vine leaves: rice scented with mint, dill and lemon, rolled tight and simmered in olive oil. Served cold.",
+  "description": "Greece's stuffed grape leaves: rice scented with mint, dill, and lemon, rolled tight and simmered in olive oil. Served cold.",
   "etapes": [
    {
-    "titre": "Prepare the leaves",
-    "detail": "Blanch the vine leaves to soften them and remove the stems."
+    "titre": "Prep the Leaves",
+    "detail": "Blanch the grape leaves for 2 minutes in simmering water to soften them, then remove the stems and pat them dry."
    },
    {
-    "titre": "The filling",
-    "detail": "Sauté the onion, add the rice, mint, dill and a little water. Cook halfway."
+    "titre": "Sweat the Onion",
+    "detail": "Finely slice the onion and sauté it gently in olive oil until it turns translucent."
+   },
+   {
+    "titre": "The Filling",
+    "detail": "Add the rice with the chopped mint and dill and a little water, then cook halfway so the rice stays slightly firm."
    },
    {
     "titre": "Roll",
-    "detail": "Place a spoon of filling on each leaf and roll tightly, folding in the sides."
+    "detail": "Place a spoonful of filling on each leaf, vein-side up, fold in the sides, and roll up tightly into little cigars."
    },
    {
     "titre": "Simmer",
-    "detail": "Pack tightly in a pot, add oil, lemon and water. Cook covered for 40 minutes."
+    "detail": "Pack the dolmades tightly in a saucepan, drizzle with olive oil, lemon juice, and water, then cook covered over low heat for 40 minutes."
    },
    {
     "titre": "Serve",
-    "detail": "Let cool and serve cold with a squeeze of lemon."
+    "detail": "Let them cool completely and serve cold, with one last drizzle of lemon."
    }
   ]
  },
  "galaktoboureko": {
   "nom": "Galaktoboureko",
-  "description": "The ultimate Greek dessert: silky semolina custard wrapped in crisp filo, soaked in lemon syrup. Crunchy and melting at once.",
+  "description": "The ultimate Greek dessert: silky semolina custard wrapped in crisp phyllo, the whole thing soaked in lemony syrup. Crunchy and meltingly soft.",
   "etapes": [
    {
-    "titre": "The custard",
-    "detail": "Heat the milk, rain in the semolina and cook to a thick custard. Off the heat, add eggs, sugar and zest."
+    "titre": "Cook custard",
+    "detail": "Heat the milk with the sugar, rain in the semolina and cook, stirring, until you have a thick custard."
    },
    {
-    "titre": "The filo",
-    "detail": "Butter the filo sheets one by one and line a dish, letting them overhang."
+    "titre": "Bind",
+    "detail": "Off the heat, whisk in the eggs and lemon zest briskly for a smooth, glossy custard."
+   },
+   {
+    "titre": "Layer phyllo",
+    "detail": "Butter the phyllo sheets one by one and line the dish, letting them hang over the edges."
    },
    {
     "titre": "Fill",
-    "detail": "Pour in the custard, fold the filo over and butter the top."
+    "detail": "Pour the custard over the phyllo, fold the overhanging sheets back on top, then butter the whole surface."
    },
    {
     "titre": "Bake",
-    "detail": "Bake at 180°C/350°F for 40 minutes until the top is golden and crisp."
+    "detail": "Bake at 180°C for 40 min until the top is golden and nicely crisp."
    },
    {
-    "titre": "Syrup",
-    "detail": "Drench the hot cake with cold lemon syrup (sugar, honey, lemon) and let it soak."
+    "titre": "Make syrup",
+    "detail": "Meanwhile, cook a syrup of sugar, honey and lemon, then let it cool completely."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Drizzle the cold syrup over the hot pastry and let it soak in for 1 hr before cutting into pieces."
    }
   ]
  },
  "gemista": {
   "nom": "Gemista",
-  "description": "The Greek Sunday stuffed vegetables: tomatoes and peppers filled with herbed rice, roasted with potatoes. Vegetarian and full of sun.",
+  "description": "The Greek Sunday stuffed vegetables: tomatoes and peppers filled with herbed rice, roasted with potatoes. Vegetarian and full of sunshine.",
   "etapes": [
    {
     "titre": "Hollow out",
-    "detail": "Cut a cap off the tomatoes and peppers, hollow them out and keep the tomato flesh."
+    "detail": "Cut a cap off the tomatoes and peppers, gently hollow them out, and set the tomato flesh aside."
    },
    {
-    "titre": "The filling",
-    "detail": "Sauté onion and garlic, add the rice, tomato flesh and parsley. Cook halfway."
+    "titre": "Sauté",
+    "detail": "Sauté the chopped onion and garlic in olive oil for 5 min until they turn translucent."
    },
    {
-    "titre": "Fill",
-    "detail": "Fill the vegetables two-thirds full (the rice swells), set the caps back on."
+    "titre": "Filling",
+    "detail": "Add the rice, tomato flesh, and chopped parsley, season with salt, and cook for 5 min to half-cook the rice."
    },
    {
-    "titre": "In the dish",
-    "detail": "Arrange in a dish with potato wedges, drizzle with olive oil."
+    "titre": "Stuff",
+    "detail": "Fill the vegetables only two-thirds full, since the rice swells, then replace the caps."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Arrange the vegetables in a dish, tuck potato wedges between them, and drizzle with olive oil."
    },
    {
     "titre": "Roast",
-    "detail": "Roast at 180°C/350°F for about 1 hour, basting, until everything is tender and golden."
+    "detail": "Bake at 180°C for about 1 h, basting halfway through, until the vegetables are tender and golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool and serve these gemista at room temperature, drizzled with the cooking juices."
    }
   ]
  },
  "pulpogallega": {
   "nom": "Pulpo a la Gallega",
-  "description": "Galician-style octopus: slices of tender octopus over potatoes, generously dusted with smoked paprika and drizzled with olive oil.",
+  "description": "Galician-style octopus: slices of tender octopus on a bed of potatoes, generously dusted with smoked paprika and drizzled with olive oil.",
   "etapes": [
    {
-    "titre": "Cook the octopus",
-    "detail": "Dip the octopus into boiling water three times, then cook for 40 minutes until tender."
+    "titre": "Scare the Octopus",
+    "detail": "Dip the octopus into boiling water three times for a few seconds before leaving it in: this thermal shock tenderizes the flesh and curls the tentacles nicely."
    },
    {
-    "titre": "The potatoes",
-    "detail": "Cook the potatoes in the same water, then slice into rounds."
+    "titre": "Cook the Octopus",
+    "detail": "Let the octopus cook at a simmer for about 40 minutes, until the tip of a knife slides in without resistance."
+   },
+   {
+    "titre": "Potatoes",
+    "detail": "Cook the whole potatoes in the same flavored water for 20 to 25 minutes, then peel them and cut into thick rounds."
    },
    {
     "titre": "Slice",
-    "detail": "Cut the octopus tentacles into 1 cm slices with scissors."
+    "detail": "Cut the octopus tentacles into slices about 1 cm thick, traditionally with scissors to preserve the texture."
    },
    {
     "titre": "Plate",
-    "detail": "Arrange the potatoes, octopus on top, on a wooden plate if possible."
+    "detail": "Lay the potato rounds out as a bed on a wooden plate, then arrange the octopus slices on top."
    },
    {
     "titre": "Season",
-    "detail": "Dust with smoked paprika, coarse salt and drizzle with olive oil."
+    "detail": "Dust generously with smoked paprika, sprinkle with coarse salt, and drizzle with olive oil; serve right away, warm."
    }
   ]
  },
  "pistomanchego": {
   "nom": "Pisto Manchego",
-  "description": "The Spanish ratatouille of La Mancha: eggplant, zucchini, pepper and tomato stewed in olive oil. Served with a fried egg on top.",
+  "description": "The Spanish ratatouille of La Mancha: eggplant, zucchini, pepper, and tomato simmered in olive oil. Served with a fried egg on top.",
   "etapes": [
    {
-    "titre": "The sofrito",
-    "detail": "Sweat the onion and garlic in olive oil over low heat."
+    "titre": "Dice",
+    "detail": "Cut the eggplant, zucchini, pepper, and onion into small even dice and mince the garlic."
    },
    {
-    "titre": "The vegetables",
-    "detail": "Add the diced pepper, eggplant and zucchini. Cook 15 minutes, stirring."
+    "titre": "Sofrito",
+    "detail": "Sweat the onion and garlic in olive oil over low heat for 5 min without coloring them."
    },
    {
-    "titre": "The tomato",
-    "detail": "Stir in the chopped tomatoes and let stew for 20 minutes over low heat."
+    "titre": "Vegetables",
+    "detail": "Add the diced pepper, eggplant, then zucchini and cook for 15 min, stirring regularly."
+   },
+   {
+    "titre": "Stew",
+    "detail": "Stir in the crushed tomatoes and let stew for 20 min over low heat until the liquid evaporates."
    },
    {
     "titre": "Season",
-    "detail": "Season with salt and pepper and reduce until soft and jammy."
+    "detail": "Season with salt and pepper and let reduce a few more minutes into a soft, glossy stew."
    },
    {
     "titre": "Serve",
-    "detail": "Serve hot, topped with a fried egg and country bread."
+    "detail": "Serve hot, crowned with a runny-yolk fried egg, alongside thick slices of country bread."
    }
   ]
  },
  "ajoblanco": {
   "nom": "Ajoblanco",
-  "description": "Andalusia's white gazpacho: a chilled velvety soup of almonds, garlic and bread, bound with olive oil and vinegar. Served cold with grapes.",
+  "description": "Andalusia's white gazpacho: a chilled velouté of almonds, garlic, and bread, bound with olive oil and vinegar. Served cold with grapes.",
   "etapes": [
    {
     "titre": "Soak",
-    "detail": "Soak the bread crumb in a little cold water."
+    "detail": "Soak the bread crumb in a little cold water for a few minutes until it is thoroughly saturated."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Gather the blanched almonds, degermed garlic, and soaked bread, then add well-chilled water for blending."
    },
    {
     "titre": "Blend",
-    "detail": "Blend the almonds, garlic, soaked bread and iced water until silky smooth."
+    "detail": "Blend the almonds, garlic, and bread with the ice water at length until you get a perfectly smooth, creamy velouté."
    },
    {
     "titre": "Emulsify",
-    "detail": "Pour in the olive oil in a thin stream while blending, then the vinegar and salt."
+    "detail": "With the motor running, pour in the olive oil in a thin stream to emulsify, then add the sherry vinegar and salt."
    },
    {
     "titre": "Chill",
-    "detail": "Chill for at least 2 hours to serve ice-cold."
+    "detail": "Chill the soup at least 2 h so it is served ice-cold and the flavors meld together."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "At serving time, adjust the texture with ice water if needed and garnish with fresh or dried grapes."
    },
    {
     "titre": "Serve",
-    "detail": "Serve garnished with grapes and a drizzle of olive oil."
+    "detail": "Serve the ajoblanco very cold, drizzled with a final stream of olive oil and a turn of the pepper mill."
    }
   ]
  },
  "tonkatsu": {
   "nom": "Tonkatsu",
-  "description": "The Japanese breaded pork cutlet: an ultra-crisp panko crust over a tender, juicy center. Sliced and served on raw cabbage with rice.",
+  "description": "The Japanese breaded pork cutlet: an ultra-crispy panko crust over a tender, juicy center. Sliced and served on raw cabbage, with rice.",
   "etapes": [
    {
-    "titre": "Prepare the pork",
-    "detail": "Score the edges of the pork chops and flatten them slightly. Season with salt and pepper."
+    "titre": "Prep",
+    "detail": "Score the edges of the pork chops so they won't curl, flatten them lightly, and season with salt and pepper."
    },
    {
     "titre": "Bread",
-    "detail": "Coat the pork in flour, beaten egg, then panko, pressing firmly."
+    "detail": "Coat each chop in flour, beaten egg, then panko, pressing firmly for an even crust."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Shred the cabbage very finely and plunge it into ice water for 5 min to make it extra crisp."
+   },
+   {
+    "titre": "Heat oil",
+    "detail": "Heat the frying oil to 170°C, checking that a bit of dropped panko sizzles right away."
    },
    {
     "titre": "Fry",
-    "detail": "Fry in oil at 170°C/340°F for 3-4 minutes per side until golden. Drain."
+    "detail": "Fry the pork for 3 to 4 min per side until the crust is golden and crispy, then drain on paper."
    },
    {
-    "titre": "The cabbage",
-    "detail": "Shred the cabbage very finely and rinse in iced water so it stays crisp."
+    "titre": "Slice",
+    "detail": "Let rest for 2 min, then slice the tonkatsu into even strips about 2 cm wide."
    },
    {
     "titre": "Serve",
-    "detail": "Slice the tonkatsu into strips, serve on the cabbage with rice and tonkatsu sauce."
+    "detail": "Plate over the drained cabbage with a bowl of rice and drizzle with tonkatsu sauce."
    }
   ]
  },
  "kartoffelsalat": {
   "nom": "German Potato Salad",
-  "description": "The real German potato salad, no mayonnaise: warm potatoes soaked in a mustardy vinegar broth, with bacon and pickles.",
+  "description": "The real German potato salad, without mayo: warm potatoes soaked in a tangy mustard broth, with bacon and pickles.",
   "etapes": [
    {
     "titre": "Cook",
-    "detail": "Boil the potatoes in their skins, peel while warm and slice into rounds."
+    "detail": "Cook the firm-fleshed potatoes in their skins for 20 to 25 min in gently simmering salted water, until a knife slides through without resistance."
    },
    {
-    "titre": "The bacon",
-    "detail": "Brown the bacon, add the diced onion and sweat it."
+    "titre": "Slice",
+    "detail": "Drain, peel the potatoes while still warm and cut them into even 5 mm rounds in a large bowl."
    },
    {
-    "titre": "The warm dressing",
-    "detail": "Deglaze with the warm broth, vinegar and mustard. Season with salt and pepper."
+    "titre": "Sear",
+    "detail": "Brown the bacon over high heat for 4 to 5 min in a pan, add the finely chopped onion and let it sweat for 3 min until translucent."
+   },
+   {
+    "titre": "Dressing",
+    "detail": "Deglaze the pan with the hot broth, wine vinegar and mustard, whisk off the heat, season with salt and pepper to get a warm emulsified dressing."
    },
    {
     "titre": "Toss",
-    "detail": "Pour the warm dressing over the warm potatoes, add the pickles. Toss gently."
+    "detail": "Pour the warm dressing over the warm potatoes, add the sliced pickles and toss gently so they don't break up."
    },
    {
     "titre": "Rest",
-    "detail": "Let rest 30 minutes so the potatoes soak it all up. Sprinkle with parsley."
+    "detail": "Let rest 30 min at room temperature so the potatoes soak up the dressing and broth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning, scatter with chopped parsley and serve warm, alongside a grilled sausage."
    }
   ]
  },
-  skyrbowlproteine: { nom: "Protein Skyr Bowl", description: "High-protein skyr, banana, berries, oats and peanut butter. The athlete's breakfast, ready in 5 minutes." },
-  omeletteblancs: { nom: "Egg-White & Spinach Omelette", description: "Ultra-high-protein, low-fat omelette: egg whites, spinach and fromage blanc. Perfect for cutting." },
-  porridgewhey: { nom: "Whey Protein Porridge", description: "Oat porridge boosted with whey, banana and peanut butter. Perfect pre-workout fuel." },
-  oeufsbrouillesavocat: { nom: "Scrambled Eggs & Avocado", description: "Creamy scrambled eggs, avocado and wholegrain bread. Protein and healthy fats to start the day." },
-  fbgranolaproteine: { nom: "Protein Fromage Blanc & Granola", description: "Fromage blanc whipped with a scoop of whey, crunchy granola and berries. Filling and tasty." },
-  pouletrizbrocoli: { nom: "Grilled Chicken, Rice & Broccoli", description: "The lean-bulking classic: grilled chicken breast, rice and steamed broccoli. Simple, clean, effective." },
-  dindelegumeswok: { nom: "Stir-Fried Turkey & Veggies", description: "Lean turkey strips stir-fried with zucchini and pepper, soy sauce and ginger. Light and high in protein." },
-  bowlpouletpatatedouce: { nom: "Chicken & Sweet Potato Bowl", description: "Complete bowl: roasted chicken, sweet potato, spinach and avocado. Slow carbs and protein to power your day." },
-  colinquinoabrocoli: { nom: "Pollock Fillet, Quinoa & Broccoli", description: "Lean white fish, protein-rich quinoa and broccoli. A light, complete meal, perfect for dinner." },
-  saladethonharicotsblancs: { nom: "Tuna & White Bean Salad", description: "High-protein cold salad: tuna, white beans, tomato and red onion. Ready in 10 minutes, great for meal-prep." },
-  tempehpoelelegumes: { nom: "Pan-Fried Tempeh & Veggies", description: "Tempeh, a complete plant protein, pan-fried with broccoli and pepper, soy-ginger sauce. Vegan and filling." },
-  steakhachepatatedouce: { nom: "Lean Beef Patty & Sweet Potato", description: "5%-fat beef patty, sweet potato and green beans. Lean protein and slow carbs." },
-  eminceboeufharicotsverts: { nom: "Beef Strips & Green Beans", description: "Lean beef strips stir-fried with green beans, garlic and ginger. Rich in protein and iron." },
-  crevettessauteesriz: { nom: "Stir-Fried Shrimp & Rice", description: "Lean, high-protein shrimp stir-fried with broccoli, garlic and ginger. Light and quick." },
-  pouletmarineyaourt: { nom: "Yogurt-Marinated Spiced Chicken", description: "Chicken marinated in yogurt, paprika and cumin then grilled, served with rice. Tender, fragrant and high-protein." },
-  cabillaudvapeurcourgette: { nom: "Steamed Cod, Rice & Zucchini", description: "Ultra-lean steamed cod, rice and lemony zucchini. The perfect cutting dinner." },
-  bowlthonrizavocat: { nom: "Tuna, Rice & Avocado Bowl", description: "Poke-style bowl: tuna, rice, avocado, cucumber and edamame, soy sauce. Fresh, high-protein and filling." },
-  boulesproteinees: { nom: "Oat-Whey Protein Balls", description: "No-bake energy balls: oats, whey, peanut butter and honey. The grab-and-go post-workout snack." },
-  cottagecheesefruits: { nom: "Cottage Cheese & Fruit", description: "Casein-rich cottage cheese, berries and oats. The ideal bedtime snack." },
-  oeufsdurspaprika: { nom: "Paprika Hard-Boiled Eggs", description: "The simplest protein snack: hard-boiled eggs dusted with paprika. Handy and cheap." },
-  edamamepimentes: { nom: "Spicy Edamame", description: "Protein-rich edamame beans spiced with chilli and soy sauce. Guilt-free snacking." },
-  shakeproteinemaison: { nom: "Homemade Protein Shake", description: "Post-workout shake: whey, milk, banana and peanut butter. Recovery and pleasure in one glass." },
-  steakseitan: { nom: "Grilled Seitan Steak", description: "Seitan, the plant-protein champion (24 g/100 g), grilled and deglazed with soy sauce and peppers. Vegan and very high-protein." },
-  tofubrouille: { nom: "Vegan Tofu Scramble", description: "The vegan take on scrambled eggs: crumbled tofu with turmeric, spinach and tomato. High-protein and ready in 10 minutes." },
-  lentillesbolo: { nom: "Lentil Bolognese", description: "A meat-free bolognese, rich in protein and fibre: lentils simmered in a vegetable tomato sauce. Serve with pasta." },
-  tempehcurrycoco: { nom: "Tempeh Coconut Curry", description: "Tempeh simmered in a creamy coconut curry with spinach, served over rice. Complete plant protein, full of flavour." },
-  boulettesvege: { nom: "Lentil-Chickpea Veggie Balls", description: "High-protein veggie balls of lentils and chickpeas, simmered in tomato sauce. With rice, a complete vegan meal." },
-  bowledamamequinoa: { nom: "Edamame-Quinoa Bowl", description: "Fresh, high-protein bowl: edamame, quinoa, avocado and raw veggies, soy sauce. Vegan, complete and great for meal-prep." },
-  brochettespouletbbq: { nom: "BBQ Marinated Chicken Skewers", description: "Chicken skewers marinated in paprika and garlic, alternated with peppers and onions, grilled on the barbecue. Summer on a plate." },
-  gambasgrilleesail: { nom: "Garlic Grilled Prawns", description: "Prawns grilled on the plancha with garlic, parsley and a squeeze of lemon. Simple, quick and summery." },
-  brochetteshalloumi: { nom: "Halloumi & Veggie Skewers", description: "Grilled halloumi that holds its shape, alternated with zucchini, pepper and cherry tomato. Vegetarian and perfect on the barbecue." },
-  poulettandoorigrille: { nom: "Grilled Tandoori Chicken", description: "Chicken marinated in yogurt and tandoori spices (paprika, cumin, ginger) then grilled. Tender, fragrant and beautifully coloured." },
-  legumesplancha: { nom: "Plancha Grilled Vegetables", description: "Zucchini, pepper, aubergine and onion seared on the plancha with olive oil and garlic. Light, colourful and full of sun." },
-  traversbbq: { nom: "BBQ Pork Ribs", description: "Pork ribs glazed with honey and paprika, tender and caramelised. The great American barbecue classic." },
-  saladetomateburrata: { nom: "Tomato & Burrata Salad", description: "Ripe tomatoes, creamy burrata, basil and olive oil. Italian simplicity at its peak, in high summer." },
-  cotelettesagneaugrille: { nom: "Grilled Lamb Chops", description: "Lamb chops marinated with garlic and thyme, grilled pink. A barbecue classic, simple and tasty." },
-  kukusabzi: { nom: "Kuku Sabzi (Persian Herb Frittata)", description: "Persian herb frittata: eggs with plenty of spinach, parsley and coriander. Green, fragrant and fresh." },
-  tahdig: { nom: "Tahdig (Persian Crispy Rice)", description: "The jewel of Persian cooking: saffron rice with a golden, crispy crust at the bottom of the pot. Spectacular." },
-  vareniki: { nom: "Vareniki", description: "Ukrainian dumplings filled with mashed potato and soft onions, served with butter. Comfort guaranteed." },
-  redred: { nom: "Red Red (Ghanaian Bean Stew)", description: "Ghanaian bean stew with palm oil and tomato, spiced with ginger. Served with rice, a generous vegetarian dish." },
-  gallopinto: { nom: "Gallo Pinto", description: "Costa Rica's national dish: rice and beans stir-fried with onion, pepper and coriander. Simple, cheap and tasty, any time of day." },
-  irishstew: { nom: "Irish Stew", description: "Ireland's national stew: lamb slow-cooked with potatoes, carrots and onions. Simple, tender, comforting." },
-  colcannon: { nom: "Colcannon", description: "Irish mashed potato with green cabbage and butter, dotted with onion. Comforting and creamy, the perfect side." },
-  caripoulet: { nom: "Réunion Chicken Curry", description: "Réunion's Creole curry: chicken simmered with tomato, onion and turmeric. Fragrant and colourful, served with rice." },
-  bourekas: { nom: "Bourekas", description: "Golden Israeli pastries filled with feta and spinach. Crisp and melty, perfect as a starter or snack." },
-  malabi: { nom: "Malabi", description: "Middle-Eastern milk pudding, lightly fragrant, topped with red berries. Fresh and delicate." },
-  bourekalg: { nom: "Algerian Bourek", description: "Crispy rolls filled with minced meat and onions, fried until golden. A Ramadan classic." },
-  chakhchoukha: { nom: "Chakhchoukha", description: "Berber dish: torn semolina flatbread simmered in a lamb sauce with chickpeas and tomato. Comforting and fragrant." },
-  ashreshteh: { nom: "Ash Reshteh", description: "Thick Persian soup with herbs, pulses and noodles. Green, nourishing — Persian comfort at its best." },
-  strukli: { nom: "Štrukli", description: "Croatian specialty: thin dough filled with fresh cheese, rolled and baked in cream. Soft and comforting." },
-  peka: { nom: "Croatian Peka", description: "Chicken and vegetables slow-roasted under a bell, with olive oil. Tender, golden and fragrant with Adriatic herbs." },
-  halusky: { nom: "Bryndzové Halušky", description: "Slovakia's national dish: small potato dumplings with sheep cheese and bacon. Rich and comforting." },
-  maftoul: { nom: "Maftoul", description: "Large-grain Palestinian couscous, simmered with chicken, chickpeas and spices. Hand-rolled and generous." },
-  pondu: { nom: "Pondu (Saka-Saka)", description: "Congolese dish of greens simmered with palm oil and onion. Served with rice, tasty and nourishing." },
-  casado: { nom: "Casado", description: "Costa Rica's complete plate: rice, beans, egg, plantain and meat. Balanced and colourful." },
-  sinigang: { nom: "Sinigang", description: "Filipino sour soup with pork and vegetables, soured with tamarind (lemon here). Comforting and bright." },
-  pancit: { nom: "Pancit", description: "Filipino stir-fried noodles with chicken and crunchy vegetables, soy sauce. The party dish — quick and tasty." },
-  karekare: { nom: "Kare-Kare", description: "Filipino beef stew in peanut sauce, with aubergine and green beans. Creamy, rich and unique." },
-  stamppot: { nom: "Stamppot", description: "Dutch mash blended with cabbage, served with a smoked sausage. The ultimate comforting winter dish." },
-  bitterballen: { nom: "Bitterballen", description: "Dutch beef croquettes, breaded and fried, melting inside. The essential Dutch snack, with mustard." },
-  cornishpasty: { nom: "Cornish Pasty", description: "The Cornish hand pie: shortcrust filled with beef, potato and turnip. Hearty and rustic." },
-  gibanica: { nom: "Gibanica", description: "Serbian layered cheese pie, golden and crisp. The Balkan celebration dish." },
-  kaluapork: { nom: "Kalua Pork", description: "Hawaiian pulled pork, slow-cooked and smoky, with cabbage. Tender, savoury and irresistible." },
-  machanka: { nom: "Machanka", description: "Creamy Belarusian pork-and-bacon gravy. Served with potato pancakes, a cold-weather treat." },
-  tequenos: { nom: "Tequeños", description: "Cheese sticks wrapped in dough and fried, crispy outside and stringy inside. Venezuela's beloved snack." },
-  ebleskiver: { nom: "Æbleskiver", description: "Danish pancake balls, golden and fluffy, dusted with sugar. Denmark's Christmas comfort." },
-  toadinthehole: { nom: "Toad in the Hole", description: "English sausages baked in a puffed, golden Yorkshire batter. Comforting and convivial." },
-  pljeskavica: { nom: "Pljeskavica", description: "The Balkan 'burger': a spiced beef patty with garlic and paprika, grilled. Juicy, served in bread." },
-  gheimeh: { nom: "Khoresh Gheimeh", description: "Persian beef stew with split peas and tomato, fragrant. Served with rice, a comforting classic." },
-  sheftalia: { nom: "Sheftalia", description: "Grilled Cypriot sausages of minced pork, onion and parsley. Juicy and fragrant, served in pita." },
-  kleftiko: { nom: "Kleftiko", description: "Cypriot lamb slow-cooked in a parcel with potatoes, lemon and oregano. Spoon-tender." },
-  sopanegra: { nom: "Sopa Negra", description: "Costa Rican black bean soup with pepper and coriander, topped with a poached egg. Nourishing and fragrant." },
-  eru: { nom: "Eru", description: "Cameroonian dish of greens simmered in palm oil with meat and shrimp. Rich and typical of the West." },
-  kapustnica: { nom: "Kapustnica", description: "Slovak sauerkraut soup with smoked sausage and potato, spiced with paprika. Slovakia's Christmas comfort." },
-  couscousalgerien: { nom: "Algerian Couscous", description: "The Friday couscous: steamed semolina, tender lamb and vegetables (courgette, carrot, chickpeas) simmered in a fragrant broth." },
-  tajinezitoune: { nom: "Tajine Zitoune (Olive Tagine)", description: "Algerian chicken tagine with green olives and lemon in a creamy white carrot sauce. Elegant and tangy." },
-  rechta: { nom: "Rechta", description: "Handmade flat noodles served in a white chicken sauce with chickpeas and turnip, scented with cinnamon. An Algiers celebration dish." },
-  mhadjeb: { nom: "M'hadjeb (Stuffed Semolina Crêpes)", description: "Flaky semolina crêpes filled with a tomato, onion and pepper compote. Algerian street food, pan-seared golden." },
-  berkoukes: { nom: "Berkoukes", description: "Large semolina pearls simmered in a lamb and vegetable tomato sauce. A rustic, comforting soup-stew." },
-  kalbellouz: { nom: "Kalb el Louz (Almond Semolina Cake)", description: "Almond semolina cake soaked in a honey and orange-blossom syrup. \"Heart of almond\", a Ramadan sweet." },
-  garantita: { nom: "Garantita (Chickpea Flan)", description: "Cumin-spiced chickpea-flour flan baked and served in slices. An iconic Algiers snack, golden and soft." },
-  makrout: { nom: "Makrout (Date Semolina Pastry)", description: "Semolina diamonds filled with date paste, fried then dipped in honey. The Maghreb's flagship pastry." },
-  couscoustunisien: { nom: "Tunisian Fish Couscous", description: "Coastal couscous: steamed semolina, cod and vegetables in a red harissa-spiced broth. Sea and heat." },
-  kafteji: { nom: "Kafteji", description: "Fried vegetables (pepper, tomato, courgette) knife-chopped and bound with egg, spiced with harissa. Tunisian comfort food." },
-  mloukhia: { nom: "Tunisian Mloukhia", description: "Beef stew slow-cooked in a dark-green jute-leaf-powder sauce with olive oil and garlic. Deep and velvety." },
-  bambalouni: { nom: "Bambalouni", description: "Tunisian ring doughnut, fried to order and rolled in sugar. Crisp outside, fluffy inside — a seaside memory." },
-  tajinmalsouka: { nom: "Tajine Malsouka", description: "Tunisian tajine (nothing like the Moroccan one): a baked gratin of minced meat, eggs and brick pastry. Golden and hearty." },
-  fondue: { nom: "Moitié-Moitié Cheese Fondue", description: "The quintessential Swiss fondue: half Gruyère, half Fribourg Vacherin, melted in white wine and bound with kirsch. Shared from the caquelon." },
-  malakoff: { nom: "Vaud Malakoffs (Cheese Fritters)", description: "Fried Gruyère fritters from canton Vaud, crisp outside and molten inside. A treat from the Côte region's festivities." },
-  papetvaudois: { nom: "Papet Vaudois", description: "Leeks and potatoes stewed in white wine, crowned with a cabbage sausage. Canton Vaud's emblematic winter dish." },
-  zopf: { nom: "Zopf (Swiss Butter Braid)", description: "The Swiss Sunday butter braid: soft, stretchy crumb with an egg-glazed golden crust. The bread of the Sunday brunch." },
-  fonduechocolat: { nom: "Chocolate Fondue", description: "Swiss chocolate melted with cream, kept warm in the caquelon for dipping fruit and biscuits. The ultimate sharing dessert." },
-  zurichgeschnetzeltes: { nom: "Zürich-Style Veal", description: "Thin strips of veal and mushrooms in a creamy white-wine sauce. Zürich's great classic, served with rösti." },
-  capuns: { nom: "Capuns", description: "A Grisons specialty: bacon spätzle batter wrapped in chard leaves, poached then gratinated. Rustic and comforting." },
-  tafelspitz: { nom: "Tafelspitz (Boiled Beef)", description: "Beef slowly poached in a vegetable broth, sliced and served with horseradish sauce. Emperor Franz Joseph's favourite dish." },
-  frittatensuppe: { nom: "Frittatensuppe (Pancake Soup)", description: "Clear beef broth garnished with thin strips of savoury pancake. The ultimate comforting Viennese soup." },
-  germknodel: { nom: "Germknödel", description: "A large yeast-dough dumpling filled with plum jam, steamed and topped with melted butter and sweet poppy seeds. A dessert of Austrian mountain huts." },
-  linzertorte: { nom: "Linzertorte", description: "The world's oldest cake: an almond-cinnamon shortcrust filled with redcurrant jam under a lattice. A specialty of Linz." },
-  kasespatzle: { nom: "Käsespätzle (Cheese Spätzle)", description: "Fresh little noodles gratinated with mountain cheese and topped with fried onions. The Tyrolean Alps' mac & cheese." },
-  grostl: { nom: "Tiroler Gröstl", description: "Tyrolean pan-fry of potatoes and beef sautéed with onion, crowned with a fried egg. Mountain comfort food that fights waste." },
-  backhendl: { nom: "Backhendl (Viennese Fried Chicken)", description: "Viennese-breaded chicken, fried golden and crisp, served with lemon. The festive ancestor of fried chicken, dear to imperial Austria." },
-  waakye: { nom: "Waakye", description: "Rice and beans cooked together with sorghum leaves that dye them red. The king of Accra street breakfasts." },
-  groundnutsoup: { nom: "Groundnut Soup (Nkatenkwan)", description: "A creamy peanut-butter soup with chicken, tomato and ginger. Ghana's velvety Sunday comfort, served with rice." },
-  banku: { nom: "Banku", description: "A lightly fermented corn-and-cassava dough worked into a smooth ball. The tangy companion to Ghanaian soups and stews." },
-  lightsoup: { nom: "Ghanaian Light Soup", description: "A clear, spicy broth with fish, tomato, ginger and chilli. Light, fragrant and famously revitalising when a cold strikes." },
-  kontomire: { nom: "Kontomire (Palaver Sauce)", description: "A stew of greens in palm oil with fish and onion. The cocoyam-leaf spinach sauce, rich and earthy." },
-  tatale: { nom: "Tatale (Plantain Pancakes)", description: "Ripe-plantain fritters spiked with ginger and chilli, fried golden. Ghana's sweet-and-spicy snack." },
-  shito: { nom: "Shito (Black Pepper Sauce)", description: "Ghana's black chilli sauce, slow-cooked in oil with shrimp, onion and ginger. It keeps well and lifts absolutely everything." },
-  garba: { nom: "Garba", description: "The cult Ivorian street food: attiéké and fried tuna with onion and chilli. Simple, cheap and dangerously addictive." },
-  saucegraine: { nom: "Sauce Graine (Palm Nut Stew)", description: "A rich palm-nut-pulp stew with beef and chilli. Deep red and powerful, served with rice or foutou." },
-  saucearachide: { nom: "Peanut Sauce", description: "A creamy chicken stew with peanut paste, tomato and ginger. Rich and hearty, a great West-African classic." },
-  foutou: { nom: "Foutou (Pounded Plantain)", description: "Plantain and cassava pounded into a smooth, elastic dough. The essential companion to Ivorian sauces." },
-  poissonbraise: { nom: "Braised Fish", description: "A whole fish marinated in ginger and lemon, braised over wood fire. The star of Ivorian maquis, served with attiéké and alloco." },
-  sauceclaire: { nom: "Sauce Claire (Okra & Fish)", description: "A light okra-thickened broth with fish, tomato and chilli. The slippery, comforting everyday Ivorian sauce." },
-  saucegombo: { nom: "Okra Stew", description: "A stringy okra stew in palm oil with beef, spiced with chilli. A unique texture, served with a pounded starch." },
-  koki: { nom: "Koki (Black-Eyed Pea Cake)", description: "A ground black-eyed-pea flan with palm oil and greens, steamed in banana leaves. Creamy and nourishing." },
-  kondre: { nom: "Kondré (Plantain & Beef Stew)", description: "A spiced plantain-and-beef stew, simmered until meltingly tender. A celebration dish of western Cameroon." },
-  mbongotchobi: { nom: "Mbongo Tchobi (Black Stew)", description: "A black, powerful fish stew made with charred mbongo spices. Spectacular, smoky and deeply fragrant." },
-  achu: { nom: "Achu (Yellow Soup)", description: "Pounded yam paste served with a yellow palm-oil-and-beef soup. A ceremonial dish of the Grassfields." },
-  brochettescamerounaises: { nom: "Soya (Cameroonian Beef Skewers)", description: "Grilled beef skewers coated in a spiced peanut rub. The \"soya\" of Cameroonian charcoal-grill evenings." }
+ "skyrbowlproteine": {
+  "nom": "Protein Skyr Bowl",
+  "description": "Protein-rich skyr, banana, berries, oats, and peanut butter. The athlete's breakfast, ready in 5 minutes.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Pick a well-chilled plain skyr and whisk it for a few seconds until smooth and creamy before spooning it into a bowl."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Peel the banana and cut it into thin, even rounds, then gently rinse the berries and pat them dry."
+   },
+   {
+    "titre": "Top",
+    "detail": "Arrange the banana rounds and berries attractively over the skyr, in distinct sections for a pretty look."
+   },
+   {
+    "titre": "Sprinkle",
+    "detail": "Scatter the rolled oats over the top to add crunch and fiber to the bowl."
+   },
+   {
+    "titre": "Drizzle",
+    "detail": "Add a spoonful of peanut butter in the center, gently warmed if needed so it's runny and easy to spread."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Finish with a drizzle of honey over everything and enjoy right away, while the banana is fresh and the oats are crisp."
+   }
+  ]
+ },
+ "omeletteblancs": {
+  "nom": "Egg White & Spinach Omelet",
+  "description": "An ultra-high-protein, low-fat omelet: egg whites, spinach, and quark. Perfect for a cutting phase.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Wash and spin-dry the fresh spinach, remove any tough stems, and separate the egg whites, making sure no trace of yolk gets in."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Heat a drizzle of olive oil in a nonstick skillet over medium heat and wilt the spinach for 2 to 3 minutes until it shrinks down."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Beat the egg whites with a fork along with the salt and pepper until lightly frothy but still liquid."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour the beaten whites over the spinach over medium-low heat and let them set for 2 to 3 minutes, drawing the edges in toward the center."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spoon the quark onto one half of the omelet as soon as the whites are nearly set but still glossy on the surface."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fold the omelet in half over the filling, slide it onto the plate, and serve right away, still soft and tender."
+   }
+  ]
+ },
+ "porridgewhey": {
+  "nom": "Whey Protein Porridge",
+  "description": "Oatmeal porridge boosted with whey, banana, and peanut butter. The perfect pre-workout fuel.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Measure out the oats and milk, and slice the banana into rounds, setting aside a few slices for topping."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Stir the oats into the milk in a saucepan and cook over low heat for 5 minutes, stirring regularly, until creamy."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Add half of the banana slices to the hot porridge and mash them with a fork to naturally sweeten the mixture."
+   },
+   {
+    "titre": "Stir In",
+    "detail": "Be sure to take the saucepan off the heat, then whisk in the whey so it doesn't cook and keeps all of its protein benefits."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pour the porridge into a bowl and smooth the surface, loosening it with a little milk if it has thickened too much."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Arrange the reserved banana slices on top, drizzle with a little peanut butter, and enjoy warm without delay."
+   }
+  ]
+ },
+ "oeufsbrouillesavocat": {
+  "nom": "Scrambled Eggs & Avocado",
+  "description": "Creamy scrambled eggs, avocado, and whole-grain bread. Protein and healthy fats to start the day right.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Halve the avocado, remove the pit, and scoop out the flesh with a spoon, then lightly beat the eggs with a pinch of salt."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Toast the slices of whole-grain bread until golden and crisp."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the avocado with a fork directly onto the toasted bread, seasoning it with a drizzle of olive oil and a touch of salt."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Heat a drizzle of olive oil in a skillet over low heat before pouring in the beaten eggs."
+   },
+   {
+    "titre": "Scramble",
+    "detail": "Stir the eggs constantly with a spatula over low heat to form small creamy curds, and pull them off the heat while still slightly runny."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Place the scrambled eggs on the avocado toast, adjust the seasoning, and serve immediately, piping hot."
+   }
+  ]
+ },
+ "fbgranolaproteine": {
+  "nom": "Protein Quark with Granola",
+  "description": "Quark whipped with a scoop of whey, crunchy granola, and red berries. Filling and indulgent.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Take the quark out well chilled and gently rinse the red berries before patting them dry on paper towels."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Briskly whisk the quark with the whey until you get a smooth, even cream with no powder lumps."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spoon the protein mixture into a bowl and smooth the surface with a spoon for a clean look."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter the granola over the top for crunch and arrange the red berries attractively around it."
+   },
+   {
+    "titre": "Drizzle",
+    "detail": "Add a drizzle of honey over everything to tie the flavors together and bring a touch of sweetness."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Enjoy right away to make the most of the contrast between the cool cream and the still-crunchy granola."
+   }
+  ]
+ },
+ "pouletrizbrocoli": {
+  "nom": "Grilled Chicken, Rice & Broccoli",
+  "description": "The lean-bulking classic: grilled chicken breast, rice and steamed broccoli. Simple, clean, effective.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the broccoli into small florets, mince the garlic and juice the lemon."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the chicken breasts with olive oil, garlic, lemon juice and salt, and let marinate for 10 min."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice in twice its volume of salted water for 12 to 15 min, then let it rest covered."
+   },
+   {
+    "titre": "Broccoli",
+    "detail": "Steam the broccoli for 8 min to keep it bright green and crisp."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the chicken in a hot pan for 5 min per side until golden and cooked through."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the chicken rest off the heat for 3 min before slicing to keep it juicy."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Assemble the rice, broccoli and sliced chicken, and drizzle with olive oil and a splash of lemon before serving."
+   }
+  ]
+ },
+ "dindelegumeswok": {
+  "nom": "Turkey & Vegetable Stir-Fry",
+  "description": "Lean turkey strips stir-fried in the wok with zucchini and bell pepper, soy sauce and ginger. Light and packed with protein.",
+  "etapes": [
+   {
+    "titre": "Cook rice",
+    "detail": "Rinse the rice then cook it in twice its volume of salted water for 12 to 15 min until fully absorbed, and keep it covered."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the turkey cutlets into thin strips, cut the zucchini and bell pepper into batons, then mince or grate the fresh ginger."
+   },
+   {
+    "titre": "Sear turkey",
+    "detail": "Heat a drizzle of olive oil in the wok over high heat (oil nearly smoking) and sear the turkey for 3 to 4 min, stirring, until golden, then set aside."
+   },
+   {
+    "titre": "Stir-fry veg",
+    "detail": "In the same wok, stir-fry the zucchini and bell pepper for 4 to 5 min over high heat to keep them crisp, then add the ginger and toss for 1 min."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Return the turkey, deglaze with a splash of soy sauce, toss everything for 2 min over high heat to coat well and adjust the seasoning."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spoon the rice into the bowls, add the turkey and vegetables on top, drizzle with the wok juices and serve right away, piping hot."
+   }
+  ]
+ },
+ "bowlpouletpatatedouce": {
+  "nom": "Chicken & Sweet Potato Bowl",
+  "description": "A complete bowl: roasted chicken, sweet potato, spinach and avocado. Slow carbs and protein to power you through the day.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Peel the sweet potato and cut it into even dice, cut the chicken into pieces, then pit and slice the avocado just before plating."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Toss the sweet potato dice with olive oil, salt and pepper, spread them on a sheet pan and roast for 25 min at 200°C, turning them halfway through."
+   },
+   {
+    "titre": "Cook chicken",
+    "detail": "Meanwhile, sear the chicken in a pan with a drizzle of oil for 6 to 8 min over medium-high heat until golden and cooked through."
+   },
+   {
+    "titre": "Build base",
+    "detail": "Wash and spin-dry the fresh spinach, and spread it in the bottom of the bowls as a crisp bed of greens."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Arrange the roasted sweet potato dice, the chicken and the avocado slices over the spinach in a balanced way."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with olive oil and a good squeeze of lemon, salt lightly and serve warm to enjoy the hot-cold contrast."
+   }
+  ]
+ },
+ "colinquinoabrocoli": {
+  "nom": "Hake Fillet, Quinoa & Broccoli",
+  "description": "Lean white fish, protein-rich quinoa and broccoli. A light, complete meal, perfect for the evening.",
+  "etapes": [
+   {
+    "titre": "Rinse quinoa",
+    "detail": "Rinse the quinoa under cold water to remove its bitterness, then cook it in twice its volume of salted water for 15 min until the grains are translucent."
+   },
+   {
+    "titre": "Cook broccoli",
+    "detail": "Cut the broccoli into small florets and steam them for 8 min so they stay green and slightly crisp."
+   },
+   {
+    "titre": "Prep hake",
+    "detail": "Pat the hake fillets dry, season with salt and pepper, then finely mince the garlic and prepare the lemon juice."
+   },
+   {
+    "titre": "Pan-sear",
+    "detail": "Sear the hake in hot olive oil for 3 min per side over medium-high heat, add the garlic at the end and spoon over the lemon juice."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Fluff the quinoa with a fork, stir in the broccoli florets and a drizzle of olive oil, then adjust the salt."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate the quinoa and broccoli, set the hake fillet on top and serve with a lemon wedge."
+   }
+  ]
+ },
+ "saladethonharicotsblancs": {
+  "nom": "Tuna & White Bean Salad",
+  "description": "A high-protein cold salad: tuna, white beans, tomato and red onion. Ready in 10 minutes, ideal for meal prep.",
+  "etapes": [
+   {
+    "titre": "Drain",
+    "detail": "Thoroughly drain the tuna and white beans, rinse the beans under cold water to soften them, then tip them into a bowl."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Dice the tomatoes, removing the excess juice, finely slice the red onion and chop the fresh parsley."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Gently mix the tuna, beans, tomatoes and red onion without crushing to keep some texture."
+   },
+   {
+    "titre": "Season",
+    "detail": "Make the dressing by whisking olive oil, lemon juice, salt and pepper, then pour it over the salad and toss."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add the chopped parsley, taste and adjust the lemon or salt to your liking."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the salad rest for 10 min in the fridge so the flavors mingle, then serve well chilled as a starter or light meal."
+   }
+  ]
+ },
+ "tempehpoelelegumes": {
+  "nom": "Pan-Fried Tempeh with Vegetables",
+  "description": "Tempeh, a complete plant protein, pan-fried with broccoli and bell pepper in a soy-ginger sauce. Vegan and satisfying.",
+  "etapes": [
+   {
+    "titre": "Cook rice",
+    "detail": "Rinse the rice and cook it in twice its volume of salted water for 12 to 15 min until absorbed, then keep it covered."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Cut the tempeh into dice, cut the broccoli into small florets and the bell pepper into strips, then mince the garlic and ginger."
+   },
+   {
+    "titre": "Brown tempeh",
+    "detail": "Brown the tempeh dice in a pan with a drizzle of oil for 5 min over medium-high heat, turning them so they crisp up on all sides."
+   },
+   {
+    "titre": "Stir-fry veg",
+    "detail": "Add the broccoli and bell pepper, stir-fry for 5 min over high heat to keep them crisp, then stir in the garlic and ginger for 1 min."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Pour in a splash of soy sauce, toss for 2 min to coat the tempeh and vegetables well, then adjust the seasoning."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Divide the rice among the bowls, add the tempeh and glazed vegetables, drizzle with the pan juices and serve right away."
+   }
+  ]
+ },
+ "steakhachepatatedouce": {
+  "nom": "5% Beef Patty & Sweet Potato",
+  "description": "5% fat beef patty, sweet potato and green beans. Lean protein and slow-release carbs.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Peel the sweet potato and cut it into even dice, then trim the green beans and chop the garlic."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C and spread the sweet potato dice on a sheet pan with a drizzle of olive oil, salt and the garlic."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast the sweet potatoes 25 min, tossing them halfway through, until golden and tender at the center."
+   },
+   {
+    "titre": "Beans",
+    "detail": "Meanwhile, steam the green beans 8 to 10 min until tender but still crisp."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the 5% beef patty in a very hot skillet 2 to 3 min per side depending on desired doneness, then salt and pepper."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the patty rest 2 min off the heat so the juices redistribute through the meat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the patty with the roasted sweet potato dice and the green beans, and finish with a drizzle of olive oil."
+   }
+  ]
+ },
+ "eminceboeufharicotsverts": {
+  "nom": "Sliced Beef & Green Beans",
+  "description": "Lean sliced beef stir-fried in a wok with green beans, garlic and ginger. High in protein and iron.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the beef into thin strips, trim the green beans, then chop the garlic and grate the ginger."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice in boiling salted water for 12 min, drain it and let it rest covered and warm."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch the green beans 4 min in boiling water then drain them so they stay crisp in the stir-fry."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Heat the olive oil in a wok over high heat and sear the sliced beef 2 min without stirring much to color it well."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Add the green beans, garlic and ginger and stir-fry 2 min over high heat to release the aromas."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Pour in the soy sauce, toss well and let it glaze 1 min to coat the beef and vegetables in a glossy sheen."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the sliced beef and green beans piping hot over the rice, napped with the cooking juices."
+   }
+  ]
+ },
+ "crevettessauteesriz": {
+  "nom": "Stir-Fried Shrimp with Rice",
+  "description": "Lean, protein-rich shrimp stir-fried with broccoli, garlic and ginger. Light and quick.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Peel the shrimp if needed, cut the broccoli into small florets, then chop the garlic and grate the ginger."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice in boiling salted water for 12 min, drain it and let it rest covered and warm."
+   },
+   {
+    "titre": "Broccoli",
+    "detail": "Heat the olive oil in a wok over high heat and stir-fry the broccoli florets 4 min until green and crisp."
+   },
+   {
+    "titre": "Shrimp",
+    "detail": "Add the shrimp, garlic and ginger and stir-fry 3 min until the shrimp turn pink and pearly."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Pour in the soy sauce, toss briskly and let it glaze 1 min to coat the shrimp and broccoli."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the stir-fried shrimp and broccoli over the rice and serve right away, piping hot."
+   }
+  ]
+ },
+ "pouletmarineyaourt": {
+  "nom": "Yogurt & Spice Marinated Chicken",
+  "description": "Chicken marinated in yogurt, paprika and cumin then grilled, served with rice. Tender, fragrant and protein-rich.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the chicken breasts into large pieces, juice the lemon and crush the garlic cloves to a paste."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Mix the yogurt, paprika, cumin, garlic and lemon juice with salt and pepper for a smooth marinade."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the chicken thoroughly with the marinade and let it rest in the fridge at least 15 min (ideally 1 h)."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice in 1.5 times its volume of salted water at a simmer for about 12 min, then let it steam covered off the heat."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Sear the drained chicken in a hot skillet 5 min per side, until golden and the spices caramelize."
+   },
+   {
+    "titre": "Check",
+    "detail": "Make sure the chicken is cooked through (flesh pearly and no longer pink), then let it rest 2 min off the heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the chicken over the rice, drizzle with a little of the cooking juices and serve with a lemon wedge."
+   }
+  ]
+ },
+ "cabillaudvapeurcourgette": {
+  "nom": "Steamed Cod, Rice & Zucchini",
+  "description": "Ultra-lean steamed cod, rice and zucchini with lemon. The perfect evening meal when cutting.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the zucchini into thin rounds, finely chop the garlic and juice the lemon."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice in salted water at a simmer for about 12 min, then let it rest covered off the heat."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Set the cod fillet in a steamer basket over boiling water and cook 8 min until the flesh flakes apart."
+   },
+   {
+    "titre": "Zucchini",
+    "detail": "Pan-fry the zucchini rounds in olive oil over high heat 5 min with the garlic, until tender and lightly golden."
+   },
+   {
+    "titre": "Season",
+    "detail": "Deglaze the zucchini with a splash of lemon juice, salt and pepper generously."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the cod rest 1 min off the heat so it firms up without drying out."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Set the cod on the bed of rice and zucchini, drizzle with a little olive oil and lemon."
+   }
+  ]
+ },
+ "bowlthonrizavocat": {
+  "nom": "Tuna, Rice & Avocado Bowl",
+  "description": "A poké-style bowl: tuna, rice, avocado, cucumber and edamame, soy sauce. Fresh, protein-rich and filling.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice in salted water for about 12 min, then spread it out to let it cool to warm."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Slice the cucumber into half-moons, cut the avocado into slices and drain the tuna."
+   },
+   {
+    "titre": "Edamame",
+    "detail": "Blanch the edamame 3 min in boiling salted water, then shell and drain them."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Divide the warm rice into a bowl and arrange the tuna, avocado, cucumber and edamame neatly in sections."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Drizzle generously with soy sauce and, if desired, add a few sesame seeds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away at room temperature to keep the contrast between the warm rice and the fresh toppings."
+   }
+  ]
+ },
+ "boulesproteinees": {
+  "nom": "Oat-Whey Protein Balls",
+  "description": "No-bake energy balls: oats, whey, peanut butter and honey. The grab-and-go post-workout snack.",
+  "etapes": [
+   {
+    "titre": "Mash",
+    "detail": "Mash the ripe banana with a fork until you have a smooth puree, the binding base for the balls."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Stir the peanut butter and honey into the banana puree until smooth and sticky."
+   },
+   {
+    "titre": "Whey",
+    "detail": "Add the whey and rolled oats, then mix into a thick dough you can work by hand."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Scoop out portions and roll them between your palms into even little balls about 3 cm across."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Set the balls on a plate and chill for 30 min so they firm up and hold their shape well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the balls chilled as a post-workout snack, or keep them up to 4 days in the fridge in an airtight container."
+   }
+  ]
+ },
+ "cottagecheesefruits": {
+  "nom": "Cottage Cheese with Fruit",
+  "description": "Cottage cheese rich in casein, berries and oats. The perfect bedtime snack.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Pour the well-chilled cottage cheese into a bowl and smooth it lightly with a spoon."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Rinse the berries, hull them if needed and halve the larger ones for an easy bite."
+   },
+   {
+    "titre": "Oats",
+    "detail": "Sprinkle the rolled oats over the cottage cheese to add crunch and fiber."
+   },
+   {
+    "titre": "Top",
+    "detail": "Arrange the berries nicely on top for a colorful, appetizing bowl."
+   },
+   {
+    "titre": "Honey",
+    "detail": "Finish with a drizzle of honey for a touch of sweetness that ties the flavors together."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away, well chilled, as a protein breakfast or an indulgent snack."
+   }
+  ]
+ },
+ "oeufsdurspaprika": {
+  "nom": "Paprika Hard-Boiled Eggs",
+  "description": "The simplest protein snack: hard-boiled eggs dusted with paprika. Handy and budget-friendly.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Take the eggs out of the fridge, bring a pot of water to a boil and prepare a bowl of ice water on the side."
+   },
+   {
+    "titre": "Drop In",
+    "detail": "Gently lower the eggs into the boiling water with a spoon to keep them from cracking."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Keep a steady boil for 9 min for hard-boiled eggs with fully set yolks."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Plunge the eggs straight into the ice water for 5 min to stop the cooking and make peeling easier."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Roll the eggs to crack the shell and peel them under running water, then cut them in half."
+   },
+   {
+    "titre": "Season",
+    "detail": "Dust generously with paprika and a pinch of salt, then serve right away as a protein snack."
+   }
+  ]
+ },
+ "edamamepimentes": {
+  "nom": "Spicy Edamame",
+  "description": "Edamame beans rich in plant protein, kicked up with chili and soy sauce. Snack away guilt-free.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Bring a pot of salted water to a rolling boil to cook the edamame still in their pods."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Drop in the edamame and cook them for 5 min until tender but still slightly crisp."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the edamame and run them under cold water to lock in their bright green color."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Mix the soy sauce, chopped chili and a pinch of salt in a large bowl."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the hot edamame into the sauce and toss to coat them well in the spicy mixture."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away as an appetizer, eaten by squeezing the pods to slide the beans into your mouth."
+   }
+  ]
+ },
+ "shakeproteinemaison": {
+  "nom": "Homemade Protein Shake",
+  "description": "A post-workout shake: whey, milk, banana, and peanut butter. Recovery and pleasure in one glass.",
+  "etapes": [
+   {
+    "titre": "Prep the Banana",
+    "detail": "Peel a very ripe banana and slice it into rounds so it blends smoothly without chunks; a frozen banana will give a thicker, frostier texture."
+   },
+   {
+    "titre": "Pour the Milk",
+    "detail": "Pour ice-cold milk into the blender jar; it's the liquid base that lets the powder disperse properly."
+   },
+   {
+    "titre": "Add the Whey",
+    "detail": "Add one scoop of whey, dropping it in after the milk so it doesn't stick to the bottom and clump up."
+   },
+   {
+    "titre": "Peanut Butter",
+    "detail": "Add a tablespoon of peanut butter for indulgence, good fats, and a satisfying, filling effect."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend on high for 30 to 40 seconds until the texture is smooth, even, and slightly frothy."
+   },
+   {
+    "titre": "Serve Cold",
+    "detail": "Pour into a tall glass over a few ice cubes and drink right away, ideally within 30 minutes of your workout."
+   }
+  ]
+ },
+ "steakseitan": {
+  "nom": "Grilled Seitan Steak",
+  "description": "Seitan, the champion of plant proteins (24 g/100 g), grilled and deglazed with soy sauce and bell peppers. Vegan and ultra-high in protein.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the seitan into thick steaks, cut the onion and bell pepper into strips and chop the garlic."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the seitan slices in olive oil over high heat 2 to 3 min per side until nicely colored, then set aside."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "In the same skillet, sauté the onion and bell pepper 6 min over medium heat until tender."
+   },
+   {
+    "titre": "Aromatize",
+    "detail": "Add the chopped garlic and continue 1 min without letting it burn to release its aromas."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Return the seitan to the skillet and deglaze with soy sauce, coating the pieces well for 2 min."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Let the sauce thicken over low heat so it coats the seitan and vegetables."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the seitan steaks over the vegetables and nap with the soy cooking juices."
+   }
+  ]
+ },
+ "tofubrouille": {
+  "nom": "Scrambled Tofu (Vegan)",
+  "description": "The vegan take on scrambled eggs: crumbled tofu with turmeric, spinach, and tomato. High in protein and ready in 10 minutes.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely mince the onion, dice the tomato, wash the spinach, and drain the tofu well, pressing it to remove excess water."
+   },
+   {
+    "titre": "Crumble",
+    "detail": "Crumble the tofu roughly with a fork to mimic the texture of scrambled eggs."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Heat the olive oil in a skillet over medium heat and sweat the onion for 2 to 3 minutes until it turns translucent."
+   },
+   {
+    "titre": "Color",
+    "detail": "Add the crumbled tofu and the turmeric, then stir to coat well and develop a nice golden color over 3 minutes."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Stir in the diced tomato and the spinach, season with salt, then keep cooking for 5 minutes, stirring, until the spinach wilts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve the scrambled tofu piping hot, optionally on a slice of toasted bread."
+   }
+  ]
+ },
+ "lentillesbolo": {
+  "nom": "Lentil Bolognese",
+  "description": "A meatless bolognese, rich in protein and fiber: lentils simmered in a tomato-vegetable sauce. Best served over pasta.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely mince the onion and garlic, and cut the carrots into small, even dice."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the onion, carrot, and garlic in olive oil over medium heat for 8 min until tender."
+   },
+   {
+    "titre": "Lentils",
+    "detail": "Add the rinsed lentils and coat them well in the aromatic mixture for 1 min."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Stir in the crushed tomatoes, season with salt and pepper, and add just enough water to cover."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer over low heat for 25 min, stirring occasionally, until the lentils are meltingly tender."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the seasoning and let it reduce uncovered for a few minutes if the sauce is too thin."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, bolognese-style, over pasta or with crusty bread on the side."
+   }
+  ]
+ },
+ "tempehcurrycoco": {
+  "nom": "Coconut Tempeh Curry",
+  "description": "Tempeh simmered in a creamy coconut-milk curry with spinach, served over rice. Complete plant protein and full of flavor.",
+  "etapes": [
+   {
+    "titre": "Cook rice",
+    "detail": "Rinse the rice and cook it in twice its volume of salted water for 12 to 15 min until fully absorbed, then keep it covered and warm."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Cut the tempeh into dice and finely slice the onion, then wash the fresh spinach and spin it dry."
+   },
+   {
+    "titre": "Brown tempeh",
+    "detail": "Brown the tempeh dice in a sauté pan with a drizzle of oil for 5 min over medium-high heat until nicely colored, then set aside."
+   },
+   {
+    "titre": "Sweat onion",
+    "detail": "Sweat the sliced onion for 3 min over low heat, add the curry and toast it for 1 min to release its aromas."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pour in the coconut milk, return the tempeh and let it simmer for 10 min over low heat to thicken the sauce and soak it through."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add the spinach at the end of cooking, let it wilt for 2 min, adjust the seasoning and serve the curry over the piping-hot rice."
+   }
+  ]
+ },
+ "boulettesvege": {
+  "nom": "Lentil-Chickpea Veggie Meatballs",
+  "description": "Protein-packed veggie balls made from lentils and chickpeas, simmered in tomato sauce. With rice, a complete and vegan meal.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice in salted water for 12 min, then set it aside covered to serve alongside."
+   },
+   {
+    "titre": "Mixture",
+    "detail": "Blend the cooked lentils and chickpeas with the onion and garlic until you get a thick, smooth paste."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and pepper and work the mixture by hand so it holds together; chill for 10 min to firm up."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll even, walnut-sized balls between lightly dampened palms."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the balls in a skillet with a drizzle of oil over medium heat on all sides, about 6 min."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Make a tomato sauce, nestle in the balls, and simmer over low heat for 10 min to let them soak up the flavor."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the balls coated in tomato sauce, served with the rice."
+   }
+  ]
+ },
+ "bowledamamequinoa": {
+  "nom": "Edamame-Quinoa Bowl",
+  "description": "A fresh, protein-packed bowl: edamame, quinoa, avocado and crunchy veggies with soy sauce. Vegan, complete and perfect for meal prep.",
+  "etapes": [
+   {
+    "titre": "Cook quinoa",
+    "detail": "Rinse the quinoa, then cook it in twice its volume of salted water for 15 min until the grains turn translucent, and let it cool to lukewarm."
+   },
+   {
+    "titre": "Cook edamame",
+    "detail": "Drop the edamame into boiling salted water for 5 min, then drain and shell them if needed."
+   },
+   {
+    "titre": "Cut veggies",
+    "detail": "Slice the cucumber into half-moons, grate or julienne the carrots into thin sticks, and slice the avocado just before assembling."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Fluff the warm quinoa with a fork so it stays light and airy, then spread it as a base in the bottom of the bowls."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Arrange the edamame, cucumber, carrots and avocado neatly in sections over the bed of quinoa."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Drizzle generously with soy sauce, toss lightly at the table and serve fresh for a complete, crunchy bowl."
+   }
+  ]
+ },
+ "brochettespouletbbq": {
+  "nom": "Marinated BBQ Chicken Skewers",
+  "description": "Chicken skewers marinated in paprika and garlic, alternated with peppers and onions, grilled on the barbecue. Summer on a plate.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the chicken into even cubes, and cut the bell pepper and onion into large squares."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Mix the paprika, crushed garlic, and olive oil with salt and pepper for a fragrant marinade."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the chicken in the marinade and let it rest in the fridge for at least 20 min."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Thread onto skewers, alternating chicken, pepper, and onion for colorful kebabs."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill on a hot barbecue or plancha for 12 min, turning regularly for even cooking."
+   },
+   {
+    "titre": "Check",
+    "detail": "Make sure the chicken is cooked through and lightly caramelized, then let it rest for 2 min."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the skewers nice and hot, optionally with rice or a fresh salad."
+   }
+  ]
+ },
+ "gambasgrilleesail": {
+  "nom": "Garlic Grilled Prawns",
+  "description": "Prawns grilled on the plancha with garlic, parsley, and a splash of lemon. Simple, quick, and summery — the crowd-pleasing appetizer.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely chop the garlic and parsley, squeeze the lemon, and crumble in a little chili to taste."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Mix the garlic, parsley, olive oil, and chili to make a fragrant oil."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat the prawns in this marinade and let them soak it up for 10 min at room temperature."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the prawns on a hot plancha for 2 min per side, until they turn pink and pearly."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Drizzle generously with lemon juice at the end of cooking and adjust the salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, piping hot, sprinkled with the remaining parsley and with bread to mop up the sauce."
+   }
+  ]
+ },
+ "brochetteshalloumi": {
+  "nom": "Halloumi & Veggie Skewers",
+  "description": "Grilled halloumi that won't melt, alternated with zucchini, bell pepper and cherry tomatoes. Vegetarian, golden and perfect for the grill.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the halloumi into large, even cubes about 3 cm, thick enough to hold on the skewers."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Wash and cut the zucchini into thick rounds, the bell pepper into squares, and leave the tomatoes whole."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Thread halloumi, zucchini, bell pepper and tomato onto the skewers in alternating order for colorful skewers."
+   },
+   {
+    "titre": "Season",
+    "detail": "Brush generously with olive oil, sprinkle with oregano, and salt and pepper on all sides."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the skewers 8 min on a hot plancha or grill, turning them for even golden color."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a squeeze of lemon juice and a drizzle of olive oil, alongside a salad or pita bread."
+   }
+  ]
+ },
+ "poulettandoorigrille": {
+  "nom": "Grilled Tandoori Chicken",
+  "description": "Chicken marinated in yogurt and tandoori spices (paprika, cumin, ginger) then grilled. Tender, fragrant, and beautifully colored.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Score the chicken pieces, grate the ginger, and squeeze the lemon."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Mix the yogurt, paprika, cumin, ginger, and lemon with salt and pepper for a deep-red tandoori marinade."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the chicken in the marinade and let it rest in the fridge for at least 30 min (ideally several hours)."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the chicken on the barbecue or under the oven broiler for 6 min per side, until the edges are well charred."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check that the meat is cooked through and has a caramelized spice crust."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the chicken rest for 3 min off the heat to keep all its juices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a lemon wedge, alongside rice or naan."
+   }
+  ]
+ },
+ "legumesplancha": {
+  "nom": "Plancha-Grilled Vegetables",
+  "description": "Zucchini, bell pepper, eggplant and onion seared on the plancha with olive oil and garlic. Light, colorful and full of sunshine.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Wash the vegetables, then cut the zucchini, eggplant and bell pepper into even slices and the onion into thick rounds so they hold up during cooking."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Finely mince the garlic and mix it with a little olive oil to make a fragrant oil for brushing the vegetables."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Lightly brush the vegetable slices with the garlicky olive oil and season with salt to keep them from sticking to the plancha."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Heat the plancha until very hot and sear the vegetables for 3 to 4 min per side until you get nice grill marks."
+   },
+   {
+    "titre": "Add garlic",
+    "detail": "Scatter the remaining minced garlic over the vegetables near the end of cooking and let it cook for 1 min so it softens without burning."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Fan out the vegetables on a plate, drizzle with raw olive oil and a pinch of salt, and serve warm as a side or as tapas."
+   }
+  ]
+ },
+ "traversbbq": {
+  "nom": "BBQ Pork Ribs",
+  "description": "Pork ribs glazed with honey and paprika, fall-off-the-bone tender and caramelized. The great American barbecue classic.",
+  "etapes": [
+   {
+    "titre": "Glaze",
+    "detail": "Mix the honey, paprika, crushed garlic, and soy sauce to make a glossy, fragrant glaze."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 160°C and brush the ribs with a first thin coat of glaze."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover the ribs with aluminum foil and cook slowly for 1 hr at 160°C to tenderize the meat."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Remove the foil and brush the ribs generously with glaze on all sides."
+   },
+   {
+    "titre": "Caramelize",
+    "detail": "Broil for 10 min, brushing regularly, until you get a sticky, glazed crust."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the ribs rest for 5 min so the juices redistribute before slicing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut between the bones and serve piping hot with the remaining glaze and fries or a salad."
+   }
+  ]
+ },
+ "saladetomateburrata": {
+  "nom": "Tomato & Burrata Salad",
+  "description": "Ripe tomatoes, creamy burrata, basil and olive oil. Italian simplicity at its peak, in the heart of summer.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Choose ripe tomatoes, wash them, remove the stem and cut them into wedges or large chunks."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Peel the red onion and slice it into thin slivers to add crunch and a little bite."
+   },
+   {
+    "titre": "Season",
+    "detail": "Arrange the tomatoes on a platter, salt, pepper and drizzle with olive oil."
+   },
+   {
+    "titre": "Burrata",
+    "detail": "Gently set the very fresh burrata in the center of the platter, surrounded by the tomatoes."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter with basil leaves, distribute the red onion and drizzle with a final touch of olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away at room temperature, tearing the burrata open at the table with some toasted bread."
+   }
+  ]
+ },
+ "cotelettesagneaugrille": {
+  "nom": "Grilled Lamb Chops",
+  "description": "Lamb chops marinated in garlic and thyme, grilled to a rosy pink. A great barbecue classic, simple and delicious.",
+  "etapes": [
+   {
+    "titre": "Trim",
+    "detail": "Take the lamb chops out of the fridge 20 min before cooking, pat them dry, and trim a little of the fat around the edges."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Mix the crushed garlic, thyme leaves, olive oil, and lemon juice, then coat the chops in it."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Let marinate for 15 min at room temperature, turning once to thoroughly infuse the meat."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the grill or pan over high heat until it lightly smokes before laying down the chops."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Sear for 3 min on each side for pink, well-marked lamb, without moving the meat while it cooks."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper at the end of cooking, then let rest for 3 min under a sheet of aluminum foil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate with a squeeze of lemon and the remaining thyme, ideal alongside grilled vegetables."
+   }
+  ]
+ },
+ "kukusabzi": {
+  "nom": "Kuku Sabzi",
+  "description": "An Iranian herb frittata: eggs with an abundance of spinach, parsley and cilantro. Green, fragrant and full of freshness.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Wash the spinach, parsley and cilantro, dry them thoroughly, then chop them very finely with a knife to release their aromas."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Mince the onion into very small dice and sweat it 4 min over medium heat in a drizzle of olive oil until translucent."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Crack the eggs into a bowl, beat them with a pinch of salt and pepper, then fold in all the chopped herbs and the cooled onion."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Heat a drizzle of olive oil in a 20 cm pan over medium heat, pour in the mixture and spread it evenly to a 2 cm thickness."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Lower to low heat, cover and let it set 12 min without stirring until the bottom is golden and the center almost set."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Carefully flip the omelet using a large plate and continue cooking 3 min uncovered to brown the second side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it cool 5 min, cut into squares or wedges and serve with plain yogurt and flatbread."
+   }
+  ]
+ },
+ "tahdig": {
+  "nom": "Tahdig (Crispy Persian Rice)",
+  "description": "The treasure of Iranian cuisine: saffron rice with a golden, crispy crust at the bottom of the pot. Spectacular.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Rinse the rice under clear water, then let it soak for 15 min for separate, fluffy grains."
+   },
+   {
+    "titre": "Parboil",
+    "detail": "Drop the rice into a large pot of boiling salted water and parboil for 6 min, just al dente, then drain."
+   },
+   {
+    "titre": "Saffron",
+    "detail": "Steep the saffron in a spoonful of hot water to release its color and fragrance."
+   },
+   {
+    "titre": "Crust",
+    "detail": "Mix part of the rice with the yogurt and saffron water to form the base of the crispy crust."
+   },
+   {
+    "titre": "Pack",
+    "detail": "Oil the bottom of the pot well, pack in the yogurt layer, then mound the remaining rice on top in a dome."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover with a kitchen towel under the lid and cook for 35 min over low heat to brown the bottom without burning it."
+   },
+   {
+    "titre": "Unmold",
+    "detail": "Flip the pot onto a plate to reveal the crispy tahdig and serve immediately."
+   }
+  ]
+ },
+ "vareniki": {
+  "nom": "Vareniki",
+  "description": "Ukrainian dumplings filled with mashed potato and softened onions, served with butter. Comfort food guaranteed.",
+  "etapes": [
+   {
+    "titre": "Potatoes",
+    "detail": "Peel and cook the potatoes for 20 min in salted water until tender."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Sauté the sliced onion in butter over low heat until golden and translucent."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mash the potatoes into a smooth puree, fold in the softened onion, and season with salt and pepper."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Knead the flour, egg, and a little warm water into a supple, smooth dough, then let it rest for 15 min."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll the dough out thin, cut out rounds, place a spoonful of filling on each, and seal into well-pinched half-moons."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the vareniki in gently simmering salted water for 5 min, until they float to the surface."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and coat with melted butter, to enjoy hot with a dollop of sour cream."
+   }
+  ]
+ },
+ "redred": {
+  "nom": "Red Red (Bean Stew)",
+  "description": "A Ghanaian bean stew with palm oil and tomato, kicked up with ginger. Served with rice, a generous vegetarian dish.",
+  "etapes": [
+   {
+    "titre": "Beans",
+    "detail": "If using dried beans, soak them the day before, then cook until tender."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the sliced onion in the palm oil over medium heat until it turns soft and melting."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add the grated ginger and let it become fragrant for 1 min, stirring."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Stir in the crushed tomatoes and let reduce for 10 min over medium heat until you get a thick sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the kidney beans, season with salt, and simmer for 20 min over low heat to bring the flavors together."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice separately until it's soft and fluffy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the bean stew next to the white rice and serve piping hot."
+   }
+  ]
+ },
+ "gallopinto": {
+  "nom": "Gallo Pinto",
+  "description": "Costa Rica's national dish: rice and beans sautéed with onion, bell pepper, and cilantro. Simple, budget-friendly, and tasty, any time of day.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely chop the onion, bell pepper, and garlic, and chop the fresh cilantro."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sauté the onion, bell pepper, and garlic in a little hot oil for 4 min until they soften."
+   },
+   {
+    "titre": "Beans",
+    "detail": "Add the kidney beans with a little of their liquid and let them heat through for 3 min."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Fold in the day-old cooked rice and stir gently to coat it well."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté everything for 5 min over medium-high heat so the rice takes on a light color."
+   },
+   {
+    "titre": "Cilantro",
+    "detail": "Off the heat, sprinkle with chopped cilantro and adjust the salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot for breakfast, with an egg or fried plantain on the side."
+   }
+  ]
+ },
+ "irishstew": {
+  "nom": "Irish Stew",
+  "description": "Ireland's national stew: lamb slowly simmered with potatoes, carrots, and onions. Simple, melting, comforting.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the lamb into large cubes, peel and cut the potatoes, carrots, and onion."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the lamb pieces on all sides in a hot Dutch oven."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Add the sliced onion and let it sweat for 3 min until it softens."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Arrange the carrots and potatoes on top of the meat and sprinkle with thyme."
+   },
+   {
+    "titre": "Add stock",
+    "detail": "Pour in the hot stock to just cover, season with salt and pepper, and bring to a gentle simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer for 1 hr 15 over low heat until the lamb is meltingly tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve the stew steaming hot in deep bowls."
+   }
+  ]
+ },
+ "colcannon": {
+  "nom": "Colcannon",
+  "description": "Irish mashed potatoes with kale and butter, scattered with onion. Comforting and silky, the perfect side dish.",
+  "etapes": [
+   {
+    "titre": "Boil potatoes",
+    "detail": "Peel and boil the potatoes for 20 min in salted water until very tender."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Finely shred the kale and sauté it for 6 min with the onion in some of the butter."
+   },
+   {
+    "titre": "Warm milk",
+    "detail": "Gently warm the milk with the remaining butter so they blend easily into the mash."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the drained potatoes with the warm buttery milk until smooth and creamy."
+   },
+   {
+    "titre": "Fold in",
+    "detail": "Fold the softened kale and onion into the mash and stir gently to combine."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper and taste to adjust the balance of flavors."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Mound into a dome with a knob of melting butter in the center and serve piping hot."
+   }
+  ]
+ },
+ "caripoulet": {
+  "nom": "Cari de Poulet Réunionnais",
+  "description": "The Creole cari from Réunion Island: chicken simmered with tomato, onion and turmeric. Fragrant and colorful, served with rice.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the chicken into pieces, slice the onion and finely mince the garlic."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the chicken pieces on all sides in a very hot pot, then set aside."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Sauté the onion and garlic in the same pot until golden."
+   },
+   {
+    "titre": "Turmeric",
+    "detail": "Add the turmeric and let it toast for 1 min to release its aromas."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Stir in the crushed tomato and return the chicken, tossing to coat well."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer for 25 min over low heat until the chicken is tender and the sauce coats."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the cari piping hot over fragrant white rice, with a rougail on the side if desired."
+   }
+  ]
+ },
+ "bourekas": {
+  "nom": "Bourekas",
+  "description": "Golden Israeli pastries filled with feta and spinach. Crisp and tender, perfect for an aperitif or as a starter.",
+  "etapes": [
+   {
+    "titre": "Spinach",
+    "detail": "Wilt the spinach 3 min in a pan, drain it by pressing firmly to remove the water, then chop it roughly."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Crumble the feta into a bowl, add the cooled spinach and an egg yolk, mix and season with pepper and a pinch of nutmeg."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Roll out the puff pastry on a floured surface and cut it into squares about 10 cm per side."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a spoonful of filling in the center of each square, fold into a triangle and seal the edges by pressing with a fork."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Arrange the bourekas on a lined baking sheet, brush them with beaten egg and sprinkle with sesame seeds if desired."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for 20 min until the pastry is well puffed and golden through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool 5 min on a rack to keep the pastry crisp and serve warm as a starter or appetizer."
+   }
+  ]
+ },
+ "malabi": {
+  "nom": "Malabi",
+  "description": "A Middle Eastern milk pudding, lightly perfumed and topped with red berries. Fresh and delicate.",
+  "etapes": [
+   {
+    "titre": "Dissolve",
+    "detail": "Dissolve the cornstarch in a little cold milk to avoid lumps, then pour the rest of the milk and the sugar into a saucepan."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat over medium, stirring constantly, until it just begins to simmer, about 5 min."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Pour in the dissolved cornstarch and whisk for 2 to 3 min until you have a custard that coats the spoon."
+   },
+   {
+    "titre": "Mold",
+    "detail": "Divide the still-warm custard right away into glasses, smoothing the surface to prevent a skin."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Press plastic wrap onto the surface and refrigerate at least 2 hrs until the malabi are set and cold."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top generously with red-berry coulis just before serving and enjoy well chilled."
+   }
+  ]
+ },
+ "bourekalg": {
+  "nom": "Algerian Bourek",
+  "description": "Crispy rolls stuffed with ground beef and onions, fried until golden. A Ramadan classic.",
+  "etapes": [
+   {
+    "titre": "Mince",
+    "detail": "Peel and finely chop the onion, mince the parsley, and get the ground beef ready."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Sauté the onion in a skillet, add the beef, and cook for 8 min over medium heat until browned."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper, stir in the parsley and a beaten egg to bind the filling, then let it cool slightly."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Lay out a sheet of puff pastry, spoon a log of filling along one edge, and fold in the sides."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll up tightly into a cigar and seal the edge with beaten egg to close the bourek."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop the bourek into oil at 170°C for 4 to 5 min until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain on paper towels and serve hot with a wedge of lemon."
+   }
+  ]
+ },
+ "chakhchoukha": {
+  "nom": "Chakhchoukha",
+  "description": "A Berber dish: torn semolina flatbreads simmered in a lamb sauce with chickpeas and tomato. Comforting and fragrant.",
+  "etapes": [
+   {
+    "titre": "Flatbreads",
+    "detail": "Prepare the semolina dough, cook the thin flatbreads in a skillet, then tear them into small pieces."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the lamb pieces with the sliced onion in a pot with a little oil."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add the crushed tomato and spices, pour in hot water and bring to a simmer."
+   },
+   {
+    "titre": "Chickpeas",
+    "detail": "Stir in the chickpeas and simmer for 35 min over low heat until the meat is meltingly tender."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Reheat the torn flatbread pieces in the steam of the sauce so they soak up the flavors."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Arrange the torn flatbreads in a large dish and ladle generously with the piping hot sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crown with the meat and chickpeas, then serve right away while piping hot."
+   }
+  ]
+ },
+ "ashreshteh": {
+  "nom": "Ash Reshteh",
+  "description": "A thick Iranian soup of herbs, legumes, and noodles. Green, nourishing — the quintessential Persian comfort food.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Rinse the lentils and kidney beans, then cook the pre-soaked beans and the lentils in a large pot of salted water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Bring to a boil, then simmer over low heat 25 to 30 min until the legumes are tender but whole."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Meanwhile, fry the sliced onion in a little oil over medium heat 8 to 10 min until deeply golden."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Stir the chopped spinach and parsley into the pot and let them wilt 5 min, stirring."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Add the noodles (reshteh) and cook 8 to 10 min, stirring, so they lightly thicken the broth."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust the salt and pepper, add half the golden onion, and let rest off the heat 5 min so the flavors come together."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour into bowls and garnish with the rest of the golden, crispy onion; serve piping hot."
+   }
+  ]
+ },
+ "strukli": {
+  "nom": "Štrukli",
+  "description": "A Croatian specialty: thin dough filled with fresh cheese, rolled and baked in cream. Tender and comforting.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Mix the flour with an egg, a pinch of salt and a little warm water, then knead 8 min until you get a soft, elastic dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap the dough and let it rest 20 min at room temperature to relax it and make it easier to roll out."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix the cottage cheese with a beaten egg, a pinch of salt and a little cream to get a smooth filling."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough out very thinly on a floured cloth until it is almost translucent, then spread the filling over the entire surface."
+   },
+   {
+    "titre": "Roll up",
+    "detail": "Roll the dough up tightly using the cloth, press to seal and cut into 6 cm sections."
+   },
+   {
+    "titre": "Nap",
+    "detail": "Arrange the rolls in a buttered dish, generously pour over the remaining cream and dot with a few knobs of butter."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for 25 min until the cream is glossy and coating and the top is nicely golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool 5 min and serve piping hot, napped with the cooking cream, as a starter or comforting main."
+   }
+  ]
+ },
+ "peka": {
+  "nom": "Peka Croate",
+  "description": "Chicken and vegetables slow-roasted under a bell-shaped lid with olive oil. Tender, golden and scented with Adriatic herbs.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the chicken into pieces, quarter the potatoes, slice the bell pepper into strips and the onion into slivers."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Arrange the chicken and vegetables in a single layer in an oven dish fitted with its bell lid."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle generously with olive oil, salt and pepper, tossing to coat well."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C and cover the dish with its bell lid or a tight sheet of aluminum foil."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast covered for 50 min at 200°C for a slow, melting cook."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Uncover the dish and continue for 10 min to brown the chicken and potatoes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the peka straight from its dish, drizzled with its fragrant cooking juices."
+   }
+  ]
+ },
+ "halusky": {
+  "nom": "Bryndzové Halušky",
+  "description": "Slovakia's national dish: little potato dumplings smothered in sheep's cheese and bacon. Rich and comforting.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Peel the potatoes and grate them finely over a mixing bowl."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Stir the flour and a pinch of salt into the grated pulp until you have a thick, sticky dough."
+   },
+   {
+    "titre": "Boil",
+    "detail": "Bring a large pot of salted water to a rolling boil."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Push small dumplings of dough through a colander with large holes straight into the water and poach for 4 to 5 min until they float."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Meanwhile, brown the bacon in a skillet over medium heat until crispy."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Drain the halušky and toss them off the heat with the crumbled feta so it melts and coats the dumplings."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate piping hot, scatter with the crispy bacon and its fat, and serve right away."
+   }
+  ]
+ },
+ "maftoul": {
+  "nom": "Maftoul",
+  "description": "Palestinian large-grain couscous, simmered with chicken, chickpeas and spices. Hand-rolled and generous.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the onion and cut the chicken into large pieces."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Place the chicken and onion in a large pot of water, bring to a simmer and cook over low heat for 25 min, skimming."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Add cumin, salt and pepper to the broth, then stir in the chickpeas to warm them through."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Place the maftoul in a couscoussier over the broth and steam for 15 min."
+   },
+   {
+    "titre": "Hydrate",
+    "detail": "Fluff the grains with a fork, moisten with a ladle of hot broth and let them swell for 5 min, covered."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Remove the chicken, bone it and shred it into large pieces."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the maftoul, arrange the chicken and chickpeas on top and ladle over the piping hot spiced broth."
+   }
+  ]
+ },
+ "pondu": {
+  "nom": "Pondu (Saka-Saka)",
+  "description": "A Congolese dish of leafy greens simmered with palm oil and onion. Served with rice, savory and nourishing.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely slice the onion and mince the garlic."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Wash the spinach and roughly chop it."
+   },
+   {
+    "titre": "Base",
+    "detail": "Heat the palm oil over medium heat and sweat the onion and garlic for 5 min until tender."
+   },
+   {
+    "titre": "Add greens",
+    "detail": "Add the spinach, salt, cover and let the leaves wilt down for 5 min."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Lower to low heat and simmer for 25 min, covered, stirring for a melting texture."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Meanwhile, cook the rice in salted water until fully absorbed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve the pondu piping hot alongside the plain rice."
+   }
+  ]
+ },
+ "casado": {
+  "nom": "Casado",
+  "description": "Costa Rica's complete plate: rice, beans, egg, plantain and meat. Balanced and colorful.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice in salted water until absorbed, then keep it warm."
+   },
+   {
+    "titre": "Beans",
+    "detail": "Reheat the red beans over low heat with a little of their liquid, salt and pepper."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Salt the beef and sear it over high heat for 3 to 4 min per side depending on thickness, then let it rest."
+   },
+   {
+    "titre": "Plantain",
+    "detail": "Cut the plantain on the bias and pan-fry it in a drizzle of hot oil for 2 min per side until caramelized."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Fry the egg over medium heat to keep the yolk runny and the edges golden."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the rice, beans, beef, plantain and fried egg harmoniously on a large plate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away while piping hot, each element side by side in the Costa Rican tradition."
+   }
+  ]
+ },
+ "sinigang": {
+  "nom": "Sinigang",
+  "description": "A Filipino sour soup of pork and vegetables, brightened with tamarind (lemon here). Comforting and invigorating.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the pork into large chunks, thinly slice the onion, quarter the tomatoes, and dice the turnip."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sauté the onion in a little oil over medium heat, add the pork, and lightly brown it on all sides for 5 min."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Cover with water, bring to a boil, skim, then let simmer over low heat for 25 min until the pork is tender."
+   },
+   {
+    "titre": "Sour",
+    "detail": "Add the tomatoes and lemon juice for the signature tangy note, then continue cooking for 5 min."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Stir in the diced turnip and cook for 8 min, then add the spinach at the end so it stays bright green."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper, and adjust the tartness with a little more lemon juice to taste."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the sinigang piping hot in bowls with plain white rice on the side."
+   }
+  ]
+ },
+ "pancit": {
+  "nom": "Pancit",
+  "description": "Filipino stir-fried noodles with chicken and crisp vegetables in soy sauce. The party dish, quick and tasty.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the noodles in warm water for 10 min to soften them, then drain."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Slice the chicken, julienne the carrots and shred the cabbage into thin strips."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the sliced chicken over high heat in an oiled wok for 4 to 5 min until colored."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the carrots and cabbage, stir-fry for 3 min keeping the vegetables crisp."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Pour in the soy sauce and a little water, then add the drained noodles."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Stir-fry everything for 3 to 4 min over high heat until the liquid is absorbed and the noodles glisten."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with a wedge of lemon to squeeze over just before eating."
+   }
+  ]
+ },
+ "karekare": {
+  "nom": "Kare-Kare",
+  "description": "Filipino beef stew in a peanut sauce, with eggplant and beans. Velvety, rich and original.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the beef into large cubes, slice the onion and cut the eggplant and green beans into chunks."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the beef cubes on all sides in an oiled pot over high heat."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Add the onion, cover with water and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over low heat for 45 min, covered, until the meat is meltingly tender."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Whisk the peanut butter into the broth and stir to obtain a coating sauce."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the eggplant and green beans, cook another 10 min until tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust the seasoning and serve piping hot, with white rice in the traditional way."
+   }
+  ]
+ },
+ "stamppot": {
+  "nom": "Stamppot",
+  "description": "Dutch mashed potatoes mashed with cabbage, served with a smoked sausage. The ultimate comforting winter dish.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Peel the potatoes and cut them into large even pieces."
+   },
+   {
+    "titre": "Boil",
+    "detail": "Cook them in salted water for 20 min until they mash easily, then drain."
+   },
+   {
+    "titre": "Cabbage",
+    "detail": "Blanch the shredded cabbage for 5 min in boiling water, then drain it well."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the potatoes with the hot milk and butter until you have a smooth mash."
+   },
+   {
+    "titre": "Fold in",
+    "detail": "Fold the drained cabbage into the mash, salt and pepper generously."
+   },
+   {
+    "titre": "Sausage",
+    "detail": "Reheat the smoked sausages at a gentle simmer in hot water for 10 min."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Shape a dome of stamppot, hollow out a well and pour in a little melted butter, serve with the sausage."
+   }
+  ]
+ },
+ "bitterballen": {
+  "nom": "Bitterballen",
+  "description": "Dutch beef croquettes, breaded and fried, with a melting center. The essential Dutch bar snack, served with mustard.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Cook the beef until tender, then finely chop or shred it."
+   },
+   {
+    "titre": "Roux",
+    "detail": "Melt the butter, stir in the flour, and cook for 2 min, stirring, to make a blond roux."
+   },
+   {
+    "titre": "Ragout",
+    "detail": "Gradually pour the stock over the roux, add the beef, and cook until you have a very thick ragout."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Spread the mixture in a dish and refrigerate for at least 2 h until set and easy to shape."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Scoop out portions and roll even little balls between your palms."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Roll each ball in flour, then in beaten egg, and finally in breadcrumbs."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in oil at 180°C for 3 to 4 min until the bitterballen are golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve piping hot, with a molten center, alongside mustard."
+   }
+  ]
+ },
+ "cornishpasty": {
+  "nom": "Cornish Pasty",
+  "description": "The turnover from Cornwall: shortcrust pastry filled with beef, potato and rutabaga. Hearty and rustic.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the beef, potato, rutabaga and onion into small even raw dice."
+   },
+   {
+    "titre": "Season",
+    "detail": "Mix the filling, salt and pepper generously to flavor the meat."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out the shortcrust pastry and cut out disks about 20 cm wide."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place the filling in the center of each disk without overloading the edges."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Fold the pastry into a turnover and seal the edge into the characteristic crimped twist."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush the pasties with beaten egg and lightly score the top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 45 min until the pastry is golden, serve warm."
+   }
+  ]
+ },
+ "gibanica": {
+  "nom": "Gibanica",
+  "description": "A flaky Serbian pie of feta and fresh cheese, golden and crisp. The festive dish of the Balkans.",
+  "etapes": [
+   {
+    "titre": "Custard",
+    "detail": "Crumble the feta into a bowl, add the fromage blanc and the eggs, then whisk to get a smooth, creamy mixture."
+   },
+   {
+    "titre": "Season",
+    "detail": "Pepper the mixture generously and taste before adding salt, as the feta already brings plenty of salt."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Butter a round pan and preheat the oven to 180°C so it's up to temperature when you bake."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Lay a sheet of pastry in the bottom of the pan, soak it with the mixture, then alternate crumpled pastry and mixture until used up."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Finish with a sheet of pastry, brush the top with a little beaten egg and drizzle with a touch of oil."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 35 min until the surface is golden and puffed and the center is set."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest 10 min out of the oven to make slicing easier, then serve in warm or cold portions."
+   }
+  ]
+ },
+ "kaluapork": {
+  "nom": "Kalua Pork",
+  "description": "Shredded Hawaiian pork, slow-cooked and smoky, with cabbage. Melt-in-your-mouth, savory and irresistible.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the onion, mince the garlic and cut the pork into large chunks."
+   },
+   {
+    "titre": "Rub",
+    "detail": "Rub the pork with salt and the minced garlic to season it thoroughly."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Place the pork and onion in a covered Dutch oven and cook at 150°C for 2 hours until the meat falls apart."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Remove the meat and shred it with a fork, saving the cooking juices."
+   },
+   {
+    "titre": "Cabbage",
+    "detail": "Wilt the shredded cabbage for 5 min in a little of the cooking juice until tender."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Meanwhile, cook the rice in salted water until fully absorbed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toss the shredded pork with the cabbage and serve piping hot over a bed of white rice."
+   }
+  ]
+ },
+ "machanka": {
+  "nom": "Machanka",
+  "description": "A creamy Belarusian pork and bacon sauce, enriched with cream. Served with potato pancakes, a cold-weather treat.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the pork into strips and finely slice the onion."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the pork and bacon over high heat in a skillet until nicely colored."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Add the onion and sweat it for 5 min until it turns translucent."
+   },
+   {
+    "titre": "Dust",
+    "detail": "Sprinkle with flour and stir for 2 min to lightly toast it."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in a little hot water while stirring to avoid lumps."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Stir in the cream, season with salt and pepper, and bring to a gentle simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over low heat for 20 min until the sauce is creamy, then serve with pancakes or potatoes."
+   }
+  ]
+ },
+ "tequenos": {
+  "nom": "Tequeños",
+  "description": "Cheese sticks wrapped in dough and fried, crispy outside and gooey inside. The beloved Venezuelan party snack.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the mozzarella into even sticks about one centimeter thick."
+   },
+   {
+    "titre": "Cut Strips",
+    "detail": "Cut the puff pastry into long, narrow strips to wrap around the sticks."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Wind a strip of dough in a spiral around each cheese stick, covering the ends well."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Seal the edge of the dough with a little beaten egg so the cheese doesn't escape while cooking."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill the tequeños for 15 min to firm up the dough before frying."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop into oil at 180°C for 2 to 3 min until the dough is golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain on paper towels and serve right away, piping hot, with the cheese stretchy inside."
+   }
+  ]
+ },
+ "ebleskiver": {
+  "nom": "Æbleskiver",
+  "description": "Little Danish pancake balls, golden and fluffy, dusted with sugar. The cozy taste of a Danish Christmas.",
+  "etapes": [
+   {
+    "titre": "Separate",
+    "detail": "Separate the egg whites from the yolks and set the whites aside in a clean bowl to whip later."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Whisk the flour, yolks, milk and sugar until you have a smooth, thick, lump-free batter."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the whites to stiff peaks, then fold them gently into the batter to make it airy."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Heat the æbleskiver pan over medium and drop a knob of butter into each cavity."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Fill each well with batter and cook for 2 min, until the edges set and turn golden."
+   },
+   {
+    "titre": "Turn",
+    "detail": "Turn each ball a quarter turn with a skewer to form the sphere and finish cooking for 2 min."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with powdered sugar and serve warm, with jam in the Danish tradition."
+   }
+  ]
+ },
+ "toadinthehole": {
+  "nom": "Toad in the Hole",
+  "description": "English sausages baked in a puffed, golden Yorkshire batter. Comforting and made for sharing.",
+  "etapes": [
+   {
+    "titre": "Batter",
+    "detail": "Whisk the flour with the eggs, milk and a pinch of salt until smooth, then let it rest for 15 min at room temperature."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 220°C and place a roasting dish with a drizzle of oil inside so it gets scorching hot."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Drop the sausages into the very hot dish and brown them for 8 min in the oven, turning halfway through."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Quickly pour the rested batter around the sausages in the scorching dish, without leaving the oven open too long."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for 25 min at 220°C without opening the door, until the batter puffs up golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away while puffed, with onion gravy and some green vegetables."
+   }
+  ]
+ },
+ "pljeskavica": {
+  "nom": "Pljeskavica",
+  "description": "The Balkan \"burger\": a spiced beef patty seasoned with garlic and paprika, grilled. Juicy and served in bread.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Very finely chop the onion and garlic so they blend into the meat without chunks."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Knead the ground beef with the onion, garlic, paprika, salt and pepper until you get a smooth, sticky mixture."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and chill the meat for 15 min so the flavors develop and the patties hold together."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form large, flat, wide patties about 1 cm thick, thinner than regular steaks."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the patties for 4 min per side on a hot griddle or grill, until they form a nice golden crust."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Tuck each pljeskavica into warm bread with raw onion and toppings, and serve immediately."
+   }
+  ]
+ },
+ "gheimeh": {
+  "nom": "Khoresh Gheimeh",
+  "description": "A fragrant Iranian beef stew with split peas and tomato. Served with rice, a comforting classic.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Rinse the split peas and soak them for 30 min to shorten their cooking time."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Soften the sliced onion in a drizzle of oil over medium heat until translucent."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Add the beef cubes and brown them on all sides with a touch of turmeric."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Stir in the tomato (or tomato paste) and a little hot water to make a fragrant sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the split peas, cover and simmer over low heat for 40 min until the meat is meltingly tender."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Meanwhile, steam the basmati rice until light and fluffy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Spoon the rich khoresh over the rice and serve topped with crispy fried potato matchsticks."
+   }
+  ]
+ },
+ "sheftalia": {
+  "nom": "Sheftalia",
+  "description": "Grilled Cypriot sausages of ground pork, onion and parsley. Juicy and fragrant, served in pita.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely chop the onion and mince the parsley to season the filling generously."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix the ground pork with the onion, parsley, salt and pepper until you get an even filling."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill the filling for 15 min so it firms up and becomes easier to shape."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Wrap small logs of filling in caul fat (or shape into tightly packed little sausages)."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the sheftalia over medium heat for 12 to 15 min, turning often, until golden brown and cooked through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Tuck them into a warm pita with onion, tomato and a squeeze of lemon, and serve right away."
+   }
+  ]
+ },
+ "kleftiko": {
+  "nom": "Kleftiko",
+  "description": "Cypriot lamb cooked very slowly in a parcel with potatoes, lemon and oregano. Spoon-tender.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Rub the lamb with crushed garlic, lemon juice, oregano, salt and pepper, then let it marinate for 30 min."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Peel and cut the potatoes into large wedges, and drizzle them with the remaining lemon and oregano."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 160°C for a slow, gentle bake that tenderizes the meat."
+   },
+   {
+    "titre": "Parcel",
+    "detail": "Arrange the lamb and potatoes in a large, tightly sealed parchment parcel to trap the juices."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Bake for 1h45 at 160°C: the meat should slowly confit and fall off the bone."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Open the parcel and continue for 15 min at 200°C to color the lamb and potatoes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the tender lamb straight from its parcel with its confit potatoes and a splash of fresh lemon."
+   }
+  ]
+ },
+ "sopanegra": {
+  "nom": "Sopa Negra",
+  "description": "A Costa Rican black bean soup with bell pepper and cilantro, topped with a poached egg. Hearty and fragrant.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Thinly slice the onion, mince the garlic, finely dice the bell pepper, and rinse the red beans."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sauté the onion, garlic, and bell pepper in a drizzle of oil over medium heat for 6 to 8 min until softened."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the red beans and enough water to cover, bring to a boil, then let simmer over low heat for 20 min."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Blend part of the soup and pour it back into the pot for a thick, velvety texture."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Gently crack the eggs one by one into the simmering soup and let them poach 4 to 5 min, whites set and yolks runny."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper the broth, taste, and adjust the seasoning before serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter generously with chopped fresh cilantro and serve right away, good and hot."
+   }
+  ]
+ },
+ "eru": {
+  "nom": "Eru",
+  "description": "A Cameroonian dish of leafy greens simmered in palm oil with meat and shrimp. Rich and typical of the West.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the onion, cut the beef into pieces and carefully wash the spinach leaves."
+   },
+   {
+    "titre": "Cook meat",
+    "detail": "Cook the beef with the onion, salt and a little water over medium heat for 25 min until tender."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Add the spinach and let it wilt down for a few minutes in the meat broth."
+   },
+   {
+    "titre": "Palm oil",
+    "detail": "Stir in the palm oil and mix to coat the greens and give the dish its signature color."
+   },
+   {
+    "titre": "Shrimp",
+    "detail": "Add the shrimp and simmer over low heat for 15 min so all the flavors come together."
+   },
+   {
+    "titre": "Season",
+    "detail": "Taste and adjust the salt and chili; the dish should be flavorful and well bound."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the eru piping hot, traditionally with water fufu or garri."
+   }
+  ]
+ },
+ "kapustnica": {
+  "nom": "Kapustnica",
+  "description": "A Slovak soup of sauerkraut, smoked sausage, and potato, seasoned with paprika. Slovakia's Christmas comfort in a bowl.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Thinly slice the onion, cut the cabbage into strips, peel and dice the potatoes, and slice the smoked sausages into rounds."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sauté the onion in a little fat over medium heat for 5 min, then add the paprika off the heat so it doesn't burn and turn bitter."
+   },
+   {
+    "titre": "Cabbage",
+    "detail": "Add the cabbage (ideally sauerkraut), cover with water, bring to a boil, then let simmer over low heat for 20 min."
+   },
+   {
+    "titre": "Add-ins",
+    "detail": "Stir in the potatoes and the smoked sausage rounds, then continue simmering for 20 min until everything is tender."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Keep it at a low simmer and let the flavors concentrate for another 10 min for a rich, smoky broth."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper, and adjust the tartness, then stir in a touch of cream off the heat to mellow the soup."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the kapustnica good and hot with an extra swirl of cream and rustic country bread."
+   }
+  ]
+ },
+ "couscousalgerien": {
+  "nom": "Couscous Algérien",
+  "description": "Friday couscous: steamed semolina, tender lamb and simmered vegetables (zucchini, carrot, chickpeas) in a fragrant broth.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the lamb into pieces, slice the onion, and cut the carrots and zucchini."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the lamb with the onion in a drizzle of oil."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add tomato paste and ras el hanout, then cover with water."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the carrots and chickpeas, and simmer for 30 min."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add the zucchini at the end of cooking so they stay firm."
+   },
+   {
+    "titre": "Semolina",
+    "detail": "Roll the semolina and steam it in 2-3 passes."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Fluff the semolina with butter between each steaming."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate the semolina, top with broth, meat and vegetables."
+   }
+  ]
+ },
+ "tajinezitoune": {
+  "nom": "Tajine Zitoune",
+  "description": "An Algerian chicken tajine with green olives and lemon, in a creamy white sauce with carrots. Elegant and tangy.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut up the chicken, slice the onion, and cut the carrots into sticks."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Blanch the green olives in boiling water to remove the bitterness."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the chicken with the onion in olive oil."
+   },
+   {
+    "titre": "Add water",
+    "detail": "Cover with water, add the carrots, and simmer for 25 min."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add the olives and lemon slices, and continue for 10 min."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Let it reduce to a white sauce that coats the back of a spoon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, scattered with parsley, with bread or rice."
+   }
+  ]
+ },
+ "rechta": {
+  "nom": "Rechta",
+  "description": "Handmade flat noodles, served in a white chicken sauce with chickpeas and turnip, scented with cinnamon. A festive Algiers dish.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead flour, water and salt into a supple dough, then let it rest."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch it thin and cut into strips like flat noodles."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the rechta, lightly oiling them."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Brown the chicken with the onion, then cover with water."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add chickpeas, turnip and cinnamon, and simmer for 25 min."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Pour a little sauce over the noodles to loosen them."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the rechta, top with sauce, chicken and vegetables."
+   }
+  ]
+ },
+ "mhadjeb": {
+  "nom": "M'hadjeb",
+  "description": "Flaky semolina flatbreads stuffed with a melting tomato, onion and pepper filling. Golden, pan-fried Algerian street food.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead the fine semolina with water and salt until you get a smooth dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Divide into oiled balls and let rest for 20 min."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Cook down onion, pepper and tomato with spices until jammy."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch each ball out very thinly on an oiled surface."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Spoon on the filling and fold the dough into a flaky rectangle."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Cook in a hot pan until both sides turn golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, cut into pieces, plain or with buttermilk."
+   }
+  ]
+ },
+ "berkoukes": {
+  "nom": "Berkoukes",
+  "description": "Large semolina pearls simmered in a tomato sauce with lamb and vegetables. A rustic, comforting soup-stew.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the lamb and vegetables, and thinly slice the onion."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Sear the lamb with the onion in the oil."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add tomato and spices, then pour in plenty of water."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the chickpeas and vegetables, and simmer 20 min."
+   },
+   {
+    "titre": "Pearls",
+    "detail": "Pour the semolina pearls into the simmering sauce."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Let the pearls plump up for 12-15 min, stirring."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in a deep bowl, fragrant and well-coated."
+   }
+  ]
+ },
+ "kalbellouz": {
+  "nom": "Kalb el Louz",
+  "description": "Almond semolina cake soaked in a honey and orange-blossom syrup. \"Almond heart,\" a sweet treat of Ramadan.",
+  "etapes": [
+   {
+    "titre": "Mix",
+    "detail": "Combine semolina, sugar and melted butter, rubbing well to a sandy texture."
+   },
+   {
+    "titre": "Hydrate",
+    "detail": "Add a little orange-blossom water and let rest 15 min."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Press half into a dish, scatter with almonds, and cover."
+   },
+   {
+    "titre": "Score",
+    "detail": "Score into diamonds and set an almond on each one."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in the oven until nicely golden."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Make a syrup of honey, sugar and orange blossom."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Drizzle the warm cake with syrup and let it soak in."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into diamonds once well soaked and cooled."
+   }
+  ]
+ },
+ "garantita": {
+  "nom": "Garantita",
+  "description": "A cumin-scented chickpea-flour custard, baked in the oven and served in slices. An iconic Algiers street snack, golden and silky.",
+  "etapes": [
+   {
+    "titre": "Whisk",
+    "detail": "Whisk the chickpea flour into the water with no lumps."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 15 min to hydrate the flour."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Beat the egg and stir it in with oil, cumin, salt and pepper."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the batter into an oiled dish, about 2 cm thick."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the top turns golden and sets."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Let cool slightly, then cut into slices or stuff a sandwich."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve dusted with cumin and harissa, tucked into bread."
+   }
+  ]
+ },
+ "makrout": {
+  "nom": "Makrout",
+  "description": "Semolina diamonds filled with date paste, fried and then dipped in honey. The queen of Maghrebi pastries.",
+  "etapes": [
+   {
+    "titre": "Rub",
+    "detail": "Rub the semolina with the melted butter using your fingertips."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Hydrate with orange-blossom water until you have a supple dough."
+   },
+   {
+    "titre": "Dates",
+    "detail": "Pit and mash the dates into a smooth paste."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll out the semolina, lay down a log of dates, and seal."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut into diamonds, scored with a fork."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the makrout until golden (or bake them)."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Dip immediately into warm, fragrant honey."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain on a rack and serve with a mint tea."
+   }
+  ]
+ },
+ "couscoustunisien": {
+  "nom": "Tunisian Fish Couscous",
+  "description": "Coastal couscous: steamed semolina, cod and vegetables in a red broth fired up with harissa. Brine and heat.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the vegetables and portion the cod."
+   },
+   {
+    "titre": "Base",
+    "detail": "Saute onion, tomato and harissa in the oil."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Add water and chickpeas, and simmer 20 min."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the zucchini and continue cooking."
+   },
+   {
+    "titre": "Semolina",
+    "detail": "Steam the semolina and fluff it with a little oil."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the cod in the broth for a few minutes."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate the semolina, vegetables, fish and broth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a squeeze of lemon and harissa on the side."
+   }
+  ]
+ },
+ "kafteji": {
+  "nom": "Kafteji",
+  "description": "A medley of fried vegetables (bell pepper, tomato, zucchini) chopped by knife and bound with egg, fired up with harissa. Tunisian comfort food.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Roughly chop the bell pepper, tomato and zucchini."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry each vegetable separately until tender."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Fry the eggs too (or poach them in the pan)."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Gather everything and chop finely by knife (or ghalla)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add harissa, garlic, salt and a drizzle of oil."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix until smooth and melting in texture."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with bread and capers."
+   }
+  ]
+ },
+ "mloukhia": {
+  "nom": "Tunisian Mloukhia",
+  "description": "Beef stew simmered very slowly in a dark green sauce of jute-leaf powder, with olive oil and garlic. Deep and velvety.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Gently cook the mloukhia powder in the oil."
+   },
+   {
+    "titre": "Whisk",
+    "detail": "Whisk in water little by little to avoid lumps."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add the crushed garlic, bay leaf and coriander."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Add the beef in chunks to the sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over very low heat for 1h30, stirring regularly."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "The sauce should darken and thicken; adjust with olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve nicely velvety with bread for mopping up."
+   }
+  ]
+ },
+ "bambalouni": {
+  "nom": "Bambalouni",
+  "description": "A Tunisian ring doughnut, fried to order and rolled in sugar. Crisp outside, pillowy inside -- a seaside memory.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Mix flour, yeast, salt and water into a soft, sticky dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and let rise 1h until doubled."
+   },
+   {
+    "titre": "Hands",
+    "detail": "Wet your hands so the dough won't stick while shaping."
+   },
+   {
+    "titre": "Form",
+    "detail": "Take a ball of dough, poke a hole in the center, and stretch into a ring."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop into the hot oil and fry until golden on both sides."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Roll generously in sugar and enjoy hot."
+   }
+  ]
+ },
+ "tajinmalsouka": {
+  "nom": "Tajine Malsouka",
+  "description": "Tunisian tajine (nothing like the Moroccan one): a sort of baked casserole of ground meat, eggs and brick pastry. Golden and hearty.",
+  "etapes": [
+   {
+    "titre": "Brown",
+    "detail": "Saute the onion, then the ground meat with the spices."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add chopped parsley and a little cheese, then let cool."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Beat the eggs and stir in the cooled filling."
+   },
+   {
+    "titre": "Line",
+    "detail": "Line a dish with oiled brick pastry sheets."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour in the mixture and fold the sheets over the top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the tajine sets and turns golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool slightly, unmold and cut into portions."
+   }
+  ]
+ },
+ "fondue": {
+  "nom": "Fondue Moitie-Moitie",
+  "description": "The quintessential Swiss fondue: half Gruyere, half Vacherin Fribourgeois, melted in white wine and bound with kirsch. Made for sharing from the caquelon.",
+  "etapes": [
+   {
+    "titre": "Caquelon",
+    "detail": "Rub the inside of the caquelon with a cut clove of garlic."
+   },
+   {
+    "titre": "Wine",
+    "detail": "Pour in the white wine and warm it gently."
+   },
+   {
+    "titre": "Cheeses",
+    "detail": "Add the grated Gruyere and Vacherin in several additions."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir constantly in figure-eights until creamy and smooth."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Dissolve the cornstarch in the kirsch and stir it in."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the bread into cubes, each with a bit of crust."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Keep at a gentle simmer over the burner and dip the bread."
+   }
+  ]
+ },
+ "malakoff": {
+  "nom": "Malakoffs Vaudois",
+  "description": "Fried Gruyere fritters from the canton of Vaud, crisp outside and molten within. The festive indulgence of La Cote.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Finely grate the Gruyere."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Mix the cheese, egg, flour and white wine into a thick batter."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add a touch of garlic and nutmeg."
+   },
+   {
+    "titre": "Top",
+    "detail": "Spread the batter onto slices of bread."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat a bath of oil to 170 °C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry cheese-side down until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve right away, nice and molten."
+   }
+  ]
+ },
+ "papetvaudois": {
+  "nom": "Papet Vaudois",
+  "description": "Leeks and potatoes braised in white wine, crowned with a cabbage sausage. The iconic winter dish of the canton of Vaud.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Thinly slice the leeks and cut the potatoes into cubes."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Sweat the leeks in butter without coloring them."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Deglaze with white wine and let it reduce."
+   },
+   {
+    "titre": "Potatoes",
+    "detail": "Add the potatoes and cover with water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 30 min until everything turns meltingly tender."
+   },
+   {
+    "titre": "Sausage",
+    "detail": "Poach the cabbage sausage on top of the papet for 20 min."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Stir in the cream and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the sliced sausage over the bed of papet."
+   }
+  ]
+ },
+ "zopf": {
+  "nom": "Zopf (Buttery Braided Bread)",
+  "description": "The Swiss Sunday butter braid: a soft, stretchy crumb under a golden egg-washed crust. The bread of the Sunday brunch.",
+  "etapes": [
+   {
+    "titre": "Knead",
+    "detail": "Knead flour, warm milk, yeast, butter and salt for 10 min."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let rise 1h30 until doubled in volume."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Punch down and divide the dough into two long ropes."
+   },
+   {
+    "titre": "Braid",
+    "detail": "Braid the two strands, pinching the ends tightly."
+   },
+   {
+    "titre": "Proof",
+    "detail": "Let it puff up again for 30 min on the baking sheet."
+   },
+   {
+    "titre": "Egg wash",
+    "detail": "Brush with beaten egg for a glossy crust."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200 °C until a deep golden brown."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool and slice for brunch."
+   }
+  ]
+ },
+ "fonduechocolat": {
+  "nom": "Chocolate Fondue",
+  "description": "Swiss chocolate melted with cream, kept warm in a caquelon for dipping fruit and cookies. The ultimate crowd-pleasing dessert.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Chop the chocolate into small, even pieces."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the cream without letting it boil."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Pour over the chocolate and let it melt for 1 min."
+   },
+   {
+    "titre": "Smooth",
+    "detail": "Stir until you have a smooth, glossy ganache."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Adjust with a little sugar, or even a splash of kirsch."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Cut up fruit, cookies and chunks of cake."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Keep warm in the caquelon and dip away."
+   }
+  ]
+ },
+ "zurichgeschnetzeltes": {
+  "nom": "Émincé Zurichois",
+  "description": "Thin strips of veal and mushrooms in a creamy white wine sauce. The great Zurich classic, served with rösti.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the veal into thin strips; thinly slice the onion and mushrooms."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the veal hard in small batches, then set aside."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the onion, then add the mushrooms."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Deglaze with white wine and reduce by half."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add the cream and a little stock; let it thicken."
+   },
+   {
+    "titre": "Return",
+    "detail": "Return the veal and its juices without letting it boil."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Adjust the seasoning with a touch of lemon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away with crispy rösti."
+   }
+  ]
+ },
+ "capuns": {
+  "nom": "Capuns",
+  "description": "A Grisons specialty: a bacon-studded spätzle dough wrapped in chard leaves, poached then gratinéed. Rustic and comforting.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Mix flour, egg and milk into a thick spätzle dough."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Fold crisped bacon bits and herbs into the dough."
+   },
+   {
+    "titre": "Leaves",
+    "detail": "Blanch the chard leaves to make them pliable."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Drop a spoonful of dough onto each leaf and roll into small parcels."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the capuns in a gently simmering broth for 10 min."
+   },
+   {
+    "titre": "Top",
+    "detail": "Arrange in a dish and top with cream and Gruyère."
+   },
+   {
+    "titre": "Gratin",
+    "detail": "Gratiné in the oven until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot and meltingly tender."
+   }
+  ]
+ },
+ "tafelspitz": {
+  "nom": "Tafelspitz",
+  "description": "Beef slowly poached in a vegetable broth, sliced and served with horseradish sauce. The favorite dish of Emperor Franz Joseph.",
+  "etapes": [
+   {
+    "titre": "Onion",
+    "detail": "Char half an onion dry to color the broth."
+   },
+   {
+    "titre": "Start",
+    "detail": "Slip the beef into simmering water and skim."
+   },
+   {
+    "titre": "Veg",
+    "detail": "Add carrot, leek, onion and aromatics."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach at a bare simmer for 2h until perfectly tender."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Lift out the cut and slice it against the grain."
+   },
+   {
+    "titre": "Horseradish",
+    "detail": "Make a bright apple-horseradish sauce."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Serve with pan-fried potatoes and spinach."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Ladle over a little hot broth and serve."
+   }
+  ]
+ },
+ "frittatensuppe": {
+  "nom": "Frittatensuppe",
+  "description": "Clear beef broth garnished with thin strips of savory crêpe. The ultimate comforting Viennese soup.",
+  "etapes": [
+   {
+    "titre": "Batter",
+    "detail": "Whisk flour, egg, milk and salt into a smooth crêpe batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest for 15 min."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook thin, golden crêpes in butter."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the warm crêpes up tightly."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut into very thin strips."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Heat a good clear beef broth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Arrange the strips in the bowl and sprinkle with chives."
+   }
+  ]
+ },
+ "germknodel": {
+  "nom": "Germknödel",
+  "description": "A large yeast-dough dumpling filled with plum jam, steamed, then drizzled with melted butter and sweet poppy seed. A dessert from Austrian mountain huts.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead flour, warm milk, yeast and sugar into a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and let double for 45 min."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Divide and flatten into disks in your hand."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place the plum jam (powidl) in the center and seal closed."
+   },
+   {
+    "titre": "Proof",
+    "detail": "Let the dumplings puff up again for 15 min."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 15 min without lifting the lid."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Drizzle with melted butter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with sweetened ground poppy seed and serve right away."
+   }
+  ]
+ },
+ "linzertorte": {
+  "nom": "Linzertorte",
+  "description": "The oldest tart in the world: an almond and cinnamon shortcrust filled with redcurrant jam under a lattice top. A specialty of Linz.",
+  "etapes": [
+   {
+    "titre": "Rub in",
+    "detail": "Rub flour, ground almonds, sugar, butter and cinnamon to a crumb."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Bind with the egg into a smooth dough; don't overwork it."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Wrap and chill for 30 min."
+   },
+   {
+    "titre": "Line",
+    "detail": "Roll out 3/4 of the dough and line a tin."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread a generous layer of redcurrant jam."
+   },
+   {
+    "titre": "Lattice",
+    "detail": "Cut strips and form the signature lattice top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Egg-wash the edges and bake at 180 °C until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool: the tart is even better the next day."
+   }
+  ]
+ },
+ "kasespatzle": {
+  "nom": "Käsespätzle",
+  "description": "Little fresh noodles baked with mountain cheese and crowned with fried onions. The mac & cheese of the Tyrolean Alps.",
+  "etapes": [
+   {
+    "titre": "Batter",
+    "detail": "Whisk flour, eggs, salt and a little water into a stretchy batter."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Slowly brown the sliced onions in butter."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Push the batter through a colander into boiling water."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the spätzle as soon as they float to the top."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Alternate spätzle and grated cheese in a warm dish."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pop in the oven to make the cheese stringy."
+   },
+   {
+    "titre": "Crown",
+    "detail": "Crown with crispy fried onions."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with a green salad."
+   }
+  ]
+ },
+ "grostl": {
+  "nom": "Tiroler Gröstl",
+  "description": "A Tyrolean skillet of potatoes and beef pan-fried with onion, crowned with a fried egg. Hearty mountain comfort that wastes nothing.",
+  "etapes": [
+   {
+    "titre": "Pre-cook",
+    "detail": "Boil the potatoes and let them cool slightly."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cube the potatoes and the cooked beef."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Soften the onion in butter in a large skillet."
+   },
+   {
+    "titre": "Crisp",
+    "detail": "Add the potatoes and brown them well."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Stir in the beef and season with caraway and marjoram."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Fry an egg separately."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the skillet crowned with the fried egg."
+   }
+  ]
+ },
+ "backhendl": {
+  "nom": "Backhendl",
+  "description": "Viennese-style breaded chicken, fried golden and crisp, served with lemon. The festive ancestor of fried chicken, beloved in imperial Austria.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the chicken into pieces and season with salt and pepper."
+   },
+   {
+    "titre": "Set up",
+    "detail": "Set up three plates: flour, beaten egg, breadcrumbs."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat each piece in flour, then egg, then breadcrumbs."
+   },
+   {
+    "titre": "Pat",
+    "detail": "Pat to set the coating without pressing it down."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 170 °C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the pieces until golden and crisp."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on a rack to keep them crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a lemon wedge and salad."
+   }
+  ]
+ },
+ "waakye": {
+  "nom": "Waakye",
+  "description": "Rice and beans cooked together with sorghum leaves that tint them red. The king of street breakfasts in Accra.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the beans overnight to speed up cooking."
+   },
+   {
+    "titre": "Color",
+    "detail": "Cook the beans with the sorghum leaves (or baking soda)."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Add the rinsed rice once the beans are half-cooked."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add water to cover and cook covered until absorbed."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Sauté the onion in palm oil."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir the onion into the waakye and salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with chili sauce (shito), spaghetti and a hard-boiled egg."
+   }
+  ]
+ },
+ "groundnutsoup": {
+  "nom": "Groundnut Soup",
+  "description": "A silky peanut-butter soup with chicken, tomato and ginger. The velvety comfort of a Ghanaian Sunday, served with rice.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Brown the chicken with onion and ginger."
+   },
+   {
+    "titre": "Base",
+    "detail": "Add the blended tomato and let it reduce."
+   },
+   {
+    "titre": "Add water",
+    "detail": "Cover with water and bring to a gentle simmer."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Whisk the peanut butter into a little of the broth."
+   },
+   {
+    "titre": "Stir in",
+    "detail": "Pour back into the soup, whisking until smooth."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 30 min until the peanut oil beads on the surface."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust salt and chili."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with white rice or omotuo rice balls."
+   }
+  ]
+ },
+ "banku": {
+  "nom": "Banku",
+  "description": "A lightly fermented corn-and-cassava dough worked into a smooth ball. The tangy companion to Ghanaian soups and sauces.",
+  "etapes": [
+   {
+    "titre": "Mix",
+    "detail": "Stir the fermented corn and cassava doughs into the water."
+   },
+   {
+    "titre": "Smooth",
+    "detail": "Strain to get a lump-free batter."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Pour into a pot and heat over medium."
+   },
+   {
+    "titre": "Work",
+    "detail": "Stir vigorously and continuously with a spatula."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Work until the dough is smooth, glossy and elastic."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form balls using a wet bowl."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with okra stew, tilapia or shito."
+   }
+  ]
+ },
+ "lightsoup": {
+  "nom": "Ghanaian Light Soup",
+  "description": "A clear, lively broth with fish, tomato, ginger and chili. Light, fragrant and famously restorative when you're fighting a cold.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Clean the fish; blend tomato, onion, ginger and chili."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the aromatic puree for a few minutes."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Add plenty of water and bring to a boil."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Let simmer 20 min to develop the flavors."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Slip in the fish and poach gently."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Correct salt and chili, keeping the broth nice and clear."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with fufu, rice or yams."
+   }
+  ]
+ },
+ "kontomire": {
+  "nom": "Kontomire (Palaver Sauce)",
+  "description": "A stew of leafy greens with palm oil, fish and onion. The rich, earthy cocoyam-leaf spinach sauce.",
+  "etapes": [
+   {
+    "titre": "Blanch",
+    "detail": "Blanch and roughly chop the greens."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the palm oil in a pot."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the onion and tomato until melted down."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Add the flaked fish (smoked or fresh)."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Stir in the greens and a little water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 15 min until the sauce thickens."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add chili and egusi seeds if you like."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice, yams or banku."
+   }
+  ]
+ },
+ "tatale": {
+  "nom": "Tatalé",
+  "description": "Ripe plantain fritters spiced with ginger and chili, fried golden. Ghana's sweet-and-spicy snack.",
+  "etapes": [
+   {
+    "titre": "Choose",
+    "detail": "Pick very ripe plantains (black skin) for sweetness."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash them into a puree with a fork."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add grated onion, finely chopped ginger and chili."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Stir in flour to bind into a thick batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 min."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop spoonfuls into hot oil and brown on both sides."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot, as a side or a snack."
+   }
+  ]
+ },
+ "shito": {
+  "nom": "Shito",
+  "description": "Ghana's black chili sauce, slowly simmered in oil with shrimp, onion and ginger. It keeps well and seasons absolutely everything.",
+  "etapes": [
+   {
+    "titre": "Blend",
+    "detail": "Blend onion, tomato, ginger and garlic into a puree."
+   },
+   {
+    "titre": "Blend 2",
+    "detail": "Grind dried shrimp and smoked fish into a powder."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat plenty of oil in a saucepan."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Cook the aromatic puree until the water evaporates."
+   },
+   {
+    "titre": "Chili",
+    "detail": "Add chili powder, shrimp and spices."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Cook over low heat 20-30 min until the sauce darkens."
+   },
+   {
+    "titre": "Store",
+    "detail": "Transfer to a sterilized jar, topped with oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Use as a condiment on rice, waakye, kenkey…"
+   }
+  ]
+ },
+ "garba": {
+  "nom": "Garba",
+  "description": "Ivory Coast's cult street food: Attiéké with fried tuna, onion and chili. Simple, cheap and ridiculously addictive.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the tuna into chunks; slice fresh onion and chili."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt the fish and let it sit 5 min."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the frying oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the tuna until golden and cooked through."
+   },
+   {
+    "titre": "Attiéké",
+    "detail": "Steam the attiéké to loosen and warm it through."
+   },
+   {
+    "titre": "Relish",
+    "detail": "Mix onion, tomato and chili with a little oil."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Serve the attiéké, fish and relish together."
+   }
+  ]
+ },
+ "saucegraine": {
+  "nom": "Sauce Graine",
+  "description": "A silky stew of palm-nut pulp, beef and chili. Deep red and powerful, served with rice or foutou.",
+  "etapes": [
+   {
+    "titre": "Pulp",
+    "detail": "Dissolve the palm-nut pulp in hot water."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Sear the beef with the onion."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add tomato and chili and sauté."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in the palm-nut pulp and top up with water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over low heat 45 min."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Skim off the excess red oil on the surface."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Salt, and add smoked fish or crab if you like."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice, foutou or placali."
+   }
+  ]
+ },
+ "saucearachide": {
+  "nom": "Peanut Stew",
+  "description": "A creamy chicken stew with peanut butter, tomato and ginger. Rich and hearty, the great classic of all West Africa.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Brown the seasoned chicken and set aside."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion, ginger and tomato."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Whisk the peanut butter into hot water."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the chicken and peanut butter to the pot."
+   },
+   {
+    "titre": "Add water",
+    "detail": "Add water for a loose, smooth sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 30 min until the oil rises to the top."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust salt and chili."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with white rice."
+   }
+  ]
+ },
+ "foutou": {
+  "nom": "Foutou Banane",
+  "description": "Plantain and cassava pounded into a smooth, elastic dough. The essential companion to Ivorian sauces.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Peel the plantains and cassava and cut into chunks."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Boil in water until tender."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain, keeping a little of the cooking water."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound in a mortar (or food processor), adding hot water."
+   },
+   {
+    "titre": "Work",
+    "detail": "Work until the dough is smooth, supple and elastic."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Wet your hands and form nice balls."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away with sauce graine or sauce claire."
+   }
+  ]
+ },
+ "poissonbraise": {
+  "nom": "Poisson Braisé",
+  "description": "A whole fish marinated in ginger and lime, then grilled over wood fire. The star of Ivorian maquis, served with attiéké and alloco.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Gut, scale and score the fish along the sides."
+   },
+   {
+    "titre": "Marinade",
+    "detail": "Blend garlic, ginger, chili, lime, salt and oil."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Rub the fish all over with marinade and let sit 30 min."
+   },
+   {
+    "titre": "Embers",
+    "detail": "Build a hot bed of embers (or a screaming-hot grill)."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the fish, basting with marinade, then flip."
+   },
+   {
+    "titre": "Relish",
+    "detail": "Make a lime-chili marinated onion relish."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Check doneness; the flesh should flake apart."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with attiéké, alloco and the relish."
+   }
+  ]
+ },
+ "sauceclaire": {
+  "nom": "Sauce Claire",
+  "description": "A light broth thickened with okra, with fish, tomato and chili. The slippery, comforting everyday sauce of Ivory Coast.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Slice the okra into rounds; slice onion and tomato."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion, tomato and chili."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Add water and bring to a gentle simmer."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Add the fish and a little smoked fish."
+   },
+   {
+    "titre": "Okra",
+    "detail": "Stir in the okra, which will thicken the sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 15 min until it reaches the signature stringy texture."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Correct the salt and chili."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with foutou, rice or placali."
+   }
+  ]
+ },
+ "saucegombo": {
+  "nom": "Okra Sauce",
+  "description": "A silky, stringy okra stew with palm oil and beef, kicked up with chili. A one-of-a-kind texture, served with a pounded starch.",
+  "etapes": [
+   {
+    "titre": "Meat",
+    "detail": "Simmer the beef with onion until tender."
+   },
+   {
+    "titre": "Okra",
+    "detail": "Grate or finely chop the okra."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Add the palm oil to the meat broth."
+   },
+   {
+    "titre": "Stir In",
+    "detail": "Stir in the okra."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Cook until the sauce turns stringy."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add chili, dried shrimp and spices."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with cassava couscous, fufu or rice."
+   }
+  ]
+ },
+ "koki": {
+  "nom": "Koki",
+  "description": "A ground black-eyed pea flan with palm oil and spinach, steamed in banana leaves. Creamy and nourishing.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the black-eyed peas, then rub off the skins."
+   },
+   {
+    "titre": "Grind",
+    "detail": "Blend into a smooth paste with a little water."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Beat in the hot palm oil a little at a time."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Add chopped spinach, chili and salt."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Divide the paste among leaves (or ramekins)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 1 hr until the flan sets."
+   },
+   {
+    "titre": "Unmold",
+    "detail": "Let cool slightly before unmolding."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with boiled plantain or rice."
+   }
+  ]
+ },
+ "kondre": {
+  "nom": "Kondré",
+  "description": "A spiced plantain and beef stew, simmered until meltingly tender. A festive dish from western Cameroon.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Brown the seasoned beef in the pot."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add onion, garlic and ginger and sauté."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Stir in the tomato and spices (njangsa, pèbè)."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Cover with water and simmer for 30 min."
+   },
+   {
+    "titre": "Plantain",
+    "detail": "Add the not-too-ripe plantains in chunks."
+   },
+   {
+    "titre": "Tenderize",
+    "detail": "Continue for 20 min until everything is meltingly tender."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust the salt and chili."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well coated, as a one-pot meal."
+   }
+  ]
+ },
+ "mbongotchobi": {
+  "nom": "Mbongo Tchobi",
+  "description": "A bold, jet-black fish stew made with charred spices (mbongo). Dramatic, smoky and deeply fragrant.",
+  "etapes": [
+   {
+    "titre": "Char",
+    "detail": "Toast the mbongo spices until they blacken."
+   },
+   {
+    "titre": "Grind",
+    "detail": "Grind them into a fine black powder."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Season the fish with garlic, ginger and lemon."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the onion and tomato."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Whisk the black powder with water and pour it into the pot."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the fish and simmer gently for 20 min."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust the chili and salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with plantain, cassava or bobolo."
+   }
+  ]
+ },
+ "achu": {
+  "nom": "Achu (Yellow Soup)",
+  "description": "Pounded yam paste served with a yellow palm-oil and beef soup. A ceremonial dish of the Grassfields.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Boil the yam (and a little taro) until tender."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound into a very smooth paste and keep warm and moist."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Simmer the beef with onion for a hearty broth."
+   },
+   {
+    "titre": "Emulsify",
+    "detail": "Whisk the palm oil with kanwa stone and water."
+   },
+   {
+    "titre": "Yellow",
+    "detail": "The emulsified soup should turn a yellow-orange."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add yellow chili and spices."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Pour the hot soup over the meat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the yam paste alongside, for dipping into the soup."
+   }
+  ]
+ },
+ "brochettescamerounaises": {
+  "nom": "Soya Skewers",
+  "description": "Grilled beef skewers coated in a spicy peanut blend. The \"soya\" of Cameroonian charcoal-grill nights.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Cut the beef into thin strips."
+   },
+   {
+    "titre": "Soya",
+    "detail": "Make the soya powder: roasted peanuts, chili, ginger, spices."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Toss the meat with a little oil and soya powder."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the strips accordion-style onto the skewers."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over charcoal, turning regularly."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Dust generously with soya powder at the end of cooking."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Serve with raw onion and plantain slices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Enjoy piping hot, by hand."
+   }
+  ]
+ }
 };
