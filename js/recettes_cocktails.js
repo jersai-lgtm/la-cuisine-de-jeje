@@ -1350,7 +1350,7 @@ Object.assign(recettes, {
   fraisebasilicsmash: {
     nom: "Fraise Basilic Smash",
     dateAjout: "2026-06-06T12:52:00",
-    cat: "cocktails", pays: "etats-unis",
+    cat: "cocktails", pays: "usa",
     base: 4,
     temps: "5 min",
     niveau: "⭐ Facile",

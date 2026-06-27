@@ -823,7 +823,7 @@ Object.assign(recettes, {
     liees: ["glacevanille"],
     nom: "Milkshake à la Fraise",
     dateAjout: "2026-06-06T12:51:00",
-    cat: "mocktails", pays: "etats-unis",
+    cat: "mocktails", pays: "usa",
     base: 4,
     temps: "5 min",
     niveau: "⭐ Facile",

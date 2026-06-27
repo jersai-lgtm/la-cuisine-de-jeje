@@ -1099,7 +1099,7 @@ Object.assign(recettes, {
     liees: ["pizza", "saucebarbecue"],
     nom: "Pizza Poulet BBQ",
     cat: "pizzas",
-    pays: "etats-unis",
+    pays: "usa",
     dateAjout: "2026-06-23T10:00:00",
     base: 2,
     temps: "25 min",

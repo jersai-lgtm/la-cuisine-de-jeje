@@ -844,7 +844,7 @@ Object.assign(recettes, {
   },
   bowlsaumonquinoa: {
     nom: "Bowl Saumon-Quinoa",
-    cat: "healthy", pays: "international",
+    cat: "healthy", pays: "monde",
     base: 2,
     temps: "30 min",
     niveau: "⭐ Facile",
@@ -1100,7 +1100,7 @@ Object.assign(recettes, {
   pokebowlpoulet: {
     nom: "Poke Bowl Poulet",
     cat: "healthy",
-    pays: "etats-unis",
+    pays: "usa",
     dateAjout: "2026-06-22T11:00:00",
     saisons: ["ete"],
     base: 2,

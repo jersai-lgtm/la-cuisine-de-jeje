@@ -1465,7 +1465,7 @@ Object.assign(recettes, {
   saladepatatedouce: {
     nom: "Salade de Patate Douce Rôtie & Feta",
     cat: "salades",
-    pays: "etats-unis",
+    pays: "usa",
     dateAjout: "2026-06-22T11:00:00",
     saisons: ["automne", "hiver"],
     base: 4,

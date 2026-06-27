@@ -780,7 +780,7 @@ Object.assign(recettes, {
   glacenoixpecan: {
     nom: "Glace Noix de Pécan",
     cat: "glaces",
-    pays: "etats-unis",
+    pays: "usa",
     dateAjout: "2026-06-22T11:00:00",
     base: 4,
     temps: "30 min + turbinage",
@@ -818,7 +818,7 @@ Object.assign(recettes, {
   glacecookiedough: {
     nom: "Glace Cookie Dough",
     cat: "glaces",
-    pays: "etats-unis",
+    pays: "usa",
     dateAjout: "2026-06-22T11:00:00",
     base: 4,
     temps: "30 min + turbinage",

@@ -3960,7 +3960,7 @@ Object.assign(recettes, {
   },
   oxtailcaribeen: {
     nom: "Queue de Bœuf Caribéenne",
-    cat: "plats", saisons: ["hiver","automne"], pays: "caraibes",
+    cat: "plats", saisons: ["hiver","automne"], pays: "antilles",
     base: 4,
     temps: "3h",
     niveau: "⭐⭐⭐ Élevé",
@@ -5894,7 +5894,7 @@ Object.assign(recettes, {
   },
   jerkchicken: {
     nom: "Jerk Chicken",
-    cat: "plats", pays: "caraibes",
+    cat: "plats", pays: "antilles",
     dateAjout: "2026-06-01",
     base: 4,
     temps: "45 min (+marinade)",
@@ -6080,7 +6080,7 @@ Object.assign(recettes, {
   },
   riceandpeas: {
     nom: "Rice & Peas",
-    cat: "plats", pays: "caraibes",
+    cat: "plats", pays: "antilles",
     dateAjout: "2026-06-01",
     base: 4,
     temps: "45 min",

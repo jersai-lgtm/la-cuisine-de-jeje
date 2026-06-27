@@ -2137,7 +2137,7 @@ Object.assign(recettes, {
   popcornmaison: {
     nom: "Popcorn Maison",
     cat: "encas",
-    pays: "etats-unis",
+    pays: "usa",
     dateAjout: "2026-06-22T11:00:00",
     base: 4,
     temps: "10 min",

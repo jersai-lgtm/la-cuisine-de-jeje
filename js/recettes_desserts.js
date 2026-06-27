@@ -3133,7 +3133,7 @@ Object.assign(recettes, {
   gateaucarotte: {
     nom: "Gâteau aux Carottes",
     dateAjout: "2026-06-06T12:57:00",
-    cat: "desserts", pays: "etats-unis",
+    cat: "desserts", pays: "usa",
     base: 4,
     temps: "1 h",
     niveau: "⭐⭐ Moyen",
@@ -3170,7 +3170,7 @@ Object.assign(recettes, {
   mugcakechoco: {
     nom: "Mug Cake au Chocolat",
     dateAjout: "2026-06-06T12:56:00",
-    cat: "desserts", pays: "etats-unis",
+    cat: "desserts", pays: "usa",
     base: 4,
     temps: "5 min",
     niveau: "⭐ Facile",
