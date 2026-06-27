@@ -1700,6 +1700,14 @@ select, input[type="number"] {
   font-size: 10px;
   color: var(--text-3);
 }
+.mini-carte-prixcal {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-2);
+  margin-top: 1px;
+  white-space: nowrap;
+}
 .mini-carte-raison {
   display: inline-block; margin-top: 3px; font-size: 9.5px; font-weight: 700;
   color:var(--bleu); background: rgba(90,160,245,.16); border-radius: 6px;

@@ -1237,6 +1237,24 @@ function miniCarte(key, raisonHTML, opts) {
   // Badge note communautaire (bas-gauche)
   const badgeNote = (typeof noteCommunauteBadgeHTML === "function") ? noteCommunauteBadgeHTML(key, "mini") : "";
 
+  // Prix + calories par portion (mêmes exclusions que les filtres/tris :
+  // pas de boissons ni de bases dosées à l'unité — prix/cal non fiables par convive).
+  let lignePrixCal = "";
+  if (typeof calculerPrixCaloriesRecette === "function" && !["cocktails", "mocktails", "sauces", "tartinables"].includes(r.cat)) {
+    const tk = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (tk) {
+      const base = r.base || 4;
+      const ligne = r[tk].find(l => l.nb === base || l.patons === base) || r[tk][0];
+      const pc = ligne && calculerPrixCaloriesRecette(ligne);
+      if (pc) {
+        const parts = [];
+        if (pc.prix != null) parts.push("💰 " + (pc.prix / base).toFixed(2).replace(".", ",") + " €");
+        if (pc.cal != null) parts.push("🔥 " + Math.round(pc.cal / base) + " kcal");
+        if (parts.length) lignePrixCal = `<span class="mini-carte-prixcal">${parts.join("  ·  ")}</span>`;
+      }
+    }
+  }
+
   return `<div class="mini-carte" style="${styleAlerte}" title="${titleAlerte}" onclick="ouvrirFiche('${key}','')">
     <img loading="lazy" decoding="async" src="${getThumbPath(key)}" alt="${nom}" onerror="${imgCarteOnerror(key)}">
     ${badgeNutri}
@@ -1248,6 +1266,7 @@ function miniCarte(key, raisonHTML, opts) {
       ${badgeNote}
       <span class="mini-carte-nom">${typeof drapeau === "function" ? drapeau(r.pays, 13) : ""}<span class="mini-carte-emoji">${r.emoji || "🍽️"}</span> ${nom}</span>
       <span class="mini-carte-temps">⏱ ${r.temps || ""}</span>
+      ${lignePrixCal}
       ${raisonHTML || ""}
     </div>
   </div>`;

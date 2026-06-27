@@ -62,6 +62,38 @@
     return res;
   }
 
+  // Badge Nutri-Score (réutilise le visuel .carte-nutri) — hors boissons.
+  function nutriBadgeSim(key) {
+    try {
+      const r = recettes[key];
+      if (!r || r.cat === "cocktails" || r.cat === "mocktails" || typeof calculerNutriScoreRecette !== "function") return "";
+      const tk = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+      if (!tk) return "";
+      const base = r.base || 4;
+      const ligne = r[tk].find(l => l.nb === base || l.patons === base) || r[tk][0];
+      const ns = ligne && calculerNutriScoreRecette(ligne);
+      return ns ? `<span class="sim-nutri carte-nutri nutri-${ns.lettre}" data-lettre="${ns.lettre}" title="Nutri-Score ${ns.lettre}"></span>` : "";
+    } catch (e) { return ""; }
+  }
+  // Prix + calories par portion (mêmes exclusions que les filtres/tris).
+  function prixCalSim(key) {
+    try {
+      const r = recettes[key];
+      if (!r || ["cocktails", "mocktails", "sauces", "tartinables"].includes(r.cat)) return "";
+      if (typeof calculerPrixCaloriesRecette !== "function") return "";
+      const tk = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+      if (!tk) return "";
+      const base = r.base || 4;
+      const ligne = r[tk].find(l => l.nb === base || l.patons === base) || r[tk][0];
+      const pc = ligne && calculerPrixCaloriesRecette(ligne);
+      if (!pc) return "";
+      const parts = [];
+      if (pc.prix != null) parts.push("💰 " + (pc.prix / base).toFixed(2).replace(".", ",") + " €");
+      if (pc.cal != null) parts.push("🔥 " + Math.round(pc.cal / base) + " kcal");
+      return parts.length ? '<span class="sim-meta">' + parts.join("  ·  ") + "</span>" : "";
+    } catch (e) { return ""; }
+  }
+
   function injecterStyle() {
     if (document.getElementById("similaires-style")) return;
     const st = document.createElement("style");
@@ -70,11 +102,13 @@
       "#fiche-similaires{margin:16px 0 4px}" +
       "#fiche-similaires .sim-titre{font-weight:700;color:#fff;font-size:14px;margin-bottom:10px}" +
       "#fiche-similaires .sim-scroll{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;scroll-snap-type:x proximity}" +
-      "#fiche-similaires .sim-carte{flex:0 0 122px;scroll-snap-align:start;background:rgba(255,255,255,.04);" +
+      "#fiche-similaires .sim-carte{position:relative;flex:0 0 122px;scroll-snap-align:start;background:rgba(255,255,255,.04);" +
       "border:1px solid rgba(255,255,255,.08);border-radius:13px;overflow:hidden;cursor:pointer;transition:transform .12s}" +
       "#fiche-similaires .sim-carte:hover{transform:translateY(-2px)}" +
       "#fiche-similaires .sim-img{width:100%;height:78px;object-fit:cover;display:block;background:var(--surface-1)}" +
-      "#fiche-similaires .sim-nom{display:block;padding:7px 8px;font-size:12px;color:#e7e4ec;line-height:1.3}";
+      "#fiche-similaires .sim-nutri{position:absolute;top:6px;left:6px;right:auto;z-index:2;transform:scale(.8);transform-origin:top left}" +
+      "#fiche-similaires .sim-nom{display:block;padding:7px 8px 2px;font-size:12px;color:#e7e4ec;line-height:1.3}" +
+      "#fiche-similaires .sim-meta{display:block;padding:0 8px 7px;font-size:10px;font-weight:600;color:#bdb9c6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}";
     document.head.appendChild(st);
   }
 
@@ -94,7 +128,9 @@
       const onerr = "if(this.src.indexOf('thumbs/')>-1){this.src='" + full(k) + "'}else{this.style.visibility='hidden'}";
       return '<div class="sim-carte" onclick="ouvrirRecetteLiee(\'' + k + '\',\'' + key + '\')">' +
         '<img class="sim-img" loading="lazy" decoding="async" src="' + esc(thumb(k)) + '" alt="" onerror="' + esc(onerr) + '">' +
-        '<span class="sim-nom">' + emo + ' ' + esc(nom) + '</span></div>';
+        nutriBadgeSim(k) +
+        '<span class="sim-nom">' + emo + ' ' + esc(nom) + '</span>' +
+        prixCalSim(k) + '</div>';
     }).join("");
     const html = '<div id="fiche-similaires"><div class="sim-titre">🍽️ Tu aimeras aussi</div><div class="sim-scroll">' + cartes + '</div></div>';
     cont.insertAdjacentHTML("beforeend", html);
