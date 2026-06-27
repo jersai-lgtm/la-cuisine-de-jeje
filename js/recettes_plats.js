@@ -15127,6 +15127,7 @@ Object.assign(recettes, {
     ]
   },
   couscousalgerien: {
+    liees: ["couscoustunisien","harissa"],
     nom: "Couscous Algérien",
     cat: "plats", pays: "algerie",
     base: 4,
@@ -15313,6 +15314,7 @@ Object.assign(recettes, {
     ]
   },
   kalbellouz: {
+    liees: ["makrout"],
     nom: "Kalb el Louz",
     cat: "desserts", pays: "algerie",
     base: 4,
@@ -15388,6 +15390,7 @@ Object.assign(recettes, {
     ]
   },
   makrout: {
+    liees: ["kalbellouz"],
     nom: "Makrout",
     cat: "desserts", pays: "algerie",
     base: 4,
@@ -15426,6 +15429,7 @@ Object.assign(recettes, {
     ]
   },
   couscoustunisien: {
+    liees: ["harissa","couscousalgerien"],
     nom: "Couscous Tunisien au Poisson",
     cat: "plats", pays: "tunisie",
     base: 4,
@@ -15464,6 +15468,7 @@ Object.assign(recettes, {
     ]
   },
   kafteji: {
+    liees: ["harissa"],
     nom: "Kafteji",
     cat: "plats", pays: "tunisie",
     base: 4,
@@ -15575,6 +15580,7 @@ Object.assign(recettes, {
     ]
   },
   tajinmalsouka: {
+    liees: ["brik"],
     nom: "Tajine Malsouka",
     cat: "plats", pays: "tunisie",
     base: 4,
@@ -15612,6 +15618,7 @@ Object.assign(recettes, {
     ]
   },
   fondue: {
+    liees: ["paincampagne"],
     nom: "Fondue Moitié-Moitié",
     cat: "plats", pays: "suisse",
     base: 4,
@@ -15799,6 +15806,7 @@ Object.assign(recettes, {
     ]
   },
   zurichgeschnetzeltes: {
+    liees: ["rosti"],
     nom: "Émincé Zurichois",
     cat: "plats", pays: "suisse",
     base: 4,
@@ -16139,6 +16147,7 @@ Object.assign(recettes, {
     ]
   },
   waakye: {
+    liees: ["shito"],
     nom: "Waakye",
     cat: "plats", pays: "ghana",
     base: 4,
@@ -16214,6 +16223,7 @@ Object.assign(recettes, {
     ]
   },
   banku: {
+    liees: ["saucegombo","kontomire"],
     nom: "Banku",
     cat: "plats", pays: "ghana",
     base: 4,
@@ -16288,6 +16298,7 @@ Object.assign(recettes, {
     ]
   },
   kontomire: {
+    liees: ["banku"],
     nom: "Kontomire (Sauce Palabre)",
     cat: "plats", pays: "ghana",
     base: 4,
@@ -16401,6 +16412,7 @@ Object.assign(recettes, {
     ]
   },
   garba: {
+    liees: ["attieke","aloco"],
     nom: "Garba",
     cat: "plats", pays: "cotedivoire",
     base: 4,
@@ -16438,6 +16450,7 @@ Object.assign(recettes, {
     ]
   },
   saucegraine: {
+    liees: ["foutou"],
     nom: "Sauce Graine",
     cat: "plats", pays: "cotedivoire",
     base: 4,
@@ -16476,6 +16489,7 @@ Object.assign(recettes, {
     ]
   },
   saucearachide: {
+    liees: ["foutou"],
     nom: "Sauce Arachide",
     cat: "plats", pays: "cotedivoire",
     base: 4,
@@ -16514,6 +16528,7 @@ Object.assign(recettes, {
     ]
   },
   foutou: {
+    liees: ["saucegraine","sauceclaire","saucearachide"],
     nom: "Foutou Banane",
     cat: "plats", pays: "cotedivoire",
     base: 4,
@@ -16551,6 +16566,7 @@ Object.assign(recettes, {
     ]
   },
   poissonbraise: {
+    liees: ["attieke","aloco"],
     nom: "Poisson Braisé",
     cat: "plats", pays: "cotedivoire",
     base: 4,
@@ -16589,6 +16605,7 @@ Object.assign(recettes, {
     ]
   },
   sauceclaire: {
+    liees: ["foutou"],
     nom: "Sauce Claire",
     cat: "plats", pays: "cotedivoire",
     base: 4,
@@ -16627,6 +16644,7 @@ Object.assign(recettes, {
     ]
   },
   saucegombo: {
+    liees: ["banku","foutou"],
     nom: "Sauce Gombo",
     cat: "plats", pays: "cameroun",
     base: 4,
@@ -16893,6 +16911,7 @@ Object.assign(recettes, {
     ]
   },
   perico: {
+    liees: ["arepa"],
     nom: "Perico",
     cat: "brunch", pays: "venezuela",
     base: 4,
@@ -16929,6 +16948,7 @@ Object.assign(recettes, {
     ]
   },
   caraotas: {
+    liees: ["pabellon","arepa"],
     nom: "Caraotas Negras",
     cat: "plats", pays: "venezuela",
     base: 4,
@@ -17302,6 +17322,7 @@ Object.assign(recettes, {
     ]
   },
   provoleta: {
+    liees: ["asadoargentin","paincampagne"],
     nom: "Provoleta",
     cat: "aperitifs", pays: "argentine",
     base: 4,
