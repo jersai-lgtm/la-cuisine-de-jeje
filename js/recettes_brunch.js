@@ -1709,7 +1709,7 @@ Object.assign(recettes, {
   oeufsbrouilleshaddock: {
     nom: "Œufs Brouillés au Haddock",
     cat: "brunch",
-    pays: "royaume-uni",
+    pays: "angleterre",
     dateAjout: "2026-06-23T13:00:00",
     base: 4,
     temps: "15 min",

@@ -13045,7 +13045,7 @@ Object.assign(recettes, {
   curryhaddock: {
     nom: "Curry au Haddock",
     cat: "plats",
-    pays: "royaume-uni",
+    pays: "angleterre",
     dateAjout: "2026-06-23T13:00:00",
     base: 4,
     temps: "30 min",
@@ -14798,7 +14798,7 @@ Object.assign(recettes, {
   },
   cornishpasty: {
     nom: "Cornish Pasty",
-    cat: "plats", pays: "royaume-uni",
+    cat: "plats", pays: "angleterre",
     base: 4,
     temps: "50 min",
     niveau: "⭐⭐ Moyen",
@@ -14909,7 +14909,7 @@ Object.assign(recettes, {
   },
   toadinthehole: {
     nom: "Toad in the Hole",
-    cat: "plats", pays: "royaume-uni",
+    cat: "plats", pays: "angleterre",
     base: 4,
     temps: "40 min",
     niveau: "⭐ Facile",

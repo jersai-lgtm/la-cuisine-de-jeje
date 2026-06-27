@@ -1896,7 +1896,7 @@ Object.assign(recettes, {
   apfelstrudel: {
     liees: ["glacevanille"],
     nom: "Apfelstrudel",
-    cat: "desserts", saisons: ["automne","hiver"], pays: "allemagne",
+    cat: "desserts", saisons: ["automne","hiver"], pays: "autriche",
     base: 8,
     temps: "1h30",
     niveau: "⭐⭐⭐ Élevé",

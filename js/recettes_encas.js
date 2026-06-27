@@ -480,7 +480,7 @@ Object.assign(recettes, {
   },
   springRolls: {
     nom: "Spring Rolls Frais",
-    cat: "encas", pays: "asie",
+    cat: "encas", pays: "vietnam",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",

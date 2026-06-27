@@ -479,7 +479,7 @@ Object.assign(recettes, {
   },
   pouletcitroncitronelle: {
     nom: "Poulet Citron Citronnelle",
-    cat: "healthy", pays: "asie",
+    cat: "healthy", pays: "vietnam",
     base: 4,
     temps: "30 min",
     niveau: "⭐ Facile",

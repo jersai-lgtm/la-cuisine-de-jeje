@@ -296,7 +296,7 @@ Object.assign(recettes, {
   saladeThai: {
     liees: ["vinaigrette"],
     nom: "Salade Thaï",
-    cat: "salades", saisons: ["ete"], pays: "asie",
+    cat: "salades", saisons: ["ete"], pays: "thailande",
     base: 4,
     temps: "20 min",
     niveau: "⭐ Facile",
