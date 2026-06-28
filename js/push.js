@@ -68,6 +68,30 @@
     } catch (e) {}
   };
 
+  // --- 🧪 Test immédiat : affiche une notif LOCALE via le service worker -----
+  // Diagnostic : si elle s'affiche, navigateur + permission + SW sont OK
+  // (le souci éventuel des notifs quotidiennes est alors 100 % côté serveur).
+  window.testerNotif = async function () {
+    if (!supporte()) { toast("Notifications non supportées sur cet appareil.", "Notifications aren't supported on this device."); return; }
+    if (Notification.permission !== "granted") {
+      toast("Active d'abord les notifications (bouton juste au-dessus).", "Enable notifications first (button just above).");
+      return;
+    }
+    try {
+      const r = await reg();
+      if (!r) { toast("Service worker indisponible.", "Service worker unavailable."); return; }
+      await r.showNotification(EN() ? "🔔 Test successful!" : "🔔 Test réussi !", {
+        body: EN() ? "Your notifications work. You'll get the recipe of the day every day."
+                   : "Tes notifications fonctionnent ! Tu recevras la recette du jour chaque jour.",
+        icon: "images/icon-192.png", badge: "images/icon-192.png",
+        tag: "test-notif", renotify: true,
+        data: { url: location.origin + location.pathname },
+      });
+    } catch (e) {
+      toast("Échec du test : " + ((e && e.message) || e), "Test failed: " + ((e && e.message) || e));
+    }
+  };
+
   // --- Réglage notifs dans le profil (toujours accessible) -------------------
   // Permet de (ré)activer ou désactiver les notifs à tout moment — utile si on
   // les a refusées/supprimées (la bannière, elle, ne réapparaît plus).
