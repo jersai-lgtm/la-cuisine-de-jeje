@@ -291,7 +291,7 @@ function chargerMenusAuDemarrage() {
     const today = new Date().toLocaleDateString("fr-FR");
     Object.keys(localStorage).forEach(k => {
       if (k.startsWith("cuisineJeje_menus")) localStorage.removeItem(k);
-      if (k.startsWith("suggestions_") && !k.startsWith("suggestions_v3_")) localStorage.removeItem(k);
+      if (k.startsWith("suggestions_") && !k.startsWith("suggestions_v4_")) localStorage.removeItem(k);
     });
   } catch(e) {}
 

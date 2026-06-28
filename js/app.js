@@ -1066,12 +1066,12 @@ function chargerAccueilSuggestions() {
   const regimesKey = (window.userProfile?.preferences?.regimes || []).sort().join("-");
   const allergiesKey = (window.userProfile?.preferences?.allergies || []).sort().join("-");
   // v3 = version du mapping allergènes (incrémenter quand le mapping change)
-  const storageKey = "suggestions_v3_" + today + "_" + (window.currentUser?.uid || "anon") + "_" + regimesKey + "_" + allergiesKey;
+  const storageKey = "suggestions_v4_" + today + "_" + (window.currentUser?.uid || "anon") + "_" + regimesKey + "_" + allergiesKey;
 
   // Nettoyer les anciens caches de suggestions
   try {
     Object.keys(localStorage).forEach(k => {
-      if (k.startsWith("suggestions_") && !k.startsWith("suggestions_v3_")) {
+      if (k.startsWith("suggestions_") && !k.startsWith("suggestions_v4_")) {
         localStorage.removeItem(k);
       }
     });
@@ -1127,10 +1127,13 @@ function chargerAccueilSuggestions() {
     "mocktailconcombrecitr","mocktailgingembre","mocktailfraisesvanille"
   ]);
 
+  // 🎄 Pas de plats de fête (chapon, dinde, bûche, foie gras…) hors décembre.
+  const periodeFetes = (typeof moisFetes === "function") && moisFetes();
   let pool = toutes.filter(key => {
     if (exclus.has(key)) return false;
     if (_recExclues.has(key) || RECETTES_NON_REPAS.has(key)) return false;
     if (_catsExclues.has(categorieRecette(key))) return false;
+    if (!periodeFetes && typeof estPlatFetes === "function" && estPlatFetes(key)) return false;
     if (motsExclus.size === 0) return true;
     const texte = texteRecette(key);
     return ![...motsExclus].some(m => texte.includes(m));
@@ -1274,7 +1277,7 @@ function miniCarte(key, raisonHTML, opts) {
 
 // Régénère une recette dans les suggestions du jour
 function regenererSuggestion(cleAremplacer) {
-  const storageKey = Object.keys(localStorage).find(k => k.startsWith("suggestions_v3_"));
+  const storageKey = Object.keys(localStorage).find(k => k.startsWith("suggestions_v4_"));
   if (!storageKey) return;
   try {
     const pool = JSON.parse(localStorage.getItem(storageKey) || "[]");
@@ -1323,7 +1326,7 @@ function regenererToutesSuggestions() {
   window._suggRegenN = (window._suggRegenN || 0) + 1; // change la graine → nouveau tirage
   // Supprimer le cache du jour pour forcer la régénération
   try {
-    Object.keys(localStorage).forEach(k => { if (k.startsWith("suggestions_v3_")) localStorage.removeItem(k); });
+    Object.keys(localStorage).forEach(k => { if (k.startsWith("suggestions_v4_")) localStorage.removeItem(k); });
   } catch(e) {}
   if (typeof chargerAccueilSuggestions === "function") chargerAccueilSuggestions();
   if (typeof afficherToast === "function") afficherToast("✨ Nouvelles suggestions", "success");
