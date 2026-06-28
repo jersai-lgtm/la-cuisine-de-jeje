@@ -45362,5 +45362,557 @@ window.RECETTES_EN = {
     "detail": "Serve with hard-boiled egg, scallion, and lime."
    }
   ]
+ },
+ "bouchons": {
+  "nom": "Réunion Bouchons",
+  "description": "Chinese-style steamed pork dumplings, made in Réunion: garlic, ginger, and soy in a thin wrapper. The island's must-have street snack.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Grind the pork and mix with garlic, ginger, scallion, and soy sauce."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Make a thin dough (or use wonton wrappers)."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut out rounds of dough."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spoon in the filling and pinch closed into small open-topped parcels."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 15-20 min."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Make a soy-chili dipping sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with the sauce and chili."
+   }
+  ]
+ },
+ "gratinchouchou": {
+  "nom": "Chayote Gratin",
+  "description": "Tender chayote squash blanketed in a cheesy gratinéed béchamel. The mild, comforting side dish of Réunion tables.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Peel and cut the chayotes into chunks."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Boil or steam them until tender."
+   },
+   {
+    "titre": "Roux",
+    "detail": "Make a butter-flour roux."
+   },
+   {
+    "titre": "Béchamel",
+    "detail": "Whisk in the milk until you have a béchamel."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Stir in some of the cheese, season with salt and nutmeg."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Fold the chayote into the béchamel in a baking dish and top with cheese."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200 °C until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, alongside a curry (cari)."
+   }
+  ]
+ },
+ "samoussareunion": {
+  "nom": "Réunion Samosas",
+  "description": "Crispy little triangles stuffed with spiced meat (or tuna), fried golden. Réunion's king of appetizers, made for endless snacking.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Sauté the ground meat with onion, garlic, and spices (turmeric, chili)."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add scallion and let it cool."
+   },
+   {
+    "titre": "Strips",
+    "detail": "Cut the brick pastry sheets into strips."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Add the filling and fold into successive triangles."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 170 °C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the samosas until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot with chili."
+   }
+  ]
+ },
+ "afelia": {
+  "nom": "Afelia",
+  "description": "Cypriot pork marinated and then braised in red wine with crushed coriander seeds. Tender, fragrant, and deeply Mediterranean.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the cubed pork in red wine and crushed coriander overnight."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the meat (reserve the marinade) and pat it dry."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the pork in olive oil."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Add the onion and sauté."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the marinade and a little water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer covered for 45 min until fork-tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover and reduce the sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with bulgur or potatoes."
+   }
+  ]
+ },
+ "ttavas": {
+  "nom": "Ttavas",
+  "description": "Lamb and potatoes slow-baked with tomato, onion, and plenty of cumin. The Cypriot casserole dish, tender and fragrant.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the lamb, potatoes, and onions into large pieces."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Toss everything with tomato, cumin, oil, salt, and pepper."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Spread it all out in a baking dish (the \"ttavas\")."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add a little water or broth."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Cover and bake at 170 °C for 1 hr."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Uncover and bake 20 min more to brown."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, spooning the juices over."
+   }
+  ]
+ },
+ "koupepia": {
+  "nom": "Koupepia",
+  "description": "Grape leaves stuffed with rice, meat, and herbs, simmered in lemon. The Cypriot take on dolmades, tender and tangy.",
+  "etapes": [
+   {
+    "titre": "Blanch",
+    "detail": "Blanch the grape leaves to soften them."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix rice, meat, tomato, mint, parsley, and spices."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a little filling on each leaf."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll up tightly, folding in the sides."
+   },
+   {
+    "titre": "Pack",
+    "detail": "Pack the tight rolls into a pot."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Cover with lemony water and a drizzle of oil, then set a plate on top."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer for 45 min over low heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with yogurt."
+   }
+  ]
+ },
+ "flaeskesteg": {
+  "nom": "Flæskesteg",
+  "description": "Danish roast pork with ultra-crispy crackling, rubbed with salt and bay leaves. Denmark's Christmas dish, served with potatoes.",
+  "etapes": [
+   {
+    "titre": "Score",
+    "detail": "Score the rind finely into even strips."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Rub with coarse salt and tuck bay leaves into the slits."
+   },
+   {
+    "titre": "Water",
+    "detail": "Set the roast rind-side up in a dish with a little water in the bottom."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast at 200 °C for 1 hr 30 min until cooked through."
+   },
+   {
+    "titre": "Crisp",
+    "detail": "Turn the oven up (broil) to blister the crackling."
+   },
+   {
+    "titre": "Sides",
+    "detail": "Roast the potatoes in the drippings."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the meat rest before slicing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with red cabbage and brown gravy."
+   }
+  ]
+ },
+ "risalamande": {
+  "nom": "Risalamande",
+  "description": "Cold rice pudding folded with whipped cream and almonds, topped with cherry sauce. Denmark's Christmas dessert, where one whole almond brings luck.",
+  "etapes": [
+   {
+    "titre": "Rice Pudding",
+    "detail": "Cook the rice in vanilla-infused milk until creamy."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool completely."
+   },
+   {
+    "titre": "Almonds",
+    "detail": "Chop the almonds (keeping one whole)."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Whip the cream to soft peaks."
+   },
+   {
+    "titre": "Fold In",
+    "detail": "Gently fold the cream, almonds, and sugar into the cold rice."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Make a cherry sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, topped with the cherry sauce."
+   }
+  ]
+ },
+ "boxty": {
+  "nom": "Boxty",
+  "description": "Irish potato pancake combining raw grated potato and mashed potato, browned in butter. Soft inside, crisp outside — brunch from the Emerald Isle.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Grate half the potatoes raw and squeeze out the water."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Cook the other half and mash it smooth."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Combine the grated potato, mash, flour, milk and salt."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Butter a hot skillet."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the pancakes 3-4 min per side until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with butter, for breakfast or alongside bacon."
+   }
+  ]
+ },
+ "coddle": {
+  "nom": "Dublin Coddle",
+  "description": "A gentle Dublin stew: sausages, bacon, onions and potatoes simmered together. The comforting, waste-not dish for rainy evenings.",
+  "etapes": [
+   {
+    "titre": "Brown",
+    "detail": "Lightly brown the sausages and bacon."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the sausages into chunks and the potatoes into rounds."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Layer potatoes, onions, sausages and bacon."
+   },
+   {
+    "titre": "Add broth",
+    "detail": "Cover with stock, add parsley and pepper."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer covered for 1 hour over low heat."
+   },
+   {
+    "titre": "Check",
+    "detail": "The potatoes should be meltingly tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with soda bread."
+   }
+  ]
+ },
+ "erwtensoep": {
+  "nom": "Erwtensoep",
+  "description": "Split pea soup so thick the spoon stands up in it, with pork, celery and carrot. The Netherlands' winter comfort (snert).",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Rinse the split peas (soak if needed)."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Cook the pork in water for a broth, skimming the foam."
+   },
+   {
+    "titre": "Peas",
+    "detail": "Add the split peas and cook until they break down."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add diced carrot, celery and onion."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Simmer 1 hour until the soup is very thick."
+   },
+   {
+    "titre": "Sausage",
+    "detail": "Add sliced smoked sausage."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scorching hot with rye bread."
+   }
+  ]
+ },
+ "hutspot": {
+  "nom": "Hutspot",
+  "description": "Mashed potatoes, carrots and onions served with tender braised beef. The dish that commemorates the relief of Leiden — simple and hearty.",
+  "etapes": [
+   {
+    "titre": "Braise",
+    "detail": "Braise the beef slowly until tender (separately)."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the potatoes, carrots and onions."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook them together in salted water until tender."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Drain and mash coarsely with the butter."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and pepper, add a little milk if needed."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Serve the mash with the braised beef and its juices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot."
+   }
+  ]
+ },
+ "patechinois": {
+  "nom": "Pâté Chinois",
+  "description": "Quebec's three-layer shepherd's pie: ground beef, creamed corn, golden mashed potato. The ultimate family comfort food.",
+  "etapes": [
+   {
+    "titre": "Mash",
+    "detail": "Cook the potatoes and mash them with butter."
+   },
+   {
+    "titre": "Beef",
+    "detail": "Sauté the onion, then the ground beef, and season."
+   },
+   {
+    "titre": "Layer 1",
+    "detail": "Spread the beef across the bottom of a dish."
+   },
+   {
+    "titre": "Layer 2",
+    "detail": "Top with a layer of corn (whole kernels and creamed)."
+   },
+   {
+    "titre": "Layer 3",
+    "detail": "Cover with mashed potato and rake the top with a fork."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Bake at 200 °C until the mash is golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with ketchup for the purists."
+   }
+  ]
+ },
+ "nanaimo": {
+  "nom": "Nanaimo Bars",
+  "description": "No-bake Canadian bars in 3 layers: a cookie-nut-coconut base, vanilla custard cream, and chocolate ganache. Decadent and beloved.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Mix crushed cookies, nuts, coconut and cocoa-laced melted butter."
+   },
+   {
+    "titre": "Press",
+    "detail": "Press this base into a pan and refrigerate."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Beat butter, powdered sugar and custard powder into a cream."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the cream over the base and refrigerate."
+   },
+   {
+    "titre": "Ganache",
+    "detail": "Melt the chocolate and butter together."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the ganache over the cream and smooth it out."
+   },
+   {
+    "titre": "Set",
+    "detail": "Refrigerate, then cut into clean bars."
+   }
+  ]
+ },
+ "shiro": {
+  "nom": "Shiro",
+  "description": "A smooth, comforting chickpea-flour purée spiced with berbere, made for scooping up with injera. Everyday food in Ethiopia.",
+  "etapes": [
+   {
+    "titre": "Sofrito",
+    "detail": "Slowly soften the onion in the oil."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add garlic, ginger and berbere spices."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Stir in the crushed tomato and let it reduce."
+   },
+   {
+    "titre": "Whisk in",
+    "detail": "Whisk the chickpea flour into some water."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Pour it in while whisking to avoid lumps."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 15 min until creamy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with injera or rice."
+   }
+  ]
+ },
+ "kitfo": {
+  "nom": "Kitfo",
+  "description": "Finely minced beef bound with spiced butter (niter kibbeh) and mitmita, served warm. Ethiopia's festive dish — intense and melting.",
+  "etapes": [
+   {
+    "titre": "Spiced butter",
+    "detail": "Make a clarified butter infused with spices (niter kibbeh)."
+   },
+   {
+    "titre": "Mince",
+    "detail": "Hand-mince the beef very finely with a knife."
+   },
+   {
+    "titre": "Mitmita",
+    "detail": "Mix the mitmita spices (chili, cardamom, clove)."
+   },
+   {
+    "titre": "Warm",
+    "detail": "Warm the spiced butter just barely."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix the beef with the warm butter and the spices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away with injera and fresh cheese (ayib)."
+   }
+  ]
  }
 };
