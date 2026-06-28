@@ -44130,5 +44130,731 @@ window.RECETTES_EN = {
     "detail": "Serve the meat in pita with tahini and pickles."
    }
   ]
+ },
+ "deruny": {
+  "nom": "Deruny",
+  "description": "Golden, crispy grated-potato pancakes served with sour cream. The ultimate Ukrainian country comfort food.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Finely grate the potatoes and onion."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Squeeze the grated mixture in a cloth to remove the water."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Mix with egg, flour, salt and pepper."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil in a skillet."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Drop small mounds and flatten them, browning 3-4 min per side."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with sour cream and dill."
+   }
+  ]
+ },
+ "kotletakiev": {
+  "nom": "Kotleta po Kyivsky",
+  "description": "A chicken breast rolled around garlic-herb butter, breaded and fried so that the melted butter spurts out when you cut into it. Spectacular.",
+  "etapes": [
+   {
+    "titre": "Butter",
+    "detail": "Mix softened butter, crushed garlic and parsley, shape into a log and freeze it."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound the chicken breasts thin between two sheets of plastic wrap."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Place the frozen butter on top and roll the meat up tightly."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill in the freezer for 15 min to set."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat in flour, beaten egg, then breadcrumbs (double breading)."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 170 °C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry until golden, then finish in the oven 8 min at 180 °C."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away: the butter should run out as you cut."
+   }
+  ]
+ },
+ "nalysnyky": {
+  "nom": "Nalysnyky",
+  "description": "Thin Ukrainian crepes rolled around a fresh cheese filling and browned in butter. Sweet, tender and perfect for breakfast.",
+  "etapes": [
+   {
+    "titre": "Batter",
+    "detail": "Whisk flour, eggs, milk and salt into a smooth crepe batter."
+   },
+   {
+    "titre": "Crepes",
+    "detail": "Cook thin crepes on one side only."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix the fresh cheese with egg, sugar and vanilla."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill each crepe and roll or fold into a parcel."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Arrange in a buttered dish."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Bake 15 min until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with sour cream."
+   }
+  ]
+ },
+ "pampushky": {
+  "nom": "Pampushky",
+  "description": "Soft pull-apart rolls brushed with garlic-parsley oil. The mandatory companion to Ukrainian borscht.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead flour, yeast, warm milk, sugar and salt."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let rise 1 hr until doubled."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form snug little balls in a baking dish."
+   },
+   {
+    "titre": "Proof",
+    "detail": "Let puff up again for 20 min."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 190 °C for 18 min until golden."
+   },
+   {
+    "titre": "Garlic",
+    "detail": "Blend garlic, parsley, oil and a little salted water."
+   },
+   {
+    "titre": "Brush",
+    "detail": "Brush the warm rolls with this emulsion."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with soup."
+   }
+  ]
+ },
+ "kapusniak": {
+  "nom": "Kapusniak",
+  "description": "A cabbage soup (often fermented) with pork and potatoes, gently tangy. Hearty and ideal in bitter cold.",
+  "etapes": [
+   {
+    "titre": "Broth",
+    "detail": "Cook the pork in water for a broth, skimming the surface."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Slice the cabbage, carrot and onion, and cut the potatoes."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté the onion and carrot."
+   },
+   {
+    "titre": "Cabbage",
+    "detail": "Add the cabbage and let it soften for a few minutes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pour everything into the broth along with the potatoes."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer 30 min and season (bay leaf, pepper)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with sour cream and dill."
+   }
+  ]
+ },
+ "banosh": {
+  "nom": "Banosh",
+  "description": "A Carpathian mountain polenta cooked in cream, enriched with sheep's cheese and golden onions. Creamy and comforting.",
+  "etapes": [
+   {
+    "titre": "Heat",
+    "detail": "Bring the cream (with a little salted water) to a simmer."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour in the cornmeal in a steady stream while whisking."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Stir constantly over low heat until thickened."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook 20 min: the banosh should pull away from the sides."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Stir in the grated sheep's cheese."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Brown some onions (or bacon) separately."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve crowned with the crispy onions."
+   }
+  ]
+ },
+ "pasticada": {
+  "nom": "Pašticada",
+  "description": "Dalmatian beef marinated then braised very slowly with prunes and wine into a dark, bittersweet sauce. The festive dish of the coast.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the garlic-studded beef in vinegar and aromatics overnight."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Drain, pat dry and brown the meat on all sides."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Sauté the onion and carrot."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Deglaze with wine and the strained marinade."
+   },
+   {
+    "titre": "Prunes",
+    "detail": "Add prunes and a little tomato paste."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Braise covered for 2.5 hrs over very low heat."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Remove the meat, blend and reduce the sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice and serve with gnocchi or pasta."
+   }
+  ]
+ },
+ "brudet": {
+  "nom": "Brudet",
+  "description": "An Adriatic fish stew simmered in a tomato-wine sauce, served with polenta. Briny, generous and unfussy.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the fish into large chunks and salt them."
+   },
+   {
+    "titre": "Sofrito",
+    "detail": "Soften the onion and garlic in olive oil."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add tomato and paste, and let it reduce."
+   },
+   {
+    "titre": "Wine",
+    "detail": "Deglaze with white wine and vinegar."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Lay in the fish without stirring (shake the pot instead)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 25 min uncovered."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter with parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with creamy polenta."
+   }
+  ]
+ },
+ "fritule": {
+  "nom": "Fritule",
+  "description": "Little Croatian fritters with raisins and lemon zest, fried then dusted with powdered sugar. The holiday treat of year's end.",
+  "etapes": [
+   {
+    "titre": "Raisins",
+    "detail": "Plump the raisins in a little rum."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Mix flour, egg, yogurt, baking powder, lemon zest and the raisins."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest 20 min."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 170 °C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop small spoonfuls and fry until golden."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with powdered sugar and serve warm."
+   }
+  ]
+ },
+ "cobanac": {
+  "nom": "Čobanac",
+  "description": "A shepherd's stew from Slavonia, several meats simmered with lots of paprika and peppers. Bold, red and spicy.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the meats into cubes."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Slowly soften plenty of onion."
+   },
+   {
+    "titre": "Paprika",
+    "detail": "Off the heat, add the paprika so it doesn't burn."
+   },
+   {
+    "titre": "Meats",
+    "detail": "Add the meats and coat them well."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Cover with water and add peppers and chili."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 1 hr 15 over low heat until meltingly tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Let it reduce into a thick sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with bread or fresh pasta."
+   }
+  ]
+ },
+ "blitva": {
+  "nom": "Blitva",
+  "description": "Swiss chard and potatoes simmered tender in olive oil and garlic. The essential Dalmatian side for grilled fish.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Boil the cubed potatoes in salted water."
+   },
+   {
+    "titre": "Chard",
+    "detail": "Add the chopped Swiss chard near the end of cooking."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain, reserving a little of the cooking water."
+   },
+   {
+    "titre": "Garlic",
+    "detail": "Sauté the garlic in olive oil."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the chard and potatoes, then roughly mash."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Season with salt and pepper and serve warm with a drizzle of oil."
+   }
+  ]
+ },
+ "kremsnita": {
+  "nom": "Kremšnita",
+  "description": "A creamy custard slice: a thick vanilla cream set between two sheets of puff pastry and dusted with powdered sugar. The star pastry of Samobor.",
+  "etapes": [
+   {
+    "titre": "Pastry",
+    "detail": "Bake two sheets of puff pastry until golden, then cool."
+   },
+   {
+    "titre": "Milk",
+    "detail": "Heat the milk with the vanilla."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Whisk the eggs and sugar with a little cornstarch until pale."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour in the hot milk and cook until the cream is thick."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Spread the cream over one pastry sheet and top with the second."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate several hours so the cream sets."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with powdered sugar and cut into squares."
+   }
+  ]
+ },
+ "karadjordjeva": {
+  "nom": "Karađorđeva",
+  "description": "A veal cutlet rolled around melting kajmak, breaded and fried, then sliced. The \"Karađorđe steak\" — rich and showstopping.",
+  "etapes": [
+   {
+    "titre": "Flatten",
+    "detail": "Pound the veal cutlet out thin."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the kajmak (or fresh cheese) down the center."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll up tightly and seal the edges."
+   },
+   {
+    "titre": "Firm Up",
+    "detail": "Chill for 20 min."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat in flour, egg, then breadcrumbs."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 170 °C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry until golden, finishing in the oven if needed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice on the bias so the cheese oozes out. Serve with tartar sauce."
+   }
+  ]
+ },
+ "proja": {
+  "nom": "Proja",
+  "description": "A moist Serbian cornbread with cheese and yogurt, baked until golden. Simple, rustic, and perfect with soup or ajvar.",
+  "etapes": [
+   {
+    "titre": "Mix",
+    "detail": "Combine the cornmeal, flour, and baking powder."
+   },
+   {
+    "titre": "Liquids",
+    "detail": "Beat the eggs, yogurt, and oil together."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Fold the grated cheese into the batter."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200 °C."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour into an oiled pan."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for 25 min until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into squares and serve warm."
+   }
+  ]
+ },
+ "kajmak": {
+  "nom": "Kajmak",
+  "description": "A Balkan clotted milk cream, silky and lightly salted, spread on warm bread or melted over grilled meats.",
+  "etapes": [
+   {
+    "titre": "Heat",
+    "detail": "Gently heat whole milk and cream without boiling."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it rest several hours until a skin forms."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Carefully skim off the creamy top layer."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt lightly and work into a smooth spread."
+   },
+   {
+    "titre": "Set",
+    "detail": "Let it firm up in the fridge."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve spread on warm bread or alongside ćevapi."
+   }
+  ]
+ },
+ "prebranac": {
+  "nom": "Prebranac",
+  "description": "White beans baked with a mountain of meltingly soft onions and paprika. Vegetarian, tender, and deeply savory.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Cook the soaked white beans until tender."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Slowly cook down a large amount of onion."
+   },
+   {
+    "titre": "Paprika",
+    "detail": "Off the heat, stir the paprika into the onions."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Alternate beans and onions in a baking dish."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add a little cooking water and the bay leaf."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180 °C for 45 min until a crust forms."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, as a main or a side."
+   }
+  ]
+ },
+ "pirohy": {
+  "nom": "Pirohy",
+  "description": "Slovak dumplings filled with potato and cheese, poached then drizzled with brown butter. Simple and comforting.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a soft dough of flour, egg, water, and salt; let it rest."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mash the cooked potatoes with the cheese."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Roll out the dough and cut into rounds."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Add the filling, fold into half-moons, and seal the edges."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach in salted water until they float to the top."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Make a brown butter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with the butter and top with cheese or bacon."
+   }
+  ]
+ },
+ "segedin": {
+  "nom": "Segedínský Guláš",
+  "description": "A pork goulash with sauerkraut and paprika, finished with cream. Sweet-tangy, tender, and served with bread dumplings.",
+  "etapes": [
+   {
+    "titre": "Onion",
+    "detail": "Cook the onion down in lard or oil."
+   },
+   {
+    "titre": "Paprika",
+    "detail": "Off the heat, stir in the paprika."
+   },
+   {
+    "titre": "Pork",
+    "detail": "Add the cubed pork and brown it."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add water and simmer for 45 min."
+   },
+   {
+    "titre": "Sauerkraut",
+    "detail": "Add the rinsed sauerkraut and cook 30 min more."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Thicken with the cream and a little flour."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with knedlíky (bread dumplings)."
+   }
+  ]
+ },
+ "lokse": {
+  "nom": "Lokše",
+  "description": "Thin potato flatbreads cooked dry, soft and golden, buttered or filled (sweet or savory). The festive Slovak snack.",
+  "etapes": [
+   {
+    "titre": "Mash",
+    "detail": "Mash the cooked potatoes while still warm."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Work in the flour and salt for a soft dough."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Divide into balls and roll out very thin."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook dry in a hot pan on both sides."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Brush with melted butter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve plain, sweet (sugar/poppy seed), or savory (goose, sauerkraut)."
+   }
+  ]
+ },
+ "vyprazanysyr": {
+  "nom": "Vyprážaný Syr",
+  "description": "A slab of breaded, fried cheese — crisp outside and molten inside, served with fries and tartar sauce. The Slovak guilty pleasure.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the cheese (edam/gouda) into thick slabs."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat in flour, beaten egg, then breadcrumbs."
+   },
+   {
+    "titre": "Double",
+    "detail": "Repeat the egg and breadcrumbs for a sealed crust."
+   },
+   {
+    "titre": "Firm Up",
+    "detail": "Chill for 10 min."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 175 °C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry for 2-3 min until golden (the cheese must not leak)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away with fries and tartar sauce."
+   }
+  ]
+ },
+ "zemiakoveplacky": {
+  "nom": "Zemiakové Placky (Garlic Potato Pancakes)",
+  "description": "Grated-potato pancakes with garlic and marjoram, fried until very crisp. The Slovak version, fragrant and golden.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Finely grate the potatoes and squeeze out the water."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add crushed garlic, marjoram, salt and pepper."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Stir in egg and flour to make a thick batter."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil in a pan."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Spread thin pancakes and fry until very crisp."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, plain or rubbed with garlic."
+   }
+  ]
  }
 };
