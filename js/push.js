@@ -92,6 +92,33 @@
     }
   };
 
+  // --- 📡 Test SERVEUR (admin) : déclenche la vraie diffusion via /push/new ---
+  // Envoie un push "daily" à TOUS les abonnés immédiatement (sans attendre le
+  // cron de 11h30). Le toast indique le nombre d'envois → diagnostic complet de
+  // la chaîne serveur (Worker + VAPID + KV). Réservé au propriétaire (le Worker
+  // revérifie l'email du jeton).
+  window.testerNotifServeur = async function () {
+    if (!window.currentUser) { toast("Connecte-toi d'abord.", "Sign in first."); return; }
+    try {
+      const idToken = await window.currentUser.getIdToken();
+      const r = await fetch(WORKER + "/push/new", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + idToken },
+        body: JSON.stringify({ type: "daily" }),
+      });
+      const data = await r.json().catch(() => ({}));
+      if (r.ok) {
+        toast("📡 Push envoyé à " + (data.envoyes != null ? data.envoyes : "?") + " abonné(s). Regarde si la notif arrive…",
+              "📡 Push sent to " + (data.envoyes != null ? data.envoyes : "?") + " subscriber(s). Watch for the notification…");
+      } else {
+        toast("Échec serveur (" + r.status + ") : " + ((data.error && data.error.message) || ""),
+              "Server error (" + r.status + ")");
+      }
+    } catch (e) {
+      toast("Erreur : " + ((e && e.message) || e), "Error: " + ((e && e.message) || e));
+    }
+  };
+
   // --- Réglage notifs dans le profil (toujours accessible) -------------------
   // Permet de (ré)activer ou désactiver les notifs à tout moment — utile si on
   // les a refusées/supprimées (la bannière, elle, ne réapparaît plus).
@@ -237,7 +264,15 @@
       const orig = window.ouvrirModalProfil;
       window.ouvrirModalProfil = function () {
         const res = orig.apply(this, arguments);
-        setTimeout(function () { try { window.majBoutonNotifs(); } catch (e) {} }, 120);
+        setTimeout(function () {
+          try { window.majBoutonNotifs(); } catch (e) {}
+          // Bouton de test serveur visible seulement pour le propriétaire.
+          try {
+            const owner = window.currentUser && (window.currentUser.email || "").toLowerCase() === "jerome.sainthot@gmail.com";
+            const bs = document.getElementById("btn-test-notif-serveur");
+            if (bs) bs.style.display = owner ? "" : "none";
+          } catch (e) {}
+        }, 120);
         return res;
       };
       window.ouvrirModalProfil._notif = true;
