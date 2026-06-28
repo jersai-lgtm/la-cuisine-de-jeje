@@ -43472,5 +43472,663 @@ window.RECETTES_EN = {
     "detail": "Serve hot, creamy and slightly sweet."
    }
   ]
+ },
+ "ghormehsabzi": {
+  "nom": "Ghormeh Sabzi",
+  "description": "Iran's national stew: an ocean of slow-melted herbs with lamb, kidney beans and dried lime. Deep, tangy and unforgettable.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Finely chop the parsley, cilantro and spinach; mince the onion."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Sauté the herbs over medium heat for a long time until they darken (15 min)."
+   },
+   {
+    "titre": "Onion",
+    "detail": "In a Dutch oven, soften the onion until golden, then add the cubed lamb."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Brown the meat, then add turmeric, salt and pepper."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover with water, add the kidney beans and simmer 1 hr 30 over low heat."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the melted herbs and the pierced dried limes."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Continue for 30 min: the sauce should thicken and the oil rise to the surface."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with steamed basmati rice."
+   }
+  ]
+ },
+ "mirzaghasemi": {
+  "nom": "Mirza Ghasemi",
+  "description": "Smoky eggplant dip from the Caspian, melted with tomato, garlic and egg. Velvety, smoky and comforting, served with bread.",
+  "etapes": [
+   {
+    "titre": "Char",
+    "detail": "Char the eggplants over an open flame until the skin is black and the flesh is meltingly soft."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Peel them and mash the smoky flesh with a fork."
+   },
+   {
+    "titre": "Garlic",
+    "detail": "Soften the minced garlic in oil with the turmeric."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the eggplant pulp and sauté for 5 min."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Stir in the crushed tomato and cook until the liquid evaporates."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Crack the eggs into the pan and gently scramble."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with flatbread and a drizzle of oil."
+   }
+  ]
+ },
+ "abgoosht": {
+  "nom": "Abgoosht (Dizi)",
+  "description": "Iranian lamb, chickpea and bean pot, served in two courses: the broth first, then the mashed meat. Rustic and hearty.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the chickpeas and beans the night before."
+   },
+   {
+    "titre": "Start",
+    "detail": "Put the lamb, legumes and onion in a pot of water."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Bring to a gentle simmer and skim carefully."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add turmeric, dried lime and tomato paste."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook 2 hrs over very low heat until meltingly tender."
+   },
+   {
+    "titre": "Potatoes",
+    "detail": "Add the potatoes toward the end of cooking."
+   },
+   {
+    "titre": "Separate",
+    "detail": "Strain: serve the broth with bread as the first course."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the meat, legumes and potatoes for the second course."
+   }
+  ]
+ },
+ "sholezard": {
+  "nom": "Shole Zard",
+  "description": "Saffron rice pudding in a brilliant golden yellow, scented with orange blossom and decorated with almonds and cinnamon. The sweet treat of Persian celebrations.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Cook the rice in plenty of water until it breaks down."
+   },
+   {
+    "titre": "Saffron",
+    "detail": "Steep the saffron in a little hot water."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the sugar and the saffron infusion to the rice."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Cook over low heat, stirring, until creamy."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add the orange blossom water at the end of cooking."
+   },
+   {
+    "titre": "Mold",
+    "detail": "Pour into small dishes and let set in the fridge."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Decorate with cinnamon, slivered almonds and pistachios."
+   }
+  ]
+ },
+ "adaspolo": {
+  "nom": "Adas Polo",
+  "description": "Persian lentil rice, sweet and savory, scattered with caramelized dates and raisins. A gentle, fragrant dish, often served with a golden tahdig.",
+  "etapes": [
+   {
+    "titre": "Lentils",
+    "detail": "Cook the lentils until tender without letting them fall apart."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Parboil the rice in salted boiling water, then drain."
+   },
+   {
+    "titre": "Caramelize",
+    "detail": "Brown the onion, then the dates and raisins."
+   },
+   {
+    "titre": "Saffron",
+    "detail": "Prepare a saffron infusion."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Alternate rice and lentils into a dome in the pot."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Cook covered over low heat to form the tahdig at the bottom."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate up, crown with the dates and raisins, and drizzle with saffron."
+   }
+  ]
+ },
+ "tameya": {
+  "nom": "Ta'ameya",
+  "description": "Egyptian falafel, made with fava beans instead of chickpeas: bright green inside, herbaceous, crisp outside. The soul of Cairo's breakfast.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the dried, skinned fava beans for 12 hrs, then drain."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the favas, parsley, cilantro, onion and garlic into a green paste."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add cumin, ground coriander, salt and baking soda."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest for 30 min so the mixture holds together."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form patties and roll them in sesame seeds."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 170 °C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry until deep golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in a pita with tahini and salad."
+   }
+  ]
+ },
+ "mahshi": {
+  "nom": "Mahshi",
+  "description": "Vegetables stuffed with fragrant herbed rice, simmered in tomato sauce. The ultimate family dish, patient and generous.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Mix the rice, chopped herbs, onion, tomato and spices."
+   },
+   {
+    "titre": "Hollow",
+    "detail": "Hollow out the zucchini and peppers (or prepare leaves)."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Fill the vegetables three-quarters full with rice (the rice swells)."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Pack them tightly in a pot lined with tomato."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Cover with a light tomato sauce and a drizzle of oil."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook covered for 45 min over low heat."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check that the rice is cooked and the sauce has reduced."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with plain yogurt."
+   }
+  ]
+ },
+ "hawawshi": {
+  "nom": "Hawawshi",
+  "description": "Pita bread stuffed with spiced ground meat, onions and chili, crisped in the oven. The Egyptian burger, juicy and fragrant.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Mix ground meat with very finely chopped onion, pepper and parsley."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Season with cumin, coriander, chili, salt and pepper."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Open the pitas and fill them generously with the mixture."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Brush the outside of the breads with a little oil."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 220 °C."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for 20 min, flipping halfway through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into portions and serve with tahini and lemon."
+   }
+  ]
+ },
+ "besara": {
+  "nom": "Bessara",
+  "description": "A velvety puree of dried fava beans and herbs, drizzled with olive oil and cumin. Cheap, filling, vivid green — a beloved classic.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the skinned fava beans overnight."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook them in water with the garlic until they mash easily."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Add parsley and cilantro, cook for another 5 min."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend into a smooth puree, adjusting with cooking water."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, add cumin and a little lemon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour into a bowl, drizzle with olive oil and cumin, and serve with bread."
+   }
+  ]
+ },
+ "rozbellaban": {
+  "nom": "Roz bel Laban",
+  "description": "Egyptian rice pudding, soft, vanilla-scented and creamy, often browned in the oven. The ultimate comforting homemade dessert.",
+  "etapes": [
+   {
+    "titre": "Precook",
+    "detail": "Cook the rice in a little water until absorbed."
+   },
+   {
+    "titre": "Milk",
+    "detail": "Add the milk and bring to a gentle simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook over low heat, stirring often, for 25 min."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the sugar and vanilla, cook until creamy."
+   },
+   {
+    "titre": "Mold",
+    "detail": "Divide into ramekins."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Pass briefly under the broiler to brown the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with almonds and serve chilled or warm."
+   }
+  ]
+ },
+ "mujaddara": {
+  "nom": "Mujaddara",
+  "description": "Lentils and rice simmered together, crowned with meltingly soft, crispy fried onions. Humble, fragrant with cumin, and surprisingly addictive.",
+  "etapes": [
+   {
+    "titre": "Lentils",
+    "detail": "Cook the lentils in water until just tender."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Thinly slice the onions and fry them slowly until deep brown."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Add the rinsed rice to the lentils."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with cumin, salt and pepper, and add a little of the onion oil."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover with water and cook, covered, until absorbed."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 min off the heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crown with the fried onions and serve with yogurt."
+   }
+  ]
+ },
+ "galayetbandora": {
+  "nom": "Galayet Bandora",
+  "description": "Tomatoes simmered with garlic and chili in olive oil, melting into a rustic sauce. Simple, sunny, and made for mopping up with bread.",
+  "etapes": [
+   {
+    "titre": "Garlic",
+    "detail": "Saute the minced garlic in olive oil."
+   },
+   {
+    "titre": "Chili",
+    "detail": "Add the green chili and sliced bell pepper."
+   },
+   {
+    "titre": "Tomatoes",
+    "detail": "Add the crushed tomatoes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 20 min until the tomatoes break down."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and pepper, mashing lightly with a fork."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with flatbread for dipping."
+   }
+  ]
+ },
+ "shishbarak": {
+  "nom": "Shish Barak",
+  "description": "Little meat dumplings poached in a warm garlicky yogurt sauce with mint. Delicate, tangy, and deeply comforting.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a soft flour-water-salt dough and let it rest."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Brown the ground meat with onion and spices."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Cut out rounds, fill, and fold into little half-moon dumplings."
+   },
+   {
+    "titre": "Pre-bake",
+    "detail": "Lightly brown the dumplings in the oven."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Whisk the yogurt with a little cornstarch and warm gently without boiling."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Drop the dumplings into the yogurt and poach 10 min."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Saute garlic and dried mint, then pour over the dish."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away over a bed of rice."
+   }
+  ]
+ },
+ "qidreh": {
+  "nom": "Qidreh",
+  "description": "Gaza-style rice cooked with lamb, chickpeas and whole garlic, scented with cinnamon and cardamom. Baked in a pot, tender and fragrant.",
+  "etapes": [
+   {
+    "titre": "Broth",
+    "detail": "Cook the lamb in water with the spices for a fragrant broth."
+   },
+   {
+    "titre": "Chickpeas",
+    "detail": "Add the soaked chickpeas."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Layer the rice, lamb and whole garlic in a pot."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Sprinkle with cinnamon, cardamom and a little broth."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Pour in the hot broth to just cover the rice."
+   },
+   {
+    "titre": "Oven",
+    "detail": "Cover and bake at 180 °C for 40 min."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 min before opening."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Turn the pot out onto a platter and serve."
+   }
+  ]
+ },
+ "saladeisraelienne": {
+  "nom": "Israeli Salad",
+  "description": "Tomatoes and cucumbers cut into tiny dice with lemon, olive oil and herbs. Fresh, crunchy, and served at every meal.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Cut the tomatoes and cucumbers into very small, even dice."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Finely mince the onion."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Chop the fresh parsley and mint."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Bring everything together in a salad bowl."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Drizzle with lemon juice and olive oil, season with salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toss and serve right away, well chilled."
+   }
+  ]
+ },
+ "malawach": {
+  "nom": "Malawach",
+  "description": "A Yemenite-Israeli flaky flatbread, golden and crisp with butter, served with grated tomato and a hard-boiled egg. The weekend brunch.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a soft flour-water-salt dough and let it rest 20 min."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Roll out very thin and brush with soft butter."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll into a spiral, then flatten into a round."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill 20 min for the flaky layers."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook in a dry or buttered skillet until golden and crisp."
+   },
+   {
+    "titre": "Topping",
+    "detail": "Grate a fresh tomato and season it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with grated tomato, hard-boiled egg and zhug (hot sauce)."
+   }
+  ]
+ },
+ "jachnun": {
+  "nom": "Jachnun",
+  "description": "Rolls of buttered dough baked overnight on very low heat, meltingly soft and golden. A Yemenite-Israeli Shabbat tradition, served at daybreak.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a smooth dough of flour, water, a little sugar and salt."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Divide into oiled balls and rest 30 min."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll each ball out very thin and spread with butter."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll up tightly into logs."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Pack the rolls snugly into a buttered, covered dish."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a very low oven (90-100 °C) overnight (8-10 h)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with egg, grated tomato and zhug."
+   }
+  ]
+ },
+ "ptitim": {
+  "nom": "Ptitim",
+  "description": "Little toasted pasta pearls, sauteed with onion and tomato then cooked like a pilaf. The comforting \"rice\" of Israeli childhoods.",
+  "etapes": [
+   {
+    "titre": "Sweat",
+    "detail": "Saute the onion in the oil."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Add the pasta pearls and toast them, stirring, until golden."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Stir in finely diced tomato and bell pepper."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add broth (1.5 times the volume) and cover."
+   },
+   {
+    "titre": "Absorb",
+    "detail": "Cook over low heat until absorbed (12 min)."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 5 min, covered."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff with a fork and serve."
+   }
+  ]
+ },
+ "meorav": {
+  "nom": "Me'orav Yerushalmi",
+  "description": "The \"Jerusalem mixed grill\": chicken and offal seared over high heat with onion and a blend of spices, served in pita. Bold and fragrant.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the chicken (and offal) into thin strips."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the meat over very high heat in a screaming-hot skillet."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Add sliced onion and bell pepper and let them color."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Season with cumin, coriander, turmeric, paprika and garlic."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Stir-fry briskly until the edges caramelize."
+   },
+   {
+    "titre": "Pita",
+    "detail": "Warm some pita breads."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the meat in pita with tahini and pickles."
+   }
+  ]
  }
 };
