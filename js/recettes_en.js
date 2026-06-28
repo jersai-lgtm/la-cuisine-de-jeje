@@ -44856,5 +44856,511 @@ window.RECETTES_EN = {
     "detail": "Serve hot, plain or rubbed with garlic."
    }
   ]
+ },
+ "lechonkawali": {
+  "nom": "Lechon Kawali",
+  "description": "Pork belly first simmered, then deep-fried until the skin is impossibly crackly, served with a tangy vinegar dip. The ultimate Filipino crunch.",
+  "etapes": [
+   {
+    "titre": "Poach",
+    "detail": "Poach the pork belly with garlic, bay leaf and peppercorns for 40 min."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Drain and dry thoroughly, ideally overnight in the fridge."
+   },
+   {
+    "titre": "Heat oil",
+    "detail": "Heat the oil to 180 °C (watch out for splatter)."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the pork belly until the skin blisters and turns golden."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Let it rest, then cut into crispy cubes."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Make a vinegar-soy-garlic-chili dipping sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice and the dipping sauce."
+   }
+  ]
+ },
+ "sisig": {
+  "nom": "Sisig",
+  "description": "Pork grilled then sautéed, finely chopped, brightened with onion, chili and calamansi, served sizzling with an egg cracked on top. Punchy and addictive.",
+  "etapes": [
+   {
+    "titre": "Poach",
+    "detail": "Poach then grill the pork to build flavor."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Finely chop the meat with a knife."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté with onion and chili."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add soy sauce, a little butter and calamansi (lime)."
+   },
+   {
+    "titre": "Sizzle",
+    "detail": "Serve on a screaming-hot plate."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Crack a raw egg over the sisig and stir it in while hot."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dig in right away with rice."
+   }
+  ]
+ },
+ "tinola": {
+  "nom": "Tinola",
+  "description": "A clear, comforting chicken broth with ginger, leafy greens and chayote. The Sunday home-cooked soup of the Philippines.",
+  "etapes": [
+   {
+    "titre": "Aromatics",
+    "detail": "Sauté garlic, onion and ginger."
+   },
+   {
+    "titre": "Chicken",
+    "detail": "Add the chicken pieces and brown them."
+   },
+   {
+    "titre": "Add water",
+    "detail": "Add fish sauce and cover with water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer for 25 min until the chicken is tender."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the chayote (or zucchini) and cook for 5 min."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Stir in the leafy greens at the end of cooking."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with rice."
+   }
+  ]
+ },
+ "caldereta": {
+  "nom": "Caldereta",
+  "description": "A tomato-based beef stew with bell peppers and potatoes, enriched with liver spread that makes it silky. Rich, lightly spicy, festive.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Brown the cubed beef, then set aside."
+   },
+   {
+    "titre": "Sofrito",
+    "detail": "Sauté garlic and onion."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add tomato and tomato paste, let it reduce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the meat, cover with water and simmer for 1 hr."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the potatoes and carrots."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Stir in the liver spread and bell peppers, cook for 20 min."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust salt, chili and a little cheese."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve generously sauced with rice."
+   }
+  ]
+ },
+ "lecheflan": {
+  "nom": "Leche Flan",
+  "description": "An ultra-rich Filipino custard made with egg yolks and condensed milk over an amber caramel. Dense, silky, and the star of every celebration.",
+  "etapes": [
+   {
+    "titre": "Caramel",
+    "detail": "Make an amber caramel and coat the mold (llanera) with it."
+   },
+   {
+    "titre": "Yolks",
+    "detail": "Gently whisk together egg yolks, condensed milk and milk."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass the mixture through a sieve for a smooth texture."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour over the caramel, avoiding bubbles."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam (or bake in a water bath) for 45 min over low heat."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Let it cool, then refrigerate for 4 hr."
+   },
+   {
+    "titre": "Unmold",
+    "detail": "Unmold onto a plate to release the caramel."
+   }
+  ]
+ },
+ "ayampercik": {
+  "nom": "Ayam Percik",
+  "description": "Grilled Kelantan-style chicken basted with a spicy coconut and lemongrass sauce. Smoky, creamy and fragrant.",
+  "etapes": [
+   {
+    "titre": "Paste",
+    "detail": "Blend lemongrass, garlic, shallot, chili and ginger into a paste."
+   },
+   {
+    "titre": "Fry paste",
+    "detail": "Fry the spice paste in oil."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add the coconut milk and let it thicken."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the chicken with some of the sauce and marinate for 20 min."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the chicken, basting it regularly with sauce."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Reduce the remaining sauce for serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve coated in sauce, with rice and cucumbers."
+   }
+  ]
+ },
+ "rojak": {
+  "nom": "Rojak",
+  "description": "A salad of crunchy fruits and vegetables coated in a dark, sweet-and-spicy tamarind-peanut sauce. The bold flavor explosion of Malaysian markets.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Cut cucumber, pineapple and tomato into bite-sized pieces."
+   },
+   {
+    "titre": "Peanuts",
+    "detail": "Toast and coarsely crush the peanuts."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Mix tamarind paste, palm sugar, chili and shrimp paste."
+   },
+   {
+    "titre": "Smooth",
+    "detail": "Whisk into a thick, glossy sauce."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Coat the fruits and vegetables in the sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with peanuts and serve right away."
+   }
+  ]
+ },
+ "mererebus": {
+  "nom": "Mee Rebus",
+  "description": "Yellow noodles bathed in a thick, sweet and spicy sauce made from sweet potato and peanut, topped with egg and bean sprouts. Pure comfort.",
+  "etapes": [
+   {
+    "titre": "Purée",
+    "detail": "Cook and mash the sweet potato (or potato)."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Fry a spice paste (lemongrass, chili, garlic)."
+   },
+   {
+    "titre": "Gravy",
+    "detail": "Add the purée, ground peanut, tamarind and water, then simmer."
+   },
+   {
+    "titre": "Smooth",
+    "detail": "Cook down to a thick, coating sauce."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Blanch the noodles and the bean sprouts."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate the noodles and ladle the sauce over."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Garnish with hard-boiled egg, lime and chili."
+   }
+  ]
+ },
+ "nasikandar": {
+  "nom": "Nasi Kandar",
+  "description": "Steamed rice ladled with a mix of curries, chicken, and a coconut-milk gravy. Penang's signature dish, generous and fragrant.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Cook the steamed rice until light and fluffy."
+   },
+   {
+    "titre": "Paste",
+    "detail": "Blend onion, garlic, ginger, and chili into a paste."
+   },
+   {
+    "titre": "Curry",
+    "detail": "Fry the paste with the curry spices."
+   },
+   {
+    "titre": "Chicken",
+    "detail": "Add the chicken and brown it."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pour in the coconut milk and simmer 25 min."
+   },
+   {
+    "titre": "Gravies",
+    "detail": "Prepare 2-3 curry gravies to spoon over the rice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the rice topped with a mix of curries."
+   }
+  ]
+ },
+ "cendol": {
+  "nom": "Cendol",
+  "description": "An iced dessert of coconut milk and palm-sugar syrup, with green rice-flour jelly noodles and red beans. Refreshing and exotic.",
+  "etapes": [
+   {
+    "titre": "Jelly",
+    "detail": "Cook the rice flour with water and pandan coloring into a thick paste."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Press the paste through a colander into ice water."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Melt the palm sugar into a thick syrup."
+   },
+   {
+    "titre": "Beans",
+    "detail": "Cook the sweetened red beans."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "In a glass: crushed ice, jelly noodles, beans."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with coconut milk and palm syrup, serve ice-cold."
+   }
+  ]
+ },
+ "bakkutteh": {
+  "nom": "Bak Kut Teh",
+  "description": "Pork rib soup slow-simmered in a peppery broth with garlic and herbs. Comforting, fragrant, served with rice and tea.",
+  "etapes": [
+   {
+    "titre": "Blanch",
+    "detail": "Blanch the pork ribs, then rinse them."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Put the pork, whole heads of garlic, and ginger in the water."
+   },
+   {
+    "titre": "Pepper",
+    "detail": "Add plenty of cracked white pepper and the spices."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer covered for 1h15 until the meat falls off the bone."
+   },
+   {
+    "titre": "Mushrooms",
+    "detail": "Add the mushrooms and the soy sauce."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the pepper and salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the broth and ribs with rice."
+   }
+  ]
+ },
+ "hokkienmee": {
+  "nom": "Hokkien Mee",
+  "description": "Singapore-style stir-fried noodles with shrimp and egg, moistened with a fragrant shrimp broth, kicked up with sambal and lime.",
+  "etapes": [
+   {
+    "titre": "Broth",
+    "detail": "Peel the shrimp and make a broth with the shells."
+   },
+   {
+    "titre": "Wok",
+    "detail": "Heat the wok over very high heat with oil and garlic."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the shrimp, then set aside."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Scramble the egg, then add the noodles."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Pour in shrimp broth and let it absorb."
+   },
+   {
+    "titre": "Sprouts",
+    "detail": "Add bean sprouts and shrimp, stir-fry."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with sambal and a wedge of lime."
+   }
+  ]
+ },
+ "chaitowkway": {
+  "nom": "Chai Tow Kway",
+  "description": "A rice-flour \"radish cake\" cut into cubes and stir-fried with egg, garlic, and preserved radish. The hawker classic, soft and crispy.",
+  "etapes": [
+   {
+    "titre": "Cake",
+    "detail": "Cook the rice flour with grated radish into a firm paste, then cool."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Unmold and cut into cubes."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Brown the cubes in the wok with garlic and preserved radish."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Pour in the beaten egg and let it set into an omelet."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add dark soy sauce (the \"black\" version) or light soy."
+   },
+   {
+    "titre": "Sprouts",
+    "detail": "Add bean sprouts and scallion, stir-fry briskly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot."
+   }
+  ]
+ },
+ "popiah": {
+  "nom": "Popiah",
+  "description": "Fresh spring rolls filled with braised vegetables (turnip/jicama), egg, and peanuts, wrapped in a thin crepe. Fresh and crunchy.",
+  "etapes": [
+   {
+    "titre": "Crepes",
+    "detail": "Make very thin crepes (or use store-bought wrappers)."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Braise grated jicama/turnip and carrot until tender."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Cook an egg into a thin omelet, cut into strips."
+   },
+   {
+    "titre": "Prep",
+    "detail": "Prepare crushed peanuts, bean sprouts, and sweet sauce."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread sauce, lettuce, filling, egg, and peanuts on the crepe."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll up tightly, folding in the sides."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into pieces and serve fresh."
+   }
+  ]
+ },
+ "meesiam": {
+  "nom": "Mee Siam",
+  "description": "Rice vermicelli stir-fried in a sweet-and-sour spicy tamarind sauce, topped with shrimp, egg, and bean sprouts. Tangy and colorful.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the rice vermicelli, then drain."
+   },
+   {
+    "titre": "Paste",
+    "detail": "Blend a paste of chili, shallot, and dried shrimp."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the paste in the wok."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add tamarind juice and a little sugar."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Add the vermicelli and coat well, stir-frying briskly."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Stir in shrimp and bean sprouts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with hard-boiled egg, scallion, and lime."
+   }
+  ]
  }
 };
