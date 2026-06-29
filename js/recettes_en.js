@@ -45953,40 +45953,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "flammkuchen": {
-  "nom": "Flammkuchen",
-  "description": "A thin, crisp crust topped with cream, onions and bacon, baked in a very hot oven. The light, addictive Alsatian-German \"tarte flambée.\"",
-  "etapes": [
-   {
-    "titre": "Dough",
-    "detail": "Knead a thin, yeast-free dough (flour, water, oil, salt)."
-   },
-   {
-    "titre": "Roll",
-    "detail": "Roll out very thin onto a baking sheet."
-   },
-   {
-    "titre": "Cream",
-    "detail": "Spread the cream (mixed with fromage blanc) all the way to the edges."
-   },
-   {
-    "titre": "Top",
-    "detail": "Scatter on the sliced onions and bacon."
-   },
-   {
-    "titre": "Preheat",
-    "detail": "Preheat the oven to maximum (250 °C)."
-   },
-   {
-    "titre": "Bake",
-    "detail": "Bake 10-12 min until the edges brown."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Cut into pieces and serve at once, nice and crisp."
-   }
-  ]
- },
  "eintopf": {
   "nom": "Eintopf",
   "description": "A German \"all-in-one\" stew: meat, potatoes and vegetables simmered in a single pot. Budget-friendly, hearty and never quite the same twice.",
@@ -46018,40 +45984,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Serve piping hot in a bowl with bread."
-   }
-  ]
- },
- "kotletschabowy": {
-  "nom": "Kotlet Schabowy",
-  "description": "A breadcrumbed pork cutlet, fried golden and crisp. The Polish Sunday lunch, served with potatoes and cabbage.",
-  "etapes": [
-   {
-    "titre": "Flatten",
-    "detail": "Pound the pork cutlets thin, then season with salt and pepper."
-   },
-   {
-    "titre": "Bread",
-    "detail": "Coat in flour, beaten egg, then breadcrumbs."
-   },
-   {
-    "titre": "Press",
-    "detail": "Press gently so the coating sticks."
-   },
-   {
-    "titre": "Heat",
-    "detail": "Heat the oil in a skillet."
-   },
-   {
-    "titre": "Fry",
-    "detail": "Fry 3-4 min per side until golden and crisp."
-   },
-   {
-    "titre": "Drain",
-    "detail": "Drain on paper towels."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve with potatoes and braised cabbage."
    }
   ]
  },
@@ -46259,40 +46191,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "palacsinta": {
-  "nom": "Palacsinta",
-  "description": "Thin Hungarian crepes rolled around apricot jam or sweetened cheese, sometimes draped in chocolate. A childhood dessert.",
-  "etapes": [
-   {
-    "titre": "Batter",
-    "detail": "Whisk flour, eggs, milk and sparkling water into a thin batter."
-   },
-   {
-    "titre": "Rest",
-    "detail": "Let rest 20 min."
-   },
-   {
-    "titre": "Cook",
-    "detail": "Cook thin, golden crepes."
-   },
-   {
-    "titre": "Fill",
-    "detail": "Spread with apricot jam or sweetened cheese."
-   },
-   {
-    "titre": "Roll",
-    "detail": "Roll each crepe up tightly."
-   },
-   {
-    "titre": "Sauce",
-    "detail": "Drizzle with melted chocolate (Gundel style)."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Dust with powdered sugar and serve warm."
-   }
-  ]
- },
  "fozelek": {
   "nom": "Főzelék",
   "description": "A cream-bound vegetable puree-stew, somewhere between soup and main dish. Comforting and budget-friendly, the quintessential Hungarian vegetarian lunch.",
@@ -46384,108 +46282,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Serve with a sausage or blood pudding."
-   }
-  ]
- },
- "moulesfrites": {
-  "nom": "Moules-Frites",
-  "description": "Mussels steamed in white wine and celery, served with crisp homemade fries. The quintessential Belgian national dish.",
-  "etapes": [
-   {
-    "titre": "Clean",
-    "detail": "Scrub and rinse the mussels well, discarding any that are open."
-   },
-   {
-    "titre": "Fries",
-    "detail": "Cut the potatoes and fry them in two stages."
-   },
-   {
-    "titre": "Aromatics",
-    "detail": "Sweat the onion and celery in butter in a large pot."
-   },
-   {
-    "titre": "Wine",
-    "detail": "Deglaze with white wine."
-   },
-   {
-    "titre": "Cook",
-    "detail": "Add the mussels, cover and shake 5-6 min until they open."
-   },
-   {
-    "titre": "Finish",
-    "detail": "Scatter with parsley."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve the mussels in their broth with the fries."
-   }
-  ]
- },
- "voulauvent": {
-  "nom": "Vol-au-Vent",
-  "description": "A puff-pastry shell filled with a creamy chicken, mushroom and meatball velouté. The great Belgian Sunday classic, rich and generous.",
-  "etapes": [
-   {
-    "titre": "Shells",
-    "detail": "Bake the puff-pastry shells until golden."
-   },
-   {
-    "titre": "Poach",
-    "detail": "Poach the chicken in stock, then shred it."
-   },
-   {
-    "titre": "Mushrooms",
-    "detail": "Sweat the mushrooms."
-   },
-   {
-    "titre": "Velouté",
-    "detail": "Make a roux, then add stock and cream."
-   },
-   {
-    "titre": "Meatballs",
-    "detail": "Add small poached meatballs."
-   },
-   {
-    "titre": "Combine",
-    "detail": "Stir the chicken and mushrooms into the sauce, add lemon."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Fill the shells and serve with fries."
-   }
-  ]
- },
- "filetamericain": {
-  "nom": "Filet Américain",
-  "description": "Finely chopped raw beef bound with a mayonnaise-style sauce sharpened with capers, gherkins and onion. The Belgian take on steak tartare, served with fries.",
-  "etapes": [
-   {
-    "titre": "Chop",
-    "detail": "Chop very fresh beef by hand with a knife."
-   },
-   {
-    "titre": "Sauce",
-    "detail": "Build a mayonnaise with egg yolk, mustard and oil."
-   },
-   {
-    "titre": "Condiments",
-    "detail": "Chop the capers, gherkins and onion."
-   },
-   {
-    "titre": "Mix",
-    "detail": "Bind the beef with the sauce and condiments."
-   },
-   {
-    "titre": "Season",
-    "detail": "Tabasco, Worcestershire, salt and pepper."
-   },
-   {
-    "titre": "Keep",
-    "detail": "Keep well chilled until serving."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve right away with fries and a salad."
    }
   ]
  },
@@ -46622,40 +46418,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Serve with crusty bread for soaking up the juices."
-   }
-  ]
- },
- "gravlax": {
-  "nom": "Gravlax",
-  "description": "Raw salmon cured for 48 hours in salt, sugar and dill, then thinly sliced and served with a mustard-dill sauce. A chic Nordic starter.",
-  "etapes": [
-   {
-    "titre": "Prep",
-    "detail": "Choose a very fresh, boneless salmon fillet."
-   },
-   {
-    "titre": "Cure mix",
-    "detail": "Combine coarse salt, sugar and cracked pepper."
-   },
-   {
-    "titre": "Coat",
-    "detail": "Cover the salmon with the cure mix and chopped dill."
-   },
-   {
-    "titre": "Cure",
-    "detail": "Wrap, set a weight on top and refrigerate 48 h, flipping it over."
-   },
-   {
-    "titre": "Rinse",
-    "detail": "Rinse, pat dry and slice thinly on the bias."
-   },
-   {
-    "titre": "Sauce",
-    "detail": "Make a mustard-honey-dill sauce (hovmästarsås)."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve with rye bread and the sauce."
    }
   ]
  },
@@ -46894,40 +46656,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Serve ice-cold, optionally with ham."
-   }
-  ]
- },
- "golubtsy": {
-  "nom": "Golubtsy (Stuffed Cabbage Rolls)",
-  "description": "Cabbage leaves stuffed with meat and rice, simmered in a tomato-cream sauce. The hearty, comforting Slavic family dish.",
-  "etapes": [
-   {
-    "titre": "Leaves",
-    "detail": "Blanch the cabbage leaves to soften them."
-   },
-   {
-    "titre": "Filling",
-    "detail": "Mix minced meat, half-cooked rice and sautéed onion."
-   },
-   {
-    "titre": "Roll",
-    "detail": "Fill each leaf and roll, tucking in the sides."
-   },
-   {
-    "titre": "Arrange",
-    "detail": "Pack the rolls tightly in a pot."
-   },
-   {
-    "titre": "Sauce",
-    "detail": "Cover with a cream-enriched tomato sauce."
-   },
-   {
-    "titre": "Simmer",
-    "detail": "Cover and simmer 1 h over low heat."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve napped with sauce and sour cream."
    }
   ]
  },

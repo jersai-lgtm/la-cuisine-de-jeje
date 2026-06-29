@@ -20106,43 +20106,6 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir avec du riz ou des pommes de terre vapeur.", badge: null }
     ]
   },
-  flammkuchen: {
-    nom: "Flammkuchen",
-    cat: "pizzas", pays: "allemagne",
-    base: 4,
-    temps: "35 min",
-    niveau: "⭐ Facile",
-    emoji: "🔥",
-    dateAjout: "2026-06-29T12:00:00",
-    description: "Fine pâte croustillante garnie de crème, d'oignons et de lardons, cuite à four très chaud. La « tarte flambée » alsaco-allemande, légère et addictive.",
-    tableauFlammkuchen: [
-      { nb: 1, farine: "70 g", creme: "60 ml", lardons: "40 g", oignon: "50 g", huile: "5 ml" },
-      { nb: 2, farine: "140 g", creme: "120 ml", lardons: "80 g", oignon: "100 g", huile: "10 ml" },
-      { nb: 3, farine: "210 g", creme: "180 ml", lardons: "120 g", oignon: "150 g", huile: "15 ml" },
-      { nb: 4, farine: "280 g", creme: "240 ml", lardons: "160 g", oignon: "200 g", huile: "20 ml" },
-      { nb: 5, farine: "350 g", creme: "300 ml", lardons: "200 g", oignon: "250 g", huile: "25 ml" },
-      { nb: 6, farine: "420 g", creme: "360 ml", lardons: "240 g", oignon: "300 g", huile: "30 ml" },
-      { nb: 7, farine: "490 g", creme: "420 ml", lardons: "280 g", oignon: "350 g", huile: "35 ml" },
-      { nb: 8, farine: "560 g", creme: "480 ml", lardons: "320 g", oignon: "400 g", huile: "40 ml" },
-      { nb: 9, farine: "630 g", creme: "540 ml", lardons: "360 g", oignon: "450 g", huile: "45 ml" },
-      { nb: 10, farine: "700 g", creme: "600 ml", lardons: "400 g", oignon: "500 g", huile: "50 ml" },
-      { nb: 11, farine: "770 g", creme: "660 ml", lardons: "440 g", oignon: "550 g", huile: "55 ml" },
-      { nb: 12, farine: "840 g", creme: "720 ml", lardons: "480 g", oignon: "600 g", huile: "60 ml" },
-      { nb: 13, farine: "910 g", creme: "780 ml", lardons: "520 g", oignon: "650 g", huile: "65 ml" },
-      { nb: 14, farine: "980 g", creme: "840 ml", lardons: "560 g", oignon: "700 g", huile: "70 ml" },
-      { nb: 15, farine: "1050 g", creme: "900 ml", lardons: "600 g", oignon: "750 g", huile: "75 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Pétrir une pâte fine sans levure (farine, eau, huile, sel).", badge: null },
-      { icone: "⚪", titre: "Étaler", detail: "Étaler très finement sur une plaque.", badge: null },
-      { icone: "🥛", titre: "Crème", detail: "Étaler la crème (mêlée de fromage blanc) jusqu'aux bords.", badge: null },
-      { icone: "🧅", titre: "Garnir", detail: "Répartir oignons émincés et lardons.", badge: null },
-      { icone: "🔥", titre: "Préchauffer", detail: "Préchauffer le four au maximum (250 °C).", badge: null },
-      { icone: "♨️", titre: "Cuire", detail: "Cuire 10-12 min jusqu'à ce que les bords brunissent.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Couper en parts et servir aussitôt, bien croustillant.", badge: null }
-    ]
-  },
   eintopf: {
     nom: "Eintopf",
     cat: "soupes", pays: "allemagne",
@@ -20178,43 +20141,6 @@ Object.assign(recettes, {
       { icone: "🥬", titre: "Chou", detail: "Ajouter le chou émincé, poursuivre 15 min.", badge: null },
       { icone: "🌿", titre: "Assaisonner", detail: "Saler, poivrer, ajouter laurier et persil.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Servir en bol bien chaud avec du pain.", badge: null }
-    ]
-  },
-  kotletschabowy: {
-    nom: "Kotlet Schabowy",
-    cat: "plats", pays: "pologne",
-    base: 4,
-    temps: "40 min",
-    niveau: "⭐ Facile",
-    emoji: "🍖",
-    dateAjout: "2026-06-29T12:00:00",
-    description: "Escalope de porc panée à la chapelure, frite dorée et croustillante. Le déjeuner dominical polonais, servi avec pommes de terre et chou.",
-    tableauKotletschabowy: [
-      { nb: 1, porc: "150 g", chapelure: "30 g", oeuf: "25 g", farine: "20 g", huilefriture: "20 ml" },
-      { nb: 2, porc: "300 g", chapelure: "60 g", oeuf: "50 g", farine: "40 g", huilefriture: "40 ml" },
-      { nb: 3, porc: "450 g", chapelure: "90 g", oeuf: "75 g", farine: "60 g", huilefriture: "60 ml" },
-      { nb: 4, porc: "600 g", chapelure: "120 g", oeuf: "100 g", farine: "80 g", huilefriture: "80 ml" },
-      { nb: 5, porc: "750 g", chapelure: "150 g", oeuf: "125 g", farine: "100 g", huilefriture: "100 ml" },
-      { nb: 6, porc: "900 g", chapelure: "180 g", oeuf: "150 g", farine: "120 g", huilefriture: "120 ml" },
-      { nb: 7, porc: "1050 g", chapelure: "210 g", oeuf: "175 g", farine: "140 g", huilefriture: "140 ml" },
-      { nb: 8, porc: "1200 g", chapelure: "240 g", oeuf: "200 g", farine: "160 g", huilefriture: "160 ml" },
-      { nb: 9, porc: "1350 g", chapelure: "270 g", oeuf: "225 g", farine: "180 g", huilefriture: "180 ml" },
-      { nb: 10, porc: "1500 g", chapelure: "300 g", oeuf: "250 g", farine: "200 g", huilefriture: "200 ml" },
-      { nb: 11, porc: "1650 g", chapelure: "330 g", oeuf: "275 g", farine: "220 g", huilefriture: "220 ml" },
-      { nb: 12, porc: "1800 g", chapelure: "360 g", oeuf: "300 g", farine: "240 g", huilefriture: "240 ml" },
-      { nb: 13, porc: "1950 g", chapelure: "390 g", oeuf: "325 g", farine: "260 g", huilefriture: "260 ml" },
-      { nb: 14, porc: "2100 g", chapelure: "420 g", oeuf: "350 g", farine: "280 g", huilefriture: "280 ml" },
-      { nb: 15, porc: "2250 g", chapelure: "450 g", oeuf: "375 g", farine: "300 g", huilefriture: "300 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🔨", titre: "Aplatir", detail: "Aplatir les escalopes de porc, saler et poivrer.", badge: null },
-      { icone: "🍽️", titre: "Paner", detail: "Passer dans farine, œuf battu puis chapelure.", badge: null },
-      { icone: "👋", titre: "Tapoter", detail: "Tapoter pour faire adhérer la panure.", badge: null },
-      { icone: "🔥", titre: "Chauffer", detail: "Chauffer l'huile dans une poêle.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire 3-4 min par face jusqu'à doré croustillant.", badge: null },
-      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur papier absorbant.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir avec pommes de terre et chou braisé.", badge: null }
     ]
   },
   sernik: {
@@ -20439,43 +20365,6 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Reposer", detail: "Réfrigérer puis lisser les côtés à la crème.", badge: null }
     ]
   },
-  palacsinta: {
-    nom: "Palacsinta",
-    cat: "desserts", pays: "hongrie",
-    base: 4,
-    temps: "40 min",
-    niveau: "⭐ Facile",
-    emoji: "🥞",
-    dateAjout: "2026-06-29T12:00:00",
-    description: "Crêpes fines hongroises roulées autour de confiture d'abricot ou de fromage sucré, parfois nappées de chocolat. Le dessert d'enfance.",
-    tableauPalacsinta: [
-      { nb: 1, farine: "60 g", oeuf: "50 g", lait: "120 ml", confiture: "30 g", sucre: "15 g" },
-      { nb: 2, farine: "120 g", oeuf: "100 g", lait: "240 ml", confiture: "60 g", sucre: "30 g" },
-      { nb: 3, farine: "180 g", oeuf: "150 g", lait: "360 ml", confiture: "90 g", sucre: "45 g" },
-      { nb: 4, farine: "240 g", oeuf: "200 g", lait: "480 ml", confiture: "120 g", sucre: "60 g" },
-      { nb: 5, farine: "300 g", oeuf: "250 g", lait: "600 ml", confiture: "150 g", sucre: "75 g" },
-      { nb: 6, farine: "360 g", oeuf: "300 g", lait: "720 ml", confiture: "180 g", sucre: "90 g" },
-      { nb: 7, farine: "420 g", oeuf: "350 g", lait: "840 ml", confiture: "210 g", sucre: "105 g" },
-      { nb: 8, farine: "480 g", oeuf: "400 g", lait: "960 ml", confiture: "240 g", sucre: "120 g" },
-      { nb: 9, farine: "540 g", oeuf: "450 g", lait: "1080 ml", confiture: "270 g", sucre: "135 g" },
-      { nb: 10, farine: "600 g", oeuf: "500 g", lait: "1200 ml", confiture: "300 g", sucre: "150 g" },
-      { nb: 11, farine: "660 g", oeuf: "550 g", lait: "1320 ml", confiture: "330 g", sucre: "165 g" },
-      { nb: 12, farine: "720 g", oeuf: "600 g", lait: "1440 ml", confiture: "360 g", sucre: "180 g" },
-      { nb: 13, farine: "780 g", oeuf: "650 g", lait: "1560 ml", confiture: "390 g", sucre: "195 g" },
-      { nb: 14, farine: "840 g", oeuf: "700 g", lait: "1680 ml", confiture: "420 g", sucre: "210 g" },
-      { nb: 15, farine: "900 g", oeuf: "750 g", lait: "1800 ml", confiture: "450 g", sucre: "225 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Battre farine, œufs, lait et eau gazeuse en pâte fluide.", badge: null },
-      { icone: "⏲️", titre: "Reposer", detail: "Laisser reposer 20 min.", badge: null },
-      { icone: "🥞", titre: "Cuire", detail: "Cuire de fines crêpes dorées.", badge: null },
-      { icone: "🍑", titre: "Garnir", detail: "Tartiner de confiture d'abricot ou de fromage sucré.", badge: null },
-      { icone: "🌯", titre: "Rouler", detail: "Rouler chaque crêpe serrée.", badge: null },
-      { icone: "🍫", titre: "Napper", detail: "Napper de chocolat fondu (version Gundel).", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Saupoudrer de sucre glace et servir tiède.", badge: null }
-    ]
-  },
   fozelek: {
     nom: "Főzelék",
     cat: "plats", pays: "hongrie",
@@ -20583,117 +20472,6 @@ Object.assign(recettes, {
       { icone: "🔗", titre: "Mélanger", detail: "Incorporer lardons, oignon et un peu de lait.", badge: null },
       { icone: "🌿", titre: "Assaisonner", detail: "Muscade, sel, poivre et persil.", badge: null },
       { icone: "🌭", titre: "Servir", detail: "Servir avec une saucisse ou du boudin.", badge: null }
-    ]
-  },
-  moulesfrites: {
-    nom: "Moules-Frites",
-    cat: "plats", pays: "belgique",
-    base: 4,
-    temps: "40 min",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🦪",
-    dateAjout: "2026-06-29T12:00:00",
-    description: "Moules marinières au vin blanc et au céleri, accompagnées de frites maison croustillantes. Le plat national belge par excellence.",
-    tableauMoulesfrites: [
-      { nb: 1, moules: "300 g", pommedeterre: "150 g", oignon: "40 g", vinblanc: "40 ml", beurre: "15 g" },
-      { nb: 2, moules: "600 g", pommedeterre: "300 g", oignon: "80 g", vinblanc: "80 ml", beurre: "30 g" },
-      { nb: 3, moules: "900 g", pommedeterre: "450 g", oignon: "120 g", vinblanc: "120 ml", beurre: "45 g" },
-      { nb: 4, moules: "1200 g", pommedeterre: "600 g", oignon: "160 g", vinblanc: "160 ml", beurre: "60 g" },
-      { nb: 5, moules: "1500 g", pommedeterre: "750 g", oignon: "200 g", vinblanc: "200 ml", beurre: "75 g" },
-      { nb: 6, moules: "1800 g", pommedeterre: "900 g", oignon: "240 g", vinblanc: "240 ml", beurre: "90 g" },
-      { nb: 7, moules: "2100 g", pommedeterre: "1050 g", oignon: "280 g", vinblanc: "280 ml", beurre: "105 g" },
-      { nb: 8, moules: "2400 g", pommedeterre: "1200 g", oignon: "320 g", vinblanc: "320 ml", beurre: "120 g" },
-      { nb: 9, moules: "2700 g", pommedeterre: "1350 g", oignon: "360 g", vinblanc: "360 ml", beurre: "135 g" },
-      { nb: 10, moules: "3000 g", pommedeterre: "1500 g", oignon: "400 g", vinblanc: "400 ml", beurre: "150 g" },
-      { nb: 11, moules: "3300 g", pommedeterre: "1650 g", oignon: "440 g", vinblanc: "440 ml", beurre: "165 g" },
-      { nb: 12, moules: "3600 g", pommedeterre: "1800 g", oignon: "480 g", vinblanc: "480 ml", beurre: "180 g" },
-      { nb: 13, moules: "3900 g", pommedeterre: "1950 g", oignon: "520 g", vinblanc: "520 ml", beurre: "195 g" },
-      { nb: 14, moules: "4200 g", pommedeterre: "2100 g", oignon: "560 g", vinblanc: "560 ml", beurre: "210 g" },
-      { nb: 15, moules: "4500 g", pommedeterre: "2250 g", oignon: "600 g", vinblanc: "600 ml", beurre: "225 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🦪", titre: "Nettoyer", detail: "Gratter et laver soigneusement les moules, jeter les ouvertes.", badge: null },
-      { icone: "🍟", titre: "Frites", detail: "Tailler les pommes de terre et frire en deux bains.", badge: null },
-      { icone: "🧅", titre: "Aromates", detail: "Faire suer oignon et céleri au beurre dans une grande marmite.", badge: null },
-      { icone: "🍷", titre: "Vin", detail: "Déglacer au vin blanc.", badge: null },
-      { icone: "💨", titre: "Cuire", detail: "Ajouter les moules, couvrir et secouer 5-6 min jusqu'à ouverture.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Parsemer de persil.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir les moules dans leur jus avec les frites.", badge: null }
-    ]
-  },
-  voulauvent: {
-    nom: "Vol-au-Vent",
-    cat: "plats", pays: "belgique",
-    base: 4,
-    temps: "1h",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🥧",
-    dateAjout: "2026-06-29T12:00:00",
-    description: "Bouchée feuilletée garnie d'un velouté de poulet, champignons et boulettes. Le grand classique du dimanche belge, crémeux et généreux.",
-    tableauVoulauvent: [
-      { nb: 1, pateFeuilletee: "50 g", poulet: "100 g", champignon: "40 g", creme: "40 ml", farine: "10 g" },
-      { nb: 2, pateFeuilletee: "100 g", poulet: "200 g", champignon: "80 g", creme: "80 ml", farine: "20 g" },
-      { nb: 3, pateFeuilletee: "150 g", poulet: "300 g", champignon: "120 g", creme: "120 ml", farine: "30 g" },
-      { nb: 4, pateFeuilletee: "200 g", poulet: "400 g", champignon: "160 g", creme: "160 ml", farine: "40 g" },
-      { nb: 5, pateFeuilletee: "250 g", poulet: "500 g", champignon: "200 g", creme: "200 ml", farine: "50 g" },
-      { nb: 6, pateFeuilletee: "300 g", poulet: "600 g", champignon: "240 g", creme: "240 ml", farine: "60 g" },
-      { nb: 7, pateFeuilletee: "350 g", poulet: "700 g", champignon: "280 g", creme: "280 ml", farine: "70 g" },
-      { nb: 8, pateFeuilletee: "400 g", poulet: "800 g", champignon: "320 g", creme: "320 ml", farine: "80 g" },
-      { nb: 9, pateFeuilletee: "450 g", poulet: "900 g", champignon: "360 g", creme: "360 ml", farine: "90 g" },
-      { nb: 10, pateFeuilletee: "500 g", poulet: "1000 g", champignon: "400 g", creme: "400 ml", farine: "100 g" },
-      { nb: 11, pateFeuilletee: "550 g", poulet: "1100 g", champignon: "440 g", creme: "440 ml", farine: "110 g" },
-      { nb: 12, pateFeuilletee: "600 g", poulet: "1200 g", champignon: "480 g", creme: "480 ml", farine: "120 g" },
-      { nb: 13, pateFeuilletee: "650 g", poulet: "1300 g", champignon: "520 g", creme: "520 ml", farine: "130 g" },
-      { nb: 14, pateFeuilletee: "700 g", poulet: "1400 g", champignon: "560 g", creme: "560 ml", farine: "140 g" },
-      { nb: 15, pateFeuilletee: "750 g", poulet: "1500 g", champignon: "600 g", creme: "600 ml", farine: "150 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥧", titre: "Bouchées", detail: "Cuire les bouchées feuilletées jusqu'à doré.", badge: null },
-      { icone: "🍗", titre: "Pocher", detail: "Pocher le poulet dans un bouillon, l'effilocher.", badge: null },
-      { icone: "🍄", titre: "Champignons", detail: "Faire suer les champignons.", badge: null },
-      { icone: "🧈", titre: "Velouté", detail: "Faire un roux, mouiller du bouillon et de la crème.", badge: null },
-      { icone: "⚪", titre: "Boulettes", detail: "Ajouter de petites boulettes de viande pochées.", badge: null },
-      { icone: "🥣", titre: "Réunir", detail: "Incorporer poulet et champignons à la sauce, citronner.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Garnir les bouchées et servir avec des frites.", badge: null }
-    ]
-  },
-  filetamericain: {
-    nom: "Filet Américain",
-    cat: "entrees", pays: "belgique",
-    base: 4,
-    temps: "20 min",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🥩",
-    dateAjout: "2026-06-29T12:00:00",
-    description: "Bœuf cru haché finement, lié à une sauce façon mayonnaise relevée de câpres, cornichons et oignon. Le tartare à la belge, servi avec frites.",
-    tableauFiletamericain: [
-      { nb: 1, boeuf: "120 g", oeuf: "25 g", oignon: "20 g", moutarde: "5 g", huile: "15 ml" },
-      { nb: 2, boeuf: "240 g", oeuf: "50 g", oignon: "40 g", moutarde: "10 g", huile: "30 ml" },
-      { nb: 3, boeuf: "360 g", oeuf: "75 g", oignon: "60 g", moutarde: "15 g", huile: "45 ml" },
-      { nb: 4, boeuf: "480 g", oeuf: "100 g", oignon: "80 g", moutarde: "20 g", huile: "60 ml" },
-      { nb: 5, boeuf: "600 g", oeuf: "125 g", oignon: "100 g", moutarde: "25 g", huile: "75 ml" },
-      { nb: 6, boeuf: "720 g", oeuf: "150 g", oignon: "120 g", moutarde: "30 g", huile: "90 ml" },
-      { nb: 7, boeuf: "840 g", oeuf: "175 g", oignon: "140 g", moutarde: "35 g", huile: "105 ml" },
-      { nb: 8, boeuf: "960 g", oeuf: "200 g", oignon: "160 g", moutarde: "40 g", huile: "120 ml" },
-      { nb: 9, boeuf: "1080 g", oeuf: "225 g", oignon: "180 g", moutarde: "45 g", huile: "135 ml" },
-      { nb: 10, boeuf: "1200 g", oeuf: "250 g", oignon: "200 g", moutarde: "50 g", huile: "150 ml" },
-      { nb: 11, boeuf: "1320 g", oeuf: "275 g", oignon: "220 g", moutarde: "55 g", huile: "165 ml" },
-      { nb: 12, boeuf: "1440 g", oeuf: "300 g", oignon: "240 g", moutarde: "60 g", huile: "180 ml" },
-      { nb: 13, boeuf: "1560 g", oeuf: "325 g", oignon: "260 g", moutarde: "65 g", huile: "195 ml" },
-      { nb: 14, boeuf: "1680 g", oeuf: "350 g", oignon: "280 g", moutarde: "70 g", huile: "210 ml" },
-      { nb: 15, boeuf: "1800 g", oeuf: "375 g", oignon: "300 g", moutarde: "75 g", huile: "225 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🔪", titre: "Hacher", detail: "Hacher le bœuf très frais au couteau.", badge: null },
-      { icone: "🥚", titre: "Sauce", detail: "Monter une mayonnaise avec jaune d'œuf, moutarde et huile.", badge: null },
-      { icone: "🥒", titre: "Condiments", detail: "Hacher câpres, cornichons et oignon.", badge: null },
-      { icone: "🥣", titre: "Mélanger", detail: "Lier la viande avec la sauce et les condiments.", badge: null },
-      { icone: "🌶️", titre: "Assaisonner", detail: "Tabasco, Worcestershire, sel et poivre.", badge: null },
-      { icone: "❄️", titre: "Tenir", detail: "Garder bien frais jusqu'au service.", badge: null },
-      { icone: "🍟", titre: "Servir", detail: "Servir aussitôt avec des frites et de la salade.", badge: null }
     ]
   },
   arrozmarisco: {
@@ -20842,43 +20620,6 @@ Object.assign(recettes, {
       { icone: "⏲️", titre: "Mijoter", detail: "Cuire à couvert à feu doux 30 min sans remuer.", badge: null },
       { icone: "💧", titre: "Vérifier", detail: "Secouer la cocotte plutôt que mélanger.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Servir avec du bon pain pour saucer.", badge: null }
-    ]
-  },
-  gravlax: {
-    nom: "Gravlax",
-    cat: "entrees", pays: "suede",
-    base: 4,
-    temps: "30 min",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🐟",
-    dateAjout: "2026-06-29T12:00:00",
-    description: "Saumon cru mariné au sel, sucre et aneth pendant 48 h, tranché finement et servi avec une sauce moutarde-aneth. L'entrée nordique chic.",
-    tableauGravlax: [
-      { nb: 1, saumon: "120 g", sucre: "15 g", aneth: "5 g", citron: "10 ml" },
-      { nb: 2, saumon: "240 g", sucre: "30 g", aneth: "10 g", citron: "20 ml" },
-      { nb: 3, saumon: "360 g", sucre: "45 g", aneth: "15 g", citron: "30 ml" },
-      { nb: 4, saumon: "480 g", sucre: "60 g", aneth: "20 g", citron: "40 ml" },
-      { nb: 5, saumon: "600 g", sucre: "75 g", aneth: "25 g", citron: "50 ml" },
-      { nb: 6, saumon: "720 g", sucre: "90 g", aneth: "30 g", citron: "60 ml" },
-      { nb: 7, saumon: "840 g", sucre: "105 g", aneth: "35 g", citron: "70 ml" },
-      { nb: 8, saumon: "960 g", sucre: "120 g", aneth: "40 g", citron: "80 ml" },
-      { nb: 9, saumon: "1080 g", sucre: "135 g", aneth: "45 g", citron: "90 ml" },
-      { nb: 10, saumon: "1200 g", sucre: "150 g", aneth: "50 g", citron: "100 ml" },
-      { nb: 11, saumon: "1320 g", sucre: "165 g", aneth: "55 g", citron: "110 ml" },
-      { nb: 12, saumon: "1440 g", sucre: "180 g", aneth: "60 g", citron: "120 ml" },
-      { nb: 13, saumon: "1560 g", sucre: "195 g", aneth: "65 g", citron: "130 ml" },
-      { nb: 14, saumon: "1680 g", sucre: "210 g", aneth: "70 g", citron: "140 ml" },
-      { nb: 15, saumon: "1800 g", sucre: "225 g", aneth: "75 g", citron: "150 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🐟", titre: "Préparer", detail: "Choisir un pavé de saumon très frais, sans arêtes.", badge: null },
-      { icone: "🧂", titre: "Mélange", detail: "Mélanger gros sel, sucre et poivre concassé.", badge: null },
-      { icone: "🌿", titre: "Couvrir", detail: "Recouvrir le saumon de mélange et d'aneth ciselé.", badge: null },
-      { icone: "⏳", titre: "Mariner", detail: "Filmer, poser un poids et réfrigérer 48 h en retournant.", badge: null },
-      { icone: "💧", titre: "Rincer", detail: "Rincer, sécher et trancher finement en biais.", badge: null },
-      { icone: "🥄", titre: "Sauce", detail: "Préparer une sauce moutarde-miel-aneth (hovmästarsås).", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir avec pain de seigle et la sauce.", badge: null }
     ]
   },
   pyttipanna: {
@@ -21138,43 +20879,6 @@ Object.assign(recettes, {
       { icone: "🥣", titre: "Mélanger", detail: "Réunir légumes et base, saler.", badge: null },
       { icone: "❄️", titre: "Réfrigérer", detail: "Réserver bien au frais 1 h.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Servir glacé, éventuellement avec du jambon.", badge: null }
-    ]
-  },
-  golubtsy: {
-    nom: "Golubtsy",
-    cat: "plats", pays: "russie",
-    base: 4,
-    temps: "1h30",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🥬",
-    dateAjout: "2026-06-29T12:00:00",
-    description: "Feuilles de chou farcies de viande et de riz, mijotées dans une sauce tomate-crème. Le plat familial slave, fondant et réconfortant.",
-    tableauGolubtsy: [
-      { nb: 1, chou: "120 g", boeufHache: "80 g", riz: "40 g", tomate: "50 g", oignon: "40 g" },
-      { nb: 2, chou: "240 g", boeufHache: "160 g", riz: "80 g", tomate: "100 g", oignon: "80 g" },
-      { nb: 3, chou: "360 g", boeufHache: "240 g", riz: "120 g", tomate: "150 g", oignon: "120 g" },
-      { nb: 4, chou: "480 g", boeufHache: "320 g", riz: "160 g", tomate: "200 g", oignon: "160 g" },
-      { nb: 5, chou: "600 g", boeufHache: "400 g", riz: "200 g", tomate: "250 g", oignon: "200 g" },
-      { nb: 6, chou: "720 g", boeufHache: "480 g", riz: "240 g", tomate: "300 g", oignon: "240 g" },
-      { nb: 7, chou: "840 g", boeufHache: "560 g", riz: "280 g", tomate: "350 g", oignon: "280 g" },
-      { nb: 8, chou: "960 g", boeufHache: "640 g", riz: "320 g", tomate: "400 g", oignon: "320 g" },
-      { nb: 9, chou: "1080 g", boeufHache: "720 g", riz: "360 g", tomate: "450 g", oignon: "360 g" },
-      { nb: 10, chou: "1200 g", boeufHache: "800 g", riz: "400 g", tomate: "500 g", oignon: "400 g" },
-      { nb: 11, chou: "1320 g", boeufHache: "880 g", riz: "440 g", tomate: "550 g", oignon: "440 g" },
-      { nb: 12, chou: "1440 g", boeufHache: "960 g", riz: "480 g", tomate: "600 g", oignon: "480 g" },
-      { nb: 13, chou: "1560 g", boeufHache: "1040 g", riz: "520 g", tomate: "650 g", oignon: "520 g" },
-      { nb: 14, chou: "1680 g", boeufHache: "1120 g", riz: "560 g", tomate: "700 g", oignon: "560 g" },
-      { nb: 15, chou: "1800 g", boeufHache: "1200 g", riz: "600 g", tomate: "750 g", oignon: "600 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥬", titre: "Feuilles", detail: "Blanchir les feuilles de chou pour les assouplir.", badge: null },
-      { icone: "🍚", titre: "Farce", detail: "Mélanger viande hachée, riz mi-cuit et oignon revenu.", badge: null },
-      { icone: "🌯", titre: "Rouler", detail: "Garnir chaque feuille et rouler en repliant les côtés.", badge: null },
-      { icone: "🥘", titre: "Ranger", detail: "Ranger les rouleaux serrés dans une cocotte.", badge: null },
-      { icone: "🍅", titre: "Sauce", detail: "Couvrir d'une sauce tomate liée à la crème.", badge: null },
-      { icone: "⏲️", titre: "Mijoter", detail: "Mijoter à couvert 1 h à feu doux.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir nappé de sauce, avec de la crème fraîche.", badge: null }
     ]
   },
   efororiro: {
