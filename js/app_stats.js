@@ -820,7 +820,24 @@ function remplirBadges(s) {
   // Métriques sur les recettes réellement CUISINÉES
   const cuisinees = (user.recettesCuisinees || []).map(c => c && c.cle).filter(Boolean);
   const catSet = new Set(), paysCuitSet = new Set(), saisonSet = new Set();
-  let nbNutriA = 0, nbEco = 0;
+  let nbNutriA = 0, nbEco = 0, nbDifficile = 0, nbDesserts = 0, nbExpress = 0, nbMijote = 0, nbVege = 0, nbBoissons = 0, nbBrunch = 0;
+  const protSet = new Set(), continentSet = new Set();
+  const CONTINENTS = {
+    france:"eu",italie:"eu",espagne:"eu",portugal:"eu",grece:"eu",allemagne:"eu",angleterre:"eu","royaume-uni":"eu",irlande:"eu",belgique:"eu",paysbas:"eu",suisse:"eu",autriche:"eu",pologne:"eu",hongrie:"eu",russie:"eu",ukraine:"eu",croatie:"eu",serbie:"eu",slovaquie:"eu",bielorussie:"eu",suede:"eu",danemark:"eu",chypre:"eu",georgie:"eu",
+    chine:"as",japon:"as",coree:"as",thailande:"as",vietnam:"as",inde:"as",indonesie:"as",malaisie:"as",singapour:"as",philippines:"as",iran:"as",liban:"as",turquie:"as",israel:"as",palestine:"as",jordanie:"as",arabiesaoudite:"as",kazakhstan:"as",ouzbekistan:"as",tibet:"as",
+    maroc:"af",algerie:"af",tunisie:"af",egypte:"af",senegal:"af",nigeria:"af",ghana:"af",cotedivoire:"af",cameroun:"af",ethiopie:"af",congo:"af",afriquedusud:"af",reunion:"af",
+    usa:"na",canada:"na",mexique:"na",
+    bresil:"sa",argentine:"sa",perou:"sa",colombie:"sa",venezuela:"sa",cuba:"sa",costarica:"sa",salvador:"sa",honduras:"sa",haiti:"sa",portorico:"sa",antilles:"sa",
+    hawaii:"oc",polynesie:"oc",
+  };
+  const tMin = (t) => {
+    if (!t) return null;
+    const x = String(t).toLowerCase();
+    const h = x.match(/(\d+)\s*h(?:\s*(\d+))?/);
+    if (h) return (+h[1]) * 60 + (h[2] ? +h[2] : 0);
+    const m = x.match(/(\d+)\s*min/);
+    return m ? +m[1] : null;
+  };
   const lignePortion = (r) => {
     const tk = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
     if (!tk) return null;
@@ -833,6 +850,15 @@ function remplirBadges(s) {
     if (r.cat) catSet.add(r.cat);
     if (r.pays) paysCuitSet.add(r.pays);
     (r.saisons || []).forEach(sa => saisonSet.add(sa));
+    if (/⭐⭐⭐/.test(r.niveau || "")) nbDifficile++;
+    if (r.cat === "desserts") nbDesserts++;
+    if (r.cat === "brunch") nbBrunch++;
+    if (r.cat === "cocktails" || r.cat === "mocktails") nbBoissons++;
+    const tm = tMin(r.temps);
+    if (tm != null && tm <= 30) nbExpress++;
+    if (tm != null && tm >= 120) nbMijote++;
+    if (r.pays && CONTINENTS[r.pays]) continentSet.add(CONTINENTS[r.pays]);
+    if (typeof proteineFamille === "function") { const pf = proteineFamille(cle); if (pf) { protSet.add(pf); if (pf === "vegetarien") nbVege++; } }
     const horsRepas = ["cocktails", "mocktails", "sauces", "tartinables"].includes(r.cat);
     const ligne = horsRepas ? null : lignePortion(r);
     if (ligne) {
@@ -840,6 +866,9 @@ function remplirBadges(s) {
       try { const pc = (typeof calculerPrixCaloriesRecette === "function") && calculerPrixCaloriesRecette(ligne); if (pc && pc.prix != null && (pc.prix / (r.base || 4)) <= 2) nbEco++; } catch (e) {}
     }
   });
+  // Ancienneté du compte (mois) pour le badge fidélité.
+  let ancienneteMois = 0;
+  if (user.dateCreation) { try { ancienneteMois = Math.max(0, Math.floor((new Date() - new Date(user.dateCreation)) / (1000 * 60 * 60 * 24 * 30))); } catch (e) {} }
 
   const cuis = s.nbRecettesCuisinees || 0, vues = s.nbRecettesVues || 0, streak = s.streakRecord || 0;
   const favs = s.nbFavoris || 0, menus = s.nbMenusGeneres || 0;
@@ -890,6 +919,20 @@ function remplirBadges(s) {
     ["chef-international","🌐","Chef International","pays cuisinés",paysCuitSet.size,10],
     ["chef-planetaire","🪐","Chef Planétaire","pays cuisinés",paysCuitSet.size,20],
     ["chef-malin","💰","Chef Malin","recettes éco ≤2€/pers",nbEco,10],
+    ["temeraire","🧗","Téméraire","recettes difficiles cuisinées",nbDifficile,10],
+    ["maitre-technique","🎖️","Maître Technique","recettes difficiles cuisinées",nbDifficile,30],
+    ["bec-sucre","🍰","Bec Sucré","desserts cuisinés",nbDesserts,10],
+    ["patissier","🧁","Pâtissier Confirmé","desserts cuisinés",nbDesserts,30],
+    ["express","⚡","Chef Express","recettes ≤30 min cuisinées",nbExpress,20],
+    ["mijoteur","🍲","Roi du Mijoté","recettes ≥2h cuisinées",nbMijote,10],
+    ["veggie","🥦","Veggie","recettes végétariennes cuisinées",nbVege,15],
+    ["mixologue","🍹","Mixologue","cocktails/mocktails préparés",nbBoissons,10],
+    ["leve-tot","🍳","Roi du Brunch","brunchs cuisinés",nbBrunch,10],
+    ["omnivore","🍗","Omnivore Complet","familles de protéines cuisinées",protSet.size,6],
+    ["aventurier-continents","🧭","Aventurier des Continents","continents cuisinés",continentSet.size,4],
+    ["citoyen-monde","🌏","Citoyen du Monde","continents cuisinés",continentSet.size,6],
+    ["inconditionnel","🔁","Inconditionnel","fois la même recette",refaite,10],
+    ["fidele-jeje","🎂","Fidèle de Jéjé","mois avec l'appli",ancienneteMois,12],
   ];
   const badges = defs.map(([id, emoji, titre, unite, val, cible]) => ({
     id, emoji, titre, unite, val: val || 0, cible, debloque: (val || 0) >= cible,
