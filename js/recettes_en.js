@@ -46930,5 +46930,863 @@ window.RECETTES_EN = {
     "detail": "Serve napped with sauce and sour cream."
    }
   ]
+ },
+ "efororiro": {
+  "nom": "Efo Riro",
+  "description": "A Yoruba spinach stew simmered in palm oil, loaded with meat and shrimp and fired up with chili. Rich, deep green, and seriously savory.",
+  "etapes": [
+   {
+    "titre": "Meat",
+    "detail": "Cook the beef in stock and reserve the cooking liquid."
+   },
+   {
+    "titre": "Base",
+    "detail": "Blend bell pepper, chili, and onion, then fry in palm oil."
+   },
+   {
+    "titre": "Proteins",
+    "detail": "Add the meat, shrimp, and smoked fish."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Moisten with a little stock and let it reduce."
+   },
+   {
+    "titre": "Spinach",
+    "detail": "Stir in the chopped spinach (or efo)."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Cook 10 min without too much water (the stew stays thick)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice, yam, or fufu."
+   }
+  ]
+ },
+ "moimoi": {
+  "nom": "Moi Moi",
+  "description": "A steamed cake of ground black-eyed peas with palm oil and bell pepper. Soft, protein-packed, and often topped with egg or fish.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Soak the black-eyed peas and rub off their skins."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend with onion, bell pepper, and chili into a smooth paste."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Stir in the palm oil and a little stock."
+   },
+   {
+    "titre": "Top",
+    "detail": "Add pieces of hard-boiled egg or fish."
+   },
+   {
+    "titre": "Mold",
+    "detail": "Divide among ramekins (or leaves)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 45 min until the cake sets."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Unmold and serve hot with pap or rice."
+   }
+  ]
+ },
+ "ofadarice": {
+  "nom": "Ofada Rice & Ayamase",
+  "description": "Local Nigerian rice served with ayamase, a green chili sauce made with palm oil and meat. Smoky, spicy, and iconic.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Cook the ofada rice (or brown rice) in water."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Blend green bell peppers, chilies, and onion."
+   },
+   {
+    "titre": "Bleach",
+    "detail": "Heat the palm oil hard until it bleaches (ayamase)."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the pepper purée in the oil."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Add cooked beef and assorted cuts."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the sauce is thick and glossy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the rice topped with sauce, in a banana leaf."
+   }
+  ]
+ },
+ "asun": {
+  "nom": "Asun",
+  "description": "Grilled meat then tossed with onions and chilies, smoky and blazing hot. The festive Nigerian appetizer to snack on with a cold beer.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the goat meat (or lamb) into cubes."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the cubes until browned and smoky."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Slice onion, bell pepper, and plenty of chili."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté the aromatics in a little oil."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the grilled meat and coat well."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Sauté hard for 5 min to caramelize the edges."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with a fork or on toothpicks."
+   }
+  ]
+ },
+ "boerewors": {
+  "nom": "Boerewors",
+  "description": "A coiled South African sausage seasoned with coriander and clove, grilled over the braai. The soul of the Afrikaner barbecue.",
+  "etapes": [
+   {
+    "titre": "Spices",
+    "detail": "Toast and grind coriander, clove, and pepper."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine coarsely ground beef and pork."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the spices, vinegar, onion, and salt."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Stuff into a casing and coil into a spiral."
+   },
+   {
+    "titre": "Braai",
+    "detail": "Grill over medium heat without piercing."
+   },
+   {
+    "titre": "Turn",
+    "detail": "Turn once, keeping the juices inside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with pap & sous or as a hot dog (boerie roll)."
+   }
+  ]
+ },
+ "potjie": {
+  "nom": "Potjiekos",
+  "description": "A stew simmered in a cast-iron pot over the coals, layered and never stirred. Meltingly tender meat and vegetables, a convivial South African tradition.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Brown the meat at the bottom of the pot (potjie)."
+   },
+   {
+    "titre": "Base",
+    "detail": "Add the onion and a little stock."
+   },
+   {
+    "titre": "Layers",
+    "detail": "Arrange the vegetables in layers, without mixing."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add wine and spices, then cover."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook over very low coals for 2 h."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Don't stir: let the flavors stack up."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "At the end, thicken the juices and gently fold together."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice or pap."
+   }
+  ]
+ },
+ "biltong": {
+  "nom": "Biltong",
+  "description": "Strips of beef marinated in vinegar and coriander, air-dried for several days. South African dried meat, more tender than jerky.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the beef into thick strips along the grain."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Toast and crush coriander and pepper."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Douse with vinegar and rub with salt and spices."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it marinate a few hours in the fridge."
+   },
+   {
+    "titre": "Dry",
+    "detail": "Hang in a ventilated dryer (or biltong box)."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Dry for 3 to 5 days depending on the texture you want."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice thin and serve as a snack."
+   }
+  ]
+ },
+ "pastels": {
+  "nom": "Pastels",
+  "description": "Little fried turnovers stuffed with spiced fish, crisp and golden. The Senegalese appetizer staple, served with a spicy tomato sauce.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Sauté the flaked fish with onion, parsley, and spices."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Knead a soft dough (flour, water, oil, salt)."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll out and cut into rounds."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Add the filling and fold into half-moons."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Seal the edges with a fork."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry at 180 °C until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a kani sauce (tomato-chili)."
+   }
+  ]
+ },
+ "soupakandja": {
+  "nom": "Soupou Kandia",
+  "description": "A Senegalese okra stew with palm oil, fish, and seafood, over white rice. Silky, stringy, and powerfully briny.",
+  "etapes": [
+   {
+    "titre": "Okra",
+    "detail": "Grate or finely chop the okra."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Cook the fish and seafood in a broth."
+   },
+   {
+    "titre": "Oil",
+    "detail": "Add the palm oil and onion."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Stir in the okra, which will thicken the sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook until it reaches the characteristic stringy texture."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust chili, salt, and smoked fish."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over a bed of white rice."
+   }
+  ]
+ },
+ "fataya": {
+  "nom": "Fataya",
+  "description": "Senegalese fritters stuffed with spiced ground meat or fish, fried golden. Cousins of the pastels, devoured as street food in Dakar.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Sauté the ground meat with onion and spices."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add chili, parsley and a squeeze of lemon."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Prepare a supple dough and roll it out."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut out rounds of dough."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill, fold into half-moons and seal."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with pickled onions."
+   }
+  ]
+ },
+ "arrozconpollo": {
+  "nom": "Arroz con Pollo",
+  "description": "Cuban yellow rice with chicken, peppers and peas, scented with cumin and beer. A hearty one-pot dish, golden and comforting.",
+  "etapes": [
+   {
+    "titre": "Brown",
+    "detail": "Brown the seasoned chicken, then set aside."
+   },
+   {
+    "titre": "Sofrito",
+    "detail": "Sauté onion, garlic and pepper (sofrito)."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add tomato, cumin and a splash of beer."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Toast the rice in the sofrito."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in saffron-tinted broth (or coloring) and return the chicken."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook covered until the liquid is absorbed."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add peas and peppers, then let rest."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with lime wedges."
+   }
+  ]
+ },
+ "tostones": {
+  "nom": "Tostones",
+  "description": "Green plantain slices fried, smashed, then fried again until crisp and salty. The classic snack and side of the Caribbean.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Peel the green plantain and cut into thick chunks."
+   },
+   {
+    "titre": "Pre-fry",
+    "detail": "Fry once over medium heat until tender."
+   },
+   {
+    "titre": "Smash",
+    "detail": "Flatten each chunk between two sheets."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Dip in garlic water (optional)."
+   },
+   {
+    "titre": "Re-fry",
+    "detail": "Fry again over high heat until golden and crisp."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Drain and salt immediately."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a garlicky mojo sauce."
+   }
+  ]
+ },
+ "flancubain": {
+  "nom": "Flan Cubain",
+  "description": "Cuban flan made with condensed milk, ultra-creamy, set over an amber caramel. The Caribbean family dessert, silky and nostalgic.",
+  "etapes": [
+   {
+    "titre": "Caramel",
+    "detail": "Make an amber caramel and coat the mold with it."
+   },
+   {
+    "titre": "Custard",
+    "detail": "Whisk together eggs, condensed milk, milk and vanilla."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass through a sieve for a flawless texture."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour over the caramel without creating bubbles."
+   },
+   {
+    "titre": "Water bath",
+    "detail": "Bake at 160 °C in a water bath for 50 min."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Let cool, then refrigerate for 4 h."
+   },
+   {
+    "titre": "Unmold",
+    "detail": "Turn out onto a plate to release the caramel."
+   }
+  ]
+ },
+ "yucamojo": {
+  "nom": "Yuca con Mojo",
+  "description": "Tender boiled cassava drizzled with a garlic, onion and lime mojo. The tangy, fragrant side of the Cuban table.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Peel the cassava and cut into chunks."
+   },
+   {
+    "titre": "Boil",
+    "detail": "Boil in salted water until tender, then remove the woody core."
+   },
+   {
+    "titre": "Mojo",
+    "detail": "Heat the oil with minced garlic and onion."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Off the heat, add the lime juice and cumin."
+   },
+   {
+    "titre": "Drizzle",
+    "detail": "Pour the hot mojo over the cassava."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with cilantro and serve warm."
+   }
+  ]
+ },
+ "papahuancaina": {
+  "nom": "Papa a la Huancaína",
+  "description": "Potatoes blanketed in a creamy sauce of fresh cheese and yellow chili (ají amarillo). The sunny-yellow Peruvian appetizer.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Boil the potatoes, then peel and slice them."
+   },
+   {
+    "titre": "Chili",
+    "detail": "Sauté the ají amarillo (or yellow chili) with a little onion."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Blend fresh cheese, milk, saltine crackers and chili into a smooth sauce."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Adjust with milk until you have a pourable cream."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the potato slices over lettuce."
+   },
+   {
+    "titre": "Nappe",
+    "detail": "Spoon the huancaína sauce generously over the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with hard-boiled egg and black olives."
+   }
+  ]
+ },
+ "rocotorelleno": {
+  "nom": "Rocoto Relleno",
+  "description": "Large red chilies stuffed with spiced meat, raisins and cheese, then baked. The fiery, indulgent specialty of Arequipa.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Hollow out the rocotos (or large chilies) and blanch to mellow them."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Sauté onion, garlic and ground meat."
+   },
+   {
+    "titre": "Mix in",
+    "detail": "Add raisins, olives, cumin and hard-boiled egg."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Fill the chilies with the meat mixture."
+   },
+   {
+    "titre": "Top",
+    "detail": "Crown each with a slice of cheese."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the cheese turns golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a potato gratin (pastel de papa)."
+   }
+  ]
+ },
+ "pollobrasa": {
+  "nom": "Pollo a la Brasa",
+  "description": "Peruvian chicken marinated in soy sauce, vinegar and spices, roasted to a lacquered skin. Served with fries and green sauce (ají).",
+  "etapes": [
+   {
+    "titre": "Marinade",
+    "detail": "Blend garlic, cumin, paprika, soy sauce and vinegar."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the chicken and marinate for several hours."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200 °C."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Roast the chicken, basting it with the marinade."
+   },
+   {
+    "titre": "Lacquer",
+    "detail": "Raise the heat at the end to lacquer the skin."
+   },
+   {
+    "titre": "Ají",
+    "detail": "Make a green sauce with chili and cilantro."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with fries and the ají sauce."
+   }
+  ]
+ },
+ "secocordero": {
+  "nom": "Seco de Cordero",
+  "description": "Lamb stew braised in a vivid green sauce of cilantro and beer. Tender and fragrant, served with rice and beans.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Brown the lamb pieces, then set aside."
+   },
+   {
+    "titre": "Green sauce",
+    "detail": "Blend a big bunch of cilantro with a little water."
+   },
+   {
+    "titre": "Sofrito",
+    "detail": "Sauté onion, garlic and ají."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Return the meat, then add the green sauce and the beer."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer covered for 1 h until meltingly tender."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add peas and carrot, then brighten with lime."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with white rice and beans."
+   }
+  ]
+ },
+ "acaraje": {
+  "nom": "Acarajé",
+  "description": "Bahian black-eyed pea fritters fried in palm oil, split open and stuffed with shrimp and vatapá. The Afro-Brazilian street food of Salvador.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Soak and peel the black-eyed peas."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend with onion into an airy batter, beating to whip in air."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry spoonfuls in very hot palm oil (dendê)."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the golden fritters."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Prepare dried shrimp, vatapá and caruru."
+   },
+   {
+    "titre": "Split",
+    "detail": "Slice each acarajé open down the middle."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fill with vatapá, shrimp and chili sauce; serve right away."
+   }
+  ]
+ },
+ "farofa": {
+  "nom": "Farofa",
+  "description": "Cassava flour toasted in butter with onion and bacon, crisp and golden. The mandatory Brazilian side for feijoada.",
+  "etapes": [
+   {
+    "titre": "Bacon",
+    "detail": "Crisp the bacon, then set aside."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Soften the onion in the butter until golden."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Scramble an egg in the pan (optional)."
+   },
+   {
+    "titre": "Cassava",
+    "detail": "Rain in the cassava flour (farinha)."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Stir over medium heat until golden and crisp."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, then add the bacon and some parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve alongside feijoada or grilled meats."
+   }
+  ]
+ },
+ "picanha": {
+  "nom": "Picanha",
+  "description": "The king cut of Brazilian churrasco: top sirloin cap grilled with its fat layer, seasoned simply with coarse salt. Juicy and tender.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Keep the fat cap on and lightly score the cut."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Rub generously with coarse salt."
+   },
+   {
+    "titre": "Coals",
+    "detail": "Get a hot bed of coals going."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear fat-side first to render it."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Grill keeping a rosy center (≈ 54 °C)."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the meat rest for 5 min."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice against the grain and serve with farofa and vinaigrette."
+   }
+  ]
+ },
+ "vatapa": {
+  "nom": "Vatapá",
+  "description": "Bahian cream of bread, coconut milk, peanut and palm oil with shrimp. Silky, golden and fragrant, the soul of Bahia.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the stale bread in the coconut milk."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Grind peanuts (and cashews) into a powder."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion, garlic, ginger and tomato."
+   },
+   {
+    "titre": "Shrimp",
+    "detail": "Add the ground dried shrimp."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Stir in the blended bread, peanut powder and coconut milk."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook, stirring with the palm oil, until thick and creamy."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add the fresh shrimp at the end of cooking."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice and acarajé."
+   }
+  ]
+ },
+ "chakhokhbili": {
+  "nom": "Chakhokhbili",
+  "description": "Georgian chicken stew with tomatoes and an avalanche of fresh herbs, with no added fat. Bright, fragrant and ultra-fresh.",
+  "etapes": [
+   {
+    "titre": "Sauté",
+    "detail": "Cook the chicken dry until it releases its juices."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Add plenty of onion and let it soften."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Stir in the crushed tomatoes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 30 min until the sauce thickens."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Add garlic, cilantro, basil and tarragon at the end."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with Georgian spices (khmeli suneli)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with Georgian bread for mopping up the sauce."
+   }
+  ]
+ },
+ "ojakhuri": {
+  "nom": "Ojakhuri",
+  "description": "Georgian \"family-style\" skillet of pork and potatoes pan-fried with garlic and herbs. Rustic, golden and convivial.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the pork with garlic and spices."
+   },
+   {
+    "titre": "Potatoes",
+    "detail": "Pan-fry the potatoes, then set aside."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Sear the pork until golden."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Add the onion and let it brown."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the potatoes and sauté together."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter with cilantro and fresh garlic."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with pickles and bread."
+   }
+  ]
+ },
+ "mtsvadi": {
+  "nom": "Mtsvadi",
+  "description": "Georgian pork skewers grilled over grapevine cuttings, simply marinated with onion. Smoky and juicy, served with tkemali sauce.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the pork into large cubes."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate with onion, vinegar, salt and pepper for a few hours."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the cubes onto skewers, alternating with onion."
+   },
+   {
+    "titre": "Coals",
+    "detail": "Get a hot bed of coals going (ideally grapevine cuttings)."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill, turning, until golden and juicy."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Serve on a bed of raw onion with sumac."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with tkemali sauce (tart plum)."
+   }
+  ]
  }
 };
