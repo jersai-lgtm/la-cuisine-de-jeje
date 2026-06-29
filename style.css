@@ -2603,6 +2603,33 @@ select, input[type="number"] {
   font-size: 10px;
   color: var(--text-3);
 }
+.badge-prog {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text);
+  margin-top: 2px;
+}
+.badge-verrou .badge-prog { color: var(--text-2); }
+.badge-unite {
+  font-size: 9px;
+  color: var(--text-3);
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+.badge-bar {
+  height: 5px;
+  width: 100%;
+  background: rgba(var(--w),.12);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.badge-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--accent,#ff4d88), var(--accent-light,#ff6ba1));
+}
+.badge-debloque .badge-bar > span { background: linear-gradient(90deg, #038141, #85bb2f); }
 
 /* Vide */
 .stats-vide {

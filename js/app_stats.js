@@ -805,46 +805,8 @@ function getCouleurPourScoreNutri(s) {
 
 // Remplit la section "Badges"
 function remplirBadges(s) {
-  const badges = [
-    // === Badges cuisson ===
-    { id: "premier-pas", emoji: "👶", titre: "Premier pas", desc: "1 recette cuisinée", debloque: s.nbRecettesCuisinees >= 1 },
-    { id: "explorer-cuisine", emoji: "🧭", titre: "Explorateur", desc: "10 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 10 },
-    { id: "chef", emoji: "👨‍🍳", titre: "Chef en herbe", desc: "25 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 25 },
-    { id: "master", emoji: "🏆", titre: "Master Chef", desc: "50 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 50 },
-    { id: "chef-etoile", emoji: "🌟", titre: "Chef Étoilé", desc: "100 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 100 },
-    { id: "virtuose", emoji: "🔱", titre: "Virtuose des Fourneaux", desc: "250 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 250 },
-    { id: "legende-culinaire", emoji: "👑", titre: "Légende Culinaire", desc: "500 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 500 },
-    { id: "maitre-supreme", emoji: "⚜️", titre: "Maître Suprême", desc: "750 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 750 },
-    { id: "divinite", emoji: "🐉", titre: "Divinité des Fourneaux", desc: "1000 recettes cuisinées", debloque: s.nbRecettesCuisinees >= 1000 },
-    // === Badges curiosité (recettes vues/explorées) v240 ===
-    { id: "curieux", emoji: "👀", titre: "Curieux", desc: "10 recettes vues", debloque: s.nbRecettesVues >= 10 },
-    { id: "voyageur", emoji: "🗺️", titre: "Voyageur", desc: "50 recettes vues", debloque: s.nbRecettesVues >= 50 },
-    { id: "centurion", emoji: "💯", titre: "Centurion", desc: "100 recettes vues", debloque: s.nbRecettesVues >= 100 },
-    { id: "expert", emoji: "🎓", titre: "Expert", desc: "200 recettes vues", debloque: s.nbRecettesVues >= 200 },
-    { id: "decouvreur", emoji: "🔭", titre: "Découvreur Insatiable", desc: "500 recettes vues", debloque: s.nbRecettesVues >= 500 },
-    { id: "explorateur-cosmique", emoji: "🌌", titre: "Explorateur Cosmique", desc: "750 recettes vues", debloque: s.nbRecettesVues >= 750 },
-    { id: "encyclopedie", emoji: "📚", titre: "Encyclopédie Vivante", desc: "1000 recettes vues", debloque: s.nbRecettesVues >= 1000 },
-    // === Badges streak (v242) ===
-    { id: "enfeu", emoji: "🔥", titre: "En feu", desc: "7 jours d'affilée à cuisiner", debloque: s.streakRecord >= 7 },
-    { id: "inarretable", emoji: "🌋", titre: "Inarrêtable", desc: "30 jours d'affilée à cuisiner", debloque: s.streakRecord >= 30 },
-    // === Badges favoris ===
-    { id: "fan", emoji: "❤️", titre: "Fan", desc: "5 favoris", debloque: s.nbFavoris >= 5 },
-    { id: "collectionneur", emoji: "💎", titre: "Collectionneur", desc: "15 favoris", debloque: s.nbFavoris >= 15 },
-    // === Badges menus ===
-    { id: "planificateur", emoji: "📅", titre: "Planificateur", desc: "5 menus générés", debloque: s.nbMenusGeneres >= 5 },
-    { id: "organisateur", emoji: "🗂️", titre: "Organisateur", desc: "20 menus générés", debloque: s.nbMenusGeneres >= 20 },
-    { id: "chef-orchestre", emoji: "🎼", titre: "Chef d'Orchestre", desc: "50 menus générés", debloque: s.nbMenusGeneres >= 50 },
-    { id: "maitre-planif", emoji: "🎯", titre: "Maître Planificateur", desc: "100 menus générés", debloque: s.nbMenusGeneres >= 100 },
-    { id: "architecte", emoji: "🏛️", titre: "Grand Architecte des Menus", desc: "500 menus générés", debloque: s.nbMenusGeneres >= 500 },
-    { id: "maestro-menus", emoji: "🎩", titre: "Maestro des Menus", desc: "750 menus générés", debloque: s.nbMenusGeneres >= 750 },
-    { id: "ordonnateur", emoji: "♾️", titre: "Ordonnateur Suprême", desc: "1000 menus générés", debloque: s.nbMenusGeneres >= 1000 },
-    // === Badges spéciaux ===
-    { id: "fidele", emoji: "🥇", titre: "Fidèle", desc: "Une recette refaite 3 fois", debloque: s.recettePlusRefaite && s.recettePlusRefaite.n >= 3 },
-    { id: "globetrotter", emoji: "🌍", titre: "Globe-trotter", desc: "5 pays différents", debloque: false }, // calculé ci-dessous
-  ];
-  
-  // Calcul globetrotter à partir de userProfile
   const user = window.userProfile || {};
+  // Recettes "vues/goûtées" : récents + favoris + plats des menus générés
   const recettesVues = new Set([...(window._recentsVus || []), ...(user.favoris || [])]);
   (user.historiqueMenus || []).forEach(menu => {
     (menu.menus || menu.menu || []).forEach(plat => {
@@ -853,20 +815,9 @@ function remplirBadges(s) {
     });
   });
   const paysSet = new Set();
-  recettesVues.forEach(cle => {
-    const r = recettes[cle];
-    if (r?.pays) paysSet.add(r.pays);
-  });
-  const ggBadge = badges.find(b => b.id === "globetrotter");
-  if (ggBadge) ggBadge.debloque = paysSet.size >= 5;
-  // Paliers "pays goûtés" supplémentaires — la carte du monde se débloque
-  badges.push(
-    { id: "grand-voyageur", emoji: "✈️", titre: "Grand Voyageur", desc: "10 pays différents", debloque: paysSet.size >= 10 },
-    { id: "tour-du-monde", emoji: "🧳", titre: "Tour du Monde", desc: "20 pays différents", debloque: paysSet.size >= 20 },
-    { id: "ambassadeur", emoji: "🗺️", titre: "Ambassadeur des Saveurs", desc: "30 pays différents", debloque: paysSet.size >= 30 }
-  );
+  recettesVues.forEach(cle => { const r = recettes[cle]; if (r?.pays) paysSet.add(r.pays); });
 
-  // === Nouvelles familles — calculées sur les recettes réellement CUISINÉES ===
+  // Métriques sur les recettes réellement CUISINÉES
   const cuisinees = (user.recettesCuisinees || []).map(c => c && c.cle).filter(Boolean);
   const catSet = new Set(), paysCuitSet = new Set(), saisonSet = new Set();
   let nbNutriA = 0, nbEco = 0;
@@ -889,34 +840,74 @@ function remplirBadges(s) {
       try { const pc = (typeof calculerPrixCaloriesRecette === "function") && calculerPrixCaloriesRecette(ligne); if (pc && pc.prix != null && (pc.prix / (r.base || 4)) <= 2) nbEco++; } catch (e) {}
     }
   });
-  const quatreSaisons = ["printemps", "ete", "automne", "hiver"].every(sa => saisonSet.has(sa));
-  badges.push(
-    // 🥗 Santé / Nutri-Score
-    { id: "manger-sain",      emoji: "🥗", titre: "Manger Sain",            desc: "10 recettes Nutri A cuisinées",  debloque: nbNutriA >= 10 },
-    { id: "equilibriste",     emoji: "⚖️", titre: "Équilibriste",           desc: "30 recettes Nutri A cuisinées",  debloque: nbNutriA >= 30 },
-    { id: "maitre-equilibre", emoji: "🧘", titre: "Maître de l'Équilibre",  desc: "60 recettes Nutri A cuisinées",  debloque: nbNutriA >= 60 },
-    // 🎨 Diversité des catégories
-    { id: "touche-a-tout",    emoji: "🎨", titre: "Touche-à-tout",          desc: "5 catégories cuisinées",         debloque: catSet.size >= 5 },
-    { id: "polyvalent",       emoji: "🧩", titre: "Polyvalent",             desc: "10 catégories cuisinées",        debloque: catSet.size >= 10 },
-    { id: "chef-complet",     emoji: "🍱", titre: "Chef Complet",           desc: "14 catégories cuisinées",        debloque: catSet.size >= 14 },
-    // 🍂 Saisons
-    { id: "quatre-saisons",   emoji: "🍂", titre: "Quatre Saisons",         desc: "Une recette de chaque saison cuisinée", debloque: quatreSaisons },
-    // 🌎 Pays cuisinés (≠ simplement goûtés/vus)
-    { id: "cuistot-voyageur", emoji: "🧑‍🍳", titre: "Cuistot Voyageur",      desc: "5 pays cuisinés aux fourneaux",  debloque: paysCuitSet.size >= 5 },
-    { id: "chef-international",emoji: "🌐", titre: "Chef International",      desc: "10 pays cuisinés",               debloque: paysCuitSet.size >= 10 },
-    { id: "chef-planetaire",  emoji: "🪐", titre: "Chef Planétaire",        desc: "20 pays cuisinés",               debloque: paysCuitSet.size >= 20 },
-    // 💰 Économe
-    { id: "chef-malin",       emoji: "💰", titre: "Chef Malin",             desc: "10 recettes éco (≤2€/pers) cuisinées", debloque: nbEco >= 10 }
-  );
 
-  const html = badges.map(b => `
+  const cuis = s.nbRecettesCuisinees || 0, vues = s.nbRecettesVues || 0, streak = s.streakRecord || 0;
+  const favs = s.nbFavoris || 0, menus = s.nbMenusGeneres || 0;
+  const refaite = (s.recettePlusRefaite && s.recettePlusRefaite.n) || 0;
+
+  // [id, emoji, titre, unité, valeur actuelle, cible]
+  const defs = [
+    ["premier-pas","👶","Premier pas","recettes cuisinées",cuis,1],
+    ["explorer-cuisine","🧭","Explorateur","recettes cuisinées",cuis,10],
+    ["chef","👨‍🍳","Chef en herbe","recettes cuisinées",cuis,25],
+    ["master","🏆","Master Chef","recettes cuisinées",cuis,50],
+    ["chef-etoile","🌟","Chef Étoilé","recettes cuisinées",cuis,100],
+    ["virtuose","🔱","Virtuose des Fourneaux","recettes cuisinées",cuis,250],
+    ["legende-culinaire","👑","Légende Culinaire","recettes cuisinées",cuis,500],
+    ["maitre-supreme","⚜️","Maître Suprême","recettes cuisinées",cuis,750],
+    ["divinite","🐉","Divinité des Fourneaux","recettes cuisinées",cuis,1000],
+    ["curieux","👀","Curieux","recettes vues",vues,10],
+    ["voyageur","🗺️","Voyageur","recettes vues",vues,50],
+    ["centurion","💯","Centurion","recettes vues",vues,100],
+    ["expert","🎓","Expert","recettes vues",vues,200],
+    ["decouvreur","🔭","Découvreur Insatiable","recettes vues",vues,500],
+    ["explorateur-cosmique","🌌","Explorateur Cosmique","recettes vues",vues,750],
+    ["encyclopedie","📚","Encyclopédie Vivante","recettes vues",vues,1000],
+    ["enfeu","🔥","En feu","jours d'affilée",streak,7],
+    ["inarretable","🌋","Inarrêtable","jours d'affilée",streak,30],
+    ["fan","❤️","Fan","favoris",favs,5],
+    ["collectionneur","💎","Collectionneur","favoris",favs,15],
+    ["planificateur","📅","Planificateur","menus générés",menus,5],
+    ["organisateur","🗂️","Organisateur","menus générés",menus,20],
+    ["chef-orchestre","🎼","Chef d'Orchestre","menus générés",menus,50],
+    ["maitre-planif","🎯","Maître Planificateur","menus générés",menus,100],
+    ["architecte","🏛️","Grand Architecte des Menus","menus générés",menus,500],
+    ["maestro-menus","🎩","Maestro des Menus","menus générés",menus,750],
+    ["ordonnateur","♾️","Ordonnateur Suprême","menus générés",menus,1000],
+    ["fidele","🥇","Fidèle","fois la même recette",refaite,3],
+    ["globetrotter","🌍","Globe-trotter","pays goûtés",paysSet.size,5],
+    ["grand-voyageur","✈️","Grand Voyageur","pays goûtés",paysSet.size,10],
+    ["tour-du-monde","🧳","Tour du Monde","pays goûtés",paysSet.size,20],
+    ["ambassadeur","🗺️","Ambassadeur des Saveurs","pays goûtés",paysSet.size,30],
+    ["manger-sain","🥗","Manger Sain","recettes Nutri A cuisinées",nbNutriA,10],
+    ["equilibriste","⚖️","Équilibriste","recettes Nutri A cuisinées",nbNutriA,30],
+    ["maitre-equilibre","🧘","Maître de l'Équilibre","recettes Nutri A cuisinées",nbNutriA,60],
+    ["touche-a-tout","🎨","Touche-à-tout","catégories cuisinées",catSet.size,5],
+    ["polyvalent","🧩","Polyvalent","catégories cuisinées",catSet.size,10],
+    ["chef-complet","🍱","Chef Complet","catégories cuisinées",catSet.size,14],
+    ["quatre-saisons","🍂","Quatre Saisons","saisons cuisinées",saisonSet.size,4],
+    ["cuistot-voyageur","🧑‍🍳","Cuistot Voyageur","pays cuisinés",paysCuitSet.size,5],
+    ["chef-international","🌐","Chef International","pays cuisinés",paysCuitSet.size,10],
+    ["chef-planetaire","🪐","Chef Planétaire","pays cuisinés",paysCuitSet.size,20],
+    ["chef-malin","💰","Chef Malin","recettes éco ≤2€/pers",nbEco,10],
+  ];
+  const badges = defs.map(([id, emoji, titre, unite, val, cible]) => ({
+    id, emoji, titre, unite, val: val || 0, cible, debloque: (val || 0) >= cible,
+  }));
+
+  const html = badges.map(b => {
+    const aff = Math.min(b.val, b.cible);
+    const pct = b.cible ? Math.min(100, Math.round((b.val / b.cible) * 100)) : 0;
+    return `
     <div class="badge-card ${b.debloque ? 'badge-debloque' : 'badge-verrou'}">
       <div class="badge-emoji">${b.debloque ? b.emoji : "🔒"}</div>
       <div class="badge-titre">${b.titre}</div>
-      <div class="badge-desc">${b.desc}</div>
-    </div>
-  `).join("");
-  
+      <div class="badge-prog">${aff} / ${b.cible}</div>
+      <div class="badge-unite">${b.unite}</div>
+      <div class="badge-bar"><span style="width:${pct}%"></span></div>
+    </div>`;
+  }).join("");
+
   const debloques = badges.filter(b => b.debloque).length;
   document.getElementById("stats-badges").innerHTML = `
     <p class="stats-badges-progress">${debloques} / ${badges.length} badges débloqués</p>
