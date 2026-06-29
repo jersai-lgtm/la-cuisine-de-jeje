@@ -29661,36 +29661,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "boeufstroganoff": {
-  "nom": "Beef Stroganoff",
-  "description": "Sliced beef and mushrooms in a creamy mustard and paprika sauce. A classic Russian dish served with rice or pasta.",
-  "etapes": [
-   {
-    "titre": "Slice",
-    "detail": "Cut the beef into thin strips and slice the mushrooms and onion."
-   },
-   {
-    "titre": "Sear the beef",
-    "detail": "Quickly sear the beef strips over high heat in a little butter. Set aside so they remain pink."
-   },
-   {
-    "titre": "Mushrooms",
-    "detail": "Sauté the onion, then the mushrooms until the liquid evaporates."
-   },
-   {
-    "titre": "Sauce",
-    "detail": "Add the mustard, paprika, and cream. Let thicken slowly."
-   },
-   {
-    "titre": "Combine",
-    "detail": "Return the beef and its juices, warm through for 1 to 2 minutes without boiling."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve immediately with rice. CHEF'S TIP: never let the sauce boil after adding the cream, or it may break; keep the heat low."
-   }
-  ]
- },
  "kebabmaison": {
   "nom": "Homemade Kebab",
   "description": "The homemade kebab sandwich: marinated and grilled chicken, fresh vegetables and white sauce in pita bread. Much better and healthier than takeout.",
@@ -45912,6 +45882,1052 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Serve right away with injera and fresh cheese (ayib)."
+   }
+  ]
+ },
+ "leberkase": {
+  "nom": "Leberkäse",
+  "description": "A Bavarian meatloaf, finely blended and baked in a terrine, then sliced and pan-fried. Served in a roll with mild mustard, it's the classic Munich lunch.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the meats and onion into pieces, keeping everything well chilled."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the meats, onion, egg, milk and spices to a smooth paste."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add nutmeg, marjoram, salt and pepper."
+   },
+   {
+    "titre": "Mold",
+    "detail": "Pack into a terrine and smooth the top, scoring a crosshatch pattern."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180 °C for 45 min until the crust is golden."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Let cool slightly and cut into thick slices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pan-fry the slices and serve in a roll with mustard."
+   }
+  ]
+ },
+ "koenigsberger": {
+  "nom": "Königsberger Klopse",
+  "description": "Meatballs poached in a creamy white sauce with capers and lemon. Delicate and tangy, a great classic of East German cooking.",
+  "etapes": [
+   {
+    "titre": "Meatballs",
+    "detail": "Mix the meat, onion, egg and soaked bread, then shape into meatballs."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the meatballs in a gently simmering broth, then set aside."
+   },
+   {
+    "titre": "Roux",
+    "detail": "Make a butter-and-flour roux."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Whisk in broth and cream until you have a smooth sauce."
+   },
+   {
+    "titre": "Capers",
+    "detail": "Add capers, lemon juice and a pinch of sugar."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the meatballs and warm through without boiling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice or steamed potatoes."
+   }
+  ]
+ },
+ "flammkuchen": {
+  "nom": "Flammkuchen",
+  "description": "A thin, crisp crust topped with cream, onions and bacon, baked in a very hot oven. The light, addictive Alsatian-German \"tarte flambée.\"",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a thin, yeast-free dough (flour, water, oil, salt)."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll out very thin onto a baking sheet."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Spread the cream (mixed with fromage blanc) all the way to the edges."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter on the sliced onions and bacon."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to maximum (250 °C)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake 10-12 min until the edges brown."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into pieces and serve at once, nice and crisp."
+   }
+  ]
+ },
+ "eintopf": {
+  "nom": "Eintopf",
+  "description": "A German \"all-in-one\" stew: meat, potatoes and vegetables simmered in a single pot. Budget-friendly, hearty and never quite the same twice.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Brown the cubed pork with the onion."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Cover with water or broth and skim."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the carrots and potatoes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 30 min over low heat."
+   },
+   {
+    "titre": "Cabbage",
+    "detail": "Add the shredded cabbage and continue 15 min."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper and add bay leaf and parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot in a bowl with bread."
+   }
+  ]
+ },
+ "kotletschabowy": {
+  "nom": "Kotlet Schabowy",
+  "description": "A breadcrumbed pork cutlet, fried golden and crisp. The Polish Sunday lunch, served with potatoes and cabbage.",
+  "etapes": [
+   {
+    "titre": "Flatten",
+    "detail": "Pound the pork cutlets thin, then season with salt and pepper."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat in flour, beaten egg, then breadcrumbs."
+   },
+   {
+    "titre": "Press",
+    "detail": "Press gently so the coating sticks."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil in a skillet."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry 3-4 min per side until golden and crisp."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with potatoes and braised cabbage."
+   }
+  ]
+ },
+ "sernik": {
+  "nom": "Sernik",
+  "description": "The Polish cheesecake made with farmer's cheese (twaróg), dense and lightly sweetened with a hint of lemon. More rustic and tender than its American cousin.",
+  "etapes": [
+   {
+    "titre": "Blend",
+    "detail": "Blend the farmer's cheese until perfectly smooth."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the eggs and sugar pale, then add lemon zest."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Fold in the cheese, melted butter and a little flour."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour onto a pastry base (or straight into the pan)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 160 °C for 1 hr in a water bath to prevent cracks."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let cool in the turned-off oven, then refrigerate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chilled, glazed if you like."
+   }
+  ]
+ },
+ "makowiec": {
+  "nom": "Makowiec",
+  "description": "A rolled sweet bread filled with a thick, sweet poppy-seed paste. The Polish holiday cake, sliced into golden-and-black spirals.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead an enriched yeast dough and let it rise."
+   },
+   {
+    "titre": "Poppy seed",
+    "detail": "Scald and grind the poppy seeds with sugar, honey and butter."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough into a rectangle."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the poppy-seed filling to the edges."
+   },
+   {
+    "titre": "Roll up",
+    "detail": "Roll up tightly into a log."
+   },
+   {
+    "titre": "Proof",
+    "detail": "Let rise again, then brush with egg wash."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180 °C for 35 min and glaze while still warm."
+   }
+  ]
+ },
+ "paczki": {
+  "nom": "Pączki",
+  "description": "Soft Polish doughnuts filled with jam (rose or plum), fried and rolled in sugar. The Fat Tuesday treat.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a rich yeast dough (eggs, butter, a splash of alcohol)."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let double for 1 hr."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape into balls and let rise again."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry at 175 °C until golden, with a pale ring around the middle."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pipe in the jam with a pastry bag."
+   },
+   {
+    "titre": "Sugar",
+    "detail": "Roll in sugar or glaze."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Best enjoyed the same day."
+   }
+  ]
+ },
+ "rosol": {
+  "nom": "Rosół",
+  "description": "A golden, crystal-clear chicken broth with vegetables and fine noodles. The Polish Sunday pick-me-up, served before the main course.",
+  "etapes": [
+   {
+    "titre": "Start",
+    "detail": "Put the chicken in cold water and bring to a gentle simmer."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Skim carefully for a clear broth."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Char an onion dry and add it with carrot and celery."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer gently for 1 hr without boiling."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Cook the noodles separately and divide them among the bowls."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Strain the broth and pour it over the noodles."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with parsley and serve scalding hot."
+   }
+  ]
+ },
+ "porkolt": {
+  "nom": "Pörkölt",
+  "description": "A Hungarian meat stew with melted onions and paprika, thicker and meatier than goulash. Deep red, best served with nokedli.",
+  "etapes": [
+   {
+    "titre": "Onions",
+    "detail": "Melt a generous amount of onion in the lard."
+   },
+   {
+    "titre": "Paprika",
+    "detail": "Off the heat, add the paprika (it must not burn)."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Add the cubed meat and coat it well."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add pepper and tomato with a little water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer covered for 1 hr 15 min until tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover and reduce to a thick, glossy sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with nokedli or potatoes."
+   }
+  ]
+ },
+ "dobostorta": {
+  "nom": "Dobos Torta",
+  "description": "A layered Hungarian cake: thin sponge layers and chocolate buttercream, crowned with a disc of crackling caramel. Spectacular and refined.",
+  "etapes": [
+   {
+    "titre": "Sponge",
+    "detail": "Whip eggs and sugar, then fold in the flour."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake 5-6 thin sponge layers separately."
+   },
+   {
+    "titre": "Buttercream",
+    "detail": "Make a chocolate buttercream."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Stack the sponge layers, spreading buttercream between each."
+   },
+   {
+    "titre": "Caramel",
+    "detail": "Pour caramel over one sponge layer and score the portions."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Set the caramelized disc on top."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate, then smooth the sides with buttercream."
+   }
+  ]
+ },
+ "palacsinta": {
+  "nom": "Palacsinta",
+  "description": "Thin Hungarian crepes rolled around apricot jam or sweetened cheese, sometimes draped in chocolate. A childhood dessert.",
+  "etapes": [
+   {
+    "titre": "Batter",
+    "detail": "Whisk flour, eggs, milk and sparkling water into a thin batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 20 min."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook thin, golden crepes."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread with apricot jam or sweetened cheese."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll each crepe up tightly."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Drizzle with melted chocolate (Gundel style)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with powdered sugar and serve warm."
+   }
+  ]
+ },
+ "fozelek": {
+  "nom": "Főzelék",
+  "description": "A cream-bound vegetable puree-stew, somewhere between soup and main dish. Comforting and budget-friendly, the quintessential Hungarian vegetarian lunch.",
+  "etapes": [
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the onion in a little butter."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the peas (or other vegetable) and a little water."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook until tender."
+   },
+   {
+    "titre": "Binding",
+    "detail": "Stir together cream, flour and paprika, then pour into the pot."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Cook, stirring, until thickened."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper and a touch of vinegar or sugar."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a fried egg or a sausage."
+   }
+  ]
+ },
+ "korozott": {
+  "nom": "Körözött",
+  "description": "A Hungarian spread of fresh cheese whipped with butter, paprika and caraway, scattered with onion. Spread it on fresh bread.",
+  "etapes": [
+   {
+    "titre": "Mash",
+    "detail": "Mash the fresh cheese with a fork."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Beat the soft butter until creamy."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Work in paprika, caraway and salt."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the cheese, butter and finely chopped onion."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill 1 h to let the flavors develop."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve as a spread with bread and radishes."
+   }
+  ]
+ },
+ "stoemp": {
+  "nom": "Stoemp",
+  "description": "A Brussels mash of potatoes and vegetables (carrot, leek), lifted with bacon. Rustic, served with a sausage.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Boil the potatoes and carrots in salted water."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Pan-fry the bacon and onion in butter."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Roughly mash the vegetables with the butter."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Stir in the bacon, onion and a little milk."
+   },
+   {
+    "titre": "Season",
+    "detail": "Nutmeg, salt, pepper and parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a sausage or blood pudding."
+   }
+  ]
+ },
+ "moulesfrites": {
+  "nom": "Moules-Frites",
+  "description": "Mussels steamed in white wine and celery, served with crisp homemade fries. The quintessential Belgian national dish.",
+  "etapes": [
+   {
+    "titre": "Clean",
+    "detail": "Scrub and rinse the mussels well, discarding any that are open."
+   },
+   {
+    "titre": "Fries",
+    "detail": "Cut the potatoes and fry them in two stages."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Sweat the onion and celery in butter in a large pot."
+   },
+   {
+    "titre": "Wine",
+    "detail": "Deglaze with white wine."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the mussels, cover and shake 5-6 min until they open."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter with parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the mussels in their broth with the fries."
+   }
+  ]
+ },
+ "voulauvent": {
+  "nom": "Vol-au-Vent",
+  "description": "A puff-pastry shell filled with a creamy chicken, mushroom and meatball velouté. The great Belgian Sunday classic, rich and generous.",
+  "etapes": [
+   {
+    "titre": "Shells",
+    "detail": "Bake the puff-pastry shells until golden."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the chicken in stock, then shred it."
+   },
+   {
+    "titre": "Mushrooms",
+    "detail": "Sweat the mushrooms."
+   },
+   {
+    "titre": "Velouté",
+    "detail": "Make a roux, then add stock and cream."
+   },
+   {
+    "titre": "Meatballs",
+    "detail": "Add small poached meatballs."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir the chicken and mushrooms into the sauce, add lemon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fill the shells and serve with fries."
+   }
+  ]
+ },
+ "filetamericain": {
+  "nom": "Filet Américain",
+  "description": "Finely chopped raw beef bound with a mayonnaise-style sauce sharpened with capers, gherkins and onion. The Belgian take on steak tartare, served with fries.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Chop very fresh beef by hand with a knife."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Build a mayonnaise with egg yolk, mustard and oil."
+   },
+   {
+    "titre": "Condiments",
+    "detail": "Chop the capers, gherkins and onion."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Bind the beef with the sauce and condiments."
+   },
+   {
+    "titre": "Season",
+    "detail": "Tabasco, Worcestershire, salt and pepper."
+   },
+   {
+    "titre": "Keep",
+    "detail": "Keep well chilled until serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away with fries and a salad."
+   }
+  ]
+ },
+ "arrozmarisco": {
+  "nom": "Arroz de Marisco",
+  "description": "A Portuguese seafood rice, juicy and slightly soupy, scented with tomato and cilantro. The treasure of the Atlantic coast.",
+  "etapes": [
+   {
+    "titre": "Stock",
+    "detail": "Make a stock with the shrimp shells."
+   },
+   {
+    "titre": "Sofrito",
+    "detail": "Cook down onion, garlic and tomato (refogado)."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Toast the rice in the sofrito."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in hot stock and cook, stirring little."
+   },
+   {
+    "titre": "Seafood",
+    "detail": "Add the mussels and shrimp near the end of cooking."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter with cilantro, keeping the rice \"malandrinho\" (juicy)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately in the pot."
+   }
+  ]
+ },
+ "pasteisbacalhau": {
+  "nom": "Pastéis de Bacalhau",
+  "description": "Salt cod and potato croquettes, fried into golden quenelles. The essential Portuguese snack, crisp outside, soft within.",
+  "etapes": [
+   {
+    "titre": "Desalt",
+    "detail": "Soak the salt cod 24 h, changing the water, then flake it."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Boil and mash the potatoes."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the cod, mash, eggs, onion and parsley."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form quenelles using two spoons."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 180 °C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry until golden and puffed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot or cold, with a squeeze of lemon."
+   }
+  ]
+ },
+ "cataplana": {
+  "nom": "Cataplana",
+  "description": "An Algarve stew cooked in its copper pot, blending fish, seafood and pork in a tomato-pepper sauce. Maritime and generous.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Cook the pork (or chorizo), onion and garlic."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add tomato, pepper and a little white wine."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Lay the fish over the sauce."
+   },
+   {
+    "titre": "Shellfish",
+    "detail": "Add the mussels and clams on top."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Seal the cataplana (or pot) tightly shut."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Steam 12-15 min until the shellfish open."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with cilantro and serve straight from the pot."
+   }
+  ]
+ },
+ "caldeirada": {
+  "nom": "Caldeirada",
+  "description": "A Portuguese fishermen's stew, layered with fish, potatoes, tomato and onion all simmered together. Simple, fragrant and full of the sea.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the fish, potatoes, tomato, onion and bell pepper."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Arrange in layers in the pot (vegetables first, then fish)."
+   },
+   {
+    "titre": "Drizzle",
+    "detail": "Drizzle with olive oil and a splash of white wine."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add garlic, bay leaf and cilantro."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and cook gently over low heat for 30 min without stirring."
+   },
+   {
+    "titre": "Check",
+    "detail": "Shake the pot rather than stirring."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with crusty bread for soaking up the juices."
+   }
+  ]
+ },
+ "gravlax": {
+  "nom": "Gravlax",
+  "description": "Raw salmon cured for 48 hours in salt, sugar and dill, then thinly sliced and served with a mustard-dill sauce. A chic Nordic starter.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Choose a very fresh, boneless salmon fillet."
+   },
+   {
+    "titre": "Cure mix",
+    "detail": "Combine coarse salt, sugar and cracked pepper."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Cover the salmon with the cure mix and chopped dill."
+   },
+   {
+    "titre": "Cure",
+    "detail": "Wrap, set a weight on top and refrigerate 48 h, flipping it over."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse, pat dry and slice thinly on the bias."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Make a mustard-honey-dill sauce (hovmästarsås)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rye bread and the sauce."
+   }
+  ]
+ },
+ "pyttipanna": {
+  "nom": "Pytt i Panna",
+  "description": "A Swedish hash of diced potatoes, meat and onion, crowned with a fried egg and pickled beets. The king of using up leftovers.",
+  "etapes": [
+   {
+    "titre": "Dice",
+    "detail": "Cut potatoes, meat and onion into small, even cubes."
+   },
+   {
+    "titre": "Potatoes",
+    "detail": "Brown the potatoes in butter, then set aside."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Cook the onion until golden."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Add the meat and brown it."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the potatoes and sauté everything together."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Fry an egg sunny-side up."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve topped with the egg, alongside pickled beets."
+   }
+  ]
+ },
+ "toastskagen": {
+  "nom": "Toast Skagen",
+  "description": "Swedish toast piled with a creamy shrimp salad brightened with dill and lemon. Elegant, fresh and a festive Scandinavian starter.",
+  "etapes": [
+   {
+    "titre": "Shrimp",
+    "detail": "Drain small Nordic shrimp."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Mix mayonnaise, cream and chopped dill."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add lemon zest and juice, salt and pepper."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Gently fold in the shrimp."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Brown slices of bread in butter."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pile the toasts generously with the shrimp salad."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with dill and fish roe, and serve right away."
+   }
+  ]
+ },
+ "artsoppa": {
+  "nom": "Ärtsoppa",
+  "description": "Yellow split pea soup with pork, seasoned with mustard and marjoram. A Swedish Thursday tradition, followed by pancakes.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Rinse the yellow split peas (soak if needed)."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Cook the pork in water to flavor the broth."
+   },
+   {
+    "titre": "Peas",
+    "detail": "Add the peas and cook until they break down."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add onion, carrot, thyme and marjoram."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 1 h until the soup is creamy."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Slice the pork and return it to the soup."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with strong mustard, followed by pancakes."
+   }
+  ]
+ },
+ "prinsesstarta": {
+  "nom": "Prinsesstårta",
+  "description": "A domed Swedish cake of sponge, pastry cream and whipped cream, blanketed in green marzipan. Elegant and iconic for special occasions.",
+  "etapes": [
+   {
+    "titre": "Sponge",
+    "detail": "Whip up a light sponge, bake and slice into disks."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Make a vanilla pastry cream."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the heavy cream."
+   },
+   {
+    "titre": "Marzipan",
+    "detail": "Knead almond paste and tint it green."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Layer sponge, jam, pastry cream, then a dome of whipped cream."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Roll the marzipan thinly over the whole dome."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Dust with confectioners' sugar and top with a rose."
+   }
+  ]
+ },
+ "pirojki": {
+  "nom": "Pirozhki",
+  "description": "Little Russian brioche buns filled with meat and onion, baked golden (or fried). The warm snack of Trans-Siberian train journeys.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a soft yeasted dough and let it rise."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Cook ground meat and onion, then season."
+   },
+   {
+    "titre": "Divide",
+    "detail": "Divide the dough and flatten into disks."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spoon in the filling and seal into closed pockets."
+   },
+   {
+    "titre": "Proof",
+    "detail": "Let rise again for 20 min."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with beaten egg."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 190 °C until golden (or fry)."
+   }
+  ]
+ },
+ "vatrouchka": {
+  "nom": "Vatrushka",
+  "description": "A round Russian brioche with a central well filled with sweetened fresh cheese. Soft and comforting, the quintessential Slavic afternoon treat.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a yeasted brioche dough and let it rise."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form balls and press a well into the center of each."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix fresh cheese, egg, sugar and vanilla."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spoon the filling into each well."
+   },
+   {
+    "titre": "Proof",
+    "detail": "Let rise again for 20 min."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush the edges with egg."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180 °C for 20 min until golden."
+   }
+  ]
+ },
+ "okrochka": {
+  "nom": "Okroshka",
+  "description": "A cold Russian summer soup: crunchy vegetables, egg and potato in a dill-flecked kefir (or kvass) broth. Refreshing and lively.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Cook the potatoes and hard-boil the eggs, then cool."
+   },
+   {
+    "titre": "Dice",
+    "detail": "Cut cucumber, potatoes, eggs and radishes into cubes."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Chop dill and green onion."
+   },
+   {
+    "titre": "Base",
+    "detail": "Thin the kefir (or yogurt) with a little cold water."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the vegetables and base, then season with salt."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate well for 1 h."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve ice-cold, optionally with ham."
+   }
+  ]
+ },
+ "golubtsy": {
+  "nom": "Golubtsy (Stuffed Cabbage Rolls)",
+  "description": "Cabbage leaves stuffed with meat and rice, simmered in a tomato-cream sauce. The hearty, comforting Slavic family dish.",
+  "etapes": [
+   {
+    "titre": "Leaves",
+    "detail": "Blanch the cabbage leaves to soften them."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix minced meat, half-cooked rice and sautéed onion."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Fill each leaf and roll, tucking in the sides."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Pack the rolls tightly in a pot."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Cover with a cream-enriched tomato sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 1 h over low heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve napped with sauce and sour cream."
    }
   ]
  }
