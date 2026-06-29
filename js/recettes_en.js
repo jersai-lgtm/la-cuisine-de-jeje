@@ -48608,5 +48608,549 @@ window.RECETTES_EN = {
     "detail": "Serve drizzled with ghee, alongside some yogurt."
    }
   ]
+ },
+ "jjajangmyeon": {
+  "nom": "Jjajangmyeon",
+  "description": "Korean noodles smothered in a glossy black sauce of fermented soybean paste, pork, and vegetables. Comforting, lightly sweet, and wildly popular.",
+  "etapes": [
+   {
+    "titre": "Sauce",
+    "detail": "Fry the black soybean paste (chunjang) in oil."
+   },
+   {
+    "titre": "Pork",
+    "detail": "Sear the pork cut into small cubes."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add diced onion, potato, and zucchini."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Stir in the paste, add liquid, and thicken with cornstarch."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Cook the noodles until firm, then drain."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the noodles and top with the black sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with julienned cucumber."
+   }
+  ]
+ },
+ "budaejjigae": {
+  "nom": "Budae Jjigae",
+  "description": "A Korean stew born in the postwar era: kimchi, sausages, instant noodles, and a spicy gochujang broth. Hearty, comforting, and meant for sharing.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Arrange the kimchi, sausages, and bacon in the pot."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Pour in a broth seasoned with gochujang."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add onion, scallion, and mushrooms."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook over high heat for a few minutes."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Drop in the instant noodles near the end of cooking."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Lay a slice of melting cheese on top (optional)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve bubbling hot, in the center of the table."
+   }
+  ]
+ },
+ "yakisoba": {
+  "nom": "Yakisoba",
+  "description": "Japanese noodles stir-fried with pork and cabbage, glazed in a sweet-savory sauce. The classic festival-stand dish, fast and full of flavor.",
+  "etapes": [
+   {
+    "titre": "Noodles",
+    "detail": "Loosen the noodles in hot water, then drain."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Sear the thinly sliced pork in the wok."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add cabbage, carrot, and onion."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Toss the noodles into the blazing-hot wok."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Coat with yakisoba sauce (soy, Worcestershire, sugar)."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Stir-fry over high heat to coat everything well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with aonori seaweed and red pickled ginger."
+   }
+  ]
+ },
+ "omurice": {
+  "nom": "Omurice",
+  "description": "Ketchup-and-chicken fried rice wrapped in a soft, runny omelet. The ultimate Japanese comfort food, cheerful and nostalgic.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Stir-fry the rice with chicken and onion."
+   },
+   {
+    "titre": "Ketchup",
+    "detail": "Season with ketchup and mold into a dome."
+   },
+   {
+    "titre": "Omelet",
+    "detail": "Beat the eggs with a little milk."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook an omelet just set, runny in the center."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Place the rice inside and fold the omelet over it."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll into a smooth quenelle on the plate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Draw a line of ketchup across the top and serve."
+   }
+  ]
+ },
+ "hayashi": {
+  "nom": "Hayashi Rice",
+  "description": "Thinly sliced beef and onions simmered in a silky brown sauce of red wine and tomato, served over rice. The mellow cousin of Japanese curry.",
+  "etapes": [
+   {
+    "titre": "Beef",
+    "detail": "Sear the thin slices of beef."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Cook the onions down until golden."
+   },
+   {
+    "titre": "Mushrooms",
+    "detail": "Add the sliced mushrooms."
+   },
+   {
+    "titre": "Liquid",
+    "detail": "Dust with flour, then add red wine, broth, and tomato."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook until the sauce coats the spoon (demi-glace style)."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Serve over white rice."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add a drizzle of cream."
+   }
+  ]
+ },
+ "roujiamo": {
+  "nom": "Roujiamo",
+  "description": "The \"Chinese hamburger\": meltingly tender spiced braised pork tucked into a crisp homemade bun. Ancient street food from Shaanxi.",
+  "etapes": [
+   {
+    "titre": "Braise",
+    "detail": "Slowly simmer the pork (star anise, cinnamon, soy)."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Chop the tender meat with a little of its juices."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Knead a dough and shape the little buns (mo)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Brown the buns in a pan, then finish by steaming."
+   },
+   {
+    "titre": "Open",
+    "detail": "Split each bun into a pocket."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Stuff with pork and cilantro."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with the juices on the side."
+   }
+  ]
+ },
+ "hargow": {
+  "nom": "Har Gow",
+  "description": "Cantonese steamed dumplings with translucent skins, filled with crunchy shrimp. The delicate jewel of dim sum.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Chop the shrimp and season (ginger, sesame, cornstarch)."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Scald the wheat starch for a translucent dough."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll out very thin disks."
+   },
+   {
+    "titre": "Pleat",
+    "detail": "Form finely pleated little parcels."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 6-8 min."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Make a soy-vinegar dipping sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away, skins translucent."
+   }
+  ]
+ },
+ "caolau": {
+  "nom": "Cao Lau",
+  "description": "A Hoi An specialty: thick noodles, lacquered pork, fresh herbs, and crunchy croutons, barely moistened with broth. A one-of-a-kind texture.",
+  "etapes": [
+   {
+    "titre": "Pork",
+    "detail": "Marinate and roast the pork (char siu), then slice."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Prepare a short, fragrant broth."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Cook the thick Hoi An noodles."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Noodles with just a little broth in the bottom."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Add pork, herbs, and bean sprouts."
+   },
+   {
+    "titre": "Crunch",
+    "detail": "Scatter with crispy fried noodle croutons."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Peanuts and lime."
+   }
+  ]
+ },
+ "canhchua": {
+  "nom": "Canh Chua",
+  "description": "A sweet-and-sour soup from Southern Vietnam with fish, pineapple, tomato and okra, perfumed with tamarind. Bright, fresh and fragrant.",
+  "etapes": [
+   {
+    "titre": "Broth",
+    "detail": "Bring a light broth to a gentle simmer."
+   },
+   {
+    "titre": "Sour",
+    "detail": "Add tamarind (or lime) for acidity."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Stir in pineapple, tomato and okra."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Gently poach the fish."
+   },
+   {
+    "titre": "Season",
+    "detail": "Balance with fish sauce, sugar and chili."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Add sawtooth coriander and bean sprouts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with rice."
+   }
+  ]
+ },
+ "miequang": {
+  "nom": "Mi Quang",
+  "description": "Turmeric-yellow noodles from central Vietnam, topped with pork and shrimp, barely moistened with broth, and served with a toasted rice cracker. All color and crunch.",
+  "etapes": [
+   {
+    "titre": "Marinade",
+    "detail": "Marinate the pork and shrimp in turmeric."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sauté with garlic and onion."
+   },
+   {
+    "titre": "Jus",
+    "detail": "Moisten with just a little broth."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Cook the yellow noodles."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Noodles, toppings and a touch of broth."
+   },
+   {
+    "titre": "Crunch",
+    "detail": "Crumble a toasted rice cracker over the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Peanuts, herbs and lime."
+   }
+  ]
+ },
+ "cholebhature": {
+  "nom": "Chole Bhature",
+  "description": "A spicy chickpea curry served with a large puffy fried bread. The festive brunch of Punjab, hearty and fragrant.",
+  "etapes": [
+   {
+    "titre": "Chickpeas",
+    "detail": "Simmer the chickpeas in a spiced sauce (chole)."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add cumin, coriander, garam masala and amchoor."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Cook down to a thick masala."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Knead a leavened dough (bhature)."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll out the discs."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry until puffed and golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chole and bhature with raw onion."
+   }
+  ]
+ },
+ "bainganbharta": {
+  "nom": "Baingan Bharta",
+  "description": "Indian-style smoky eggplant: the eggplant is fire-roasted, then mashed and simmered with spices, tomato and onion. Smoky, melting and vegetarian.",
+  "etapes": [
+   {
+    "titre": "Eggplant",
+    "detail": "Char the whole eggplant until the skin is blackened."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Peel and mash the smoky flesh."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion, garlic and ginger."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add tomato, cumin and turmeric."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the eggplant flesh."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook until meltingly tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with cilantro, with naan or roti."
+   }
+  ]
+ },
+ "nihari": {
+  "nom": "Nihari",
+  "description": "A beef stew slowly simmered in a spiced, silky sauce, traditionally enjoyed in the early morning. Deep and comforting.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Brown the beef (or shank) in pieces."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add the nihari blend (fennel, dried ginger, chili)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover with water and cook for a very long time."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Whisk in the flour and thicken the sauce."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Reduce to a silky sauce."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Julienned ginger, chili, lemon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with naan."
+   }
+  ]
+ },
+ "ackee": {
+  "nom": "Ackee & Saltfish",
+  "description": "Jamaica's national dish: desalted saltfish and ackee (a tender fruit reminiscent of scrambled eggs) sautéed with onions, peppers and chili. Briny and sun-drenched.",
+  "etapes": [
+   {
+    "titre": "Saltfish",
+    "detail": "Desalt the saltfish, poach it and flake it."
+   },
+   {
+    "titre": "Ackee",
+    "detail": "Drain the ackee (or just warm it through)."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion, bell pepper and tomato."
+   },
+   {
+    "titre": "Chili",
+    "detail": "Add scotch bonnet pepper and thyme."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the flaked saltfish."
+   },
+   {
+    "titre": "Ackee",
+    "detail": "Fold in the ackee gently without crushing it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with fried dumplings or plantain."
+   }
+  ]
+ },
+ "doubles": {
+  "nom": "Doubles",
+  "description": "Trinidad's number-one street food: two soft turmeric flatbreads filled with curried chickpeas and chutneys. Spicy, generous, eaten by hand.",
+  "etapes": [
+   {
+    "titre": "Channa",
+    "detail": "Simmer the chickpeas in curry (channa)."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Season with cumin, turmeric and garlic."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Knead a turmeric dough (bara)."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the dough rise."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry small, soft flatbreads."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Top with channa, chutney and chili."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fold into a sandwich, eat by hand."
+   }
+  ]
+ },
+ "stifado": {
+  "nom": "Stifado",
+  "description": "A Greek beef stew with pearl onions, simmered in red wine, vinegar and warm spices (cinnamon, clove). Syrupy and fragrant.",
+  "etapes": [
+   {
+    "titre": "Beef",
+    "detail": "Sear the pieces of beef."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Add a mountain of pearl onions."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Tomato paste, red wine and vinegar."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Cinnamon, bay leaf, clove and allspice."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook over low heat for about 2 h."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Reduce to a syrupy sauce, with meltingly tender onions."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice, pasta or mashed potatoes."
+   }
+  ]
  }
 };
