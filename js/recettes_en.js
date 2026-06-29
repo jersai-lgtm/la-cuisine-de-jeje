@@ -48880,5 +48880,277 @@ window.RECETTES_EN = {
     "detail": "Serve with rice, pasta or mashed potatoes."
    }
   ]
+ },
+ "jjamppong": {
+  "nom": "Jjamppong",
+  "description": "A fiery-red Korean seafood noodle soup, spicy and full of ocean flavor. The bold, hot-headed cousin of jjajangmyeon, comforting and powerful.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Saute onion, garlic and plenty of chile flakes (gochugaru) in oil."
+   },
+   {
+    "titre": "Seafood",
+    "detail": "Add shrimp, mussels and squid."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Pour in stock and bring to a boil."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add thinly sliced cabbage and zucchini."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Cook the noodles separately until firm."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Divide the noodles and pour the scalding soup over."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away, piping hot."
+   }
+  ]
+ },
+ "yukgaejang": {
+  "nom": "Yukgaejang",
+  "description": "A spicy Korean soup of shredded beef, slow-simmered with mushrooms and ribbons of egg. Deep, fiery and revitalizing.",
+  "etapes": [
+   {
+    "titre": "Beef",
+    "detail": "Boil the beef, then shred it and reserve the broth."
+   },
+   {
+    "titre": "Chile",
+    "detail": "Make a chile oil with chile flakes (gochugaru) and garlic."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add mushrooms, scallions and bean sprouts."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the beef and chile oil to the broth."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Stream in the beaten egg."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Let it simmer so the flavors develop."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with rice."
+   }
+  ]
+ },
+ "oden": {
+  "nom": "Oden",
+  "description": "A Japanese one-pot simmer: eggs, daikon radish and assorted morsels gently cooked in a fragrant dashi broth. Mellow winter comfort.",
+  "etapes": [
+   {
+    "titre": "Dashi",
+    "detail": "Make a dashi broth (kombu seaweed, bonito)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with soy sauce and mirin."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Add the peeled hard-boiled eggs."
+   },
+   {
+    "titre": "Radish",
+    "detail": "Add the daikon radish in large chunks."
+   },
+   {
+    "titre": "Add-ins",
+    "detail": "Stir in the fish cakes and potato."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let it gently simmer for 40 min."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with karashi mustard."
+   }
+  ]
+ },
+ "bunrieu": {
+  "nom": "Bun Rieu",
+  "description": "A Vietnamese rice-vermicelli soup with crab and tomato, crowned with a tender crab custard. Tangy, fragrant and colorful.",
+  "etapes": [
+   {
+    "titre": "Custard",
+    "detail": "Mix crab meat, shrimp and egg."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Saute the tomato, then add stock."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Pour in the crab mixture: it sets into a custard in the broth."
+   },
+   {
+    "titre": "Tang",
+    "detail": "Sharpen with tamarind and season with fish sauce."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Cook the rice vermicelli."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Noodles, crab custard, broth poured over."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fresh herbs, bean sprouts and lime."
+   }
+  ]
+ },
+ "cakhoto": {
+  "nom": "Ca Kho To",
+  "description": "Fish braised in a clay pot in a salty caramel of fish sauce and pepper. Deeply sweet-savory, the family dish of southern Vietnam.",
+  "etapes": [
+   {
+    "titre": "Caramel",
+    "detail": "Make an amber caramel with the sugar."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Deglaze with fish sauce (or soy) and water."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add shallot, garlic and chile."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Lay the fish steaks in the clay pot."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Cook covered until the sauce turns syrupy."
+   },
+   {
+    "titre": "Pepper",
+    "detail": "Pepper generously at the end of cooking."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with white rice."
+   }
+  ]
+ },
+ "kadaipaneer": {
+  "nom": "Kadai Paneer",
+  "description": "Indian fresh cheese and bell peppers stir-fried in a tomato sauce with spices toasted in a mortar. Fragrant, colorful and vegetarian.",
+  "etapes": [
+   {
+    "titre": "Masala",
+    "detail": "Toast and crush coriander, cumin and chile (kadai masala)."
+   },
+   {
+    "titre": "Base",
+    "detail": "Saute onion, garlic and ginger."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the tomato and cook down into a thick sauce."
+   },
+   {
+    "titre": "Peppers",
+    "detail": "Stir-fry the bell peppers in large pieces (still crisp)."
+   },
+   {
+    "titre": "Paneer",
+    "detail": "Add the cubed paneer."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Toss in the masala and let it soak up the aromas."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cilantro and julienned ginger, with naan."
+   }
+  ]
+ },
+ "haleem": {
+  "nom": "Haleem",
+  "description": "A silky porridge of beef, lentils and wheat, slowly pounded to a velvety texture. A nourishing, deeply spiced celebration dish.",
+  "etapes": [
+   {
+    "titre": "Onions",
+    "detail": "Fry onions until golden brown (birista)."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Sear the beef with ginger, garlic and spices."
+   },
+   {
+    "titre": "Grains",
+    "detail": "Add lentils, cracked wheat and rice."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover generously with water and cook for a very long time."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Mash everything into a smooth porridge."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Enrich with ghee and adjust the spices (garam masala)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with fried onions, lemon, mint and ginger."
+   }
+  ]
+ },
+ "callaloo": {
+  "nom": "Callaloo",
+  "description": "A Caribbean stew of leafy greens and okra simmered in coconut milk, lifted with chile. Creamy, green and full of sunshine.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Saute onion, garlic, scallion and thyme."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Add the leafy greens (callaloo or spinach)."
+   },
+   {
+    "titre": "Okra",
+    "detail": "Stir in the sliced okra."
+   },
+   {
+    "titre": "Coconut",
+    "detail": "Pour in the coconut milk."
+   },
+   {
+    "titre": "Chile",
+    "detail": "Add one whole scotch bonnet pepper (without bursting it)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook until tender, then coarsely mash."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve as a side or with rice."
+   }
+  ]
  }
 };
