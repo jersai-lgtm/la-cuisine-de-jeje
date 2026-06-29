@@ -865,7 +865,50 @@ function remplirBadges(s) {
     { id: "tour-du-monde", emoji: "🧳", titre: "Tour du Monde", desc: "20 pays différents", debloque: paysSet.size >= 20 },
     { id: "ambassadeur", emoji: "🗺️", titre: "Ambassadeur des Saveurs", desc: "30 pays différents", debloque: paysSet.size >= 30 }
   );
-  
+
+  // === Nouvelles familles — calculées sur les recettes réellement CUISINÉES ===
+  const cuisinees = (user.recettesCuisinees || []).map(c => c && c.cle).filter(Boolean);
+  const catSet = new Set(), paysCuitSet = new Set(), saisonSet = new Set();
+  let nbNutriA = 0, nbEco = 0;
+  const lignePortion = (r) => {
+    const tk = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (!tk) return null;
+    const b = r.base || 4;
+    return r[tk].find(l => l.nb === b || l.patons === b) || r[tk][0];
+  };
+  cuisinees.forEach(cle => {
+    const r = recettes[cle];
+    if (!r) return;
+    if (r.cat) catSet.add(r.cat);
+    if (r.pays) paysCuitSet.add(r.pays);
+    (r.saisons || []).forEach(sa => saisonSet.add(sa));
+    const horsRepas = ["cocktails", "mocktails", "sauces", "tartinables"].includes(r.cat);
+    const ligne = horsRepas ? null : lignePortion(r);
+    if (ligne) {
+      try { const ns = (typeof calculerNutriScoreRecette === "function") && calculerNutriScoreRecette(ligne); if (ns && ns.lettre === "A") nbNutriA++; } catch (e) {}
+      try { const pc = (typeof calculerPrixCaloriesRecette === "function") && calculerPrixCaloriesRecette(ligne); if (pc && pc.prix != null && (pc.prix / (r.base || 4)) <= 2) nbEco++; } catch (e) {}
+    }
+  });
+  const quatreSaisons = ["printemps", "ete", "automne", "hiver"].every(sa => saisonSet.has(sa));
+  badges.push(
+    // 🥗 Santé / Nutri-Score
+    { id: "manger-sain",      emoji: "🥗", titre: "Manger Sain",            desc: "10 recettes Nutri A cuisinées",  debloque: nbNutriA >= 10 },
+    { id: "equilibriste",     emoji: "⚖️", titre: "Équilibriste",           desc: "30 recettes Nutri A cuisinées",  debloque: nbNutriA >= 30 },
+    { id: "maitre-equilibre", emoji: "🧘", titre: "Maître de l'Équilibre",  desc: "60 recettes Nutri A cuisinées",  debloque: nbNutriA >= 60 },
+    // 🎨 Diversité des catégories
+    { id: "touche-a-tout",    emoji: "🎨", titre: "Touche-à-tout",          desc: "5 catégories cuisinées",         debloque: catSet.size >= 5 },
+    { id: "polyvalent",       emoji: "🧩", titre: "Polyvalent",             desc: "10 catégories cuisinées",        debloque: catSet.size >= 10 },
+    { id: "chef-complet",     emoji: "🍱", titre: "Chef Complet",           desc: "14 catégories cuisinées",        debloque: catSet.size >= 14 },
+    // 🍂 Saisons
+    { id: "quatre-saisons",   emoji: "🍂", titre: "Quatre Saisons",         desc: "Une recette de chaque saison cuisinée", debloque: quatreSaisons },
+    // 🌎 Pays cuisinés (≠ simplement goûtés/vus)
+    { id: "cuistot-voyageur", emoji: "🧑‍🍳", titre: "Cuistot Voyageur",      desc: "5 pays cuisinés aux fourneaux",  debloque: paysCuitSet.size >= 5 },
+    { id: "chef-international",emoji: "🌐", titre: "Chef International",      desc: "10 pays cuisinés",               debloque: paysCuitSet.size >= 10 },
+    { id: "chef-planetaire",  emoji: "🪐", titre: "Chef Planétaire",        desc: "20 pays cuisinés",               debloque: paysCuitSet.size >= 20 },
+    // 💰 Économe
+    { id: "chef-malin",       emoji: "💰", titre: "Chef Malin",             desc: "10 recettes éco (≤2€/pers) cuisinées", debloque: nbEco >= 10 }
+  );
+
   const html = badges.map(b => `
     <div class="badge-card ${b.debloque ? 'badge-debloque' : 'badge-verrou'}">
       <div class="badge-emoji">${b.debloque ? b.emoji : "🔒"}</div>
