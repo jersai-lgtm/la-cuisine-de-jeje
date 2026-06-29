@@ -22104,43 +22104,6 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Accompagner de sauce tkemali (prune acidulée).", badge: null }
     ]
   },
-  wontonsoupe: {
-    nom: "Soupe Wonton",
-    cat: "soupes", pays: "chine",
-    base: 4,
-    temps: "45 min",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🥟",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Bouillon clair garni de raviolis chinois fondants au porc et aux crevettes. Réconfortant, parfumé au gingembre et à la ciboule.",
-    tableauWontonsoupe: [
-      { nb: 1, farine: "50 g", porc: "70 g", crevettes: "20 g", gingembre: "5 g", oignon: "20 g" },
-      { nb: 2, farine: "100 g", porc: "140 g", crevettes: "40 g", gingembre: "10 g", oignon: "40 g" },
-      { nb: 3, farine: "150 g", porc: "210 g", crevettes: "60 g", gingembre: "15 g", oignon: "60 g" },
-      { nb: 4, farine: "200 g", porc: "280 g", crevettes: "80 g", gingembre: "20 g", oignon: "80 g" },
-      { nb: 5, farine: "250 g", porc: "350 g", crevettes: "100 g", gingembre: "25 g", oignon: "100 g" },
-      { nb: 6, farine: "300 g", porc: "420 g", crevettes: "120 g", gingembre: "30 g", oignon: "120 g" },
-      { nb: 7, farine: "350 g", porc: "490 g", crevettes: "140 g", gingembre: "35 g", oignon: "140 g" },
-      { nb: 8, farine: "400 g", porc: "560 g", crevettes: "160 g", gingembre: "40 g", oignon: "160 g" },
-      { nb: 9, farine: "450 g", porc: "630 g", crevettes: "180 g", gingembre: "45 g", oignon: "180 g" },
-      { nb: 10, farine: "500 g", porc: "700 g", crevettes: "200 g", gingembre: "50 g", oignon: "200 g" },
-      { nb: 11, farine: "550 g", porc: "770 g", crevettes: "220 g", gingembre: "55 g", oignon: "220 g" },
-      { nb: 12, farine: "600 g", porc: "840 g", crevettes: "240 g", gingembre: "60 g", oignon: "240 g" },
-      { nb: 13, farine: "650 g", porc: "910 g", crevettes: "260 g", gingembre: "65 g", oignon: "260 g" },
-      { nb: 14, farine: "700 g", porc: "980 g", crevettes: "280 g", gingembre: "70 g", oignon: "280 g" },
-      { nb: 15, farine: "750 g", porc: "1050 g", crevettes: "300 g", gingembre: "75 g", oignon: "300 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥩", titre: "Farce", detail: "Hacher porc et crevettes, mélanger avec gingembre, soja et ciboule.", badge: null },
-      { icone: "⚪", titre: "Plier", detail: "Garnir des carrés de pâte et les plier en wontons.", badge: null },
-      { icone: "🍲", titre: "Bouillon", detail: "Préparer un bouillon de volaille parfumé au gingembre.", badge: null },
-      { icone: "💧", titre: "Pocher", detail: "Pocher les wontons jusqu'à ce qu'ils remontent.", badge: null },
-      { icone: "🌿", titre: "Assaisonner", detail: "Ajouter soja, huile de sésame et ciboule.", badge: null },
-      { icone: "🥣", titre: "Dresser", detail: "Répartir les wontons dans les bols.", badge: null },
-      { icone: "🍜", titre: "Servir", detail: "Verser le bouillon brûlant et servir aussitôt.", badge: null }
-    ]
-  },
   scallionpancake: {
     nom: "Galette à la Ciboule",
     cat: "aperitifs", pays: "chine",
@@ -22326,44 +22289,6 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, à partager.", badge: null }
     ]
   },
-  masaladosa: {
-    nom: "Masala Dosa",
-    cat: "plats", pays: "inde",
-    base: 4,
-    temps: "1h",
-    niveau: "⭐⭐⭐ Difficile",
-    emoji: "🥞",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Grande crêpe de riz et lentilles fermentées, croustillante, roulée autour d'une purée de pommes de terre épicée. L'icône du Sud de l'Inde.",
-    tableauMasaladosa: [
-      { nb: 1, farineRiz: "60 g", lentilles: "30 g", pommedeterre: "100 g", oignon: "30 g", curcuma: "1 g" },
-      { nb: 2, farineRiz: "120 g", lentilles: "60 g", pommedeterre: "200 g", oignon: "60 g", curcuma: "2 g" },
-      { nb: 3, farineRiz: "180 g", lentilles: "90 g", pommedeterre: "300 g", oignon: "90 g", curcuma: "3 g" },
-      { nb: 4, farineRiz: "240 g", lentilles: "120 g", pommedeterre: "400 g", oignon: "120 g", curcuma: "4 g" },
-      { nb: 5, farineRiz: "300 g", lentilles: "150 g", pommedeterre: "500 g", oignon: "150 g", curcuma: "5 g" },
-      { nb: 6, farineRiz: "360 g", lentilles: "180 g", pommedeterre: "600 g", oignon: "180 g", curcuma: "6 g" },
-      { nb: 7, farineRiz: "420 g", lentilles: "210 g", pommedeterre: "700 g", oignon: "210 g", curcuma: "7 g" },
-      { nb: 8, farineRiz: "480 g", lentilles: "240 g", pommedeterre: "800 g", oignon: "240 g", curcuma: "8 g" },
-      { nb: 9, farineRiz: "540 g", lentilles: "270 g", pommedeterre: "900 g", oignon: "270 g", curcuma: "9 g" },
-      { nb: 10, farineRiz: "600 g", lentilles: "300 g", pommedeterre: "1000 g", oignon: "300 g", curcuma: "10 g" },
-      { nb: 11, farineRiz: "660 g", lentilles: "330 g", pommedeterre: "1100 g", oignon: "330 g", curcuma: "11 g" },
-      { nb: 12, farineRiz: "720 g", lentilles: "360 g", pommedeterre: "1200 g", oignon: "360 g", curcuma: "12 g" },
-      { nb: 13, farineRiz: "780 g", lentilles: "390 g", pommedeterre: "1300 g", oignon: "390 g", curcuma: "13 g" },
-      { nb: 14, farineRiz: "840 g", lentilles: "420 g", pommedeterre: "1400 g", oignon: "420 g", curcuma: "14 g" },
-      { nb: 15, farineRiz: "900 g", lentilles: "450 g", pommedeterre: "1500 g", oignon: "450 g", curcuma: "15 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🌾", titre: "Pâte", detail: "Mixer riz et lentilles trempés, laisser fermenter une nuit.", badge: null },
-      { icone: "🥔", titre: "Masala", detail: "Cuire pommes de terre, oignon, curcuma et graines de moutarde.", badge: null },
-      { icone: "🔥", titre: "Plaque", detail: "Chauffer une plaque huilée.", badge: null },
-      { icone: "🥞", titre: "Étaler", detail: "Verser la pâte et l'étaler très finement en spirale.", badge: null },
-      { icone: "✨", titre: "Croustiller", detail: "Cuire jusqu'à doré croustillant.", badge: null },
-      { icone: "🥔", titre: "Garnir", detail: "Déposer le masala de pommes de terre.", badge: null },
-      { icone: "🌯", titre: "Rouler", detail: "Replier la dosa sur la garniture.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir avec chutney de coco et sambar.", badge: null }
-    ]
-  },
   panipuri: {
     nom: "Pani Puri",
     cat: "aperitifs", pays: "inde",
@@ -22399,43 +22324,6 @@ Object.assign(recettes, {
       { icone: "🕳️", titre: "Percer", detail: "Percer un trou au sommet de chaque puri.", badge: null },
       { icone: "🥄", titre: "Remplir", detail: "Garnir de pommes de terre puis d'eau épicée.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Manger aussitôt, d'une bouchée !", badge: null }
-    ]
-  },
-  pakora: {
-    nom: "Pakora",
-    cat: "aperitifs", pays: "inde",
-    base: 4,
-    temps: "30 min",
-    niveau: "⭐ Facile",
-    emoji: "🧅",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Beignets de légumes enrobés d'une pâte épicée à la farine de pois chiche, frits croustillants. L'en-cas de la mousson, parfait avec un chai.",
-    tableauPakora: [
-      { nb: 1, farinepoischiche: "50 g", oignon: "60 g", pommedeterre: "40 g", piment: "3 g", huilefriture: "20 ml" },
-      { nb: 2, farinepoischiche: "100 g", oignon: "120 g", pommedeterre: "80 g", piment: "6 g", huilefriture: "40 ml" },
-      { nb: 3, farinepoischiche: "150 g", oignon: "180 g", pommedeterre: "120 g", piment: "9 g", huilefriture: "60 ml" },
-      { nb: 4, farinepoischiche: "200 g", oignon: "240 g", pommedeterre: "160 g", piment: "12 g", huilefriture: "80 ml" },
-      { nb: 5, farinepoischiche: "250 g", oignon: "300 g", pommedeterre: "200 g", piment: "15 g", huilefriture: "100 ml" },
-      { nb: 6, farinepoischiche: "300 g", oignon: "360 g", pommedeterre: "240 g", piment: "18 g", huilefriture: "120 ml" },
-      { nb: 7, farinepoischiche: "350 g", oignon: "420 g", pommedeterre: "280 g", piment: "21 g", huilefriture: "140 ml" },
-      { nb: 8, farinepoischiche: "400 g", oignon: "480 g", pommedeterre: "320 g", piment: "24 g", huilefriture: "160 ml" },
-      { nb: 9, farinepoischiche: "450 g", oignon: "540 g", pommedeterre: "360 g", piment: "27 g", huilefriture: "180 ml" },
-      { nb: 10, farinepoischiche: "500 g", oignon: "600 g", pommedeterre: "400 g", piment: "30 g", huilefriture: "200 ml" },
-      { nb: 11, farinepoischiche: "550 g", oignon: "660 g", pommedeterre: "440 g", piment: "33 g", huilefriture: "220 ml" },
-      { nb: 12, farinepoischiche: "600 g", oignon: "720 g", pommedeterre: "480 g", piment: "36 g", huilefriture: "240 ml" },
-      { nb: 13, farinepoischiche: "650 g", oignon: "780 g", pommedeterre: "520 g", piment: "39 g", huilefriture: "260 ml" },
-      { nb: 14, farinepoischiche: "700 g", oignon: "840 g", pommedeterre: "560 g", piment: "42 g", huilefriture: "280 ml" },
-      { nb: 15, farinepoischiche: "750 g", oignon: "900 g", pommedeterre: "600 g", piment: "45 g", huilefriture: "300 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine de pois chiche, épices et eau en pâte épaisse.", badge: null },
-      { icone: "🌶️", titre: "Épices", detail: "Ajouter curcuma, cumin, piment et coriandre.", badge: null },
-      { icone: "🔪", titre: "Légumes", detail: "Émincer oignon, pomme de terre et épinard.", badge: null },
-      { icone: "🥄", titre: "Enrober", detail: "Enrober les légumes de pâte.", badge: null },
-      { icone: "🔥", titre: "Chauffer", detail: "Chauffer l'huile à 180 °C.", badge: null },
-      { icone: "🍳", titre: "Frire", detail: "Frire en petits tas jusqu'à doré croustillant.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir avec un chutney à la menthe.", badge: null }
     ]
   },
   poha: {
@@ -22510,81 +22398,6 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Cuire sur une plaque chaude, badigeonner de ghee.", badge: null },
       { icone: "✨", titre: "Dorer", detail: "Dorer des deux côtés jusqu'à taches brunes.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Servir avec yaourt, beurre et pickles.", badge: null }
-    ]
-  },
-  biryani: {
-    nom: "Biryani",
-    cat: "plats", pays: "inde",
-    base: 4,
-    temps: "1h15",
-    niveau: "⭐⭐⭐ Difficile",
-    emoji: "🍚",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Riz basmati parfumé cuit en couches avec un poulet mariné au yaourt et aux épices, safran et oignons frits. Le plat de fête indien par excellence.",
-    tableauBiryani: [
-      { nb: 1, riz: "90 g", poulet: "130 g", yaourt: "40 g", oignon: "50 g", curcuma: "2 g" },
-      { nb: 2, riz: "180 g", poulet: "260 g", yaourt: "80 g", oignon: "100 g", curcuma: "4 g" },
-      { nb: 3, riz: "270 g", poulet: "390 g", yaourt: "120 g", oignon: "150 g", curcuma: "6 g" },
-      { nb: 4, riz: "360 g", poulet: "520 g", yaourt: "160 g", oignon: "200 g", curcuma: "8 g" },
-      { nb: 5, riz: "450 g", poulet: "650 g", yaourt: "200 g", oignon: "250 g", curcuma: "10 g" },
-      { nb: 6, riz: "540 g", poulet: "780 g", yaourt: "240 g", oignon: "300 g", curcuma: "12 g" },
-      { nb: 7, riz: "630 g", poulet: "910 g", yaourt: "280 g", oignon: "350 g", curcuma: "14 g" },
-      { nb: 8, riz: "720 g", poulet: "1040 g", yaourt: "320 g", oignon: "400 g", curcuma: "16 g" },
-      { nb: 9, riz: "810 g", poulet: "1170 g", yaourt: "360 g", oignon: "450 g", curcuma: "18 g" },
-      { nb: 10, riz: "900 g", poulet: "1300 g", yaourt: "400 g", oignon: "500 g", curcuma: "20 g" },
-      { nb: 11, riz: "990 g", poulet: "1430 g", yaourt: "440 g", oignon: "550 g", curcuma: "22 g" },
-      { nb: 12, riz: "1080 g", poulet: "1560 g", yaourt: "480 g", oignon: "600 g", curcuma: "24 g" },
-      { nb: 13, riz: "1170 g", poulet: "1690 g", yaourt: "520 g", oignon: "650 g", curcuma: "26 g" },
-      { nb: 14, riz: "1260 g", poulet: "1820 g", yaourt: "560 g", oignon: "700 g", curcuma: "28 g" },
-      { nb: 15, riz: "1350 g", poulet: "1950 g", yaourt: "600 g", oignon: "750 g", curcuma: "30 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍗", titre: "Mariner", detail: "Mariner le poulet dans yaourt, gingembre-ail et épices.", badge: null },
-      { icone: "🧅", titre: "Oignons", detail: "Frire des oignons jusqu'à brun doré (birista).", badge: null },
-      { icone: "🍚", titre: "Riz", detail: "Précuire le riz basmati avec cardamome et laurier (70 %).", badge: null },
-      { icone: "🌼", titre: "Safran", detail: "Infuser le safran dans du lait chaud.", badge: null },
-      { icone: "🥘", titre: "Monter", detail: "Alterner poulet et riz en couches, parsemer d'oignons frits.", badge: null },
-      { icone: "💨", titre: "Dum", detail: "Couvrir hermétiquement et cuire à l'étouffée 25 min.", badge: null },
-      { icone: "🍴", titre: "Aérer", detail: "Aérer délicatement à la fourchette.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir avec un raïta au concombre.", badge: null }
-    ]
-  },
-  chanamasala: {
-    nom: "Chana Masala",
-    cat: "plats", pays: "inde",
-    base: 4,
-    temps: "45 min",
-    niveau: "⭐ Facile",
-    emoji: "🫘",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Curry de pois chiches mijotés dans une sauce tomate aux épices grillées. Végétarien, économique et profondément parfumé.",
-    tableauChanamasala: [
-      { nb: 1, poischiches: "100 g", tomate: "70 g", oignon: "40 g", gingembre: "5 g", curcuma: "2 g" },
-      { nb: 2, poischiches: "200 g", tomate: "140 g", oignon: "80 g", gingembre: "10 g", curcuma: "4 g" },
-      { nb: 3, poischiches: "300 g", tomate: "210 g", oignon: "120 g", gingembre: "15 g", curcuma: "6 g" },
-      { nb: 4, poischiches: "400 g", tomate: "280 g", oignon: "160 g", gingembre: "20 g", curcuma: "8 g" },
-      { nb: 5, poischiches: "500 g", tomate: "350 g", oignon: "200 g", gingembre: "25 g", curcuma: "10 g" },
-      { nb: 6, poischiches: "600 g", tomate: "420 g", oignon: "240 g", gingembre: "30 g", curcuma: "12 g" },
-      { nb: 7, poischiches: "700 g", tomate: "490 g", oignon: "280 g", gingembre: "35 g", curcuma: "14 g" },
-      { nb: 8, poischiches: "800 g", tomate: "560 g", oignon: "320 g", gingembre: "40 g", curcuma: "16 g" },
-      { nb: 9, poischiches: "900 g", tomate: "630 g", oignon: "360 g", gingembre: "45 g", curcuma: "18 g" },
-      { nb: 10, poischiches: "1000 g", tomate: "700 g", oignon: "400 g", gingembre: "50 g", curcuma: "20 g" },
-      { nb: 11, poischiches: "1100 g", tomate: "770 g", oignon: "440 g", gingembre: "55 g", curcuma: "22 g" },
-      { nb: 12, poischiches: "1200 g", tomate: "840 g", oignon: "480 g", gingembre: "60 g", curcuma: "24 g" },
-      { nb: 13, poischiches: "1300 g", tomate: "910 g", oignon: "520 g", gingembre: "65 g", curcuma: "26 g" },
-      { nb: 14, poischiches: "1400 g", tomate: "980 g", oignon: "560 g", gingembre: "70 g", curcuma: "28 g" },
-      { nb: 15, poischiches: "1500 g", tomate: "1050 g", oignon: "600 g", gingembre: "75 g", curcuma: "30 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🧅", titre: "Base", detail: "Faire revenir oignon, ail et gingembre.", badge: null },
-      { icone: "🌶️", titre: "Épices", detail: "Ajouter cumin, coriandre, curcuma et garam masala.", badge: null },
-      { icone: "🍅", titre: "Tomate", detail: "Incorporer la tomate, cuire jusqu'à masala épais.", badge: null },
-      { icone: "🫘", titre: "Pois chiches", detail: "Ajouter les pois chiches et un peu d'eau.", badge: null },
-      { icone: "⏲️", titre: "Mijoter", detail: "Mijoter 20 min pour les imprégner.", badge: null },
-      { icone: "🍋", titre: "Finir", detail: "Ajouter amchoor (ou citron) et coriandre.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir avec du riz ou du naan.", badge: null }
     ]
   },
   padkrapow: {
@@ -22662,43 +22475,6 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Couper et servir avec un curry léger ou des oignons au vinaigre.", badge: null }
     ]
   },
-  chilaquiles: {
-    nom: "Chilaquiles",
-    cat: "brunch", pays: "mexique",
-    base: 4,
-    temps: "30 min",
-    niveau: "⭐ Facile",
-    emoji: "🍳",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Tortillas frites mijotées dans une salsa, couronnées d'œuf, de crème et de fromage. Le petit-déjeuner mexicain anti-gaspi, piquant et réconfortant.",
-    tableauChilaquiles: [
-      { nb: 1, mais: "80 g", tomate: "80 g", oeuf: "50 g", oignon: "30 g", piment: "3 g" },
-      { nb: 2, mais: "160 g", tomate: "160 g", oeuf: "100 g", oignon: "60 g", piment: "6 g" },
-      { nb: 3, mais: "240 g", tomate: "240 g", oeuf: "150 g", oignon: "90 g", piment: "9 g" },
-      { nb: 4, mais: "320 g", tomate: "320 g", oeuf: "200 g", oignon: "120 g", piment: "12 g" },
-      { nb: 5, mais: "400 g", tomate: "400 g", oeuf: "250 g", oignon: "150 g", piment: "15 g" },
-      { nb: 6, mais: "480 g", tomate: "480 g", oeuf: "300 g", oignon: "180 g", piment: "18 g" },
-      { nb: 7, mais: "560 g", tomate: "560 g", oeuf: "350 g", oignon: "210 g", piment: "21 g" },
-      { nb: 8, mais: "640 g", tomate: "640 g", oeuf: "400 g", oignon: "240 g", piment: "24 g" },
-      { nb: 9, mais: "720 g", tomate: "720 g", oeuf: "450 g", oignon: "270 g", piment: "27 g" },
-      { nb: 10, mais: "800 g", tomate: "800 g", oeuf: "500 g", oignon: "300 g", piment: "30 g" },
-      { nb: 11, mais: "880 g", tomate: "880 g", oeuf: "550 g", oignon: "330 g", piment: "33 g" },
-      { nb: 12, mais: "960 g", tomate: "960 g", oeuf: "600 g", oignon: "360 g", piment: "36 g" },
-      { nb: 13, mais: "1040 g", tomate: "1040 g", oeuf: "650 g", oignon: "390 g", piment: "39 g" },
-      { nb: 14, mais: "1120 g", tomate: "1120 g", oeuf: "700 g", oignon: "420 g", piment: "42 g" },
-      { nb: 15, mais: "1200 g", tomate: "1200 g", oeuf: "750 g", oignon: "450 g", piment: "45 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🌽", titre: "Tortillas", detail: "Couper des tortillas en triangles et les frire (totopos).", badge: null },
-      { icone: "🌶️", titre: "Salsa", detail: "Mixer tomate, piment et oignon, cuire en salsa.", badge: null },
-      { icone: "🥣", titre: "Mélanger", detail: "Jeter les totopos dans la salsa chaude juste avant de servir.", badge: null },
-      { icone: "🍳", titre: "Œuf", detail: "Cuire un œuf au plat ou brouillé.", badge: null },
-      { icone: "🧀", titre: "Garnir", detail: "Couronner de crème, fromage frais et oignon cru.", badge: null },
-      { icone: "🌿", titre: "Finir", detail: "Parsemer de coriandre.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt pour garder le croquant.", badge: null }
-    ]
-  },
   gorditas: {
     nom: "Gorditas",
     cat: "plats", pays: "mexique",
@@ -22773,80 +22549,6 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, encore tièdes.", badge: null }
     ]
   },
-  cochinitapibil: {
-    nom: "Cochinita Pibil",
-    cat: "plats", pays: "mexique",
-    base: 4,
-    temps: "2h30",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🐷",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Porc mariné au rocou (achiote) et au jus d'agrumes, cuit très lentement jusqu'à s'effilocher. La merveille du Yucatán, servie en tacos.",
-    tableauCochinitapibil: [
-      { nb: 1, porc: "160 g", oignon: "50 g", citronvert: "15 ml", ail: "6 g", piment: "3 g" },
-      { nb: 2, porc: "320 g", oignon: "100 g", citronvert: "30 ml", ail: "12 g", piment: "6 g" },
-      { nb: 3, porc: "480 g", oignon: "150 g", citronvert: "45 ml", ail: "18 g", piment: "9 g" },
-      { nb: 4, porc: "640 g", oignon: "200 g", citronvert: "60 ml", ail: "24 g", piment: "12 g" },
-      { nb: 5, porc: "800 g", oignon: "250 g", citronvert: "75 ml", ail: "30 g", piment: "15 g" },
-      { nb: 6, porc: "960 g", oignon: "300 g", citronvert: "90 ml", ail: "36 g", piment: "18 g" },
-      { nb: 7, porc: "1120 g", oignon: "350 g", citronvert: "105 ml", ail: "42 g", piment: "21 g" },
-      { nb: 8, porc: "1280 g", oignon: "400 g", citronvert: "120 ml", ail: "48 g", piment: "24 g" },
-      { nb: 9, porc: "1440 g", oignon: "450 g", citronvert: "135 ml", ail: "54 g", piment: "27 g" },
-      { nb: 10, porc: "1600 g", oignon: "500 g", citronvert: "150 ml", ail: "60 g", piment: "30 g" },
-      { nb: 11, porc: "1760 g", oignon: "550 g", citronvert: "165 ml", ail: "66 g", piment: "33 g" },
-      { nb: 12, porc: "1920 g", oignon: "600 g", citronvert: "180 ml", ail: "72 g", piment: "36 g" },
-      { nb: 13, porc: "2080 g", oignon: "650 g", citronvert: "195 ml", ail: "78 g", piment: "39 g" },
-      { nb: 14, porc: "2240 g", oignon: "700 g", citronvert: "210 ml", ail: "84 g", piment: "42 g" },
-      { nb: 15, porc: "2400 g", oignon: "750 g", citronvert: "225 ml", ail: "90 g", piment: "45 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🌶️", titre: "Marinade", detail: "Délayer la pâte de rocou avec jus d'orange et de citron vert.", badge: null },
-      { icone: "💆", titre: "Mariner", detail: "Enrober le porc et mariner une nuit.", badge: null },
-      { icone: "🍃", titre: "Envelopper", detail: "Envelopper dans des feuilles de bananier.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire couvert à 150 °C pendant 3 h.", badge: null },
-      { icone: "🍴", titre: "Effilocher", detail: "Effilocher la viande dans son jus.", badge: null },
-      { icone: "🧅", titre: "Oignons", detail: "Préparer des oignons rouges marinés au citron vert.", badge: null },
-      { icone: "🌮", titre: "Servir", detail: "Servir en tacos avec oignons et habanero.", badge: null }
-    ]
-  },
-  birria: {
-    nom: "Birria",
-    cat: "plats", pays: "mexique",
-    base: 4,
-    temps: "2h30",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🍲",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Ragoût de bœuf (ou chèvre) mijoté dans une sauce de piments séchés, servi avec son consommé pour y tremper les tacos. Riche, profond, viral.",
-    tableauBirria: [
-      { nb: 1, boeuf: "150 g", piment: "6 g", tomate: "60 g", oignon: "50 g", ail: "6 g" },
-      { nb: 2, boeuf: "300 g", piment: "12 g", tomate: "120 g", oignon: "100 g", ail: "12 g" },
-      { nb: 3, boeuf: "450 g", piment: "18 g", tomate: "180 g", oignon: "150 g", ail: "18 g" },
-      { nb: 4, boeuf: "600 g", piment: "24 g", tomate: "240 g", oignon: "200 g", ail: "24 g" },
-      { nb: 5, boeuf: "750 g", piment: "30 g", tomate: "300 g", oignon: "250 g", ail: "30 g" },
-      { nb: 6, boeuf: "900 g", piment: "36 g", tomate: "360 g", oignon: "300 g", ail: "36 g" },
-      { nb: 7, boeuf: "1050 g", piment: "42 g", tomate: "420 g", oignon: "350 g", ail: "42 g" },
-      { nb: 8, boeuf: "1200 g", piment: "48 g", tomate: "480 g", oignon: "400 g", ail: "48 g" },
-      { nb: 9, boeuf: "1350 g", piment: "54 g", tomate: "540 g", oignon: "450 g", ail: "54 g" },
-      { nb: 10, boeuf: "1500 g", piment: "60 g", tomate: "600 g", oignon: "500 g", ail: "60 g" },
-      { nb: 11, boeuf: "1650 g", piment: "66 g", tomate: "660 g", oignon: "550 g", ail: "66 g" },
-      { nb: 12, boeuf: "1800 g", piment: "72 g", tomate: "720 g", oignon: "600 g", ail: "72 g" },
-      { nb: 13, boeuf: "1950 g", piment: "78 g", tomate: "780 g", oignon: "650 g", ail: "78 g" },
-      { nb: 14, boeuf: "2100 g", piment: "84 g", tomate: "840 g", oignon: "700 g", ail: "84 g" },
-      { nb: 15, boeuf: "2250 g", piment: "90 g", tomate: "900 g", oignon: "750 g", ail: "90 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🌶️", titre: "Piments", detail: "Griller et réhydrater les piments séchés (guajillo, ancho).", badge: null },
-      { icone: "🌀", titre: "Sauce", detail: "Mixer piments, tomate, ail et épices en adobo.", badge: null },
-      { icone: "🥩", titre: "Enrober", detail: "Enrober le bœuf de sauce et faire mariner.", badge: null },
-      { icone: "💧", titre: "Mijoter", detail: "Couvrir d'eau et mijoter 2 h jusqu'à fondant.", badge: null },
-      { icone: "🍴", titre: "Effilocher", detail: "Effilocher la viande, garder le consommé.", badge: null },
-      { icone: "🌮", titre: "Tacos", detail: "Tremper des tortillas dans le gras et les griller garnies.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir les tacos avec un bol de consommé.", badge: null }
-    ]
-  },
   aguachile: {
     nom: "Aguachile",
     cat: "entrees", pays: "mexique",
@@ -22882,80 +22584,6 @@ Object.assign(recettes, {
       { icone: "🥣", titre: "Dresser", detail: "Disposer les crevettes, verser l'aguachile.", badge: null },
       { icone: "🧂", titre: "Assaisonner", detail: "Saler et ajouter l'oignon et le concombre.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, glacé, avec des tostadas.", badge: null }
-    ]
-  },
-  tresleches: {
-    nom: "Tres Leches",
-    cat: "desserts", pays: "mexique",
-    base: 4,
-    temps: "1h",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🍰",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Génoise imbibée de trois laits (concentré, évaporé, entier), couronnée de chantilly. Ultra-moelleux et fondant, le gâteau d'anniversaire latino.",
-    tableauTresleches: [
-      { nb: 1, farine: "50 g", oeuf: "50 g", lait: "60 ml", laitconcentre: "40 g", creme: "40 ml" },
-      { nb: 2, farine: "100 g", oeuf: "100 g", lait: "120 ml", laitconcentre: "80 g", creme: "80 ml" },
-      { nb: 3, farine: "150 g", oeuf: "150 g", lait: "180 ml", laitconcentre: "120 g", creme: "120 ml" },
-      { nb: 4, farine: "200 g", oeuf: "200 g", lait: "240 ml", laitconcentre: "160 g", creme: "160 ml" },
-      { nb: 5, farine: "250 g", oeuf: "250 g", lait: "300 ml", laitconcentre: "200 g", creme: "200 ml" },
-      { nb: 6, farine: "300 g", oeuf: "300 g", lait: "360 ml", laitconcentre: "240 g", creme: "240 ml" },
-      { nb: 7, farine: "350 g", oeuf: "350 g", lait: "420 ml", laitconcentre: "280 g", creme: "280 ml" },
-      { nb: 8, farine: "400 g", oeuf: "400 g", lait: "480 ml", laitconcentre: "320 g", creme: "320 ml" },
-      { nb: 9, farine: "450 g", oeuf: "450 g", lait: "540 ml", laitconcentre: "360 g", creme: "360 ml" },
-      { nb: 10, farine: "500 g", oeuf: "500 g", lait: "600 ml", laitconcentre: "400 g", creme: "400 ml" },
-      { nb: 11, farine: "550 g", oeuf: "550 g", lait: "660 ml", laitconcentre: "440 g", creme: "440 ml" },
-      { nb: 12, farine: "600 g", oeuf: "600 g", lait: "720 ml", laitconcentre: "480 g", creme: "480 ml" },
-      { nb: 13, farine: "650 g", oeuf: "650 g", lait: "780 ml", laitconcentre: "520 g", creme: "520 ml" },
-      { nb: 14, farine: "700 g", oeuf: "700 g", lait: "840 ml", laitconcentre: "560 g", creme: "560 ml" },
-      { nb: 15, farine: "750 g", oeuf: "750 g", lait: "900 ml", laitconcentre: "600 g", creme: "600 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥚", titre: "Génoise", detail: "Monter une génoise légère, cuire et laisser tiédir.", badge: null },
-      { icone: "🥛", titre: "Trois laits", detail: "Mélanger lait concentré, évaporé et entier.", badge: null },
-      { icone: "🍴", titre: "Piquer", detail: "Piquer la génoise partout à la fourchette.", badge: null },
-      { icone: "💦", titre: "Imbiber", detail: "Verser le mélange de laits, laisser absorber.", badge: null },
-      { icone: "❄️", titre: "Réfrigérer", detail: "Réserver plusieurs heures au frais.", badge: null },
-      { icone: "🥛", titre: "Chantilly", detail: "Monter la crème en chantilly.", badge: null },
-      { icone: "🍰", titre: "Servir", detail: "Couvrir de chantilly et de cannelle, servir frais.", badge: null }
-    ]
-  },
-  cannoli: {
-    nom: "Cannoli",
-    cat: "desserts", pays: "italie",
-    base: 4,
-    temps: "1h",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🧁",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Tubes de pâte croustillante frits, garnis d'une crème de ricotta sucrée et de pépites de chocolat. La merveille sicilienne.",
-    tableauCannoli: [
-      { nb: 1, farine: "50 g", ricotta: "80 g", sucre: "25 g", chocolat: "15 g", huilefriture: "15 ml" },
-      { nb: 2, farine: "100 g", ricotta: "160 g", sucre: "50 g", chocolat: "30 g", huilefriture: "30 ml" },
-      { nb: 3, farine: "150 g", ricotta: "240 g", sucre: "75 g", chocolat: "45 g", huilefriture: "45 ml" },
-      { nb: 4, farine: "200 g", ricotta: "320 g", sucre: "100 g", chocolat: "60 g", huilefriture: "60 ml" },
-      { nb: 5, farine: "250 g", ricotta: "400 g", sucre: "125 g", chocolat: "75 g", huilefriture: "75 ml" },
-      { nb: 6, farine: "300 g", ricotta: "480 g", sucre: "150 g", chocolat: "90 g", huilefriture: "90 ml" },
-      { nb: 7, farine: "350 g", ricotta: "560 g", sucre: "175 g", chocolat: "105 g", huilefriture: "105 ml" },
-      { nb: 8, farine: "400 g", ricotta: "640 g", sucre: "200 g", chocolat: "120 g", huilefriture: "120 ml" },
-      { nb: 9, farine: "450 g", ricotta: "720 g", sucre: "225 g", chocolat: "135 g", huilefriture: "135 ml" },
-      { nb: 10, farine: "500 g", ricotta: "800 g", sucre: "250 g", chocolat: "150 g", huilefriture: "150 ml" },
-      { nb: 11, farine: "550 g", ricotta: "880 g", sucre: "275 g", chocolat: "165 g", huilefriture: "165 ml" },
-      { nb: 12, farine: "600 g", ricotta: "960 g", sucre: "300 g", chocolat: "180 g", huilefriture: "180 ml" },
-      { nb: 13, farine: "650 g", ricotta: "1040 g", sucre: "325 g", chocolat: "195 g", huilefriture: "195 ml" },
-      { nb: 14, farine: "700 g", ricotta: "1120 g", sucre: "350 g", chocolat: "210 g", huilefriture: "210 ml" },
-      { nb: 15, farine: "750 g", ricotta: "1200 g", sucre: "375 g", chocolat: "225 g", huilefriture: "225 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥣", titre: "Pâte", detail: "Pétrir une pâte au marsala, l'étaler très finement.", badge: null },
-      { icone: "⭕", titre: "Former", detail: "Découper des disques, les enrouler sur des tubes.", badge: null },
-      { icone: "🔥", titre: "Frire", detail: "Frire jusqu'à bullé et doré, laisser refroidir.", badge: null },
-      { icone: "🧀", titre: "Crème", detail: "Égoutter et fouetter la ricotta avec le sucre glace.", badge: null },
-      { icone: "🍫", titre: "Garnir", detail: "Ajouter pépites de chocolat et zeste d'orange.", badge: null },
-      { icone: "💉", titre: "Remplir", detail: "Garnir les tubes de crème aux deux extrémités.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Saupoudrer de sucre glace, servir aussitôt (sinon ça ramollit).", badge: null }
     ]
   },
   sfogliatella: {
@@ -23032,43 +22660,6 @@ Object.assign(recettes, {
       { icone: "🍬", titre: "Servir", detail: "Saupoudrer de sucre et servir tièdes.", badge: null }
     ]
   },
-  pannacotta: {
-    nom: "Panna Cotta",
-    cat: "desserts", pays: "italie",
-    base: 4,
-    temps: "30 min",
-    niveau: "⭐ Facile",
-    emoji: "🍮",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Crème cuite vanillée prise à la gélatine, tremblotante et soyeuse, nappée d'un coulis de fruits rouges. L'élégance simple à l'italienne.",
-    tableauPannacotta: [
-      { nb: 1, creme: "120 ml", lait: "40 ml", sucre: "30 g", gelatine: "3 g" },
-      { nb: 2, creme: "240 ml", lait: "80 ml", sucre: "60 g", gelatine: "6 g" },
-      { nb: 3, creme: "360 ml", lait: "120 ml", sucre: "90 g", gelatine: "9 g" },
-      { nb: 4, creme: "480 ml", lait: "160 ml", sucre: "120 g", gelatine: "12 g" },
-      { nb: 5, creme: "600 ml", lait: "200 ml", sucre: "150 g", gelatine: "15 g" },
-      { nb: 6, creme: "720 ml", lait: "240 ml", sucre: "180 g", gelatine: "18 g" },
-      { nb: 7, creme: "840 ml", lait: "280 ml", sucre: "210 g", gelatine: "21 g" },
-      { nb: 8, creme: "960 ml", lait: "320 ml", sucre: "240 g", gelatine: "24 g" },
-      { nb: 9, creme: "1080 ml", lait: "360 ml", sucre: "270 g", gelatine: "27 g" },
-      { nb: 10, creme: "1200 ml", lait: "400 ml", sucre: "300 g", gelatine: "30 g" },
-      { nb: 11, creme: "1320 ml", lait: "440 ml", sucre: "330 g", gelatine: "33 g" },
-      { nb: 12, creme: "1440 ml", lait: "480 ml", sucre: "360 g", gelatine: "36 g" },
-      { nb: 13, creme: "1560 ml", lait: "520 ml", sucre: "390 g", gelatine: "39 g" },
-      { nb: 14, creme: "1680 ml", lait: "560 ml", sucre: "420 g", gelatine: "42 g" },
-      { nb: 15, creme: "1800 ml", lait: "600 ml", sucre: "450 g", gelatine: "45 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍦", titre: "Infuser", detail: "Chauffer crème, lait, sucre et vanille sans bouillir.", badge: null },
-      { icone: "💧", titre: "Gélatine", detail: "Faire ramollir la gélatine, la dissoudre dans la crème chaude.", badge: null },
-      { icone: "🥣", titre: "Verser", detail: "Répartir dans des ramequins ou des verrines.", badge: null },
-      { icone: "❄️", titre: "Prendre", detail: "Réfrigérer au moins 4 h jusqu'à prise tremblotante.", badge: null },
-      { icone: "🍓", titre: "Coulis", detail: "Mixer et passer des fruits rouges avec un peu de sucre.", badge: null },
-      { icone: "🫗", titre: "Napper", detail: "Napper de coulis au moment de servir.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Servir bien frais (ou démouler sur assiette).", badge: null }
-    ]
-  },
   semifreddo: {
     nom: "Semifreddo",
     cat: "desserts", pays: "italie",
@@ -23104,154 +22695,6 @@ Object.assign(recettes, {
       { icone: "🥣", titre: "Mélanger", detail: "Incorporer délicatement chantilly, meringue et pralin au sabayon.", badge: null },
       { icone: "🧊", titre: "Congeler", detail: "Verser dans un moule à cake, congeler 6 h.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Démouler et trancher, servir tout juste sorti.", badge: null }
-    ]
-  },
-  affogato: {
-    nom: "Affogato",
-    cat: "desserts", pays: "italie",
-    base: 4,
-    temps: "10 min",
-    niveau: "⭐ Facile",
-    emoji: "☕",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Une boule de glace vanille « noyée » sous un espresso brûlant. Le dessert-café italien le plus simple et le plus chic, chaud-froid instantané.",
-    tableauAffogato: [
-      { nb: 1, lait: "60 ml", creme: "40 ml", sucre: "15 g" },
-      { nb: 2, lait: "120 ml", creme: "80 ml", sucre: "30 g" },
-      { nb: 3, lait: "180 ml", creme: "120 ml", sucre: "45 g" },
-      { nb: 4, lait: "240 ml", creme: "160 ml", sucre: "60 g" },
-      { nb: 5, lait: "300 ml", creme: "200 ml", sucre: "75 g" },
-      { nb: 6, lait: "360 ml", creme: "240 ml", sucre: "90 g" },
-      { nb: 7, lait: "420 ml", creme: "280 ml", sucre: "105 g" },
-      { nb: 8, lait: "480 ml", creme: "320 ml", sucre: "120 g" },
-      { nb: 9, lait: "540 ml", creme: "360 ml", sucre: "135 g" },
-      { nb: 10, lait: "600 ml", creme: "400 ml", sucre: "150 g" },
-      { nb: 11, lait: "660 ml", creme: "440 ml", sucre: "165 g" },
-      { nb: 12, lait: "720 ml", creme: "480 ml", sucre: "180 g" },
-      { nb: 13, lait: "780 ml", creme: "520 ml", sucre: "195 g" },
-      { nb: 14, lait: "840 ml", creme: "560 ml", sucre: "210 g" },
-      { nb: 15, lait: "900 ml", creme: "600 ml", sucre: "225 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍦", titre: "Glace", detail: "Préparer (ou sortir) une bonne glace à la vanille.", badge: null },
-      { icone: "🥣", titre: "Coupe", detail: "Déposer une à deux boules dans une coupe glacée.", badge: null },
-      { icone: "☕", titre: "Espresso", detail: "Préparer un espresso bien serré et brûlant.", badge: null },
-      { icone: "💧", titre: "Noyer", detail: "Verser l'espresso sur la glace au moment de servir.", badge: null },
-      { icone: "🌰", titre: "Garnir", detail: "Parsemer d'amandes ou de copeaux de chocolat.", badge: null },
-      { icone: "🥄", titre: "Servir", detail: "Servir immédiatement, à déguster pendant que ça fond.", badge: null }
-    ]
-  },
-  parisbrest: {
-    nom: "Paris-Brest",
-    cat: "desserts", pays: "france",
-    base: 4,
-    temps: "1h30",
-    niveau: "⭐⭐⭐ Difficile",
-    emoji: "🥐",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Couronne de pâte à choux fourrée d'une crème mousseline au praliné, parsemée d'amandes. Le grand classique pâtissier inventé pour une course cycliste.",
-    tableauParisbrest: [
-      { nb: 1, farine: "40 g", oeuf: "50 g", beurre: "30 g", amande: "20 g", sucre: "20 g" },
-      { nb: 2, farine: "80 g", oeuf: "100 g", beurre: "60 g", amande: "40 g", sucre: "40 g" },
-      { nb: 3, farine: "120 g", oeuf: "150 g", beurre: "90 g", amande: "60 g", sucre: "60 g" },
-      { nb: 4, farine: "160 g", oeuf: "200 g", beurre: "120 g", amande: "80 g", sucre: "80 g" },
-      { nb: 5, farine: "200 g", oeuf: "250 g", beurre: "150 g", amande: "100 g", sucre: "100 g" },
-      { nb: 6, farine: "240 g", oeuf: "300 g", beurre: "180 g", amande: "120 g", sucre: "120 g" },
-      { nb: 7, farine: "280 g", oeuf: "350 g", beurre: "210 g", amande: "140 g", sucre: "140 g" },
-      { nb: 8, farine: "320 g", oeuf: "400 g", beurre: "240 g", amande: "160 g", sucre: "160 g" },
-      { nb: 9, farine: "360 g", oeuf: "450 g", beurre: "270 g", amande: "180 g", sucre: "180 g" },
-      { nb: 10, farine: "400 g", oeuf: "500 g", beurre: "300 g", amande: "200 g", sucre: "200 g" },
-      { nb: 11, farine: "440 g", oeuf: "550 g", beurre: "330 g", amande: "220 g", sucre: "220 g" },
-      { nb: 12, farine: "480 g", oeuf: "600 g", beurre: "360 g", amande: "240 g", sucre: "240 g" },
-      { nb: 13, farine: "520 g", oeuf: "650 g", beurre: "390 g", amande: "260 g", sucre: "260 g" },
-      { nb: 14, farine: "560 g", oeuf: "700 g", beurre: "420 g", amande: "280 g", sucre: "280 g" },
-      { nb: 15, farine: "600 g", oeuf: "750 g", beurre: "450 g", amande: "300 g", sucre: "300 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥣", titre: "Choux", detail: "Préparer une pâte à choux (eau, beurre, farine, œufs).", badge: null },
-      { icone: "⭕", titre: "Pocher", detail: "Pocher une couronne sur la plaque, parsemer d'amandes.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire sans ouvrir le four jusqu'à doré et sec.", badge: null },
-      { icone: "🌰", titre: "Praliné", detail: "Préparer un praliné amandes-noisettes.", badge: null },
-      { icone: "🍮", titre: "Mousseline", detail: "Monter une crème mousseline au praliné.", badge: null },
-      { icone: "✂️", titre: "Couper", detail: "Couper la couronne en deux dans l'épaisseur.", badge: null },
-      { icone: "💉", titre: "Garnir", detail: "Pocher généreusement la crème, refermer.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Saupoudrer de sucre glace et réserver au frais.", badge: null }
-    ]
-  },
-  canele: {
-    nom: "Cannelé",
-    cat: "desserts", pays: "france",
-    base: 4,
-    temps: "1h",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🍮",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Petit gâteau bordelais à la croûte caramélisée et croustillante, au cœur moelleux parfumé au rhum et à la vanille. Le contraste parfait.",
-    tableauCanele: [
-      { nb: 1, farine: "30 g", lait: "100 ml", oeuf: "30 g", sucre: "30 g", beurre: "10 g" },
-      { nb: 2, farine: "60 g", lait: "200 ml", oeuf: "60 g", sucre: "60 g", beurre: "20 g" },
-      { nb: 3, farine: "90 g", lait: "300 ml", oeuf: "90 g", sucre: "90 g", beurre: "30 g" },
-      { nb: 4, farine: "120 g", lait: "400 ml", oeuf: "120 g", sucre: "120 g", beurre: "40 g" },
-      { nb: 5, farine: "150 g", lait: "500 ml", oeuf: "150 g", sucre: "150 g", beurre: "50 g" },
-      { nb: 6, farine: "180 g", lait: "600 ml", oeuf: "180 g", sucre: "180 g", beurre: "60 g" },
-      { nb: 7, farine: "210 g", lait: "700 ml", oeuf: "210 g", sucre: "210 g", beurre: "70 g" },
-      { nb: 8, farine: "240 g", lait: "800 ml", oeuf: "240 g", sucre: "240 g", beurre: "80 g" },
-      { nb: 9, farine: "270 g", lait: "900 ml", oeuf: "270 g", sucre: "270 g", beurre: "90 g" },
-      { nb: 10, farine: "300 g", lait: "1000 ml", oeuf: "300 g", sucre: "300 g", beurre: "100 g" },
-      { nb: 11, farine: "330 g", lait: "1100 ml", oeuf: "330 g", sucre: "330 g", beurre: "110 g" },
-      { nb: 12, farine: "360 g", lait: "1200 ml", oeuf: "360 g", sucre: "360 g", beurre: "120 g" },
-      { nb: 13, farine: "390 g", lait: "1300 ml", oeuf: "390 g", sucre: "390 g", beurre: "130 g" },
-      { nb: 14, farine: "420 g", lait: "1400 ml", oeuf: "420 g", sucre: "420 g", beurre: "140 g" },
-      { nb: 15, farine: "450 g", lait: "1500 ml", oeuf: "450 g", sucre: "450 g", beurre: "150 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥛", titre: "Infuser", detail: "Chauffer le lait avec la vanille et le beurre.", badge: null },
-      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine, sucre, œufs puis le lait tiède.", badge: null },
-      { icone: "🥃", titre: "Parfumer", detail: "Ajouter le rhum, lisser la pâte (fluide comme une crêpe).", badge: null },
-      { icone: "❄️", titre: "Reposer", detail: "Laisser reposer 24 h au frais (indispensable).", badge: null },
-      { icone: "🧈", titre: "Moules", detail: "Beurrer (ou cirer) les moules à cannelé.", badge: null },
-      { icone: "🔥", titre: "Cuire", detail: "Cuire à four très chaud pour une croûte foncée.", badge: null },
-      { icone: "🍽️", titre: "Démouler", detail: "Démouler aussitôt : croûte croustillante, cœur moelleux.", badge: null }
-    ]
-  },
-  banoffee: {
-    nom: "Banoffee Pie",
-    cat: "desserts", pays: "angleterre",
-    base: 4,
-    temps: "40 min",
-    niveau: "⭐ Facile",
-    emoji: "🍌",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Tarte anglaise sans cuisson : base de biscuits, confiture de lait, bananes et chantilly. Décadente, régressive et imparable.",
-    tableauBanoffee: [
-      { nb: 1, biscuits: "50 g", banane: "80 g", laitconcentre: "50 g", creme: "50 ml", beurre: "20 g" },
-      { nb: 2, biscuits: "100 g", banane: "160 g", laitconcentre: "100 g", creme: "100 ml", beurre: "40 g" },
-      { nb: 3, biscuits: "150 g", banane: "240 g", laitconcentre: "150 g", creme: "150 ml", beurre: "60 g" },
-      { nb: 4, biscuits: "200 g", banane: "320 g", laitconcentre: "200 g", creme: "200 ml", beurre: "80 g" },
-      { nb: 5, biscuits: "250 g", banane: "400 g", laitconcentre: "250 g", creme: "250 ml", beurre: "100 g" },
-      { nb: 6, biscuits: "300 g", banane: "480 g", laitconcentre: "300 g", creme: "300 ml", beurre: "120 g" },
-      { nb: 7, biscuits: "350 g", banane: "560 g", laitconcentre: "350 g", creme: "350 ml", beurre: "140 g" },
-      { nb: 8, biscuits: "400 g", banane: "640 g", laitconcentre: "400 g", creme: "400 ml", beurre: "160 g" },
-      { nb: 9, biscuits: "450 g", banane: "720 g", laitconcentre: "450 g", creme: "450 ml", beurre: "180 g" },
-      { nb: 10, biscuits: "500 g", banane: "800 g", laitconcentre: "500 g", creme: "500 ml", beurre: "200 g" },
-      { nb: 11, biscuits: "550 g", banane: "880 g", laitconcentre: "550 g", creme: "550 ml", beurre: "220 g" },
-      { nb: 12, biscuits: "600 g", banane: "960 g", laitconcentre: "600 g", creme: "600 ml", beurre: "240 g" },
-      { nb: 13, biscuits: "650 g", banane: "1040 g", laitconcentre: "650 g", creme: "650 ml", beurre: "260 g" },
-      { nb: 14, biscuits: "700 g", banane: "1120 g", laitconcentre: "700 g", creme: "700 ml", beurre: "280 g" },
-      { nb: 15, biscuits: "750 g", banane: "1200 g", laitconcentre: "750 g", creme: "750 ml", beurre: "300 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🍪", titre: "Base", detail: "Mixer les biscuits et les lier au beurre fondu.", badge: null },
-      { icone: "🥧", titre: "Tasser", detail: "Tasser dans un moule et réfrigérer.", badge: null },
-      { icone: "🍯", titre: "Toffee", detail: "Cuire le lait concentré jusqu'à confiture de lait épaisse.", badge: null },
-      { icone: "🥄", titre: "Étaler", detail: "Étaler le toffee refroidi sur la base.", badge: null },
-      { icone: "🍌", titre: "Bananes", detail: "Disposer des rondelles de banane.", badge: null },
-      { icone: "🥛", titre: "Chantilly", detail: "Couvrir d'une généreuse chantilly.", badge: null },
-      { icone: "🍫", titre: "Servir", detail: "Râper un peu de chocolat dessus et servir frais.", badge: null }
     ]
   },
   torrijas: {
@@ -23363,43 +22806,6 @@ Object.assign(recettes, {
       { icone: "🥣", titre: "Verser", detail: "Répartir dans des coupelles.", badge: null },
       { icone: "🍪", titre: "Garnir", detail: "Poser un biscuit (galleta) sur chaque crème.", badge: null },
       { icone: "❄️", titre: "Servir", detail: "Saupoudrer de cannelle et servir frais.", badge: null }
-    ]
-  },
-  mochi: {
-    nom: "Mochi",
-    cat: "desserts", pays: "japon",
-    base: 4,
-    temps: "40 min",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🍡",
-    dateAjout: "2026-06-29T14:00:00",
-    description: "Petites bouchées de pâte de riz gluant moelleuse et élastique, fourrées de pâte de haricot rouge sucrée. La douceur japonaise par excellence.",
-    tableauMochi: [
-      { nb: 1, farineRiz: "70 g", sucre: "30 g", haricotsrouges: "30 g" },
-      { nb: 2, farineRiz: "140 g", sucre: "60 g", haricotsrouges: "60 g" },
-      { nb: 3, farineRiz: "210 g", sucre: "90 g", haricotsrouges: "90 g" },
-      { nb: 4, farineRiz: "280 g", sucre: "120 g", haricotsrouges: "120 g" },
-      { nb: 5, farineRiz: "350 g", sucre: "150 g", haricotsrouges: "150 g" },
-      { nb: 6, farineRiz: "420 g", sucre: "180 g", haricotsrouges: "180 g" },
-      { nb: 7, farineRiz: "490 g", sucre: "210 g", haricotsrouges: "210 g" },
-      { nb: 8, farineRiz: "560 g", sucre: "240 g", haricotsrouges: "240 g" },
-      { nb: 9, farineRiz: "630 g", sucre: "270 g", haricotsrouges: "270 g" },
-      { nb: 10, farineRiz: "700 g", sucre: "300 g", haricotsrouges: "300 g" },
-      { nb: 11, farineRiz: "770 g", sucre: "330 g", haricotsrouges: "330 g" },
-      { nb: 12, farineRiz: "840 g", sucre: "360 g", haricotsrouges: "360 g" },
-      { nb: 13, farineRiz: "910 g", sucre: "390 g", haricotsrouges: "390 g" },
-      { nb: 14, farineRiz: "980 g", sucre: "420 g", haricotsrouges: "420 g" },
-      { nb: 15, farineRiz: "1050 g", sucre: "450 g", haricotsrouges: "450 g" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🫘", titre: "Anko", detail: "Cuire les haricots rouges avec du sucre en pâte lisse (anko).", badge: null },
-      { icone: "⚪", titre: "Bouler", detail: "Former de petites billes d'anko, réserver au frais.", badge: null },
-      { icone: "🥣", titre: "Pâte", detail: "Mélanger farine de riz gluant, sucre et eau.", badge: null },
-      { icone: "💨", titre: "Cuire", detail: "Cuire la pâte à la vapeur (ou au micro-ondes) en remuant.", badge: null },
-      { icone: "🌾", titre: "Travailler", detail: "Travailler la pâte sur de la fécule jusqu'à lisse.", badge: null },
-      { icone: "🤏", titre: "Garnir", detail: "Aplatir, déposer une bille d'anko et refermer.", badge: null },
-      { icone: "🍽️", titre: "Servir", detail: "Rouler dans la fécule et servir frais.", badge: null }
     ]
   },
   kakigori: {

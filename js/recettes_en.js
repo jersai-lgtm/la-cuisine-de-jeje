@@ -47789,40 +47789,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "wontonsoupe": {
-  "nom": "Wonton Soup",
-  "description": "A clear broth filled with tender Chinese dumplings of pork and shrimp. Comforting, fragrant with ginger and scallion.",
-  "etapes": [
-   {
-    "titre": "Filling",
-    "detail": "Finely chop the pork and shrimp, then mix with ginger, soy sauce and scallion."
-   },
-   {
-    "titre": "Fold",
-    "detail": "Spoon the filling onto squares of dough and fold them into wontons."
-   },
-   {
-    "titre": "Broth",
-    "detail": "Make a chicken broth infused with ginger."
-   },
-   {
-    "titre": "Poach",
-    "detail": "Poach the wontons until they float to the surface."
-   },
-   {
-    "titre": "Season",
-    "detail": "Add soy sauce, sesame oil and scallion."
-   },
-   {
-    "titre": "Plate",
-    "detail": "Divide the wontons among the bowls."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Pour in the piping-hot broth and serve right away."
-   }
-  ]
- },
  "scallionpancake": {
   "nom": "Scallion Pancake",
   "description": "A flaky Chinese pancake layered with oil and scallion, crisp and golden from the pan. The ultimate street snack.",
@@ -47993,44 +47959,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "masaladosa": {
-  "nom": "Masala Dosa",
-  "description": "A large, crisp crepe of fermented rice and lentils, rolled around a spiced potato mash. The icon of South India.",
-  "etapes": [
-   {
-    "titre": "Batter",
-    "detail": "Blend soaked rice and lentils, then let ferment overnight."
-   },
-   {
-    "titre": "Masala",
-    "detail": "Cook potatoes, onion, turmeric, and mustard seeds."
-   },
-   {
-    "titre": "Griddle",
-    "detail": "Heat an oiled griddle."
-   },
-   {
-    "titre": "Spread",
-    "detail": "Pour the batter and spread it very thin in a spiral."
-   },
-   {
-    "titre": "Crisp",
-    "detail": "Cook until crisp and golden."
-   },
-   {
-    "titre": "Fill",
-    "detail": "Spoon on the potato masala."
-   },
-   {
-    "titre": "Roll",
-    "detail": "Fold the dosa over the filling."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve with coconut chutney and sambar."
-   }
-  ]
- },
  "panipuri": {
   "nom": "Pani Puri",
   "description": "Small, crisp hollow spheres filled with potato, chickpeas, and a spiced minty water. The flavor explosion of Indian street food.",
@@ -48062,40 +47990,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Eat right away, in one bite!"
-   }
-  ]
- },
- "pakora": {
-  "nom": "Pakora",
-  "description": "Vegetable fritters coated in a spiced chickpea-flour batter and fried until crisp. The monsoon snack, perfect with a cup of chai.",
-  "etapes": [
-   {
-    "titre": "Batter",
-    "detail": "Mix chickpea flour, spices, and water into a thick batter."
-   },
-   {
-    "titre": "Spices",
-    "detail": "Add turmeric, cumin, chili, and cilantro."
-   },
-   {
-    "titre": "Veggies",
-    "detail": "Thinly slice onion, potato, and spinach."
-   },
-   {
-    "titre": "Coat",
-    "detail": "Coat the vegetables in the batter."
-   },
-   {
-    "titre": "Heat",
-    "detail": "Heat the oil to 180 °C."
-   },
-   {
-    "titre": "Fry",
-    "detail": "Fry in small clusters until crisp and golden."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve with a mint chutney."
    }
   ]
  },
@@ -48164,78 +48058,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Serve with yogurt, butter, and pickles."
-   }
-  ]
- },
- "biryani": {
-  "nom": "Biryani",
-  "description": "Fragrant basmati rice layered and cooked with yogurt-and-spice marinated chicken, saffron, and fried onions. The ultimate Indian celebration dish.",
-  "etapes": [
-   {
-    "titre": "Marinate",
-    "detail": "Marinate the chicken in yogurt, ginger-garlic, and spices."
-   },
-   {
-    "titre": "Onions",
-    "detail": "Fry onions until golden brown (birista)."
-   },
-   {
-    "titre": "Rice",
-    "detail": "Par-cook the basmati rice with cardamom and bay leaf (70%)."
-   },
-   {
-    "titre": "Saffron",
-    "detail": "Steep the saffron in warm milk."
-   },
-   {
-    "titre": "Layer",
-    "detail": "Alternate layers of chicken and rice, scattering fried onions."
-   },
-   {
-    "titre": "Dum",
-    "detail": "Cover tightly and steam-cook over low heat for 25 min."
-   },
-   {
-    "titre": "Fluff",
-    "detail": "Gently fluff with a fork."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve with a cucumber raita."
-   }
-  ]
- },
- "chanamasala": {
-  "nom": "Chana Masala",
-  "description": "Chickpeas simmered in a spiced tomato sauce with toasted spices. Vegetarian, budget-friendly, and deeply fragrant.",
-  "etapes": [
-   {
-    "titre": "Base",
-    "detail": "Sauté onion, garlic, and ginger."
-   },
-   {
-    "titre": "Spices",
-    "detail": "Add cumin, coriander, turmeric, and garam masala."
-   },
-   {
-    "titre": "Tomato",
-    "detail": "Stir in tomato and cook down to a thick masala."
-   },
-   {
-    "titre": "Chickpeas",
-    "detail": "Add the chickpeas and a splash of water."
-   },
-   {
-    "titre": "Simmer",
-    "detail": "Simmer 20 min to let them soak up the flavor."
-   },
-   {
-    "titre": "Finish",
-    "detail": "Add amchoor (or lemon) and cilantro."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve with rice or naan."
    }
   ]
  },
@@ -48311,40 +48133,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "chilaquiles": {
-  "nom": "Chilaquiles",
-  "description": "Fried tortillas simmered in salsa, topped with egg, crema, and cheese. Mexico's zero-waste breakfast: spicy and comforting.",
-  "etapes": [
-   {
-    "titre": "Tortillas",
-    "detail": "Cut tortillas into triangles and fry them (totopos)."
-   },
-   {
-    "titre": "Salsa",
-    "detail": "Blend tomato, chili, and onion, then cook into a salsa."
-   },
-   {
-    "titre": "Toss",
-    "detail": "Toss the totopos into the hot salsa right before serving."
-   },
-   {
-    "titre": "Egg",
-    "detail": "Cook a fried or scrambled egg."
-   },
-   {
-    "titre": "Top",
-    "detail": "Crown with crema, fresh cheese, and raw onion."
-   },
-   {
-    "titre": "Finish",
-    "detail": "Scatter with cilantro."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve right away to keep the crunch."
-   }
-  ]
- },
  "gorditas": {
   "nom": "Gorditas",
   "description": "Thick corn cakes, split open and stuffed with shredded meat and cheese. The corn sandwich of Mexican markets.",
@@ -48413,74 +48201,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "cochinitapibil": {
-  "nom": "Cochinita Pibil",
-  "description": "Pork marinated in achiote and citrus juice, slow-cooked until it falls apart. The marvel of the Yucatán, served in tacos.",
-  "etapes": [
-   {
-    "titre": "Marinade",
-    "detail": "Thin the achiote paste with orange and lime juice."
-   },
-   {
-    "titre": "Marinate",
-    "detail": "Coat the pork and marinate overnight."
-   },
-   {
-    "titre": "Wrap",
-    "detail": "Wrap in banana leaves."
-   },
-   {
-    "titre": "Cook",
-    "detail": "Cook covered at 150 °C for 3 hr."
-   },
-   {
-    "titre": "Shred",
-    "detail": "Shred the meat in its own juices."
-   },
-   {
-    "titre": "Onions",
-    "detail": "Make lime-pickled red onions."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve in tacos with onions and habanero."
-   }
-  ]
- },
- "birria": {
-  "nom": "Birria",
-  "description": "Beef (or goat) stew simmered in a dried-chili sauce, served with its consommé for dipping the tacos. Rich, deep, and viral.",
-  "etapes": [
-   {
-    "titre": "Chilies",
-    "detail": "Toast and rehydrate the dried chilies (guajillo, ancho)."
-   },
-   {
-    "titre": "Sauce",
-    "detail": "Blend chilies, tomato, garlic, and spices into an adobo."
-   },
-   {
-    "titre": "Coat",
-    "detail": "Coat the beef in the sauce and marinate."
-   },
-   {
-    "titre": "Simmer",
-    "detail": "Cover with water and simmer 2 hr until fork-tender."
-   },
-   {
-    "titre": "Shred",
-    "detail": "Shred the meat, keeping the consommé."
-   },
-   {
-    "titre": "Tacos",
-    "detail": "Dip tortillas in the fat and griddle them filled."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve the tacos with a bowl of consommé."
-   }
-  ]
- },
  "aguachile": {
   "nom": "Aguachile",
   "description": "Raw shrimp \"cooked\" in lime juice in a fiery green-chile and cucumber broth. The fast, blazing-hot ceviche of Sinaloa.",
@@ -48512,74 +48232,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Serve right away, ice-cold, with tostadas."
-   }
-  ]
- },
- "tresleches": {
-  "nom": "Tres Leches",
-  "description": "Sponge cake soaked in three milks (condensed, evaporated, whole), crowned with whipped cream. Ultra-moist and melting, the Latin birthday cake.",
-  "etapes": [
-   {
-    "titre": "Sponge",
-    "detail": "Whip up a light sponge, bake it, and let it cool slightly."
-   },
-   {
-    "titre": "Three milks",
-    "detail": "Mix together condensed, evaporated, and whole milk."
-   },
-   {
-    "titre": "Poke",
-    "detail": "Poke holes all over the sponge with a fork."
-   },
-   {
-    "titre": "Soak",
-    "detail": "Pour over the milk mixture and let it soak in."
-   },
-   {
-    "titre": "Chill",
-    "detail": "Refrigerate for several hours."
-   },
-   {
-    "titre": "Whipped cream",
-    "detail": "Whip the cream to soft peaks."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Cover with whipped cream and cinnamon, serve cold."
-   }
-  ]
- },
- "cannoli": {
-  "nom": "Cannoli",
-  "description": "Crisp fried pastry tubes filled with a sweet ricotta cream and chocolate chips. The Sicilian marvel.",
-  "etapes": [
-   {
-    "titre": "Dough",
-    "detail": "Knead a marsala dough and roll it out very thin."
-   },
-   {
-    "titre": "Shape",
-    "detail": "Cut out rounds and wrap them around the tubes."
-   },
-   {
-    "titre": "Fry",
-    "detail": "Fry until blistered and golden, then let cool."
-   },
-   {
-    "titre": "Cream",
-    "detail": "Drain and whip the ricotta with powdered sugar."
-   },
-   {
-    "titre": "Fold in",
-    "detail": "Add chocolate chips and orange zest."
-   },
-   {
-    "titre": "Fill",
-    "detail": "Pipe the cream into both ends of the tubes."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Dust with powdered sugar and serve right away (or they go soft)."
    }
   ]
  },
@@ -48651,40 +48303,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "pannacotta": {
-  "nom": "Panna Cotta",
-  "description": "A vanilla-scented cooked cream set with gelatin, silky and wobbly, topped with a red-berry coulis. Simple Italian elegance.",
-  "etapes": [
-   {
-    "titre": "Infuse",
-    "detail": "Heat the cream, milk, sugar and vanilla without boiling."
-   },
-   {
-    "titre": "Gelatin",
-    "detail": "Soften the gelatin, then dissolve it in the hot cream."
-   },
-   {
-    "titre": "Pour",
-    "detail": "Divide among ramekins or small glasses."
-   },
-   {
-    "titre": "Set",
-    "detail": "Chill at least 4 h until set with a gentle wobble."
-   },
-   {
-    "titre": "Coulis",
-    "detail": "Blend and strain red berries with a little sugar."
-   },
-   {
-    "titre": "Top",
-    "detail": "Spoon the coulis over just before serving."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve well chilled (or unmold onto a plate)."
-   }
-  ]
- },
  "semifreddo": {
   "nom": "Semifreddo",
   "description": "An Italian frozen almond mousse, creamy and never rock-hard, made without an ice cream machine. Somewhere between gelato and mousse, melting on the tongue.",
@@ -48716,142 +48334,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Unmold and slice, serving straight from the freezer."
-   }
-  ]
- },
- "affogato": {
-  "nom": "Affogato",
-  "description": "A scoop of vanilla ice cream \"drowned\" under a hot espresso. The simplest and chicest Italian coffee dessert, an instant hot-and-cold treat.",
-  "etapes": [
-   {
-    "titre": "Ice cream",
-    "detail": "Make (or take out) a good vanilla ice cream."
-   },
-   {
-    "titre": "Cup",
-    "detail": "Drop one or two scoops into a chilled cup."
-   },
-   {
-    "titre": "Espresso",
-    "detail": "Pull a strong, piping-hot espresso."
-   },
-   {
-    "titre": "Drown",
-    "detail": "Pour the espresso over the ice cream just before serving."
-   },
-   {
-    "titre": "Top",
-    "detail": "Scatter with almonds or chocolate shavings."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Serve immediately, to enjoy as it melts."
-   }
-  ]
- },
- "parisbrest": {
-  "nom": "Paris-Brest",
-  "description": "A ring of choux pastry filled with a praline mousseline cream and scattered with almonds. The great pastry classic invented for a cycling race.",
-  "etapes": [
-   {
-    "titre": "Choux",
-    "detail": "Make a choux pastry (water, butter, flour, eggs)."
-   },
-   {
-    "titre": "Pipe",
-    "detail": "Pipe a ring onto the baking sheet and scatter with almonds."
-   },
-   {
-    "titre": "Bake",
-    "detail": "Bake without opening the oven until golden and dry."
-   },
-   {
-    "titre": "Praline",
-    "detail": "Make an almond-hazelnut praline."
-   },
-   {
-    "titre": "Mousseline",
-    "detail": "Whip up a praline mousseline cream."
-   },
-   {
-    "titre": "Slice",
-    "detail": "Slice the ring in half horizontally."
-   },
-   {
-    "titre": "Fill",
-    "detail": "Pipe in the cream generously and close it up."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Dust with powdered sugar and keep chilled."
-   }
-  ]
- },
- "canele": {
-  "nom": "Cannelé",
-  "description": "A small pastry from Bordeaux with a caramelized, crunchy crust and a soft center scented with rum and vanilla. The perfect contrast.",
-  "etapes": [
-   {
-    "titre": "Infuse",
-    "detail": "Heat the milk with the vanilla and butter."
-   },
-   {
-    "titre": "Batter",
-    "detail": "Mix the flour, sugar and eggs, then the warm milk."
-   },
-   {
-    "titre": "Flavor",
-    "detail": "Add the rum and smooth the batter (fluid like crepe batter)."
-   },
-   {
-    "titre": "Rest",
-    "detail": "Let it rest 24 h in the fridge (essential)."
-   },
-   {
-    "titre": "Molds",
-    "detail": "Butter (or wax) the cannelé molds."
-   },
-   {
-    "titre": "Bake",
-    "detail": "Bake in a very hot oven for a dark crust."
-   },
-   {
-    "titre": "Unmold",
-    "detail": "Unmold right away: crunchy crust, soft center."
-   }
-  ]
- },
- "banoffee": {
-  "nom": "Banoffee Pie",
-  "description": "A no-bake English pie: a biscuit base, dulce de leche, bananas and whipped cream. Decadent, comforting and unstoppable.",
-  "etapes": [
-   {
-    "titre": "Base",
-    "detail": "Blitz the biscuits and bind them with melted butter."
-   },
-   {
-    "titre": "Press",
-    "detail": "Press into a pan and chill."
-   },
-   {
-    "titre": "Toffee",
-    "detail": "Cook the condensed milk into a thick dulce de leche."
-   },
-   {
-    "titre": "Spread",
-    "detail": "Spread the cooled toffee over the base."
-   },
-   {
-    "titre": "Bananas",
-    "detail": "Arrange banana slices on top."
-   },
-   {
-    "titre": "Whipped cream",
-    "detail": "Cover with a generous layer of whipped cream."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Grate a little chocolate over the top and serve chilled."
    }
   ]
  },
@@ -48954,40 +48436,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Dust with cinnamon and serve chilled."
-   }
-  ]
- },
- "mochi": {
-  "nom": "Mochi",
-  "description": "Soft, chewy little bites of glutinous rice dough filled with sweet red bean paste. The quintessential Japanese sweet.",
-  "etapes": [
-   {
-    "titre": "Anko",
-    "detail": "Cook the red beans with sugar into a smooth paste (anko)."
-   },
-   {
-    "titre": "Roll",
-    "detail": "Form small balls of anko and chill them."
-   },
-   {
-    "titre": "Dough",
-    "detail": "Mix glutinous rice flour, sugar, and water."
-   },
-   {
-    "titre": "Cook",
-    "detail": "Steam the dough (or microwave it), stirring as it cooks."
-   },
-   {
-    "titre": "Knead",
-    "detail": "Work the dough on a bed of starch until smooth."
-   },
-   {
-    "titre": "Fill",
-    "detail": "Flatten, place an anko ball inside, and seal it up."
-   },
-   {
-    "titre": "Serve",
-    "detail": "Roll in starch and serve fresh."
    }
   ]
  },
