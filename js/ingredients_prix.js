@@ -349,6 +349,7 @@ const INGREDIENTS_PRIX = {
   crevettes:      { prixKg: 18.0, calPer100g: 99,   lipSat: 0.4,  sucre: 0,    sel: 0.9,  fibres: 0,   prot: 24,   flv: 0 },
   crevette:       { prixKg: 18.0, calPer100g: 99,   lipSat: 0.4,  sucre: 0,    sel: 0.9,  fibres: 0,   prot: 24,   flv: 0 },
   crabe:          { prixKg: 24.0, calPer100g: 83,   lipSat: 0.1,  sucre: 0,    sel: 0.8,  fibres: 0,   prot: 18,   flv: 0 },
+  huitres:        { prixUnite: 1.00, cal: 7,         lipSat: 0,    sucre: 0.4,  sel: 0.1,  fibres: 0,   prot: 0.9,  flv: 0 },
   champignon:     { prixKg: 6.00,  calPer100g: 22,   lipSat: 0,    sucre: 1,    sel: 0,    fibres: 2,   prot: 3.1,  flv: 100 },
   harissa:        { prixKg: 12.0,  calPer100g: 70,   lipSat: 0.5,  sucre: 3,    sel: 3,    fibres: 3,   prot: 2,    flv: 80 },
   cornichon:      { prixKg: 6.00,  calPer100g: 14,   lipSat: 0,    sucre: 1.5,  sel: 2,    fibres: 1.2, prot: 0.4,  flv: 100 },
@@ -899,6 +900,7 @@ const POIDS_UNITAIRE = {
   serrano: 30,
   tomatecerise: 8, tomatescerises: 8, feuillebrick: 10, feuillesbrick: 10,
   bagel: 85, escargot: 10, figue: 50, figues: 50, painpanini: 90, painmie: 30, paincomplet: 35, tortilla: 50, tortillas: 50,
+  huitres: 10,
 };
 
 // === Parser tolérant pour le Nutri-Score ===
@@ -1264,7 +1266,7 @@ const INGREDIENTS_LABELS = {
   // == Poissons & fruits de mer ==
   saumon: "🐟 Saumon fumé", thon: "🐟 Thon", poisson: "🐟 Poisson",
   dorade: "🐟 Dorade", poulpe: "🐙 Poulpe", crevettes: "🦐 Crevettes",
-  moules: "🦪 Moules", anchois: "🐟 Anchois", anchoix: "🐟 Anchois",
+  moules: "🦪 Moules", anchois: "🐟 Anchois", anchoix: "🐟 Anchois", huitres: "🦪 Huîtres",
   // == Légumes ==
   tomates: "🍅 Tomates", tomate: "🍅 Tomates", tomateCerise: "🍅 Tomates cerises",
   oignon: "🧅 Oignon", oignons: "🧅 Oignons", echalote: "🧅 Échalote",

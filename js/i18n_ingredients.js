@@ -54,7 +54,7 @@ window.I18N_ING = {
   "🥓 Guanciale": "🥓 Guanciale", "🌭 Salami": "🌭 Salami", "🌭 Chorizo": "🌭 Chorizo", "🌶️ Nduja": "🌶️ Nduja",
   "🍖 Prosciutto di Parma": "🍖 Prosciutto di Parma", "🫀 Foies de volaille": "🫀 Chicken livers", "💪 Protéine en poudre": "💪 Protein powder",
   "🐟 Saumon fumé": "🐟 Smoked salmon", "🐟 Thon": "🐟 Tuna", "🐟 Poisson": "🐟 Fish", "🐟 Dorade": "🐟 Sea bream",
-  "🐙 Poulpe": "🐙 Octopus", "🦪 Moules": "🦪 Mussels", "🐟 Anchois": "🐟 Anchovies", "🍅 Tomates": "🍅 Tomatoes",
+  "🐙 Poulpe": "🐙 Octopus", "🦪 Moules": "🦪 Mussels", "🐟 Anchois": "🐟 Anchovies", "🍅 Tomates": "🍅 Tomatoes", "🦪 Huîtres": "🦪 Oysters",
   "🍅 Tomates cerises": "🍅 Cherry tomatoes", "🧅 Oignon": "🧅 Onion", "🧅 Oignons": "🧅 Onions", "🧅 Échalote": "🧅 Shallot",
   "🧄 Ail": "🧄 Garlic", "🥕 Carotte": "🥕 Carrot", "🥕 Carottes": "🥕 Carrots", "🥒 Courgette": "🥒 Zucchini",
   "🍆 Aubergine": "🍆 Eggplant", "🍆 Aubergines": "🍆 Eggplants", "🫑 Poivron": "🫑 Bell pepper", "🍄 Shiitake": "🍄 Shiitake",
