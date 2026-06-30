@@ -2248,6 +2248,7 @@ Object.assign(recettes, {
     ]
   },
   lobsterroll: {
+  liees: ["mayonnaise"],
     nom: "Lobster Roll",
     cat: "encas",
     pays: "usa",
@@ -2287,6 +2288,7 @@ Object.assign(recettes, {
     ]
   },
   poboy: {
+  liees: ["mayonnaise"],
     nom: "Po'Boy aux Crevettes",
     cat: "encas",
     pays: "usa",
@@ -2324,6 +2326,7 @@ Object.assign(recettes, {
     ]
   },
   sloppyjoe: {
+  liees: ["ketchup"],
     nom: "Sloppy Joe",
     cat: "encas",
     pays: "usa",
@@ -2437,6 +2440,7 @@ Object.assign(recettes, {
     ]
   },
   katsusando: {
+  liees: ["ketchup"],
     nom: "Katsu Sando au Porc",
     cat: "encas",
     pays: "japon",
@@ -2475,6 +2479,7 @@ Object.assign(recettes, {
     ]
   },
   onigirazu: {
+  liees: ["mayonnaise"],
     nom: "Onigirazu",
     cat: "encas",
     pays: "japon",
@@ -2513,6 +2518,7 @@ Object.assign(recettes, {
     ]
   },
   falafelwrap: {
+  liees: ["painpita"],
     nom: "Falafel Wrap",
     cat: "encas",
     pays: "liban",
@@ -2588,6 +2594,7 @@ Object.assign(recettes, {
     ]
   },
   boulesproteinees: {
+  liees: ["beurrecacahuete"],
     nom: "Boules Protéinées Avoine-Whey",
     cat: "encas", pays: "monde",
     base: 1,
@@ -2732,6 +2739,7 @@ Object.assign(recettes, {
     ]
   },
   shakeproteinemaison: {
+  liees: ["beurrecacahuete"],
     nom: "Shake Protéiné Maison",
     cat: "encas", pays: "monde",
     base: 1,

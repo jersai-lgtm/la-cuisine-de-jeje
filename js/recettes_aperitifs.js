@@ -2078,7 +2078,7 @@ tapenade: {
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🌽",
     description: "Le maïs grillé des rues de Mexico : épi rôti, enrobé de crème citronnée, roulé dans le fromage et saupoudré de paprika. Réconfortant et addictif.",
     saisons: ["ete"],
-    liees: [],
+    liees: ["mayonnaise"],
     ingredients: {},
     tableauElote: [
       { nb: 1, mais: "150 g", mayonnaise: "15 g", creme: "15 ml", parmesan: "15 g", citron: "5 ml", paprika: "2 g", coriandre: "3 g" },
@@ -2481,6 +2481,7 @@ tapenade: {
     ]
   },
   salchipapas: {
+  liees: ["mayonnaise","ketchup"],
     nom: "Salchipapas",
     cat: "aperitifs",
     pays: "perou",
@@ -2675,6 +2676,7 @@ tapenade: {
     ]
   },
   bourekalg: {
+  liees: ["patefeuilletee"],
     nom: "Bourek Algérien",
     cat: "aperitifs", pays: "algerie",
     base: 4,
@@ -2750,6 +2752,7 @@ tapenade: {
     ]
   },
   tequenos: {
+  liees: ["patefeuilletee"],
     nom: "Tequeños",
     cat: "aperitifs", pays: "venezuela",
     base: 4,

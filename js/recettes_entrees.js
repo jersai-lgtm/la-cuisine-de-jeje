@@ -2846,6 +2846,7 @@ oeufmayo: {
     ]
   },
   bourekas: {
+  liees: ["patefeuilletee"],
     nom: "Bourekas",
     cat: "entrees", pays: "israel",
     base: 4,
@@ -2921,6 +2922,7 @@ oeufmayo: {
     ]
   },
   gibanica: {
+  liees: ["patefeuilletee"],
     nom: "Gibanica",
     cat: "entrees", pays: "serbie",
     base: 4,

@@ -1251,6 +1251,7 @@ Object.assign(recettes, {
     ]
   },
   couscousfalafels: {
+  liees: ["harissa"],
     nom: "Couscous aux Falafels",
     cat: "healthy",
     pays: "maroc",

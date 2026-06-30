@@ -1400,7 +1400,7 @@ Object.assign(recettes, {
     base: 4, temps: "35 min", niveau: "⭐ Facile", emoji: "🫑",
     description: "La salade tunisienne de poivrons et tomates grillés, pelés et hachés au couteau, relevée d'ail, de harissa et d'huile d'olive. Fumée et ensoleillée.",
     saisons: ["ete"],
-    liees: ["painpita"],
+    liees: ["harissa","painpita"],
     ingredients: {},
     tableauSlatamechouia: [
       { nb: 1, poivron: "120 g", tomate: "90 g", ail: "5 g", huileolive: "12 ml", harissa: "5 g", citron: "5 ml", cumin: "1 g" },

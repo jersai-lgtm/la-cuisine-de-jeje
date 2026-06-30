@@ -1575,8 +1575,7 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Dresser le poulet nappé de piperade, accompagné de riz blanc ou de polenta crémeuse.", badge: null }
     ]
   },
-  lasagneverdure: {
-    liees: ["bechamel","saucetomate"],
+  lasagneverdure: {liees: ["bechamel","saucetomate","lasagne"],
     nom: "Lasagnes aux Légumes",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 6,
@@ -1719,8 +1718,7 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Servir", detail: "Arroser d'un filet de jus de citron et accompagner de riz pilaf, d'écrasé de pommes de terre ou de légumes vapeur.", badge: null }
     ]
   },
-  lasagneviande: {
-    liees: ["bechamel","saucetomate"],
+  lasagneviande: {liees: ["bechamel","saucetomate","lasagne"],
     nom: "Lasagnes Bolognaise",
     cat: "plats", saisons: ["ete"], pays: "italie",
     base: 6,
@@ -12634,7 +12632,7 @@ Object.assign(recettes, {
     nom: "Ojja Merguez", cat: "plats", pays: "tunisie", dateAjout: "2026-06-20T10:00:00",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍳",
     description: "La poêlée tunisienne d'œufs brouillés dans une sauce tomate épicée à la harissa, avec merguez et poivrons. À saucer généreusement avec du pain.",
-    liees: ["painpita"],
+    liees: ["harissa","painpita"],
     ingredients: {},
     tableauOjja: [
       { nb: 1, oeuf: "100 g", merguez: "80 g", tomate: "100 g", poivron: "50 g", ail: "5 g", harissa: "10 g", huileolive: "10 ml" },
@@ -14687,6 +14685,7 @@ Object.assign(recettes, {
     ]
   },
   karekare: {
+  liees: ["beurrecacahuete"],
     nom: "Kare-Kare",
     cat: "plats", pays: "philippines",
     base: 4,
@@ -14761,6 +14760,7 @@ Object.assign(recettes, {
     ]
   },
   cornishpasty: {
+  liees: ["patebrisee"],
     nom: "Cornish Pasty",
     cat: "plats", pays: "angleterre",
     base: 4,
@@ -16149,6 +16149,7 @@ Object.assign(recettes, {
     ]
   },
   groundnutsoup: {
+  liees: ["beurrecacahuete"],
     nom: "Soupe à l'Arachide",
     cat: "soupes", pays: "ghana",
     base: 4,
@@ -16452,8 +16453,7 @@ Object.assign(recettes, {
       { icone: "🍚", titre: "Servir", detail: "Servir avec riz, foutou ou placali.", badge: null }
     ]
   },
-  saucearachide: {
-    liees: ["foutou"],
+  saucearachide: {liees: ["foutou","beurrecacahuete"],
     nom: "Sauce Arachide",
     cat: "plats", pays: "cotedivoire",
     base: 4,
@@ -17662,6 +17662,7 @@ Object.assign(recettes, {
     ]
   },
   hawawshi: {
+  liees: ["painpita"],
     nom: "Hawawshi",
     cat: "plats", pays: "egypte",
     base: 4,

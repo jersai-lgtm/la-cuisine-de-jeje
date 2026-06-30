@@ -2740,7 +2740,7 @@ Object.assign(recettes, {
     nom: "Lablabi", cat: "soupes", pays: "tunisie", dateAjout: "2026-06-20T10:00:00",
     base: 4, temps: "30 min", niveau: "⭐ Facile", emoji: "🍲",
     description: "La soupe de pois chiches tunisienne sur lit de pain rassis : bouillon à l'ail et au cumin, harissa, œuf poché et filet d'huile d'olive. Réconfortant et bon marché.",
-    liees: ["painpita"],
+    liees: ["harissa","painpita"],
     ingredients: {},
     tableauLablabi: [
       { nb: 1, poischiches: "90 g", pain: "40 g", ail: "6 g", cumin: "2 g", harissa: "8 g", oeuf: "50 g", huileolive: "10 ml", citron: "5 ml" },

@@ -1745,6 +1745,7 @@ Object.assign(recettes, {
     ]
   },
   skyrbowlproteine: {
+  liees: ["beurrecacahuete"],
     nom: "Skyr Bowl Protéiné",
     cat: "brunch", pays: "monde",
     base: 1,
@@ -1817,6 +1818,7 @@ Object.assign(recettes, {
     ]
   },
   porridgewhey: {
+  liees: ["beurrecacahuete"],
     nom: "Porridge Protéiné à la Whey",
     cat: "brunch", pays: "monde",
     base: 1,
