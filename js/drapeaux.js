@@ -97,6 +97,11 @@ const DRAPEAUX = (function () {
   F.salvador   = wrap(ht("#0047AB", "#FFFFFF", "#0047AB"));
   F.honduras   = wrap(ht("#0073CF", "#FFFFFF", "#0073CF") + star(11,10,1,"#0073CF") + star(13.5,8.5,1,"#0073CF") + star(15,10,1,"#0073CF") + star(16.5,8.5,1,"#0073CF") + star(19,10,1,"#0073CF"));
   F.costarica  = wrap(`<rect width="30" height="3" fill="#002B7F"/><rect y="3" width="30" height="2" fill="#FFFFFF"/><rect y="5" width="30" height="10" fill="#CE1126"/><rect y="15" width="30" height="2" fill="#FFFFFF"/><rect y="17" width="30" height="3" fill="#002B7F"/>`);
+  F.uruguay    = wrap(`<rect width="30" height="20" fill="#FFFFFF"/><rect y="2.2" width="30" height="2.2" fill="#0038A8"/><rect y="6.6" width="30" height="2.2" fill="#0038A8"/><rect y="11" width="30" height="2.2" fill="#0038A8"/><rect y="15.4" width="30" height="2.2" fill="#0038A8"/><rect width="12" height="11" fill="#FFFFFF"/><circle cx="6" cy="5.5" r="2.5" fill="#FCD116"/>`);
+  F.chili      = wrap(`<rect width="30" height="10" fill="#FFFFFF"/><rect y="10" width="30" height="10" fill="#D52B1E"/><rect width="10" height="10" fill="#0039A6"/>` + star(5, 5, 2.2, "#FFFFFF"));
+  // --- Europe centrale / Asie (suite) ---
+  F.tchequie   = wrap(`<rect width="30" height="10" fill="#FFFFFF"/><rect y="10" width="30" height="10" fill="#D7141A"/><polygon points="0,0 15,10 0,20" fill="#11457E"/>`);
+  F.myanmar    = wrap(ht("#FECB00", "#34B233", "#EA2839") + star(15, 10, 2.5, "#FFFFFF"));
   // --- Régions / territoires (pas de drapeau national, icône thématique) ---
   F.polynesie  = wrap(ht("#CE1126", "#FFFFFF", "#CE1126") + `<circle cx="15" cy="10" r="2.5" fill="#FFD100"/>`);
   F.tibet      = wrap(`<rect width="30" height="20" fill="#9AC9E3"/><polygon points="2,18 9,6 14,13 19,4 28,18" fill="#FFFFFF"/>`);

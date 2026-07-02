@@ -49152,5 +49152,1733 @@ window.RECETTES_EN = {
     "detail": "Serve as a side or with rice."
    }
   ]
+ },
+ "chelokebab": {
+  "nom": "Chelo Kebab",
+  "description": "Saffron basmati rice served with grilled ground lamb kebabs, topped with a raw egg yolk and sumac. Iran's national dish.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Cook the basmati rice, setting aside a portion to be saffron-tinted."
+   },
+   {
+    "titre": "Kebab",
+    "detail": "Mix ground lamb, grated onion, and spices."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape into wide, flat skewers."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over the barbecue, watching the cooking closely."
+   },
+   {
+    "titre": "Saffron",
+    "detail": "Steep the saffron in a little hot water."
+   },
+   {
+    "titre": "Gild",
+    "detail": "Mix the reserved rice with the saffron water and melted butter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the rice topped with the kebab, egg yolk and sumac on the side."
+   }
+  ]
+ },
+ "tahchin": {
+  "nom": "Tahchin",
+  "description": "Iranian saffron and yogurt rice cake filled with chicken, with a golden, crispy crust. Stunning when unmolded.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Cook the basmati rice until three-quarters done."
+   },
+   {
+    "titre": "Chicken",
+    "detail": "Cook and shred the chicken marinated in saffron."
+   },
+   {
+    "titre": "Saffron",
+    "detail": "Steep the saffron, then mix into the yogurt and egg yolk."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Fold half of the rice into this mixture."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Line a buttered pan and alternate layers of saffron rice and chicken."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake covered until a golden crust forms on the bottom."
+   },
+   {
+    "titre": "Unmold",
+    "detail": "Carefully unmold to reveal the crispy crust."
+   }
+  ]
+ },
+ "bastilla": {
+  "nom": "Bastilla",
+  "description": "Moroccan flaky pastry pie with chicken, almonds, and cinnamon, sweet and savory at once, dusted with powdered sugar. The centerpiece of festive meals.",
+  "etapes": [
+   {
+    "titre": "Chicken",
+    "detail": "Simmer the chicken with spices and onions, then shred."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Bind the cooking juices with beaten eggs (creamy style)."
+   },
+   {
+    "titre": "Almonds",
+    "detail": "Toast and crush the almonds, sweeten lightly."
+   },
+   {
+    "titre": "Line",
+    "detail": "Line a pan with buttered warka (phyllo) sheets, letting them overhang."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Layer the chicken, creamy egg, then the almonds."
+   },
+   {
+    "titre": "Close",
+    "detail": "Fold the sheets over to enclose the filling."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until golden and crispy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with powdered sugar and cinnamon in a crisscross pattern."
+   }
+  ]
+ },
+ "chapati": {
+  "nom": "Chapati",
+  "description": "A small Indian whole-wheat flatbread, cooked dry then puffed over an open flame. The everyday bread served with every meal.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead whole-wheat flour, water, and a pinch of salt into a soft dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the dough rest 20 minutes under a cloth."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Divide into balls and roll out into thin discs."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Dry-cook on a hot griddle until brown spots appear."
+   },
+   {
+    "titre": "Puff",
+    "detail": "Place directly over the flame to puff it up."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Brush with a little butter (ghee)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, stacked under a cloth."
+   }
+  ]
+ },
+ "uttapam": {
+  "nom": "Uttapam",
+  "description": "A thick South Indian pancake made from fermented rice and lentil batter, topped with onion and tomato cooked right in. The pancake of South India.",
+  "etapes": [
+   {
+    "titre": "Batter",
+    "detail": "Blend soaked rice and lentils, then let ferment overnight."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt the batter; it should be thick and airy."
+   },
+   {
+    "titre": "Griddle",
+    "detail": "Heat an oiled griddle."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Ladle the batter into a thick disc."
+   },
+   {
+    "titre": "Top",
+    "detail": "Immediately sprinkle with sliced onion and tomato."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook covered until golden, then flip."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with coconut chutney and sambar."
+   }
+  ]
+ },
+ "appam": {
+  "nom": "Appam",
+  "description": "An Indian coconut milk and fermented rice batter pancake with lacy, crispy edges and a soft center. A specialty of Kerala.",
+  "etapes": [
+   {
+    "titre": "Batter",
+    "detail": "Blend soaked rice with coconut milk into a smooth batter."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Add the yeast and let ferment for several hours."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the consistency with a little more coconut milk."
+   },
+   {
+    "titre": "Pan",
+    "detail": "Heat a rounded-bottom wok (appachatti) or a skillet."
+   },
+   {
+    "titre": "Swirl",
+    "detail": "Pour in the batter while swirling the pan to coat the sides."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook covered until the edges turn golden and lacy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a vegetable curry or stew."
+   }
+  ]
+ },
+ "seekhkebab": {
+  "nom": "Seekh Kebab",
+  "description": "Indian skewers of spiced ground meat molded around a skewer and chargrilled. The kebab that conquered all of South Asia.",
+  "etapes": [
+   {
+    "titre": "Chop",
+    "detail": "Finely chop lamb, onion, garlic, and ginger."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Add garam masala, chili, and cilantro."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Bind with a little yogurt, kneading thoroughly."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let marinate 30 minutes in the fridge."
+   },
+   {
+    "titre": "Mold",
+    "detail": "Mold the mixture around dampened flat skewers."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill, turning, until well browned."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with red onions and mint chutney."
+   }
+  ]
+ },
+ "biryanihyderabadi": {
+  "nom": "Biryani Hyderabadi",
+  "description": "Raw-marinated (kachi) biryani with lamb and yogurt, slow-cooked with saffron rice under a sealed lid. Hyderabad's most prestigious variation.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the raw lamb in yogurt and spices for several hours."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Fry onions until deep golden brown (birista)."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Par-cook the basmati rice with whole spices."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Arrange the raw marinated lamb at the bottom of the pot."
+   },
+   {
+    "titre": "Layers",
+    "detail": "Top with rice, fried onions, saffron infusion, and mint."
+   },
+   {
+    "titre": "Dum",
+    "detail": "Seal the lid (with dough) and cook covered on very low heat for a long time."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Gently fluff with a fork before serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with raita and a mirchi ka salan sauce."
+   }
+  ]
+ },
+ "saagpaneer": {
+  "nom": "Saag Paneer",
+  "description": "Creamy Indian spiced spinach puree with pan-seared cubes of fresh paneer cheese. Vegetarian, comforting, and vividly green.",
+  "etapes": [
+   {
+    "titre": "Spinach",
+    "detail": "Blanch the spinach, then blend into a fine puree."
+   },
+   {
+    "titre": "Paneer",
+    "detail": "Pan-sear the paneer cubes until golden."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion, garlic, and ginger."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add cumin, coriander, and garam masala."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the spinach puree."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Add the cream and simmer for 10 minutes."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Gently fold in the golden paneer."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with naan or basmati rice."
+   }
+  ]
+ },
+ "misalpav": {
+  "nom": "Misal Pav",
+  "description": "Fiery sprouted mung bean curry from Maharashtra, served with soft bread, raw onion, and crunchy farsan. Fire and crunch together.",
+  "etapes": [
+   {
+    "titre": "Sprout",
+    "detail": "Sprout the mung beans 2 days in advance."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Blend tomato, chili, and spices into a paste (rassa)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Sauté the paste, then add the sprouted beans and water."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer until the sauce is thick and fiery."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Warm the buttered bread (pav) on a griddle."
+   },
+   {
+    "titre": "Top",
+    "detail": "Top with raw onion, cilantro, and farsan (crunchy mix)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with the bread for dipping."
+   }
+  ]
+ },
+ "khamandhokla": {
+  "nom": "Khaman Dhokla",
+  "description": "Small, soft, airy squares of steamed chickpea flour cake, dressed with an oil tempered with toasted mustard seeds. Light and tangy.",
+  "etapes": [
+   {
+    "titre": "Batter",
+    "detail": "Mix chickpea flour, yogurt, turmeric, and water."
+   },
+   {
+    "titre": "Aerate",
+    "detail": "Add baking soda right before cooking; the batter foams up."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Pour into a pan and steam for 15 minutes."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Let cool slightly, then cut into squares."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Pop mustard seeds and chili in hot oil."
+   },
+   {
+    "titre": "Drizzle",
+    "detail": "Drizzle the squares with this fragrant oil and lemony water."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with cilantro and grated coconut."
+   }
+  ]
+ },
+ "botikebab": {
+  "nom": "Boti Kebab",
+  "description": "Skewers of lamb cubes marinated in yogurt and spices, char-grilled and smoky. Meatier than seekh, less work, just as addictive.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the lamb into even cubes."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate in yogurt, garlic-ginger, chili, and lemon."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let marinate for at least 2 hours in the fridge."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the cubes tightly onto skewers."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill, turning, until the edges are caramelized."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check for a juicy, just-cooked center."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with sumac onions and naan bread."
+   }
+  ]
+ },
+ "laphet": {
+  "nom": "Laphet Thoke",
+  "description": "A one-of-a-kind Burmese salad made with fermented tea leaves, crunchy with peanuts and cabbage, brightened with lime. Umami and vivid.",
+  "etapes": [
+   {
+    "titre": "Leaves",
+    "detail": "Rinse the fermented tea leaves (laphet) and crumble them."
+   },
+   {
+    "titre": "Crunch",
+    "detail": "Toast peanuts, fried chickpeas, and sesame seeds."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Thinly slice cabbage and tomato."
+   },
+   {
+    "titre": "Garlic",
+    "detail": "Fry thin slices of garlic until crispy."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Combine the tea leaves, vegetables, and crunchy toppings."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with lime juice, oil, and fish sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toss together at the table so everyone adjusts their own heat."
+   }
+  ]
+ },
+ "mohinga": {
+  "nom": "Mohinga",
+  "description": "Rice noodle soup with fish and lemongrass, Myanmar's national breakfast. Fragrant, comforting, and sold everywhere on the street.",
+  "etapes": [
+   {
+    "titre": "Fish",
+    "detail": "Poach the fish in broth, flake it, and reserve the stock."
+   },
+   {
+    "titre": "Base",
+    "detail": "Pound lemongrass, onion, garlic, and ginger into a paste."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Fry the fragrant paste in oil."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Add a little chickpea or rice flour to thicken."
+   },
+   {
+    "titre": "Broth",
+    "detail": "Add the reserved stock and simmer for a long time."
+   },
+   {
+    "titre": "Noodles",
+    "detail": "Cook the rice noodles separately."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Noodles, flaked fish, then broth ladled over top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Garnish with cilantro, hard-boiled egg, and lime."
+   }
+  ]
+ },
+ "nemnuong": {
+  "nom": "Nem Nuong",
+  "description": "Vietnamese grilled pork skewers with lemongrass, lightly caramelized on the grill. Wrapped in lettuce with fresh herbs.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Mix ground pork with lemongrass, garlic, and shallot."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add sugar, fish sauce, and a little starch to bind."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let marinate for 1 hour in the fridge."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Mold the mixture into small sausages around skewers."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill, turning, until nicely caramelized."
+   },
+   {
+    "titre": "Prepare",
+    "detail": "Prepare lettuce, fresh herbs, and rice vermicelli."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve to wrap in lettuce leaves with nuoc cham sauce."
+   }
+  ]
+ },
+ "chagio": {
+  "nom": "Cha Gio",
+  "description": "Vietnamese fried spring rolls stuffed with pork, shrimp and vermicelli noodles, wrapped in an ultra-crispy shell. The undisputed star of festive tables.",
+  "etapes": [
+   {
+    "titre": "Vegetables",
+    "detail": "Grate the carrot and soak the vermicelli noodles."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix pork, chopped shrimp, vermicelli and carrot."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add onion, sliced wood ear mushroom and seasoning."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spoon the filling onto the wrappers and roll tightly."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry over medium heat until golden and crisp."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with lettuce, herbs and nuoc-cham sauce for wrapping."
+   }
+  ]
+ },
+ "ondehondeh": {
+  "nom": "Ondeh Ondeh",
+  "description": "Little pandan-green glutinous rice balls stuffed with melting palm sugar, rolled in grated coconut. A sweet burst in every bite.",
+  "etapes": [
+   {
+    "titre": "Flavor",
+    "detail": "Steep pandan (or vanilla) to flavor the water and tint the dough green."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Knead the glutinous rice flour with the flavored water."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Shape into balls, stuff with chunks of brown palm sugar."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Seal well so the sugar doesn't leak out during cooking."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the balls in boiling water; they float once cooked."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll immediately in freshly grated coconut."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, the center should be runny."
+   }
+  ]
+ },
+ "kuehlapis": {
+  "nom": "Kueh Lapis",
+  "description": "An Indonesian thousand-layer cake, baked one thin layer at a time under the broiler. Patience rewarded with a spiced, buttery flakiness.",
+  "etapes": [
+   {
+    "titre": "Beat",
+    "detail": "Beat the butter and sugar at length until pale."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Incorporate the eggs one at a time."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add the flour, cinnamon, nutmeg, and clove."
+   },
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to broil."
+   },
+   {
+    "titre": "Layer 1",
+    "detail": "Pour a thin layer, broil until golden."
+   },
+   {
+    "titre": "Repeat",
+    "detail": "Repeat layer by layer until the batter is used up."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let cool completely before unmolding."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice thinly to reveal the thousand layers."
+   }
+  ]
+ },
+ "martabaktelur": {
+  "nom": "Martabak Telur",
+  "description": "An Indonesian crepe stuffed with ground meat, egg, and scallion, folded and fried until ultra-crispy. The golden street food of night markets.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a soft dough from flour and water."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Sauté ground meat, onion, and curry powder."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch a square of thin dough on an oiled work surface."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the filling, crack an egg on top, add scallion."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold into a square to enclose the filling."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Pan-fry in oil until golden on both sides."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into squares, serve with vinegared chili sauce."
+   }
+  ]
+ },
+ "sundaecoreen": {
+  "nom": "Sundae",
+  "description": "A Korean blood sausage made with sweet potato glass noodles and glutinous rice, steamed then pan-seared and served with spiced salt. Street food and comfort food in one.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Mix cooked glutinous rice, sweet potato noodles, and shredded cabbage."
+   },
+   {
+    "titre": "Enrich",
+    "detail": "Add ground pork, garlic, and blood (or leave it out for a simplified version)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt, pepper, and sesame."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill casings (or molds) with the mixture, without packing too tightly."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 30 minutes until set."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Slice and pan-sear lightly until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with spicy pepper salt and steamed liver."
+   }
+  ]
+ },
+ "injeolmi": {
+  "nom": "Injeolmi",
+  "description": "Soft little squares of Korean glutinous rice cake, rolled in fragrant toasted soybean powder. Chewy and comforting.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Steam the glutinous rice flour until translucent."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead vigorously until the texture turns elastic."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Spread out and cut into small squares."
+   },
+   {
+    "titre": "Powder",
+    "detail": "Toast the soybean flour until fragrant and golden."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Mix the toasted powder with a little sugar and salt."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll each square in the fragrant powder."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at room temperature, the same day."
+   }
+  ]
+ },
+ "cachorroquente": {
+  "nom": "Cachorro Quente",
+  "description": "The generous Brazilian hot dog: sausage topped with tomato sauce, corn, peas, mashed potato, and fried onions. A meal in itself.",
+  "etapes": [
+   {
+    "titre": "Sausage",
+    "detail": "Poach or grill the sausages."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Prepare a simple tomato sauce with onions."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Prepare a smooth mashed potato."
+   },
+   {
+    "titre": "Bun",
+    "detail": "Split and warm the hot dog bun."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place the sausage, top with tomato sauce."
+   },
+   {
+    "titre": "Stack",
+    "detail": "Add corn, peas, a spoonful of mashed potato."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Crown with fried onions and crumbled potato chips."
+   }
+  ]
+ },
+ "pastelbrasil": {
+  "nom": "Pastel Brasileiro",
+  "description": "A Brazilian turnover with an ultra-thin, crispy pastry, fried until puffed and golden, filled with meat or cheese. The king of street fairs and markets.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a thin dough with cachaça or vinegar (for the crispiness)."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Sauté ground meat, onion, and olives."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Stretch the dough ultra-thin with a rolling pin or pasta machine."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut out rectangles."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill with the mixture, fold over, and seal the edges with a fork."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in very hot oil until puffed and golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with a Brazilian vinaigrette sauce."
+   }
+  ]
+ },
+ "escondidinho": {
+  "nom": "Escondidinho",
+  "description": "A Brazilian casserole of spiced shredded meat \"hidden\" beneath a creamy cassava mash, browned in the oven. Total comfort in one dish.",
+  "etapes": [
+   {
+    "titre": "Meat",
+    "detail": "Simmer the beef with onion, garlic, and tomato until shreddable."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Shred the tender meat in its cooking juices."
+   },
+   {
+    "titre": "Cassava",
+    "detail": "Boil the cassava in water until tender."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash into a creamy purée with cream and butter."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Spread the meat over the bottom of a baking dish."
+   },
+   {
+    "titre": "Hide",
+    "detail": "Cover completely with the cassava mash."
+   },
+   {
+    "titre": "Broil",
+    "detail": "Sprinkle with cheese, broil in the oven until golden."
+   }
+  ]
+ },
+ "baiao": {
+  "nom": "Baião de Dois",
+  "description": "Rice and beans from Brazil's Nordeste simmered together with dried beef and melting coalho cheese. The duo (\"two\") that gives the dish its name.",
+  "etapes": [
+   {
+    "titre": "Beef",
+    "detail": "Desalt then cook the dried beef (or salted beef), shred it."
+   },
+   {
+    "titre": "Beans",
+    "detail": "Cook the beans (or use already-cooked beans)."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion, garlic and the shredded beef."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Toast the rice in the same pot."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the bean cooking liquid, cook covered."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the beans at the end of cooking."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add cubes of melting coalho cheese (or halloumi)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with cilantro, serve piping hot."
+   }
+  ]
+ },
+ "chivitouruguay": {
+  "nom": "Chivito Uruguayo",
+  "description": "Uruguay's over-the-top national sandwich: thin-sliced beef, ham, melted cheese, egg, lettuce and tomato stacked in a soft bun. The ultimate sandwich-meal.",
+  "etapes": [
+   {
+    "titre": "Beef",
+    "detail": "Sear a thin, seasoned beef cutlet."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Fry an egg sunny-side up."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Melt a slice of cheese over the hot beef."
+   },
+   {
+    "titre": "Bun",
+    "detail": "Split and warm a soft bun."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Add lettuce, tomato and ham."
+   },
+   {
+    "titre": "Stack",
+    "detail": "Layer beef with melted cheese, ham, and the fried egg."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with mayonnaise and fries, by hand (or fork!)."
+   }
+  ]
+ },
+ "tacutacu": {
+  "nom": "Tacu Tacu",
+  "description": "A Peruvian no-waste patty of leftover rice and beans, pressed and pan-fried golden, often crowned with an egg. Crisp outside, soft and creamy inside.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Mix cooked rice and beans (ideally leftover from the day before)."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Sauté onion, garlic and chile, stir into the mixture."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Roughly mash to bind the rice and beans together."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form into a thick patty."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Cook in an oiled pan until golden-crusted on both sides."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Fry an egg sunny-side up alongside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the patty topped with the egg, with fried plantain."
+   }
+  ]
+ },
+ "chaufaperou": {
+  "nom": "Arroz Chaufa",
+  "description": "Peruvian Cantonese-inspired fried rice born from Chinese immigration, with chicken, egg and soy sauce. The chifa marriage of China and Peru.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Use cooked, cooled rice (ideally from the day before)."
+   },
+   {
+    "titre": "Chicken",
+    "detail": "Stir-fry the sliced chicken in a very hot wok."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Push to the side, scramble an egg in the wok."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add scallion and ginger."
+   },
+   {
+    "titre": "Stir-fry",
+    "detail": "Add the rice, stir-fry briskly, separating the grains."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Drizzle with soy sauce, toss to color evenly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, piping hot, with a drizzle of huancaína sauce if desired."
+   }
+  ]
+ },
+ "fritaycubaine": {
+  "nom": "Frita Cubana",
+  "description": "A spiced Cuban beef-and-pork burger with smoked paprika, crowned with fine crispy shoestring fries. Havana's burger.",
+  "etapes": [
+   {
+    "titre": "Patty",
+    "detail": "Mix ground beef and pork with smoked paprika and garlic."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form into thin patties."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Cook in a very hot pan until the edges caramelize."
+   },
+   {
+    "titre": "Shoestrings",
+    "detail": "Cut potatoes into very thin shoestrings and fry them."
+   },
+   {
+    "titre": "Bun",
+    "detail": "Warm the bun, spread with spicy sauce."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Set the patty on the bun."
+   },
+   {
+    "titre": "Top",
+    "detail": "Pile generously with crispy shoestring fries."
+   }
+  ]
+ },
+ "fufunigeria": {
+  "nom": "Fufu",
+  "description": "Smooth, stretchy Nigerian pounded cassava dough, shaped into balls for dipping into spicy soups and stews. The essential side dish.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Peel and cut the cassava into pieces."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Boil in water until very tender."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain well, keeping a little of the cooking water."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound (or blend) into a smooth, stretchy dough."
+   },
+   {
+    "titre": "Work",
+    "detail": "Work in the reserved water little by little."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape into smooth, glossy balls with wet hands."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with egusi soup or a stew."
+   }
+  ]
+ },
+ "adanakebab": {
+  "nom": "Adana Kebab",
+  "description": "Spicy Turkish minced lamb skewer flattened on a wide skewer and grilled over embers. Named after the city of Adana.",
+  "etapes": [
+   {
+    "titre": "Mince",
+    "detail": "Finely hand-mince the lamb (with a bit of fat) with a knife."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Add Aleppo pepper, paprika and drained grated onion."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead thoroughly until sticky and smooth."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Mold into a wide, elongated strip on a flat skewer."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over hot embers, turning regularly."
+   },
+   {
+    "titre": "Accompany",
+    "detail": "Also grill peppers and tomatoes as a side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve on lavash bread with sumac and parsley onion."
+   }
+  ]
+ },
+ "revithiasoupe": {
+  "nom": "Revithia",
+  "description": "Greek chickpea soup slow-simmered with olive oil, rosemary and lemon. The traditional Sunday dish of the island of Sifnos.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the chickpeas overnight."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion in olive oil."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the chickpeas, cover with water, add bay leaf."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Bake at a very low temperature for several hours, covered."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check the water level regularly."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add lemon juice at the end of cooking."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a drizzle of raw olive oil and bread."
+   }
+  ]
+ },
+ "fasolada": {
+  "nom": "Fasolada",
+  "description": "Greece's national soup of white beans, carrot, celery and tomato in olive oil. Simple, rustic and deeply comforting.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the white beans overnight."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Dice carrot, celery and onion."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the vegetables in olive oil."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the crushed tomato."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the beans and cover generously with water."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer covered until the beans are tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a drizzle of olive oil and olives."
+   }
+  ]
+ },
+ "horiatiki": {
+  "nom": "Horiatiki Salad",
+  "description": "True Greek village salad: tomato, cucumber, red onion, olives and a big slab of feta, no lettuce or vinegar. Rustic and generous.",
+  "etapes": [
+   {
+    "titre": "Tomatoes",
+    "detail": "Cut the tomatoes into large juicy wedges."
+   },
+   {
+    "titre": "Cucumber",
+    "detail": "Cut the cucumber into thick rounds."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Thinly slice the red onion."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Toss tomato, cucumber, onion and Kalamata olives together."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Drizzle generously with olive oil, no vinegar."
+   },
+   {
+    "titre": "Feta",
+    "detail": "Place a whole large slab of feta on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with dried oregano and serve with bread."
+   }
+  ]
+ },
+ "fritturamista": {
+  "nom": "Frittura Mista",
+  "description": "Mixed Italian fry of small fish, squid and shrimp, lightly floured and fried to order. Crisp, light, briny, barely a hint of lemon.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Clean and cut the squid into rings."
+   },
+   {
+    "titre": "Prepare",
+    "detail": "Peel the shrimp, leaving the tail on."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Lightly flour all the seafood."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Heat the oil to 180°C (350°F)."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in small batches, just 2 minutes each."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt immediately as it comes out of the oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with lemon wedges."
+   }
+  ]
+ },
+ "suppliromain": {
+  "nom": "Suppli al Telefono",
+  "description": "Roman rice croquette with a molten mozzarella core that stretches into telephone wires when you cut it. Crisp outside, stringy inside.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice in a fragrant tomato sauce, risotto-style."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Spread out and let cool completely."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Take a ball of rice and make a well in the center."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Push in a stick of mozzarella and reseal into a ball."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat in beaten egg, then breadcrumbs."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut in half to reveal the stretching mozzarella string."
+   }
+  ]
+ },
+ "ribollita": {
+  "nom": "Ribollita",
+  "description": "Thick Tuscan soup of beans, cabbage and stale bread, literally \"reboiled\" the next day to thicken further. Anti-waste comfort food.",
+  "etapes": [
+   {
+    "titre": "Beans",
+    "detail": "Cook the white beans, mashing part of them."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Sauté carrot, celery, onion and cabbage."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add tomato and vegetable broth."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the beans (whole and mashed), simmer 40 minutes."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Add the stale bread in chunks and let it soften."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Ideally let it rest overnight and reheat the next day."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a drizzle of raw olive oil."
+   }
+  ]
+ },
+ "porotosgranados": {
+  "nom": "Porotos Granados",
+  "description": "A Chilean summer stew of fresh shell beans, corn, squash and basil, creamy and colorful. A comforting vegetarian dish from harvest season.",
+  "etapes": [
+   {
+    "titre": "Beans",
+    "detail": "Cook the fresh beans (or soaked dried beans) until tender."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion, garlic and paprika."
+   },
+   {
+    "titre": "Squash",
+    "detail": "Add the diced squash, cook until tender."
+   },
+   {
+    "titre": "Corn",
+    "detail": "Blend part of the corn to thicken, add the rest as whole kernels."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the cooked beans with their broth."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until creamy in consistency."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with fresh basil, serve with pebre (Chilean salsa)."
+   }
+  ]
+ },
+ "cazuela": {
+  "nom": "Cazuela Chilena",
+  "description": "A light Chilean stew of chicken or beef with potato, squash, corn and rice, served in a big bowl with its broth. The classic Sunday family meal.",
+  "etapes": [
+   {
+    "titre": "Broth",
+    "detail": "Simmer the chicken slowly for a clear, fragrant broth."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add potato and squash in large chunks."
+   },
+   {
+    "titre": "Corn",
+    "detail": "Add an ear of corn cut into pieces."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Add the rice (or short pasta)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until all the vegetables are tender."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with cumin and fresh cilantro."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in a large bowl, broth and vegetables together."
+   }
+  ]
+ },
+ "completoitaliano": {
+  "nom": "Completo Italiano",
+  "description": "A Chilean hot dog piled high with mashed avocado, tomato and mayonnaise — the colors of the Italian flag that give it its name. Generous and creamy.",
+  "etapes": [
+   {
+    "titre": "Sausage",
+    "detail": "Poach or grill the sausage."
+   },
+   {
+    "titre": "Avocado",
+    "detail": "Mash the avocado coarsely with a fork."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Cut the tomato into small dice."
+   },
+   {
+    "titre": "Bun",
+    "detail": "Split and warm the hot dog bun."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place the sausage in the bun."
+   },
+   {
+    "titre": "Stack",
+    "detail": "Cover generously with avocado, then tomato."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Drizzle mayonnaise in a zigzag, serve right away."
+   }
+  ]
+ },
+ "arepacolombie": {
+  "nom": "Colombian Arepa",
+  "description": "A small Colombian griddle cake made from precooked corn flour, golden-crisp outside, split open and stuffed with melting cheese. The everyday bread of the Andes.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Mix precooked corn flour, warm water and salt."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead a few minutes until the dough is soft and not sticky."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form balls, flatten into thick disks."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook on a hot griddle until golden on both sides."
+   },
+   {
+    "titre": "Split",
+    "detail": "Split the hot arepa open along the side."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Stuff with cheese so it melts from the heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with butter or hogao (tomato-onion sauce)."
+   }
+  ]
+ },
+ "freekeh": {
+  "nom": "Freekeh",
+  "description": "Lebanese roasted green wheat simmered with chicken and warm spices, with naturally smoky notes. An ancient, fragrant alternative to rice.",
+  "etapes": [
+   {
+    "titre": "Chicken",
+    "detail": "Cook the chicken in a broth fragrant with warm spices."
+   },
+   {
+    "titre": "Rinse",
+    "detail": "Rinse the freekeh (roasted green wheat) several times."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion and spices (cinnamon, allspice)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Add the freekeh, moisten with the chicken broth."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook covered until the grains are tender but firm."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Shred the chicken and stir it in."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with toasted almonds and pine nuts browned in butter."
+   }
+  ]
+ },
+ "krembo": {
+  "nom": "Krembo",
+  "description": "An Israeli winter treat: a cookie base topped with an airy marshmallow-like fluff, coated in a thin, crisp chocolate shell.",
+  "etapes": [
+   {
+    "titre": "Cookie",
+    "detail": "Prepare and bake small round shortbread cookies."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Cook a sugar syrup to the thread stage (117°C/243°F)."
+   },
+   {
+    "titre": "Meringue",
+    "detail": "Whip the egg whites to stiff peaks."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Pour the hot syrup over the whites while whisking (Italian meringue)."
+   },
+   {
+    "titre": "Pipe",
+    "detail": "Pipe the fluff into a dome on each cookie."
+   },
+   {
+    "titre": "Set",
+    "detail": "Refrigerate until the domes are firm."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Dip each dome in melted chocolate to coat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let set and serve chilled."
+   }
+  ]
+ },
+ "mulukhiyah": {
+  "nom": "Molokheya",
+  "description": "A silky green Egyptian soup made from finely chopped jute leaves, simmered with garlic and cilantro. Served over rice, it's iconic.",
+  "etapes": [
+   {
+    "titre": "Broth",
+    "detail": "Prepare a fragrant chicken broth."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Finely chop the leaves (jute, or spinach as a substitute)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the chopped leaves directly in the broth."
+   },
+   {
+    "titre": "Tarka",
+    "detail": "Pound garlic and fresh cilantro, fry in butter/ghee."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Pour this sizzling tarka straight into the soup."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add a splash of lemon juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over a bed of rice, with shredded chicken alongside."
+   }
+  ]
+ },
+ "kremowka": {
+  "nom": "Kremówka",
+  "description": "A Polish napoleon of two puff pastry sheets sandwiching a thick layer of vanilla pastry cream. Pope John Paul II's favorite dessert.",
+  "etapes": [
+   {
+    "titre": "Pastry",
+    "detail": "Bake two sheets of puff pastry flat until golden."
+   },
+   {
+    "titre": "Cream",
+    "detail": "Prepare a thick vanilla pastry cream."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let the cream cool slightly, stirring to prevent a skin."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Spread the cream over one pastry sheet."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Top with the second pastry sheet."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate several hours until set."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with powdered sugar and cut into generous squares."
+   }
+  ]
+ },
+ "yassapoisson": {
+  "nom": "Fish Yassa",
+  "description": "Fish marinated for hours in lemon juice and a mountain of onions, then simmered in that tangy, mustardy sauce. The seafood take on classic yassa.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the fish in lemon juice, sliced onions, and mustard for several hours."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear or pan-fry the fish until golden, set aside."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Slowly cook down the onion marinade over low heat."
+   },
+   {
+    "titre": "Caramelize",
+    "detail": "Let the onions turn translucent and lightly golden."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the fish to the onion sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer gently a few minutes to let the flavors soak in."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over a bed of white rice."
+   }
+  ]
+ },
+ "knedliky": {
+  "nom": "Knedlíky",
+  "description": "Steamed Czech bread dumplings, sliced into soft rounds. The essential side for soaking up rich, generous sauces.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead flour, warm milk, yeast, and egg into a soft dough."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Let the dough rise for 45 minutes."
+   },
+   {
+    "titre": "Croutons",
+    "detail": "Add small cubes of stale bread, mix in."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form into two long logs."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Steam (or simmer in water) for 20 minutes, turning halfway."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice into rounds using a thread (not a knife, which would crush them)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a generous sauce (goulash, mushroom sauce)."
+   }
+  ]
+ },
+ "svickova": {
+  "nom": "Svíčková",
+  "description": "Czech braised beef topped with a velvety cream root-vegetable sauce, served with dumplings and a touch of cranberries. Elegant and comforting.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the beef with root vegetables and spices overnight."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the meat, then set aside."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Sauté carrot, celery, parsley root, and onion."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Return the meat to the pot, add liquid, and braise slowly, covered."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Remove the meat and slice thinly."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Blend the cooking vegetables with cream into a smooth sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Nap the meat with sauce, serve with dumplings and blueberries."
+   }
+  ]
+ },
+ "borschtukrainien": {
+  "nom": "Ukrainian Borscht",
+  "description": "Purple Ukrainian soup with beet, cabbage, and beef, served piping hot with a spoonful of sour cream. The iconic dish of Eastern Europe.",
+  "etapes": [
+   {
+    "titre": "Broth",
+    "detail": "Prepare a beef broth, then shred the meat."
+   },
+   {
+    "titre": "Beets",
+    "detail": "Grate the beets and sauté with a splash of vinegar for color."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add carrot, onion, and potato."
+   },
+   {
+    "titre": "Cabbage",
+    "detail": "Add the shredded cabbage."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until all the vegetables are tender."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the shredded meat to the soup."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with a spoonful of sour cream and dill."
+   }
+  ]
+ },
+ "chakapuligeorgie": {
+  "nom": "Chakapuli",
+  "description": "A Georgian spring lamb stew simmered in white wine with tarragon and tangy green plums. Fresh, herby, and gently tart.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sauté the cubed lamb without browning too much."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add scallions and plenty of garlic."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in a generous amount of dry white wine."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Add a large amount of fresh tarragon and cilantro."
+   },
+   {
+    "titre": "Brighten",
+    "detail": "Add green plums (or lemon juice as a substitute) for tartness."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer covered until the lamb is fork-tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with Georgian bread to soak up the herby sauce."
+   }
+  ]
  }
 };
