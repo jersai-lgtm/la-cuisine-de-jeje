@@ -453,7 +453,6 @@ const INGREDIENTS_PRIX = {
   feuilleswonton: { prixKg: 7.00, calPer100g: 300,  lipSat: 0.5,  sucre: 1,    sel: 1.0,  fibres: 1.5, prot: 9,    flv: 0 },
   baos:           { prixKg: 8.00, calPer100g: 240,  lipSat: 1.0,  sucre: 4,    sel: 0.8,  fibres: 1.5, prot: 7,    flv: 0 },
   kataifi:        { prixKg: 10.0, calPer100g: 380,  lipSat: 0.5,  sucre: 3,    sel: 1.0,  fibres: 2,   prot: 8,    flv: 0 },
-  feuilles:       { prixKg: 5.00, calPer100g: 290,  lipSat: 0.5,  sucre: 1,    sel: 1.0,  fibres: 2,   prot: 8,    flv: 0 },
   feuille:        { prixKg: 5.00, calPer100g: 290,  lipSat: 0.5,  sucre: 1,    sel: 1.0,  fibres: 2,   prot: 8,    flv: 0 },
   
   // ===== SUCRES & DOUCEURS =====
@@ -1471,7 +1470,7 @@ const INGREDIENTS_LABELS = {
   pommedeterre: "🥔 Pommes de terre", maïs: "🌽 Maïs",
   haricotsnoirs: "🫘 Haricots noirs", haricotsrouges: "🫘 Haricots rouges",
   cornichons: "🥒 Cornichons", poire: "🍐 Poire asiatique",
-  pousses: "🌱 Pousses de soja", feuilles: "🌿 Feuilles de vigne",
+  pousses: "🌱 Pousses de soja",
   feuillesBric: "📄 Feuilles de brick",
   // Fromages
   burrata: "🧀 Burrata", mozzarella: "🧀 Mozzarella",

@@ -310,7 +310,7 @@ Object.assign(recettes, {
   brioche: {
     nom: "Brioche",
     cat: "boulangerie", pays: "france",
-    base: 1,
+    base: 6,
     temps: "~2h + 35 min cuisson",
     niveau: "⭐⭐ Moyen",
     emoji: "🍞",

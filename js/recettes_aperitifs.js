@@ -75,16 +75,16 @@ Object.assign(recettes, {
     emoji: "🐟",
     description: "Rillettes de saumon fumé — entrée festive express : mélange de saumon fumé, saumon cuit, fromage frais, citron et aneth. Onctueuses et raffinées, sur toasts.",
     tableauRillettes: [
-      { nb: 1, saumonfume: "240 g", saumonfrais: "240 g", fromagefrais: "180 g", citron: "150 g", aneth: "18 g", echalote: "48 g", crème: "60 ml", poivre: "6 g" },
-      { nb: 2, saumonfume: "480 g", saumonfrais: "480 g", fromagefrais: "360 g", citron: "300 g", aneth: "36 g", echalote: "96 g", crème: "120 ml", poivre: "12 g" },
-      { nb: 3, saumonfume: "720 g", saumonfrais: "720 g", fromagefrais: "540 g", citron: "450 g", aneth: "54 g", echalote: "144 g", crème: "180 ml", poivre: "18 g" },
-      { nb: 4, saumonfume: "960 g", saumonfrais: "960 g", fromagefrais: "720 g", citron: "600 g", aneth: "72 g", echalote: "192 g", crème: "240 ml", poivre: "24 g" },
-      { nb: 5, saumonfume: "1200 g", saumonfrais: "1200 g", fromagefrais: "900 g", citron: "750 g", aneth: "90 g", echalote: "240 g", crème: "300 ml", poivre: "30 g" },
-      { nb: 6, saumonfume: "1440 g", saumonfrais: "1440 g", fromagefrais: "1080 g", citron: "900 g", aneth: "108 g", echalote: "288 g", crème: "360 ml", poivre: "36 g" },
-      { nb: 7, saumonfume: "1680 g", saumonfrais: "1680 g", fromagefrais: "1260 g", citron: "1050 g", aneth: "126 g", echalote: "336 g", crème: "420 ml", poivre: "42 g" },
-      { nb: 8, saumonfume: "1920 g", saumonfrais: "1920 g", fromagefrais: "1440 g", citron: "1200 g", aneth: "144 g", echalote: "384 g", crème: "480 ml", poivre: "48 g" },
-      { nb: 9, saumonfume: "2160 g", saumonfrais: "2160 g", fromagefrais: "1620 g", citron: "1350 g", aneth: "162 g", echalote: "432 g", crème: "540 ml", poivre: "54 g" },
-      { nb: 10, saumonfume: "2400 g", saumonfrais: "2400 g", fromagefrais: "1800 g", citron: "1500 g", aneth: "180 g", echalote: "480 g", crème: "600 ml", poivre: "60 g" }
+      { nb: 1, saumonfume: "60 g", saumonfrais: "60 g", fromagefrais: "45 g", citron: "37,5 g", aneth: "4,5 g", echalote: "12 g", crème: "15 ml", poivre: "1,5 g" },
+      { nb: 2, saumonfume: "120 g", saumonfrais: "120 g", fromagefrais: "90 g", citron: "75 g", aneth: "9 g", echalote: "24 g", crème: "30 ml", poivre: "3 g" },
+      { nb: 3, saumonfume: "180 g", saumonfrais: "180 g", fromagefrais: "135 g", citron: "112,5 g", aneth: "13,5 g", echalote: "36 g", crème: "45 ml", poivre: "4,5 g" },
+      { nb: 4, saumonfume: "240 g", saumonfrais: "240 g", fromagefrais: "180 g", citron: "150 g", aneth: "18 g", echalote: "48 g", crème: "60 ml", poivre: "6 g" },
+      { nb: 5, saumonfume: "300 g", saumonfrais: "300 g", fromagefrais: "225 g", citron: "187,5 g", aneth: "22,5 g", echalote: "60 g", crème: "75 ml", poivre: "7,5 g" },
+      { nb: 6, saumonfume: "360 g", saumonfrais: "360 g", fromagefrais: "270 g", citron: "225 g", aneth: "27 g", echalote: "72 g", crème: "90 ml", poivre: "9 g" },
+      { nb: 7, saumonfume: "420 g", saumonfrais: "420 g", fromagefrais: "315 g", citron: "262,5 g", aneth: "31,5 g", echalote: "84 g", crème: "105 ml", poivre: "10,5 g" },
+      { nb: 8, saumonfume: "480 g", saumonfrais: "480 g", fromagefrais: "360 g", citron: "300 g", aneth: "36 g", echalote: "96 g", crème: "120 ml", poivre: "12 g" },
+      { nb: 9, saumonfume: "540 g", saumonfrais: "540 g", fromagefrais: "405 g", citron: "337,5 g", aneth: "40,5 g", echalote: "108 g", crème: "135 ml", poivre: "13,5 g" },
+      { nb: 10, saumonfume: "600 g", saumonfrais: "600 g", fromagefrais: "450 g", citron: "375 g", aneth: "45 g", echalote: "120 g", crème: "150 ml", poivre: "15 g" }
     ],
     ingredients: {},
     etapes: [
@@ -145,16 +145,16 @@ Object.assign(recettes, {
     emoji: "🥑",
     description: "Guacamole — la trempette mexicaine authentique. Avocats écrasés à la fourchette avec tomate, oignon, jalapeño, coriandre et lime. Servie avec tortillas chips ou en accompagnement de tacos.",
     tableauGuacamole: [
-      { nb: 1, avocat: "3", tomate: "120 g", oignonrouge: "60 g", citronvert: "120 g", jalapeno: "34 g", coriandre: "12 g", ail: "8 g", sel: "1 g" },
-      { nb: 2, avocat: "6", tomate: "240 g", oignonrouge: "120 g", citronvert: "240 g", jalapeno: "68 g", coriandre: "24 g", ail: "16 g", sel: "2 g" },
-      { nb: 3, avocat: "9", tomate: "360 g", oignonrouge: "180 g", citronvert: "360 g", jalapeno: "102 g", coriandre: "36 g", ail: "24 g", sel: "3 g" },
-      { nb: 4, avocat: "12", tomate: "480 g", oignonrouge: "240 g", citronvert: "480 g", jalapeno: "136 g", coriandre: "48 g", ail: "32 g", sel: "4 g" },
-      { nb: 5, avocat: "15", tomate: "600 g", oignonrouge: "300 g", citronvert: "600 g", jalapeno: "170 g", coriandre: "60 g", ail: "40 g", sel: "5 g" },
-      { nb: 6, avocat: "18", tomate: "720 g", oignonrouge: "360 g", citronvert: "720 g", jalapeno: "204 g", coriandre: "72 g", ail: "48 g", sel: "6 g" },
-      { nb: 7, avocat: "21", tomate: "840 g", oignonrouge: "420 g", citronvert: "840 g", jalapeno: "238 g", coriandre: "84 g", ail: "56 g", sel: "7 g" },
-      { nb: 8, avocat: "24", tomate: "960 g", oignonrouge: "480 g", citronvert: "960 g", jalapeno: "272 g", coriandre: "96 g", ail: "64 g", sel: "8 g" },
-      { nb: 9, avocat: "27", tomate: "1080 g", oignonrouge: "540 g", citronvert: "1080 g", jalapeno: "306 g", coriandre: "108 g", ail: "72 g", sel: "9 g" },
-      { nb: 10, avocat: "30", tomate: "1200 g", oignonrouge: "600 g", citronvert: "1200 g", jalapeno: "340 g", coriandre: "120 g", ail: "80 g", sel: "10 g" }
+      { nb: 1, avocat: "0,75", tomate: "30 g", oignonrouge: "15 g", citronvert: "30 g", jalapeno: "9 g", coriandre: "3 g", ail: "2 g", sel: "0,25 g" },
+      { nb: 2, avocat: "1,5", tomate: "60 g", oignonrouge: "30 g", citronvert: "60 g", jalapeno: "17 g", coriandre: "6 g", ail: "4 g", sel: "0,5 g" },
+      { nb: 3, avocat: "2,25", tomate: "90 g", oignonrouge: "45 g", citronvert: "90 g", jalapeno: "26 g", coriandre: "9 g", ail: "6 g", sel: "0,75 g" },
+      { nb: 4, avocat: "3", tomate: "120 g", oignonrouge: "60 g", citronvert: "120 g", jalapeno: "34 g", coriandre: "12 g", ail: "8 g", sel: "1 g" },
+      { nb: 5, avocat: "3,75", tomate: "150 g", oignonrouge: "75 g", citronvert: "150 g", jalapeno: "43 g", coriandre: "15 g", ail: "10 g", sel: "1,25 g" },
+      { nb: 6, avocat: "4,5", tomate: "180 g", oignonrouge: "90 g", citronvert: "180 g", jalapeno: "51 g", coriandre: "18 g", ail: "12 g", sel: "1,5 g" },
+      { nb: 7, avocat: "5,25", tomate: "210 g", oignonrouge: "105 g", citronvert: "210 g", jalapeno: "60 g", coriandre: "21 g", ail: "14 g", sel: "1,75 g" },
+      { nb: 8, avocat: "6", tomate: "240 g", oignonrouge: "120 g", citronvert: "240 g", jalapeno: "68 g", coriandre: "24 g", ail: "16 g", sel: "2 g" },
+      { nb: 9, avocat: "6,75", tomate: "270 g", oignonrouge: "135 g", citronvert: "270 g", jalapeno: "77 g", coriandre: "27 g", ail: "18 g", sel: "2,25 g" },
+      { nb: 10, avocat: "7,5", tomate: "300 g", oignonrouge: "150 g", citronvert: "300 g", jalapeno: "85 g", coriandre: "30 g", ail: "20 g", sel: "2,5 g" }
     ],
     ingredients: {},
     etapes: [
@@ -1298,7 +1298,7 @@ tapenade: {
       { icone: "💧", titre: "Égoutter", detail: "Égoutter sur papier absorbant.", badge: "⏱ 1 min" },
       { icone: "🍅", titre: "Servir", detail: "Servir aussitôt avec la sauce tomate chaude, pour profiter du fromage filant.", badge: null }
     ]
-  },
+  },
   coxinha: {
     nom: "Coxinha",
     cat: "aperitifs",
