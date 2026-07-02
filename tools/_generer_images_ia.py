@@ -23,58 +23,58 @@ ENV_FILE = os.path.join(ROOT, ".env")
 MODEL = "gpt-image-1"
 TAILLE = "1024x1024"
 
-# cle: (nom affiche, description courte pour le prompt)
+# cle: (nom court pour la pancarte, description courte pour le prompt)
 PLATS = [
-    ("chelokebab", "Chelo Kebab (riz safrané iranien et brochettes d'agneau)"),
-    ("tahchin", "Tahchin (gâteau de riz iranien au safran et poulet)"),
-    ("bastilla", "Bastilla marocaine (tourte feuilletée au poulet et amandes)"),
-    ("chapati", "Chapati indien (galette de blé complet)"),
-    ("uttapam", "Uttapam indien (crêpe épaisse garnie d'oignon et tomate)"),
-    ("appam", "Appam indien (crêpe au lait de coco aux bords dentelés)"),
-    ("laphet", "Laphet Thoke birman (salade de feuilles de thé fermentées)"),
-    ("mohinga", "Mohinga birman (soupe de nouilles de riz au poisson)"),
-    ("nemnuong", "Nem Nuong vietnamien (brochettes de porc à la citronnelle grillées)"),
-    ("chagio", "Cha Gio vietnamien (rouleaux de printemps frits croustillants)"),
-    ("ondehondeh", "Ondeh Ondeh malaisien (boules de riz gluant vertes au sucre de palme, roulées coco)"),
-    ("kuehlapis", "Kueh Lapis indonésien (gâteau à mille couches épicé)"),
-    ("martabaktelur", "Martabak Telur indonésien (crêpe farcie viande et œuf, pliée et frite)"),
-    ("sundaecoreen", "Sundae coréen (saucisse de riz gluant et vermicelles, plat salé, pas une glace)"),
-    ("injeolmi", "Injeolmi coréen (petits carrés de riz gluant roulés dans la poudre de soja)"),
-    ("seekhkebab", "Seekh Kebab indien (brochettes de viande hachée épicée grillées)"),
-    ("biryanihyderabadi", "Biryani Hyderabadi (riz basmati safrané à l'agneau mariné)"),
-    ("saagpaneer", "Saag Paneer indien (purée d'épinards crémeuse et cubes de fromage paneer)"),
-    ("misalpav", "Misal Pav indien (curry pimenté de haricots germés avec pain)"),
-    ("khamandhokla", "Khaman Dhokla indien (petits carrés moelleux de pois chiche cuits vapeur)"),
-    ("botikebab", "Boti Kebab indien (brochettes de cubes d'agneau marinés grillés)"),
-    ("cachorroquente", "Cachorro Quente brésilien (hot-dog garni maïs, petits pois et purée)"),
-    ("pastelbrasil", "Pastel Brasileiro (chausson brésilien frit ultra-croustillant)"),
-    ("escondidinho", "Escondidinho brésilien (gratin de viande effilochée sous purée de manioc)"),
-    ("baiao", "Baião de Dois brésilien (riz et haricots au fromage coalho)"),
-    ("chivitouruguay", "Chivito Uruguayo (sandwich géant bœuf, jambon, fromage, œuf)"),
-    ("tacutacu", "Tacu Tacu péruvien (galette de riz et haricots pressés avec œuf)"),
-    ("chaufaperou", "Arroz Chaufa péruvien (riz sauté façon chinoise au poulet)"),
-    ("fritaycubaine", "Frita Cubana (burger épicé cubain aux pailles de pomme de terre)"),
-    ("fufunigeria", "Fufu nigérian (boules de pâte de manioc lisse)"),
-    ("adanakebab", "Adana Kebab turc (brochette large d'agneau haché épicé grillée)"),
-    ("revithiasoupe", "Revithia grecque (soupe de pois chiches à l'huile d'olive)"),
-    ("fasolada", "Fasolada grecque (soupe de haricots blancs)"),
-    ("horiatiki", "Salade Horiatiki grecque (tomate, concombre, feta, olives)"),
-    ("fritturamista", "Frittura Mista italienne (friture de petits poissons, calamars et crevettes)"),
-    ("suppliromain", "Supplì al Telefono italien (croquette de riz frite au cœur de mozzarella filante)"),
-    ("ribollita", "Ribollita toscane (soupe épaisse haricots, chou et pain)"),
-    ("porotosgranados", "Porotos Granados chiliens (ragoût de haricots frais, maïs et courge)"),
-    ("cazuela", "Cazuela chilienne (pot-au-feu clair au poulet, pomme de terre et maïs)"),
-    ("completoitaliano", "Completo Italiano chilien (hot-dog à l'avocat écrasé, tomate, mayonnaise)"),
-    ("arepacolombie", "Arepa colombienne (galette de maïs fourrée au fromage fondant)"),
-    ("freekeh", "Freekeh libanais (blé vert torréfié mijoté au poulet)"),
-    ("krembo", "Krembo israélien (biscuit surmonté de mousse enrobée de chocolat)"),
-    ("mulukhiyah", "Molokheya égyptienne (soupe verte onctueuse aux feuilles de corète, servie sur riz)"),
-    ("kremowka", "Kremówka polonaise (mille-feuille à l'épaisse crème pâtissière)"),
-    ("yassapoisson", "Yassa au Poisson sénégalais (poisson mariné aux oignons et citron, sur riz)"),
-    ("knedliky", "Knedlíky tchèques (boulettes de pain tranchées en rondelles)"),
-    ("svickova", "Svíčková tchèque (bœuf braisé nappé de sauce crémeuse aux légumes racines)"),
-    ("borschtukrainien", "Bortsch ukrainien (soupe pourpre à la betterave et au bœuf, crème aigre)"),
-    ("chakapuligeorgie", "Chakapuli géorgien (ragoût d'agneau au vin blanc et à l'estragon)"),
+    ("chelokebab", "Chelo Kebab", "riz safrané iranien et brochettes d'agneau"),
+    ("tahchin", "Tahchin", "gâteau de riz iranien au safran et poulet"),
+    ("bastilla", "Bastilla", "tourte marocaine feuilletée au poulet et amandes"),
+    ("chapati", "Chapati", "galette de blé complet indienne"),
+    ("uttapam", "Uttapam", "crêpe indienne épaisse garnie d'oignon et tomate"),
+    ("appam", "Appam", "crêpe indienne au lait de coco aux bords dentelés"),
+    ("laphet", "Laphet Thoke", "salade birmane de feuilles de thé fermentées"),
+    ("mohinga", "Mohinga", "soupe birmane de nouilles de riz au poisson"),
+    ("nemnuong", "Nem Nuong", "brochettes vietnamiennes de porc à la citronnelle grillées"),
+    ("chagio", "Cha Gio", "rouleaux de printemps vietnamiens frits croustillants"),
+    ("ondehondeh", "Ondeh Ondeh", "boules de riz gluant vertes malaisiennes au sucre de palme, roulées coco"),
+    ("kuehlapis", "Kueh Lapis", "gâteau indonésien à mille couches épicé"),
+    ("martabaktelur", "Martabak Telur", "crêpe indonésienne farcie viande et œuf, pliée et frite"),
+    ("sundaecoreen", "Sundae", "saucisse coréenne de riz gluant et vermicelles, plat salé, pas une glace"),
+    ("injeolmi", "Injeolmi", "petits carrés coréens de riz gluant roulés dans la poudre de soja"),
+    ("seekhkebab", "Seekh Kebab", "brochettes indiennes de viande hachée épicée grillées"),
+    ("biryanihyderabadi", "Biryani Hyderabadi", "riz basmati safrané indien à l'agneau mariné"),
+    ("saagpaneer", "Saag Paneer", "purée indienne d'épinards crémeuse et cubes de fromage paneer"),
+    ("misalpav", "Misal Pav", "curry indien pimenté de haricots germés avec pain"),
+    ("khamandhokla", "Khaman Dhokla", "petits carrés indiens moelleux de pois chiche cuits vapeur"),
+    ("botikebab", "Boti Kebab", "brochettes indiennes de cubes d'agneau marinés grillés"),
+    ("cachorroquente", "Cachorro Quente", "hot-dog brésilien garni maïs, petits pois et purée"),
+    ("pastelbrasil", "Pastel Brasileiro", "chausson brésilien frit ultra-croustillant"),
+    ("escondidinho", "Escondidinho", "gratin brésilien de viande effilochée sous purée de manioc"),
+    ("baiao", "Baião de Dois", "riz et haricots brésiliens au fromage coalho"),
+    ("chivitouruguay", "Chivito", "sandwich géant uruguayen bœuf, jambon, fromage, œuf"),
+    ("tacutacu", "Tacu Tacu", "galette péruvienne de riz et haricots pressés avec œuf"),
+    ("chaufaperou", "Arroz Chaufa", "riz sauté péruvien façon chinoise au poulet"),
+    ("fritaycubaine", "Frita Cubana", "burger épicé cubain aux pailles de pomme de terre"),
+    ("fufunigeria", "Fufu", "boules nigérianes de pâte de manioc lisse"),
+    ("adanakebab", "Adana Kebab", "brochette turque large d'agneau haché épicé grillée"),
+    ("revithiasoupe", "Revithia", "soupe grecque de pois chiches à l'huile d'olive"),
+    ("fasolada", "Fasolada", "soupe grecque de haricots blancs"),
+    ("horiatiki", "Salade Horiatiki", "salade grecque tomate, concombre, feta, olives"),
+    ("fritturamista", "Frittura Mista", "friture italienne de petits poissons, calamars et crevettes"),
+    ("suppliromain", "Supplì al Telefono", "croquette de riz italienne frite au cœur de mozzarella filante"),
+    ("ribollita", "Ribollita", "soupe toscane épaisse haricots, chou et pain"),
+    ("porotosgranados", "Porotos Granados", "ragoût chilien de haricots frais, maïs et courge"),
+    ("cazuela", "Cazuela", "pot-au-feu chilien clair au poulet, pomme de terre et maïs"),
+    ("completoitaliano", "Completo Italiano", "hot-dog chilien à l'avocat écrasé, tomate, mayonnaise"),
+    ("arepacolombie", "Arepa", "galette colombienne de maïs fourrée au fromage fondant"),
+    ("freekeh", "Freekeh", "blé vert libanais torréfié mijoté au poulet"),
+    ("krembo", "Krembo", "biscuit israélien surmonté de mousse enrobée de chocolat"),
+    ("mulukhiyah", "Molokheya", "soupe égyptienne verte onctueuse aux feuilles de corète, servie sur riz"),
+    ("kremowka", "Kremówka", "mille-feuille polonais à l'épaisse crème pâtissière"),
+    ("yassapoisson", "Yassa au Poisson", "poisson sénégalais mariné aux oignons et citron, sur riz"),
+    ("knedliky", "Knedlíky", "boulettes de pain tchèques tranchées en rondelles"),
+    ("svickova", "Svíčková", "bœuf braisé tchèque nappé de sauce crémeuse aux légumes racines"),
+    ("borschtukrainien", "Bortsch", "soupe ukrainienne pourpre à la betterave et au bœuf, crème aigre"),
+    ("chakapuligeorgie", "Chakapuli", "ragoût géorgien d'agneau au vin blanc et à l'estragon"),
 ]
 
 def charger_cle():
@@ -113,23 +113,27 @@ def main():
     test_seulement = "--test" in sys.argv
 
     a_faire = []
-    for cle, desc in PLATS:
+    for cle, nom, desc in PLATS:
         dest_png = os.path.join(DROP, cle + ".png")
         # cherche aussi si l'image finale existe deja dans images/
         lettre = cle[0]
         dest_webp = os.path.join(ROOT, "images", lettre, cle + ".webp")
         if os.path.exists(dest_png) or os.path.exists(dest_webp):
             continue
-        a_faire.append((cle, desc))
+        a_faire.append((cle, nom, desc))
 
     if test_seulement:
         a_faire = a_faire[:1]
 
     print(f"{len(a_faire)} image(s) a generer.\n")
-    for i, (cle, desc) in enumerate(a_faire, 1):
+    for i, (cle, nom, desc) in enumerate(a_faire, 1):
         prompt = (
-            f"Photo réaliste et appétissante de {desc}, "
-            "cadrage carré, sans texte, sans logo, un seul plat dans l'image, fond neutre."
+            f"Photo culinaire professionnelle et appétissante de {desc}, "
+            "photographiée sur une table ou un plateau rustique en bois, entourée d'ingrédients "
+            "et d'ustensiles de cuisine en arrière-plan légèrement flou, lumière chaleureuse et naturelle. "
+            f"Une petite pancarte ou ardoise en bois posée à côté du plat indique son nom, \"{nom}\", "
+            "écrit à la craie ou en lettres élégantes. Cadrage carré, style photo de blog culinaire, "
+            "ambiance chaleureuse, un seul plat visible dans l'image."
         )
         print(f"[{i}/{len(a_faire)}] {cle} ...", end=" ", flush=True)
         try:
