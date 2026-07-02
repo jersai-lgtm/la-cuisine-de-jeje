@@ -102,6 +102,36 @@ const DRAPEAUX = (function () {
   // --- Europe centrale / Asie (suite) ---
   F.tchequie   = wrap(`<rect width="30" height="10" fill="#FFFFFF"/><rect y="10" width="30" height="10" fill="#D7141A"/><polygon points="0,0 15,10 0,20" fill="#11457E"/>`);
   F.myanmar    = wrap(ht("#FECB00", "#34B233", "#EA2839") + star(15, 10, 2.5, "#FFFFFF"));
+  // --- Asie du Sud / Sud-Est (suite) ---
+  F.srilanka   = wrap(`<rect width="30" height="20" fill="#8D153A"/><rect width="7" height="20" fill="#FFB700"/><rect x="3" width="2" height="20" fill="#00534E"/><rect x="5" width="2" height="20" fill="#FF5B00"/><rect x="14" y="5" width="12" height="10" rx="1" fill="#FFB700"/>`);
+  F.bangladesh = wrap(`<rect width="30" height="20" fill="#006A4E"/><circle cx="13" cy="10" r="5.5" fill="#F42A41"/>`);
+  F.nepal      = wrap(`<rect width="30" height="20" fill="#DC143C"/><polygon points="2,2 2,18 22,10" fill="none" stroke="#003893" stroke-width="1.2"/>` + star(11, 10, 2, "#FFFFFF"));
+  F.cambodge   = wrap(ht("#032EA1", "#E00025", "#032EA1") + `<rect x="12" y="5" width="6" height="10" fill="#FFFFFF"/><polygon points="12,5 15,2 18,5" fill="#FFFFFF"/>`);
+  F.laos       = wrap(ht("#CE1126", "#002868", "#CE1126") + `<circle cx="15" cy="10" r="3.6" fill="#FFFFFF"/>`);
+  F.mongolie   = wrap(vt("#C4272F", "#015197", "#C4272F") + `<rect x="1" y="4" width="4" height="12" fill="#FFC93C"/>`);
+  F.armenie    = wrap(ht("#D90012", "#0033A0", "#F2A800"));
+  // --- Afrique de l'Est / Australe (suite) ---
+  F.kenya      = wrap(ht("#000000", "#BB0000", "#006600") + `<rect y="8.5" width="30" height="3" fill="#FFFFFF"/><polygon points="15,6.5 19,13.5 11,13.5" fill="#BB0000" stroke="#FFFFFF" stroke-width="0.6"/>`);
+  F.tanzanie   = wrap(`<rect width="30" height="20" fill="#1EB53A"/><polygon points="0,0 0,7 23,20 30,20 30,13 7,0" fill="#000000"/><polygon points="0,7 0,10 20,20 23,20" fill="#FCD116"/><polygon points="7,0 10,0 30,10 30,13" fill="#FCD116"/><polygon points="0,10 0,13 17,20 20,20" fill="#00A3DD"/><polygon points="10,0 13,0 30,7 30,10" fill="#00A3DD"/>`);
+  F.madagascar = wrap(`<rect width="10" height="20" fill="#FFFFFF"/><rect x="10" width="20" height="10" fill="#FC3D32"/><rect x="10" y="10" width="20" height="10" fill="#007E3A"/>`);
+  // --- Amérique latine (suite) ---
+  F.bolivie    = wrap(ht("#D52B1E", "#F9E300", "#007934"));
+  F.paraguay   = wrap(ht("#D52B1E", "#FFFFFF", "#0038A8"));
+  F.dominicaine = wrap(`<rect width="30" height="20" fill="#002D62"/><rect x="13" width="4" height="20" fill="#FFFFFF"/><rect y="8" width="30" height="4" fill="#FFFFFF"/><rect width="13" height="8" fill="#CE1126"/><rect x="17" width="13" height="8" fill="#002D62"/><rect width="13" height="8" y="12" fill="#002D62"/><rect x="17" y="12" width="13" height="8" fill="#CE1126"/>`);
+  F.bahamas    = wrap(ht("#00778B", "#FFC72C", "#00778B") + `<polygon points="0,0 13,10 0,20" fill="#000000"/>`);
+  // --- Europe du Nord (suite) ---
+  F.islande    = wrap(`<rect width="30" height="20" fill="#02529C"/><rect x="10" width="4" height="20" fill="#FFFFFF"/><rect y="8" width="30" height="4" fill="#FFFFFF"/><rect x="11" width="2" height="20" fill="#DC1E35"/><rect y="9" width="30" height="2" fill="#DC1E35"/>`);
+  F.finlande   = wrap(`<rect width="30" height="20" fill="#FFFFFF"/><rect x="10" width="4" height="20" fill="#002F6C"/><rect y="8" width="30" height="4" fill="#002F6C"/>`);
+  F.norvege    = wrap(`<rect width="30" height="20" fill="#EF2B2D"/><rect x="10" width="4" height="20" fill="#FFFFFF"/><rect y="8" width="30" height="4" fill="#FFFFFF"/><rect x="11" width="2" height="20" fill="#002868"/><rect y="9" width="30" height="2" fill="#002868"/>`);
+  F.lettonie   = wrap(ht("#9E3039", "#FFFFFF", "#9E3039"));
+  // --- Balkans (suite) ---
+  F.montenegro = wrap(`<rect width="30" height="20" fill="#D3111B"/><rect x="1" y="1" width="28" height="18" fill="none" stroke="#D3AC2B" stroke-width="1.4"/><circle cx="15" cy="10" r="3.5" fill="#D3AC2B"/>`);
+  F.albanie    = wrap(`<rect width="30" height="20" fill="#E41E20"/><polygon points="15,6 17,10 15,14 13,10" fill="#000000"/><polygon points="11,10 19,10" fill="none" stroke="#000000" stroke-width="1"/>`);
+  F.bulgarie   = wrap(ht("#FFFFFF", "#00966E", "#D62612"));
+  // --- Îles britanniques (suite) ---
+  F.paysdegalles = wrap(`<rect width="30" height="10" fill="#FFFFFF"/><rect y="10" width="30" height="10" fill="#00B140"/><polygon points="8,17 12,9 16,13 14,17" fill="#C8102E"/><polygon points="16,13 20,7 22,10 18,15" fill="#C8102E"/>`);
+  F.ecosse     = wrap(`<rect width="30" height="20" fill="#005EB8"/><polygon points="0,0 4,0 30,17 30,20 26,20 0,3" fill="#FFFFFF"/><polygon points="30,0 26,0 0,17 0,20 4,20 30,3" fill="#FFFFFF"/>`);
+  F.malte      = wrap(`<rect width="15" height="20" fill="#FFFFFF"/><rect x="15" width="15" height="20" fill="#CF142B"/><rect x="1" y="1" width="7" height="7" fill="#C0C0C0"/><rect x="2.3" y="1" width="4.4" height="7" fill="#8C8C8C"/><rect x="1" y="2.3" width="7" height="4.4" fill="#8C8C8C"/>`);
   // --- Régions / territoires (pas de drapeau national, icône thématique) ---
   F.polynesie  = wrap(ht("#CE1126", "#FFFFFF", "#CE1126") + `<circle cx="15" cy="10" r="2.5" fill="#FFD100"/>`);
   F.tibet      = wrap(`<rect width="30" height="20" fill="#9AC9E3"/><polygon points="2,18 9,6 14,13 19,4 28,18" fill="#FFFFFF"/>`);

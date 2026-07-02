@@ -50880,5 +50880,1653 @@ window.RECETTES_EN = {
     "detail": "Serve with Georgian bread to soak up the herby sauce."
    }
   ]
+ },
+ "kotturoti": {
+  "nom": "Kottu Roti",
+  "description": "Sri Lankan flatbread sliced thin and stir-fried wok-style with vegetables, egg and curry, chopped noisily on the flat-top with a pair of blades. An iconic, clattering street food.",
+  "etapes": [
+   {
+    "titre": "Roti",
+    "detail": "Prepare (or reheat) some roti and slice it into thin strips."
+   },
+   {
+    "titre": "Curry",
+    "detail": "Simmer a spiced chicken curry."
+   },
+   {
+    "titre": "Wok",
+    "detail": "Get a wok or flat griddle screaming hot."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Stir-fry onion, bell pepper and a scrambled egg."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the roti strips to the wok."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Chop and toss everything together with two spatulas, kottu-style."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Fold in the curry until everything is well coated."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, straight from the wok."
+   }
+  ]
+ },
+ "hoppers": {
+  "nom": "Hoppers",
+  "description": "A small bowl-shaped Sri Lankan pancake made from fermented rice-flour and coconut-milk batter, with thin crisp edges and a soft center. Often topped with an egg.",
+  "etapes": [
+   {
+    "titre": "Batter",
+    "detail": "Mix rice flour, coconut milk and yeast into a batter."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Let it ferment for several hours until light and bubbly."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the consistency so it's thick yet pourable."
+   },
+   {
+    "titre": "Heat the pan",
+    "detail": "Heat a small oiled wok (appachatti)."
+   },
+   {
+    "titre": "Swirl",
+    "detail": "Pour in the batter and swirl to coat the sides."
+   },
+   {
+    "titre": "Top it off",
+    "detail": "Crack an egg into the center (optional)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook until the edges turn golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Gently ease it out of the pan and serve hot."
+   }
+  ]
+ },
+ "polsambol": {
+  "nom": "Pol Sambol",
+  "description": "A Sri Lankan relish of freshly grated coconut, chili, red onion and lime. Bright, fiery, and served with just about everything on the island.",
+  "etapes": [
+   {
+    "titre": "Coconut",
+    "detail": "Grate fresh coconut (or rehydrate desiccated coconut)."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Finely slice the red onion."
+   },
+   {
+    "titre": "Chili",
+    "detail": "Pound chili and smoked paprika in a mortar."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Mix the coconut, onion and chili together."
+   },
+   {
+    "titre": "Add zing",
+    "detail": "Add lime juice and salt."
+   },
+   {
+    "titre": "Pound",
+    "detail": "Pound well to release the juices and bind the mixture."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve alongside rice or hoppers."
+   }
+  ]
+ },
+ "biryanidhaka": {
+  "nom": "Kacchi Biryani",
+  "description": "A Bangladeshi biryani of raw marinated lamb slow-cooked with the rice, fragrant with ghee and delicate spices. Dhaka's celebration dish.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the raw lamb in yogurt, spices and papaya juice to tenderize it."
+   },
+   {
+    "titre": "Fry the onions",
+    "detail": "Fry onions until deep golden brown."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Parboil fragrant basmati rice with cinnamon and cardamom."
+   },
+   {
+    "titre": "Layer the base",
+    "detail": "Spread the marinated lamb across the bottom of the pot."
+   },
+   {
+    "titre": "Build the layers",
+    "detail": "Top with the rice, fried onions, saffron and melted ghee."
+   },
+   {
+    "titre": "Dum cooking",
+    "detail": "Seal the pot and slow-cook over very low heat for a long time."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff gently and serve with a side of raita."
+   }
+  ]
+ },
+ "hilsacurry": {
+  "nom": "Hilsa Fish Curry",
+  "description": "A Bangladeshi curry of hilsa fish simmered in a turmeric-mustard sauce. The national fish, cooked in kitchens across the country.",
+  "etapes": [
+   {
+    "titre": "Fish",
+    "detail": "Cut the fish into steaks and rub with turmeric and salt."
+   },
+   {
+    "titre": "Paste",
+    "detail": "Blend soaked mustard seeds with green chili into a paste."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Lightly sear the fish steaks in mustard oil."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the onion in the same oil."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Stir in the mustard paste with a splash of water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the fish to the pan and simmer gently, covered."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with fragrant steamed white rice."
+   }
+  ]
+ },
+ "momosnepal": {
+  "nom": "Nepali Momo",
+  "description": "Hand-pleated Nepali steamed dumplings filled with spiced meat, served with a tangy sesame-tomato dip. A Kathmandu essential.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a simple flour-and-water dough until smooth."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix minced meat with onion, ginger and cilantro."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough into small, thin discs."
+   },
+   {
+    "titre": "Pleat",
+    "detail": "Fill and hand-pleat each one into a little purse shape."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 10-12 minutes."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Prepare a spicy sesame-tomato dip (achar)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with the dip on the side."
+   }
+  ]
+ },
+ "dalbhat": {
+  "nom": "Dal Bhat",
+  "description": "Nepal's everyday meal: simmered lentils, rice, sautéed vegetables and pickle, all served on one plate. Simple, complete and comforting.",
+  "etapes": [
+   {
+    "titre": "Lentils",
+    "detail": "Cook the lentils with turmeric until tender."
+   },
+   {
+    "titre": "Temper",
+    "detail": "Bloom cumin and garlic in ghee, then pour over the dal."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Cook the rice separately."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Sauté spiced seasonal vegetables (tarkari)."
+   },
+   {
+    "titre": "Pickle",
+    "detail": "Make a simple lemon or vegetable pickle (achar)."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Arrange the rice, dal, vegetables and pickle on one plate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve and mix freely, Nepali-style."
+   }
+  ]
+ },
+ "amoknombodge": {
+  "nom": "Amok",
+  "description": "Cambodian fish marinated in kroeung curry paste and coconut milk, steamed in a banana-leaf cup. Fluffy, fragrant and delicate.",
+  "etapes": [
+   {
+    "titre": "Kroeung paste",
+    "detail": "Pound lemongrass, galangal, garlic and turmeric into a paste (kroeung)."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the sliced fish in the paste."
+   },
+   {
+    "titre": "Whip it up",
+    "detail": "Mix in coconut milk and egg for a fluffy texture."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Spoon into banana leaves folded into little cups."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam until set, like a custard."
+   },
+   {
+    "titre": "Top it off",
+    "detail": "Finish with a drizzle of thick coconut milk before serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with jasmine rice."
+   }
+  ]
+ },
+ "lokialcambodge": {
+  "nom": "Lok Lak",
+  "description": "A Cambodian stir-fry of caramelized beef cubes in a peppery sauce, served over salad with a raw egg yolk and a lime-pepper dipping sauce.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the beef cubes in garlic and soy sauce."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear over very high heat in a scorching-hot wok."
+   },
+   {
+    "titre": "Caramelize",
+    "detail": "Add sugar and oyster sauce, and let it caramelize."
+   },
+   {
+    "titre": "Bed of salad",
+    "detail": "Lay out a bed of tomato and red onion salad."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Set the caramelized beef on top of the salad."
+   },
+   {
+    "titre": "Top",
+    "detail": "Add a raw egg yolk in the center."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Serve with a lime-pepper-salt dipping sauce on the side."
+   }
+  ]
+ },
+ "orlam": {
+  "nom": "Or Lam",
+  "description": "A thick Laotian stew of meat, eggplant and bitter wood (sakhaan), mildly spicy and earthy. The signature dish of Luang Prabang.",
+  "etapes": [
+   {
+    "titre": "Meat",
+    "detail": "Brown the pork pieces with lemongrass and galangal."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add chopped eggplant and long beans."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pour in a light stock and let it simmer."
+   },
+   {
+    "titre": "Spice it up",
+    "detail": "Add whole chilies and roasted chili paste."
+   },
+   {
+    "titre": "Bitterness",
+    "detail": "Stir in a bit of bitter bark (or swap in bitter herbs)."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Let it reduce down to a thick consistency."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with sticky rice on the side."
+   }
+  ]
+ },
+ "buuz": {
+  "nom": "Buuz",
+  "description": "Mongolian steamed dumplings pleated into little domes, filled with lamb and onion, eaten by hand during Mongolian Lunar New Year.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a simple flour-and-water dough and let it rest."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix minced lamb with finely chopped onion and garlic."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out small rounds of dough."
+   },
+   {
+    "titre": "Pleat",
+    "detail": "Fill and pleat into a little pouch or dome shape."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 15-18 minutes."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check that the juices run clear inside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, eaten by hand, with a simple dipping sauce."
+   }
+  ]
+ },
+ "khorkhog": {
+  "nom": "Khorkhog",
+  "description": "A Mongolian lamb and vegetable stew traditionally cooked with red-hot stones in a sealed milk can. Adapted here for a Dutch oven, just as tender.",
+  "etapes": [
+   {
+    "titre": "Lamb",
+    "detail": "Cut the lamb into large pieces, bone in."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Cut potatoes, carrots and onion into large chunks."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Layer the meat and vegetables in a Dutch oven."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season generously between layers, with just a little water."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook over very low heat for a long time."
+   },
+   {
+    "titre": "Check",
+    "detail": "The meat should pull easily off the bone."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the meat and vegetables with the cooking juices."
+   }
+  ]
+ },
+ "khorovatsarmenien": {
+  "nom": "Khorovats",
+  "description": "Armenian barbecue of pork skewers marinated in wine and spices, grilled over embers with charred vegetables. The Armenian Sunday ritual.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the cubed pork overnight in wine, onion and spices."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the meat cubes onto skewers."
+   },
+   {
+    "titre": "Embers",
+    "detail": "Get a bed of hot embers ready."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill, turning often, until nicely browned."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Grill whole peppers and tomatoes alongside."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Peel and roughly mash the grilled vegetables."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the meat over lavash with the charred vegetables."
+   }
+  ]
+ },
+ "dolmaarmenien": {
+  "nom": "Armenian Dolma",
+  "description": "Armenian vegetables (peppers, tomatoes) stuffed with minced meat and herbed rice, simmered in their own juices. A hearty, savory take on dolma.",
+  "etapes": [
+   {
+    "titre": "Hollow out",
+    "detail": "Hollow out the peppers and tomatoes, keeping the tops as lids."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix minced meat with raw rice, onion and fresh herbs."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Generously stuff each vegetable."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Pack them upright, snugly, in a pot."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add tomato-tinted water, cover and cook over low heat."
+   },
+   {
+    "titre": "Cook through",
+    "detail": "Simmer until the rice and meat are cooked and the vegetables are tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with garlicky yogurt."
+   }
+  ]
+ },
+ "ugali": {
+  "nom": "Ugali",
+  "description": "A firm Kenyan cornmeal porridge, beaten and worked into a dense dough. The staple side dish across East Africa.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Bring salted water to a boil."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Whisk in the cornmeal in a steady stream."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Beat vigorously with a wooden spoon."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook over low heat, stirring, until it forms a dense mass."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Keep working it until smooth and compact."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape into a smooth mound or loaf using a damp dish."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a stew or leafy greens (sukuma wiki)."
+   }
+  ]
+ },
+ "nyamachoma": {
+  "nom": "Nyama Choma",
+  "description": "Kenyan goat or beef grilled simply with salt, served with kachumbari (tomato-onion salad) and ugali. The king of grilled meats.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the meat into large chunks and salt generously."
+   },
+   {
+    "titre": "Embers",
+    "detail": "Get a good bed of embers going."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill slowly, turning often, until nicely caramelized."
+   },
+   {
+    "titre": "Kachumbari",
+    "detail": "Chop tomato, red onion and chili for the salad."
+   },
+   {
+    "titre": "Season",
+    "detail": "Dress the fresh salad with lime juice and salt."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Slice the grilled meat into pieces."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with kachumbari and ugali."
+   }
+  ]
+ },
+ "pilautanzanie": {
+  "nom": "Tanzanian Pilau",
+  "description": "Tanzanian rice fragrant with whole spices — cumin, cinnamon, cloves — simmered with meat. A festive dish from the Swahili coast.",
+  "etapes": [
+   {
+    "titre": "Meat",
+    "detail": "Sear the meat with the toasted whole spices."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Add the onions and let them caramelize well."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Toast the rice in the spiced mixture until glossy."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in fragrant broth to cover."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook covered until all the liquid is absorbed."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Gently fluff with a fork."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a kachumbari salad."
+   }
+  ]
+ },
+ "sambusatanzanie": {
+  "nom": "Tanzanian Sambusa",
+  "description": "Crispy Tanzanian triangles stuffed with spiced ground meat and fried until golden. The Swahili sambusa, cousin of the Indian samosa.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Sauté ground meat, onion and curry spices."
+   },
+   {
+    "titre": "Pastry",
+    "detail": "Prepare or use thin sheets of pastry."
+   },
+   {
+    "titre": "Strips",
+    "detail": "Cut into long strips."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold into a triangle, tucking in the filling with each fold."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Seal the last edge with water or a flour paste."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a spicy sauce."
+   }
+  ]
+ },
+ "romazava": {
+  "nom": "Romazava",
+  "description": "A Malagasy beef and greens stew, simmered simply with brèdes mafana leaves. Madagascar's national dish, served with rice at every meal.",
+  "etapes": [
+   {
+    "titre": "Meat",
+    "detail": "Brown the beef chunks with onion and ginger."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover with water and simmer until the meat is tender."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the crushed tomato."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Add the finely shredded greens."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer for another 10 minutes."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and pepper, then taste and adjust."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a generous bowl of white rice."
+   }
+  ]
+ },
+ "ravitoto": {
+  "nom": "Ravitoto",
+  "description": "Pounded cassava leaves simmered with pork and coconut milk, a Malagasy classic. Unique green, melt-in-the-mouth texture, and an everyday dish in Madagascar.",
+  "etapes": [
+   {
+    "titre": "Leaves",
+    "detail": "Finely pound the greens (cassava leaves or spinach)."
+   },
+   {
+    "titre": "Meat",
+    "detail": "Brown the pork chunks with garlic and onion."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the pounded leaves."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer gently for a long time."
+   },
+   {
+    "titre": "Coconut",
+    "detail": "Stir in the coconut milk toward the end of cooking."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Let it reduce down to a soft, melting texture."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with white rice, spiced up with chili to taste."
+   }
+  ]
+ },
+ "saltenabolivie": {
+  "nom": "Salteña",
+  "description": "A Bolivian pastry with a slightly sweet dough, filled with a juicy stew of meat, potato and peas. Eaten standing up — carefully!",
+  "etapes": [
+   {
+    "titre": "Stew",
+    "detail": "Simmer diced meat with potato and spices."
+   },
+   {
+    "titre": "Set",
+    "detail": "Let the stew cool and set, with a touch of gelatin."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Knead a slightly sweet dough enriched with lard."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out rounds of dough."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Generously fill with the cold, set stew."
+   },
+   {
+    "titre": "Pleat",
+    "detail": "Fold into a pocket and pinch the edge firmly shut."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, holding the tip carefully so you don't burn yourself."
+   }
+  ]
+ },
+ "chairo": {
+  "nom": "Chairo",
+  "description": "A thick Bolivian highland soup with lamb, potato, wheat and vegetables — hearty comfort food from the heights of La Paz.",
+  "etapes": [
+   {
+    "titre": "Broth",
+    "detail": "Simmer the lamb in broth for a long time until tender."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion, garlic and cumin."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add diced potato and carrot."
+   },
+   {
+    "titre": "Grain",
+    "detail": "Add the barley, or cracked wheat."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until everything is tender."
+   },
+   {
+    "titre": "Spice it up",
+    "detail": "Add a touch of chili (ají)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot as a thick soup."
+   }
+  ]
+ },
+ "sopaparaguayenne": {
+  "nom": "Sopa Paraguaya",
+  "description": "Despite its name meaning \"soup,\" this is actually a dense Paraguayan savory cornbread with cheese and onion — the country's most puzzling, and most delicious, specialty.",
+  "etapes": [
+   {
+    "titre": "Onions",
+    "detail": "Slowly melt the sliced onions in butter."
+   },
+   {
+    "titre": "Batter",
+    "detail": "Mix cornmeal, milk and eggs."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Fold in the grated cheese and the melted onions."
+   },
+   {
+    "titre": "Smooth it out",
+    "detail": "Mix well until the batter is smooth and pourable."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour into a buttered baking dish."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until golden and set all the way through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, cut into squares, alongside an asado or on its own."
+   }
+  ]
+ },
+ "chipaguarani": {
+  "nom": "Chipa Guaraní",
+  "description": "Soft, chewy little Paraguayan cassava and cheese buns, naturally gluten-free. Enjoyed at breakfast or as a snack.",
+  "etapes": [
+   {
+    "titre": "Starch",
+    "detail": "Use cassava starch, or well-drained grated cassava."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix with melted butter and warm milk."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Generously fold in the grated cheese."
+   },
+   {
+    "titre": "Eggs",
+    "detail": "Add the eggs and knead until the dough turns elastic."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape into small buns or rings."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until golden and puffed up."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, stretchy at the center."
+   }
+  ]
+ },
+ "concondominicain": {
+  "nom": "El Concón",
+  "description": "The caramelized, crispy crust of rice that forms at the bottom of the Dominican pot, served as a delicacy in its own right. The treasure at the bottom of the cauldron.",
+  "etapes": [
+   {
+    "titre": "Rice",
+    "detail": "Cook rice with garlic and onion in a heavy-bottomed pot."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Lower the heat to minimum toward the end of cooking."
+   },
+   {
+    "titre": "Wait",
+    "detail": "Let it rest covered, without stirring, for 15-20 minutes."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check that the bottom has formed a golden crust."
+   },
+   {
+    "titre": "Lift",
+    "detail": "Gently lift the crust away from the bottom of the pot."
+   },
+   {
+    "titre": "Crisp up",
+    "detail": "Pan-fry again for extra crispiness if needed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve as a crunchy side dish — a real favorite."
+   }
+  ]
+ },
+ "mangubandominicain": {
+  "nom": "Dominican Mangú",
+  "description": "A Dominican mash of boiled green plantains, crushed with their cooking water and topped with pickled red onions. The national breakfast.",
+  "etapes": [
+   {
+    "titre": "Peel",
+    "detail": "Peel the green plantains and cut into chunks."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Boil in salted water until very tender."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash with a fork, adding a little cooking water and butter."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Thinly slice the red onion."
+   },
+   {
+    "titre": "Pickle",
+    "detail": "Let the onion marinate in vinegar for a few minutes."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spoon out the mash, smooth and lump-free."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with the pickled onions and serve with eggs and fried cheese."
+   }
+  ]
+ },
+ "johnnycake": {
+  "nom": "Johnny Cake",
+  "description": "A dense, lightly sweetened Bahamian bread, baked or pan-fried. The traditional side to Sunday's fried fish.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Mix flour, sugar, baking powder and a pinch of salt."
+   },
+   {
+    "titre": "Work in the butter",
+    "detail": "Rub the butter in with your fingertips."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the milk gradually to form a soft dough."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead briefly until smooth."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape into a flattened round loaf."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until golden with a firm crust."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, sliced, alongside fried fish."
+   }
+  ]
+ },
+ "conchsalad": {
+  "nom": "Conch Salad",
+  "description": "A fresh Bahamian salad of conch marinated in lime juice with tomato, bell pepper and scotch bonnet chili. The Caribbean's answer to ceviche — bright and crunchy.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Tenderize and finely chop the conch (or mussels as a substitute)."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate generously in lime juice."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Dice the tomato, bell pepper and onion small."
+   },
+   {
+    "titre": "Chili",
+    "detail": "Finely mince the scotch bonnet chili."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Mix all the ingredients together."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and, if you like, a splash of orange juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, as a starter."
+   }
+  ]
+ },
+ "agneauislandais": {
+  "nom": "Icelandic Lamb Stew",
+  "description": "An Icelandic stew of lamb and winter root vegetables — swede, carrot, potato — simmered long and slow. Simple warmth for the long Nordic nights.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sear the pieces of lamb in a heavy pot."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add onion and a little flour to thicken."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in water or stock to cover."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add carrot, swede and potato."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer gently for a long time."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season simply with salt, pepper and thyme."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with bread."
+   }
+  ]
+ },
+ "kjotsupa": {
+  "nom": "Kjötsúpa",
+  "description": "A traditional Icelandic soup of lamb and root vegetables, light yet hearty. The comforting bowl found in every Icelandic home come winter.",
+  "etapes": [
+   {
+    "titre": "Broth",
+    "detail": "Cook the lamb in water to make a clear broth, skimming as needed."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add carrot, turnip and potato, cut into chunks."
+   },
+   {
+    "titre": "Grain",
+    "detail": "Stir in a little rice or oats to thicken slightly."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer until the meat and vegetables are tender."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Add fresh thyme toward the end of cooking."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot as a complete meal in a bowl."
+   }
+  ]
+ },
+ "karjalanpiirakka": {
+  "nom": "Karjalanpiirakka",
+  "description": "Small Finnish Karelian pastries with a thin rye crust, filled with creamy rice porridge and brushed with an egg-butter topping.",
+  "etapes": [
+   {
+    "titre": "Porridge",
+    "detail": "Simmer the rice in milk for a long time until it forms a thick porridge."
+   },
+   {
+    "titre": "Dough",
+    "detail": "Knead a thin dough from rye flour and water."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll out thin oval sheets of dough."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the rice porridge over the center."
+   },
+   {
+    "titre": "Pleat",
+    "detail": "Fold and pinch the edges into an accordion pleat, leaving an open oval center."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a very hot oven until spotted golden brown."
+   },
+   {
+    "titre": "Brush",
+    "detail": "While still hot, brush with melted butter mixed with mashed hard-boiled egg."
+   }
+  ]
+ },
+ "kalakukko": {
+  "nom": "Kalakukko",
+  "description": "A hefty Finnish rye bread stuffed with fish and pork fat, baked low and slow until the fish bones turn soft. A specialty of the Savonia region.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a thick dough of rye and wheat flour."
+   },
+   {
+    "titre": "Line the shell",
+    "detail": "Roll out into a large round and shape into a pocket."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Layer in the fish and salted pork fat."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Carefully close it into a domed loaf, sealing the edges well."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Bake first in a hot oven to brown the crust."
+   },
+   {
+    "titre": "Slow-bake",
+    "detail": "Lower the temperature and bake for several hours."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in slices, crust and all, spread with butter."
+   }
+  ]
+ },
+ "farikal": {
+  "nom": "Fårikål (Norwegian Lamb and Cabbage Stew)",
+  "description": "Norway's national dish: lamb and cabbage slow-simmered together in layers with nothing more than salt and whole peppercorns. Proof that simplicity pays off.",
+  "etapes": [
+   {
+    "titre": "Cut the lamb",
+    "detail": "Cut the lamb (bone-in) into large chunks."
+   },
+   {
+    "titre": "Prep the cabbage",
+    "detail": "Cut the cabbage into big wedges."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Layer the lamb and cabbage alternately in a large pot."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season generously with salt and whole peppercorns between each layer."
+   },
+   {
+    "titre": "Add flour",
+    "detail": "Dust a little flour over the top layer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add a splash of water, cover, and simmer very slowly for a long time."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with steamed potatoes on the side."
+   }
+  ]
+ },
+ "raspeball": {
+  "nom": "Raspeball (Norwegian Potato Dumplings)",
+  "description": "Norwegian dumplings made from grated raw potato, poached and served with bacon, sausage, and mashed rutabaga. Sunday comfort food at its finest.",
+  "etapes": [
+   {
+    "titre": "Grate the potatoes",
+    "detail": "Finely grate the raw potatoes and squeeze out the excess liquid."
+   },
+   {
+    "titre": "Make the dough",
+    "detail": "Mix with flour and salt into a firm dough."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape into large round dumplings."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach in barely simmering water for 45-60 minutes."
+   },
+   {
+    "titre": "Cook the toppings",
+    "detail": "Fry the bacon and sausage slices until golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the hot dumplings topped with bacon and sausage."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Top with a knob of butter before serving."
+   }
+  ]
+ },
+ "peleklizirni": {
+  "nom": "Pelēkie Zirņi (Latvian Grey Peas with Bacon)",
+  "description": "Latvian grey peas slow-simmered with smoky bacon and onion. The traditional Christmas dish — earthy and deeply comforting.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the grey peas (or grey beans) overnight."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer in water until tender, taking care not to break them."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Fry the smoky bacon until golden."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Add the sliced onion and cook until soft."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Mix the cooked peas with the bacon and onions."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Stir in a knob of butter and season to taste."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot as a hearty, shareable main."
+   }
+  ]
+ },
+ "sklandrausis": {
+  "nom": "Sklandrausis (Latvian Rye Tartlets)",
+  "description": "Small Latvian tartlets with a thin rye crust, filled with mashed potato and sweetened carrot. Soft, rustic, and utterly unique.",
+  "etapes": [
+   {
+    "titre": "Make the dough",
+    "detail": "Knead a thin rye and wheat dough."
+   },
+   {
+    "titre": "First filling",
+    "detail": "Cook the potatoes and mash them smooth."
+   },
+   {
+    "titre": "Second filling",
+    "detail": "Cook the carrots and purée them with honey until sweet."
+   },
+   {
+    "titre": "Line the molds",
+    "detail": "Line small round molds with the dough, pinching the edges."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill with a layer of mashed potato, then the sweet carrot purée."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the edges turn golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold as a sweet-savory snack."
+   }
+  ]
+ },
+ "kacamak": {
+  "nom": "Kačamak (Montenegrin Cornmeal Porridge)",
+  "description": "A Montenegrin porridge of cornmeal and potato, worked at length and enriched with cheese and cream. Hearty mountain comfort food.",
+  "etapes": [
+   {
+    "titre": "Potatoes",
+    "detail": "Boil the potatoes in water, then drain."
+   },
+   {
+    "titre": "Boil",
+    "detail": "Bring salted water to a boil."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Whisk in the cornmeal in a steady stream."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Add the potatoes and beat vigorously."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Off the heat, stir in the cheese and cream."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add a generous knob of melted butter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot as a standalone dish."
+   }
+  ]
+ },
+ "ripljacorba": {
+  "nom": "Riblja Čorba (Montenegrin Fish Soup)",
+  "description": "A Montenegrin fish soup from the Adriatic coast, simmered with tomato and paprika and thickened without any cream. Simply the catch of the day.",
+  "etapes": [
+   {
+    "titre": "Make the stock",
+    "detail": "Prepare a stock from the fish trimmings."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the onion, carrot, and celery."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the chopped tomato and paprika."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in the strained fish stock."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer for 20 minutes to build the flavors."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Add the fish pieces and poach gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a splash of vinegar."
+   }
+  ]
+ },
+ "tavekosi": {
+  "nom": "Tavë Kosi (Albanian Baked Lamb with Rice)",
+  "description": "Albania's national dish: lamb and rice baked under a yogurt-and-egg sauce that sets like a savory custard. Comforting and one of a kind.",
+  "etapes": [
+   {
+    "titre": "Lamb",
+    "detail": "Sear the lamb chunks and cook until nearly tender."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Add the rice with a little broth and partly cook it."
+   },
+   {
+    "titre": "Transfer",
+    "detail": "Transfer the meat and rice to a baking dish."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Whisk yogurt, eggs, and flour into a smooth sauce."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the sauce generously over the dish."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the sauce is golden and set like a custard."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest for 10 minutes before slicing into portions."
+   }
+  ]
+ },
+ "byrekalbanie": {
+  "nom": "Byrek (Albanian Spinach and Cheese Pie)",
+  "description": "An Albanian spiral pie of thin pastry sheets, filled with spinach and cheese. Cut into generous slices, it's the star of every Albanian table.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Cook the spinach, squeeze it dry, and mix with crumbled cheese."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add an egg to bind the filling."
+   },
+   {
+    "titre": "Pastry sheets",
+    "detail": "Brush each sheet of pastry with oil."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Spread the filling over a sheet and roll it into a long log."
+   },
+   {
+    "titre": "Coil",
+    "detail": "Coil the log into a spiral inside a round baking dish."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into triangular slices and serve warm."
+   }
+  ]
+ },
+ "banitsa": {
+  "nom": "Banitsa",
+  "description": "A Bulgarian pastry of crumpled, buttery layers filled with crumbled cheese and beaten egg. Bulgaria's national breakfast, often baked with a lucky charm hidden inside.",
+  "etapes": [
+   {
+    "titre": "Filling",
+    "detail": "Beat the eggs with crumbled cheese and yogurt into a smooth filling."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Brush each sheet of pastry with melted butter."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread a little of the filling over each sheet."
+   },
+   {
+    "titre": "Crumple",
+    "detail": "Loosely crumple each filled sheet accordion-style."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Pack the crumpled bundles tightly into a round baking dish."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the remaining filling over the top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until puffed and deep golden brown."
+   }
+  ]
+ },
+ "shopska": {
+  "nom": "Shopska Salad",
+  "description": "Bulgaria's signature salad of tomato, cucumber and pepper, buried under a generous snowfall of grated white cheese. Crisp, fresh and tangy.",
+  "etapes": [
+   {
+    "titre": "Vegetables",
+    "detail": "Dice the tomato, cucumber and pepper."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Thinly slice the onion."
+   },
+   {
+    "titre": "Toss",
+    "detail": "Toss all the vegetables together."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Drizzle with oil and a light splash of vinegar."
+   },
+   {
+    "titre": "Grate",
+    "detail": "Generously grate the white cheese (sirene) over the top."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Scatter with fresh parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chilled, tossing everything together at the table."
+   }
+  ]
+ },
+ "welshrarebit": {
+  "nom": "Welsh Rarebit",
+  "description": "Toast blanketed in a molten sauce of cheddar, beer and mustard, grilled until bubbling. Think Welsh grilled cheese, taken up a notch.",
+  "etapes": [
+   {
+    "titre": "Roux",
+    "detail": "Make a roux with the butter and a little flour."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Whisk in the milk (or beer) until the sauce is smooth."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Stir in the grated cheddar until melted."
+   },
+   {
+    "titre": "Mustard",
+    "detail": "Add mustard and a dash of Worcestershire sauce."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Lightly toast the slices of bread."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the cheese sauce generously over the toast."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill until golden and bubbling."
+   }
+  ]
+ },
+ "cawl": {
+  "nom": "Cawl",
+  "description": "A traditional Welsh lamb and leek stew simmered slowly with root vegetables. Wales' national dish — simple, hearty comfort food.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sear the chunks of lamb in a large pot."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Cover with water, bring to a simmer and skim off the foam."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the carrot, turnip and potato."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer gently for a long stretch."
+   },
+   {
+    "titre": "Leek",
+    "detail": "Stir in the sliced leek toward the end of cooking."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt, pepper and parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a hunk of crusty bread."
+   }
+  ]
+ },
+ "haggisscotland": {
+  "nom": "Haggis",
+  "description": "A Scottish sheep's stomach stuffed with offal, oats and spices, then simmered for hours. Served with mashed potato and swede (neeps and tatties).",
+  "etapes": [
+   {
+    "titre": "Meat",
+    "detail": "Roughly chop the meat (traditionally offal)."
+   },
+   {
+    "titre": "Oats",
+    "detail": "Lightly toast the oats."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the meat, oats, onion and spices (pepper, nutmeg)."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Wrap tightly in a pudding cloth (or casing)."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach at a gentle simmer for 2 hours, piercing to release trapped air."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Prepare separate mashes of potato and swede."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the crumbled haggis with both mashes (neeps and tatties)."
+   }
+  ]
+ },
+ "cranachan": {
+  "nom": "Cranachan",
+  "description": "A layered Scottish dessert of whisky-laced whipped cream, toasted oats, honey and fresh raspberries. Light, crunchy, and fiercely Scottish.",
+  "etapes": [
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the oats until golden and fragrant."
+   },
+   {
+    "titre": "Whip",
+    "detail": "Whip the cream to soft peaks."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Fold a splash of whisky and honey into the cream."
+   },
+   {
+    "titre": "Fruit",
+    "detail": "Lightly crush some of the raspberries with a little sugar."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Layer the cream, toasted oats and raspberries in a glass."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Finish with a drizzle of honey on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right after assembling to keep the crunch."
+   }
+  ]
+ },
+ "kapunata": {
+  "nom": "Kapunata",
+  "description": "A Maltese eggplant ratatouille with pepper, tomato and capers, simmered in olive oil. Served warm or cold on crusty bread.",
+  "etapes": [
+   {
+    "titre": "Eggplant",
+    "detail": "Dice the eggplant and salt it to draw out the moisture."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sauté the eggplant in olive oil until golden."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the pepper and onion, and sweat until soft."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Stir in the crushed tomato."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer until tender."
+   },
+   {
+    "titre": "Olives",
+    "detail": "Add the olives and capers near the end of cooking."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold on crusty bread."
+   }
+  ]
+ },
+ "timpanamalte": {
+  "nom": "Timpana",
+  "description": "A Maltese baked pasta pie: macaroni in a meaty tomato sauce wrapped in golden pastry and sliced like a tart. A celebration dish.",
+  "etapes": [
+   {
+    "titre": "Pasta",
+    "detail": "Cook the macaroni until al dente."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Simmer a rich bolognese-style sauce with ground meat."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Mix the pasta with the sauce, cheese and beaten egg."
+   },
+   {
+    "titre": "Line",
+    "detail": "Line a baking dish with the pastry."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour the pasta mixture into the pastry-lined dish."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Cover with a disc of pastry and seal the edges."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest, then slice into portions like a pie."
+   }
+  ]
  }
 };
