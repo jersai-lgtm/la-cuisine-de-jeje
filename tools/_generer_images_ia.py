@@ -3,6 +3,12 @@
 Genere automatiquement les photos de recettes manquantes via l'API OpenAI
 (gpt-image-1), une image par plat, en pleine resolution (1024x1024).
 
+Style (valide par Jerome le 2026-07-02) : fond rustique NET (bois/ardoise/
+table), sans flou/bokeh d'arriere-plan, avec une petite pancarte/ardoise
+indiquant le nom du plat. Format carre (l'API ne propose que 1024x1024,
+1024x1536, 1536x1024 -- pas de 16:9 exact malgre ce que ChatGPT web laisse
+croire dans ses propres prompts).
+
 Lit la cle API depuis le fichier .env (JAMAIS committe, voir .gitignore) :
   OPENAI_API_KEY=sk-...
 
@@ -128,12 +134,11 @@ def main():
     print(f"{len(a_faire)} image(s) a generer.\n")
     for i, (cle, nom, desc) in enumerate(a_faire, 1):
         prompt = (
-            f"Photo culinaire professionnelle et appétissante de {desc}, "
-            "photographiée sur une table ou un plateau rustique en bois, entourée d'ingrédients "
-            "et d'ustensiles de cuisine en arrière-plan légèrement flou, lumière chaleureuse et naturelle. "
-            f"Une petite pancarte ou ardoise en bois posée à côté du plat indique son nom, \"{nom}\", "
-            "écrit à la craie ou en lettres élégantes. Cadrage carré, style photo de blog culinaire, "
-            "ambiance chaleureuse, un seul plat visible dans l'image."
+            f"Photo ultra réaliste et professionnelle de {desc}. "
+            "Présentation gastronomique, fond rustique (bois, ardoise ou table selon le plat), "
+            "net du premier plan à l'arrière-plan (pas d'effet de flou/bokeh), lumière naturelle et appétissante. "
+            f"Une petite pancarte en bois ou ardoise posée à côté du plat indique son nom, \"{nom}\", "
+            "écrit à la craie ou en lettres élégantes. Cadrage carré, un seul plat visible dans l'image."
         )
         print(f"[{i}/{len(a_faire)}] {cle} ...", end=" ", flush=True)
         try:
