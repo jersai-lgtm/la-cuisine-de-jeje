@@ -57,7 +57,7 @@ window.I18N_ING = {
   "🐙 Poulpe": "🐙 Octopus", "🦪 Moules": "🦪 Mussels", "🐟 Anchois": "🐟 Anchovies", "🍅 Tomates": "🍅 Tomatoes", "🦪 Huîtres": "🦪 Oysters",
   "🍅 Tomates cerises": "🍅 Cherry tomatoes", "🧅 Oignon": "🧅 Onion", "🧅 Oignons": "🧅 Onions", "🧅 Échalote": "🧅 Shallot",
   "🧄 Ail": "🧄 Garlic", "🥕 Carotte": "🥕 Carrot", "🥕 Carottes": "🥕 Carrots", "🥒 Courgette": "🥒 Zucchini",
-  "🍆 Aubergine": "🍆 Eggplant", "🍆 Aubergines": "🍆 Eggplants", "🫑 Poivron": "🫑 Bell pepper", "🍄 Shiitake": "🍄 Shiitake",
+  "🍆 Aubergine": "🍆 Eggplant", "🍆 Aubergines": "🍆 Eggplants", "🫑 Poivron": "🫑 Bell pepper", "🍄 Shiitake": "🍄 Shiitake", "🟡 Ackee": "🟡 Ackee",
   "🌿 Épinards": "🌿 Spinach", "🥬 Salade": "🥬 Lettuce", "🥬 Laitue": "🥬 Lettuce", "🥔 Pommes de terre": "🥔 Potatoes",
   "🍠 Patate douce": "🍠 Sweet potato", "🎃 Courge butternut": "🎃 Butternut squash", "🫚 Manioc": "🫚 Cassava",
   "🪨 Navets": "🪨 Turnips", "🥬 Chou": "🥬 Cabbage", "🥬 Poireaux": "🥬 Leeks", "🌿 Asperges": "🌿 Asparagus",
