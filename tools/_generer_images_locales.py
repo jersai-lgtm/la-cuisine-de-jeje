@@ -57,8 +57,9 @@ def build_workflow(desc, props, seed, filename_prefix):
     prompt = (
         f"Photo culinaire ultra realiste et professionnelle de {desc}, au centre de l'image. "
         "Eclairage chaud et dramatique sur fond de table en bois sombre et rustique, net du premier plan "
-        "a l'arriere-plan, sans flou ni bokeh. Autour du plat, disposes avec soin : "
-        f"{props}, pour creer une scene de table vivante et riche, pas une photo isolee sur une planche vide. "
+        "a l'arriere-plan, sans flou ni bokeh. Scene de nature morte culinaire, sans aucune presence humaine "
+        "(aucune main, aucun bras, aucun visage, aucune personne dans le cadre). Autour du plat, disposes avec soin : "
+        f"{props}, pour creer une scene de table riche, pas une photo isolee sur une planche vide. "
         "Cadrage carre, ambiance chaleureuse de blog culinaire haut de gamme."
     )
     return {
