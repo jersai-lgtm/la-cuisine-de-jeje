@@ -1683,6 +1683,39 @@ select, input[type="number"] {
   color: #ffb3cc;
 }
 
+/* Bandeau « Dernières recettes vues » — bleu-sarcelle (historique) */
+#accueil-recents-bloc .accueil-bloc-header {
+  background: linear-gradient(95deg, #1f8a8a, #5fc9c9);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+#accueil-recents-bloc .accueil-bloc-header h2 { color: #06302f; }
+#accueil-recents-bloc .accueil-bloc-header .accueil-voir-plus:not([style]) { color: #06302f; }
+#accueil-recents-bloc .accueil-bloc-header .accueil-voir-plus:hover { background: rgba(6,48,47,.15); }
+
+/* Bandeau « Suggestions pour toi » — corail */
+#accueil-suggestions-bloc .accueil-bloc-header {
+  background: linear-gradient(95deg, #e8553f, #ff8a65);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+#accueil-suggestions-bloc .accueil-bloc-header h2 { color: #3d0f08; }
+#accueil-suggestions-bloc .accueil-bloc-header .accueil-voir-plus { color: #3d0f08; }
+#accueil-suggestions-bloc .accueil-bloc-header .accueil-voir-plus:hover { background: rgba(61,15,8,.15); }
+
+/* Bandeau « Dernier menu généré » — indigo */
+#accueil-menus-bloc .accueil-bloc-header {
+  background: linear-gradient(95deg, #3457a6, #6f8fd6);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+#accueil-menus-bloc .accueil-bloc-header h2 { color: #0d1b3d; }
+#accueil-menus-bloc .accueil-bloc-header .accueil-voir-plus:not([style]) { color: #0d1b3d; }
+#accueil-menus-bloc .accueil-bloc-header .accueil-voir-plus:hover { background: rgba(13,27,61,.15); }
+
 .accueil-voir-plus {
   background: none;
   border: none;
