@@ -12,7 +12,7 @@ const QUOI_DE_NEUF = [
   {
     v: "3.4.8",
     titre: "🎨 Accueil en couleurs",
-    texte: "L'accueil s'harmonise ! Chaque bloc a maintenant sa propre bannière colorée : 🎯 Objectif kcal en vert, 🎭 De quoi t'as envie en violet, 🆕 Dernières recettes ajoutées en rose, et 🌱 Le top du mois change de couleur selon la saison (vert au printemps, or en été, marron en automne, bleu en hiver). Plus facile de repérer chaque section d'un coup d'œil ! 🌈"
+    texte: "L'accueil s'harmonise ! Chaque bloc a maintenant sa propre bannière colorée : 🗓️ La recette du jour en or (clique dessus pour l'ouvrir en grand), 🎯 Objectif kcal en vert, 🎭 De quoi t'as envie en violet, 🆕 Dernières recettes ajoutées en rose, et 🌱 Le top du mois change de couleur selon la saison (vert au printemps, or en été, marron en automne, bleu en hiver). Plus facile de repérer chaque section d'un coup d'œil ! 🌈"
   },
   {
     v: "2.9.6",

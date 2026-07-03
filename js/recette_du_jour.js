@@ -62,21 +62,71 @@
     const s = document.createElement("style");
     s.id = "dujour-style";
     s.textContent = `
-      #accueil-dujour-bloc .dujour-hero{cursor:pointer;position:relative;border-radius:16px;overflow:hidden;
-        box-shadow:0 6px 22px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.08)}
-      #accueil-dujour-bloc .dujour-hero img{width:100%;height:auto;object-fit:contain;display:block;
-        transition:transform .4s ease}
-      #accueil-dujour-bloc .dujour-hero:hover img{transform:scale(1.04)}
-      #accueil-dujour-bloc .dujour-grad{position:absolute;inset:0;
+      #accueil-dujour-bloc.dujour-vedette{background:linear-gradient(95deg,#f2b705,#ffd54f);
+        border-radius:16px;padding:12px 14px 14px}
+      #accueil-dujour-bloc.dujour-vedette .accueil-bloc-header{margin-bottom:8px}
+      #accueil-dujour-bloc.dujour-vedette .accueil-bloc-header h2{color:#4a3300}
+      #accueil-dujour-bloc .dujour-banniere{cursor:pointer;display:flex;align-items:center;gap:12px;
+        background:rgba(0,0,0,.14);border:1px solid rgba(0,0,0,.1);border-radius:12px;padding:10px 12px}
+      #accueil-dujour-bloc .dujour-banniere:hover{background:rgba(0,0,0,.2)}
+      #accueil-dujour-bloc .dujour-thumb{width:56px;height:56px;border-radius:10px;object-fit:cover;
+        flex:none;background:rgba(0,0,0,.15)}
+      #accueil-dujour-bloc .dujour-info{min-width:0;flex:1}
+      #accueil-dujour-bloc .dujour-nomc{font-size:15.5px;font-weight:700;color:#3a2600;
+        white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+      #accueil-dujour-bloc .dujour-metac{font-size:12.5px;color:#5a4200}
+      #accueil-dujour-bloc .dujour-chevron{font-size:18px;color:#3a2600;flex:none}
+
+      #dujour-modal{position:fixed;inset:0;z-index:9050;background:rgba(0,0,0,.6);
+        display:flex;align-items:flex-end;justify-content:center}
+      #dujour-modal .dujour-sheet{position:relative;background:var(--panel-solid,#1a1a2e);color:var(--text);
+        border-top-left-radius:20px;border-top-right-radius:20px;width:100%;max-width:560px;
+        max-height:86vh;overflow:hidden;display:flex;flex-direction:column}
+      #dujour-modal .dujour-x{position:absolute;top:12px;right:12px;z-index:2;background:rgba(0,0,0,.5);
+        color:#fff;border:none;border-radius:50%;width:34px;height:34px;font-size:15px;cursor:pointer}
+      #dujour-modal .dujour-hero-img{position:relative}
+      #dujour-modal .dujour-hero-img img{width:100%;height:auto;max-height:50vh;object-fit:cover;display:block}
+      #dujour-modal .dujour-grad{position:absolute;inset:0;
         background:linear-gradient(to top,rgba(0,0,0,.78) 0%,rgba(0,0,0,.15) 55%,rgba(0,0,0,0) 100%)}
-      #accueil-dujour-bloc .dujour-cap{position:absolute;left:14px;right:14px;bottom:12px;color:#fff}
-      #accueil-dujour-bloc .dujour-nom{font-size:21px;font-weight:800;line-height:1.2;
+      #dujour-modal .dujour-cap{position:absolute;left:14px;right:14px;bottom:12px;color:#fff}
+      #dujour-modal .dujour-nom{font-size:21px;font-weight:800;line-height:1.2;
         text-shadow:0 2px 6px rgba(0,0,0,.6);display:block}
-      #accueil-dujour-bloc .dujour-meta{font-size:13px;opacity:.95;margin-top:4px;
+      #dujour-modal .dujour-meta{font-size:13px;opacity:.95;margin-top:4px;
         text-shadow:0 1px 4px rgba(0,0,0,.6)}
-      #accueil-dujour-bloc .dujour-nutri{position:absolute;top:12px;left:12px;z-index:2;transform:scale(1.25);transform-origin:top left}
+      #dujour-modal .dujour-nutri{position:absolute;top:12px;left:12px;z-index:2;transform:scale(1.25);transform-origin:top left}
+      #dujour-modal .dujour-cta{margin:14px;padding:13px;border-radius:12px;border:none;cursor:pointer;
+        background:var(--accent);color:#1a0e14;font-weight:800;font-size:14.5px;text-align:center}
     `;
     document.head.appendChild(s);
+  }
+
+  function fermerModal() { const m = document.getElementById("dujour-modal"); if (m) m.remove(); }
+  window.fermerDujourModal = fermerModal;
+
+  function ouvrirModal(key, r, nom, img, onerr, dra, meta, nutriBadge) {
+    const dejaOuvert = !!document.getElementById("dujour-modal");
+    fermerModal();
+    const m = document.createElement("div");
+    m.id = "dujour-modal";
+    m.innerHTML =
+      '<div class="dujour-sheet">' +
+        '<button class="dujour-x" aria-label="Fermer">✕</button>' +
+        '<div class="dujour-hero-img">' +
+          '<img src="' + img + '" alt="' + nom + '" onerror="' + onerr + '">' +
+          nutriBadge +
+          '<div class="dujour-grad"></div>' +
+          '<div class="dujour-cap">' +
+            '<span class="dujour-nom">' + dra + (r.emoji || "🍽️") + ' ' + nom + '</span>' +
+            '<span class="dujour-meta">' + meta + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<button class="dujour-cta">' + (EN() ? "See full recipe →" : "Voir la recette complète →") + '</button>' +
+      '</div>';
+    document.body.appendChild(m);
+    m.addEventListener("click", (e) => { if (e.target === m) fermerModal(); });
+    m.querySelector(".dujour-x").addEventListener("click", fermerModal);
+    m.querySelector(".dujour-cta").addEventListener("click", () => { fermerModal(); ouvrirFiche(key, ""); });
+    if (!dejaOuvert && typeof window._backGuardPush === "function") window._backGuardPush();
   }
 
   function rendre() {
@@ -90,7 +140,7 @@
     let bloc = document.getElementById("accueil-dujour-bloc");
     if (!bloc) {
       bloc = document.createElement("div");
-      bloc.className = "accueil-bloc";
+      bloc.className = "accueil-bloc dujour-vedette";
       bloc.id = "accueil-dujour-bloc";
       sec.insertBefore(bloc, sec.firstChild); // tout en haut de l'accueil
     }
@@ -127,15 +177,15 @@
 
     bloc.innerHTML =
       '<div class="accueil-bloc-header"><h2>' + titre + '</h2></div>' +
-      '<div class="dujour-hero" onclick="ouvrirFiche(\'' + key + '\',\'\')">' +
-        '<img loading="lazy" decoding="async" src="' + img + '" alt="' + nom + '" onerror="' + onerr + '">' +
-        nutriBadge +
-        '<div class="dujour-grad"></div>' +
-        '<div class="dujour-cap">' +
-          '<span class="dujour-nom">' + dra + (r.emoji || "🍽️") + ' ' + nom + '</span>' +
-          '<span class="dujour-meta">' + meta + '</span>' +
+      '<div class="dujour-banniere">' +
+        '<img class="dujour-thumb" loading="lazy" decoding="async" src="' + img + '" alt="' + nom + '" onerror="' + onerr + '">' +
+        '<div class="dujour-info">' +
+          '<span class="dujour-nomc">' + dra + (r.emoji || "🍽️") + ' ' + nom + '</span>' +
+          '<div class="dujour-metac">' + meta + '</div>' +
         '</div>' +
+        '<span class="dujour-chevron">→</span>' +
       '</div>';
+    bloc.querySelector(".dujour-banniere").addEventListener("click", () => ouvrirModal(key, r, nom, img, onerr, dra, meta, nutriBadge));
   }
 
   // Re-rendu à chaque affichage de l'accueil (et au changement de langue).
