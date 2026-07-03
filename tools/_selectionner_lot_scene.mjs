@@ -1,9 +1,11 @@
 // Selectionne le prochain lot de recettes a refaire en style "scene enrichie"
 // et genere des props (accessoires) par plat, tires des vrais ingredients de
 // la recette + un gabarit par categorie. Sortie -> tools/_lot_scene.json
-// Usage : node tools/_selectionner_lot_scene.mjs [taille=100] [--dateAjout=YYYY-MM-DDTHH:MM:SS]
+// Usage : node tools/_selectionner_lot_scene.mjs [taille=100] [--dateAjout=YYYY-MM-DDTHH:MM:SS] [--cles=cle1,cle2,...]
 //   --dateAjout filtre sur les recettes ajoutees a cette date exacte (ex: une vague precise),
 //   au lieu de piocher dans tout le catalogue par ordre alphabetique.
+//   --cles cible des clés precises (ex: pour RE-generer des photos deja faites avec un
+//   ancien prompt) -- ignore le manifeste "deja faites" pour ces clés-la.
 import fs from "node:fs";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
@@ -13,6 +15,7 @@ const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const args = process.argv.slice(2);
 const TAILLE = parseInt(args.find((a) => /^\d+$/.test(a)) || "100", 10);
 const filtreDate = (args.find((a) => a.startsWith("--dateAjout=")) || "").replace("--dateAjout=", "") || null;
+const clesForcees = (args.find((a) => a.startsWith("--cles=")) || "").replace("--cles=", "").split(",").filter(Boolean);
 const MANIFEST = join(ROOT, "tools", "_photos_scene_faites.json");
 
 function charger(fichier, marqueur, seed) {
@@ -87,8 +90,15 @@ if (fs.existsSync(MANIFEST)) {
   dejaFaites = new Set(JSON.parse(fs.readFileSync(MANIFEST, "utf8")));
 }
 
-const cles = Object.keys(recettes).sort();
-const restantes = cles.filter((k) => !dejaFaites.has(k) && (!filtreDate || recettes[k].dateAjout === filtreDate));
+let restantes;
+if (clesForcees.length) {
+  restantes = clesForcees.filter((k) => recettes[k]);
+  const introuvables = clesForcees.filter((k) => !recettes[k]);
+  if (introuvables.length) console.error("Cles introuvables (ignorees) : " + introuvables.join(", "));
+} else {
+  const cles = Object.keys(recettes).sort();
+  restantes = cles.filter((k) => !dejaFaites.has(k) && (!filtreDate || recettes[k].dateAjout === filtreDate));
+}
 const lot = restantes.slice(0, TAILLE).map((cle) => {
   const r = recettes[cle];
   return {
