@@ -1665,6 +1665,24 @@ select, input[type="number"] {
   margin: 0;
 }
 
+/* Bandeau « Dernières recettes ajoutées » — rose, même famille que le CTA swipe */
+#accueil-nouveautes-bloc .accueil-bloc-header {
+  background: linear-gradient(95deg, #ff4d88, #ff8fb3);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+#accueil-nouveautes-bloc .accueil-bloc-header h2 {
+  color: #4b1528;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#accueil-nouveautes-bloc .accueil-bloc-header .badge-new {
+  background: #4b1528;
+  color: #ffb3cc;
+}
+
 .accueil-voir-plus {
   background: none;
   border: none;
@@ -4460,15 +4478,6 @@ select, input[type="number"] {
   white-space: nowrap;
   box-shadow: 0 2px 6px rgba(76,175,80,.4);
   z-index: 3;
-}
-
-/* Le bloc Top du mois — titre vert pour évoquer la saisonnalité */
-#accueil-mois-bloc .accueil-bloc-header h2 {
-  background: linear-gradient(135deg, #4caf50, #81c784);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
 }
 
 /* =============================================================================

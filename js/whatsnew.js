@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "3.4.8",
+    titre: "🎨 Accueil en couleurs",
+    texte: "L'accueil s'harmonise ! Chaque bloc a maintenant sa propre bannière colorée : 🎯 Objectif kcal en vert, 🎭 De quoi t'as envie en violet, 🆕 Dernières recettes ajoutées en rose, et 🌱 Le top du mois change de couleur selon la saison (vert au printemps, or en été, marron en automne, bleu en hiver). Plus facile de repérer chaque section d'un coup d'œil ! 🌈"
+  },
+  {
     v: "2.9.6",
     titre: "💪 Objectif : ton coach nutrition sportive",
     texte: "La catégorie « 🎯 Objectif kcal » (sur l'accueil) devient un vrai coach fitness ! Calcule tes calories à partir de ton métabolisme de base + activité (Mifflin-St Jeor), fixe ta cible protéines en g/kg, ton hydratation, et choisis ton but : 🔥 sèche, 🏋️ prise de masse, 💪 protéiné… Puis « 🍽️ Composer ma journée » te génère un menu complet (matin → soir) qui atteint pile tes calories et tes protéines, avec verrouillage des repas que tu aimes. Et 22 nouvelles recettes protéinées : skyr bowl, omelette de blancs, poulet/poisson maigres, boules protéinées, shake… 🏋️"

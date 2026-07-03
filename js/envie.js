@@ -94,6 +94,11 @@
       .envie-chip{background:rgba(var(--w),.08);color:var(--text);border:1px solid rgba(var(--w),.14);
         border-radius:999px;padding:7px 12px;font-size:13px;cursor:pointer;font-weight:600}
       .envie-chip:hover{background:rgba(var(--accent-rgb),.15)}
+      .envie-bloc--banniere{background:linear-gradient(95deg,#c94fd4,#7a6ff0);border:none}
+      .envie-bloc--banniere .envie-head b{color:#fff}
+      .envie-bloc--banniere .envie-act{background:rgba(255,255,255,.2);color:#fff;border:1px solid rgba(255,255,255,.4)}
+      .envie-bloc--banniere .envie-chip{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.3)}
+      .envie-bloc--banniere .envie-chip:hover{background:rgba(255,255,255,.28)}
       #envie-modal{position:fixed;inset:0;z-index:9050;background:rgba(0,0,0,.6);display:flex;align-items:flex-end;justify-content:center}
       #envie-modal .envie-sheet{background:var(--panel-solid,#1a1a2e);color:var(--text);border-top-left-radius:20px;border-top-right-radius:20px;
         width:100%;max-width:560px;max-height:86vh;display:flex;flex-direction:column;font-family:system-ui,sans-serif;overflow:hidden}
@@ -192,7 +197,7 @@
     if (!sec || document.getElementById("envie-bloc")) return;
     injecterStyle();
     const bloc = document.createElement("div");
-    bloc.className = "envie-bloc"; bloc.id = "envie-bloc";
+    bloc.className = "envie-bloc envie-bloc--banniere"; bloc.id = "envie-bloc";
     bloc.innerHTML =
       '<div class="envie-head"><b>' + T("🎭 De quoi t'as envie ?", "🎭 What are you craving?") + "</b>" +
       '<span class="envie-actions"><button class="envie-quiz envie-act">🧩 ' + T("Quiz", "Quiz") + "</button></span></div>" +
