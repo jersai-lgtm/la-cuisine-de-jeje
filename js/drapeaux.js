@@ -140,6 +140,69 @@ const DRAPEAUX = (function () {
   const caraibeIcon = `<rect width="30" height="20" fill="#1CA9C9"/><circle cx="22" cy="6" r="3" fill="#FFD23F"/><rect y="14" width="30" height="6" fill="#2E8B57"/><polygon points="6,14 8,4 10,14" fill="#0E6B3A"/>`;
   F.antilles   = wrap(caraibeIcon);
   F.caraibes   = wrap(caraibeIcon);
+
+  // --- Vague 4 (07/2026) : Caraïbes, Pacifique, Asie centrale, Afrique, petites nations europe ---
+  // Caraïbes
+  F.jamaique   = wrap(`<rect width="30" height="20" fill="#009B3A"/><polygon points="0,0 30,0 15,10" fill="#000000"/><polygon points="0,20 30,20 15,10" fill="#000000"/><polygon points="0,0 15,10 0,3" fill="#FED100"/><polygon points="30,0 15,10 30,3" fill="#FED100"/><polygon points="0,20 15,10 0,17" fill="#FED100"/><polygon points="30,20 15,10 30,17" fill="#FED100"/>`);
+  F.trinite    = wrap(`<rect width="30" height="20" fill="#CE1126"/><polygon points="0,0 5,0 30,17 30,20 25,20 0,3" fill="#FFFFFF"/><polygon points="0,1.2 4,0 30,16.5 30,18.8 26,20 0,3.3" fill="#000000"/>`);
+  F.barbade    = wrap(vt("#00267F", "#FFC726", "#00267F") + `<polygon points="15,4 13,9 14,9 14,14 12,16 18,16 16,14 16,9 17,9" fill="#000000"/>`);
+  F.belize     = wrap(`<rect width="30" height="20" fill="#003F87"/><rect width="30" height="2" fill="#CE1126"/><rect y="18" width="30" height="2" fill="#CE1126"/><circle cx="15" cy="10" r="6" fill="#FFFFFF"/><circle cx="15" cy="10" r="5" fill="#F0F0F0" stroke="#003F87" stroke-width="0.5"/>`);
+  F.guyane     = wrap(`<rect width="30" height="20" fill="#128807"/><polygon points="0,0 12,10 0,20" fill="#FCD116"/>` + star(20, 10, 2.5, "#E8112D"));
+  // Pacifique / Océanie
+  const ukCanton = `<rect x="1" y="1" width="10" height="6.5" fill="#00247D"/><rect x="1" y="1" width="10" height="0.8" fill="#FFFFFF"/><rect x="5.6" y="1" width="0.8" height="6.5" fill="#FFFFFF"/>`;
+  F.fidji      = wrap(`<rect width="30" height="20" fill="#68BFE5"/>${ukCanton}<polygon points="18,6 22,14 14,14" fill="#FFFFFF" stroke="#CE1126" stroke-width="0.5"/>`);
+  F.samoa      = wrap(`<rect width="30" height="20" fill="#CE1126"/><rect width="13" height="10" fill="#002B7F"/>${star(4, 3, 1.1, "#FFFFFF")}${star(8, 2.5, 1, "#FFFFFF")}${star(9.5, 6, 1, "#FFFFFF")}${star(5, 7.5, 1, "#FFFFFF")}${star(6.5, 5, 0.7, "#FFFFFF")}`);
+  F.nouvellezelande = wrap(`<rect width="30" height="20" fill="#00247D"/>${ukCanton}${star(20, 4, 1.3, "#CE1126")}${star(24, 8, 1.3, "#CE1126")}${star(22, 13, 1.3, "#CE1126")}${star(17, 15, 1, "#CE1126")}`);
+  F.australie  = wrap(`<rect width="30" height="20" fill="#00247D"/>${ukCanton}${star(6, 15, 1.3, "#FFFFFF")}${star(20, 4, 1.2, "#FFFFFF")}${star(24, 8, 1.2, "#FFFFFF")}${star(22, 13, 1.2, "#FFFFFF")}${star(17, 15, 0.9, "#FFFFFF")}`);
+  F.tonga      = wrap(`<rect width="30" height="20" fill="#C10000"/><rect x="1" y="1" width="10" height="8" fill="#FFFFFF"/><rect x="5" y="2" width="2" height="6" fill="#C10000"/><rect x="2" y="4" width="8" height="2" fill="#C10000"/>`);
+  F.vanuatu    = wrap(`<rect width="30" height="20" fill="#009543"/><polygon points="0,0 30,7 30,9 0,10" fill="#D21034"/><rect y="9" width="30" height="1.2" fill="#FDCE12"/><polygon points="0,0 0,20 10,10" fill="#000000"/>`);
+  F.papouasie  = wrap(`<polygon points="0,0 30,0 0,20" fill="#000000"/><polygon points="30,0 30,20 0,20" fill="#CE1126"/>${star(22, 5, 1, "#FFFFFF")}${star(25, 9, 0.8, "#FFFFFF")}${star(23, 13, 0.8, "#FFFFFF")}${star(19, 15, 0.7, "#FFFFFF")}${star(26, 14, 0.6, "#FFFFFF")}<polygon points="7,4 9,8 6,7 8,10 4,9 6,12 3,10" fill="#FFC726"/>`);
+  // Asie centrale / Caucase
+  F.kirghizistan = wrap(`<rect width="30" height="20" fill="#E8112D"/><circle cx="15" cy="10" r="4.5" fill="#FFFF00"/><circle cx="15" cy="10" r="3.2" fill="#E8112D"/><polygon points="15,7.5 15.6,9.4 17.5,9.4 16,10.5 16.6,12.4 15,11.3 13.4,12.4 14,10.5 12.5,9.4 14.4,9.4" fill="#FFFF00"/>`);
+  F.tadjikistan = wrap(ht("#CC0000", "#FFFFFF", "#006600") + `<polygon points="15,8.5 13.5,10.5 16.5,10.5" fill="#F8C300"/>` + star(15, 7.5, 0.7, "#F8C300"));
+  F.turkmenistan = wrap(`<rect width="30" height="20" fill="#1D8642"/><rect x="0" width="6" height="20" fill="#8B1538"/><rect x="0" width="0.6" height="20" fill="#FFFFFF"/><rect x="5.4" width="0.6" height="20" fill="#FFFFFF"/><path d="M 20 6 A 3.5 3.5 0 1 0 20 14 A 2.8 2.8 0 1 1 20 6" fill="#FFFFFF"/>${star(23, 7, 0.8, "#FFFFFF")}${star(24.5, 9, 0.8, "#FFFFFF")}${star(24, 11.5, 0.8, "#FFFFFF")}`);
+  F.azerbaidjan = wrap(ht("#00B9E4", "#EF3340", "#00AF66") + `<path d="M 16 7.3 A 2.8 2.8 0 1 0 16 12.7 A 2.2 2.2 0 1 1 16 7.3" fill="#FFFFFF"/>` + star(19, 10, 0.8, "#FFFFFF"));
+  // Afrique
+  F.mali       = wrap(vt("#14B53A", "#FCD116", "#CE1126"));
+  F.ouganda    = wrap(`<rect width="30" height="20" fill="#000000"/><rect y="3.33" width="30" height="3.33" fill="#FCDC04"/><rect y="6.67" width="30" height="3.33" fill="#D90000"/><rect y="10" width="30" height="3.33" fill="#000000"/><rect y="13.33" width="30" height="3.33" fill="#FCDC04"/><rect y="16.67" width="30" height="3.33" fill="#D90000"/><circle cx="15" cy="10" r="4" fill="#FFFFFF"/><polygon points="15,7 16,10 15,13 14,10" fill="#000000"/>`);
+  F.mozambique = wrap(`<rect width="30" height="20" fill="#FCD116"/><rect y="1" width="30" height="6" fill="#009739"/><rect y="13" width="30" height="6" fill="#000000"/><polygon points="0,0 0,20 13,10" fill="#CE1126"/>` + star(5.5, 10, 1.6, "#FCD116"));
+  F.zambie     = wrap(`<rect width="30" height="20" fill="#198A00"/><rect x="20" width="3" height="20" fill="#DE2010"/><rect x="23" width="3" height="20" fill="#000000"/><rect x="26" width="3" height="20" fill="#EF7D00"/><polygon points="24,3 26,7 22,7" fill="#DE2010"/>`);
+  F.zimbabwe   = wrap(`<rect width="30" height="20" fill="#006400"/><rect y="2.86" width="30" height="2.86" fill="#FFD200"/><rect y="5.71" width="30" height="2.86" fill="#D40000"/><rect y="8.57" width="30" height="2.86" fill="#000000"/><rect y="11.43" width="30" height="2.86" fill="#D40000"/><rect y="14.29" width="30" height="2.86" fill="#FFD200"/><rect y="17.14" width="30" height="2.86" fill="#006400"/><polygon points="0,0 0,20 12,10" fill="#FFFFFF"/><polygon points="0,2 0,18 9,10" fill="#000000"/>${star(4.5, 10, 1.5, "#D40000")}`);
+  F.namibie    = wrap(`<polygon points="0,0 30,0 0,20" fill="#003580"/><polygon points="30,0 30,20 0,20" fill="#009543"/><polygon points="-1.44,22.16 1.44,17.84 31.44,-2.16 28.56,2.16" fill="#FFFFFF"/><polygon points="-1,21.5 1,18.5 31,-1.5 29,1.5" fill="#D21034"/><circle cx="8" cy="6" r="2.5" fill="#FFCE00"/>`);
+  F.botswana   = wrap(`<rect width="30" height="20" fill="#75AADB"/><rect y="7.5" width="30" height="5" fill="#000000"/><rect y="8.5" width="30" height="3" fill="#FFFFFF"/>`);
+  F.somalie    = wrap(`<rect width="30" height="20" fill="#4189DD"/>` + star(15, 10, 4, "#FFFFFF"));
+  F.rwanda     = wrap(`<rect width="30" height="20" fill="#20603D"/><rect width="30" height="12" fill="#00A1DE"/><rect y="12" width="30" height="2" fill="#FAD201"/><circle cx="23" cy="6" r="2.5" fill="#FAD201"/>`);
+  F.burkinafaso = wrap(hb("#EF2B2D", "#009E49") + star(15, 10, 2.5, "#FCD116"));
+  F.benin      = wrap(`<rect width="30" height="20" fill="#008751"/><rect x="10" width="20" height="10" fill="#FCD116"/><rect x="10" y="10" width="20" height="10" fill="#E8112D"/>`);
+  F.angola     = wrap(hb("#CC092F", "#000000") + star(15, 10, 1.8, "#FFCB00"));
+  F.tchad      = wrap(vt("#002664", "#FECB00", "#C60C30"));
+  F.gambie     = wrap(`<rect width="30" height="20" fill="#CE1126"/><rect y="7.5" width="30" height="5" fill="#0C1C8C"/><rect y="6.8" width="30" height="0.7" fill="#FFFFFF"/><rect y="12.5" width="30" height="0.7" fill="#FFFFFF"/><rect y="13.2" width="30" height="6.8" fill="#3A7728"/>`);
+  F.malawi     = wrap(ht("#000000", "#CE1126", "#339E35") + `<circle cx="15" cy="3.3" r="2.8" fill="#CE1126"/>`);
+  F.caboverde  = wrap(`<rect width="30" height="20" fill="#003893"/><rect y="11" width="30" height="1.5" fill="#FFFFFF"/><rect y="12.5" width="30" height="1" fill="#CF2027"/><rect y="13.5" width="30" height="1.5" fill="#FFFFFF"/>${star(9, 12, 0.6, "#F7D116")}${star(11, 10.5, 0.6, "#F7D116")}${star(13.5, 10, 0.6, "#F7D116")}${star(16.5, 10, 0.6, "#F7D116")}${star(19, 10.5, 0.6, "#F7D116")}${star(21, 12, 0.6, "#F7D116")}${star(11.5, 13.5, 0.6, "#F7D116")}${star(14.5, 14, 0.6, "#F7D116")}${star(17.5, 14, 0.6, "#F7D116")}${star(19.5, 13.5, 0.6, "#F7D116")}`);
+  // Petites nations d'Europe
+  F.slovenie   = wrap(ht("#FFFFFF", "#005CE6", "#ED1C24") + `<rect x="2" y="2" width="4" height="5" fill="#005CE6"/>` + star(4, 3.5, 0.6, "#FFCB05"));
+  F.bosnie     = wrap(`<rect width="30" height="20" fill="#002395"/><polygon points="0,0 14,0 0,20" fill="#FECB00"/>${star(11, 3, 0.9, "#FFFFFF")}${star(15, 6, 0.9, "#FFFFFF")}${star(19, 9, 0.9, "#FFFFFF")}${star(23, 12, 0.9, "#FFFFFF")}${star(27, 15, 0.9, "#FFFFFF")}`);
+  F.macedoinedunord = wrap(`<rect width="30" height="20" fill="#D20000"/><circle cx="15" cy="10" r="3" fill="#FFE600"/><polygon points="15,10 0,0 8,0" fill="#FFE600"/><polygon points="15,10 22,0 30,0" fill="#FFE600"/><polygon points="15,10 0,20 8,20" fill="#FFE600"/><polygon points="15,10 22,20 30,20" fill="#FFE600"/><polygon points="15,10 0,0 0,8" fill="#FFE600"/><polygon points="15,10 0,12 0,20" fill="#FFE600"/><polygon points="15,10 30,0 30,8" fill="#FFE600"/><polygon points="15,10 30,12 30,20" fill="#FFE600"/>`);
+  F.luxembourg = wrap(ht("#ED2939", "#FFFFFF", "#00A1DE"));
+  F.kosovo     = wrap(`<rect width="30" height="20" fill="#244AA5"/><polygon points="12,8 14,7 16,8 18,7 19,9 17,11 19,13 16,13 14,14 13,12 11,11" fill="#FFC800"/>${star(9, 5, 0.7, "#FFFFFF")}${star(13, 3.5, 0.7, "#FFFFFF")}${star(17, 3.5, 0.7, "#FFFFFF")}${star(21, 5, 0.7, "#FFFFFF")}${star(23, 7, 0.7, "#FFFFFF")}${star(7, 7, 0.7, "#FFFFFF")}`);
+  F.estonie    = wrap(ht("#0072CE", "#000000", "#FFFFFF"));
+  F.lituanie   = wrap(ht("#FDB913", "#006A44", "#C1272D"));
+  F.moldavie   = wrap(vt("#0033A0", "#FFD200", "#CC092F") + `<rect x="11" y="6" width="8" height="8" fill="#CC092F"/>` + star(15, 10, 1, "#FFD200"));
+  // Moyen-Orient / Asie
+  F.yemen      = wrap(ht("#CE1126", "#FFFFFF", "#000000"));
+  F.emiratsarabesunis = wrap(ht("#00732F", "#FFFFFF", "#000000") + `<rect width="7" height="20" fill="#FF0000"/>`);
+  F.brunei     = wrap(`<rect width="30" height="20" fill="#FCD116"/><polygon points="0,0 30,13.3 30,20 0,6.7" fill="#FFFFFF"/><polygon points="0,0 30,10 30,13.3 0,3.3" fill="#000000"/><circle cx="15" cy="10" r="2.5" fill="#CE1126"/>`);
+  F.timororiental = wrap(`<rect width="30" height="20" fill="#DC241F"/><polygon points="0,0 16,10 0,20" fill="#FFC726"/><polygon points="0,0 10,10 0,20" fill="#000000"/>` + star(4, 10, 1.2, "#FFFFFF"));
+  F.bhoutan    = wrap(`<polygon points="0,0 30,0 0,20" fill="#FFCE00"/><polygon points="30,0 30,20 0,20" fill="#FF4E12"/><path d="M8,14 Q12,8 18,9 Q15,11 16,14 Q12,12 8,14" fill="#FFFFFF"/>`);
+  F.seychelles = wrap(`<rect width="30" height="20" fill="#007A3D"/><polygon points="0,20 0,0 30,20" fill="#FFFFFF"/><polygon points="0,20 0,3 24,20" fill="#D62828"/><polygon points="0,20 0,6 18,20" fill="#FCD116"/><polygon points="0,20 0,9 12,20" fill="#003F87"/>`);
+  F.afghanistan = wrap(vt("#000000", "#D32011", "#007A36") + `<rect x="12" y="7" width="6" height="6" fill="#FFFFFF"/>`);
+  F.pakistan   = wrap(`<rect width="30" height="20" fill="#01411C"/><rect width="7" height="20" fill="#FFFFFF"/><path d="M 20 6 A 4 4 0 1 0 20 14 A 3.2 3.2 0 1 1 20 6" fill="#FFFFFF"/>` + star(24, 7.5, 1.3, "#FFFFFF"));
+  // Amérique latine
+  F.equateur   = wrap(`<rect width="30" height="20" fill="#FFDD00"/><rect y="10" width="30" height="5" fill="#0033A0"/><rect y="15" width="30" height="5" fill="#EF3340"/>`);
+  F.guatemala  = wrap(vt("#4997D0", "#FFFFFF", "#4997D0") + `<circle cx="15" cy="10" r="2.2" fill="#4997D0"/>`);
+  F.nicaragua  = wrap(ht("#0067C6", "#FFFFFF", "#0067C6") + `<polygon points="15,7.5 13,11.5 17,11.5" fill="none" stroke="#0067C6" stroke-width="0.6"/>`);
+  F.panama     = wrap(`<rect width="15" height="10" fill="#FFFFFF"/><rect x="15" width="15" height="10" fill="#005293"/><rect y="10" width="15" height="10" fill="#D21034"/><rect x="15" y="10" width="15" height="10" fill="#FFFFFF"/>${star(7.5, 5, 1.5, "#D21034")}${star(22.5, 15, 1.5, "#005293")}`);
+
   return F;
 })();
 

@@ -655,7 +655,8 @@ const INGREDIENTS_PRIX = {
   graines:        { prixKg: 10.0, calPer100g: 530,  lipSat: 4,    sucre: 5,    sel: 0,    fibres: 10,  prot: 18,   flv: 100 },
   chia:           { prixKg: 15.0, calPer100g: 486,  lipSat: 3.3,  sucre: 0,    sel: 0.04, fibres: 34,  prot: 17,   flv: 100 },
   sesame:         { prixKg: 10.0, calPer100g: 573,  lipSat: 7.0,  sucre: 0.3,  sel: 0,    fibres: 12,  prot: 18,   flv: 100 },
-  
+  grainesCourge:  { prixKg: 12.0, calPer100g: 559,  lipSat: 8.7,  sucre: 1.4,  sel: 0.02, fibres: 6,   prot: 30,   flv: 100 },
+
   // ===== AUTRES =====
   tofu:           { prixKg: 6.00, calPer100g: 76,   lipSat: 0.7,  sucre: 0.7,  sel: 0,    fibres: 0.3, prot: 8.1,  flv: 100 },
   tofusoie:       { prixKg: 7.00, calPer100g: 55,   lipSat: 0.4,  sucre: 0.7,  sel: 0,    fibres: 0.2, prot: 5,    flv: 100 },
@@ -1450,6 +1451,7 @@ const INGREDIENTS_LABELS = {
   // Fruits secs & graines
   pistaches: "🌰 Pistaches", arachide: "🥜 Arachide",
   sesame: "🫘 Graines de sésame", cacahetes: "🥜 Cacahuètes grillées",
+  grainesCourge: "🎃 Graines de courge",
   // Sucré / divers
   choco: "🍫 Chocolat", biscuits: "🍪 Biscuits", gelatine: "🟦 Gélatine",
   filo: "🥟 Pâte filo", pateSablee: "🥧 Pâte sablée",

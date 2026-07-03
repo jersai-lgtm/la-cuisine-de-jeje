@@ -11,19 +11,25 @@ Prealable : ComfyUI doit tourner en local sur http://127.0.0.1:8188
 
 Style "scene enrichie" valide par Jerome le 2026-07-02 : le plat au centre,
 entoure de 2-4 accessoires/ingredients pertinents au plat (bols de garniture,
-ustensile de service...), pancarte en carton kraft POSEE (pas plantee dans
-la nourriture) avec le nom du plat. Voir memoire generation-locale-flux-comfyui
-et style-photos-ia-recettes pour le contexte complet.
+ustensile de service...). PAS de pancarte/texte sur la photo (le nom du plat
+est deja affiche par l'appli, une pancarte est redondante -- retiree le
+2026-07-03). Voir memoire generation-locale-flux-comfyui et
+style-photos-ia-recettes pour le contexte complet.
 
 Usage :
-  python tools/_generer_images_locales.py          -> genere tout ce qui manque
-  python tools/_generer_images_locales.py --test    -> genere seulement 1 image
+  node tools/_selectionner_lot_scene.mjs [taille]   -> prepare un lot (defaut 100) dans tools/_lot_scene.json
+  python tools/_generer_images_locales.py           -> genere tout le lot + convertit en webp
+  python tools/_generer_images_locales.py --test    -> genere seulement 1 image (pas de conversion)
+
+Reprenable : tools/_photos_scene_faites.json garde la trace des recettes deja
+refaites (le selecteur l'utilise pour ne pas reproposer les memes cles).
 """
 import os
 import sys
 import json
 import time
 import shutil
+import subprocess
 import urllib.request
 import urllib.error
 
@@ -31,15 +37,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DROP = os.path.join(ROOT, "_photos-a-convertir")
 API = "http://127.0.0.1:8188"
 COMFY_OUTPUT = r"C:\AI\ComfyUI\ComfyUI_windows_portable\ComfyUI\output"
-
-# cle: (nom affiche, description visuelle du plat, accessoires/props contextuels)
-# Toujours adapter les props au plat specifique (pas de props generiques repetes) :
-# ex. riz+cacahuetes pour un plat africain, tahini+pita pour du moyen-oriental,
-# the+baguettes pour un plat asiatique.
-PLATS = [
-    # ("cle", "Nom Affiche", "description visuelle realiste du plat",
-    #  "2-4 accessoires/ingredients poses autour, pertinents au plat"),
-]
+LOT_JSON = os.path.join(ROOT, "tools", "_lot_scene.json")
+MANIFEST = os.path.join(ROOT, "tools", "_photos_scene_faites.json")
 
 
 def check_server():
@@ -54,14 +53,13 @@ def check_server():
         sys.exit(1)
 
 
-def build_workflow(nom, desc, props, seed, filename_prefix):
+def build_workflow(desc, props, seed, filename_prefix):
     prompt = (
         f"Photo culinaire ultra realiste et professionnelle de {desc}, au centre de l'image. "
         "Eclairage chaud et dramatique sur fond de table en bois sombre et rustique, net du premier plan "
         "a l'arriere-plan, sans flou ni bokeh. Autour du plat, disposes avec soin : "
         f"{props}, pour creer une scene de table vivante et riche, pas une photo isolee sur une planche vide. "
-        f"Une petite pancarte en carton kraft posee debout pres du plat indique son nom, \"{nom}\", "
-        "ecrit en lettres nettes et parfaitement lisibles. Cadrage carre, ambiance chaleureuse de blog culinaire haut de gamme."
+        "Cadrage carre, ambiance chaleureuse de blog culinaire haut de gamme."
     )
     return {
         "1": {"class_type": "UnetLoaderGGUF", "inputs": {"unet_name": "flux1-schnell-Q5_K_S.gguf"}},
@@ -104,36 +102,66 @@ def wait_and_fetch(prompt_id, dest_path, timeout_s=300):
     return False
 
 
+def charger_manifest():
+    if os.path.exists(MANIFEST):
+        with open(MANIFEST, "r", encoding="utf-8") as f:
+            return set(json.load(f))
+    return set()
+
+
+def marquer_fait(cle, faites):
+    faites.add(cle)
+    with open(MANIFEST, "w", encoding="utf-8") as f:
+        json.dump(sorted(faites), f, ensure_ascii=False, indent=1)
+
+
 def main():
     check_server()
     os.makedirs(DROP, exist_ok=True)
     test_seulement = "--test" in sys.argv
 
+    if not os.path.exists(LOT_JSON):
+        print("ERREUR : " + LOT_JSON + " introuvable.")
+        print("Genere d'abord un lot : node tools/_selectionner_lot_scene.mjs [taille]")
+        sys.exit(1)
+    with open(LOT_JSON, "r", encoding="utf-8") as f:
+        lot = json.load(f)
+
+    faites = charger_manifest()
     a_faire = []
-    for cle, nom, desc, props in PLATS:
-        dest_png = os.path.join(DROP, cle + ".png")
-        lettre = cle[0]
-        dest_webp = os.path.join(ROOT, "images", lettre, cle + ".webp")
-        if os.path.exists(dest_png) or os.path.exists(dest_webp):
+    for item in lot:
+        cle = item["cle"]
+        if cle in faites:
             continue
-        a_faire.append((cle, nom, desc, props))
+        dest_png = os.path.join(DROP, cle + ".png")
+        if os.path.exists(dest_png):
+            continue
+        a_faire.append(item)
 
     if test_seulement:
         a_faire = a_faire[:1]
 
     print(f"{len(a_faire)} image(s) a generer.\n")
-    for i, (cle, nom, desc, props) in enumerate(a_faire, 1):
+    reussies = 0
+    for i, item in enumerate(a_faire, 1):
+        cle, desc, props = item["cle"], item["desc"], item["props"]
         print(f"[{i}/{len(a_faire)}] {cle} ...", end=" ", flush=True)
         try:
-            wf = build_workflow(nom, desc, props, seed=1000 + i, filename_prefix="gen_" + cle)
+            wf = build_workflow(desc, props, seed=1000 + i, filename_prefix="gen_" + cle)
             prompt_id = submit(wf)
             dest = os.path.join(DROP, cle + ".png")
             ok = wait_and_fetch(prompt_id, dest)
             print("OK" if ok else "TIMEOUT")
+            if ok:
+                marquer_fait(cle, faites)
+                reussies += 1
         except Exception as e:
             print(f"ECHEC : {e}")
 
-    print("\nTermine. Lance ensuite : python tools/convertir-images.py")
+    print(f"\n{reussies}/{len(a_faire)} reussies.")
+    if reussies and not test_seulement:
+        print("Conversion en webp...")
+        subprocess.run([sys.executable, os.path.join(ROOT, "tools", "convertir-images.py")], cwd=ROOT)
 
 
 if __name__ == "__main__":

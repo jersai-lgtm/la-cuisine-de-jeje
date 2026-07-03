@@ -52528,5 +52528,1981 @@ window.RECETTES_EN = {
     "detail": "Let rest, then slice into portions like a pie."
    }
   ]
+ },
+ "currygoat": {
+  "nom": "Curry Goat",
+  "description": "A Jamaican classic — goat simmered low and slow with turmeric, thyme, and fiery scotch bonnet peppers until falling off the bone. The island's essential celebration dish.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the goat pieces with curry powder, thyme, and garlic for several hours."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the marinated meat in hot oil until well browned."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add onion, a whole scotch bonnet pepper, and ginger."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Cover with water and bring to a gentle simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer for a long time, until the meat is meltingly tender."
+   },
+   {
+    "titre": "Potatoes",
+    "detail": "Add the potatoes toward the end of cooking."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust salt and heat to taste."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice and kidney beans."
+   }
+  ]
+ },
+ "pelautrinite": {
+  "nom": "Trinidadian Pelau",
+  "description": "Trinidad's beloved one-pot rice with chicken, pigeon peas, and coconut milk, browned in caramelized sugar before it all simmers together. The comforting national dish, all in one pot.",
+  "etapes": [
+   {
+    "titre": "Caramelize",
+    "detail": "Melt the brown sugar in the oil until it turns a deep caramel."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Add the chicken and toss to coat well in the caramel."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add onion, garlic, and chili, and sauté."
+   },
+   {
+    "titre": "Peas",
+    "detail": "Stir in the pigeon peas (or split peas)."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Add the rice and stir well to coat every grain."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in the coconut milk with a splash of water."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook until all the liquid is fully absorbed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff with a fork and serve hot."
+   }
+  ]
+ },
+ "coucoubarbade": {
+  "nom": "Cou-Cou",
+  "description": "Barbados' smooth, silky cornmeal and okra mash — the national dish, traditionally served with fish in a light sauce.",
+  "etapes": [
+   {
+    "titre": "Okra",
+    "detail": "Cook the sliced okra in water until tender."
+   },
+   {
+    "titre": "Reserve the liquid",
+    "detail": "Set aside the okra cooking water."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Whisk the cornmeal into the reserved water in a steady stream."
+   },
+   {
+    "titre": "Work it smooth",
+    "detail": "Beat vigorously with a wooden spoon until smooth and lump-free."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Stir in a generous knob of butter."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Poach the fish in a light tomato-onion sauce."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Shape the cou-cou into a smooth dome on the plate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with sauce and fish, and serve hot."
+   }
+  ]
+ },
+ "ragoutpouletbelize": {
+  "nom": "Belizean Chicken Stew",
+  "description": "Belizean chicken marinated and slow-cooked in a sweet-and-spicy red recado (achiote) sauce. A beloved Sunday dish served with rice and beans.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the chicken with paprika, garlic, and bitter orange juice (or lime)."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the marinated chicken pieces in a pan."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion and bell pepper in the same pan."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add the crushed tomatoes and a splash of water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the chicken to the pan, cover, and simmer until tender."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Cook plain white rice as a side."
+   },
+   {
+    "titre": "Beans",
+    "detail": "Warm up red kidney beans as a side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the chicken and its sauce with rice and beans."
+   }
+  ]
+ },
+ "bouillondawara": {
+  "nom": "Awara Soup",
+  "description": "A rich, velvety Guyanese soup made from awara palm fruit pulp, slow-simmered with smoked meats and salted fish. A traditional Easter ritual dish.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Prepare a thick base with red palm oil, which gives the soup its signature color and flavor."
+   },
+   {
+    "titre": "Meats",
+    "detail": "Sauté the smoked and salted meats to help draw out the excess salt."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Cover with water and bring to a long, gentle simmer."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Add the desalted salted fish."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add chopped cabbage and root vegetables."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let simmer gently for several hours."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the seasoning — the broth should taste deep and rich."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot in deep bowls."
+   }
+  ]
+ },
+ "kokodafidji": {
+  "nom": "Fijian Kokoda",
+  "description": "A vibrant Fijian ceviche of raw fish marinated in lime juice and finished with coconut milk, tomato, red onion, and chili. Fresh and zesty.",
+  "etapes": [
+   {
+    "titre": "Dice",
+    "detail": "Cut the very fresh raw fish into small cubes."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate in lime juice until the flesh turns opaque."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Finely dice the tomato, red onion, and chili."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Drain the fish and stir in the coconut milk."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Gently fold in the vegetables."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and a fresh squeeze of lime."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Let rest in the fridge for 15 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, in small bowls or shells."
+   }
+  ]
+ },
+ "palusami": {
+  "nom": "Palusami",
+  "description": "Samoan taro leaves wrapped around a filling of coconut cream, onion, and sometimes corned beef, steamed into small parcels. The traditional dish for special occasions.",
+  "etapes": [
+   {
+    "titre": "Leaves",
+    "detail": "Quickly blanch the large green leaves (taro or spinach)."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix the meat, sliced onion, and a little coconut cream."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Divide the filling and wrap into small, tightly sealed parcels."
+   },
+   {
+    "titre": "Top with cream",
+    "detail": "Spoon thick coconut cream over each parcel."
+   },
+   {
+    "titre": "Wrap again",
+    "detail": "Wrap in an extra leaf to hold everything together."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for a long time, until melt-in-the-mouth tender."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check that the leaves are fully tender all the way through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, straight from the parcel with a spoon."
+   }
+  ]
+ },
+ "hangi": {
+  "nom": "Hangi",
+  "description": "New Zealand lamb, chicken, and root vegetables, traditionally slow-cooked underground over hot stones. Here adapted for the oven, just as tender and smoky.",
+  "etapes": [
+   {
+    "titre": "Prep",
+    "detail": "Cut the lamb and chicken into large chunks."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Cut the potatoes, sweet potato, and cabbage into large chunks."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Layer everything in a large covered dish, meat first, then vegetables."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season generously with salt and add a splash of water."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Cover tightly with foil to mimic the earth-oven effect."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Bake low and slow for a long time, without opening the oven."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check the meat is tender before serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve straight from the dish, with the meat and vegetables meltingly tender."
+   }
+  ]
+ },
+ "lamingtons": {
+  "nom": "Lamingtons",
+  "description": "Little Australian squares of soft sponge cake, dipped in chocolate icing and rolled in shredded coconut. The country's favorite teatime treat.",
+  "etapes": [
+   {
+    "titre": "Sponge cake",
+    "detail": "Prepare a light sponge cake and bake it in a square tin."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let it cool completely, then cut into cubes."
+   },
+   {
+    "titre": "Icing",
+    "detail": "Make a runny chocolate icing with a splash of milk."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Dip each sponge cube into the chocolate icing."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Immediately roll in shredded coconut."
+   },
+   {
+    "titre": "Set",
+    "detail": "Place on a wire rack to firm up."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest for 30 minutes before serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at room temperature as a teatime treat."
+   }
+  ]
+ },
+ "otaika": {
+  "nom": "Ota Ika",
+  "description": "A Tongan raw fish salad marinated in lime juice, bound with coconut milk and tossed with cucumber and tomato. Polynesian cousin of Tahitian poisson cru.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut very fresh raw fish into small cubes."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate generously in lime juice for 15 minutes."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Dice the cucumber and tomato finely."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Drain the fish and mix in the coconut milk."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Gently fold in the diced vegetables."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season lightly with salt and pepper."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate before serving."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled as a starter."
+   }
+  ]
+ },
+ "laplap": {
+  "nom": "Lap Lap",
+  "description": "Vanuatu's national dish of grated root vegetables (cassava, yam) baked into a thick pudding, topped with coconut milk and sometimes meat.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Finely grate the raw cassava and yam."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Mix with some of the coconut milk to form a thick batter."
+   },
+   {
+    "titre": "Line",
+    "detail": "Line a baking dish with green leaves (or baking paper)."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the grated root batter evenly across the dish."
+   },
+   {
+    "titre": "Top",
+    "detail": "Arrange chicken pieces on top."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Generously pour over the remaining coconut milk."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake low and slow until set and golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into portions and serve hot."
+   }
+  ]
+ },
+ "mumu": {
+  "nom": "Mumu",
+  "description": "A Papua New Guinean pork and vegetable feast traditionally slow-cooked underground on hot stones. Here adapted for the oven, with meltingly tender, smoky meat.",
+  "etapes": [
+   {
+    "titre": "Prep the meat",
+    "detail": "Cut the pork into large chunks."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Cut the sweet potato and cabbage into large chunks."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Layer the meat, then the vegetables, in a large covered dish."
+   },
+   {
+    "titre": "Drizzle",
+    "detail": "Drizzle with a little coconut milk."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season generously with salt."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Cover tightly to mimic the underground steaming effect."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Bake low and slow for a long time."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve straight from the dish, with tender meat and fragrant vegetables."
+   }
+  ]
+ },
+ "kuurdak": {
+  "nom": "Kuurdak",
+  "description": "A hearty Kyrgyz stir-fry of meat and offal pan-fried with onions and potatoes, traditionally cooked to welcome guests.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the lamb into small pieces."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the meat over high heat in its own fat."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Add the sliced onions and cook until golden."
+   },
+   {
+    "titre": "Potatoes",
+    "detail": "Add the potatoes, cut into large cubes."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook over medium heat until tender."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Stir in garlic and cumin toward the end of cooking."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season generously with salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with flatbread on the side."
+   }
+  ]
+ },
+ "qurutob": {
+  "nom": "Qurutob",
+  "description": "Tajikistan's national dish of crumbled flatbread soaked in fermented yogurt, topped with tomato, onion and fresh herbs. Eaten by hand, shared at the table.",
+  "etapes": [
+   {
+    "titre": "Crumble",
+    "detail": "Coarsely crumble the stale flatbread into a large dish."
+   },
+   {
+    "titre": "Thin out",
+    "detail": "Thin the yogurt with a little water to a pourable consistency."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Pour the yogurt over the crumbled bread and let it soak in well."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Slice the tomato and red onion thinly."
+   },
+   {
+    "titre": "Top",
+    "detail": "Arrange the vegetables over the soaked bread."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Scatter generously with fresh cilantro and dill."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Drizzle with a little oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve right away, to be eaten with the fingers."
+   }
+  ]
+ },
+ "gutap": {
+  "nom": "Gutap",
+  "description": "Turkmen fried pastries of thin dough, filled with pumpkin or fresh greens, golden and crisp. The quintessential Turkmen street food.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a thin water-based dough and let it rest."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Finely grate the pumpkin and mix with sliced onion."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough out very thin and cut out circles."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spoon the pumpkin filling onto each circle."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold into a half-moon shape and seal the edges well."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in hot oil until golden on both sides."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Brush with melted butter as soon as they come out of the pan."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a garlicky yogurt sauce."
+   }
+  ]
+ },
+ "dovga": {
+  "nom": "Dovga",
+  "description": "An Azerbaijani soup, served cold or warm, made with yogurt and rice and fragrant with a bouquet of fresh herbs (dill, cilantro, spinach). Refreshing and distinctive.",
+  "etapes": [
+   {
+    "titre": "Base",
+    "detail": "Whisk the yogurt with an egg and a little water."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Add the rinsed raw rice."
+   },
+   {
+    "titre": "Heat gently",
+    "detail": "Heat very gently, stirring constantly so it doesn't split."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer over low heat until the rice is tender."
+   },
+   {
+    "titre": "Greens",
+    "detail": "Add sliced spinach and chopped fresh herbs."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let simmer for another 5 minutes."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let cool to warm or chilled, depending on the season."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve as a soup, warm or cold."
+   }
+  ]
+ },
+ "tigadeguena": {
+  "nom": "Tiga Dègue Na",
+  "description": "A rich Malian beef and vegetable stew simmered in a creamy peanut sauce, served over rice. One of Mali's best-loved dishes.",
+  "etapes": [
+   {
+    "titre": "Sear the beef",
+    "detail": "Sear the beef chunks in hot oil until browned on all sides."
+   },
+   {
+    "titre": "Build the aromatics",
+    "detail": "Add the onion and garlic and cook until fragrant."
+   },
+   {
+    "titre": "Blend the peanut paste",
+    "detail": "Loosen the peanut paste (ground peanuts) with a little hot water."
+   },
+   {
+    "titre": "Start the sauce",
+    "detail": "Stir in the crushed tomato and peanut paste."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in enough water to just cover, then mix well."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer until the sauce turns silky and the meat is tender."
+   },
+   {
+    "titre": "Cook the rice",
+    "detail": "Cook the rice to serve alongside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Ladle the stew over hot rice and serve."
+   }
+  ]
+ },
+ "matoke": {
+  "nom": "Matoke",
+  "description": "Ugandan green plantains steamed until soft, then mashed and served with a peanut-tomato sauce. The country's everyday staple.",
+  "etapes": [
+   {
+    "titre": "Peel the plantains",
+    "detail": "Peel the green plantains."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Wrap them in banana leaves (or parchment paper)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for a long while until very tender."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Roughly mash into a lumpy purée."
+   },
+   {
+    "titre": "Make the sauce",
+    "detail": "Prepare a tomato-onion sauce with a spoonful of peanut paste."
+   },
+   {
+    "titre": "Simmer the sauce",
+    "detail": "Let the sauce simmer until smooth and thickened."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Mound the plantain purée into a dome on the plate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with the sauce and serve hot."
+   }
+  ]
+ },
+ "frangozambezia": {
+  "nom": "Frango à Zambeziana",
+  "description": "Mozambican grilled chicken marinated in garlic, lemon and piri-piri, basted with a spiced coconut sauce. A dish born from Portuguese and African heritage.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the chicken in crushed garlic, lemon juice and chili for several hours."
+   },
+   {
+    "titre": "Fire up the grill",
+    "detail": "Get a good bed of coals going, or preheat the oven to very hot."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the chicken, turning it regularly."
+   },
+   {
+    "titre": "Make the sauce",
+    "detail": "Prepare a piri-piri sauce with coconut milk and chili."
+   },
+   {
+    "titre": "Baste",
+    "detail": "Brush the chicken with the sauce halfway through cooking."
+   },
+   {
+    "titre": "Finish cooking",
+    "detail": "Continue grilling until the skin is nicely golden."
+   },
+   {
+    "titre": "Add a citrus splash",
+    "detail": "Finish with a squeeze of fresh lemon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with the remaining sauce on the side."
+   }
+  ]
+ },
+ "nshima": {
+  "nom": "Nshima",
+  "description": "A firm Zambian maize porridge, beaten and worked into a dense dough, served with a leafy green vegetable relish. The foundation of every Zambian meal.",
+  "etapes": [
+   {
+    "titre": "Boil the water",
+    "detail": "Bring salted water to a boil."
+   },
+   {
+    "titre": "Add the maize meal",
+    "detail": "Whisk in the maize meal in a steady stream."
+   },
+   {
+    "titre": "Beat the mixture",
+    "detail": "Beat vigorously with a wooden spoon until it forms a dense mass."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape into a smooth, compact mound."
+   },
+   {
+    "titre": "Make the relish",
+    "detail": "Sauté onion and tomato, then add the spinach."
+   },
+   {
+    "titre": "Simmer the relish",
+    "detail": "Let the relish simmer until soft."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season the relish with salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the nshima with the leafy green relish."
+   }
+  ]
+ },
+ "sadza": {
+  "nom": "Sadza",
+  "description": "A smooth, firm Zimbabwean maize porridge, paired with sautéed leafy greens (muriwo) and sometimes grilled meat.",
+  "etapes": [
+   {
+    "titre": "Boil the water",
+    "detail": "Bring salted water to a boil."
+   },
+   {
+    "titre": "Add the maize meal",
+    "detail": "Whisk in the maize meal in a steady stream."
+   },
+   {
+    "titre": "Beat the mixture",
+    "detail": "Beat vigorously until dense and smooth."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape into a compact mound."
+   },
+   {
+    "titre": "Cook the greens",
+    "detail": "Sauté the shredded cabbage with the onion."
+   },
+   {
+    "titre": "Add flavor",
+    "detail": "Stir a spoonful of peanut paste into the cabbage."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the sadza with the sautéed greens."
+   }
+  ]
+ },
+ "kapana": {
+  "nom": "Kapana",
+  "description": "Namibian beef grilled over open coals, thinly sliced and served with a spicy blend of salt, chili and tomato. The iconic street food of the local markets.",
+  "etapes": [
+   {
+    "titre": "Slice the beef",
+    "detail": "Cut the beef into thin strips."
+   },
+   {
+    "titre": "Fire up the coals",
+    "detail": "Get a hot, glowing bed of coals ready."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Quickly grill the beef strips, turning them as they cook."
+   },
+   {
+    "titre": "Make the spice mix",
+    "detail": "Prepare a coarsely ground salt-and-chili mix."
+   },
+   {
+    "titre": "Prep the salad",
+    "detail": "Dice the tomato and onion finely for the side salad."
+   },
+   {
+    "titre": "Slice the meat",
+    "detail": "Slice the grilled beef into bite-sized pieces."
+   },
+   {
+    "titre": "Season",
+    "detail": "Toss the meat in the salt-and-chili mix."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately with the tomato salad."
+   }
+  ]
+ },
+ "seswaa": {
+  "nom": "Seswaa",
+  "description": "Botswana beef simmered in salted water until falling apart, then hand-pounded into tender shreds. The country's traditional celebration dish.",
+  "etapes": [
+   {
+    "titre": "Set up the pot",
+    "detail": "Place the beef, cut into large chunks, in a big pot."
+   },
+   {
+    "titre": "Add aromatics",
+    "detail": "Add a whole onion and a generous amount of salt."
+   },
+   {
+    "titre": "Cover with water",
+    "detail": "Cover with water to just above the meat."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer for a long time until extremely tender."
+   },
+   {
+    "titre": "Pound the meat",
+    "detail": "Drain and pound the meat with a fork or pestle until shredded."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Stir in a little of the cooking liquid to keep it moist."
+   },
+   {
+    "titre": "Cook the sides",
+    "detail": "Cook potatoes and cabbage to serve alongside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the shredded beef with the vegetables."
+   }
+  ]
+ },
+ "bariisiskukaris": {
+  "nom": "Bariis Iskukaris",
+  "description": "Somali rice fragrant with xawaash spice blend, studded with raisins and meat. The festive rice served on special occasions.",
+  "etapes": [
+   {
+    "titre": "Sear the lamb",
+    "detail": "Sear the lamb chunks with the spices (cumin, cinnamon, cardamom)."
+   },
+   {
+    "titre": "Build the aromatics",
+    "detail": "Add the onion and garlic and cook until softened."
+   },
+   {
+    "titre": "Toast the rice",
+    "detail": "Stir the rice into the spiced mixture until lightly toasted."
+   },
+   {
+    "titre": "Add stock",
+    "detail": "Pour in enough stock to cover."
+   },
+   {
+    "titre": "Add raisins",
+    "detail": "Stir in the raisins."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook until all the liquid is absorbed."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Gently fluff with a fork."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot as a festive dish."
+   }
+  ]
+ },
+ "isombe": {
+  "nom": "Isombe",
+  "description": "Rwandan pounded cassava leaves simmered in palm oil with eggplant and peanut paste. A comforting, deep-green everyday dish from Rwanda.",
+  "etapes": [
+   {
+    "titre": "Pound",
+    "detail": "Finely pound the green leaves (cassava or spinach)."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Cut the eggplant into small cubes."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the onion and garlic in palm oil."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the pounded leaves and eggplant."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Stir in the peanut paste thinned with a little water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and let simmer for a long time."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt to taste and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice or plantain."
+   }
+  ]
+ },
+ "rizgrasburkina": {
+  "nom": "Burkinabè Riz Gras",
+  "description": "Burkinabè rice cooked in a rich, colorful meat and tomato broth. The most popular street food dish in Ouagadougou.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sear the beef chunks in hot oil."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add onion and garlic and sauté."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Stir in chopped tomato and a bit of tomato paste."
+   },
+   {
+    "titre": "Add water",
+    "detail": "Pour in water and let the meat simmer until tender."
+   },
+   {
+    "titre": "Rice",
+    "detail": "Add the rice to this colorful broth."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook until all the liquid is absorbed."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add a few vegetables (carrot, cabbage) on the side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, richly colored."
+   }
+  ]
+ },
+ "amiwo": {
+  "nom": "Amiwo",
+  "description": "Beninese cornmeal dough in a spicy tomato sauce, served with grilled or fried fish. The vibrant festive dish of southern Benin.",
+  "etapes": [
+   {
+    "titre": "Sauce",
+    "detail": "Blend tomato, onion and chili into a thick sauce."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Sauté this sauce in oil until reduced."
+   },
+   {
+    "titre": "Boil",
+    "detail": "Bring water to a boil with a bit of the sauce."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Whisk in the cornmeal in a steady stream."
+   },
+   {
+    "titre": "Work",
+    "detail": "Stir until smooth and orange-red."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Fry or grill the fish separately."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Mound the dough into a dome on the plate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with the fish and remaining sauce."
+   }
+  ]
+ },
+ "muambadegalinha": {
+  "nom": "Muamba de Galinha",
+  "description": "Angolan chicken stew in red palm oil with okra and chili, slow-simmered until rich and fragrant. The hearty national dish of Angola.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sear the chicken pieces in red palm oil."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add onion, garlic and chili."
+   },
+   {
+    "titre": "Add water",
+    "detail": "Pour in a little water and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer until the chicken is tender."
+   },
+   {
+    "titre": "Okra",
+    "detail": "Add the sliced okra near the end of cooking."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Let it reduce to a rich, velvety sauce."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the salt and chili."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice or fufu."
+   }
+  ]
+ },
+ "superkanja": {
+  "nom": "Superkanja",
+  "description": "A thick, silky Gambian okra and smoked fish stew cooked in palm oil. A West African classic served over rice.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Flake the smoked fish into pieces."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté onion and garlic in palm oil."
+   },
+   {
+    "titre": "Okra",
+    "detail": "Add the finely sliced okra."
+   },
+   {
+    "titre": "Add water",
+    "detail": "Pour in a little water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until it reaches its signature silky texture."
+   },
+   {
+    "titre": "Fish",
+    "detail": "Fold in the flaked smoked fish."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add chili to taste."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over a bed of white rice."
+   }
+  ]
+ },
+ "struklji": {
+  "nom": "Štruklji",
+  "description": "Slovenian rolled dough filled with fresh cheese, steamed and sometimes finished in the oven. The national dish (or dessert) with countless variations.",
+  "etapes": [
+   {
+    "titre": "Dough",
+    "detail": "Knead a soft egg dough and let it rest."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Mix the fresh cheese with egg and a pinch of salt."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough out very thin into a large rectangle."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the cheese filling evenly over the surface."
+   },
+   {
+    "titre": "Roll up",
+    "detail": "Roll tightly into a log and wrap in a cloth."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam (or poach) until firm."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut into thick slices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve topped with melted butter and golden breadcrumbs."
+   }
+  ]
+ },
+ "bosanskilonac": {
+  "nom": "Bosanski Lonac",
+  "description": "A Bosnian beef and mixed vegetable pot, layered and simmered very slowly without stirring. The classic Sunday family dish.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the beef into large chunks."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Cut cabbage, carrot, potato and onion into large pieces."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Layer the meat and vegetables in an earthenware pot."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper between each layer."
+   },
+   {
+    "titre": "Add water",
+    "detail": "Add a little water, without stirring."
+   },
+   {
+    "titre": "Seal",
+    "detail": "Cover tightly."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook over very low heat for several hours, never stirring."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve straight from the cooking pot."
+   }
+  ]
+ },
+ "tavcegravce": {
+  "nom": "Tavče Gravče",
+  "description": "Macedonian beans simmered then baked with smoked paprika and caramelized onion. The simple, comforting national dish.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the beans overnight, then parboil."
+   },
+   {
+    "titre": "Caramelize",
+    "detail": "Slowly cook the onion until deep golden."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Off the heat, stir in the smoked paprika so it doesn't burn."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add the chopped tomato."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Mix the drained beans with this sauce."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Transfer to a baking dish."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until a golden crust forms on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, straight from the dish."
+   }
+  ]
+ },
+ "juddmatgaardebounen": {
+  "nom": "Judd mat Gaardebounen",
+  "description": "A Luxembourg classic: smoked pork collar simmered until tender and served with broad beans in a creamy sauce. The national dish, traditionally paired with boiled potatoes.",
+  "etapes": [
+   {
+    "titre": "Desalt the pork",
+    "detail": "If the smoked pork collar is very salty, soak it in cold water beforehand to mellow the flavor."
+   },
+   {
+    "titre": "Poach gently",
+    "detail": "Poach the pork in barely simmering water for a good long while, until fully tender."
+   },
+   {
+    "titre": "Cook the beans",
+    "detail": "Boil the broad beans until tender, then slip off their skins."
+   },
+   {
+    "titre": "Build the roux",
+    "detail": "Make a roux with onion, flour, and a splash of the pork cooking broth."
+   },
+   {
+    "titre": "Enrich with cream",
+    "detail": "Stir in the cream and let the sauce turn silky and smooth."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Fold the peeled beans into the creamy sauce."
+   },
+   {
+    "titre": "Cook the potatoes",
+    "detail": "Steam some potatoes to serve alongside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice the pork and plate it with the creamed beans and steamed potatoes."
+   }
+  ]
+ },
+ "flija": {
+  "nom": "Flija",
+  "description": "A Kosovar celebration cake made of many thin crepe-like layers, each brushed with cream and baked slowly under a domed lid. A cherished dish for special occasions.",
+  "etapes": [
+   {
+    "titre": "Make the batter",
+    "detail": "Whisk together a thin, pourable crepe batter."
+   },
+   {
+    "titre": "First layer",
+    "detail": "Pour a thin layer into a buttered round pan and cook."
+   },
+   {
+    "titre": "Brush with cream",
+    "detail": "Brush each layer with cream before adding the next."
+   },
+   {
+    "titre": "Repeat",
+    "detail": "Keep adding layers one by one, cooking each under a lid."
+   },
+   {
+    "titre": "Bake covered",
+    "detail": "Cook every layer with the lid on so it steams and sets like a mini oven."
+   },
+   {
+    "titre": "Build height",
+    "detail": "Continue stacking until the cake is thick and beautifully layered."
+   },
+   {
+    "titre": "Let it rest",
+    "detail": "Allow the cake to rest before slicing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into wedges and serve warm."
+   }
+  ]
+ },
+ "zeama": {
+  "nom": "Zeamă",
+  "description": "A tangy Moldovan chicken and vegetable soup, brightened with lemon juice or fermented beet juice (borș). The country's beloved comfort cure.",
+  "etapes": [
+   {
+    "titre": "Make the broth",
+    "detail": "Simmer the chicken in water to build a clear broth, skimming as needed."
+   },
+   {
+    "titre": "Add vegetables",
+    "detail": "Add chopped carrot, celery, and potato."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let everything simmer until the chicken and vegetables are tender."
+   },
+   {
+    "titre": "Add the tang",
+    "detail": "Stir in lemon juice for that signature sour edge."
+   },
+   {
+    "titre": "Temper an egg",
+    "detail": "Whisk an egg with a little hot broth, then stir it back into the soup."
+   },
+   {
+    "titre": "Fresh herbs",
+    "detail": "Add fresh dill and parsley."
+   },
+   {
+    "titre": "Adjust seasoning",
+    "detail": "Taste and adjust the salt and tang as needed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with sour cream on the side."
+   }
+  ]
+ },
+ "mulgikapsad": {
+  "nom": "Mulgikapsad",
+  "description": "An Estonian sauerkraut stew simmered with smoked pork and barley, a hearty, warming winter dish from the south of the country.",
+  "etapes": [
+   {
+    "titre": "Sear the pork",
+    "detail": "Sear the smoked pork pieces."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add sliced onion and sauté until softened."
+   },
+   {
+    "titre": "Add sauerkraut",
+    "detail": "Stir in the drained sauerkraut."
+   },
+   {
+    "titre": "Add barley",
+    "detail": "Add rinsed barley and a bay leaf."
+   },
+   {
+    "titre": "Add water",
+    "detail": "Pour in water to cover."
+   },
+   {
+    "titre": "Simmer low and slow",
+    "detail": "Cover and simmer gently for a long while over low heat."
+   },
+   {
+    "titre": "Check doneness",
+    "detail": "Check that both the barley and pork are fully tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot as a hearty one-pot meal."
+   }
+  ]
+ },
+ "cepelinai": {
+  "nom": "Cepelinai",
+  "description": "Hefty Lithuanian dumplings made from grated potato and stuffed with meat, poached until tender and topped with a creamy bacon sauce.",
+  "etapes": [
+   {
+    "titre": "Grate the potatoes",
+    "detail": "Finely grate part of the raw potatoes and squeeze out the liquid."
+   },
+   {
+    "titre": "Boil the rest",
+    "detail": "Boil the remaining potatoes and mash them."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Mix the grated and mashed potato into one smooth dough."
+   },
+   {
+    "titre": "Make the filling",
+    "detail": "Combine the ground meat with finely chopped onion."
+   },
+   {
+    "titre": "Shape the dumplings",
+    "detail": "Form balls of dough, hollow out the center, fill with meat, and seal into a dumpling shape."
+   },
+   {
+    "titre": "Poach gently",
+    "detail": "Poach gently in barely simmering water for 30-40 minutes."
+   },
+   {
+    "titre": "Make the sauce",
+    "detail": "Fry the bacon and stir in cream to make the sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the dumplings topped with the creamy bacon sauce."
+   }
+  ]
+ },
+ "saltah": {
+  "nom": "Saltah",
+  "description": "A spiced Yemeni meat stew crowned with a frothy whipped fenugreek foam, served bubbling hot in a stone pot. Yemen's national dish.",
+  "etapes": [
+   {
+    "titre": "Simmer the lamb",
+    "detail": "Simmer lamb pieces with spices and tomato until tender."
+   },
+   {
+    "titre": "Add vegetables",
+    "detail": "Add diced potato and cook until tender."
+   },
+   {
+    "titre": "Soak the fenugreek",
+    "detail": "Soak fenugreek seeds for several hours."
+   },
+   {
+    "titre": "Whip it up",
+    "detail": "Whisk the soaked fenugreek into a thick white foam."
+   },
+   {
+    "titre": "Make the hot sauce",
+    "detail": "Prepare a spicy zhoug sauce on the side."
+   },
+   {
+    "titre": "Heat the pot",
+    "detail": "Pour the piping hot stew into a very hot stone pot."
+   },
+   {
+    "titre": "Top with foam",
+    "detail": "Spoon the fenugreek foam over the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, still bubbling, with flatbread."
+   }
+  ]
+ },
+ "alharees": {
+  "nom": "Al Harees",
+  "description": "An Emirati wheat and chicken porridge, slow-cooked until silky and smooth and finished with butter. A festive dish served during Ramadan.",
+  "etapes": [
+   {
+    "titre": "Soak the wheat",
+    "detail": "Soak the wheat (or cracked barley) for several hours."
+   },
+   {
+    "titre": "Cook the chicken",
+    "detail": "Cook the chicken in water until very tender, then set the broth aside."
+   },
+   {
+    "titre": "Simmer the wheat",
+    "detail": "Cook the soaked wheat in that broth for a long while."
+   },
+   {
+    "titre": "Shred the chicken",
+    "detail": "Shred the cooked chicken and stir it in."
+   },
+   {
+    "titre": "Whisk until smooth",
+    "detail": "Whisk vigorously while cooking until the mixture turns smooth and creamy."
+   },
+   {
+    "titre": "Add butter",
+    "detail": "Stir in a generous knob of butter."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add salt and a pinch of cinnamon."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, drizzled with melted butter."
+   }
+  ]
+ },
+ "kabulipulao": {
+  "nom": "Kabuli Pulao",
+  "description": "Fragrant Afghan lamb rice topped with candied carrots and caramelized raisins. The national dish, served on special occasions.",
+  "etapes": [
+   {
+    "titre": "Simmer the lamb",
+    "detail": "Simmer lamb pieces with onion until tender, then set the broth aside."
+   },
+   {
+    "titre": "Parboil the rice",
+    "detail": "Parboil the basmati rice in the fragrant broth."
+   },
+   {
+    "titre": "Cut the carrots",
+    "detail": "Cut the carrots into fine matchsticks."
+   },
+   {
+    "titre": "Candy the carrots",
+    "detail": "Sauté the carrots with a little sugar until caramelized."
+   },
+   {
+    "titre": "Add raisins",
+    "detail": "Add the raisins and caramelize briefly together with the carrots."
+   },
+   {
+    "titre": "Layer it up",
+    "detail": "Layer the lamb and rice in the pot."
+   },
+   {
+    "titre": "Steam to finish",
+    "detail": "Cook covered over low heat until beautifully fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Mound the rice and crown with the candied carrots and raisins."
+   }
+  ]
+ },
+ "karahi": {
+  "nom": "Karahi",
+  "description": "A Pakistani chicken or lamb curry, seared and simmered quickly in a wok with tomato, ginger, and green chili. Served bubbling straight from the pan.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sear the chicken pieces over very high heat in the wok (karahi)."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add crushed garlic and ginger."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add fresh tomato cut into wedges."
+   },
+   {
+    "titre": "Chili",
+    "detail": "Add whole green chilies, split lengthwise."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over high heat until the sauce reduces and thickens."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Stir in a spoonful of yogurt to bind the sauce."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter with julienned ginger and fresh cilantro."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve straight from the wok with naan bread."
+   }
+  ]
+ },
+ "ambuyat": {
+  "nom": "Ambuyat",
+  "description": "Brunei's national dish, made from sago starch (here, tapioca) worked into a sticky, translucent paste and dipped into a tangy sauce with special forked sticks.",
+  "etapes": [
+   {
+    "titre": "Boil",
+    "detail": "Bring water to a boil."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour in the tapioca starch in a steady stream, stirring briskly."
+   },
+   {
+    "titre": "Work",
+    "detail": "Work vigorously until the mixture turns translucent and sticky."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Prepare a tangy sauce with tamarind, lime, and chili."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Stir garlic and a touch of fish sauce into the sauce."
+   },
+   {
+    "titre": "Twirl",
+    "detail": "Twirl a bit of the paste around the special sticks (or a fork)."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Dip generously into the tangy sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Enjoy right away, alongside vegetables and grilled fish."
+   }
+  ]
+ },
+ "batardaan": {
+  "nom": "Batar Da'an",
+  "description": "An East Timorese stew of corn, beans, and squash simmered together — a simple, wholesome everyday plant-based dish.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Shuck fresh corn kernels (or use canned or frozen corn)."
+   },
+   {
+    "titre": "Soak",
+    "detail": "If needed, pre-cook the beans."
+   },
+   {
+    "titre": "Base",
+    "detail": "Sauté the onion in oil."
+   },
+   {
+    "titre": "Squash",
+    "detail": "Add the squash, cut into cubes."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the corn and pre-cooked beans."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add water to cover."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until all the vegetables are tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot as a complete one-pot meal."
+   }
+  ]
+ },
+ "emadatshi": {
+  "nom": "Ema Datshi",
+  "description": "Bhutan's national dish of green chilies simmered in a melted cheese sauce. Fiercely spicy, and eaten at nearly every meal.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Cut the green chilies into large pieces (keep the seeds in for extra heat)."
+   },
+   {
+    "titre": "Base",
+    "detail": "Lightly sauté the onion and garlic."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the chilies and a splash of water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the chilies are tender."
+   },
+   {
+    "titre": "Cheese",
+    "detail": "Add the cheese, crumbled or sliced."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Let it melt slowly, stirring until the sauce turns creamy."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Stir in the tomato toward the end of cooking."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with red rice."
+   }
+  ]
+ },
+ "ladob": {
+  "nom": "Ladob",
+  "description": "A Seychellois dessert of banana (or sweet potato) simmered in sweetened coconut milk, scented with vanilla and nutmeg. Simple and comforting.",
+  "etapes": [
+   {
+    "titre": "Prepare",
+    "detail": "Peel the bananas (or sweet potatoes) and cut into chunks."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Set them to cook gently in the coconut milk."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the sugar and stir well."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Add the vanilla and a pinch of grated nutmeg."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Simmer over low heat until soft and tender."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Let it reduce until the sauce turns rich and syrupy."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let it cool slightly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, as a dessert or sweet side."
+   }
+  ]
+ },
+ "encebollado": {
+  "nom": "Encebollado",
+  "description": "An Ecuadorian tuna and yuca soup in a lime-spiked broth, piled high with pickled red onions. The country's go-to hangover cure.",
+  "etapes": [
+   {
+    "titre": "Broth",
+    "detail": "Cook the fish in a broth with onion and cumin."
+   },
+   {
+    "titre": "Yuca",
+    "detail": "Cook the cassava separately until tender."
+   },
+   {
+    "titre": "Flake",
+    "detail": "Flake the cooked fish into pieces."
+   },
+   {
+    "titre": "Sauce",
+    "detail": "Add tomato and a bit of the colored broth to the fish."
+   },
+   {
+    "titre": "Pickle",
+    "detail": "Marinate the sliced red onion in lime juice."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the cassava to the fish broth."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let everything simmer together for a few minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve topped with pickled onions and fresh cilantro."
+   }
+  ]
+ },
+ "pepian": {
+  "nom": "Pepián",
+  "description": "A Guatemalan chicken stew in a rich, thick sauce of toasted pumpkin and sesame seeds, tomato, and chili. The nation's dish, deep and complex in flavor.",
+  "etapes": [
+   {
+    "titre": "Cook",
+    "detail": "Boil the chicken until tender, reserving the broth."
+   },
+   {
+    "titre": "Toast",
+    "detail": "Dry-toast the pumpkin and sesame seeds until golden."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the toasted seeds with tomato and chili into a paste."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Sauté the paste in oil for a few minutes."
+   },
+   {
+    "titre": "Thin",
+    "detail": "Thin with the chicken broth until it forms a thick sauce."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the cooked chicken to the sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer to let the flavors meld together."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice and tortillas."
+   }
+  ]
+ },
+ "vigoron": {
+  "nom": "Vigorón",
+  "description": "A Nicaraguan plate of boiled yuca, crispy fried pork rind, and a tangy cabbage slaw, traditionally served on a banana leaf.",
+  "etapes": [
+   {
+    "titre": "Yuca",
+    "detail": "Peel and boil the cassava until tender."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the pork bits (or pork rind) until nicely crisp."
+   },
+   {
+    "titre": "Slaw",
+    "detail": "Finely shred the cabbage."
+   },
+   {
+    "titre": "Season",
+    "detail": "Toss the cabbage with diced tomato and vinegar."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the slaw sit for a few minutes to marinate."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the hot cassava on a leaf (or plate)."
+   },
+   {
+    "titre": "Top",
+    "detail": "Pile the crispy pork bits on top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Crown with the tangy cabbage slaw and serve."
+   }
+  ]
+ },
+ "carimanolas": {
+  "nom": "Carimañolas",
+  "description": "Panamanian yuca fritters shaped into torpedoes, stuffed with spiced ground beef and fried until deep golden brown. The country's classic street-food snack.",
+  "etapes": [
+   {
+    "titre": "Yuca",
+    "detail": "Boil the cassava in water until very tender."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash into a smooth purée while still hot."
+   },
+   {
+    "titre": "Filling",
+    "detail": "Sauté ground beef with onion and spices."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape the cassava purée into a ball and hollow out the center."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill with the meat mixture and seal into a torpedo shape."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Dip each fritter in beaten egg."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Deep-fry in hot oil until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a spicy hot sauce."
+   }
+  ]
+ },
+ "daraba": {
+  "nom": "Daraba",
+  "description": "A Chadian stew of mashed okra and eggplant, simmered with peanut paste and dried meat. A thick, deep-green dish from the Chadian Sahel.",
+  "etapes": [
+   {
+    "titre": "Mash",
+    "detail": "Pound the cooked okra and eggplant together into a coarse purée."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the rehydrated dried meat (or fresh meat)."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add the onion and garlic."
+   },
+   {
+    "titre": "Flavor",
+    "detail": "Stir in the peanut paste thinned with a little water."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Fold in the okra and eggplant purée."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Add a splash of water and mix well."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the sauce is thick and smooth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over millet balls or rice."
+   }
+  ]
+ },
+ "chambogrille": {
+  "nom": "Grilled Chambo",
+  "description": "Whole Lake Malawi tilapia, marinated in lemon and spices and grilled over open coals, served with a tomato chutney. Malawi's signature fish dish.",
+  "etapes": [
+   {
+    "titre": "Prep the fish",
+    "detail": "Gut and scale the whole fish, then score the skin."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate in lemon, garlic and spices for 30 minutes."
+   },
+   {
+    "titre": "Coals",
+    "detail": "Get a good bed of hot coals going."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the whole fish on both sides until golden."
+   },
+   {
+    "titre": "Chutney",
+    "detail": "Make a chutney with tomato, onion and chili."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer the chutney until thickened."
+   },
+   {
+    "titre": "Check",
+    "detail": "Check that the fish is cooked through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the grilled fish with the chutney and rice."
+   }
+  ]
+ },
+ "cachupa": {
+  "nom": "Cachupa",
+  "description": "A Cape Verdean stew of corn and beans slow-simmered for hours with meat and sweet potato. The national dish, cooked low and slow for generations.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the dried corn and beans overnight."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Sear the pork pieces."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add the onion and garlic."
+   },
+   {
+    "titre": "Add water",
+    "detail": "Cover generously with water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let simmer very slowly over low heat for a long time."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the sweet potato and cabbage halfway through cooking."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the pre-cooked corn and beans."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Reduce until thick and stew-like, then serve."
+   }
+  ]
  }
 };
