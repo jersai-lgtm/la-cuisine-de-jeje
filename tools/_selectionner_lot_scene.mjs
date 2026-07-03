@@ -1,14 +1,18 @@
 // Selectionne le prochain lot de recettes a refaire en style "scene enrichie"
 // et genere des props (accessoires) par plat, tires des vrais ingredients de
 // la recette + un gabarit par categorie. Sortie -> tools/_lot_scene.json
-// Usage : node tools/_selectionner_lot_scene.mjs [taille=100]
+// Usage : node tools/_selectionner_lot_scene.mjs [taille=100] [--dateAjout=YYYY-MM-DDTHH:MM:SS]
+//   --dateAjout filtre sur les recettes ajoutees a cette date exacte (ex: une vague precise),
+//   au lieu de piocher dans tout le catalogue par ordre alphabetique.
 import fs from "node:fs";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
-const TAILLE = parseInt(process.argv[2] || "100", 10);
+const args = process.argv.slice(2);
+const TAILLE = parseInt(args.find((a) => /^\d+$/.test(a)) || "100", 10);
+const filtreDate = (args.find((a) => a.startsWith("--dateAjout=")) || "").replace("--dateAjout=", "") || null;
 const MANIFEST = join(ROOT, "tools", "_photos_scene_faites.json");
 
 function charger(fichier, marqueur, seed) {
@@ -84,7 +88,7 @@ if (fs.existsSync(MANIFEST)) {
 }
 
 const cles = Object.keys(recettes).sort();
-const restantes = cles.filter((k) => !dejaFaites.has(k));
+const restantes = cles.filter((k) => !dejaFaites.has(k) && (!filtreDate || recettes[k].dateAjout === filtreDate));
 const lot = restantes.slice(0, TAILLE).map((cle) => {
   const r = recettes[cle];
   return {
