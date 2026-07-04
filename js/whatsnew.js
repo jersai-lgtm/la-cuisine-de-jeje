@@ -10,11 +10,6 @@
 
 const QUOI_DE_NEUF = [
   {
-    v: "3.5.1",
-    titre: "🍹 Prix & calories sur les cocktails et mocktails",
-    texte: "Les cartes de cocktails et mocktails affichent maintenant le prix et les calories, comme toutes les autres recettes (par verre plutôt que par convive). Fini les cartes incomplètes ! 🥂"
-  },
-  {
     v: "3.4.8",
     titre: "🎨 Accueil en couleurs",
     texte: "L'accueil s'harmonise ! Chaque bloc a maintenant sa propre bannière colorée : 🗓️ La recette du jour en or (clique dessus pour l'ouvrir en grand), 🎯 Objectif kcal en vert, 🎭 De quoi t'as envie en violet, 🆕 Dernières recettes ajoutées en rose, 🕐 Dernières recettes vues en bleu-sarcelle, ✨ Suggestions pour toi en corail, 📅 Dernier menu généré en indigo, et 🌱 Le top du mois change de couleur selon la saison (vert au printemps, or en été, marron en automne, bleu en hiver). Plus facile de repérer chaque section d'un coup d'œil ! 🌈"
