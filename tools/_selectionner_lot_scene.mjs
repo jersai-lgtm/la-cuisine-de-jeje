@@ -103,12 +103,25 @@ if (clesForcees.length) {
   const cles = Object.keys(recettes).sort();
   restantes = cles.filter((k) => !dejaFaites.has(k) && (!filtreDate || recettes[k].dateAjout === filtreDate));
 }
+// Retire les mentions de main(s) du texte envoye au generateur d'images (ex: "roule
+// a la main", "faites main") : un detail culinaire authentique a garder dans la
+// description affichee aux utilisateurs, mais qui fait apparaitre une main --
+// souvent mal rendue -- sur la photo generee si on le laisse dans le prompt.
+function sansMentionMain(texte) {
+  return String(texte || "")
+    .replace(/,?\s*fait(e)?s?\s+mains?\b/gi, "")
+    .replace(/,?\s*(roul[ée]e?s?|pli[ée]e?s?|pil[ée]e?s?|fa[çc]onn[ée]e?s?|p[ée]tri[ei]?s?|mang[ée]e?s?)?\s*(à|a)\s+la\s+main\b/gi, "")
+    .replace(/\s{2,}/g, " ")
+    .replace(/\s+([.,!])/g, "$1")
+    .trim();
+}
+
 const lot = restantes.slice(0, TAILLE).map((cle) => {
   const r = recettes[cle];
   return {
     cle,
     nom: r.nom,
-    desc: r.description || r.nom,
+    desc: sansMentionMain(r.description || r.nom),
     props: construireProps(r),
   };
 });
