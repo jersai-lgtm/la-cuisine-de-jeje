@@ -96,7 +96,7 @@
   function prixCalLigne(key) {
     try {
       const r = recettes[key];
-      if (!r || ["cocktails", "mocktails", "sauces", "tartinables"].includes(r.cat)) return "";
+      if (!r || ["sauces", "tartinables"].includes(r.cat)) return "";
       if (typeof calculerPrixCaloriesRecette !== "function") return "";
       const tk = Object.keys(r).find((k) => k.startsWith("tableau") && Array.isArray(r[k]));
       if (!tk) return "";

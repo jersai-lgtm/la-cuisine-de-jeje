@@ -1232,10 +1232,9 @@ function miniCarte(key, raisonHTML, opts) {
   // Badge note communautaire (bas-gauche)
   const badgeNote = (typeof noteCommunauteBadgeHTML === "function") ? noteCommunauteBadgeHTML(key, "mini") : "";
 
-  // Prix + calories par portion (mêmes exclusions que les filtres/tris :
-  // pas de boissons ni de bases dosées à l'unité — prix/cal non fiables par convive).
+  // Prix + calories par portion (bases dosées à l'unité exclues — prix/cal non fiables par convive).
   let lignePrixCal = "";
-  if (typeof calculerPrixCaloriesRecette === "function" && !["cocktails", "mocktails", "sauces", "tartinables"].includes(r.cat)) {
+  if (typeof calculerPrixCaloriesRecette === "function" && !["sauces", "tartinables"].includes(r.cat)) {
     const tk = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
     if (tk) {
       const base = r.base || 4;

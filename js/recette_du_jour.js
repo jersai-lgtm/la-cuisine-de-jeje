@@ -162,7 +162,7 @@
           const ns = calculerNutriScoreRecette(ligne);
           if (ns && ns.lettre) nutriBadge = '<span class="dujour-nutri carte-nutri nutri-' + ns.lettre + '" data-lettre="' + ns.lettre + '" title="Nutri-Score ' + ns.lettre + '"></span>';
         }
-        if (typeof calculerPrixCaloriesRecette === "function" && r.cat !== "cocktails" && r.cat !== "mocktails") {
+        if (typeof calculerPrixCaloriesRecette === "function") {
           const pc = calculerPrixCaloriesRecette(ligne);
           if (pc) {
             const parts = [];
