@@ -138,7 +138,7 @@ Object.assign(recettes, {
       { icone: "🥤", titre: "Assembler et servir", detail: "Mélanger jus de citron, sirop à la menthe et eau fraîche. Servir avec glaçons et feuilles de menthe fraîches.", badge: null }
     ]
   },
-  jusPastequeMenuthe: {
+  jusPastequeMenthe: {
     nom: "Jus Pastèque Menthe",
     cat: "mocktails", saisons: ["ete"], pays: "france",
     base: 4,

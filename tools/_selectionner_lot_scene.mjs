@@ -63,6 +63,10 @@ const PROPS_PAR_CATEGORIE = {
   entrees: "un ustensile de service, une garniture fraiche",
   salades: "une petite bouteille d'huile ou de vinaigrette, une fourchette",
   glaces: "un coulis ou des fruits frais, une cuillere a glace",
+  cocktails: "un zeste d'agrume ou des fruits frais en garniture, une paille, des glacons visibles",
+  mocktails: "une feuille de menthe ou des fruits frais en garniture, une paille, des glacons visibles",
+  pizzas: "une pelle a pizza ou un couteau a pizza, un peu de farine sur le plan de travail",
+  healthy: "quelques fruits ou graines en garniture, une cuillere adaptee",
 };
 
 function ingredientsPertinents(r) {

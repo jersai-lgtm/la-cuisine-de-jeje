@@ -11,6 +11,7 @@ _photos-a-convertir/
 
 # Fichiers temporaires des audits / workflows (scratch, lots, cibles)
 tools/_*.json
+tools/__pycache__/
 
 # === SÉCURITÉ : ne JAMAIS commiter de secrets ni les scripts batch (clé API) ===
 # (le dépôt est public — tout fichier commité devient lisible sur github.com)

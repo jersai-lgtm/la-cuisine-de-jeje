@@ -96,7 +96,7 @@ const TOUS_LES_APEROS_ALCOOL = [
 ];
 const TOUS_LES_APEROS_SANS = [
   "virginmojito","limonademaison","smoothiemangopassion","citronadementhe",
-  "jusPastequeMenuthe","virginpinacolada","cherryblossommocktail","shrubframboisebasilic","mocktailcoconananas"
+  "jusPastequeMenthe","virginpinacolada","cherryblossommocktail","shrubframboisebasilic","mocktailcoconananas"
 ];
 const TOUS_LES_APEROS = [...TOUS_LES_APEROS_ALCOOL, ...TOUS_LES_APEROS_SANS];
 // Apéritifs (catégorie "aperitifs" : tapenade, gougères, verrines… — la nourriture d'apéro)
@@ -159,7 +159,7 @@ const menusFestifs = {
   },
   brunch: {
     label: "☀️ Brunch Dominical",
-    apero:   ["limonademaison","smoothiemangopassion","citronadementhe","jusPastequeMenuthe","virginmojito"],
+    apero:   ["limonademaison","smoothiemangopassion","citronadementhe","jusPastequeMenthe","virginmojito"],
     entree:  ["smoothiebowl","bowlacai","overnightoats","saladequinoa","smoothiemangopassion","yaourt","granola"],
     plat:    ["pancakes","pancakesproteine","shakshuka","croquemonsieur","muffins","overnightoats","bruschetta"],
     dessert: ["muffins","madeleine","bananabread","granola","verrinetiramisu","goumeau"],
@@ -1030,7 +1030,7 @@ function genererMenusAleatoires(joursSelectionnes, regimes, allergies) {
     "sconeBritish","naan","bananabread","brioche","painlevain",
     // Petit-déjeuner / pas repas principal
     "overnightoats","granolaMaison","chocolatChaud","smoothiebowl","bowlacai",
-    "pancakesproteine","energyballs","smoothiemangopassion","jusPastequeMenuthe",
+    "pancakesproteine","energyballs","smoothiemangopassion","jusPastequeMenthe",
     "citronadementhe","limonademaison",
     // Desserts
     "tartetatinpommes","tartepistache","tartechocolatcaramel","madeleine","muffins",
@@ -1265,7 +1265,7 @@ function getNomRecette(key) {
     "limonademaison":    "Limonade Maison",
     "smoothiemangopassion": "Smoothie Mangue Passion",
     "citronadementhe":   "Citronnade à la Menthe",
-    "jusPastequeMenuthe":"Jus Pastèque Menthe",
+    "jusPastequeMenthe":"Jus Pastèque Menthe",
     "virginpinacolada":  "Virgin Piña Colada",
     "mojitorose":        "Mojito Rosé",
     "negroni":           "Negroni",

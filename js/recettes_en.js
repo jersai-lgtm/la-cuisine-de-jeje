@@ -20009,7 +20009,7 @@ window.RECETTES_EN = {
    }
   ]
  },
- "jusPastequeMenuthe": {
+ "jusPastequeMenthe": {
   "nom": "Watermelon Mint Juice",
   "description": "Watermelon juice with mint — ultra refreshing, naturally sweet and packed with vitamins. The summer mocktail!",
   "etapes": [
