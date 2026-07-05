@@ -53,9 +53,19 @@ def check_server():
         sys.exit(1)
 
 
-def build_workflow(desc, props, seed, filename_prefix):
+CATEGORIES_CONTENANT = {"sauces", "tartinables"}
+
+def build_workflow(desc, props, seed, filename_prefix, cat=None):
+    if cat in CATEGORIES_CONTENANT:
+        sujet = (
+            f"Photo culinaire ultra realiste et professionnelle de {desc}, servie dans un petit bol en "
+            "ceramique ou un pot en verre (jamais etalee sur une grande assiette plate, jamais de "
+            "fourchette plantee dedans), au centre de l'image."
+        )
+    else:
+        sujet = f"Photo culinaire ultra realiste et professionnelle de {desc}, au centre de l'image."
     prompt = (
-        f"Photo culinaire ultra realiste et professionnelle de {desc}, au centre de l'image. "
+        f"{sujet} "
         "Eclairage chaud et dramatique sur fond de table en bois sombre et rustique, net du premier plan "
         "a l'arriere-plan, sans flou ni bokeh. Scene de nature morte culinaire, sans aucune presence humaine "
         "(aucune main, aucun bras, aucun visage, aucune personne dans le cadre). Autour du plat, disposes avec soin : "
@@ -146,9 +156,10 @@ def main():
     reussies = 0
     for i, item in enumerate(a_faire, 1):
         cle, desc, props = item["cle"], item["desc"], item["props"]
+        cat = item.get("cat")
         print(f"[{i}/{len(a_faire)}] {cle} ...", end=" ", flush=True)
         try:
-            wf = build_workflow(desc, props, seed=1000 + i, filename_prefix="gen_" + cle)
+            wf = build_workflow(desc, props, seed=1000 + i, filename_prefix="gen_" + cle, cat=cat)
             prompt_id = submit(wf)
             dest = os.path.join(DROP, cle + ".png")
             ok = wait_and_fetch(prompt_id, dest)

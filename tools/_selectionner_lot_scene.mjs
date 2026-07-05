@@ -123,6 +123,7 @@ const lot = restantes.slice(0, TAILLE).map((cle) => {
     nom: r.nom,
     desc: sansMentionMain(r.description || r.nom),
     props: construireProps(r),
+    cat: r.cat || "",
   };
 });
 
