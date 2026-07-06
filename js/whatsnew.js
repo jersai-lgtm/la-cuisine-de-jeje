@@ -10,6 +10,11 @@
 
 const QUOI_DE_NEUF = [
   {
+    v: "3.5.5",
+    titre: "🍷 Alerte alcool pour les enfants",
+    texte: "Si ton foyer compte des enfants (3-12 ans), les recettes contenant de l'alcool — même cuit — sont maintenant signalées d'un cadre orange ⚠️ avec le détail (« Contient du rhum (cuit) », vin blanc, kirsch, plat flambé…) : baba au rhum, far breton, bœuf bourguignon, fondue savoyarde… Avec un bébé (0-2 ans) au foyer, l'alerte passe en rouge ⛔. Les cocktails restent à part (réservés aux adultes, pas besoin d'alerte). Et au passage, quelques recettes qui déclaraient du vin par erreur (gaspacho, salade de lentilles, pintxos) utilisent maintenant le bon vinaigre, avec des doses réalistes. 👨‍👩‍👧‍👦"
+  },
+  {
     v: "3.4.8",
     titre: "🎨 Accueil en couleurs",
     texte: "L'accueil s'harmonise ! Chaque bloc a maintenant sa propre bannière colorée : 🗓️ La recette du jour en or (clique dessus pour l'ouvrir en grand), 🎯 Objectif kcal en vert, 🎭 De quoi t'as envie en violet, 🆕 Dernières recettes ajoutées en rose, 🕐 Dernières recettes vues en bleu-sarcelle, ✨ Suggestions pour toi en corail, 📅 Dernier menu généré en indigo, et 🌱 Le top du mois change de couleur selon la saison (vert au printemps, or en été, marron en automne, bleu en hiver). Plus facile de repérer chaque section d'un coup d'œil ! 🌈"

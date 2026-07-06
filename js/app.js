@@ -1719,6 +1719,15 @@ function selectionnerBrioche(btn, groupe, valeur) {
 // ADAPTATION FAMILIALE — profil foyer
 // ============================================================
 // Mots bébé (rouge) et enfant (orange)
+// Alcool — versions "au xxx" (description) ET versions sèches (ingrédient).
+// Partagé bébé + enfant : signalé ⛔ pour bébé, ⚠️ informatif pour enfant
+// (étiquettes "Contient du rhum (cuit)" etc. dans ETIQUETTES_FAMILLE).
+const MOTS_ALCOOL = [
+  "flambé","flambée","flamber","au rhum","au cognac","au whisky","alcool",
+  "rhum","cognac","whisky","vodka","tequila","kirsch","amaretto","marsala",
+  "vinblanc","vinrouge","vinrose","saké","sake"
+];
+
 const MOTS_BEBE = [
   // Crus et dangereux
   "tartare","carpaccio","sashimi","ceviche","sushi","maki","nigiri","temaki",
@@ -1730,16 +1739,14 @@ const MOTS_BEBE = [
   "jambon cru","prosciutto","nduja","saucisson","bresaola","coppa","salami cru",
   // Très épicé
   "harissa","piment fort","piment rouge","sauce piquante","tabasco",
-  // Alcool — versions "au xxx" (description) ET versions sèches (ingrédient)
-  "flambé","flambée","flamber","au rhum","au cognac","au whisky","alcool",
-  "rhum","cognac","whisky","vodka","tequila","kirsch","amaretto","marsala",
-  "vinblanc","vinrouge","vinrose","saké","sake",
+  ...MOTS_ALCOOL,
   // Moules/coquillages (risque allergie) — "moules" au pluriel pour éviter "moule à tarte/gâteau"
   "moules","huitre","huître","palourde","coquillage"
 ];
 
 const MOTS_ENFANT = ["harissa","piment fort","gochujang","wasabi","tartare","carpaccio",
-  "sashimi","huitre","huître","bouillabaisse","très épicé","bien épicé","relevé","piquant"];
+  "sashimi","huitre","huître","bouillabaisse","très épicé","bien épicé","relevé","piquant",
+  ...MOTS_ALCOOL];
 
 // Table mot trouvé → libellé lisible (ce qu'on montrera à l'utilisateur).
 // Plusieurs mots peuvent partager le même libellé.
@@ -1871,7 +1878,7 @@ function getNiveauFamille(cle) {
   }
   // Garde : une boisson sans alcool (mocktail / virgin / "sans alcool") ne doit pas
   // être flaggée à cause du mot "alcool" présent dans sa description ("sans alcool")
-  const estSansAlcool = /sans alcool|mocktail|virgin/.test(texte) || /mocktail|virgin/.test(cle.toLowerCase());
+  const estSansAlcool = /sans alcool|ni alcool|mocktail|virgin/.test(texte) || /mocktail|virgin/.test(cle.toLowerCase());
   if (estSansAlcool) texte = texte.replace(/alcool/g, "");
 
   // Neutraliser les faux positifs (le mot interdit est contenu dans un terme sans danger réel)
@@ -1882,7 +1889,8 @@ function getNiveauFamille(cle) {
     .replace(/noix de coco/g, "coco")                           // coco, pas un fruit à coque
     .replace(/noix de muscade/g, "muscade")                     // épice
     .replace(/noix de (saint[- ]?jacques|st[- ]?jacques)/g, "saint-jacques") // coquille st-jacques
-    .replace(/tarte flamb[ée]e|flammek?ueche|flammenkueche/g, "tarte alsacienne"); // aucun alcool
+    .replace(/tarte flamb[ée]e|flammek?ueche|flammenkueche/g, "tarte alsacienne") // aucun alcool
+    .replace(/rhumes?/g, "refroidissement");                    // "couver un rhume" ≠ rhum
   // "sushi" cité en suggestion sur un plat cuit (clé non-sushi) → on ne le compte pas
   if (!cle.toLowerCase().includes("sushi")) texte = texte.replace(/sushi/g, "");
   // "sake" parasite dans une clé de dosa (galette indienne) — rien à voir avec l'alcool
