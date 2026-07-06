@@ -90,11 +90,11 @@ Object.assign(recettes, {
   painbaguette: {
     nom: "Pain — Baguette",
     cat: "boulangerie", pays: "france",
-    base: 6,
+    base: 1,
     temps: "3h",
     niveau: "⭐⭐ Intermédiaire",
     emoji: "🥖",
-    description: "Une vraie baguette maison — croûte dorée et craquante, mie alvéolée. Quantités pour 1 à 6 baguettes.",
+    description: "Une vraie baguette maison — croûte dorée et craquante, mie alvéolée. Quantités pour 1 à 5 baguettes.",
     ingredients: {},
     tableauPainBaguette: [
       { nb: 1, farine: "250 g", eau: "160 ml", levure: "8 g", sel: "5 g" },
@@ -158,11 +158,11 @@ Object.assign(recettes, {
   patefeuilletee: {
     nom: "Pâte feuilletée",
     cat: "boulangerie", pays: "france",
-    base: 6,
+    base: 1,
     temps: "2h + repos",
     niveau: "⭐⭐⭐ Difficile",
     emoji: "🥧",
-    description: "La vraie pâte feuilletée maison — croustillante, beurrée et feuilletée. Quantités pour 1 à 6 pâtes (moule ~28 cm).",
+    description: "La vraie pâte feuilletée maison — croustillante, beurrée et feuilletée. Quantités pour 1 à 5 pâtes (moule ~28 cm).",
     ingredients: {},
     tableauPateFeuilletee: [
       { nb: 1, farine: "250 g", beurre: "205 g", eau: "125 ml", sel: "5 g" },
@@ -185,11 +185,11 @@ Object.assign(recettes, {
   patebrisee: {
     nom: "Pâte brisée",
     cat: "boulangerie", pays: "france",
-    base: 6,
+    base: 1,
     temps: "15 min + repos",
     niveau: "⭐ Facile",
     emoji: "🥧",
-    description: "La pâte brisée maison — croustillante et fondante. Quantités pour 1 à 6 pâtes (moule ~28 cm).",
+    description: "La pâte brisée maison — croustillante et fondante. Quantités pour 1 à 5 pâtes (moule ~28 cm).",
     ingredients: {},
     tableauPateBrisee: [
       { nb: 1, farine: "200 g", beurre: "100 g", eau: "50 ml", sel: "4 g" },
@@ -211,11 +211,11 @@ Object.assign(recettes, {
   patesablee: {
     nom: "Pâte sablée",
     cat: "boulangerie", pays: "france",
-    base: 6,
+    base: 1,
     temps: "15 min + repos",
     niveau: "⭐ Facile",
     emoji: "🍪",
-    description: "La pâte sablée maison — plus sucrée et friable que la brisée. Quantités pour 1 à 6 pâtes (moule ~28 cm).",
+    description: "La pâte sablée maison — plus sucrée et friable que la brisée. Quantités pour 1 à 5 pâtes (moule ~28 cm).",
     ingredients: {},
     tableauPateSablee: [
       { nb: 1, farine: "200 g", beurre: "100 g", sucre: "80 g", oeufs: "1", amande: "20 g", sel: "1 g" },
@@ -310,7 +310,7 @@ Object.assign(recettes, {
   brioche: {
     nom: "Brioche",
     cat: "boulangerie", pays: "france",
-    base: 6,
+    base: 1,
     temps: "~2h + 35 min cuisson",
     niveau: "⭐⭐ Moyen",
     emoji: "🍞",

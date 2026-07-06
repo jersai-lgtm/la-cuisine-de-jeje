@@ -15,6 +15,8 @@ window.EXCEPTIONS = {
   // -------------------------------------------------------------------------
   unites: [
     "brioche",          // 🍞 1 brioche (sélecteur spécial dédié)
+    // 🥖 Pains et pâtes de base (1 pièce par défaut, ne suivent pas le foyer)
+    "painbaguette", "patefeuilletee", "patebrisee", "patesablee",
     // 🧀 Fromages maison (1 boule / 1 pièce)
     "mozzarellamaison", "fromagefraismaison",
     // 🫙 Les sauces sont désormais dosées PAR PERSONNE (nb = convives, 1→15) et

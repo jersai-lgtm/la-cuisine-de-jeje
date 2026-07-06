@@ -6097,7 +6097,7 @@ window.RECETTES_EN = {
  },
  "painbaguette": {
   "nom": "Bread — Baguette",
-  "description": "A true homemade baguette — golden and crispy crust, open crumb structure. Quantities for 1 to 6 baguettes.",
+  "description": "A true homemade baguette — golden and crispy crust, open crumb structure. Quantities for 1 to 5 baguettes.",
   "etapes": [
    {
     "titre": "Dissolve the yeast",
@@ -6165,7 +6165,7 @@ window.RECETTES_EN = {
  },
  "patesablee": {
   "nom": "Pâte Sablée",
-  "description": "Homemade pâte sablée — sweeter and more crumbly than pâte brisée. Quantities for 1 to 6 tarts (pan ~28 cm).",
+  "description": "Homemade pâte sablée — sweeter and more crumbly than pâte brisée. Quantities for 1 to 5 tarts (pan ~28 cm).",
   "etapes": [
    {
     "titre": "Cream butter and sugar",
@@ -6195,7 +6195,7 @@ window.RECETTES_EN = {
  },
  "patebrisee": {
   "nom": "Pie Crust",
-  "description": "Homemade pie crust — crispy and tender. Quantities for 1 to 6 crusts (pan ~28 cm).",
+  "description": "Homemade pie crust — crispy and tender. Quantities for 1 to 5 crusts (pan ~28 cm).",
   "etapes": [
    {
     "titre": "Cut in the flour",
@@ -6263,7 +6263,7 @@ window.RECETTES_EN = {
  },
  "patefeuilletee": {
   "nom": "Puff Pastry",
-  "description": "True homemade puff pastry — crispy, buttery, and flaky. Quantities for 1 to 6 pastries (mold ~28 cm).",
+  "description": "True homemade puff pastry — crispy, buttery, and flaky. Quantities for 1 to 5 pastries (mold ~28 cm).",
   "etapes": [
    {
     "titre": "The Dough",
