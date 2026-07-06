@@ -16,6 +16,11 @@ est deja affiche par l'appli, une pancarte est redondante -- retiree le
 2026-07-03). Voir memoire generation-locale-flux-comfyui et
 style-photos-ia-recettes pour le contexte complet.
 
+Depuis le 2026-07-06 : modele Flux DEV (pas schnell) + 20 steps, demande
+explicite de Jerome ("pousse au maximum ma carte graphique et meme si les
+photos prennent 10 min") -- la barre de qualite est le rendu de ses propres
+generations manuelles. Compter ~10 min/image sur la GTX 1080 Ti.
+
 Usage :
   node tools/_selectionner_lot_scene.mjs [taille]   -> prepare un lot (defaut 100) dans tools/_lot_scene.json
   python tools/_generer_images_locales.py           -> genere tout le lot + convertit en webp
@@ -73,17 +78,19 @@ def build_workflow(desc, props, seed, filename_prefix, cat=None):
         "Cadrage carre, ambiance chaleureuse de blog culinaire haut de gamme."
     )
     return {
-        "1": {"class_type": "UnetLoaderGGUF", "inputs": {"unet_name": "flux1-schnell-Q5_K_S.gguf"}},
+        "1": {"class_type": "UnetLoaderGGUF", "inputs": {"unet_name": "flux1-dev-Q5_K_S.gguf"}},
         "2": {"class_type": "DualCLIPLoaderGGUF", "inputs": {
             "clip_name1": "t5-v1_1-xxl-encoder-Q5_K_M.gguf",
             "clip_name2": "clip_l.safetensors", "type": "flux"}},
         "3": {"class_type": "VAELoader", "inputs": {"vae_name": "ae.safetensors"}},
         "4": {"class_type": "CLIPTextEncode", "inputs": {"text": prompt, "clip": ["2", 0]}},
         "5": {"class_type": "CLIPTextEncode", "inputs": {"text": "", "clip": ["2", 0]}},
+        # FluxGuidance (dev uniquement) : renforce l'adherence au prompt (3.5 = valeur standard)
+        "6": {"class_type": "FluxGuidance", "inputs": {"conditioning": ["4", 0], "guidance": 3.5}},
         "7": {"class_type": "EmptySD3LatentImage", "inputs": {"width": 1024, "height": 1024, "batch_size": 1}},
         "8": {"class_type": "KSampler", "inputs": {
-            "model": ["1", 0], "positive": ["4", 0], "negative": ["5", 0], "latent_image": ["7", 0],
-            "seed": seed, "steps": 8, "cfg": 1.0, "sampler_name": "euler", "scheduler": "simple", "denoise": 1.0}},
+            "model": ["1", 0], "positive": ["6", 0], "negative": ["5", 0], "latent_image": ["7", 0],
+            "seed": seed, "steps": 20, "cfg": 1.0, "sampler_name": "euler", "scheduler": "simple", "denoise": 1.0}},
         "9": {"class_type": "VAEDecode", "inputs": {"samples": ["8", 0], "vae": ["3", 0]}},
         "10": {"class_type": "SaveImage", "inputs": {"images": ["9", 0], "filename_prefix": filename_prefix}},
     }
@@ -97,7 +104,7 @@ def submit(workflow):
         return json.loads(resp.read().decode("utf-8"))["prompt_id"]
 
 
-def wait_and_fetch(prompt_id, dest_path, timeout_s=300):
+def wait_and_fetch(prompt_id, dest_path, timeout_s=1200):
     start = time.time()
     while time.time() - start < timeout_s:
         with urllib.request.urlopen(API + "/history/" + prompt_id, timeout=10) as resp:
