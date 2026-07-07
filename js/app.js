@@ -3310,12 +3310,16 @@ window._backGuardPush = function() {
   } catch (e) { /* PWA peut bloquer */ }
 };
 
-// iOS Safari : pendant l'animation du geste de retour (balayage depuis le bord),
-// un pushState exécuté DANS le popstate peut être ignoré → le tampon n'est pas
-// re-posé et le balayage suivant sort de l'appli. On re-pousse donc en différé,
-// après la fin du geste. Sans effet visible sur Android/desktop.
-window._backGuardPushDiffere = function() {
-  setTimeout(window._backGuardPush, 50);
+// iOS Safari : une entrée pushState créée HORS geste utilisateur (ex. dans le
+// popstate) est marquée « sautable » (anti-piège du bouton retour) → le balayage
+// suivant la saute et sort de la vue, voire de l'appli. Au lieu de re-CRÉER une
+// entrée, on RE-AVANCE (history.forward) sur l'entrée garde-fou qu'on vient de
+// consommer : une traversée n'est jamais sautable, et la pile ne grossit plus.
+// Le popstate déclenché par ce forward est ignoré via _ignorerProchainPopstate.
+window._ignorerProchainPopstate = false;
+window._backGuardRestaurer = function() {
+  window._ignorerProchainPopstate = true;
+  try { history.forward(); } catch (e) { window._ignorerProchainPopstate = false; }
 };
 
 // Le tampon d'historique est posé au PREMIER geste utilisateur (voir plus bas).
@@ -3440,13 +3444,18 @@ if (typeof document !== "undefined") {
 
 // Quand le user appuie sur le bouton retour du téléphone
 window.addEventListener("popstate", function(e) {
+  // Popstate déclenché par notre propre history.forward() de restauration → à ignorer.
+  if (window._ignorerProchainPopstate) {
+    window._ignorerProchainPopstate = false;
+    return;
+  }
   // 🔗 Recettes liées : si on est dans une fiche atteinte via un lien, revenir à
   // la recette parente au lieu de fermer la modale.
   const _elFiche = document.getElementById("modal-calc");
   if (_modalEstVisible(_elFiche) && window._ficheNavStack && window._ficheNavStack.length > 0) {
     const _parent = window._ficheNavStack.pop();
     if (typeof choisirRecette === "function") choisirRecette(_parent, null, true);
-    window._backGuardPushDiffere();
+    window._backGuardRestaurer();
     return;
   }
   // Trouver la modal du dessus actuellement visible
@@ -3462,10 +3471,10 @@ window.addEventListener("popstate", function(e) {
     }
   }
   
-  // Re-pousser un état tampon pour intercepter le PROCHAIN retour aussi
+  // Restaurer le garde-fou pour intercepter le PROCHAIN retour aussi
   // Sinon le user aurait besoin de 2 clics retour à chaque fois
   if (modalFermee) {
-    window._backGuardPushDiffere();
+    window._backGuardRestaurer();
     return;
   }
 
@@ -3481,7 +3490,7 @@ window.addEventListener("popstate", function(e) {
   const _surAccueil = _secAccueil && _modalEstVisible(_secAccueil);
   if (!_surAccueil) {
     _afficherVue("accueil");
-    window._backGuardPushDiffere();   // tampon → il faudra un 2e retour pour quitter
+    window._backGuardRestaurer();   // garde-fou → il faudra un 2e retour pour quitter
     return;
   }
 
