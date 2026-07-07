@@ -4579,36 +4579,7 @@ window.RECETTES_EN = {
    }
   ]
  },
- "feuilletessaucisse": {
-  "nom": "Sausage Rolls",
-  "description": "Mini puff pastry sausage rolls — the homemade version of store-bought 'sausage rolls'. Crispy and comforting.",
-  "etapes": [
-   {
-    "titre": "Prepare the dough",
-    "detail": "Unroll the puff pastry, keeping it very cold. CHEF'S TIP: cold dough yields much better puff layers."
-   },
-   {
-    "titre": "Fill",
-    "detail": "Spread a thin layer of mustard, then place the sausage meat in a log along one edge."
-   },
-   {
-    "titre": "Roll",
-    "detail": "Roll tightly and seal the edge."
-   },
-   {
-    "titre": "Cut",
-    "detail": "Cut into 3-4 cm pieces and score the top diagonally."
-   },
-   {
-    "titre": "Brush",
-    "detail": "Brush with beaten egg (egg yolk alone gives better browning) and sprinkle with sesame seeds if desired."
-   },
-   {
-    "titre": "Bake",
-    "detail": "Bake in a hot oven until golden and puffed."
-   }
-  ]
- },
+
  "brochettecaprese": {
   "nom": "Tomato-Mozzarella-Basil Skewers",
   "description": "Mini Caprese skewers — cherry tomatoes, mozzarella balls, and basil. Fresh, colorful, and no cooking required.",
@@ -34516,6 +34487,352 @@ window.RECETTES_EN = {
    {
     "titre": "Season",
     "detail": "SECRET: a pinch of smoked paprika, pickle juice, and sugar = THE 'special sauce' flavor. CHEF'S TIP: tastes best after 1 hour chilled."
+   }
+  ]
+ },
+ "anchoiade": {
+  "nom": "Anchoïade",
+  "description": "Provençal anchoïade — anchovies, garlic and olive oil blended into a bold, fragrant spread. Serve on toasted bread or as a dip with crunchy vegetables.",
+  "etapes": [
+   {
+    "titre": "Prepare the anchovies",
+    "detail": "Drain the oil-packed anchovy fillets. CHEF'S TIP: for a milder anchoïade, rinse them quickly under water and pat dry."
+   },
+   {
+    "titre": "Remove the garlic germ",
+    "detail": "Peel the garlic and remove the central germ (it's what makes garlic harsh and hard to digest)."
+   },
+   {
+    "titre": "Pound or blend",
+    "detail": "Crush anchovies, garlic and capers with a pestle (rustic version) or a blender (smooth version)."
+   },
+   {
+    "titre": "Emulsify with oil",
+    "detail": "Pour in the olive oil in a thin stream while mixing, as for a mayonnaise, until the paste is supple and glossy."
+   },
+   {
+    "titre": "Sharpen",
+    "detail": "Add the dash of wine vinegar and season generously with pepper. No salt — the anchovies take care of that!"
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in a jar with toasted country bread, or warm with crunchy vegetables (celery, cauliflower, radishes)."
+   }
+  ]
+ },
+ "confitoignons": {
+  "nom": "Onion Confit",
+  "description": "Onion confit — red onions slowly melted with sugar and balsamic vinegar to a jam-like texture. The perfect partner for foie gras, cheeses and burgers.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Peel the red onions and slice them into thin, even strips. KEY: the thinner they are, the more they melt."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Cook the onions in butter over low heat with the thyme, without colouring, stirring regularly."
+   },
+   {
+    "titre": "Add sugar",
+    "detail": "Add the sugar and let it caramelise gently while stirring."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the balsamic vinegar, scrape up the juices and stir."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Let it stew over very low heat until it reaches a glossy jam-like texture, almost no liquid left. IMPORTANT: stir often near the end so it doesn't stick."
+   },
+   {
+    "titre": "Pot it up",
+    "detail": "Season, transfer to a jar. Keeps 2 weeks chilled — perfect with foie gras, cheese or in a burger."
+   }
+  ]
+ },
+ "caviartomates": {
+  "nom": "Sun-Dried Tomato Spread",
+  "description": "Sun-dried tomato 'caviar' — confit tomatoes, parmesan, capers and basil blended into an intense southern spread. Irresistible on toast at apéro time.",
+  "etapes": [
+   {
+    "titre": "Drain the tomatoes",
+    "detail": "Drain the oil-packed sun-dried tomatoes, reserving a little of their fragrant oil."
+   },
+   {
+    "titre": "Prepare the aromatics",
+    "detail": "Remove the garlic germ, pick the basil leaves, drain the capers."
+   },
+   {
+    "titre": "Pulse-blend",
+    "detail": "Blend tomatoes, garlic, capers and parmesan in pulses. KEY: keep a slightly grainy 'caviar' texture, not a smooth purée."
+   },
+   {
+    "titre": "Loosen with oil",
+    "detail": "Work in the olive oil (plus a little tomato oil) until the spread is supple."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the chopped basil and pepper. Taste before salting — parmesan and capers are already salty."
+   },
+   {
+    "titre": "Serve",
+    "detail": "On toasted bread, stirred into hot pasta or with burrata. Keeps 5 days chilled under a film of oil."
+   }
+  ]
+ },
+ "rillettessardines": {
+  "nom": "Sardine Rillettes",
+  "description": "Express sardine rillettes — oil-packed sardines mashed with cream cheese, shallot and lemon. A seaside spread ready in 10 minutes for apéro.",
+  "etapes": [
+   {
+    "titre": "Drain the sardines",
+    "detail": "Drain the oil-packed sardines and remove the central bone if you prefer (it mashes perfectly well too — full of calcium!)."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the sardines with a fork in a bowl — rustic texture, no blender needed."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Stir in the cream cheese and mustard, mix well."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the finely chopped shallot, lemon juice and chives."
+   },
+   {
+    "titre": "Season",
+    "detail": "Pepper generously, salt lightly. CHEF'S TIP: a pinch of Espelette pepper wakes the whole thing up."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill 30 min before serving on toasted bread or blinis — the flavours blend and the texture sets."
+   }
+  ]
+ },
+ "tarama": {
+  "nom": "Homemade Taramasalata",
+  "description": "Homemade Greek tarama — smoked cod roe whipped with oil, milk-soaked bread and lemon. Pale pink, airy, incomparably better than store-bought.",
+  "etapes": [
+   {
+    "titre": "Soak the bread",
+    "detail": "Remove the crust from the sandwich bread and soak the crumb in the milk."
+   },
+   {
+    "titre": "Prepare the roe",
+    "detail": "Remove the thin membrane from the smoked cod roe, scraping with a spoon to collect the eggs."
+   },
+   {
+    "titre": "Blend the base",
+    "detail": "Blend the cod roe with the squeezed-out bread until you get a smooth paste."
+   },
+   {
+    "titre": "Emulsify with oil",
+    "detail": "With the motor running, pour the oil in a thin stream as for mayonnaise: the tarama thickens, lightens and turns airy. KEY: a SLOW stream of oil, or it collapses."
+   },
+   {
+    "titre": "Brighten with lemon",
+    "detail": "Work in the lemon juice little by little, tasting as you go. Real tarama is PALE pink — not neon pink like the supermarket stuff!"
+   },
+   {
+    "titre": "Rest in the fridge",
+    "detail": "Chill for 1 hour: it firms up and the flavours balance out. Serve with toasted bread or pita."
+   }
+  ]
+ },
+ "ktipiti": {
+  "nom": "Ktipiti",
+  "description": "Greek ktipiti — feta whipped with roasted red pepper, Greek yogurt and a hint of paprika. A creamy, fresh, slightly smoky spread and a meze star.",
+  "etapes": [
+   {
+    "titre": "Roast the pepper",
+    "detail": "Roast the whole pepper at 220°C (or under the grill) until the skin is blackened all over."
+   },
+   {
+    "titre": "Steam it",
+    "detail": "Seal the roasted pepper in a covered bowl (or a bag) for 10 min: the steam loosens the skin, which then peels off easily."
+   },
+   {
+    "titre": "Peel and deseed",
+    "detail": "Peel the pepper, remove the seeds and chop roughly."
+   },
+   {
+    "titre": "Mash the feta",
+    "detail": "Mash the feta with a fork together with the Greek yogurt — creamy texture with a few chunks."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Mix feta, pepper, pressed de-germed garlic, paprika and olive oil. CHEF'S TIP: add a pinch of chilli for the spicy 'tyrokafteri' version."
+   },
+   {
+    "titre": "Serve chilled",
+    "detail": "Chill 30 min and serve drizzled with olive oil, with grilled pita or crudités."
+   }
+  ]
+ },
+ "pouletmorilles": {
+  "nom": "Chicken with Morels",
+  "description": "Chicken with morels — thighs browned then simmered in a creamy morel and white wine sauce, Jura-style. A special-occasion dish to serve with rice pilaf or fresh pasta.",
+  "etapes": [
+   {
+    "titre": "Rehydrate the morels",
+    "detail": "Soak the dried morels in a bowl of warm water. KEY: strain and keep the soaking water, it will flavour the sauce."
+   },
+   {
+    "titre": "Brown the chicken",
+    "detail": "Season the chicken thighs with salt and pepper, then brown them in butter on all sides in a hot casserole."
+   },
+   {
+    "titre": "Sweat the shallot",
+    "detail": "Remove the chicken, lower the heat and sweat the chopped shallot in the pan juices."
+   },
+   {
+    "titre": "Add the morels",
+    "detail": "Add the drained, rinsed morels and cook for 2 minutes with the shallot."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the white wine, scrape up the juices and reduce by half. CHEF'S TIP: with a Jura vin jaune, this becomes THE Sunday chicken of the Jura."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the chicken, add the strained soaking water, cover and simmer over low heat until the meat is falling off the bone."
+   },
+   {
+    "titre": "Add the cream",
+    "detail": "Remove the chicken, add the cream to the casserole and reduce the sauce until it coats a spoon. IMPORTANT: morels must be thoroughly cooked, never raw."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat the chicken with the morel sauce and serve piping hot with rice pilaf, fresh pasta or a gratin."
+   }
+  ]
+ },
+ "feuilletessaucisse": {
+  "nom": "Sausage Rolls",
+  "description": "Mini sausage rolls — cocktail sausages wrapped in puff pastry with a touch of mustard, baked until golden. The apéro classic everyone fights over.",
+  "etapes": [
+   {
+    "titre": "Preheat",
+    "detail": "Preheat the oven to 200°C (fan) with a baking-paper-lined tray."
+   },
+   {
+    "titre": "Cut the pastry",
+    "detail": "Roll out the puff pastry and cut it into strips the width of the sausages (about 8 × 3 cm)."
+   },
+   {
+    "titre": "Add mustard",
+    "detail": "Spread a thin layer of mustard on each strip. CHEF'S TIP: swap in ketchup on half of them to please the kids."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Place a cocktail sausage on each strip and roll it up, sealing the pastry well. Put the seam underneath."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush with egg yolk and sprinkle with sesame seeds."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake until the rolls are puffed and golden. Serve warm — that's when they're irresistible."
+   }
+  ]
+ },
+ "glacespeculoos": {
+  "nom": "Speculoos Ice Cream",
+  "description": "Speculoos ice cream — silky custard ice cream with Belgian spiced biscuits and crunchy shards. That caramelised-cinnamon flavour everyone melts for.",
+  "etapes": [
+   {
+    "titre": "Heat the milk",
+    "detail": "Heat the milk and cream in a saucepan until steaming (not boiling)."
+   },
+   {
+    "titre": "Whisk the yolks",
+    "detail": "Whisk the egg yolks with the sugar until pale and ribbon-like."
+   },
+   {
+    "titre": "Cook to a custard",
+    "detail": "Pour the hot milk over the yolks while whisking, return to low heat and cook, stirring, to 83°C: the custard coats the spoon. IMPORTANT: never let it boil or the eggs will curdle."
+   },
+   {
+    "titre": "Flavour with speculoos",
+    "detail": "Off the heat, stir in 2/3 of the speculoos ground to a fine powder — they melt into the hot custard."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cover with film touching the surface and refrigerate at least 4 h (or overnight): a well-chilled base churns smoother."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn in an ice-cream maker, folding in the remaining crushed speculoos shards at the end. No machine? Freeze, whisking every 30 min for 3 h."
+   }
+  ]
+ },
+ "merveilleuxchoco": {
+  "nom": "Chocolate Merveilleux",
+  "description": "The merveilleux — two crisp meringue shells sandwiched with chocolate whipped cream and coated in chocolate shavings. The Franco-Belgian pastry that truly lives up to its name.",
+  "etapes": [
+   {
+    "titre": "Whip the whites",
+    "detail": "Whip the egg whites to soft peaks, then tighten with the caster sugar added in 3 batches until the meringue is glossy and forms a bird's beak."
+   },
+   {
+    "titre": "Fold in icing sugar",
+    "detail": "Gently fold in the sifted icing sugar with a spatula, without deflating the meringue."
+   },
+   {
+    "titre": "Pipe the shells",
+    "detail": "Pipe 6-7 cm discs onto baking paper (2 shells per merveilleux)."
+   },
+   {
+    "titre": "Bake the meringues",
+    "detail": "Bake at 100°C until the shells are dry and lift off easily. KEY: low and slow — meringue dries more than it bakes."
+   },
+   {
+    "titre": "Chocolate whipped cream",
+    "detail": "Melt the chocolate, let it cool slightly, then fold it into firmly whipped cream."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Sandwich two shells with a generous layer of chocolate cream, then mask the whole merveilleux with a thin coat of cream."
+   },
+   {
+    "titre": "Coat with shavings",
+    "detail": "Roll each merveilleux in chocolate shavings to coat completely."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate at least 2 h: the meringue softens slightly at the core — that's the whole charm of the merveilleux."
+   }
+  ]
+ },
+ "buffalowings": {
+  "nom": "Buffalo Wings",
+  "description": "Buffalo wings — ultra-crispy oven-baked chicken wings coated in the legendary Buffalo butter-hot-sauce glaze. Devour them with a cool blue cheese dip, just like over there.",
+  "etapes": [
+   {
+    "titre": "Dry the wings",
+    "detail": "Pat the chicken wings thoroughly dry with paper towels. KEY: dry skin = crispy wings."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Toss the wings with the flour, smoked paprika, salt and pepper — a thin coating that crisps up in the oven."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Arrange on a rack over a tray and bake at 220°C, turning halfway, until the skin is golden and crispy."
+   },
+   {
+    "titre": "Make the Buffalo sauce",
+    "detail": "Melt the butter over low heat and whisk in the hot sauce and honey until glossy and smooth."
+   },
+   {
+    "titre": "Toss in sauce",
+    "detail": "Straight out of the oven, tip the wings into a large bowl, add the Buffalo sauce and toss to coat every wing."
+   },
+   {
+    "titre": "Serve American-style",
+    "detail": "Serve immediately with celery sticks and a blue cheese or yogurt dip. CHEF'S TIP: tune the heat by adjusting the butter-to-hot-sauce ratio."
    }
   ]
  },

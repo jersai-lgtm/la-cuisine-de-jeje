@@ -3,6 +3,193 @@
 // 👉 Pour AJOUTER une pâte à tartiner : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
+  anchoiade: {
+    nom: "Anchoïade",
+    cat: "tartinables", pays: "france",
+    dateAjout: "2026-07-07T19:00:00",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "L'anchoïade provençale — anchois, ail et huile d'olive montés en purée puissante et parfumée. À tartiner sur du pain grillé ou en dip avec des légumes croquants.",
+    tableauAnchoiade: [
+      { nb: 1, anchois: "100 g", ail: "8 g", huileolive: "60 ml", capres: "20 g", vinaigreVin: "10 ml" },
+      { nb: 2, anchois: "200 g", ail: "16 g", huileolive: "120 ml", capres: "40 g", vinaigreVin: "20 ml" },
+      { nb: 3, anchois: "300 g", ail: "24 g", huileolive: "180 ml", capres: "60 g", vinaigreVin: "30 ml" },
+      { nb: 4, anchois: "400 g", ail: "32 g", huileolive: "240 ml", capres: "80 g", vinaigreVin: "40 ml" },
+      { nb: 5, anchois: "500 g", ail: "40 g", huileolive: "300 ml", capres: "100 g", vinaigreVin: "50 ml" },
+      { nb: 6, anchois: "600 g", ail: "48 g", huileolive: "360 ml", capres: "120 g", vinaigreVin: "60 ml" },
+      { nb: 7, anchois: "700 g", ail: "56 g", huileolive: "420 ml", capres: "140 g", vinaigreVin: "70 ml" },
+      { nb: 8, anchois: "800 g", ail: "64 g", huileolive: "480 ml", capres: "160 g", vinaigreVin: "80 ml" },
+      { nb: 9, anchois: "900 g", ail: "72 g", huileolive: "540 ml", capres: "180 g", vinaigreVin: "90 ml" },
+      { nb: 10, anchois: "1000 g", ail: "80 g", huileolive: "600 ml", capres: "200 g", vinaigreVin: "100 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Préparer les anchois", detail: "Égoutter les filets d'anchois à l'huile. ASTUCE CHEF : pour une anchoïade plus douce, les rincer rapidement sous l'eau et les éponger.", badge: null },
+      { icone: "🧄", titre: "Dégermer l'ail", detail: "Éplucher l'ail et retirer le germe central (c'est lui qui rend l'ail indigeste et trop piquant).", badge: null },
+      { icone: "🥣", titre: "Piler ou mixer", detail: "Écraser anchois, ail et câpres au pilon (version rustique) ou au mixeur (version lisse).", badge: "⏱ 3 min" },
+      { icone: "🫒", titre: "Monter à l'huile", detail: "Verser l'huile d'olive en filet en mélangeant, comme pour une mayonnaise, jusqu'à obtenir une pâte souple et brillante.", badge: "⏱ 3 min" },
+      { icone: "🍷", titre: "Relever", detail: "Ajouter le trait de vinaigre de vin et poivrer généreusement. Pas de sel — les anchois s'en chargent !", badge: null },
+      { icone: "🥖", titre: "Servir", detail: "Servir en pot avec pain de campagne grillé, ou en anchoïade chaude avec des légumes croquants (céleri, chou-fleur, radis).", badge: null }
+    ]
+  },
+  confitoignons: {
+    nom: "Confit d'oignons",
+    cat: "tartinables", pays: "france",
+    dateAjout: "2026-07-07T19:00:00",
+    base: 1,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🧅",
+    description: "Le confit d'oignons — oignons rouges longuement fondus avec sucre et vinaigre balsamique jusqu'à la texture de confiture. L'allié du foie gras, des fromages et des burgers.",
+    tableauConfitOignons: [
+      { nb: 1, oignonrouge: "500 g", sucre: "60 g", vinaigreBalsamique: "40 ml", beurre: "20 g", thym: "2 g" },
+      { nb: 2, oignonrouge: "1000 g", sucre: "120 g", vinaigreBalsamique: "80 ml", beurre: "40 g", thym: "4 g" },
+      { nb: 3, oignonrouge: "1500 g", sucre: "180 g", vinaigreBalsamique: "120 ml", beurre: "60 g", thym: "6 g" },
+      { nb: 4, oignonrouge: "2000 g", sucre: "240 g", vinaigreBalsamique: "160 ml", beurre: "80 g", thym: "8 g" },
+      { nb: 5, oignonrouge: "2500 g", sucre: "300 g", vinaigreBalsamique: "200 ml", beurre: "100 g", thym: "10 g" },
+      { nb: 6, oignonrouge: "3000 g", sucre: "360 g", vinaigreBalsamique: "240 ml", beurre: "120 g", thym: "12 g" },
+      { nb: 7, oignonrouge: "3500 g", sucre: "420 g", vinaigreBalsamique: "280 ml", beurre: "140 g", thym: "14 g" },
+      { nb: 8, oignonrouge: "4000 g", sucre: "480 g", vinaigreBalsamique: "320 ml", beurre: "160 g", thym: "16 g" },
+      { nb: 9, oignonrouge: "4500 g", sucre: "540 g", vinaigreBalsamique: "360 ml", beurre: "180 g", thym: "18 g" },
+      { nb: 10, oignonrouge: "5000 g", sucre: "600 g", vinaigreBalsamique: "400 ml", beurre: "200 g", thym: "20 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Émincer", detail: "Éplucher les oignons rouges et les émincer en fines lamelles régulières. CLÉ : plus c'est fin, plus ça fond.", badge: "⏱ 10 min" },
+      { icone: "🧈", titre: "Faire fondre", detail: "Faire revenir les oignons dans le beurre à feu doux avec le thym, sans coloration, en remuant régulièrement.", badge: "⏱ 15 min" },
+      { icone: "🍬", titre: "Sucrer", detail: "Ajouter le sucre et laisser caraméliser doucement en mélangeant.", badge: "⏱ 5 min" },
+      { icone: "🍷", titre: "Déglacer", detail: "Verser le vinaigre balsamique, bien gratter les sucs et mélanger.", badge: null },
+      { icone: "⏲️", titre: "Confire", detail: "Laisser compoter à feu très doux jusqu'à une texture de confiture brillante, presque sans liquide. IMPORTANT : remuer souvent en fin de cuisson pour ne pas accrocher.", badge: "⏱ 20 min" },
+      { icone: "🫙", titre: "Mettre en pot", detail: "Saler, poivrer, verser en pot. Se garde 2 semaines au frais — parfait avec foie gras, fromages ou dans un burger.", badge: null }
+    ]
+  },
+  caviartomates: {
+    nom: "Caviar de tomates séchées",
+    cat: "tartinables", pays: "france",
+    dateAjout: "2026-07-07T19:00:00",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "Le caviar de tomates séchées — tomates confites, parmesan, câpres et basilic mixés en tartinade intense aux accents du Sud. Irrésistible à l'apéro sur des toasts.",
+    tableauCaviarTomates: [
+      { nb: 1, tomatesechees: "200 g", parmesan: "40 g", capres: "20 g", ail: "4 g", huileolive: "50 ml", basilic: "8 g" },
+      { nb: 2, tomatesechees: "400 g", parmesan: "80 g", capres: "40 g", ail: "8 g", huileolive: "100 ml", basilic: "16 g" },
+      { nb: 3, tomatesechees: "600 g", parmesan: "120 g", capres: "60 g", ail: "12 g", huileolive: "150 ml", basilic: "24 g" },
+      { nb: 4, tomatesechees: "800 g", parmesan: "160 g", capres: "80 g", ail: "16 g", huileolive: "200 ml", basilic: "32 g" },
+      { nb: 5, tomatesechees: "1000 g", parmesan: "200 g", capres: "100 g", ail: "20 g", huileolive: "250 ml", basilic: "40 g" },
+      { nb: 6, tomatesechees: "1200 g", parmesan: "240 g", capres: "120 g", ail: "24 g", huileolive: "300 ml", basilic: "48 g" },
+      { nb: 7, tomatesechees: "1400 g", parmesan: "280 g", capres: "140 g", ail: "28 g", huileolive: "350 ml", basilic: "56 g" },
+      { nb: 8, tomatesechees: "1600 g", parmesan: "320 g", capres: "160 g", ail: "32 g", huileolive: "400 ml", basilic: "64 g" },
+      { nb: 9, tomatesechees: "1800 g", parmesan: "360 g", capres: "180 g", ail: "36 g", huileolive: "450 ml", basilic: "72 g" },
+      { nb: 10, tomatesechees: "2000 g", parmesan: "400 g", capres: "200 g", ail: "40 g", huileolive: "500 ml", basilic: "80 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Égoutter les tomates", detail: "Égoutter les tomates séchées à l'huile en réservant un peu de leur huile parfumée.", badge: null },
+      { icone: "🧄", titre: "Préparer les aromates", detail: "Dégermer l'ail, effeuiller le basilic, égoutter les câpres.", badge: null },
+      { icone: "🌀", titre: "Mixer grossièrement", detail: "Mixer tomates, ail, câpres et parmesan par impulsions. CLÉ : garder une texture légèrement granuleuse « caviar », pas une purée lisse.", badge: "⏱ 2 min" },
+      { icone: "🫒", titre: "Détendre à l'huile", detail: "Incorporer l'huile d'olive (et un peu d'huile des tomates) jusqu'à une tartinade souple.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Ajouter le basilic ciselé, poivrer. Goûter avant de saler — parmesan et câpres sont déjà bien salés.", badge: null },
+      { icone: "🥖", titre: "Servir", detail: "Sur des toasts grillés, dans des pâtes chaudes ou avec une burrata. Se garde 5 jours au frais sous un filet d'huile.", badge: null }
+    ]
+  },
+  rillettessardines: {
+    nom: "Rillettes de sardines",
+    cat: "tartinables", pays: "france",
+    dateAjout: "2026-07-07T19:00:00",
+    base: 1,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Rillettes de sardines express — sardines à l'huile écrasées avec fromage frais, échalote et citron. La tartinade marine prête en 10 minutes pour l'apéro.",
+    tableauRillettesSardines: [
+      { nb: 1, sardine: "200 g", fromagefrais: "120 g", echalote: "30 g", citron: "20 g", ciboulette: "5 g", moutarde: "10 g" },
+      { nb: 2, sardine: "400 g", fromagefrais: "240 g", echalote: "60 g", citron: "40 g", ciboulette: "10 g", moutarde: "20 g" },
+      { nb: 3, sardine: "600 g", fromagefrais: "360 g", echalote: "90 g", citron: "60 g", ciboulette: "15 g", moutarde: "30 g" },
+      { nb: 4, sardine: "800 g", fromagefrais: "480 g", echalote: "120 g", citron: "80 g", ciboulette: "20 g", moutarde: "40 g" },
+      { nb: 5, sardine: "1000 g", fromagefrais: "600 g", echalote: "150 g", citron: "100 g", ciboulette: "25 g", moutarde: "50 g" },
+      { nb: 6, sardine: "1200 g", fromagefrais: "720 g", echalote: "180 g", citron: "120 g", ciboulette: "30 g", moutarde: "60 g" },
+      { nb: 7, sardine: "1400 g", fromagefrais: "840 g", echalote: "210 g", citron: "140 g", ciboulette: "35 g", moutarde: "70 g" },
+      { nb: 8, sardine: "1600 g", fromagefrais: "960 g", echalote: "240 g", citron: "160 g", ciboulette: "40 g", moutarde: "80 g" },
+      { nb: 9, sardine: "1800 g", fromagefrais: "1080 g", echalote: "270 g", citron: "180 g", ciboulette: "45 g", moutarde: "90 g" },
+      { nb: 10, sardine: "2000 g", fromagefrais: "1200 g", echalote: "300 g", citron: "200 g", ciboulette: "50 g", moutarde: "100 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Égoutter les sardines", detail: "Égoutter les sardines à l'huile et retirer l'arête centrale si vous préférez (elle s'écrase très bien aussi, c'est plein de calcium !).", badge: null },
+      { icone: "🍴", titre: "Écraser", detail: "Écraser les sardines à la fourchette dans un saladier — texture rustique, pas besoin de mixeur.", badge: null },
+      { icone: "🧀", titre: "Lier", detail: "Incorporer le fromage frais et la moutarde, bien mélanger.", badge: null },
+      { icone: "🧅", titre: "Parfumer", detail: "Ajouter l'échalote finement ciselée, le jus de citron et la ciboulette.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Poivrer généreusement, saler légèrement. ASTUCE CHEF : un trait de piment d'Espelette réveille le tout.", badge: null },
+      { icone: "❄️", titre: "Raffermir", detail: "Réserver 30 min au frais avant de servir sur pain grillé ou blinis — les saveurs se marient et la texture se raffermit.", badge: "⏱ 30 min" }
+    ]
+  },
+  tarama: {
+    nom: "Tarama maison",
+    cat: "tartinables", pays: "grece",
+    dateAjout: "2026-07-07T19:00:00",
+    base: 1,
+    temps: "15 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐟",
+    description: "Le tarama grec maison — œufs de cabillaud fumés montés à l'huile avec du pain trempé au lait et du citron. Rose pâle, mousseux, incomparablement meilleur que celui du commerce.",
+    tableauTarama: [
+      { nb: 1, oeufscabillaud: "100 g", painmie: "60 g", lait: "60 ml", huileolive: "100 ml", citron: "30 g" },
+      { nb: 2, oeufscabillaud: "200 g", painmie: "120 g", lait: "120 ml", huileolive: "200 ml", citron: "60 g" },
+      { nb: 3, oeufscabillaud: "300 g", painmie: "180 g", lait: "180 ml", huileolive: "300 ml", citron: "90 g" },
+      { nb: 4, oeufscabillaud: "400 g", painmie: "240 g", lait: "240 ml", huileolive: "400 ml", citron: "120 g" },
+      { nb: 5, oeufscabillaud: "500 g", painmie: "300 g", lait: "300 ml", huileolive: "500 ml", citron: "150 g" },
+      { nb: 6, oeufscabillaud: "600 g", painmie: "360 g", lait: "360 ml", huileolive: "600 ml", citron: "180 g" },
+      { nb: 7, oeufscabillaud: "700 g", painmie: "420 g", lait: "420 ml", huileolive: "700 ml", citron: "210 g" },
+      { nb: 8, oeufscabillaud: "800 g", painmie: "480 g", lait: "480 ml", huileolive: "800 ml", citron: "240 g" },
+      { nb: 9, oeufscabillaud: "900 g", painmie: "540 g", lait: "540 ml", huileolive: "900 ml", citron: "270 g" },
+      { nb: 10, oeufscabillaud: "1000 g", painmie: "600 g", lait: "600 ml", huileolive: "1000 ml", citron: "300 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Tremper le pain", detail: "Retirer la croûte du pain de mie et faire tremper la mie dans le lait.", badge: "⏱ 5 min" },
+      { icone: "🐟", titre: "Préparer les œufs", detail: "Retirer la fine membrane des œufs de cabillaud fumés en grattant à la cuillère pour récupérer les œufs.", badge: null },
+      { icone: "🥣", titre: "Mixer la base", detail: "Mixer les œufs de cabillaud avec le pain essoré jusqu'à obtenir une pâte homogène.", badge: "⏱ 1 min" },
+      { icone: "🫒", titre: "Monter à l'huile", detail: "Moteur en marche, verser l'huile en mince filet comme pour une mayonnaise : le tarama monte, pâlit et devient mousseux. CLÉ : l'huile en filet LENT, sinon ça retombe.", badge: "⏱ 4 min" },
+      { icone: "🍋", titre: "Détendre au citron", detail: "Incorporer le jus de citron petit à petit en goûtant. Le vrai tarama est rose PÂLE — pas rose fluo comme en supermarché !", badge: null },
+      { icone: "❄️", titre: "Reposer au frais", detail: "Réserver 1 h au réfrigérateur : il se raffermit et les saveurs s'équilibrent. Servir avec pain grillé ou pita.", badge: "⏱ 1 h" }
+    ]
+  },
+  ktipiti: {
+    nom: "Ktipiti",
+    cat: "tartinables", pays: "grece",
+    dateAjout: "2026-07-07T19:00:00",
+    base: 1,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🫑",
+    description: "Le ktipiti grec — feta fouettée au poivron rouge rôti, yaourt grec et pointe de paprika. Une tartinade crémeuse, fraîche et légèrement fumée, star des mezze.",
+    tableauKtipiti: [
+      { nb: 1, feta: "200 g", poivron: "150 g", yaourtgrec: "80 g", huileolive: "20 ml", ail: "3 g", paprika: "2 g" },
+      { nb: 2, feta: "400 g", poivron: "300 g", yaourtgrec: "160 g", huileolive: "40 ml", ail: "6 g", paprika: "4 g" },
+      { nb: 3, feta: "600 g", poivron: "450 g", yaourtgrec: "240 g", huileolive: "60 ml", ail: "9 g", paprika: "6 g" },
+      { nb: 4, feta: "800 g", poivron: "600 g", yaourtgrec: "320 g", huileolive: "80 ml", ail: "12 g", paprika: "8 g" },
+      { nb: 5, feta: "1000 g", poivron: "750 g", yaourtgrec: "400 g", huileolive: "100 ml", ail: "15 g", paprika: "10 g" },
+      { nb: 6, feta: "1200 g", poivron: "900 g", yaourtgrec: "480 g", huileolive: "120 ml", ail: "18 g", paprika: "12 g" },
+      { nb: 7, feta: "1400 g", poivron: "1050 g", yaourtgrec: "560 g", huileolive: "140 ml", ail: "21 g", paprika: "14 g" },
+      { nb: 8, feta: "1600 g", poivron: "1200 g", yaourtgrec: "640 g", huileolive: "160 ml", ail: "24 g", paprika: "16 g" },
+      { nb: 9, feta: "1800 g", poivron: "1350 g", yaourtgrec: "720 g", huileolive: "180 ml", ail: "27 g", paprika: "18 g" },
+      { nb: 10, feta: "2000 g", poivron: "1500 g", yaourtgrec: "800 g", huileolive: "200 ml", ail: "30 g", paprika: "20 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫑", titre: "Rôtir le poivron", detail: "Rôtir le poivron entier au four à 220°C (ou sous le gril) jusqu'à ce que la peau noircisse de partout.", badge: "⏱ 20 min" },
+      { icone: "🫙", titre: "Faire suer", detail: "Enfermer le poivron rôti 10 min dans un bol filmé (ou un sac) : la vapeur décolle la peau, qui s'enlève alors très facilement.", badge: "⏱ 10 min" },
+      { icone: "🔪", titre: "Peler et épépiner", detail: "Peler le poivron, retirer les graines et le hacher grossièrement.", badge: null },
+      { icone: "🧀", titre: "Écraser la feta", detail: "Écraser la feta à la fourchette avec le yaourt grec — texture crémeuse avec quelques morceaux.", badge: null },
+      { icone: "🌀", titre: "Assembler", detail: "Mélanger feta, poivron, ail dégermé pressé, paprika et huile d'olive. ASTUCE CHEF : une pincée de piment pour la version « tyrokafteri » qui pique.", badge: null },
+      { icone: "🥙", titre: "Servir frais", detail: "Réserver 30 min au frais et servir arrosé d'un filet d'huile d'olive, avec pita grillée ou crudités.", badge: "⏱ 30 min" }
+    ]
+  },
+
   patetartiner: {
     nom: "Pâte à Tartiner façon Nutella Maison",
     cat: "tartinables",

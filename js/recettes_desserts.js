@@ -4,6 +4,45 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  merveilleuxchoco: {
+    nom: "Merveilleux au chocolat",
+    cat: "desserts", pays: "belgique",
+    dateAjout: "2026-07-07T19:00:00",
+    base: 6,
+    temps: "40 min + 2 h repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍫",
+    description: "Le merveilleux — deux coques de meringue croquantes soudées de chantilly au chocolat, enrobées de copeaux. La pâtisserie franco-belge qui porte parfaitement son nom.",
+    tableauMerveilleux: [
+      { nb: 1, blancoeuf: "35 g", sucre: "35 g", sucreglace: "12 g", creme: "50 ml", chocolatnoir: "30 g" },
+      { nb: 2, blancoeuf: "70 g", sucre: "70 g", sucreglace: "24 g", creme: "100 ml", chocolatnoir: "60 g" },
+      { nb: 3, blancoeuf: "105 g", sucre: "105 g", sucreglace: "36 g", creme: "150 ml", chocolatnoir: "90 g" },
+      { nb: 4, blancoeuf: "140 g", sucre: "140 g", sucreglace: "48 g", creme: "200 ml", chocolatnoir: "120 g" },
+      { nb: 5, blancoeuf: "175 g", sucre: "175 g", sucreglace: "60 g", creme: "250 ml", chocolatnoir: "150 g" },
+      { nb: 6, blancoeuf: "210 g", sucre: "210 g", sucreglace: "72 g", creme: "300 ml", chocolatnoir: "180 g" },
+      { nb: 7, blancoeuf: "245 g", sucre: "245 g", sucreglace: "84 g", creme: "350 ml", chocolatnoir: "210 g" },
+      { nb: 8, blancoeuf: "280 g", sucre: "280 g", sucreglace: "96 g", creme: "400 ml", chocolatnoir: "240 g" },
+      { nb: 9, blancoeuf: "315 g", sucre: "315 g", sucreglace: "108 g", creme: "450 ml", chocolatnoir: "270 g" },
+      { nb: 10, blancoeuf: "350 g", sucre: "350 g", sucreglace: "120 g", creme: "500 ml", chocolatnoir: "300 g" },
+      { nb: 11, blancoeuf: "385 g", sucre: "385 g", sucreglace: "132 g", creme: "550 ml", chocolatnoir: "330 g" },
+      { nb: 12, blancoeuf: "420 g", sucre: "420 g", sucreglace: "144 g", creme: "600 ml", chocolatnoir: "360 g" },
+      { nb: 13, blancoeuf: "455 g", sucre: "455 g", sucreglace: "156 g", creme: "650 ml", chocolatnoir: "390 g" },
+      { nb: 14, blancoeuf: "490 g", sucre: "490 g", sucreglace: "168 g", creme: "700 ml", chocolatnoir: "420 g" },
+      { nb: 15, blancoeuf: "525 g", sucre: "525 g", sucreglace: "180 g", creme: "750 ml", chocolatnoir: "450 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Monter les blancs", detail: "Monter les blancs en neige, puis serrer avec le sucre en poudre versé en 3 fois jusqu'à une meringue brillante qui fait le bec d'oiseau.", badge: "⏱ 8 min" },
+      { icone: "🍬", titre: "Serrer à la glace", detail: "Incorporer délicatement le sucre glace tamisé à la maryse, sans faire retomber la meringue.", badge: null },
+      { icone: "⭕", titre: "Dresser les coques", detail: "Dresser des disques de 6-7 cm à la poche sur du papier cuisson (2 coques par merveilleux).", badge: null },
+      { icone: "♨️", titre: "Cuire les meringues", detail: "Cuire à 100°C jusqu'à ce que les coques soient sèches et se décollent facilement. CLÉ : cuisson douce et longue, la meringue sèche plus qu'elle ne cuit.", badge: "⏱ 1 h 30" },
+      { icone: "🍫", titre: "Chantilly au chocolat", detail: "Faire fondre le chocolat, le laisser tiédir, puis l'incorporer à la crème montée en chantilly bien ferme.", badge: "⏱ 10 min" },
+      { icone: "🥪", titre: "Assembler", detail: "Souder deux coques avec une généreuse couche de chantilly chocolat, puis masquer entièrement le merveilleux d'une fine couche de chantilly.", badge: null },
+      { icone: "🍥", titre: "Enrober de copeaux", detail: "Rouler chaque merveilleux dans les copeaux de chocolat pour l'enrober complètement.", badge: null },
+      { icone: "❄️", titre: "Reposer au frais", detail: "Réserver au moins 2 h au réfrigérateur : la meringue s'attendrit légèrement au cœur, c'est tout le charme du merveilleux.", badge: "⏱ 2 h" }
+    ]
+  },
+
   saladefruitsexotiques: {
     nom: "Salade de fruits exotiques", cat: "desserts", pays: "monde", dateAjout: "2026-06-17T14:00:00",
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥭",

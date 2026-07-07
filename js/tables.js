@@ -689,6 +689,7 @@ function getUniteRecette(nom, n) {
     "glacevanille":         ["boule", "boules"],
     "glacechocolat":        ["boule", "boules"],
     "glacepistache":        ["boule", "boules"],
+    "glacespeculoos":       ["boule", "boules"],
     "glacecafe":            ["boule", "boules"],
     "glacecaramel":         ["boule", "boules"],
     "glacestracciatella":   ["boule", "boules"],

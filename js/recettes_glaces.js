@@ -3,6 +3,43 @@
 // 👉 Pour AJOUTER une glace : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
+  glacespeculoos: {
+    nom: "Glace Spéculoos",
+    cat: "glaces", pays: "belgique",
+    dateAjout: "2026-07-07T19:00:00",
+    base: 1,
+    temps: "30 min + turbinage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍪",
+    description: "La glace spéculoos — crème glacée onctueuse aux biscuits épicés belges, avec des éclats croquants. Le goût caramélisé-cannelle qui fait fondre tout le monde.",
+    tableauGlaceSpeculoos: [
+      { nb: 1, lait: "19 ml", creme: "15 ml", speculoos: "12 g", jaunedoeuf: "1 g", sucre: "6 g" },
+      { nb: 2, lait: "38 ml", creme: "30 ml", speculoos: "24 g", jaunedoeuf: "2 g", sucre: "12 g" },
+      { nb: 3, lait: "57 ml", creme: "45 ml", speculoos: "36 g", jaunedoeuf: "3 g", sucre: "18 g" },
+      { nb: 4, lait: "76 ml", creme: "60 ml", speculoos: "48 g", jaunedoeuf: "4 g", sucre: "24 g" },
+      { nb: 5, lait: "95 ml", creme: "75 ml", speculoos: "60 g", jaunedoeuf: "5 g", sucre: "30 g" },
+      { nb: 6, lait: "114 ml", creme: "90 ml", speculoos: "72 g", jaunedoeuf: "6 g", sucre: "36 g" },
+      { nb: 7, lait: "133 ml", creme: "105 ml", speculoos: "84 g", jaunedoeuf: "7 g", sucre: "42 g" },
+      { nb: 8, lait: "152 ml", creme: "120 ml", speculoos: "96 g", jaunedoeuf: "8 g", sucre: "48 g" },
+      { nb: 9, lait: "171 ml", creme: "135 ml", speculoos: "108 g", jaunedoeuf: "9 g", sucre: "54 g" },
+      { nb: 10, lait: "190 ml", creme: "150 ml", speculoos: "120 g", jaunedoeuf: "10 g", sucre: "60 g" },
+      { nb: 11, lait: "209 ml", creme: "165 ml", speculoos: "132 g", jaunedoeuf: "11 g", sucre: "66 g" },
+      { nb: 12, lait: "228 ml", creme: "180 ml", speculoos: "144 g", jaunedoeuf: "12 g", sucre: "72 g" },
+      { nb: 13, lait: "247 ml", creme: "195 ml", speculoos: "156 g", jaunedoeuf: "13 g", sucre: "78 g" },
+      { nb: 14, lait: "266 ml", creme: "210 ml", speculoos: "168 g", jaunedoeuf: "14 g", sucre: "84 g" },
+      { nb: 15, lait: "285 ml", creme: "225 ml", speculoos: "180 g", jaunedoeuf: "15 g", sucre: "90 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Chauffer le lait", detail: "Chauffer le lait et la crème dans une casserole jusqu'au frémissement (sans bouillir).", badge: "⏱ 5 min" },
+      { icone: "🥚", titre: "Blanchir les jaunes", detail: "Fouetter les jaunes d'œufs avec le sucre jusqu'à ce que le mélange blanchisse et fasse le ruban.", badge: "⏱ 3 min" },
+      { icone: "🌡️", titre: "Cuire à la nappe", detail: "Verser le lait chaud sur les jaunes en fouettant, remettre à feu doux et cuire en remuant jusqu'à 83°C : la crème nappe la cuillère. IMPORTANT : ne jamais faire bouillir, sinon les œufs coagulent.", badge: "⏱ 8 min" },
+      { icone: "🍪", titre: "Parfumer au spéculoos", detail: "Hors du feu, incorporer les 2/3 des spéculoos réduits en poudre fine et bien mélanger — ils fondent dans la crème chaude.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Filmer au contact et réfrigérer au moins 4 h (ou une nuit) : une base bien froide donne une glace plus onctueuse.", badge: "⏱ 4 h" },
+      { icone: "🍨", titre: "Turbiner", detail: "Turbiner en sorbetière, puis incorporer le reste des spéculoos concassés en éclats à la fin. Sans sorbetière : congeler en fouettant toutes les 30 min pendant 3 h.", badge: "⏱ 30 min" }
+    ]
+  },
+
 
   glacevanille: {
     nom: "Glace Vanille",

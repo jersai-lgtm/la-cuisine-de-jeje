@@ -4,6 +4,46 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  pouletmorilles: {
+    nom: "Poulet aux morilles",
+    cat: "plats", pays: "france",
+    dateAjout: "2026-07-07T19:00:00",
+    base: 6,
+    temps: "50 min + 30 min trempage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍄",
+    liees: ["saucemorilles"],
+    description: "Le poulet aux morilles — cuisses dorées puis mijotées dans une sauce crémeuse aux morilles et au vin blanc, façon Jura. Le plat des grandes occasions, à servir avec un riz pilaf ou des pâtes fraîches.",
+    tableauPouletMorilles: [
+      { nb: 1, pouletcuisses: "250 g", morilleseche: "8 g", cremefraiche: "60 g", vinblanc: "30 ml", echalote: "15 g", beurre: "8 g" },
+      { nb: 2, pouletcuisses: "500 g", morilleseche: "16 g", cremefraiche: "120 g", vinblanc: "60 ml", echalote: "30 g", beurre: "16 g" },
+      { nb: 3, pouletcuisses: "750 g", morilleseche: "24 g", cremefraiche: "180 g", vinblanc: "90 ml", echalote: "45 g", beurre: "24 g" },
+      { nb: 4, pouletcuisses: "1000 g", morilleseche: "32 g", cremefraiche: "240 g", vinblanc: "120 ml", echalote: "60 g", beurre: "32 g" },
+      { nb: 5, pouletcuisses: "1250 g", morilleseche: "40 g", cremefraiche: "300 g", vinblanc: "150 ml", echalote: "75 g", beurre: "40 g" },
+      { nb: 6, pouletcuisses: "1500 g", morilleseche: "48 g", cremefraiche: "360 g", vinblanc: "180 ml", echalote: "90 g", beurre: "48 g" },
+      { nb: 7, pouletcuisses: "1750 g", morilleseche: "56 g", cremefraiche: "420 g", vinblanc: "210 ml", echalote: "105 g", beurre: "56 g" },
+      { nb: 8, pouletcuisses: "2000 g", morilleseche: "64 g", cremefraiche: "480 g", vinblanc: "240 ml", echalote: "120 g", beurre: "64 g" },
+      { nb: 9, pouletcuisses: "2250 g", morilleseche: "72 g", cremefraiche: "540 g", vinblanc: "270 ml", echalote: "135 g", beurre: "72 g" },
+      { nb: 10, pouletcuisses: "2500 g", morilleseche: "80 g", cremefraiche: "600 g", vinblanc: "300 ml", echalote: "150 g", beurre: "80 g" },
+      { nb: 11, pouletcuisses: "2750 g", morilleseche: "88 g", cremefraiche: "660 g", vinblanc: "330 ml", echalote: "165 g", beurre: "88 g" },
+      { nb: 12, pouletcuisses: "3000 g", morilleseche: "96 g", cremefraiche: "720 g", vinblanc: "360 ml", echalote: "180 g", beurre: "96 g" },
+      { nb: 13, pouletcuisses: "3250 g", morilleseche: "104 g", cremefraiche: "780 g", vinblanc: "390 ml", echalote: "195 g", beurre: "104 g" },
+      { nb: 14, pouletcuisses: "3500 g", morilleseche: "112 g", cremefraiche: "840 g", vinblanc: "420 ml", echalote: "210 g", beurre: "112 g" },
+      { nb: 15, pouletcuisses: "3750 g", morilleseche: "120 g", cremefraiche: "900 g", vinblanc: "450 ml", echalote: "225 g", beurre: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Réhydrater les morilles", detail: "Faire tremper les morilles séchées dans un bol d'eau tiède. CLÉ : filtrer et garder l'eau de trempage, elle parfumera la sauce.", badge: "⏱ 30 min" },
+      { icone: "🍗", titre: "Dorer le poulet", detail: "Saler et poivrer les cuisses de poulet, puis les dorer au beurre sur toutes les faces dans une cocotte bien chaude.", badge: "⏱ 8 min" },
+      { icone: "🧅", titre: "Suer l'échalote", detail: "Retirer le poulet, baisser le feu et faire suer l'échalote ciselée dans les sucs.", badge: "⏱ 3 min" },
+      { icone: "🍄", titre: "Ajouter les morilles", detail: "Ajouter les morilles égouttées et rincées, les faire revenir 2 minutes avec l'échalote.", badge: "⏱ 2 min" },
+      { icone: "🍷", titre: "Déglacer", detail: "Verser le vin blanc, gratter les sucs et laisser réduire de moitié. ASTUCE CHEF : avec un vin jaune du Jura, c'est LE poulet du dimanche jurassien.", badge: "⏱ 4 min" },
+      { icone: "⏲️", titre: "Mijoter", detail: "Remettre le poulet, ajouter l'eau de trempage filtrée, couvrir et laisser mijoter à feu doux jusqu'à ce que la chair se détache.", badge: "⏱ 25 min" },
+      { icone: "🥛", titre: "Crémer", detail: "Retirer le poulet, ajouter la crème dans la cocotte et faire réduire la sauce jusqu'à la nappe. IMPORTANT : les morilles doivent être bien cuites, jamais crues.", badge: "⏱ 6 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Napper le poulet de sauce aux morilles et servir bien chaud avec un riz pilaf, des pâtes fraîches ou un gratin.", badge: null }
+    ]
+  },
+
   courgettesfarcies: {
     nom: "Courgettes farcies", cat: "plats", pays: "france", dateAjout: "2026-06-17T14:00:00",
     base: 4, temps: "55 min", niveau: "⭐⭐ Moyen", emoji: "🥒",

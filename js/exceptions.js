@@ -25,6 +25,7 @@ window.EXCEPTIONS = {
     //    suivent le foyer → ils ne sont plus "à l'unité" (cap 5 retiré).
     // 🥣 Dips apéritif en bol / pot
     "houmous", "babaganoush", "guacamole", "tzatziki", "muhammara", "dipfetapoivron",
+    "anchoiade", "confitoignons", "caviartomates", "rillettessardines", "tarama", "ktipiti",
     "obatzda", "tapenade", "rillettessaumonfume", "rillettesthon"
   ],
 

@@ -4,6 +4,44 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  buffalowings: {
+    nom: "Buffalo wings",
+    cat: "aperitifs", pays: "usa",
+    dateAjout: "2026-07-07T19:00:00",
+    base: 6,
+    temps: "15 min + 45 min cuisson",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Les Buffalo wings — ailes de poulet ultra-croustillantes au four, enrobées de la mythique sauce beurre-piment de Buffalo. À dévorer avec une sauce fraîche au bleu, comme là-bas.",
+    tableauBuffaloWings: [
+      { nb: 1, pouletcuisses: "200 g", beurre: "15 g", tabasco: "10 ml", paprikafume: "2 g", miel: "5 g", farine: "10 g" },
+      { nb: 2, pouletcuisses: "400 g", beurre: "30 g", tabasco: "20 ml", paprikafume: "4 g", miel: "10 g", farine: "20 g" },
+      { nb: 3, pouletcuisses: "600 g", beurre: "45 g", tabasco: "30 ml", paprikafume: "6 g", miel: "15 g", farine: "30 g" },
+      { nb: 4, pouletcuisses: "800 g", beurre: "60 g", tabasco: "40 ml", paprikafume: "8 g", miel: "20 g", farine: "40 g" },
+      { nb: 5, pouletcuisses: "1000 g", beurre: "75 g", tabasco: "50 ml", paprikafume: "10 g", miel: "25 g", farine: "50 g" },
+      { nb: 6, pouletcuisses: "1200 g", beurre: "90 g", tabasco: "60 ml", paprikafume: "12 g", miel: "30 g", farine: "60 g" },
+      { nb: 7, pouletcuisses: "1400 g", beurre: "105 g", tabasco: "70 ml", paprikafume: "14 g", miel: "35 g", farine: "70 g" },
+      { nb: 8, pouletcuisses: "1600 g", beurre: "120 g", tabasco: "80 ml", paprikafume: "16 g", miel: "40 g", farine: "80 g" },
+      { nb: 9, pouletcuisses: "1800 g", beurre: "135 g", tabasco: "90 ml", paprikafume: "18 g", miel: "45 g", farine: "90 g" },
+      { nb: 10, pouletcuisses: "2000 g", beurre: "150 g", tabasco: "100 ml", paprikafume: "20 g", miel: "50 g", farine: "100 g" },
+      { nb: 11, pouletcuisses: "2200 g", beurre: "165 g", tabasco: "110 ml", paprikafume: "22 g", miel: "55 g", farine: "110 g" },
+      { nb: 12, pouletcuisses: "2400 g", beurre: "180 g", tabasco: "120 ml", paprikafume: "24 g", miel: "60 g", farine: "120 g" },
+      { nb: 13, pouletcuisses: "2600 g", beurre: "195 g", tabasco: "130 ml", paprikafume: "26 g", miel: "65 g", farine: "130 g" },
+      { nb: 14, pouletcuisses: "2800 g", beurre: "210 g", tabasco: "140 ml", paprikafume: "28 g", miel: "70 g", farine: "140 g" },
+      { nb: 15, pouletcuisses: "3000 g", beurre: "225 g", tabasco: "150 ml", paprikafume: "30 g", miel: "75 g", farine: "150 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Sécher les ailes", detail: "Éponger soigneusement les ailes de poulet avec du papier absorbant. CLÉ : une peau bien sèche = des wings croustillants.", badge: null },
+      { icone: "🌾", titre: "Enrober", detail: "Mélanger les ailes avec la farine, le paprika fumé, sel et poivre — une fine couche qui va croustiller au four.", badge: null },
+      { icone: "♨️", titre: "Cuire au four", detail: "Disposer sur une grille au-dessus d'une plaque et cuire à 220°C en retournant à mi-cuisson, jusqu'à peau dorée et croustillante.", badge: "⏱ 45 min" },
+      { icone: "🌶️", titre: "Préparer la sauce Buffalo", detail: "Faire fondre le beurre à feu doux et y fouetter la sauce pimentée et le miel jusqu'à une sauce brillante et homogène.", badge: "⏱ 3 min" },
+      { icone: "🥣", titre: "Enrober de sauce", detail: "À la sortie du four, verser les ailes dans un grand saladier, ajouter la sauce Buffalo et bien mélanger pour enrober chaque wing.", badge: null },
+      { icone: "🧀", titre: "Servir à l'américaine", detail: "Servir immédiatement avec des bâtonnets de céleri et une sauce au bleu ou au yaourt. ASTUCE CHEF : doser le piquant en jouant sur le ratio beurre/sauce pimentée.", badge: null }
+    ]
+  },
+
+
   houmous: {
     nom: "Houmous maison",
     cat: "aperitifs", pays: "liban",
