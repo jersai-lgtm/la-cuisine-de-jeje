@@ -357,6 +357,8 @@ const INGREDIENTS_PRIX = {
   speculoos:      { prixKg: 7.00,  calPer100g: 486,  lipSat: 8,    sucre: 38,   sel: 0.9,  fibres: 2,   prot: 6,    flv: 0 },
   tomatesechees:  { prixKg: 18.00, calPer100g: 200,  lipSat: 1,    sucre: 35,   sel: 0.5,  fibres: 12,  prot: 14,   flv: 100 },
   oeufscabillaud: { prixKg: 35.00, calPer100g: 130,  lipSat: 0.5,  sucre: 0,    sel: 5,    fibres: 0,   prot: 24,   flv: 0 },
+  truite:         { prixKg: 14.00, calPer100g: 119,  lipSat: 1.2,  sucre: 0,    sel: 0.1,  fibres: 0,   prot: 20,   flv: 0 },
+  barpoisson:     { prixKg: 22.00, calPer100g: 97,   lipSat: 0.5,  sucre: 0,    sel: 0.2,  fibres: 0,   prot: 18.5, flv: 0 },
   harissa:        { prixKg: 12.0,  calPer100g: 70,   lipSat: 0.5,  sucre: 3,    sel: 3,    fibres: 3,   prot: 2,    flv: 80 },
   cornichon:      { prixKg: 6.00,  calPer100g: 14,   lipSat: 0,    sucre: 1.5,  sel: 2,    fibres: 1.2, prot: 0.4,  flv: 100 },
   houmous:        { prixKg: 8.00,  calPer100g: 230,  lipSat: 2,    sucre: 0.5,  sel: 1.2,  fibres: 4,   prot: 7,    flv: 60 },
@@ -1199,6 +1201,7 @@ const INGREDIENTS_LABELS = {
   blancoeuf: "🥚 Blanc d'œuf", macarons: "🌈 Macarons", yaourtgrec: "🥛 Yaourt grec", panko: "🍞 Chapelure panko",
   champignon: "🍄 Champignons", morilleseche: "🍄 Morilles séchées", potimarron: "🎃 Potimarron",
   speculoos: "🍪 Biscuits spéculoos", tomatesechees: "🍅 Tomates séchées", oeufscabillaud: "🐟 Œufs de cabillaud fumés",
+  truite: "🐟 Truite", barpoisson: "🐟 Bar (loup de mer)",
   epinard: "🥬 Épinards", olivenoire: "🫒 Olives noires",
   painmie: "🍞 Pain de mie", poireau: "🥬 Poireau",
   // == v257 — Muffins & Pâtisserie ==

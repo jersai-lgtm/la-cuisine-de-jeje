@@ -34836,6 +34836,326 @@ window.RECETTES_EN = {
    }
   ]
  },
+ "pouletchasseur": {
+  "nom": "Hunter's Chicken (Chasseur)",
+  "description": "Chicken chasseur — thighs simmered with mushrooms, tomatoes, shallots and white wine. The great bistro classic that fills the whole house with its aroma.",
+  "etapes": [
+   {
+    "titre": "Brown the chicken",
+    "detail": "Season the chicken thighs and brown them in butter on all sides in a hot casserole. Set aside."
+   },
+   {
+    "titre": "Sauté the mushrooms",
+    "detail": "In the same casserole, sauté the sliced mushrooms over high heat with the chopped shallots."
+   },
+   {
+    "titre": "Deglaze with white wine",
+    "detail": "Pour in the white wine, scrape up the juices and reduce by half."
+   },
+   {
+    "titre": "Add the tomatoes",
+    "detail": "Add the crushed tomatoes and the tomato paste, mix well."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the chicken, cover and simmer over low heat until the meat falls off the bone. KEY: uncover for the last 10 minutes to thicken the sauce."
+   },
+   {
+    "titre": "Finish with tarragon",
+    "detail": "Adjust the seasoning and sprinkle with chopped tarragon — its signature touch. Serve with steamed potatoes or tagliatelle."
+   }
+  ]
+ },
+ "canardorange": {
+  "nom": "Duck à l'Orange",
+  "description": "Duck à l'orange — roasted duck breasts coated in a sweet-and-sour bigarade sauce with orange juice and zest. The French celebration classic, easier than it looks.",
+  "etapes": [
+   {
+    "titre": "Prepare the oranges",
+    "detail": "Zest one orange (avoiding the bitter pith), blanch the zest 2 min in boiling water. Juice all the oranges."
+   },
+   {
+    "titre": "Score the duck breasts",
+    "detail": "Score the skin in a crosshatch pattern without cutting into the flesh. Season with salt and pepper."
+   },
+   {
+    "titre": "Cook skin-side down",
+    "detail": "Place the breasts skin-side down in a COLD pan, then heat over medium: the fat renders slowly and the skin crisps. Pour off the fat as you go."
+   },
+   {
+    "titre": "Cook the flesh side",
+    "detail": "Turn and cook the flesh side until rosy. Rest under foil."
+   },
+   {
+    "titre": "Make the gastrique",
+    "detail": "In a saucepan, cook the sugar and vinegar to a light caramel — the 'gastrique', secret of the sweet-sour balance."
+   },
+   {
+    "titre": "Build the bigarade sauce",
+    "detail": "Pour the orange juice onto the gastrique with the chopped shallot, reduce by half, then whisk in cold butter. Add the zest."
+   },
+   {
+    "titre": "Slice and coat",
+    "detail": "Slice the duck breasts, coat with orange sauce and serve at once with melting potatoes or a fine purée."
+   }
+  ]
+ },
+ "pouletvalleeauge": {
+  "nom": "Chicken Vallée d'Auge",
+  "description": "Chicken Vallée d'Auge — a Norman braise with cider, melting apples and crème fraîche. All of Normandy in one pot.",
+  "etapes": [
+   {
+    "titre": "Brown the chicken",
+    "detail": "Brown the seasoned chicken thighs in butter in a casserole. Set aside."
+   },
+   {
+    "titre": "Sweat the shallots",
+    "detail": "Sweat the chopped shallots and sliced mushrooms in the pan juices."
+   },
+   {
+    "titre": "Deglaze with cider",
+    "detail": "Pour in the cider, scraping up the juices. CHEF'S TIP: a splash of flambéed calvados before the cider makes it the real Vallée d'Auge!"
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the chicken, cover and simmer gently."
+   },
+   {
+    "titre": "Pan-fry the apples",
+    "detail": "Meanwhile, fry the apple wedges in butter until golden and tender."
+   },
+   {
+    "titre": "Add the cream",
+    "detail": "Remove the chicken, stir the crème fraîche into the sauce and reduce until coating. Adjust seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat the chicken, surround with fried apples and serve piping hot — with rice or steamed potatoes."
+   }
+  ]
+ },
+ "pouletmarengo": {
+  "nom": "Chicken Marengo",
+  "description": "Chicken Marengo — created for Napoleon on the evening of the battle: chicken simmered with tomatoes, mushrooms, white wine and garlic. A sun-drenched classic with a history.",
+  "etapes": [
+   {
+    "titre": "Brown the chicken",
+    "detail": "Brown the chicken pieces in olive oil on all sides. Set aside."
+   },
+   {
+    "titre": "Cook the garnish",
+    "detail": "Cook the sliced onion, crushed garlic and mushrooms in the same casserole."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the white wine and scrape up the cooking juices."
+   },
+   {
+    "titre": "Add the tomatoes",
+    "detail": "Add the crushed tomatoes, season with salt and pepper."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the chicken, cover and simmer over low heat until the sauce is unctuous."
+   },
+   {
+    "titre": "Serve Marengo-style",
+    "detail": "Sprinkle with parsley and serve. CHEF'S TIP: the historic version comes with a fried egg and croutons — dare it, it's delicious!"
+   }
+  ]
+ },
+ "truiteamandes": {
+  "nom": "Trout with Almonds",
+  "description": "Trout with almonds — fish cooked in foaming butter with toasted flaked almonds, brightened with lemon juice. A simple, fast and always elegant classic.",
+  "etapes": [
+   {
+    "titre": "Prepare the trout",
+    "detail": "Rinse and pat dry the gutted trout. Season, then flour lightly, tapping off the excess."
+   },
+   {
+    "titre": "Cook in butter",
+    "detail": "Cook the trout in foaming butter over medium heat, without moving them, until the skin is golden."
+   },
+   {
+    "titre": "Toast the almonds",
+    "detail": "Keep the trout warm. In the same pan, toast the flaked almonds in the cooking butter. IMPORTANT: they brown in seconds — don't look away!"
+   },
+   {
+    "titre": "Deglaze with lemon",
+    "detail": "Off the heat, add the lemon juice to the almond butter — it foams and smells wonderful."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Spoon the lemony almond butter over the trout and sprinkle with parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once with steamed potatoes or green beans. The flesh lifts right off the bone."
+   }
+  ]
+ },
+ "barcroutesel": {
+  "nom": "Sea Bass in Salt Crust",
+  "description": "Sea bass in a salt crust — baked whole under its shell of coarse salt, which keeps the flesh incredibly moist and perfectly seasoned. Spectacular to crack open at the table, child's play to get right.",
+  "etapes": [
+   {
+    "titre": "Prepare the bass",
+    "detail": "Ask for a gutted, NOT descaled sea bass (the scales protect the flesh from the salt). Slip thyme and lemon slices into the cavity."
+   },
+   {
+    "titre": "Prepare the crust",
+    "detail": "Mix the coarse salt with the lightly beaten egg whites — wet-snow texture."
+   },
+   {
+    "titre": "Encase the fish",
+    "detail": "Spread a bed of salt on the tray, lay the bass on top, then cover it completely with the remaining salt, packing well. KEY: an airtight shell with no cracks."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 220°C. Allow about 30 min for a 1 kg bass (the crust should be hard and barely golden)."
+   },
+   {
+    "titre": "Crack the crust",
+    "detail": "At the table for the magic moment: crack the crust with the back of a spoon and lift off the salt plates along with the skin."
+   },
+   {
+    "titre": "Fillet and serve",
+    "detail": "Lift the fillets, drizzle with olive oil and lemon. Nothing else — the flesh is perfect as is, with steamed vegetables."
+   }
+  ]
+ },
+ "blanquettemer": {
+  "nom": "Seafood Blanquette",
+  "description": "Seafood blanquette — cod, salmon and prawns in a creamy white wine sauce with baby vegetables. The briny cousin of veal blanquette, lighter and just as comforting.",
+  "etapes": [
+   {
+    "titre": "Prepare the vegetables",
+    "detail": "Slice the carrots into rounds and the leek into half-moons. Cut the fish into large, even cubes."
+   },
+   {
+    "titre": "Sweat the vegetables",
+    "detail": "Sweat the carrots and leek in butter without colouring."
+   },
+   {
+    "titre": "Dust with flour",
+    "detail": "Sprinkle with flour, stir for 1 min (like a roux), then add the white wine and a glass of hot water."
+   },
+   {
+    "titre": "Cook the vegetables",
+    "detail": "Simmer covered until the carrots are tender."
+   },
+   {
+    "titre": "Poach the fish",
+    "detail": "Add the fish cubes and prawns, cook at a gentle SIMMER. IMPORTANT: never boil — the fish would dry out and fall apart."
+   },
+   {
+    "titre": "Add the cream",
+    "detail": "Gently stir in the crème fraîche, adjust salt and pepper, reheat without boiling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot over white or pilaf rice, with a squeeze of lemon to lift the briny flavours."
+   }
+  ]
+ },
+ "sauteveauolives": {
+  "nom": "Veal Sauté with Olives",
+  "description": "Veal sauté with olives — cubes of veal simmered with white wine, tomatoes and green olives, full of Provençal flavours. A Sunday dish that practically cooks itself.",
+  "etapes": [
+   {
+    "titre": "Brown the veal",
+    "detail": "Brown the veal cubes in olive oil on all sides, in batches so they don't crowd. Set aside."
+   },
+   {
+    "titre": "Melt the onion",
+    "detail": "Soften the sliced onion and garlic in the same casserole."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the white wine, scrape up the juices, reduce for 2 min."
+   },
+   {
+    "titre": "Tomatoes and bay",
+    "detail": "Add the crushed tomatoes and bay leaf, return the veal and top up with water to cover."
+   },
+   {
+    "titre": "Simmer long and slow",
+    "detail": "Cover and simmer over very low heat until the veal is meltingly tender. KEY: the meat should pull apart with a fork."
+   },
+   {
+    "titre": "Add the olives",
+    "detail": "Add the green olives 15 min before the end (no sooner, they would turn the sauce bitter)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust seasoning (careful, the olives are already salty) and serve with fresh tagliatelle, rice or creamy polenta."
+   }
+  ]
+ },
+ "rotiporclait": {
+  "nom": "Milk-Braised Pork Roast",
+  "description": "Milk-braised pork roast — cooked gently in milk with garlic and bay: the meat stays incredibly tender and the milk turns into a golden sauce with salted-caramel vibes. An underrated Franco-Italian marvel.",
+  "etapes": [
+   {
+    "titre": "Brown the roast",
+    "detail": "Brown the pork roast in butter on all sides in a casserole just big enough to hold it."
+   },
+   {
+    "titre": "Add the aromatics",
+    "detail": "Add the quartered onion, the crushed unpeeled garlic cloves and the bay leaf."
+   },
+   {
+    "titre": "Pour in the milk",
+    "detail": "Pour the milk halfway up the roast, season. The milk both cooks the meat AND becomes the sauce."
+   },
+   {
+    "titre": "Cook uncovered",
+    "detail": "Cook over low heat UNCOVERED, turning the roast from time to time. The milk reduces and forms golden curds — that's NORMAL and it's the best part!"
+   },
+   {
+    "titre": "Concentrate the sauce",
+    "detail": "By the end, the sauce should be hazelnut-coloured with caramelised 'curds'. If too thin, reduce over high heat for a few minutes."
+   },
+   {
+    "titre": "Rest and slice",
+    "detail": "Rest the roast 10 min under foil before slicing — the juices redistribute."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat with the golden milk sauce (blended if you prefer it smooth) and serve with mash or roast potatoes."
+   }
+  ]
+ },
+ "petitsalelentilles": {
+  "nom": "Petit Salé with Lentils",
+  "description": "Petit salé aux lentilles — semi-salted pork belly and smoked sausages simmered with melting Puy green lentils. The Parisian bistro soul-food dish, unbeatable in winter.",
+  "etapes": [
+   {
+    "titre": "Desalt the pork belly",
+    "detail": "Soak the semi-salted pork belly in cold water for 1 h (2 h if very salty), changing the water halfway."
+   },
+   {
+    "titre": "Cook the meat",
+    "detail": "Put the pork belly in a large pot of UNSALTED cold water with the bay and thyme. Bring to a simmer and cook covered."
+   },
+   {
+    "titre": "Prepare the garnish",
+    "detail": "Fry the lardons, sliced onion and carrot rounds in a casserole."
+   },
+   {
+    "titre": "Add the lentils",
+    "detail": "Add the UNSOAKED green lentils and cover generously with the meat's cooking broth."
+   },
+   {
+    "titre": "Simmer together",
+    "detail": "Lay the pork belly and smoked sausages on the lentils, cover and simmer gently. IMPORTANT: only salt at the very end — the meat already seasons the dish."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice the meat, arrange over the lentils with the sausages and serve piping hot with good mustard."
+   }
+  ]
+ },
  "saucemorilles": {
   "nom": "Morel Sauce",
   "description": "Morel sauce — the Jura grand classic: rehydrated morels in their strained soaking juice, shallot, white wine and cream reduced to a coating consistency. Sumptuous over roast poultry, veal fillet or fresh pasta.",
