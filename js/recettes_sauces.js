@@ -792,6 +792,44 @@ mayonnaise: {
       { icone: "🌿", titre: "Finir", detail: "Sel, poivre, persil. ASTUCE CHEF : parfaite sur une escalope ou des tagliatelles.", badge: null }
     ]
   },
+  saucemorilles: {
+    nom: "Sauce aux morilles",
+    cat: "sauces", pays: "france",
+    dateAjout: "2026-07-07T18:00:00",
+    base: 1,
+    temps: "20 min + 30 min trempage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍄",
+    description: "La sauce aux morilles — le grand jeu jurassien : morilles réhydratées dans leur jus filtré, échalote, vin blanc et crème réduits à la nappe. Somptueuse sur une volaille, un filet de veau ou des pâtes fraîches.",
+    tableauSauceMorilles: [
+      { nb: 1, morilleseche: "9 g", cremefraiche: "40 g", echalote: "9 g", beurre: "6 g", vinblanc: "10 ml" },
+      { nb: 2, morilleseche: "18 g", cremefraiche: "80 g", echalote: "18 g", beurre: "12 g", vinblanc: "20 ml" },
+      { nb: 3, morilleseche: "27 g", cremefraiche: "120 g", echalote: "27 g", beurre: "18 g", vinblanc: "30 ml" },
+      { nb: 4, morilleseche: "36 g", cremefraiche: "160 g", echalote: "36 g", beurre: "24 g", vinblanc: "40 ml" },
+      { nb: 5, morilleseche: "45 g", cremefraiche: "200 g", echalote: "45 g", beurre: "30 g", vinblanc: "50 ml" },
+      { nb: 6, morilleseche: "54 g", cremefraiche: "240 g", echalote: "54 g", beurre: "36 g", vinblanc: "60 ml" },
+      { nb: 7, morilleseche: "63 g", cremefraiche: "280 g", echalote: "63 g", beurre: "42 g", vinblanc: "70 ml" },
+      { nb: 8, morilleseche: "72 g", cremefraiche: "320 g", echalote: "72 g", beurre: "48 g", vinblanc: "80 ml" },
+      { nb: 9, morilleseche: "81 g", cremefraiche: "360 g", echalote: "81 g", beurre: "54 g", vinblanc: "90 ml" },
+      { nb: 10, morilleseche: "90 g", cremefraiche: "400 g", echalote: "90 g", beurre: "60 g", vinblanc: "100 ml" },
+      { nb: 11, morilleseche: "99 g", cremefraiche: "440 g", echalote: "99 g", beurre: "66 g", vinblanc: "110 ml" },
+      { nb: 12, morilleseche: "108 g", cremefraiche: "480 g", echalote: "108 g", beurre: "72 g", vinblanc: "120 ml" },
+      { nb: 13, morilleseche: "117 g", cremefraiche: "520 g", echalote: "117 g", beurre: "78 g", vinblanc: "130 ml" },
+      { nb: 14, morilleseche: "126 g", cremefraiche: "560 g", echalote: "126 g", beurre: "84 g", vinblanc: "140 ml" },
+      { nb: 15, morilleseche: "135 g", cremefraiche: "600 g", echalote: "135 g", beurre: "90 g", vinblanc: "150 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Réhydrater les morilles", detail: "Plonger les morilles séchées dans un bol d'eau tiède et laisser gonfler. CLÉ : garder l'eau de trempage, c'est un concentré de goût.", badge: "⏱ 30 min" },
+      { icone: "🚿", titre: "Nettoyer et filtrer", detail: "Rincer rapidement les morilles réhydratées (leurs alvéoles cachent souvent du sable) et filtrer l'eau de trempage à travers un filtre à café ou une étamine.", badge: null },
+      { icone: "🧅", titre: "Suer l'échalote", detail: "Faire fondre le beurre et y suer l'échalote ciselée à feu doux, sans coloration, jusqu'à ce qu'elle soit translucide.", badge: "⏱ 3 min" },
+      { icone: "🍄", titre: "Poêler les morilles", detail: "Ajouter les morilles égouttées (entières si petites, coupées en deux sinon) et les faire revenir avec l'échalote pour développer leurs arômes.", badge: "⏱ 4 min" },
+      { icone: "🍷", titre: "Déglacer", detail: "Verser le vin blanc, gratter les sucs et laisser réduire presque à sec. ASTUCE CHEF : un trait de vin jaune du Jura à la place du vin blanc, et c'est la grande cuisine.", badge: "⏱ 3 min" },
+      { icone: "💦", titre: "Mouiller au jus de trempage", detail: "Ajouter l'eau de trempage filtrée et laisser réduire de moitié pour concentrer les saveurs.", badge: "⏱ 5 min" },
+      { icone: "🥛", titre: "Crémer et napper", detail: "Incorporer la crème et laisser réduire à feu doux jusqu'à consistance nappante. IMPORTANT : les morilles doivent toujours être bien cuites, jamais consommées crues.", badge: "⏱ 6 min" },
+      { icone: "🧂", titre: "Rectifier et servir", detail: "Saler, poivrer, goûter. Somptueuse sur une volaille rôtie, un filet de veau, un risotto ou des pâtes fraîches.", badge: null }
+    ]
+  },
   veloute: {
     nom: "Sauce velouté",
     cat: "sauces", pays: "france",

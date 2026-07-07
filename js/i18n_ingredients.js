@@ -9,7 +9,7 @@
 window.I18N_ING = {
   "🟤 Clou de girofle": "🟤 Clove", "🦐 Crevettes": "🦐 Shrimp", "🥣 Sauce tartare": "🥣 Tartar sauce",
   "🥚 Blanc d'œuf": "🥚 Egg white", "🌈 Macarons": "🌈 Macarons", "🥛 Yaourt grec": "🥛 Greek yogurt",
-  "🍞 Chapelure panko": "🍞 Panko breadcrumbs", "🍄 Champignons": "🍄 Mushrooms", "🎃 Potimarron": "🎃 Red kuri squash",
+  "🍞 Chapelure panko": "🍞 Panko breadcrumbs", "🍄 Champignons": "🍄 Mushrooms", "🍄 Morilles séchées": "🍄 Dried morels", "🎃 Potimarron": "🎃 Red kuri squash",
   "🥬 Épinards": "🥬 Spinach", "🫒 Olives noires": "🫒 Black olives", "🍞 Pain de mie": "🍞 Sandwich bread",
   "🥬 Poireau": "🥬 Leek", "🤍 Chocolat blanc": "🤍 White chocolate", "🍫 Chocolat au lait": "🍫 Milk chocolate",
   "🍫 Pépites de chocolat": "🍫 Chocolate chips", "🪵 Cannelle": "🪵 Cinnamon", "🌱 Graines de pavot": "🌱 Poppy seeds",

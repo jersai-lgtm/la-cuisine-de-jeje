@@ -667,6 +667,7 @@ function getUniteRecette(nom, n) {
     "saucepoivre":          ["personne", "personnes"],
     "sauceburger":          ["personne", "personnes"],
     "saucechampignon":      ["personne", "personnes"],
+    "saucemorilles":        ["personne", "personnes"],
     "veloute":              ["personne", "personnes"],
     "sauceespagnole":       ["personne", "personnes"],
     "bearnaise":            ["personne", "personnes"],
@@ -820,7 +821,7 @@ function getSelecteurPersonnesHTML(nom, personnes) {
 // Dose de sauce par usage/personne (ml). Défaut condiment = 25 ml ; les sauces de
 // cuisson/nappage en demandent bien plus par personne.
 const ML_PAR_PORTION = {
-  bechamel: 120, saucetomate: 120, saucecurrycoco: 110, saucechampignon: 90,
+  bechamel: 120, saucetomate: 120, saucecurrycoco: 110, saucechampignon: 90, saucemorilles: 80,
   saucehollandaise: 50, saucepoivre: 60, sauceblanche: 60, saucearomb: 80,
   vinaigrette: 15, saucecesar: 25, chimichurri: 20, pestomaison: 30,
 };
@@ -1415,6 +1416,7 @@ function choisirRecette(nom, personnesOverride, fromLiee) {
     "saucepoivre":           "Sauce au poivre",
     "sauceburger":           "Sauce burger",
     "saucechampignon":           "Sauce aux champignons",
+    "saucemorilles":           "Sauce aux morilles",
 "oeufmayo":           "Œufs mayonnaise",
     "melonjambon":           "Melon & jambon cru",
     "feuilletechevremiel":           "Feuilletés chèvre-miel",

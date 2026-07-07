@@ -353,6 +353,7 @@ const INGREDIENTS_PRIX = {
   crabe:          { prixKg: 24.0, calPer100g: 83,   lipSat: 0.1,  sucre: 0,    sel: 0.8,  fibres: 0,   prot: 18,   flv: 0 },
   huitres:        { prixUnite: 1.00, cal: 7,         lipSat: 0,    sucre: 0.4,  sel: 0.1,  fibres: 0,   prot: 0.9,  flv: 0 },
   champignon:     { prixKg: 6.00,  calPer100g: 22,   lipSat: 0,    sucre: 1,    sel: 0,    fibres: 2,   prot: 3.1,  flv: 100 },
+  morilleseche:   { prixKg: 180.00, calPer100g: 295, lipSat: 0.5,  sucre: 4,    sel: 0,    fibres: 17,  prot: 22,   flv: 100 },
   harissa:        { prixKg: 12.0,  calPer100g: 70,   lipSat: 0.5,  sucre: 3,    sel: 3,    fibres: 3,   prot: 2,    flv: 80 },
   cornichon:      { prixKg: 6.00,  calPer100g: 14,   lipSat: 0,    sucre: 1.5,  sel: 2,    fibres: 1.2, prot: 0.4,  flv: 100 },
   houmous:        { prixKg: 8.00,  calPer100g: 230,  lipSat: 2,    sucre: 0.5,  sel: 1.2,  fibres: 4,   prot: 7,    flv: 60 },
@@ -1193,7 +1194,7 @@ if (typeof module !== "undefined") {
 const INGREDIENTS_LABELS = {
   clougirofle: "🟤 Clou de girofle", crevette: "🦐 Crevettes", saucetartare: "🥣 Sauce tartare",
   blancoeuf: "🥚 Blanc d'œuf", macarons: "🌈 Macarons", yaourtgrec: "🥛 Yaourt grec", panko: "🍞 Chapelure panko",
-  champignon: "🍄 Champignons", potimarron: "🎃 Potimarron",
+  champignon: "🍄 Champignons", morilleseche: "🍄 Morilles séchées", potimarron: "🎃 Potimarron",
   epinard: "🥬 Épinards", olivenoire: "🫒 Olives noires",
   painmie: "🍞 Pain de mie", poireau: "🥬 Poireau",
   // == v257 — Muffins & Pâtisserie ==

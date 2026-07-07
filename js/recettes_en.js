@@ -34519,6 +34519,44 @@ window.RECETTES_EN = {
    }
   ]
  },
+ "saucemorilles": {
+  "nom": "Morel Sauce",
+  "description": "Morel sauce — the Jura grand classic: rehydrated morels in their strained soaking juice, shallot, white wine and cream reduced to a coating consistency. Sumptuous over roast poultry, veal fillet or fresh pasta.",
+  "etapes": [
+   {
+    "titre": "Rehydrate the morels",
+    "detail": "Soak the dried morels in a bowl of warm water and let them swell. KEY: keep the soaking water, it's concentrated flavour."
+   },
+   {
+    "titre": "Clean and strain",
+    "detail": "Quickly rinse the rehydrated morels (their honeycombs often hide sand) and strain the soaking water through a coffee filter or muslin."
+   },
+   {
+    "titre": "Sweat the shallot",
+    "detail": "Melt the butter and gently sweat the finely chopped shallot over low heat, without colouring, until translucent."
+   },
+   {
+    "titre": "Sauté the morels",
+    "detail": "Add the drained morels (whole if small, halved otherwise) and sauté them with the shallot to develop their aromas."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the white wine, scrape up the browned bits and reduce until almost dry. CHEF'S TIP: a splash of vin jaune from the Jura instead of white wine and it becomes haute cuisine."
+   },
+   {
+    "titre": "Add the soaking juice",
+    "detail": "Add the strained soaking water and reduce by half to concentrate the flavours."
+   },
+   {
+    "titre": "Add cream and coat",
+    "detail": "Stir in the cream and reduce over low heat until it coats the back of a spoon. IMPORTANT: morels must always be well cooked, never eaten raw."
+   },
+   {
+    "titre": "Season and serve",
+    "detail": "Salt, pepper, taste. Sumptuous over roast poultry, veal fillet, risotto or fresh pasta."
+   }
+  ]
+ },
  "saucechampignon": {
   "nom": "Mushroom Sauce",
   "description": "Mushroom sauce — creamy and earthy: sautéed mushrooms, shallot and cream. For meats, poultry, pasta and cutlets.",
