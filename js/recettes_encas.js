@@ -2564,7 +2564,7 @@ Object.assign(recettes, {
     temps: "35 min",
     niveau: "⭐ Facile",
     emoji: "🌯",
-    liees: ["guacamole", "burritos", "fajitaspoulet", "quesadillas"],
+    liees: ["galettetacos", "guacamole", "burritos", "fajitaspoulet", "quesadillas"],
     description: "Le burrito frit du Tex-Mex : une galette garnie de poulet, haricots rouges, riz et fromage, roulée puis dorée jusqu'au croustillant. Croquant dehors, fondant dedans.",
     tableauChimichanga: [
       { nb: 1, tortilla: 1, poulet: "80 g", haricotsrouges: "40 g", cheddar: "25 g", riz: "40 g", tomates: "30 g", huile: "10 ml" },
