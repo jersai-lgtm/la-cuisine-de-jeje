@@ -3444,11 +3444,20 @@ if (typeof document !== "undefined") {
 
 // Quand le user appuie sur le bouton retour du téléphone
 window.addEventListener("popstate", function(e) {
-  // Popstate déclenché par notre propre history.forward() de restauration → à ignorer.
+  // Atterrir SUR une entrée garde-fou (écho de notre history.forward, ou bouton
+  // suivant) ne demande jamais d'action : ces entrées sont des jalons inertes.
+  if (e.state && e.state.backGuard) return;
+  // Popstate déclenché par notre propre restauration → à ignorer.
   if (window._ignorerProchainPopstate) {
     window._ignorerProchainPopstate = false;
+    window._popstateTraite = Date.now();
     return;
   }
+  // iOS peut émettre DEUX popstate pour un seul balayage : le doublon arrive
+  // dans la foulée du premier → on ne traite pas deux retours en <350 ms.
+  const _maintenant = Date.now();
+  if (_maintenant - (window._popstateTraite || 0) < 350) return;
+  window._popstateTraite = _maintenant;
   // 🔗 Recettes liées : si on est dans une fiche atteinte via un lien, revenir à
   // la recette parente au lieu de fermer la modale.
   const _elFiche = document.getElementById("modal-calc");
