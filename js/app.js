@@ -3310,6 +3310,14 @@ window._backGuardPush = function() {
   } catch (e) { /* PWA peut bloquer */ }
 };
 
+// iOS Safari : pendant l'animation du geste de retour (balayage depuis le bord),
+// un pushState exécuté DANS le popstate peut être ignoré → le tampon n'est pas
+// re-posé et le balayage suivant sort de l'appli. On re-pousse donc en différé,
+// après la fin du geste. Sans effet visible sur Android/desktop.
+window._backGuardPushDiffere = function() {
+  setTimeout(window._backGuardPush, 50);
+};
+
 // Le tampon d'historique est posé au PREMIER geste utilisateur (voir plus bas).
 // Chrome ignore les entrées d'historique créées sans interaction (anti-piège
 // du bouton retour) : un setTimeout au chargement était donc "sauté" et le 1er
@@ -3424,7 +3432,8 @@ if (typeof document !== "undefined") {
     } catch (err) {}
   }, true);
   // Filet de sécurité : poser le tampon dès le tout premier geste (tap/touche).
-  ["touchstart", "pointerdown", "keydown"].forEach(function (ev) {
+  // touchend inclus : sur iOS, certains gestes ne délivrent pas de click.
+  ["touchstart", "touchend", "pointerdown", "keydown"].forEach(function (ev) {
     document.addEventListener(ev, _assurerBuffer, { capture: true });
   });
 }
@@ -3437,7 +3446,7 @@ window.addEventListener("popstate", function(e) {
   if (_modalEstVisible(_elFiche) && window._ficheNavStack && window._ficheNavStack.length > 0) {
     const _parent = window._ficheNavStack.pop();
     if (typeof choisirRecette === "function") choisirRecette(_parent, null, true);
-    window._backGuardPush();
+    window._backGuardPushDiffere();
     return;
   }
   // Trouver la modal du dessus actuellement visible
@@ -3456,7 +3465,7 @@ window.addEventListener("popstate", function(e) {
   // Re-pousser un état tampon pour intercepter le PROCHAIN retour aussi
   // Sinon le user aurait besoin de 2 clics retour à chaque fois
   if (modalFermee) {
-    window._backGuardPush();
+    window._backGuardPushDiffere();
     return;
   }
 
@@ -3472,7 +3481,7 @@ window.addEventListener("popstate", function(e) {
   const _surAccueil = _secAccueil && _modalEstVisible(_secAccueil);
   if (!_surAccueil) {
     _afficherVue("accueil");
-    window._backGuardPush();   // tampon → il faudra un 2e retour pour quitter
+    window._backGuardPushDiffere();   // tampon → il faudra un 2e retour pour quitter
     return;
   }
 
