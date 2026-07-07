@@ -3310,17 +3310,11 @@ window._backGuardPush = function() {
   } catch (e) { /* PWA peut bloquer */ }
 };
 
-// iOS Safari : une entrée pushState créée HORS geste utilisateur (ex. dans le
-// popstate) est marquée « sautable » (anti-piège du bouton retour) → le balayage
-// suivant la saute et sort de la vue, voire de l'appli. Au lieu de re-CRÉER une
-// entrée, on RE-AVANCE (history.forward) sur l'entrée garde-fou qu'on vient de
-// consommer : une traversée n'est jamais sautable, et la pile ne grossit plus.
-// Le popstate déclenché par ce forward est ignoré via _ignorerProchainPopstate.
-window._ignorerProchainPopstate = false;
-window._backGuardRestaurer = function() {
-  window._ignorerProchainPopstate = true;
-  try { history.forward(); } catch (e) { window._ignorerProchainPopstate = false; }
-};
+// iOS (surtout en mode installé/standalone) : toute manipulation d'historique
+// HORS geste utilisateur est ignorée ou marquée « sautable » (pushState comme
+// history.forward). On ne restaure donc JAMAIS rien après un retour : chaque
+// ouverture (fiche, recette liée, onglet) pousse son jalon DANS le geste de
+// tap, et le retour ne fait que consommer — comme une appli native.
 
 // Le tampon d'historique est posé au PREMIER geste utilisateur (voir plus bas).
 // Chrome ignore les entrées d'historique créées sans interaction (anti-piège
@@ -3444,27 +3438,18 @@ if (typeof document !== "undefined") {
 
 // Quand le user appuie sur le bouton retour du téléphone
 window.addEventListener("popstate", function(e) {
-  // Atterrir SUR une entrée garde-fou (écho de notre history.forward, ou bouton
-  // suivant) ne demande jamais d'action : ces entrées sont des jalons inertes.
-  if (e.state && e.state.backGuard) return;
-  // Popstate déclenché par notre propre restauration → à ignorer.
-  if (window._ignorerProchainPopstate) {
-    window._ignorerProchainPopstate = false;
-    window._popstateTraite = Date.now();
-    return;
-  }
   // iOS peut émettre DEUX popstate pour un seul balayage : le doublon arrive
   // dans la foulée du premier → on ne traite pas deux retours en <350 ms.
   const _maintenant = Date.now();
   if (_maintenant - (window._popstateTraite || 0) < 350) return;
   window._popstateTraite = _maintenant;
   // 🔗 Recettes liées : si on est dans une fiche atteinte via un lien, revenir à
-  // la recette parente au lieu de fermer la modale.
+  // la recette parente au lieu de fermer la modale. (Le jalon de la liée vient
+  // d'être consommé ; celui de la fiche parente garde le prochain retour.)
   const _elFiche = document.getElementById("modal-calc");
   if (_modalEstVisible(_elFiche) && window._ficheNavStack && window._ficheNavStack.length > 0) {
     const _parent = window._ficheNavStack.pop();
     if (typeof choisirRecette === "function") choisirRecette(_parent, null, true);
-    window._backGuardRestaurer();
     return;
   }
   // Trouver la modal du dessus actuellement visible
@@ -3480,10 +3465,9 @@ window.addEventListener("popstate", function(e) {
     }
   }
   
-  // Restaurer le garde-fou pour intercepter le PROCHAIN retour aussi
-  // Sinon le user aurait besoin de 2 clics retour à chaque fois
+  // Modal fermée : rien d'autre à faire. Le prochain jalon sera posé par la
+  // prochaine ouverture (dans un geste utilisateur — seul pushState fiable iOS).
   if (modalFermee) {
-    window._backGuardRestaurer();
     return;
   }
 
@@ -3499,7 +3483,6 @@ window.addEventListener("popstate", function(e) {
   const _surAccueil = _secAccueil && _modalEstVisible(_secAccueil);
   if (!_surAccueil) {
     _afficherVue("accueil");
-    window._backGuardRestaurer();   // garde-fou → il faudra un 2e retour pour quitter
     return;
   }
 
