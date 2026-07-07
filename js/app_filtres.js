@@ -22,6 +22,7 @@
   // Tris en chips bidirectionnels : neutre → sens « primaire » (nat) → sens inverse → off.
   // nat = multiplicateur du comparateur pour l'étiquette primaire (note : décroissant).
   const TRIS = [
+    { crit: "az",    e: "🔤", neutre: "A-Z",      prim: "A → Z",          sec: "Z → A",             nat: 1 },
     { crit: "note",  e: "⭐", neutre: "Note",     prim: "Mieux notées",   sec: "Moins bien notées", nat: -1 },
     { crit: "nutri", e: "🥗", neutre: "Nutri",    prim: "Meilleur Nutri", sec: "Moins bon Nutri",   nat: 1 },
     { crit: "temps", e: "⏱", neutre: "Temps",    prim: "Plus rapide",    sec: "Plus long",         nat: 1 },
@@ -187,6 +188,11 @@
       // Valeur du critère (null = non disponible → toujours rejeté en fin de liste).
       const val = (c) => {
         const cle = cleDe(c);
+        if (tri === "az") {
+          const r = (typeof recettes !== "undefined") ? recettes[cle] : null;
+          const nom = (typeof getNomRecette === "function") ? getNomRecette(cle) : (r && r.nom);
+          return nom || null;
+        }
         if (tri === "note") {
           const com = (cle && typeof getNoteCommunaute === "function") ? getNoteCommunaute(cle) : null;
           return (com && com.moyenne != null) ? com.moyenne : null;
@@ -200,6 +206,7 @@
         if (va == null && vb == null) return 0;
         if (va == null) return 1;   // manquant → en dernier (dans les deux sens)
         if (vb == null) return -1;
+        if (typeof va === "string") return va.localeCompare(vb, "fr", { sensitivity: "base" }) * sensTri;
         return (va - vb) * sensTri;
       });
     }
