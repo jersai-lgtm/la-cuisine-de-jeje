@@ -3436,13 +3436,37 @@ if (typeof document !== "undefined") {
   });
 }
 
+// iOS (surtout PWA installée) émet souvent DEUX popstate pour UN seul balayage
+// retour : un « écho » fantôme suit le vrai. Sans filtre, l'écho ferme une 2e
+// chose (liste sous la fiche, ou saut forcé à l'accueil) → l'utilisateur perd
+// sa recherche/liste. Filtre robuste par VERROU, pas par simple délai :
+//   • Le vrai retour lève le verrou (posé par le dernier vrai geste) et pose le
+//     verrou → l'écho, qui n'a AUCUN geste entre les deux popstate, reste
+//     verrouillé et est ignoré, quel que soit le délai.
+//   • Tout vrai geste (touchstart/pointerdown/clavier) relâche le verrou → un
+//     2e retour VOLONTAIRE est bien pris en compte.
+//   • Filet temporel (700 ms) au cas où iOS ne délivrerait pas le geste du
+//     balayage à la page.
+window._backVerrou = false;
+window._backLeverVerrou = function () { window._backVerrou = false; clearTimeout(window._backVerrouTimer); };
+if (typeof document !== "undefined") {
+  // Un VRAI geste (le balayage retour commence par un touch sur l'écran) lève le
+  // verrou → un 2e retour VOLONTAIRE est bien pris en compte.
+  ["touchstart", "pointerdown", "keydown", "mousedown"].forEach(function (ev) {
+    document.addEventListener(ev, window._backLeverVerrou, { capture: true, passive: true });
+  });
+}
 // Quand le user appuie sur le bouton retour du téléphone
 window.addEventListener("popstate", function(e) {
-  // iOS peut émettre DEUX popstate pour un seul balayage : le doublon arrive
-  // dans la foulée du premier → on ne traite pas deux retours en <350 ms.
-  const _maintenant = Date.now();
-  if (_maintenant - (window._popstateTraite || 0) < 350) return;
-  window._popstateTraite = _maintenant;
+  // Verrou SANS composante temporelle : l'écho fantôme d'iOS n'a aucun geste
+  // entre les deux popstate, donc le verrou reste posé et l'écho est ignoré quel
+  // que soit son délai. Filet : auto-levée après 1,5 s si iOS n'a pas délivré le
+  // geste du balayage à la page (au pire, retours limités à ~1/1,5 s, jamais cassés).
+  if (window._backVerrou) return;
+  window._backVerrou = true;
+  clearTimeout(window._backVerrouTimer);
+  window._backVerrouTimer = setTimeout(window._backLeverVerrou, 1500);
+  window._popstateTraite = Date.now();
   // 🔗 Recettes liées : si on est dans une fiche atteinte via un lien, revenir à
   // la recette parente au lieu de fermer la modale. (Le jalon de la liée vient
   // d'être consommé ; celui de la fiche parente garde le prochain retour.)
