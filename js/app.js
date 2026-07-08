@@ -3448,11 +3448,15 @@ if (typeof document !== "undefined") {
 //   • Filet temporel (700 ms) au cas où iOS ne délivrerait pas le geste du
 //     balayage à la page.
 window._backVerrou = false;
-window._backLeverVerrou = function () { window._backVerrou = false; clearTimeout(window._backVerrouTimer); };
+window._retourAgi = false;   // a-t-on déjà fermé qqch dans CE cycle de geste retour ?
+window._backLeverVerrou = function () { window._backVerrou = false; window._retourAgi = false; clearTimeout(window._backVerrouTimer); };
 if (typeof document !== "undefined") {
-  // Un VRAI geste (le balayage retour commence par un touch sur l'écran) lève le
-  // verrou → un 2e retour VOLONTAIRE est bien pris en compte.
-  ["touchstart", "pointerdown", "keydown", "mousedown"].forEach(function (ev) {
+  // Un VRAI geste lève le verrou → un 2e retour VOLONTAIRE est bien pris en compte.
+  // On écoute UNIQUEMENT touchstart (le vrai doigt qui commence le balayage) et
+  // keydown (clavier desktop). PAS pointerdown/mousedown : iOS peut SYNTHÉTISER un
+  // mousedown après le balayage — s'il tombait entre les deux popstate, il lèverait
+  // le verrou et laisserait passer l'écho fantôme (la cause du bug).
+  ["touchstart", "keydown"].forEach(function (ev) {
     document.addEventListener(ev, window._backLeverVerrou, { capture: true, passive: true });
   });
 }
@@ -3481,6 +3485,7 @@ window.addEventListener("popstate", function(e) {
   // EN PREMIER — sinon la liste sous-jacente se fermerait avant la fiche visible.
   if (_modalEstVisible(_elFiche)) {
     if (typeof fermerModal === "function") fermerModal();
+    window._retourAgi = true;
     return;   // le prochain retour fermera la liste révélée dessous
   }
   // Trouver la modal du dessus actuellement visible
@@ -3499,8 +3504,14 @@ window.addEventListener("popstate", function(e) {
   // Modal fermée : rien d'autre à faire. Le prochain jalon sera posé par la
   // prochaine ouverture (dans un geste utilisateur — seul pushState fiable iOS).
   if (modalFermee) {
+    window._retourAgi = true;
     return;
   }
+
+  // 🛡️ 2e couche anti-écho : si on a DÉJÀ fermé une fiche/modale dans ce cycle de
+  // geste (le verrou aurait dû bloquer l'écho, mais ceinture + bretelles), on ne
+  // rejoue SURTOUT pas une navigation d'onglet — sinon saut parasite vers l'accueil.
+  if (window._retourAgi) return;
 
   // 🧭 Pas de modal : rejouer l'historique de navigation des onglets
   if (window._navStack && window._navStack.length > 0) {
