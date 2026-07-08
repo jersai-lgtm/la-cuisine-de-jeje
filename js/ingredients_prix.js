@@ -771,6 +771,161 @@ const INGREDIENTS_PRIX = {
   papaye:        {prixUnite:2,cal:43,lipSat:0,sucre:8,sel:0,fibres:1.7,prot:0.5,flv:60},
   lentillescorail: {prixKg:3.5,calPer100g:120,lipSat:0.1,sucre:2,sel:0,fibres:8,prot:9,flv:30},
   haricotsBlancs: {prixKg:2.5,calPer100g:139,lipSat:0.1,sucre:0.3,sel:0,fibres:8,prot:9.7,flv:30},
+  // ===== Complétés via audit qualité (prix/nutrition manquants) =====
+  clougirofle: { prixKg: 22, calPer100g: 274, lipSat: 13, sucre: 2, sel: 0.27, fibres: 27.3, prot: 6, flv: 0 },
+  juscitron: { prixKg: 2.5, calPer100g: 29, lipSat: 0.1, sucre: 2.5, sel: 0.02, fibres: 0.6, prot: 0.4, flv: 100 },
+  painbaguette: { prixUnite: 1.2, cal: 270, lipSat: 0.3, sucre: 0.6, sel: 1.5, fibres: 1.6, prot: 8, flv: 0 },
+  jamboncru: { prixKg: 28, calPer100g: 254, lipSat: 8.5, sucre: 0, sel: 2.5, fibres: 0, prot: 29, flv: 0 },
+  olivemixte: { prixKg: 8.5, calPer100g: 145, lipSat: 3.8, sucre: 0.4, sel: 3.3, fibres: 1.6, prot: 1, flv: 100 },
+  tomateseche: { prixKg: 18, calPer100g: 258, lipSat: 2.8, sucre: 11, sel: 2.4, fibres: 7.6, prot: 14, flv: 100 },
+  artichautmarine: { prixKg: 6.5, calPer100g: 45, lipSat: 0.1, sucre: 0.7, sel: 1.2, fibres: 2.1, prot: 2.7, flv: 100 },
+  eaupetillante: { prixKg: 1.2, calPer100g: 0, lipSat: 0, sucre: 0, sel: 0.1, fibres: 0, prot: 0, flv: 0 },
+  sauceaigredouce: { prixKg: 5.5, calPer100g: 220, lipSat: 0.2, sucre: 35, sel: 1.5, fibres: 0.5, prot: 0.3, flv: 0 },
+  saucetomate: { prixKg: 3, calPer100g: 32, lipSat: 0.2, sucre: 3.5, sel: 1, fibres: 1, prot: 1.3, flv: 100 },
+  galettelumpia: { prixUnite: 0.35, cal: 145, lipSat: 0.3, sucre: 0.1, sel: 0.6, fibres: 0.4, prot: 2.1, flv: 0 },
+  patemandu: { prixKg: 12, calPer100g: 298, lipSat: 6.5, sucre: 2.5, sel: 1.8, fibres: 1.2, prot: 12, flv: 0 },
+  fromagegrec: { prixKg: 22, calPer100g: 330, lipSat: 24, sucre: 3.2, sel: 2, fibres: 0, prot: 21, flv: 0 },
+  melassegrenade: { prixKg: 12, calPer100g: 272, lipSat: 0.3, sucre: 55, sel: 0.2, fibres: 1.6, prot: 2.7, flv: 100 },
+  chairsaucisse: { prixKg: 9.5, calPer100g: 290, lipSat: 21, sucre: 0, sel: 1.8, fibres: 0, prot: 27, flv: 0 },
+  levureboulangere: { prixKg: 8, calPer100g: 389, lipSat: 1, sucre: 0, sel: 0, fibres: 0, prot: 42, flv: 0 },
+  farinemais: { prixKg: 3.5, calPer100g: 361, lipSat: 1.3, sucre: 0.3, sel: 0.01, fibres: 2.7, prot: 8.6, flv: 0 },
+  rizrond: { prixKg: 2.2, calPer100g: 365, lipSat: 0.3, sucre: 0.1, sel: 0.01, fibres: 0.4, prot: 6.6, flv: 0 },
+  lentillesnoires: { prixKg: 6, calPer100g: 358, lipSat: 0.4, sucre: 2, sel: 0.02, fibres: 8.3, prot: 25, flv: 100 },
+  the: { prixKg: 35, calPer100g: 2, lipSat: 0, sucre: 0, sel: 0.02, fibres: 0, prot: 0.2, flv: 0 },
+  algue: { prixKg: 45, calPer100g: 35, lipSat: 0.6, sucre: 0, sel: 7.8, fibres: 1.3, prot: 5, flv: 100 },
+  petitpois: { prixKg: 3.8, calPer100g: 81, lipSat: 0.4, sucre: 5.7, sel: 0.02, fibres: 2.8, prot: 5.4, flv: 100 },
+  rhumambre: { prixKg: 28, calPer100g: 231, lipSat: 0, sucre: 0, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  jusorange: { prixKg: 3.2, calPer100g: 45, lipSat: 0.1, sucre: 9.3, sel: 0.01, fibres: 0.4, prot: 0.7, flv: 100 },
+  jusananas: { prixKg: 3.8, calPer100g: 50, lipSat: 0.1, sucre: 11, sel: 0.01, fibres: 0.4, prot: 0.5, flv: 100 },
+  sucrecanne: { prixKg: 2, calPer100g: 387, lipSat: 0, sucre: 99.8, sel: 0.02, fibres: 0, prot: 0, flv: 0 },
+  girofle: { prixKg: 85, calPer100g: 274, lipSat: 13, sucre: 26, sel: 0.66, fibres: 20.7, prot: 6, flv: 100 },
+  badiane: { prixKg: 95, calPer100g: 338, lipSat: 15.9, sucre: 15.9, sel: 0.19, fibres: 14.6, prot: 17.6, flv: 100 },
+  cachaca: { prixKg: 32, calPer100g: 231, lipSat: 0, sucre: 0, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  siropsucre: { prixKg: 4.5, calPer100g: 260, lipSat: 0, sucre: 65, sel: 0.01, fibres: 0, prot: 0, flv: 0 },
+  cola: { prixKg: 2.2, calPer100g: 42, lipSat: 0, sucre: 10.6, sel: 0.15, fibres: 0, prot: 0, flv: 0 },
+  justomate: { prixKg: 1.8, calPer100g: 18, lipSat: 0.1, sucre: 3.2, sel: 0.5, fibres: 0.4, prot: 0.8, flv: 100 },
+  worcestershire: { prixKg: 18, calPer100g: 84, lipSat: 0, sucre: 6.5, sel: 9.5, fibres: 0, prot: 4.3, flv: 0 },
+  liqueurcafe: { prixKg: 42, calPer100g: 300, lipSat: 0, sucre: 32, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  juspamplemousse: { prixKg: 3.5, calPer100g: 39, lipSat: 0.1, sucre: 7.6, sel: 0.01, fibres: 0.2, prot: 0.6, flv: 100 },
+  juscitronvert: { prixKg: 3.8, calPer100g: 29, lipSat: 0.2, sucre: 1.5, sel: 0.02, fibres: 0.6, prot: 0.4, flv: 100 },
+  sodapamplemousse: { prixKg: 2.3, calPer100g: 38, lipSat: 0, sucre: 8.5, sel: 0.18, fibres: 0, prot: 0, flv: 0 },
+  whiskey: { prixKg: 52, calPer100g: 250, lipSat: 0, sucre: 0, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  vermouthrouge: { prixKg: 35, calPer100g: 160, lipSat: 0, sucre: 8, sel: 0.1, fibres: 0, prot: 0.1, flv: 0 },
+  angostura: { prixKg: 65, calPer100g: 215, lipSat: 0, sucre: 38, sel: 0.1, fibres: 0, prot: 0, flv: 0 },
+  soda: { prixKg: 2.5, calPer100g: 39, lipSat: 0, sucre: 9, sel: 0.17, fibres: 0, prot: 0, flv: 0 },
+  rhumblanc: { prixKg: 28, calPer100g: 231, lipSat: 0, sucre: 0.1, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  orgeat: { prixKg: 12, calPer100g: 65, lipSat: 0.1, sucre: 15.5, sel: 0.05, fibres: 0, prot: 0.2, flv: 100 },
+  cremecassis: { prixKg: 9.5, calPer100g: 45, lipSat: 0, sucre: 10.2, sel: 0.1, fibres: 0.5, prot: 0.3, flv: 100 },
+  biere: { prixKg: 2.8, calPer100g: 43, lipSat: 0, sucre: 0.3, sel: 0.02, fibres: 0, prot: 0.4, flv: 0 },
+  jusdetomate: { prixKg: 1.5, calPer100g: 18, lipSat: 0.1, sucre: 3.2, sel: 0.3, fibres: 0.6, prot: 0.8, flv: 100 },
+  saucepiquante: { prixKg: 8, calPer100g: 120, lipSat: 1.2, sucre: 8, sel: 2.5, fibres: 1.5, prot: 2, flv: 100 },
+  selepice: { prixKg: 15, calPer100g: 380, lipSat: 15, sucre: 0.3, sel: 5, fibres: 2.5, prot: 6, flv: 0 },
+  pisco: { prixKg: 35, calPer100g: 231, lipSat: 0, sucre: 0, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  gCreme: { prixKg: 6.5, calPer100g: 340, lipSat: 34, sucre: 2.8, sel: 0.05, fibres: 0, prot: 2.2, flv: 0 },
+  amidon: { prixKg: 3.2, calPer100g: 381, lipSat: 0.1, sucre: 0, sel: 0, fibres: 0.9, prot: 0.3, flv: 0 },
+  amandeeffilee: { prixKg: 18, calPer100g: 579, lipSat: 3.5, sucre: 4.4, sel: 0, fibres: 12.5, prot: 21.6, flv: 100 },
+  cremefouettee: { prixKg: 6.8, calPer100g: 340, lipSat: 34, sucre: 3, sel: 0.06, fibres: 0, prot: 2.1, flv: 0 },
+  cremedemarrons: { prixKg: 14, calPer100g: 290, lipSat: 18, sucre: 18.5, sel: 0.02, fibres: 3.2, prot: 2.8, flv: 100 },
+  meringue: { prixKg: 16, calPer100g: 297, lipSat: 0.1, sucre: 72, sel: 0.2, fibres: 0, prot: 6, flv: 0 },
+  marronglace: { prixKg: 28, calPer100g: 213, lipSat: 1.2, sucre: 45, sel: 0.02, fibres: 2.2, prot: 2.5, flv: 100 },
+  grandmarnier: { prixKg: 42, calPer100g: 244, lipSat: 0, sucre: 12, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  sucreperle: { prixKg: 4.5, calPer100g: 387, lipSat: 0, sucre: 97, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  noisettepoudre: { prixKg: 24, calPer100g: 630, lipSat: 14.2, sucre: 4, sel: 0.02, fibres: 9.5, prot: 20.5, flv: 100 },
+  praline: { prixKg: 32, calPer100g: 520, lipSat: 42, sucre: 42, sel: 0.15, fibres: 6.5, prot: 11, flv: 100 },
+  anko: { prixKg: 6.5, calPer100g: 142, lipSat: 0.3, sucre: 32, sel: 0.1, fibres: 5.8, prot: 3.2, flv: 100 },
+  laitpoudre: { prixKg: 8.5, calPer100g: 496, lipSat: 26.7, sucre: 38, sel: 0.72, fibres: 0, prot: 26.3, flv: 0 },
+  kadayif: { prixKg: 9, calPer100g: 360, lipSat: 8, sucre: 1.2, sel: 0.12, fibres: 2.5, prot: 9.5, flv: 0 },
+  fromagedoux: { prixKg: 12, calPer100g: 340, lipSat: 28, sucre: 2, sel: 1.8, fibres: 0, prot: 20, flv: 0 },
+  cremeacide: { prixKg: 5.2, calPer100g: 200, lipSat: 20, sucre: 3, sel: 0.1, fibres: 0, prot: 3.5, flv: 0 },
+  fleuroranger: { prixKg: 18, calPer100g: 320, lipSat: 0.2, sucre: 79, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  rizgluant: { prixKg: 4.5, calPer100g: 130, lipSat: 0.3, sucre: 0.1, sel: 0, fibres: 0.4, prot: 2.7, flv: 0 },
+  painfeuillete: { prixKg: 8, calPer100g: 398, lipSat: 17, sucre: 0.5, sel: 1.2, fibres: 1.5, prot: 7.5, flv: 0 },
+  jaunedoeuf: { prixKg: 32, calPer100g: 322, lipSat: 26.5, sucre: 1.1, sel: 1.3, fibres: 0, prot: 16, flv: 0 },
+  noixcoco: { prixKg: 6.8, calPer100g: 354, lipSat: 33.5, sucre: 9, sel: 0.02, fibres: 9, prot: 3.3, flv: 100 },
+  raisin: { prixKg: 3.5, calPer100g: 67, lipSat: 0.2, sucre: 15.5, sel: 0.03, fibres: 0.9, prot: 0.7, flv: 100 },
+  chancaca: { prixKg: 7, calPer100g: 290, lipSat: 0.1, sucre: 72, sel: 0.5, fibres: 0, prot: 0.2, flv: 0 },
+  macarons: { prixUnite: 2.8, cal: 76, lipSat: 2.1, sucre: 18, sel: 0.08, fibres: 0.5, prot: 1.5, flv: 0 },
+  mayo: { prixKg: 5.5, calPer100g: 717, lipSat: 79, sucre: 0.1, sel: 0.95, fibres: 0, prot: 0.3, flv: 0 },
+  foiegras: { prixKg: 45, calPer100g: 462, lipSat: 45, sucre: 1.5, sel: 1.2, fibres: 0, prot: 10, flv: 0 },
+  painepices: { prixKg: 6.5, calPer100g: 281, lipSat: 3.5, sucre: 35, sel: 1.5, fibres: 2, prot: 5.5, flv: 0 },
+  vinaigrette: { prixKg: 4.2, calPer100g: 680, lipSat: 72, sucre: 2, sel: 1.2, fibres: 0, prot: 0.5, flv: 0 },
+  chevrefrais: { prixKg: 14, calPer100g: 98, lipSat: 5, sucre: 0.5, sel: 0.8, fibres: 0, prot: 11, flv: 0 },
+  galetteriz: { prixKg: 5.8, calPer100g: 375, lipSat: 0.4, sucre: 0.3, sel: 2.5, fibres: 1.2, prot: 6, flv: 0 },
+  saucecacahuete: { prixKg: 9.5, calPer100g: 588, lipSat: 48, sucre: 20, sel: 1, fibres: 6.5, prot: 25, flv: 100 },
+  volaille: { prixKg: 8.5, calPer100g: 165, lipSat: 3.6, sucre: 0, sel: 0.07, fibres: 0, prot: 31, flv: 0 },
+  lardgras: { prixKg: 12, calPer100g: 717, lipSat: 25, sucre: 0.5, sel: 1.5, fibres: 0, prot: 8, flv: 0 },
+  porto: { prixKg: 15, calPer100g: 160, lipSat: 0, sucre: 7, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  gelee: { prixKg: 8, calPer100g: 61, lipSat: 0, sucre: 15, sel: 0.1, fibres: 0, prot: 6, flv: 0 },
+  painseigle: { prixUnite: 4.5, cal: 263, lipSat: 1.2, sucre: 1.5, sel: 1.1, fibres: 7.5, prot: 8.5, flv: 0 },
+  patepizza: { prixKg: 4.5, calPer100g: 280, lipSat: 0.8, sucre: 0.5, sel: 0.7, fibres: 1.8, prot: 8, flv: 0 },
+  grenade: { prixKg: 3.5, calPer100g: 83, lipSat: 0.3, sucre: 16.5, sel: 0.05, fibres: 4, prot: 1.7, flv: 100 },
+  fruitpassion: { prixKg: 6, calPer100g: 97, lipSat: 0.3, sucre: 23, sel: 0.03, fibres: 10.8, prot: 2.2, flv: 100 },
+  fruitsconfits: { prixKg: 14, calPer100g: 341, lipSat: 0.3, sucre: 73, sel: 0.2, fibres: 4, prot: 1, flv: 100 },
+  tomateconcassee: { prixKg: 2.8, calPer100g: 18, lipSat: 0.2, sucre: 2.6, sel: 0.3, fibres: 1.2, prot: 0.9, flv: 100 },
+  saumoncru: { prixKg: 22, calPer100g: 206, lipSat: 13, sucre: 0, sel: 0.08, fibres: 0, prot: 22, flv: 0 },
+  boulgour: { prixKg: 5.5, calPer100g: 342, lipSat: 1, sucre: 1.8, sel: 0.02, fibres: 8.3, prot: 12, flv: 100 },
+  sodaamer: { prixKg: 1.8, calPer100g: 37, lipSat: 0, sucre: 9, sel: 0.1, fibres: 0, prot: 0, flv: 0 },
+  thenoir: { prixKg: 28, calPer100g: 0, lipSat: 0, sucre: 0, sel: 0, fibres: 0, prot: 0, flv: 100 },
+  siropagave: { prixKg: 12, calPer100g: 310, lipSat: 0, sucre: 76, sel: 0.01, fibres: 0.5, prot: 0.5, flv: 0 },
+  hibiscusseche: { prixKg: 18, calPer100g: 49, lipSat: 0.8, sucre: 0.2, sel: 0.15, fibres: 14.7, prot: 3.9, flv: 100 },
+  glacons: { prixUnite: 0.08, cal: 0, lipSat: 0, sucre: 0, sel: 0, fibres: 0, prot: 0, flv: 0 },
+  pepperoni: { prixKg: 28, calPer100g: 504, lipSat: 20, sucre: 0.6, sel: 2.1, fibres: 0, prot: 41, flv: 0 },
+  msemen: { prixUnite: 3.2, cal: 580, lipSat: 28, sucre: 1.5, sel: 0.8, fibres: 2.5, prot: 9, flv: 0 },
+  marrons: { prixKg: 6.5, calPer100g: 196, lipSat: 2.3, sucre: 11, sel: 0.03, fibres: 8.1, prot: 2.4, flv: 100 },
+  chapon: { prixKg: 16, calPer100g: 180, lipSat: 4.2, sucre: 0, sel: 0.08, fibres: 0, prot: 32, flv: 0 },
+  pateArachide: { prixKg: 8, calPer100g: 588, lipSat: 7, sucre: 7, sel: 0.15, fibres: 6.5, prot: 25, flv: 100 },
+  concentretomate: { prixKg: 5.5, calPer100g: 82, lipSat: 0.3, sucre: 15.8, sel: 0.6, fibres: 2.4, prot: 3.5, flv: 100 },
+  epicesJerk: { prixKg: 45, calPer100g: 250, lipSat: 8, sucre: 35, sel: 15, fibres: 12, prot: 8, flv: 0 },
+  ajiAmarillo: { prixKg: 12, calPer100g: 40, lipSat: 0.4, sucre: 8.5, sel: 0.4, fibres: 1.8, prot: 1.2, flv: 100 },
+  colombo: { prixKg: 28, calPer100g: 340, lipSat: 12, sucre: 28, sel: 8, fibres: 10, prot: 10, flv: 0 },
+  berbere: { prixKg: 32, calPer100g: 250, lipSat: 8.5, sucre: 20, sel: 12, fibres: 15, prot: 12, flv: 0 },
+  coulistomate: { prixKg: 3.2, calPer100g: 45, lipSat: 0.5, sucre: 6.5, sel: 0.8, fibres: 1.8, prot: 2, flv: 100 },
+  saucissoncuire: { prixKg: 18, calPer100g: 480, lipSat: 28, sucre: 0.5, sel: 2, fibres: 0, prot: 52, flv: 0 },
+  epices: { prixKg: 25, calPer100g: 300, lipSat: 10, sucre: 25, sel: 8, fibres: 12, prot: 10, flv: 0 },
+  cannellonipates: { prixKg: 3.5, calPer100g: 371, lipSat: 1.2, sucre: 0.8, sel: 0.6, fibres: 1.8, prot: 13, flv: 0 },
+  sauceblanche: { prixKg: 6, calPer100g: 92, lipSat: 7.2, sucre: 1.2, sel: 0.5, fibres: 0.1, prot: 3.5, flv: 0 },
+  epiceskebab: { prixKg: 35, calPer100g: 320, lipSat: 10, sucre: 30, sel: 10, fibres: 14, prot: 11, flv: 0 },
+  tzatziki: { prixKg: 5.8, calPer100g: 81, lipSat: 5.5, sucre: 2.5, sel: 0.8, fibres: 0, prot: 5.8, flv: 0 },
+  riesling: { prixKg: 8, calPer100g: 75, lipSat: 0, sucre: 6, sel: 0.01, fibres: 0, prot: 0.1, flv: 0 },
+  chouxfleur: { prixKg: 2.2, calPer100g: 25, lipSat: 0.3, sucre: 1.8, sel: 0.06, fibres: 2.4, prot: 1.9, flv: 100 },
+  cuisseconfit: { prixKg: 14, calPer100g: 355, lipSat: 22, sucre: 0, sel: 0.15, fibres: 0, prot: 38, flv: 0 },
+  blancpoulet: { prixKg: 10.5, calPer100g: 165, lipSat: 3.6, sucre: 0, sel: 0.07, fibres: 0, prot: 31, flv: 0 },
+  epicesfajitas: { prixKg: 30, calPer100g: 310, lipSat: 10, sucre: 28, sel: 9, fibres: 13, prot: 11, flv: 0 },
+  boeufrumsteck: { prixKg: 16, calPer100g: 209, lipSat: 6.5, sucre: 0, sel: 0.06, fibres: 0, prot: 36, flv: 0 },
+  siropliege: { prixKg: 8.5, calPer100g: 260, lipSat: 0, sucre: 65, sel: 0.1, fibres: 0, prot: 0, flv: 0 },
+  chapelurepanko: { prixKg: 6.2, calPer100g: 350, lipSat: 1.2, sucre: 2, sel: 1.5, fibres: 1.5, prot: 12, flv: 0 },
+  souris: { prixKg: 7.8, calPer100g: 210, lipSat: 8.5, sucre: 0, sel: 0.8, fibres: 0, prot: 26, flv: 0 },
+  sole: { prixKg: 18.5, calPer100g: 81, lipSat: 1.2, sucre: 0, sel: 0.7, fibres: 0, prot: 17.5, flv: 0 },
+  crozets: { prixKg: 3.8, calPer100g: 350, lipSat: 1.8, sucre: 1.5, sel: 0.5, fibres: 2, prot: 13, flv: 0 },
+  oseille: { prixKg: 8.5, calPer100g: 22, lipSat: 0.1, sucre: 0.5, sel: 0.2, fibres: 2.2, prot: 2.7, flv: 100 },
+  abricotsec: { prixKg: 12.5, calPer100g: 241, lipSat: 0.3, sucre: 53, sel: 0.1, fibres: 7.3, prot: 3.3, flv: 100 },
+  gambas: { prixKg: 16.5, calPer100g: 99, lipSat: 0.3, sucre: 0, sel: 1.4, fibres: 0, prot: 20.3, flv: 0 },
+  fumet: { prixKg: 4.2, calPer100g: 30, lipSat: 0.5, sucre: 0.5, sel: 3.5, fibres: 0, prot: 5, flv: 0 },
+  lentillesvertes: { prixKg: 5.5, calPer100g: 353, lipSat: 0.4, sucre: 2, sel: 0.3, fibres: 8.3, prot: 25, flv: 100 },
+  macaroni: { prixKg: 2.8, calPer100g: 371, lipSat: 1.1, sucre: 0.7, sel: 0.5, fibres: 1.8, prot: 13, flv: 0 },
+  plantainvert: { prixKg: 4.5, calPer100g: 122, lipSat: 0.4, sucre: 16, sel: 0.4, fibres: 2.3, prot: 1.3, flv: 100 },
+  chicharron: { prixKg: 14.5, calPer100g: 549, lipSat: 32, sucre: 0, sel: 2.8, fibres: 0, prot: 57, flv: 0 },
+  cinqepices: { prixKg: 28, calPer100g: 280, lipSat: 8.5, sucre: 28, sel: 0.8, fibres: 6.5, prot: 7.5, flv: 0 },
+  anisetoile: { prixKg: 32, calPer100g: 337, lipSat: 15.9, sucre: 0, sel: 0.2, fibres: 14.6, prot: 17.6, flv: 100 },
+  jacque: { prixKg: 6.8, calPer100g: 95, lipSat: 0.9, sucre: 3.3, sel: 0.6, fibres: 1.5, prot: 1.7, flv: 100 },
+  noixmoulues: { prixKg: 18.5, calPer100g: 659, lipSat: 47.2, sucre: 7.1, sel: 0.2, fibres: 5.8, prot: 24, flv: 100 },
+  viandehachee: { prixKg: 11.5, calPer100g: 250, lipSat: 15, sucre: 0, sel: 0.8, fibres: 0, prot: 28, flv: 0 },
+  saucetartare: { prixKg: 7.8, calPer100g: 420, lipSat: 38, sucre: 5, sel: 2.5, fibres: 0.5, prot: 4, flv: 0 },
+  gesiers: { prixKg: 9.5, calPer100g: 166, lipSat: 7.2, sucre: 0, sel: 0.9, fibres: 0, prot: 24, flv: 0 },
+  magretfume: { prixKg: 22.5, calPer100g: 340, lipSat: 26, sucre: 0, sel: 2.8, fibres: 0, prot: 31, flv: 0 },
+  fromagebleu: { prixKg: 18, calPer100g: 353, lipSat: 25.4, sucre: 0.7, sel: 3.2, fibres: 0, prot: 21, flv: 0 },
+  radis: { prixKg: 3.2, calPer100g: 16, lipSat: 0.1, sucre: 2.2, sel: 0.4, fibres: 1.6, prot: 0.7, flv: 100 },
+  rizgrille: { prixKg: 4.5, calPer100g: 380, lipSat: 0.3, sucre: 0, sel: 0.6, fibres: 0.8, prot: 8, flv: 0 },
+  pateLaksa: { prixKg: 8.5, calPer100g: 150, lipSat: 5.5, sucre: 4, sel: 3.2, fibres: 2.5, prot: 5.5, flv: 0 },
+  carcassehomard: { prixKg: 14, calPer100g: 60, lipSat: 1.2, sucre: 0, sel: 1.8, fibres: 0, prot: 11, flv: 0 },
+  cresson: { prixKg: 6.5, calPer100g: 23, lipSat: 0.1, sucre: 0.4, sel: 0.3, fibres: 1.1, prot: 2.6, flv: 100 },
+  panais: { prixKg: 3.8, calPer100g: 75, lipSat: 0.3, sucre: 5.8, sel: 0.3, fibres: 4.8, prot: 1.2, flv: 100 },
+  chataignescuites: { prixKg: 11.5, calPer100g: 196, lipSat: 2.4, sucre: 10.5, sel: 0.2, fibres: 8.1, prot: 2, flv: 100 },
+  confitcanard: { prixKg: 18.5, calPer100g: 405, lipSat: 38, sucre: 0, sel: 2.5, fibres: 0, prot: 18, flv: 0 },
+  kimchi: { prixKg: 7.5, calPer100g: 23, lipSat: 0.2, sucre: 2, sel: 2.1, fibres: 1.7, prot: 1.9, flv: 100 },
+  gochugaru: { prixKg: 24, calPer100g: 353, lipSat: 9.5, sucre: 20, sel: 2.8, fibres: 9.6, prot: 15, flv: 0 },
+  maisepi: { prixKg: 2.2, calPer100g: 86, lipSat: 1.2, sucre: 19, sel: 0.3, fibres: 2.4, prot: 3.2, flv: 100 },
+  pralinesroses: { prixKg: 16.5, calPer100g: 385, lipSat: 24, sucre: 48, sel: 0.2, fibres: 3, prot: 6, flv: 0 },
 };
 
 // ===================================================================
@@ -915,6 +1070,30 @@ const POIDS_UNITAIRE = {
   huitres: 10,
 };
 
+// === Résolveur de clé d'ingrédient (tolérance orthographe) ===
+// Repli utilisé UNIQUEMENT quand INGREDIENTS_PRIX[cle] est absent : tente
+// minuscule (camelCase), alias, sans accents, puis singulier/pluriel.
+// Ne renvoie QUE des clés réellement présentes dans INGREDIENTS_PRIX, donc
+// ne peut jamais changer le résultat d'une recette dont la clé est déjà bonne.
+const ALIAS_INGREDIENTS = {
+  // synonymes non déductibles mécaniquement : cle source -> cle tarifée
+};
+function cleCanonique(cle) {
+  if (typeof cle !== "string" || !cle) return null;
+  if (INGREDIENTS_PRIX[cle]) return cle;
+  const bas = cle.toLowerCase();
+  if (INGREDIENTS_PRIX[bas]) return bas;
+  if (ALIAS_INGREDIENTS[cle]) return ALIAS_INGREDIENTS[cle];
+  if (ALIAS_INGREDIENTS[bas]) return ALIAS_INGREDIENTS[bas];
+  const sansAccent = bas.normalize("NFD").replace(/[̀-ͯ]/g, "");
+  if (INGREDIENTS_PRIX[sansAccent]) return sansAccent;
+  const sansS = sansAccent.replace(/s$/, "");
+  if (INGREDIENTS_PRIX[sansS]) return sansS;
+  const avecS = sansAccent + "s";
+  if (INGREDIENTS_PRIX[avecS]) return avecS;
+  return null;
+}
+
 // === Parser tolérant pour le Nutri-Score ===
 // Comme parserQuantite, mais convertit aussi c.à.s (15g), c.à.c (5g), pincée (0.5g)
 // Permet d'inclure les sucres/confitures/sels dosés en cuillères qui sinon seraient ignorés
@@ -982,7 +1161,8 @@ function calculerNutriScoreRecette(ligne) {
     // Ignorer les colonnes méta
     if (nomIng === "nb" || nomIng === "label" || nomIng === "patons" || nomIng === "total") return;
     
-    const ing = INGREDIENTS_PRIX[nomIng];
+    const ingC = cleCanonique(nomIng);
+    const ing = ingC ? INGREDIENTS_PRIX[ingC] : undefined;
     if (!ing) return;
     
     const q = parserQuantiteNutri(valeur);
@@ -993,7 +1173,7 @@ function calculerNutriScoreRecette(ligne) {
       grammes = q.valeur;
     } else {
       // Quantité comptée : utiliser le poids unitaire moyen
-      const pu = POIDS_UNITAIRE[nomIng] || (ing.prixUnite !== undefined ? 50 : 0);
+      const pu = POIDS_UNITAIRE[ingC] || (ing.prixUnite !== undefined ? 50 : 0);
       grammes = q.valeur * pu;
     }
     
@@ -1062,7 +1242,8 @@ function calculerPrixCaloriesRecette(ligneTableau) {
     // Ignorer les colonnes méta
     if (cle === "nb" || cle === "label" || cle === "patons" || cle === "total") continue;
     
-    const info = INGREDIENTS_PRIX[cle];
+    const cleC = cleCanonique(cle);
+    const info = cleC ? INGREDIENTS_PRIX[cleC] : undefined;
     if (!info) {
       ingredientsManquants.push(cle);
       continue;
@@ -1099,7 +1280,7 @@ function calculerPrixCaloriesRecette(ligneTableau) {
           pasteque: 3000,               // 1 pastèque ≈ 3 kg
           ail: 3,                       // 1 gousse ≈ 3g
         };
-        const pu = poidsUnitaire[cle] || POIDS_UNITAIRE[cle] || 100;
+        const pu = poidsUnitaire[cleC] || POIDS_UNITAIRE[cleC] || 100;
         const nbUnites = qte.valeur / pu;
         prixTotal += nbUnites * info.prixUnite;
         calTotal += nbUnites * info.cal;
@@ -1191,7 +1372,7 @@ function parserQuantite(texte) {
 
 // Exporter pour utilisation
 if (typeof module !== "undefined") {
-  module.exports = { INGREDIENTS_PRIX, calculerPrixCaloriesRecette, parserQuantite, calculerNutriScore, calculerNutriScoreRecette };
+  module.exports = { INGREDIENTS_PRIX, cleCanonique, calculerPrixCaloriesRecette, parserQuantite, calculerNutriScore, calculerNutriScoreRecette };
 }
 
 // ============================================================
