@@ -15498,7 +15498,7 @@ Object.assign(recettes, {
     ]
   },
   couscousalgerien: {
-    liees: ["couscoustunisien","harissa"],
+    liees: ["harissa"],
     nom: "Couscous Algérien",
     cat: "plats", pays: "algerie",
     base: 4,
@@ -15685,7 +15685,6 @@ Object.assign(recettes, {
     ]
   },
   kalbellouz: {
-    liees: ["makrout"],
     nom: "Kalb el Louz",
     cat: "desserts", pays: "algerie",
     base: 4,
@@ -15761,7 +15760,6 @@ Object.assign(recettes, {
     ]
   },
   makrout: {
-    liees: ["kalbellouz"],
     nom: "Makrout",
     cat: "desserts", pays: "algerie",
     base: 4,
@@ -15800,7 +15798,7 @@ Object.assign(recettes, {
     ]
   },
   couscoustunisien: {
-    liees: ["harissa","couscousalgerien"],
+    liees: ["harissa"],
     nom: "Couscous Tunisien au Poisson",
     cat: "plats", pays: "tunisie",
     base: 4,

@@ -48,7 +48,6 @@ Object.assign(recettes, {
     base: 4, temps: "20 min", niveau: "⭐ Facile", emoji: "🥭",
     description: "Mangue, ananas, kiwi et fruit de la passion, réveillés d'un trait de citron vert, de miel et de menthe. Fraîche, parfumée, ensoleillée.",
     saisons: ["ete"],
-    liees: ["saladefruits"],
     ingredients: {},
     tableauSaladefruitsexotiques: [
       { nb: 1, mangue: "80 g", ananas: "70 g", kiwi: "50 g", banane: "50 g", passion: "15 g", citronvert: "8 g", miel: "6 g", menthe: "2 g" },
@@ -1265,7 +1264,6 @@ Object.assign(recettes, {
       ]
   },
   eclair: {
-    liees: ["fondantchocolat"],
     nom: "Éclairs au Chocolat",
     cat: "desserts", saisons: ["automne","hiver"], pays: "france",
     base: 4,
