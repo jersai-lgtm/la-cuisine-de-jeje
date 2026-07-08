@@ -4,6 +4,118 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  baeckeoffe: {
+    nom: "Baeckeoffe",
+    cat: "plats", pays: "france",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "30 min + 12h marinade + 2h30 cuisson",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Le baeckeoffe alsacien — trois viandes marinées au vin blanc puis mijotées des heures avec pommes de terre et poireaux sous un couvercle luté. Le \"four du boulanger\" : un plat de partage rustique et généreux.",
+    tableauBaeckeoffe: [
+      { nb: 1, boeuf: "60 g", porc: "60 g", agneau: "60 g", pommedeterre: "200 g", poireau: "50 g", oignon: "50 g", vinblanc: "60 ml", laurier: "1" },
+      { nb: 2, boeuf: "120 g", porc: "120 g", agneau: "120 g", pommedeterre: "400 g", poireau: "100 g", oignon: "100 g", vinblanc: "120 ml", laurier: "2" },
+      { nb: 3, boeuf: "180 g", porc: "180 g", agneau: "180 g", pommedeterre: "600 g", poireau: "150 g", oignon: "150 g", vinblanc: "180 ml", laurier: "3" },
+      { nb: 4, boeuf: "240 g", porc: "240 g", agneau: "240 g", pommedeterre: "800 g", poireau: "200 g", oignon: "200 g", vinblanc: "240 ml", laurier: "4" },
+      { nb: 5, boeuf: "300 g", porc: "300 g", agneau: "300 g", pommedeterre: "1000 g", poireau: "250 g", oignon: "250 g", vinblanc: "300 ml", laurier: "5" },
+      { nb: 6, boeuf: "360 g", porc: "360 g", agneau: "360 g", pommedeterre: "1200 g", poireau: "300 g", oignon: "300 g", vinblanc: "360 ml", laurier: "6" },
+      { nb: 7, boeuf: "420 g", porc: "420 g", agneau: "420 g", pommedeterre: "1400 g", poireau: "350 g", oignon: "350 g", vinblanc: "420 ml", laurier: "7" },
+      { nb: 8, boeuf: "480 g", porc: "480 g", agneau: "480 g", pommedeterre: "1600 g", poireau: "400 g", oignon: "400 g", vinblanc: "480 ml", laurier: "8" },
+      { nb: 9, boeuf: "540 g", porc: "540 g", agneau: "540 g", pommedeterre: "1800 g", poireau: "450 g", oignon: "450 g", vinblanc: "540 ml", laurier: "9" },
+      { nb: 10, boeuf: "600 g", porc: "600 g", agneau: "600 g", pommedeterre: "2000 g", poireau: "500 g", oignon: "500 g", vinblanc: "600 ml", laurier: "10" },
+      { nb: 11, boeuf: "660 g", porc: "660 g", agneau: "660 g", pommedeterre: "2200 g", poireau: "550 g", oignon: "550 g", vinblanc: "660 ml", laurier: "11" },
+      { nb: 12, boeuf: "720 g", porc: "720 g", agneau: "720 g", pommedeterre: "2400 g", poireau: "600 g", oignon: "600 g", vinblanc: "720 ml", laurier: "12" },
+      { nb: 13, boeuf: "780 g", porc: "780 g", agneau: "780 g", pommedeterre: "2600 g", poireau: "650 g", oignon: "650 g", vinblanc: "780 ml", laurier: "13" },
+      { nb: 14, boeuf: "840 g", porc: "840 g", agneau: "840 g", pommedeterre: "2800 g", poireau: "700 g", oignon: "700 g", vinblanc: "840 ml", laurier: "14" },
+      { nb: 15, boeuf: "900 g", porc: "900 g", agneau: "900 g", pommedeterre: "3000 g", poireau: "750 g", oignon: "750 g", vinblanc: "900 ml", laurier: "15" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍷", titre: "Mariner les viandes", detail: "La veille, couper les trois viandes en gros cubes et les faire mariner au vin blanc d'Alsace avec oignon, ail, laurier et thym. CLÉ : 12 h de marinade, c'est TOUT le goût du baeckeoffe.", badge: "⏱ 12 h" },
+      { icone: "🥔", titre: "Trancher les légumes", detail: "Éplucher et couper les pommes de terre, les oignons et les poireaux en fines rondelles.", badge: "⏱ 15 min" },
+      { icone: "🏗️", titre: "Monter en couches", detail: "Dans une terrine, alterner les couches : pommes de terre, viandes égouttées, légumes, en salant chaque étage. Terminer par une couche de pommes de terre.", badge: null },
+      { icone: "🍶", titre: "Mouiller", detail: "Verser la marinade filtrée jusqu'à hauteur des légumes.", badge: null },
+      { icone: "🔒", titre: "Luter le couvercle", detail: "Fermer avec le couvercle et sceller le bord avec un cordon de pâte (farine + eau) : la cuisson se fait à l'étouffée, aucune vapeur ne s'échappe.", badge: null },
+      { icone: "♨️", titre: "Cuire longuement", detail: "Enfourner à 180°C et cuire sans jamais ouvrir. IMPORTANT : on ne soulève pas le couvercle, la magie opère à l'intérieur.", badge: "⏱ 2 h 30" },
+      { icone: "🍽️", titre: "Servir", detail: "Casser la croûte de pâte à table pour libérer les arômes. Servir brûlant, avec une salade verte et un verre de riesling.", badge: null }
+    ]
+  },
+  meatloaf: {
+    nom: "Meatloaf",
+    cat: "plats", pays: "usa",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "1h15",
+    niveau: "⭐ Facile",
+    emoji: "🍖",
+    liees: ["ketchup"],
+    description: "Le meatloaf américain — le pain de viande de grand-mère : bœuf haché moelleux glacé au ketchup caramélisé, cuit au four. Le comfort food US par excellence, avec sa purée et ses légumes.",
+    tableauMeatloaf: [
+      { nb: 1, boeuf: "150 g", chapelure: "20 g", oeuf: "0.4", oignon: "30 g", ketchup: "25 g", lait: "20 ml", moutarde: "5 g" },
+      { nb: 2, boeuf: "300 g", chapelure: "40 g", oeuf: "0.8", oignon: "60 g", ketchup: "50 g", lait: "40 ml", moutarde: "10 g" },
+      { nb: 3, boeuf: "450 g", chapelure: "60 g", oeuf: "1.2", oignon: "90 g", ketchup: "75 g", lait: "60 ml", moutarde: "15 g" },
+      { nb: 4, boeuf: "600 g", chapelure: "80 g", oeuf: "1.6", oignon: "120 g", ketchup: "100 g", lait: "80 ml", moutarde: "20 g" },
+      { nb: 5, boeuf: "750 g", chapelure: "100 g", oeuf: "2", oignon: "150 g", ketchup: "125 g", lait: "100 ml", moutarde: "25 g" },
+      { nb: 6, boeuf: "900 g", chapelure: "120 g", oeuf: "2.4", oignon: "180 g", ketchup: "150 g", lait: "120 ml", moutarde: "30 g" },
+      { nb: 7, boeuf: "1050 g", chapelure: "140 g", oeuf: "2.8", oignon: "210 g", ketchup: "175 g", lait: "140 ml", moutarde: "35 g" },
+      { nb: 8, boeuf: "1200 g", chapelure: "160 g", oeuf: "3.2", oignon: "240 g", ketchup: "200 g", lait: "160 ml", moutarde: "40 g" },
+      { nb: 9, boeuf: "1350 g", chapelure: "180 g", oeuf: "3.6", oignon: "270 g", ketchup: "225 g", lait: "180 ml", moutarde: "45 g" },
+      { nb: 10, boeuf: "1500 g", chapelure: "200 g", oeuf: "4", oignon: "300 g", ketchup: "250 g", lait: "200 ml", moutarde: "50 g" },
+      { nb: 11, boeuf: "1650 g", chapelure: "220 g", oeuf: "4.4", oignon: "330 g", ketchup: "275 g", lait: "220 ml", moutarde: "55 g" },
+      { nb: 12, boeuf: "1800 g", chapelure: "240 g", oeuf: "4.8", oignon: "360 g", ketchup: "300 g", lait: "240 ml", moutarde: "60 g" },
+      { nb: 13, boeuf: "1950 g", chapelure: "260 g", oeuf: "5.2", oignon: "390 g", ketchup: "325 g", lait: "260 ml", moutarde: "65 g" },
+      { nb: 14, boeuf: "2100 g", chapelure: "280 g", oeuf: "5.6", oignon: "420 g", ketchup: "350 g", lait: "280 ml", moutarde: "70 g" },
+      { nb: 15, boeuf: "2250 g", chapelure: "300 g", oeuf: "6", oignon: "450 g", ketchup: "375 g", lait: "300 ml", moutarde: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Tremper la chapelure", detail: "Faire tremper la chapelure dans le lait quelques minutes : c'est le secret d'un meatloaf moelleux, jamais sec (la panade).", badge: null },
+      { icone: "🧅", titre: "Suer l'oignon", detail: "Faire revenir l'oignon finement haché jusqu'à ce qu'il soit translucide, puis laisser tiédir.", badge: "⏱ 5 min" },
+      { icone: "🥣", titre: "Mélanger l'appareil", detail: "Mélanger à la main le bœuf haché, la chapelure trempée, l'œuf, l'oignon, une partie du ketchup, sel et poivre. Ne pas trop travailler pour garder du moelleux.", badge: null },
+      { icone: "🍞", titre: "Former le pain", detail: "Tasser dans un moule à cake ou former un pain sur une plaque.", badge: null },
+      { icone: "🖌️", titre: "Glacer au ketchup", detail: "Badigeonner le dessus d'une couche généreuse de ketchup (mélangé à un peu de moutarde et de cassonade). CLÉ : ce glaçage va caraméliser et faire toute la gourmandise.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfourner à 180°C jusqu'à ce que le meatloaf soit cuit à cœur et le glaçage laqué.", badge: "⏱ 50 min" },
+      { icone: "🔪", titre: "Reposer et trancher", detail: "Laisser reposer 10 min avant de trancher : il se tient mieux. Servir avec une purée maison et des haricots verts.", badge: "⏱ 10 min" }
+    ]
+  },
+  truffade: {
+    nom: "Truffade",
+    cat: "plats", pays: "france",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "La truffade auvergnate — pommes de terre sautées écrasées avec de la tomme fraîche qui file, et des lardons. Un plat de montagne roboratif et filant à souhait, cousin de l'aligot.",
+    tableauTruffade: [
+      { nb: 1, pommedeterre: "200 g", tomme: "100 g", lardons: "40 g", ail: "2 g", graissecanard: "10" },
+      { nb: 2, pommedeterre: "400 g", tomme: "200 g", lardons: "80 g", ail: "4 g", graissecanard: "20" },
+      { nb: 3, pommedeterre: "600 g", tomme: "300 g", lardons: "120 g", ail: "6 g", graissecanard: "30" },
+      { nb: 4, pommedeterre: "800 g", tomme: "400 g", lardons: "160 g", ail: "8 g", graissecanard: "40" },
+      { nb: 5, pommedeterre: "1000 g", tomme: "500 g", lardons: "200 g", ail: "10 g", graissecanard: "50" },
+      { nb: 6, pommedeterre: "1200 g", tomme: "600 g", lardons: "240 g", ail: "12 g", graissecanard: "60" },
+      { nb: 7, pommedeterre: "1400 g", tomme: "700 g", lardons: "280 g", ail: "14 g", graissecanard: "70" },
+      { nb: 8, pommedeterre: "1600 g", tomme: "800 g", lardons: "320 g", ail: "16 g", graissecanard: "80" },
+      { nb: 9, pommedeterre: "1800 g", tomme: "900 g", lardons: "360 g", ail: "18 g", graissecanard: "90" },
+      { nb: 10, pommedeterre: "2000 g", tomme: "1000 g", lardons: "400 g", ail: "20 g", graissecanard: "100" },
+      { nb: 11, pommedeterre: "2200 g", tomme: "1100 g", lardons: "440 g", ail: "22 g", graissecanard: "110" },
+      { nb: 12, pommedeterre: "2400 g", tomme: "1200 g", lardons: "480 g", ail: "24 g", graissecanard: "120" },
+      { nb: 13, pommedeterre: "2600 g", tomme: "1300 g", lardons: "520 g", ail: "26 g", graissecanard: "130" },
+      { nb: 14, pommedeterre: "2800 g", tomme: "1400 g", lardons: "560 g", ail: "28 g", graissecanard: "140" },
+      { nb: 15, pommedeterre: "3000 g", tomme: "1500 g", lardons: "600 g", ail: "30 g", graissecanard: "150" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Couper les pommes de terre", detail: "Éplucher et couper les pommes de terre en fines lamelles ou petits cubes.", badge: null },
+      { icone: "🥓", titre: "Rissoler les lardons", detail: "Faire rissoler les lardons dans la graisse de canard (ou de l'huile), puis les réserver.", badge: "⏱ 5 min" },
+      { icone: "🍳", titre: "Cuire les pommes de terre", detail: "Cuire les pommes de terre à couvert dans la même poêle, en remuant, jusqu'à ce qu'elles soient tendres et dorées.", badge: "⏱ 20 min" },
+      { icone: "🧄", titre: "Écraser à l'ail", detail: "Ajouter l'ail écrasé et les lardons, puis écraser grossièrement les pommes de terre à la fourchette.", badge: null },
+      { icone: "🧀", titre: "Incorporer la tomme", detail: "Baisser le feu, ajouter la tomme fraîche en lamelles et mélanger sans cesse. CLÉ : la tomme doit fondre et FILER en formant de longs fils.", badge: "⏱ 5 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir brûlant quand le fromage file, directement dans la poêle, avec une salade verte à l'ail. Se déguste sans attendre.", badge: null }
+    ]
+  },
+
   pasteldechoclo: {
     nom: "Pastel de Choclo",
     cat: "plats", pays: "chili",

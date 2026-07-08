@@ -4,6 +4,81 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  seffa: {
+    nom: "Seffa",
+    cat: "desserts", pays: "maroc",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍚",
+    description: "La seffa marocaine — vermicelles (ou semoule) cuits à la vapeur, montés en dôme sucré à la cannelle avec amandes, raisins secs et sucre glace. Un dessert-plat de fête, à la fois doux et parfumé, servi à la fin d'un repas ou pour l'Aïd.",
+    tableauSeffa: [
+      { nb: 1, vermicelles: "60 g", beurre: "12 g", amandes: "15 g", raisinsec: "12 g", sucreglace: "10 g", cannelle: "1 g" },
+      { nb: 2, vermicelles: "120 g", beurre: "24 g", amandes: "30 g", raisinsec: "24 g", sucreglace: "20 g", cannelle: "2 g" },
+      { nb: 3, vermicelles: "180 g", beurre: "36 g", amandes: "45 g", raisinsec: "36 g", sucreglace: "30 g", cannelle: "3 g" },
+      { nb: 4, vermicelles: "240 g", beurre: "48 g", amandes: "60 g", raisinsec: "48 g", sucreglace: "40 g", cannelle: "4 g" },
+      { nb: 5, vermicelles: "300 g", beurre: "60 g", amandes: "75 g", raisinsec: "60 g", sucreglace: "50 g", cannelle: "5 g" },
+      { nb: 6, vermicelles: "360 g", beurre: "72 g", amandes: "90 g", raisinsec: "72 g", sucreglace: "60 g", cannelle: "6 g" },
+      { nb: 7, vermicelles: "420 g", beurre: "84 g", amandes: "105 g", raisinsec: "84 g", sucreglace: "70 g", cannelle: "7 g" },
+      { nb: 8, vermicelles: "480 g", beurre: "96 g", amandes: "120 g", raisinsec: "96 g", sucreglace: "80 g", cannelle: "8 g" },
+      { nb: 9, vermicelles: "540 g", beurre: "108 g", amandes: "135 g", raisinsec: "108 g", sucreglace: "90 g", cannelle: "9 g" },
+      { nb: 10, vermicelles: "600 g", beurre: "120 g", amandes: "150 g", raisinsec: "120 g", sucreglace: "100 g", cannelle: "10 g" },
+      { nb: 11, vermicelles: "660 g", beurre: "132 g", amandes: "165 g", raisinsec: "132 g", sucreglace: "110 g", cannelle: "11 g" },
+      { nb: 12, vermicelles: "720 g", beurre: "144 g", amandes: "180 g", raisinsec: "144 g", sucreglace: "120 g", cannelle: "12 g" },
+      { nb: 13, vermicelles: "780 g", beurre: "156 g", amandes: "195 g", raisinsec: "156 g", sucreglace: "130 g", cannelle: "13 g" },
+      { nb: 14, vermicelles: "840 g", beurre: "168 g", amandes: "210 g", raisinsec: "168 g", sucreglace: "140 g", cannelle: "14 g" },
+      { nb: 15, vermicelles: "900 g", beurre: "180 g", amandes: "225 g", raisinsec: "180 g", sucreglace: "150 g", cannelle: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Humidifier les vermicelles", detail: "Arroser les vermicelles (ou la semoule fine) d'un peu d'eau et d'huile, mélanger pour les séparer.", badge: null },
+      { icone: "♨️", titre: "Cuire à la vapeur", detail: "Cuire à la vapeur au couscoussier en trois fois, en aérant à la fourchette entre chaque passage. CLÉ : la triple cuisson vapeur donne des vermicelles légers et non collants.", badge: "⏱ 30 min" },
+      { icone: "🧈", titre: "Beurrer", detail: "Après la dernière cuisson, incorporer le beurre pour enrober les vermicelles et un peu de sel.", badge: null },
+      { icone: "🌰", titre: "Préparer la garniture", detail: "Faire dorer les amandes puis les concasser (en garder pour le décor), faire gonfler les raisins secs dans l'eau tiède.", badge: null },
+      { icone: "🥣", titre: "Sucrer", detail: "Mélanger les vermicelles avec le sucre glace, la cannelle, les amandes concassées et les raisins.", badge: null },
+      { icone: "⛰️", titre: "Monter en dôme", detail: "Dresser en dôme dans un plat, en tassant légèrement.", badge: null },
+      { icone: "🎨", titre: "Décorer et servir", detail: "Décorer de lignes de cannelle et de sucre glace en rayons, parsemer d'amandes entières. Se sert tiède, à partager à la cuillère.", badge: null }
+    ]
+  },
+  paindepices: {
+    nom: "Pain d'épices",
+    cat: "desserts", pays: "france",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 8,
+    temps: "1h + repos",
+    niveau: "⭐ Facile",
+    emoji: "🍯",
+    description: "Le pain d'épices — cake moelleux et parfumé au miel, à la cannelle et aux épices douces, qui se bonifie en vieillissant. Le gâteau réconfortant des goûters d'hiver et des fêtes, de Dijon à l'Alsace.",
+    tableauPainEpices: [
+      { nb: 1, farine: "30 g", miel: "30 g", sucre: "10 g", oeuf: "0.3", lait: "15 ml", cannelle: "1.5 g", gingembre: "1 g", levurechimique: "2 g" },
+      { nb: 2, farine: "60 g", miel: "60 g", sucre: "20 g", oeuf: "0.6", lait: "30 ml", cannelle: "3 g", gingembre: "2 g", levurechimique: "4 g" },
+      { nb: 3, farine: "90 g", miel: "90 g", sucre: "30 g", oeuf: "0.9", lait: "45 ml", cannelle: "4.5 g", gingembre: "3 g", levurechimique: "6 g" },
+      { nb: 4, farine: "120 g", miel: "120 g", sucre: "40 g", oeuf: "1.2", lait: "60 ml", cannelle: "6 g", gingembre: "4 g", levurechimique: "8 g" },
+      { nb: 5, farine: "150 g", miel: "150 g", sucre: "50 g", oeuf: "1.5", lait: "75 ml", cannelle: "7.5 g", gingembre: "5 g", levurechimique: "10 g" },
+      { nb: 6, farine: "180 g", miel: "180 g", sucre: "60 g", oeuf: "1.8", lait: "90 ml", cannelle: "9 g", gingembre: "6 g", levurechimique: "12 g" },
+      { nb: 7, farine: "210 g", miel: "210 g", sucre: "70 g", oeuf: "2.1", lait: "105 ml", cannelle: "10.5 g", gingembre: "7 g", levurechimique: "14 g" },
+      { nb: 8, farine: "240 g", miel: "240 g", sucre: "80 g", oeuf: "2.4", lait: "120 ml", cannelle: "12 g", gingembre: "8 g", levurechimique: "16 g" },
+      { nb: 9, farine: "270 g", miel: "270 g", sucre: "90 g", oeuf: "2.7", lait: "135 ml", cannelle: "13.5 g", gingembre: "9 g", levurechimique: "18 g" },
+      { nb: 10, farine: "300 g", miel: "300 g", sucre: "100 g", oeuf: "3", lait: "150 ml", cannelle: "15 g", gingembre: "10 g", levurechimique: "20 g" },
+      { nb: 11, farine: "330 g", miel: "330 g", sucre: "110 g", oeuf: "3.3", lait: "165 ml", cannelle: "16.5 g", gingembre: "11 g", levurechimique: "22 g" },
+      { nb: 12, farine: "360 g", miel: "360 g", sucre: "120 g", oeuf: "3.6", lait: "180 ml", cannelle: "18 g", gingembre: "12 g", levurechimique: "24 g" },
+      { nb: 13, farine: "390 g", miel: "390 g", sucre: "130 g", oeuf: "3.9", lait: "195 ml", cannelle: "19.5 g", gingembre: "13 g", levurechimique: "26 g" },
+      { nb: 14, farine: "420 g", miel: "420 g", sucre: "140 g", oeuf: "4.2", lait: "210 ml", cannelle: "21 g", gingembre: "14 g", levurechimique: "28 g" },
+      { nb: 15, farine: "450 g", miel: "450 g", sucre: "150 g", oeuf: "4.5", lait: "225 ml", cannelle: "22.5 g", gingembre: "15 g", levurechimique: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍯", titre: "Chauffer le miel", detail: "Faire tiédir le miel avec le lait et le sucre jusqu'à ce que le tout soit fluide et homogène (sans bouillir).", badge: "⏱ 3 min" },
+      { icone: "🌾", titre: "Mélanger les secs", detail: "Mélanger la farine, la levure chimique et les épices : cannelle, gingembre, anis, muscade, une pointe de girofle.", badge: null },
+      { icone: "🥣", titre: "Assembler", detail: "Verser le miel tiède sur les secs, ajouter l'œuf et mélanger jusqu'à une pâte lisse et coulante.", badge: null },
+      { icone: "🫗", titre: "Mouler", detail: "Verser dans un moule à cake beurré et fariné.", badge: null },
+      { icone: "♨️", titre: "Cuire doucement", detail: "Enfourner à 160°C (four doux). IMPORTANT : cuisson douce et lente pour un pain d'épices moelleux qui ne dessèche pas, une lame doit ressortir propre.", badge: "⏱ 45 min" },
+      { icone: "⏳", titre: "Laisser reposer", detail: "Démouler tiède et laisser reposer idéalement 24-48 h emballé dans du film. CLÉ : le pain d'épices se BONIFIE avec le repos, les arômes se développent.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Trancher et déguster nature, beurré, ou avec du foie gras à Noël. Se garde plus d'une semaine bien emballé.", badge: null }
+    ]
+  },
+
   bourdaloue: {
     nom: "Tarte Bourdaloue",
     cat: "desserts", pays: "france",

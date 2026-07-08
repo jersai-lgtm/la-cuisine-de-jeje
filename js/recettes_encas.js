@@ -4,6 +4,152 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  chebureki: {
+    nom: "Chebureki",
+    cat: "encas", pays: "russie",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Le chebureki — grand chausson frit croustillant à la viande hachée juteuse et aux oignons, spécialité tatare adorée dans tout l'Est. La pâte fine et bullée cache une farce fondante et parfumée.",
+    tableauChebureki: [
+      { nb: 1, farine: "60 g", boeuf: "70 g", oignon: "30 g", huilefriture: "40 ml", eau: "25 ml" },
+      { nb: 2, farine: "120 g", boeuf: "140 g", oignon: "60 g", huilefriture: "80 ml", eau: "50 ml" },
+      { nb: 3, farine: "180 g", boeuf: "210 g", oignon: "90 g", huilefriture: "120 ml", eau: "75 ml" },
+      { nb: 4, farine: "240 g", boeuf: "280 g", oignon: "120 g", huilefriture: "160 ml", eau: "100 ml" },
+      { nb: 5, farine: "300 g", boeuf: "350 g", oignon: "150 g", huilefriture: "200 ml", eau: "125 ml" },
+      { nb: 6, farine: "360 g", boeuf: "420 g", oignon: "180 g", huilefriture: "240 ml", eau: "150 ml" },
+      { nb: 7, farine: "420 g", boeuf: "490 g", oignon: "210 g", huilefriture: "280 ml", eau: "175 ml" },
+      { nb: 8, farine: "480 g", boeuf: "560 g", oignon: "240 g", huilefriture: "320 ml", eau: "200 ml" },
+      { nb: 9, farine: "540 g", boeuf: "630 g", oignon: "270 g", huilefriture: "360 ml", eau: "225 ml" },
+      { nb: 10, farine: "600 g", boeuf: "700 g", oignon: "300 g", huilefriture: "400 ml", eau: "250 ml" },
+      { nb: 11, farine: "660 g", boeuf: "770 g", oignon: "330 g", huilefriture: "440 ml", eau: "275 ml" },
+      { nb: 12, farine: "720 g", boeuf: "840 g", oignon: "360 g", huilefriture: "480 ml", eau: "300 ml" },
+      { nb: 13, farine: "780 g", boeuf: "910 g", oignon: "390 g", huilefriture: "520 ml", eau: "325 ml" },
+      { nb: 14, farine: "840 g", boeuf: "980 g", oignon: "420 g", huilefriture: "560 ml", eau: "350 ml" },
+      { nb: 15, farine: "900 g", boeuf: "1050 g", oignon: "450 g", huilefriture: "600 ml", eau: "375 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Faire la pâte", detail: "Pétrir la farine avec l'eau tiède, une pincée de sel et un filet d'huile jusqu'à une pâte lisse et souple. Laisser reposer 30 min sous un torchon.", badge: "⏱ 30 min" },
+      { icone: "🥩", titre: "Préparer la farce", detail: "Mélanger le bœuf haché avec l'oignon très finement haché, sel, poivre et un peu d'eau. CLÉ : l'eau dans la farce la rend juteuse à la cuisson.", badge: null },
+      { icone: "📏", titre: "Étaler finement", detail: "Étaler la pâte très finement et découper de grands disques (comme une assiette).", badge: null },
+      { icone: "🌙", titre: "Garnir et souder", detail: "Étaler une fine couche de farce sur une moitié, replier en demi-lune et souder les bords en pressant avec une fourchette.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Frire dans l'huile chaude (180°C) jusqu'à ce que le chausson soit doré et boursouflé de bulles. IMPORTANT : la pâte fine cuit vite, la farce crue cuit dedans à la vapeur.", badge: "⏱ 3 min/face" },
+      { icone: "🧻", titre: "Égoutter et servir", detail: "Égoutter sur du papier absorbant. Se mange brûlant, à la main — attention au jus qui gicle à la première bouchée !", badge: null }
+    ]
+  },
+  pisanggoreng: {
+    nom: "Pisang Goreng",
+    cat: "encas", pays: "indonesie",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍌",
+    description: "Le pisang goreng — beignets de banane croustillants d'Indonésie, dorés dans une pâte légère. Le snack de rue incontournable, croquant dehors et fondant-sucré dedans, arrosé de miel ou de sucre.",
+    tableauPisangGoreng: [
+      { nb: 1, banane: "80 g", farine: "25 g", sucre: "5 g", huilefriture: "40 ml", maizena: "8 g" },
+      { nb: 2, banane: "160 g", farine: "50 g", sucre: "10 g", huilefriture: "80 ml", maizena: "16 g" },
+      { nb: 3, banane: "240 g", farine: "75 g", sucre: "15 g", huilefriture: "120 ml", maizena: "24 g" },
+      { nb: 4, banane: "320 g", farine: "100 g", sucre: "20 g", huilefriture: "160 ml", maizena: "32 g" },
+      { nb: 5, banane: "400 g", farine: "125 g", sucre: "25 g", huilefriture: "200 ml", maizena: "40 g" },
+      { nb: 6, banane: "480 g", farine: "150 g", sucre: "30 g", huilefriture: "240 ml", maizena: "48 g" },
+      { nb: 7, banane: "560 g", farine: "175 g", sucre: "35 g", huilefriture: "280 ml", maizena: "56 g" },
+      { nb: 8, banane: "640 g", farine: "200 g", sucre: "40 g", huilefriture: "320 ml", maizena: "64 g" },
+      { nb: 9, banane: "720 g", farine: "225 g", sucre: "45 g", huilefriture: "360 ml", maizena: "72 g" },
+      { nb: 10, banane: "800 g", farine: "250 g", sucre: "50 g", huilefriture: "400 ml", maizena: "80 g" },
+      { nb: 11, banane: "880 g", farine: "275 g", sucre: "55 g", huilefriture: "440 ml", maizena: "88 g" },
+      { nb: 12, banane: "960 g", farine: "300 g", sucre: "60 g", huilefriture: "480 ml", maizena: "96 g" },
+      { nb: 13, banane: "1040 g", farine: "325 g", sucre: "65 g", huilefriture: "520 ml", maizena: "104 g" },
+      { nb: 14, banane: "1120 g", farine: "350 g", sucre: "70 g", huilefriture: "560 ml", maizena: "112 g" },
+      { nb: 15, banane: "1200 g", farine: "375 g", sucre: "75 g", huilefriture: "600 ml", maizena: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍌", titre: "Préparer les bananes", detail: "Éplucher les bananes (idéalement des plantains bien mûrs ou des bananes fermes) et les couper en deux dans la longueur, ou en éventail.", badge: null },
+      { icone: "🥣", titre: "Faire la pâte", detail: "Mélanger la farine, la maïzena, le sucre, une pincée de sel et de l'eau glacée jusqu'à une pâte lisse et fluide. ASTUCE : l'eau très froide donne une pâte plus croustillante.", badge: null },
+      { icone: "🍶", titre: "Enrober", detail: "Tremper chaque morceau de banane dans la pâte pour bien l'enrober.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Plonger dans l'huile chaude (180°C) et frire jusqu'à ce que les beignets soient dorés et croustillants.", badge: "⏱ 4 min" },
+      { icone: "🧻", titre: "Égoutter", detail: "Égoutter sur du papier absorbant pour retirer l'excès d'huile.", badge: null },
+      { icone: "🍯", titre: "Servir", detail: "Servir chaud, arrosé de miel, de lait concentré sucré ou saupoudré de sucre glace. Un régal à toute heure.", badge: null }
+    ]
+  },
+  naanfromage: {
+    nom: "Naan au fromage",
+    cat: "encas", pays: "inde",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "25 min + 1h repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    liees: ["naan"],
+    description: "Le naan au fromage — le pain indien moelleux farci de fromage fondant qui file à la déchirure. La version gourmande du naan, star des restaurants indiens, parfaite pour saucer un curry.",
+    tableauNaanFromage: [
+      { nb: 1, farine: "50 g", yaourt: "25 g", fromage: "40 g", levure: "2 g", beurre: "8 g" },
+      { nb: 2, farine: "100 g", yaourt: "50 g", fromage: "80 g", levure: "4 g", beurre: "16 g" },
+      { nb: 3, farine: "150 g", yaourt: "75 g", fromage: "120 g", levure: "6 g", beurre: "24 g" },
+      { nb: 4, farine: "200 g", yaourt: "100 g", fromage: "160 g", levure: "8 g", beurre: "32 g" },
+      { nb: 5, farine: "250 g", yaourt: "125 g", fromage: "200 g", levure: "10 g", beurre: "40 g" },
+      { nb: 6, farine: "300 g", yaourt: "150 g", fromage: "240 g", levure: "12 g", beurre: "48 g" },
+      { nb: 7, farine: "350 g", yaourt: "175 g", fromage: "280 g", levure: "14 g", beurre: "56 g" },
+      { nb: 8, farine: "400 g", yaourt: "200 g", fromage: "320 g", levure: "16 g", beurre: "64 g" },
+      { nb: 9, farine: "450 g", yaourt: "225 g", fromage: "360 g", levure: "18 g", beurre: "72 g" },
+      { nb: 10, farine: "500 g", yaourt: "250 g", fromage: "400 g", levure: "20 g", beurre: "80 g" },
+      { nb: 11, farine: "550 g", yaourt: "275 g", fromage: "440 g", levure: "22 g", beurre: "88 g" },
+      { nb: 12, farine: "600 g", yaourt: "300 g", fromage: "480 g", levure: "24 g", beurre: "96 g" },
+      { nb: 13, farine: "650 g", yaourt: "325 g", fromage: "520 g", levure: "26 g", beurre: "104 g" },
+      { nb: 14, farine: "700 g", yaourt: "350 g", fromage: "560 g", levure: "28 g", beurre: "112 g" },
+      { nb: 15, farine: "750 g", yaourt: "375 g", fromage: "600 g", levure: "30 g", beurre: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Faire la pâte", detail: "Pétrir la farine avec le yaourt, la levure, un peu d'eau tiède, du sel et un filet d'huile jusqu'à une pâte souple. Laisser lever 1 h.", badge: "⏱ 1 h" },
+      { icone: "🧀", titre: "Préparer la farce", detail: "Écraser le fromage (vache qui rit, mozzarella ou un mélange) en une pâte homogène.", badge: null },
+      { icone: "⭕", titre: "Garnir", detail: "Étaler des boules de pâte en petits disques, déposer une boule de fromage au centre, refermer la pâte par-dessus et souder.", badge: null },
+      { icone: "📏", titre: "Étaler délicatement", detail: "Étaler doucement au rouleau le naan farci, sans faire sortir le fromage, en forme de goutte allongée.", badge: null },
+      { icone: "🍳", titre: "Cuire à la poêle", detail: "Cuire à sec dans une poêle très chaude jusqu'à ce que des cloques dorées se forment, retourner. CLÉ : feu vif pour les taches brûlées typiques du naan.", badge: "⏱ 2 min/face" },
+      { icone: "🧈", titre: "Beurrer et servir", detail: "Badigeonner de beurre fondu (ou de ghee à l'ail et coriandre) à la sortie. Déchirer chaud pour voir le fromage filer. Voir la recette du naan nature en lien.", badge: null }
+    ]
+  },
+  kalinti: {
+    nom: "Kalinti",
+    cat: "encas", pays: "maroc",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "15 min + 40 min cuisson",
+    niveau: "⭐ Facile",
+    emoji: "🧆",
+    description: "La kalinti (ou karane) — flan salé de farine de pois chiche cuit au four, doré dessus et fondant dedans, relevé de cumin. Le street-food de Tanger vendu en sandwich, économique et rassasiant.",
+    tableauKalinti: [
+      { nb: 1, farinepoischiche: "40 g", oeuf: "0.5", huile: "8 ml", cumin: "1 g" },
+      { nb: 2, farinepoischiche: "80 g", oeuf: "1", huile: "16 ml", cumin: "2 g" },
+      { nb: 3, farinepoischiche: "120 g", oeuf: "1.5", huile: "24 ml", cumin: "3 g" },
+      { nb: 4, farinepoischiche: "160 g", oeuf: "2", huile: "32 ml", cumin: "4 g" },
+      { nb: 5, farinepoischiche: "200 g", oeuf: "2.5", huile: "40 ml", cumin: "5 g" },
+      { nb: 6, farinepoischiche: "240 g", oeuf: "3", huile: "48 ml", cumin: "6 g" },
+      { nb: 7, farinepoischiche: "280 g", oeuf: "3.5", huile: "56 ml", cumin: "7 g" },
+      { nb: 8, farinepoischiche: "320 g", oeuf: "4", huile: "64 ml", cumin: "8 g" },
+      { nb: 9, farinepoischiche: "360 g", oeuf: "4.5", huile: "72 ml", cumin: "9 g" },
+      { nb: 10, farinepoischiche: "400 g", oeuf: "5", huile: "80 ml", cumin: "10 g" },
+      { nb: 11, farinepoischiche: "440 g", oeuf: "5.5", huile: "88 ml", cumin: "11 g" },
+      { nb: 12, farinepoischiche: "480 g", oeuf: "6", huile: "96 ml", cumin: "12 g" },
+      { nb: 13, farinepoischiche: "520 g", oeuf: "6.5", huile: "104 ml", cumin: "13 g" },
+      { nb: 14, farinepoischiche: "560 g", oeuf: "7", huile: "112 ml", cumin: "14 g" },
+      { nb: 15, farinepoischiche: "600 g", oeuf: "7.5", huile: "120 ml", cumin: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Délayer la farine", detail: "Délayer la farine de pois chiche dans de l'eau en fouettant énergiquement pour éviter les grumeaux. La pâte doit être très liquide.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Laisser reposer 15 min pour que la farine s'hydrate bien.", badge: "⏱ 15 min" },
+      { icone: "🥚", titre: "Ajouter les œufs", detail: "Incorporer les œufs battus, l'huile, le sel et une bonne pincée de cumin. Bien mélanger.", badge: null },
+      { icone: "🫗", titre: "Verser dans le plat", detail: "Verser l'appareil dans un plat huilé sur environ 2 cm d'épaisseur.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Enfourner à 200°C jusqu'à ce que le dessus soit bien doré et le cœur pris mais fondant. CLÉ : doré dessus, crémeux dedans, comme une socca épaisse.", badge: "⏱ 40 min" },
+      { icone: "🥪", titre: "Servir", detail: "Saupoudrer de cumin et de sel, découper en parts. Se mange chaud, tel quel ou glissé dans un demi-pain avec un filet de harissa, façon Tanger.", badge: null }
+    ]
+  },
+
   panbagnat: {
     nom: "Pan-bagnat", cat: "encas", pays: "france", dateAjout: "2026-06-17T14:00:00",
     base: 2, temps: "20 min", niveau: "⭐ Facile", emoji: "🥪",

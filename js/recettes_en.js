@@ -35496,6 +35496,600 @@ window.RECETTES_EN = {
    }
   ]
  },
+ "glacenoisette": {
+  "nom": "Hazelnut Ice Cream",
+  "description": "Hazelnut ice cream — an intense, silky custard ice cream tasting of toasted hazelnuts. An autumn treat reminiscent of praline.",
+  "etapes": [
+   {
+    "titre": "Toast the hazelnuts",
+    "detail": "Toast the hazelnuts in the oven at 160°C until fragrant, then rub them in a towel to remove the skins. KEY: toasting multiplies their flavour."
+   },
+   {
+    "titre": "Infuse",
+    "detail": "Coarsely blend the hazelnuts and infuse them in the hot milk and cream for 20 min off the heat."
+   },
+   {
+    "titre": "Whisk the yolks",
+    "detail": "Whisk the yolks with the sugar until pale and ribbon-like."
+   },
+   {
+    "titre": "Cook the custard",
+    "detail": "Strain the infused milk onto the yolks, return to low heat and cook to a custard (83°C). IMPORTANT: never boil or the eggs curdle."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cover with film touching the surface and refrigerate at least 4 h: a cold base churns smoother."
+   },
+   {
+    "titre": "Churn",
+    "detail": "Churn in an ice-cream maker. No machine? Freeze, whisking vigorously every 30 min for 3 h. TIP: fold in caramelised hazelnut shards at the end."
+   }
+  ]
+ },
+ "pizzacapricciosa": {
+  "nom": "Capricciosa Pizza",
+  "description": "Capricciosa pizza — the Italian 'whimsical' pizza with four toppings: ham, mushrooms, artichokes and olives over mozzarella and tomato. Generous and balanced, a pizzeria classic.",
+  "etapes": [
+   {
+    "titre": "Spread the sauce",
+    "detail": "Roll out the dough and spread a thin layer of tomato sauce, leaving a bare rim."
+   },
+   {
+    "titre": "Add the mozzarella",
+    "detail": "Scatter the drained, torn mozzarella over the sauce."
+   },
+   {
+    "titre": "Arrange the toppings",
+    "detail": "Distribute the ham, sliced mushrooms, artichoke hearts and olives. TRADITION: each topping on a quarter, or all mixed as you like."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle of olive oil, oregano, salt. Don't overload: the capricciosa is generous but not drowned."
+   },
+   {
+    "titre": "Bake very hot",
+    "detail": "Bake at 250°C (as hot as possible) on a preheated stone or tray. KEY: a very hot oven for a dough that puffs and crisps."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Take out when the crust is golden and blistered and the mozzarella melted. Serve at once."
+   }
+  ]
+ },
+ "saladechourouge": {
+  "nom": "Red Cabbage & Apple Salad",
+  "description": "Red cabbage and apple salad — crunchy cabbage and tart apple bound in a walnut vinaigrette. Fresh, colourful and crisp, perfect as a winter starter or with meat.",
+  "etapes": [
+   {
+    "titre": "Shred the cabbage",
+    "detail": "Shred the red cabbage as finely as possible (with a knife or mandoline)."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Salt lightly and massage the cabbage by hand for a few minutes: it softens and becomes more digestible. TIP: a little hot vinegar sets and revives its colour."
+   },
+   {
+    "titre": "Cut the apple",
+    "detail": "Cut the apple into thin sticks or dice, skin on for colour. Squeeze lemon over to stop it browning."
+   },
+   {
+    "titre": "Make the vinaigrette",
+    "detail": "Emulsify the mustard, cider vinegar and oil (ideally walnut oil), salt and pepper."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Toss the cabbage, apple and crushed walnuts with the vinaigrette."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill 30 min before serving: the cabbage softens and soaks up the flavour. Keeps 2 days chilled."
+   }
+  ]
+ },
+ "saladeendivesnoix": {
+  "nom": "Endive, Walnut & Blue Cheese Salad",
+  "description": "Endive salad with walnuts and roquefort — the crunchy bitterness of endive, the crunch of walnuts and the creaminess of blue cheese. The northern trio, chic and ready in fifteen minutes.",
+  "etapes": [
+   {
+    "titre": "Prepare the endives",
+    "detail": "Remove the bitter core at the base of the endives, then cut into pieces or separate the leaves. IMPORTANT: don't soak them, they'd turn bitter."
+   },
+   {
+    "titre": "Cut the apple",
+    "detail": "Cut the apple into thin sticks (a tart variety like Granny Smith), skin on."
+   },
+   {
+    "titre": "Crumble the blue",
+    "detail": "Crumble the roquefort (or another blue cheese) into small pieces."
+   },
+   {
+    "titre": "Vinaigrette",
+    "detail": "Emulsify a walnut oil vinaigrette with wine vinegar, salt and pepper. TIP: a touch of honey balances the endive's bitterness."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Toss endives, apple and walnuts with the vinaigrette, then scatter the roquefort on top at the last moment."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, well chilled. Perfect as a starter or with toasted walnut bread."
+   }
+  ]
+ },
+ "dakos": {
+  "nom": "Dakos",
+  "description": "Cretan dakos — a rustic barley rusk softened and topped with juicy grated tomato, crumbled feta and olives, drizzled with olive oil. The Greek bruschetta, fresh and sun-drenched.",
+  "etapes": [
+   {
+    "titre": "Prepare the base",
+    "detail": "Use a Cretan barley rusk (paximadi), or well-toasted, dry country bread."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Quickly pass the rusk under a trickle of water (or rub with half a tomato) to soften it just enough: soft underneath, still a little crunchy. IMPORTANT: without soaking it through."
+   },
+   {
+    "titre": "Grate the tomato",
+    "detail": "Grate ripe tomatoes on the coarse side (discard the skin left in your hand) for a juicy pulp."
+   },
+   {
+    "titre": "Top",
+    "detail": "Spread the tomato pulp over the rusk: its juice finishes softening it."
+   },
+   {
+    "titre": "Add feta and olives",
+    "detail": "Crumble feta on top, add the olives and sprinkle with dried oregano."
+   },
+   {
+    "titre": "Drizzle and serve",
+    "detail": "Drizzle generously with virgin olive oil, add pepper. Serve at once, before the rusk goes soggy."
+   }
+  ]
+ },
+ "baeckeoffe": {
+  "nom": "Baeckeoffe",
+  "description": "Alsatian baeckeoffe — three meats marinated in white wine then slow-cooked for hours with potatoes and leeks under a sealed lid. The 'baker's oven': a rustic, generous sharing dish.",
+  "etapes": [
+   {
+    "titre": "Marinate the meats",
+    "detail": "The day before, cube the three meats and marinate them in Alsatian white wine with onion, garlic, bay and thyme. KEY: 12 h of marinating is the whole flavour of baeckeoffe."
+   },
+   {
+    "titre": "Slice the vegetables",
+    "detail": "Peel and slice the potatoes, onions and leeks into thin rounds."
+   },
+   {
+    "titre": "Layer up",
+    "detail": "In a terrine, alternate layers: potatoes, drained meats, vegetables, salting each layer. Finish with a layer of potatoes."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour the strained marinade in up to the level of the vegetables."
+   },
+   {
+    "titre": "Seal the lid",
+    "detail": "Close with the lid and seal the edge with a rope of dough (flour + water): it cooks sealed, no steam escapes."
+   },
+   {
+    "titre": "Slow-cook",
+    "detail": "Bake at 180°C and cook without ever opening. IMPORTANT: don't lift the lid, the magic happens inside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Break the dough crust at the table to release the aromas. Serve piping hot, with a green salad and a glass of riesling."
+   }
+  ]
+ },
+ "meatloaf": {
+  "nom": "Meatloaf",
+  "description": "American meatloaf — grandma's meatloaf: moist ground beef glazed with caramelised ketchup, baked in the oven. US comfort food at its finest, with mash and vegetables.",
+  "etapes": [
+   {
+    "titre": "Soak the breadcrumbs",
+    "detail": "Soak the breadcrumbs in the milk for a few minutes: the secret to a moist meatloaf, never dry (the panade)."
+   },
+   {
+    "titre": "Sweat the onion",
+    "detail": "Cook the finely chopped onion until translucent, then let cool."
+   },
+   {
+    "titre": "Mix the mixture",
+    "detail": "Mix by hand the ground beef, soaked breadcrumbs, egg, onion, some of the ketchup, salt and pepper. Don't overwork it, to keep it moist."
+   },
+   {
+    "titre": "Form the loaf",
+    "detail": "Press into a loaf tin or shape a loaf on a tray."
+   },
+   {
+    "titre": "Glaze with ketchup",
+    "detail": "Brush the top with a generous layer of ketchup (mixed with a little mustard and brown sugar). KEY: this glaze caramelises and makes all the indulgence."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C until cooked through and the glaze is lacquered."
+   },
+   {
+    "titre": "Rest and slice",
+    "detail": "Rest 10 min before slicing: it holds together better. Serve with homemade mash and green beans."
+   }
+  ]
+ },
+ "truffade": {
+  "nom": "Truffade",
+  "description": "Auvergne truffade — sautéed potatoes crushed with stringy fresh tomme cheese and lardons. A hearty, gloriously stretchy mountain dish, cousin of aligot.",
+  "etapes": [
+   {
+    "titre": "Cut the potatoes",
+    "detail": "Peel and cut the potatoes into thin slices or small cubes."
+   },
+   {
+    "titre": "Brown the lardons",
+    "detail": "Brown the lardons in duck fat (or oil), then set aside."
+   },
+   {
+    "titre": "Cook the potatoes",
+    "detail": "Cook the potatoes covered in the same pan, stirring, until tender and golden."
+   },
+   {
+    "titre": "Crush with garlic",
+    "detail": "Add the crushed garlic and the lardons, then roughly crush the potatoes with a fork."
+   },
+   {
+    "titre": "Add the tomme",
+    "detail": "Lower the heat, add the sliced fresh tomme and stir constantly. KEY: the tomme must melt and STRETCH into long strings."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot while the cheese stretches, straight from the pan, with a garlicky green salad. Enjoy without waiting."
+   }
+  ]
+ },
+ "batbout": {
+  "nom": "Batbout",
+  "description": "Moroccan batbout — a small round pan-cooked bread that puffs up and forms a pocket, soft inside. Perfect for stuffing into mini-sandwiches or dipping in sauce. No oven, no fuss.",
+  "etapes": [
+   {
+    "titre": "Mix the dry ingredients",
+    "detail": "Mix the flour, fine semolina, sugar, salt and baker's yeast."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Add warm water gradually and knead to a soft, smooth dough that no longer sticks."
+   },
+   {
+    "titre": "Form the rounds",
+    "detail": "Divide into balls, roll them into 1/2 cm thick discs on a semolina-dusted surface."
+   },
+   {
+    "titre": "Let rise",
+    "detail": "Cover with a towel and let rise until the discs are puffed and soft."
+   },
+   {
+    "titre": "Pan-cook",
+    "detail": "Cook dry in a hot pan over medium heat. KEY: the batbout puffs and forms its characteristic pocket as it cooks; turn halfway."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool under a towel. Split and stuff with kefta, tuna-tomato or cheese — the perfect Moroccan mini-sandwich."
+   }
+  ]
+ },
+ "franzbrotchen": {
+  "nom": "Franzbrötchen",
+  "description": "Hamburg Franzbrötchen — a flaky cinnamon-sugar roll, pressed in the middle so the edges caramelise. The German cousin of the croissant, between a milk bread and a cinnamon roll.",
+  "etapes": [
+   {
+    "titre": "Make the enriched dough",
+    "detail": "Knead flour, warm milk, yeast, sugar, a little soft butter and the egg to a soft dough. Let rise 1 h."
+   },
+   {
+    "titre": "Roll out and butter",
+    "detail": "Roll the dough into a rectangle, spread soft butter over it and sprinkle generously with sugar and cinnamon."
+   },
+   {
+    "titre": "Roll up",
+    "detail": "Roll the dough tightly lengthwise, like for cinnamon rolls."
+   },
+   {
+    "titre": "Cut on the bias",
+    "detail": "Cut the log into trapezoidal pieces (wide on one side)."
+   },
+   {
+    "titre": "Press the centre",
+    "detail": "Firmly press the centre of each piece with a spoon handle: the layers open into a fan. KEY: this signature move makes the edges caramelise while baking."
+   },
+   {
+    "titre": "Let rise",
+    "detail": "Let rise another 30 min on the tray."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Brush with egg and bake at 200°C until well browned and caramelised at the edges."
+   }
+  ]
+ },
+ "bannock": {
+  "nom": "Bannock",
+  "description": "Bannock — a yeast-free quick bread of Canada's First Nations, baked or pan-cooked. Crisp outside, soft inside, ready in 30 minutes with 4 basic ingredients.",
+  "etapes": [
+   {
+    "titre": "Mix the dry ingredients",
+    "detail": "Mix the flour, baking powder, sugar and a pinch of salt."
+   },
+   {
+    "titre": "Cut in the butter",
+    "detail": "Add the cold butter in pieces and rub it in with your fingertips to a sandy texture."
+   },
+   {
+    "titre": "Add the milk",
+    "detail": "Pour in the milk (or water) and mix just enough to bring the dough together. IMPORTANT: don't overknead, the bannock would be tough."
+   },
+   {
+    "titre": "Form the loaf",
+    "detail": "Flatten the dough into a 2 cm thick disc and score a cross on top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C (or in a covered pan over low heat) until golden and hollow-sounding underneath."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Enjoy warm, cut, with butter and jam, or alongside a stew. TRADITION: also cooked wrapped around a stick over the fire."
+   }
+  ]
+ },
+ "chebureki": {
+  "nom": "Chebureki",
+  "description": "Chebureki — a large crisp fried turnover with juicy minced meat and onions, a Tatar speciality beloved across the East. The thin, blistered pastry hides a tender, fragrant filling.",
+  "etapes": [
+   {
+    "titre": "Make the dough",
+    "detail": "Knead the flour with warm water, a pinch of salt and a drizzle of oil to a smooth, supple dough. Rest 30 min under a towel."
+   },
+   {
+    "titre": "Prepare the filling",
+    "detail": "Mix the ground beef with very finely chopped onion, salt, pepper and a little water. KEY: water in the filling makes it juicy when cooked."
+   },
+   {
+    "titre": "Roll out thinly",
+    "detail": "Roll the dough very thinly and cut large discs (like a plate)."
+   },
+   {
+    "titre": "Fill and seal",
+    "detail": "Spread a thin layer of filling on one half, fold into a half-moon and seal the edges by pressing with a fork."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in hot oil (180°C) until the turnover is golden and covered in bubbles. IMPORTANT: the thin dough cooks fast, the raw filling steam-cooks inside."
+   },
+   {
+    "titre": "Drain and serve",
+    "detail": "Drain on paper towel. Eat piping hot, by hand — watch the juice that spurts on the first bite!"
+   }
+  ]
+ },
+ "pisanggoreng": {
+  "nom": "Pisang Goreng",
+  "description": "Pisang goreng — crisp Indonesian banana fritters, golden in a light batter. The essential street snack, crunchy outside and soft-sweet inside, drizzled with honey or sugar.",
+  "etapes": [
+   {
+    "titre": "Prepare the bananas",
+    "detail": "Peel the bananas (ideally ripe plantains or firm bananas) and cut them lengthwise, or into a fan."
+   },
+   {
+    "titre": "Make the batter",
+    "detail": "Mix the flour, cornstarch, sugar, a pinch of salt and iced water to a smooth, fluid batter. TIP: very cold water makes a crispier batter."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Dip each piece of banana in the batter to coat well."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop into hot oil (180°C) and fry until the fritters are golden and crisp."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towel to remove excess oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, drizzled with honey, sweetened condensed milk or dusted with icing sugar. A treat any time."
+   }
+  ]
+ },
+ "naanfromage": {
+  "nom": "Cheese Naan",
+  "description": "Cheese naan — the soft Indian bread stuffed with melting cheese that stretches when torn. The indulgent version of naan, a star of Indian restaurants, perfect for mopping up a curry.",
+  "etapes": [
+   {
+    "titre": "Make the dough",
+    "detail": "Knead the flour with yogurt, yeast, a little warm water, salt and a drizzle of oil to a soft dough. Let rise 1 h."
+   },
+   {
+    "titre": "Prepare the filling",
+    "detail": "Mash the cheese (Laughing Cow, mozzarella or a mix) into a smooth paste."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Roll balls of dough into small discs, place a ball of cheese in the centre, fold the dough over and seal."
+   },
+   {
+    "titre": "Roll out gently",
+    "detail": "Gently roll out the stuffed naan without pushing the cheese out, into an elongated teardrop shape."
+   },
+   {
+    "titre": "Pan-cook",
+    "detail": "Cook dry in a very hot pan until golden blisters form, then turn. KEY: high heat for the naan's typical charred spots."
+   },
+   {
+    "titre": "Butter and serve",
+    "detail": "Brush with melted butter (or garlic-coriander ghee) as it comes off. Tear while hot to see the cheese stretch. See the plain naan recipe linked."
+   }
+  ]
+ },
+ "kalinti": {
+  "nom": "Kalinti",
+  "description": "Kalinti (or karane) — a savoury baked chickpea-flour flan, golden on top and soft inside, seasoned with cumin. The Tangier street food sold in a sandwich, cheap and filling.",
+  "etapes": [
+   {
+    "titre": "Whisk the flour",
+    "detail": "Whisk the chickpea flour into water, beating vigorously to avoid lumps. The batter should be very liquid."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 15 min so the flour hydrates well."
+   },
+   {
+    "titre": "Add the eggs",
+    "detail": "Stir in the beaten eggs, the oil, salt and a good pinch of cumin. Mix well."
+   },
+   {
+    "titre": "Pour into the dish",
+    "detail": "Pour the batter into an oiled dish about 2 cm deep."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C until the top is well browned and the centre set but soft. KEY: golden on top, creamy inside, like a thick socca."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with cumin and salt, cut into squares. Eat hot, as is or tucked into a half-loaf with a drizzle of harissa, Tangier-style."
+   }
+  ]
+ },
+ "tebasaki": {
+  "nom": "Tebasaki",
+  "description": "Tebasaki — Nagoya-style double-fried chicken wings, glazed in a sweet-savoury soy-mirin sauce and sprinkled with sesame and pepper. Crisp, sticky, addictive: the izakaya at home.",
+  "etapes": [
+   {
+    "titre": "Dry the wings",
+    "detail": "Pat the chicken wings dry. Dust them very lightly with flour for a crisp skin."
+   },
+   {
+    "titre": "First fry",
+    "detail": "Fry the wings at 160°C until cooked but still pale. Drain and rest 5 min."
+   },
+   {
+    "titre": "Second fry",
+    "detail": "Raise the oil to 190°C and re-fry the wings for 2 min. KEY: double-frying is THE secret to an ultra-crisp skin that stays crunchy."
+   },
+   {
+    "titre": "Make the sauce",
+    "detail": "Reduce the soy sauce, mirin, sugar and grated ginger into a glossy syrup."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Off the heat, coat the hot wings in the sauce to glaze them well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with sesame seeds and white pepper, serve at once. Eat by hand, with an ice-cold beer."
+   }
+  ]
+ },
+ "seffa": {
+  "nom": "Seffa",
+  "description": "Moroccan seffa — vermicelli (or semolina) steamed and mounded into a sweet cinnamon dome with almonds, raisins and icing sugar. A festive dessert-dish, both sweet and fragrant, served at the end of a meal or for Eid.",
+  "etapes": [
+   {
+    "titre": "Moisten the vermicelli",
+    "detail": "Sprinkle the vermicelli (or fine semolina) with a little water and oil, mix to separate the strands."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam in a couscoussier three times, fluffing with a fork between each. KEY: triple steaming gives light, non-sticky vermicelli."
+   },
+   {
+    "titre": "Butter",
+    "detail": "After the last steaming, stir in the butter to coat the vermicelli, plus a little salt."
+   },
+   {
+    "titre": "Prepare the garnish",
+    "detail": "Toast the almonds then crush them (keep some for decoration), plump the raisins in warm water."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Mix the vermicelli with the icing sugar, cinnamon, crushed almonds and raisins."
+   },
+   {
+    "titre": "Mound",
+    "detail": "Pile into a dome on a dish, pressing lightly."
+   },
+   {
+    "titre": "Decorate and serve",
+    "detail": "Decorate with lines of cinnamon and icing sugar in rays, scatter with whole almonds. Serve warm, shared with a spoon."
+   }
+  ]
+ },
+ "paindepices": {
+  "nom": "Pain d'Épices (Spice Bread)",
+  "description": "Pain d'épices — a moist honey loaf scented with cinnamon and warm spices, which improves with age. The comforting cake of winter teatimes and festivities, from Dijon to Alsace.",
+  "etapes": [
+   {
+    "titre": "Warm the honey",
+    "detail": "Warm the honey with the milk and sugar until fluid and smooth (without boiling)."
+   },
+   {
+    "titre": "Mix the dry ingredients",
+    "detail": "Mix the flour, baking powder and spices: cinnamon, ginger, anise, nutmeg, a touch of clove."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Pour the warm honey over the dry ingredients, add the egg and mix to a smooth, pourable batter."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into a buttered and floured loaf tin."
+   },
+   {
+    "titre": "Bake gently",
+    "detail": "Bake at 160°C (low oven). IMPORTANT: gentle, slow baking for a moist pain d'épices that doesn't dry out; a blade should come out clean."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Unmould warm and let rest ideally 24-48 h wrapped in film. KEY: pain d'épices IMPROVES with rest, the flavours develop."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Slice and enjoy plain, buttered, or with foie gras at Christmas. Keeps over a week well wrapped."
+   }
+  ]
+ },
+ "biscuitsgravy": {
+  "nom": "Biscuits & Gravy",
+  "description": "Biscuits & gravy — soft American scones smothered in a creamy sausage and pepper white gravy. The hearty breakfast of the American South, comforting to the core.",
+  "etapes": [
+   {
+    "titre": "Make the biscuits",
+    "detail": "Mix flour, baking powder and salt, then rub in the cold butter with your fingertips."
+   },
+   {
+    "titre": "Form the dough",
+    "detail": "Add some of the milk just to bring the dough together, without overworking. Cut thick discs."
+   },
+   {
+    "titre": "Bake the biscuits",
+    "detail": "Bake at 220°C until the biscuits are puffed and golden."
+   },
+   {
+    "titre": "Cook the sausage",
+    "detail": "Meanwhile, crumble the sausage meat into a pan and brown it, breaking it up with a spoon."
+   },
+   {
+    "titre": "Make the roux",
+    "detail": "Sprinkle the sausage with flour, stir for 1 min to cook the flour in the fat."
+   },
+   {
+    "titre": "Build the gravy",
+    "detail": "Pour in the milk gradually while whisking to a thick, coating white sauce. Pepper GENEROUSLY: black pepper is essential to the gravy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Split the warm biscuits in half and smother them in the sausage gravy. Serve piping hot, with a fork."
+   }
+  ]
+ },
  "saucemorilles": {
   "nom": "Morel Sauce",
   "description": "Morel sauce — the Jura grand classic: rehydrated morels in their strained soaking juice, shallot, white wine and cream reduced to a coating consistency. Sumptuous over roast poultry, veal fillet or fresh pasta.",

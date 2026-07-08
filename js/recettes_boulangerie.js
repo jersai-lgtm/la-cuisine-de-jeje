@@ -4,6 +4,116 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  batbout: {
+    nom: "Batbout",
+    cat: "boulangerie", pays: "maroc",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "20 min + 1h repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Le batbout marocain — petit pain rond cuit à la poêle qui gonfle et forme une poche, moelleux dedans. Parfait à farcir en mini-sandwichs ou à tremper dans une sauce. Ni four, ni prise de tête.",
+    tableauBatbout: [
+      { nb: 1, farine: "50 g", semoule: "30 g", levure: "2 g", sucre: "3 g", sel: "1 g" },
+      { nb: 2, farine: "100 g", semoule: "60 g", levure: "4 g", sucre: "6 g", sel: "2 g" },
+      { nb: 3, farine: "150 g", semoule: "90 g", levure: "6 g", sucre: "9 g", sel: "3 g" },
+      { nb: 4, farine: "200 g", semoule: "120 g", levure: "8 g", sucre: "12 g", sel: "4 g" },
+      { nb: 5, farine: "250 g", semoule: "150 g", levure: "10 g", sucre: "15 g", sel: "5 g" },
+      { nb: 6, farine: "300 g", semoule: "180 g", levure: "12 g", sucre: "18 g", sel: "6 g" },
+      { nb: 7, farine: "350 g", semoule: "210 g", levure: "14 g", sucre: "21 g", sel: "7 g" },
+      { nb: 8, farine: "400 g", semoule: "240 g", levure: "16 g", sucre: "24 g", sel: "8 g" },
+      { nb: 9, farine: "450 g", semoule: "270 g", levure: "18 g", sucre: "27 g", sel: "9 g" },
+      { nb: 10, farine: "500 g", semoule: "300 g", levure: "20 g", sucre: "30 g", sel: "10 g" },
+      { nb: 11, farine: "550 g", semoule: "330 g", levure: "22 g", sucre: "33 g", sel: "11 g" },
+      { nb: 12, farine: "600 g", semoule: "360 g", levure: "24 g", sucre: "36 g", sel: "12 g" },
+      { nb: 13, farine: "650 g", semoule: "390 g", levure: "26 g", sucre: "39 g", sel: "13 g" },
+      { nb: 14, farine: "700 g", semoule: "420 g", levure: "28 g", sucre: "42 g", sel: "14 g" },
+      { nb: 15, farine: "750 g", semoule: "450 g", levure: "30 g", sucre: "45 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Mélanger les secs", detail: "Mélanger la farine, la semoule fine, le sucre, le sel et la levure boulangère.", badge: null },
+      { icone: "💧", titre: "Pétrir", detail: "Ajouter l'eau tiède progressivement et pétrir jusqu'à une pâte souple et lisse qui ne colle plus.", badge: "⏱ 8 min" },
+      { icone: "⭕", titre: "Former les boules", detail: "Diviser en boules, les étaler en disques de 1/2 cm d'épaisseur sur un plan semoulé.", badge: null },
+      { icone: "⏳", titre: "Laisser lever", detail: "Couvrir d'un torchon et laisser lever jusqu'à ce que les disques soient gonflés et souples.", badge: "⏱ 1 h" },
+      { icone: "🍳", titre: "Cuire à la poêle", detail: "Cuire à sec dans une poêle chaude à feu moyen. CLÉ : le batbout gonfle et forme sa poche caractéristique en cuisant, retourner à mi-cuisson.", badge: "⏱ 3 min/face" },
+      { icone: "🥙", titre: "Servir", detail: "Laisser tiédir sous un torchon. Fendre et farcir de kefta, thon-tomate ou fromage — le mini-sandwich marocain parfait.", badge: null }
+    ]
+  },
+  franzbrotchen: {
+    nom: "Franzbrötchen",
+    cat: "boulangerie", pays: "allemagne",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "40 min + 1h30 repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥐",
+    description: "Le Franzbrötchen de Hambourg — un feuilleté roulé à la cannelle et au sucre, écrasé en son milieu pour caraméliser les bords. Le cousin allemand du croissant, entre pain au lait et roulé à la cannelle.",
+    tableauFranzbrotchen: [
+      { nb: 1, farine: "60 g", beurre: "30 g", lait: "30 ml", sucre: "20 g", cannelle: "3 g", levure: "3 g", oeuf: "0.2" },
+      { nb: 2, farine: "120 g", beurre: "60 g", lait: "60 ml", sucre: "40 g", cannelle: "6 g", levure: "6 g", oeuf: "0.4" },
+      { nb: 3, farine: "180 g", beurre: "90 g", lait: "90 ml", sucre: "60 g", cannelle: "9 g", levure: "9 g", oeuf: "0.6" },
+      { nb: 4, farine: "240 g", beurre: "120 g", lait: "120 ml", sucre: "80 g", cannelle: "12 g", levure: "12 g", oeuf: "0.8" },
+      { nb: 5, farine: "300 g", beurre: "150 g", lait: "150 ml", sucre: "100 g", cannelle: "15 g", levure: "15 g", oeuf: "1" },
+      { nb: 6, farine: "360 g", beurre: "180 g", lait: "180 ml", sucre: "120 g", cannelle: "18 g", levure: "18 g", oeuf: "1.2" },
+      { nb: 7, farine: "420 g", beurre: "210 g", lait: "210 ml", sucre: "140 g", cannelle: "21 g", levure: "21 g", oeuf: "1.4" },
+      { nb: 8, farine: "480 g", beurre: "240 g", lait: "240 ml", sucre: "160 g", cannelle: "24 g", levure: "24 g", oeuf: "1.6" },
+      { nb: 9, farine: "540 g", beurre: "270 g", lait: "270 ml", sucre: "180 g", cannelle: "27 g", levure: "27 g", oeuf: "1.8" },
+      { nb: 10, farine: "600 g", beurre: "300 g", lait: "300 ml", sucre: "200 g", cannelle: "30 g", levure: "30 g", oeuf: "2" },
+      { nb: 11, farine: "660 g", beurre: "330 g", lait: "330 ml", sucre: "220 g", cannelle: "33 g", levure: "33 g", oeuf: "2.2" },
+      { nb: 12, farine: "720 g", beurre: "360 g", lait: "360 ml", sucre: "240 g", cannelle: "36 g", levure: "36 g", oeuf: "2.4" },
+      { nb: 13, farine: "780 g", beurre: "390 g", lait: "390 ml", sucre: "260 g", cannelle: "39 g", levure: "39 g", oeuf: "2.6" },
+      { nb: 14, farine: "840 g", beurre: "420 g", lait: "420 ml", sucre: "280 g", cannelle: "42 g", levure: "42 g", oeuf: "2.8" },
+      { nb: 15, farine: "900 g", beurre: "450 g", lait: "450 ml", sucre: "300 g", cannelle: "45 g", levure: "45 g", oeuf: "3" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Faire la pâte levée", detail: "Pétrir farine, lait tiède, levure, sucre, un peu de beurre mou et l'œuf jusqu'à une pâte souple. Laisser pousser 1 h.", badge: "⏱ 1 h" },
+      { icone: "📏", titre: "Étaler et beurrer", detail: "Étaler la pâte en rectangle, étaler du beurre mou dessus et saupoudrer généreusement de sucre et de cannelle.", badge: null },
+      { icone: "🌀", titre: "Rouler", detail: "Rouler la pâte serrée sur la longueur, comme pour des roulés à la cannelle.", badge: null },
+      { icone: "🔪", titre: "Découper en biais", detail: "Couper le boudin en tronçons trapézoïdaux (larges d'un côté).", badge: null },
+      { icone: "🥄", titre: "Écraser le centre", detail: "Presser fermement le centre de chaque tronçon avec le manche d'une cuillère : les couches s'ouvrent en éventail. CLÉ : ce geste signature fait caraméliser les bords en cuisant.", badge: null },
+      { icone: "⏳", titre: "Laisser lever", detail: "Laisser pousser encore 30 min sur la plaque.", badge: "⏱ 30 min" },
+      { icone: "♨️", titre: "Cuire", detail: "Dorer à l'œuf et enfourner à 200°C jusqu'à ce qu'ils soient bien dorés et caramélisés sur les bords.", badge: "⏱ 18 min" }
+    ]
+  },
+  bannock: {
+    nom: "Bannock",
+    cat: "boulangerie", pays: "canada",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍞",
+    description: "Le bannock — pain rapide sans levure des Premières Nations du Canada, cuit au four ou à la poêle. Croustillant dehors, moelleux dedans, prêt en 30 minutes avec 4 ingrédients de base.",
+    tableauBannock: [
+      { nb: 1, farine: "60 g", levurechimique: "3 g", beurre: "12 g", lait: "40 ml", sucre: "3 g" },
+      { nb: 2, farine: "120 g", levurechimique: "6 g", beurre: "24 g", lait: "80 ml", sucre: "6 g" },
+      { nb: 3, farine: "180 g", levurechimique: "9 g", beurre: "36 g", lait: "120 ml", sucre: "9 g" },
+      { nb: 4, farine: "240 g", levurechimique: "12 g", beurre: "48 g", lait: "160 ml", sucre: "12 g" },
+      { nb: 5, farine: "300 g", levurechimique: "15 g", beurre: "60 g", lait: "200 ml", sucre: "15 g" },
+      { nb: 6, farine: "360 g", levurechimique: "18 g", beurre: "72 g", lait: "240 ml", sucre: "18 g" },
+      { nb: 7, farine: "420 g", levurechimique: "21 g", beurre: "84 g", lait: "280 ml", sucre: "21 g" },
+      { nb: 8, farine: "480 g", levurechimique: "24 g", beurre: "96 g", lait: "320 ml", sucre: "24 g" },
+      { nb: 9, farine: "540 g", levurechimique: "27 g", beurre: "108 g", lait: "360 ml", sucre: "27 g" },
+      { nb: 10, farine: "600 g", levurechimique: "30 g", beurre: "120 g", lait: "400 ml", sucre: "30 g" },
+      { nb: 11, farine: "660 g", levurechimique: "33 g", beurre: "132 g", lait: "440 ml", sucre: "33 g" },
+      { nb: 12, farine: "720 g", levurechimique: "36 g", beurre: "144 g", lait: "480 ml", sucre: "36 g" },
+      { nb: 13, farine: "780 g", levurechimique: "39 g", beurre: "156 g", lait: "520 ml", sucre: "39 g" },
+      { nb: 14, farine: "840 g", levurechimique: "42 g", beurre: "168 g", lait: "560 ml", sucre: "42 g" },
+      { nb: 15, farine: "900 g", levurechimique: "45 g", beurre: "180 g", lait: "600 ml", sucre: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Mélanger les secs", detail: "Mélanger la farine, la levure chimique, le sucre et une pincée de sel.", badge: null },
+      { icone: "🧈", titre: "Sabler le beurre", detail: "Ajouter le beurre froid en morceaux et le frotter du bout des doigts jusqu'à une texture sableuse.", badge: null },
+      { icone: "💧", titre: "Ajouter le lait", detail: "Verser le lait (ou de l'eau) et mélanger juste assez pour rassembler la pâte. IMPORTANT : ne pas trop pétrir, le bannock resterait dur.", badge: null },
+      { icone: "⭕", titre: "Former le pain", detail: "Aplatir la pâte en un disque de 2 cm d'épaisseur et inciser une croix sur le dessus.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Cuire au four à 200°C (ou à la poêle à couvert, feu doux) jusqu'à ce que le bannock soit doré et sonne creux quand on tape dessous.", badge: "⏱ 20 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Déguster tiède, coupé, avec du beurre et de la confiture, ou en accompagnement d'un ragoût. TRADITION : se cuit aussi enroulé autour d'un bâton au-dessus du feu.", badge: null }
+    ]
+  },
+
   cakecitron: {
     nom: "Cake au citron", cat: "boulangerie", pays: "france", dateAjout: "2026-06-17T14:00:00",
     base: 8, temps: "1 h", niveau: "⭐ Facile", emoji: "🍋",

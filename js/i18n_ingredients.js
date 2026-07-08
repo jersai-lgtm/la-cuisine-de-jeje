@@ -9,7 +9,7 @@
 window.I18N_ING = {
   "🟤 Clou de girofle": "🟤 Clove", "🦐 Crevettes": "🦐 Shrimp", "🥣 Sauce tartare": "🥣 Tartar sauce",
   "🥚 Blanc d'œuf": "🥚 Egg white", "🌈 Macarons": "🌈 Macarons", "🥛 Yaourt grec": "🥛 Greek yogurt",
-  "🍞 Chapelure panko": "🍞 Panko breadcrumbs", "🍄 Champignons": "🍄 Mushrooms", "🍄 Morilles séchées": "🍄 Dried morels", "🍪 Biscuits spéculoos": "🍪 Speculoos biscuits", "🍅 Tomates séchées": "🍅 Sun-dried tomatoes", "🐟 Œufs de cabillaud fumés": "🐟 Smoked cod roe", "🐟 Truite": "🐟 Trout", "🐟 Bar (loup de mer)": "🐟 Sea bass", "🫘 Fèves sèches": "🫘 Dried split fava beans", "🧀 Brocciu": "🧀 Brocciu cheese", "🎃 Potimarron": "🎃 Red kuri squash",
+  "🍞 Chapelure panko": "🍞 Panko breadcrumbs", "🍄 Champignons": "🍄 Mushrooms", "🍄 Morilles séchées": "🍄 Dried morels", "🍪 Biscuits spéculoos": "🍪 Speculoos biscuits", "🍅 Tomates séchées": "🍅 Sun-dried tomatoes", "🐟 Œufs de cabillaud fumés": "🐟 Smoked cod roe", "🐟 Truite": "🐟 Trout", "🐟 Bar (loup de mer)": "🐟 Sea bass", "🫘 Fèves sèches": "🫘 Dried split fava beans", "🧀 Brocciu": "🧀 Brocciu cheese", "🥬 Endives": "🥬 Endives", "🧀 Roquefort": "🧀 Roquefort", "🎃 Potimarron": "🎃 Red kuri squash",
   "🥬 Épinards": "🥬 Spinach", "🫒 Olives noires": "🫒 Black olives", "🍞 Pain de mie": "🍞 Sandwich bread",
   "🥬 Poireau": "🥬 Leek", "🤍 Chocolat blanc": "🤍 White chocolate", "🍫 Chocolat au lait": "🍫 Milk chocolate",
   "🍫 Pépites de chocolat": "🍫 Chocolate chips", "🪵 Cannelle": "🪵 Cinnamon", "🌱 Graines de pavot": "🌱 Poppy seeds",

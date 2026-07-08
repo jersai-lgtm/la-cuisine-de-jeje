@@ -3,6 +3,43 @@
 // 👉 Pour AJOUTER une glace : place-la juste avant le  });  final.
 // ============================================================
 Object.assign(recettes, {
+  glacenoisette: {
+    nom: "Glace Noisette",
+    cat: "glaces", pays: "france",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 1,
+    temps: "30 min + turbinage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌰",
+    description: "La glace noisette — crème glacée intense au bon goût de noisettes torréfiées, onctueuse et parfumée. Une gourmandise d'automne qui rappelle le praliné.",
+    tableauGlaceNoisette: [
+      { nb: 1, lait: "19 ml", creme: "15 ml", noisettes: "12 g", jaunedoeuf: "1", sucre: "7 g" },
+      { nb: 2, lait: "38 ml", creme: "30 ml", noisettes: "24 g", jaunedoeuf: "2", sucre: "14 g" },
+      { nb: 3, lait: "57 ml", creme: "45 ml", noisettes: "36 g", jaunedoeuf: "3", sucre: "21 g" },
+      { nb: 4, lait: "76 ml", creme: "60 ml", noisettes: "48 g", jaunedoeuf: "4", sucre: "28 g" },
+      { nb: 5, lait: "95 ml", creme: "75 ml", noisettes: "60 g", jaunedoeuf: "5", sucre: "35 g" },
+      { nb: 6, lait: "114 ml", creme: "90 ml", noisettes: "72 g", jaunedoeuf: "6", sucre: "42 g" },
+      { nb: 7, lait: "133 ml", creme: "105 ml", noisettes: "84 g", jaunedoeuf: "7", sucre: "49 g" },
+      { nb: 8, lait: "152 ml", creme: "120 ml", noisettes: "96 g", jaunedoeuf: "8", sucre: "56 g" },
+      { nb: 9, lait: "171 ml", creme: "135 ml", noisettes: "108 g", jaunedoeuf: "9", sucre: "63 g" },
+      { nb: 10, lait: "190 ml", creme: "150 ml", noisettes: "120 g", jaunedoeuf: "10", sucre: "70 g" },
+      { nb: 11, lait: "209 ml", creme: "165 ml", noisettes: "132 g", jaunedoeuf: "11", sucre: "77 g" },
+      { nb: 12, lait: "228 ml", creme: "180 ml", noisettes: "144 g", jaunedoeuf: "12", sucre: "84 g" },
+      { nb: 13, lait: "247 ml", creme: "195 ml", noisettes: "156 g", jaunedoeuf: "13", sucre: "91 g" },
+      { nb: 14, lait: "266 ml", creme: "210 ml", noisettes: "168 g", jaunedoeuf: "14", sucre: "98 g" },
+      { nb: 15, lait: "285 ml", creme: "225 ml", noisettes: "180 g", jaunedoeuf: "15", sucre: "105 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌰", titre: "Torréfier les noisettes", detail: "Torréfier les noisettes au four à 160°C jusqu'à ce qu'elles embaument, puis les frotter dans un torchon pour retirer les peaux. CLÉ : la torréfaction décuple leur goût.", badge: "⏱ 12 min" },
+      { icone: "🥛", titre: "Infuser", detail: "Mixer grossièrement les noisettes et les infuser dans le lait et la crème chauds 20 min hors du feu.", badge: "⏱ 20 min" },
+      { icone: "🥚", titre: "Blanchir les jaunes", detail: "Fouetter les jaunes avec le sucre jusqu'à ce que le mélange blanchisse et fasse le ruban.", badge: "⏱ 3 min" },
+      { icone: "🌡️", titre: "Cuire la crème anglaise", detail: "Verser le lait infusé filtré sur les jaunes, remettre à feu doux et cuire à la nappe (83°C). IMPORTANT : ne jamais faire bouillir, les œufs coaguleraient.", badge: "⏱ 8 min" },
+      { icone: "❄️", titre: "Refroidir", detail: "Filmer au contact et réfrigérer au moins 4 h : une base bien froide donne une glace plus onctueuse.", badge: "⏱ 4 h" },
+      { icone: "🍨", titre: "Turbiner", detail: "Turbiner en sorbetière. Sans machine : congeler en fouettant énergiquement toutes les 30 min pendant 3 h. ASTUCE : ajouter des éclats de noisettes caramélisées à la fin.", badge: "⏱ 30 min" }
+    ]
+  },
+
   glacespeculoos: {
     nom: "Glace Spéculoos",
     cat: "glaces", pays: "belgique",

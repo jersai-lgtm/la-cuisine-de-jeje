@@ -4,6 +4,44 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  biscuitsgravy: {
+    nom: "Biscuits & Gravy",
+    cat: "brunch", pays: "usa",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍽️",
+    description: "Les biscuits & gravy — scones américains moelleux nappés d'une sauce blanche crémeuse à la saucisse et au poivre. Le petit-déjeuner roboratif du Sud des États-Unis, réconfortant à souhait.",
+    tableauBiscuitsGravy: [
+      { nb: 1, farine: "50 g", beurre: "20 g", lait: "80 ml", levurechimique: "4 g", saucisse: "60 g" },
+      { nb: 2, farine: "100 g", beurre: "40 g", lait: "160 ml", levurechimique: "8 g", saucisse: "120 g" },
+      { nb: 3, farine: "150 g", beurre: "60 g", lait: "240 ml", levurechimique: "12 g", saucisse: "180 g" },
+      { nb: 4, farine: "200 g", beurre: "80 g", lait: "320 ml", levurechimique: "16 g", saucisse: "240 g" },
+      { nb: 5, farine: "250 g", beurre: "100 g", lait: "400 ml", levurechimique: "20 g", saucisse: "300 g" },
+      { nb: 6, farine: "300 g", beurre: "120 g", lait: "480 ml", levurechimique: "24 g", saucisse: "360 g" },
+      { nb: 7, farine: "350 g", beurre: "140 g", lait: "560 ml", levurechimique: "28 g", saucisse: "420 g" },
+      { nb: 8, farine: "400 g", beurre: "160 g", lait: "640 ml", levurechimique: "32 g", saucisse: "480 g" },
+      { nb: 9, farine: "450 g", beurre: "180 g", lait: "720 ml", levurechimique: "36 g", saucisse: "540 g" },
+      { nb: 10, farine: "500 g", beurre: "200 g", lait: "800 ml", levurechimique: "40 g", saucisse: "600 g" },
+      { nb: 11, farine: "550 g", beurre: "220 g", lait: "880 ml", levurechimique: "44 g", saucisse: "660 g" },
+      { nb: 12, farine: "600 g", beurre: "240 g", lait: "960 ml", levurechimique: "48 g", saucisse: "720 g" },
+      { nb: 13, farine: "650 g", beurre: "260 g", lait: "1040 ml", levurechimique: "52 g", saucisse: "780 g" },
+      { nb: 14, farine: "700 g", beurre: "280 g", lait: "1120 ml", levurechimique: "56 g", saucisse: "840 g" },
+      { nb: 15, farine: "750 g", beurre: "300 g", lait: "1200 ml", levurechimique: "60 g", saucisse: "900 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Faire les biscuits", detail: "Mélanger farine, levure chimique et sel, puis sabler le beurre froid du bout des doigts.", badge: null },
+      { icone: "🥛", titre: "Former la pâte", detail: "Ajouter une partie du lait juste pour rassembler la pâte, sans trop la travailler. Découper des disques épais.", badge: null },
+      { icone: "♨️", titre: "Cuire les biscuits", detail: "Enfourner à 220°C jusqu'à ce que les biscuits soient gonflés et dorés.", badge: "⏱ 15 min" },
+      { icone: "🥩", titre: "Cuire la saucisse", detail: "Pendant ce temps, émietter la chair à saucisse dans une poêle et la faire dorer en la cassant à la cuillère.", badge: "⏱ 6 min" },
+      { icone: "🌾", titre: "Faire le roux", detail: "Saupoudrer la saucisse de farine, mélanger 1 min pour cuire la farine dans la graisse.", badge: null },
+      { icone: "🥛", titre: "Monter la sauce", detail: "Verser le lait peu à peu en fouettant jusqu'à une sauce blanche épaisse et nappante. Poivrer GÉNÉREUSEMENT : le poivre noir est essentiel au gravy.", badge: "⏱ 5 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Fendre les biscuits chauds en deux et les noyer sous la sauce à la saucisse. Servir brûlant, à la fourchette.", badge: null }
+    ]
+  },
+
   crepes: {
     nom: "Crêpes",
     cat: "brunch", pays: "france",

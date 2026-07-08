@@ -4,6 +4,117 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  dakos: {
+    nom: "Dakos",
+    cat: "salades", pays: "grece",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "Le dakos crétois — une biscotte d'orge rustique ramollie, garnie de tomate râpée juteuse, de feta émiettée et d'olives, arrosée d'huile d'olive. La bruschetta grecque, fraîche et ensoleillée.",
+    tableauDakos: [
+      { nb: 1, pain: "50 g", tomate: "100 g", feta: "40 g", olivenoire: "15 g", huileolive: "12 ml", origan: "1 g" },
+      { nb: 2, pain: "100 g", tomate: "200 g", feta: "80 g", olivenoire: "30 g", huileolive: "24 ml", origan: "2 g" },
+      { nb: 3, pain: "150 g", tomate: "300 g", feta: "120 g", olivenoire: "45 g", huileolive: "36 ml", origan: "3 g" },
+      { nb: 4, pain: "200 g", tomate: "400 g", feta: "160 g", olivenoire: "60 g", huileolive: "48 ml", origan: "4 g" },
+      { nb: 5, pain: "250 g", tomate: "500 g", feta: "200 g", olivenoire: "75 g", huileolive: "60 ml", origan: "5 g" },
+      { nb: 6, pain: "300 g", tomate: "600 g", feta: "240 g", olivenoire: "90 g", huileolive: "72 ml", origan: "6 g" },
+      { nb: 7, pain: "350 g", tomate: "700 g", feta: "280 g", olivenoire: "105 g", huileolive: "84 ml", origan: "7 g" },
+      { nb: 8, pain: "400 g", tomate: "800 g", feta: "320 g", olivenoire: "120 g", huileolive: "96 ml", origan: "8 g" },
+      { nb: 9, pain: "450 g", tomate: "900 g", feta: "360 g", olivenoire: "135 g", huileolive: "108 ml", origan: "9 g" },
+      { nb: 10, pain: "500 g", tomate: "1000 g", feta: "400 g", olivenoire: "150 g", huileolive: "120 ml", origan: "10 g" },
+      { nb: 11, pain: "550 g", tomate: "1100 g", feta: "440 g", olivenoire: "165 g", huileolive: "132 ml", origan: "11 g" },
+      { nb: 12, pain: "600 g", tomate: "1200 g", feta: "480 g", olivenoire: "180 g", huileolive: "144 ml", origan: "12 g" },
+      { nb: 13, pain: "650 g", tomate: "1300 g", feta: "520 g", olivenoire: "195 g", huileolive: "156 ml", origan: "13 g" },
+      { nb: 14, pain: "700 g", tomate: "1400 g", feta: "560 g", olivenoire: "210 g", huileolive: "168 ml", origan: "14 g" },
+      { nb: 15, pain: "750 g", tomate: "1500 g", feta: "600 g", olivenoire: "225 g", huileolive: "180 ml", origan: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "Préparer la base", detail: "Utiliser une biscotte d'orge crétoise (paximadi), ou du pain de campagne bien grillé et sec.", badge: null },
+      { icone: "💧", titre: "Humidifier", detail: "Passer rapidement la biscotte sous un filet d'eau (ou frotter d'une demi-tomate) pour la ramollir juste ce qu'il faut : moelleuse dessous, encore un peu croquante. IMPORTANT : sans la détremper.", badge: null },
+      { icone: "🍅", titre: "Râper la tomate", detail: "Râper les tomates mûres à la grosse grille (on jette la peau qui reste dans la main) pour obtenir une pulpe juteuse.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Répartir la pulpe de tomate sur la biscotte : son jus achève de la ramollir.", badge: null },
+      { icone: "🧀", titre: "Ajouter feta et olives", detail: "Émietter la feta par-dessus, ajouter les olives et parsemer d'origan séché.", badge: null },
+      { icone: "🫒", titre: "Arroser et servir", detail: "Arroser généreusement d'huile d'olive vierge, poivrer. Servir aussitôt, avant que la biscotte ne se détrempe.", badge: null }
+    ]
+  },
+
+  saladeendivesnoix: {
+    nom: "Salade d'endives aux noix",
+    cat: "salades", pays: "france",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥬",
+    description: "La salade d'endives aux noix et roquefort — l'amertume croquante de l'endive, le croquant des noix et le fondant du bleu. Le trio du Nord, chic et prêt en un quart d'heure.",
+    tableauSaladeEndivesNoix: [
+      { nb: 1, endive: "100 g", noix: "20 g", roquefort: "30 g", pomme: "40 g", huile: "12 ml", vinaigreVin: "6 ml" },
+      { nb: 2, endive: "200 g", noix: "40 g", roquefort: "60 g", pomme: "80 g", huile: "24 ml", vinaigreVin: "12 ml" },
+      { nb: 3, endive: "300 g", noix: "60 g", roquefort: "90 g", pomme: "120 g", huile: "36 ml", vinaigreVin: "18 ml" },
+      { nb: 4, endive: "400 g", noix: "80 g", roquefort: "120 g", pomme: "160 g", huile: "48 ml", vinaigreVin: "24 ml" },
+      { nb: 5, endive: "500 g", noix: "100 g", roquefort: "150 g", pomme: "200 g", huile: "60 ml", vinaigreVin: "30 ml" },
+      { nb: 6, endive: "600 g", noix: "120 g", roquefort: "180 g", pomme: "240 g", huile: "72 ml", vinaigreVin: "36 ml" },
+      { nb: 7, endive: "700 g", noix: "140 g", roquefort: "210 g", pomme: "280 g", huile: "84 ml", vinaigreVin: "42 ml" },
+      { nb: 8, endive: "800 g", noix: "160 g", roquefort: "240 g", pomme: "320 g", huile: "96 ml", vinaigreVin: "48 ml" },
+      { nb: 9, endive: "900 g", noix: "180 g", roquefort: "270 g", pomme: "360 g", huile: "108 ml", vinaigreVin: "54 ml" },
+      { nb: 10, endive: "1000 g", noix: "200 g", roquefort: "300 g", pomme: "400 g", huile: "120 ml", vinaigreVin: "60 ml" },
+      { nb: 11, endive: "1100 g", noix: "220 g", roquefort: "330 g", pomme: "440 g", huile: "132 ml", vinaigreVin: "66 ml" },
+      { nb: 12, endive: "1200 g", noix: "240 g", roquefort: "360 g", pomme: "480 g", huile: "144 ml", vinaigreVin: "72 ml" },
+      { nb: 13, endive: "1300 g", noix: "260 g", roquefort: "390 g", pomme: "520 g", huile: "156 ml", vinaigreVin: "78 ml" },
+      { nb: 14, endive: "1400 g", noix: "280 g", roquefort: "420 g", pomme: "560 g", huile: "168 ml", vinaigreVin: "84 ml" },
+      { nb: 15, endive: "1500 g", noix: "300 g", roquefort: "450 g", pomme: "600 g", huile: "180 ml", vinaigreVin: "90 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Préparer les endives", detail: "Retirer le trognon amer à la base des endives, puis les couper en tronçons ou effeuiller. IMPORTANT : ne pas les faire tremper, elles deviendraient amères.", badge: null },
+      { icone: "🍏", titre: "Couper la pomme", detail: "Détailler la pomme en fins bâtonnets (variété acidulée type Granny), garder la peau.", badge: null },
+      { icone: "🧀", titre: "Émietter le bleu", detail: "Émietter le roquefort (ou un autre bleu) en petits morceaux.", badge: null },
+      { icone: "🥣", titre: "Vinaigrette", detail: "Émulsionner une vinaigrette à l'huile de noix, vinaigre de vin, sel et poivre. ASTUCE : une pointe de miel équilibre l'amertume de l'endive.", badge: null },
+      { icone: "🌰", titre: "Assembler", detail: "Mélanger endives, pomme et noix avec la vinaigrette, puis parsemer le roquefort dessus au dernier moment.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servir aussitôt, bien frais. Parfaite en entrée ou avec des toasts de pain aux noix grillé.", badge: null }
+    ]
+  },
+
+  saladechourouge: {
+    nom: "Salade de chou rouge aux pommes",
+    cat: "salades", pays: "france",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥬",
+    description: "La salade de chou rouge aux pommes — chou croquant et pomme acidulée liés d'une vinaigrette aux noix. Fraîche, colorée et croustillante, parfaite en entrée d'hiver ou avec une viande.",
+    tableauSaladeChouRouge: [
+      { nb: 1, chou: "120 g", pomme: "50 g", noix: "15 g", huile: "12 ml", vinaigreCidre: "8 ml", moutarde: "5 g" },
+      { nb: 2, chou: "240 g", pomme: "100 g", noix: "30 g", huile: "24 ml", vinaigreCidre: "16 ml", moutarde: "10 g" },
+      { nb: 3, chou: "360 g", pomme: "150 g", noix: "45 g", huile: "36 ml", vinaigreCidre: "24 ml", moutarde: "15 g" },
+      { nb: 4, chou: "480 g", pomme: "200 g", noix: "60 g", huile: "48 ml", vinaigreCidre: "32 ml", moutarde: "20 g" },
+      { nb: 5, chou: "600 g", pomme: "250 g", noix: "75 g", huile: "60 ml", vinaigreCidre: "40 ml", moutarde: "25 g" },
+      { nb: 6, chou: "720 g", pomme: "300 g", noix: "90 g", huile: "72 ml", vinaigreCidre: "48 ml", moutarde: "30 g" },
+      { nb: 7, chou: "840 g", pomme: "350 g", noix: "105 g", huile: "84 ml", vinaigreCidre: "56 ml", moutarde: "35 g" },
+      { nb: 8, chou: "960 g", pomme: "400 g", noix: "120 g", huile: "96 ml", vinaigreCidre: "64 ml", moutarde: "40 g" },
+      { nb: 9, chou: "1080 g", pomme: "450 g", noix: "135 g", huile: "108 ml", vinaigreCidre: "72 ml", moutarde: "45 g" },
+      { nb: 10, chou: "1200 g", pomme: "500 g", noix: "150 g", huile: "120 ml", vinaigreCidre: "80 ml", moutarde: "50 g" },
+      { nb: 11, chou: "1320 g", pomme: "550 g", noix: "165 g", huile: "132 ml", vinaigreCidre: "88 ml", moutarde: "55 g" },
+      { nb: 12, chou: "1440 g", pomme: "600 g", noix: "180 g", huile: "144 ml", vinaigreCidre: "96 ml", moutarde: "60 g" },
+      { nb: 13, chou: "1560 g", pomme: "650 g", noix: "195 g", huile: "156 ml", vinaigreCidre: "104 ml", moutarde: "65 g" },
+      { nb: 14, chou: "1680 g", pomme: "700 g", noix: "210 g", huile: "168 ml", vinaigreCidre: "112 ml", moutarde: "70 g" },
+      { nb: 15, chou: "1800 g", pomme: "750 g", noix: "225 g", huile: "180 ml", vinaigreCidre: "120 ml", moutarde: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Émincer le chou", detail: "Émincer le chou rouge le plus finement possible (au couteau ou à la mandoline).", badge: "⏱ 8 min" },
+      { icone: "🧂", titre: "Assouplir", detail: "Saler légèrement et masser le chou quelques minutes à la main : il ramollit et devient plus digeste. ASTUCE : un peu de vinaigre chaud fixe et ravive sa couleur.", badge: null },
+      { icone: "🍏", titre: "Couper la pomme", detail: "Couper la pomme en fins bâtonnets ou en dés, avec la peau pour la couleur. La citronner pour éviter qu'elle noircisse.", badge: null },
+      { icone: "🥣", titre: "Faire la vinaigrette", detail: "Émulsionner la moutarde, le vinaigre de cidre et l'huile (idéalement huile de noix), sel et poivre.", badge: null },
+      { icone: "🌰", titre: "Assembler", detail: "Mélanger chou, pomme et cerneaux de noix concassés avec la vinaigrette.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laisser reposer 30 min au frais avant de servir : le chou s'attendrit et s'imprègne. Se garde 2 jours au frais.", badge: "⏱ 30 min" }
+    ]
+  },
+
   "saladeniçoise": {
     nom: "Salade niçoise",
     cat: "salades", saisons: ["ete"], pays: "france",

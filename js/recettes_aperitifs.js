@@ -4,6 +4,43 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  tebasaki: {
+    nom: "Tebasaki",
+    cat: "aperitifs", pays: "japon",
+    dateAjout: "2026-07-08T10:00:00",
+    base: 6,
+    temps: "30 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍗",
+    description: "Les tebasaki — ailes de poulet frites deux fois façon Nagoya, laquées d'une sauce soja-mirin sucrée-salée et parsemées de sésame et poivre. Croustillantes, collantes, addictives : l'izakaya à la maison.",
+    tableauTebasaki: [
+      { nb: 1, pouletcuisses: "150 g", saucesoja: "15 ml", mirin: "10 ml", sucre: "6 g", sesame: "3 g", gingembre: "2 g", huilefriture: "40 ml" },
+      { nb: 2, pouletcuisses: "300 g", saucesoja: "30 ml", mirin: "20 ml", sucre: "12 g", sesame: "6 g", gingembre: "4 g", huilefriture: "80 ml" },
+      { nb: 3, pouletcuisses: "450 g", saucesoja: "45 ml", mirin: "30 ml", sucre: "18 g", sesame: "9 g", gingembre: "6 g", huilefriture: "120 ml" },
+      { nb: 4, pouletcuisses: "600 g", saucesoja: "60 ml", mirin: "40 ml", sucre: "24 g", sesame: "12 g", gingembre: "8 g", huilefriture: "160 ml" },
+      { nb: 5, pouletcuisses: "750 g", saucesoja: "75 ml", mirin: "50 ml", sucre: "30 g", sesame: "15 g", gingembre: "10 g", huilefriture: "200 ml" },
+      { nb: 6, pouletcuisses: "900 g", saucesoja: "90 ml", mirin: "60 ml", sucre: "36 g", sesame: "18 g", gingembre: "12 g", huilefriture: "240 ml" },
+      { nb: 7, pouletcuisses: "1050 g", saucesoja: "105 ml", mirin: "70 ml", sucre: "42 g", sesame: "21 g", gingembre: "14 g", huilefriture: "280 ml" },
+      { nb: 8, pouletcuisses: "1200 g", saucesoja: "120 ml", mirin: "80 ml", sucre: "48 g", sesame: "24 g", gingembre: "16 g", huilefriture: "320 ml" },
+      { nb: 9, pouletcuisses: "1350 g", saucesoja: "135 ml", mirin: "90 ml", sucre: "54 g", sesame: "27 g", gingembre: "18 g", huilefriture: "360 ml" },
+      { nb: 10, pouletcuisses: "1500 g", saucesoja: "150 ml", mirin: "100 ml", sucre: "60 g", sesame: "30 g", gingembre: "20 g", huilefriture: "400 ml" },
+      { nb: 11, pouletcuisses: "1650 g", saucesoja: "165 ml", mirin: "110 ml", sucre: "66 g", sesame: "33 g", gingembre: "22 g", huilefriture: "440 ml" },
+      { nb: 12, pouletcuisses: "1800 g", saucesoja: "180 ml", mirin: "120 ml", sucre: "72 g", sesame: "36 g", gingembre: "24 g", huilefriture: "480 ml" },
+      { nb: 13, pouletcuisses: "1950 g", saucesoja: "195 ml", mirin: "130 ml", sucre: "78 g", sesame: "39 g", gingembre: "26 g", huilefriture: "520 ml" },
+      { nb: 14, pouletcuisses: "2100 g", saucesoja: "210 ml", mirin: "140 ml", sucre: "84 g", sesame: "42 g", gingembre: "28 g", huilefriture: "560 ml" },
+      { nb: 15, pouletcuisses: "2250 g", saucesoja: "225 ml", mirin: "150 ml", sucre: "90 g", sesame: "45 g", gingembre: "30 g", huilefriture: "600 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Sécher les ailes", detail: "Bien éponger les ailes de poulet. Les fariner très légèrement pour une peau croustillante.", badge: null },
+      { icone: "🔥", titre: "Première friture", detail: "Frire les ailes à 160°C jusqu'à ce qu'elles soient cuites mais encore pâles. Les égoutter et laisser reposer 5 min.", badge: "⏱ 8 min" },
+      { icone: "🔥", titre: "Seconde friture", detail: "Remonter l'huile à 190°C et refrire les ailes 2 min. CLÉ : la double cuisson est LE secret d'une peau ultra-croustillante qui reste croquante.", badge: "⏱ 2 min" },
+      { icone: "🍶", titre: "Faire la sauce", detail: "Faire réduire la sauce soja, le mirin, le sucre et le gingembre râpé en un sirop brillant.", badge: "⏱ 4 min" },
+      { icone: "🥣", titre: "Laquer", detail: "Hors du feu, enrober les ailes chaudes de sauce pour bien les laquer.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemer de graines de sésame et de poivre blanc, servir aussitôt. Se mange à la main, avec une bière bien fraîche.", badge: null }
+    ]
+  },
+
   buffalowings: {
     nom: "Buffalo wings",
     cat: "aperitifs", pays: "usa",
