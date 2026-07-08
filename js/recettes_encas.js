@@ -1317,7 +1317,7 @@ Object.assign(recettes, {
     ]
   },
   sabich: {
-    liees: ["painpita"],
+    liees: ["painpita","houmous"],
     nom: "Sabich",
     cat: "encas",
     pays: "israel",

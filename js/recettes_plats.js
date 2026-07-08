@@ -9572,7 +9572,7 @@ Object.assign(recettes, {
     ]
   },
   gyrosgrec: {
-    liees: ["painpita"],
+    liees: ["painpita","tzatziki"],
     nom: "Gyros grec",
     dateAjout: "2026-06-05",
     cat: "plats", pays: "grece",

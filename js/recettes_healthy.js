@@ -953,6 +953,7 @@ Object.assign(recettes, {
   },
   wrapveggie: {
     nom: "Wrap végétarien",
+    liees: ["houmous"],
     cat: "healthy", pays: "monde",
     base: 2,
     temps: "15 min",
