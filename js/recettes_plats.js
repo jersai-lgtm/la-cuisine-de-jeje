@@ -5393,6 +5393,7 @@ Object.assign(recettes, {
     ]
   },
   pastillapoulet: {
+    liees: ["feuilledebrick"],
     nom: "Pastilla au Poulet",
     cat: "plats", pays: "maroc",
     base: 6,
@@ -6092,6 +6093,7 @@ Object.assign(recettes, {
     ]
   },
   pastillaroyale: {
+    liees: ["feuilledebrick"],
     nom: "Pastilla Royale",
     cat: "plats", pays: "maroc",
     base: 6,
@@ -16175,7 +16177,7 @@ Object.assign(recettes, {
     ]
   },
   tajinmalsouka: {
-    liees: ["brik"],
+    liees: ["brik", "feuilledebrick"],
     nom: "Tajine Malsouka",
     cat: "plats", pays: "tunisie",
     base: 4,
@@ -20146,6 +20148,7 @@ Object.assign(recettes, {
     ]
   },
   samoussareunion: {
+    liees: ["feuilledebrick"],
     nom: "Samoussas Réunionnais",
     cat: "aperitifs", pays: "reunion",
     base: 4,

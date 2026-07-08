@@ -4579,7 +4579,6 @@ window.RECETTES_EN = {
    }
   ]
  },
-
  "brochettecaprese": {
   "nom": "Tomato-Mozzarella-Basil Skewers",
   "description": "Mini Caprese skewers — cherry tomatoes, mozzarella balls, and basil. Fresh, colorful, and no cooking required.",
@@ -14948,40 +14947,6 @@ window.RECETTES_EN = {
    }
   ]
  },
- "samosas": {
-  "nom": "Vegetable Samosas",
-  "description": "Spiced vegetable samosas — golden and crispy triangles filled with potatoes and peas seasoned with Indian spices.",
-  "etapes": [
-   {
-    "titre": "The Filling",
-    "detail": "Cook potatoes and peas, mash them roughly, then add the sautéed onions and spices (curry, cumin, coriander, chili)."
-   },
-   {
-    "titre": "The Dough",
-    "detail": "Mix flour, salt, oil, and warm water into a smooth dough, and knead."
-   },
-   {
-    "titre": "Resting",
-    "detail": "Cover and let the dough rest."
-   },
-   {
-    "titre": "Rolling Out",
-    "detail": "Roll out the dough thinly and cut into discs or half-moons."
-   },
-   {
-    "titre": "Shaping",
-    "detail": "Fill with the mixture, fold into a triangle, and seal the edges well. CHEF'S TIP: moisten the edges and press firmly, otherwise they will open in the oil."
-   },
-   {
-    "titre": "Frying",
-    "detail": "Fry in oil at 175-180°C until golden, then drain on paper towels."
-   },
-   {
-    "titre": "Serving",
-    "detail": "Serve hot with chutney or a yogurt-mint sauce."
-   }
-  ]
- },
  "oeufsCocotte": {
   "nom": "Eggs Cocotte",
   "description": "Eggs cocotte with cream and herbs — baked in a water bath in individual cocottes with cream, Gruyère, and chives. Elegant and quick.",
@@ -15193,48 +15158,6 @@ window.RECETTES_EN = {
    {
     "titre": "Serving",
     "detail": "Serve PIPING HOT, eat with your hands. Sprinkle with fine sea salt. Lemon wedges on the side. Drink: Sicilian beer or Marsala."
-   }
-  ]
- },
- "samosaslegumes": {
-  "nom": "Vegetable Samosas",
-  "description": "Vegetarian Indian samosas — crispy pastry pockets with thin, delicate dough, filled with potatoes, peas, and curry spices. Fried until golden. The iconic street food of India.",
-  "etapes": [
-   {
-    "titre": "Samosa Dough",
-    "detail": "Mix 250g flour + 1 tsp salt + 4 tbsp vegetable oil. Rub together with your fingertips (breadcrumb texture). Gradually add 100ml warm water. Knead for 5-7 minutes until SOFT and NON-STICKY dough."
-   },
-   {
-    "titre": "Resting",
-    "detail": "Cover with a damp cloth. REST for at least 30 minutes. The dough will become more pliable."
-   },
-   {
-    "titre": "Cook the Potatoes",
-    "detail": "Cook 500g diced potatoes in boiling salted water for 15 minutes. Drain. Coarsely mash with a fork (not a puree)."
-   },
-   {
-    "titre": "Spice Blend",
-    "detail": "In a large skillet, heat 2 tbsp oil. Sauté: cumin seeds (1 tsp) + minced ginger (1 tsp) + 1 chopped onion. Add garam masala (1.5 tsp) + turmeric (1/2 tsp) + chili pepper to taste."
-   },
-   {
-    "titre": "Filling",
-    "detail": "Add mashed potatoes + peas (fresh or thawed) + lemon juice + chopped cilantro + salt. Mix together. Let cool."
-   },
-   {
-    "titre": "Shaping",
-    "detail": "Divide dough into 12 balls. Roll each into a THIN CIRCLE (15cm). Cut in half. With each semicircle: form a CONE by moistening the straight edges and sealing them. CHEF'S TIP: precise technique = beautiful samosa."
-   },
-   {
-    "titre": "Fill",
-    "detail": "Fill each cone with 1 tbsp of filling. Seal the top by pinching firmly with a little water (the edge must be well sealed for frying)."
-   },
-   {
-    "titre": "Frying",
-    "detail": "Heat oil to 170°C (test: bread cube browns in 30 seconds). Plunge 4-5 samosas at a time. Cook for 4-5 minutes until GOLDEN and CRISPY. Drain on paper towels."
-   },
-   {
-    "titre": "Indian Service",
-    "detail": "Serve HOT with: mint-cilantro chutney (yogurt + mint + cilantro + lemon), tamarind chutney, or ketchup. Beverages: mango lassi or chai. Namaste!"
    }
   ]
  },
@@ -56111,6 +56034,74 @@ window.RECETTES_EN = {
    {
     "titre": "Serve",
     "detail": "Reduce until thick and stew-like, then serve."
+   }
+  ]
+ },
+ "samosas": {
+  "nom": "Chicken Samosas",
+  "description": "Chicken samosas — crispy triangles of brick pastry stuffed with spiced chicken and peas, flavored with garam masala and cilantro. Served with a mint chutney.",
+  "etapes": [
+   {
+    "titre": "Aromatics",
+    "detail": "Sauté the onion, garlic, and ginger in the oil for 5 min. Add the garam masala, curry powder, and a pinch of turmeric, and let the flavors bloom."
+   },
+   {
+    "titre": "Chicken",
+    "detail": "Add the very finely chopped (or ground) chicken and sauté until fully cooked. Add the peas and cilantro, season with salt, and let the filling dry out."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let the filling cool completely — an essential step for folding without tearing the brick pastry."
+   },
+   {
+    "titre": "Cut the pastry",
+    "detail": "Cut each sheet of brick pastry into two wide strips and lightly brush them with oil or melted butter."
+   },
+   {
+    "titre": "Fold into triangles",
+    "detail": "Place a spoonful of filling in one corner of the strip, then fold into a triangle along its length. Seal the edge with egg white or water."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Fry at 170°C, 3 min per side until golden and crispy — or bake at 200°C for 15-20 min brushed with oil for a lighter version."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain on paper towels and serve piping hot with a mint-cilantro chutney and a cumin yogurt."
+   }
+  ]
+ },
+ "feuilledebrick": {
+  "nom": "Feuille de Brick",
+  "description": "Homemade brick pastry sheets — thin, pliable, and golden when cooked. The base for samosas, briouates, and pastillas. Quantities for 1 to 6 batches of about 10 sheets.",
+  "etapes": [
+   {
+    "titre": "Prepare the batter",
+    "detail": "Mix the flour, cornstarch, and salt. Gradually pour in the water while whisking to obtain a very smooth, fluid batter with no lumps (the consistency of a thin crêpe batter), then stir in the oil."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest for 30 min at room temperature: the flour hydrates and the last bubbles rise to the surface, which yields smoother sheets."
+   },
+   {
+    "titre": "Heat the pan",
+    "detail": "Heat a smooth griddle or a nonstick pan over medium heat. It should be hot but never scorching, otherwise the sheet burns before it dries. No fat on the pan."
+   },
+   {
+    "titre": "Spread thinly",
+    "detail": "Pour a small ladleful of batter in the center and immediately spread it into a very thin disk with the back of the ladle, using a circular motion. CHEF'S TIP: the thinner the layer, the crispier the sheet will be during final cooking."
+   },
+   {
+    "titre": "Gentle cooking",
+    "detail": "Let it cook dry for 1 to 2 min: the sheet sets, turns matte, and the edges lift away. Don't let it color — it should stay pale and pliable so it can be folded."
+   },
+   {
+    "titre": "Lift and stack",
+    "detail": "Gently peel off the sheet and stack it on the previous ones, separated with plastic wrap or parchment paper so they don't stick together."
+   },
+   {
+    "titre": "Use or store",
+    "detail": "Use immediately for samosas, briouates, or a pastilla, or wrap and keep chilled for 2 days. Brushing with a little melted butter before filling gives a crisp golden finish when fried or baked."
    }
   ]
  }

@@ -318,6 +318,33 @@ Object.assign(recettes, {
         { icone: "🍴", titre: "Piquer le fond", detail: "Piquer le fond à la fourchette pour éviter qu'il ne gonfle. La pâte est prête à garnir et à cuire selon la recette.", badge: null }
       ]
   },
+  feuilledebrick: {
+    nom: "Feuille de Brick",
+    cat: "boulangerie", pays: "tunisie",
+    base: 1,
+    temps: "40 min + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🫓",
+    description: "La feuille de brick maison — fine, souple et dorée à la cuisson. La base des samoussas, briouates et pastillas. Quantités pour 1 à 6 fournées d'environ 10 feuilles.",
+    ingredients: {},
+    tableauFeuilleDeBrick: [
+      { nb: 1, farine: "200 g", maizena: "30 g", eau: "350 ml", huile: "20 ml", sel: "3 g" },
+      { nb: 2, farine: "400 g", maizena: "60 g", eau: "700 ml", huile: "40 ml", sel: "6 g" },
+      { nb: 3, farine: "600 g", maizena: "90 g", eau: "1050 ml", huile: "60 ml", sel: "9 g" },
+      { nb: 4, farine: "800 g", maizena: "120 g", eau: "1400 ml", huile: "80 ml", sel: "12 g" },
+      { nb: 5, farine: "1000 g", maizena: "150 g", eau: "1750 ml", huile: "100 ml", sel: "15 g" },
+      { nb: 6, farine: "1200 g", maizena: "180 g", eau: "2100 ml", huile: "120 ml", sel: "18 g" }
+    ],
+    etapes: [
+      { icone: "🥣", titre: "Préparer la pâte", detail: "Mélanger la farine, la maïzena et le sel. Verser l'eau progressivement en fouettant pour obtenir une pâte très lisse et fluide, sans grumeaux (consistance d'une pâte à crêpes claire), puis incorporer l'huile.", badge: null },
+      { icone: "⏳", titre: "Repos", detail: "Laisser reposer la pâte 30 min à température ambiante : la farine s'hydrate et les dernières bulles remontent, ce qui donne des feuilles plus lisses.", badge: "⏱ 30 min" },
+      { icone: "🔥", titre: "Chauffer la plaque", detail: "Faire chauffer une plaque lisse ou une poêle antiadhésive à feu moyen. Elle doit être chaude mais jamais brûlante, sinon la feuille brûle avant de sécher. Aucun corps gras sur la plaque.", badge: null },
+      { icone: "🥄", titre: "Étaler finement", detail: "Verser une petite louche de pâte au centre et l'étaler aussitôt en un disque très fin avec le dos de la louche, d'un geste circulaire. ASTUCE CHEF : plus la couche est fine, plus la feuille sera croustillante à la cuisson finale.", badge: null },
+      { icone: "⏱️", titre: "Cuisson douce", detail: "Laisser cuire à sec 1 à 2 min : la feuille prend, devient mate et les bords se décollent. Ne pas la colorer — elle doit rester pâle et souple pour pouvoir être pliée.", badge: "⏱ 2 min" },
+      { icone: "🥞", titre: "Décoller et empiler", detail: "Décoller délicatement la feuille et l'empiler sur les précédentes, séparées d'un film ou d'un papier cuisson pour qu'elles ne collent pas entre elles.", badge: null },
+      { icone: "🧈", titre: "Utiliser ou conserver", detail: "Utiliser aussitôt pour des samoussas, briouates ou une pastilla, ou filmer et garder au frais 2 jours. Badigeonner d'un peu de beurre fondu avant de garnir donne un doré croustillant à la friture ou au four.", badge: null }
+    ]
+  },
   patesablee: {
     nom: "Pâte sablée",
     cat: "boulangerie", pays: "france",

@@ -589,40 +589,41 @@ Object.assign(recettes, {
       ]
   },
   samosas: {
-    nom: "Samosas aux Légumes",
+    liees: ["feuilledebrick"],
+    nom: "Samoussas au Poulet",
     cat: "encas", saisons: ["ete","printemps"], pays: "inde",
     base: 4,
-    temps: "45 min",
+    temps: "1h",
     niveau: "⭐⭐ Moyen",
     emoji: "🥟",
-    description: "Samosas aux légumes épicés — triangles dorés et croustillants farcis de pommes de terre et petits pois parfumés aux épices indiennes.",
+    description: "Samoussas au poulet — triangles croustillants de feuille de brick farcis de poulet épicé et petits pois, parfumés au garam masala et à la coriandre. Servis avec un chutney à la menthe.",
     tableauSamosas: [
-      { nb: 1, farine: "50 g", patate: "100 g", petitspois: "30 g", curry: "2 g", huile: "200 ml", sel: "1 g" },
-      { nb: 2, farine: "100 g", patate: "200 g", petitspois: "60 g", curry: "5 g", huile: "200 ml", sel: "1 g" },
-      { nb: 3, farine: "150 g", patate: "300 g", petitspois: "90 g", curry: "8 g", huile: "300 ml", sel: "1 g" },
-      { nb: 4, farine: "200 g", patate: "400 g", petitspois: "120 g", curry: "10 g", huile: "300 ml", sel: "1 g" },
-      { nb: 5, farine: "250 g", patate: "500 g", petitspois: "150 g", curry: "12 g", huile: "400 ml", sel: "1 g" },
-      { nb: 6, farine: "300 g", patate: "600 g", petitspois: "180 g", curry: "15 g", huile: "400 ml", sel: "1 g" },
-      { nb: 7, farine: "350 g", patate: "700 g", petitspois: "210 g", curry: "18 g", huile: "500 ml", sel: "1 g" },
-      { nb: 8, farine: "400 g", patate: "800 g", petitspois: "240 g", curry: "20 g", huile: "500 ml", sel: "1 g" },
-      { nb: 9, farine: "450 g", patate: "900 g", petitspois: "270 g", curry: "22 g", huile: "600 ml", sel: "1 g" },
-      { nb: 10, farine: "500 g", patate: "1000 g", petitspois: "300 g", curry: "25 g", huile: "600 ml", sel: "1 g" },
-      { nb: 11, farine: "550 g", patate: "1100 g", petitspois: "330 g", curry: "28 g", huile: "700 ml", sel: "1 g" },
-      { nb: 12, farine: "600 g", patate: "1200 g", petitspois: "360 g", curry: "30 g", huile: "700 ml", sel: "1 g" },
-      { nb: 13, farine: "650 g", patate: "1300 g", petitspois: "390 g", curry: "32 g", huile: "800 ml", sel: "1 g" },
-      { nb: 14, farine: "700 g", patate: "1400 g", petitspois: "420 g", curry: "35 g", huile: "800 ml", sel: "1 g" },
-      { nb: 15, farine: "750 g", patate: "1500 g", petitspois: "450 g", curry: "38 g", huile: "900 ml", sel: "1 g" }
+      { nb: 1, feuillesBric: "3", poulet: "100 g", petitspois: "40 g", oignon: "50 g", ail: "1", gingembre: "2 g", garamMasala: "5 g", coriandre: "15 g", huile: "15 ml", yaourt: "40 g" },
+      { nb: 2, feuillesBric: "6", poulet: "200 g", petitspois: "80 g", oignon: "1", ail: "2", gingembre: "5 g", garamMasala: "10 g", coriandre: "30 g", huile: "30 ml", yaourt: "80 g" },
+      { nb: 3, feuillesBric: "9", poulet: "300 g", petitspois: "120 g", oignon: "150 g", ail: "3", gingembre: "8 g", garamMasala: "15 g", coriandre: "45 g", huile: "45 ml", yaourt: "120 g" },
+      { nb: 4, feuillesBric: "12", poulet: "400 g", petitspois: "160 g", oignon: "2", ail: "4", gingembre: "10 g", garamMasala: "20 g", coriandre: "60 g", huile: "60 ml", yaourt: "160 g" },
+      { nb: 5, feuillesBric: "15", poulet: "500 g", petitspois: "200 g", oignon: "250 g", ail: "5", gingembre: "12 g", garamMasala: "25 g", coriandre: "75 g", huile: "75 ml", yaourt: "200 g" },
+      { nb: 6, feuillesBric: "18", poulet: "600 g", petitspois: "240 g", oignon: "3", ail: "6", gingembre: "15 g", garamMasala: "30 g", coriandre: "90 g", huile: "90 ml", yaourt: "240 g" },
+      { nb: 7, feuillesBric: "21", poulet: "700 g", petitspois: "280 g", oignon: "350 g", ail: "7", gingembre: "18 g", garamMasala: "35 g", coriandre: "105 g", huile: "105 ml", yaourt: "280 g" },
+      { nb: 8, feuillesBric: "24", poulet: "800 g", petitspois: "320 g", oignon: "4", ail: "8", gingembre: "20 g", garamMasala: "40 g", coriandre: "120 g", huile: "120 ml", yaourt: "320 g" },
+      { nb: 9, feuillesBric: "27", poulet: "900 g", petitspois: "360 g", oignon: "450 g", ail: "9", gingembre: "22 g", garamMasala: "45 g", coriandre: "135 g", huile: "135 ml", yaourt: "360 g" },
+      { nb: 10, feuillesBric: "30", poulet: "1 kg", petitspois: "400 g", oignon: "5", ail: "10", gingembre: "25 g", garamMasala: "50 g", coriandre: "150 g", huile: "150 ml", yaourt: "400 g" },
+      { nb: 11, feuillesBric: "33", poulet: "1.1 kg", petitspois: "440 g", oignon: "550 g", ail: "11", gingembre: "28 g", garamMasala: "55 g", coriandre: "165 g", huile: "165 ml", yaourt: "440 g" },
+      { nb: 12, feuillesBric: "36", poulet: "1.2 kg", petitspois: "480 g", oignon: "6", ail: "12", gingembre: "30 g", garamMasala: "60 g", coriandre: "180 g", huile: "180 ml", yaourt: "480 g" },
+      { nb: 13, feuillesBric: "39", poulet: "1.3 kg", petitspois: "520 g", oignon: "650 g", ail: "13", gingembre: "32 g", garamMasala: "65 g", coriandre: "195 g", huile: "195 ml", yaourt: "520 g" },
+      { nb: 14, feuillesBric: "42", poulet: "1.4 kg", petitspois: "560 g", oignon: "7", ail: "14", gingembre: "35 g", garamMasala: "70 g", coriandre: "210 g", huile: "210 ml", yaourt: "560 g" },
+      { nb: 15, feuillesBric: "45", poulet: "1.5 kg", petitspois: "600 g", oignon: "750 g", ail: "15", gingembre: "38 g", garamMasala: "75 g", coriandre: "225 g", huile: "225 ml", yaourt: "600 g" }
     ],
     ingredients: {},
     etapes: [
-        { icone: "🥔", titre: "La farce", detail: "Cuire pommes de terre et petits pois, les écraser grossièrement, puis ajouter les oignons revenus et les épices (curry, cumin, coriandre, piment).", badge: null },
-        { icone: "🌾", titre: "La pâte", detail: "Mélanger farine, sel, huile et eau tiède en une pâte souple, et pétrir.", badge: null },
-        { icone: "⏳", titre: "Repos", detail: "Couvrir et laisser reposer la pâte.", badge: "⏱ 20 min" },
-        { icone: "📏", titre: "Abaisser", detail: "Étaler la pâte finement et découper des disques ou demi-cercles.", badge: null },
-        { icone: "🥟", titre: "Former", detail: "Garnir de farce, plier en triangle et bien sceller les bords. ASTUCE CHEF : humidifiez les bords et pressez fermement, sinon ils s'ouvrent dans l'huile.", badge: null },
-        { icone: "🔥", titre: "Frire", detail: "Frire dans l'huile à 175-180°C jusqu'à dorure, puis égoutter sur papier absorbant.", badge: "⏱ 4 min" },
-        { icone: "🍽️", titre: "Servir", detail: "Servir chaud avec un chutney ou une sauce yaourt-menthe.", badge: null }
-      ]
+      { icone: "🧅", titre: "Aromates", detail: "Faire revenir oignon, ail et gingembre dans l'huile 5 min. Ajouter le garam masala, le curry et une pointe de curcuma, laisser parfumer.", badge: "⏱ 5 min" },
+      { icone: "🍗", titre: "Poulet", detail: "Ajouter le poulet coupé très fin (ou haché) et faire revenir jusqu'à cuisson complète. Ajouter les petits pois et la coriandre, saler et laisser sécher la farce.", badge: "⏱ 12 min" },
+      { icone: "⏳", titre: "Refroidir", detail: "Laisser refroidir complètement la farce — étape essentielle pour plier sans déchirer la feuille de brick.", badge: "⏱ 15 min" },
+      { icone: "✂️", titre: "Découper les feuilles", detail: "Couper chaque feuille de brick en deux larges bandes et les badigeonner légèrement d'huile ou de beurre fondu.", badge: null },
+      { icone: "🖐️", titre: "Plier en triangle", detail: "Déposer une cuillère de farce dans un coin de la bande puis plier en triangle en suivant la longueur. Coller le bord au blanc d'œuf ou à l'eau.", badge: "⏱ 15 min" },
+      { icone: "🔥", titre: "Cuire", detail: "Frire à 170°C, 3 min par face jusqu'à doré et croustillant — ou four à 200°C 15-20 min badigeonnés d'huile pour une version plus légère.", badge: "⏱ 6 min" },
+      { icone: "🌿", titre: "Servir", detail: "Égoutter sur papier absorbant et servir bien chaud avec un chutney menthe-coriandre et un yaourt au cumin.", badge: null }
+    ]
   },
   springRolls: {
     nom: "Spring Rolls Frais",
@@ -695,6 +696,7 @@ Object.assign(recettes, {
       ]
   },
   samossasagneau: {
+    liees: ["feuilledebrick"],
     nom: "Samoussas au Bœuf",
     cat: "encas", pays: "inde",
     base: 4,
@@ -873,45 +875,6 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire les quesadillas", detail: "Dans une poêle anti-adhésive à FEU MOYEN-DOUX avec 1 cc d'huile : poser la quesadilla. Cuire 3 min jusqu'à DORÉ et craquant. RETOURNER délicatement. 3 min de l'autre côté. Le fromage doit COULER.", badge: "⏱ 6 min" },
       { icone: "🔪", titre: "Trancher", detail: "Sortir, attendre 30 sec, puis couper en TRIANGLES (4 ou 8 selon taille) avec un grand couteau ou une roulette à pizza.", badge: "⏱ 2 min" },
       { icone: "🌶️", titre: "Service mexicain", detail: "Servir BRÛLANT avec : guacamole, crème acidulée, salsa rouge ou verde, quartiers de citron vert. Coriandre fraîche. Bière Corona ou margarita. ¡Buen provecho!", badge: null }
-    ]
-  },
-  samosaslegumes: {
-    liees: ["ketchup"],
-    nom: "Samosas Légumes",
-    cat: "encas", pays: "inde",
-    base: 4,
-    temps: "1h",
-    niveau: "⭐⭐ Moyen",
-    emoji: "🥟",
-    description: "Samosas indiens végétariens — chaussons croustillants à la pâte fine, farcis de pommes de terre, petits pois et épices au curry. Frits jusqu'à dorés. Le street food iconique de l'Inde.",
-    tableauSamosas: [
-      { nb: 1, farine: "30 g", pommedeterre: "80 g", petitspois: "30 g", oignon: "20 g", gingembre: "2 g", epicesmasala: "5 g", coriandre: "3 g", huile: "15 ml" },
-      { nb: 2, farine: "60 g", pommedeterre: "160 g", petitspois: "60 g", oignon: "40 g", gingembre: "4 g", epicesmasala: "10 g", coriandre: "6 g", huile: "30 ml" },
-      { nb: 3, farine: "90 g", pommedeterre: "240 g", petitspois: "90 g", oignon: "60 g", gingembre: "6 g", epicesmasala: "15 g", coriandre: "9 g", huile: "45 ml" },
-      { nb: 4, farine: "120 g", pommedeterre: "320 g", petitspois: "120 g", oignon: "80 g", gingembre: "8 g", epicesmasala: "20 g", coriandre: "12 g", huile: "60 ml" },
-      { nb: 5, farine: "150 g", pommedeterre: "400 g", petitspois: "150 g", oignon: "100 g", gingembre: "10 g", epicesmasala: "25 g", coriandre: "15 g", huile: "75 ml" },
-      { nb: 6, farine: "180 g", pommedeterre: "480 g", petitspois: "180 g", oignon: "120 g", gingembre: "12 g", epicesmasala: "30 g", coriandre: "18 g", huile: "90 ml" },
-      { nb: 7, farine: "210 g", pommedeterre: "560 g", petitspois: "210 g", oignon: "140 g", gingembre: "14 g", epicesmasala: "35 g", coriandre: "21 g", huile: "105 ml" },
-      { nb: 8, farine: "240 g", pommedeterre: "640 g", petitspois: "240 g", oignon: "160 g", gingembre: "16 g", epicesmasala: "40 g", coriandre: "24 g", huile: "120 ml" },
-      { nb: 9, farine: "270 g", pommedeterre: "720 g", petitspois: "270 g", oignon: "180 g", gingembre: "18 g", epicesmasala: "45 g", coriandre: "27 g", huile: "135 ml" },
-      { nb: 10, farine: "300 g", pommedeterre: "800 g", petitspois: "300 g", oignon: "200 g", gingembre: "20 g", epicesmasala: "50 g", coriandre: "30 g", huile: "150 ml" },
-      { nb: 11, farine: "330 g", pommedeterre: "880 g", petitspois: "330 g", oignon: "220 g", gingembre: "22 g", epicesmasala: "55 g", coriandre: "33 g", huile: "165 ml" },
-      { nb: 12, farine: "360 g", pommedeterre: "960 g", petitspois: "360 g", oignon: "240 g", gingembre: "24 g", epicesmasala: "60 g", coriandre: "36 g", huile: "180 ml" },
-      { nb: 13, farine: "390 g", pommedeterre: "1 kg", petitspois: "390 g", oignon: "260 g", gingembre: "26 g", epicesmasala: "65 g", coriandre: "39 g", huile: "195 ml" },
-      { nb: 14, farine: "420 g", pommedeterre: "1.1 kg", petitspois: "420 g", oignon: "280 g", gingembre: "28 g", epicesmasala: "70 g", coriandre: "42 g", huile: "210 ml" },
-      { nb: 15, farine: "450 g", pommedeterre: "1.2 kg", petitspois: "450 g", oignon: "300 g", gingembre: "30 g", epicesmasala: "75 g", coriandre: "45 g", huile: "225 ml" }
-    ],
-    ingredients: {},
-    etapes: [
-      { icone: "🥣", titre: "Pâte à samosas", detail: "Mélanger 250g de farine + 1 cc de sel + 4 cs d'huile végétale. Sabler avec les doigts (texture sable). Ajouter 100ml d'eau tiède progressivement. Pétrir 5-7 min jusqu'à pâte SOUPLE et NON COLLANTE.", badge: "⏱ 10 min" },
-      { icone: "⏳", titre: "Repos", detail: "Couvrir d'un linge humide. REPOSER 30 min minimum. La pâte va devenir plus malléable.", badge: "⏱ 30 min" },
-      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Cuire 500g de pommes de terre en cubes 15 min à l'eau bouillante salée. Égoutter. Écraser GROSSIÈREMENT à la fourchette (pas en purée).", badge: "⏱ 18 min" },
-      { icone: "🌶️", titre: "Mélange épices", detail: "Dans une grande poêle, chauffer 2 cs d'huile. Faire revenir : graines de cumin (1 cc) + gingembre haché (1 cc) + 1 oignon haché. Ajouter garam masala (1.5 cc) + curcuma (1/2 cc) + piment selon goût.", badge: "⏱ 5 min" },
-      { icone: "🥗", titre: "Garniture", detail: "Ajouter pommes de terre écrasées + petits pois (frais ou décongelés) + jus de citron + coriandre ciselée + sel. Mélanger. Laisser refroidir.", badge: "⏱ 5 min" },
-      { icone: "✋", titre: "Façonnage", detail: "Diviser la pâte en 12 boules. Étaler chacune en CERCLE FIN (15cm). Couper en deux. Avec chaque demi-cercle : former un CÔNE en mouillant les bords droits, coller. ASTUCE CHEF : technique précise = beau samosa.", badge: "⏱ 20 min" },
-      { icone: "🥟", titre: "Garnir", detail: "Remplir chaque cône avec 1 cs de garniture. Refermer le haut en pinçant fermement avec un peu d'eau (le bord doit être bien soudé pour la friture).", badge: "⏱ 15 min" },
-      { icone: "🔥", titre: "Frire", detail: "Chauffer huile à 170°C (test : cube de pain dore en 30s). Plonger 4-5 samosas à la fois. Cuire 4-5 min jusqu'à DORÉS et CROUSTILLANTS. Égoutter sur papier absorbant.", badge: "⏱ 5 min/fournée" },
-      { icone: "🍽️", titre: "Service indien", detail: "Servir CHAUDS avec : chutney à la menthe-coriandre (yaourt + menthe + coriandre + citron), chutney aux tamarinds, ou ketchup. Boisson : lassi mangue ou chai. Namaste !", badge: null }
     ]
   },
   bagelsaumon: {

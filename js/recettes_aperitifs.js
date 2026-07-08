@@ -694,6 +694,7 @@ tapenade: {
       ]
   },
   samoussaslegumes: {
+    liees: ["feuilledebrick"],
     nom: "Samoussas aux légumes",
     cat: "aperitifs", pays: "inde",
     base: 8,
@@ -2118,7 +2119,7 @@ tapenade: {
     nom: "Briouates à la viande", cat: "aperitifs", pays: "maroc", dateAjout: "2026-06-20T10:00:00",
     base: 4, temps: "45 min", niveau: "⭐⭐ Moyen", emoji: "🥟",
     description: "Les petits triangles croustillants du Maghreb : feuille de brick dorée garnie de viande épicée à l'oignon et au persil. Imbattables à l'apéro.",
-    liees: [],
+    liees: ["feuilledebrick"],
     ingredients: {},
     tableauBriouates: [
       { nb: 1, feuillebrick: "30 g", boeuf: "70 g", oignon: "25 g", persil: "5 g", huileolive: "8 ml", cumin: "1 g", paprika: "1 g", oeuf: "8 g" },
