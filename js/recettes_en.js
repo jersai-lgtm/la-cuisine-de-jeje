@@ -35156,6 +35156,346 @@ window.RECETTES_EN = {
    }
   ]
  },
+ "bourdaloue": {
+  "nom": "Bourdaloue Tart",
+  "description": "Bourdaloue tart — poached pears on a bed of fragrant almond cream in a crisp pastry shell. The great classic of Parisian patisseries, born on rue Bourdaloue.",
+  "etapes": [
+   {
+    "titre": "Poach the pears",
+    "detail": "Poach the pear halves 15 min in a light syrup (water + sugar + vanilla pod) until tender. Drain. TIP: canned pears in syrup work great as a shortcut."
+   },
+   {
+    "titre": "Line the tin",
+    "detail": "Roll out the pastry, line the tart tin and prick the base with a fork. Chill while making the cream."
+   },
+   {
+    "titre": "Cream the butter",
+    "detail": "Beat the soft butter with the sugar until creamy."
+   },
+   {
+    "titre": "Make the almond cream",
+    "detail": "Beat in the egg then the ground almonds, mixing without incorporating air (you don't want it to puff up too much when baking)."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the almond cream over the tart base. Slice the pear halves thinly and arrange in a rosette, tips towards the centre."
+   },
+   {
+    "titre": "Scatter almonds",
+    "detail": "Scatter flaked almonds, which will brown and crisp up in the oven."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C until the almond cream is golden and set and the pastry cooked underneath."
+   },
+   {
+    "titre": "Glaze and serve",
+    "detail": "Brush with a little apricot glaze for shine, let cool. Enjoy warm or cold, dusted with icing sugar."
+   }
+  ]
+ },
+ "fiadone": {
+  "nom": "Fiadone",
+  "description": "Corsican fiadone — a crustless flan of fresh brocciu cheese scented with lemon and eau-de-vie. An airy island cheesecake, Corsica's sweet pride.",
+  "etapes": [
+   {
+    "titre": "Drain the brocciu",
+    "detail": "Drain the brocciu well (or brousse / ricotta as a substitute) to remove excess whey."
+   },
+   {
+    "titre": "Whisk eggs and sugar",
+    "detail": "Whisk whole eggs with the sugar until pale and doubled in volume."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add finely grated lemon zest. TRADITION: a dash of Corsican eau-de-vie (optional) marks the real fiadone."
+   },
+   {
+    "titre": "Fold in the brocciu",
+    "detail": "Mash the brocciu with a fork and gently fold it into the egg-sugar mix, without overworking."
+   },
+   {
+    "titre": "Pour into the mould",
+    "detail": "Pour into a buttered (or lined) mould — the fiadone bakes WITHOUT pastry, that's its signature."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C until the top is well browned and the flan set (a blade comes out clean)."
+   },
+   {
+    "titre": "Cool and serve",
+    "detail": "Cool completely before unmoulding: it firms up as it cools. Serve cold, optionally with a drizzle of Corsican honey."
+   }
+  ]
+ },
+ "teurgoule": {
+  "nom": "Teurgoule",
+  "description": "Norman teurgoule — rice pudding baked very slowly until a caramelised cinnamon skin forms. A rustic peasant dessert that perfumes the house for hours.",
+  "etapes": [
+   {
+    "titre": "Mix",
+    "detail": "Mix the round rice, sugar and cinnamon in an ovenproof earthenware dish."
+   },
+   {
+    "titre": "Add the milk",
+    "detail": "Pour cold whole milk over the top and stir. Keep the level low — the rice swells enormously."
+   },
+   {
+    "titre": "Very low oven",
+    "detail": "Bake at 130-150°C. KEY: the slow, long cooking is the whole secret of teurgoule."
+   },
+   {
+    "titre": "Bake without stirring",
+    "detail": "Bake at least 5 hours WITHOUT ever stirring: a thick brown skin forms on top."
+   },
+   {
+    "titre": "Check the skin",
+    "detail": "The teurgoule is ready when the skin is well caramelised and brown, with creamy rice underneath."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Enjoy warm or cold, spooned up by cracking the famous skin. Traditionally served with a Norman 'fallue' brioche."
+   }
+  ]
+ },
+ "croustadepommes": {
+  "nom": "Apple Croustade",
+  "description": "Gascon apple croustade — tender apples scented with armagnac, wrapped in ultra-thin crisp buttered pastry leaves. Spectacular and surprisingly simple.",
+  "etapes": [
+   {
+    "titre": "Pan-fry the apples",
+    "detail": "Peel and slice the apples, pan-fry them in butter with the sugar until golden and tender."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Off the heat, deglaze with a dash of armagnac (optional) and let cool. TRADITION: armagnac makes the real Gascon croustade."
+   },
+   {
+    "titre": "Butter the sheets",
+    "detail": "Generously brush each filo (or brick) sheet with melted butter — this is what makes them crisp."
+   },
+   {
+    "titre": "Line the tin",
+    "detail": "Arrange the buttered sheets in a rosette in a tin, letting them overhang generously."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the cooled apples in the centre and scatter with flaked almonds."
+   },
+   {
+    "titre": "Fold into a ruffle",
+    "detail": "Fold the overhanging sheets back, crumpling them into ruffled petals — the irregular look is the croustade's charm."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Butter the top, sprinkle with sugar and bake at 180°C until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, dusted with icing sugar, on its own or with a scoop of vanilla ice cream."
+   }
+  ]
+ },
+ "flognardepoires": {
+  "nom": "Pear Flognarde",
+  "description": "Limousin flognarde — a cousin of clafoutis, a thick, soft flan with tender pears. The family dessert of the Limousin, made in a flash with pantry staples.",
+  "etapes": [
+   {
+    "titre": "Prepare the pears",
+    "detail": "Peel the pears, cut into wedges or slices and spread in a buttered dish."
+   },
+   {
+    "titre": "Beat the eggs",
+    "detail": "Whisk the eggs with the sugar until lightly foamy."
+   },
+   {
+    "titre": "Add the flour",
+    "detail": "Whisk in the sifted flour to avoid lumps."
+   },
+   {
+    "titre": "Loosen with milk",
+    "detail": "Add the milk gradually while whisking to a smooth, fluid batter, thicker than crêpe batter."
+   },
+   {
+    "titre": "Pour over the pears",
+    "detail": "Pour the batter over the pears and dot with a little butter."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C until puffed and golden, the centre just set. IMPORTANT: it deflates a little as it cools, that's normal."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust with icing sugar and serve warm or cold, straight from the dish. Keeps 2 days chilled."
+   }
+  ]
+ },
+ "pasteldechoclo": {
+  "nom": "Pastel de Choclo",
+  "description": "Chilean pastel de choclo — a spiced beef hash studded with olives, raisins and hard-boiled egg, gratinated under a sweet golden corn purée. The great comfort dish of the austral summer.",
+  "etapes": [
+   {
+    "titre": "Make the pino",
+    "detail": "Cook the chopped onion, add the ground beef, cumin, paprika, salt and pepper. Cook until browned: this is the 'pino', the base of the dish."
+   },
+   {
+    "titre": "Layer the meat",
+    "detail": "Spread the pino in a baking dish (or ramekins) and scatter with black olives, raisins and slices of hard-boiled egg."
+   },
+   {
+    "titre": "Blend the corn",
+    "detail": "Blend the corn kernels with a little milk into a thick purée."
+   },
+   {
+    "titre": "Cook the corn purée",
+    "detail": "Thicken this purée for a few minutes in a pan with a knob of butter and a few basil leaves, stirring. Season."
+   },
+   {
+    "titre": "Cover",
+    "detail": "Spread the corn purée over the meat in an even layer."
+   },
+   {
+    "titre": "Sprinkle with sugar",
+    "detail": "Sprinkle the top with a little sugar. KEY: the sugar caramelises in the oven and forms the signature golden crust."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Bake at 200°C until the top is well browned and caramelised."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, spooned up, with a fresh 'chilena' salsa. The sweet-savoury contrast is the whole charm."
+   }
+  ]
+ },
+ "rfissa": {
+  "nom": "Rfissa",
+  "description": "Moroccan rfissa — chicken simmered with fenugreek, lentils and ras el-hanout, served over shredded msemen (flaky flatbread) that soaks up the fragrant broth. The dish for big occasions and new mothers.",
+  "etapes": [
+   {
+    "titre": "Soften the onions",
+    "detail": "Soften the sliced onions in oil with ginger, saffron, ras el-hanout and a touch of fenugreek (rfissa's signature spice)."
+   },
+   {
+    "titre": "Sear the chicken",
+    "detail": "Add the chicken pieces and coat them in the spices on all sides."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Cover with hot water, add the coriander and parsley in a bunch. Bring to the boil then simmer covered."
+   },
+   {
+    "titre": "Add the lentils",
+    "detail": "Add the lentils and fenugreek seeds, continue cooking until the chicken is tender and the lentils soft."
+   },
+   {
+    "titre": "Prepare the msemen",
+    "detail": "Shred the msemen (flaky flatbread, see linked recipe) or trid into strips and arrange them at the bottom of a large dish."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Drizzle the msemen with a few ladles of hot broth so it swells and soaks. KEY: the bread must be soft, soaked in broth, never dry."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Arrange the chicken and lentils in the centre, generously ladle over the fragrant broth. Serve piping hot, shared by hand around the dish."
+   }
+  ]
+ },
+ "mrouzia": {
+  "nom": "Mrouzia",
+  "description": "Moroccan mrouzia — a confit lamb tagine, meltingly tender and sweet-spiced with honey, ras el-hanout, almonds and raisins. The Eid festive dish, whose honey once ensured its preservation.",
+  "etapes": [
+   {
+    "titre": "Coat the meat",
+    "detail": "Coat the lamb pieces in the spice mix: ras el-hanout, cinnamon, ginger, saffron, salt and pepper."
+   },
+   {
+    "titre": "Start the tagine",
+    "detail": "Cook the sliced onions in oil and butter (smen traditionally), add the spiced lamb and colour it."
+   },
+   {
+    "titre": "Confit gently",
+    "detail": "Cover with water, bring to a simmer then cook over very low heat, covered. KEY: the long slow cooking makes the lamb meltingly tender."
+   },
+   {
+    "titre": "Toast the almonds",
+    "detail": "Meanwhile, toast the almonds in a pan and plump the raisins in a little warm water."
+   },
+   {
+    "titre": "Add the honey",
+    "detail": "When the meat is tender and the water almost evaporated, add the honey, raisins and almonds. IMPORTANT: honey at the end, or it burns and turns bitter."
+   },
+   {
+    "titre": "Caramelise the sauce",
+    "detail": "Reduce uncovered until the sauce becomes a glossy, coating syrup that clings to the meat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the lamb coated in honey sauce, scattered with almonds and sesame seeds. Serve with Moroccan bread to mop up."
+   }
+  ]
+ },
+ "bissara": {
+  "nom": "Bissara",
+  "description": "Moroccan bissara — a rustic velouté of dried fava beans with garlic and cumin, drizzled with olive oil and paprika. The winter breakfast soup of the streets, comforting and nourishing for pennies.",
+  "etapes": [
+   {
+    "titre": "Soak the beans",
+    "detail": "The night before, soak the dried split fava beans in cold water. KEY: soaking greatly reduces the cooking time."
+   },
+   {
+    "titre": "Cook the beans",
+    "detail": "Drain and cook the beans in a large pot of water with the garlic and a pinch of salt, until they fall apart."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the cumin, a little mild chilli, adjust the salt at the end."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend finely into a smooth, silky velouté. Loosen with a little cooking water if too thick."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Pour into bowls, make a well and pour in a generous drizzle of olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Sprinkle with cumin and paprika, serve piping hot with Moroccan bread for dipping. Also sipped from a cup as in Morocco."
+   }
+  ]
+ },
+ "tourinail": {
+  "nom": "Garlic Tourin",
+  "description": "Tourin à l'ail — a peasant soup from South-West France thickened with egg yolk and vinegar, poured over slices of bread. The grandmother's remedy for colds and morning-afters, once served to newlyweds.",
+  "etapes": [
+   {
+    "titre": "Soften the garlic",
+    "detail": "Gently soften the crushed garlic in duck fat (or butter) without colouring, so it turns sweet."
+   },
+   {
+    "titre": "Dust with flour",
+    "detail": "Sprinkle with flour, stir for 1 minute to make a light blond roux."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in the boiling water gradually while whisking, season and simmer."
+   },
+   {
+    "titre": "Separate the egg",
+    "detail": "Separate the white from the yolk. Drizzle the white into the simmering soup while stirring: it cooks into threads."
+   },
+   {
+    "titre": "Thicken with the yolk",
+    "detail": "Mix the yolk with the vinegar, then stir it in OFF the heat while whisking. IMPORTANT: off the heat, or the yolk curdles and splits the soup."
+   },
+   {
+    "titre": "Do the 'chabrot'",
+    "detail": "Place slices of stale bread in the bowls and pour the piping-hot soup over. TRADITION: the 'chabrot' is to finish by pouring a splash of red wine into the last of the soup."
+   }
+  ]
+ },
  "saucemorilles": {
   "nom": "Morel Sauce",
   "description": "Morel sauce — the Jura grand classic: rehydrated morels in their strained soaking juice, shallot, white wine and cream reduced to a coating consistency. Sumptuous over roast poultry, veal fillet or fresh pasta.",

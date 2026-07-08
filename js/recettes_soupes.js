@@ -4,6 +4,79 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  bissara: {
+    nom: "Bissara",
+    cat: "soupes", pays: "maroc",
+    dateAjout: "2026-07-08T09:00:00",
+    base: 6,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🫘",
+    description: "La bissara marocaine — velouté rustique de fèves sèches à l'ail et au cumin, nappé d'huile d'olive et de paprika. La soupe d'hiver du petit-déjeuner populaire, réconfortante et nourrissante pour quelques centimes.",
+    tableauBissara: [
+      { nb: 1, feveseche: "60 g", ail: "3 g", cumin: "1 g", huileolive: "12 ml", paprika: "1 g" },
+      { nb: 2, feveseche: "120 g", ail: "6 g", cumin: "2 g", huileolive: "24 ml", paprika: "2 g" },
+      { nb: 3, feveseche: "180 g", ail: "9 g", cumin: "3 g", huileolive: "36 ml", paprika: "3 g" },
+      { nb: 4, feveseche: "240 g", ail: "12 g", cumin: "4 g", huileolive: "48 ml", paprika: "4 g" },
+      { nb: 5, feveseche: "300 g", ail: "15 g", cumin: "5 g", huileolive: "60 ml", paprika: "5 g" },
+      { nb: 6, feveseche: "360 g", ail: "18 g", cumin: "6 g", huileolive: "72 ml", paprika: "6 g" },
+      { nb: 7, feveseche: "420 g", ail: "21 g", cumin: "7 g", huileolive: "84 ml", paprika: "7 g" },
+      { nb: 8, feveseche: "480 g", ail: "24 g", cumin: "8 g", huileolive: "96 ml", paprika: "8 g" },
+      { nb: 9, feveseche: "540 g", ail: "27 g", cumin: "9 g", huileolive: "108 ml", paprika: "9 g" },
+      { nb: 10, feveseche: "600 g", ail: "30 g", cumin: "10 g", huileolive: "120 ml", paprika: "10 g" },
+      { nb: 11, feveseche: "660 g", ail: "33 g", cumin: "11 g", huileolive: "132 ml", paprika: "11 g" },
+      { nb: 12, feveseche: "720 g", ail: "36 g", cumin: "12 g", huileolive: "144 ml", paprika: "12 g" },
+      { nb: 13, feveseche: "780 g", ail: "39 g", cumin: "13 g", huileolive: "156 ml", paprika: "13 g" },
+      { nb: 14, feveseche: "840 g", ail: "42 g", cumin: "14 g", huileolive: "168 ml", paprika: "14 g" },
+      { nb: 15, feveseche: "900 g", ail: "45 g", cumin: "15 g", huileolive: "180 ml", paprika: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Tremper les fèves", detail: "La veille, faire tremper les fèves sèches décortiquées dans l'eau froide. CLÉ : le trempage réduit beaucoup le temps de cuisson.", badge: "⏱ 1 nuit" },
+      { icone: "🥘", titre: "Cuire les fèves", detail: "Égoutter et cuire les fèves dans une grande casserole d'eau avec l'ail et une pincée de sel, jusqu'à ce qu'elles se défassent.", badge: "⏱ 40 min" },
+      { icone: "🌿", titre: "Assaisonner", detail: "Ajouter le cumin, un peu de piment doux, rectifier le sel en fin de cuisson.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixer finement jusqu'à obtenir un velouté lisse et onctueux. Détendre avec un peu d'eau de cuisson si c'est trop épais.", badge: "⏱ 2 min" },
+      { icone: "🫒", titre: "Dresser", detail: "Verser dans les bols, creuser un puits et y verser un généreux filet d'huile d'olive.", badge: null },
+      { icone: "🌶️", titre: "Servir", detail: "Saupoudrer de cumin et de paprika, servir brûlant avec du pain marocain pour tremper. Se boit aussi à la tasse comme au Maroc.", badge: null }
+    ]
+  },
+  tourinail: {
+    nom: "Tourin à l'ail",
+    cat: "soupes", pays: "france",
+    dateAjout: "2026-07-08T09:00:00",
+    base: 6,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🧄",
+    description: "Le tourin à l'ail — soupe paysanne du Sud-Ouest liée au jaune d'œuf et au vinaigre, versée sur des tranches de pain. Le remède de grand-mère contre les rhumes et le lendemain de fête, servi jadis aux mariés.",
+    tableauTourinAil: [
+      { nb: 1, ail: "12 g", oeuf: "1 g", farine: "8 g", painrassis: "30 g", graissecanard: "8", vinaigreVin: "5 ml" },
+      { nb: 2, ail: "24 g", oeuf: "2 g", farine: "16 g", painrassis: "60 g", graissecanard: "16", vinaigreVin: "10 ml" },
+      { nb: 3, ail: "36 g", oeuf: "3 g", farine: "24 g", painrassis: "90 g", graissecanard: "24", vinaigreVin: "15 ml" },
+      { nb: 4, ail: "48 g", oeuf: "4 g", farine: "32 g", painrassis: "120 g", graissecanard: "32", vinaigreVin: "20 ml" },
+      { nb: 5, ail: "60 g", oeuf: "5 g", farine: "40 g", painrassis: "150 g", graissecanard: "40", vinaigreVin: "25 ml" },
+      { nb: 6, ail: "72 g", oeuf: "6 g", farine: "48 g", painrassis: "180 g", graissecanard: "48", vinaigreVin: "30 ml" },
+      { nb: 7, ail: "84 g", oeuf: "7 g", farine: "56 g", painrassis: "210 g", graissecanard: "56", vinaigreVin: "35 ml" },
+      { nb: 8, ail: "96 g", oeuf: "8 g", farine: "64 g", painrassis: "240 g", graissecanard: "64", vinaigreVin: "40 ml" },
+      { nb: 9, ail: "108 g", oeuf: "9 g", farine: "72 g", painrassis: "270 g", graissecanard: "72", vinaigreVin: "45 ml" },
+      { nb: 10, ail: "120 g", oeuf: "10 g", farine: "80 g", painrassis: "300 g", graissecanard: "80", vinaigreVin: "50 ml" },
+      { nb: 11, ail: "132 g", oeuf: "11 g", farine: "88 g", painrassis: "330 g", graissecanard: "88", vinaigreVin: "55 ml" },
+      { nb: 12, ail: "144 g", oeuf: "12 g", farine: "96 g", painrassis: "360 g", graissecanard: "96", vinaigreVin: "60 ml" },
+      { nb: 13, ail: "156 g", oeuf: "13 g", farine: "104 g", painrassis: "390 g", graissecanard: "104", vinaigreVin: "65 ml" },
+      { nb: 14, ail: "168 g", oeuf: "14 g", farine: "112 g", painrassis: "420 g", graissecanard: "112", vinaigreVin: "70 ml" },
+      { nb: 15, ail: "180 g", oeuf: "15 g", farine: "120 g", painrassis: "450 g", graissecanard: "120", vinaigreVin: "75 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧄", titre: "Fondre l'ail", detail: "Faire fondre doucement l'ail écrasé dans la graisse de canard (ou beurre) sans le colorer, pour qu'il devienne doux.", badge: "⏱ 5 min" },
+      { icone: "🌾", titre: "Singer", detail: "Saupoudrer de farine, mélanger 1 minute pour faire un léger roux blond.", badge: null },
+      { icone: "💧", titre: "Mouiller", detail: "Verser l'eau bouillante peu à peu en fouettant, saler, poivrer et laisser mijoter.", badge: "⏱ 15 min" },
+      { icone: "🥚", titre: "Séparer l'œuf", detail: "Séparer le blanc du jaune. Verser le blanc en filet dans la soupe frémissante en remuant : il cuit en filaments.", badge: null },
+      { icone: "🥄", titre: "Lier au jaune", detail: "Délayer le jaune d'œuf avec le vinaigre, puis l'incorporer HORS du feu en fouettant. IMPORTANT : hors du feu, sinon le jaune coagule et tranche la soupe.", badge: null },
+      { icone: "🍞", titre: "Faire chabrot", detail: "Disposer des tranches de pain rassis au fond des assiettes et verser la soupe brûlante dessus. TRADITION : le « chabrot », c'est finir en versant un doigt de vin rouge dans le reste de soupe.", badge: null }
+    ]
+  },
+
   soupefroideconcombre: {
     nom: "Soupe froide de concombre", cat: "soupes", pays: "grece", dateAjout: "2026-06-17T14:00:00",
     base: 4, temps: "15 min", niveau: "⭐ Facile", emoji: "🍵",

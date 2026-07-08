@@ -4,6 +4,120 @@
 //    (le plus simple : copie une recette existante et change les valeurs)
 // ============================================================
 Object.assign(recettes, {
+  pasteldechoclo: {
+    nom: "Pastel de Choclo",
+    cat: "plats", pays: "chili",
+    dateAjout: "2026-07-08T09:00:00",
+    base: 6,
+    temps: "1h15",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌽",
+    description: "Le pastel de choclo chilien — un hachis de bœuf épicé garni d'olives, raisins secs et œuf dur, gratiné sous une couche de purée de maïs sucrée dorée au four. Le grand plat réconfortant de l'été austral.",
+    tableauPastelChoclo: [
+      { nb: 1, boeuf: "120 g", mais: "100 g", oignon: "40 g", oeuf: "0.5", olivenoire: "15 g", raisinsec: "10 g", lait: "20 ml", sucre: "3 g" },
+      { nb: 2, boeuf: "240 g", mais: "200 g", oignon: "80 g", oeuf: "1", olivenoire: "30 g", raisinsec: "20 g", lait: "40 ml", sucre: "6 g" },
+      { nb: 3, boeuf: "360 g", mais: "300 g", oignon: "120 g", oeuf: "1.5", olivenoire: "45 g", raisinsec: "30 g", lait: "60 ml", sucre: "9 g" },
+      { nb: 4, boeuf: "480 g", mais: "400 g", oignon: "160 g", oeuf: "2", olivenoire: "60 g", raisinsec: "40 g", lait: "80 ml", sucre: "12 g" },
+      { nb: 5, boeuf: "600 g", mais: "500 g", oignon: "200 g", oeuf: "2.5", olivenoire: "75 g", raisinsec: "50 g", lait: "100 ml", sucre: "15 g" },
+      { nb: 6, boeuf: "720 g", mais: "600 g", oignon: "240 g", oeuf: "3", olivenoire: "90 g", raisinsec: "60 g", lait: "120 ml", sucre: "18 g" },
+      { nb: 7, boeuf: "840 g", mais: "700 g", oignon: "280 g", oeuf: "3.5", olivenoire: "105 g", raisinsec: "70 g", lait: "140 ml", sucre: "21 g" },
+      { nb: 8, boeuf: "960 g", mais: "800 g", oignon: "320 g", oeuf: "4", olivenoire: "120 g", raisinsec: "80 g", lait: "160 ml", sucre: "24 g" },
+      { nb: 9, boeuf: "1080 g", mais: "900 g", oignon: "360 g", oeuf: "4.5", olivenoire: "135 g", raisinsec: "90 g", lait: "180 ml", sucre: "27 g" },
+      { nb: 10, boeuf: "1200 g", mais: "1000 g", oignon: "400 g", oeuf: "5", olivenoire: "150 g", raisinsec: "100 g", lait: "200 ml", sucre: "30 g" },
+      { nb: 11, boeuf: "1320 g", mais: "1100 g", oignon: "440 g", oeuf: "5.5", olivenoire: "165 g", raisinsec: "110 g", lait: "220 ml", sucre: "33 g" },
+      { nb: 12, boeuf: "1440 g", mais: "1200 g", oignon: "480 g", oeuf: "6", olivenoire: "180 g", raisinsec: "120 g", lait: "240 ml", sucre: "36 g" },
+      { nb: 13, boeuf: "1560 g", mais: "1300 g", oignon: "520 g", oeuf: "6.5", olivenoire: "195 g", raisinsec: "130 g", lait: "260 ml", sucre: "39 g" },
+      { nb: 14, boeuf: "1680 g", mais: "1400 g", oignon: "560 g", oeuf: "7", olivenoire: "210 g", raisinsec: "140 g", lait: "280 ml", sucre: "42 g" },
+      { nb: 15, boeuf: "1800 g", mais: "1500 g", oignon: "600 g", oeuf: "7.5", olivenoire: "225 g", raisinsec: "150 g", lait: "300 ml", sucre: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Faire le pino", detail: "Faire revenir l'oignon émincé, ajouter le bœuf haché, cumin, paprika, sel et poivre. Cuire jusqu'à ce que la viande soit dorée : c'est le « pino », la base du plat.", badge: "⏱ 10 min" },
+      { icone: "🫒", titre: "Garnir la viande", detail: "Répartir le pino dans un plat à gratin (ou des cassolettes) et parsemer d'olives noires, de raisins secs et de rondelles d'œuf dur.", badge: null },
+      { icone: "🌽", titre: "Mixer le maïs", detail: "Mixer les grains de maïs avec un peu de lait pour obtenir une purée épaisse.", badge: null },
+      { icone: "🍳", titre: "Cuire la purée de maïs", detail: "Faire épaissir cette purée quelques minutes à la casserole avec une noix de beurre et quelques feuilles de basilic, en remuant. Saler.", badge: "⏱ 8 min" },
+      { icone: "🥄", titre: "Recouvrir", detail: "Étaler la purée de maïs sur la viande garnie en couche régulière.", badge: null },
+      { icone: "🍬", titre: "Saupoudrer de sucre", detail: "Saupoudrer le dessus d'un peu de sucre. CLÉ : le sucre va caraméliser au four et former la croûte dorée signature.", badge: null },
+      { icone: "♨️", titre: "Gratiner", detail: "Enfourner à 200°C jusqu'à ce que le dessus soit bien doré et caramélisé.", badge: "⏱ 30 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Servir brûlant, à la cuillère, avec une salsa fraîche « chilena ». Le contraste sucré-salé fait tout le charme du plat.", badge: null }
+    ]
+  },
+  rfissa: {
+    nom: "Rfissa",
+    cat: "plats", pays: "maroc",
+    dateAjout: "2026-07-08T09:00:00",
+    base: 6,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍗",
+    liees: ["msemen"],
+    description: "La rfissa marocaine — poulet mijoté au fenugrec, lentilles et ras el-hanout, servi sur un lit de msemen (crêpes feuilletées) émietté qui s'imbibe du bouillon parfumé. Le plat des grandes occasions et de la jeune maman.",
+    tableauRfissa: [
+      { nb: 1, poulet: "150 g", lentilles: "30 g", oignon: "50 g", msemen: "1", coriandre: "3 g", gingembre: "2 g", safran: "0.1 g" },
+      { nb: 2, poulet: "300 g", lentilles: "60 g", oignon: "100 g", msemen: "2", coriandre: "6 g", gingembre: "4 g", safran: "0.2 g" },
+      { nb: 3, poulet: "450 g", lentilles: "90 g", oignon: "150 g", msemen: "3", coriandre: "9 g", gingembre: "6 g", safran: "0.3 g" },
+      { nb: 4, poulet: "600 g", lentilles: "120 g", oignon: "200 g", msemen: "4", coriandre: "12 g", gingembre: "8 g", safran: "0.4 g" },
+      { nb: 5, poulet: "750 g", lentilles: "150 g", oignon: "250 g", msemen: "5", coriandre: "15 g", gingembre: "10 g", safran: "0.5 g" },
+      { nb: 6, poulet: "900 g", lentilles: "180 g", oignon: "300 g", msemen: "6", coriandre: "18 g", gingembre: "12 g", safran: "0.6 g" },
+      { nb: 7, poulet: "1050 g", lentilles: "210 g", oignon: "350 g", msemen: "7", coriandre: "21 g", gingembre: "14 g", safran: "0.7 g" },
+      { nb: 8, poulet: "1200 g", lentilles: "240 g", oignon: "400 g", msemen: "8", coriandre: "24 g", gingembre: "16 g", safran: "0.8 g" },
+      { nb: 9, poulet: "1350 g", lentilles: "270 g", oignon: "450 g", msemen: "9", coriandre: "27 g", gingembre: "18 g", safran: "0.9 g" },
+      { nb: 10, poulet: "1500 g", lentilles: "300 g", oignon: "500 g", msemen: "10", coriandre: "30 g", gingembre: "20 g", safran: "1 g" },
+      { nb: 11, poulet: "1650 g", lentilles: "330 g", oignon: "550 g", msemen: "11", coriandre: "33 g", gingembre: "22 g", safran: "1.1 g" },
+      { nb: 12, poulet: "1800 g", lentilles: "360 g", oignon: "600 g", msemen: "12", coriandre: "36 g", gingembre: "24 g", safran: "1.2 g" },
+      { nb: 13, poulet: "1950 g", lentilles: "390 g", oignon: "650 g", msemen: "13", coriandre: "39 g", gingembre: "26 g", safran: "1.3 g" },
+      { nb: 14, poulet: "2100 g", lentilles: "420 g", oignon: "700 g", msemen: "14", coriandre: "42 g", gingembre: "28 g", safran: "1.4 g" },
+      { nb: 15, poulet: "2250 g", lentilles: "450 g", oignon: "750 g", msemen: "15", coriandre: "45 g", gingembre: "30 g", safran: "1.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Fondre les oignons", detail: "Faire fondre les oignons émincés dans l'huile avec gingembre, safran, ras el-hanout et une pointe de fenugrec (l'épice signature de la rfissa).", badge: "⏱ 8 min" },
+      { icone: "🍗", titre: "Saisir le poulet", detail: "Ajouter les morceaux de poulet et les enrober des épices sur toutes les faces.", badge: "⏱ 5 min" },
+      { icone: "💧", titre: "Mouiller", detail: "Couvrir d'eau chaude, ajouter la coriandre et le persil en bouquet. Porter à ébullition puis laisser mijoter à couvert.", badge: null },
+      { icone: "🫘", titre: "Ajouter les lentilles", detail: "Ajouter les lentilles et le fenugrec en graines, poursuivre la cuisson jusqu'à ce que le poulet soit fondant et les lentilles tendres.", badge: "⏱ 40 min" },
+      { icone: "🫓", titre: "Préparer le msemen", detail: "Émietter les msemen (crêpes feuilletées, voir la recette liée) ou des trid en lanières et les disposer au fond d'un grand plat.", badge: null },
+      { icone: "♨️", titre: "Imbiber", detail: "Arroser le msemen de quelques louches de bouillon chaud pour qu'il gonfle et s'imbibe. CLÉ : le pain doit être moelleux, gorgé de bouillon, jamais sec.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Disposer le poulet et les lentilles au centre, napper généreusement de bouillon parfumé. Servir brûlant, à partager à la main autour du plat.", badge: null }
+    ]
+  },
+  mrouzia: {
+    nom: "Mrouzia",
+    cat: "plats", pays: "maroc",
+    dateAjout: "2026-07-08T09:00:00",
+    base: 6,
+    temps: "2h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐑",
+    description: "La mrouzia marocaine — tajine d'agneau confit, fondant et sucré-épicé au miel, ras el-hanout, amandes et raisins secs. Le plat de fête de l'Aïd, dont le miel assurait autrefois la conservation.",
+    tableauMrouzia: [
+      { nb: 1, agneau: "180 g", miel: "25 g", raisinsec: "20 g", amandes: "15 g", oignon: "40 g", cannelle: "1 g", epicesras: "3 g" },
+      { nb: 2, agneau: "360 g", miel: "50 g", raisinsec: "40 g", amandes: "30 g", oignon: "80 g", cannelle: "2 g", epicesras: "6 g" },
+      { nb: 3, agneau: "540 g", miel: "75 g", raisinsec: "60 g", amandes: "45 g", oignon: "120 g", cannelle: "3 g", epicesras: "9 g" },
+      { nb: 4, agneau: "720 g", miel: "100 g", raisinsec: "80 g", amandes: "60 g", oignon: "160 g", cannelle: "4 g", epicesras: "12 g" },
+      { nb: 5, agneau: "900 g", miel: "125 g", raisinsec: "100 g", amandes: "75 g", oignon: "200 g", cannelle: "5 g", epicesras: "15 g" },
+      { nb: 6, agneau: "1080 g", miel: "150 g", raisinsec: "120 g", amandes: "90 g", oignon: "240 g", cannelle: "6 g", epicesras: "18 g" },
+      { nb: 7, agneau: "1260 g", miel: "175 g", raisinsec: "140 g", amandes: "105 g", oignon: "280 g", cannelle: "7 g", epicesras: "21 g" },
+      { nb: 8, agneau: "1440 g", miel: "200 g", raisinsec: "160 g", amandes: "120 g", oignon: "320 g", cannelle: "8 g", epicesras: "24 g" },
+      { nb: 9, agneau: "1620 g", miel: "225 g", raisinsec: "180 g", amandes: "135 g", oignon: "360 g", cannelle: "9 g", epicesras: "27 g" },
+      { nb: 10, agneau: "1800 g", miel: "250 g", raisinsec: "200 g", amandes: "150 g", oignon: "400 g", cannelle: "10 g", epicesras: "30 g" },
+      { nb: 11, agneau: "1980 g", miel: "275 g", raisinsec: "220 g", amandes: "165 g", oignon: "440 g", cannelle: "11 g", epicesras: "33 g" },
+      { nb: 12, agneau: "2160 g", miel: "300 g", raisinsec: "240 g", amandes: "180 g", oignon: "480 g", cannelle: "12 g", epicesras: "36 g" },
+      { nb: 13, agneau: "2340 g", miel: "325 g", raisinsec: "260 g", amandes: "195 g", oignon: "520 g", cannelle: "13 g", epicesras: "39 g" },
+      { nb: 14, agneau: "2520 g", miel: "350 g", raisinsec: "280 g", amandes: "210 g", oignon: "560 g", cannelle: "14 g", epicesras: "42 g" },
+      { nb: 15, agneau: "2700 g", miel: "375 g", raisinsec: "300 g", amandes: "225 g", oignon: "600 g", cannelle: "15 g", epicesras: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Enrober la viande", detail: "Enrober les morceaux d'agneau du mélange d'épices : ras el-hanout, cannelle, gingembre, safran, sel et poivre.", badge: null },
+      { icone: "🧅", titre: "Démarrer le tajine", detail: "Faire revenir les oignons émincés dans l'huile et le beurre (smen traditionnellement), ajouter l'agneau épicé et le colorer.", badge: "⏱ 8 min" },
+      { icone: "💧", titre: "Confire doucement", detail: "Couvrir d'eau à hauteur, porter à frémissement puis laisser mijoter à feu très doux, à couvert. CLÉ : la cuisson longue et lente rend l'agneau fondant.", badge: "⏱ 1 h 30" },
+      { icone: "🌰", titre: "Faire dorer les amandes", detail: "Pendant ce temps, faire dorer les amandes à la poêle et faire gonfler les raisins secs dans un peu d'eau tiède.", badge: null },
+      { icone: "🍯", titre: "Ajouter le miel", detail: "Quand la viande est tendre et l'eau presque évaporée, ajouter le miel, les raisins et les amandes. IMPORTANT : le miel en fin de cuisson, sinon il brûle et devient amer.", badge: null },
+      { icone: "🔥", titre: "Caraméliser la sauce", detail: "Laisser réduire à découvert jusqu'à ce que la sauce devienne un sirop brillant et nappant qui enrobe la viande.", badge: "⏱ 15 min" },
+      { icone: "🍽️", titre: "Servir", detail: "Dresser l'agneau nappé de sauce au miel, parsemé d'amandes et de graines de sésame. Servir avec du pain marocain pour saucer.", badge: null }
+    ]
+  },
+
   pouletchasseur: {
     nom: "Poulet chasseur",
     cat: "plats", pays: "france",
