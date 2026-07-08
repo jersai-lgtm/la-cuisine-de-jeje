@@ -3452,6 +3452,13 @@ window.addEventListener("popstate", function(e) {
     if (typeof choisirRecette === "function") choisirRecette(_parent, null, true);
     return;
   }
+  // 🍽️ La fiche recette (z-index 9150) s'empile TOUJOURS au-dessus des autres
+  // overlays (liste envie 9050, objectifs, swipe…). Le retour doit donc la fermer
+  // EN PREMIER — sinon la liste sous-jacente se fermerait avant la fiche visible.
+  if (_modalEstVisible(_elFiche)) {
+    if (typeof fermerModal === "function") fermerModal();
+    return;   // le prochain retour fermera la liste révélée dessous
+  }
   // Trouver la modal du dessus actuellement visible
   let modalFermee = false;
   // On parcourt en ordre inverse (la dernière ouverte = la plus haute z-index)

@@ -176,9 +176,9 @@
       return;
     }
     const grid = '<div class="envie-grid">' + cles.map((k) => (typeof miniCarte === "function") ? miniCarte(k, raisonFn ? raisonFn(k) : null) : "").join("") + "</div>";
-    const m = ouvrirSheet(titre, grid);
-    // Fermer la feuille quand on ouvre une fiche
-    m.querySelectorAll('.envie-grid [onclick*="ouvrirFiche"]').forEach((c) => c.addEventListener("click", () => setTimeout(fermerModal, 50)));
+    ouvrirSheet(titre, grid);
+    // On NE ferme PLUS la feuille à l'ouverture d'une fiche : la fiche (z-index
+    // 9150) s'empile PAR-DESSUS la liste, et le retour la révèle intacte.
   }
 
   // ---- A) Humeurs ----
@@ -392,7 +392,7 @@
     const root = document.getElementById("jr-root");
     if (!root) return;
     const itDe = (b) => _jrPlan.find((x) => x.m.k === b.closest(".jr-repas").dataset.mk);
-    root.querySelectorAll("[data-open]").forEach((el) => el.addEventListener("click", () => { const k = el.dataset.open; if (k && typeof ouvrirFiche === "function") { ouvrirFiche(k, ""); setTimeout(fermerModal, 50); } }));
+    root.querySelectorAll("[data-open]").forEach((el) => el.addEventListener("click", () => { const k = el.dataset.open; if (k && typeof ouvrirFiche === "function") { ouvrirFiche(k, ""); } }));
     root.querySelectorAll(".jr-eat").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); const it = itDe(b); if (it) { it.eaten = !it.eaten; _jrRefresh(); } }));
     root.querySelectorAll(".jr-lock").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); const it = itDe(b); if (it) { it.lock = !it.lock; _jrRefresh(); } }));
     root.querySelectorAll(".jr-reroll").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); const it = itDe(b); if (it) { it.p = _jrPick(it.m) || it.p; it.eaten = false; _jrRefresh(); } }));

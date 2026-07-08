@@ -386,7 +386,10 @@ header p  { color: var(--text-2); font-size: 15px; margin: 8px 0 0; }
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,.7);
-  z-index: 500;
+  /* z-index au-dessus des listes-overlays (envie 9050, objectifs 9100, swipe 9000)
+     pour que la fiche s'empile PAR-DESSUS et que le retour révèle la liste, mais
+     sous ses propres sous-modales (auth 9999, photo 10000, menu 100000). */
+  z-index: 9150;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(4px);
