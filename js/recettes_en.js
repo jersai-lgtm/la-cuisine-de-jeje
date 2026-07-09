@@ -58518,5 +58518,345 @@ window.RECETTES_EN = {
     "detail": "Drain the varenyky, top with the buttery onions and serve with a spoon of sour cream. Ukrainian comfort guaranteed."
    }
   ]
+ },
+ "atkiltwat": {
+  "nom": "Atkilt Wat",
+  "description": "Atkilt Wat — Ethiopian vegetable stew: cabbage, carrot and potato gently melted in a base of onion, garlic and turmeric. Mild, golden and fragrant, this vegetarian Orthodox-fast dish is shared over a large injera.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Gently sauté the sliced onion in the oil until soft and translucent, without colouring: the mild base of all Ethiopian wat."
+   },
+   {
+    "titre": "Garlic, ginger, turmeric",
+    "detail": "Add the grated garlic and ginger, then the turmeric. Sauté 1 minute: the turmeric colours the oil golden yellow and perfumes the dish."
+   },
+   {
+    "titre": "Carrots & potatoes",
+    "detail": "Add the carrots and potatoes in large chunks, stir to coat and sauté 3 minutes."
+   },
+   {
+    "titre": "The cabbage",
+    "detail": "Stir in the shredded cabbage, salt and mix. It will reduce by half as it cooks."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and cook over low heat for 20 to 25 minutes, stirring occasionally and adding a splash of water if needed, until the vegetables are tender."
+   },
+   {
+    "titre": "Check",
+    "detail": "The vegetables should be soft but keep their shape, and the bottom lightly caramelised. Adjust the salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot on an injera, or with rice, alongside spiced lentils. A mild dish that balances Ethiopia's spicier fare."
+   }
+  ]
+ },
+ "gomen": {
+  "nom": "Gomen",
+  "description": "Gomen — Ethiopian sautéed greens: shredded collard greens simmered with onion, garlic and ginger until soft and fragrant. A simple, healthy green side, present on every Ethiopian table.",
+  "etapes": [
+   {
+    "titre": "Prepare the leaves",
+    "detail": "Remove the tough ribs from the collard greens and finely shred the leaves. Rinse them well."
+   },
+   {
+    "titre": "Blanch",
+    "detail": "Blanch the leaves 3 minutes in boiling water then drain: they soften and keep a lovely green colour."
+   },
+   {
+    "titre": "Sweat the onion",
+    "detail": "Sauté the sliced onion in the oil until soft and translucent."
+   },
+   {
+    "titre": "Garlic & ginger",
+    "detail": "Add the grated garlic and ginger, plus a little chilli, and sauté 1 minute until fragrant."
+   },
+   {
+    "titre": "Add the greens",
+    "detail": "Stir in the drained leaves, salt and mix well to coat."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and cook over low heat for 15 minutes, stirring, until the greens are soft and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with injera or rice, alongside a meat or lentil dish. Simple, green and comforting."
+   }
+  ]
+ },
+ "kikalicha": {
+  "nom": "Kik Alicha",
+  "description": "Kik Alicha — Ethiopian yellow split pea stew: red lentils melted into a golden, mild purée, fragrant with turmeric, garlic and ginger. The 'mild' (alicha, no chilli) version of Ethiopian stews, comforting and vegan.",
+  "etapes": [
+   {
+    "titre": "Rinse the lentils",
+    "detail": "Rinse the red lentils (or yellow split peas) thoroughly in fresh water until it runs clear."
+   },
+   {
+    "titre": "The onion base",
+    "detail": "Sauté the sliced onion in the oil over low heat until very soft, without colouring."
+   },
+   {
+    "titre": "Turmeric & aromatics",
+    "detail": "Add the turmeric, grated garlic and ginger, and sauté 1 minute: the turmeric tints the dish golden yellow (alicha = mild, without the spicy berbere)."
+   },
+   {
+    "titre": "Add the lentils",
+    "detail": "Stir in the drained lentils, mix to coat, then cover with hot water to the level."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over low heat for 25 to 30 minutes, stirring regularly and adding water if needed, until the lentils have melted."
+   },
+   {
+    "titre": "Mash lightly",
+    "detail": "Roughly mash with the spoon for a creamy, smooth texture. Salt and adjust."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot on an injera or with rice, with gomen and atkilt wat. A mild, nourishing, 100% plant-based dish."
+   }
+  ]
+ },
+ "moinmoin": {
+  "nom": "Moin Moin",
+  "description": "Moin Moin — Nigerian bean pudding: a bean purée seasoned with pepper, onion and chilli, steamed to a soft savoury-custard texture. A protein-rich Nigerian classic, served alone or with rice.",
+  "etapes": [
+   {
+    "titre": "Soak & peel",
+    "detail": "Soak the beans for a few hours, then rub them between your hands to remove the skins (traditionally black-eyed peas). Rinse and drain."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the beans with the pepper, onion and chilli, adding a little water, into a smooth homogeneous paste."
+   },
+   {
+    "titre": "Season",
+    "detail": "Stir in the oil, stock and salt, and whisk the paste for a few minutes to aerate it: it will puff better when cooked."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Divide the paste into small oiled ramekins (or leaves, Nigerian-style), without filling them completely."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Place the ramekins in a steamer or covered bain-marie and cook 40 to 45 minutes over medium heat."
+   },
+   {
+    "titre": "Check",
+    "detail": "The moin moin is ready when firm and set through: a blade comes out clean. The texture should be soft, like a savoury custard."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Turn out and serve warm, alone, with rice (jollof), bread or corn porridge (pap). A complete, protein-rich dish."
+   }
+  ]
+ },
+ "ricenpeas": {
+  "nom": "Rice and Peas",
+  "description": "Rice and Peas — Jamaican coconut rice with kidney beans: rice cooked in coconut milk scented with thyme and chilli, with tender red beans. Despite its name, it's THE Jamaican Sunday rice, creamy and fragrant, the companion of jerk chicken.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Use cooked kidney beans (or canned, drained). In Jamaica, they're cooked first until tender."
+   },
+   {
+    "titre": "The coconut base",
+    "detail": "In a pot, pour the coconut milk with a little water, the sliced onion and garlic, the thyme and the whole chilli (for aroma without too much heat)."
+   },
+   {
+    "titre": "Add the beans",
+    "detail": "Add the kidney beans and bring to a simmer to infuse the coconut base."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rinsed rice, salt and stir. The liquid should sit about 1 cm above the rice."
+   },
+   {
+    "titre": "Absorption",
+    "detail": "Cover and cook over low heat for 15 to 18 minutes, without stirring, until the liquid is fully absorbed."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Turn off the heat, remove the chilli and thyme, and let rest 5 minutes covered."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fluff with a fork and serve with jerk chicken, fish or a curry. The rice should be soft and coconut-scented."
+   }
+  ]
+ },
+ "festival": {
+  "nom": "Festival",
+  "description": "Festival — Jamaican sweet fried dumplings: little logs of cornmeal dough, lightly sweetened, fried until golden and soft. The crispy companion to fried fish and jerk chicken, somewhere between bread and doughnut.",
+  "etapes": [
+   {
+    "titre": "Mix the dry",
+    "detail": "Mix the flour, cornmeal, sugar, baking powder and salt in a bowl."
+   },
+   {
+    "titre": "Rub in",
+    "detail": "Add the soft butter and rub it in with your fingertips until the texture is sandy."
+   },
+   {
+    "titre": "Form the dough",
+    "detail": "Add warm water little by little and mix into a soft, non-sticky dough. Don't overwork it."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and rest the dough 15 minutes: it will be easier to shape."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Divide the dough and roll each piece into a small elongated log, like a large finger."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Plunge the festivals into hot oil (170°C) and fry 4 to 5 minutes, turning, until golden and puffed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot, with fried fish (escovitch), jerk chicken or ackee. Crisp outside, soft and sweet inside."
+   }
+  ]
+ },
+ "adobo": {
+  "nom": "Filipino Adobo",
+  "description": "Filipino adobo — chicken braised in soy sauce and vinegar: chicken pieces simmered in an amber sauce of garlic, soy, vinegar and bay, until tender and glazed. The national dish of the Philippines, at once tangy, salty and comforting.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Mix the chicken with the soy sauce, crushed garlic and bay leaf, and marinate 20 minutes (or more) to infuse the meat."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Drain the chicken (keep the marinade) and brown it in the hot oil on all sides."
+   },
+   {
+    "titre": "Deglaze",
+    "detail": "Pour in the reserved marinade and the vinegar. Important: don't stir right away and let it simmer 2 minutes uncovered, so the vinegar's acidity mellows."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add a little water, cover and simmer over low heat for 25 minutes, until the chicken is tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover, add the sugar and let the sauce reduce for 5 to 8 minutes, until it coats and glazes the chicken a beautiful glossy brown."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and balance the salty-sour: the signature of adobo. Add a touch of salt or vinegar as needed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the chicken coated in its sauce over a bowl of white rice, which soaks up the sauce. Even better reheated the next day."
+   }
+  ]
+ },
+ "turon": {
+  "nom": "Turon",
+  "description": "Turon — Filipino caramelised banana rolls: bananas rolled in a thin crispy wrapper, fried and coated in golden caramel. An irresistible street dessert, crunchy outside and melting inside, best enjoyed hot.",
+  "etapes": [
+   {
+    "titre": "Prepare the bananas",
+    "detail": "Choose very ripe bananas (ideally cooking plantains). Peel them and cut them in half lengthwise."
+   },
+   {
+    "titre": "Coat in sugar",
+    "detail": "Roll the banana pieces in the sugar: it will melt when fried and form the characteristic crunchy caramel."
+   },
+   {
+    "titre": "The wrapper",
+    "detail": "Prepare thin sheets of pastry (spring roll wrappers, or a thin flour-and-water dough rolled very thinly)."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Place a sugared banana on a wrapper, fold in the sides and roll tightly. Seal the edge with a little water or dough."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the rolls in hot oil (170°C) for 3 to 4 minutes, turning, until golden and crisp."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "The sugar melts and caramelises around the wrapper into an amber, glossy crust. Remove and drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, as is or with a scoop of ice cream. Careful with the very hot caramel — let it cool a minute before biting in."
+   }
+  ]
+ },
+ "janssons": {
+  "nom": "Jansson's Temptation",
+  "description": "Jansson's Temptation — the Swedish gratin: fine matchsticks of potato baked in cream with anchovies that melt and flavour the whole dish. A Swedish Christmas classic, creamy, golden and surprisingly savoury.",
+  "etapes": [
+   {
+    "titre": "Cut the potatoes",
+    "detail": "Peel and cut the potatoes into fine matchsticks. Don't rinse them: the starch helps bind the gratin."
+   },
+   {
+    "titre": "Soften the onion",
+    "detail": "Soften the sliced onion in a little butter until tender and translucent."
+   },
+   {
+    "titre": "Build the gratin",
+    "detail": "In a buttered dish, arrange a layer of potatoes, one of onion and the chopped anchovies, then finish with a layer of potatoes. Pepper (little salt, the anchovies are salty)."
+   },
+   {
+    "titre": "Add the cream",
+    "detail": "Pour the cream (loosened with a little milk and the anchovy brine) over the gratin, to halfway up."
+   },
+   {
+    "titre": "Breadcrumbs",
+    "detail": "Scatter the top with breadcrumbs and a few knobs of butter for a nice golden crust."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for 45 minutes, until the potatoes are tender, the cream absorbed and the top golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest 5 minutes and serve hot. The anchovies have melted and subtly flavour the whole, without dominating. A classic of the Swedish Christmas buffet."
+   }
+  ]
+ },
+ "empanadascol": {
+  "nom": "Colombian Empanadas",
+  "description": "Colombian empanadas — fried corn turnovers: a golden crispy cornmeal dough filled with a soft mix of potato and cumin beef. The quintessential Colombian street snack, served with a spicy sauce (ají).",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Cook the potato and roughly mash it. Sauté the onion and minced beef, add the cumin and mix into the potato: the filling should be tasty and well bound."
+   },
+   {
+    "titre": "The corn dough",
+    "detail": "Mix the cornmeal (masarepa) with warm salted water and a little oil, into a soft, homogeneous dough that doesn't stick. Rest 10 minutes."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Form balls of dough and flatten them thinly between two sheets of cling film, into even discs."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a spoon of filling on one half of each disc, leaving a free edge."
+   },
+   {
+    "titre": "Close",
+    "detail": "Fold the dough into a half-moon using the film and pinch or press the edges to seal well (the corn dough is fragile, use the film to help)."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Plunge the empanadas into hot oil (180°C) and fry 4 to 5 minutes, until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot, with a spicy sauce (ají) and a lime wedge. Crisp outside, soft inside."
+   }
+  ]
  }
 };

@@ -6308,4 +6308,41 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Enfournez à 170°C 35 à 40 min, jusqu'à ce que le cozonac soit doré et sonne creux. Laissez refroidir avant de trancher pour révéler la spirale.", badge: null }
     ]
   },
+  turon: {
+    dateAjout: "2026-07-09T20:07:00",
+    nom: "Turon",
+    cat: "desserts", pays: "philippines",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍌",
+    description: "Turon — les rouleaux de banane caramélisés philippins : des bananes roulées dans une fine feuille croustillante, frites et enrobées de caramel doré. Un dessert de rue irrésistible, croquant dehors et fondant dedans, à déguster bien chaud.",
+    tableauTuron: [
+      { nb: 1, banane: "80 g", farine: "20 g", sucre: "20 g", huilefriture: "15 ml" },
+      { nb: 2, banane: "160 g", farine: "40 g", sucre: "40 g", huilefriture: "30 ml" },
+      { nb: 3, banane: "240 g", farine: "60 g", sucre: "60 g", huilefriture: "45 ml" },
+      { nb: 4, banane: "320 g", farine: "80 g", sucre: "80 g", huilefriture: "60 ml" },
+      { nb: 5, banane: "400 g", farine: "100 g", sucre: "100 g", huilefriture: "75 ml" },
+      { nb: 6, banane: "480 g", farine: "120 g", sucre: "120 g", huilefriture: "90 ml" },
+      { nb: 7, banane: "560 g", farine: "140 g", sucre: "140 g", huilefriture: "105 ml" },
+      { nb: 8, banane: "640 g", farine: "160 g", sucre: "160 g", huilefriture: "120 ml" },
+      { nb: 9, banane: "720 g", farine: "180 g", sucre: "180 g", huilefriture: "135 ml" },
+      { nb: 10, banane: "800 g", farine: "200 g", sucre: "200 g", huilefriture: "150 ml" },
+      { nb: 11, banane: "880 g", farine: "220 g", sucre: "220 g", huilefriture: "165 ml" },
+      { nb: 12, banane: "960 g", farine: "240 g", sucre: "240 g", huilefriture: "180 ml" },
+      { nb: 13, banane: "1040 g", farine: "260 g", sucre: "260 g", huilefriture: "195 ml" },
+      { nb: 14, banane: "1120 g", farine: "280 g", sucre: "280 g", huilefriture: "210 ml" },
+      { nb: 15, banane: "1200 g", farine: "300 g", sucre: "300 g", huilefriture: "225 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍌", titre: "Préparer les bananes", detail: "Choisissez des bananes bien mûres (idéalement des bananes plantain à cuire). Épluchez-les et coupez-les en deux dans la longueur.", badge: null },
+      { icone: "🍬", titre: "Enrober de sucre", detail: "Roulez les morceaux de banane dans le sucre : il fondra à la friture et formera le caramel croustillant caractéristique.", badge: null },
+      { icone: "🫓", titre: "La feuille", detail: "Préparez de fines feuilles de pâte (feuilles de rouleau de printemps, ou une pâte fine à base de farine et d'eau étalée très finement).", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Déposez une banane sucrée sur une feuille, repliez les côtés et roulez serré. Scellez le bord avec un peu d'eau ou de pâte.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire les rouleaux dans l'huile chaude (170°C) 3 à 4 min en les tournant, jusqu'à ce qu'ils soient dorés et croustillants.", badge: null },
+      { icone: "🍯", titre: "Caraméliser", detail: "Le sucre fond et caramélise autour de la feuille en une croûte ambrée et brillante. Retirez et égouttez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, tel quel ou avec une boule de glace. Attention au caramel très chaud — laissez tiédir une minute avant de croquer.", badge: null }
+    ]
+  },
 });
