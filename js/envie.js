@@ -38,7 +38,7 @@
       const ligne = r[tk].find((l) => l.nb === base || l.patons === base) || r[tk][0];
       const pc = ligne && calculerPrixCaloriesRecette(ligne);
       if (!pc) return null;
-      return { cal: pc.cal != null ? pc.cal / base : null, prot: pc.prot != null ? pc.prot / base : null };
+      return { cal: pc.cal != null ? pc.cal / base : null, prot: pc.prot != null ? pc.prot / base : null, gluc: pc.gluc != null ? pc.gluc / base : null, lip: pc.lip != null ? pc.lip / base : null };
     } catch (e) { return null; }
   }
   // Mots exclus selon le profil (allergènes + régime), comme les suggestions.
@@ -285,7 +285,7 @@
       if (focus && focus.prot && protCible && nu.prot != null) {
         score += Math.max(0, protCible - nu.prot) / Math.max(1, protCible) * 0.8; // pénalise le manque de protéines
       }
-      cand.push({ k, cal: nu.cal, prot: nu.prot, score });
+      cand.push({ k, cal: nu.cal, prot: nu.prot, gluc: nu.gluc, lip: nu.lip, score });
     }
     cand.sort((a, b) => a.score - b.score);
     const top = cand.slice(0, 6);
@@ -325,21 +325,25 @@
     const m = (window.OBJ_MOMENTS || []).find((x) => x.k === sv.mk);
     if (!m) return null;
     let p = null;
-    if (sv.k && recettes[sv.k]) { const nu = nutPortion(recettes[sv.k]); if (nu && nu.cal != null) p = { k: sv.k, cal: nu.cal, prot: nu.prot }; }
+    if (sv.k && recettes[sv.k]) { const nu = nutPortion(recettes[sv.k]); if (nu && nu.cal != null) p = { k: sv.k, cal: nu.cal, prot: nu.prot, gluc: nu.gluc, lip: nu.lip }; }
     return { m: m, p: p, lock: !!sv.lock, eaten: !!sv.eaten };
   }
   function _jrInner() {
     const o = _jrO;
     const dayProt = window.OBJ_protJour ? window.OBJ_protJour(o) : null;
+    const dayGluc = window.OBJ_glucJour ? window.OBJ_glucJour(o) : null;
+    const dayLip = window.OBJ_lipJour ? window.OBJ_lipJour(o) : null;
     const eauCible = window.OBJ_eauJour ? window.OBJ_eauJour(o) : null;
-    let eatK = 0, eatP = 0; // consommé (repas cochés "mangé")
-    _jrPlan.forEach((it) => { if (it.p && it.eaten) { eatK += it.p.cal || 0; if (it.p.prot != null) eatP += it.p.prot; } });
-    eatK = Math.round(eatK); eatP = Math.round(eatP);
+    let eatK = 0, eatP = 0, eatG = 0, eatL = 0; // consommé (repas cochés "mangé")
+    _jrPlan.forEach((it) => { if (it.p && it.eaten) { eatK += it.p.cal || 0; if (it.p.prot != null) eatP += it.p.prot; if (it.p.gluc != null) eatG += it.p.gluc; if (it.p.lip != null) eatL += it.p.lip; } });
+    eatK = Math.round(eatK); eatP = Math.round(eatP); eatG = Math.round(eatG); eatL = Math.round(eatL);
     const couleur = (pct) => (pct >= 90 && pct <= 112) ? "#4caf50" : (pct >= 60) ? "#ffb300" : "#5aa0f5";
     const barre = (val, cible) => { if (!cible) return ""; const pct = Math.round((val / cible) * 100); return '<div class="jr-bar"><i style="width:' + Math.min(100, pct) + "%;background:" + couleur(pct) + '"></i></div>'; };
     let tot = '<div class="jr-totaux">';
     tot += '<div class="jr-tot-line"><span>🔥 ' + T("Mangé", "Eaten") + '</span><span><b>' + eatK + "</b> / " + o.kcal + " kcal</span></div>" + barre(eatK, o.kcal);
     if (dayProt) tot += '<div class="jr-tot-line"><span>💪 ' + T("Protéines", "Protein") + '</span><span><b>' + eatP + "</b> / " + dayProt + " g</span></div>" + barre(eatP, dayProt);
+    if (dayGluc) tot += '<div class="jr-tot-line"><span>🍚 ' + T("Glucides", "Carbs") + '</span><span><b>' + eatG + "</b> / " + dayGluc + " g</span></div>" + barre(eatG, dayGluc);
+    if (dayLip) tot += '<div class="jr-tot-line"><span>🥑 ' + T("Lipides", "Fat") + '</span><span><b>' + eatL + "</b> / " + dayLip + " g</span></div>" + barre(eatL, dayLip);
     if (eauCible) {
       const eauPct = Math.round((_jrEau / eauCible) * 100);
       tot += '<div class="jr-tot-line"><span>💧 ' + T("Eau", "Water") + '</span><span class="jr-eau-ctrl"><button type="button" class="jr-eau-btn jr-eau-minus">−</button><b>' + _jrEau.toFixed(2).replace(".", ",") + "</b> / " + eauCible.toFixed(1).replace(".", ",") + ' L<button type="button" class="jr-eau-btn jr-eau-plus">+</button></span></div>' +

@@ -20,12 +20,12 @@
   // kcalAdj = ajustement du maintien pour ce but (sèche = déficit, masse = surplus).
   // prot = priorise le protéiné ; cap = repas plus légers ; surplus = autorise plus calorique.
   const FOCUS = {
-    equilibre: { fr: "Équilibré", en: "Balanced", e: "⚖️", protPct: 0.20, protKg: 1.8, kcalAdj: 1.00 },
-    leger: { fr: "Léger", en: "Light", e: "🪶", protPct: 0.22, protKg: 1.8, kcalAdj: 0.90, cap: true },
-    proteine: { fr: "Protéiné", en: "High-protein", e: "💪", protPct: 0.30, protKg: 2.0, kcalAdj: 1.00, prot: true },
-    seche: { fr: "Sèche", en: "Cutting", e: "🔥", protPct: 0.40, protKg: 2.2, kcalAdj: 0.80, prot: true, cap: true },
-    prisedemasse: { fr: "Prise de masse", en: "Bulking", e: "🏋️", protPct: 0.30, protKg: 2.0, kcalAdj: 1.12, prot: true, surplus: true },
-    gourmand: { fr: "Plaisir", en: "Indulgent", e: "😋", protPct: 0.18, protKg: 1.6, kcalAdj: 1.00 },
+    equilibre: { fr: "Équilibré", en: "Balanced", e: "⚖️", protPct: 0.20, protKg: 1.8, lipPct: 0.3, kcalAdj: 1.00 },
+    leger: { fr: "Léger", en: "Light", e: "🪶", protPct: 0.22, protKg: 1.8, lipPct: 0.28, kcalAdj: 0.90, cap: true },
+    proteine: { fr: "Protéiné", en: "High-protein", e: "💪", protPct: 0.30, protKg: 2.0, lipPct: 0.25, kcalAdj: 1.00, prot: true },
+    seche: { fr: "Sèche", en: "Cutting", e: "🔥", protPct: 0.40, protKg: 2.2, lipPct: 0.25, kcalAdj: 0.80, prot: true, cap: true },
+    prisedemasse: { fr: "Prise de masse", en: "Bulking", e: "🏋️", protPct: 0.30, protKg: 2.0, lipPct: 0.25, kcalAdj: 1.12, prot: true, surplus: true },
+    gourmand: { fr: "Plaisir", en: "Indulgent", e: "😋", protPct: 0.18, protKg: 1.6, lipPct: 0.35, kcalAdj: 1.00 },
   };
   window.OBJ_FOCUS = FOCUS;
 
@@ -69,6 +69,19 @@
   };
   // g de protéines par kg (pour l'affichage « 2.2 g/kg »).
   window.OBJ_protKg = function (o) { const f = o && o.focus && FOCUS[o.focus]; return (f && f.protKg) || 1.8; };
+  // Lipides/jour (g) : part lipPct des calories. Glucides/jour (g) : le reste des
+  // calories une fois protéines et lipides retirés → les 3 macros somment aux kcal.
+  window.OBJ_lipJour = function (o) {
+    if (!o || !o.kcal) return null;
+    const f = o.focus && FOCUS[o.focus];
+    return Math.round((o.kcal * ((f && f.lipPct) || 0.30)) / 9);
+  };
+  window.OBJ_glucJour = function (o) {
+    if (!o || !o.kcal) return null;
+    const prot = window.OBJ_protJour ? (window.OBJ_protJour(o) || 0) : 0;
+    const lip = window.OBJ_lipJour ? (window.OBJ_lipJour(o) || 0) : 0;
+    return Math.max(0, Math.round((o.kcal - 4 * prot - 9 * lip) / 4));
+  };
   // Eau conseillée (litres/jour) : 35 ml/kg si poids connu, sinon ~1 ml/kcal.
   window.OBJ_eauJour = function (o) {
     if (!o) return null;
@@ -98,7 +111,7 @@
     if (!ligne || typeof calculerPrixCaloriesRecette !== "function") return null;
     const pc = calculerPrixCaloriesRecette(ligne);
     if (!pc) return null;
-    return { cal: pc.cal != null ? Math.round(pc.cal / base) : null, prot: pc.prot != null ? Math.round(pc.prot / base) : null };
+    return { cal: pc.cal != null ? Math.round(pc.cal / base) : null, prot: pc.prot != null ? Math.round(pc.prot / base) : null, gluc: pc.gluc != null ? Math.round(pc.gluc / base) : null, lip: pc.lip != null ? Math.round(pc.lip / base) : null };
   }
 
   function rerenderFiche() {
@@ -146,10 +159,15 @@
         '<div style="height:100%;width:' + Math.min(100, pct) + '%;background:' + col + '"></div></div>';
     }
 
-    // Protéines de la portion (utile pour les profils muscu).
-    if (n && n.prot != null) {
-      parts += '<div style="margin-top:8px;color:var(--text);font-size:13.5px">💪 ' +
-        T("Protéines : ", "Protein: ") + "<b>" + n.prot + " g</b>/" + T("portion", "serving") + "</div>";
+    // Macros de la portion (protéines / glucides / lipides).
+    if (n && (n.prot != null || n.gluc != null || n.lip != null)) {
+      const chips = [];
+      if (n.prot != null) chips.push("💪 <b>" + n.prot + " g</b> " + T("prot.", "prot."));
+      if (n.gluc != null) chips.push("🍚 <b>" + n.gluc + " g</b> " + T("gluc.", "carbs"));
+      if (n.lip != null) chips.push("🥑 <b>" + n.lip + " g</b> " + T("lip.", "fat"));
+      parts += '<div style="margin-top:8px;color:var(--text);font-size:13.5px;display:flex;gap:15px;flex-wrap:wrap">' +
+        chips.map((c) => "<span>" + c + "</span>").join("") + "</div>" +
+        '<div style="margin-top:2px;color:var(--text-3);font-size:11.5px">' + T("par portion", "per serving") + "</div>";
     }
     // Adéquation au focus
     if (o.focus && n) {
@@ -377,6 +395,10 @@
       const gkg = o.poids ? " (" + (window.OBJ_protKg ? window.OBJ_protKg(o) : 1.8) + " g/kg)" : "";
       stats += '<span class="obj-stat">💪 <b>~' + protJour + "</b> g " + T("protéines/jour", "protein/day") + gkg + "</span>";
     }
+    const glucJour = window.OBJ_glucJour ? window.OBJ_glucJour(o) : null;
+    if (glucJour) stats += '<span class="obj-stat">🍚 <b>~' + glucJour + "</b> g " + T("glucides/jour", "carbs/day") + "</span>";
+    const lipJour = window.OBJ_lipJour ? window.OBJ_lipJour(o) : null;
+    if (lipJour) stats += '<span class="obj-stat">🥑 <b>~' + lipJour + "</b> g " + T("lipides/jour", "fat/day") + "</span>";
     const eau = window.OBJ_eauJour ? window.OBJ_eauJour(o) : null;
     if (eau) {
       stats += '<span class="obj-stat">💧 <b>~' + eau.toFixed(1).replace(".", ",") + "</b> L " + T("eau/jour", "water/day") + "</span>";
