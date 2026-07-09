@@ -168,11 +168,20 @@
   };
 
   // Si déjà abonné, on rafraîchit le drapeau « liste non vide » à chaque visite.
+  // ET on RÉPARE l'abonnement s'il a disparu : sur iOS, une mise à jour du service
+  // worker (donc à chaque déploiement) fait souvent perdre l'abonnement push alors
+  // que la PERMISSION, elle, reste accordée. Sans réparation, l'utilisateur doit
+  // réactiver les notifs à la main tous les jours. Ici on se réabonne
+  // SILENCIEUSEMENT (aucun prompt, la permission est déjà là).
   async function rafraichirFlag() {
     try {
       if (!supporte() || Notification.permission !== "granted") return;
       const r = await reg(); if (!r) return;
-      const sub = await r.pushManager.getSubscription();
+      let sub = await r.pushManager.getSubscription();
+      if (!sub) {
+        try { sub = await r.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64ToU8(VAPID_PUBLIC) }); }
+        catch (e) { return; }
+      }
       if (sub) await envoyerSub(sub);
     } catch (e) {}
   }
