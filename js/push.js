@@ -12,7 +12,8 @@
 (function () {
   const VAPID_PUBLIC = "BOz2O8gI5x3anhHIzNduF6G-sYzmo3JSIRfdtUm37lnuXkL2L_GPoqRqILLCzc7VGKkQr12I7rI7zl1M0e3mbwg";
   const WORKER = "https://la-cuisine-de-jeje.jerome-sainthot.workers.dev";
-  const LS_OFF = "push_off";    // refusé OU déjà géré → ne plus proposer
+  const LS_OFF = "push_off";    // refusé OU déjà géré → ne plus proposer la bannière d'invitation
+  const LS_ON = "push_on";      // a VRAIMENT activé les notifs → cible du rappel si ça casse
   const LS_VISITES = "push_visites";
   const SEUIL = 2;              // proposer à partir de la 2e visite
   const EN = () => window.LANG === "en";
@@ -50,7 +51,7 @@
       let sub = await r.pushManager.getSubscription();
       if (!sub) sub = await r.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64ToU8(VAPID_PUBLIC) });
       await envoyerSub(sub);
-      try { localStorage.setItem(LS_OFF, "1"); } catch (e) {}
+      try { localStorage.setItem(LS_OFF, "1"); localStorage.setItem(LS_ON, "1"); } catch (e) {}
       toast("🔔 Notifications activées ! Tu recevras la recette du jour.", "🔔 Notifications on! You'll get the recipe of the day.");
       return true;
     } catch (e) { return false; }
@@ -64,6 +65,7 @@
         try { await fetch(WORKER + "/push/unsubscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ endpoint: sub.endpoint }) }); } catch (e) {}
         await sub.unsubscribe();
       }
+      try { localStorage.removeItem(LS_ON); } catch (e) {}
       toast("🔕 Notifications désactivées.", "🔕 Notifications turned off.");
     } catch (e) {}
   };
@@ -182,7 +184,7 @@
         try { sub = await r.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64ToU8(VAPID_PUBLIC) }); }
         catch (e) { return; }
       }
-      if (sub) await envoyerSub(sub);
+      if (sub) { try { localStorage.setItem(LS_ON, "1"); } catch (e) {} await envoyerSub(sub); }
     } catch (e) {}
   }
 
@@ -241,6 +243,41 @@
     b.querySelector(".push-ok").addEventListener("click", async () => { fermer(); await window.activerNotifs(); });
   }
 
+  // --- Rappel CIBLÉ « tes notifs se sont coupées » ---------------------------
+  // Uniquement pour quelqu'un qui avait DÉJÀ activé les notifs (LS_ON) mais qui ne
+  // les reçoit plus ET pour qui c'est réparable (permission pas bloquée). Discret,
+  // une seule fois par session. Ne dérange JAMAIS ceux dont tout fonctionne (le
+  // réabo auto de rafraichirFlag les a déjà réparés → un abonnement existe → pas de rappel).
+  function banniereReactivation() {
+    if (document.getElementById("push-banner")) return;
+    style();
+    const b = document.createElement("div");
+    b.id = "push-banner";
+    b.innerHTML =
+      '<span class="push-txt">' +
+      (EN() ? "🔔 Your <b>notifications turned off</b> — turn them back on?" : "🔔 Tes <b>notifications se sont coupées</b> — les réactiver ?") +
+      '</span>' +
+      '<button class="push-ok">' + (EN() ? "Turn on" : "Réactiver") + '</button>' +
+      '<button class="push-no" aria-label="Fermer">✕</button>';
+    document.body.appendChild(b);
+    const fermer = () => { try { b.remove(); } catch (e) {} };
+    b.querySelector(".push-no").addEventListener("click", fermer);
+    b.querySelector(".push-ok").addEventListener("click", async () => { fermer(); await window.activerNotifs(); });
+  }
+  async function nudgeReactivation() {
+    try {
+      if (!supporte()) return;
+      if (localStorage.getItem(LS_ON) !== "1") return;              // n'a jamais activé → rien
+      if (Notification.permission === "denied") return;             // bloqué : le profil a déjà un message dédié
+      if (sessionStorage.getItem("push_nudge") === "1") return;     // une fois par session max
+      const r = await reg(); if (!r) return;
+      const sub = await r.pushManager.getSubscription();
+      if (sub && Notification.permission === "granted") return;     // tout va bien (déjà réparé) → pas de rappel
+      sessionStorage.setItem("push_nudge", "1");
+      setTimeout(banniereReactivation, 4000);
+    } catch (e) {}
+  }
+
   function peutProposer() {
     if (!supporte()) return false;
     if (Notification.permission !== "default") return false; // déjà accordé ou bloqué
@@ -266,7 +303,7 @@
   function demarrer() {
     deepLink();
     ecouterSW();
-    rafraichirFlag();
+    rafraichirFlag().then(nudgeReactivation);
     if (peutProposer()) setTimeout(banniere, 6000); // après 6 s, sans gêner
     // Met à jour l'état du bouton notifs à chaque ouverture du profil.
     if (typeof window.ouvrirModalProfil === "function" && !window.ouvrirModalProfil._notif) {
