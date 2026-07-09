@@ -3404,4 +3404,41 @@ Object.assign(recettes, {
       { icone: "🥣", titre: "Servir", detail: "Servez bien chaud, éventuellement avec une cuillère de crème et un piment frais à côté. Une soupe-repas complète et réconfortante.", badge: null }
     ]
   },
+  stracciatella: {
+    dateAjout: "2026-07-09T21:14:00",
+    nom: "Stracciatella (Soupe)",
+    cat: "soupes", pays: "italie",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🍜",
+    description: "Stracciatella alla romana — la soupe aux œufs filés : un bouillon clair dans lequel on verse des œufs battus au parmesan, qui figent en fins filaments. Rapide, réconfortante et légère, la soupe des jours de convalescence en Italie.",
+    tableauStracciatella: [
+      { nb: 1, bouillon: "250 ml", oeufs: "1", parmesan: "12 g", epinards: "30 g", semoule: "6 g", muscade: "0.3 g", sel: "2 g" },
+      { nb: 2, bouillon: "500 ml", oeufs: "2", parmesan: "24 g", epinards: "60 g", semoule: "12 g", muscade: "0.6 g", sel: "4 g" },
+      { nb: 3, bouillon: "750 ml", oeufs: "3", parmesan: "36 g", epinards: "90 g", semoule: "18 g", muscade: "0.9 g", sel: "6 g" },
+      { nb: 4, bouillon: "1000 ml", oeufs: "4", parmesan: "48 g", epinards: "120 g", semoule: "24 g", muscade: "1.2 g", sel: "8 g" },
+      { nb: 5, bouillon: "1250 ml", oeufs: "5", parmesan: "60 g", epinards: "150 g", semoule: "30 g", muscade: "1.5 g", sel: "10 g" },
+      { nb: 6, bouillon: "1500 ml", oeufs: "6", parmesan: "72 g", epinards: "180 g", semoule: "36 g", muscade: "1.8 g", sel: "12 g" },
+      { nb: 7, bouillon: "1750 ml", oeufs: "7", parmesan: "84 g", epinards: "210 g", semoule: "42 g", muscade: "2.1 g", sel: "14 g" },
+      { nb: 8, bouillon: "2000 ml", oeufs: "8", parmesan: "96 g", epinards: "240 g", semoule: "48 g", muscade: "2.4 g", sel: "16 g" },
+      { nb: 9, bouillon: "2250 ml", oeufs: "9", parmesan: "108 g", epinards: "270 g", semoule: "54 g", muscade: "2.7 g", sel: "18 g" },
+      { nb: 10, bouillon: "2500 ml", oeufs: "10", parmesan: "120 g", epinards: "300 g", semoule: "60 g", muscade: "3 g", sel: "20 g" },
+      { nb: 11, bouillon: "2750 ml", oeufs: "11", parmesan: "132 g", epinards: "330 g", semoule: "66 g", muscade: "3.3 g", sel: "22 g" },
+      { nb: 12, bouillon: "3000 ml", oeufs: "12", parmesan: "144 g", epinards: "360 g", semoule: "72 g", muscade: "3.6 g", sel: "24 g" },
+      { nb: 13, bouillon: "3250 ml", oeufs: "13", parmesan: "156 g", epinards: "390 g", semoule: "78 g", muscade: "3.9 g", sel: "26 g" },
+      { nb: 14, bouillon: "3500 ml", oeufs: "14", parmesan: "168 g", epinards: "420 g", semoule: "84 g", muscade: "4.2 g", sel: "28 g" },
+      { nb: 15, bouillon: "3750 ml", oeufs: "15", parmesan: "180 g", epinards: "450 g", semoule: "90 g", muscade: "4.5 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍲", titre: "Le bouillon", detail: "Portez à frémissement un bon bouillon de volaille bien parfumé. Ajoutez les épinards ciselés et laissez-les tomber 2 min.", badge: null },
+      { icone: "🥚", titre: "L'appareil", detail: "Battez les œufs avec le parmesan râpé, la semoule (facultative, pour la texture), la muscade et un peu de poivre.", badge: null },
+      { icone: "🌀", titre: "Verser en filet", detail: "Baissez le feu et versez l'appareil aux œufs en filet dans le bouillon frémissant, tout en remuant à la fourchette.", badge: null },
+      { icone: "🍜", titre: "Les filaments", detail: "Continuez de remuer doucement : les œufs coagulent en fins filaments irréguliers (les « straccetti »), d'où le nom.", badge: null },
+      { icone: "⏳", titre: "Laisser prendre", detail: "Laissez cuire encore 1 à 2 min, jusqu'à ce que les filaments soient bien pris.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Goûtez et rectifiez le sel. Le bouillon doit rester clair, parsemé de filaments d'œufs et de vert.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, bien chaud, avec un supplément de parmesan. Une soupe express, réconfortante et légère.", badge: null }
+    ]
+  },
 });

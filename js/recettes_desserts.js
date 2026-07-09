@@ -6493,4 +6493,78 @@ Object.assign(recettes, {
       { icone: "🍷", titre: "Servir", detail: "Laissez refroidir complètement : ils durcissent en refroidissant. Servez avec un vin santo ou un café, dans lequel on les trempe. Se gardent des semaines.", badge: null }
     ]
   },
+  tartasantiago: {
+    dateAjout: "2026-07-09T21:18:00",
+    nom: "Tarta de Santiago",
+    cat: "desserts", pays: "espagne",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🍰",
+    description: "Tarta de Santiago — le gâteau aux amandes de Galice : un gâteau moelleux et parfumé, entièrement à base d'amandes, de citron et de cannelle, sans farine. Sa croix de Saint-Jacques dessinée au sucre glace en fait l'emblème du pèlerinage.",
+    tableauTartasantiago: [
+      { nb: 1, amandes: "60 g", oeufs: "1", sucre: "35 g", citron: "¼", sucreglace: "5 g", cannelle: "0.5 g" },
+      { nb: 2, amandes: "120 g", oeufs: "2", sucre: "70 g", citron: "½", sucreglace: "10 g", cannelle: "1 g" },
+      { nb: 3, amandes: "180 g", oeufs: "3", sucre: "105 g", citron: "¾", sucreglace: "15 g", cannelle: "1.5 g" },
+      { nb: 4, amandes: "240 g", oeufs: "4", sucre: "140 g", citron: "1", sucreglace: "20 g", cannelle: "2 g" },
+      { nb: 5, amandes: "300 g", oeufs: "5", sucre: "175 g", citron: "1¼", sucreglace: "25 g", cannelle: "2.5 g" },
+      { nb: 6, amandes: "360 g", oeufs: "6", sucre: "210 g", citron: "1½", sucreglace: "30 g", cannelle: "3 g" },
+      { nb: 7, amandes: "420 g", oeufs: "7", sucre: "245 g", citron: "1¾", sucreglace: "35 g", cannelle: "3.5 g" },
+      { nb: 8, amandes: "480 g", oeufs: "8", sucre: "280 g", citron: "2", sucreglace: "40 g", cannelle: "4 g" },
+      { nb: 9, amandes: "540 g", oeufs: "9", sucre: "315 g", citron: "2¼", sucreglace: "45 g", cannelle: "4.5 g" },
+      { nb: 10, amandes: "600 g", oeufs: "10", sucre: "350 g", citron: "2½", sucreglace: "50 g", cannelle: "5 g" },
+      { nb: 11, amandes: "660 g", oeufs: "11", sucre: "385 g", citron: "2¾", sucreglace: "55 g", cannelle: "5.5 g" },
+      { nb: 12, amandes: "720 g", oeufs: "12", sucre: "420 g", citron: "3", sucreglace: "60 g", cannelle: "6 g" },
+      { nb: 13, amandes: "780 g", oeufs: "13", sucre: "455 g", citron: "3¼", sucreglace: "65 g", cannelle: "6.5 g" },
+      { nb: 14, amandes: "840 g", oeufs: "14", sucre: "490 g", citron: "3½", sucreglace: "70 g", cannelle: "7 g" },
+      { nb: 15, amandes: "900 g", oeufs: "15", sucre: "525 g", citron: "3¾", sucreglace: "75 g", cannelle: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Blanchir les œufs", detail: "Fouettez les œufs avec le sucre jusqu'à ce que le mélange blanchisse, mousse et double de volume : c'est ce qui donnera le moelleux (pas de levure).", badge: null },
+      { icone: "🍋", titre: "Parfumer", detail: "Ajoutez le zeste de citron finement râpé et la cannelle : les parfums signature de la tarta de Santiago.", badge: null },
+      { icone: "🌰", titre: "Les amandes", detail: "Incorporez délicatement la poudre d'amandes à la spatule, sans casser la mousse.", badge: null },
+      { icone: "🍥", titre: "Mouler", detail: "Versez la pâte dans un moule beurré et fariné (ou chemisé), et lissez la surface.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 175°C 25 à 30 min, jusqu'à ce que le gâteau soit doré et qu'une lame en ressorte propre. Il reste moelleux à cœur.", badge: null },
+      { icone: "✝️", titre: "La croix", detail: "Laissez refroidir, posez un pochoir en forme de croix de Saint-Jacques au centre, et saupoudrez généreusement de sucre glace. Retirez le pochoir.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez à température ambiante, avec un café ou un verre de vin doux. Un gâteau moelleux, parfumé et naturellement sans gluten.", badge: null }
+    ]
+  },
+  ensaimada: {
+    dateAjout: "2026-07-09T21:19:00",
+    nom: "Ensaïmada",
+    cat: "desserts", pays: "espagne",
+    base: 4,
+    temps: "3h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥐",
+    description: "Ensaïmada — la spirale briochée de Majorque : une pâte levée étirée très finement, enroulée en escargot et cuite dorée, puis saupoudrée de sucre glace. Moelleuse et feuilletée, elle se déguste au petit-déjeuner avec un chocolat chaud.",
+    tableauEnsaimada: [
+      { nb: 1, farine: "45 g", oeufs: "¼", sucre: "15 g", beurre: "12 g", levure: "2 g", sucreglace: "5 g" },
+      { nb: 2, farine: "90 g", oeufs: "½", sucre: "30 g", beurre: "24 g", levure: "4 g", sucreglace: "10 g" },
+      { nb: 3, farine: "135 g", oeufs: "¾", sucre: "45 g", beurre: "36 g", levure: "6 g", sucreglace: "15 g" },
+      { nb: 4, farine: "180 g", oeufs: "1", sucre: "60 g", beurre: "48 g", levure: "8 g", sucreglace: "20 g" },
+      { nb: 5, farine: "225 g", oeufs: "1¼", sucre: "75 g", beurre: "60 g", levure: "10 g", sucreglace: "25 g" },
+      { nb: 6, farine: "270 g", oeufs: "1½", sucre: "90 g", beurre: "72 g", levure: "12 g", sucreglace: "30 g" },
+      { nb: 7, farine: "315 g", oeufs: "1¾", sucre: "105 g", beurre: "84 g", levure: "14 g", sucreglace: "35 g" },
+      { nb: 8, farine: "360 g", oeufs: "2", sucre: "120 g", beurre: "96 g", levure: "16 g", sucreglace: "40 g" },
+      { nb: 9, farine: "405 g", oeufs: "2¼", sucre: "135 g", beurre: "108 g", levure: "18 g", sucreglace: "45 g" },
+      { nb: 10, farine: "450 g", oeufs: "2½", sucre: "150 g", beurre: "120 g", levure: "20 g", sucreglace: "50 g" },
+      { nb: 11, farine: "495 g", oeufs: "2¾", sucre: "165 g", beurre: "132 g", levure: "22 g", sucreglace: "55 g" },
+      { nb: 12, farine: "540 g", oeufs: "3", sucre: "180 g", beurre: "144 g", levure: "24 g", sucreglace: "60 g" },
+      { nb: 13, farine: "585 g", oeufs: "3¼", sucre: "195 g", beurre: "156 g", levure: "26 g", sucreglace: "65 g" },
+      { nb: 14, farine: "630 g", oeufs: "3½", sucre: "210 g", beurre: "168 g", levure: "28 g", sucreglace: "70 g" },
+      { nb: 15, farine: "675 g", oeufs: "3¾", sucre: "225 g", beurre: "180 g", levure: "30 g", sucreglace: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Le levain", detail: "Délayez la levure dans un peu d'eau tiède avec une cuillère de sucre et de farine. Laissez mousser 15 min.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, le reste de sucre, l'œuf et le levain, puis pétrissez longuement jusqu'à obtenir une pâte lisse et élastique. Laissez lever 1 h.", badge: null },
+      { icone: "🫓", titre: "Étaler très fin", detail: "Sur un plan de travail huilé, étalez et étirez la pâte à la main jusqu'à ce qu'elle soit presque translucide (le secret du feuilleté).", badge: null },
+      { icone: "🧈", titre: "Beurrer", detail: "Badigeonnez toute la surface de beurre mou (traditionnellement du saindoux, le « saïm »).", badge: null },
+      { icone: "🌀", titre: "Rouler en escargot", detail: "Roulez la pâte en un long boudin fin, puis enroulez ce boudin en spirale (escargot), en laissant un peu d'espace pour la pousse.", badge: null },
+      { icone: "⏳", titre: "2e pousse", detail: "Laissez lever la spirale 1 h à 1 h 30, jusqu'à ce qu'elle double de volume et devienne bien gonflée.", badge: null },
+      { icone: "🔥", titre: "Cuire & sucrer", detail: "Enfournez à 180°C 15 à 18 min, jusqu'à ce qu'elle soit dorée. Laissez tiédir et saupoudrez généreusement de sucre glace avant de servir.", badge: null }
+    ]
+  },
 });

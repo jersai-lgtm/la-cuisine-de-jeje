@@ -59198,5 +59198,345 @@ window.RECETTES_EN = {
     "detail": "Let cool completely: they harden as they cool. Serve with a vin santo or coffee, for dipping. They keep for weeks."
    }
   ]
+ },
+ "puttanesca": {
+  "nom": "Spaghetti alla Puttanesca",
+  "description": "Spaghetti alla puttanesca — the Neapolitan dish full of character: a bold tomato sauce with olives, capers, anchovies and chilli. Salty, umami and spicy, it comes together in no time with pantry staples.",
+  "etapes": [
+   {
+    "titre": "Garlic & anchovies",
+    "detail": "Gently sauté the sliced garlic and chilli in the olive oil, then add the anchovies and crush them: they melt into an umami base."
+   },
+   {
+    "titre": "Olives & capers",
+    "detail": "Add the pitted olives and rinsed capers, and sauté 1 minute to release their aromas."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Pour in the crushed tomatoes, season lightly (anchovies and capers are salty) and simmer 12 minutes: the sauce concentrates and intensifies."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Meanwhile, cook the spaghetti al dente in plenty of salted water. Reserve some cooking water."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Drain the pasta and toss it in the sauce with a little cooking water, until well coated."
+   },
+   {
+    "titre": "Parsley",
+    "detail": "Add the chopped parsley off the heat and mix."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, drizzled with olive oil. A humble-looking dish rich in flavour, without cheese (the tradition)."
+   }
+  ]
+ },
+ "farinata": {
+  "nom": "Farinata",
+  "description": "Farinata — the Ligurian chickpea pancake: a thin pancake, golden and crisp at the edges, soft in the centre, made from chickpea flour and olive oil. Baked very hot, scented with rosemary, it's the street food of Genoa.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk the chickpea flour into water (about 3 times its volume) to avoid lumps. Season and let rest at least 4 hours (ideally overnight)."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Remove the foam that forms on the surface during resting: the farinata will be finer and easier to digest."
+   },
+   {
+    "titre": "Heat the dish",
+    "detail": "Preheat the oven very hot (250°C) with a dish (ideally copper or cast iron) and olive oil in it, until the oil is smoking."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Whisk the remaining oil into the batter, then pour it in a thin layer (5 mm) into the very hot dish: it sizzles immediately."
+   },
+   {
+    "titre": "Rosemary",
+    "detail": "Scatter with rosemary and cracked pepper."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for 12 to 15 minutes at 250°C, until golden, crisp at the edges and set in the centre."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into pieces and serve piping hot, as is or in a piece of focaccia. Simple, crisp and 100% plant-based."
+   }
+  ]
+ },
+ "involtini": {
+  "nom": "Beef Involtini",
+  "description": "Involtini — Italian beef roulades: thin beef escalopes rolled around a ham, parmesan and breadcrumb filling, simmered in tomato sauce. Tender and fragrant, they're the treat of the Italian Sunday meal.",
+  "etapes": [
+   {
+    "titre": "Flatten",
+    "detail": "Flatten the beef escalopes thinly between two sheets of film, until very thin."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the breadcrumbs, grated parmesan, chopped garlic and parsley, and a drizzle of oil. Add the ham cut into small dice."
+   },
+   {
+    "titre": "Fill & roll",
+    "detail": "Spread the filling over the escalopes, roll them tightly and close with a toothpick or string."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the involtini on all sides in the hot olive oil, then set aside."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "In the same pan, sauté a little garlic, add the crushed tomatoes, season and flavour with basil."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the involtini to the sauce, cover and simmer over low heat for 30 minutes, turning, until the meat is tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Remove the toothpicks and serve the involtini coated in sauce, with polenta or bread. A generous braised dish."
+   }
+  ]
+ },
+ "cacciatore": {
+  "nom": "Chicken Cacciatore",
+  "description": "Pollo alla cacciatora — 'hunter's style' chicken: chicken pieces simmered in a rustic tomato sauce with peppers, olives and rosemary. A Tuscan country dish, generous and fragrant, even better reheated.",
+  "etapes": [
+   {
+    "titre": "Brown the chicken",
+    "detail": "Brown the chicken pieces on all sides in the hot olive oil, until the skin is well coloured. Set aside."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "In the same pot, sauté the sliced onion, garlic and pepper until tender."
+   },
+   {
+    "titre": "Rosemary",
+    "detail": "Add the rosemary and let it perfume the oil for a few seconds."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Pour in the crushed tomatoes and stock, season, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the chicken to the pot, cover and simmer for 30 minutes over low heat, until the meat is tender and falling off."
+   },
+   {
+    "titre": "The olives",
+    "detail": "Add the olives at the end and simmer another 5 minutes uncovered to concentrate the sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the chicken coated in its sauce, with polenta, pasta or bread to mop up. A comforting braised dish."
+   }
+  ]
+ },
+ "stracciatella": {
+  "nom": "Stracciatella Soup",
+  "description": "Stracciatella alla romana — egg-drop soup: a clear broth into which beaten eggs with parmesan are poured, setting into fine strands. Quick, comforting and light, Italy's soup for recovery days.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Bring a good, well-flavoured chicken broth to a simmer. Add the chopped spinach and let it wilt for 2 minutes."
+   },
+   {
+    "titre": "The mixture",
+    "detail": "Beat the eggs with the grated parmesan, semolina (optional, for texture), nutmeg and a little pepper."
+   },
+   {
+    "titre": "Pour in a stream",
+    "detail": "Lower the heat and pour the egg mixture in a stream into the simmering broth, stirring with a fork."
+   },
+   {
+    "titre": "The strands",
+    "detail": "Keep stirring gently: the eggs coagulate into fine irregular strands (the 'straccetti'), hence the name."
+   },
+   {
+    "titre": "Let set",
+    "detail": "Cook another 1 to 2 minutes, until the strands are well set."
+   },
+   {
+    "titre": "Season",
+    "detail": "Taste and adjust the salt. The broth should stay clear, dotted with egg strands and green."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, piping hot, with extra parmesan. An express, comforting, light soup."
+   }
+  ]
+ },
+ "cocido": {
+  "nom": "Cocido Madrileño",
+  "description": "Cocido madrileño — the Spanish pot-au-feu: a generous stew of chickpeas, meats and vegetables, from which a soup is drawn first, then a main course. Madrid's Sunday dish, served in several courses (vuelcos).",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the chickpeas overnight in cold water: they'll cook more tender and faster."
+   },
+   {
+    "titre": "Start the broth",
+    "detail": "Put the drained chickpeas, chicken and onion in a large pot, cover with stock and water, and bring to a simmer, skimming."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook over low heat for 1 hour 30, until the chickpeas are tender. Add water if needed."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the carrot and potato in chunks, and the chorizo, and continue cooking for 30 minutes."
+   },
+   {
+    "titre": "The cabbage",
+    "detail": "Cook the shredded cabbage separately (to keep the broth clear) or in the pot at the end, 15 minutes."
+   },
+   {
+    "titre": "1st course (the soup)",
+    "detail": "Ladle out some broth, add fine vermicelli or cooked rice: this is the 'sopa', the first course."
+   },
+   {
+    "titre": "2nd course",
+    "detail": "Then serve the drained chickpeas, meats and vegetables on a platter (the 'vuelco'). A complete, convivial meal."
+   }
+  ]
+ },
+ "migas": {
+  "nom": "Migas",
+  "description": "Migas — Spanish bread crumbs: stale bread crumbled and pan-fried until golden and crisp, with chorizo, bacon and paprika garlic. An anti-waste shepherd's dish, hearty, often served with an egg.",
+  "etapes": [
+   {
+    "titre": "The bread",
+    "detail": "Crumble stale bread into small pieces, lightly dampen them with salted water and let rest 30 minutes under a cloth: they swell a little."
+   },
+   {
+    "titre": "Chorizo & bacon",
+    "detail": "Fry the sliced chorizo and bacon in the olive oil, until they render their coloured, fragrant fat. Set them aside."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "In the same fat, fry the whole crushed garlic cloves and paprika, without burning them."
+   },
+   {
+    "titre": "Fry the bread",
+    "detail": "Add the dampened bread and toss it over medium heat, stirring very often, for 15 to 20 minutes: the crumbs turn golden and crisp."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the chorizo and bacon, mix and let everything brown together."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust the salt. The migas should be golden, crisp and well flavoured with paprika."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, traditionally with a fried egg on top, or grapes on the side. A rustic anti-waste dish."
+   }
+  ]
+ },
+ "pimientospadron": {
+  "nom": "Pimientos de Padrón",
+  "description": "Pimientos de Padrón — Galician little peppers: small green peppers seared in very hot oil until they blister, then salted with coarse salt. 'Uns pican e outros non' — some are spicy, some aren't: the tapas roulette!",
+  "etapes": [
+   {
+    "titre": "The peppers",
+    "detail": "Use small green peppers (padrón, or mild friggitelli type). Wash and dry them well: water would make the oil splatter."
+   },
+   {
+    "titre": "Very hot oil",
+    "detail": "Heat the olive oil in a pan until very hot, almost smoking."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Throw the whole peppers into the scorching oil: they sizzle and blister immediately. Watch for splatter."
+   },
+   {
+    "titre": "Turn",
+    "detail": "Toss them for 3 to 4 minutes, turning, until the skin blisters, browns in places and the peppers soften."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Lift them out with a slotted spoon and briefly drain on paper towels."
+   },
+   {
+    "titre": "Salt",
+    "detail": "Salt generously with coarse (flaky) salt while they're hot and glistening with oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, piping hot, to pick up with your fingers by the stem. The game: guess which one is spicy!"
+   }
+  ]
+ },
+ "tartasantiago": {
+  "nom": "Tarta de Santiago",
+  "description": "Tarta de Santiago — the Galician almond cake: a moist, fragrant cake made entirely of almonds, lemon and cinnamon, without flour. Its cross of Saint James dusted in icing sugar makes it the emblem of the pilgrimage.",
+  "etapes": [
+   {
+    "titre": "Whisk the eggs",
+    "detail": "Whisk the eggs with the sugar until pale, frothy and doubled in volume: this gives the moistness (no raising agent)."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the finely grated lemon zest and cinnamon: the signature flavours of tarta de Santiago."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Gently fold in the ground almonds with a spatula, without knocking out the air."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour the batter into a buttered and floured (or lined) tin, and smooth the surface."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 175°C for 25 to 30 minutes, until golden and a blade comes out clean. It stays moist in the middle."
+   },
+   {
+    "titre": "The cross",
+    "detail": "Let cool, place a cross-of-Saint-James stencil in the centre, and dust generously with icing sugar. Remove the stencil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at room temperature, with a coffee or a glass of sweet wine. A moist, fragrant, naturally gluten-free cake."
+   }
+  ]
+ },
+ "ensaimada": {
+  "nom": "Ensaïmada",
+  "description": "Ensaïmada — the brioche spiral from Mallorca: a leavened dough stretched very thin, coiled into a snail and baked golden, then dusted with icing sugar. Soft and flaky, enjoyed at breakfast with a hot chocolate.",
+  "etapes": [
+   {
+    "titre": "The starter",
+    "detail": "Dissolve the yeast in a little warm water with a spoon of sugar and flour. Let it froth 15 minutes."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, remaining sugar, egg and starter, then knead at length until smooth and elastic. Let rise 1 hour."
+   },
+   {
+    "titre": "Stretch very thin",
+    "detail": "On an oiled work surface, roll and stretch the dough by hand until almost translucent (the secret of the flakiness)."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Brush the whole surface with soft butter (traditionally lard, the 'saïm')."
+   },
+   {
+    "titre": "Coil into a snail",
+    "detail": "Roll the dough into a long thin rope, then coil that rope into a spiral (snail), leaving a little space for the rise."
+   },
+   {
+    "titre": "2nd rise",
+    "detail": "Let the spiral rise for 1 hour to 1 hour 30, until doubled and well puffed."
+   },
+   {
+    "titre": "Bake & sugar",
+    "detail": "Bake at 180°C for 15 to 18 minutes, until golden. Let cool slightly and dust generously with icing sugar before serving."
+   }
+  ]
  }
 };
