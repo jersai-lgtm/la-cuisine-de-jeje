@@ -5901,4 +5901,78 @@ Object.assign(recettes, {
       { icone: "🙃", titre: "Démouler", detail: "Passez une lame le long du bord, posez une assiette dessus et retournez d'un geste sûr. Le caramel nappe la crème. Servez bien frais.", badge: null }
     ]
   },
+  ghriba: {
+    dateAjout: "2026-07-09T13:02:00",
+    nom: "Ghriba",
+    cat: "desserts", pays: "maroc",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍪",
+    description: "Ghriba aux amandes — les petits sablés marocains à la surface craquelée : à base de poudre d'amande, fondants et parfumés, roulés dans le sucre glace. La douceur des tables de fête et du thé à la menthe.",
+    tableauGhriba: [
+      { nb: 1, amandes: "40 g", sucreglace: "20 g", farine: "10 g", beurre: "10 g", oeufs: "½", levurechimique: "1 g", cannelle: "1 g", zestecitron: "1 g" },
+      { nb: 2, amandes: "80 g", sucreglace: "40 g", farine: "20 g", beurre: "20 g", oeufs: "1", levurechimique: "2 g", cannelle: "2 g", zestecitron: "2 g" },
+      { nb: 3, amandes: "120 g", sucreglace: "60 g", farine: "30 g", beurre: "30 g", oeufs: "1½", levurechimique: "3 g", cannelle: "3 g", zestecitron: "3 g" },
+      { nb: 4, amandes: "160 g", sucreglace: "80 g", farine: "40 g", beurre: "40 g", oeufs: "2", levurechimique: "4 g", cannelle: "4 g", zestecitron: "4 g" },
+      { nb: 5, amandes: "200 g", sucreglace: "100 g", farine: "50 g", beurre: "50 g", oeufs: "2½", levurechimique: "5 g", cannelle: "5 g", zestecitron: "5 g" },
+      { nb: 6, amandes: "240 g", sucreglace: "120 g", farine: "60 g", beurre: "60 g", oeufs: "3", levurechimique: "6 g", cannelle: "6 g", zestecitron: "6 g" },
+      { nb: 7, amandes: "280 g", sucreglace: "140 g", farine: "70 g", beurre: "70 g", oeufs: "3½", levurechimique: "7 g", cannelle: "7 g", zestecitron: "7 g" },
+      { nb: 8, amandes: "320 g", sucreglace: "160 g", farine: "80 g", beurre: "80 g", oeufs: "4", levurechimique: "8 g", cannelle: "8 g", zestecitron: "8 g" },
+      { nb: 9, amandes: "360 g", sucreglace: "180 g", farine: "90 g", beurre: "90 g", oeufs: "4½", levurechimique: "9 g", cannelle: "9 g", zestecitron: "9 g" },
+      { nb: 10, amandes: "400 g", sucreglace: "200 g", farine: "100 g", beurre: "100 g", oeufs: "5", levurechimique: "10 g", cannelle: "10 g", zestecitron: "10 g" },
+      { nb: 11, amandes: "440 g", sucreglace: "220 g", farine: "110 g", beurre: "110 g", oeufs: "5½", levurechimique: "11 g", cannelle: "11 g", zestecitron: "11 g" },
+      { nb: 12, amandes: "480 g", sucreglace: "240 g", farine: "120 g", beurre: "120 g", oeufs: "6", levurechimique: "12 g", cannelle: "12 g", zestecitron: "12 g" },
+      { nb: 13, amandes: "520 g", sucreglace: "260 g", farine: "130 g", beurre: "130 g", oeufs: "6½", levurechimique: "13 g", cannelle: "13 g", zestecitron: "13 g" },
+      { nb: 14, amandes: "560 g", sucreglace: "280 g", farine: "140 g", beurre: "140 g", oeufs: "7", levurechimique: "14 g", cannelle: "14 g", zestecitron: "14 g" },
+      { nb: 15, amandes: "600 g", sucreglace: "300 g", farine: "150 g", beurre: "150 g", oeufs: "7½", levurechimique: "15 g", cannelle: "15 g", zestecitron: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Mélange sec", detail: "Mélangez la poudre d'amande, la farine, la moitié du sucre glace, la levure chimique et la cannelle dans un saladier.", badge: null },
+      { icone: "🧈", titre: "Lier la pâte", detail: "Ajoutez le beurre fondu, l'œuf et le zeste de citron. Travaillez jusqu'à obtenir une pâte souple et légèrement collante. Laissez reposer 15 min.", badge: null },
+      { icone: "👐", titre: "Former les boules", detail: "Prélevez des petites portions et roulez-les en boules bien lisses entre vos paumes.", badge: null },
+      { icone: "❄️", titre: "Enrober", detail: "Roulez généreusement chaque boule dans le reste de sucre glace pour un enrobage épais — c'est lui qui craquellera à la cuisson.", badge: null },
+      { icone: "📏", titre: "Disposer", detail: "Placez les boules bien espacées sur une plaque (elles s'étalent), sans les aplatir.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 170°C 12 à 15 min : les ghriba doivent rester PÂLES et se fendiller en surface. Ne les colorez pas, elles durciraient.", badge: null },
+      { icone: "🍵", titre: "Refroidir & servir", detail: "Laissez-les refroidir complètement sur la plaque (elles sont fragiles à chaud) puis servez avec un thé à la menthe. Elles se conservent une semaine.", badge: null }
+    ]
+  },
+  sellou: {
+    dateAjout: "2026-07-09T13:03:00",
+    nom: "Sellou",
+    cat: "desserts", pays: "maroc",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥣",
+    description: "Sellou (sfouf) — la confiserie énergétique marocaine : farine et amandes torréfiées, graines de sésame grillées, liées au miel et au beurre, parfumées à la cannelle et à l'anis. Riche, dense et parfumée — la douceur du Ramadan.",
+    tableauSellou: [
+      { nb: 1, farine: "40 g", amandes: "25 g", sesame: "12 g", miel: "20 g", beurre: "20 g", cannelle: "1 g", anis: "1 g", sucreglace: "8 g" },
+      { nb: 2, farine: "80 g", amandes: "50 g", sesame: "24 g", miel: "40 g", beurre: "40 g", cannelle: "2 g", anis: "2 g", sucreglace: "16 g" },
+      { nb: 3, farine: "120 g", amandes: "75 g", sesame: "36 g", miel: "60 g", beurre: "60 g", cannelle: "3 g", anis: "3 g", sucreglace: "24 g" },
+      { nb: 4, farine: "160 g", amandes: "100 g", sesame: "48 g", miel: "80 g", beurre: "80 g", cannelle: "4 g", anis: "4 g", sucreglace: "32 g" },
+      { nb: 5, farine: "200 g", amandes: "125 g", sesame: "60 g", miel: "100 g", beurre: "100 g", cannelle: "5 g", anis: "5 g", sucreglace: "40 g" },
+      { nb: 6, farine: "240 g", amandes: "150 g", sesame: "72 g", miel: "120 g", beurre: "120 g", cannelle: "6 g", anis: "6 g", sucreglace: "48 g" },
+      { nb: 7, farine: "280 g", amandes: "175 g", sesame: "84 g", miel: "140 g", beurre: "140 g", cannelle: "7 g", anis: "7 g", sucreglace: "56 g" },
+      { nb: 8, farine: "320 g", amandes: "200 g", sesame: "96 g", miel: "160 g", beurre: "160 g", cannelle: "8 g", anis: "8 g", sucreglace: "64 g" },
+      { nb: 9, farine: "360 g", amandes: "225 g", sesame: "108 g", miel: "180 g", beurre: "180 g", cannelle: "9 g", anis: "9 g", sucreglace: "72 g" },
+      { nb: 10, farine: "400 g", amandes: "250 g", sesame: "120 g", miel: "200 g", beurre: "200 g", cannelle: "10 g", anis: "10 g", sucreglace: "80 g" },
+      { nb: 11, farine: "440 g", amandes: "275 g", sesame: "132 g", miel: "220 g", beurre: "220 g", cannelle: "11 g", anis: "11 g", sucreglace: "88 g" },
+      { nb: 12, farine: "480 g", amandes: "300 g", sesame: "144 g", miel: "240 g", beurre: "240 g", cannelle: "12 g", anis: "12 g", sucreglace: "96 g" },
+      { nb: 13, farine: "520 g", amandes: "325 g", sesame: "156 g", miel: "260 g", beurre: "260 g", cannelle: "13 g", anis: "13 g", sucreglace: "104 g" },
+      { nb: 14, farine: "560 g", amandes: "350 g", sesame: "168 g", miel: "280 g", beurre: "280 g", cannelle: "14 g", anis: "14 g", sucreglace: "112 g" },
+      { nb: 15, farine: "600 g", amandes: "375 g", sesame: "180 g", miel: "300 g", beurre: "300 g", cannelle: "15 g", anis: "15 g", sucreglace: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍳", titre: "Torréfier la farine", detail: "Faites torréfier la farine à sec dans une poêle à feu doux, en remuant SANS ARRÊT, jusqu'à ce qu'elle prenne une couleur noisette et dégage un parfum grillé (15-20 min). C'est l'étape clé du sellou.", badge: null },
+      { icone: "🥜", titre: "Griller les fruits secs", detail: "Torréfiez à part les amandes et les graines de sésame jusqu'à ce qu'elles soient dorées. Réservez quelques amandes pour le décor.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixez grossièrement la majorité des amandes grillées. Gardez un peu de texture, tout ne doit pas être en poudre.", badge: null },
+      { icone: "🥣", titre: "Mélange sec", detail: "Mélangez la farine torréfiée, les amandes mixées, le sésame, la cannelle, l'anis moulu et le sucre glace.", badge: null },
+      { icone: "🧈", titre: "Lier", detail: "Faites fondre le beurre avec le miel et versez-le sur le mélange sec. Travaillez jusqu'à obtenir une pâte sableuse et modelable qui tient quand on la presse.", badge: null },
+      { icone: "⛰️", titre: "Dresser", detail: "Tassez le sellou en dôme dans un plat, ou dressez-le en petits monticules. Lissez la surface.", badge: null },
+      { icone: "🌰", titre: "Décorer & servir", detail: "Décorez d'amandes entières grillées. Servez en petites quantités (c'est très riche) avec un thé ou un verre de lait. Se conserve plusieurs semaines.", badge: null }
+    ]
+  },
 });

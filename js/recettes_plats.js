@@ -30055,4 +30055,78 @@ Object.assign(recettes, {
       { icone: "🧀", titre: "Servir", detail: "Servez aussitôt, parsemé d'un peu de fromage râpé. Au Pérou, on accompagne souvent d'une escalope de bœuf poêlée (bistec).", badge: null }
     ]
   },
+  tanjia: {
+    dateAjout: "2026-07-09T13:00:00",
+    nom: "Tanjia",
+    cat: "plats", pays: "maroc",
+    base: 4,
+    temps: "3h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Tanjia marrakchia — le plat mijoté de Marrakech : du bœuf confit très lentement dans une jarre avec ail, cumin, safran et citron confit, jusqu'à devenir fondant à la cuillère. Un tajine sans légumes, tout en profondeur de saveurs.",
+    tableauTanjia: [
+      { nb: 1, boeuf: "150 g", ail: "3", citron: "¼", cumin: "2 g", gingembre: "2 g", safran: "0.2 g", olivenoire: "15 g", beurre: "12 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, boeuf: "300 g", ail: "6", citron: "½", cumin: "4 g", gingembre: "4 g", safran: "0.4 g", olivenoire: "30 g", beurre: "24 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, boeuf: "450 g", ail: "9", citron: "¾", cumin: "6 g", gingembre: "6 g", safran: "0.6 g", olivenoire: "45 g", beurre: "36 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, boeuf: "600 g", ail: "12", citron: "1", cumin: "8 g", gingembre: "8 g", safran: "0.8 g", olivenoire: "60 g", beurre: "48 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, boeuf: "750 g", ail: "15", citron: "1¼", cumin: "10 g", gingembre: "10 g", safran: "1 g", olivenoire: "75 g", beurre: "60 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, boeuf: "900 g", ail: "18", citron: "1½", cumin: "12 g", gingembre: "12 g", safran: "1.2 g", olivenoire: "90 g", beurre: "72 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, boeuf: "1050 g", ail: "21", citron: "1¾", cumin: "14 g", gingembre: "14 g", safran: "1.4 g", olivenoire: "105 g", beurre: "84 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, boeuf: "1200 g", ail: "24", citron: "2", cumin: "16 g", gingembre: "16 g", safran: "1.6 g", olivenoire: "120 g", beurre: "96 g", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, boeuf: "1350 g", ail: "27", citron: "2¼", cumin: "18 g", gingembre: "18 g", safran: "1.8 g", olivenoire: "135 g", beurre: "108 g", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, boeuf: "1500 g", ail: "30", citron: "2½", cumin: "20 g", gingembre: "20 g", safran: "2 g", olivenoire: "150 g", beurre: "120 g", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, boeuf: "1650 g", ail: "33", citron: "2¾", cumin: "22 g", gingembre: "22 g", safran: "2.2 g", olivenoire: "165 g", beurre: "132 g", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, boeuf: "1800 g", ail: "36", citron: "3", cumin: "24 g", gingembre: "24 g", safran: "2.4 g", olivenoire: "180 g", beurre: "144 g", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, boeuf: "1950 g", ail: "39", citron: "3¼", cumin: "26 g", gingembre: "26 g", safran: "2.6 g", olivenoire: "195 g", beurre: "156 g", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, boeuf: "2100 g", ail: "42", citron: "3½", cumin: "28 g", gingembre: "28 g", safran: "2.8 g", olivenoire: "210 g", beurre: "168 g", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, boeuf: "2250 g", ail: "45", citron: "3¾", cumin: "30 g", gingembre: "30 g", safran: "3 g", olivenoire: "225 g", beurre: "180 g", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer la viande", detail: "Coupez le bœuf en gros morceaux. Écrasez l'ail avec le sel, le cumin, le gingembre et le safran pour former une pâte d'épices.", badge: null },
+      { icone: "🫙", titre: "Assaisonner", detail: "Massez les morceaux de viande avec la pâte d'épices. Ajoutez le citron confit coupé en lamelles, les olives, le beurre (smen) et l'huile d'olive. Mélangez bien.", badge: null },
+      { icone: "🏺", titre: "Enfermer", detail: "Placez le tout dans une cocotte à fond épais (ou une jarre à tanjia) avec un petit verre d'eau. Fermez hermétiquement — la cuisson se fait à l'étouffée, sans évaporation.", badge: null },
+      { icone: "🔥", titre: "Cuisson très lente", detail: "Enfournez à 130°C (ou sur des braises douces) pendant 3 heures. La chaleur douce et constante attendrit le collagène et concentre les arômes.", badge: null },
+      { icone: "🥩", titre: "Vérifier", detail: "La viande doit se défaire à la cuillère et baigner dans un jus court, gras et parfumé. Prolongez si besoin — la tanjia ne se rate pas par excès de cuisson.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Laissez reposer 10 min à couvert avant de servir, le temps que les sucs se stabilisent.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la tanjia bien chaude directement dans son plat, avec du pain marocain pour saucer. Pas de couverts nécessaires : c'est un plat convivial qu'on partage.", badge: null }
+    ]
+  },
+  loubia: {
+    dateAjout: "2026-07-09T13:04:00",
+    nom: "Loubia",
+    cat: "plats", pays: "maroc",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🫘",
+    description: "Loubia — le ragoût de haricots blancs marocain : des haricots mijotés longuement dans une sauce tomate parfumée à l'ail, au cumin et au paprika, relevée de coriandre fraîche. Économique, réconfortant et végétarien.",
+    tableauLoubia: [
+      { nb: 1, haricotsblancs: "100 g", tomates: "1", oignon: "½", ail: "2", cumin: "1 g", paprika: "2 g", coriandre: "8 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, haricotsblancs: "200 g", tomates: "2", oignon: "1", ail: "4", cumin: "2 g", paprika: "4 g", coriandre: "16 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, haricotsblancs: "300 g", tomates: "3", oignon: "1½", ail: "6", cumin: "3 g", paprika: "6 g", coriandre: "24 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, haricotsblancs: "400 g", tomates: "4", oignon: "2", ail: "8", cumin: "4 g", paprika: "8 g", coriandre: "32 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, haricotsblancs: "500 g", tomates: "5", oignon: "2½", ail: "10", cumin: "5 g", paprika: "10 g", coriandre: "40 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, haricotsblancs: "600 g", tomates: "6", oignon: "3", ail: "12", cumin: "6 g", paprika: "12 g", coriandre: "48 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, haricotsblancs: "700 g", tomates: "7", oignon: "3½", ail: "14", cumin: "7 g", paprika: "14 g", coriandre: "56 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, haricotsblancs: "800 g", tomates: "8", oignon: "4", ail: "16", cumin: "8 g", paprika: "16 g", coriandre: "64 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, haricotsblancs: "900 g", tomates: "9", oignon: "4½", ail: "18", cumin: "9 g", paprika: "18 g", coriandre: "72 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, haricotsblancs: "1000 g", tomates: "10", oignon: "5", ail: "20", cumin: "10 g", paprika: "20 g", coriandre: "80 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, haricotsblancs: "1100 g", tomates: "11", oignon: "5½", ail: "22", cumin: "11 g", paprika: "22 g", coriandre: "88 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, haricotsblancs: "1200 g", tomates: "12", oignon: "6", ail: "24", cumin: "12 g", paprika: "24 g", coriandre: "96 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, haricotsblancs: "1300 g", tomates: "13", oignon: "6½", ail: "26", cumin: "13 g", paprika: "26 g", coriandre: "104 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, haricotsblancs: "1400 g", tomates: "14", oignon: "7", ail: "28", cumin: "14 g", paprika: "28 g", coriandre: "112 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, haricotsblancs: "1500 g", tomates: "15", oignon: "7½", ail: "30", cumin: "15 g", paprika: "30 g", coriandre: "120 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Tremper les haricots", detail: "La veille, faites tremper les haricots blancs secs dans l'eau froide 12 h. Égouttez et rincez (ou utilisez des haricots déjà cuits pour aller plus vite).", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Faites revenir l'oignon émincé dans l'huile d'olive jusqu'à ce qu'il soit fondant, puis ajoutez l'ail haché et faites-le blondir 1 min.", badge: null },
+      { icone: "🌶️", titre: "Épices", detail: "Ajoutez le cumin et le paprika, remuez 30 secondes pour libérer leurs arômes sans les brûler.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Incorporez les tomates concassées et laissez compoter 5 min pour obtenir une sauce épaisse et parfumée.", badge: null },
+      { icone: "🫘", titre: "Mijoter", detail: "Ajoutez les haricots égouttés, couvrez d'eau à hauteur, salez et portez à frémissement. Laissez mijoter 45 min à feu doux, jusqu'à ce que les haricots soient tendres et la sauce onctueuse.", badge: null },
+      { icone: "🌿", titre: "Coriandre", detail: "En fin de cuisson, ajoutez une bonne poignée de coriandre fraîche ciselée et rectifiez l'assaisonnement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la loubia bien chaude, arrosée d'un filet d'huile d'olive, avec du pain marocain pour saucer. Encore meilleure réchauffée le lendemain.", badge: null }
+    ]
+  },
 });

@@ -2959,4 +2959,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud avec une salsa criolla (oignon rouge émincé, citron vert, coriandre) et un trait de piment. Se déguste à la main ou à la fourchette.", badge: null }
     ]
   },
+  maakouda: {
+    dateAjout: "2026-07-09T13:01:00",
+    nom: "Maakouda",
+    cat: "encas", pays: "maroc",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Maakouda — les galettes de pomme de terre frites du Maroc : une purée épicée au cumin, curcuma, ail et coriandre, façonnée en petites galettes panées et frites, dorées et croustillantes. Un incontournable du snack de rue.",
+    tableauMaakouda: [
+      { nb: 1, pommedeterre: "200 g", oeufs: "1", ail: "1", persil: "6 g", coriandre: "6 g", cumin: "1 g", curcuma: "1 g", farine: "15 g", huilefriture: "20 ml", sel: "2 g" },
+      { nb: 2, pommedeterre: "400 g", oeufs: "2", ail: "2", persil: "12 g", coriandre: "12 g", cumin: "2 g", curcuma: "2 g", farine: "30 g", huilefriture: "40 ml", sel: "4 g" },
+      { nb: 3, pommedeterre: "600 g", oeufs: "3", ail: "3", persil: "18 g", coriandre: "18 g", cumin: "3 g", curcuma: "3 g", farine: "45 g", huilefriture: "60 ml", sel: "6 g" },
+      { nb: 4, pommedeterre: "800 g", oeufs: "4", ail: "4", persil: "24 g", coriandre: "24 g", cumin: "4 g", curcuma: "4 g", farine: "60 g", huilefriture: "80 ml", sel: "8 g" },
+      { nb: 5, pommedeterre: "1000 g", oeufs: "5", ail: "5", persil: "30 g", coriandre: "30 g", cumin: "5 g", curcuma: "5 g", farine: "75 g", huilefriture: "100 ml", sel: "10 g" },
+      { nb: 6, pommedeterre: "1200 g", oeufs: "6", ail: "6", persil: "36 g", coriandre: "36 g", cumin: "6 g", curcuma: "6 g", farine: "90 g", huilefriture: "120 ml", sel: "12 g" },
+      { nb: 7, pommedeterre: "1400 g", oeufs: "7", ail: "7", persil: "42 g", coriandre: "42 g", cumin: "7 g", curcuma: "7 g", farine: "105 g", huilefriture: "140 ml", sel: "14 g" },
+      { nb: 8, pommedeterre: "1600 g", oeufs: "8", ail: "8", persil: "48 g", coriandre: "48 g", cumin: "8 g", curcuma: "8 g", farine: "120 g", huilefriture: "160 ml", sel: "16 g" },
+      { nb: 9, pommedeterre: "1800 g", oeufs: "9", ail: "9", persil: "54 g", coriandre: "54 g", cumin: "9 g", curcuma: "9 g", farine: "135 g", huilefriture: "180 ml", sel: "18 g" },
+      { nb: 10, pommedeterre: "2000 g", oeufs: "10", ail: "10", persil: "60 g", coriandre: "60 g", cumin: "10 g", curcuma: "10 g", farine: "150 g", huilefriture: "200 ml", sel: "20 g" },
+      { nb: 11, pommedeterre: "2200 g", oeufs: "11", ail: "11", persil: "66 g", coriandre: "66 g", cumin: "11 g", curcuma: "11 g", farine: "165 g", huilefriture: "220 ml", sel: "22 g" },
+      { nb: 12, pommedeterre: "2400 g", oeufs: "12", ail: "12", persil: "72 g", coriandre: "72 g", cumin: "12 g", curcuma: "12 g", farine: "180 g", huilefriture: "240 ml", sel: "24 g" },
+      { nb: 13, pommedeterre: "2600 g", oeufs: "13", ail: "13", persil: "78 g", coriandre: "78 g", cumin: "13 g", curcuma: "13 g", farine: "195 g", huilefriture: "260 ml", sel: "26 g" },
+      { nb: 14, pommedeterre: "2800 g", oeufs: "14", ail: "14", persil: "84 g", coriandre: "84 g", cumin: "14 g", curcuma: "14 g", farine: "210 g", huilefriture: "280 ml", sel: "28 g" },
+      { nb: 15, pommedeterre: "3000 g", oeufs: "15", ail: "15", persil: "90 g", coriandre: "90 g", cumin: "15 g", curcuma: "15 g", farine: "225 g", huilefriture: "300 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Faites cuire les pommes de terre épluchées dans l'eau salée jusqu'à ce qu'elles soient tendres, puis écrasez-les en purée lisse. Laissez tiédir.", badge: null },
+      { icone: "🌿", titre: "Assaisonner", detail: "Ajoutez à la purée l'ail écrasé, le persil et la coriandre ciselés, le cumin, le curcuma et du sel. Mélangez bien : la purée prend une belle couleur dorée.", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Incorporez un œuf pour lier la préparation. Elle doit être souple mais assez ferme pour être façonnée.", badge: null },
+      { icone: "🖐️", titre: "Former les galettes", detail: "Prélevez des portions et aplatissez-les en petites galettes rondes d'environ 1 cm d'épaisseur.", badge: null },
+      { icone: "🍳", titre: "Paner", detail: "Roulez chaque galette dans la farine (ou dans un œuf battu puis la farine) pour un enrobage qui croustille à la friture.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire dans l'huile à 180°C 2 à 3 min par face jusqu'à ce qu'elles soient bien dorées. Égouttez sur papier absorbant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, en apéritif ou glissé dans un pain avec de la harissa et une sauce, comme dans les sandwichs marocains.", badge: null }
+    ]
+  },
 });

@@ -56648,5 +56648,175 @@ window.RECETTES_EN = {
     "detail": "Serve immediately, sprinkled with a little grated cheese. In Peru it's often served with a pan-fried beef steak (bistec)."
    }
   ]
+ },
+ "tanjia": {
+  "nom": "Tanjia",
+  "description": "Tanjia marrakchia — Marrakech's slow-cooked dish: beef confit very slowly in a jar with garlic, cumin, saffron and preserved lemon, until spoon-tender. A vegetable-free tagine, all about depth of flavour.",
+  "etapes": [
+   {
+    "titre": "Prepare the meat",
+    "detail": "Cut the beef into large chunks. Crush the garlic with the salt, cumin, ginger and saffron into a spice paste."
+   },
+   {
+    "titre": "Season",
+    "detail": "Massage the meat pieces with the spice paste. Add the sliced preserved lemon, the olives, the butter (smen) and the olive oil. Mix well."
+   },
+   {
+    "titre": "Seal it in",
+    "detail": "Place everything in a heavy-bottomed pot (or a tanjia jar) with a small glass of water. Close it tightly — it cooks in its own steam, without evaporation."
+   },
+   {
+    "titre": "Very slow cooking",
+    "detail": "Bake at 130°C (or over gentle embers) for 3 hours. The low, steady heat tenderises the collagen and concentrates the aromas."
+   },
+   {
+    "titre": "Check",
+    "detail": "The meat should fall apart with a spoon and sit in a short, rich, fragrant juice. Extend if needed — tanjia can't be overcooked."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 minutes covered before serving, so the juices settle."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the tanjia piping hot straight from its dish, with Moroccan bread to mop up. No cutlery needed: it's a convivial dish to share."
+   }
+  ]
+ },
+ "maakouda": {
+  "nom": "Maakouda",
+  "description": "Maakouda — Morocco's fried potato patties: a mash spiced with cumin, turmeric, garlic and coriander, shaped into little patties, breaded and fried until golden and crisp. A street-food must-have.",
+  "etapes": [
+   {
+    "titre": "Cook the potatoes",
+    "detail": "Boil the peeled potatoes in salted water until tender, then mash into a smooth purée. Let cool slightly."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the crushed garlic, chopped parsley and coriander, cumin, turmeric and salt to the mash. Mix well: the purée takes on a lovely golden colour."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Stir in an egg to bind the mixture. It should be soft but firm enough to shape."
+   },
+   {
+    "titre": "Form the patties",
+    "detail": "Take portions and flatten them into small round patties about 1 cm thick."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Roll each patty in flour (or in beaten egg then flour) for a coating that crisps up when fried."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in oil at 180°C for 2 to 3 minutes per side until golden. Drain on paper towels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, as an appetiser or tucked into bread with harissa and a sauce, like in Moroccan sandwiches."
+   }
+  ]
+ },
+ "ghriba": {
+  "nom": "Ghriba",
+  "description": "Almond ghriba — Morocco's crackle-topped shortbread cookies: made with ground almonds, tender and fragrant, rolled in icing sugar. The sweet of festive tables and mint tea.",
+  "etapes": [
+   {
+    "titre": "Dry mix",
+    "detail": "Mix the ground almonds, flour, half the icing sugar, the baking powder and cinnamon in a bowl."
+   },
+   {
+    "titre": "Bind the dough",
+    "detail": "Add the melted butter, egg and lemon zest. Work into a soft, slightly sticky dough. Let rest 15 minutes."
+   },
+   {
+    "titre": "Form the balls",
+    "detail": "Take small portions and roll them into smooth balls between your palms."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Roll each ball generously in the remaining icing sugar for a thick coating — that's what crackles as they bake."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Place the balls well spaced on a tray (they spread), without flattening them."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 170°C for 12 to 15 minutes: the ghriba should stay PALE and crack on the surface. Don't brown them, or they'll harden."
+   },
+   {
+    "titre": "Cool & serve",
+    "detail": "Let them cool completely on the tray (they're fragile when hot) then serve with mint tea. They keep for a week."
+   }
+  ]
+ },
+ "sellou": {
+  "nom": "Sellou",
+  "description": "Sellou (sfouf) — Morocco's energy sweet: toasted flour and almonds, grilled sesame seeds, bound with honey and butter, scented with cinnamon and anise. Rich, dense and fragrant — the sweet of Ramadan.",
+  "etapes": [
+   {
+    "titre": "Toast the flour",
+    "detail": "Dry-toast the flour in a pan over low heat, stirring CONSTANTLY, until it turns hazelnut-coloured and gives off a roasted aroma (15-20 min). This is the key step of sellou."
+   },
+   {
+    "titre": "Grill the nuts",
+    "detail": "Separately toast the almonds and sesame seeds until golden. Keep a few almonds for decoration."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Coarsely blend most of the toasted almonds. Keep some texture — not everything should be powder."
+   },
+   {
+    "titre": "Dry mix",
+    "detail": "Mix the toasted flour, blended almonds, sesame, cinnamon, ground anise and icing sugar."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Melt the butter with the honey and pour it over the dry mix. Work into a sandy, mouldable paste that holds when pressed."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Pack the sellou into a dome in a dish, or shape it into small mounds. Smooth the surface."
+   },
+   {
+    "titre": "Decorate & serve",
+    "detail": "Decorate with whole toasted almonds. Serve in small amounts (it's very rich) with tea or a glass of milk. Keeps for several weeks."
+   }
+  ]
+ },
+ "loubia": {
+  "nom": "Loubia",
+  "description": "Loubia — Morocco's white bean stew: beans slowly simmered in a tomato sauce fragrant with garlic, cumin and paprika, lifted with fresh coriander. Cheap, comforting and vegetarian.",
+  "etapes": [
+   {
+    "titre": "Soak the beans",
+    "detail": "The day before, soak the dried white beans in cold water for 12 hours. Drain and rinse (or use pre-cooked beans to save time)."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Sauté the sliced onion in the olive oil until soft, then add the chopped garlic and let it turn golden for 1 minute."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add the cumin and paprika, stir for 30 seconds to release their aromas without burning them."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Stir in the crushed tomatoes and let them cook down for 5 minutes into a thick, fragrant sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the drained beans, cover with water, season and bring to a simmer. Cook for 45 minutes over low heat, until the beans are tender and the sauce silky."
+   },
+   {
+    "titre": "Coriander",
+    "detail": "At the end of cooking, add a good handful of chopped fresh coriander and adjust the seasoning."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the loubia piping hot, drizzled with olive oil, with Moroccan bread to mop up. Even better reheated the next day."
+   }
+  ]
  }
 };
