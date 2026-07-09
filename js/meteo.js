@@ -1,14 +1,15 @@
 // =============================================================================
 // 🌡️ meteo.js — Météo locale (sans permission) pour adapter les suggestions
 // -----------------------------------------------------------------------------
-// Récupère la température du jour via géoloc par IP (ipapi.co) + Open-Meteo
-// (gratuit, sans clé, CORS OK). Met window._meteo = { temp, chaud, froid }.
-// Mémorisé 3 h en local. Utilisé par le swipe : chaud → plats frais ; froid →
+// Récupère le PIC de température PRÉVU du jour (max) via géoloc (GPS puis IP) +
+// Open-Meteo (gratuit, sans clé, CORS OK). Met window._meteo = { temp, chaud, froid }.
+// On prend le MAX du jour (pas l'instantané) pour que les suggestions ne vacillent
+// pas au fil des heures. Mémorisé 3 h en local. Utilisé par le swipe : chaud → plats frais ; froid →
 // plats réconfortants. Best-effort : si ça échoue, on ne biaise rien.
 // =============================================================================
 
 (function () {
-  const LS = "meteo_cache_v2";  // v2 : passage au GPS prioritaire → on ignore l'ancien cache IP
+  const LS = "meteo_cache_v3";  // v3 : on stocke le PIC du jour (max) et non l'instantané → on ignore l'ancien cache
   const SEUIL_CHAUD = 28;  // ≥ 28°C → on penche vers le frais
   const SEUIL_FROID = 7;   // ≤ 7°C  → on penche vers le réconfortant
 
@@ -61,8 +62,11 @@
       const ll = await getLatLon();
       if (!ll) return;
       const [lat, lon] = ll;
-      const w = await fetch("https://api.open-meteo.com/v1/forecast?latitude=" + encodeURIComponent(lat) + "&longitude=" + encodeURIComponent(lon) + "&current=temperature_2m").then((r) => r.json());
-      const temp = w && w.current && w.current.temperature_2m;
+      // On se cale sur le PIC de température PRÉVU pour la journée (max), pas sur la
+      // valeur instantanée : sinon les suggestions vacillaient dans la journée (frais
+      // le matin gris, chaud à 16h). Le max est stable toute la journée → cohérent.
+      const w = await fetch("https://api.open-meteo.com/v1/forecast?latitude=" + encodeURIComponent(lat) + "&longitude=" + encodeURIComponent(lon) + "&daily=temperature_2m_max&timezone=auto&forecast_days=1").then((r) => r.json());
+      const temp = w && w.daily && Array.isArray(w.daily.temperature_2m_max) ? w.daily.temperature_2m_max[0] : undefined;
       if (typeof temp === "number") {
         try { localStorage.setItem(LS, JSON.stringify({ temp: temp, t: Date.now() })); } catch (e) {}
         poser(temp);
