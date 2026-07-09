@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuisine-jeje-v3.7.8";
+const CACHE_NAME = "cuisine-jeje-v3.7.9";
 const FICHIERS = [
   "/la-cuisine-de-jeje/",
   "/la-cuisine-de-jeje/index.html",
@@ -290,6 +290,27 @@ async function gererPush() {
 }
 
 self.addEventListener("push", (e) => { e.waitUntil(gererPush()); });
+
+// Android/Chrome (FCM) peut RENOUVELER l'abonnement push à tout moment. Sans ce
+// handler, l'ancien abonnement meurt et les notifs s'arrêtent — l'utilisateur croit
+// devoir « réactiver ». Ici on se réabonne immédiatement, même app fermée, et on
+// prévient le Worker. (Complète la réparation côté app dans push.js/rafraichirFlag.)
+self.addEventListener("pushsubscriptionchange", (e) => {
+  e.waitUntil((async () => {
+    try {
+      const key = "BOz2O8gI5x3anhHIzNduF6G-sYzmo3JSIRfdtUm37lnuXkL2L_GPoqRqILLCzc7VGKkQr12I7rI7zl1M0e3mbwg";
+      const pad = "=".repeat((4 - (key.length % 4)) % 4);
+      const raw = atob((key + pad).replace(/-/g, "+").replace(/_/g, "/"));
+      const arr = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+      const sub = await self.registration.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: arr });
+      await fetch(PUSH_WORKER + "/push/subscribe", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subscription: sub.toJSON ? sub.toJSON() : sub }),
+      });
+    } catch (err) { /* best effort */ }
+  })());
+});
 
 self.addEventListener("notificationclick", (e) => {
   e.notification.close();
