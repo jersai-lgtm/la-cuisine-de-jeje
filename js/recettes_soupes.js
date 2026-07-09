@@ -3255,5 +3255,41 @@ Object.assign(recettes, {
       { icone: "🧂", titre: "Assaisonner", detail: "Saler, poivrer et ajuster l'acidité, puis incorporer une touche de crème hors du feu pour adoucir la soupe.", badge: null },
       { icone: "🍲", titre: "Servir", detail: "Servir la kapustnica bien chaude avec un trait de crème supplémentaire et du pain de campagne.", badge: null }
     ]
-  }
+  },
+  acordaalentejana: {
+    nom: "Açorda Alentejana",
+    cat: "soupes", pays: "portugal",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍞",
+    description: "Soupe rustique de l'Alentejo à base de pain rassis, d'ail, de coriandre et d'œufs pochés dans un bouillon parfumé à l'huile d'olive. Un plat de pauvre devenu emblème de la cuisine portugaise.",
+    tableauAcordaalentejana: [
+      { nb: 1, painrassis: "60 g", ail: "2", coriandre: "10 g", huileolive: "12 ml", oeufs: "1", sel: "2 g", eau: "300 ml" },
+      { nb: 2, painrassis: "120 g", ail: "4", coriandre: "20 g", huileolive: "24 ml", oeufs: "2", sel: "4 g", eau: "600 ml" },
+      { nb: 3, painrassis: "180 g", ail: "6", coriandre: "30 g", huileolive: "36 ml", oeufs: "3", sel: "6 g", eau: "900 ml" },
+      { nb: 4, painrassis: "240 g", ail: "8", coriandre: "40 g", huileolive: "48 ml", oeufs: "4", sel: "8 g", eau: "1200 ml" },
+      { nb: 5, painrassis: "300 g", ail: "10", coriandre: "50 g", huileolive: "60 ml", oeufs: "5", sel: "10 g", eau: "1500 ml" },
+      { nb: 6, painrassis: "360 g", ail: "12", coriandre: "60 g", huileolive: "72 ml", oeufs: "6", sel: "12 g", eau: "1800 ml" },
+      { nb: 7, painrassis: "420 g", ail: "14", coriandre: "70 g", huileolive: "84 ml", oeufs: "7", sel: "14 g", eau: "2100 ml" },
+      { nb: 8, painrassis: "480 g", ail: "16", coriandre: "80 g", huileolive: "96 ml", oeufs: "8", sel: "16 g", eau: "2400 ml" },
+      { nb: 9, painrassis: "540 g", ail: "18", coriandre: "90 g", huileolive: "108 ml", oeufs: "9", sel: "18 g", eau: "2700 ml" },
+      { nb: 10, painrassis: "600 g", ail: "20", coriandre: "100 g", huileolive: "120 ml", oeufs: "10", sel: "20 g", eau: "3000 ml" },
+      { nb: 11, painrassis: "660 g", ail: "22", coriandre: "110 g", huileolive: "132 ml", oeufs: "11", sel: "22 g", eau: "3300 ml" },
+      { nb: 12, painrassis: "720 g", ail: "24", coriandre: "120 g", huileolive: "144 ml", oeufs: "12", sel: "24 g", eau: "3600 ml" },
+      { nb: 13, painrassis: "780 g", ail: "26", coriandre: "130 g", huileolive: "156 ml", oeufs: "13", sel: "26 g", eau: "3900 ml" },
+      { nb: 14, painrassis: "840 g", ail: "28", coriandre: "140 g", huileolive: "168 ml", oeufs: "14", sel: "28 g", eau: "4200 ml" },
+      { nb: 15, painrassis: "900 g", ail: "30", coriandre: "150 g", huileolive: "180 ml", oeufs: "15", sel: "30 g", eau: "4500 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧄", titre: "Préparer la base", detail: "Pilez l'ail avec le sel dans un mortier jusqu'à obtenir une pâte lisse. Ajoutez les feuilles de coriandre fraîche et continuez à piler pour libérer les arômes.", badge: null },
+      { icone: "🫙", titre: "Chauffer l'huile", detail: "Versez l'huile d'olive dans une casserole à feu doux. Ajoutez la pâte ail-coriandre et faites revenir 1 minute sans faire brûler, juste pour parfumer l'huile.", badge: null },
+      { icone: "💧", titre: "Ajouter l'eau", detail: "Versez l'eau chaude dans la casserole, salez et poivrez. Portez à léger frémissement. Astuce : utilisez de l'eau de cuisson de légumes pour plus de saveur.", badge: null },
+      { icone: "🍞", titre: "Incorporer le pain", detail: "Émiettez ou découpez le pain rassis en morceaux grossiers et ajoutez-les dans le bouillon chaud. Laissez le pain s'imbiber et gonfler pendant 2 à 3 minutes.", badge: null },
+      { icone: "🥚", titre: "Pocher l'œuf", detail: "Faites un petit creux dans la soupe et cassez l'œuf délicatement dedans. Couvrez et laissez pocher 3 minutes pour un jaune coulant. Comptez un œuf par personne.", badge: null },
+      { icone: "🫒", titre: "Finir à l'huile", detail: "Arrosez d'un filet d'huile d'olive extra-vierge juste avant de servir pour apporter brillance et richesse. Ajoutez quelques feuilles de coriandre fraîche entières.", badge: null },
+      { icone: "🍽️", titre: "Servir immédiatement", detail: "Servez l'açorda bien chaude dans des bols individuels. La soupe doit être épaisse, presque comme une bouillie. Ne pas attendre car le pain continue d'absorber le bouillon.", badge: null }
+    ]
+  },
 });

@@ -56138,5 +56138,175 @@ window.RECETTES_EN = {
     "detail": "Divide the roasted potatoes into the bottom of the bowls, arrange the spinach, avocado, corn, tomatoes, and red onion. Add the soft-boiled egg cut in half, drizzle with lemon-yogurt sauce, and serve immediately."
    }
   ]
+ },
+ "acordaalentejana": {
+  "nom": "Açorda Alentejana",
+  "description": "Rustic Alentejo soup made with stale bread, garlic, coriander and eggs poached in an olive-oil-scented broth. A poor man's dish that became an emblem of Portuguese cooking.",
+  "etapes": [
+   {
+    "titre": "Prepare the base",
+    "detail": "Crush the garlic with the salt in a mortar until you get a smooth paste. Add the fresh coriander leaves and keep pounding to release the aromas."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Pour the olive oil into a pan over low heat. Add the garlic-coriander paste and fry for 1 minute without burning, just to flavour the oil."
+   },
+   {
+    "titre": "Add the water",
+    "detail": "Pour the hot water into the pan, season with salt and pepper. Bring to a gentle simmer. Tip: use vegetable cooking water for more flavour."
+   },
+   {
+    "titre": "Add the bread",
+    "detail": "Crumble or cut the stale bread into rough pieces and add them to the hot broth. Let the bread soak and swell for 2 to 3 minutes."
+   },
+   {
+    "titre": "Poach the egg",
+    "detail": "Make a small well in the soup and gently crack the egg into it. Cover and let poach for 3 minutes for a runny yolk. Count one egg per person."
+   },
+   {
+    "titre": "Finish with oil",
+    "detail": "Drizzle with extra-virgin olive oil just before serving for shine and richness. Add a few whole fresh coriander leaves."
+   },
+   {
+    "titre": "Serve immediately",
+    "detail": "Serve the açorda piping hot in individual bowls. The soup should be thick, almost like a porridge. Don't wait, as the bread keeps absorbing the broth."
+   }
+  ]
+ },
+ "farofias": {
+  "nom": "Farófias",
+  "description": "Portuguese floating islands: whipped egg whites poached in cinnamon- and lemon-scented milk, coated in a silky custard. A light and refined dessert.",
+  "etapes": [
+   {
+    "titre": "Infuse the milk",
+    "detail": "Heat the milk with the cinnamon stick and lemon zest over low heat until it simmers. Let infuse for 10 minutes then remove the aromatics. Set aside."
+   },
+   {
+    "titre": "Whip the whites",
+    "detail": "Whisk the egg whites to stiff peaks with a pinch of salt. Add the icing sugar while continuing to whisk for a glossy, firm meringue."
+   },
+   {
+    "titre": "Poach the islands",
+    "detail": "Bring the scented milk to a gentle simmer. Drop spoonfuls of the whipped whites in and poach 2 minutes on each side. Drain on paper towels."
+   },
+   {
+    "titre": "Make the custard",
+    "detail": "Whisk the egg yolks with the sugar until pale. Add the cornstarch. Pour in the hot milk in a thin stream, whisking constantly to avoid curdling."
+   },
+   {
+    "titre": "Cook the custard",
+    "detail": "Return to low heat and stir constantly until it thickens (about 5 min). The custard should coat the back of a spoon. Remove from the heat immediately."
+   },
+   {
+    "titre": "Cool down",
+    "detail": "Pour the custard into a shallow dish and place the poached egg-white islands on top. Let cool to room temperature then chill for at least 1 hour."
+   },
+   {
+    "titre": "Dust and serve",
+    "detail": "Just before serving, dust generously with ground cinnamon. Tip: you can also lightly torch the top with a flame for a caramelised effect."
+   }
+  ]
+ },
+ "carabineirosgrelhados": {
+  "nom": "Carabineiros Grelhados",
+  "description": "Large red carabineiro prawns grilled over embers with garlic, parsley and a squeeze of lemon. A great classic of Portuguese seafood restaurants, disarmingly simple.",
+  "etapes": [
+   {
+    "titre": "Prepare the marinade",
+    "detail": "Finely chop the garlic and parsley. Mix with the olive oil, a pinch of chilli and the lemon juice. Let rest for 10 minutes so the flavours develop."
+   },
+   {
+    "titre": "Prepare the prawns",
+    "detail": "Score the prawns along the back without separating them to help cooking and let the marinade penetrate. Season lightly. Tip: keep the shell on for more flavour."
+   },
+   {
+    "titre": "Heat the grill",
+    "detail": "Heat a grill or plancha over high heat until very hot. Lightly oil the surface to keep the prawns from sticking."
+   },
+   {
+    "titre": "Grill the prawns",
+    "detail": "Place the prawns flesh-side down first, 2 to 3 minutes. Turn and grill the shell side 1 to 2 minutes. The carabineiros should be bright red and lightly caramelised."
+   },
+   {
+    "titre": "Baste with marinade",
+    "detail": "While cooking, baste the prawns repeatedly with the garlic-parsley marinade using a brush to coat them well and build a fragrant crust."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Arrange the prawns on a warm plate. Scatter with fleur de sel, fresh chopped parsley and grated lemon zest. Serve with lemon wedges and grilled bread."
+   },
+   {
+    "titre": "Pair and serve",
+    "detail": "Serve immediately with a chilled Portuguese white wine such as Vinho Verde. The bread is essential for mopping up the fragrant garlicky juices."
+   }
+  ]
+ },
+ "queijadassintra": {
+  "nom": "Queijadas de Sintra",
+  "description": "Small fresh-cheese cakes typical of Sintra, with a creamy, melting texture and a hint of cinnamon. A centuries-old speciality sold in the famous heritage town.",
+  "etapes": [
+   {
+    "titre": "Preheat the oven",
+    "detail": "Preheat the oven to 200°C. Butter and flour small individual tartlet moulds or a muffin tin. The high temperature is key to a lightly caramelised crust."
+   },
+   {
+    "titre": "Line the moulds",
+    "detail": "Roll the shortcrust pastry thinly and cut out circles slightly larger than your moulds. Line each mould, pressing the pastry up the sides. Prick the base with a fork."
+   },
+   {
+    "titre": "Prepare the filling",
+    "detail": "In a bowl, beat the fromage blanc with the sugar until smooth. Tip: use well-drained fromage blanc to avoid a runny filling."
+   },
+   {
+    "titre": "Add the eggs",
+    "detail": "Add the eggs one at a time, whisking well between each. Fold in the sifted flour, cinnamon and lemon zest. Mix to a smooth cream."
+   },
+   {
+    "titre": "Fill the moulds",
+    "detail": "Pour the mixture into the pastry cases up to three-quarters full. Don't overfill, as the filling puffs up slightly while baking then settles once out of the oven."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake for 20 to 25 minutes until the surface is golden and slightly domed. The filling should be set but still slightly wobbly in the centre."
+   },
+   {
+    "titre": "Let cool",
+    "detail": "Let cool in the moulds before unmoulding. Dust with cinnamon just before serving. The queijadas keep for 2 days in the fridge and are even better the next day."
+   }
+  ]
+ },
+ "feijoadaportuguesa": {
+  "nom": "Feijoada Portuguesa",
+  "description": "A stew of red beans simmered with pork, chorizo and vegetables, the Portuguese version of this iconic dish. Generous and comforting, served with white rice and cabbage.",
+  "etapes": [
+   {
+    "titre": "Soak the beans",
+    "detail": "If using dried beans, soak them in cold water the day before for 12 hours. Drain and rinse. This step cuts the cooking time and makes them easier to digest."
+   },
+   {
+    "titre": "Sweat the aromatics",
+    "detail": "In a pot, heat the olive oil. Sweat the sliced onion for 5 minutes until translucent. Add the chopped garlic and smoked paprika, stir for 1 minute."
+   },
+   {
+    "titre": "Sear the meats",
+    "detail": "Add the pork cut into pieces and the sliced chorizo. Brown on all sides over medium-high heat. The cooking juices will add depth to the sauce."
+   },
+   {
+    "titre": "Add the tomatoes",
+    "detail": "Stir in the crushed tomatoes, bay leaf and drained beans. Cover with water to the level of the ingredients. Bring to a boil then reduce to low heat. Season with salt and pepper."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer covered for 1 hour to 1h15 until the beans are very tender. Check the water level regularly and add more if needed."
+   },
+   {
+    "titre": "Add the cabbage",
+    "detail": "10 minutes before the end, add the green cabbage cut into strips. Stir and cook uncovered so the sauce reduces and concentrates."
+   },
+   {
+    "titre": "Adjust and serve",
+    "detail": "Adjust the seasoning. Serve the feijoada piping hot with white rice and slices of bread. Tip: this dish is even better reheated the next day."
+   }
+  ]
  }
 };

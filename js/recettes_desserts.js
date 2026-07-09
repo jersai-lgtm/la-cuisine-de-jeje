@@ -5677,5 +5677,78 @@ Object.assign(recettes, {
       { icone: "🔄", titre: "Tourner", detail: "Retourner chaque boule d'un quart de tour à l'aide d'une pique pour former la sphère et finir la cuisson 2 min.", badge: null },
       { icone: "🍯", titre: "Servir", detail: "Saupoudrer de sucre glace et servir tièdes, accompagnés de confiture pour la tradition danoise.", badge: null }
     ]
-  }
+  },
+  farofias: {
+    liees: ["arrozDoce"],
+    nom: "Farófias",
+    cat: "desserts", pays: "portugal",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍮",
+    description: "Îles flottantes portugaises : des blancs en neige pochés dans du lait parfumé à la cannelle et au citron, nappés d'une crème anglaise onctueuse. Un dessert léger et raffiné.",
+    tableauFarofias: [
+      { nb: 1, blancs: "1", jauneoeuf: "1", lait: "120 ml", sucre: "25 g", cannelle: "1 g", zestecitron: "2 g", maizena: "3 g", sucreglace: "4 g" },
+      { nb: 2, blancs: "2", jauneoeuf: "2", lait: "240 ml", sucre: "50 g", cannelle: "2 g", zestecitron: "4 g", maizena: "6 g", sucreglace: "8 g" },
+      { nb: 3, blancs: "3", jauneoeuf: "3", lait: "360 ml", sucre: "75 g", cannelle: "3 g", zestecitron: "6 g", maizena: "9 g", sucreglace: "12 g" },
+      { nb: 4, blancs: "4", jauneoeuf: "4", lait: "480 ml", sucre: "100 g", cannelle: "4 g", zestecitron: "8 g", maizena: "12 g", sucreglace: "16 g" },
+      { nb: 5, blancs: "5", jauneoeuf: "5", lait: "600 ml", sucre: "125 g", cannelle: "5 g", zestecitron: "10 g", maizena: "15 g", sucreglace: "20 g" },
+      { nb: 6, blancs: "6", jauneoeuf: "6", lait: "720 ml", sucre: "150 g", cannelle: "6 g", zestecitron: "12 g", maizena: "18 g", sucreglace: "24 g" },
+      { nb: 7, blancs: "7", jauneoeuf: "7", lait: "840 ml", sucre: "175 g", cannelle: "7 g", zestecitron: "14 g", maizena: "21 g", sucreglace: "28 g" },
+      { nb: 8, blancs: "8", jauneoeuf: "8", lait: "960 ml", sucre: "200 g", cannelle: "8 g", zestecitron: "16 g", maizena: "24 g", sucreglace: "32 g" },
+      { nb: 9, blancs: "9", jauneoeuf: "9", lait: "1080 ml", sucre: "225 g", cannelle: "9 g", zestecitron: "18 g", maizena: "27 g", sucreglace: "36 g" },
+      { nb: 10, blancs: "10", jauneoeuf: "10", lait: "1200 ml", sucre: "250 g", cannelle: "10 g", zestecitron: "20 g", maizena: "30 g", sucreglace: "40 g" },
+      { nb: 11, blancs: "11", jauneoeuf: "11", lait: "1320 ml", sucre: "275 g", cannelle: "11 g", zestecitron: "22 g", maizena: "33 g", sucreglace: "44 g" },
+      { nb: 12, blancs: "12", jauneoeuf: "12", lait: "1440 ml", sucre: "300 g", cannelle: "12 g", zestecitron: "24 g", maizena: "36 g", sucreglace: "48 g" },
+      { nb: 13, blancs: "13", jauneoeuf: "13", lait: "1560 ml", sucre: "325 g", cannelle: "13 g", zestecitron: "26 g", maizena: "39 g", sucreglace: "52 g" },
+      { nb: 14, blancs: "14", jauneoeuf: "14", lait: "1680 ml", sucre: "350 g", cannelle: "14 g", zestecitron: "28 g", maizena: "42 g", sucreglace: "56 g" },
+      { nb: 15, blancs: "15", jauneoeuf: "15", lait: "1800 ml", sucre: "375 g", cannelle: "15 g", zestecitron: "30 g", maizena: "45 g", sucreglace: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Parfumer le lait", detail: "Faites chauffer le lait avec le bâton de cannelle et le zeste de citron à feu doux jusqu'à frémissement. Laissez infuser 10 minutes puis retirez les aromates. Réservez.", badge: null },
+      { icone: "🥚", titre: "Monter les blancs", detail: "Fouettez les blancs en neige ferme avec une pincée de sel. Ajoutez le sucre glace en continuant de fouetter pour obtenir une meringue brillante et ferme.", badge: null },
+      { icone: "🍳", titre: "Pocher les îles", detail: "Portez le lait parfumé à léger frémissement. Déposez des quenelles de blanc en neige à la cuillère et pochez 2 minutes de chaque côté. Égouttez sur du papier absorbant.", badge: null },
+      { icone: "🍳", titre: "Préparer la crème", detail: "Fouettez les jaunes d'œufs avec le sucre jusqu'à blanchiment. Ajoutez la maïzena. Versez le lait chaud en filet en fouettant sans cesse pour éviter la coagulation.", badge: null },
+      { icone: "🔥", titre: "Cuire la crème", detail: "Remettez sur feu doux et remuez constamment jusqu'à épaississement (environ 5 min). La crème doit napper le dos d'une cuillère. Retirez du feu immédiatement.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Versez la crème dans un plat creux, déposez les îles de blancs pochés dessus. Laissez refroidir à température ambiante puis réfrigérez au moins 1 heure.", badge: null },
+      { icone: "🟤", titre: "Saupoudrer et servir", detail: "Au moment de servir, saupoudrez généreusement de cannelle en poudre. Astuce : vous pouvez aussi brûler légèrement le dessus à la flamme pour un effet caramélisé.", badge: null }
+    ]
+  },
+  queijadassintra: {
+    nom: "Queijadas de Sintra",
+    cat: "desserts", pays: "portugal",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧁",
+    description: "Petits gâteaux au fromage frais typiques de Sintra, à la texture crémeuse et fondante, parfumés à la cannelle. Une spécialité vieille de plusieurs siècles vendue dans la célèbre ville-patrimoine.",
+    tableauQueijadassintra: [
+      { nb: 1, patebrisee: "40 g", fromageblanc: "40 g", sucre: "20 g", oeufs: "½", farineble: "8 g", cannelle: "1 g", beurre: "5 g", zestecitron: "1 g" },
+      { nb: 2, patebrisee: "80 g", fromageblanc: "80 g", sucre: "40 g", oeufs: "1", farineble: "16 g", cannelle: "2 g", beurre: "10 g", zestecitron: "2 g" },
+      { nb: 3, patebrisee: "120 g", fromageblanc: "120 g", sucre: "60 g", oeufs: "1½", farineble: "24 g", cannelle: "3 g", beurre: "15 g", zestecitron: "3 g" },
+      { nb: 4, patebrisee: "160 g", fromageblanc: "160 g", sucre: "80 g", oeufs: "2", farineble: "32 g", cannelle: "4 g", beurre: "20 g", zestecitron: "4 g" },
+      { nb: 5, patebrisee: "200 g", fromageblanc: "200 g", sucre: "100 g", oeufs: "2½", farineble: "40 g", cannelle: "5 g", beurre: "25 g", zestecitron: "5 g" },
+      { nb: 6, patebrisee: "240 g", fromageblanc: "240 g", sucre: "120 g", oeufs: "3", farineble: "48 g", cannelle: "6 g", beurre: "30 g", zestecitron: "6 g" },
+      { nb: 7, patebrisee: "280 g", fromageblanc: "280 g", sucre: "140 g", oeufs: "3½", farineble: "56 g", cannelle: "7 g", beurre: "35 g", zestecitron: "7 g" },
+      { nb: 8, patebrisee: "320 g", fromageblanc: "320 g", sucre: "160 g", oeufs: "4", farineble: "64 g", cannelle: "8 g", beurre: "40 g", zestecitron: "8 g" },
+      { nb: 9, patebrisee: "360 g", fromageblanc: "360 g", sucre: "180 g", oeufs: "4½", farineble: "72 g", cannelle: "9 g", beurre: "45 g", zestecitron: "9 g" },
+      { nb: 10, patebrisee: "400 g", fromageblanc: "400 g", sucre: "200 g", oeufs: "5", farineble: "80 g", cannelle: "10 g", beurre: "50 g", zestecitron: "10 g" },
+      { nb: 11, patebrisee: "440 g", fromageblanc: "440 g", sucre: "220 g", oeufs: "5½", farineble: "88 g", cannelle: "11 g", beurre: "55 g", zestecitron: "11 g" },
+      { nb: 12, patebrisee: "480 g", fromageblanc: "480 g", sucre: "240 g", oeufs: "6", farineble: "96 g", cannelle: "12 g", beurre: "60 g", zestecitron: "12 g" },
+      { nb: 13, patebrisee: "520 g", fromageblanc: "520 g", sucre: "260 g", oeufs: "6½", farineble: "104 g", cannelle: "13 g", beurre: "65 g", zestecitron: "13 g" },
+      { nb: 14, patebrisee: "560 g", fromageblanc: "560 g", sucre: "280 g", oeufs: "7", farineble: "112 g", cannelle: "14 g", beurre: "70 g", zestecitron: "14 g" },
+      { nb: 15, patebrisee: "600 g", fromageblanc: "600 g", sucre: "300 g", oeufs: "7½", farineble: "120 g", cannelle: "15 g", beurre: "75 g", zestecitron: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer le four", detail: "Préchauffez le four à 200°C. Beurrez et farinez des petits moules à tartelette individuels ou un moule à muffins. La température élevée est clé pour obtenir une croûte légèrement caramélisée.", badge: null },
+      { icone: "🧈", titre: "Foncer les moules", detail: "Étalez la pâte brisée finement et découpez des cercles légèrement plus grands que vos moules. Foncez chaque moule en remontant bien les bords. Piquez le fond à la fourchette.", badge: null },
+      { icone: "🧀", titre: "Préparer la garniture", detail: "Dans un bol, battez le fromage blanc avec le sucre jusqu'à consistance lisse. Astuce : utilisez du fromage blanc bien égoutté pour éviter une garniture trop liquide.", badge: null },
+      { icone: "🥚", titre: "Incorporer les œufs", detail: "Ajoutez les œufs un par un en fouettant bien entre chaque ajout. Incorporez la farine tamisée, la cannelle et le zeste de citron. Mélangez jusqu'à obtenir une crème homogène.", badge: null },
+      { icone: "🫙", titre: "Remplir les moules", detail: "Versez la préparation dans les fonds de pâte jusqu'aux trois quarts. Ne remplissez pas trop car la garniture gonfle légèrement à la cuisson puis retombe à la sortie du four.", badge: null },
+      { icone: "🟡", titre: "Cuire au four", detail: "Enfournez pour 20 à 25 minutes jusqu'à ce que la surface soit bien dorée et légèrement bombée. La garniture doit être prise mais encore légèrement tremblotante au centre.", badge: null },
+      { icone: "❄️", titre: "Laisser refroidir", detail: "Laissez tiédir dans les moules avant de démouler. Saupoudrez de cannelle au moment de servir. Les queijadas se conservent 2 jours au frais et sont encore meilleures le lendemain.", badge: null }
+    ]
+  },
 });

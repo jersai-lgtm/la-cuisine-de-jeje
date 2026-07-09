@@ -29832,5 +29832,77 @@ Object.assign(recettes, {
       { icone: "🌽", titre: "Réunir", detail: "Ajouter maïs et haricots précuits.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Laisser réduire jusqu'à consistance de ragoût épais et servir.", badge: null }
     ]
-  }
+  },
+  carabineirosgrelhados: {
+    nom: "Carabineiros Grelhados",
+    cat: "plats", pays: "portugal",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🦐",
+    description: "Grosses crevettes rouges carabineiros grillées à la braise avec de l'ail, du persil et un filet de citron. Un grand classique des restaurants de fruits de mer portugais, d'une simplicité désarmante.",
+    tableauCarabineirosgrelhados: [
+      { nb: 1, gambas: "180 g", ail: "2", persil: "8 g", huileolive: "12 ml", citron: "½", grossel: "1 g", piment: "1 g", fleurdesel: "1 g" },
+      { nb: 2, gambas: "360 g", ail: "4", persil: "16 g", huileolive: "24 ml", citron: "1", grossel: "2 g", piment: "2 g", fleurdesel: "2 g" },
+      { nb: 3, gambas: "540 g", ail: "6", persil: "24 g", huileolive: "36 ml", citron: "1½", grossel: "3 g", piment: "3 g", fleurdesel: "3 g" },
+      { nb: 4, gambas: "720 g", ail: "8", persil: "32 g", huileolive: "48 ml", citron: "2", grossel: "4 g", piment: "4 g", fleurdesel: "4 g" },
+      { nb: 5, gambas: "900 g", ail: "10", persil: "40 g", huileolive: "60 ml", citron: "2½", grossel: "5 g", piment: "5 g", fleurdesel: "5 g" },
+      { nb: 6, gambas: "1080 g", ail: "12", persil: "48 g", huileolive: "72 ml", citron: "3", grossel: "6 g", piment: "6 g", fleurdesel: "6 g" },
+      { nb: 7, gambas: "1260 g", ail: "14", persil: "56 g", huileolive: "84 ml", citron: "3½", grossel: "7 g", piment: "7 g", fleurdesel: "7 g" },
+      { nb: 8, gambas: "1440 g", ail: "16", persil: "64 g", huileolive: "96 ml", citron: "4", grossel: "8 g", piment: "8 g", fleurdesel: "8 g" },
+      { nb: 9, gambas: "1620 g", ail: "18", persil: "72 g", huileolive: "108 ml", citron: "4½", grossel: "9 g", piment: "9 g", fleurdesel: "9 g" },
+      { nb: 10, gambas: "1800 g", ail: "20", persil: "80 g", huileolive: "120 ml", citron: "5", grossel: "10 g", piment: "10 g", fleurdesel: "10 g" },
+      { nb: 11, gambas: "1980 g", ail: "22", persil: "88 g", huileolive: "132 ml", citron: "5½", grossel: "11 g", piment: "11 g", fleurdesel: "11 g" },
+      { nb: 12, gambas: "2160 g", ail: "24", persil: "96 g", huileolive: "144 ml", citron: "6", grossel: "12 g", piment: "12 g", fleurdesel: "12 g" },
+      { nb: 13, gambas: "2340 g", ail: "26", persil: "104 g", huileolive: "156 ml", citron: "6½", grossel: "13 g", piment: "13 g", fleurdesel: "13 g" },
+      { nb: 14, gambas: "2520 g", ail: "28", persil: "112 g", huileolive: "168 ml", citron: "7", grossel: "14 g", piment: "14 g", fleurdesel: "14 g" },
+      { nb: 15, gambas: "2700 g", ail: "30", persil: "120 g", huileolive: "180 ml", citron: "7½", grossel: "15 g", piment: "15 g", fleurdesel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧄", titre: "Préparer la marinade", detail: "Hachez finement l'ail et le persil. Mélangez avec l'huile d'olive, une pincée de piment et le jus de citron. Laissez reposer 10 minutes pour que les saveurs se développent.", badge: null },
+      { icone: "🦐", titre: "Préparer les crevettes", detail: "Incisez les crevettes sur le dos sans les séparer pour faciliter la cuisson et permettre à la marinade de pénétrer. Salez légèrement. Astuce : laissez la carapace pour plus de saveur.", badge: null },
+      { icone: "🔥", titre: "Chauffer le gril", detail: "Faites chauffer un gril ou une plancha à feu vif jusqu'à ce qu'il soit très chaud. Huilez légèrement la surface pour éviter que les crevettes n'attachent.", badge: null },
+      { icone: "🍳", titre: "Griller les crevettes", detail: "Déposez les crevettes côté chair en premier, 2 à 3 minutes. Retournez et grillezla carapace 1 à 2 minutes. Les carabineiros doivent être bien rouges et légèrement caramélisés.", badge: null },
+      { icone: "🫒", titre: "Arroser de marinade", detail: "Pendant la cuisson, arrosez les crevettes de la marinade ail-persil à plusieurs reprises à l'aide d'un pinceau pour bien les enrober et créer une croûte parfumée.", badge: null },
+      { icone: "🍋", titre: "Dresser le plat", detail: "Disposez les crevettes sur un plat chaud. Parsemez de fleur de sel, de persil haché frais et d'un zeste de citron râpé. Servez avec des quartiers de citron et du pain grillé.", badge: null },
+      { icone: "🍷", titre: "Accompagner et servir", detail: "Servez immédiatement avec un vin blanc portugais frais type Vinho Verde. Le pain est indispensable pour saucer les jus de cuisson parfumés à l'ail.", badge: null }
+    ]
+  },
+  feijoadaportuguesa: {
+    nom: "Feijoada Portuguesa",
+    cat: "plats", pays: "portugal",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫘",
+    description: "Ragoût de haricots rouges mijotés avec du porc, du chorizo et des légumes, version portugaise de ce plat emblématique. Généreuse et réconfortante, servie avec du riz blanc et du chou.",
+    tableauFeijoadaportuguesa: [
+      { nb: 1, haricotsrouges: "120 g", chorizo: "40 g", porc: "80 g", tomates: "1", oignon: "½", ail: "2", huileolive: "8 ml", paprikafume: "2 g", laurier: "1 g", chouvert: "60 g", sel: "1 g" },
+      { nb: 2, haricotsrouges: "240 g", chorizo: "80 g", porc: "160 g", tomates: "2", oignon: "1", ail: "4", huileolive: "16 ml", paprikafume: "4 g", laurier: "2 g", chouvert: "120 g", sel: "2 g" },
+      { nb: 3, haricotsrouges: "360 g", chorizo: "120 g", porc: "240 g", tomates: "3", oignon: "1½", ail: "6", huileolive: "24 ml", paprikafume: "6 g", laurier: "3 g", chouvert: "180 g", sel: "3 g" },
+      { nb: 4, haricotsrouges: "480 g", chorizo: "160 g", porc: "320 g", tomates: "4", oignon: "2", ail: "8", huileolive: "32 ml", paprikafume: "8 g", laurier: "4 g", chouvert: "240 g", sel: "4 g" },
+      { nb: 5, haricotsrouges: "600 g", chorizo: "200 g", porc: "400 g", tomates: "5", oignon: "2½", ail: "10", huileolive: "40 ml", paprikafume: "10 g", laurier: "5 g", chouvert: "300 g", sel: "5 g" },
+      { nb: 6, haricotsrouges: "720 g", chorizo: "240 g", porc: "480 g", tomates: "6", oignon: "3", ail: "12", huileolive: "48 ml", paprikafume: "12 g", laurier: "6 g", chouvert: "360 g", sel: "6 g" },
+      { nb: 7, haricotsrouges: "840 g", chorizo: "280 g", porc: "560 g", tomates: "7", oignon: "3½", ail: "14", huileolive: "56 ml", paprikafume: "14 g", laurier: "7 g", chouvert: "420 g", sel: "7 g" },
+      { nb: 8, haricotsrouges: "960 g", chorizo: "320 g", porc: "640 g", tomates: "8", oignon: "4", ail: "16", huileolive: "64 ml", paprikafume: "16 g", laurier: "8 g", chouvert: "480 g", sel: "8 g" },
+      { nb: 9, haricotsrouges: "1080 g", chorizo: "360 g", porc: "720 g", tomates: "9", oignon: "4½", ail: "18", huileolive: "72 ml", paprikafume: "18 g", laurier: "9 g", chouvert: "540 g", sel: "9 g" },
+      { nb: 10, haricotsrouges: "1200 g", chorizo: "400 g", porc: "800 g", tomates: "10", oignon: "5", ail: "20", huileolive: "80 ml", paprikafume: "20 g", laurier: "10 g", chouvert: "600 g", sel: "10 g" },
+      { nb: 11, haricotsrouges: "1320 g", chorizo: "440 g", porc: "880 g", tomates: "11", oignon: "5½", ail: "22", huileolive: "88 ml", paprikafume: "22 g", laurier: "11 g", chouvert: "660 g", sel: "11 g" },
+      { nb: 12, haricotsrouges: "1440 g", chorizo: "480 g", porc: "960 g", tomates: "12", oignon: "6", ail: "24", huileolive: "96 ml", paprikafume: "24 g", laurier: "12 g", chouvert: "720 g", sel: "12 g" },
+      { nb: 13, haricotsrouges: "1560 g", chorizo: "520 g", porc: "1040 g", tomates: "13", oignon: "6½", ail: "26", huileolive: "104 ml", paprikafume: "26 g", laurier: "13 g", chouvert: "780 g", sel: "13 g" },
+      { nb: 14, haricotsrouges: "1680 g", chorizo: "560 g", porc: "1120 g", tomates: "14", oignon: "7", ail: "28", huileolive: "112 ml", paprikafume: "28 g", laurier: "14 g", chouvert: "840 g", sel: "14 g" },
+      { nb: 15, haricotsrouges: "1800 g", chorizo: "600 g", porc: "1200 g", tomates: "15", oignon: "7½", ail: "30", huileolive: "120 ml", paprikafume: "30 g", laurier: "15 g", chouvert: "900 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Tremper les haricots", detail: "Si vous utilisez des haricots secs, faites-les tremper dans l'eau froide la veille pendant 12 heures. Égouttez et rincez. Cette étape réduit le temps de cuisson et facilite la digestion.", badge: null },
+      { icone: "🧅", titre: "Faire revenir les aromates", detail: "Dans une cocotte, faites chauffer l'huile d'olive. Faites revenir l'oignon émincé 5 minutes jusqu'à translucide. Ajoutez l'ail haché et le paprika fumé, remuez 1 minute.", badge: null },
+      { icone: "🥩", titre: "Saisir les viandes", detail: "Ajoutez le porc découpé en morceaux et le chorizo en rondelles. Faites dorer sur toutes les faces à feu moyen-vif. Les sucs de cuisson apporteront de la profondeur à la sauce.", badge: null },
+      { icone: "🍅", titre: "Ajouter les tomates", detail: "Incorporez les tomates concassées, le laurier et les haricots égouttés. Couvrez d'eau à hauteur. Portez à ébullition puis réduisez à feu doux. Salez et poivrez.", badge: null },
+      { icone: "⏱️", titre: "Laisser mijoter", detail: "Laissez mijoter à couvert pendant 1 heure à 1h15 jusqu'à ce que les haricots soient très tendres. Vérifiez régulièrement le niveau d'eau et ajoutez si nécessaire.", badge: null },
+      { icone: "🥬", titre: "Ajouter le chou", detail: "10 minutes avant la fin, ajoutez le chou vert coupé en lanières. Mélangez et laissez cuire à découvert pour que la sauce réduise et se concentre.", badge: null },
+      { icone: "🍽️", titre: "Rectifier et servir", detail: "Rectifiez l'assaisonnement. Servez la feijoada bien chaude avec du riz blanc et des tranches de pain. Astuce : ce plat est encore meilleur réchauffé le lendemain.", badge: null }
+    ]
+  },
 });
