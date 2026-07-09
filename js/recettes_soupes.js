@@ -3478,4 +3478,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez bien frais, parsemé d'aneth et de noix, avec un filet d'huile d'olive. Parfait en entrée par forte chaleur.", badge: null }
     ]
   },
+  kishk: {
+    dateAjout: "2026-07-10T08:15:00",
+    nom: "Soupe Kishk",
+    cat: "soupes", pays: "liban",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    description: "Soupe kishk — le velouté fermenté libanais : une soupe crémeuse à base de kishk (boulgour fermenté au yaourt), relevée d'oignons dorés et d'ail. Réconfortante et acidulée, c'est le petit-déjeuner d'hiver des montagnes libanaises.",
+    tableauKishk: [
+      { nb: 1, boulgour: "30 g", yaourt: "80 g", oignon: "½", ail: "1", beurre: "8 g", sel: "2 g" },
+      { nb: 2, boulgour: "60 g", yaourt: "160 g", oignon: "1", ail: "2", beurre: "16 g", sel: "4 g" },
+      { nb: 3, boulgour: "90 g", yaourt: "240 g", oignon: "1½", ail: "3", beurre: "24 g", sel: "6 g" },
+      { nb: 4, boulgour: "120 g", yaourt: "320 g", oignon: "2", ail: "4", beurre: "32 g", sel: "8 g" },
+      { nb: 5, boulgour: "150 g", yaourt: "400 g", oignon: "2½", ail: "5", beurre: "40 g", sel: "10 g" },
+      { nb: 6, boulgour: "180 g", yaourt: "480 g", oignon: "3", ail: "6", beurre: "48 g", sel: "12 g" },
+      { nb: 7, boulgour: "210 g", yaourt: "560 g", oignon: "3½", ail: "7", beurre: "56 g", sel: "14 g" },
+      { nb: 8, boulgour: "240 g", yaourt: "640 g", oignon: "4", ail: "8", beurre: "64 g", sel: "16 g" },
+      { nb: 9, boulgour: "270 g", yaourt: "720 g", oignon: "4½", ail: "9", beurre: "72 g", sel: "18 g" },
+      { nb: 10, boulgour: "300 g", yaourt: "800 g", oignon: "5", ail: "10", beurre: "80 g", sel: "20 g" },
+      { nb: 11, boulgour: "330 g", yaourt: "880 g", oignon: "5½", ail: "11", beurre: "88 g", sel: "22 g" },
+      { nb: 12, boulgour: "360 g", yaourt: "960 g", oignon: "6", ail: "12", beurre: "96 g", sel: "24 g" },
+      { nb: 13, boulgour: "390 g", yaourt: "1040 g", oignon: "6½", ail: "13", beurre: "104 g", sel: "26 g" },
+      { nb: 14, boulgour: "420 g", yaourt: "1120 g", oignon: "7", ail: "14", beurre: "112 g", sel: "28 g" },
+      { nb: 15, boulgour: "450 g", yaourt: "1200 g", oignon: "7½", ail: "15", beurre: "120 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Oignons dorés", detail: "Faites dorer l'oignon finement émincé dans le beurre jusqu'à ce qu'il soit bien caramélisé : c'est la base parfumée de la soupe.", badge: null },
+      { icone: "🧄", titre: "L'ail", detail: "Ajoutez l'ail écrasé et laissez-le blondir quelques secondes, sans le brûler.", badge: null },
+      { icone: "🌾", titre: "Le boulgour", detail: "Ajoutez le boulgour fin (qui remplace le kishk fermenté) et faites-le revenir 1 min pour l'enrober.", badge: null },
+      { icone: "🥛", titre: "Le yaourt", detail: "Délayez le yaourt avec de l'eau froide pour éviter qu'il ne tranche, puis versez-le dans la casserole en remuant.", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Portez doucement à frémissement en remuant constamment (le yaourt ne doit pas bouillir fort), et laissez cuire 15 min jusqu'à ce que le boulgour soit tendre et la soupe crémeuse.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Salez et poivrez. La soupe doit être onctueuse et légèrement acidulée. Ajoutez de l'eau si elle épaissit trop.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien chaude, garnie d'un peu d'oignon doré réservé et d'un filet d'huile. Traditionnellement au petit-déjeuner, avec du pain.", badge: null }
+    ]
+  },
 });

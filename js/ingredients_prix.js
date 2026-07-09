@@ -1107,6 +1107,8 @@ function parserQuantiteNutri(texte) {
   if (s === "—" || s === "" || s.toLowerCase().includes("facultatif") || s === "0") return null;
   
   s = s.replace(/^[~≈]/, "").trim();
+  // Fractions MIXTES « 1½ » → 1.5 (sinon "1"+"0.5" = "10.5" : bug historique du piège 1½)
+  s = s.replace(/(\d+)\s*([½¼¾⅓⅔⅛⅜⅝⅞⅙⅚])/g, (mm, i, f) => (parseInt(i, 10) + { "½": .5, "¼": .25, "¾": .75, "⅓": .333, "⅔": .667, "⅛": .125, "⅜": .375, "⅝": .625, "⅞": .875, "⅙": .167, "⅚": .833 }[f]));
   s = s.replace(/½/g, "0.5").replace(/¼/g, "0.25").replace(/¾/g, "0.75")
        .replace(/⅓/g, "0.333").replace(/⅔/g, "0.667")
        .replace(/⅛/g, "0.125").replace(/⅜/g, "0.375").replace(/⅝/g, "0.625").replace(/⅞/g, "0.875")
@@ -1330,7 +1332,9 @@ function parserQuantite(texte) {
   
   // Enlever préfixe ~, =, etc.
   s = s.replace(/^[~≈]/, "").trim();
-  
+
+  // Fractions MIXTES « 1½ » → 1.5 (sinon "1"+"0.5" = "10.5" : bug historique du piège 1½)
+  s = s.replace(/(\d+)\s*([½¼¾⅓⅔⅛⅜⅝⅞⅙⅚])/g, (mm, i, f) => (parseInt(i, 10) + { "½": .5, "¼": .25, "¾": .75, "⅓": .333, "⅔": .667, "⅛": .125, "⅜": .375, "⅝": .625, "⅞": .875, "⅙": .167, "⅚": .833 }[f]));
   // Remplacer fractions Unicode
   s = s.replace(/½/g, "0.5")
        .replace(/¼/g, "0.25")

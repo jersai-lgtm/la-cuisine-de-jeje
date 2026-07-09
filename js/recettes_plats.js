@@ -31498,4 +31498,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Égouttez les koldūnai, nappez-les de beurre et d'oignons dorés, et servez avec une cuillère de crème aigre. Réconfort balte garanti.", badge: null }
     ]
   },
+  mechoui: {
+    dateAjout: "2026-07-10T08:11:00",
+    nom: "Mechoui d'Agneau",
+    cat: "plats", pays: "maroc",
+    base: 4,
+    temps: "3h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐑",
+    description: "Mechoui — l'agneau rôti à la marocaine : une épaule d'agneau longuement rôtie, badigeonnée de beurre aux épices (cumin, paprika, ail), jusqu'à ce que la viande soit fondante et se détache à la main. Le plat des fêtes, à manger avec du cumin et du sel.",
+    tableauMechoui: [
+      { nb: 1, agneau: "150 g", ail: "2", cumin: "3 g", paprika: "2 g", beurre: "12 g", coriandre: "4 g", sel: "3 g" },
+      { nb: 2, agneau: "300 g", ail: "4", cumin: "6 g", paprika: "4 g", beurre: "24 g", coriandre: "8 g", sel: "6 g" },
+      { nb: 3, agneau: "450 g", ail: "6", cumin: "9 g", paprika: "6 g", beurre: "36 g", coriandre: "12 g", sel: "9 g" },
+      { nb: 4, agneau: "600 g", ail: "8", cumin: "12 g", paprika: "8 g", beurre: "48 g", coriandre: "16 g", sel: "12 g" },
+      { nb: 5, agneau: "750 g", ail: "10", cumin: "15 g", paprika: "10 g", beurre: "60 g", coriandre: "20 g", sel: "15 g" },
+      { nb: 6, agneau: "900 g", ail: "12", cumin: "18 g", paprika: "12 g", beurre: "72 g", coriandre: "24 g", sel: "18 g" },
+      { nb: 7, agneau: "1050 g", ail: "14", cumin: "21 g", paprika: "14 g", beurre: "84 g", coriandre: "28 g", sel: "21 g" },
+      { nb: 8, agneau: "1200 g", ail: "16", cumin: "24 g", paprika: "16 g", beurre: "96 g", coriandre: "32 g", sel: "24 g" },
+      { nb: 9, agneau: "1350 g", ail: "18", cumin: "27 g", paprika: "18 g", beurre: "108 g", coriandre: "36 g", sel: "27 g" },
+      { nb: 10, agneau: "1500 g", ail: "20", cumin: "30 g", paprika: "20 g", beurre: "120 g", coriandre: "40 g", sel: "30 g" },
+      { nb: 11, agneau: "1650 g", ail: "22", cumin: "33 g", paprika: "22 g", beurre: "132 g", coriandre: "44 g", sel: "33 g" },
+      { nb: 12, agneau: "1800 g", ail: "24", cumin: "36 g", paprika: "24 g", beurre: "144 g", coriandre: "48 g", sel: "36 g" },
+      { nb: 13, agneau: "1950 g", ail: "26", cumin: "39 g", paprika: "26 g", beurre: "156 g", coriandre: "52 g", sel: "39 g" },
+      { nb: 14, agneau: "2100 g", ail: "28", cumin: "42 g", paprika: "28 g", beurre: "168 g", coriandre: "56 g", sel: "42 g" },
+      { nb: 15, agneau: "2250 g", ail: "30", cumin: "45 g", paprika: "30 g", beurre: "180 g", coriandre: "60 g", sel: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧄", titre: "La charmoula", detail: "Mélangez le beurre mou (ou du smen) avec l'ail écrasé, le cumin, le paprika, la coriandre hachée et le sel : c'est la pâte parfumée qui enrobe l'agneau.", badge: null },
+      { icone: "🐑", titre: "Badigeonner", detail: "Incisez l'épaule d'agneau à plusieurs endroits et massez-la généreusement avec la pâte d'épices, en la faisant pénétrer dans les entailles.", badge: null },
+      { icone: "⏳", titre: "Mariner", detail: "Laissez mariner au frais au moins 2 h (idéalement une nuit) pour que les épices imprègnent la viande.", badge: null },
+      { icone: "🔥", titre: "Rôtir doucement", detail: "Enfournez à 150°C, couvert, et laissez rôtir 2 h 30 à 3 h, en arrosant régulièrement du jus, jusqu'à ce que la viande soit ultra-fondante.", badge: null },
+      { icone: "🌡️", titre: "Croûte finale", detail: "Découvrez et montez à 220°C 15 min pour dorer et croustiller l'extérieur.", badge: null },
+      { icone: "😴", titre: "Reposer", detail: "Laissez reposer 10 min : la viande doit se détacher toute seule à la fourchette (ou à la main, à la marocaine).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez l'agneau effiloché avec de petits bols de cumin et de sel pour tremper chaque bouchée, du pain et des légumes. Le plat de fête convivial.", badge: null }
+    ]
+  },
 });

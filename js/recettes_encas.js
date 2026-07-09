@@ -3884,4 +3884,41 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Servir froid", detail: "Laissez refroidir dans la casserole. Servez froids ou tièdes, arrosés de citron, avec du yaourt. Meilleurs le lendemain.", badge: null }
     ]
   },
+  moutabal: {
+    dateAjout: "2026-07-10T08:14:00",
+    nom: "Moutabal",
+    cat: "encas", pays: "liban",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍆",
+    description: "Moutabal — le caviar d'aubergine libanais : une purée fumée d'aubergines grillées au tahini, à l'ail et au citron, plus crémeuse et relevée que le baba ganoush. Servi en mezze, arrosé d'huile d'olive, avec du pain pita.",
+    tableauMoutabal: [
+      { nb: 1, aubergine: "150 g", tahini: "15 g", ail: "1", citron: "½", yaourt: "15 g", huileolive: "8 ml", cumin: "0.5 g", sel: "2 g" },
+      { nb: 2, aubergine: "300 g", tahini: "30 g", ail: "2", citron: "1", yaourt: "30 g", huileolive: "16 ml", cumin: "1 g", sel: "4 g" },
+      { nb: 3, aubergine: "450 g", tahini: "45 g", ail: "3", citron: "1½", yaourt: "45 g", huileolive: "24 ml", cumin: "1.5 g", sel: "6 g" },
+      { nb: 4, aubergine: "600 g", tahini: "60 g", ail: "4", citron: "2", yaourt: "60 g", huileolive: "32 ml", cumin: "2 g", sel: "8 g" },
+      { nb: 5, aubergine: "750 g", tahini: "75 g", ail: "5", citron: "2½", yaourt: "75 g", huileolive: "40 ml", cumin: "2.5 g", sel: "10 g" },
+      { nb: 6, aubergine: "900 g", tahini: "90 g", ail: "6", citron: "3", yaourt: "90 g", huileolive: "48 ml", cumin: "3 g", sel: "12 g" },
+      { nb: 7, aubergine: "1050 g", tahini: "105 g", ail: "7", citron: "3½", yaourt: "105 g", huileolive: "56 ml", cumin: "3.5 g", sel: "14 g" },
+      { nb: 8, aubergine: "1200 g", tahini: "120 g", ail: "8", citron: "4", yaourt: "120 g", huileolive: "64 ml", cumin: "4 g", sel: "16 g" },
+      { nb: 9, aubergine: "1350 g", tahini: "135 g", ail: "9", citron: "4½", yaourt: "135 g", huileolive: "72 ml", cumin: "4.5 g", sel: "18 g" },
+      { nb: 10, aubergine: "1500 g", tahini: "150 g", ail: "10", citron: "5", yaourt: "150 g", huileolive: "80 ml", cumin: "5 g", sel: "20 g" },
+      { nb: 11, aubergine: "1650 g", tahini: "165 g", ail: "11", citron: "5½", yaourt: "165 g", huileolive: "88 ml", cumin: "5.5 g", sel: "22 g" },
+      { nb: 12, aubergine: "1800 g", tahini: "180 g", ail: "12", citron: "6", yaourt: "180 g", huileolive: "96 ml", cumin: "6 g", sel: "24 g" },
+      { nb: 13, aubergine: "1950 g", tahini: "195 g", ail: "13", citron: "6½", yaourt: "195 g", huileolive: "104 ml", cumin: "6.5 g", sel: "26 g" },
+      { nb: 14, aubergine: "2100 g", tahini: "210 g", ail: "14", citron: "7", yaourt: "210 g", huileolive: "112 ml", cumin: "7 g", sel: "28 g" },
+      { nb: 15, aubergine: "2250 g", tahini: "225 g", ail: "15", citron: "7½", yaourt: "225 g", huileolive: "120 ml", cumin: "7.5 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Griller les aubergines", detail: "Faites griller les aubergines entières à la flamme ou au four très chaud jusqu'à ce que la peau soit noire et la chair fondante. C'est le grillage qui donne le goût fumé caractéristique.", badge: null },
+      { icone: "🥄", titre: "Récupérer la chair", detail: "Laissez tiédir, fendez les aubergines et récupérez la chair fondante à la cuillère. Laissez-la égoutter quelques minutes.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Écrasez la chair à la fourchette (ou mixez brièvement) avec le tahini, l'ail écrasé et le jus de citron.", badge: null },
+      { icone: "🥛", titre: "Crémeux", detail: "Incorporez le yaourt et un peu de cumin : ils apportent l'onctuosité et la fraîcheur du moutabal (versus le baba ganoush).", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Salez et rectifiez l'acidité au citron. La texture doit être crémeuse mais garder un peu de mâche.", badge: null },
+      { icone: "🫒", titre: "Dresser", detail: "Étalez le moutabal dans une assiette creuse en formant un puits, et arrosez généreusement d'huile d'olive.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez de persil, de grenade ou de graines, et servez frais avec du pain pita chaud. Un mezze fumé et crémeux.", badge: null }
+    ]
+  },
 });

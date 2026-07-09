@@ -59878,5 +59878,345 @@ window.RECETTES_EN = {
     "detail": "Dust generously with icing sugar and cinnamon, and serve warm. The sweet breakfast of Thessaloniki."
    }
   ]
+ },
+ "taktouka": {
+  "nom": "Taktouka",
+  "description": "Taktouka — the Moroccan cooked salad: a soft stew of grilled peppers and tomatoes, scented with garlic, cumin and paprika. Served warm or cold as a mezze, it accompanies bread or tagines, sunny and fragrant.",
+  "etapes": [
+   {
+    "titre": "Grill the peppers",
+    "detail": "Grill the peppers (oven or flame) until the skin blackens and blisters. Seal them in a bag for 10 minutes, then peel and cut into strips."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Peel and crush the tomatoes (or use crushed tomatoes) for the base of the stew."
+   },
+   {
+    "titre": "The base",
+    "detail": "Gently sauté the crushed garlic in the olive oil, without colouring, then add the cumin and paprika."
+   },
+   {
+    "titre": "Stew",
+    "detail": "Add the tomatoes and peppers, season, and simmer over low heat for 20 minutes until the water evaporates and the stew thickens."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Roughly mash with a fork for a soft, homogeneous texture."
+   },
+   {
+    "titre": "Parsley",
+    "detail": "Add the chopped parsley and a drizzle of olive oil off the heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold, as a mezze, with Moroccan bread for dipping. Best after a few hours of resting."
+   }
+  ]
+ },
+ "mechoui": {
+  "nom": "Lamb Mechoui",
+  "description": "Mechoui — Moroccan roast lamb: a shoulder of lamb slowly roasted, basted with spiced butter (cumin, paprika, garlic), until the meat is meltingly tender and pulls apart by hand. The festive dish, eaten with cumin and salt.",
+  "etapes": [
+   {
+    "titre": "The charmoula",
+    "detail": "Mix the soft butter (or smen) with crushed garlic, cumin, paprika, chopped coriander and salt: the fragrant paste that coats the lamb."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Score the lamb shoulder in several places and massage it generously with the spice paste, working it into the cuts."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Marinate in the fridge for at least 2 hours (ideally overnight) so the spices penetrate the meat."
+   },
+   {
+    "titre": "Roast slowly",
+    "detail": "Bake at 150°C, covered, and roast for 2 hours 30 to 3 hours, basting regularly with the juices, until the meat is ultra-tender."
+   },
+   {
+    "titre": "Final crust",
+    "detail": "Uncover and raise to 220°C for 15 minutes to brown and crisp the outside."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 minutes: the meat should fall apart on its own with a fork (or by hand, Moroccan-style)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the pulled lamb with little bowls of cumin and salt to dip each bite, with bread and vegetables. The convivial festive dish."
+   }
+  ]
+ },
+ "kesra": {
+  "nom": "Kesra",
+  "description": "Kesra — the Moroccan flatbread: a round semolina-and-flour loaf, lightly leavened, golden and sprinkled with sesame. Baked until soft inside and crisp outside, it's the daily bread accompanying every dish.",
+  "etapes": [
+   {
+    "titre": "Mix",
+    "detail": "Mix the flour, fine semolina, salt and yeast. Add warm water little by little to form a soft dough."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead for 8 to 10 minutes until the dough is smooth and elastic."
+   },
+   {
+    "titre": "Form the loaves",
+    "detail": "Divide the dough and shape balls, then flatten them into round loaves about 1.5 cm thick on a floured surface."
+   },
+   {
+    "titre": "Sesame",
+    "detail": "Scatter the top with sesame seeds (and nigella), pressing lightly to help them stick. Prick the surface with a fork."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover with a cloth and let rise for 45 minutes to 1 hour in a warm place."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 220°C for 15 to 20 minutes, until golden and it sounds hollow when tapped."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool on a rack. Serve the kesra cut into wedges, to accompany a tagine, a soup or a cooked salad."
+   }
+  ]
+ },
+ "harcha": {
+  "nom": "Harcha",
+  "description": "Harcha — the Moroccan semolina griddle bread: a small round semolina cake, crisp outside and shortbread-like inside, cooked in a pan. Served warm at breakfast or teatime, split and filled with honey, butter or fresh cheese.",
+  "etapes": [
+   {
+    "titre": "Rub in",
+    "detail": "Mix the (medium) semolina, salt, yeast and soft butter with your fingertips, until the texture is sandy (like a crumble)."
+   },
+   {
+    "titre": "Hydrate",
+    "detail": "Add the warm milk little by little and mix just enough to form a dough that holds, without overworking it."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 minutes: the semolina absorbs the liquid and swells."
+   },
+   {
+    "titre": "Form",
+    "detail": "Shape round cakes about 1 cm thick, and coat them in a little dry semolina for crispness."
+   },
+   {
+    "titre": "Cook in a pan",
+    "detail": "Cook dry (or barely greased) in a pan over low heat for 5 to 6 minutes per side, until golden and crisp."
+   },
+   {
+    "titre": "Check",
+    "detail": "The harcha should be golden outside, sandy and cooked inside (it sounds hollow). Don't raise the heat too high."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, split in two and filled with honey, jam, butter or fresh cheese. The comforting Moroccan teatime."
+   }
+  ]
+ },
+ "moutabal": {
+  "nom": "Moutabal",
+  "description": "Moutabal — the Lebanese eggplant dip: a smoky purée of grilled eggplant with tahini, garlic and lemon, creamier and tangier than baba ganoush. Served as a mezze, drizzled with olive oil, with pita bread.",
+  "etapes": [
+   {
+    "titre": "Grill the eggplant",
+    "detail": "Grill the whole eggplants over a flame or in a very hot oven until the skin is black and the flesh soft. The charring gives the characteristic smoky taste."
+   },
+   {
+    "titre": "Scoop the flesh",
+    "detail": "Let cool, split the eggplants and scoop out the soft flesh with a spoon. Let it drain for a few minutes."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Mash the flesh with a fork (or blend briefly) with the tahini, crushed garlic and lemon juice."
+   },
+   {
+    "titre": "Creamy",
+    "detail": "Stir in the yogurt and a little cumin: they bring the creaminess and freshness of moutabal (versus baba ganoush)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and adjust the lemon acidity. The texture should be creamy but keep a little bite."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spread the moutabal in a shallow dish, forming a well, and drizzle generously with olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with parsley, pomegranate or seeds, and serve cool with warm pita bread. A smoky, creamy mezze."
+   }
+  ]
+ },
+ "kishk": {
+  "nom": "Kishk Soup",
+  "description": "Kishk soup — the Lebanese fermented velouté: a creamy soup based on kishk (bulgur fermented with yogurt), lifted with golden onions and garlic. Comforting and tangy, it's the winter breakfast of the Lebanese mountains.",
+  "etapes": [
+   {
+    "titre": "Golden onions",
+    "detail": "Brown the finely sliced onion in the butter until well caramelised: the fragrant base of the soup."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Add the crushed garlic and let it turn golden for a few seconds, without burning."
+   },
+   {
+    "titre": "The bulgur",
+    "detail": "Add the fine bulgur (which replaces the fermented kishk) and sauté it for 1 minute to coat."
+   },
+   {
+    "titre": "The yogurt",
+    "detail": "Loosen the yogurt with cold water to stop it splitting, then pour it into the pot, stirring."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Bring gently to a simmer, stirring constantly (the yogurt must not boil hard), and cook 15 minutes until the bulgur is tender and the soup creamy."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper. The soup should be smooth and slightly tangy. Add water if it thickens too much."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, topped with a little reserved golden onion and a drizzle of oil. Traditionally at breakfast, with bread."
+   }
+  ]
+ },
+ "sujuk": {
+  "nom": "Sujuk with Eggs",
+  "description": "Sujuk with eggs — the spiced Levantine breakfast: slices of highly spiced dried sausage (sujuk) pan-fried until they release their fragrant fat, then bound with eggs. Served piping hot with pita bread, a guaranteed wake-up call.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Cut the sujuk (or chorizo or a spicy dried sausage) into thin rounds."
+   },
+   {
+    "titre": "Pan-fry",
+    "detail": "Sauté the rounds in a drizzle of oil over medium heat, until golden and releasing their red, fragrant fat."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the crushed tomato (optional) and chilli, and let reduce 2 minutes to concentrate the flavours."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Lightly beat the eggs and pour them into the pan, over the hot sujuk."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Stir gently, like scrambled eggs, until the eggs are just set but still creamy, coated in the spiced fat."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Salt lightly (the sujuk is already salty) and pepper. The dish should be nicely red and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, straight from the pan, with warm pita bread to mop up. The hearty Levantine breakfast."
+   }
+  ]
+ },
+ "shanklish": {
+  "nom": "Shanklish",
+  "description": "Shanklish — the Lebanese za'atar cheese salad: a matured cheese crumbled, rolled in za'atar, mixed with tomatoes, onion and olive oil. Sharp, herby and rustic, this mountain mezze is enjoyed with bread and arak.",
+  "etapes": [
+   {
+    "titre": "The cheese",
+    "detail": "Crumble the matured cheese (traditionally shanklish, or a well-dried feta) coarsely into a bowl."
+   },
+   {
+    "titre": "The za'atar",
+    "detail": "Add the za'atar (a blend of thyme, sumac and sesame) and mix: it coats the cheese and gives its characteristic herby aroma."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cut the tomatoes and onion into very small dice and add them to the cheese."
+   },
+   {
+    "titre": "Season",
+    "detail": "Drizzle with olive oil, add the chopped parsley, and mix gently. Salt lightly (the cheese is salty)."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 minutes at room temperature so the flavours mingle."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste: the shanklish should be sharp, herby and creamy, with the crunch of the vegetables."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve as a mezze, with warm pita bread to scoop, a drizzle of olive oil and a few olives. Rustic and tasty."
+   }
+  ]
+ },
+ "sahlab": {
+  "nom": "Sahlab",
+  "description": "Sahlab — the warm milk cream of the Levant: a smooth drink-dessert of thickened milk, scented with orange blossom and cinnamon, topped with pistachios. Comforting and velvety, it warms winter evenings across the Middle East.",
+  "etapes": [
+   {
+    "titre": "Dissolve",
+    "detail": "Dissolve the starch (or sahlab powder) in a little cold milk, whisking to avoid lumps."
+   },
+   {
+    "titre": "Heat",
+    "detail": "Pour the rest of the milk into a pan with the sugar and bring gently to a simmer."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Add the starch mixture while whisking constantly, and cook over low heat for 3 to 5 minutes: the sahlab thickens and turns velvety."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Off the heat, flavour with orange blossom water (or vanilla): the signature aroma of sahlab."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the hot sahlab into cups or bowls, at the consistency of a thick drinking cream."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Scatter generously with cinnamon and crushed pistachios (and grated coconut, to taste)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, by the spoon or to drink. A comforting sweet, perfect to end a meal or on a cold day."
+   }
+  ]
+ },
+ "barazek": {
+  "nom": "Barazek",
+  "description": "Barazek — Syrian sesame and pistachio biscuits: thin crisp biscuits, coated in toasted sesame seeds on one side and pistachios on the other, lightly sweetened with honey. The emblematic sweet of Damascus, to enjoy with tea.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Beat the soft butter with the sugar, then add the egg and a little honey. Work in the flour into a sandy, soft dough. Let rest 20 minutes."
+   },
+   {
+    "titre": "The sesame",
+    "detail": "Lightly toast the sesame seeds dry, then mix them with a little honey and water so they stick: the crunchy coating."
+   },
+   {
+    "titre": "The pistachios",
+    "detail": "Coarsely chop the pistachios and place them on a separate plate."
+   },
+   {
+    "titre": "Form",
+    "detail": "Take small balls of dough and flatten them into thin discs."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Press one side of each disc into the pistachios, and the other side into the honey sesame: barazek is pistachio-golden on one side, sesame on the other."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Arrange the biscuits sesame side up on a tray and bake at 180°C for 12 to 15 minutes, until the sesame is golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool completely: the barazek harden and turn crisp. Serve with tea or coffee. They keep for 2 weeks."
+   }
+  ]
  }
 };

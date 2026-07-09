@@ -1463,4 +1463,78 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Enfournez à 200°C 18 à 20 min, jusqu'à ce que les simit soient dorés, croustillants dehors et moelleux dedans. Se dégustent tièdes, nature ou avec du fromage.", badge: null }
     ]
   },
+  kesra: {
+    dateAjout: "2026-07-10T08:12:00",
+    nom: "Kesra",
+    cat: "boulangerie", pays: "maroc",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Kesra — le pain plat marocain : une galette ronde à la semoule et à la farine, légèrement levée, dorée et parsemée de sésame. Cuite jusqu'à être moelleuse dedans et croustillante dehors, c'est le pain quotidien qui accompagne tous les plats.",
+    tableauKesra: [
+      { nb: 1, farine: "55 g", semoule: "15 g", levure: "2 g", sesame: "4 g", sel: "2 g" },
+      { nb: 2, farine: "110 g", semoule: "30 g", levure: "4 g", sesame: "8 g", sel: "4 g" },
+      { nb: 3, farine: "165 g", semoule: "45 g", levure: "6 g", sesame: "12 g", sel: "6 g" },
+      { nb: 4, farine: "220 g", semoule: "60 g", levure: "8 g", sesame: "16 g", sel: "8 g" },
+      { nb: 5, farine: "275 g", semoule: "75 g", levure: "10 g", sesame: "20 g", sel: "10 g" },
+      { nb: 6, farine: "330 g", semoule: "90 g", levure: "12 g", sesame: "24 g", sel: "12 g" },
+      { nb: 7, farine: "385 g", semoule: "105 g", levure: "14 g", sesame: "28 g", sel: "14 g" },
+      { nb: 8, farine: "440 g", semoule: "120 g", levure: "16 g", sesame: "32 g", sel: "16 g" },
+      { nb: 9, farine: "495 g", semoule: "135 g", levure: "18 g", sesame: "36 g", sel: "18 g" },
+      { nb: 10, farine: "550 g", semoule: "150 g", levure: "20 g", sesame: "40 g", sel: "20 g" },
+      { nb: 11, farine: "605 g", semoule: "165 g", levure: "22 g", sesame: "44 g", sel: "22 g" },
+      { nb: 12, farine: "660 g", semoule: "180 g", levure: "24 g", sesame: "48 g", sel: "24 g" },
+      { nb: 13, farine: "715 g", semoule: "195 g", levure: "26 g", sesame: "52 g", sel: "26 g" },
+      { nb: 14, farine: "770 g", semoule: "210 g", levure: "28 g", sesame: "56 g", sel: "28 g" },
+      { nb: 15, farine: "825 g", semoule: "225 g", levure: "30 g", sesame: "60 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Mélanger", detail: "Mélangez la farine, la semoule fine, le sel et la levure. Ajoutez de l'eau tiède petit à petit pour former une pâte souple.", badge: null },
+      { icone: "👐", titre: "Pétrir", detail: "Pétrissez 8 à 10 min jusqu'à ce que la pâte soit lisse et élastique.", badge: null },
+      { icone: "⭕", titre: "Former les galettes", detail: "Divisez la pâte et façonnez des boules, puis aplatissez-les en galettes rondes d'environ 1,5 cm d'épaisseur sur un plan fariné.", badge: null },
+      { icone: "🌱", titre: "Sésame", detail: "Parsemez le dessus de graines de sésame (et de nigelle) en appuyant légèrement pour les faire adhérer. Piquez la surface à la fourchette.", badge: null },
+      { icone: "⏳", titre: "Repos", detail: "Couvrez d'un linge et laissez lever 45 min à 1 h dans un endroit tiède.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 220°C 15 à 20 min, jusqu'à ce que la kesra soit dorée et sonne creux quand on la tapote.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir sur une grille. Servez la kesra coupée en quartiers, pour accompagner un tajine, une soupe ou une salade cuite.", badge: null }
+    ]
+  },
+  harcha: {
+    dateAjout: "2026-07-10T08:13:00",
+    nom: "Harcha",
+    cat: "boulangerie", pays: "maroc",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍞",
+    description: "Harcha — la galette de semoule marocaine : un petit pain rond à la semoule, croustillant dehors et sablé dedans, cuit à la poêle. Servi tiède au petit-déjeuner ou au goûter, fendu et garni de miel, de beurre ou de fromage frais.",
+    tableauHarcha: [
+      { nb: 1, semoule: "50 g", beurre: "12 g", lait: "20 ml", levure: "1 g", sel: "2 g" },
+      { nb: 2, semoule: "100 g", beurre: "24 g", lait: "40 ml", levure: "2 g", sel: "4 g" },
+      { nb: 3, semoule: "150 g", beurre: "36 g", lait: "60 ml", levure: "3 g", sel: "6 g" },
+      { nb: 4, semoule: "200 g", beurre: "48 g", lait: "80 ml", levure: "4 g", sel: "8 g" },
+      { nb: 5, semoule: "250 g", beurre: "60 g", lait: "100 ml", levure: "5 g", sel: "10 g" },
+      { nb: 6, semoule: "300 g", beurre: "72 g", lait: "120 ml", levure: "6 g", sel: "12 g" },
+      { nb: 7, semoule: "350 g", beurre: "84 g", lait: "140 ml", levure: "7 g", sel: "14 g" },
+      { nb: 8, semoule: "400 g", beurre: "96 g", lait: "160 ml", levure: "8 g", sel: "16 g" },
+      { nb: 9, semoule: "450 g", beurre: "108 g", lait: "180 ml", levure: "9 g", sel: "18 g" },
+      { nb: 10, semoule: "500 g", beurre: "120 g", lait: "200 ml", levure: "10 g", sel: "20 g" },
+      { nb: 11, semoule: "550 g", beurre: "132 g", lait: "220 ml", levure: "11 g", sel: "22 g" },
+      { nb: 12, semoule: "600 g", beurre: "144 g", lait: "240 ml", levure: "12 g", sel: "24 g" },
+      { nb: 13, semoule: "650 g", beurre: "156 g", lait: "260 ml", levure: "13 g", sel: "26 g" },
+      { nb: 14, semoule: "700 g", beurre: "168 g", lait: "280 ml", levure: "14 g", sel: "28 g" },
+      { nb: 15, semoule: "750 g", beurre: "180 g", lait: "300 ml", levure: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Sabler", detail: "Mélangez la semoule (moyenne), le sel, la levure et le beurre mou du bout des doigts, jusqu'à obtenir une texture sableuse (comme un crumble).", badge: null },
+      { icone: "🥛", titre: "Hydrater", detail: "Ajoutez le lait tiède petit à petit et mélangez juste assez pour former une pâte qui se tient, sans trop la travailler.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Laissez reposer 10 min : la semoule absorbe le liquide et gonfle.", badge: null },
+      { icone: "⭕", titre: "Former", detail: "Façonnez des galettes rondes d'environ 1 cm d'épaisseur, et enrobez-les d'un peu de semoule sèche pour le croustillant.", badge: null },
+      { icone: "🍳", titre: "Cuire à la poêle", detail: "Faites cuire à sec (ou à peine graissé) dans une poêle à feu doux 5 à 6 min par face, jusqu'à ce qu'elles soient dorées et croustillantes.", badge: null },
+      { icone: "🔎", titre: "Vérifier", detail: "La harcha doit être dorée dehors, sablée et cuite dedans (elle sonne creux). Ne montez pas trop le feu.", badge: null },
+      { icone: "🍯", titre: "Servir", detail: "Servez tiède, fendue en deux et garnie de miel, de confiture, de beurre ou de fromage frais. Le goûter marocain réconfortant.", badge: null }
+    ]
+  },
 });

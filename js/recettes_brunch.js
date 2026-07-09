@@ -2111,4 +2111,41 @@ Object.assign(recettes, {
       { icone: "🥙", titre: "Servir", detail: "Servez tiède ou froid, avec du pain, du yaourt et des radis. Se glisse aussi dans un sandwich au pain plat, en pique-nique.", badge: null }
     ]
   },
+  sujuk: {
+    dateAjout: "2026-07-10T08:16:00",
+    nom: "Sujuk aux Œufs",
+    cat: "brunch", pays: "liban",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🌭",
+    description: "Sujuk aux œufs — le petit-déjeuner épicé du Levant : des rondelles de saucisse séchée très épicée (sujuk) poêlées jusqu'à ce qu'elles libèrent leur gras parfumé, puis liées aux œufs. Servi brûlant avec du pain pita, réveille-matin garanti.",
+    tableauSujuk: [
+      { nb: 1, chorizo: "40 g", oeufs: "1½", tomates: "½", huileolive: "6 ml", piment: "0.5 g", sel: "1 g" },
+      { nb: 2, chorizo: "80 g", oeufs: "3", tomates: "1", huileolive: "12 ml", piment: "1 g", sel: "2 g" },
+      { nb: 3, chorizo: "120 g", oeufs: "4½", tomates: "1½", huileolive: "18 ml", piment: "1.5 g", sel: "3 g" },
+      { nb: 4, chorizo: "160 g", oeufs: "6", tomates: "2", huileolive: "24 ml", piment: "2 g", sel: "4 g" },
+      { nb: 5, chorizo: "200 g", oeufs: "7½", tomates: "2½", huileolive: "30 ml", piment: "2.5 g", sel: "5 g" },
+      { nb: 6, chorizo: "240 g", oeufs: "9", tomates: "3", huileolive: "36 ml", piment: "3 g", sel: "6 g" },
+      { nb: 7, chorizo: "280 g", oeufs: "10½", tomates: "3½", huileolive: "42 ml", piment: "3.5 g", sel: "7 g" },
+      { nb: 8, chorizo: "320 g", oeufs: "12", tomates: "4", huileolive: "48 ml", piment: "4 g", sel: "8 g" },
+      { nb: 9, chorizo: "360 g", oeufs: "13½", tomates: "4½", huileolive: "54 ml", piment: "4.5 g", sel: "9 g" },
+      { nb: 10, chorizo: "400 g", oeufs: "15", tomates: "5", huileolive: "60 ml", piment: "5 g", sel: "10 g" },
+      { nb: 11, chorizo: "440 g", oeufs: "16½", tomates: "5½", huileolive: "66 ml", piment: "5.5 g", sel: "11 g" },
+      { nb: 12, chorizo: "480 g", oeufs: "18", tomates: "6", huileolive: "72 ml", piment: "6 g", sel: "12 g" },
+      { nb: 13, chorizo: "520 g", oeufs: "19½", tomates: "6½", huileolive: "78 ml", piment: "6.5 g", sel: "13 g" },
+      { nb: 14, chorizo: "560 g", oeufs: "21", tomates: "7", huileolive: "84 ml", piment: "7 g", sel: "14 g" },
+      { nb: 15, chorizo: "600 g", oeufs: "22½", tomates: "7½", huileolive: "90 ml", piment: "7.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌭", titre: "Trancher", detail: "Coupez le sujuk (à défaut, du chorizo ou une saucisse sèche épicée) en fines rondelles.", badge: null },
+      { icone: "🔥", titre: "Poêler", detail: "Faites revenir les rondelles dans un filet d'huile à feu moyen, jusqu'à ce qu'elles soient dorées et libèrent leur gras rouge et parfumé.", badge: null },
+      { icone: "🍅", titre: "La tomate", detail: "Ajoutez la tomate concassée (facultative) et le piment, et laissez réduire 2 min pour concentrer les saveurs.", badge: null },
+      { icone: "🥚", titre: "Les œufs", detail: "Battez légèrement les œufs et versez-les dans la poêle, sur le sujuk chaud.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Remuez doucement, comme des œufs brouillés, jusqu'à ce que les œufs soient juste pris mais encore crémeux, enrobés du gras épicé.", badge: null },
+      { icone: "👅", titre: "Ajuster", detail: "Salez peu (le sujuk est déjà salé) et poivrez. Le plat doit être bien rouge et parfumé.", badge: null },
+      { icone: "🥙", titre: "Servir", detail: "Servez brûlant, directement dans la poêle, avec du pain pita chaud pour saucer. Le petit-déjeuner costaud du Levant.", badge: null }
+    ]
+  },
 });

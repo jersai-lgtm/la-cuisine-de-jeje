@@ -6641,4 +6641,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Saupoudrez généreusement de sucre glace et de cannelle, et servez tiède. Le petit-déjeuner sucré de Thessalonique.", badge: null }
     ]
   },
+  sahlab: {
+    dateAjout: "2026-07-10T08:18:00",
+    nom: "Sahlab",
+    cat: "desserts", pays: "liban",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥛",
+    description: "Sahlab — la crème chaude au lait du Levant : une boisson-dessert onctueuse à base de lait épaissi, parfumée à la fleur d'oranger et à la cannelle, garnie de pistaches. Réconfortante et veloutée, elle réchauffe les soirs d'hiver dans tout le Moyen-Orient.",
+    tableauSahlab: [
+      { nb: 1, lait: "150 ml", maizena: "10 g", sucre: "15 g", vanille: "1 g", cannelle: "0.5 g", pistache: "5 g" },
+      { nb: 2, lait: "300 ml", maizena: "20 g", sucre: "30 g", vanille: "2 g", cannelle: "1 g", pistache: "10 g" },
+      { nb: 3, lait: "450 ml", maizena: "30 g", sucre: "45 g", vanille: "3 g", cannelle: "1.5 g", pistache: "15 g" },
+      { nb: 4, lait: "600 ml", maizena: "40 g", sucre: "60 g", vanille: "4 g", cannelle: "2 g", pistache: "20 g" },
+      { nb: 5, lait: "750 ml", maizena: "50 g", sucre: "75 g", vanille: "5 g", cannelle: "2.5 g", pistache: "25 g" },
+      { nb: 6, lait: "900 ml", maizena: "60 g", sucre: "90 g", vanille: "6 g", cannelle: "3 g", pistache: "30 g" },
+      { nb: 7, lait: "1050 ml", maizena: "70 g", sucre: "105 g", vanille: "7 g", cannelle: "3.5 g", pistache: "35 g" },
+      { nb: 8, lait: "1200 ml", maizena: "80 g", sucre: "120 g", vanille: "8 g", cannelle: "4 g", pistache: "40 g" },
+      { nb: 9, lait: "1350 ml", maizena: "90 g", sucre: "135 g", vanille: "9 g", cannelle: "4.5 g", pistache: "45 g" },
+      { nb: 10, lait: "1500 ml", maizena: "100 g", sucre: "150 g", vanille: "10 g", cannelle: "5 g", pistache: "50 g" },
+      { nb: 11, lait: "1650 ml", maizena: "110 g", sucre: "165 g", vanille: "11 g", cannelle: "5.5 g", pistache: "55 g" },
+      { nb: 12, lait: "1800 ml", maizena: "120 g", sucre: "180 g", vanille: "12 g", cannelle: "6 g", pistache: "60 g" },
+      { nb: 13, lait: "1950 ml", maizena: "130 g", sucre: "195 g", vanille: "13 g", cannelle: "6.5 g", pistache: "65 g" },
+      { nb: 14, lait: "2100 ml", maizena: "140 g", sucre: "210 g", vanille: "14 g", cannelle: "7 g", pistache: "70 g" },
+      { nb: 15, lait: "2250 ml", maizena: "150 g", sucre: "225 g", vanille: "15 g", cannelle: "7.5 g", pistache: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Délayer", detail: "Délayez la fécule (ou la poudre de sahlab) dans un peu de lait froid, en fouettant pour éviter les grumeaux.", badge: null },
+      { icone: "🍯", titre: "Chauffer", detail: "Versez le reste du lait dans une casserole avec le sucre et portez doucement à frémissement.", badge: null },
+      { icone: "🌀", titre: "Épaissir", detail: "Ajoutez le mélange de fécule en fouettant sans cesse, et laissez cuire à feu doux 3 à 5 min : le sahlab épaissit et devient velouté.", badge: null },
+      { icone: "🌸", titre: "Parfumer", detail: "Hors du feu, parfumez à l'eau de fleur d'oranger (ou à la vanille) : c'est le parfum signature du sahlab.", badge: null },
+      { icone: "🥣", titre: "Verser", detail: "Versez le sahlab chaud dans des tasses ou des bols, à la consistance d'une crème à boire épaisse.", badge: null },
+      { icone: "🌰", titre: "Garnir", detail: "Parsemez généreusement de cannelle et de pistaches concassées (et de noix de coco râpée, selon les goûts).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, à la cuillère ou à boire. Une douceur réconfortante, parfaite en fin de repas ou par temps froid.", badge: null }
+    ]
+  },
+  barazek: {
+    dateAjout: "2026-07-10T08:19:00",
+    nom: "Barazek",
+    cat: "desserts", pays: "syrie",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍪",
+    description: "Barazek — les biscuits syriens au sésame et pistache : de fins biscuits croustillants, enrobés de graines de sésame grillées sur une face et de pistaches sur l'autre, légèrement sucrés au miel. La douceur emblématique de Damas, à savourer avec le thé.",
+    tableauBarazek: [
+      { nb: 1, farine: "40 g", beurre: "18 g", sucre: "15 g", sesame: "15 g", pistache: "8 g", miel: "6 g", oeufs: "¼" },
+      { nb: 2, farine: "80 g", beurre: "36 g", sucre: "30 g", sesame: "30 g", pistache: "16 g", miel: "12 g", oeufs: "½" },
+      { nb: 3, farine: "120 g", beurre: "54 g", sucre: "45 g", sesame: "45 g", pistache: "24 g", miel: "18 g", oeufs: "¾" },
+      { nb: 4, farine: "160 g", beurre: "72 g", sucre: "60 g", sesame: "60 g", pistache: "32 g", miel: "24 g", oeufs: "1" },
+      { nb: 5, farine: "200 g", beurre: "90 g", sucre: "75 g", sesame: "75 g", pistache: "40 g", miel: "30 g", oeufs: "1¼" },
+      { nb: 6, farine: "240 g", beurre: "108 g", sucre: "90 g", sesame: "90 g", pistache: "48 g", miel: "36 g", oeufs: "1½" },
+      { nb: 7, farine: "280 g", beurre: "126 g", sucre: "105 g", sesame: "105 g", pistache: "56 g", miel: "42 g", oeufs: "1¾" },
+      { nb: 8, farine: "320 g", beurre: "144 g", sucre: "120 g", sesame: "120 g", pistache: "64 g", miel: "48 g", oeufs: "2" },
+      { nb: 9, farine: "360 g", beurre: "162 g", sucre: "135 g", sesame: "135 g", pistache: "72 g", miel: "54 g", oeufs: "2¼" },
+      { nb: 10, farine: "400 g", beurre: "180 g", sucre: "150 g", sesame: "150 g", pistache: "80 g", miel: "60 g", oeufs: "2½" },
+      { nb: 11, farine: "440 g", beurre: "198 g", sucre: "165 g", sesame: "165 g", pistache: "88 g", miel: "66 g", oeufs: "2¾" },
+      { nb: 12, farine: "480 g", beurre: "216 g", sucre: "180 g", sesame: "180 g", pistache: "96 g", miel: "72 g", oeufs: "3" },
+      { nb: 13, farine: "520 g", beurre: "234 g", sucre: "195 g", sesame: "195 g", pistache: "104 g", miel: "78 g", oeufs: "3¼" },
+      { nb: 14, farine: "560 g", beurre: "252 g", sucre: "210 g", sesame: "210 g", pistache: "112 g", miel: "84 g", oeufs: "3½" },
+      { nb: 15, farine: "600 g", beurre: "270 g", sucre: "225 g", sesame: "225 g", pistache: "120 g", miel: "90 g", oeufs: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Travaillez le beurre mou avec le sucre, puis ajoutez l'œuf et un peu de miel. Incorporez la farine pour obtenir une pâte sableuse et souple. Laissez reposer 20 min.", badge: null },
+      { icone: "🌱", titre: "Le sésame", detail: "Faites légèrement griller les graines de sésame à sec, puis mélangez-les avec un peu de miel et d'eau pour qu'elles collent : c'est l'enrobage croustillant.", badge: null },
+      { icone: "🥜", titre: "Les pistaches", detail: "Concassez grossièrement les pistaches et disposez-les dans une assiette à part.", badge: null },
+      { icone: "⚪", titre: "Former", detail: "Prélevez de petites boules de pâte et aplatissez-les en disques fins.", badge: null },
+      { icone: "🌰", titre: "Enrober", detail: "Pressez une face de chaque disque dans les pistaches, et l'autre face dans le sésame au miel : le barazek est doré-pistache d'un côté, sésame de l'autre.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Disposez les biscuits côté sésame vers le haut sur une plaque et enfournez à 180°C 12 à 15 min, jusqu'à ce que le sésame soit doré.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez refroidir complètement : les barazek durcissent et deviennent croustillants. Servez avec un thé ou un café. Se conservent 2 semaines.", badge: null }
+    ]
+  },
 });

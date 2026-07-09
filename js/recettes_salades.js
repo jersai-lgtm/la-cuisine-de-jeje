@@ -2111,4 +2111,78 @@ Object.assign(recettes, {
       { icone: "🥬", titre: "Servir", detail: "Servez frais, traditionnellement avec des feuilles de laitue pour attraper le kısır à la main, ou en accompagnement d'un mezze.", badge: null }
     ]
   },
+  taktouka: {
+    dateAjout: "2026-07-10T08:10:00",
+    nom: "Taktouka",
+    cat: "salades", pays: "maroc",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🫑",
+    description: "Taktouka — la salade cuite marocaine : une compotée fondante de poivrons grillés et de tomates, parfumée à l'ail, au cumin et au paprika. Servie tiède ou froide en mezze, elle accompagne le pain ou les tajines, ensoleillée et parfumée.",
+    tableauTaktouka: [
+      { nb: 1, poivron: "100 g", tomates: "1", ail: "1", cumin: "1 g", paprika: "1 g", huileolive: "10 ml", persil: "4 g", sel: "2 g" },
+      { nb: 2, poivron: "200 g", tomates: "2", ail: "2", cumin: "2 g", paprika: "2 g", huileolive: "20 ml", persil: "8 g", sel: "4 g" },
+      { nb: 3, poivron: "300 g", tomates: "3", ail: "3", cumin: "3 g", paprika: "3 g", huileolive: "30 ml", persil: "12 g", sel: "6 g" },
+      { nb: 4, poivron: "400 g", tomates: "4", ail: "4", cumin: "4 g", paprika: "4 g", huileolive: "40 ml", persil: "16 g", sel: "8 g" },
+      { nb: 5, poivron: "500 g", tomates: "5", ail: "5", cumin: "5 g", paprika: "5 g", huileolive: "50 ml", persil: "20 g", sel: "10 g" },
+      { nb: 6, poivron: "600 g", tomates: "6", ail: "6", cumin: "6 g", paprika: "6 g", huileolive: "60 ml", persil: "24 g", sel: "12 g" },
+      { nb: 7, poivron: "700 g", tomates: "7", ail: "7", cumin: "7 g", paprika: "7 g", huileolive: "70 ml", persil: "28 g", sel: "14 g" },
+      { nb: 8, poivron: "800 g", tomates: "8", ail: "8", cumin: "8 g", paprika: "8 g", huileolive: "80 ml", persil: "32 g", sel: "16 g" },
+      { nb: 9, poivron: "900 g", tomates: "9", ail: "9", cumin: "9 g", paprika: "9 g", huileolive: "90 ml", persil: "36 g", sel: "18 g" },
+      { nb: 10, poivron: "1000 g", tomates: "10", ail: "10", cumin: "10 g", paprika: "10 g", huileolive: "100 ml", persil: "40 g", sel: "20 g" },
+      { nb: 11, poivron: "1100 g", tomates: "11", ail: "11", cumin: "11 g", paprika: "11 g", huileolive: "110 ml", persil: "44 g", sel: "22 g" },
+      { nb: 12, poivron: "1200 g", tomates: "12", ail: "12", cumin: "12 g", paprika: "12 g", huileolive: "120 ml", persil: "48 g", sel: "24 g" },
+      { nb: 13, poivron: "1300 g", tomates: "13", ail: "13", cumin: "13 g", paprika: "13 g", huileolive: "130 ml", persil: "52 g", sel: "26 g" },
+      { nb: 14, poivron: "1400 g", tomates: "14", ail: "14", cumin: "14 g", paprika: "14 g", huileolive: "140 ml", persil: "56 g", sel: "28 g" },
+      { nb: 15, poivron: "1500 g", tomates: "15", ail: "15", cumin: "15 g", paprika: "15 g", huileolive: "150 ml", persil: "60 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Griller les poivrons", detail: "Faites griller les poivrons (four ou flamme) jusqu'à ce que la peau noircisse et cloque. Enfermez-les dans un sac 10 min, puis pelez-les et coupez-les en lanières.", badge: null },
+      { icone: "🍅", titre: "Les tomates", detail: "Pelez et concassez les tomates (ou utilisez des tomates concassées) pour la base de la compotée.", badge: null },
+      { icone: "🧄", titre: "La base", detail: "Faites revenir doucement l'ail écrasé dans l'huile d'olive, sans le colorer, puis ajoutez le cumin et le paprika.", badge: null },
+      { icone: "🥘", titre: "Compoter", detail: "Ajoutez les tomates et les poivrons, salez, et laissez mijoter à feu doux 20 min jusqu'à ce que l'eau s'évapore et que la compotée épaississe.", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "Écrasez grossièrement à la fourchette pour obtenir une texture fondante et homogène.", badge: null },
+      { icone: "🌿", titre: "Persil", detail: "Ajoutez le persil ciselé et un filet d'huile d'olive hors du feu.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tiède ou froid, en mezze, avec du pain marocain pour tremper. Meilleure après quelques heures de repos.", badge: null }
+    ]
+  },
+  shanklish: {
+    dateAjout: "2026-07-10T08:17:00",
+    nom: "Shanklish",
+    cat: "salades", pays: "liban",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Shanklish — la salade de fromage au za'atar libanaise : un fromage affiné émietté, roulé dans le za'atar, mêlé de tomates, d'oignon et d'huile d'olive. Piquant, herbacé et rustique, ce mezze de montagne se déguste avec du pain et de l'arak.",
+    tableauShanklish: [
+      { nb: 1, feta: "50 g", zaatar: "6 g", tomates: "½", oignon: "¼", huileolive: "8 ml", persil: "4 g", sel: "1 g" },
+      { nb: 2, feta: "100 g", zaatar: "12 g", tomates: "1", oignon: "½", huileolive: "16 ml", persil: "8 g", sel: "2 g" },
+      { nb: 3, feta: "150 g", zaatar: "18 g", tomates: "1½", oignon: "¾", huileolive: "24 ml", persil: "12 g", sel: "3 g" },
+      { nb: 4, feta: "200 g", zaatar: "24 g", tomates: "2", oignon: "1", huileolive: "32 ml", persil: "16 g", sel: "4 g" },
+      { nb: 5, feta: "250 g", zaatar: "30 g", tomates: "2½", oignon: "1¼", huileolive: "40 ml", persil: "20 g", sel: "5 g" },
+      { nb: 6, feta: "300 g", zaatar: "36 g", tomates: "3", oignon: "1½", huileolive: "48 ml", persil: "24 g", sel: "6 g" },
+      { nb: 7, feta: "350 g", zaatar: "42 g", tomates: "3½", oignon: "1¾", huileolive: "56 ml", persil: "28 g", sel: "7 g" },
+      { nb: 8, feta: "400 g", zaatar: "48 g", tomates: "4", oignon: "2", huileolive: "64 ml", persil: "32 g", sel: "8 g" },
+      { nb: 9, feta: "450 g", zaatar: "54 g", tomates: "4½", oignon: "2¼", huileolive: "72 ml", persil: "36 g", sel: "9 g" },
+      { nb: 10, feta: "500 g", zaatar: "60 g", tomates: "5", oignon: "2½", huileolive: "80 ml", persil: "40 g", sel: "10 g" },
+      { nb: 11, feta: "550 g", zaatar: "66 g", tomates: "5½", oignon: "2¾", huileolive: "88 ml", persil: "44 g", sel: "11 g" },
+      { nb: 12, feta: "600 g", zaatar: "72 g", tomates: "6", oignon: "3", huileolive: "96 ml", persil: "48 g", sel: "12 g" },
+      { nb: 13, feta: "650 g", zaatar: "78 g", tomates: "6½", oignon: "3¼", huileolive: "104 ml", persil: "52 g", sel: "13 g" },
+      { nb: 14, feta: "700 g", zaatar: "84 g", tomates: "7", oignon: "3½", huileolive: "112 ml", persil: "56 g", sel: "14 g" },
+      { nb: 15, feta: "750 g", zaatar: "90 g", tomates: "7½", oignon: "3¾", huileolive: "120 ml", persil: "60 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "Le fromage", detail: "Émiettez le fromage affiné (traditionnellement du shanklish, à défaut de la feta bien sèche) grossièrement dans un saladier.", badge: null },
+      { icone: "🌿", titre: "Le za'atar", detail: "Ajoutez le za'atar (mélange de thym, sumac et sésame) et mélangez : il enrobe le fromage et lui donne son parfum herbacé caractéristique.", badge: null },
+      { icone: "🍅", titre: "Les légumes", detail: "Coupez les tomates et l'oignon en tout petits dés et ajoutez-les au fromage.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Arrosez d'huile d'olive, ajoutez le persil ciselé, et mélangez délicatement. Salez peu (le fromage est salé).", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Laissez reposer 10 min à température ambiante pour que les saveurs se mêlent.", badge: null },
+      { icone: "👅", titre: "Ajuster", detail: "Goûtez : le shanklish doit être piquant, herbacé et fondant, avec le croquant des légumes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez en mezze, avec du pain pita chaud pour ramasser, un filet d'huile d'olive et quelques olives. Rustique et savoureux.", badge: null }
+    ]
+  },
 });
