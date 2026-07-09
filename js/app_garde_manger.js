@@ -8,12 +8,15 @@
 // =============================================================================
 
 // =============================================================================
-// 🥶 MODE VIDE-FRIGO v242 — refondu v259
+// 🥶 MODE VIDE-FRIGO v242 — refondu v259/v260
 // =============================================================================
 // Tu coches ce que tu as → on calcule les recettes possibles.
 // v259 : sélection MÉMORISÉE (profil + localStorage), lien direct avec « Mon
-//        placard » daté (auto-cochage + priorité anti-gaspi sur ce qui périme),
-//        tri « moins d'achats » et photos dans les résultats.
+//        placard » daté (auto-cochage + priorité anti-gaspi), tri « moins
+//        d'achats » et photos dans les résultats.
+// v260 : liste d'ingrédients allégée — variantes fusionnées (singulier/pluriel,
+//        casse, accents), basiques masqués, groupe « ⭐ Courants » + catégories
+//        repliées (compteur), recherche qui déplie tout.
 // =============================================================================
 
 // Set des ingrédients sélectionnés — désormais PERSISTÉ (voir vfLoadSelection)
@@ -30,9 +33,14 @@ function vfNormalize(s) {
 }
 // Réduit un libellé (« 🧈 Beurre », « Huile d'olive »…) à sa forme comparable « beurre »
 function vfClean(s) { return vfNormalize(s).replace(/[^a-z0-9]/g, ""); }
+// Clé de fusion : comme vfClean mais sans le « s »/« x » final (singulier ≈ pluriel)
+function vfMergeKey(s) {
+  const c = vfClean(s);
+  const t = c.replace(/(s|x)$/, "");
+  return t.length >= 3 ? t : c;
+}
 
 // --- Persistance de la sélection -------------------------------------------
-// Connecté → profil (synchro multi-appareils) ; sinon → localStorage.
 function vfLoadSelection() {
   let arr = [];
   if (window.currentUser && window.userProfile && Array.isArray(window.userProfile.vfFrigo)) {
@@ -40,20 +48,24 @@ function vfLoadSelection() {
   } else {
     try { arr = JSON.parse(localStorage.getItem(VF_LS_KEY) || "[]"); } catch (e) {}
   }
-  window._vfSelection = new Set(Array.isArray(arr) ? arr : []);
+  if (!Array.isArray(arr)) arr = [];
+  // Migration : remapper d'anciens libellés (ex. « 🍅 Tomates ») vers le libellé
+  // fusionné actuel (« 🍅 Tomate ») pour que la sélection reste valide après v260.
+  if (window._vfLabelToDisplay) arr = arr.map(l => vfDisplayLabel(l));
+  window._vfSelection = new Set(arr);
 }
 function vfPersistSelection() {
   const arr = Array.from(window._vfSelection);
   try { localStorage.setItem(VF_LS_KEY, JSON.stringify(arr)); } catch (e) {}
   if (window.currentUser && typeof sauvegarderProfil === "function") {
-    clearTimeout(window._vfSaveT);   // debounce : évite de spammer Firestore à chaque clic
+    clearTimeout(window._vfSaveT);
     window._vfSaveT = setTimeout(() => { try { sauvegarderProfil({ vfFrigo: Array.from(window._vfSelection) }); } catch (e) {} }, 900);
   }
 }
 window.vfLoadSelection = vfLoadSelection;
 window.vfPersistSelection = vfPersistSelection;
 
-// Labels pour catégoriser les ingrédients dans la liste affichée
+// Catégories d'affichage
 const VF_CATEGORIES = {
   "🥩 Viandes & poissons": ["poulet","bœuf","boeuf","porc","agneau","veau","canard","dinde","lapin","jambon","lardons","bacon","saucisse","chorizo","merguez","steak","escalope","filet","saumon","thon","cabillaud","truite","crevette","crevettes","calmar","moules","huitres","sardine","anchois"],
   "🥛 Frais & laitages": ["lait","creme","crèmefraiche","yaourt","fromage","mozzarella","parmesan","feta","ricotta","mascarpone","cheddar","emmental","gruyere","chevre","beurre","margarine","oeuf","oeufs","jauneoeuf","blancsoeufs","tofu"],
@@ -64,19 +76,27 @@ const VF_CATEGORIES = {
   "🧂 Épices & condiments": ["sel","poivre","sucre","huile","huiledolive","huiledetournesol","curry","paprika","cumin","curcuma","cannelle","muscade","gingembre","piment","tabasco","basilic","persil","thym","laurier","origan","romarin","menthe","coriandre","cerfeuil","ciboulette","aneth","estragon","safran","vanille","cacao","chocolat","levure","bicarbonate"],
 };
 
-// Basiques du placard : supposés toujours dispo → ni comptés dans le match ni
-// listés dans « il te manque ». Élargi v259 (beurre, ail, oignon, farine) à la
-// demande — pour « cocher plus vite ». Test par CLÉ canonique OU par LIBELLÉ
-// (gère les variantes beurrePate/beurreCreme… qui ont toutes le label « Beurre »).
+// Basiques supposés TOUJOURS dispo → ni comptés dans le match, ni listés dans
+// « il te manque », ni affichés comme chips (inutile de cocher « sel »).
+// Test par clé canonique OU par clé de fusion du libellé (gère singulier/pluriel).
 const VF_STAPLE_KEYS = new Set(["sel","poivre","huile","huileolive","huiledolive","eau","sucre","vinaigre","beurre","ail","oignon","farine"]);
-const VF_STAPLE_LABELS = new Set(["sel","poivre","huile","huiledolive","eau","sucre","vinaigre","beurre","ail","oignon","farine"]);
+const VF_STAPLE_MERGE = new Set(["sel","poivre","huile","huiledolive","eau","sucre","vinaigre","beurre","ail","oignon","farine"]);
 function vfEstStaple(ing) {
   if (VF_STAPLE_KEYS.has(ing)) return true;
   const label = (typeof INGREDIENTS_LABELS !== "undefined" && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
-  return VF_STAPLE_LABELS.has(vfClean(label));
+  return VF_STAPLE_MERGE.has(vfMergeKey(label));
 }
 
-// Injecte les styles v259 (bannière placard, tri, vignettes, badges)
+// Ingrédients « courants » mis en avant (dépliés d'office). Clés de fusion.
+const VF_COURANTS = new Set([
+  "tomate","oeuf","lait","carotte","poulet","riz","fromage","cremefraiche","creme",
+  "citron","courgette","poivron","champignon","jambon","lardon","yaourt","pain",
+  "persil","basilic","echalote","concombre","salade","pomme","banane","chocolat",
+  "saumon","thon","mozzarella","aubergine","epinard","pate","boeufhache",
+  "pommedeterre","poireau","citronvert","crevette","petitspoi","mais",
+]);
+
+// Injecte les styles v259/v260
 function vfInjecterStyle() {
   if (document.getElementById("vf2-style")) return;
   const st = document.createElement("style");
@@ -98,8 +118,58 @@ function vfInjecterStyle() {
     .vf-badge-ready{background:rgba(76,175,80,.18);color:#7CFC9A;border:1px solid rgba(76,175,80,.45)}
     .vf-badge-urgent{background:rgba(255,160,0,.16);color:var(--or,#ffb300);border:1px solid rgba(255,160,0,.5)}
     .vf-result-card.vf-urgent{border-left:4px solid var(--or,#ffb300)}
+    /* Liste d'ingrédients repliable (v260) */
+    .vf-cat-bloc{margin-bottom:10px}
+    .vf-cat-head{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;background:rgba(var(--w),.045);border:1px solid rgba(var(--w),.09);border-radius:12px;padding:11px 14px;cursor:pointer;color:var(--text);font-size:14.5px;font-weight:600;text-align:left}
+    .vf-cat-head:hover{background:rgba(var(--accent-rgb),.10)}
+    .vf-cat-head.vf-cat-static{cursor:default;background:transparent;border:none;padding:12px 2px 4px}
+    .vf-cat-head.vf-cat-static:hover{background:transparent}
+    .vf-cat-meta{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+    .vf-cat-count{font-size:12px;color:var(--text-3);background:rgba(var(--w),.08);border-radius:20px;padding:1px 9px;font-weight:600}
+    .vf-cat-sel{font-size:11px;font-weight:700;color:#7CFC9A;background:rgba(76,175,80,.16);border-radius:20px;padding:1px 8px}
+    .vf-cat-chev{font-size:11px;color:var(--text-3);transition:transform .2s;display:inline-block}
+    .vf-cat-collapsed .vf-cat-chev{transform:rotate(-90deg)}
+    .vf-cat-bloc .vf-chips-row{margin-top:8px}
+    .vf-cat-collapsed .vf-chips-row{display:none}
   `;
   (document.head || document.documentElement).appendChild(st);
+}
+
+// (Re)construit la liste fusionnée des ingrédients + le mapping libellé→affiché
+function vfBuildIngredients() {
+  if (window._vfIngredients) return;
+  const ingSet = new Set();
+  Object.values(recettes).forEach(r => {
+    const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
+    if (!tabKey || !r[tabKey][0]) return;
+    Object.keys(r[tabKey][0]).forEach(k => {
+      if (k !== "nb" && k !== "patons" && k !== "total" && k !== "label") ingSet.add(k);
+    });
+  });
+
+  // clé canonique → libellé
+  const labelToIngs = {};
+  Array.from(ingSet).forEach(ing => {
+    const label = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
+    (labelToIngs[label] || (labelToIngs[label] = [])).push(ing);
+  });
+
+  // Fusionner les libellés quasi-identiques (singulier/pluriel, casse, accents…)
+  const groups = {};   // mergeKey → { rawLabels:[], ings:[] }
+  Object.entries(labelToIngs).forEach(([label, ings]) => {
+    const mk = vfMergeKey(label);
+    if (!groups[mk]) groups[mk] = { rawLabels: [], ings: [] };
+    groups[mk].rawLabels.push(label);
+    groups[mk].ings.push(...ings);
+  });
+
+  window._vfLabelToDisplay = {};
+  window._vfIngredients = Object.entries(groups).map(([mk, g]) => {
+    // libellé affiché = le plus court (souvent le singulier) ; égalité → alpha
+    const display = g.rawLabels.slice().sort((a, b) => a.length - b.length || a.localeCompare(b))[0];
+    g.rawLabels.forEach(rl => { window._vfLabelToDisplay[rl] = display; });
+    return { label: display, ings: Array.from(new Set(g.ings)), mergeKey: mk };
+  }).sort((a, b) => a.label.localeCompare(b.label));
 }
 
 // Charge la liste des ingrédients dans le DOM (appelé quand on entre dans la section)
@@ -108,98 +178,87 @@ function vfChargerIngredients() {
   const container = document.getElementById("vf-ingredients-container");
   if (!container) return;
 
-  // Récupérer la liste de tous les ingrédients uniques utilisés dans les recettes
-  // ET GROUPER PAR LABEL AFFICHÉ pour éviter les doublons (beurre/beurrPate/beurrCreme...)
-  if (!window._vfIngredients) {
-    const ingSet = new Set();
-    Object.values(recettes).forEach(r => {
-      const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
-      if (!tabKey || !r[tabKey][0]) return;
-      Object.keys(r[tabKey][0]).forEach(k => {
-        if (k !== "nb" && k !== "patons" && k !== "total" && k !== "label") {
-          ingSet.add(k);
-        }
-      });
-    });
+  vfBuildIngredients();
+  vfLoadSelection();     // restaurer la sélection mémorisée AVANT de dessiner
 
-    // Construire le mapping label → [ingrédients_canoniques...]
-    const labelToIngs = {};
-    Array.from(ingSet).forEach(ing => {
-      const label = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
-      if (!labelToIngs[label]) labelToIngs[label] = [];
-      labelToIngs[label].push(ing);
-    });
+  const chip = (e) => `<button class="vf-chip${window._vfSelection.has(e.label) ? " vf-chip-active" : ""}" data-label="${e.label.replace(/"/g, "&quot;")}" onclick="vfToggleLabel('${e.label.replace(/'/g, "\\'")}', this)">${e.label}</button>`;
+  const matchCat = (e, mots) => {
+    const labelLow = e.label.toLowerCase();
+    const ingsLow = e.ings.map(i => i.toLowerCase());
+    return mots.some(mot => { const m = mot.toLowerCase(); return labelLow.includes(m) || ingsLow.some(i => i.includes(m)); });
+  };
+  const catBloc = (titre, entries, collapsible) => {
+    const chips = entries.map(chip).join("");
+    if (!collapsible) {
+      return `<div class="vf-cat-bloc"><div class="vf-cat-head vf-cat-static"><span class="vf-cat-titre">${titre}</span></div><div class="vf-chips-row">${chips}</div></div>`;
+    }
+    return `<div class="vf-cat-bloc vf-cat-collapsible vf-cat-collapsed">
+      <button class="vf-cat-head" onclick="vfToggleCat(this)">
+        <span class="vf-cat-titre">${titre}</span>
+        <span class="vf-cat-meta"><span class="vf-cat-sel" style="display:none"></span><span class="vf-cat-count">${entries.length}</span><span class="vf-cat-chev">▾</span></span>
+      </button>
+      <div class="vf-chips-row">${chips}</div></div>`;
+  };
 
-    // Une "entrée d'ingrédient" pour le vide-frigo = { label, ings: [variants] }
-    window._vfIngredients = Object.entries(labelToIngs)
-      .map(([label, ings]) => ({ label, ings, key: ings[0] })) // key = première variante pour stockage
-      .sort((a, b) => a.label.localeCompare(b.label));
-  }
+  // On écarte les basiques (masqués), puis on isole les « courants »
+  const visibles = window._vfIngredients.filter(e => !VF_STAPLE_MERGE.has(e.mergeKey));
+  const courants = visibles.filter(e => VF_COURANTS.has(e.mergeKey));
+  const courantsMK = new Set(courants.map(e => e.mergeKey));
+  const reste = visibles.filter(e => !courantsMK.has(e.mergeKey));
 
-  // Restaurer la sélection mémorisée AVANT de dessiner les chips
-  vfLoadSelection();
-
-  // Construire l'affichage par catégories
   let html = "";
-  const labelsRanges = new Set();
+  if (courants.length) html += catBloc("⭐ Courants", courants, false);
 
+  const placed = new Set();
   for (const [cat, mots] of Object.entries(VF_CATEGORIES)) {
-    const entriesDeCetteCat = window._vfIngredients.filter(entry => {
-      const labelLow = entry.label.toLowerCase();
-      const ingsLow = entry.ings.map(i => i.toLowerCase());
-      return mots.some(mot => {
-        const m = mot.toLowerCase();
-        return labelLow.includes(m) || ingsLow.some(i => i.includes(m));
-      });
-    });
-    if (entriesDeCetteCat.length === 0) continue;
-
-    html += `<div class="vf-cat-bloc">
-      <h3 class="vf-cat-titre">${cat}</h3>
-      <div class="vf-chips-row">`;
-    entriesDeCetteCat.forEach(entry => {
-      labelsRanges.add(entry.label);
-      const checked = window._vfSelection.has(entry.label) ? "vf-chip-active" : "";
-      html += `<button class="vf-chip ${checked}" data-label="${entry.label}" onclick="vfToggleLabel('${entry.label.replace(/'/g, "\\'")}', this)">${entry.label}</button>`;
-    });
-    html += `</div></div>`;
+    const entries = reste.filter(e => !placed.has(e.mergeKey) && matchCat(e, mots));
+    if (!entries.length) continue;
+    entries.forEach(e => placed.add(e.mergeKey));
+    html += catBloc(cat, entries, true);
   }
-
-  // Catégorie "Autres" pour ce qui n'est pas rangé
-  const autres = window._vfIngredients.filter(entry => !labelsRanges.has(entry.label));
-  if (autres.length > 0) {
-    html += `<div class="vf-cat-bloc">
-      <h3 class="vf-cat-titre">📦 Autres</h3>
-      <div class="vf-chips-row">`;
-    autres.forEach(entry => {
-      const checked = window._vfSelection.has(entry.label) ? "vf-chip-active" : "";
-      html += `<button class="vf-chip ${checked}" data-label="${entry.label}" onclick="vfToggleLabel('${entry.label.replace(/'/g, "\\'")}', this)">${entry.label}</button>`;
-    });
-    html += `</div></div>`;
-  }
+  const autres = reste.filter(e => !placed.has(e.mergeKey));
+  if (autres.length) html += catBloc("📦 Autres", autres, true);
 
   container.innerHTML = html;
+  vfRefreshChipStates();
 
   // Auto-cochage du placard : une seule fois par session, si le frigo est vierge.
   if (!window._vfAutoDone && window._vfSelection.size === 0 &&
       window.userProfile && ((window.userProfile.gardeManger || []).length > 0)) {
     window._vfAutoDone = true;
-    vfCocherPlacard(true);   // silencieux : coche + persiste + met à jour
+    vfCocherPlacard(true);
   }
 
   vfSyncPlacardBanner();
   vfMettreAJourSelection();
 }
 
+// Replie/déplie une catégorie
+function vfToggleCat(head) {
+  const b = head.closest(".vf-cat-bloc");
+  if (b) b.classList.toggle("vf-cat-collapsed");
+}
+window.vfToggleCat = vfToggleCat;
+
+// Synchronise l'état actif de TOUTES les chips depuis _vfSelection + compteurs
+function vfRefreshChipStates() {
+  document.querySelectorAll(".vf-chip").forEach(c => {
+    c.classList.toggle("vf-chip-active", window._vfSelection.has(c.getAttribute("data-label")));
+  });
+  document.querySelectorAll(".vf-cat-bloc").forEach(bloc => {
+    const badge = bloc.querySelector(".vf-cat-sel");
+    if (!badge) return;
+    const sel = bloc.querySelectorAll(".vf-chip-active").length;
+    badge.textContent = sel ? `✅ ${sel}` : "";
+    badge.style.display = sel ? "inline-block" : "none";
+  });
+}
+
 // Toggle un label (qui regroupe potentiellement plusieurs variantes d'ingrédients)
-function vfToggleLabel(label, btn) {
-  if (window._vfSelection.has(label)) {
-    window._vfSelection.delete(label);
-    if (btn) btn.classList.remove("vf-chip-active");
-  } else {
-    window._vfSelection.add(label);
-    if (btn) btn.classList.add("vf-chip-active");
-  }
+function vfToggleLabel(label) {
+  if (window._vfSelection.has(label)) window._vfSelection.delete(label);
+  else window._vfSelection.add(label);
+  vfRefreshChipStates();
   vfPersistSelection();
   vfMettreAJourSelection();
 }
@@ -209,18 +268,19 @@ function vfGetIngredientsCanoniques() {
   const result = new Set();
   if (!window._vfIngredients) return result;
   window._vfIngredients.forEach(entry => {
-    if (window._vfSelection.has(entry.label)) {
-      entry.ings.forEach(i => result.add(i));
-    }
+    if (window._vfSelection.has(entry.label)) entry.ings.forEach(i => result.add(i));
   });
   return result;
+}
+
+// Traduit un libellé brut de recette vers son libellé affiché (fusionné)
+function vfDisplayLabel(rawLabel) {
+  return (window._vfLabelToDisplay && window._vfLabelToDisplay[rawLabel]) || rawLabel;
 }
 
 // ---------------------------------------------------------------------------
 // 📦 LIEN AVEC « MON PLACARD » (aliments datés)
 // ---------------------------------------------------------------------------
-// Associe chaque aliment daté du placard à un label du vide-frigo, en gardant
-// l'échéance (jours restants) la plus urgente → Map(label → joursMin).
 function vfPlacardMap() {
   const res = new Map();
   const liste = (window.userProfile && window.userProfile.gardeManger) || [];
@@ -244,16 +304,12 @@ function vfPlacardMap() {
 }
 window.vfPlacardMap = vfPlacardMap;
 
-// Coche dans le frigo tous les aliments reconnus du placard
 function vfCocherPlacard(silencieux) {
   if (!window._vfIngredients && typeof vfChargerIngredients === "function") { try { vfChargerIngredients(); } catch (e) {} }
   const map = vfPlacardMap();
   let added = 0;
   map.forEach((j, label) => { if (!window._vfSelection.has(label)) { window._vfSelection.add(label); added++; } });
-  document.querySelectorAll(".vf-chip").forEach(chip => {
-    const lbl = chip.getAttribute("data-label");
-    if (lbl && window._vfSelection.has(lbl)) chip.classList.add("vf-chip-active");
-  });
+  vfRefreshChipStates();
   vfPersistSelection();
   vfSyncPlacardBanner();
   vfMettreAJourSelection();
@@ -264,28 +320,23 @@ function vfCocherPlacard(silencieux) {
 }
 window.vfCocherPlacard = vfCocherPlacard;
 
-// Bannière en haut du vide-frigo : état du placard + actions
 function vfSyncPlacardBanner() {
   const el = document.getElementById("vf-placard-banner");
   if (!el) return;
   const liste = (window.userProfile && window.userProfile.gardeManger) || [];
   const map = vfPlacardMap();
   let urgents = 0; map.forEach(j => { if (j <= 3) urgents++; });
-  // Combien de labels du placard restent à cocher ?
   let aCocher = 0; map.forEach((j, label) => { if (!window._vfSelection.has(label)) aCocher++; });
 
   if (!liste.length) {
-    // Placard vide → invitation douce
     el.innerHTML = `<span class="vf-pb-txt">📦 Astuce : ajoute tes aliments <b>avec leur date</b> dans « Mon placard », on les cochera ici et on te proposera d'écouler ce qui périme.</span>
       <button class="vf-pb-btn vf-pb-ghost" onclick="switchCuisineTab('pantry')">Mon placard →</button>`;
-    el.style.display = "flex";
-    return;
+    el.style.display = "flex"; return;
   }
   if (map.size === 0) {
     el.innerHTML = `<span class="vf-pb-txt">📦 ${liste.length} aliment${liste.length > 1 ? "s" : ""} dans ton placard, mais aucun ne correspond aux ingrédients des recettes.</span>
       <button class="vf-pb-btn vf-pb-ghost" onclick="switchCuisineTab('pantry')">Gérer →</button>`;
-    el.style.display = "flex";
-    return;
+    el.style.display = "flex"; return;
   }
   const urgTxt = urgents ? ` · <b>${urgents} à écouler ⏰</b>` : "";
   el.innerHTML = `<span class="vf-pb-txt">📦 Placard : <b style="color:var(--text)">${map.size}</b> ingrédient${map.size > 1 ? "s" : ""} reconnu${map.size > 1 ? "s" : ""}${urgTxt}</span>
@@ -294,11 +345,7 @@ function vfSyncPlacardBanner() {
 }
 window.vfSyncPlacardBanner = vfSyncPlacardBanner;
 
-// Change le tri des résultats
-function vfSetSort(mode) {
-  window._vfSort = mode;
-  vfMettreAJourSelection();
-}
+function vfSetSort(mode) { window._vfSort = mode; vfMettreAJourSelection(); }
 window.vfSetSort = vfSetSort;
 
 // Met à jour l'affichage du compteur et calcule les résultats
@@ -314,28 +361,24 @@ function vfMettreAJourSelection() {
   const resultatsBox = document.getElementById("vf-resultats");
   const resultatsListe = document.getElementById("vf-resultats-liste");
   if (!resultatsBox || !resultatsListe) return;
-
   if (n === 0) { resultatsBox.style.display = "none"; return; }
 
-  // Carte des aliments du placard (label → jours restants) pour la priorité anti-gaspi
   const placard = vfPlacardMap();
 
-  // Pour chaque recette, calculer le % de match (regroupé par label)
   const resultats = [];
   Object.entries(recettes).forEach(([cle, r]) => {
     const tabKey = Object.keys(r).find(k => k.startsWith("tableau") && Array.isArray(r[k]));
     if (!tabKey || !r[tabKey][0]) return;
 
     const ingredients = Object.keys(r[tabKey][0]).filter(k =>
-      k !== "nb" && k !== "patons" && k !== "total" && k !== "label"
-    );
+      k !== "nb" && k !== "patons" && k !== "total" && k !== "label");
     if (ingredients.length === 0) return;
 
     const labelsRecette = new Set();
     ingredients.forEach(ing => {
-      if (vfEstStaple(ing)) return; // basique du placard : supposé dispo
-      const label = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
-      labelsRecette.add(label);
+      if (vfEstStaple(ing)) return;
+      const raw = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
+      labelsRecette.add(vfDisplayLabel(raw));
     });
     if (labelsRecette.size === 0) return;
     const labelsArr = Array.from(labelsRecette);
@@ -343,33 +386,24 @@ function vfMettreAJourSelection() {
     const labelsPossedes = labelsArr.filter(label => window._vfSelection.has(label));
     const labelsManquants = labelsArr.filter(label => !window._vfSelection.has(label));
     const pourcent = Math.round((labelsPossedes.length / labelsArr.length) * 100);
-    if (pourcent < 30) return; // ignorer les recettes trop incomplètes
+    if (pourcent < 30) return;
 
-    // Anti-gaspi : la recette utilise-t-elle un ingrédient que j'ai ET qui périme (≤3 j) ?
     const urgents = labelsPossedes.filter(l => placard.has(l) && placard.get(l) <= 3);
-
     resultats.push({
-      cle, recette: r, pourcent,
-      manquants: labelsManquants, total: labelsArr.length,
-      possede: labelsPossedes.length,
-      urgent: urgents.length > 0,
+      cle, pourcent, manquants: labelsManquants, total: labelsArr.length,
+      possede: labelsPossedes.length, urgent: urgents.length > 0,
       urgentNoms: urgents.map(l => l.replace(/^[^\s]+\s+/, "").trim()),
     });
   });
 
-  // Tri
   if (window._vfSort === "match") {
     resultats.sort((a, b) => (b.urgent - a.urgent) || (b.pourcent - a.pourcent) || (a.manquants.length - b.manquants.length));
-  } else { // "achats" (défaut) : d'abord ce qui périme, puis le moins d'achats
+  } else {
     resultats.sort((a, b) =>
-      (b.urgent - a.urgent) ||
-      (a.manquants.length - b.manquants.length) ||
-      (b.pourcent - a.pourcent) ||
-      (b.possede - a.possede)
-    );
+      (b.urgent - a.urgent) || (a.manquants.length - b.manquants.length) ||
+      (b.pourcent - a.pourcent) || (b.possede - a.possede));
   }
 
-  // Barre de tri
   const sortBar = document.getElementById("vf-sort-bar");
   if (sortBar) {
     sortBar.style.display = resultats.length ? "flex" : "none";
@@ -425,7 +459,8 @@ async function vfAjouterManquants(cle) {
   const vus = new Set();
   ingredients.forEach(ing => {
     if (vfEstStaple(ing)) return;
-    const label = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
+    const raw = (INGREDIENTS_LABELS && INGREDIENTS_LABELS[ing]) ? INGREDIENTS_LABELS[ing] : ing;
+    const label = vfDisplayLabel(raw);
     if (vus.has(label)) return; vus.add(label);
     if (!window._vfSelection.has(label)) manquants.push(label);
   });
@@ -442,18 +477,25 @@ async function vfAjouterManquants(cle) {
 }
 window.vfAjouterManquants = vfAjouterManquants;
 
-// Filtre les chips selon une recherche
+// Filtre les chips selon une recherche — déplie tout pendant la recherche
 function vfFiltrerIngredients(query) {
   const q = vfNormalize(query.trim());
+  const searching = !!q;
   document.querySelectorAll(".vf-chip").forEach(chip => {
     const txt = vfNormalize(chip.textContent);
     const label = vfNormalize(chip.getAttribute("data-label") || "");
-    const match = !q || txt.includes(q) || label.includes(q);
-    chip.style.display = match ? "" : "none";
+    chip.style.display = (!q || txt.includes(q) || label.includes(q)) ? "" : "none";
   });
   document.querySelectorAll(".vf-cat-bloc").forEach(bloc => {
-    const visibles = bloc.querySelectorAll('.vf-chip:not([style*="none"])').length;
-    bloc.style.display = visibles === 0 ? "none" : "";
+    const collapsible = bloc.classList.contains("vf-cat-collapsible");
+    if (searching) {
+      bloc.classList.remove("vf-cat-collapsed");            // déplier pour révéler les matches
+      const vis = bloc.querySelectorAll('.vf-chip:not([style*="none"])').length;
+      bloc.style.display = vis === 0 ? "none" : "";
+    } else {
+      bloc.style.display = "";
+      if (collapsible) bloc.classList.add("vf-cat-collapsed"); // rétablir l'état replié
+    }
   });
 }
 
@@ -461,7 +503,7 @@ function vfFiltrerIngredients(query) {
 function vfReset() {
   window._vfSelection.clear();
   window._vfAutoDone = true; // reset explicite : ne pas re-cocher le placard automatiquement
-  document.querySelectorAll(".vf-chip-active").forEach(c => c.classList.remove("vf-chip-active"));
+  vfRefreshChipStates();
   vfPersistSelection();
   vfSyncPlacardBanner();
   vfMettreAJourSelection();
