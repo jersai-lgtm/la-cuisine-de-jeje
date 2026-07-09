@@ -57158,5 +57158,345 @@ window.RECETTES_EN = {
     "detail": "Dust generously with icing sugar. Szarlotka is eaten warm or cold, sometimes with a scoop of vanilla ice cream."
    }
   ]
+ },
+ "rakottkrumpli": {
+  "nom": "Rakott Krumpli",
+  "description": "Rakott krumpli — Hungarian layered potato bake: layers of potato, hard-boiled egg and smoked sausage, coated in sour cream and dusted with paprika, baked golden. A hearty, comforting family dish.",
+  "etapes": [
+   {
+    "titre": "Cook the bases",
+    "detail": "Boil the potatoes in their skins and hard-boil the eggs in salted water. Peel and slice everything into even rounds once cooled."
+   },
+   {
+    "titre": "Sausage",
+    "detail": "Slice the smoked sausage and fry the rounds for 2 minutes to release their aroma."
+   },
+   {
+    "titre": "Butter the dish",
+    "detail": "Butter a baking dish and line the bottom with a first layer of potatoes."
+   },
+   {
+    "titre": "Build the layers",
+    "detail": "Alternate layers: potato, egg, sausage, with a little sour cream and sliced onion between each, seasoning lightly."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Finish with a layer of potato, coat generously with the remaining sour cream and dust with paprika."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 190°C for 25 to 30 minutes, until the top is golden and lightly crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest 5 minutes so the layers hold, then serve hot with a cucumber salad or pickles."
+   }
+  ]
+ },
+ "nokedli": {
+  "nom": "Nokedli",
+  "description": "Nokedli — Hungarian egg dumplings (Central Europe's spätzle): a soft dough pushed into boiling water in small irregular dumplings, tossed in butter. The perfect side for paprikash.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, egg, salt and a little water into a soft, sticky, elastic dough (thicker than pancake batter). Let rest 10 minutes."
+   },
+   {
+    "titre": "Boiling water",
+    "detail": "Bring a large pot of salted water to a rolling boil."
+   },
+   {
+    "titre": "Form the nokedli",
+    "detail": "Push the dough through a colander with large holes (or a nokedli board) directly over the water: small irregular dumplings form and drop in."
+   },
+   {
+    "titre": "Cook",
+    "detail": "They're done when they rise to the surface (1 to 2 min). Don't overcrowd the pot, work in batches."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Lift them out with a slotted spoon and drain. Rinse quickly under cold water if not serving right away, to stop them sticking."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Melt the butter in a pan and sauté the nokedli until coated and lightly golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot as a side to a saucy dish (paprikash, goulash), or plain with cottage cheese and bacon."
+   }
+  ]
+ },
+ "retes": {
+  "nom": "Rétes",
+  "description": "Rétes — Hungarian strudel: a thin, crisp pastry rolled around a filling of apples, walnuts, raisins and cinnamon, baked golden and dusted with icing sugar. Vienna's strudel cousin, all flaky layers.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Peel and grate (or finely slice) the apples. Mix them with the sugar, crushed walnuts, raisins and cinnamon."
+   },
+   {
+    "titre": "Roll out the pastry",
+    "detail": "Roll the puff pastry as thinly as possible into a large rectangle on a floured surface."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Brush the surface with melted butter: this gives the golden, crisp layers."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the apple filling over one third of the pastry, leaving the edges free."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the pastry tightly into a log, folding the ends to trap the juices. Place on a tray, seam down."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Brush with butter and bake at 190°C for 25 to 30 minutes, until the rétes is golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool slightly, dust generously with icing sugar and cut into pieces. Delicious warm, with a scoop of vanilla ice cream."
+   }
+  ]
+ },
+ "meggyleves": {
+  "nom": "Meggyleves",
+  "description": "Meggyleves — Hungarian cold cherry soup: a tangy sour-cherry soup with cinnamon, bound with sour cream and served well chilled. A surprising summer starter, somewhere between soup and dessert.",
+  "etapes": [
+   {
+    "titre": "Cook the cherries",
+    "detail": "Pit the cherries (sour cherries ideally) and cook them in water with the sugar and cinnamon for 10 minutes, until tender."
+   },
+   {
+    "titre": "Acidify",
+    "detail": "Add a squeeze of lemon juice to reinforce the fresh acidity typical of this soup."
+   },
+   {
+    "titre": "The binder",
+    "detail": "Whisk the flour into the cold sour cream until smooth and lump-free."
+   },
+   {
+    "titre": "Bind the soup",
+    "detail": "Whisk a little hot cherry juice into the cream to temper it, then pour it all back into the pan, stirring."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Heat gently for 2 to 3 minutes without boiling, until the soup thickens slightly and coats."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let cool then chill for at least 2 hours: meggyleves is served VERY cold, which is its whole charm."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve in bowls or glasses, with a few whole cherries and a drizzle of cream. A refreshing, original summer starter."
+   }
+  ]
+ },
+ "turoscsusza": {
+  "nom": "Túrós Csusza",
+  "description": "Túrós csusza — Hungarian cottage cheese pasta: wide noodles tossed with fresh cheese and sour cream, scattered with crispy bacon and its cracklings. Simple, rustic and surprisingly addictive.",
+  "etapes": [
+   {
+    "titre": "Cook the pasta",
+    "detail": "Cook the pasta (wide, like pappardelle or squares) in boiling salted water until tender. Drain, reserving a little water."
+   },
+   {
+    "titre": "Crispy bacon",
+    "detail": "Dice the bacon and render it in a pan until golden and crisp. Set aside the bacon and fat separately."
+   },
+   {
+    "titre": "Onion (optional)",
+    "detail": "Sauté the sliced onion in a little bacon fat until soft."
+   },
+   {
+    "titre": "Combine",
+    "detail": "In a bowl, mix the hot pasta with the fresh cheese, sour cream and a little bacon fat, until creamy. Season."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Add a little cooking water if the mix is too thick: it should stay smooth and coating."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter generously with crispy bacon and its cracklings, which bring the salty, crunchy contrast."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, piping hot. A sweet version also exists (no bacon, with sugar) — but the savoury one is the most iconic."
+   }
+  ]
+ },
+ "nasiuduk": {
+  "nom": "Nasi Uduk",
+  "description": "Nasi uduk — Indonesian coconut rice: fragrant rice cooked in coconut milk with lemongrass and garlic, fluffy and delicately sweet. The base of many Jakarta dishes, served with sides.",
+  "etapes": [
+   {
+    "titre": "Rinse the rice",
+    "detail": "Rinse the rice in fresh water several times until the water runs clear, to remove surface starch and get well-separated grains."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Briefly sauté the sliced garlic and onion in a little oil, just to release their aroma."
+   },
+   {
+    "titre": "Coconut cooking",
+    "detail": "Add the rice, coconut milk, an equal volume of water, the crushed lemongrass, bay leaf and salt. Stir and bring to a simmer."
+   },
+   {
+    "titre": "Absorption",
+    "detail": "Cover and cook over very low heat for 15 to 18 minutes, without stirring, until the liquid is fully absorbed."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Turn off the heat and let rest 10 minutes covered: the rice finishes swelling and turns perfectly fluffy."
+   },
+   {
+    "titre": "Fluff",
+    "detail": "Remove the lemongrass and bay leaf, then gently fluff with a fork."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the nasi uduk hot, traditionally in a small dome, with sides: fried chicken, egg, cucumber, peanuts and sambal."
+   }
+  ]
+ },
+ "perkedel": {
+  "nom": "Perkedel",
+  "description": "Perkedel — Indonesian potato croquettes: mash mixed with minced beef, shallot and herbs, shaped into patties and fried golden. A side or a snack, crisp outside, soft inside.",
+  "etapes": [
+   {
+    "titre": "Potatoes",
+    "detail": "Cook the potatoes, mash into a fine purée and let cool. (Frying them first as cubes, Indonesian style, gives even more flavour.)"
+   },
+   {
+    "titre": "Beef & aromatics",
+    "detail": "Sauté the sliced onion and garlic, then the minced beef, until cooked and fragrant. Season."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Mix the mash with the beef, chopped coriander and a little egg yolk to bind. Taste and adjust the salt."
+   },
+   {
+    "titre": "Form",
+    "detail": "Shape the mixture into small flattened oval patties between your palms."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Dip each patty in beaten egg white, which forms a thin golden crust when fried."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in oil at 180°C for 2 to 3 minutes per side until golden and crisp. Drain on paper towels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot as a side to rice and sambal, or as a snack. A squeeze of lime lifts it nicely."
+   }
+  ]
+ },
+ "ayamkecap": {
+  "nom": "Ayam Kecap",
+  "description": "Ayam kecap — Indonesian sweet soy chicken: chicken pieces simmered in a caramelised soy sauce with garlic, ginger and lemongrass, until glazed and glossy. Sweet, savoury and irresistible over rice.",
+  "etapes": [
+   {
+    "titre": "Brown the chicken",
+    "detail": "Season the chicken pieces and brown them in hot oil on all sides. Set aside."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "In the same pan, sauté the onion, garlic, ginger and crushed lemongrass until fragrant."
+   },
+   {
+    "titre": "Sweet soy sauce",
+    "detail": "Add the soy sauce and sugar (the equivalent of kecap manis, Indonesian sweet soy) and let caramelise for 1 minute."
+   },
+   {
+    "titre": "Return the chicken",
+    "detail": "Put the chicken back in the pan and coat it well in the sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add a little water, cover and simmer for 15 to 20 minutes, until the chicken is cooked and tender."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Remove the lid and let the sauce reduce and coat the chicken in a lovely caramelised gloss."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the ayam kecap over white rice (ideally nasi uduk), with fried onions and a sambal to lift it."
+   }
+  ]
+ },
+ "kolak": {
+  "nom": "Kolak",
+  "description": "Kolak — Indonesian banana and sweet potato dessert: soft fruits simmered in coconut milk with palm sugar and cinnamon. Sweet, creamy and comforting, very popular during Ramadan.",
+  "etapes": [
+   {
+    "titre": "Sweet potato",
+    "detail": "Peel the sweet potato and cut it into even cubes about 2 cm."
+   },
+   {
+    "titre": "Coconut base",
+    "detail": "Heat the coconut milk with a volume of water, the sugar (ideally palm sugar), cinnamon and a pinch of salt, without boiling hard."
+   },
+   {
+    "titre": "Cook the sweet potato",
+    "detail": "Add the sweet potato cubes and simmer gently for 12 to 15 minutes, until tender but still holding."
+   },
+   {
+    "titre": "Banana",
+    "detail": "Peel and cut the bananas into thick chunks. Add them at the end (they cook fast and would fall apart otherwise)."
+   },
+   {
+    "titre": "Melt",
+    "detail": "Simmer another 5 minutes: the bananas turn soft and the coconut milk thickens slightly as it soaks up the flavours."
+   },
+   {
+    "titre": "Balance",
+    "detail": "Taste and adjust: kolak should be sweet, with a touch of salt that lifts the sweetness of the coconut and fruit."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the kolak warm or chilled in bowls. You can add tapioca pearls or jackfruit for a richer version."
+   }
+  ]
+ },
+ "buburayam": {
+  "nom": "Bubur Ayam",
+  "description": "Bubur ayam — Indonesian chicken rice porridge: rice slowly simmered into a silky congee, topped with shredded chicken, fried onions, peanuts and a dash of soy. The comforting street breakfast of Jakarta.",
+  "etapes": [
+   {
+    "titre": "Poach the chicken",
+    "detail": "Poach the chicken breast in the stock with the ginger and garlic for 15 minutes, remove, shred it and keep the fragrant stock."
+   },
+   {
+    "titre": "Cook the rice",
+    "detail": "Add the rinsed rice to the stock and cook over low heat for 25 to 30 minutes, stirring often, into a smooth, silky porridge (add water/stock if needed)."
+   },
+   {
+    "titre": "Texture",
+    "detail": "The bubur should be creamy and flowing, like a very loose risotto. Season and adjust the consistency."
+   },
+   {
+    "titre": "Toppings",
+    "detail": "Prepare the toppings: crispy fried onions, toasted crushed peanuts, chopped spring onion."
+   },
+   {
+    "titre": "Seasoning",
+    "detail": "Add a dash of soy sauce to the porridge for salty depth (umami)."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pour the bubur into bowls, arrange the shredded chicken on top."
+   },
+   {
+    "titre": "Garnish & serve",
+    "detail": "Scatter with fried onions, peanuts, spring onion and a final drizzle of soy. Serve very hot — it's Indonesia's morning comfort."
+   }
+  ]
  }
 };

@@ -3070,4 +3070,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud, nature avec du beurre et de la chapelure grillée, ou en accompagnement d'un plat en sauce (goulasch, viande braisée).", badge: null }
     ]
   },
+  nokedli: {
+    dateAjout: "2026-07-09T16:01:00",
+    nom: "Nokedli",
+    cat: "encas", pays: "hongrie",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥟",
+    description: "Nokedli — les petites pâtes aux œufs hongroises (les spätzle d'Europe centrale) : une pâte molle poussée dans l'eau bouillante en petits dumplings irréguliers, dorés au beurre. L'accompagnement idéal du paprikash.",
+    tableauNokedli: [
+      { nb: 1, farine: "60 g", oeufs: "1", beurre: "10 g", sel: "2 g" },
+      { nb: 2, farine: "120 g", oeufs: "2", beurre: "20 g", sel: "4 g" },
+      { nb: 3, farine: "180 g", oeufs: "3", beurre: "30 g", sel: "6 g" },
+      { nb: 4, farine: "240 g", oeufs: "4", beurre: "40 g", sel: "8 g" },
+      { nb: 5, farine: "300 g", oeufs: "5", beurre: "50 g", sel: "10 g" },
+      { nb: 6, farine: "360 g", oeufs: "6", beurre: "60 g", sel: "12 g" },
+      { nb: 7, farine: "420 g", oeufs: "7", beurre: "70 g", sel: "14 g" },
+      { nb: 8, farine: "480 g", oeufs: "8", beurre: "80 g", sel: "16 g" },
+      { nb: 9, farine: "540 g", oeufs: "9", beurre: "90 g", sel: "18 g" },
+      { nb: 10, farine: "600 g", oeufs: "10", beurre: "100 g", sel: "20 g" },
+      { nb: 11, farine: "660 g", oeufs: "11", beurre: "110 g", sel: "22 g" },
+      { nb: 12, farine: "720 g", oeufs: "12", beurre: "120 g", sel: "24 g" },
+      { nb: 13, farine: "780 g", oeufs: "13", beurre: "130 g", sel: "26 g" },
+      { nb: 14, farine: "840 g", oeufs: "14", beurre: "140 g", sel: "28 g" },
+      { nb: 15, farine: "900 g", oeufs: "15", beurre: "150 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, l'œuf, le sel et un peu d'eau jusqu'à obtenir une pâte molle, collante et élastique (plus épaisse qu'une pâte à crêpes). Laissez reposer 10 min.", badge: null },
+      { icone: "💧", titre: "Eau bouillante", detail: "Portez une grande casserole d'eau salée à ébullition franche.", badge: null },
+      { icone: "🕳️", titre: "Former les nokedli", detail: "Poussez la pâte à travers une passoire à gros trous (ou une planche à nokedli) directement au-dessus de l'eau : de petits dumplings irréguliers se forment et tombent dans l'eau.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Ils sont cuits quand ils remontent à la surface (1 à 2 min). Ne surchargez pas la casserole, procédez en plusieurs fois.", badge: null },
+      { icone: "🚿", titre: "Égoutter", detail: "Récupérez-les à l'écumoire et égouttez-les. Passez-les rapidement sous l'eau froide si vous ne les servez pas tout de suite, pour éviter qu'ils collent.", badge: null },
+      { icone: "🧈", titre: "Beurrer", detail: "Faites fondre le beurre dans une poêle et faites-y sauter les nokedli jusqu'à ce qu'ils soient enrobés et légèrement dorés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud en accompagnement d'un plat en sauce (paprikash, goulash), ou nature avec du fromage blanc et du lard.", badge: null }
+    ]
+  },
+  perkedel: {
+    dateAjout: "2026-07-09T16:06:00",
+    nom: "Perkedel",
+    cat: "encas", pays: "indonesie",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Perkedel — les croquettes de pomme de terre indonésiennes : une purée mêlée de bœuf haché, d'échalote et d'herbes, façonnée en galettes et frites dorées. Un accompagnement ou un snack croustillant dehors, fondant dedans.",
+    tableauPerkedel: [
+      { nb: 1, pommedeterre: "180 g", boeufHache: "40 g", oeufs: "½", oignon: "½", ail: "1", coriandre: "5 g", huilefriture: "20 ml", sel: "2 g" },
+      { nb: 2, pommedeterre: "360 g", boeufHache: "80 g", oeufs: "1", oignon: "1", ail: "2", coriandre: "10 g", huilefriture: "40 ml", sel: "4 g" },
+      { nb: 3, pommedeterre: "540 g", boeufHache: "120 g", oeufs: "1½", oignon: "1½", ail: "3", coriandre: "15 g", huilefriture: "60 ml", sel: "6 g" },
+      { nb: 4, pommedeterre: "720 g", boeufHache: "160 g", oeufs: "2", oignon: "2", ail: "4", coriandre: "20 g", huilefriture: "80 ml", sel: "8 g" },
+      { nb: 5, pommedeterre: "900 g", boeufHache: "200 g", oeufs: "2½", oignon: "2½", ail: "5", coriandre: "25 g", huilefriture: "100 ml", sel: "10 g" },
+      { nb: 6, pommedeterre: "1080 g", boeufHache: "240 g", oeufs: "3", oignon: "3", ail: "6", coriandre: "30 g", huilefriture: "120 ml", sel: "12 g" },
+      { nb: 7, pommedeterre: "1260 g", boeufHache: "280 g", oeufs: "3½", oignon: "3½", ail: "7", coriandre: "35 g", huilefriture: "140 ml", sel: "14 g" },
+      { nb: 8, pommedeterre: "1440 g", boeufHache: "320 g", oeufs: "4", oignon: "4", ail: "8", coriandre: "40 g", huilefriture: "160 ml", sel: "16 g" },
+      { nb: 9, pommedeterre: "1620 g", boeufHache: "360 g", oeufs: "4½", oignon: "4½", ail: "9", coriandre: "45 g", huilefriture: "180 ml", sel: "18 g" },
+      { nb: 10, pommedeterre: "1800 g", boeufHache: "400 g", oeufs: "5", oignon: "5", ail: "10", coriandre: "50 g", huilefriture: "200 ml", sel: "20 g" },
+      { nb: 11, pommedeterre: "1980 g", boeufHache: "440 g", oeufs: "5½", oignon: "5½", ail: "11", coriandre: "55 g", huilefriture: "220 ml", sel: "22 g" },
+      { nb: 12, pommedeterre: "2160 g", boeufHache: "480 g", oeufs: "6", oignon: "6", ail: "12", coriandre: "60 g", huilefriture: "240 ml", sel: "24 g" },
+      { nb: 13, pommedeterre: "2340 g", boeufHache: "520 g", oeufs: "6½", oignon: "6½", ail: "13", coriandre: "65 g", huilefriture: "260 ml", sel: "26 g" },
+      { nb: 14, pommedeterre: "2520 g", boeufHache: "560 g", oeufs: "7", oignon: "7", ail: "14", coriandre: "70 g", huilefriture: "280 ml", sel: "28 g" },
+      { nb: 15, pommedeterre: "2700 g", boeufHache: "600 g", oeufs: "7½", oignon: "7½", ail: "15", coriandre: "75 g", huilefriture: "300 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Pommes de terre", detail: "Faites cuire les pommes de terre, écrasez-les en purée fine et laissez tiédir. (Les frire d'abord en dés, à l'indonésienne, donne encore plus de goût.)", badge: null },
+      { icone: "🥩", titre: "Bœuf & aromates", detail: "Faites revenir l'oignon et l'ail émincés, puis le bœuf haché, jusqu'à ce qu'il soit cuit et bien parfumé. Salez.", badge: null },
+      { icone: "🌿", titre: "Mélanger", detail: "Mélangez la purée avec le bœuf, la coriandre ciselée et un peu de jaune d'œuf pour lier. Goûtez et ajustez le sel.", badge: null },
+      { icone: "🖐️", titre: "Former", detail: "Façonnez la préparation en petites galettes ovales aplaties, entre vos paumes.", badge: null },
+      { icone: "🥚", titre: "Enrober", detail: "Trempez chaque galette dans le blanc d'œuf battu, qui va former une fine croûte dorée à la friture.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire dans l'huile à 180°C 2 à 3 min par face jusqu'à ce qu'elles soient bien dorées et croustillantes. Égouttez sur papier absorbant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud en accompagnement d'un riz et d'un sambal, ou en snack. Un trait de citron vert relève joliment le tout.", badge: null }
+    ]
+  },
 });

@@ -1999,5 +1999,42 @@ Object.assign(recettes, {
       { icone: "🍅", titre: "Cuire", detail: "Incorporez les dés de tomate et les épinards, salez, puis poursuivez la cuisson 5 minutes en remuant jusqu'à ce que les épinards tombent.", badge: null },
       { icone: "🍽️", titre: "Servir", detail: "Rectifiez l'assaisonnement et servez le tofu brouillé bien chaud, éventuellement sur une tranche de pain grillé.", badge: null }
     ]
-  }
+  },
+  buburayam: {
+    dateAjout: "2026-07-09T16:09:00",
+    nom: "Bubur Ayam",
+    cat: "brunch", pays: "indonesie",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥣",
+    description: "Bubur ayam — le porridge de riz au poulet indonésien : un riz longuement mijoté en bouillie onctueuse, garni de poulet effiloché, d'oignons frits, de cacahuètes et d'un trait de soja. Le petit-déjeuner réconfortant des rues de Jakarta.",
+    tableauBuburayam: [
+      { nb: 1, riz: "60 g", poulet: "80 g", bouillon: "300 ml", gingembre: "3 g", ail: "1", ciboule: "6 g", cacahuete: "8 g", saucesoja: "8 ml", sel: "2 g" },
+      { nb: 2, riz: "120 g", poulet: "160 g", bouillon: "600 ml", gingembre: "6 g", ail: "2", ciboule: "12 g", cacahuete: "16 g", saucesoja: "16 ml", sel: "4 g" },
+      { nb: 3, riz: "180 g", poulet: "240 g", bouillon: "900 ml", gingembre: "9 g", ail: "3", ciboule: "18 g", cacahuete: "24 g", saucesoja: "24 ml", sel: "6 g" },
+      { nb: 4, riz: "240 g", poulet: "320 g", bouillon: "1200 ml", gingembre: "12 g", ail: "4", ciboule: "24 g", cacahuete: "32 g", saucesoja: "32 ml", sel: "8 g" },
+      { nb: 5, riz: "300 g", poulet: "400 g", bouillon: "1500 ml", gingembre: "15 g", ail: "5", ciboule: "30 g", cacahuete: "40 g", saucesoja: "40 ml", sel: "10 g" },
+      { nb: 6, riz: "360 g", poulet: "480 g", bouillon: "1800 ml", gingembre: "18 g", ail: "6", ciboule: "36 g", cacahuete: "48 g", saucesoja: "48 ml", sel: "12 g" },
+      { nb: 7, riz: "420 g", poulet: "560 g", bouillon: "2100 ml", gingembre: "21 g", ail: "7", ciboule: "42 g", cacahuete: "56 g", saucesoja: "56 ml", sel: "14 g" },
+      { nb: 8, riz: "480 g", poulet: "640 g", bouillon: "2400 ml", gingembre: "24 g", ail: "8", ciboule: "48 g", cacahuete: "64 g", saucesoja: "64 ml", sel: "16 g" },
+      { nb: 9, riz: "540 g", poulet: "720 g", bouillon: "2700 ml", gingembre: "27 g", ail: "9", ciboule: "54 g", cacahuete: "72 g", saucesoja: "72 ml", sel: "18 g" },
+      { nb: 10, riz: "600 g", poulet: "800 g", bouillon: "3000 ml", gingembre: "30 g", ail: "10", ciboule: "60 g", cacahuete: "80 g", saucesoja: "80 ml", sel: "20 g" },
+      { nb: 11, riz: "660 g", poulet: "880 g", bouillon: "3300 ml", gingembre: "33 g", ail: "11", ciboule: "66 g", cacahuete: "88 g", saucesoja: "88 ml", sel: "22 g" },
+      { nb: 12, riz: "720 g", poulet: "960 g", bouillon: "3600 ml", gingembre: "36 g", ail: "12", ciboule: "72 g", cacahuete: "96 g", saucesoja: "96 ml", sel: "24 g" },
+      { nb: 13, riz: "780 g", poulet: "1040 g", bouillon: "3900 ml", gingembre: "39 g", ail: "13", ciboule: "78 g", cacahuete: "104 g", saucesoja: "104 ml", sel: "26 g" },
+      { nb: 14, riz: "840 g", poulet: "1120 g", bouillon: "4200 ml", gingembre: "42 g", ail: "14", ciboule: "84 g", cacahuete: "112 g", saucesoja: "112 ml", sel: "28 g" },
+      { nb: 15, riz: "900 g", poulet: "1200 g", bouillon: "4500 ml", gingembre: "45 g", ail: "15", ciboule: "90 g", cacahuete: "120 g", saucesoja: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Pocher le poulet", detail: "Pochez le blanc de poulet dans le bouillon avec le gingembre et l'ail 15 min, retirez-le, effilochez-le et gardez le bouillon parfumé.", badge: null },
+      { icone: "🍚", titre: "Cuire le riz", detail: "Ajoutez le riz rincé dans le bouillon et faites cuire à feu doux 25 à 30 min en remuant souvent, jusqu'à obtenir une bouillie lisse et onctueuse (ajoutez de l'eau/bouillon si besoin).", badge: null },
+      { icone: "🥄", titre: "Texture", detail: "Le bubur doit être crémeux et coulant, comme un risotto très souple. Salez et rectifiez la consistance.", badge: null },
+      { icone: "🧅", titre: "Garnitures", detail: "Préparez les garnitures : oignons frits croustillants, cacahuètes grillées concassées, ciboule ciselée.", badge: null },
+      { icone: "🐟", titre: "Assaisonnement", detail: "Ajoutez un trait de sauce soja dans le porridge pour la profondeur salée (umami).", badge: null },
+      { icone: "🍜", titre: "Dresser", detail: "Versez le bubur dans des bols, disposez le poulet effiloché dessus.", badge: null },
+      { icone: "✨", titre: "Garnir & servir", detail: "Parsemez d'oignons frits, de cacahuètes, de ciboule et d'un dernier filet de soja. Servez très chaud, c'est le réconfort du matin indonésien.", badge: null }
+    ]
+  },
 });

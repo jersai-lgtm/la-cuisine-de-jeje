@@ -3330,4 +3330,41 @@ Object.assign(recettes, {
       { icone: "🌿", titre: "Servir", detail: "Servez bien chaud avec une cuillère de crème fraîche et de l'aneth ciselé. Se déguste aussi avec de petits raviolis (uszka) ou une croquette.", badge: null }
     ]
   },
+  meggyleves: {
+    dateAjout: "2026-07-09T16:03:00",
+    nom: "Meggyleves",
+    cat: "soupes", pays: "hongrie",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍒",
+    description: "Meggyleves — la soupe froide de cerises hongroise : un velouté acidulé de griottes à la cannelle, lié à la crème aigre et servi bien frais. Une entrée d'été surprenante, entre soupe et dessert.",
+    tableauMeggyleves: [
+      { nb: 1, cerise: "100 g", cremefraiche: "40 g", sucre: "20 g", cannelle: "1 g", citron: "¼", farine: "5 g" },
+      { nb: 2, cerise: "200 g", cremefraiche: "80 g", sucre: "40 g", cannelle: "2 g", citron: "½", farine: "10 g" },
+      { nb: 3, cerise: "300 g", cremefraiche: "120 g", sucre: "60 g", cannelle: "3 g", citron: "¾", farine: "15 g" },
+      { nb: 4, cerise: "400 g", cremefraiche: "160 g", sucre: "80 g", cannelle: "4 g", citron: "1", farine: "20 g" },
+      { nb: 5, cerise: "500 g", cremefraiche: "200 g", sucre: "100 g", cannelle: "5 g", citron: "1¼", farine: "25 g" },
+      { nb: 6, cerise: "600 g", cremefraiche: "240 g", sucre: "120 g", cannelle: "6 g", citron: "1½", farine: "30 g" },
+      { nb: 7, cerise: "700 g", cremefraiche: "280 g", sucre: "140 g", cannelle: "7 g", citron: "1¾", farine: "35 g" },
+      { nb: 8, cerise: "800 g", cremefraiche: "320 g", sucre: "160 g", cannelle: "8 g", citron: "2", farine: "40 g" },
+      { nb: 9, cerise: "900 g", cremefraiche: "360 g", sucre: "180 g", cannelle: "9 g", citron: "2¼", farine: "45 g" },
+      { nb: 10, cerise: "1000 g", cremefraiche: "400 g", sucre: "200 g", cannelle: "10 g", citron: "2½", farine: "50 g" },
+      { nb: 11, cerise: "1100 g", cremefraiche: "440 g", sucre: "220 g", cannelle: "11 g", citron: "2¾", farine: "55 g" },
+      { nb: 12, cerise: "1200 g", cremefraiche: "480 g", sucre: "240 g", cannelle: "12 g", citron: "3", farine: "60 g" },
+      { nb: 13, cerise: "1300 g", cremefraiche: "520 g", sucre: "260 g", cannelle: "13 g", citron: "3¼", farine: "65 g" },
+      { nb: 14, cerise: "1400 g", cremefraiche: "560 g", sucre: "280 g", cannelle: "14 g", citron: "3½", farine: "70 g" },
+      { nb: 15, cerise: "1500 g", cremefraiche: "600 g", sucre: "300 g", cannelle: "15 g", citron: "3¾", farine: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍒", titre: "Cuire les cerises", detail: "Dénoyautez les cerises (des griottes idéalement) et faites-les cuire dans de l'eau avec le sucre et la cannelle 10 min, jusqu'à ce qu'elles soient tendres.", badge: null },
+      { icone: "🍋", titre: "Acidifier", detail: "Ajoutez un trait de jus de citron pour renforcer l'acidité fraîche, typique de cette soupe.", badge: null },
+      { icone: "🥛", titre: "Le liant", detail: "Délayez la farine dans la crème aigre froide jusqu'à obtenir un mélange lisse, sans grumeaux.", badge: null },
+      { icone: "🌀", titre: "Lier la soupe", detail: "Versez un peu de jus de cerises chaud dans la crème en fouettant (pour tempérer), puis reversez le tout dans la casserole en remuant.", badge: null },
+      { icone: "♨️", titre: "Épaissir", detail: "Faites chauffer doucement 2 à 3 min sans faire bouillir, jusqu'à ce que la soupe épaississe légèrement et devienne nappante.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laissez refroidir puis réfrigérez au moins 2 h : la meggyleves se sert TRÈS froide, c'est là tout son charme.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez dans des bols ou des verres, avec quelques cerises entières et un filet de crème. Une entrée d'été rafraîchissante et originale.", badge: null }
+    ]
+  },
 });

@@ -6049,4 +6049,78 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Poudrer & servir", detail: "Saupoudrez généreusement de sucre glace. La szarlotka se déguste tiède ou froide, parfois avec une boule de glace vanille.", badge: null }
     ]
   },
+  retes: {
+    dateAjout: "2026-07-09T16:02:00",
+    nom: "Rétes",
+    cat: "desserts", pays: "hongrie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥐",
+    description: "Rétes — le strudel hongrois : une pâte fine et croustillante enroulée autour d'une garniture de pommes, noix, raisins secs et cannelle, dorée au four et poudrée de sucre glace. Le cousin du strudel viennois, tout en feuilleté.",
+    tableauRetes: [
+      { nb: 1, patefeuilletee: "60 g", pomme: "1", sucre: "20 g", noix: "10 g", raisinssecs: "8 g", cannelle: "1 g", beurre: "8 g", sucreglace: "4 g" },
+      { nb: 2, patefeuilletee: "120 g", pomme: "2", sucre: "40 g", noix: "20 g", raisinssecs: "16 g", cannelle: "2 g", beurre: "16 g", sucreglace: "8 g" },
+      { nb: 3, patefeuilletee: "180 g", pomme: "3", sucre: "60 g", noix: "30 g", raisinssecs: "24 g", cannelle: "3 g", beurre: "24 g", sucreglace: "12 g" },
+      { nb: 4, patefeuilletee: "240 g", pomme: "4", sucre: "80 g", noix: "40 g", raisinssecs: "32 g", cannelle: "4 g", beurre: "32 g", sucreglace: "16 g" },
+      { nb: 5, patefeuilletee: "300 g", pomme: "5", sucre: "100 g", noix: "50 g", raisinssecs: "40 g", cannelle: "5 g", beurre: "40 g", sucreglace: "20 g" },
+      { nb: 6, patefeuilletee: "360 g", pomme: "6", sucre: "120 g", noix: "60 g", raisinssecs: "48 g", cannelle: "6 g", beurre: "48 g", sucreglace: "24 g" },
+      { nb: 7, patefeuilletee: "420 g", pomme: "7", sucre: "140 g", noix: "70 g", raisinssecs: "56 g", cannelle: "7 g", beurre: "56 g", sucreglace: "28 g" },
+      { nb: 8, patefeuilletee: "480 g", pomme: "8", sucre: "160 g", noix: "80 g", raisinssecs: "64 g", cannelle: "8 g", beurre: "64 g", sucreglace: "32 g" },
+      { nb: 9, patefeuilletee: "540 g", pomme: "9", sucre: "180 g", noix: "90 g", raisinssecs: "72 g", cannelle: "9 g", beurre: "72 g", sucreglace: "36 g" },
+      { nb: 10, patefeuilletee: "600 g", pomme: "10", sucre: "200 g", noix: "100 g", raisinssecs: "80 g", cannelle: "10 g", beurre: "80 g", sucreglace: "40 g" },
+      { nb: 11, patefeuilletee: "660 g", pomme: "11", sucre: "220 g", noix: "110 g", raisinssecs: "88 g", cannelle: "11 g", beurre: "88 g", sucreglace: "44 g" },
+      { nb: 12, patefeuilletee: "720 g", pomme: "12", sucre: "240 g", noix: "120 g", raisinssecs: "96 g", cannelle: "12 g", beurre: "96 g", sucreglace: "48 g" },
+      { nb: 13, patefeuilletee: "780 g", pomme: "13", sucre: "260 g", noix: "130 g", raisinssecs: "104 g", cannelle: "13 g", beurre: "104 g", sucreglace: "52 g" },
+      { nb: 14, patefeuilletee: "840 g", pomme: "14", sucre: "280 g", noix: "140 g", raisinssecs: "112 g", cannelle: "14 g", beurre: "112 g", sucreglace: "56 g" },
+      { nb: 15, patefeuilletee: "900 g", pomme: "15", sucre: "300 g", noix: "150 g", raisinssecs: "120 g", cannelle: "15 g", beurre: "120 g", sucreglace: "60 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍎", titre: "La garniture", detail: "Épluchez et râpez (ou coupez finement) les pommes. Mélangez-les avec le sucre, les noix concassées, les raisins secs et la cannelle.", badge: null },
+      { icone: "📏", titre: "Abaisser la pâte", detail: "Étalez la pâte feuilletée le plus finement possible en un grand rectangle sur un plan fariné.", badge: null },
+      { icone: "🧈", titre: "Beurrer", detail: "Badigeonnez la surface de beurre fondu : c'est ce qui donnera le feuilletage doré et croustillant.", badge: null },
+      { icone: "🍏", titre: "Garnir", detail: "Répartissez la garniture aux pommes sur un tiers de la pâte, en laissant les bords libres.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Roulez la pâte serrée sur elle-même en un boudin, en repliant les extrémités pour emprisonner le jus. Déposez sur une plaque, soudure en dessous.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Badigeonnez de beurre et enfournez à 190°C 25 à 30 min, jusqu'à ce que le rétes soit bien doré et croustillant.", badge: null },
+      { icone: "❄️", titre: "Servir", detail: "Laissez tiédir, poudrez généreusement de sucre glace et coupez en tronçons. Délicieux tiède, avec une boule de glace vanille.", badge: null }
+    ]
+  },
+  kolak: {
+    dateAjout: "2026-07-09T16:08:00",
+    nom: "Kolak",
+    cat: "desserts", pays: "indonesie",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍌",
+    description: "Kolak — le dessert indonésien à la banane et patate douce : des fruits fondants mijotés dans un lait de coco au sucre de palme et à la cannelle. Doux, crémeux et réconfortant, très populaire pendant le Ramadan.",
+    tableauKolak: [
+      { nb: 1, banane: "1", patatedouce: "60 g", laitcoco: "100 ml", sucre: "20 g", cannelle: "1 g", sel: "0.5 g" },
+      { nb: 2, banane: "2", patatedouce: "120 g", laitcoco: "200 ml", sucre: "40 g", cannelle: "2 g", sel: "1 g" },
+      { nb: 3, banane: "3", patatedouce: "180 g", laitcoco: "300 ml", sucre: "60 g", cannelle: "3 g", sel: "1.5 g" },
+      { nb: 4, banane: "4", patatedouce: "240 g", laitcoco: "400 ml", sucre: "80 g", cannelle: "4 g", sel: "2 g" },
+      { nb: 5, banane: "5", patatedouce: "300 g", laitcoco: "500 ml", sucre: "100 g", cannelle: "5 g", sel: "2.5 g" },
+      { nb: 6, banane: "6", patatedouce: "360 g", laitcoco: "600 ml", sucre: "120 g", cannelle: "6 g", sel: "3 g" },
+      { nb: 7, banane: "7", patatedouce: "420 g", laitcoco: "700 ml", sucre: "140 g", cannelle: "7 g", sel: "3.5 g" },
+      { nb: 8, banane: "8", patatedouce: "480 g", laitcoco: "800 ml", sucre: "160 g", cannelle: "8 g", sel: "4 g" },
+      { nb: 9, banane: "9", patatedouce: "540 g", laitcoco: "900 ml", sucre: "180 g", cannelle: "9 g", sel: "4.5 g" },
+      { nb: 10, banane: "10", patatedouce: "600 g", laitcoco: "1000 ml", sucre: "200 g", cannelle: "10 g", sel: "5 g" },
+      { nb: 11, banane: "11", patatedouce: "660 g", laitcoco: "1100 ml", sucre: "220 g", cannelle: "11 g", sel: "5.5 g" },
+      { nb: 12, banane: "12", patatedouce: "720 g", laitcoco: "1200 ml", sucre: "240 g", cannelle: "12 g", sel: "6 g" },
+      { nb: 13, banane: "13", patatedouce: "780 g", laitcoco: "1300 ml", sucre: "260 g", cannelle: "13 g", sel: "6.5 g" },
+      { nb: 14, banane: "14", patatedouce: "840 g", laitcoco: "1400 ml", sucre: "280 g", cannelle: "14 g", sel: "7 g" },
+      { nb: 15, banane: "15", patatedouce: "900 g", laitcoco: "1500 ml", sucre: "300 g", cannelle: "15 g", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍠", titre: "Patate douce", detail: "Épluchez la patate douce et coupez-la en cubes réguliers d'environ 2 cm.", badge: null },
+      { icone: "🥥", titre: "Base coco", detail: "Faites chauffer le lait de coco avec un volume d'eau, le sucre (idéalement du sucre de palme), la cannelle et une pincée de sel, sans faire bouillir vivement.", badge: null },
+      { icone: "♨️", titre: "Cuire la patate douce", detail: "Ajoutez les cubes de patate douce et laissez mijoter doucement 12 à 15 min, jusqu'à ce qu'ils soient tendres mais encore tenus.", badge: null },
+      { icone: "🍌", titre: "Banane", detail: "Épluchez et coupez les bananes en tronçons épais. Ajoutez-les en fin de cuisson (elles cuisent vite et se déferaient sinon).", badge: null },
+      { icone: "🥄", titre: "Fondre", detail: "Laissez mijoter encore 5 min : les bananes deviennent fondantes et le lait de coco épaissit légèrement en s'imprégnant des saveurs.", badge: null },
+      { icone: "🧂", titre: "Équilibrer", detail: "Goûtez et ajustez : le kolak doit être doux, avec une pointe de sel qui rehausse le sucré du coco et des fruits.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Servez le kolak tiède ou frais dans des bols. On peut y ajouter des perles de tapioca ou du jacquier pour une version plus riche.", badge: null }
+    ]
+  },
 });
