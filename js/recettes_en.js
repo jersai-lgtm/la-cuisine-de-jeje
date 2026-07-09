@@ -56308,5 +56308,175 @@ window.RECETTES_EN = {
     "detail": "Adjust the seasoning. Serve the feijoada piping hot with white rice and slices of bread. Tip: this dish is even better reheated the next day."
    }
   ]
+ },
+ "bobodecamarao": {
+  "nom": "Bobó de Camarão",
+  "description": "Bobó de camarão — shrimp simmered in a silky cream of cassava and coconut milk, scented with garlic, tomato and coriander. A great Bahian classic, served with white rice.",
+  "etapes": [
+   {
+    "titre": "Cook the cassava",
+    "detail": "Peel the cassava, remove the hard central fibre and cut it into pieces. Boil it in salted water for 20 to 25 minutes until very tender."
+   },
+   {
+    "titre": "Blend the cream",
+    "detail": "Blend the cooked cassava with the coconut milk and a little of its cooking water until you get a smooth, creamy purée. Set aside."
+   },
+   {
+    "titre": "Marinate the shrimp",
+    "detail": "Peel the shrimp and season with salt, crushed garlic and a squeeze of lemon. Let marinate for 10 minutes."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "In a pot, heat the oil and sauté the sliced onion, diced pepper and crushed tomato for 8 minutes until softened."
+   },
+   {
+    "titre": "Add the cassava cream",
+    "detail": "Pour the cassava-coconut purée into the pot, stir and simmer for 5 minutes over low heat, stirring to prevent it from catching."
+   },
+   {
+    "titre": "Cook the shrimp",
+    "detail": "Add the shrimp and poach them in the cream for 4 to 5 minutes, just until pink and firm. Don't overcook so they stay tender."
+   },
+   {
+    "titre": "Finish and serve",
+    "detail": "Adjust the seasoning, scatter generously with fresh chopped coriander and a squeeze of lemon. Serve piping hot with white rice."
+   }
+  ]
+ },
+ "empadaodefrango": {
+  "nom": "Empadão de Frango",
+  "description": "Empadão de frango — the great Brazilian chicken pie: a melt-in-the-mouth crust filled with a creamy braised chicken with tomatoes, onions, olives and peas. Comforting and generous.",
+  "etapes": [
+   {
+    "titre": "Make the pastry",
+    "detail": "Rub the flour with the cold butter using your fingertips. Add the egg and a pinch of salt, gather into a ball without overworking. Wrap and chill for 30 minutes."
+   },
+   {
+    "titre": "Cook the chicken",
+    "detail": "Sauté the chopped onion and garlic in the oil. Add the diced chicken, brown it, then the crushed tomato. Season and simmer for 15 minutes."
+   },
+   {
+    "titre": "Creamy filling",
+    "detail": "Add the peas and sliced olives. Cook for 5 minutes: the filling should be moist and bound, neither dry nor runny. Let cool."
+   },
+   {
+    "titre": "Roll out the pastry",
+    "detail": "Roll out two-thirds of the pastry and line a buttered tin, pressing well up the sides. Keep the rest for the lid."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour the cooled chicken filling onto the pastry base, pressing lightly and smoothing the top."
+   },
+   {
+    "titre": "Close the pie",
+    "detail": "Roll out the remaining pastry, lay it on as a lid and seal the edges by pinching. Brush with egg yolk and pierce a small hole in the centre for steam."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 30 to 35 minutes until golden. Let rest 10 minutes before slicing so the filling holds together."
+   }
+  ]
+ },
+ "paodemel": {
+  "nom": "Pão de Mel",
+  "description": "Pão de mel — Brazilian honey-and-cocoa spice cakes, soft and moist, often filled with jam or dulce de leche and coated in dark chocolate. A festive treat.",
+  "etapes": [
+   {
+    "titre": "Warm the honey",
+    "detail": "Gently warm the honey with the butter and milk over low heat until smooth and combined. Let cool slightly."
+   },
+   {
+    "titre": "Mix the dry",
+    "detail": "Mix the flour, cocoa, sugar, cinnamon and baking soda in a bowl."
+   },
+   {
+    "titre": "Make the batter",
+    "detail": "Stir in the egg then the warm honey-butter mixture into the dry ingredients. Whisk to a smooth, thick but pourable batter."
+   },
+   {
+    "titre": "Fill the moulds",
+    "detail": "Pour the batter into buttered half-sphere or muffin moulds, three-quarters full. The batter will rise as it bakes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 12 to 15 minutes. A skewer should come out clean. Don't overbake, to keep them moist. Unmould and let cool."
+   },
+   {
+    "titre": "Coat in chocolate",
+    "detail": "Melt the dark chocolate over a bain-marie. Dip each cooled pão de mel to coat it completely, then set on a rack."
+   },
+   {
+    "titre": "Let set",
+    "detail": "Let the chocolate set at room temperature or in the fridge. CHEF'S TIP: fill them with jam or dulce de leche before coating for the traditional version."
+   }
+  ]
+ },
+ "beijinho": {
+  "nom": "Beijinho",
+  "description": "Beijinho — Brazilian \"little kisses\": soft fudgy truffles of condensed milk and coconut, rolled into balls and topped with a clove. The coconut cousin of brigadeiro.",
+  "etapes": [
+   {
+    "titre": "Combine the ingredients",
+    "detail": "In a heavy-bottomed pan, mix the condensed milk, half the grated coconut and the butter."
+   },
+   {
+    "titre": "Cook the mixture",
+    "detail": "Cook over medium heat, stirring CONSTANTLY with a spatula, until the mass thickens and pulls away from the bottom of the pan (8 to 10 minutes)."
+   },
+   {
+    "titre": "Cool down",
+    "detail": "Pour the mixture onto a buttered plate, cover with cling film touching the surface and let cool completely (at least 1 hour, or 30 min in the fridge)."
+   },
+   {
+    "titre": "Roll the balls",
+    "detail": "Lightly butter your hands and roll the mixture into small walnut-sized balls. CHEF'S TIP: if it's too sticky, chill the mixture 15 more minutes."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Roll each ball in the remaining grated coconut mixed with a little sugar to coat them well."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Stick a clove into the top of each beijinho — the traditional signature (remove before biting)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Place each beijinho in a small paper case. Keep chilled until serving; they keep for 3 days."
+   }
+  ]
+ },
+ "bolinhodechuva": {
+  "nom": "Bolinho de Chuva",
+  "description": "Bolinho de chuva — Brazilian \"rain\" fritters: little balls of dough fried until fluffy inside, rolled in cinnamon sugar. The comforting snack for grey days.",
+  "etapes": [
+   {
+    "titre": "Mix the dry",
+    "detail": "Mix the flour, baking powder and half the sugar in a bowl."
+   },
+   {
+    "titre": "Add the wet",
+    "detail": "Stir in the egg then gradually the milk, whisking, until you get a thick, smooth batter that drops from the spoon (neither too runny nor too firm)."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat the frying oil to 170°C in a deep pan. A little batter should rise up sizzling gently."
+   },
+   {
+    "titre": "Form the fritters",
+    "detail": "Take small amounts of batter using two spoons and drop them gently into the hot oil. Don't overcrowd the pan."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry for 3 to 4 minutes, turning, until golden and puffed. They often turn themselves once cooked on one side."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Remove with a slotted spoon and drain on paper towels to remove excess oil."
+   },
+   {
+    "titre": "Coat and serve",
+    "detail": "Roll the still-warm bolinhos in the remaining sugar mixed with cinnamon. Serve immediately — they're best warm."
+   }
+  ]
  }
 };

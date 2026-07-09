@@ -2884,5 +2884,41 @@ Object.assign(recettes, {
       { icone: "🌀", titre: "Mixer", detail: "Mixer à pleine puissance 30 à 40 secondes jusqu'à obtenir une texture lisse, homogène et légèrement mousseuse.", badge: null },
       { icone: "🧊", titre: "Servir frais", detail: "Verser dans un grand verre sur quelques glaçons et déguster immédiatement, idéalement dans les 30 minutes suivant l'entraînement.", badge: null }
     ]
-  }
+  },
+  bolinhodechuva: {
+    nom: "Bolinho de Chuva",
+    cat: "encas", pays: "bresil",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍩",
+    description: "Bolinho de chuva — les beignets « de pluie » brésiliens : de petites boules de pâte frites, moelleuses à l'intérieur, roulées dans le sucre à la cannelle. Le goûter réconfortant des jours gris.",
+    tableauBolinhodechuva: [
+      { nb: 1, farine: "50 g", oeufs: "½", sucre: "15 g", lait: "40 ml", levurechimique: "2 g", cannelle: "2 g", huilefriture: "15 ml" },
+      { nb: 2, farine: "100 g", oeufs: "1", sucre: "30 g", lait: "80 ml", levurechimique: "4 g", cannelle: "4 g", huilefriture: "30 ml" },
+      { nb: 3, farine: "150 g", oeufs: "1½", sucre: "45 g", lait: "120 ml", levurechimique: "6 g", cannelle: "6 g", huilefriture: "45 ml" },
+      { nb: 4, farine: "200 g", oeufs: "2", sucre: "60 g", lait: "160 ml", levurechimique: "8 g", cannelle: "8 g", huilefriture: "60 ml" },
+      { nb: 5, farine: "250 g", oeufs: "2½", sucre: "75 g", lait: "200 ml", levurechimique: "10 g", cannelle: "10 g", huilefriture: "75 ml" },
+      { nb: 6, farine: "300 g", oeufs: "3", sucre: "90 g", lait: "240 ml", levurechimique: "12 g", cannelle: "12 g", huilefriture: "90 ml" },
+      { nb: 7, farine: "350 g", oeufs: "3½", sucre: "105 g", lait: "280 ml", levurechimique: "14 g", cannelle: "14 g", huilefriture: "105 ml" },
+      { nb: 8, farine: "400 g", oeufs: "4", sucre: "120 g", lait: "320 ml", levurechimique: "16 g", cannelle: "16 g", huilefriture: "120 ml" },
+      { nb: 9, farine: "450 g", oeufs: "4½", sucre: "135 g", lait: "360 ml", levurechimique: "18 g", cannelle: "18 g", huilefriture: "135 ml" },
+      { nb: 10, farine: "500 g", oeufs: "5", sucre: "150 g", lait: "400 ml", levurechimique: "20 g", cannelle: "20 g", huilefriture: "150 ml" },
+      { nb: 11, farine: "550 g", oeufs: "5½", sucre: "165 g", lait: "440 ml", levurechimique: "22 g", cannelle: "22 g", huilefriture: "165 ml" },
+      { nb: 12, farine: "600 g", oeufs: "6", sucre: "180 g", lait: "480 ml", levurechimique: "24 g", cannelle: "24 g", huilefriture: "180 ml" },
+      { nb: 13, farine: "650 g", oeufs: "6½", sucre: "195 g", lait: "520 ml", levurechimique: "26 g", cannelle: "26 g", huilefriture: "195 ml" },
+      { nb: 14, farine: "700 g", oeufs: "7", sucre: "210 g", lait: "560 ml", levurechimique: "28 g", cannelle: "28 g", huilefriture: "210 ml" },
+      { nb: 15, farine: "750 g", oeufs: "7½", sucre: "225 g", lait: "600 ml", levurechimique: "30 g", cannelle: "30 g", huilefriture: "225 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Mélanger le sec", detail: "Mélangez la farine, la levure chimique et la moitié du sucre dans un saladier.", badge: null },
+      { icone: "🥚", titre: "Ajouter l'humide", detail: "Incorporez l'œuf puis le lait progressivement en fouettant, jusqu'à une pâte épaisse et lisse qui tombe de la cuillère (ni trop liquide ni trop ferme).", badge: null },
+      { icone: "🌡️", titre: "Chauffer l'huile", detail: "Faites chauffer l'huile de friture à 170°C dans une casserole haute. Un peu de pâte doit remonter en grésillant doucement.", badge: null },
+      { icone: "🥄", titre: "Former les beignets", detail: "Prélevez de petites quantités de pâte à l'aide de deux cuillères et laissez-les tomber délicatement dans l'huile chaude. Ne surchargez pas la casserole.", badge: null },
+      { icone: "🍩", titre: "Frire", detail: "Faites frire 3 à 4 min en les retournant, jusqu'à ce qu'ils soient bien dorés et gonflés. Ils se retournent souvent seuls quand ils sont cuits d'un côté.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Retirez-les à l'écumoire et égouttez-les sur du papier absorbant pour retirer l'excédent d'huile.", badge: null },
+      { icone: "🍚", titre: "Enrober et servir", detail: "Roulez les bolinhos encore tièdes dans le reste de sucre mélangé à la cannelle. Servez aussitôt, c'est meilleur tiède.", badge: null }
+    ]
+  },
 });

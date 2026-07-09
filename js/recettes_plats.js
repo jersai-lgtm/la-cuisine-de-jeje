@@ -29905,4 +29905,76 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Rectifier et servir", detail: "Rectifiez l'assaisonnement. Servez la feijoada bien chaude avec du riz blanc et des tranches de pain. Astuce : ce plat est encore meilleur réchauffé le lendemain.", badge: null }
     ]
   },
+  bobodecamarao: {
+    nom: "Bobó de Camarão",
+    cat: "plats", pays: "bresil",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🦐",
+    description: "Bobó de camarão — crevettes mijotées dans une crème onctueuse de manioc et lait de coco, parfumée à l'ail, la tomate et la coriandre. Un grand classique bahianais, servi avec du riz blanc.",
+    tableauBobodecamarao: [
+      { nb: 1, crevettes: "120 g", manioc: "150 g", laitcoco: "80 ml", oignon: "½", ail: "2", tomates: "1", poivron: "40 g", coriandre: "8 g", huileolive: "10 ml", citron: "¼", sel: "2 g" },
+      { nb: 2, crevettes: "240 g", manioc: "300 g", laitcoco: "160 ml", oignon: "1", ail: "4", tomates: "2", poivron: "80 g", coriandre: "16 g", huileolive: "20 ml", citron: "½", sel: "4 g" },
+      { nb: 3, crevettes: "360 g", manioc: "450 g", laitcoco: "240 ml", oignon: "1½", ail: "6", tomates: "3", poivron: "120 g", coriandre: "24 g", huileolive: "30 ml", citron: "¾", sel: "6 g" },
+      { nb: 4, crevettes: "480 g", manioc: "600 g", laitcoco: "320 ml", oignon: "2", ail: "8", tomates: "4", poivron: "160 g", coriandre: "32 g", huileolive: "40 ml", citron: "1", sel: "8 g" },
+      { nb: 5, crevettes: "600 g", manioc: "750 g", laitcoco: "400 ml", oignon: "2½", ail: "10", tomates: "5", poivron: "200 g", coriandre: "40 g", huileolive: "50 ml", citron: "1¼", sel: "10 g" },
+      { nb: 6, crevettes: "720 g", manioc: "900 g", laitcoco: "480 ml", oignon: "3", ail: "12", tomates: "6", poivron: "240 g", coriandre: "48 g", huileolive: "60 ml", citron: "1½", sel: "12 g" },
+      { nb: 7, crevettes: "840 g", manioc: "1050 g", laitcoco: "560 ml", oignon: "3½", ail: "14", tomates: "7", poivron: "280 g", coriandre: "56 g", huileolive: "70 ml", citron: "1¾", sel: "14 g" },
+      { nb: 8, crevettes: "960 g", manioc: "1200 g", laitcoco: "640 ml", oignon: "4", ail: "16", tomates: "8", poivron: "320 g", coriandre: "64 g", huileolive: "80 ml", citron: "2", sel: "16 g" },
+      { nb: 9, crevettes: "1080 g", manioc: "1350 g", laitcoco: "720 ml", oignon: "4½", ail: "18", tomates: "9", poivron: "360 g", coriandre: "72 g", huileolive: "90 ml", citron: "2¼", sel: "18 g" },
+      { nb: 10, crevettes: "1200 g", manioc: "1500 g", laitcoco: "800 ml", oignon: "5", ail: "20", tomates: "10", poivron: "400 g", coriandre: "80 g", huileolive: "100 ml", citron: "2½", sel: "20 g" },
+      { nb: 11, crevettes: "1320 g", manioc: "1650 g", laitcoco: "880 ml", oignon: "5½", ail: "22", tomates: "11", poivron: "440 g", coriandre: "88 g", huileolive: "110 ml", citron: "2¾", sel: "22 g" },
+      { nb: 12, crevettes: "1440 g", manioc: "1800 g", laitcoco: "960 ml", oignon: "6", ail: "24", tomates: "12", poivron: "480 g", coriandre: "96 g", huileolive: "120 ml", citron: "3", sel: "24 g" },
+      { nb: 13, crevettes: "1560 g", manioc: "1950 g", laitcoco: "1040 ml", oignon: "6½", ail: "26", tomates: "13", poivron: "520 g", coriandre: "104 g", huileolive: "130 ml", citron: "3¼", sel: "26 g" },
+      { nb: 14, crevettes: "1680 g", manioc: "2100 g", laitcoco: "1120 ml", oignon: "7", ail: "28", tomates: "14", poivron: "560 g", coriandre: "112 g", huileolive: "140 ml", citron: "3½", sel: "28 g" },
+      { nb: 15, crevettes: "1800 g", manioc: "2250 g", laitcoco: "1200 ml", oignon: "7½", ail: "30", tomates: "15", poivron: "600 g", coriandre: "120 g", huileolive: "150 ml", citron: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire le manioc", detail: "Épluchez le manioc, retirez le fil central dur et coupez-le en morceaux. Faites-le cuire dans l'eau bouillante salée 20 à 25 min jusqu'à ce qu'il soit très tendre.", badge: null },
+      { icone: "🥥", titre: "Mixer la crème", detail: "Mixez le manioc cuit avec le lait de coco et un peu de son eau de cuisson jusqu'à obtenir une purée lisse et crémeuse. Réservez.", badge: null },
+      { icone: "🦐", titre: "Mariner les crevettes", detail: "Décortiquez les crevettes, assaisonnez-les de sel, d'ail écrasé et d'un filet de citron. Laissez mariner 10 min.", badge: null },
+      { icone: "🧅", titre: "Faire revenir", detail: "Dans une cocotte, faites chauffer l'huile et faites revenir l'oignon émincé, le poivron en dés et la tomate concassée 8 min jusqu'à ce que ça compote.", badge: null },
+      { icone: "🥘", titre: "Incorporer la crème de manioc", detail: "Versez la purée de manioc au lait de coco dans la cocotte, mélangez et laissez mijoter 5 min à feu doux en remuant pour éviter que ça accroche.", badge: null },
+      { icone: "🦐", titre: "Cuire les crevettes", detail: "Ajoutez les crevettes et laissez-les pocher dans la crème 4 à 5 min, juste jusqu'à ce qu'elles soient roses et fermes. Ne pas trop cuire pour qu'elles restent moelleuses.", badge: null },
+      { icone: "🌿", titre: "Finir et servir", detail: "Rectifiez l'assaisonnement, parsemez généreusement de coriandre fraîche ciselée et d'un filet de citron. Servez bien chaud avec du riz blanc.", badge: null }
+    ]
+  },
+  empadaodefrango: {
+    nom: "Empadão de Frango",
+    cat: "plats", pays: "bresil",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥧",
+    description: "Empadão de frango — la grande tourte brésilienne au poulet : une pâte fondante garnie d'un poulet mijoté crémeux aux tomates, oignons, olives et petits pois. Réconfortant et généreux.",
+    tableauEmpadaodefrango: [
+      { nb: 1, poulet: "120 g", farine: "60 g", beurre: "30 g", oignon: "½", tomates: "1", olivenoire: "15 g", petitspois: "30 g", oeufs: "½", ail: "1", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, poulet: "240 g", farine: "120 g", beurre: "60 g", oignon: "1", tomates: "2", olivenoire: "30 g", petitspois: "60 g", oeufs: "1", ail: "2", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, poulet: "360 g", farine: "180 g", beurre: "90 g", oignon: "1½", tomates: "3", olivenoire: "45 g", petitspois: "90 g", oeufs: "1½", ail: "3", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, poulet: "480 g", farine: "240 g", beurre: "120 g", oignon: "2", tomates: "4", olivenoire: "60 g", petitspois: "120 g", oeufs: "2", ail: "4", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, poulet: "600 g", farine: "300 g", beurre: "150 g", oignon: "2½", tomates: "5", olivenoire: "75 g", petitspois: "150 g", oeufs: "2½", ail: "5", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, poulet: "720 g", farine: "360 g", beurre: "180 g", oignon: "3", tomates: "6", olivenoire: "90 g", petitspois: "180 g", oeufs: "3", ail: "6", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, poulet: "840 g", farine: "420 g", beurre: "210 g", oignon: "3½", tomates: "7", olivenoire: "105 g", petitspois: "210 g", oeufs: "3½", ail: "7", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, poulet: "960 g", farine: "480 g", beurre: "240 g", oignon: "4", tomates: "8", olivenoire: "120 g", petitspois: "240 g", oeufs: "4", ail: "8", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, poulet: "1080 g", farine: "540 g", beurre: "270 g", oignon: "4½", tomates: "9", olivenoire: "135 g", petitspois: "270 g", oeufs: "4½", ail: "9", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, poulet: "1200 g", farine: "600 g", beurre: "300 g", oignon: "5", tomates: "10", olivenoire: "150 g", petitspois: "300 g", oeufs: "5", ail: "10", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, poulet: "1320 g", farine: "660 g", beurre: "330 g", oignon: "5½", tomates: "11", olivenoire: "165 g", petitspois: "330 g", oeufs: "5½", ail: "11", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, poulet: "1440 g", farine: "720 g", beurre: "360 g", oignon: "6", tomates: "12", olivenoire: "180 g", petitspois: "360 g", oeufs: "6", ail: "12", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, poulet: "1560 g", farine: "780 g", beurre: "390 g", oignon: "6½", tomates: "13", olivenoire: "195 g", petitspois: "390 g", oeufs: "6½", ail: "13", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, poulet: "1680 g", farine: "840 g", beurre: "420 g", oignon: "7", tomates: "14", olivenoire: "210 g", petitspois: "420 g", oeufs: "7", ail: "14", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, poulet: "1800 g", farine: "900 g", beurre: "450 g", oignon: "7½", tomates: "15", olivenoire: "225 g", petitspois: "450 g", oeufs: "7½", ail: "15", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Préparer la pâte", detail: "Sablez la farine avec le beurre froid du bout des doigts. Ajoutez l'œuf et une pincée de sel, rassemblez en boule sans trop travailler. Filmez et réservez au frais 30 min.", badge: null },
+      { icone: "🍗", titre: "Cuire le poulet", detail: "Faites revenir l'oignon et l'ail hachés dans l'huile. Ajoutez le poulet en dés, faites-le dorer, puis la tomate concassée. Salez et laissez mijoter 15 min.", badge: null },
+      { icone: "🫒", titre: "Garniture crémeuse", detail: "Ajoutez les petits pois et les olives émincées. Laissez cuire 5 min : la garniture doit être moelleuse et liée, ni sèche ni liquide. Laissez tiédir.", badge: null },
+      { icone: "📏", titre: "Abaisser la pâte", detail: "Étalez deux tiers de la pâte et foncez un moule beurré en remontant bien les bords. Réservez le reste pour le couvercle.", badge: null },
+      { icone: "🥧", titre: "Garnir", detail: "Versez la garniture de poulet refroidie sur le fond de pâte, en tassant légèrement et en lissant le dessus.", badge: null },
+      { icone: "🔒", titre: "Fermer la tourte", detail: "Étalez le reste de pâte, posez-le en couvercle, soudez les bords en les pinçant. Dorez au jaune d'œuf et percez un petit trou au centre pour la vapeur.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C 30 à 35 min jusqu'à ce que la tourte soit bien dorée. Laissez tiédir 10 min avant de découper pour que la garniture se tienne.", badge: null }
+    ]
+  },
 });

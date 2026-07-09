@@ -5751,4 +5751,76 @@ Object.assign(recettes, {
       { icone: "❄️", titre: "Laisser refroidir", detail: "Laissez tiédir dans les moules avant de démouler. Saupoudrez de cannelle au moment de servir. Les queijadas se conservent 2 jours au frais et sont encore meilleures le lendemain.", badge: null }
     ]
   },
+  paodemel: {
+    nom: "Pão de Mel",
+    cat: "desserts", pays: "bresil",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍯",
+    description: "Pão de mel — petits pains d'épices brésiliens au miel et au cacao, moelleux, souvent fourrés de confiture ou de dulce de leche et enrobés de chocolat noir. Un délice de fête.",
+    tableauPaodemel: [
+      { nb: 1, farine: "40 g", miel: "25 g", cacao: "6 g", sucre: "20 g", oeufs: "½", lait: "30 ml", beurre: "8 g", cannelle: "1 g", chocolatnoir: "30 g", bicarbonate: "1 g" },
+      { nb: 2, farine: "80 g", miel: "50 g", cacao: "12 g", sucre: "40 g", oeufs: "1", lait: "60 ml", beurre: "16 g", cannelle: "2 g", chocolatnoir: "60 g", bicarbonate: "2 g" },
+      { nb: 3, farine: "120 g", miel: "75 g", cacao: "18 g", sucre: "60 g", oeufs: "1½", lait: "90 ml", beurre: "24 g", cannelle: "3 g", chocolatnoir: "90 g", bicarbonate: "3 g" },
+      { nb: 4, farine: "160 g", miel: "100 g", cacao: "24 g", sucre: "80 g", oeufs: "2", lait: "120 ml", beurre: "32 g", cannelle: "4 g", chocolatnoir: "120 g", bicarbonate: "4 g" },
+      { nb: 5, farine: "200 g", miel: "125 g", cacao: "30 g", sucre: "100 g", oeufs: "2½", lait: "150 ml", beurre: "40 g", cannelle: "5 g", chocolatnoir: "150 g", bicarbonate: "5 g" },
+      { nb: 6, farine: "240 g", miel: "150 g", cacao: "36 g", sucre: "120 g", oeufs: "3", lait: "180 ml", beurre: "48 g", cannelle: "6 g", chocolatnoir: "180 g", bicarbonate: "6 g" },
+      { nb: 7, farine: "280 g", miel: "175 g", cacao: "42 g", sucre: "140 g", oeufs: "3½", lait: "210 ml", beurre: "56 g", cannelle: "7 g", chocolatnoir: "210 g", bicarbonate: "7 g" },
+      { nb: 8, farine: "320 g", miel: "200 g", cacao: "48 g", sucre: "160 g", oeufs: "4", lait: "240 ml", beurre: "64 g", cannelle: "8 g", chocolatnoir: "240 g", bicarbonate: "8 g" },
+      { nb: 9, farine: "360 g", miel: "225 g", cacao: "54 g", sucre: "180 g", oeufs: "4½", lait: "270 ml", beurre: "72 g", cannelle: "9 g", chocolatnoir: "270 g", bicarbonate: "9 g" },
+      { nb: 10, farine: "400 g", miel: "250 g", cacao: "60 g", sucre: "200 g", oeufs: "5", lait: "300 ml", beurre: "80 g", cannelle: "10 g", chocolatnoir: "300 g", bicarbonate: "10 g" },
+      { nb: 11, farine: "440 g", miel: "275 g", cacao: "66 g", sucre: "220 g", oeufs: "5½", lait: "330 ml", beurre: "88 g", cannelle: "11 g", chocolatnoir: "330 g", bicarbonate: "11 g" },
+      { nb: 12, farine: "480 g", miel: "300 g", cacao: "72 g", sucre: "240 g", oeufs: "6", lait: "360 ml", beurre: "96 g", cannelle: "12 g", chocolatnoir: "360 g", bicarbonate: "12 g" },
+      { nb: 13, farine: "520 g", miel: "325 g", cacao: "78 g", sucre: "260 g", oeufs: "6½", lait: "390 ml", beurre: "104 g", cannelle: "13 g", chocolatnoir: "390 g", bicarbonate: "13 g" },
+      { nb: 14, farine: "560 g", miel: "350 g", cacao: "84 g", sucre: "280 g", oeufs: "7", lait: "420 ml", beurre: "112 g", cannelle: "14 g", chocolatnoir: "420 g", bicarbonate: "14 g" },
+      { nb: 15, farine: "600 g", miel: "375 g", cacao: "90 g", sucre: "300 g", oeufs: "7½", lait: "450 ml", beurre: "120 g", cannelle: "15 g", chocolatnoir: "450 g", bicarbonate: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍯", titre: "Chauffer le miel", detail: "Faites tiédir le miel avec le beurre et le lait à feu doux jusqu'à ce que le tout soit lisse et homogène. Laissez tiédir.", badge: null },
+      { icone: "🥣", titre: "Mélanger le sec", detail: "Mélangez la farine, le cacao, le sucre, la cannelle et le bicarbonate dans un saladier.", badge: null },
+      { icone: "🥚", titre: "Faire la pâte", detail: "Incorporez l'œuf puis le mélange miel-beurre tiède aux ingrédients secs. Fouettez jusqu'à obtenir une pâte lisse, coulante mais épaisse.", badge: null },
+      { icone: "🧁", titre: "Remplir les moules", detail: "Versez la pâte dans des moules à demi-sphère ou à muffins beurrés, aux trois quarts. La pâte va gonfler à la cuisson.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C 12 à 15 min. Une pointe plantée doit ressortir sèche. Ne pas trop cuire pour garder le moelleux. Démoulez et laissez refroidir.", badge: null },
+      { icone: "🍫", titre: "Enrober de chocolat", detail: "Faites fondre le chocolat noir au bain-marie. Trempez chaque pão de mel refroidi pour l'enrober entièrement, puis déposez sur une grille.", badge: null },
+      { icone: "❄️", titre: "Laisser prendre", detail: "Laissez figer le chocolat à température ambiante ou au frais. ASTUCE CHEF : fourrez-les de confiture ou de dulce de leche avant l'enrobage pour la version traditionnelle.", badge: null }
+    ]
+  },
+  beijinho: {
+    nom: "Beijinho",
+    cat: "desserts", pays: "bresil",
+    base: 4,
+    temps: "20 min + repos",
+    niveau: "⭐ Facile",
+    emoji: "🥥",
+    description: "Beijinho — les « petits baisers » brésiliens : des truffes fondantes de lait concentré et noix de coco, roulées en boules et piquées d'un clou de girofle. Le cousin coco du brigadeiro.",
+    tableauBeijinho: [
+      { nb: 1, laitconcentre: "90 g", noixcoco: "25 g", beurre: "5 g", clougirofle: "1 g", sucre: "5 g" },
+      { nb: 2, laitconcentre: "180 g", noixcoco: "50 g", beurre: "10 g", clougirofle: "2 g", sucre: "10 g" },
+      { nb: 3, laitconcentre: "270 g", noixcoco: "75 g", beurre: "15 g", clougirofle: "3 g", sucre: "15 g" },
+      { nb: 4, laitconcentre: "360 g", noixcoco: "100 g", beurre: "20 g", clougirofle: "4 g", sucre: "20 g" },
+      { nb: 5, laitconcentre: "450 g", noixcoco: "125 g", beurre: "25 g", clougirofle: "5 g", sucre: "25 g" },
+      { nb: 6, laitconcentre: "540 g", noixcoco: "150 g", beurre: "30 g", clougirofle: "6 g", sucre: "30 g" },
+      { nb: 7, laitconcentre: "630 g", noixcoco: "175 g", beurre: "35 g", clougirofle: "7 g", sucre: "35 g" },
+      { nb: 8, laitconcentre: "720 g", noixcoco: "200 g", beurre: "40 g", clougirofle: "8 g", sucre: "40 g" },
+      { nb: 9, laitconcentre: "810 g", noixcoco: "225 g", beurre: "45 g", clougirofle: "9 g", sucre: "45 g" },
+      { nb: 10, laitconcentre: "900 g", noixcoco: "250 g", beurre: "50 g", clougirofle: "10 g", sucre: "50 g" },
+      { nb: 11, laitconcentre: "990 g", noixcoco: "275 g", beurre: "55 g", clougirofle: "11 g", sucre: "55 g" },
+      { nb: 12, laitconcentre: "1080 g", noixcoco: "300 g", beurre: "60 g", clougirofle: "12 g", sucre: "60 g" },
+      { nb: 13, laitconcentre: "1170 g", noixcoco: "325 g", beurre: "65 g", clougirofle: "13 g", sucre: "65 g" },
+      { nb: 14, laitconcentre: "1260 g", noixcoco: "350 g", beurre: "70 g", clougirofle: "14 g", sucre: "70 g" },
+      { nb: 15, laitconcentre: "1350 g", noixcoco: "375 g", beurre: "75 g", clougirofle: "15 g", sucre: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥥", titre: "Réunir les ingrédients", detail: "Dans une casserole à fond épais, mélangez le lait concentré, la moitié de la noix de coco râpée et le beurre.", badge: null },
+      { icone: "🔥", titre: "Cuire la pâte", detail: "Faites cuire à feu moyen en remuant SANS ARRÊT à la spatule, jusqu'à ce que la masse épaississe et se décolle du fond de la casserole (8 à 10 min).", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Versez la pâte sur une assiette beurrée, filmez au contact et laissez refroidir complètement (au moins 1 h, ou 30 min au frais).", badge: null },
+      { icone: "👐", titre: "Former les boules", detail: "Beurrez légèrement vos mains et roulez la pâte en petites boules de la taille d'une noix. ASTUCE CHEF : si ça colle trop, remettez la pâte 15 min au frais.", badge: null },
+      { icone: "🥥", titre: "Enrober", detail: "Roulez chaque boule dans le reste de noix de coco râpée mélangée à un peu de sucre pour bien les enrober.", badge: null },
+      { icone: "🟤", titre: "Décorer", detail: "Piquez un clou de girofle au sommet de chaque beijinho — c'est la signature traditionnelle (à retirer avant de croquer).", badge: null },
+      { icone: "🍬", titre: "Dresser", detail: "Déposez chaque beijinho dans une petite caissette en papier. Réservez au frais jusqu'au service ; ils se conservent 3 jours.", badge: null }
+    ]
+  },
 });
