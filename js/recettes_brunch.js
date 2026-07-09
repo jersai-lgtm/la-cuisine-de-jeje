@@ -2148,4 +2148,41 @@ Object.assign(recettes, {
       { icone: "🥙", titre: "Servir", detail: "Servez brûlant, directement dans la poêle, avec du pain pita chaud pour saucer. Le petit-déjeuner costaud du Levant.", badge: null }
     ]
   },
+  rolex: {
+    dateAjout: "2026-07-10T08:25:00",
+    nom: "Rolex Ougandais",
+    cat: "brunch", pays: "ouganda",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🌯",
+    description: "Rolex — le wrap street-food ougandais : une omelette aux légumes roulée dans un chapati chaud (« rolled eggs » → rolex). Nourrissant, rapide et bon marché, c'est le en-cas roi des rues de Kampala, à toute heure.",
+    tableauRolex: [
+      { nb: 1, oeufs: "1½", farine: "40 g", chou: "30 g", tomates: "½", oignon: "¼", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, oeufs: "3", farine: "80 g", chou: "60 g", tomates: "1", oignon: "½", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, oeufs: "4½", farine: "120 g", chou: "90 g", tomates: "1½", oignon: "¾", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, oeufs: "6", farine: "160 g", chou: "120 g", tomates: "2", oignon: "1", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, oeufs: "7½", farine: "200 g", chou: "150 g", tomates: "2½", oignon: "1¼", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, oeufs: "9", farine: "240 g", chou: "180 g", tomates: "3", oignon: "1½", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, oeufs: "10½", farine: "280 g", chou: "210 g", tomates: "3½", oignon: "1¾", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, oeufs: "12", farine: "320 g", chou: "240 g", tomates: "4", oignon: "2", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, oeufs: "13½", farine: "360 g", chou: "270 g", tomates: "4½", oignon: "2¼", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, oeufs: "15", farine: "400 g", chou: "300 g", tomates: "5", oignon: "2½", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, oeufs: "16½", farine: "440 g", chou: "330 g", tomates: "5½", oignon: "2¾", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, oeufs: "18", farine: "480 g", chou: "360 g", tomates: "6", oignon: "3", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, oeufs: "19½", farine: "520 g", chou: "390 g", tomates: "6½", oignon: "3¼", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, oeufs: "21", farine: "560 g", chou: "420 g", tomates: "7", oignon: "3½", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, oeufs: "22½", farine: "600 g", chou: "450 g", tomates: "7½", oignon: "3¾", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Le chapati", detail: "Mélangez la farine, un peu d'huile, du sel et de l'eau pour former une pâte souple. Laissez reposer 15 min, puis abaissez-la finement et faites-la cuire à la poêle 1 min par face (chapati).", badge: null },
+      { icone: "🥚", titre: "L'omelette", detail: "Battez les œufs avec du sel. Émincez finement le chou, la tomate et l'oignon et mélangez-les aux œufs.", badge: null },
+      { icone: "🍳", titre: "Cuire l'omelette", detail: "Versez le mélange d'œufs dans une poêle huilée chaude et faites cuire à feu moyen comme une omelette plate, en la laissant bien prendre.", badge: null },
+      { icone: "🫓", titre: "Assembler", detail: "Déposez le chapati chaud directement sur l'omelette encore dans la poêle, pour qu'ils adhèrent l'un à l'autre.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Retournez l'ensemble pour réchauffer le chapati, puis faites glisser sur une planche, omelette vers le haut.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Roulez le chapati garni de son omelette bien serré, comme un wrap.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Coupez en deux et servez chaud, à manger sur le pouce. Le Rolex ougandais — rapide, complet et économique.", badge: null }
+    ]
+  },
 });

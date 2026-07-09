@@ -2185,4 +2185,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez en mezze, avec du pain pita chaud pour ramasser, un filet d'huile d'olive et quelques olives. Rustique et savoureux.", badge: null }
     ]
   },
+  kachumbari: {
+    dateAjout: "2026-07-10T08:24:00",
+    nom: "Kachumbari",
+    cat: "salades", pays: "kenya",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Kachumbari — la salade fraîche est-africaine : des tomates et des oignons finement coupés, relevés de piment, de coriandre et de citron, parfois d'avocat. Croquante et acidulée, elle rafraîchit les grillades et les plats mijotés de toute l'Afrique de l'Est.",
+    tableauKachumbari: [
+      { nb: 1, tomates: "1", oignon: "½", avocat: "40 g", piment: "0.5 g", coriandre: "5 g", citron: "½", sel: "2 g" },
+      { nb: 2, tomates: "2", oignon: "1", avocat: "80 g", piment: "1 g", coriandre: "10 g", citron: "1", sel: "4 g" },
+      { nb: 3, tomates: "3", oignon: "1½", avocat: "120 g", piment: "1.5 g", coriandre: "15 g", citron: "1½", sel: "6 g" },
+      { nb: 4, tomates: "4", oignon: "2", avocat: "160 g", piment: "2 g", coriandre: "20 g", citron: "2", sel: "8 g" },
+      { nb: 5, tomates: "5", oignon: "2½", avocat: "200 g", piment: "2.5 g", coriandre: "25 g", citron: "2½", sel: "10 g" },
+      { nb: 6, tomates: "6", oignon: "3", avocat: "240 g", piment: "3 g", coriandre: "30 g", citron: "3", sel: "12 g" },
+      { nb: 7, tomates: "7", oignon: "3½", avocat: "280 g", piment: "3.5 g", coriandre: "35 g", citron: "3½", sel: "14 g" },
+      { nb: 8, tomates: "8", oignon: "4", avocat: "320 g", piment: "4 g", coriandre: "40 g", citron: "4", sel: "16 g" },
+      { nb: 9, tomates: "9", oignon: "4½", avocat: "360 g", piment: "4.5 g", coriandre: "45 g", citron: "4½", sel: "18 g" },
+      { nb: 10, tomates: "10", oignon: "5", avocat: "400 g", piment: "5 g", coriandre: "50 g", citron: "5", sel: "20 g" },
+      { nb: 11, tomates: "11", oignon: "5½", avocat: "440 g", piment: "5.5 g", coriandre: "55 g", citron: "5½", sel: "22 g" },
+      { nb: 12, tomates: "12", oignon: "6", avocat: "480 g", piment: "6 g", coriandre: "60 g", citron: "6", sel: "24 g" },
+      { nb: 13, tomates: "13", oignon: "6½", avocat: "520 g", piment: "6.5 g", coriandre: "65 g", citron: "6½", sel: "26 g" },
+      { nb: 14, tomates: "14", oignon: "7", avocat: "560 g", piment: "7 g", coriandre: "70 g", citron: "7", sel: "28 g" },
+      { nb: 15, tomates: "15", oignon: "7½", avocat: "600 g", piment: "7.5 g", coriandre: "75 g", citron: "7½", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Dégorger l'oignon", detail: "Émincez l'oignon très finement et faites-le tremper 10 min dans l'eau froide citronnée : cela adoucit son piquant et le rend croquant.", badge: null },
+      { icone: "🍅", titre: "Les tomates", detail: "Coupez les tomates en petits dés (épépinées pour éviter trop de jus) et déposez-les dans un saladier.", badge: null },
+      { icone: "🌶️", titre: "Le piment", detail: "Émincez très finement le piment (frais) et ajoutez-le, en dosant selon votre tolérance.", badge: null },
+      { icone: "🥑", titre: "L'avocat", detail: "Coupez l'avocat en dés et ajoutez-le délicatement (facultatif, mais très apprécié en version crémeuse).", badge: null },
+      { icone: "🌿", titre: "Assaisonner", detail: "Ajoutez l'oignon égoutté, la coriandre ciselée, le jus de citron et le sel, et mélangez délicatement.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laissez reposer 10 min au frais pour que les saveurs se mêlent et que l'oignon s'attendrisse.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez frais, en accompagnement de viandes grillées (nyama choma), de riz pilau ou de haricots. La fraîcheur qui équilibre les plats copieux.", badge: null }
+    ]
+  },
 });

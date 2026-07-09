@@ -3515,4 +3515,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez bien chaude, garnie d'un peu d'oignon doré réservé et d'un filet d'huile. Traditionnellement au petit-déjeuner, avec du pain.", badge: null }
     ]
   },
+  okrasoup: {
+    dateAjout: "2026-07-10T08:22:00",
+    nom: "Soupe Gombo",
+    cat: "soupes", pays: "nigeria",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥬",
+    description: "Soupe gombo (okra soup) — le ragoût liquide nigérian : des gombos qui donnent une texture soyeuse et filante, mijotés avec du poisson, des crevettes et de la tomate. Relevée et généreuse, elle se mange avec du fufu ou du riz.",
+    tableauOkrasoup: [
+      { nb: 1, gombo: "100 g", tomates: "1", oignon: "½", poisson: "60 g", crevettes: "20 g", huileolive: "8 ml", piment: "0.5 g", sel: "2 g" },
+      { nb: 2, gombo: "200 g", tomates: "2", oignon: "1", poisson: "120 g", crevettes: "40 g", huileolive: "16 ml", piment: "1 g", sel: "4 g" },
+      { nb: 3, gombo: "300 g", tomates: "3", oignon: "1½", poisson: "180 g", crevettes: "60 g", huileolive: "24 ml", piment: "1.5 g", sel: "6 g" },
+      { nb: 4, gombo: "400 g", tomates: "4", oignon: "2", poisson: "240 g", crevettes: "80 g", huileolive: "32 ml", piment: "2 g", sel: "8 g" },
+      { nb: 5, gombo: "500 g", tomates: "5", oignon: "2½", poisson: "300 g", crevettes: "100 g", huileolive: "40 ml", piment: "2.5 g", sel: "10 g" },
+      { nb: 6, gombo: "600 g", tomates: "6", oignon: "3", poisson: "360 g", crevettes: "120 g", huileolive: "48 ml", piment: "3 g", sel: "12 g" },
+      { nb: 7, gombo: "700 g", tomates: "7", oignon: "3½", poisson: "420 g", crevettes: "140 g", huileolive: "56 ml", piment: "3.5 g", sel: "14 g" },
+      { nb: 8, gombo: "800 g", tomates: "8", oignon: "4", poisson: "480 g", crevettes: "160 g", huileolive: "64 ml", piment: "4 g", sel: "16 g" },
+      { nb: 9, gombo: "900 g", tomates: "9", oignon: "4½", poisson: "540 g", crevettes: "180 g", huileolive: "72 ml", piment: "4.5 g", sel: "18 g" },
+      { nb: 10, gombo: "1000 g", tomates: "10", oignon: "5", poisson: "600 g", crevettes: "200 g", huileolive: "80 ml", piment: "5 g", sel: "20 g" },
+      { nb: 11, gombo: "1100 g", tomates: "11", oignon: "5½", poisson: "660 g", crevettes: "220 g", huileolive: "88 ml", piment: "5.5 g", sel: "22 g" },
+      { nb: 12, gombo: "1200 g", tomates: "12", oignon: "6", poisson: "720 g", crevettes: "240 g", huileolive: "96 ml", piment: "6 g", sel: "24 g" },
+      { nb: 13, gombo: "1300 g", tomates: "13", oignon: "6½", poisson: "780 g", crevettes: "260 g", huileolive: "104 ml", piment: "6.5 g", sel: "26 g" },
+      { nb: 14, gombo: "1400 g", tomates: "14", oignon: "7", poisson: "840 g", crevettes: "280 g", huileolive: "112 ml", piment: "7 g", sel: "28 g" },
+      { nb: 15, gombo: "1500 g", tomates: "15", oignon: "7½", poisson: "900 g", crevettes: "300 g", huileolive: "120 ml", piment: "7.5 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer les gombos", detail: "Lavez et émincez les gombos en fines rondelles. Plus ils sont coupés fin, plus la soupe sera filante et soyeuse (le mucilage est recherché ici).", badge: null },
+      { icone: "🧅", titre: "La base", detail: "Faites revenir l'oignon émincé dans l'huile (traditionnellement de l'huile de palme), ajoutez la tomate concassée et le piment, et laissez réduire 10 min.", badge: null },
+      { icone: "🐟", titre: "Poisson & crevettes", detail: "Ajoutez le poisson en morceaux et les crevettes, ainsi qu'un peu d'eau ou de bouillon, et laissez frémir 5 min.", badge: null },
+      { icone: "🥬", titre: "Les gombos", detail: "Ajoutez les gombos émincés et remuez : ils libèrent leur texture soyeuse caractéristique.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter 15 min à feu doux, sans trop remuer, jusqu'à ce que les gombos soient tendres et la soupe onctueuse.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Salez et rectifiez le piment. La soupe doit être épaisse, filante et bien relevée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud avec du fufu, du riz ou de l'igname pilée, en trempant les bouchées dans la soupe. Un plat généreux et réconfortant.", badge: null }
+    ]
+  },
 });

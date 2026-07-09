@@ -1537,4 +1537,78 @@ Object.assign(recettes, {
       { icone: "🍯", titre: "Servir", detail: "Servez tiède, fendue en deux et garnie de miel, de confiture, de beurre ou de fromage frais. Le goûter marocain réconfortant.", badge: null }
     ]
   },
+  kenkey: {
+    dateAjout: "2026-07-10T08:21:00",
+    nom: "Kenkey",
+    cat: "boulangerie", pays: "ghana",
+    base: 4,
+    temps: "3h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌽",
+    description: "Kenkey — la boule de maïs fermentée ghanéenne : une pâte de maïs légèrement acidulée, façonnée en boules et cuite à la vapeur dans des feuilles. Servie avec une sauce piment et du poisson frit, c'est le pain quotidien de l'Afrique de l'Ouest.",
+    tableauKenkey: [
+      { nb: 1, farinemais: "65 g", piment: "1 g", sel: "2 g" },
+      { nb: 2, farinemais: "130 g", piment: "2 g", sel: "4 g" },
+      { nb: 3, farinemais: "195 g", piment: "3 g", sel: "6 g" },
+      { nb: 4, farinemais: "260 g", piment: "4 g", sel: "8 g" },
+      { nb: 5, farinemais: "325 g", piment: "5 g", sel: "10 g" },
+      { nb: 6, farinemais: "390 g", piment: "6 g", sel: "12 g" },
+      { nb: 7, farinemais: "455 g", piment: "7 g", sel: "14 g" },
+      { nb: 8, farinemais: "520 g", piment: "8 g", sel: "16 g" },
+      { nb: 9, farinemais: "585 g", piment: "9 g", sel: "18 g" },
+      { nb: 10, farinemais: "650 g", piment: "10 g", sel: "20 g" },
+      { nb: 11, farinemais: "715 g", piment: "11 g", sel: "22 g" },
+      { nb: 12, farinemais: "780 g", piment: "12 g", sel: "24 g" },
+      { nb: 13, farinemais: "845 g", piment: "13 g", sel: "26 g" },
+      { nb: 14, farinemais: "910 g", piment: "14 g", sel: "28 g" },
+      { nb: 15, farinemais: "975 g", piment: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌽", titre: "La pâte", detail: "Délayez la farine de maïs dans de l'eau pour former une pâte épaisse et lisse, et salez légèrement.", badge: null },
+      { icone: "🕐", titre: "Fermenter", detail: "Couvrez et laissez fermenter 1 à 3 jours à température ambiante : la pâte développe l'acidité caractéristique du kenkey (comme un levain).", badge: null },
+      { icone: "🍲", titre: "Précuire", detail: "Faites cuire la moitié de la pâte fermentée avec un peu d'eau, en remuant, jusqu'à obtenir une pâte épaisse (aflata), puis mélangez-la au reste de pâte crue.", badge: null },
+      { icone: "🫓", titre: "Façonner", detail: "Divisez la pâte et façonnez des boules. Enveloppez-les traditionnellement dans des feuilles de maïs ou de bananier (à défaut, du papier cuisson).", badge: null },
+      { icone: "♨️", titre: "Cuisson vapeur", detail: "Faites cuire les boules à la vapeur (ou à l'eau frémissante) 1 h à 1 h 30, jusqu'à ce que la pâte soit ferme et cuite à cœur.", badge: null },
+      { icone: "🔎", titre: "Vérifier", detail: "Le kenkey est prêt quand il est ferme, dense et se tient. Laissez tiédir légèrement avant de déballer.", badge: null },
+      { icone: "🌶️", titre: "Servir", detail: "Servez le kenkey avec une sauce piment (shito), des oignons crus et du poisson frit ou grillé. L'acidité de la pâte équilibre le piquant.", badge: null }
+    ]
+  },
+  mahamri: {
+    dateAjout: "2026-07-10T08:23:00",
+    nom: "Mahamri",
+    cat: "boulangerie", pays: "kenya",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍩",
+    description: "Mahamri — les beignets swahili à la coco : de petits triangles de pâte briochée à la noix de coco et à la cardamome, frits jusqu'à être dorés et gonflés. Légèrement sucrés et parfumés, ils font le petit-déjeuner de la côte est-africaine, trempés dans le thé.",
+    tableauMahamri: [
+      { nb: 1, farine: "50 g", laitcoco: "20 ml", sucre: "12 g", cardamome: "1 g", levure: "2 g", huilefriture: "12 ml" },
+      { nb: 2, farine: "100 g", laitcoco: "40 ml", sucre: "24 g", cardamome: "2 g", levure: "4 g", huilefriture: "24 ml" },
+      { nb: 3, farine: "150 g", laitcoco: "60 ml", sucre: "36 g", cardamome: "3 g", levure: "6 g", huilefriture: "36 ml" },
+      { nb: 4, farine: "200 g", laitcoco: "80 ml", sucre: "48 g", cardamome: "4 g", levure: "8 g", huilefriture: "48 ml" },
+      { nb: 5, farine: "250 g", laitcoco: "100 ml", sucre: "60 g", cardamome: "5 g", levure: "10 g", huilefriture: "60 ml" },
+      { nb: 6, farine: "300 g", laitcoco: "120 ml", sucre: "72 g", cardamome: "6 g", levure: "12 g", huilefriture: "72 ml" },
+      { nb: 7, farine: "350 g", laitcoco: "140 ml", sucre: "84 g", cardamome: "7 g", levure: "14 g", huilefriture: "84 ml" },
+      { nb: 8, farine: "400 g", laitcoco: "160 ml", sucre: "96 g", cardamome: "8 g", levure: "16 g", huilefriture: "96 ml" },
+      { nb: 9, farine: "450 g", laitcoco: "180 ml", sucre: "108 g", cardamome: "9 g", levure: "18 g", huilefriture: "108 ml" },
+      { nb: 10, farine: "500 g", laitcoco: "200 ml", sucre: "120 g", cardamome: "10 g", levure: "20 g", huilefriture: "120 ml" },
+      { nb: 11, farine: "550 g", laitcoco: "220 ml", sucre: "132 g", cardamome: "11 g", levure: "22 g", huilefriture: "132 ml" },
+      { nb: 12, farine: "600 g", laitcoco: "240 ml", sucre: "144 g", cardamome: "12 g", levure: "24 g", huilefriture: "144 ml" },
+      { nb: 13, farine: "650 g", laitcoco: "260 ml", sucre: "156 g", cardamome: "13 g", levure: "26 g", huilefriture: "156 ml" },
+      { nb: 14, farine: "700 g", laitcoco: "280 ml", sucre: "168 g", cardamome: "14 g", levure: "28 g", huilefriture: "168 ml" },
+      { nb: 15, farine: "750 g", laitcoco: "300 ml", sucre: "180 g", cardamome: "15 g", levure: "30 g", huilefriture: "180 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥥", titre: "La pâte", detail: "Mélangez la farine, le sucre, la cardamome moulue et la levure. Ajoutez le lait de coco tiède petit à petit pour former une pâte souple et parfumée.", badge: null },
+      { icone: "👐", titre: "Pétrir", detail: "Pétrissez 8 min jusqu'à ce que la pâte soit lisse et élastique.", badge: null },
+      { icone: "⏳", titre: "Lever", detail: "Couvrez et laissez lever 1 h à 1 h 30 dans un endroit tiède, jusqu'à ce que la pâte double de volume.", badge: null },
+      { icone: "🔺", titre: "Former les triangles", detail: "Abaissez la pâte en cercles, puis coupez chaque cercle en quatre triangles (la forme typique du mahamri).", badge: null },
+      { icone: "⏳", titre: "Repos", detail: "Laissez reposer les triangles 15 min : ils gonfleront mieux à la friture.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Plongez-les dans l'huile chaude (170°C) et faites-les dorer 2 à 3 min en les retournant : ils gonflent et deviennent creux et moelleux.", badge: null },
+      { icone: "☕", titre: "Servir", detail: "Égouttez et servez tièdes, saupoudrés de sucre si vous aimez, avec un thé épicé (chai) ou un curry de haricots (mbaazi). Le petit-déjeuner swahili.", badge: null }
+    ]
+  },
 });

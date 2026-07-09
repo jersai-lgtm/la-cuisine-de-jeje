@@ -60218,5 +60218,345 @@ window.RECETTES_EN = {
     "detail": "Let cool completely: the barazek harden and turn crisp. Serve with tea or coffee. They keep for 2 weeks."
    }
   ]
+ },
+ "sukumawiki": {
+  "nom": "Sukuma Wiki",
+  "description": "Sukuma wiki — Kenyan sautéed greens: collard greens (or kale) shredded and sautéed with onion, tomato and garlic. Its name means 'push the week' — the budget dish that lasts until payday, served with ugali.",
+  "etapes": [
+   {
+    "titre": "Prepare the greens",
+    "detail": "Remove the tough ribs from the collard greens (or kale) and finely shred the leaves. Rinse well."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Sauté the sliced onion in the oil until tender and translucent."
+   },
+   {
+    "titre": "Garlic & tomato",
+    "detail": "Add the crushed garlic then the crushed tomato, season, and stew for 5 minutes to form a tasty base."
+   },
+   {
+    "titre": "The greens",
+    "detail": "Add the shredded leaves and mix well to coat. They will reduce by half."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook over medium heat for 10 minutes, stirring, until the greens are tender but still green and slightly crunchy."
+   },
+   {
+    "titre": "Lemon",
+    "detail": "Add a squeeze of lemon juice and adjust the salt: the acidity wakes up the flavours."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with ugali (cornmeal), rice or grilled meat. The Kenyan daily dish, healthy and cheap."
+   }
+  ]
+ },
+ "kenkey": {
+  "nom": "Kenkey",
+  "description": "Kenkey — the Ghanaian fermented corn ball: a slightly sour corn dough, shaped into balls and steamed in leaves. Served with a chilli sauce and fried fish, it's the daily bread of West Africa.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the cornmeal with water into a thick, smooth dough, and salt lightly."
+   },
+   {
+    "titre": "Ferment",
+    "detail": "Cover and let ferment for 1 to 3 days at room temperature: the dough develops the characteristic sourness of kenkey (like a sourdough)."
+   },
+   {
+    "titre": "Pre-cook",
+    "detail": "Cook half the fermented dough with a little water, stirring, into a thick paste (aflata), then mix it with the rest of the raw dough."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Divide the dough and shape balls. Traditionally wrap them in corn or banana leaves (or baking paper)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the balls (or in simmering water) for 1 hour to 1 hour 30, until the dough is firm and cooked through."
+   },
+   {
+    "titre": "Check",
+    "detail": "The kenkey is ready when firm, dense and holding together. Let cool slightly before unwrapping."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the kenkey with a chilli sauce (shito), raw onions and fried or grilled fish. The dough's sourness balances the heat."
+   }
+  ]
+ },
+ "okrasoup": {
+  "nom": "Okra Soup",
+  "description": "Okra soup — the Nigerian brothy stew: okra giving a silky, stringy texture, simmered with fish, shrimp and tomato. Spicy and generous, it's eaten with fufu or rice.",
+  "etapes": [
+   {
+    "titre": "Prepare the okra",
+    "detail": "Wash and slice the okra thinly. The finer it's cut, the more slippery and silky the soup (the mucilage is wanted here)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the sliced onion in the oil (traditionally palm oil), add the crushed tomato and chilli, and let reduce 10 minutes."
+   },
+   {
+    "titre": "Fish & shrimp",
+    "detail": "Add the fish in pieces and the shrimp, plus a little water or stock, and let simmer 5 minutes."
+   },
+   {
+    "titre": "The okra",
+    "detail": "Add the sliced okra and stir: it releases its characteristic silky texture."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer for 15 minutes over low heat, without stirring too much, until the okra is tender and the soup smooth."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and adjust the chilli. The soup should be thick, stringy and well spiced."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with fufu, rice or pounded yam, dipping the bites into the soup. A generous, comforting dish."
+   }
+  ]
+ },
+ "mahamri": {
+  "nom": "Mahamri",
+  "description": "Mahamri — Swahili coconut doughnuts: little triangles of coconut-and-cardamom brioche dough, fried until golden and puffed. Lightly sweet and fragrant, they're the East African coast breakfast, dipped in tea.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, sugar, ground cardamom and yeast. Add the warm coconut milk little by little to form a soft, fragrant dough."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead for 8 minutes until the dough is smooth and elastic."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and let rise for 1 hour to 1 hour 30 in a warm place, until doubled in volume."
+   },
+   {
+    "titre": "Form the triangles",
+    "detail": "Roll the dough into circles, then cut each circle into four triangles (the typical mahamri shape)."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the triangles rest 15 minutes: they'll puff better when fried."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Plunge them into hot oil (170°C) and fry 2 to 3 minutes, turning: they puff and turn hollow and soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve warm, dusted with sugar if you like, with a spiced tea (chai) or a bean curry (mbaazi). The Swahili breakfast."
+   }
+  ]
+ },
+ "kachumbari": {
+  "nom": "Kachumbari",
+  "description": "Kachumbari — the fresh East African salad: finely cut tomatoes and onions, brightened with chilli, coriander and lemon, sometimes avocado. Crunchy and tangy, it refreshes the grills and stews of all East Africa.",
+  "etapes": [
+   {
+    "titre": "Soak the onion",
+    "detail": "Slice the onion very finely and soak it 10 minutes in cold lemony water: this softens its sharpness and keeps it crunchy."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Cut the tomatoes into small dice (seeded to avoid too much juice) and place them in a bowl."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Finely slice the (fresh) chilli and add it, dosing to your tolerance."
+   },
+   {
+    "titre": "The avocado",
+    "detail": "Dice the avocado and add it gently (optional, but much loved in the creamy version)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the drained onion, chopped coriander, lemon juice and salt, and mix gently."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 minutes in the fridge so the flavours mingle and the onion softens."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cool, as a side to grilled meats (nyama choma), pilau rice or beans. The freshness that balances hearty dishes."
+   }
+  ]
+ },
+ "rolex": {
+  "nom": "Ugandan Rolex",
+  "description": "Rolex — the Ugandan street-food wrap: a vegetable omelette rolled in a warm chapati ('rolled eggs' → rolex). Filling, fast and cheap, it's the king snack of Kampala's streets, at any hour.",
+  "etapes": [
+   {
+    "titre": "The chapati",
+    "detail": "Mix the flour, a little oil, salt and water into a soft dough. Rest 15 minutes, then roll it thinly and cook it in a pan 1 minute per side (chapati)."
+   },
+   {
+    "titre": "The omelette",
+    "detail": "Beat the eggs with salt. Finely shred the cabbage, tomato and onion and mix them into the eggs."
+   },
+   {
+    "titre": "Cook the omelette",
+    "detail": "Pour the egg mixture into a hot oiled pan and cook over medium heat like a flat omelette, letting it set well."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Place the warm chapati directly onto the omelette while still in the pan, so they stick to each other."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Flip the whole thing to warm the chapati, then slide onto a board, omelette up."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the chapati with its omelette tightly, like a wrap."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut in two and serve hot, to eat on the go. The Ugandan Rolex — fast, complete and cheap."
+   }
+  ]
+ },
+ "githeri": {
+  "nom": "Githeri",
+  "description": "Githeri — the Kenyan maize-and-bean stew: a one-pot of maize and red beans, simmered with potatoes, tomato and onions. Nourishing, balanced and cheap, it's the quintessential Kikuyu family meal.",
+  "etapes": [
+   {
+    "titre": "Cook maize & beans",
+    "detail": "Cook the red beans and maize together (soaked overnight, or canned) until tender. Drain, keeping a little water."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the sliced onion in the oil, add the crushed tomato and stew 5 minutes."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the diced potato and carrot, and sauté 3 minutes."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the cooked maize and beans, mix and moisten with a little cooking water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 20 minutes, until the potatoes are tender and everything well bound."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper. Lightly mash a few potatoes to thicken the dish."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, as is or with greens (sukuma wiki) and avocado. A complete, plant-based, nourishing dish."
+   }
+  ]
+ },
+ "dovi": {
+  "nom": "Dovi",
+  "description": "Dovi — the Zimbabwean peanut stew: chicken simmered in a smooth peanut butter and tomato sauce, with wilted spinach. Creamy, comforting and fragrant, it's enjoyed with sadza (cornmeal).",
+  "etapes": [
+   {
+    "titre": "Brown the chicken",
+    "detail": "Brown the chicken pieces in the hot oil, then set them aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "In the same pot, sauté the sliced onion and garlic, add the crushed tomato and stew 8 minutes."
+   },
+   {
+    "titre": "The peanut",
+    "detail": "Loosen the peanut butter (or blended peanuts) with a little hot water, then stir it into the sauce: it turns creamy and fragrant."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the chicken, cover and simmer 25 minutes over low heat, until the meat is tender and the sauce thick."
+   },
+   {
+    "titre": "The spinach",
+    "detail": "Add the chopped spinach and let it wilt 5 minutes in the sauce."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper. The sauce should be smooth, coating and well flavoured with peanut."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with sadza (ugali), rice or yam. A creamy, comforting dish from southern Africa."
+   }
+  ]
+ },
+ "poissonyassa": {
+  "nom": "Fish Yassa",
+  "description": "Poisson yassa — the onion-braised fish of Senegal: fillets marinated in lemon, simmered under a mountain of long-cooked mustard onions. Tangy, sweet and tender, this great Senegalese classic is served on a bed of rice.",
+  "etapes": [
+   {
+    "titre": "The marinade",
+    "detail": "Mix the lemon juice, crushed garlic, a little mustard, chilli and oil. Marinate the fish and some of the sliced onions in it for at least 1 hour."
+   },
+   {
+    "titre": "Sear the fish",
+    "detail": "Drain the fish (keep the marinade) and quickly brown it in the hot oil, without cooking through. Set it aside gently."
+   },
+   {
+    "titre": "Confit the onions",
+    "detail": "In the same pan, soften the large quantity of sliced onions over low heat for 20 to 25 minutes, until golden, soft and sweet. This is the heart of yassa."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the reserved marinade, the rest of the mustard, the bay leaf and a little water. Simmer 10 minutes: the onion sauce turns smooth and tangy."
+   },
+   {
+    "titre": "Return the fish",
+    "detail": "Gently place the fish in the onion sauce, cover and cook over low heat for 10 minutes, until cooked and infused."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and balance the acidity (lemon) and salt. The sauce should be generous in soft onions and nicely lemony."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the fish yassa coated in its confit onions, on a bed of white rice that soaks up the sauce. A convivial Senegalese classic."
+   }
+  ]
+ },
+ "pouletbraise": {
+  "nom": "Braised Chicken",
+  "description": "Poulet braisé — central African grilled chicken: marinated in garlic, ginger and lemon, par-cooked then grilled and glazed, served with an onion-chilli sauce. Crisp outside, tender inside, it's the king of 'maquis' grills.",
+  "etapes": [
+   {
+    "titre": "The marinade",
+    "detail": "Blend the garlic, ginger, lemon juice, a little chilli, oil and salt into a fragrant marinade."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Score the chicken pieces and coat them with marinade. Rest at least 1 hour (ideally overnight)."
+   },
+   {
+    "titre": "Par-cook",
+    "detail": "Par-cook the chicken covered (in a pot or oven) for 20 minutes with a little water, so it's tender through."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the par-cooked chicken (barbecue, griddle or grill) for 10 minutes, brushing with marinade, until golden and glazed."
+   },
+   {
+    "titre": "The chilli sauce",
+    "detail": "Slice the onion and marinate it raw with chilli, lemon, parsley and a little oil: the fresh sauce typical of poulet braisé."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the chicken rest 5 minutes before serving to keep its juices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the braised chicken with the onion-chilli sauce, plantains or fries, and lemon. The convivial king of the African maquis."
+   }
+  ]
  }
 };
