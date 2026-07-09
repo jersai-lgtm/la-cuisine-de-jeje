@@ -60558,5 +60558,345 @@ window.RECETTES_EN = {
     "detail": "Serve the braised chicken with the onion-chilli sauce, plantains or fries, and lemon. The convivial king of the African maquis."
    }
   ]
+ },
+ "sweetsourpork": {
+  "nom": "Sweet and Sour Pork",
+  "description": "Sweet and sour pork — the great Cantonese classic: pieces of pork coated and fried until crisp, glazed in a glossy sauce with pineapple, vinegar and sugar. The perfect balance of sour, sweet and crunch.",
+  "etapes": [
+   {
+    "titre": "Marinate the pork",
+    "detail": "Cut the pork into cubes and mix with a little soy sauce, salt and the beaten egg. Marinate 15 minutes."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Roll the cubes in cornstarch to coat well: this gives the crisp crust when fried."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the cubes in hot oil (180°C) for 4 to 5 minutes, until golden and crisp. Drain."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "In a wok, mix the ketchup, vinegar, sugar and a little water, and bring to a simmer until the sauce thickens and shines."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the chopped pepper and pineapple to the sauce, and stir-fry 2 minutes to coat while keeping the crunch."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the fried pork to the sauce and stir-fry briskly for a few seconds, just to coat without softening it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once over white rice, while the pork is crisp and the sauce glossy. The iconic sweet-and-sour balance."
+   }
+  ]
+ },
+ "dongporou": {
+  "nom": "Dongpo Rou",
+  "description": "Dongpo rou — the caramelised braised pork of Hangzhou: generous squares of pork belly slowly braised in a sweet soy sauce, until they melt on the spoon. Glazed, glossy and ultra-tender, a masterpiece of Chinese cuisine.",
+  "etapes": [
+   {
+    "titre": "Blanch",
+    "detail": "Blanch the whole pork belly square 5 minutes in boiling water to remove impurities, then cut it into large even cubes."
+   },
+   {
+    "titre": "Caramelise",
+    "detail": "Melt the sugar in a little oil into an amber caramel, then colour the pork cubes on all sides in it."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add the sliced ginger, garlic and star anise, and sauté 1 minute to flavour."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in the soy sauce and water to the level, with a little sugar. Bring to a simmer."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Cover and braise over very low heat for 1 hour 30, turning the cubes, until the meat is ultra-tender."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Uncover and let the sauce reduce for 10 minutes over medium heat, until it coats and glazes the pork a glossy brown."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the glossy dongpo rou cubes over steamed rice or steamed buns (bao), coated in sauce. The meat cuts with a spoon."
+   }
+  ]
+ },
+ "twicecooked": {
+  "nom": "Twice-Cooked Pork",
+  "description": "Huiguorou — Sichuan twice-cooked pork: pork belly first boiled, then stir-fried in the wok with cabbage, peppers and a fermented chilli sauce. Tender, crisp and spicy, a pillar of Sichuan cuisine.",
+  "etapes": [
+   {
+    "titre": "First cooking",
+    "detail": "Boil the whole pork belly piece for 20 minutes with ginger, until just cooked. Let cool, then cut it into very thin slices."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Mix the tomato paste with a little chilli (instead of doubanjiang, the fermented bean-chilli paste), soy sauce and sugar: the umami, spicy base."
+   },
+   {
+    "titre": "Sear the pork",
+    "detail": "Fry the pork slices dry (then a drizzle of oil) in a very hot wok, until the edges caramelise and turn slightly crisp."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add the sliced garlic and ginger and fry 30 seconds, then add the chilli sauce and coat the pork."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the chopped pepper and cabbage, and stir-fry over high heat for 3 minutes, keeping the crunch."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the sesame oil and stir-fry a few seconds to bind and perfume."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once over white rice. The pork is tender-crisp, the sauce spicy and fragrant — a great Sichuan dish."
+   }
+  ]
+ },
+ "tomategoeuf": {
+  "nom": "Tomato Scrambled Eggs",
+  "description": "Tomato scrambled eggs — Chinese family comfort: soft eggs stir-fried with melting tomatoes into a sweet, slightly sugared sauce. The dish everyone learns as a child in China, quick, cheap and adored.",
+  "etapes": [
+   {
+    "titre": "Beat the eggs",
+    "detail": "Beat the eggs with a pinch of salt. Cut the tomatoes into wedges and slice the onion (or spring onion)."
+   },
+   {
+    "titre": "Cook the eggs",
+    "detail": "Heat the oil in a very hot wok and pour in the eggs. Scramble them quickly until just set and still soft, then set aside."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "In the same wok, sauté the tomatoes with a little oil, until they start to break down and release their juice."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the sugar (which balances the acidity), a dash of soy sauce and a little salt, and let reduce 2 minutes into a sauce."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the eggs to the wok and mix gently with the tomatoes, just to coat them in sauce without drying them out."
+   },
+   {
+    "titre": "Spring onion",
+    "detail": "Scatter with fresh spring onion off the heat (optional but typical)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once over white rice, which soaks up the tomato sauce. Simple, comforting and perfect for an express meal."
+   }
+  ]
+ },
+ "disanxian": {
+  "nom": "Di San Xian",
+  "description": "Di san xian — the 'three earthly treasures' of northeastern China: potatoes, eggplant and peppers fried then stir-fried in a garlicky soy sauce, glossy and savoury. A tender, comforting vegetarian dish, very popular in China.",
+  "etapes": [
+   {
+    "titre": "Cut",
+    "detail": "Cut the potatoes, eggplant and peppers into large irregular chunks (rolling cut) for a nice texture."
+   },
+   {
+    "titre": "Fry the vegetables",
+    "detail": "Fry the potatoes then the eggplant separately in the hot oil, until golden and tender. Drain. Briefly sear the peppers."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Mix the soy sauce, sugar, a little water and the cornstarch: the sauce that will coat and bind the vegetables."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "In a wok with a little oil, sauté the sliced garlic for a few seconds until fragrant."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add all the fried vegetables to the wok, pour in the sauce and stir-fry over high heat."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Let the sauce thicken and coat the vegetables in a glossy glaze, 1 to 2 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once over white rice. The vegetables are tender inside, the sauce glossy and garlicky. A vegetarian delight."
+   }
+  ]
+ },
+ "siumai": {
+  "nom": "Siu Mai",
+  "description": "Siu mai — the open steamed dumplings of dim sum: little pouches of dough filled with pork and shrimp, open on top and steamed. Juicy and fragrant, they're the essential of Cantonese brunch.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour with hot water into a soft dough. Knead, rest 20 minutes, then roll very thinly and cut circles."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Chop the pork and shrimp (keeping some texture), and mix with the sliced mushroom, ginger, soy sauce, sesame oil and cornstarch. Season."
+   },
+   {
+    "titre": "Beat the filling",
+    "detail": "Work the filling vigorously until it turns sticky and elastic: the secret to juicy, bouncy dumplings."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a good spoonful of filling in the centre of each circle, then bring the dough up around it, leaving the top open (basket shape)."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Press the top and optionally decorate with a cube of carrot or fish roe (tobiko)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Arrange the siu mai in a steamer basket (on paper) and steam 10 to 12 minutes, until the filling is cooked and juicy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with soy sauce and a little chilli. Siu mai are enjoyed steamed, as a bite, at dim sum."
+   }
+  ]
+ },
+ "cheungfun": {
+  "nom": "Cheung Fun",
+  "description": "Cheung fun — Cantonese rice noodle rolls: thin steamed rice sheets rolled around shrimp, coated in a sweet soy sauce. Silky, slippery and tender, a great dim sum classic.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Mix the rice flour (here flour + cornstarch), water and a pinch of salt into a very liquid, smooth batter, without lumps."
+   },
+   {
+    "titre": "The shrimp",
+    "detail": "Peel the shrimp and season them with a little salt and sesame oil."
+   },
+   {
+    "titre": "Steam the sheet",
+    "detail": "Oil a flat tray, pour a thin ladle of batter, add a few shrimp, and steam 4 to 5 minutes until the sheet sets and turns translucent."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Gently lift the cooked sheet with a spatula and roll it up around the shrimp into a soft roll."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the roll into 4-5 cm pieces and arrange them on a plate."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Heat the soy sauce with the sugar and a little water until slightly syrupy: the typical sweet-savoury sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat the cheung fun with the hot sauce and serve at once. Silky and tender, they're enjoyed at dim sum, hot."
+   }
+  ]
+ },
+ "kungpao": {
+  "nom": "Kung Pao Chicken",
+  "description": "Gong bao ji ding — Sichuan Kung Pao chicken: diced chicken stir-fried in the wok with crunchy peanuts, chilli and a sweet-sour-spicy sauce. The contrast of crunch, sweetness and heat makes it a Sichuan essential.",
+  "etapes": [
+   {
+    "titre": "Marinate the chicken",
+    "detail": "Cut the chicken into cubes and mix with a little soy sauce and cornstarch. Marinate 15 minutes: the starch keeps it tender."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Mix the soy sauce, vinegar, sugar, a little water and cornstarch: the sweet-sour-spicy sauce that will coat everything."
+   },
+   {
+    "titre": "Sear the chicken",
+    "detail": "Stir-fry the chicken in a very hot wok with the oil, until golden and just cooked. Set aside."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "In the same wok, fry the dried chilli, sliced garlic and ginger for a few seconds, until fragrant (without burning)."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the diced pepper and onion and stir-fry 1 minute, keeping the crunch."
+   },
+   {
+    "titre": "Combine & bind",
+    "detail": "Return the chicken, pour in the sauce and stir-fry: it thickens and coats everything in a glossy glaze."
+   },
+   {
+    "titre": "Peanuts",
+    "detail": "Add the peanuts off the heat and mix, so they stay crunchy. Serve at once over rice."
+   }
+  ]
+ },
+ "xiaolongbao": {
+  "nom": "Xiaolongbao",
+  "description": "Xiaolongbao — the soup dumplings of Shanghai: thin pleated pouches enclosing pork and a jellied broth that melts when steamed into a mouthful of scalding soup. The technical masterpiece of Shanghai dim sum.",
+  "etapes": [
+   {
+    "titre": "The jellied broth",
+    "detail": "Set a concentrated pork broth into a jelly (with the natural gelatine of the rind, or a little gelatine), then cut it into small cold cubes: this becomes the 'soup'."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour with hot water into a soft dough. Knead and rest 30 minutes."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the minced pork with the ginger, soy sauce, sesame oil and salt. Gently fold in the cold jellied broth cubes."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough into small very thin discs, thicker in the centre than at the edges."
+   },
+   {
+    "titre": "Pleat",
+    "detail": "Place a spoonful of filling in the centre, then bring up and pleat the edges while turning, to form a closed pouch with many fine pleats."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Arrange the xiaolongbao in a steamer basket (on paper) and steam 8 to 10 minutes: the jelly melts into broth inside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, scalding. Eat carefully: pierce, sip the broth, then eat. With black vinegar and ginger."
+   }
+  ]
+ },
+ "tangyuan": {
+  "nom": "Tangyuan",
+  "description": "Tangyuan — Chinese glutinous rice balls: tender soft dumplings filled with a sweet black sesame paste, served in a sweet ginger broth. Symbols of family reunion, they're enjoyed warm during festivals.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Toast the sesame (black preferably) then blend it with the sugar and a little oil into a paste. Chill so it hardens."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the glutinous rice flour (or flour) with warm water into a smooth, soft, malleable dough, neither too dry nor sticky."
+   },
+   {
+    "titre": "Form",
+    "detail": "Take small balls of dough, flatten them into a disc, place a little filling in the centre and close into a smooth ball, without cracks."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Bring a pot of water to a simmer and gently drop in the tangyuan."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook for 4 to 5 minutes: the tangyuan are ready when they rise and float, puffed and translucent."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Meanwhile, simmer water with sugar and ginger slices for 10 minutes for a fragrant sweet broth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the tangyuan warm in the ginger broth. Bite gently: the sesame centre flows, sweet and fragrant. A comforting dessert."
+   }
+  ]
  }
 };

@@ -6715,4 +6715,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Laissez refroidir complètement : les barazek durcissent et deviennent croustillants. Servez avec un thé ou un café. Se conservent 2 semaines.", badge: null }
     ]
   },
+  tangyuan: {
+    dateAjout: "2026-07-10T08:39:00",
+    nom: "Tangyuan",
+    cat: "desserts", pays: "chine",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍡",
+    description: "Tangyuan — les boules de riz gluant chinoises : de tendres boulettes moelleuses fourrées d'une pâte de sésame noir sucrée, servies dans un bouillon sucré au gingembre. Symboles de réunion familiale, elles se dégustent chaudes lors des fêtes.",
+    tableauTangyuan: [
+      { nb: 1, farine: "40 g", sesame: "15 g", sucre: "15 g", huileolive: "4 ml", gingembre: "3 g" },
+      { nb: 2, farine: "80 g", sesame: "30 g", sucre: "30 g", huileolive: "8 ml", gingembre: "6 g" },
+      { nb: 3, farine: "120 g", sesame: "45 g", sucre: "45 g", huileolive: "12 ml", gingembre: "9 g" },
+      { nb: 4, farine: "160 g", sesame: "60 g", sucre: "60 g", huileolive: "16 ml", gingembre: "12 g" },
+      { nb: 5, farine: "200 g", sesame: "75 g", sucre: "75 g", huileolive: "20 ml", gingembre: "15 g" },
+      { nb: 6, farine: "240 g", sesame: "90 g", sucre: "90 g", huileolive: "24 ml", gingembre: "18 g" },
+      { nb: 7, farine: "280 g", sesame: "105 g", sucre: "105 g", huileolive: "28 ml", gingembre: "21 g" },
+      { nb: 8, farine: "320 g", sesame: "120 g", sucre: "120 g", huileolive: "32 ml", gingembre: "24 g" },
+      { nb: 9, farine: "360 g", sesame: "135 g", sucre: "135 g", huileolive: "36 ml", gingembre: "27 g" },
+      { nb: 10, farine: "400 g", sesame: "150 g", sucre: "150 g", huileolive: "40 ml", gingembre: "30 g" },
+      { nb: 11, farine: "440 g", sesame: "165 g", sucre: "165 g", huileolive: "44 ml", gingembre: "33 g" },
+      { nb: 12, farine: "480 g", sesame: "180 g", sucre: "180 g", huileolive: "48 ml", gingembre: "36 g" },
+      { nb: 13, farine: "520 g", sesame: "195 g", sucre: "195 g", huileolive: "52 ml", gingembre: "39 g" },
+      { nb: 14, farine: "560 g", sesame: "210 g", sucre: "210 g", huileolive: "56 ml", gingembre: "42 g" },
+      { nb: 15, farine: "600 g", sesame: "225 g", sucre: "225 g", huileolive: "60 ml", gingembre: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "⚫", titre: "La farce", detail: "Faites griller le sésame (noir de préférence) puis mixez-le avec le sucre et un peu d'huile en une pâte. Réservez au frais pour qu'elle durcisse.", badge: null },
+      { icone: "🍡", titre: "La pâte", detail: "Mélangez la farine de riz gluant (à défaut, de la farine) avec de l'eau tiède pour former une pâte lisse, souple et malléable, ni trop sèche ni collante.", badge: null },
+      { icone: "👐", titre: "Former", detail: "Prélevez de petites boules de pâte, aplatissez-les en disque, déposez un peu de farce au centre et refermez en boule bien lisse, sans fissure.", badge: null },
+      { icone: "💧", titre: "Pocher", detail: "Portez une casserole d'eau à frémissement et plongez-y les tangyuan délicatement.", badge: null },
+      { icone: "🎈", titre: "Cuisson", detail: "Laissez cuire 4 à 5 min : les tangyuan sont prêts quand ils remontent et flottent à la surface, gonflés et translucides.", badge: null },
+      { icone: "🫚", titre: "Le bouillon", detail: "Pendant ce temps, faites frémir de l'eau avec du sucre et des tranches de gingembre 10 min pour un bouillon sucré parfumé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez les tangyuan chauds dans le bouillon au gingembre. Mordez délicatement : le cœur de sésame coule, sucré et parfumé. Un dessert réconfortant.", badge: null }
+    ]
+  },
 });
