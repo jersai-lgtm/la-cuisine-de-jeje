@@ -58178,5 +58178,345 @@ window.RECETTES_EN = {
     "detail": "Drain and serve immediately, piping hot: the centre should be molten and creamy. The quintessential Spanish appetiser."
    }
   ]
+ },
+ "bratkartoffeln": {
+  "nom": "Bratkartoffeln",
+  "description": "Bratkartoffeln — German fried potatoes: golden crispy slices pan-fried with bacon and soft onions. The hearty side of German cooking, perfect with a sausage or a fried egg.",
+  "etapes": [
+   {
+    "titre": "Pre-cook",
+    "detail": "Boil the potatoes in their skins the day before (or 20 minutes), let them cool completely then peel. Cold, they hold better and crisp up."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the potatoes into even slices about 5 mm thick."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Fry the bacon lardons in a large pan until they render their fat and brown, then set aside."
+   },
+   {
+    "titre": "Brown the potatoes",
+    "detail": "Add the butter to the pan and brown the slices over medium-high heat, without stirring too much, so a nice crust forms underneath."
+   },
+   {
+    "titre": "Onions",
+    "detail": "Add the sliced onion and continue cooking until soft and golden, turning the potatoes regularly."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the bacon, season with salt and pepper and sauté 2 minutes to mingle and reheat everything."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with parsley and serve piping hot, with a fried egg, a sausage or meat. A German lunch classic."
+   }
+  ]
+ },
+ "rotkohl": {
+  "nom": "Rotkohl",
+  "description": "Rotkohl — German braised red cabbage: fine shreds of red cabbage slowly simmered with apple, vinegar and spices until soft, sweet-and-sour and glossy. The festive side, inseparable from goose or roast.",
+  "etapes": [
+   {
+    "titre": "Shred the cabbage",
+    "detail": "Remove the thick ribs from the red cabbage and shred it into very fine strips."
+   },
+   {
+    "titre": "Apple & onion",
+    "detail": "Peel and grate the apple, slice the onion: they'll melt into the cabbage and bring the sweetness."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Melt the butter and sweat the onion, then add the cabbage and apple, and stir to coat well."
+   },
+   {
+    "titre": "Sweet-and-sour",
+    "detail": "Add the vinegar, sugar, cinnamon, bay leaf and salt. The vinegar also revives the cabbage's beautiful purple colour."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Cover and simmer over low heat for 45 minutes to 1 hour, stirring occasionally and adding a splash of water if needed, until the cabbage is very soft."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and rebalance the sweet-and-sour: a little more vinegar or sugar to your taste."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a roast, game, a Christmas goose or sausages. Even better reheated the next day."
+   }
+  ]
+ },
+ "kartoffelpuffer": {
+  "nom": "Kartoffelpuffer",
+  "description": "Kartoffelpuffer — German potato pancakes: grated potato fried into thin crispy pancakes. Served sweet with apple sauce or savoury with salmon, a Christmas market staple.",
+  "etapes": [
+   {
+    "titre": "Grate & squeeze",
+    "detail": "Grate the raw potatoes and onion, then squeeze them firmly in a cloth to remove as much water as possible (essential step for crispy pancakes)."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix the squeezed potato with the egg, flour and salt into a batter that holds together."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a thin layer of oil in a pan over medium-high heat."
+   },
+   {
+    "titre": "Form",
+    "detail": "Drop spoonfuls of batter and flatten them into thin, even pancakes."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Cook 3 to 4 minutes per side, without touching, until golden and crisp at the edges."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels to remove excess oil and keep the crispness."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, very hot: sweet with apple sauce, or savoury with cream and salmon. A Christmas-market treat."
+   }
+  ]
+ },
+ "frikadellen": {
+  "nom": "Frikadellen",
+  "description": "Frikadellen — German flat meatballs: generous beef patties seasoned with onion and mustard, bound with bread, pan-fried. The German homemade 'burger', delicious hot with potatoes or cold in a sandwich.",
+  "etapes": [
+   {
+    "titre": "Breadcrumbs",
+    "detail": "Mix the breadcrumbs with a little milk or water and let them swell for a few minutes: they make the frikadellen tender."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Chop the onion very finely (or briefly sweat it to soften)."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix the minced beef with the swollen breadcrumbs, onion, egg, mustard, salt and pepper. Knead well to bind."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape large balls then flatten them into thick patties about 2 cm."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Cook in hot oil over medium heat for 5 to 6 minutes per side, until well browned and cooked through."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 2 minutes: the juices redistribute and the patty stays moist."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with potatoes and a salad, or let cool to tuck into a country-bread sandwich with mustard."
+   }
+  ]
+ },
+ "mamaliga": {
+  "nom": "Mămăligă",
+  "description": "Mămăligă — Romanian polenta: a creamy golden cornmeal porridge, served with fresh cheese and sour cream. Far more than a side, it's the daily bread of the Romanian countryside, comforting and rustic.",
+  "etapes": [
+   {
+    "titre": "Salted water",
+    "detail": "Bring a large volume of salted water (about 4 times the volume of polenta) to a boil in a heavy-bottomed pot."
+   },
+   {
+    "titre": "Rain it in",
+    "detail": "Pour the polenta (cornmeal) in a fine stream while whisking vigorously, to avoid lumps."
+   },
+   {
+    "titre": "Stir",
+    "detail": "Lower the heat and stir constantly with a wooden spoon for 15 to 20 minutes: the mămăligă thickens and pulls away from the sides."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Stir in the butter at the end of cooking to make it creamy and glossy."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into a bowl or onto a board: traditionally, it's turned out into a dome and cut with a thread, not a knife."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Serve hot, topped with crumbled fresh cheese and a spoon of cream melting over it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Wonderful with a stew, sausages or an egg. Also eaten simply, with cheese and cream, as a rustic dish."
+   }
+  ]
+ },
+ "mici": {
+  "nom": "Mici",
+  "description": "Mici — Romanian grilled minced rolls: small skinless rolls of meat spiced with garlic and cumin, grilled until well browned. The emblem of the Romanian barbecue, enjoyed with mustard and fresh bread.",
+  "etapes": [
+   {
+    "titre": "Aromatics",
+    "detail": "Crush the garlic to a paste with a little salt. Mix the paprika, cumin, thyme and pepper: the characteristic aroma of mici."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Mix the minced beef with the garlic, spices, baking soda (which gives the typical bounce) and cold stock. Knead vigorously for 5 to 10 minutes: the paste should become smooth and sticky."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and rest the mixture in the fridge for several hours, ideally overnight: the mici will only be better."
+   },
+   {
+    "titre": "Shape",
+    "detail": "With damp hands, shape small even rolls the size of a large finger, nice and firm."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over high heat (barbecue or griddle) for 8 to 10 minutes, turning, until well browned outside and juicy inside."
+   },
+   {
+    "titre": "Baste",
+    "detail": "Baste them with a little stock or salted water during cooking so they stay glossy and moist."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve very hot with mustard, fresh bread and fries or a salad. Best with a beer, as in Romania."
+   }
+  ]
+ },
+ "ciorba": {
+  "nom": "Ciorbă de Perișoare",
+  "description": "Ciorbă de Perișoare — Romanian meatball soup: a tangy vegetable broth filled with little rice-and-meat balls, brightened with a touch of sourness and lovage. A comforting meal-soup, the soul of the Romanian table.",
+  "etapes": [
+   {
+    "titre": "The meatballs",
+    "detail": "Mix the minced beef with the raw rice, a little grated onion, parsley, salt and pepper. Shape small balls (perișoare) the size of a walnut."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Sauté the diced onion, carrot and potato, then pour in the stock and bring to a simmer."
+   },
+   {
+    "titre": "Tomato",
+    "detail": "Add the crushed tomato and simmer 10 minutes to start softening the vegetables."
+   },
+   {
+    "titre": "Poach the balls",
+    "detail": "Gently drop the meatballs into the simmering broth and cook 20 minutes: the rice swells and the balls turn tender."
+   },
+   {
+    "titre": "Sour it",
+    "detail": "Sour the soup with the lemon juice (traditionally borș, a fermented bran juice): the signature tang of ciorbă. Adjust the salt."
+   },
+   {
+    "titre": "Lovage & parsley",
+    "detail": "Add a good handful of parsley (and lovage if you have it) off the heat: their aroma is essential."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, optionally with a spoon of cream and a fresh chilli on the side. A complete, comforting meal-soup."
+   }
+  ]
+ },
+ "papanasi": {
+  "nom": "Papanași",
+  "description": "Papanași — Romanian cheese doughnuts: soft fresh-cheese doughnuts, fried golden, topped with sour cream and blueberry jam. Romania's comfort dessert, served warm with its little ball on top.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Drain the fresh cheese well then mix it with the egg, sugar, semolina, baking soda and enough flour to get a soft, slightly sticky but workable dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the dough rest 15 minutes: the semolina swells and the dough becomes easier to work."
+   },
+   {
+    "titre": "Shape",
+    "detail": "With floured hands, shape round doughnuts with a hole (like a donut) and a small ball for the top of each."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Plunge them into hot oil (170°C) and fry 3 to 4 minutes, turning, until they puff and turn golden."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels. The papanași should be soft and airy inside."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Place each doughnut on a plate, top generously with sour cream and blueberry jam, then set the little ball on the hole."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, immediately: the contrast of the hot doughnut, sour cream and tangy jam is irresistible."
+   }
+  ]
+ },
+ "cozonac": {
+  "nom": "Cozonac",
+  "description": "Cozonac — Romania's festive braided brioche: a rich, stringy leavened dough rolled around a walnut and cocoa filling, braided then baked golden. The Christmas and Easter cake par excellence, whose aroma fills the whole house.",
+  "etapes": [
+   {
+    "titre": "The starter",
+    "detail": "Dissolve the yeast in the warm milk with a spoon of sugar and a little flour. Let it froth 15 minutes: the starter should swell and bubble."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, remaining sugar, egg, starter, then work in the soft butter. Knead at length (10-15 minutes) until the dough is smooth, elastic and pulls away from your hands."
+   },
+   {
+    "titre": "1st rise",
+    "detail": "Cover and let rise in a warm place for 1 hour to 1 hour 30, until the dough doubles in volume."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Blend the walnuts with the cocoa, a little sugar and egg white into a spreadable paste. Plump the raisins in a little warm water."
+   },
+   {
+    "titre": "Roll & braid",
+    "detail": "Roll out the dough, spread the filling, scatter the raisins, roll into a log. Form two logs and braid them, then place in a buttered loaf tin."
+   },
+   {
+    "titre": "2nd rise",
+    "detail": "Let rise again 45 minutes. Brush with egg yolk for a beautiful glossy crust."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 170°C for 35 to 40 minutes, until the cozonac is golden and sounds hollow. Let cool before slicing to reveal the spiral."
+   }
+  ]
+ },
+ "varenyky": {
+  "nom": "Varenyky",
+  "description": "Varenyky — Ukrainian dumplings: tender half-moons of dough filled with mashed potato, poached then topped with golden onions and cream. Ukraine's ultimate comfort food, made in big family batches.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, egg, a pinch of salt and enough warm water into a soft dough. Knead 8 minutes until smooth, then rest 30 minutes under a cloth."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Cook the potatoes and mash them. Mix with half the butter-browned onions, salt and pepper: the filling should be tasty and well bound."
+   },
+   {
+    "titre": "Roll & cut",
+    "detail": "Roll the dough out thinly and cut discs with a cutter."
+   },
+   {
+    "titre": "Fill & seal",
+    "detail": "Place a knob of filling in the centre of each disc, fold into a half-moon and pinch the edges firmly to seal well (moisten if needed)."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Drop the varenyky into boiling salted water and cook 4 to 5 minutes: they're ready when they float to the surface."
+   },
+   {
+    "titre": "Golden onions",
+    "detail": "Meanwhile, finish browning the rest of the onions in butter until well caramelised."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain the varenyky, top with the buttery onions and serve with a spoon of sour cream. Ukrainian comfort guaranteed."
+   }
+  ]
  }
 };

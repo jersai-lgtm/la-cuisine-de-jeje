@@ -3367,4 +3367,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez dans des bols ou des verres, avec quelques cerises entières et un filet de crème. Une entrée d'été rafraîchissante et originale.", badge: null }
     ]
   },
+  ciorba: {
+    dateAjout: "2026-07-09T19:06:00",
+    nom: "Ciorbă de Perișoare",
+    cat: "soupes", pays: "roumanie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Ciorbă de Perișoare — la soupe roumaine aux boulettes : un bouillon de légumes acidulé garni de petites boulettes de viande au riz, relevé d'une pointe d'acidité et de livèche. Une soupe-repas réconfortante, âme de la table roumaine.",
+    tableauCiorba: [
+      { nb: 1, boeufHache: "50 g", riz: "12 g", carotte: "40 g", pommedeterre: "60 g", oignon: "¼", tomates: "½", persil: "5 g", citron: "½", bouillon: "250 ml", sel: "2 g" },
+      { nb: 2, boeufHache: "100 g", riz: "24 g", carotte: "80 g", pommedeterre: "120 g", oignon: "½", tomates: "1", persil: "10 g", citron: "1", bouillon: "500 ml", sel: "4 g" },
+      { nb: 3, boeufHache: "150 g", riz: "36 g", carotte: "120 g", pommedeterre: "180 g", oignon: "¾", tomates: "1½", persil: "15 g", citron: "1½", bouillon: "750 ml", sel: "6 g" },
+      { nb: 4, boeufHache: "200 g", riz: "48 g", carotte: "160 g", pommedeterre: "240 g", oignon: "1", tomates: "2", persil: "20 g", citron: "2", bouillon: "1000 ml", sel: "8 g" },
+      { nb: 5, boeufHache: "250 g", riz: "60 g", carotte: "200 g", pommedeterre: "300 g", oignon: "1¼", tomates: "2½", persil: "25 g", citron: "2½", bouillon: "1250 ml", sel: "10 g" },
+      { nb: 6, boeufHache: "300 g", riz: "72 g", carotte: "240 g", pommedeterre: "360 g", oignon: "1½", tomates: "3", persil: "30 g", citron: "3", bouillon: "1500 ml", sel: "12 g" },
+      { nb: 7, boeufHache: "350 g", riz: "84 g", carotte: "280 g", pommedeterre: "420 g", oignon: "1¾", tomates: "3½", persil: "35 g", citron: "3½", bouillon: "1750 ml", sel: "14 g" },
+      { nb: 8, boeufHache: "400 g", riz: "96 g", carotte: "320 g", pommedeterre: "480 g", oignon: "2", tomates: "4", persil: "40 g", citron: "4", bouillon: "2000 ml", sel: "16 g" },
+      { nb: 9, boeufHache: "450 g", riz: "108 g", carotte: "360 g", pommedeterre: "540 g", oignon: "2¼", tomates: "4½", persil: "45 g", citron: "4½", bouillon: "2250 ml", sel: "18 g" },
+      { nb: 10, boeufHache: "500 g", riz: "120 g", carotte: "400 g", pommedeterre: "600 g", oignon: "2½", tomates: "5", persil: "50 g", citron: "5", bouillon: "2500 ml", sel: "20 g" },
+      { nb: 11, boeufHache: "550 g", riz: "132 g", carotte: "440 g", pommedeterre: "660 g", oignon: "2¾", tomates: "5½", persil: "55 g", citron: "5½", bouillon: "2750 ml", sel: "22 g" },
+      { nb: 12, boeufHache: "600 g", riz: "144 g", carotte: "480 g", pommedeterre: "720 g", oignon: "3", tomates: "6", persil: "60 g", citron: "6", bouillon: "3000 ml", sel: "24 g" },
+      { nb: 13, boeufHache: "650 g", riz: "156 g", carotte: "520 g", pommedeterre: "780 g", oignon: "3¼", tomates: "6½", persil: "65 g", citron: "6½", bouillon: "3250 ml", sel: "26 g" },
+      { nb: 14, boeufHache: "700 g", riz: "168 g", carotte: "560 g", pommedeterre: "840 g", oignon: "3½", tomates: "7", persil: "70 g", citron: "7", bouillon: "3500 ml", sel: "28 g" },
+      { nb: 15, boeufHache: "750 g", riz: "180 g", carotte: "600 g", pommedeterre: "900 g", oignon: "3¾", tomates: "7½", persil: "75 g", citron: "7½", bouillon: "3750 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Les boulettes", detail: "Mélangez le bœuf haché avec le riz cru, un peu d'oignon râpé, du persil, du sel et du poivre. Façonnez de petites boulettes (perișoare) de la taille d'une noix.", badge: null },
+      { icone: "🥕", titre: "Le bouillon", detail: "Faites revenir l'oignon, la carotte et la pomme de terre en dés, puis mouillez avec le bouillon et portez à frémissement.", badge: null },
+      { icone: "🍅", titre: "Tomate", detail: "Ajoutez la tomate concassée et laissez mijoter 10 min pour que les légumes commencent à s'attendrir.", badge: null },
+      { icone: "🍲", titre: "Pocher les boulettes", detail: "Plongez délicatement les boulettes dans le bouillon frémissant et laissez cuire 20 min : le riz gonfle et les boulettes deviennent moelleuses.", badge: null },
+      { icone: "🍋", titre: "Acidifier", detail: "Acidifiez la soupe avec le jus de citron (traditionnellement du borș, un jus de son fermenté) : c'est la signature aigrelette de la ciorbă. Rectifiez le sel.", badge: null },
+      { icone: "🌿", titre: "Livèche & persil", detail: "Ajoutez une bonne poignée de persil (et de livèche si vous en avez) hors du feu : leur parfum est essentiel.", badge: null },
+      { icone: "🥣", titre: "Servir", detail: "Servez bien chaud, éventuellement avec une cuillère de crème et un piment frais à côté. Une soupe-repas complète et réconfortante.", badge: null }
+    ]
+  },
 });

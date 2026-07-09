@@ -6234,4 +6234,78 @@ Object.assign(recettes, {
       { icone: "🌸", titre: "Servir", detail: "Servez tiède, quand le fromage est encore coulant, éventuellement parsemée de pistaches concassées. Se déguste sans attendre.", badge: null }
     ]
   },
+  papanasi: {
+    dateAjout: "2026-07-09T19:07:00",
+    nom: "Papanași",
+    cat: "desserts", pays: "roumanie",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍩",
+    description: "Papanași — les beignets au fromage roumains : de moelleux beignets à base de fromage frais, frits et dorés, nappés de crème aigre et de confiture de myrtilles. Le dessert-doudou de la Roumanie, servi tiède avec sa petite boule sur le dessus.",
+    tableauPapanasi: [
+      { nb: 1, fromageblanc: "90 g", farine: "30 g", semoule: "8 g", oeufs: "½", sucre: "12 g", cremefraiche: "25 g", confiture: "20 g", bicarbonate: "0.5 g", huilefriture: "15 ml" },
+      { nb: 2, fromageblanc: "180 g", farine: "60 g", semoule: "16 g", oeufs: "1", sucre: "24 g", cremefraiche: "50 g", confiture: "40 g", bicarbonate: "1 g", huilefriture: "30 ml" },
+      { nb: 3, fromageblanc: "270 g", farine: "90 g", semoule: "24 g", oeufs: "1½", sucre: "36 g", cremefraiche: "75 g", confiture: "60 g", bicarbonate: "1.5 g", huilefriture: "45 ml" },
+      { nb: 4, fromageblanc: "360 g", farine: "120 g", semoule: "32 g", oeufs: "2", sucre: "48 g", cremefraiche: "100 g", confiture: "80 g", bicarbonate: "2 g", huilefriture: "60 ml" },
+      { nb: 5, fromageblanc: "450 g", farine: "150 g", semoule: "40 g", oeufs: "2½", sucre: "60 g", cremefraiche: "125 g", confiture: "100 g", bicarbonate: "2.5 g", huilefriture: "75 ml" },
+      { nb: 6, fromageblanc: "540 g", farine: "180 g", semoule: "48 g", oeufs: "3", sucre: "72 g", cremefraiche: "150 g", confiture: "120 g", bicarbonate: "3 g", huilefriture: "90 ml" },
+      { nb: 7, fromageblanc: "630 g", farine: "210 g", semoule: "56 g", oeufs: "3½", sucre: "84 g", cremefraiche: "175 g", confiture: "140 g", bicarbonate: "3.5 g", huilefriture: "105 ml" },
+      { nb: 8, fromageblanc: "720 g", farine: "240 g", semoule: "64 g", oeufs: "4", sucre: "96 g", cremefraiche: "200 g", confiture: "160 g", bicarbonate: "4 g", huilefriture: "120 ml" },
+      { nb: 9, fromageblanc: "810 g", farine: "270 g", semoule: "72 g", oeufs: "4½", sucre: "108 g", cremefraiche: "225 g", confiture: "180 g", bicarbonate: "4.5 g", huilefriture: "135 ml" },
+      { nb: 10, fromageblanc: "900 g", farine: "300 g", semoule: "80 g", oeufs: "5", sucre: "120 g", cremefraiche: "250 g", confiture: "200 g", bicarbonate: "5 g", huilefriture: "150 ml" },
+      { nb: 11, fromageblanc: "990 g", farine: "330 g", semoule: "88 g", oeufs: "5½", sucre: "132 g", cremefraiche: "275 g", confiture: "220 g", bicarbonate: "5.5 g", huilefriture: "165 ml" },
+      { nb: 12, fromageblanc: "1080 g", farine: "360 g", semoule: "96 g", oeufs: "6", sucre: "144 g", cremefraiche: "300 g", confiture: "240 g", bicarbonate: "6 g", huilefriture: "180 ml" },
+      { nb: 13, fromageblanc: "1170 g", farine: "390 g", semoule: "104 g", oeufs: "6½", sucre: "156 g", cremefraiche: "325 g", confiture: "260 g", bicarbonate: "6.5 g", huilefriture: "195 ml" },
+      { nb: 14, fromageblanc: "1260 g", farine: "420 g", semoule: "112 g", oeufs: "7", sucre: "168 g", cremefraiche: "350 g", confiture: "280 g", bicarbonate: "7 g", huilefriture: "210 ml" },
+      { nb: 15, fromageblanc: "1350 g", farine: "450 g", semoule: "120 g", oeufs: "7½", sucre: "180 g", cremefraiche: "375 g", confiture: "300 g", bicarbonate: "7.5 g", huilefriture: "225 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "La pâte", detail: "Égouttez bien le fromage frais puis mélangez-le avec l'œuf, le sucre, la semoule, le bicarbonate et assez de farine pour obtenir une pâte souple, un peu collante mais façonnable.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laissez reposer la pâte 15 min : la semoule gonfle et la pâte devient plus facile à travailler.", badge: null },
+      { icone: "🍩", titre: "Façonner", detail: "Avec les mains farinées, façonnez des beignets ronds percés d'un trou (comme un donut) et une petite boule pour le dessus de chacun.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Plongez-les dans l'huile chaude (170°C) et faites-les dorer 3 à 4 min en les retournant, jusqu'à ce qu'ils gonflent et soient bien dorés.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Égouttez sur papier absorbant. Les papanași doivent être moelleux et aérés à l'intérieur.", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Déposez chaque beignet dans une assiette, nappez généreusement de crème aigre et de confiture de myrtilles, puis posez la petite boule sur le trou.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tiède, aussitôt : le contraste du beignet chaud, de la crème fraîche et de la confiture acidulée est irrésistible.", badge: null }
+    ]
+  },
+  cozonac: {
+    dateAjout: "2026-07-09T19:08:00",
+    nom: "Cozonac",
+    cat: "desserts", pays: "roumanie",
+    base: 4,
+    temps: "3h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🍞",
+    description: "Cozonac — la brioche tressée roumaine des fêtes : une pâte levée riche et filante, roulée autour d'une garniture aux noix et au cacao, tressée puis dorée. Le gâteau de Noël et de Pâques par excellence, dont le parfum embaume toute la maison.",
+    tableauCozonac: [
+      { nb: 1, farine: "60 g", lait: "40 ml", oeufs: "½", sucre: "20 g", beurre: "15 g", levure: "3 g", noix: "15 g", cacao: "4 g", raisinssecs: "8 g" },
+      { nb: 2, farine: "120 g", lait: "80 ml", oeufs: "1", sucre: "40 g", beurre: "30 g", levure: "6 g", noix: "30 g", cacao: "8 g", raisinssecs: "16 g" },
+      { nb: 3, farine: "180 g", lait: "120 ml", oeufs: "1½", sucre: "60 g", beurre: "45 g", levure: "9 g", noix: "45 g", cacao: "12 g", raisinssecs: "24 g" },
+      { nb: 4, farine: "240 g", lait: "160 ml", oeufs: "2", sucre: "80 g", beurre: "60 g", levure: "12 g", noix: "60 g", cacao: "16 g", raisinssecs: "32 g" },
+      { nb: 5, farine: "300 g", lait: "200 ml", oeufs: "2½", sucre: "100 g", beurre: "75 g", levure: "15 g", noix: "75 g", cacao: "20 g", raisinssecs: "40 g" },
+      { nb: 6, farine: "360 g", lait: "240 ml", oeufs: "3", sucre: "120 g", beurre: "90 g", levure: "18 g", noix: "90 g", cacao: "24 g", raisinssecs: "48 g" },
+      { nb: 7, farine: "420 g", lait: "280 ml", oeufs: "3½", sucre: "140 g", beurre: "105 g", levure: "21 g", noix: "105 g", cacao: "28 g", raisinssecs: "56 g" },
+      { nb: 8, farine: "480 g", lait: "320 ml", oeufs: "4", sucre: "160 g", beurre: "120 g", levure: "24 g", noix: "120 g", cacao: "32 g", raisinssecs: "64 g" },
+      { nb: 9, farine: "540 g", lait: "360 ml", oeufs: "4½", sucre: "180 g", beurre: "135 g", levure: "27 g", noix: "135 g", cacao: "36 g", raisinssecs: "72 g" },
+      { nb: 10, farine: "600 g", lait: "400 ml", oeufs: "5", sucre: "200 g", beurre: "150 g", levure: "30 g", noix: "150 g", cacao: "40 g", raisinssecs: "80 g" },
+      { nb: 11, farine: "660 g", lait: "440 ml", oeufs: "5½", sucre: "220 g", beurre: "165 g", levure: "33 g", noix: "165 g", cacao: "44 g", raisinssecs: "88 g" },
+      { nb: 12, farine: "720 g", lait: "480 ml", oeufs: "6", sucre: "240 g", beurre: "180 g", levure: "36 g", noix: "180 g", cacao: "48 g", raisinssecs: "96 g" },
+      { nb: 13, farine: "780 g", lait: "520 ml", oeufs: "6½", sucre: "260 g", beurre: "195 g", levure: "39 g", noix: "195 g", cacao: "52 g", raisinssecs: "104 g" },
+      { nb: 14, farine: "840 g", lait: "560 ml", oeufs: "7", sucre: "280 g", beurre: "210 g", levure: "42 g", noix: "210 g", cacao: "56 g", raisinssecs: "112 g" },
+      { nb: 15, farine: "900 g", lait: "600 ml", oeufs: "7½", sucre: "300 g", beurre: "225 g", levure: "45 g", noix: "225 g", cacao: "60 g", raisinssecs: "120 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Le levain", detail: "Délayez la levure dans le lait tiède avec une cuillère de sucre et un peu de farine. Laissez mousser 15 min : le levain doit gonfler et buller.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, le reste de sucre, l'œuf, le levain, puis incorporez le beurre mou. Pétrissez longuement (10-15 min) jusqu'à ce que la pâte soit lisse, élastique et se détache des mains.", badge: null },
+      { icone: "⏳", titre: "1re pousse", detail: "Couvrez et laissez lever dans un endroit tiède 1 h à 1 h 30, jusqu'à ce que la pâte double de volume.", badge: null },
+      { icone: "🌰", titre: "La garniture", detail: "Mixez les noix avec le cacao, un peu de sucre et de blanc d'œuf pour une pâte tartinable. Faites gonfler les raisins dans un peu d'eau tiède.", badge: null },
+      { icone: "🌀", titre: "Rouler & tresser", detail: "Étalez la pâte, tartinez de garniture, parsemez de raisins, roulez en boudin. Formez deux boudins et tressez-les, puis déposez dans un moule à cake beurré.", badge: null },
+      { icone: "⏳", titre: "2e pousse", detail: "Laissez lever à nouveau 45 min. Dorez au jaune d'œuf pour une belle croûte brillante.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 170°C 35 à 40 min, jusqu'à ce que le cozonac soit doré et sonne creux. Laissez refroidir avant de trancher pour révéler la spirale.", badge: null }
+    ]
+  },
 });
