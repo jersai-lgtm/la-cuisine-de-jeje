@@ -56988,5 +56988,175 @@ window.RECETTES_EN = {
     "detail": "Serve the chè chuối warm or chilled in bowls, scattered with toasted peanuts and sesame. A comforting dessert any time."
    }
   ]
+ },
+ "barszcz": {
+  "nom": "Barszcz",
+  "description": "Barszcz — Polish beetroot borscht: a ruby broth, tangy and scented with bay and dill, served with a dollop of cream. Comforting and a beautiful deep colour.",
+  "etapes": [
+   {
+    "titre": "Prepare the vegetables",
+    "detail": "Peel the beetroot and grate it (or cut into thin sticks). Slice the onion and dice the carrot small."
+   },
+   {
+    "titre": "Sweat",
+    "detail": "Sweat the onion and carrot in a little fat for a few minutes, without colouring, to bring out their sweetness."
+   },
+   {
+    "titre": "Add the beetroot",
+    "detail": "Add the grated beetroot, the stock, the garlic and the bay leaf. Bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer covered for 30 minutes, until the vegetables are tender and the broth has taken on an intense ruby colour."
+   },
+   {
+    "titre": "Acidify",
+    "detail": "Add the wine vinegar (or lemon juice): this sets the bright colour and brings the tang typical of barszcz. Season."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and balance the sweet-and-sour. For a clear barszcz, strain the broth; for a peasant version, keep the vegetables."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with a spoonful of sour cream and chopped dill. Also enjoyed with little dumplings (uszka) or a croquette."
+   }
+  ]
+ },
+ "kotletschabowy": {
+  "nom": "Kotlet Schabowy",
+  "description": "Kotlet schabowy — Polish breaded pork cutlet: a pounded slice of pork, coated in breadcrumbs and fried golden and crisp. The quintessential Sunday lunch, served with potatoes and cabbage.",
+  "etapes": [
+   {
+    "titre": "Pound the meat",
+    "detail": "Place the pork slice between two sheets of cling film and pound it with a mallet to about 5 mm thick. The thinner it is, the more tender."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper the meat on both sides. Let rest 5 minutes so the seasoning penetrates."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Coat the cutlet in flour and tap off the excess: the flour helps the coating stick."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Then dip it in beaten egg, coating it fully."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Coat it generously in breadcrumbs, pressing well to form an even, crisp crust."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in hot oil for 3 to 4 minutes per side, until the coating is golden and crisp. Don't overheat the oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain on paper towels and serve immediately with dill potatoes and braised cabbage or a salad. A wedge of lemon doesn't hurt."
+   }
+  ]
+ },
+ "kopytka": {
+  "nom": "Kopytka",
+  "description": "Kopytka — Polish potato dumplings: soft little dumplings of mash and flour, poached then pan-fried in butter. A tender side dish or a meal in their own right.",
+  "etapes": [
+   {
+    "titre": "Cook the potatoes",
+    "detail": "Boil the peeled potatoes in salted water until tender, mash into a fine purée and let cool (hot mash would stick to the flour)."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Add the flour, egg and salt to the mash. Mix just enough to form a soft, even dough — overworked, it turns rubbery."
+   },
+   {
+    "titre": "Form the logs",
+    "detail": "On a floured surface, roll the dough into logs about 2 cm in diameter."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the logs diagonally every 2 cm to get the characteristic little diamonds of kopytka."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Drop them into a large pot of boiling salted water. They're done when they rise to the surface (2 to 3 min). Drain gently."
+   },
+   {
+    "titre": "Pan-fry in butter",
+    "detail": "Melt the butter in a pan and sauté the kopytka until lightly golden and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, plain with butter and toasted breadcrumbs, or as a side to a saucy dish (goulash, braised meat)."
+   }
+  ]
+ },
+ "fasolkabretonska": {
+  "nom": "Fasolka po Bretońsku",
+  "description": "Fasolka po bretońsku — Polish-style white beans: simmered with smoked sausage, bacon and a tomato sauce with bay and paprika. A rustic winter dish, rich and comforting.",
+  "etapes": [
+   {
+    "titre": "Soak the beans",
+    "detail": "The day before, soak the dried white beans for 12 hours in cold water, then drain (or use pre-cooked beans)."
+   },
+   {
+    "titre": "Bacon & sausage",
+    "detail": "Fry the diced bacon and sliced smoked sausage in the oil, until they render their fat and colour."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add the sliced onion and garlic, letting them soften in the fragrant sausage fat."
+   },
+   {
+    "titre": "Tomato base",
+    "detail": "Stir in the tomato paste, paprika and bay leaf, cook for 1 minute to toast the spices, then add water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the drained beans, season and simmer covered for 40 to 45 minutes, until the beans are tender and the sauce thick and glossy."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the seasoning: the dish should be fragrant, slightly sweet from the tomato and smoky from the sausage."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve very hot with a good slice of country bread to mop up. Even better reheated the next day."
+   }
+  ]
+ },
+ "szarlotka": {
+  "nom": "Szarlotka",
+  "description": "Szarlotka — Polish apple cake: a tender shortcrust filled with a thick layer of cinnamon-spiced apples, dusted with icing sugar. The Polish family cake, generous with fruit.",
+  "etapes": [
+   {
+    "titre": "The shortcrust",
+    "detail": "Rub the flour with the cold butter, sugar and baking powder with your fingertips. Add the egg and gather into a ball without overworking. Divide in two, wrap and chill 30 minutes (one piece in the freezer)."
+   },
+   {
+    "titre": "The apple filling",
+    "detail": "Peel and dice the apples small. Cook them down over low heat with the cinnamon and a little sugar, until tender but still holding. Let cool and drain excess juice."
+   },
+   {
+    "titre": "Line the tin",
+    "detail": "Roll out the first half of dough and line a buttered tin, bringing the pastry slightly up the sides."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the apple filling in a thick, even layer over the pastry base."
+   },
+   {
+    "titre": "Grate the top",
+    "detail": "Grate the second half of dough (well chilled, hence the freezer) directly over the apples, to form a crumble-like top."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 35 to 40 minutes, until the top is golden and the pastry cooked. Let cool completely before slicing (the filling holds better cold)."
+   },
+   {
+    "titre": "Dust & serve",
+    "detail": "Dust generously with icing sugar. Szarlotka is eaten warm or cold, sometimes with a scoop of vanilla ice cream."
+   }
+  ]
  }
 };

@@ -3033,4 +3033,41 @@ Object.assign(recettes, {
       { icone: "🐟", titre: "Servir", detail: "Servez tiède avec un bol de nuoc cham (nuoc-mâm, citron vert, sucre, eau) pour tremper, et des herbes fraîches.", badge: null }
     ]
   },
+  kopytka: {
+    dateAjout: "2026-07-09T15:02:00",
+    nom: "Kopytka",
+    cat: "encas", pays: "pologne",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🥟",
+    description: "Kopytka — les gnocchis polonais à la pomme de terre : de petits dumplings moelleux de purée et de farine, pochés puis dorés au beurre. Un accompagnement fondant ou un plat à part entière.",
+    tableauKopytka: [
+      { nb: 1, pommedeterre: "200 g", farine: "50 g", oeufs: "½", beurre: "12 g", sel: "2 g" },
+      { nb: 2, pommedeterre: "400 g", farine: "100 g", oeufs: "1", beurre: "24 g", sel: "4 g" },
+      { nb: 3, pommedeterre: "600 g", farine: "150 g", oeufs: "1½", beurre: "36 g", sel: "6 g" },
+      { nb: 4, pommedeterre: "800 g", farine: "200 g", oeufs: "2", beurre: "48 g", sel: "8 g" },
+      { nb: 5, pommedeterre: "1000 g", farine: "250 g", oeufs: "2½", beurre: "60 g", sel: "10 g" },
+      { nb: 6, pommedeterre: "1200 g", farine: "300 g", oeufs: "3", beurre: "72 g", sel: "12 g" },
+      { nb: 7, pommedeterre: "1400 g", farine: "350 g", oeufs: "3½", beurre: "84 g", sel: "14 g" },
+      { nb: 8, pommedeterre: "1600 g", farine: "400 g", oeufs: "4", beurre: "96 g", sel: "16 g" },
+      { nb: 9, pommedeterre: "1800 g", farine: "450 g", oeufs: "4½", beurre: "108 g", sel: "18 g" },
+      { nb: 10, pommedeterre: "2000 g", farine: "500 g", oeufs: "5", beurre: "120 g", sel: "20 g" },
+      { nb: 11, pommedeterre: "2200 g", farine: "550 g", oeufs: "5½", beurre: "132 g", sel: "22 g" },
+      { nb: 12, pommedeterre: "2400 g", farine: "600 g", oeufs: "6", beurre: "144 g", sel: "24 g" },
+      { nb: 13, pommedeterre: "2600 g", farine: "650 g", oeufs: "6½", beurre: "156 g", sel: "26 g" },
+      { nb: 14, pommedeterre: "2800 g", farine: "700 g", oeufs: "7", beurre: "168 g", sel: "28 g" },
+      { nb: 15, pommedeterre: "3000 g", farine: "750 g", oeufs: "7½", beurre: "180 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Faites cuire les pommes de terre épluchées dans l'eau salée jusqu'à ce qu'elles soient tendres, écrasez-les en purée fine et laissez tiédir (une purée chaude collerait à la farine).", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Ajoutez la farine, l'œuf et le sel à la purée. Mélangez juste ce qu'il faut pour former une pâte souple et homogène — trop travaillée, elle deviendrait élastique.", badge: null },
+      { icone: "🐍", titre: "Former les boudins", detail: "Sur un plan fariné, roulez la pâte en boudins d'environ 2 cm de diamètre.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Coupez les boudins en biais tous les 2 cm pour obtenir les petits losanges caractéristiques des kopytka.", badge: null },
+      { icone: "♨️", titre: "Pocher", detail: "Plongez-les dans une grande casserole d'eau bouillante salée. Ils sont cuits quand ils remontent à la surface (2 à 3 min). Égouttez délicatement.", badge: null },
+      { icone: "🧈", titre: "Dorer au beurre", detail: "Faites fondre le beurre dans une poêle et faites-y sauter les kopytka jusqu'à ce qu'ils soient légèrement dorés et parfumés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, nature avec du beurre et de la chapelure grillée, ou en accompagnement d'un plat en sauce (goulasch, viande braisée).", badge: null }
+    ]
+  },
 });

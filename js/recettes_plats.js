@@ -30203,4 +30203,78 @@ Object.assign(recettes, {
       { icone: "🍚", titre: "Servir", detail: "Servez le thịt kho bien chaud avec du riz blanc, qui absorbe la sauce caramélisée, et éventuellement des légumes marinés pour l'acidité.", badge: null }
     ]
   },
+  kotletschabowy: {
+    dateAjout: "2026-07-09T15:01:00",
+    nom: "Kotlet Schabowy",
+    cat: "plats", pays: "pologne",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🍖",
+    description: "Kotlet schabowy — l'escalope de porc panée polonaise : une tranche de porc aplatie, panée à la chapelure et frite dorée et croustillante. Le déjeuner dominical par excellence, servi avec pommes de terre et chou.",
+    tableauKotletschabowy: [
+      { nb: 1, porc: "150 g", oeufs: "1", chapelure: "30 g", farine: "15 g", huile: "15 ml", sel: "2 g", poivre: "1 g" },
+      { nb: 2, porc: "300 g", oeufs: "2", chapelure: "60 g", farine: "30 g", huile: "30 ml", sel: "4 g", poivre: "2 g" },
+      { nb: 3, porc: "450 g", oeufs: "3", chapelure: "90 g", farine: "45 g", huile: "45 ml", sel: "6 g", poivre: "3 g" },
+      { nb: 4, porc: "600 g", oeufs: "4", chapelure: "120 g", farine: "60 g", huile: "60 ml", sel: "8 g", poivre: "4 g" },
+      { nb: 5, porc: "750 g", oeufs: "5", chapelure: "150 g", farine: "75 g", huile: "75 ml", sel: "10 g", poivre: "5 g" },
+      { nb: 6, porc: "900 g", oeufs: "6", chapelure: "180 g", farine: "90 g", huile: "90 ml", sel: "12 g", poivre: "6 g" },
+      { nb: 7, porc: "1050 g", oeufs: "7", chapelure: "210 g", farine: "105 g", huile: "105 ml", sel: "14 g", poivre: "7 g" },
+      { nb: 8, porc: "1200 g", oeufs: "8", chapelure: "240 g", farine: "120 g", huile: "120 ml", sel: "16 g", poivre: "8 g" },
+      { nb: 9, porc: "1350 g", oeufs: "9", chapelure: "270 g", farine: "135 g", huile: "135 ml", sel: "18 g", poivre: "9 g" },
+      { nb: 10, porc: "1500 g", oeufs: "10", chapelure: "300 g", farine: "150 g", huile: "150 ml", sel: "20 g", poivre: "10 g" },
+      { nb: 11, porc: "1650 g", oeufs: "11", chapelure: "330 g", farine: "165 g", huile: "165 ml", sel: "22 g", poivre: "11 g" },
+      { nb: 12, porc: "1800 g", oeufs: "12", chapelure: "360 g", farine: "180 g", huile: "180 ml", sel: "24 g", poivre: "12 g" },
+      { nb: 13, porc: "1950 g", oeufs: "13", chapelure: "390 g", farine: "195 g", huile: "195 ml", sel: "26 g", poivre: "13 g" },
+      { nb: 14, porc: "2100 g", oeufs: "14", chapelure: "420 g", farine: "210 g", huile: "210 ml", sel: "28 g", poivre: "14 g" },
+      { nb: 15, porc: "2250 g", oeufs: "15", chapelure: "450 g", farine: "225 g", huile: "225 ml", sel: "30 g", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Aplatir la viande", detail: "Placez la tranche de porc entre deux feuilles de film et aplatissez-la au maillet jusqu'à environ 5 mm d'épaisseur. Plus elle est fine, plus elle sera tendre.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Salez et poivrez la viande des deux côtés. Laissez reposer 5 min pour que l'assaisonnement pénètre.", badge: null },
+      { icone: "🌾", titre: "Fariner", detail: "Passez l'escalope dans la farine et tapotez pour retirer l'excédent : la farine aide la panure à accrocher.", badge: null },
+      { icone: "🥚", titre: "Œuf", detail: "Trempez-la ensuite dans l'œuf battu, en l'enrobant entièrement.", badge: null },
+      { icone: "🍞", titre: "Paner", detail: "Enrobez-la généreusement de chapelure en pressant bien pour former une panure homogène et croustillante.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire dans l'huile chaude 3 à 4 min par face, jusqu'à ce que la panure soit bien dorée et croustillante. Ne surchauffez pas l'huile.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez sur papier absorbant et servez aussitôt avec des pommes de terre à l'aneth et du chou braisé ou une salade. Un quartier de citron ne gâche rien.", badge: null }
+    ]
+  },
+  fasolkabretonska: {
+    dateAjout: "2026-07-09T15:03:00",
+    nom: "Fasolka po Bretońsku",
+    cat: "plats", pays: "pologne",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🫘",
+    description: "Fasolka po bretońsku — les haricots blancs à la polonaise : mijotés avec de la saucisse fumée, du lard et une sauce tomate au laurier et au paprika. Un plat d'hiver rustique, riche et réconfortant.",
+    tableauFasolkabretonska: [
+      { nb: 1, haricotsblancs: "100 g", saucisse: "50 g", lard: "20 g", concentretomate: "15 g", oignon: "½", ail: "2", laurier: "1 g", paprika: "2 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, haricotsblancs: "200 g", saucisse: "100 g", lard: "40 g", concentretomate: "30 g", oignon: "1", ail: "4", laurier: "2 g", paprika: "4 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, haricotsblancs: "300 g", saucisse: "150 g", lard: "60 g", concentretomate: "45 g", oignon: "1½", ail: "6", laurier: "3 g", paprika: "6 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, haricotsblancs: "400 g", saucisse: "200 g", lard: "80 g", concentretomate: "60 g", oignon: "2", ail: "8", laurier: "4 g", paprika: "8 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, haricotsblancs: "500 g", saucisse: "250 g", lard: "100 g", concentretomate: "75 g", oignon: "2½", ail: "10", laurier: "5 g", paprika: "10 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, haricotsblancs: "600 g", saucisse: "300 g", lard: "120 g", concentretomate: "90 g", oignon: "3", ail: "12", laurier: "6 g", paprika: "12 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, haricotsblancs: "700 g", saucisse: "350 g", lard: "140 g", concentretomate: "105 g", oignon: "3½", ail: "14", laurier: "7 g", paprika: "14 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, haricotsblancs: "800 g", saucisse: "400 g", lard: "160 g", concentretomate: "120 g", oignon: "4", ail: "16", laurier: "8 g", paprika: "16 g", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, haricotsblancs: "900 g", saucisse: "450 g", lard: "180 g", concentretomate: "135 g", oignon: "4½", ail: "18", laurier: "9 g", paprika: "18 g", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, haricotsblancs: "1000 g", saucisse: "500 g", lard: "200 g", concentretomate: "150 g", oignon: "5", ail: "20", laurier: "10 g", paprika: "20 g", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, haricotsblancs: "1100 g", saucisse: "550 g", lard: "220 g", concentretomate: "165 g", oignon: "5½", ail: "22", laurier: "11 g", paprika: "22 g", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, haricotsblancs: "1200 g", saucisse: "600 g", lard: "240 g", concentretomate: "180 g", oignon: "6", ail: "24", laurier: "12 g", paprika: "24 g", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, haricotsblancs: "1300 g", saucisse: "650 g", lard: "260 g", concentretomate: "195 g", oignon: "6½", ail: "26", laurier: "13 g", paprika: "26 g", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, haricotsblancs: "1400 g", saucisse: "700 g", lard: "280 g", concentretomate: "210 g", oignon: "7", ail: "28", laurier: "14 g", paprika: "28 g", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, haricotsblancs: "1500 g", saucisse: "750 g", lard: "300 g", concentretomate: "225 g", oignon: "7½", ail: "30", laurier: "15 g", paprika: "30 g", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "💧", titre: "Tremper les haricots", detail: "La veille, faites tremper les haricots blancs secs 12 h dans l'eau froide, puis égouttez (ou utilisez des haricots déjà cuits).", badge: null },
+      { icone: "🥓", titre: "Lard & saucisse", detail: "Faites revenir le lard en dés et la saucisse fumée en rondelles dans l'huile, jusqu'à ce qu'ils rendent leur gras et colorent.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Ajoutez l'oignon émincé et l'ail, faites-les fondre dans le gras parfumé de la saucisse.", badge: null },
+      { icone: "🍅", titre: "Base tomate", detail: "Incorporez le concentré de tomate, le paprika et le laurier, remuez 1 min pour torréfier les épices, puis mouillez d'eau.", badge: null },
+      { icone: "🫘", titre: "Mijoter", detail: "Ajoutez les haricots égouttés, salez et laissez mijoter à couvert 40 à 45 min, jusqu'à ce que les haricots soient fondants et la sauce épaisse et brillante.", badge: null },
+      { icone: "🥄", titre: "Ajuster", detail: "Rectifiez l'assaisonnement : le plat doit être bien parfumé, légèrement sucré par la tomate et fumé par la saucisse.", badge: null },
+      { icone: "🍞", titre: "Servir", detail: "Servez très chaud avec une belle tranche de pain de campagne pour saucer. Encore meilleur réchauffé le lendemain.", badge: null }
+    ]
+  },
 });

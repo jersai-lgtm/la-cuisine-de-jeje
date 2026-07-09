@@ -3293,4 +3293,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir immédiatement", detail: "Servez l'açorda bien chaude dans des bols individuels. La soupe doit être épaisse, presque comme une bouillie. Ne pas attendre car le pain continue d'absorber le bouillon.", badge: null }
     ]
   },
+  barszcz: {
+    dateAjout: "2026-07-09T15:00:00",
+    nom: "Barszcz",
+    cat: "soupes", pays: "pologne",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐ Facile",
+    emoji: "🥣",
+    description: "Barszcz — le bortsch polonais aux betteraves : un bouillon rubis, acidulé et parfumé au laurier et à l'aneth, servi avec une pointe de crème. Réconfortant et d'une belle couleur profonde.",
+    tableauBarszcz: [
+      { nb: 1, betterave: "120 g", bouillon: "250 ml", oignon: "½", carotte: "40 g", ail: "1", cremefraiche: "20 g", vinaigreVin: "8 ml", aneth: "4 g", laurier: "1 g", sel: "2 g" },
+      { nb: 2, betterave: "240 g", bouillon: "500 ml", oignon: "1", carotte: "80 g", ail: "2", cremefraiche: "40 g", vinaigreVin: "16 ml", aneth: "8 g", laurier: "2 g", sel: "4 g" },
+      { nb: 3, betterave: "360 g", bouillon: "750 ml", oignon: "1½", carotte: "120 g", ail: "3", cremefraiche: "60 g", vinaigreVin: "24 ml", aneth: "12 g", laurier: "3 g", sel: "6 g" },
+      { nb: 4, betterave: "480 g", bouillon: "1000 ml", oignon: "2", carotte: "160 g", ail: "4", cremefraiche: "80 g", vinaigreVin: "32 ml", aneth: "16 g", laurier: "4 g", sel: "8 g" },
+      { nb: 5, betterave: "600 g", bouillon: "1250 ml", oignon: "2½", carotte: "200 g", ail: "5", cremefraiche: "100 g", vinaigreVin: "40 ml", aneth: "20 g", laurier: "5 g", sel: "10 g" },
+      { nb: 6, betterave: "720 g", bouillon: "1500 ml", oignon: "3", carotte: "240 g", ail: "6", cremefraiche: "120 g", vinaigreVin: "48 ml", aneth: "24 g", laurier: "6 g", sel: "12 g" },
+      { nb: 7, betterave: "840 g", bouillon: "1750 ml", oignon: "3½", carotte: "280 g", ail: "7", cremefraiche: "140 g", vinaigreVin: "56 ml", aneth: "28 g", laurier: "7 g", sel: "14 g" },
+      { nb: 8, betterave: "960 g", bouillon: "2000 ml", oignon: "4", carotte: "320 g", ail: "8", cremefraiche: "160 g", vinaigreVin: "64 ml", aneth: "32 g", laurier: "8 g", sel: "16 g" },
+      { nb: 9, betterave: "1080 g", bouillon: "2250 ml", oignon: "4½", carotte: "360 g", ail: "9", cremefraiche: "180 g", vinaigreVin: "72 ml", aneth: "36 g", laurier: "9 g", sel: "18 g" },
+      { nb: 10, betterave: "1200 g", bouillon: "2500 ml", oignon: "5", carotte: "400 g", ail: "10", cremefraiche: "200 g", vinaigreVin: "80 ml", aneth: "40 g", laurier: "10 g", sel: "20 g" },
+      { nb: 11, betterave: "1320 g", bouillon: "2750 ml", oignon: "5½", carotte: "440 g", ail: "11", cremefraiche: "220 g", vinaigreVin: "88 ml", aneth: "44 g", laurier: "11 g", sel: "22 g" },
+      { nb: 12, betterave: "1440 g", bouillon: "3000 ml", oignon: "6", carotte: "480 g", ail: "12", cremefraiche: "240 g", vinaigreVin: "96 ml", aneth: "48 g", laurier: "12 g", sel: "24 g" },
+      { nb: 13, betterave: "1560 g", bouillon: "3250 ml", oignon: "6½", carotte: "520 g", ail: "13", cremefraiche: "260 g", vinaigreVin: "104 ml", aneth: "52 g", laurier: "13 g", sel: "26 g" },
+      { nb: 14, betterave: "1680 g", bouillon: "3500 ml", oignon: "7", carotte: "560 g", ail: "14", cremefraiche: "280 g", vinaigreVin: "112 ml", aneth: "56 g", laurier: "14 g", sel: "28 g" },
+      { nb: 15, betterave: "1800 g", bouillon: "3750 ml", oignon: "7½", carotte: "600 g", ail: "15", cremefraiche: "300 g", vinaigreVin: "120 ml", aneth: "60 g", laurier: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Préparer les légumes", detail: "Épluchez les betteraves et râpez-les (ou coupez-les en fins bâtonnets). Émincez l'oignon et coupez la carotte en petits dés.", badge: null },
+      { icone: "🧅", titre: "Faire suer", detail: "Faites suer l'oignon et la carotte dans un peu de matière grasse quelques minutes, sans coloration, pour développer leur douceur.", badge: null },
+      { icone: "🫐", titre: "Ajouter la betterave", detail: "Ajoutez la betterave râpée, le bouillon, l'ail et la feuille de laurier. Portez à frémissement.", badge: null },
+      { icone: "⏱️", titre: "Mijoter", detail: "Laissez mijoter à couvert 30 min, jusqu'à ce que les légumes soient bien tendres et que le bouillon ait pris une couleur rubis intense.", badge: null },
+      { icone: "🍋", titre: "Acidifier", detail: "Ajoutez le vinaigre de vin (ou du jus de citron) : c'est lui qui fixe la couleur vive et apporte l'acidité typique du barszcz. Salez.", badge: null },
+      { icone: "🥄", titre: "Ajuster", detail: "Goûtez et équilibrez l'aigre-doux. Pour un barszcz clair, filtrez le bouillon ; pour une version paysanne, gardez les légumes.", badge: null },
+      { icone: "🌿", titre: "Servir", detail: "Servez bien chaud avec une cuillère de crème fraîche et de l'aneth ciselé. Se déguste aussi avec de petits raviolis (uszka) ou une croquette.", badge: null }
+    ]
+  },
 });

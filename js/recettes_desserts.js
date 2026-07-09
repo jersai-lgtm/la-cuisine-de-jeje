@@ -6012,4 +6012,41 @@ Object.assign(recettes, {
       { icone: "🍨", titre: "Servir", detail: "Servez le chè chuối tiède ou frais dans des bols, parsemé de cacahuètes et de sésame grillés. Un dessert réconfortant à toute heure.", badge: null }
     ]
   },
+  szarlotka: {
+    dateAjout: "2026-07-09T15:04:00",
+    nom: "Szarlotka",
+    cat: "desserts", pays: "pologne",
+    base: 4,
+    temps: "1h10",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍎",
+    description: "Szarlotka — la tarte aux pommes polonaise : une pâte sablée fondante garnie d'une épaisse couche de pommes épicées à la cannelle, poudrée de sucre glace. Le gâteau familial polonais, généreux en fruits.",
+    tableauSzarlotka: [
+      { nb: 1, farine: "40 g", beurre: "25 g", sucre: "20 g", oeufs: "½", pomme: "1", cannelle: "1 g", levurechimique: "1 g", sucreglace: "5 g" },
+      { nb: 2, farine: "80 g", beurre: "50 g", sucre: "40 g", oeufs: "1", pomme: "2", cannelle: "2 g", levurechimique: "2 g", sucreglace: "10 g" },
+      { nb: 3, farine: "120 g", beurre: "75 g", sucre: "60 g", oeufs: "1½", pomme: "3", cannelle: "3 g", levurechimique: "3 g", sucreglace: "15 g" },
+      { nb: 4, farine: "160 g", beurre: "100 g", sucre: "80 g", oeufs: "2", pomme: "4", cannelle: "4 g", levurechimique: "4 g", sucreglace: "20 g" },
+      { nb: 5, farine: "200 g", beurre: "125 g", sucre: "100 g", oeufs: "2½", pomme: "5", cannelle: "5 g", levurechimique: "5 g", sucreglace: "25 g" },
+      { nb: 6, farine: "240 g", beurre: "150 g", sucre: "120 g", oeufs: "3", pomme: "6", cannelle: "6 g", levurechimique: "6 g", sucreglace: "30 g" },
+      { nb: 7, farine: "280 g", beurre: "175 g", sucre: "140 g", oeufs: "3½", pomme: "7", cannelle: "7 g", levurechimique: "7 g", sucreglace: "35 g" },
+      { nb: 8, farine: "320 g", beurre: "200 g", sucre: "160 g", oeufs: "4", pomme: "8", cannelle: "8 g", levurechimique: "8 g", sucreglace: "40 g" },
+      { nb: 9, farine: "360 g", beurre: "225 g", sucre: "180 g", oeufs: "4½", pomme: "9", cannelle: "9 g", levurechimique: "9 g", sucreglace: "45 g" },
+      { nb: 10, farine: "400 g", beurre: "250 g", sucre: "200 g", oeufs: "5", pomme: "10", cannelle: "10 g", levurechimique: "10 g", sucreglace: "50 g" },
+      { nb: 11, farine: "440 g", beurre: "275 g", sucre: "220 g", oeufs: "5½", pomme: "11", cannelle: "11 g", levurechimique: "11 g", sucreglace: "55 g" },
+      { nb: 12, farine: "480 g", beurre: "300 g", sucre: "240 g", oeufs: "6", pomme: "12", cannelle: "12 g", levurechimique: "12 g", sucreglace: "60 g" },
+      { nb: 13, farine: "520 g", beurre: "325 g", sucre: "260 g", oeufs: "6½", pomme: "13", cannelle: "13 g", levurechimique: "13 g", sucreglace: "65 g" },
+      { nb: 14, farine: "560 g", beurre: "350 g", sucre: "280 g", oeufs: "7", pomme: "14", cannelle: "14 g", levurechimique: "14 g", sucreglace: "70 g" },
+      { nb: 15, farine: "600 g", beurre: "375 g", sucre: "300 g", oeufs: "7½", pomme: "15", cannelle: "15 g", levurechimique: "15 g", sucreglace: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "La pâte sablée", detail: "Sablez la farine avec le beurre froid, le sucre et la levure chimique du bout des doigts. Ajoutez l'œuf et rassemblez en boule sans trop travailler. Divisez en deux, filmez et réservez 30 min au frais (dont un morceau au congélateur).", badge: null },
+      { icone: "🍎", titre: "La compotée de pommes", detail: "Épluchez et coupez les pommes en petits dés. Faites-les compoter à feu doux avec la cannelle et un peu de sucre, jusqu'à ce qu'elles soient tendres mais encore un peu tenues. Laissez tiédir et égouttez l'excédent de jus.", badge: null },
+      { icone: "📏", titre: "Foncer le moule", detail: "Étalez la première moitié de pâte et foncez un moule beurré en remontant légèrement les bords.", badge: null },
+      { icone: "🥧", titre: "Garnir", detail: "Répartissez la compotée de pommes en couche épaisse et régulière sur le fond de pâte.", badge: null },
+      { icone: "❄️", titre: "Râper le dessus", detail: "Râpez la seconde moitié de pâte (bien froide, d'où le passage au congélateur) directement sur les pommes, pour former un dessus façon crumble.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C 35 à 40 min, jusqu'à ce que le dessus soit doré et la pâte cuite. Laissez refroidir complètement avant de découper (la garniture se tient mieux froide).", badge: null },
+      { icone: "❄️", titre: "Poudrer & servir", detail: "Saupoudrez généreusement de sucre glace. La szarlotka se déguste tiède ou froide, parfois avec une boule de glace vanille.", badge: null }
+    ]
+  },
 });
