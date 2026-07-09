@@ -950,6 +950,8 @@ function switchCuisineTab(tab) {
     lcGenererListe();
   }
   if (tab === "pantry" && typeof gmRender === "function") gmRender();
+  // Vide-frigo : rafraîchir la bannière placard (le placard a pu changer) v259
+  if (tab === "videfrigo" && typeof vfSyncPlacardBanner === "function") vfSyncPlacardBanner();
 }
 
 // === v247 : Génère un prompt + copie + affiche les options IA ===

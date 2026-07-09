@@ -159,7 +159,9 @@
     if (window._vfSelection && !window._vfSelection.has(label)) {
       window._vfSelection.add(label);
       try { const chip = document.querySelector('.vf-chip[data-label="' + (window.CSS && CSS.escape ? CSS.escape(label) : label) + '"]'); if (chip) chip.classList.add("vf-chip-active"); } catch (e) {}
+      if (typeof vfPersistSelection === "function") vfPersistSelection();   // mémoriser le frigo
     }
+    if (typeof vfSyncPlacardBanner === "function") vfSyncPlacardBanner();
     if (typeof vfMettreAJourSelection === "function") vfMettreAJourSelection();
     setTimeout(() => {
       const r = document.getElementById("vf-resultats");
@@ -171,6 +173,7 @@
 
   window.gmRender = render;
   window.gmMajBadge = majBadge;
+  window.gmJoursRestants = joursRestants;   // utilisé par le vide-frigo (priorité anti-gaspi)
 
   window.addEventListener("profilMisAJour", majBadge);
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", majBadge);
