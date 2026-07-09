@@ -3144,4 +3144,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud en accompagnement d'un riz et d'un sambal, ou en snack. Un trait de citron vert relève joliment le tout.", badge: null }
     ]
   },
+  mucver: {
+    dateAjout: "2026-07-09T17:03:00",
+    nom: "Mücver",
+    cat: "encas", pays: "turquie",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥒",
+    description: "Mücver — les galettes de courgette turques : de la courgette râpée mêlée de feta, d'aneth et d'oignon, en petites galettes dorées à la poêle. Croustillantes dehors, moelleuses dedans, servies avec du yaourt.",
+    tableauMucver: [
+      { nb: 1, courgette: "150 g", oeufs: "1", feta: "30 g", farine: "20 g", aneth: "5 g", oignon: "¼", huilefriture: "15 ml", sel: "2 g" },
+      { nb: 2, courgette: "300 g", oeufs: "2", feta: "60 g", farine: "40 g", aneth: "10 g", oignon: "½", huilefriture: "30 ml", sel: "4 g" },
+      { nb: 3, courgette: "450 g", oeufs: "3", feta: "90 g", farine: "60 g", aneth: "15 g", oignon: "¾", huilefriture: "45 ml", sel: "6 g" },
+      { nb: 4, courgette: "600 g", oeufs: "4", feta: "120 g", farine: "80 g", aneth: "20 g", oignon: "1", huilefriture: "60 ml", sel: "8 g" },
+      { nb: 5, courgette: "750 g", oeufs: "5", feta: "150 g", farine: "100 g", aneth: "25 g", oignon: "1¼", huilefriture: "75 ml", sel: "10 g" },
+      { nb: 6, courgette: "900 g", oeufs: "6", feta: "180 g", farine: "120 g", aneth: "30 g", oignon: "1½", huilefriture: "90 ml", sel: "12 g" },
+      { nb: 7, courgette: "1050 g", oeufs: "7", feta: "210 g", farine: "140 g", aneth: "35 g", oignon: "1¾", huilefriture: "105 ml", sel: "14 g" },
+      { nb: 8, courgette: "1200 g", oeufs: "8", feta: "240 g", farine: "160 g", aneth: "40 g", oignon: "2", huilefriture: "120 ml", sel: "16 g" },
+      { nb: 9, courgette: "1350 g", oeufs: "9", feta: "270 g", farine: "180 g", aneth: "45 g", oignon: "2¼", huilefriture: "135 ml", sel: "18 g" },
+      { nb: 10, courgette: "1500 g", oeufs: "10", feta: "300 g", farine: "200 g", aneth: "50 g", oignon: "2½", huilefriture: "150 ml", sel: "20 g" },
+      { nb: 11, courgette: "1650 g", oeufs: "11", feta: "330 g", farine: "220 g", aneth: "55 g", oignon: "2¾", huilefriture: "165 ml", sel: "22 g" },
+      { nb: 12, courgette: "1800 g", oeufs: "12", feta: "360 g", farine: "240 g", aneth: "60 g", oignon: "3", huilefriture: "180 ml", sel: "24 g" },
+      { nb: 13, courgette: "1950 g", oeufs: "13", feta: "390 g", farine: "260 g", aneth: "65 g", oignon: "3¼", huilefriture: "195 ml", sel: "26 g" },
+      { nb: 14, courgette: "2100 g", oeufs: "14", feta: "420 g", farine: "280 g", aneth: "70 g", oignon: "3½", huilefriture: "210 ml", sel: "28 g" },
+      { nb: 15, courgette: "2250 g", oeufs: "15", feta: "450 g", farine: "300 g", aneth: "75 g", oignon: "3¾", huilefriture: "225 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥒", titre: "Râper & dégorger", detail: "Râpez la courgette, salez-la et laissez-la dégorger 10 min. Pressez-la fermement entre vos mains pour retirer un maximum d'eau (étape clé pour des galettes qui tiennent).", badge: null },
+      { icone: "🧀", titre: "Mélanger", detail: "Dans un saladier, mélangez la courgette essorée avec la feta émiettée, l'aneth ciselé et l'oignon finement émincé.", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Ajoutez l'œuf et la farine et mélangez jusqu'à obtenir une pâte épaisse qui se tient à la cuillère. Poivrez (peu de sel car la feta est salée).", badge: null },
+      { icone: "🍳", titre: "Chauffer l'huile", detail: "Faites chauffer un peu d'huile dans une poêle à feu moyen.", badge: null },
+      { icone: "🥄", titre: "Former les galettes", detail: "Déposez des cuillerées de pâte dans l'huile et aplatissez-les légèrement en petites galettes.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Faites cuire 2 à 3 min par face jusqu'à ce qu'elles soient bien dorées et croustillantes. Égouttez sur papier absorbant.", badge: null },
+      { icone: "🥛", titre: "Servir", detail: "Servez chaud avec une sauce au yaourt à l'ail, en apéritif ou en mezze. Un filet de citron relève joliment le tout.", badge: null }
+    ]
+  },
+  todmun: {
+    dateAjout: "2026-07-09T17:06:00",
+    nom: "Tod Mun",
+    cat: "encas", pays: "thailande",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🦐",
+    description: "Tod mun — les galettes de crevettes thaïes : une pâte de crevettes relevée de coriandre, d'ail et de piment, façonnée en petites galettes frites, croustillantes et rebondissantes. Servies avec une sauce aigre-douce au concombre.",
+    tableauTodmun: [
+      { nb: 1, crevettes: "100 g", oeufs: "½", farine: "8 g", coriandre: "5 g", ail: "1", piment: "1 g", nuocmam: "6 ml", huilefriture: "20 ml" },
+      { nb: 2, crevettes: "200 g", oeufs: "1", farine: "16 g", coriandre: "10 g", ail: "2", piment: "2 g", nuocmam: "12 ml", huilefriture: "40 ml" },
+      { nb: 3, crevettes: "300 g", oeufs: "1½", farine: "24 g", coriandre: "15 g", ail: "3", piment: "3 g", nuocmam: "18 ml", huilefriture: "60 ml" },
+      { nb: 4, crevettes: "400 g", oeufs: "2", farine: "32 g", coriandre: "20 g", ail: "4", piment: "4 g", nuocmam: "24 ml", huilefriture: "80 ml" },
+      { nb: 5, crevettes: "500 g", oeufs: "2½", farine: "40 g", coriandre: "25 g", ail: "5", piment: "5 g", nuocmam: "30 ml", huilefriture: "100 ml" },
+      { nb: 6, crevettes: "600 g", oeufs: "3", farine: "48 g", coriandre: "30 g", ail: "6", piment: "6 g", nuocmam: "36 ml", huilefriture: "120 ml" },
+      { nb: 7, crevettes: "700 g", oeufs: "3½", farine: "56 g", coriandre: "35 g", ail: "7", piment: "7 g", nuocmam: "42 ml", huilefriture: "140 ml" },
+      { nb: 8, crevettes: "800 g", oeufs: "4", farine: "64 g", coriandre: "40 g", ail: "8", piment: "8 g", nuocmam: "48 ml", huilefriture: "160 ml" },
+      { nb: 9, crevettes: "900 g", oeufs: "4½", farine: "72 g", coriandre: "45 g", ail: "9", piment: "9 g", nuocmam: "54 ml", huilefriture: "180 ml" },
+      { nb: 10, crevettes: "1000 g", oeufs: "5", farine: "80 g", coriandre: "50 g", ail: "10", piment: "10 g", nuocmam: "60 ml", huilefriture: "200 ml" },
+      { nb: 11, crevettes: "1100 g", oeufs: "5½", farine: "88 g", coriandre: "55 g", ail: "11", piment: "11 g", nuocmam: "66 ml", huilefriture: "220 ml" },
+      { nb: 12, crevettes: "1200 g", oeufs: "6", farine: "96 g", coriandre: "60 g", ail: "12", piment: "12 g", nuocmam: "72 ml", huilefriture: "240 ml" },
+      { nb: 13, crevettes: "1300 g", oeufs: "6½", farine: "104 g", coriandre: "65 g", ail: "13", piment: "13 g", nuocmam: "78 ml", huilefriture: "260 ml" },
+      { nb: 14, crevettes: "1400 g", oeufs: "7", farine: "112 g", coriandre: "70 g", ail: "14", piment: "14 g", nuocmam: "84 ml", huilefriture: "280 ml" },
+      { nb: 15, crevettes: "1500 g", oeufs: "7½", farine: "120 g", coriandre: "75 g", ail: "15", piment: "15 g", nuocmam: "90 ml", huilefriture: "300 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🦐", titre: "Mixer les crevettes", detail: "Décortiquez les crevettes et mixez-les grossièrement avec l'ail, le piment et la coriandre, en gardant un peu de texture (pas une purée lisse).", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Ajoutez l'œuf, la farine et le nuoc-mâm (sauce poisson) et mélangez énergiquement : la pâte doit devenir collante et élastique, gage de galettes rebondissantes.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Réservez la pâte 15 min au frais : elle sera plus facile à façonner et se tiendra mieux à la friture.", badge: null },
+      { icone: "🖐️", titre: "Former", detail: "Avec les mains humides, façonnez la pâte en petites galettes plates d'environ 1 cm d'épaisseur.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire dans l'huile à 170°C 2 à 3 min par face, jusqu'à ce qu'elles soient dorées et gonflées. Ne surchargez pas la casserole.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Retirez à l'écumoire et égouttez sur papier absorbant.", badge: null },
+      { icone: "🥒", titre: "Servir", detail: "Servez chaud avec une sauce aigre-douce et du concombre émincé. L'entrée thaïe par excellence, à partager.", badge: null }
+    ]
+  },
 });

@@ -2037,4 +2037,41 @@ Object.assign(recettes, {
       { icone: "✨", titre: "Garnir & servir", detail: "Parsemez d'oignons frits, de cacahuètes, de ciboule et d'un dernier filet de soja. Servez très chaud, c'est le réconfort du matin indonésien.", badge: null }
     ]
   },
+  kaijeow: {
+    dateAjout: "2026-07-09T17:07:00",
+    nom: "Kai Jeow",
+    cat: "brunch", pays: "thailande",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    description: "Kai jeow — l'omelette thaïe croustillante : des œufs battus avec de la sauce poisson, frits à l'huile bien chaude pour obtenir des bords soufflés et dorés. Servie sur du riz avec de la sauce piment, le repas réconfortant express de la Thaïlande.",
+    tableauKaijeow: [
+      { nb: 1, oeufs: "2", riz: "60 g", nuocmam: "5 ml", ciboule: "5 g", huilefriture: "15 ml", poivre: "1 g" },
+      { nb: 2, oeufs: "4", riz: "120 g", nuocmam: "10 ml", ciboule: "10 g", huilefriture: "30 ml", poivre: "2 g" },
+      { nb: 3, oeufs: "6", riz: "180 g", nuocmam: "15 ml", ciboule: "15 g", huilefriture: "45 ml", poivre: "3 g" },
+      { nb: 4, oeufs: "8", riz: "240 g", nuocmam: "20 ml", ciboule: "20 g", huilefriture: "60 ml", poivre: "4 g" },
+      { nb: 5, oeufs: "10", riz: "300 g", nuocmam: "25 ml", ciboule: "25 g", huilefriture: "75 ml", poivre: "5 g" },
+      { nb: 6, oeufs: "12", riz: "360 g", nuocmam: "30 ml", ciboule: "30 g", huilefriture: "90 ml", poivre: "6 g" },
+      { nb: 7, oeufs: "14", riz: "420 g", nuocmam: "35 ml", ciboule: "35 g", huilefriture: "105 ml", poivre: "7 g" },
+      { nb: 8, oeufs: "16", riz: "480 g", nuocmam: "40 ml", ciboule: "40 g", huilefriture: "120 ml", poivre: "8 g" },
+      { nb: 9, oeufs: "18", riz: "540 g", nuocmam: "45 ml", ciboule: "45 g", huilefriture: "135 ml", poivre: "9 g" },
+      { nb: 10, oeufs: "20", riz: "600 g", nuocmam: "50 ml", ciboule: "50 g", huilefriture: "150 ml", poivre: "10 g" },
+      { nb: 11, oeufs: "22", riz: "660 g", nuocmam: "55 ml", ciboule: "55 g", huilefriture: "165 ml", poivre: "11 g" },
+      { nb: 12, oeufs: "24", riz: "720 g", nuocmam: "60 ml", ciboule: "60 g", huilefriture: "180 ml", poivre: "12 g" },
+      { nb: 13, oeufs: "26", riz: "780 g", nuocmam: "65 ml", ciboule: "65 g", huilefriture: "195 ml", poivre: "13 g" },
+      { nb: 14, oeufs: "28", riz: "840 g", nuocmam: "70 ml", ciboule: "70 g", huilefriture: "210 ml", poivre: "14 g" },
+      { nb: 15, oeufs: "30", riz: "900 g", nuocmam: "75 ml", ciboule: "75 g", huilefriture: "225 ml", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Battre les œufs", detail: "Battez énergiquement les œufs avec la sauce poisson et le poivre, en incorporant de l'air : c'est ce qui rendra l'omelette gonflée et aérienne.", badge: null },
+      { icone: "🧅", titre: "Ciboule", detail: "Ajoutez la ciboule finement ciselée aux œufs battus.", badge: null },
+      { icone: "🔥", titre: "Huile très chaude", detail: "Faites chauffer une bonne quantité d'huile dans une poêle ou un wok jusqu'à ce qu'elle soit très chaude (elle doit fumer légèrement).", badge: null },
+      { icone: "💦", titre: "Verser d'un coup", detail: "Versez le mélange d'œufs d'un seul coup, de haut, dans l'huile bien chaude : il gonfle et grésille immédiatement, les bords deviennent dentelés et croustillants.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Laissez cuire 1 à 2 min jusqu'à ce que le dessous soit doré et croustillant, puis retournez et faites cuire l'autre face 30 s.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Sortez l'omelette et égouttez-la sur papier absorbant pour retirer l'excédent d'huile.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez aussitôt sur un bol de riz chaud, avec de la sauce piment (sriracha) à côté. Simple, rapide et incroyablement réconfortant.", badge: null }
+    ]
+  },
 });

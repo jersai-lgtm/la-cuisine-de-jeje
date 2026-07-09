@@ -2074,4 +2074,41 @@ Object.assign(recettes, {
       { icone: "🥜", titre: "Servir", detail: "Parsemez de cacahuètes concassées et servez aussitôt. La salade doit être croquante, ne la préparez pas trop à l'avance une fois assaisonnée.", badge: null }
     ]
   },
+  kisir: {
+    dateAjout: "2026-07-09T17:01:00",
+    nom: "Kısır",
+    cat: "salades", pays: "turquie",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Kısır — la salade de boulgour turque : du boulgour fin gonflé, relevé de concentré de tomate, de citron, de menthe et de persil, avec un soupçon de piment. Fraîche, acidulée et parfumée — le taboulé version turque.",
+    tableauKisir: [
+      { nb: 1, boulgour: "60 g", concentretomate: "15 g", tomates: "½", oignon: "¼", persil: "8 g", menthe: "5 g", citron: "½", huileolive: "12 ml", cumin: "1 g", sel: "2 g" },
+      { nb: 2, boulgour: "120 g", concentretomate: "30 g", tomates: "1", oignon: "½", persil: "16 g", menthe: "10 g", citron: "1", huileolive: "24 ml", cumin: "2 g", sel: "4 g" },
+      { nb: 3, boulgour: "180 g", concentretomate: "45 g", tomates: "1½", oignon: "¾", persil: "24 g", menthe: "15 g", citron: "1½", huileolive: "36 ml", cumin: "3 g", sel: "6 g" },
+      { nb: 4, boulgour: "240 g", concentretomate: "60 g", tomates: "2", oignon: "1", persil: "32 g", menthe: "20 g", citron: "2", huileolive: "48 ml", cumin: "4 g", sel: "8 g" },
+      { nb: 5, boulgour: "300 g", concentretomate: "75 g", tomates: "2½", oignon: "1¼", persil: "40 g", menthe: "25 g", citron: "2½", huileolive: "60 ml", cumin: "5 g", sel: "10 g" },
+      { nb: 6, boulgour: "360 g", concentretomate: "90 g", tomates: "3", oignon: "1½", persil: "48 g", menthe: "30 g", citron: "3", huileolive: "72 ml", cumin: "6 g", sel: "12 g" },
+      { nb: 7, boulgour: "420 g", concentretomate: "105 g", tomates: "3½", oignon: "1¾", persil: "56 g", menthe: "35 g", citron: "3½", huileolive: "84 ml", cumin: "7 g", sel: "14 g" },
+      { nb: 8, boulgour: "480 g", concentretomate: "120 g", tomates: "4", oignon: "2", persil: "64 g", menthe: "40 g", citron: "4", huileolive: "96 ml", cumin: "8 g", sel: "16 g" },
+      { nb: 9, boulgour: "540 g", concentretomate: "135 g", tomates: "4½", oignon: "2¼", persil: "72 g", menthe: "45 g", citron: "4½", huileolive: "108 ml", cumin: "9 g", sel: "18 g" },
+      { nb: 10, boulgour: "600 g", concentretomate: "150 g", tomates: "5", oignon: "2½", persil: "80 g", menthe: "50 g", citron: "5", huileolive: "120 ml", cumin: "10 g", sel: "20 g" },
+      { nb: 11, boulgour: "660 g", concentretomate: "165 g", tomates: "5½", oignon: "2¾", persil: "88 g", menthe: "55 g", citron: "5½", huileolive: "132 ml", cumin: "11 g", sel: "22 g" },
+      { nb: 12, boulgour: "720 g", concentretomate: "180 g", tomates: "6", oignon: "3", persil: "96 g", menthe: "60 g", citron: "6", huileolive: "144 ml", cumin: "12 g", sel: "24 g" },
+      { nb: 13, boulgour: "780 g", concentretomate: "195 g", tomates: "6½", oignon: "3¼", persil: "104 g", menthe: "65 g", citron: "6½", huileolive: "156 ml", cumin: "13 g", sel: "26 g" },
+      { nb: 14, boulgour: "840 g", concentretomate: "210 g", tomates: "7", oignon: "3½", persil: "112 g", menthe: "70 g", citron: "7", huileolive: "168 ml", cumin: "14 g", sel: "28 g" },
+      { nb: 15, boulgour: "900 g", concentretomate: "225 g", tomates: "7½", oignon: "3¾", persil: "120 g", menthe: "75 g", citron: "7½", huileolive: "180 ml", cumin: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Gonfler le boulgour", detail: "Versez de l'eau chaude sur le boulgour fin (à hauteur), couvrez et laissez gonfler 15 min jusqu'à ce qu'il soit tendre et l'eau absorbée. Égrainez à la fourchette.", badge: null },
+      { icone: "🍅", titre: "Base tomate", detail: "Mélangez le concentré de tomate avec l'huile d'olive et le cumin, puis incorporez-les au boulgour tiède : il prend une belle couleur rouge orangé.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Ajoutez l'oignon très finement émincé et la tomate en petits dés, mélangez.", badge: null },
+      { icone: "🌿", titre: "Herbes", detail: "Incorporez le persil et la menthe finement ciselés — ils apportent toute la fraîcheur du kısır.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Assaisonnez avec le jus de citron, du sel et un peu de piment si vous aimez. Goûtez et ajustez l'acidité.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laissez reposer 15 min au frais pour que les saveurs se mêlent et que le boulgour s'imprègne.", badge: null },
+      { icone: "🥬", titre: "Servir", detail: "Servez frais, traditionnellement avec des feuilles de laitue pour attraper le kısır à la main, ou en accompagnement d'un mezze.", badge: null }
+    ]
+  },
 });

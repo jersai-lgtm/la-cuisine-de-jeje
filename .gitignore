@@ -21,3 +21,6 @@ tools/__pycache__/
 **/enrichir_batch.js
 tools/traduire_batch.mjs
 tools/completer-prix.mjs
+tools/completer-macros.mjs
+tools/generer-recettes.mjs
+tools/generer-images-openai.mjs

@@ -57498,5 +57498,345 @@ window.RECETTES_EN = {
     "detail": "Scatter with fried onions, peanuts, spring onion and a final drizzle of soy. Serve very hot — it's Indonesia's morning comfort."
    }
   ]
+ },
+ "karniyarik": {
+  "nom": "Karnıyarık",
+  "description": "Karnıyarık — Turkish stuffed eggplant: tender eggplants split and filled with minced beef, onions, tomatoes and peppers, baked. The generous, meaty cousin of imam bayıldı.",
+  "etapes": [
+   {
+    "titre": "Prepare the eggplants",
+    "detail": "Peel the eggplants in stripes (every other strip) and fry them whole in the oil until golden and tender. Set aside."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Sauté the sliced onion and garlic, then the minced beef. Add the diced pepper and half the crushed tomatoes. Season, add the parsley and simmer 10 minutes."
+   },
+   {
+    "titre": "Split",
+    "detail": "Split each eggplant lengthwise without cutting it in half, to form a pocket. Open gently."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Fill the eggplants generously with the meat filling, packing it well into the pocket."
+   },
+   {
+    "titre": "Top",
+    "detail": "Place the eggplants in a dish, cover with the remaining tomato and a slice of tomato/pepper on each, drizzle with oil and a little water."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 25 to 30 minutes, until the eggplants are very soft and the sauce concentrated."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with fresh parsley and serve hot with rice pilaf (pilav) or bread. Even better warm."
+   }
+  ]
+ },
+ "kisir": {
+  "nom": "Kısır",
+  "description": "Kısır — Turkish bulgur salad: fine bulgur swelled and seasoned with tomato paste, lemon, mint and parsley, with a hint of chilli. Fresh, tangy and fragrant — the Turkish take on tabbouleh.",
+  "etapes": [
+   {
+    "titre": "Soak the bulgur",
+    "detail": "Pour hot water over the fine bulgur (just to cover), cover and let swell 15 minutes until tender and the water absorbed. Fluff with a fork."
+   },
+   {
+    "titre": "Tomato base",
+    "detail": "Mix the tomato paste with the olive oil and cumin, then stir it into the warm bulgur: it takes on a lovely red-orange colour."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add the very finely sliced onion and the diced tomato, and mix."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Stir in the finely chopped parsley and mint — they bring all the freshness of kısır."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with the lemon juice, salt and a little chilli if you like. Taste and adjust the acidity."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 15 minutes in the fridge so the flavours mingle and the bulgur soaks in."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve chilled, traditionally with lettuce leaves to scoop up the kısır by hand, or as part of a mezze."
+   }
+  ]
+ },
+ "sekerpare": {
+  "nom": "Şekerpare",
+  "description": "Şekerpare — Turkish syrup cakes: tender semolina cookies, baked golden then soaked in a lemony syrup, soft and melting. The sweet of Turkish celebrations, served with tea.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Beat the softened butter with the icing sugar, then add the egg. Work in the fine semolina and flour into a soft, non-sticky dough. Let rest 15 minutes."
+   },
+   {
+    "titre": "Form the balls",
+    "detail": "Take small portions and roll them into smooth balls. Flatten the top slightly and mark it with an imprint (with your thumb or an almond)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Arrange on a tray, spaced out, and bake at 170°C for 20 to 25 minutes, until golden."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Meanwhile, make a syrup: boil the sugar with water and a dash of lemon for 8 to 10 minutes, until lightly coating. Let cool slightly."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Straight out of the oven, pour the WARM syrup over the HOT cakes (the hot/warm contrast is key so they soak without falling apart)."
+   },
+   {
+    "titre": "Absorb",
+    "detail": "Let the şekerpare absorb the syrup for 30 minutes to 1 hour: they become soft and plump, soaked through."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at room temperature, optionally topped with an almond or a pinch of pistachio. Perfect with Turkish tea."
+   }
+  ]
+ },
+ "mucver": {
+  "nom": "Mücver",
+  "description": "Mücver — Turkish zucchini fritters: grated zucchini mixed with feta, dill and onion, pan-fried into little golden patties. Crisp outside, soft inside, served with yogurt.",
+  "etapes": [
+   {
+    "titre": "Grate & drain",
+    "detail": "Grate the zucchini, salt it and let it drain 10 minutes. Squeeze it firmly between your hands to remove as much water as possible (key step for patties that hold)."
+   },
+   {
+    "titre": "Combine",
+    "detail": "In a bowl, mix the squeezed zucchini with the crumbled feta, chopped dill and finely sliced onion."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the egg and flour and mix into a thick batter that holds on the spoon. Pepper (little salt, as the feta is salty)."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a little oil in a pan over medium heat."
+   },
+   {
+    "titre": "Form the patties",
+    "detail": "Drop spoonfuls of batter into the oil and flatten them slightly into small patties."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Cook 2 to 3 minutes per side until golden and crisp. Drain on paper towels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a garlic yogurt sauce, as an appetiser or mezze. A squeeze of lemon lifts it nicely."
+   }
+  ]
+ },
+ "pilav": {
+  "nom": "Pilav Turc",
+  "description": "Turkish pilav — buttery rice pilaf with vermicelli: pearly rice grains in butter with golden vermicelli, cooked by absorption in stock. The king of Turkish sides, soft and fragrant.",
+  "etapes": [
+   {
+    "titre": "Rinse the rice",
+    "detail": "Rinse the rice in fresh water until it runs clear, then soak it 10 minutes in warm salted water and drain. This gives separate grains."
+   },
+   {
+    "titre": "Brown the vermicelli",
+    "detail": "Melt the butter in a pot and brown the vermicelli, broken into small pieces, until nicely hazelnut-coloured."
+   },
+   {
+    "titre": "Coat the rice",
+    "detail": "Add the drained rice and stir for 2 minutes to coat it well in butter and make it pearly."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in the hot stock (about 1.5 times the volume of rice), season and bring to a simmer."
+   },
+   {
+    "titre": "Absorption",
+    "detail": "Cover and cook over very low heat for 12 to 15 minutes, without stirring, until the liquid is fully absorbed."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Turn off the heat, place a cloth under the lid and let rest 10 minutes: the cloth absorbs the steam and the rice turns perfectly fluffy."
+   },
+   {
+    "titre": "Fluff & serve",
+    "detail": "Fluff gently with a fork and serve hot as a side to a saucy dish, kebabs or karnıyarık."
+   }
+  ]
+ },
+ "khaopad": {
+  "nom": "Khao Pad",
+  "description": "Khao pad — Thai fried rice: rice seared in a wok over high heat with egg, chicken and vegetables, seasoned with soy sauce and lime. Quick, comforting and endlessly customisable.",
+  "etapes": [
+   {
+    "titre": "Cold rice",
+    "detail": "Use rice cooked the day before and well chilled: the grains are dry and separate, essential for fried rice that doesn't clump."
+   },
+   {
+    "titre": "Very hot wok",
+    "detail": "Heat the oil in a wok over high heat. The high temperature (the 'wok hei') gives the dish its smoky aroma."
+   },
+   {
+    "titre": "Chicken",
+    "detail": "Sear the diced chicken until golden, add the sliced garlic and onion, and sauté 1 minute."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Push everything to one side of the wok, crack the egg into the space and scramble it quickly before mixing."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the diced carrot and peas, and stir-fry 2 minutes, keeping them crunchy."
+   },
+   {
+    "titre": "Rice & sauce",
+    "detail": "Add the cold rice and soy sauce, and stir-fry over high heat, stirring constantly, for 3 minutes, until everything is hot and well coated."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with a squeeze of lime, scatter with fresh onion and serve immediately, with cucumber and a lime wedge on the side."
+   }
+  ]
+ },
+ "todmun": {
+  "nom": "Tod Mun",
+  "description": "Tod mun — Thai shrimp cakes: a shrimp paste seasoned with coriander, garlic and chilli, shaped into little fried patties, crisp and bouncy. Served with a sweet-and-sour cucumber sauce.",
+  "etapes": [
+   {
+    "titre": "Blend the shrimp",
+    "detail": "Peel the shrimp and coarsely blend them with the garlic, chilli and coriander, keeping some texture (not a smooth purée)."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the egg, flour and fish sauce (nuoc mam) and mix vigorously: the paste should turn sticky and elastic, the secret to bouncy cakes."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill the paste 15 minutes: it will be easier to shape and hold up better when fried."
+   },
+   {
+    "titre": "Form",
+    "detail": "With damp hands, shape the paste into small flat patties about 1 cm thick."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in oil at 170°C for 2 to 3 minutes per side, until golden and puffed. Don't overcrowd the pan."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Lift out with a slotted spoon and drain on paper towels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a sweet-and-sour sauce and sliced cucumber. The Thai starter par excellence, to share."
+   }
+  ]
+ },
+ "kaijeow": {
+  "nom": "Kai Jeow",
+  "description": "Kai jeow — Thai crispy omelette: eggs beaten with fish sauce, fried in very hot oil for puffed, golden edges. Served over rice with chilli sauce, Thailand's express comfort meal.",
+  "etapes": [
+   {
+    "titre": "Beat the eggs",
+    "detail": "Beat the eggs vigorously with the fish sauce and pepper, incorporating air: this is what makes the omelette puffed and airy."
+   },
+   {
+    "titre": "Spring onion",
+    "detail": "Add the finely chopped spring onion to the beaten eggs."
+   },
+   {
+    "titre": "Very hot oil",
+    "detail": "Heat a good amount of oil in a pan or wok until it's very hot (it should smoke slightly)."
+   },
+   {
+    "titre": "Pour all at once",
+    "detail": "Pour the egg mixture in one go, from a height, into the hot oil: it puffs and sizzles immediately, the edges turn lacy and crisp."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook for 1 to 2 minutes until the underside is golden and crisp, then flip and cook the other side for 30 seconds."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Lift out the omelette and drain it on paper towels to remove excess oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately over a bowl of hot rice, with chilli sauce (sriracha) on the side. Simple, fast and incredibly comforting."
+   }
+  ]
+ },
+ "padwoonsen": {
+  "nom": "Pad Woon Sen",
+  "description": "Pad woon sen — Thai stir-fried glass noodles: transparent noodles wok-tossed with shrimp, egg and crunchy vegetables, coated in soy sauce. Light, slippery and full of flavour.",
+  "etapes": [
+   {
+    "titre": "Soak the noodles",
+    "detail": "Soak the glass (mung bean) noodles in warm water for 10 minutes until soft, then drain. Cut them roughly with scissors."
+   },
+   {
+    "titre": "Hot wok",
+    "detail": "Heat the oil in a wok over high heat and sear the sliced garlic for a few seconds until fragrant."
+   },
+   {
+    "titre": "Shrimp",
+    "detail": "Add the shrimp and stir-fry until pink."
+   },
+   {
+    "titre": "Egg",
+    "detail": "Push to one side, crack the egg and scramble it quickly in the free space."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the julienned carrot and shredded cabbage, and stir-fry 2 minutes, keeping them crunchy."
+   },
+   {
+    "titre": "Noodles & sauce",
+    "detail": "Add the noodles and soy sauce, and stir-fry constantly for 2 to 3 minutes, until everything is hot and coated (the noodles soak up the sauce)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with spring onion and serve immediately. A light, complete dish, brightened with a squeeze of lime if you like."
+   }
+  ]
+ },
+ "sangkhaya": {
+  "nom": "Sangkhaya",
+  "description": "Sangkhaya — Thai coconut custard: a silky custard of eggs and coconut milk, gently steamed to a silky texture. Served warm, plain or over sticky rice, a comfortingly sweet dessert.",
+  "etapes": [
+   {
+    "titre": "Beat the eggs",
+    "detail": "Beat the eggs with the sugar until the sugar dissolves, without frothing them too much (to avoid bubbles in the custard)."
+   },
+   {
+    "titre": "Add the coconut",
+    "detail": "Stir in the coconut milk, vanilla (in place of the traditional pandan) and a pinch of salt, mixing gently."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass the mixture through a sieve for a perfectly smooth, silky texture, then pour it into small ramekins."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Place the ramekins in a steamer (or a covered bain-marie) and cook over low heat for 20 to 25 minutes: the gentle steam gives a silky custard without drying it out."
+   },
+   {
+    "titre": "Check",
+    "detail": "The custard is set when it's just firm in the centre but still slightly wobbly. A blade comes out clean."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let cool then, if you prefer, refrigerate: sangkhaya is just as good warm as chilled."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve as is, or Thai-style over warm sticky rice drizzled with coconut milk. A sweet, fragrant dessert."
+   }
+  ]
  }
 };

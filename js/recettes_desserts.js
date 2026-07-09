@@ -6123,4 +6123,78 @@ Object.assign(recettes, {
       { icone: "🍨", titre: "Servir", detail: "Servez le kolak tiède ou frais dans des bols. On peut y ajouter des perles de tapioca ou du jacquier pour une version plus riche.", badge: null }
     ]
   },
+  sekerpare: {
+    dateAjout: "2026-07-09T17:02:00",
+    nom: "Şekerpare",
+    cat: "desserts", pays: "turquie",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍮",
+    description: "Şekerpare — les petits gâteaux turcs au sirop : de tendres biscuits à la semoule, dorés au four puis imbibés d'un sirop citronné, moelleux et fondants. La douceur des fêtes turques, servie avec le thé.",
+    tableauSekerpare: [
+      { nb: 1, semoule: "30 g", farine: "20 g", beurre: "20 g", sucre: "30 g", oeufs: "½", sucreglace: "8 g", citron: "¼" },
+      { nb: 2, semoule: "60 g", farine: "40 g", beurre: "40 g", sucre: "60 g", oeufs: "1", sucreglace: "16 g", citron: "½" },
+      { nb: 3, semoule: "90 g", farine: "60 g", beurre: "60 g", sucre: "90 g", oeufs: "1½", sucreglace: "24 g", citron: "¾" },
+      { nb: 4, semoule: "120 g", farine: "80 g", beurre: "80 g", sucre: "120 g", oeufs: "2", sucreglace: "32 g", citron: "1" },
+      { nb: 5, semoule: "150 g", farine: "100 g", beurre: "100 g", sucre: "150 g", oeufs: "2½", sucreglace: "40 g", citron: "1¼" },
+      { nb: 6, semoule: "180 g", farine: "120 g", beurre: "120 g", sucre: "180 g", oeufs: "3", sucreglace: "48 g", citron: "1½" },
+      { nb: 7, semoule: "210 g", farine: "140 g", beurre: "140 g", sucre: "210 g", oeufs: "3½", sucreglace: "56 g", citron: "1¾" },
+      { nb: 8, semoule: "240 g", farine: "160 g", beurre: "160 g", sucre: "240 g", oeufs: "4", sucreglace: "64 g", citron: "2" },
+      { nb: 9, semoule: "270 g", farine: "180 g", beurre: "180 g", sucre: "270 g", oeufs: "4½", sucreglace: "72 g", citron: "2¼" },
+      { nb: 10, semoule: "300 g", farine: "200 g", beurre: "200 g", sucre: "300 g", oeufs: "5", sucreglace: "80 g", citron: "2½" },
+      { nb: 11, semoule: "330 g", farine: "220 g", beurre: "220 g", sucre: "330 g", oeufs: "5½", sucreglace: "88 g", citron: "2¾" },
+      { nb: 12, semoule: "360 g", farine: "240 g", beurre: "240 g", sucre: "360 g", oeufs: "6", sucreglace: "96 g", citron: "3" },
+      { nb: 13, semoule: "390 g", farine: "260 g", beurre: "260 g", sucre: "390 g", oeufs: "6½", sucreglace: "104 g", citron: "3¼" },
+      { nb: 14, semoule: "420 g", farine: "280 g", beurre: "280 g", sucre: "420 g", oeufs: "7", sucreglace: "112 g", citron: "3½" },
+      { nb: 15, semoule: "450 g", farine: "300 g", beurre: "300 g", sucre: "450 g", oeufs: "7½", sucreglace: "120 g", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Travaillez le beurre pommade avec le sucre glace, puis ajoutez l'œuf. Incorporez la semoule fine et la farine pour obtenir une pâte souple et non collante. Laissez reposer 15 min.", badge: null },
+      { icone: "👐", titre: "Former les boules", detail: "Prélevez de petites portions et roulez-les en boules lisses. Aplatissez légèrement le dessus et marquez-le d'une empreinte (avec le pouce ou une amande).", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Disposez sur une plaque, espacées, et enfournez à 170°C 20 à 25 min, jusqu'à ce qu'elles soient dorées.", badge: null },
+      { icone: "🍯", titre: "Le sirop", detail: "Pendant ce temps, préparez un sirop : faites bouillir le sucre avec de l'eau et un trait de citron 8 à 10 min, jusqu'à ce qu'il nappe légèrement. Laissez tiédir.", badge: null },
+      { icone: "💧", titre: "Imbiber", detail: "Dès la sortie du four, arrosez les gâteaux CHAUDS avec le sirop TIÈDE (le contraste chaud/tiède est la clé pour qu'ils s'imbibent sans se défaire).", badge: null },
+      { icone: "⏳", titre: "Absorber", detail: "Laissez les şekerpare absorber le sirop 30 min à 1 h : ils deviennent moelleux et gonflés, imbibés à cœur.", badge: null },
+      { icone: "🍵", titre: "Servir", detail: "Servez à température ambiante, éventuellement décorés d'une amande ou d'une pincée de pistache. Parfaits avec un thé turc.", badge: null }
+    ]
+  },
+  sangkhaya: {
+    dateAjout: "2026-07-09T17:09:00",
+    nom: "Sangkhaya",
+    cat: "desserts", pays: "thailande",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍮",
+    description: "Sangkhaya — la crème au lait de coco thaïe : un flan onctueux d'œufs et de lait de coco, cuit doucement à la vapeur jusqu'à prendre une texture soyeuse. Servie tiède, nature ou sur du riz gluant, un dessert d'une douceur réconfortante.",
+    tableauSangkhaya: [
+      { nb: 1, oeufs: "1", laitcoco: "80 ml", sucre: "25 g", vanille: "2 g", sel: "0.5 g" },
+      { nb: 2, oeufs: "2", laitcoco: "160 ml", sucre: "50 g", vanille: "4 g", sel: "1 g" },
+      { nb: 3, oeufs: "3", laitcoco: "240 ml", sucre: "75 g", vanille: "6 g", sel: "1.5 g" },
+      { nb: 4, oeufs: "4", laitcoco: "320 ml", sucre: "100 g", vanille: "8 g", sel: "2 g" },
+      { nb: 5, oeufs: "5", laitcoco: "400 ml", sucre: "125 g", vanille: "10 g", sel: "2.5 g" },
+      { nb: 6, oeufs: "6", laitcoco: "480 ml", sucre: "150 g", vanille: "12 g", sel: "3 g" },
+      { nb: 7, oeufs: "7", laitcoco: "560 ml", sucre: "175 g", vanille: "14 g", sel: "3.5 g" },
+      { nb: 8, oeufs: "8", laitcoco: "640 ml", sucre: "200 g", vanille: "16 g", sel: "4 g" },
+      { nb: 9, oeufs: "9", laitcoco: "720 ml", sucre: "225 g", vanille: "18 g", sel: "4.5 g" },
+      { nb: 10, oeufs: "10", laitcoco: "800 ml", sucre: "250 g", vanille: "20 g", sel: "5 g" },
+      { nb: 11, oeufs: "11", laitcoco: "880 ml", sucre: "275 g", vanille: "22 g", sel: "5.5 g" },
+      { nb: 12, oeufs: "12", laitcoco: "960 ml", sucre: "300 g", vanille: "24 g", sel: "6 g" },
+      { nb: 13, oeufs: "13", laitcoco: "1040 ml", sucre: "325 g", vanille: "26 g", sel: "6.5 g" },
+      { nb: 14, oeufs: "14", laitcoco: "1120 ml", sucre: "350 g", vanille: "28 g", sel: "7 g" },
+      { nb: 15, oeufs: "15", laitcoco: "1200 ml", sucre: "375 g", vanille: "30 g", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "Battre les œufs", detail: "Battez les œufs avec le sucre jusqu'à ce que le sucre soit dissous, sans trop les faire mousser (pour éviter les bulles dans le flan).", badge: null },
+      { icone: "🥥", titre: "Ajouter le coco", detail: "Incorporez le lait de coco, la vanille (à la place du pandan traditionnel) et une pincée de sel, en mélangeant doucement.", badge: null },
+      { icone: "🫗", titre: "Filtrer", detail: "Passez la préparation au tamis pour une texture parfaitement lisse et soyeuse, puis versez-la dans de petits ramequins.", badge: null },
+      { icone: "♨️", titre: "Cuisson vapeur", detail: "Placez les ramequins dans un cuit-vapeur (ou un bain-marie couvert) et faites cuire à feu doux 20 à 25 min : la vapeur douce donne une crème soyeuse, sans la dessécher.", badge: null },
+      { icone: "🔎", titre: "Vérifier", detail: "La crème est prise quand elle est juste ferme au centre mais encore légèrement tremblotante. Une lame en ressort propre.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laissez tiédir puis, si vous préférez, réfrigérez : la sangkhaya se déguste aussi bien tiède que fraîche.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez telle quelle, ou à la thaïe sur du riz gluant chaud arrosé de lait de coco. Un dessert doux et parfumé.", badge: null }
+    ]
+  },
 });
