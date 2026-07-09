@@ -58858,5 +58858,345 @@ window.RECETTES_EN = {
     "detail": "Drain and serve hot, with a spicy sauce (ají) and a lime wedge. Crisp outside, soft inside."
    }
   ]
+ },
+ "pounti": {
+  "nom": "Pounti",
+  "description": "Pounti — the sweet-savoury terrine from Auvergne: a soft batter of bacon and chard studded with prunes, baked like a savoury flan. Rustic and surprising, served warm as a starter or cold on a picnic.",
+  "etapes": [
+   {
+    "titre": "Chop the greens",
+    "detail": "Finely chop the chard (or spinach), parsley and onion. In Auvergne they also add garden tops and herbs."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Chop the bacon and mix it with the chopped herbs: the fragrant base of the pounti."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Make a thick crêpe batter with the flour, eggs and milk, season with salt and pepper. Stir in the bacon-herb mixture."
+   },
+   {
+    "titre": "The prunes",
+    "detail": "Pit the prunes and scatter them through the mixture: their sweetness gives the dish its sweet-savoury charm."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into a buttered loaf tin, distributing the prunes evenly."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 45 minutes, until the pounti is set, golden and a blade comes out clean."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool before turning out and slicing. Serve warm as a starter with a salad, or cold, sliced, for a picnic."
+   }
+  ]
+ },
+ "quenelles": {
+  "nom": "Pike Quenelles",
+  "description": "Pike quenelles — the great Lyon classic: delicate fish-and-panade dumplings, poached then puffed in a creamy sauce. Airy and melting, they're the refinement of the Lyon 'mères' cuisine.",
+  "etapes": [
+   {
+    "titre": "The panade",
+    "detail": "Boil the milk with the butter, then tip in the flour all at once and stir vigorously over the heat until a dough forms that pulls away (like choux pastry). Let cool."
+   },
+   {
+    "titre": "The flesh",
+    "detail": "Finely blend the fish flesh (pike, or cod as a substitute) into a smooth purée."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Blend the cold panade, fish and egg together, adding salt, pepper and nutmeg. The paste should be smooth, soft and homogeneous."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill the paste for 1 hour: it shapes far better."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form elongated quenelles using two wet spoons, rolling them evenly."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach them in simmering (not boiling) water for 8 to 10 minutes: they puff and rise to the surface. Drain gently."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Arrange the quenelles in a dish, cover with cream sauce (béchamel/Nantua), and bake at 200°C for 15 minutes: they puff again and brown. Serve at once."
+   }
+  ]
+ },
+ "piperade": {
+  "nom": "Pipérade",
+  "description": "Pipérade — the Basque pepper dish: a soft stew of peppers, tomatoes and onions spiced with Espelette pepper, bound with eggs. Served with pan-fried Bayonne ham, it's the Basque Country's sunshine on a plate.",
+  "etapes": [
+   {
+    "titre": "Slice",
+    "detail": "Thinly slice the peppers (red and green), onion and garlic: the base of the pipérade."
+   },
+   {
+    "titre": "Soften",
+    "detail": "Gently soften the onion and garlic in the olive oil, without colouring, then add the peppers and stew for 10 minutes."
+   },
+   {
+    "titre": "Tomatoes & chilli",
+    "detail": "Add the crushed tomatoes and Espelette pepper, season, and simmer 15 minutes until the vegetables are very soft and the water evaporated."
+   },
+   {
+    "titre": "The ham",
+    "detail": "Quickly pan-fry the Bayonne ham slices separately, just to firm them, and set aside."
+   },
+   {
+    "titre": "Bind with eggs",
+    "detail": "Beat the eggs and pour them over the hot pepper stew, stirring gently over low heat, like soft scrambled eggs."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Remove from the heat when the eggs are just set but still creamy. Adjust salt and chilli."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the pipérade piping hot, topped with the pan-fried ham slices, with country bread. A complete, sunny dish."
+   }
+  ]
+ },
+ "tourteaufromager": {
+  "nom": "Tourteau Fromager",
+  "description": "Tourteau fromager — the goat cheese cake from Poitou: a domed cake with a spectacular black crust hiding a light, soufflé-like fresh cheese centre. That deliberately burnt crust is its signature, halfway between cake and soufflé.",
+  "etapes": [
+   {
+    "titre": "The pastry",
+    "detail": "Make a shortcrust with the flour, butter, a pinch of salt and a little water. Line a high-sided mould (ideally a domed tourteau tin)."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Whisk the fresh cheese (traditionally fresh goat cheese) with the egg yolks, sugar and a touch of flour, into a smooth cream."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Beat the egg whites to firm peaks: they give the tourteau its soufflé-like, airy quality."
+   },
+   {
+    "titre": "Fold in",
+    "detail": "Gently fold the whites into the cheese mixture, lifting the mass so as not to knock them down."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour the mixture into the lined mould, forming a dome."
+   },
+   {
+    "titre": "The black crust",
+    "detail": "Bake at 210°C for 30 to 40 minutes: the top must turn BLACK (a deliberately burnt crust, its signature), while the inside stays soft and puffed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool: the dome sinks slightly. Serve at room temperature, sliced — the contrast of black crust and light white centre is unique."
+   }
+  ]
+ },
+ "gateaubreton": {
+  "nom": "Breton Butter Cake",
+  "description": "Gâteau breton — pure Breton butter: a dense, melting cake, rich in salted butter and egg yolks, golden and crosshatched on top. Somewhere between shortbread and pound cake, it's the quintessential Breton treat.",
+  "etapes": [
+   {
+    "titre": "The butter",
+    "detail": "Use a good soft salted Breton butter. Beat it with the sugar into a smooth cream."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "Work in the egg yolks one by one (keep a little yolk for glazing): the dough turns rich and glossy."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Add the flour and a pinch of salt, and mix just enough to form a smooth dough, without overworking it."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Spread the dough in a buttered shallow-sided tin and smooth the top. Chill for 30 minutes."
+   },
+   {
+    "titre": "Glaze & crosshatch",
+    "detail": "Brush the top with egg yolk and score a criss-cross pattern with a fork: the typical decoration of gâteau breton."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 170°C for 35 to 40 minutes, until well golden and firm at the edges."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool completely before turning out and cutting: gâteau breton is dense and keeps for several days. Perfect with a coffee."
+   }
+  ]
+ },
+ "amatriciana": {
+  "nom": "Bucatini all'Amatriciana",
+  "description": "Bucatini all'Amatriciana — the great Roman classic: long bucatini coated in a tomato sauce with crispy guanciale and pecorino, spiced with chilli. Three king ingredients, a perfect balance of fat, acidity and heat.",
+  "etapes": [
+   {
+    "titre": "The guanciale",
+    "detail": "Cut the guanciale (or bacon/lardons) into strips and fry them dry or with a drizzle of oil until golden and crisp."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Add the chilli and let it infuse for 30 seconds in the rendered pork fat. Remove some of the fat if you like."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Pour in the crushed tomatoes (or crushed peeled ones), season and simmer 15 minutes until the sauce thickens and takes on the pork flavour."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Meanwhile, cook the bucatini al dente in plenty of salted water. Keep some cooking water."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Drain the pasta and toss it in the sauce with a little cooking water to coat well."
+   },
+   {
+    "titre": "The pecorino",
+    "detail": "Off the heat, add the grated pecorino and mix vigorously: it melts and binds the sauce creamily."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, with extra pecorino and pepper. True bucatini all'amatriciana carry neither onion nor garlic."
+   }
+  ]
+ },
+ "orecchiette": {
+  "nom": "Orecchiette with Broccoli",
+  "description": "Orecchiette alle cime di rapa — the dish of Puglia: little ear-shaped pasta cooked with broccoli, seasoned with garlic, melted anchovies and chilli. Simple, vegetable-forward and deeply savoury, the soul of southern Italy.",
+  "etapes": [
+   {
+    "titre": "The broccoli",
+    "detail": "Cut the broccoli (traditionally cime di rapa) into small florets. Cook them 5 minutes in boiling salted water."
+   },
+   {
+    "titre": "The pasta",
+    "detail": "Add the orecchiette to the same water as the broccoli and cook together until the pasta is al dente."
+   },
+   {
+    "titre": "Garlic & anchovies",
+    "detail": "Meanwhile, gently sauté the sliced garlic and chilli in the olive oil, then add the anchovies and crush them: they melt into an umami sauce."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Take out a few broccoli florets and mash them in the pan to create a creamy green sauce."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Drain the pasta and broccoli (keep some water) and toss them in the pan with a little cooking water."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add the grated pecorino off the heat and mix to bind everything creamily."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, drizzled with olive oil and a little chilli. A rustic, generous dish."
+   }
+  ]
+ },
+ "polpette": {
+  "nom": "Polpette al Sugo",
+  "description": "Polpette al sugo — Italian meatballs: tender beef balls with parmesan and breadcrumbs, simmered in a fragrant tomato sauce. Soft in the middle, enjoyed with bread, pasta or as a family dish.",
+  "etapes": [
+   {
+    "titre": "The crumb",
+    "detail": "Soak the breadcrumbs (or bread) in a little milk: they'll make the meatballs soft."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Mix the minced beef with the crumb, egg, grated parmesan, chopped garlic and parsley, salt and pepper. Knead well."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form even balls the size of a large walnut, rolling between damp palms."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the balls on all sides in the olive oil, then set aside (they'll finish in the sauce)."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "In the same pan, sauté a little garlic, add the crushed tomatoes, season and flavour with basil. Simmer 10 minutes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Return the balls to the sauce and simmer covered for 15 minutes: they soak in and finish cooking, soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, scattered with parmesan and basil, with crusty bread or over spaghetti. A comforting classic."
+   }
+  ]
+ },
+ "tortacaprese": {
+  "nom": "Torta Caprese",
+  "description": "Torta Caprese — the flourless cake from Capri: a chocolate and almond cake, gooey and moist in the middle, with a thin cracked crust. Born from a forgotten flour, it became a naturally gluten-free wonder.",
+  "etapes": [
+   {
+    "titre": "Melt the chocolate",
+    "detail": "Gently melt the dark chocolate with the butter over a bain-marie, into a smooth glossy mixture. Let cool slightly."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Grind the almonds into a not-too-fine powder: they replace the flour and give the typical moist density."
+   },
+   {
+    "titre": "The yolks",
+    "detail": "Whisk the egg yolks with half the sugar until pale, then stir in the melted chocolate and almonds."
+   },
+   {
+    "titre": "The whites",
+    "detail": "Beat the whites with the rest of the sugar into a soft, glossy meringue."
+   },
+   {
+    "titre": "Fold in",
+    "detail": "Gently fold the whites into the chocolate batter, lifting the mass to keep the air."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Pour into a buttered tin and bake at 170°C for 30 minutes: the cake should be set at the edges but still gooey in the centre (a cracked crust forms)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool, turn out and dust generously with icing sugar. Serve at room temperature, the centre stays dense and gooey."
+   }
+  ]
+ },
+ "cantucci": {
+  "nom": "Cantucci",
+  "description": "Cantucci — the Tuscan almond biscuits: small dry crunchy biscuits studded with whole almonds, baked twice for their crispness. To dip in a glass of sweet wine (vin santo) or a coffee, the tradition of Prato.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, sugar, baking powder and a pinch of salt, then add the beaten eggs to form a soft, slightly sticky dough."
+   },
+   {
+    "titre": "The almonds",
+    "detail": "Work the whole (unblanched) almonds into the dough, distributing them evenly."
+   },
+   {
+    "titre": "Form the logs",
+    "detail": "Flour the work surface and shape the dough into one or two flat logs about 3 cm wide."
+   },
+   {
+    "titre": "First bake",
+    "detail": "Bake the logs at 170°C for 20 minutes, until golden and firm to the touch."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Take them out and, while still warm, slice them diagonally into biscuits about 1 cm thick with a sharp knife."
+   },
+   {
+    "titre": "Second bake",
+    "detail": "Lay the slices back on the tray and bake again for 10 minutes (5 minutes per side), until dry and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool completely: they harden as they cool. Serve with a vin santo or coffee, for dipping. They keep for weeks."
+   }
+  ]
  }
 };

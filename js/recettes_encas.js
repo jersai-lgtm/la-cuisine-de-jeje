@@ -3662,4 +3662,41 @@ Object.assign(recettes, {
       { icone: "🌶️", titre: "Servir", detail: "Égouttez et servez chaudes, avec une sauce piquante (ají) et un quartier de citron vert. Croustillantes dehors, fondantes dedans.", badge: null }
     ]
   },
+  polpette: {
+    dateAjout: "2026-07-09T21:07:00",
+    nom: "Polpette al Sugo",
+    cat: "encas", pays: "italie",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🍖",
+    description: "Polpette al sugo — les boulettes de viande italiennes : de tendres boulettes de bœuf au parmesan et à la mie de pain, mijotées dans une sauce tomate parfumée. Moelleuses à cœur, elles se dégustent avec du pain, des pâtes ou en plat familial.",
+    tableauPolpette: [
+      { nb: 1, boeufHache: "100 g", chapelure: "15 g", oeufs: "¼", parmesan: "12 g", ail: "1", tomates: "1", persil: "6 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, boeufHache: "200 g", chapelure: "30 g", oeufs: "½", parmesan: "24 g", ail: "2", tomates: "2", persil: "12 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, boeufHache: "300 g", chapelure: "45 g", oeufs: "¾", parmesan: "36 g", ail: "3", tomates: "3", persil: "18 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, boeufHache: "400 g", chapelure: "60 g", oeufs: "1", parmesan: "48 g", ail: "4", tomates: "4", persil: "24 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, boeufHache: "500 g", chapelure: "75 g", oeufs: "1¼", parmesan: "60 g", ail: "5", tomates: "5", persil: "30 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, boeufHache: "600 g", chapelure: "90 g", oeufs: "1½", parmesan: "72 g", ail: "6", tomates: "6", persil: "36 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, boeufHache: "700 g", chapelure: "105 g", oeufs: "1¾", parmesan: "84 g", ail: "7", tomates: "7", persil: "42 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, boeufHache: "800 g", chapelure: "120 g", oeufs: "2", parmesan: "96 g", ail: "8", tomates: "8", persil: "48 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, boeufHache: "900 g", chapelure: "135 g", oeufs: "2¼", parmesan: "108 g", ail: "9", tomates: "9", persil: "54 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, boeufHache: "1000 g", chapelure: "150 g", oeufs: "2½", parmesan: "120 g", ail: "10", tomates: "10", persil: "60 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, boeufHache: "1100 g", chapelure: "165 g", oeufs: "2¾", parmesan: "132 g", ail: "11", tomates: "11", persil: "66 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, boeufHache: "1200 g", chapelure: "180 g", oeufs: "3", parmesan: "144 g", ail: "12", tomates: "12", persil: "72 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, boeufHache: "1300 g", chapelure: "195 g", oeufs: "3¼", parmesan: "156 g", ail: "13", tomates: "13", persil: "78 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, boeufHache: "1400 g", chapelure: "210 g", oeufs: "3½", parmesan: "168 g", ail: "14", tomates: "14", persil: "84 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, boeufHache: "1500 g", chapelure: "225 g", oeufs: "3¾", parmesan: "180 g", ail: "15", tomates: "15", persil: "90 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍞", titre: "La mie", detail: "Faites gonfler la chapelure (ou de la mie de pain) dans un peu de lait : elle rendra les boulettes moelleuses.", badge: null },
+      { icone: "🥩", titre: "La farce", detail: "Mélangez le bœuf haché avec la mie, l'œuf, le parmesan râpé, l'ail et le persil hachés, salez et poivrez. Pétrissez bien.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Façonnez des boulettes régulières de la taille d'une grosse noix, en roulant entre les paumes humides.", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Faites dorer les boulettes de tous côtés dans l'huile d'olive, puis réservez-les (elles finiront dans la sauce).", badge: null },
+      { icone: "🍅", titre: "La sauce", detail: "Dans la même poêle, faites revenir un peu d'ail, ajoutez les tomates concassées, salez et parfumez de basilic. Laissez mijoter 10 min.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Remettez les boulettes dans la sauce et laissez mijoter à couvert 15 min : elles s'imprègnent et finissent de cuire, moelleuses.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, parsemé de parmesan et de basilic, avec du pain croustillant ou sur des spaghetti. Un classique réconfortant.", badge: null }
+    ]
+  },
 });
