@@ -2996,4 +2996,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud, en apéritif ou glissé dans un pain avec de la harissa et une sauce, comme dans les sandwichs marocains.", badge: null }
     ]
   },
+  banhcuon: {
+    dateAjout: "2026-07-09T14:03:00",
+    nom: "Bánh Cuốn",
+    cat: "encas", pays: "vietnam",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥟",
+    description: "Bánh cuốn — les raviolis vietnamiens vapeur : de fines crêpes de riz translucides roulées autour d'une farce de porc haché et de champignons, servies avec du nuoc cham et des herbes. Délicat et fondant.",
+    tableauBanhcuon: [
+      { nb: 1, farineRiz: "50 g", porc: "60 g", champignon: "30 g", oignon: "½", nuocmam: "10 ml", huileolive: "6 ml", coriandre: "5 g", sel: "1 g" },
+      { nb: 2, farineRiz: "100 g", porc: "120 g", champignon: "60 g", oignon: "1", nuocmam: "20 ml", huileolive: "12 ml", coriandre: "10 g", sel: "2 g" },
+      { nb: 3, farineRiz: "150 g", porc: "180 g", champignon: "90 g", oignon: "1½", nuocmam: "30 ml", huileolive: "18 ml", coriandre: "15 g", sel: "3 g" },
+      { nb: 4, farineRiz: "200 g", porc: "240 g", champignon: "120 g", oignon: "2", nuocmam: "40 ml", huileolive: "24 ml", coriandre: "20 g", sel: "4 g" },
+      { nb: 5, farineRiz: "250 g", porc: "300 g", champignon: "150 g", oignon: "2½", nuocmam: "50 ml", huileolive: "30 ml", coriandre: "25 g", sel: "5 g" },
+      { nb: 6, farineRiz: "300 g", porc: "360 g", champignon: "180 g", oignon: "3", nuocmam: "60 ml", huileolive: "36 ml", coriandre: "30 g", sel: "6 g" },
+      { nb: 7, farineRiz: "350 g", porc: "420 g", champignon: "210 g", oignon: "3½", nuocmam: "70 ml", huileolive: "42 ml", coriandre: "35 g", sel: "7 g" },
+      { nb: 8, farineRiz: "400 g", porc: "480 g", champignon: "240 g", oignon: "4", nuocmam: "80 ml", huileolive: "48 ml", coriandre: "40 g", sel: "8 g" },
+      { nb: 9, farineRiz: "450 g", porc: "540 g", champignon: "270 g", oignon: "4½", nuocmam: "90 ml", huileolive: "54 ml", coriandre: "45 g", sel: "9 g" },
+      { nb: 10, farineRiz: "500 g", porc: "600 g", champignon: "300 g", oignon: "5", nuocmam: "100 ml", huileolive: "60 ml", coriandre: "50 g", sel: "10 g" },
+      { nb: 11, farineRiz: "550 g", porc: "660 g", champignon: "330 g", oignon: "5½", nuocmam: "110 ml", huileolive: "66 ml", coriandre: "55 g", sel: "11 g" },
+      { nb: 12, farineRiz: "600 g", porc: "720 g", champignon: "360 g", oignon: "6", nuocmam: "120 ml", huileolive: "72 ml", coriandre: "60 g", sel: "12 g" },
+      { nb: 13, farineRiz: "650 g", porc: "780 g", champignon: "390 g", oignon: "6½", nuocmam: "130 ml", huileolive: "78 ml", coriandre: "65 g", sel: "13 g" },
+      { nb: 14, farineRiz: "700 g", porc: "840 g", champignon: "420 g", oignon: "7", nuocmam: "140 ml", huileolive: "84 ml", coriandre: "70 g", sel: "14 g" },
+      { nb: 15, farineRiz: "750 g", porc: "900 g", champignon: "450 g", oignon: "7½", nuocmam: "150 ml", huileolive: "90 ml", coriandre: "75 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine de riz avec de l'eau (environ 3 fois son volume), un peu d'huile et une pincée de sel, en une pâte très liquide et lisse. Laissez reposer 30 min.", badge: null },
+      { icone: "🍄", titre: "La farce", detail: "Faites revenir l'oignon émincé, puis ajoutez le porc haché et les champignons émincés. Assaisonnez de nuoc-mâm et de poivre, faites cuire jusqu'à ce que ce soit sec. Réservez.", badge: null },
+      { icone: "♨️", titre: "Cuire la crêpe", detail: "Versez une fine louche de pâte sur une poêle antiadhésive chaude et huilée (ou un linge tendu sur l'eau bouillante), couvrez 30 s : la crêpe devient translucide et se décolle.", badge: null },
+      { icone: "🥟", titre: "Garnir", detail: "Déposez la crêpe délicatement sur un plan huilé, placez une cuillère de farce sur un bord.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Roulez la crêpe autour de la farce en un petit rouleau souple. Répétez avec le reste de pâte et de farce.", badge: null },
+      { icone: "🧅", titre: "Finition", detail: "Parsemez d'oignon frit et de coriandre ciselée. Les bánh cuốn doivent rester moelleux et légèrement collants.", badge: null },
+      { icone: "🐟", titre: "Servir", detail: "Servez tiède avec un bol de nuoc cham (nuoc-mâm, citron vert, sucre, eau) pour tremper, et des herbes fraîches.", badge: null }
+    ]
+  },
 });

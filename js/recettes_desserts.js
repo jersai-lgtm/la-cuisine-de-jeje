@@ -5975,4 +5975,41 @@ Object.assign(recettes, {
       { icone: "🌰", titre: "Décorer & servir", detail: "Décorez d'amandes entières grillées. Servez en petites quantités (c'est très riche) avec un thé ou un verre de lait. Se conserve plusieurs semaines.", badge: null }
     ]
   },
+  chechuoi: {
+    dateAjout: "2026-07-09T14:04:00",
+    nom: "Chè Chuối",
+    cat: "desserts", pays: "vietnam",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍌",
+    description: "Chè chuối — le dessert vietnamien à la banane : des bananes moelleuses pochées dans un lait de coco sucré avec des perles de tapioca, parsemées de cacahuètes et de sésame grillés. Doux, crémeux et parfumé.",
+    tableauChechuoi: [
+      { nb: 1, banane: "1", laitcoco: "100 ml", tapioca: "20 g", sucre: "15 g", cacahuete: "8 g", sesame: "3 g", sel: "0.5 g" },
+      { nb: 2, banane: "2", laitcoco: "200 ml", tapioca: "40 g", sucre: "30 g", cacahuete: "16 g", sesame: "6 g", sel: "1 g" },
+      { nb: 3, banane: "3", laitcoco: "300 ml", tapioca: "60 g", sucre: "45 g", cacahuete: "24 g", sesame: "9 g", sel: "1.5 g" },
+      { nb: 4, banane: "4", laitcoco: "400 ml", tapioca: "80 g", sucre: "60 g", cacahuete: "32 g", sesame: "12 g", sel: "2 g" },
+      { nb: 5, banane: "5", laitcoco: "500 ml", tapioca: "100 g", sucre: "75 g", cacahuete: "40 g", sesame: "15 g", sel: "2.5 g" },
+      { nb: 6, banane: "6", laitcoco: "600 ml", tapioca: "120 g", sucre: "90 g", cacahuete: "48 g", sesame: "18 g", sel: "3 g" },
+      { nb: 7, banane: "7", laitcoco: "700 ml", tapioca: "140 g", sucre: "105 g", cacahuete: "56 g", sesame: "21 g", sel: "3.5 g" },
+      { nb: 8, banane: "8", laitcoco: "800 ml", tapioca: "160 g", sucre: "120 g", cacahuete: "64 g", sesame: "24 g", sel: "4 g" },
+      { nb: 9, banane: "9", laitcoco: "900 ml", tapioca: "180 g", sucre: "135 g", cacahuete: "72 g", sesame: "27 g", sel: "4.5 g" },
+      { nb: 10, banane: "10", laitcoco: "1000 ml", tapioca: "200 g", sucre: "150 g", cacahuete: "80 g", sesame: "30 g", sel: "5 g" },
+      { nb: 11, banane: "11", laitcoco: "1100 ml", tapioca: "220 g", sucre: "165 g", cacahuete: "88 g", sesame: "33 g", sel: "5.5 g" },
+      { nb: 12, banane: "12", laitcoco: "1200 ml", tapioca: "240 g", sucre: "180 g", cacahuete: "96 g", sesame: "36 g", sel: "6 g" },
+      { nb: 13, banane: "13", laitcoco: "1300 ml", tapioca: "260 g", sucre: "195 g", cacahuete: "104 g", sesame: "39 g", sel: "6.5 g" },
+      { nb: 14, banane: "14", laitcoco: "1400 ml", tapioca: "280 g", sucre: "210 g", cacahuete: "112 g", sesame: "42 g", sel: "7 g" },
+      { nb: 15, banane: "15", laitcoco: "1500 ml", tapioca: "300 g", sucre: "225 g", cacahuete: "120 g", sesame: "45 g", sel: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "⚪", titre: "Cuire le tapioca", detail: "Faites cuire les perles de tapioca dans l'eau bouillante en remuant, jusqu'à ce qu'elles deviennent translucides (10-12 min). Rincez à l'eau froide et réservez.", badge: null },
+      { icone: "🍌", titre: "Préparer les bananes", detail: "Épluchez les bananes et coupez-les en tronçons épais. Choisissez-les bien mûres pour un maximum de douceur.", badge: null },
+      { icone: "🥥", titre: "Lait de coco", detail: "Faites chauffer le lait de coco avec le sucre et une pincée de sel à feu doux, sans faire bouillir, jusqu'à ce que le sucre soit dissous.", badge: null },
+      { icone: "♨️", titre: "Pocher les bananes", detail: "Ajoutez les bananes dans le lait de coco et laissez-les pocher doucement 5 min : elles deviennent fondantes et s'imprègnent.", badge: null },
+      { icone: "⚪", titre: "Ajouter le tapioca", detail: "Incorporez les perles de tapioca et réchauffez 2 min. Le mélange épaissit légèrement et devient crémeux.", badge: null },
+      { icone: "🥜", titre: "Griller la garniture", detail: "Faites torréfier à sec les cacahuètes et le sésame jusqu'à ce qu'ils soient dorés et parfumés, puis concassez grossièrement les cacahuètes.", badge: null },
+      { icone: "🍨", titre: "Servir", detail: "Servez le chè chuối tiède ou frais dans des bols, parsemé de cacahuètes et de sésame grillés. Un dessert réconfortant à toute heure.", badge: null }
+    ]
+  },
 });

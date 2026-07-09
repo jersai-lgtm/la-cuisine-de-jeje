@@ -56818,5 +56818,175 @@ window.RECETTES_EN = {
     "detail": "Serve the loubia piping hot, drizzled with olive oil, with Moroccan bread to mop up. Even better reheated the next day."
    }
   ]
+ },
+ "cariga": {
+  "nom": "Cà Ri Gà",
+  "description": "Cà ri gà — Vietnamese chicken curry: chicken pieces simmered in coconut milk scented with lemongrass and curry, with tender sweet potato and carrots. Mild, creamy and comforting.",
+  "etapes": [
+   {
+    "titre": "Marinate the chicken",
+    "detail": "Cut the chicken into pieces and mix with the curry, finely chopped lemongrass, garlic and a little salt. Marinate 15 minutes to soak it well."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Heat the oil and sear the chicken pieces on all sides until coloured. Set aside."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "In the same pot, sauté the sliced onion and remaining garlic until soft and fragrant."
+   },
+   {
+    "titre": "Coconut curry",
+    "detail": "Return the chicken, pour in the coconut milk and a little water. Stir well to dissolve the curry and bring to a gentle simmer."
+   },
+   {
+    "titre": "Vegetables",
+    "detail": "Add the sweet potato and carrot in large pieces. Cover and simmer 20 to 25 minutes, until everything is tender and the sauce coats."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the fish sauce (nuoc mam) at the end and adjust: the sauce should be mild, salty-sweet and lightly spiced."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with steamed rice or, Vietnamese style, with bread (bánh mì) to mop up the creamy curry."
+   }
+  ]
+ },
+ "thitkho": {
+  "nom": "Thịt Kho",
+  "description": "Thịt kho — Vietnamese caramelised pork: pork belly and hard-boiled eggs simmered in a savoury caramel with fish sauce and coconut water, until glazed and meltingly tender. The quintessential family dish.",
+  "etapes": [
+   {
+    "titre": "Hard-boiled eggs",
+    "detail": "Hard-boil the eggs (9 min), peel and keep them whole: they'll colour in the caramel."
+   },
+   {
+    "titre": "The caramel",
+    "detail": "In a pot, melt the sugar with a splash of water into an amber caramel. Be careful not to burn it, or it turns bitter."
+   },
+   {
+    "titre": "Sear the pork",
+    "detail": "Cut the pork into cubes and brown them in the caramel with the garlic and onion, until well coated and golden."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the fish sauce and pepper, and stir: this is the signature salty-sweet balance of kho."
+   },
+   {
+    "titre": "Coconut water",
+    "detail": "Pour in the coconut milk (in place of coconut water) and top up with water to the level. Bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the hard-boiled eggs, half-cover and simmer 40 to 45 minutes over low heat. The sauce reduces and glazes the meat and eggs."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the thịt kho hot with white rice, which soaks up the caramelised sauce, and maybe some pickled vegetables for acidity."
+   }
+  ]
+ },
+ "goiga": {
+  "nom": "Gỏi Gà",
+  "description": "Gỏi gà — Vietnamese chicken salad: shredded chicken and crunchy cabbage, lifted with mint, coriander, peanuts and a lime-fish-sauce dressing. Fresh, crunchy and full of zing.",
+  "etapes": [
+   {
+    "titre": "Cook the chicken",
+    "detail": "Poach the chicken breast in gently simmering salted water for 12 to 15 minutes, let cool, then shred it by hand into strands."
+   },
+   {
+    "titre": "Shred the cabbage",
+    "detail": "Finely shred the cabbage and carrot. Salt them lightly and let sit 10 minutes, then squeeze out the water: they stay crunchy without watering down the salad."
+   },
+   {
+    "titre": "Onion",
+    "detail": "Slice the onion thinly and soak it 5 minutes in cold water to mellow its sharpness, then drain."
+   },
+   {
+    "titre": "The dressing",
+    "detail": "Mix the fish sauce, lime juice, sugar and a little water until dissolved: this is nuoc cham, the salty-sweet-tangy seasoning."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "In a large bowl, combine the shredded chicken, cabbage, carrot and onion. Pour over the dressing and toss well."
+   },
+   {
+    "titre": "Herbs",
+    "detail": "Add the chopped mint and coriander just before serving, to keep them fresh."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with crushed peanuts and serve immediately. The salad should be crunchy, so don't dress it too far ahead."
+   }
+  ]
+ },
+ "banhcuon": {
+  "nom": "Bánh Cuốn",
+  "description": "Bánh cuốn — Vietnamese steamed rice rolls: thin translucent rice crêpes rolled around a filling of minced pork and mushrooms, served with nuoc cham and herbs. Delicate and tender.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Mix the rice flour with water (about 3 times its volume), a little oil and a pinch of salt, into a very thin, smooth batter. Let rest 30 minutes."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Sauté the sliced onion, then add the minced pork and sliced mushrooms. Season with fish sauce and pepper, and cook until dry. Set aside."
+   },
+   {
+    "titre": "Cook the crêpe",
+    "detail": "Pour a thin ladle of batter onto a hot oiled non-stick pan (or a cloth stretched over boiling water), cover 30 sec: the crêpe turns translucent and lifts off."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Lay the crêpe gently on an oiled surface, place a spoonful of filling on one edge."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the crêpe around the filling into a soft little roll. Repeat with the remaining batter and filling."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Scatter with fried onion and chopped coriander. The bánh cuốn should stay soft and slightly sticky."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with a bowl of nuoc cham (fish sauce, lime, sugar, water) for dipping, and fresh herbs."
+   }
+  ]
+ },
+ "chechuoi": {
+  "nom": "Chè Chuối",
+  "description": "Chè chuối — Vietnamese banana dessert: soft bananas poached in sweet coconut milk with tapioca pearls, scattered with toasted peanuts and sesame. Sweet, creamy and fragrant.",
+  "etapes": [
+   {
+    "titre": "Cook the tapioca",
+    "detail": "Cook the tapioca pearls in boiling water, stirring, until they turn translucent (10-12 min). Rinse in cold water and set aside."
+   },
+   {
+    "titre": "Prepare the bananas",
+    "detail": "Peel the bananas and cut them into thick chunks. Choose them well ripe for maximum sweetness."
+   },
+   {
+    "titre": "Coconut milk",
+    "detail": "Heat the coconut milk with the sugar and a pinch of salt over low heat, without boiling, until the sugar dissolves."
+   },
+   {
+    "titre": "Poach the bananas",
+    "detail": "Add the bananas to the coconut milk and let them poach gently for 5 minutes: they become soft and soak it up."
+   },
+   {
+    "titre": "Add the tapioca",
+    "detail": "Stir in the tapioca pearls and warm through for 2 minutes. The mixture thickens slightly and turns creamy."
+   },
+   {
+    "titre": "Toast the topping",
+    "detail": "Dry-toast the peanuts and sesame until golden and fragrant, then roughly crush the peanuts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the chè chuối warm or chilled in bowls, scattered with toasted peanuts and sesame. A comforting dessert any time."
+   }
+  ]
  }
 };

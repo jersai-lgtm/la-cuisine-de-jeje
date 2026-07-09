@@ -2037,4 +2037,41 @@ Object.assign(recettes, {
       { icone: "🫒", titre: "Servir", detail: "Au moment de servir, ajouter un filet d'huile d'olive et quelques pignons, et parsemer de copeaux de parmesan.", badge: null }
     ]
   },
+  goiga: {
+    dateAjout: "2026-07-09T14:02:00",
+    nom: "Gỏi Gà",
+    cat: "salades", pays: "vietnam",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Gỏi gà — la salade de poulet vietnamienne : du poulet effiloché et du chou croquant, relevés de menthe, coriandre, cacahuètes et d'une vinaigrette nuoc-mâm citron vert. Fraîche, croquante et pleine de peps.",
+    tableauGoiga: [
+      { nb: 1, poulet: "100 g", chou: "80 g", carotte: "40 g", oignon: "¼", menthe: "6 g", coriandre: "6 g", cacahuete: "10 g", nuocmam: "10 ml", citronvert: "½", sucre: "5 g" },
+      { nb: 2, poulet: "200 g", chou: "160 g", carotte: "80 g", oignon: "½", menthe: "12 g", coriandre: "12 g", cacahuete: "20 g", nuocmam: "20 ml", citronvert: "1", sucre: "10 g" },
+      { nb: 3, poulet: "300 g", chou: "240 g", carotte: "120 g", oignon: "¾", menthe: "18 g", coriandre: "18 g", cacahuete: "30 g", nuocmam: "30 ml", citronvert: "1½", sucre: "15 g" },
+      { nb: 4, poulet: "400 g", chou: "320 g", carotte: "160 g", oignon: "1", menthe: "24 g", coriandre: "24 g", cacahuete: "40 g", nuocmam: "40 ml", citronvert: "2", sucre: "20 g" },
+      { nb: 5, poulet: "500 g", chou: "400 g", carotte: "200 g", oignon: "1¼", menthe: "30 g", coriandre: "30 g", cacahuete: "50 g", nuocmam: "50 ml", citronvert: "2½", sucre: "25 g" },
+      { nb: 6, poulet: "600 g", chou: "480 g", carotte: "240 g", oignon: "1½", menthe: "36 g", coriandre: "36 g", cacahuete: "60 g", nuocmam: "60 ml", citronvert: "3", sucre: "30 g" },
+      { nb: 7, poulet: "700 g", chou: "560 g", carotte: "280 g", oignon: "1¾", menthe: "42 g", coriandre: "42 g", cacahuete: "70 g", nuocmam: "70 ml", citronvert: "3½", sucre: "35 g" },
+      { nb: 8, poulet: "800 g", chou: "640 g", carotte: "320 g", oignon: "2", menthe: "48 g", coriandre: "48 g", cacahuete: "80 g", nuocmam: "80 ml", citronvert: "4", sucre: "40 g" },
+      { nb: 9, poulet: "900 g", chou: "720 g", carotte: "360 g", oignon: "2¼", menthe: "54 g", coriandre: "54 g", cacahuete: "90 g", nuocmam: "90 ml", citronvert: "4½", sucre: "45 g" },
+      { nb: 10, poulet: "1000 g", chou: "800 g", carotte: "400 g", oignon: "2½", menthe: "60 g", coriandre: "60 g", cacahuete: "100 g", nuocmam: "100 ml", citronvert: "5", sucre: "50 g" },
+      { nb: 11, poulet: "1100 g", chou: "880 g", carotte: "440 g", oignon: "2¾", menthe: "66 g", coriandre: "66 g", cacahuete: "110 g", nuocmam: "110 ml", citronvert: "5½", sucre: "55 g" },
+      { nb: 12, poulet: "1200 g", chou: "960 g", carotte: "480 g", oignon: "3", menthe: "72 g", coriandre: "72 g", cacahuete: "120 g", nuocmam: "120 ml", citronvert: "6", sucre: "60 g" },
+      { nb: 13, poulet: "1300 g", chou: "1040 g", carotte: "520 g", oignon: "3¼", menthe: "78 g", coriandre: "78 g", cacahuete: "130 g", nuocmam: "130 ml", citronvert: "6½", sucre: "65 g" },
+      { nb: 14, poulet: "1400 g", chou: "1120 g", carotte: "560 g", oignon: "3½", menthe: "84 g", coriandre: "84 g", cacahuete: "140 g", nuocmam: "140 ml", citronvert: "7", sucre: "70 g" },
+      { nb: 15, poulet: "1500 g", chou: "1200 g", carotte: "600 g", oignon: "3¾", menthe: "90 g", coriandre: "90 g", cacahuete: "150 g", nuocmam: "150 ml", citronvert: "7½", sucre: "75 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Cuire le poulet", detail: "Pochez le blanc de poulet dans l'eau frémissante salée 12 à 15 min, laissez tiédir, puis effilochez-le à la main en filaments.", badge: null },
+      { icone: "🥬", titre: "Émincer le chou", detail: "Émincez très finement le chou et la carotte. Salez-les légèrement et laissez dégorger 10 min, puis pressez pour retirer l'eau : ils restent croquants sans détremper la salade.", badge: null },
+      { icone: "🧅", titre: "Oignon", detail: "Émincez l'oignon en fines lamelles et faites-le tremper 5 min dans l'eau froide pour adoucir son piquant, puis égouttez.", badge: null },
+      { icone: "🥣", titre: "La vinaigrette", detail: "Mélangez le nuoc-mâm, le jus de citron vert, le sucre et un peu d'eau jusqu'à dissolution : c'est le nuoc cham, l'assaisonnement salé-sucré-acidulé.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Dans un grand saladier, mélangez le poulet effiloché, le chou, la carotte et l'oignon. Versez la vinaigrette et mélangez bien.", badge: null },
+      { icone: "🌿", titre: "Herbes", detail: "Ajoutez la menthe et la coriandre ciselées juste avant de servir, pour garder leur fraîcheur.", badge: null },
+      { icone: "🥜", titre: "Servir", detail: "Parsemez de cacahuètes concassées et servez aussitôt. La salade doit être croquante, ne la préparez pas trop à l'avance une fois assaisonnée.", badge: null }
+    ]
+  },
 });

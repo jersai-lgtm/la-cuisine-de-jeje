@@ -30129,4 +30129,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez la loubia bien chaude, arrosée d'un filet d'huile d'olive, avec du pain marocain pour saucer. Encore meilleure réchauffée le lendemain.", badge: null }
     ]
   },
+  cariga: {
+    dateAjout: "2026-07-09T14:00:00",
+    nom: "Cà Ri Gà",
+    cat: "plats", pays: "vietnam",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍛",
+    description: "Cà ri gà — le curry de poulet vietnamien : des morceaux de poulet mijotés dans un lait de coco parfumé à la citronnelle et au curry, avec de la patate douce et des carottes fondantes. Doux, crémeux et réconfortant.",
+    tableauCariga: [
+      { nb: 1, poulet: "130 g", laitcoco: "100 ml", patatedouce: "80 g", carotte: "40 g", oignon: "½", ail: "2", citronnelle: "5 g", curry: "3 g", nuocmam: "8 ml", huileolive: "8 ml", sel: "1 g" },
+      { nb: 2, poulet: "260 g", laitcoco: "200 ml", patatedouce: "160 g", carotte: "80 g", oignon: "1", ail: "4", citronnelle: "10 g", curry: "6 g", nuocmam: "16 ml", huileolive: "16 ml", sel: "2 g" },
+      { nb: 3, poulet: "390 g", laitcoco: "300 ml", patatedouce: "240 g", carotte: "120 g", oignon: "1½", ail: "6", citronnelle: "15 g", curry: "9 g", nuocmam: "24 ml", huileolive: "24 ml", sel: "3 g" },
+      { nb: 4, poulet: "520 g", laitcoco: "400 ml", patatedouce: "320 g", carotte: "160 g", oignon: "2", ail: "8", citronnelle: "20 g", curry: "12 g", nuocmam: "32 ml", huileolive: "32 ml", sel: "4 g" },
+      { nb: 5, poulet: "650 g", laitcoco: "500 ml", patatedouce: "400 g", carotte: "200 g", oignon: "2½", ail: "10", citronnelle: "25 g", curry: "15 g", nuocmam: "40 ml", huileolive: "40 ml", sel: "5 g" },
+      { nb: 6, poulet: "780 g", laitcoco: "600 ml", patatedouce: "480 g", carotte: "240 g", oignon: "3", ail: "12", citronnelle: "30 g", curry: "18 g", nuocmam: "48 ml", huileolive: "48 ml", sel: "6 g" },
+      { nb: 7, poulet: "910 g", laitcoco: "700 ml", patatedouce: "560 g", carotte: "280 g", oignon: "3½", ail: "14", citronnelle: "35 g", curry: "21 g", nuocmam: "56 ml", huileolive: "56 ml", sel: "7 g" },
+      { nb: 8, poulet: "1040 g", laitcoco: "800 ml", patatedouce: "640 g", carotte: "320 g", oignon: "4", ail: "16", citronnelle: "40 g", curry: "24 g", nuocmam: "64 ml", huileolive: "64 ml", sel: "8 g" },
+      { nb: 9, poulet: "1170 g", laitcoco: "900 ml", patatedouce: "720 g", carotte: "360 g", oignon: "4½", ail: "18", citronnelle: "45 g", curry: "27 g", nuocmam: "72 ml", huileolive: "72 ml", sel: "9 g" },
+      { nb: 10, poulet: "1300 g", laitcoco: "1000 ml", patatedouce: "800 g", carotte: "400 g", oignon: "5", ail: "20", citronnelle: "50 g", curry: "30 g", nuocmam: "80 ml", huileolive: "80 ml", sel: "10 g" },
+      { nb: 11, poulet: "1430 g", laitcoco: "1100 ml", patatedouce: "880 g", carotte: "440 g", oignon: "5½", ail: "22", citronnelle: "55 g", curry: "33 g", nuocmam: "88 ml", huileolive: "88 ml", sel: "11 g" },
+      { nb: 12, poulet: "1560 g", laitcoco: "1200 ml", patatedouce: "960 g", carotte: "480 g", oignon: "6", ail: "24", citronnelle: "60 g", curry: "36 g", nuocmam: "96 ml", huileolive: "96 ml", sel: "12 g" },
+      { nb: 13, poulet: "1690 g", laitcoco: "1300 ml", patatedouce: "1040 g", carotte: "520 g", oignon: "6½", ail: "26", citronnelle: "65 g", curry: "39 g", nuocmam: "104 ml", huileolive: "104 ml", sel: "13 g" },
+      { nb: 14, poulet: "1820 g", laitcoco: "1400 ml", patatedouce: "1120 g", carotte: "560 g", oignon: "7", ail: "28", citronnelle: "70 g", curry: "42 g", nuocmam: "112 ml", huileolive: "112 ml", sel: "14 g" },
+      { nb: 15, poulet: "1950 g", laitcoco: "1500 ml", patatedouce: "1200 g", carotte: "600 g", oignon: "7½", ail: "30", citronnelle: "75 g", curry: "45 g", nuocmam: "120 ml", huileolive: "120 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Mariner le poulet", detail: "Coupez le poulet en morceaux et mélangez-le avec le curry, la citronnelle finement hachée, l'ail et un peu de sel. Laissez mariner 15 min pour bien l'imprégner.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Faites chauffer l'huile et saisissez les morceaux de poulet sur toutes les faces jusqu'à coloration. Réservez.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Dans la même cocotte, faites revenir l'oignon émincé et le reste d'ail jusqu'à ce qu'ils soient fondants et parfumés.", badge: null },
+      { icone: "🥥", titre: "Curry coco", detail: "Remettez le poulet, versez le lait de coco et un peu d'eau. Mélangez bien pour dissoudre le curry et portez à léger frémissement.", badge: null },
+      { icone: "🍠", titre: "Légumes", detail: "Ajoutez la patate douce et la carotte en gros morceaux. Couvrez et laissez mijoter 20 à 25 min, jusqu'à ce que tout soit tendre et la sauce nappante.", badge: null },
+      { icone: "🐟", titre: "Assaisonner", detail: "Ajoutez le nuoc-mâm (sauce poisson) en fin de cuisson et rectifiez : la sauce doit être douce, salée-sucrée et légèrement épicée.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez bien chaud avec du riz vapeur ou, à la vietnamienne, avec du pain (bánh mì) pour saucer le curry crémeux.", badge: null }
+    ]
+  },
+  thitkho: {
+    dateAjout: "2026-07-09T14:01:00",
+    nom: "Thịt Kho",
+    cat: "plats", pays: "vietnam",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥚",
+    description: "Thịt kho — le porc caramélisé vietnamien : de la poitrine de porc et des œufs durs mijotés dans un caramel salé au nuoc-mâm et à l'eau de coco, jusqu'à devenir laqués et fondants. Le plat familial par excellence.",
+    tableauThitkho: [
+      { nb: 1, porc: "120 g", oeufs: "1", nuocmam: "12 ml", sucre: "12 g", laitcoco: "60 ml", ail: "2", oignon: "¼", poivre: "1 g" },
+      { nb: 2, porc: "240 g", oeufs: "2", nuocmam: "24 ml", sucre: "24 g", laitcoco: "120 ml", ail: "4", oignon: "½", poivre: "2 g" },
+      { nb: 3, porc: "360 g", oeufs: "3", nuocmam: "36 ml", sucre: "36 g", laitcoco: "180 ml", ail: "6", oignon: "¾", poivre: "3 g" },
+      { nb: 4, porc: "480 g", oeufs: "4", nuocmam: "48 ml", sucre: "48 g", laitcoco: "240 ml", ail: "8", oignon: "1", poivre: "4 g" },
+      { nb: 5, porc: "600 g", oeufs: "5", nuocmam: "60 ml", sucre: "60 g", laitcoco: "300 ml", ail: "10", oignon: "1¼", poivre: "5 g" },
+      { nb: 6, porc: "720 g", oeufs: "6", nuocmam: "72 ml", sucre: "72 g", laitcoco: "360 ml", ail: "12", oignon: "1½", poivre: "6 g" },
+      { nb: 7, porc: "840 g", oeufs: "7", nuocmam: "84 ml", sucre: "84 g", laitcoco: "420 ml", ail: "14", oignon: "1¾", poivre: "7 g" },
+      { nb: 8, porc: "960 g", oeufs: "8", nuocmam: "96 ml", sucre: "96 g", laitcoco: "480 ml", ail: "16", oignon: "2", poivre: "8 g" },
+      { nb: 9, porc: "1080 g", oeufs: "9", nuocmam: "108 ml", sucre: "108 g", laitcoco: "540 ml", ail: "18", oignon: "2¼", poivre: "9 g" },
+      { nb: 10, porc: "1200 g", oeufs: "10", nuocmam: "120 ml", sucre: "120 g", laitcoco: "600 ml", ail: "20", oignon: "2½", poivre: "10 g" },
+      { nb: 11, porc: "1320 g", oeufs: "11", nuocmam: "132 ml", sucre: "132 g", laitcoco: "660 ml", ail: "22", oignon: "2¾", poivre: "11 g" },
+      { nb: 12, porc: "1440 g", oeufs: "12", nuocmam: "144 ml", sucre: "144 g", laitcoco: "720 ml", ail: "24", oignon: "3", poivre: "12 g" },
+      { nb: 13, porc: "1560 g", oeufs: "13", nuocmam: "156 ml", sucre: "156 g", laitcoco: "780 ml", ail: "26", oignon: "3¼", poivre: "13 g" },
+      { nb: 14, porc: "1680 g", oeufs: "14", nuocmam: "168 ml", sucre: "168 g", laitcoco: "840 ml", ail: "28", oignon: "3½", poivre: "14 g" },
+      { nb: 15, porc: "1800 g", oeufs: "15", nuocmam: "180 ml", sucre: "180 g", laitcoco: "900 ml", ail: "30", oignon: "3¾", poivre: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Œufs durs", detail: "Faites cuire les œufs durs (9 min), écalez-les et réservez-les entiers : ils vont se colorer dans le caramel.", badge: null },
+      { icone: "🔥", titre: "Le caramel", detail: "Dans une cocotte, faites fondre le sucre avec un filet d'eau jusqu'à un caramel ambré. Attention à ne pas le brûler, il deviendrait amer.", badge: null },
+      { icone: "🥩", titre: "Saisir le porc", detail: "Coupez le porc en cubes et faites-les revenir dans le caramel avec l'ail et l'oignon, jusqu'à ce qu'ils soient bien enrobés et dorés.", badge: null },
+      { icone: "🐟", titre: "Assaisonner", detail: "Ajoutez le nuoc-mâm et le poivre, mélangez : c'est l'équilibre salé-sucré caractéristique du kho.", badge: null },
+      { icone: "🥥", titre: "Eau de coco", detail: "Versez le lait de coco (à la place de l'eau de coco) et complétez d'eau à hauteur. Portez à frémissement.", badge: null },
+      { icone: "⏱️", titre: "Mijoter", detail: "Ajoutez les œufs durs, couvrez à demi et laissez mijoter 40 à 45 min à feu doux. La sauce réduit et laque la viande et les œufs.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez le thịt kho bien chaud avec du riz blanc, qui absorbe la sauce caramélisée, et éventuellement des légumes marinés pour l'acidité.", badge: null }
+    ]
+  },
 });
