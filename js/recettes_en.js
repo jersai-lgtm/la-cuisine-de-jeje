@@ -57838,5 +57838,345 @@ window.RECETTES_EN = {
     "detail": "Serve as is, or Thai-style over warm sticky rice drizzled with coconut milk. A sweet, fragrant dessert."
    }
   ]
+ },
+ "moujadara": {
+  "nom": "Mujaddara",
+  "description": "Mujaddara — the Lebanese lentils-and-rice dish with caramelised onions: soft lentils and rice combined, crowned with a mountain of golden, sweet fried onions. Comforting, cheap and vegetarian, the Levant's 'dish of Esau'.",
+  "etapes": [
+   {
+    "titre": "Cook the lentils",
+    "detail": "Rinse the brown lentils and cook them in unsalted water for 15 minutes: they should be half-tender, still a little firm (they'll finish with the rice)."
+   },
+   {
+    "titre": "Caramelise the onions",
+    "detail": "Meanwhile, finely slice the onions and fry them gently in the oil for 15 to 20 minutes, until deeply golden, almost brown and sweet. This is the heart of the dish — don't burn them."
+   },
+   {
+    "titre": "Add the rice",
+    "detail": "Stir the rinsed rice and half the caramelised onions into the lentils, add the cumin, season and top up with hot water to cover if needed."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook over low heat for 15 minutes, until the rice and lentils are tender and the liquid absorbed."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Turn off the heat and let rest 10 minutes covered: the grains finish swelling and separate."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Fluff with a fork and crown with the rest of the crispy caramelised onions."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or at room temperature, with plain yogurt and a salad. Just as good hot or cold the next day."
+   }
+  ]
+ },
+ "batataharra": {
+  "nom": "Batata Harra",
+  "description": "Batata Harra — Lebanese spicy potatoes: crispy roasted potato cubes tossed with lots of garlic, fresh coriander and chilli. A warm, fragrant, spicy mezze, both simple and addictive.",
+  "etapes": [
+   {
+    "titre": "Cut & blanch",
+    "detail": "Cut the potatoes into even cubes. Blanch them 5 minutes in boiling salted water then drain well: they'll be soft inside and crisp up better."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Brown the cubes in hot oil (pan or oven at 210°C) until crisp and golden on all sides. Set aside on paper towels."
+   },
+   {
+    "titre": "Garlic & chilli",
+    "detail": "In the same pan, sauté the crushed garlic and chilli for 30 seconds over medium heat, just until the garlic is fragrant (don't burn it, it would turn bitter)."
+   },
+   {
+    "titre": "Coriander",
+    "detail": "Add the chopped fresh coriander and let it drop into the fragrant oil for a few seconds."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the crispy potatoes to the pan and toss to coat well with garlic and coriander."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, add a squeeze of lemon juice and toss one last time off the heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, piping hot, as a mezze or a side. The coriander and garlic should stay bright and fragrant."
+   }
+  ]
+ },
+ "sfiha": {
+  "nom": "Sfiha",
+  "description": "Sfiha — Lebanese little meat pizzas: small discs of soft dough topped with spiced beef mince in tomato, yogurt and pine nuts, baked. Open or pinched into boats, they're a mezze-table favourite.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, yeast, a pinch of salt, the oil and warm water into a soft dough. Knead 5 minutes then let rise 30 minutes under a cloth."
+   },
+   {
+    "titre": "The topping",
+    "detail": "Mix the raw minced beef with very finely chopped onion, crushed tomato, yogurt, a little spice (chilli, cinnamon) and salt: the yogurt keeps the meat moist."
+   },
+   {
+    "titre": "Form the discs",
+    "detail": "Knock back the dough and roll it out thinly. Cut small discs and place them on a tray."
+   },
+   {
+    "titre": "Top",
+    "detail": "Spread a thin layer of meat topping over each disc, right to the edges, and scatter with pine nuts."
+   },
+   {
+    "titre": "Boat (optional)",
+    "detail": "For the closed version, pinch the edges into four corners to form a small square boat open in the centre."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 220°C for 12 to 15 minutes, until the dough is golden underneath and the meat just cooked."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with a squeeze of lemon and yogurt on the side. Perfect as a mezze or a starter to share."
+   }
+  ]
+ },
+ "shishtaouk": {
+  "nom": "Shish Taouk",
+  "description": "Shish Taouk — Lebanese marinated chicken skewers: chicken cubes marinated in yogurt, garlic and lemon, grilled until golden and tender. Served with bread, garlic sauce (toum) and crudités, the staple of the Levantine grill.",
+  "etapes": [
+   {
+    "titre": "Cut the chicken",
+    "detail": "Cut the chicken breasts into even cubes of about 3 cm, for even cooking."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Mix the yogurt, crushed garlic, lemon juice, oil, paprika and salt. The yogurt tenderises the meat and keeps it juicy when cooked."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the chicken cubes well with the marinade and rest in the fridge for at least 2 hours (ideally overnight) so the flavours penetrate."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the cubes onto skewers, without packing them too tightly so they grill evenly."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over high heat (barbecue, griddle or oven grill setting) for 10 to 12 minutes, turning, until the chicken is golden, slightly caramelised and cooked through."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the skewers rest 3 minutes before serving: the juices redistribute and the meat stays moist."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with Lebanese bread, garlic sauce (toum), parsley and crudités. Enjoy on the skewer or rolled into a sandwich."
+   }
+  ]
+ },
+ "knefe": {
+  "nom": "Knefeh",
+  "description": "Knefeh — the Lebanese melting-cheese dessert: golden crispy shredded pastry enclosing a molten cheese centre, soaked in fragrant syrup. Served warm, the crisp-melting-sweet contrast makes it a unique treat.",
+  "etapes": [
+   {
+    "titre": "Prepare the shredded pastry",
+    "detail": "Crumble the very fine vermicelli (angel hair) by hand into small pieces, then mix with the melted butter until all coated."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Boil the sugar with a little water and a dash of lemon for 8 minutes to make a light syrup. Let it cool (it must be cold for good contrast)."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Grate or slice the mozzarella (desalted if needed) thinly: it gives the stretchy centre."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Press half the buttered vermicelli into the bottom of a small mould, cover with cheese, then top with the rest of the vermicelli, pressing well."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook in a pan over medium heat (or oven at 200°C) until the bottom is deeply golden and crisp, then flip to brown the other side."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Turn out the golden knefeh and immediately pour the cold syrup over it while hot: it sizzles and soaks without going fully soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, while the cheese is still molten, optionally scattered with crushed pistachios. Enjoy right away."
+   }
+  ]
+ },
+ "kafta": {
+  "nom": "Kafta",
+  "description": "Kafta — Lebanese minced-meat skewers: beef mince kneaded with lots of parsley, onion and spices, shaped around skewers and grilled. Juicy and fragrant, they're the soul of the Lebanese grill, served with bread and hummus.",
+  "etapes": [
+   {
+    "titre": "Chop finely",
+    "detail": "Chop the onion, parsley and garlic very finely — almost to a paste. The finer it is, the more even and fragrant the kafta."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Mix the minced beef with the aromatics, cinnamon, a little chilli and salt. Knead vigorously by hand for 5 minutes: the meat becomes sticky and binds well on the skewer."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Chill the mixture for 30 minutes: it shapes better and holds up better when cooked."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Take portions and shape them into long logs around flat skewers, pressing firmly with damp hands."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over high heat (barbecue, griddle or grill) for 8 to 10 minutes, turning, until the kafta is browned outside and just cooked inside."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 3 minutes before serving to keep all the juices."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with Lebanese bread, hummus, grilled tomatoes and parsley. Enjoy on the skewer or in a sandwich with sumac onions."
+   }
+  ]
+ },
+ "kookoosabzi": {
+  "nom": "Kuku Sabzi",
+  "description": "Kuku Sabzi — the Persian herb frittata: a dense green omelette packed with parsley, coriander, dill and spring onion, studded with walnuts. A symbol of renewal at Persian New Year, served warm or cold, as a dish or in a sandwich.",
+  "etapes": [
+   {
+    "titre": "Chop the herbs",
+    "detail": "Very finely chop a large quantity of parsley, coriander, dill and spring onion. The herbs should far outweigh the eggs — that's what gives the green colour and aroma."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Beat the eggs with the salt, a pinch of turmeric and the flour (which lightly binds). Stir in the herbs and crushed walnuts."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix into a very green, homogeneous batter, where the eggs just coat the herbs."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour into a pan with hot oil, cover and cook over low heat for 10 to 12 minutes, until the bottom is set and golden."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Flip the kuku using a plate and cook the other side for 5 minutes, until firm and cooked through."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Let cool slightly then cut into wedges or diamonds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm or cold, with bread, yogurt and radishes. Also great tucked into a flatbread sandwich, for a picnic."
+   }
+  ]
+ },
+ "zereshkpolo": {
+  "nom": "Zereshk Polo",
+  "description": "Zereshk Polo — Persian barberry rice: fluffy saffron basmati studded with tart little red berries, served with tender chicken. The contrast of golden rice, sour berries and chicken makes it an elegant celebration dish.",
+  "etapes": [
+   {
+    "titre": "Soak & par-cook the rice",
+    "detail": "Rinse the basmati then boil it in plenty of salted water for just 6 to 7 minutes: it should stay firm in the centre. Drain."
+   },
+   {
+    "titre": "Infuse the saffron",
+    "detail": "Crush the saffron and steep it in a little hot water: it releases its golden colour and aroma."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Brown the chicken with the sliced onion, season, add a little saffron and simmer covered for 20 minutes until tender."
+   },
+   {
+    "titre": "The tahdig",
+    "detail": "In a buttered pot, mound the rice into a dome, drizzle with melted butter, cover with a cloth under the lid and cook over low heat for 20 minutes: a golden crust (tahdig) forms at the bottom."
+   },
+   {
+    "titre": "The berries",
+    "detail": "Sauté the barberries (or raisins/cranberries) for 1 minute in a little butter with a pinch of sugar: they plump and glisten, without burning."
+   },
+   {
+    "titre": "Plate the rice",
+    "detail": "Gently mix part of the rice with the saffron to colour it, then plate the white and saffron rice in a dome, scattered with the berries."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the zereshk polo with the chicken and a piece of crispy tahdig. An elegant dish, perfect for special occasions."
+   }
+  ]
+ },
+ "keftedes": {
+  "nom": "Keftedes",
+  "description": "Keftedes — Greek meatballs: tender beef balls fragrant with mint, parsley and onion, pan-fried golden. A Greek mezze classic, to dip in tzatziki, soft and herby.",
+  "etapes": [
+   {
+    "titre": "The mix",
+    "detail": "Mix the minced beef with grated onion, finely chopped mint and parsley, the egg, breadcrumbs and salt. Mint is the signature of Greek keftedes."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead the mixture by hand for a few minutes until homogeneous and slightly sticky, then rest 20 minutes in the fridge."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape small even balls the size of a walnut, rolling between damp palms."
+   },
+   {
+    "titre": "Flour",
+    "detail": "Lightly roll each ball in flour: it forms a thin golden crust when cooked."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Brown the balls in hot oil over medium heat for 6 to 8 minutes, turning, until crisp and cooked through."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels to remove excess oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with tzatziki, a lemon wedge and a Greek salad. Perfect as a mezze to share."
+   }
+  ]
+ },
+ "croquetas": {
+  "nom": "Ham Croquetas",
+  "description": "Croquetas de Jamón — Spanish ham croquettes: a thick ham béchamel, breaded and fried, crisp outside and molten inside. The tapa par excellence, whose secret is a well-chilled dough before frying.",
+  "etapes": [
+   {
+    "titre": "The ham",
+    "detail": "Cut the ham into tiny dice and sauté it for 1 minute in the melted butter so it flavours the fat."
+   },
+   {
+    "titre": "The roux",
+    "detail": "Add the flour and stir for 2 minutes over low heat to cook the roux without colouring it: the base of the béchamel."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Pour in the hot milk little by little, whisking constantly, until you have a very thick, smooth béchamel. Season with nutmeg, a little salt and pepper, and cook 5 minutes."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Spread the paste in a dish, cover with cling film touching the surface and refrigerate at least 2 hours (or overnight): it must be cold and firm to be shaped. This is THE secret of croquetas."
+   },
+   {
+    "titre": "Shape & bread",
+    "detail": "Shape the cold paste into small logs, dip them in beaten egg then in breadcrumbs, coating well all over."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Plunge the croquetas into hot oil (180°C) for 2 to 3 minutes, until golden and crisp. Don't overcrowd."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve immediately, piping hot: the centre should be molten and creamy. The quintessential Spanish appetiser."
+   }
+  ]
  }
 };

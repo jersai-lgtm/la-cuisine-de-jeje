@@ -2074,4 +2074,41 @@ Object.assign(recettes, {
       { icone: "🍚", titre: "Servir", detail: "Servez aussitôt sur un bol de riz chaud, avec de la sauce piment (sriracha) à côté. Simple, rapide et incroyablement réconfortant.", badge: null }
     ]
   },
+  kookoosabzi: {
+    dateAjout: "2026-07-09T18:06:00",
+    nom: "Kookoo Sabzi",
+    cat: "brunch", pays: "iran",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌿",
+    description: "Kookoo Sabzi — la frittata aux herbes persane : une omelette dense et verte, gorgée de persil, coriandre, aneth et ciboule, relevée de noix. Symbole de renouveau du Nouvel An persan, elle se sert tiède ou froide, en plat ou en sandwich.",
+    tableauKookoosabzi: [
+      { nb: 1, oeufs: "2", persil: "15 g", coriandre: "10 g", aneth: "8 g", ciboule: "8 g", farine: "8 g", noix: "8 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, oeufs: "4", persil: "30 g", coriandre: "20 g", aneth: "16 g", ciboule: "16 g", farine: "16 g", noix: "16 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, oeufs: "6", persil: "45 g", coriandre: "30 g", aneth: "24 g", ciboule: "24 g", farine: "24 g", noix: "24 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, oeufs: "8", persil: "60 g", coriandre: "40 g", aneth: "32 g", ciboule: "32 g", farine: "32 g", noix: "32 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, oeufs: "10", persil: "75 g", coriandre: "50 g", aneth: "40 g", ciboule: "40 g", farine: "40 g", noix: "40 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, oeufs: "12", persil: "90 g", coriandre: "60 g", aneth: "48 g", ciboule: "48 g", farine: "48 g", noix: "48 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, oeufs: "14", persil: "105 g", coriandre: "70 g", aneth: "56 g", ciboule: "56 g", farine: "56 g", noix: "56 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, oeufs: "16", persil: "120 g", coriandre: "80 g", aneth: "64 g", ciboule: "64 g", farine: "64 g", noix: "64 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, oeufs: "18", persil: "135 g", coriandre: "90 g", aneth: "72 g", ciboule: "72 g", farine: "72 g", noix: "72 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, oeufs: "20", persil: "150 g", coriandre: "100 g", aneth: "80 g", ciboule: "80 g", farine: "80 g", noix: "80 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, oeufs: "22", persil: "165 g", coriandre: "110 g", aneth: "88 g", ciboule: "88 g", farine: "88 g", noix: "88 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, oeufs: "24", persil: "180 g", coriandre: "120 g", aneth: "96 g", ciboule: "96 g", farine: "96 g", noix: "96 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, oeufs: "26", persil: "195 g", coriandre: "130 g", aneth: "104 g", ciboule: "104 g", farine: "104 g", noix: "104 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, oeufs: "28", persil: "210 g", coriandre: "140 g", aneth: "112 g", ciboule: "112 g", farine: "112 g", noix: "112 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, oeufs: "30", persil: "225 g", coriandre: "150 g", aneth: "120 g", ciboule: "120 g", farine: "120 g", noix: "120 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Ciseler les herbes", detail: "Ciselez très finement une grande quantité de persil, coriandre, aneth et ciboule. Les herbes doivent dominer largement les œufs — c'est ce qui donne sa couleur verte et son parfum.", badge: null },
+      { icone: "🥚", titre: "L'appareil", detail: "Battez les œufs avec le sel, une pincée de curcuma et la farine (qui lie légèrement). Incorporez les herbes et les noix concassées.", badge: null },
+      { icone: "🫙", titre: "Mélanger", detail: "Mélangez jusqu'à obtenir un appareil très vert et bien homogène, où les œufs enrobent juste les herbes.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Versez dans une poêle avec l'huile chaude, couvrez et laissez cuire à feu doux 10 à 12 min, jusqu'à ce que le dessous soit pris et doré.", badge: null },
+      { icone: "🔄", titre: "Retourner", detail: "Retournez le kookoo à l'aide d'une assiette et faites cuire l'autre face 5 min, jusqu'à ce qu'il soit ferme et bien cuit à cœur.", badge: null },
+      { icone: "🔪", titre: "Détailler", detail: "Laissez tiédir légèrement puis coupez en parts ou en losanges.", badge: null },
+      { icone: "🥙", titre: "Servir", detail: "Servez tiède ou froid, avec du pain, du yaourt et des radis. Se glisse aussi dans un sandwich au pain plat, en pique-nique.", badge: null }
+    ]
+  },
 });

@@ -6197,4 +6197,41 @@ Object.assign(recettes, {
       { icone: "🍚", titre: "Servir", detail: "Servez telle quelle, ou à la thaïe sur du riz gluant chaud arrosé de lait de coco. Un dessert doux et parfumé.", badge: null }
     ]
   },
+  knefe: {
+    dateAjout: "2026-07-09T18:04:00",
+    nom: "Knefeh",
+    cat: "desserts", pays: "liban",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧀",
+    description: "Knefeh — le dessert libanais au fromage fondant : des cheveux d'ange dorés et croustillants enfermant un cœur de fromage coulant, le tout imbibé de sirop parfumé. Servi tiède, le contraste croustillant-fondant-sucré en fait une gourmandise unique.",
+    tableauKnefe: [
+      { nb: 1, vermicelle: "40 g", mozzarella: "45 g", beurre: "15 g", sucre: "30 g", citron: "¼" },
+      { nb: 2, vermicelle: "80 g", mozzarella: "90 g", beurre: "30 g", sucre: "60 g", citron: "½" },
+      { nb: 3, vermicelle: "120 g", mozzarella: "135 g", beurre: "45 g", sucre: "90 g", citron: "¾" },
+      { nb: 4, vermicelle: "160 g", mozzarella: "180 g", beurre: "60 g", sucre: "120 g", citron: "1" },
+      { nb: 5, vermicelle: "200 g", mozzarella: "225 g", beurre: "75 g", sucre: "150 g", citron: "1¼" },
+      { nb: 6, vermicelle: "240 g", mozzarella: "270 g", beurre: "90 g", sucre: "180 g", citron: "1½" },
+      { nb: 7, vermicelle: "280 g", mozzarella: "315 g", beurre: "105 g", sucre: "210 g", citron: "1¾" },
+      { nb: 8, vermicelle: "320 g", mozzarella: "360 g", beurre: "120 g", sucre: "240 g", citron: "2" },
+      { nb: 9, vermicelle: "360 g", mozzarella: "405 g", beurre: "135 g", sucre: "270 g", citron: "2¼" },
+      { nb: 10, vermicelle: "400 g", mozzarella: "450 g", beurre: "150 g", sucre: "300 g", citron: "2½" },
+      { nb: 11, vermicelle: "440 g", mozzarella: "495 g", beurre: "165 g", sucre: "330 g", citron: "2¾" },
+      { nb: 12, vermicelle: "480 g", mozzarella: "540 g", beurre: "180 g", sucre: "360 g", citron: "3" },
+      { nb: 13, vermicelle: "520 g", mozzarella: "585 g", beurre: "195 g", sucre: "390 g", citron: "3¼" },
+      { nb: 14, vermicelle: "560 g", mozzarella: "630 g", beurre: "210 g", sucre: "420 g", citron: "3½" },
+      { nb: 15, vermicelle: "600 g", mozzarella: "675 g", beurre: "225 g", sucre: "450 g", citron: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍜", titre: "Préparer les cheveux d'ange", detail: "Émiettez les vermicelles très fins (cheveux d'ange) à la main en petits morceaux, puis mélangez-les avec le beurre fondu jusqu'à ce qu'ils soient tous enrobés.", badge: null },
+      { icone: "🍯", titre: "Le sirop", detail: "Faites bouillir le sucre avec un peu d'eau et un trait de citron 8 min pour obtenir un sirop léger. Laissez-le refroidir (il doit être froid pour un bon contraste).", badge: null },
+      { icone: "🧀", titre: "Le fromage", detail: "Râpez ou coupez la mozzarella (dessalée si besoin) en fines tranches : c'est elle qui donnera le cœur filant.", badge: null },
+      { icone: "🥧", titre: "Monter", detail: "Tassez la moitié des vermicelles beurrés au fond d'un petit moule, couvrez de fromage, puis recouvrez du reste de vermicelles en tassant bien.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Faites cuire à la poêle à feu moyen (ou au four à 200°C) jusqu'à ce que le dessous soit bien doré et croustillant, puis retournez pour dorer l'autre face.", badge: null },
+      { icone: "💧", titre: "Imbiber", detail: "Démoulez la knefeh dorée et arrosez-la aussitôt, chaude, du sirop froid : elle grésille et s'imbibe sans ramollir totalement.", badge: null },
+      { icone: "🌸", titre: "Servir", detail: "Servez tiède, quand le fromage est encore coulant, éventuellement parsemée de pistaches concassées. Se déguste sans attendre.", badge: null }
+    ]
+  },
 });
