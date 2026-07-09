@@ -324,7 +324,7 @@ Object.assign(recettes, {
     base: 1,
     temps: "40 min + repos",
     niveau: "⭐⭐⭐ Difficile",
-    emoji: "🫓",
+    emoji: "🥟",
     description: "La feuille de brick maison — fine, souple et dorée à la cuisson. La base des samoussas, briouates et pastillas. Quantités pour 1 à 6 fournées d'environ 10 feuilles.",
     ingredients: {},
     tableauFeuilleDeBrick: [

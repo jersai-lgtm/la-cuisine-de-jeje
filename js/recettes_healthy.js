@@ -2342,5 +2342,41 @@ Object.assign(recettes, {
       { icone: "🧄", titre: "Ailler", detail: "Répartir le reste d'ail haché sur les légumes en fin de cuisson et laisser revenir 1 min pour qu'il s'attendrisse sans brûler.", badge: null },
       { icone: "🫒", titre: "Finir", detail: "Dresser les légumes en éventail, arroser d'un filet d'huile d'olive crue et d'une pincée de sel, et servir tièdes en accompagnement ou tapas.", badge: null }
     ]
-  }
+  },
+  patatebowl: {
+    nom: "Patate Bowl",
+    cat: "healthy", pays: "monde",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Patate bowl — un bowl réconfortant et complet : pommes de terre rôties aux épices, œuf mollet, avocat, maïs et tomates cerises, le tout nappé d'une sauce yaourt-citron. Coloré, nourrissant et vite prêt.",
+    tableauPatateBowl: [
+      { nb: 1, pommedeterre: "250 g", oeuf: "1", avocat: "½", mais: "40 g", tomatecerise: "60 g", oignonrouge: "25 g", epinard: "30 g", yaourt: "50 g", juscitron: "10 ml", huileolive: "15 ml", paprika: "2 g", cumin: "1 g", sel: "1 g" },
+      { nb: 2, pommedeterre: "500 g", oeuf: "2", avocat: "1", mais: "80 g", tomatecerise: "120 g", oignonrouge: "50 g", epinard: "60 g", yaourt: "100 g", juscitron: "20 ml", huileolive: "30 ml", paprika: "4 g", cumin: "2 g", sel: "2 g" },
+      { nb: 3, pommedeterre: "750 g", oeuf: "3", avocat: "1½", mais: "120 g", tomatecerise: "180 g", oignonrouge: "75 g", epinard: "90 g", yaourt: "150 g", juscitron: "30 ml", huileolive: "45 ml", paprika: "6 g", cumin: "3 g", sel: "3 g" },
+      { nb: 4, pommedeterre: "1000 g", oeuf: "4", avocat: "2", mais: "160 g", tomatecerise: "240 g", oignonrouge: "100 g", epinard: "120 g", yaourt: "200 g", juscitron: "40 ml", huileolive: "60 ml", paprika: "8 g", cumin: "4 g", sel: "4 g" },
+      { nb: 5, pommedeterre: "1250 g", oeuf: "5", avocat: "2½", mais: "200 g", tomatecerise: "300 g", oignonrouge: "125 g", epinard: "150 g", yaourt: "250 g", juscitron: "50 ml", huileolive: "75 ml", paprika: "10 g", cumin: "5 g", sel: "5 g" },
+      { nb: 6, pommedeterre: "1500 g", oeuf: "6", avocat: "3", mais: "240 g", tomatecerise: "360 g", oignonrouge: "150 g", epinard: "180 g", yaourt: "300 g", juscitron: "60 ml", huileolive: "90 ml", paprika: "12 g", cumin: "6 g", sel: "6 g" },
+      { nb: 7, pommedeterre: "1750 g", oeuf: "7", avocat: "3½", mais: "280 g", tomatecerise: "420 g", oignonrouge: "175 g", epinard: "210 g", yaourt: "350 g", juscitron: "70 ml", huileolive: "105 ml", paprika: "14 g", cumin: "7 g", sel: "7 g" },
+      { nb: 8, pommedeterre: "2000 g", oeuf: "8", avocat: "4", mais: "320 g", tomatecerise: "480 g", oignonrouge: "200 g", epinard: "240 g", yaourt: "400 g", juscitron: "80 ml", huileolive: "120 ml", paprika: "16 g", cumin: "8 g", sel: "8 g" },
+      { nb: 9, pommedeterre: "2250 g", oeuf: "9", avocat: "4½", mais: "360 g", tomatecerise: "540 g", oignonrouge: "225 g", epinard: "270 g", yaourt: "450 g", juscitron: "90 ml", huileolive: "135 ml", paprika: "18 g", cumin: "9 g", sel: "9 g" },
+      { nb: 10, pommedeterre: "2500 g", oeuf: "10", avocat: "5", mais: "400 g", tomatecerise: "600 g", oignonrouge: "250 g", epinard: "300 g", yaourt: "500 g", juscitron: "100 ml", huileolive: "150 ml", paprika: "20 g", cumin: "10 g", sel: "10 g" },
+      { nb: 11, pommedeterre: "2750 g", oeuf: "11", avocat: "5½", mais: "440 g", tomatecerise: "660 g", oignonrouge: "275 g", epinard: "330 g", yaourt: "550 g", juscitron: "110 ml", huileolive: "165 ml", paprika: "22 g", cumin: "11 g", sel: "11 g" },
+      { nb: 12, pommedeterre: "3000 g", oeuf: "12", avocat: "6", mais: "480 g", tomatecerise: "720 g", oignonrouge: "300 g", epinard: "360 g", yaourt: "600 g", juscitron: "120 ml", huileolive: "180 ml", paprika: "24 g", cumin: "12 g", sel: "12 g" },
+      { nb: 13, pommedeterre: "3250 g", oeuf: "13", avocat: "6½", mais: "520 g", tomatecerise: "780 g", oignonrouge: "325 g", epinard: "390 g", yaourt: "650 g", juscitron: "130 ml", huileolive: "195 ml", paprika: "26 g", cumin: "13 g", sel: "13 g" },
+      { nb: 14, pommedeterre: "3500 g", oeuf: "14", avocat: "7", mais: "560 g", tomatecerise: "840 g", oignonrouge: "350 g", epinard: "420 g", yaourt: "700 g", juscitron: "140 ml", huileolive: "210 ml", paprika: "28 g", cumin: "14 g", sel: "14 g" },
+      { nb: 15, pommedeterre: "3750 g", oeuf: "15", avocat: "7½", mais: "600 g", tomatecerise: "900 g", oignonrouge: "375 g", epinard: "450 g", yaourt: "750 g", juscitron: "150 ml", huileolive: "225 ml", paprika: "30 g", cumin: "15 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Préchauffer & couper", detail: "Préchauffer le four à 220°C. Laver les pommes de terre et les couper en cubes réguliers d'environ 2 cm (garder la peau pour le croustillant et les fibres).", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Mélanger les cubes de pommes de terre avec l'huile d'olive, le paprika, le cumin et le sel, puis les étaler en une seule couche sur une plaque. ASTUCE CHEF : ne pas les entasser, sinon elles cuisent à la vapeur au lieu de rôtir.", badge: null },
+      { icone: "⏲️", titre: "Rôtir", detail: "Enfourner 25 à 30 min en remuant à mi-cuisson, jusqu'à ce que les pommes de terre soient dorées et croustillantes.", badge: "⏱ 30 min" },
+      { icone: "🥚", titre: "Œufs mollets", detail: "Pendant ce temps, plonger les œufs dans l'eau bouillante 6 min, les refroidir sous l'eau froide puis les écaler délicatement. Le jaune reste coulant.", badge: "⏱ 6 min" },
+      { icone: "🥣", titre: "Sauce yaourt-citron", detail: "Mélanger le yaourt avec le jus de citron, un peu de sel et une pincée de cumin, jusqu'à une sauce lisse et nappante. Ajouter un filet d'eau si elle est trop épaisse.", badge: null },
+      { icone: "🔪", titre: "Préparer les toppings", detail: "Émincer finement l'oignon rouge, couper l'avocat en lamelles et les tomates cerises en deux, laver les jeunes épinards et égoutter le maïs.", badge: null },
+      { icone: "🍚", titre: "Dresser & servir", detail: "Répartir les pommes de terre rôties au fond des bols, disposer les épinards, l'avocat, le maïs, les tomates et l'oignon rouge. Ajouter l'œuf mollet coupé en deux, napper de sauce yaourt-citron et servir aussitôt.", badge: null }
+    ]
+  },
 });

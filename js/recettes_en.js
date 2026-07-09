@@ -56104,5 +56104,39 @@ window.RECETTES_EN = {
     "detail": "Use immediately for samosas, briouates, or a pastilla, or wrap and keep chilled for 2 days. Brushing with a little melted butter before filling gives a crisp golden finish when fried or baked."
    }
   ]
+ },
+ "patatebowl": {
+  "nom": "Patate Bowl",
+  "description": "Patate bowl — a comforting and complete bowl: spice-roasted potatoes, soft-boiled egg, avocado, corn, and cherry tomatoes, all drizzled with a lemon-yogurt sauce. Colorful, nourishing, and quick to make.",
+  "etapes": [
+   {
+    "titre": "Preheat & cut",
+    "detail": "Preheat the oven to 220°C. Wash the potatoes and cut them into even cubes of about 2 cm (keep the skin on for crispiness and fiber)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Toss the potato cubes with the olive oil, paprika, cumin, and salt, then spread them out in a single layer on a baking sheet. CHEF'S TIP: don't crowd them, or they'll steam instead of roast."
+   },
+   {
+    "titre": "Roast",
+    "detail": "Bake for 25 to 30 min, stirring halfway through, until the potatoes are golden and crispy."
+   },
+   {
+    "titre": "Soft-boiled eggs",
+    "detail": "Meanwhile, lower the eggs into boiling water for 6 min, cool them under cold water, then peel them gently. The yolk stays runny."
+   },
+   {
+    "titre": "Lemon-yogurt sauce",
+    "detail": "Mix the yogurt with the lemon juice, a little salt, and a pinch of cumin, until you have a smooth, coating sauce. Add a splash of water if it's too thick."
+   },
+   {
+    "titre": "Prepare the toppings",
+    "detail": "Finely slice the red onion, cut the avocado into strips and the cherry tomatoes in half, wash the baby spinach, and drain the corn."
+   },
+   {
+    "titre": "Assemble & serve",
+    "detail": "Divide the roasted potatoes into the bottom of the bowls, arrange the spinach, avocado, corn, tomatoes, and red onion. Add the soft-boiled egg cut in half, drizzle with lemon-yogurt sauce, and serve immediately."
+   }
+  ]
  }
 };
