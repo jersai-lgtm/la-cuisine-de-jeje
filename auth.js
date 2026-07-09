@@ -106,7 +106,12 @@ async function notifierConnexion(user) {
     sessionStorage.setItem("notif_login_sent", "1");
     const idToken = await user.getIdToken();
     const md = user.metadata || {};
-    const nouveau = !!(md.creationTime && md.lastSignInTime && md.creationTime === md.lastSignInTime);
+    // "nouveau" = compte CRÉÉ à l'instant (< 2 min). L'ancien test
+    // (creationTime === lastSignInTime) restait vrai À VIE pour qui se crée un compte
+    // puis reste connecté (le refresh de jeton n'avance pas lastSignInTime) → « CRÉER
+    // un compte » s'affichait à CHAQUE visite. On se base sur l'âge réel du compte.
+    let nouveau = false;
+    try { const ageMs = Date.now() - new Date(md.creationTime).getTime(); nouveau = ageMs >= 0 && ageMs < 120000; } catch (e) {}
     fetch(CLAUDE_PROXY_NOTIF, {
       method: "POST",
       headers: { "Content-Type": "application/json", "Authorization": "Bearer " + idToken },
