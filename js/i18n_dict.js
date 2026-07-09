@@ -361,5 +361,5 @@ window.I18N_DICT = {
   "Ajoute tes aliments avec leur date de péremption — on te préviendra quand ça approche 🔔": "Add your food with its expiry date — we'll warn you when it's getting close 🔔",
   "Sans compte": "No account",
   "Suppression définitive du compte et de toutes les données associées.": "Permanent deletion of the account and all associated data.",
-  "Plus de 1200 recettes maison, des menus de la semaine générés en un clic et ta liste de courses rangée automatiquement par rayon.": "Over 1200 homemade recipes, weekly menus generated in one tap, and your shopping list automatically sorted by aisle.",
+  "Plus de 1700 recettes maison, des menus de la semaine générés en un clic et ta liste de courses rangée automatiquement par rayon.": "Over 1200 homemade recipes, weekly menus generated in one tap, and your shopping list automatically sorted by aisle.",
 };
