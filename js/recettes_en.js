@@ -56478,5 +56478,175 @@ window.RECETTES_EN = {
     "detail": "Roll the still-warm bolinhos in the remaining sugar mixed with cinnamon. Serve immediately — they're best warm."
    }
   ]
+ },
+ "paparellena": {
+  "nom": "Papa Rellena",
+  "description": "Papa rellena — the Peruvian speciality: a mashed-potato croquette stuffed with ground beef braised with onions, olives, hard-boiled egg and raisins, breaded and fried golden. Crispy outside, soft inside.",
+  "etapes": [
+   {
+    "titre": "Cook the potatoes",
+    "detail": "Boil the potatoes whole in their skins in salted water until very tender. Peel them hot and mash into a smooth purée, without milk. Let cool."
+   },
+   {
+    "titre": "Hard-boiled egg",
+    "detail": "Hard-boil an egg (9 min in boiling water), peel and roughly chop it. Set aside."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Sauté the sliced onion and garlic in a little oil. Add the ground beef, cumin and salt, and brown. Off the heat, add the sliced olives, raisins and hard-boiled egg. Let cool."
+   },
+   {
+    "titre": "Form the croquettes",
+    "detail": "Take a portion of mash in a damp hand, flatten it, place a spoonful of filling in the centre and close it into a well-sealed oval croquette."
+   },
+   {
+    "titre": "Bread them",
+    "detail": "Roll each croquette in flour, then in a beaten egg, for an even coating that holds during frying."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry in oil at 180°C for 3 to 4 minutes, turning, until golden and crisp. Drain on paper towels."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a salsa criolla (sliced red onion, lime, coriander) and a dash of chilli. Eat by hand or with a fork."
+   }
+  ]
+ },
+ "escabechepollo": {
+  "nom": "Escabeche de Pollo",
+  "description": "Escabeche de pollo — Peruvian chicken escabeche: pieces browned then braised with plenty of red onion, wine vinegar and spices, served warm with potato, hard-boiled egg and olives. Tangy, colourful and fragrant.",
+  "etapes": [
+   {
+    "titre": "Brown the chicken",
+    "detail": "Season the chicken pieces and brown them in hot oil on all sides. Set aside: they'll finish cooking in the sauce."
+   },
+   {
+    "titre": "Garnishes",
+    "detail": "Boil the potatoes and eggs in salted water. Peel and cut into wedges. Set aside."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Cut the onions into large wedges. Sauté them briskly in the oil with the garlic and sliced pepper, keeping them crunchy (they shouldn't go soft)."
+   },
+   {
+    "titre": "Spices",
+    "detail": "Add the cumin and salt, and stir for 1 minute to release the aroma. This is the aromatic base of the escabeche."
+   },
+   {
+    "titre": "Deglaze with vinegar",
+    "detail": "Pour in the wine vinegar and a little water, return the chicken, cover and simmer for 12 to 15 minutes. The acidity mellows and the chicken soaks it up."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Turn off the heat and let rest for 10 minutes: escabeche is eaten WARM, not piping hot, so the flavours marry."
+   },
+   {
+    "titre": "Plate up",
+    "detail": "Arrange the chicken and its onions on a bed of lettuce, surround with potato wedges, hard-boiled egg and olives. Spoon over the cooking juices."
+   }
+  ]
+ },
+ "suspirolimena": {
+  "nom": "Suspiro a la Limeña",
+  "description": "Suspiro a la limeña — \"the sigh of the Lima lady\": a silky caramelised condensed-milk cream topped with a light meringue, dusted with cinnamon. Lima's emblematic dessert, rich and melting.",
+  "etapes": [
+   {
+    "titre": "The manjar blanco",
+    "detail": "In a saucepan, mix the condensed milk and milk. Cook over low heat, stirring CONSTANTLY, until the cream thickens and turns caramel-coloured (15 to 20 minutes)."
+   },
+   {
+    "titre": "Bind with yolks",
+    "detail": "Off the heat, whisk in the egg yolks one at a time, then the vanilla. The cream should be smooth and coating."
+   },
+   {
+    "titre": "Portion",
+    "detail": "Divide the cream into glasses and let cool completely in the fridge."
+   },
+   {
+    "titre": "Syrup",
+    "detail": "Make a syrup: cook the sugar with a little water until it spins a thread (soft-ball stage, ~118°C)."
+   },
+   {
+    "titre": "Meringue",
+    "detail": "Whip the egg whites to stiff peaks, then pour in the hot syrup in a stream while whisking, to a glossy, cooled Italian meringue."
+   },
+   {
+    "titre": "Pipe the meringue",
+    "detail": "Using a piping bag, pipe the meringue generously over the well-chilled caramel cream in pretty swirls."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Dust with ground cinnamon just before serving. Serve well chilled — the contrast of dense cream and airy meringue is the whole charm."
+   }
+  ]
+ },
+ "cremavolteada": {
+  "nom": "Crema Volteada",
+  "description": "Crema volteada — the Peruvian caramel flan: an egg-and-condensed-milk custard baked in a bain-marie in a caramel-lined mould, then turned out to reveal its golden topping. Silky, simple and comforting.",
+  "etapes": [
+   {
+    "titre": "The caramel",
+    "detail": "Melt the sugar dry (or with a splash of water) in a pan until you get an amber caramel. Pour it straight into the bottom of the mould and swirl to coat the sides."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Whisk the eggs with the condensed milk, milk and vanilla until smooth. Don't over-whisk, to avoid air bubbles."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass the custard through a sieve for a perfectly silky texture, then pour it into the caramel-lined mould."
+   },
+   {
+    "titre": "Bain-marie",
+    "detail": "Place the mould in a larger dish and pour hot water halfway up around the mould."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 160°C for about 45 minutes: the custard should be set but still slightly wobbly in the centre. A blade comes out clean."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let cool then refrigerate several hours, ideally overnight: the flan firms up and the caramel liquefies."
+   },
+   {
+    "titre": "Turn out",
+    "detail": "Run a blade around the edge, place a plate on top and flip confidently. The caramel coats the custard. Serve well chilled."
+   }
+  ]
+ },
+ "tallarinesverdes": {
+  "nom": "Tallarines Verdes",
+  "description": "Tallarines verdes — Peru's green spaghetti: a creamy sauce of basil and spinach blended with cheese and milk, softer and silkier than an Italian pesto. A comforting treat.",
+  "etapes": [
+   {
+    "titre": "Cook the pasta",
+    "detail": "Cook the spaghetti in a large volume of boiling salted water until al dente. Reserve a little cooking water before draining."
+   },
+   {
+    "titre": "Blanch the greens",
+    "detail": "Plunge the basil and spinach into boiling water for 30 seconds, then drain: this keeps a bright green colour."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Gently sauté the sliced onion and garlic in the olive oil, without colouring, just to soften them."
+   },
+   {
+    "titre": "Blend the sauce",
+    "detail": "Blend the basil, spinach, onion and garlic with the milk and cheese into a smooth, creamy green sauce. Season."
+   },
+   {
+    "titre": "Heat the sauce",
+    "detail": "Pour the sauce into the pan and warm it gently for 2 to 3 minutes without boiling, so it stays silky."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the drained spaghetti and toss to coat well. Loosen with a little cooking water if the sauce is too thick."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, sprinkled with a little grated cheese. In Peru it's often served with a pan-fried beef steak (bistec)."
+   }
+  ]
  }
 };

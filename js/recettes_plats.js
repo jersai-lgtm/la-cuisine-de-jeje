@@ -29977,4 +29977,76 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C 30 à 35 min jusqu'à ce que la tourte soit bien dorée. Laissez tiédir 10 min avant de découper pour que la garniture se tienne.", badge: null }
     ]
   },
+  escabechepollo: {
+    nom: "Escabeche de Pollo",
+    cat: "plats", pays: "perou",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍗",
+    description: "Escabeche de pollo — le poulet à l'escabèche péruvien : des morceaux dorés puis mijotés avec beaucoup d'oignon rouge, du vinaigre de vin et des épices, servis tièdes avec pomme de terre, œuf dur et olives. Acidulé, coloré et parfumé.",
+    tableauEscabechepollo: [
+      { nb: 1, poulet: "130 g", oignon: "1", vinaigreVin: "15 ml", ail: "2", poivron: "40 g", pommedeterre: "120 g", oeufs: "1", olivenoire: "12 g", cumin: "1 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 2, poulet: "260 g", oignon: "2", vinaigreVin: "30 ml", ail: "4", poivron: "80 g", pommedeterre: "240 g", oeufs: "2", olivenoire: "24 g", cumin: "2 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 3, poulet: "390 g", oignon: "3", vinaigreVin: "45 ml", ail: "6", poivron: "120 g", pommedeterre: "360 g", oeufs: "3", olivenoire: "36 g", cumin: "3 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 4, poulet: "520 g", oignon: "4", vinaigreVin: "60 ml", ail: "8", poivron: "160 g", pommedeterre: "480 g", oeufs: "4", olivenoire: "48 g", cumin: "4 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 5, poulet: "650 g", oignon: "5", vinaigreVin: "75 ml", ail: "10", poivron: "200 g", pommedeterre: "600 g", oeufs: "5", olivenoire: "60 g", cumin: "5 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 6, poulet: "780 g", oignon: "6", vinaigreVin: "90 ml", ail: "12", poivron: "240 g", pommedeterre: "720 g", oeufs: "6", olivenoire: "72 g", cumin: "6 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 7, poulet: "910 g", oignon: "7", vinaigreVin: "105 ml", ail: "14", poivron: "280 g", pommedeterre: "840 g", oeufs: "7", olivenoire: "84 g", cumin: "7 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 8, poulet: "1040 g", oignon: "8", vinaigreVin: "120 ml", ail: "16", poivron: "320 g", pommedeterre: "960 g", oeufs: "8", olivenoire: "96 g", cumin: "8 g", huileolive: "96 ml", sel: "16 g" },
+      { nb: 9, poulet: "1170 g", oignon: "9", vinaigreVin: "135 ml", ail: "18", poivron: "360 g", pommedeterre: "1080 g", oeufs: "9", olivenoire: "108 g", cumin: "9 g", huileolive: "108 ml", sel: "18 g" },
+      { nb: 10, poulet: "1300 g", oignon: "10", vinaigreVin: "150 ml", ail: "20", poivron: "400 g", pommedeterre: "1200 g", oeufs: "10", olivenoire: "120 g", cumin: "10 g", huileolive: "120 ml", sel: "20 g" },
+      { nb: 11, poulet: "1430 g", oignon: "11", vinaigreVin: "165 ml", ail: "22", poivron: "440 g", pommedeterre: "1320 g", oeufs: "11", olivenoire: "132 g", cumin: "11 g", huileolive: "132 ml", sel: "22 g" },
+      { nb: 12, poulet: "1560 g", oignon: "12", vinaigreVin: "180 ml", ail: "24", poivron: "480 g", pommedeterre: "1440 g", oeufs: "12", olivenoire: "144 g", cumin: "12 g", huileolive: "144 ml", sel: "24 g" },
+      { nb: 13, poulet: "1690 g", oignon: "13", vinaigreVin: "195 ml", ail: "26", poivron: "520 g", pommedeterre: "1560 g", oeufs: "13", olivenoire: "156 g", cumin: "13 g", huileolive: "156 ml", sel: "26 g" },
+      { nb: 14, poulet: "1820 g", oignon: "14", vinaigreVin: "210 ml", ail: "28", poivron: "560 g", pommedeterre: "1680 g", oeufs: "14", olivenoire: "168 g", cumin: "14 g", huileolive: "168 ml", sel: "28 g" },
+      { nb: 15, poulet: "1950 g", oignon: "15", vinaigreVin: "225 ml", ail: "30", poivron: "600 g", pommedeterre: "1800 g", oeufs: "15", olivenoire: "180 g", cumin: "15 g", huileolive: "180 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Dorer le poulet", detail: "Salez les morceaux de poulet et faites-les dorer dans l'huile chaude sur toutes les faces. Réservez : ils finiront de cuire dans la sauce.", badge: null },
+      { icone: "🥔", titre: "Garnitures", detail: "Faites cuire les pommes de terre et les œufs durs dans l'eau salée. Épluchez et coupez en quartiers. Réservez.", badge: null },
+      { icone: "🧅", titre: "Les oignons", detail: "Coupez les oignons en gros quartiers. Faites-les revenir vivement dans l'huile avec l'ail et le poivron en lanières, en gardant du croquant (ils ne doivent pas fondre).", badge: null },
+      { icone: "🌶️", titre: "Épices", detail: "Ajoutez le cumin et du sel, mélangez 1 min pour parfumer. C'est la base aromatique de l'escabèche.", badge: null },
+      { icone: "🍶", titre: "Déglacer au vinaigre", detail: "Versez le vinaigre de vin et un peu d'eau, replacez le poulet, couvrez et laissez mijoter 12 à 15 min. L'acidité s'adoucit et le poulet s'imprègne.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Coupez le feu et laissez reposer 10 min : l'escabèche se mange TIÈDE, pas brûlant, pour que les saveurs se marient.", badge: null },
+      { icone: "🍽️", titre: "Dresser", detail: "Dressez le poulet et ses oignons sur un lit de salade, entourez de quartiers de pomme de terre, d'œuf dur et d'olives. Nappez du jus de cuisson.", badge: null }
+    ]
+  },
+  tallarinesverdes: {
+    nom: "Tallarines Verdes",
+    cat: "plats", pays: "perou",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍝",
+    description: "Tallarines verdes — les spaghettis verts du Pérou : une sauce crémeuse de basilic et d'épinards mixés avec du fromage et du lait, plus douce et onctueuse qu'un pesto italien. Un régal réconfortant.",
+    tableauTallarinesverdes: [
+      { nb: 1, spaghetti: "90 g", basilic: "15 g", epinard: "40 g", lait: "50 ml", fromage: "25 g", oignon: "¼", ail: "1", huileolive: "10 ml", sel: "2 g" },
+      { nb: 2, spaghetti: "180 g", basilic: "30 g", epinard: "80 g", lait: "100 ml", fromage: "50 g", oignon: "½", ail: "2", huileolive: "20 ml", sel: "4 g" },
+      { nb: 3, spaghetti: "270 g", basilic: "45 g", epinard: "120 g", lait: "150 ml", fromage: "75 g", oignon: "¾", ail: "3", huileolive: "30 ml", sel: "6 g" },
+      { nb: 4, spaghetti: "360 g", basilic: "60 g", epinard: "160 g", lait: "200 ml", fromage: "100 g", oignon: "1", ail: "4", huileolive: "40 ml", sel: "8 g" },
+      { nb: 5, spaghetti: "450 g", basilic: "75 g", epinard: "200 g", lait: "250 ml", fromage: "125 g", oignon: "1¼", ail: "5", huileolive: "50 ml", sel: "10 g" },
+      { nb: 6, spaghetti: "540 g", basilic: "90 g", epinard: "240 g", lait: "300 ml", fromage: "150 g", oignon: "1½", ail: "6", huileolive: "60 ml", sel: "12 g" },
+      { nb: 7, spaghetti: "630 g", basilic: "105 g", epinard: "280 g", lait: "350 ml", fromage: "175 g", oignon: "1¾", ail: "7", huileolive: "70 ml", sel: "14 g" },
+      { nb: 8, spaghetti: "720 g", basilic: "120 g", epinard: "320 g", lait: "400 ml", fromage: "200 g", oignon: "2", ail: "8", huileolive: "80 ml", sel: "16 g" },
+      { nb: 9, spaghetti: "810 g", basilic: "135 g", epinard: "360 g", lait: "450 ml", fromage: "225 g", oignon: "2¼", ail: "9", huileolive: "90 ml", sel: "18 g" },
+      { nb: 10, spaghetti: "900 g", basilic: "150 g", epinard: "400 g", lait: "500 ml", fromage: "250 g", oignon: "2½", ail: "10", huileolive: "100 ml", sel: "20 g" },
+      { nb: 11, spaghetti: "990 g", basilic: "165 g", epinard: "440 g", lait: "550 ml", fromage: "275 g", oignon: "2¾", ail: "11", huileolive: "110 ml", sel: "22 g" },
+      { nb: 12, spaghetti: "1080 g", basilic: "180 g", epinard: "480 g", lait: "600 ml", fromage: "300 g", oignon: "3", ail: "12", huileolive: "120 ml", sel: "24 g" },
+      { nb: 13, spaghetti: "1170 g", basilic: "195 g", epinard: "520 g", lait: "650 ml", fromage: "325 g", oignon: "3¼", ail: "13", huileolive: "130 ml", sel: "26 g" },
+      { nb: 14, spaghetti: "1260 g", basilic: "210 g", epinard: "560 g", lait: "700 ml", fromage: "350 g", oignon: "3½", ail: "14", huileolive: "140 ml", sel: "28 g" },
+      { nb: 15, spaghetti: "1350 g", basilic: "225 g", epinard: "600 g", lait: "750 ml", fromage: "375 g", oignon: "3¾", ail: "15", huileolive: "150 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍝", titre: "Cuire les pâtes", detail: "Faites cuire les spaghettis dans un grand volume d'eau bouillante salée jusqu'à ce qu'ils soient al dente. Réservez un peu d'eau de cuisson avant d'égoutter.", badge: null },
+      { icone: "🌿", titre: "Blanchir les verts", detail: "Plongez le basilic et les épinards 30 secondes dans l'eau bouillante, puis égouttez : ils gardent ainsi une couleur verte éclatante.", badge: null },
+      { icone: "🧅", titre: "Aromates", detail: "Faites revenir doucement l'oignon émincé et l'ail dans l'huile d'olive, sans coloration, juste pour les attendrir.", badge: null },
+      { icone: "🌀", titre: "Mixer la sauce", detail: "Mixez le basilic, les épinards, l'oignon et l'ail avec le lait et le fromage jusqu'à obtenir une sauce verte lisse et crémeuse. Salez.", badge: null },
+      { icone: "🥘", titre: "Chauffer la sauce", detail: "Versez la sauce dans la poêle et faites-la chauffer doucement 2 à 3 min sans la faire bouillir, pour qu'elle reste onctueuse.", badge: null },
+      { icone: "🍜", titre: "Mélanger", detail: "Ajoutez les spaghettis égouttés et mélangez pour bien les enrober. Détendez avec un peu d'eau de cuisson si la sauce est trop épaisse.", badge: null },
+      { icone: "🧀", titre: "Servir", detail: "Servez aussitôt, parsemé d'un peu de fromage râpé. Au Pérou, on accompagne souvent d'une escalope de bœuf poêlée (bistec).", badge: null }
+    ]
+  },
 });

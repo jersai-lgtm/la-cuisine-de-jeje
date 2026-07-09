@@ -2921,4 +2921,40 @@ Object.assign(recettes, {
       { icone: "🍚", titre: "Enrober et servir", detail: "Roulez les bolinhos encore tièdes dans le reste de sucre mélangé à la cannelle. Servez aussitôt, c'est meilleur tiède.", badge: null }
     ]
   },
+  paparellena: {
+    nom: "Papa Rellena",
+    cat: "encas", pays: "perou",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥔",
+    description: "Papa rellena — la spécialité péruvienne : une croquette de purée de pomme de terre farcie de bœuf haché mijoté aux oignons, olives, œuf dur et raisins secs, panée et frite jusqu'à dorure. Croustillant dehors, fondant dedans.",
+    tableauPaparellena: [
+      { nb: 1, pommedeterre: "250 g", boeufHache: "70 g", oignon: "½", ail: "1", oeufs: "1", olivenoire: "12 g", raisinssecs: "8 g", cumin: "1 g", farine: "15 g", huilefriture: "20 ml", sel: "2 g" },
+      { nb: 2, pommedeterre: "500 g", boeufHache: "140 g", oignon: "1", ail: "2", oeufs: "2", olivenoire: "24 g", raisinssecs: "16 g", cumin: "2 g", farine: "30 g", huilefriture: "40 ml", sel: "4 g" },
+      { nb: 3, pommedeterre: "750 g", boeufHache: "210 g", oignon: "1½", ail: "3", oeufs: "3", olivenoire: "36 g", raisinssecs: "24 g", cumin: "3 g", farine: "45 g", huilefriture: "60 ml", sel: "6 g" },
+      { nb: 4, pommedeterre: "1000 g", boeufHache: "280 g", oignon: "2", ail: "4", oeufs: "4", olivenoire: "48 g", raisinssecs: "32 g", cumin: "4 g", farine: "60 g", huilefriture: "80 ml", sel: "8 g" },
+      { nb: 5, pommedeterre: "1250 g", boeufHache: "350 g", oignon: "2½", ail: "5", oeufs: "5", olivenoire: "60 g", raisinssecs: "40 g", cumin: "5 g", farine: "75 g", huilefriture: "100 ml", sel: "10 g" },
+      { nb: 6, pommedeterre: "1500 g", boeufHache: "420 g", oignon: "3", ail: "6", oeufs: "6", olivenoire: "72 g", raisinssecs: "48 g", cumin: "6 g", farine: "90 g", huilefriture: "120 ml", sel: "12 g" },
+      { nb: 7, pommedeterre: "1750 g", boeufHache: "490 g", oignon: "3½", ail: "7", oeufs: "7", olivenoire: "84 g", raisinssecs: "56 g", cumin: "7 g", farine: "105 g", huilefriture: "140 ml", sel: "14 g" },
+      { nb: 8, pommedeterre: "2000 g", boeufHache: "560 g", oignon: "4", ail: "8", oeufs: "8", olivenoire: "96 g", raisinssecs: "64 g", cumin: "8 g", farine: "120 g", huilefriture: "160 ml", sel: "16 g" },
+      { nb: 9, pommedeterre: "2250 g", boeufHache: "630 g", oignon: "4½", ail: "9", oeufs: "9", olivenoire: "108 g", raisinssecs: "72 g", cumin: "9 g", farine: "135 g", huilefriture: "180 ml", sel: "18 g" },
+      { nb: 10, pommedeterre: "2500 g", boeufHache: "700 g", oignon: "5", ail: "10", oeufs: "10", olivenoire: "120 g", raisinssecs: "80 g", cumin: "10 g", farine: "150 g", huilefriture: "200 ml", sel: "20 g" },
+      { nb: 11, pommedeterre: "2750 g", boeufHache: "770 g", oignon: "5½", ail: "11", oeufs: "11", olivenoire: "132 g", raisinssecs: "88 g", cumin: "11 g", farine: "165 g", huilefriture: "220 ml", sel: "22 g" },
+      { nb: 12, pommedeterre: "3000 g", boeufHache: "840 g", oignon: "6", ail: "12", oeufs: "12", olivenoire: "144 g", raisinssecs: "96 g", cumin: "12 g", farine: "180 g", huilefriture: "240 ml", sel: "24 g" },
+      { nb: 13, pommedeterre: "3250 g", boeufHache: "910 g", oignon: "6½", ail: "13", oeufs: "13", olivenoire: "156 g", raisinssecs: "104 g", cumin: "13 g", farine: "195 g", huilefriture: "260 ml", sel: "26 g" },
+      { nb: 14, pommedeterre: "3500 g", boeufHache: "980 g", oignon: "7", ail: "14", oeufs: "14", olivenoire: "168 g", raisinssecs: "112 g", cumin: "14 g", farine: "210 g", huilefriture: "280 ml", sel: "28 g" },
+      { nb: 15, pommedeterre: "3750 g", boeufHache: "1050 g", oignon: "7½", ail: "15", oeufs: "15", olivenoire: "180 g", raisinssecs: "120 g", cumin: "15 g", farine: "225 g", huilefriture: "300 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Faites cuire les pommes de terre entières avec leur peau dans l'eau salée jusqu'à ce qu'elles soient très tendres. Épluchez-les chaudes et écrasez-les en purée lisse, sans lait. Laissez refroidir.", badge: null },
+      { icone: "🥚", titre: "Œuf dur", detail: "Faites cuire un œuf dur (9 min dans l'eau bouillante), écalez-le et hachez-le grossièrement. Réservez.", badge: null },
+      { icone: "🧅", titre: "La farce", detail: "Faites revenir l'oignon émincé et l'ail dans un filet d'huile. Ajoutez le bœuf haché, le cumin et du sel, faites dorer. Hors du feu, ajoutez les olives émincées, les raisins secs et l'œuf dur. Laissez tiédir.", badge: null },
+      { icone: "🖐️", titre: "Former les croquettes", detail: "Prenez une portion de purée dans la main humide, aplatissez-la, déposez une cuillère de farce au centre et refermez en formant une croquette ovale bien scellée.", badge: null },
+      { icone: "🍳", titre: "Paner", detail: "Roulez chaque croquette dans la farine, puis dans un œuf battu, pour un enrobage régulier qui tiendra à la friture.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire dans l'huile à 180°C 3 à 4 min en les retournant, jusqu'à ce qu'elles soient bien dorées et croustillantes. Égouttez sur papier absorbant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud avec une salsa criolla (oignon rouge émincé, citron vert, coriandre) et un trait de piment. Se déguste à la main ou à la fourchette.", badge: null }
+    ]
+  },
 });

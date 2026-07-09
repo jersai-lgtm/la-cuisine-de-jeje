@@ -5823,4 +5823,76 @@ Object.assign(recettes, {
       { icone: "🍬", titre: "Dresser", detail: "Déposez chaque beijinho dans une petite caissette en papier. Réservez au frais jusqu'au service ; ils se conservent 3 jours.", badge: null }
     ]
   },
+  suspirolimena: {
+    nom: "Suspiro a la Limeña",
+    cat: "desserts", pays: "perou",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍮",
+    description: "Suspiro a la limeña — « le soupir de la Liménienne » : une crème onctueuse de lait concentré caramélisé surmontée d'une meringue légère, poudrée de cannelle. Le dessert emblématique de Lima, riche et fondant.",
+    tableauSuspirolimena: [
+      { nb: 1, laitconcentre: "80 g", lait: "40 ml", jauneoeuf: "1", blancs: "1", sucre: "30 g", vanille: "2 g", cannelle: "1 g" },
+      { nb: 2, laitconcentre: "160 g", lait: "80 ml", jauneoeuf: "2", blancs: "2", sucre: "60 g", vanille: "4 g", cannelle: "2 g" },
+      { nb: 3, laitconcentre: "240 g", lait: "120 ml", jauneoeuf: "3", blancs: "3", sucre: "90 g", vanille: "6 g", cannelle: "3 g" },
+      { nb: 4, laitconcentre: "320 g", lait: "160 ml", jauneoeuf: "4", blancs: "4", sucre: "120 g", vanille: "8 g", cannelle: "4 g" },
+      { nb: 5, laitconcentre: "400 g", lait: "200 ml", jauneoeuf: "5", blancs: "5", sucre: "150 g", vanille: "10 g", cannelle: "5 g" },
+      { nb: 6, laitconcentre: "480 g", lait: "240 ml", jauneoeuf: "6", blancs: "6", sucre: "180 g", vanille: "12 g", cannelle: "6 g" },
+      { nb: 7, laitconcentre: "560 g", lait: "280 ml", jauneoeuf: "7", blancs: "7", sucre: "210 g", vanille: "14 g", cannelle: "7 g" },
+      { nb: 8, laitconcentre: "640 g", lait: "320 ml", jauneoeuf: "8", blancs: "8", sucre: "240 g", vanille: "16 g", cannelle: "8 g" },
+      { nb: 9, laitconcentre: "720 g", lait: "360 ml", jauneoeuf: "9", blancs: "9", sucre: "270 g", vanille: "18 g", cannelle: "9 g" },
+      { nb: 10, laitconcentre: "800 g", lait: "400 ml", jauneoeuf: "10", blancs: "10", sucre: "300 g", vanille: "20 g", cannelle: "10 g" },
+      { nb: 11, laitconcentre: "880 g", lait: "440 ml", jauneoeuf: "11", blancs: "11", sucre: "330 g", vanille: "22 g", cannelle: "11 g" },
+      { nb: 12, laitconcentre: "960 g", lait: "480 ml", jauneoeuf: "12", blancs: "12", sucre: "360 g", vanille: "24 g", cannelle: "12 g" },
+      { nb: 13, laitconcentre: "1040 g", lait: "520 ml", jauneoeuf: "13", blancs: "13", sucre: "390 g", vanille: "26 g", cannelle: "13 g" },
+      { nb: 14, laitconcentre: "1120 g", lait: "560 ml", jauneoeuf: "14", blancs: "14", sucre: "420 g", vanille: "28 g", cannelle: "14 g" },
+      { nb: 15, laitconcentre: "1200 g", lait: "600 ml", jauneoeuf: "15", blancs: "15", sucre: "450 g", vanille: "30 g", cannelle: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Le manjar blanc", detail: "Dans une casserole, mélangez le lait concentré et le lait. Faites cuire à feu doux en remuant SANS ARRÊT jusqu'à ce que la crème épaississe et prenne une teinte caramel (15 à 20 min).", badge: null },
+      { icone: "🥚", titre: "Lier aux jaunes", detail: "Hors du feu, incorporez les jaunes d'œufs un à un en fouettant vivement, puis la vanille. La crème doit être lisse et nappante.", badge: null },
+      { icone: "🍶", titre: "Dresser", detail: "Répartissez la crème dans des verrines et laissez refroidir complètement au réfrigérateur.", badge: null },
+      { icone: "🔥", titre: "Sirop", detail: "Préparez un sirop : faites cuire le sucre avec un peu d'eau jusqu'à ce qu'il file (petit boulé, ~118°C).", badge: null },
+      { icone: "🥚", titre: "Meringue", detail: "Montez les blancs en neige ferme, puis versez le sirop chaud en filet en continuant de fouetter jusqu'à une meringue italienne brillante et refroidie.", badge: null },
+      { icone: "🌀", titre: "Pocher la meringue", detail: "À la poche à douille, dressez généreusement la meringue sur la crème caramel bien froide, en formant de jolies volutes.", badge: null },
+      { icone: "🟤", titre: "Finir", detail: "Saupoudrez de cannelle en poudre juste avant de servir. Servez bien frais — le contraste crème dense / meringue aérienne est tout le charme du dessert.", badge: null }
+    ]
+  },
+  cremavolteada: {
+    nom: "Crema Volteada",
+    cat: "desserts", pays: "perou",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🍮",
+    description: "Crema volteada — le flan caramel péruvien : une crème aux œufs et au lait concentré, cuite au bain-marie dans un moule caramélisé puis renversée pour révéler son nappage doré. Fondant, simple et réconfortant.",
+    tableauCremavolteada: [
+      { nb: 1, oeufs: "1", laitconcentre: "60 g", lait: "60 ml", sucre: "25 g", vanille: "2 g" },
+      { nb: 2, oeufs: "2", laitconcentre: "120 g", lait: "120 ml", sucre: "50 g", vanille: "4 g" },
+      { nb: 3, oeufs: "3", laitconcentre: "180 g", lait: "180 ml", sucre: "75 g", vanille: "6 g" },
+      { nb: 4, oeufs: "4", laitconcentre: "240 g", lait: "240 ml", sucre: "100 g", vanille: "8 g" },
+      { nb: 5, oeufs: "5", laitconcentre: "300 g", lait: "300 ml", sucre: "125 g", vanille: "10 g" },
+      { nb: 6, oeufs: "6", laitconcentre: "360 g", lait: "360 ml", sucre: "150 g", vanille: "12 g" },
+      { nb: 7, oeufs: "7", laitconcentre: "420 g", lait: "420 ml", sucre: "175 g", vanille: "14 g" },
+      { nb: 8, oeufs: "8", laitconcentre: "480 g", lait: "480 ml", sucre: "200 g", vanille: "16 g" },
+      { nb: 9, oeufs: "9", laitconcentre: "540 g", lait: "540 ml", sucre: "225 g", vanille: "18 g" },
+      { nb: 10, oeufs: "10", laitconcentre: "600 g", lait: "600 ml", sucre: "250 g", vanille: "20 g" },
+      { nb: 11, oeufs: "11", laitconcentre: "660 g", lait: "660 ml", sucre: "275 g", vanille: "22 g" },
+      { nb: 12, oeufs: "12", laitconcentre: "720 g", lait: "720 ml", sucre: "300 g", vanille: "24 g" },
+      { nb: 13, oeufs: "13", laitconcentre: "780 g", lait: "780 ml", sucre: "325 g", vanille: "26 g" },
+      { nb: 14, oeufs: "14", laitconcentre: "840 g", lait: "840 ml", sucre: "350 g", vanille: "28 g" },
+      { nb: 15, oeufs: "15", laitconcentre: "900 g", lait: "900 ml", sucre: "375 g", vanille: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Le caramel", detail: "Faites fondre le sucre à sec (ou avec un filet d'eau) dans une casserole jusqu'à obtenir un caramel ambré. Versez-le aussitôt au fond du moule et tournez pour bien napper les parois.", badge: null },
+      { icone: "🥣", titre: "L'appareil", detail: "Fouettez les œufs avec le lait concentré, le lait et la vanille jusqu'à un mélange lisse. Ne fouettez pas trop fort pour éviter les bulles d'air.", badge: null },
+      { icone: "🫗", titre: "Filtrer", detail: "Passez l'appareil au tamis pour une texture parfaitement soyeuse, puis versez-le dans le moule caramélisé.", badge: null },
+      { icone: "♨️", titre: "Bain-marie", detail: "Placez le moule dans un plat plus grand et versez de l'eau chaude à mi-hauteur autour du moule.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 160°C environ 45 min : la crème doit être prise mais encore légèrement tremblotante au centre. Une lame en ressort propre.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Laissez tiédir puis réfrigérez plusieurs heures, idéalement une nuit : le flan se raffermit et le caramel se liquéfie.", badge: null },
+      { icone: "🙃", titre: "Démouler", detail: "Passez une lame le long du bord, posez une assiette dessus et retournez d'un geste sûr. Le caramel nappe la crème. Servez bien frais.", badge: null }
+    ]
+  },
 });
