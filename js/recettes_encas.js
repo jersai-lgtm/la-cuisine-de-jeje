@@ -3810,4 +3810,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, brûlants, à picorer avec les doigts par la queue. Le jeu : deviner lequel piquera !", badge: null }
     ]
   },
+  tyropita: {
+    dateAjout: "2026-07-10T08:00:00",
+    nom: "Tyropita",
+    cat: "encas", pays: "grece",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧀",
+    description: "Tyropita — le feuilleté grec au fromage : de fines couches de pâte croustillante enfermant un cœur fondant de feta et de ricotta parfumé à l'aneth. Servi en parts ou en petits triangles, c'est l'en-cas des boulangeries grecques.",
+    tableauTyropita: [
+      { nb: 1, patefeuilletee: "50 g", feta: "40 g", ricotta: "20 g", oeufs: "½", aneth: "3 g", huileolive: "5 ml", sel: "1 g" },
+      { nb: 2, patefeuilletee: "100 g", feta: "80 g", ricotta: "40 g", oeufs: "1", aneth: "6 g", huileolive: "10 ml", sel: "2 g" },
+      { nb: 3, patefeuilletee: "150 g", feta: "120 g", ricotta: "60 g", oeufs: "1½", aneth: "9 g", huileolive: "15 ml", sel: "3 g" },
+      { nb: 4, patefeuilletee: "200 g", feta: "160 g", ricotta: "80 g", oeufs: "2", aneth: "12 g", huileolive: "20 ml", sel: "4 g" },
+      { nb: 5, patefeuilletee: "250 g", feta: "200 g", ricotta: "100 g", oeufs: "2½", aneth: "15 g", huileolive: "25 ml", sel: "5 g" },
+      { nb: 6, patefeuilletee: "300 g", feta: "240 g", ricotta: "120 g", oeufs: "3", aneth: "18 g", huileolive: "30 ml", sel: "6 g" },
+      { nb: 7, patefeuilletee: "350 g", feta: "280 g", ricotta: "140 g", oeufs: "3½", aneth: "21 g", huileolive: "35 ml", sel: "7 g" },
+      { nb: 8, patefeuilletee: "400 g", feta: "320 g", ricotta: "160 g", oeufs: "4", aneth: "24 g", huileolive: "40 ml", sel: "8 g" },
+      { nb: 9, patefeuilletee: "450 g", feta: "360 g", ricotta: "180 g", oeufs: "4½", aneth: "27 g", huileolive: "45 ml", sel: "9 g" },
+      { nb: 10, patefeuilletee: "500 g", feta: "400 g", ricotta: "200 g", oeufs: "5", aneth: "30 g", huileolive: "50 ml", sel: "10 g" },
+      { nb: 11, patefeuilletee: "550 g", feta: "440 g", ricotta: "220 g", oeufs: "5½", aneth: "33 g", huileolive: "55 ml", sel: "11 g" },
+      { nb: 12, patefeuilletee: "600 g", feta: "480 g", ricotta: "240 g", oeufs: "6", aneth: "36 g", huileolive: "60 ml", sel: "12 g" },
+      { nb: 13, patefeuilletee: "650 g", feta: "520 g", ricotta: "260 g", oeufs: "6½", aneth: "39 g", huileolive: "65 ml", sel: "13 g" },
+      { nb: 14, patefeuilletee: "700 g", feta: "560 g", ricotta: "280 g", oeufs: "7", aneth: "42 g", huileolive: "70 ml", sel: "14 g" },
+      { nb: 15, patefeuilletee: "750 g", feta: "600 g", ricotta: "300 g", oeufs: "7½", aneth: "45 g", huileolive: "75 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧀", titre: "La garniture", detail: "Écrasez la feta à la fourchette et mélangez-la avec la ricotta, l'œuf battu et l'aneth ciselé. Poivrez (peu de sel, la feta est salée).", badge: null },
+      { icone: "🫓", titre: "La pâte", detail: "Étalez la pâte à filo (ou feuilletée) et badigeonnez chaque feuille d'huile d'olive : c'est ce qui donne le croustillant en couches.", badge: null },
+      { icone: "🥧", titre: "Monter", detail: "Superposez quelques feuilles huilées dans un petit moule, garnissez de fromage, puis recouvrez d'autres feuilles huilées.", badge: null },
+      { icone: "🔪", titre: "Marquer", detail: "Marquez le dessus en parts ou en triangles au couteau, sans aller jusqu'au fond, pour faciliter la découpe après cuisson.", badge: null },
+      { icone: "🎨", titre: "Dorer", detail: "Badigeonnez le dessus d'huile d'olive (ou d'œuf) et parsemez éventuellement de graines de sésame.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C 25 à 30 min, jusqu'à ce que la tyropita soit dorée et bien croustillante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir légèrement puis coupez. Se déguste tiède, en en-cas ou en entrée, souvent au petit-déjeuner en Grèce.", badge: null }
+    ]
+  },
+  dolmadakia: {
+    dateAjout: "2026-07-10T08:01:00",
+    nom: "Dolmadakia",
+    cat: "encas", pays: "grece",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍃",
+    description: "Dolmadakia — les feuilles de vigne farcies grecques : de petits rouleaux de feuilles de vigne garnis de riz, d'herbes fraîches et de pignons, mijotés au citron et à l'huile d'olive. Servis froids, acidulés et parfumés, l'incontournable des mezze.",
+    tableauDolmadakia: [
+      { nb: 1, riz: "40 g", feuillevigne: "30 g", oignon: "½", aneth: "4 g", menthe: "3 g", citron: "½", huileolive: "10 ml", pignons: "6 g", sel: "2 g" },
+      { nb: 2, riz: "80 g", feuillevigne: "60 g", oignon: "1", aneth: "8 g", menthe: "6 g", citron: "1", huileolive: "20 ml", pignons: "12 g", sel: "4 g" },
+      { nb: 3, riz: "120 g", feuillevigne: "90 g", oignon: "1½", aneth: "12 g", menthe: "9 g", citron: "1½", huileolive: "30 ml", pignons: "18 g", sel: "6 g" },
+      { nb: 4, riz: "160 g", feuillevigne: "120 g", oignon: "2", aneth: "16 g", menthe: "12 g", citron: "2", huileolive: "40 ml", pignons: "24 g", sel: "8 g" },
+      { nb: 5, riz: "200 g", feuillevigne: "150 g", oignon: "2½", aneth: "20 g", menthe: "15 g", citron: "2½", huileolive: "50 ml", pignons: "30 g", sel: "10 g" },
+      { nb: 6, riz: "240 g", feuillevigne: "180 g", oignon: "3", aneth: "24 g", menthe: "18 g", citron: "3", huileolive: "60 ml", pignons: "36 g", sel: "12 g" },
+      { nb: 7, riz: "280 g", feuillevigne: "210 g", oignon: "3½", aneth: "28 g", menthe: "21 g", citron: "3½", huileolive: "70 ml", pignons: "42 g", sel: "14 g" },
+      { nb: 8, riz: "320 g", feuillevigne: "240 g", oignon: "4", aneth: "32 g", menthe: "24 g", citron: "4", huileolive: "80 ml", pignons: "48 g", sel: "16 g" },
+      { nb: 9, riz: "360 g", feuillevigne: "270 g", oignon: "4½", aneth: "36 g", menthe: "27 g", citron: "4½", huileolive: "90 ml", pignons: "54 g", sel: "18 g" },
+      { nb: 10, riz: "400 g", feuillevigne: "300 g", oignon: "5", aneth: "40 g", menthe: "30 g", citron: "5", huileolive: "100 ml", pignons: "60 g", sel: "20 g" },
+      { nb: 11, riz: "440 g", feuillevigne: "330 g", oignon: "5½", aneth: "44 g", menthe: "33 g", citron: "5½", huileolive: "110 ml", pignons: "66 g", sel: "22 g" },
+      { nb: 12, riz: "480 g", feuillevigne: "360 g", oignon: "6", aneth: "48 g", menthe: "36 g", citron: "6", huileolive: "120 ml", pignons: "72 g", sel: "24 g" },
+      { nb: 13, riz: "520 g", feuillevigne: "390 g", oignon: "6½", aneth: "52 g", menthe: "39 g", citron: "6½", huileolive: "130 ml", pignons: "78 g", sel: "26 g" },
+      { nb: 14, riz: "560 g", feuillevigne: "420 g", oignon: "7", aneth: "56 g", menthe: "42 g", citron: "7", huileolive: "140 ml", pignons: "84 g", sel: "28 g" },
+      { nb: 15, riz: "600 g", feuillevigne: "450 g", oignon: "7½", aneth: "60 g", menthe: "45 g", citron: "7½", huileolive: "150 ml", pignons: "90 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍃", titre: "Préparer les feuilles", detail: "Blanchissez les feuilles de vigne 2 min (fraîches) ou rincez-les (en saumure) pour les dessaler. Étalez-les à plat, face nervurée vers le haut.", badge: null },
+      { icone: "🍚", titre: "La farce", detail: "Faites revenir l'oignon émincé, ajoutez le riz, les pignons, l'aneth et la menthe, un filet de citron et un peu d'eau. Cuisez 5 min : le riz est mi-cuit.", badge: null },
+      { icone: "🌯", titre: "Farcir", detail: "Déposez une cuillère de farce à la base de chaque feuille, repliez les côtés et roulez serré en petit cigare.", badge: null },
+      { icone: "🍲", titre: "Ranger", detail: "Tapissez le fond d'une casserole de quelques feuilles, puis rangez les dolmadakia serrés, en couches, ouverture vers le bas.", badge: null },
+      { icone: "🍋", titre: "Mouiller", detail: "Arrosez d'huile d'olive, de jus de citron et d'eau à hauteur. Posez une assiette dessus pour les maintenir.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Couvrez et laissez cuire à feu doux 40 min, jusqu'à ce que le riz soit tendre et le liquide absorbé.", badge: null },
+      { icone: "❄️", titre: "Servir froid", detail: "Laissez refroidir dans la casserole. Servez froids ou tièdes, arrosés de citron, avec du yaourt. Meilleurs le lendemain.", badge: null }
+    ]
+  },
 });

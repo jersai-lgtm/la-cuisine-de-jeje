@@ -1426,4 +1426,41 @@ Object.assign(recettes, {
       { icone: "🍓", titre: "Garnir", detail: "Garnir de crème ou de confiture à la poche, rouler dans le sucre et saupoudrer de sucre glace.", badge: null }
     ]
   },
+  simit: {
+    dateAjout: "2026-07-10T08:06:00",
+    nom: "Simit",
+    cat: "boulangerie", pays: "turquie",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥨",
+    description: "Simit — l'anneau de pain turc au sésame : une couronne de pain torsadée, trempée dans une eau de mélasse puis roulée dans une pluie de graines de sésame, cuite dorée et croustillante. Le petit-déjeuner de rue d'Istanbul, vendu à chaque coin de rue.",
+    tableauSimit: [
+      { nb: 1, farine: "55 g", levure: "2 g", sucre: "3 g", miel: "6 g", sesame: "15 g", sel: "2 g" },
+      { nb: 2, farine: "110 g", levure: "4 g", sucre: "6 g", miel: "12 g", sesame: "30 g", sel: "4 g" },
+      { nb: 3, farine: "165 g", levure: "6 g", sucre: "9 g", miel: "18 g", sesame: "45 g", sel: "6 g" },
+      { nb: 4, farine: "220 g", levure: "8 g", sucre: "12 g", miel: "24 g", sesame: "60 g", sel: "8 g" },
+      { nb: 5, farine: "275 g", levure: "10 g", sucre: "15 g", miel: "30 g", sesame: "75 g", sel: "10 g" },
+      { nb: 6, farine: "330 g", levure: "12 g", sucre: "18 g", miel: "36 g", sesame: "90 g", sel: "12 g" },
+      { nb: 7, farine: "385 g", levure: "14 g", sucre: "21 g", miel: "42 g", sesame: "105 g", sel: "14 g" },
+      { nb: 8, farine: "440 g", levure: "16 g", sucre: "24 g", miel: "48 g", sesame: "120 g", sel: "16 g" },
+      { nb: 9, farine: "495 g", levure: "18 g", sucre: "27 g", miel: "54 g", sesame: "135 g", sel: "18 g" },
+      { nb: 10, farine: "550 g", levure: "20 g", sucre: "30 g", miel: "60 g", sesame: "150 g", sel: "20 g" },
+      { nb: 11, farine: "605 g", levure: "22 g", sucre: "33 g", miel: "66 g", sesame: "165 g", sel: "22 g" },
+      { nb: 12, farine: "660 g", levure: "24 g", sucre: "36 g", miel: "72 g", sesame: "180 g", sel: "24 g" },
+      { nb: 13, farine: "715 g", levure: "26 g", sucre: "39 g", miel: "78 g", sesame: "195 g", sel: "26 g" },
+      { nb: 14, farine: "770 g", levure: "28 g", sucre: "42 g", miel: "84 g", sesame: "210 g", sel: "28 g" },
+      { nb: 15, farine: "825 g", levure: "30 g", sucre: "45 g", miel: "90 g", sesame: "225 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Le levain", detail: "Délayez la levure dans un peu d'eau tiède avec le sucre. Laissez mousser 10 min.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, le sel et le levain avec assez d'eau pour former une pâte souple. Pétrissez 8 min jusqu'à ce qu'elle soit lisse, puis laissez lever 1 h.", badge: null },
+      { icone: "🔗", titre: "Torsader", detail: "Divisez la pâte, roulez chaque part en un long boudin fin, pliez-le en deux et torsadez les deux brins, puis joignez les extrémités pour former un anneau.", badge: null },
+      { icone: "🍯", titre: "L'eau de mélasse", detail: "Préparez un mélange d'eau et de mélasse (pekmez, à défaut du miel dilué) : c'est lui qui donne la couleur et le goût caractéristiques.", badge: null },
+      { icone: "💧", titre: "Tremper", detail: "Trempez chaque anneau dans l'eau de mélasse, puis pressez-le fermement dans une assiette de graines de sésame pour bien l'enrober des deux côtés.", badge: null },
+      { icone: "⏳", titre: "2e pousse", detail: "Déposez les simit sur une plaque et laissez-les lever encore 20 à 30 min.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 200°C 18 à 20 min, jusqu'à ce que les simit soient dorés, croustillants dehors et moelleux dedans. Se dégustent tièdes, nature ou avec du fromage.", badge: null }
+    ]
+  },
 });

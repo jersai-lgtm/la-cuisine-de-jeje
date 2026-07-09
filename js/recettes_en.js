@@ -59538,5 +59538,345 @@ window.RECETTES_EN = {
     "detail": "Bake at 180°C for 15 to 18 minutes, until golden. Let cool slightly and dust generously with icing sugar before serving."
    }
   ]
+ },
+ "tyropita": {
+  "nom": "Tyropita",
+  "description": "Tyropita — the Greek cheese pie: thin layers of crisp pastry enclosing a melting centre of feta and ricotta scented with dill. Served in slices or little triangles, it's the snack of Greek bakeries.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Mash the feta with a fork and mix with the ricotta, beaten egg and chopped dill. Pepper (little salt, the feta is salty)."
+   },
+   {
+    "titre": "The pastry",
+    "detail": "Roll out the filo (or puff) pastry and brush each sheet with olive oil: this gives the layered crispness."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Layer a few oiled sheets in a small tin, fill with cheese, then cover with more oiled sheets."
+   },
+   {
+    "titre": "Score",
+    "detail": "Mark the top into slices or triangles with a knife, without going to the bottom, to make cutting easier after baking."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush the top with olive oil (or egg) and optionally scatter with sesame seeds."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 25 to 30 minutes, until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool slightly then cut. Enjoyed warm, as a snack or starter, often at breakfast in Greece."
+   }
+  ]
+ },
+ "dolmadakia": {
+  "nom": "Dolmadakia",
+  "description": "Dolmadakia — Greek stuffed vine leaves: little rolls of vine leaves filled with rice, fresh herbs and pine nuts, simmered in lemon and olive oil. Served cold, tangy and fragrant, a mezze essential.",
+  "etapes": [
+   {
+    "titre": "Prepare the leaves",
+    "detail": "Blanch the vine leaves 2 minutes (fresh) or rinse them (brined) to desalt. Lay them flat, veined side up."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Sauté the sliced onion, add the rice, pine nuts, dill and mint, a squeeze of lemon and a little water. Cook 5 minutes: the rice is half-cooked."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a spoonful of filling at the base of each leaf, fold in the sides and roll tightly into a small cigar."
+   },
+   {
+    "titre": "Arrange",
+    "detail": "Line the bottom of a pot with a few leaves, then pack the dolmadakia tightly, in layers, seam down."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Drizzle with olive oil, lemon juice and water to the level. Place a plate on top to hold them."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and cook over low heat for 40 minutes, until the rice is tender and the liquid absorbed."
+   },
+   {
+    "titre": "Serve cold",
+    "detail": "Let cool in the pot. Serve cold or warm, drizzled with lemon, with yogurt. Best the next day."
+   }
+  ]
+ },
+ "sataras": {
+  "nom": "Sataraš",
+  "description": "Sataraš — the Balkan pepper sauté: a soft stew of peppers, tomatoes and onions bound with scrambled egg and spiced with paprika. Cousin of lecsó and pipérade, served as a vegetarian dish or a side.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Soften the sliced onion in the oil until tender and translucent."
+   },
+   {
+    "titre": "The peppers",
+    "detail": "Add the sliced peppers (red and yellow) and stew them for 10 minutes over medium heat, stirring."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "Add the paprika (sweet with a touch of hot) and mix: it colours and flavours the sauté."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Add the crushed tomatoes, season, and simmer 12 minutes until the vegetables are very soft."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Crack the egg into the sauté and stir gently to scramble it through the vegetables (optional, but typical of homemade sataraš)."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust the salt and paprika. The sauté should be soft, glossy and nicely orange."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with bread or alongside grilled meat (ćevapi, pljeskavica). A generous summer dish."
+   }
+  ]
+ },
+ "musaka2": {
+  "nom": "Balkan Musaka",
+  "description": "Balkan musaka — the potato version: layers of potato and spiced minced beef, topped with a yogurt-and-egg custard, baked golden. More rustic than Greek moussaka, without eggplant or béchamel.",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Peel and slice the potatoes thinly. Par-cook them 5 minutes in boiling salted water, then drain."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Sauté the sliced onion, add the minced beef and brown it. Add the paprika, crushed tomato, salt and simmer 10 minutes."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "In an oiled dish, alternate layers of potato slices and meat, finishing with potatoes. Salt between the layers."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Beat the egg with the yogurt and a little salt: the creamy binder that replaces the béchamel."
+   },
+   {
+    "titre": "Top",
+    "detail": "Pour the yogurt custard over the top of the dish, letting it seep between the layers."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 190°C for 30 to 35 minutes, until the top is golden and set and the potatoes tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest 10 minutes before cutting into portions. Serve hot, with a salad and yogurt. A rustic, comforting bake."
+   }
+  ]
+ },
+ "gulyas": {
+  "nom": "Gulyás",
+  "description": "Gulyás — the true Hungarian goulash: halfway between soup and stew, beef slowly simmered with lots of paprika, potatoes and vegetables. A herdsmen's dish (gulyás = cowherd), comforting, born on the puszta.",
+  "etapes": [
+   {
+    "titre": "The onions",
+    "detail": "Slowly soften the sliced onions in a little fat, until well golden: the base of gulyás."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "Off the heat (so it doesn't burn), add a good dose of sweet paprika and mix: it colours and flavours the whole dish."
+   },
+   {
+    "titre": "Sear the beef",
+    "detail": "Add the cubed beef and sauté to coat it in paprika and lightly colour it."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in the stock, add the tomato and a little caraway, season, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer over low heat for 1 hour 30, until the meat is very tender. Add water if needed."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the potatoes, carrot and pepper in chunks, and continue for 25 minutes until tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, in a bowl, with fresh bread. Gulyás is more liquid than a stew — a hearty soup-dish."
+   }
+  ]
+ },
+ "koldunai": {
+  "nom": "Koldūnai",
+  "description": "Koldūnai — Lithuanian dumplings: thin half-moons of dough filled with spiced minced meat, poached then served with melted butter and golden onions. The Baltic cousins of pelmeni, comforting and generous.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, egg, a pinch of salt and a little warm water into a soft dough. Knead 8 minutes, then rest 30 minutes under a cloth."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the minced beef (or a beef-pork mix) with half the very finely chopped onion, salt, pepper and a touch of marjoram."
+   },
+   {
+    "titre": "Roll & cut",
+    "detail": "Roll the dough out thinly and cut discs with a cutter."
+   },
+   {
+    "titre": "Fill & seal",
+    "detail": "Place a knob of filling in the centre of each disc, fold into a half-moon and pinch the edges firmly to seal well."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Drop the koldūnai into boiling salted water and cook 5 to 6 minutes: they rise to the surface when done."
+   },
+   {
+    "titre": "Golden onions",
+    "detail": "Meanwhile, brown the rest of the onions in the butter until well caramelised."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain the koldūnai, top with butter and golden onions, and serve with a spoon of sour cream. Baltic comfort guaranteed."
+   }
+  ]
+ },
+ "simit": {
+  "nom": "Simit",
+  "description": "Simit — the Turkish sesame bread ring: a twisted crown of bread, dipped in molasses water then rolled in a shower of sesame seeds, baked golden and crisp. The street breakfast of Istanbul, sold on every corner.",
+  "etapes": [
+   {
+    "titre": "The starter",
+    "detail": "Dissolve the yeast in a little warm water with the sugar. Let it froth 10 minutes."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, salt and starter with enough water to form a soft dough. Knead 8 minutes until smooth, then let rise 1 hour."
+   },
+   {
+    "titre": "Twist",
+    "detail": "Divide the dough, roll each part into a long thin rope, fold it in half and twist the two strands, then join the ends to form a ring."
+   },
+   {
+    "titre": "The molasses water",
+    "detail": "Prepare a mix of water and molasses (pekmez, or diluted honey): it gives the characteristic colour and taste."
+   },
+   {
+    "titre": "Dip",
+    "detail": "Dip each ring into the molasses water, then press it firmly into a plate of sesame seeds to coat both sides well."
+   },
+   {
+    "titre": "2nd rise",
+    "detail": "Place the simit on a tray and let them rise another 20 to 30 minutes."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for 18 to 20 minutes, until golden, crisp outside and soft inside. Enjoyed warm, plain or with cheese."
+   }
+  ]
+ },
+ "tarator": {
+  "nom": "Tarator",
+  "description": "Tarator — the Bulgarian cold soup: a chilled velouté of yogurt and cucumber, brightened with garlic, dill and crushed walnuts. Refreshing and tangy, enjoyed ice-cold on heatwave days, between soup and drink.",
+  "etapes": [
+   {
+    "titre": "The cucumber",
+    "detail": "Peel and grate (or finely dice) the cucumber. It brings the freshness and crunch."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Crush the garlic to a paste with a little salt: it should flavour without dominating."
+   },
+   {
+    "titre": "The yogurt",
+    "detail": "Whisk the (plain, Bulgarian-style) yogurt with a little cold water to a smooth, pourable velouté."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir in the cucumber, garlic, chopped dill, olive oil and crushed walnuts. Season."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust the water (thinner for a drink, thicker for a spoonable soup) and salt."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate at least 1 hour: tarator is enjoyed very cold, almost icy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, scattered with dill and walnuts, with a drizzle of olive oil. Perfect as a starter in the heat."
+   }
+  ]
+ },
+ "melomakarona": {
+  "nom": "Melomakarona",
+  "description": "Melomakarona — Greek Christmas honey cookies: tender olive-oil and orange biscuits, soaked in honey syrup then sprinkled with crushed walnuts. Scented with cinnamon and clove, the smell of Christmas in Greece.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the olive oil, orange juice and zest, a little sugar, cinnamon and ground clove. Work in the flour into a soft, non-sticky dough."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form small ovals (like flattened large eggs) and place them on a tray, marking them lightly with a fork."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 20 to 25 minutes, until golden and firm."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Meanwhile, boil the honey with a little water and sugar for 5 minutes, into a fragrant syrup. Keep it warm."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Straight out of the oven, dip the HOT biscuits into the HOT syrup for 30 seconds to 1 minute, turning: they soak through."
+   },
+   {
+    "titre": "The walnuts",
+    "detail": "Lift them out, let drain, and immediately sprinkle with crushed walnuts and a pinch of cinnamon while sticky."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest several hours: they turn soft and fragrant. They keep for a week and improve. The essential of Greek Christmas."
+   }
+  ]
+ },
+ "bougatsa": {
+  "nom": "Bougatsa",
+  "description": "Bougatsa — the Greek custard pastry: thin layers of crisp pastry enclosing a vanilla semolina custard, dusted with icing sugar and cinnamon. Served warm at breakfast in Thessaloniki, cut with a knife in front of you.",
+  "etapes": [
+   {
+    "titre": "The custard",
+    "detail": "Bring the milk to a simmer with half the sugar. Rain in the semolina while whisking, and cook 3 minutes until the custard thickens."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Off the heat, whisk in the beaten egg with the rest of the sugar and the vanilla, beating briskly. Let the custard cool."
+   },
+   {
+    "titre": "The pastry",
+    "detail": "Roll out the filo (or puff) pastry and brush each sheet with melted butter or oil: the secret of the layering."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Lay buttered sheets in a dish, spread the semolina custard, then fold and cover with more buttered sheets."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 25 to 30 minutes, until golden and very crisp."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Let cool slightly, then cut into squares (traditionally with a knife, into small pieces)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dust generously with icing sugar and cinnamon, and serve warm. The sweet breakfast of Thessaloniki."
+   }
+  ]
  }
 };

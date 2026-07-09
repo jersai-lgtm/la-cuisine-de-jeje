@@ -6567,4 +6567,78 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire & sucrer", detail: "Enfournez à 180°C 15 à 18 min, jusqu'à ce qu'elle soit dorée. Laissez tiédir et saupoudrez généreusement de sucre glace avant de servir.", badge: null }
     ]
   },
+  melomakarona: {
+    dateAjout: "2026-07-10T08:08:00",
+    nom: "Melomakarona",
+    cat: "desserts", pays: "grece",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍯",
+    description: "Melomakarona — les gâteaux grecs de Noël au miel : de tendres biscuits à l'huile d'olive et à l'orange, imbibés de sirop au miel puis parsemés de noix concassées. Parfumés à la cannelle et au clou de girofle, l'odeur de Noël en Grèce.",
+    tableauMelomakarona: [
+      { nb: 1, farine: "40 g", huileolive: "15 ml", orange: "¼", miel: "20 g", noix: "10 g", cannelle: "1 g", sucre: "8 g", girofle: "0.2 g" },
+      { nb: 2, farine: "80 g", huileolive: "30 ml", orange: "½", miel: "40 g", noix: "20 g", cannelle: "2 g", sucre: "16 g", girofle: "0.4 g" },
+      { nb: 3, farine: "120 g", huileolive: "45 ml", orange: "¾", miel: "60 g", noix: "30 g", cannelle: "3 g", sucre: "24 g", girofle: "0.6 g" },
+      { nb: 4, farine: "160 g", huileolive: "60 ml", orange: "1", miel: "80 g", noix: "40 g", cannelle: "4 g", sucre: "32 g", girofle: "0.8 g" },
+      { nb: 5, farine: "200 g", huileolive: "75 ml", orange: "1¼", miel: "100 g", noix: "50 g", cannelle: "5 g", sucre: "40 g", girofle: "1 g" },
+      { nb: 6, farine: "240 g", huileolive: "90 ml", orange: "1½", miel: "120 g", noix: "60 g", cannelle: "6 g", sucre: "48 g", girofle: "1.2 g" },
+      { nb: 7, farine: "280 g", huileolive: "105 ml", orange: "1¾", miel: "140 g", noix: "70 g", cannelle: "7 g", sucre: "56 g", girofle: "1.4 g" },
+      { nb: 8, farine: "320 g", huileolive: "120 ml", orange: "2", miel: "160 g", noix: "80 g", cannelle: "8 g", sucre: "64 g", girofle: "1.6 g" },
+      { nb: 9, farine: "360 g", huileolive: "135 ml", orange: "2¼", miel: "180 g", noix: "90 g", cannelle: "9 g", sucre: "72 g", girofle: "1.8 g" },
+      { nb: 10, farine: "400 g", huileolive: "150 ml", orange: "2½", miel: "200 g", noix: "100 g", cannelle: "10 g", sucre: "80 g", girofle: "2 g" },
+      { nb: 11, farine: "440 g", huileolive: "165 ml", orange: "2¾", miel: "220 g", noix: "110 g", cannelle: "11 g", sucre: "88 g", girofle: "2.2 g" },
+      { nb: 12, farine: "480 g", huileolive: "180 ml", orange: "3", miel: "240 g", noix: "120 g", cannelle: "12 g", sucre: "96 g", girofle: "2.4 g" },
+      { nb: 13, farine: "520 g", huileolive: "195 ml", orange: "3¼", miel: "260 g", noix: "130 g", cannelle: "13 g", sucre: "104 g", girofle: "2.6 g" },
+      { nb: 14, farine: "560 g", huileolive: "210 ml", orange: "3½", miel: "280 g", noix: "140 g", cannelle: "14 g", sucre: "112 g", girofle: "2.8 g" },
+      { nb: 15, farine: "600 g", huileolive: "225 ml", orange: "3¾", miel: "300 g", noix: "150 g", cannelle: "15 g", sucre: "120 g", girofle: "3 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍊", titre: "La pâte", detail: "Mélangez l'huile d'olive, le jus et le zeste d'orange, un peu de sucre, la cannelle et le clou de girofle moulu. Incorporez la farine pour obtenir une pâte souple et non collante.", badge: null },
+      { icone: "🥚", titre: "Former", detail: "Façonnez de petits ovales (comme de gros œufs aplatis) et déposez-les sur une plaque, en les marquant légèrement à la fourchette.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C 20 à 25 min, jusqu'à ce que les melomakarona soient dorés et fermes.", badge: null },
+      { icone: "🍯", titre: "Le sirop", detail: "Pendant ce temps, faites bouillir le miel avec un peu d'eau et de sucre 5 min, jusqu'à obtenir un sirop parfumé. Gardez-le chaud.", badge: null },
+      { icone: "💧", titre: "Imbiber", detail: "Dès la sortie du four, plongez les biscuits CHAUDS dans le sirop CHAUD 30 s à 1 min, en les retournant : ils s'imbibent à cœur.", badge: null },
+      { icone: "🌰", titre: "Les noix", detail: "Sortez-les, laissez égoutter, et parsemez aussitôt de noix concassées et d'une pincée de cannelle pendant qu'ils sont collants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez reposer plusieurs heures : ils deviennent moelleux et parfumés. Se conservent une semaine et se bonifient. L'incontournable de Noël grec.", badge: null }
+    ]
+  },
+  bougatsa: {
+    dateAjout: "2026-07-10T08:09:00",
+    nom: "Bougatsa",
+    cat: "desserts", pays: "grece",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥧",
+    description: "Bougatsa — le feuilleté grec à la crème : de fines couches de pâte croustillante enfermant une crème de semoule vanillée, saupoudrée de sucre glace et de cannelle. Servi tiède au petit-déjeuner à Thessalonique, découpé au couteau devant vous.",
+    tableauBougatsa: [
+      { nb: 1, patefeuilletee: "50 g", semoule: "20 g", lait: "100 ml", oeufs: "½", sucre: "20 g", sucreglace: "4 g", cannelle: "0.5 g" },
+      { nb: 2, patefeuilletee: "100 g", semoule: "40 g", lait: "200 ml", oeufs: "1", sucre: "40 g", sucreglace: "8 g", cannelle: "1 g" },
+      { nb: 3, patefeuilletee: "150 g", semoule: "60 g", lait: "300 ml", oeufs: "1½", sucre: "60 g", sucreglace: "12 g", cannelle: "1.5 g" },
+      { nb: 4, patefeuilletee: "200 g", semoule: "80 g", lait: "400 ml", oeufs: "2", sucre: "80 g", sucreglace: "16 g", cannelle: "2 g" },
+      { nb: 5, patefeuilletee: "250 g", semoule: "100 g", lait: "500 ml", oeufs: "2½", sucre: "100 g", sucreglace: "20 g", cannelle: "2.5 g" },
+      { nb: 6, patefeuilletee: "300 g", semoule: "120 g", lait: "600 ml", oeufs: "3", sucre: "120 g", sucreglace: "24 g", cannelle: "3 g" },
+      { nb: 7, patefeuilletee: "350 g", semoule: "140 g", lait: "700 ml", oeufs: "3½", sucre: "140 g", sucreglace: "28 g", cannelle: "3.5 g" },
+      { nb: 8, patefeuilletee: "400 g", semoule: "160 g", lait: "800 ml", oeufs: "4", sucre: "160 g", sucreglace: "32 g", cannelle: "4 g" },
+      { nb: 9, patefeuilletee: "450 g", semoule: "180 g", lait: "900 ml", oeufs: "4½", sucre: "180 g", sucreglace: "36 g", cannelle: "4.5 g" },
+      { nb: 10, patefeuilletee: "500 g", semoule: "200 g", lait: "1000 ml", oeufs: "5", sucre: "200 g", sucreglace: "40 g", cannelle: "5 g" },
+      { nb: 11, patefeuilletee: "550 g", semoule: "220 g", lait: "1100 ml", oeufs: "5½", sucre: "220 g", sucreglace: "44 g", cannelle: "5.5 g" },
+      { nb: 12, patefeuilletee: "600 g", semoule: "240 g", lait: "1200 ml", oeufs: "6", sucre: "240 g", sucreglace: "48 g", cannelle: "6 g" },
+      { nb: 13, patefeuilletee: "650 g", semoule: "260 g", lait: "1300 ml", oeufs: "6½", sucre: "260 g", sucreglace: "52 g", cannelle: "6.5 g" },
+      { nb: 14, patefeuilletee: "700 g", semoule: "280 g", lait: "1400 ml", oeufs: "7", sucre: "280 g", sucreglace: "56 g", cannelle: "7 g" },
+      { nb: 15, patefeuilletee: "750 g", semoule: "300 g", lait: "1500 ml", oeufs: "7½", sucre: "300 g", sucreglace: "60 g", cannelle: "7.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "La crème", detail: "Portez le lait à frémissement avec la moitié du sucre. Versez la semoule en pluie en fouettant, et cuisez 3 min jusqu'à ce que la crème épaississe.", badge: null },
+      { icone: "🥚", titre: "Lier", detail: "Hors du feu, incorporez l'œuf battu avec le reste du sucre et la vanille, en fouettant vivement. Laissez tiédir la crème.", badge: null },
+      { icone: "🫓", titre: "La pâte", detail: "Étalez la pâte à filo (ou feuilletée) et badigeonnez chaque feuille de beurre fondu ou d'huile : c'est le secret du feuilletage.", badge: null },
+      { icone: "🥧", titre: "Monter", detail: "Disposez des feuilles beurrées dans un plat, étalez la crème de semoule, puis repliez et recouvrez d'autres feuilles beurrées.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C 25 à 30 min, jusqu'à ce que la bougatsa soit dorée et très croustillante.", badge: null },
+      { icone: "🔪", titre: "Découper", detail: "Laissez tiédir légèrement, puis découpez en carrés (traditionnellement au couteau, en petits morceaux).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Saupoudrez généreusement de sucre glace et de cannelle, et servez tiède. Le petit-déjeuner sucré de Thessalonique.", badge: null }
+    ]
+  },
 });

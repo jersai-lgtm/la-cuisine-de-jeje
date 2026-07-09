@@ -3441,4 +3441,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, bien chaud, avec un supplément de parmesan. Une soupe express, réconfortante et légère.", badge: null }
     ]
   },
+  tarator: {
+    dateAjout: "2026-07-10T08:07:00",
+    nom: "Tarator",
+    cat: "soupes", pays: "bulgarie",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥒",
+    description: "Tarator — la soupe froide bulgare : un velouté glacé de yaourt et de concombre, relevé d'ail, d'aneth et de noix concassées. Rafraîchissante et acidulée, elle se déguste bien fraîche les jours de canicule, entre soupe et boisson.",
+    tableauTarator: [
+      { nb: 1, yaourt: "120 ml", concombre: "80 g", ail: "1", aneth: "4 g", noix: "8 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, yaourt: "240 ml", concombre: "160 g", ail: "2", aneth: "8 g", noix: "16 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, yaourt: "360 ml", concombre: "240 g", ail: "3", aneth: "12 g", noix: "24 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, yaourt: "480 ml", concombre: "320 g", ail: "4", aneth: "16 g", noix: "32 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, yaourt: "600 ml", concombre: "400 g", ail: "5", aneth: "20 g", noix: "40 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, yaourt: "720 ml", concombre: "480 g", ail: "6", aneth: "24 g", noix: "48 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, yaourt: "840 ml", concombre: "560 g", ail: "7", aneth: "28 g", noix: "56 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, yaourt: "960 ml", concombre: "640 g", ail: "8", aneth: "32 g", noix: "64 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, yaourt: "1080 ml", concombre: "720 g", ail: "9", aneth: "36 g", noix: "72 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, yaourt: "1200 ml", concombre: "800 g", ail: "10", aneth: "40 g", noix: "80 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, yaourt: "1320 ml", concombre: "880 g", ail: "11", aneth: "44 g", noix: "88 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, yaourt: "1440 ml", concombre: "960 g", ail: "12", aneth: "48 g", noix: "96 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, yaourt: "1560 ml", concombre: "1040 g", ail: "13", aneth: "52 g", noix: "104 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, yaourt: "1680 ml", concombre: "1120 g", ail: "14", aneth: "56 g", noix: "112 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, yaourt: "1800 ml", concombre: "1200 g", ail: "15", aneth: "60 g", noix: "120 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥒", titre: "Le concombre", detail: "Épluchez et râpez (ou coupez en tout petits dés) le concombre. C'est lui qui apporte la fraîcheur et le croquant.", badge: null },
+      { icone: "🧄", titre: "L'ail", detail: "Écrasez l'ail en purée avec un peu de sel : il doit parfumer sans dominer.", badge: null },
+      { icone: "🥛", titre: "Le yaourt", detail: "Fouettez le yaourt (nature, à la bulgare) avec un peu d'eau froide pour obtenir la consistance d'un velouté fluide.", badge: null },
+      { icone: "🌿", titre: "Mélanger", detail: "Incorporez le concombre, l'ail, l'aneth ciselé, l'huile d'olive et les noix concassées. Salez.", badge: null },
+      { icone: "👅", titre: "Ajuster", detail: "Goûtez et ajustez l'eau (plus liquide pour une boisson, plus épais pour une soupe à la cuillère) et le sel.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Réservez au moins 1 h au réfrigérateur : le tarator se déguste très froid, presque glacé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien frais, parsemé d'aneth et de noix, avec un filet d'huile d'olive. Parfait en entrée par forte chaleur.", badge: null }
+    ]
+  },
 });
