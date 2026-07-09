@@ -2344,6 +2344,7 @@ Object.assign(recettes, {
     ]
   },
   patatebowl: {
+    dateAjout: "2026-07-09T09:00:00",
     nom: "Patate Bowl",
     cat: "healthy", pays: "monde",
     base: 4,

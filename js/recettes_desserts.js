@@ -5679,6 +5679,7 @@ Object.assign(recettes, {
     ]
   },
   farofias: {
+    dateAjout: "2026-07-09T10:01:00",
     liees: ["arrozDoce"],
     nom: "Farófias",
     cat: "desserts", pays: "portugal",
@@ -5716,6 +5717,7 @@ Object.assign(recettes, {
     ]
   },
   queijadassintra: {
+    dateAjout: "2026-07-09T10:03:00",
     nom: "Queijadas de Sintra",
     cat: "desserts", pays: "portugal",
     base: 4,
@@ -5752,6 +5754,7 @@ Object.assign(recettes, {
     ]
   },
   paodemel: {
+    dateAjout: "2026-07-09T11:02:00",
     nom: "Pão de Mel",
     cat: "desserts", pays: "bresil",
     base: 4,
@@ -5788,6 +5791,7 @@ Object.assign(recettes, {
     ]
   },
   beijinho: {
+    dateAjout: "2026-07-09T11:03:00",
     nom: "Beijinho",
     cat: "desserts", pays: "bresil",
     base: 4,
@@ -5824,6 +5828,7 @@ Object.assign(recettes, {
     ]
   },
   suspirolimena: {
+    dateAjout: "2026-07-09T12:02:00",
     nom: "Suspiro a la Limeña",
     cat: "desserts", pays: "perou",
     base: 4,
@@ -5860,6 +5865,7 @@ Object.assign(recettes, {
     ]
   },
   cremavolteada: {
+    dateAjout: "2026-07-09T12:03:00",
     nom: "Crema Volteada",
     cat: "desserts", pays: "perou",
     base: 4,

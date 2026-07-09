@@ -3257,6 +3257,7 @@ Object.assign(recettes, {
     ]
   },
   acordaalentejana: {
+    dateAjout: "2026-07-09T10:00:00",
     nom: "Açorda Alentejana",
     cat: "soupes", pays: "portugal",
     base: 4,

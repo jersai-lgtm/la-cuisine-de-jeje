@@ -319,6 +319,7 @@ Object.assign(recettes, {
       ]
   },
   feuilledebrick: {
+    dateAjout: "2026-07-08T20:00:00",
     nom: "Feuille de Brick",
     cat: "boulangerie", pays: "tunisie",
     base: 1,

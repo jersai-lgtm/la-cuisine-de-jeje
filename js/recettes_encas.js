@@ -2886,6 +2886,7 @@ Object.assign(recettes, {
     ]
   },
   bolinhodechuva: {
+    dateAjout: "2026-07-09T11:04:00",
     nom: "Bolinho de Chuva",
     cat: "encas", pays: "bresil",
     base: 4,
@@ -2922,6 +2923,7 @@ Object.assign(recettes, {
     ]
   },
   paparellena: {
+    dateAjout: "2026-07-09T12:00:00",
     nom: "Papa Rellena",
     cat: "encas", pays: "perou",
     base: 4,

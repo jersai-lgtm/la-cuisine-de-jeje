@@ -29834,6 +29834,7 @@ Object.assign(recettes, {
     ]
   },
   carabineirosgrelhados: {
+    dateAjout: "2026-07-09T10:02:00",
     nom: "Carabineiros Grelhados",
     cat: "plats", pays: "portugal",
     base: 4,
@@ -29870,6 +29871,7 @@ Object.assign(recettes, {
     ]
   },
   feijoadaportuguesa: {
+    dateAjout: "2026-07-09T10:04:00",
     nom: "Feijoada Portuguesa",
     cat: "plats", pays: "portugal",
     base: 4,
@@ -29906,6 +29908,7 @@ Object.assign(recettes, {
     ]
   },
   bobodecamarao: {
+    dateAjout: "2026-07-09T11:00:00",
     nom: "Bobó de Camarão",
     cat: "plats", pays: "bresil",
     base: 4,
@@ -29942,6 +29945,7 @@ Object.assign(recettes, {
     ]
   },
   empadaodefrango: {
+    dateAjout: "2026-07-09T11:01:00",
     nom: "Empadão de Frango",
     cat: "plats", pays: "bresil",
     base: 4,
@@ -29978,6 +29982,7 @@ Object.assign(recettes, {
     ]
   },
   escabechepollo: {
+    dateAjout: "2026-07-09T12:01:00",
     nom: "Escabeche de Pollo",
     cat: "plats", pays: "perou",
     base: 4,
@@ -30014,6 +30019,7 @@ Object.assign(recettes, {
     ]
   },
   tallarinesverdes: {
+    dateAjout: "2026-07-09T12:04:00",
     nom: "Tallarines Verdes",
     cat: "plats", pays: "perou",
     base: 4,
