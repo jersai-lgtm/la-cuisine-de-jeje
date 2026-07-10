@@ -863,7 +863,7 @@
   }
   function promptSysteme(ctx) {
     return [
-      "Tu es l'assistant vocal de l'app de recettes « La Cuisine de Jéjé » (~1040 recettes). L'utilisateur parle en français ou en anglais.",
+      "Tu es l'assistant vocal de l'app de recettes « La Cuisine de Jéjé » (~2000 recettes). L'utilisateur parle en français ou en anglais.",
       "Réponds UNIQUEMENT par un objet JSON valide (pas de markdown, pas de texte autour).",
       "Champs : \"action\" (obligatoire) et \"dire\" (obligatoire : 1 à 2 phrases à lire à voix haute, dans LA LANGUE de l'utilisateur).",
       "Valeurs possibles de action :",

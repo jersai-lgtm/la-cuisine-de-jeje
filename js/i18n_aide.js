@@ -38,7 +38,7 @@ window.I18N_AIDE = {
 
   // — Aide / tour guidé (app_aide.js) —
   "Bienvenue chez Jéjé !": "Welcome to Jéjé's!",
-  "Plus de 1000 recettes du monde entier, des menus tout prêts et plein d'outils pour cuisiner sans prise de tête. On fait un tour rapide ? (Tu peux passer à tout moment.)": "Over 1000 recipes from around the world, ready-made menus and plenty of tools to cook stress-free. Want a quick tour? (You can skip at any time.)",
+  "Plus de 2000 recettes du monde entier, des menus tout prêts et plein d'outils pour cuisiner sans prise de tête. On fait un tour rapide ? (Tu peux passer à tout moment.)": "Over 2000 recipes from around the world, ready-made menus and plenty of tools to cook stress-free. Want a quick tour? (You can skip at any time.)",
   "Trouver & filtrer": "Find & filter",
   "Cherche par nom, ingrédient ou pays. Et affine d'un geste : filtres ⏱ rapide, 💰 éco, 🥗 Nutri A/B, ⭐ facile, 🌞 de saison, 🌱 végé/vegan — et tri par note, temps, coût ou calories. Tes filtres sont même mémorisés.": "Search by name, ingredient or country. And refine in one move: ⏱ quick, 💰 budget, 🥗 Nutri A/B, ⭐ easy, 🌞 in season, 🌱 veggie/vegan filters — and sort by rating, time, cost or calories. Your filters are even remembered.",
   "Des quantités qui s'adaptent": "Quantities that adapt",

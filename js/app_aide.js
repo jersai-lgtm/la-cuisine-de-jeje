@@ -7,9 +7,9 @@
 
 const AIDE_TOUR = [
   { emoji: "👋", titre: "Bienvenue chez Jéjé !",
-    texte: "Plus de 1700 recettes du monde entier, des menus tout prêts et plein d'outils pour cuisiner sans prise de tête. On fait un tour rapide ? (Tu peux passer à tout moment.)",
+    texte: "Plus de 2000 recettes du monde entier, des menus tout prêts et plein d'outils pour cuisiner sans prise de tête. On fait un tour rapide ? (Tu peux passer à tout moment.)",
     titreEn: "Welcome to Jéjé's Kitchen!",
-    texteEn: "Over 1700 recipes from around the world, ready-made menus and loads of tools to cook without the fuss. Shall we take a quick tour? (You can skip anytime.)" },
+    texteEn: "Over 2000 recipes from around the world, ready-made menus and loads of tools to cook without the fuss. Shall we take a quick tour? (You can skip anytime.)" },
   { emoji: "🔍", titre: "Trouver & filtrer",
     texte: "Cherche par nom, ingrédient ou pays. Et affine d'un geste : filtres ⏱ rapide, 💰 éco, 🥗 Nutri A/B, ⭐ facile, 🌞 de saison, 🌱 végé/vegan — et tri par note, temps, coût ou calories. Tes filtres sont même mémorisés.",
     titreEn: "Search & filter",
