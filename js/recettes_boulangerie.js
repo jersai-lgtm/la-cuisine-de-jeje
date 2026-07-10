@@ -1798,4 +1798,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud, nature, ou saupoudré de sucre glace et arrosé de miel (version sucrée), ou garni de fromage (version salée). Doré, feuilleté et fondant — le pain de fête égyptien.", badge: null }
     ]
   },
+  chipa: {
+    dateAjout: "2026-07-10T17:09:00",
+    nom: "Chipá",
+    cat: "boulangerie", pays: "paraguay",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Chipá — le petit pain au fromage paraguayen : des anneaux moelleux et élastiques à base de fécule de manioc et de fromage, sans gluten, dorés au four. Fondants dedans, légèrement croustillants dehors, ils se dégustent tièdes au petit-déjeuner ou au goûter, très populaires au Paraguay et dans le nord de l'Argentine.",
+    tableauChipa: [
+      { nb: 1, manioc: "50 g", fromage: "40 g", oeufs: "1", beurre: "12 g", lait: "15 ml", sel: "2 g" },
+      { nb: 2, manioc: "100 g", fromage: "80 g", oeufs: "2", beurre: "24 g", lait: "30 ml", sel: "4 g" },
+      { nb: 3, manioc: "150 g", fromage: "120 g", oeufs: "3", beurre: "36 g", lait: "45 ml", sel: "6 g" },
+      { nb: 4, manioc: "200 g", fromage: "160 g", oeufs: "4", beurre: "48 g", lait: "60 ml", sel: "8 g" },
+      { nb: 5, manioc: "250 g", fromage: "200 g", oeufs: "5", beurre: "60 g", lait: "75 ml", sel: "10 g" },
+      { nb: 6, manioc: "300 g", fromage: "240 g", oeufs: "6", beurre: "72 g", lait: "90 ml", sel: "12 g" },
+      { nb: 7, manioc: "350 g", fromage: "280 g", oeufs: "7", beurre: "84 g", lait: "105 ml", sel: "14 g" },
+      { nb: 8, manioc: "400 g", fromage: "320 g", oeufs: "8", beurre: "96 g", lait: "120 ml", sel: "16 g" },
+      { nb: 9, manioc: "450 g", fromage: "360 g", oeufs: "9", beurre: "108 g", lait: "135 ml", sel: "18 g" },
+      { nb: 10, manioc: "500 g", fromage: "400 g", oeufs: "10", beurre: "120 g", lait: "150 ml", sel: "20 g" },
+      { nb: 11, manioc: "550 g", fromage: "440 g", oeufs: "11", beurre: "132 g", lait: "165 ml", sel: "22 g" },
+      { nb: 12, manioc: "600 g", fromage: "480 g", oeufs: "12", beurre: "144 g", lait: "180 ml", sel: "24 g" },
+      { nb: 13, manioc: "650 g", fromage: "520 g", oeufs: "13", beurre: "156 g", lait: "195 ml", sel: "26 g" },
+      { nb: 14, manioc: "700 g", fromage: "560 g", oeufs: "14", beurre: "168 g", lait: "210 ml", sel: "28 g" },
+      { nb: 15, manioc: "750 g", fromage: "600 g", oeufs: "15", beurre: "180 g", lait: "225 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "Le beurre", detail: "Travaillez le beurre mou avec le fromage râpé (un fromage ferme et salé, type parmesan ou queso Paraguay) jusqu'à obtenir une pâte homogène.", badge: null },
+      { icone: "🥚", titre: "Les œufs", detail: "Incorporez l'œuf et le sel, puis un peu de lait, en mélangeant bien.", badge: null },
+      { icone: "🌾", titre: "La fécule", detail: "Ajoutez la fécule de manioc (almidón) peu à peu, jusqu'à obtenir une pâte souple, élastique et non collante.", badge: null },
+      { icone: "🍩", titre: "Façonner", detail: "Façonnez des petits boudins et fermez-les en anneaux (ou en boules), et disposez-les sur une plaque.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à four chaud (200 °C) jusqu'à ce que les chipás soient dorés, gonflés et légèrement craquelés.", badge: null },
+      { icone: "⏲️", titre: "Le bon timing", detail: "Surveillez bien : ils doivent rester moelleux et élastiques dedans (trop cuits, ils durcissent vite).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, nature, au petit-déjeuner avec un maté ou un café. Moelleux, fondants et sans gluten — les petits pains au fromage du Paraguay.", badge: null }
+    ]
+  },
 });

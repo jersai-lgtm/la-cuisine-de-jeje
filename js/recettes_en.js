@@ -66644,5 +66644,345 @@ window.RECETTES_EN = {
     "detail": "Serve hot with rice, fufu or plantain. Nourishing, tender and fragrant — the iconic leaf stew of Congo."
    }
   ]
+ },
+ "feijoada": {
+  "nom": "Feijoada",
+  "description": "Feijoada — the Brazilian national stew: black beans long-simmered with several cuts of pork and smoked sausage, into a dark, tender, fragrant stew. Served with rice, orange wedges, farofa and greens, it's the great convivial Sunday dish of Brazil.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak the black beans overnight, then drain them. This is the base of the dish."
+   },
+   {
+    "titre": "The pork",
+    "detail": "Brown the pork cuts (loin, ribs, hock) and the smoked sausage in a pot, on all sides."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the sliced onion and garlic, and sauté until soft."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the beans, bay and cover with water. Bring to a simmer and cook over low heat 2 hours, until the beans are tender and the broth dark and thick."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Mash a few beans against the side to thicken the stew, which should turn creamy and glossy."
+   },
+   {
+    "titre": "The sides",
+    "detail": "Make white rice and a farofa (toasted cassava meal). Cut orange wedges."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the feijoada piping hot over the rice, with the orange, farofa and sautéed greens. Dark, tender and convivial — the great Brazilian Sunday dish."
+   }
+  ]
+ },
+ "moqueca": {
+  "nom": "Moqueca",
+  "description": "Moqueca — the Bahian fish stew: pieces of fish simmered in a coconut milk scented with palm oil (dendê), peppers, tomato and coriander, never stirred. Silky, colourful and fragrant, it's the treasure of the Afro-Brazilian cuisine of Bahia.",
+  "etapes": [
+   {
+    "titre": "Marinate the fish",
+    "detail": "Season the firm fish pieces with the garlic, lime juice and salt, and marinate 15 minutes."
+   },
+   {
+    "titre": "The layers",
+    "detail": "In a pot (ideally clay), lay a layer of sliced onion, pepper and tomato."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Place the marinated fish on the vegetables, then cover with another layer of vegetables."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and palm oil (dendê), which gives its orange colour and unique aroma."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer over low heat without ever stirring (shake the pot), until the fish is just cooked and the sauce fragrant."
+   },
+   {
+    "titre": "The coriander",
+    "detail": "Scatter generously with fresh coriander at the end of cooking."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, in the pot, with white rice and pirão (cassava porridge). Silky, colourful and fragrant — the treasure of Bahia."
+   }
+  ]
+ },
+ "llapingachos": {
+  "nom": "Llapingachos",
+  "description": "Llapingachos — the Ecuadorian cheesy potato patties: a potato mash coloured with achiote, stuffed with melting cheese and pan-browned, served with a peanut sauce, a fried egg and avocado. Comforting and indulgent, they're the patties of the Andean highlands.",
+  "etapes": [
+   {
+    "titre": "The mash",
+    "detail": "Cook the potatoes, then mash them smooth with a little turmeric (or achiote) for the golden colour."
+   },
+   {
+    "titre": "The refrito",
+    "detail": "Sauté the sliced onion in a little oil and stir it into the mash. Salt."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Form balls of mash, hollow them, fill with grated cheese and close them, then flatten into patties."
+   },
+   {
+    "titre": "Firm up",
+    "detail": "Chill the patties 15 minutes (they'll hold better when cooked)."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Pan-brown the patties in a little oil, on both sides, until crisp and the cheese melting."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Make a peanut sauce (salsa de maní) by loosening peanut paste with a little milk and onion."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the llapingachos topped with peanut sauce, with a fried egg, avocado and a salad. Comforting and indulgent — the patties of the Andes."
+   }
+  ]
+ },
+ "pernil": {
+  "nom": "Pernil",
+  "description": "Pernil — the Puerto Rican roast pork shoulder: a shoulder marinated in a garlic, oregano and cumin adobo, roasted very slowly until tender, crowned with crackling skin (the cuerito). Fragrant and generous, it's the dish of festivities and Christmas in Puerto Rico.",
+  "etapes": [
+   {
+    "titre": "The adobo",
+    "detail": "Pound the garlic with the oregano, cumin, salt, oil and lime (or sour orange) juice into a fragrant paste."
+   },
+   {
+    "titre": "Score",
+    "detail": "Deeply score the pork shoulder in several places, without piercing the skin."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Rub the meat with adobo, working it into the cuts, and marinate in the fridge overnight."
+   },
+   {
+    "titre": "Roast covered",
+    "detail": "Roast at low temperature (150°C), skin up and covered, for several hours until the meat is tender."
+   },
+   {
+    "titre": "The crackling",
+    "detail": "Uncover, raise the oven very hot, and let the skin puff and turn crisp and golden (the famous cuerito)."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Let it rest, then shred the tender meat, keeping shards of crisp crackling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice and pigeon peas (arroz con gandules) and tostones. Tender, fragrant and festive — the Puerto Rican Christmas dish."
+   }
+  ]
+ },
+ "mangu": {
+  "nom": "Mangú",
+  "description": "Mangú — the Dominican plantain mash: green plantains boiled then mashed into a smooth, creamy purée, topped with vinegar-pickled red onions. Served for breakfast with egg, fried cheese and salami (los tres golpes), it's the morning comfort of the Dominican Republic.",
+  "etapes": [
+   {
+    "titre": "The plantains",
+    "detail": "Peel the green plantains and cut them into chunks."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Boil them in salted water until very tender (fork-soft)."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the hot plantains with a little cooking water and oil, until smooth and creamy (no lumps)."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Sauté the sliced red onions, then deglaze with a dash of vinegar: they turn soft and tangy."
+   },
+   {
+    "titre": "Los golpes",
+    "detail": "Fry slices of cheese and salami (or a fried egg), the traditional sides."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Shape the mangú into a dome, topped with the pickled onions."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with the fried cheese, salami and egg (los tres golpes). Smooth, creamy and tangy — the Dominican breakfast."
+   }
+  ]
+ },
+ "saltenas": {
+  "nom": "Salteñas",
+  "description": "Salteñas — the juicy Bolivian empanadas: golden pastries with a slightly sweet dough, filled with a tender, juicy filling (meat, potato, peas, olive, egg), set into a jelly then liquefied by baking. The challenge: eating them without spilling a drop!",
+  "etapes": [
+   {
+    "titre": "The filling (jigote)",
+    "detail": "Sauté the minced beef with the onion, cumin and chilli (ají), add the diced potato and a little broth."
+   },
+   {
+    "titre": "The jelly",
+    "detail": "Add gelatine (or let the rich broth cool): the filling must set into a jelly in the fridge, to stay juicy once baked."
+   },
+   {
+    "titre": "Complete",
+    "detail": "Stir the peas, olive and chopped hard-boiled egg into the cold, set filling."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with the butter, a little sugar, salt and water (and achiote for colour) into a soft dough. Let it rest."
+   },
+   {
+    "titre": "Fill and seal",
+    "detail": "Roll out discs, add a spoon of cold filling, close and seal the edge with a pretty twisted cord (repulgue)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a very hot oven (220°C) until the salteñas are golden and glossy: the jelly melts into a savoury juice inside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, to eat standing, biting a corner and sipping the juice. Juicy, golden and fragrant — the Bolivian indulgent challenge."
+   }
+  ]
+ },
+ "pupusas": {
+  "nom": "Pupusas",
+  "description": "Pupusas — the stuffed corn cakes of El Salvador: thick masa cakes filled with cheese, beans or chicharrón, cooked on a griddle until soft and lightly golden. Served with curtido (pickled cabbage) and a salsa, they're the Salvadoran national dish, shaped by hand.",
+  "etapes": [
+   {
+    "titre": "The masa",
+    "detail": "Mix the nixtamalised corn flour (masa harina) with warm water and salt into a soft, smooth dough, neither dry nor sticky."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Prepare the filling: grated cheese mixed with mashed red beans (or chicharrón), into an even paste."
+   },
+   {
+    "titre": "Form",
+    "detail": "Form a ball of masa, hollow it into a cup, fill with the filling, close and seal the ball well."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Gently flatten the filled ball between your hands into a thick, even cake, without pushing the filling out."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the pupusas on a hot dry griddle (comal), until golden in spots and soft (the cheese may ooze a little)."
+   },
+   {
+    "titre": "The curtido",
+    "detail": "Make the curtido: mix the grated cabbage and carrot with vinegar, oregano and a little chilli. Let it marinate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the pupusas hot with the tangy curtido and a salsa roja. Soft, melting and generous — the national dish of El Salvador."
+   }
+  ]
+ },
+ "baleadas": {
+  "nom": "Baleadas",
+  "description": "Baleadas — the folded tortillas of Honduras: a thick, soft wheat tortilla filled with fried red beans, cream (mantequilla) and crumbled cheese, then folded in two. Simple, comforting and nourishing, it's the iconic snack of Honduras, endlessly variable.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with the butter (or lard), a little salt, baking powder and warm water into a soft dough. Rest 20 minutes."
+   },
+   {
+    "titre": "The tortillas",
+    "detail": "Divide the dough into balls, roll them into thick, round tortillas."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the tortillas on a hot dry griddle, until they puff and spot brown, staying soft."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Sauté the onion, add the cooked red beans and mash them into a thick purée (frijoles refritos)."
+   },
+   {
+    "titre": "Complete",
+    "detail": "Prepare the fillings: thick cream (mantequilla), crumbled fresh cheese, and optionally a scrambled egg."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread each hot tortilla with bean purée, add the cream, cheese and egg."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fold the tortilla in two and serve at once, nice and hot. Simple, soft and comforting — the iconic snack of Honduras."
+   }
+  ]
+ },
+ "chivito": {
+  "nom": "Chivito",
+  "description": "Chivito — the giant Uruguayan sandwich: a bread filled with a thin grilled beef steak, ham, melted cheese, bacon, egg, lettuce, tomato and mayonnaise. Overflowing and generous, it's the king of Uruguayan street food, despite its name ('little goat') containing no goat!",
+  "etapes": [
+   {
+    "titre": "The beef",
+    "detail": "Flatten a thin slice of beef (tenderloin), salt it and grill it quickly on the griddle, just seared."
+   },
+   {
+    "titre": "The bacon",
+    "detail": "Grill the bacon (or lardons) until crisp."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Fry an egg, white set and yolk runny."
+   },
+   {
+    "titre": "Melt the cheese",
+    "detail": "On the still-hot beef on the griddle, lay the ham and cheese, and let it melt."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Toast the bread and spread it generously with mayonnaise."
+   },
+   {
+    "titre": "Build",
+    "detail": "Stack the beef with melted cheese, the bacon, egg, lettuce and sliced tomato."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Close, press and serve at once, with fries. Overflowing, generous and indulgent — the king of Uruguayan street food."
+   }
+  ]
+ },
+ "chipa": {
+  "nom": "Chipá",
+  "description": "Chipá — the Paraguayan cheese bread: soft, chewy rings made from cassava starch and cheese, gluten-free, baked golden. Melting inside, lightly crisp outside, they're eaten warm for breakfast or a snack, very popular in Paraguay and northern Argentina.",
+  "etapes": [
+   {
+    "titre": "The butter",
+    "detail": "Work the soft butter with the grated cheese (a firm, salty cheese like parmesan or queso Paraguay) until even."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Stir in the egg and salt, then a little milk, mixing well."
+   },
+   {
+    "titre": "The starch",
+    "detail": "Add the cassava starch (almidón) little by little, until you get a soft, elastic, non-sticky dough."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape small logs and close them into rings (or balls), and arrange them on a tray."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a hot oven (200°C) until the chipás are golden, puffed and lightly cracked."
+   },
+   {
+    "titre": "The right timing",
+    "detail": "Watch carefully: they must stay soft and chewy inside (overbaked, they harden fast)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, plain, for breakfast with a maté or coffee. Soft, melting and gluten-free — the cheese breads of Paraguay."
+   }
+  ]
  }
 };
