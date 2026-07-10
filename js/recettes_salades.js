@@ -2558,4 +2558,80 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, dans le grand plat commun, à manger à la main. Acidulé, frais et convivial — le plat national tadjik à partager.", badge: null }
     ]
   },
+  bhorta: {
+    dateAjout: "2026-07-10T20:02:00",
+    nom: "Aloo Bhorta",
+    cat: "salades", pays: "bangladesh",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Aloo bhorta — la purée de pomme de terre relevée du Bangladesh : des pommes de terre écrasées à la main avec de l'oignon, du piment, de la coriandre et beaucoup d'huile de moutarde piquante. Simple, réconfortante et étonnamment relevée, c'est l'accompagnement quotidien par excellence, servi avec du riz et du dal.",
+    tableauBhorta: [
+      { nb: 1, pommedeterre: "100 g", oignon: "30 g", piment: "1.5 g", coriandre: "5 g", citronvert: "¼", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, pommedeterre: "200 g", oignon: "60 g", piment: "3 g", coriandre: "10 g", citronvert: "½", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, pommedeterre: "300 g", oignon: "90 g", piment: "4.5 g", coriandre: "15 g", citronvert: "¾", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, pommedeterre: "400 g", oignon: "120 g", piment: "6 g", coriandre: "20 g", citronvert: "1", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, pommedeterre: "500 g", oignon: "150 g", piment: "7.5 g", coriandre: "25 g", citronvert: "1¼", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, pommedeterre: "600 g", oignon: "180 g", piment: "9 g", coriandre: "30 g", citronvert: "1½", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, pommedeterre: "700 g", oignon: "210 g", piment: "10.5 g", coriandre: "35 g", citronvert: "1¾", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, pommedeterre: "800 g", oignon: "240 g", piment: "12 g", coriandre: "40 g", citronvert: "2", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, pommedeterre: "900 g", oignon: "270 g", piment: "13.5 g", coriandre: "45 g", citronvert: "2¼", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, pommedeterre: "1000 g", oignon: "300 g", piment: "15 g", coriandre: "50 g", citronvert: "2½", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, pommedeterre: "1100 g", oignon: "330 g", piment: "16.5 g", coriandre: "55 g", citronvert: "2¾", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, pommedeterre: "1200 g", oignon: "360 g", piment: "18 g", coriandre: "60 g", citronvert: "3", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, pommedeterre: "1300 g", oignon: "390 g", piment: "19.5 g", coriandre: "65 g", citronvert: "3¼", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, pommedeterre: "1400 g", oignon: "420 g", piment: "21 g", coriandre: "70 g", citronvert: "3½", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, pommedeterre: "1500 g", oignon: "450 g", piment: "22.5 g", coriandre: "75 g", citronvert: "3¾", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Les pommes de terre", detail: "Faites cuire les pommes de terre à l'eau jusqu'à ce qu'elles soient très tendres, puis épluchez-les.", badge: null },
+      { icone: "🌶️", titre: "Le piment", detail: "Faites griller (ou frire) le piment vert (ou séché) pour libérer son arôme.", badge: null },
+      { icone: "🧅", titre: "L'oignon", detail: "Émincez finement l'oignon (cru ou légèrement frit selon le goût).", badge: null },
+      { icone: "🥣", titre: "Écraser", detail: "Écrasez les pommes de terre chaudes à la main (ou à la fourchette) avec l'oignon, le piment et le sel.", badge: null },
+      { icone: "🌿", titre: "L'huile de moutarde", detail: "Ajoutez généreusement l'huile de moutarde crue (piquante), qui donne au bhorta son caractère.", badge: null },
+      { icone: "🌿", titre: "Les herbes", detail: "Incorporez la coriandre hachée et un trait de citron vert.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Façonnez éventuellement en petites boules et servez à température ambiante, avec du riz chaud et du dal. Simple, relevée et réconfortante — l'accompagnement quotidien du Bangladesh.", badge: null }
+    ],
+    liees: ["bainganbharta"]
+  },
+  oka: {
+    dateAjout: "2026-07-10T20:09:00",
+    nom: "Oka",
+    cat: "salades", pays: "samoa",
+    base: 4,
+    temps: "20 min + marinade",
+    niveau: "⭐ Facile",
+    emoji: "🐟",
+    description: "Oka i'a — le poisson cru au coco de Samoa : des dés de poisson très frais marinés au jus de citron, puis enrobés de crème de coco onctueuse, avec du concombre, de la tomate et de l'oignon. Frais, doux et iodé, c'est le plat emblématique du Pacifique, cousin du ceviche baigné de coco.",
+    tableauOka: [
+      { nb: 1, poisson: "100 g", citronvert: "½", laitcoco: "50 ml", concombre: "30 g", tomates: "½", oignon: "20 g", piment: "1 g", sel: "2 g" },
+      { nb: 2, poisson: "200 g", citronvert: "1", laitcoco: "100 ml", concombre: "60 g", tomates: "1", oignon: "40 g", piment: "2 g", sel: "4 g" },
+      { nb: 3, poisson: "300 g", citronvert: "1½", laitcoco: "150 ml", concombre: "90 g", tomates: "1½", oignon: "60 g", piment: "3 g", sel: "6 g" },
+      { nb: 4, poisson: "400 g", citronvert: "2", laitcoco: "200 ml", concombre: "120 g", tomates: "2", oignon: "80 g", piment: "4 g", sel: "8 g" },
+      { nb: 5, poisson: "500 g", citronvert: "2½", laitcoco: "250 ml", concombre: "150 g", tomates: "2½", oignon: "100 g", piment: "5 g", sel: "10 g" },
+      { nb: 6, poisson: "600 g", citronvert: "3", laitcoco: "300 ml", concombre: "180 g", tomates: "3", oignon: "120 g", piment: "6 g", sel: "12 g" },
+      { nb: 7, poisson: "700 g", citronvert: "3½", laitcoco: "350 ml", concombre: "210 g", tomates: "3½", oignon: "140 g", piment: "7 g", sel: "14 g" },
+      { nb: 8, poisson: "800 g", citronvert: "4", laitcoco: "400 ml", concombre: "240 g", tomates: "4", oignon: "160 g", piment: "8 g", sel: "16 g" },
+      { nb: 9, poisson: "900 g", citronvert: "4½", laitcoco: "450 ml", concombre: "270 g", tomates: "4½", oignon: "180 g", piment: "9 g", sel: "18 g" },
+      { nb: 10, poisson: "1000 g", citronvert: "5", laitcoco: "500 ml", concombre: "300 g", tomates: "5", oignon: "200 g", piment: "10 g", sel: "20 g" },
+      { nb: 11, poisson: "1100 g", citronvert: "5½", laitcoco: "550 ml", concombre: "330 g", tomates: "5½", oignon: "220 g", piment: "11 g", sel: "22 g" },
+      { nb: 12, poisson: "1200 g", citronvert: "6", laitcoco: "600 ml", concombre: "360 g", tomates: "6", oignon: "240 g", piment: "12 g", sel: "24 g" },
+      { nb: 13, poisson: "1300 g", citronvert: "6½", laitcoco: "650 ml", concombre: "390 g", tomates: "6½", oignon: "260 g", piment: "13 g", sel: "26 g" },
+      { nb: 14, poisson: "1400 g", citronvert: "7", laitcoco: "700 ml", concombre: "420 g", tomates: "7", oignon: "280 g", piment: "14 g", sel: "28 g" },
+      { nb: 15, poisson: "1500 g", citronvert: "7½", laitcoco: "750 ml", concombre: "450 g", tomates: "7½", oignon: "300 g", piment: "15 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Le poisson", detail: "Coupez un poisson très frais (thon, bonite, vivaneau) en dés réguliers.", badge: null },
+      { icone: "🍋", titre: "Mariner", detail: "Arrosez généreusement de jus de citron vert et salez : laissez « cuire » le poisson à froid quelques minutes (il blanchit sur les bords).", badge: null },
+      { icone: "💧", titre: "Égoutter", detail: "Égouttez l'excédent de jus de citron pour que le coco ne soit pas trop liquide.", badge: null },
+      { icone: "🥒", titre: "Les crudités", detail: "Coupez le concombre, la tomate et l'oignon en petits dés, et le piment finement.", badge: null },
+      { icone: "🥥", titre: "La crème de coco", detail: "Enrobez le poisson mariné de crème de coco épaisse, qui adoucit l'acidité.", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Ajoutez les crudités et mélangez délicatement, salez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien frais, aussitôt, dans une demi-noix de coco ou un bol. Frais, doux et iodé — le poisson cru au coco de Samoa.", badge: null }
+    ],
+    liees: ["kokoda"]
+  },
 });

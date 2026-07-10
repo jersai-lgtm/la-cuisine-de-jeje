@@ -4517,4 +4517,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez brûlant, avec du vinaigre à l'ail et de la menthe séchée à ajouter selon le goût. Délicats et réconfortants — la fierté des cuisinières azéries.", badge: null }
     ]
   },
+  jashamaru: {
+    dateAjout: "2026-07-10T20:08:00",
+    nom: "Jasha Maru",
+    cat: "soupes", pays: "bhoutan",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐ Facile",
+    emoji: "🍗",
+    description: "Jasha maru — le ragoût de poulet épicé du Bhoutan : du poulet en morceaux mijoté dans un bouillon relevé à la tomate, au gingembre, à l'ail et au piment, généreux en jus. Réconfortant, parfumé et bien relevé, il se sert dans son bouillon sur du riz rouge, un incontournable des tables bhoutanaises.",
+    tableauJashamaru: [
+      { nb: 1, poulet: "110 g", tomates: "½", oignon: "30 g", gingembre: "4 g", ail: "1", piment: "2 g", coriandre: "5 g", bouillon: "150 ml", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, poulet: "220 g", tomates: "1", oignon: "60 g", gingembre: "8 g", ail: "2", piment: "4 g", coriandre: "10 g", bouillon: "300 ml", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, poulet: "330 g", tomates: "1½", oignon: "90 g", gingembre: "12 g", ail: "3", piment: "6 g", coriandre: "15 g", bouillon: "450 ml", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, poulet: "440 g", tomates: "2", oignon: "120 g", gingembre: "16 g", ail: "4", piment: "8 g", coriandre: "20 g", bouillon: "600 ml", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, poulet: "550 g", tomates: "2½", oignon: "150 g", gingembre: "20 g", ail: "5", piment: "10 g", coriandre: "25 g", bouillon: "750 ml", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, poulet: "660 g", tomates: "3", oignon: "180 g", gingembre: "24 g", ail: "6", piment: "12 g", coriandre: "30 g", bouillon: "900 ml", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, poulet: "770 g", tomates: "3½", oignon: "210 g", gingembre: "28 g", ail: "7", piment: "14 g", coriandre: "35 g", bouillon: "1050 ml", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, poulet: "880 g", tomates: "4", oignon: "240 g", gingembre: "32 g", ail: "8", piment: "16 g", coriandre: "40 g", bouillon: "1200 ml", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, poulet: "990 g", tomates: "4½", oignon: "270 g", gingembre: "36 g", ail: "9", piment: "18 g", coriandre: "45 g", bouillon: "1350 ml", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, poulet: "1100 g", tomates: "5", oignon: "300 g", gingembre: "40 g", ail: "10", piment: "20 g", coriandre: "50 g", bouillon: "1500 ml", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, poulet: "1210 g", tomates: "5½", oignon: "330 g", gingembre: "44 g", ail: "11", piment: "22 g", coriandre: "55 g", bouillon: "1650 ml", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, poulet: "1320 g", tomates: "6", oignon: "360 g", gingembre: "48 g", ail: "12", piment: "24 g", coriandre: "60 g", bouillon: "1800 ml", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, poulet: "1430 g", tomates: "6½", oignon: "390 g", gingembre: "52 g", ail: "13", piment: "26 g", coriandre: "65 g", bouillon: "1950 ml", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, poulet: "1540 g", tomates: "7", oignon: "420 g", gingembre: "56 g", ail: "14", piment: "28 g", coriandre: "70 g", bouillon: "2100 ml", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, poulet: "1650 g", tomates: "7½", oignon: "450 g", gingembre: "60 g", ail: "15", piment: "30 g", coriandre: "75 g", bouillon: "2250 ml", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐔", titre: "Le poulet", detail: "Coupez le poulet en petits morceaux (avec os pour le goût).", badge: null },
+      { icone: "🧅", titre: "Les aromates", detail: "Faites revenir l'oignon, l'ail, le gingembre et le piment émincés dans l'huile, jusqu'à ce qu'ils embaument.", badge: null },
+      { icone: "🍗", titre: "Saisir", detail: "Ajoutez le poulet et faites-le colorer dans les aromates.", badge: null },
+      { icone: "🍅", titre: "La tomate", detail: "Ajoutez la tomate concassée et laissez compoter quelques minutes.", badge: null },
+      { icone: "💧", titre: "Le bouillon", detail: "Versez de l'eau (ou du bouillon), salez, et portez à frémissement.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter jusqu'à ce que le poulet soit tendre et le bouillon parfumé et légèrement relevé (le jasha maru est généreux en jus).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez de coriandre fraîche et servez dans son bouillon, sur du riz rouge. Réconfortant, parfumé et relevé — le ragoût de poulet bhoutanais.", badge: null }
+    ]
+  },
 });

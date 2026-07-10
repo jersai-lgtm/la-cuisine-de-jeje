@@ -5147,4 +5147,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaudes, avec de la crème aigre (salé) ou du sucre et de la compote (sucré). Croustillantes et réconfortantes — l'en-cas rustique polonais.", badge: null }
     ]
   },
+  chaplikebab: {
+    dateAjout: "2026-07-10T20:00:00",
+    nom: "Chapli Kebab",
+    cat: "encas", pays: "pakistan",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍖",
+    description: "Chapli kebab — la galette épicée de Peshawar : une fine galette de bœuf haché mêlée de tomate, d'oignon, de coriandre, de grains de grenade et de graines écrasées, liée à la farine de maïs et frite à plat. Croustillante sur les bords, juteuse et parfumée, c'est la reine de la street-food du nord-ouest du Pakistan.",
+    tableauChaplikebab: [
+      { nb: 1, boeuf: "100 g", oignon: "30 g", tomates: "½", coriandre: "5 g", piment: "1.5 g", grenade: "6 g", farinemais: "10 g", oeufs: "¼", cumin: "1 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, boeuf: "200 g", oignon: "60 g", tomates: "1", coriandre: "10 g", piment: "3 g", grenade: "12 g", farinemais: "20 g", oeufs: "½", cumin: "2 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, boeuf: "300 g", oignon: "90 g", tomates: "1½", coriandre: "15 g", piment: "4.5 g", grenade: "18 g", farinemais: "30 g", oeufs: "¾", cumin: "3 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, boeuf: "400 g", oignon: "120 g", tomates: "2", coriandre: "20 g", piment: "6 g", grenade: "24 g", farinemais: "40 g", oeufs: "1", cumin: "4 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, boeuf: "500 g", oignon: "150 g", tomates: "2½", coriandre: "25 g", piment: "7.5 g", grenade: "30 g", farinemais: "50 g", oeufs: "1¼", cumin: "5 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, boeuf: "600 g", oignon: "180 g", tomates: "3", coriandre: "30 g", piment: "9 g", grenade: "36 g", farinemais: "60 g", oeufs: "1½", cumin: "6 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, boeuf: "700 g", oignon: "210 g", tomates: "3½", coriandre: "35 g", piment: "10.5 g", grenade: "42 g", farinemais: "70 g", oeufs: "1¾", cumin: "7 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, boeuf: "800 g", oignon: "240 g", tomates: "4", coriandre: "40 g", piment: "12 g", grenade: "48 g", farinemais: "80 g", oeufs: "2", cumin: "8 g", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, boeuf: "900 g", oignon: "270 g", tomates: "4½", coriandre: "45 g", piment: "13.5 g", grenade: "54 g", farinemais: "90 g", oeufs: "2¼", cumin: "9 g", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, boeuf: "1000 g", oignon: "300 g", tomates: "5", coriandre: "50 g", piment: "15 g", grenade: "60 g", farinemais: "100 g", oeufs: "2½", cumin: "10 g", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, boeuf: "1100 g", oignon: "330 g", tomates: "5½", coriandre: "55 g", piment: "16.5 g", grenade: "66 g", farinemais: "110 g", oeufs: "2¾", cumin: "11 g", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, boeuf: "1200 g", oignon: "360 g", tomates: "6", coriandre: "60 g", piment: "18 g", grenade: "72 g", farinemais: "120 g", oeufs: "3", cumin: "12 g", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, boeuf: "1300 g", oignon: "390 g", tomates: "6½", coriandre: "65 g", piment: "19.5 g", grenade: "78 g", farinemais: "130 g", oeufs: "3¼", cumin: "13 g", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, boeuf: "1400 g", oignon: "420 g", tomates: "7", coriandre: "70 g", piment: "21 g", grenade: "84 g", farinemais: "140 g", oeufs: "3½", cumin: "14 g", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, boeuf: "1500 g", oignon: "450 g", tomates: "7½", coriandre: "75 g", piment: "22.5 g", grenade: "90 g", farinemais: "150 g", oeufs: "3¾", cumin: "15 g", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "La farce", detail: "Mélangez le bœuf haché avec l'oignon et la tomate finement hachés, la coriandre, le piment et les épices.", badge: null },
+      { icone: "🌰", titre: "Les graines", detail: "Écrasez grossièrement des graines de coriandre, de cumin et de grenade séchée (anardana), et ajoutez-les : c'est la signature aromatique du chapli.", badge: null },
+      { icone: "🌽", titre: "Lier", detail: "Incorporez l'œuf et la farine de maïs pour lier la farce, sans trop la travailler.", badge: null },
+      { icone: "🖐️", titre: "Façonner", detail: "Formez de larges galettes fines (« chapli » signifie sandale, d'où la forme plate et large).", badge: null },
+      { icone: "🍅", titre: "Décorer", detail: "Pressez une rondelle de tomate sur chaque galette.", badge: null },
+      { icone: "🔥", titre: "Frire à plat", detail: "Faites frire les galettes à plat dans un peu d'huile chaude, jusqu'à ce qu'elles soient croustillantes et dorées, en les retournant délicatement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlant avec du naan, de l'oignon cru, du citron et un chutney. Croustillant, juteux et parfumé — la reine de la rue de Peshawar.", badge: null }
+    ]
+  },
 });

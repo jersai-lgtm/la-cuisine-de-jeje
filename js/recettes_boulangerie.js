@@ -1910,4 +1910,42 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire et servir", detail: "Enfournez à 220 °C jusqu'à ce que les korvapuusti soient dorées et gonflées. Servez tièdes avec un café. Moelleuses et parfumées — les reines de la pause-café finlandaise.", badge: null }
     ]
   },
+  idiyappam: {
+    dateAjout: "2026-07-10T20:05:00",
+    nom: "Idiyappam",
+    cat: "boulangerie", pays: "srilanka",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍜",
+    description: "Idiyappam (string hoppers) — les nids de vermicelles de riz vapeur : une pâte de farine de riz pressée en fins filaments enroulés en petits nids, cuits à la vapeur. Moelleux et délicats, ils se dégustent au petit-déjeuner ou au dîner avec un curry, du dhal et du sambol, au Sri Lanka et dans le sud de l'Inde.",
+    tableauIdiyappam: [
+      { nb: 1, farineRiz: "70 g", noixcoco: "15 g", laitcoco: "40 ml", sel: "2 g" },
+      { nb: 2, farineRiz: "140 g", noixcoco: "30 g", laitcoco: "80 ml", sel: "4 g" },
+      { nb: 3, farineRiz: "210 g", noixcoco: "45 g", laitcoco: "120 ml", sel: "6 g" },
+      { nb: 4, farineRiz: "280 g", noixcoco: "60 g", laitcoco: "160 ml", sel: "8 g" },
+      { nb: 5, farineRiz: "350 g", noixcoco: "75 g", laitcoco: "200 ml", sel: "10 g" },
+      { nb: 6, farineRiz: "420 g", noixcoco: "90 g", laitcoco: "240 ml", sel: "12 g" },
+      { nb: 7, farineRiz: "490 g", noixcoco: "105 g", laitcoco: "280 ml", sel: "14 g" },
+      { nb: 8, farineRiz: "560 g", noixcoco: "120 g", laitcoco: "320 ml", sel: "16 g" },
+      { nb: 9, farineRiz: "630 g", noixcoco: "135 g", laitcoco: "360 ml", sel: "18 g" },
+      { nb: 10, farineRiz: "700 g", noixcoco: "150 g", laitcoco: "400 ml", sel: "20 g" },
+      { nb: 11, farineRiz: "770 g", noixcoco: "165 g", laitcoco: "440 ml", sel: "22 g" },
+      { nb: 12, farineRiz: "840 g", noixcoco: "180 g", laitcoco: "480 ml", sel: "24 g" },
+      { nb: 13, farineRiz: "910 g", noixcoco: "195 g", laitcoco: "520 ml", sel: "26 g" },
+      { nb: 14, farineRiz: "980 g", noixcoco: "210 g", laitcoco: "560 ml", sel: "28 g" },
+      { nb: 15, farineRiz: "1050 g", noixcoco: "225 g", laitcoco: "600 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "La farine", detail: "Torréfiez légèrement la farine de riz, puis salez-la.", badge: null },
+      { icone: "💧", titre: "La pâte", detail: "Versez de l'eau bouillante sur la farine peu à peu, en mélangeant, jusqu'à obtenir une pâte souple, chaude et malléable (comme une pâte à modeler).", badge: null },
+      { icone: "🥥", titre: "La coco", detail: "Répartissez de la noix de coco fraîchement râpée au fond des petits moules (idiyappam plates).", badge: null },
+      { icone: "🌀", titre: "Presser", detail: "Remplissez une presse à idiyappam (ou une poche à douille fine) de pâte, et pressez de fins filaments en spirale sur les moules, en petits nids.", badge: null },
+      { icone: "♨️", titre: "Cuisson vapeur", detail: "Faites cuire les nids à la vapeur 5 à 8 min, jusqu'à ce que les vermicelles soient fermes et cuits.", badge: null },
+      { icone: "🥢", titre: "Démouler", detail: "Démoulez délicatement les nids d'idiyappam, qui gardent leur jolie forme.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chauds avec un curry, du dhal (parippu), un sambol de coco et un kiri hodi (sauce coco). Moelleux et délicats — les nids de vermicelles du Sri Lanka.", badge: null }
+    ],
+    liees: ["parippu"]
+  },
 });

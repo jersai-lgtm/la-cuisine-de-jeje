@@ -67664,5 +67664,345 @@ window.RECETTES_EN = {
     "detail": "Serve the raspeballer with the salted meat, sausage, melted butter and optionally swede. Nourishing and rustic — the comfort of Norwegian winters."
    }
   ]
+ },
+ "chaplikebab": {
+  "nom": "Chapli Kebab",
+  "description": "Chapli kebab — the spiced patty of Peshawar: a flat patty of minced beef mixed with tomato, onion, coriander, pomegranate seeds and crushed seeds, bound with cornmeal and pan-fried flat. Crisp at the edges, juicy and fragrant, it's the queen of northwest Pakistani street food.",
+  "etapes": [
+   {
+    "titre": "The mix",
+    "detail": "Mix the minced beef with the finely chopped onion and tomato, the coriander, chilli and spices."
+   },
+   {
+    "titre": "The seeds",
+    "detail": "Coarsely crush coriander seeds, cumin and dried pomegranate (anardana), and add them: the aromatic signature of the chapli."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Stir in the egg and cornmeal to bind the mix, without overworking it."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form wide, flat patties ('chapli' means sandal, hence the flat, wide shape)."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Press a tomato slice onto each patty."
+   },
+   {
+    "titre": "Fry flat",
+    "detail": "Fry the patties flat in a little hot oil, until crisp and golden, turning gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with naan, raw onion, lemon and a chutney. Crisp, juicy and fragrant — the queen of the Peshawar street."
+   }
+  ]
+ },
+ "chickenkarahi": {
+  "nom": "Chicken Karahi",
+  "description": "Chicken karahi — the Pakistani wok chicken: chicken seared then simmered in a bright sauce of tomato, ginger, garlic and green chilli, with very few spices to let the freshness speak. Cooked and served in the karahi (wok), it's the ultimate convivial dish of Pakistan.",
+  "etapes": [
+   {
+    "titre": "Sear",
+    "detail": "Sear the chicken pieces in the hot oil, over high heat, until they colour."
+   },
+   {
+    "titre": "The garlic-ginger",
+    "detail": "Add the crushed garlic and ginger, and sauté until fragrant."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the cut tomatoes and let them melt into a sauce, over high heat, until the oil separates."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the green chilli, cumin and a little ground coriander (the karahi stays lightly spiced, all freshness)."
+   },
+   {
+    "titre": "The yogurt",
+    "detail": "Stir in a little yogurt to bind and soften the sauce."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the chicken is cooked and the sauce thick and glossy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with julienned ginger, green chilli and fresh coriander, and serve in the karahi with naan. Bright, fresh and convivial — the wok dish of Pakistan."
+   }
+  ]
+ },
+ "bhorta": {
+  "nom": "Aloo Bhorta",
+  "description": "Aloo bhorta — the spiced potato mash of Bangladesh: potatoes hand-mashed with onion, chilli, coriander and plenty of pungent mustard oil. Simple, comforting and surprisingly spicy, it's the ultimate everyday side, served with rice and dal.",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Boil the potatoes until very tender, then peel them."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Char (or fry) the green (or dried) chilli to release its aroma."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Finely slice the onion (raw or lightly fried to taste)."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Hand-mash (or fork-mash) the hot potatoes with the onion, chilli and salt."
+   },
+   {
+    "titre": "The mustard oil",
+    "detail": "Add plenty of raw mustard oil (pungent), which gives bhorta its character."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Stir in the chopped coriander and a dash of lime."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Optionally shape into small balls and serve at room temperature, with hot rice and dal. Simple, spicy and comforting — the everyday side of Bangladesh."
+   }
+  ]
+ },
+ "chingrimalai": {
+  "nom": "Chingri Malai Curry",
+  "description": "Chingri malai curry — the Bengali prawn coconut curry: large prawns simmered in a creamy coconut milk sauce, scented with ginger and warm spices (cinnamon, cardamom). Mild, creamy and delicately spiced, it's a Bengali festive dish, served with rice.",
+  "etapes": [
+   {
+    "titre": "The prawns",
+    "detail": "Peel the large prawns, salt them and rub with turmeric, then briefly sear them. Set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the blended onion, garlic and ginger until golden and fragrant."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the turmeric, chilli and warm spices (cinnamon, cardamom, clove)."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the thick coconut milk and bring gently to a simmer (without hard boiling, so the coconut doesn't split)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Let the sauce simmer and thicken slightly, creamy and fragrant."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the prawns and cook them just enough (they should stay tender)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve with basmati rice. Mild, creamy and delicately spiced — the Bengali festive curry."
+   }
+  ]
+ },
+ "morogpolao": {
+  "nom": "Morog Polao",
+  "description": "Morog polao — the fragrant chicken rice of Bangladesh: basmati rice cooked in a ghee chicken broth, scented with warm spices and kewra water, crowned with tender chicken and fried onions. Milder and more delicate than a biryani, it's the great Bengali festive and wedding dish.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the chicken with the yogurt, ginger, garlic and a little salt."
+   },
+   {
+    "titre": "The fried onions",
+    "detail": "Fry sliced onions in the ghee until golden and crisp (the birista). Set some aside."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Sauté the marinated chicken in the fragrant ghee, with the warm spices (cinnamon, cardamom, clove)."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add water (or broth) and half-cook the chicken, keeping a fragrant broth."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rinsed basmati rice and the right volume of broth, salt, and bring to a simmer."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Cover and cook over very low heat (dum) until the rice is tender and has absorbed the broth, each grain separate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with fried onions, a drizzle of kewra water and serve hot. Mild, fragrant and festive — the Bengali wedding rice."
+   }
+  ]
+ },
+ "idiyappam": {
+  "nom": "Idiyappam",
+  "description": "Idiyappam (string hoppers) — the steamed rice noodle nests: a rice-flour dough pressed into fine strands coiled into little nests, steamed. Soft and delicate, they're eaten at breakfast or dinner with a curry, dhal and sambol, in Sri Lanka and southern India.",
+  "etapes": [
+   {
+    "titre": "The flour",
+    "detail": "Lightly dry-roast the rice flour, then salt it."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Pour boiling water onto the flour little by little, mixing, until you get a soft, warm, malleable dough (like modelling clay)."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Scatter freshly grated coconut in the bottom of the little moulds (idiyappam plates)."
+   },
+   {
+    "titre": "Press",
+    "detail": "Fill an idiyappam press (or a fine piping bag) with dough, and press fine strands in a spiral onto the moulds, in little nests."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the nests 5 to 8 minutes, until the strands are firm and cooked."
+   },
+   {
+    "titre": "Unmould",
+    "detail": "Gently turn out the idiyappam nests, which keep their pretty shape."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a curry, dhal (parippu), a coconut sambol and a kiri hodi (coconut sauce). Soft and delicate — the noodle nests of Sri Lanka."
+   }
+  ]
+ },
+ "lamprais": {
+  "nom": "Lamprais",
+  "description": "Lamprais — the Sri Lankan burgher rice packet: rice cooked in stock, a mixed-meat curry, meatballs (frikkadels), a shrimp sambol (blachan) and aubergine, all wrapped in a banana leaf and baked. A Dutch heritage dish, fragrant and festive.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Cook the rice in a stock scented with warm spices (cinnamon, cardamom, clove) and a little coconut milk: the signature rice of lamprais."
+   },
+   {
+    "titre": "The mixed curry",
+    "detail": "Make a mixed-meat curry (beef, chicken, pork) simmered in spices, thick and fragrant."
+   },
+   {
+    "titre": "The frikkadels",
+    "detail": "Shape small spiced meatballs and fry them (the frikkadels, a Dutch heritage)."
+   },
+   {
+    "titre": "The blachan",
+    "detail": "Make a sambol of dried shrimp, onion and chilli, salty and umami."
+   },
+   {
+    "titre": "The aubergine",
+    "detail": "Fry caramelised aubergine slices (wambatu moju), tangy and sweet."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Arrange the rice, curry, frikkadels, blachan and aubergine on a banana leaf, and fold into a packet."
+   },
+   {
+    "titre": "Bake and serve",
+    "detail": "Bake the packets so the flavours marry and the leaf perfumes the rice. Open at the table. Fragrant, complete and festive — the burgher packet of Sri Lanka."
+   }
+  ]
+ },
+ "kewadatshi": {
+  "nom": "Kewa Datshi",
+  "description": "Kewa datshi — the Bhutanese potato and cheese: thin slices of potato simmered with chilli, onion and a melted local cheese (datshi), into a creamy, spicy sauce. A milder version of the famous ema datshi, it's a comforting staple of the Himalayan kingdom.",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Cut the potatoes into slices or wedges not too thick."
+   },
+   {
+    "titre": "The base",
+    "detail": "In a pot, place the potatoes with the sliced onion, chilli, garlic and a little water."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer until the potatoes are almost tender."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Add the crumbled cheese (datshi, or feta or fresh cheese) and the butter, and let it melt."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the tomato and stir gently to bind the sauce, without crushing the potatoes."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Let it reduce until the sauce is creamy and coats the potatoes (kewa datshi is spicy but not fiery)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with Bhutanese red rice. Creamy, melting and spicy — the comforting staple of Bhutan."
+   }
+  ]
+ },
+ "jashamaru": {
+  "nom": "Jasha Maru",
+  "description": "Jasha maru — the spicy Bhutanese chicken stew: pieces of chicken simmered in a spicy tomato, ginger, garlic and chilli broth, generous with juices. Comforting, fragrant and nicely spiced, it's served in its broth over red rice, an essential of Bhutanese tables.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Cut the chicken into small pieces (bone-in for flavour)."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Sauté the sliced onion, garlic, ginger and chilli in the oil, until fragrant."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Add the chicken and colour it in the aromatics."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the crushed tomato and let it cook down for a few minutes."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add water (or broth), salt, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the chicken is tender and the broth fragrant and lightly spiced (jasha maru is generous with juices)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with fresh coriander and serve in its broth, over red rice. Comforting, fragrant and spicy — the Bhutanese chicken stew."
+   }
+  ]
+ },
+ "oka": {
+  "nom": "Oka",
+  "description": "Oka i'a — the coconut raw fish of Samoa: cubes of very fresh fish marinated in lime juice, then coated in creamy coconut cream, with cucumber, tomato and onion. Fresh, mild and briny, it's the iconic dish of the Pacific, a coconut-bathed cousin of ceviche.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Cut very fresh fish (tuna, bonito, snapper) into even cubes."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Douse generously with lime juice and salt: let the fish 'cook' cold for a few minutes (it whitens at the edges)."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the excess lime juice so the coconut isn't too runny."
+   },
+   {
+    "titre": "The raw vegetables",
+    "detail": "Cut the cucumber, tomato and onion into small dice, and the chilli finely."
+   },
+   {
+    "titre": "The coconut cream",
+    "detail": "Coat the marinated fish in thick coconut cream, which softens the acidity."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Add the raw vegetables and mix gently, salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, at once, in a half coconut shell or a bowl. Fresh, mild and briny — the coconut raw fish of Samoa."
+   }
+  ]
  }
 };
