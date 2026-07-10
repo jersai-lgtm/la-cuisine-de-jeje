@@ -62258,5 +62258,345 @@ window.RECETTES_EN = {
     "detail": "Bake at 200°C for 10 to 12 minutes, until the lussekatter are golden and soft. Serve warm, with mulled wine (glögg). The Swedish Advent."
    }
   ]
+ },
+ "pongal": {
+  "nom": "Ven Pongal",
+  "description": "Ven pongal — the rice and lentil porridge of South India: a creamy mix of rice and moong lentils, scented with pepper, cumin, ginger and cashews toasted in ghee. Comforting and nourishing, it's the breakfast of Tamil temples.",
+  "etapes": [
+   {
+    "titre": "Toast the lentils",
+    "detail": "Dry-toast the moong lentils until golden and fragrant, then rinse them."
+   },
+   {
+    "titre": "Cook rice & lentils",
+    "detail": "Cook the rice and lentils together in plenty of water with the turmeric, until very tender and breaking down into a creamy porridge."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "In hot ghee (clarified butter), sizzle the cumin, cracked pepper, grated ginger and cashews, until the cashews turn golden."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Pour this sizzling tempering into the rice porridge: it instantly releases all its aromas."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix well and adjust the consistency with a little hot water: pongal should be creamy, neither dry nor runny."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper generously. Pepper and cumin are the signature of ven pongal (savoury)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with coconut chutney and sambar. The comforting breakfast of South India, gentle on the stomach."
+   }
+  ]
+ },
+ "avial": {
+  "nom": "Avial",
+  "description": "Avial — the Kerala vegetable stew: an assortment of vegetables cooked in a creamy coconut-and-yogurt sauce, scented with cumin and curry leaves. Mild, creamy and colourful, this vegetarian dish is the heart of the South Indian sadya feast.",
+  "etapes": [
+   {
+    "titre": "Cut the vegetables",
+    "detail": "Cut the vegetables (zucchini, carrot, potato, beans, plantain) into even sticks, of similar size for even cooking."
+   },
+   {
+    "titre": "Cook the vegetables",
+    "detail": "Cook the vegetables with the turmeric and a little water, until just tender but still firm (they mustn't fall apart)."
+   },
+   {
+    "titre": "The coconut paste",
+    "detail": "Blend the coconut (or coconut milk) with the cumin and a little chilli into a coarse paste: the creamy base of avial."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the coconut paste to the cooked vegetables and mix gently, reheating slowly."
+   },
+   {
+    "titre": "The yogurt",
+    "detail": "Off the heat (so it doesn't split), stir in the beaten yogurt: it brings creaminess and a touch of acidity."
+   },
+   {
+    "titre": "Curry & oil",
+    "detail": "Drizzle with raw coconut oil and curry leaves (the final Kerala touch)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with rice. A creamy, mild, colourful vegetable dish, a pillar of the festive sadya meal."
+   }
+  ]
+ },
+ "bisibelebath": {
+  "nom": "Bisi Bele Bath",
+  "description": "Bisi bele bath — the spiced rice of Karnataka: a complete dish of rice, lentils and vegetables simmered with tamarind and a homemade spice blend, topped with toasted cashews. Its name means 'hot lentil rice' — comforting, spicy and tangy.",
+  "etapes": [
+   {
+    "titre": "Cook rice & lentils",
+    "detail": "Cook the rice and toor lentils together with the turmeric, until tender and slightly broken down."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cook the diced vegetables (carrot, peas, beans) until tender."
+   },
+   {
+    "titre": "The tamarind",
+    "detail": "Dissolve the tamarind paste in a little hot water: it brings the characteristic acidity of bisi bele bath."
+   },
+   {
+    "titre": "The masala",
+    "detail": "Add the spice blend (bisi bele bath podi, or garam masala) to the rice-lentils, with the tamarind and vegetables. Mix."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add hot water for a thick risotto consistency, and simmer 10 minutes so the flavours mingle."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "Sizzle the cashews and cumin in the ghee and pour this tempering over the dish."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with papadum chips and raita. A complete, spicy, tangy dish, thoroughly comforting."
+   }
+  ]
+ },
+ "kadhi": {
+  "nom": "Kadhi Pakora",
+  "description": "Kadhi pakora — the Indian yogurt curry: a creamy, tangy sauce of yogurt and chickpea flour, in which onion fritters (pakora) float. Mild, spicy and comforting, it's enjoyed over rice all across northern India.",
+  "etapes": [
+   {
+    "titre": "The yogurt base",
+    "detail": "Whisk the yogurt with the chickpea flour (besan), turmeric and water, into a smooth, fluid mixture without lumps."
+   },
+   {
+    "titre": "The pakoras",
+    "detail": "Mix a little chickpea flour with sliced onion, chilli and spices, and fry small spoonfuls into golden fritters (pakoras). Set aside."
+   },
+   {
+    "titre": "Cook the sauce",
+    "detail": "Pour the yogurt mixture into a pan and bring gently to a simmer, stirring CONSTANTLY (or it splits), then cook over low heat for 20 to 25 minutes: the chickpea flour cooks and the sauce thickens."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "Sizzle the cumin, ginger and chilli in the hot oil, and pour this tempering into the kadhi."
+   },
+   {
+    "titre": "Add the pakoras",
+    "detail": "Drop the pakoras into the sauce a few minutes before serving: they soak in and turn soft."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and adjust the acidity. The kadhi should be creamy, tangy and lightly spiced."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve hot over white rice. A mild, comforting curry, a pillar of northern cuisine."
+   }
+  ]
+ },
+ "undhiyu": {
+  "nom": "Undhiyu",
+  "description": "Undhiyu — the Gujarati winter vegetable stew: an assortment of root vegetables, eggplant and plantains, simmered with chickpea-flour dumplings (muthia) in a green spice paste. Rich, fragrant and festive, the Gujarati winter dish.",
+  "etapes": [
+   {
+    "titre": "The green paste",
+    "detail": "Blend the coriander, ginger, chilli, coconut and a little sugar into a fragrant green paste (the green masala of undhiyu)."
+   },
+   {
+    "titre": "The muthia",
+    "detail": "Mix the chickpea flour with herbs and a little water, form small dumplings and pan-fry them golden. Set aside."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cut the vegetables (eggplant, potato, plantain, beans) into large pieces and stuff them with green paste if possible."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Sauté the vegetables in the oil with the rest of the green paste, add a little water and coconut milk, cover and simmer 25 minutes over low heat."
+   },
+   {
+    "titre": "Add the muthia",
+    "detail": "Add the chickpea dumplings at the end and let them soak in for 5 minutes."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and adjust. Undhiyu should be tender, fragrant and slightly sweet-spicy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve hot with puris or rice. A rich, festive vegetable dish, the heart of the Uttarayan festival."
+   }
+  ]
+ },
+ "puranpoli": {
+  "nom": "Puran Poli",
+  "description": "Puran poli — the stuffed sweet flatbread of Maharashtra: a thin soft flatbread filled with a lentil-and-jaggery paste scented with cardamom, cooked in ghee. Rich and comforting, it celebrates festivals like Holi and Ganesh Chaturthi.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour with a little oil, salt and water into a soft, elastic dough. Let rest 30 minutes."
+   },
+   {
+    "titre": "The puran",
+    "detail": "Cook the lentils (chana dal) until very tender, drain, then cook them down with the jaggery (or sugar) into a thick paste."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Flavour the puran with ground cardamom (and nutmeg), then mash it finely into a smooth paste."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Roll out discs of dough, place a ball of puran in the centre, close the dough around it and gently roll out again into a thin flatbread."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the puran poli on a griddle (tawa) with a little ghee, until golden and speckled on both sides."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Brush with ghee straight off the griddle: they stay soft and glossy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, drizzled with ghee or milk. Rich, sweet and fragrant — the festive treat of Maharashtra."
+   }
+  ]
+ },
+ "mysorepak": {
+  "nom": "Mysore Pak",
+  "description": "Mysore pak — the chickpea fudge of Karnataka: a rich confection of chickpea flour, sugar and lots of ghee, cooked until melting and porous. Born in the kitchens of the Mysore palace, it's a royal sweet of South India.",
+  "etapes": [
+   {
+    "titre": "Heat the ghee",
+    "detail": "Melt and heat a good quantity of ghee (clarified butter): it needs to be hot and abundant, it's what makes mysore pak melting."
+   },
+   {
+    "titre": "Toast the flour",
+    "detail": "Lightly dry-toast the chickpea flour (besan), then sift it to avoid lumps."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Make a sugar syrup: boil the sugar and a little water to the 'thread' stage (a drop forms a thread between the fingers)."
+   },
+   {
+    "titre": "Incorporate",
+    "detail": "Add the chickpea flour to the syrup while whisking constantly, then work in the hot ghee little by little: the mixture froths, turns porous and glossy."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Keep stirring over the heat until the mixture pulls away from the sides and the ghee begins to slightly seep out (a sign it's ready)."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour immediately into a buttered tin, smooth, and mark squares while still hot."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let set then turn out and cut into squares. Melting, rich and porous — the royal confection of Mysore, to savour in small bites."
+   }
+  ]
+ },
+ "payasam": {
+  "nom": "Payasam",
+  "description": "Payasam — the fragrant rice pudding of South India: a creamy dessert of rice (or vermicelli) simmered in sweet cardamom milk, topped with cashews and raisins fried in ghee. Smooth and festive, it closes celebration meals and ceremonies.",
+  "etapes": [
+   {
+    "titre": "Cook the rice",
+    "detail": "Cook the rice (or toasted vermicelli) in a little water until tender."
+   },
+   {
+    "titre": "The milk",
+    "detail": "Add the milk and simmer over low heat, stirring regularly, until the rice is soft and the milk slightly reduced and creamy."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the sugar (or jaggery) and let it dissolve while stirring, 5 minutes."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the ground cardamom and saffron steeped in a little hot milk: they delicately flavour and colour the payasam."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "Fry the cashews and raisins in the ghee, until the cashews are golden and the raisins plump."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Pour the golden cashews and raisins (with the ghee) over the payasam and mix."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot or cold (it thickens as it cools, loosen with milk if needed). Smooth and fragrant — the festive dessert of South India."
+   }
+  ]
+ },
+ "modak": {
+  "nom": "Modak",
+  "description": "Modak — the steamed sweets of Lord Ganesh: delicate rice-flour pouches filled with a coconut-and-jaggery paste scented with cardamom, steamed. Ganesh's favourite offering, they're the sweet emblem of his festival.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Cook the grated coconut down with the jaggery (or sugar) until the mixture is thick and bound. Flavour with cardamom."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Bring water to a boil with a little ghee and salt, then tip in the rice flour all at once, stirring. Cover and let rest, then knead into a smooth, soft dough."
+   },
+   {
+    "titre": "Form the shells",
+    "detail": "Take small balls of dough and shape them into thin cups with your fingertips (by hand, or in a modak mould)."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a spoon of coconut filling in the centre of each cup."
+   },
+   {
+    "titre": "Pleat",
+    "detail": "Bring up the edges of the dough into fine pleats that you gather at the top into a point (the characteristic modak shape, like a flower bud)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam the modak for 12 to 15 minutes, until the dough turns translucent and glossy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, drizzled with ghee. Delicate and fragrant — the sweet offering of Ganesh Chaturthi, to enjoy with reverence and delight."
+   }
+  ]
+ },
+ "thepla": {
+  "nom": "Thepla",
+  "description": "Thepla — the spiced flatbreads of Gujarat: thin soft flatbreads of flour, yogurt and fenugreek leaves, seasoned with turmeric and chilli. Nourishing and long-keeping, they're the ultimate travel flatbreads of Gujarati families.",
+  "etapes": [
+   {
+    "titre": "The herbs",
+    "detail": "Finely chop the fenugreek leaves (methi, or spinach). Grate the ginger and slice the chilli."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the (wholewheat) flour, chopped herbs, yogurt, turmeric, cumin, a little oil and salt. Add water little by little to form a soft dough."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Knead the dough for a few minutes, then let it rest 15 minutes."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Divide the dough into balls and roll them into thin round flatbreads on a floured surface."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook each thepla on a hot griddle (tawa) 1 minute per side, brushing with a little oil, until speckled and cooked."
+   },
+   {
+    "titre": "Check",
+    "detail": "The thepla should be soft and supple, not crisp. Stack them as you go under a cloth so they stay tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with yogurt, a mango pickle or chutney. They keep for several days and travel well — the nomadic flatbreads of Gujarat."
+   }
+  ]
  }
 };

@@ -3811,4 +3811,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, parsemé d'aneth frais, avec du pain de seigle beurré. La soupe réconfortante des hivers finlandais.", badge: null }
     ]
   },
+  kadhi: {
+    dateAjout: "2026-07-10T09:23:00",
+    nom: "Kadhi Pakora",
+    cat: "soupes", pays: "inde",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Kadhi pakora — le curry de yaourt indien : une sauce onctueuse et acidulée à base de yaourt et de farine de pois chiche, dans laquelle flottent des beignets d'oignon (pakora). Doux, épicé et réconfortant, il se déguste sur du riz dans tout le Nord de l'Inde.",
+    tableauKadhi: [
+      { nb: 1, yaourt: "80 g", farinepoischiche: "15 g", curcuma: "1 g", cumin: "1 g", gingembre: "2 g", piment: "0.5 g", huileolive: "6 ml", coriandre: "3 g", sel: "2 g" },
+      { nb: 2, yaourt: "160 g", farinepoischiche: "30 g", curcuma: "2 g", cumin: "2 g", gingembre: "4 g", piment: "1 g", huileolive: "12 ml", coriandre: "6 g", sel: "4 g" },
+      { nb: 3, yaourt: "240 g", farinepoischiche: "45 g", curcuma: "3 g", cumin: "3 g", gingembre: "6 g", piment: "1.5 g", huileolive: "18 ml", coriandre: "9 g", sel: "6 g" },
+      { nb: 4, yaourt: "320 g", farinepoischiche: "60 g", curcuma: "4 g", cumin: "4 g", gingembre: "8 g", piment: "2 g", huileolive: "24 ml", coriandre: "12 g", sel: "8 g" },
+      { nb: 5, yaourt: "400 g", farinepoischiche: "75 g", curcuma: "5 g", cumin: "5 g", gingembre: "10 g", piment: "2.5 g", huileolive: "30 ml", coriandre: "15 g", sel: "10 g" },
+      { nb: 6, yaourt: "480 g", farinepoischiche: "90 g", curcuma: "6 g", cumin: "6 g", gingembre: "12 g", piment: "3 g", huileolive: "36 ml", coriandre: "18 g", sel: "12 g" },
+      { nb: 7, yaourt: "560 g", farinepoischiche: "105 g", curcuma: "7 g", cumin: "7 g", gingembre: "14 g", piment: "3.5 g", huileolive: "42 ml", coriandre: "21 g", sel: "14 g" },
+      { nb: 8, yaourt: "640 g", farinepoischiche: "120 g", curcuma: "8 g", cumin: "8 g", gingembre: "16 g", piment: "4 g", huileolive: "48 ml", coriandre: "24 g", sel: "16 g" },
+      { nb: 9, yaourt: "720 g", farinepoischiche: "135 g", curcuma: "9 g", cumin: "9 g", gingembre: "18 g", piment: "4.5 g", huileolive: "54 ml", coriandre: "27 g", sel: "18 g" },
+      { nb: 10, yaourt: "800 g", farinepoischiche: "150 g", curcuma: "10 g", cumin: "10 g", gingembre: "20 g", piment: "5 g", huileolive: "60 ml", coriandre: "30 g", sel: "20 g" },
+      { nb: 11, yaourt: "880 g", farinepoischiche: "165 g", curcuma: "11 g", cumin: "11 g", gingembre: "22 g", piment: "5.5 g", huileolive: "66 ml", coriandre: "33 g", sel: "22 g" },
+      { nb: 12, yaourt: "960 g", farinepoischiche: "180 g", curcuma: "12 g", cumin: "12 g", gingembre: "24 g", piment: "6 g", huileolive: "72 ml", coriandre: "36 g", sel: "24 g" },
+      { nb: 13, yaourt: "1040 g", farinepoischiche: "195 g", curcuma: "13 g", cumin: "13 g", gingembre: "26 g", piment: "6.5 g", huileolive: "78 ml", coriandre: "39 g", sel: "26 g" },
+      { nb: 14, yaourt: "1120 g", farinepoischiche: "210 g", curcuma: "14 g", cumin: "14 g", gingembre: "28 g", piment: "7 g", huileolive: "84 ml", coriandre: "42 g", sel: "28 g" },
+      { nb: 15, yaourt: "1200 g", farinepoischiche: "225 g", curcuma: "15 g", cumin: "15 g", gingembre: "30 g", piment: "7.5 g", huileolive: "90 ml", coriandre: "45 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La base yaourt", detail: "Fouettez le yaourt avec la farine de pois chiche (besan), le curcuma et de l'eau, jusqu'à obtenir un mélange lisse et fluide sans grumeaux.", badge: null },
+      { icone: "🍟", titre: "Les pakoras", detail: "Mélangez un peu de farine de pois chiche avec de l'oignon émincé, du piment et des épices, et faites frire de petites cuillerées en beignets dorés (pakoras). Réservez.", badge: null },
+      { icone: "♨️", titre: "Cuire la sauce", detail: "Versez le mélange de yaourt dans une casserole et portez doucement à frémissement en remuant SANS CESSE (sinon il tranche), puis laissez cuire à feu doux 20 à 25 min : la farine de pois chiche cuit et la sauce épaissit.", badge: null },
+      { icone: "🔥", titre: "Le tempering", detail: "Faites grésiller le cumin, le gingembre et le piment dans l'huile chaude, et versez ce tempering dans la kadhi.", badge: null },
+      { icone: "🍟", titre: "Ajouter les pakoras", detail: "Plongez les pakoras dans la sauce quelques minutes avant de servir : ils s'imbibent et deviennent moelleux.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Salez et rectifiez l'acidité. La kadhi doit être onctueuse, acidulée et légèrement épicée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez de coriandre et servez chaud sur du riz blanc. Un curry doux et réconfortant, pilier de la cuisine du Nord.", badge: null }
+    ]
+  },
 });

@@ -4180,4 +4180,41 @@ Object.assign(recettes, {
       { icone: "🥥", titre: "Servir", detail: "Servez chaud avec un chutney de coco, un chutney à la menthe et du sambar. Le petit-déjeuner salé du Sud de l'Inde.", badge: null }
     ]
   },
+  thepla: {
+    dateAjout: "2026-07-10T09:29:00",
+    nom: "Thepla",
+    cat: "encas", pays: "inde",
+    base: 4,
+    temps: "35 min",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Thepla — les galettes épicées du Gujarat : de fines galettes moelleuses à base de farine, de yaourt et de feuilles de fenugrec, relevées de curcuma et de piment. Nourrissantes et longue conservation, ce sont les galettes de voyage par excellence des familles gujaraties.",
+    tableauThepla: [
+      { nb: 1, farine: "45 g", epinards: "30 g", yaourt: "15 g", curcuma: "0.5 g", cumin: "1 g", gingembre: "2 g", piment: "0.5 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, farine: "90 g", epinards: "60 g", yaourt: "30 g", curcuma: "1 g", cumin: "2 g", gingembre: "4 g", piment: "1 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, farine: "135 g", epinards: "90 g", yaourt: "45 g", curcuma: "1.5 g", cumin: "3 g", gingembre: "6 g", piment: "1.5 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, farine: "180 g", epinards: "120 g", yaourt: "60 g", curcuma: "2 g", cumin: "4 g", gingembre: "8 g", piment: "2 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, farine: "225 g", epinards: "150 g", yaourt: "75 g", curcuma: "2.5 g", cumin: "5 g", gingembre: "10 g", piment: "2.5 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, farine: "270 g", epinards: "180 g", yaourt: "90 g", curcuma: "3 g", cumin: "6 g", gingembre: "12 g", piment: "3 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, farine: "315 g", epinards: "210 g", yaourt: "105 g", curcuma: "3.5 g", cumin: "7 g", gingembre: "14 g", piment: "3.5 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, farine: "360 g", epinards: "240 g", yaourt: "120 g", curcuma: "4 g", cumin: "8 g", gingembre: "16 g", piment: "4 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, farine: "405 g", epinards: "270 g", yaourt: "135 g", curcuma: "4.5 g", cumin: "9 g", gingembre: "18 g", piment: "4.5 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, farine: "450 g", epinards: "300 g", yaourt: "150 g", curcuma: "5 g", cumin: "10 g", gingembre: "20 g", piment: "5 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, farine: "495 g", epinards: "330 g", yaourt: "165 g", curcuma: "5.5 g", cumin: "11 g", gingembre: "22 g", piment: "5.5 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, farine: "540 g", epinards: "360 g", yaourt: "180 g", curcuma: "6 g", cumin: "12 g", gingembre: "24 g", piment: "6 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, farine: "585 g", epinards: "390 g", yaourt: "195 g", curcuma: "6.5 g", cumin: "13 g", gingembre: "26 g", piment: "6.5 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, farine: "630 g", epinards: "420 g", yaourt: "210 g", curcuma: "7 g", cumin: "14 g", gingembre: "28 g", piment: "7 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, farine: "675 g", epinards: "450 g", yaourt: "225 g", curcuma: "7.5 g", cumin: "15 g", gingembre: "30 g", piment: "7.5 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Les herbes", detail: "Hachez finement les feuilles de fenugrec (methi, à défaut des épinards). Râpez le gingembre et émincez le piment.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine (de blé complet), les herbes hachées, le yaourt, le curcuma, le cumin, un peu d'huile et le sel. Ajoutez de l'eau petit à petit pour former une pâte souple.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Pétrissez la pâte quelques minutes, puis laissez-la reposer 15 min.", badge: null },
+      { icone: "⭕", titre: "Abaisser", detail: "Divisez la pâte en boules et abaissez-les en galettes fines et rondes sur un plan fariné.", badge: null },
+      { icone: "🍳", titre: "Cuire", detail: "Faites cuire chaque thepla à la poêle chaude (tawa) 1 min par face, en badigeonnant d'un peu d'huile, jusqu'à ce qu'elle soit tachetée et cuite.", badge: null },
+      { icone: "🔎", titre: "Vérifier", detail: "Le thepla doit être souple et moelleux, pas croustillant. Empilez-les au fur et à mesure sous un linge pour qu'ils restent tendres.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes avec du yaourt, un pickle de mangue ou du chutney. Ils se conservent plusieurs jours et voyagent bien — les galettes nomades du Gujarat.", badge: null }
+    ]
+  },
 });
