@@ -64264,5 +64264,345 @@ window.RECETTES_EN = {
     "detail": "Let cool completely: they harden as they cool. Serve with mint tea. They keep for weeks."
    }
   ]
+ },
+ "shannoodles": {
+  "nom": "Shan Noodles",
+  "description": "Shan noodles (shan khao swè) — the dish of the Burmese highlands: rice noodles topped with a spiced tomato-and-marinated-chicken sauce, scattered with peanuts and spring onion. Comforting, umami and lightly spicy, served in a bowl or as a salad.",
+  "etapes": [
+   {
+    "titre": "Marinate the chicken",
+    "detail": "Slice the chicken and marinate it with the garlic, ginger, soy sauce and turmeric."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the rice noodles until soft, rinse in cold water and drain."
+   },
+   {
+    "titre": "Cook the chicken",
+    "detail": "Sauté the marinated chicken in the oil until golden and cooked."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the crushed tomato, chilli and a little water, and simmer into a thick, fragrant sauce."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Top the warm noodles with the chicken sauce (or serve the sauce on the side to mix at the table)."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Scatter with crushed peanuts, spring onion and crispy fried onion."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with a squeeze of lemon and a little chilli. Umami, comforting and fragrant — the iconic noodles of Shan State."
+   }
+  ]
+ },
+ "amok": {
+  "nom": "Amok Trey",
+  "description": "Amok trey — the Khmer steamed fish curry: a fish mousse coated in a spice paste (kroeung) with coconut milk and lemongrass, steamed in a banana leaf. Smooth, fragrant and delicate, it's the national dish of Cambodia.",
+  "etapes": [
+   {
+    "titre": "The kroeung",
+    "detail": "Blend the lemongrass, galangal, garlic, turmeric and chilli into a fragrant spice paste (the kroeung, base of Khmer cuisine)."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Cut the white fish into pieces and mix it with the spice paste, sugar and fish sauce."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Work in the thick coconut milk and the egg little by little, whisking: the mixture turns mousse-like and smooth (this is amok, between curry and custard)."
+   },
+   {
+    "titre": "The cups",
+    "detail": "Pour the mixture into banana-leaf cups (or ramekins), lined with green leaves (cabbage, spinach)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 20 to 25 minutes, until the amok is set, mousse-like and wobbly."
+   },
+   {
+    "titre": "Top",
+    "detail": "Top with a drizzle of thick coconut cream."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Decorate with chilli and kaffir leaf, and serve hot with rice. Smooth, fragrant and delicate — the Cambodian national dish."
+   }
+  ]
+ },
+ "khaopoon": {
+  "nom": "Khao Poun",
+  "description": "Khao poun — the Lao coconut vermicelli soup: rice vermicelli in a creamy, spicy chicken broth with lemongrass and galangal, topped with fresh herbs and raw vegetables. Comforting and fragrant, it's the festive dish of Laos.",
+  "etapes": [
+   {
+    "titre": "The spice paste",
+    "detail": "Blend the lemongrass, galangal, garlic and chilli into a fragrant paste."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Sauté the spice paste, add the chicken and colour it, then add broth and bring to a simmer."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Add the coconut milk and fish sauce, and simmer 20 minutes: the broth turns creamy and fragrant, and the chicken tender."
+   },
+   {
+    "titre": "The vermicelli",
+    "detail": "Soak then cook the rice vermicelli, rinse and divide into the bowls."
+   },
+   {
+    "titre": "The raw vegetables",
+    "detail": "Prepare an assortment of raw vegetables and fresh herbs (lettuce, bean sprouts, mint, coriander, banana flower)."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the scalding coconut broth over the vermicelli."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top freely with raw vegetables, herbs and lime, and mix. Comforting, creamy and fragrant — the Lao festive dish."
+   }
+  ]
+ },
+ "tammakhoong": {
+  "nom": "Tam Mak Hoong",
+  "description": "Tam mak hoong — the Lao green papaya salad: shredded green papaya pounded with tomatoes, garlic, chilli, lime and fish sauce. Crunchy, tangy and very spicy, it's the Lao version, more rustic and powerful than Thai som tam.",
+  "etapes": [
+   {
+    "titre": "The papaya",
+    "detail": "Shred the green papaya into fine sticks (or a mix of shredded carrot and cabbage). It should be crunchy."
+   },
+   {
+    "titre": "The mortar",
+    "detail": "In a large mortar, pound the garlic, chilli (dose to your tolerance!) and a little sugar to release the aromas."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Add the quartered tomatoes and pound them lightly so they release their juice."
+   },
+   {
+    "titre": "The seasoning",
+    "detail": "Add the lime juice, fish sauce (padaek in Laos) and adjust the sour-salty-sweet-spicy balance."
+   },
+   {
+    "titre": "The shredded papaya",
+    "detail": "Add the shredded papaya and pound-mix gently (lifting with a spoon) to coat it in sauce without crushing it."
+   },
+   {
+    "titre": "Peanuts",
+    "detail": "Add the crushed peanuts and mix."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, fresh and crunchy, with sticky rice and raw vegetables. Tangy, crunchy and powerfully spicy — the iconic salad of Laos."
+   }
+  ]
+ },
+ "baisachchrouk": {
+  "nom": "Bai Sach Chrouk",
+  "description": "Bai sach chrouk — the Khmer breakfast: thinly sliced pork marinated in garlic and coconut milk then grilled, served over broken rice with cucumber pickles. Simple, smoky and comforting, it's the ultimate street breakfast of Cambodia.",
+  "etapes": [
+   {
+    "titre": "Marinate the pork",
+    "detail": "Slice the pork thinly and marinate it with crushed garlic, a little coconut milk, sugar and soy sauce, for at least 1 hour: the marinade makes it tender and sweet-savoury."
+   },
+   {
+    "titre": "The broken rice",
+    "detail": "Cook the broken rice (or regular rice): the base of the dish."
+   },
+   {
+    "titre": "The pickles",
+    "detail": "Make cucumber pickles: mix the sliced cucumber with a little vinegar, sugar and salt, and let marinate."
+   },
+   {
+    "titre": "Grill the pork",
+    "detail": "Grill the marinated pork slices over high heat (barbecue or griddle), until caramelised and slightly smoky at the edges."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate a portion of hot rice in a bowl or plate."
+   },
+   {
+    "titre": "Add the pork",
+    "detail": "Arrange the grilled pork over the rice, with the cucumber pickles on the side."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a bowl of clear broth (sometimes with an egg) on the side, Khmer-style. Simple, smoky and comforting — the street breakfast of Cambodia."
+   }
+  ]
+ },
+ "kuyteav": {
+  "nom": "Kuy Teav",
+  "description": "Kuy teav — the Khmer morning noodle soup: a clear, fragrant pork broth served over rice noodles with pork, shrimp and a profusion of fresh toppings. Light, comforting and customisable, it's the street breakfast of Cambodia.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Make a clear, fragrant pork broth (with bones, daikon, roasted garlic and a little cane sugar), long-simmered then strained."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Soak then cook the rice noodles until soft, rinse and divide into the bowls."
+   },
+   {
+    "titre": "The proteins",
+    "detail": "Quickly cook the sliced pork and shrimp in the simmering broth."
+   },
+   {
+    "titre": "The fried garlic",
+    "detail": "Brown the sliced garlic in a little oil until crisp: the signature fragrant garnish."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the scalding broth, pork and shrimp over the noodles."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Top with bean sprouts, lettuce, spring onion, fried garlic and fresh herbs."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with lime, chilli and soy sauce on the side, to adjust at the table. Light, comforting and customisable — the Khmer breakfast."
+   }
+  ]
+ },
+ "opor": {
+  "nom": "Opor Ayam",
+  "description": "Opor ayam — the Indonesian white chicken curry: chicken simmered in a mild, fragrant coconut milk (lemongrass, galangal, coriander), without strong chilli. Creamy and delicately spiced, it's the traditional dish of Eid (Lebaran), served with rice and ketupat.",
+  "etapes": [
+   {
+    "titre": "The spice paste",
+    "detail": "Blend the onion, garlic, ginger, turmeric and coriander into a fragrant paste (bumbu), the mild base of opor."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté the spice paste in the oil with the crushed lemongrass and kaffir leaves, until fragrant."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Add the chicken and lightly colour it in the spice paste."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and a little water, season, and bring gently to a simmer (without boiling hard, so the coconut doesn't split)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 30 minutes over low heat, until the chicken is tender and the sauce smooth and fragrant."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover and let it reduce slightly: the sauce should be creamy, white and delicately spiced (not spicy)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with rice, ketupat (rice cake) and fried onions. Creamy and mild — the traditional dish of Eid in Indonesia."
+   }
+  ]
+ },
+ "semur": {
+  "nom": "Semur",
+  "description": "Semur — the Indonesian sweet beef stew: beef simmered in a dark sauce with kecap manis (sweet soy sauce), nutmeg and clove, with potatoes. Mild, spiced and comforting, this Dutch-influenced stew is a Javanese table classic.",
+  "etapes": [
+   {
+    "titre": "Sear the beef",
+    "detail": "Brown the beef cubes in the hot oil, then set them aside."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Sauté the sliced onion, garlic and ginger until soft and golden."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the nutmeg, ground clove and a little cinnamon: the warm signature spices of semur."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Return the beef, add the kecap manis (sweet soy sauce, or soy sauce + sugar) and water, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 1 hour over low heat, until the beef is tender and the sauce dark and syrupy."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the potatoes in pieces and continue 20 minutes until tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with fried onions and serve hot with rice. Mild, spiced and comforting — the iconic sweet-savoury stew of Java."
+   }
+  ]
+ },
+ "sayurlodeh": {
+  "nom": "Sayur Lodeh",
+  "description": "Sayur lodeh — the Indonesian coconut vegetable curry: an assortment of vegetables and tofu simmered in a coconut broth scented with lemongrass and turmeric. Mild, creamy and comforting, it's an everyday vegetarian dish in Java.",
+  "etapes": [
+   {
+    "titre": "The spice paste",
+    "detail": "Blend the garlic, onion, turmeric and chilli into a fragrant paste (bumbu)."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Sauté the spice paste in the oil with the crushed lemongrass and a bay leaf, until fragrant."
+   },
+   {
+    "titre": "The hard vegetables",
+    "detail": "Add the carrot and beans (and cabbage), and sauté 3 minutes."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and a little water, season, and bring gently to a simmer."
+   },
+   {
+    "titre": "The tofu",
+    "detail": "Add the diced tofu and simmer 12 minutes, until the vegetables are tender but still firm."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust the salt and chilli. The sauce should be creamy, golden and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with rice and crackers (kerupuk). Mild, creamy and comforting — the everyday Indonesian vegetable curry."
+   }
+  ]
+ },
+ "arrozcaldo": {
+  "nom": "Arroz Caldo",
+  "description": "Arroz caldo — the Filipino chicken rice porridge: rice simmered in a ginger-and-garlic-rich chicken broth until creamy, topped with egg, fried onion and lemon. Comforting and hearty, it's the anti-cold and anti-flu remedy of the Philippines.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Sauté the julienned garlic and ginger in the oil until fragrant, then add the onion and chicken, and colour."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rinsed rice and sauté 1 minute to coat it in the aromatics."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Pour in plenty of chicken broth and the fish sauce, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cook over low heat, stirring regularly, until the rice is very tender and breaks down into a creamy porridge (about 30 minutes). Add broth if needed."
+   },
+   {
+    "titre": "The fried garlic",
+    "detail": "Brown sliced garlic in oil until crisp: the signature garnish."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Serve the porridge in bowls, topped with half a hard-boiled egg, crispy fried garlic, spring onion and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a lemon (calamansi) wedge to squeeze. Comforting and hearty — the anti-cold remedy of the Philippines, to enjoy piping hot."
+   }
+  ]
  }
 };

@@ -2370,4 +2370,41 @@ Object.assign(recettes, {
       { icone: "🍚", titre: "Servir", detail: "Servez bien fraîche, en accompagnement d'un riz persan, d'un kebab ou d'un ragoût. La fraîcheur acidulée qui équilibre les plats iraniens.", badge: null }
     ]
   },
+  tammakhoong: {
+    dateAjout: "2026-07-10T10:23:00",
+    nom: "Tam Mak Hoong",
+    cat: "salades", pays: "laos",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥗",
+    description: "Tam mak hoong — la salade de papaye verte laotienne : de la papaye verte râpée pilée avec des tomates, de l'ail, du piment, du citron vert et de la sauce poisson. Croquante, acidulée et très relevée, c'est la version laotienne, plus rustique et puissante que le som tam thaï.",
+    tableauTammakhoong: [
+      { nb: 1, carotte: "50 g", chou: "30 g", tomates: "½", cacahuete: "8 g", ail: "1", piment: "1.5 g", citronvert: "½", nuocmam: "6 ml", sucre: "4 g", sel: "1 g" },
+      { nb: 2, carotte: "100 g", chou: "60 g", tomates: "1", cacahuete: "16 g", ail: "2", piment: "3 g", citronvert: "1", nuocmam: "12 ml", sucre: "8 g", sel: "2 g" },
+      { nb: 3, carotte: "150 g", chou: "90 g", tomates: "1½", cacahuete: "24 g", ail: "3", piment: "4.5 g", citronvert: "1½", nuocmam: "18 ml", sucre: "12 g", sel: "3 g" },
+      { nb: 4, carotte: "200 g", chou: "120 g", tomates: "2", cacahuete: "32 g", ail: "4", piment: "6 g", citronvert: "2", nuocmam: "24 ml", sucre: "16 g", sel: "4 g" },
+      { nb: 5, carotte: "250 g", chou: "150 g", tomates: "2½", cacahuete: "40 g", ail: "5", piment: "7.5 g", citronvert: "2½", nuocmam: "30 ml", sucre: "20 g", sel: "5 g" },
+      { nb: 6, carotte: "300 g", chou: "180 g", tomates: "3", cacahuete: "48 g", ail: "6", piment: "9 g", citronvert: "3", nuocmam: "36 ml", sucre: "24 g", sel: "6 g" },
+      { nb: 7, carotte: "350 g", chou: "210 g", tomates: "3½", cacahuete: "56 g", ail: "7", piment: "10.5 g", citronvert: "3½", nuocmam: "42 ml", sucre: "28 g", sel: "7 g" },
+      { nb: 8, carotte: "400 g", chou: "240 g", tomates: "4", cacahuete: "64 g", ail: "8", piment: "12 g", citronvert: "4", nuocmam: "48 ml", sucre: "32 g", sel: "8 g" },
+      { nb: 9, carotte: "450 g", chou: "270 g", tomates: "4½", cacahuete: "72 g", ail: "9", piment: "13.5 g", citronvert: "4½", nuocmam: "54 ml", sucre: "36 g", sel: "9 g" },
+      { nb: 10, carotte: "500 g", chou: "300 g", tomates: "5", cacahuete: "80 g", ail: "10", piment: "15 g", citronvert: "5", nuocmam: "60 ml", sucre: "40 g", sel: "10 g" },
+      { nb: 11, carotte: "550 g", chou: "330 g", tomates: "5½", cacahuete: "88 g", ail: "11", piment: "16.5 g", citronvert: "5½", nuocmam: "66 ml", sucre: "44 g", sel: "11 g" },
+      { nb: 12, carotte: "600 g", chou: "360 g", tomates: "6", cacahuete: "96 g", ail: "12", piment: "18 g", citronvert: "6", nuocmam: "72 ml", sucre: "48 g", sel: "12 g" },
+      { nb: 13, carotte: "650 g", chou: "390 g", tomates: "6½", cacahuete: "104 g", ail: "13", piment: "19.5 g", citronvert: "6½", nuocmam: "78 ml", sucre: "52 g", sel: "13 g" },
+      { nb: 14, carotte: "700 g", chou: "420 g", tomates: "7", cacahuete: "112 g", ail: "14", piment: "21 g", citronvert: "7", nuocmam: "84 ml", sucre: "56 g", sel: "14 g" },
+      { nb: 15, carotte: "750 g", chou: "450 g", tomates: "7½", cacahuete: "120 g", ail: "15", piment: "22.5 g", citronvert: "7½", nuocmam: "90 ml", sucre: "60 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥭", titre: "La papaye", detail: "Râpez la papaye verte en fins bâtonnets (à défaut, un mélange de carotte et de chou râpés). Elle doit être croquante.", badge: null },
+      { icone: "🧄", titre: "Le pilon", detail: "Dans un grand mortier, pilez l'ail, le piment (dosez selon votre tolérance !) et un peu de sucre pour libérer les arômes.", badge: null },
+      { icone: "🍅", titre: "Les tomates", detail: "Ajoutez les tomates coupées en quartiers et pilez-les légèrement pour qu'elles rendent leur jus.", badge: null },
+      { icone: "🍋", titre: "L'assaisonnement", detail: "Ajoutez le jus de citron vert, la sauce poisson (padaek au Laos) et rectifiez l'équilibre acide-salé-sucré-piquant.", badge: null },
+      { icone: "🥗", titre: "La papaye râpée", detail: "Ajoutez la papaye râpée et pilez-mélangez délicatement (en soulevant à la cuillère) pour l'imprégner de sauce sans l'écraser.", badge: null },
+      { icone: "🥜", titre: "Cacahuètes", detail: "Ajoutez les cacahuètes concassées et mélangez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, bien fraîche et croquante, avec du riz gluant et des crudités. Acidulée, croquante et puissamment relevée — la salade emblématique du Laos.", badge: null }
+    ]
+  },
 });
