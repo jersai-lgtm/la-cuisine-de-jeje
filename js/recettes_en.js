@@ -65964,5 +65964,345 @@ window.RECETTES_EN = {
     "detail": "Squeeze over a little lime and serve in corn tortillas with onion, coriander and salsa. Tender, crisp and fragrant — the confit pork of Michoacán."
    }
   ]
+ },
+ "watalappan": {
+  "nom": "Watalappan",
+  "description": "Watalappan — the Sinhalese palm sugar and coconut custard: a silky cream of eggs, coconut milk and kithul (palm sugar), scented with cardamom and nutmeg, steamed until set. Of Malay origin, amber and delicately spiced, it's the dessert of big festivals in Sri Lanka.",
+  "etapes": [
+   {
+    "titre": "The palm sugar",
+    "detail": "Melt the kithul (or brown/muscovado sugar) with a little water into a thick, amber syrup, then let it cool."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Mix the thick coconut milk into the cooled palm sugar syrup."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Beat the eggs without frothing, then whisk them gently into the coconut-sugar mixture."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the ground cardamom, grated nutmeg and a pinch of salt: the signature spices of watalappan."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass the custard through a sieve for a perfectly smooth texture, then pour it into ramekins."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam (or bain-marie) 25 to 30 minutes, until the custard is set but still wobbly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with roasted cashews and coconut, let cool then refrigerate. Serve chilled. Amber, silky and spiced — the festive custard of Sri Lanka."
+   }
+  ]
+ },
+ "zongzi": {
+  "nom": "Zongzi",
+  "description": "Zongzi — the sticky rice pyramids in bamboo leaf: glutinous rice enclosed with marinated pork, mushroom and peanut in a bamboo leaf, tied then long-boiled. Scented with the leaf, comforting, they're the iconic bites of the Dragon Boat Festival.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Soak the bamboo leaves in hot water to soften them, then rinse and wipe them."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Soak the glutinous rice for several hours, drain it and season with a little soy sauce and oil."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Marinate the pork in soy sauce and spices, and prepare the rehydrated mushroom, peanut and salted egg yolk."
+   },
+   {
+    "titre": "The cone",
+    "detail": "Fold a bamboo leaf into a cone, fill it with rice, filling then rice, packing well."
+   },
+   {
+    "titre": "Tie",
+    "detail": "Fold the leaf to form a tightly closed pyramid, and tie it firmly (the technical step of zongzi)."
+   },
+   {
+    "titre": "Boil",
+    "detail": "Drop the zongzi into plenty of boiling water and cook 1 hour 30 to 2 hours: the rice turns translucent and bamboo-scented."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain, let cool slightly, then untie and open the leaf. Serve hot (savoury) or with syrup (sweet). Fragrant and comforting — the bites of the Dragon Boat Festival."
+   }
+  ]
+ },
+ "douhua": {
+  "nom": "Douhua",
+  "description": "Douhua — the silken tofu with ginger syrup: an extremely soft soy milk custard, barely set, served warm and drizzled with a brown-sugar ginger syrup. Melting, comforting and delicately fragrant, it's the gentle dessert (or snack) of China's streets.",
+  "etapes": [
+   {
+    "titre": "The soy milk",
+    "detail": "Prepare (or heat) a very smooth, unsweetened soy milk, to about 80°C."
+   },
+   {
+    "titre": "The coagulant",
+    "detail": "Dissolve a little gentle setting agent (glucono-delta-lactone, or a starch mix) in the bottom of a large bowl."
+   },
+   {
+    "titre": "Set the custard",
+    "detail": "Pour the hot soy milk in one go over the coagulant, without stirring, and cover: let it set 15 minutes into a very tender, wobbly custard."
+   },
+   {
+    "titre": "The ginger syrup",
+    "detail": "Melt the brown sugar with water and slices of ginger into a fragrant, slightly thick syrup."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Gently skim the surface of the set douhua for a smooth custard."
+   },
+   {
+    "titre": "Scoop",
+    "detail": "Scoop wide shavings of douhua with a flat ladle and place them in the bowls."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with warm ginger syrup (and peanuts or tapioca pearls if you like). Melting, gentle and fragrant — the silken tofu of China's streets."
+   }
+  ]
+ },
+ "pambazo": {
+  "nom": "Pambazo",
+  "description": "Pambazo — the red sandwich of Mexico City: a bread dipped in a guajillo chilli sauce then pan-fried, filled with chorizo potatoes, lettuce, cream and cheese. Recognisable by its red, crisp crust, it's a generous classic of Mexican street food.",
+  "etapes": [
+   {
+    "titre": "The guajillo sauce",
+    "detail": "Rehydrate the guajillo chillies, then blend them with garlic and a little water into a smooth red sauce, and strain it."
+   },
+   {
+    "titre": "The papas con chorizo",
+    "detail": "Sauté the crumbled chorizo, add the cooked diced potatoes and coarsely mash into a soft filling."
+   },
+   {
+    "titre": "Dip the bread",
+    "detail": "Cut the bread (pambazo or telera) in two and dip it fully in the guajillo sauce, on both sides."
+   },
+   {
+    "titre": "Pan-fry",
+    "detail": "Pan-fry the dipped bread in a little oil, until the red crust is golden and crisp."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the bread with the hot chorizo potatoes."
+   },
+   {
+    "titre": "Complete",
+    "detail": "Add the shredded lettuce, cream, crumbled cheese (queso fresco) and a little hot sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Close, press lightly and serve at once, crisp and generous. Red, soft and spicy — the street sandwich of Mexico City."
+   }
+  ]
+ },
+ "barbacoa": {
+  "nom": "Barbacoa",
+  "description": "Barbacoa — the Mexican confit lamb: lamb (or beef) marinated in a paste of chillies and spices, long cooked, sealed in leaves, until ultra-tender and shreddable. Traditionally cooked in a pit, it's the Sunday dish and the tenderest tacos in Mexico.",
+  "etapes": [
+   {
+    "titre": "The chilli paste",
+    "detail": "Rehydrate the chillies (guajillo, ancho), then blend them with garlic, onion, cumin, bay and a dash of vinegar into an adobo paste."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the lamb in the chilli paste and marinate in the fridge for several hours (ideally overnight)."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Arrange the meat on leaves (banana, agave, or baking paper) in a pot, with a little broth at the bottom."
+   },
+   {
+    "titre": "Slow cook",
+    "detail": "Cover tightly and cook low and slow for 3 hours (oven or pit), until the meat falls apart on its own."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Shred the tender lamb with a fork, saving all the cooking juice (the consommé)."
+   },
+   {
+    "titre": "The consommé",
+    "detail": "Skim the fat from the cooking juice and serve it as a small broth on the side, Mexican-style."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fill corn tortillas with shredded lamb, onion, coriander and lime. Ultra-tender and fragrant — the Sunday tacos of Mexico."
+   }
+  ]
+ },
+ "tteokguk": {
+  "nom": "Tteokguk",
+  "description": "Tteokguk — the Korean New Year rice cake soup: thin slices of tteok (rice cake) simmered in a clear beef broth, topped with egg, seaweed and spring onion. Eating a bowl of tteokguk at New Year means turning a year older: it's the good-luck dish of Korea.",
+  "etapes": [
+   {
+    "titre": "The tteok",
+    "detail": "Soak the rice cake slices (tteok) in cold water if they're dry, to soften them."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Sauté a little sliced beef with garlic, then add broth (or water) and simmer into a clear, fragrant broth."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season the broth with soy sauce and salt, without clouding it."
+   },
+   {
+    "titre": "Cook the tteok",
+    "detail": "Drop the tteok slices into the simmering broth and cook them until they rise and turn soft and tender."
+   },
+   {
+    "titre": "The jidan",
+    "detail": "Beat the egg and make a thin omelette, cut into strips (jidan garnish)."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Divide the tteok and broth into the bowls."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with egg strips, crumbled toasted nori and spring onion. Comforting and lucky — the Korean New Year soup."
+   }
+  ]
+ },
+ "janchiguksu": {
+  "nom": "Janchi Guksu",
+  "description": "Janchi guksu — the Korean 'banquet noodles': fine wheat noodles in a clear anchovy-and-seaweed broth, topped with courgette, carrot, egg and nori. Light and comforting, they were served at feasts and weddings — hence their name of banquet noodles.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Make a clear broth by simmering dried anchovies and konbu seaweed, then strain it (or a light broth)."
+   },
+   {
+    "titre": "The toppings",
+    "detail": "Cut the courgette and carrot into fine julienne, and sauté them separately over high heat to keep them colourful and crunchy."
+   },
+   {
+    "titre": "The jidan",
+    "detail": "Beat the egg, make a thin omelette and cut it into strips."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the fine wheat noodles (somyeon), rinse them in cold water and drain."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season the broth with soy sauce and salt: it should stay clear, golden and delicate."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Divide the noodles into the bowls and pour the hot broth over them."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Arrange the courgette, carrot, egg and nori prettily on top, with a little spicy sauce (yangnyeom). Light and comforting — the Korean banquet noodles."
+   }
+  ]
+ },
+ "choila": {
+  "nom": "Choila",
+  "description": "Choila — the Newari spiced grilled meat: pieces of meat grilled over fire then vigorously tossed with scalding mustard oil, ginger, garlic, chilli and spices. Smoky, spicy and fragrant, it's an essential of samay baji, the Newari festive platter of Nepal.",
+  "etapes": [
+   {
+    "titre": "Grill the meat",
+    "detail": "Grill the meat (chicken, buffalo or duck) over fire or a griddle, until smoky and just cooked, then cut it into pieces."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Combine the crushed ginger and garlic, the chilli, turmeric, roasted cumin and salt."
+   },
+   {
+    "titre": "The mustard oil",
+    "detail": "Heat the mustard oil until it smokes, then crackle chilli and fenugreek in it."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "Pour the scalding oil over the spices: they release all their aromas at once (the heart of choila)."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Vigorously mix the grilled meat with this spiced tempering, until every piece is well coated."
+   },
+   {
+    "titre": "Wake it up",
+    "detail": "Add the lemon juice, spring onion and fresh coriander, and mix."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at room temperature, with puffed rice (chiura). Smoky, spicy and fragrant — the grilled meat of the Newari samay baji."
+   }
+  ]
+ },
+ "champorado": {
+  "nom": "Champorado",
+  "description": "Champorado — the Filipino chocolate rice porridge: glutinous rice simmered with cocoa (tablea) until it becomes a thick, chocolatey porridge, topped with condensed milk. Comforting and indulgent, it's eaten for breakfast or a snack, sometimes with salted dried fish (tuyo).",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Rinse the glutinous rice and cook it in water, stirring, until it starts to turn tender and sticky."
+   },
+   {
+    "titre": "The cocoa",
+    "detail": "Add the cocoa (grated tablea or pure cocoa) and stir: the porridge takes on a lovely dark chocolate colour."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Continue cooking over low heat, stirring often, until the rice is tender and the porridge thick and creamy."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the sugar (and a pinch of salt) and taste: the champorado should be nicely chocolatey and indulgent."
+   },
+   {
+    "titre": "Loosen",
+    "detail": "Adjust the texture with a little coconut milk (or water): the porridge should stay pourable."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pour the hot champorado into the bowls."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle a spiral of condensed milk (or coconut milk) over the top, and serve hot. Comforting and indulgent — the chocolate porridge of the Philippines."
+   }
+  ]
+ },
+ "alooachar": {
+  "nom": "Aloo ko Achar",
+  "description": "Aloo ko achar — the Nepali sesame potato salad: potatoes coated in a roasted sesame paste, lifted with lemon, chilli, turmeric and a fenugreek tempering. Tangy, nutty and fragrant, it's the essential achar (pickle-salad) of Newari festivals.",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Boil the potatoes until tender, then cut them into large cubes."
+   },
+   {
+    "titre": "The sesame paste",
+    "detail": "Dry-roast the sesame until fragrant, then blend it into a fragrant paste (or powder)."
+   },
+   {
+    "titre": "The dressing",
+    "detail": "Mix the sesame paste with the lemon juice, turmeric, chilli and salt into a thick, tangy sauce."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Coat the still-warm potatoes in this sesame sauce: they absorb it better warm."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "Heat the mustard oil until it smokes, crackle the fenugreek in it until browned, then pour over the salad."
+   },
+   {
+    "titre": "Freshness",
+    "detail": "Add the coriander, spring onion and optionally a little cucumber or radish for crunch."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Mix and serve at room temperature, with chiura or as a side to dal bhat. Tangy, nutty and fragrant — the Nepali festive achar."
+   }
+  ]
  }
 };

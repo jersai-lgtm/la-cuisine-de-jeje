@@ -4739,4 +4739,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Refermez le sandwich, pressez légèrement et servez aussitôt. Généreux, croustillant et parfumé — la torta emblématique de Puebla.", badge: null }
     ]
   },
+  zongzi: {
+    dateAjout: "2026-07-10T15:01:00",
+    nom: "Zongzi",
+    cat: "encas", pays: "chine",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🎋",
+    description: "Zongzi — les pyramides de riz gluant en feuille de bambou : du riz gluant enfermé avec du porc mariné, du champignon et de la cacahuète dans une feuille de bambou, ficelé puis longuement bouilli. Parfumées à la feuille, réconfortantes, ce sont les bouchées emblématiques de la fête des Bateaux-Dragons.",
+    tableauZongzi: [
+      { nb: 1, rizgluant: "70 g", porc: "45 g", champignons: "20 g", cacahuete: "10 g", saucesoja: "10 ml", oeufs: "½", sel: "2 g" },
+      { nb: 2, rizgluant: "140 g", porc: "90 g", champignons: "40 g", cacahuete: "20 g", saucesoja: "20 ml", oeufs: "1", sel: "4 g" },
+      { nb: 3, rizgluant: "210 g", porc: "135 g", champignons: "60 g", cacahuete: "30 g", saucesoja: "30 ml", oeufs: "1½", sel: "6 g" },
+      { nb: 4, rizgluant: "280 g", porc: "180 g", champignons: "80 g", cacahuete: "40 g", saucesoja: "40 ml", oeufs: "2", sel: "8 g" },
+      { nb: 5, rizgluant: "350 g", porc: "225 g", champignons: "100 g", cacahuete: "50 g", saucesoja: "50 ml", oeufs: "2½", sel: "10 g" },
+      { nb: 6, rizgluant: "420 g", porc: "270 g", champignons: "120 g", cacahuete: "60 g", saucesoja: "60 ml", oeufs: "3", sel: "12 g" },
+      { nb: 7, rizgluant: "490 g", porc: "315 g", champignons: "140 g", cacahuete: "70 g", saucesoja: "70 ml", oeufs: "3½", sel: "14 g" },
+      { nb: 8, rizgluant: "560 g", porc: "360 g", champignons: "160 g", cacahuete: "80 g", saucesoja: "80 ml", oeufs: "4", sel: "16 g" },
+      { nb: 9, rizgluant: "630 g", porc: "405 g", champignons: "180 g", cacahuete: "90 g", saucesoja: "90 ml", oeufs: "4½", sel: "18 g" },
+      { nb: 10, rizgluant: "700 g", porc: "450 g", champignons: "200 g", cacahuete: "100 g", saucesoja: "100 ml", oeufs: "5", sel: "20 g" },
+      { nb: 11, rizgluant: "770 g", porc: "495 g", champignons: "220 g", cacahuete: "110 g", saucesoja: "110 ml", oeufs: "5½", sel: "22 g" },
+      { nb: 12, rizgluant: "840 g", porc: "540 g", champignons: "240 g", cacahuete: "120 g", saucesoja: "120 ml", oeufs: "6", sel: "24 g" },
+      { nb: 13, rizgluant: "910 g", porc: "585 g", champignons: "260 g", cacahuete: "130 g", saucesoja: "130 ml", oeufs: "6½", sel: "26 g" },
+      { nb: 14, rizgluant: "980 g", porc: "630 g", champignons: "280 g", cacahuete: "140 g", saucesoja: "140 ml", oeufs: "7", sel: "28 g" },
+      { nb: 15, rizgluant: "1050 g", porc: "675 g", champignons: "300 g", cacahuete: "150 g", saucesoja: "150 ml", oeufs: "7½", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🎋", titre: "Les feuilles", detail: "Faites tremper les feuilles de bambou dans l'eau chaude pour les assouplir, puis rincez-les et essuyez-les.", badge: null },
+      { icone: "🍚", titre: "Le riz", detail: "Faites tremper le riz gluant plusieurs heures, égouttez-le et assaisonnez-le d'un peu de sauce soja et d'huile.", badge: null },
+      { icone: "🥩", titre: "La farce", detail: "Faites mariner le porc dans la sauce soja et les épices, et préparez le champignon réhydraté, la cacahuète et le jaune d'œuf salé.", badge: null },
+      { icone: "📐", titre: "Le cône", detail: "Pliez une feuille de bambou en cône, remplissez-la de riz, de farce puis de riz, en tassant bien.", badge: null },
+      { icone: "🎁", titre: "Ficeler", detail: "Repliez la feuille pour former une pyramide bien fermée, et ficelez-la solidement (l'étape technique du zongzi).", badge: null },
+      { icone: "♨️", titre: "Bouillir", detail: "Plongez les zongzi dans une grande eau bouillante et laissez cuire 1 h 30 à 2 h : le riz devient translucide et parfumé au bambou.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez, laissez tiédir, puis déficelez et ouvrez la feuille. Servez chaud (salé) ou avec du sirop (sucré). Parfumées et réconfortantes — les bouchées des Bateaux-Dragons.", badge: null }
+    ]
+  },
+  pambazo: {
+    dateAjout: "2026-07-10T15:03:00",
+    nom: "Pambazo",
+    cat: "encas", pays: "mexique",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥪",
+    description: "Pambazo — le sandwich rouge de Mexico : un pain trempé dans une sauce au piment guajillo puis poêlé, garni de pommes de terre au chorizo, de laitue, de crème et de fromage. Reconnaissable à sa croûte rouge et croustillante, c'est un classique généreux de la street-food mexicaine.",
+    tableauPambazo: [
+      { nb: 1, pain: "70 g", pommedeterre: "50 g", chorizo: "35 g", piment: "2 g", fromage: "20 g", salade: "15 g", creme: "10 g", oignon: "15 g", huileolive: "6 ml", sel: "1 g" },
+      { nb: 2, pain: "140 g", pommedeterre: "100 g", chorizo: "70 g", piment: "4 g", fromage: "40 g", salade: "30 g", creme: "20 g", oignon: "30 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 3, pain: "210 g", pommedeterre: "150 g", chorizo: "105 g", piment: "6 g", fromage: "60 g", salade: "45 g", creme: "30 g", oignon: "45 g", huileolive: "18 ml", sel: "3 g" },
+      { nb: 4, pain: "280 g", pommedeterre: "200 g", chorizo: "140 g", piment: "8 g", fromage: "80 g", salade: "60 g", creme: "40 g", oignon: "60 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 5, pain: "350 g", pommedeterre: "250 g", chorizo: "175 g", piment: "10 g", fromage: "100 g", salade: "75 g", creme: "50 g", oignon: "75 g", huileolive: "30 ml", sel: "5 g" },
+      { nb: 6, pain: "420 g", pommedeterre: "300 g", chorizo: "210 g", piment: "12 g", fromage: "120 g", salade: "90 g", creme: "60 g", oignon: "90 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 7, pain: "490 g", pommedeterre: "350 g", chorizo: "245 g", piment: "14 g", fromage: "140 g", salade: "105 g", creme: "70 g", oignon: "105 g", huileolive: "42 ml", sel: "7 g" },
+      { nb: 8, pain: "560 g", pommedeterre: "400 g", chorizo: "280 g", piment: "16 g", fromage: "160 g", salade: "120 g", creme: "80 g", oignon: "120 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 9, pain: "630 g", pommedeterre: "450 g", chorizo: "315 g", piment: "18 g", fromage: "180 g", salade: "135 g", creme: "90 g", oignon: "135 g", huileolive: "54 ml", sel: "9 g" },
+      { nb: 10, pain: "700 g", pommedeterre: "500 g", chorizo: "350 g", piment: "20 g", fromage: "200 g", salade: "150 g", creme: "100 g", oignon: "150 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 11, pain: "770 g", pommedeterre: "550 g", chorizo: "385 g", piment: "22 g", fromage: "220 g", salade: "165 g", creme: "110 g", oignon: "165 g", huileolive: "66 ml", sel: "11 g" },
+      { nb: 12, pain: "840 g", pommedeterre: "600 g", chorizo: "420 g", piment: "24 g", fromage: "240 g", salade: "180 g", creme: "120 g", oignon: "180 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 13, pain: "910 g", pommedeterre: "650 g", chorizo: "455 g", piment: "26 g", fromage: "260 g", salade: "195 g", creme: "130 g", oignon: "195 g", huileolive: "78 ml", sel: "13 g" },
+      { nb: 14, pain: "980 g", pommedeterre: "700 g", chorizo: "490 g", piment: "28 g", fromage: "280 g", salade: "210 g", creme: "140 g", oignon: "210 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 15, pain: "1050 g", pommedeterre: "750 g", chorizo: "525 g", piment: "30 g", fromage: "300 g", salade: "225 g", creme: "150 g", oignon: "225 g", huileolive: "90 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌶️", titre: "La sauce guajillo", detail: "Réhydratez les piments guajillo, puis mixez-les avec de l'ail et un peu d'eau en une sauce rouge lisse, et filtrez-la.", badge: null },
+      { icone: "🥔", titre: "Les papas con chorizo", detail: "Faites revenir le chorizo émietté, ajoutez les pommes de terre cuites en dés et écrasez grossièrement en une farce fondante.", badge: null },
+      { icone: "🍞", titre: "Tremper le pain", detail: "Coupez le pain (pambazo ou telera) en deux et trempez-le entièrement dans la sauce guajillo, sur les deux faces.", badge: null },
+      { icone: "🔥", titre: "Poêler", detail: "Faites poêler le pain trempé dans un peu d'huile, jusqu'à ce que la croûte rouge soit dorée et croustillante.", badge: null },
+      { icone: "🥪", titre: "Garnir", detail: "Garnissez le pain de pommes de terre au chorizo bien chaudes.", badge: null },
+      { icone: "🥬", titre: "Compléter", detail: "Ajoutez la laitue émincée, la crème, le fromage émietté (queso fresco) et un peu de sauce piquante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Refermez, pressez légèrement et servez aussitôt, croustillant et généreux. Rouge, fondant et relevé — le sandwich de rue de Mexico.", badge: null }
+    ]
+  },
 });

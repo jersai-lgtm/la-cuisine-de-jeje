@@ -4329,4 +4329,80 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Parsemez de coriandre et servez chaud avec du riz. Épaisse, épicée et fortifiante — la soupe de fête des neuf légumineuses du Népal.", badge: null }
     ]
   },
+  tteokguk: {
+    dateAjout: "2026-07-10T15:05:00",
+    nom: "Tteokguk",
+    cat: "soupes", pays: "coree",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍚",
+    description: "Tteokguk — la soupe de gâteaux de riz du Nouvel An coréen : de fines tranches de tteok (gâteau de riz) mijotées dans un bouillon de bœuf clair, garnies d'œuf, d'algue et de ciboule. Manger un bol de tteokguk au Nouvel An signifie prendre une année de plus : c'est le plat porte-bonheur de la Corée.",
+    tableauTteokguk: [
+      { nb: 1, tteok: "90 g", boeuf: "40 g", oeufs: "½", nori: "1 g", ail: "1", ciboule: "8 g", saucesoja: "6 ml", sel: "2 g" },
+      { nb: 2, tteok: "180 g", boeuf: "80 g", oeufs: "1", nori: "2 g", ail: "2", ciboule: "16 g", saucesoja: "12 ml", sel: "4 g" },
+      { nb: 3, tteok: "270 g", boeuf: "120 g", oeufs: "1½", nori: "3 g", ail: "3", ciboule: "24 g", saucesoja: "18 ml", sel: "6 g" },
+      { nb: 4, tteok: "360 g", boeuf: "160 g", oeufs: "2", nori: "4 g", ail: "4", ciboule: "32 g", saucesoja: "24 ml", sel: "8 g" },
+      { nb: 5, tteok: "450 g", boeuf: "200 g", oeufs: "2½", nori: "5 g", ail: "5", ciboule: "40 g", saucesoja: "30 ml", sel: "10 g" },
+      { nb: 6, tteok: "540 g", boeuf: "240 g", oeufs: "3", nori: "6 g", ail: "6", ciboule: "48 g", saucesoja: "36 ml", sel: "12 g" },
+      { nb: 7, tteok: "630 g", boeuf: "280 g", oeufs: "3½", nori: "7 g", ail: "7", ciboule: "56 g", saucesoja: "42 ml", sel: "14 g" },
+      { nb: 8, tteok: "720 g", boeuf: "320 g", oeufs: "4", nori: "8 g", ail: "8", ciboule: "64 g", saucesoja: "48 ml", sel: "16 g" },
+      { nb: 9, tteok: "810 g", boeuf: "360 g", oeufs: "4½", nori: "9 g", ail: "9", ciboule: "72 g", saucesoja: "54 ml", sel: "18 g" },
+      { nb: 10, tteok: "900 g", boeuf: "400 g", oeufs: "5", nori: "10 g", ail: "10", ciboule: "80 g", saucesoja: "60 ml", sel: "20 g" },
+      { nb: 11, tteok: "990 g", boeuf: "440 g", oeufs: "5½", nori: "11 g", ail: "11", ciboule: "88 g", saucesoja: "66 ml", sel: "22 g" },
+      { nb: 12, tteok: "1080 g", boeuf: "480 g", oeufs: "6", nori: "12 g", ail: "12", ciboule: "96 g", saucesoja: "72 ml", sel: "24 g" },
+      { nb: 13, tteok: "1170 g", boeuf: "520 g", oeufs: "6½", nori: "13 g", ail: "13", ciboule: "104 g", saucesoja: "78 ml", sel: "26 g" },
+      { nb: 14, tteok: "1260 g", boeuf: "560 g", oeufs: "7", nori: "14 g", ail: "14", ciboule: "112 g", saucesoja: "84 ml", sel: "28 g" },
+      { nb: 15, tteok: "1350 g", boeuf: "600 g", oeufs: "7½", nori: "15 g", ail: "15", ciboule: "120 g", saucesoja: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Les tteok", detail: "Faites tremper les tranches de gâteau de riz (tteok) dans l'eau froide si elles sont sèches, pour les assouplir.", badge: null },
+      { icone: "🥩", titre: "Le bouillon", detail: "Faites revenir un peu de bœuf émincé avec de l'ail, puis mouillez de bouillon (ou d'eau) et laissez frémir en un bouillon clair et parfumé.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Assaisonnez le bouillon de sauce soja et de sel, sans le troubler.", badge: null },
+      { icone: "🍜", titre: "Cuire les tteok", detail: "Plongez les tranches de tteok dans le bouillon frémissant et laissez-les cuire jusqu'à ce qu'elles remontent et deviennent moelleuses et tendres.", badge: null },
+      { icone: "🥚", titre: "Le jidan", detail: "Battez l'œuf et faites-en une fine omelette, que vous détaillez en lanières (garniture jidan).", badge: null },
+      { icone: "🍲", titre: "Dresser", detail: "Répartissez les tteok et le bouillon dans les bols.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Garnissez de lanières d'œuf, d'algue nori grillée émiettée et de ciboule. Réconfortant et porte-bonheur — la soupe du Nouvel An coréen.", badge: null }
+    ],
+    liees: ["tteokbokki"]
+  },
+  janchiguksu: {
+    dateAjout: "2026-07-10T15:06:00",
+    nom: "Janchi Guksu",
+    cat: "soupes", pays: "coree",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍜",
+    description: "Janchi guksu — les « nouilles de banquet » coréennes : de fines nouilles de blé dans un bouillon clair d'anchois et d'algue, garnies de courgette, de carotte, d'œuf et de nori. Légères et réconfortantes, elles étaient servies lors des fêtes et mariages — d'où leur nom de nouilles de fête.",
+    tableauJanchiguksu: [
+      { nb: 1, nouilles: "80 g", bouillon: "300 ml", courgette: "30 g", carotte: "20 g", oeufs: "½", nori: "1 g", ciboule: "8 g", saucesoja: "8 ml", sel: "1 g" },
+      { nb: 2, nouilles: "160 g", bouillon: "600 ml", courgette: "60 g", carotte: "40 g", oeufs: "1", nori: "2 g", ciboule: "16 g", saucesoja: "16 ml", sel: "2 g" },
+      { nb: 3, nouilles: "240 g", bouillon: "900 ml", courgette: "90 g", carotte: "60 g", oeufs: "1½", nori: "3 g", ciboule: "24 g", saucesoja: "24 ml", sel: "3 g" },
+      { nb: 4, nouilles: "320 g", bouillon: "1200 ml", courgette: "120 g", carotte: "80 g", oeufs: "2", nori: "4 g", ciboule: "32 g", saucesoja: "32 ml", sel: "4 g" },
+      { nb: 5, nouilles: "400 g", bouillon: "1500 ml", courgette: "150 g", carotte: "100 g", oeufs: "2½", nori: "5 g", ciboule: "40 g", saucesoja: "40 ml", sel: "5 g" },
+      { nb: 6, nouilles: "480 g", bouillon: "1800 ml", courgette: "180 g", carotte: "120 g", oeufs: "3", nori: "6 g", ciboule: "48 g", saucesoja: "48 ml", sel: "6 g" },
+      { nb: 7, nouilles: "560 g", bouillon: "2100 ml", courgette: "210 g", carotte: "140 g", oeufs: "3½", nori: "7 g", ciboule: "56 g", saucesoja: "56 ml", sel: "7 g" },
+      { nb: 8, nouilles: "640 g", bouillon: "2400 ml", courgette: "240 g", carotte: "160 g", oeufs: "4", nori: "8 g", ciboule: "64 g", saucesoja: "64 ml", sel: "8 g" },
+      { nb: 9, nouilles: "720 g", bouillon: "2700 ml", courgette: "270 g", carotte: "180 g", oeufs: "4½", nori: "9 g", ciboule: "72 g", saucesoja: "72 ml", sel: "9 g" },
+      { nb: 10, nouilles: "800 g", bouillon: "3000 ml", courgette: "300 g", carotte: "200 g", oeufs: "5", nori: "10 g", ciboule: "80 g", saucesoja: "80 ml", sel: "10 g" },
+      { nb: 11, nouilles: "880 g", bouillon: "3300 ml", courgette: "330 g", carotte: "220 g", oeufs: "5½", nori: "11 g", ciboule: "88 g", saucesoja: "88 ml", sel: "11 g" },
+      { nb: 12, nouilles: "960 g", bouillon: "3600 ml", courgette: "360 g", carotte: "240 g", oeufs: "6", nori: "12 g", ciboule: "96 g", saucesoja: "96 ml", sel: "12 g" },
+      { nb: 13, nouilles: "1040 g", bouillon: "3900 ml", courgette: "390 g", carotte: "260 g", oeufs: "6½", nori: "13 g", ciboule: "104 g", saucesoja: "104 ml", sel: "13 g" },
+      { nb: 14, nouilles: "1120 g", bouillon: "4200 ml", courgette: "420 g", carotte: "280 g", oeufs: "7", nori: "14 g", ciboule: "112 g", saucesoja: "112 ml", sel: "14 g" },
+      { nb: 15, nouilles: "1200 g", bouillon: "4500 ml", courgette: "450 g", carotte: "300 g", oeufs: "7½", nori: "15 g", ciboule: "120 g", saucesoja: "120 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "Le bouillon", detail: "Préparez un bouillon clair en faisant frémir des anchois séchés et de l'algue konbu, puis filtrez-le (à défaut, un bouillon léger).", badge: null },
+      { icone: "🥒", titre: "Les garnitures", detail: "Taillez la courgette et la carotte en fine julienne, et faites-les sauter séparément à feu vif pour les garder colorées et croquantes.", badge: null },
+      { icone: "🥚", titre: "Le jidan", detail: "Battez l'œuf, faites-en une fine omelette et détaillez-la en lanières.", badge: null },
+      { icone: "🍜", titre: "Les nouilles", detail: "Faites cuire les fines nouilles de blé (somyeon), rincez-les à l'eau froide et égouttez-les.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Assaisonnez le bouillon de sauce soja et de sel : il doit rester clair, doré et délicat.", badge: null },
+      { icone: "🍲", titre: "Dresser", detail: "Répartissez les nouilles dans les bols et versez le bouillon chaud par-dessus.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Disposez joliment la courgette, la carotte, l'œuf et le nori sur le dessus, avec un peu de sauce relevée (yangnyeom). Légères et réconfortantes — les nouilles de fête coréennes.", badge: null }
+    ],
+    liees: ["kalguksu"]
+  },
 });

@@ -2483,4 +2483,42 @@ Object.assign(recettes, {
     ],
     liees: ["panipuri"]
   },
+  alooachar: {
+    dateAjout: "2026-07-10T15:09:00",
+    nom: "Aloo ko Achar",
+    cat: "salades", pays: "nepal",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Aloo ko achar — la salade de pommes de terre au sésame népalaise : des pommes de terre enrobées d'une pâte de sésame grillé, relevée de citron, de piment, de curcuma et d'un tempérage au fenugrec. Acidulée, nuttée et parfumée, c'est l'achar (pickle-salade) incontournable des fêtes newari.",
+    tableauAlooachar: [
+      { nb: 1, pommedeterre: "90 g", sesame: "12 g", citron: "½", piment: "1 g", curcuma: "1 g", fenugrec: "0.5 g", coriandre: "4 g", ail: "1", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, pommedeterre: "180 g", sesame: "24 g", citron: "1", piment: "2 g", curcuma: "2 g", fenugrec: "1 g", coriandre: "8 g", ail: "2", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, pommedeterre: "270 g", sesame: "36 g", citron: "1½", piment: "3 g", curcuma: "3 g", fenugrec: "1.5 g", coriandre: "12 g", ail: "3", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, pommedeterre: "360 g", sesame: "48 g", citron: "2", piment: "4 g", curcuma: "4 g", fenugrec: "2 g", coriandre: "16 g", ail: "4", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, pommedeterre: "450 g", sesame: "60 g", citron: "2½", piment: "5 g", curcuma: "5 g", fenugrec: "2.5 g", coriandre: "20 g", ail: "5", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, pommedeterre: "540 g", sesame: "72 g", citron: "3", piment: "6 g", curcuma: "6 g", fenugrec: "3 g", coriandre: "24 g", ail: "6", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, pommedeterre: "630 g", sesame: "84 g", citron: "3½", piment: "7 g", curcuma: "7 g", fenugrec: "3.5 g", coriandre: "28 g", ail: "7", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, pommedeterre: "720 g", sesame: "96 g", citron: "4", piment: "8 g", curcuma: "8 g", fenugrec: "4 g", coriandre: "32 g", ail: "8", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, pommedeterre: "810 g", sesame: "108 g", citron: "4½", piment: "9 g", curcuma: "9 g", fenugrec: "4.5 g", coriandre: "36 g", ail: "9", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, pommedeterre: "900 g", sesame: "120 g", citron: "5", piment: "10 g", curcuma: "10 g", fenugrec: "5 g", coriandre: "40 g", ail: "10", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, pommedeterre: "990 g", sesame: "132 g", citron: "5½", piment: "11 g", curcuma: "11 g", fenugrec: "5.5 g", coriandre: "44 g", ail: "11", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, pommedeterre: "1080 g", sesame: "144 g", citron: "6", piment: "12 g", curcuma: "12 g", fenugrec: "6 g", coriandre: "48 g", ail: "12", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, pommedeterre: "1170 g", sesame: "156 g", citron: "6½", piment: "13 g", curcuma: "13 g", fenugrec: "6.5 g", coriandre: "52 g", ail: "13", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, pommedeterre: "1260 g", sesame: "168 g", citron: "7", piment: "14 g", curcuma: "14 g", fenugrec: "7 g", coriandre: "56 g", ail: "14", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, pommedeterre: "1350 g", sesame: "180 g", citron: "7½", piment: "15 g", curcuma: "15 g", fenugrec: "7.5 g", coriandre: "60 g", ail: "15", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Les pommes de terre", detail: "Faites cuire les pommes de terre à l'eau jusqu'à ce qu'elles soient tendres, puis coupez-les en gros cubes.", badge: null },
+      { icone: "🌰", titre: "La pâte de sésame", detail: "Torréfiez le sésame à sec jusqu'à ce qu'il embaume, puis mixez-le en une pâte (ou poudre) parfumée.", badge: null },
+      { icone: "🍋", titre: "L'assaisonnement", detail: "Mélangez la pâte de sésame avec le jus de citron, le curcuma, le piment et le sel en une sauce épaisse et acidulée.", badge: null },
+      { icone: "🥣", titre: "Enrober", detail: "Enrobez les pommes de terre encore tièdes de cette sauce au sésame : elles s'imprègnent mieux tièdes.", badge: null },
+      { icone: "🔥", titre: "Le tempérage", detail: "Faites chauffer l'huile de moutarde jusqu'à ce qu'elle fume, faites-y crépiter le fenugrec jusqu'à ce qu'il brunisse, puis versez sur la salade.", badge: null },
+      { icone: "🌿", titre: "Fraîcheur", detail: "Ajoutez la coriandre, la ciboule et éventuellement un peu de concombre ou de radis pour le croquant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Mélangez et servez à température ambiante, avec du chiura ou en accompagnement du dal bhat. Acidulée, nuttée et parfumée — l'achar de fête népalais.", badge: null }
+    ],
+    liees: ["dalbhat"]
+  },
 });
