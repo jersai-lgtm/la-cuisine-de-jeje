@@ -4107,4 +4107,78 @@ Object.assign(recettes, {
       { icone: "🍋", titre: "Servir", detail: "Accompagnez d'un quartier de citron (calamansi) à presser. Réconfortant et roboratif — le remède anti-froid des Philippines, à déguster brûlant.", badge: null }
     ]
   },
+  kitsuneudon: {
+    dateAjout: "2026-07-10T11:02:00",
+    nom: "Kitsune Udon",
+    cat: "soupes", pays: "japon",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍜",
+    description: "Kitsune udon — la soupe d'udon au tofu frit : de grosses nouilles udon moelleuses dans un bouillon dashi clair et parfumé, coiffées d'une tranche de tofu frit mijotée dans un sirop sucré-salé (aburaage). « Kitsune » (renard) car on dit que le tofu frit est son mets favori.",
+    tableauKitsuneudon: [
+      { nb: 1, nouilles: "90 g", tofu: "40 g", bouillon: "300 ml", saucesoja: "15 ml", mirin: "8 ml", sucre: "5 g", poireau: "15 g", nori: "1 g", sel: "1 g" },
+      { nb: 2, nouilles: "180 g", tofu: "80 g", bouillon: "600 ml", saucesoja: "30 ml", mirin: "16 ml", sucre: "10 g", poireau: "30 g", nori: "2 g", sel: "2 g" },
+      { nb: 3, nouilles: "270 g", tofu: "120 g", bouillon: "900 ml", saucesoja: "45 ml", mirin: "24 ml", sucre: "15 g", poireau: "45 g", nori: "3 g", sel: "3 g" },
+      { nb: 4, nouilles: "360 g", tofu: "160 g", bouillon: "1200 ml", saucesoja: "60 ml", mirin: "32 ml", sucre: "20 g", poireau: "60 g", nori: "4 g", sel: "4 g" },
+      { nb: 5, nouilles: "450 g", tofu: "200 g", bouillon: "1500 ml", saucesoja: "75 ml", mirin: "40 ml", sucre: "25 g", poireau: "75 g", nori: "5 g", sel: "5 g" },
+      { nb: 6, nouilles: "540 g", tofu: "240 g", bouillon: "1800 ml", saucesoja: "90 ml", mirin: "48 ml", sucre: "30 g", poireau: "90 g", nori: "6 g", sel: "6 g" },
+      { nb: 7, nouilles: "630 g", tofu: "280 g", bouillon: "2100 ml", saucesoja: "105 ml", mirin: "56 ml", sucre: "35 g", poireau: "105 g", nori: "7 g", sel: "7 g" },
+      { nb: 8, nouilles: "720 g", tofu: "320 g", bouillon: "2400 ml", saucesoja: "120 ml", mirin: "64 ml", sucre: "40 g", poireau: "120 g", nori: "8 g", sel: "8 g" },
+      { nb: 9, nouilles: "810 g", tofu: "360 g", bouillon: "2700 ml", saucesoja: "135 ml", mirin: "72 ml", sucre: "45 g", poireau: "135 g", nori: "9 g", sel: "9 g" },
+      { nb: 10, nouilles: "900 g", tofu: "400 g", bouillon: "3000 ml", saucesoja: "150 ml", mirin: "80 ml", sucre: "50 g", poireau: "150 g", nori: "10 g", sel: "10 g" },
+      { nb: 11, nouilles: "990 g", tofu: "440 g", bouillon: "3300 ml", saucesoja: "165 ml", mirin: "88 ml", sucre: "55 g", poireau: "165 g", nori: "11 g", sel: "11 g" },
+      { nb: 12, nouilles: "1080 g", tofu: "480 g", bouillon: "3600 ml", saucesoja: "180 ml", mirin: "96 ml", sucre: "60 g", poireau: "180 g", nori: "12 g", sel: "12 g" },
+      { nb: 13, nouilles: "1170 g", tofu: "520 g", bouillon: "3900 ml", saucesoja: "195 ml", mirin: "104 ml", sucre: "65 g", poireau: "195 g", nori: "13 g", sel: "13 g" },
+      { nb: 14, nouilles: "1260 g", tofu: "560 g", bouillon: "4200 ml", saucesoja: "210 ml", mirin: "112 ml", sucre: "70 g", poireau: "210 g", nori: "14 g", sel: "14 g" },
+      { nb: 15, nouilles: "1350 g", tofu: "600 g", bouillon: "4500 ml", saucesoja: "225 ml", mirin: "120 ml", sucre: "75 g", poireau: "225 g", nori: "15 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌊", titre: "Le dashi", detail: "Préparez un bouillon dashi clair (algue konbu et bonite), à défaut un bouillon léger. Assaisonnez de sauce soja claire, de mirin et d'un peu de sucre.", badge: null },
+      { icone: "🧈", titre: "L'aburaage", detail: "Ébouillantez les tranches de tofu frit pour les dégraisser, puis mijotez-les 10 min dans un peu de dashi, de sauce soja, de mirin et de sucre : elles deviennent moelleuses et sucrées-salées.", badge: null },
+      { icone: "🍜", titre: "Les udon", detail: "Faites cuire les nouilles udon dans une grande eau bouillante, puis rincez-les brièvement à l'eau chaude et égouttez.", badge: null },
+      { icone: "🍲", titre: "Le bouillon", detail: "Portez le dashi assaisonné à frémissement : il doit être clair, doré et parfumé (jamais trouble).", badge: null },
+      { icone: "🥣", titre: "Dresser", detail: "Répartissez les nouilles udon dans les bols et versez le bouillon brûlant par-dessus.", badge: null },
+      { icone: "🦊", titre: "Le tofu", detail: "Déposez la tranche de tofu frit mijotée (le « kitsune ») bien au centre, sur les nouilles.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez de poireau finement émincé, d'un peu de nori et de shichimi. Réconfortant, moelleux et parfumé — la soupe d'udon au tofu frit.", badge: null }
+    ]
+  },
+  champon: {
+    dateAjout: "2026-07-10T11:04:00",
+    nom: "Champon",
+    cat: "soupes", pays: "japon",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍜",
+    description: "Champon — la soupe de nouilles de Nagasaki : des nouilles épaisses dans un bouillon de porc laiteux et parfumé, débordant de fruits de mer, de porc et de légumes sautés. Née des échanges avec la Chine, riche et généreuse, c'est la spécialité réconfortante de Nagasaki.",
+    tableauChampon: [
+      { nb: 1, nouilles: "90 g", porc: "40 g", crevettes: "25 g", chou: "40 g", carotte: "20 g", germes: "25 g", champignons: "20 g", bouillon: "300 ml", huilesesame: "5 ml", saucesoja: "8 ml", sel: "2 g" },
+      { nb: 2, nouilles: "180 g", porc: "80 g", crevettes: "50 g", chou: "80 g", carotte: "40 g", germes: "50 g", champignons: "40 g", bouillon: "600 ml", huilesesame: "10 ml", saucesoja: "16 ml", sel: "4 g" },
+      { nb: 3, nouilles: "270 g", porc: "120 g", crevettes: "75 g", chou: "120 g", carotte: "60 g", germes: "75 g", champignons: "60 g", bouillon: "900 ml", huilesesame: "15 ml", saucesoja: "24 ml", sel: "6 g" },
+      { nb: 4, nouilles: "360 g", porc: "160 g", crevettes: "100 g", chou: "160 g", carotte: "80 g", germes: "100 g", champignons: "80 g", bouillon: "1200 ml", huilesesame: "20 ml", saucesoja: "32 ml", sel: "8 g" },
+      { nb: 5, nouilles: "450 g", porc: "200 g", crevettes: "125 g", chou: "200 g", carotte: "100 g", germes: "125 g", champignons: "100 g", bouillon: "1500 ml", huilesesame: "25 ml", saucesoja: "40 ml", sel: "10 g" },
+      { nb: 6, nouilles: "540 g", porc: "240 g", crevettes: "150 g", chou: "240 g", carotte: "120 g", germes: "150 g", champignons: "120 g", bouillon: "1800 ml", huilesesame: "30 ml", saucesoja: "48 ml", sel: "12 g" },
+      { nb: 7, nouilles: "630 g", porc: "280 g", crevettes: "175 g", chou: "280 g", carotte: "140 g", germes: "175 g", champignons: "140 g", bouillon: "2100 ml", huilesesame: "35 ml", saucesoja: "56 ml", sel: "14 g" },
+      { nb: 8, nouilles: "720 g", porc: "320 g", crevettes: "200 g", chou: "320 g", carotte: "160 g", germes: "200 g", champignons: "160 g", bouillon: "2400 ml", huilesesame: "40 ml", saucesoja: "64 ml", sel: "16 g" },
+      { nb: 9, nouilles: "810 g", porc: "360 g", crevettes: "225 g", chou: "360 g", carotte: "180 g", germes: "225 g", champignons: "180 g", bouillon: "2700 ml", huilesesame: "45 ml", saucesoja: "72 ml", sel: "18 g" },
+      { nb: 10, nouilles: "900 g", porc: "400 g", crevettes: "250 g", chou: "400 g", carotte: "200 g", germes: "250 g", champignons: "200 g", bouillon: "3000 ml", huilesesame: "50 ml", saucesoja: "80 ml", sel: "20 g" },
+      { nb: 11, nouilles: "990 g", porc: "440 g", crevettes: "275 g", chou: "440 g", carotte: "220 g", germes: "275 g", champignons: "220 g", bouillon: "3300 ml", huilesesame: "55 ml", saucesoja: "88 ml", sel: "22 g" },
+      { nb: 12, nouilles: "1080 g", porc: "480 g", crevettes: "300 g", chou: "480 g", carotte: "240 g", germes: "300 g", champignons: "240 g", bouillon: "3600 ml", huilesesame: "60 ml", saucesoja: "96 ml", sel: "24 g" },
+      { nb: 13, nouilles: "1170 g", porc: "520 g", crevettes: "325 g", chou: "520 g", carotte: "260 g", germes: "325 g", champignons: "260 g", bouillon: "3900 ml", huilesesame: "65 ml", saucesoja: "104 ml", sel: "26 g" },
+      { nb: 14, nouilles: "1260 g", porc: "560 g", crevettes: "350 g", chou: "560 g", carotte: "280 g", germes: "350 g", champignons: "280 g", bouillon: "4200 ml", huilesesame: "70 ml", saucesoja: "112 ml", sel: "28 g" },
+      { nb: 15, nouilles: "1350 g", porc: "600 g", crevettes: "375 g", chou: "600 g", carotte: "300 g", germes: "375 g", champignons: "300 g", bouillon: "4500 ml", huilesesame: "75 ml", saucesoja: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔥", titre: "Sauter le porc", detail: "Faites revenir le porc émincé et les crevettes dans l'huile de sésame chaude, jusqu'à ce qu'ils colorent.", badge: null },
+      { icone: "🥬", titre: "Les légumes", detail: "Ajoutez le chou, la carotte, les germes de soja et les champignons, et faites sauter vivement à feu vif : ils doivent rester croquants.", badge: null },
+      { icone: "🥛", titre: "Le bouillon laiteux", detail: "Versez un bouillon de porc bien chaud : il devient laiteux et parfumé au contact des sucs de cuisson. Assaisonnez de sauce soja et de sel.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter quelques minutes pour marier les saveurs, en gardant les légumes croquants.", badge: null },
+      { icone: "🍜", titre: "Les nouilles", detail: "Faites cuire les nouilles épaisses à champon (ou des ramen) directement dans le bouillon, jusqu'à ce qu'elles soient tendres.", badge: null },
+      { icone: "🍲", titre: "Dresser", detail: "Répartissez nouilles, garniture et bouillon laiteux dans de grands bols bien chauds.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez de poireau et servez brûlant. Riche, généreuse et réconfortante — la grande soupe de nouilles de Nagasaki.", badge: null }
+    ]
+  },
 });

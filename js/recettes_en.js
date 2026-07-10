@@ -64604,5 +64604,345 @@ window.RECETTES_EN = {
     "detail": "Serve with a lemon (calamansi) wedge to squeeze. Comforting and hearty — the anti-cold remedy of the Philippines, to enjoy piping hot."
    }
   ]
+ },
+ "sukiyaki": {
+  "nom": "Sukiyaki",
+  "description": "Sukiyaki — the convivial Japanese hot pot: thin strips of beef and vegetables simmered at the table in a sweet-savoury broth (warishita) of soy and mirin, dipped in a beaten raw egg. Tender, sweet-savoury and warming, it's the dish for big occasions in Japan.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Have the beef sliced into very thin strips (well-marbled, like ribeye) and bring it to room temperature."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Slice the napa cabbage, the leek on the bias, the mushrooms and cut the tofu into cubes. Arrange everything on a large platter."
+   },
+   {
+    "titre": "The warishita",
+    "detail": "Make the sweet-savoury broth: mix the soy sauce, mirin, sugar and a little water. It's the soul of sukiyaki."
+   },
+   {
+    "titre": "Sear the beef",
+    "detail": "In a hot buttered cast-iron pan, sear a few beef strips, then pour in a little warishita: it caramelises at once."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the vegetables, tofu and shirataki noodles, and simmer gently in the broth, adding warishita as you go."
+   },
+   {
+    "titre": "The raw egg",
+    "detail": "Beat a very fresh raw egg in an individual bowl: each scalding bite is dipped in it (sukiyaki coated in egg turns silky and warm)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve straight from the pan, in the middle of the table, and help yourselves as you go. Tender, sweet-savoury and convivial — the dish for big occasions in Japan."
+   }
+  ]
+ },
+ "shabushabu": {
+  "nom": "Shabu-Shabu",
+  "description": "Shabu-shabu — the Japanese water hot pot: very thin strips of beef swished for a few seconds in a simmering konbu broth ('shabu-shabu' mimics the swishing sound), before being dipped in a ponzu or sesame sauce. Light, refined and convivial.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Have the beef sliced ultra-thin (almost translucent). Keep chilled until serving."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Slice the napa cabbage, leek, mushrooms, carrot into flowers and cut the tofu. Arrange on a platter."
+   },
+   {
+    "titre": "The konbu broth",
+    "detail": "Bring water to a bare simmer with a piece of konbu seaweed (without boiling): a clear, delicate broth, the base of shabu-shabu."
+   },
+   {
+    "titre": "The sauces",
+    "detail": "Make two dipping sauces: a ponzu (soy + citrus) and a creamy sesame (goma) sauce."
+   },
+   {
+    "titre": "Shabu-shabu!",
+    "detail": "At the table, each person swishes a beef strip for a few seconds in the simmering broth, until it just turns pink."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the vegetables and tofu to the broth, and let them cook gently during the meal."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dip each bite in the sauce of your choice. At the end, cook noodles in the enriched broth. Light, refined and convivial — the Japanese hot pot."
+   }
+  ]
+ },
+ "kitsuneudon": {
+  "nom": "Kitsune Udon",
+  "description": "Kitsune udon — the fried-tofu udon soup: thick, soft udon noodles in a clear, fragrant dashi broth, topped with a slice of fried tofu simmered in a sweet-savoury syrup (aburaage). 'Kitsune' (fox) because fried tofu is said to be its favourite food.",
+  "etapes": [
+   {
+    "titre": "The dashi",
+    "detail": "Make a clear dashi broth (konbu and bonito), or a light broth. Season with light soy sauce, mirin and a little sugar."
+   },
+   {
+    "titre": "The aburaage",
+    "detail": "Blanch the fried tofu slices to degrease them, then simmer 10 minutes in a little dashi, soy sauce, mirin and sugar: they turn soft and sweet-savoury."
+   },
+   {
+    "titre": "The udon",
+    "detail": "Cook the udon noodles in plenty of boiling water, then rinse briefly in hot water and drain."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Bring the seasoned dashi to a simmer: it should be clear, golden and fragrant (never cloudy)."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Divide the udon noodles into the bowls and pour the scalding broth over them."
+   },
+   {
+    "titre": "The tofu",
+    "detail": "Set the simmered fried tofu slice (the 'kitsune') right in the centre, on the noodles."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with finely sliced leek, a little nori and shichimi. Comforting, soft and fragrant — the fried-tofu udon soup."
+   }
+  ]
+ },
+ "zarusoba": {
+  "nom": "Zaru Soba",
+  "description": "Zaru soba — cold buckwheat noodles: soba rinsed in iced water, served on a bamboo basket (zaru) with a chilled tsuyu sauce for dipping. Refreshing, clean and scented with nori and wasabi, it's the ultimate summer dish in Japan.",
+  "etapes": [
+   {
+    "titre": "The tsuyu",
+    "detail": "Make the tsuyu sauce: mix the dashi, soy sauce, mirin and a little sugar, bring to a simmer then let cool completely."
+   },
+   {
+    "titre": "The soba",
+    "detail": "Cook the buckwheat noodles (soba) in plenty of unsalted boiling water, keeping to the time (they stay al dente)."
+   },
+   {
+    "titre": "The cold shock",
+    "detail": "Drain and immediately rinse the soba in very cold water, rubbing gently to remove the starch: they turn firm and glossy."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the drained soba on a bamboo basket (zaru) or a slotted plate, in small nests."
+   },
+   {
+    "titre": "The toppings",
+    "detail": "Scatter with fine strips of nori and serve alongside sliced leek, wasabi and a little ginger."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Pour the cold tsuyu into an individual bowl; each person stirs in wasabi and spring onion to taste."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dip each bite of soba in the tsuyu before eating. At the end, loosen the tsuyu with the soba cooking water (sobayu). Refreshing and clean — the Japanese summer dish."
+   }
+  ]
+ },
+ "champon": {
+  "nom": "Champon",
+  "description": "Champon — the Nagasaki noodle soup: thick noodles in a milky, fragrant pork broth, overflowing with seafood, pork and stir-fried vegetables. Born of trade with China, rich and generous, it's the comforting speciality of Nagasaki.",
+  "etapes": [
+   {
+    "titre": "Sauté the pork",
+    "detail": "Sauté the sliced pork and shrimp in the hot sesame oil, until they colour."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the cabbage, carrot, bean sprouts and mushrooms, and stir-fry over high heat: they should stay crunchy."
+   },
+   {
+    "titre": "The milky broth",
+    "detail": "Pour in hot pork broth: it turns milky and fragrant on contact with the cooking juices. Season with soy sauce and salt."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer for a few minutes to marry the flavours, keeping the vegetables crunchy."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the thick champon noodles (or ramen) directly in the broth, until tender."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Divide the noodles, toppings and milky broth into large hot bowls."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with leek and serve piping hot. Rich, generous and comforting — the great noodle soup of Nagasaki."
+   }
+  ]
+ },
+ "hambagu": {
+  "nom": "Hambagu",
+  "description": "Hambāgu — the Japanese hamburger steak: a tender patty of beef and pork, bound with panko and softened onion, pan-fried then coated in a glossy brown soy sauce. Tender, juicy and comforting, it's a great classic of yōshoku (Japanese-style Western cuisine).",
+  "etapes": [
+   {
+    "titre": "The softened onion",
+    "detail": "Slice and sauté the onion in the butter until soft and golden, then let it cool."
+   },
+   {
+    "titre": "The panko",
+    "detail": "Mix the panko with the milk to form a soft panade: the secret to a tender hambāgu."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Knead the minced beef and pork with the cold onion, the panade, the egg, salt and pepper, until you get a smooth, sticky paste."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form oval patties, knock the air out by slapping them from hand to hand, and press a slight well in the centre (for even cooking)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Sear the patties over high heat on both sides, then cover and cook over low heat until the juices run clear."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Deglaze the pan with the soy sauce, a little sugar, water and butter: build a glossy, coating brown sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Coat the hambāgu in sauce and serve with rice and vegetables. Tender, juicy and comforting — the Japanese-style beef patty."
+   }
+  ]
+ },
+ "butakakuni": {
+  "nom": "Buta no Kakuni",
+  "description": "Buta no kakuni — the melting Japanese braised pork: large cubes of pork belly long-simmered in a broth of soy, mirin and ginger, until butter-tender. Glazed and glossy, served with a marinated soft-boiled egg, it's a jewel of Japanese simmered cooking.",
+  "etapes": [
+   {
+    "titre": "Colour the pork",
+    "detail": "Cut the pork belly into large cubes and brown them on all sides in a pot, without fat (the fat renders)."
+   },
+   {
+    "titre": "The first broth",
+    "detail": "Cover with water with ginger and leek, and boil 1 hour: this step degreases and tenderises the pork. Discard this water."
+   },
+   {
+    "titre": "The braise",
+    "detail": "Return the pork with fresh water, soy sauce, mirin, sugar and ginger, and bring to a simmer."
+   },
+   {
+    "titre": "Long simmer",
+    "detail": "Cover with a drop lid (otoshibuta) and simmer 1 hour 30 over very low heat, until the pork is tender and translucent."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Soft-boil some eggs, peel them and let them marinate in a little braising broth: they take on a lovely amber colour."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Uncover and reduce the broth over high heat, basting the pork, until it turns syrupy and glazes the meat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the glazed pork with the marinated egg halved, a little Japanese mustard (karashi) and leek. Tender, glazed and glossy — the iconic braised pork of Japan."
+   }
+  ]
+ },
+ "yokan": {
+  "nom": "Yokan",
+  "description": "Yōkan — the jellied red bean paste: a dense, smooth traditional Japanese sweet, made of sweetened azuki paste set into a jelly with agar-agar (kanten). It cuts into clean, glossy slices and is eaten in thin bites with tea. Lightly sweet, elegant and plant-based.",
+  "etapes": [
+   {
+    "titre": "The kanten",
+    "detail": "Dissolve the agar-agar (kanten) in water and bring to a boil, stirring: it must be perfectly melted (it's what sets the yōkan)."
+   },
+   {
+    "titre": "The azuki",
+    "detail": "Add the red bean paste (anko) and the sugar, and whisk until smooth and even."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook over low heat, stirring constantly, until the mixture thickens slightly and coats the spoon (a pinch of salt lifts it all)."
+   },
+   {
+    "titre": "Skim",
+    "detail": "Remove the foam from the surface for a smooth, glossy yōkan."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour the hot mixture into a dampened rectangular mould, smoothing the surface."
+   },
+   {
+    "titre": "Set",
+    "detail": "Let it cool then refrigerate at least 2 hours, until the yōkan is firm and sliceable."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Turn out and cut into clean slices or small cubes. Serve with a green tea. Dense, smooth and elegant — the great classic of wagashi."
+   }
+  ]
+ },
+ "anmitsu": {
+  "nom": "Anmitsu",
+  "description": "Anmitsu — the Japanese summer dessert: translucent cubes of agar-agar (kanten) jelly, served with red bean paste, fresh fruit and a drizzle of black syrup (kuromitsu). Fresh, light and prettily colourful, it's the perfect fine-weather dessert in Japan.",
+  "etapes": [
+   {
+    "titre": "The kanten jelly",
+    "detail": "Dissolve the agar-agar in water with a little sugar, bring to a boil, pour into a dish and let it set in the fridge."
+   },
+   {
+    "titre": "The cubes",
+    "detail": "Turn out the firm jelly and cut it into small, even, translucent cubes (the refreshing heart of anmitsu)."
+   },
+   {
+    "titre": "The kuromitsu",
+    "detail": "Make the black syrup: melt the brown sugar with a little water and honey, until you get a thick, brown syrup."
+   },
+   {
+    "titre": "The fruit",
+    "detail": "Cut fresh, colourful fruit (banana, red berries, mandarin) into small pieces."
+   },
+   {
+    "titre": "The anko",
+    "detail": "Shape small quenelles of red bean paste (anko)."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Divide the jelly cubes into cups, add the fruit, the anko and optionally a scoop of ice cream or a little sticky rice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle generously with kuromitsu just before serving. Fresh, light and colourful — the quintessential Japanese summer dessert."
+   }
+  ]
+ },
+ "warabimochi": {
+  "nom": "Warabimochi",
+  "description": "Warabimochi — the jelly-like Japanese treat: small translucent, melting cubes made from starch, rolled in black sesame (or kinako) and drizzled with kuromitsu black syrup. Fresh, wobbly and delicately sweet, it's the summer sweet that melts in the mouth.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk the starch (warabiko) with water and the sugar in a saucepan, off the heat, until smooth and lump-free."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Heat over medium heat, stirring constantly: the mixture thickens, whitens then turns translucent and stretchy (about 5 to 7 minutes of energetic work)."
+   },
+   {
+    "titre": "The cold shock",
+    "detail": "Pour the translucent paste into a dampened dish (or straight into a bowl of iced water) to set it."
+   },
+   {
+    "titre": "Cool",
+    "detail": "Let cool completely in the fridge: the paste turns firm, wobbly and cold."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the paste into bites (with a wet hand or a knife): small, glossy, melting cubes."
+   },
+   {
+    "titre": "The coating",
+    "detail": "Roll the bites generously in ground sweetened black sesame (or kinako, roasted soy flour)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drizzle with kuromitsu black syrup just before serving. Fresh, wobbly and melting — the summer treat that melts in the mouth."
+   }
+  ]
  }
 };
