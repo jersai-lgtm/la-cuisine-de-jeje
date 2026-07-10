@@ -5680,7 +5680,7 @@ Object.assign(recettes, {
   },
   farofias: {
     dateAjout: "2026-07-09T10:01:00",
-    liees: ["arrozDoce"],
+    liees: ["arrozdoce"],
     nom: "Farófias",
     cat: "desserts", pays: "portugal",
     base: 4,
