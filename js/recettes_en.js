@@ -60898,5 +60898,345 @@ window.RECETTES_EN = {
     "detail": "Serve the tangyuan warm in the ginger broth. Bite gently: the sesame centre flows, sweet and fragrant. A comforting dessert."
    }
   ]
+ },
+ "tonjiru": {
+  "nom": "Tonjiru",
+  "description": "Tonjiru — the Japanese pork miso soup: a dashi broth enriched with miso, pork and soft root vegetables (carrot, potato, leek). Heartier than a simple miso soup, it's a winter comfort dish in Japan.",
+  "etapes": [
+   {
+    "titre": "Sear the pork",
+    "detail": "Cut the pork into thin strips and sauté it in the sesame oil with the grated ginger, until it changes colour."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the carrot, potato and leek in pieces, and sauté 3 minutes."
+   },
+   {
+    "titre": "The dashi",
+    "detail": "Pour in the dashi broth and bring to a simmer. Cook 15 minutes, until the vegetables are tender."
+   },
+   {
+    "titre": "The tofu",
+    "detail": "Add the diced tofu and heat for 3 minutes without breaking it."
+   },
+   {
+    "titre": "The miso",
+    "detail": "Lower the heat (miso must never boil). Dissolve the miso in a ladle of hot broth, then stir it back into the soup."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste: the miso should flavour without dominating. Adjust very little with salt (miso is already salty)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, scattered with fresh leek. Tonjiru is a complete, comforting dish, enjoyed with rice."
+   }
+  ]
+ },
+ "castella": {
+  "nom": "Castella",
+  "description": "Castella — the Japanese honey sponge cake: a moist, tender cake with a fine golden crumb, scented with honey. Brought by the Portuguese to Nagasaki, it became an iconic Japanese pastry, without butter or raising agent.",
+  "etapes": [
+   {
+    "titre": "Whip the eggs",
+    "detail": "Whisk the whole eggs at length with the sugar (over a warm bain-marie at first) until the mixture triples in volume, pales and forms a ribbon. This is THE key to the softness (no raising agent)."
+   },
+   {
+    "titre": "The honey",
+    "detail": "Dissolve the honey in a little warm water or milk and gently fold it into the fluffy mixture."
+   },
+   {
+    "titre": "The flour",
+    "detail": "Sift the flour and fold it in, with a spatula, lifting the mass so as not to knock out the air bubbles."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour the batter into a lined tin (traditionally tall and square) and tap it on the surface to release large bubbles."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 160°C for 40 to 45 minutes, until the top is well golden and a blade comes out clean."
+   },
+   {
+    "titre": "Turn out",
+    "detail": "Straight out of the oven, turn the cake onto a film and wrap it while still hot: this keeps the crumb moist and tender."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest several hours (ideally overnight) before cutting into thick slices. Castella improves and becomes moister with time."
+   }
+  ]
+ },
+ "purin": {
+  "nom": "Purin",
+  "description": "Purin — the Japanese caramel custard: a silky, wobbly egg custard topped with a slightly bitter amber caramel. The Japanese take on flan, firmer and smoother, it's the comfort dessert of Japan's konbini and cafés.",
+  "etapes": [
+   {
+    "titre": "The caramel",
+    "detail": "Melt part of the sugar dry in a pan into an amber caramel. Pour it immediately into the bottom of the ramekins and let it set."
+   },
+   {
+    "titre": "Heat the milk",
+    "detail": "Heat the milk with the vanilla (without boiling) to infuse it."
+   },
+   {
+    "titre": "The mixture",
+    "detail": "Beat the eggs with the rest of the sugar, without frothing (to avoid bubbles), then pour in the hot milk in a stream, whisking gently."
+   },
+   {
+    "titre": "Strain",
+    "detail": "Pass the mixture through a sieve for a perfectly smooth, silky texture, then pour it into the caramelised ramekins."
+   },
+   {
+    "titre": "Bake in a bain-marie",
+    "detail": "Place the ramekins in a dish filled with hot water and bake at 150°C for 30 to 35 minutes: gentle cooking gives a bubble-free custard."
+   },
+   {
+    "titre": "Check",
+    "detail": "The purin is ready when just set but still wobbly in the centre. Let cool then refrigerate at least 2 hours."
+   },
+   {
+    "titre": "Unmould",
+    "detail": "Run a blade around, turn out onto a plate: the caramel flows over the custard. Serve well chilled, silky and wobbly."
+   }
+  ]
+ },
+ "doenjangjjigae": {
+  "nom": "Doenjang Jjigae",
+  "description": "Doenjang jjigae — the Korean soybean paste stew: a rustic, umami broth based on doenjang (fermented soybean paste), with tofu, zucchini and potato. Korea's ultimate comforting home dish, served bubbling.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Bring the broth (ideally anchovy dashi) to a simmer in a small earthenware pot (ttukbaegi) or a pan."
+   },
+   {
+    "titre": "The soybean paste",
+    "detail": "Dissolve the doenjang (or miso) in a ladle of hot broth, then stir it back into the pot: the umami base of the jjigae."
+   },
+   {
+    "titre": "The hard vegetables",
+    "detail": "Add the diced potato and onion, and cook 8 minutes until they start to soften."
+   },
+   {
+    "titre": "The zucchini",
+    "detail": "Add the diced zucchini, crushed garlic and chilli (gochugaru), and continue 5 minutes."
+   },
+   {
+    "titre": "The tofu",
+    "detail": "Add the cubed tofu and simmer 5 minutes without stirring too much, so it doesn't break."
+   },
+   {
+    "titre": "Season",
+    "detail": "Taste and adjust: the doenjang should dominate, umami and slightly salty. Add a drizzle of sesame oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the jjigae bubbling, straight from its pot, with a bowl of white rice and little side dishes (banchan). Korean comfort."
+   }
+  ]
+ },
+ "kalguksu": {
+  "nom": "Kalguksu",
+  "description": "Kalguksu — Korean knife-cut noodles: fresh firm hand-cut noodles served in a comforting broth with zucchini and potato. A warm home dish, literally 'knife noodles'.",
+  "etapes": [
+   {
+    "titre": "The noodle dough",
+    "detail": "Mix the flour, a pinch of salt and water into a firm dough. Knead 8 minutes until smooth, then rest 30 minutes."
+   },
+   {
+    "titre": "Cut the noodles",
+    "detail": "Roll the dough very thin, flour it, fold it and cut it with a knife into thin, irregular strips (the kalguksu)."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Bring the broth (anchovy or seafood dashi) to a simmer with the crushed garlic and a little soy sauce."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the thinly sliced potato and cook 8 minutes, then add the julienned zucchini."
+   },
+   {
+    "titre": "Cook the noodles",
+    "detail": "Drop the fresh noodles into the simmering broth and cook 5 to 6 minutes, stirring: they release starch that slightly thickens the broth."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, add a drizzle of sesame oil and adjust. The broth should be comforting and slightly creamy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, topped with zucchini, crumbled nori and a little chilli. A warm bowl of homemade noodles."
+   }
+  ]
+ },
+ "miyeokguk": {
+  "nom": "Miyeok Guk",
+  "description": "Miyeok guk — the Korean seaweed soup: a light, mineral broth with wakame seaweed and beef, scented with sesame oil. Nourishing and reputed to be restorative, it's traditionally eaten on one's birthday in Korea.",
+  "etapes": [
+   {
+    "titre": "Rehydrate the seaweed",
+    "detail": "Soak the dried wakame 15 minutes in cold water: it swells considerably. Rinse and cut it into pieces."
+   },
+   {
+    "titre": "Sear the beef",
+    "detail": "Cut the beef into thin strips and sauté it in the sesame oil with the garlic, until it changes colour."
+   },
+   {
+    "titre": "Sauté the seaweed",
+    "detail": "Add the drained seaweed and sauté 2 minutes with the beef: this develops the soup's deep flavour."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the soy sauce and mix to coat and flavour."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Pour in the broth and bring to a simmer. Simmer 15 minutes, until the seaweed is tender and the broth fragrant."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Salt lightly (the soy sauce and seaweed are salty) and adjust. The broth should be clear, mineral and comforting."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with a bowl of white rice. The Korean birthday soup, light and nourishing."
+   }
+  ]
+ },
+ "dakgangjeong": {
+  "nom": "Dakgangjeong",
+  "description": "Dakgangjeong — Korean crispy fried chicken: double-fried chicken pieces for extreme crunch, coated in a glossy sweet-spicy garlic-honey sauce. The addictive 'Korean KFC', scattered with sesame.",
+  "etapes": [
+   {
+    "titre": "Coat",
+    "detail": "Cut the chicken into bites and coat them in cornstarch (with a little salt): it gives the ultra-crisp crust."
+   },
+   {
+    "titre": "First fry",
+    "detail": "Fry the chicken in hot oil (170°C) for 4 minutes, until cooked and golden. Drain."
+   },
+   {
+    "titre": "Second fry",
+    "detail": "Raise the oil to 190°C and fry the chicken again for 2 minutes: the double fry makes it extra-crisp and keeps it crisp even when sauced."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "In a wok, reduce the soy sauce, honey, crushed garlic and ginger and chilli (gochujang) into a glossy, syrupy sauce."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Add the fried chicken to the sauce and stir-fry briskly to coat it evenly in a glossy glaze."
+   },
+   {
+    "titre": "Sesame",
+    "detail": "Scatter with toasted sesame seeds and mix."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, crisp and glazed, as an appetiser or with rice and pickled radish. The irresistible Korean fried chicken."
+   }
+  ]
+ },
+ "samgyeopsal": {
+  "nom": "Samgyeopsal",
+  "description": "Samgyeopsal — Korean pork belly barbecue: thin slices of pork belly grilled at the table, to wrap in a lettuce leaf with garlic, chilli and sauce. Convivial and interactive, it's Korea's star barbecue.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Use thick-sliced pork belly (unmarinated: it grills plain). Bring it to room temperature."
+   },
+   {
+    "titre": "The accompaniments",
+    "detail": "Slice the raw garlic, prepare the sauce (ssamjang: soybean paste + chilli) and wash the lettuce and perilla leaves."
+   },
+   {
+    "titre": "The sesame dip",
+    "detail": "Mix the sesame oil with a little salt and pepper: the condiment to dip the grilled meat in."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the pork slices on a hot griddle (or pan), without fat, until golden and crisp at the edges."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the grilled slices into pieces at the table, with scissors (Korean-style), to eat them easily."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Place a piece of pork on a lettuce leaf, add grilled garlic, a little sauce and chilli, and close into a bite (ssam)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice, kimchi and banchan. Samgyeopsal is shared, each person grilling and wrapping their bites. Convivial and festive."
+   }
+  ]
+ },
+ "yakgwa": {
+  "nom": "Yakgwa",
+  "description": "Yakgwa — Korean honey cookies: little fried biscuits of flour, honey and sesame oil, soaked in a ginger syrup. Soft, fragrant and glossy, they're the sweets of festivals and ceremonies in Korea.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Rub the flour with the oil (sesame and vegetable) with your fingertips, then add a little honey, grated ginger and cinnamon. Form a soft dough without overworking it."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Roll the dough and cut small squares or flowers. Prick them with a fork so they don't puff too much when fried."
+   },
+   {
+    "titre": "Fry gently",
+    "detail": "Fry the cakes in oil over LOW heat (140°C): they must cook slowly to stay soft inside and brown without burning (the honey sugar colours fast)."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Meanwhile, simmer the honey with the sugar, a little water and ginger, into a fragrant, fluid syrup."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Plunge the still-hot fried cakes into the syrup and let them soak 30 minutes to several hours: they turn soft and glossy."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Drain and scatter with sesame seeds or crushed pine nuts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at room temperature, with tea. Yakgwa keeps for several days and improves as it soaks."
+   }
+  ]
+ },
+ "bungeoppang": {
+  "nom": "Bungeoppang",
+  "description": "Bungeoppang — Korean fish-shaped waffles: little fish-shaped cakes with a crisp-soft batter, filled with a sweet red bean paste. Sold steaming in Seoul's winter streets, they warm the hands and the heart.",
+  "etapes": [
+   {
+    "titre": "The bean paste",
+    "detail": "Cook the red beans (azuki) until very tender, mash them with sugar and cook them down into a thick paste (pat). Let cool."
+   },
+   {
+    "titre": "The waffle batter",
+    "detail": "Mix the flour, sugar, yeast, egg and milk into a smooth, fluid batter, like a waffle batter. Let rest 20 minutes."
+   },
+   {
+    "titre": "Preheat the mould",
+    "detail": "Heat and oil a bungeoppang mould (or fish-shaped waffle mould) on both sides."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Pour a little batter into each mould, place a spoon of red bean paste in the centre, then cover with a little batter."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Close the mould and cook over medium heat for 2 to 3 minutes per side, turning, until the waffles are golden and crisp."
+   },
+   {
+    "titre": "Check",
+    "detail": "The bungeoppang is ready when golden, crisp outside and soft inside, with a melting red bean centre."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, piping hot, to bite from the tail. The comforting Korean winter street food, perfect with a hot tea."
+   }
+  ]
  }
 };

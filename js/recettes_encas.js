@@ -4032,4 +4032,41 @@ Object.assign(recettes, {
       { icone: "🥢", titre: "Servir", detail: "Servez aussitôt, brûlants. À déguster avec précaution : percez, aspirez le bouillon, puis mangez. Avec du vinaigre noir et du gingembre.", badge: null }
     ]
   },
+  dakgangjeong: {
+    dateAjout: "2026-07-10T08:46:00",
+    nom: "Dakgangjeong",
+    cat: "encas", pays: "coree",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍗",
+    description: "Dakgangjeong — le poulet frit croustillant coréen : des morceaux de poulet doublement frits pour un croustillant extrême, enrobés d'une sauce brillante sucrée-piquante à l'ail et au miel. Le « KFC coréen » addictif, parsemé de sésame.",
+    tableauDakgangjeong: [
+      { nb: 1, poulet: "120 g", maizena: "15 g", saucesoja: "10 ml", miel: "12 g", ail: "1", gingembre: "3 g", piment: "1 g", sesame: "3 g", huilefriture: "15 ml" },
+      { nb: 2, poulet: "240 g", maizena: "30 g", saucesoja: "20 ml", miel: "24 g", ail: "2", gingembre: "6 g", piment: "2 g", sesame: "6 g", huilefriture: "30 ml" },
+      { nb: 3, poulet: "360 g", maizena: "45 g", saucesoja: "30 ml", miel: "36 g", ail: "3", gingembre: "9 g", piment: "3 g", sesame: "9 g", huilefriture: "45 ml" },
+      { nb: 4, poulet: "480 g", maizena: "60 g", saucesoja: "40 ml", miel: "48 g", ail: "4", gingembre: "12 g", piment: "4 g", sesame: "12 g", huilefriture: "60 ml" },
+      { nb: 5, poulet: "600 g", maizena: "75 g", saucesoja: "50 ml", miel: "60 g", ail: "5", gingembre: "15 g", piment: "5 g", sesame: "15 g", huilefriture: "75 ml" },
+      { nb: 6, poulet: "720 g", maizena: "90 g", saucesoja: "60 ml", miel: "72 g", ail: "6", gingembre: "18 g", piment: "6 g", sesame: "18 g", huilefriture: "90 ml" },
+      { nb: 7, poulet: "840 g", maizena: "105 g", saucesoja: "70 ml", miel: "84 g", ail: "7", gingembre: "21 g", piment: "7 g", sesame: "21 g", huilefriture: "105 ml" },
+      { nb: 8, poulet: "960 g", maizena: "120 g", saucesoja: "80 ml", miel: "96 g", ail: "8", gingembre: "24 g", piment: "8 g", sesame: "24 g", huilefriture: "120 ml" },
+      { nb: 9, poulet: "1080 g", maizena: "135 g", saucesoja: "90 ml", miel: "108 g", ail: "9", gingembre: "27 g", piment: "9 g", sesame: "27 g", huilefriture: "135 ml" },
+      { nb: 10, poulet: "1200 g", maizena: "150 g", saucesoja: "100 ml", miel: "120 g", ail: "10", gingembre: "30 g", piment: "10 g", sesame: "30 g", huilefriture: "150 ml" },
+      { nb: 11, poulet: "1320 g", maizena: "165 g", saucesoja: "110 ml", miel: "132 g", ail: "11", gingembre: "33 g", piment: "11 g", sesame: "33 g", huilefriture: "165 ml" },
+      { nb: 12, poulet: "1440 g", maizena: "180 g", saucesoja: "120 ml", miel: "144 g", ail: "12", gingembre: "36 g", piment: "12 g", sesame: "36 g", huilefriture: "180 ml" },
+      { nb: 13, poulet: "1560 g", maizena: "195 g", saucesoja: "130 ml", miel: "156 g", ail: "13", gingembre: "39 g", piment: "13 g", sesame: "39 g", huilefriture: "195 ml" },
+      { nb: 14, poulet: "1680 g", maizena: "210 g", saucesoja: "140 ml", miel: "168 g", ail: "14", gingembre: "42 g", piment: "14 g", sesame: "42 g", huilefriture: "210 ml" },
+      { nb: 15, poulet: "1800 g", maizena: "225 g", saucesoja: "150 ml", miel: "180 g", ail: "15", gingembre: "45 g", piment: "15 g", sesame: "45 g", huilefriture: "225 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐔", titre: "Enrober", detail: "Coupez le poulet en bouchées et enrobez-les de fécule de maïs (avec un peu de sel) : c'est elle qui donne la croûte ultra-croustillante.", badge: null },
+      { icone: "🔥", titre: "1re friture", detail: "Faites frire le poulet dans l'huile chaude (170°C) 4 min, jusqu'à ce qu'il soit cuit et doré. Égouttez.", badge: null },
+      { icone: "🔥", titre: "2e friture", detail: "Remontez l'huile à 190°C et refaites frire le poulet 2 min : la double friture le rend extra-croustillant et le garde croustillant même sauce.", badge: null },
+      { icone: "🍯", titre: "La sauce", detail: "Dans un wok, faites réduire la sauce soja, le miel, l'ail et le gingembre écrasés et le piment (gochujang) jusqu'à obtenir une sauce brillante et sirupeuse.", badge: null },
+      { icone: "🌀", titre: "Enrober", detail: "Ajoutez le poulet frit dans la sauce et faites sauter vivement pour l'enrober uniformément d'un glaçage brillant.", badge: null },
+      { icone: "🌱", titre: "Sésame", detail: "Parsemez de graines de sésame grillées et mélangez.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, croustillant et laqué, en apéritif ou avec du riz et du radis mariné. Le poulet frit coréen irrésistible.", badge: null }
+    ]
+  },
 });

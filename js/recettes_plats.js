@@ -31942,4 +31942,78 @@ Object.assign(recettes, {
       { icone: "🥜", titre: "Cacahuètes", detail: "Ajoutez les cacahuètes hors du feu et mélangez, pour qu'elles restent croquantes. Servez aussitôt sur du riz.", badge: null }
     ]
   },
+  kalguksu: {
+    dateAjout: "2026-07-10T08:44:00",
+    nom: "Kalguksu",
+    cat: "plats", pays: "coree",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍜",
+    description: "Kalguksu — les nouilles coupées au couteau coréennes : des nouilles fraîches et fermes, taillées à la main, servies dans un bouillon réconfortant avec courgette et pomme de terre. Un plat maison chaleureux, littéralement « nouilles au couteau ».",
+    tableauKalguksu: [
+      { nb: 1, farine: "50 g", courgette: "30 g", pommedeterre: "40 g", oignon: "¼", ail: "1", bouillon: "250 ml", huilesesame: "3 ml", saucesoja: "6 ml", sel: "2 g" },
+      { nb: 2, farine: "100 g", courgette: "60 g", pommedeterre: "80 g", oignon: "½", ail: "2", bouillon: "500 ml", huilesesame: "6 ml", saucesoja: "12 ml", sel: "4 g" },
+      { nb: 3, farine: "150 g", courgette: "90 g", pommedeterre: "120 g", oignon: "¾", ail: "3", bouillon: "750 ml", huilesesame: "9 ml", saucesoja: "18 ml", sel: "6 g" },
+      { nb: 4, farine: "200 g", courgette: "120 g", pommedeterre: "160 g", oignon: "1", ail: "4", bouillon: "1000 ml", huilesesame: "12 ml", saucesoja: "24 ml", sel: "8 g" },
+      { nb: 5, farine: "250 g", courgette: "150 g", pommedeterre: "200 g", oignon: "1¼", ail: "5", bouillon: "1250 ml", huilesesame: "15 ml", saucesoja: "30 ml", sel: "10 g" },
+      { nb: 6, farine: "300 g", courgette: "180 g", pommedeterre: "240 g", oignon: "1½", ail: "6", bouillon: "1500 ml", huilesesame: "18 ml", saucesoja: "36 ml", sel: "12 g" },
+      { nb: 7, farine: "350 g", courgette: "210 g", pommedeterre: "280 g", oignon: "1¾", ail: "7", bouillon: "1750 ml", huilesesame: "21 ml", saucesoja: "42 ml", sel: "14 g" },
+      { nb: 8, farine: "400 g", courgette: "240 g", pommedeterre: "320 g", oignon: "2", ail: "8", bouillon: "2000 ml", huilesesame: "24 ml", saucesoja: "48 ml", sel: "16 g" },
+      { nb: 9, farine: "450 g", courgette: "270 g", pommedeterre: "360 g", oignon: "2¼", ail: "9", bouillon: "2250 ml", huilesesame: "27 ml", saucesoja: "54 ml", sel: "18 g" },
+      { nb: 10, farine: "500 g", courgette: "300 g", pommedeterre: "400 g", oignon: "2½", ail: "10", bouillon: "2500 ml", huilesesame: "30 ml", saucesoja: "60 ml", sel: "20 g" },
+      { nb: 11, farine: "550 g", courgette: "330 g", pommedeterre: "440 g", oignon: "2¾", ail: "11", bouillon: "2750 ml", huilesesame: "33 ml", saucesoja: "66 ml", sel: "22 g" },
+      { nb: 12, farine: "600 g", courgette: "360 g", pommedeterre: "480 g", oignon: "3", ail: "12", bouillon: "3000 ml", huilesesame: "36 ml", saucesoja: "72 ml", sel: "24 g" },
+      { nb: 13, farine: "650 g", courgette: "390 g", pommedeterre: "520 g", oignon: "3¼", ail: "13", bouillon: "3250 ml", huilesesame: "39 ml", saucesoja: "78 ml", sel: "26 g" },
+      { nb: 14, farine: "700 g", courgette: "420 g", pommedeterre: "560 g", oignon: "3½", ail: "14", bouillon: "3500 ml", huilesesame: "42 ml", saucesoja: "84 ml", sel: "28 g" },
+      { nb: 15, farine: "750 g", courgette: "450 g", pommedeterre: "600 g", oignon: "3¾", ail: "15", bouillon: "3750 ml", huilesesame: "45 ml", saucesoja: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte à nouilles", detail: "Mélangez la farine, une pincée de sel et de l'eau pour former une pâte ferme. Pétrissez 8 min jusqu'à ce qu'elle soit lisse, puis laissez reposer 30 min.", badge: null },
+      { icone: "🔪", titre: "Couper les nouilles", detail: "Abaissez la pâte très finement, farinez-la, pliez-la et coupez-la au couteau en lanières fines et irrégulières (les kalguksu).", badge: null },
+      { icone: "🍲", titre: "Le bouillon", detail: "Portez le bouillon (dashi d'anchois ou de fruits de mer) à frémissement avec l'ail écrasé et un peu de sauce soja.", badge: null },
+      { icone: "🥔", titre: "Les légumes", detail: "Ajoutez la pomme de terre en fines tranches et laissez cuire 8 min, puis ajoutez la courgette en julienne.", badge: null },
+      { icone: "🍜", titre: "Cuire les nouilles", detail: "Plongez les nouilles fraîches dans le bouillon frémissant et laissez cuire 5 à 6 min, en remuant : elles libèrent de l'amidon qui épaissit légèrement le bouillon.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Salez, ajoutez un filet d'huile de sésame et rectifiez. Le bouillon doit être réconfortant et légèrement crémeux.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez bien chaud, garni de courgette, de nori émietté et d'un peu de piment. Un bol de nouilles maison chaleureux.", badge: null }
+    ]
+  },
+  samgyeopsal: {
+    dateAjout: "2026-07-10T08:47:00",
+    nom: "Samgyeopsal",
+    cat: "plats", pays: "coree",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥓",
+    description: "Samgyeopsal — le barbecue de poitrine de porc coréen : de fines tranches de poitrine de porc grillées à table, à envelopper dans une feuille de salade avec de l'ail, du piment et de la sauce. Convivial et interactif, c'est le barbecue star de la Corée.",
+    tableauSamgyeopsal: [
+      { nb: 1, porc: "130 g", ail: "2", saucesoja: "6 ml", huilesesame: "4 ml", salade: "30 g", piment: "1 g", sel: "1 g" },
+      { nb: 2, porc: "260 g", ail: "4", saucesoja: "12 ml", huilesesame: "8 ml", salade: "60 g", piment: "2 g", sel: "2 g" },
+      { nb: 3, porc: "390 g", ail: "6", saucesoja: "18 ml", huilesesame: "12 ml", salade: "90 g", piment: "3 g", sel: "3 g" },
+      { nb: 4, porc: "520 g", ail: "8", saucesoja: "24 ml", huilesesame: "16 ml", salade: "120 g", piment: "4 g", sel: "4 g" },
+      { nb: 5, porc: "650 g", ail: "10", saucesoja: "30 ml", huilesesame: "20 ml", salade: "150 g", piment: "5 g", sel: "5 g" },
+      { nb: 6, porc: "780 g", ail: "12", saucesoja: "36 ml", huilesesame: "24 ml", salade: "180 g", piment: "6 g", sel: "6 g" },
+      { nb: 7, porc: "910 g", ail: "14", saucesoja: "42 ml", huilesesame: "28 ml", salade: "210 g", piment: "7 g", sel: "7 g" },
+      { nb: 8, porc: "1040 g", ail: "16", saucesoja: "48 ml", huilesesame: "32 ml", salade: "240 g", piment: "8 g", sel: "8 g" },
+      { nb: 9, porc: "1170 g", ail: "18", saucesoja: "54 ml", huilesesame: "36 ml", salade: "270 g", piment: "9 g", sel: "9 g" },
+      { nb: 10, porc: "1300 g", ail: "20", saucesoja: "60 ml", huilesesame: "40 ml", salade: "300 g", piment: "10 g", sel: "10 g" },
+      { nb: 11, porc: "1430 g", ail: "22", saucesoja: "66 ml", huilesesame: "44 ml", salade: "330 g", piment: "11 g", sel: "11 g" },
+      { nb: 12, porc: "1560 g", ail: "24", saucesoja: "72 ml", huilesesame: "48 ml", salade: "360 g", piment: "12 g", sel: "12 g" },
+      { nb: 13, porc: "1690 g", ail: "26", saucesoja: "78 ml", huilesesame: "52 ml", salade: "390 g", piment: "13 g", sel: "13 g" },
+      { nb: 14, porc: "1820 g", ail: "28", saucesoja: "84 ml", huilesesame: "56 ml", salade: "420 g", piment: "14 g", sel: "14 g" },
+      { nb: 15, porc: "1950 g", ail: "30", saucesoja: "90 ml", huilesesame: "60 ml", salade: "450 g", piment: "15 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥓", titre: "Le porc", detail: "Utilisez de la poitrine de porc en tranches épaisses (non marinée : elle se grille nature). Sortez-la à température ambiante.", badge: null },
+      { icone: "🧄", titre: "Les accompagnements", detail: "Émincez l'ail cru, préparez la sauce (ssamjang : pâte de soja + piment) et lavez les feuilles de salade et de périlla.", badge: null },
+      { icone: "🍶", titre: "La sauce sésame", detail: "Mélangez l'huile de sésame avec un peu de sel et de poivre : le condiment dans lequel on trempe la viande grillée.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Faites griller les tranches de porc sur une plancha bien chaude (ou une poêle), sans matière grasse, jusqu'à ce qu'elles soient dorées et croustillantes sur les bords.", badge: null },
+      { icone: "✂️", titre: "Couper", detail: "Coupez les tranches grillées en morceaux à la table, avec des ciseaux (à la coréenne), pour les manger facilement.", badge: null },
+      { icone: "🥬", titre: "Envelopper", detail: "Déposez un morceau de porc sur une feuille de salade, ajoutez de l'ail grillé, un peu de sauce et de piment, et refermez en bouchée (ssam).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez avec du riz, du kimchi et des banchan. Le samgyeopsal se partage, chacun grillant et enveloppant ses bouchées. Convivial et festif.", badge: null }
+    ]
+  },
 });
