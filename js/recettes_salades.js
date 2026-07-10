@@ -2521,4 +2521,41 @@ Object.assign(recettes, {
     ],
     liees: ["dalbhat"]
   },
+  kurutob: {
+    dateAjout: "2026-07-10T18:08:00",
+    nom: "Kurutob",
+    cat: "salades", pays: "tadjikistan",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Kurutob — le plat national tadjik à partager : des morceaux de pain feuilleté (fatir) déchirés et arrosés d'une sauce au qurut (yaourt séché délayé), garnis d'oignons, de tomates, d'herbes et d'un filet d'huile. Servi dans un grand plat, il se mange à la main, tous ensemble.",
+    tableauKurutob: [
+      { nb: 1, pain: "50 g", yaourt: "60 g", oignon: "25 g", tomates: "½", coriandre: "5 g", huileolive: "8 ml", piment: "0.5 g", sel: "2 g" },
+      { nb: 2, pain: "100 g", yaourt: "120 g", oignon: "50 g", tomates: "1", coriandre: "10 g", huileolive: "16 ml", piment: "1 g", sel: "4 g" },
+      { nb: 3, pain: "150 g", yaourt: "180 g", oignon: "75 g", tomates: "1½", coriandre: "15 g", huileolive: "24 ml", piment: "1.5 g", sel: "6 g" },
+      { nb: 4, pain: "200 g", yaourt: "240 g", oignon: "100 g", tomates: "2", coriandre: "20 g", huileolive: "32 ml", piment: "2 g", sel: "8 g" },
+      { nb: 5, pain: "250 g", yaourt: "300 g", oignon: "125 g", tomates: "2½", coriandre: "25 g", huileolive: "40 ml", piment: "2.5 g", sel: "10 g" },
+      { nb: 6, pain: "300 g", yaourt: "360 g", oignon: "150 g", tomates: "3", coriandre: "30 g", huileolive: "48 ml", piment: "3 g", sel: "12 g" },
+      { nb: 7, pain: "350 g", yaourt: "420 g", oignon: "175 g", tomates: "3½", coriandre: "35 g", huileolive: "56 ml", piment: "3.5 g", sel: "14 g" },
+      { nb: 8, pain: "400 g", yaourt: "480 g", oignon: "200 g", tomates: "4", coriandre: "40 g", huileolive: "64 ml", piment: "4 g", sel: "16 g" },
+      { nb: 9, pain: "450 g", yaourt: "540 g", oignon: "225 g", tomates: "4½", coriandre: "45 g", huileolive: "72 ml", piment: "4.5 g", sel: "18 g" },
+      { nb: 10, pain: "500 g", yaourt: "600 g", oignon: "250 g", tomates: "5", coriandre: "50 g", huileolive: "80 ml", piment: "5 g", sel: "20 g" },
+      { nb: 11, pain: "550 g", yaourt: "660 g", oignon: "275 g", tomates: "5½", coriandre: "55 g", huileolive: "88 ml", piment: "5.5 g", sel: "22 g" },
+      { nb: 12, pain: "600 g", yaourt: "720 g", oignon: "300 g", tomates: "6", coriandre: "60 g", huileolive: "96 ml", piment: "6 g", sel: "24 g" },
+      { nb: 13, pain: "650 g", yaourt: "780 g", oignon: "325 g", tomates: "6½", coriandre: "65 g", huileolive: "104 ml", piment: "6.5 g", sel: "26 g" },
+      { nb: 14, pain: "700 g", yaourt: "840 g", oignon: "350 g", tomates: "7", coriandre: "70 g", huileolive: "112 ml", piment: "7 g", sel: "28 g" },
+      { nb: 15, pain: "750 g", yaourt: "900 g", oignon: "375 g", tomates: "7½", coriandre: "75 g", huileolive: "120 ml", piment: "7.5 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "La sauce qurut", detail: "Délayez le qurut (boules de yaourt séché) dans un peu d'eau tiède, ou utilisez un yaourt nature battu, jusqu'à obtenir une sauce crémeuse et acidulée. Salez.", badge: null },
+      { icone: "🫓", titre: "Le pain", detail: "Déchirez le pain feuilleté (fatir, à défaut un pain plat ou une galette) en bouchées et disposez-le au fond d'un grand plat.", badge: null },
+      { icone: "🧅", titre: "Les oignons", detail: "Émincez finement l'oignon et faites-le revenir doucement dans un peu d'huile (ou laissez-le cru pour plus de mordant).", badge: null },
+      { icone: "🍅", titre: "Les crudités", detail: "Coupez les tomates en dés et ciselez les herbes fraîches (coriandre, basilic, aneth).", badge: null },
+      { icone: "🥣", titre: "Napper", detail: "Versez la sauce au qurut sur le pain déchiré, pour bien l'imprégner.", badge: null },
+      { icone: "🥗", titre: "Garnir", detail: "Répartissez les oignons, les tomates, les herbes et un filet d'huile par-dessus.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, dans le grand plat commun, à manger à la main. Acidulé, frais et convivial — le plat national tadjik à partager.", badge: null }
+    ]
+  },
 });

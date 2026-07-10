@@ -4999,4 +4999,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Refermez, pressez et servez aussitôt, avec des frites. Débordant, généreux et gourmand — le roi de la street-food uruguayenne.", badge: null }
     ]
   },
+  kubba: {
+    dateAjout: "2026-07-10T18:01:00",
+    nom: "Kubba",
+    cat: "encas", pays: "irak",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥟",
+    description: "Kubba — les croquettes farcies d'Irak : une coque de boulgour (ou de riz) enfermant une farce de viande hachée aux oignons, aux noix et aux épices chaudes, façonnée en boule ou en navette puis frite. Croustillante dehors, fondante et parfumée dedans, c'est un incontournable des tables et des fêtes irakiennes.",
+    tableauKubba: [
+      { nb: 1, boulgour: "50 g", boeuf: "50 g", oignon: "25 g", noix: "8 g", cannelle: "0.3 g", cumin: "1 g", coriandre: "5 g", huileolive: "10 ml", sel: "2 g" },
+      { nb: 2, boulgour: "100 g", boeuf: "100 g", oignon: "50 g", noix: "16 g", cannelle: "0.6 g", cumin: "2 g", coriandre: "10 g", huileolive: "20 ml", sel: "4 g" },
+      { nb: 3, boulgour: "150 g", boeuf: "150 g", oignon: "75 g", noix: "24 g", cannelle: "0.9 g", cumin: "3 g", coriandre: "15 g", huileolive: "30 ml", sel: "6 g" },
+      { nb: 4, boulgour: "200 g", boeuf: "200 g", oignon: "100 g", noix: "32 g", cannelle: "1.2 g", cumin: "4 g", coriandre: "20 g", huileolive: "40 ml", sel: "8 g" },
+      { nb: 5, boulgour: "250 g", boeuf: "250 g", oignon: "125 g", noix: "40 g", cannelle: "1.5 g", cumin: "5 g", coriandre: "25 g", huileolive: "50 ml", sel: "10 g" },
+      { nb: 6, boulgour: "300 g", boeuf: "300 g", oignon: "150 g", noix: "48 g", cannelle: "1.8 g", cumin: "6 g", coriandre: "30 g", huileolive: "60 ml", sel: "12 g" },
+      { nb: 7, boulgour: "350 g", boeuf: "350 g", oignon: "175 g", noix: "56 g", cannelle: "2.1 g", cumin: "7 g", coriandre: "35 g", huileolive: "70 ml", sel: "14 g" },
+      { nb: 8, boulgour: "400 g", boeuf: "400 g", oignon: "200 g", noix: "64 g", cannelle: "2.4 g", cumin: "8 g", coriandre: "40 g", huileolive: "80 ml", sel: "16 g" },
+      { nb: 9, boulgour: "450 g", boeuf: "450 g", oignon: "225 g", noix: "72 g", cannelle: "2.7 g", cumin: "9 g", coriandre: "45 g", huileolive: "90 ml", sel: "18 g" },
+      { nb: 10, boulgour: "500 g", boeuf: "500 g", oignon: "250 g", noix: "80 g", cannelle: "3 g", cumin: "10 g", coriandre: "50 g", huileolive: "100 ml", sel: "20 g" },
+      { nb: 11, boulgour: "550 g", boeuf: "550 g", oignon: "275 g", noix: "88 g", cannelle: "3.3 g", cumin: "11 g", coriandre: "55 g", huileolive: "110 ml", sel: "22 g" },
+      { nb: 12, boulgour: "600 g", boeuf: "600 g", oignon: "300 g", noix: "96 g", cannelle: "3.6 g", cumin: "12 g", coriandre: "60 g", huileolive: "120 ml", sel: "24 g" },
+      { nb: 13, boulgour: "650 g", boeuf: "650 g", oignon: "325 g", noix: "104 g", cannelle: "3.9 g", cumin: "13 g", coriandre: "65 g", huileolive: "130 ml", sel: "26 g" },
+      { nb: 14, boulgour: "700 g", boeuf: "700 g", oignon: "350 g", noix: "112 g", cannelle: "4.2 g", cumin: "14 g", coriandre: "70 g", huileolive: "140 ml", sel: "28 g" },
+      { nb: 15, boulgour: "750 g", boeuf: "750 g", oignon: "375 g", noix: "120 g", cannelle: "4.5 g", cumin: "15 g", coriandre: "75 g", huileolive: "150 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "La coque", detail: "Faites tremper le boulgour fin, puis pétrissez-le avec un peu de farine et de sel jusqu'à obtenir une pâte souple et malléable.", badge: null },
+      { icone: "🥩", titre: "La farce", detail: "Faites revenir la viande hachée avec l'oignon émincé, la cannelle, le cumin et les noix concassées, en une farce parfumée. Laissez refroidir.", badge: null },
+      { icone: "🌿", titre: "Parfumer", detail: "Ajoutez la coriandre (ou le persil) hachée à la farce refroidie.", badge: null },
+      { icone: "⚪", titre: "Former la coque", detail: "Prenez une boule de pâte de boulgour, creusez-la en coupelle fine du bout du doigt mouillé.", badge: null },
+      { icone: "🥟", titre: "Farcir", detail: "Garnissez la coupelle de farce, refermez délicatement en boule (ou en navette pointue) et lissez la surface.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire les kubba dans l'huile chaude jusqu'à ce qu'elles soient dorées et croustillantes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez et servez chaudes, avec du citron et une sauce. Croustillantes dehors, fondantes dedans — l'incontournable des fêtes irakiennes.", badge: null }
+    ]
+  },
+  qutab: {
+    dateAjout: "2026-07-10T18:06:00",
+    nom: "Qutab",
+    cat: "encas", pays: "azerbaidjan",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Qutab — les demi-lunes fines d'Azerbaïdjan : de fines crêpes de pâte pliées sur une garniture d'herbes fraîches (ou de potiron, ou de viande), cuites à sec sur une plaque (saj) jusqu'à être tachetées et moelleuses. Parsemées de grains de grenade, elles sont fines, vertes et parfumées.",
+    tableauQutab: [
+      { nb: 1, farine: "65 g", epinards: "50 g", oignon: "20 g", coriandre: "5 g", menthe: "3 g", grenade: "10 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, farine: "130 g", epinards: "100 g", oignon: "40 g", coriandre: "10 g", menthe: "6 g", grenade: "20 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, farine: "195 g", epinards: "150 g", oignon: "60 g", coriandre: "15 g", menthe: "9 g", grenade: "30 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, farine: "260 g", epinards: "200 g", oignon: "80 g", coriandre: "20 g", menthe: "12 g", grenade: "40 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, farine: "325 g", epinards: "250 g", oignon: "100 g", coriandre: "25 g", menthe: "15 g", grenade: "50 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, farine: "390 g", epinards: "300 g", oignon: "120 g", coriandre: "30 g", menthe: "18 g", grenade: "60 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, farine: "455 g", epinards: "350 g", oignon: "140 g", coriandre: "35 g", menthe: "21 g", grenade: "70 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, farine: "520 g", epinards: "400 g", oignon: "160 g", coriandre: "40 g", menthe: "24 g", grenade: "80 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, farine: "585 g", epinards: "450 g", oignon: "180 g", coriandre: "45 g", menthe: "27 g", grenade: "90 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, farine: "650 g", epinards: "500 g", oignon: "200 g", coriandre: "50 g", menthe: "30 g", grenade: "100 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, farine: "715 g", epinards: "550 g", oignon: "220 g", coriandre: "55 g", menthe: "33 g", grenade: "110 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, farine: "780 g", epinards: "600 g", oignon: "240 g", coriandre: "60 g", menthe: "36 g", grenade: "120 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, farine: "845 g", epinards: "650 g", oignon: "260 g", coriandre: "65 g", menthe: "39 g", grenade: "130 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, farine: "910 g", epinards: "700 g", oignon: "280 g", coriandre: "70 g", menthe: "42 g", grenade: "140 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, farine: "975 g", epinards: "750 g", oignon: "300 g", coriandre: "75 g", menthe: "45 g", grenade: "150 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec de l'eau et un peu de sel en une pâte souple et lisse. Laissez-la reposer 20 min.", badge: null },
+      { icone: "🌿", titre: "La garniture", detail: "Hachez finement une belle quantité d'herbes fraîches (épinard, coriandre, aneth, ciboule) avec l'oignon, et assaisonnez.", badge: null },
+      { icone: "📏", titre: "Abaisser", detail: "Divisez la pâte en boules et abaissez-les en cercles très fins, presque translucides.", badge: null },
+      { icone: "🥬", titre: "Garnir", detail: "Répartissez la garniture d'herbes sur une moitié de chaque cercle.", badge: null },
+      { icone: "🌙", titre: "Plier", detail: "Repliez la pâte par-dessus en demi-lune et scellez bien le bord.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Faites cuire les qutab à sec sur une plaque chaude (saj ou poêle), jusqu'à ce qu'ils soient tachetés de brun des deux côtés et moelleux.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Badigeonnez de beurre fondu, parsemez de grains de grenade et de sumac, et servez chauds. Fins, verts et parfumés — les demi-lunes d'Azerbaïdjan.", badge: null }
+    ]
+  },
 });

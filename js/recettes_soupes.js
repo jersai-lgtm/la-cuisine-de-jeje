@@ -4442,4 +4442,79 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez la molokhia brûlante sur le riz (ou avec du pain baladi), avec le poulet à côté et un trait de citron. Soyeuse, verte et parfumée — l'emblème du Nil.", badge: null }
     ]
   },
+  shurpa: {
+    dateAjout: "2026-07-10T18:05:00",
+    nom: "Shurpa",
+    cat: "soupes", pays: "ouzbekistan",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐ Facile",
+    emoji: "🍲",
+    description: "Shurpa — la soupe d'agneau ouzbèke : un bouillon clair et généreux d'agneau mijoté avec des gros morceaux de légumes (pomme de terre, carotte, poivron, tomate) et beaucoup d'herbes fraîches. Réconfortante et parfumée, c'est la grande soupe rustique d'Asie centrale.",
+    tableauShurpa: [
+      { nb: 1, agneau: "90 g", pommedeterre: "50 g", carotte: "30 g", oignon: "30 g", tomates: "½", poivron: "25 g", coriandre: "4 g", cumin: "1 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, agneau: "180 g", pommedeterre: "100 g", carotte: "60 g", oignon: "60 g", tomates: "1", poivron: "50 g", coriandre: "8 g", cumin: "2 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, agneau: "270 g", pommedeterre: "150 g", carotte: "90 g", oignon: "90 g", tomates: "1½", poivron: "75 g", coriandre: "12 g", cumin: "3 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, agneau: "360 g", pommedeterre: "200 g", carotte: "120 g", oignon: "120 g", tomates: "2", poivron: "100 g", coriandre: "16 g", cumin: "4 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, agneau: "450 g", pommedeterre: "250 g", carotte: "150 g", oignon: "150 g", tomates: "2½", poivron: "125 g", coriandre: "20 g", cumin: "5 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, agneau: "540 g", pommedeterre: "300 g", carotte: "180 g", oignon: "180 g", tomates: "3", poivron: "150 g", coriandre: "24 g", cumin: "6 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, agneau: "630 g", pommedeterre: "350 g", carotte: "210 g", oignon: "210 g", tomates: "3½", poivron: "175 g", coriandre: "28 g", cumin: "7 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, agneau: "720 g", pommedeterre: "400 g", carotte: "240 g", oignon: "240 g", tomates: "4", poivron: "200 g", coriandre: "32 g", cumin: "8 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, agneau: "810 g", pommedeterre: "450 g", carotte: "270 g", oignon: "270 g", tomates: "4½", poivron: "225 g", coriandre: "36 g", cumin: "9 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, agneau: "900 g", pommedeterre: "500 g", carotte: "300 g", oignon: "300 g", tomates: "5", poivron: "250 g", coriandre: "40 g", cumin: "10 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, agneau: "990 g", pommedeterre: "550 g", carotte: "330 g", oignon: "330 g", tomates: "5½", poivron: "275 g", coriandre: "44 g", cumin: "11 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, agneau: "1080 g", pommedeterre: "600 g", carotte: "360 g", oignon: "360 g", tomates: "6", poivron: "300 g", coriandre: "48 g", cumin: "12 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, agneau: "1170 g", pommedeterre: "650 g", carotte: "390 g", oignon: "390 g", tomates: "6½", poivron: "325 g", coriandre: "52 g", cumin: "13 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, agneau: "1260 g", pommedeterre: "700 g", carotte: "420 g", oignon: "420 g", tomates: "7", poivron: "350 g", coriandre: "56 g", cumin: "14 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, agneau: "1350 g", pommedeterre: "750 g", carotte: "450 g", oignon: "450 g", tomates: "7½", poivron: "375 g", coriandre: "60 g", cumin: "15 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "L'agneau", detail: "Faites dorer les morceaux d'agneau (avec os pour le goût) dans un peu d'huile, au fond d'une marmite.", badge: null },
+      { icone: "🧅", titre: "Les aromates", detail: "Ajoutez l'oignon émincé et faites-le fondre, puis la tomate et le cumin.", badge: null },
+      { icone: "💧", titre: "Le bouillon", detail: "Couvrez généreusement d'eau et laissez mijoter à feu doux 1 h, en écumant, jusqu'à ce que l'agneau soit très tendre.", badge: null },
+      { icone: "🥕", titre: "Les légumes", detail: "Ajoutez la carotte, la pomme de terre et le poivron en gros morceaux, et poursuivez la cuisson jusqu'à ce qu'ils soient tendres.", badge: null },
+      { icone: "🌿", titre: "Les herbes", detail: "Assaisonnez et ajoutez une belle quantité de coriandre et d'aneth frais en fin de cuisson.", badge: null },
+      { icone: "🍲", titre: "Servir le bouillon", detail: "Servez d'abord le bouillon clair et parfumé dans les bols.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Puis présentez la viande et les légumes à part (ou dans le bol), avec du pain et des herbes. Réconfortante et rustique — la grande soupe d'Asie centrale.", badge: null }
+    ],
+    liees: ["plov"]
+  },
+  dushbara: {
+    dateAjout: "2026-07-10T18:07:00",
+    nom: "Dushbara",
+    cat: "soupes", pays: "azerbaidjan",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥟",
+    description: "Dushbara — les minuscules raviolis d'Azerbaïdjan : de tout petits raviolis d'agneau (les plus fins possible, un art de patience) pochés dans un bouillon clair, servis avec du vinaigre à l'ail et de la menthe séchée. Délicats et réconfortants, ils sont la fierté des cuisinières azéries.",
+    tableauDushbara: [
+      { nb: 1, farine: "55 g", agneau: "50 g", oignon: "20 g", menthe: "3 g", vinaigre: "5 ml", ail: "1", bouillon: "300 ml", oeufs: "¼", sel: "2 g" },
+      { nb: 2, farine: "110 g", agneau: "100 g", oignon: "40 g", menthe: "6 g", vinaigre: "10 ml", ail: "2", bouillon: "600 ml", oeufs: "½", sel: "4 g" },
+      { nb: 3, farine: "165 g", agneau: "150 g", oignon: "60 g", menthe: "9 g", vinaigre: "15 ml", ail: "3", bouillon: "900 ml", oeufs: "¾", sel: "6 g" },
+      { nb: 4, farine: "220 g", agneau: "200 g", oignon: "80 g", menthe: "12 g", vinaigre: "20 ml", ail: "4", bouillon: "1200 ml", oeufs: "1", sel: "8 g" },
+      { nb: 5, farine: "275 g", agneau: "250 g", oignon: "100 g", menthe: "15 g", vinaigre: "25 ml", ail: "5", bouillon: "1500 ml", oeufs: "1¼", sel: "10 g" },
+      { nb: 6, farine: "330 g", agneau: "300 g", oignon: "120 g", menthe: "18 g", vinaigre: "30 ml", ail: "6", bouillon: "1800 ml", oeufs: "1½", sel: "12 g" },
+      { nb: 7, farine: "385 g", agneau: "350 g", oignon: "140 g", menthe: "21 g", vinaigre: "35 ml", ail: "7", bouillon: "2100 ml", oeufs: "1¾", sel: "14 g" },
+      { nb: 8, farine: "440 g", agneau: "400 g", oignon: "160 g", menthe: "24 g", vinaigre: "40 ml", ail: "8", bouillon: "2400 ml", oeufs: "2", sel: "16 g" },
+      { nb: 9, farine: "495 g", agneau: "450 g", oignon: "180 g", menthe: "27 g", vinaigre: "45 ml", ail: "9", bouillon: "2700 ml", oeufs: "2¼", sel: "18 g" },
+      { nb: 10, farine: "550 g", agneau: "500 g", oignon: "200 g", menthe: "30 g", vinaigre: "50 ml", ail: "10", bouillon: "3000 ml", oeufs: "2½", sel: "20 g" },
+      { nb: 11, farine: "605 g", agneau: "550 g", oignon: "220 g", menthe: "33 g", vinaigre: "55 ml", ail: "11", bouillon: "3300 ml", oeufs: "2¾", sel: "22 g" },
+      { nb: 12, farine: "660 g", agneau: "600 g", oignon: "240 g", menthe: "36 g", vinaigre: "60 ml", ail: "12", bouillon: "3600 ml", oeufs: "3", sel: "24 g" },
+      { nb: 13, farine: "715 g", agneau: "650 g", oignon: "260 g", menthe: "39 g", vinaigre: "65 ml", ail: "13", bouillon: "3900 ml", oeufs: "3¼", sel: "26 g" },
+      { nb: 14, farine: "770 g", agneau: "700 g", oignon: "280 g", menthe: "42 g", vinaigre: "70 ml", ail: "14", bouillon: "4200 ml", oeufs: "3½", sel: "28 g" },
+      { nb: 15, farine: "825 g", agneau: "750 g", oignon: "300 g", menthe: "45 g", vinaigre: "75 ml", ail: "15", bouillon: "4500 ml", oeufs: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec l'œuf, un peu d'eau et de sel en une pâte ferme et lisse. Laissez reposer, puis abaissez-la très finement.", badge: null },
+      { icone: "🥩", titre: "La farce", detail: "Hachez l'agneau très finement avec l'oignon, le sel et le poivre, en une farce lisse.", badge: null },
+      { icone: "◻️", titre: "Découper", detail: "Découpez la pâte fine en tout petits carrés (2-3 cm de côté).", badge: null },
+      { icone: "🤏", titre: "Façonner", detail: "Déposez une pointe de farce au centre de chaque carré, repliez en triangle puis en minuscule ravioli (le défi : les faire les plus petits possible).", badge: null },
+      { icone: "🍲", titre: "Le bouillon", detail: "Portez un bouillon d'agneau clair à frémissement.", badge: null },
+      { icone: "♨️", titre: "Pocher", detail: "Plongez les dushbara dans le bouillon et laissez-les cuire jusqu'à ce qu'ils remontent à la surface.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlant, avec du vinaigre à l'ail et de la menthe séchée à ajouter selon le goût. Délicats et réconfortants — la fierté des cuisinières azéries.", badge: null }
+    ]
+  },
 });

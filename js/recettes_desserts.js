@@ -8306,4 +8306,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Égouttez et laissez le sirop prendre. Dégustez froid : croustillant dehors, gorgé de sirop dedans. La gourmandise sirupeuse du Cap.", badge: null }
     ]
   },
+  chakchak: {
+    dateAjout: "2026-07-10T18:09:00",
+    nom: "Chak-Chak",
+    cat: "desserts", pays: "kazakhstan",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍯",
+    description: "Chak-chak — la montagne dorée au miel d'Asie centrale : de minuscules bâtonnets de pâte frits, croustillants, enrobés d'un sirop de miel chaud et façonnés en un dôme brillant. Craquant et très sucré, c'est la douceur des mariages et des fêtes chez les Tatars, les Kazakhs et les Bachkirs.",
+    tableauChakchak: [
+      { nb: 1, farine: "55 g", oeufs: "1", miel: "30 g", sucre: "12 g", beurre: "6 g", huileolive: "10 ml", sel: "1 g" },
+      { nb: 2, farine: "110 g", oeufs: "2", miel: "60 g", sucre: "24 g", beurre: "12 g", huileolive: "20 ml", sel: "2 g" },
+      { nb: 3, farine: "165 g", oeufs: "3", miel: "90 g", sucre: "36 g", beurre: "18 g", huileolive: "30 ml", sel: "3 g" },
+      { nb: 4, farine: "220 g", oeufs: "4", miel: "120 g", sucre: "48 g", beurre: "24 g", huileolive: "40 ml", sel: "4 g" },
+      { nb: 5, farine: "275 g", oeufs: "5", miel: "150 g", sucre: "60 g", beurre: "30 g", huileolive: "50 ml", sel: "5 g" },
+      { nb: 6, farine: "330 g", oeufs: "6", miel: "180 g", sucre: "72 g", beurre: "36 g", huileolive: "60 ml", sel: "6 g" },
+      { nb: 7, farine: "385 g", oeufs: "7", miel: "210 g", sucre: "84 g", beurre: "42 g", huileolive: "70 ml", sel: "7 g" },
+      { nb: 8, farine: "440 g", oeufs: "8", miel: "240 g", sucre: "96 g", beurre: "48 g", huileolive: "80 ml", sel: "8 g" },
+      { nb: 9, farine: "495 g", oeufs: "9", miel: "270 g", sucre: "108 g", beurre: "54 g", huileolive: "90 ml", sel: "9 g" },
+      { nb: 10, farine: "550 g", oeufs: "10", miel: "300 g", sucre: "120 g", beurre: "60 g", huileolive: "100 ml", sel: "10 g" },
+      { nb: 11, farine: "605 g", oeufs: "11", miel: "330 g", sucre: "132 g", beurre: "66 g", huileolive: "110 ml", sel: "11 g" },
+      { nb: 12, farine: "660 g", oeufs: "12", miel: "360 g", sucre: "144 g", beurre: "72 g", huileolive: "120 ml", sel: "12 g" },
+      { nb: 13, farine: "715 g", oeufs: "13", miel: "390 g", sucre: "156 g", beurre: "78 g", huileolive: "130 ml", sel: "13 g" },
+      { nb: 14, farine: "770 g", oeufs: "14", miel: "420 g", sucre: "168 g", beurre: "84 g", huileolive: "140 ml", sel: "14 g" },
+      { nb: 15, farine: "825 g", oeufs: "15", miel: "450 g", sucre: "180 g", beurre: "90 g", huileolive: "150 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec l'œuf, le beurre fondu et une pincée de sel en une pâte ferme et lisse. Laissez-la reposer.", badge: null },
+      { icone: "📏", titre: "Abaisser", detail: "Abaissez la pâte finement et découpez-la en fines lanières, puis en tout petits bâtonnets (ou petites boules).", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire les bâtonnets par petites quantités dans l'huile chaude, jusqu'à ce qu'ils soient dorés et gonflés. Égouttez-les.", badge: null },
+      { icone: "🍯", titre: "Le sirop", detail: "Faites fondre le miel avec le sucre et un peu d'eau, et portez à ébullition jusqu'à obtenir un sirop épais (au petit boulé).", badge: null },
+      { icone: "🥣", titre: "Enrober", detail: "Versez les bâtonnets frits dans le sirop chaud et mélangez délicatement pour bien les enrober.", badge: null },
+      { icone: "⛰️", titre: "Façonner", detail: "Versez le mélange sur un plat et façonnez-le rapidement (mains mouillées) en un dôme ou une pyramide compacte, avant que le sirop ne fige.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez prendre, puis coupez ou détachez des morceaux. Craquant, doré et très sucré — la douceur de fête d'Asie centrale.", badge: null }
+    ]
+  },
 });

@@ -66984,5 +66984,345 @@ window.RECETTES_EN = {
     "detail": "Serve warm, plain, for breakfast with a maté or coffee. Soft, melting and gluten-free — the cheese breads of Paraguay."
    }
   ]
+ },
+ "masgouf": {
+  "nom": "Masgouf",
+  "description": "Masgouf — the iconic grilled fish of Iraq: a large carp butterflied open, brushed with oil, turmeric and tamarind, then grilled slowly upright beside the embers. Smoky, golden and tender, served with tomatoes and lemon, it's the Iraqi national dish, a ritual on the banks of the Tigris.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Butterfly the fish (carp, or sea bream) open along the back, without separating it, and flatten it."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Mix the oil, turmeric, diluted tamarind, crushed garlic, salt and a dash of lemon, and brush it over the flesh."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the fish absorb the marinade for 20 to 30 minutes."
+   },
+   {
+    "titre": "Grill slowly",
+    "detail": "Grill the fish skin-side, away from a fierce fire (traditionally set upright by the embers), slowly, until the flesh is smoky and cooked."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Near the end, lay tomato and onion slices on the flesh so they char lightly."
+   },
+   {
+    "titre": "Colour",
+    "detail": "Move the fish close to the embers for a moment to brown and crisp the skin."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the masgouf piping hot, with bread, lemon, tomatoes and raw onion. Smoky, golden and tender — the ritual of the Tigris banks."
+   }
+  ]
+ },
+ "kubba": {
+  "nom": "Kubba",
+  "description": "Kubba — the stuffed croquettes of Iraq: a bulgur (or rice) shell enclosing a filling of minced meat with onions, walnuts and warm spices, shaped into a ball or torpedo then fried. Crisp outside, tender and fragrant inside, it's an essential of Iraqi tables and festivities.",
+  "etapes": [
+   {
+    "titre": "The shell",
+    "detail": "Soak the fine bulgur, then knead it with a little flour and salt until you get a soft, malleable dough."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Sauté the minced meat with the sliced onion, cinnamon, cumin and crushed walnuts, into a fragrant filling. Let it cool."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add the chopped coriander (or parsley) to the cooled filling."
+   },
+   {
+    "titre": "Form the shell",
+    "detail": "Take a ball of bulgur dough, hollow it into a thin cup with a wet fingertip."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the cup with filling, gently close into a ball (or pointed torpedo) and smooth the surface."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the kubba in hot oil until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot, with lemon and a sauce. Crisp outside, tender inside — the essential of Iraqi festivities."
+   }
+  ]
+ },
+ "machboos": {
+  "nom": "Machboos",
+  "description": "Machboos (or Gulf kabsa) — the Kuwaiti spiced rice: fragrant basmati cooked in a poultry broth lifted with baharat, dried black lime (loomi) and saffron, crowned with golden chicken. Fragrant, golden and convivial, it's the great sharing dish of the Gulf countries.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Brown the chicken pieces in the oil, then set them aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and tomato, then add the baharat (cinnamon, cumin, cardamom, pepper) and turmeric."
+   },
+   {
+    "titre": "The loomi",
+    "detail": "Add the pierced dried black lime (loomi), which gives machboos its characteristic tangy aroma."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Return the chicken, cover with water and simmer until tender. Set aside the chicken and keep the fragrant broth."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Cook the basmati rice in this broth, with a little saffron, until tender and fragrant."
+   },
+   {
+    "titre": "Brown the chicken",
+    "detail": "Return the chicken to the oven or pan to colour it and make it crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the golden rice, topped with the chicken and fried onions, with a spicy tomato sauce (daqoos). Fragrant and convivial — the great dish of the Gulf."
+   }
+  ]
+ },
+ "harees": {
+  "nom": "Harees",
+  "description": "Harees — the Emirati wheat and meat porridge: cracked wheat and meat long-simmered then beaten into a smooth, silky purée, topped with golden ghee. Comforting and nourishing, it's a dish of Ramadan and big occasions in the Gulf.",
+  "etapes": [
+   {
+    "titre": "The wheat",
+    "detail": "Soak the cracked wheat (or coarse bulgur) for several hours, then drain it."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Cook the meat (chicken or lamb) in water with a little cinnamon, until very tender, and shred it."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Combine the wheat and shredded meat in the broth, and simmer at length over low heat until the wheat is tender."
+   },
+   {
+    "titre": "Beat",
+    "detail": "Beat the mixture energetically (with a whisk or pestle) until you get a smooth, silky, even purée: the signature texture of harees."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and adjust the consistency: the harees should be creamy and coating."
+   },
+   {
+    "titre": "The ghee",
+    "detail": "Melt the butter (ghee) with a little cumin or cinnamon, until golden and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the harees, make a well and pour in the golden ghee. Comforting and nourishing — the Ramadan dish of the Gulf."
+   }
+  ]
+ },
+ "thareed": {
+  "nom": "Thareed",
+  "description": "Thareed — the Gulf stew on bread: a lamb and vegetable stew scented with loomi and baharat, poured over thin bread (regag) that soaks up the broth. Comforting and generous, much loved at Ramadan, it was said to be the Prophet's favourite dish.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Brown the lamb pieces in the oil, on all sides."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the onion, garlic and tomato, then the baharat (cinnamon, cumin, coriander, loomi) and let it cook down."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover with water and simmer until the lamb is tender and the broth fragrant."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the carrot, courgette (and potato) in pieces, and continue until tender."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Lay thin bread (regag, or thin bread) in the bottom of a large dish."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Pour the stew and its broth over the bread, to soak and soften it well."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, the bread soft and soaked with broth, the meat and vegetables on top. Comforting and generous — the Ramadan dish of the Gulf."
+   }
+  ]
+ },
+ "shurpa": {
+  "nom": "Shurpa",
+  "description": "Shurpa — the Uzbek lamb soup: a clear, generous lamb broth simmered with large pieces of vegetables (potato, carrot, pepper, tomato) and plenty of fresh herbs. Comforting and fragrant, it's the great rustic soup of Central Asia.",
+  "etapes": [
+   {
+    "titre": "The lamb",
+    "detail": "Brown the lamb pieces (bone-in for flavour) in a little oil, at the bottom of a pot."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the sliced onion and soften it, then the tomato and cumin."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Cover generously with water and simmer over low heat 1 hour, skimming, until the lamb is very tender."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the carrot, potato and pepper in large pieces, and continue cooking until tender."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Season and add a good amount of fresh coriander and dill at the end."
+   },
+   {
+    "titre": "Serve the broth",
+    "detail": "First serve the clear, fragrant broth in the bowls."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Then present the meat and vegetables separately (or in the bowl), with bread and herbs. Comforting and rustic — the great soup of Central Asia."
+   }
+  ]
+ },
+ "qutab": {
+  "nom": "Qutab",
+  "description": "Qutab — the thin half-moons of Azerbaijan: thin pancakes of dough folded over a filling of fresh herbs (or pumpkin, or meat), cooked dry on a griddle (saj) until speckled and soft. Scattered with pomegranate seeds, they're thin, green and fragrant.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with water and a little salt into a soft, smooth dough. Rest it 20 minutes."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Finely chop a good amount of fresh herbs (spinach, coriander, dill, spring onion) with the onion, and season."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Divide the dough into balls and roll them into very thin, almost translucent circles."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the herb filling over half of each circle."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold the dough over into a half-moon and seal the edge well."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the qutab dry on a hot griddle (saj or pan), until speckled brown on both sides and soft."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Brush with melted butter, scatter with pomegranate seeds and sumac, and serve hot. Thin, green and fragrant — the half-moons of Azerbaijan."
+   }
+  ]
+ },
+ "dushbara": {
+  "nom": "Dushbara",
+  "description": "Dushbara — the tiny dumplings of Azerbaijan: minuscule lamb dumplings (as small as possible, an art of patience) poached in a clear broth, served with garlic vinegar and dried mint. Delicate and comforting, they're the pride of Azerbaijani cooks.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with the egg, a little water and salt into a firm, smooth dough. Rest it, then roll it very thin."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Finely chop the lamb with the onion, salt and pepper, into a smooth filling."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the thin dough into very small squares (2-3 cm)."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Place a dot of filling in the centre of each square, fold into a triangle then a tiny dumpling (the challenge: make them as small as possible)."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Bring a clear lamb broth to a simmer."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Drop the dushbara into the broth and cook until they rise to the surface."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with garlic vinegar and dried mint to add to taste. Delicate and comforting — the pride of Azerbaijani cooks."
+   }
+  ]
+ },
+ "kurutob": {
+  "nom": "Kurutob",
+  "description": "Kurutob — the Tajik national sharing dish: pieces of flaky bread (fatir) torn and drizzled with a qurut sauce (rehydrated dried yogurt), topped with onions, tomatoes, herbs and a drizzle of oil. Served in a large platter, it's eaten by hand, all together.",
+  "etapes": [
+   {
+    "titre": "The qurut sauce",
+    "detail": "Dissolve the qurut (dried yogurt balls) in a little warm water, or use beaten plain yogurt, into a creamy, tangy sauce. Salt."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Tear the flaky bread (fatir, or a flatbread) into bites and lay it in the bottom of a large platter."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Finely slice the onion and gently sauté it in a little oil (or leave it raw for more bite)."
+   },
+   {
+    "titre": "The raw vegetables",
+    "detail": "Dice the tomatoes and chop the fresh herbs (coriander, basil, dill)."
+   },
+   {
+    "titre": "Drizzle",
+    "detail": "Pour the qurut sauce over the torn bread, to soak it well."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Spread the onions, tomatoes, herbs and a drizzle of oil over the top."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, in the shared platter, to eat by hand. Tangy, fresh and convivial — the Tajik national sharing dish."
+   }
+  ]
+ },
+ "chakchak": {
+  "nom": "Chak-Chak",
+  "description": "Chak-chak — the golden honey mound of Central Asia: tiny fried dough sticks, crisp, coated in a hot honey syrup and shaped into a glossy dome. Crunchy and very sweet, it's the treat of weddings and festivities among the Tatars, Kazakhs and Bashkirs.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with the egg, melted butter and a pinch of salt into a firm, smooth dough. Let it rest."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough thin and cut it into fine strips, then into tiny sticks (or little balls)."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the sticks in small batches in hot oil, until golden and puffed. Drain them."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Melt the honey with the sugar and a little water, and boil until you get a thick syrup (soft-ball stage)."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Pour the fried sticks into the hot syrup and gently mix to coat them well."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Tip the mixture onto a dish and quickly shape it (wet hands) into a compact dome or pyramid, before the syrup sets."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it set, then cut or break off pieces. Crunchy, golden and very sweet — the festive treat of Central Asia."
+   }
+  ]
  }
 };
