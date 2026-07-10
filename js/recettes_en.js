@@ -63958,5 +63958,311 @@ window.RECETTES_EN = {
     "detail": "Serve the chakchouka scalding, straight from the pan, with bread to mop up the runny yolk. Spicy, soft and convivial."
    }
   ]
+ },
+ "tagineagneau": {
+  "nom": "Lamb and Prune Tagine",
+  "description": "Lamb and prune tagine — the quintessential Moroccan sweet-savoury: tender lamb simmered in spices, topped with honey-cinnamon candied prunes, scattered with toasted almonds and sesame. A smooth, fragrant festive dish.",
+  "etapes": [
+   {
+    "titre": "Sear the lamb",
+    "detail": "Brown the lamb pieces in the hot oil with grated onion, ginger, saffron, cinnamon and salt."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Add water to halfway, cover and simmer over very low heat for 1 hour 30, until the meat is ultra-tender."
+   },
+   {
+    "titre": "The prunes",
+    "detail": "Candy the prunes separately in a little of the cooking juice with the honey and cinnamon, until glossy and syrupy."
+   },
+   {
+    "titre": "Reduce the sauce",
+    "detail": "Uncover the meat and let the sauce reduce until it coats and turns smooth and fragrant."
+   },
+   {
+    "titre": "Toast the almonds",
+    "detail": "Brown the blanched almonds in a little oil until crisp."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the lamb in the tagine, crown it with the candied prunes and their syrup, and scatter with toasted almonds and sesame."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scalding, straight from the tagine, with Moroccan bread. The tender, fragrant sweet-savoury of the Moroccan table, a festive dish."
+   }
+  ]
+ },
+ "taginepoulet": {
+  "nom": "Chicken Tagine with Lemon",
+  "description": "Chicken tagine with preserved lemon and olives — the fragrant Moroccan classic: chicken simmered in a golden saffron-ginger sauce, lifted with preserved lemon and green olives. Tangy, tender and sunny, the emblem of Moroccan cuisine.",
+  "etapes": [
+   {
+    "titre": "Marinate the chicken",
+    "detail": "Rub the chicken with garlic, ginger, saffron, turmeric, coriander and a little oil (chermoula). Marinate 30 minutes."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the grated onion in the oil until soft, then add the marinated chicken and colour it."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Add a little water, cover and simmer over low heat for 45 minutes, until the chicken is tender and the sauce fragrant."
+   },
+   {
+    "titre": "The preserved lemon",
+    "detail": "Add the preserved lemon cut into strips (mostly the peel): it brings the characteristic acidity and aroma of tagine."
+   },
+   {
+    "titre": "The olives",
+    "detail": "Add the green olives (desalted) and simmer another 10 minutes so they infuse."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover and let the sauce reduce until it coats the chicken in a golden, smooth yellow."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with fresh coriander and serve scalding, in the tagine, with Moroccan bread to mop up. Tangy, tender and sunny — the emblem of Morocco."
+   }
+  ]
+ },
+ "ghapama": {
+  "nom": "Ghapama",
+  "description": "Ghapama — the Armenian stuffed pumpkin: a hollowed pumpkin filled with rice mixed with dried fruits (apricots, raisins, walnuts) and honey, then baked until tender. Served open and spectacular, it's a festive dish celebrated in song in Armenia.",
+  "etapes": [
+   {
+    "titre": "Prepare the pumpkin",
+    "detail": "Cut a lid from the pumpkin (or squash) and scoop out the seeds and some flesh, keeping a cavity for the filling."
+   },
+   {
+    "titre": "Par-cook the rice",
+    "detail": "Cook the rice halfway (it finishes in the pumpkin), then drain it."
+   },
+   {
+    "titre": "The dried fruits",
+    "detail": "Plump the dried apricots and raisins in warm water, and crush the walnuts."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the half-cooked rice with the apricots, raisins, walnuts, honey, cinnamon and melted butter: a sweet, fragrant filling."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the pumpkin cavity with the filling, without packing too tightly (the rice swells), and close with the lid."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake the whole pumpkin at 180°C for 1 hour to 1 hour 15, until the flesh is soft and the rice cooked and infused."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Present the whole pumpkin at the table and open it in front of the guests (the spectacular moment), then serve the soft flesh with the filling. An Armenian festive dish."
+   }
+  ]
+ },
+ "sfenj": {
+  "nom": "Sfenj",
+  "description": "Sfenj — Moroccan doughnuts: large rings of leavened dough, fried until golden, puffed and airy, crisp outside and soft inside. Sold hot in the early morning, enjoyed plain, sugared or dipped in mint tea.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Dissolve the yeast in a little warm water, then mix with the flour, salt and enough water to form a VERY soft, wet, sticky dough (the secret to airy sfenj)."
+   },
+   {
+    "titre": "Work",
+    "detail": "Work the dough with a wet hand, lifting and slapping it, until it becomes elastic and full of bubbles."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and let rise 1 hour 30 in a warm place, until doubled and full of air."
+   },
+   {
+    "titre": "Form the rings",
+    "detail": "With well-oiled hands, take portions of dough, poke a hole in the centre with your finger and stretch into a ring."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Plunge the rings into hot oil (180°C) and fry 2 to 3 minutes per side, until puffed, golden and crisp."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels. The sfenj should be crisp outside, soft and airy inside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, plain, dusted with sugar or dipped in mint tea. The Moroccan street breakfast, to enjoy piping hot."
+   }
+  ]
+ },
+ "makroudh": {
+  "nom": "Makroud",
+  "description": "Makroud — semolina date lozenges: little semolina cakes filled with a cinnamon-scented date paste, fried or baked, then dipped in honey. Melting and syrupy, they're the essential of Maghrebi festive tables.",
+  "etapes": [
+   {
+    "titre": "The semolina dough",
+    "detail": "Mix the (medium) semolina with the oil (or melted butter) and a little orange blossom water, into a soft dough. Let rest 20 minutes."
+   },
+   {
+    "titre": "The date paste",
+    "detail": "Pit the dates and mash them with a little cinnamon and butter into a smooth, malleable paste."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Roll the semolina dough into a strip, place a log of date paste in the centre, close the semolina around it and shape a long filled strip."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Flatten slightly and cut into lozenges (makroud), optionally marking a pattern with tongs."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Fry the makroud in oil until golden (or bake them), then drain."
+   },
+   {
+    "titre": "Dip in honey",
+    "detail": "Plunge the hot makroud into warm honey for a few minutes: they soak in and turn glossy and syrupy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain, scatter with sesame and serve. Melting, syrupy and fragrant — the festive lozenges of the Maghreb, to savour with a tea."
+   }
+  ]
+ },
+ "zlabia": {
+  "nom": "Zlabia",
+  "description": "Zlabia — the fried syrup spirals of the Maghreb: threads of fermented batter piped into a lacy web, fried until crisp, then drenched in saffron syrup. Bright orange, crunchy and syrupy, they light up Ramadan tables.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Mix the flour, yeast, a little starch and saffron with water, into a smooth, fluid batter. Let ferment 1 hour (it should be slightly tangy)."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Make a honey (or sugar) syrup scented with saffron and orange blossom water: boil until coating. Keep it warm."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat the frying oil to 170°C."
+   },
+   {
+    "titre": "Pipe into spirals",
+    "detail": "Pour the batter into a bag (or a pierced bottle) and pipe it into the oil in interlacing spirals and lacy webs."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the zlabia until golden and crisp, turning. Drain briefly."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Immediately plunge the hot zlabia into the warm syrup: they soak in while keeping their crunch, and take on their bright orange colour."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve. Crunchy, syrupy and fragrant — the orange spirals that light up Ramadan tables in the Maghreb."
+   }
+  ]
+ },
+ "griwech": {
+  "nom": "Griwech",
+  "description": "Griwech — the Algerian honey-woven lozenges: thin strips of dough interlaced into a diamond, fried until golden and crisp, dipped in honey and rolled in sesame. Crunchy and fragrant, they adorn festive tables.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, egg, a little oil, vinegar and orange blossom water into a soft, elastic dough. Knead well and rest 30 minutes."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough very thin (with a pasta machine if possible), then cut rectangles slit with several parallel cuts in the centre."
+   },
+   {
+    "titre": "Weave",
+    "detail": "Pass one end of the rectangle through the slits and flip to form the characteristic woven diamond."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the griwech in hot oil until golden and crisp, holding them flat at first to keep the shape."
+   },
+   {
+    "titre": "Dip in honey",
+    "detail": "Plunge the hot griwech into warm orange-blossom honey for a few minutes, so they soak in."
+   },
+   {
+    "titre": "Sesame",
+    "detail": "Drain and immediately roll them in toasted sesame seeds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let the honey set then serve. Crunchy, woven and fragrant — the Algerian festive lozenges, a refined pastry."
+   }
+  ]
+ },
+ "cornesgazelle": {
+  "nom": "Gazelle Horns",
+  "description": "Gazelle horns (kaab el ghazal) — the refined Moroccan pastry: thin crescents of fine dough enclosing an almond paste scented with orange blossom and cinnamon. Delicate and melting, they're the queen of Moroccan festive tables.",
+  "etapes": [
+   {
+    "titre": "The almond paste",
+    "detail": "Blend the ground almonds with the sugar, cinnamon, a little butter and orange blossom water, into a smooth, malleable paste."
+   },
+   {
+    "titre": "Form the logs",
+    "detail": "Shape the almond paste into small logs tapered at the ends (the inner shape of the horn)."
+   },
+   {
+    "titre": "The fine dough",
+    "detail": "Make a fine dough with the flour, a little butter and water. Knead at length and roll it VERY thin (almost translucent)."
+   },
+   {
+    "titre": "Fill & form",
+    "detail": "Place the almond logs on the dough, fold the dough over, cut around into a crescent shape and pinch the edges to seal."
+   },
+   {
+    "titre": "Curve",
+    "detail": "Gently curve each horn into a crescent (like gazelle horns) and prick them with a needle to avoid bubbles."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 170°C for 12 to 15 minutes, until the horns are barely golden (they should stay pale and melting)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool, optionally roll them in orange blossom water and icing sugar. Delicate and melting — the queen of Moroccan pastries."
+   }
+  ]
+ },
+ "fekkas": {
+  "nom": "Fekkas",
+  "description": "Fekkas — the Moroccan dry almond biscuits: thin crunchy slices studded with almonds, raisins and seeds, baked twice like biscotti. Perfect for tea, they keep for a long time and accompany long conversations.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, sugar, yeast, egg, a little butter and anise seeds (or star anise) into a soft dough."
+   },
+   {
+    "titre": "The add-ins",
+    "detail": "Work the whole almonds, raisins and sesame seeds into the dough, distributing them evenly."
+   },
+   {
+    "titre": "Form the logs",
+    "detail": "Shape the dough into thin logs and place them on a tray."
+   },
+   {
+    "titre": "First bake",
+    "detail": "Bake at 180°C for 20 minutes, until the logs are golden and firm."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Let cool slightly, then slice the logs diagonally into thin slices of about 5 mm with a sharp knife."
+   },
+   {
+    "titre": "Second bake",
+    "detail": "Lay the slices back on the tray and bake again for 8 to 10 minutes, until dry and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool completely: they harden as they cool. Serve with mint tea. They keep for weeks."
+   }
+  ]
  }
 };
