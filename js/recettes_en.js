@@ -66304,5 +66304,345 @@ window.RECETTES_EN = {
     "detail": "Mix and serve at room temperature, with chiura or as a side to dal bhat. Tangy, nutty and fragrant — the Nepali festive achar."
    }
   ]
+ },
+ "molokhia": {
+  "nom": "Molokhia",
+  "description": "Molokhia — the Egyptian green soup: finely chopped jute (molokhia) leaves simmered into a slightly viscous green velouté in a poultry broth, awakened by a ta'leya (garlic fried with coriander). Served over rice or bread with chicken or rabbit, it's an emblematic dish of the Nile.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Cook the chicken (or rabbit) in water with onion, cardamom and bay, until tender. Set aside the meat and strain the broth."
+   },
+   {
+    "titre": "The molokhia",
+    "detail": "Very finely chop the jute (molokhia) leaves (or spinach). They should be almost puréed."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the chopped molokhia to the simmering broth and cook over low heat, without hard boiling, until the soup thickens slightly (it turns silky and green)."
+   },
+   {
+    "titre": "The ta'leya",
+    "detail": "Sauté the crushed garlic in the oil (or ghee) with ground coriander and a little chilli, until fragrant and golden."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "Pour the sizzling ta'leya into the soup (the famous 'chhhh!'): this is what gives molokhia its unmistakable aroma."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Make an Egyptian vermicelli rice (golden rice with toasted vermicelli) to serve alongside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the molokhia piping hot over the rice (or with baladi bread), with the chicken on the side and a squeeze of lemon. Silky, green and fragrant — the emblem of the Nile."
+   }
+  ]
+ },
+ "omali": {
+  "nom": "Om Ali",
+  "description": "Om Ali — the Egyptian milk bread pudding: crumbled puff pastry sheets soaked in hot sweet spiced milk, studded with nuts, raisins and coconut, then grilled. Hot, creamy and comforting, it's the national dessert of Egypt.",
+  "etapes": [
+   {
+    "titre": "The pastry",
+    "detail": "Bake sheets of puff pastry (or stale palmiers/croissants) until golden and crisp, then crumble them coarsely."
+   },
+   {
+    "titre": "The sweet milk",
+    "detail": "Heat the milk with the sugar and a little cinnamon, without boiling, until hot and fragrant."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Spread the crumbled pastry in a baking dish, with the nuts, raisins and grated coconut between the layers."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Pour the hot milk over the pastry to soak it well, until it swells and softens."
+   },
+   {
+    "titre": "Top",
+    "detail": "Scatter the top with dried fruit, coconut and optionally a little cream."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Bake under the grill until the top is golden and lightly caramelised."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with a spoon, while still creamy in the middle. Hot, creamy and comforting — the national dessert of Egypt."
+   }
+  ]
+ },
+ "feteer": {
+  "nom": "Feteer Meshaltet",
+  "description": "Feteer meshaltet — the Egyptian 'thousand-layer' pastry: a dough stretched until transparent, brushed with ghee, folded many times then baked into a golden, flaky, melting flatbread. Served plain, sweet (honey, icing sugar) or savoury, it's the festive bread of the Egyptian countryside.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with water, a little salt, sugar and oil into a very soft, elastic dough. Rest it, coated in oil, at least 30 minutes."
+   },
+   {
+    "titre": "The ghee",
+    "detail": "Melt the butter (or ghee): it will be used to generously brush each layer."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "On an oiled surface, stretch a ball of dough by hand until paper-thin, almost transparent (the signature move of feteer)."
+   },
+   {
+    "titre": "Butter and fold",
+    "detail": "Brush the sheet with melted ghee, then fold it onto itself into a square (or accordion), trapping air and butter."
+   },
+   {
+    "titre": "Layer",
+    "detail": "Stretch and fold again, several times, to multiply the layers: this is what creates the flakiness."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Gently flatten into a round and bake in a very hot oven (230°C) until golden, puffed and flaky."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, plain, or dusted with icing sugar and drizzled with honey (sweet version), or filled with cheese (savoury version). Golden, flaky and melting — the Egyptian festive bread."
+   }
+  ]
+ },
+ "ewaagoyin": {
+  "nom": "Ewa Agoyin",
+  "description": "Ewa agoyin — the melting beans of Nigeria: beans cooked at length until they collapse into a soft purée, topped with a dark, intense sauce of onions and chillies long confited in palm oil. The sweet-spicy contrast is irresistible: a great classic of Lagos street food.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak the beans (black-eyed or white), then cook them at length in water until very tender."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Coarsely mash the cooked beans into a soft, rustic purée, salt lightly."
+   },
+   {
+    "titre": "The onions",
+    "detail": "Slice plenty of onions and cook them very slowly in the palm oil, over low heat, until they melt and brown almost to caramel."
+   },
+   {
+    "titre": "The agoyin sauce",
+    "detail": "Add the blended dried chilli and the tomato, and continue cooking until you get a dark, thick, intense sauce."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Let the sauce confit over very low heat: it should turn almost black and intensely fragrant (the secret of the agoyin taste)."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate a generous portion of bean purée."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with scalding agoyin sauce, dosed to your chilli tolerance. Serve with bread or fried plantain. Mild, intense and spicy — the street classic of Lagos."
+   }
+  ]
+ },
+ "boli": {
+  "nom": "Boli",
+  "description": "Boli — grilled plantain from Nigeria: very ripe plantains grilled over a wood fire until soft and lightly smoky, served with a spicy groundnut sauce or chilli palm oil. Sweet, smoky and comforting, it's the ultimate street snack in Lagos and Port Harcourt.",
+  "etapes": [
+   {
+    "titre": "The plantains",
+    "detail": "Choose very ripe plantains (yellow skin spotted with black): they'll be sweet and soft. Peel them or grill them in the skin."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the plantains over a wood fire, barbecue or very hot oven, turning them, until golden, caramelised and lightly smoky."
+   },
+   {
+    "titre": "The groundnut",
+    "detail": "Roast the peanuts, then blend them into a coarse powder (or paste)."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Sauté the onion and chilli in the palm oil, add the tomato, then mix with the groundnut for a thick, spicy sauce."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Cut the grilled plantains into large chunks."
+   },
+   {
+    "titre": "Accompany",
+    "detail": "Serve the boli with the spicy groundnut sauce (or simply chilli palm oil and roasted peanuts)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Enjoy hot, dipping each bite of smoky plantain in the sauce. Sweet, smoky and comforting — the street snack of Nigeria."
+   }
+  ]
+ },
+ "nkwobi": {
+  "nom": "Nkwobi",
+  "description": "Nkwobi — the Igbo palm oil delicacy: pieces of gelatinous cow foot, simmered then coated in a creamy thickened palm oil sauce, lifted with chilli, onion and utazi leaves. Served warm in a wooden mortar, it's a festive and bar dish much prized in eastern Nigeria.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Clean and cook the cow foot (or gelatinous shin) in water with onion and spices, at length, until very tender."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the gelatinous meat into bites, keeping a little cooking broth."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic, ginger and chilli, until fragrant."
+   },
+   {
+    "titre": "The palm sauce",
+    "detail": "Emulsify the palm oil with a little potash (akanwu) and broth: it thickens and turns creamy and yellow (the heart of nkwobi)."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Toss the meat bites with the thickened palm oil sauce, until well coated and glossy."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Scatter with sliced utazi leaves (or a little rocket), raw onion and chilli."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, traditionally in a wooden mortar, with a squeeze of lemon. Gelatinous, creamy and spicy — the Igbo festive delicacy."
+   }
+  ]
+ },
+ "tuozaafi": {
+  "nom": "Tuo Zaafi",
+  "description": "Tuo zaafi (TZ) — the cornmeal dough of northern Ghana: a smooth, soft ball of corn (and millet) flour dough, shaped with a ladle, served with a light green soup of jute mallow (ayoyo) and fish. Nourishing and comforting, it's the staple of the northern regions.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix part of the cornmeal in cold water, then pour it into boiling water, stirring energetically."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Add the rest of the flour little by little, beating vigorously with a spatula, until you get a smooth, soft, lump-free dough (the texture is essential)."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape the hot dough into smooth balls with a wet ladle, and keep warm."
+   },
+   {
+    "titre": "The soup",
+    "detail": "Sauté the onion, tomato and chilli, add water and the fish, and simmer into a fragrant soup."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Add the green leaves (ayoyo/sorrel, or spinach) and the okra, which bring a slightly binding texture."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the fish is cooked and the soup green and silky."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the TZ ball beside the scalding green soup, to eat by hand by dipping. Nourishing and comforting — the staple of northern Ghana."
+   }
+  ]
+ },
+ "mukimo": {
+  "nom": "Mukimo",
+  "description": "Mukimo — the Kenyan green mash: a mash of potatoes with green peas, corn and green leaves (pumpkin, spinach), which give it its green colour and rustic taste. A Kikuyu festive and everyday dish, it accompanies stews and grilled meats (nyama choma).",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Peel and boil the potatoes in salted water until tender."
+   },
+   {
+    "titre": "The peas and corn",
+    "detail": "Cook the green peas and corn kernels until tender (they keep a slight bite)."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Wilt the green leaves (spinach, pumpkin leaves) and chop them."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Sauté the onion in a little oil until soft."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Combine potatoes, peas, corn, leaves and onion, and mash it all into a rustic, green purée."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Salt and work the mash until even but still textured (the corn kernels stay visible)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Optionally shape into a dome and serve hot, with a beef stew or grilled meats. Rustic, green and comforting — the Kikuyu mash of Kenya."
+   }
+  ]
+ },
+ "koeksisters": {
+  "nom": "Koeksisters",
+  "description": "Koeksisters — the South African syrupy braids: little braids of leavened dough, fried until golden then plunged scalding into an ice-cold ginger-and-cinnamon syrup. The hot-cold shock makes them crisp outside and syrup-soaked inside. An iconic treat of the Cape.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Make a thick syrup with the sugar, water, cinnamon, ginger and a dash of lemon. Let it cool then chill it: it must be ice-cold."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with the yeast, butter, a little salt and water into a soft dough. Let it rise until doubled."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Roll out the dough and cut strips, grouped in threes."
+   },
+   {
+    "titre": "Plait",
+    "detail": "Plait each group of three strips into a tight little braid, pinching the ends well."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the braids in hot oil until golden and cooked through."
+   },
+   {
+    "titre": "The shock",
+    "detail": "Immediately plunge the scalding braids into the ice-cold syrup: the contrast draws in the syrup and sets the crispness."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and let the syrup set. Enjoy cold: crisp outside, syrup-soaked inside. The syrupy treat of the Cape."
+   }
+  ]
+ },
+ "sakasaka": {
+  "nom": "Saka Saka",
+  "description": "Saka saka (pondu) — the cassava leaf stew of Congo: finely pounded cassava leaves, long-simmered with palm oil, onion, smoked fish and peanut, until tender and fragrant. Nourishing and emblematic of both Congos, it's served with rice, fufu or plantain.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Pound or very finely chop the cassava leaves (or spinach), then boil them at length to tenderise them."
+   },
+   {
+    "titre": "The smoked fish",
+    "detail": "Flake smoked (or salted) fish and stir it into the leaves: it brings the characteristic aroma of saka saka."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the sliced onion, garlic and chilli, and cook with the leaves."
+   },
+   {
+    "titre": "The palm oil",
+    "detail": "Pour in the red palm oil and simmer over low heat: it colours and flavours the dish."
+   },
+   {
+    "titre": "The groundnut",
+    "detail": "Stir in the peanut paste (or pounded peanuts) to bind and enrich the stew."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer at length, stirring, until the leaves are tender and the stew silky and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with rice, fufu or plantain. Nourishing, tender and fragrant — the iconic leaf stew of Congo."
+   }
+  ]
  }
 };

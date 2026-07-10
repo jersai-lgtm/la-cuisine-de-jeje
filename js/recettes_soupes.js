@@ -4405,4 +4405,41 @@ Object.assign(recettes, {
     ],
     liees: ["kalguksu"]
   },
+  molokhia: {
+    dateAjout: "2026-07-10T16:00:00",
+    nom: "Molokhia",
+    cat: "soupes", pays: "egypte",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥬",
+    description: "Molokhia — la soupe verte égyptienne : des feuilles de corète (molokhia) finement hachées, mijotées en un velouté vert légèrement gluant dans un bouillon de volaille, réveillé d'une ta'leya (ail frit à la coriandre). Servie sur du riz ou du pain avec du poulet ou du lapin, c'est un plat-emblème du Nil.",
+    tableauMolokhia: [
+      { nb: 1, epinards: "60 g", poulet: "70 g", ail: "2", coriandre: "5 g", bouillon: "300 ml", citron: "¼", cumin: "1 g", huileolive: "6 ml", riz: "40 g", sel: "2 g" },
+      { nb: 2, epinards: "120 g", poulet: "140 g", ail: "4", coriandre: "10 g", bouillon: "600 ml", citron: "½", cumin: "2 g", huileolive: "12 ml", riz: "80 g", sel: "4 g" },
+      { nb: 3, epinards: "180 g", poulet: "210 g", ail: "6", coriandre: "15 g", bouillon: "900 ml", citron: "¾", cumin: "3 g", huileolive: "18 ml", riz: "120 g", sel: "6 g" },
+      { nb: 4, epinards: "240 g", poulet: "280 g", ail: "8", coriandre: "20 g", bouillon: "1200 ml", citron: "1", cumin: "4 g", huileolive: "24 ml", riz: "160 g", sel: "8 g" },
+      { nb: 5, epinards: "300 g", poulet: "350 g", ail: "10", coriandre: "25 g", bouillon: "1500 ml", citron: "1¼", cumin: "5 g", huileolive: "30 ml", riz: "200 g", sel: "10 g" },
+      { nb: 6, epinards: "360 g", poulet: "420 g", ail: "12", coriandre: "30 g", bouillon: "1800 ml", citron: "1½", cumin: "6 g", huileolive: "36 ml", riz: "240 g", sel: "12 g" },
+      { nb: 7, epinards: "420 g", poulet: "490 g", ail: "14", coriandre: "35 g", bouillon: "2100 ml", citron: "1¾", cumin: "7 g", huileolive: "42 ml", riz: "280 g", sel: "14 g" },
+      { nb: 8, epinards: "480 g", poulet: "560 g", ail: "16", coriandre: "40 g", bouillon: "2400 ml", citron: "2", cumin: "8 g", huileolive: "48 ml", riz: "320 g", sel: "16 g" },
+      { nb: 9, epinards: "540 g", poulet: "630 g", ail: "18", coriandre: "45 g", bouillon: "2700 ml", citron: "2¼", cumin: "9 g", huileolive: "54 ml", riz: "360 g", sel: "18 g" },
+      { nb: 10, epinards: "600 g", poulet: "700 g", ail: "20", coriandre: "50 g", bouillon: "3000 ml", citron: "2½", cumin: "10 g", huileolive: "60 ml", riz: "400 g", sel: "20 g" },
+      { nb: 11, epinards: "660 g", poulet: "770 g", ail: "22", coriandre: "55 g", bouillon: "3300 ml", citron: "2¾", cumin: "11 g", huileolive: "66 ml", riz: "440 g", sel: "22 g" },
+      { nb: 12, epinards: "720 g", poulet: "840 g", ail: "24", coriandre: "60 g", bouillon: "3600 ml", citron: "3", cumin: "12 g", huileolive: "72 ml", riz: "480 g", sel: "24 g" },
+      { nb: 13, epinards: "780 g", poulet: "910 g", ail: "26", coriandre: "65 g", bouillon: "3900 ml", citron: "3¼", cumin: "13 g", huileolive: "78 ml", riz: "520 g", sel: "26 g" },
+      { nb: 14, epinards: "840 g", poulet: "980 g", ail: "28", coriandre: "70 g", bouillon: "4200 ml", citron: "3½", cumin: "14 g", huileolive: "84 ml", riz: "560 g", sel: "28 g" },
+      { nb: 15, epinards: "900 g", poulet: "1050 g", ail: "30", coriandre: "75 g", bouillon: "4500 ml", citron: "3¾", cumin: "15 g", huileolive: "90 ml", riz: "600 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍗", titre: "Le bouillon", detail: "Faites cuire le poulet (ou lapin) dans l'eau avec de l'oignon, de la cardamome et du laurier, jusqu'à ce qu'il soit tendre. Réservez la viande et filtrez le bouillon.", badge: null },
+      { icone: "🥬", titre: "La molokhia", detail: "Hachez très finement les feuilles de corète (molokhia, à défaut des épinards). Elles doivent être presque réduites en purée.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Ajoutez la molokhia hachée au bouillon frémissant et laissez cuire à feu doux, sans bouillir fort, jusqu'à ce que le velouté épaississe légèrement (il devient soyeux et vert).", badge: null },
+      { icone: "🧄", titre: "La ta'leya", detail: "Faites revenir l'ail écrasé dans l'huile (ou le ghee) avec la coriandre moulue et un peu de piment, jusqu'à ce qu'il embaume et dore.", badge: null },
+      { icone: "💥", titre: "Le tempérage", detail: "Versez la ta'leya grésillante dans la soupe (le fameux « chhhh ! ») : c'est ce qui donne à la molokhia son parfum inimitable.", badge: null },
+      { icone: "🍚", titre: "Le riz", detail: "Préparez un riz vermicelle égyptien (riz doré avec des vermicelles grillés) pour accompagner.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez la molokhia brûlante sur le riz (ou avec du pain baladi), avec le poulet à côté et un trait de citron. Soyeuse, verte et parfumée — l'emblème du Nil.", badge: null }
+    ]
+  },
 });

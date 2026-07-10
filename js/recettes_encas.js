@@ -4813,4 +4813,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Refermez, pressez légèrement et servez aussitôt, croustillant et généreux. Rouge, fondant et relevé — le sandwich de rue de Mexico.", badge: null }
     ]
   },
+  boli: {
+    dateAjout: "2026-07-10T16:04:00",
+    nom: "Boli",
+    cat: "encas", pays: "nigeria",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🍌",
+    description: "Boli — la banane plantain grillée du Nigeria : des plantains bien mûrs grillés au feu de bois jusqu'à être fondants et légèrement fumés, servis avec une sauce à l'arachide pimentée ou de l'huile de palme au piment. Sucré, fumé et réconfortant, c'est l'en-cas de rue par excellence à Lagos et Port Harcourt.",
+    tableauBoli: [
+      { nb: 1, plantain: "120 g", arachide: "15 g", huilePalme: "6 ml", piment: "1.5 g", oignon: "20 g", tomates: "¼", sel: "1 g" },
+      { nb: 2, plantain: "240 g", arachide: "30 g", huilePalme: "12 ml", piment: "3 g", oignon: "40 g", tomates: "½", sel: "2 g" },
+      { nb: 3, plantain: "360 g", arachide: "45 g", huilePalme: "18 ml", piment: "4.5 g", oignon: "60 g", tomates: "¾", sel: "3 g" },
+      { nb: 4, plantain: "480 g", arachide: "60 g", huilePalme: "24 ml", piment: "6 g", oignon: "80 g", tomates: "1", sel: "4 g" },
+      { nb: 5, plantain: "600 g", arachide: "75 g", huilePalme: "30 ml", piment: "7.5 g", oignon: "100 g", tomates: "1¼", sel: "5 g" },
+      { nb: 6, plantain: "720 g", arachide: "90 g", huilePalme: "36 ml", piment: "9 g", oignon: "120 g", tomates: "1½", sel: "6 g" },
+      { nb: 7, plantain: "840 g", arachide: "105 g", huilePalme: "42 ml", piment: "10.5 g", oignon: "140 g", tomates: "1¾", sel: "7 g" },
+      { nb: 8, plantain: "960 g", arachide: "120 g", huilePalme: "48 ml", piment: "12 g", oignon: "160 g", tomates: "2", sel: "8 g" },
+      { nb: 9, plantain: "1080 g", arachide: "135 g", huilePalme: "54 ml", piment: "13.5 g", oignon: "180 g", tomates: "2¼", sel: "9 g" },
+      { nb: 10, plantain: "1200 g", arachide: "150 g", huilePalme: "60 ml", piment: "15 g", oignon: "200 g", tomates: "2½", sel: "10 g" },
+      { nb: 11, plantain: "1320 g", arachide: "165 g", huilePalme: "66 ml", piment: "16.5 g", oignon: "220 g", tomates: "2¾", sel: "11 g" },
+      { nb: 12, plantain: "1440 g", arachide: "180 g", huilePalme: "72 ml", piment: "18 g", oignon: "240 g", tomates: "3", sel: "12 g" },
+      { nb: 13, plantain: "1560 g", arachide: "195 g", huilePalme: "78 ml", piment: "19.5 g", oignon: "260 g", tomates: "3¼", sel: "13 g" },
+      { nb: 14, plantain: "1680 g", arachide: "210 g", huilePalme: "84 ml", piment: "21 g", oignon: "280 g", tomates: "3½", sel: "14 g" },
+      { nb: 15, plantain: "1800 g", arachide: "225 g", huilePalme: "90 ml", piment: "22.5 g", oignon: "300 g", tomates: "3¾", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍌", titre: "Les plantains", detail: "Choisissez des plantains bien mûrs (peau jaune tachée de noir) : ils seront sucrés et fondants. Épluchez-les ou grillez-les dans la peau.", badge: null },
+      { icone: "🔥", titre: "Griller", detail: "Faites griller les plantains au feu de bois, au barbecue ou au four très chaud, en les tournant, jusqu'à ce qu'ils soient dorés, caramélisés et légèrement fumés.", badge: null },
+      { icone: "🥜", titre: "L'arachide", detail: "Faites griller les cacahuètes, puis mixez-les en une poudre (ou pâte) grossière.", badge: null },
+      { icone: "🌶️", titre: "La sauce", detail: "Faites revenir l'oignon et le piment dans l'huile de palme, ajoutez la tomate, puis mélangez à l'arachide pour une sauce épaisse et relevée.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Coupez les plantains grillés en gros tronçons.", badge: null },
+      { icone: "🥣", titre: "Accompagner", detail: "Présentez le boli avec la sauce à l'arachide pimentée (ou simplement de l'huile de palme au piment et des cacahuètes grillées).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Dégustez chaud, en trempant chaque bouchée de plantain fumé dans la sauce. Sucré, fumé et réconfortant — l'en-cas de rue du Nigeria.", badge: null }
+    ],
+    liees: ["kelewele"]
+  },
 });

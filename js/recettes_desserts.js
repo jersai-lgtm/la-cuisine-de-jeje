@@ -8232,4 +8232,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Nappez d'un filet de lait concentré (ou de lait de coco) en spirale, et servez chaud. Réconfortante et gourmande — la bouillie chocolatée des Philippines.", badge: null }
     ]
   },
+  omali: {
+    dateAjout: "2026-07-10T16:01:00",
+    nom: "Om Ali",
+    cat: "desserts", pays: "egypte",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍮",
+    description: "Om Ali — le pain perdu égyptien au lait : des feuilles de pâte feuilletée émiettées, imbibées de lait chaud sucré et parfumé, garnies de noix, de raisins et de coco, puis gratinées. Chaud, crémeux et réconfortant, c'est le dessert national de l'Égypte.",
+    tableauOmali: [
+      { nb: 1, patefeuilletee: "50 g", lait: "120 ml", sucre: "20 g", noix: "10 g", raisinsec: "8 g", noixcoco: "6 g", cannelle: "0.3 g" },
+      { nb: 2, patefeuilletee: "100 g", lait: "240 ml", sucre: "40 g", noix: "20 g", raisinsec: "16 g", noixcoco: "12 g", cannelle: "0.6 g" },
+      { nb: 3, patefeuilletee: "150 g", lait: "360 ml", sucre: "60 g", noix: "30 g", raisinsec: "24 g", noixcoco: "18 g", cannelle: "0.9 g" },
+      { nb: 4, patefeuilletee: "200 g", lait: "480 ml", sucre: "80 g", noix: "40 g", raisinsec: "32 g", noixcoco: "24 g", cannelle: "1.2 g" },
+      { nb: 5, patefeuilletee: "250 g", lait: "600 ml", sucre: "100 g", noix: "50 g", raisinsec: "40 g", noixcoco: "30 g", cannelle: "1.5 g" },
+      { nb: 6, patefeuilletee: "300 g", lait: "720 ml", sucre: "120 g", noix: "60 g", raisinsec: "48 g", noixcoco: "36 g", cannelle: "1.8 g" },
+      { nb: 7, patefeuilletee: "350 g", lait: "840 ml", sucre: "140 g", noix: "70 g", raisinsec: "56 g", noixcoco: "42 g", cannelle: "2.1 g" },
+      { nb: 8, patefeuilletee: "400 g", lait: "960 ml", sucre: "160 g", noix: "80 g", raisinsec: "64 g", noixcoco: "48 g", cannelle: "2.4 g" },
+      { nb: 9, patefeuilletee: "450 g", lait: "1080 ml", sucre: "180 g", noix: "90 g", raisinsec: "72 g", noixcoco: "54 g", cannelle: "2.7 g" },
+      { nb: 10, patefeuilletee: "500 g", lait: "1200 ml", sucre: "200 g", noix: "100 g", raisinsec: "80 g", noixcoco: "60 g", cannelle: "3 g" },
+      { nb: 11, patefeuilletee: "550 g", lait: "1320 ml", sucre: "220 g", noix: "110 g", raisinsec: "88 g", noixcoco: "66 g", cannelle: "3.3 g" },
+      { nb: 12, patefeuilletee: "600 g", lait: "1440 ml", sucre: "240 g", noix: "120 g", raisinsec: "96 g", noixcoco: "72 g", cannelle: "3.6 g" },
+      { nb: 13, patefeuilletee: "650 g", lait: "1560 ml", sucre: "260 g", noix: "130 g", raisinsec: "104 g", noixcoco: "78 g", cannelle: "3.9 g" },
+      { nb: 14, patefeuilletee: "700 g", lait: "1680 ml", sucre: "280 g", noix: "140 g", raisinsec: "112 g", noixcoco: "84 g", cannelle: "4.2 g" },
+      { nb: 15, patefeuilletee: "750 g", lait: "1800 ml", sucre: "300 g", noix: "150 g", raisinsec: "120 g", noixcoco: "90 g", cannelle: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥐", titre: "La pâte", detail: "Faites dorer et croustiller des feuilles de pâte feuilletée (ou des palmiers/croissants rassis) au four, puis émiettez-les grossièrement.", badge: null },
+      { icone: "🥛", titre: "Le lait sucré", detail: "Faites chauffer le lait avec le sucre et un peu de cannelle, sans le faire bouillir, jusqu'à ce qu'il soit bien chaud et parfumé.", badge: null },
+      { icone: "🍮", titre: "Le montage", detail: "Répartissez la pâte émiettée dans un plat à gratin, avec les noix, les raisins secs et la noix de coco râpée entre les couches.", badge: null },
+      { icone: "💧", titre: "Imbiber", detail: "Versez le lait chaud sur la pâte pour bien l'imbiber, jusqu'à ce qu'elle gonfle et s'assouplisse.", badge: null },
+      { icone: "🥥", titre: "Garnir", detail: "Parsemez le dessus de fruits secs, de coco et éventuellement d'un peu de crème.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfournez sous le gril jusqu'à ce que le dessus soit doré et légèrement caramélisé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez brûlant, à la cuillère, quand c'est encore crémeux au cœur. Chaud, crémeux et réconfortant — le dessert national égyptien.", badge: null }
+    ]
+  },
+  koeksisters: {
+    dateAjout: "2026-07-10T16:08:00",
+    nom: "Koeksisters",
+    cat: "desserts", pays: "afriquedusud",
+    base: 4,
+    temps: "1h + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍩",
+    description: "Koeksisters — les tresses sirupeuses sud-africaines : de petites tresses de pâte levée, frites jusqu'à être dorées puis plongées brûlantes dans un sirop glacé au gingembre et à la cannelle. Le choc chaud-froid les rend croustillantes dehors et gorgées de sirop dedans. Une gourmandise emblématique du Cap.",
+    tableauKoeksisters: [
+      { nb: 1, farine: "60 g", sucre: "40 g", beurre: "8 g", levure: "2 g", cannelle: "0.3 g", gingembre: "1 g", citron: "¼", huileolive: "10 ml" },
+      { nb: 2, farine: "120 g", sucre: "80 g", beurre: "16 g", levure: "4 g", cannelle: "0.6 g", gingembre: "2 g", citron: "½", huileolive: "20 ml" },
+      { nb: 3, farine: "180 g", sucre: "120 g", beurre: "24 g", levure: "6 g", cannelle: "0.9 g", gingembre: "3 g", citron: "¾", huileolive: "30 ml" },
+      { nb: 4, farine: "240 g", sucre: "160 g", beurre: "32 g", levure: "8 g", cannelle: "1.2 g", gingembre: "4 g", citron: "1", huileolive: "40 ml" },
+      { nb: 5, farine: "300 g", sucre: "200 g", beurre: "40 g", levure: "10 g", cannelle: "1.5 g", gingembre: "5 g", citron: "1¼", huileolive: "50 ml" },
+      { nb: 6, farine: "360 g", sucre: "240 g", beurre: "48 g", levure: "12 g", cannelle: "1.8 g", gingembre: "6 g", citron: "1½", huileolive: "60 ml" },
+      { nb: 7, farine: "420 g", sucre: "280 g", beurre: "56 g", levure: "14 g", cannelle: "2.1 g", gingembre: "7 g", citron: "1¾", huileolive: "70 ml" },
+      { nb: 8, farine: "480 g", sucre: "320 g", beurre: "64 g", levure: "16 g", cannelle: "2.4 g", gingembre: "8 g", citron: "2", huileolive: "80 ml" },
+      { nb: 9, farine: "540 g", sucre: "360 g", beurre: "72 g", levure: "18 g", cannelle: "2.7 g", gingembre: "9 g", citron: "2¼", huileolive: "90 ml" },
+      { nb: 10, farine: "600 g", sucre: "400 g", beurre: "80 g", levure: "20 g", cannelle: "3 g", gingembre: "10 g", citron: "2½", huileolive: "100 ml" },
+      { nb: 11, farine: "660 g", sucre: "440 g", beurre: "88 g", levure: "22 g", cannelle: "3.3 g", gingembre: "11 g", citron: "2¾", huileolive: "110 ml" },
+      { nb: 12, farine: "720 g", sucre: "480 g", beurre: "96 g", levure: "24 g", cannelle: "3.6 g", gingembre: "12 g", citron: "3", huileolive: "120 ml" },
+      { nb: 13, farine: "780 g", sucre: "520 g", beurre: "104 g", levure: "26 g", cannelle: "3.9 g", gingembre: "13 g", citron: "3¼", huileolive: "130 ml" },
+      { nb: 14, farine: "840 g", sucre: "560 g", beurre: "112 g", levure: "28 g", cannelle: "4.2 g", gingembre: "14 g", citron: "3½", huileolive: "140 ml" },
+      { nb: 15, farine: "900 g", sucre: "600 g", beurre: "120 g", levure: "30 g", cannelle: "4.5 g", gingembre: "15 g", citron: "3¾", huileolive: "150 ml" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍯", titre: "Le sirop", detail: "Préparez un sirop épais avec le sucre, de l'eau, la cannelle, le gingembre et un trait de citron. Laissez-le refroidir puis placez-le au réfrigérateur : il doit être glacé.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec la levure, le beurre, un peu de sel et d'eau en une pâte souple. Laissez-la lever jusqu'à ce qu'elle double.", badge: null },
+      { icone: "✂️", titre: "Découper", detail: "Abaissez la pâte et découpez des bandes, groupées par trois.", badge: null },
+      { icone: "💇", titre: "Tresser", detail: "Tressez chaque groupe de trois bandes en une petite natte serrée, en pinçant bien les extrémités.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire les tresses dans l'huile chaude jusqu'à ce qu'elles soient dorées et cuites à cœur.", badge: null },
+      { icone: "🧊", titre: "Le choc", detail: "Plongez immédiatement les tresses brûlantes dans le sirop glacé : le contraste fait pénétrer le sirop et fige le croustillant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez et laissez le sirop prendre. Dégustez froid : croustillant dehors, gorgé de sirop dedans. La gourmandise sirupeuse du Cap.", badge: null }
+    ]
+  },
 });

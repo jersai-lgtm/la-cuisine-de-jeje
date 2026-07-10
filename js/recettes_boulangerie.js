@@ -1761,4 +1761,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaud, coupé en parts, nature ou avec du yaourt. Végétal, parfumé et rustique — le pain aux herbes de l'Artsakh, célébration du printemps.", badge: null }
     ]
   },
+  feteer: {
+    dateAjout: "2026-07-10T16:02:00",
+    nom: "Feteer Meshaltet",
+    cat: "boulangerie", pays: "egypte",
+    base: 4,
+    temps: "1h + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥐",
+    description: "Feteer meshaltet — la « pâte aux mille couches » égyptienne : une pâte étirée jusqu'à la transparence, badigeonnée de ghee, repliée maintes fois puis cuite en une galette dorée, feuilletée et fondante. Servie nature, sucrée (miel, sucre glace) ou salée, c'est le pain de fête des campagnes égyptiennes.",
+    tableauFeteer: [
+      { nb: 1, farine: "70 g", beurre: "20 g", huileolive: "8 ml", lait: "10 ml", sucre: "8 g", sel: "2 g" },
+      { nb: 2, farine: "140 g", beurre: "40 g", huileolive: "16 ml", lait: "20 ml", sucre: "16 g", sel: "4 g" },
+      { nb: 3, farine: "210 g", beurre: "60 g", huileolive: "24 ml", lait: "30 ml", sucre: "24 g", sel: "6 g" },
+      { nb: 4, farine: "280 g", beurre: "80 g", huileolive: "32 ml", lait: "40 ml", sucre: "32 g", sel: "8 g" },
+      { nb: 5, farine: "350 g", beurre: "100 g", huileolive: "40 ml", lait: "50 ml", sucre: "40 g", sel: "10 g" },
+      { nb: 6, farine: "420 g", beurre: "120 g", huileolive: "48 ml", lait: "60 ml", sucre: "48 g", sel: "12 g" },
+      { nb: 7, farine: "490 g", beurre: "140 g", huileolive: "56 ml", lait: "70 ml", sucre: "56 g", sel: "14 g" },
+      { nb: 8, farine: "560 g", beurre: "160 g", huileolive: "64 ml", lait: "80 ml", sucre: "64 g", sel: "16 g" },
+      { nb: 9, farine: "630 g", beurre: "180 g", huileolive: "72 ml", lait: "90 ml", sucre: "72 g", sel: "18 g" },
+      { nb: 10, farine: "700 g", beurre: "200 g", huileolive: "80 ml", lait: "100 ml", sucre: "80 g", sel: "20 g" },
+      { nb: 11, farine: "770 g", beurre: "220 g", huileolive: "88 ml", lait: "110 ml", sucre: "88 g", sel: "22 g" },
+      { nb: 12, farine: "840 g", beurre: "240 g", huileolive: "96 ml", lait: "120 ml", sucre: "96 g", sel: "24 g" },
+      { nb: 13, farine: "910 g", beurre: "260 g", huileolive: "104 ml", lait: "130 ml", sucre: "104 g", sel: "26 g" },
+      { nb: 14, farine: "980 g", beurre: "280 g", huileolive: "112 ml", lait: "140 ml", sucre: "112 g", sel: "28 g" },
+      { nb: 15, farine: "1050 g", beurre: "300 g", huileolive: "120 ml", lait: "150 ml", sucre: "120 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec de l'eau, un peu de sel, de sucre et d'huile en une pâte très souple et élastique. Laissez-la reposer, couverte d'huile, au moins 30 min.", badge: null },
+      { icone: "🧈", titre: "Le ghee", detail: "Faites fondre le beurre (ou ghee) : il servira à badigeonner généreusement chaque couche.", badge: null },
+      { icone: "🙌", titre: "Étirer", detail: "Sur un plan huilé, étirez une boule de pâte à la main jusqu'à ce qu'elle soit fine comme du papier, presque transparente (le geste signature du feteer).", badge: null },
+      { icone: "🖌️", titre: "Beurrer et plier", detail: "Badigeonnez la feuille de ghee fondu, puis repliez-la sur elle-même en un carré (ou en accordéon), en emprisonnant l'air et le beurre.", badge: null },
+      { icone: "🔁", titre: "Superposer", detail: "Étirez et repliez à nouveau, plusieurs fois, pour multiplier les couches : c'est ce qui crée le feuilletage.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Aplatissez délicatement en galette et enfournez à four très chaud (230 °C) jusqu'à ce qu'elle soit dorée, gonflée et feuilletée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, nature, ou saupoudré de sucre glace et arrosé de miel (version sucrée), ou garni de fromage (version salée). Doré, feuilleté et fondant — le pain de fête égyptien.", badge: null }
+    ]
+  },
 });
