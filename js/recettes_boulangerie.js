@@ -1724,4 +1724,41 @@ Object.assign(recettes, {
     ],
     liees: ["polsambol"]
   },
+  zhingyalovhats: {
+    dateAjout: "2026-07-10T14:06:00",
+    nom: "Zhingyalov Hats",
+    cat: "boulangerie", pays: "armenie",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Zhingyalov hats — le pain aux herbes arménien : une fine galette de pâte sans levain garnie d'une profusion d'herbes fraîches hachées (jusqu'à vingt sortes), pliée et dorée à la poêle. Spécialité de l'Artsakh, végétale, parfumée et rustique, elle célèbre les herbes sauvages du printemps.",
+    tableauZhingyalovhats: [
+      { nb: 1, farine: "70 g", epinards: "50 g", coriandre: "8 g", ciboule: "15 g", oignon: "20 g", huileolive: "8 ml", citron: "¼", sel: "2 g" },
+      { nb: 2, farine: "140 g", epinards: "100 g", coriandre: "16 g", ciboule: "30 g", oignon: "40 g", huileolive: "16 ml", citron: "½", sel: "4 g" },
+      { nb: 3, farine: "210 g", epinards: "150 g", coriandre: "24 g", ciboule: "45 g", oignon: "60 g", huileolive: "24 ml", citron: "¾", sel: "6 g" },
+      { nb: 4, farine: "280 g", epinards: "200 g", coriandre: "32 g", ciboule: "60 g", oignon: "80 g", huileolive: "32 ml", citron: "1", sel: "8 g" },
+      { nb: 5, farine: "350 g", epinards: "250 g", coriandre: "40 g", ciboule: "75 g", oignon: "100 g", huileolive: "40 ml", citron: "1¼", sel: "10 g" },
+      { nb: 6, farine: "420 g", epinards: "300 g", coriandre: "48 g", ciboule: "90 g", oignon: "120 g", huileolive: "48 ml", citron: "1½", sel: "12 g" },
+      { nb: 7, farine: "490 g", epinards: "350 g", coriandre: "56 g", ciboule: "105 g", oignon: "140 g", huileolive: "56 ml", citron: "1¾", sel: "14 g" },
+      { nb: 8, farine: "560 g", epinards: "400 g", coriandre: "64 g", ciboule: "120 g", oignon: "160 g", huileolive: "64 ml", citron: "2", sel: "16 g" },
+      { nb: 9, farine: "630 g", epinards: "450 g", coriandre: "72 g", ciboule: "135 g", oignon: "180 g", huileolive: "72 ml", citron: "2¼", sel: "18 g" },
+      { nb: 10, farine: "700 g", epinards: "500 g", coriandre: "80 g", ciboule: "150 g", oignon: "200 g", huileolive: "80 ml", citron: "2½", sel: "20 g" },
+      { nb: 11, farine: "770 g", epinards: "550 g", coriandre: "88 g", ciboule: "165 g", oignon: "220 g", huileolive: "88 ml", citron: "2¾", sel: "22 g" },
+      { nb: 12, farine: "840 g", epinards: "600 g", coriandre: "96 g", ciboule: "180 g", oignon: "240 g", huileolive: "96 ml", citron: "3", sel: "24 g" },
+      { nb: 13, farine: "910 g", epinards: "650 g", coriandre: "104 g", ciboule: "195 g", oignon: "260 g", huileolive: "104 ml", citron: "3¼", sel: "26 g" },
+      { nb: 14, farine: "980 g", epinards: "700 g", coriandre: "112 g", ciboule: "210 g", oignon: "280 g", huileolive: "112 ml", citron: "3½", sel: "28 g" },
+      { nb: 15, farine: "1050 g", epinards: "750 g", coriandre: "120 g", ciboule: "225 g", oignon: "300 g", huileolive: "120 ml", citron: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec de l'eau, un peu de sel et d'huile en une pâte souple, et laissez-la reposer 30 min (elle doit s'étaler très finement).", badge: null },
+      { icone: "🌿", titre: "Les herbes", detail: "Hachez finement une grande quantité d'herbes fraîches variées (épinard, coriandre, ciboule, oignon vert, oseille, aneth, persil…). C'est le cœur du zhingyalov hats.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Mélangez les herbes hachées avec l'oignon, un filet d'huile, le jus de citron et le sel, en les massant légèrement pour les attendrir.", badge: null },
+      { icone: "📏", titre: "Étaler", detail: "Abaissez la pâte reposée en un disque très fin, presque translucide.", badge: null },
+      { icone: "🫓", titre: "Garnir et fermer", detail: "Répartissez une généreuse couche d'herbes au centre, puis repliez la pâte par-dessus et scellez les bords en une galette plate.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Faites cuire la galette à sec (ou à peine huilée) dans une poêle chaude, jusqu'à ce qu'elle soit dorée et tachetée des deux côtés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, coupé en parts, nature ou avec du yaourt. Végétal, parfumé et rustique — le pain aux herbes de l'Artsakh, célébration du printemps.", badge: null }
+    ]
+  },
 });

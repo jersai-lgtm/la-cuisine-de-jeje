@@ -34129,4 +34129,80 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez avec du riz et d'autres currys. Intense, acidulé et poivré — le curry de poisson sec qui se conserve, emblème du Sri Lanka.", badge: null }
     ]
   },
+  littichokha: {
+    dateAjout: "2026-07-10T14:01:00",
+    nom: "Litti Chokha",
+    cat: "plats", pays: "inde",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🔥",
+    description: "Litti chokha — le plat rustique du Bihar : des boules de pâte de blé farcies de sattu (farine de pois chiche grillée épicée), cuites au feu jusqu'à être dorées, servies avec un « chokha » d'aubergine, de pomme de terre et de tomate écrasées. Fumé, rustique et réconfortant.",
+    tableauLittichokha: [
+      { nb: 1, farine: "60 g", farinepoischiche: "25 g", aubergine: "50 g", tomates: "½", pommedeterre: "40 g", oignon: "20 g", ail: "1", cumin: "1 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, farine: "120 g", farinepoischiche: "50 g", aubergine: "100 g", tomates: "1", pommedeterre: "80 g", oignon: "40 g", ail: "2", cumin: "2 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, farine: "180 g", farinepoischiche: "75 g", aubergine: "150 g", tomates: "1½", pommedeterre: "120 g", oignon: "60 g", ail: "3", cumin: "3 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, farine: "240 g", farinepoischiche: "100 g", aubergine: "200 g", tomates: "2", pommedeterre: "160 g", oignon: "80 g", ail: "4", cumin: "4 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, farine: "300 g", farinepoischiche: "125 g", aubergine: "250 g", tomates: "2½", pommedeterre: "200 g", oignon: "100 g", ail: "5", cumin: "5 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, farine: "360 g", farinepoischiche: "150 g", aubergine: "300 g", tomates: "3", pommedeterre: "240 g", oignon: "120 g", ail: "6", cumin: "6 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, farine: "420 g", farinepoischiche: "175 g", aubergine: "350 g", tomates: "3½", pommedeterre: "280 g", oignon: "140 g", ail: "7", cumin: "7 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, farine: "480 g", farinepoischiche: "200 g", aubergine: "400 g", tomates: "4", pommedeterre: "320 g", oignon: "160 g", ail: "8", cumin: "8 g", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, farine: "540 g", farinepoischiche: "225 g", aubergine: "450 g", tomates: "4½", pommedeterre: "360 g", oignon: "180 g", ail: "9", cumin: "9 g", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, farine: "600 g", farinepoischiche: "250 g", aubergine: "500 g", tomates: "5", pommedeterre: "400 g", oignon: "200 g", ail: "10", cumin: "10 g", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, farine: "660 g", farinepoischiche: "275 g", aubergine: "550 g", tomates: "5½", pommedeterre: "440 g", oignon: "220 g", ail: "11", cumin: "11 g", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, farine: "720 g", farinepoischiche: "300 g", aubergine: "600 g", tomates: "6", pommedeterre: "480 g", oignon: "240 g", ail: "12", cumin: "12 g", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, farine: "780 g", farinepoischiche: "325 g", aubergine: "650 g", tomates: "6½", pommedeterre: "520 g", oignon: "260 g", ail: "13", cumin: "13 g", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, farine: "840 g", farinepoischiche: "350 g", aubergine: "700 g", tomates: "7", pommedeterre: "560 g", oignon: "280 g", ail: "14", cumin: "14 g", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, farine: "900 g", farinepoischiche: "375 g", aubergine: "750 g", tomates: "7½", pommedeterre: "600 g", oignon: "300 g", ail: "15", cumin: "15 g", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine de blé avec de l'eau, un peu d'huile et de sel en une pâte ferme, et laissez-la reposer.", badge: null },
+      { icone: "🌰", titre: "La farce sattu", detail: "Mélangez la farine de pois chiche grillée (sattu) avec l'ail, le cumin, un peu d'huile, de piment et d'eau : une farce sèche, épicée et parfumée.", badge: null },
+      { icone: "⚪", titre: "Former les litti", detail: "Garnissez des boules de pâte de farce au sattu, refermez-les et scellez bien en petites boules régulières.", badge: null },
+      { icone: "🔥", titre: "Cuire les litti", detail: "Faites cuire les litti au four (ou sur des braises) en les retournant, jusqu'à ce qu'ils soient dorés, craquelés et fumés.", badge: null },
+      { icone: "🍆", titre: "Le chokha", detail: "Grillez l'aubergine, la tomate et la pomme de terre jusqu'à ce qu'elles soient tendres et fumées, puis épluchez-les.", badge: null },
+      { icone: "🥔", titre: "Écraser", detail: "Écrasez les légumes grillés avec l'oignon, l'ail, le piment, la coriandre et un filet d'huile de moutarde en une purée rustique.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Trempez les litti chauds dans du ghee fondu et servez-les avec le chokha. Fumé, rustique et réconfortant — le plat emblématique du Bihar.", badge: null }
+    ],
+    liees: ["bainganbharta"]
+  },
+  carnitas: {
+    dateAjout: "2026-07-10T14:09:00",
+    nom: "Carnitas",
+    cat: "plats", pays: "mexique",
+    base: 4,
+    temps: "2h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌮",
+    description: "Carnitas — le porc confit du Michoacán : de gros morceaux de porc mijotés longuement dans leur graisse avec de l'orange, de l'ail et des épices, jusqu'à devenir fondants, puis dorés et effilochés. Moelleux dedans, croustillants dehors, ils garnissent les meilleurs tacos du Mexique.",
+    tableauCarnitas: [
+      { nb: 1, porc: "120 g", orange: "¼", ail: "1", oignon: "25 g", cumin: "1 g", laurier: "0.2 g", citronvert: "¼", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, porc: "240 g", orange: "½", ail: "2", oignon: "50 g", cumin: "2 g", laurier: "0.4 g", citronvert: "½", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, porc: "360 g", orange: "¾", ail: "3", oignon: "75 g", cumin: "3 g", laurier: "0.6 g", citronvert: "¾", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, porc: "480 g", orange: "1", ail: "4", oignon: "100 g", cumin: "4 g", laurier: "0.8 g", citronvert: "1", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, porc: "600 g", orange: "1¼", ail: "5", oignon: "125 g", cumin: "5 g", laurier: "1 g", citronvert: "1¼", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, porc: "720 g", orange: "1½", ail: "6", oignon: "150 g", cumin: "6 g", laurier: "1.2 g", citronvert: "1½", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, porc: "840 g", orange: "1¾", ail: "7", oignon: "175 g", cumin: "7 g", laurier: "1.4 g", citronvert: "1¾", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, porc: "960 g", orange: "2", ail: "8", oignon: "200 g", cumin: "8 g", laurier: "1.6 g", citronvert: "2", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, porc: "1080 g", orange: "2¼", ail: "9", oignon: "225 g", cumin: "9 g", laurier: "1.8 g", citronvert: "2¼", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, porc: "1200 g", orange: "2½", ail: "10", oignon: "250 g", cumin: "10 g", laurier: "2 g", citronvert: "2½", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, porc: "1320 g", orange: "2¾", ail: "11", oignon: "275 g", cumin: "11 g", laurier: "2.2 g", citronvert: "2¾", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, porc: "1440 g", orange: "3", ail: "12", oignon: "300 g", cumin: "12 g", laurier: "2.4 g", citronvert: "3", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, porc: "1560 g", orange: "3¼", ail: "13", oignon: "325 g", cumin: "13 g", laurier: "2.6 g", citronvert: "3¼", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, porc: "1680 g", orange: "3½", ail: "14", oignon: "350 g", cumin: "14 g", laurier: "2.8 g", citronvert: "3½", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, porc: "1800 g", orange: "3¾", ail: "15", oignon: "375 g", cumin: "15 g", laurier: "3 g", citronvert: "3¾", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Le porc", detail: "Coupez l'épaule de porc en gros cubes et salez-les généreusement.", badge: null },
+      { icone: "🍊", titre: "Les aromates", detail: "Placez le porc dans une cocotte avec l'ail, l'oignon, le laurier, le cumin et le jus (et la peau) d'une orange.", badge: null },
+      { icone: "♨️", titre: "Confire", detail: "Ajoutez un peu d'eau et de saindoux (ou d'huile), couvrez et laissez mijoter très doucement 2 h, jusqu'à ce que le porc soit fondant.", badge: null },
+      { icone: "🔥", titre: "Réduire", detail: "Découvrez et montez le feu : l'eau s'évapore et le porc commence à frire dans sa propre graisse.", badge: null },
+      { icone: "🍯", titre: "Dorer", detail: "Laissez le porc caraméliser et dorer sur les bords, en le retournant, jusqu'à ce qu'il soit croustillant à l'extérieur.", badge: null },
+      { icone: "🍴", titre: "Effilocher", detail: "Effilochez grossièrement le porc à la fourchette, en mélangeant morceaux fondants et bords croustillants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Arrosez d'un trait de citron vert et servez dans des tortillas de maïs avec oignon, coriandre et salsa. Fondant, croustillant et parfumé — le porc confit du Michoacán.", badge: null }
+    ],
+    liees: ["tacosmaison"]
+  },
 });

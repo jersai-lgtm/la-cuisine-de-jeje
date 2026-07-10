@@ -8084,4 +8084,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Laissez reposer 2 à 3 jours (le « huiyou ») : la croûte s'assouplit et brille. Dégustez en fines parts avec du thé. La douceur emblématique de la mi-automne.", badge: null }
     ]
   },
+  gata: {
+    dateAjout: "2026-07-10T14:07:00",
+    nom: "Gata",
+    cat: "desserts", pays: "armenie",
+    base: 4,
+    temps: "1h + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧁",
+    description: "Gata — la brioche arménienne au cœur sucré : une pâte enrichie au beurre enfermant un « khoriz » sablé (farine, sucre et beurre travaillés en pâte friable), dorée au four et souvent décorée de motifs. Moelleuse, beurrée et délicatement sucrée, c'est la pâtisserie des fêtes et de l'hospitalité en Arménie.",
+    tableauGata: [
+      { nb: 1, farine: "70 g", beurre: "22 g", sucre: "22 g", oeufs: "¼", lait: "12 ml", levure: "2 g", vanille: "0.3 g" },
+      { nb: 2, farine: "140 g", beurre: "44 g", sucre: "44 g", oeufs: "½", lait: "24 ml", levure: "4 g", vanille: "0.6 g" },
+      { nb: 3, farine: "210 g", beurre: "66 g", sucre: "66 g", oeufs: "¾", lait: "36 ml", levure: "6 g", vanille: "0.9 g" },
+      { nb: 4, farine: "280 g", beurre: "88 g", sucre: "88 g", oeufs: "1", lait: "48 ml", levure: "8 g", vanille: "1.2 g" },
+      { nb: 5, farine: "350 g", beurre: "110 g", sucre: "110 g", oeufs: "1¼", lait: "60 ml", levure: "10 g", vanille: "1.5 g" },
+      { nb: 6, farine: "420 g", beurre: "132 g", sucre: "132 g", oeufs: "1½", lait: "72 ml", levure: "12 g", vanille: "1.8 g" },
+      { nb: 7, farine: "490 g", beurre: "154 g", sucre: "154 g", oeufs: "1¾", lait: "84 ml", levure: "14 g", vanille: "2.1 g" },
+      { nb: 8, farine: "560 g", beurre: "176 g", sucre: "176 g", oeufs: "2", lait: "96 ml", levure: "16 g", vanille: "2.4 g" },
+      { nb: 9, farine: "630 g", beurre: "198 g", sucre: "198 g", oeufs: "2¼", lait: "108 ml", levure: "18 g", vanille: "2.7 g" },
+      { nb: 10, farine: "700 g", beurre: "220 g", sucre: "220 g", oeufs: "2½", lait: "120 ml", levure: "20 g", vanille: "3 g" },
+      { nb: 11, farine: "770 g", beurre: "242 g", sucre: "242 g", oeufs: "2¾", lait: "132 ml", levure: "22 g", vanille: "3.3 g" },
+      { nb: 12, farine: "840 g", beurre: "264 g", sucre: "264 g", oeufs: "3", lait: "144 ml", levure: "24 g", vanille: "3.6 g" },
+      { nb: 13, farine: "910 g", beurre: "286 g", sucre: "286 g", oeufs: "3¼", lait: "156 ml", levure: "26 g", vanille: "3.9 g" },
+      { nb: 14, farine: "980 g", beurre: "308 g", sucre: "308 g", oeufs: "3½", lait: "168 ml", levure: "28 g", vanille: "4.2 g" },
+      { nb: 15, farine: "1050 g", beurre: "330 g", sucre: "330 g", oeufs: "3¾", lait: "180 ml", levure: "30 g", vanille: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec le beurre mou, un peu de sucre, l'œuf, le lait et la levure en une pâte souple et riche. Laissez-la lever 1 h.", badge: null },
+      { icone: "🧈", titre: "Le khoriz", detail: "Sablez ensemble la farine, le sucre et le beurre mou du bout des doigts, jusqu'à obtenir une pâte friable et parfumée (le cœur sucré de la gata).", badge: null },
+      { icone: "📏", titre: "Abaisser", detail: "Étalez la pâte levée en un rectangle régulier.", badge: null },
+      { icone: "🍬", titre: "Garnir", detail: "Répartissez le khoriz sablé sur la pâte, puis roulez ou repliez pour l'enfermer.", badge: null },
+      { icone: "🔷", titre: "Façonner", detail: "Façonnez la gata en un disque ou un rectangle épais, et tracez des motifs à la fourchette sur le dessus (la signature de la gata).", badge: null },
+      { icone: "🖌️", titre: "Dorer et cuire", detail: "Dorez au jaune d'œuf et enfournez à 180 °C 25 à 30 min, jusqu'à ce que la gata soit dorée et parfumée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir et coupez en parts. Servez avec un café ou un thé. Moelleuse, beurrée et sucrée — la pâtisserie de l'hospitalité arménienne.", badge: null }
+    ]
+  },
 });

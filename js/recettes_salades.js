@@ -2445,4 +2445,42 @@ Object.assign(recettes, {
     ],
     liees: ["dalbhat"]
   },
+  bhelpuri: {
+    dateAjout: "2026-07-10T14:04:00",
+    nom: "Bhel Puri",
+    cat: "salades", pays: "inde",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Bhel puri — le chaat de riz soufflé de Mumbai : un mélange croquant de riz soufflé, de pommes de terre, d'oignon et de tomate, réveillé de chutneys sucré-tamarin et vert-menthe, parsemé de sev croustillant. Acidulé, sucré, épicé et croquant, c'est le roi des en-cas de rue indiens.",
+    tableauBhelpuri: [
+      { nb: 1, riz: "40 g", pommedeterre: "40 g", oignon: "20 g", tomates: "½", tamarin: "6 g", farinepoischiche: "15 g", coriandre: "5 g", citron: "¼", piment: "1 g", sel: "1 g" },
+      { nb: 2, riz: "80 g", pommedeterre: "80 g", oignon: "40 g", tomates: "1", tamarin: "12 g", farinepoischiche: "30 g", coriandre: "10 g", citron: "½", piment: "2 g", sel: "2 g" },
+      { nb: 3, riz: "120 g", pommedeterre: "120 g", oignon: "60 g", tomates: "1½", tamarin: "18 g", farinepoischiche: "45 g", coriandre: "15 g", citron: "¾", piment: "3 g", sel: "3 g" },
+      { nb: 4, riz: "160 g", pommedeterre: "160 g", oignon: "80 g", tomates: "2", tamarin: "24 g", farinepoischiche: "60 g", coriandre: "20 g", citron: "1", piment: "4 g", sel: "4 g" },
+      { nb: 5, riz: "200 g", pommedeterre: "200 g", oignon: "100 g", tomates: "2½", tamarin: "30 g", farinepoischiche: "75 g", coriandre: "25 g", citron: "1¼", piment: "5 g", sel: "5 g" },
+      { nb: 6, riz: "240 g", pommedeterre: "240 g", oignon: "120 g", tomates: "3", tamarin: "36 g", farinepoischiche: "90 g", coriandre: "30 g", citron: "1½", piment: "6 g", sel: "6 g" },
+      { nb: 7, riz: "280 g", pommedeterre: "280 g", oignon: "140 g", tomates: "3½", tamarin: "42 g", farinepoischiche: "105 g", coriandre: "35 g", citron: "1¾", piment: "7 g", sel: "7 g" },
+      { nb: 8, riz: "320 g", pommedeterre: "320 g", oignon: "160 g", tomates: "4", tamarin: "48 g", farinepoischiche: "120 g", coriandre: "40 g", citron: "2", piment: "8 g", sel: "8 g" },
+      { nb: 9, riz: "360 g", pommedeterre: "360 g", oignon: "180 g", tomates: "4½", tamarin: "54 g", farinepoischiche: "135 g", coriandre: "45 g", citron: "2¼", piment: "9 g", sel: "9 g" },
+      { nb: 10, riz: "400 g", pommedeterre: "400 g", oignon: "200 g", tomates: "5", tamarin: "60 g", farinepoischiche: "150 g", coriandre: "50 g", citron: "2½", piment: "10 g", sel: "10 g" },
+      { nb: 11, riz: "440 g", pommedeterre: "440 g", oignon: "220 g", tomates: "5½", tamarin: "66 g", farinepoischiche: "165 g", coriandre: "55 g", citron: "2¾", piment: "11 g", sel: "11 g" },
+      { nb: 12, riz: "480 g", pommedeterre: "480 g", oignon: "240 g", tomates: "6", tamarin: "72 g", farinepoischiche: "180 g", coriandre: "60 g", citron: "3", piment: "12 g", sel: "12 g" },
+      { nb: 13, riz: "520 g", pommedeterre: "520 g", oignon: "260 g", tomates: "6½", tamarin: "78 g", farinepoischiche: "195 g", coriandre: "65 g", citron: "3¼", piment: "13 g", sel: "13 g" },
+      { nb: 14, riz: "560 g", pommedeterre: "560 g", oignon: "280 g", tomates: "7", tamarin: "84 g", farinepoischiche: "210 g", coriandre: "70 g", citron: "3½", piment: "14 g", sel: "14 g" },
+      { nb: 15, riz: "600 g", pommedeterre: "600 g", oignon: "300 g", tomates: "7½", tamarin: "90 g", farinepoischiche: "225 g", coriandre: "75 g", citron: "3¾", piment: "15 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Le riz soufflé", detail: "Réservez du riz soufflé bien sec et croustillant (murmura) : c'est la base aérienne du bhel.", badge: null },
+      { icone: "🥔", titre: "Les légumes", detail: "Coupez la pomme de terre cuite, l'oignon et la tomate en tout petits dés.", badge: null },
+      { icone: "🍯", titre: "Le chutney tamarin", detail: "Préparez un chutney sucré en faisant fondre le tamarin avec un peu de sucre (ou dattes) et des épices, en un sirop brun acidulé.", badge: null },
+      { icone: "🌿", titre: "Le chutney vert", detail: "Mixez la coriandre, la menthe, le piment et le citron en un chutney vert frais et relevé.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Juste avant de servir, mélangez le riz soufflé avec les légumes, les deux chutneys, le sel et le citron.", badge: null },
+      { icone: "🍜", titre: "Le sev", detail: "Ajoutez le sev (fins vermicelles de pois chiche frits) et mélangez délicatement pour tout enrober sans écraser.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez immédiatement, garni de coriandre et d'un peu de sev : le bhel doit être croquant (il ramollit vite). Acidulé, sucré et croquant — le chaat de Mumbai.", badge: null }
+    ],
+    liees: ["panipuri"]
+  },
 });

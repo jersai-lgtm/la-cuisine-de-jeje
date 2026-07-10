@@ -65624,5 +65624,345 @@ window.RECETTES_EN = {
     "detail": "Serve hot with fresh coconut milk, bananas and a curry (or palm sugar). Light, soft and fragrant — the cylindrical breakfast of Sri Lanka."
    }
   ]
+ },
+ "pesarattu": {
+  "nom": "Pesarattu",
+  "description": "Pesarattu — the mung bean dosa of Andhra Pradesh: a thin, crisp crêpe made from ground green mung beans (not fermented rice), scattered with onion and ginger. Protein-rich, green and savoury, it's eaten for breakfast with a ginger chutney.",
+  "etapes": [
+   {
+    "titre": "Soak the mung",
+    "detail": "Soak the green mung beans (with a little rice) at least 4 hours, then drain them."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Blend the soaked beans with the ginger, chilli, cumin and a little water into a smooth, pourable batter (like a pancake batter)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt the batter and add the chopped coriander. It should be green, fluid and fragrant."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Pour a ladle of batter into the centre of a hot oiled pan and spread it in a spiral, into a thin disc."
+   },
+   {
+    "titre": "Top",
+    "detail": "Immediately scatter finely sliced onion and ginger over the still-raw crêpe, and press lightly."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook until the underside is golden and crisp, drizzle a little oil around the edges, then fold in half."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot and crisp, with a ginger chutney (allam) and an upma. Protein-rich, green and savoury — the dosa of Andhra."
+   }
+  ]
+ },
+ "littichokha": {
+  "nom": "Litti Chokha",
+  "description": "Litti chokha — the rustic dish of Bihar: balls of wheat dough stuffed with sattu (spiced roasted chickpea flour), cooked over fire until golden, served with a 'chokha' of mashed roasted aubergine, potato and tomato. Smoky, rustic and comforting.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the wheat flour with water, a little oil and salt into a firm dough, and let it rest."
+   },
+   {
+    "titre": "The sattu filling",
+    "detail": "Mix the roasted chickpea flour (sattu) with the garlic, cumin, a little oil, chilli and water: a dry, spiced, fragrant filling."
+   },
+   {
+    "titre": "Form the litti",
+    "detail": "Fill balls of dough with the sattu filling, close them and seal well into even little balls."
+   },
+   {
+    "titre": "Cook the litti",
+    "detail": "Cook the litti in the oven (or over embers), turning them, until golden, cracked and smoky."
+   },
+   {
+    "titre": "The chokha",
+    "detail": "Roast the aubergine, tomato and potato until tender and smoky, then peel them."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the roasted vegetables with the onion, garlic, chilli, coriander and a drizzle of mustard oil into a rustic mash."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Dip the hot litti in melted ghee and serve with the chokha. Smoky, rustic and comforting — the iconic dish of Bihar."
+   }
+  ]
+ },
+ "khandvi": {
+  "nom": "Khandvi",
+  "description": "Khandvi — the melting chickpea rolls of Gujarat: a batter of chickpea flour and yoghurt cooked until thick, spread in a thin layer then rolled into small, silky yellow rolls, lifted with a tempering of mustard and sesame. Delicate, melting and fragrant.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk the chickpea flour with the yoghurt, water, turmeric, ginger, chilli and salt into a smooth, lump-free batter."
+   },
+   {
+    "titre": "Cook the batter",
+    "detail": "Cook the batter over low heat, stirring constantly, until it thickens a lot and pulls away from the sides (the tricky step)."
+   },
+   {
+    "titre": "Spread thin",
+    "detail": "Immediately spread the hot batter in a very thin layer on a smooth surface (oiled worktop or back of a tray), before it sets."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Let cool a few minutes, then cut the layer into even strips."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Gently roll each strip onto itself into a tight, silky little roll."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "Heat the oil with the mustard and sesame seeds until they crackle, then pour this tempering over the rolls."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and grated coconut, and serve at room temperature. Delicate, melting and fragrant — the iconic rolls of Gujarat."
+   }
+  ]
+ },
+ "kachori": {
+  "nom": "Kachori",
+  "description": "Kachori — the spiced fried pastry of India: a ball of crisp dough stuffed with a purée of lentils (or peas) spiced with cumin, fennel and ginger, fried until golden and puffed. Crunchy outside, soft and fragrant inside, it's a very popular street snack in northern India.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with a little oil (the moyan) and water into a soft but firm dough, and rest it 20 minutes."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Soak then coarsely blend the lentils, and sauté them with the cumin, fennel, ginger and chilli into a dry, fragrant filling."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Flatten small balls of dough, fill them with the stuffing, then close them into well-sealed balls."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Gently flatten each stuffed ball into a thick disc, without pushing the filling out."
+   },
+   {
+    "titre": "Fry slowly",
+    "detail": "Drop the kachoris into oil that isn't too hot and fry them slowly: they puff up and turn crisp and golden."
+   },
+   {
+    "titre": "Blister",
+    "detail": "Continue frying over low heat until the surface is blistered and nicely crisp (the sign of a good kachori)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve hot, with a tamarind and mint chutney. Crunchy outside, soft inside — the street snack of northern India."
+   }
+  ]
+ },
+ "bhelpuri": {
+  "nom": "Bhel Puri",
+  "description": "Bhel puri — the puffed rice chaat of Mumbai: a crunchy mix of puffed rice, potato, onion and tomato, woken up with sweet-tamarind and green-mint chutneys, scattered with crisp sev. Tangy, sweet, spicy and crunchy, it's the king of Indian street snacks.",
+  "etapes": [
+   {
+    "titre": "The puffed rice",
+    "detail": "Set aside dry, crisp puffed rice (murmura): the airy base of the bhel."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cut the cooked potato, onion and tomato into tiny dice."
+   },
+   {
+    "titre": "The tamarind chutney",
+    "detail": "Make a sweet chutney by melting the tamarind with a little sugar (or dates) and spices, into a tangy brown syrup."
+   },
+   {
+    "titre": "The green chutney",
+    "detail": "Blend the coriander, mint, chilli and lemon into a fresh, punchy green chutney."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Just before serving, mix the puffed rice with the vegetables, both chutneys, salt and lemon."
+   },
+   {
+    "titre": "The sev",
+    "detail": "Add the sev (fine fried chickpea vermicelli) and mix gently to coat everything without crushing."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve immediately, topped with coriander and a little sev: the bhel must be crunchy (it softens fast). Tangy, sweet and crunchy — the chaat of Mumbai."
+   }
+  ]
+ },
+ "dabeli": {
+  "nom": "Dabeli",
+  "description": "Dabeli — the stuffed bun of Gujarat: a soft bread filled with a potato mash spiced with 'dabeli masala', lifted with sweet tamarind chutney, peanuts and pomegranate, then pan-fried in butter. Sweet, spicy and crunchy, it's the street burger of Kutch.",
+  "etapes": [
+   {
+    "titre": "The mash",
+    "detail": "Mash the cooked potato and sauté it with the dabeli masala (cumin, coriander, chilli) and a little tamarind chutney: a sweet-spicy filling."
+   },
+   {
+    "titre": "The tamarind chutney",
+    "detail": "Make a sweet chutney by melting the tamarind with a little sugar (or dates): a tangy brown syrup."
+   },
+   {
+    "titre": "The peanuts",
+    "detail": "Roast the peanuts until golden and crunchy."
+   },
+   {
+    "titre": "Open the bread",
+    "detail": "Open the buns (pav) in two, without separating them completely."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the inside with chutney, fill with potato mash, onion, coriander, peanuts (and pomegranate)."
+   },
+   {
+    "titre": "Pan-fry",
+    "detail": "Pan-fry the filled dabeli in a little butter, until the bread is golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Roll the edges in peanuts and sev, and serve at once. Sweet, spicy and crunchy — the street burger of Kutch."
+   }
+  ]
+ },
+ "zhingyalovhats": {
+  "nom": "Zhingyalov Hats",
+  "description": "Zhingyalov hats — the Armenian herb bread: a thin unleavened flatbread stuffed with a profusion of chopped fresh herbs (up to twenty kinds), folded and browned in a pan. A speciality of Artsakh, plant-based, fragrant and rustic, it celebrates the wild herbs of spring.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with water, a little salt and oil into a soft dough, and rest it 30 minutes (it must roll out very thin)."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Finely chop a large amount of varied fresh herbs (spinach, coriander, spring onion, green onion, sorrel, dill, parsley…). This is the heart of zhingyalov hats."
+   },
+   {
+    "titre": "Season",
+    "detail": "Mix the chopped herbs with the onion, a drizzle of oil, the lemon juice and salt, massaging lightly to soften them."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the rested dough into a very thin, almost translucent disc."
+   },
+   {
+    "titre": "Fill and close",
+    "detail": "Spread a generous layer of herbs in the centre, then fold the dough over and seal the edges into a flat pocket."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the flatbread dry (or barely oiled) in a hot pan, until golden and speckled on both sides."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, cut into pieces, plain or with yoghurt. Plant-based, fragrant and rustic — the herb bread of Artsakh, a celebration of spring."
+   }
+  ]
+ },
+ "gata": {
+  "nom": "Gata",
+  "description": "Gata — the Armenian sweet-filled brioche: a butter-enriched dough enclosing a 'khoriz' (flour, sugar and butter worked into a crumbly paste), baked golden and often decorated with patterns. Soft, buttery and delicately sweet, it's the pastry of festivities and hospitality in Armenia.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with the soft butter, a little sugar, the egg, milk and yeast into a soft, rich dough. Let it rise 1 hour."
+   },
+   {
+    "titre": "The khoriz",
+    "detail": "Rub together the flour, sugar and soft butter with your fingertips, until you get a crumbly, fragrant paste (the sweet heart of gata)."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the risen dough into an even rectangle."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the crumbly khoriz over the dough, then roll or fold to enclose it."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape the gata into a disc or thick rectangle, and trace patterns with a fork on top (the signature of gata)."
+   },
+   {
+    "titre": "Glaze and bake",
+    "detail": "Brush with egg yolk and bake at 180°C for 25 to 30 minutes, until the gata is golden and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool slightly and cut into pieces. Serve with coffee or tea. Soft, buttery and sweet — the pastry of Armenian hospitality."
+   }
+  ]
+ },
+ "cemita": {
+  "nom": "Cemita",
+  "description": "Cemita — the sandwich of Puebla: a sesame brioche bun filled with a breaded cutlet (milanesa), avocado, stringy cheese (quesillo), onion and chipotle chilli. Generous, crisp and fragrant with pápalo, it's the iconic torta of the city of Puebla, in Mexico.",
+  "etapes": [
+   {
+    "titre": "The milanesa",
+    "detail": "Flatten the chicken (or beef) into a thin cutlet, salt it, coat it in flour, egg then panko."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the breaded cutlet in hot oil until golden and crisp, then drain it."
+   },
+   {
+    "titre": "The chipotle",
+    "detail": "Mash a chipotle chilli in adobo into a smoky, punchy paste."
+   },
+   {
+    "titre": "The bread",
+    "detail": "Cut the cemita bun (sesame brioche) in two and lightly toast the inside."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread the bread with chipotle, add avocado slices, the crisp cutlet and the stringy cheese."
+   },
+   {
+    "titre": "Complete",
+    "detail": "Add the sliced onion, a few pápalo leaves (or coriander) and a little olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Close the sandwich, press lightly and serve at once. Generous, crisp and fragrant — the iconic torta of Puebla."
+   }
+  ]
+ },
+ "carnitas": {
+  "nom": "Carnitas",
+  "description": "Carnitas — the confit pork of Michoacán: large pieces of pork long-simmered in their own fat with orange, garlic and spices, until tender, then browned and shredded. Soft inside, crisp outside, they fill the best tacos in Mexico.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Cut the pork shoulder into large cubes and salt them generously."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Place the pork in a pot with the garlic, onion, bay, cumin and the juice (and peel) of an orange."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Add a little water and lard (or oil), cover and simmer very gently 2 hours, until the pork is tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover and raise the heat: the water evaporates and the pork starts to fry in its own fat."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Let the pork caramelise and brown at the edges, turning it, until crisp on the outside."
+   },
+   {
+    "titre": "Shred",
+    "detail": "Coarsely shred the pork with a fork, mixing tender pieces and crisp edges."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Squeeze over a little lime and serve in corn tortillas with onion, coriander and salsa. Tender, crisp and fragrant — the confit pork of Michoacán."
+   }
+  ]
  }
 };
