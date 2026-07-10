@@ -4217,4 +4217,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tièdes avec du yaourt, un pickle de mangue ou du chutney. Ils se conservent plusieurs jours et voyagent bien — les galettes nomades du Gujarat.", badge: null }
     ]
   },
+  centuryegg: {
+    dateAjout: "2026-07-10T09:35:00",
+    nom: "Œuf de Cent Ans au Tofu",
+    cat: "encas", pays: "chine",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🥚",
+    description: "Œuf de cent ans et tofu soyeux — l'entrée froide chinoise : des œufs de cane conservés (au jaune crémeux et translucide) sur un lit de tofu soyeux, nappés de sauce soja, d'huile de sésame et de ciboule. Umami, rafraîchissant et surprenant.",
+    tableauCenturyegg: [
+      { nb: 1, oeufs: "1", tofu: "40 g", saucesoja: "6 ml", huilesesame: "3 ml", gingembre: "2 g", ciboule: "4 g", vinaigre: "4 ml", sel: "1 g" },
+      { nb: 2, oeufs: "2", tofu: "80 g", saucesoja: "12 ml", huilesesame: "6 ml", gingembre: "4 g", ciboule: "8 g", vinaigre: "8 ml", sel: "2 g" },
+      { nb: 3, oeufs: "3", tofu: "120 g", saucesoja: "18 ml", huilesesame: "9 ml", gingembre: "6 g", ciboule: "12 g", vinaigre: "12 ml", sel: "3 g" },
+      { nb: 4, oeufs: "4", tofu: "160 g", saucesoja: "24 ml", huilesesame: "12 ml", gingembre: "8 g", ciboule: "16 g", vinaigre: "16 ml", sel: "4 g" },
+      { nb: 5, oeufs: "5", tofu: "200 g", saucesoja: "30 ml", huilesesame: "15 ml", gingembre: "10 g", ciboule: "20 g", vinaigre: "20 ml", sel: "5 g" },
+      { nb: 6, oeufs: "6", tofu: "240 g", saucesoja: "36 ml", huilesesame: "18 ml", gingembre: "12 g", ciboule: "24 g", vinaigre: "24 ml", sel: "6 g" },
+      { nb: 7, oeufs: "7", tofu: "280 g", saucesoja: "42 ml", huilesesame: "21 ml", gingembre: "14 g", ciboule: "28 g", vinaigre: "28 ml", sel: "7 g" },
+      { nb: 8, oeufs: "8", tofu: "320 g", saucesoja: "48 ml", huilesesame: "24 ml", gingembre: "16 g", ciboule: "32 g", vinaigre: "32 ml", sel: "8 g" },
+      { nb: 9, oeufs: "9", tofu: "360 g", saucesoja: "54 ml", huilesesame: "27 ml", gingembre: "18 g", ciboule: "36 g", vinaigre: "36 ml", sel: "9 g" },
+      { nb: 10, oeufs: "10", tofu: "400 g", saucesoja: "60 ml", huilesesame: "30 ml", gingembre: "20 g", ciboule: "40 g", vinaigre: "40 ml", sel: "10 g" },
+      { nb: 11, oeufs: "11", tofu: "440 g", saucesoja: "66 ml", huilesesame: "33 ml", gingembre: "22 g", ciboule: "44 g", vinaigre: "44 ml", sel: "11 g" },
+      { nb: 12, oeufs: "12", tofu: "480 g", saucesoja: "72 ml", huilesesame: "36 ml", gingembre: "24 g", ciboule: "48 g", vinaigre: "48 ml", sel: "12 g" },
+      { nb: 13, oeufs: "13", tofu: "520 g", saucesoja: "78 ml", huilesesame: "39 ml", gingembre: "26 g", ciboule: "52 g", vinaigre: "52 ml", sel: "13 g" },
+      { nb: 14, oeufs: "14", tofu: "560 g", saucesoja: "84 ml", huilesesame: "42 ml", gingembre: "28 g", ciboule: "56 g", vinaigre: "56 ml", sel: "14 g" },
+      { nb: 15, oeufs: "15", tofu: "600 g", saucesoja: "90 ml", huilesesame: "45 ml", gingembre: "30 g", ciboule: "60 g", vinaigre: "60 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Les œufs de cent ans", detail: "Utilisez des œufs de cane conservés (pidan), au blanc ambré translucide et au jaune vert crémeux. Écalez-les délicatement et coupez-les en quartiers.", badge: null },
+      { icone: "🧈", titre: "Le tofu soyeux", detail: "Déposez délicatement le tofu soyeux (bien froid) dans une assiette creuse, en le laissant en gros morceaux.", badge: null },
+      { icone: "🥚", titre: "Dresser", detail: "Disposez les quartiers d'œufs de cent ans sur et autour du tofu.", badge: null },
+      { icone: "🥣", titre: "La sauce", detail: "Mélangez la sauce soja, l'huile de sésame, le vinaigre et un peu de gingembre râpé en une sauce umami et parfumée.", badge: null },
+      { icone: "💧", titre: "Napper", detail: "Versez la sauce sur le tofu et les œufs, sans tout noyer (le tofu doit rester net).", badge: null },
+      { icone: "🌿", titre: "Garnir", detail: "Parsemez généreusement de ciboule ciselée et éventuellement d'oignon frit croustillant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez frais, en entrée à partager. Umami, doux et rafraîchissant — une entrée froide chinoise surprenante et savoureuse.", badge: null }
+    ]
+  },
 });

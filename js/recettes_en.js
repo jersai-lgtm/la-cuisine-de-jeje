@@ -62598,5 +62598,345 @@ window.RECETTES_EN = {
     "detail": "Serve warm with yogurt, a mango pickle or chutney. They keep for several days and travel well — the nomadic flatbreads of Gujarat."
    }
   ]
+ },
+ "hotandsour": {
+  "nom": "Hot and Sour Soup",
+  "description": "Hot and sour soup (suan la tang) — the Sichuan classic: a thickened velvety broth, both soured by vinegar and lifted by pepper and chilli, filled with tofu, mushrooms and egg ribbons. Comforting and invigorating.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Bring the broth to a simmer with the soy sauce, chilli and a good dose of white pepper (the 'hot' of the soup comes mostly from the pepper)."
+   },
+   {
+    "titre": "The garnishes",
+    "detail": "Add the sliced mushrooms, julienned carrot and thinly sliced tofu, and cook 5 minutes."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Dissolve the cornstarch in a little cold water and stir it into the soup: it thickens and turns velvety."
+   },
+   {
+    "titre": "The egg ribbons",
+    "detail": "Beat the egg and pour it in a stream into the simmering soup while stirring slowly: it coagulates into fine silky strands."
+   },
+   {
+    "titre": "Sour it",
+    "detail": "Off the heat, add the (black rice) vinegar: the acidity should be sharp. It's the hot-sour balance that makes the soup."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and rebalance the vinegar and pepper to your taste. Salt if needed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with spring onion and a drizzle of sesame oil, and serve scalding. Comforting, tangy and invigorating — the Sichuan anti-cold remedy."
+   }
+  ]
+ },
+ "chowmein": {
+  "nom": "Chow Mein",
+  "description": "Chow mein — Cantonese crispy stir-fried noodles: egg noodles seared in the wok until golden, with chicken and crunchy vegetables, coated in soy sauce. The contrast of crisp and soft makes it an essential.",
+  "etapes": [
+   {
+    "titre": "Par-cook the noodles",
+    "detail": "Cook the egg noodles just al dente, rinse in cold water and drain well (they must be dry to crisp up)."
+   },
+   {
+    "titre": "Brown the noodles",
+    "detail": "Sear the noodles in a very hot wok with a little oil, spreading them out, until golden and crisp in places. Set aside."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Sear the sliced chicken with the ginger, until golden and cooked."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the cabbage, julienned carrot and onion, and stir-fry over high heat for 2 minutes, keeping the crunch."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the noodles to the wok, add the soy sauce and stir-fry briskly to coat everything."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add the sesame oil and spring onion off the heat, and mix."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, while the noodles still have their crispness. The crisp-soft contrast of chow mein, an essential."
+   }
+  ]
+ },
+ "lomein": {
+  "nom": "Lo Mein",
+  "description": "Lo mein — Cantonese soft stir-fried noodles: supple noodles coated in a glossy soy sauce scented with sesame oil, mixed with chicken and vegetables. Unlike crisp chow mein, lo mein is all about softness.",
+  "etapes": [
+   {
+    "titre": "Cook the noodles",
+    "detail": "Cook the egg noodles until tender, drain and lightly oil them to stop them sticking."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Mix the soy sauce (light and dark), sesame oil, sugar and a little water: the glossy sauce that coats the noodles ('lo' = to mix)."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Sear the sliced chicken with the garlic in the hot wok, until golden."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the sliced pepper and mushrooms and stir-fry 2 minutes."
+   },
+   {
+    "titre": "Add the noodles",
+    "detail": "Add the cooked noodles to the wok."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Pour in the sauce and stir-fry over medium heat, just to coat and reheat the noodles (without crisping them — lo mein stays soft)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with spring onion and serve at once. Soft, glossy and fragrant — comforting lo mein, the tender cousin of chow mein."
+   }
+  ]
+ },
+ "beefnoodle": {
+  "nom": "Beef Noodle Soup",
+  "description": "Taiwanese beef noodle soup (niu rou mian) — a deep, spicy broth slowly simmered with tender braised beef, served over noodles with greens. Rich, comforting and fragrant, it's a national dish of Taiwan.",
+  "etapes": [
+   {
+    "titre": "Blanch the beef",
+    "detail": "Blanch the beef pieces (shin, shank) 5 minutes in boiling water, then rinse: the broth will be clearer."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic, ginger and tomato paste (with doubanjiang, the fermented bean-chilli paste) until fragrant."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add the beef, soy sauce, star anise, chilli and broth. Bring to a simmer."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Cover and simmer over low heat for 2 hours to 2 hours 30, until the beef is ultra-tender and the broth deep and fragrant."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the fresh noodles separately, drain and divide them into the bowls."
+   },
+   {
+    "titre": "The greens",
+    "detail": "Quickly blanch some greens (cabbage, pak choi) in the broth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour the scalding broth and beef over the noodles, top with greens and spring onion. Rich and comforting — Taiwan's national treasure."
+   }
+  ]
+ },
+ "biangbiang": {
+  "nom": "Biang Biang Noodles",
+  "description": "Biang biang noodles — the wide hand-pulled noodles of Xi'an: thick flat noodles shaped by hand, topped with a scalding chilli oil poured over garlic and spring onion. The name comes from the sound of the dough slapped on the counter!",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, salt and water into a firm dough. Knead well, brush with oil and let rest at least 1 hour (the rest is essential for pulling)."
+   },
+   {
+    "titre": "Pull the noodles",
+    "detail": "Flatten each piece of dough into a strip, then stretch and slap it on the counter (the famous 'biang!') until you get wide flat thin noodles. Split them down the centre."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Drop the noodles into boiling water and cook 2 to 3 minutes, until they rise and are supple but firm. Drain and place in a bowl."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Place on the hot noodles crushed garlic, chopped spring onion, chilli powder and a little soy sauce and vinegar."
+   },
+   {
+    "titre": "The scalding oil",
+    "detail": "Heat the oil until it smokes, then pour it all at once over the aromatics: they sizzle and instantly release their aromas (the spectacular step)."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix vigorously to coat the noodles in the fragrant chilli oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, scalding. Wide tender noodles, an intense chilli oil — the iconic street food of Xi'an."
+   }
+  ]
+ },
+ "centuryegg": {
+  "nom": "Century Egg with Tofu",
+  "description": "Century egg with silken tofu — the Chinese cold appetiser: preserved duck eggs (with a creamy translucent yolk) over silken tofu, dressed with soy sauce, sesame oil and spring onion. Umami, refreshing and surprising.",
+  "etapes": [
+   {
+    "titre": "The century eggs",
+    "detail": "Use preserved duck eggs (pidan), with an amber translucent white and a creamy green yolk. Peel them gently and cut into wedges."
+   },
+   {
+    "titre": "The silken tofu",
+    "detail": "Gently place the (well-chilled) silken tofu on a shallow plate, leaving it in large pieces."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Arrange the century egg wedges on and around the tofu."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Mix the soy sauce, sesame oil, vinegar and a little grated ginger into an umami, fragrant sauce."
+   },
+   {
+    "titre": "Dress",
+    "detail": "Pour the sauce over the tofu and eggs, without drowning it all (the tofu should stay clean)."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Scatter generously with chopped spring onion and optionally crispy fried onion."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold, as a starter to share. Umami, mild and refreshing — a surprising, tasty Chinese cold starter."
+   }
+  ]
+ },
+ "sesameball": {
+  "nom": "Sesame Balls",
+  "description": "Jian dui — fried sesame balls of dim sum: balls of glutinous rice dough filled with red bean paste, coated in sesame seeds and fried until golden, crisp and hollow. A treat that's soft and crunchy at once.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Cook the red beans (azuki) with sugar into a thick smooth paste (pat). Let cool and shape small balls."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the glutinous rice flour with a little sugar and warm water into a soft, malleable dough, neither dry nor sticky."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Take small balls of dough, flatten them, place a red bean ball in the centre and close into a smooth ball, without cracks."
+   },
+   {
+    "titre": "Coat in sesame",
+    "detail": "Lightly dampen the balls and roll them in the sesame seeds, pressing to coat well."
+   },
+   {
+    "titre": "Fry gently",
+    "detail": "Plunge the balls into not-too-hot oil (150°C) and fry over low heat, rolling them, gradually raising the temperature: they puff and turn hollow."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Continue frying until well golden and crisp. Drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm: crisp outside, soft and hollow inside, with the red bean centre. A dim sum classic."
+   }
+  ]
+ },
+ "pineapplebun": {
+  "nom": "Pineapple Bun (Bolo Bao)",
+  "description": "Bolo bao — the Hong Kong 'pineapple bun': a soft brioche topped with a crackled sweet crust that resembles a pineapple's skin (though it contains none!). Served warm with a slice of butter, it's the king snack of Hong Kong cha chaan teng.",
+  "etapes": [
+   {
+    "titre": "The brioche dough",
+    "detail": "Dissolve the yeast in the warm milk, then mix with the flour, half the sugar, the egg and a little butter. Knead until smooth and elastic."
+   },
+   {
+    "titre": "1st rise",
+    "detail": "Cover and let rise 1 hour to 1 hour 30, until the dough doubles in volume."
+   },
+   {
+    "titre": "The crust",
+    "detail": "Make the cookie crust: work butter, sugar, an egg yolk and flour into a soft paste (like cookie dough)."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape balls of brioche dough. Flatten the cookie paste into discs and place one on each ball, letting it come down the sides."
+   },
+   {
+    "titre": "The pineapple pattern",
+    "detail": "Score a criss-cross on the crust with a knife: when baked, it cracks and forms the characteristic 'pineapple' pattern."
+   },
+   {
+    "titre": "2nd rise",
+    "detail": "Let rise again 40 minutes. Brush the crust with egg yolk."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 15 minutes, until the crust is golden and crackled. Serve warm, split and filled with a slice of cold butter (bolo yau)."
+   }
+  ]
+ },
+ "eggwaffle": {
+  "nom": "Egg Waffle",
+  "description": "Gai daan jai — the Hong Kong egg waffle: a bubble waffle with domed pockets, crisp outside and soft inside, cooked in a half-sphere mould. Sold hot in the streets, enjoyed plain or filled, pulling it apart bubble by bubble.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk the eggs with the sugar until frothy, then work in the flour, cornstarch, baking powder and milk, into a smooth, fluid batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let the batter rest 20 to 30 minutes: it will be more homogeneous and give nicely puffed bubbles."
+   },
+   {
+    "titre": "Heat the mould",
+    "detail": "Thoroughly heat and oil an egg-waffle mould (half-spheres) on both sides: it must be scalding for the bubbles to puff."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour the batter into the hot mould, filling it generously, then close it immediately and flip it to spread the batter into all the pockets."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook over medium heat for 2 to 3 minutes per side, flipping, until golden and crisp outside."
+   },
+   {
+    "titre": "Check",
+    "detail": "The bubbles should be well puffed, golden and crisp outside, while staying soft and slightly gooey inside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Peel the waffle off the mould, let it cool 1 minute (it crisps as it cools) and enjoy it bubble by bubble. The street snack of Hong Kong."
+   }
+  ]
+ },
+ "malataang": {
+  "nom": "Ma La Tang",
+  "description": "Ma la tang — the Sichuan 'express hotpot': a numbing, spicy broth (ma = numbing, la = spicy) into which you drop noodles, tofu, vegetables and meat. Endlessly customisable, it's the comforting, addictive street food of northern China.",
+  "etapes": [
+   {
+    "titre": "The ma la broth",
+    "detail": "Sauté the garlic, chilli (and ideally Sichuan pepper for the 'numbing' effect) in a little oil, then add the broth and soy sauce. Bring to a simmer."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Add the sliced beef (or meatballs) and cook 3 minutes."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the cabbage, mushrooms and tofu in pieces, and simmer 5 minutes."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Add the noodles and cook until tender, absorbing the broth's flavours."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Taste and adjust the chilli and salt: ma la tang should be well spiced, between hot and numbing."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add the sesame oil and sesame seeds, and mix."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scalding, in a large bowl, topped with coriander and spring onion. Comforting, spicy and customisable — the addictive express hotpot."
+   }
+  ]
  }
 };
