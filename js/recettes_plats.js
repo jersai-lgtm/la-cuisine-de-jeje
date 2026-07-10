@@ -33015,4 +33015,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, brûlant. De larges nouilles fondantes, une huile pimentée intense — le street-food emblématique de Xi'an.", badge: null }
     ]
   },
+  ficellepicarde: {
+    dateAjout: "2026-07-10T09:41:00",
+    nom: "Ficelle Picarde",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥞",
+    description: "Ficelle picarde — la crêpe gratinée du Nord : une crêpe salée garnie de jambon, de champignons à la crème, roulée et gratinée sous une sauce crémeuse. Généreuse et réconfortante, c'est l'entrée chaude emblématique de la Picardie.",
+    tableauFicellepicarde: [
+      { nb: 1, farine: "25 g", oeufs: "½", lait: "60 ml", jambon: "25 g", champignon: "30 g", creme: "40 ml", fromage: "20 g", beurre: "8 g", sel: "2 g" },
+      { nb: 2, farine: "50 g", oeufs: "1", lait: "120 ml", jambon: "50 g", champignon: "60 g", creme: "80 ml", fromage: "40 g", beurre: "16 g", sel: "4 g" },
+      { nb: 3, farine: "75 g", oeufs: "1½", lait: "180 ml", jambon: "75 g", champignon: "90 g", creme: "120 ml", fromage: "60 g", beurre: "24 g", sel: "6 g" },
+      { nb: 4, farine: "100 g", oeufs: "2", lait: "240 ml", jambon: "100 g", champignon: "120 g", creme: "160 ml", fromage: "80 g", beurre: "32 g", sel: "8 g" },
+      { nb: 5, farine: "125 g", oeufs: "2½", lait: "300 ml", jambon: "125 g", champignon: "150 g", creme: "200 ml", fromage: "100 g", beurre: "40 g", sel: "10 g" },
+      { nb: 6, farine: "150 g", oeufs: "3", lait: "360 ml", jambon: "150 g", champignon: "180 g", creme: "240 ml", fromage: "120 g", beurre: "48 g", sel: "12 g" },
+      { nb: 7, farine: "175 g", oeufs: "3½", lait: "420 ml", jambon: "175 g", champignon: "210 g", creme: "280 ml", fromage: "140 g", beurre: "56 g", sel: "14 g" },
+      { nb: 8, farine: "200 g", oeufs: "4", lait: "480 ml", jambon: "200 g", champignon: "240 g", creme: "320 ml", fromage: "160 g", beurre: "64 g", sel: "16 g" },
+      { nb: 9, farine: "225 g", oeufs: "4½", lait: "540 ml", jambon: "225 g", champignon: "270 g", creme: "360 ml", fromage: "180 g", beurre: "72 g", sel: "18 g" },
+      { nb: 10, farine: "250 g", oeufs: "5", lait: "600 ml", jambon: "250 g", champignon: "300 g", creme: "400 ml", fromage: "200 g", beurre: "80 g", sel: "20 g" },
+      { nb: 11, farine: "275 g", oeufs: "5½", lait: "660 ml", jambon: "275 g", champignon: "330 g", creme: "440 ml", fromage: "220 g", beurre: "88 g", sel: "22 g" },
+      { nb: 12, farine: "300 g", oeufs: "6", lait: "720 ml", jambon: "300 g", champignon: "360 g", creme: "480 ml", fromage: "240 g", beurre: "96 g", sel: "24 g" },
+      { nb: 13, farine: "325 g", oeufs: "6½", lait: "780 ml", jambon: "325 g", champignon: "390 g", creme: "520 ml", fromage: "260 g", beurre: "104 g", sel: "26 g" },
+      { nb: 14, farine: "350 g", oeufs: "7", lait: "840 ml", jambon: "350 g", champignon: "420 g", creme: "560 ml", fromage: "280 g", beurre: "112 g", sel: "28 g" },
+      { nb: 15, farine: "375 g", oeufs: "7½", lait: "900 ml", jambon: "375 g", champignon: "450 g", creme: "600 ml", fromage: "300 g", beurre: "120 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥞", titre: "Les crêpes", detail: "Préparez une pâte à crêpes salée (farine, œuf, lait, sel) et faites cuire de fines crêpes à la poêle. Réservez.", badge: null },
+      { icone: "🍄", titre: "Les champignons", detail: "Faites revenir les champignons émincés dans le beurre jusqu'à ce qu'ils rendent leur eau et dorent. Ajoutez un peu de crème pour lier (duxelles crémeuse).", badge: null },
+      { icone: "🍖", titre: "Garnir", detail: "Déposez sur chaque crêpe une tranche de jambon et une cuillère de champignons à la crème.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Roulez les crêpes garnies en boudins et disposez-les serrés dans un plat à gratin beurré.", badge: null },
+      { icone: "🥛", titre: "Napper", detail: "Nappez les crêpes roulées du reste de crème et parsemez de fromage râpé.", badge: null },
+      { icone: "🔥", titre: "Gratiner", detail: "Enfournez à 200°C 15 min, jusqu'à ce que le dessus soit doré et gratiné et la crème bouillonnante.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, une ficelle par personne, avec une salade verte. L'entrée chaude généreuse et réconfortante de Picardie.", badge: null }
+    ]
+  },
+  gardiane: {
+    dateAjout: "2026-07-10T09:42:00",
+    nom: "Gardiane de Taureau",
+    cat: "plats", pays: "france",
+    base: 4,
+    temps: "3h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐂",
+    description: "Gardiane de taureau — le civet camarguais : de la viande de taureau (ou de bœuf) longuement mijotée au vin rouge avec des olives, des carottes et des herbes de Provence. Robuste et parfumé, ce plat des gardians se sert traditionnellement avec du riz de Camargue.",
+    tableauGardiane: [
+      { nb: 1, boeuf: "120 g", oignon: "½", carotte: "30 g", olives: "15 g", ail: "1", laurier: "0.2 g", thym: "1 g", bouillon: "150 ml", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, boeuf: "240 g", oignon: "1", carotte: "60 g", olives: "30 g", ail: "2", laurier: "0.4 g", thym: "2 g", bouillon: "300 ml", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, boeuf: "360 g", oignon: "1½", carotte: "90 g", olives: "45 g", ail: "3", laurier: "0.6 g", thym: "3 g", bouillon: "450 ml", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, boeuf: "480 g", oignon: "2", carotte: "120 g", olives: "60 g", ail: "4", laurier: "0.8 g", thym: "4 g", bouillon: "600 ml", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, boeuf: "600 g", oignon: "2½", carotte: "150 g", olives: "75 g", ail: "5", laurier: "1 g", thym: "5 g", bouillon: "750 ml", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, boeuf: "720 g", oignon: "3", carotte: "180 g", olives: "90 g", ail: "6", laurier: "1.2 g", thym: "6 g", bouillon: "900 ml", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, boeuf: "840 g", oignon: "3½", carotte: "210 g", olives: "105 g", ail: "7", laurier: "1.4 g", thym: "7 g", bouillon: "1050 ml", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, boeuf: "960 g", oignon: "4", carotte: "240 g", olives: "120 g", ail: "8", laurier: "1.6 g", thym: "8 g", bouillon: "1200 ml", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, boeuf: "1080 g", oignon: "4½", carotte: "270 g", olives: "135 g", ail: "9", laurier: "1.8 g", thym: "9 g", bouillon: "1350 ml", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, boeuf: "1200 g", oignon: "5", carotte: "300 g", olives: "150 g", ail: "10", laurier: "2 g", thym: "10 g", bouillon: "1500 ml", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, boeuf: "1320 g", oignon: "5½", carotte: "330 g", olives: "165 g", ail: "11", laurier: "2.2 g", thym: "11 g", bouillon: "1650 ml", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, boeuf: "1440 g", oignon: "6", carotte: "360 g", olives: "180 g", ail: "12", laurier: "2.4 g", thym: "12 g", bouillon: "1800 ml", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, boeuf: "1560 g", oignon: "6½", carotte: "390 g", olives: "195 g", ail: "13", laurier: "2.6 g", thym: "13 g", bouillon: "1950 ml", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, boeuf: "1680 g", oignon: "7", carotte: "420 g", olives: "210 g", ail: "14", laurier: "2.8 g", thym: "14 g", bouillon: "2100 ml", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, boeuf: "1800 g", oignon: "7½", carotte: "450 g", olives: "225 g", ail: "15", laurier: "3 g", thym: "15 g", bouillon: "2250 ml", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍷", titre: "Mariner", detail: "Faites mariner la viande de taureau (ou de bœuf à braiser) une nuit dans du vin rouge avec l'oignon, l'ail, le laurier et le thym : elle s'attendrit et s'imprègne.", badge: null },
+      { icone: "🥩", titre: "Saisir", detail: "Égouttez la viande (gardez la marinade) et faites-la dorer de tous côtés dans l'huile d'olive chaude.", badge: null },
+      { icone: "🧅", titre: "Les légumes", detail: "Ajoutez l'oignon, l'ail et la carotte en morceaux, et faites revenir 3 min.", badge: null },
+      { icone: "🍷", titre: "Mouiller", detail: "Versez la marinade filtrée et le bouillon, ajoutez les herbes de Provence et une écorce d'orange, salez, et portez à frémissement.", badge: null },
+      { icone: "♨️", titre: "Mijoter longuement", detail: "Couvrez et laissez mijoter à feu très doux 2 h 30 à 3 h, jusqu'à ce que la viande soit ultra-fondante et la sauce sombre et sirupeuse.", badge: null },
+      { icone: "🫒", titre: "Les olives", detail: "Ajoutez les olives noires 15 min avant la fin, et laissez réduire la sauce si nécessaire.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez la gardiane avec du riz rouge de Camargue, qui absorbe la sauce. Robuste, parfumé et convivial — le plat des gardians de Camargue.", badge: null }
+    ]
+  },
 });

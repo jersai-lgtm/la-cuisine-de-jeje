@@ -62938,5 +62938,345 @@ window.RECETTES_EN = {
     "detail": "Serve scalding, in a large bowl, topped with coriander and spring onion. Comforting, spicy and customisable — the addictive express hotpot."
    }
   ]
+ },
+ "crumblepommes": {
+  "nom": "Apple Crumble",
+  "description": "Apple crumble — the ultimate comfort dessert: soft apples scented with cinnamon, crowned with a golden crunchy crumbly topping. Utterly simple and foolproof, enjoyed warm, alone or with a scoop of vanilla ice cream.",
+  "etapes": [
+   {
+    "titre": "Prepare the apples",
+    "detail": "Peel the apples, remove the cores and cut them into large dice. Choose varieties that soften (golden, russet) for a tender centre."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Mix the apple dice with the cinnamon, a little sugar and a squeeze of lemon. Spread them in a buttered baking dish."
+   },
+   {
+    "titre": "The crumble topping",
+    "detail": "With your fingertips, rub the flour, cold diced butter, the rest of the sugar and a pinch of salt, until the texture of large crumbs (without overworking, to keep the crunch)."
+   },
+   {
+    "titre": "Crumble on top",
+    "detail": "Spread the crumble topping in an irregular layer over the apples, without pressing: the crumbs should stay airy to crisp up well."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 30 to 35 minutes, until the top is golden and crunchy and the apples bubble at the edges."
+   },
+   {
+    "titre": "Check",
+    "detail": "The crumble is ready when the crust is well golden and the apples are soft (a blade goes through without resistance)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, alone or with a scoop of vanilla ice cream or a spoon of crème fraîche. The contrast of soft apples and crunchy crust is irresistible."
+   }
+  ]
+ },
+ "ficellepicarde": {
+  "nom": "Ficelle Picarde",
+  "description": "Ficelle picarde — the gratinéed crêpe of northern France: a savoury crêpe filled with ham and creamed mushrooms, rolled and baked under a creamy sauce. Generous and comforting, it's the iconic warm starter of Picardy.",
+  "etapes": [
+   {
+    "titre": "The crêpes",
+    "detail": "Make a savoury crêpe batter (flour, egg, milk, salt) and cook thin crêpes in a pan. Set aside."
+   },
+   {
+    "titre": "The mushrooms",
+    "detail": "Sauté the sliced mushrooms in the butter until they release their water and brown. Add a little cream to bind (creamy duxelles)."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place on each crêpe a slice of ham and a spoon of creamed mushrooms."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the filled crêpes into logs and pack them tightly in a buttered baking dish."
+   },
+   {
+    "titre": "Top",
+    "detail": "Cover the rolled crêpes with the rest of the cream and scatter with grated cheese."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Bake at 200°C for 15 minutes, until the top is golden and gratinéed and the cream bubbling."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, one ficelle per person, with a green salad. The generous, comforting warm starter of Picardy."
+   }
+  ]
+ },
+ "gardiane": {
+  "nom": "Bull Gardiane",
+  "description": "Gardiane de taureau — the Camargue bull stew: bull (or beef) meat slowly simmered in red wine with olives, carrots and Provençal herbs. Robust and fragrant, this herdsmen's dish is traditionally served with Camargue rice.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the bull (or braising beef) overnight in red wine with the onion, garlic, bay and thyme: it tenderises and infuses."
+   },
+   {
+    "titre": "Sear",
+    "detail": "Drain the meat (keep the marinade) and brown it on all sides in the hot olive oil."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the onion, garlic and carrot in pieces, and sauté 3 minutes."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in the strained marinade and the stock, add the Provençal herbs and a strip of orange peel, season, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer at length",
+    "detail": "Cover and simmer over very low heat for 2 hours 30 to 3 hours, until the meat is ultra-tender and the sauce dark and syrupy."
+   },
+   {
+    "titre": "The olives",
+    "detail": "Add the black olives 15 minutes before the end, and let the sauce reduce if needed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the gardiane with red Camargue rice, which soaks up the sauce. Robust, fragrant and convivial — the dish of the Camargue herdsmen."
+   }
+  ]
+ },
+ "charlotte": {
+  "nom": "Strawberry Charlotte",
+  "description": "Charlotte aux fraises — the light, indulgent summer dessert: a crown of ladyfingers enclosing a smooth strawberry mousse and fresh strawberries. Fresh, airy and spectacular, it always impresses, no baking.",
+  "etapes": [
+   {
+    "titre": "The strawberry purée",
+    "detail": "Blend half the strawberries with a little sugar and a squeeze of lemon into a smooth purée. Reserve a few whole strawberries for decoration."
+   },
+   {
+    "titre": "The mousse",
+    "detail": "Whip the well-chilled cream to soft peaks, then gently fold it into the fromage blanc and strawberry purée: an airy, pink mousse."
+   },
+   {
+    "titre": "Line the mould",
+    "detail": "Quickly dip the ladyfingers in a light syrup (water, sugar, strawberry juice) and line the sides of a charlotte mould, rounded side out."
+   },
+   {
+    "titre": "Build",
+    "detail": "Pour in a layer of strawberry mousse, add pieces of fresh strawberry, then a layer of soaked biscuits, and alternate to the top."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Cover and refrigerate at least 4 hours (ideally overnight): the mousse sets and the charlotte holds perfectly."
+   },
+   {
+    "titre": "Unmould",
+    "detail": "Gently turn out and tie a ribbon around it. The crown of biscuits holds the mousse."
+   },
+   {
+    "titre": "Decorate & serve",
+    "detail": "Decorate the top with fresh strawberries and mint. Serve well chilled — a light, indulgent, spectacular summer dessert, no baking."
+   }
+  ]
+ },
+ "kajukatli": {
+  "nom": "Kaju Katli",
+  "description": "Kaju katli — Indian cashew diamonds: thin melting lozenges of cashew paste and sugar, scented with cardamom and often topped with a silver leaf. A royal festive sweet, they're the essential treat of Diwali.",
+  "etapes": [
+   {
+    "titre": "The cashew powder",
+    "detail": "Grind the cashews into a fine powder (without turning them into an oily paste, by pulsing in bursts)."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Make a syrup with the sugar and a little water: boil to the 'thread' stage (a drop forms a thread between the fingers)."
+   },
+   {
+    "titre": "The paste",
+    "detail": "Add the cashew powder to the syrup while stirring constantly over low heat, with the cardamom, until a smooth paste forms that pulls away from the sides."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Pour the warm paste onto an oiled sheet of paper and roll it out thinly (about 3-4 mm) while still malleable."
+   },
+   {
+    "titre": "Silver leaf (optional)",
+    "detail": "Gently apply an edible silver leaf (vark) on top, the traditional festive touch."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Let cool slightly then cut into diamonds (katli = slice) with a knife."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let set completely before lifting the diamonds. Melting and delicate — the royal treat of Diwali, to gift or savour."
+   }
+  ]
+ },
+ "malpua": {
+  "nom": "Malpua",
+  "description": "Malpua — Indian syrup-soaked fried pancakes: small thick pancakes of flour and milk, fried until golden and crisp at the edges, then dipped in a cardamom-scented syrup. A rich, indulgent festival dessert.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Mix the flour with the milk (and a little semolina and mashed banana in some regions) into a smooth, fluid batter, like a thick crêpe batter. Let rest 30 minutes."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Make a sugar syrup scented with cardamom and saffron: boil the sugar and water to a slightly syrupy consistency. Keep warm."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat the oil (or ghee) in a pan over medium heat."
+   },
+   {
+    "titre": "Fry the malpua",
+    "detail": "Pour small ladles of batter into the oil: they spread into small thick pancakes. Fry them 1 to 2 minutes per side, until the edges are crisp and lacy."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Dip the hot malpua in the hot syrup for 1 to 2 minutes: they soak in while keeping crisp edges."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Lift out of the syrup and let drain slightly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, scattered with crushed pistachios, optionally with rabri (reduced milk). Rich, syrupy and crisp — an Indian festival dessert."
+   }
+  ]
+ },
+ "shrikhand": {
+  "nom": "Shrikhand",
+  "description": "Shrikhand — the Indian strained yogurt cream: a smooth, fresh dessert of strained yogurt, sweetened and scented with saffron, cardamom and pistachios. Mild, tangy and no-bake, it's the festive treat of Gujarat and Maharashtra.",
+  "etapes": [
+   {
+    "titre": "Strain the yogurt",
+    "detail": "Pour the (plain, full-fat) yogurt into a clean cloth and let it drain in the fridge for several hours (ideally overnight): it loses its whey and becomes thick and creamy (the chakka)."
+   },
+   {
+    "titre": "Infuse the saffron",
+    "detail": "Steep the saffron in a spoon of warm milk: it releases its golden colour and aroma."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Mix the strained yogurt with the icing sugar, whisking until perfectly smooth and the sugar dissolved."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Stir in the infused saffron and ground cardamom: they delicately colour and flavour the shrikhand."
+   },
+   {
+    "titre": "The nuts",
+    "detail": "Add some of the crushed pistachios, reserving the rest for decoration."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate at least 1 hour: shrikhand is enjoyed well chilled, thick and creamy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cold, scattered with pistachios and slivered almonds, with warm puris (Gujarati-style). Mild, tangy and refreshing — no baking."
+   }
+  ]
+ },
+ "sandesh": {
+  "nom": "Sandesh",
+  "description": "Sandesh — the fresh cheese sweet of Bengal: delicate discs of chhena (homemade fresh cheese) lightly sweetened and scented with cardamom, shaped by hand. Melting and refined, they're the emblem of Bengali sweets.",
+  "etapes": [
+   {
+    "titre": "The chhena",
+    "detail": "Use chhena (fresh unpressed paneer): curdle milk with a little lemon juice, drain the curds and press them lightly, keeping them moist and soft."
+   },
+   {
+    "titre": "Knead",
+    "detail": "Knead the chhena with the palm of your hand on the work surface, until it becomes perfectly smooth and creamy (the key step for a melting sandesh)."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the icing sugar and cardamom, and keep kneading to incorporate well."
+   },
+   {
+    "titre": "Cook lightly",
+    "detail": "Heat the mixture over very low heat for 3 to 5 minutes, stirring, until it slightly thickens and pulls away (don't overcook, or it hardens)."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Let cool slightly, then shape small discs or balls, or use a traditional decorative mould."
+   },
+   {
+    "titre": "Decorate",
+    "detail": "Decorate each sandesh with a piece of pistachio or almond, pressed in the centre."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Chill then serve. Melting, delicate and barely sweet — the refined emblem of Bengali sweets."
+   }
+  ]
+ },
+ "ladoo": {
+  "nom": "Besan Ladoo",
+  "description": "Besan ladoo — Indian festive balls: melting spheres of chickpea flour slowly toasted in ghee, sweetened and scented with cardamom, dotted with cashews. Rich and comforting, they're essential during festivals and offerings.",
+  "etapes": [
+   {
+    "titre": "Toast the flour",
+    "detail": "Toast the chickpea flour (besan) SLOWLY in the ghee over low heat, stirring constantly for 15 to 20 minutes: it goes from pale yellow to golden and develops a nutty aroma (the essential step, don't rush it)."
+   },
+   {
+    "titre": "Check",
+    "detail": "The besan is ready when well golden, loose, and strongly fragrant. The ghee slightly separates."
+   },
+   {
+    "titre": "Cool a little",
+    "detail": "Let the mixture cool off the heat for a few minutes (the icing sugar would melt in a too-hot mixture)."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the icing sugar and ground cardamom, and mix well: the mixture becomes homogeneous and shapeable."
+   },
+   {
+    "titre": "The cashews",
+    "detail": "Work in crushed toasted cashews for crunch."
+   },
+   {
+    "titre": "Shape",
+    "detail": "While the mixture is still warm and malleable, take portions and roll them firmly between your palms into smooth balls."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let the ladoos set and firm up as they cool. Melting, rich and fragrant — the Indian festive balls, to gift or savour."
+   }
+  ]
+ },
+ "arrozconleche": {
+  "nom": "Arroz con Leche",
+  "description": "Arroz con leche — Mexican rice pudding: tender rice simmered in sweet milk scented with cinnamon and lemon zest, dotted with raisins. Creamy, comforting and fragrant, this grandmother's dessert is enjoyed hot or cold.",
+  "etapes": [
+   {
+    "titre": "Par-cook the rice",
+    "detail": "Rinse the rice and par-cook it for a few minutes in a little water with a cinnamon stick and a strip of lemon zest, until the water is almost absorbed."
+   },
+   {
+    "titre": "Add the milk",
+    "detail": "Pour in the milk and bring to a simmer. Cook over low heat, stirring regularly so the rice doesn't stick."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Continue cooking for 20 to 25 minutes, until the rice is very tender and the milk creamy and slightly reduced."
+   },
+   {
+    "titre": "Sweeten",
+    "detail": "Add the sugar and let it dissolve while stirring for 5 minutes. The rice should stay creamy (it thickens as it cools)."
+   },
+   {
+    "titre": "The raisins",
+    "detail": "Add the raisins (plumped beforehand) and let them soak in for 2 minutes."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Remove the cinnamon and zest. The cinnamon and lemon aroma should be present but delicate."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot or cold, dusted with ground cinnamon. Creamy, comforting and fragrant — the Mexican grandmother's rice pudding."
+   }
+  ]
  }
 };
