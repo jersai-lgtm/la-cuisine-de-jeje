@@ -61578,5 +61578,345 @@ window.RECETTES_EN = {
     "detail": "Serve the ayam bakar with rice, sambal (chilli sauce) and raw vegetables. Tender, smoky and sweet-savoury — a warung treat."
    }
   ]
+ },
+ "tlayudas": {
+  "nom": "Tlayudas",
+  "description": "Tlayudas — the 'pizza' of Oaxaca: a large crispy tortilla spread with black beans, topped with cheese, avocado, raw vegetables and meat, then grilled. Generous and convivial, it's the iconic street food of southern Mexico.",
+  "etapes": [
+   {
+    "titre": "The tortilla",
+    "detail": "Make a large thin corn tortilla (from corn flour and water) and dry it on a griddle until soft then crisp."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Mash the beans (black preferably) into a thick purée (refritos), seasoned with onion and cumin, and spread it over the tortilla."
+   },
+   {
+    "titre": "The cheese",
+    "detail": "Scatter with grated cheese (quesillo in Oaxaca, or a stringy mozzarella or fresh cheese)."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Pass the tlayuda over the grill or griddle until the cheese melts and the tortilla is crisp."
+   },
+   {
+    "titre": "Top",
+    "detail": "Top with avocado slices, tomato, shredded lettuce and onion, and optionally grilled meat (tasajo, chorizo)."
+   },
+   {
+    "titre": "Spice it up",
+    "detail": "Add a hot sauce (salsa) to taste and a squeeze of lime."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fold the tlayuda in half or serve it open, to share. Crisp, generous and fresh — southern Mexico on a plate."
+   }
+  ]
+ },
+ "tostadas": {
+  "nom": "Tostadas",
+  "description": "Tostadas — crispy topped tortillas: corn flatbreads fried until crunchy, spread with beans and crowned with chicken, raw vegetables, avocado and cream. Fresh, crunchy and colourful, a build-it-yourself Mexican snack.",
+  "etapes": [
+   {
+    "titre": "The tostadas",
+    "detail": "Make small corn tortillas and fry them (or oven-bake) until flat, golden and crisp."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Spread each tostada with a layer of warm mashed beans (refritos)."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Shred cooked chicken (or tinga) and spread it over the beans."
+   },
+   {
+    "titre": "The raw vegetables",
+    "detail": "Add shredded lettuce, diced tomato and sliced avocado."
+   },
+   {
+    "titre": "The topping",
+    "detail": "Scatter with crumbled fresh cheese and drizzle with cream (crema)."
+   },
+   {
+    "titre": "Spice it up",
+    "detail": "Add a hot sauce (salsa) and a squeeze of lime to taste."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, to bite into (careful, it cracks!). Fresh, crunchy and built to taste."
+   }
+  ]
+ },
+ "conchas": {
+  "nom": "Conchas",
+  "description": "Conchas — Mexican shell brioches: soft brioches topped with a crunchy sweet crust scored in a shell shape. Colourful (vanilla, chocolate, pink), they're the king sweet bread (pan dulce) of the Mexican breakfast.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Dissolve the yeast in the warm milk, then mix with the flour, half the sugar, the egg and half the butter. Knead at length until smooth and elastic."
+   },
+   {
+    "titre": "1st rise",
+    "detail": "Cover and let rise 1 hour to 1 hour 30, until the dough doubles in volume."
+   },
+   {
+    "titre": "The crust",
+    "detail": "Make the crust: mix butter, icing sugar and flour (and cocoa for the chocolate version) into a malleable paste, like modelling clay."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Shape balls of brioche dough and place them on a tray. Flatten the crust paste into discs and place one on each ball."
+   },
+   {
+    "titre": "The shell",
+    "detail": "Score the crust with shell-shaped lines using a knife or a special cutter (the signature pattern of conchas)."
+   },
+   {
+    "titre": "2nd rise",
+    "detail": "Let rise again 45 minutes, until the conchas are well puffed."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 180°C for 15 to 18 minutes, until the brioche is cooked and the crust crunchy. Let cool before enjoying, with a hot chocolate."
+   }
+  ]
+ },
+ "feijaotropeiro": {
+  "nom": "Feijão Tropeiro",
+  "description": "Feijão tropeiro — the muleteers' dish of Minas Gerais: beans sautéed with bacon, egg, cabbage and toasted cassava flour (farofa). Rustic, filling and crunchy, it's a comforting pillar of Brazilian cuisine.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Use cooked beans (black or brown, drained). They should be firm and well drained so as not to make the dish soggy."
+   },
+   {
+    "titre": "Bacon",
+    "detail": "Fry the bacon lardons in the oil until golden and crisp, then add the sliced onion and garlic."
+   },
+   {
+    "titre": "The cabbage",
+    "detail": "Add the very finely sliced cabbage (couve) and sauté 2 minutes so it stays green and slightly crunchy."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Push everything to one side, crack the egg into the free space and scramble it quickly, then mix."
+   },
+   {
+    "titre": "The beans",
+    "detail": "Add the drained beans and sauté to reheat and coat them."
+   },
+   {
+    "titre": "The farofa",
+    "detail": "Add the toasted cassava flour (farofa) and mix: it absorbs the fat and brings the characteristic crunch. Salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with rice, a grilled sausage or meat. Rustic, filling and crunchy — the comfort of Minas."
+   }
+  ]
+ },
+ "hallaca": {
+  "nom": "Hallaca",
+  "description": "Hallaca — the Venezuelan Christmas tamale: an annatto-coloured corn dough filled with a simmered stew (chicken, pork, olives, raisins), wrapped in a banana leaf and boiled. The iconic festive dish of the Venezuelan holidays.",
+  "etapes": [
+   {
+    "titre": "The guiso (the day before)",
+    "detail": "Make the stew: simmer the chicken and pork with the onion, pepper, tomato and spices, until the meat is tender and the sauce thick. Chill overnight."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the pre-cooked corn flour (masarepa) with annatto-coloured broth (achiote) and a little oil, into a soft, yellow-orange dough."
+   },
+   {
+    "titre": "Prepare the leaves",
+    "detail": "Pass the banana leaves over a flame to soften them, then lightly oil them."
+   },
+   {
+    "titre": "Spread the dough",
+    "detail": "Spread a thin layer of dough in the centre of each leaf."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a spoon of guiso, then decorate with olives, raisins, capers and strips of pepper (the traditional 'adornos')."
+   },
+   {
+    "titre": "Fold",
+    "detail": "Fold the banana leaf around the filling into a well-closed rectangular parcel, and tie it."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Boil the hallacas for 45 minutes to 1 hour. Let rest before opening: the festive dish of the Venezuelan Christmas, to share with family."
+   }
+  ]
+ },
+ "roti": {
+  "nom": "Trinidad Roti",
+  "description": "Roti — the curry wrap of Trinidad: a soft flatbread (dhalpuri, filled with split peas) wrapped around a chicken and potato curry. Spicy, generous and comforting, it's the iconic street food of the Indo-Trinidadian Caribbean.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, salt and water into a soft dough. Knead and rest 30 minutes."
+   },
+   {
+    "titre": "The split pea filling",
+    "detail": "Cook the split peas (or chickpeas) until they fall apart, season with cumin and garlic, and grind to a coarse powder (for the dhalpuri)."
+   },
+   {
+    "titre": "The dhalpuri",
+    "detail": "Roll out discs of dough, fill them with split-pea powder, close and gently roll out again. Cook on a griddle (tawa) with a little oil, until the flatbread is soft and speckled."
+   },
+   {
+    "titre": "The curry",
+    "detail": "Sauté the curry (madras) and turmeric in the oil, add the chicken and potatoes in pieces, and add water. Simmer 25 minutes until tender and the sauce thick."
+   },
+   {
+    "titre": "Spice it up",
+    "detail": "Add chilli (scotch bonnet) to taste: Trinidad curry is generously spiced."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Place a good ladle of curry in the centre of the warm dhalpuri roti."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fold the roti around the curry, like a large wrap, and serve at once. Spicy, soft and hearty — the lunch of Trinidad."
+   }
+  ]
+ },
+ "pepperpot": {
+  "nom": "Pepperpot",
+  "description": "Pepperpot — the black stew of Guyana: meat slowly simmered in a dark, sweet-spicy sauce with cassareep (cassava molasses), cinnamon and clove. Rich, deep and fragrant, it's the iconic dish of the Guyanese Christmas.",
+  "etapes": [
+   {
+    "titre": "Sear the meat",
+    "detail": "Brown the beef pieces on all sides in a pot, to develop the flavours."
+   },
+   {
+    "titre": "The cassareep",
+    "detail": "Add the cassareep (cassava molasses, or soy sauce + molasses or caramelised brown sugar): it gives the dark colour and unique taste of pepperpot."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the cinnamon, clove, thyme, onion and chilli (whole scotch bonnet, for aroma without too much heat)."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Pour in the stock and a little water, season, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer at length",
+    "detail": "Cover and simmer over very low heat for 2 hours to 2 hours 30, until the meat is ultra-tender and the sauce dark and syrupy."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover at the end and let reduce until the sauce coats and glazes the meat a deep, glossy brown."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the pepperpot with homemade bread (plait bread) or rice. The cassareep preserves it: traditionally it's simmered and reheated for several days at Christmas."
+   }
+  ]
+ },
+ "stewchicken": {
+  "nom": "Brown Stew Chicken",
+  "description": "Brown stew chicken — the Caribbean braised chicken: chicken marinated then caramelised in brown sugar (browning), simmered with thyme, chilli and vegetables. Tender, glossy brown and fragrant, it's a Jamaican Sunday staple.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the chicken with garlic, thyme, soy sauce, chilli and onion, for at least 1 hour (ideally overnight)."
+   },
+   {
+    "titre": "The browning",
+    "detail": "Melt the sugar in the hot oil into a dark brown caramel (the 'browning'): it gives the characteristic brown colour and taste."
+   },
+   {
+    "titre": "Caramelise the chicken",
+    "detail": "Colour the chicken pieces in the brown caramel, on all sides."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the onion, garlic, thyme, tomato and chilli (whole scotch bonnet), and sauté 2 minutes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pour in a little water, cover and simmer 25 minutes over low heat, until the chicken is tender."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Uncover and let the sauce reduce until it coats the chicken in a glossy brown."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice and peas and plantains. Tender, brown and fragrant — the Jamaican Sunday."
+   }
+  ]
+ },
+ "macaronipie": {
+  "nom": "Macaroni Pie",
+  "description": "Macaroni pie — the Caribbean macaroni gratin: macaroni bound in a creamy cheese-and-egg custard, baked until it forms a firm golden 'pie' that cuts into slices. The essential Sunday side of Trinidad.",
+  "etapes": [
+   {
+    "titre": "Cook the pasta",
+    "detail": "Cook the macaroni al dente in salted water, then drain."
+   },
+   {
+    "titre": "The custard",
+    "detail": "Beat the egg with the milk, mustard, very finely grated onion, salt and pepper. Add most of the grated cheese."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix the hot macaroni with the butter then with the cheese custard, until everything is well coated and creamy."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Pour into a buttered baking dish and press well: this lets the macaroni pie hold together and cut into slices."
+   },
+   {
+    "titre": "Gratinate",
+    "detail": "Scatter the rest of the cheese on top for a golden crust."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 190°C for 25 to 30 minutes, until the top is golden and the whole set."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let rest 10 minutes before cutting into slices (like a pie). Serve with chicken, fish or a salad. The Caribbean Sunday."
+   }
+  ]
+ },
+ "phulourie": {
+  "nom": "Phulourie",
+  "description": "Phulourie — the split pea fritters of Trinidad: little fried balls of spiced split pea flour, crisp outside and soft inside. Served with a mango or tamarind chutney, it's the quintessential Caribbean street snack.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Mix the split pea flour (or chickpea flour) with the flour, turmeric, cumin, crushed garlic, chilli, yeast and salt."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Add water little by little while whisking, until you have a thick, smooth batter, like a fritter batter."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Cover and let rest 15 to 20 minutes: the yeast slightly puffs the batter, for softer fritters."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat the frying oil to 170°C."
+   },
+   {
+    "titre": "Form the balls",
+    "detail": "Using two spoons (or damp hands), form small balls of batter and drop them into the hot oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry for 3 to 4 minutes, turning, until the phulourie are golden, puffed and crisp. Drain."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with a mango, tamarind or coriander chutney for dipping. The crisp Caribbean street snack of Trinidad."
+   }
+  ]
  }
 };

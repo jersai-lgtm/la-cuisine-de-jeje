@@ -6900,4 +6900,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, brûlant, à croquer par la queue. La street-food d'hiver coréenne réconfortante, parfaite avec un thé chaud.", badge: null }
     ]
   },
+  conchas: {
+    dateAjout: "2026-07-10T09:02:00",
+    nom: "Conchas",
+    cat: "desserts", pays: "mexique",
+    base: 4,
+    temps: "3h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🐚",
+    description: "Conchas — les brioches coquillage mexicaines : de moelleuses brioches recouvertes d'une craquante croûte sucrée striée en forme de coquillage. Colorées (vanille, chocolat, rose), elles sont le pain sucré (pan dulce) roi du petit-déjeuner mexicain.",
+    tableauConchas: [
+      { nb: 1, farine: "45 g", sucre: "20 g", beurre: "12 g", oeufs: "¼", levure: "2 g", lait: "20 ml", cacao: "3 g" },
+      { nb: 2, farine: "90 g", sucre: "40 g", beurre: "24 g", oeufs: "½", levure: "4 g", lait: "40 ml", cacao: "6 g" },
+      { nb: 3, farine: "135 g", sucre: "60 g", beurre: "36 g", oeufs: "¾", levure: "6 g", lait: "60 ml", cacao: "9 g" },
+      { nb: 4, farine: "180 g", sucre: "80 g", beurre: "48 g", oeufs: "1", levure: "8 g", lait: "80 ml", cacao: "12 g" },
+      { nb: 5, farine: "225 g", sucre: "100 g", beurre: "60 g", oeufs: "1¼", levure: "10 g", lait: "100 ml", cacao: "15 g" },
+      { nb: 6, farine: "270 g", sucre: "120 g", beurre: "72 g", oeufs: "1½", levure: "12 g", lait: "120 ml", cacao: "18 g" },
+      { nb: 7, farine: "315 g", sucre: "140 g", beurre: "84 g", oeufs: "1¾", levure: "14 g", lait: "140 ml", cacao: "21 g" },
+      { nb: 8, farine: "360 g", sucre: "160 g", beurre: "96 g", oeufs: "2", levure: "16 g", lait: "160 ml", cacao: "24 g" },
+      { nb: 9, farine: "405 g", sucre: "180 g", beurre: "108 g", oeufs: "2¼", levure: "18 g", lait: "180 ml", cacao: "27 g" },
+      { nb: 10, farine: "450 g", sucre: "200 g", beurre: "120 g", oeufs: "2½", levure: "20 g", lait: "200 ml", cacao: "30 g" },
+      { nb: 11, farine: "495 g", sucre: "220 g", beurre: "132 g", oeufs: "2¾", levure: "22 g", lait: "220 ml", cacao: "33 g" },
+      { nb: 12, farine: "540 g", sucre: "240 g", beurre: "144 g", oeufs: "3", levure: "24 g", lait: "240 ml", cacao: "36 g" },
+      { nb: 13, farine: "585 g", sucre: "260 g", beurre: "156 g", oeufs: "3¼", levure: "26 g", lait: "260 ml", cacao: "39 g" },
+      { nb: 14, farine: "630 g", sucre: "280 g", beurre: "168 g", oeufs: "3½", levure: "28 g", lait: "280 ml", cacao: "42 g" },
+      { nb: 15, farine: "675 g", sucre: "300 g", beurre: "180 g", oeufs: "3¾", levure: "30 g", lait: "300 ml", cacao: "45 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "La pâte", detail: "Délayez la levure dans le lait tiède, puis mélangez avec la farine, la moitié du sucre, l'œuf et la moitié du beurre. Pétrissez longuement jusqu'à obtenir une pâte lisse et élastique.", badge: null },
+      { icone: "⏳", titre: "1re pousse", detail: "Couvrez et laissez lever 1 h à 1 h 30, jusqu'à ce que la pâte double de volume.", badge: null },
+      { icone: "🎨", titre: "La croûte", detail: "Préparez la croûte : mélangez du beurre, du sucre glace et de la farine (et du cacao pour la version chocolat) en une pâte malléable, comme une pâte à modeler.", badge: null },
+      { icone: "⚪", titre: "Façonner", detail: "Façonnez des boules de pâte à brioche et déposez-les sur une plaque. Aplatissez la pâte de croûte en disques et posez-en un sur chaque boule.", badge: null },
+      { icone: "🐚", titre: "Le coquillage", detail: "Marquez la croûte de stries en forme de coquillage à l'aide d'un couteau ou d'un emporte-pièce spécial (le motif signature des conchas).", badge: null },
+      { icone: "⏳", titre: "2e pousse", detail: "Laissez lever à nouveau 45 min, jusqu'à ce que les conchas soient bien gonflées.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C 15 à 18 min, jusqu'à ce que la brioche soit cuite et la croûte craquante. Laissez tiédir avant de déguster, avec un chocolat chaud.", badge: null }
+    ]
+  },
 });

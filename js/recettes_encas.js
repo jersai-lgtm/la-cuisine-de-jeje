@@ -4069,4 +4069,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, croustillant et laqué, en apéritif ou avec du riz et du radis mariné. Le poulet frit coréen irrésistible.", badge: null }
     ]
   },
+  tostadas: {
+    dateAjout: "2026-07-10T09:01:00",
+    nom: "Tostadas",
+    cat: "encas", pays: "mexique",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🌮",
+    description: "Tostadas — les tortillas croustillantes garnies : des galettes de maïs frites jusqu'à être craquantes, tartinées de haricots et couronnées de poulet, de crudités, d'avocat et de crème. Fraîches, croquantes et colorées, un en-cas mexicain à composer.",
+    tableauTostadas: [
+      { nb: 1, farinemais: "40 g", haricotsrouges: "30 g", poulet: "40 g", salade: "20 g", tomates: "½", avocat: "20 g", fromage: "15 g", creme: "15 g", sel: "1 g" },
+      { nb: 2, farinemais: "80 g", haricotsrouges: "60 g", poulet: "80 g", salade: "40 g", tomates: "1", avocat: "40 g", fromage: "30 g", creme: "30 g", sel: "2 g" },
+      { nb: 3, farinemais: "120 g", haricotsrouges: "90 g", poulet: "120 g", salade: "60 g", tomates: "1½", avocat: "60 g", fromage: "45 g", creme: "45 g", sel: "3 g" },
+      { nb: 4, farinemais: "160 g", haricotsrouges: "120 g", poulet: "160 g", salade: "80 g", tomates: "2", avocat: "80 g", fromage: "60 g", creme: "60 g", sel: "4 g" },
+      { nb: 5, farinemais: "200 g", haricotsrouges: "150 g", poulet: "200 g", salade: "100 g", tomates: "2½", avocat: "100 g", fromage: "75 g", creme: "75 g", sel: "5 g" },
+      { nb: 6, farinemais: "240 g", haricotsrouges: "180 g", poulet: "240 g", salade: "120 g", tomates: "3", avocat: "120 g", fromage: "90 g", creme: "90 g", sel: "6 g" },
+      { nb: 7, farinemais: "280 g", haricotsrouges: "210 g", poulet: "280 g", salade: "140 g", tomates: "3½", avocat: "140 g", fromage: "105 g", creme: "105 g", sel: "7 g" },
+      { nb: 8, farinemais: "320 g", haricotsrouges: "240 g", poulet: "320 g", salade: "160 g", tomates: "4", avocat: "160 g", fromage: "120 g", creme: "120 g", sel: "8 g" },
+      { nb: 9, farinemais: "360 g", haricotsrouges: "270 g", poulet: "360 g", salade: "180 g", tomates: "4½", avocat: "180 g", fromage: "135 g", creme: "135 g", sel: "9 g" },
+      { nb: 10, farinemais: "400 g", haricotsrouges: "300 g", poulet: "400 g", salade: "200 g", tomates: "5", avocat: "200 g", fromage: "150 g", creme: "150 g", sel: "10 g" },
+      { nb: 11, farinemais: "440 g", haricotsrouges: "330 g", poulet: "440 g", salade: "220 g", tomates: "5½", avocat: "220 g", fromage: "165 g", creme: "165 g", sel: "11 g" },
+      { nb: 12, farinemais: "480 g", haricotsrouges: "360 g", poulet: "480 g", salade: "240 g", tomates: "6", avocat: "240 g", fromage: "180 g", creme: "180 g", sel: "12 g" },
+      { nb: 13, farinemais: "520 g", haricotsrouges: "390 g", poulet: "520 g", salade: "260 g", tomates: "6½", avocat: "260 g", fromage: "195 g", creme: "195 g", sel: "13 g" },
+      { nb: 14, farinemais: "560 g", haricotsrouges: "420 g", poulet: "560 g", salade: "280 g", tomates: "7", avocat: "280 g", fromage: "210 g", creme: "210 g", sel: "14 g" },
+      { nb: 15, farinemais: "600 g", haricotsrouges: "450 g", poulet: "600 g", salade: "300 g", tomates: "7½", avocat: "300 g", fromage: "225 g", creme: "225 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫓", titre: "Les tostadas", detail: "Préparez de petites tortillas de maïs et faites-les frire (ou passer au four) jusqu'à ce qu'elles soient plates, dorées et croustillantes.", badge: null },
+      { icone: "🫘", titre: "Les haricots", detail: "Tartinez chaque tostada d'une couche de haricots écrasés (refritos) tièdes.", badge: null },
+      { icone: "🐔", titre: "Le poulet", detail: "Effilochez du poulet cuit (ou du tinga) et répartissez-le sur les haricots.", badge: null },
+      { icone: "🥬", titre: "Les crudités", detail: "Ajoutez de la salade émincée, des dés de tomate et de l'avocat en tranches.", badge: null },
+      { icone: "🧀", titre: "La garniture", detail: "Parsemez de fromage frais émietté et nappez d'un filet de crème (crema).", badge: null },
+      { icone: "🌶️", titre: "Relever", detail: "Ajoutez une sauce piquante (salsa) et un trait de citron vert selon le goût.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, à croquer à pleines dents (attention, ça se casse !). Fraîches, croquantes et à composer selon les envies.", badge: null }
+    ]
+  },
+  phulourie: {
+    dateAjout: "2026-07-10T09:09:00",
+    nom: "Phulourie",
+    cat: "encas", pays: "trinite",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🍡",
+    description: "Phulourie — les beignets de pois cassés de Trinidad : de petites boules frites à base de farine de pois cassés épicée, croustillantes dehors et moelleuses dedans. Servies avec un chutney de mangue ou de tamarin, c'est le en-cas de rue caraïbe par excellence.",
+    tableauPhulourie: [
+      { nb: 1, farine: "30 g", poischiches: "20 g", curcuma: "1 g", cumin: "1 g", ail: "1", piment: "0.5 g", levure: "1 g", huilefriture: "15 ml", sel: "2 g" },
+      { nb: 2, farine: "60 g", poischiches: "40 g", curcuma: "2 g", cumin: "2 g", ail: "2", piment: "1 g", levure: "2 g", huilefriture: "30 ml", sel: "4 g" },
+      { nb: 3, farine: "90 g", poischiches: "60 g", curcuma: "3 g", cumin: "3 g", ail: "3", piment: "1.5 g", levure: "3 g", huilefriture: "45 ml", sel: "6 g" },
+      { nb: 4, farine: "120 g", poischiches: "80 g", curcuma: "4 g", cumin: "4 g", ail: "4", piment: "2 g", levure: "4 g", huilefriture: "60 ml", sel: "8 g" },
+      { nb: 5, farine: "150 g", poischiches: "100 g", curcuma: "5 g", cumin: "5 g", ail: "5", piment: "2.5 g", levure: "5 g", huilefriture: "75 ml", sel: "10 g" },
+      { nb: 6, farine: "180 g", poischiches: "120 g", curcuma: "6 g", cumin: "6 g", ail: "6", piment: "3 g", levure: "6 g", huilefriture: "90 ml", sel: "12 g" },
+      { nb: 7, farine: "210 g", poischiches: "140 g", curcuma: "7 g", cumin: "7 g", ail: "7", piment: "3.5 g", levure: "7 g", huilefriture: "105 ml", sel: "14 g" },
+      { nb: 8, farine: "240 g", poischiches: "160 g", curcuma: "8 g", cumin: "8 g", ail: "8", piment: "4 g", levure: "8 g", huilefriture: "120 ml", sel: "16 g" },
+      { nb: 9, farine: "270 g", poischiches: "180 g", curcuma: "9 g", cumin: "9 g", ail: "9", piment: "4.5 g", levure: "9 g", huilefriture: "135 ml", sel: "18 g" },
+      { nb: 10, farine: "300 g", poischiches: "200 g", curcuma: "10 g", cumin: "10 g", ail: "10", piment: "5 g", levure: "10 g", huilefriture: "150 ml", sel: "20 g" },
+      { nb: 11, farine: "330 g", poischiches: "220 g", curcuma: "11 g", cumin: "11 g", ail: "11", piment: "5.5 g", levure: "11 g", huilefriture: "165 ml", sel: "22 g" },
+      { nb: 12, farine: "360 g", poischiches: "240 g", curcuma: "12 g", cumin: "12 g", ail: "12", piment: "6 g", levure: "12 g", huilefriture: "180 ml", sel: "24 g" },
+      { nb: 13, farine: "390 g", poischiches: "260 g", curcuma: "13 g", cumin: "13 g", ail: "13", piment: "6.5 g", levure: "13 g", huilefriture: "195 ml", sel: "26 g" },
+      { nb: 14, farine: "420 g", poischiches: "280 g", curcuma: "14 g", cumin: "14 g", ail: "14", piment: "7 g", levure: "14 g", huilefriture: "210 ml", sel: "28 g" },
+      { nb: 15, farine: "450 g", poischiches: "300 g", curcuma: "15 g", cumin: "15 g", ail: "15", piment: "7.5 g", levure: "15 g", huilefriture: "225 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "La base", detail: "Mélangez la farine de pois cassés (ou de la farine de pois chiche) avec la farine, le curcuma, le cumin, l'ail écrasé, le piment, la levure et le sel.", badge: null },
+      { icone: "💧", titre: "La pâte", detail: "Ajoutez de l'eau petit à petit en fouettant, jusqu'à obtenir une pâte épaisse et lisse, comme une pâte à beignet.", badge: null },
+      { icone: "⏳", titre: "Reposer", detail: "Couvrez et laissez reposer 15 à 20 min : la levure fait légèrement gonfler la pâte, pour des beignets plus moelleux.", badge: null },
+      { icone: "🔥", titre: "Chauffer l'huile", detail: "Faites chauffer l'huile de friture à 170°C.", badge: null },
+      { icone: "🥄", titre: "Former les boules", detail: "À l'aide de deux cuillères (ou des mains humides), formez de petites boules de pâte et laissez-les tomber dans l'huile chaude.", badge: null },
+      { icone: "🟤", titre: "Frire", detail: "Faites frire 3 à 4 min en les retournant, jusqu'à ce que les phulourie soient dorées, gonflées et croustillantes. Égouttez.", badge: null },
+      { icone: "🥭", titre: "Servir", detail: "Servez chaud avec un chutney de mangue, de tamarin ou de coriandre pour tremper. Le en-cas de rue croustillant de Trinidad.", badge: null }
+    ]
+  },
 });
