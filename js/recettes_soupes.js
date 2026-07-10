@@ -3663,4 +3663,41 @@ Object.assign(recettes, {
       { icone: "🍚", titre: "Servir", detail: "Servez bien chaud, avec un bol de riz blanc. La soupe d'anniversaire coréenne, légère et nourrissante.", badge: null }
     ]
   },
+  bulalo: {
+    dateAjout: "2026-07-10T08:54:00",
+    nom: "Bulalo",
+    cat: "soupes", pays: "philippines",
+    base: 4,
+    temps: "2h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Bulalo — la soupe de jarret de bœuf philippine : un bouillon clair et riche, obtenu en mijotant longuement du jarret de bœuf à l'os à moelle, avec du maïs, du chou et des pommes de terre. Réconfortante et généreuse, la soupe des hautes terres de Batangas.",
+    tableauBulalo: [
+      { nb: 1, boeuf: "100 g", chou: "40 g", mais: "40 g", pommedeterre: "40 g", oignon: "¼", poireau: "20 g", bouillon: "250 ml", sel: "2 g" },
+      { nb: 2, boeuf: "200 g", chou: "80 g", mais: "80 g", pommedeterre: "80 g", oignon: "½", poireau: "40 g", bouillon: "500 ml", sel: "4 g" },
+      { nb: 3, boeuf: "300 g", chou: "120 g", mais: "120 g", pommedeterre: "120 g", oignon: "¾", poireau: "60 g", bouillon: "750 ml", sel: "6 g" },
+      { nb: 4, boeuf: "400 g", chou: "160 g", mais: "160 g", pommedeterre: "160 g", oignon: "1", poireau: "80 g", bouillon: "1000 ml", sel: "8 g" },
+      { nb: 5, boeuf: "500 g", chou: "200 g", mais: "200 g", pommedeterre: "200 g", oignon: "1¼", poireau: "100 g", bouillon: "1250 ml", sel: "10 g" },
+      { nb: 6, boeuf: "600 g", chou: "240 g", mais: "240 g", pommedeterre: "240 g", oignon: "1½", poireau: "120 g", bouillon: "1500 ml", sel: "12 g" },
+      { nb: 7, boeuf: "700 g", chou: "280 g", mais: "280 g", pommedeterre: "280 g", oignon: "1¾", poireau: "140 g", bouillon: "1750 ml", sel: "14 g" },
+      { nb: 8, boeuf: "800 g", chou: "320 g", mais: "320 g", pommedeterre: "320 g", oignon: "2", poireau: "160 g", bouillon: "2000 ml", sel: "16 g" },
+      { nb: 9, boeuf: "900 g", chou: "360 g", mais: "360 g", pommedeterre: "360 g", oignon: "2¼", poireau: "180 g", bouillon: "2250 ml", sel: "18 g" },
+      { nb: 10, boeuf: "1000 g", chou: "400 g", mais: "400 g", pommedeterre: "400 g", oignon: "2½", poireau: "200 g", bouillon: "2500 ml", sel: "20 g" },
+      { nb: 11, boeuf: "1100 g", chou: "440 g", mais: "440 g", pommedeterre: "440 g", oignon: "2¾", poireau: "220 g", bouillon: "2750 ml", sel: "22 g" },
+      { nb: 12, boeuf: "1200 g", chou: "480 g", mais: "480 g", pommedeterre: "480 g", oignon: "3", poireau: "240 g", bouillon: "3000 ml", sel: "24 g" },
+      { nb: 13, boeuf: "1300 g", chou: "520 g", mais: "520 g", pommedeterre: "520 g", oignon: "3¼", poireau: "260 g", bouillon: "3250 ml", sel: "26 g" },
+      { nb: 14, boeuf: "1400 g", chou: "560 g", mais: "560 g", pommedeterre: "560 g", oignon: "3½", poireau: "280 g", bouillon: "3500 ml", sel: "28 g" },
+      { nb: 15, boeuf: "1500 g", chou: "600 g", mais: "600 g", pommedeterre: "600 g", oignon: "3¾", poireau: "300 g", bouillon: "3750 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "Blanchir le jarret", detail: "Faites blanchir le jarret de bœuf (avec l'os à moelle) 5 min à l'eau bouillante, puis jetez cette eau et rincez : le bouillon sera plus clair.", badge: null },
+      { icone: "🍲", titre: "Le bouillon", detail: "Remettez le jarret dans une grande marmite, couvrez de bouillon et d'eau, ajoutez l'oignon, et portez à frémissement en écumant régulièrement.", badge: null },
+      { icone: "♨️", titre: "Longue cuisson", detail: "Laissez mijoter à feu doux 2 h à 2 h 30, jusqu'à ce que la viande soit ultra-fondante et se détache de l'os, et la moelle fondante.", badge: null },
+      { icone: "🌽", titre: "Le maïs", detail: "Ajoutez le maïs en tronçons et la pomme de terre, et poursuivez la cuisson 20 min.", badge: null },
+      { icone: "🥬", titre: "Le chou", detail: "Ajoutez le chou et le poireau en fin de cuisson, et laissez cuire 8 min pour qu'ils restent verts et croquants.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Salez et poivrez le bouillon. Il doit être clair, riche et parfumé, avec la moelle qui fond dedans.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez le bulalo brûlant, avec la viande, la moelle, les légumes et le bouillon, accompagné de riz et d'une sauce nuoc-mâm au citron. Réconfortant.", badge: null }
+    ]
+  },
 });

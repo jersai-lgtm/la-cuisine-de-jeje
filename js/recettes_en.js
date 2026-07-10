@@ -61238,5 +61238,345 @@ window.RECETTES_EN = {
     "detail": "Serve at once, piping hot, to bite from the tail. The comforting Korean winter street food, perfect with a hot tea."
    }
   ]
+ },
+ "chaca": {
+  "nom": "Chả Cá",
+  "description": "Chả cá Lã Vọng — Hanoi turmeric and dill fish: fish pieces marinated in turmeric, seared with a profusion of dill and spring onion, served over vermicelli with peanuts. An iconic, fragrant dish of northern Vietnam.",
+  "etapes": [
+   {
+    "titre": "Marinate the fish",
+    "detail": "Cut the fish (ideally a firm white fish) into large pieces and marinate with the turmeric, a little fish sauce, ginger and garlic. Leave 30 minutes: it takes on a lovely golden colour."
+   },
+   {
+    "titre": "The vermicelli",
+    "detail": "Soak then cook the rice vermicelli (bún) per the packet, rinse in cold water and drain."
+   },
+   {
+    "titre": "Sear the fish",
+    "detail": "Sear the fish pieces in the hot oil, until golden and just cooked, turning gently."
+   },
+   {
+    "titre": "The dill & spring onion",
+    "detail": "Add a large quantity of dill and spring onion cut into lengths, and let them wilt for a few seconds in the hot oil: they soften while keeping their bright aroma."
+   },
+   {
+    "titre": "Peanuts",
+    "detail": "Toast the peanuts and coarsely crush them."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Make a nuoc mam sauce: fish sauce, lime, sugar, garlic and chilli, loosened with water."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the fish and herbs over the vermicelli, scattered with peanuts, with the nuoc mam sauce to pour. A fragrant, convivial dish."
+   }
+  ]
+ },
+ "bunthitnuong": {
+  "nom": "Bún Thịt Nướng",
+  "description": "Bún thịt nướng — the grilled pork vermicelli bowl: cold rice vermicelli topped with marinated grilled pork, crunchy raw vegetables, fresh herbs and peanuts, drizzled with nuoc mam sauce. Fresh, fragrant and balanced, a southern Vietnam classic.",
+  "etapes": [
+   {
+    "titre": "Marinate the pork",
+    "detail": "Cut the pork into thin strips and marinate with garlic, fish sauce, sugar, a little oil and lemongrass. Leave 30 minutes (ideally overnight)."
+   },
+   {
+    "titre": "The vermicelli",
+    "detail": "Cook the rice vermicelli, rinse in cold water and drain: it's served cold or warm."
+   },
+   {
+    "titre": "The raw vegetables",
+    "detail": "Slice the lettuce, grate the carrot, cut the cucumber into sticks. Prepare fresh herbs (mint, coriander)."
+   },
+   {
+    "titre": "Grill the pork",
+    "detail": "Grill the marinated pork over high heat (griddle, grill or pan), until caramelised and lightly charred at the edges."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Mix the fish sauce, lime juice, sugar, garlic and water: the nuoc cham sauce that binds the whole bowl."
+   },
+   {
+    "titre": "Build the bowl",
+    "detail": "Place the vermicelli at the bottom of a bowl, then the raw vegetables, herbs, grilled pork and crushed peanuts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the nuoc cham sauce on the side, to pour over the bowl when eating, then mix it all together. Fresh, crunchy and fragrant."
+   }
+  ]
+ },
+ "kaldereta": {
+  "nom": "Kaldereta",
+  "description": "Kaldereta — the Filipino spicy beef stew: beef slowly simmered in a rich tomato sauce, lifted with chilli and liver, with potatoes, carrots and peppers. A generous festive dish, inherited from Spanish influences.",
+  "etapes": [
+   {
+    "titre": "Brown the beef",
+    "detail": "Brown the beef cubes on all sides in the hot oil, then set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the sliced onion and garlic, add the crushed tomato (and traditionally blended liver, which thickens and enriches the sauce)."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Return the beef, add the bay leaf, a little water or stock, season, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer over low heat for 1 hour to 1 hour 15, until the meat is tender. Add water if needed."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the potatoes, carrot and pepper in chunks, and continue 20 minutes until tender."
+   },
+   {
+    "titre": "Finish",
+    "detail": "Add the olives and a little chilli, and let reduce 5 minutes to concentrate the sauce, which should be thick and glossy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the kaldereta piping hot, over white rice. A generous, spicy stew, even better reheated the next day."
+   }
+  ]
+ },
+ "afritada": {
+  "nom": "Afritada",
+  "description": "Afritada — the Filipino chicken tomato stew: chicken braised in a mild tomato sauce with potatoes, carrots, peppers and peas. Comforting and homely, it's the everyday stew of the Philippines, inherited from Spain.",
+  "etapes": [
+   {
+    "titre": "Brown the chicken",
+    "detail": "Brown the chicken pieces on all sides in the hot oil, then set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the sliced onion and garlic, add the crushed tomato (and a little soy and fish sauce for umami)."
+   },
+   {
+    "titre": "Add liquid",
+    "detail": "Return the chicken, add a little water or stock, season, and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 25 minutes over low heat, until the chicken is tender."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the potatoes, carrot and pepper in chunks, and continue 15 minutes until tender."
+   },
+   {
+    "titre": "Peas",
+    "detail": "Add the peas at the end and let the sauce reduce 5 minutes until it coats."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the afritada piping hot, over white rice. A mild, comforting chicken stew, perfect as a family dish."
+   }
+  ]
+ },
+ "bulalo": {
+  "nom": "Bulalo",
+  "description": "Bulalo — the Filipino beef shank soup: a clear, rich broth from slowly simmered beef shank with marrow bone, corn, cabbage and potatoes. Comforting and generous, the soup of the Batangas highlands.",
+  "etapes": [
+   {
+    "titre": "Blanch the shank",
+    "detail": "Blanch the beef shank (with marrow bone) 5 minutes in boiling water, then discard this water and rinse: the broth will be clearer."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Return the shank to a large pot, cover with stock and water, add the onion, and bring to a simmer, skimming regularly."
+   },
+   {
+    "titre": "Long cooking",
+    "detail": "Simmer over low heat for 2 hours to 2 hours 30, until the meat is ultra-tender and falling off the bone, and the marrow soft."
+   },
+   {
+    "titre": "The corn",
+    "detail": "Add the corn in pieces and the potato, and continue cooking 20 minutes."
+   },
+   {
+    "titre": "The cabbage",
+    "detail": "Add the cabbage and leek at the end, and cook 8 minutes so they stay green and crunchy."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and pepper the broth. It should be clear, rich and fragrant, with the marrow melting into it."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the bulalo scalding, with the meat, marrow, vegetables and broth, with rice and a lemon fish-sauce dip. Comforting."
+   }
+  ]
+ },
+ "laing": {
+  "nom": "Laing",
+  "description": "Laing — the coconut milk greens of Bicol: green (taro) leaves slowly simmered in spiced coconut milk, with a little pork and shrimp. Creamy, fragrant and spicy, an iconic dish of the Bicol region of the Philippines.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Sauté the pork in small dice until golden and releasing its fat."
+   },
+   {
+    "titre": "Aromatics",
+    "detail": "Add the garlic, ginger and a little chilli, and sauté until fragrant."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and shrimp paste (bagoong, or dried shrimp or fish sauce), and bring to a simmer."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Add the green (taro, or spinach) leaves WITHOUT stirring at first: stirring too early can make the dish irritating (for taro). Let them melt into the coconut."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over low heat for 25 minutes, until the leaves are soft and the coconut milk reduced and creamy."
+   },
+   {
+    "titre": "Spice it up",
+    "detail": "Add more chilli to taste (traditional laing is quite spicy) and adjust the salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot over white rice, which softens the heat. A creamy, plant-based, fragrant dish from the southern Philippines."
+   }
+  ]
+ },
+ "pinakbet": {
+  "nom": "Pinakbet",
+  "description": "Pinakbet — the Filipino vegetable stew: an assortment of vegetables (eggplant, squash, okra, beans) simmered with fermented shrimp paste. Umami, colourful and nourishing, it's the iconic vegetable dish of the northern Philippines.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Sauté the sliced garlic, onion and ginger in the oil, then add the crushed tomato and stew 5 minutes."
+   },
+   {
+    "titre": "The shrimp paste",
+    "detail": "Add the fermented shrimp paste (bagoong, or chopped shrimp and fish sauce): the signature umami of pinakbet."
+   },
+   {
+    "titre": "The hard vegetables",
+    "detail": "Add the eggplant and squash (or zucchini) in pieces and a little water, and simmer 10 minutes covered."
+   },
+   {
+    "titre": "The green vegetables",
+    "detail": "Add the okra and beans, and continue cooking 8 minutes: the vegetables should stay colourful and slightly firm."
+   },
+   {
+    "titre": "Don't over-stir",
+    "detail": "Shake the pan rather than stirring, so as not to crush the vegetables (pinakbet tradition)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Taste and adjust: the dish should be umami and savoury (little or no salt, the shrimp paste already salts)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot over white rice. A colourful, umami, nourishing vegetable dish, typical of Ilocano cuisine."
+   }
+  ]
+ },
+ "drunkennoodles": {
+  "nom": "Pad Kee Mao",
+  "description": "Pad kee mao — Thai 'drunken noodles': wide rice noodles stir-fried over high heat with chicken, Thai basil and lots of chilli. Spicy, fragrant and alcohol-free despite the name, they wake up the taste buds for sure.",
+  "etapes": [
+   {
+    "titre": "The noodles",
+    "detail": "Soak (or cook) the wide rice noodles until soft but still firm, then drain."
+   },
+   {
+    "titre": "Very hot wok",
+    "detail": "Heat the oil in a wok over high heat: the 'wok hei' (smoky aroma) is essential to pad kee mao."
+   },
+   {
+    "titre": "Garlic & chilli",
+    "detail": "Sear the crushed garlic and chilli for a few seconds, until fragrant (watch the fumes!)."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Add the sliced chicken and stir-fry until golden and cooked."
+   },
+   {
+    "titre": "Noodles & sauce",
+    "detail": "Add the noodles, soy sauce, fish sauce and sugar, and stir-fry over high heat, stirring constantly, until the noodles are coated and lightly caramelised."
+   },
+   {
+    "titre": "Basil & pepper",
+    "detail": "Add the sliced pepper and a large handful of Thai basil, and stir-fry 30 seconds: the basil should just wilt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, piping hot, with a lime wedge. Spicy, fragrant and satisfying — the drunkard's remedy."
+   }
+  ]
+ },
+ "hainanese": {
+  "nom": "Hainanese Chicken Rice",
+  "description": "Hainanese chicken rice — the national dish of Singapore: ultra-tender poached chicken, served with rice cooked in its fragrant ginger-garlic broth, and three sauces (chilli, ginger, soy). Subtle, silky and comforting.",
+  "etapes": [
+   {
+    "titre": "Poach the chicken",
+    "detail": "Submerge the whole chicken in simmering (never boiling) water with ginger, garlic and salt. Poach 30 to 40 minutes at a gentle simmer: the key to silky flesh."
+   },
+   {
+    "titre": "Ice bath",
+    "detail": "Plunge the poached chicken into iced water for a few minutes: this firms the skin and makes it gelatinous. Set aside, brush with sesame oil."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Sauté the rinsed rice with garlic and ginger, then cook it in the chicken poaching broth: it becomes fragrant and tasty."
+   },
+   {
+    "titre": "Chilli sauce",
+    "detail": "Blend chilli, garlic, ginger and a little lime juice into a spicy, tangy sauce."
+   },
+   {
+    "titre": "Ginger sauce",
+    "detail": "Blend ginger and spring onion with hot oil into a fragrant sauce."
+   },
+   {
+    "titre": "Carve",
+    "detail": "Carve the chicken into pieces, keeping the silky skin."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the chicken over the fragrant rice, with cucumber, a bowl of clear broth and the three sauces (chilli, ginger, sweet dark soy). A subtle, complete dish."
+   }
+  ]
+ },
+ "ayambakar": {
+  "nom": "Ayam Bakar",
+  "description": "Ayam bakar — Indonesian caramelised grilled chicken: chicken first simmered in a spiced coconut milk, then grilled and glazed with sweet soy sauce (kecap manis). Tender, smoky and sweet-savoury, a staple of Indonesian warungs.",
+  "etapes": [
+   {
+    "titre": "The spice paste",
+    "detail": "Blend the garlic, ginger, chilli and a little oil into a fragrant paste (bumbu), the base of all Indonesian dishes."
+   },
+   {
+    "titre": "Simmer the chicken",
+    "detail": "Sauté the spice paste, add the chicken, coconut milk and a little sugar, and simmer covered for 25 minutes: the chicken infuses and turns tender."
+   },
+   {
+    "titre": "The glaze sauce",
+    "detail": "Add the sweet soy sauce (kecap manis, or soy sauce + sugar) and let it reduce until the chicken is coated in a thick, glossy sauce."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill the simmered chicken (barbecue, griddle or oven grill), brushing with sauce, until caramelised and smoky at the edges."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush several times with sauce during grilling for a beautiful glossy, sticky glaze."
+   },
+   {
+    "titre": "Lime",
+    "detail": "Add a squeeze of lime at the end to balance the sweetness."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the ayam bakar with rice, sambal (chilli sauce) and raw vegetables. Tender, smoky and sweet-savoury — a warung treat."
+   }
+  ]
  }
 };
