@@ -65284,5 +65284,345 @@ window.RECETTES_EN = {
     "detail": "Serve at once, crisp underneath and soft on top, with black vinegar. Mind the scalding broth centre — the pan-fried buns of Shanghai."
    }
   ]
+ },
+ "selroti": {
+  "nom": "Sel Roti",
+  "description": "Sel roti — the Nepali fried ring: a sweet batter of soaked, ground rice, scented with cardamom and banana, poured in a circle into hot oil where it puffs into a golden, crisp ring. An emblem of festivals (Tihar, Dashain), it's the essential ring-doughnut of Nepal.",
+  "etapes": [
+   {
+    "titre": "Soak the rice",
+    "detail": "Soak the rice for several hours (ideally overnight), then drain it thoroughly."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Blend the soaked rice with the banana, sugar, milk and a little water into a smooth, pourable batter (like a thick pancake batter)."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Stir in the rice flour, melted butter (ghee) and ground cardamom. Rest the batter 30 minutes to 1 hour."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat a bath of oil over medium heat, neither too hot nor too cool (the ring should puff without burning)."
+   },
+   {
+    "titre": "Form the ring",
+    "detail": "Pour the batter in a continuous circle on the surface of the oil (by hand or piping bag): it joins up and forms a ring."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Let it brown, turn gently, and continue until the ring is golden, puffed and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve warm, on its own or with yoghurt and a curry. Golden, crisp outside and soft inside — the Nepali festive ring."
+   }
+  ]
+ },
+ "gundruk": {
+  "nom": "Gundruk Sadeko",
+  "description": "Gundruk sadeko — the Nepali fermented greens salad: dried, lacto-fermented green leaves (gundruk), rehydrated then lifted with tomato, onion, chilli and mustard. Tangy, umami and spicy, it's the typical Nepali side, rich in probiotics.",
+  "etapes": [
+   {
+    "titre": "The gundruk",
+    "detail": "Rehydrate the dried fermented leaves (gundruk) in warm water, then wring them out and chop coarsely. (Or blanched spinach lifted with a dash of vinegar.)"
+   },
+   {
+    "titre": "The raw vegetables",
+    "detail": "Dice the tomato small and finely slice the onion and garlic."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Chop the green chilli (dose to taste) and lightly char it to release its aroma."
+   },
+   {
+    "titre": "The seasoning",
+    "detail": "Mix the mustard, lemon juice, salt and oil into a punchy dressing."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the gundruk, tomato, onion, garlic and chilli, and season with the mustard dressing."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "Heat a little oil with seeds (fenugreek, sesame) until they crackle, and pour this scalding tempering over the salad."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Toss, scatter with sesame and serve at once, with rice or dal bhat. Tangy, umami and spicy — the fermented side of Nepal."
+   }
+  ]
+ },
+ "chatamari": {
+  "nom": "Chatamari",
+  "description": "Chatamari — the Newari 'Nepali pizza': a thin rice-flour crêpe topped with spiced minced meat, egg and onion, cooked covered until the topping sets. Crisp at the edges, soft in the centre, it's a festive speciality of the Kathmandu valley.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk the rice flour with water and a little salt into a smooth, fluid batter, pancake-style. Let it rest."
+   },
+   {
+    "titre": "The topping",
+    "detail": "Season the minced meat with the ginger, garlic, chilli and a little coriander."
+   },
+   {
+    "titre": "Spread the crêpe",
+    "detail": "Pour a ladle of batter into a hot oiled pan and spread it into a thin disc."
+   },
+   {
+    "titre": "Top",
+    "detail": "Immediately spread the minced meat, onion and diced tomato over the still-raw crêpe."
+   },
+   {
+    "titre": "The egg",
+    "detail": "Crack (or pour) a little beaten egg over the top, which binds the topping."
+   },
+   {
+    "titre": "Cook covered",
+    "detail": "Cover and cook over low heat until the base is crisp and the topping set."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with fresh coriander and serve hot, folded or whole, with a chilli sauce. Crisp at the edges, soft in the centre — the Newari 'pizza' of Nepal."
+   }
+  ]
+ },
+ "alootama": {
+  "nom": "Aloo Tama",
+  "description": "Aloo tama — the Nepali sour curry of potato and bamboo shoots: potatoes and black-eyed peas simmered with fermented bamboo shoots, which bring a characteristic sourness. Comforting, tangy and fragrant, it's a Nepali dish typical of festive days.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak then cook the black-eyed peas until tender (or use canned)."
+   },
+   {
+    "titre": "The bamboo shoots",
+    "detail": "Rinse the fermented bamboo shoots and briefly sauté them: they bring the dish's signature sourness."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and ginger, then add the turmeric, chilli and tomato, and let it cook down into a fragrant masala."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the diced potatoes and coat them well in the masala."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Pour in water, add the bamboo shoots and beans, and simmer until the potatoes are tender."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Lightly mash a few potatoes to thicken the sauce, which should be smooth and slightly sour."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve hot with rice. Comforting, tangy and fragrant — the Nepali festive curry with bamboo shoots."
+   }
+  ]
+ },
+ "sekuwa": {
+  "nom": "Sekuwa",
+  "description": "Sekuwa — the Nepali grilled skewers: pieces of meat marinated in a mix of spices, ginger, garlic and mustard, then grilled over a wood fire until smoky and caramelised. Fragrant and lightly spicy, they're the iconic street skewers of Nepal.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Cut the meat (chicken, goat or pork) into even bite-sized cubes."
+   },
+   {
+    "titre": "The marinade",
+    "detail": "Mix the ginger, garlic, cumin, turmeric, chilli, yoghurt, mustard oil, lemon and salt into a fragrant paste."
+   },
+   {
+    "titre": "Marinate",
+    "detail": "Coat the meat in the marinade and rest it in the fridge at least 1 hour (ideally several hours) to tenderise and flavour it."
+   },
+   {
+    "titre": "Skewer",
+    "detail": "Thread the marinated pieces onto skewers, packed tightly."
+   },
+   {
+    "titre": "Grill",
+    "detail": "Grill over a wood fire or a very hot griddle, turning regularly, until the meat is caramelised and lightly smoky."
+   },
+   {
+    "titre": "Baste",
+    "detail": "Baste with leftover marinade and a little oil during cooking, to keep the meat juicy and glazed."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot with puffed rice (chiura), onion and a lemon wedge. Fragrant, smoky and spicy — the street skewers of Nepal."
+   }
+  ]
+ },
+ "kwati": {
+  "nom": "Kwati",
+  "description": "Kwati — the Nepali nine-sprouted-pulse soup: a mix of sprouted beans and peas, simmered into a thick, spiced soup with ginger, garlic and cumin. Traditionally made for the Janai Purnima festival, it's reputed to be fortifying and nourishing.",
+  "etapes": [
+   {
+    "titre": "Sprout",
+    "detail": "Soak the mix of pulses (beans, peas, soy, lentils) overnight, then let them sprout 1 to 2 days in a damp cloth."
+   },
+   {
+    "titre": "Cook the sprouts",
+    "detail": "Rinse the sprouted pulses and cook them in water until tender (they keep a slight bite)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic and ginger in the oil, then add the turmeric, cumin and a little chilli."
+   },
+   {
+    "titre": "The masala",
+    "detail": "Add the tomato and let it cook down into a fragrant base."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Pour the sprouted pulses with their cooking water into the masala, and stir."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer 20 minutes so the flavours bind and the soup thickens slightly."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve hot with rice. Thick, spiced and fortifying — the Nepali nine-pulse festival soup."
+   }
+  ]
+ },
+ "kiribath": {
+  "nom": "Kiribath",
+  "description": "Kiribath — the Sinhalese coconut milk rice: rice cooked in coconut milk until creamy and compact, then pressed and cut into diamonds. Served for breakfast on important days (New Year, first of the month), with a spicy sambol (lunu miris). Mild, creamy and comforting.",
+  "etapes": [
+   {
+    "titre": "The rice",
+    "detail": "Rinse the rice and cook it in water until tender and the water is almost absorbed."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour the thick coconut milk and salt over the cooked rice, and stir."
+   },
+   {
+    "titre": "Creamy cooking",
+    "detail": "Cook over low heat, stirring, until the coconut milk is absorbed and the rice turns creamy and compact."
+   },
+   {
+    "titre": "Press",
+    "detail": "Spread the hot rice on a flat oiled surface (or in a dish), in an even layer about 2 cm thick, and press well."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Let cool slightly then cut the rice into neat diamonds, Sinhalese-style."
+   },
+   {
+    "titre": "The lunu miris",
+    "detail": "Make the sambol: pound the onion, chilli, a little lemon and salt into a punchy red paste."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the kiribath diamonds warm, with the spicy lunu miris (and optionally a curry). Mild, creamy and comforting — the Sinhalese festive rice."
+   }
+  ]
+ },
+ "parippu": {
+  "nom": "Parippu",
+  "description": "Parippu — the Sinhalese red lentil dhal: red lentils simmered in coconut milk, scented with turmeric, curry leaves and a tempering of onion, mustard and chilli. Smooth, mild and fragrant, it's the everyday curry of Sri Lanka.",
+  "etapes": [
+   {
+    "titre": "The lentils",
+    "detail": "Rinse the red lentils and cook them in water with the turmeric until tender and broken down."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Add the coconut milk and simmer gently until you get a smooth, creamy texture."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and adjust the consistency (neither too thick nor too runny)."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "In a small pan, heat the oil and sauté the sliced onion, garlic, mustard and cumin seeds."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Add the chilli, curry leaves and a little cinnamon to the tempering, until the seeds crackle and become fragrant."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Pour the scalding tempering over the creamy lentils (the 'seasoning') and stir: this is what gives parippu its aroma."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with rice and other curries, or with hoppers. Smooth, mild and fragrant — the everyday dhal of Sri Lanka."
+   }
+  ]
+ },
+ "fishambulthiyal": {
+  "nom": "Ambul Thiyal",
+  "description": "Ambul thiyal — the Sinhalese sour fish curry: pieces of tuna coated in a black spice paste of goraka (dried sour fruit) and pepper, dry-simmered until glazed and almost confit. Intense, tangy and peppery, it's a dry curry that keeps for a long time, born before refrigeration.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Cut the tuna (or a firm fish) into large cubes and pat them dry."
+   },
+   {
+    "titre": "The black paste",
+    "detail": "Blend the goraka (or tamarind) with the pepper, chilli, garlic, ginger and turmeric into a dark, thick spice paste."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Carefully coat the fish cubes in this black paste, on all sides."
+   },
+   {
+    "titre": "In the pot",
+    "detail": "Arrange the fish in a single layer in a pot, with the cinnamon and curry leaves."
+   },
+   {
+    "titre": "Dry simmer",
+    "detail": "Add very little water and simmer covered over low heat, without stirring (shake the pot), until the liquid is almost evaporated."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Continue gently until the fish is coated in a black, glossy glaze, almost confit."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice and other curries. Intense, tangy and peppery — the dry, keeping fish curry, emblem of Sri Lanka."
+   }
+  ]
+ },
+ "pittu": {
+  "nom": "Pittu",
+  "description": "Pittu — the Sinhalese steamed rice-and-coconut cylinder: moistened rice flour mixed with grated coconut, packed in layers and steamed in a cylindrical mould (bamboo). Light, soft and fragrant, it's eaten for breakfast with coconut milk and a curry.",
+  "etapes": [
+   {
+    "titre": "The flour",
+    "detail": "Lightly dry-roast the rice flour, then salt it (it takes on a faint nutty taste)."
+   },
+   {
+    "titre": "Moisten",
+    "detail": "Add water little by little, rubbing the flour with your fingertips, until you get a sandy, moist texture (it should clump without forming a dough)."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Mix the freshly grated coconut into the moistened flour, spreading it evenly."
+   },
+   {
+    "titre": "Fill the mould",
+    "detail": "Gently pack the mixture in layers into a pittu mould (cylinder) or a sieve, without crushing (it must stay airy)."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Steam for 10 to 12 minutes, until the pittu is firm, soft and cooked through."
+   },
+   {
+    "titre": "Unmould",
+    "detail": "Gently push the pittu cylinder out of the mould: it keeps its shape and layers."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with fresh coconut milk, bananas and a curry (or palm sugar). Light, soft and fragrant — the cylindrical breakfast of Sri Lanka."
+   }
+  ]
  }
 };

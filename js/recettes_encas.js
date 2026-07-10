@@ -4514,4 +4514,41 @@ Object.assign(recettes, {
     ],
     liees: ["baozi"]
   },
+  chatamari: {
+    dateAjout: "2026-07-10T13:02:00",
+    nom: "Chatamari",
+    cat: "encas", pays: "nepal",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫓",
+    description: "Chatamari — la « pizza népalaise » newari : une fine crêpe de farine de riz garnie de viande hachée épicée, d'œuf et d'oignon, cuite à couvert jusqu'à ce que la garniture prenne. Croustillante sur les bords, moelleuse au centre, c'est une spécialité festive de la vallée de Katmandou.",
+    tableauChatamari: [
+      { nb: 1, farineRiz: "50 g", boeuf: "40 g", oeufs: "½", oignon: "20 g", tomates: "¼", coriandre: "4 g", piment: "1 g", gingembre: "2 g", huileolive: "5 ml", sel: "2 g" },
+      { nb: 2, farineRiz: "100 g", boeuf: "80 g", oeufs: "1", oignon: "40 g", tomates: "½", coriandre: "8 g", piment: "2 g", gingembre: "4 g", huileolive: "10 ml", sel: "4 g" },
+      { nb: 3, farineRiz: "150 g", boeuf: "120 g", oeufs: "1½", oignon: "60 g", tomates: "¾", coriandre: "12 g", piment: "3 g", gingembre: "6 g", huileolive: "15 ml", sel: "6 g" },
+      { nb: 4, farineRiz: "200 g", boeuf: "160 g", oeufs: "2", oignon: "80 g", tomates: "1", coriandre: "16 g", piment: "4 g", gingembre: "8 g", huileolive: "20 ml", sel: "8 g" },
+      { nb: 5, farineRiz: "250 g", boeuf: "200 g", oeufs: "2½", oignon: "100 g", tomates: "1¼", coriandre: "20 g", piment: "5 g", gingembre: "10 g", huileolive: "25 ml", sel: "10 g" },
+      { nb: 6, farineRiz: "300 g", boeuf: "240 g", oeufs: "3", oignon: "120 g", tomates: "1½", coriandre: "24 g", piment: "6 g", gingembre: "12 g", huileolive: "30 ml", sel: "12 g" },
+      { nb: 7, farineRiz: "350 g", boeuf: "280 g", oeufs: "3½", oignon: "140 g", tomates: "1¾", coriandre: "28 g", piment: "7 g", gingembre: "14 g", huileolive: "35 ml", sel: "14 g" },
+      { nb: 8, farineRiz: "400 g", boeuf: "320 g", oeufs: "4", oignon: "160 g", tomates: "2", coriandre: "32 g", piment: "8 g", gingembre: "16 g", huileolive: "40 ml", sel: "16 g" },
+      { nb: 9, farineRiz: "450 g", boeuf: "360 g", oeufs: "4½", oignon: "180 g", tomates: "2¼", coriandre: "36 g", piment: "9 g", gingembre: "18 g", huileolive: "45 ml", sel: "18 g" },
+      { nb: 10, farineRiz: "500 g", boeuf: "400 g", oeufs: "5", oignon: "200 g", tomates: "2½", coriandre: "40 g", piment: "10 g", gingembre: "20 g", huileolive: "50 ml", sel: "20 g" },
+      { nb: 11, farineRiz: "550 g", boeuf: "440 g", oeufs: "5½", oignon: "220 g", tomates: "2¾", coriandre: "44 g", piment: "11 g", gingembre: "22 g", huileolive: "55 ml", sel: "22 g" },
+      { nb: 12, farineRiz: "600 g", boeuf: "480 g", oeufs: "6", oignon: "240 g", tomates: "3", coriandre: "48 g", piment: "12 g", gingembre: "24 g", huileolive: "60 ml", sel: "24 g" },
+      { nb: 13, farineRiz: "650 g", boeuf: "520 g", oeufs: "6½", oignon: "260 g", tomates: "3¼", coriandre: "52 g", piment: "13 g", gingembre: "26 g", huileolive: "65 ml", sel: "26 g" },
+      { nb: 14, farineRiz: "700 g", boeuf: "560 g", oeufs: "7", oignon: "280 g", tomates: "3½", coriandre: "56 g", piment: "14 g", gingembre: "28 g", huileolive: "70 ml", sel: "28 g" },
+      { nb: 15, farineRiz: "750 g", boeuf: "600 g", oeufs: "7½", oignon: "300 g", tomates: "3¾", coriandre: "60 g", piment: "15 g", gingembre: "30 g", huileolive: "75 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Délayez la farine de riz avec de l'eau et un peu de sel en une pâte fluide et sans grumeaux, façon pâte à crêpe. Laissez reposer.", badge: null },
+      { icone: "🥩", titre: "La garniture", detail: "Assaisonnez la viande hachée avec le gingembre, l'ail, le piment et un peu de coriandre.", badge: null },
+      { icone: "🍳", titre: "Étaler la crêpe", detail: "Versez une louche de pâte dans une poêle huilée chaude et étalez-la en un disque fin.", badge: null },
+      { icone: "🥩", titre: "Garnir", detail: "Répartissez aussitôt la viande hachée, l'oignon et la tomate en petits dés sur la crêpe encore crue.", badge: null },
+      { icone: "🥚", titre: "L'œuf", detail: "Cassez (ou versez) un peu d'œuf battu par-dessus, qui liera la garniture.", badge: null },
+      { icone: "🔒", titre: "Cuire à couvert", detail: "Couvrez et laissez cuire à feu doux jusqu'à ce que le fond soit croustillant et la garniture prise.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez de coriandre fraîche et servez chaud, plié ou entier, avec une sauce pimentée. Croustillant sur les bords, moelleux au centre — la « pizza » newari du Népal.", badge: null }
+    ]
+  },
 });

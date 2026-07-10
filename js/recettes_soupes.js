@@ -4292,4 +4292,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Dressez les côtes, le radis et les nouilles dans les bols, versez le bouillon clair et parsemez de ciboule. Léger, réconfortant et raffiné — la soupe de fête coréenne.", badge: null }
     ]
   },
+  kwati: {
+    dateAjout: "2026-07-10T13:05:00",
+    nom: "Kwati",
+    cat: "soupes", pays: "nepal",
+    base: 4,
+    temps: "1h + trempage",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🫘",
+    description: "Kwati — la soupe népalaise aux neuf légumineuses germées : un mélange de haricots et de pois germés, mijotés en une soupe épaisse et épicée au gingembre, à l'ail et au cumin. Traditionnellement préparée lors de la fête de Janai Purnima, elle est réputée fortifiante et nourrissante.",
+    tableauKwati: [
+      { nb: 1, haricots: "40 g", pois: "20 g", soja: "15 g", oignon: "25 g", ail: "1", gingembre: "3 g", curcuma: "1 g", cumin: "1 g", tomates: "½", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, haricots: "80 g", pois: "40 g", soja: "30 g", oignon: "50 g", ail: "2", gingembre: "6 g", curcuma: "2 g", cumin: "2 g", tomates: "1", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, haricots: "120 g", pois: "60 g", soja: "45 g", oignon: "75 g", ail: "3", gingembre: "9 g", curcuma: "3 g", cumin: "3 g", tomates: "1½", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, haricots: "160 g", pois: "80 g", soja: "60 g", oignon: "100 g", ail: "4", gingembre: "12 g", curcuma: "4 g", cumin: "4 g", tomates: "2", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, haricots: "200 g", pois: "100 g", soja: "75 g", oignon: "125 g", ail: "5", gingembre: "15 g", curcuma: "5 g", cumin: "5 g", tomates: "2½", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, haricots: "240 g", pois: "120 g", soja: "90 g", oignon: "150 g", ail: "6", gingembre: "18 g", curcuma: "6 g", cumin: "6 g", tomates: "3", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, haricots: "280 g", pois: "140 g", soja: "105 g", oignon: "175 g", ail: "7", gingembre: "21 g", curcuma: "7 g", cumin: "7 g", tomates: "3½", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, haricots: "320 g", pois: "160 g", soja: "120 g", oignon: "200 g", ail: "8", gingembre: "24 g", curcuma: "8 g", cumin: "8 g", tomates: "4", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, haricots: "360 g", pois: "180 g", soja: "135 g", oignon: "225 g", ail: "9", gingembre: "27 g", curcuma: "9 g", cumin: "9 g", tomates: "4½", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, haricots: "400 g", pois: "200 g", soja: "150 g", oignon: "250 g", ail: "10", gingembre: "30 g", curcuma: "10 g", cumin: "10 g", tomates: "5", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, haricots: "440 g", pois: "220 g", soja: "165 g", oignon: "275 g", ail: "11", gingembre: "33 g", curcuma: "11 g", cumin: "11 g", tomates: "5½", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, haricots: "480 g", pois: "240 g", soja: "180 g", oignon: "300 g", ail: "12", gingembre: "36 g", curcuma: "12 g", cumin: "12 g", tomates: "6", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, haricots: "520 g", pois: "260 g", soja: "195 g", oignon: "325 g", ail: "13", gingembre: "39 g", curcuma: "13 g", cumin: "13 g", tomates: "6½", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, haricots: "560 g", pois: "280 g", soja: "210 g", oignon: "350 g", ail: "14", gingembre: "42 g", curcuma: "14 g", cumin: "14 g", tomates: "7", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, haricots: "600 g", pois: "300 g", soja: "225 g", oignon: "375 g", ail: "15", gingembre: "45 g", curcuma: "15 g", cumin: "15 g", tomates: "7½", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Faire germer", detail: "Faites tremper le mélange de légumineuses (haricots, pois, soja, lentilles) une nuit, puis laissez-les germer 1 à 2 jours dans un linge humide.", badge: null },
+      { icone: "💧", titre: "Cuire les germes", detail: "Rincez les légumineuses germées et faites-les cuire dans l'eau jusqu'à ce qu'elles soient tendres (elles gardent un léger croquant).", badge: null },
+      { icone: "🧅", titre: "La base", detail: "Faites revenir l'oignon, l'ail et le gingembre dans l'huile, puis ajoutez le curcuma, le cumin et un peu de piment.", badge: null },
+      { icone: "🍅", titre: "Le masala", detail: "Ajoutez la tomate et laissez compoter en une base parfumée.", badge: null },
+      { icone: "🍲", titre: "Réunir", detail: "Versez les légumineuses germées avec leur eau de cuisson dans le masala, et mélangez.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter 20 min pour que les saveurs se lient et que la soupe épaississe légèrement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez de coriandre et servez chaud avec du riz. Épaisse, épicée et fortifiante — la soupe de fête des neuf légumineuses du Népal.", badge: null }
+    ]
+  },
 });

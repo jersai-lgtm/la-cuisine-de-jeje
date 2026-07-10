@@ -2407,4 +2407,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, bien fraîche et croquante, avec du riz gluant et des crudités. Acidulée, croquante et puissamment relevée — la salade emblématique du Laos.", badge: null }
     ]
   },
+  gundruk: {
+    dateAjout: "2026-07-10T13:01:00",
+    nom: "Gundruk Sadeko",
+    cat: "salades", pays: "nepal",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥬",
+    description: "Gundruk sadeko — la salade de feuilles fermentées népalaise : des feuilles vertes séchées et lacto-fermentées (gundruk), réhydratées puis relevées de tomate, d'oignon, de piment et de moutarde. Acidulée, umami et piquante, c'est l'accompagnement typique du Népal, riche en probiotiques.",
+    tableauGundruk: [
+      { nb: 1, epinards: "40 g", tomates: "½", oignon: "25 g", ail: "1", piment: "1 g", moutarde: "3 g", huileolive: "6 ml", citron: "¼", sesame: "4 g", sel: "1 g" },
+      { nb: 2, epinards: "80 g", tomates: "1", oignon: "50 g", ail: "2", piment: "2 g", moutarde: "6 g", huileolive: "12 ml", citron: "½", sesame: "8 g", sel: "2 g" },
+      { nb: 3, epinards: "120 g", tomates: "1½", oignon: "75 g", ail: "3", piment: "3 g", moutarde: "9 g", huileolive: "18 ml", citron: "¾", sesame: "12 g", sel: "3 g" },
+      { nb: 4, epinards: "160 g", tomates: "2", oignon: "100 g", ail: "4", piment: "4 g", moutarde: "12 g", huileolive: "24 ml", citron: "1", sesame: "16 g", sel: "4 g" },
+      { nb: 5, epinards: "200 g", tomates: "2½", oignon: "125 g", ail: "5", piment: "5 g", moutarde: "15 g", huileolive: "30 ml", citron: "1¼", sesame: "20 g", sel: "5 g" },
+      { nb: 6, epinards: "240 g", tomates: "3", oignon: "150 g", ail: "6", piment: "6 g", moutarde: "18 g", huileolive: "36 ml", citron: "1½", sesame: "24 g", sel: "6 g" },
+      { nb: 7, epinards: "280 g", tomates: "3½", oignon: "175 g", ail: "7", piment: "7 g", moutarde: "21 g", huileolive: "42 ml", citron: "1¾", sesame: "28 g", sel: "7 g" },
+      { nb: 8, epinards: "320 g", tomates: "4", oignon: "200 g", ail: "8", piment: "8 g", moutarde: "24 g", huileolive: "48 ml", citron: "2", sesame: "32 g", sel: "8 g" },
+      { nb: 9, epinards: "360 g", tomates: "4½", oignon: "225 g", ail: "9", piment: "9 g", moutarde: "27 g", huileolive: "54 ml", citron: "2¼", sesame: "36 g", sel: "9 g" },
+      { nb: 10, epinards: "400 g", tomates: "5", oignon: "250 g", ail: "10", piment: "10 g", moutarde: "30 g", huileolive: "60 ml", citron: "2½", sesame: "40 g", sel: "10 g" },
+      { nb: 11, epinards: "440 g", tomates: "5½", oignon: "275 g", ail: "11", piment: "11 g", moutarde: "33 g", huileolive: "66 ml", citron: "2¾", sesame: "44 g", sel: "11 g" },
+      { nb: 12, epinards: "480 g", tomates: "6", oignon: "300 g", ail: "12", piment: "12 g", moutarde: "36 g", huileolive: "72 ml", citron: "3", sesame: "48 g", sel: "12 g" },
+      { nb: 13, epinards: "520 g", tomates: "6½", oignon: "325 g", ail: "13", piment: "13 g", moutarde: "39 g", huileolive: "78 ml", citron: "3¼", sesame: "52 g", sel: "13 g" },
+      { nb: 14, epinards: "560 g", tomates: "7", oignon: "350 g", ail: "14", piment: "14 g", moutarde: "42 g", huileolive: "84 ml", citron: "3½", sesame: "56 g", sel: "14 g" },
+      { nb: 15, epinards: "600 g", tomates: "7½", oignon: "375 g", ail: "15", piment: "15 g", moutarde: "45 g", huileolive: "90 ml", citron: "3¾", sesame: "60 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Le gundruk", detail: "Réhydratez les feuilles fermentées séchées (gundruk) dans l'eau tiède, puis essorez-les et hachez-les grossièrement. (À défaut, des épinards blanchis relevés d'un trait de vinaigre.)", badge: null },
+      { icone: "🍅", titre: "Les crudités", detail: "Coupez la tomate en petits dés et émincez finement l'oignon et l'ail.", badge: null },
+      { icone: "🌶️", titre: "Le piment", detail: "Hachez le piment vert (dosez selon votre goût) et grillez-le légèrement pour libérer son arôme.", badge: null },
+      { icone: "🥄", titre: "L'assaisonnement", detail: "Mélangez la moutarde, le jus de citron, le sel et l'huile en une vinaigrette relevée.", badge: null },
+      { icone: "🫙", titre: "Mélanger", detail: "Réunissez le gundruk, la tomate, l'oignon, l'ail et le piment, et assaisonnez de la vinaigrette moutarde.", badge: null },
+      { icone: "🔥", titre: "Le tempérage", detail: "Faites chauffer un peu d'huile avec des graines (fenugrec, sésame) jusqu'à ce qu'elles crépitent, et versez ce tempérage brûlant sur la salade.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Mélangez, parsemez de sésame et servez aussitôt, avec du riz ou du dal bhat. Acidulée, umami et piquante — l'accompagnement fermenté du Népal.", badge: null }
+    ],
+    liees: ["dalbhat"]
+  },
 });
