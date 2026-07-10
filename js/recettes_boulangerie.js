@@ -1835,4 +1835,79 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, nature, au petit-déjeuner avec un maté ou un café. Moelleux, fondants et sans gluten — les petits pains au fromage du Paraguay.", badge: null }
     ]
   },
+  burek: {
+    dateAjout: "2026-07-10T19:01:00",
+    nom: "Burek",
+    cat: "boulangerie", pays: "serbie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Burek — la spirale feuilletée des Balkans : de fines feuilles de pâte filo garnies de viande hachée (ou de fromage), roulées puis enroulées en spirale et cuites jusqu'à être dorées et croustillantes. Servi tiède avec un yaourt, c'est le petit-déjeuner et l'en-cas roi de la Serbie aux Balkans.",
+    tableauBurek: [
+      { nb: 1, pateFilo: "60 g", boeuf: "50 g", oignon: "25 g", oeufs: "½", huileolive: "10 ml", yaourt: "30 g", sel: "2 g" },
+      { nb: 2, pateFilo: "120 g", boeuf: "100 g", oignon: "50 g", oeufs: "1", huileolive: "20 ml", yaourt: "60 g", sel: "4 g" },
+      { nb: 3, pateFilo: "180 g", boeuf: "150 g", oignon: "75 g", oeufs: "1½", huileolive: "30 ml", yaourt: "90 g", sel: "6 g" },
+      { nb: 4, pateFilo: "240 g", boeuf: "200 g", oignon: "100 g", oeufs: "2", huileolive: "40 ml", yaourt: "120 g", sel: "8 g" },
+      { nb: 5, pateFilo: "300 g", boeuf: "250 g", oignon: "125 g", oeufs: "2½", huileolive: "50 ml", yaourt: "150 g", sel: "10 g" },
+      { nb: 6, pateFilo: "360 g", boeuf: "300 g", oignon: "150 g", oeufs: "3", huileolive: "60 ml", yaourt: "180 g", sel: "12 g" },
+      { nb: 7, pateFilo: "420 g", boeuf: "350 g", oignon: "175 g", oeufs: "3½", huileolive: "70 ml", yaourt: "210 g", sel: "14 g" },
+      { nb: 8, pateFilo: "480 g", boeuf: "400 g", oignon: "200 g", oeufs: "4", huileolive: "80 ml", yaourt: "240 g", sel: "16 g" },
+      { nb: 9, pateFilo: "540 g", boeuf: "450 g", oignon: "225 g", oeufs: "4½", huileolive: "90 ml", yaourt: "270 g", sel: "18 g" },
+      { nb: 10, pateFilo: "600 g", boeuf: "500 g", oignon: "250 g", oeufs: "5", huileolive: "100 ml", yaourt: "300 g", sel: "20 g" },
+      { nb: 11, pateFilo: "660 g", boeuf: "550 g", oignon: "275 g", oeufs: "5½", huileolive: "110 ml", yaourt: "330 g", sel: "22 g" },
+      { nb: 12, pateFilo: "720 g", boeuf: "600 g", oignon: "300 g", oeufs: "6", huileolive: "120 ml", yaourt: "360 g", sel: "24 g" },
+      { nb: 13, pateFilo: "780 g", boeuf: "650 g", oignon: "325 g", oeufs: "6½", huileolive: "130 ml", yaourt: "390 g", sel: "26 g" },
+      { nb: 14, pateFilo: "840 g", boeuf: "700 g", oignon: "350 g", oeufs: "7", huileolive: "140 ml", yaourt: "420 g", sel: "28 g" },
+      { nb: 15, pateFilo: "900 g", boeuf: "750 g", oignon: "375 g", oeufs: "7½", huileolive: "150 ml", yaourt: "450 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥩", titre: "La farce", detail: "Faites revenir la viande hachée avec l'oignon émincé, le sel et le poivre, jusqu'à ce qu'elle soit cuite et parfumée. Laissez tiédir.", badge: null },
+      { icone: "🧈", titre: "Les feuilles", detail: "Étalez une feuille de pâte filo et badigeonnez-la légèrement d'huile.", badge: null },
+      { icone: "🥩", titre: "Garnir", detail: "Répartissez un cordon de farce le long d'un bord de la feuille.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Roulez la feuille en un long boudin fin autour de la farce, sans trop serrer.", badge: null },
+      { icone: "🌀", titre: "Enrouler", detail: "Enroulez le boudin sur lui-même en spirale (comme un escargot) et déposez-le dans un moule huilé. Répétez pour remplir le moule.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Dorez le dessus d'un mélange d'œuf et d'huile, et enfournez à 200 °C jusqu'à ce que le burek soit doré et croustillant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Coupez en parts et servez tiède, avec un grand verre de yaourt (ou d'ayran). Doré, feuilleté et croustillant — l'en-cas roi des Balkans.", badge: null }
+    ],
+    liees: ["gibanica"]
+  },
+  korvapuusti: {
+    dateAjout: "2026-07-10T19:08:00",
+    nom: "Korvapuusti",
+    cat: "boulangerie", pays: "finlande",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍥",
+    description: "Korvapuusti — les brioches à la cannelle finlandaises : une pâte briochée parfumée à la cardamome, roulée avec du beurre à la cannelle, puis découpée et pincée en forme d'« oreille giflée », parsemée de sucre perlé. Moelleuses et parfumées, ce sont les reines du « kahvi » (pause-café) en Finlande.",
+    tableauKorvapuusti: [
+      { nb: 1, farine: "70 g", lait: "30 ml", beurre: "12 g", sucre: "15 g", cardamome: "0.5 g", cannelle: "0.5 g", levure: "2 g", oeufs: "¼" },
+      { nb: 2, farine: "140 g", lait: "60 ml", beurre: "24 g", sucre: "30 g", cardamome: "1 g", cannelle: "1 g", levure: "4 g", oeufs: "½" },
+      { nb: 3, farine: "210 g", lait: "90 ml", beurre: "36 g", sucre: "45 g", cardamome: "1.5 g", cannelle: "1.5 g", levure: "6 g", oeufs: "¾" },
+      { nb: 4, farine: "280 g", lait: "120 ml", beurre: "48 g", sucre: "60 g", cardamome: "2 g", cannelle: "2 g", levure: "8 g", oeufs: "1" },
+      { nb: 5, farine: "350 g", lait: "150 ml", beurre: "60 g", sucre: "75 g", cardamome: "2.5 g", cannelle: "2.5 g", levure: "10 g", oeufs: "1¼" },
+      { nb: 6, farine: "420 g", lait: "180 ml", beurre: "72 g", sucre: "90 g", cardamome: "3 g", cannelle: "3 g", levure: "12 g", oeufs: "1½" },
+      { nb: 7, farine: "490 g", lait: "210 ml", beurre: "84 g", sucre: "105 g", cardamome: "3.5 g", cannelle: "3.5 g", levure: "14 g", oeufs: "1¾" },
+      { nb: 8, farine: "560 g", lait: "240 ml", beurre: "96 g", sucre: "120 g", cardamome: "4 g", cannelle: "4 g", levure: "16 g", oeufs: "2" },
+      { nb: 9, farine: "630 g", lait: "270 ml", beurre: "108 g", sucre: "135 g", cardamome: "4.5 g", cannelle: "4.5 g", levure: "18 g", oeufs: "2¼" },
+      { nb: 10, farine: "700 g", lait: "300 ml", beurre: "120 g", sucre: "150 g", cardamome: "5 g", cannelle: "5 g", levure: "20 g", oeufs: "2½" },
+      { nb: 11, farine: "770 g", lait: "330 ml", beurre: "132 g", sucre: "165 g", cardamome: "5.5 g", cannelle: "5.5 g", levure: "22 g", oeufs: "2¾" },
+      { nb: 12, farine: "840 g", lait: "360 ml", beurre: "144 g", sucre: "180 g", cardamome: "6 g", cannelle: "6 g", levure: "24 g", oeufs: "3" },
+      { nb: 13, farine: "910 g", lait: "390 ml", beurre: "156 g", sucre: "195 g", cardamome: "6.5 g", cannelle: "6.5 g", levure: "26 g", oeufs: "3¼" },
+      { nb: 14, farine: "980 g", lait: "420 ml", beurre: "168 g", sucre: "210 g", cardamome: "7 g", cannelle: "7 g", levure: "28 g", oeufs: "3½" },
+      { nb: 15, farine: "1050 g", lait: "450 ml", beurre: "180 g", sucre: "225 g", cardamome: "7.5 g", cannelle: "7.5 g", levure: "30 g", oeufs: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Pétrissez la farine avec le lait tiède, la levure, le sucre, l'œuf, la cardamome moulue et le beurre, en une pâte souple. Laissez-la lever jusqu'à ce qu'elle double.", badge: null },
+      { icone: "📏", titre: "Abaisser", detail: "Abaissez la pâte levée en un grand rectangle régulier.", badge: null },
+      { icone: "🧈", titre: "Le beurre cannelle", detail: "Tartinez de beurre mou mélangé au sucre et à la cannelle, sur toute la surface.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Roulez la pâte en un long boudin serré, dans le sens de la longueur.", badge: null },
+      { icone: "📐", titre: "Découper", detail: "Découpez le boudin en tronçons trapézoïdaux (coupes en biais alternées), et pincez le centre de chaque tronçon vers le bas pour former l'« oreille giflée ».", badge: null },
+      { icone: "🍬", titre: "Dorer", detail: "Dorez à l'œuf, parsemez de sucre perlé, et laissez lever une seconde fois.", badge: null },
+      { icone: "🔥", titre: "Cuire et servir", detail: "Enfournez à 220 °C jusqu'à ce que les korvapuusti soient dorées et gonflées. Servez tièdes avec un café. Moelleuses et parfumées — les reines de la pause-café finlandaise.", badge: null }
+    ]
+  },
 });

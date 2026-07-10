@@ -8343,4 +8343,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Laissez prendre, puis coupez ou détachez des morceaux. Craquant, doré et très sucré — la douceur de fête d'Asie centrale.", badge: null }
     ]
   },
+  nalesniki: {
+    dateAjout: "2026-07-10T19:07:00",
+    nom: "Naleśniki",
+    cat: "desserts", pays: "pologne",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🥞",
+    description: "Naleśniki — les crêpes fourrées polonaises : de fines crêpes garnies d'un fromage blanc sucré et vanillé (twaróg), roulées puis dorées au beurre. Moelleuses et gourmandes, elles se dégustent au goûter ou au petit-déjeuner, nappées de crème ou de fruits. Un grand classique douillet de la Pologne.",
+    tableauNalesniki: [
+      { nb: 1, farine: "40 g", lait: "90 ml", oeufs: "1", fromageblanc: "50 g", sucre: "15 g", beurre: "8 g", vanille: "0.3 g" },
+      { nb: 2, farine: "80 g", lait: "180 ml", oeufs: "2", fromageblanc: "100 g", sucre: "30 g", beurre: "16 g", vanille: "0.6 g" },
+      { nb: 3, farine: "120 g", lait: "270 ml", oeufs: "3", fromageblanc: "150 g", sucre: "45 g", beurre: "24 g", vanille: "0.9 g" },
+      { nb: 4, farine: "160 g", lait: "360 ml", oeufs: "4", fromageblanc: "200 g", sucre: "60 g", beurre: "32 g", vanille: "1.2 g" },
+      { nb: 5, farine: "200 g", lait: "450 ml", oeufs: "5", fromageblanc: "250 g", sucre: "75 g", beurre: "40 g", vanille: "1.5 g" },
+      { nb: 6, farine: "240 g", lait: "540 ml", oeufs: "6", fromageblanc: "300 g", sucre: "90 g", beurre: "48 g", vanille: "1.8 g" },
+      { nb: 7, farine: "280 g", lait: "630 ml", oeufs: "7", fromageblanc: "350 g", sucre: "105 g", beurre: "56 g", vanille: "2.1 g" },
+      { nb: 8, farine: "320 g", lait: "720 ml", oeufs: "8", fromageblanc: "400 g", sucre: "120 g", beurre: "64 g", vanille: "2.4 g" },
+      { nb: 9, farine: "360 g", lait: "810 ml", oeufs: "9", fromageblanc: "450 g", sucre: "135 g", beurre: "72 g", vanille: "2.7 g" },
+      { nb: 10, farine: "400 g", lait: "900 ml", oeufs: "10", fromageblanc: "500 g", sucre: "150 g", beurre: "80 g", vanille: "3 g" },
+      { nb: 11, farine: "440 g", lait: "990 ml", oeufs: "11", fromageblanc: "550 g", sucre: "165 g", beurre: "88 g", vanille: "3.3 g" },
+      { nb: 12, farine: "480 g", lait: "1080 ml", oeufs: "12", fromageblanc: "600 g", sucre: "180 g", beurre: "96 g", vanille: "3.6 g" },
+      { nb: 13, farine: "520 g", lait: "1170 ml", oeufs: "13", fromageblanc: "650 g", sucre: "195 g", beurre: "104 g", vanille: "3.9 g" },
+      { nb: 14, farine: "560 g", lait: "1260 ml", oeufs: "14", fromageblanc: "700 g", sucre: "210 g", beurre: "112 g", vanille: "4.2 g" },
+      { nb: 15, farine: "600 g", lait: "1350 ml", oeufs: "15", fromageblanc: "750 g", sucre: "225 g", beurre: "120 g", vanille: "4.5 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Fouettez la farine avec le lait, l'œuf et une pincée de sel en une pâte à crêpe lisse et fluide. Laissez reposer.", badge: null },
+      { icone: "🧀", titre: "La farce", detail: "Mélangez le fromage blanc (twaróg) égoutté avec le sucre, la vanille et un jaune d'œuf, en une garniture crémeuse et sucrée.", badge: null },
+      { icone: "🍳", titre: "Les crêpes", detail: "Faites cuire de fines crêpes dans une poêle beurrée, dorées des deux côtés.", badge: null },
+      { icone: "🧀", titre: "Garnir", detail: "Étalez une bande de farce au fromage sur chaque crêpe.", badge: null },
+      { icone: "🌯", titre: "Rouler", detail: "Repliez les bords et roulez la crêpe en un boudin bien fermé (ou pliez-la en petit paquet).", badge: null },
+      { icone: "🔥", titre: "Dorer", detail: "Faites dorer les naleśniki roulés dans un peu de beurre, jusqu'à ce qu'ils soient légèrement croustillants.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tièdes, saupoudrés de sucre glace et nappés de crème ou de fruits. Moelleuses et gourmandes — le goûter douillet de la Pologne.", badge: null }
+    ]
+  },
 });

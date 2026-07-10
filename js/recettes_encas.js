@@ -5073,4 +5073,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Badigeonnez de beurre fondu, parsemez de grains de grenade et de sumac, et servez chauds. Fins, verts et parfumés — les demi-lunes d'Azerbaïdjan.", badge: null }
     ]
   },
+  zacusca: {
+    dateAjout: "2026-07-10T19:04:00",
+    nom: "Zacuscă",
+    cat: "encas", pays: "roumanie",
+    base: 4,
+    temps: "1h30",
+    niveau: "⭐ Facile",
+    emoji: "🍆",
+    description: "Zacuscă — la tartinade d'automne roumaine : des aubergines et des poivrons rôtis, longuement mijotés avec de la tomate et de l'oignon en une confiture de légumes fondante et fumée. Mise en bocaux à l'automne, elle se tartine sur du pain tout l'hiver. Végétale, rustique et réconfortante.",
+    tableauZacusca: [
+      { nb: 1, aubergine: "70 g", poivron: "50 g", tomates: "½", oignon: "30 g", huileolive: "12 ml", laurier: "0.2 g", sel: "2 g" },
+      { nb: 2, aubergine: "140 g", poivron: "100 g", tomates: "1", oignon: "60 g", huileolive: "24 ml", laurier: "0.4 g", sel: "4 g" },
+      { nb: 3, aubergine: "210 g", poivron: "150 g", tomates: "1½", oignon: "90 g", huileolive: "36 ml", laurier: "0.6 g", sel: "6 g" },
+      { nb: 4, aubergine: "280 g", poivron: "200 g", tomates: "2", oignon: "120 g", huileolive: "48 ml", laurier: "0.8 g", sel: "8 g" },
+      { nb: 5, aubergine: "350 g", poivron: "250 g", tomates: "2½", oignon: "150 g", huileolive: "60 ml", laurier: "1 g", sel: "10 g" },
+      { nb: 6, aubergine: "420 g", poivron: "300 g", tomates: "3", oignon: "180 g", huileolive: "72 ml", laurier: "1.2 g", sel: "12 g" },
+      { nb: 7, aubergine: "490 g", poivron: "350 g", tomates: "3½", oignon: "210 g", huileolive: "84 ml", laurier: "1.4 g", sel: "14 g" },
+      { nb: 8, aubergine: "560 g", poivron: "400 g", tomates: "4", oignon: "240 g", huileolive: "96 ml", laurier: "1.6 g", sel: "16 g" },
+      { nb: 9, aubergine: "630 g", poivron: "450 g", tomates: "4½", oignon: "270 g", huileolive: "108 ml", laurier: "1.8 g", sel: "18 g" },
+      { nb: 10, aubergine: "700 g", poivron: "500 g", tomates: "5", oignon: "300 g", huileolive: "120 ml", laurier: "2 g", sel: "20 g" },
+      { nb: 11, aubergine: "770 g", poivron: "550 g", tomates: "5½", oignon: "330 g", huileolive: "132 ml", laurier: "2.2 g", sel: "22 g" },
+      { nb: 12, aubergine: "840 g", poivron: "600 g", tomates: "6", oignon: "360 g", huileolive: "144 ml", laurier: "2.4 g", sel: "24 g" },
+      { nb: 13, aubergine: "910 g", poivron: "650 g", tomates: "6½", oignon: "390 g", huileolive: "156 ml", laurier: "2.6 g", sel: "26 g" },
+      { nb: 14, aubergine: "980 g", poivron: "700 g", tomates: "7", oignon: "420 g", huileolive: "168 ml", laurier: "2.8 g", sel: "28 g" },
+      { nb: 15, aubergine: "1050 g", poivron: "750 g", tomates: "7½", oignon: "450 g", huileolive: "180 ml", laurier: "3 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍆", titre: "Rôtir", detail: "Faites rôtir les aubergines et les poivrons entiers (au four ou sur le feu) jusqu'à ce que la peau soit noircie et la chair fondante.", badge: null },
+      { icone: "🥄", titre: "Éplucher", detail: "Épluchez les légumes rôtis, retirez les pépins, et hachez la chair fumée.", badge: null },
+      { icone: "🧅", titre: "L'oignon", detail: "Faites fondre longuement l'oignon émincé dans une bonne quantité d'huile, jusqu'à ce qu'il soit doré.", badge: null },
+      { icone: "🍅", titre: "La base", detail: "Ajoutez la purée de tomate et laissez réduire quelques minutes.", badge: null },
+      { icone: "🫙", titre: "Mijoter", detail: "Ajoutez les légumes rôtis hachés, le laurier et le sel, et laissez mijoter longuement à feu doux, en remuant, jusqu'à ce que le mélange épaississe et confise (l'huile remonte en surface).", badge: null },
+      { icone: "🌰", titre: "Confire", detail: "Poursuivez jusqu'à obtenir une tartinade épaisse, sombre et fumée, façon confiture de légumes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez refroidir (ou mettez en bocaux stérilisés). Servez à température ambiante, tartinée sur du pain frais. Végétale, fumée et rustique — la conserve d'automne roumaine.", badge: null }
+    ]
+  },
+  placki: {
+    dateAjout: "2026-07-10T19:06:00",
+    nom: "Placki Ziemniaczane",
+    cat: "encas", pays: "pologne",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Placki ziemniaczane — les galettes de pomme de terre polonaises : des pommes de terre râpées, liées d'un peu d'œuf et de farine, frites en galettes dorées et croustillantes. Servies salées (crème aigre) ou sucrées (sucre, compote), ce sont l'en-cas rustique et réconfortant par excellence de la Pologne.",
+    tableauPlacki: [
+      { nb: 1, pommedeterre: "120 g", oignon: "20 g", oeufs: "½", farine: "12 g", creme: "15 g", huileolive: "10 ml", sel: "2 g" },
+      { nb: 2, pommedeterre: "240 g", oignon: "40 g", oeufs: "1", farine: "24 g", creme: "30 g", huileolive: "20 ml", sel: "4 g" },
+      { nb: 3, pommedeterre: "360 g", oignon: "60 g", oeufs: "1½", farine: "36 g", creme: "45 g", huileolive: "30 ml", sel: "6 g" },
+      { nb: 4, pommedeterre: "480 g", oignon: "80 g", oeufs: "2", farine: "48 g", creme: "60 g", huileolive: "40 ml", sel: "8 g" },
+      { nb: 5, pommedeterre: "600 g", oignon: "100 g", oeufs: "2½", farine: "60 g", creme: "75 g", huileolive: "50 ml", sel: "10 g" },
+      { nb: 6, pommedeterre: "720 g", oignon: "120 g", oeufs: "3", farine: "72 g", creme: "90 g", huileolive: "60 ml", sel: "12 g" },
+      { nb: 7, pommedeterre: "840 g", oignon: "140 g", oeufs: "3½", farine: "84 g", creme: "105 g", huileolive: "70 ml", sel: "14 g" },
+      { nb: 8, pommedeterre: "960 g", oignon: "160 g", oeufs: "4", farine: "96 g", creme: "120 g", huileolive: "80 ml", sel: "16 g" },
+      { nb: 9, pommedeterre: "1080 g", oignon: "180 g", oeufs: "4½", farine: "108 g", creme: "135 g", huileolive: "90 ml", sel: "18 g" },
+      { nb: 10, pommedeterre: "1200 g", oignon: "200 g", oeufs: "5", farine: "120 g", creme: "150 g", huileolive: "100 ml", sel: "20 g" },
+      { nb: 11, pommedeterre: "1320 g", oignon: "220 g", oeufs: "5½", farine: "132 g", creme: "165 g", huileolive: "110 ml", sel: "22 g" },
+      { nb: 12, pommedeterre: "1440 g", oignon: "240 g", oeufs: "6", farine: "144 g", creme: "180 g", huileolive: "120 ml", sel: "24 g" },
+      { nb: 13, pommedeterre: "1560 g", oignon: "260 g", oeufs: "6½", farine: "156 g", creme: "195 g", huileolive: "130 ml", sel: "26 g" },
+      { nb: 14, pommedeterre: "1680 g", oignon: "280 g", oeufs: "7", farine: "168 g", creme: "210 g", huileolive: "140 ml", sel: "28 g" },
+      { nb: 15, pommedeterre: "1800 g", oignon: "300 g", oeufs: "7½", farine: "180 g", creme: "225 g", huileolive: "150 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Râper", detail: "Râpez finement les pommes de terre crues et l'oignon.", badge: null },
+      { icone: "💧", titre: "Égoutter", detail: "Pressez la pulpe râpée pour retirer un maximum d'eau (le secret de galettes croustillantes).", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la pulpe égouttée avec l'œuf, la farine, le sel et le poivre, en une pâte épaisse.", badge: null },
+      { icone: "🍳", titre: "Former", detail: "Déposez des cuillerées de pâte dans l'huile chaude et aplatissez-les en galettes fines.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Faites frire les galettes des deux côtés jusqu'à ce qu'elles soient bien dorées et croustillantes.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Égouttez les placki sur du papier absorbant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaudes, avec de la crème aigre (salé) ou du sucre et de la compote (sucré). Croustillantes et réconfortantes — l'en-cas rustique polonais.", badge: null }
+    ]
+  },
 });

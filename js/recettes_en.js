@@ -67324,5 +67324,345 @@ window.RECETTES_EN = {
     "detail": "Let it set, then cut or break off pieces. Crunchy, golden and very sweet — the festive treat of Central Asia."
    }
   ]
+ },
+ "paprikash": {
+  "nom": "Chicken Paprikash",
+  "description": "Csirkepaprikás — the Hungarian paprika chicken: pieces of chicken simmered in a creamy sauce of softened onion and sweet paprika, bound with sour cream. Comforting and colourful, it's traditionally served with nokedli (small fresh dumplings). The great family classic of Hungary.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Slowly soften the sliced onion in the oil (or lard), over low heat, until translucent and golden."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "Off the heat, add the sweet paprika and stir briskly (it must not burn, or it turns bitter)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the diced tomato and pepper, and let it cook down for a few minutes."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Add the chicken pieces and coat them in the paprika base."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add a little water or broth, cover and simmer over low heat until the chicken is tender."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Loosen the sour cream with a little flour, then stir it into the sauce off the boil to bind it without splitting."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the paprikash coated in its creamy sauce, with nokedli (small dumplings) or potatoes. Comforting and colourful — the Hungarian family classic."
+   }
+  ]
+ },
+ "burek": {
+  "nom": "Burek",
+  "description": "Burek — the flaky spiral of the Balkans: thin filo pastry sheets filled with minced meat (or cheese), rolled then coiled into a spiral and baked until golden and crisp. Served warm with a yogurt, it's the king breakfast and snack of Serbia and the Balkans.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Sauté the minced meat with the sliced onion, salt and pepper, until cooked and fragrant. Let it cool."
+   },
+   {
+    "titre": "The sheets",
+    "detail": "Lay out a sheet of filo pastry and lightly brush it with oil."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread a line of filling along one edge of the sheet."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the sheet into a long thin log around the filling, without rolling too tight."
+   },
+   {
+    "titre": "Coil",
+    "detail": "Coil the log onto itself into a spiral (like a snail) and place it in an oiled tin. Repeat to fill the tin."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Glaze the top with a mix of egg and oil, and bake at 200°C until the burek is golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Cut into portions and serve warm, with a big glass of yogurt (or ayran). Golden, flaky and crisp — the king snack of the Balkans."
+   }
+  ]
+ },
+ "muckalica": {
+  "nom": "Mučkalica",
+  "description": "Mučkalica — the Serbian pork and pepper skillet: pieces of grilled pork simmered with a profusion of peppers, onions and tomatoes, lifted with paprika and chilli. Smoky, colourful and generous, it's served with bread, born to use up leftover grilled meat.",
+  "etapes": [
+   {
+    "titre": "Grill the pork",
+    "detail": "Grill (or sear) the pork pieces until golden and lightly smoky, then cut them into strips."
+   },
+   {
+    "titre": "The peppers",
+    "detail": "Sauté a large amount of sliced peppers and onions in the oil, over high heat, until soft and lightly coloured."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "Add the garlic, paprika and chilli, and stir off the high heat so they don't burn."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the crushed tomato and let it cook down into a thick, fragrant base."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the grilled pork to the skillet and mix well."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over low heat so the flavours marry and the sauce thickens."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve nice and hot, with country bread to mop up. Smoky, colourful and generous — the convivial Serbian skillet."
+   }
+  ]
+ },
+ "kavarma": {
+  "nom": "Kavarma",
+  "description": "Kavarma — the Bulgarian clay-pot stew: pieces of pork (or chicken) and vegetables (pepper, onion, mushroom) long-simmered then served bubbling in a small clay pot, lifted with paprika. Rustic, fragrant and comforting, it's a great classic of Bulgarian taverns.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Brown the pork pieces in the oil, on all sides, then set them aside."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Sauté the sliced onion, pepper and mushrooms until soft."
+   },
+   {
+    "titre": "The paprika",
+    "detail": "Add the paprika and tomato, and let it cook down into a fragrant base."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the pork, add a little broth (or wine), and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer over low heat until the pork is tender and the sauce thick."
+   },
+   {
+    "titre": "The clay pots",
+    "detail": "Divide the stew into small clay pots (gyuveche), and blast them in a hot oven for a few minutes so they bubble (sometimes with an egg cracked on top)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve bubbling, in the pot, with bread. Rustic, fragrant and comforting — the stew of Bulgarian taverns."
+   }
+  ]
+ },
+ "zacusca": {
+  "nom": "Zacuscă",
+  "description": "Zacuscă — the Romanian autumn spread: roasted aubergines and peppers, long-simmered with tomato and onion into a soft, smoky vegetable jam. Jarred in autumn, it's spread on bread all winter. Plant-based, rustic and comforting.",
+  "etapes": [
+   {
+    "titre": "Roast",
+    "detail": "Roast the whole aubergines and peppers (in the oven or over fire) until the skin is charred and the flesh soft."
+   },
+   {
+    "titre": "Peel",
+    "detail": "Peel the roasted vegetables, remove the seeds, and chop the smoky flesh."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Slowly soften the sliced onion in a good amount of oil, until golden."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the tomato purée and let it reduce for a few minutes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add the chopped roasted vegetables, bay and salt, and simmer at length over low heat, stirring, until the mixture thickens and confits (the oil rises to the surface)."
+   },
+   {
+    "titre": "Confit",
+    "detail": "Continue until you get a thick, dark, smoky spread, like a vegetable jam."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it cool (or jar it sterilised). Serve at room temperature, spread on fresh bread. Plant-based, smoky and rustic — the Romanian autumn preserve."
+   }
+  ]
+ },
+ "kotleti": {
+  "nom": "Kotleti",
+  "description": "Kotleti — the Russian meat patties: tender minced-meat patties bound with bread soaked in milk, breaded and pan-browned. Soft and juicy, they're served with mash or buckwheat, an everyday comfort dish across Russia and Eastern Europe.",
+  "etapes": [
+   {
+    "titre": "The panade",
+    "detail": "Soak the bread crumb in the milk, then lightly wring it out: the secret to soft kotleti."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Grate or very finely chop the onion (raw, for the juice)."
+   },
+   {
+    "titre": "The mix",
+    "detail": "Knead the minced meats with the panade, onion, egg, salt and pepper, until you get a smooth, even mixture."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form oval patties with a wet hand, even and smooth."
+   },
+   {
+    "titre": "Bread",
+    "detail": "Roll each patty in the breadcrumbs to coat it."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Brown the kotleti in a pan on both sides, then cover and cook over low heat until cooked through and juicy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with mashed potato, buckwheat (grechka) or pasta. Soft and juicy — the everyday comfort dish of Russia."
+   }
+  ]
+ },
+ "placki": {
+  "nom": "Placki Ziemniaczane",
+  "description": "Placki ziemniaczane — the Polish potato pancakes: grated potatoes, bound with a little egg and flour, fried into golden, crisp cakes. Served savoury (sour cream) or sweet (sugar, compote), they're the ultimate rustic, comforting snack of Poland.",
+  "etapes": [
+   {
+    "titre": "Grate",
+    "detail": "Finely grate the raw potatoes and the onion."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Press the grated pulp to remove as much water as possible (the secret to crisp pancakes)."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Mix the drained pulp with the egg, flour, salt and pepper, into a thick batter."
+   },
+   {
+    "titre": "Form",
+    "detail": "Drop spoonfuls of batter into the hot oil and flatten them into thin cakes."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the cakes on both sides until nicely golden and crisp."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain the placki on paper towel."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with sour cream (savoury) or sugar and compote (sweet). Crisp and comforting — the rustic Polish snack."
+   }
+  ]
+ },
+ "nalesniki": {
+  "nom": "Naleśniki",
+  "description": "Naleśniki — the Polish filled crepes: thin crepes filled with a sweet vanilla-scented curd cheese (twaróg), rolled then browned in butter. Soft and indulgent, they're eaten as a snack or breakfast, topped with cream or fruit. A cosy classic of Poland.",
+  "etapes": [
+   {
+    "titre": "The batter",
+    "detail": "Whisk the flour with the milk, egg and a pinch of salt into a smooth, fluid crepe batter. Let it rest."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the drained curd cheese (twaróg) with the sugar, vanilla and an egg yolk, into a creamy sweet filling."
+   },
+   {
+    "titre": "The crepes",
+    "detail": "Cook thin crepes in a buttered pan, golden on both sides."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Spread a band of cheese filling on each crepe."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Fold in the edges and roll the crepe into a tightly closed log (or fold into a little parcel)."
+   },
+   {
+    "titre": "Brown",
+    "detail": "Brown the rolled naleśniki in a little butter, until lightly crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, dusted with icing sugar and topped with cream or fruit. Soft and indulgent — the cosy snack of Poland."
+   }
+  ]
+ },
+ "korvapuusti": {
+  "nom": "Korvapuusti",
+  "description": "Korvapuusti — the Finnish cinnamon buns: a cardamom-scented brioche dough, rolled with cinnamon butter, then cut and pinched into a 'slapped ear' shape, scattered with pearl sugar. Soft and fragrant, they're the queens of 'kahvi' (the coffee break) in Finland.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with the warm milk, yeast, sugar, egg, ground cardamom and butter, into a soft dough. Let it rise until doubled."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the risen dough into a large even rectangle."
+   },
+   {
+    "titre": "The cinnamon butter",
+    "detail": "Spread with soft butter mixed with sugar and cinnamon, over the whole surface."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Roll the dough into a long tight log, lengthwise."
+   },
+   {
+    "titre": "Cut",
+    "detail": "Cut the log into trapezoid pieces (alternating diagonal cuts), and pinch the centre of each piece downwards to form the 'slapped ear'."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Glaze with egg, scatter with pearl sugar, and let rise a second time."
+   },
+   {
+    "titre": "Bake and serve",
+    "detail": "Bake at 220°C until the korvapuusti are golden and puffed. Serve warm with a coffee. Soft and fragrant — the queens of the Finnish coffee break."
+   }
+  ]
+ },
+ "raspeballer": {
+  "nom": "Raspeballer",
+  "description": "Raspeballer (komle) — the Norwegian potato dumplings: large dumplings of grated potato and flour, poached then served with salted meat, sausage and melted butter. Nourishing and rustic, they warm the long winters of the Norwegian west coast.",
+  "etapes": [
+   {
+    "titre": "The salted meat",
+    "detail": "Desalt then gently poach the salted meat (hock, belly) until tender. Keep the broth."
+   },
+   {
+    "titre": "Grate",
+    "detail": "Finely grate the raw potatoes and press them to remove the water."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the grated potato with a little mashed cooked potato, the flour (and barley), the salt, into a dough that holds together."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Form large even dumplings with wet hands."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Poach the dumplings gently in the simmering meat broth (without hard boiling) until they rise and are cooked through (30-40 minutes)."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Melt the butter and brown a little onion to coat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the raspeballer with the salted meat, sausage, melted butter and optionally swede. Nourishing and rustic — the comfort of Norwegian winters."
+   }
+  ]
  }
 };
