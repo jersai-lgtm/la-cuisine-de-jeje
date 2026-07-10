@@ -1611,4 +1611,42 @@ Object.assign(recettes, {
       { icone: "☕", titre: "Servir", detail: "Égouttez et servez tièdes, saupoudrés de sucre si vous aimez, avec un thé épicé (chai) ou un curry de haricots (mbaazi). Le petit-déjeuner swahili.", badge: null }
     ]
   },
+  youtiao: {
+    dateAjout: "2026-07-10T12:08:00",
+    nom: "Youtiao",
+    cat: "boulangerie", pays: "chine",
+    base: 4,
+    temps: "30 min + repos",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥖",
+    description: "Youtiao — le beignet-baguette chinois : une longue pâte levée, formée de deux bandes soudées puis étirées et frites, qui gonfle en un bâtonnet doré, croustillant dehors et alvéolé dedans. Trempé dans le lait de soja ou le congee, c'est le petit-déjeuner de rue par excellence en Chine.",
+    tableauYoutiao: [
+      { nb: 1, farine: "70 g", levure: "2 g", maizena: "6 g", sucre: "3 g", huileolive: "10 ml", sel: "2 g" },
+      { nb: 2, farine: "140 g", levure: "4 g", maizena: "12 g", sucre: "6 g", huileolive: "20 ml", sel: "4 g" },
+      { nb: 3, farine: "210 g", levure: "6 g", maizena: "18 g", sucre: "9 g", huileolive: "30 ml", sel: "6 g" },
+      { nb: 4, farine: "280 g", levure: "8 g", maizena: "24 g", sucre: "12 g", huileolive: "40 ml", sel: "8 g" },
+      { nb: 5, farine: "350 g", levure: "10 g", maizena: "30 g", sucre: "15 g", huileolive: "50 ml", sel: "10 g" },
+      { nb: 6, farine: "420 g", levure: "12 g", maizena: "36 g", sucre: "18 g", huileolive: "60 ml", sel: "12 g" },
+      { nb: 7, farine: "490 g", levure: "14 g", maizena: "42 g", sucre: "21 g", huileolive: "70 ml", sel: "14 g" },
+      { nb: 8, farine: "560 g", levure: "16 g", maizena: "48 g", sucre: "24 g", huileolive: "80 ml", sel: "16 g" },
+      { nb: 9, farine: "630 g", levure: "18 g", maizena: "54 g", sucre: "27 g", huileolive: "90 ml", sel: "18 g" },
+      { nb: 10, farine: "700 g", levure: "20 g", maizena: "60 g", sucre: "30 g", huileolive: "100 ml", sel: "20 g" },
+      { nb: 11, farine: "770 g", levure: "22 g", maizena: "66 g", sucre: "33 g", huileolive: "110 ml", sel: "22 g" },
+      { nb: 12, farine: "840 g", levure: "24 g", maizena: "72 g", sucre: "36 g", huileolive: "120 ml", sel: "24 g" },
+      { nb: 13, farine: "910 g", levure: "26 g", maizena: "78 g", sucre: "39 g", huileolive: "130 ml", sel: "26 g" },
+      { nb: 14, farine: "980 g", levure: "28 g", maizena: "84 g", sucre: "42 g", huileolive: "140 ml", sel: "28 g" },
+      { nb: 15, farine: "1050 g", levure: "30 g", maizena: "90 g", sucre: "45 g", huileolive: "150 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, la levure, une pincée de bicarbonate, le sel et le sucre, puis pétrissez avec de l'eau et un peu d'huile en une pâte souple et lisse.", badge: null },
+      { icone: "😴", titre: "Le long repos", detail: "Filmez et laissez reposer la pâte plusieurs heures (idéalement une nuit au frais) : elle doit être détendue et légèrement levée.", badge: null },
+      { icone: "📏", titre: "Étaler", detail: "Étalez la pâte en une longue bande d'environ 1 cm d'épaisseur, et détaillez-la en lanières régulières.", badge: null },
+      { icone: "🥢", titre: "Souder", detail: "Superposez les lanières deux par deux et pressez le centre dans la longueur avec une baguette : les deux bandes se soudent tout en restant distinctes.", badge: null },
+      { icone: "🙌", titre: "Étirer", detail: "Étirez délicatement chaque paire en une longue tige, sans déchirer, juste avant de la frire.", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Plongez les tiges dans un bain d'huile bien chaud : elles gonflent aussitôt et doublent de volume. Retournez-les jusqu'à ce qu'elles soient dorées et croustillantes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Égouttez sur du papier absorbant et servez chaud, à tremper dans un lait de soja ou un congee. Croustillant dehors, alvéolé dedans — le petit-déjeuner de rue chinois.", badge: null }
+    ],
+    liees: ["congee"]
+  },
 });

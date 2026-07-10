@@ -64944,5 +64944,345 @@ window.RECETTES_EN = {
     "detail": "Drizzle with kuromitsu black syrup just before serving. Fresh, wobbly and melting — the summer treat that melts in the mouth."
    }
   ]
+ },
+ "sujebi": {
+  "nom": "Sujebi",
+  "description": "Sujebi — the Korean hand-torn dough soup: pieces of soft dough stretched and torn by hand, dropped into a broth flavoured with anchovies and vegetables (potato, courgette). Comforting, rustic and cheap, it's the rainy-day dish of Korea.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Knead the flour with water, a little oil and salt into a soft, smooth dough. Cover and rest at least 30 minutes (it turns elastic)."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Make a broth flavoured with dried anchovies and konbu seaweed (or a vegetable broth), then strain it."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Bring the broth to a boil with the diced potato, onion and garlic, and cook for a few minutes."
+   },
+   {
+    "titre": "Tear the dough",
+    "detail": "Stretch the rested dough between wet fingers and tear it into thin, irregular pieces, dropping them straight into the simmering broth."
+   },
+   {
+    "titre": "Cooking",
+    "detail": "Cook the dough pieces 5 to 6 minutes, until they rise to the surface and turn translucent and soft."
+   },
+   {
+    "titre": "The courgette",
+    "detail": "Add the courgette in half-moons and the spring onion, season with soy sauce, and continue 2 minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with a little spicy sauce (yangnyeom) to add to taste. Comforting, rustic and generous — the rainy-day soup of Korea."
+   }
+  ]
+ },
+ "seolleongtang": {
+  "nom": "Seolleongtang",
+  "description": "Seolleongtang — the milky ox bone soup: a broth made by simmering beef bones for hours, until milky white and rich. Served unsalted with noodles and shredded beef, each person seasons it at the table with salt and spring onion. Comforting and nourishing, it's an ancestral Korean remedy.",
+  "etapes": [
+   {
+    "titre": "Soak the bones",
+    "detail": "Soak the beef bones in cold water 1 hour to remove the blood, then blanch them and discard this first water."
+   },
+   {
+    "titre": "The long simmer",
+    "detail": "Cover the bones with fresh water and simmer at a rolling boil for 2 to 3 hours: the broth gradually turns milky white and rich."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Add a piece of beef brisket during cooking, let it turn tender, then remove and slice it thinly."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook fine noodles (somyeon) or prepare a little rice, to add to the bowl."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Divide the noodles (or rice) and the sliced beef into the bowls, and pour the scalding milky broth."
+   },
+   {
+    "titre": "The seasoning",
+    "detail": "Don't salt the broth: serve the salt, pepper and chopped spring onion on the side, so each person seasons to their own hand."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, with kimchi and pickled radish (kkakdugi) on the side. Comforting, milky and nourishing — the Korean remedy for deep cold."
+   }
+  ]
+ },
+ "jokbal": {
+  "nom": "Jokbal",
+  "description": "Jokbal — Korean braised pig's trotters: pork skin and meat long-simmered in a dark broth of soy, ginger and spices, until tender and gelatinous. Sliced and served with salted shrimp, it's a festive, convivial dish of Korea.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the pork hock (or trotters) in cold water 1 hour, then blanch and rinse it to remove impurities."
+   },
+   {
+    "titre": "The spice broth",
+    "detail": "Make a broth with the soy sauce, sugar, ginger, garlic, onion, leek, cinnamon and star anise."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Submerge the pork in the broth, bring to a simmer and cover."
+   },
+   {
+    "titre": "Long simmer",
+    "detail": "Simmer 2 hours over low heat, turning the pork now and then, until the meat is tender and the skin gelatinous."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Uncover and reduce the broth at the end, basting the pork, until it turns glossy and glazed."
+   },
+   {
+    "titre": "Slice",
+    "detail": "Let cool slightly, then debone and slice the pork into thin strips with a little skin in each bite."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with salted shrimp (saeujeot), raw garlic, chilli and lettuce leaves for wrapping. Tender, gelatinous and convivial — the Korean festive dish."
+   }
+  ]
+ },
+ "kongguksu": {
+  "nom": "Kongguksu",
+  "description": "Kongguksu — noodles in iced soy milk: wheat noodles bathed in a creamy broth of freshly ground soybeans, served ice-cold and topped with cucumber and sesame. Refreshing, mild and protein-rich, it's the essential summer dish of Korea.",
+  "etapes": [
+   {
+    "titre": "Soak the soy",
+    "detail": "Soak the yellow soybeans overnight, then cook them 15 minutes in boiling water until tender."
+   },
+   {
+    "titre": "The soy milk",
+    "detail": "Rub the beans to remove the skins, then blend them at length with cold water and the toasted sesame until you get a smooth, creamy milk."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Lightly salt the soy milk and place it in the fridge: it must be served ice-cold."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the wheat noodles (somyeon), rinse in cold water and drain thoroughly."
+   },
+   {
+    "titre": "The toppings",
+    "detail": "Cut the cucumber into fine julienne and the tomato into wedges."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Divide the noodles into the bowls and pour the ice-cold soy milk over them, generously."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Top with cucumber, tomato and sesame, add a few ice cubes and serve at once. Refreshing, mild and protein-rich — the quintessential Korean summer dish."
+   }
+  ]
+ },
+ "gyeranmari": {
+  "nom": "Gyeranmari",
+  "description": "Gyeranmari — the Korean rolled omelette: beaten eggs cooked in thin layers then rolled onto themselves, studded with colourful vegetables and seaweed. Soft, pretty in slices and lightly salted, it's a side dish (banchan) or lunchbox filling very popular in Korea.",
+  "etapes": [
+   {
+    "titre": "Beat the eggs",
+    "detail": "Beat the eggs with a pinch of salt, without frothing too much, and strain them for a smooth texture."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Cut the carrot, spring onion and leek into tiny dice, and stir them into the beaten eggs."
+   },
+   {
+    "titre": "First layer",
+    "detail": "Lightly oil a pan and pour in a thin layer of egg, over low heat, until it's almost set."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Gently roll the omelette from one edge with a spatula, keeping the roll to one side of the pan."
+   },
+   {
+    "titre": "Layer up",
+    "detail": "Pour in a new layer of egg, lift the roll so it flows underneath, let it set then roll again. Repeat to thicken."
+   },
+   {
+    "titre": "Nori",
+    "detail": "On the last layer, lay a sheet of nori before rolling, for a pretty green spiral at the core."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let cool slightly, then slice the roll into even bites. Soft and colourful — the Korean rolled banchan, perfect in a lunchbox."
+   }
+  ]
+ },
+ "galbitang": {
+  "nom": "Galbitang",
+  "description": "Galbitang — the Korean short rib soup: a clear, delicate broth made by long-simmering beef ribs with radish, served with noodles and an egg ribbon. Light, comforting and refined, it's a dish for festivities and convalescence in Korea.",
+  "etapes": [
+   {
+    "titre": "Soak the ribs",
+    "detail": "Soak the beef ribs in cold water 1 hour to remove the blood, then blanch them and discard this water."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Cover the ribs with fresh water with the onion, garlic and a piece of radish (daikon), and simmer 1 hour 30 over low heat."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Remove the now-tender ribs, skim the fat from the surface, and season the broth simply with salt and garlic."
+   },
+   {
+    "titre": "The radish",
+    "detail": "Add the radish in large cubes and let it cook in the broth until translucent and tender."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook glass noodles (dangmyeon) or fine noodles separately, and divide them into the bowls."
+   },
+   {
+    "titre": "The egg ribbon",
+    "detail": "Beat a little egg and pour it in a thin stream into the simmering broth to form fine golden ribbons."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Plate the ribs, radish and noodles in the bowls, pour the clear broth and scatter with spring onion. Light, comforting and refined — the Korean festive soup."
+   }
+  ]
+ },
+ "wifecake": {
+  "nom": "Wife Cake",
+  "description": "Wife cake (lao po bing) — the Cantonese flaky pastry: two doughs worked together for a melting flakiness, filled with a soft paste of candied winter melon and glutinous rice. Golden, crisp outside and soft inside, it's an iconic treat of Hong Kong tea houses.",
+  "etapes": [
+   {
+    "titre": "The water dough",
+    "detail": "Mix part of the flour with sugar, a little butter and water, and knead into a soft dough. Let it rest."
+   },
+   {
+    "titre": "The fat dough",
+    "detail": "Rub the rest of the flour with butter until crumbly: this is what creates the flakiness."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Make a soft paste by mixing cooked glutinous rice flour, sugar and a little water (winter-melon style), until you get a malleable mass."
+   },
+   {
+    "titre": "The lamination",
+    "detail": "Enclose the fat dough in the water dough, roll out and fold several times to create fine layers."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Cut the dough, fill each disc with a ball of filling, and seal into a tight ball. Gently flatten into cakes."
+   },
+   {
+    "titre": "Glaze",
+    "detail": "Brush the cakes with beaten egg, scatter with sesame and score the top lightly (to let steam escape)."
+   },
+   {
+    "titre": "Bake and serve",
+    "detail": "Bake at 190°C for about 20 minutes, until the cakes are golden and flaky. Crisp outside, soft inside — the treat of Cantonese tea houses."
+   }
+  ]
+ },
+ "mooncake": {
+  "nom": "Mooncake",
+  "description": "Mooncake (yuebing) — the Mid-Autumn Festival pastry: a thin golden syrup crust enclosing a dense red bean or lotus paste, sometimes a salted egg yolk at the centre. Moulded with delicate patterns, it's the iconic sweet of family reunions in China.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the golden syrup (or honey), oil and a little alkaline water (kansui), then work in the flour to form a soft dough. Rest 1 hour."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Shape the red bean (or lotus) paste into even, smooth balls (with, if you like, a salted egg yolk sealed at the centre)."
+   },
+   {
+    "titre": "The balance",
+    "detail": "Weigh dough and filling in a precise ratio (about 1 to 4): the secret to a fine mooncake."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Flatten each disc of dough and wrap it around the ball of filling, drawing the dough all around until fully enclosed."
+   },
+   {
+    "titre": "Mould",
+    "detail": "Flour the mooncake mould and press each ball into it to imprint the pattern, then turn out gently."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake 5 minutes at 180°C, remove, brush with egg yolk, then bake 10 more minutes until the patterns are golden."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Rest 2 to 3 days (the 'huiyou'): the crust softens and shines. Enjoy in thin slices with tea. The iconic sweet of Mid-Autumn."
+   }
+  ]
+ },
+ "youtiao": {
+  "nom": "Youtiao",
+  "description": "Youtiao — the Chinese fried dough stick: a long leavened dough, formed from two welded strips then stretched and fried, puffing into a golden stick, crisp outside and airy inside. Dipped in soy milk or congee, it's the ultimate street breakfast in China.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, yeast, a pinch of baking soda, the salt and sugar, then knead with water and a little oil into a soft, smooth dough."
+   },
+   {
+    "titre": "The long rest",
+    "detail": "Cover and rest the dough for several hours (ideally overnight in the fridge): it should be relaxed and slightly risen."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough into a long strip about 1 cm thick, and cut it into even strips."
+   },
+   {
+    "titre": "Weld",
+    "detail": "Stack the strips in pairs and press the centre lengthwise with a chopstick: the two bands weld together while staying distinct."
+   },
+   {
+    "titre": "Stretch",
+    "detail": "Gently stretch each pair into a long rod, without tearing, just before frying."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Drop the rods into hot oil: they puff up at once and double in volume. Turn them until golden and crisp."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain on paper towel and serve hot, to dip in soy milk or congee. Crisp outside, airy inside — the Chinese street breakfast."
+   }
+  ]
+ },
+ "shengjianbao": {
+  "nom": "Shengjianbao",
+  "description": "Shengjianbao — the Shanghai pan-fried buns: leavened baozi filled with juicy pork, cooked in a pan until the base is golden and crisp, then finished by steam. Soft on top, crisp underneath and scattered with sesame, they hide a savoury broth centre.",
+  "etapes": [
+   {
+    "titre": "The leavened dough",
+    "detail": "Knead the flour with the yeast, sugar and warm water into a soft dough, and let it rise 1 hour until doubled."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the minced pork with the spring onion, ginger, soy sauce and a little water (or jellied broth), working until the filling is bound and juicy."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Cut the dough, roll out small discs and fill them, then pleat the edges into a pretty twist to seal them well."
+   },
+   {
+    "titre": "Sear the base",
+    "detail": "Arrange the buns in an oiled pan and brown the base over high heat, without moving them, until crisp."
+   },
+   {
+    "titre": "Finish by steam",
+    "detail": "Pour a little water into the pan and cover at once: the steam cooks the tops of the buns while the base stays crisp."
+   },
+   {
+    "titre": "Finish",
+    "detail": "When the water has evaporated, scatter with sesame and chopped spring onion, and let the base re-crisp for a moment."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, crisp underneath and soft on top, with black vinegar. Mind the scalding broth centre — the pan-fried buns of Shanghai."
+   }
+  ]
  }
 };

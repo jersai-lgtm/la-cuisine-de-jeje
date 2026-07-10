@@ -4439,4 +4439,79 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chauds, avec une sauce au yaourt ou un chutney. L'en-cas croustillant de la rupture du jeûne (iftar), à partager.", badge: null }
     ]
   },
+  gyeranmari: {
+    dateAjout: "2026-07-10T12:04:00",
+    nom: "Gyeranmari",
+    cat: "encas", pays: "coree",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    description: "Gyeranmari — l'omelette roulée coréenne : des œufs battus cuits en fine couche puis roulés sur eux-mêmes, garnis de légumes colorés et d'algue. Moelleuse, jolie en tranches et légèrement salée, c'est un accompagnement (banchan) ou une garniture de lunchbox très populaire en Corée.",
+    tableauGyeranmari: [
+      { nb: 1, oeufs: "2", carotte: "15 g", ciboule: "8 g", poireau: "10 g", nori: "1 g", huileolive: "4 ml", sel: "1 g" },
+      { nb: 2, oeufs: "4", carotte: "30 g", ciboule: "16 g", poireau: "20 g", nori: "2 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 3, oeufs: "6", carotte: "45 g", ciboule: "24 g", poireau: "30 g", nori: "3 g", huileolive: "12 ml", sel: "3 g" },
+      { nb: 4, oeufs: "8", carotte: "60 g", ciboule: "32 g", poireau: "40 g", nori: "4 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 5, oeufs: "10", carotte: "75 g", ciboule: "40 g", poireau: "50 g", nori: "5 g", huileolive: "20 ml", sel: "5 g" },
+      { nb: 6, oeufs: "12", carotte: "90 g", ciboule: "48 g", poireau: "60 g", nori: "6 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 7, oeufs: "14", carotte: "105 g", ciboule: "56 g", poireau: "70 g", nori: "7 g", huileolive: "28 ml", sel: "7 g" },
+      { nb: 8, oeufs: "16", carotte: "120 g", ciboule: "64 g", poireau: "80 g", nori: "8 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 9, oeufs: "18", carotte: "135 g", ciboule: "72 g", poireau: "90 g", nori: "9 g", huileolive: "36 ml", sel: "9 g" },
+      { nb: 10, oeufs: "20", carotte: "150 g", ciboule: "80 g", poireau: "100 g", nori: "10 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 11, oeufs: "22", carotte: "165 g", ciboule: "88 g", poireau: "110 g", nori: "11 g", huileolive: "44 ml", sel: "11 g" },
+      { nb: 12, oeufs: "24", carotte: "180 g", ciboule: "96 g", poireau: "120 g", nori: "12 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 13, oeufs: "26", carotte: "195 g", ciboule: "104 g", poireau: "130 g", nori: "13 g", huileolive: "52 ml", sel: "13 g" },
+      { nb: 14, oeufs: "28", carotte: "210 g", ciboule: "112 g", poireau: "140 g", nori: "14 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 15, oeufs: "30", carotte: "225 g", ciboule: "120 g", poireau: "150 g", nori: "15 g", huileolive: "60 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥚", titre: "Battre les œufs", detail: "Battez les œufs avec une pincée de sel, sans trop les faire mousser, et filtrez-les pour une texture bien lisse.", badge: null },
+      { icone: "🥕", titre: "Les légumes", detail: "Taillez la carotte, la ciboule et le poireau en tout petits dés, et incorporez-les aux œufs battus.", badge: null },
+      { icone: "🍳", titre: "Première couche", detail: "Huilez légèrement une poêle et versez une fine couche d'œufs, à feu doux, jusqu'à ce qu'elle soit presque prise.", badge: null },
+      { icone: "🌀", titre: "Rouler", detail: "Roulez délicatement l'omelette sur un bord à l'aide d'une spatule, en gardant le rouleau sur le côté de la poêle.", badge: null },
+      { icone: "➕", titre: "Superposer", detail: "Versez une nouvelle couche d'œufs, soulevez le rouleau pour qu'elle passe dessous, laissez prendre puis roulez à nouveau. Répétez pour épaissir.", badge: null },
+      { icone: "🍙", titre: "Nori", detail: "À la dernière couche, posez une feuille de nori avant de rouler, pour une jolie spirale verte au cœur.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez tiédir, puis tranchez le rouleau en bouchées régulières. Moelleuse et colorée — le banchan roulé coréen, parfait en lunchbox.", badge: null }
+    ]
+  },
+  shengjianbao: {
+    dateAjout: "2026-07-10T12:09:00",
+    nom: "Shengjianbao",
+    cat: "encas", pays: "chine",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥟",
+    description: "Shengjianbao — les petits pains poêlés de Shanghai : des baozi levés garnis de porc juteux, cuits à la poêle jusqu'à obtenir un fond doré et croustillant, puis terminés à la vapeur. Moelleux dessus, croustillants dessous et parsemés de sésame, ils cachent un cœur de bouillon savoureux.",
+    tableauShengjianbao: [
+      { nb: 1, farine: "70 g", levure: "2 g", porc: "50 g", ciboule: "8 g", gingembre: "3 g", saucesoja: "8 ml", sesame: "3 g", sucre: "3 g", huileolive: "5 ml", sel: "1 g" },
+      { nb: 2, farine: "140 g", levure: "4 g", porc: "100 g", ciboule: "16 g", gingembre: "6 g", saucesoja: "16 ml", sesame: "6 g", sucre: "6 g", huileolive: "10 ml", sel: "2 g" },
+      { nb: 3, farine: "210 g", levure: "6 g", porc: "150 g", ciboule: "24 g", gingembre: "9 g", saucesoja: "24 ml", sesame: "9 g", sucre: "9 g", huileolive: "15 ml", sel: "3 g" },
+      { nb: 4, farine: "280 g", levure: "8 g", porc: "200 g", ciboule: "32 g", gingembre: "12 g", saucesoja: "32 ml", sesame: "12 g", sucre: "12 g", huileolive: "20 ml", sel: "4 g" },
+      { nb: 5, farine: "350 g", levure: "10 g", porc: "250 g", ciboule: "40 g", gingembre: "15 g", saucesoja: "40 ml", sesame: "15 g", sucre: "15 g", huileolive: "25 ml", sel: "5 g" },
+      { nb: 6, farine: "420 g", levure: "12 g", porc: "300 g", ciboule: "48 g", gingembre: "18 g", saucesoja: "48 ml", sesame: "18 g", sucre: "18 g", huileolive: "30 ml", sel: "6 g" },
+      { nb: 7, farine: "490 g", levure: "14 g", porc: "350 g", ciboule: "56 g", gingembre: "21 g", saucesoja: "56 ml", sesame: "21 g", sucre: "21 g", huileolive: "35 ml", sel: "7 g" },
+      { nb: 8, farine: "560 g", levure: "16 g", porc: "400 g", ciboule: "64 g", gingembre: "24 g", saucesoja: "64 ml", sesame: "24 g", sucre: "24 g", huileolive: "40 ml", sel: "8 g" },
+      { nb: 9, farine: "630 g", levure: "18 g", porc: "450 g", ciboule: "72 g", gingembre: "27 g", saucesoja: "72 ml", sesame: "27 g", sucre: "27 g", huileolive: "45 ml", sel: "9 g" },
+      { nb: 10, farine: "700 g", levure: "20 g", porc: "500 g", ciboule: "80 g", gingembre: "30 g", saucesoja: "80 ml", sesame: "30 g", sucre: "30 g", huileolive: "50 ml", sel: "10 g" },
+      { nb: 11, farine: "770 g", levure: "22 g", porc: "550 g", ciboule: "88 g", gingembre: "33 g", saucesoja: "88 ml", sesame: "33 g", sucre: "33 g", huileolive: "55 ml", sel: "11 g" },
+      { nb: 12, farine: "840 g", levure: "24 g", porc: "600 g", ciboule: "96 g", gingembre: "36 g", saucesoja: "96 ml", sesame: "36 g", sucre: "36 g", huileolive: "60 ml", sel: "12 g" },
+      { nb: 13, farine: "910 g", levure: "26 g", porc: "650 g", ciboule: "104 g", gingembre: "39 g", saucesoja: "104 ml", sesame: "39 g", sucre: "39 g", huileolive: "65 ml", sel: "13 g" },
+      { nb: 14, farine: "980 g", levure: "28 g", porc: "700 g", ciboule: "112 g", gingembre: "42 g", saucesoja: "112 ml", sesame: "42 g", sucre: "42 g", huileolive: "70 ml", sel: "14 g" },
+      { nb: 15, farine: "1050 g", levure: "30 g", porc: "750 g", ciboule: "120 g", gingembre: "45 g", saucesoja: "120 ml", sesame: "45 g", sucre: "45 g", huileolive: "75 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥣", titre: "La pâte levée", detail: "Pétrissez la farine avec la levure, le sucre et de l'eau tiède en une pâte souple, et laissez-la lever 1 h jusqu'à ce qu'elle double.", badge: null },
+      { icone: "🥩", titre: "La farce", detail: "Mélangez le porc haché avec la ciboule, le gingembre, la sauce soja et un peu d'eau (ou de gelée de bouillon), en travaillant jusqu'à ce que la farce soit liée et juteuse.", badge: null },
+      { icone: "🥟", titre: "Façonner", detail: "Détaillez la pâte, abaissez de petits disques et garnissez-les de farce, puis plissez les bords en une jolie torsade pour bien les fermer.", badge: null },
+      { icone: "🔥", titre: "Saisir le fond", detail: "Rangez les buns dans une poêle huilée et faites dorer le fond à feu vif, sans les bouger, jusqu'à ce qu'il soit croustillant.", badge: null },
+      { icone: "💨", titre: "Terminer à la vapeur", detail: "Versez un peu d'eau dans la poêle et couvrez aussitôt : la vapeur cuit le dessus des buns pendant que le fond reste croustillant.", badge: null },
+      { icone: "🌿", titre: "Finir", detail: "Quand l'eau s'est évaporée, parsemez de sésame et de ciboule ciselée, et laissez le fond recroustiller un instant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, croustillants dessous et moelleux dessus, avec du vinaigre noir. Attention au cœur de bouillon brûlant — les petits pains poêlés de Shanghai.", badge: null }
+    ],
+    liees: ["baozi"]
+  },
 });

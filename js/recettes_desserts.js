@@ -8010,4 +8010,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Arrosez de sirop noir kuromitsu au moment de servir. Frais, tremblotant et fondant — la friandise d'été qui fond en bouche.", badge: null }
     ]
   },
+  wifecake: {
+    dateAjout: "2026-07-10T12:06:00",
+    nom: "Gâteau de l'Épouse",
+    cat: "desserts", pays: "chine",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥮",
+    description: "Gâteau de l'épouse (lao po bing) — la pâtisserie feuilletée cantonaise : deux pâtes travaillées ensemble pour un feuilletage fondant, garnies d'une pâte douce de melon d'hiver confit et de riz gluant. Dorée, croustillante dehors et moelleuse dedans, c'est une douceur emblématique des salons de thé de Hong Kong.",
+    tableauWifecake: [
+      { nb: 1, farine: "60 g", beurre: "18 g", sucre: "15 g", farineRiz: "12 g", sesame: "3 g", oeufs: "¼" },
+      { nb: 2, farine: "120 g", beurre: "36 g", sucre: "30 g", farineRiz: "24 g", sesame: "6 g", oeufs: "½" },
+      { nb: 3, farine: "180 g", beurre: "54 g", sucre: "45 g", farineRiz: "36 g", sesame: "9 g", oeufs: "¾" },
+      { nb: 4, farine: "240 g", beurre: "72 g", sucre: "60 g", farineRiz: "48 g", sesame: "12 g", oeufs: "1" },
+      { nb: 5, farine: "300 g", beurre: "90 g", sucre: "75 g", farineRiz: "60 g", sesame: "15 g", oeufs: "1¼" },
+      { nb: 6, farine: "360 g", beurre: "108 g", sucre: "90 g", farineRiz: "72 g", sesame: "18 g", oeufs: "1½" },
+      { nb: 7, farine: "420 g", beurre: "126 g", sucre: "105 g", farineRiz: "84 g", sesame: "21 g", oeufs: "1¾" },
+      { nb: 8, farine: "480 g", beurre: "144 g", sucre: "120 g", farineRiz: "96 g", sesame: "24 g", oeufs: "2" },
+      { nb: 9, farine: "540 g", beurre: "162 g", sucre: "135 g", farineRiz: "108 g", sesame: "27 g", oeufs: "2¼" },
+      { nb: 10, farine: "600 g", beurre: "180 g", sucre: "150 g", farineRiz: "120 g", sesame: "30 g", oeufs: "2½" },
+      { nb: 11, farine: "660 g", beurre: "198 g", sucre: "165 g", farineRiz: "132 g", sesame: "33 g", oeufs: "2¾" },
+      { nb: 12, farine: "720 g", beurre: "216 g", sucre: "180 g", farineRiz: "144 g", sesame: "36 g", oeufs: "3" },
+      { nb: 13, farine: "780 g", beurre: "234 g", sucre: "195 g", farineRiz: "156 g", sesame: "39 g", oeufs: "3¼" },
+      { nb: 14, farine: "840 g", beurre: "252 g", sucre: "210 g", farineRiz: "168 g", sesame: "42 g", oeufs: "3½" },
+      { nb: 15, farine: "900 g", beurre: "270 g", sucre: "225 g", farineRiz: "180 g", sesame: "45 g", oeufs: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧈", titre: "La détrempe", detail: "Mélangez une partie de la farine avec du sucre, un peu de beurre et de l'eau, et pétrissez en une pâte souple. Laissez reposer.", badge: null },
+      { icone: "🥐", titre: "La pâte grasse", detail: "Sablez le reste de la farine avec le beurre jusqu'à obtenir une pâte friable : c'est elle qui crée le feuilletage.", badge: null },
+      { icone: "🍈", titre: "La garniture", detail: "Préparez une pâte douce en mélangeant la farine de riz gluant cuite, le sucre et un peu d'eau (façon melon d'hiver confit), jusqu'à obtenir une masse malléable.", badge: null },
+      { icone: "🌀", titre: "Le feuilletage", detail: "Enfermez la pâte grasse dans la détrempe, étalez et repliez plusieurs fois pour créer de fines couches.", badge: null },
+      { icone: "🥟", titre: "Garnir", detail: "Détaillez la pâte, garnissez chaque disque d'une boule de garniture, et refermez en boule bien scellée. Aplatissez délicatement en galettes.", badge: null },
+      { icone: "🖌️", titre: "Dorer", detail: "Dorez les galettes à l'œuf battu, parsemez de sésame et incisez légèrement le dessus (pour laisser échapper la vapeur).", badge: null },
+      { icone: "🍽️", titre: "Cuire et servir", detail: "Enfournez à 190 °C environ 20 min, jusqu'à ce que les gâteaux soient bien dorés et feuilletés. Croustillants dehors, moelleux dedans — la douceur des salons de thé cantonais.", badge: null }
+    ]
+  },
+  mooncake: {
+    dateAjout: "2026-07-10T12:07:00",
+    nom: "Gâteau de Lune",
+    cat: "desserts", pays: "chine",
+    base: 4,
+    temps: "1h30 + repos",
+    niveau: "⭐⭐⭐ Difficile",
+    emoji: "🥮",
+    description: "Gâteau de lune (yuebing) — la pâtisserie de la fête de la mi-automne : une fine croûte dorée au sirop enfermant une pâte dense de haricot rouge ou de lotus, parfois un jaune d'œuf salé au cœur. Moulé de motifs délicats, c'est la douceur emblématique des retrouvailles familiales en Chine.",
+    tableauMooncake: [
+      { nb: 1, farine: "50 g", anko: "70 g", miel: "12 g", huileolive: "8 ml", oeufs: "¼", sucre: "6 g" },
+      { nb: 2, farine: "100 g", anko: "140 g", miel: "24 g", huileolive: "16 ml", oeufs: "½", sucre: "12 g" },
+      { nb: 3, farine: "150 g", anko: "210 g", miel: "36 g", huileolive: "24 ml", oeufs: "¾", sucre: "18 g" },
+      { nb: 4, farine: "200 g", anko: "280 g", miel: "48 g", huileolive: "32 ml", oeufs: "1", sucre: "24 g" },
+      { nb: 5, farine: "250 g", anko: "350 g", miel: "60 g", huileolive: "40 ml", oeufs: "1¼", sucre: "30 g" },
+      { nb: 6, farine: "300 g", anko: "420 g", miel: "72 g", huileolive: "48 ml", oeufs: "1½", sucre: "36 g" },
+      { nb: 7, farine: "350 g", anko: "490 g", miel: "84 g", huileolive: "56 ml", oeufs: "1¾", sucre: "42 g" },
+      { nb: 8, farine: "400 g", anko: "560 g", miel: "96 g", huileolive: "64 ml", oeufs: "2", sucre: "48 g" },
+      { nb: 9, farine: "450 g", anko: "630 g", miel: "108 g", huileolive: "72 ml", oeufs: "2¼", sucre: "54 g" },
+      { nb: 10, farine: "500 g", anko: "700 g", miel: "120 g", huileolive: "80 ml", oeufs: "2½", sucre: "60 g" },
+      { nb: 11, farine: "550 g", anko: "770 g", miel: "132 g", huileolive: "88 ml", oeufs: "2¾", sucre: "66 g" },
+      { nb: 12, farine: "600 g", anko: "840 g", miel: "144 g", huileolive: "96 ml", oeufs: "3", sucre: "72 g" },
+      { nb: 13, farine: "650 g", anko: "910 g", miel: "156 g", huileolive: "104 ml", oeufs: "3¼", sucre: "78 g" },
+      { nb: 14, farine: "700 g", anko: "980 g", miel: "168 g", huileolive: "112 ml", oeufs: "3½", sucre: "84 g" },
+      { nb: 15, farine: "750 g", anko: "1050 g", miel: "180 g", huileolive: "120 ml", oeufs: "3¾", sucre: "90 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍯", titre: "La pâte", detail: "Mélangez le sirop doré (ou miel), l'huile et un peu d'eau alcaline (kansui), puis incorporez la farine pour former une pâte souple. Laissez reposer 1 h.", badge: null },
+      { icone: "🫘", titre: "La garniture", detail: "Façonnez la pâte de haricot rouge (ou de lotus) en boules régulières et bien lisses (avec, si vous aimez, un jaune d'œuf salé enfermé au cœur).", badge: null },
+      { icone: "⚖️", titre: "L'équilibre", detail: "Pesez pâte et garniture dans une proportion précise (environ 1 pour 4) : c'est le secret d'un beau gâteau de lune fin.", badge: null },
+      { icone: "🤲", titre: "Envelopper", detail: "Aplatissez chaque disque de pâte et enveloppez-en la boule de garniture, en remontant la pâte tout autour jusqu'à l'enfermer complètement.", badge: null },
+      { icone: "🌙", titre: "Mouler", detail: "Farinez le moule à mooncake et pressez chaque boule dedans pour imprimer les motifs, puis démoulez délicatement.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez 5 min à 180 °C, sortez, dorez au jaune d'œuf, puis remettez 10 min jusqu'à ce que les motifs soient dorés.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez reposer 2 à 3 jours (le « huiyou ») : la croûte s'assouplit et brille. Dégustez en fines parts avec du thé. La douceur emblématique de la mi-automne.", badge: null }
+    ]
+  },
 });

@@ -33867,4 +33867,79 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Dressez le porc laqué avec l'œuf mariné coupé en deux, un peu de moutarde japonaise (karashi) et du poireau. Fondant, laqué et brillant — le porc braisé emblématique du Japon.", badge: null }
     ]
   },
+  jokbal: {
+    dateAjout: "2026-07-10T12:02:00",
+    nom: "Jokbal",
+    cat: "plats", pays: "coree",
+    base: 4,
+    temps: "2h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🥩",
+    description: "Jokbal — les pieds de porc braisés coréens : de la couenne et de la viande de porc longuement mijotées dans un bouillon sombre au soja, au gingembre et aux épices, jusqu'à devenir fondantes et gélatineuses. Tranchés et servis avec de la saumure de crevettes, c'est un mets festif et convivial de Corée.",
+    tableauJokbal: [
+      { nb: 1, porc: "130 g", saucesoja: "18 ml", sucre: "8 g", gingembre: "4 g", ail: "2", oignon: "30 g", poireau: "20 g", cannelle: "0.3 g", anisetoile: "0.2 g", sel: "2 g" },
+      { nb: 2, porc: "260 g", saucesoja: "36 ml", sucre: "16 g", gingembre: "8 g", ail: "4", oignon: "60 g", poireau: "40 g", cannelle: "0.6 g", anisetoile: "0.4 g", sel: "4 g" },
+      { nb: 3, porc: "390 g", saucesoja: "54 ml", sucre: "24 g", gingembre: "12 g", ail: "6", oignon: "90 g", poireau: "60 g", cannelle: "0.9 g", anisetoile: "0.6 g", sel: "6 g" },
+      { nb: 4, porc: "520 g", saucesoja: "72 ml", sucre: "32 g", gingembre: "16 g", ail: "8", oignon: "120 g", poireau: "80 g", cannelle: "1.2 g", anisetoile: "0.8 g", sel: "8 g" },
+      { nb: 5, porc: "650 g", saucesoja: "90 ml", sucre: "40 g", gingembre: "20 g", ail: "10", oignon: "150 g", poireau: "100 g", cannelle: "1.5 g", anisetoile: "1 g", sel: "10 g" },
+      { nb: 6, porc: "780 g", saucesoja: "108 ml", sucre: "48 g", gingembre: "24 g", ail: "12", oignon: "180 g", poireau: "120 g", cannelle: "1.8 g", anisetoile: "1.2 g", sel: "12 g" },
+      { nb: 7, porc: "910 g", saucesoja: "126 ml", sucre: "56 g", gingembre: "28 g", ail: "14", oignon: "210 g", poireau: "140 g", cannelle: "2.1 g", anisetoile: "1.4 g", sel: "14 g" },
+      { nb: 8, porc: "1040 g", saucesoja: "144 ml", sucre: "64 g", gingembre: "32 g", ail: "16", oignon: "240 g", poireau: "160 g", cannelle: "2.4 g", anisetoile: "1.6 g", sel: "16 g" },
+      { nb: 9, porc: "1170 g", saucesoja: "162 ml", sucre: "72 g", gingembre: "36 g", ail: "18", oignon: "270 g", poireau: "180 g", cannelle: "2.7 g", anisetoile: "1.8 g", sel: "18 g" },
+      { nb: 10, porc: "1300 g", saucesoja: "180 ml", sucre: "80 g", gingembre: "40 g", ail: "20", oignon: "300 g", poireau: "200 g", cannelle: "3 g", anisetoile: "2 g", sel: "20 g" },
+      { nb: 11, porc: "1430 g", saucesoja: "198 ml", sucre: "88 g", gingembre: "44 g", ail: "22", oignon: "330 g", poireau: "220 g", cannelle: "3.3 g", anisetoile: "2.2 g", sel: "22 g" },
+      { nb: 12, porc: "1560 g", saucesoja: "216 ml", sucre: "96 g", gingembre: "48 g", ail: "24", oignon: "360 g", poireau: "240 g", cannelle: "3.6 g", anisetoile: "2.4 g", sel: "24 g" },
+      { nb: 13, porc: "1690 g", saucesoja: "234 ml", sucre: "104 g", gingembre: "52 g", ail: "26", oignon: "390 g", poireau: "260 g", cannelle: "3.9 g", anisetoile: "2.6 g", sel: "26 g" },
+      { nb: 14, porc: "1820 g", saucesoja: "252 ml", sucre: "112 g", gingembre: "56 g", ail: "28", oignon: "420 g", poireau: "280 g", cannelle: "4.2 g", anisetoile: "2.8 g", sel: "28 g" },
+      { nb: 15, porc: "1950 g", saucesoja: "270 ml", sucre: "120 g", gingembre: "60 g", ail: "30", oignon: "450 g", poireau: "300 g", cannelle: "4.5 g", anisetoile: "3 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐖", titre: "Dégorger", detail: "Faites tremper le jarret (ou pieds) de porc dans l'eau froide 1 h, puis blanchissez-le et rincez-le pour retirer les impuretés.", badge: null },
+      { icone: "🌿", titre: "Le bouillon d'épices", detail: "Préparez un bouillon avec la sauce soja, le sucre, le gingembre, l'ail, l'oignon, le poireau, la cannelle et l'anis étoilé.", badge: null },
+      { icone: "🍶", titre: "Braiser", detail: "Plongez le porc dans le bouillon, portez à frémissement et couvrez.", badge: null },
+      { icone: "♨️", titre: "Mijoter longuement", detail: "Laissez mijoter 2 h à feu doux, en retournant le porc de temps en temps, jusqu'à ce que la viande soit fondante et la couenne gélatineuse.", badge: null },
+      { icone: "🍯", titre: "Laquer", detail: "Découvrez et laissez réduire le bouillon en fin de cuisson, en arrosant le porc, jusqu'à ce qu'il devienne brillant et laqué.", badge: null },
+      { icone: "🔪", titre: "Trancher", detail: "Laissez tiédir légèrement, puis désossez et tranchez le porc en fines lamelles avec un peu de couenne à chaque bouchée.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tiède avec de la saumure de crevettes (saeujeot), de l'ail cru, du piment et des feuilles de salade pour rouler. Fondant, gélatineux et convivial — le mets festif coréen.", badge: null }
+    ],
+    liees: ["bossam"]
+  },
+  kongguksu: {
+    dateAjout: "2026-07-10T12:03:00",
+    nom: "Kongguksu",
+    cat: "plats", pays: "coree",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐ Facile",
+    emoji: "🍜",
+    description: "Kongguksu — les nouilles au lait de soja glacé : des nouilles de blé baignées dans un bouillon onctueux de soja fraîchement broyé, servi bien froid et garni de concombre et de sésame. Rafraîchissant, doux et protéiné, c'est le plat d'été incontournable de Corée.",
+    tableauKongguksu: [
+      { nb: 1, soja: "50 g", nouilles: "80 g", sesame: "10 g", concombre: "30 g", tomates: "¼", sel: "2 g" },
+      { nb: 2, soja: "100 g", nouilles: "160 g", sesame: "20 g", concombre: "60 g", tomates: "½", sel: "4 g" },
+      { nb: 3, soja: "150 g", nouilles: "240 g", sesame: "30 g", concombre: "90 g", tomates: "¾", sel: "6 g" },
+      { nb: 4, soja: "200 g", nouilles: "320 g", sesame: "40 g", concombre: "120 g", tomates: "1", sel: "8 g" },
+      { nb: 5, soja: "250 g", nouilles: "400 g", sesame: "50 g", concombre: "150 g", tomates: "1¼", sel: "10 g" },
+      { nb: 6, soja: "300 g", nouilles: "480 g", sesame: "60 g", concombre: "180 g", tomates: "1½", sel: "12 g" },
+      { nb: 7, soja: "350 g", nouilles: "560 g", sesame: "70 g", concombre: "210 g", tomates: "1¾", sel: "14 g" },
+      { nb: 8, soja: "400 g", nouilles: "640 g", sesame: "80 g", concombre: "240 g", tomates: "2", sel: "16 g" },
+      { nb: 9, soja: "450 g", nouilles: "720 g", sesame: "90 g", concombre: "270 g", tomates: "2¼", sel: "18 g" },
+      { nb: 10, soja: "500 g", nouilles: "800 g", sesame: "100 g", concombre: "300 g", tomates: "2½", sel: "20 g" },
+      { nb: 11, soja: "550 g", nouilles: "880 g", sesame: "110 g", concombre: "330 g", tomates: "2¾", sel: "22 g" },
+      { nb: 12, soja: "600 g", nouilles: "960 g", sesame: "120 g", concombre: "360 g", tomates: "3", sel: "24 g" },
+      { nb: 13, soja: "650 g", nouilles: "1040 g", sesame: "130 g", concombre: "390 g", tomates: "3¼", sel: "26 g" },
+      { nb: 14, soja: "700 g", nouilles: "1120 g", sesame: "140 g", concombre: "420 g", tomates: "3½", sel: "28 g" },
+      { nb: 15, soja: "750 g", nouilles: "1200 g", sesame: "150 g", concombre: "450 g", tomates: "3¾", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Tremper le soja", detail: "Faites tremper les graines de soja jaune une nuit, puis faites-les cuire 15 min dans l'eau bouillante jusqu'à ce qu'elles soient tendres.", badge: null },
+      { icone: "🥛", titre: "Le lait de soja", detail: "Frottez les graines pour retirer les peaux, puis mixez-les longuement avec de l'eau froide et le sésame grillé jusqu'à obtenir un lait onctueux et lisse.", badge: null },
+      { icone: "❄️", titre: "Refroidir", detail: "Salez légèrement le lait de soja et placez-le au réfrigérateur : il doit être servi bien glacé.", badge: null },
+      { icone: "🍜", titre: "Les nouilles", detail: "Faites cuire les nouilles de blé (somyeon), rincez-les à l'eau froide et égouttez-les soigneusement.", badge: null },
+      { icone: "🥒", titre: "Les garnitures", detail: "Taillez le concombre en fine julienne et coupez la tomate en quartiers.", badge: null },
+      { icone: "🥣", titre: "Dresser", detail: "Répartissez les nouilles dans les bols et versez le lait de soja glacé par-dessus, généreusement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Garnissez de concombre, de tomate et de sésame, ajoutez quelques glaçons et servez aussitôt. Rafraîchissant, doux et protéiné — le plat d'été coréen par excellence.", badge: null }
+    ]
+  },
 });
