@@ -2259,4 +2259,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez frais, en accompagnement d'un plov, de brochettes ou de manty. La fraîcheur acidulée qui équilibre les plats riches d'Asie centrale.", badge: null }
     ]
   },
+  ezme: {
+    dateAjout: "2026-07-10T09:52:00",
+    nom: "Ezme",
+    cat: "salades", pays: "turquie",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍅",
+    description: "Ezme — la salade concassée turque relevée : des tomates, poivrons, oignons et herbes hachés très finement au couteau, relevés de piment, de citron et de mélasse de grenade. Fraîche, acidulée et piquante, elle accompagne les grillades comme un condiment.",
+    tableauEzme: [
+      { nb: 1, tomates: "1", poivron: "30 g", oignon: "¼", persil: "5 g", piment: "1 g", citron: "½", huileolive: "6 ml", concentretomate: "6 g", sel: "2 g" },
+      { nb: 2, tomates: "2", poivron: "60 g", oignon: "½", persil: "10 g", piment: "2 g", citron: "1", huileolive: "12 ml", concentretomate: "12 g", sel: "4 g" },
+      { nb: 3, tomates: "3", poivron: "90 g", oignon: "¾", persil: "15 g", piment: "3 g", citron: "1½", huileolive: "18 ml", concentretomate: "18 g", sel: "6 g" },
+      { nb: 4, tomates: "4", poivron: "120 g", oignon: "1", persil: "20 g", piment: "4 g", citron: "2", huileolive: "24 ml", concentretomate: "24 g", sel: "8 g" },
+      { nb: 5, tomates: "5", poivron: "150 g", oignon: "1¼", persil: "25 g", piment: "5 g", citron: "2½", huileolive: "30 ml", concentretomate: "30 g", sel: "10 g" },
+      { nb: 6, tomates: "6", poivron: "180 g", oignon: "1½", persil: "30 g", piment: "6 g", citron: "3", huileolive: "36 ml", concentretomate: "36 g", sel: "12 g" },
+      { nb: 7, tomates: "7", poivron: "210 g", oignon: "1¾", persil: "35 g", piment: "7 g", citron: "3½", huileolive: "42 ml", concentretomate: "42 g", sel: "14 g" },
+      { nb: 8, tomates: "8", poivron: "240 g", oignon: "2", persil: "40 g", piment: "8 g", citron: "4", huileolive: "48 ml", concentretomate: "48 g", sel: "16 g" },
+      { nb: 9, tomates: "9", poivron: "270 g", oignon: "2¼", persil: "45 g", piment: "9 g", citron: "4½", huileolive: "54 ml", concentretomate: "54 g", sel: "18 g" },
+      { nb: 10, tomates: "10", poivron: "300 g", oignon: "2½", persil: "50 g", piment: "10 g", citron: "5", huileolive: "60 ml", concentretomate: "60 g", sel: "20 g" },
+      { nb: 11, tomates: "11", poivron: "330 g", oignon: "2¾", persil: "55 g", piment: "11 g", citron: "5½", huileolive: "66 ml", concentretomate: "66 g", sel: "22 g" },
+      { nb: 12, tomates: "12", poivron: "360 g", oignon: "3", persil: "60 g", piment: "12 g", citron: "6", huileolive: "72 ml", concentretomate: "72 g", sel: "24 g" },
+      { nb: 13, tomates: "13", poivron: "390 g", oignon: "3¼", persil: "65 g", piment: "13 g", citron: "6½", huileolive: "78 ml", concentretomate: "78 g", sel: "26 g" },
+      { nb: 14, tomates: "14", poivron: "420 g", oignon: "3½", persil: "70 g", piment: "14 g", citron: "7", huileolive: "84 ml", concentretomate: "84 g", sel: "28 g" },
+      { nb: 15, tomates: "15", poivron: "450 g", oignon: "3¾", persil: "75 g", piment: "15 g", citron: "7½", huileolive: "90 ml", concentretomate: "90 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Hacher finement", detail: "Hachez très finement au couteau les tomates (épépinées), le poivron, l'oignon et le persil : l'ezme est concassé, pas mixé, pour garder de la texture.", badge: null },
+      { icone: "🌶️", titre: "Le piment", detail: "Ajoutez du piment frais haché et du pul biber (flocons de piment) : l'ezme est traditionnellement bien relevé.", badge: null },
+      { icone: "🍅", titre: "Le concentré", detail: "Incorporez un peu de concentré de tomate et de mélasse de grenade (à défaut, du citron) : ils apportent la couleur profonde et l'aigre-doux.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Ajoutez le jus de citron, l'huile d'olive et le sel, et mélangez bien.", badge: null },
+      { icone: "🥄", titre: "Ajuster la texture", detail: "L'ezme doit être une pâte concassée, ni trop liquide ni trop sèche. Égouttez l'excès de jus si besoin.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laissez reposer 15 min au frais pour que les saveurs se mêlent et que le piment infuse.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez frais, en mezze ou en condiment, avec du pain plat et des grillades (kebabs). Fraîche, acidulée et piquante — le relish turc par excellence.", badge: null }
+    ]
+  },
+  cacik: {
+    dateAjout: "2026-07-10T09:53:00",
+    nom: "Cacık",
+    cat: "salades", pays: "turquie",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥒",
+    description: "Cacık — le yaourt au concombre turc : un mélange rafraîchissant de yaourt, de concombre râpé, d'ail et d'aneth, allongé d'un peu d'eau. Servi bien frais comme sauce, mezze ou soupe froide, c'est le rafraîchissement des tables turques par temps chaud.",
+    tableauCacik: [
+      { nb: 1, yaourt: "100 g", concombre: "60 g", ail: "1", aneth: "4 g", menthe: "3 g", huileolive: "5 ml", sel: "2 g" },
+      { nb: 2, yaourt: "200 g", concombre: "120 g", ail: "2", aneth: "8 g", menthe: "6 g", huileolive: "10 ml", sel: "4 g" },
+      { nb: 3, yaourt: "300 g", concombre: "180 g", ail: "3", aneth: "12 g", menthe: "9 g", huileolive: "15 ml", sel: "6 g" },
+      { nb: 4, yaourt: "400 g", concombre: "240 g", ail: "4", aneth: "16 g", menthe: "12 g", huileolive: "20 ml", sel: "8 g" },
+      { nb: 5, yaourt: "500 g", concombre: "300 g", ail: "5", aneth: "20 g", menthe: "15 g", huileolive: "25 ml", sel: "10 g" },
+      { nb: 6, yaourt: "600 g", concombre: "360 g", ail: "6", aneth: "24 g", menthe: "18 g", huileolive: "30 ml", sel: "12 g" },
+      { nb: 7, yaourt: "700 g", concombre: "420 g", ail: "7", aneth: "28 g", menthe: "21 g", huileolive: "35 ml", sel: "14 g" },
+      { nb: 8, yaourt: "800 g", concombre: "480 g", ail: "8", aneth: "32 g", menthe: "24 g", huileolive: "40 ml", sel: "16 g" },
+      { nb: 9, yaourt: "900 g", concombre: "540 g", ail: "9", aneth: "36 g", menthe: "27 g", huileolive: "45 ml", sel: "18 g" },
+      { nb: 10, yaourt: "1000 g", concombre: "600 g", ail: "10", aneth: "40 g", menthe: "30 g", huileolive: "50 ml", sel: "20 g" },
+      { nb: 11, yaourt: "1100 g", concombre: "660 g", ail: "11", aneth: "44 g", menthe: "33 g", huileolive: "55 ml", sel: "22 g" },
+      { nb: 12, yaourt: "1200 g", concombre: "720 g", ail: "12", aneth: "48 g", menthe: "36 g", huileolive: "60 ml", sel: "24 g" },
+      { nb: 13, yaourt: "1300 g", concombre: "780 g", ail: "13", aneth: "52 g", menthe: "39 g", huileolive: "65 ml", sel: "26 g" },
+      { nb: 14, yaourt: "1400 g", concombre: "840 g", ail: "14", aneth: "56 g", menthe: "42 g", huileolive: "70 ml", sel: "28 g" },
+      { nb: 15, yaourt: "1500 g", concombre: "900 g", ail: "15", aneth: "60 g", menthe: "45 g", huileolive: "75 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥒", titre: "Le concombre", detail: "Râpez ou coupez le concombre en tout petits dés. Salez-le légèrement et laissez-le dégorger 5 min, puis pressez-le pour retirer l'eau (le cacık n'en sera pas dilué).", badge: null },
+      { icone: "🧄", titre: "L'ail", detail: "Écrasez l'ail en purée avec un peu de sel : il doit parfumer sans dominer.", badge: null },
+      { icone: "🥛", titre: "Le yaourt", detail: "Fouettez le yaourt (nature, à la turque) pour le lisser. Allongez-le d'un peu d'eau froide selon la consistance voulue (plus épais pour un mezze, plus liquide pour une soupe).", badge: null },
+      { icone: "🌿", titre: "Mélanger", detail: "Incorporez le concombre, l'ail, l'aneth et la menthe ciselés au yaourt, et mélangez.", badge: null },
+      { icone: "🫒", titre: "Assaisonner", detail: "Salez, arrosez d'un filet d'huile d'olive et rectifiez.", badge: null },
+      { icone: "❄️", titre: "Réfrigérer", detail: "Réservez au frais au moins 30 min : le cacık se déguste bien froid, presque glacé.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez frais, parsemé d'aneth et d'un filet d'huile, avec du pain plat et des grillades. Rafraîchissant et acidulé — l'antidote turc à la chaleur.", badge: null }
+    ]
+  },
 });

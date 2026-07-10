@@ -4254,4 +4254,78 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez frais, en entrée à partager. Umami, doux et rafraîchissant — une entrée froide chinoise surprenante et savoureuse.", badge: null }
     ]
   },
+  kokorec: {
+    dateAjout: "2026-07-10T09:50:00",
+    nom: "Kokoreç",
+    cat: "encas", pays: "turquie",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌯",
+    description: "Kokoreç — le sandwich de rue turc : de la viande d'agneau grillée, hachée menue avec des tomates, des poivrons et des épices (origan, cumin, piment), servie chaude dans du pain. Intensément parfumé et relevé, c'est le street-food nocturne d'Istanbul.",
+    tableauKokorec: [
+      { nb: 1, agneau: "80 g", tomates: "½", poivron: "20 g", origan: "1 g", piment: "1 g", cumin: "1 g", huileolive: "6 ml", pain: "30 g", sel: "2 g" },
+      { nb: 2, agneau: "160 g", tomates: "1", poivron: "40 g", origan: "2 g", piment: "2 g", cumin: "2 g", huileolive: "12 ml", pain: "60 g", sel: "4 g" },
+      { nb: 3, agneau: "240 g", tomates: "1½", poivron: "60 g", origan: "3 g", piment: "3 g", cumin: "3 g", huileolive: "18 ml", pain: "90 g", sel: "6 g" },
+      { nb: 4, agneau: "320 g", tomates: "2", poivron: "80 g", origan: "4 g", piment: "4 g", cumin: "4 g", huileolive: "24 ml", pain: "120 g", sel: "8 g" },
+      { nb: 5, agneau: "400 g", tomates: "2½", poivron: "100 g", origan: "5 g", piment: "5 g", cumin: "5 g", huileolive: "30 ml", pain: "150 g", sel: "10 g" },
+      { nb: 6, agneau: "480 g", tomates: "3", poivron: "120 g", origan: "6 g", piment: "6 g", cumin: "6 g", huileolive: "36 ml", pain: "180 g", sel: "12 g" },
+      { nb: 7, agneau: "560 g", tomates: "3½", poivron: "140 g", origan: "7 g", piment: "7 g", cumin: "7 g", huileolive: "42 ml", pain: "210 g", sel: "14 g" },
+      { nb: 8, agneau: "640 g", tomates: "4", poivron: "160 g", origan: "8 g", piment: "8 g", cumin: "8 g", huileolive: "48 ml", pain: "240 g", sel: "16 g" },
+      { nb: 9, agneau: "720 g", tomates: "4½", poivron: "180 g", origan: "9 g", piment: "9 g", cumin: "9 g", huileolive: "54 ml", pain: "270 g", sel: "18 g" },
+      { nb: 10, agneau: "800 g", tomates: "5", poivron: "200 g", origan: "10 g", piment: "10 g", cumin: "10 g", huileolive: "60 ml", pain: "300 g", sel: "20 g" },
+      { nb: 11, agneau: "880 g", tomates: "5½", poivron: "220 g", origan: "11 g", piment: "11 g", cumin: "11 g", huileolive: "66 ml", pain: "330 g", sel: "22 g" },
+      { nb: 12, agneau: "960 g", tomates: "6", poivron: "240 g", origan: "12 g", piment: "12 g", cumin: "12 g", huileolive: "72 ml", pain: "360 g", sel: "24 g" },
+      { nb: 13, agneau: "1040 g", tomates: "6½", poivron: "260 g", origan: "13 g", piment: "13 g", cumin: "13 g", huileolive: "78 ml", pain: "390 g", sel: "26 g" },
+      { nb: 14, agneau: "1120 g", tomates: "7", poivron: "280 g", origan: "14 g", piment: "14 g", cumin: "14 g", huileolive: "84 ml", pain: "420 g", sel: "28 g" },
+      { nb: 15, agneau: "1200 g", tomates: "7½", poivron: "300 g", origan: "15 g", piment: "15 g", cumin: "15 g", huileolive: "90 ml", pain: "450 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐑", titre: "La viande", detail: "Utilisez de l'agneau bien parfumé (traditionnellement des abats grillés). Faites-le griller ou rôtir jusqu'à ce qu'il soit cuit et doré, avec un peu d'origan et de sel.", badge: null },
+      { icone: "🔪", titre: "Hacher", detail: "Hachez la viande grillée menu au couteau, sur une grande plaque chaude, comme le fait le vendeur de rue.", badge: null },
+      { icone: "🌶️", titre: "Les épices", detail: "Ajoutez à la viande hachée l'origan, le cumin, le piment (pul biber) et le sel, et mélangez sur la plaque pour bien parfumer.", badge: null },
+      { icone: "🍅", titre: "Les légumes", detail: "Ajoutez la tomate et le poivron coupés en petits dés, et faites-les revenir avec la viande jusqu'à ce qu'ils fondent.", badge: null },
+      { icone: "🔥", titre: "Faire sauter", detail: "Continuez de hacher et de faire sauter le tout sur le feu, jusqu'à ce que la viande soit bien caramélisée et parfumée.", badge: null },
+      { icone: "🥖", titre: "Garnir le pain", detail: "Fendez un morceau de pain (ekmek) et garnissez-le généreusement de kokoreç brûlant.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, en sandwich (yarım ekmek), relevé d'un peu plus de piment et d'origan. Intense, parfumé et addictif — le street-food nocturne d'Istanbul.", badge: null }
+    ]
+  },
+  haydari: {
+    dateAjout: "2026-07-10T09:54:00",
+    nom: "Haydari",
+    cat: "encas", pays: "turquie",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🧀",
+    description: "Haydari — le mezze au yaourt épais turc : un yaourt égoutté et crémeux, enrichi de feta, d'ail et d'herbes fraîches, parsemé de noix. Plus dense et parfumé que le cacık, il se tartine sur du pain et accompagne les mezze et les grillades.",
+    tableauHaydari: [
+      { nb: 1, yaourt: "80 g", feta: "20 g", ail: "1", aneth: "4 g", noix: "6 g", huileolive: "6 ml", sel: "1 g" },
+      { nb: 2, yaourt: "160 g", feta: "40 g", ail: "2", aneth: "8 g", noix: "12 g", huileolive: "12 ml", sel: "2 g" },
+      { nb: 3, yaourt: "240 g", feta: "60 g", ail: "3", aneth: "12 g", noix: "18 g", huileolive: "18 ml", sel: "3 g" },
+      { nb: 4, yaourt: "320 g", feta: "80 g", ail: "4", aneth: "16 g", noix: "24 g", huileolive: "24 ml", sel: "4 g" },
+      { nb: 5, yaourt: "400 g", feta: "100 g", ail: "5", aneth: "20 g", noix: "30 g", huileolive: "30 ml", sel: "5 g" },
+      { nb: 6, yaourt: "480 g", feta: "120 g", ail: "6", aneth: "24 g", noix: "36 g", huileolive: "36 ml", sel: "6 g" },
+      { nb: 7, yaourt: "560 g", feta: "140 g", ail: "7", aneth: "28 g", noix: "42 g", huileolive: "42 ml", sel: "7 g" },
+      { nb: 8, yaourt: "640 g", feta: "160 g", ail: "8", aneth: "32 g", noix: "48 g", huileolive: "48 ml", sel: "8 g" },
+      { nb: 9, yaourt: "720 g", feta: "180 g", ail: "9", aneth: "36 g", noix: "54 g", huileolive: "54 ml", sel: "9 g" },
+      { nb: 10, yaourt: "800 g", feta: "200 g", ail: "10", aneth: "40 g", noix: "60 g", huileolive: "60 ml", sel: "10 g" },
+      { nb: 11, yaourt: "880 g", feta: "220 g", ail: "11", aneth: "44 g", noix: "66 g", huileolive: "66 ml", sel: "11 g" },
+      { nb: 12, yaourt: "960 g", feta: "240 g", ail: "12", aneth: "48 g", noix: "72 g", huileolive: "72 ml", sel: "12 g" },
+      { nb: 13, yaourt: "1040 g", feta: "260 g", ail: "13", aneth: "52 g", noix: "78 g", huileolive: "78 ml", sel: "13 g" },
+      { nb: 14, yaourt: "1120 g", feta: "280 g", ail: "14", aneth: "56 g", noix: "84 g", huileolive: "84 ml", sel: "14 g" },
+      { nb: 15, yaourt: "1200 g", feta: "300 g", ail: "15", aneth: "60 g", noix: "90 g", huileolive: "90 ml", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥛", titre: "Égoutter le yaourt", detail: "Faites égoutter le yaourt dans un linge quelques heures (ou utilisez du yaourt grec épais) : il doit être très dense et crémeux, base du haydari.", badge: null },
+      { icone: "🧀", titre: "La feta", detail: "Écrasez la feta à la fourchette et incorporez-la au yaourt égoutté : elle apporte le sel et le crémeux.", badge: null },
+      { icone: "🧄", titre: "L'ail", detail: "Ajoutez l'ail écrasé en purée, sans excès (il doit parfumer).", badge: null },
+      { icone: "🌿", titre: "Les herbes", detail: "Incorporez l'aneth ciselé (et éventuellement de la menthe séchée) : le parfum herbacé signature du haydari.", badge: null },
+      { icone: "🥄", titre: "Mélanger", detail: "Mélangez jusqu'à obtenir une crème épaisse, lisse et homogène. Salez peu (la feta est salée).", badge: null },
+      { icone: "🫒", titre: "Dresser", detail: "Étalez le haydari dans une assiette en formant un creux, et arrosez généreusement d'huile d'olive.", badge: null },
+      { icone: "🌰", titre: "Servir", detail: "Parsemez de noix concassées et d'un peu de piment, et servez frais avec du pain plat chaud. Dense, crémeux et parfumé — un mezze turc incontournable.", badge: null }
+    ]
+  },
 });

@@ -33089,4 +33089,78 @@ Object.assign(recettes, {
       { icone: "🍚", titre: "Servir", detail: "Servez la gardiane avec du riz rouge de Camargue, qui absorbe la sauce. Robuste, parfumé et convivial — le plat des gardians de Camargue.", badge: null }
     ]
   },
+  kumpir: {
+    dateAjout: "2026-07-10T09:51:00",
+    nom: "Kumpir",
+    cat: "plats", pays: "turquie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🥔",
+    description: "Kumpir — la pomme de terre farcie géante turque : une grosse pomme de terre cuite au four, dont la chair est écrasée avec du beurre et du fromage jusqu'à devenir crémeuse, puis garnie d'une profusion de toppings colorés. Le street-food généreux d'Ortaköy.",
+    tableauKumpir: [
+      { nb: 1, pommedeterre: "200 g", beurre: "12 g", fromage: "25 g", mais: "20 g", olives: "10 g", poivron: "15 g", saucisse: "20 g", sel: "2 g" },
+      { nb: 2, pommedeterre: "400 g", beurre: "24 g", fromage: "50 g", mais: "40 g", olives: "20 g", poivron: "30 g", saucisse: "40 g", sel: "4 g" },
+      { nb: 3, pommedeterre: "600 g", beurre: "36 g", fromage: "75 g", mais: "60 g", olives: "30 g", poivron: "45 g", saucisse: "60 g", sel: "6 g" },
+      { nb: 4, pommedeterre: "800 g", beurre: "48 g", fromage: "100 g", mais: "80 g", olives: "40 g", poivron: "60 g", saucisse: "80 g", sel: "8 g" },
+      { nb: 5, pommedeterre: "1000 g", beurre: "60 g", fromage: "125 g", mais: "100 g", olives: "50 g", poivron: "75 g", saucisse: "100 g", sel: "10 g" },
+      { nb: 6, pommedeterre: "1200 g", beurre: "72 g", fromage: "150 g", mais: "120 g", olives: "60 g", poivron: "90 g", saucisse: "120 g", sel: "12 g" },
+      { nb: 7, pommedeterre: "1400 g", beurre: "84 g", fromage: "175 g", mais: "140 g", olives: "70 g", poivron: "105 g", saucisse: "140 g", sel: "14 g" },
+      { nb: 8, pommedeterre: "1600 g", beurre: "96 g", fromage: "200 g", mais: "160 g", olives: "80 g", poivron: "120 g", saucisse: "160 g", sel: "16 g" },
+      { nb: 9, pommedeterre: "1800 g", beurre: "108 g", fromage: "225 g", mais: "180 g", olives: "90 g", poivron: "135 g", saucisse: "180 g", sel: "18 g" },
+      { nb: 10, pommedeterre: "2000 g", beurre: "120 g", fromage: "250 g", mais: "200 g", olives: "100 g", poivron: "150 g", saucisse: "200 g", sel: "20 g" },
+      { nb: 11, pommedeterre: "2200 g", beurre: "132 g", fromage: "275 g", mais: "220 g", olives: "110 g", poivron: "165 g", saucisse: "220 g", sel: "22 g" },
+      { nb: 12, pommedeterre: "2400 g", beurre: "144 g", fromage: "300 g", mais: "240 g", olives: "120 g", poivron: "180 g", saucisse: "240 g", sel: "24 g" },
+      { nb: 13, pommedeterre: "2600 g", beurre: "156 g", fromage: "325 g", mais: "260 g", olives: "130 g", poivron: "195 g", saucisse: "260 g", sel: "26 g" },
+      { nb: 14, pommedeterre: "2800 g", beurre: "168 g", fromage: "350 g", mais: "280 g", olives: "140 g", poivron: "210 g", saucisse: "280 g", sel: "28 g" },
+      { nb: 15, pommedeterre: "3000 g", beurre: "180 g", fromage: "375 g", mais: "300 g", olives: "150 g", poivron: "225 g", saucisse: "300 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥔", titre: "Cuire les pommes de terre", detail: "Faites cuire de grosses pommes de terre au four (ou emballées) jusqu'à ce qu'elles soient très tendres à cœur, environ 1 h à 200°C.", badge: null },
+      { icone: "✂️", titre: "Fendre", detail: "Fendez chaque pomme de terre en deux dans la longueur, sans séparer complètement les moitiés.", badge: null },
+      { icone: "🧈", titre: "Écraser la chair", detail: "Écrasez la chair chaude à la fourchette, à même la peau, avec du beurre et du fromage râpé (kaşar), jusqu'à obtenir une purée crémeuse et filante dans sa peau.", badge: null },
+      { icone: "🌽", titre: "Les garnitures", detail: "Préparez une profusion de toppings colorés : maïs, olives, poivron, cornichons, chou rouge, saucisse, petits pois, sauces…", badge: null },
+      { icone: "🥄", titre: "Garnir", detail: "Garnissez généreusement la pomme de terre écrasée de tous les toppings choisis, en couches colorées.", badge: null },
+      { icone: "🌶️", titre: "Sauces", detail: "Arrosez de sauces (ketchup, mayonnaise, sauce piquante) selon le goût.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez aussitôt, brûlant, à manger à la cuillère. Généreux, crémeux et personnalisable — le street-food coloré d'Ortaköy, à Istanbul.", badge: null }
+    ]
+  },
+  kurufasulye: {
+    dateAjout: "2026-07-10T09:55:00",
+    nom: "Kuru Fasulye",
+    cat: "plats", pays: "turquie",
+    base: 4,
+    temps: "1h",
+    niveau: "⭐ Facile",
+    emoji: "🫘",
+    description: "Kuru fasulye — le ragoût de haricots blancs turc : des haricots blancs mijotés dans une sauce tomate parfumée au poivron et au piment. Simple, économique et réconfortant, ce plat national turc se déguste avec du riz pilaf et des cornichons.",
+    tableauKurufasulye: [
+      { nb: 1, haricotsblancs: "70 g", tomates: "1", oignon: "½", concentretomate: "8 g", poivron: "20 g", huileolive: "8 ml", piment: "0.5 g", sel: "2 g" },
+      { nb: 2, haricotsblancs: "140 g", tomates: "2", oignon: "1", concentretomate: "16 g", poivron: "40 g", huileolive: "16 ml", piment: "1 g", sel: "4 g" },
+      { nb: 3, haricotsblancs: "210 g", tomates: "3", oignon: "1½", concentretomate: "24 g", poivron: "60 g", huileolive: "24 ml", piment: "1.5 g", sel: "6 g" },
+      { nb: 4, haricotsblancs: "280 g", tomates: "4", oignon: "2", concentretomate: "32 g", poivron: "80 g", huileolive: "32 ml", piment: "2 g", sel: "8 g" },
+      { nb: 5, haricotsblancs: "350 g", tomates: "5", oignon: "2½", concentretomate: "40 g", poivron: "100 g", huileolive: "40 ml", piment: "2.5 g", sel: "10 g" },
+      { nb: 6, haricotsblancs: "420 g", tomates: "6", oignon: "3", concentretomate: "48 g", poivron: "120 g", huileolive: "48 ml", piment: "3 g", sel: "12 g" },
+      { nb: 7, haricotsblancs: "490 g", tomates: "7", oignon: "3½", concentretomate: "56 g", poivron: "140 g", huileolive: "56 ml", piment: "3.5 g", sel: "14 g" },
+      { nb: 8, haricotsblancs: "560 g", tomates: "8", oignon: "4", concentretomate: "64 g", poivron: "160 g", huileolive: "64 ml", piment: "4 g", sel: "16 g" },
+      { nb: 9, haricotsblancs: "630 g", tomates: "9", oignon: "4½", concentretomate: "72 g", poivron: "180 g", huileolive: "72 ml", piment: "4.5 g", sel: "18 g" },
+      { nb: 10, haricotsblancs: "700 g", tomates: "10", oignon: "5", concentretomate: "80 g", poivron: "200 g", huileolive: "80 ml", piment: "5 g", sel: "20 g" },
+      { nb: 11, haricotsblancs: "770 g", tomates: "11", oignon: "5½", concentretomate: "88 g", poivron: "220 g", huileolive: "88 ml", piment: "5.5 g", sel: "22 g" },
+      { nb: 12, haricotsblancs: "840 g", tomates: "12", oignon: "6", concentretomate: "96 g", poivron: "240 g", huileolive: "96 ml", piment: "6 g", sel: "24 g" },
+      { nb: 13, haricotsblancs: "910 g", tomates: "13", oignon: "6½", concentretomate: "104 g", poivron: "260 g", huileolive: "104 ml", piment: "6.5 g", sel: "26 g" },
+      { nb: 14, haricotsblancs: "980 g", tomates: "14", oignon: "7", concentretomate: "112 g", poivron: "280 g", huileolive: "112 ml", piment: "7 g", sel: "28 g" },
+      { nb: 15, haricotsblancs: "1050 g", tomates: "15", oignon: "7½", concentretomate: "120 g", poivron: "300 g", huileolive: "120 ml", piment: "7.5 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Les haricots", detail: "Faites tremper les haricots blancs une nuit, puis cuisez-les à l'eau non salée jusqu'à ce qu'ils soient tendres. Égouttez (gardez un peu d'eau de cuisson).", badge: null },
+      { icone: "🧅", titre: "La base", detail: "Faites revenir l'oignon émincé dans l'huile jusqu'à ce qu'il soit fondant, puis ajoutez le poivron en dés.", badge: null },
+      { icone: "🍅", titre: "La sauce", detail: "Ajoutez le concentré de tomate et faites-le revenir 1 min (il perd son acidité), puis les tomates concassées et le piment. Laissez compoter 5 min.", badge: null },
+      { icone: "🥣", titre: "Réunir", detail: "Ajoutez les haricots cuits et un peu d'eau de cuisson, salez, et mélangez délicatement.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Couvrez et laissez mijoter 20 à 25 min à feu doux, jusqu'à ce que la sauce épaississe et enrobe les haricots.", badge: null },
+      { icone: "👅", titre: "Assaisonner", detail: "Goûtez et rectifiez le sel et le piment. La sauce doit être onctueuse et bien parfumée.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez chaud avec du riz pilaf (pilav), des cornichons et du pain. Simple, économique et réconfortant — le plat national turc du quotidien.", badge: null }
+    ]
+  },
 });

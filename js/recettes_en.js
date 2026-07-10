@@ -63278,5 +63278,345 @@ window.RECETTES_EN = {
     "detail": "Serve hot or cold, dusted with ground cinnamon. Creamy, comforting and fragrant — the Mexican grandmother's rice pudding."
    }
   ]
+ },
+ "kokorec": {
+  "nom": "Kokoreç",
+  "description": "Kokoreç — the Turkish street sandwich: grilled lamb finely chopped with tomatoes, peppers and spices (oregano, cumin, chilli), served hot in bread. Intensely fragrant and spicy, it's the late-night street food of Istanbul.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Use well-flavoured lamb (traditionally grilled offal). Grill or roast it until cooked and golden, with a little oregano and salt."
+   },
+   {
+    "titre": "Chop",
+    "detail": "Finely chop the grilled meat with a knife, on a large hot plate, as the street vendor does."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add to the chopped meat the oregano, cumin, chilli (pul biber) and salt, and mix on the plate to flavour well."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the tomato and pepper cut into small dice, and sauté them with the meat until they melt."
+   },
+   {
+    "titre": "Sauté",
+    "detail": "Keep chopping and sautéing everything over the heat, until the meat is well caramelised and fragrant."
+   },
+   {
+    "titre": "Fill the bread",
+    "detail": "Split a piece of bread (ekmek) and fill it generously with the scalding kokoreç."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, as a sandwich (yarım ekmek), lifted with a little more chilli and oregano. Intense, fragrant and addictive — the late-night street food of Istanbul."
+   }
+  ]
+ },
+ "kumpir": {
+  "nom": "Kumpir",
+  "description": "Kumpir — the giant Turkish stuffed potato: a large baked potato whose flesh is mashed with butter and cheese until creamy, then topped with a profusion of colourful toppings. The generous street food of Ortaköy.",
+  "etapes": [
+   {
+    "titre": "Bake the potatoes",
+    "detail": "Bake large potatoes (or wrapped) until very tender in the centre, about 1 hour at 200°C."
+   },
+   {
+    "titre": "Split",
+    "detail": "Split each potato lengthwise, without fully separating the halves."
+   },
+   {
+    "titre": "Mash the flesh",
+    "detail": "Mash the hot flesh with a fork, right in the skin, with butter and grated cheese (kaşar), into a creamy, stringy mash in its skin."
+   },
+   {
+    "titre": "The toppings",
+    "detail": "Prepare a profusion of colourful toppings: corn, olives, pepper, pickles, red cabbage, sausage, peas, sauces…"
+   },
+   {
+    "titre": "Fill",
+    "detail": "Fill the mashed potato generously with all the chosen toppings, in colourful layers."
+   },
+   {
+    "titre": "Sauces",
+    "detail": "Drizzle with sauces (ketchup, mayonnaise, hot sauce) to taste."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, scalding, to eat with a spoon. Generous, creamy and customisable — the colourful street food of Ortaköy, in Istanbul."
+   }
+  ]
+ },
+ "ezme": {
+  "nom": "Ezme",
+  "description": "Ezme — the spicy Turkish chopped salad: tomatoes, peppers, onions and herbs chopped very finely by hand, lifted with chilli, lemon and pomegranate molasses. Fresh, tangy and spicy, it accompanies grills like a relish.",
+  "etapes": [
+   {
+    "titre": "Chop finely",
+    "detail": "Very finely chop by hand the tomatoes (seeded), pepper, onion and parsley: ezme is chopped, not blended, to keep texture."
+   },
+   {
+    "titre": "The chilli",
+    "detail": "Add fresh chopped chilli and pul biber (chilli flakes): ezme is traditionally quite spicy."
+   },
+   {
+    "titre": "The paste",
+    "detail": "Stir in a little tomato paste and pomegranate molasses (or lemon): they bring the deep colour and the sweet-sour."
+   },
+   {
+    "titre": "Season",
+    "detail": "Add the lemon juice, olive oil and salt, and mix well."
+   },
+   {
+    "titre": "Adjust the texture",
+    "detail": "Ezme should be a chopped paste, neither too runny nor too dry. Drain excess juice if needed."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 15 minutes in the fridge so the flavours mingle and the chilli infuses."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cool, as a mezze or condiment, with flatbread and grills (kebabs). Fresh, tangy and spicy — the Turkish relish par excellence."
+   }
+  ]
+ },
+ "cacik": {
+  "nom": "Cacık",
+  "description": "Cacık — the Turkish cucumber yogurt: a refreshing mix of yogurt, grated cucumber, garlic and dill, loosened with a little water. Served well chilled as a sauce, mezze or cold soup, it's the refresher of Turkish tables in hot weather.",
+  "etapes": [
+   {
+    "titre": "The cucumber",
+    "detail": "Grate or finely dice the cucumber. Salt it lightly and let it drain 5 minutes, then squeeze out the water (so the cacık isn't diluted)."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Crush the garlic to a paste with a little salt: it should flavour without dominating."
+   },
+   {
+    "titre": "The yogurt",
+    "detail": "Whisk the (plain, Turkish-style) yogurt to smooth it. Loosen it with a little cold water to the desired consistency (thicker for a mezze, thinner for a soup)."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Stir the cucumber, garlic, chopped dill and mint into the yogurt, and mix."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, drizzle with olive oil and adjust."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate at least 30 minutes: cacık is enjoyed well chilled, almost icy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cool, scattered with dill and a drizzle of oil, with flatbread and grills. Refreshing and tangy — the Turkish antidote to heat."
+   }
+  ]
+ },
+ "haydari": {
+  "nom": "Haydari",
+  "description": "Haydari — the thick Turkish yogurt mezze: a strained, creamy yogurt enriched with feta, garlic and fresh herbs, scattered with walnuts. Denser and more fragrant than cacık, it's spread on bread and accompanies mezze and grills.",
+  "etapes": [
+   {
+    "titre": "Strain the yogurt",
+    "detail": "Drain the yogurt in a cloth for a few hours (or use thick Greek yogurt): it should be very dense and creamy, the base of haydari."
+   },
+   {
+    "titre": "The feta",
+    "detail": "Mash the feta with a fork and stir it into the strained yogurt: it brings the salt and creaminess."
+   },
+   {
+    "titre": "The garlic",
+    "detail": "Add the crushed garlic paste, not too much (it should flavour)."
+   },
+   {
+    "titre": "The herbs",
+    "detail": "Stir in the chopped dill (and optionally dried mint): the signature herby aroma of haydari."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix into a thick, smooth, homogeneous cream. Salt lightly (the feta is salty)."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spread the haydari on a plate, forming a well, and drizzle generously with olive oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with crushed walnuts and a little chilli, and serve cool with warm flatbread. Dense, creamy and fragrant — an essential Turkish mezze."
+   }
+  ]
+ },
+ "kurufasulye": {
+  "nom": "Kuru Fasulye",
+  "description": "Kuru fasulye — the Turkish white bean stew: white beans simmered in a tomato sauce scented with pepper and chilli. Simple, economical and comforting, this Turkish national dish is enjoyed with pilaf rice and pickles.",
+  "etapes": [
+   {
+    "titre": "The beans",
+    "detail": "Soak the white beans overnight, then cook them in unsalted water until tender. Drain (keep a little cooking water)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the sliced onion in the oil until soft, then add the diced pepper."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the tomato paste and sauté it for 1 minute (it loses its acidity), then the crushed tomatoes and chilli. Stew 5 minutes."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the cooked beans and a little cooking water, salt, and mix gently."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 20 to 25 minutes over low heat, until the sauce thickens and coats the beans."
+   },
+   {
+    "titre": "Season",
+    "detail": "Taste and adjust the salt and chilli. The sauce should be smooth and well flavoured."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with pilaf rice (pilav), pickles and bread. Simple, economical and comforting — the everyday Turkish national dish."
+   }
+  ]
+ },
+ "kazandibi": {
+  "nom": "Kazandibi",
+  "description": "Kazandibi — the Turkish caramelised-bottom pudding: a dense, elastic milk custard whose underside is deliberately caramelised until browned, then rolled. Its name means 'bottom of the cauldron' — the contrast of milky white and caramelised brown is unique.",
+  "etapes": [
+   {
+    "titre": "The custard",
+    "detail": "Dissolve the cornstarch and rice flour in a little cold milk, then mix with the rest of the milk and the sugar in a pan."
+   },
+   {
+    "titre": "Thicken",
+    "detail": "Bring to a simmer while whisking constantly, and cook until you have a very thick, elastic custard (like a firm muhallebi). Flavour with vanilla (or mastic)."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread the custard in a thick, even layer in a buttered dish lightly sugared on the bottom (the sugar helps it caramelise)."
+   },
+   {
+    "titre": "Caramelise the bottom",
+    "detail": "Place the dish on a plate or gentle flame and let the UNDERSIDE caramelise slowly until browned (without cooking the top, which stays milky white). This is the signature step."
+   },
+   {
+    "titre": "Check",
+    "detail": "The bottom is ready when well golden-brown and caramel-scented. Let cool completely."
+   },
+   {
+    "titre": "Roll",
+    "detail": "Cut the custard into strips and roll them up, caramelised side out, into rolls."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cool, dusted with cinnamon, the caramelised side visible. Dense, elastic and uniquely contrasted — the Turkish 'cauldron bottom' dessert."
+   }
+  ]
+ },
+ "lokma": {
+  "nom": "Lokma",
+  "description": "Lokma — Turkish syrup fritters: small balls of leavened dough, fried until golden and hollow, then drenched in a fragrant syrup. Crisp outside, soft inside, they're handed out at festivals and enjoyed piping hot.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Dissolve the yeast in a little warm water, then mix with the flour, a pinch of salt and enough water to form a soft, sticky batter (looser than a bread dough)."
+   },
+   {
+    "titre": "Rise",
+    "detail": "Cover and let rise 1 hour in a warm place, until doubled and full of bubbles."
+   },
+   {
+    "titre": "The syrup",
+    "detail": "Make a syrup by boiling the sugar and water for 8 to 10 minutes with a dash of lemon, until coating. Let it cool."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat the frying oil to 170°C."
+   },
+   {
+    "titre": "Form the balls",
+    "detail": "Using two wet spoons (or squeezing the dough between thumb and index finger), form small balls and drop them into the hot oil."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry them 3 to 4 minutes, stirring, until well golden, puffed and hollow. Drain."
+   },
+   {
+    "titre": "Soak & serve",
+    "detail": "Dip the hot lokma in the cold syrup for a few minutes, then drain. Serve warm, dusted with cinnamon. Crisp, soft and syrupy."
+   }
+  ]
+ },
+ "tulumba": {
+  "nom": "Tulumba",
+  "description": "Tulumba — Turkish syrup churros: small ridged sticks of choux pastry, fried until golden and crisp, then soaked in syrup. Crunchy outside and syrupy inside, they're a very popular street and festival dessert across the Middle East.",
+  "etapes": [
+   {
+    "titre": "The syrup",
+    "detail": "Make the syrup first (it must be cold): boil the sugar and water with a dash of lemon, until coating. Let cool."
+   },
+   {
+    "titre": "The panade",
+    "detail": "Boil water with a little oil and salt, then tip in the flour and semolina all at once, stirring over the heat, until a dough forms that pulls away (like choux pastry)."
+   },
+   {
+    "titre": "Work in the egg",
+    "detail": "Off the heat, let cool slightly then beat in the egg, until a smooth, glossy dough forms."
+   },
+   {
+    "titre": "Pipe the ridges",
+    "detail": "Fill a piping bag with a fluted nozzle and pipe small ridged sticks (the ridges help soak up the syrup), cutting them with scissors."
+   },
+   {
+    "titre": "Fry gently",
+    "detail": "Plunge the tulumba into WARM oil and gradually raise the temperature: they puff, brown and crisp slowly (too-hot oil would burn the outside and leave the inside raw)."
+   },
+   {
+    "titre": "Soak",
+    "detail": "Dip the hot tulumba in the cold syrup for a few minutes: they soak in while keeping their crispness."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Drain and serve. Crunchy outside, syrupy and soft inside — the 'churros' of the Middle East, irresistible."
+   }
+  ]
+ },
+ "gullac": {
+  "nom": "Güllaç",
+  "description": "Güllaç — the Turkish Ramadan dessert: thin cornstarch sheets soaked in rosewater sweet milk, layered and filled with walnuts, decorated with pomegranate and pistachios. Light, floral and delicate, it's the emblematic sweet of the fasting month.",
+  "etapes": [
+   {
+    "titre": "The rose milk",
+    "detail": "Heat the milk with the sugar until dissolved, then flavour with rosewater (or vanilla). Let cool: the milk mustn't be boiling for the sheets."
+   },
+   {
+    "titre": "The sheets",
+    "detail": "Use thin güllaç sheets (cornstarch wafers, or very thin corn crêpes). They're dry and brittle when dry, and melt in the milk."
+   },
+   {
+    "titre": "Soak & layer",
+    "detail": "In a dish, place a sheet, soak it with warm rose milk until it softens, then layer several soaked sheets."
+   },
+   {
+    "titre": "Fill",
+    "detail": "Scatter a layer of crushed walnuts halfway up, then cover with more milk-soaked sheets."
+   },
+   {
+    "titre": "Finish the milk",
+    "detail": "Pour the rest of the rose milk over the top, until all the sheets are well soaked and tender."
+   },
+   {
+    "titre": "Chill",
+    "detail": "Refrigerate at least 2 hours: the sheets absorb the milk and become tender and melting."
+   },
+   {
+    "titre": "Decorate & serve",
+    "detail": "Decorate with fresh pomegranate and crushed pistachios, and serve well chilled. Light, floral and delicate — the Turkish Ramadan sweet."
+   }
+  ]
  }
 };
