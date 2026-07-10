@@ -3959,4 +3959,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez brûlant, dans un grand bol, garni de coriandre et de ciboule. Réconfortant, épicé et personnalisable — le hotpot express addictif.", badge: null }
     ]
   },
+  dizi: {
+    dateAjout: "2026-07-10T10:02:00",
+    nom: "Dizi (Abgoosht)",
+    cat: "soupes", pays: "iran",
+    base: 4,
+    temps: "2h",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Dizi (abgoosht) — le pot-au-feu persan : un mijoté d'agneau, de pois chiches et de haricots dans un bouillon parfumé, que l'on déguste en deux temps : d'abord le bouillon avec du pain, puis la viande et les légumes écrasés. Rustique et convivial.",
+    tableauDizi: [
+      { nb: 1, agneau: "60 g", poischiches: "30 g", haricotsblancs: "30 g", pommedeterre: "40 g", tomates: "½", oignon: "¼", curcuma: "0.5 g", bouillon: "250 ml", sel: "2 g" },
+      { nb: 2, agneau: "120 g", poischiches: "60 g", haricotsblancs: "60 g", pommedeterre: "80 g", tomates: "1", oignon: "½", curcuma: "1 g", bouillon: "500 ml", sel: "4 g" },
+      { nb: 3, agneau: "180 g", poischiches: "90 g", haricotsblancs: "90 g", pommedeterre: "120 g", tomates: "1½", oignon: "¾", curcuma: "1.5 g", bouillon: "750 ml", sel: "6 g" },
+      { nb: 4, agneau: "240 g", poischiches: "120 g", haricotsblancs: "120 g", pommedeterre: "160 g", tomates: "2", oignon: "1", curcuma: "2 g", bouillon: "1000 ml", sel: "8 g" },
+      { nb: 5, agneau: "300 g", poischiches: "150 g", haricotsblancs: "150 g", pommedeterre: "200 g", tomates: "2½", oignon: "1¼", curcuma: "2.5 g", bouillon: "1250 ml", sel: "10 g" },
+      { nb: 6, agneau: "360 g", poischiches: "180 g", haricotsblancs: "180 g", pommedeterre: "240 g", tomates: "3", oignon: "1½", curcuma: "3 g", bouillon: "1500 ml", sel: "12 g" },
+      { nb: 7, agneau: "420 g", poischiches: "210 g", haricotsblancs: "210 g", pommedeterre: "280 g", tomates: "3½", oignon: "1¾", curcuma: "3.5 g", bouillon: "1750 ml", sel: "14 g" },
+      { nb: 8, agneau: "480 g", poischiches: "240 g", haricotsblancs: "240 g", pommedeterre: "320 g", tomates: "4", oignon: "2", curcuma: "4 g", bouillon: "2000 ml", sel: "16 g" },
+      { nb: 9, agneau: "540 g", poischiches: "270 g", haricotsblancs: "270 g", pommedeterre: "360 g", tomates: "4½", oignon: "2¼", curcuma: "4.5 g", bouillon: "2250 ml", sel: "18 g" },
+      { nb: 10, agneau: "600 g", poischiches: "300 g", haricotsblancs: "300 g", pommedeterre: "400 g", tomates: "5", oignon: "2½", curcuma: "5 g", bouillon: "2500 ml", sel: "20 g" },
+      { nb: 11, agneau: "660 g", poischiches: "330 g", haricotsblancs: "330 g", pommedeterre: "440 g", tomates: "5½", oignon: "2¾", curcuma: "5.5 g", bouillon: "2750 ml", sel: "22 g" },
+      { nb: 12, agneau: "720 g", poischiches: "360 g", haricotsblancs: "360 g", pommedeterre: "480 g", tomates: "6", oignon: "3", curcuma: "6 g", bouillon: "3000 ml", sel: "24 g" },
+      { nb: 13, agneau: "780 g", poischiches: "390 g", haricotsblancs: "390 g", pommedeterre: "520 g", tomates: "6½", oignon: "3¼", curcuma: "6.5 g", bouillon: "3250 ml", sel: "26 g" },
+      { nb: 14, agneau: "840 g", poischiches: "420 g", haricotsblancs: "420 g", pommedeterre: "560 g", tomates: "7", oignon: "3½", curcuma: "7 g", bouillon: "3500 ml", sel: "28 g" },
+      { nb: 15, agneau: "900 g", poischiches: "450 g", haricotsblancs: "450 g", pommedeterre: "600 g", tomates: "7½", oignon: "3¾", curcuma: "7.5 g", bouillon: "3750 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Tremper", detail: "Faites tremper les pois chiches et les haricots blancs une nuit.", badge: null },
+      { icone: "🍲", titre: "Démarrer", detail: "Mettez l'agneau, les légumes secs égouttés, l'oignon et le curcuma dans une marmite (traditionnellement un pot en terre, le dizi), couvrez de bouillon et d'eau, et portez à frémissement en écumant.", badge: null },
+      { icone: "♨️", titre: "Mijoter longuement", detail: "Couvrez et laissez mijoter à feu très doux 1 h 30, jusqu'à ce que l'agneau et les légumes secs soient très tendres.", badge: null },
+      { icone: "🥔", titre: "Les légumes", detail: "Ajoutez la pomme de terre et la tomate, et poursuivez 30 min jusqu'à ce que tout soit fondant.", badge: null },
+      { icone: "🍜", titre: "1er service (le bouillon)", detail: "Filtrez et servez d'abord le bouillon (aab) dans des bols, avec des morceaux de pain plat séché émietté dedans (tilit).", badge: null },
+      { icone: "🥄", titre: "Écraser", detail: "Écrasez ensuite la viande, les pois chiches, les haricots et la pomme de terre égouttés au pilon (goosht koobideh) en une purée grossière.", badge: null },
+      { icone: "🍽️", titre: "2e service", detail: "Servez cette purée avec du pain, des oignons crus, des herbes et des cornichons. Un repas rustique et convivial en deux temps.", badge: null }
+    ]
+  },
 });

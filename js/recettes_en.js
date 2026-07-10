@@ -63618,5 +63618,345 @@ window.RECETTES_EN = {
     "detail": "Decorate with fresh pomegranate and crushed pistachios, and serve well chilled. Light, floral and delicate — the Turkish Ramadan sweet."
    }
   ]
+ },
+ "lahmajoun": {
+  "nom": "Lahmajoun",
+  "description": "Lahmajoun — the Armenian 'pizza': an ultra-thin flatbread spread with a thin layer of spiced minced meat with tomato, peppers and parsley, baked in a very hot oven. Crisp and fragrant, it's rolled up with lemon and herbs.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, salt, a little oil and water into a soft dough. Knead and rest 30 minutes."
+   },
+   {
+    "titre": "The topping",
+    "detail": "Blend the raw minced meat with the tomato, pepper, onion, parsley, cumin, chilli (and a little tomato paste) into a fine, fragrant paste."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough into very thin discs (like a crêpe), and place them on a tray."
+   },
+   {
+    "titre": "Spread",
+    "detail": "Spread a VERY thin layer of meat topping over each disc, right to the edges (the thinness is the key to lahmajoun)."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake in a very hot oven (240°C) for 8 to 10 minutes, until the dough is golden and crisp and the meat just cooked."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Drizzle with lemon juice and scatter with fresh parsley and sumac onion."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Roll the hot lahmajoun up and eat it by hand. Crisp, thin and fragrant — the Armenian street 'pizza', to roll up."
+   }
+  ]
+ },
+ "gheymeh": {
+  "nom": "Gheymeh",
+  "description": "Gheymeh — the Persian split pea stew: meat and yellow split peas simmered in a tomato sauce with saffron and dried black lime, crowned with crispy fries. Sweet-sour and fragrant, this khoresh is served over Persian rice.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Sauté the sliced onion in the oil until golden, then add the diced meat and colour it."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add the tomato paste and turmeric, sauté 1 minute, then add water."
+   },
+   {
+    "titre": "The split peas",
+    "detail": "Add the yellow split peas (or red lentils) and the dried black lime (or lemon juice), and bring to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer 1 hour over low heat, until the meat is tender and the split peas soft. Add the infused saffron."
+   },
+   {
+    "titre": "The fries",
+    "detail": "Cut the potatoes into fine matchsticks and fry them until golden and crisp (the signature topping of gheymeh)."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Adjust the sweet-sour (lemon) and salt. The sauce should be smooth, fragrant and slightly tangy."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the gheymeh over Persian rice, crowned with the crispy fries. Sweet-sour and fragrant — a great khoresh of the Iranian table."
+   }
+  ]
+ },
+ "dizi": {
+  "nom": "Dizi (Abgoosht)",
+  "description": "Dizi (abgoosht) — the Persian pot-au-feu: a stew of lamb, chickpeas and beans in a fragrant broth, eaten in two stages: first the broth with bread, then the mashed meat and vegetables. Rustic and convivial.",
+  "etapes": [
+   {
+    "titre": "Soak",
+    "detail": "Soak the chickpeas and white beans overnight."
+   },
+   {
+    "titre": "Start",
+    "detail": "Put the lamb, drained pulses, onion and turmeric in a pot (traditionally an earthenware pot, the dizi), cover with stock and water, and bring to a simmer, skimming."
+   },
+   {
+    "titre": "Simmer at length",
+    "detail": "Cover and simmer over very low heat for 1 hour 30, until the lamb and pulses are very tender."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the potato and tomato, and continue 30 minutes until everything is soft."
+   },
+   {
+    "titre": "1st course (the broth)",
+    "detail": "Strain and serve the broth (aab) first in bowls, with pieces of dried flatbread crumbled in (tilit)."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Then mash the drained meat, chickpeas, beans and potato with a pestle (goosht koobideh) into a coarse purée."
+   },
+   {
+    "titre": "2nd course",
+    "detail": "Serve this purée with bread, raw onions, herbs and pickles. A rustic, convivial two-stage meal."
+   }
+  ]
+ },
+ "kashkebademjan": {
+  "nom": "Kashke Bademjan",
+  "description": "Kashke bademjan — the Persian eggplant dip: a purée of soft eggplant mixed with fried onions, garlic, mint and kashk (fermented whey). Creamy, umami and fragrant, this Iranian mezze is enjoyed warm with flatbread.",
+  "etapes": [
+   {
+    "titre": "Cook the eggplant",
+    "detail": "Peel and cut the eggplant, then cook it (in a pan or oven) until very soft and golden. Mash it into a purée."
+   },
+   {
+    "titre": "Fried onions",
+    "detail": "Slowly brown the sliced onion in the oil until well caramelised. Reserve some for decoration."
+   },
+   {
+    "titre": "Garlic & mint",
+    "detail": "Sauté the garlic and dried mint in a little oil (na'na dagh) until fragrant."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Mix the eggplant purée with the fried onions, garlic, turmeric and salt, and reheat gently."
+   },
+   {
+    "titre": "The kashk",
+    "detail": "Stir in the kashk (or thick yogurt or sour cream): it brings the characteristic creaminess and umami."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Spread the kashke bademjan on a plate and decorate with swirls of kashk, fried onions, mint and crushed walnuts."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm with warm flatbread (sangak, lavash). Creamy, umami and fragrant — a great mezze of the Iranian table."
+   }
+  ]
+ },
+ "saladshirazi": {
+  "nom": "Shirazi Salad",
+  "description": "Shirazi salad — the fresh salad of Shiraz: cucumbers, tomatoes and onions cut into tiny dice, lifted with mint, lemon (or verjuice). Crunchy, tangy and refreshing, it accompanies all Persian rice dishes.",
+  "etapes": [
+   {
+    "titre": "Cut into small dice",
+    "detail": "Cut the cucumbers, tomatoes (seeded) and onion into tiny even dice: the fineness of the cut makes shirazi salad."
+   },
+   {
+    "titre": "The mint",
+    "detail": "Finely chop the fresh mint (and optionally dried mint to intensify the aroma)."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine the vegetables and mint in a bowl and mix gently."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with lemon juice (or verjuice, more authentic), a drizzle of olive oil and salt."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "The salad should be fresh and tangy. Taste and adjust the acidity."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 minutes in the fridge so the flavours mingle and the vegetables release a little juice."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve well chilled, as a side to Persian rice, a kebab or a stew. The tangy freshness that balances Iranian dishes."
+   }
+  ]
+ },
+ "mandi": {
+  "nom": "Mandi",
+  "description": "Mandi — the smoked rice of Yemen: basmati rice scented with a spice blend (hawaij), topped with tender chicken or lamb, all smoked over charcoal at the end of cooking. Rich, fragrant and convivial, it's the festive dish of the Arabian Peninsula.",
+  "etapes": [
+   {
+    "titre": "The hawaij blend",
+    "detail": "Mix the spices: turmeric, cardamom, cinnamon, clove, cumin and black pepper — the Yemeni hawaij blend, the heart of mandi."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Rub the chicken (or lamb) with some of the spice blend and salt, and roast or simmer it until tender. Keep the broth."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Sauté the onion, add the rinsed basmati rice and the rest of the spices, and make it pearly."
+   },
+   {
+    "titre": "Cook the rice",
+    "detail": "Add the fragrant chicken broth and cook the rice by absorption, until tender and fragrant."
+   },
+   {
+    "titre": "Smoke",
+    "detail": "Place a small container with a glowing charcoal in the centre of the rice, drop a little oil on it to make it smoke, cover 5 minutes: the rice takes on a characteristic smoky aroma."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Plate the smoked rice on a large platter and crown it with the golden chicken."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with a hot sauce (sahawiq) and a salad. Rich, fragrant and convivial — the festive sharing dish of the Arabian Peninsula."
+   }
+  ]
+ },
+ "ouzi": {
+  "nom": "Ouzi",
+  "description": "Ouzi — the spiced rice with nuts of the Levant: fragrant rice mixed with minced meat, peas and carrots, scattered with golden almonds and pine nuts. Served as a dome or in a pastry pouch, it's a generous festive dish of Lebanese weddings.",
+  "etapes": [
+   {
+    "titre": "The meat",
+    "detail": "Sauté the minced meat (lamb or beef) with the cinnamon, allspice and salt, until golden and fragrant."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the peas and diced carrot, and sauté a few minutes."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rinsed rice, mix to coat, then add stock and cook by absorption until the rice is tender and fragrant."
+   },
+   {
+    "titre": "The nuts",
+    "detail": "Fry the almonds and pine nuts in a little butter until crisp and golden."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir some of the nuts into the rice and reserve the rest for decoration."
+   },
+   {
+    "titre": "Plate",
+    "detail": "Pack the rice into a bowl and turn it out into a dome on a platter (or wrap it in thin pastry for the pouch version)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with the rest of the almonds and pine nuts, and serve with yogurt. Generous and fragrant — the festive dish of Lebanese weddings."
+   }
+  ]
+ },
+ "maqluba2": {
+  "nom": "Maqluba",
+  "description": "Maqluba — the Palestinian upside-down dish: a build of rice, chicken and fried vegetables (eggplant, cauliflower), cooked in one piece then flipped onto the platter like a cake. Its name means 'upside down' — the spectacular flip is all the charm.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Cook the chicken in a broth scented with spices (cinnamon, turmeric, cardamom), until tender. Keep the broth."
+   },
+   {
+    "titre": "Fry the vegetables",
+    "detail": "Fry separately the eggplant, cauliflower and potato in slices, until golden."
+   },
+   {
+    "titre": "The build",
+    "detail": "In a pot, arrange the chicken at the bottom, then the fried vegetables in layers, and finally the rinsed spiced rice on top (the reversed order of the final serving)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Pour hot broth to the level of the rice, cover and cook over low heat until fully absorbed and the rice tender."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 10 minutes off the heat, covered: the maqluba holds better when turned out."
+   },
+   {
+    "titre": "Flip",
+    "detail": "Place a large platter on the pot and flip the whole thing in one confident motion: the maqluba turns out as a dome, chicken and vegetables on top (the spectacular moment)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with golden almonds and pine nuts, and serve with yogurt and a salad. The convivial upside-down dish of Palestine."
+   }
+  ]
+ },
+ "samboosa": {
+  "nom": "Samboosa",
+  "description": "Samboosa — the little fried pastries of Ramadan: thin triangles of dough filled with spiced minced meat (or vegetables), fried until golden and crisp. Arab cousins of samosas, they're the essential snack of breaking the fast.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Sauté the minced meat with the sliced onion, cumin, chilli and coriander, until golden and fragrant. Let cool."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Use thin brick pastry sheets (or homemade samosa dough, rolled very thinly). Cut them into strips."
+   },
+   {
+    "titre": "Fold into triangles",
+    "detail": "Place a spoon of filling at the base of each strip, then fold into successive triangles (like a flag), sealing the last flap with a little water or flour paste."
+   },
+   {
+    "titre": "Heat the oil",
+    "detail": "Heat the frying oil to 170°C."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Fry the samboosa 2 to 3 minutes, turning, until golden and crisp. Don't overcrowd."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels. The pastry should be crisp and the filling hot and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with a yogurt sauce or chutney. The crisp snack of breaking the fast (iftar), to share."
+   }
+  ]
+ },
+ "chakchouka": {
+  "nom": "Chakchouka",
+  "description": "Chakchouka — the Maghrebi pepper-and-egg pan: a stew of peppers and tomatoes lifted with harissa, in which eggs are poached. Spicy, soft and convivial, it's eaten straight from the pan with bread, at any hour.",
+  "etapes": [
+   {
+    "titre": "The peppers",
+    "detail": "Sauté the sliced onion and garlic in the olive oil, then add the peppers in strips and stew them 10 minutes."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the cumin, paprika and harissa (dosed to taste), and mix to flavour and colour."
+   },
+   {
+    "titre": "The tomatoes",
+    "detail": "Add the crushed tomatoes, season, and simmer 12 minutes until the sauce thickens and the vegetables soften."
+   },
+   {
+    "titre": "Poach the eggs",
+    "detail": "Make wells in the sauce and crack an egg per person into them. Cover and poach over low heat."
+   },
+   {
+    "titre": "Check",
+    "detail": "The eggs are ready when the white is set but the yolk still runny (5 to 7 minutes). Don't overcook them."
+   },
+   {
+    "titre": "Garnish",
+    "detail": "Scatter with chopped coriander or parsley."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the chakchouka scalding, straight from the pan, with bread to mop up the runny yolk. Spicy, soft and convivial."
+   }
+  ]
  }
 };

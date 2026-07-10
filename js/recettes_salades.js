@@ -2333,4 +2333,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez frais, parsemé d'aneth et d'un filet d'huile, avec du pain plat et des grillades. Rafraîchissant et acidulé — l'antidote turc à la chaleur.", badge: null }
     ]
   },
+  saladshirazi: {
+    dateAjout: "2026-07-10T10:04:00",
+    nom: "Salade Shirazi",
+    cat: "salades", pays: "iran",
+    base: 4,
+    temps: "15 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Salade shirazi — la salade fraîche de Chiraz : des concombres, tomates et oignons coupés en tout petits dés, relevés de menthe, de citron (ou de verjus). Croquante, acidulée et rafraîchissante, elle accompagne tous les plats de riz persans.",
+    tableauSaladshirazi: [
+      { nb: 1, concombre: "60 g", tomates: "1", oignon: "¼", menthe: "3 g", citron: "½", huileolive: "5 ml", sel: "2 g" },
+      { nb: 2, concombre: "120 g", tomates: "2", oignon: "½", menthe: "6 g", citron: "1", huileolive: "10 ml", sel: "4 g" },
+      { nb: 3, concombre: "180 g", tomates: "3", oignon: "¾", menthe: "9 g", citron: "1½", huileolive: "15 ml", sel: "6 g" },
+      { nb: 4, concombre: "240 g", tomates: "4", oignon: "1", menthe: "12 g", citron: "2", huileolive: "20 ml", sel: "8 g" },
+      { nb: 5, concombre: "300 g", tomates: "5", oignon: "1¼", menthe: "15 g", citron: "2½", huileolive: "25 ml", sel: "10 g" },
+      { nb: 6, concombre: "360 g", tomates: "6", oignon: "1½", menthe: "18 g", citron: "3", huileolive: "30 ml", sel: "12 g" },
+      { nb: 7, concombre: "420 g", tomates: "7", oignon: "1¾", menthe: "21 g", citron: "3½", huileolive: "35 ml", sel: "14 g" },
+      { nb: 8, concombre: "480 g", tomates: "8", oignon: "2", menthe: "24 g", citron: "4", huileolive: "40 ml", sel: "16 g" },
+      { nb: 9, concombre: "540 g", tomates: "9", oignon: "2¼", menthe: "27 g", citron: "4½", huileolive: "45 ml", sel: "18 g" },
+      { nb: 10, concombre: "600 g", tomates: "10", oignon: "2½", menthe: "30 g", citron: "5", huileolive: "50 ml", sel: "20 g" },
+      { nb: 11, concombre: "660 g", tomates: "11", oignon: "2¾", menthe: "33 g", citron: "5½", huileolive: "55 ml", sel: "22 g" },
+      { nb: 12, concombre: "720 g", tomates: "12", oignon: "3", menthe: "36 g", citron: "6", huileolive: "60 ml", sel: "24 g" },
+      { nb: 13, concombre: "780 g", tomates: "13", oignon: "3¼", menthe: "39 g", citron: "6½", huileolive: "65 ml", sel: "26 g" },
+      { nb: 14, concombre: "840 g", tomates: "14", oignon: "3½", menthe: "42 g", citron: "7", huileolive: "70 ml", sel: "28 g" },
+      { nb: 15, concombre: "900 g", tomates: "15", oignon: "3¾", menthe: "45 g", citron: "7½", huileolive: "75 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🔪", titre: "Couper en petits dés", detail: "Coupez les concombres, les tomates (épépinées) et l'oignon en tout petits dés réguliers : la finesse de la coupe fait la salade shirazi.", badge: null },
+      { icone: "🌿", titre: "La menthe", detail: "Ciselez finement la menthe fraîche (et éventuellement de la menthe séchée pour intensifier le parfum).", badge: null },
+      { icone: "🥗", titre: "Mélanger", detail: "Réunissez les légumes et la menthe dans un saladier et mélangez délicatement.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Assaisonnez de jus de citron (ou de verjus, plus authentique), d'un filet d'huile d'olive et de sel.", badge: null },
+      { icone: "🥄", titre: "Ajuster", detail: "La salade doit être fraîche et acidulée. Goûtez et rectifiez l'acidité.", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laissez reposer 10 min au frais pour que les saveurs se mêlent et que les légumes rendent un peu de jus.", badge: null },
+      { icone: "🍚", titre: "Servir", detail: "Servez bien fraîche, en accompagnement d'un riz persan, d'un kebab ou d'un ragoût. La fraîcheur acidulée qui équilibre les plats iraniens.", badge: null }
+    ]
+  },
 });
