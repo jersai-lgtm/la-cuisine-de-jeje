@@ -2634,4 +2634,41 @@ Object.assign(recettes, {
     ],
     liees: ["kokoda"]
   },
+  lasary: {
+    dateAjout: "2026-07-11T09:08:00",
+    nom: "Lasary",
+    cat: "salades", pays: "madagascar",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Lasary voatabia — la salade malgache tomate-oignon : des tomates et des oignons finement coupés, relevés de gingembre, de ciboule et de citron, avec un filet d'huile. Fraîche, acidulée et parfumée, cette petite salade-condiment accompagne le riz et les plats mijotés à toutes les tables de Madagascar.",
+    tableauLasary: [
+      { nb: 1, tomates: "1", oignon: "25 g", gingembre: "4 g", ciboule: "8 g", citron: "½", huileolive: "6 ml", piment: "0.5 g", sel: "1 g" },
+      { nb: 2, tomates: "2", oignon: "50 g", gingembre: "8 g", ciboule: "16 g", citron: "1", huileolive: "12 ml", piment: "1 g", sel: "2 g" },
+      { nb: 3, tomates: "3", oignon: "75 g", gingembre: "12 g", ciboule: "24 g", citron: "1½", huileolive: "18 ml", piment: "1.5 g", sel: "3 g" },
+      { nb: 4, tomates: "4", oignon: "100 g", gingembre: "16 g", ciboule: "32 g", citron: "2", huileolive: "24 ml", piment: "2 g", sel: "4 g" },
+      { nb: 5, tomates: "5", oignon: "125 g", gingembre: "20 g", ciboule: "40 g", citron: "2½", huileolive: "30 ml", piment: "2.5 g", sel: "5 g" },
+      { nb: 6, tomates: "6", oignon: "150 g", gingembre: "24 g", ciboule: "48 g", citron: "3", huileolive: "36 ml", piment: "3 g", sel: "6 g" },
+      { nb: 7, tomates: "7", oignon: "175 g", gingembre: "28 g", ciboule: "56 g", citron: "3½", huileolive: "42 ml", piment: "3.5 g", sel: "7 g" },
+      { nb: 8, tomates: "8", oignon: "200 g", gingembre: "32 g", ciboule: "64 g", citron: "4", huileolive: "48 ml", piment: "4 g", sel: "8 g" },
+      { nb: 9, tomates: "9", oignon: "225 g", gingembre: "36 g", ciboule: "72 g", citron: "4½", huileolive: "54 ml", piment: "4.5 g", sel: "9 g" },
+      { nb: 10, tomates: "10", oignon: "250 g", gingembre: "40 g", ciboule: "80 g", citron: "5", huileolive: "60 ml", piment: "5 g", sel: "10 g" },
+      { nb: 11, tomates: "11", oignon: "275 g", gingembre: "44 g", ciboule: "88 g", citron: "5½", huileolive: "66 ml", piment: "5.5 g", sel: "11 g" },
+      { nb: 12, tomates: "12", oignon: "300 g", gingembre: "48 g", ciboule: "96 g", citron: "6", huileolive: "72 ml", piment: "6 g", sel: "12 g" },
+      { nb: 13, tomates: "13", oignon: "325 g", gingembre: "52 g", ciboule: "104 g", citron: "6½", huileolive: "78 ml", piment: "6.5 g", sel: "13 g" },
+      { nb: 14, tomates: "14", oignon: "350 g", gingembre: "56 g", ciboule: "112 g", citron: "7", huileolive: "84 ml", piment: "7 g", sel: "14 g" },
+      { nb: 15, tomates: "15", oignon: "375 g", gingembre: "60 g", ciboule: "120 g", citron: "7½", huileolive: "90 ml", piment: "7.5 g", sel: "15 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Les tomates", detail: "Coupez les tomates bien mûres en petits dés (épépinez-les si elles sont trop juteuses).", badge: null },
+      { icone: "🧅", titre: "L'oignon", detail: "Émincez très finement l'oignon (rincez-le à l'eau froide pour l'adoucir si besoin).", badge: null },
+      { icone: "🫚", titre: "Le gingembre", detail: "Râpez ou hachez finement le gingembre frais, qui donne au lasary son parfum vif.", badge: null },
+      { icone: "🌿", titre: "La ciboule", detail: "Ciselez la ciboule (ou l'oignon vert) et éventuellement un peu de piment.", badge: null },
+      { icone: "🥣", titre: "Mélanger", detail: "Réunissez tous les ingrédients dans un bol.", badge: null },
+      { icone: "🍋", titre: "Assaisonner", detail: "Assaisonnez de jus de citron, d'un filet d'huile et de sel, et mélangez délicatement.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Laissez reposer 10 min pour que les saveurs se marient, et servez frais à côté du riz et des plats. Fraîche, acidulée et parfumée — la salade-condiment de Madagascar.", badge: null }
+    ]
+  },
 });

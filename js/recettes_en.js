@@ -68004,5 +68004,345 @@ window.RECETTES_EN = {
     "detail": "Serve well chilled, at once, in a half coconut shell or a bowl. Fresh, mild and briny — the coconut raw fish of Samoa."
    }
   ]
+ },
+ "misirwot": {
+  "nom": "Misir Wot",
+  "description": "Misir wot — the Ethiopian red lentil stew: red lentils long-simmered with plenty of softened onion and a generous dose of berbere (spicy spice blend), enriched with niter kibbeh (spiced clarified butter). Bold, fragrant and plant-based, it's eaten on injera, the great sour Ethiopian flatbread.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Slowly soften the finely sliced onion dry (no fat at first), over low heat, until very soft and golden: the base of every Ethiopian wot."
+   },
+   {
+    "titre": "The berbere",
+    "detail": "Add the berbere (blend of paprika, chilli, cumin, coriander, fenugreek) and sauté it in the clarified butter (niter kibbeh) until fragrant."
+   },
+   {
+    "titre": "Garlic-ginger",
+    "detail": "Add the crushed garlic and ginger, and stir."
+   },
+   {
+    "titre": "The lentils",
+    "detail": "Add the rinsed red lentils and coat them well in the spice mix."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add hot water little by little and simmer, stirring, until the lentils break down into a thick, smooth purée."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Salt and adjust the heat: misir wot should be bold, fragrant and smooth."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot on an injera, with other wots and vegetables. Bold, fragrant and plant-based — the great Ethiopian classic."
+   }
+  ]
+ },
+ "atkiltwot": {
+  "nom": "Atkilt Wot",
+  "description": "Atkilt wot (alicha) — the mild Ethiopian vegetable sauté: cabbage, carrots and potatoes simmered with turmeric, onion and ginger, without chilli. Mild, colourful and fragrant, this golden plant-based dish balances the spicy wots on injera, especially during Orthodox fasts.",
+  "etapes": [
+   {
+    "titre": "The onion",
+    "detail": "Sauté the sliced onion in the oil until soft."
+   },
+   {
+    "titre": "Garlic-ginger",
+    "detail": "Add the garlic, ginger and turmeric, and sauté until fragrant and everything turns golden yellow."
+   },
+   {
+    "titre": "The carrots",
+    "detail": "Add the carrots in batons and sauté for a few minutes."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the potatoes in wedges and a little water, and cook covered."
+   },
+   {
+    "titre": "The cabbage",
+    "detail": "Add the sliced cabbage and continue cooking until all the vegetables are tender but still a little firm."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and let the water evaporate: the vegetables should be golden, glossy and coated in turmeric (not in sauce)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm on injera, alongside a spicy misir wot. Mild, colourful and fragrant — the plant-based dish of Ethiopian fasts."
+   }
+  ]
+ },
+ "pilau": {
+  "nom": "Pilau",
+  "description": "Pilau — the Swahili spiced rice: fragrant rice cooked in a meat broth lifted with pilau masala (cumin, cardamom, cinnamon, clove, black pepper), tinted with onion caramel. Fragrant and comforting, it's the festive rice of the East African coast, from Tanzania to Kenya.",
+  "etapes": [
+   {
+    "titre": "The onion caramel",
+    "detail": "Sauté the sliced onion in the oil, at length, until deeply browned (it gives pilau its brown colour and flavour)."
+   },
+   {
+    "titre": "Garlic-ginger",
+    "detail": "Add the crushed garlic and ginger."
+   },
+   {
+    "titre": "The pilau masala",
+    "detail": "Add the spice blend (cumin, cardamom, cinnamon, clove, pepper) and sauté until fragrant."
+   },
+   {
+    "titre": "The meat",
+    "detail": "Add the meat (beef or goat) and colour it in the spices."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add a little water, cover and simmer until the meat is tender."
+   },
+   {
+    "titre": "The rice",
+    "detail": "Add the rinsed rice and the right volume of broth, salt, and bring to a simmer."
+   },
+   {
+    "titre": "Cook and serve",
+    "detail": "Cover and cook over low heat until the rice is tender and fragrant, each grain separate. Serve with kachumbari (onion-tomato salad). Fragrant and festive — the Swahili rice."
+   }
+  ]
+ },
+ "ndizinyama": {
+  "nom": "Ndizi na Nyama",
+  "description": "Ndizi na nyama — the plantain and beef of Tanzania: green plantains simmered with beef in a tomato-coconut sauce, until tender. Nourishing, mild and fragrant, this one-pot dish (the plantains cook in the sauce and thicken it) is an everyday comfort in East Africa.",
+  "etapes": [
+   {
+    "titre": "The beef",
+    "detail": "Brown the beef pieces in the oil, then set them aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic, add the turmeric and tomato, and let it cook down."
+   },
+   {
+    "titre": "Simmer the meat",
+    "detail": "Return the beef, cover with water and simmer until almost tender."
+   },
+   {
+    "titre": "The plantains",
+    "detail": "Peel the green plantains and cut them into large chunks."
+   },
+   {
+    "titre": "Cook together",
+    "detail": "Add the plantains to the sauce and let them cook: they turn tender and naturally thicken the sauce."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and simmer gently until everything is tender and coated in a creamy sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve hot. Nourishing, mild and fragrant — the comforting one-pot of Tanzania."
+   }
+  ]
+ },
+ "matapa": {
+  "nom": "Matapa",
+  "description": "Matapa — the Mozambican coconut leaf stew: pounded cassava (or sweet potato) leaves, simmered in coconut milk with peanut paste and prawns. Creamy, green and briny, it's the great national dish of Mozambique, served with rice.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Pound or very finely chop the cassava leaves (or spinach), then cook them in a little water to tenderise them."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the sliced onion and garlic until soft."
+   },
+   {
+    "titre": "The peanut",
+    "detail": "Loosen the peanut paste in a little water and stir it into the leaves."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the coconut milk and simmer gently, stirring, to bind the stew."
+   },
+   {
+    "titre": "The prawns",
+    "detail": "Add the prawns (or crab) and cook them for a few minutes."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the leaves are tender and the stew creamy and green."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Salt and serve hot with rice. Creamy, green and briny — the great national dish of Mozambique."
+   }
+  ]
+ },
+ "soupoukanja": {
+  "nom": "Soupou Kanja",
+  "description": "Soupou kanja — the Senegalese okra stew: okra simmered in palm oil with fresh and smoked fish and prawns, into a thick, binding sauce. Briny, generous and slightly viscous, it's served over white rice, a great classic of the Senegalese coast.",
+  "etapes": [
+   {
+    "titre": "The okra",
+    "detail": "Wash and slice the okra into rounds (or grate it): it will thicken and bind the sauce."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Clean the fresh fish and soak the smoked fish to rehydrate it."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion in the palm oil, add the chilli and a little garlic."
+   },
+   {
+    "titre": "The okra",
+    "detail": "Add the okra and sauté, then add water and cook until it melts and binds the sauce."
+   },
+   {
+    "titre": "The fish",
+    "detail": "Add the fresh and smoked fish, and the prawns, and simmer gently."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the sauce is thick, binding and fragrant with palm oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the soupou kanja over hot white rice. Briny, generous and binding — the okra stew of the Senegalese coast."
+   }
+  ]
+ },
+ "calulu": {
+  "nom": "Calulu",
+  "description": "Calulu — the Angolan fish stew: fresh and dried fish simmered with green leaves, okra, tomato and palm oil, into a rich, fragrant stew. Generous and briny, it's an emblematic dish of Angola, traditionally served with funge (cassava paste).",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Use a mix of fresh and dried fish (rehydrated), which gives calulu its depth of flavour."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic in the palm oil, add the tomato and chilli, and let it cook down."
+   },
+   {
+    "titre": "The dried fish",
+    "detail": "Add the dried fish and a little water, and simmer to flavour the broth."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Add the okra and green leaves (sweet potato, or spinach)."
+   },
+   {
+    "titre": "The fresh fish",
+    "detail": "Gently add the fresh fish and cook it without stirring too much (so it doesn't break)."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until the leaves are tender and the sauce thick and red with palm oil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the calulu with funge (cassava paste) or rice. Generous, briny and fragrant — the emblematic stew of Angola."
+   }
+  ]
+ },
+ "funge": {
+  "nom": "Funge",
+  "description": "Funge — the Angolan cassava paste: a smooth, elastic porridge of cassava (or corn) flour, worked until it becomes a compact, gelatinous paste. Neutral and filling, it's the staple starch of Angola, shaped into a ball to accompany stews like calulu or muamba.",
+  "etapes": [
+   {
+    "titre": "The water",
+    "detail": "Bring salted water to a simmer in a heavy-bottomed pot."
+   },
+   {
+    "titre": "Slurry",
+    "detail": "First mix a small part of the cassava flour (bombó) in cold water to avoid lumps."
+   },
+   {
+    "titre": "The paste",
+    "detail": "Pour the mixture into the simmering water, then add the rest of the flour little by little, stirring energetically with a spatula (it takes strength)."
+   },
+   {
+    "titre": "Work it",
+    "detail": "Work the paste constantly until it becomes smooth, thick, elastic and pulls away from the sides."
+   },
+   {
+    "titre": "Shape",
+    "detail": "Wet a bowl, pour in the paste and shape it into a smooth, glossy ball."
+   },
+   {
+    "titre": "The accompaniment",
+    "detail": "Make a small sauce of onion, tomato and palm oil to serve alongside (funge is neutral)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the funge ball hot, beside a stew (calulu, muamba): pieces are torn off to mop up. Neutral and filling — the Angolan staple starch."
+   }
+  ]
+ },
+ "lasary": {
+  "nom": "Lasary",
+  "description": "Lasary voatabia — the Malagasy tomato-onion salad: finely cut tomatoes and onions, lifted with ginger, spring onion and lemon, with a drizzle of oil. Fresh, tangy and fragrant, this little condiment-salad accompanies rice and stews at every table in Madagascar.",
+  "etapes": [
+   {
+    "titre": "The tomatoes",
+    "detail": "Cut ripe tomatoes into small dice (seed them if too juicy)."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Very finely slice the onion (rinse it in cold water to soften if needed)."
+   },
+   {
+    "titre": "The ginger",
+    "detail": "Grate or finely chop the fresh ginger, which gives lasary its bright aroma."
+   },
+   {
+    "titre": "The spring onion",
+    "detail": "Chop the spring onion (or green onion) and optionally a little chilli."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Combine all the ingredients in a bowl."
+   },
+   {
+    "titre": "Season",
+    "detail": "Season with lemon juice, a drizzle of oil and salt, and mix gently."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Let it rest 10 minutes so the flavours marry, and serve fresh alongside rice and dishes. Fresh, tangy and fragrant — the condiment-salad of Madagascar."
+   }
+  ]
+ },
+ "ifisashi": {
+  "nom": "Ifisashi",
+  "description": "Ifisashi — the Zambian greens in peanut sauce: green leaves (spinach, pumpkin, peanut) simmered in a creamy peanut-paste and tomato sauce. Vegetarian, creamy and nourishing, it's served with nshima (corn paste), a pillar of Zambian cooking.",
+  "etapes": [
+   {
+    "titre": "The base",
+    "detail": "Sauté the sliced onion in the oil until soft, then add the tomato and garlic."
+   },
+   {
+    "titre": "The peanut",
+    "detail": "Loosen the peanut paste in a little water and stir it into the base: it will cream the sauce."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Simmer for a few minutes until the peanut sauce thickens and turns creamy."
+   },
+   {
+    "titre": "The leaves",
+    "detail": "Add the green leaves (spinach, pumpkin or peanut leaves) and mix to coat them."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer covered until the leaves are tender and well coated in sauce."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Salt and adjust the texture: ifisashi should be creamy, not too runny."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with nshima (corn paste) or rice. Creamy, plant-based and nourishing — the pillar of Zambian cooking."
+   }
+  ]
  }
 };

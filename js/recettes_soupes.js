@@ -4554,4 +4554,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Parsemez de coriandre fraîche et servez dans son bouillon, sur du riz rouge. Réconfortant, parfumé et relevé — le ragoût de poulet bhoutanais.", badge: null }
     ]
   },
+  soupoukanja: {
+    dateAjout: "2026-07-11T09:05:00",
+    nom: "Soupou Kanja",
+    cat: "soupes", pays: "senegal",
+    base: 4,
+    temps: "1h15",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍲",
+    description: "Soupou kanja — le ragoût de gombos sénégalais : des gombos mijotés à l'huile de palme avec du poisson frais et fumé et des crevettes, en une sauce épaisse et liante. Iodé, généreux et légèrement gluant, il se sert sur du riz blanc, un grand classique de la côte sénégalaise.",
+    tableauSoupoukanja: [
+      { nb: 1, gombo: "60 g", poisson: "70 g", crevettes: "25 g", huilePalme: "10 ml", oignon: "30 g", piment: "1.5 g", ail: "1", riz: "40 g", sel: "2 g" },
+      { nb: 2, gombo: "120 g", poisson: "140 g", crevettes: "50 g", huilePalme: "20 ml", oignon: "60 g", piment: "3 g", ail: "2", riz: "80 g", sel: "4 g" },
+      { nb: 3, gombo: "180 g", poisson: "210 g", crevettes: "75 g", huilePalme: "30 ml", oignon: "90 g", piment: "4.5 g", ail: "3", riz: "120 g", sel: "6 g" },
+      { nb: 4, gombo: "240 g", poisson: "280 g", crevettes: "100 g", huilePalme: "40 ml", oignon: "120 g", piment: "6 g", ail: "4", riz: "160 g", sel: "8 g" },
+      { nb: 5, gombo: "300 g", poisson: "350 g", crevettes: "125 g", huilePalme: "50 ml", oignon: "150 g", piment: "7.5 g", ail: "5", riz: "200 g", sel: "10 g" },
+      { nb: 6, gombo: "360 g", poisson: "420 g", crevettes: "150 g", huilePalme: "60 ml", oignon: "180 g", piment: "9 g", ail: "6", riz: "240 g", sel: "12 g" },
+      { nb: 7, gombo: "420 g", poisson: "490 g", crevettes: "175 g", huilePalme: "70 ml", oignon: "210 g", piment: "10.5 g", ail: "7", riz: "280 g", sel: "14 g" },
+      { nb: 8, gombo: "480 g", poisson: "560 g", crevettes: "200 g", huilePalme: "80 ml", oignon: "240 g", piment: "12 g", ail: "8", riz: "320 g", sel: "16 g" },
+      { nb: 9, gombo: "540 g", poisson: "630 g", crevettes: "225 g", huilePalme: "90 ml", oignon: "270 g", piment: "13.5 g", ail: "9", riz: "360 g", sel: "18 g" },
+      { nb: 10, gombo: "600 g", poisson: "700 g", crevettes: "250 g", huilePalme: "100 ml", oignon: "300 g", piment: "15 g", ail: "10", riz: "400 g", sel: "20 g" },
+      { nb: 11, gombo: "660 g", poisson: "770 g", crevettes: "275 g", huilePalme: "110 ml", oignon: "330 g", piment: "16.5 g", ail: "11", riz: "440 g", sel: "22 g" },
+      { nb: 12, gombo: "720 g", poisson: "840 g", crevettes: "300 g", huilePalme: "120 ml", oignon: "360 g", piment: "18 g", ail: "12", riz: "480 g", sel: "24 g" },
+      { nb: 13, gombo: "780 g", poisson: "910 g", crevettes: "325 g", huilePalme: "130 ml", oignon: "390 g", piment: "19.5 g", ail: "13", riz: "520 g", sel: "26 g" },
+      { nb: 14, gombo: "840 g", poisson: "980 g", crevettes: "350 g", huilePalme: "140 ml", oignon: "420 g", piment: "21 g", ail: "14", riz: "560 g", sel: "28 g" },
+      { nb: 15, gombo: "900 g", poisson: "1050 g", crevettes: "375 g", huilePalme: "150 ml", oignon: "450 g", piment: "22.5 g", ail: "15", riz: "600 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌿", titre: "Les gombos", detail: "Lavez et coupez les gombos en rondelles (ou râpez-les) : ils vont épaissir et lier la sauce.", badge: null },
+      { icone: "🐟", titre: "Le poisson", detail: "Nettoyez le poisson frais et faites tremper le poisson fumé pour le réhydrater.", badge: null },
+      { icone: "🧅", titre: "La base", detail: "Faites revenir l'oignon dans l'huile de palme, ajoutez le piment et un peu d'ail.", badge: null },
+      { icone: "🌿", titre: "Les gombos", detail: "Ajoutez les gombos et faites-les revenir, puis mouillez d'eau et laissez cuire jusqu'à ce qu'ils fondent et lient la sauce.", badge: null },
+      { icone: "🐟", titre: "Le poisson", detail: "Ajoutez le poisson frais et fumé, et les crevettes, et laissez mijoter doucement.", badge: null },
+      { icone: "♨️", titre: "Mijoter", detail: "Laissez mijoter jusqu'à ce que la sauce soit épaisse, liante et parfumée à l'huile de palme.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez le soupou kanja sur du riz blanc chaud. Iodé, généreux et liant — le ragoût de gombos de la côte sénégalaise.", badge: null }
+    ],
+    liees: ["thieboudienne"]
+  },
 });
