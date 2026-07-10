@@ -61918,5 +61918,345 @@ window.RECETTES_EN = {
     "detail": "Serve hot with a mango, tamarind or coriander chutney for dipping. The crisp Caribbean street snack of Trinidad."
    }
   ]
+ },
+ "sambar": {
+  "nom": "Sambar",
+  "description": "Sambar — the vegetable dhal of South India: a stew of red lentils and vegetables, soured with tamarind and scented with a blend of toasted spices (sambar podi). Comforting and complete, it accompanies rice, dosas and idlis daily.",
+  "etapes": [
+   {
+    "titre": "Cook the lentils",
+    "detail": "Rinse the red lentils (toor dal) and cook them with the turmeric until they break down into a purée. Set aside."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Sauté the onion, add the chopped vegetables (zucchini, eggplant, tomato) and a little water, and cook until tender."
+   },
+   {
+    "titre": "The acidity",
+    "detail": "Add the lemon juice (or diluted tamarind paste): the sweet-sour acidity is the signature of sambar."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Add the mashed lentils and water to get the consistency of a brothy stew. Salt and add the chilli. Simmer 10 minutes."
+   },
+   {
+    "titre": "The tarka",
+    "detail": "In a small pan, toast the cumin and spices (mustard seeds, curry leaves, dried chilli) in a little oil until they crackle and are fragrant."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Pour this sizzling tarka into the sambar: it instantly releases all its aromas. Mix."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve hot with rice, idlis or dosas. A fragrant, tangy, comforting dhal."
+   }
+  ]
+ },
+ "vada": {
+  "nom": "Medu Vada",
+  "description": "Medu vada — the lentil fritters of South India: little savoury donut-shaped fritters of soaked and ground lentils, crisp outside and soft inside. Served at breakfast with coconut chutney and sambar.",
+  "etapes": [
+   {
+    "titre": "Soak the lentils",
+    "detail": "Soak the lentils (urad dal, skinned lentils) for several hours in water, then drain well."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the lentils with very little water into a smooth, thick, airy batter. Then whisk it by hand for a few minutes: it should become light (it floats in water when ready)."
+   },
+   {
+    "titre": "Season",
+    "detail": "Stir in the finely chopped onion, grated ginger, chilli and chopped coriander. Salt."
+   },
+   {
+    "titre": "Form the fritters",
+    "detail": "With damp hands, shape small discs and poke a hole in the centre (donut shape, for even cooking)."
+   },
+   {
+    "titre": "Fry",
+    "detail": "Gently drop the vada into hot oil (170°C) and fry 3 to 4 minutes, turning, until crisp and golden."
+   },
+   {
+    "titre": "Drain",
+    "detail": "Drain on paper towels. The vada should be crisp outside and soft, almost fluffy, inside."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot with coconut chutney, mint chutney and sambar. The savoury breakfast of South India."
+   }
+  ]
+ },
+ "manty": {
+  "nom": "Manty",
+  "description": "Manty — the large steamed dumplings of Central Asia: big pouches of thin dough filled with minced meat and onion, steamed and served with yogurt. Juicy and generous, they're the festive dumplings of Uzbek and Kazakh tables.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, salt and water into a firm dough. Knead 8 to 10 minutes until smooth and elastic, then rest 30 minutes."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the minced meat (traditionally lamb or beef, hand-cut) with lots of finely chopped onion, cumin, salt and pepper. The onion makes the filling juicy."
+   },
+   {
+    "titre": "Roll out",
+    "detail": "Roll the dough very thin and cut large squares (much larger than for classic dumplings)."
+   },
+   {
+    "titre": "Fill & close",
+    "detail": "Place a good spoon of filling in the centre, then bring up and pinch the corners together to form a closed bundle-shaped pouch."
+   },
+   {
+    "titre": "Steam",
+    "detail": "Oil the trays of a steamer (mantovarka) and arrange the manty spaced out. Steam 40 to 45 minutes, until the dough is translucent and the filling cooked."
+   },
+   {
+    "titre": "Brush",
+    "detail": "Brush the cooked manty with a little melted butter so they shine and don't stick."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, drizzled with garlic yogurt and scattered with herbs, with a little chilli. Juicy and generous — the festive dumplings of Central Asia."
+   }
+  ]
+ },
+ "kazan": {
+  "nom": "Kazan Kebab",
+  "description": "Kazan kebab — meat and potatoes in the cauldron: meat browned then simmered with fried potatoes in a kazan (cast-iron cauldron), scented with cumin. Rustic and generous, it's a convivial dish of Uzbek cuisine.",
+  "etapes": [
+   {
+    "titre": "Fry the potatoes",
+    "detail": "Cut the potatoes into large wedges and fry them in the hot oil of the kazan (or a cast-iron pot) until golden. Set aside."
+   },
+   {
+    "titre": "Sear the meat",
+    "detail": "In the same fragrant fat, brown the meat pieces (lamb or beef) on all sides."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the onion in large pieces, the carrot and garlic, and sauté until the onion is soft."
+   },
+   {
+    "titre": "The cumin",
+    "detail": "Add the cumin (zira) and a little water, salt, and cover."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer over low heat for 30 to 40 minutes, until the meat is tender."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the fried potatoes at the end and let them reheat and soak in the juices for 5 minutes, without crushing them."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve the meat and potatoes piping hot, scattered with marinated raw onion and herbs. Rustic, generous and convivial — the Uzbek kazan."
+   }
+  ]
+ },
+ "chuchvara": {
+  "nom": "Chuchvara",
+  "description": "Chuchvara — the little dumpling soup of Uzbekistan: tiny meat dumplings poached in a broth flavoured with tomato and herbs. Comforting and delicate, it's served with yogurt or vinegar, like a Central Asian borscht.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, salt and water into a firm dough. Knead and rest 30 minutes."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Mix the minced meat with half the very finely chopped onion, salt, pepper and cumin."
+   },
+   {
+    "titre": "Form the dumplings",
+    "detail": "Roll the dough very thin and cut tiny squares. Fill them with a little filling and pinch them into small triangular dumplings (as small as possible, the pride of the dish)."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Sauté the rest of the onion and the diced carrot, add the tomato, then pour in the broth and bring to a simmer."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Gently drop the chuchvara into the simmering broth and cook 6 to 8 minutes: they rise to the surface when done."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and adjust. The broth should be clear, fragrant and comforting."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve hot, with a spoon of yogurt or a dash of vinegar. The delicate dumpling soup of Uzbekistan."
+   }
+  ]
+ },
+ "achichuk": {
+  "nom": "Achichuk",
+  "description": "Achichuk — the tomato-onion salad of Uzbekistan: thin slices of tomatoes and onions, lifted with basil and chilli. Simple and refreshing, it traditionally accompanies plov and grills, whose richness it balances.",
+  "etapes": [
+   {
+    "titre": "Slice the tomatoes",
+    "detail": "Cut the tomatoes (ripe and fleshy) into thin slices or wedges, and arrange them on a dish."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Slice the onion into very thin half-moons. To soften it, soak it 5 minutes in cold salted water, then drain."
+   },
+   {
+    "titre": "The basil",
+    "detail": "Chop the basil (ideally purple basil, the Uzbek rayhon) and the fresh chilli."
+   },
+   {
+    "titre": "Assemble",
+    "detail": "Gently mix the tomatoes, onion, basil and chilli on the dish."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt and drizzle with a little oil (optional: achichuk is often made without oil, just with the tomato juice)."
+   },
+   {
+    "titre": "Rest",
+    "detail": "Let rest 5 minutes: the tomatoes release their juice, which mingles with the onion and basil."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve cool, as a side to plov, skewers or manty. The tangy freshness that balances the rich dishes of Central Asia."
+   }
+  ]
+ },
+ "kroppkakor": {
+  "nom": "Kroppkakor",
+  "description": "Kroppkakor — Swedish potato dumplings: large dumplings of potato, filled with smoked pork and onion, poached in water. Dense and comforting, they're eaten with melted butter and lingonberry jam.",
+  "etapes": [
+   {
+    "titre": "The dough",
+    "detail": "Cook the potatoes, mash them and let cool. Mix with the flour, an egg, nutmeg and salt to form a malleable dough (traditionally, a mix of cooked mash and grated raw potato)."
+   },
+   {
+    "titre": "The filling",
+    "detail": "Fry the lardons (smoked pork) with the finely chopped onion until golden. Let cool."
+   },
+   {
+    "titre": "Form",
+    "detail": "Take portions of dough, flatten them, place a little filling in the centre and close into a smooth ball, without cracks."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Gently drop the kroppkakor into a large pot of simmering salted water."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook 15 to 20 minutes: they're ready when they rise to the surface and float, cooked through."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Drain gently and coat with melted butter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with melted butter and lingonberry jam (lingonsylt): the typical sweet-savoury contrast. Dense and comforting, a Swedish winter classic."
+   }
+  ]
+ },
+ "lohikeitto": {
+  "nom": "Lohikeitto",
+  "description": "Lohikeitto — the creamy Finnish salmon soup: a mild velouté of salmon, potatoes and leek, bound with cream and scented with dill. Comforting and delicate, it's the soup of the long Nordic winters, served with rye bread.",
+  "etapes": [
+   {
+    "titre": "The leek",
+    "detail": "Soften the sliced leek in the butter, over low heat, without colouring, until tender."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the diced potatoes and the broth, and cook 12 minutes until tender."
+   },
+   {
+    "titre": "The cream",
+    "detail": "Pour in the cream and bring gently to a simmer (without boiling hard, so it doesn't split)."
+   },
+   {
+    "titre": "The salmon",
+    "detail": "Cut the salmon into large cubes and drop them into the simmering soup. Turn off the heat almost immediately: the salmon cooks in 3 to 4 minutes in the broth's heat, and stays tender."
+   },
+   {
+    "titre": "The dill",
+    "detail": "Add a good quantity of chopped dill, which delicately perfumes the soup."
+   },
+   {
+    "titre": "Season",
+    "detail": "Salt, pepper and adjust. The velouté should be mild, creamy and fragrant, with the salmon just cooked."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve piping hot, scattered with fresh dill, with buttered rye bread. The comforting soup of Finnish winters."
+   }
+  ]
+ },
+ "plokkfiskur": {
+  "nom": "Plokkfiskur",
+  "description": "Plokkfiskur — the Icelandic fish mash: a comforting mix of flaked white fish and mashed potatoes, bound with a nutmeg béchamel. An anti-waste dish born from leftovers, it's an Icelandic family classic, served with rye bread.",
+  "etapes": [
+   {
+    "titre": "Cook the fish",
+    "detail": "Poach the white fish (cod, haddock) in a little water or milk until just cooked, then flake it, removing the bones."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Cook the potatoes, peel them and roughly mash them (they keep a little texture)."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Soften the sliced onion in the butter until tender and translucent."
+   },
+   {
+    "titre": "The béchamel",
+    "detail": "Add the flour to the onion and stir 1 minute, then pour in the milk little by little, whisking, into a light béchamel. Season with nutmeg."
+   },
+   {
+    "titre": "Mix",
+    "detail": "Fold the flaked fish and mashed potatoes into the béchamel, and mix gently to bind without fully crushing."
+   },
+   {
+    "titre": "Reheat",
+    "detail": "Gently reheat the whole thing, adjusting the texture (more milk if too thick). Salt and pepper."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with buttered rye bread (rúgbrauð) and optionally a dash of sauce. Comforting and anti-waste — the Icelandic family classic."
+   }
+  ]
+ },
+ "lussekatter": {
+  "nom": "Lussekatter",
+  "description": "Lussekatter — Swedish saffron buns: tender golden-yellow saffron buns, rolled into an S shape and dotted with raisins. Emblematic of Saint Lucia's Day (13 December), they light up the Scandinavian Advent, served with mulled wine.",
+  "etapes": [
+   {
+    "titre": "Infuse the saffron",
+    "detail": "Crush the saffron with a little sugar, then steep it in the warm milk: it releases its intense golden-yellow colour and aroma, the signature of lussekatter."
+   },
+   {
+    "titre": "The starter",
+    "detail": "Dissolve the yeast in the warm saffron milk with a spoon of sugar. Let it froth 10 minutes."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Mix the flour, remaining sugar, egg and saffron starter, then work in the soft butter. Knead at length until smooth and elastic."
+   },
+   {
+    "titre": "1st rise",
+    "detail": "Cover and let rise 1 hour to 1 hour 30, until the dough doubles in volume."
+   },
+   {
+    "titre": "Form the S shapes",
+    "detail": "Divide the dough, roll each part into a long rope, then coil the two ends into a spiral towards the centre, in opposite directions, to form an S. Place a raisin in the heart of each spiral."
+   },
+   {
+    "titre": "2nd rise",
+    "detail": "Let rise again 40 minutes. Brush with egg yolk."
+   },
+   {
+    "titre": "Bake",
+    "detail": "Bake at 200°C for 10 to 12 minutes, until the lussekatter are golden and soft. Serve warm, with mulled wine (glögg). The Swedish Advent."
+   }
+  ]
  }
 };

@@ -6937,4 +6937,41 @@ Object.assign(recettes, {
       { icone: "🔥", titre: "Cuire", detail: "Enfournez à 180°C 15 à 18 min, jusqu'à ce que la brioche soit cuite et la croûte craquante. Laissez tiédir avant de déguster, avec un chocolat chaud.", badge: null }
     ]
   },
+  lussekatter: {
+    dateAjout: "2026-07-10T09:19:00",
+    nom: "Lussekatter",
+    cat: "desserts", pays: "suede",
+    base: 4,
+    temps: "2h30",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🌀",
+    description: "Lussekatter — les brioches au safran suédoises : de tendres brioches jaune d'or au safran, roulées en forme de S et ponctuées de raisins secs. Emblématiques de la Sainte-Lucie (13 décembre), elles illuminent l'Avent scandinave, servies avec un vin chaud.",
+    tableauLussekatter: [
+      { nb: 1, farine: "45 g", lait: "30 ml", beurre: "10 g", sucre: "12 g", safran: "0.1 g", levure: "2 g", raisinssecs: "4 g", oeufs: "¼" },
+      { nb: 2, farine: "90 g", lait: "60 ml", beurre: "20 g", sucre: "24 g", safran: "0.2 g", levure: "4 g", raisinssecs: "8 g", oeufs: "½" },
+      { nb: 3, farine: "135 g", lait: "90 ml", beurre: "30 g", sucre: "36 g", safran: "0.3 g", levure: "6 g", raisinssecs: "12 g", oeufs: "¾" },
+      { nb: 4, farine: "180 g", lait: "120 ml", beurre: "40 g", sucre: "48 g", safran: "0.4 g", levure: "8 g", raisinssecs: "16 g", oeufs: "1" },
+      { nb: 5, farine: "225 g", lait: "150 ml", beurre: "50 g", sucre: "60 g", safran: "0.5 g", levure: "10 g", raisinssecs: "20 g", oeufs: "1¼" },
+      { nb: 6, farine: "270 g", lait: "180 ml", beurre: "60 g", sucre: "72 g", safran: "0.6 g", levure: "12 g", raisinssecs: "24 g", oeufs: "1½" },
+      { nb: 7, farine: "315 g", lait: "210 ml", beurre: "70 g", sucre: "84 g", safran: "0.7 g", levure: "14 g", raisinssecs: "28 g", oeufs: "1¾" },
+      { nb: 8, farine: "360 g", lait: "240 ml", beurre: "80 g", sucre: "96 g", safran: "0.8 g", levure: "16 g", raisinssecs: "32 g", oeufs: "2" },
+      { nb: 9, farine: "405 g", lait: "270 ml", beurre: "90 g", sucre: "108 g", safran: "0.9 g", levure: "18 g", raisinssecs: "36 g", oeufs: "2¼" },
+      { nb: 10, farine: "450 g", lait: "300 ml", beurre: "100 g", sucre: "120 g", safran: "1 g", levure: "20 g", raisinssecs: "40 g", oeufs: "2½" },
+      { nb: 11, farine: "495 g", lait: "330 ml", beurre: "110 g", sucre: "132 g", safran: "1.1 g", levure: "22 g", raisinssecs: "44 g", oeufs: "2¾" },
+      { nb: 12, farine: "540 g", lait: "360 ml", beurre: "120 g", sucre: "144 g", safran: "1.2 g", levure: "24 g", raisinssecs: "48 g", oeufs: "3" },
+      { nb: 13, farine: "585 g", lait: "390 ml", beurre: "130 g", sucre: "156 g", safran: "1.3 g", levure: "26 g", raisinssecs: "52 g", oeufs: "3¼" },
+      { nb: 14, farine: "630 g", lait: "420 ml", beurre: "140 g", sucre: "168 g", safran: "1.4 g", levure: "28 g", raisinssecs: "56 g", oeufs: "3½" },
+      { nb: 15, farine: "675 g", lait: "450 ml", beurre: "150 g", sucre: "180 g", safran: "1.5 g", levure: "30 g", raisinssecs: "60 g", oeufs: "3¾" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌼", titre: "Infuser le safran", detail: "Écrasez le safran avec un peu de sucre, puis faites-le infuser dans le lait tiède : il libère sa couleur jaune d'or intense et son parfum, la signature des lussekatter.", badge: null },
+      { icone: "🥛", titre: "Le levain", detail: "Délayez la levure dans le lait safrané tiède avec une cuillère de sucre. Laissez mousser 10 min.", badge: null },
+      { icone: "🥣", titre: "La pâte", detail: "Mélangez la farine, le reste de sucre, l'œuf et le levain safrané, puis incorporez le beurre mou. Pétrissez longuement jusqu'à obtenir une pâte lisse et élastique.", badge: null },
+      { icone: "⏳", titre: "1re pousse", detail: "Couvrez et laissez lever 1 h à 1 h 30, jusqu'à ce que la pâte double de volume.", badge: null },
+      { icone: "🌀", titre: "Former les S", detail: "Divisez la pâte, roulez chaque part en un long boudin, puis enroulez les deux extrémités en spirale vers le centre, en sens opposé, pour former un S. Placez un raisin sec au cœur de chaque spirale.", badge: null },
+      { icone: "⏳", titre: "2e pousse", detail: "Laissez lever à nouveau 40 min. Dorez au jaune d'œuf.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Enfournez à 200°C 10 à 12 min, jusqu'à ce que les lussekatter soient dorées et moelleuses. Servez tièdes, avec un vin chaud (glögg). L'Avent suédois.", badge: null }
+    ]
+  },
 });

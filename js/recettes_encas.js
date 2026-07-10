@@ -4143,4 +4143,41 @@ Object.assign(recettes, {
       { icone: "🥭", titre: "Servir", detail: "Servez chaud avec un chutney de mangue, de tamarin ou de coriandre pour tremper. Le en-cas de rue croustillant de Trinidad.", badge: null }
     ]
   },
+  vada: {
+    dateAjout: "2026-07-10T09:11:00",
+    nom: "Medu Vada",
+    cat: "encas", pays: "inde",
+    base: 4,
+    temps: "40 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍩",
+    description: "Medu vada — les beignets de lentilles du Sud de l'Inde : de petits beignets salés en forme de donut, à base de lentilles trempées et mixées, croustillants dehors et moelleux dedans. Servis au petit-déjeuner avec un chutney de coco et du sambar.",
+    tableauVada: [
+      { nb: 1, lentillescorail: "50 g", oignon: "¼", gingembre: "2 g", piment: "0.5 g", coriandre: "4 g", huilefriture: "15 ml", sel: "2 g" },
+      { nb: 2, lentillescorail: "100 g", oignon: "½", gingembre: "4 g", piment: "1 g", coriandre: "8 g", huilefriture: "30 ml", sel: "4 g" },
+      { nb: 3, lentillescorail: "150 g", oignon: "¾", gingembre: "6 g", piment: "1.5 g", coriandre: "12 g", huilefriture: "45 ml", sel: "6 g" },
+      { nb: 4, lentillescorail: "200 g", oignon: "1", gingembre: "8 g", piment: "2 g", coriandre: "16 g", huilefriture: "60 ml", sel: "8 g" },
+      { nb: 5, lentillescorail: "250 g", oignon: "1¼", gingembre: "10 g", piment: "2.5 g", coriandre: "20 g", huilefriture: "75 ml", sel: "10 g" },
+      { nb: 6, lentillescorail: "300 g", oignon: "1½", gingembre: "12 g", piment: "3 g", coriandre: "24 g", huilefriture: "90 ml", sel: "12 g" },
+      { nb: 7, lentillescorail: "350 g", oignon: "1¾", gingembre: "14 g", piment: "3.5 g", coriandre: "28 g", huilefriture: "105 ml", sel: "14 g" },
+      { nb: 8, lentillescorail: "400 g", oignon: "2", gingembre: "16 g", piment: "4 g", coriandre: "32 g", huilefriture: "120 ml", sel: "16 g" },
+      { nb: 9, lentillescorail: "450 g", oignon: "2¼", gingembre: "18 g", piment: "4.5 g", coriandre: "36 g", huilefriture: "135 ml", sel: "18 g" },
+      { nb: 10, lentillescorail: "500 g", oignon: "2½", gingembre: "20 g", piment: "5 g", coriandre: "40 g", huilefriture: "150 ml", sel: "20 g" },
+      { nb: 11, lentillescorail: "550 g", oignon: "2¾", gingembre: "22 g", piment: "5.5 g", coriandre: "44 g", huilefriture: "165 ml", sel: "22 g" },
+      { nb: 12, lentillescorail: "600 g", oignon: "3", gingembre: "24 g", piment: "6 g", coriandre: "48 g", huilefriture: "180 ml", sel: "24 g" },
+      { nb: 13, lentillescorail: "650 g", oignon: "3¼", gingembre: "26 g", piment: "6.5 g", coriandre: "52 g", huilefriture: "195 ml", sel: "26 g" },
+      { nb: 14, lentillescorail: "700 g", oignon: "3½", gingembre: "28 g", piment: "7 g", coriandre: "56 g", huilefriture: "210 ml", sel: "28 g" },
+      { nb: 15, lentillescorail: "750 g", oignon: "3¾", gingembre: "30 g", piment: "7.5 g", coriandre: "60 g", huilefriture: "225 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🫘", titre: "Tremper les lentilles", detail: "Faites tremper les lentilles (urad dal, lentilles décortiquées) plusieurs heures dans l'eau, puis égouttez-les bien.", badge: null },
+      { icone: "🌀", titre: "Mixer", detail: "Mixez les lentilles avec très peu d'eau en une pâte lisse, épaisse et aérée. Fouettez-la ensuite à la main quelques minutes : elle doit devenir légère (elle flotte dans l'eau quand elle est prête).", badge: null },
+      { icone: "🌿", titre: "Assaisonner", detail: "Incorporez l'oignon finement haché, le gingembre râpé, le piment et la coriandre ciselée. Salez.", badge: null },
+      { icone: "🍩", titre: "Former les beignets", detail: "Avec les mains humides, façonnez de petits disques et percez un trou au centre (forme de donut, pour une cuisson uniforme).", badge: null },
+      { icone: "🔥", titre: "Frire", detail: "Plongez délicatement les vada dans l'huile chaude (170°C) et faites-les dorer 3 à 4 min en les retournant, jusqu'à ce qu'ils soient croustillants et dorés.", badge: null },
+      { icone: "🧻", titre: "Égoutter", detail: "Égouttez sur papier absorbant. Le vada doit être croustillant dehors et moelleux, presque mousseux, dedans.", badge: null },
+      { icone: "🥥", titre: "Servir", detail: "Servez chaud avec un chutney de coco, un chutney à la menthe et du sambar. Le petit-déjeuner salé du Sud de l'Inde.", badge: null }
+    ]
+  },
 });

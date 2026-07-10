@@ -2222,4 +2222,41 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez frais, en accompagnement de viandes grillées (nyama choma), de riz pilau ou de haricots. La fraîcheur qui équilibre les plats copieux.", badge: null }
     ]
   },
+  achichuk: {
+    dateAjout: "2026-07-10T09:15:00",
+    nom: "Achichuk",
+    cat: "salades", pays: "ouzbekistan",
+    base: 4,
+    temps: "10 min",
+    niveau: "⭐ Facile",
+    emoji: "🥗",
+    description: "Achichuk — la salade tomate-oignon d'Ouzbékistan : de fines tranches de tomates et d'oignons, relevées de basilic et de piment. Simple et rafraîchissante, elle accompagne traditionnellement le plov et les grillades, dont elle équilibre la richesse.",
+    tableauAchichuk: [
+      { nb: 1, tomates: "1", oignon: "½", piment: "0.5 g", basilic: "3 g", huileolive: "5 ml", sel: "2 g" },
+      { nb: 2, tomates: "2", oignon: "1", piment: "1 g", basilic: "6 g", huileolive: "10 ml", sel: "4 g" },
+      { nb: 3, tomates: "3", oignon: "1½", piment: "1.5 g", basilic: "9 g", huileolive: "15 ml", sel: "6 g" },
+      { nb: 4, tomates: "4", oignon: "2", piment: "2 g", basilic: "12 g", huileolive: "20 ml", sel: "8 g" },
+      { nb: 5, tomates: "5", oignon: "2½", piment: "2.5 g", basilic: "15 g", huileolive: "25 ml", sel: "10 g" },
+      { nb: 6, tomates: "6", oignon: "3", piment: "3 g", basilic: "18 g", huileolive: "30 ml", sel: "12 g" },
+      { nb: 7, tomates: "7", oignon: "3½", piment: "3.5 g", basilic: "21 g", huileolive: "35 ml", sel: "14 g" },
+      { nb: 8, tomates: "8", oignon: "4", piment: "4 g", basilic: "24 g", huileolive: "40 ml", sel: "16 g" },
+      { nb: 9, tomates: "9", oignon: "4½", piment: "4.5 g", basilic: "27 g", huileolive: "45 ml", sel: "18 g" },
+      { nb: 10, tomates: "10", oignon: "5", piment: "5 g", basilic: "30 g", huileolive: "50 ml", sel: "20 g" },
+      { nb: 11, tomates: "11", oignon: "5½", piment: "5.5 g", basilic: "33 g", huileolive: "55 ml", sel: "22 g" },
+      { nb: 12, tomates: "12", oignon: "6", piment: "6 g", basilic: "36 g", huileolive: "60 ml", sel: "24 g" },
+      { nb: 13, tomates: "13", oignon: "6½", piment: "6.5 g", basilic: "39 g", huileolive: "65 ml", sel: "26 g" },
+      { nb: 14, tomates: "14", oignon: "7", piment: "7 g", basilic: "42 g", huileolive: "70 ml", sel: "28 g" },
+      { nb: 15, tomates: "15", oignon: "7½", piment: "7.5 g", basilic: "45 g", huileolive: "75 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍅", titre: "Trancher les tomates", detail: "Coupez les tomates (bien mûres et charnues) en fines tranches ou en quartiers, et disposez-les dans un plat.", badge: null },
+      { icone: "🧅", titre: "L'oignon", detail: "Émincez l'oignon en très fines demi-lunes. Pour l'adoucir, faites-le tremper 5 min dans l'eau froide salée, puis égouttez.", badge: null },
+      { icone: "🌿", titre: "Le basilic", detail: "Ciselez le basilic (idéalement du basilic pourpre, le rayhon ouzbek) et le piment frais.", badge: null },
+      { icone: "🥗", titre: "Assembler", detail: "Mélangez délicatement les tomates, l'oignon, le basilic et le piment dans le plat.", badge: null },
+      { icone: "🧂", titre: "Assaisonner", detail: "Salez et arrosez d'un filet d'huile (facultatif : l'achichuk se fait souvent sans huile, juste avec le jus des tomates).", badge: null },
+      { icone: "❄️", titre: "Reposer", detail: "Laissez reposer 5 min : les tomates rendent leur jus, qui se mêle à l'oignon et au basilic.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez frais, en accompagnement d'un plov, de brochettes ou de manty. La fraîcheur acidulée qui équilibre les plats riches d'Asie centrale.", badge: null }
+    ]
+  },
 });
