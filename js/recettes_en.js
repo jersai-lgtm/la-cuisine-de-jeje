@@ -70044,5 +70044,345 @@ window.RECETTES_EN = {
     "detail": "Serve the gbegiri with amala (yam dough) and a stew, Yoruba-style. Mild and creamy — the emblematic bean soup of Nigeria."
    }
   ]
+ },
+ "macherjhol": {
+  "nom": "Macher Jhol",
+  "description": "Macher jhol — the Bengali fish curry: fish steaks fried then simmered in a light, fragrant tomato, ginger and panch phoron (five-spice) broth, with potatoes. Light, tangy and comforting, it's the everyday curry of Bengal, served with rice.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Rub the fish steaks (rohu, carp, or cod) with salt and turmeric, then briefly fry them in mustard oil. Set aside."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Brown the quartered potatoes in the same oil."
+   },
+   {
+    "titre": "The panch phoron",
+    "detail": "Crackle the panch phoron (cumin, fennel, mustard, fenugreek, nigella) in the oil until fragrant."
+   },
+   {
+    "titre": "The base",
+    "detail": "Add the ginger, tomato, turmeric and chilli, and let it cook down into a fragrant base."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add water, add the potatoes, and simmer until tender (the jhol is a light broth, not a thick sauce)."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Gently return the fish to the broth and let it finish cooking for a few minutes."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve with white rice. Light, tangy and comforting — the everyday fish curry of Bengal."
+   }
+  ]
+ },
+ "dumaloo": {
+  "nom": "Dum Aloo",
+  "description": "Kashmiri dum aloo — the confited potatoes of Kashmir: small potatoes fried then slow-cooked (dum) in a creamy red yogurt, fennel, ginger and Kashmiri chilli sauce. Mild, fragrant and without onion or garlic, it's a plant-based jewel of Kashmiri cuisine.",
+  "etapes": [
+   {
+    "titre": "The potatoes",
+    "detail": "Peel small potatoes, prick them, and fry them until golden and cooked."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Crackle the cardamom, clove and cinnamon in the oil, then add the fennel and ground ginger (Kashmiri cuisine uses no onion or garlic)."
+   },
+   {
+    "titre": "The colour",
+    "detail": "Add the Kashmiri chilli (paprika) loosened in a little water, for the lovely red colour without too much heat."
+   },
+   {
+    "titre": "The yogurt",
+    "detail": "Stir in the beaten yogurt off the heat, whisking, to bind the sauce without it splitting."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Return the fried potatoes to the sauce and coat them well."
+   },
+   {
+    "titre": "The dum",
+    "detail": "Cover tightly and slow-cook (dum) over very low heat, so the potatoes soak up the sauce."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve with rice or naan. Mild, fragrant and creamy — the confited potatoes of Kashmir."
+   }
+  ]
+ },
+ "xacuti": {
+  "nom": "Xacuti",
+  "description": "Xacuti — the Goan roasted-coconut curry: chicken simmered in a complex, dark sauce made by roasting coconut and some twenty spices before grinding them. Rich, deep and mildly spicy, it's a jewel of Goan cuisine, an Indo-Portuguese heritage.",
+  "etapes": [
+   {
+    "titre": "Roast the coconut",
+    "detail": "Dry-roast the grated coconut until golden and fragrant (it gives xacuti its dark colour and deep flavour)."
+   },
+   {
+    "titre": "Roast the spices",
+    "detail": "Likewise roast the many spices (coriander, cumin, pepper, cinnamon, clove, nutmeg, chilli, poppy seeds)."
+   },
+   {
+    "titre": "The masala",
+    "detail": "Blend the roasted coconut and spices with a little water into a dark, thick paste (the xacuti masala)."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion and garlic until deeply golden."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Add the chicken and colour it, then stir in the roasted-coconut masala."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add water and simmer until the chicken is tender and the sauce thick, dark and fragrant."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Adjust with lime and serve with rice or breads (sannas, pao). Rich, deep and fragrant — the great curry of Goa."
+   }
+  ]
+ },
+ "laalmaas": {
+  "nom": "Laal Maas",
+  "description": "Laal maas — the fiery red lamb curry of Rajasthan: lamb simmered in an intense red sauce of Mathania chillies and yogurt, smoked with clove and cardamom. Fiery, deep and royal, it's the dish of the maharajas and desert hunts of Rajasthan.",
+  "etapes": [
+   {
+    "titre": "The chillies",
+    "detail": "Rehydrate the Mathania red chillies (or a mix of sweet paprika and hot chilli) and blend them into a red paste."
+   },
+   {
+    "titre": "The lamb",
+    "detail": "Brown the lamb pieces in the ghee, on all sides."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the sliced onion and garlic, and sauté them with the cardamom, clove and mace."
+   },
+   {
+    "titre": "The red paste",
+    "detail": "Add the chilli paste and paprika, and sauté them in the fat until the oil reddens."
+   },
+   {
+    "titre": "The yogurt",
+    "detail": "Stir in the beaten yogurt little by little, off the high heat, stirring to bind the sauce without splitting it."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Cover and simmer at length over low heat, until the lamb is tender and the sauce red, glossy and intense."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice or rotis, tempering the heat. Fiery, deep and royal — the red curry of the Rajasthan maharajas."
+   }
+  ]
+ },
+ "neerdosa": {
+  "nom": "Neer Dosa",
+  "description": "Neer dosa — the thin rice crepe of Karnataka: a batter of soaked, ground rice, very fluid and unfermented, poured into thin, lacy, soft crepes. 'Neer' means water, so liquid is the batter. Soft and pure white, they're eaten with a coconut chutney or a curry, on the Karnataka coast.",
+  "etapes": [
+   {
+    "titre": "Soak the rice",
+    "detail": "Soak the rice for several hours, then drain it (neer dosa needs no fermentation, unlike classic dosa)."
+   },
+   {
+    "titre": "Blend",
+    "detail": "Blend the soaked rice with a little fresh coconut and water, into a very smooth, fluid batter."
+   },
+   {
+    "titre": "The consistency",
+    "detail": "Loosen the batter with water until very liquid (like water, hence the name) and lightly salt."
+   },
+   {
+    "titre": "Heat the pan",
+    "detail": "Heat a well-oiled pan over medium-high heat."
+   },
+   {
+    "titre": "Pour",
+    "detail": "Pour a ladle of the fluid batter while quickly swirling it: it spreads into a thin, lacy crepe (you don't spread it with the ladle)."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cover and cook on one side only, until the crepe is set, soft and lightly golden underneath."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Fold the neer dosa into quarters and serve hot, with a coconut chutney, a curry or jaggery. Soft and thin — the rice crepe of the Karnataka coast."
+   }
+  ]
+ },
+ "dapanji": {
+  "nom": "Da Pan Ji",
+  "description": "Da pan ji — the 'big plate chicken' of Xinjiang: chicken and potatoes simmered in a rich sauce of soy, star anise and chilli, served over wide flat hand-made noodles. Generous, fragrant and convivial, it's the great sharing dish of the Silk Road.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Brown the chicken pieces (bone-in) in the hot oil, over high heat."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the garlic, ginger, star anise, cinnamon and dried chillies, and sauté them."
+   },
+   {
+    "titre": "The sauce",
+    "detail": "Add sugar to caramelise, then the soy sauce (light and dark) and a little beer or broth."
+   },
+   {
+    "titre": "The potatoes",
+    "detail": "Add the potatoes in large pieces and simmer until they are tender and the chicken cooked."
+   },
+   {
+    "titre": "The peppers",
+    "detail": "Add the peppers near the end, so they stay a little crunchy."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook wide flat noodles (biang biang) and lay them in the bottom of a large platter."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Pour the chicken, potatoes and their sauce over the noodles, and mix at the table. Generous, fragrant and convivial — the great sharing dish of Xinjiang."
+   }
+  ]
+ },
+ "guobaorou": {
+  "nom": "Guo Bao Rou",
+  "description": "Guo bao rou — the crispy sweet-and-sour pork of Dongbei: thin slices of pork coated in a starch batter and double-fried until ultra-crisp, then coated in a bright vinegar-and-sugar sauce. Crunchy, tangy and glossy, it's the pride of northeastern China.",
+  "etapes": [
+   {
+    "titre": "The pork",
+    "detail": "Slice the pork (loin) into thin wide strips and lightly season them."
+   },
+   {
+    "titre": "The batter",
+    "detail": "Make a thick batter from potato starch and water (the settled starch), and coat the pork strips in it."
+   },
+   {
+    "titre": "First fry",
+    "detail": "Fry the coated strips in hot oil until pale and cooked, then drain."
+   },
+   {
+    "titre": "Second fry",
+    "detail": "Fry them again at a higher temperature until golden and ultra-crisp."
+   },
+   {
+    "titre": "The sweet-and-sour sauce",
+    "detail": "Make a bright sauce by reducing the vinegar, sugar, a little soy sauce and water, until syrupy."
+   },
+   {
+    "titre": "Coat",
+    "detail": "Stir-fry the ginger, julienned carrot and spring onion, add the crispy pork and the sauce, and quickly coat over high heat."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve at once, while still crisp. Crunchy, tangy and glossy — the pride of northeastern China."
+   }
+  ]
+ },
+ "crossingbridge": {
+  "nom": "Crossing Bridge Noodles",
+  "description": "Crossing the bridge noodles (guoqiao mixian) — the Yunnan noodle soup: a very rich poultry broth, covered by a thin film of oil that holds the heat, into which raw, thinly-sliced ingredients (meat, vegetables, egg) are dropped at the table and cook instantly. A theatrical, comforting dish.",
+  "etapes": [
+   {
+    "titre": "The broth",
+    "detail": "Make a very rich, concentrated poultry (and ham) broth, long-simmered, then keep it scalding."
+   },
+   {
+    "titre": "The oil film",
+    "detail": "Let a thin layer of fat (oil) form on the surface of the broth: it traps the heat (the secret of table-side cooking)."
+   },
+   {
+    "titre": "The noodles",
+    "detail": "Cook the fine rice vermicelli (mixian) and divide into the bowls."
+   },
+   {
+    "titre": "The raw ingredients",
+    "detail": "Very finely slice the meat, mushrooms and raw vegetables (the thinner they are, the faster they cook)."
+   },
+   {
+    "titre": "The service",
+    "detail": "Pour the scalding oil-covered broth into a large individual bowl."
+   },
+   {
+    "titre": "Cook at the table",
+    "detail": "Immediately drop the raw ingredients and egg into the broth: the trapped heat cooks them in a few seconds."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Add the noodles, sprouts and spring onion, and mix. Theatrical and comforting — the crossing bridge noodles of Yunnan."
+   }
+  ]
+ },
+ "yongtaufoo": {
+  "nom": "Yong Tau Foo",
+  "description": "Yong tau foo — the Hakka stuffed tofu and vegetables: tofu, peppers and mushrooms filled with a fish-and-pork paste, then pan-fried and braised (or served in a clear broth). Soft, umami and comforting, it's an emblematic dish of the Hakka diaspora, in China, Malaysia and Singapore.",
+  "etapes": [
+   {
+    "titre": "The filling",
+    "detail": "Blend the white fish and pork with spring onion, soy sauce and a little starch, into a smooth, sticky filling."
+   },
+   {
+    "titre": "The tofu",
+    "detail": "Cut firm tofu into cubes and hollow a cavity in the centre of each."
+   },
+   {
+    "titre": "The vegetables",
+    "detail": "Prepare peppers, mushrooms and chillies, hollowing them out to stuff."
+   },
+   {
+    "titre": "Stuff",
+    "detail": "Fill the tofu and hollowed vegetables with the fish paste, smoothing it."
+   },
+   {
+    "titre": "Pan-fry",
+    "detail": "Brown the stuffed pieces filling-side in a little oil, until it sets and colours."
+   },
+   {
+    "titre": "Braise",
+    "detail": "Add a light soy broth and simmer to cook the filling through (or serve it all in a clear broth)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with rice or noodles and a hoisin-chilli sauce. Soft, umami and comforting — the Hakka stuffed tofu."
+   }
+  ]
+ },
+ "saltbakedchicken": {
+  "nom": "Poulet au Sel Hakka",
+  "description": "Hakka salt-baked chicken (yan guk gai) — chicken buried in salt: a chicken wrapped and buried in scalding coarse salt, which cooks gently and turns incredibly tender and juicy, without being salty. Served with a ginger-and-scallion oil, it's a great classic of Hakka cuisine.",
+  "etapes": [
+   {
+    "titre": "The chicken",
+    "detail": "Dry the chicken very carefully, rub it with a little wine and spices (star anise, ginger) and let it dry in the fridge."
+   },
+   {
+    "titre": "Wrap",
+    "detail": "Wrap the chicken in baking paper (traditionally rice paper), in a well-closed parcel."
+   },
+   {
+    "titre": "The scalding salt",
+    "detail": "Heat a large amount of coarse salt in a pot, over high heat, until scalding."
+   },
+   {
+    "titre": "Bury",
+    "detail": "Bury the wrapped chicken in the heart of the scalding salt, covering it completely."
+   },
+   {
+    "titre": "Gentle cooking",
+    "detail": "Cover and cook over low heat: the heat of the salt cooks the chicken gently, making it tender and juicy (without salting it)."
+   },
+   {
+    "titre": "The fragrant oil",
+    "detail": "Make an oil by heating the sesame oil with finely chopped ginger and spring onion."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Take the chicken out of the salt, debone and cut it, then coat with the ginger-scallion oil. Tender, juicy and fragrant — the Hakka salt-baked chicken."
+   }
+  ]
  }
 };

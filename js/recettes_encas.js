@@ -5445,4 +5445,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Ouvrez la feuille et servez chaud, à la cuillère ou à la main. Fondant, parfumé et fumé — l'en-cas grillé de Malaisie.", badge: null }
     ]
   },
+  yongtaufoo: {
+    dateAjout: "2026-07-11T15:08:00",
+    nom: "Yong Tau Foo",
+    cat: "encas", pays: "chine",
+    base: 4,
+    temps: "45 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🧆",
+    description: "Yong tau foo — les tofus et légumes farcis hakka : du tofu, des poivrons et des champignons garnis d'une farce de poisson et de porc, puis poêlés et mijotés (ou servis en bouillon clair). Moelleux, umami et réconfortant, c'est un plat emblématique de la diaspora hakka, en Chine, en Malaisie et à Singapour.",
+    tableauYongtaufoo: [
+      { nb: 1, tofu: "70 g", poisson: "40 g", porc: "20 g", poivron: "30 g", champignons: "20 g", saucesoja: "8 ml", ciboule: "5 g", ail: "1", huileolive: "5 ml", sel: "2 g" },
+      { nb: 2, tofu: "140 g", poisson: "80 g", porc: "40 g", poivron: "60 g", champignons: "40 g", saucesoja: "16 ml", ciboule: "10 g", ail: "2", huileolive: "10 ml", sel: "4 g" },
+      { nb: 3, tofu: "210 g", poisson: "120 g", porc: "60 g", poivron: "90 g", champignons: "60 g", saucesoja: "24 ml", ciboule: "15 g", ail: "3", huileolive: "15 ml", sel: "6 g" },
+      { nb: 4, tofu: "280 g", poisson: "160 g", porc: "80 g", poivron: "120 g", champignons: "80 g", saucesoja: "32 ml", ciboule: "20 g", ail: "4", huileolive: "20 ml", sel: "8 g" },
+      { nb: 5, tofu: "350 g", poisson: "200 g", porc: "100 g", poivron: "150 g", champignons: "100 g", saucesoja: "40 ml", ciboule: "25 g", ail: "5", huileolive: "25 ml", sel: "10 g" },
+      { nb: 6, tofu: "420 g", poisson: "240 g", porc: "120 g", poivron: "180 g", champignons: "120 g", saucesoja: "48 ml", ciboule: "30 g", ail: "6", huileolive: "30 ml", sel: "12 g" },
+      { nb: 7, tofu: "490 g", poisson: "280 g", porc: "140 g", poivron: "210 g", champignons: "140 g", saucesoja: "56 ml", ciboule: "35 g", ail: "7", huileolive: "35 ml", sel: "14 g" },
+      { nb: 8, tofu: "560 g", poisson: "320 g", porc: "160 g", poivron: "240 g", champignons: "160 g", saucesoja: "64 ml", ciboule: "40 g", ail: "8", huileolive: "40 ml", sel: "16 g" },
+      { nb: 9, tofu: "630 g", poisson: "360 g", porc: "180 g", poivron: "270 g", champignons: "180 g", saucesoja: "72 ml", ciboule: "45 g", ail: "9", huileolive: "45 ml", sel: "18 g" },
+      { nb: 10, tofu: "700 g", poisson: "400 g", porc: "200 g", poivron: "300 g", champignons: "200 g", saucesoja: "80 ml", ciboule: "50 g", ail: "10", huileolive: "50 ml", sel: "20 g" },
+      { nb: 11, tofu: "770 g", poisson: "440 g", porc: "220 g", poivron: "330 g", champignons: "220 g", saucesoja: "88 ml", ciboule: "55 g", ail: "11", huileolive: "55 ml", sel: "22 g" },
+      { nb: 12, tofu: "840 g", poisson: "480 g", porc: "240 g", poivron: "360 g", champignons: "240 g", saucesoja: "96 ml", ciboule: "60 g", ail: "12", huileolive: "60 ml", sel: "24 g" },
+      { nb: 13, tofu: "910 g", poisson: "520 g", porc: "260 g", poivron: "390 g", champignons: "260 g", saucesoja: "104 ml", ciboule: "65 g", ail: "13", huileolive: "65 ml", sel: "26 g" },
+      { nb: 14, tofu: "980 g", poisson: "560 g", porc: "280 g", poivron: "420 g", champignons: "280 g", saucesoja: "112 ml", ciboule: "70 g", ail: "14", huileolive: "70 ml", sel: "28 g" },
+      { nb: 15, tofu: "1050 g", poisson: "600 g", porc: "300 g", poivron: "450 g", champignons: "300 g", saucesoja: "120 ml", ciboule: "75 g", ail: "15", huileolive: "75 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🐟", titre: "La farce", detail: "Mixez le poisson blanc et le porc avec de la ciboule, de la sauce soja et un peu de fécule, en une farce lisse et collante.", badge: null },
+      { icone: "🧈", titre: "Le tofu", detail: "Coupez le tofu ferme en cubes et creusez une cavité au centre de chacun.", badge: null },
+      { icone: "🫑", titre: "Les légumes", detail: "Préparez des poivrons, des champignons et des piments, en les évidant pour les farcir.", badge: null },
+      { icone: "🥄", titre: "Farcir", detail: "Garnissez le tofu et les légumes évidés de la farce de poisson, en la lissant.", badge: null },
+      { icone: "🔥", titre: "Poêler", detail: "Faites dorer les pièces farcies côté farce dans un peu d'huile, jusqu'à ce qu'elle prenne et colore.", badge: null },
+      { icone: "🍲", titre: "Mijoter", detail: "Ajoutez un bouillon léger à la sauce soja et laissez mijoter pour cuire la farce à cœur (ou servez le tout dans un bouillon clair).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, avec du riz ou des nouilles et une sauce hoisin-piment. Moelleux, umami et réconfortant — les tofus farcis hakka.", badge: null }
+    ],
+    liees: ["mapotofu"]
+  },
 });

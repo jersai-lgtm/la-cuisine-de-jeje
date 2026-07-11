@@ -2060,4 +2060,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez chaudes : en salé avec du pebre (salsa) et de la moutarde, ou en sucré trempées dans un sirop de chancaca (sucre de canne épicé). Dorées et moelleuses — l'en-cas du Chili.", badge: null }
     ]
   },
+  neerdosa: {
+    dateAjout: "2026-07-11T15:04:00",
+    nom: "Neer Dosa",
+    cat: "boulangerie", pays: "inde",
+    base: 4,
+    temps: "30 min + trempage",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Neer dosa — la crêpe de riz fine du Karnataka : une pâte de riz trempé et broyé, très fluide et non fermentée, versée en fines crêpes dentelées et souples. « Neer » signifie eau, tant la pâte est liquide. Douces et immaculées, elles se dégustent avec un chutney de coco ou un curry, sur la côte du Karnataka.",
+    tableauNeerdosa: [
+      { nb: 1, farineRiz: "70 g", noixcoco: "20 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, farineRiz: "140 g", noixcoco: "40 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, farineRiz: "210 g", noixcoco: "60 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, farineRiz: "280 g", noixcoco: "80 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, farineRiz: "350 g", noixcoco: "100 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, farineRiz: "420 g", noixcoco: "120 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, farineRiz: "490 g", noixcoco: "140 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, farineRiz: "560 g", noixcoco: "160 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, farineRiz: "630 g", noixcoco: "180 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, farineRiz: "700 g", noixcoco: "200 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, farineRiz: "770 g", noixcoco: "220 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, farineRiz: "840 g", noixcoco: "240 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, farineRiz: "910 g", noixcoco: "260 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, farineRiz: "980 g", noixcoco: "280 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, farineRiz: "1050 g", noixcoco: "300 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍚", titre: "Tremper le riz", detail: "Faites tremper le riz plusieurs heures, puis égouttez-le (le neer dosa ne demande aucune fermentation, contrairement au dosa classique).", badge: null },
+      { icone: "🥥", titre: "Mixer", detail: "Mixez le riz trempé avec un peu de noix de coco fraîche et de l'eau, en une pâte très lisse et fluide.", badge: null },
+      { icone: "💧", titre: "La consistance", detail: "Détendez la pâte avec de l'eau jusqu'à ce qu'elle soit très liquide (comme de l'eau, d'où le nom) et salez légèrement.", badge: null },
+      { icone: "🔥", titre: "Chauffer la poêle", detail: "Faites chauffer une poêle bien huilée à feu moyen-vif.", badge: null },
+      { icone: "🌀", titre: "Verser", detail: "Versez une louche de pâte fluide en la faisant tourner rapidement : elle s'étale en une fine crêpe dentelée (on ne l'étale pas à la louche).", badge: null },
+      { icone: "♨️", titre: "Cuire", detail: "Couvrez et laissez cuire d'un seul côté, jusqu'à ce que la crêpe soit prise, souple et légèrement dorée dessous.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Pliez la neer dosa en quatre et servez chaude, avec un chutney de coco, un curry ou du jaggery. Douce et fine — la crêpe de riz de la côte du Karnataka.", badge: null }
+    ],
+    liees: ["dosa"]
+  },
 });

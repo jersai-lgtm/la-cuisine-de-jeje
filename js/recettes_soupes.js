@@ -4855,4 +4855,42 @@ Object.assign(recettes, {
     ],
     liees: ["ewaagoyin"]
   },
+  crossingbridge: {
+    dateAjout: "2026-07-11T15:07:00",
+    nom: "Crossing Bridge Noodles",
+    cat: "soupes", pays: "chine",
+    base: 4,
+    temps: "50 min",
+    niveau: "⭐⭐ Moyen",
+    emoji: "🍜",
+    description: "Les nouilles du pont (guoqiao mixian) — la soupe de nouilles du Yunnan : un bouillon de volaille très riche, recouvert d'une fine pellicule d'huile qui garde la chaleur, dans lequel on plonge à table des ingrédients crus et fins (viande, légumes, œuf) qui cuisent instantanément. Un plat théâtral et réconfortant.",
+    tableauCrossingbridge: [
+      { nb: 1, nouilles: "70 g", poulet: "50 g", bouillon: "350 ml", champignons: "25 g", oeufs: "½", ciboule: "6 g", gingembre: "3 g", germes: "20 g", huileolive: "4 ml", sel: "2 g" },
+      { nb: 2, nouilles: "140 g", poulet: "100 g", bouillon: "700 ml", champignons: "50 g", oeufs: "1", ciboule: "12 g", gingembre: "6 g", germes: "40 g", huileolive: "8 ml", sel: "4 g" },
+      { nb: 3, nouilles: "210 g", poulet: "150 g", bouillon: "1050 ml", champignons: "75 g", oeufs: "1½", ciboule: "18 g", gingembre: "9 g", germes: "60 g", huileolive: "12 ml", sel: "6 g" },
+      { nb: 4, nouilles: "280 g", poulet: "200 g", bouillon: "1400 ml", champignons: "100 g", oeufs: "2", ciboule: "24 g", gingembre: "12 g", germes: "80 g", huileolive: "16 ml", sel: "8 g" },
+      { nb: 5, nouilles: "350 g", poulet: "250 g", bouillon: "1750 ml", champignons: "125 g", oeufs: "2½", ciboule: "30 g", gingembre: "15 g", germes: "100 g", huileolive: "20 ml", sel: "10 g" },
+      { nb: 6, nouilles: "420 g", poulet: "300 g", bouillon: "2100 ml", champignons: "150 g", oeufs: "3", ciboule: "36 g", gingembre: "18 g", germes: "120 g", huileolive: "24 ml", sel: "12 g" },
+      { nb: 7, nouilles: "490 g", poulet: "350 g", bouillon: "2450 ml", champignons: "175 g", oeufs: "3½", ciboule: "42 g", gingembre: "21 g", germes: "140 g", huileolive: "28 ml", sel: "14 g" },
+      { nb: 8, nouilles: "560 g", poulet: "400 g", bouillon: "2800 ml", champignons: "200 g", oeufs: "4", ciboule: "48 g", gingembre: "24 g", germes: "160 g", huileolive: "32 ml", sel: "16 g" },
+      { nb: 9, nouilles: "630 g", poulet: "450 g", bouillon: "3150 ml", champignons: "225 g", oeufs: "4½", ciboule: "54 g", gingembre: "27 g", germes: "180 g", huileolive: "36 ml", sel: "18 g" },
+      { nb: 10, nouilles: "700 g", poulet: "500 g", bouillon: "3500 ml", champignons: "250 g", oeufs: "5", ciboule: "60 g", gingembre: "30 g", germes: "200 g", huileolive: "40 ml", sel: "20 g" },
+      { nb: 11, nouilles: "770 g", poulet: "550 g", bouillon: "3850 ml", champignons: "275 g", oeufs: "5½", ciboule: "66 g", gingembre: "33 g", germes: "220 g", huileolive: "44 ml", sel: "22 g" },
+      { nb: 12, nouilles: "840 g", poulet: "600 g", bouillon: "4200 ml", champignons: "300 g", oeufs: "6", ciboule: "72 g", gingembre: "36 g", germes: "240 g", huileolive: "48 ml", sel: "24 g" },
+      { nb: 13, nouilles: "910 g", poulet: "650 g", bouillon: "4550 ml", champignons: "325 g", oeufs: "6½", ciboule: "78 g", gingembre: "39 g", germes: "260 g", huileolive: "52 ml", sel: "26 g" },
+      { nb: 14, nouilles: "980 g", poulet: "700 g", bouillon: "4900 ml", champignons: "350 g", oeufs: "7", ciboule: "84 g", gingembre: "42 g", germes: "280 g", huileolive: "56 ml", sel: "28 g" },
+      { nb: 15, nouilles: "1050 g", poulet: "750 g", bouillon: "5250 ml", champignons: "375 g", oeufs: "7½", ciboule: "90 g", gingembre: "45 g", germes: "300 g", huileolive: "60 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🍲", titre: "Le bouillon", detail: "Préparez un bouillon de volaille (et de jambon) très riche et concentré, mijoté longuement, puis gardez-le brûlant.", badge: null },
+      { icone: "🧈", titre: "La pellicule d'huile", detail: "Laissez une fine couche de graisse (huile) se former en surface du bouillon : elle emprisonne la chaleur (c'est le secret de la cuisson à table).", badge: null },
+      { icone: "🍜", titre: "Les nouilles", detail: "Faites cuire les fins vermicelles de riz (mixian) et répartissez-les dans les bols.", badge: null },
+      { icone: "🔪", titre: "Les ingrédients crus", detail: "Détaillez très finement la viande, les champignons et les légumes crus (plus ils sont fins, plus vite ils cuiront).", badge: null },
+      { icone: "🥣", titre: "Le service", detail: "Versez le bouillon brûlant recouvert d'huile dans un grand bol individuel.", badge: null },
+      { icone: "🌡️", titre: "Cuire à table", detail: "Plongez aussitôt les ingrédients crus et l'œuf dans le bouillon : la chaleur emprisonnée les cuit en quelques secondes.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Ajoutez les nouilles, les germes et la ciboule, et mélangez. Théâtral et réconfortant — les nouilles du pont du Yunnan.", badge: null }
+    ],
+    liees: ["soupewonton"]
+  },
 });
