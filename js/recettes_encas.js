@@ -5483,4 +5483,41 @@ Object.assign(recettes, {
     ],
     liees: ["mapotofu"]
   },
+  akuri: {
+    dateAjout: "2026-07-11T16:07:00",
+    nom: "Akuri",
+    cat: "encas", pays: "inde",
+    base: 4,
+    temps: "20 min",
+    niveau: "⭐ Facile",
+    emoji: "🍳",
+    description: "Akuri — les œufs brouillés épicés parsis : des œufs brouillés tout crémeux, cuits avec de l'oignon, de la tomate, du gingembre, du piment vert et de la coriandre, jusqu'à rester baveux et fondants. Riches, parfumés et réconfortants, ils se dégustent au petit-déjeuner sur du pain grillé (ou du pav), un classique de la cuisine parsie de Mumbai.",
+    tableauAkuri: [
+      { nb: 1, oeufs: "2", oignon: "25 g", tomates: "½", piment: "1.5 g", gingembre: "2 g", coriandre: "5 g", curcuma: "0.5 g", beurre: "8 g", sel: "2 g" },
+      { nb: 2, oeufs: "4", oignon: "50 g", tomates: "1", piment: "3 g", gingembre: "4 g", coriandre: "10 g", curcuma: "1 g", beurre: "16 g", sel: "4 g" },
+      { nb: 3, oeufs: "6", oignon: "75 g", tomates: "1½", piment: "4.5 g", gingembre: "6 g", coriandre: "15 g", curcuma: "1.5 g", beurre: "24 g", sel: "6 g" },
+      { nb: 4, oeufs: "8", oignon: "100 g", tomates: "2", piment: "6 g", gingembre: "8 g", coriandre: "20 g", curcuma: "2 g", beurre: "32 g", sel: "8 g" },
+      { nb: 5, oeufs: "10", oignon: "125 g", tomates: "2½", piment: "7.5 g", gingembre: "10 g", coriandre: "25 g", curcuma: "2.5 g", beurre: "40 g", sel: "10 g" },
+      { nb: 6, oeufs: "12", oignon: "150 g", tomates: "3", piment: "9 g", gingembre: "12 g", coriandre: "30 g", curcuma: "3 g", beurre: "48 g", sel: "12 g" },
+      { nb: 7, oeufs: "14", oignon: "175 g", tomates: "3½", piment: "10.5 g", gingembre: "14 g", coriandre: "35 g", curcuma: "3.5 g", beurre: "56 g", sel: "14 g" },
+      { nb: 8, oeufs: "16", oignon: "200 g", tomates: "4", piment: "12 g", gingembre: "16 g", coriandre: "40 g", curcuma: "4 g", beurre: "64 g", sel: "16 g" },
+      { nb: 9, oeufs: "18", oignon: "225 g", tomates: "4½", piment: "13.5 g", gingembre: "18 g", coriandre: "45 g", curcuma: "4.5 g", beurre: "72 g", sel: "18 g" },
+      { nb: 10, oeufs: "20", oignon: "250 g", tomates: "5", piment: "15 g", gingembre: "20 g", coriandre: "50 g", curcuma: "5 g", beurre: "80 g", sel: "20 g" },
+      { nb: 11, oeufs: "22", oignon: "275 g", tomates: "5½", piment: "16.5 g", gingembre: "22 g", coriandre: "55 g", curcuma: "5.5 g", beurre: "88 g", sel: "22 g" },
+      { nb: 12, oeufs: "24", oignon: "300 g", tomates: "6", piment: "18 g", gingembre: "24 g", coriandre: "60 g", curcuma: "6 g", beurre: "96 g", sel: "24 g" },
+      { nb: 13, oeufs: "26", oignon: "325 g", tomates: "6½", piment: "19.5 g", gingembre: "26 g", coriandre: "65 g", curcuma: "6.5 g", beurre: "104 g", sel: "26 g" },
+      { nb: 14, oeufs: "28", oignon: "350 g", tomates: "7", piment: "21 g", gingembre: "28 g", coriandre: "70 g", curcuma: "7 g", beurre: "112 g", sel: "28 g" },
+      { nb: 15, oeufs: "30", oignon: "375 g", tomates: "7½", piment: "22.5 g", gingembre: "30 g", coriandre: "75 g", curcuma: "7.5 g", beurre: "120 g", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🧅", titre: "Les aromates", detail: "Faites revenir doucement l'oignon finement émincé dans le beurre (ou le ghee), jusqu'à ce qu'il soit fondant et translucide.", badge: null },
+      { icone: "🌶️", titre: "Épicer", detail: "Ajoutez le gingembre, le piment vert, le curcuma et un peu de cumin, et faites-les revenir brièvement.", badge: null },
+      { icone: "🍅", titre: "La tomate", detail: "Ajoutez la tomate en petits dés et laissez-la fondre légèrement.", badge: null },
+      { icone: "🥚", titre: "Les œufs", detail: "Battez les œufs avec un peu de coriandre et de sel, et versez-les sur les aromates à feu doux.", badge: null },
+      { icone: "🥄", titre: "Brouiller", detail: "Remuez sans cesse et doucement, en cercles, pour que les œufs restent crémeux et baveux (ne pas trop cuire, c'est le secret de l'akuri).", badge: null },
+      { icone: "⏲️", titre: "Arrêter à temps", detail: "Retirez du feu quand les œufs sont encore brillants et fondants (ils finissent de cuire hors du feu).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Parsemez de coriandre et servez aussitôt, sur du pain grillé ou du pav. Riches, parfumés et fondants — les œufs brouillés parsis de Mumbai.", badge: null }
+    ]
+  },
 });

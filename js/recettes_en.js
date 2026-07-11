@@ -70384,5 +70384,345 @@ window.RECETTES_EN = {
     "detail": "Take the chicken out of the salt, debone and cut it, then coat with the ginger-scallion oil. Tender, juicy and fragrant — the Hakka salt-baked chicken."
    }
   ]
+ },
+ "koshamangsho": {
+  "nom": "Kosha Mangsho",
+  "description": "Kosha mangsho — the dry-cooked mutton of Bengal: lamb long-cooked with plenty of caramelised onion, yogurt and warm spices, into a dark, thick, coating sauce ('kosha' means slow-cooked dry). Rich, deep and festive, it's the ultimate Sunday dish of Bengalis.",
+  "etapes": [
+   {
+    "titre": "Marinate",
+    "detail": "Marinate the lamb with the yogurt, ginger, garlic, turmeric and a little salt, for several hours."
+   },
+   {
+    "titre": "The onion",
+    "detail": "Sauté plenty of sliced onion in mustard oil, at length, until deeply caramelised."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the warm spices (cinnamon, cardamom, clove, garam masala) and sauté them."
+   },
+   {
+    "titre": "The lamb",
+    "detail": "Add the marinated lamb and colour it in the masala, over high heat."
+   },
+   {
+    "titre": "Kosha (dry cook)",
+    "detail": "Cover and cook over low heat in its own juices, stirring regularly, without adding water: the sauce reduces and coats the meat."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Continue until the lamb is tender and the sauce dark, thick and oily (the oil rises)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice, luchi (fried breads) or pulao. Rich, deep and festive — the Bengali Sunday mutton."
+   }
+  ]
+ },
+ "sarsonsaag": {
+  "nom": "Sarson Da Saag",
+  "description": "Sarson da saag — the Punjabi mustard greens mash: mustard and spinach leaves long-simmered then mashed, bound with cornmeal and scented with ginger and garlic. Served with a makki di roti (corn flatbread) and a knob of melting butter, it's the great winter dish of Punjab.",
+  "etapes": [
+   {
+    "titre": "The leaves",
+    "detail": "Wash and chop the mustard (sarson) and spinach leaves, and cook them at length in water with ginger and green chilli."
+   },
+   {
+    "titre": "Mash",
+    "detail": "Mash the cooked leaves (with the traditional pestle, the ghotni) into a thick, rustic purée."
+   },
+   {
+    "titre": "Bind",
+    "detail": "Add a little cornmeal (makki atta) to bind and thicken the saag, and cook stirring."
+   },
+   {
+    "titre": "The tadka",
+    "detail": "Sauté the onion, garlic and ginger in ghee, with a little tomato, until soft."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir this tadka into the saag and simmer to marry the flavours."
+   },
+   {
+    "titre": "The butter",
+    "detail": "Let the saag thicken, creamy and dark green."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve scalding, topped with a generous knob of white butter (makhan), with a makki di roti (corn flatbread). The great winter dish of Punjab."
+   }
+  ]
+ },
+ "thalipeeth": {
+  "nom": "Thalipeeth",
+  "description": "Thalipeeth — the multigrain flatbread of Maharashtra: a dough of several flours (corn, wheat, chickpea, millet) mixed with onion, coriander and spices, hand-flattened into a rustic golden cake pan-fried. Nourishing, crisp and fragrant, it's eaten with yogurt or butter.",
+  "etapes": [
+   {
+    "titre": "The flour mix",
+    "detail": "Mix several flours (corn, wheat, chickpea, millet/jowar): it gives thalipeeth its rustic taste and texture (the bhajani)."
+   },
+   {
+    "titre": "The dough",
+    "detail": "Add the finely chopped onion, coriander, cumin, chilli and turmeric, then knead with warm water into a soft dough."
+   },
+   {
+    "titre": "Flatten",
+    "detail": "Take a portion of dough and flatten it directly by hand (wet) on a sheet or the pan, into a thick, irregular cake."
+   },
+   {
+    "titre": "The hole",
+    "detail": "Poke a hole in the centre (for cooking and a little oil) — the signature of thalipeeth."
+   },
+   {
+    "titre": "Cook",
+    "detail": "Cook the cake in a pan with a little oil, covered, until golden and crisp on both sides."
+   },
+   {
+    "titre": "Butter",
+    "detail": "Drizzle a little oil or butter through the hole during cooking."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve hot, with thick yogurt, white butter or a pickle. Nourishing, crisp and fragrant — the rustic flatbread of Maharashtra."
+   }
+  ]
+ },
+ "fishmoilee": {
+  "nom": "Fish Moilee",
+  "description": "Fish moilee — the mild coconut fish of Kerala: fish fillets poached in a velvety coconut milk, scented with turmeric, ginger, green chilli and curry leaves. Mild, creamy and delicate, this white curry of Portuguese influence is a jewel of Kerala's backwater cuisine.",
+  "etapes": [
+   {
+    "titre": "The fish",
+    "detail": "Rub the fish fillets (cod, snapper) with turmeric and salt, and briefly sear them. Set aside."
+   },
+   {
+    "titre": "The base",
+    "detail": "Gently sauté the sliced onion, ginger and green chilli in coconut oil, without colouring them (the moilee stays white)."
+   },
+   {
+    "titre": "The spices",
+    "detail": "Add the turmeric, curry leaves and a little pepper."
+   },
+   {
+    "titre": "The coconut milk",
+    "detail": "Pour in the thin coconut milk, then the thick, and bring gently to a simmer (without hard boiling, so the coconut doesn't split)."
+   },
+   {
+    "titre": "Poach",
+    "detail": "Gently add the fish and poach it in the coconut milk until just cooked and tender."
+   },
+   {
+    "titre": "Season",
+    "detail": "Adjust with lime and salt: the sauce should be white, velvety and delicately spiced."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice (appam or plain rice). Mild, creamy and delicate — the white curry of Kerala's backwaters."
+   }
+  ]
+ },
+ "chettinad": {
+  "nom": "Chicken Chettinad",
+  "description": "Chicken Chettinad — the peppery curry of Tamil Nadu: chicken simmered in a dark, intense masala made by roasting and grinding a profusion of spices (pepper, fennel, chilli, coconut). Bold, peppery and deep, it's the most famous dish of Chettinad cuisine, reputed the spiciest in southern India.",
+  "etapes": [
+   {
+    "titre": "Roast the spices",
+    "detail": "Dry-roast the pepper, fennel, cumin, coriander, dried chillies and coconut, until fragrant."
+   },
+   {
+    "titre": "The masala",
+    "detail": "Blend these roasted spices into a dark, fragrant powder (or paste): the Chettinad masala."
+   },
+   {
+    "titre": "The base",
+    "detail": "Sauté the onion, garlic, ginger and curry leaves, then add the tomato."
+   },
+   {
+    "titre": "The chicken",
+    "detail": "Add the chicken and colour it, then stir in the Chettinad masala."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Add a little water and simmer until the chicken is tender and the sauce dark and thick."
+   },
+   {
+    "titre": "Adjust",
+    "detail": "Chettinad should be bold and peppery: adjust the heat and salt."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with rice, dosa or parotta. Bold, peppery and deep — the most famous dish of Chettinad."
+   }
+  ]
+ },
+ "yakhni": {
+  "nom": "Yakhni",
+  "description": "Yakhni — the white-yogurt lamb of Kashmir: lamb simmered in a whipped-yogurt sauce scented with fennel, cardamom and cinnamon, without browned onion or tomato. Mild, white and delicately spiced, it's the refined face of the Kashmiri wazwan, served over rice.",
+  "etapes": [
+   {
+    "titre": "The lamb",
+    "detail": "Sauté the lamb in ghee with the cinnamon, cardamom and clove, without colouring it strongly (yakhni stays pale)."
+   },
+   {
+    "titre": "The broth",
+    "detail": "Add water, ground fennel and ginger, and simmer until the lamb is almost tender."
+   },
+   {
+    "titre": "The yogurt",
+    "detail": "Beat the yogurt until smooth, with a little flour (so it won't split)."
+   },
+   {
+    "titre": "Cook the yogurt",
+    "detail": "Stir the yogurt into the broth off the high heat, stirring constantly in the same direction, then heat gently to a simmer."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer gently until the sauce thickens slightly, white and fragrant."
+   },
+   {
+    "titre": "Flavour",
+    "detail": "Add dried mint and a little ground cardamom at the end."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve over basmati rice. Mild, white and delicately spiced — the refined face of Kashmir."
+   }
+  ]
+ },
+ "dhansak": {
+  "nom": "Dhansak",
+  "description": "Dhansak — the Parsi lentil dish: a creamy mix of lentils and vegetables (pumpkin, aubergine) and lamb, simmered with a sweet-sour tamarind and cinnamon masala. Thick, comforting and balanced between sweet, sour and spicy, it's traditionally served on Sundays with a caramelised rice.",
+  "etapes": [
+   {
+    "titre": "The lentils",
+    "detail": "Cook a mix of lentils (red, toor) with the pumpkin and aubergine, until everything is very tender, then mash into a thick purée."
+   },
+   {
+    "titre": "The lamb",
+    "detail": "Cook the lamb separately in a little water with spices, until tender. Keep the broth."
+   },
+   {
+    "titre": "The masala",
+    "detail": "Sauté the onion, garlic and ginger, add the dhansak masala (cumin, coriander, cinnamon, clove, fenugreek) and the tomato."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir the lentil-vegetable purée and the lamb into the masala, with a little broth."
+   },
+   {
+    "titre": "The sweet-sour",
+    "detail": "Add the tamarind (sour) and a little palm sugar (sweet): the sweet-sour balance is the signature of dhansak."
+   },
+   {
+    "titre": "Simmer",
+    "detail": "Simmer until you get a thick, creamy, fragrant purée."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with brown rice (rice caramelised with fried onions). Thick, comforting and balanced — the Parsi Sunday dish."
+   }
+  ]
+ },
+ "akuri": {
+  "nom": "Akuri",
+  "description": "Akuri — the Parsi spiced scrambled eggs: creamy scrambled eggs, cooked with onion, tomato, ginger, green chilli and coriander, kept soft and runny. Rich, fragrant and comforting, they're eaten for breakfast on toast (or pav), a classic of the Parsi cuisine of Mumbai.",
+  "etapes": [
+   {
+    "titre": "The aromatics",
+    "detail": "Gently sauté the finely sliced onion in the butter (or ghee), until soft and translucent."
+   },
+   {
+    "titre": "Spice",
+    "detail": "Add the ginger, green chilli, turmeric and a little cumin, and sauté briefly."
+   },
+   {
+    "titre": "The tomato",
+    "detail": "Add the diced tomato and let it melt slightly."
+   },
+   {
+    "titre": "The eggs",
+    "detail": "Beat the eggs with a little coriander and salt, and pour them over the aromatics over low heat."
+   },
+   {
+    "titre": "Scramble",
+    "detail": "Stir constantly and gently, in circles, so the eggs stay creamy and runny (don't overcook, the secret of akuri)."
+   },
+   {
+    "titre": "Stop in time",
+    "detail": "Remove from the heat while the eggs are still glossy and soft (they finish cooking off the heat)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Scatter with coriander and serve at once, on toast or pav. Rich, fragrant and soft — the Parsi scrambled eggs of Mumbai."
+   }
+  ]
+ },
+ "gongura": {
+  "nom": "Gongura Mamsam",
+  "description": "Gongura mamsam — the sorrel lamb of Andhra: lamb simmered with gongura leaves (sorrel, very tangy) and a profusion of chillies, into a dark, sour, fiery curry. Powerful, tangy and very spicy, it's a signature dish of Andhra Pradesh, famous for the spiciest cuisine in India.",
+  "etapes": [
+   {
+    "titre": "The gongura",
+    "detail": "Wilt the gongura leaves (sorrel, or spinach lifted with a little tamarind for acidity) until they reduce, then mash them."
+   },
+   {
+    "titre": "The lamb",
+    "detail": "Sauté the lamb with the onion, garlic and ginger, then add the turmeric and cumin."
+   },
+   {
+    "titre": "Simmer the meat",
+    "detail": "Add a little water and simmer until the lamb is tender."
+   },
+   {
+    "titre": "The chillies",
+    "detail": "Add a good dose of red chilli powder and green chillies: gongura mamsam is very spicy."
+   },
+   {
+    "titre": "Combine",
+    "detail": "Stir the sorrel purée (gongura) and the tamarind into the meat, and mix."
+   },
+   {
+    "titre": "Reduce",
+    "detail": "Simmer until the sauce is dark, thick, tangy and coating."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve with plain rice (to temper the heat and acidity). Powerful, tangy and very spicy — the signature dish of Andhra."
+   }
+  ]
+ },
+ "thoran": {
+  "nom": "Thoran",
+  "description": "Thoran — the coconut vegetable stir-fry of Kerala: finely sliced vegetables (cabbage, beans, carrot) dry-fried with grated coconut, a tempering of mustard seeds and curry leaves. Dry, crunchy and fragrant, it's the everyday vegetable side of Keralan meals (sadya).",
+  "etapes": [
+   {
+    "titre": "The vegetables",
+    "detail": "Very finely slice the vegetables (cabbage, green beans, carrot): thoran needs a fine, even cut."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Lightly crush the grated coconut with a little garlic, green chilli, cumin and turmeric (the signature coconut mix)."
+   },
+   {
+    "titre": "The tempering",
+    "detail": "Crackle the mustard seeds and urad dal in coconut oil, with curry leaves."
+   },
+   {
+    "titre": "The aromatics",
+    "detail": "Add the sliced onion (or shallot) and sauté it."
+   },
+   {
+    "titre": "Cook the vegetables",
+    "detail": "Add the finely sliced vegetables and dry-fry them, covered, keeping them crunchy."
+   },
+   {
+    "titre": "The coconut",
+    "detail": "Add the coconut mix and sauté briefly, without it turning wet (thoran is dry)."
+   },
+   {
+    "titre": "Serve",
+    "detail": "Serve warm, as a side to rice and a curry. Dry, crunchy and fragrant — the vegetable stir-fry of Kerala."
+   }
+  ]
  }
 };

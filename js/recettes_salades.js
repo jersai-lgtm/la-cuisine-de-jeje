@@ -2819,4 +2819,42 @@ Object.assign(recettes, {
       { icone: "🍽️", titre: "Servir", detail: "Servez à température ambiante, avec un trait de citron. Fraîche, umami et relevée — la salade de manioc igbo du Nigeria.", badge: null }
     ]
   },
+  thoran: {
+    dateAjout: "2026-07-11T16:09:00",
+    nom: "Thoran",
+    cat: "salades", pays: "inde",
+    base: 4,
+    temps: "25 min",
+    niveau: "⭐ Facile",
+    emoji: "🥥",
+    description: "Thoran — le sauté de légumes à la noix de coco du Kerala : des légumes finement émincés (chou, haricots, carotte) sautés à sec avec de la noix de coco râpée, un tempérage de graines de moutarde et des feuilles de curry. Sec, croquant et parfumé, c'est l'accompagnement végétal quotidien des repas keralais (sadya).",
+    tableauThoran: [
+      { nb: 1, chou: "70 g", noixcoco: "20 g", oignon: "20 g", moutarde: "2 g", curcuma: "1 g", piment: "1 g", huileolive: "6 ml", sel: "2 g" },
+      { nb: 2, chou: "140 g", noixcoco: "40 g", oignon: "40 g", moutarde: "4 g", curcuma: "2 g", piment: "2 g", huileolive: "12 ml", sel: "4 g" },
+      { nb: 3, chou: "210 g", noixcoco: "60 g", oignon: "60 g", moutarde: "6 g", curcuma: "3 g", piment: "3 g", huileolive: "18 ml", sel: "6 g" },
+      { nb: 4, chou: "280 g", noixcoco: "80 g", oignon: "80 g", moutarde: "8 g", curcuma: "4 g", piment: "4 g", huileolive: "24 ml", sel: "8 g" },
+      { nb: 5, chou: "350 g", noixcoco: "100 g", oignon: "100 g", moutarde: "10 g", curcuma: "5 g", piment: "5 g", huileolive: "30 ml", sel: "10 g" },
+      { nb: 6, chou: "420 g", noixcoco: "120 g", oignon: "120 g", moutarde: "12 g", curcuma: "6 g", piment: "6 g", huileolive: "36 ml", sel: "12 g" },
+      { nb: 7, chou: "490 g", noixcoco: "140 g", oignon: "140 g", moutarde: "14 g", curcuma: "7 g", piment: "7 g", huileolive: "42 ml", sel: "14 g" },
+      { nb: 8, chou: "560 g", noixcoco: "160 g", oignon: "160 g", moutarde: "16 g", curcuma: "8 g", piment: "8 g", huileolive: "48 ml", sel: "16 g" },
+      { nb: 9, chou: "630 g", noixcoco: "180 g", oignon: "180 g", moutarde: "18 g", curcuma: "9 g", piment: "9 g", huileolive: "54 ml", sel: "18 g" },
+      { nb: 10, chou: "700 g", noixcoco: "200 g", oignon: "200 g", moutarde: "20 g", curcuma: "10 g", piment: "10 g", huileolive: "60 ml", sel: "20 g" },
+      { nb: 11, chou: "770 g", noixcoco: "220 g", oignon: "220 g", moutarde: "22 g", curcuma: "11 g", piment: "11 g", huileolive: "66 ml", sel: "22 g" },
+      { nb: 12, chou: "840 g", noixcoco: "240 g", oignon: "240 g", moutarde: "24 g", curcuma: "12 g", piment: "12 g", huileolive: "72 ml", sel: "24 g" },
+      { nb: 13, chou: "910 g", noixcoco: "260 g", oignon: "260 g", moutarde: "26 g", curcuma: "13 g", piment: "13 g", huileolive: "78 ml", sel: "26 g" },
+      { nb: 14, chou: "980 g", noixcoco: "280 g", oignon: "280 g", moutarde: "28 g", curcuma: "14 g", piment: "14 g", huileolive: "84 ml", sel: "28 g" },
+      { nb: 15, chou: "1050 g", noixcoco: "300 g", oignon: "300 g", moutarde: "30 g", curcuma: "15 g", piment: "15 g", huileolive: "90 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🥬", titre: "Les légumes", detail: "Émincez très finement les légumes (chou, haricots verts, carotte) : le thoran demande une coupe fine et régulière.", badge: null },
+      { icone: "🥥", titre: "La coco", detail: "Écrasez légèrement la noix de coco râpée avec un peu d'ail, de piment vert, de cumin et de curcuma (le mélange coco signature).", badge: null },
+      { icone: "🔥", titre: "Le tempérage", detail: "Faites crépiter les graines de moutarde et le dal urad dans l'huile de coco, avec des feuilles de curry.", badge: null },
+      { icone: "🧅", titre: "Les aromates", detail: "Ajoutez l'oignon (ou l'échalote) émincé et faites-le revenir.", badge: null },
+      { icone: "🥬", titre: "Cuire les légumes", detail: "Ajoutez les légumes finement émincés et faites-les sauter à sec, à couvert, en gardant du croquant.", badge: null },
+      { icone: "🥥", titre: "La coco", detail: "Ajoutez le mélange à la noix de coco et faites revenir brièvement, sans que ça devienne humide (le thoran est sec).", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez tiède, en accompagnement d'un riz et d'un curry. Sec, croquant et parfumé — le sauté végétal du Kerala.", badge: null }
+    ],
+    liees: ["avial"]
+  },
 });

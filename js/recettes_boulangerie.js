@@ -2098,4 +2098,42 @@ Object.assign(recettes, {
     ],
     liees: ["dosa"]
   },
+  thalipeeth: {
+    dateAjout: "2026-07-11T16:02:00",
+    nom: "Thalipeeth",
+    cat: "boulangerie", pays: "inde",
+    base: 4,
+    temps: "30 min",
+    niveau: "⭐ Facile",
+    emoji: "🫓",
+    description: "Thalipeeth — la galette multi-céréales du Maharashtra : une pâte de plusieurs farines (maïs, blé, pois chiche, mil) mêlée d'oignon, de coriandre et d'épices, aplatie à la main en galette rustique et dorée à la poêle. Nourrissante, croustillante et parfumée, elle se déguste avec du yaourt ou du beurre.",
+    tableauThalipeeth: [
+      { nb: 1, farinemais: "35 g", farine: "20 g", farinepoischiche: "15 g", oignon: "25 g", coriandre: "4 g", cumin: "1 g", piment: "1.5 g", huileolive: "8 ml", sel: "2 g" },
+      { nb: 2, farinemais: "70 g", farine: "40 g", farinepoischiche: "30 g", oignon: "50 g", coriandre: "8 g", cumin: "2 g", piment: "3 g", huileolive: "16 ml", sel: "4 g" },
+      { nb: 3, farinemais: "105 g", farine: "60 g", farinepoischiche: "45 g", oignon: "75 g", coriandre: "12 g", cumin: "3 g", piment: "4.5 g", huileolive: "24 ml", sel: "6 g" },
+      { nb: 4, farinemais: "140 g", farine: "80 g", farinepoischiche: "60 g", oignon: "100 g", coriandre: "16 g", cumin: "4 g", piment: "6 g", huileolive: "32 ml", sel: "8 g" },
+      { nb: 5, farinemais: "175 g", farine: "100 g", farinepoischiche: "75 g", oignon: "125 g", coriandre: "20 g", cumin: "5 g", piment: "7.5 g", huileolive: "40 ml", sel: "10 g" },
+      { nb: 6, farinemais: "210 g", farine: "120 g", farinepoischiche: "90 g", oignon: "150 g", coriandre: "24 g", cumin: "6 g", piment: "9 g", huileolive: "48 ml", sel: "12 g" },
+      { nb: 7, farinemais: "245 g", farine: "140 g", farinepoischiche: "105 g", oignon: "175 g", coriandre: "28 g", cumin: "7 g", piment: "10.5 g", huileolive: "56 ml", sel: "14 g" },
+      { nb: 8, farinemais: "280 g", farine: "160 g", farinepoischiche: "120 g", oignon: "200 g", coriandre: "32 g", cumin: "8 g", piment: "12 g", huileolive: "64 ml", sel: "16 g" },
+      { nb: 9, farinemais: "315 g", farine: "180 g", farinepoischiche: "135 g", oignon: "225 g", coriandre: "36 g", cumin: "9 g", piment: "13.5 g", huileolive: "72 ml", sel: "18 g" },
+      { nb: 10, farinemais: "350 g", farine: "200 g", farinepoischiche: "150 g", oignon: "250 g", coriandre: "40 g", cumin: "10 g", piment: "15 g", huileolive: "80 ml", sel: "20 g" },
+      { nb: 11, farinemais: "385 g", farine: "220 g", farinepoischiche: "165 g", oignon: "275 g", coriandre: "44 g", cumin: "11 g", piment: "16.5 g", huileolive: "88 ml", sel: "22 g" },
+      { nb: 12, farinemais: "420 g", farine: "240 g", farinepoischiche: "180 g", oignon: "300 g", coriandre: "48 g", cumin: "12 g", piment: "18 g", huileolive: "96 ml", sel: "24 g" },
+      { nb: 13, farinemais: "455 g", farine: "260 g", farinepoischiche: "195 g", oignon: "325 g", coriandre: "52 g", cumin: "13 g", piment: "19.5 g", huileolive: "104 ml", sel: "26 g" },
+      { nb: 14, farinemais: "490 g", farine: "280 g", farinepoischiche: "210 g", oignon: "350 g", coriandre: "56 g", cumin: "14 g", piment: "21 g", huileolive: "112 ml", sel: "28 g" },
+      { nb: 15, farinemais: "525 g", farine: "300 g", farinepoischiche: "225 g", oignon: "375 g", coriandre: "60 g", cumin: "15 g", piment: "22.5 g", huileolive: "120 ml", sel: "30 g" }
+    ],
+    ingredients: {},
+    etapes: [
+      { icone: "🌾", titre: "Le mélange de farines", detail: "Mélangez plusieurs farines (maïs, blé, pois chiche, mil/jowar) : c'est ce qui donne au thalipeeth son goût et sa texture rustiques (le bhajani).", badge: null },
+      { icone: "🧅", titre: "La pâte", detail: "Ajoutez l'oignon finement haché, la coriandre, le cumin, le piment et le curcuma, puis pétrissez avec de l'eau tiède en une pâte souple.", badge: null },
+      { icone: "🖐️", titre: "Aplatir", detail: "Prenez une portion de pâte et aplatissez-la directement à la main (mouillée) sur une feuille ou la poêle, en une galette épaisse et irrégulière.", badge: null },
+      { icone: "🕳️", titre: "Le trou", detail: "Percez un trou au centre (pour la cuisson et un peu d'huile) — la signature du thalipeeth.", badge: null },
+      { icone: "🔥", titre: "Cuire", detail: "Faites cuire la galette à la poêle avec un peu d'huile, à couvert, jusqu'à ce qu'elle soit dorée et croustillante des deux côtés.", badge: null },
+      { icone: "🧈", titre: "Beurrer", detail: "Arrosez d'un peu d'huile ou de beurre par le trou en cours de cuisson.", badge: null },
+      { icone: "🍽️", titre: "Servir", detail: "Servez chaud, avec du yaourt épais, du beurre blanc ou un pickle. Nourrissant, croustillant et parfumé — la galette rustique du Maharashtra.", badge: null }
+    ],
+    liees: ["misalpav"]
+  },
 });
