@@ -136,34 +136,70 @@ async function envoyerAvis() {
   }
 }
 
-// Charge les stats globales + section admin si applicable
+// Rend la note globale de l'appli dans la carte « en évidence » de l'accueil.
+// (v261 — sortie de « Mes Stats » car c'est la stat de l'appli, pas une stat perso.)
+function rendreNoteAppAccueil(tous) {
+  const zone = document.getElementById("accueil-note-app");
+  if (!zone) return;
+  const nb = tous.length;
+  const dejaNote = window.currentUser && tous.some(a => a.uid === window.currentUser.uid);
+  const libelleBtn = dejaNote ? "✏️ Modifier mon avis" : "⭐ Noter l'application";
+  zone.style.display = "block";
+  if (nb === 0) {
+    zone.innerHTML = `
+      <div class="note-app-card note-app-vide">
+        <div class="note-app-cta">
+          <div class="note-app-titre">⭐ Avis sur l'application</div>
+          <div class="note-app-sub">Aucun avis pour l'instant — sois le premier à noter Jéjé !</div>
+          <button class="note-app-btn" onclick="ouvrirModalAvis()">${libelleBtn}</button>
+        </div>
+      </div>`;
+    return;
+  }
+  const moy = tous.reduce((s, a) => s + (a.etoiles || 0), 0) / nb;
+  const arr = Math.round(moy);
+  const etoiles = "★".repeat(arr) + "☆".repeat(5 - arr);
+  zone.innerHTML = `
+    <div class="note-app-card">
+      <div class="note-app-note">
+        <div class="note-app-chiffre">${moy.toFixed(1).replace(".", ",")}<span>/5</span></div>
+        <div class="note-app-etoiles">${etoiles}</div>
+        <div class="note-app-nb">${nb} avis</div>
+      </div>
+      <div class="note-app-cta">
+        <div class="note-app-titre">⭐ Avis sur l'application</div>
+        <div class="note-app-sub">La note moyenne donnée par la communauté Jéjé</div>
+        <button class="note-app-btn" onclick="ouvrirModalAvis()">${libelleBtn}</button>
+      </div>
+    </div>`;
+}
+
+// Chargé à l'affichage de l'accueil : lit les avis et remplit la carte en évidence.
+async function chargerNoteAppAccueil() {
+  const zone = document.getElementById("accueil-note-app");
+  if (!zone || typeof _db === "undefined" || !_db) return;
+  try {
+    const snap = await _db.collection("avis").get();
+    rendreNoteAppAccueil(snap.docs.map(d => d.data()));
+  } catch (e) {
+    console.warn("Erreur note appli accueil:", e);
+  }
+}
+window.chargerNoteAppAccueil = chargerNoteAppAccueil;
+
+// Charge le bouton perso « Mon avis » (Mes Stats), la carte accueil et la section admin.
 async function chargerStatsAvis() {
-  const zoneStats = document.getElementById("avis-stats-globales");
   const zoneAdmin = document.getElementById("avis-admin-zone");
   const zoneMonAvis = document.getElementById("mon-avis-zone");
-  
-  if (!zoneStats) return;
-  
+
   try {
     const snap = await _db.collection("avis").get();
     const tous = snap.docs.map(d => d.data());
-    const nb = tous.length;
-    
-    if (nb === 0) {
-      zoneStats.innerHTML = `<span class="avis-empty">🌟 Aucun avis pour l'instant — sois le premier à noter !</span>`;
-    } else {
-      const moy = tous.reduce((s, a) => s + (a.etoiles || 0), 0) / nb;
-      const etoilesAffichage = "★".repeat(Math.round(moy)) + "☆".repeat(5 - Math.round(moy));
-      zoneStats.innerHTML = `
-        <div class="avis-moyenne-affichage">
-          <div class="avis-moyenne-etoiles">${etoilesAffichage}</div>
-          <div class="avis-moyenne-chiffre">${moy.toFixed(1)}/5</div>
-          <div class="avis-moyenne-nb">(${nb} avis)</div>
-        </div>
-      `;
-    }
-    
-    // Bouton selon état (déconnecté → on remet le bouton "Noter", pas de reste obsolète)
+
+    // Carte « note de l'appli » en évidence sur l'accueil.
+    rendreNoteAppAccueil(tous);
+
+    // Bouton perso dans « Mes Stats » (noter / modifier son propre avis).
     if (zoneMonAvis) {
       const monAvis = window.currentUser ? tous.find(a => a.uid === window.currentUser.uid) : null;
       if (monAvis) {
@@ -177,7 +213,7 @@ async function chargerStatsAvis() {
         zoneMonAvis.innerHTML = `<button class="avis-btn-principal" onclick="ouvrirModalAvis()">⭐ Noter l'application</button>`;
       }
     }
-    
+
     // Vue admin
     if (estAdmin() && zoneAdmin) {
       afficherAdminAvis(tous);
@@ -188,7 +224,6 @@ async function chargerStatsAvis() {
     }
   } catch (e) {
     console.warn("Erreur chargement stats avis:", e);
-    if (zoneStats) zoneStats.innerHTML = `<span class="avis-empty">Impossible de charger les avis</span>`;
   }
 }
 

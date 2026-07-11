@@ -285,6 +285,7 @@ function chargerAccueilTopMois() {
 }
 
 function chargerAccueil() {
+  if (typeof chargerNoteAppAccueil === "function") chargerNoteAppAccueil();
   chargerAccueilNouveautes();
   chargerAccueilPourVous();
   chargerAccueilFavoris();

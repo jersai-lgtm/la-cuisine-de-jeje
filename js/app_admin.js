@@ -356,3 +356,137 @@ function afficherAdminListeUsers(users) {
   `;
 }
 
+// =============================================================================
+// ⭐ ADMIN — NOTES DES RECETTES (qui a noté) + détection d'abus
+// =============================================================================
+// Lit la collection communautaire "notesEtoiles" (docs {uid, recette, etoiles,
+// prenom, dateMaj}) et affiche, RÉSERVÉ À L'ADMIN :
+//  - un résumé (nb notes, nb noteurs, moyenne globale) ;
+//  - les comptes suspects (que des 1★ ou que des 5★) pour repérer les abus ;
+//  - le détail par noteur (qui a mis quelle note sur quelle recette).
+// La vue est protégée par estAdmin() (UI) ; la vraie barrière côté données
+// reste firestore.rules. Aucune écriture, lecture seule.
+// =============================================================================
+async function chargerNotesEtoilesAdmin() {
+  if (!estAdmin()) return;
+  const zone = document.getElementById("admin-notes-etoiles");
+  if (!zone) return;
+  zone.innerHTML = `<p class="avis-empty">Chargement des notes…</p>`;
+
+  const nomRecette = (cle) => {
+    const r = (typeof recettes !== "undefined") ? recettes[cle] : null;
+    if (!r) return "❔ " + cle;
+    return (r.emoji || "🍽️") + " " + (r.nom || (cle.charAt(0).toUpperCase() + cle.slice(1)));
+  };
+  const dateCourte = (d) => {
+    if (!d) return "";
+    try { return typeof formatDateAvis === "function" ? formatDateAvis(d) : new Date(d).toLocaleDateString("fr-FR"); }
+    catch (e) { return ""; }
+  };
+
+  try {
+    const snap = await _db.collection("notesEtoiles").get({ source: "server" });
+    const notes = snap.docs.map(d => d.data())
+      .filter(n => n && n.uid && n.recette && n.etoiles >= 1 && n.etoiles <= 5);
+
+    if (!notes.length) {
+      zone.innerHTML = `<p class="avis-empty">Aucune note pour l'instant.</p>`;
+      const cnt = document.getElementById("cnt-notes-suspects");
+      if (cnt) cnt.classList.remove("on");
+      return;
+    }
+
+    // --- Agrégation par utilisateur ---
+    const parUser = {};
+    notes.forEach(n => {
+      const u = parUser[n.uid] || (parUser[n.uid] = { uid: n.uid, prenom: n.prenom || "Anonyme", notes: [], dist: [0, 0, 0, 0, 0, 0], somme: 0 });
+      if (n.prenom) u.prenom = n.prenom;
+      u.notes.push({ recette: n.recette, etoiles: n.etoiles, date: n.dateMaj });
+      u.dist[n.etoiles]++;
+      u.somme += n.etoiles;
+    });
+    const users = Object.values(parUser);
+
+    // --- Détection d'abus : au moins 4 notes ET ≥80% identiques en 1★ ou 5★ ---
+    const MIN = 4;
+    users.forEach(u => {
+      const n = u.notes.length;
+      u.moyenne = u.somme / n;
+      const p1 = u.dist[1] / n, p5 = u.dist[5] / n;
+      u.flag = null;
+      if (n >= MIN) {
+        if (u.dist[1] === n) u.flag = { txt: "🚩 QUE des 1★", grave: true };
+        else if (u.dist[5] === n) u.flag = { txt: "🚩 QUE des 5★", grave: true };
+        else if (p1 >= 0.8) u.flag = { txt: "⚠️ surtout des 1★", grave: false };
+        else if (p5 >= 0.8) u.flag = { txt: "⚠️ surtout des 5★", grave: false };
+      }
+    });
+
+    const suspects = users.filter(u => u.flag).sort((a, b) => (b.flag.grave - a.flag.grave) || (b.notes.length - a.notes.length));
+    const tous = [...users].sort((a, b) => b.notes.length - a.notes.length);
+
+    const moyGlobale = notes.reduce((s, n) => s + n.etoiles, 0) / notes.length;
+
+    // Badge compteur sur le titre de l'accordéon
+    const cnt = document.getElementById("cnt-notes-suspects");
+    if (cnt) { cnt.textContent = suspects.length; cnt.classList.toggle("on", suspects.length > 0); }
+
+    // Mini-barre de distribution 1★→5★ (rouge → vert)
+    const COULEURS = ["", "#e74c3c", "#e88b2f", "#e8c62f", "#8bc34a", "#2ecc71"];
+    const distBar = (dist, n) => {
+      const seg = [1, 2, 3, 4, 5].map(i => {
+        const w = n ? (dist[i] / n) * 100 : 0;
+        return w > 0 ? `<span title="${dist[i]} × ${i}★" style="width:${w}%;background:${COULEURS[i]}"></span>` : "";
+      }).join("");
+      return `<span style="display:inline-flex;height:9px;width:120px;border-radius:5px;overflow:hidden;background:rgba(var(--w),.12);vertical-align:middle">${seg}</span>`;
+    };
+    const distLegende = (dist) => [5, 4, 3, 2, 1].filter(i => dist[i] > 0)
+      .map(i => `<span style="color:${COULEURS[i]};font-weight:700">${dist[i]}×${i}★</span>`).join(" · ");
+
+    // Bloc détaillé d'un noteur (dépliable)
+    const blocUser = (u, suspect) => {
+      const n = u.notes.length;
+      const notesTri = [...u.notes].sort((a, b) => (b.etoiles - a.etoiles) || (a.recette < b.recette ? -1 : 1));
+      const lignes = notesTri.map(nt =>
+        `<div style="display:flex;align-items:center;gap:8px;padding:3px 0;font-size:0.84rem">
+           <span style="color:${COULEURS[nt.etoiles]};font-weight:700;min-width:34px">${nt.etoiles}★</span>
+           <span style="flex:1">${escapeHTML(nomRecette(nt.recette))}</span>
+           <span style="opacity:0.55;font-size:0.75rem">${dateCourte(nt.date)}</span>
+         </div>`).join("");
+      const bord = suspect ? (u.flag.grave ? "#e74c3c" : "#e8a02f") : "rgba(var(--w),.14)";
+      return `<details style="border:1px solid ${bord};border-radius:10px;margin-bottom:8px;background:rgba(var(--w),.03)">
+        <summary style="list-style:none;cursor:pointer;padding:9px 12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <strong>${escapeHTML(u.prenom)}</strong>
+          ${u.flag ? `<span style="font-size:0.78rem;font-weight:700;color:${u.flag.grave ? '#e74c3c' : '#e8a02f'}">${u.flag.txt}</span>` : ""}
+          <span style="margin-left:auto;font-size:0.8rem;opacity:0.75">${n} note${n > 1 ? "s" : ""} · moy. ${u.moyenne.toFixed(1).replace(".", ",")}/5</span>
+          ${distBar(u.dist, n)}
+        </summary>
+        <div style="padding:2px 12px 10px">
+          <div style="font-size:0.75rem;opacity:0.7;margin:0 0 6px">${distLegende(u.dist)}</div>
+          ${lignes}
+        </div>
+      </details>`;
+    };
+
+    zone.innerHTML = `
+      <div class="admin-cartes-grille" style="margin-bottom:12px">
+        <div class="admin-carte"><div class="admin-carte-val">${notes.length}</div><div class="admin-carte-lbl">⭐ Notes au total</div></div>
+        <div class="admin-carte admin-carte-bleu"><div class="admin-carte-val">${users.length}</div><div class="admin-carte-lbl">👤 Noteurs</div></div>
+        <div class="admin-carte admin-carte-vert"><div class="admin-carte-val">${moyGlobale.toFixed(1).replace(".", ",")}/5</div><div class="admin-carte-lbl">Moyenne globale</div></div>
+        <div class="admin-carte ${suspects.length ? 'admin-carte-rose' : ''}"><div class="admin-carte-val">${suspects.length}</div><div class="admin-carte-lbl">🚩 Comptes à surveiller</div></div>
+      </div>
+      ${suspects.length ? `
+        <h5 class="admin-section-titre" style="color:#e88">🚩 Comptes à surveiller</h5>
+        <p class="admin-acc-sous">Comptes avec au moins ${MIN} notes dont ≥80&nbsp;% sont des 1★ ou des 5★ (nuisance ou dopage possible). Déplie pour voir le détail.</p>
+        ${suspects.map(u => blocUser(u, true)).join("")}
+      ` : `<p class="avis-empty" style="margin:4px 0 14px">✅ Aucun comportement suspect détecté (personne ne met que des 1★ ou que des 5★).</p>`}
+      <h5 class="admin-section-titre">👤 Tous les noteurs (${users.length})</h5>
+      <p class="admin-acc-sous">Trié par nombre de notes. Déplie un noteur pour voir quelle note il a mise sur quelle recette.</p>
+      ${tous.map(u => blocUser(u, false)).join("")}
+    `;
+  } catch (e) {
+    console.error("❌ Erreur notes admin:", e);
+    zone.innerHTML = `<p class="avis-empty">⚠️ Erreur de chargement des notes : ${escapeHTML(e?.message || "inconnue")}</p>`;
+  }
+}
+

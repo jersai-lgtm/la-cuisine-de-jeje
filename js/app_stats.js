@@ -823,13 +823,22 @@ function remplirBadges(s) {
   let nbNutriA = 0, nbEco = 0, nbDifficile = 0, nbDesserts = 0, nbExpress = 0, nbMijote = 0, nbVege = 0, nbBoissons = 0, nbBrunch = 0;
   const protSet = new Set(), continentSet = new Set();
   const CONTINENTS = {
-    france:"eu",italie:"eu",espagne:"eu",portugal:"eu",grece:"eu",allemagne:"eu",angleterre:"eu","royaume-uni":"eu",irlande:"eu",belgique:"eu",paysbas:"eu",suisse:"eu",autriche:"eu",pologne:"eu",hongrie:"eu",russie:"eu",ukraine:"eu",croatie:"eu",serbie:"eu",slovaquie:"eu",bielorussie:"eu",suede:"eu",danemark:"eu",chypre:"eu",georgie:"eu",
-    chine:"as",japon:"as",coree:"as",thailande:"as",vietnam:"as",inde:"as",indonesie:"as",malaisie:"as",singapour:"as",philippines:"as",iran:"as",liban:"as",turquie:"as",israel:"as",palestine:"as",jordanie:"as",arabiesaoudite:"as",kazakhstan:"as",ouzbekistan:"as",tibet:"as",
-    maroc:"af",algerie:"af",tunisie:"af",egypte:"af",senegal:"af",nigeria:"af",ghana:"af",cotedivoire:"af",cameroun:"af",ethiopie:"af",congo:"af",afriquedusud:"af",reunion:"af",
+    // Europe
+    france:"eu",italie:"eu",espagne:"eu",portugal:"eu",grece:"eu",allemagne:"eu",angleterre:"eu","royaume-uni":"eu",irlande:"eu",belgique:"eu",paysbas:"eu",suisse:"eu",autriche:"eu",pologne:"eu",hongrie:"eu",russie:"eu",ukraine:"eu",croatie:"eu",serbie:"eu",slovaquie:"eu",bielorussie:"eu",suede:"eu",danemark:"eu",chypre:"eu",georgie:"eu",armenie:"eu",roumanie:"eu",finlande:"eu",bulgarie:"eu",tchequie:"eu",lettonie:"eu",lituanie:"eu",estonie:"eu",montenegro:"eu",albanie:"eu",slovenie:"eu",bosnie:"eu",macedoinedunord:"eu",kosovo:"eu",moldavie:"eu",luxembourg:"eu",malte:"eu",norvege:"eu",islande:"eu",paysdegalles:"eu",ecosse:"eu",
+    // Asie (Moyen-Orient inclus)
+    chine:"as",japon:"as",coree:"as",thailande:"as",vietnam:"as",inde:"as",indonesie:"as",malaisie:"as",singapour:"as",philippines:"as",iran:"as",liban:"as",turquie:"as",israel:"as",palestine:"as",jordanie:"as",arabiesaoudite:"as",arabie:"as",kazakhstan:"as",ouzbekistan:"as",tibet:"as",nepal:"as",srilanka:"as",bangladesh:"as",cambodge:"as",laos:"as",myanmar:"as",birmanie:"as",pakistan:"as",afghanistan:"as",bhoutan:"as",mongolie:"as",yemen:"as",syrie:"as",irak:"as",koweit:"as",emiratsarabesunis:"as",azerbaidjan:"as",kirghizistan:"as",tadjikistan:"as",turkmenistan:"as",brunei:"as",timororiental:"as",maldives:"as",
+    // Afrique
+    maroc:"af",algerie:"af",tunisie:"af",egypte:"af",senegal:"af",nigeria:"af",ghana:"af",cotedivoire:"af",cameroun:"af",ethiopie:"af",congo:"af",afriquedusud:"af",reunion:"af",kenya:"af",tanzanie:"af",madagascar:"af",angola:"af",mozambique:"af",zambie:"af",zimbabwe:"af",burkinafaso:"af",togo:"af",ouganda:"af",namibie:"af",botswana:"af",somalie:"af",rwanda:"af",benin:"af",gambie:"af",mali:"af",seychelles:"af",tchad:"af",malawi:"af",caboverde:"af",sierraleone:"af",
+    // Amérique du Nord
     usa:"na",canada:"na",mexique:"na",
-    bresil:"sa",argentine:"sa",perou:"sa",colombie:"sa",venezuela:"sa",cuba:"sa",costarica:"sa",salvador:"sa",honduras:"sa",haiti:"sa",portorico:"sa",antilles:"sa",
-    hawaii:"oc",polynesie:"oc",
+    // Amérique latine + Caraïbes
+    bresil:"sa",argentine:"sa",perou:"sa",colombie:"sa",venezuela:"sa",cuba:"sa",costarica:"sa",salvador:"sa",honduras:"sa",haiti:"sa",portorico:"sa",antilles:"sa",chili:"sa",bolivie:"sa",equateur:"sa",paraguay:"sa",uruguay:"sa",jamaique:"sa",trinite:"sa",dominicaine:"sa",nicaragua:"sa",belize:"sa",panama:"sa",guatemala:"sa",bahamas:"sa",barbade:"sa",guyane:"sa",guyana:"sa",caraibes:"sa",
+    // Océanie
+    hawaii:"oc",polynesie:"oc",fidji:"oc",samoa:"oc",tonga:"oc",nouvellezelande:"oc",australie:"oc",vanuatu:"oc",papouasie:"oc",
   };
+  // Regroupement en grandes régions culinaires pour les badges "cuisines du monde".
+  const REGIONS = { eu:"europe", as:"asie", af:"afrique", na:"ameriques", sa:"ameriques", oc:"oceanie" };
+  const regionCount = { europe:0, asie:0, afrique:0, ameriques:0, oceanie:0 };
   const tMin = (t) => {
     if (!t) return null;
     const x = String(t).toLowerCase();
@@ -857,7 +866,11 @@ function remplirBadges(s) {
     const tm = tMin(r.temps);
     if (tm != null && tm <= 30) nbExpress++;
     if (tm != null && tm >= 120) nbMijote++;
-    if (r.pays && CONTINENTS[r.pays]) continentSet.add(CONTINENTS[r.pays]);
+    if (r.pays && CONTINENTS[r.pays]) {
+      const cont = CONTINENTS[r.pays];
+      continentSet.add(cont);
+      if (REGIONS[cont]) regionCount[REGIONS[cont]]++;
+    }
     if (typeof proteineFamille === "function") { const pf = proteineFamille(cle); if (pf) { protSet.add(pf); if (pf === "vegetarien") nbVege++; } }
     const horsRepas = ["cocktails", "mocktails", "sauces", "tartinables"].includes(r.cat);
     const ligne = horsRepas ? null : lignePortion(r);
@@ -892,6 +905,11 @@ function remplirBadges(s) {
     ["decouvreur","🔭","Découvreur Insatiable","recettes vues",vues,500],
     ["explorateur-cosmique","🌌","Explorateur Cosmique","recettes vues",vues,750],
     ["encyclopedie","📚","Encyclopédie Vivante","recettes vues",vues,1000],
+    ["erudit","🦉","Grand Érudit","recettes vues",vues,1250],
+    ["archiviste","📜","Archiviste des Saveurs","recettes vues",vues,1500],
+    ["visionnaire","🔮","Sage Visionnaire","recettes vues",vues,1750],
+    ["sentinelle","🛰️","Sentinelle du Catalogue","recettes vues",vues,2000],
+    ["omniscient","💠","Maître de l'Encyclopédie","recettes vues",vues,2250],
     ["enfeu","🔥","En feu","jours d'affilée",streak,7],
     ["inarretable","🌋","Inarrêtable","jours d'affilée",streak,30],
     ["fan","❤️","Fan","favoris",favs,5],
@@ -931,6 +949,17 @@ function remplirBadges(s) {
     ["omnivore","🍗","Omnivore Complet","familles de protéines cuisinées",protSet.size,6],
     ["aventurier-continents","🧭","Aventurier des Continents","continents cuisinés",continentSet.size,4],
     ["citoyen-monde","🌏","Citoyen du Monde","continents cuisinés",continentSet.size,6],
+    // Badges « cuisines du monde » : profondeur par grande région culinaire (recettes cuisinées)
+    ["saveurs-europe","🥐","Saveurs d'Europe","plats européens cuisinés",regionCount.europe,15],
+    ["maitre-europe","🏰","Maître de la Cuisine Européenne","plats européens cuisinés",regionCount.europe,40],
+    ["saveurs-asie","🥢","Saveurs d'Asie","plats asiatiques cuisinés",regionCount.asie,15],
+    ["maitre-asie","🍜","Maître de la Cuisine Asiatique","plats asiatiques cuisinés",regionCount.asie,40],
+    ["saveurs-afrique","🥁","Saveurs d'Afrique","plats africains cuisinés",regionCount.afrique,10],
+    ["maitre-afrique","🦁","Maître de la Cuisine Africaine","plats africains cuisinés",regionCount.afrique,25],
+    ["saveurs-ameriques","🌎","Saveurs des Amériques","plats américains cuisinés",regionCount.ameriques,10],
+    ["maitre-ameriques","🗽","Maître des Cuisines Américaines","plats américains cuisinés",regionCount.ameriques,25],
+    ["saveurs-oceanie","🏝️","Saveurs d'Océanie","plats océaniens cuisinés",regionCount.oceanie,3],
+    ["maitre-oceanie","🐠","Maître de la Cuisine Océanienne","plats océaniens cuisinés",regionCount.oceanie,8],
     ["inconditionnel","🔁","Inconditionnel","fois la même recette",refaite,10],
     ["fidele-jeje","🎂","Fidèle de Jéjé","mois avec l'appli",ancienneteMois,12],
   ];
@@ -992,6 +1021,7 @@ function afficherSection(section, btn) {
     if (typeof chargerPhotosModeration === "function") chargerPhotosModeration();
     if (typeof chargerModeration === "function") chargerModeration();
     if (typeof chargerStatsAvis === "function") chargerStatsAvis();
+    if (typeof chargerNotesEtoilesAdmin === "function") chargerNotesEtoilesAdmin();
     window.scrollTo({ top: 0, behavior: "smooth" });
     return;
   }
